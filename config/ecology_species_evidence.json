@@ -2,11 +2,236 @@
   "trait": "mycorrhizal_status_as_classified_by_source",
   "definition": "Published species-level ecological classification; asymbiotic does not assign a specific saprotrophic substrate or prove absence of every symbiotic interaction.",
   "records": [
-    {"species_name": "Amanita brunnescens", "state": "ectomycorrhizal", "source_species_name": "Amanita brunnescens", "source_doi": "https://doi.org/10.1093/molbev/msy179", "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf", "source_locator": "Page 2787, The Genus Amanita as a Model", "evidence": "Study classifies this focal species as ectomycorrhizal.", "provisional_transition_group": "Amanita_single_origin", "scope_note": "Species classification; selected assembly and experimental isolate equivalence not established."},
-    {"species_name": "Amanita polypyramis", "state": "ectomycorrhizal", "source_species_name": "Amanita polypyramis", "source_doi": "https://doi.org/10.1093/molbev/msy179", "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf", "source_locator": "Page 2787, The Genus Amanita as a Model", "evidence": "Study classifies this focal species as ectomycorrhizal.", "provisional_transition_group": "Amanita_single_origin", "scope_note": "Species classification; selected assembly and experimental isolate equivalence not established."},
-    {"species_name": "Amanita muscaria", "state": "ectomycorrhizal", "source_species_name": "Amanita muscaria var. guessowii", "source_doi": "https://doi.org/10.1093/molbev/msy179", "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf", "source_locator": "Page 2787, The Genus Amanita as a Model", "evidence": "Study classifies the named variety as ectomycorrhizal.", "provisional_transition_group": "Amanita_single_origin", "scope_note": "Variety-specific evidence; equivalence to the selected assembly's taxonomic concept requires review."},
-    {"species_name": "Amanita inopinata", "state": "asymbiotic", "source_species_name": "Amanita inopinata", "source_doi": "https://doi.org/10.1093/molbev/msy179", "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf", "source_locator": "Page 2787, The Genus Amanita as a Model", "evidence": "Study classifies this focal species as asymbiotic.", "provisional_transition_group": "Amanita_single_origin", "scope_note": "Do not infer a particular decay substrate or classify all undetected symbioses as absent."},
-    {"species_name": "Amanita thiersii", "state": "asymbiotic", "source_species_name": "Amanita thiersii", "source_doi": "https://doi.org/10.1093/molbev/msy179", "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf", "source_locator": "Page 2787, The Genus Amanita as a Model", "evidence": "Study classifies this focal species as asymbiotic.", "provisional_transition_group": "Amanita_single_origin", "scope_note": "Genus reassignment and selected taxonomic concept require review; retain the study's species label."},
-    {"species_name": "Laccaria bicolor", "state": "ectomycorrhizal", "source_species_name": "Laccaria bicolor", "source_doi": "https://doi.org/10.1038/nature06556", "source_url": "https://www.nature.com/articles/nature06556", "source_locator": "Abstract", "evidence": "Primary genome study identifies this species as ectomycorrhizal.", "provisional_transition_group": "Laccaria_transition_review_pending", "scope_note": "Species classification; phylogenetic independence and selected-isolate linkage remain to be assessed."}
+    {
+      "species_name": "Amanita brunnescens",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Amanita brunnescens",
+      "source_doi": "https://doi.org/10.1093/molbev/msy179",
+      "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf",
+      "source_locator": "Page 2787, The Genus Amanita as a Model",
+      "evidence": "Study classifies this focal species as ectomycorrhizal.",
+      "provisional_transition_group": "Amanita_single_origin",
+      "scope_note": "Species classification; selected assembly and experimental isolate equivalence not established."
+    },
+    {
+      "species_name": "Amanita polypyramis",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Amanita polypyramis",
+      "source_doi": "https://doi.org/10.1093/molbev/msy179",
+      "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf",
+      "source_locator": "Page 2787, The Genus Amanita as a Model",
+      "evidence": "Study classifies this focal species as ectomycorrhizal.",
+      "provisional_transition_group": "Amanita_single_origin",
+      "scope_note": "Species classification; selected assembly and experimental isolate equivalence not established."
+    },
+    {
+      "species_name": "Amanita muscaria",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Amanita muscaria var. guessowii",
+      "source_doi": "https://doi.org/10.1093/molbev/msy179",
+      "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf",
+      "source_locator": "Page 2787, The Genus Amanita as a Model",
+      "evidence": "Study classifies the named variety as ectomycorrhizal.",
+      "provisional_transition_group": "Amanita_single_origin",
+      "scope_note": "Variety-specific evidence; equivalence to the selected assembly's taxonomic concept requires review."
+    },
+    {
+      "species_name": "Amanita inopinata",
+      "state": "asymbiotic",
+      "source_species_name": "Amanita inopinata",
+      "source_doi": "https://doi.org/10.1093/molbev/msy179",
+      "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf",
+      "source_locator": "Page 2787, The Genus Amanita as a Model",
+      "evidence": "Study classifies this focal species as asymbiotic.",
+      "provisional_transition_group": "Amanita_single_origin",
+      "scope_note": "Do not infer a particular decay substrate or classify all undetected symbioses as absent."
+    },
+    {
+      "species_name": "Amanita thiersii",
+      "state": "asymbiotic",
+      "source_species_name": "Amanita thiersii",
+      "source_doi": "https://doi.org/10.1093/molbev/msy179",
+      "source_url": "https://pringlelab.botany.wisc.edu/documents/hess.amanita.genomes.pdf",
+      "source_locator": "Page 2787, The Genus Amanita as a Model",
+      "evidence": "Study classifies this focal species as asymbiotic.",
+      "provisional_transition_group": "Amanita_single_origin",
+      "scope_note": "Genus reassignment and selected taxonomic concept require review; retain the study's species label."
+    },
+    {
+      "species_name": "Laccaria bicolor",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Laccaria bicolor",
+      "source_doi": "https://doi.org/10.1038/nature06556",
+      "source_url": "https://www.nature.com/articles/nature06556",
+      "source_locator": "Abstract",
+      "evidence": "Primary genome study identifies this species as ectomycorrhizal.",
+      "provisional_transition_group": "Laccaria_transition_review_pending",
+      "scope_note": "Species classification; phylogenetic independence and selected-isolate linkage remain to be assessed."
+    },
+    {
+      "species_name": "Suillus bovinus",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus bovinus",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus brevipes",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus brevipes",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus clintonianus",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus clintonianus",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus fuscotomentosus",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus fuscotomentosus",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus paluster",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus paluster",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus plorans",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus plorans",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus subalutaceus",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus subalutaceus",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus subaureus",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus subaureus",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Suillus weaverae",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Suillus weaverae (granulatus)",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776 (PDF page 4 including repository cover)",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Suillus_transition_review_pending",
+      "scope_note": "Species-level study classification; host states and selected-isolate linkage require separate evidence."
+    },
+    {
+      "species_name": "Laccaria amethystina",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Laccaria amethystina",
+      "source_doi": "https://doi.org/10.1111/nph.17160",
+      "source_url": "https://escholarship.org/content/qt0s0381bd/qt0s0381bd.pdf",
+      "source_locator": "Table 1, journal page 776",
+      "evidence": "Included among the study's ectomycorrhizal species.",
+      "provisional_transition_group": "Laccaria_transition_review_pending",
+      "scope_note": "Do not count the two sampled Laccaria species as independent origins; selected-isolate equivalence pending."
+    },
+    {
+      "species_name": "Piloderma croceum",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Piloderma croceum",
+      "source_doi": "https://doi.org/10.1038/ng.3223",
+      "source_url": "https://harvardforest1.fas.harvard.edu/publications/pdfs/Kohler_NatGen_2015.pdf",
+      "source_locator": "Journal page 413, paragraph on symbiotic root-tip transcriptomes (PDF page 4)",
+      "evidence": "Included in the ectomycorrhizal root-tip expression comparison.",
+      "provisional_transition_group": "Piloderma_transition_review_pending",
+      "scope_note": "Retain the source name; later literature labels the Pilcr1 project Piloderma olivaceum, so isolate and taxonomic-concept linkage require review."
+    },
+    {
+      "species_name": "Cenococcum geophilum",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Cenococcum geophilum",
+      "source_doi": "https://doi.org/10.1038/ncomms12662",
+      "source_url": "https://www.nature.com/articles/ncomms12662",
+      "source_locator": "Abstract and Methods: Fungal strains used for genome sequencing",
+      "evidence": "Genome study compares ectomycorrhizal and free-living mycelial expression.",
+      "provisional_transition_group": "Cenococcum_transition_review_pending",
+      "scope_note": "Study sequenced strain 1.58; correspondence to the selected assembly and species-complex boundaries remain to be established."
+    },
+    {
+      "species_name": "Tuber melanosporum",
+      "state": "ectomycorrhizal",
+      "source_species_name": "Tuber melanosporum",
+      "source_doi": "https://doi.org/10.1038/nature08867",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20348908/",
+      "source_locator": "Primary genome-study abstract",
+      "evidence": "Genome study explicitly identifies the species as an ectomycorrhizal symbiont.",
+      "provisional_transition_group": "Tuber_transition_review_pending",
+      "scope_note": "Species classification; exact-isolate evidence and branch-level transition assignment remain pending."
+    },
+    {
+      "species_name": "Glonium stellatum",
+      "state": "saprotrophic",
+      "source_species_name": "Glonium stellatum",
+      "source_doi": "https://doi.org/10.1038/ncomms12662",
+      "source_url": "https://www.nature.com/articles/ncomms12662",
+      "source_locator": "Introduction and Results: Genome assemblies and phylogenomic placement",
+      "evidence": "Classified as a saprotrophic comparator to Cenococcum.",
+      "provisional_transition_group": "Cenococcum_transition_review_pending",
+      "scope_note": "Retain the reported trophic classification, not an assertion that every symbiotic interaction is absent. Selected-isolate linkage pending."
+    },
+    {
+      "species_name": "Lepidopterella palustris",
+      "state": "saprotrophic",
+      "source_species_name": "Lepidopterella palustris",
+      "source_doi": "https://doi.org/10.1038/ncomms12662",
+      "source_url": "https://www.nature.com/articles/ncomms12662",
+      "source_locator": "Introduction and Results: Genome assemblies and phylogenomic placement",
+      "evidence": "Classified as a saprotrophic comparator to Cenococcum.",
+      "provisional_transition_group": "Cenococcum_transition_review_pending",
+      "scope_note": "Retain the reported trophic classification, not an assertion that every symbiotic interaction is absent. Selected-isolate linkage pending."
+    }
   ]
 }

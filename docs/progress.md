@@ -679,3 +679,20 @@ Complete tables remain outside Git, with receipts and observed subsets versioned
 Branch localization and site-specific evolutionary tests remain outstanding.
 The previous goal turn completed the initial site projection; this turn advances
 its connection to the structural and phylogenetic data. Overall goal stays active.
+
+### Species ecology expanded; prediction-source confounding measured
+
+Expanded primary-literature curation from six to 21 species statements, retaining
+both Amanita genus-projection conflicts and explicit taxonomic/isolate uncertainty.
+Bound host evidence to all ten sampled Suillus entries: eight reported assignments,
+one source-uncertain assignment and one unverified table mapping. No selected
+isolate is marked experimentally verified or eligible for confirmatory testing.
+
+Rebuilt evidence tables and joined both frozen predictor-specific paired inputs.
+All 21 species have some eligible coverage, but the five-member Amanita group has
+no marker eligible in every member within either predictor; the three-member
+Cenococcum group has one such AlphaFold marker and none from ESMFold. Its
+saprotrophic comparators currently have no eligible ESMFold markers, exposing
+prediction-source confounding that requires matched-source coverage before tests.
+Builder checks verify source hashes and exact host-panel membership. This is an
+evidence/availability checkpoint, not an ecological effect or completed project.
