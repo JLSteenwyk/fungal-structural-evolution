@@ -1295,3 +1295,14 @@ complete candidate accounting with a separate geometry implementation and
 an analysis of interdomain uncertainty. Sampled checks do not validate every
 row, and interdomain results remain pending. The overall research goal remains
 active and incomplete.
+
+### Full interdomain confidence completed; local-domain figure published
+
+Completed all 107,124 interdomain rows and verified every expected domain-pair
+combination at all three PAE thresholds. At PAE10, the median retained
+cross-domain fraction is 0.825 and 195 combinations retain no confident pairs.
+Published a visually inspected figure of all 171,474 domain comparisons and
+its descriptive summaries. These distinguish within-domain fit from placement
+uncertainty without claiming evolutionary rates or biological flexibility.
+The previous turn launched placement analysis; this turn completes its result
+and full grid readback. The overall research goal remains active and incomplete.

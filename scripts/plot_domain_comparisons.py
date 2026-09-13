@@ -15,6 +15,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--comparisons', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--source-label', default='')
     args = parser.parse_args()
     receipt = json.loads((args.comparisons / 'receipt.json').read_text())
     path = args.comparisons / 'domain_comparisons.tsv'
@@ -32,10 +33,12 @@ def main():
     conf = np.array([float(r['pae10_local_pair_fraction']) if r['pae10_local_pair_fraction'] else np.nan for r in rows])
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.9))
     finite = np.isfinite(conf)
+    dense = len(rows) > 5000
+    size, opacity = (3, .2) if dense else (16, .7)
     for ax, values in zip(axes, [x, seq]):
-        ax.scatter(values[~finite], y[~finite], s=15, color='.65', alpha=.65)
-        points = ax.scatter(values[finite], y[finite], c=conf[finite], cmap='viridis',
-                            vmin=0, vmax=1, s=16, alpha=.7, linewidths=0)
+        ax.scatter(values[~finite], y[~finite], s=size, color='.65', alpha=opacity, rasterized=dense)
+        points = ax.scatter(values[finite], y[finite], c=conf[finite], cmap='viridis_r',
+                            vmin=0, vmax=1, s=size, alpha=opacity, linewidths=0, rasterized=dense)
         ax.set_yscale('symlog', linthresh=1)
         ax.set_ylabel('Domain fitted independently: Cα RMSD (Å)')
         ax.spines[['top', 'right']].set_visible(False)
@@ -45,7 +48,7 @@ def main():
     axes[0].set(xlabel='Same domain sites under whole-marker fit: RMSD (Å)', title='Global placement and internal geometry')
     axes[1].set(xlabel='Sequence difference at the same domain sites', title='Sequence and domain structure', xlim=(-.01, 1.01))
     fig.colorbar(points, ax=axes[1], fraction=.047, pad=.04).set_label('Local residue-pair fraction passing PAE ≤10 Å')
-    fig.suptitle(f'{len(rows):,} domain–taxon-pair comparisons · {receipt["distinct_pfam_domains"]} Pfam domains', fontsize=12)
+    fig.suptitle(f'{args.source_label + chr(32) if args.source_label else chr(32)}{len(rows):,} domain–taxon-pair comparisons · {receipt["distinct_pfam_domains"]} Pfam domains', fontsize=12)
     fig.text(.5, .035, 'Separate fitting necessarily improves fit. Dependent descriptive observations; ancestry and prediction-source effects unadjusted.',
              ha='center', fontsize=8)
     fig.tight_layout(rect=(0, .075, 1, .96))
@@ -64,7 +67,7 @@ def main():
         writer.writeheader(); writer.writerows(ranked)
     result = {'source_receipt_sha256': sha(args.comparisons / 'receipt.json'),
         'script_sha256': sha(Path(__file__)), 'taxon_manifest_sha256': sha(taxa_path),
-        'rows_plotted': len(rows), 'rows_without_local_pairs': int((~finite).sum()),
+        'source_label': args.source_label, 'rasterized_points': dense, 'rows_plotted': len(rows), 'rows_without_local_pairs': int((~finite).sum()),
         'median_domain_sites_global_fit_rmsd_angstrom': float(np.median(x)),
         'median_domain_own_fit_rmsd_angstrom': float(np.median(y)),
         'median_pae10_local_fraction': float(np.nanmedian(conf)),

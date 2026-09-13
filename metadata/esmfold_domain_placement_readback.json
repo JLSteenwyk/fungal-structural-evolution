@@ -1,0 +1,27 @@
+{
+  "status": "passed_complete_interdomain_threshold_grid_readback",
+  "source_receipt_sha256": "b66aa4f1acef39d8cc891857a266d1e41397d63815d886182f6edbb49d04f351",
+  "rows": 107124,
+  "domain_pair_combinations": 35708,
+  "threshold_summary": [
+    {
+      "pae_cutoff": 5,
+      "domain_pair_combinations": 35708,
+      "zero_confident_pairs": 726,
+      "median_confident_fraction": 0.4990147076256337
+    },
+    {
+      "pae_cutoff": 10,
+      "domain_pair_combinations": 35708,
+      "zero_confident_pairs": 195,
+      "median_confident_fraction": 0.825
+    },
+    {
+      "pae_cutoff": 15,
+      "domain_pair_combinations": 35708,
+      "zero_confident_pairs": 60,
+      "median_confident_fraction": 0.9507742770551384
+    }
+  ],
+  "interpretation": "Complete candidate grid, counts, fractions, monotone confidence retention and missing-value conventions checked. No independent coordinate or PAE indexing recalculation. Dependent descriptive pairs, not biological transitions."
+}

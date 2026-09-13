@@ -194,3 +194,41 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_domain_placement.
 The independent geometry receipt/table and placement resource estimate are
 tracked in `metadata/esmfold_domain_independent_geometry*` and
 `metadata/esmfold_domain_placement_resource_plan.json`.
+
+## Full local interdomain results and domain figure
+
+Interdomain analysis completed 107,124 rows: all 35,708 domain-pair/taxon
+combinations at three thresholds. Complete readback confirms the candidate grid,
+count bounds, fractions, monotone retention as the threshold increases and
+empty filtered metrics when no confident pairs remain. It does not independently
+recompute cross-domain geometry or PAE indexing.
+
+| Directional PAE threshold (Å) | Median retained cross-domain pair fraction | Combinations with no confident pairs |
+| --- | ---: | ---: |
+| 5 | 0.4990 | 726 |
+| 10 | 0.8250 | 195 |
+| 15 | 0.9508 | 60 |
+
+All pairs require both PAE directions in both models. These are dependent,
+selected comparisons, not independent evolutionary events. Low retention
+signals uncertain predicted placement, not demonstrated biological flexibility.
+
+![Full frozen ESMFold domain comparisons](figures/esmfold_domain_comparisons.svg)
+
+The figure contains all 171,474 accepted comparisons. Median RMSD on domain
+sites is 1.3152 Å under the whole-marker fit and 0.8941 Å under a separate domain
+fit. This reduction is expected from fitting flexibility and is not itself a
+biological result. The median within-domain local-pair PAE10 retention is 1.0;
+that is distinct from cross-domain confidence. No shared-ancestry adjustment or
+inferential sequence–structure association is shown.
+
+```bash
+python scripts/plot_domain_comparisons.py --comparisons results/structural_domains/esmfold-full-frozen-v1 --output results/structural_domains/esmfold-figures-v2 --source-label ESMFold
+```
+
+Dense point layers are rasterized inside SVG/PDF to keep artifacts practical;
+all observations are plotted without downsampling. Points overlap and use
+transparency. Version 2 improves contrast over the first rendering, and its PNG
+was visually inspected. Plot receipts and interdomain completion/readback are
+tracked in metadata; full confidence and manual-review-order tables remain in
+the immutable result directories. The review ordering is not a discovery list.
