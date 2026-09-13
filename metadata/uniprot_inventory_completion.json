@@ -2,14 +2,31 @@
   "status": "completed_inventory_queries_require_model_validation",
   "taxa": 526,
   "status_counts": {
-    "matched": 525,
-    "taxid_unresolved": 1
+    "matched": 526
   },
-  "unresolved_taxa": [
-    "OFS5426494"
-  ],
-  "raw_inventory_path": "data/raw/uniprot_matches.jsonl",
-  "raw_inventory_sha256": "e0d66a3fc160fe0b6e41b3a23f6900cc84fd2e1eadb32505fc1226dcedac608f",
+  "unresolved_taxa": [],
+  "raw_inventory_path": "results/structure_inventory/completed-query-snapshot-v2/uniprot_matches.jsonl",
+  "raw_inventory_sha256": "aca4a957f5f1a3f802735fdcbdcff941430d945e49698256c369556dd94b4296",
   "sampling_manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
-  "interpretation": "All 526 working taxa have terminal query records. Matched means the UniProt query and exact-sequence matching completed, including zero matches; it does not mean a validated structure exists. One missing taxonomy identifier remains explicit. Current models still require per-accession sequence and coordinate validation."
+  "taxonomy_overrides_sha256": "296b51a7df0e36b54c0d67c8159645b19af34e2ef90e34f83df0643c4872e47e",
+  "resolved_taxon_query": {
+    "taxon_id": "OFS5426494",
+    "species_taxid": "1932427",
+    "status": "matched",
+    "taxonomy_evidence_path": "metadata/chromosphaera_taxonomy_resolution.json",
+    "taxonomy_evidence_sha256": "ede89666217e3180890d5f805435eddfd7c8c84cdc89cf46447be6fd607cb1e7",
+    "uniprot_records": 0,
+    "records_with_afdb_crossref": 0,
+    "exact_matched_proteins": 0,
+    "query_proteins": 12463,
+    "source": {
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=taxonomy_id%3A1932427&format=tsv&fields=accession%2Corganism_id%2Csequence%2Cxref_alphafolddb",
+      "uniprot_release": "2026_03",
+      "retrieved_at_utc": "2026-09-13T07:06:54.543321+00:00",
+      "sha256": "dac14412afcd70b64566f35b3f0a2a559b66c8298555a871e62ce7b7a1b5bedb"
+    },
+    "match_path": "data/uniprot/OFS5426494.matches.tsv",
+    "note": "Crossrefs nominate models; current AFDB sequence and coordinates still require verification"
+  },
+  "interpretation": "All 526 working taxa now have completed UniProt query/exact-matching records. Chromosphaera query returned zero UniProt records, not evidence of structural absence across databases. Name/deposition evidence supplies its database identifier without rewriting historical manifests. Candidate structures elsewhere still require exact-sequence and coordinate validation."
 }

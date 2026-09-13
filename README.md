@@ -20,6 +20,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungal entrie
 - [Structural alphabet benchmark](docs/structural-alphabet-benchmark.md)
 - [Fitted tree paths and direct geometry](docs/tree-path-geometry.md)
 - [Prediction-source controls](docs/prediction-source-controls.md)
+- [Final outgroup query resolution](docs/chromosphaera-taxonomy-resolution.md)
 - [Local structure prediction](docs/structure-prediction-workflow.md)
 - [Ecological evidence and curation](docs/ecology-evidence-workflow.md)
 - [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)

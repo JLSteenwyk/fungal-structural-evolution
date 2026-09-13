@@ -1,0 +1,35 @@
+{
+  "status": "verified_deposition_taxonomy_link",
+  "taxon_id": "OFS5426494",
+  "project_species_name": "Chromosphaera perkinsii",
+  "species_taxid": "1932427",
+  "ncbi_scientific_name": "Ichthyosporea sp. XGB-2017a",
+  "ncbi_alias_class": "unpublished name",
+  "biosample": "SAMN06200032",
+  "bioproject": "PRJNA360047",
+  "run_accessions": [
+    "SRR5195170",
+    "SRR5195174"
+  ],
+  "paper_doi": "10.7554/eLife.26036",
+  "retrieved_utc": "2026-09-13T07:05:59.176102+00:00",
+  "sources": {
+    "study_runs.tsv": {
+      "url": "https://www.ebi.ac.uk/ena/portal/api/search?result=read_run&query=study_accession%3D%22PRJNA360047%22&fields=run_accession%2Csample_accession%2Cscientific_name%2Ctax_id%2Csample_alias%2Csample_title&format=tsv",
+      "path": "data/taxonomy/chromosphaera-resolution-v1/study_runs.tsv",
+      "sha256": "77e89e6c7d4784c5f16b1e0ea6360f69637f3ee2080b9e27c1c673c2cb3652cd"
+    },
+    "taxonomy.xml": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1932427&retmode=xml",
+      "path": "data/taxonomy/chromosphaera-resolution-v1/taxonomy.xml",
+      "sha256": "cb18ff4bf5a07ebf9b744c0d3135b6f71d87b7bc4c360e17484a717f6e9016c6"
+    },
+    "article.xml": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5560861/fullTextXML",
+      "path": "data/taxonomy/chromosphaera-resolution-v1/article.xml",
+      "sha256": "4cc534dedda41d1f79868c2083db4828cbe7bbcea6aa4addd0eeeb941c9860d9"
+    }
+  },
+  "script_sha256": "dedfc8b30e5a3063d7e05543457304ffdbff2662c83af77c19747a5e8686e2a7",
+  "interpretation": "NCBI explicitly links the project name to this species-rank record, and the original genome BioSample independently links the same taxid and name. Keep the publication name and database name distinct. NCBI alias-class wording is recorded, not interpreted as a ruling on nomenclatural validity. Historical sampling manifests remain unchanged; versioned query override supplies the verified identifier."
+}

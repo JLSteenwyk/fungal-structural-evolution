@@ -1,0 +1,18 @@
+{
+  "status": "complete_prediction_queue_delta",
+  "previous_receipt_sha256": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+  "current_receipt_sha256": "50d7f73e47fa5e5ab35de3686f2463f62b5965054cb3ce6ec023b7ddfb3cea49",
+  "previous_candidates": 20480,
+  "current_candidates": 28261,
+  "additional_candidates": 7799,
+  "additional_short_canonical_candidates": 4252,
+  "previous_candidates_now_reuse": 18,
+  "retained_previous_candidates": 20462,
+  "script_sha256": "3702ed1809f7b328b2c32c622e42ba79b5513ab896692bef30b0c36d7569d322",
+  "interpretation": "This delta excludes all sequences already in the initial candidate queue, including its deferred long sequences. It is preparation, not a launched prediction run. Existing predictions and ongoing work must still be validated/reused when constructing the next execution queue; absence from the original queue is not proof that no model exists elsewhere.",
+  "artifacts": {
+    "additional_candidates.faa": "636e85ebf383e98178fbd51537fd26c6baba2da38b9b7503d3392e0fe2c6d713",
+    "previous_candidates_now_reuse.tsv": "295e7560c9741d60e30bfe09ddefa73380d75099b262201eb09794514b2c8d37",
+    "additional_candidates.tsv": "49af121fc3aefe904fb325cd01811f69aa12e1de35dd7a0d8c1629e53a2cf142"
+  }
+}
