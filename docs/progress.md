@@ -2131,3 +2131,14 @@ structure/PAE audits remain pending. Reproduce from
 GPU0 execution confirmed active alongside GPU1. The first completed full-queue
 record is 677 residues with 36.48 seconds inference; this single observation is
 not a runtime bound or independent structure-quality validation.
+
+
+Queued a pinned full audit/conversion handoff behind the active GPU0 longer-marker
+producer (PID 2006275, start ticks 181975155). The controller requires exactly
+5,510 completed predictions, no OOM deferrals, no interruption and zero remaining
+eligible sequences before full PDB/NPZ readback and mmCIF conversion. It validates
+matching audited/converted model counts and freezes input/configuration hashes.
+Twelve dependencies are pinned. Allowances: one CPU, 8 GB memory, 100 GB output,
+.2–12 hours after production; these are planning estimates. An incomplete producer
+will stop the handoff for review. Residue mapping and evolutionary integration
+remain later stages. Both GPU producers are active.
