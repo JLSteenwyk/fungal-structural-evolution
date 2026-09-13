@@ -43,3 +43,9 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `analysis_manifest.tsv`: 501 available fungal species plus 25 outgroups; candidate exclusion documented separately. Still subject to biological QC and trait review.
 
 `alphafold_bulk_coverage.tsv`: archived bulk availability at queried species and selected assembly taxids. `alphafold_bulk_objects.json` retains object generations, update dates, sizes and publisher hashes. `alphafold_selected_archives.json` retains highest-version-per-shard objects. No exact protein-sequence coverage is implied; no structure archive downloaded in this inventory. Reproduce with inventory_alphafold_archives.py then select_alphafold_archives.py. Query cache resides in ignored data/raw.
+
+`data/raw/uniprot_matches.jsonl` (ignored): resumable per-taxon exact matching records. Per-taxon reference tables, release headers, checksums and protein-to-UniProt mappings reside under data/uniprot. Script match_uniprot_structures.py requires the combined analysis and QC input manifests. AlphaFold crossrefs are candidate availability evidence only; sequence equality to the actual downloaded model remains required.
+
+Legacy archive retrieval code is preserved but was stopped after verified access denial. It supports generation-pinned range resume and publisher MD5 verification if authorized object access becomes available. Do not mistake listed object metadata for a downloaded structure.
+
+`structure_reuse_snapshot.json` and `verified_structure_receipts.json`: partial current-AFDB retrieval evidence, derived by summarize_structure_reuse.py. Full raw API files and CIFs live in data/structures/afdb; protein-level mappings are in input_links.tsv. Multiple proteins may share one model only on exact sequence identity. Confidence summaries are measurements, not blanket acceptance of structural accuracy. No PAE-based domain orientation analysis has occurred.
