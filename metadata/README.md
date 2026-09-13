@@ -29,3 +29,7 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `fungal_sampling_expanded_draft.tsv`: initial 500 plus two Sanchytriomycota species using published annotations. Total 502, consistent with approximate target. Some original candidates require replacements after availability/QC; this remains provisional. Rebuild via scripts/add_sanchytriomycota.py after external retrieval.
 
 `figshare_*.json`: pinned publisher versions, file lists, licenses and checksums for external genome bundles. `external_genome_receipts.json`: successfully verified files so far; partial while acquisition runs. `scripts/fetch_external_genomes.py` resumes from recorded publisher metadata and verifies cached content. Genome/proteome presence does not prove assembly identity across repositories.
+
+`qc_input_receipts.json`: raw proteomes normalized for preliminary BUSCO completeness. Terminal `*` and `.` markers removed; sequences with internal stops or other noncanonical characters excluded and counted. Source and output hashes preserved; no isoform collapse yet. This is separate from final orthology inputs.
+
+`busco_dataset_receipt.json`: dataset configuration and SHA256 for every file in the initial eukaryota_odb12.2 marker set. `environments/busco-linux-64.lock.txt` pins installed packages. Invoke BUSCO via conda run with .cache/envs/busco; directly invoking its script under the base Python does not activate the environment.

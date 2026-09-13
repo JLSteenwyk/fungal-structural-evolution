@@ -36,7 +36,7 @@ def main():
    receipt=dict(spec,article_version=d['version'],name=name,url=entry['download_url'],path=str(path.relative_to(ROOT)),sha256=hashfile(path,'sha256'),publisher_md5=entry['computed_md5'],bytes=path.stat().st_size,verified_at_utc=datetime.now(timezone.utc).isoformat())
    if 'pep.fasta' in name or 'proteome.fasta' in name:
     opener=gzip.open if name.endswith('.gz') else open
-    lengths=[];ids=set();current=None
+    lengths=[];ids=set();current=None;terminal_dots=0;internal_dots=0
     with opener(path,'rt') as f:
      for line in f:
       line=line.strip()
@@ -44,16 +44,16 @@ def main():
       if line.startswith('>'):
        if current is not None:
         if not current:raise ValueError('Empty protein')
-        lengths.append(current)
+        lengths.append(len(current.rstrip('.')));terminal_dots+=current.endswith('.');internal_dots+='.' in current.rstrip('.')
        pid=line[1:].split()[0]
        if pid in ids:raise ValueError('Duplicate protein ID')
-       ids.add(pid);current=0
+       ids.add(pid);current=''
       else:
-       if current is None or set(line.upper())-set('ACDEFGHIKLMNPQRSTVWYBXZJUO*'):raise ValueError('Invalid protein FASTA')
-       current+=len(line)
+       if current is None or set(line.upper())-set('ACDEFGHIKLMNPQRSTVWYBXZJUO*.'):raise ValueError('Invalid protein FASTA')
+       current+=line.upper()
     if not current:raise ValueError('Missing protein sequence')
-    lengths.append(current)
-    receipt.update(proteins=len(lengths),residues=sum(lengths),max_length=max(lengths),fasta_status='validated')
+    lengths.append(len(current.rstrip('.')));terminal_dots+=current.endswith('.');internal_dots+='.' in current.rstrip('.')
+    receipt.update(proteins=len(lengths),residues=sum(lengths),max_length=max(lengths),fasta_status='validated' if not (terminal_dots or internal_dots) else 'noncanonical_dot_markers',terminal_dot_records=terminal_dots,internal_dot_records=internal_dots)
    receipts.append(receipt)
    (ROOT/'metadata/external_genome_receipts.json').write_text(json.dumps(receipts,indent=2)+'\n')
    print(aid,name,'verified',receipt.get('proteins',''),flush=True)
