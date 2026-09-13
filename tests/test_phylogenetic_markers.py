@@ -18,9 +18,21 @@ def module(name):
 prepare = module('prepare_phylogenetic_markers')
 align = module('align_phylogenetic_markers')
 assessment = module('assess_marker_alignments')
+matrix_builder = module('build_species_matrix')
 
 
 class MarkerIntegrity(unittest.TestCase):
+    def test_concatenation_preserves_missingness_and_coordinates(self):
+        matrix, partitions, sites, coverage = matrix_builder.concatenate(
+            ['A', 'B', 'C'], [('m1', {'A': 'ACX', 'B': '---'}, [1, 3]),
+                            ('m2', {'B': 'DF', 'C': 'EF'}, [1, 2])])
+        self.assertEqual(matrix, {'A': 'AX--', 'B': '--DF', 'C': '--EF'})
+        self.assertEqual(partitions, [('m1', 1, 2), ('m2', 3, 4)])
+        self.assertEqual(sites, [(1, 'm1', 1), (2, 'm1', 3), (3, 'm2', 1), (4, 'm2', 2)])
+        self.assertEqual(coverage, {'A': 1, 'B': 2, 'C': 2})
+        with self.assertRaises(ValueError):
+            matrix_builder.concatenate(['A', 'B'], [('m', {'A': 'AC'}, [1, 2])])
+
     def test_occupancy_masks_and_informative_sites(self):
         statistics, masks = assessment.assess(['AAX-', 'ACX-', 'DC--', 'DC--'])
         self.assertEqual(statistics['parsimony_informative_columns'], 1)

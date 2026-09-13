@@ -37,3 +37,16 @@ python scripts/assess_marker_alignments.py --alignments results/phylogeny/profil
 ```
 
 The profile comparison uses HMMER 3.4 `hmmalign` against the pinned BUSCO HMMs with four concurrent processes on the existing host. It preserves full Stockholm alignments, verifies ungapped sequence identity, and extracts profile match-state columns according to the reference annotation, requiring their count to equal the HMM length. Profile, input, full-alignment and extracted-alignment checksums are retained, together with the original alignment column indices. Stockholm posterior-probability annotations are preserved for later assessment. This profile-based approach also has model assumptions and does not establish a uniquely correct alignment; compare phylogenetic sensitivity against MAFFT and inspect leading conflicts.
+
+## Initial concatenated guide
+
+```bash
+python scripts/build_species_matrix.py --alignments results/phylogeny/profile-alignments-full-v1 --audit results/phylogeny/profile-alignment-audit-full-v1 --output results/phylogeny/profile-matrix-50-v1
+python scripts/run_initial_species_tree.py --matrix results/phylogeny/profile-matrix-50-v1 --output results/phylogeny/initial-guide-v1
+```
+
+The initial matrix uses profile columns with at least 50% unambiguous occupancy among taxa present per marker. This is a topology-blind baseline; alternative occupancy masks and MAFFT-based alignments remain required. Concatenation recomputes masks, inserts gaps for absent taxa, normalizes nonstandard/ambiguous residues to X, and preserves a site-to-marker coordinate table and a NEXUS partition definition. It rejects taxa with no unambiguous residues. The executed matrix contains 526 taxa and 49,027 columns.
+
+The launched IQ-TREE 3.0.1 guide uses unpartitioned LG+F+G4, seed 20260913, 16 threads and a 32 GB limit. It omits bootstrap support and does not establish the final species tree. IQ-TREE estimated approximately 15.9 GB memory and reported nominal composition-test failures for 520/526 sequences; this reinforces the need for richer models and compositional sensitivity rather than interpreting the homogeneous-model guide as robust. No taxa were removed based on these tests.
+
+Coverage needs explicit sensitivity analysis: Amoeboaphelidium protococcarum contributes only 164 unambiguous positions because its raw-proteome BUSCO results were 95.2% duplicated and 0.8% single-copy. Its annotation maps every protein to a distinct gene feature, so ordinary isoform collapsing does not resolve this issue. Pirum and Abeoforma contribute 1,224 and 1,804 positions, respectively. Their placements cannot be treated as well-established solely because a tree contains those tips. Gene-tree/paralogy and assembly-quality investigation remain necessary.
