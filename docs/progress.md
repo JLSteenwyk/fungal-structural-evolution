@@ -2152,3 +2152,13 @@ with two CPU threads. Version-specific BUSTED option incompatibilities are
 documented from source. No fungal selection or synonymous-saturation results
 are claimed; the genus/code screen still needs family-level eligibility work.
 See docs/codon-model-environment.md and versioned build/test receipts.
+
+
+Completed and independently verified within-genus codon diagnostic inputs:
+2,084 strict source groups retained in the ledger, 1,712 ready and 372 explicit
+coverage exclusions. Every exported codon/AA, taxon membership, 80% occupancy
+mask and source coordinate passed full readback (5,728,643 observed taxon-codons).
+Ready cases comprise 1,613 standard-code and 99 code-12 groups; 14 ready TFIIB
+cases retain copy-reconciliation caveats. Curated-hybrid exclusions affect
+14 memberships. Group-specific phylogenetic/divergence inference remains next;
+no selection eligibility or positive-selection finding is claimed.

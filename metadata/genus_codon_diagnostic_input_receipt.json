@@ -1,0 +1,19 @@
+{
+  "status": "complete_genus_codon_diagnostic_inputs",
+  "cases_audited": 2084,
+  "ready_cases": 1712,
+  "observed_taxon_codons_in_ready_cases": 5728643,
+  "status_counts": {
+    "ready_for_tree_and_divergence_diagnostics": 1712,
+    "insufficient_coverage_after_taxon_policy": 372
+  },
+  "source_receipts": {
+    "codons": "5cf5444008325866a8d40662a3a15c34368146dd8629bf966f279c0e99ae529d",
+    "coverage": "5d1bfa81376666f70b004efd40fa6ede36730a749fd15853424c43395e98c459"
+  },
+  "hybrid_table_sha256": "f42ed6fcef509b9d0d4ffc4c4da7406899b33557d141f60711e167f14f8399b9",
+  "marker_review_sha256": "435d7b7e7b356f90537eb101b66839b8e8db3e1fff29c88eddb8335434cbf9ee",
+  "script_sha256": "f491d3564c38b9cf959b1430112f24243a2d5468e823c5398b63d41b65e121d8",
+  "interpretation": "All previously strict genus/code groups retained in the ledger; curated hybrids excluded from ordinary gene-tree diagnostics. Complete called codons retained at >=80% taxon occupancy, invariant sites retained, unknown codons represented as ???. Ready requires >=4 taxa, >=100 columns and nonzero observed codons in each taxon. Source MAFFT correspondence preserved, not new alignment validation. Genus names do not establish monophyly, copy identity, independent transitions, absence of saturation or selection suitability. TFIIB copy caveat retained. These are diagnostic inputs, not selection results.",
+  "source_receipt_sha256": "e513c9ab7a4e3b422d5721e72b7927d01a3473736e2b8724c7c8a7da00678eb5"
+}

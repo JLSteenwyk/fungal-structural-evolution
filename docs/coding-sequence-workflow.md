@@ -331,3 +331,33 @@ and the full 17-by-16 row universe were checked. Per-marker/group rows and
 summary/source receipts are versioned. Review these conflicts with the full
 marker set, family assignments and the species framework before interpreting
 genus-based codon-model results.
+
+
+## Within-genus diagnostic inputs
+
+Prepared all 2,084 previously strict genus/code groups with current curated-hybrid
+exclusions. The full ledger retains 372 insufficient-coverage cases and 1,712
+groups ready for tree/divergence diagnostics. Ready groups have 4–10 taxa and
+100–2,342 codons, with 5,728,643 observed taxon–codon cells. Of these groups,
+1,613 use NCBI code 1 and 99 use code 12. Fourteen ready groups retain the TFIIB
+copy-reconciliation caveat; none is declared suitable for selection testing.
+
+Within each group, retain source codon columns called in at least 80% of retained
+taxa, including invariant columns. Missing/noncanonical codons become whole
+`???` triplets with matching `?` protein states. Export exact mappings to the
+original codon and MAFFT protein columns. This preserves existing homology
+assumptions; it does not independently validate the alignment. Current hybrid
+exclusions affected membership in 14 cases without changing the total passing
+coverage count.
+
+`scripts/prepare_genus_codon_diagnostics.py` creates immutable paired DNA/protein
+inputs in `results/cds/genus-codon-diagnostic-inputs-v1`.
+`scripts/readback_genus_codon_diagnostics.py` independently passed every case,
+updated membership, occupancy mask, exported codon, translation and source
+column. Receipts and full case summary are versioned under
+`metadata/genus_codon_diagnostic_*`.
+
+Next stages are group-specific phylogenies and codon-model divergence diagnostics,
+with alignment, gene-copy, recombination and genetic-code review. A genus label
+does not establish monophyly; tree availability or a coverage pass does not prove
+absence of synonymous saturation or validate a selection claim.
