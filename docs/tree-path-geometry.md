@@ -200,3 +200,25 @@ Detailed results, source checksums and validation scope are preserved in
 `metadata/esmfold_tree_path_rank_summary.tsv`,
 `metadata/esmfold_tree_path_rank_receipt.json` and
 `metadata/esmfold_tree_path_rank_readback.json`.
+
+
+## All-marker benchmark figure
+
+![All 72 local-source markers across four tree-path models](figures/tree_path_geometry_ranks_esmfold.svg)
+
+The figure displays all 864 estimable marker/model/geometry correlations, with
+lines connecting the same marker across models and orange equal-marker medians.
+The panels share the full correlation scale. AF and LLM in the axis labels are
+3Di substitution models; all predicted coordinates here are ESMFold outputs.
+All 12 displayed medians match the source summary exactly. SVG readback counted
+864 marker symbols and 12 median symbols; the rendered PNG was visually checked.
+No markers were dropped or sampled for visualization. This figure exposes
+marker-level heterogeneity without adding significance or acceleration claims.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/plot_tree_path_geometry_ranks.py --summary results/phylogeny/path-geometry-ranks-esmfold-v1 --output results/phylogeny/path-geometry-rank-figures-esmfold-v1 --source-label ESMFold
+```
+
+SVG, PNG and PDF outputs and hashes are preserved in the results directory;
+figure provenance and readback are in `metadata/esmfold_tree_path_rank_figure_receipt.json`
+and `metadata/esmfold_tree_path_rank_figure_readback.json`.

@@ -1374,3 +1374,14 @@ entries outside the frozen audit still require checking. Larger phylogenetic
 and prediction runs were verified live. The previous turn completed the local
 rank benchmark; this turn advances residue annotation integrity. The overall
 research goal remains active and incomplete.
+
+
+### Full local benchmark visualized without marker subsampling
+
+Produced a three-panel figure showing every one of 864 marker/model/geometry
+correlations and the 12 equal-marker medians. Paired lines preserve marker
+identity across four models. All median values and SVG point counts passed
+readback, and the PNG was visually inspected. This follows the prior residue
+annotation audit and advances the reproducible benchmark figure deliverable.
+Larger geometry, fit, prediction and resampling processes remain live; the
+research goal remains active and incomplete.

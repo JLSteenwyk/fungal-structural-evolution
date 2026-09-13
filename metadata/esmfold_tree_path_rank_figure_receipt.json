@@ -1,0 +1,35 @@
+{
+  "status": "complete_descriptive_figure",
+  "source_receipt_sha256": "092863f032cd2b401c1cdc4bafda07ecfa800bf0e5db9947e2f4882b25b895c7",
+  "script_sha256": "5aa83291c960a7d502f3076620615711baee5da586b197b8578a57b30301bd52",
+  "source_label": "ESMFold",
+  "markers": 72,
+  "displayed_points": 864,
+  "unestimable_omitted_points": 0,
+  "median_correlations": {
+    "ca_superposition_rmsd_angstrom": {
+      "aa_tree_path_point": 0.3963497547432453,
+      "3di_af_tree_path_point": 0.46058669595591184,
+      "3di_af_empirical_tree_path_point": 0.44946474112606755,
+      "3di_llm_tree_path_point": 0.4637582632832431
+    },
+    "local_distance_mean_absolute_change_angstrom": {
+      "aa_tree_path_point": 0.6274944763331349,
+      "3di_af_tree_path_point": 0.6368412899810543,
+      "3di_af_empirical_tree_path_point": 0.6275469094885128,
+      "3di_llm_tree_path_point": 0.6359106550704675
+    },
+    "pae10_local_mean_absolute_change_angstrom": {
+      "aa_tree_path_point": 0.6413747600030243,
+      "3di_af_tree_path_point": 0.6530218585340581,
+      "3di_af_empirical_tree_path_point": 0.6407278887022894,
+      "3di_llm_tree_path_point": 0.6398451676398632
+    }
+  },
+  "interpretation": "Average-tie rank correlations within markers, no p-values or independence claim. Equal-marker summaries are descriptive, not meta-analysis. Geometry availability defines each metric cohort; all four models use that same cohort. Shared ancestry, topology/branch uncertainty, source/confidence selection and model adequacy remain unadjusted. Correlation does not establish additive physical distances or evolutionary sequence\u2013structure coupling.",
+  "artifacts": {
+    "tree_path_geometry_ranks.pdf": "a6986eb8d26bca2f0aff206ebc17609ee55b92668c1498b08891c68664f1e4c4",
+    "tree_path_geometry_ranks.svg": "9973fb247e6577f4713a157cb2b5ff874df4af47dc14c2f254bb2defa52e2a6b",
+    "tree_path_geometry_ranks.png": "dcfe9a5d475cdb62102b92ea57118ea4fb35e884f6e3b2072bb2f0f39faf5c45"
+  }
+}
