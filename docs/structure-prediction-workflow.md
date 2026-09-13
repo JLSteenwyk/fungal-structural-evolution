@@ -683,3 +683,24 @@ Versioned records: `metadata/esmfold_followon_full_pae_export_receipt.json`,
 `metadata/esmfold_followon_pae_export_readback.json`, and
 `metadata/esmfold_followon_qualification_launch.json`. Export receipt SHA256:
 `d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f`.
+
+
+Follow-on qualification subsequently completed (controller session 72300 exited
+zero). All 4,252 models contain 1,342,046 residues: 1,333,542 valid native states,
+1,008,659 passing six-residue pLDDT70, and 1,006,992 additionally passing maximum
+context PAE10. These are full-chain counts, not retained paired-alignment sites.
+
+`scripts/readback_local_pae_qualification.py` independently accumulated all 36
+ordered residue-pair PAE values per valid context directly from original NPZ
+arrays, checked invalid-state NaNs, preserved coordinate arrays and verified all
+per-model/aggregate counts. It passed on every one of the earlier cohort's
+1,173,099 valid contexts and the follow-on cohort's 1,333,542 valid contexts.
+This does not repeat native partner selection or establish calibration.
+Receipts: `metadata/esmfold_existing_full_pae_context_readback.json` and
+`metadata/esmfold_followon_full_pae_context_readback.json`.
+
+Paired AA/3Di input preparation is now running against the unchanged profile
+matrix and established masks. Resource allowance: one CPU, 8 GiB memory, 2 GiB
+output, 0.05–2 planning hours; see
+`metadata/esmfold_followon_paired_input_resource_plan.json`. Final retained marker
+and taxon coverage remain pending input completion and readback.

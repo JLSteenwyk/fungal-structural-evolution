@@ -1851,3 +1851,11 @@ exporter, not repeated independently. Qualification automatically launched as
 PID 2283888 under controller session 72300 and remains live. Final confidence
 counts, independent context readback and paired-input preparation remain pending.
 See docs/structure-prediction-workflow.md and metadata/esmfold_followon_*pae*.
+
+
+Follow-on qualification finished: all 4,252 models, 1,006,992 full-chain residues
+passing six-residue pLDDT70 and PAE10. Independent original-NPZ context readback
+passed all 1,333,542 valid follow-on contexts after a full earlier-cohort
+regression (1,173,099 contexts). Every preserved coordinate array and all model
+summary totals matched. Started paired AA/3Di input preparation with unchanged
+profile alignment and masks; retained coverage is not yet established.

@@ -1,0 +1,12 @@
+{
+  "workers": 1,
+  "memory_allowance_gib": 8,
+  "output_allowance_gib": 2,
+  "planning_hours": [
+    0.05,
+    2
+  ],
+  "models": 4252,
+  "matrix": "results/phylogeny/profile-matrix-50-v1",
+  "scope": "Build paired AA and native 3Di alignments from all follow-on mapped models after full PAE context readback. Apply established six-residue pLDDT70/PAE10 masks and unchanged marker eligibility; no inference or new charges."
+}
