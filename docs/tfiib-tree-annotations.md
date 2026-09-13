@@ -65,3 +65,27 @@ python scripts/assess_tfiib_domain_class_split.py \
 Two tests check split invariance to root placement and rejection of duplicate
 tips/negative branches. Complete split counts, exact tip-side annotations and
 receipts are versioned. The separate repeat trees are still computing.
+
+
+## Effect on current paired structural analyses
+
+The caveat is now attached to all 250 marker/source review rows (125 markers in
+each source), with no implied validation of unflagged markers. In the expanded
+AlphaFold input, marker 4986044at2759 is eligible with 116 taxa: exact
+ taxon/protein/sequence joins place 108 on the BRF1-enriched family-tree side,
+four on the other side and four outside the eligible family-tree tip set.
+The local snapshot has one eligible taxon on the other side and fails the
+four-taxon marker gate. The earlier 52-marker completed fits did not include
+this marker. Thus the active expanded AlphaFold input itself exhibits mixed
+copy selection; this is not merely a concern inferred from unrelated genomes.
+
+`metadata/paired_marker_review.tsv` records
+`withhold_pending_copy_reconciliation` for this marker. Existing numerical fits
+remain diagnostic and their immutable inputs are preserved. No automatic
+pruning or reclassification of the four unresolved candidates is performed.
+Downstream confirmatory summaries must consume the explicit review status.
+
+```bash
+python scripts/apply_marker_review_caveats.py \
+  --output results/phylogeny/marker-review-overlay-v1
+```

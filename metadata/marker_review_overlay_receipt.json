@@ -1,0 +1,26 @@
+{
+  "status": "complete_marker_caveat_review_overlay",
+  "caveat_config_sha256": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+  "family_split_receipt_sha256": "ed0023cee802bd2d83aec7bd7d34dcf51c81eabefaef79e56b2dac8132d74ebb",
+  "paired_input_receipt_sha256": {
+    "AlphaFold": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "ESMFold": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+  },
+  "script_sha256": "7a0349bc1d88abe68a2718b7e7cb25bd34c0ec9a45cb429587afbb6f0367ae71",
+  "marker_review_rows": 250,
+  "flagged_marker_copy_side_counts": {
+    "AlphaFold": {
+      "BRF1_enriched": 108,
+      "BRF1_undetected_enriched": 4,
+      "outside_eligible_family_tree": 4
+    },
+    "ESMFold": {
+      "BRF1_undetected_enriched": 1
+    }
+  },
+  "interpretation": "Read-only review overlay; frozen fits and input masks retained. Flagged marker must not receive confirmatory single-ortholog interpretation without copy reconciliation. Unflagged markers are not certified valid. Exact taxon/protein/sequence joins distinguish eligible family-tree copies from unresolved candidates.",
+  "artifacts": {
+    "flagged_marker_copy_coverage.tsv": "31dc15d83556ec367872e8ceb6bcac48ca287d6fe7093801ce0a6ccd26fc84ba",
+    "paired_marker_review.tsv": "435d7b7e7b356f90537eb101b66839b8e8db3e1fff29c88eddb8335434cbf9ee"
+  }
+}

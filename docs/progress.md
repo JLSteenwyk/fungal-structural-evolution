@@ -883,3 +883,16 @@ changing running/frozen fits. Repeat-tree sensitivity, rooting and reconciliatio
 remain pending. Experimental acquisition/mapping jobs continue. The preceding
 turn launched CA mapping; this turn completes a substantive family-tree assessment.
 The full research goal remains active and incomplete.
+
+
+### Orthology caveat applied to current paired-marker review
+
+Created a hash-pinned review overlay for all 250 marker/source combinations.
+The flagged 116-taxon AlphaFold marker contains 108 exact protein matches on the
+BRF1-enriched side, four on the other supported side and four outside eligible
+family-tree coverage. Its local counterpart has only one eligible taxon. The
+expanded input therefore directly exhibits the copy-mixture issue; confirmatory
+single-ortholog interpretation is withheld pending reconciliation. Original fits
+remain diagnostic and unflagged markers are not certified valid. The previous
+turn completed the family-tree assessment; this turn connects that evidence to
+the actual downstream inputs. The overall project remains active.
