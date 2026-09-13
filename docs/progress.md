@@ -2337,3 +2337,15 @@ exclusion sensitivities now take priority over interpreting these affected input
 as biological acceleration. Baseline results are retained; no running input or
 inference script was changed. Details and reproducible commands are in
 `docs/assembly-quality-workflow.md`.
+
+### FCS-overlap sensitivity refits launched for all affected ESMFold markers
+
+Prepared and independently read back both complete affected-marker sensitivity
+sets. Omitted 16 observations across 16 earlier ESMFold markers and 19 observations
+across 18 combined ESMFold markers under the EXCLUDE/FIX/TRIM CDS-overlap rule.
+All affected markers remain eligible, no columns become all-missing, and every
+retained character matches the baseline. The 56/71 unchanged ready-marker
+complements keep their original inputs and estimates. Launched 64 and 72 new
+supported sequence/structural fits respectively; both producer processes were
+verified live. Full fit audits, topology/path comparisons and downstream
+site-rate/coupling sensitivities remain pending. Baseline runs are preserved.

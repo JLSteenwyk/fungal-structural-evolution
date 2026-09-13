@@ -372,3 +372,56 @@ a sampling-induced unestimable draw, not an execution failure. The final run
 summary must count all such draws before reporting conditional uncertainty.
 This single inspection does not establish the full-run failure frequency.
 See `metadata/esmfold_unestimable_draw_4867008_block30_rep168.json`.
+
+## FCS-overlap omission sensitivity: inputs audited, fits running
+
+The audited contamination-report/CDS mapping motivated a sensitivity analysis
+that omits marker–taxon observations overlapping FCS EXCLUDE, FIX or TRIM regions.
+REVIEW-only observations remain. This tests sensitivity to a defined source-quality
+flag; it does not declare the omitted proteins to be confirmed contaminants.
+
+Every baseline marker has an explicit disposition. The earlier ESMFold dataset
+loses 16 N. cerealis observations in 16 markers, requiring 64 new fits; its other
+56 ready markers retain their unchanged baseline inputs and estimates. The
+combined ESMFold dataset loses those 16 plus three A. colombiana observations,
+affecting 18 markers and requiring 72 new fits; 71 ready markers are unchanged.
+All affected markers retain at least four eligible taxa. No now-all-missing
+columns arise in either dataset, so all remaining characters and original column
+coordinates are preserved exactly. A whole-species deletion is not applied.
+
+The preparer records all 125 marker dispositions, actual omitted observations,
+source hashes and baseline-to-sensitivity column coordinates. Independent
+readback validates the exact omission rule and every remaining character in both
+alphabets: 506,502 characters for the earlier dataset and 969,968 for combined
+ESMFold. It also checks that unchanged or previously ineligible markers are not
+silently refitted or promoted. The sensitivity output directories contain only
+changed, eligible alignments; their unchanged complements remain in the original
+baseline directories.
+
+Both full affected-marker queues are running. They re-infer sequence LG+F+G4
+topologies with 1,000 SH-aLRT and 1,000 ultrafast bootstrap replicates plus BNNI,
+then fit AF+G4, AF+F+G4 and LLM+G4 structural branches on each new sequence topology.
+Each queue uses four one-CPU workers, 2 GB per fit, 10 GB disk allowance and a
+conservative 1–48 hour planning window on the authorized host. The earlier
+corresponding baseline fits consumed 5.076 summed worker-hours. This is a new
+sensitivity run, with separate outputs; no existing input or running script was
+changed.
+
+```bash
+python scripts/prepare_fcs_paired_sensitivity.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --mapping results/qc/fcs-cds-overlap-v1 --audit results/qc/fcs-cds-overlap-audit-v1 --output results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1
+python scripts/readback_fcs_paired_sensitivity.py --baseline results/phylogeny/paired-inputs-esmfold-partial-v1 --sensitivity results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1 --mapping results/qc/fcs-cds-overlap-v1 --output metadata/esmfold_fcs_sensitivity_input_readback.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_paired_marker_fits.py --inputs results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1 --models data/structural_models/garg-hochberg-v3 --output results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1 --alrt 1000 --bootstrap 1000
+```
+
+The combined commands substitute `paired-inputs-esmfold-combined-v1` as the
+baseline and `esmfold-combined-fcs-sensitivity-v1` in sensitivity input/output
+paths. Both queues are already running; do not launch duplicates. Use new paths
+for later reproductions. Complete exact commands and observed producer identities
+are in `metadata/fcs_paired_sensitivity_launch_receipt.json`; input receipts,
+readbacks, marker dispositions and resource plans are versioned separately.
+
+Full fit audits and comparisons on common taxon splits and paths remain pending.
+Any topology changes must be distinguished from changes in branch lengths.
+Site rates, exposure covariates and sequence–structure coupling also need
+recomputation after the omission; refitted branch point estimates alone will not
+establish robustness of the earlier coupling results.

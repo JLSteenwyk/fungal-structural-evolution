@@ -1,0 +1,48 @@
+{
+  "status": "two_supported_sensitivity_fit_producers_verified_live",
+  "producers": [
+    {
+      "pid": 3691655,
+      "start_ticks": "182784857",
+      "state": "S",
+      "command": [
+        "python",
+        "scripts/run_paired_marker_fits.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--output",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--alrt",
+        "1000",
+        "--bootstrap",
+        "1000"
+      ],
+      "run_config_sha256": "d8f12852aab3cc13c999602c4be1941eb8e3824c72669364b437e449feb6104e",
+      "planned_fits": 72
+    },
+    {
+      "pid": 3691662,
+      "start_ticks": "182784861",
+      "state": "S",
+      "command": [
+        "python",
+        "scripts/run_paired_marker_fits.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--output",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--alrt",
+        "1000",
+        "--bootstrap",
+        "1000"
+      ],
+      "run_config_sha256": "eb565ef8e8f11743db8baafd81fef4c0a57a7b71be2a220d2ebea796a24f3baf",
+      "planned_fits": 64
+    }
+  ],
+  "interpretation": "Execution launched, not completed inference. Full fit audits, comparison with baseline topologies/distances, site-rate refits and coupling sensitivity remain pending."
+}

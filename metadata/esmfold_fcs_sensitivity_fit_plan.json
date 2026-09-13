@@ -1,0 +1,27 @@
+{
+  "status": "prelaunch_supported_fcs_sensitivity_refits",
+  "markers": 16,
+  "fits": 64,
+  "omitted_observations": 16,
+  "workers": 4,
+  "threads_per_worker": 1,
+  "memory_per_fit_gb": 2,
+  "disk_allowance_gb": 10,
+  "planning_hours": [
+    1,
+    48
+  ],
+  "available_memory_bytes": 582631104512,
+  "load_average_at_preflight": [
+    87.99072265625,
+    90.7646484375,
+    87.25634765625
+  ],
+  "topology": "Reinfer AA LG+F+G4 topology with 1000 SH-aLRT and 1000 UFB replicates plus BNNI; fit three 3Di models on that topology",
+  "input_receipt_sha256": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d",
+  "model_receipt_sha256": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+  "producer_sha256": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+  "basis": "Earlier affected baseline 16 markers/64 fits consumed 5.076 summed worker-hours. Combined baseline has 5.048 hours across 28 completed reference fits, with remaining source fits ongoing. Conservative allowance for new supported topology searches; four concurrent fits per dataset.",
+  "cost": "Existing authorized CPU host; no new charges",
+  "scope": "All changed baseline-ready markers; unchanged markers retain their original estimates. Compare common splits and direct distances after completion; no ratios over near-zero branch lengths."
+}

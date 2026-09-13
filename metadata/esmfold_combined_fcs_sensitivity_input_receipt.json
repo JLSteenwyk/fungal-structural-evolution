@@ -1,0 +1,16 @@
+{
+  "status": "complete_affected_marker_fcs_omission_sensitivity_inputs",
+  "ready_markers": 18,
+  "baseline_ready_markers": 89,
+  "unchanged_ready_markers_reuse_baseline": 71,
+  "affected_markers_below_eligibility": 0,
+  "omitted_marker_observations": 19,
+  "source_input_receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+  "source_mapping_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+  "source_audit_receipt_sha256": "61d30bf005ca6a531a1ba22a9062319e9466d5e5f73f2cda01b7feee6bc904d6",
+  "script_sha256": "29360013bf6fee067b3fd563059744e9681b03bd323f3ea8cbc63c6ac3e1257c",
+  "site_statistics_helper_sha256": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+  "interpretation": "Sensitivity refit inputs for every changed baseline-ready marker; unchanged estimates remain in the baseline dataset and are not rerun. Omit entire marker/taxon observations with CDS overlap to FCS EXCLUDE/FIX/TRIM, retain REVIEW-only observations. Other taxa and observed AA/3Di characters unchanged; drop only now-all-missing columns with exact coordinate projection. Existing confidence masks and taxon coverage eligibility inherited; at least four remaining taxa. Not confirmed contamination, whole-species deletion or completed sensitivity inference.",
+  "full_receipt_path": "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+  "full_receipt_sha256": "3ce37910285bef1c26146ae9914821e5f4395bef6156f9e16a6cca3c7c2337f8"
+}
