@@ -19,3 +19,9 @@ download-proteomes:
 	python scripts/download_proteomes.py
 qc-snapshot:
 	python scripts/summarize_downloads.py
+
+.PHONY: external-genomes expand-fungi
+external-genomes:
+	python scripts/fetch_external_genomes.py
+expand-fungi:
+	python scripts/add_sanchytriomycota.py

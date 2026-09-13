@@ -10,3 +10,6 @@
 - Szánthó et al. 2025. https://doi.org/10.1038/s41559-025-02851-z — Broad fungal sampling, close relatives, topology and calibration uncertainty. Its fungal boundary must be distinguished from database taxonomy.
 
 These are methodological precedents, not an exhaustive systematic review. Access and update dates belong in source receipts for downloaded datasets.
+
+- Galindo et al. 2021. Phylogenomics of a new fungal phylum reveals multiple waves of reductive evolution across Holomycota. https://doi.org/10.1038/s41467-021-25308-w — Published Sanchytriomycota genomes and proteomes in Figshare project 91439 permit filling an annotation gap.
+- Grau-Bové et al. 2017. Dynamics of genomic innovation in the unicellular ancestry of animals. https://doi.org/10.7554/eLife.26036 — Genome-backed unicellular holozoan outgroup candidates and annotation bundles.

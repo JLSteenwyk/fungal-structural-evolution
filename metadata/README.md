@@ -25,3 +25,7 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `fungal_sampling_draft.tsv` and its summary describe 500 unique fungal species selected for full-scale QC, not the final frozen sample. The main sampling_manifest remains unpopulated until review. Selection is reproducible from config/sampling.json, with unknown ecology retained explicitly.
 
 `proteome_download_receipts.json`: completed download/QC records (can be partial during execution), publisher MD5, SHA256, source URL, local path and protein statistics. `proteome_qc_snapshot.json`: aggregate of those records, not a liveness indicator. Download via `python scripts/download_proteomes.py`; derive progress via `python scripts/summarize_downloads.py`. FASTA validity is not biological completeness.
+
+`fungal_sampling_expanded_draft.tsv`: initial 500 plus two Sanchytriomycota species using published annotations. Total 502, consistent with approximate target. Some original candidates require replacements after availability/QC; this remains provisional. Rebuild via scripts/add_sanchytriomycota.py after external retrieval.
+
+`figshare_*.json`: pinned publisher versions, file lists, licenses and checksums for external genome bundles. `external_genome_receipts.json`: successfully verified files so far; partial while acquisition runs. `scripts/fetch_external_genomes.py` resumes from recorded publisher metadata and verifies cached content. Genome/proteome presence does not prove assembly identity across repositories.
