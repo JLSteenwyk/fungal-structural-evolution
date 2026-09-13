@@ -2217,3 +2217,15 @@ passed saved-likelihood reevaluation, codon-grid and numerical-report readback;
 maximum likelihood discrepancy 5.46e-12, component additivity error 2e-10.
 No numerical flags in this snapshot; full audit and biological eligibility
 remain pending. Structure predictions and nucleotide-tree searches continue.
+
+
+Completed the first full conditional site-coupling grid: 24 regressions across
+16,571 sites/72 markers, with marker fixed effects, coverage/confidence controls,
+composition/entropy sensitivity, two rate models and two RSA scales. All source
+confidence/RSA joins and independent coefficient/cluster-covariance calculations
+passed. The sequence-rate coefficient at RSA=.25 is positive in all 24 fits
+(23 conditional BH q<.05), but full-model within-marker R-squared is only
+5.42–6.90%; no interaction q<.05. A standalone figure, coefficients and methods
+are documented in docs/conditional-site-coupling.md. Fixed-tree/rate uncertainty,
+marker dependence, extant-exposure weighting and prediction circularity remain
+limits; these are exploratory snapshot associations, not final biological tests.

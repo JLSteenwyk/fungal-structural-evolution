@@ -8,6 +8,8 @@ Confidence-qualified paired-marker coverage reaches **525 entries (500 fungal en
 
 A completed 266-protein predictor control found **14.3% median structural-state disagreement** among 187 confidence-qualified proteins with identical amino-acid sequences. This source effect must be assessed before interpreting branch differences. Fits for the earlier 72-marker local cohort are complete, with conditional resampling and direct-geometry comparisons; the separate 124-marker AlphaFold fitting batch is running. The new follow-on alignments have not yet undergone branch inference. [Predictor control methods and limitations](docs/structure-prediction-workflow.md#same-sequence-structural-alphabet-predictor-control).
 
+The first conditional site-coupling analysis is complete for the earlier 72-marker snapshot: 24 models across 16,571 sites, with marker intercepts and coverage, confidence and composition controls. Sequence-rate coefficients are positive across specifications, but the full models explain only 5–7% of within-marker variation. These are exploratory associations conditional on fixed trees and estimated rates; uncertainty propagation and prediction circularity remain unresolved. [Methods, results and figure](docs/conditional-site-coupling.md).
+
 Assembly-matched CDS acquisition and strict translation auditing are complete for all 519 NCBI-backed taxa (5,752,457 exact translations). Separate genome/translation audits cover the seven external taxa, retaining exceptions and partial coding boundaries; see the [coding-sequence workflow](docs/coding-sequence-workflow.md). All 125 marker codon alignments have passed independent translation readback; selection analyses remain pending.
 
 ## Project records
@@ -25,6 +27,7 @@ Assembly-matched CDS acquisition and strict translation auditing are complete fo
 - [Domain geometry and placement confidence](docs/domain-structure-comparisons.md)
 - [Structural alphabet benchmark](docs/structural-alphabet-benchmark.md)
 - [Fitted tree paths and direct geometry](docs/tree-path-geometry.md)
+- [Conditional site-level coupling](docs/conditional-site-coupling.md)
 - [Prediction-source controls](docs/prediction-source-controls.md)
 - [Final outgroup query resolution](docs/chromosphaera-taxonomy-resolution.md)
 - [Local structure prediction](docs/structure-prediction-workflow.md)
