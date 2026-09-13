@@ -318,3 +318,9 @@ Serendipita loses all passing groups under the stricter policy because three of 
 All 519 taxa completed: 5,847,336 CDS records and 5,843,347 normalized proteins, with no protein lacking a source CDS association. Exact translation passes for 5,752,457 records. The remaining exclusive classifications comprise 85,683 non-triplet lengths, 2,491 mismatches, 2,715 annotation exceptions, 3,988 missing/ambiguous protein identifiers and two CDS records sharing a protein.
 
 Readback checked all output hashes and recounted every CDS/status/code total and taxon identity. All 59,269 NCBI marker classifications reconcile with the separate boundary audit: 59,252 identical statuses and 17 differences explained by the full audit's annotation-exception gate. No unexplained code/status disagreement remains in the marker subset. Full nonmarker coordinates, region-code handling, family codon suitability and selection inference remain pending. Receipts and taxon summaries are versioned; large per-CDS tables remain outside Git.
+
+## Observed codon divergence and review figure completed
+
+Measured shared-site observed differences for 43,235 distinct marker/code/taxon pairs across all coverage-passing candidate groups. The two inclusion policies produce 84,796 rows; repeated metrics agree exactly. Source/output hashes, numerator partitions, fractions and overlap thresholds pass consistency checks; four focused tests passed.
+
+Rendered and inspected a figure of all 1,712 stricter-policy marker/group medians. The highest median amino-acid difference is 0.7371 for Aspergillus marker 4986044at2759 despite at least 232 shared codons per pair. Twenty leading cases are flagged for alignment/orthology review, not biological acceleration. These observed fractions do not estimate dS, dN/dS, saturation or branch-specific rates. Independent group realignment and profile-alignment comparisons remain next checks before selection modeling.

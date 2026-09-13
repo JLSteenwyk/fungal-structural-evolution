@@ -1,0 +1,18 @@
+{
+  "status": "complete_coverage_group_observed_codon_divergence",
+  "group_policy_rows": 3538,
+  "pair_policy_rows": 84796,
+  "unique_marker_code_pairs": 43235,
+  "pair_overlap_pass_by_policy": {
+    "all_aligned": 43194,
+    "exclude_recorded_annotation_gene_label_flags": 41529
+  },
+  "group_receipt_sha256": "5d1bfa81376666f70b004efd40fa6ede36730a749fd15853424c43395e98c459",
+  "codon_receipt_sha256": "5cf5444008325866a8d40662a3a15c34368146dd8629bf966f279c0e99ae529d",
+  "script_sha256": "47aa5879c9cc8bc01c6783991fa1c20129bc99f24a6a74b079b1c360b9ba7a73",
+  "interpretation": "Uncorrected observed differences on pairwise shared unambiguous codons in existing masks. Different codons encoding the same amino acid are counted as observations, not reconstructed synonymous substitutions. No dN/dS, dS, saturation test, branch rate or independent-sample inference. Pairs share taxa/sites/ancestry and repeated policy rows are not replicates. Same genus label is not evidence of monophyly. Summaries of divergence fractions use pairs with at least 100 shared called codons; all lower-overlap pairs remain explicit.",
+  "artifacts": {
+    "group_pair_summary.tsv": "e19a55e1ac9ba136cba8795ba7f9f4cda1c85375b82dd1ddf8ad6ac007a95a59",
+    "pair_differences.tsv": "589d8190db1e4c6d10b0cc39099823fe65ab1438f73bfc7f7fa981b1e88d8453"
+  }
+}

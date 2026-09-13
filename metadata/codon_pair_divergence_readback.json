@@ -1,0 +1,14 @@
+{
+  "status": "complete_observed_pair_count_readback",
+  "pair_policy_rows": 84796,
+  "unique_marker_code_pairs": 43235,
+  "source_receipt_sha256": "7786241e085b477e67ccc5e30ca0721d663b39ad173eb5948a7fe0626dde3625",
+  "checks": [
+    "All source codon artifacts and divergence artifacts hashed",
+    "Integer numerator partitions and bounds",
+    "Fractions reproduce recorded counts",
+    "Overlap threshold totals recounted",
+    "Repeated pair metrics identical between policies"
+  ],
+  "interpretation": "Checks consistency/provenance; does not independently recalculate every pair from DNA."
+}

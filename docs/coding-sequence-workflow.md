@@ -190,3 +190,23 @@ python scripts/summarize_ncbi_cds_audit.py --audit results/cds/ncbi-strict-trans
 The completed readback verifies source-inventory, configuration and producer hashes, all per-taxon output hashes, unique CDS identities, full 519-taxon coverage and every status/code total. It reconciles all 59,269 NCBI marker protein codes with the independently executed boundary audit: 59,252 have identical strict translation statuses, while 17 differences arise because the full audit stops at an annotation-exception gate before translating. There are no unexplained disagreements. The compact 17-row table is `metadata/ncbi_marker_translation_gate_differences.tsv`.
 
 Full receipts, the readback and taxon summaries are versioned as `metadata/ncbi_cds_translation_receipt.json`, `metadata/ncbi_cds_translation_readback.json` and `metadata/ncbi_cds_taxon_translation_summary.tsv`. Per-CDS tables remain in `results/cds/ncbi-strict-translation-v1`. This readback does not retranslate every nonmarker sequence independently or validate its genomic coordinates. Exact translation still does not establish selection eligibility, gene-model correctness or complete biological genes.
+
+## Observed divergence within coverage-screened groups
+
+The completed observed-difference screen evaluates 3,538 marker/genus/code/policy groups, yielding 84,796 pair/policy rows and **43,235 distinct marker/code/taxon pairs**. There are 43,194 pairs with at least 100 shared called codons under inclusive selection and 41,529 under the stricter recorded-flag policy. Low-overlap rows remain explicit. The same pair repeated under two policies has identical metrics and is not a replicate.
+
+Every metric uses pairwise shared, unambiguous complete codons. Outputs count different codons, different amino acids, different codons encoding the same amino acid, and differences at each nucleotide position. Fractions are uncorrected observations. Same-amino-acid codon differences are not reconstructed synonymous substitutions; no dS, dN/dS, saturation test or branch rate is estimated.
+
+```bash
+python scripts/assess_codon_pair_divergence.py --output results/cds/genus-code-pair-divergence-v1
+python scripts/plot_codon_group_divergence.py --input results/cds/genus-code-pair-divergence-v1 --output results/cds/genus-code-divergence-figure-v1
+python -m unittest discover -s tests -p test_codon_pair_divergence.py
+```
+
+Four tests cover code-dependent translation, shared-site denominators, synonymous observed codon differences, zero shared data and stop rejection. Readback checks source/output hashes, count partitions and bounds, fraction denominators, overlap thresholds and identical repeated metrics. It does not independently recompute all pairs from DNA. Source receipts and group summaries are versioned under `metadata/codon_pair_divergence_*` and `metadata/codon_group_pair_summary.tsv`; large pair tables remain outside Git.
+
+![Observed codon divergence across marker groups](figures/codon_group_divergence.svg)
+
+The figure shows 1,712 stricter-policy marker/group medians across 15 fungal genus labels. It is descriptive: pairs/points share taxa, sites and ancestry, and genus labels are not verified clades. The SVG and PNG were rendered and visually inspected; figure provenance is `metadata/codon_group_divergence_figure_receipt.json`.
+
+The 20 largest marker/group median amino-acid differences are retained for **alignment/orthology review**, not designated accelerated evolution (`metadata/codon_divergence_alignment_review.tsv`). The largest is marker 4986044at2759 in Aspergillus: ten entries, at least 232 shared called codons per pair, median amino-acid difference 0.7371 and median third-position difference 0.6767. Group-specific realignment, existing profile-alignment sensitivity and protein/domain correspondence need review before biological interpretation. Other leading candidates include marker 776280at2759 in Naganishia and Tilletia. Coverage and translation alone do not resolve these concerns.
