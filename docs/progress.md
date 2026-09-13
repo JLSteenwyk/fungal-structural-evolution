@@ -1284,3 +1284,14 @@ and earlier comparison dataset. Independent coordinate checks and interdomain
 placement review remain pending. The previous turn completed the unmodified
 Foldseek control; this turn completes a substantive domain-level dataset.
 The overall research goal remains active and incomplete.
+
+### Independent domain geometry verified; full interdomain analysis started
+
+All 58 identity-selected domain comparisons passed independent SciPy rotation
+and distance recalculation, one per Pfam accession. Started placement/confidence
+analysis of all 35,708 eligible domain-pair/taxon combinations at three PAE
+thresholds. This follows the previous turn's completed domain dataset and
+complete candidate accounting with a separate geometry implementation and
+an analysis of interdomain uncertainty. Sampled checks do not validate every
+row, and interdomain results remain pending. The overall research goal remains
+active and incomplete.

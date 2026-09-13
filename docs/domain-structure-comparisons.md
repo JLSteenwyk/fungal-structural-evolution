@@ -162,3 +162,35 @@ are tracked in `metadata/esmfold_domain_comparison_*`. Further independent
 geometry checks and interdomain PAE analysis remain required. No branch-level
 acceleration, adaptive change or domain-orientation mechanism is inferred from
 these descriptive domain comparisons alone.
+
+## Independent local-domain geometry checks and interdomain extension
+
+Independent SciPy rotations and condensed-distance calculations reproduced all
+58 selected comparisons, one per Pfam accession chosen by the smallest hash of
+its marker/taxon/domain identity. The check reconstructs selected residue masks,
+whole-protein fits, domain sites under those fits, independent domain fits and
+local residue-distance metrics. Counts match exactly and numeric metrics agree
+within `atol=rtol=1e-8`. This checks 58 selected rows, not all 171,474 accepted
+rows or their PAE-filtered local distances. Selection is independent of metric
+values, but it is not a statistical accuracy benchmark.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/check_domain_geometry_independently.py --domains results/structural_domains/esmfold-full-frozen-v1 --output results/structural_domains/esmfold-independent-geometry-v1
+```
+
+Started interdomain placement analysis across all 35,708 domain-pair/taxon
+combinations from 35,322 protein pairs with multiple eligible domains. The
+existing implementation reconstructs matched domain sites, checks disjointness,
+and evaluates all nonadjacent cross-domain residue pairs under directional PAE
+thresholds 5, 10 and 15 Å in both models. The resource plan reserves one CPU
+worker, 16 GB memory and 5 GB output, with a 0.2–12 hour planning range. No
+interdomain result is claimed yet; low PAE retention would indicate uncertain
+predicted placement, not experimentally demonstrated flexibility.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_domain_placement.py --comparisons results/structural_domains/esmfold-full-frozen-v1 --output results/structural_domains/esmfold-placement-v1
+```
+
+The independent geometry receipt/table and placement resource estimate are
+tracked in `metadata/esmfold_domain_independent_geometry*` and
+`metadata/esmfold_domain_placement_resource_plan.json`.

@@ -1,0 +1,22 @@
+{
+  "status": "prelaunch_full_frozen_ESMFold_interdomain_placement",
+  "protein_pairs_with_multiple_eligible_domains": 35322,
+  "domain_pair_taxon_combinations": 35708,
+  "pae_cutoffs": [
+    5,
+    10,
+    15
+  ],
+  "cpu_workers": 1,
+  "memory_gb_planning": 16,
+  "output_gb_planning": 5,
+  "wall_hours_planning": [
+    0.2,
+    12
+  ],
+  "estimate_basis": "Complete accepted-domain inventory; only proteins with at least two eligible compared domains require coordinates/PAE. Three confidence masks on every domain pair, without optimization.",
+  "cost": "Existing authorized host",
+  "source_receipt_sha256": "72d3341ac319a3900383223daf3c90f867815c487b054c85d5a459f3c7da11ea",
+  "producer_sha256": "7fec403af46fde896d3962f37a1802bf2f27d2942f226923c1cd8f7fe5f42a85",
+  "free_disk_bytes": 12532587814912
+}

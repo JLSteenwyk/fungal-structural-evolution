@@ -1,0 +1,11 @@
+{
+  "status": "passed_independent_selected_domain_geometry",
+  "source_receipt_sha256": "72d3341ac319a3900383223daf3c90f867815c487b054c85d5a459f3c7da11ea",
+  "script_sha256": "ddee9a99e042439956142ca7d55edcfeeb2425de7c47659f00dfb77b424e11b4",
+  "comparisons": 58,
+  "selection": "One smallest identity hash per Pfam accession, independent of metric values",
+  "interpretation": "Independent SciPy rotation and condensed-distance calculations reproduce selected whole/domain fits and local pair metrics. Only selected rows checked, not all domain geometry or PAE-filtered distances.",
+  "artifacts": {
+    "recalculated_domains.tsv": "a09633124f2666a1facae7d86ad5f20f48773d430c5560288139eefa6798ee02"
+  }
+}
