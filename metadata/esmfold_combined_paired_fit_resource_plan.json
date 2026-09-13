@@ -1,0 +1,33 @@
+{
+  "status": "prelaunch_combined_supported_paired_fits",
+  "markers": 89,
+  "fits": 356,
+  "taxa_range": [
+    4,
+    237
+  ],
+  "columns_range": [
+    73,
+    462
+  ],
+  "workers": 4,
+  "threads_per_fit": 1,
+  "memory_per_fit_gb": 2,
+  "planning_runtime_hours": [
+    1,
+    168
+  ],
+  "planning_disk_gb": 10,
+  "available_memory_bytes": 596339195904,
+  "free_disk_bytes": 12488071880704,
+  "sequence_tree_support": {
+    "sh_alrt": 1000,
+    "ultrafast_bootstrap": 1000,
+    "bootstrap_nni": true
+  },
+  "input_receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+  "model_receipt_sha256": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+  "producer_sha256": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+  "basis": "89 combined same-method paired alignments; one supported sequence tree plus three fixed-topology structural fits per marker. Runtime is a planning scenario, not a measured bound; broader taxa than prior separate cohorts. Four additional existing-host CPU workers. Uncertainty resampling, species-tree reconciliation and acceleration tests are separate.",
+  "cost": "Existing authorized host; no new charges"
+}

@@ -1974,3 +1974,22 @@ residues passing six-residue pLDDT70 and directional PAE10. Started combined
 paired alignment preparation on the full 526-taxon, 125-marker design; final
 usable coverage and combined branch inference remain pending. Original ESMFold
 prediction, follow-on accessibility and full-panel PMSF jobs remain active.
+
+
+Combined ESMFold paired inputs completed and passed full emitted-FASTA readback:
+89 ready markers, 292 taxa (281 fungi and 11 outgroups), 9,332 marker–taxon cells,
+22,205 retained marker columns and 1,699,035 observed paired cells. Full-design
+coverage still evaluates all 526 working entries and 125 markers (65,750 rows).
+The 1,733,521 observed cells in that full coverage table include non-ready or
+ineligible cells and are not the emitted-alignment total. Combined ecological
+coverage confirms 16 shared markers across five Amanita taxa and 26 across three
+Cenococcum taxa; transition replication/review remains unresolved.
+
+Launched 356 combined-cohort fits (89 AA sequence searches, each followed by
+three fixed-sequence-topology structural fits). AA searches include 1,000 SH-aLRT
+and 1,000 ultrafast bootstrap replicates with bootstrap NNI. Four single-thread
+workers with 2 GB per fit; 1–168 hours is a planning scenario, not a measured
+runtime bound. Inputs span 4–237 taxa and 73–462 columns per marker. Matched-site
+direct geometry for this combined snapshot, uncertainty resampling, reconciliation
+and controlled acceleration/coupling analyses remain pending. The full fungal
+sampling, larger atlas and all eight evolutionary analyses remain the goal.
