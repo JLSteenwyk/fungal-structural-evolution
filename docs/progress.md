@@ -2061,3 +2061,19 @@ conditional phylogenetic estimates, while extant exposure summaries remain
 unadjusted. This prepares covariates for controlled coupling/exposure modeling;
 it does not constitute an effect test or resolve feature dependence/uncertainty.
 The larger combined-cohort supported fits and direct geometry continue running.
+
+
+Ecology accessibility completed for all 675 models / 212,983 residues. Full
+source-coordinate audit passed; emitted audit-model identities, residue counts
+and entry hashes match the frozen source universe. Projection and two-reference
+normalization completed for 134,004 observed cells in 71 markers / 625 models.
+Full projected-row and normalization readbacks passed for all cells.
+
+All three frozen ESMFold acquisition cohorts now have audited accessibility
+calculations. Combined raw-accessibility integration and projection remain
+pending: the combined alignment has 1,699,035 observed cells versus 1,692,000
+in the three separately ready alignment sets, so concatenating their projected
+tables would omit newly eligible cells and retain incompatible paired columns.
+Reproject original per-model ASA onto the combined alignment after preserving
+source audit/configuration provenance. Controlled evolutionary tests remain
+pending; the full project scope is unchanged.
