@@ -5,13 +5,17 @@
 | Local repository and original objective | Created | Git history and docs/objective.txt |
 | GitHub remote | Published and public visibility verified via GitHub API | https://github.com/JLSteenwyk/fungal-structural-evolution |
 | Catalog discovery | NCBI fungal catalogs inventoried; additional sources pending | metadata/source_receipts.json and metadata/catalog_summary.json |
-| 500 fungi + 25 outgroups | Not selected | Reviewed manifest with coverage audit |
-| Data QC and structure inventory | Pending | Per-taxon reports and file checksums |
-| Species tree and discordance | Pending | Alignments, trees, support and sensitivity |
-| Families, domains and reconciliation | Pending | Memberships, trees and reconciliation |
-| Structural atlas | Pending | Structures, provenance, clustering and annotation |
+| 500 fungi + 25 outgroups | 501 fungal entries +25 outgroups acquired; species identity review pending for 22 fungal labels | metadata/analysis_manifest.tsv; metadata/taxon_label_review.tsv |
+| Data QC and structure inventory | Broad BUSCO complete for 526; exact-sequence structure inventory ongoing; lineage-specific and contamination QC pending | Per-taxon receipts; metadata/busco_dataset_receipt.json |
+| Species tree and discordance | 125 profile alignments and 49,027-site matrix complete; guide and gene trees running; support/discordance/sensitivity pending | metadata/initial_species_matrix_receipt.json; results/phylogeny/ |
+| Families, domains and reconciliation | Representatives prepared for all 526; 64-taxon computational core running; full assignment/domains/reconciliation pending | metadata/orthology_input_manifest.tsv; results/orthology/ |
+| Structural atlas | Existing-model retrieval ongoing; direct comparisons executed for 865 marker taxon pairs; full atlas and clustering pending | metadata/direct_structural_comparison_receipt.json; data/structures/ |
 | Evolutionary objectives 1–8 | Pending | Estimates, uncertainty, tests and sensitivity |
-| Figures, methods and case studies | Pending | Reproducible artifacts and validation proposals |
+| Figures, methods and case studies | QC and exploratory geometry figures/methods available; evolutionary results and case studies pending | docs/figures/; docs/methods-draft.md |
+
+## Chronological execution record
+
+Earlier entries below describe the state at that time and are superseded by later evidence. In particular, early references to “unique species” counted distinct taxon IDs; the taxon-label review establishes that species-level identity is still pending for some entries.
 
 Previous conversational turn supplied a goal prompt; it did not execute analyses. First execution turn initializes authoritative project records and obtains catalog evidence. Keep the full objective active.
 
@@ -114,3 +118,9 @@ The updated structural mapping (session 14466 terminal, snapshot-v2) verifies th
 Direct structure/sequence comparison session 57235 completed successfully: 2,209 qualified rows across pLDDT 50/70/90, representing 865 within-marker taxon pairs across 111 markers; 386 threshold-specific rows were excluded by coverage. At threshold 70, 858 comparisons passed. Proper-rotation RMSD and explicitly defined local Cα distance-change metrics use matched phylogenetic positions; no branch-rate or independence assumption is made. Matrix provenance was independently rechecked during execution, and the reusable script now enforces it directly. All 16 integrity tests pass, including rigid-rotation/translation invariance and reflection exclusion.
 
 The direct-comparison figure was generated and visually inspected; artifacts are results/structural_comparisons/snapshot-v1, with an SVG copy under docs/figures. The plot is descriptive only and includes no correlation significance test. Global-versus-local discrepancies motivate PAE, domain-orientation and alignment review. Supported gene/species trees, core orthology and structural retrieval remain in progress; no structural evolutionary rate result is claimed.
+
+PAE acquisition and confidence sensitivity completed: all 422 distinct models in structural mapping snapshot-v2 have verified, version-matched PAE matrices (54,375,930 compressed bytes; zero failures). All 858 qualifying pLDDT ≥70 marker taxon pairs were assessed at PAE thresholds 5, 10 and 15 Å, requiring both directions in both models, for both all-nonadjacent and local-neighborhood residue pairs. This produced 5,148 sensitivity rows with zero PAE exclusions. The analysis independently reproduced every baseline RMSD and local residue-pair count before filtering. Receipts: `metadata/marker_pae_retrieval_receipt.json`, `metadata/pae_sensitivity_receipt.json` and `metadata/pae_sensitivity_figure_receipt.json`. Full results and all-pair manual review ordering remain under `results/structural_pae/comparisons-v1`; SVG copied to `docs/figures/pae_sensitivity.svg` after visual inspection. All 18 integrity tests passed, including directional PAE and residue-index checks.
+
+At PAE ≤10 Å, the median retained fraction of nonadjacent residue pairs is 0.7455. The across-comparison median of mean absolute distance changes is 0.4849 Å before filtering and 0.3064 Å among confident pairs. These averages use different residue-pair compositions and are not tests of an evolutionary effect. For the highest-global-RMSD comparison (marker 5000823at2759, the explicitly labeled Saccharomyces hybrid versus Pachysolen tannophilus), global RMSD is 34.7439 Å; only 33.32% of nonadjacent residue pairs pass PAE ≤10 Å, and mean absolute distance change is 8.4510 Å unfiltered versus 1.0132 Å on confident pairs. This motivates domain/orientation and annotation review; it does not establish an artifact, structural acceleration or a hybridization effect.
+
+Taxon identity correction: all 526 labels were screened and 22 fungal entries were flagged (21 incompletely identified labels and one explicit hybrid). The earlier description of 501 unique fungal species was too strong: the working set contains 501 fungal entries, and independent species-level identity remains under review. `metadata/taxon_label_review.tsv` records the flags and required sensitivities. Existing data and running inferences were preserved. Initial guide-tree inference, marker-tree inference, MAFFT alignments, full-input OrthoFinder core inference, UniProt matching and AFDB coordinate acquisition were each confirmed live during this work; none is presented as completed evolutionary inference.

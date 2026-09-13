@@ -30,3 +30,20 @@ Global geometry is Cα RMSD after a least-squares proper rotation and translatio
 The first executed batch contains 2,209 qualifying rows across three thresholds, representing 865 distinct within-marker taxon pairs across 111 markers; 386 threshold-specific comparisons were excluded. At pLDDT ≥70, 858 comparisons qualified. The figure contrasts global RMSD and local geometry but fits no correlation or significance test because observations share proteins, taxa and ancestry. Some large global RMSDs coexist with much smaller local changes; domain motion, uncertain interdomain orientation, alignment error and annotation artifacts remain possible explanations. PAE/domain checks and supported phylogenies are required before interpreting outliers as evolutionary changes.
 
 Results are under `results/structural_comparisons/snapshot-v1`; the displayed SVG is copied to `docs/figures/direct_comparisons.svg`. Numpy, Biopython and plotting dependencies are pinned in `environments/structural-comparisons.yml`. Matrix/mapping/model checksums and rotation/reflection tests validate computation, not the biological assumptions. These distances must not be inserted directly as additive structural branch lengths.
+
+## PAE confidence sensitivity
+
+`retrieve_marker_pae.py` retrieves the version-specific PAE URL recorded for every distinct model in a mapping snapshot. It checks model/version identity, protein length, square matrix dimensions, finite nonnegative entries and the declared maximum (allowing export rounding). Raw JSON is gzip-compressed reproducibly outside Git; receipts preserve compressed and original checksums, sequence identity, retrieval time and source URL. Failed downloads are explicit, never treated as zero uncertainty. A shared lock and hash-checked cache make interrupted acquisition restartable into a new output snapshot.
+
+`assess_pae_sensitivity.py` reuses the exact pLDDT ≥70 residue sets from direct comparisons and independently reproduces their RMSDs and local residue-pair counts. For each unordered residue pair, confidence requires PAE ≤5, ≤10 or ≤15 Å in **both directions in both models**. The analysis reports counts and mean absolute Cα distance changes separately for confident and uncertain pairs, for all nonadjacent residue pairs and for the existing ≤15 Å neighborhood definition. Sequence separation must be at least three residues in each protein. Empty sets yield missing values, not zeros. PAE filters change the residue-pair composition, so changes in averages do not by themselves establish prediction artifacts or biological effects.
+
+PAE describes expected aligned positional error; it is not an experimental error measurement or a calibrated confidence interval on a Cα distance. These descriptive sensitivities do not assign domains, establish domain movement, yield branch rates or resolve prediction circularity. Domain annotation and independent prediction/experimental controls remain required. See the [AlphaFold DB FAQ](https://alphafold.ebi.ac.uk/faq) for metric interpretation and the current two-dimensional JSON format.
+
+```bash
+python scripts/retrieve_marker_pae.py --snapshot results/structural_markers/snapshot-v2 --output results/structural_pae/snapshot-v1
+python scripts/assess_pae_sensitivity.py --snapshot results/structural_markers/snapshot-v2 --comparisons results/structural_comparisons/snapshot-v1 --pae results/structural_pae/snapshot-v1 --output results/structural_pae/comparisons-v1
+```
+
+Use a new output directory for each snapshot. Missing PAE remains an explicit exclusion. The acquisition and analysis scripts use the existing structural-comparisons environment.
+
+`python scripts/plot_pae_sensitivity.py --comparisons results/structural_pae/comparisons-v1` generates SVG/PNG/PDF confidence-sensitivity plots and orders all assessed taxon pairs by global RMSD in `global_rmsd_review_order.tsv`. The ordering is for manual inspection, not a list of statistically supported changes. Species names are joined from the checksum-recorded working manifest. Copies of summary receipts and the SVG are retained in Git; raw PAE and detailed comparisons remain outside Git.
