@@ -1,0 +1,13 @@
+{
+  "scope": "All 72 local-source markers x all 1000 saved AA bootstrap topologies; score both original alphabets at all 16571 sites",
+  "workers": 8,
+  "threads_per_worker": 1,
+  "memory_gb_plan": 16,
+  "disk_gb_plan": 5,
+  "runtime_hours_estimate": [
+    0.25,
+    8
+  ],
+  "basis": "Tree parsing plus 20-state postorder arrays; bootstrap scores retained as uint16 arrays and compressed per marker. No new tree inference. Existing authorized host.",
+  "script_sha256": "fc2c4bfbd1f0fdb405b522888dd854ae0316c65bae8108bec2cc395d618a2180"
+}

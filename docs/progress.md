@@ -1443,3 +1443,14 @@ AA/3Di reconstruction confirms that block sampling leaves F456999 entirely
 missing despite 94 observed original sites. The intended no-fit/no-replacement
 handling is intact. Resampling remains active and requires a final all-draw
 summary. The overall research goal remains active and incomplete.
+
+
+### Site topology sensitivity launched over every saved AA bootstrap tree
+
+Following the preceding verified wait, launched original-character minimum-change
+calculations over all 72,000 local AA bootstrap topologies, retaining all score
+arrays. Eight workers and resource forecasts are recorded. The process was
+verified live with 14 marker outputs already complete; full-stage completion
+and independent output auditing remain pending. This adds topology sensitivity
+to the exposure-linked site dataset alongside ongoing column resampling. The
+overall research goal remains active and incomplete.

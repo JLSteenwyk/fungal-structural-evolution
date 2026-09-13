@@ -304,3 +304,31 @@ The complete site table remains outside Git. Its hash, topology pins, source
 lineage, validation and descriptive counts are recorded in
 `metadata/esmfold_site_parsimony_exposure_{receipt,readback,summary}.json`;
 resource planning is in `metadata/site_parsimony_exposure_resource_plan.json`.
+
+
+## Full bootstrap-topology sensitivity running
+
+`scripts/assess_site_parsimony_topologies.py` evaluates both original paired
+alignments on all 1,000 saved AA UFBoot trees per marker: 72,000 topologies over
+all 72 markers. It preserves repeated bootstrap trees and checks each tree's
+taxon universe. Character columns remain unchanged, isolating topology choice
+from the separate paired column-resampling run. Source tree archives, input
+receipts, code and the parsimony helper are pinned.
+
+Per-marker restartable outputs retain both complete bootstrap-by-site score
+arrays and per-site ranges, quantiles, distinct-score counts and the fraction
+matching the original-tree score. Each completed array is read back before its
+marker completion receipt is written. The full stage requires every marker.
+Quantiles are descriptive topology sensitivity conditional on the AA bootstrap
+procedure, not calibrated confidence intervals or posterior probabilities.
+No branch assignments or ancestral sequences are inferred.
+
+Eight single-thread workers run on the existing authorized host, with 16 GB RAM
+and 5 GB disk planning and a 0.25–8 hour runtime forecast. This is a launched
+stage, not yet a completed all-marker result. Resource and execution configs are
+`metadata/site_parsimony_topology_resource_plan.json` and
+`metadata/esmfold_site_parsimony_topology_config.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_site_parsimony_topologies.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --diagnostic results/phylogeny/site-parsimony-exposure-esmfold-v1 --output results/phylogeny/site-parsimony-topologies-esmfold-v1 --workers 8 --bootstrap-trees 1000
+```
