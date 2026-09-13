@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/qualify_native_pae.py",
+    "--coordinates",
+    "results/structural_alphabet/coordinate-esmfold-followon-v1",
+    "--pae",
+    "results/structural_pae/esmfold-followon-complete-v1",
+    "--output",
+    "results/structural_alphabet/audited-esmfold-followon-v1"
+  ],
+  "config_sha256": "ce8a28079ebeee8d616a322ea43e5f89a90c80798d0e427292405bde2527c266",
+  "pae_receipt_sha256": "d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f",
+  "coordinate_receipt_sha256": "8172c8444f42e2478a3d2bae2ae6d3392695f94a7c11db9c0feb492722bd6582",
+  "resource_plan": {
+    "workers": 1,
+    "memory_allowance_gb": 8,
+    "output_allowance_bytes": 2000000000,
+    "planning_runtime_hours": [
+      0.05,
+      4
+    ],
+    "scope": "Bind full directional PAE to all 4252 coordinate-audited models; preserve six-residue confidence/validity masks. Existing host only; no inference or new charges."
+  }
+}

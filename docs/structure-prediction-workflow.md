@@ -660,3 +660,26 @@ Target: `results/structural_alphabet/audited-esmfold-followon-v1`.
 Allowance: one CPU, 8 GB memory, 2 GB output and 0.05–4 planning hours, using
 existing host resources. Independent qualified-output readback and paired-input
 preparation remain separate; no new qualified cohort is claimed yet.
+
+
+## Follow-on PAE export completed; qualification running
+
+The full 4,252-model export finished with zero failed models (session 31256,
+exit zero). It preserves all directional ESMFold PAE values: 3,807,531,471
+compressed bytes, representing 8,835,531,336 JSON bytes. The exporter checks every
+matrix for exact numerical equality after conversion. A separate full manifest
+readback checked all model/version identities, sequence and prediction-source
+links, compressed-file sizes and SHA256 values against the frozen cohort.
+That readback does not independently repeat numerical matrix conversion.
+
+The queued qualification controller launched `qualify_native_pae.py` as PID
+2283888, combining the complete coordinate audit with the finished PAE export.
+It evaluates the maximum directional PAE across each native six-residue feature
+context. All 4,252 models are included; final qualified residue counts and
+paired-marker coverage remain unknown until completion and readback. No
+AlphaFold/ESMFold confidence calibration or experimental accuracy is inferred.
+
+Versioned records: `metadata/esmfold_followon_full_pae_export_receipt.json`,
+`metadata/esmfold_followon_pae_export_readback.json`, and
+`metadata/esmfold_followon_qualification_launch.json`. Export receipt SHA256:
+`d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f`.

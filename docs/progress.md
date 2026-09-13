@@ -1842,3 +1842,12 @@ session 61482 after exact producer exit; 11 dependency pins are recorded.
 Initial models produced complete residue tables. Neither full calculation nor
 full audit is complete. See docs/residue-accessibility.md and
 metadata/esmfold_followon_accessibility_*.
+
+
+Follow-on PAE export completed for all 4,252 models, zero failures (session 31256
+exit zero). Full manifest identity/source linkage and all 3.81 GB compressed-file
+hashes passed a separate readback. Exact matrix round-trip was checked by the
+exporter, not repeated independently. Qualification automatically launched as
+PID 2283888 under controller session 72300 and remains live. Final confidence
+counts, independent context readback and paired-input preparation remain pending.
+See docs/structure-prediction-workflow.md and metadata/esmfold_followon_*pae*.
