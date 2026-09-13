@@ -17,6 +17,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungal entrie
 - [Orthology workflow](docs/orthology-workflow.md)
 - [Domain annotation workflow](docs/domain-annotation-workflow.md)
 - [Domain geometry and placement confidence](docs/domain-structure-comparisons.md)
+- [Structural alphabet benchmark](docs/structural-alphabet-benchmark.md)
 - [Local structure prediction](docs/structure-prediction-workflow.md)
 - [Ecological evidence and curation](docs/ecology-evidence-workflow.md)
 - [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)
@@ -47,3 +48,5 @@ Version-matched PAE matrices were validated for 422 models, enabling confidence 
 All 125 markers have completed profile and MAFFT alignments. Their alternative 526-taxon matrices retain 49,027 and 63,750 columns, respectively. Median residue-pair Jaccard agreement among residues retained by both methods is 0.945, with substantial disagreement in a few markers. Agreement is not accuracy; tree and structural-result sensitivities remain pending. See the [phylogenetic workflow](docs/phylogenetic-workflow.md).
 
 Domain annotation is now linked to structural geometry for the existing AFDB marker snapshot: 738 comparisons across 84 Pfam domains, plus 375 domain-pair/taxon-pair placement assessments. These measurements separate internal domain geometry from global-fit effects and uncertain interdomain placement; they are not yet evolutionary rate estimates. [Methods, figure and an artifact-control example](docs/domain-structure-comparisons.md).
+
+Coordinate-derived 3Di encodings and all ten native features have been audited for the 422-model comparison snapshot. The matched-site sequence/3Di/geometry benchmark covers the 858 whole-marker and 738 domain comparisons under three confidence regimes. Invalid terminal states are explicitly masked and spatial-partner confidence is retained. [Benchmark figure, methods and limitations](docs/structural-alphabet-benchmark.md); structural-alphabet branch estimates remain pending.

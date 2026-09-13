@@ -1,0 +1,37 @@
+{
+  "status": "complete_matched_site_alphabet_geometry_benchmark",
+  "source_receipts": {
+    "encodings": {
+      "path": "results/structural_alphabet/audited-marker-v2",
+      "sha256": "815cfb493b4941c96445f8c5b742ec9c0dcd1012b0847a37e52939b33c53fef6"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/snapshot-v2",
+      "sha256": "8de3f7949755aa684b51804d3c312c7427bcca615e549099df7e7a7b8ba9942e"
+    },
+    "comparisons": {
+      "path": "results/structural_comparisons/snapshot-v1",
+      "sha256": "2da8cb4699ffb5695821437ee0d3b78cb30f306cc8794fc904b1ce92d51f8370"
+    },
+    "domains": {
+      "path": "results/structural_domains/comparisons-v1",
+      "sha256": "adecd0a2bdd59a13dafe31eb0b118c1116b4c14e8c39fc681ea8ca47b6dad8bb"
+    }
+  },
+  "script_sha256": "f7d29e194b16d491f255710867482a86680c2d547ead6d3b4618051b05861bdc",
+  "geometry_source_sha256": "4a3a35879a8e7cf95dbaca06ca012ae1b3a7df9cd0e0c49dd36975d8d8a9bdb0",
+  "whole_marker_pairs": 858,
+  "domain_comparisons": 738,
+  "benchmark_rows": 4743,
+  "excluded_rows": 45,
+  "regimes": [
+    "valid_focal70",
+    "six_residue70",
+    "six_residue70_pae10"
+  ],
+  "interpretation": "Same aligned residue sets for 3Di mismatch, amino-acid mismatch and recomputed geometry. Regimes change site composition; missing or invalid states never count as similarities. 3Di distances are uncorrected state fractions, not branch lengths or Angstrom. Pairwise observations share ancestry; branch-estimate benchmarking, substitution-model assessment and source circularity controls remain pending.",
+  "artifacts": {
+    "benchmark.tsv": "cefaa9b46b43b6c34af51f8a5424d447034752ba60e67060ba8fd65728ec4837",
+    "exclusions.tsv": "4f57a7e23357f9a4404ce9f3010a47f6455889eaad2731f64d2e462264de5ca9"
+  }
+}

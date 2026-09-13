@@ -74,3 +74,8 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 
 - `structural_domain_comparison_receipt.json`, `structural_domain_figure_receipt.json` and `structural_domain_review_order.tsv`: 738 conserved-domain comparisons, source hashes, plot provenance and complete manual review ordering. Refitting improvement is not evidence of biological motion.
 - `domain_placement_receipt.json` and `domain_placement_confidence.tsv`: 375 domain-pair/taxon-pair combinations at three directional PAE thresholds; absent confident residue-pair measurements remain missing, not zero.
+
+- `foldseek_native_config.json`: pinned binary/source identities and native coordinate-extraction commands, including recorded header-link recovery.
+- `native_3di_reproduction_receipt.json`: exact semantic agreement between the original native extraction and the complete scripted reproduction for all 422 models.
+- `3di_feature_audit_receipt.json` and `3di_model_summary.tsv`: native feature/partner validity and focal/six-residue confidence masks, with hashes of the per-model NPZ artifacts.
+- `3di_geometry_benchmark_receipt.json`, `3di_benchmark_figure_receipt.json` and `3di_confidence_summary.tsv`: matched-site geometry/state benchmark provenance and counts under three confidence regimes; not branch estimates.

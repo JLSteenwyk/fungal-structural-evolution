@@ -1,0 +1,86 @@
+{
+  "benchmark_receipt_sha256": "fdcac49823c3c95ab9fe325fa234213542e42224475fba06050454dbddc33871",
+  "script_sha256": "47a2b938e614d7b359435fe7130aaebf9e358c6be9c276f418cc1b3017429ffa",
+  "plotted_regime": "six_residue70_pae10",
+  "scope_regime_summary": [
+    {
+      "scope": "whole_marker",
+      "confidence_regime": "valid_focal70",
+      "comparison_rows": 858,
+      "excluded_rows": 0,
+      "median_retained_fraction": 1.0,
+      "median_compared_residues": 240.0,
+      "median_uncorrected_3di_difference": 0.16191077098428724,
+      "median_uncorrected_sequence_difference": 0.35348837209302325,
+      "median_ca_superposition_rmsd_angstrom": 1.4057744605545062,
+      "median_local_distance_mean_absolute_change_angstrom": 0.2688105357221525
+    },
+    {
+      "scope": "whole_marker",
+      "confidence_regime": "six_residue70",
+      "comparison_rows": 856,
+      "excluded_rows": 2,
+      "median_retained_fraction": 0.9279953917050692,
+      "median_compared_residues": 221.0,
+      "median_uncorrected_3di_difference": 0.14056224899598393,
+      "median_uncorrected_sequence_difference": 0.3459648493543759,
+      "median_ca_superposition_rmsd_angstrom": 1.2573722718300864,
+      "median_local_distance_mean_absolute_change_angstrom": 0.2407584086366364
+    },
+    {
+      "scope": "whole_marker",
+      "confidence_regime": "six_residue70_pae10",
+      "comparison_rows": 856,
+      "excluded_rows": 2,
+      "median_retained_fraction": 0.9268849537810446,
+      "median_compared_residues": 221.0,
+      "median_uncorrected_3di_difference": 0.1404620109743993,
+      "median_uncorrected_sequence_difference": 0.3457670906200318,
+      "median_ca_superposition_rmsd_angstrom": 1.2574427681060003,
+      "median_local_distance_mean_absolute_change_angstrom": 0.2407584086366364
+    },
+    {
+      "scope": "domain",
+      "confidence_regime": "valid_focal70",
+      "comparison_rows": 738,
+      "excluded_rows": 0,
+      "median_retained_fraction": 1.0,
+      "median_compared_residues": 82.0,
+      "median_uncorrected_3di_difference": 0.1306122448979592,
+      "median_uncorrected_sequence_difference": 0.3021061869240895,
+      "median_ca_superposition_rmsd_angstrom": 0.5087878350606556,
+      "median_local_distance_mean_absolute_change_angstrom": 0.18041919728139078
+    },
+    {
+      "scope": "domain",
+      "confidence_regime": "six_residue70",
+      "comparison_rows": 718,
+      "excluded_rows": 20,
+      "median_retained_fraction": 0.9420289855072463,
+      "median_compared_residues": 80.0,
+      "median_uncorrected_3di_difference": 0.10984039210757823,
+      "median_uncorrected_sequence_difference": 0.29122870605291773,
+      "median_ca_superposition_rmsd_angstrom": 0.43741625009352203,
+      "median_local_distance_mean_absolute_change_angstrom": 0.16719420628600343
+    },
+    {
+      "scope": "domain",
+      "confidence_regime": "six_residue70_pae10",
+      "comparison_rows": 717,
+      "excluded_rows": 21,
+      "median_retained_fraction": 0.9411764705882353,
+      "median_compared_residues": 80.0,
+      "median_uncorrected_3di_difference": 0.10810810810810811,
+      "median_uncorrected_sequence_difference": 0.2903225806451613,
+      "median_ca_superposition_rmsd_angstrom": 0.4365864260613314,
+      "median_local_distance_mean_absolute_change_angstrom": 0.16719420628600343
+    }
+  ],
+  "interpretation": "Shared-site descriptive comparisons with dependent taxon pairs and family effects. No substitution correction, significance test, branch-rate validation or conversion from alphabet states to physical displacement.",
+  "artifacts": {
+    "3di_geometry.pdf": "36b1af429c895d75fffca4c0dc1db8bff3542569ab028aec4f43dab2c52cf0cc",
+    "3di_geometry.svg": "74fb04fe514fa3cead45b4a0e5d93b369d739a7fae3ade90ec4213c8f150cefd",
+    "3di_geometry.png": "90ca16aeb0688561c60989810e61fe73b14e201b143ff29ece820d0271edb629",
+    "confidence_summary.tsv": "1da94ad1333300db549d130e289ad5e2581faf2d64c6f965d325bb0708e16245"
+  }
+}
