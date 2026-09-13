@@ -272,3 +272,7 @@ Seven focused tests pass, and independent readback verifies every output hash an
 ## All NCBI coding-sequence downloads completed
 
 The full 519-taxon CDS acquisition finished with zero pending/error taxa. Files occupy 2.77 GB compressed. Publisher MD5, local SHA256, gzip integrity, unique identifiers and DNA alphabet passed during acquisition; partial, ambiguous and protein-unlinked records remain counted. Independent receipt readback checks every file/hash and exact assembly-matched manifest coverage. All seven external-source taxa have separately documented CDS sources or verified derived subsets. NCBI translation validation and codon/selection feasibility remain pending.
+
+## Full NCBI translation audit launched
+
+Started the strict translation audit across all 519 NCBI-backed taxa and 5,847,336 CDS records, using checksum-verified GFF and protein inputs. Translation codes are annotation-derived or explicitly marked as table-1 assumptions. Duplicated mappings, partial lengths, source exceptions and mismatches remain visible. Four focused tests passed. Initial taxa completed, confirming the producer is executing; no whole-dataset translation result is yet claimed. Resource plan and restart checks are recorded in the coding-sequence workflow.

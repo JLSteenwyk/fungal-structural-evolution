@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_full_ncbi_cds_translation_audit",
+  "taxa": 519,
+  "cds_records": 5847336,
+  "workers": 1,
+  "planning_runtime_hours": [
+    0.2,
+    4
+  ],
+  "planning_memory_gb": 4,
+  "planning_output_gb": 5,
+  "free_disk_bytes": 12540930011136,
+  "basis": "Sequential per-taxon protein and CDS loading, streamed GFF parsing; approximately 7.95 billion coding bases. Metadata-rich per-CDS TSVs retained outside Git. Runtime is a scheduling estimate, not a benchmark.",
+  "cost": "Existing authorized host only; no new charges",
+  "output": "results/cds/ncbi-strict-translation-v1",
+  "resume": "Per-taxon receipt with source/config/output hash verification; unfinished taxon rerun atomically replaces its temporary audit."
+}
