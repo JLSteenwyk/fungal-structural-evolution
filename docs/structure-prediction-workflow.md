@@ -264,3 +264,51 @@ Mapping receipts/readback, native configuration and prelaunch resource estimates
 are versioned as `metadata/esmfold_mapping_*`, `esmfold_native_extraction_*`
 and `esmfold_coordinate_audit_resource_plan.json`. Existing alphaFold and local
 snapshots remain separate, preserving prediction-source effects for assessment.
+
+## Local confidence qualification and coverage contribution
+
+The 5,121-model frozen local snapshot completed native coordinate validation
+(1,183,341 residues; 1,173,099 valid structural states). All directional PAE
+matrices exported losslessly. Joint six-residue pLDDT >=70 and maximum
+context PAE <=10 retained 842,713 whole-model states. Independent NPZ readback
+verified every artifact hash, model identity, PAE validity mask and count.
+
+The same profile alignment and eligibility rule used for AlphaFold yielded
+72 ready local marker alignments, 4,669 usable taxon-marker combinations and
+199 represented taxa. All emitted AA/3Di identities, dimensions, missingness
+masks and per-taxon coverage counts passed independent FASTA readback.
+Local coverage includes 26 usable markers for Amoeboaphelidium occidentale
+and 25 for Basidiobolus ranarum. The former adds an otherwise unrepresented
+manifest lineage to the paired coverage inventory.
+
+Comparing source-specific eligibility gives 458 entries with usable data from
+at least one source (440 fungal entries and 18 outgroups), versus 322 in the
+AlphaFold snapshot. Local predictions add 136 newly represented entries.
+The 13,565 AlphaFold and 4,669 local usable taxon-marker combinations do not
+overlap, consistent with targeting missing predictions. This is a coverage
+union, not a pooled alignment or supported phylogenetic result. Predictor
+calibration, uneven depth, copy resolution and uncertainty remain required.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/qualify_native_pae.py \
+  --coordinates results/structural_alphabet/coordinate-esmfold-partial-v1 \
+  --pae results/structural_pae/esmfold-partial-v1 \
+  --output results/structural_alphabet/audited-esmfold-partial-v1
+python scripts/prepare_paired_phylogenetic_inputs.py \
+  --encodings results/structural_alphabet/audited-esmfold-partial-v1 \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --matrix results/phylogeny/profile-matrix-50-v1 \
+  --output results/phylogeny/paired-inputs-esmfold-partial-v1
+python scripts/summarize_paired_lineage_coverage.py \
+  --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 \
+  --output results/phylogeny/paired-lineage-coverage-esmfold-partial-v1
+python scripts/compare_paired_source_coverage.py \
+  --reference results/phylogeny/paired-inputs-gdm-expanded-v1 \
+  --local results/phylogeny/paired-inputs-esmfold-partial-v1 \
+  --output results/phylogeny/paired-source-coverage-v1
+```
+
+The source comparison also passed an identity check using the AlphaFold
+snapshot on both sides: zero source-exclusive combinations, all 13,565
+combinations shared, and 322 represented taxa. Summary receipts and tables
+are versioned in metadata; raw structures and encodings remain outside Git.

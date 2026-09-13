@@ -1,0 +1,25 @@
+{
+  "status": "complete_predictor_source_coverage_comparison",
+  "reference_receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+  "local_receipt_sha256": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+  "reference_path": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+  "local_path": "results/phylogeny/paired-inputs-esmfold-partial-v1",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "7129cc3a2f9ec013cb15e0718f0afc70ece116cdfc00cadcd3da21bac4859bbc",
+  "taxa": 526,
+  "markers": 125,
+  "taxa_with_reference": 322,
+  "taxa_with_local": 199,
+  "taxa_with_either": 458,
+  "newly_represented_taxa": 136,
+  "taxon_marker_counts": {
+    "reference_only": 13565,
+    "local_only": 4669,
+    "both": 0,
+    "neither": 47516
+  },
+  "interpretation": "Coverage union only; no pooled alignments or branch estimates. Each usable combination independently meets its source-specific four-taxon family eligibility. This can undercount combinations enabled by a future pooled analysis. Unequal predictor calibration, orthology and tree support remain unresolved.",
+  "artifacts": {
+    "taxon_source_contributions.tsv": "802381f72732e041b6108ef52f982b5577162af94ca55b13ef93bcfa34d125bd"
+  }
+}

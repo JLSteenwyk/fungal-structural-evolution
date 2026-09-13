@@ -550,3 +550,19 @@ match the independent artifact audit. Started provenance-bound PAE export.
 Native Foldseek extraction finished, and coordinate feature reconstruction is
 now running. Joint-confidence eligibility and improved paired lineage coverage
 remain pending; no new branch or accuracy conclusion follows from extraction.
+
+### Local confidence-qualified paired coverage completed
+
+Completed local PAE export and coordinate qualification for all 5,121 frozen
+models; independent encoding readback confirms 842,713 joint-confidence states.
+Prepared and independently checked 72 local paired marker alignments with
+4,669 usable taxon-marker combinations across 199 taxa. Comparing the separate
+prediction-source inputs increases represented entries from 322 to 458
+(440 fungal entries, 18 outgroups), including 136 newly represented entries.
+Amoeboaphelidium occidentale contributes 26 usable markers, adding paired
+coverage for Aphelidiomycota. Coverage remains uneven and source-specific;
+these counts are not completed branch tests or a fully sampled atlas.
+
+Both ESMFold production queues and the expanded supported paired fits remain
+active. Species/gene trees, orthology assignment and whole-proteome domain
+searches also continue. The overall project goal remains active and incomplete.

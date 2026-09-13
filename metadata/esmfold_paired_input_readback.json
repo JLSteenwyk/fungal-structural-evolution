@@ -1,0 +1,15 @@
+{
+  "status": "complete_local_paired_fasta_coverage_readback",
+  "input_receipt_sha256": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+  "coverage_receipt_sha256": "efdddabfcff7a92d7363147b5fee8098d7255f9f7773b4eec2220c58df7e084c",
+  "source_comparison_receipt_sha256": "9e173006280202763e6b121c3c5528bd8c8432f3aa5804e8c313205276a2d9a5",
+  "ready_markers": 72,
+  "taxa": 199,
+  "usable_taxon_marker_combinations": 4669,
+  "checks": [
+    "All emitted AA/3Di identity sets and dimensions",
+    "Exact paired missingness masks",
+    "Per-taxon usable counts reproduced from FASTA membership",
+    "Local source contribution counts agree with emitted alignments"
+  ]
+}
