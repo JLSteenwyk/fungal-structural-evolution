@@ -1,0 +1,102 @@
+{
+  "status": "complete_published_outgroup_cds_translation_audit",
+  "taxa": [
+    {
+      "taxon_id": "OFS5426470",
+      "species_name": "Corallochytrium limacisporum",
+      "proteins_screened": 7535,
+      "source_cds_records": 7535,
+      "verified_cds_records": 7510,
+      "status_counts": {
+        "non_triplet_cds_length": 25,
+        "exact_translation": 7510
+      },
+      "cds_without_protein": 0,
+      "recovered_single_copy_markers": 125,
+      "markers_with_verified_cds": 125,
+      "source_cds_sha256": "1fb12aaf2c912030e2b4a6cca4c9850ee3b8a2d7941f81e80e76d0a066b15ba1",
+      "normalized_protein_sha256": "a859c6c289219dc5c8fd31b1c8e6dae599260190af1a5f20a16e7ca238959669",
+      "verified_cds_path": "results/cds/published-outgroup-translation-v1/OFS5426470.verified_cds.fna",
+      "verified_cds_sha256": "056cbf252f7d8c72a6a8de894646e4aacf4a010e7c753c7da0b5af9acc0d2f83"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "species_name": "Chromosphaera perkinsii",
+      "proteins_screened": 12463,
+      "source_cds_records": 12463,
+      "verified_cds_records": 11443,
+      "status_counts": {
+        "exact_translation": 11443,
+        "non_triplet_cds_length": 895,
+        "translation_mismatch": 125
+      },
+      "cds_without_protein": 0,
+      "recovered_single_copy_markers": 121,
+      "markers_with_verified_cds": 121,
+      "source_cds_sha256": "d3ee95b478e7a6429e44617615579c5d02a2448ed8bcd2a19425fd3eff700820",
+      "normalized_protein_sha256": "a1dfba36aeabdaef6ce221d230811c343d85da4933a0f1f6211d107f7d8715f2",
+      "verified_cds_path": "results/cds/published-outgroup-translation-v1/OFS5426494.verified_cds.fna",
+      "verified_cds_sha256": "3efeb6a40b580bb43ce7abe36cb334e6a5981b3fec7b2dcba0a19d27f0911da7"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "species_name": "Pirum gemmata",
+      "proteins_screened": 21835,
+      "source_cds_records": 21835,
+      "verified_cds_records": 12037,
+      "status_counts": {
+        "exact_translation": 12037,
+        "non_triplet_cds_length": 9798
+      },
+      "cds_without_protein": 0,
+      "recovered_single_copy_markers": 7,
+      "markers_with_verified_cds": 5,
+      "source_cds_sha256": "bfe0b1c1c0d4ca1a583b40628121bac5402e01437f80dd4cdf7a27f338b8639b",
+      "normalized_protein_sha256": "1b78c35bbf2c0bad842ae2d51d380aef40ec9d87a10efae2031e8afd0028fffc",
+      "verified_cds_path": "results/cds/published-outgroup-translation-v1/OFS5426506.verified_cds.fna",
+      "verified_cds_sha256": "631f5446100f514fccf036893ac08afa46c01d4e1786538041a798adc27eae39"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "species_name": "Abeoforma whisleri",
+      "proteins_screened": 17283,
+      "source_cds_records": 17283,
+      "verified_cds_records": 10602,
+      "status_counts": {
+        "exact_translation": 10602,
+        "non_triplet_cds_length": 6681
+      },
+      "cds_without_protein": 0,
+      "recovered_single_copy_markers": 7,
+      "markers_with_verified_cds": 5,
+      "source_cds_sha256": "1bbe57e7e0b9010459bf033917b68d3edd29517797d207776783655ea9117012",
+      "normalized_protein_sha256": "457ba9f133093de9a94bc5d2d85325e1916d0a75ea42fe67dbacaad8218e8400",
+      "verified_cds_path": "results/cds/published-outgroup-translation-v1/OFS5426458.verified_cds.fna",
+      "verified_cds_sha256": "dbc36a74e8c2a611d3fc7696c96bf5b268919a23413658def70300dceae28b33"
+    }
+  ],
+  "translation_table_tested": 1,
+  "proteins_screened": 59116,
+  "status_counts": {
+    "non_triplet_cds_length": 17399,
+    "exact_translation": 41592,
+    "translation_mismatch": 125
+  },
+  "external_inventory_sha256": "21a87bc1919eb0355a4404ec262d17249282d8cc4867c48b9d4c0868584aa9ba",
+  "qc_input_receipts_sha256": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+  "external_source_receipts_sha256": "ef4f46dd5f3c003ccf414eca3662f3b92cbf3dea0d98b3b8047cd3d550388fac",
+  "marker_mapping_sha256": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+  "script_sha256": "070c54abf9154f8074186e1b556c064adfe808d5da39584d75ed6e63e095a0ec",
+  "interpretation": "Exact CDS/protein identifiers; complete table-1 translation compared to normalized proteins, removing at most one terminal translated stop. DNA stop codons retained and flagged. No identifier heuristics, frame shifts, sequence trimming or alternative-code search. Non-triplet/mismatching entries remain explicit and excluded from verified CDS. Published CDS/genome coordinate agreement, codon alignment and selection suitability are separate checks.",
+  "artifacts": {
+    "OFS5426494.cds_without_protein.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "protein_cds_audit.tsv": "5e27bb4803f915846ab7faffeedd14326862c942bc5aa70bba8c9a3b478fa18c",
+    "OFS5426458.cds_without_protein.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "OFS5426470.cds_without_protein.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "OFS5426506.cds_without_protein.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "OFS5426506.verified_cds.fna": "631f5446100f514fccf036893ac08afa46c01d4e1786538041a798adc27eae39",
+    "OFS5426458.verified_cds.fna": "dbc36a74e8c2a611d3fc7696c96bf5b268919a23413658def70300dceae28b33",
+    "OFS5426470.verified_cds.fna": "056cbf252f7d8c72a6a8de894646e4aacf4a010e7c753c7da0b5af9acc0d2f83",
+    "OFS5426494.verified_cds.fna": "3efeb6a40b580bb43ce7abe36cb334e6a5981b3fec7b2dcba0a19d27f0911da7"
+  }
+}

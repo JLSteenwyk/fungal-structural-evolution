@@ -31,12 +31,14 @@ def project(parts,genome,published):
         if strand=='-':segment=str(Seq(segment).reverse_complement())
         pieces.append(segment);length+=len(segment)
     raw=''.join(pieces).upper()
-    if raw!=published:raise ValueError('genome_annotation_differs_from_published_cds')
+    if raw==published:representation='full_annotation_span'
+    elif initial>0 and raw[initial:]==published:representation='initial_phase_already_removed'
+    else:raise ValueError('genome_annotation_differs_from_published_cds')
     if len(raw)<=initial:raise ValueError('no_complete_codon')
     tail=(len(raw)-initial)%3;end=len(raw)-tail
     codons=raw[initial:end]
     if not codons:raise ValueError('no_complete_codon')
-    return codons,initial,tail,ordered
+    return codons,initial,tail,ordered,representation,raw
 
 
 def main():
@@ -86,12 +88,12 @@ def main():
         for pid,protein in proteins.items():
             row={'taxon_id':t,'protein_id':pid,'strict_status':baseline[t,pid]['status'],'projection_status':'',
                 'initial_partial_bases':'','terminal_partial_bases':'','complete_codon_span_length':'','terminal_stop_in_span':'',
-                'omitted_initial_bases':'','omitted_terminal_bases':'','ordered_segments_json':''}
+                'omitted_initial_bases':'','omitted_terminal_bases':'','published_cds_representation':'','ordered_segments_json':''}
             try:
                 published=dictionaries['cds'][pid]
-                codons,initial,tail,ordered=project(parts[pid],dictionaries['genome'],published)
+                codons,initial,tail,ordered,representation,raw=project(parts[pid],dictionaries['genome'],published)
                 row.update(initial_partial_bases=initial,terminal_partial_bases=tail,complete_codon_span_length=len(codons),
-                    omitted_initial_bases=published[:initial],omitted_terminal_bases=published[len(published)-tail:] if tail else '',ordered_segments_json=json.dumps(ordered))
+                    omitted_initial_bases=raw[:initial],omitted_terminal_bases=raw[len(raw)-tail:] if tail else '',published_cds_representation=representation,ordered_segments_json=json.dumps(ordered))
                 aa=str(Seq(codons).translate(table=1));stop=aa.endswith('*');row['terminal_stop_in_span']=stop
                 if stop:aa=aa[:-1]
                 if aa!=protein:raise ValueError('projected_translation_mismatch')
@@ -103,6 +105,7 @@ def main():
             for pid,dna in sorted(verified.items()):handle.write('>'+pid+'\n'+dna+'\n')
         summary.append({'taxon_id':t,'proteins_screened':len(proteins),'verified_codon_spans':len(verified),
             'status_counts':dict(Counter(r['projection_status'] for r in local)),
+            'published_representation_counts':dict(Counter(r['published_cds_representation'] for r in local)),
             'verified_with_partial_boundaries':sum(r['projection_status']=='exact_genome_linked_codon_translation' and (r['initial_partial_bases']>0 or r['terminal_partial_bases']>0) for r in local),
             'strict_exceptions_with_verified_projection':sum(r['projection_status']=='exact_genome_linked_codon_translation' and r['strict_status']!='exact_translation' for r in local)})
     table=args.output/'codon_projection_audit.tsv'
@@ -111,7 +114,7 @@ def main():
     result={'status':'complete_published_outgroup_genome_codon_projection_audit','taxa':summary,'proteins_screened':len(rows),
         'status_counts':dict(Counter(r['projection_status'] for r in rows)), 'strict_receipt_sha256':sha(args.strict/'receipt.json'),
         'manifest_sha256':sha(manifest_path),'sources':source_records,'script_sha256':sha(Path(__file__)),
-        'interpretation':'Genome-derived ordered CDS blocks must reproduce the complete published CDS string. Initial offset comes only from annotated phase; internal phases must agree. Only the annotated initial partial codon and a terminal 1–2-base remainder are omitted, with bases recorded. Every complete translated protein residue must match; no frame or code search. Projected spans are not claims of complete genes, corrected annotations or selection eligibility. Strict unmodified-CDS results remain preserved; boundary-aware spans require separate downstream inclusion policy. Terminal stop codons remain flagged in DNA.',
+        'interpretation':'Genome-derived ordered CDS blocks must reproduce the published CDS string either directly or after removal of exactly the annotated initial phase bases. Both export representations are recorded. Codon spans are derived from genomic blocks, applying the initial phase exactly once. Initial offset comes only from annotated phase; internal phases must agree. Only the annotated initial partial codon and a terminal 1–2-base remainder are omitted, with bases recorded. Every complete translated protein residue must match; no frame or code search. Projected spans are not claims of complete genes, corrected annotations or selection eligibility. Strict unmodified-CDS results remain preserved; boundary-aware spans require separate downstream inclusion policy. Terminal stop codons remain flagged in DNA.',
         'artifacts':{p.name:sha(p) for p in args.output.iterdir()}}
     (args.output/'receipt.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='sources'},indent=2))
 

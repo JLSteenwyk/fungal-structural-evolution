@@ -262,3 +262,13 @@ Updated the external CDS source inventory: all seven external taxa now have avai
 ## Expanded coordinate audit completed
 
 The 13,153-model native coordinate/partner audit reached successful completion: 6,910,765 residues, 6,884,459 valid states and 26,306 invalid terminal states. Six-residue pLDDT70 retains 4,719,638 valid states. All 13,153 encoding hashes, model identity counts, summary totals and script provenance passed independent readback. Encodings occupy approximately 95 MB. PAE retrieval is still running; no joint-confidence result or expanded evolutionary inference is claimed.
+
+## Published outgroup coding boundaries resolved
+
+Completed strict translation auditing for all 59,116 proteins in four published outgroup proteomes: 41,592 direct passes, 17,399 non-triplet flags and 125 translation mismatches. Genome/GFF reconstruction with explicit initial-phase and terminal-remainder handling reproduces all 59,116 proteins. The 12,431 apparent genomic mismatches from the initial audit are fully explained by published CDS exports that already removed the annotated initial phase. Both original and revised audits remain preserved; no arbitrary frame search was used.
+
+Seven focused tests pass, and independent readback verifies every output hash and accepted translation. Partial boundaries remain explicit; codon-selection eligibility and selection inference are pending. See coding-sequence-workflow.md for commands, source conventions and receipts.
+
+## All NCBI coding-sequence downloads completed
+
+The full 519-taxon CDS acquisition finished with zero pending/error taxa. Files occupy 2.77 GB compressed. Publisher MD5, local SHA256, gzip integrity, unique identifiers and DNA alphabet passed during acquisition; partial, ambiguous and protein-unlinked records remain counted. Independent receipt readback checks every file/hash and exact assembly-matched manifest coverage. All seven external-source taxa have separately documented CDS sources or verified derived subsets. NCBI translation validation and codon/selection feasibility remain pending.

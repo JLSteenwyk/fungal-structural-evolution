@@ -1,0 +1,256 @@
+{
+  "status": "complete_published_outgroup_genome_codon_projection_audit",
+  "taxa": [
+    {
+      "taxon_id": "OFS5426470",
+      "proteins_screened": 7535,
+      "verified_codon_spans": 7535,
+      "status_counts": {
+        "exact_genome_linked_codon_translation": 7535
+      },
+      "published_representation_counts": {
+        "full_annotation_span": 7535
+      },
+      "verified_with_partial_boundaries": 25,
+      "strict_exceptions_with_verified_projection": 25
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "proteins_screened": 12463,
+      "verified_codon_spans": 12463,
+      "status_counts": {
+        "exact_genome_linked_codon_translation": 12463
+      },
+      "published_representation_counts": {
+        "full_annotation_span": 12463
+      },
+      "verified_with_partial_boundaries": 1020,
+      "strict_exceptions_with_verified_projection": 1020
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "proteins_screened": 21835,
+      "verified_codon_spans": 21835,
+      "status_counts": {
+        "exact_genome_linked_codon_translation": 21835
+      },
+      "published_representation_counts": {
+        "full_annotation_span": 14738,
+        "initial_phase_already_removed": 7097
+      },
+      "verified_with_partial_boundaries": 13565,
+      "strict_exceptions_with_verified_projection": 9798
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "proteins_screened": 17283,
+      "verified_codon_spans": 17283,
+      "status_counts": {
+        "exact_genome_linked_codon_translation": 17283
+      },
+      "published_representation_counts": {
+        "full_annotation_span": 11949,
+        "initial_phase_already_removed": 5334
+      },
+      "verified_with_partial_boundaries": 9757,
+      "strict_exceptions_with_verified_projection": 6681
+    }
+  ],
+  "proteins_screened": 59116,
+  "status_counts": {
+    "exact_genome_linked_codon_translation": 59116
+  },
+  "strict_receipt_sha256": "84855b24632376de0c5d0ccda490242fcd93bbf11e88d8a217b9c42bc46c9739",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "sources": [
+    {
+      "taxon_id": "OFS5426470",
+      "kind": "genome",
+      "article_id": 5426470,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Clim_gDNA.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362467",
+      "path": "data/external/5426470/Clim_gDNA.fasta",
+      "sha256": "752afdca1bb8d1636681fc3e996acff786e92d7a75fa5211c237b65c0bfa0d0c",
+      "publisher_md5": "9e719e545be55312cc1bc7824685025f",
+      "bytes": 24124086,
+      "verified_at_utc": "2026-09-13T02:37:39.843163+00:00"
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "kind": "cds",
+      "article_id": 5426470,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Clim_long.cds.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362473",
+      "path": "data/external/5426470/Clim_long.cds.fasta",
+      "sha256": "1fb12aaf2c912030e2b4a6cca4c9850ee3b8a2d7941f81e80e76d0a066b15ba1",
+      "publisher_md5": "f16944c9c36512a26bb006b535e634eb",
+      "bytes": 12111934,
+      "verified_at_utc": "2026-09-13T02:37:39.890295+00:00"
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "kind": "gff",
+      "article_id": 5426470,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Clim_long.annot.gff",
+      "url": "https://ndownloader.figshare.com/files/9362470",
+      "path": "data/external/5426470/Clim_long.annot.gff",
+      "sha256": "d285d4cc416297603f903468a6b06c384a98d5e9339424773ce9353ba167fb76",
+      "publisher_md5": "f1bc74b48fe21170523e0ee44d5e4df8",
+      "bytes": 2031099,
+      "verified_at_utc": "2026-09-13T02:37:39.851692+00:00"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "kind": "genome",
+      "article_id": 5426494,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Nk52_gDNA.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362509",
+      "path": "data/external/5426494/Nk52_gDNA.fasta",
+      "sha256": "ccd07acb2c257e1065ce14eb203c04a0bc4bac90927492f5659452abf1b1b3f7",
+      "publisher_md5": "12b6a438d3e82e52ebb70f711c7e10da",
+      "bytes": 37772669,
+      "verified_at_utc": "2026-09-13T02:37:40.180893+00:00"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "kind": "cds",
+      "article_id": 5426494,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Nk52_long.cds.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362515",
+      "path": "data/external/5426494/Nk52_long.cds.fasta",
+      "sha256": "d3ee95b478e7a6429e44617615579c5d02a2448ed8bcd2a19425fd3eff700820",
+      "publisher_md5": "887d08e2abcc49a0fc9900100f93e16d",
+      "bytes": 20496443,
+      "verified_at_utc": "2026-09-13T02:37:40.260047+00:00"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "kind": "gff",
+      "article_id": 5426494,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Nk52_long.annot.gff",
+      "url": "https://ndownloader.figshare.com/files/9362512",
+      "path": "data/external/5426494/Nk52_long.annot.gff",
+      "sha256": "e90de169cc608147eebf4abe9e42ac3f19a448cc66b7f67474f7fa2ffd10ec8f",
+      "publisher_md5": "fa79b536ca9d4fd1173874457235da10",
+      "bytes": 4122996,
+      "verified_at_utc": "2026-09-13T02:37:40.195633+00:00"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "kind": "genome",
+      "article_id": 5426506,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 2,
+      "name": "Pgem_gDNA.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362530",
+      "path": "data/external/5426506/Pgem_gDNA.fasta",
+      "sha256": "4fef61844f49dafb1430a728789633b287ce388adf0cb705067ff61039b4b482",
+      "publisher_md5": "8b7f820f2213665a17e404041e913035",
+      "bytes": 86521141,
+      "verified_at_utc": "2026-09-13T02:37:40.820547+00:00"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "kind": "cds",
+      "article_id": 5426506,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 2,
+      "name": "Pgem_long.cds.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362536",
+      "path": "data/external/5426506/Pgem_long.cds.fasta",
+      "sha256": "bfe0b1c1c0d4ca1a583b40628121bac5402e01437f80dd4cdf7a27f338b8639b",
+      "publisher_md5": "da8f78d23c13c95281b9816103b94ece",
+      "bytes": 11343917,
+      "verified_at_utc": "2026-09-13T02:37:40.890472+00:00"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "kind": "gff",
+      "article_id": 5426506,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 2,
+      "name": "Pgem_long.annot.gff",
+      "url": "https://ndownloader.figshare.com/files/9362533",
+      "path": "data/external/5426506/Pgem_long.annot.gff",
+      "sha256": "240cde1c573a909b9d33a6b7e48b6bc1d39b55b315376ee5bbcf89b42a1b868c",
+      "publisher_md5": "0f906a887ff08a92444f096f90dfe941",
+      "bytes": 9990473,
+      "verified_at_utc": "2026-09-13T02:37:40.853233+00:00"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "kind": "genome",
+      "article_id": 5426458,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Awhi_gDNA.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362428",
+      "path": "data/external/5426458/Awhi_gDNA.fasta",
+      "sha256": "f5969e61c95390b0f8babbd0c80aa845a2800c54aefd72413f30057da92320c0",
+      "publisher_md5": "72ec2b88675743f14feb05653803766e",
+      "bytes": 107332169,
+      "verified_at_utc": "2026-09-13T02:37:41.406731+00:00"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "kind": "cds",
+      "article_id": 5426458,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Awhi_long.cds.fasta",
+      "url": "https://ndownloader.figshare.com/files/9362437",
+      "path": "data/external/5426458/Awhi_long.cds.fasta",
+      "sha256": "1bbe57e7e0b9010459bf033917b68d3edd29517797d207776783655ea9117012",
+      "publisher_md5": "59a78d71e507001b80930f3cc169a578",
+      "bytes": 10455075,
+      "verified_at_utc": "2026-09-13T02:37:41.481505+00:00"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "kind": "gff",
+      "article_id": 5426458,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.7554/eLife.26036",
+      "article_version": 1,
+      "name": "Awhi_long.annot.gff",
+      "url": "https://ndownloader.figshare.com/files/9362431",
+      "path": "data/external/5426458/Awhi_long.annot.gff",
+      "sha256": "b7219501b1836ede922aad2b8baf56827abf98f9976594ebb3a238a361ab2efd",
+      "publisher_md5": "14db1144fe1438c2dfe3e3383d9c8c41",
+      "bytes": 12434088,
+      "verified_at_utc": "2026-09-13T02:37:41.446935+00:00"
+    }
+  ],
+  "script_sha256": "44942bbdf29f809d409acf45abcef2400913b5ff2c6ed63d519748c20b6560cd",
+  "interpretation": "Genome-derived ordered CDS blocks must reproduce the published CDS string either directly or after removal of exactly the annotated initial phase bases. Both export representations are recorded. Codon spans are derived from genomic blocks, applying the initial phase exactly once. Initial offset comes only from annotated phase; internal phases must agree. Only the annotated initial partial codon and a terminal 1\u20132-base remainder are omitted, with bases recorded. Every complete translated protein residue must match; no frame or code search. Projected spans are not claims of complete genes, corrected annotations or selection eligibility. Strict unmodified-CDS results remain preserved; boundary-aware spans require separate downstream inclusion policy. Terminal stop codons remain flagged in DNA.",
+  "artifacts": {
+    "OFS5426458.verified_codon_spans.fna": "9df7b479a1ae247042504b07a544b36c1bacc60079d12799375feaad807aded2",
+    "OFS5426494.verified_codon_spans.fna": "ad4b1947b22fb8716c910b03675c2c75ee1912ab417ead4b7dc0cf9515957b3b",
+    "codon_projection_audit.tsv": "04d8fe90f9d04eeed624c1a3c0402c579aca37b5daea803a1ecd8808dbbfba30",
+    "OFS5426470.verified_codon_spans.fna": "6bd0ccc810081ad91f3df010d373594b8a446585b564add0c7e203aa7c2fd1f5",
+    "OFS5426506.verified_codon_spans.fna": "e6377469536086ee87da1813d1ad851989fa44b49f4eeee2f86b74a365483815"
+  }
+}

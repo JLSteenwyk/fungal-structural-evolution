@@ -1,0 +1,20 @@
+{
+  "status": "complete_ncbi_cds_receipt_readback",
+  "receipt_sha256": "c0cfbdac90e95b778a2f869c1408430432301cbee2443de38d8f1bc968558bfc",
+  "taxa_verified": 519,
+  "compressed_bytes": 2768796083,
+  "totals": {
+    "cds_records": 5847336,
+    "nucleotide_bases": 7954834617,
+    "records_without_protein_id": 3988,
+    "non_triplet_length_records": 87398,
+    "records_with_ambiguous_bases": 21881
+  },
+  "checks": [
+    "Exact manifest taxon/assembly/URL coverage",
+    "Producer and manifest hashes",
+    "Every CDS SHA256, publisher MD5 and byte count",
+    "Every archived checksum listing SHA256"
+  ],
+  "interpretation": "Independent integrity readback; not translation or selection eligibility."
+}

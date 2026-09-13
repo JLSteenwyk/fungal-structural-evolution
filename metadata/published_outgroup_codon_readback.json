@@ -1,0 +1,13 @@
+{
+  "status": "complete_independent_output_readback",
+  "receipt_sha256": "a8c17bafba73176fd48df69649e9d6a8e108b4a9fb8b49c14cd95502d8df0ce4",
+  "verified_translation_count": 59116,
+  "v1_mismatch_exactly_explained_by_annotated_export_count": 12431,
+  "checks": [
+    "All output artifact hashes",
+    "Producer script hash",
+    "Unique complete protein identity coverage",
+    "Triplet length and exact table-1 translation with at most one terminal stop removed",
+    "Exact equality of v1 mismatches and v2 annotated-phase export cases"
+  ]
+}
