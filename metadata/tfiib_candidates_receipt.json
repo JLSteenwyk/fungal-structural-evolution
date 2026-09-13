@@ -1,0 +1,34 @@
+{
+  "status": "complete_full_tfiib_domain_candidate_collection",
+  "taxa_screened": 526,
+  "taxa_with_candidates": 524,
+  "candidate_proteins": 1485,
+  "unique_candidate_sequences": 1434,
+  "raw_domain_hit_rows": 3758,
+  "source_hit_rows": {
+    "focused_additional": 2109,
+    "reused_marker": 1649
+  },
+  "hit_sequences_without_representative_links": 0,
+  "gene_mapping_status_counts": {
+    "unique_gene": 1477,
+    "provisional_orf": 6,
+    "unmapped": 2
+  },
+  "focus_receipt_sha256": "de5c80387728cbdf05bf348e5f0d96258cadad0f5d7c1f0f29aa4f34bf702dbe",
+  "full_input_receipt_sha256": "8d21e215367ebcdca2c5fb157b3b0f4f6fab9fbc79624a8a0aa5e46c2586a928",
+  "marker_input_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "marker_annotation_receipt_sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097",
+  "representative_receipt_sha256": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+  "marker_mapping_sha256": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "9b802f26998f91f491eb0c64a24bd6b7afb9550edd7e1c0f1eebd7b94f2e9378",
+  "interpretation": "Union of three selected Pfam domain-hit candidates across complete representative-protein inputs, with marker-hit reuse. Exact-sequence search deduplication is expanded back to every gene/taxon entry. This union is not a resolved homologous full-length family: shared zinc-ribbon or TFIIB domains can occur in different architectures. Gene/domain correspondence and phylogenetic reconciliation remain required. Zero candidates means no selected GA hit, not demonstrated biological absence. Nonrepresentative marker-only hits remain listed separately.",
+  "artifacts": {
+    "candidate_protein_mapping.tsv": "b3132fc79aaa592aa5a1bd241427d18f1b46f8ec0c1679d72f61f1704160606e",
+    "taxon_candidate_coverage.tsv": "725606a4a0b956f5b508a7acf1e3ff958c0b5aed315c48313583418ddce35cd3",
+    "candidate_proteins.faa": "6101eb10d66086f9416264b31edce84b635137434843c85eb9a6126ddad3a172",
+    "hit_sequences_without_representative_links.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "domain_hits.tsv": "d4568481187892a81050a232f6f1e9edfccb0a00073529c19fd6e87ffbb237d4"
+  }
+}

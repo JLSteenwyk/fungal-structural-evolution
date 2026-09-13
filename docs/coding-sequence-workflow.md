@@ -244,3 +244,19 @@ The controller verifies the complete Pfam HMM library, all full search-input art
 HMM hits nominate homolog/domain candidates; they do not resolve orthogroups, validate functions, demonstrate loss or reconstruct duplication history. Combining sequence hits with all gene-representative identities, assessing domain correspondence and constructing/reconciling family trees remain necessary. E-values from marker and additional-protein searches have different target database sizes; common gathering thresholds are the inclusion criterion.
 
 The focused search completed in **64.54 seconds**, returning **2,109 domain-hit rows** among the 5,654,720 additional sequences. All three query profiles completed, and output/producer hashes and row/profile counts passed readback. `metadata/tfiib_family_search_receipt.json` and `metadata/tfiib_family_search_readback.json` record the measured result. These are additional-sequence hits; combination with existing marker hits and mapping back to all representative genes remain the next steps before family alignment or reconciliation.
+
+## Full candidate identity collection completed
+
+Combined all 2,109 focused additional-protein hits with 1,649 reusable marker hits from the same three Pfam profiles. Mapping through the full representative-protein input restores **1,485 protein/gene entries (1,434 unique sequences) across 524 of 526 taxa**. Every hit-bearing sequence has a representative association. Candidate gene annotations comprise 1,477 unique-gene mappings, six provisional ORFs and two unmapped entries. No sequence-similarity deduplication removes gene/taxon identity from the exported family inputs.
+
+```bash
+python scripts/collect_tfiib_family_candidates.py --output results/domains/tfiib-candidates-v1
+```
+
+The collector verifies both search partitions and their compatible input/annotation provenance, streams full sequence/protein mappings, checks every selected sequence hash and domain coordinate bound, and restores gene-representative decisions. A separate readback verified every exported sequence/hash/length and all unique protein identities. All source hits remain available, with their search partition explicit.
+
+Scedosporium apiospermum (F563466) and Abeoforma whisleri (OFS5426458) have no passing candidate in this three-profile screen. This is not evidence of biological absence or gene loss; divergence, annotation quality and profile sensitivity remain alternatives. Candidate proteins are a union of domain matches, not one established homologous full-length family. There are 1,099 proteins with two TFIIB hits, 340 with one, 44 with none and two with three/four hits. Domain-copy correspondence and coverage must be considered before alignment.
+
+All ten focal Aspergillus genomes contain **two candidates on distinct uniquely annotated genes**, one with a BRF1 hit and one without. In each genome exactly one of those candidates is the original marker 4986044at2759. The marker chooses the BRF1-hit type in six taxa and the other type in four, while both types are recovered in every focal genome. This makes inconsistent copy sampling a concrete competing explanation for the pooled marker divergence. It does not establish duplication timing, ortholog relationships or a domain gain/loss event; those require family trees and reconciliation.
+
+Versioned outputs include `metadata/tfiib_candidates_receipt.json`, `metadata/tfiib_candidate_protein_mapping.tsv`, `metadata/tfiib_candidate_taxon_coverage.tsv`, `metadata/tfiib_candidates_readback.json` and the 20 focal copies in `metadata/aspergillus_family_candidate_copies.tsv`. Full candidate FASTA and domain coordinates remain under `results/domains/tfiib-candidates-v1`.

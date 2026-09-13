@@ -340,3 +340,9 @@ Started a focused three-profile Pfam search across all 5,654,720 additional repr
 ## Focused full-proteome family search completed
 
 All three selected Pfam profiles finished searching the 5,654,720 additional unique sequences in 64.54 seconds, returning 2,109 domain-hit rows. All output and producer hashes, row counts and profile identities passed readback. This completes focused acquisition for the additional-sequence partition; combining reusable marker hits and expanding sequence-to-gene/taxon mappings is still required before family inference.
+
+## Candidate homolog identities restored across the full design
+
+Combined focused and marker domain hits to recover 1,485 representative protein entries (1,434 unique sequences) across 524 taxa, preserving every taxon/gene identity. All exported sequence hashes/lengths, source artifacts and gene mappings passed validation. Two taxa have no candidate in this profile screen; no biological loss is inferred. The candidate union remains domain-defined, with varied domain-copy counts and eight unresolved/provisional gene mappings.
+
+All ten focal Aspergillus genomes contain both domain-hit types on distinct annotated genes, but the original marker selects one type in six taxa and the other in four. The 20-copy identity table is versioned. This identifies copy-sampling inconsistency as a concrete explanation to test before interpreting divergence as acceleration. Domain-matched family alignment, supported gene trees and reconciliation remain next steps.
