@@ -9,7 +9,7 @@
 | Data QC and structure inventory | Broad BUSCO and assembly-statistics collection complete for 526; exact-sequence structure inventory ongoing; lineage-specific and contamination QC pending | Per-taxon receipts; metadata/busco_dataset_receipt.json |
 | Species tree and discordance | 125 profile and MAFFT alignments complete; 49,027-site profile and 63,750-site MAFFT matrices built; guide and gene trees running; support/discordance/sensitivity pending | metadata/initial_species_matrix_receipt.json; results/phylogeny/ |
 | Families, domains and reconciliation | Representatives prepared for all 526; 64-taxon computational core complete; full assignment running; reconciliation validation pending; marker Pfam search and raw annotation complete; additional full-proteome search running | metadata/orthology_input_manifest.tsv; results/orthology/ |
-| Structural atlas | Existing-model retrieval ongoing; 128 local ESMFold predictions independently verified; expanded queue running; direct comparisons executed for 865 marker taxon pairs and 738 domain comparisons; full atlas and clustering pending | metadata/direct_structural_comparison_receipt.json; data/structures/ |
+| Structural atlas | Frozen snapshots contain 13,153 AlphaFold and 5,121 ESMFold models; paired geometry and experimental benchmarks available with explicit limits; 18,274-model exploratory clustering and residue accessibility running; full-proteome atlas incomplete | metadata/frozen_structure_clustering_config.json; metadata/experimental_coordinate_full_receipt.json; metadata/paired_site_geometry_esmfold_receipt.json |
 | Evolutionary objectives 1–8 | Pending | Estimates, uncertainty, tests and sensitivity |
 | Figures, methods and case studies | QC and exploratory geometry figures/methods available; evolutionary results and case studies pending | docs/figures/; docs/methods-draft.md |
 
@@ -1082,3 +1082,17 @@ review without certifying orthology or independent replication. Repeat 1 and
 species/gene reconciliation remain pending. The prior turn completed AlphaFold
 surface-resolution validation; this turn advances phylogenetic sensitivity.
 The full project remains active and incomplete.
+
+### Frozen structural similarity clustering started
+
+Started Foldseek clustering across all 18,274 frozen AlphaFold/ESMFold models,
+retaining distinct source/model identities and original taxon/marker mappings.
+Verified all aliases, symlink targets and source hashes. Explicit alignment,
+coverage, TM-score, confidence-seeding and clustering settings are pinned with
+resource estimates; database construction is running. Similarity groups remain
+exploratory and require representative/member and threshold validation, and are
+never equated with orthogroups. Updated the top-level atlas milestone to reflect
+current evidence rather than the early 128-model checkpoint. The preceding turn
+validated the second TFIIB repeat; this turn initiates the frozen-model atlas
+clustering stage. Full CA mapping and other long jobs continue; the complete
+research goal remains active.

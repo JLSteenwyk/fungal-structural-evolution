@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_exploratory_frozen_model_clustering",
+  "models": 18274,
+  "cpu_threads": 8,
+  "memory_gb_planning": 48,
+  "foldseek_split_memory_limit": "32G",
+  "output_gb_planning": 100,
+  "wall_hours_planning_range": [
+    1,
+    48
+  ],
+  "estimate_basis": "18,274 full predicted models; sensitive prefilter and up to 2,000 hits per query. No empirical runtime calibration yet; broad planning range. Reuse source files through symlinks and preserve Foldseek intermediates.",
+  "disk_free_bytes": 12540461965312,
+  "producer_sha256": "709254c26aeda91234328ada008264e22008035cc408ac60653b75fbe3327087",
+  "cost": "Existing CPU host; no paid infrastructure",
+  "scope": "Full frozen marker-model snapshots, not the full proteome atlas. Similarity groups require threshold, source/confidence and representative/member validation; never equated to orthogroups."
+}
