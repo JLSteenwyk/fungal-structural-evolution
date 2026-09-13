@@ -1,0 +1,15 @@
+{
+  "status": "completed_inventory_queries_require_model_validation",
+  "taxa": 526,
+  "status_counts": {
+    "matched": 525,
+    "taxid_unresolved": 1
+  },
+  "unresolved_taxa": [
+    "OFS5426494"
+  ],
+  "raw_inventory_path": "data/raw/uniprot_matches.jsonl",
+  "raw_inventory_sha256": "e0d66a3fc160fe0b6e41b3a23f6900cc84fd2e1eadb32505fc1226dcedac608f",
+  "sampling_manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "interpretation": "All 526 working taxa have terminal query records. Matched means the UniProt query and exact-sequence matching completed, including zero matches; it does not mean a validated structure exists. One missing taxonomy identifier remains explicit. Current models still require per-accession sequence and coordinate validation."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "complete_conditional_resampling_figure",
+  "audit_receipt_sha256": "2b17bc87e2699ff961cdec0fdb6117619b7dfa3339bb183997fd5e782e691d1a",
+  "script_sha256": "1f99534a23207b8fd5e36b93bd39f2d0fc6aef8b7d2d42a847392c3808c3d9f7",
+  "summary": {
+    "aa": {
+      "matched_branches": 416,
+      "median_interval_width": {
+        "1": 0.14468668622000003,
+        "10": 0.15518550108375,
+        "30": 0.15158426151
+      },
+      "branches_wider_at_block30_than_block1": 203
+    },
+    "3di": {
+      "matched_branches": 416,
+      "median_interval_width": {
+        "1": 0.0637444444375,
+        "10": 0.06793164168375002,
+        "30": 0.06431491323625002
+      },
+      "branches_wider_at_block30_than_block1": 202
+    }
+  },
+  "interpretation": "Matched branch interval-width comparison across resampling blocks, not significance testing. Points share ancestry and are not independent. 95% percentile ranges are conditional sensitivities, not validated overall confidence bounds.",
+  "artifacts": {
+    "paired_resampling.png": "7b695a3841d7e71adb7011fb788adff140b7bf88df04f6de44cff09e9df35f57",
+    "paired_resampling.svg": "c3fb55572db960505f7154c72386eccd1c92e21938a500175af32b5782a86392"
+  }
+}

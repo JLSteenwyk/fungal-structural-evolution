@@ -1,0 +1,31 @@
+{
+  "source_receipts": {
+    "inputs": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c",
+    "models": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "fits": "01aabe9348747c0f14896b53ae9b22030758b0a28ed9e2205f46f73968009afe",
+    "audit": "516d555220c2d6bab8bd589e2aaa55910096bfcd358079150dd2f840d33cf261"
+  },
+  "script_sha256": "51daa4986552a83165ebb1c783cd72621d3068e1c3866d7bf34bad60c04c3b64",
+  "tree_helper_sha256": "7e05970abb6ef0db38660333b8485ae7685de723de6d1975ebf34d4d1a98cf30",
+  "numpy_version": "2.2.6",
+  "rng": "PCG64; seed=first 64 bits of SHA256(paired-bootstrap-v1:marker:block:replicate)",
+  "executable": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+  "executable_sha256": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+  "replicates": 200,
+  "block_lengths": [
+    1,
+    10,
+    30
+  ],
+  "workers": 8,
+  "threads_per_fit": 1,
+  "markers": 52,
+  "planned_paired_draws": 31200,
+  "models": {
+    "aa": "LG+F+G4",
+    "3di": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/structural_models/garg-hochberg-v3/Q.3Di.AF+G4"
+  },
+  "method": "Same resampled columns for every taxon and both alphabets; circular blocks over retained alignment columns, concatenated then truncated to original length. Refit branches and gamma (plus AA empirical frequencies) on fixed original sequence topology. Block=1 is ordinary site resampling.",
+  "limits": "Conditional sampling sensitivity only: no topology, dating, prediction, alignment or model uncertainty. Local blocks do not preserve all nonlocal 3Di feature dependencies; stationary/circular assumptions are not established for proteins. No calibrated acceleration tests or structural/AA ratios.",
+  "resource_plan": "Default: 31,200 paired draws / 62,400 fits. Provisional 0.1-5 seconds/fit yields 0.2-11 hours at eight workers; initialization and I/O can add time. Reserve 20 GB output, eight CPU threads, requested 2 GB/fit. No paid resources."
+}

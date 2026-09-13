@@ -1,0 +1,30 @@
+{
+  "status": "complete_paired_feature_overlap_audit",
+  "taxon_marker_alignments": 286,
+  "markers": 52,
+  "observed_features": 83455,
+  "shared_coordinate_feature_pairs": 474044,
+  "overlap_pairs_beyond_circular_blocks": {
+    "10": 223510,
+    "30": 138415
+  },
+  "source_receipts": {
+    "inputs": {
+      "path": "results/phylogeny/paired-structural-inputs-v1",
+      "sha256": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c"
+    },
+    "encodings": {
+      "path": "results/structural_alphabet/audited-marker-v2",
+      "sha256": "815cfb493b4941c96445f8c5b742ec9c0dcd1012b0847a37e52939b33c53fef6"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/snapshot-v2",
+      "sha256": "8de3f7949755aa684b51804d3c312c7427bcca615e549099df7e7a7b8ba9942e"
+    }
+  },
+  "script_sha256": "57355fcd91b14312f4fed132d07963b002984b328b29020818d15e14e89abbe5",
+  "interpretation": "A feature-overlap edge means two observed 3Di features use at least one identical physical residue within the same model. It is a potential dependency, not measured statistical covariance or an effective sample size. Circular separation >= block length means no sampled block of that length can contain both columns. Local block sensitivity does not capture all feature-sharing dependencies. Counts across related taxa are not independent observations.",
+  "artifacts": {
+    "feature_overlap.tsv": "64d55e2a01037c5a4c7faa95bb60ba98d70bb1c03034d978454dc37c32210652"
+  }
+}
