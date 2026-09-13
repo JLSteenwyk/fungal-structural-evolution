@@ -1778,3 +1778,12 @@ prelaunch wait attempt exited and direct readback proceeded after terminal
 verification; no producer was restarted. PAE/native qualification remains pending.
 Receipts are metadata/esmfold_followon_full_residue_readback.json and
 metadata/esmfold_existing_full_residue_readback.json.
+
+
+Full follow-on native extraction completed (session 24784 exit zero); executable
+and all four native source hashes match the prior validated encoder. Directional
+PAE export is live (session 31256), and coordinate-feature reconstruction/audit
+started (session 91321), covering all 4,252 models and 1,342,046 residues. PAE
+export covers 476,502,626 directional entries. Joint PAE/native qualification
+and updated paired inputs remain pending. Resource plans and commands are recorded
+in the prediction workflow and metadata/esmfold_followon_*.

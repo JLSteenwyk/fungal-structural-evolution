@@ -1,0 +1,35 @@
+{
+  "status": "prelaunch_full_followon_confidence_and_native_features",
+  "models": 4252,
+  "residues": 1342046,
+  "pae_matrix_entries": 476502626,
+  "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+  "residue_audit_receipt_sha256": "18520ef1173721a71815b608bd200438bbdc7d8a61d36757d581da81bb417092",
+  "foldseek_version": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "foldseek_executable_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+  "stages": {
+    "pae_export": {
+      "threads": 1,
+      "memory_allowance_gb": 4,
+      "output_allowance_gb": 10,
+      "planning_runtime_hours": [
+        0.1,
+        8
+      ]
+    },
+    "native_extraction": {
+      "threads": 4,
+      "memory_allowance_gb": 8,
+      "output_allowance_gb": 10,
+      "planning_runtime_hours": [
+        0.01,
+        2
+      ]
+    }
+  },
+  "interpretation": "Existing validated full-snapshot implementations; same pinned native encoder. PAE is preserved directionally and exported losslessly. Planning envelopes are conservative, not measured completion times. No GPU or paid resources; feature reconstruction and confidence qualification still required.",
+  "script_sha256": {
+    "export_local_marker_pae.py": "e8b9290996144fa1a45b6c066def764b17c7653a4065265dfe97615b4dce1072",
+    "extract_structural_alphabet.py": "741caae85cacae7e6820a0c7861d9aeddd9ab7a32547c6b392dcbdec5c977f54"
+  }
+}

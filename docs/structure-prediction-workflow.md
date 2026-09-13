@@ -602,3 +602,35 @@ positions match the exported mapping, matrix amino acids and prediction confiden
 All 4,252 model and 4,304 marker-link identities were checked. Receipt:
 `metadata/esmfold_followon_full_residue_readback.json`. PAE binding and native
 structural-alphabet qualification remain the next prerequisites.
+
+
+## Follow-on native extraction complete; coordinate and PAE audits running
+
+Started directional PAE export for the complete 4,252-model mapping, containing
+1,342,046 protein residues and 476,502,626 PAE matrix entries. The existing exporter
+checks exact sequence/source identity and lossless JSON roundtrip for every PAE
+matrix. Its resource allowance is one CPU, 4 GB memory, 10 GB output and 0.1–8
+hours of planning runtime. The export remains running.
+
+Native Foldseek extraction completed successfully on all mapped models using the
+same executable and four source-file hashes as the prior validated local stage.
+Coordinate-feature reconstruction then started across the full cohort: spatial
+partner identities, ten descriptors and six-residue confidence contexts. Its
+allowance is one CPU, 8 GB memory, 2 GB output and 0.05–4 planning hours.
+Native labels remain unqualified until the coordinate audit and subsequent PAE
+binding pass. Resource/config records: `metadata/esmfold_followon_feature_resource_plan.json`,
+`metadata/esmfold_followon_native_config.json` and
+`metadata/esmfold_followon_coordinate_audit_resource_plan.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/export_local_marker_pae.py \
+  --snapshot results/structural_markers/esmfold-followon-complete-v1 \
+  --output results/structural_pae/esmfold-followon-complete-v1
+OPENBLAS_NUM_THREADS=1 python scripts/extract_structural_alphabet.py \
+  --snapshot results/structural_markers/esmfold-followon-complete-v1 \
+  --output results/structural_alphabet/native-esmfold-followon-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_3di_features.py \
+  --native results/structural_alphabet/native-esmfold-followon-v1 \
+  --snapshot results/structural_markers/esmfold-followon-complete-v1 \
+  --output results/structural_alphabet/coordinate-esmfold-followon-v1
+```
