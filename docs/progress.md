@@ -2308,3 +2308,17 @@ The corrected v2 queue now checks the complete branch parameter grid; initial
 completed cases reproduce their optimized likelihoods in fresh processes.
 The queue is live. Full summary/audit, interpretation and eligibility review
 remain pending; these parameter profiles are not dS intervals or selection tests.
+
+### Full selected-assembly contamination-report inventory and audit completed
+
+All 519 selected NCBI assembly-version FCS reports were retrieved. Validation
+retains 472 publisher-MD5-verified reports and 46 reports verified by identical
+repeat retrieval but lacking publisher MD5 entries. One actual publisher-checksum
+disagreement persists on repeat (F104408/GCA_013423385.1), and seven external
+genomes remain outside this NCBI report assessment. Among the 518 usable reports,
+86 assemblies have EXCLUDE/FIX/TRIM regions; 4,039 action-preserving region rows
+are retained. Full original raw-row readback and independent interval-union
+checks passed. No genomes or proteins were removed. CDS/structural-marker overlap
+and biological review are the next dependencies; these observations do not
+establish contamination-free assemblies or confirmed contamination in every
+protein. See `docs/assembly-quality-workflow.md` and `metadata/selected_assembly_fcs_*`.

@@ -1,0 +1,21 @@
+{
+  "status": "complete_fcs_inventory_raw_readback_and_missing_checksum_review",
+  "source_receipt_sha256": "a9508803c40df2bebb583a4429bac08c595d8b13daaeac21bb8d95541da62a4e",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "bd93ab0f0a0f50566baed96a2f68ac7542b8fdb46f8f718433b83d7afba5652c",
+  "parser_script_sha256": "298b2ed289e1f07ca27af2a5e0f8a25b3480b03e1ffc42310f18a2aacb51f713",
+  "taxa": 526,
+  "validation_counts": {
+    "publisher_verified_report": 472,
+    "repeat_identical_https_report_without_publisher_md5": 46,
+    "publisher_checksum_mismatch_unresolved": 1,
+    "external_source_no_ncbi_report_requested": 7
+  },
+  "validated_reports_with_rows": 86,
+  "taxa_with_exclude_fix_trim_regions": 86,
+  "flagged_region_rows": 4039,
+  "original_raw_rows_compared": 3854,
+  "interpretation": "Exact-version publisher reports; missing MD5 separately labeled and validated by identical repeated HTTPS retrieval. Full original region-table readback and independent interval unions passed. Review-only and organelle records remain distinct; no contamination-free certificate, new FCS run, biological contamination confirmation or sequence removal. Gene overlaps remain pending.",
+  "full_receipt_path": "results/qc/selected-assembly-fcs-audit-v1/receipt.json",
+  "full_receipt_sha256": "02509e1bd06efb4a636f806ed6d28952068b077ca24b8d254a15d229d4b0e1c9"
+}

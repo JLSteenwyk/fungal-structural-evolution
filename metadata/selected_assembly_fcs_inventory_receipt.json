@@ -1,0 +1,21 @@
+{
+  "status": "complete_selected_assembly_fcs_report_inventory",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "298b2ed289e1f07ca27af2a5e0f8a25b3480b03e1ffc42310f18a2aacb51f713",
+  "taxa": 526,
+  "status_counts": {
+    "publisher_verified_report": 472,
+    "report_unresolved_error": 47,
+    "external_source_no_ncbi_report_requested": 7
+  },
+  "verified_reports_with_rows": 82,
+  "flagged_region_rows": 3854,
+  "taxa_with_exclude_fix_trim_regions": 82,
+  "artifacts": {
+    "taxon_summary.tsv": "41697a43e52fcaad5651cde69def93153494fad882075301998cb87aa4299026",
+    "flagged_regions.tsv": "188f3fe8591aad0f2452483a09609226e0d4c6be7194a55d1ba33125eba93123"
+  },
+  "interpretation": "Publisher FCS observations for exact assembly-version URLs, not independent rescreening or proof of contamination absence. EXCLUDE/FIX/TRIM, REVIEW_RARE, REVIEW, INFO and organelle records remain distinct. Missing/error/external reports are not zero contamination. Gene/CDS overlap and biological review remain pending; no sequences removed.",
+  "full_receipt_path": "results/qc/selected-assembly-fcs-v1/receipt.json",
+  "full_receipt_sha256": "a9508803c40df2bebb583a4429bac08c595d8b13daaeac21bb8d95541da62a4e"
+}
