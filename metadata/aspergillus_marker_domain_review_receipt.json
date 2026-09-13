@@ -1,0 +1,45 @@
+{
+  "status": "complete_aspergillus_marker_domain_hit_review",
+  "marker": "4986044at2759",
+  "genus_label": "Aspergillus",
+  "taxa": 10,
+  "hit_groups": {
+    "BRF1_hit": 6,
+    "no_BRF1_hit": 4
+  },
+  "pair_strata": [
+    {
+      "pair_stratum": "between_hit_groups",
+      "pairs": 24,
+      "global_pairs_at_least_100_codons": 24,
+      "global_median_aa_difference": 0.75,
+      "local_pairs_at_least_100_codons": 24,
+      "local_median_aa_difference": 0.7645161290322581
+    },
+    {
+      "pair_stratum": "within_BRF1_hit",
+      "pairs": 15,
+      "global_pairs_at_least_100_codons": 15,
+      "global_median_aa_difference": 0.1336405529953917,
+      "local_pairs_at_least_100_codons": 15,
+      "local_median_aa_difference": 0.05806451612903226
+    },
+    {
+      "pair_stratum": "within_no_BRF1_hit",
+      "pairs": 6,
+      "global_pairs_at_least_100_codons": 6,
+      "global_median_aa_difference": 0.04595588235294118,
+      "local_pairs_at_least_100_codons": 6,
+      "local_median_aa_difference": 0.08079131433343772
+    }
+  ],
+  "realignment_receipt_sha256": "d8ef24b41d218ad513afaba5b59f8431699c7fd37d92c3b53d23a1029235536e",
+  "domain_annotation_receipt_sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "d4d889b33feed327119bfa06ccbd06f378038cd40dec4cfc1e7bd8ae2ef18a58",
+  "interpretation": "Source Pfam hits distinguish BRF1-hit and no-BRF1-hit subsets; these are observed annotation patterns, not validated functions or resolved orthogroups. Pair divergence is stratified after seeing domain heterogeneity, so this is exploratory case diagnosis, not a confirmatory test. Mixed homologous protein types/hidden paralogy is a competing explanation requiring gene-family phylogeny and reconciliation. No domain gain/loss or structural acceleration is inferred; original BUSCO selections remain unchanged.",
+  "artifacts": {
+    "protein_domain_hits.tsv": "e96b82044b4bffde39b71fc4007a69fc26103e86b743565f89c6f489ea9f4c15",
+    "domain_hit_pair_strata.tsv": "81f756054fa7b3e31ec16cbde07fbd0a61ca6786d498248bdeb6c8a2f1f25781"
+  }
+}

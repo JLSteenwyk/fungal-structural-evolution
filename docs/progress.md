@@ -324,3 +324,9 @@ Readback checked all output hashes and recounted every CDS/status/code total and
 Measured shared-site observed differences for 43,235 distinct marker/code/taxon pairs across all coverage-passing candidate groups. The two inclusion policies produce 84,796 rows; repeated metrics agree exactly. Source/output hashes, numerator partitions, fractions and overlap thresholds pass consistency checks; four focused tests passed.
 
 Rendered and inspected a figure of all 1,712 stricter-policy marker/group medians. The highest median amino-acid difference is 0.7371 for Aspergillus marker 4986044at2759 despite at least 232 shared codons per pair. Twenty leading cases are flagged for alignment/orthology review, not biological acceleration. These observed fractions do not estimate dS, dN/dS, saturation or branch-specific rates. Independent group realignment and profile-alignment comparisons remain next checks before selection modeling.
+
+## Outlier realignment and mixed-domain evidence
+
+Completed all 20 targeted group realignments and 163 pair correspondence comparisons, reproducing every original divergence baseline independently. Three coordinate/codon-mask tests passed. High median differences persist, while residue correspondences and selected columns show sensitivity to alignment context.
+
+The leading Aspergillus marker has two domain-hit patterns: six longer BRF1-hit proteins and four shorter proteins without that hit, both carrying TFIIB hits. The global median difference is 0.75 across patterns but 0.1336 and 0.0460 within them. All ten source identities and sequence hashes, domain source hashes and output artifacts were verified. This is exploratory evidence for mixed protein types/hidden paralogy as a competing explanation, not proof of duplication history or acceleration. Gene-family reconstruction/reconciliation is now necessary before biological interpretation of this case; baseline marker inputs remain preserved.

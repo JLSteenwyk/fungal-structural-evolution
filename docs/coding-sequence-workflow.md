@@ -210,3 +210,21 @@ Four tests cover code-dependent translation, shared-site denominators, synonymou
 The figure shows 1,712 stricter-policy marker/group medians across 15 fungal genus labels. It is descriptive: pairs/points share taxa, sites and ancestry, and genus labels are not verified clades. The SVG and PNG were rendered and visually inspected; figure provenance is `metadata/codon_group_divergence_figure_receipt.json`.
 
 The 20 largest marker/group median amino-acid differences are retained for **alignment/orthology review**, not designated accelerated evolution (`metadata/codon_divergence_alignment_review.tsv`). The largest is marker 4986044at2759 in Aspergillus: ten entries, at least 232 shared called codons per pair, median amino-acid difference 0.7371 and median third-position difference 0.6767. Group-specific realignment, existing profile-alignment sensitivity and protein/domain correspondence need review before biological interpretation. Other leading candidates include marker 776280at2759 in Naganishia and Tilletia. Coverage and translation alone do not resolve these concerns.
+
+## Targeted alignment and domain review
+
+All 20 leading divergence cases were realigned within their recorded genus/code subsets using the exact original full protein sequences and MAFFT auto with one thread. Residue identity preservation passed for every output. The original masked pairwise divergences were independently reproduced from amino-acid alignments while restricting comparisons to residues with canonical source codons. Three focused tests cover residue versus column coordinates, source-codon ambiguity and mask offsets.
+
+```bash
+python scripts/realign_codon_review_groups.py --output results/cds/outlier-realignment-v1
+python scripts/audit_aspergillus_tfiib_marker.py --output results/cds/aspergillus-domain-hit-review-v1
+python -m unittest discover -s tests -p test_residue_pair_correspondence.py
+```
+
+The control covers 20 selected cases and 163 taxon pairs; it is targeted diagnosis of observed outliers, not a representative calibration or separate pilot. Within-group MAFFT can choose a different algorithm from full-dataset MAFFT, and its 80-percent occupancy mask differs from the original 50-percent global mask. Changes therefore combine alignment, taxon context and selected sites. Across these cases, the local-minus-global median amino-acid difference ranges from −0.0371 to +0.0522. None of the high differences simply disappears. Exact residue-pair retention and Jaccard statistics make correspondence sensitivity explicit.
+
+For Aspergillus marker **4986044at2759**, the group median changes from 0.7371 to 0.7605; median retention of original residue pairs is 0.6932 and median correspondence Jaccard is 0.4926. Hash-verified Pfam evidence separates six 713–752-residue proteins with BRF1-family hits from four 350–351-residue proteins without those hits. Both subsets have TFIIB hits; the shorter subset also has Zn_Ribbon_TF hits. These are observed HMM annotations, not validated functions or resolved architectures.
+
+The 45 pairs divide into 24 between-subset comparisons, 15 within the BRF1-hit subset and six within the other subset. Global masked median amino-acid differences are **0.7500 between subsets**, **0.1336 within BRF1-hit proteins**, and **0.0460 within proteins without BRF1 hits**. Local-alignment values are 0.7645, 0.0581 and 0.0808 respectively. This exploratory partition explains why between-type contrasts dominate the pooled median, while leaving the origin of those types unresolved.
+
+Mixed homologous protein types or hidden paralogy is now a concrete competing explanation. Gene-family phylogeny, broader homolog sampling and reconciliation are required before this group can support within-ortholog acceleration or selection claims. Original BUSCO markers and guide-tree inputs remain preserved for sensitivity comparisons; no domain gain/loss or validated function is inferred. Case artifacts, sequence/identifier correspondence and all realignment outputs passed hash readback. Versioned receipts/summaries are `metadata/codon_outlier_realignment_*`, `metadata/aspergillus_marker_*` and `metadata/codon_outlier_case_readback.json`; detailed alignments, pair correspondences and HMM hit records retain source provenance.
