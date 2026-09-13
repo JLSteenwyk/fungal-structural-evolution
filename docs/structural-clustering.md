@@ -42,3 +42,20 @@ All 18,274 aliases and symlink targets passed readback, and the producer verifie
 every coordinate checksum. Foldseek database construction has started; there is
 no completed clustering result yet. This is the full frozen **marker-model**
 set, not the project's entire fungal proteome atlas.
+
+
+## Initial clustering completed; membership verified
+
+The run completed with 2,249 similarity groups across all 18,274 model records:
+1,276 singleton groups and 302 groups containing both prediction sources.
+Every Foldseek input database alias occurs exactly once. Independent readback
+verified the complete output partition, representative self-membership, unique
+annotated members, every retained provenance field, and agreement between raw
+and annotated assignments. Source-specific taxon/marker links remain untouched.
+
+These are algorithmic group counts, not numbers of orthogroups, novel folds or
+independent evolutionary events. Alignment criteria have not yet been
+independently checked for each representative/member pair. In particular,
+confidence seeding does not certify all aligned residues. Edge validation,
+threshold sensitivity, confidence/source analysis and domain-level clustering
+remain pending. Large retained intermediate databases allow those follow-ups.

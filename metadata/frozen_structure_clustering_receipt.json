@@ -1,0 +1,14 @@
+{
+  "status": "complete_exploratory_frozen_model_clustering",
+  "config_sha256": "23ed2852b1daa8242d75a3ed401cdb8d232a02ac52d65c7f7559881f909b3074",
+  "models": 18274,
+  "clusters": 2249,
+  "singletons": 1276,
+  "mixed_prediction_source_clusters": 302,
+  "interpretation": "Exploratory whole-chain 3Di+AA similarity clustering. Aligned coverage >=0.8 for both query and target, E<=1e-5, approximate alignment-normalized TM score threshold 0.5; greedy length-based single-step clustering with reassignment. pLDDT70 masks seeding only, not every scored residue. No orthology, homology, novelty or biological-function inference. Prefilter hit cap may limit recall; pairwise/member criteria and threshold sensitivity require later audits.",
+  "artifacts": {
+    "input_models.tsv": "aaff18a1df245719dc114a0995b0a52bb4a8bb71422c4f322fece48ff18c9f97",
+    "clusters_cluster.tsv": "7fb071f9f925735c3db18399eef594cf6ee46408b66c127fde9e7793c80ef93b",
+    "model_cluster_membership.tsv": "1efea6042af012709fcca4513460815f257b1ec006d165de1df9fd3da786c1b9"
+  }
+}

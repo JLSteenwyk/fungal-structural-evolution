@@ -122,3 +122,29 @@ part of the combined alignment, so agreement is a sensitivity result, not
 independent replication. Repeat 1 is still running. Rooting, duplication timing
 and species/gene reconciliation remain required; the existing mixed-copy marker
 caveat remains in force.
+
+
+## Both positional-repeat assessments complete
+
+Repeat 1 now also recovers the exact combined-domain 485/555-tip split, with
+SH-aLRT 100, UFBoot label 100 and 998/1,000 exact bootstrap occurrences. An
+independent named-tip-set search confirms the ML bipartition. Its exploratory
+best domain-class split is this same bipartition; unlike repeat 2, it does not
+prefer the adjacent weak split that moves the Vairimorpha copy.
+
+| Alignment | SH-aLRT | UFBoot label | Exact split occurrences |
+| --- | ---: | ---: | ---: |
+| Combined, 184 columns | 100 | 100 | 1,000/1,000 |
+| Repeat 1, 92 columns | 100 | 100 | 998/1,000 |
+| Repeat 2, 92 columns | 99.8 | 100 | 998/1,000 |
+
+All use the same 1,040 gene-copy tips. Exact counts are preserved separately
+from displayed support labels. The repeat analyses partition the combined
+alignment and are not independent biological replications. This completes the
+planned positional-repeat check of the principal copy-mixture split, but not
+rooting, reconciliation, duplication dating or functional validation. The marker
+remains withheld from confirmatory single-ortholog interpretation.
+
+```bash
+python scripts/compare_tfiib_repeat_split.py --repeat results/phylogeny/tfiib-repeat-trees-v1/repeat1 --output results/phylogeny/tfiib-repeat1-split-review-v1
+```

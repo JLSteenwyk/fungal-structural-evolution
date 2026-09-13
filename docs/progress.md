@@ -1096,3 +1096,19 @@ current evidence rather than the early 128-model checkpoint. The preceding turn
 validated the second TFIIB repeat; this turn initiates the frozen-model atlas
 clustering stage. Full CA mapping and other long jobs continue; the complete
 research goal remains active.
+
+
+### Both TFIIB repeats and initial structural clustering completed
+
+Finished the repeat-1 fixed-split assessment: 998/1,000 exact bootstrap
+occurrences, matching repeat 2, with the same 485/555-tip ML bipartition confirmed
+by an independent named-tip search. The combined alignment has 1,000/1,000;
+repeat results are sensitivity checks, not independent replication. Reconciliation
+and the mixed-copy marker restriction remain required.
+
+The 18,274-model clustering also completed: 2,249 groups, 1,276 singletons,
+302 mixed-source groups. All database identities and final membership/provenance
+fields passed complete readback. Representative/member alignment criteria and
+biological interpretation remain unvalidated. The prior turn launched clustering;
+this turn completes its first result and the remaining repeat sensitivity.
+The full research goal remains active and incomplete.

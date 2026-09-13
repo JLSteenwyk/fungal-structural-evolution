@@ -1,0 +1,43 @@
+{
+  "status": "complete_tfiib_repeat_reference_split_assessment",
+  "repeat_order": 1,
+  "repeat_receipt_sha256": "969d870cb5cac1054dfe25b47b0aae7963e2284a3502485d0ffccf86f2f71911",
+  "reference_assessment_receipt_sha256": "ed0023cee802bd2d83aec7bd7d34dcf51c81eabefaef79e56b2dac8132d74ebb",
+  "script_sha256": "517cac3ad5521d7debfdb2536b9645c5de127424000555ef818a683e381179d1",
+  "mask_helper_sha256": "576f4a3fe621c1ce7890424619912a24a7457df53bf3c191e1f4800bf71e25a1",
+  "tips": 1040,
+  "bootstrap_trees_checked": 1000,
+  "combined_reference_split_present_in_ML_tree": true,
+  "combined_reference_split_branch": {
+    "split_id": "0x4ad4c5492ca966a69a69acab25aa925354ccdb194c16688cd5aa9a9a9994512c449a635315459a932aaa54acb1a54b0ad532b554d34c43665325a5aa956666998d542b6ad3aa5554590b4acd225552cac998b4d5135d6332d2b32ca9ca95aaa8cacb915a52d2b6355532a5990cd099a6955556a5514c8b5328a59aad32b2cd29aa95",
+    "BRF1_enriched_side_tips": 485,
+    "detected_on_enriched_side": 473,
+    "undetected_on_enriched_side": 12,
+    "detected_on_other_side": 0,
+    "undetected_on_other_side": 555,
+    "minimum_class_disagreements": 12,
+    "SH_aLRT": 100.0,
+    "UFBoot": 100.0,
+    "branch_length": 1.262645417
+  },
+  "combined_reference_split_bootstrap_count": 998,
+  "repeat_exploratory_best_class_split": {
+    "split_id": "0x4ad4c5492ca966a69a69acab25aa925354ccdb194c16688cd5aa9a9a9994512c449a635315459a932aaa54acb1a54b0ad532b554d34c43665325a5aa956666998d542b6ad3aa5554590b4acd225552cac998b4d5135d6332d2b32ca9ca95aaa8cacb915a52d2b6355532a5990cd099a6955556a5514c8b5328a59aad32b2cd29aa95",
+    "BRF1_enriched_side_tips": 485,
+    "detected_on_enriched_side": 473,
+    "undetected_on_enriched_side": 12,
+    "detected_on_other_side": 0,
+    "undetected_on_other_side": 555,
+    "minimum_class_disagreements": 12,
+    "SH_aLRT": 100.0,
+    "UFBoot": 100.0,
+    "branch_length": 1.262645417
+  },
+  "repeat_best_class_split_bootstrap_count": 998,
+  "best_class_split_equals_combined_reference": true,
+  "interpretation": "Exact unrooted bipartition comparison on identical gene-copy tips. Reference split fixed from the combined-domain analysis; repeat best class split is separately exploratory. Repeat data overlap the combined alignment, so agreement is not independent replication. Split support does not establish biochemical labels, root, duplication timing or orthology. Other repeat and species/gene reconciliation remain required.",
+  "artifacts": {
+    "tip_split_membership.tsv": "954d55f5db426f73227dcb86d05beb94b6786be68f8b9fa30d37183e026f0114",
+    "internal_split_class_counts.tsv": "567a194885b6f27fff3a33c38d33ca22114f980265945cab6b579e864b0dbbc7"
+  }
+}
