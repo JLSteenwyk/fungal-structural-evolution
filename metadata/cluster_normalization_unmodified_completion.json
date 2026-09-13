@@ -1,0 +1,18 @@
+{
+  "status": "conversion_complete_pending_readback",
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-normalization-build-v1/foldseek-unmodified",
+    "convertalis",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "results/structural_clusters/edge-validation-v1/alignments",
+    "results/structural_clusters/normalization-controls-v1/unmodified.tsv",
+    "--threads",
+    "8",
+    "--format-output",
+    "query,target,evalue,qstart,qend,qlen,tstart,tend,tlen,alnlen,qcov,tcov,alntmscore,qtmscore,ttmscore,lddt,rmsd",
+    "--exact-tmscore",
+    "1"
+  ],
+  "output_sha256": "db1f04c0d5582a89fe7026bcfcf09e38094b87db9dc32c1a5b5f3164bbb2fc39"
+}

@@ -1262,3 +1262,13 @@ expanded sources. This completes the dependency measurement started last turn;
 it does not establish calibrated branch intervals or statistical covariance.
 Domain comparisons and normalization controls remain verified live. The full
 research goal remains active and incomplete.
+
+### Unmodified normalization control completed with identical reported output
+
+After a verified wait, the unmodified control completed all 32,050 directed
+alignments. Every exported numeric field matches the production exact-score
+conversion, ruling out observed toolchain differences at reported precision.
+The patched conversion has started and remains live; domain geometry also
+continues. This advances beyond the preceding verified-wait turn by completing
+and checking the first controlled result. The overall goal remains active and
+incomplete; no corrected score or membership claim has been made.

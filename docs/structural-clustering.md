@@ -294,3 +294,18 @@ score differences and threshold transitions. Between matched builds, only
 alignment-TM output may differ; a change in another score is an error requiring
 investigation. The reviewer has passed syntax checking but has not yet run on
 completed controls. No corrected group assignments have been made.
+
+### Rebuilt unmodified control reproduces all reported scores
+
+The unmodified control conversion completed. Complete pair-grid readback checked
+all 32,050 directed alignments against the production exact conversion: all
+15 numeric fields are identical at exported precision, including alignment-TM,
+query/target TM, lDDT, RMSD, endpoint/coverage and E-value fields. This controls
+for observed compiler/build effects at the reported precision; it does not
+establish bitwise identity of internal floating-point calculations.
+
+The inclusive-span conversion started automatically after the control completed
+and is verified live. Its numerical review and any membership revision remain
+pending. The completed control and full-field comparison are tracked in
+`metadata/cluster_normalization_unmodified_*`. The full prepared reviewer will
+repeat this stage when both conversions finish.
