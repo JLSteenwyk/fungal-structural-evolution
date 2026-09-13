@@ -2049,3 +2049,15 @@ Miller has 2,281 (unclipped). At threshold .25, 36,292 cells (4.3048%) differ
 between scale classifications. Full projected-row and normalization readbacks
 passed for every one of the 843,060 cells. Ecology projection/normalization is queued behind its exact live
 full-audit controller. Controlled evolutionary analyses remain pending.
+
+
+Completed and independently checked the site-rate/exposure analysis frame for
+all 16,571 sites in the earlier 72-marker ESMFold cohort: 132,568 rate values
+(four AA/3Di specifications, Gamma and optimized FreeRate), copied exposure
+quantiles and copy-review flags, plus amino-acid composition, entropy and
+coverage. All source values and fit diagnostics matched; every site composition
+and coverage value was independently recomputed from FASTAs. Rates are
+conditional phylogenetic estimates, while extant exposure summaries remain
+unadjusted. This prepares covariates for controlled coupling/exposure modeling;
+it does not constitute an effect test or resolve feature dependence/uncertainty.
+The larger combined-cohort supported fits and direct geometry continue running.
