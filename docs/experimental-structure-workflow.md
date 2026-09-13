@@ -184,3 +184,39 @@ quality criterion. Non-CA atoms, experimental method/resolution, refinement
 validation, biological assemblies, ligands, alternate conformations and
 prediction-training overlap still require assessment. This calculation does
 not yet compare experimental and predicted coordinates.
+
+
+## Full metadata and sequence screen completed
+
+All 5,227 entity/entry metadata responses completed. Independent readback verified
+every response/receipt hash, declared identity and the exact expected entity and
+parent-entry universes. The complete sequence screen covers all 3,592 candidates:
+2,850 exact full canonical sequences, 187 exact unique fragments, 485 requiring
+alignment/variant review, 52 longer constructs and 18 noncanonical sequences.
+The full matches represent 80 distinct predicted proteins across 1,036 PDB
+entries. These repeated-entity counts do not imply independent protein controls.
+The earlier 215-entry coordinate snapshot remains a subset; expansion and
+quality screening of the full set are still required.
+
+## Initial coordinate mapping completed and audited
+
+All 215 entries completed CA correspondence mapping: 157,670 model/chain/position
+rows, including 129,095 unambiguous full-occupancy CA positions, 28,405 without
+CA observations, 78 with multiple CA records, 25 with nonstandard/mismatching
+monomers and 67 with alternate or partial occupancy. Counts are repeated
+observations across structures/chains/models, not distinct sequence positions.
+
+The audit verified every exported position grid, reconstructed sequence hash,
+embedded atom identity and count partition. It independently read original
+mmCIF atom fields for 2,823 positions across five deterministically selected
+entries. Raw atom fields for other entries were not independently reparsed.
+This establishes the stated correspondence checks, not an experimental-quality
+pass or a completed structural-accuracy comparison.
+
+```bash
+python scripts/audit_experimental_ca_mapping.py \
+  --mapping results/experimental_structures/ca-mapping-partial-v1 \
+  --screen results/experimental_structures/sequence-screen-partial-v1 \
+  --coordinates data/experimental_structures/coordinates-exact-partial-v1 \
+  --output results/experimental_structures/ca-audit-partial-v1
+```

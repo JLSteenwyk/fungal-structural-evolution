@@ -896,3 +896,19 @@ single-ortholog interpretation is withheld pending reconciliation. Original fits
 remain diagnostic and unflagged markers are not certified valid. The previous
 turn completed the family-tree assessment; this turn connects that evidence to
 the actual downstream inputs. The overall project remains active.
+
+
+### Full experimental sequence screen and initial coordinate audit completed
+
+Verified all 5,227 downloaded metadata responses and completed the 3,592-entity
+sequence screen. The 2,850 full exact matches cover 80 model proteins and 1,036
+PDB entries; the 215-entry coordinate snapshot remains partial coverage.
+
+Completed and audited all 157,670 exported CA position rows in that snapshot:
+129,095 unambiguous full-occupancy positions, with missing/ambiguous/modified
+observations retained. Full grids, sequence hashes, embedded identities and
+partitions passed; raw atom fields passed independent checks at 2,823 positions
+in five entries. Experimental-quality filtering and actual prediction comparisons
+remain pending. The preceding turn applied the orthology caveat; this turn
+completes substantive experimental-reference acquisition and correspondence work.
+The full project remains active.
