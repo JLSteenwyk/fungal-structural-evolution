@@ -626,3 +626,21 @@ absent. Atomically installed independent copies of the recovered alignment and
 tree; final hashes match the isolated recovery and protected core artifacts
 remain unchanged. No existing output was overwritten. The full orthology job
 continues; this repair does not establish completed reconciliation.
+
+### Full-ingroup complementary lineage QC queued
+
+Prepared explicit selection and offline BUSCO execution for all 501 fungal
+entries, preserving broad results for every taxon and retaining 25 outgroups
+outside fungal-panel scoring. Acquiring six frozen OrthoDB12.2 panels and
+verifying publisher archive checksums, configurations and file hashes. Five
+matching phylum groups use their named panel; remaining fungal entries use the
+fungal parent panel. A path-finalization defect was corrected with original
+source preserved and explicit verified-archive reuse. The controller is running
+acquisition/finalization and will start the full batch after successful checks.
+
+Three summary-validation tests pass. Resource plan, controller configuration,
+recovery provenance and reproducible scripts are versioned. Dataset finalization
+and per-taxon QC remain incomplete; no lineage-specific completeness results
+are claimed yet. See `docs/lineage-completeness-workflow.md`. The preceding goal
+turn made progress by recovering the failed orthology family and launching
+exhaustive local geometry; the full research objective remains active.

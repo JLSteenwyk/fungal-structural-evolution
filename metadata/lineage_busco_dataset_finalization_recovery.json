@@ -1,0 +1,7 @@
+{
+  "status": "download_continues_then_resume_finalization",
+  "original_pid": 1907860,
+  "original_script_sha256": "36505606832527aef6c6e13009ebc826c48c7fd193e4d200c48feafc44491bfe",
+  "corrected_script_sha256": "d040cd4371e9b406a7d8e08dce892cccce06781629ee4c6e6d508285c12edad5",
+  "reason": "Original relative output path causes relative_to(ROOT) failure at per-dataset receipt construction. Original source preserved; its live code cannot reach complete collection receipt. Let scheduled downloads finish before revalidating archives and finalizing with absolute paths. No download or extraction files changed during active producer work."
+}
