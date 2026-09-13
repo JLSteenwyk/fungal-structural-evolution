@@ -67,3 +67,10 @@ A [full-sampling gene-copy annotation audit](docs/gene-isoform-mapping.md#full-s
 Both full-taxon alignment strategies now have guide-tree searches running. A [taxon-coverage sensitivity audit](docs/phylogenetic-workflow.md#full-sampling-taxon-coverage-sensitivity-definitions) shows that a 50% coverage filter would eliminate all sampled Microsporidia and Olpidiomycota; the production design retains all 526 taxa. Supported trees and filtered-tree comparisons remain pending.
 
 [Assembly-matched coding-sequence acquisition and translation auditing](docs/coding-sequence-workflow.md) are complete for the 519 NCBI-backed taxa, with separately audited external CDS sources and explicit exceptions. All 125 marker codon alignments passed translation readback. Selection modeling still requires orthology, alignment and divergence review; the completed gene-tree subset already flags conflicts with some genus-based grouping assumptions.
+
+The full local ESMFold resampling run now has an audited 43,200 paired draws
+across 72 markers (16 unestimable; 86,368 validated fits). Joint path summaries
+are complete for 259,780 accepted structural comparisons and 6,813 exclusions;
+independent path readback passed, including 86,368 tree traversals. [Methods and tracked receipts](docs/tree-path-geometry.md).
+These conditional sensitivities are an intermediate result. Species phylogeny,
+full structural coverage and the evolutionary hypothesis tests remain incomplete.

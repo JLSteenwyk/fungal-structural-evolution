@@ -1,0 +1,25 @@
+{
+  "status": "complete_joint_path_summary_handoff",
+  "config_sha256": "e229439b28ddeb46c3e674383fb2813580a3ed9e8f9a89875103823547953ac3",
+  "script_sha256": "0cd50009aa6966b802f8952574d4adc9ed44adc927d360d5d531b4ed86bf2055",
+  "producer_receipt_sha256": "f8b2bb541a051be189602addd631f70d5e090a74e65de9eefaaf058ee96ecdd2",
+  "path_receipt_sha256": "be0247563a354498286dcdbdcf3bac4063137113f88fd1caca1c5d8b67deca70",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/append_paired_path_uncertainty.py",
+    "--points",
+    "results/phylogeny/paired-path-points-esmfold-v1",
+    "--inputs",
+    "results/phylogeny/paired-inputs-esmfold-partial-v1",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-esmfold-partial-v1",
+    "--resampling",
+    "results/phylogeny/paired-resampling-esmfold-v1",
+    "--resampling-audit",
+    "results/phylogeny/paired-resampling-audit-esmfold-v1",
+    "--output",
+    "results/phylogeny/paired-path-uncertainty-esmfold-v1"
+  ],
+  "accepted_pairs": 259780,
+  "excluded_pairs": 6813
+}

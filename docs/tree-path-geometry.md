@@ -266,3 +266,45 @@ is tracked in `metadata/esmfold_paired_path_controller_config.json`; controller
 output is `results/phylogeny/paired-path-controller-esmfold-v1`. The controller
 compiled and entered its expected waiting state. Execution of the full path
 summaries and their readback remain pending.
+
+
+### Full local joint path summaries completed
+
+The full resampling audit validated all 86,368 fitted trees from 43,200 paired
+draws across 72 markers and three block lengths. Sixteen draws remain
+unestimable. Warnings occurred in 74,465 fits and are retained in the audited
+records; completion does not establish model adequacy. The auditor produced
+54,732 branch interval rows. Its receipt is tracked in
+`metadata/esmfold_full_paired_resampling_audit_receipt.json`.
+
+The queued path stage then completed all 259,780 accepted pairs and 6,813
+geometry exclusions, retaining the original point and geometry fields. Each
+path is summed within each joint draw before percentiles, standard deviations
+and paired sampling covariance are calculated. Other structural substitution
+models still have point estimates only. Full outputs are under
+`results/phylogeny/paired-path-uncertainty-esmfold-v1`; its receipt is tracked in
+`metadata/esmfold_joint_path_uncertainty_receipt.json`.
+
+Independent readback command:
+
+```bash
+python scripts/audit_joint_path_uncertainty.py \
+  --paths results/phylogeny/paired-path-uncertainty-esmfold-v1 \
+  --points results/phylogeny/paired-path-points-esmfold-v1 \
+  --resampling results/phylogeny/paired-resampling-esmfold-v1 \
+  --resampling-audit results/phylogeny/paired-resampling-audit-esmfold-v1 \
+  --output results/phylogeny/paired-path-uncertainty-readback-esmfold-v1
+```
+
+This check covers all inherited fields, cohort identities, counts, interval
+ordering and covariance bounds. For one SHA256-selected pair per marker, it
+independently traverses every estimable AA and 3Di tree with Bio.Phylo.distance
+and recomputes summaries using Python statistics and explicit sorted linear
+quantiles. It does not independently recompute numerical summaries for every
+other pair. The readback completed successfully: 216 pair/block checks and 86,368
+independent tree traversals passed. Its receipt, including the selected pairs,
+is tracked in `metadata/esmfold_joint_path_uncertainty_readback.json`. All 216
+source batch receipt pins and the run configuration were also rechecked against
+the completed resampling receipt.
+These remain conditional sampling sensitivities, not calibrated confidence
+intervals, evidence of evolutionary coupling, or acceleration tests.

@@ -1605,3 +1605,28 @@ specific auditor process, requires its complete receipt, and launches the tested
 joint-path summary script automatically. The controller compiled and entered
 the expected waiting state; no dependent output was claimed complete. Full path
 execution/readback and the wider research goal remain outstanding.
+
+
+### Full resampling audit and joint path readback completed
+
+The full local resampling audit passed all 86,368 fitted trees from 43,200
+paired draws (16 unestimable) and wrote 54,732 branch interval rows. Warnings
+remain recorded for 74,465 fits. The queued successor completed joint path
+summaries for all 259,780 accepted pairs and 6,813 geometry exclusions across
+72 markers and block lengths 1/10/30. All source batch pins and the configuration
+were rechecked against the resampling receipt.
+
+A new reproducible readback verified every inherited pair field, cohort identity,
+summary count, interval bound and covariance bound. For one SHA256-selected pair
+per marker, independent Bio.Phylo traversals of every estimable draw reproduced
+the percentiles, standard deviations and paired covariance: 216 pair/block
+checks and 86,368 tree traversals passed. Numerical summaries for all other
+pairs were not independently recomputed. The first readback invocation hit a
+Python-version incompatibility in hashlib.file_digest before any readback output
+was created; streaming SHA256 fixed compatibility and the full rerun passed.
+
+Receipts and methods are tracked with the script. These remain conditional
+sampling sensitivities, not calibrated confidence intervals or evolutionary
+acceleration results. The consistent 1,152-fit FreeRate optimization remains
+live, alongside the broader phylogeny, orthology, domain annotation, prediction
+and structural analysis jobs. Full project completion remains outstanding.
