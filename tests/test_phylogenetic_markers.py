@@ -17,9 +17,19 @@ def module(name):
 
 prepare = module('prepare_phylogenetic_markers')
 align = module('align_phylogenetic_markers')
+assessment = module('assess_marker_alignments')
 
 
 class MarkerIntegrity(unittest.TestCase):
+    def test_occupancy_masks_and_informative_sites(self):
+        statistics, masks = assessment.assess(['AAX-', 'ACX-', 'DC--', 'DC--'])
+        self.assertEqual(statistics['parsimony_informative_columns'], 1)
+        self.assertEqual(statistics['all_gap_or_ambiguous_columns'], 2)
+        self.assertEqual(masks['0.5'], [1, 2])
+        self.assertEqual(masks['0.75'], [1, 2])
+        with self.assertRaises(ValueError):
+            assessment.assess(['AA', 'A'])
+
     def test_alignment_preserves_residues_and_identity(self):
         with tempfile.TemporaryDirectory() as tmp:
             source, target = Path(tmp) / 'input', Path(tmp) / 'output'

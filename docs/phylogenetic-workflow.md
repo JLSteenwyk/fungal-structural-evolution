@@ -24,3 +24,16 @@ Alignment uses MAFFT 7.525 `--auto --inputorder`, four concurrent alignments wit
 5. Establish the species tree's uncertainty before gene-tree reconciliation and branch-specific sequence/structure models. Do not use structural clusters as orthogroups or treat structural-alphabet distances as additive physical displacements.
 
 These downstream inference steps have not yet been executed. Time calibration, orthogroup gene trees and reconciliation remain separate deliverables.
+
+## Alignment audit and profile comparison
+
+Run `python scripts/assess_marker_alignments.py --alignments results/phylogeny/alignments-full-v1 --output results/phylogeny/alignment-audit-full-v1` after the MAFFT batch finishes. Inspection of a live batch is supported with `--allow-incomplete`, which labels the output staging. Audits report unambiguous-residue occupancy, constant and parsimony-informative columns, per-taxon retained residues, and explicit 1-based column masks at 25%, 50% and 75% occupancy among taxa present for each marker. Ambiguous residues do not count as observed amino-acid states. These masks quantify missingness; they are not probabilistic alignment-confidence estimates or a final filtering decision.
+
+An executed audit of the first 11 completed MAFFT alignments found median retained fractions of 8.6%, 7.4% and 6.8% under these masks. Full protein lengths can include lineage-specific extensions: for marker 115730at2759 the median protein length is 358 aa, maximum 2,058 aa, and MAFFT alignment length 4,061 columns. Large insertion-rich regions motivate a second full-panel alignment approach; they are not by themselves grounds for discarding taxa.
+
+```bash
+python scripts/align_markers_to_profiles.py --markers results/phylogeny/markers-full-v1 --output results/phylogeny/profile-alignments-full-v1
+python scripts/assess_marker_alignments.py --alignments results/phylogeny/profile-alignments-full-v1 --output results/phylogeny/profile-alignment-audit-full-v1
+```
+
+The profile comparison uses HMMER 3.4 `hmmalign` against the pinned BUSCO HMMs with four concurrent processes on the existing host. It preserves full Stockholm alignments, verifies ungapped sequence identity, and extracts profile match-state columns according to the reference annotation, requiring their count to equal the HMM length. Profile, input, full-alignment and extracted-alignment checksums are retained, together with the original alignment column indices. Stockholm posterior-probability annotations are preserved for later assessment. This profile-based approach also has model assumptions and does not establish a uniquely correct alignment; compare phylogenetic sensitivity against MAFFT and inspect leading conflicts.
