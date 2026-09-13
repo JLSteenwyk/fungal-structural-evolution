@@ -2077,3 +2077,18 @@ tables would omit newly eligible cells and retain incompatible paired columns.
 Reproject original per-model ASA onto the combined alignment after preserving
 source audit/configuration provenance. Controlled evolutionary tests remain
 pending; the full project scope is unchanged.
+
+
+Integrated audited ASA for all 10,048 models / 2,738,370 full-chain residues.
+All original coordinate/residue checksums and model provenance matched; the
+combined audit record explicitly describes a disjoint union of source audits,
+not a new coordinate audit. All numerical method settings match; the earlier
+cohort used two workers and newer cohorts four, retained as scheduling provenance.
+Every emitted audit row and entry hash independently matched the original source
+unions, and all 20,096 relative symlinks resolve to the exact source files.
+
+Projection onto the 89-marker combined paired alignment is running. Updated
+projection/readback consumers to accept the explicitly named derived-audit
+status only with matching union source provenance. The source-audit workflow
+continues to use its original status. Normalization, combined row readback and
+controlled exposure/coupling analyses remain pending.

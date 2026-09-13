@@ -24,7 +24,9 @@ def main():
     audit = receipts['audit']
     asa_receipt_path = a.accessibility / 'receipt.json'
     asa = json.loads(asa_receipt_path.read_text())
-    if audit['status'] != 'passed_full_accessibility_snapshot' or audit['assessment_receipt_sha256'] != sha(asa_receipt_path) or audit['snapshot_receipt_sha256'] != sha(a.snapshot / 'receipt.json'):
+    if audit['status'] == 'passed_disjoint_accessibility_audit_union' and (asa['status'] != 'complete_disjoint_audited_accessibility_union' or audit['source_cohorts'] != asa['source_cohorts']):
+        raise ValueError('Derived accessibility audit provenance differs')
+    if audit['status'] not in {'passed_full_accessibility_snapshot', 'passed_disjoint_accessibility_audit_union'} or audit['assessment_receipt_sha256'] != sha(asa_receipt_path) or audit['snapshot_receipt_sha256'] != sha(a.snapshot / 'receipt.json'):
         raise ValueError('Full matching accessibility audit required')
     if receipts['inputs']['source_receipts']['snapshot']['sha256'] != sha(a.snapshot / 'receipt.json'):
         raise ValueError('Paired input snapshot differs')

@@ -1,0 +1,44 @@
+{
+  "status": "passed_disjoint_accessibility_audit_union",
+  "models_audited": 10048,
+  "residues_audited": 2738370,
+  "source_cohorts": [
+    {
+      "mapping": "results/structural_markers/esmfold-partial-v1",
+      "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-v1",
+      "accessibility_receipt_sha256": "9353bd527e1a290c785222ee179f06a6440fa13cb881cfa6bf85a3755e9bdc94",
+      "config_sha256": "4ca90ca2b52e89fe3e18ed48ade89766ffa9804cfcb457d830ef2e97a4b6e868",
+      "workers": 2,
+      "audit": "results/structural_annotations/accessibility-esmfold-full-audit-v1",
+      "audit_receipt_sha256": "878c03d9c06575716c6231bf1da9feb2d1a49d4981dfee8736cc7fb4c2d8d634"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-followon-v1",
+      "accessibility_receipt_sha256": "7b28d1361c22c6ad4f9a1bb1ebc2f24e6daa9acb05f4b18f60a55b2f1dee1098",
+      "config_sha256": "b7d42786408336db0f2579da0d85ad9355c83243db4ae2804034f4285b7dd229",
+      "workers": 4,
+      "audit": "results/structural_annotations/accessibility-followon-full-audit-v1",
+      "audit_receipt_sha256": "dbd5df5e687d3660c55a91394dff09728b9f514233c6da26901da930cee3fab0"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-ecology-v1",
+      "accessibility_receipt_sha256": "5b2efd2be40820f2157cc97d86871ef0aa1a88936ae22ac28b6170bc6af258d8",
+      "config_sha256": "c829468228cdfe24f17de4be2856cc07c71fa4ac29b4c9d36755292067b59cbc",
+      "workers": 4,
+      "audit": "results/structural_annotations/accessibility-ecology-full-audit-v1",
+      "audit_receipt_sha256": "b99911c21a10d815294c7c1499d5152272b83295b67c7ff2d56d6ac18e7ba8f7"
+    }
+  ],
+  "assessment_receipt_sha256": "707fc03eeb04090145b28807eb2484c275d09eee8034fc629496d904287d41e7",
+  "snapshot_receipt_sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+  "script_sha256": "6adf1fa00e540532c7855e2f01a0c384962c3a06663566d9c8ed0efd04ec6f78",
+  "scope": "Original entry receipts/residue tables are referenced through relative symlinks. Source raw audits and unchanged coordinate/table hashes establish union provenance; no new ASA calculation or independent raw-coordinate re-audit.",
+  "artifacts": {
+    "audited_models.tsv": "04255078aacf07249a69323814c7aedbe42d324d78bd5c110e721922619c5904"
+  }
+}

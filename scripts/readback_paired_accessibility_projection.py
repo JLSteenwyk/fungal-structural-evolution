@@ -30,9 +30,11 @@ def main():
     for name in ['inputs', 'snapshot', 'accessibility', 'audit']:
         if pr['source_receipts'][name] != sha(getattr(a, name) / 'receipt.json'):
             raise ValueError('Changed projection source: ' + name)
-    if ar['status'] != 'passed_full_accessibility_snapshot' or ar['assessment_receipt_sha256'] != sha(a.accessibility / 'receipt.json') or ar['snapshot_receipt_sha256'] != sha(a.snapshot / 'receipt.json'):
+    if ar['status'] not in {'passed_full_accessibility_snapshot', 'passed_disjoint_accessibility_audit_union'} or ar['assessment_receipt_sha256'] != sha(a.accessibility / 'receipt.json') or ar['snapshot_receipt_sha256'] != sha(a.snapshot / 'receipt.json'):
         raise ValueError('Missing matching full accessibility audit')
     asa = json.loads((a.accessibility / 'receipt.json').read_text())
+    if ar['status'] == 'passed_disjoint_accessibility_audit_union' and (asa['status'] != 'complete_disjoint_audited_accessibility_union' or ar['source_cohorts'] != asa['source_cohorts']):
+        raise ValueError('Derived accessibility audit provenance differs')
     audited = {r['model_id']: r for r in table(a.audit / 'audited_models.tsv')}
     links = {(r['marker'], r['taxon_id']): r for r in table(a.snapshot / 'marker_structure_links.tsv')}
     mapping = defaultdict(dict)
