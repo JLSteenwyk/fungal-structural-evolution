@@ -276,3 +276,7 @@ The full 519-taxon CDS acquisition finished with zero pending/error taxa. Files 
 ## Full NCBI translation audit launched
 
 Started the strict translation audit across all 519 NCBI-backed taxa and 5,847,336 CDS records, using checksum-verified GFF and protein inputs. Translation codes are annotation-derived or explicitly marked as table-1 assumptions. Duplicated mappings, partial lengths, source exceptions and mismatches remain visible. Four focused tests passed. Initial taxa completed, confirming the producer is executing; no whole-dataset translation result is yet claimed. Resource plan and restart checks are recorded in the coding-sequence workflow.
+
+## Marker-to-CDS identity indexing started
+
+Started source indexing for all 59,840 marker/taxon links across the full 526-taxon dataset. The index checks exact protein sequences and preserves gene-representative decisions, source-boundary conventions, missing CDSs and ambiguous duplicate records. It exports uniquely associated source DNA for later translation-qualified codon alignment. Two identity/ambiguity tests pass; initial taxa completed. This indexing run and the independent full NCBI translation audit are both active; no full codon-alignment result is claimed.
