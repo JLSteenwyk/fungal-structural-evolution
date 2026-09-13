@@ -1465,3 +1465,15 @@ scores, all matching. Site minimum counts vary across topology samples at 7,514
 AA and 4,965 3Di sites. These remain descriptive topology sensitivity, not
 calibrated confidence or acceleration claims. Column resampling and other major
 stages remain live. The overall research goal remains active and incomplete.
+
+
+### Conditional site-rate estimates completed across all local markers
+
+After the preceding verified wait, completed 288 fixed-topology empirical-Bayes
+rate fits and exported 66,284 site estimates. Corrected a parser mismatch with
+actual IQ-TREE3 column labels in a new immutable run; both schema and rejection
+tests passed. All source/model/topology identities, rate grids/category bounds
+and likelihood accounting passed audit. Warnings in 248 fits remain explicit.
+This adds a model-based evolutionary measure for later exposure/coupling analyses;
+model adequacy and inferential controls remain pending. The overall goal stays
+active and incomplete.

@@ -363,3 +363,5 @@ validation artifacts are `metadata/esmfold_site_parsimony_topology_receipt.json`
 `metadata/esmfold_site_parsimony_topology_marker_audit.tsv`.
 The separate column-resampling run is still active. Neither analysis includes
 all sources of model, alignment, prediction or biological uncertainty.
+
+The next model-based layer is now available: [conditional site-specific evolutionary rates](site-specific-evolutionary-rates.md), covering all 72 markers and four model specifications. Controlled exposure/rate analyses remain pending.

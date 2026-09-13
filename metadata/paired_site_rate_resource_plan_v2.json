@@ -1,0 +1,15 @@
+{
+  "scope": "All 72 local markers, four existing model specifications each; fixed AA topology refits with empirical-Bayes site-rate exports and site likelihoods",
+  "workers": 4,
+  "threads_per_fit": 1,
+  "memory_gb_plan": 8,
+  "disk_gb_plan": 5,
+  "runtime_hours_estimate": [
+    0.1,
+    4
+  ],
+  "basis": "No topology search or bootstrap; original local structural fixed-topology fits took about 67 seconds total, with added AA refits, rate export and audit overhead. Existing authorized host.",
+  "script_sha256": "a78e594e97ec12a7316df1133e2ec14efc6cd6a85918dd164321f0a2aaa73ece",
+  "output": "results/phylogeny/paired-site-rates-esmfold-v2",
+  "prior_attempt": "v1 stopped on actual IQ-TREE3 Cat/C_Rate header names; no completed scientific receipt. New parser handles both actual and documented schema. Source fits unchanged."
+}
