@@ -25,3 +25,44 @@ Core computation completed successfully in 6,066.6 seconds with all 64 expected 
 Pre-launch planning envelope: the completed core used 6.6 GB disk and 101 minutes. The full assignment includes 8.74 times as many additional proteins as the core but uses a different algorithm, so linear time extrapolation is inappropriate. Reserve 1 TB disk headroom, up to 512 GB aggregate host RAM and 1–14 days as a provisional planning range, not an observed estimate or enforced cap. The host has approximately 1 TB RAM and more than 10 TB free disk. These settings reuse released core CPU resources alongside ongoing tree, domain and single-GPU prediction jobs. No paid infrastructure is provisioned. Record actual performance from execution logs and monitor the large-family stages.
 
 The first assignment attempt (full526v1) stopped during reference-profile preparation because NumPy 2.5.3 lacks the top-level `np.chararray` called by OrthoFinder 3.1.5. OrthoFinder printed the traceback yet returned exit code zero; the controller correctly withheld a completion status because no full species tree existed. The revised controller also exits nonzero for incomplete results. The isolated dependency was pinned to NumPy 2.2.6; pip dependency checking passed, and the previously failing function reconstructed a real core alignment exactly. `environments/orthofinder-core-pip.lock.txt` preserves the original core dependencies; the updated `orthofinder-pip.lock.txt` reproduces assignment dependencies. The install report records the wheel URL/hash. Failed outputs and runner source remain under assignment-control-v1 and Results_full526v1. A fresh full526v2 run uses assignment-control-v2 without deleting or overwriting the first attempt.
+
+## Recovered family alignment failure during full assignment
+
+The full526v2 log reported FAMSA exit 134 for `OG0001522`, followed by missing
+alignment/tree errors. The main assignment remained live in its MSA/tree stage.
+The family input contained 769 unique nonempty protein records (79–4,623 AA).
+Isolated reruns with bundled FAMSA 2.2.3 and locally installed 2.5.2 both exited
+successfully and preserved every identity and ungapped sequence. The original
+failure did not reproduce; its cause is unresolved.
+
+Recovery used the **same bundled 2.2.3 binary** as production, avoiding a method
+change. Its 20,197-column alignment was trimmed with OrthoFinder's existing
+`trim.main(...,10,0.1,500,0.75,False)` to 2,112 columns. Every retained column was
+verified as an ordered column of the original alignment. Bundled FastTree with
+the production invocation completed a 769-tip tree; identities and finite,
+nonnegative branches passed readback. This gene tree is a production-equivalent
+recovery, not an independent orthology validation or supported species tree.
+
+Before installation, the assignment was verified live and still before the
+species-tree stage; no family writer or Astral-Pro process was active. Both
+production artifact paths were absent. The installer copied the validated
+alignment and tree to independent inodes and atomically created only those two
+missing files, refusing to overwrite any existing file. Final hashes match the
+isolated recovery. No reference-core artifact changed. Downstream full-run
+completion and scientific validation remain pending.
+
+```bash
+python scripts/recover_orthology_family_tree.py \
+  --diagnostic results/orthology/famsa-OG0001522-diagnostic-v1 \
+  --output results/orthology/OG0001522-recovery-v1
+python scripts/install_orthology_family_recovery.py \
+  --recovery results/orthology/OG0001522-recovery-v1 \
+  --production-pid 841175 \
+  --receipt metadata/orthology_family_recovery_installation_receipt.json
+```
+
+The PID records this execution and must be re-observed for another execution;
+the installer refuses a missing/wrong process, advanced stage, active writer,
+existing output or changed source. Diagnostic commands, executable hashes,
+resource plans, recovery outputs and installation are recorded in
+`metadata/orthology_family_*`. Raw intermediate alignments remain outside Git.

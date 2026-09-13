@@ -1,0 +1,24 @@
+{
+  "status": "prelaunch_local_pairwise_geometry",
+  "models": 5121,
+  "marker_taxon_pairs": 306673,
+  "confidence_thresholds": [
+    50,
+    70,
+    90
+  ],
+  "maximum_comparison_rows": 920019,
+  "workers": 1,
+  "blas_threads": 1,
+  "planning_memory_gb": 16,
+  "planning_output_gb": 2,
+  "planning_runtime_hours": [
+    1,
+    24
+  ],
+  "free_disk_bytes": 12521615114240,
+  "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+  "producer_sha256": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+  "basis": "Exhaustive within-marker matched CA comparisons, at most 511 residues per local model; quadratic residue-distance arrays and three confidence strata. Descriptive baseline for direct geometry benchmarks; pairwise PAE sensitivity and paired-tree uncertainty follow separately.",
+  "cost": "Existing authorized host CPU; no new charges"
+}

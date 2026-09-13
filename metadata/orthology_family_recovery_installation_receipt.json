@@ -1,0 +1,22 @@
+{
+  "status": "complete_missing_family_artifact_installation",
+  "orthogroup": "OG0001522",
+  "recovery_receipt_sha256": "c1a62ce3fbd743340695e97516bafb01af6c890a94af8da7e43cfe7e68df4198",
+  "production_config_sha256": "87345a8ac83f7e880427f489ecb3dbb1e4584f15e0a63192594fa319b0c897bf",
+  "production_pid": 841175,
+  "production_command": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder --assign /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/orthology_inputs/v1/additional --core /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_Sep12 -n full526v2 -t 32 -a 8 -M msa -S diamond -A famsa -T fasttree ",
+  "script_sha256": "bf528ef65312cba1cb72bce9c2b99a0786b2716e9849d0abf307ea7c7b01a6d1",
+  "installed": [
+    {
+      "path": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0001522.fa",
+      "sha256": "814bc5aeb7b33225fecbced905d7dcb22128491dd5eb94e39f95b68ab4c7cb2b",
+      "source_path": "results/orthology/OG0001522-recovery-v1/alignment.faa"
+    },
+    {
+      "path": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0001522.txt",
+      "sha256": "ef24cc9d1d57e1a2ab669b40d7f21b23d04e2a3ba1796474c875394aff4f1165",
+      "source_path": "results/orthology/OG0001522-recovery-v1/tree.nwk"
+    }
+  ],
+  "interpretation": "Only two previously absent family files restored, using verified identical-binary recovery before downstream species-tree/reconciliation stages. No existing production artifacts overwritten. Full assignment and scientific validation remain pending."
+}

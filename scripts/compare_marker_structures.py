@@ -112,7 +112,7 @@ def main():
                 writer = csv.DictWriter(handle, list(rows[0]), delimiter='\t', lineterminator='\n')
                 writer.writeheader()
                 writer.writerows(rows)
-    result = {'mapping_receipt_sha256': sha(args.snapshot / 'receipt.json'), 'numpy_version': np.__version__,
+    result = {'mapping_receipt_sha256': sha(args.snapshot / 'receipt.json'), 'script_sha256': sha(Path(__file__)), 'numpy_version': np.__version__,
               'comparison_rows': len(results), 'excluded_rows': len(exclusions),
               'distinct_marker_taxon_pairs': len({(r['marker'], r['taxon_a'], r['taxon_b']) for r in results}),
               'markers_compared': len({r['marker'] for r in results}),

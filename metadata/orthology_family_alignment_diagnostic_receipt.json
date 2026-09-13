@@ -1,0 +1,59 @@
+{
+  "status": "complete_isolated_alignment_reruns",
+  "observation_utc": "2026-09-13T11:21:49.065926+00:00",
+  "orthogroup": "OG0001522",
+  "source_path": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0001522.fa",
+  "source_sha256": "3ce65a1391eee8c0dbd80b60dbd597e7f9b14c7c1f9a80b04a7dda6fc1a48385",
+  "main_job_pid": 841175,
+  "main_job_observed_live": true,
+  "reported_main_failure": {
+    "external_exit_code": 134,
+    "stage": "famsa alignment",
+    "downstream_error": "Missing alignment; trim/tree command chain reported an exception"
+  },
+  "diagnostics": {
+    "bundled": {
+      "command": [
+        ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa",
+        "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0001522.fa",
+        "results/orthology/famsa-OG0001522-diagnostic-v1/bundled.faa",
+        "-t",
+        "1"
+      ],
+      "executable_sha256": "20b52ee56519facaae159b61a40f424835ff6f0e6b7492bf632628b8c06f7ed3",
+      "version_header": [
+        "FAMSA (Fast and Accurate Multiple Sequence Alignment) ",
+        "  version 2.2.3-1669fc1 (2024-09-17)",
+        "  S. Deorowicz, A. Debudaj-Grabysz, A. Gudys"
+      ],
+      "log_path": "results/orthology/famsa-OG0001522-diagnostic-v1/bundled.log",
+      "status": "complete_zero_exit_alignment_readback",
+      "returncode": 0,
+      "alignment_sha256": "3ce48819880210b2576a6520abcbec22acdc0e84c18d00b1455e311b9b56d147",
+      "sequences": 769,
+      "alignment_columns": 20197
+    },
+    "famsa252": {
+      "command": [
+        "../SOFTWARE/famsa_v2.5.2/famsa",
+        "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0001522.fa",
+        "results/orthology/famsa-OG0001522-diagnostic-v1/famsa252.faa",
+        "-t",
+        "1"
+      ],
+      "executable_sha256": "b616edf24b8f69be6fbbd8b891ef6cfc2b4b3743b7bb59333cac2ce7f60f5539",
+      "version_header": [
+        "FAMSA (Fast and Accurate Multiple Sequence Alignment) ",
+        "  version 2.5.2-2598410 (2026-03-23)",
+        "  S. Deorowicz, A. Debudaj-Grabysz, A. Gudys"
+      ],
+      "log_path": "results/orthology/famsa-OG0001522-diagnostic-v1/famsa252.log",
+      "status": "complete_zero_exit_alignment_readback",
+      "returncode": 0,
+      "alignment_sha256": "9a6a6f062e26719dd5fc732ed3b22fdef43484b4153a409fac1d5a67ec73693f",
+      "sequences": 769,
+      "alignment_columns": 19540
+    }
+  },
+  "interpretation": "Both versions completed with exit 0 and preserved all 769 protein identities and residues. Original bundled failure did not reproduce; cause unresolved. Prefer identical bundled executable for any recovery. No live production alignment was replaced."
+}

@@ -583,3 +583,46 @@ and independent comparison-table/count readback passed. This result makes
 prediction-source sensitivity a material requirement for branch conclusions.
 The overall goal remains active; supported species trees, reconciliation,
 uncertainty and the full evolutionary analyses are not complete.
+
+### Direct local geometry and isolated orthology alignment diagnosis
+
+Started exhaustive direct CA geometry comparisons for the frozen local snapshot:
+306,673 within-marker taxon pairs, three focal-confidence thresholds, at most
+920,019 comparison/exclusion rows. One CPU worker with one BLAS thread and a
+16 GB planning memory allowance; existing host only. This supplies a physical
+geometry baseline for structural-alphabet benchmarking, not an additive branch
+metric. Joint feature/PAE masking and tree-path uncertainty are separate stages.
+The producer now records its script checksum in the final receipt.
+
+The full orthology process is still live but its log reports a FAMSA exit 134
+for OG0001522 and a missing downstream alignment. Its 769 unique input IDs have
+nonempty protein sequences of length 79–4,623. Started isolated reruns with the
+bundled FAMSA 2.2.3 and existing FAMSA 2.5.2, each using one thread and separate
+outputs. Both were confirmed running. No live OrthoFinder artifacts were changed;
+no successful repair or completed orthology inference is claimed. Executable
+hashes, commands, the input checksum and resource estimates are versioned in
+`metadata/orthology_family_alignment_failure.json` and
+`metadata/orthology_family_diagnostic_resource_plan.json`.
+
+Updated the README opening status to reflect completed local coverage and the
+same-sequence predictor-alphabet control, replacing the obsolete first-chunk
+status. The preceding goal turn made progress through completed predictor
+comparisons and launched supported local fits; the overall goal remains active.
+
+The isolated OG0001522 reruns subsequently both finished with exit 0. Independent
+readback verified all 769 input identities and complete ungapped protein
+sequences. Bundled FAMSA yielded 20,197 alignment columns; FAMSA 2.5.2 yielded
+19,540. The original crash did not reproduce and its cause remains unresolved.
+Using the successful **same bundled executable** output, started isolated
+production-equivalent trimming and FastTree recovery. The recovery script
+checks every trimmed column against the ordered source alignment and requires
+the final tree to retain every gene ID with finite nonnegative branches.
+Production alignment/tree paths remain absent; integration is still pending.
+
+OG0001522 recovery subsequently completed: 2,112 retained alignment columns and
+all 769 tree tips passed validation. Verified the main job was still before
+species-tree inference, with no active family writer and both production paths
+absent. Atomically installed independent copies of the recovered alignment and
+tree; final hashes match the isolated recovery and protected core artifacts
+remain unchanged. No existing output was overwritten. The full orthology job
+continues; this repair does not establish completed reconciliation.

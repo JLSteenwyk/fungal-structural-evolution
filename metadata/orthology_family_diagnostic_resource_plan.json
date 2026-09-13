@@ -1,0 +1,18 @@
+{
+  "status": "prelaunch_isolated_famsa_failure_diagnosis",
+  "source": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0001522.fa",
+  "source_sha256": "3ce65a1391eee8c0dbd80b60dbd597e7f9b14c7c1f9a80b04a7dda6fc1a48385",
+  "sequences": 769,
+  "maximum_length": 4623,
+  "workers": 2,
+  "threads_per_worker": 1,
+  "planning_memory_gb": 8,
+  "planning_runtime_hours": [
+    0.02,
+    2
+  ],
+  "planning_output_gb": 1,
+  "free_disk_bytes": 12521684348928,
+  "cost": "Existing host; no new charges",
+  "scope": "Replay failing bundled FAMSA and locally available FAMSA 2.5.2 in separate diagnostic outputs. Do not change live OrthoFinder artifacts."
+}
