@@ -278,3 +278,18 @@ This positional repeat correspondence is a working hypothesis; repeat-specific p
 A supported unrooted gene-tree search is now running on the full 1,040-protein paired-domain alignment. IQ-TREE 3 uses restricted model selection among LG/WAG/JTT with empirical frequencies and gamma rates, 1,000 SH-aLRT replicates and 1,000 ultrafast-bootstrap replicates with NNI refinement; bootstrap trees are retained. Four threads and 8 GB memory are allocated with a prelaunch 0.25–8-hour scheduling allowance. Configuration, binary/input hashes and seed 20260913 are recorded. The controller accepts completed output only after checking all original tip identities, finite nonnegative branches and 1,000 bootstrap trees. Identical inputs or zero-length branches must not be interpreted as resolved duplication events. Checkpoint resume requires unchanged configuration and source hashes.
 
 Versioned evidence: `metadata/tfiib_domain_alignment_receipt.json`, `metadata/tfiib_domain_alignment_readback.json`, `metadata/tfiib_domain_pair_candidate_audit.tsv`, `metadata/tfiib_family_tree_run_config.json` and resource plans. Tree execution log: `results/phylogeny/tfiib-domain-tree-v1/stdout.log`. Tree completion, branch-support interpretation and species-tree reconciliation are not yet claimed.
+
+## Repeat-specific phylogenetic sensitivity
+
+The verified paired-domain matrix was split into its original two 92-column blocks with the same 1,040 gene identities and no additional filtering. The first repeat has 862 distinct aligned sequences, 91 variable/parsimony-informative columns and one constant column. The second has 894 distinct sequences, 90 variable/parsimony-informative columns, one constant and one all-gap/ambiguous column. These descriptive counts do not establish sufficient phylogenetic information or independence.
+
+```bash
+python scripts/prepare_tfiib_repeat_sensitivity.py --output results/phylogeny/tfiib-repeat-sensitivity-inputs-v1
+python scripts/run_tfiib_repeat_trees.py --output results/phylogeny/tfiib-repeat-trees-v1
+```
+
+Independent readback confirms that all repeat identities match the original matrix and that recombining every pair exactly reproduces the original 184-column sequence. Input receipt, per-gene coverage and readback are versioned under `metadata/tfiib_repeat_input_*` and `metadata/tfiib_repeat_coverage.tsv`.
+
+Both repeat-specific IQ-TREE searches are running, each with the same restricted LG/WAG/JTT + empirical-frequency/gamma model set, 1,000 SH-aLRT replicates and 1,000 NNI-refined ultrafast-bootstrap replicates. They use two threads and a 4 GB memory limit per job, with distinct recorded seeds. The combined-domain search continues separately. Source/configuration hashes and exact input identities are checked; the controllers require valid completed trees and all 1,000 bootstrap outputs before claiming success. Metadata records both run configurations and the resource allowance.
+
+The comparison holds gene sampling fixed while changing which repeat supplies the sites. Discordance could reflect limited information, model/alignment issues, repeat history or other biological processes; it will not by itself prove gene conversion. Domain-pair and repeat-specific tree completion, support-aware concordance and reconciliation remain pending.

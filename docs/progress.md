@@ -352,3 +352,9 @@ All ten focal Aspergillus genomes contain both domain-hit types on distinct anno
 Aligned 1,040 proteins from 512 taxa using two ordered, nonoverlapping TFIIB domains with at least 70-percent profile coverage each. The resulting 184-column matrix retains 445 excluded candidates with explicit hit-count/coverage/overlap reasons. Three focused tests passed. Independent readback verified every alignment/mapping cell and 175,699 source-matched non-gap residues.
 
 Started the full candidate-family IQ-TREE search with restricted model selection, SH-aLRT and NNI-refined ultrafast-bootstrap support (1,000 replicates each), four threads and 8 GB memory. The process entered likelihood optimization successfully. Full tree completion, repeat-specific sensitivity, duplication rooting and species-tree reconciliation remain pending; this is not a final species tree or selection result.
+
+## Repeat-specific family sensitivity launched
+
+Prepared two 92-column matrices with exactly the same 1,040 genes as the combined domain alignment. Independent split readback reproduces every original sequence; per-repeat coverage, identical-sequence counts and site-variation summaries are recorded. One second-repeat column has no canonical residues and remains explicit.
+
+Both repeat-specific supported tree searches entered likelihood/model optimization successfully, with two threads and 4 GB memory per job. Each requests 1,000 SH-aLRT and 1,000 NNI-refined ultrafast-bootstrap replicates. The combined-domain tree remains running. Topology/support concordance and duplication/species-tree reconciliation remain pending; no repeat-history conclusion is claimed.

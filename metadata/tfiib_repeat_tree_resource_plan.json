@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_repeat_specific_family_trees",
+  "repeats": 2,
+  "tips_per_tree": 1040,
+  "columns_per_tree": 92,
+  "concurrent_jobs": 2,
+  "threads_per_job": 2,
+  "memory_limit_gb_per_job": 4,
+  "planning_runtime_hours_per_job": [
+    0.25,
+    8
+  ],
+  "planning_output_gb": 2,
+  "free_disk_bytes": 12533024829440,
+  "basis": "Two short positional-repeat alignments, with restricted model selection and 1000 SH-aLRT/NNI-refined ultrafast-bootstrap replicates per tree; same gene universe as combined analysis.",
+  "cost": "Existing authorized host only; no new charges"
+}

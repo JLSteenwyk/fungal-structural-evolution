@@ -1,0 +1,15 @@
+{
+  "status": "complete_repeat_split_readback",
+  "source_receipt_sha256": "5654c4891059d65bcbdb4eefeb3ae5bec852c6dc8d3afe66d8745cea0d21479c",
+  "genes": 1040,
+  "repeat_columns": [
+    92,
+    92
+  ],
+  "checks": [
+    "All repeat artifacts hashed",
+    "Identical original/repeat gene identity sets",
+    "Concatenating every repeat pair exactly reproduces every original 184-column sequence"
+  ],
+  "interpretation": "Split integrity only; repeat-specific topology and support comparison remain pending."
+}

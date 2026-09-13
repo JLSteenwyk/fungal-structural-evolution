@@ -1,0 +1,38 @@
+{
+  "status": "complete_tfiib_repeat_sensitivity_inputs",
+  "source_receipt_sha256": "79490acb28e3f2fb6785404017e8346f2f9eb4915dbf3cb68e773c9d28ec55aa",
+  "source_readback_sha256": "3b49a9ea67dce01274c55f649dbb31e40aaf9010ce7f704c71fef95f910d4748",
+  "repeats": [
+    {
+      "repeat_order": 1,
+      "proteins": 1040,
+      "columns": 92,
+      "distinct_aligned_sequences": 862,
+      "constant_columns": 1,
+      "variable_columns": 91,
+      "parsimony_informative_columns": 91,
+      "all_gap_or_ambiguous_columns": 0,
+      "path": "repeat1.faa",
+      "sha256": "38a839fada00a790ba90c8790a5503ff86b74f953bd55a3c19c9abf8ee7f9bad"
+    },
+    {
+      "repeat_order": 2,
+      "proteins": 1040,
+      "columns": 92,
+      "distinct_aligned_sequences": 894,
+      "constant_columns": 1,
+      "variable_columns": 90,
+      "parsimony_informative_columns": 90,
+      "all_gap_or_ambiguous_columns": 1,
+      "path": "repeat2.faa",
+      "sha256": "d0fb271e21554c80545880e123db762f6dec40f75bed755f05260b36b07c32c1"
+    }
+  ],
+  "script_sha256": "a3e495f45dc3708cb1327226cf502fc9be7172937fc793d9c00b4d71624e34ae",
+  "interpretation": "Same 1040 gene identities split into the existing 92-column positional-repeat blocks; no additional filtering or new alignment. Descriptive site variation does not establish phylogenetic resolution or independence. Separate-repeat topology/support comparisons remain pending.",
+  "artifacts": {
+    "repeat_coverage.tsv": "0cb75234f512bf81caf5a628d5dae7c55bbe2a094a326d4db6102e0d2c7efc76",
+    "repeat1.faa": "38a839fada00a790ba90c8790a5503ff86b74f953bd55a3c19c9abf8ee7f9bad",
+    "repeat2.faa": "d0fb271e21554c80545880e123db762f6dec40f75bed755f05260b36b07c32c1"
+  }
+}
