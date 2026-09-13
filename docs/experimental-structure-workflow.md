@@ -316,3 +316,45 @@ The idle CA mapper now honors explicit excluded entries pinned in the coordinate
 retrieval configuration, permitting the full experimental-only expansion while
 retaining its four integrative deferrals. Unknown deferrals and mismatched entry
 universes are rejected. The two existing CA classification tests still pass.
+
+
+## Full coordinate retrieval completed and taxon coverage assessed
+
+All 1,032 experimental coordinate archives are complete: 215 verified reused
+archives and 817 new downloads, totaling 1,952,380,079 compressed bytes and
+8,484,682,674 bytes after decompression. Independent readback checked every
+archive checksum, entry receipt, configured entry universe and reuse count.
+The producer also streamed full gzip validation. Full CA mapping is now running
+in `results/experimental_structures/ca-mapping-full-v1`, retaining all deposited
+models, chains, missing positions and ambiguous observations. Planning reserves
+one CPU worker, 8 GB memory and 10 GB output with a broad 0.5–8 hour forecast.
+
+```bash
+python scripts/map_experimental_ca_residues.py --screen results/experimental_structures/sequence-screen-full-v1 --coordinates data/experimental_structures/coordinates-exact-full-v1 --output results/experimental_structures/ca-mapping-full-v1
+```
+
+Reference coverage is concentrated. The 80 exact-sequence candidate proteins
+project to 98 marker/taxon links among **nine project taxa, all Ascomycota**.
+The remaining 517 analysis taxa have no exact-sequence link in this snapshot.
+Saccharomyces cerevisiae accounts for 78 proteins and 1,021 candidate entries;
+Aspergillus fumigatus and Schizosaccharomyces pombe each account for one protein.
+The six other covered taxa are Saccharomyces entries, including the two curated
+hybrids, linked through identical protein sequences. These nine taxa are not
+nine independent experimental sources or nine verified unique species.
+
+The coverage table preserves all 526 analysis taxa and their zero-coverage rows.
+Taxon, protein and marker counts were independently read back against the 98
+exact-sequence links. Deposited organism identity is not inferred from target
+sequence identity. No absence of experimental homologs is implied by absence
+from this accession-based exact-match inventory. Experimental benchmarks cannot
+currently support broad fungal-lineage generalization without further coverage.
+
+```bash
+python scripts/summarize_experimental_taxon_coverage.py --references results/experimental_structures/reference-metadata-v2 --snapshot results/structural_markers/gdm-expanded-v1 --output results/experimental_structures/taxon-coverage-v2
+```
+
+An unpublished initial coverage calculation used the draft manifest and mutated
+a zero-coverage dictionary while rendering, inflating its covered-taxon total.
+It is explicitly marked `INVALIDATED.json` in its local output. The published v2
+uses the frozen 526-entry analysis manifest and checks coverage against nonzero
+rows and distinct links; no v1 numbers are used downstream.

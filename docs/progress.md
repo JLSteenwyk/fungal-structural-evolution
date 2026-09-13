@@ -959,3 +959,17 @@ review. Full coordinate retrieval and expanded phylogenetic/structural jobs
 continue. The preceding continuation completed the paired-site audit and started
 expanded AlphaFold geometry; both turns made concrete progress. The full goal
 remains active and incomplete.
+
+
+### Full experimental archives verified; expanded residue mapping running
+
+Finished all 1,032 coordinate archives (1.95 GB compressed), with independent
+hash/receipt/entry-universe readback. Started full CA mapping after recording
+resource estimates. Added a complete 526-taxon coverage table: 80 exact-sequence
+reference proteins map to only nine Ascomycota taxa and 98 marker/taxon links,
+including two hybrid taxa. Most coverage is concentrated in S. cerevisiae;
+identical sequences across taxa do not provide independent experimental support.
+This narrows the defensible generalization of the benchmark and motivates
+broader homolog/reference evaluation. The prior turn completed direct geometry
+comparisons and weighting summaries; this turn completes full acquisition and
+expands mapping. Overall research scope remains active and incomplete.
