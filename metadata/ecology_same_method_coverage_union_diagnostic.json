@@ -1,0 +1,14 @@
+{
+  "status": "descriptive_union_of_existing_ready_esmfold_marker_coverage",
+  "source_coverage_receipt": "metadata/ecology_completed_cohort_coverage_receipt.json",
+  "cohorts": [
+    "ESMFold_earlier",
+    "ESMFold_followon",
+    "ESMFold_ecology"
+  ],
+  "common_markers": {
+    "Amanita_single_origin": 16,
+    "Cenococcum_transition_review_pending": 26
+  },
+  "scope": "Intersection across group taxa of the union of existing separately-ready ESMFold marker sets, independently read from emitted AA FASTA identities. No merged alignments, re-evaluated marker readiness, independent transition count or ecological effect estimate."
+}

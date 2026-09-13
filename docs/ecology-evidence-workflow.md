@@ -110,3 +110,29 @@ Control records and logs are under `results/predictions/ecology-control-v1`;
 models will be under `results/predictions/esmfold-ecology-v1`. Scheduler launch
 is not prediction completion. A successful final controller receipt still
 requires independent coordinate/PAE/sequence audit before downstream analysis.
+
+
+## Coverage after the ecology prediction batch
+
+The ecology cohort's paired alignments are complete: 71 ready markers, 18 taxa,
+645 marker–taxon cells and 134,004 paired-site observations. Every emitted FASTA
+identity, dimension, shared missingness mask and observation count passed
+readback; the full 65,750-cell design coverage summary also completed.
+
+`scripts/summarize_ecology_cohort_coverage.py` now accepts explicit named cohorts
+and an immutable output directory. The four-cohort join retains all 21 curated
+species and the original ecological/host evidence hashes. Every taxon count and
+contrast intersection was independently matched to emitted AA FASTA identities.
+The tables are `metadata/ecology_completed_cohort_taxon_coverage.tsv` and
+`metadata/ecology_completed_cohort_contrast_coverage.tsv`.
+
+No single ESMFold batch covers a common marker in every taxon of the two curated
+mixed-state groups, because acquisition is partitioned across batches. A
+descriptive union of existing ready ESMFold coverage yields 16 markers shared
+across the five Amanita entries and 26 across the three Cenococcum comparison
+entries. This diagnostic, recorded in
+`metadata/ecology_same_method_coverage_union_diagnostic.json`, motivates proper
+same-method snapshot/character integration. It does not create merged alignments
+or re-evaluate readiness. Amanita remains a single-origin case; the Cenococcum
+transition needs phylogenetic review. Independent transition replication and
+phylogenetically controlled ecological effects remain unestablished.

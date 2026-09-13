@@ -1945,3 +1945,12 @@ Ecology qualification and full PAE-context readback completed for all 675 models
 pLDDT70/PAE10. Started paired AA/3Di alignment preparation with unchanged profile
 matrix, masks and eligibility thresholds. Final usable coverage and ecological
 contrasts remain pending.
+
+
+Ecology paired inputs and emitted-file checks completed: 71 markers, 18 taxa,
+645 marker–taxon cells and 134,004 observed paired cells. Full-design lineage
+coverage completed. The four-cohort ecological coverage join and all taxon/group
+counts matched actual emitted FASTA identities. ESMFold coverage is distributed
+across batches: a descriptive same-method union gives 16 common markers across
+five Amanita taxa and 26 across three Cenococcum comparison taxa. Proper cohort
+integration and evolutionary tests remain pending; these are availability counts.

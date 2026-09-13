@@ -1,0 +1,23 @@
+{
+  "status": "complete_ecology_paired_coverage_join",
+  "ecology_evidence_sha256": "f6e17839598d8b23707b5e923bd96d4478e3200e84d00337d7d0067171a94ee9",
+  "host_evidence_sha256": "1452181b30e59b12bde0bd80c2d898984da398a9f46644ee822036c88845f77a",
+  "paired_input_paths": {
+    "AlphaFold": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+    "ESMFold_earlier": "results/phylogeny/paired-inputs-esmfold-partial-v1",
+    "ESMFold_followon": "results/phylogeny/paired-inputs-esmfold-followon-v1",
+    "ESMFold_ecology": "results/phylogeny/paired-inputs-esmfold-ecology-v1"
+  },
+  "paired_input_receipt_sha256": {
+    "AlphaFold": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "ESMFold_earlier": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+    "ESMFold_followon": "a0440db23cfb6b7cbdd5f11b3c894db63931e3db9ca57b1168cd529b57d12582",
+    "ESMFold_ecology": "89c9ceeafa3144a2d21591ec00c53c9303a4012fa5b0316607e238c3ef98e3ca"
+  },
+  "script_sha256": "41265b1cdc9562cf5917c5e05238eb998a75016f7e8f389ac407f7fbec2454c8",
+  "ecologically_curated_species": 21,
+  "with_any_source_usable_marker": 21,
+  "table_sha256": "e6d9dde94daa115d6b8b0030535ce93c0b52119b6aa4ab5f3aef322484df2bb5",
+  "contrast_table_sha256": "2e74b4f3913e6f1021345f9b3e552e0df8fca798afa6ba98a522465e062b651b",
+  "interpretation": "Availability only. Separate-source coverage exposes potential prediction-source confounding. No pooled inference, independent-origin count, ecological effect or adequacy/power claim."
+}
