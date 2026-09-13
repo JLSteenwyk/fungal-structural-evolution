@@ -1,0 +1,40 @@
+{
+  "status": "complete_flagged_freerate_diagnostic_execution",
+  "config_sha256": "cb4cab3890b2b3858a82c97fd2ebe7adbc4e47d2e2bab6685eb3c60ea727d4fc",
+  "flagged_source_fits": 7,
+  "diagnostic_fits": 28,
+  "artifacts": {
+    "fit_summary.tsv": "112bb60d41ca5d439c84f782c9e4e1c24ca193852805c77f89186b5620a1c746"
+  },
+  "fit_receipts": {
+    "4900375at2759__3di_llm__gamma__EM": "a052bafb62b2be669f2eaf9177847f27aafbbb3f9de8be50a65b3e973c4e7f70",
+    "4900375at2759__3di_llm__gamma__2-BFGS": "8636a6cebc42b9f2c04756ccef9ffbc3bd88c049e362cb92a76995f70d696b6e",
+    "4969018at2759__3di_af__gamma__2-BFGS": "d42a450e8f43475276f37334870bab49e1dd5eb751d13c4001061aa648ade8a8",
+    "4969018at2759__3di_af__gamma__EM": "342a1d91bd6c1e27b96a36fe3548b6fb806b64e8d1408fc772491098145561e1",
+    "4969018at2759__3di_af__freerate__2-BFGS": "98658f6fdeea0b179ec3520deec1959c5d7f8df8370a2571ac8e0a1b71e80069",
+    "4969018at2759__3di_af__freerate__EM": "288a24c4f4e08f791b3083747d0f2689f03d74903e40b08fd7021ef7271302e3",
+    "4969018at2759__3di_af_empirical__gamma__2-BFGS": "732cf6a531ef286487a4df465a594e39e1e69c3e9c34fa95f3c9067d47fc7a0b",
+    "4969018at2759__3di_af_empirical__gamma__EM": "afa6cb940a013c4684f0b562c697faeb47eb39eadb153be2b9f789ba888a6e50",
+    "4969018at2759__3di_af_empirical__freerate__EM": "a8e7e57e3f60f0b175e9307403d3cd255747438a0a3ba834b3db8c1684f8f8de",
+    "4969018at2759__3di_af_empirical__freerate__2-BFGS": "97238c4056f8c231c8b31a8741a11fe6c76adba3d068047b976a068219e86541",
+    "4969018at2759__3di_llm__gamma__2-BFGS": "272fbda666aad8c3bf07068ceb39295d7be33033508549aa6ffa5e8fe57caab4",
+    "4969018at2759__3di_llm__gamma__EM": "40eecb7de6ffde9dd601559449b964a78c6d38779b074992556e42c82b406a8c",
+    "4969018at2759__3di_llm__freerate__EM": "208baa7fe2a9e61ac0167377ae0339132e64878404e325683ab904cd2199c3f7",
+    "4900375at2759__3di_llm__freerate__EM": "cd54a97e8eae00ed1f46894376fea4d51904e76917945ce454f70ca8d7f707a3",
+    "4969018at2759__3di_llm__freerate__2-BFGS": "9303c8138f4e5bd397c13c9999720f248ab76d9d4367407641662d294e06fa4e",
+    "5004118at2759__3di_af_empirical__gamma__2-BFGS": "aecbac4827ab08ddabac946a0e61951a58ec0fb134f1204723603eca9fed7d8b",
+    "5004118at2759__3di_af_empirical__freerate__2-BFGS": "b5f50481be359fa1b1304022cac438ba892df7f53a3a1c956b1bbaf4097bde9e",
+    "5004118at2759__3di_af_empirical__freerate__EM": "27f9718ade11399386fc10d0b7ef093cca1c8953c246667e7b587d0ff5dd286b",
+    "5004118at2759__3di_af_empirical__gamma__EM": "9f95dc1db6945e2bf43c5ecf907a06421e0f1b211263076efa4bffaff32bc279",
+    "4900375at2759__3di_llm__freerate__2-BFGS": "c8470ddcb7e30b38e14ec434c22e7f8233854f42fad0e5748790a7e743d45e21",
+    "5005750at2759__3di_af_empirical__freerate__EM": "ba3048a02839bfc6e9b2a867f55c96d1ac0828bb026c4aa2106e33219c90ecb3",
+    "5005750at2759__3di_af_empirical__gamma__2-BFGS": "3df0d50abaa21d113e5f02be8ea88263e9f7268b84353d0f40b7da4d618db08b",
+    "5005750at2759__3di_af_empirical__freerate__2-BFGS": "01df7e749555d00213a2f2100e6f490f0a59e33e3db5bbcd18557db4978ec4b8",
+    "541070at2759__aa__gamma__2-BFGS": "4e4c6579adaddad80404fd709d896627a72c346fde05130fb9ca8664a98da184",
+    "541070at2759__aa__freerate__2-BFGS": "95e12617ae44bc3ee5b16815f1923da38720af32b669324f9968d4eead2f6ea3",
+    "541070at2759__aa__freerate__EM": "3a3598059a962151bd77f432f5bb54786d4c5d8cbdf6b8d81444373b9737d23f",
+    "5005750at2759__3di_af_empirical__gamma__EM": "7b2454756e9629c1a0e4b3b2a983f6d22e8bf1ab96d0d36a7c8ba7c5aab06afd",
+    "541070at2759__aa__gamma__EM": "a1acad2f247d3c98b5ca1a4df87250177f351499d909b6ce04855ac956a2069d"
+  },
+  "interpretation": "Diagnostic refits of every FreeRate fit more than 0.1 log units below Gamma. Two starting points from reported category weights/rates and corresponding fitted trees; floor rounded zero rates at 1e-6 and normalize. Starts approximate printed estimates, not exact parameter replay. Both EM and 2-BFGS optimize from supplied values at epsilon 1e-6; no topology search. No automatic replacement or calibrated inference."
+}

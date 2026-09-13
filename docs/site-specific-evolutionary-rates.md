@@ -107,7 +107,7 @@ retains lower FreeRate likelihoods as optimization diagnostics. Tied ranks
 were checked against SciPy; constant-vector cases remain unavailable. A negative
 test correctly rejected Gamma output supplied as the FreeRate input before
 creating output. The full comparison and readback are now complete; seven optimization
-diagnostics remain unresolved, as described below. Category numbers are not matched across
+diagnostics were investigated in separate refits, as described below. Category numbers are not matched across
 models, and relative site multipliers are not absolute evolutionary rates.
 
 ```bash
@@ -147,3 +147,46 @@ diagnostics requiring investigation before likelihood-based interpretation.
 No flagged fit was silently replaced or removed. No model selection or
 acceleration test is claimed. Full summaries, receipts and readback are tracked
 under `metadata/esmfold_freerate_*` and `metadata/esmfold_rate_heterogeneity_*`.
+
+
+### Seven likelihood discrepancies investigated
+
+All 28 diagnostic refits completed: each flagged source fit was run from both
+its Gamma and its original FreeRate category/branch estimates, using EM and
+2-BFGS with likelihood epsilon 1e-6. Initial categories came from printed
+reports; weights and weighted rates were normalized, and rounded zero rates
+were floored at 1e-6. Thus these are reproducible approximate starts, not exact
+parameter replay.
+
+The pinned [v3.0.1 FreeRate source](https://github.com/iqtree/iqtree3/blob/d89ce077a639f5c812a10a52c022456b4e10b23a/model/ratefree.cpp)
+and [command parser](https://github.com/iqtree/iqtree3/blob/d89ce077a639f5c812a10a52c022456b4e10b23a/utils/tools.cpp)
+confirm that `-optfromgiven` allows optimization of supplied category parameters
+and `-optalg` selects the optimization algorithm. Without `-optfromgiven`,
+explicit category values would fix parameters. The executable stayed pinned at
+3.0.1; reviewed source commit and downloaded-file hashes are recorded in
+`metadata/iqtree_freerate_source_review.json`.
+
+All 28 outputs passed audit of hashes, full initialization/optimizer grid,
+model identity and parameter counts, fixed topology, 6,348 site-rate entries,
+category bounds and printed-precision site-likelihood accounting. Matching
+parameter counts confirm the supplied categories were not treated as fixed.
+The best of four diagnostic fits exceeds Gamma for all seven source cases,
+by 1.5582–20.7888 log units. The original worst case improved by 38.1536 log
+units relative to its original FreeRate fit. These results support an
+initialization/optimizer explanation for the observed lower likelihoods.
+
+Original fits and the original full comparison remain immutable. The diagnostic
+best-fit table is separate and has not silently replaced seven rows in the
+full sensitivity output. Selecting the best observed fit does not establish
+global optimality; unflagged original fits may also benefit from more thorough
+optimization. A consistently optimized full sensitivity comparison remains
+outstanding. No biological model selection follows from this diagnostic.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/refit_flagged_freerate_models.py --comparison results/phylogeny/paired-rate-heterogeneity-esmfold-v1 --gamma results/phylogeny/paired-site-rates-esmfold-v2 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --output results/phylogeny/freerate-optimization-diagnostics-esmfold-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_freerate_optimization.py --diagnostics results/phylogeny/freerate-optimization-diagnostics-esmfold-v1 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --output results/phylogeny/freerate-optimization-audit-esmfold-v1
+```
+
+Resource planning allowed four single-thread workers, 8 GB RAM, 1 GB disk and
+0.05–2 hours on the existing host. Full outputs stay outside Git; configuration,
+source review, receipts and all diagnostic summaries are in `metadata/`.

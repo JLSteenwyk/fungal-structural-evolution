@@ -1552,3 +1552,14 @@ likelihoods than Gamma (largest decrease 17.3648 log units). These remain
 explicit unresolved optimization diagnostics; no likelihood-based selection,
 acceleration or model-adequacy conclusion is made. Other major jobs and the
 full research goal remain incomplete.
+
+
+### Lower FreeRate likelihoods traced to optimization sensitivity
+
+Reviewed the pinned IQ-TREE3 source and ran 28 explicit-start diagnostic fits
+for all seven flagged cases. All outputs and 6,348 rate entries passed full
+audit. Every case has a diagnostic likelihood above Gamma; the original worst
+case improved by 38.1536 log units. This supports initialization/optimizer
+sensitivity, not a biological reversal. Original outputs remain preserved and
+the diagnostic best-fit table is separate. Consistent full-run optimization,
+updated sensitivity inference and the broader research goal remain outstanding.
