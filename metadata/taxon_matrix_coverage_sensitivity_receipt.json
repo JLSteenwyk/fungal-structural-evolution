@@ -1,0 +1,63 @@
+{
+  "status": "complete_full_taxon_matrix_coverage_sensitivity",
+  "taxa": 526,
+  "profile_columns": 49027,
+  "mafft_columns": 63750,
+  "threshold_summaries": [
+    {
+      "minimum_fraction_threshold": 0.1,
+      "taxa_retained": 522,
+      "roles_retained": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "entire_groups_lost": []
+    },
+    {
+      "minimum_fraction_threshold": 0.3,
+      "taxa_retained": 507,
+      "roles_retained": {
+        "ingroup": 484,
+        "outgroup": 23
+      },
+      "entire_groups_lost": [
+        "Olpidiomycota"
+      ]
+    },
+    {
+      "minimum_fraction_threshold": 0.5,
+      "taxa_retained": 495,
+      "roles_retained": {
+        "ingroup": 472,
+        "outgroup": 23
+      },
+      "entire_groups_lost": [
+        "Microsporidia",
+        "Olpidiomycota"
+      ]
+    },
+    {
+      "minimum_fraction_threshold": 0.7,
+      "taxa_retained": 472,
+      "roles_retained": {
+        "ingroup": 452,
+        "outgroup": 20
+      },
+      "entire_groups_lost": [
+        "Microsporidia",
+        "Olpidiomycota",
+        "Sanchytriomycota"
+      ]
+    }
+  ],
+  "profile_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "mafft_receipt_sha256": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+  "copy_audit_receipt_sha256": "e8d7dff8d2b4a0d097a00cb7471aec3fc3c7fcc08d9f0fe67b4d295432d1f7a7",
+  "script_sha256": "518eb5c7b7ec070646984cc6a2d5c0889ee218bc23955d4bbe0160f9ef812262",
+  "interpretation": "Direct canonical-residue counts verified in both complete matrices. Thresholds 10/30/50/70 percent are descriptive taxon-sensitivity definitions, not calibrated reliability thresholds or final exclusion decisions. Different alignment scopes have different denominators. No production taxon is removed, no filtered tree inferred, and passing coverage does not establish correct placement. Lost groups are descriptive manifest bins, not equal taxonomic ranks.",
+  "artifacts": {
+    "lineage_sensitivity.tsv": "d00dbcb156665dfa335ac69c0f1a3511a35fb4c0b6b6e4e777237f9274974040",
+    "taxon_matrix_coverage.tsv": "c0be70f8630acca4452f4ba14c1bcb3f7d7049019ad3a35f98549886229bd160",
+    "coverage_sensitivity_membership.tsv": "57e0ce81f8a88d9422dff1c90760ed7935f93f0a9e5c95aab34b702cdb9705c3"
+  }
+}

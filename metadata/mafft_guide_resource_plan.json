@@ -1,0 +1,23 @@
+{
+  "status": "prelaunch_full_mafft_guide",
+  "taxa": 526,
+  "markers": 125,
+  "columns": 63750,
+  "threads": 16,
+  "memory_limit_gb": 32,
+  "planning_disk_gb": 5,
+  "planning_runtime_hours": [
+    4,
+    24
+  ],
+  "runtime_basis": "Profile-matrix guide is still running after approximately 4.4 hours; MAFFT retains 1.30 times as many columns. Runtime is uncertain and tree-search dependent.",
+  "host_check": "192 logical CPUs; load average approximately 145 and approximately 898 GiB available RAM before launch. Added 16 CPU threads; no GPU use.",
+  "input_receipt_sha256": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+  "profile_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "source_artifact_validation": "All matrix receipt artifacts verified; 526 unique taxa identical across alignments; every sequence has the recorded matrix length.",
+  "model": "LG+F+G4",
+  "seed": 20260913,
+  "output": "results/phylogeny/initial-mafft-guide-v1",
+  "cost": "Existing authorized host, no new paid resources",
+  "interpretation": "Full-taxon alignment-method sensitivity guide, not a supported final species tree. Different retained alignment scopes are part of the comparison; support, richer models, taxon sensitivity and gene-tree discordance remain required."
+}

@@ -87,3 +87,40 @@ python scripts/audit_marker_tree_support.py --trees results/phylogeny/marker-gen
 ```
 
 The default requires completion of all expected markers. `--allow-incomplete` produces a diagnostic snapshot with explicit pending marker IDs, never a final species-tree dataset. The first snapshot covers 3/125 markers: 1,422 internal branches, 1,390 with reported support and 32 without. IQ-TREE logs also record identical input sequences; missing-support branches must be assessed in that context without assuming all missing values share one cause. Full branch records remain outside Git, while summary tables and receipts are versioned. Tests verify root-representation invariance, taxon-universe identity, missing-versus-zero support and invalid branch/support rejection.
+
+## Full-matrix alignment sensitivity tree execution
+
+The full **526-taxon, 63,750-column MAFFT matrix** has now entered its own IQ-TREE guide search, using the same LG+F+G4 model, seed 20260913, 16 threads and 32 GB memory limit as the profile-based guide. All artifacts in both matrix receipts passed checksum validation; their exact 526 unique taxa agree and every sequence has its declared matrix length. This independent tree search advances alignment-method sensitivity across the complete design.
+
+```bash
+python scripts/run_initial_species_tree.py \
+  --matrix results/phylogeny/mafft-matrix-50-v1 \
+  --output results/phylogeny/initial-mafft-guide-v1
+```
+
+The prelaunch estimate allows 4–24 hours and 5 GB output space on the existing host, with uncertain tree-search runtime. IQ-TREE's actual initialization estimates 20,661 MB RAM, within the limit, and has entered likelihood optimization. It reports 31 sequences with more than 50% gaps/ambiguity and nominal composition-test failures for all 526 sequences. Those flags reinforce the requirement for compositional/model sensitivity; they are not automatic taxon exclusions or calibrated evidence that a particular topology is wrong. The homogeneous-model guide has no bootstrap support and is not a final species tree. Configurations and resource evidence: `metadata/mafft_guide_run_config.json` and `metadata/mafft_guide_resource_plan.json`. The guide's terminal receipt and subsequent topology/support comparison remain pending.
+
+## Full-sampling taxon-coverage sensitivity definitions
+
+A direct readback of both matrices reproduces the recorded unambiguous amino-acid counts for every taxon. The audit joins the raw single-copy, duplicated, fragmented and missing marker counts so that sparse matrix occupancy is not equated with poor overall genome completeness. The threshold is applied to the fraction of unambiguous sites in **both** matrices; these matrices have different alignment scopes and denominators.
+
+| Minimum coverage in both matrices | Fungal entries retained | Outgroups retained | Manifest groups entirely lost |
+| --- | ---: | ---: | --- |
+| 10% | 499 | 23 | None |
+| 30% | 484 | 23 | Olpidiomycota |
+| 50% | 472 | 23 | Microsporidia; Olpidiomycota |
+| 70% | 452 | 20 | Microsporidia; Olpidiomycota; Sanchytriomycota |
+
+These are explicit sensitivity definitions, **not calibrated reliability thresholds or final filtering decisions**. The production matrices and ongoing full-taxon guides retain all 526 taxa. The table shows why more aggressive filtering cannot silently replace the broad sampling design. Manifest bins have different taxonomic ranks.
+
+Four taxa fall below 10% in both alignments: Amoeboaphelidium protococcarum F1243177 (164 profile / 204 MAFFT unambiguous sites; one single-copy and 119 duplicated markers), Pirum gemmata OFS5426506 (1,224 / 1,715 sites; seven single-copy markers), Abeoforma whisleri OFS5426458 (1,804 / 2,272; seven single-copy markers), and Cryoendolithus antarcticus F1507870 (4,203 / 5,765; 15 single-copy and 110 duplicated markers). Presence in a tree does not establish reliable placement. The high-duplication taxa need gene-copy/assembly review; the sparse outgroups need marker/placement sensitivity and appropriate family-specific inclusion.
+
+```bash
+python scripts/assess_taxon_phylogenetic_coverage.py \
+  --profile results/phylogeny/profile-matrix-50-v1 \
+  --mafft results/phylogeny/mafft-matrix-50-v1 \
+  --copies results/qc/busco-gene-copies-v1 \
+  --output results/phylogeny/taxon-coverage-sensitivity-v1
+```
+
+All source artifacts, exact taxon membership, matrix length/alphabet, per-taxon counts and output hashes were checked. The output includes a complete 526-taxon table and explicit threshold membership for each taxon. No filtered tree has yet been inferred, so these tables alone do not establish topology sensitivity. Versioned summaries are `metadata/taxon_matrix_coverage.tsv`, `metadata/taxon_filter_lineage_sensitivity.tsv` and `metadata/taxon_matrix_coverage_sensitivity_receipt.json`.

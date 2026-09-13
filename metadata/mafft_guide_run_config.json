@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+    "-s",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/matrix.faa",
+    "-st",
+    "AA",
+    "-m",
+    "LG+F+G4",
+    "-T",
+    "16",
+    "--mem",
+    "32G",
+    "--seed",
+    "20260913",
+    "--prefix",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/initial-mafft-guide-v1/guide"
+  ],
+  "version": "IQ-TREE version 3.0.1 for Linux x86 64-bit built May  5 2025\nDeveloped by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren\nContributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,\nOlga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt\n\n",
+  "input_sha256": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+  "purpose": "Initial unpartitioned homogeneous-model guide; support, mixture/partition models, discordance and sampling sensitivity remain required."
+}
