@@ -840,3 +840,28 @@ matrix and eligibility criteria. Resource plan:
 `metadata/esmfold_ecology_paired_input_resource_plan.json`. Final usable markers,
 taxon coverage and matched ecological contrasts remain pending; full-chain
 qualified counts are not counts of retained alignment observations.
+
+
+## Integrating completed ESMFold cohorts
+
+The three frozen mapping cohorts contain 10,048 disjoint full sequences/models:
+5,121 earlier, 4,252 follow-on and 675 ecology models. Their checkpoint, inference
+script and model source, software packages, seed, precision, recycling, batch
+size and length limit match. Only the input receipt and physical GPU identifier
+differ. Matching settings do not prove absence of batch effects.
+
+`scripts/merge_local_structure_inventories.py` verifies these settings, every
+model's provenance and coordinate hash, and rejects overlapping sequences/models.
+The combined immutable inventory preserves all original per-model configuration
+hashes and artifact paths. Every emitted inventory object was also compared to
+its source object with exact semantic agreement. Receipt:
+`metadata/esmfold_combined_inventory_receipt.json`; inventory:
+`results/structures/esmfold-combined-frozen-v1/inventory.jsonl`.
+
+Full-panel remapping is now running using the existing mapper and fixed profile
+matrix. The plan allows one CPU, 8 GiB memory, 5 GiB output and 0.1–4 hours on the
+existing host (`metadata/esmfold_combined_mapping_resource_plan.json`). This uses
+the completed frozen portion of the earlier prediction run; that run continues
+independently. Combined mapping/qualified-encoding linkage and re-evaluated
+paired-marker eligibility remain pending. No new predictions or coordinate
+averaging occur in this integration.

@@ -1,0 +1,64 @@
+{
+  "status": "complete_disjoint_same_method_inventory_union",
+  "models": 10048,
+  "source_cohorts": [
+    {
+      "mapping": "results/structural_markers/esmfold-partial-v1",
+      "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+      "inventory_sha256": "dacbfbe7a25b473e30c110a5adcf530e2706bcf1b58e20874af342c1b9365cea",
+      "models": 5121,
+      "prediction_config": "results/predictions/esmfold-marker-v1/config.json",
+      "prediction_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+      "visible_gpu": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+      "input_receipt_sha256": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+      "inventory_sha256": "5054e0c59fd502bfa117de6dedd45b19ea5706021a0237d87670451d5033f7be",
+      "models": 4252,
+      "prediction_config": "results/predictions/esmfold-followon-v1/config.json",
+      "prediction_config_sha256": "63884b870ac421fd504bfd1b9232671373f12b2989735558122e61735a2c8c68",
+      "visible_gpu": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+      "input_receipt_sha256": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+      "inventory_sha256": "57c7f743a0f8274352e340f93f06c3c09a9dc3722ea4f81b88a2bf82cd0c7c0a",
+      "models": 675,
+      "prediction_config": "results/predictions/esmfold-ecology-v1/config.json",
+      "prediction_config_sha256": "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7",
+      "visible_gpu": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+      "input_receipt_sha256": "209fc201a9751317ea48da64e480a29d2b93ec0d4546f1907581cfa1f9f51b0f"
+    }
+  ],
+  "shared_inference_settings": {
+    "script_sha256": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+    "checkpoint_receipt_sha256": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "python": "3.12.13",
+    "packages": {
+      "torch": "2.6.0+cu126",
+      "transformers": "4.57.6",
+      "numpy": "2.4.6",
+      "safetensors": "0.7.0"
+    },
+    "modeling_source_sha256": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+    "cuda_runtime": "12.6",
+    "gpu": "NVIDIA RTX 6000 Ada Generation",
+    "seed": 20260913,
+    "dtype": "ESM stem float16, folding trunk and heads float32; no autocast; TF32 disabled",
+    "attention_chunk_size": 64,
+    "num_recycles_argument": null,
+    "expected_trunk_passes": 4,
+    "batch_size": 1,
+    "max_length": 512,
+    "plddt_conversion": "Transformers categorical_lddt returns 0..1; multiply by 100 for PDB and CA metadata",
+    "mode": "eval; torch.inference_mode; full single-chain sequence; no MSA; no template; no relaxation"
+  },
+  "script_sha256": "a7283f0c2e0d0252fc4c3c1c0bce37aea61823b8577ddbb95d9fa17aac00e28c",
+  "artifacts": {
+    "inventory.jsonl": "2495c6fb846dd033311bb877e6e911a96f1391d8236212f7320675daf81b5c57"
+  },
+  "scope": "All frozen model identities, provenance and coordinate hashes verified; no overlapping sequences or models. Only input receipt and physical GPU identity differ between configurations. No coordinate averaging or prediction rerun. Remapping, combined qualified encodings and paired inference inputs remain separate; matching settings do not prove absence of batch effects."
+}

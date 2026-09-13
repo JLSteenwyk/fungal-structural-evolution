@@ -1954,3 +1954,12 @@ counts matched actual emitted FASTA identities. ESMFold coverage is distributed
 across batches: a descriptive same-method union gives 16 common markers across
 five Amanita taxa and 26 across three Cenococcum comparison taxa. Proper cohort
 integration and evolutionary tests remain pending; these are availability counts.
+
+
+Combined the three completed ESMFold inventories: all 10,048 sequence/model
+identities are disjoint, inference settings match apart from input receipts and
+physical GPU identifiers, and all coordinate hashes/provenance passed. Every
+emitted inventory object matches its original source exactly. Started full-panel
+remapping against the fixed profile matrix; combined qualified encodings and
+re-evaluated paired alignments remain pending. The earlier full prediction queue
+continues independently; integration uses its frozen audited subset.
