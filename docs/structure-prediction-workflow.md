@@ -543,3 +543,22 @@ process was observed. All 125 profile receipts were compared to the completed
 profile collection before pinning. Resource allowance is one CPU thread, 8 GB
 memory, 10 GB output headroom and 0.1–8 hours of unmeasured planning runtime on
 the existing host. Mapping results are not yet available.
+
+
+## Full follow-on conversion completed; residue mapping running
+
+All 4,252 audited follow-on models were converted to sequence-explicit mmCIF.
+The conversion controller exited successfully. Independent inventory readback
+matched all sequence identities to the full audit, matched every inventory model
+row to its provenance row, and checked all converted-coordinate and original
+prediction-receipt hashes. Atom-field preservation uses the converter's existing
+roundtrip checks; this later identity readback does not independently reimplement
+conversion. Receipts: `metadata/esmfold_followon_full_conversion_receipt.json`,
+`metadata/esmfold_followon_snapshot_handoff_receipt.json` and
+`metadata/esmfold_followon_conversion_identity_readback.json`.
+
+The queued residue mapper launched automatically and was observed live (PID
+175824), using the complete local inventory and all existing marker alignments.
+Launch: `metadata/esmfold_followon_mapping_launch.json`. Mapping results,
+independent residue readback and confidence-qualified native features remain
+pending. Converted models alone do not establish additional evolutionary signal.

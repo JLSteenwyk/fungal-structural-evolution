@@ -1759,3 +1759,11 @@ pins passed readback. Controller session 78949 is live waiting for conversion
 controller 3228696. Mapping, residue readback and PAE/native qualification remain
 pending. See metadata/esmfold_followon_mapping_controller_config.json and the
 structure-prediction workflow.
+
+
+Full follow-on conversion completed and controller session 77902 exited zero.
+All 4,252 inventory/provenance identities, converted-coordinate hashes and original
+prediction-receipt hashes passed independent readback. The residue mapper launched
+successfully (PID 175824 under controller 4137875/session 78949). Mapping and
+subsequent residue/PAE/native-feature checks remain pending. Completion and launch
+receipts are versioned in metadata/esmfold_followon_*.

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/map_marker_structures.py",
+    "--inventory",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structures/esmfold-followon-complete-v1/inventory.jsonl",
+    "--provider",
+    "local",
+    "--tool",
+    "ESMFold v1",
+    "--output",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_markers/esmfold-followon-complete-v1"
+  ],
+  "config_sha256": "d809fe5db3e8a2671f7c43ef519ef5e69098c8da5ad1f5f1150c22ecd8dbee85",
+  "predecessor_receipt_sha256": "9461d654fdb79011ca7d6e589f5d53f793710b804334060a463716bab7e507b9",
+  "conversion_receipt_sha256": "98b6deac879c040f8bfdf2b6f4a16ff8872a00b78cd973454fbd5bdbf3ed4972",
+  "unix_time": 1789327533.8643103,
+  "resource_plan": {
+    "cpu_threads": 1,
+    "memory_allowance_gb": 8,
+    "output_headroom_bytes": 10000000000,
+    "planning_runtime_hours": [
+      0.1,
+      8
+    ],
+    "basis": "Existing full-marker mapping implementation, 4252 short models; conservative allowance on existing host, no GPU or paid resources."
+  }
+}
