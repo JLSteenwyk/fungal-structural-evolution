@@ -1,0 +1,20 @@
+{
+  "status": "prelaunch_full_ncbi_cds_acquisition",
+  "ncbi_taxa": 519,
+  "other_source_taxa": 7,
+  "workers": 2,
+  "planning_additional_disk_gb": 50,
+  "planning_runtime_hours": [
+    0.5,
+    8
+  ],
+  "planning_basis": "Approximately 5.9 million raw proteins and billions of coding bases; compressed CDS storage plus headers and two active temporary downloads. Exact publisher sizes vary; 50 GB is a conservative allowance, not measured size.",
+  "free_disk_bytes": 12546747490304,
+  "memory_policy": "Stream compressed downloads and one CDS record at a time; retain record IDs per taxon for uniqueness checks. Two workers.",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "output": "data/cds",
+  "event_log": "data/raw/cds_downloads.jsonl",
+  "completion_receipt": "metadata/cds_download_receipts.json",
+  "cost": "Public NCBI files and existing authorized host; no new charges",
+  "purpose": "Assembly-matched coding sequence acquisition for later translation, codon alignment and selection feasibility checks; acquisition alone does not establish suitability."
+}

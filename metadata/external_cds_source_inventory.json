@@ -1,0 +1,90 @@
+{
+  "status": "complete_external_cds_source_inventory_not_complete_extraction",
+  "taxa": [
+    {
+      "taxon_id": "F2109901",
+      "species_name": "Amoeboradix gromovi",
+      "status": "available_previously_translation_verified_subset",
+      "source_url": "",
+      "translation_scope": "Exact translation for retained derived CDS; source audit exceptions remain excluded and explicit",
+      "source_exception_counts": {
+        "exact_translation": 7220
+      },
+      "path": "results/sanchytrid_coordinates/F2109901.verified_cds.fna",
+      "sha256": "e3d145fcbe835a0d9e26c8cd4aed546ceeed47b4b0a12589838d72a34f750c8e",
+      "cds_records": 7220,
+      "nucleotide_bases": 7112790
+    },
+    {
+      "taxon_id": "F2020955",
+      "species_name": "Sanchytrium tribonematis",
+      "status": "available_previously_translation_verified_subset",
+      "source_url": "",
+      "translation_scope": "Exact translation for retained derived CDS; source audit exceptions remain excluded and explicit",
+      "source_exception_counts": {
+        "exact_translation": 9367,
+        "coordinates_out_of_bounds": 1
+      },
+      "path": "results/sanchytrid_coordinates/F2020955.verified_cds.fna",
+      "sha256": "68f1a9723341178af92557e63021cb19d2cff7dc426c4cf5f572a152bcb7875d",
+      "cds_records": 9367,
+      "nucleotide_bases": 8811039
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "species_name": "Corallochytrium limacisporum",
+      "status": "available_published_cds_translation_pending",
+      "source_url": "https://ndownloader.figshare.com/files/9362473",
+      "translation_scope": "Translation and protein identifier correspondence still require validation",
+      "path": "data/external/5426470/Clim_long.cds.fasta",
+      "sha256": "1fb12aaf2c912030e2b4a6cca4c9850ee3b8a2d7941f81e80e76d0a066b15ba1",
+      "cds_records": 7535,
+      "nucleotide_bases": 11987523
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "species_name": "Chromosphaera perkinsii",
+      "status": "available_published_cds_translation_pending",
+      "source_url": "https://ndownloader.figshare.com/files/9362515",
+      "translation_scope": "Translation and protein identifier correspondence still require validation",
+      "path": "data/external/5426494/Nk52_long.cds.fasta",
+      "sha256": "d3ee95b478e7a6429e44617615579c5d02a2448ed8bcd2a19425fd3eff700820",
+      "cds_records": 12463,
+      "nucleotide_bases": 20285517
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "species_name": "Pirum gemmata",
+      "status": "available_published_cds_translation_pending",
+      "source_url": "https://ndownloader.figshare.com/files/9362536",
+      "translation_scope": "Translation and protein identifier correspondence still require validation",
+      "path": "data/external/5426506/Pgem_long.cds.fasta",
+      "sha256": "bfe0b1c1c0d4ca1a583b40628121bac5402e01437f80dd4cdf7a27f338b8639b",
+      "cds_records": 21835,
+      "nucleotide_bases": 10819296
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "species_name": "Abeoforma whisleri",
+      "status": "available_published_cds_translation_pending",
+      "source_url": "https://ndownloader.figshare.com/files/9362437",
+      "translation_scope": "Translation and protein identifier correspondence still require validation",
+      "path": "data/external/5426458/Awhi_long.cds.fasta",
+      "sha256": "1bbe57e7e0b9010459bf033917b68d3edd29517797d207776783655ea9117012",
+      "cds_records": 17283,
+      "nucleotide_bases": 10021538
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "species_name": "Creolimax fragrantissima",
+      "status": "annotation_guided_extraction_pending",
+      "source_url": "",
+      "translation_scope": "No ready CDS FASTA recorded; use deposited genome and exact annotation with strand/phase validation"
+    }
+  ],
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "external_source_receipt_sha256": "ef4f46dd5f3c003ccf414eca3662f3b92cbf3dea0d98b3b8047cd3d550388fac",
+  "derived_cds_receipt_sha256": "0c9afb8731f80adcb0ff4cc8eb3e9fbbf4f56feb5fe24b9adca17c869da53343",
+  "script_sha256": "51f8ff8eca42df3ecd2d3fad0c04ea24913534a4f4147fa77cf7edea2dba30e1",
+  "interpretation": "Available source hashes, unique FASTA identifiers and DNA alphabet checked. Published CDS availability does not establish exact translation, orthology or codon-model suitability. Pending extraction remains explicit; no taxon removed."
+}

@@ -59,3 +59,5 @@ The expanded source-specific catalog now contains 13,153 GDM models linked to 13
 A [full-sampling gene-copy annotation audit](docs/gene-isoform-mapping.md#full-sampling-busco-copy-annotation-audit) separates 312 raw duplicated BUSCO calls attributable to one annotated gene’s multiple products from 1,989 calls spanning multiple annotated genes and four unresolved calls. Biological duplication, assembly redundancy and contamination remain to be assessed.
 
 Both full-taxon alignment strategies now have guide-tree searches running. A [taxon-coverage sensitivity audit](docs/phylogenetic-workflow.md#full-sampling-taxon-coverage-sensitivity-definitions) shows that a 50% coverage filter would eliminate all sampled Microsporidia and Olpidiomycota; the production design retains all 526 taxa. Supported trees and filtered-tree comparisons remain pending.
+
+[Assembly-matched coding-sequence acquisition](docs/coding-sequence-workflow.md) is running for the 519 NCBI-backed taxa. Six external CDS sources are available, with Creolimax extraction pending. Translation/codon validation and selection tests remain to be completed.

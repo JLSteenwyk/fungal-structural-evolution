@@ -103,3 +103,6 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 
 - `followon_prediction_input_receipt.json`: runner-compatible inputs for the disjoint additional candidate set, with frozen new reuse checks and all taxon–marker links preserved. Preparation is not prediction completion.
 - `followon_prediction_resource_receipt.json` and `followon_prediction_runtime_bins.tsv`: observed-length-bin inference timing scenarios for the 4,252 short/canonical follow-on candidates. Quantile-based sums are not confidence intervals; long proteins and whole-atlas runtime are not covered.
+
+- `cds_acquisition_resource_plan.json`: full 519-taxon NCBI CDS acquisition envelope; not a completion receipt. `cds_download_receipts.json` is produced when the running batch ends and preserves failures/pending taxa.
+- `external_cds_source_inventory.json`: all seven external-source taxa, six available checksum-verified CDS sources and the Creolimax extraction gap. Published sources remain distinct from previously translation-validated subsets; availability is not selection eligibility.

@@ -246,3 +246,9 @@ Completed a second immutable marker-tree support audit: 12/125 trees, 5,742 inte
 Prepared a runner-compatible queue of all 7,799 additional missing-model sequences, retaining 7,895 links across 156 taxa and excluding every original candidate. Checked current verified AFDB models and existing local predictions; no overlap required reuse at this snapshot. There are 4,252 short/canonical candidates and 3,547 explicitly deferred by length/alphabet. Input hashes and disjointness passed independent readback.
 
 A projection from 3,640 frozen prediction receipts stratified by sequence length estimates 8.23 inference GPU-hours for the short follow-on queue, with a 16.77-hour scheduling allowance. This is preparation, not an additional GPU launch. The active ESMFold run remains on its original queue; fresh reuse and GPU checks precede the next execution. Expanded coordinate audit, confidence retrieval and phylogenetic/orthology/domain jobs continue.
+
+## Assembly-matched coding sequences started
+
+Started checksum-validated CDS acquisition for all 519 NCBI-backed taxa after recording a two-worker resource envelope. Every URL matches its protein assembly directory/prefix. Early downloads pass publisher MD5, local SHA256, gzip, identifier and DNA-alphabet checks; non-triplet, ambiguous and unlinked records remain explicit. Three focused tests passed. The producer is running and the completed 519-taxon receipt is not yet available.
+
+Separately verified the CDS source inventory for all seven external taxa. Four published CDS FASTAs are present and checksum-valid, two sanchytrid translated/extracted subsets remain available with their original exception records, and Creolimax extraction is pending. This advances selection-analysis inputs; translation/codon validation and selection tests remain incomplete. See coding-sequence-workflow.md and metadata/external_cds_source_inventory.json.
