@@ -56,3 +56,14 @@ or assembly limitations; duplicated markers do not alone establish biological
 duplication, contamination or ploidy. Subsequent interpretation must retain
 lineage coverage, input conventions and these uncertainties, without uniform
 automatic thresholds.
+
+## Dataset verification completed and batch started
+
+All six archives passed publisher checksums and extracted-file verification.
+Marker counts are fungi 1,019; ascomycota 2,557; basidiomycota 1,811;
+chytridiomycota 1,300; microsporidia 514; mucoromycota 1,541. The complete
+file-hash manifest remains in `data/busco-lineage-qc-v1/receipt.json`, pinned by
+its checksum in `metadata/lineage_busco_dataset_collection_receipt.json`.
+The full 501-job batch is now running; its first jobs completed successfully.
+Exact assignments and launch configuration are versioned. Final comparative
+QC results remain pending.

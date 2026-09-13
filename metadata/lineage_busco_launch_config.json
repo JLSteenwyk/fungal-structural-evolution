@@ -1,0 +1,23 @@
+{
+  "dataset_receipt_sha256": "b4761d5a6b27ea2258b106d01143ec1eff74aaea3819a49c660b4ae7de4a0818",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "input_receipts_sha256": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+  "script_sha256": "1907fe14d4df4177dc5d12bc8b8cb02a38e0c4a8e940a36492f1b61d4e02b3f9",
+  "busco_executable_sha256": "1f6bd9c2caea56df5fe81ee3536f64c5513c5fd070bee60dd59e387d54ba4625",
+  "version": "BUSCO 6.1.0",
+  "workers": 4,
+  "threads_per_job": 4,
+  "mode": "proteins",
+  "offline": true,
+  "selection": {
+    "Ascomycota": "ascomycota_odb12.2",
+    "Basidiomycota": "basidiomycota_odb12.2",
+    "Chytridiomycota": "chytridiomycota_odb12.2",
+    "Microsporidia": "microsporidia_odb12.2",
+    "Mucoromycota": "mucoromycota_odb12.2"
+  },
+  "fallback": "fungi_odb12.2",
+  "taxa": 526,
+  "ingroup_jobs": 501,
+  "interpretation": "Complementary lineage-panel QC. Broad scores retained, outgroups not tested against fungal panels; no automatic filtering or contamination/ploidy inference."
+}

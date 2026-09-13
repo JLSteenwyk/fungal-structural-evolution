@@ -1,0 +1,136 @@
+{
+  "status": "complete_pinned_lineage_busco_dataset_collection",
+  "publisher_index_sha256": "c2615b6ec8b7a65d70ab5c995180e16d5d8b9898b8ff69e620cddb8e9e7f91f5",
+  "script_sha256": "d040cd4371e9b406a7d8e08dce892cccce06781629ee4c6e6d508285c12edad5",
+  "interpretation": "Explicit taxonomic QC panels from the same OrthoDB release. Dataset recovery percentages have different marker denominators and are not interchangeable completeness measurements.",
+  "source_receipt_path": "data/busco-lineage-qc-v1/receipt.json",
+  "source_receipt_sha256": "b4761d5a6b27ea2258b106d01143ec1eff74aaea3819a49c660b4ae7de4a0818",
+  "datasets": [
+    {
+      "dataset": "fungi_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/fungi_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "402c2efcc56ac17bce6c891d7b4d8aa7",
+      "archive_sha256": "e92722279c82da92fe07075563dc1b8e404b0f15b242b0781f2ed260f8a55532",
+      "archive_bytes": 995155984,
+      "path": "data/busco-lineage-qc-v1/fungi_odb12.2",
+      "config": {
+        "name": "fungi_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "1019",
+        "number_of_species": "136",
+        "ncbi_taxid": "4751",
+        "max_intron": "60000",
+        "max_seq_len": "100000",
+        "species": "aspergillus_nidulans",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    },
+    {
+      "dataset": "ascomycota_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/ascomycota_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "523ea0ca03d2d56580206a7f753ecc07",
+      "archive_sha256": "2692de67458d1f0e14b521c22bbf0e043659a8130bf2d01cc5bb9614d549345e",
+      "archive_bytes": 1669088161,
+      "path": "data/busco-lineage-qc-v1/ascomycota_odb12.2",
+      "config": {
+        "name": "ascomycota_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "2557",
+        "number_of_species": "102",
+        "ncbi_taxid": "4890",
+        "max_intron": "60000",
+        "max_seq_len": "70000",
+        "species": "aspergillus_nidulans",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    },
+    {
+      "dataset": "basidiomycota_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/basidiomycota_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "7153be08b7ab78b1b85d3efa97a65fd1",
+      "archive_sha256": "6cfd4f1d57a0d6214f38057320056a0fec96a4ce6c4e2575db0c2f9123ff08c3",
+      "archive_bytes": 463610602,
+      "path": "data/busco-lineage-qc-v1/basidiomycota_odb12.2",
+      "config": {
+        "name": "basidiomycota_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "1811",
+        "number_of_species": "75",
+        "ncbi_taxid": "5204",
+        "max_intron": "60000",
+        "max_seq_len": "100000",
+        "species": "cryptococcus",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    },
+    {
+      "dataset": "chytridiomycota_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/chytridiomycota_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "1407ffc6d8285d0dfb2d948725dee6f4",
+      "archive_sha256": "512672cc85af5af7f0a50d2f93d7187af2c895366300aa95c932fdef170993ff",
+      "archive_bytes": 123174624,
+      "path": "data/busco-lineage-qc-v1/chytridiomycota_odb12.2",
+      "config": {
+        "name": "chytridiomycota_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "1300",
+        "number_of_species": "50",
+        "ncbi_taxid": "4761",
+        "max_intron": "60000",
+        "max_seq_len": "70000",
+        "species": "aspergillus_nidulans",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    },
+    {
+      "dataset": "microsporidia_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/microsporidia_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "23529599254adc0fd5d68627ea45eaeb",
+      "archive_sha256": "ed711842b52e6b2c26cf223eb61e757ab32aeb706709e3eebc44aff25c5ab95d",
+      "archive_bytes": 32386070,
+      "path": "data/busco-lineage-qc-v1/microsporidia_odb12.2",
+      "config": {
+        "name": "microsporidia_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "514",
+        "number_of_species": "28",
+        "ncbi_taxid": "6029",
+        "max_intron": "60000",
+        "max_seq_len": "70000",
+        "species": "aspergillus_nidulans",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    },
+    {
+      "dataset": "mucoromycota_odb12.2",
+      "url": "https://busco-data.ezlab.org/v5/data/lineages/mucoromycota_odb12.2.2026-05-13.tar.gz",
+      "publisher_md5": "b50e7a56dad825b5693c87121aae09cb",
+      "archive_sha256": "8e082e81589949b81c3946b51479cd73049055c0915724316d07ba7d7246fe94",
+      "archive_bytes": 161001703,
+      "path": "data/busco-lineage-qc-v1/mucoromycota_odb12.2",
+      "config": {
+        "name": "mucoromycota_odb12.2",
+        "domain": "eukaryota",
+        "creation_date": "2026-05-13",
+        "number_of_BUSCOs": "1541",
+        "number_of_species": "78",
+        "ncbi_taxid": "1913637",
+        "max_intron": "60000",
+        "max_seq_len": "70000",
+        "species": "aspergillus_nidulans",
+        "OrthoDB_version": "12.2",
+        "dataset_version": "01"
+      }
+    }
+  ]
+}

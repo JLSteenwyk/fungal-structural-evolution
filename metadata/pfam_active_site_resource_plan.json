@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_pfam_active_site_projection",
+  "families": 173,
+  "domain_hits": 10570,
+  "unique_proteins": 8961,
+  "workers": 2,
+  "threads_per_alignment": 1,
+  "planning_memory_gb": 8,
+  "planning_output_gb": 2,
+  "planning_runtime_hours": [
+    0.05,
+    4
+  ],
+  "free_disk_bytes": 12511033339904,
+  "basis": "Extract only matched active-site profiles from pinned Pfam release; realign significant hit segments and map annotated HMM positions back to full protein coordinates. Keep mismatches, gaps and overlap ambiguity explicit.",
+  "cost": "Existing host CPU; no new charges"
+}

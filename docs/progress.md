@@ -644,3 +644,21 @@ and per-taxon QC remain incomplete; no lineage-specific completeness results
 are claimed yet. See `docs/lineage-completeness-workflow.md`. The preceding goal
 turn made progress by recovering the failed orthology family and launching
 exhaustive local geometry; the full research objective remains active.
+
+### Functional-site projection completed; lineage QC executing
+
+Completed Pfam active-site projection for 10,570 hits in 8,961 marker proteins
+across 173 families. Preserved 19,429 reference-pattern/site rows, including gaps,
+substitutions and overlap ambiguity. The conservative candidate screen yields
+5,251 distinct positions in 3,503 proteins across 94 families. All 15,704 mapped
+positions passed full-protein readback, and whole-pattern/candidate statuses
+were independently recomputed. Three focused tests pass. These are candidate
+functional correspondences, not validated catalytic sites or evolutionary tests.
+Structural and phylogenetic joins remain pending.
+
+All six lineage-BUSCO datasets finished checksum and file verification, and the
+501-entry batch has started producing successful per-taxon results. Dataset
+marker counts, exact assignments and launch configuration are now versioned.
+The previous goal turn advanced the executable lineage-QC pipeline; this turn
+completes functional-site mapping and validates the transition to QC execution.
+The overall research goal remains active and incomplete.
