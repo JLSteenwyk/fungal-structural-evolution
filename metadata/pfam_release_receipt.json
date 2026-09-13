@@ -1,0 +1,446 @@
+{
+  "release": "38.2",
+  "families": 30134,
+  "version_text": "Pfam release       : 38.2\nPfam-A families    : 30134\nDate               : 2026-01\nBased on UniProtKB : 2025_03\n",
+  "publisher_checksums_sha256": "c4a4918552332c8093030578b52eb580c4dd2d940e5acc7fe3da44b1290f1c2d",
+  "retrieved_utc": "2026-09-13T04:42:00.276927+00:00",
+  "files": [
+    {
+      "file": "Pfam-A.hmm.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/Pfam-A.hmm.gz",
+      "md5": "7ab3c4e215d0daaea3004e37c4e24f8a",
+      "sha256": "2d82087b6c5c60d762cc767f98e8260b273134c215ab7efccf7440614a4e5dab",
+      "compressed_bytes": 418160514,
+      "uncompressed_file": "Pfam-A.hmm",
+      "uncompressed_sha256": "4b0da6399b97d2b23329de82190b2e5705bde1dea4cb2d028a52712d5966739e",
+      "uncompressed_bytes": 2246909846
+    },
+    {
+      "file": "Pfam-A.hmm.dat.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/Pfam-A.hmm.dat.gz",
+      "md5": "aab364689372b1846e8e880976e7f750",
+      "sha256": "3ccab9388f5da87508791c98659aae776ac09886dcf8c7ab80c0bf9f02152803",
+      "compressed_bytes": 782046,
+      "uncompressed_file": "Pfam-A.hmm.dat",
+      "uncompressed_sha256": "ead9a40cdb871e1e6ceb151ea15c7aeaff083add2558031b4811afb9d7496b2d",
+      "uncompressed_bytes": 4855750
+    },
+    {
+      "file": "Pfam-A.clans.tsv.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/Pfam-A.clans.tsv.gz",
+      "md5": "a70eeffcd8105ff094ea5834456d8bab",
+      "sha256": "86062b7ef1a0e0caee0c28cef479ac0d294c80789c51cbf75e513b368ce3a6f6",
+      "compressed_bytes": 553777,
+      "uncompressed_file": "Pfam-A.clans.tsv",
+      "uncompressed_sha256": "e85aa48dfb63057d27bedfbbb82df8281f4791822d184288bd3ea0aaec22b870",
+      "uncompressed_bytes": 1797190
+    },
+    {
+      "file": "Pfam.version.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/Pfam.version.gz",
+      "md5": "6c7beb9426eb0b1075e778c20b842b24",
+      "sha256": "32dc24a5fd256ade6930bbcbcc9e30035e435025b0574e4a7fe110b7f433e2c1",
+      "compressed_bytes": 114,
+      "uncompressed_file": "Pfam.version",
+      "uncompressed_sha256": "e2c1998265efc77bee006c7b8e9863e511ff34d0b336e7d62ecf3486061121ad",
+      "uncompressed_bytes": 111
+    },
+    {
+      "file": "active_site.dat.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam38.2/active_site.dat.gz",
+      "md5": "f4161ba78f969238177654b32dbee4a2",
+      "sha256": "c89062ff5463222b439517407eba665949dbb1324bb1febe96ff68032f8e764d",
+      "compressed_bytes": 13156,
+      "uncompressed_file": "active_site.dat",
+      "uncompressed_sha256": "9453b5d132cf5dd2b04e70594a1a92d6755a7850f4412574a14a98c1b82cfc08",
+      "uncompressed_bytes": 29344
+    }
+  ],
+  "chunks": [
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-000.hmm",
+      "sha256": "405ff11d6d96813a6a5ab4c8cc251a14819dcd8abb92d3f9d6be48391704eb6f",
+      "profiles": 487,
+      "profile_match_states": 74337
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-001.hmm",
+      "sha256": "d6bed978932363160e197bfad28e094e79ac8b0a7af7ad13f67f164fcd3c2e66",
+      "profiles": 464,
+      "profile_match_states": 74471
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-002.hmm",
+      "sha256": "856f2a4ba7cf924661dee2ec2d31a23e7ab8e18417644789f1b077260ab3f226",
+      "profiles": 472,
+      "profile_match_states": 74205
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-003.hmm",
+      "sha256": "d144b18e84ef2814f8474ddd7f05cdcc15d2fe32d2cd75d8deed2c372825f060",
+      "profiles": 483,
+      "profile_match_states": 74282
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-004.hmm",
+      "sha256": "360a33387e478b03d3a348fc10b1059b8fc517ed0d3822f29c538325554bb42f",
+      "profiles": 467,
+      "profile_match_states": 74279
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-005.hmm",
+      "sha256": "45d20b2796f17b61c8d39a0498a55472df7b1970e46316a19f5df702147faf92",
+      "profiles": 488,
+      "profile_match_states": 74186
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-006.hmm",
+      "sha256": "fafd8d9de78d812c9d7cf8d72d58ed9b26ff8a3cc9e50993d9d12f84d9db5448",
+      "profiles": 470,
+      "profile_match_states": 74214
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-007.hmm",
+      "sha256": "41685c2b101a60abee4cb6d6f3bd1d6a4eac5815951cf27538d89e5e8c232083",
+      "profiles": 470,
+      "profile_match_states": 74230
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-008.hmm",
+      "sha256": "83033a659c590abe9848e070a626680d2c29496286533166de5c52dfc8ecc426",
+      "profiles": 498,
+      "profile_match_states": 74245
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-009.hmm",
+      "sha256": "c9342c33dd0ee929efc11f0f7a8d912a9177e8b5a74ef0eb9083826f6ce59ff3",
+      "profiles": 450,
+      "profile_match_states": 74246
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-010.hmm",
+      "sha256": "86bc035d02c512e1e2c792e72d6a4909f5dadd4f04a6471b5c19ab0c2d98d630",
+      "profiles": 499,
+      "profile_match_states": 74273
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-011.hmm",
+      "sha256": "8e5a0a8bdd664da6810820fd4cbb18ccd425aa2b5b43a0fd70c538415e6fd286",
+      "profiles": 494,
+      "profile_match_states": 74192
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-012.hmm",
+      "sha256": "ac2caf6a0c04b668175ebffa92c5ea139e56c85a580db5ef4c5988a626ddba76",
+      "profiles": 456,
+      "profile_match_states": 74885
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-013.hmm",
+      "sha256": "56de04f3ea7f9a1b07f0fde9dde30126fc68cabbf2a99ec382110ecbb35cae8e",
+      "profiles": 483,
+      "profile_match_states": 74311
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-014.hmm",
+      "sha256": "24f3026696bdddfa09ad65fd663e2e0817ca1b0e232a09d202e7ef01ff352f11",
+      "profiles": 469,
+      "profile_match_states": 74340
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-015.hmm",
+      "sha256": "130d23b1c0cde7fdf97d7cf23399fc7ffac9d7edf2d8bf80b73d69f5242149fd",
+      "profiles": 462,
+      "profile_match_states": 74226
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-016.hmm",
+      "sha256": "6af392e9f7b6572326fa7e7da975740ccb6fe07abce9d7586683fe7cfa48831d",
+      "profiles": 473,
+      "profile_match_states": 74742
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-017.hmm",
+      "sha256": "f7db39c780531146ef1db39a8153b7b812bf2a00cc19d062fa114f01d1a30444",
+      "profiles": 454,
+      "profile_match_states": 74193
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-018.hmm",
+      "sha256": "37055fcae32f986d0dca0e1fd2f871d426a1f13016c0968019a5c8f724fac028",
+      "profiles": 487,
+      "profile_match_states": 74323
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-019.hmm",
+      "sha256": "5bcead16b619e0b016d248485c48fc00caf53d3972e27f77fc430212c054f249",
+      "profiles": 465,
+      "profile_match_states": 74187
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-020.hmm",
+      "sha256": "3fec4a7ed4fbffcd37d105f7ed10c5aba5e4e28818899f06416b61f3b7211f50",
+      "profiles": 442,
+      "profile_match_states": 74261
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-021.hmm",
+      "sha256": "828e348ebe9a2ee2c92d6da7430d1600fc3ee7a075a329571a8c9fbe9bf5ed50",
+      "profiles": 462,
+      "profile_match_states": 74352
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-022.hmm",
+      "sha256": "f299a3fcabf313a1a71c15b6138691c21319bbbf2aa97633407ebef59d0db071",
+      "profiles": 482,
+      "profile_match_states": 74348
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-023.hmm",
+      "sha256": "3465de8aa7088982d2aaed42c5d451b87613b5b26f8357753f461268610dc7a2",
+      "profiles": 450,
+      "profile_match_states": 74200
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-024.hmm",
+      "sha256": "66e9b84a7a899b0020e5e9d2e329f3ad342e87260433d05924e7821d6bf0df3c",
+      "profiles": 471,
+      "profile_match_states": 74287
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-025.hmm",
+      "sha256": "c20e38f5122de839027db6b26ef12693b095da8d863dea0b05fad8dc8da37c25",
+      "profiles": 487,
+      "profile_match_states": 74183
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-026.hmm",
+      "sha256": "fe0c206e9a91c8638a969f0e18092fedf2cbe0804d60726b99cb38568e81d1fe",
+      "profiles": 502,
+      "profile_match_states": 74254
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-027.hmm",
+      "sha256": "3ad4c5263dced8eb60b09261fe183717393b02263f0bdf3f1736ecc4e788b3d0",
+      "profiles": 473,
+      "profile_match_states": 74188
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-028.hmm",
+      "sha256": "f4ad2e508234c935d5552399f673c645230ef682582d192b1784dd20340fc847",
+      "profiles": 475,
+      "profile_match_states": 74186
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-029.hmm",
+      "sha256": "ae187704181878d33fa61e042dd037e36d199ee495ca53805dd287a199a46330",
+      "profiles": 437,
+      "profile_match_states": 74356
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-030.hmm",
+      "sha256": "d5a1b9b15de5747193f87f12afc99fc25cad25b36fdd48a5d85b4012d236b8e8",
+      "profiles": 459,
+      "profile_match_states": 74229
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-031.hmm",
+      "sha256": "9fec7c90e238357c58ca673d5af71a7b128f99c7ce83b4ddff74b5d5e897b2f1",
+      "profiles": 472,
+      "profile_match_states": 74184
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-032.hmm",
+      "sha256": "4814a743f1de11d4459729e12fbf1644b1a7f3d2fcc8c3757a033dce75b1d740",
+      "profiles": 462,
+      "profile_match_states": 74279
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-033.hmm",
+      "sha256": "084c5f880dfea9bd826d76f3d4812f1633a1b37c320ac2d2024e772e9395e361",
+      "profiles": 474,
+      "profile_match_states": 74225
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-034.hmm",
+      "sha256": "c156c8aba72f8329a13416525cc83b39a878e5e9853d8014c9442b598cbddeda",
+      "profiles": 458,
+      "profile_match_states": 74292
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-035.hmm",
+      "sha256": "bd54dd553eb34006e25fbb2017be055fc342e878624025b69138ea94bec76286",
+      "profiles": 454,
+      "profile_match_states": 74215
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-036.hmm",
+      "sha256": "11b22293bf246954442fe37f5705b5b3f2fe66e4b5a3e9b3d06c1596f4a608f0",
+      "profiles": 482,
+      "profile_match_states": 74239
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-037.hmm",
+      "sha256": "21384d0d1db487d5f9449acc441add0472947727f291bf52f5dffcbfa29a5632",
+      "profiles": 506,
+      "profile_match_states": 74260
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-038.hmm",
+      "sha256": "ab23f3927b7d7a8c0b39320cf875ee97352e800f34c59b214eec5b2677fba3c8",
+      "profiles": 461,
+      "profile_match_states": 74290
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-039.hmm",
+      "sha256": "a54677e5742966c10e08c9e68b75c395f66f8631b8b71e0aa5a5d1d129ae16f5",
+      "profiles": 472,
+      "profile_match_states": 74326
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-040.hmm",
+      "sha256": "3185225e4729b383ca12063e2b7e480c4f4179285df0753bce69e829f42fe374",
+      "profiles": 420,
+      "profile_match_states": 74363
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-041.hmm",
+      "sha256": "b81a1f13561c4639be2efb3a6a7ca53bd1a53c8753c8a7d4ed14da80e34d41fb",
+      "profiles": 509,
+      "profile_match_states": 74427
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-042.hmm",
+      "sha256": "ab44af19d3a30faa7dffbfe7952bb082b3ea657d9e19ccc67188ef417327e646",
+      "profiles": 441,
+      "profile_match_states": 74226
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-043.hmm",
+      "sha256": "55336a9bb733c1e1c5b19d54a5b3986f9aa5641243b129596326ad02062dd299",
+      "profiles": 471,
+      "profile_match_states": 74228
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-044.hmm",
+      "sha256": "74b15b6cf1bae9e872871283d5f12f0445468e8ff5943b999184f99ad1a9e30e",
+      "profiles": 484,
+      "profile_match_states": 74185
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-045.hmm",
+      "sha256": "aff6b4d39e59bde2aff4629814f604d8e22eb7d43f88193a57b0f2e5960b3869",
+      "profiles": 464,
+      "profile_match_states": 74322
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-046.hmm",
+      "sha256": "1fed196e15436b80503eaf77d867655e61a0f47ebae806608374cd5bd12feab4",
+      "profiles": 487,
+      "profile_match_states": 74192
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-047.hmm",
+      "sha256": "7f00690f2427326f17d52ab619659bd92df7ae1c83c5195bc0fa06388ff322c3",
+      "profiles": 438,
+      "profile_match_states": 74401
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-048.hmm",
+      "sha256": "450059bfdeb65b84c5e899fb8810d9fd74caea570571acb471005da102e48d82",
+      "profiles": 484,
+      "profile_match_states": 74206
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-049.hmm",
+      "sha256": "8565e1473c77a6de288f80982980a187ab123079ce2f57a6a7df83ffa8091b81",
+      "profiles": 487,
+      "profile_match_states": 74183
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-050.hmm",
+      "sha256": "7908d81c781347b86e974474c53d4ab39a6ac7c75329b1fc39adf1021a09981b",
+      "profiles": 490,
+      "profile_match_states": 74301
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-051.hmm",
+      "sha256": "2916b04dfb063161a446e3fd2c1a0d1beb00f84804c2a1ce02a1dd93f4c86e97",
+      "profiles": 480,
+      "profile_match_states": 74377
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-052.hmm",
+      "sha256": "134b7563d2644ac4bdd5b08febe8b642e9d7e7c84865f9286326d6e17e5770a8",
+      "profiles": 494,
+      "profile_match_states": 74265
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-053.hmm",
+      "sha256": "70b591032c88c4c7371e5c951d68935b62e897ca0a9b8c9703d43dca464a0a4e",
+      "profiles": 445,
+      "profile_match_states": 74210
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-054.hmm",
+      "sha256": "6e215db8903b830728ecf6f3887d1b7d98a81d1cdf7383e9d8710521d6c3bc97",
+      "profiles": 467,
+      "profile_match_states": 74446
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-055.hmm",
+      "sha256": "0c738a6b046bbbd3cbe6ae008448d7b9630e9bbedfb52a40459fc0f2531e2f06",
+      "profiles": 472,
+      "profile_match_states": 74191
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-056.hmm",
+      "sha256": "643cdef5682469be4cc877a7e80ad6ce892917834a4b3e4d3ef80b33bc51b972",
+      "profiles": 451,
+      "profile_match_states": 74263
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-057.hmm",
+      "sha256": "886eef06faf27618586b43a88b59b9db3650555affd9f3fc27bd636a205c630b",
+      "profiles": 471,
+      "profile_match_states": 74238
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-058.hmm",
+      "sha256": "1347bd9d0dbed01f5b6588ce2d7d8826a660b8550e318fed2b3b67ec7e76fe0e",
+      "profiles": 480,
+      "profile_match_states": 74202
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-059.hmm",
+      "sha256": "ff46abd9565c9d691801acb89dc1eb951d486450f69fb4d7b8f7164b25df427a",
+      "profiles": 466,
+      "profile_match_states": 74264
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-060.hmm",
+      "sha256": "a17647ff94ac948ec774121abfd625201ed5f5d14a5bab6defd52a47bf3eb47a",
+      "profiles": 464,
+      "profile_match_states": 74188
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-061.hmm",
+      "sha256": "894fd31a56d8ee7765718623d3947cbc6c8e841276b1e934e11a5dea8b719095",
+      "profiles": 486,
+      "profile_match_states": 74265
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-062.hmm",
+      "sha256": "91c11f0dc2a10c4998151be7e90a724dd43e88fdcf0c5462f5662c3f7538f1df",
+      "profiles": 457,
+      "profile_match_states": 74314
+    },
+    {
+      "path": "data/pfam/38.2/hmm_chunks/chunk-063.hmm",
+      "sha256": "8867782fb2d6fb23b8dcfc0a8496526f773317d75fc867ef72d9985cfa5b4557",
+      "profiles": 454,
+      "profile_match_states": 74287
+    }
+  ],
+  "script_sha256": "5de930c97989900c2287af5878e3de219a648a7f52b60e6e1f0b8ba8c7e12559"
+}

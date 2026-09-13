@@ -1,0 +1,11 @@
+{
+  "pfam_receipt_sha256": "63d5ff5665e12b2604b44a6331714cedc1c35f3c2758c71b9d00cfd995bc73ac",
+  "input_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "executable": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+  "executable_sha256": "b4f3d1d5308d3716c2bf0c307beec2b491d0dcf77df7e55fba40cc7c39add1dd",
+  "version": "# HMMER 3.4 (Aug 2023); http://hmmer.org/",
+  "workers": 4,
+  "hmmer_worker_threads_per_job": 2,
+  "thresholds": "Pfam sequence and domain gathering thresholds (--cut_ga)",
+  "search_direction": "hmmsearch: target=protein, query=Pfam model; E-values use unique marker-sequence database size"
+}
