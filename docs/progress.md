@@ -2195,3 +2195,14 @@ for n=4 despite ample requested memory; reported adjusted allocation ranges
 and full case-set evidence. No executable or live configuration was changed;
 other numerical warnings remain under review. This is a source/log explanation,
 not compiled-binary tracing or proof of model adequacy.
+
+
+Verified all 128 genetic-code entries and both code option names in the running
+HyPhy executable, then launched the full 1,655-case global MG94xREV/CF3x4
+queue with four one-CPU workers. Cases start when nucleotide-tree execution
+receipts become available. The corrected v2 run has 73 completed fits at the
+versioned observation; the initial seed-argument failure occurred before model
+execution and remains archived. Saved likelihood functions, JSON reports and
+logs support independent review. Full tree/fit audits, branch-component scaling,
+profile-interval behavior and biological eligibility are still pending. No LRT
+or positive-selection result is claimed.

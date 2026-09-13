@@ -495,3 +495,68 @@ with (root / 'warnings.tsv').open() as handle:
                if 'Too low -mem' in r['warning']}
 assert flagged == quartets and len(flagged) == 127
 ```
+
+
+## Full MG94 diagnostic execution
+
+The full 1,655-case information-screened queue is active in
+`results/cds/genus-mg94-diagnostics-v2`. Four one-CPU workers consume completed
+nucleotide-tree receipts as they become available. All 457 installed HyPhy files
+are checksum-verified at startup. The producer pins the executable, upstream
+`tests/hbltests/libv3/support/FitMG94.bf`, inputs, tree configuration and scripts.
+The full tree/support audit remains required before interpreting codon results;
+execution can proceed while that audit and the tree queue finish.
+
+Each case uses a fixed topology with internal support labels replaced by unique
+node names; root-independent splits are checked before and after export. HyPhy
+2.5.101 fits a global MG94xREV model with CF3x4 frequencies, one shared omega,
+and the upstream profile confidence interval. LRT is explicitly disabled.
+NCBI codes 1 and 12 map to `Universal` and `Alt-Yeast-Nuclear`. The executable
+passed all 128 codon-table assertions and both exact option-name assertions
+against Biopython's tables; the reusable test is
+`tests/hyphy_fungal_genetic_codes.bf`. This tests genetic-code interpretation,
+not model adequacy.
+
+The source exports synonymous and nonsynonymous substitution components per
+site. These must not be labeled conventional dS/dN per synonymous/nonsynonymous
+site without verifying the normalization. A shared-omega fit does not estimate
+branch-specific omega. Complete JSON, saved likelihood-function files and logs
+are retained for independent checks of tree identities, branch components,
+parameter estimates and profile-interval behavior. Gene-copy and genetic-code
+metadata are carried into each case configuration. Recombination, saturation,
+alignment sensitivity, topology uncertainty and selection eligibility remain
+unresolved by execution alone.
+
+Planning allowances are four workers, 2 GB memory per job, 20 GB output and
+2–168 hours on the existing host, with no new charges. Memory/runtime are
+planning estimates rather than enforced or measured bounds. A timestamped
+observation records 73 completed cases while the queue remains active. See
+`metadata/genus_mg94_{resource_plan,execution_config,execution_observation}.json`.
+
+The initial `v1` launch failed before loading the model because generic HBL
+assignments require the `ENV=` argument. Its logs are preserved. The corrected
+`v2` passes a deterministic per-case seed through `ENV=RANDOM_SEED=...;` and has
+confirmed completed fits. No failed attempt is counted as a biological result.
+The launch command is the argument interface of
+`scripts/run_genus_mg94_diagnostics.py`; exact per-case commands are preserved
+in each case's `config.json`. Do not launch a duplicate while active.
+
+
+For a fresh run on this host, supply the live nucleotide-tree producer PID and
+an unused output directory; the current producer PID was 2749871 at launch.
+The program verifies its identity and records process start ticks.
+
+```bash
+HYPHY_SOFTWARE_ROOT=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_genus_mg94_diagnostics.py \
+  --inputs results/cds/genus-codon-diagnostic-inputs-v1 \
+  --trees results/phylogeny/genus-codon-trees-v1 \
+  --information metadata/genus_codon_tree_information.tsv \
+  --resources metadata/genus_mg94_resource_plan.json \
+  --code-check metadata/hyphy_fungal_genetic_code_check.json \
+  --hyphy-install "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101-install" \
+  --hyphy-source "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101" \
+  --installed-manifest results/environments/hyphy-2.5.101-v1/installed_files.json \
+  --tree-producer-pid 2749871 \
+  --output results/cds/genus-mg94-diagnostics-v2
+```
