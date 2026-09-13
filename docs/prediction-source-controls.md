@@ -142,3 +142,37 @@ The coordinate-only production audit finished successfully for **all 13,153 mode
 Independent readback verified every one of the 13,153 encoding checksums, unique model/version counts, all summary totals and the producer script hash. The output occupies approximately 95 MB. The completion receipt is `metadata/expanded_coordinate_audit_receipt.json`; encodings and the per-model summary remain under `results/structural_alphabet/coordinate-gdm-expanded-v1`.
 
 These counts cover full-model residues, not just retained alignment sites. The receipt explicitly has no PAE parent, the coordinate-only NPZs omit `feature_max_pae`, and no joint pLDDT/PAE count is reported. Final mapping-bound PAE acquisition and `qualify_native_pae.py` remain required before rebuilding expanded matched AA/3Di phylogenetic inputs. Passing coordinate reconstruction is not experimental validation or an evolutionary acceleration result.
+
+## Dedicated AlphaFold–ESMFold controls prepared
+
+The first 4,895 completed local ESMFold receipts had no exact-sequence overlap
+with the frozen expanded GDM mapping: the production queue targets missing
+structures. A dedicated control input now contains 266 unique full proteins
+(78,593 residues), 270 marker/taxon links from 126 taxa, and 23 represented
+manifest lineage/role groups. All associated source identities are retained.
+
+Selection takes up to four sequences per study-role/manifest-lineage/128-residue
+length-bin/AlphaFold-mean-pLDDT-bin stratum. The confidence bins are below 70 and
+at least 70. Candidates must be canonical full sequences of at most 512 residues;
+salted SHA256 ranking makes selection deterministic. The union deduplicates
+sequences, while the selection table retains their potentially multiple strata.
+This is an availability- and length-limited predictor control, not a random
+sample of fungal proteins or an independent replicate for every taxon link.
+
+Reproduce with `python scripts/prepare_predictor_control_inputs.py --output
+ data/prediction_inputs/predictor-controls-v1` using a new output location if
+already present. Reference model metadata, candidate FASTA and full links remain
+in that input directory; compact receipts and selection/link tables are
+versioned under `metadata/predictor_control_*`. Readback checked every output
+hash, canonical sequence/hash identity, exact reference sequence universe and
+all 266 reference coordinate checksums.
+
+The control predictions have not launched. Based on 4,919 completed production
+receipts, length-bin median inference times imply 0.467 GPU hours; a twofold
+allowance plus ten minutes of startup gives a 1.10-hour planning envelope,
+with 24 GB GPU memory and 2 GB disk headroom. This is an extrapolation, not a
+completion guarantee. After the active missing-model production finishes,
+recheck GPU occupancy and use the same pinned predictor in a separate output
+directory. Exact-sequence geometry and confidence comparisons remain pending.
+Both methods derive structures from sequence; agreement alone cannot resolve
+shared training biases or replace experimental validation.

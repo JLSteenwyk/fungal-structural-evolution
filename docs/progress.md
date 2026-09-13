@@ -381,3 +381,14 @@ and two existing branch-correspondence tests pass. Structural branch estimates
 remain conditional on the sequence topology; branch intervals and topology
 sensitivity are separate analyses. Expanded fitting is not launched while
 confidence integration and paired-input preparation remain incomplete.
+
+## Dedicated predictor-control inputs completed
+
+Prepared 266 exact-sequence AlphaFold references for later ESMFold prediction,
+covering 126 taxa, 23 lineage/role groups and 78,593 residues. Selection balances
+available length/confidence strata within manifest groups; all source model and
+taxon/marker identities remain explicit. Output and coordinate hashes and
+sequence identities pass independent readback. Resource estimates use current
+production timings (0.467 GPU hours of median-bin inference, 1.10 hours with
+allowance). Prediction and geometry comparison are pending availability of the
+currently occupied authorized GPU; the missing-structure production continues.

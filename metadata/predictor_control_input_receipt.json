@@ -1,0 +1,22 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "purpose": "Independent-predictor exact-sequence controls within the full project; not a pilot or experimental accuracy benchmark.",
+  "source_mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "sequence_source_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "7106d0eac97fab5f5fea8288f36bbb23212b9c955b2602160f2aed05f834764c",
+  "prediction_candidates": 266,
+  "candidate_residues": 78593,
+  "candidate_taxa": 126,
+  "reference_models": 266,
+  "reference_marker_links": 270,
+  "represented_lineage_role_groups": 23,
+  "selection": "Up to four unique sequences per role/manifest-lineage/128-residue-length/AF mean pLDDT (<70,>=70) stratum, smallest salted SHA256 ranks. Canonical full proteins <=512 residues only. Union sequences once; retain every associated marker/taxon/model identity. Same sequence may represent multiple strata, not independent replications.",
+  "limitations": "Availability- and length-limited predictor sensitivity; no experimental reference. Both predictors use sequence, so agreement does not eliminate shared training or sequence-derived circularity. No ESMFold prediction or structural comparison completed by this stage.",
+  "artifacts": {
+    "candidates.faa": "af696b1c20eec879e98279c96779c9e7ebdf7b70fb320523c1f68736d65e8d27",
+    "reference_links.tsv": "309f561bba7f5b06a313369a6f8a159938cf8eee99b15a25d224c91bdab9a771",
+    "reference_models.json": "61bae870ba5b8d03259db7d04c9e4997e1914203702c66ef1dbc62ea524a62cd",
+    "selection_strata.tsv": "31c5f58a9e530ab0735f3e694ca91ca1b3469223404b20d6c20762ff2c3c1cd3"
+  }
+}

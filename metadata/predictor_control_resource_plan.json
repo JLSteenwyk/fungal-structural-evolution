@@ -1,0 +1,27 @@
+{
+  "status": "prepared_not_launched_gpu_occupied",
+  "candidate_sequences": 266,
+  "residues": 78593,
+  "length_bins_128": {
+    "4": 79,
+    "2": 79,
+    "3": 77,
+    "1": 31
+  },
+  "empirical_receipts": 4919,
+  "empirical_receipt_list_sha256": "234472aea9eca76be841158d6bbc05a331351a7b4f603963d132a15a0002b40e",
+  "empirical_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "median_inference_seconds_by_bin": {
+    "2": 1.7702342295087874,
+    "3": 4.367783956462517,
+    "4": 14.876389408484101,
+    "1": 0.92478006798774
+  },
+  "estimated_inference_gpu_hours": 0.4666863372657422,
+  "planning_gpu_hours_with_2x_allowance_and_10min_startup": 1.100039341198151,
+  "planning_peak_gpu_memory_gb": 24,
+  "planning_disk_gb": 2,
+  "gpu_policy": "One authorized GPU, batch one; await completion of the active marker production and recheck device occupancy before launching into a new output directory. No launch in this stage.",
+  "cost": "Existing authorized host; no new charges",
+  "input_receipt_sha256": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539"
+}
