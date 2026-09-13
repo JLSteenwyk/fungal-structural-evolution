@@ -47,3 +47,27 @@ been inferred from these subsets, so no topology robustness is claimed. The
 21 uncertain labels still need assembly-linked taxonomic work; subgenome-aware
 analyses of the hybrids remain a separate requirement before ordinary
 bifurcating reconciliation or selection analyses can include their copies.
+
+
+## Guide sensitivity execution
+
+All four prepared matrices are now submitted to `run_taxon_sensitivity_trees.py`:
+two concurrent trees, eight threads and 32 GB maximum memory each, LG+F+G4 and
+seed 20260913. These match the full guides' model/seed; thread counts differ.
+The resource envelope is 24–144 hours for the batch, based on observed ongoing
+full-guide searches, with 5 GB output headroom on the existing host. No extra
+support analysis is included here. IQ-TREE checkpoints support interrupted-run
+continuation with an unchanged configuration; completed artifact hashes are
+checked before reuse. Final tree validation requires exact expected tips and
+finite nonnegative branch lengths.
+
+The lineage-retention table shows no entire role/major-lineage group is removed
+by either policy. This does not imply unchanged within-lineage coverage or
+adequate marker information. The four guide fits are running, so their topology
+comparisons and robustness conclusions remain pending.
+
+```bash
+python scripts/run_taxon_sensitivity_trees.py \
+  --inputs results/phylogeny/taxon-identity-inputs-v1 \
+  --output results/phylogeny/taxon-identity-trees-v1
+```

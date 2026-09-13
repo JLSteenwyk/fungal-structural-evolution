@@ -767,3 +767,16 @@ readback; original data remain intact. These are unrun sensitivity inputs, not
 a changed sampling objective or accepted unique-species count. The previous
 turn scheduled ecology predictions; this turn adds assembly-linked evidence
 and executable taxon-sensitivity inputs. The full goal remains active.
+
+
+### Taxon-identity sensitivity guide trees executing
+
+Submitted all four profile/MAFFT and hybrid/uncertain-label sensitivity matrices
+to two concurrent eight-thread guide searches. Source hashes, resource envelope,
+model, seed and executable identity are pinned. Expected-tip and branch-validity
+checks gate completion; IQ-TREE checkpoints and verified complete-result reuse
+support recovery. The existing CPU host has sufficient observed capacity.
+Neither exclusion policy removes an entire role/major-lineage group, although
+within-group and marker coverage remain relevant. These are running homogeneous
+model guides, not supported final species trees. The preceding turn prepared
+these matrices; this turn begins their actual inference. Overall goal stays active.

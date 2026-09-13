@@ -1,0 +1,29 @@
+{
+  "status": "prelaunch_taxon_identity_tree_sensitivities",
+  "trees": 4,
+  "taxa": [
+    524,
+    503
+  ],
+  "alignment_columns": [
+    49027,
+    63750
+  ],
+  "workers": 2,
+  "threads_per_tree": 8,
+  "maximum_concurrent_threads": 16,
+  "memory_per_tree_gb": 32,
+  "planning_output_gb": 5,
+  "planning_batch_hours": [
+    24,
+    144
+  ],
+  "source_receipt_sha256": "17f5561257f8558fd1bcc214a1772fd5094db0b7db267a9d8ab8d7008849ca26",
+  "script_sha256": "1f0161734f03a87d2d42517d69599467b2fc7d465bfe6108b5e905e90b7b6b87",
+  "free_disk_bytes": 12506674573312,
+  "observed_available_memory_gb": 885,
+  "observed_host_load_average_1min": 120.5,
+  "host_logical_cpus": 192,
+  "basis": "Full 526-taxon 16-thread profile guide remained live after ~9h, with iteration-90 remaining-time estimate ~8h; MAFFT guide still optimizing. Four similarly sized trees at eight threads, two concurrent; broad planning envelope, not a deadline or convergence guarantee. Same LG+F+G4 and seed as original guides; no support analysis in this stage.",
+  "cost": "Existing authorized CPU host; no new charges"
+}
