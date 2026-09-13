@@ -205,3 +205,24 @@ These are candidate-marker branch fits conditional on selected sites and
 sequence topology. Gene-copy issues, model adequacy, topology and branch-length
 uncertainty, phylogenetic placement, geometry calibration and predictor
 circularity remain to be addressed before acceleration or selection claims.
+
+### Coverage depth across lineages
+
+![Paired lineage coverage and marker depth](figures/paired_lineage_coverage.svg)
+
+The expansion increases represented taxa from 105 to 322, but depth remains
+uneven. Of all 526 entries, 204 have no usable paired marker, 200 have 1–9,
+17 have 10–49 and 105 have at least 50. All members of the last category are
+Ascomycota. Thus the presence of 23 lineage/role groups does not establish
+balanced coverage or readiness for comparisons of rates across fungal phyla.
+The figure uses every lineage's complete manifest count as its denominator and
+retains zero-coverage groups. Thresholds summarize coverage, not statistical
+power or independent replication.
+
+Reproduce with `plot_paired_lineage_coverage.py --previous
+results/phylogeny/paired-lineage-coverage-v1 --expanded
+results/phylogeny/paired-lineage-coverage-expanded-v1 --output
+results/phylogeny/paired-lineage-figure-v1`, choosing a new output for reruns.
+SVG, PNG and PDF artifacts are available there; the PNG was visually inspected.
+Source table hashes, group/denominator equality and nonnegative depth partitions
+are checked. The figure receipt and an SVG copy are versioned.

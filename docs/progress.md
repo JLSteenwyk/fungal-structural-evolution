@@ -467,3 +467,13 @@ sequence-tree SH-aLRT and NNI-refined ultrafast-bootstrap support, and three
 structural models conditional on each AA topology. The first marker is in
 likelihood optimization. This begins expanded branch estimation; completion,
 uncertainty/model adequacy and biological interpretation remain pending.
+
+## Expanded lineage coverage figure completed
+
+Rendered and inspected the paired-coverage figure across all 27 lineage/role
+groups. Depth remains skewed: 204 entries have zero usable markers, 200 have
+1–9, 17 have 10–49 and 105 have at least 50; all of the last group are
+Ascomycota. This limits interpretation of broad group presence as sufficient
+cross-lineage information. The figure, reproducible script and source/artifact
+hashes are versioned. Ongoing acquisition and missing-model prediction remain
+necessary to improve depth outside the best-covered lineage.
