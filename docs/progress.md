@@ -3,7 +3,7 @@
 | Milestone | State | Completion evidence required |
 |---|---|---|
 | Local repository and original objective | Created | Git history and docs/objective.txt |
-| GitHub remote | Public origin configured; initial publication in progress | https://github.com/JLSteenwyk/fungal-structural-evolution |
+| GitHub remote | Published and public visibility verified via GitHub API | https://github.com/JLSteenwyk/fungal-structural-evolution |
 | Catalog discovery | NCBI fungal catalogs inventoried; additional sources pending | metadata/source_receipts.json and metadata/catalog_summary.json |
 | 500 fungi + 25 outgroups | Not selected | Reviewed manifest with coverage audit |
 | Data QC and structure inventory | Pending | Per-taxon reports and file checksums |
