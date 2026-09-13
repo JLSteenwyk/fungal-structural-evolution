@@ -346,3 +346,9 @@ All three selected Pfam profiles finished searching the 5,654,720 additional uni
 Combined focused and marker domain hits to recover 1,485 representative protein entries (1,434 unique sequences) across 524 taxa, preserving every taxon/gene identity. All exported sequence hashes/lengths, source artifacts and gene mappings passed validation. Two taxa have no candidate in this profile screen; no biological loss is inferred. The candidate union remains domain-defined, with varied domain-copy counts and eight unresolved/provisional gene mappings.
 
 All ten focal Aspergillus genomes contain both domain-hit types on distinct annotated genes, but the original marker selects one type in six taxa and the other in four. The 20-copy identity table is versioned. This identifies copy-sampling inconsistency as a concrete explanation to test before interpreting divergence as acceleration. Domain-matched family alignment, supported gene trees and reconciliation remain next steps.
+
+## Domain-matched family alignment completed; supported tree started
+
+Aligned 1,040 proteins from 512 taxa using two ordered, nonoverlapping TFIIB domains with at least 70-percent profile coverage each. The resulting 184-column matrix retains 445 excluded candidates with explicit hit-count/coverage/overlap reasons. Three focused tests passed. Independent readback verified every alignment/mapping cell and 175,699 source-matched non-gap residues.
+
+Started the full candidate-family IQ-TREE search with restricted model selection, SH-aLRT and NNI-refined ultrafast-bootstrap support (1,000 replicates each), four threads and 8 GB memory. The process entered likelihood optimization successfully. Full tree completion, repeat-specific sensitivity, duplication rooting and species-tree reconciliation remain pending; this is not a final species tree or selection result.

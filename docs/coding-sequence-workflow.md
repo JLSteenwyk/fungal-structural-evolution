@@ -260,3 +260,21 @@ Scedosporium apiospermum (F563466) and Abeoforma whisleri (OFS5426458) have no p
 All ten focal Aspergillus genomes contain **two candidates on distinct uniquely annotated genes**, one with a BRF1 hit and one without. In each genome exactly one of those candidates is the original marker 4986044at2759. The marker chooses the BRF1-hit type in six taxa and the other type in four, while both types are recovered in every focal genome. This makes inconsistent copy sampling a concrete competing explanation for the pooled marker divergence. It does not establish duplication timing, ortholog relationships or a domain gain/loss event; those require family trees and reconciliation.
 
 Versioned outputs include `metadata/tfiib_candidates_receipt.json`, `metadata/tfiib_candidate_protein_mapping.tsv`, `metadata/tfiib_candidate_taxon_coverage.tsv`, `metadata/tfiib_candidates_readback.json` and the 20 focal copies in `metadata/aspergillus_family_candidate_copies.tsv`. Full candidate FASTA and domain coordinates remain under `results/domains/tfiib-candidates-v1`.
+
+## Ordered domain-pair alignment and supported tree run
+
+The completed candidate screen selected proteins with exactly two nonoverlapping TFIIB GA hits, each covering at least 70 percent of PF00382.25. Domain count, overlap and coverage exceptions remain explicit; it does not choose the best two hits from a protein with additional copies. Of 1,485 candidates, **1,040 proteins from 512 taxa** enter the paired alignment; 386 have a different hit count, 58 fail the per-domain coverage threshold and one has overlapping hits.
+
+```bash
+python scripts/align_tfiib_repeat_pairs.py --output results/phylogeny/tfiib-domain-pairs-v1
+python -m unittest discover -s tests -p test_tfiib_pair_selection.py
+python scripts/run_tfiib_family_tree.py --output results/phylogeny/tfiib-domain-tree-v1
+```
+
+The two domain segments are ordered N-to-C, separately aligned against the same pinned HMM with HMMER 3.4, and concatenated as two 92-match-state blocks (**184 columns**). Full Stockholm alignments preserve every input domain residue. Every retained match-state residue maps explicitly to its original full-protein coordinate. Independent readback verified all 191,360 mapping cells and all 175,699 non-gap residues. Three focused tests cover positional ordering, refusal to choose two of three hits, overlap and insufficient coverage.
+
+This positional repeat correspondence is a working hypothesis; repeat-specific phylogenies, domain order and possible gene conversion require later sensitivity checks. It does not establish full-length orthology or a rooted duplication history. All excluded proteins remain in the candidate inventory.
+
+A supported unrooted gene-tree search is now running on the full 1,040-protein paired-domain alignment. IQ-TREE 3 uses restricted model selection among LG/WAG/JTT with empirical frequencies and gamma rates, 1,000 SH-aLRT replicates and 1,000 ultrafast-bootstrap replicates with NNI refinement; bootstrap trees are retained. Four threads and 8 GB memory are allocated with a prelaunch 0.25–8-hour scheduling allowance. Configuration, binary/input hashes and seed 20260913 are recorded. The controller accepts completed output only after checking all original tip identities, finite nonnegative branches and 1,000 bootstrap trees. Identical inputs or zero-length branches must not be interpreted as resolved duplication events. Checkpoint resume requires unchanged configuration and source hashes.
+
+Versioned evidence: `metadata/tfiib_domain_alignment_receipt.json`, `metadata/tfiib_domain_alignment_readback.json`, `metadata/tfiib_domain_pair_candidate_audit.tsv`, `metadata/tfiib_family_tree_run_config.json` and resource plans. Tree execution log: `results/phylogeny/tfiib-domain-tree-v1/stdout.log`. Tree completion, branch-support interpretation and species-tree reconciliation are not yet claimed.
