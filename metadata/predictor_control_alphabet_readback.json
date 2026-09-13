@@ -1,0 +1,30 @@
+{
+  "status": "complete_predictor_alphabet_comparison_readback",
+  "source_receipt_sha256": "1a56d6d26e6f347337b1df806b27e4fcdfabf7b1499f5e3c87316c8d49d71992",
+  "proteins": 266,
+  "comparison_rows": 3192,
+  "checks": [
+    "Complete sequence x confidence grid",
+    "Nested retained counts across thresholds",
+    "Partner-stratum count partitions",
+    "Mismatch fractions agree with counts",
+    "All 400 confusion-matrix cells sum to eligible residue and mismatch counts"
+  ],
+  "joint_plddt70_pae10_compared_proteins": 187,
+  "same_protein_cohort": {
+    "baseline_median_mismatch_fraction": 0.21481481481481482,
+    "filtered_median_mismatch_fraction": 0.14328358208955225,
+    "median_per_protein_change": -0.07096665826824558
+  },
+  "partner_strata": {
+    "same_partner": {
+      "proteins_with_context": 187,
+      "median_mismatch_fraction": 0.0658682634730539
+    },
+    "changed_partner": {
+      "proteins_with_context": 187,
+      "median_mismatch_fraction": 0.48148148148148145
+    }
+  },
+  "interpretation": "Descriptive predictor discrepancy, not biological evolution or accuracy. Same-protein cohort still changes retained residue sets; spatial partners are not independent causes."
+}

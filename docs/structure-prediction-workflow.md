@@ -312,3 +312,57 @@ The source comparison also passed an identity check using the AlphaFold
 snapshot on both sides: zero source-exclusive combinations, all 13,565
 combinations shared, and 322 represented taxa. Summary receipts and tables
 are versioned in metadata; raw structures and encodings remain outside Git.
+
+## Same-sequence structural-alphabet predictor control
+
+All 266 audited paired controls completed local mmCIF conversion, exact marker
+mapping (270 links; 57,699 aligned residues), native Foldseek extraction,
+coordinate reconstruction and directional PAE qualification. The comparison
+binds the local native provenance to the exact completed control inference
+configuration and requires identical full protein sequences to the selected
+AlphaFold references. It uses existing qualified AlphaFold encodings.
+
+`compare_predictor_alphabets.py` measures state disagreement at corresponding
+residue positions under 12 confidence combinations (six-residue pLDDT 0/70/90;
+context PAE unfiltered/5/10/15). Invalid native states are excluded. Descriptive
+protein summaries require at least 50 residues and half the full protein in
+both predictors. All 3,192 rows and the 400-cell state confusion matrix passed
+count and threshold-nesting checks; three focused unit tests cover invalid
+terminals, joint confidence, partner strata, sequence identity and coverage.
+
+At pLDDT 70 and PAE 10, 187/266 controls meet coverage; 79 are excluded. Median
+state disagreement is 0.14328 and median partner-change fraction is 0.18182.
+For these same 187 proteins, unfiltered median state disagreement is 0.21481;
+the median per-protein change after filtering is -0.07097. The retained residue
+sets still change, so this is not a fixed-site effect estimate.
+
+Within the filtered cohort, median state disagreement is 0.06587 for sites
+with the same spatial partner and 0.48148 for sites whose partner changes.
+These conditional descriptions do not establish that partner changes cause
+disagreement. The proteins were deliberately selected across confidence,
+length and lineage strata and are not a random estimate of the whole atlas.
+
+Identical amino-acid sequences can therefore yield appreciably different
+native structural states under these two predictors. This is a concrete
+source-effect control, not evolutionary substitution, experimental accuracy,
+or a universal noise floor. Pooling sources without sensitivity analyses could
+confound branch interpretation. The ongoing local and AlphaFold branch fits
+remain separate; leading results require matched-source and other controls.
+
+Outputs: `results/prediction_controls/alphabet-comparisons-v1`; versioned
+receipts and comparisons: `metadata/predictor_control_alphabet_*`.
+
+```bash
+python scripts/compare_predictor_alphabets.py \
+  --inputs data/prediction_inputs/predictor-controls-v1 \
+  --reference results/structural_alphabet/audited-gdm-expanded-v1 \
+  --local results/structural_alphabet/audited-esmfold-controls-v1 \
+  --output results/prediction_controls/alphabet-comparisons-v1
+python -m unittest discover -s tests -p test_predictor_alphabets.py
+```
+
+Upstream control encoding stages reuse `convert_esmfold_snapshot.py`,
+`map_marker_structures.py`, `export_local_marker_pae.py`,
+`extract_structural_alphabet.py`, `audit_3di_features.py` and
+`qualify_native_pae.py` with the corresponding `esmfold-controls-v1` paths.
+Their completed provenance receipts and prelaunch resource plan are versioned.

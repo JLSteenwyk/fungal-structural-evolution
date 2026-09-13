@@ -1,0 +1,26 @@
+{
+  "status": "complete_same_sequence_predictor_alphabet_comparison",
+  "proteins": 266,
+  "comparison_rows": 3192,
+  "source_receipts": {
+    "inputs": {
+      "path": "data/prediction_inputs/predictor-controls-v1",
+      "sha256": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539"
+    },
+    "reference": {
+      "path": "results/structural_alphabet/audited-gdm-expanded-v1",
+      "sha256": "78ee6c429a85f08d8de69d31e6e60a814086c895f16723c2ebda4e96afdd0a45"
+    },
+    "local": {
+      "path": "results/structural_alphabet/audited-esmfold-controls-v1",
+      "sha256": "e7cd43cbb96d0199b6df19606d396b127d7a0fb14fe36e53bba64fa5a158ad6b"
+    }
+  },
+  "script_sha256": "cbf6da0b270ddb17b8c027ca0f48761446f10af7edda4cda576d95a881ca8111",
+  "interpretation": "Same-sequence predictor disagreement, not evolutionary substitutions or experimental accuracy. Joint masks require valid native features and six-residue confidence in both models. PAE already represents maximum directional context error. Compared summaries require >=50 and >=half the full protein; cohort changes across thresholds. Partner changes can accompany state changes but are not established causes. No independence, significance or population calibration claim.",
+  "artifacts": {
+    "state_confusion_plddt70_pae10.tsv": "070597a7026adb639714d41935c563d7425f9477819079702186940ed1c6da0b",
+    "threshold_summary.tsv": "524aa8d3f9cc25f299df4b8d4a87009ac84bdfab6a9f01f1f4ae02cfefd862c5",
+    "protein_comparisons.tsv": "4f7aa2964ab7d7b6a50656c9d3fd07878582b681f2f75d6d80148773051420bf"
+  }
+}

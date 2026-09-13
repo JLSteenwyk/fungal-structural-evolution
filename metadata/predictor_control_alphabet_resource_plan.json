@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_predictor_control_structural_alphabet",
+  "models": 266,
+  "residues": 78593,
+  "max_length": 508,
+  "workers_conversion_mapping_audit": 1,
+  "native_extraction_threads": 4,
+  "memory_gb": 4,
+  "planning_output_gb": 3,
+  "planning_runtime_hours": [
+    0.05,
+    2
+  ],
+  "free_disk_bytes": 12522487902208,
+  "basis": "Reuse audited complete control predictions and existing AlphaFold native features. Convert, map, extract, reconstruct coordinates and qualify local PAE before comparing same-protein states. No new inference or network prediction.",
+  "cost": "Existing authorized host; no new charges"
+}

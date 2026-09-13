@@ -566,3 +566,20 @@ these counts are not completed branch tests or a fully sampled atlas.
 Both ESMFold production queues and the expanded supported paired fits remain
 active. Species/gene trees, orthology assignment and whole-proteome domain
 searches also continue. The overall project goal remains active and incomplete.
+
+### Local supported branch fits and predictor-alphabet control
+
+Started 288 fits across 72 local marker alignments (4–158 taxa; 73–422 sites):
+AA topology search with 1,000 SH-aLRT and 1,000 UFBoot replicates/NNI refinement,
+then three structural models on each fixed AA topology. Four single-thread
+workers, 2 GB per fit, existing host only. Resource estimate and launch
+configuration are versioned; outputs remain incomplete.
+
+Completed same-sequence structural-alphabet comparison for all 266 predictor
+controls. At joint six-residue pLDDT70/PAE10, 187 pass coverage and show median
+14.33% state disagreement and 18.18% spatial-partner changes. These are
+predictor effects on identical sequences, not evolutionary change. Unit tests
+and independent comparison-table/count readback passed. This result makes
+prediction-source sensitivity a material requirement for branch conclusions.
+The overall goal remains active; supported species trees, reconciliation,
+uncertainty and the full evolutionary analyses are not complete.

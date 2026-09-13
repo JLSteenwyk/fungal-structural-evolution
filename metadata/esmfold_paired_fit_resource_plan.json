@@ -1,0 +1,32 @@
+{
+  "status": "prelaunch_local_supported_paired_fits",
+  "markers": 72,
+  "fits": 288,
+  "taxa_range": [
+    4,
+    158
+  ],
+  "columns_range": [
+    73,
+    422
+  ],
+  "workers": 4,
+  "threads_per_fit": 1,
+  "memory_per_fit_gb": 2,
+  "planning_runtime_hours": [
+    1,
+    96
+  ],
+  "planning_output_gb": 10,
+  "free_disk_bytes": 12522519728128,
+  "input_receipt_sha256": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+  "model_receipt_sha256": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+  "producer_sha256": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+  "sequence_support": {
+    "sh_alrt": 1000,
+    "ultrafast_bootstrap": 1000,
+    "bootstrap_nni": true
+  },
+  "basis": "72 confidence-qualified local marker inputs. Four single-thread workers on the 192-thread host; current load approximately 102. Wide runtime envelope includes supported AA searches; three structural models use each fixed AA topology. Model adequacy and branch uncertainty remain separate.",
+  "cost": "Existing authorized CPU host; no new charges"
+}
