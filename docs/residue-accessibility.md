@@ -511,3 +511,20 @@ counts and 4.247% disagreement at 0.25 were confirmed. Receipt:
 `metadata/gdm_accessibility_normalization_full_readback.json`.
 Projection-to-raw-residue verification and controlled exposure/evolution modeling
 remain separate outstanding steps.
+
+
+## Completed AF projection readback and follow-on handoff
+
+The expanded AF projection now passes full raw-residue readback for all
+4,148,852 observed cells, including ASA, confidence, heavy-atom count, context,
+source residue mapping and paired AA/3Di identities. See
+`metadata/gdm_accessibility_projection_full_raw_readback.json`; reproduce with
+`scripts/readback_paired_accessibility_projection.py`. This resolves the
+previously recorded raw-projection gap; it does not independently compute ASA.
+
+The follow-on cohort passed its complete 4,252-model source audit and completed
+projection/normalization for 843,060 cells in 88 markers. Full emitted-row and
+normalization readbacks passed for every cell. The .25 classification differs for 36,292
+cells between Tien and Miller references; retain continuous values and both
+scales. This is normalization sensitivity, not evidence for evolutionary
+transitions or biological core/surface truth.

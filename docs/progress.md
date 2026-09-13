@@ -2032,3 +2032,20 @@ AA/3Di FASTAs, with exact values and complete observed-cell accounting. This
 closes the previously recorded raw-projection verification gap when it passes;
 it does not recompute ASA or establish experimental exposure. Execution remains
 pending. Follow-on audit/projection and ecology ASA acquisition continue.
+
+
+Full AF projected-accessibility readback passed: all 4,148,852 cells across 124
+markers, 13,066 models and 13,565 marker–taxon cells exactly match raw residue
+ASA/confidence/atom/context fields, source mapping and paired alignment identity.
+The complete observed grid has no duplicated, omitted or masked emitted cells.
+This completes the previously pending raw-projection check, without independently
+reintegrating ASA or validating biological exposure.
+
+Follow-on full accessibility audit passed for 4,252 models / 1,342,046 residues;
+all emitted audit-model identities, lengths and entry hashes independently match
+the source universe. Projection and normalization completed for 843,060 observed
+cells in 88 markers / 3,938 models. Tien normalization has zero values above one;
+Miller has 2,281 (unclipped). At threshold .25, 36,292 cells (4.3048%) differ
+between scale classifications. Full projected-row and normalization readbacks
+passed for every one of the 843,060 cells. Ecology projection/normalization is queued behind its exact live
+full-audit controller. Controlled evolutionary analyses remain pending.
