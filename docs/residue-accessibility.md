@@ -43,3 +43,40 @@ also passed checksum, full residue-grid, canonical sequence and total-area
 readback. This does not independently validate the entire surface calculation
 or establish numerical convergence for every protein. Sampling-resolution
 sensitivity and downstream evolutionary integration remain pending.
+
+## ESMFold coverage and numerical-resolution sensitivity
+
+The same unmodified producer now runs on the frozen local ESMFold snapshot:
+5,121 models, 1,183,341 residues, two CPU workers, 16 GB memory and 5 GB output
+planning. The broad forecast is 2–24 hours. All local input proteins are within
+the current 512-residue prediction limit. The first eight completed local tables
+passed independent hash, residue-grid, sequence and total-area readback. Local
+and AlphaFold outputs remain source-specific, and no cross-source averaging or
+new branch estimates are produced by this annotation stage.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/annotate_predicted_accessibility.py --snapshot results/structural_markers/esmfold-partial-v1 --output results/structural_annotations/accessibility-esmfold-v1 --workers 2 --points 960
+```
+
+Separate resolution assessments are now running on both snapshots. Selection
+uses two smallest salted model-ID hashes within fixed length bins: 1–128,
+129–256, 257–512, 513–1024 and >1024 residues. AlphaFold contributes ten models;
+ESMFold contributes six because its snapshot lacks proteins above 512 residues.
+Selection precedes and does not depend on measured surface area. Every chosen
+model is calculated at both 960 and 3,840 sphere points per atom, preserving
+paired residue identities and reporting median, 95th-percentile and maximum
+absolute per-residue area differences and whole-chain totals. The finer grid
+is a numerical comparator, not exact surface-area ground truth.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_accessibility_resolution.py --snapshot results/structural_markers/gdm-expanded-v1 --output results/structural_annotations/accessibility-resolution-gdm-v1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_accessibility_resolution.py --snapshot results/structural_markers/esmfold-partial-v1 --output results/structural_annotations/accessibility-resolution-esmfold-v1
+```
+
+These assessments use one CPU each, 16 GB total memory and 2 GB total output
+planning, with a 0.1–8 hour forecast reflecting length variation. They run on the
+existing host without new paid resources. Both are already active; do not
+launch duplicates. Their results will quantify sampling-resolution sensitivity
+on these selected proteins, not prove convergence or biological validity across
+the full atlas. Production annotation and evolutionary integration remain
+incomplete.

@@ -1,0 +1,25 @@
+{
+  "status": "prelaunch_accessibility_resolution_sensitivity",
+  "maximum_models_per_snapshot": 10,
+  "snapshots": [
+    "gdm-expanded-v1",
+    "esmfold-partial-v1"
+  ],
+  "workers_per_snapshot": 1,
+  "simultaneous_cpu_workers": 2,
+  "memory_gb_planning_total": 16,
+  "output_gb_planning_total": 2,
+  "wall_hours_planning_range": [
+    0.1,
+    8
+  ],
+  "sphere_points": [
+    960,
+    3840
+  ],
+  "selection": "Two models per fixed length bin using a salted deterministic hash, independent of output geometry. ESMFold has only <=512-residue bins.",
+  "estimate_basis": "First production proteins took several seconds at 960 points; higher resolution and long proteins can be substantially slower. Broad planning bound on existing host.",
+  "script_sha256": "2c40ae002c0757846917525b67444335474082e420fd6f054ec8b4e0c37a82cb",
+  "producer_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "cost": "Existing authorized CPUs; no paid resources"
+}

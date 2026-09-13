@@ -1029,3 +1029,15 @@ and the first eight completed tables passed sequence/grid/hash/area-sum readback
 The previous turn added the experimental benchmark figure; this turn starts
 residue annotation across the full frozen AlphaFold marker snapshot. Full CA
 mapping and other long-running stages continue. The full goal remains active.
+
+### Local accessibility annotation and resolution sensitivity started
+
+Extended the same residue-accessibility method to 5,121 frozen ESMFold models
+and 1.18 million residues using two CPU workers. Eight initial local outputs
+passed sequence/grid/hash/area-total checks. Started paired 960/3,840-point
+numerical-resolution assessments on ten predetermined AlphaFold and six ESMFold
+models, selected within fixed length strata independently of surface results.
+The previous turn initiated full frozen AlphaFold accessibility; this turn adds
+the second prediction source and numerical sensitivity. All stages remain
+partial until their completion receipts and subsequent audits pass. The full
+project goal remains active.

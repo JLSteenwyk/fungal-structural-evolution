@@ -1,0 +1,21 @@
+{
+  "status": "prelaunch_local_ESMFold_residue_accessibility",
+  "models": 5121,
+  "residues": 1183341,
+  "cpu_workers": 2,
+  "threads_per_worker": 1,
+  "memory_gb_planning": 16,
+  "output_gb_planning": 5,
+  "wall_hours_planning_range": [
+    2,
+    24
+  ],
+  "estimate_basis": "Same pinned accessibility producer as live AF run; first local mmCIF parsed with single-chain/element checks. Local proteins are <=512 residues. Broad forecast pending local production measurements.",
+  "probe_radius_angstrom": 1.4,
+  "sphere_points_per_atom": 960,
+  "snapshot_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+  "producer_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "disk_free_bytes": 12541899436032,
+  "cost": "Existing authorized CPU host; no paid services",
+  "limitations": "Separate local prediction source; continuous isolated-chain ASA, not experimental surface or validated interface."
+}
