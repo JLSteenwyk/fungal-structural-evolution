@@ -1,0 +1,13 @@
+{
+  "status": "prelaunch_expanded_pae_resource_estimate",
+  "mapping_snapshot": "results/structural_markers/gdm-expanded-v1",
+  "expected_distinct_models": 13153,
+  "candidate_cached_pae_receipts": 412,
+  "cached_receipts_require_readback": true,
+  "sum_squared_model_lengths": 4729663533,
+  "planning_json_bytes_at_12_bytes_per_cell": 56755962396,
+  "workers": 2,
+  "runtime_assumption": "0.1-60 seconds per uncached model plus cache validation/retries; actual service speed determines duration",
+  "local_cost": "Existing authorized host and public downloads; no paid services",
+  "launch_gate": "Mapping producer must finish successfully; validate final source receipt and model count before starting PAE retrieval"
+}

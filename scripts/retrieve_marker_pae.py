@@ -11,6 +11,7 @@ import time
 import urllib.request
 from pathlib import Path
 import numpy as np
+from retrieve_matched_models import decode_http_payload
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -58,7 +59,8 @@ def retrieve(model, cache):
         try:
             request = urllib.request.Request(url, headers={'User-Agent': 'fungal-structural-evolution/1.0'})
             with urllib.request.urlopen(request, timeout=90) as response:
-                raw = response.read()
+                raw, transport = decode_http_payload(response.read())
+                transport['http_content_encoding'] = response.headers.get('Content-Encoding')
             validate_pae(raw, model['length'])
             break
         except Exception:
@@ -73,7 +75,7 @@ def retrieve(model, cache):
     receipt.update(status='verified', url=url, path=str(path.relative_to(ROOT)),
                    gzip_sha256=sha(path), json_sha256=hashlib.sha256(raw).hexdigest(),
                    compressed_bytes=len(compressed), json_bytes=len(raw),
-                   retrieved_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+                   retrieved_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(), transport=transport)
     temporary = receipt_path.with_suffix('.tmp')
     temporary.write_text(json.dumps(receipt, indent=2) + '\n')
     temporary.replace(receipt_path)

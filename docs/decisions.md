@@ -28,3 +28,7 @@ Use identical observed cells and sequence-based residue correspondence for AA an
 ## Dependence and conditional resampling
 
 Resample identical columns in AA and 3Di alignments across all taxa. Use 200 draws each at block lengths 1, 10 and 30 as a conditional sensitivity analysis, retaining invariant sites and recording unestimable draws rather than silently redrawing. Do not interpret percentile intervals as overall calibrated confidence: the audited inputs contain many spatially linked feature pairs farther apart than the chosen blocks. Preserve paired sampling covariance for later error-aware coupling analysis; it is not an evolutionary correlation.
+
+## Source-stratified structural snapshots
+
+Use an explicitly selected provider and prediction tool for the primary evolutionary mapping; rank candidates only within that source and leave unavailable sources missing. Retain all alternative models for same-sequence source comparisons. Higher pLDDT across pipelines is not evidence of greater accuracy and must not silently switch the production source. The first available GDM/ColabFold pair is a control with limited scope, not a calibration of pipeline effects across fungi.

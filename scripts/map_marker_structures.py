@@ -11,6 +11,12 @@ from Bio import AlignIO, SeqIO
 from Bio.PDB.MMCIF2Dict import MMCIF2Dict
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_PROVIDER = 'GDM'
+DEFAULT_TOOL = 'AlphaFold Monomer v2.0 pipeline'
+
+def source_candidates(candidates, provider, tool):
+    return [m for m in candidates if m.get('provider') == provider and m.get('tool') == tool]
+
 
 
 def digest(path):
@@ -32,15 +38,22 @@ def residue_positions(aligned_sequence):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--provider', default=DEFAULT_PROVIDER)
+    parser.add_argument('--tool', default=DEFAULT_TOOL)
     args = parser.parse_args()
     if args.output.exists():
         raise FileExistsError('Use an immutable new structure-mapping snapshot')
+    inventory_raw = (ROOT / 'data/raw/afdb_models.jsonl').read_bytes()
+    inventory_lines = inventory_raw.splitlines(keepends=True)
+    if inventory_lines and not inventory_lines[-1].endswith(b'\n'):
+        inventory_lines.pop()  # Exclude only an unfinished concurrent append.
+    frozen_inventory = b''.join(inventory_lines)
     latest = {}
-    for line in (ROOT / 'data/raw/afdb_models.jsonl').read_text().splitlines():
+    for line in frozen_inventory.decode().splitlines():
         try:
             row = json.loads(line)
-        except json.JSONDecodeError:
-            continue
+        except json.JSONDecodeError as error:
+            raise ValueError('Malformed complete inventory record') from error
         latest[row['uniprot_accession']] = row
     models = defaultdict(list)
     for row in latest.values():
@@ -61,7 +74,9 @@ def main():
         for row in csv.DictReader(handle, delimiter='\t'):
             sites[row['marker']][int(row['alignment_column_1based'])] = int(row['matrix_column_1based'])
     args.output.mkdir(parents=True)
+    (args.output / 'source_inventory.jsonl').write_bytes(frozen_inventory)
     links, summaries, verified_models, confidence_cache = [], [], {}, {}
+    source_audit = []
     residue_path = args.output / 'matrix_to_structure_residues.tsv.gz'
     with gzip.open(residue_path, 'wt') as out:
         writer = csv.writer(out, delimiter='\t', lineterminator='\n')
@@ -82,10 +97,12 @@ def main():
                 sequence = sequences[taxon]
                 if hashlib.sha256(sequence.encode()).hexdigest() != row['sequence_sha256']:
                     raise ValueError('Marker mapping sequence differs from source')
-                candidates = models.get(row['sequence_sha256'], [])
+                all_candidates = models.get(row['sequence_sha256'], [])
+                candidates = source_candidates(all_candidates, args.provider, args.tool)
+                source_audit.append({'marker': marker, 'taxon_id': taxon, 'sequence_sha256': row['sequence_sha256'], 'all_candidate_models': len(all_candidates), 'source_eligible_models': len(candidates), 'status': 'eligible_source_available' if candidates else ('only_other_sources_available' if all_candidates else 'no_model_in_snapshot')})
                 if not candidates:
                     continue
-                # Retain candidate count; deterministic representative selection is not a quality guarantee.
+                # Rank only within the explicitly selected pipeline; never compare confidence across pipelines.
                 model = max(candidates, key=lambda m: (m['mean_ca_plddt'], m['version'], m['model_id']))
                 key = model['path']
                 if key not in confidence_cache:
@@ -119,19 +136,24 @@ def main():
                 links.append({'marker': marker, 'taxon_id': taxon, 'protein_id': row['protein_id'],
                               'sequence_sha256': row['sequence_sha256'], 'model_id': model['model_id'],
                               'model_version': model['version'], 'model_path': key, 'model_sha256': model['sha256'],
+                              'model_provider': model.get('provider'), 'model_tool': model.get('tool'),
+                              'all_source_candidate_models': len(all_candidates),
                               'exact_sequence_candidate_models': len(candidates), 'retained_marker_residues': len(observed),
                               'mean_retained_ca_plddt': sum(observed) / len(observed) if observed else '',
                               'fraction_retained_ca_plddt_ge70': sum(p >= 70 for p in observed) / len(observed) if observed else ''})
                 linked += 1
             summaries.append({'marker': marker, 'single_copy_taxa': len(taxa), 'taxa_with_exact_sequence_structure': linked})
-    for name, rows in [('marker_structure_links.tsv', links), ('marker_coverage.tsv', summaries)]:
+    for name, rows in [('marker_structure_links.tsv', links), ('marker_coverage.tsv', summaries), ('source_selection_audit.tsv', source_audit)]:
         with (args.output / name).open('w') as handle:
             if rows:
                 writer = csv.DictWriter(handle, list(rows[0]), delimiter='\t', lineterminator='\n')
                 writer.writeheader()
                 writer.writerows(rows)
     (args.output / 'model_provenance.json').write_text(json.dumps(list(verified_models.values()), indent=2) + '\n')
-    result = {'marker_proteins_screened': len(markers), 'marker_proteins_linked': len(links),
+    result = {'source_policy': {'provider': args.provider, 'tool': args.tool, 'selection': 'Highest mean CA pLDDT, version and model ID only within this exact provider/tool; no cross-pipeline fallback. Confidence ranking does not establish accuracy.'},
+              'source_inventory_sha256': hashlib.sha256(frozen_inventory).hexdigest(),
+              'script_sha256': digest(Path(__file__)),
+              'marker_proteins_screened': len(markers), 'marker_proteins_linked': len(links),
               'distinct_taxa_linked': len({r['taxon_id'] for r in links}), 'distinct_models': len(verified_models),
               'matrix_residue_links': mapped_residues, 'markers_with_at_least_4_linked_taxa': sum(r['taxa_with_exact_sequence_structure'] >= 4 for r in summaries),
               'matrix_receipt_sha256': digest(matrix / 'receipt.json'),
