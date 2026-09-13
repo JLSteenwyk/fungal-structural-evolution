@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Map exact protein accessions through GFF Parent links; flag ambiguous loci."""
+import csv
+import gzip
+import hashlib
+import json
+from collections import Counter, defaultdict
+from pathlib import Path
+from urllib.parse import unquote
+from Bio import SeqIO
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def attributes(text):
+    result = {}
+    for field in text.split(';'):
+        if not field or field == '.':
+            continue
+        key, value = field.split('=', 1)
+        # Split delimiters before decoding escaped literal commas.
+        result[key] = [unquote(item) for item in value.split(',')]
+    return result
+
+
+def parse_gff(path):
+    parents = defaultdict(set)
+    genes, proteins = set(), defaultdict(set)
+    partial = set()
+    with gzip.open(path, 'rt') as handle:
+        for line in handle:
+            if line.startswith('##FASTA'):
+                break
+            if line.startswith('#') or not line.strip():
+                continue
+            fields = line.rstrip('\n').split('\t')
+            attrs = attributes(fields[8])
+            ids = attrs.get('ID', [])
+            if len(ids) != 1:
+                if fields[2] in ('gene', 'pseudogene', 'CDS'):
+                    raise ValueError('Relevant feature lacks a unique ID')
+                continue
+            ident = ids[0]
+            parents[ident].update(attrs.get('Parent', []))
+            if fields[2] in ('gene', 'pseudogene'):
+                genes.add(ident)
+            if fields[2] == 'CDS':
+                for protein in attrs.get('protein_id', []):
+                    proteins[protein].add(ident)
+                    if attrs.get('partial') == ['true']:
+                        partial.add(protein)
+
+    def ancestors(ident, trail):
+        if ident in trail:
+            raise ValueError('Cycle in GFF Parent links')
+        if ident in genes:
+            return {ident}
+        found = set()
+        for parent in parents.get(ident, set()):
+            found.update(ancestors(parent, trail | {ident}))
+        return found
+
+    mapping = {protein: set().union(*(ancestors(ident, set()) for ident in ids))
+               for protein, ids in proteins.items()}
+    return mapping, partial
+
+
+def main():
+    with (ROOT / 'metadata/analysis_manifest.tsv').open() as handle:
+        taxa = {row['taxon_id'] for row in csv.DictReader(handle, delimiter='\t')}
+    inputs = {r['taxon_id']: r for r in json.loads((ROOT / 'metadata/qc_input_receipts.json').read_text())}
+    annotations = {}
+    for line in (ROOT / 'data/raw/annotation_downloads.jsonl').read_text().splitlines():
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            continue  # A concurrent writer may be appending the final line.
+        if record['status'] == 'validated' and record['taxon_id'] in taxa:
+            annotations[record['taxon_id']] = record
+    folder = ROOT / 'results/gene_mapping'
+    folder.mkdir(parents=True, exist_ok=True)
+    summaries = []
+    for name, annotation in sorted(annotations.items()):
+        gff = ROOT / annotation['path']
+        source = ROOT / inputs[name]['input_path']
+        for path, expected in [(gff, annotation['sha256']), (source, inputs[name]['sha256'])]:
+            if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                raise ValueError(f'Changed source: {path}')
+        mapping, partial = parse_gff(gff)
+        rows, counts = [], Counter()
+        with source.open() as handle:
+            for record in SeqIO.parse(handle, 'fasta'):
+                loci = mapping.get(record.id, set())
+                status = 'unique_gene' if len(loci) == 1 else ('multiple_genes' if loci else 'unmapped')
+                counts[status] += 1
+                rows.append({'taxon_id': name, 'protein_id': record.id,
+                             'gene_ids_json': json.dumps(sorted(loci)), 'status': status,
+                             'partial_cds': record.id in partial, 'protein_length': len(record.seq)})
+        target = folder / f'{name}.tsv'
+        with target.with_suffix('.partial').open('w') as out:
+            writer = csv.DictWriter(out, list(rows[0]), delimiter='\t', lineterminator='\n')
+            writer.writeheader()
+            writer.writerows(rows)
+        target.with_suffix('.partial').replace(target)
+        gene_counts = Counter(json.loads(row['gene_ids_json'])[0] for row in rows if row['status'] == 'unique_gene')
+        summaries.append({'taxon_id': name, 'proteins': len(rows), **dict(counts),
+                          'uniquely_mapped_genes': len(gene_counts),
+                          'genes_with_multiple_proteins': sum(n > 1 for n in gene_counts.values()),
+                          'gff_sha256': annotation['sha256'], 'proteome_sha256': inputs[name]['sha256'],
+                          'mapping_path': str(target.relative_to(ROOT)),
+                          'mapping_sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
+    (ROOT / 'metadata/gene_mapping_snapshot.json').write_text(json.dumps({
+        'planned_taxa': len(taxa), 'mapped_taxa': len(summaries), 'taxa': summaries,
+        'note': 'No isoform selection performed; ambiguous/unmapped proteins require resolution. Gene IDs are local to this annotation version.'}, indent=2) + '\n')
+    print('Mapped', len(summaries), 'taxa; multi-protein genes:', sum(r['genes_with_multiple_proteins'] for r in summaries))
+
+
+if __name__ == '__main__':
+    main()

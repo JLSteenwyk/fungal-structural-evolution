@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Run bounded full-dataset BUSCO protein QC; resumable by verified success receipts."""
-import json,subprocess,hashlib
+import json,subprocess,hashlib,fcntl
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -19,6 +19,7 @@ def run(row):
 
 def main():
  (ROOT/'results/busco').mkdir(parents=True,exist_ok=True)
+ lock=(ROOT/'results/busco/.batch.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  rows=json.loads((ROOT/'metadata/qc_input_receipts.json').read_text());print('QC taxa:',len(rows),flush=True)
  with ThreadPoolExecutor(max_workers=4) as pool:
   for n,f in enumerate(as_completed([pool.submit(run,r) for r in rows]),1):

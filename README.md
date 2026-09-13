@@ -12,6 +12,7 @@ Status: proteomes acquired for a working set of **501 fungi and 25 genome-backed
 - [Literature](docs/bibliography.md)
 - [Resource assessment](docs/resources.md)
 - [Phylogenetic workflow](docs/phylogenetic-workflow.md)
+- [Gene and isoform reconciliation](docs/gene-isoform-mapping.md)
 - [Metadata definitions](metadata/README.md)
 
 ## Reproduction
