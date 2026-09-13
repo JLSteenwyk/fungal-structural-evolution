@@ -3,6 +3,7 @@
 import argparse
 import csv
 import io
+import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -44,9 +45,20 @@ def main():
     for name, sha in ir['artifacts'].items():
         if digest(args.inputs / name) != sha:
             raise ValueError('Changed prediction inputs')
-    sequences = {r.id: str(r.seq) for r in SeqIO.parse(args.inputs / 'candidates.faa', 'fasta')}
+    with (args.inputs / 'candidates.faa').open() as handle:
+        fasta_records = list(SeqIO.parse(handle, 'fasta'))
+    sequences = {r.id: str(r.seq) for r in fasta_records}
+    if len(sequences) != len(fasta_records):
+        raise ValueError('Duplicate candidate sequence identity')
+    for sid, sequence in sequences.items():
+        if not sequence or sid != 'S' + hashlib.sha256(sequence.encode()).hexdigest():
+            raise ValueError('Candidate sequence hash mismatch or empty sequence')
+    eligible = {sid for sid, sequence in sequences.items()
+                if len(sequence) <= config['max_length']
+                and set(sequence) <= set('ACDEFGHIKLMNPQRSTVWY')}
     link_path = args.links or args.inputs / 'all_marker_links.tsv'
-    links = [normalize_link(r) for r in csv.DictReader(link_path.open(), delimiter='\t')]
+    with link_path.open() as handle:
+        links = [normalize_link(r) for r in csv.DictReader(handle, delimiter='\t')]
     records = []
     pdb_parser = PDBParser(QUIET=True)
     snapshot_paths = sorted(args.predictions.glob('S*.json'))
@@ -56,8 +68,12 @@ def main():
         if row['status'] != 'verified_prediction':
             continue
         sid = row['sequence_id']
-        if row['config_sha256'] != digest(config_path) or sid not in sequences:
+        if row['config_sha256'] != config_digest or sid not in eligible:
             raise ValueError('Prediction identity/configuration mismatch')
+        if (path.name != sid + '.json' or row['sequence_sha256'] != sid[1:]
+                or row['length'] != len(sequences[sid])
+                or set(row['artifacts']) != {sid + '.pdb', sid + '.npz'}):
+            raise ValueError('Prediction receipt sequence/length/artifact identity mismatch')
         for name, sha in row['artifacts'].items():
             if digest(args.predictions / name) != sha:
                 raise ValueError('Changed prediction artifact')
@@ -77,7 +93,11 @@ def main():
                     or pae.shape != (len(sequence), len(sequence))
                     or not np.isfinite(plddt).all() or not np.isfinite(pae).all()
                     or np.any(plddt < 0) or np.any(plddt > 100) or np.any(pae < 0)
+                    or not np.isfinite(float(data['max_pae']))
+                    or float(data['max_pae']) <= 0
+                    or abs(float(data['max_pae']) - row['max_predicted_aligned_error']) > 1e-5
                     or np.any(pae > float(data['max_pae']) + 1e-4)
+                    or abs(float(np.mean(plddt < 50)) - row['fraction_ca_plddt_below50']) > 1e-8
                     or not np.allclose([r['CA'].bfactor for r in residues], plddt, atol=.0051, rtol=0)
                     or abs(float(plddt.mean()) - row['mean_ca_plddt']) > 1e-5):
                 raise ValueError('Confidence/PAE readback validation failed')
@@ -89,6 +109,11 @@ def main():
         raise ValueError('Configuration changed during audit')
     if len(ids) != len(records) or (chunk is not None and len(records) != chunk['cached_predictions'] + chunk['new_predictions']):
         raise ValueError('Completed chunk and actual predictions disagree')
+    if chunk is not None:
+        if (chunk['status'] != 'production_chunk_finished'
+                or chunk['remaining_eligible'] != len(eligible - ids)
+                or chunk['length_or_alphabet_deferred'] != len(sequences) - len(eligible)):
+            raise ValueError('Completed chunk eligible/deferred identity grid disagrees')
     matched_links = [r for r in links if r['sequence_id'] in ids]
     if args.output.exists():
         raise FileExistsError('Use an immutable new audit snapshot')

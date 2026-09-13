@@ -438,3 +438,38 @@ Log: `logs/long_marker_prediction_controller_v1.log`.
 Controller outputs: `results/predictions/long-markers-controller-v1`.
 The script compiled, verified its initial pins and entered its expected waiting
 state. Input refresh and longer-protein prediction execution remain pending.
+
+
+## Full-queue artifact audits and conversion queued
+
+The original short-marker queue (10,522 eligible sequences, including its 128
+cached models) and follow-on queue (4,252 eligible sequences) each have a queued
+full-output handoff. `scripts/advance_prediction_snapshot.py` waits for the exact
+producer PID and start time to exit, requires zero remaining eligible sequences,
+no interruption or OOM, and the expected completed count. Pinned scripts, input
+receipts and configuration must match before either stage runs. Existing audit
+or conversion outputs prevent automatic reuse or overwrite.
+
+The artifact auditor now additionally checks candidate hash identities and
+uniqueness, eligible versus deferred sequence counts, per-model receipt identity,
+length and exact artifact names, and reported low-confidence fractions and PAE
+limits against NPZ arrays. Four snapshot tests (including corrupted metadata and
+inconsistent remaining counts) and three link identity tests pass. Existing
+coordinate, sequence, confidence, PAE and artifact-checksum checks remain active.
+
+Controllers and configuration:
+
+- `metadata/esmfold_original_snapshot_controller_config.json` →
+  `results/predictions/original-snapshot-controller-v1`.
+- `metadata/esmfold_followon_snapshot_controller_config.json` →
+  `results/predictions/followon-snapshot-controller-v1`.
+
+After successful full readback, all audited models are converted to sequence-
+explicit mmCIF with atom-field roundtrip checks. Targets are respectively
+`results/structures/esmfold-original-complete-v1` and
+`results/structures/esmfold-followon-complete-v1`. Residue mapping, PAE binding,
+native-feature qualification and evolutionary analyses remain subsequent steps.
+Each handoff uses one CPU thread, an 8 GB memory planning allowance and 100 GB
+output headroom; 0.2–12 hours is a conservative runtime planning envelope. It
+requires no GPU inference or paid resources. These are queued jobs; no full-batch
+audit or conversion completion is claimed at launch.

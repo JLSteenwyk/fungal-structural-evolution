@@ -1702,3 +1702,12 @@ original FreeRate likelihood and remove the earlier seven >0.1 Gamma deficits.
 Model sensitivity remains conditional; this is not biological model adequacy or
 an acceleration result. See docs/site-specific-evolutionary-rates.md and
 metadata/esmfold_optimized_rate_comparison_readback.json.
+
+
+Queued full original/follow-on prediction artifact audits and mmCIF conversion,
+with exact live producer identity and code/input pins. Expected full cohorts are
+10,522 and 4,252 models. The strengthened auditor's seven tests passed, including
+metadata corruption and completion accounting checks. Both handoff controllers
+were observed live waiting for their still-running producers; all 11 dependency
+pins per configuration matched. Full audit/conversion results remain pending.
+See docs/structure-prediction-workflow.md and the two snapshot controller configs.
