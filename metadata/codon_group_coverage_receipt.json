@@ -1,0 +1,27 @@
+{
+  "status": "complete_full_marker_genus_code_coverage_screen",
+  "genus_labels": 16,
+  "input_entries_in_groups": 113,
+  "markers": 125,
+  "group_policy_rows": 4168,
+  "passing_by_policy": {
+    "all_aligned": 1826,
+    "exclude_recorded_annotation_gene_label_flags": 1712
+  },
+  "source_codon_receipt_sha256": "5cf5444008325866a8d40662a3a15c34368146dd8629bf966f279c0e99ae529d",
+  "source_readback_sha256": "3327f03f47538e857c2f91e40189167dd278b2de9ce63e8fb8372be962bd5a81",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "label_review_sha256": "cfb0ec10270a4ad0a8c4ea856a57a627765534b4695eafd2833ec9d5ed0a36b2",
+  "script_sha256": "246353e211caed8b9b56808db70deb5073a6e81e8ff82f20ee3d1de8350f501e",
+  "thresholds": {
+    "minimum_entries": 4,
+    "minimum_columns": 100,
+    "minimum_called_fraction": 0.8
+  },
+  "interpretation": "Coverage screening, not selection eligibility or evidence of monophyly. Groups share a fungal genus label and translation code; entries are not assumed unique species or independent ecological transitions. The stricter policy removes only recorded annotation/gene/label flags, not all possible quality problems. Original protein masks are unchanged; canonical complete codons define called data. Tree support/reconciliation, divergence and saturation, alignment sensitivity, taxonomy and model adequacy still require assessment. No group is called a replicated transition.",
+  "artifacts": {
+    "group_summary.tsv": "2e8c0b841ca4a1039114e546dddbff373b73050edff0b956be151a2900f0fedf",
+    "group_codon_coverage.tsv": "ed65229a30b85ec70a4daf7a6cd23f33f0ddc8e159d43d243a650ddb85dbdd6a",
+    "genus_label_membership.tsv": "4385035e36b13498805679f7eb441fec00f4f6ec6b51fac0534c896903d86115"
+  }
+}

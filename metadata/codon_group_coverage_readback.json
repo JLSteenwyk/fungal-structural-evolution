@@ -1,0 +1,17 @@
+{
+  "status": "complete_codon_group_coverage_identity_readback",
+  "receipt_sha256": "5d1bfa81376666f70b004efd40fa6ede36730a749fd15853424c43395e98c459",
+  "rows_verified": 4168,
+  "passing_by_policy": {
+    "all_aligned": 1826,
+    "exclude_recorded_annotation_gene_label_flags": 1712
+  },
+  "checks": [
+    "All output and producer hashes",
+    "Unique marker/genus/code/policy rows",
+    "Unique retained taxa and matching counts",
+    "Strict-policy membership is subset of all-aligned membership",
+    "Threshold classification and summary totals recounted"
+  ],
+  "interpretation": "Coverage bases are not independently recomputed here; projection/codon translation was independently verified separately."
+}

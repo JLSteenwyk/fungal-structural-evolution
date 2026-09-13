@@ -145,4 +145,23 @@ The code inventory comprises 58,562 table-1 defaults and 707 explicit CDS codes:
 
 Projection completed for **all 125 markers**, accepting **59,334 marker/taxon sequences** and excluding 506 with explicit reasons. The unchanged masks retain 63,750 codon columns across markers. Each marker has 418–502 accepted taxa; 123 markers contain more than one translation code. The exclusions comprise 267 non-triplet sequences, 188 initial-phase review cases, 16 annotation-exception cases, 13 with both phase and non-triplet flags, 21 translation mismatches and one annotation-exception/mismatch case. These counts are mutually exclusive status combinations.
 
-The producer receipt is `metadata/marker_codon_alignment_receipt.json`. Compact exclusion/boundary/gene review rows are in `metadata/marker_codon_alignment_review.tsv`. The separate verifier is running and its completion is not yet claimed. Log: `logs/marker_codon_readback_v1.log`. No selection model has been fitted to these codon alignments.
+The producer receipt is `metadata/marker_codon_alignment_receipt.json`. Compact exclusion/boundary/gene review rows are in `metadata/marker_codon_alignment_review.tsv`. The separate verifier completed successfully: every one of 28,328,533 non-gap codons in 59,334 sequence rows translated under its recorded code to the exact original masked amino-acid column. All artifact hashes, identities, gap triplets and marker summary totals passed. Evidence is in `metadata/marker_codon_readback_receipt.json` and `metadata/marker_codon_summary.tsv`. Log: `logs/marker_codon_readback_v1.log`. No selection model has been fitted to these codon alignments.
+
+## Coverage screen for groups sharing genus labels and codes
+
+`assess_codon_group_coverage.py` requires the completed independent codon readback. It evaluates all 125 markers for fungal genus labels represented by at least four manifest entries, splitting each marker/group by translation code. These labels define candidate groups for assessment, not inferred clades. Entries are not assumed to be unique species or independent ecological transitions.
+
+Two policies retain either all translation-aligned records or only records without the existing annotation, gene-representative and taxon-label flags. Both use the unchanged protein-derived column mask. Complete unambiguous codons define called data. The diagnostic coverage screen asks whether at least four entries remain with at least 100 columns called in at least 80 percent of that subset; it also reports fully called and variable covered columns. Empty groups and excluded entries remain explicit.
+
+```bash
+python scripts/assess_codon_group_coverage.py --output results/cds/genus-code-coverage-v1
+python -m unittest discover -s tests -p test_codon_group_coverage.py
+```
+
+Three tests verify ambiguity/gap treatment, variable covered columns and empty subsets. The resource plan allows one worker, 1 GB memory, 0.1 GB output and 1–10 minutes. Passing this coverage screen does not establish selection eligibility: supported group phylogenies, gene/copy reconciliation, alignment sensitivity, divergence/saturation, taxon identity and model adequacy still require assessment. This screen does not estimate dN/dS or test ecological effects.
+
+The completed screen covers **16 fungal genus labels and 113 manifest entries**, producing 4,168 marker/code/policy rows. There are 1,826 passing marker/code groups under all-aligned inclusion and 1,712 after excluding recorded flags. All 16 labels have passing groups under inclusive screening; 15 retain some under the stricter policy. The stricter passing-marker counts range from zero (Serendipita) to 125.
+
+Serendipita illustrates a taxon-identity dependency: its five entries include three unnamed species records already flagged by the label audit. Excluding those leaves only two named entries, below the four-entry threshold; the change is not evidence of poor sequence coverage or biological absence. Candida contributes multiple code groups and remains a label-defined group requiring phylogenetic review. Coverage passing is not permission to treat these taxa as a resolved clade or replicated ecological transitions.
+
+All output hashes, unique group identities, retained-taxon counts, stricter-policy subset membership and threshold totals passed readback checks. This readback does not independently recompute every coverage base. Summaries, exact genus membership and receipts are in `metadata/codon_group_coverage_*` and `metadata/codon_group_membership.tsv`; the full row table remains in `results/cds/genus-code-coverage-v1`.

@@ -300,3 +300,15 @@ Started codon projection for all 125 markers using the unchanged full MAFFT prot
 ## Full codon alignment projection completed
 
 All 125 marker projections finished: 59,334 accepted sequence rows, 506 explicitly excluded, and 63,750 unchanged protein-mask columns represented as codons. Accepted taxa range from 418 to 502 per marker. There are 123 mixed-code markers, requiring code-compatible modeling subsets rather than one indiscriminate genetic code. Producer receipts and compact review rows are versioned. Independent per-codon translation readback is running; its success is not yet claimed. Selection feasibility, model fitting and saturation assessment remain pending.
+
+## Codon readback completed
+
+Independent verification passed for all 125 codon alignments and all 59,334 accepted sequence rows. Every one of 28,328,533 non-gap codons translates under its recorded code to the exact original masked amino-acid column. Full source identity coverage, artifact hashes, triplet gaps, absence of aligned stops and marker totals pass. The 506 exclusions remain explicit. Receipt and marker summaries are versioned.
+
+Started the full marker coverage screen for groups sharing fungal genus labels and translation codes, comparing all aligned entries with exclusion of recorded annotation/gene/label flags. Three coverage tests passed. Group labels are not assumed monophyletic or independent ecological transitions; this screen does not estimate selection or establish divergence suitability.
+
+## Genus/code codon coverage screen completed
+
+Screened all 125 markers across 16 fungal genus labels containing 113 manifest entries. Of 4,168 marker/code/policy rows, 1,826 groups pass the inclusive coverage threshold and 1,712 pass after excluding recorded annotation/gene/taxon-label flags. Output hashes, row identity, retained membership, stricter-policy subsets and threshold totals pass readback checks.
+
+Serendipita loses all passing groups under the stricter policy because three of its five entries are unnamed species records; only two named entries remain. This is a documented taxon-identity constraint, not a finding of missing sequence or ecological nonreplication. Fifteen labels retain passing groups under the stricter policy. Genus monophyly, divergence/saturation, selection-model adequacy and independent ecological transitions still require assessment.
