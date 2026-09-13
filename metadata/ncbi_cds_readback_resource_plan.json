@@ -1,0 +1,15 @@
+{
+  "status": "prelaunch_full_ncbi_translation_readback",
+  "taxa": 519,
+  "cds_records": 5847336,
+  "workers": 1,
+  "planning_runtime_minutes": [
+    1,
+    10
+  ],
+  "planning_memory_gb": 2,
+  "planning_output_gb": 0.1,
+  "free_disk_bytes": 12535887187968,
+  "purpose": "Stream every completed per-CDS audit row, verify hashes and recount identity/status/code totals; reconcile marker classifications with the independent marker boundary audit. No repeated genome-wide translation.",
+  "cost": "Existing authorized host only; no new charges"
+}

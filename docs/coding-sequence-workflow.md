@@ -74,7 +74,7 @@ Use new output directories for reruns. Seven focused tests cover strict stop/par
 
 Complete-codon spans do not establish complete genes or suitability for selection inference. Partial-boundary inclusion policies, gene-representative links, codon alignments, genetic-code review for additional taxa and family-specific divergence assessment remain necessary.
 
-## Full NCBI strict translation audit running
+## Completed full NCBI strict translation audit
 
 `audit_ncbi_cds_translation.py` now audits all 519 NCBI-backed taxa against their exact assembly-matched GFF and normalized protein input. Every source hash is checked. It associates CDSs through exact versioned protein IDs, reports missing IDs and proteins, and excludes multiply linked CDS records from direct-match classification. GFF `transl_table` values supply the translation code; conflicts remain exceptions. Missing explicit codes use a clearly recorded table-1 assumption for this diagnostic, requiring subsequent code review before selection eligibility.
 
@@ -85,7 +85,7 @@ python scripts/audit_ncbi_cds_translation.py --output results/cds/ncbi-strict-tr
 python -m unittest discover -s tests -p test_ncbi_cds_translation.py
 ```
 
-Execution uses one worker on the existing host, with a 0.2–4-hour scheduling estimate, 4 GB memory and 5 GB output allowance recorded before launch in `metadata/ncbi_cds_translation_resource_plan.json`. Per-taxon completed receipts support restart only after source, configuration and output hash verification; incomplete taxa are recomputed. A single-writer lock prevents simultaneous producers. Four tests cover alternative CUG translation, missing/conflicting code provenance, no partial-codon or initiator repair, and at-most-one terminal stop removal. The run log is `logs/ncbi_strict_cds_translation_v1.log`; the full receipt is written only after all taxa finish. This stage is running, not completed; codon alignments, representative-gene integration and selection tests remain pending.
+Execution uses one worker on the existing host, with a 0.2–4-hour scheduling estimate, 4 GB memory and 5 GB output allowance recorded before launch in `metadata/ncbi_cds_translation_resource_plan.json`. Per-taxon completed receipts support restart only after source, configuration and output hash verification; incomplete taxa are recomputed. A single-writer lock prevents simultaneous producers. Four tests cover alternative CUG translation, missing/conflicting code provenance, no partial-codon or initiator repair, and at-most-one terminal stop removal. The run log is `logs/ncbi_strict_cds_translation_v1.log`; the full receipt is written only after all taxa finish. This stage is complete. Marker codon projection and independent readback subsequently completed as described below; full-family codon preparation and selection tests remain pending.
 
 ## Completed full marker CDS identity index
 
@@ -165,3 +165,28 @@ The completed screen covers **16 fungal genus labels and 113 manifest entries**,
 Serendipita illustrates a taxon-identity dependency: its five entries include three unnamed species records already flagged by the label audit. Excluding those leaves only two named entries, below the four-entry threshold; the change is not evidence of poor sequence coverage or biological absence. Candida contributes multiple code groups and remains a label-defined group requiring phylogenetic review. Coverage passing is not permission to treat these taxa as a resolved clade or replicated ecological transitions.
 
 All output hashes, unique group identities, retained-taxon counts, stricter-policy subset membership and threshold totals passed readback checks. This readback does not independently recompute every coverage base. Summaries, exact genus membership and receipts are in `metadata/codon_group_coverage_*` and `metadata/codon_group_membership.tsv`; the full row table remains in `results/cds/genus-code-coverage-v1`.
+
+## Completed full-proteome translation results and reconciliation
+
+The complete audit covers **519 NCBI taxa, 5,847,336 CDS records and 5,843,347 normalized proteins**. Every normalized protein has a source CDS association, although an association does not guarantee a unique or valid translation. The mutually exclusive CDS classifications are:
+
+| Classification | CDS records |
+| --- | ---: |
+| Exact translation | 5,752,457 |
+| Non-triplet length after earlier gates | 85,683 |
+| Translation mismatch | 2,491 |
+| Annotation exception requiring review | 2,715 |
+| Missing/ambiguous protein identifier | 3,988 |
+| Multiple CDS records for one protein | 2 |
+
+Classification order matters: counts above are status partitions, not independent counts of every possible overlapping flag. The acquisition audit's raw non-triplet count therefore need not equal the classified non-triplet total. All DNA and raw headers remain preserved; no frame shifts, initiator repairs or exception recoding were introduced.
+
+The full audit records 5,793,946 default-table-1 evaluations under its original assumption label, and explicit tables 6 (13,180 records), 26 (5,666), 12 (29,979), 3 (57), 4 (493) and 5 (25). Rows rejected before code assignment are excluded from these counts. The marker-specific review verifies documented default and CDS/region-code provenance for the marker subset; source-region fallback was not implemented in this historical full-proteome producer and remains a consideration for later nonmarker qualification.
+
+```bash
+python scripts/summarize_ncbi_cds_audit.py --audit results/cds/ncbi-strict-translation-v1 --output results/cds/ncbi-strict-readback-v1
+```
+
+The completed readback verifies source-inventory, configuration and producer hashes, all per-taxon output hashes, unique CDS identities, full 519-taxon coverage and every status/code total. It reconciles all 59,269 NCBI marker protein codes with the independently executed boundary audit: 59,252 have identical strict translation statuses, while 17 differences arise because the full audit stops at an annotation-exception gate before translating. There are no unexplained disagreements. The compact 17-row table is `metadata/ncbi_marker_translation_gate_differences.tsv`.
+
+Full receipts, the readback and taxon summaries are versioned as `metadata/ncbi_cds_translation_receipt.json`, `metadata/ncbi_cds_translation_readback.json` and `metadata/ncbi_cds_taxon_translation_summary.tsv`. Per-CDS tables remain in `results/cds/ncbi-strict-translation-v1`. This readback does not retranslate every nonmarker sequence independently or validate its genomic coordinates. Exact translation still does not establish selection eligibility, gene-model correctness or complete biological genes.

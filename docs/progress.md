@@ -312,3 +312,9 @@ Started the full marker coverage screen for groups sharing fungal genus labels a
 Screened all 125 markers across 16 fungal genus labels containing 113 manifest entries. Of 4,168 marker/code/policy rows, 1,826 groups pass the inclusive coverage threshold and 1,712 pass after excluding recorded annotation/gene/taxon-label flags. Output hashes, row identity, retained membership, stricter-policy subsets and threshold totals pass readback checks.
 
 Serendipita loses all passing groups under the stricter policy because three of its five entries are unnamed species records; only two named entries remain. This is a documented taxon-identity constraint, not a finding of missing sequence or ecological nonreplication. Fifteen labels retain passing groups under the stricter policy. Genus monophyly, divergence/saturation, selection-model adequacy and independent ecological transitions still require assessment.
+
+## Full NCBI translation audit and readback completed
+
+All 519 taxa completed: 5,847,336 CDS records and 5,843,347 normalized proteins, with no protein lacking a source CDS association. Exact translation passes for 5,752,457 records. The remaining exclusive classifications comprise 85,683 non-triplet lengths, 2,491 mismatches, 2,715 annotation exceptions, 3,988 missing/ambiguous protein identifiers and two CDS records sharing a protein.
+
+Readback checked all output hashes and recounted every CDS/status/code total and taxon identity. All 59,269 NCBI marker classifications reconcile with the separate boundary audit: 59,252 identical statuses and 17 differences explained by the full audit's annotation-exception gate. No unexplained code/status disagreement remains in the marker subset. Full nonmarker coordinates, region-code handling, family codon suitability and selection inference remain pending. Receipts and taxon summaries are versioned; large per-CDS tables remain outside Git.

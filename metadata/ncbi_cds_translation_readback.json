@@ -1,0 +1,37 @@
+{
+  "status": "complete_full_ncbi_cds_audit_readback",
+  "taxa": 519,
+  "cds_records": 5847336,
+  "protein_records": 5843347,
+  "proteins_without_cds": 0,
+  "cds_status_counts": {
+    "exact_translation": 5752457,
+    "translation_mismatch": 2491,
+    "non_triplet_length": 85683,
+    "annotation_exception_requires_review": 2715,
+    "missing_or_ambiguous_protein_id": 3988,
+    "multiple_cds_records_for_protein": 2
+  },
+  "code_source_counts": {
+    "table_1_assumption_no_explicit_code:1": 5793946,
+    "explicit_gff_transl_table:6": 13180,
+    "explicit_gff_transl_table:26": 5666,
+    "explicit_gff_transl_table:12": 29979,
+    "explicit_gff_transl_table:3": 57,
+    "explicit_gff_transl_table:4": 493,
+    "explicit_gff_transl_table:5": 25
+  },
+  "marker_proteins_reconciled": 59269,
+  "marker_comparison_counts": {
+    "same_strict_translation_status": 59252,
+    "full_audit_annotation_exception_gate": 17
+  },
+  "source_receipt_sha256": "dc705ed22c331ada40f1efb7fdabdc767bb89a058342c2f4343732a46e332313",
+  "marker_boundary_receipt_sha256": "8c2b86827b9f875023b1636483455505bc60c48d23e94b1cf8f2159d36623cf8",
+  "script_sha256": "90603e7f4da894c428ed55f6c6abb1be60257accd489a559e8a3c5d4d669a026",
+  "interpretation": "All source-inventory/config/producer hashes and output table hashes checked; every CDS identity/status and taxon/code total recounted. All indexed marker protein codes and strict statuses reconciled with the independent boundary audit, retaining its different annotation-exception gate. This does not independently retranslate every nonmarker CDS, reconstruct genomes or establish selection eligibility. The original full audit labels omitted codes as assumptions; marker review separately supports NCBI documented defaults and checks region-code fallback.",
+  "artifacts": {
+    "marker_audit_comparison.tsv": "15639ab623db73e1a28f12b9ad57f33128c937d9a971f51ea42757e877dcfc37",
+    "taxon_translation_summary.tsv": "aa3edf9ca95caff634821335e17f70d4cedd999de98f5da34a6a62978dd429d8"
+  }
+}
