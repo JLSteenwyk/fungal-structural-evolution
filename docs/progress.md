@@ -1814,3 +1814,11 @@ confidence minima and every model/summary count. Joint PAE qualification is queu
 under session 72300 after exact exporter PID 642606; all ten dependency pins
 matched. Pre-PAE six-residue pLDDT coverage is 1,008,659 states, not final qualified
 coverage. PAE export, qualification readback and paired inputs remain pending.
+
+
+Full expanded AlphaFold accessibility calculation completed: 13,153 models and
+6,910,765 residues; producer session 64463 exited zero. Compact execution receipt
+preserves the full 13,153-entry receipt-map checksum. Started the full raw-mmCIF
+and residue-table audit (session 22787); independent ASA integration is not part
+of this readback. Exact paired-site projection/normalization remains pending.
+See docs/residue-accessibility.md and metadata/gdm_full_accessibility_*.

@@ -365,3 +365,33 @@ The separate column-resampling run is still active. Neither analysis includes
 all sources of model, alignment, prediction or biological uncertainty.
 
 The next model-based layer is now available: [conditional site-specific evolutionary rates](site-specific-evolutionary-rates.md), covering all 72 markers and four model specifications. Controlled exposure/rate analyses remain pending.
+
+
+## Full expanded AlphaFold accessibility calculation completed
+
+The full calculation finished for all 13,153 models and 6,910,765 residues.
+Its producer exited zero and the final receipt enumerates all 13,153 per-model
+receipts. A compact versioned record preserves the complete receipt's path,
+checksum and counts in `metadata/gdm_full_accessibility_execution_receipt.json`;
+the full per-model receipt map remains outside Git with the data.
+
+The full raw-output audit is now running. It checks all source coordinate and
+output hashes, complete residue identities, heavy-atom counts, CA confidence,
+finite nonnegative ASA values and per-model ASA totals against raw mmCIF tables.
+This is the established audit used for the local snapshot; it does not
+independently recompute solvent-accessible area or establish biological exposure,
+interfaces or categorical core/surface labels. The calculations describe isolated
+predicted chains, so partner binding and domain-orientation uncertainty remain
+relevant.
+
+Resource allowance: one CPU, 8 GB memory, 1 GB output and 0.2–8 planning hours on
+the existing host. Plan: `metadata/gdm_full_accessibility_audit_resource_plan.json`.
+Audit target: `results/structural_annotations/accessibility-gdm-full-audit-v1`.
+Projection onto exact paired sites and normalization remain subsequent steps.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/audit_predicted_accessibility.py \
+  --assessment results/structural_annotations/accessibility-gdm-v1 \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --output results/structural_annotations/accessibility-gdm-full-audit-v1
+```
