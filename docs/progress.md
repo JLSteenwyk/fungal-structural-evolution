@@ -854,3 +854,15 @@ experimental quality and independent-benchmark eligibility remain outstanding.
 The prior turn established sequence correspondence; this turn acquires the
 coordinates needed for actual structural benchmarking. Full metadata retrieval
 continues and the overall research goal remains active.
+
+
+### Experimental residue-correspondence mapping executing
+
+Launched all 215 coordinate entries through sequence-checked entity/model/chain
+mapping. Every full-sequence position remains explicit, including missing and
+ambiguous CA observations; no occupancy/alternate choice is hidden. Two focused
+tests pass. Initial files produce verified sequence correspondence and explicit
+missing coordinates. Complete mapping, readback and actual predictor comparisons
+remain outstanding. The previous turn completed archive acquisition; this turn
+starts the residue mapping required for meaningful experimental benchmarks.
+The full research goal remains active.

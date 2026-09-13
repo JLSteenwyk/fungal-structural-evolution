@@ -150,3 +150,37 @@ chemical modifications and complex context. Exact canonical sequence is not
 permission to treat every atom or entity as an eligible benchmark. The full
 metadata inventory continues independently; these downloads reflect a frozen
 partial candidate set, not complete experimental coverage of the project.
+
+
+## Observed experimental CA correspondence executing
+
+`map_experimental_ca_residues.py` parses all 215 downloaded entries and checks
+each nominated entity's coordinate-file canonical sequence against the exact
+model sequence hash. CA mapping uses mmCIF entity, model, label-chain and
+[label sequence IDs](https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_atom_site.label_seq_id.html),
+not author numbering. Every full-sequence position is emitted for each selected
+chain and deposited model. Missing observations, multiple CA records,
+nonstandard/mismatching monomers, invalid coordinates/occupancy and alternate or
+partial-occupancy observations remain distinct. No arbitrary alternate-location
+choice is made. Raw atom records retain author identifiers, insertions and B
+factors; B factors are not pLDDT.
+
+Two tests cover absent, duplicated, alternate/partial, modified, nonfinite and
+zero-occupancy observations. Initial entries are producing both unambiguous and
+missing-coordinate rows; the complete mapping is still running. Per-entry output
+hashes and configuration checks support restartable processing without changing
+already completed results. The resource plan allows one CPU, 8 GB RAM, 5 GB
+output and 0.2–4 hours for 1.30 GB uncompressed input.
+
+```bash
+python scripts/map_experimental_ca_residues.py \
+  --screen results/experimental_structures/sequence-screen-partial-v1 \
+  --coordinates data/experimental_structures/coordinates-exact-partial-v1 \
+  --output results/experimental_structures/ca-mapping-partial-v1
+```
+
+Unambiguous full-occupancy CA correspondence is not a complete experimental
+quality criterion. Non-CA atoms, experimental method/resolution, refinement
+validation, biological assemblies, ligands, alternate conformations and
+prediction-training overlap still require assessment. This calculation does
+not yet compare experimental and predicted coordinates.
