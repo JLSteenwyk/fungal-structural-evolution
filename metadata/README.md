@@ -109,3 +109,5 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 
 - `creolimax_cds_extraction_receipt.json` and `creolimax_cds_exceptions.tsv`: full 8,694-protein extraction audit, 8,558 exact translated CDSs and all 136 exceptions. Ordered source segments and verified nucleotides remain outside Git. Terminal DNA stop codons are retained and flagged, not automatically passed into codon analyses.
 - `external_cds_source_inventory.json` now includes the checked Creolimax extracted subset when reproduced with `--creolimax results/cds/creolimax-extraction-v1`; all seven external taxa have an available source/subset. Published CDS availability and exact translation remain distinct states.
+
+- `expanded_coordinate_audit_receipt.json`: completed coordinate/partner reconstruction for all 13,153 expanded models, with every encoding checksum independently read back. Full-model residue counts precede alignment masks. The PAE parent is null and joint PAE counts are absent until confidence qualification finishes.

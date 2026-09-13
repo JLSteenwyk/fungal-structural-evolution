@@ -134,3 +134,11 @@ python scripts/audit_3di_features.py \
 ```
 
 Its 13,153 models contain 6,910,765 residues; maximum model length is 2,413. The plan allows 8 GB RAM, 2 GB additional output and approximately 0.5–3 hours on the existing host, with no new charges. Coordinate parsing and quadratic within-model partner calculations can now overlap PAE retrieval. The existing output directory is immutable; a partial directory is not a completed audit or an automatically resumable result. Final mapping-bound PAE acquisition and both completed audit stages are still required before expanded phylogenetic inference. Logs: `logs/native_coordinate_gdm_expanded_v1.log`.
+
+## Expanded coordinate reconstruction completed
+
+The coordinate-only production audit finished successfully for **all 13,153 models** and **6,910,765 residues**. It reproduced the pinned native partner assignments and all ten features within the declared four-significant-digit descriptor tolerance. There are **6,884,459 valid states** and **26,306 invalid terminal states**. Of the valid states, 5,136,862 meet focal pLDDT70 and **4,719,638** meet the minimum pLDDT70 across the complete six-residue feature context.
+
+Independent readback verified every one of the 13,153 encoding checksums, unique model/version counts, all summary totals and the producer script hash. The output occupies approximately 95 MB. The completion receipt is `metadata/expanded_coordinate_audit_receipt.json`; encodings and the per-model summary remain under `results/structural_alphabet/coordinate-gdm-expanded-v1`.
+
+These counts cover full-model residues, not just retained alignment sites. The receipt explicitly has no PAE parent, the coordinate-only NPZs omit `feature_max_pae`, and no joint pLDDT/PAE count is reported. Final mapping-bound PAE acquisition and `qualify_native_pae.py` remain required before rebuilding expanded matched AA/3Di phylogenetic inputs. Passing coordinate reconstruction is not experimental validation or an evolutionary acceleration result.

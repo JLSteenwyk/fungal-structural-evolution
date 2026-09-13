@@ -258,3 +258,7 @@ Separately verified the CDS source inventory for all seven external taxa. Four p
 Completed the genome/GTF/protein-matched extraction audit for all 8,694 Creolimax proteins. Exact translation passes for 8,558 CDSs; 136 remain exceptions (71 translation mismatches, 60 initial-phase flags, four non-triplet lengths, one ambiguous transcript mapping). Four strand/splice/phase/bounds tests passed, and independent output readback reproduced every accepted translation and the complete status partition. No exception was silently repaired.
 
 Updated the external CDS source inventory: all seven external taxa now have available published CDSs or verified extracted subsets; published-source translation checks and extraction exceptions remain explicit. Full NCBI CDS acquisition continues, as do the structural and phylogenetic jobs. Selection tests remain pending.
+
+## Expanded coordinate audit completed
+
+The 13,153-model native coordinate/partner audit reached successful completion: 6,910,765 residues, 6,884,459 valid states and 26,306 invalid terminal states. Six-residue pLDDT70 retains 4,719,638 valid states. All 13,153 encoding hashes, model identity counts, summary totals and script provenance passed independent readback. Encodings occupy approximately 95 MB. PAE retrieval is still running; no joint-confidence result or expanded evolutionary inference is claimed.
