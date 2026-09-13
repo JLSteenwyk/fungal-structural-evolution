@@ -2092,3 +2092,19 @@ projection/readback consumers to accept the explicitly named derived-audit
 status only with matching union source provenance. The source-audit workflow
 continues to use its original status. Normalization, combined row readback and
 controlled exposure/coupling analyses remain pending.
+
+
+Combined accessibility projection and normalization completed: all 1,699,035
+observed cells in 89 markers, 9,225 models and 9,332 marker–taxon combinations.
+Full projected-row and normalization readbacks passed. Tien has no values above
+one; Miller has 5,484, retained unclipped. The .25 threshold differs for 73,826
+cells (4.3452%) across scales. These are method sensitivities, not independent
+biological transitions or experimentally verified exposure.
+
+Updated predictor-specific coverage union: 22,677 usable marker–taxon cells
+across 525 entries (500 fungal entries, all 25 outgroups). Every constituent cell
+matched actual emitted AA/3Di FASTA identities. Amoeboaphelidium protococcarum
+remains uncovered. This does not establish 500 unique species or authorize
+pooling predictor-specific alignments. README now reflects completed ESMFold
+cohort integration. Supported combined fits and direct geometry remain active;
+controlled exposure/coupling inference and the full project remain incomplete.

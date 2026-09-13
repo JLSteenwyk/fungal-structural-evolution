@@ -1,0 +1,18 @@
+{
+  "status": "complete_audited_accessibility_projection",
+  "markers": 89,
+  "models_used": 9225,
+  "observed_sites_linked": 1699035,
+  "source_receipts": {
+    "inputs": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+    "snapshot": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+    "accessibility": "707fc03eeb04090145b28807eb2484c275d09eee8034fc629496d904287d41e7",
+    "audit": "4b7899af7c7893aac09a1c41ab46b6c080abdab318fa449fcb069d598d1c0b53"
+  },
+  "script_sha256": "3f049f42de1a3833ec6e511e995a147534cc466c79330c59efc85fc6231845d6",
+  "interpretation": "Continuous isolated-chain focal-residue ASA on every observed paired AA/3Di site; masked alignment cells omitted and counted. Native context confidence comes from the paired inputs. ASA is not normalized across amino acids and no categorical core/surface, interface, evolutionary transition or rate is inferred. Predicted domain placement and unobserved partners can affect ASA.",
+  "artifacts": {
+    "marker_summary.tsv": "d566e27870648a4c890ee9c5a70de3a9a80448a7069e4ecfde1a0b15b21ce4bd",
+    "paired_site_accessibility.tsv.gz": "fd0dd525421c8a061a2c982cf967ff768316c2c924397789c01f04afc874ff3c"
+  }
+}

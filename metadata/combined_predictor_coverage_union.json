@@ -1,0 +1,27 @@
+{
+  "status": "complete_descriptive_predictor_coverage_union",
+  "sources": {
+    "AlphaFold": {
+      "path": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+      "usable_marker_taxon_cells": 13565
+    },
+    "ESMFold": {
+      "path": "results/phylogeny/paired-inputs-esmfold-combined-v1",
+      "receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+      "usable_marker_taxon_cells": 9332
+    }
+  },
+  "usable_marker_taxon_cells": 22677,
+  "taxa": 525,
+  "fungal_entries": 500,
+  "outgroup_entries": 25,
+  "uncovered": [
+    {
+      "taxon_id": "F1243177",
+      "species_name": "Amoeboaphelidium protococcarum"
+    }
+  ],
+  "interpretation": "Union of actual eligible marker/taxon cells in the two predictor-specific paired datasets. No mixed-predictor alignment, uniform coverage, species-identity resolution or pooled evolutionary inference.",
+  "readback": "Every eligible marker/taxon cell independently matched actual emitted AA and 3Di FASTA identifiers in both source datasets."
+}
