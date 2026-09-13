@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Map exact protein accessions through GFF Parent links; flag ambiguous loci."""
 import csv
+import fcntl
 import gzip
 import hashlib
 import json
@@ -88,6 +89,10 @@ def parse_creolimax_gtf(path):
 
 
 def main():
+    folder = ROOT / 'results/gene_mapping'
+    folder.mkdir(parents=True, exist_ok=True)
+    lock = (folder / '.mapping.lock').open('w')
+    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     with (ROOT / 'metadata/analysis_manifest.tsv').open() as handle:
         taxa = {row['taxon_id'] for row in csv.DictReader(handle, delimiter='\t')}
     inputs = {r['taxon_id']: r for r in json.loads((ROOT / 'metadata/qc_input_receipts.json').read_text())}
@@ -108,8 +113,12 @@ def main():
         if name in taxa:
             annotations[name] = dict(external[path], taxon_id=name,
                                      mapping_mode='creolimax_gtf' if article == '1403592' else 'transcript_gff')
-    folder = ROOT / 'results/gene_mapping'
-    folder.mkdir(parents=True, exist_ok=True)
+    coordinate_audit = ROOT / 'metadata/sanchytrid_coordinate_audit.json'
+    if coordinate_audit.exists():
+        for record in json.loads(coordinate_audit.read_text())['taxa']:
+            if record['taxon_id'] in taxa:
+                annotations[record['taxon_id']] = dict(record, path=record['mapping_path'],
+                    sha256=record['mapping_sha256'], mapping_mode='verified_orf_coordinates')
     summaries = []
     for name, annotation in sorted(annotations.items()):
         gff = ROOT / annotation['path']
@@ -118,16 +127,25 @@ def main():
             if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise ValueError(f'Changed source: {path}')
         mode = annotation.get('mapping_mode', 'ncbi_protein_gff')
-        mapping, partial = parse_creolimax_gtf(gff) if mode == 'creolimax_gtf' else parse_gff(gff, mode == 'transcript_gff')
+        if mode == 'verified_orf_coordinates':
+            with gff.open() as handle:
+                mapping = {r['protein_id']: {r['orf_id']} for r in csv.DictReader(handle, delimiter='\t')
+                           if r['status'] == 'exact_translation'}
+            partial = set()
+        else:
+            mapping, partial = parse_creolimax_gtf(gff) if mode == 'creolimax_gtf' else parse_gff(gff, mode == 'transcript_gff')
         rows, counts = [], Counter()
         with source.open() as handle:
             for record in SeqIO.parse(handle, 'fasta'):
                 loci = mapping.get(record.id, set())
                 status = 'unique_gene' if len(loci) == 1 else ('multiple_genes' if loci else 'unmapped')
+                if mode == 'verified_orf_coordinates' and loci:
+                    status = 'provisional_orf'
                 counts[status] += 1
                 rows.append({'taxon_id': name, 'protein_id': record.id,
                              'gene_ids_json': json.dumps(sorted(loci)), 'status': status,
-                             'partial_cds': record.id in partial, 'protein_length': len(record.seq)})
+                             'partial_cds': 'unknown' if mode in ('verified_orf_coordinates', 'transcript_gff', 'creolimax_gtf') else record.id in partial,
+                             'protein_length': len(record.seq)})
         target = folder / f'{name}.tsv'
         with target.with_suffix('.partial').open('w') as out:
             writer = csv.DictWriter(out, list(rows[0]), delimiter='\t', lineterminator='\n')
@@ -139,7 +157,7 @@ def main():
                           'uniquely_mapped_genes': len(gene_counts),
                           'genes_with_multiple_proteins': sum(n > 1 for n in gene_counts.values()),
                           'mapping_mode': mode,
-                          'gff_sha256': annotation['sha256'], 'proteome_sha256': inputs[name]['sha256'],
+                          'annotation_sha256': annotation['sha256'], 'proteome_sha256': inputs[name]['sha256'],
                           'mapping_path': str(target.relative_to(ROOT)),
                           'mapping_sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
     (ROOT / 'metadata/gene_mapping_snapshot.json').write_text(json.dumps({

@@ -1,0 +1,35 @@
+{
+  "taxa": [
+    {
+      "taxon_id": "F2109901",
+      "proteins": 7220,
+      "status_counts": {
+        "exact_translation": 7220
+      },
+      "contig_aliases_verified": 181,
+      "protein_sha256": "e58e2b8e712a97d18f4de782ddd9b07f32e9c2b61cfff382368b4ee867f93131",
+      "genome_sha256": "94fa35b4f81a6912b7d3d5567e6661ffc6e1efd97a9527dc9be5fdf5b9ba5664",
+      "mapping_path": "results/sanchytrid_coordinates/F2109901.tsv",
+      "mapping_sha256": "17fc12d55d9425339b5af50a2f49ad582e82a3de28e3bfb56b00035fde87a79c",
+      "cds_path": "results/sanchytrid_coordinates/F2109901.verified_cds.fna",
+      "cds_sha256": "e3d145fcbe835a0d9e26c8cd4aed546ceeed47b4b0a12589838d72a34f750c8e"
+    },
+    {
+      "taxon_id": "F2020955",
+      "proteins": 9368,
+      "status_counts": {
+        "exact_translation": 9367,
+        "coordinates_out_of_bounds": 1
+      },
+      "contig_aliases_verified": 711,
+      "protein_sha256": "1b160f2719a345c7621cb2bd7fac48248e442f933a2280664c1fd445d1250188",
+      "genome_sha256": "8e6fe4b3b69ec1e5e20ec390a4fc0d0e214f03ca246e93450c9018d4d6b4fa37",
+      "mapping_path": "results/sanchytrid_coordinates/F2020955.tsv",
+      "mapping_sha256": "6e3d81440a1a90bbe18d76ba2fb367ab2edaef07b70534df7b1bc1c8c8161717",
+      "cds_path": "results/sanchytrid_coordinates/F2020955.verified_cds.fna",
+      "cds_sha256": "68f1a9723341178af92557e63021cb19d2cff7dc426c4cf5f572a152bcb7875d"
+    }
+  ],
+  "translation_table": 1,
+  "note": "Verified genomic ORFs are not resolved gene/isoform models. Overlap, annotation completeness and assembly discrepancies still require assessment."
+}
