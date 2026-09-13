@@ -90,3 +90,35 @@ python scripts/retrieve_experimental_metadata.py \
 This is acquisition, not a sequence-matching or experimental-quality result.
 Deposited polymer sequences and observed atomic residues will be assessed
 separately; a complete deposited sequence may still have missing coordinates.
+
+
+## Frozen initial deposited-sequence screen
+
+The first explicit partial screen freezes 666 verified entity responses while
+retrieval continues (2,926 candidates pending). Its 666 accession-linked model
+comparisons comprise 541 exact full canonical sequences, 66 exact uniquely
+placed fragments, 45 requiring alignment/variant review, 12 containing the target
+inside a longer construct, and two with noncanonical sequences. These counts
+follow retrieval order; they do not estimate benchmark coverage across all taxa.
+Repeated experimental entities for one protein are not independent protein
+observations. Exact-full rows passed sequence-hash and length equality readback.
+
+`screen_experimental_sequences.py` retains unique fragment offsets and detects
+repeated-fragment ambiguity without arbitrary alignment selection. It preserves
+reported mutation, artifact and nonstandard-monomer counts, including unknowns.
+Longer constructs are not automatically called affinity tags. Four tests cover
+full matches, unique/repeated fragments, constructs, substitutions and missing
+or noncanonical sequences. All benchmark-eligibility fields remain pending.
+
+```bash
+python scripts/screen_experimental_sequences.py \
+  --metadata data/experimental_structures/metadata-v1 \
+  --output results/experimental_structures/sequence-screen-partial-v1 \
+  --allow-partial
+```
+
+The receipt pins every included entity response receipt. New runs against the
+expanding download require new output directories and may include more entities.
+Without `--allow-partial`, complete metadata retrieval is required. Even an exact
+canonical sequence may include chemically modified monomers or missing atomic
+coordinates; sequence equality alone does not establish benchmark eligibility.

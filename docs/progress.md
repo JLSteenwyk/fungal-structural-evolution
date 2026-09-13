@@ -829,3 +829,15 @@ identities/sequence fields are present. The full 5,227-response stage remains
 running; exact sequence, construct and experimental-quality results are pending.
 The preceding turn completed candidate nomination; this turn acquires the data
 needed to determine actual reference eligibility. The full goal stays active.
+
+
+### Experimental sequence correspondence screen executed
+
+Implemented and tested deposited-sequence classification, then froze a partial
+screen of 666 verified entity responses. Found 541 exact full canonical-sequence
+matches and 66 uniquely positioned exact fragments; 59 other rows retain explicit
+construct, variant/alignment or noncanonical review states. All exact-full rows
+passed hash/length readback. Repeated entities are not independent proteins and
+no candidate is yet declared an eligible experimental benchmark. Full metadata
+retrieval continues. The prior turn started that acquisition; this turn produces
+actual sequence correspondence evidence. The full research goal remains active.
