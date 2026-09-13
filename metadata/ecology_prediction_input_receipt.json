@@ -1,0 +1,29 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "purpose": "Same-method ecological marker coverage, regardless of existing AlphaFold availability; all curated species, not phenotype-selected families.",
+  "ecology_evidence_receipt_sha256": "707949cec28de226a6a0d0b3afc9617ebbebcca7ba159cee91475e3652f50451",
+  "ecology_table_sha256": "f6e17839598d8b23707b5e923bd96d4478e3200e84d00337d7d0067171a94ee9",
+  "source_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "prior_input_receipt_sha256": {
+    "markers-v1": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+    "markers-followon-v1": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458",
+    "predictor-controls-v1": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539"
+  },
+  "script_sha256": "93036ccbf72cb8e023d072d1c55d5507b6fe6f3bef26dbb485fc9950323a9c86",
+  "prediction_candidates": 675,
+  "candidate_residues": 212983,
+  "curated_taxa": 21,
+  "candidate_taxa": 18,
+  "sequence_status_counts": {
+    "deferred_length": 1040,
+    "new_same_method_candidate": 675,
+    "reserved_existing_queue": 739,
+    "deferred_noncanonical": 27
+  },
+  "limitations": "Prepared only, not launched. Existing-queue reservation does not assert successful prediction. Full proteins only, no truncation; length/alphabet exclusions retained. Confidence, orthology and transition-replication gates still apply.",
+  "artifacts": {
+    "candidates.faa": "37637e5e6ccf088e9c5b4990635ccd4f707e4b2218415dff51c638c31aab6460",
+    "ecology_marker_links.tsv": "711748757c3b11d46703d817df461e6737af062e4392b1d0fd9d71ead5758b3e",
+    "sequence_disposition.tsv": "0b190aec9ea31b7aaca7b24b8b7bb20c2cc07a69b9f3285ab66ff40e98c10486"
+  }
+}

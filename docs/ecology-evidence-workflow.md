@@ -44,3 +44,19 @@ The separate Suillus host table covers all ten selected entries: eight have repo
 The frozen AlphaFold and ESMFold paired-input receipts are joined separately to curated taxa. All 21 have an eligible marker in at least one source. However, the five-taxon Amanita group shares zero eligible markers across every member within either source. The three-taxon Cenococcum/comparator group shares one AlphaFold marker (4974767at2759) and zero ESMFold markers. Cenococcum has 1 AlphaFold/28 ESMFold eligible markers, versus 118/0 for Glonium and 122/0 for Lepidopterella.
 
 These stringent group intersections identify missing matched-source coverage; they do not rule out every pairwise comparison or quantify power. Prediction method is strongly confounded with ecological state in the current Cenococcum contrast. Targeted same-method prediction and renewed confidence filtering are needed before ecological inference, alongside orthology, taxonomy and phylogenetic replication checks. Coverage receipts pin both source inputs, both curated evidence tables, the builder and output tables.
+
+## Same-method prediction inputs
+
+`python scripts/prepare_ecology_prediction_inputs.py --output data/prediction_inputs/ecology-markers-v1`
+freezes all eligible missing ESMFold marker sequences across the 21 curated
+species, including proteins already represented by AlphaFold. The immutable queue
+contains 675 full canonical proteins (212,983 residues) across 18 species. Another
+739 sequences are reserved in existing prediction queues; this is not a claim of
+completed predictions. There are 1,040 length-deferred and 27 noncanonical
+sequences, retained explicitly without truncation or residue substitution.
+
+Source receipts and full FASTA readback pass, and the new queue is disjoint from
+all three existing input queues. This queue is prepared but not launched: both
+GPUs currently run earlier batches. A resource estimate and device-availability
+check precede execution. More predictions do not guarantee confidence-qualified
+coverage, verified orthology or ecological replication.

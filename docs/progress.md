@@ -696,3 +696,9 @@ saprotrophic comparators currently have no eligible ESMFold markers, exposing
 prediction-source confounding that requires matched-source coverage before tests.
 Builder checks verify source hashes and exact host-panel membership. This is an
 evidence/availability checkpoint, not an ecological effect or completed project.
+
+Prepared 675 additional same-method ecological marker predictions across 18
+species, disjoint from existing queues. Inputs and dispositions are frozen and
+read back successfully; execution remains pending GPU availability and a resource
+forecast. The exhaustive local geometry producer has now completed and awaits
+independent output validation.
