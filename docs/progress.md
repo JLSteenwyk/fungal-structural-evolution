@@ -1239,3 +1239,15 @@ conversion are both verified live. The previous turn started controlled score
 rescoring; this turn advances an independent prerequisite for interpreting
 structural change. Full domain outputs and the overall research goal remain
 incomplete.
+
+### Expanded structural-feature dependency audits started; local audit complete
+
+Completed the feature-overlap audit of all 72 frozen ESMFold paired markers:
+4,669 taxon–marker alignments and 714,936 observed features. Of 3,901,410 pairs
+sharing coordinates, 44.24% exceed the reach of a length-10 circular block and
+25.75% that of length 30. All paired alignment identities and observed counts
+passed FASTA readback. Expanded AlphaFold feature auditing, domain geometry and
+normalization controls remain verified live. The preceding turn extended domain
+geometry; this turn advances uncertainty assessment for sequence–structure
+comparisons. Potential dependence is not measured covariance, and the full
+research goal remains active and incomplete.

@@ -226,3 +226,33 @@ results/phylogeny/paired-lineage-figure-v1`, choosing a new output for reruns.
 SVG, PNG and PDF artifacts are available there; the PNG was visually inspected.
 Source table hashes, group/denominator equality and nonnegative depth partitions
 are checked. The figure receipt and an SVG copy are versioned.
+
+### Feature dependencies in the expanded paired datasets
+
+Applied the existing feature-overlap audit to both full frozen paired datasets,
+with one worker per source and a combined 16 GB planning allowance. Both existing
+overlap-graph tests passed. Source receipts and a 0.1–4 hour planning range are
+tracked in `metadata/expanded_feature_overlap_resource_plan.json`.
+
+The ESMFold audit completed: 72 markers, 4,669 taxon–marker alignments, 714,936
+observed features, and 3,901,410 within-model feature pairs sharing coordinates.
+Of these overlap pairs, 1,725,795 (44.24%) are separated by at least 10 circular
+alignment columns and 1,004,510 (25.75%) by at least 30. These pairs cannot fit
+together in a single block of the corresponding length. The calculation measures
+potential shared-coordinate dependence, not covariance or effective sample size;
+counts across related taxa are not independent observations.
+
+Complete FASTA readback verified every emitted alignment identity, length and
+observed-state count, with summary totals and component/count bounds. This is
+not an independent reconstruction of every feature graph. Results are tracked
+in `metadata/feature_overlap_esmfold*`. The expanded AlphaFold audit remains
+running; no result is claimed for it yet.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_3di_feature_overlap.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --encodings results/structural_alphabet/audited-esmfold-partial-v1 --snapshot results/structural_markers/esmfold-partial-v1 --output results/phylogeny/feature-overlap-esmfold-partial-v1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_3di_feature_overlap.py --inputs results/phylogeny/paired-inputs-gdm-expanded-v1 --encodings results/structural_alphabet/audited-gdm-expanded-v1 --snapshot results/structural_markers/gdm-expanded-v1 --output results/phylogeny/feature-overlap-gdm-expanded-v1
+```
+
+Any expanded branch-resampling analysis must retain these limits: local block
+sensitivity alone does not establish calibrated uncertainty for structural
+change, and source-specific results cannot be pooled as independent replicates.

@@ -1,0 +1,28 @@
+{
+  "status": "prelaunch_expanded_feature_dependency_audits",
+  "sources": {
+    "AlphaFold": {
+      "markers": 124,
+      "taxon_marker_alignments": 13565
+    },
+    "ESMFold": {
+      "markers": 72,
+      "taxon_marker_alignments": 4669
+    }
+  },
+  "cpu_workers": 2,
+  "threads_per_worker": 1,
+  "memory_gb_planning_total": 16,
+  "disk_gb_planning": 2,
+  "wall_hours_planning": [
+    0.1,
+    4
+  ],
+  "cost": "Existing authorized host",
+  "basis": "Existing small-input auditor constructs shared-residue feature graphs for each model/marker alignment. Expanded inputs require complete state/mask readback; no geometry optimization.",
+  "producer_sha256": "57355fcd91b14312f4fed132d07963b002984b328b29020818d15e14e89abbe5",
+  "input_receipts": {
+    "gdm-expanded": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "esmfold-partial": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+  }
+}
