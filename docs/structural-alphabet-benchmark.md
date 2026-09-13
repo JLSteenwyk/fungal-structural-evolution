@@ -152,3 +152,23 @@ Branch estimates still need comparisons with direct geometry, uncertainty,
 alignment and taxon sensitivities. Native coordinate encoding does not remove
 sequence-derived prediction circularity: alternative predictors and experimental
 structures remain required controls.
+
+## Expanded confidence-qualified encodings completed
+
+All 13,153 expanded GDM models have completed native coordinate and confidence
+qualification. Their 6,910,765 residues contain 6,884,459 valid native states
+and 26,306 explicitly invalid states. Of the valid states, 5,136,862 have focal
+pLDDT at least 70, 4,719,638 meet that threshold across all six feature-context
+residues, and 4,714,151 additionally meet maximum directional context PAE at
+most 10 Å. These counts apply to complete model sequences, not just aligned
+marker positions, and repeated model reuse across taxa is not independent data.
+
+The controller checked complete acquisition, exact catalog/final-mapping
+agreement, final-mapping-bound cache validation, native qualification and every
+per-model NPZ hash/identity/joint count. Completed receipts are versioned as
+`metadata/expanded_confidence_pipeline_receipt.json` and
+`metadata/expanded_qualified_encoding_receipt.json`; detailed encodings and
+model summary remain under `results/structural_alphabet/audited-gdm-expanded-v1`.
+Expanded paired alignment preparation has started. Geometry calibration,
+lineage-qualified coverage, structural model adequacy and evolutionary
+inference for this expanded snapshot remain pending.

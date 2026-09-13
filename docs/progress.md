@@ -438,3 +438,16 @@ markers. Missing group members and all results remain explicit. Two tests and
 output/hash/full-grid checks pass. This partial gene-tree screen prioritizes
 orthology/alignment review and does not establish species monophyly, selection
 or ecological replication.
+
+## Expanded structural confidence integration completed
+
+All 13,153 models passed the complete staged pipeline and per-model readback:
+6,910,765 residues, 6,884,459 valid native states and 4,714,151 states meeting
+joint six-residue pLDDT ≥70 / maximum directional context PAE ≤10. Both source
+linkage and the final summary hash pass. Whole-model state counts do not equal
+aligned or phylogenetically eligible sites. Completed receipts are versioned.
+
+The dependent paired-alignment producer has started on the full 526-taxon,
+125-marker matrix using these qualified encodings. Lineage coverage and
+expanded likelihood fits will follow its completed outputs. The overall
+structural atlas and evolutionary analyses remain incomplete.

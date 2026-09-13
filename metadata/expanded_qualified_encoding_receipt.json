@@ -1,0 +1,37 @@
+{
+  "status": "complete_native_3di_feature_audit",
+  "models": 13153,
+  "totals": {
+    "length": 6910765,
+    "valid_states": 6884459,
+    "invalid_states": 26306,
+    "valid_focal_plddt70": 5136862,
+    "valid_feature_plddt70": 4719638,
+    "valid_feature_plddt70_pae10": 4714151
+  },
+  "native_config_sha256": "0f1eb30b81cc5948511a0c47be847919fdb225fc4f3efdedbb05bfc3a1de8114",
+  "native_path": "results/structural_alphabet/native-gdm-expanded-v1",
+  "native_artifacts": {
+    "amino_acids.faa": "47ed0185de5066235c55820b4f5397161fdbb7e01bd0935557f0144d4b81324a",
+    "states_3di.faa": "84e00229f57a65ad9b91300a481c8af4921b4789ce1d5cd6aca775c9cf2c3cde",
+    "descriptors.tsv": "b14192f81951dad351155f71fb9ccdab58dd262c15ccecdedc039b56890ade2b",
+    "model_provenance.json": "c44d05504eaf61f6abc2a68e21f6a990bf7ae9abf439d8c0d8c105c8a5880a36"
+  },
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "pae_receipt_sha256": "80e7577b2bbe17717f0b835285cfcfdd44720099280d0028d9c5ec56275595b4",
+  "script_sha256": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+  "numpy_version": "2.2.6",
+  "feature_verification_tolerance": {
+    "rtol": 0.00052,
+    "atol": 1e-10,
+    "reason": "Native descriptor output has four significant digits"
+  },
+  "confidence_stage": "plddt_and_pae",
+  "interpretation": "Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.",
+  "artifacts": {
+    "model_summary.tsv": "00ebcbc8a7a9d3b49be122664f1141acc59cd8eec613ec2970edca5d577a2926"
+  },
+  "coordinate_audit_receipt_sha256": "59bfb6ab8c604c2d3db93d3f7fac36461348e6ace1f0923f363ff1aa7128d172",
+  "coordinate_audit_path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/coordinate-gdm-expanded-v1",
+  "coordinate_audit_script_sha256": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b"
+}
