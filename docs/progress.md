@@ -1869,3 +1869,13 @@ entries (500 fungal entries/all 25 outgroups), adding 67 newly represented taxa;
 Amoeboaphelidium protococcarum F1243177 remains uncovered. This is a union of
 separately ready cells, not a merged analysis or proof of 500 unique species.
 Same-method cohort integration and predictor-confounding controls remain pending.
+
+
+Expanded AlphaFold accessibility full audit passed all 13,153 models and
+6,910,765 residues (session 22787 exit zero). Complete audit table/model identity,
+length, entry-hash and total readback matched the producer and frozen snapshot.
+The automatic handoff launched paired-site projection as PID 3397669 under
+session 20643; normalization remains queued behind it. This is output
+consistency evidence, not independent ASA integration or biological validation.
+See metadata/gdm_full_accessibility_audit_receipt.json and
+docs/residue-accessibility.md.

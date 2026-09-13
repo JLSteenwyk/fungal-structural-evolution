@@ -1,0 +1,44 @@
+{
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/link_paired_sites_accessibility.py",
+      "--inputs",
+      "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "--snapshot",
+      "results/structural_markers/gdm-expanded-v1",
+      "--accessibility",
+      "results/structural_annotations/accessibility-gdm-v1",
+      "--audit",
+      "results/structural_annotations/accessibility-gdm-full-audit-v1",
+      "--output",
+      "results/structural_annotations/paired-accessibility-gdm-expanded-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/normalize_paired_accessibility.py",
+      "--projection",
+      "results/structural_annotations/paired-accessibility-gdm-expanded-v1",
+      "--snapshot",
+      "results/structural_markers/gdm-expanded-v1",
+      "--config",
+      "config/accessibility_normalization.json",
+      "--output",
+      "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1"
+    ]
+  ],
+  "config_sha256": "0829e444700cd691852ab456c294fe9822234a571e35208083657956fd15a758",
+  "audit_receipt_sha256": "6b8757498ce20f1ae4640f9769a206ab038d0d00b0c2a07ad5ebd4102688e4b7",
+  "resource_plan": {
+    "cpus": 1,
+    "memory_allowance_gib": 16,
+    "minimum_available_memory_bytes": 34359738368,
+    "output_allowance_bytes": 10737418240,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "cost": "Existing authorized host; no new services.",
+    "basis": "Projection retains the full 4,895,692-row residue mapping in memory; allowance exceeds the smaller local cohort. Sequential normalization streams rows. Runtime and peak memory remain estimates."
+  }
+}

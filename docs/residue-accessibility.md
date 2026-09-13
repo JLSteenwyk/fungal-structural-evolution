@@ -450,3 +450,21 @@ It pins 11 dependencies and will check raw coordinate/residue identity, hashes,
 atom counts, confidence and ASA totals. This does not independently integrate
 ASA. Projection, normalization and controlled exposure/evolution tests remain
 pending; calculation launch is not evidence of a biological association.
+
+
+## Expanded AlphaFold full audit passed; projection running
+
+The full audit exited zero (session 22787): all 13,153 models and 6,910,765
+residues passed raw-coordinate/table readback. The completed audited-model table
+was checked against every model identity, length and per-entry receipt hash in
+the frozen snapshot and complete producer receipt; its aggregate residue count
+matched exactly. This checks calculation provenance and output consistency,
+not an independent solvent-area integration or biological exposure validation.
+
+Audit receipt: `metadata/gdm_full_accessibility_audit_receipt.json`, SHA256
+`6b8757498ce20f1ae4640f9769a206ab038d0d00b0c2a07ad5ebd4102688e4b7`.
+The queued controller automatically started paired-site projection as PID
+3397669 under session 20643. The actual commands and resource checks are recorded
+in `metadata/gdm_accessibility_projection_launch.json`. Projection is running;
+normalization follows sequentially. Final projection/normalization counts,
+independent row readback and exposure/evolution analyses remain pending.
