@@ -1433,3 +1433,13 @@ scores matched a separate recurrence; all site exposure summaries also matched.
 These are minimum counts with explicit model limits, not branch rates or
 phylogenetically adjusted coupling tests. Main jobs were verified live. The
 overall research goal remains active and incomplete.
+
+
+### Live resampling missing-data event reconstructed
+
+After the preceding completed site-parsimony dataset, verified all main jobs
+live and inspected a newly reported unestimable local resampling draw. Complete
+AA/3Di reconstruction confirms that block sampling leaves F456999 entirely
+missing despite 94 observed original sites. The intended no-fit/no-replacement
+handling is intact. Resampling remains active and requires a final all-draw
+summary. The overall research goal remains active and incomplete.

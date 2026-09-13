@@ -358,3 +358,17 @@ The run uses one worker, with a prelaunch 4 GB memory/2 GB output plan.
 Receipts, complete field-preservation readback and marker coverage are tracked
 in `metadata/esmfold_tree_path_point_*`; full point tables remain outside Git.
 The resampling producer remains active and unmodified by this benchmark.
+
+
+## Expanded local resampling: inspected unestimable draw
+
+While the full local run remains active, marker `4867008at2759`, block length
+30, replicate 168 reported `all_missing_taxon`. Complete receipt/artifact hash
+and original-column reconstruction checks passed for both sampled alignments.
+Its 177 sampled columns contain no observed state for `F456999`; the original
+paired alignment has 94 observed sites for that taxon in each alphabet.
+The result has no fitted models and is retained without replacement. This is
+a sampling-induced unestimable draw, not an execution failure. The final run
+summary must count all such draws before reporting conditional uncertainty.
+This single inspection does not establish the full-run failure frequency.
+See `metadata/esmfold_unestimable_draw_4867008_block30_rep168.json`.
