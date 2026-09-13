@@ -89,3 +89,6 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 - `expanded_native_3di_resource_plan.json`: prelaunch envelope for expanded native extraction, with the final mapping receipt hash and output path.
 
 - `expanded_native_3di_config.json` and `expanded_native_export_audit_receipt.json`: completed extraction commands and verified complete-sequence/state/descriptor exports for all expanded models. Finite descriptor values and matching exports do not replace coordinate reconstruction or confidence masking; zero-offset rows remain invalidity candidates for the full native audit.
+
+- `native_coordinate_regression_receipt.json`, `native_pae_regression_receipt.json`, and `staged_native_regression_receipt.json`: complete historical-snapshot regression of staged coordinate and PAE validation, with exact agreement of every final array and model summary. These receipts do not prove expanded production completion.
+- `expanded_coordinate_audit_resource_plan.json`: prelaunch single-worker envelope for 13,153-model coordinate/partner reconstruction while PAE acquisition proceeds; downstream confidence remains a separate gate.

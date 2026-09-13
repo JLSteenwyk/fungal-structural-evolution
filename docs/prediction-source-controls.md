@@ -99,3 +99,38 @@ python scripts/audit_native_exports.py \
 ```
 
 `metadata/expanded_native_export_audit_receipt.json` pins the checked exports; `metadata/expanded_native_3di_config.json` records commands and software/source identities. This completed export audit precedes coordinate-based reconstruction of native features/partners and the six-residue pLDDT/PAE audit, which remains pending completed confidence acquisition. The existing small-snapshot evolutionary benchmarks have not been rerun on this expansion yet.
+
+## Coordinate audit independent of confidence acquisition
+
+`audit_3di_features.py` now supports a coordinate-only stage by omitting `--pae`. It reconstructs the spatial partner and all ten native features from the coordinates, validates the native validity mask and descriptor tolerance, and records focal and six-residue minimum pLDDT. Its receipt has status `complete_native_3di_coordinate_audit`; it has no PAE receipt or joint-confidence count, and the NPZ files omit `feature_max_pae`. Missing confidence is not represented as zero or accepted as passing.
+
+`qualify_native_pae.py` then joins a completed coordinate audit to completed PAE acquisition only when their mapping receipt hashes and complete model/version universes agree. It checks every encoding and PAE artifact hash and complete-sequence identity, then computes the maximum over all 36 directional entries in each six-residue feature context. Invalid sites remain NaN. It produces the same final encoding fields and confidence counts as the original integrated audit.
+
+The full historical 422-model dataset was reprocessed through both stages. `compare_native_audits.py` verified exact agreement of **all 2,954 arrays**, every model summary and all totals with the earlier completed audit, including NaN placement. The reference contains 215,518 residues and 149,351 valid states passing both six-residue pLDDT70 and PAE10. Three geometry tests and two additional directional-context tests passed. This is a computational regression across an existing full checkpoint, not a new biological pilot or evidence of expanded-audit completion.
+
+```bash
+python scripts/audit_3di_features.py \
+  --native results/structural_alphabet/native-marker-v2 \
+  --snapshot results/structural_markers/snapshot-v2 \
+  --output results/structural_alphabet/coordinate-regression-v1
+python scripts/qualify_native_pae.py \
+  --coordinates results/structural_alphabet/coordinate-regression-v1 \
+  --pae results/structural_pae/snapshot-v1 \
+  --output results/structural_alphabet/qualified-regression-v1
+python scripts/compare_native_audits.py \
+  --reference results/structural_alphabet/audited-marker-v2 \
+  --candidate results/structural_alphabet/qualified-regression-v1 \
+  --output results/structural_alphabet/staged-native-regression-v1.json
+```
+
+After this successful regression and a recorded resource estimate, the expanded coordinate-only audit was launched with one worker and numerical-library threads fixed at one:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+python scripts/audit_3di_features.py \
+  --native results/structural_alphabet/native-gdm-expanded-v1 \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --output results/structural_alphabet/coordinate-gdm-expanded-v1
+```
+
+Its 13,153 models contain 6,910,765 residues; maximum model length is 2,413. The plan allows 8 GB RAM, 2 GB additional output and approximately 0.5–3 hours on the existing host, with no new charges. Coordinate parsing and quadratic within-model partner calculations can now overlap PAE retrieval. The existing output directory is immutable; a partial directory is not a completed audit or an automatically resumable result. Final mapping-bound PAE acquisition and both completed audit stages are still required before expanded phylogenetic inference. Logs: `logs/native_coordinate_gdm_expanded_v1.log`.

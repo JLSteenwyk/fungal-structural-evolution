@@ -67,14 +67,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--native', type=Path, required=True)
     parser.add_argument('--snapshot', type=Path, required=True)
-    parser.add_argument('--pae', type=Path, required=True)
+    parser.add_argument('--pae', type=Path, help='Omit for coordinate-only audit; PAE qualification remains pending')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     args.output = args.output.resolve()
     checked_receipt(args.snapshot)
-    pr = checked_receipt(args.pae)
+    pr = checked_receipt(args.pae) if args.pae else None
     config = json.loads((args.native / 'config.json').read_text())
-    if config['mapping_receipt_sha256'] != sha(args.snapshot / 'receipt.json') or pr['mapping_receipt_sha256'] != config['mapping_receipt_sha256']:
+    if config['mapping_receipt_sha256'] != sha(args.snapshot / 'receipt.json') or (pr is not None and pr['mapping_receipt_sha256'] != config['mapping_receipt_sha256']):
         raise ValueError('Native extraction, coordinates and PAE have different provenance')
     for name, checksum in config['source_sha256'].items():
         if sha(args.native / 'source' / name) != checksum:
@@ -103,7 +103,7 @@ def main():
             descriptors[name] = data
     if set(descriptors) != set(by_name):
         raise ValueError('Incomplete descriptor model coverage')
-    pae_rows = {(r['model_id'], str(r['version'])): r for r in json.loads((args.pae / 'pae_manifest.json').read_text()) if r['status'] == 'verified'}
+    pae_rows = {(r['model_id'], str(r['version'])): r for r in json.loads((args.pae / 'pae_manifest.json').read_text()) if r['status'] == 'verified'} if args.pae else {}
     if args.output.exists():
         raise FileExistsError('Use a new immutable audited encoding directory')
     args.output.mkdir(parents=True)
@@ -139,37 +139,44 @@ def main():
         if not np.array_equal(valid, descriptors[name][:, 9] != 0) or not np.allclose(features, descriptors[name], rtol=5.2e-4, atol=1e-10):
             error = np.abs(features - descriptors[name])
             raise ValueError(f'Native feature/partner reconstruction failed for {name}: max discrepancy {error.max()}')
-        pae_row = pae_rows[(model['model_id'], str(model['version']))]
-        pae_path = ROOT / pae_row['path']
-        if pae_row['sequence_sha256'] != model['sequence_sha256'] or sha(pae_path) != pae_row['gzip_sha256']:
-            raise ValueError('PAE identity differs')
-        pae = validate_pae(gzip.decompress(pae_path.read_bytes()), length)
         i = np.flatnonzero(valid); j = partner[i]
         context = np.stack([i - 1, i, i + 1, j - 1, j, j + 1], axis=1)
-        minimum, maximum = np.full(length, np.nan), np.full(length, np.nan)
+        minimum = np.full(length, np.nan)
         minimum[i] = plddt[context].min(axis=1)
-        maximum[i] = pae[context[:, :, None], context[:, None, :]].max(axis=(1, 2))
+        confidence_arrays = {}
+        if args.pae:
+            pae_row = pae_rows[(model['model_id'], str(model['version']))]
+            pae_path = ROOT / pae_row['path']
+            if pae_row['sequence_sha256'] != model['sequence_sha256'] or sha(pae_path) != pae_row['gzip_sha256']:
+                raise ValueError('PAE identity differs')
+            pae = validate_pae(gzip.decompress(pae_path.read_bytes()), length)
+            maximum = np.full(length, np.nan)
+            maximum[i] = pae[context[:, :, None], context[:, None, :]].max(axis=(1, 2))
+            confidence_arrays['feature_max_pae'] = maximum
         output = args.output / (name + '.npz')
         np.savez_compressed(output, sequence=np.array(sequence), states=np.array(structural), valid=valid,
             partner_residue_1based=np.where(valid, partner + 1, 0), ca_plddt=plddt,
-            feature_min_plddt=minimum, feature_max_pae=maximum)
+            feature_min_plddt=minimum, **confidence_arrays)
         summaries.append({'model_name': name, 'model_id': model['model_id'], 'version': model['version'],
             'sequence_sha256': model['sequence_sha256'], 'length': length, 'valid_states': int(valid.sum()),
             'invalid_states': int((~valid).sum()), 'valid_focal_plddt70': int((valid & (plddt >= 70)).sum()),
             'valid_feature_plddt70': int((valid & (minimum >= 70)).sum()),
-            'valid_feature_plddt70_pae10': int((valid & (minimum >= 70) & (maximum <= 10)).sum()),
             'encoding_path': str(output.relative_to(ROOT)), 'encoding_sha256': sha(output)})
+        if args.pae:
+            summaries[-1]['valid_feature_plddt70_pae10'] = int((valid & (minimum >= 70) & (maximum <= 10)).sum())
+        print(f'{len(summaries)} {name} coordinate features verified', flush=True)
     path = args.output / 'model_summary.tsv'
     with path.open('w') as handle:
         writer = csv.DictWriter(handle, list(summaries[0]), delimiter='\t', lineterminator='\n')
         writer.writeheader(); writer.writerows(summaries)
-    receipt = {'status': 'complete_native_3di_feature_audit', 'models': len(summaries),
-        'totals': {k: sum(r[k] for r in summaries) for k in ['length', 'valid_states', 'invalid_states', 'valid_focal_plddt70', 'valid_feature_plddt70', 'valid_feature_plddt70_pae10']},
+    receipt = {'status': 'complete_native_3di_feature_audit' if args.pae else 'complete_native_3di_coordinate_audit', 'models': len(summaries),
+        'totals': {k: sum(r[k] for r in summaries) for k in (['length', 'valid_states', 'invalid_states', 'valid_focal_plddt70', 'valid_feature_plddt70'] + (['valid_feature_plddt70_pae10'] if args.pae else []))},
         'native_config_sha256': sha(args.native / 'config.json'), 'native_path': str(args.native),
         'native_artifacts': {n: sha(args.native / n) for n in ['amino_acids.faa', 'states_3di.faa', 'descriptors.tsv', 'model_provenance.json']},
-        'mapping_receipt_sha256': sha(args.snapshot / 'receipt.json'), 'pae_receipt_sha256': sha(args.pae / 'receipt.json'),
+        'mapping_receipt_sha256': sha(args.snapshot / 'receipt.json'), 'pae_receipt_sha256': sha(args.pae / 'receipt.json') if args.pae else None,
         'script_sha256': sha(Path(__file__)), 'numpy_version': np.__version__,
         'feature_verification_tolerance': {'rtol': 5.2e-4, 'atol': 1e-10, 'reason': 'Native descriptor output has four significant digits'},
+        'confidence_stage': 'plddt_and_pae' if args.pae else 'coordinate_and_plddt_only_pae_pending',
         'interpretation': 'Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.',
         'artifacts': {'model_summary.tsv': sha(path)}}
     (args.output / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')

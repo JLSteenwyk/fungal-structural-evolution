@@ -1,0 +1,19 @@
+{
+  "status": "exact_semantic_native_audit_agreement",
+  "models": 422,
+  "arrays_checked": 2954,
+  "totals": {
+    "length": 215518,
+    "valid_states": 214674,
+    "invalid_states": 844,
+    "valid_focal_plddt70": 162620,
+    "valid_feature_plddt70": 149496,
+    "valid_feature_plddt70_pae10": 149351
+  },
+  "reference_path": "results/structural_alphabet/audited-marker-v2",
+  "candidate_path": "results/structural_alphabet/qualified-regression-v1",
+  "reference_receipt_sha256": "815cfb493b4941c96445f8c5b742ec9c0dcd1012b0847a37e52939b33c53fef6",
+  "candidate_receipt_sha256": "16a38dd3a484cd75cdf6d9f677cabc568193dc730daeb6228c0c82c669f9b2cd",
+  "script_sha256": "41a4a6fc874ba01416de89b9b69c4ba4562656c5f74aa8eed30a826db45ea694",
+  "interpretation": "All model summaries and every encoding array agree exactly, including NaN placement. Regression agreement validates computational equivalence on this complete historical snapshot, not biological accuracy or expanded-dataset completion."
+}

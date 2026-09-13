@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_coordinate_feature_audit",
+  "models": 13153,
+  "residues": 6910765,
+  "maximum_model_length": 2413,
+  "sum_squared_model_lengths": 4729663533,
+  "workers": 1,
+  "numerical_threads": 1,
+  "planning_ram_gb": 8,
+  "planning_output_gb": 2,
+  "planning_runtime": "Approximately 0.5\u20133 hours, dominated by Python CIF parsing; previous expanded mapper took approximately 35 minutes. Feature reconstruction adds quadratic within-model distance calculations.",
+  "cost": "Existing authorized host; no new charges",
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "regression_receipt_sha256": "d41495ab403968049f4d573a3a5c31f5e2d7ccf9307a143171fa5a18b8967ff9",
+  "output": "results/structural_alphabet/coordinate-gdm-expanded-v1",
+  "completion_gate": "Coordinate-only receipt lacks PAE; completed mapping-bound confidence acquisition and qualification required before phylogenetic use."
+}
