@@ -1409,3 +1409,15 @@ readback passed, and partial-audit inputs were confirmed to fail before output.
 This advances the evolutionary localization dataset; normalized exposure,
 core/surface sensitivity and phylogenetic tests remain unfinished. The overall
 research goal remains active and incomplete.
+
+
+### Exposure normalization added with explicit scale sensitivity
+
+The preceding turn completed full local accessibility and paired-site projection.
+This turn normalized every one of 714,936 sites with two published reference
+scales, retaining original annotations and unclipped indices. Full arithmetic,
+source-field and summary readback passed. Between 1.16% and 8.90% of sites change
+sides of the five diagnostic thresholds across scales; no biological core/surface
+labels or evolutionary transitions are inferred. DSSP/ShrakeRupley equivalence
+remains unestablished. Main fit, geometry, GPU prediction and resampling jobs
+were verified live. The overall research goal remains active and incomplete.

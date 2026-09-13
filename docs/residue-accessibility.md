@@ -219,3 +219,47 @@ is not normalized across amino-acid types; no categorical core/surface,
 interface or evolutionary transition is assigned here. Full-chain domain
 placement, low-confidence occluding residues and missing biological partners
 remain relevant. Phylogenetic modeling of changes in exposure is still pending.
+
+
+## Reference normalization and threshold sensitivity
+
+Normalized all 714,936 paired sites with two amino-acid-specific reference
+scales: Tien et al. theoretical ALLOWED-region values and the Miller values
+reproduced in their Table 1. The [primary paper](https://doi.org/10.1371/journal.pone.0080635)
+recommends the theoretical scale and separates terminal residues. Its maxima
+were evaluated with DSSP; our ShrakeRupley values use the same 1.4 Å probe but
+algorithm/radius equivalence has not been established. These outputs are
+reference-normalized accessibility indices, not a calibration of our ASA method.
+
+`config/accessibility_normalization.json` contains all 40 denominators, source
+XML URL/checksum and policies. The values were extracted from publisher XML and
+all matched Biopython's Wilke and Miller tables. The normalization retains
+original fields and values above one; terminal rows would receive blank indices.
+No terminal residues occur among these confidence-qualified native-context sites.
+
+| Strict threshold | Sites classified differently between scales | Fraction |
+| --- | ---: | ---: |
+| <0.05 | 8,300 | 1.16% |
+| <0.10 | 13,147 | 1.84% |
+| <0.20 | 23,845 | 3.34% |
+| <0.25 | 31,332 | 4.38% |
+| <0.50 | 63,609 | 8.90% |
+
+These thresholds are diagnostic choices, not accepted biological labels.
+Tien normalization produces no values above one in this site set; Miller
+produces 2,846, which are retained. Absence of overshoots does not establish
+method equivalence or accuracy. Changing denominators deterministically changes
+threshold assignments; these counts are not independent evolutionary events.
+Continuous values remain primary, with amino-acid identity and prediction
+context requiring controls in later comparative models.
+
+All original fields and 714,936 normalized rows passed readback: multiplying
+each index by its scale denominator reproduced ASA within 1e-12 relative and
+absolute tolerance. Both scale summaries and all five threshold summaries were
+independently accumulated and matched. Receipts, summaries and validation scope
+are in `metadata/esmfold_accessibility_normalization_*` and
+`metadata/esmfold_accessibility_threshold_sensitivity.tsv`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/normalize_paired_accessibility.py --projection results/structural_annotations/paired-accessibility-esmfold-v1 --snapshot results/structural_markers/esmfold-partial-v1 --config config/accessibility_normalization.json --output results/structural_annotations/paired-accessibility-normalized-esmfold-v1
+```

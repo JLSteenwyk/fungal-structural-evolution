@@ -39,3 +39,5 @@ These are methodological precedents, not an exhaustive systematic review. Access
 
 - Borneman et al. 2012 (online 2011). [The genome sequence of the wine yeast VIN7 reveals an allotriploid hybrid genome with Saccharomyces cerevisiae and Saccharomyces kudriavzevii origins](https://doi.org/10.1111/j.1567-1364.2011.00773.x). Primary selected-strain hybrid evidence; informs homeolog and species-tree sensitivity handling.
 - Salazar et al. 2019. [Chromosome level assembly and comparative genome analysis confirm lager-brewing yeasts originated from a single hybridization](https://doi.org/10.1186/s12864-019-6263-3). Selected CBS 1483 genome study; hybrid ancestry requires explicit handling before conventional species-tree reconciliation.
+
+- Tien et al. 2013. [Maximum Allowed Solvent Accessibilites of Residues in Proteins](https://doi.org/10.1371/journal.pone.0080635). Table 1 supplies theoretical ALLOWED-region reference areas and reproduces the older Miller scale. Terminal residues and ASA implementation differences require care; applied here as explicit normalization conventions with unclipped outputs.
