@@ -1805,3 +1805,12 @@ one per accepted marker. All source receipt hashes and the 124-marker sample gri
 were rechecked. Scope remains full pair/character verification with sampled
 numerical geometry, not full numerical reoptimization or branch-rate inference.
 Receipt: metadata/gdm_expanded_paired_geometry_audit_receipt.json.
+
+
+Full follow-on coordinate feature audit completed (session 91321 exit zero):
+4,252 models, 1,342,046 residues, 1,333,542 valid states and 8,504 invalid terminal
+states. Independent exported-encoding readback checked all 1,333,542 six-residue
+confidence minima and every model/summary count. Joint PAE qualification is queued
+under session 72300 after exact exporter PID 642606; all ten dependency pins
+matched. Pre-PAE six-residue pLDDT coverage is 1,008,659 states, not final qualified
+coverage. PAE export, qualification readback and paired inputs remain pending.

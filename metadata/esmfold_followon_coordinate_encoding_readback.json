@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_coordinate_encoding_summary_and_context_readback",
+  "models": 4252,
+  "totals": {
+    "length": 1342046,
+    "valid_states": 1333542,
+    "invalid_states": 8504,
+    "valid_focal_plddt70": 1071936,
+    "valid_feature_plddt70": 1008659
+  },
+  "six_residue_contexts_recomputed": 1333542,
+  "coordinate_receipt_sha256": "8172c8444f42e2478a3d2bae2ae6d3392695f94a7c11db9c0feb492722bd6582",
+  "scope": "Every encoding identity/hash and summary count checked. Explicit six-index Python minimum independently recomputed for every valid context; invalid sentinels/terminal masks checked. Does not repeat spatial partner search, neural state assignment or PAE qualification."
+}

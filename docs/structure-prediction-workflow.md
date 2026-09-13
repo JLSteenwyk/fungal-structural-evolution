@@ -634,3 +634,29 @@ OPENBLAS_NUM_THREADS=1 python scripts/audit_3di_features.py \
   --snapshot results/structural_markers/esmfold-followon-complete-v1 \
   --output results/structural_alphabet/coordinate-esmfold-followon-v1
 ```
+
+
+## Follow-on coordinate-feature audit complete; PAE qualification queued
+
+Coordinate reconstruction passed for all 4,252 models and 1,342,046 residues.
+There are 1,333,542 valid native states and 8,504 invalid terminal states. Focal
+pLDDT ≥70 retains 1,071,936 valid states; requiring all six context residues to
+meet that threshold retains 1,008,659. These remain pre-PAE counts.
+
+Independent encoding readback verified all model identities, NPZ hashes, summary
+counts and invalid-state sentinels. Explicit six-index Python minima matched the
+stored context confidence for every one of the 1,333,542 valid states. This checks
+the exported context calculations; it does not independently repeat spatial
+partner searches or neural state assignment. Receipts:
+`metadata/esmfold_followon_coordinate_audit_receipt.json` and
+`metadata/esmfold_followon_coordinate_encoding_readback.json`.
+
+`scripts/advance_native_qualification.py` is queued behind the exact live PAE
+exporter. After clean export completion it checks matching model/mapping universes,
+then runs the existing `qualify_native_pae.py`. All ten dependency pins matched;
+the controller was observed live waiting. Configuration:
+`metadata/esmfold_followon_qualification_controller_config.json`.
+Target: `results/structural_alphabet/audited-esmfold-followon-v1`.
+Allowance: one CPU, 8 GB memory, 2 GB output and 0.05–4 planning hours, using
+existing host resources. Independent qualified-output readback and paired-input
+preparation remain separate; no new qualified cohort is claimed yet.

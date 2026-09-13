@@ -1,0 +1,31 @@
+{
+  "predecessor_pid": 642606,
+  "predecessor_start_ticks": "181259283",
+  "models": 4252,
+  "coordinates": "results/structural_alphabet/coordinate-esmfold-followon-v1",
+  "pae": "results/structural_pae/esmfold-followon-complete-v1",
+  "output": "results/structural_alphabet/audited-esmfold-followon-v1",
+  "control_output": "results/structural_alphabet/followon-qualification-controller-v1",
+  "resource_plan": {
+    "workers": 1,
+    "memory_allowance_gb": 8,
+    "output_allowance_bytes": 2000000000,
+    "planning_runtime_hours": [
+      0.05,
+      4
+    ],
+    "scope": "Bind full directional PAE to all 4252 coordinate-audited models; preserve six-residue confidence/validity masks. Existing host only; no inference or new charges."
+  },
+  "pinned_files": {
+    "metadata/esmfold_followon_coordinate_encoding_readback.json": "33007344768c2b763c5891064405858404bbff0f38d5fccf6928c614d278f484",
+    "results/structural_alphabet/coordinate-esmfold-followon-v1/receipt.json": "8172c8444f42e2478a3d2bae2ae6d3392695f94a7c11db9c0feb492722bd6582",
+    "scripts/advance_native_qualification.py": "669aff6dbb3d7c31a5577ff14589ee3cc289d706ac575aaeb8de9316c0391495",
+    "scripts/advance_prediction_snapshot.py": "00b08a1213c9deff64e48ebd696742942862b6fe8267362ae24c1c85118600c5",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/export_local_marker_pae.py": "e8b9290996144fa1a45b6c066def764b17c7653a4065265dfe97615b4dce1072",
+    "scripts/qualify_native_pae.py": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  }
+}
