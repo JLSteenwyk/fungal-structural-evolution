@@ -1016,3 +1016,16 @@ full CA mapping, species-tree and both GPU producers were verified live.
 The previous turn scheduled missing experimental ESMFold controls; this turn
 adds an inspected scientific figure and direct plot-data verification. The full
 objective remains active and incomplete.
+
+
+### Residue solvent-accessibility production started
+
+Started a new analysis supporting the core/surface localization objective:
+13,153 AlphaFold models and 6,910,765 residues, using 960-point Shrake–Rupley
+with a 1.4 Å probe and four CPU workers. Prediction confidence and sequence
+identity are retained. Isolated-chain accessibility is not treated as a validated
+interface or biological core assignment. Analytic sphere/occlusion tests passed,
+and the first eight completed tables passed sequence/grid/hash/area-sum readback.
+The previous turn added the experimental benchmark figure; this turn starts
+residue annotation across the full frozen AlphaFold marker snapshot. Full CA
+mapping and other long-running stages continue. The full goal remains active.

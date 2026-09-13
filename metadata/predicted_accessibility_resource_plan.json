@@ -1,0 +1,21 @@
+{
+  "status": "prelaunch_predicted_residue_accessibility",
+  "models": 13153,
+  "residues": 6910765,
+  "cpu_workers": 4,
+  "threads_per_worker": 1,
+  "memory_gb_planning": 32,
+  "output_gb_planning": 10,
+  "wall_hours_planning_range": [
+    4,
+    96
+  ],
+  "estimate_basis": "Analytic isolated-sphere/occlusion test passed. Full proteins vary in size; 960 sphere points per atom and neighbor checks make runtime uncertain. Four workers, one model per job, resumable per-model outputs. Update forecast from actual production timings.",
+  "probe_radius_angstrom": 1.4,
+  "sphere_points_per_atom": 960,
+  "snapshot_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "producer_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "disk_free_bytes": 12542049591296,
+  "cost": "Existing authorized CPU host; no paid services",
+  "limitations": "Isolated predicted chain accessibility only; no experimentally validated surface or interface claim. Domain orientation, missing partners and prediction confidence need downstream control."
+}
