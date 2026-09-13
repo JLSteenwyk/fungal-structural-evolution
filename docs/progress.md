@@ -1166,3 +1166,16 @@ for investigation. Original groups remain exploratory. Existing ESMFold,
 phylogeny and orthology jobs were verified live. The previous turn launched
 full agreement; this turn completes its summaries and exact edge review.
 The overall research goal remains active and incomplete.
+
+### Reviewed representative groups derived and audited
+
+Derived conservative memberships from the completed exact edge review: 17,018
+models retained, 1,256 deferred, with all 18,815 taxon–marker links preserved.
+Every retained nonself member passes both directed comparisons to its original
+representative. Deferred models receive no derived family assignment. Complete
+readback recalculated eligibility from raw scores and verified model provenance,
+partitions and annotation links. This advances atlas usability without equating
+similarity groups with orthogroups. The prior turn completed exact score review;
+this turn makes its eligibility decisions explicit in downstream group tables.
+Existing prediction, guide-tree and orthology processes remain verified live.
+The full research goal remains active and incomplete.

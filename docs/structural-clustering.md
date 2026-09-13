@@ -142,3 +142,40 @@ python scripts/review_exact_cluster_scores.py --validation results/structural_cl
 Receipts and the complete pair classification table are tracked under
 `metadata/structure_cluster_exact_score_*`; full directed scores remain outside
 Git under `results/structural_clusters/edge-exact-review-v1`.
+
+### Conservative groups after edge review
+
+`reviewed-groups-v2` retains 17,018 models in the 2,249 original representative
+slots. Every retained nonself member (14,769) passes the fixed-alignment exact
+score criteria in both directions. Representatives remain present without a
+self-edge test. There are 1,315 slots with no retained nonself edge, compared
+with 1,276 original singletons; this is a filtering result, not evidence for
+39 newly discovered families.
+
+The 1,256 deferred models have an empty derived group identifier: 1,220 fail
+edge criteria and 36 have out-of-bounds scores. They are preserved in a separate
+table with all original provenance. No alternative representative search or
+novel-singleton interpretation is applied. All 18,815 taxon–marker links survive,
+including deferred models, with explicit dispositions. Group summaries describe
+retained membership only; original group annotations must not be silently
+substituted for these summaries.
+
+These are representative-centered similarity groups: passing links to the
+representative do not guarantee similarity between every pair of members.
+Orthology, domain-level robustness, confidence sensitivity and the cause of
+out-of-range alignment-TM scores remain unresolved. The output covers the
+frozen marker model collection, not the full proteome atlas.
+
+```bash
+python scripts/derive_reviewed_structure_groups.py --clusters results/structural_clusters/frozen-marker-models-v1 --review results/structural_clusters/edge-exact-review-v1 --annotations results/structural_clusters/provenance-annotations-v1 --output results/structural_clusters/reviewed-groups-v2
+python scripts/audit_reviewed_structure_groups.py --groups results/structural_clusters/reviewed-groups-v2 --clusters results/structural_clusters/frozen-marker-models-v1 --exact results/structural_clusters/edge-exact-score-v1 --annotations results/structural_clusters/provenance-annotations-v1 --output results/structural_clusters/reviewed-groups-audit-v1
+```
+
+The readback independently recalculates eligibility from all 32,050 raw numeric
+score rows and checks all 18,274 source models, membership partitions, group
+model counts and the complete annotation multiset. It is not an independent
+TM-score implementation. Version 2 adds a source-lineage consistency gate to
+version 1 and produces identical four output tables; version 1 remains outside
+Git. Receipts, summaries and deferred-model provenance are tracked in
+`metadata/reviewed_structure_groups_*`; full membership and link tables remain
+in the checksummed result directory.
