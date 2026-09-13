@@ -427,3 +427,14 @@ and independent-readback gates, whole-protein CA RMSD, local distance changes,
 joint pLDDT thresholds and bidirectional PAE sensitivities. Four focused tests
 pass. Resource estimates and the reproducible command are versioned. The
 control GPU job remains live; no completed empirical comparison is claimed.
+
+## Genus-group phylogenetic checks executed on completed markers
+
+Audited 17 completed marker trees (108 remain pending) and 8,031 internal
+splits. Across the 16 codon-screen genus labels, 250 of 272 marker/group rows
+have sufficient taxon coverage; 20 contain an incompatible split with SH-aLRT
+support at least 80. Naganishia shows conflicts in five of ten assessable
+markers. Missing group members and all results remain explicit. Two tests and
+output/hash/full-grid checks pass. This partial gene-tree screen prioritizes
+orthology/alignment review and does not establish species monophyly, selection
+or ecological replication.

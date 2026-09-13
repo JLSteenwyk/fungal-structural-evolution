@@ -293,3 +293,41 @@ Independent readback confirms that all repeat identities match the original matr
 Both repeat-specific IQ-TREE searches are running, each with the same restricted LG/WAG/JTT + empirical-frequency/gamma model set, 1,000 SH-aLRT replicates and 1,000 NNI-refined ultrafast-bootstrap replicates. They use two threads and a 4 GB memory limit per job, with distinct recorded seeds. The combined-domain search continues separately. Source/configuration hashes and exact input identities are checked; the controllers require valid completed trees and all 1,000 bootstrap outputs before claiming success. Metadata records both run configurations and the resource allowance.
 
 The comparison holds gene sampling fixed while changing which repeat supplies the sites. Discordance could reflect limited information, model/alignment issues, repeat history or other biological processes; it will not by itself prove gene conversion. Domain-pair and repeat-specific tree completion, support-aware concordance and reconciliation remain pending.
+
+## Genus-label checks against completed gene trees
+
+A frozen, explicitly incomplete snapshot contains 17 of 125 marker trees,
+with 8,031 audited internal edges. `assess_genus_tree_splits.py` evaluates the
+16 genus labels used in the codon coverage screen against this exact snapshot.
+For each marker it records missing genus members and requires at least four
+observed members and two other taxa. It checks whether the observed group is
+one side of an unrooted internal edge. An incompatible edge must have all four
+intersections of the two bipartitions nonempty; the result is independent of
+which side is represented first.
+
+Of 272 marker/genus rows, 250 are assessable and 20 contain an incompatible
+edge with SH-aLRT support at least 80. Naganishia has such conflicts in five of
+ten assessable markers (129234at2759, 260326at2759, 340246at2759,
+345792at2759 and 4747214at2759). The remaining five have a separating edge.
+These are descriptions of gene-tree splits, not a rooted species-monophyly test,
+independent ecological transitions, orthology confirmation or a selection
+result. SH-aLRT is not a posterior/ bootstrap probability; early-finishing genes
+may not represent the full set. Alternative causes include paralogy, alignment
+or inference error and biological discordance. No genus or marker is removed
+from the source data by this screen.
+
+```bash
+python scripts/audit_marker_tree_support.py \
+  --trees results/phylogeny/marker-gene-trees-v2 \
+  --output results/phylogeny/marker-tree-support-v3 --allow-incomplete
+python scripts/assess_genus_tree_splits.py \
+  --audit results/phylogeny/marker-tree-support-v3 \
+  --trees results/phylogeny/marker-gene-trees-v2 \
+  --output results/phylogeny/genus-tree-splits-v1
+```
+
+Use new outputs for reruns. Two split-compatibility tests pass; output hashes
+and the full 17-by-16 row universe were checked. Per-marker/group rows and
+summary/source receipts are versioned. Review these conflicts with the full
+marker set, family assignments and the species framework before interpreting
+genus-based codon-model results.
