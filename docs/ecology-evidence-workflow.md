@@ -60,3 +60,26 @@ all three existing input queues. This queue is prepared but not launched: both
 GPUs currently run earlier batches. A resource estimate and device-availability
 check precede execution. More predictions do not guarantee confidence-qualified
 coverage, verified orthology or ecological replication.
+
+
+The frozen forecast uses 6,120 observed prediction receipts from the same local
+configuration, grouped into four length bins. For the 675 new sequences the
+median-based sum is 1.29 GPU hours; sums using within-bin p10 and p90 timings are
+0.95 and 1.73 hours. Allow 2.60 wall hours (50% above the p90 sum), 24 GB VRAM and
+20 GB output headroom on an existing GPU. These are planning scenarios, not
+confidence intervals, and do not apply to long or noncanonical proteins. Both
+devices were observed occupied by the project's earlier prediction batches;
+this forecast does not launch or reserve a device.
+
+```bash
+python scripts/estimate_followon_prediction_runtime.py \
+  --inputs data/prediction_inputs/ecology-markers-v1 \
+  --predictions results/predictions/esmfold-marker-v1 \
+  --output results/predictions/ecology-resource-v1 \
+  --disposition-file sequence_disposition.tsv --status-field status \
+  --eligible-status new_same_method_candidate
+```
+
+The source predictions are an expanding directory. Rerunning the forecast in a
+new output directory freezes a new timing snapshot; the receipt and per-sequence
+measurement hashes identify the precise set used for this estimate.

@@ -1,0 +1,1359 @@
+{
+  "status": "complete_pairwise_grid_and_sampled_geometry_readback",
+  "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+  "comparison_receipt_sha256": "367c7a660bab5d6f53870ffa66cfff7367bf1a31fced4e96bc5aef595fe849d3",
+  "script_sha256": "03eedf6cdbc7a51806c8e2d993887d657ec7c7f359f49aa65729e9b352c8fbcc",
+  "expected_pairs": 306673,
+  "all_pair_threshold_rows": 920019,
+  "counts": {
+    "50_accepted": 294878,
+    "70_accepted": 266788,
+    "90_accepted": 116316,
+    "90_excluded": 190357,
+    "70_excluded": 39885,
+    "50_excluded": 11795
+  },
+  "independent_geometry_checks": 223,
+  "geometry_selection": "Smallest SHA256 pair/threshold identity per accepted marker and threshold; SciPy Rotation and condensed pairwise distances, no production geometry helper.",
+  "geometry_checked_rows": [
+    {
+      "marker": "115730at2759",
+      "taxon_a": "F1738374",
+      "taxon_b": "F2024903",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "115730at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F29833",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "115730at2759",
+      "taxon_a": "F1214568",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "129234at2759",
+      "taxon_a": "F1810928",
+      "taxon_b": "F223376",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "129234at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F2829486",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "129234at2759",
+      "taxon_a": "F1506992",
+      "taxon_b": "F209281",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "201273at2759",
+      "taxon_a": "F48578",
+      "taxon_b": "F71933",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "207567at2759",
+      "taxon_a": "F1042397",
+      "taxon_b": "F136370",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "207567at2759",
+      "taxon_a": "F2600216",
+      "taxon_b": "F5570",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "207567at2759",
+      "taxon_a": "F148313",
+      "taxon_b": "F2918522",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "260326at2759",
+      "taxon_a": "F326684",
+      "taxon_b": "F5414",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "260326at2759",
+      "taxon_a": "F1125753",
+      "taxon_b": "F169141",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "260326at2759",
+      "taxon_a": "F174425",
+      "taxon_b": "F364730",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "2852757at2759",
+      "taxon_a": "F5365",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "2852757at2759",
+      "taxon_a": "F5365",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "2852757at2759",
+      "taxon_a": "F5365",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "319730at2759",
+      "taxon_a": "F157183",
+      "taxon_b": "F170446",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "319730at2759",
+      "taxon_a": "F2600216",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "319730at2759",
+      "taxon_a": "F157183",
+      "taxon_b": "F5147",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "345792at2759",
+      "taxon_a": "F1328300",
+      "taxon_b": "F29833",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "345792at2759",
+      "taxon_a": "F1004511",
+      "taxon_b": "F2600216",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "345792at2759",
+      "taxon_a": "F5022",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "352891at2759",
+      "taxon_a": "F135589",
+      "taxon_b": "F44565",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "352891at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F29902",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "352891at2759",
+      "taxon_a": "F1542792",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4613677at2759",
+      "taxon_a": "F48578",
+      "taxon_b": "F933333",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4613677at2759",
+      "taxon_a": "F1542792",
+      "taxon_b": "F48021",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4613677at2759",
+      "taxon_a": "F2778381",
+      "taxon_b": "F29899",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4747214at2759",
+      "taxon_a": "F208348",
+      "taxon_b": "F44565",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4747214at2759",
+      "taxon_a": "F2977754",
+      "taxon_b": "F933333",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4764044at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4764044at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4764044at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4803900at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F2600216",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4803900at2759",
+      "taxon_a": "F1145321",
+      "taxon_b": "F129515",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4803900at2759",
+      "taxon_a": "F2796175",
+      "taxon_b": "F91480",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4823929at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F5479",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4823929at2759",
+      "taxon_a": "F1658444",
+      "taxon_b": "F5479",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4823929at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F5518",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4837017at2759",
+      "taxon_a": "F183962",
+      "taxon_b": "F48565",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4837017at2759",
+      "taxon_a": "F1276059",
+      "taxon_b": "F2831993",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4837017at2759",
+      "taxon_a": "F2939400",
+      "taxon_b": "F315204",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4843240at2759",
+      "taxon_a": "F3038894",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4843240at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F3038894",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4843240at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4843824at2759",
+      "taxon_a": "F2283408",
+      "taxon_b": "F383834",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4843824at2759",
+      "taxon_a": "F1174673",
+      "taxon_b": "F65468",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4843824at2759",
+      "taxon_a": "F113071",
+      "taxon_b": "F370292",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4867008at2759",
+      "taxon_a": "F1276059",
+      "taxon_b": "F1542792",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4867008at2759",
+      "taxon_a": "F364730",
+      "taxon_b": "F48578",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4867008at2759",
+      "taxon_a": "F34480",
+      "taxon_b": "F610337",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4896098at2759",
+      "taxon_a": "F3060298",
+      "taxon_b": "F400354",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4896098at2759",
+      "taxon_a": "F2939405",
+      "taxon_b": "F500713",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4896098at2759",
+      "taxon_a": "F112072",
+      "taxon_b": "F1397036",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4900375at2759",
+      "taxon_a": "F460854",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4900375at2759",
+      "taxon_a": "F1174673",
+      "taxon_b": "F41759",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4900375at2759",
+      "taxon_a": "F383834",
+      "taxon_b": "F65468",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4908955at2759",
+      "taxon_a": "F1214568",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4908955at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F29908",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4969018at2759",
+      "taxon_a": "F1542792",
+      "taxon_b": "F574656",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4969018at2759",
+      "taxon_a": "F208348",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4969018at2759",
+      "taxon_a": "F1542792",
+      "taxon_b": "F208348",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4969636at2759",
+      "taxon_a": "F101201",
+      "taxon_b": "F87287",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4969636at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F5606",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4969636at2759",
+      "taxon_a": "F241526",
+      "taxon_b": "F87287",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4969990at2759",
+      "taxon_a": "F68786",
+      "taxon_b": "F89922",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4969990at2759",
+      "taxon_a": "F65672",
+      "taxon_b": "F68786",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4969990at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4970387at2759",
+      "taxon_a": "F1230402",
+      "taxon_b": "F152956",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4970387at2759",
+      "taxon_a": "F2268995",
+      "taxon_b": "F500713",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4970387at2759",
+      "taxon_a": "F257869",
+      "taxon_b": "F318774",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4971272at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F2486360",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4971272at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F36050",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4971272at2759",
+      "taxon_a": "F2486360",
+      "taxon_b": "F36050",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4974767at2759",
+      "taxon_a": "F121624",
+      "taxon_b": "F1810926",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4974767at2759",
+      "taxon_a": "F2600213",
+      "taxon_b": "F29908",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4976279at2759",
+      "taxon_a": "F29833",
+      "taxon_b": "F87287",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4976279at2759",
+      "taxon_a": "F29833",
+      "taxon_b": "F34349",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4976279at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4977163at2759",
+      "taxon_a": "F29902",
+      "taxon_b": "F67723",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4977163at2759",
+      "taxon_a": "F257869",
+      "taxon_b": "F318763",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4977163at2759",
+      "taxon_a": "F1004511",
+      "taxon_b": "F418498",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "4985971at2759",
+      "taxon_a": "F1507873",
+      "taxon_b": "F1658444",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "4985971at2759",
+      "taxon_a": "F241526",
+      "taxon_b": "F34480",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "4985971at2759",
+      "taxon_a": "F1328300",
+      "taxon_b": "F710243",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000045at2759",
+      "taxon_a": "F1690604",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000045at2759",
+      "taxon_a": "F101201",
+      "taxon_b": "F2486360",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5000045at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000371at2759",
+      "taxon_a": "F1738374",
+      "taxon_b": "F5518",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000371at2759",
+      "taxon_a": "F574656",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5000371at2759",
+      "taxon_a": "F5518",
+      "taxon_b": "F655981",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000452at2759",
+      "taxon_a": "F456999",
+      "taxon_b": "F610337",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000452at2759",
+      "taxon_a": "F318763",
+      "taxon_b": "F610337",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5000452at2759",
+      "taxon_a": "F152956",
+      "taxon_b": "F1690604",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000476at2759",
+      "taxon_a": "F5022",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000476at2759",
+      "taxon_a": "F36050",
+      "taxon_b": "F68786",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5000476at2759",
+      "taxon_a": "F36050",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000743at2759",
+      "taxon_a": "F264483",
+      "taxon_b": "F418498",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000743at2759",
+      "taxon_a": "F1658444",
+      "taxon_b": "F5128",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5000743at2759",
+      "taxon_a": "F52883",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5000986at2759",
+      "taxon_a": "F2600216",
+      "taxon_b": "F5365",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5000986at2759",
+      "taxon_a": "F2600216",
+      "taxon_b": "F5365",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001156at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F2600216",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001156at2759",
+      "taxon_a": "F1323573",
+      "taxon_b": "F195108",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001156at2759",
+      "taxon_a": "F208348",
+      "taxon_b": "F2486360",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5001273at2759",
+      "taxon_a": "F48563",
+      "taxon_b": "F63378",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001273at2759",
+      "taxon_a": "F45228",
+      "taxon_b": "F89922",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001273at2759",
+      "taxon_a": "F1498855",
+      "taxon_b": "F2829486",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5001318at2759",
+      "taxon_a": "F1145299",
+      "taxon_b": "F1209934",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001318at2759",
+      "taxon_a": "F1145321",
+      "taxon_b": "F1209934",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001413at2759",
+      "taxon_a": "F3038894",
+      "taxon_b": "F87287",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001413at2759",
+      "taxon_a": "F169141",
+      "taxon_b": "F202698",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001413at2759",
+      "taxon_a": "F208348",
+      "taxon_b": "F2748771",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5001473at2759",
+      "taxon_a": "F48586",
+      "taxon_b": "F92988",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001473at2759",
+      "taxon_a": "F48563",
+      "taxon_b": "F48578",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001734at2759",
+      "taxon_a": "F2778381",
+      "taxon_b": "F45228",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5001734at2759",
+      "taxon_a": "F1506992",
+      "taxon_b": "F2600215",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5001734at2759",
+      "taxon_a": "F157183",
+      "taxon_b": "F2268995",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5002334at2759",
+      "taxon_a": "F1542792",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5002334at2759",
+      "taxon_a": "F1145321",
+      "taxon_b": "F574656",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5002334at2759",
+      "taxon_a": "F100910",
+      "taxon_b": "F36035",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5002573at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F68786",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5002573at2759",
+      "taxon_a": "F36050",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5002573at2759",
+      "taxon_a": "F1658444",
+      "taxon_b": "F5454",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5003856at2759",
+      "taxon_a": "F1006475",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5003856at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F3038894",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5003856at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F2600215",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5003972at2759",
+      "taxon_a": "F112417",
+      "taxon_b": "F2796175",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5003972at2759",
+      "taxon_a": "F1099800",
+      "taxon_b": "F669869",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5003972at2759",
+      "taxon_a": "F1904413",
+      "taxon_b": "F318774",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5004118at2759",
+      "taxon_a": "F1506992",
+      "taxon_b": "F1814901",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5004118at2759",
+      "taxon_a": "F1099800",
+      "taxon_b": "F610337",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5004265at2759",
+      "taxon_a": "F1759441",
+      "taxon_b": "F2748771",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5004265at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F3060298",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5004478at2759",
+      "taxon_a": "F5022",
+      "taxon_b": "F5479",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5004478at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F5606",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5004478at2759",
+      "taxon_a": "F1658444",
+      "taxon_b": "F195108",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5005010at2759",
+      "taxon_a": "F1938712",
+      "taxon_b": "F67723",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005010at2759",
+      "taxon_a": "F174425",
+      "taxon_b": "F202698",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005010at2759",
+      "taxon_a": "F1506992",
+      "taxon_b": "F44089",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5005174at2759",
+      "taxon_a": "F174425",
+      "taxon_b": "F91480",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005174at2759",
+      "taxon_a": "F3058885",
+      "taxon_b": "F56409",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005196at2759",
+      "taxon_a": "F5507",
+      "taxon_b": "F63577",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005196at2759",
+      "taxon_a": "F2748771",
+      "taxon_b": "F5518",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005196at2759",
+      "taxon_a": "F2748771",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5005274at2759",
+      "taxon_a": "F1498855",
+      "taxon_b": "F36050",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005274at2759",
+      "taxon_a": "F1498855",
+      "taxon_b": "F29833",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005750at2759",
+      "taxon_a": "F164576",
+      "taxon_b": "F44565",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005750at2759",
+      "taxon_a": "F1463510",
+      "taxon_b": "F208348",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005750at2759",
+      "taxon_a": "F1453789",
+      "taxon_b": "F1542792",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5005892at2759",
+      "taxon_a": "F1738374",
+      "taxon_b": "F2486360",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5005892at2759",
+      "taxon_a": "F1080349",
+      "taxon_b": "F89243",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5005892at2759",
+      "taxon_a": "F5507",
+      "taxon_b": "F710243",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5013042at2759",
+      "taxon_a": "F1658444",
+      "taxon_b": "F746128",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013042at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F746128",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013042at2759",
+      "taxon_a": "F1759441",
+      "taxon_b": "F195108",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5013067at2759",
+      "taxon_a": "F241526",
+      "taxon_b": "F5606",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013067at2759",
+      "taxon_a": "F1328300",
+      "taxon_b": "F36035",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013067at2759",
+      "taxon_a": "F1690604",
+      "taxon_b": "F29833",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5013259at2759",
+      "taxon_a": "F43433",
+      "taxon_b": "F91480",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013259at2759",
+      "taxon_a": "F1938712",
+      "taxon_b": "F2939399",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013539at2759",
+      "taxon_a": "F202698",
+      "taxon_b": "F418498",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013539at2759",
+      "taxon_a": "F152956",
+      "taxon_b": "F460854",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013539at2759",
+      "taxon_a": "F1331295",
+      "taxon_b": "F230603",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5013726at2759",
+      "taxon_a": "F223376",
+      "taxon_b": "F41759",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013726at2759",
+      "taxon_a": "F1006475",
+      "taxon_b": "F1498855",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013726at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F669869",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5013738at2759",
+      "taxon_a": "F199306",
+      "taxon_b": "F264483",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5013738at2759",
+      "taxon_a": "F1506992",
+      "taxon_b": "F48578",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5013738at2759",
+      "taxon_a": "F199306",
+      "taxon_b": "F91480",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5015403at2759",
+      "taxon_a": "F170446",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5015403at2759",
+      "taxon_a": "F5022",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5015403at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F241526",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5015712at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F746128",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5015712at2759",
+      "taxon_a": "F101201",
+      "taxon_b": "F746128",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5015742at2759",
+      "taxon_a": "F5479",
+      "taxon_b": "F655981",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5015742at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5015742at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F655981",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "5015876at2759",
+      "taxon_a": "F1424756",
+      "taxon_b": "F2778381",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5015876at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F2778381",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5017019at2759",
+      "taxon_a": "F208348",
+      "taxon_b": "F89243",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "5017019at2759",
+      "taxon_a": "F2020962",
+      "taxon_b": "F208348",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "5017019at2759",
+      "taxon_a": "F2600215",
+      "taxon_b": "F68786",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "529759at2759",
+      "taxon_a": "F1130053",
+      "taxon_b": "F549676",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "529759at2759",
+      "taxon_a": "F223409",
+      "taxon_b": "F52883",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "529759at2759",
+      "taxon_a": "F1145299",
+      "taxon_b": "F3038894",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "530740at2759",
+      "taxon_a": "F1214568",
+      "taxon_b": "F1328300",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "530740at2759",
+      "taxon_a": "F29908",
+      "taxon_b": "F36035",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "538952at2759",
+      "taxon_a": "F36035",
+      "taxon_b": "F5414",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "538952at2759",
+      "taxon_a": "F36035",
+      "taxon_b": "F5414",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "539632at2759",
+      "taxon_a": "F1328300",
+      "taxon_b": "F2748771",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "539632at2759",
+      "taxon_a": "F2600216",
+      "taxon_b": "F3058885",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "539632at2759",
+      "taxon_a": "F34480",
+      "taxon_b": "F89922",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "540946at2759",
+      "taxon_a": "F36035",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "540946at2759",
+      "taxon_a": "F195108",
+      "taxon_b": "F2748771",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "540946at2759",
+      "taxon_a": "F1671311",
+      "taxon_b": "F76775",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "541070at2759",
+      "taxon_a": "F34480",
+      "taxon_b": "F69979",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "541070at2759",
+      "taxon_a": "F183962",
+      "taxon_b": "F5147",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "541070at2759",
+      "taxon_a": "F113071",
+      "taxon_b": "F48593",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "554735at2759",
+      "taxon_a": "F3384825",
+      "taxon_b": "F41956",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "554735at2759",
+      "taxon_a": "F202698",
+      "taxon_b": "F265104",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "554735at2759",
+      "taxon_a": "F129515",
+      "taxon_b": "F3058885",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "649304at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F418498",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "649304at2759",
+      "taxon_a": "F157183",
+      "taxon_b": "F208348",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "649304at2759",
+      "taxon_a": "F1214568",
+      "taxon_b": "F5147",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "707076at2759",
+      "taxon_a": "F2939400",
+      "taxon_b": "F456999",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "707076at2759",
+      "taxon_a": "F2918522",
+      "taxon_b": "F87287",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "707076at2759",
+      "taxon_a": "F1323573",
+      "taxon_b": "F48565",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "707202at2759",
+      "taxon_a": "F655981",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "707202at2759",
+      "taxon_a": "F183962",
+      "taxon_b": "F65672",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "707202at2759",
+      "taxon_a": "F241526",
+      "taxon_b": "F52883",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "727964at2759",
+      "taxon_a": "F170000",
+      "taxon_b": "F5147",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "727964at2759",
+      "taxon_a": "F655981",
+      "taxon_b": "F87326",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "727964at2759",
+      "taxon_a": "F1209934",
+      "taxon_b": "F2748771",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "760428at2759",
+      "taxon_a": "F29833",
+      "taxon_b": "F36050",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "760428at2759",
+      "taxon_a": "F76775",
+      "taxon_b": "F76777",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "760428at2759",
+      "taxon_a": "F36035",
+      "taxon_b": "F36050",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "776280at2759",
+      "taxon_a": "F170446",
+      "taxon_b": "F364730",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "776280at2759",
+      "taxon_a": "F170446",
+      "taxon_b": "F364730",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "776280at2759",
+      "taxon_a": "F170446",
+      "taxon_b": "F2024903",
+      "plddt_cutoff": "90"
+    },
+    {
+      "marker": "801816at2759",
+      "taxon_a": "F460854",
+      "taxon_b": "F72144",
+      "plddt_cutoff": "50"
+    },
+    {
+      "marker": "801816at2759",
+      "taxon_a": "F100910",
+      "taxon_b": "F87326",
+      "plddt_cutoff": "70"
+    },
+    {
+      "marker": "801816at2759",
+      "taxon_a": "F2977754",
+      "taxon_b": "F48593",
+      "plddt_cutoff": "90"
+    }
+  ],
+  "interpretation": "Every eligibility, compared-site count and accepted sequence difference verified; geometry numerically checked on a deterministic subset only. Focal confidence only; PAE and six-residue context remain separate gates. No evolutionary-rate validation claimed."
+}

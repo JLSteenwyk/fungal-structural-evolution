@@ -54,3 +54,46 @@ python -m unittest discover -s tests -p test_tree_path_geometry.py
 ```
 
 Use new immutable output directories if the named outputs already exist. Two focused tests verify path membership and joint-draw uncertainty, including a perfectly anticorrelated example where the path is constant despite variable individual branches. Full-data validation and global-RMSD reproduction passed, and the figure was visually inspected. Versioned tables and receipts are under `metadata/tree_path_geometry*` and `metadata/global_geometry_case*`; raw coordinate, PAE, tree and replicate files remain outside Git with recorded hashes.
+
+
+## Exhaustive local-prediction geometry baseline
+
+The frozen 5,121-model ESMFold snapshot now has comparisons for all 306,673
+within-marker taxon pairs at focal pLDDT thresholds 50, 70 and 90. Of 920,019
+pair/threshold rows, 677,982 pass the minimum of 50 matched residues and half of
+shared profile positions; 242,037 remain explicit exclusions. At thresholds
+50/70/90, accepted pairs are 294,878/266,788/116,316, spanning 80/79/64 markers.
+The stricter paired phylogenetic inputs have additional context/PAE/family gates;
+these descriptive pair counts are not their inference universe.
+
+An independent audit verified every pair/threshold identity, matched-residue
+count, canonical-AA/confidence eligibility, coordinate-identity flag and accepted
+sequence difference. It independently recomputed geometry for 223 deterministically
+selected rows (smallest identity hash in each accepted marker/threshold group),
+using SciPy proper rotations and condensed pairwise distances instead of the
+production helper. All checks passed. Geometry for unsampled rows was checked
+for finite nonnegative values, not fully independently recomputed.
+
+At focal pLDDT 70, the pair-weighted median aligned CA RMSD is 1.402 angstrom and
+the custom local-distance mean-absolute-change median is 0.349 angstrom. These
+are descriptive distances, not time-normalized rates or independent replicates.
+The threshold strata differ in both pairs and residues. Pairwise PAE, domain
+boundaries, six-residue alphabet context, phylogenetic uncertainty and predictor
+artifacts must still be addressed before interpreting branch-level excess change.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/compare_marker_structures.py \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --output results/structural_comparisons/esmfold-partial-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_pairwise_geometry.py \
+  --mapping results/structural_markers/esmfold-partial-v1 \
+  --comparisons results/structural_comparisons/esmfold-partial-v1 \
+  --output results/structural_comparisons/esmfold-partial-readback-v1
+python scripts/summarize_pairwise_geometry.py \
+  --comparisons results/structural_comparisons/esmfold-partial-v1 \
+  --output results/structural_comparisons/esmfold-partial-summary-v1
+```
+
+Use new output directories for deliberate reruns; existing snapshots are
+immutable. Full tables remain outside Git; source hashes, audit receipts and the
+small threshold summary are versioned under `metadata/`.

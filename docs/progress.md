@@ -702,3 +702,19 @@ species, disjoint from existing queues. Inputs and dispositions are frozen and
 read back successfully; execution remains pending GPU availability and a resource
 forecast. The exhaustive local geometry producer has now completed and awaits
 independent output validation.
+
+
+### Local geometry validated and ecological prediction resources estimated
+
+Completed all 920,019 pair/threshold decisions across 306,673 local-model taxon
+pairs. All eligibility and sequence-difference readbacks pass; independent SciPy
+geometry matches on 223 deterministic rows. There are 677,982 accepted comparisons
+and 242,037 exclusions, retained separately. Descriptive threshold summaries and
+hash-pinned receipts are versioned; branch-rate benchmarking remains outstanding.
+
+The 675-input ecological queue has a frozen forecast from 6,120 observed timings:
+1.29 GPU hours median-based inference, 2.60 hours planning allowance, 24 GB VRAM
+and 20 GB output headroom. Both GPUs are confirmed occupied by existing batches;
+no additional device or paid resource was provisioned. The preceding turn made
+progress by freezing these inputs; this turn validates completed geometry and
+makes the queue's resource requirements concrete. The full goal remains active.
