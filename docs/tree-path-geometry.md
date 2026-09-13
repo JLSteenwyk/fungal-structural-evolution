@@ -255,3 +255,14 @@ OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -p test_joint_path_s
 # Run only after the full resampling audit completes:
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/append_paired_path_uncertainty.py --points results/phylogeny/paired-path-points-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --resampling results/phylogeny/paired-resampling-esmfold-v1 --resampling-audit results/phylogeny/paired-resampling-audit-esmfold-v1 --output results/phylogeny/paired-path-uncertainty-esmfold-v1
 ```
+
+
+The path-summary command is now queued through
+`scripts/advance_paired_path_uncertainty.py`. The controller waits for the exact
+resampling-auditor process identity to finish, requires its complete audit
+receipt, verifies pinned inputs and code, then launches the command with one
+BLAS/OpenMP thread. It does not modify or restart the auditor. Configuration
+is tracked in `metadata/esmfold_paired_path_controller_config.json`; controller
+output is `results/phylogeny/paired-path-controller-esmfold-v1`. The controller
+compiled and entered its expected waiting state. Execution of the full path
+summaries and their readback remain pending.

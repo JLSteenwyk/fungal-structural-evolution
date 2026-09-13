@@ -1596,3 +1596,12 @@ branch draws into all accepted/excluded exact-site tree paths at block lengths
 correctly prevented full-data execution and created no output. Resource plan
 and reproducible commands are recorded. Full audit, path execution and readback
 remain pending, as do the broader evolutionary analyses.
+
+
+### Automatic handoff queued from resampling audit to joint path summaries
+
+The full resampling audit remains live. A pinned controller now waits for that
+specific auditor process, requires its complete receipt, and launches the tested
+joint-path summary script automatically. The controller compiled and entered
+the expected waiting state; no dependent output was claimed complete. Full path
+execution/readback and the wider research goal remain outstanding.
