@@ -15,3 +15,9 @@
 `timetree_published_taxa.tsv`: 153 taxa and original data sources from Szánthó et al. Supplementary Tables 1–2. Published roles and taxonomy do not assign project roles; some published sources are transcriptomes rather than genomes. `timetree_source.json` preserves publisher file metadata and license. The downloaded archive's publisher MD5 was verified.
 
 Use `make restore-sources` to verify cached snapshots or restore them if the remote content still matches recorded SHA256. If mutable NCBI content has changed, the command fails rather than claiming exact reproduction. `make taxonomy`, `make published-taxa`, and `make species-candidates` rebuild derived tables. openpyxl is needed for the published workbook import.
+
+`resolved_species_taxid` and `taxonomy_id_status` preserve current/merged/deleted/unresolved distinctions. Original assembly species IDs are retained. Deleted IDs are not automatically substituted.
+
+`outgroup_assembly_candidates.tsv`: targeted name-based discovery from NCBI protozoan catalogs; requires taxonomic and annotation review and is not the final outgroup sample. Rebuild with `python scripts/inventory_outgroup_sources.py` after restoring sources.
+
+`proteome_availability.tsv`: generated when the resumable `scripts/check_proteome_availability.py` run completes. HEAD response and check time only; no claim that FASTA content or completeness was validated. Raw checkpoint records are ignored data, keyed by URL; malformed historical URLs are not used for corrected candidate URLs.

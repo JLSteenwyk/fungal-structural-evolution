@@ -15,7 +15,7 @@ for r in rows:
 selected=[]
 for sid,rs in sorted(groups.items(),key=lambda x:int(x[0])):
  r=max(rs,key=score).copy()
- base=r['ftp_path'].replace('ftp://','https://')
+ base=r['ftp_path'].replace('ftp://','https://').rstrip('/')
  stem=base.rsplit('/',1)[-1]
  r.update(provisional_proteome_url=f'{base}/{stem}_protein.faa.gz',selection_status='candidate_only_availability_and_quality_unverified',assembly_choice_reason='Annotated latest assembly; prefer reference then RefSeq then assembly level then release date. Quality reassessment can replace this choice.')
  selected.append(r)
