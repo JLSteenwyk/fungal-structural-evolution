@@ -13,6 +13,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungal entrie
 - [Resource assessment](docs/resources.md)
 - [Phylogenetic workflow](docs/phylogenetic-workflow.md)
 - [Gene and isoform reconciliation](docs/gene-isoform-mapping.md)
+- [Assembly-quality workflow](docs/assembly-quality-workflow.md)
 - [Orthology workflow](docs/orthology-workflow.md)
 - [Domain annotation workflow](docs/domain-annotation-workflow.md)
 - [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)
