@@ -370,3 +370,14 @@ The dependency-gated controller observed termination of the original prefetch pr
 Started a live dependency-gated job for the expanded paired amino-acid/3Di alignments. It waits for the actual confidence-controller process to finish and requires its verified completion receipt before preparing inputs. All 526 taxa and 125 markers are screened using the same 49,027-column profile matrix and the same joint confidence/coverage rules as the earlier snapshot. Five paired-input/model-validation tests pass; pinned configuration and a one-worker, 8 GB planning estimate are versioned.
 
 After preparation, the job will compare per-marker eligible-taxon counts and retained columns against the checksum-identified earlier snapshot. Prediction availability and selected models can change, so coverage differences will not be attributed solely to sample size. No expanded paired alignment completion, likelihood fit or acceleration result is claimed yet.
+
+## Expanded branch-fitting preparation
+
+Updated the idle paired-fitting runner to derive dataset dimensions from the
+completed input summary and optionally retain 1,000-replicate sequence-topology
+SH-aLRT/NNI-refined ultrafast-bootstrap support. All bootstrap tree identities
+and counts are checked before accepting a fit. Three new support-control tests
+and two existing branch-correspondence tests pass. Structural branch estimates
+remain conditional on the sequence topology; branch intervals and topology
+sensitivity are separate analyses. Expanded fitting is not launched while
+confidence integration and paired-input preparation remain incomplete.

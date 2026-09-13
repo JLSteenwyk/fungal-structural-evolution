@@ -119,3 +119,25 @@ These are acquisition/selection diagnostics, not biological rate estimates.
 The job uses a new immutable paired output; interrupted partial preparation
 requires inspection and a new output configuration. Expanded input completion,
 model fits, support, geometric calibration and uncertainty remain pending.
+
+## Support-aware expanded fitting
+
+The fitting runner now records marker/taxon/column dimensions from its verified
+input summary instead of retaining the first snapshot's 52-marker resource
+assumptions. An empty eligible set fails before fitting. Expanded runs require
+a separate resource estimate based on their completed inputs.
+
+Optional `--alrt 1000 --bootstrap 1000` adds sequence-topology SH-aLRT and
+NNI-refined ultrafast-bootstrap analysis. All bootstrap trees are retained;
+every replicate must contain the full original taxon identities and the total
+must match the requested count. Structural models still estimate branches on
+the same fixed AA tree. Default support counts remain zero for the earlier
+point-estimate behavior. These options do not provide structural branch-length
+intervals or propagate sequence-topology uncertainty into structural fits.
+Support-aware expanded fitting has not yet been launched.
+
+Three focused tests cover support only on the searched sequence tree,
+rejection of invalid replication counts, and detection of missing, repeated
+or changed bootstrap taxon identities and incomplete replicate counts. The
+two existing unrooted-edge correspondence tests also pass. Existing outputs
+retain their original producer hashes; use a new output for the updated runner.

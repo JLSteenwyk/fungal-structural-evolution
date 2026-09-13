@@ -35,14 +35,46 @@ def tree_edges(path, taxa):
     return result
 
 
+def support_options(label, alrt, bootstrap):
+    """Assess the searched sequence topology; structural fits keep that topology."""
+    for count in (alrt, bootstrap):
+        if count != 0 and count < 1000:
+            raise ValueError('Support replicates must be zero or at least 1000')
+    if label != 'aa':
+        return []
+    options = ['--alrt', str(alrt)] if alrt else []
+    if bootstrap:
+        options += ['-B', str(bootstrap), '--bnni', '--boot-trees']
+    return options
+
+
+def verify_bootstrap_tips(path, taxa, expected):
+    count = 0
+    for tree in Phylo.parse(path, 'newick'):
+        tips = [tip.name for tip in tree.get_terminals()]
+        if len(tips) != len(set(tips)) or set(tips) != taxa:
+            raise ValueError('Bootstrap taxon identities differ')
+        count += 1
+    if count != expected:
+        raise ValueError('Bootstrap tree count differs')
+    return count
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ['inputs', 'models', 'output']:
         parser.add_argument('--' + name, type=Path, required=True)
+    parser.add_argument('--alrt', type=int, default=0)
+    parser.add_argument('--bootstrap', type=int, default=0)
     args = parser.parse_args()
+    support_options('aa', args.alrt, args.bootstrap)
     args.inputs, args.models, args.output = args.inputs.resolve(), args.models.resolve(), args.output.resolve()
     checked_receipt(args.inputs)
     checked_receipt(args.models)
+    marker_rows = list(csv.DictReader((args.inputs / 'marker_summary.tsv').open(), delimiter='\t'))
+    ready = [r for r in marker_rows if r['status'] == 'ready_for_inference']
+    if not ready:
+        raise ValueError('No markers with sufficient paired coverage')
     executable = shutil.which('iqtree3')
     if executable is None:
         raise FileNotFoundError('iqtree3')
@@ -55,13 +87,17 @@ def main():
         'script_sha256': sha(Path(__file__)), 'executable': executable,
         'executable_sha256': sha(Path(executable)), 'version': version,
         'workers': 4, 'threads_per_fit': 1, 'memory_per_fit': '2G',
-        'planning': '52 available markers, 4-12 taxa, 91-1181 columns, four fits each; provisional 0.1-10 minutes per fit, 0.1-9 hours wall time at four workers, 2 GB output headroom. Local CPU only, no paid services.',
+        'input_dimensions': {'ready_markers': len(ready), 'fits': 4 * len(ready),
+            'taxa_range': [min(int(r['eligible_taxa']) for r in ready), max(int(r['eligible_taxa']) for r in ready)],
+            'columns_range': [min(int(r['retained_columns']) for r in ready), max(int(r['retained_columns']) for r in ready)]},
+        'sequence_topology_support': {'sh_alrt_replicates': args.alrt,
+            'ultrafast_bootstrap_replicates': args.bootstrap, 'bootstrap_nni': bool(args.bootstrap)},
+        'planning': 'Four concurrent single-thread fits, 2 GB each; use a dataset-specific prelaunch resource estimate. Existing local CPU only, no paid services.',
         'analysis': 'AA LG+F+G4 tree search; AF+G4, AF+F+G4 and LLM+G4 structural fits on that fixed unrooted AA topology. Identical sequences retained. Branches are expected state substitutions/site, not Angstrom or change/year. No branch uncertainty yet.'}
     config_path = args.output / 'config.json'
     if config_path.exists() and json.loads(config_path.read_text()) != config:
         raise ValueError('Changed run configuration; use a new output')
     config_path.write_text(json.dumps(config, indent=2) + '\n')
-    marker_rows = list(csv.DictReader((args.inputs / 'marker_summary.tsv').open(), delimiter='\t'))
 
     def run(row):
         marker = row['marker']
@@ -82,6 +118,7 @@ def main():
             seed = int(hashlib.sha256(marker.encode()).hexdigest()[:8], 16) % 2147483646 + 1
             command = [executable, '-s', str(alignment), '-st', 'AA', '-m', model,
                        '-T', '1', '--mem', '2G', '--seed', str(seed), '-keep-ident', '--prefix', str(prefix)]
+            command += support_options(label, args.alrt, args.bootstrap)
             if label != 'aa':
                 command += ['-te', str(folder / 'aa.treefile')]
             run_config = {'command': command, 'alignment_sha256': sha(alignment),
@@ -106,9 +143,13 @@ def main():
                 if process.returncode != 0:
                     raise RuntimeError(f'{marker}/{label} failed with exit {process.returncode}; inspect log')
                 tree_edges(tree_path, taxa)
+                suffixes = ['.treefile', '.iqtree', '.log']
+                if label == 'aa' and args.bootstrap:
+                    verify_bootstrap_tips(folder / 'aa.ufboot', taxa, args.bootstrap)
+                    suffixes.append('.ufboot')
                 result = {'status': 'completed_point_estimate', 'elapsed_seconds': time.monotonic() - start,
                     'config_sha256': sha(run_path), 'artifacts': {label + suffix: sha(folder / (label + suffix))
-                    for suffix in ['.treefile', '.iqtree', '.log']}}
+                    for suffix in suffixes}}
                 receipt_path.write_text(json.dumps(result, indent=2) + '\n')
             edges = tree_edges(tree_path, taxa)
             if reference is None:
