@@ -1,0 +1,17 @@
+{
+  "scope": "Evidence-based caveats for downstream confirmatory analysis; not an automatic alteration of frozen fits.",
+  "records": [
+    {
+      "marker": "4986044at2759",
+      "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+      "evidence_receipt": "metadata/tfiib_class_split_receipt.json",
+      "evidence": "Selected BUSCO copies occupy both sides of an unrooted split observed in all 1000 bootstrap trees: 437 on BRF1-enriched side and 27 on the other side.",
+      "required_actions": [
+        "Evaluate individual-repeat topology sensitivity",
+        "Reconcile distinct gene copies with supported species phylogeny",
+        "Rebuild orthology-consistent marker alignments before interpreting excess structural change"
+      ],
+      "limitations": "Branch support does not establish function, root placement or duplication timing. Existing unreviewed fits remain descriptive; downstream consumers must explicitly apply this caveat."
+    }
+  ]
+}

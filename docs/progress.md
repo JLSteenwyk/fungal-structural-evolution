@@ -866,3 +866,20 @@ missing coordinates. Complete mapping, readback and actual predictor comparisons
 remain outstanding. The previous turn completed archive acquisition; this turn
 starts the residue mapping required for meaningful experimental benchmarks.
 The full research goal remains active.
+
+
+### Combined TFIIB tree completed; mixed-copy marker concern strengthened
+
+The 1,040-tip combined-domain tree and all 1,000 bootstrap trees completed.
+Independent tip/branch validation and split recount identify a 100/100-supported
+split separating 555 BRF1-undetected entries from 473 detected plus 12 undetected
+entries. It occurs in every saved bootstrap tree. Selected BUSCO copies fall on
+both sides (437 and 27), supporting a gene-copy reconciliation requirement before
+confirmatory single-ortholog structural-rate interpretation. The 48 unlabeled
+internal groups contain identical aligned sequences and remain unresolved.
+
+Two split-validation tests pass. An explicit marker caveat is versioned without
+changing running/frozen fits. Repeat-tree sensitivity, rooting and reconciliation
+remain pending. Experimental acquisition/mapping jobs continue. The preceding
+turn launched CA mapping; this turn completes a substantive family-tree assessment.
+The full research goal remains active and incomplete.

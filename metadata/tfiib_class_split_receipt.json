@@ -1,0 +1,32 @@
+{
+  "status": "complete_exploratory_tfiib_class_split_assessment",
+  "tree_receipt_sha256": "e7f4b531eeb532c9f00b366570b759bbe546c9686f79fd2b01a89fa8c4972902",
+  "annotation_receipt_sha256": "1f043d23d6b59a4e6fc9e61101d45150115973eced227fae8abbcd56b01a8c83",
+  "script_sha256": "576f4a3fe621c1ce7890424619912a24a7457df53bf3c191e1f4800bf71e25a1",
+  "tips": 1040,
+  "internal_splits": 1037,
+  "internal_splits_without_support_labels": 48,
+  "best_split": {
+    "split_id": "0x4ad4c5492ca966a69a69acab25aa925354ccdb194c16688cd5aa9a9a9994512c449a635315459a932aaa54acb1a54b0ad532b554d34c43665325a5aa956666998d542b6ad3aa5554590b4acd225552cac998b4d5135d6332d2b32ca9ca95aaa8cacb915a52d2b6355532a5990cd099a6955556a5514c8b5328a59aad32b2cd29aa95",
+    "BRF1_enriched_side_tips": 485,
+    "detected_on_enriched_side": 473,
+    "undetected_on_enriched_side": 12,
+    "detected_on_other_side": 0,
+    "undetected_on_other_side": 555,
+    "minimum_class_disagreements": 12,
+    "SH_aLRT": 100.0,
+    "UFBoot": 100.0,
+    "branch_length": 1.435759589
+  },
+  "bootstrap_trees_checked": 1000,
+  "best_split_observed_in_bootstraps": 1000,
+  "selected_focal_marker_side_counts": {
+    "BRF1_enriched": 437,
+    "BRF1_undetected_enriched": 27
+  },
+  "interpretation": "Split chosen exploratorily by minimum disagreement with BRF1 detection classes, not a prespecified association test. Bootstrap recount measures this split support, not confidence in functional labels or independent duplication events. Unrooted topology; repeat sensitivity and species/gene reconciliation remain required.",
+  "artifacts": {
+    "best_split_tip_annotations.tsv": "ed18084045248fab04e92408d2f2811537a9205f44a77ad674baac5a3ceb17cd",
+    "internal_split_class_counts.tsv": "cdf3a73119d0778bcca373bfaf0cabec1af514fc600b0e7d550119f3cdd869a4"
+  }
+}

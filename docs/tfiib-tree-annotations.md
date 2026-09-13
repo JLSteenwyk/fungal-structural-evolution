@@ -30,3 +30,38 @@ python scripts/annotate_tfiib_tree_inputs.py \
 Full annotation tables and source receipts are versioned under `metadata/`.
 The classes deliberately use detected/undetected terminology and do not assign
 experimentally validated TFIIB/BRF1 function from domain counts alone.
+
+
+## Completed combined-domain tree and exploratory class split
+
+The combined 184-column tree completed for all 1,040 tips with 1,000 bootstrap
+trees. Independent split analysis checked all bootstrap tip identities and
+finite/nonnegative branch lengths and parsed 1,037 internal splits. The 48
+unlabeled internal groups each contain a single distinct aligned sequence;
+no support is imputed for their identical-tip expansions.
+
+The split minimizing disagreement with the domain-detection classes has
+SH-aLRT/UFBoot support 100/100 and occurs in all 1,000 saved bootstrap trees:
+
+| Side of unrooted split | BRF1 detected | BRF1 undetected | Selected focal BUSCO copies |
+| --- | ---: | ---: | ---: |
+| BRF1-enriched | 473 | 12 | 437 |
+| Other side | 0 | 555 | 27 |
+
+This is an exploratory split selected using annotations, not a prespecified
+association test. Bootstrap support concerns the split, not protein function
+or independence of duplication events. Nevertheless, the original marker
+selection draws copies from both deeply separated parts of this family tree.
+`config/marker_orthology_review.json` records a confirmatory-analysis caveat for
+4986044at2759: gene-copy reconciliation and repeat-tree sensitivity are required
+before single-ortholog rate interpretation. The unrooted branch does not date
+or locate the ancestral duplication, and BRF1 non-detection is not domain loss.
+
+```bash
+python scripts/assess_tfiib_domain_class_split.py \
+  --output results/phylogeny/tfiib-class-split-v1
+```
+
+Two tests check split invariance to root placement and rejection of duplicate
+tips/negative branches. Complete split counts, exact tip-side annotations and
+receipts are versioned. The separate repeat trees are still computing.
