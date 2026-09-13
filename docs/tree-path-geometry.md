@@ -379,3 +379,45 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geomet
 ```
 
 Use a new immutable output path for a rerun.
+
+## Expanded fit-to-geometry handoffs queued
+
+The expanded AlphaFold (124 markers) and combined ESMFold (89 markers) datasets
+now have automatic handoffs from their running full paired-fit producers.
+Each controller pins the producer PID, process start time and command, input and
+model receipts, completed geometry-audit lineage, fit configuration, and local
+scripts including their imported project helpers. A changed or missing producer
+cannot authorize analysis without a successful full-fit receipt. The complete
+fit audit then validates all marker identities, masks, model reports, source
+artifacts, fixed topologies and branch-table values before downstream work.
+
+The queued sequence is full fit audit → paired-site tree-path point estimates →
+within-marker descriptive rank comparisons → figure files. Predictions remain
+separate by source. Geometry uses the already audited shared-site pairs; it is
+not recomputed by the handoff. The path producer checks every pair identity and
+compares ten deterministically selected pair paths per marker against independent
+Biopython traversal for all four models. This is not a complete independent
+numerical recomputation of every path. Copy-review caveats remain in the tables.
+No bootstrap uncertainty, phylogenetically adjusted association, acceleration,
+physical-distance additivity or positive-selection claim follows from this stage.
+
+Each handoff reserves one CPU thread, 32 GB working-memory allowance, 10 GB disk
+and a conservative 0.1–16 hours after fit completion on the existing host; it
+requires at least 64 GiB currently available memory before starting. The two
+preflights passed against the real sources and running producers. Three focused
+failure checks reject changed pins, missing/duplicate fit completion and geometry
+bound to another input. Completed stages have checksum-bound checkpoints; an
+uncheckpointed partial output requires review before retrying.
+
+```bash
+python scripts/advance_paired_fit_benchmark.py --config metadata/paired_fit_benchmark_gdm_expanded_config.json
+python scripts/advance_paired_fit_benchmark.py --config metadata/paired_fit_benchmark_esmfold_combined_config.json
+```
+
+These controllers are already running; do not launch duplicates. Their logs are
+`logs/paired_fit_benchmark_{gdm_expanded,esmfold_combined}_controller_v1.log`.
+Configuration files name the immutable output paths. Final receipts will be in
+`results/phylogeny/paired-fit-benchmark-controller-{gdm-expanded,esmfold-combined}-v1`.
+The launch observation is `metadata/paired_fit_benchmark_handoff_launch.json`.
+Figures require visual review before publication. At this checkpoint the
+handoffs are queued, not completed analyses.

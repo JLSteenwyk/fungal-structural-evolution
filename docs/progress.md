@@ -2286,3 +2286,14 @@ plus a figure of the 12 largest estimates. Nuisance-reoptimized profiles and
 alignment/model eligibility reviews remain pending.
 
 Full raw-log/table readback of the longest-branch slices passed for all 1,655 cases and 11,585 points. The saved figure and scripts accompany this checkpoint. Structural fit queues remain active: 420/496 AF-based and 68/356 combined ESMFold fits at this observation; these counts are execution receipts, not final audited results. Both ESMFold GPU queues and the species-tree/orthology jobs remain running.
+
+### Expanded tree-distance/geometry handoffs queued
+
+Queued checksum-bound controllers for both running expanded paired-fit datasets:
+124 AlphaFold-covered markers and 89 combined ESMFold markers. Successful full
+fit completion triggers the full fit audit, direct-geometry/tree-path benchmark,
+descriptive rank summary and figure generation. Both real-source preflights and
+three prerequisite-failure tests passed; both controller processes were verified
+live and waiting on the exact original fit producers. This advances automation
+of the expanded structural-branch benchmark; downstream results remain pending.
+See `docs/tree-path-geometry.md` and the versioned controller configurations.

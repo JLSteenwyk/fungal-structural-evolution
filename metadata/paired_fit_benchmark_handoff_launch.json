@@ -1,0 +1,29 @@
+{
+  "status": "two_controllers_verified_live_waiting_on_full_fit_producers",
+  "controllers": [
+    {
+      "pid": 3613199,
+      "start_ticks": "182620112",
+      "command": [
+        "python",
+        "scripts/advance_paired_fit_benchmark.py",
+        "--config",
+        "metadata/paired_fit_benchmark_gdm_expanded_config.json"
+      ],
+      "state_at_observation": "S"
+    },
+    {
+      "pid": 3613215,
+      "start_ticks": "182620115",
+      "command": [
+        "python",
+        "scripts/advance_paired_fit_benchmark.py",
+        "--config",
+        "metadata/paired_fit_benchmark_esmfold_combined_config.json"
+      ],
+      "state_at_observation": "S"
+    }
+  ],
+  "test_result": "3 prerequisite rejection tests passed; both full real-input preflights passed",
+  "interpretation": "Queued stages, not completed audits or benchmarks; completion requires final controller receipts and subsequent result/figure review."
+}
