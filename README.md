@@ -2,7 +2,7 @@
 
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.
 
-Status: proteomes acquired and broad-marker QC completed for **501 fungi and 25 genome-backed outgroups (526 taxa)**. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. MAFFT sensitivity alignments and existing-structure acquisition continue. Supported species-tree inference, orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
+Status: proteomes acquired and broad-marker QC completed for **501 fungi and 25 genome-backed outgroups (526 taxa)**. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. OrthoFinder reference-core inference has started with all remaining taxa prepared for assignment. MAFFT sensitivity alignments and existing-structure acquisition continue. Supported species trees, full orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
 
 ## Project records
 - [Original objective](docs/objective.txt)

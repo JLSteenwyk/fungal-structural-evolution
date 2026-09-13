@@ -1,0 +1,41 @@
+{
+  "taxa": 526,
+  "core_taxa": 64,
+  "additional_taxa": 462,
+  "core_proteins": 597213,
+  "additional_proteins": 5218634,
+  "core_fungal_groups": [
+    "Aphelidiomycota",
+    "Ascomycota",
+    "Basidiobolomycota",
+    "Basidiomycota",
+    "Blastocladiomycota",
+    "Calcarisporiellomycota",
+    "Chytridiomycota",
+    "Entomophthoromycota",
+    "Glomeromycota",
+    "Kickxellomycota",
+    "Microsporidia",
+    "Monoblepharomycota",
+    "Mortierellomycota",
+    "Mucoromycota",
+    "Neocallimastigomycota",
+    "Olpidiomycota",
+    "Rozellomycota",
+    "Sanchytriomycota",
+    "Zoopagomycota"
+  ],
+  "core_outgroup_groups": [
+    "Amoebozoa",
+    "Apusomonadida",
+    "Choanoflagellatea",
+    "Corallochytrea",
+    "Filasterea",
+    "Ichthyosporea",
+    "Metazoa",
+    "Nucleariida"
+  ],
+  "representative_receipt_sha256": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+  "input_manifest_sha256": "e5871aaad173fe849d384d16cb1fa24c1788ebbffc265726d464848dce748b9b",
+  "selection_policy": "Mandatory broad groups, then inverse-prefix-depth novelty; broad BUSCO single-copy recovery tie-break. Computational core, not a pilot."
+}

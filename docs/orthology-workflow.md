@@ -8,4 +8,12 @@ The intended computation follows the [official scalable workflow](https://orthof
 
 Before launch, freeze the core and additional-taxon manifests, retain every distinct species, verify FASTA checksums and identifier handling, and document resource estimates. Core selection must span the represented fungal lineages and suitable outgroups; high broad-BUSCO scores alone must not exclude evolutionarily reduced lineages. Default FAMSA alignment, DIAMOND searches, FastTree gene trees and hierarchical orthogroups will be evaluated against the task's accuracy needs and confirmed installed configuration. Full gene-tree reconciliation and independent species-tree comparison remain required. A simple sequence cluster or top-level MCL group is not sufficient evidence of orthology.
 
-No orthogroup inference has yet been launched. Core selection, command configuration, resource estimates, execution, quality assessment and reconciliation remain outstanding.
+## Frozen inputs and launched core inference
+
+`python scripts/prepare_orthology_inputs.py` created immutable symlink inputs under `data/orthology_inputs/v1` and recorded checksums for all 526 proteomes. The 64-taxon core contains 54 fungi and 10 outgroups, with 597,213 proteins. The additional cohort contains 462 taxa and 5,218,634 proteins. `metadata/orthology_input_manifest.tsv` records each species' stage and selection reason; the receipt records coverage and source hashes.
+
+Core selection first requires one representative from each of the 19 fungal groups and eight outgroup categories, then adds a second choanoflagellate and ichthyosporean. Remaining fungal slots maximize taxonomic-prefix diversity, with broad-BUSCO single-copy recovery used as a tie-break. This produces 15 ascomycetes and 15 basidiomycetes plus 24 fungi from other groups. Mandatory group coverage prevents high broad-BUSCO scores from displacing reduced lineages. This is a taxonomic proxy; selection sensitivity and the eventual inferred phylogeny remain relevant.
+
+`python scripts/run_orthology_core.py` launched OrthoFinder with 32 search threads, eight analysis workers, DIAMOND, FAMSA and FastTree. Runtime dependency checks passed. Configurations and logs are under `results/orthology/core-control-v1`; output is under `results/orthology/core-v1/Results_Sep12`. Existing outputs are protected from automatic overwriting. A failed/interrupted stage requires explicit restart review using OrthoFinder's supported continuation mechanism.
+
+Core computation is running. Full assignment, combined gene-tree analysis, reconciliation, quality assessment and independent species-tree comparison remain outstanding. The core output alone does not complete this project's orthology requirement.
