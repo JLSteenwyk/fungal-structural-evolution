@@ -392,3 +392,42 @@ subsequent benchmark selection and sensitivity analyses.
 ```bash
 python scripts/review_experimental_model_provenance.py --references results/experimental_structures/reference-metadata-v2 --predictions results/structural_markers/gdm-expanded-v1 --output results/experimental_structures/model-provenance-review-v1
 ```
+
+
+## ESMFold controls for the experimental reference set
+
+Prepared all 80 experimental-reference sequences for comparison against the
+existing local ESMFold configuration. Forty-five canonical full proteins are
+at most 512 residues and absent from all four prior immutable queues; the other
+35 exceed the current length limit and are explicitly deferred without
+truncation. No candidate was chosen by prediction agreement, resolution or
+phenotype. All emitted sequence hashes, length/alphabet bounds and disjointness
+from original, follow-on, predictor-control and ecology queues passed readback.
+
+Observed timings from 6,666 completed original-run prediction receipts yield
+0.078 GPU hours at within-length-bin medians, 0.056–0.106 hours using observed
+10th–90th percentile timings, and a planning allowance of 0.158 hours (about
+9.5 minutes) after 50% overhead on the upper projection. These are planning
+scenarios, not statistical uncertainty intervals. Reserve 24 GB VRAM and 20 GB
+disk headroom on the existing host; no new paid services are used.
+
+The experimental-control controller is now waiting for original GPU1 process
+691140 with its pinned process start time to finish. It requires that run's
+matching configuration and clean completion receipt, zero remaining eligible
+sequences, no interruption or OOM, and an idle GPU before launching the 45-control
+queue. Inputs, checkpoint, producer and resource receipt are pinned. A launch
+receipt prevents duplicate scheduling; failures require explicit review. This
+uses a separate copy of the currently live ecology controller with purpose
+labels changed; its control logic is identical and the two existing completion/
+process-identity tests pass. The live ecology controller remains unchanged.
+
+```bash
+python scripts/prepare_experimental_prediction_controls.py --output data/prediction_inputs/experimental-controls-v1
+python scripts/advance_experimental_control_predictions.py --config metadata/experimental_control_prediction_controller_config.json
+```
+
+The controller is already running; do not start a duplicate. Output will be
+`results/predictions/esmfold-experimental-controls-v1`. Independent artifact
+validation and matched AlphaFold/ESMFold/experimental comparisons remain pending.
+Alternate prediction does not establish experimental or training independence,
+and this reference set remains taxonomically narrow.

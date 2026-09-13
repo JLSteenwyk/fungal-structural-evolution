@@ -1,0 +1,28 @@
+{
+  "status": "complete_short_queue_resource_projection",
+  "pending_short_predictions": 45,
+  "observed_predictions": 6666,
+  "median_projected_inference_hours": 0.07814727286724116,
+  "observed_quantile_projection_hours": [
+    0.05613085593177109,
+    0.1055669031445739
+  ],
+  "planning_wall_hours_with_50percent_overhead": 0.15835035471686085,
+  "planned_gpu": "Existing authorized GPU after current work finishes; recheck availability before launch",
+  "planning_vram_gb": 24,
+  "planning_output_gb": 20,
+  "cost": "Existing host; no paid resources",
+  "disposition_selection": {
+    "file": "sequence_disposition.tsv",
+    "field": "status",
+    "eligible_status": "new_experimental_reference_control"
+  },
+  "input_receipt_sha256": "83879a33ce286c07739c3d0e25d4f88828e477ce547eb8b4e0b1ac8b1cd6ed97",
+  "prediction_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "script_sha256": "86d3df452b6ccc6e2772fd459e32b2fb4ed93cb61825326107392c5dec219a9a",
+  "interpretation": "Within-length-bin observed inference-time quantiles are planning scenarios, not uncertainty intervals. Output serialization, model loading and contention add overhead; 50 percent above the p90-based sum is an explicit allowance. Completed receipt timings are observational and not an independent artifact-quality audit. Applies only to current canonical <=512-residue configuration; no extrapolation to deferred long proteins or the whole atlas. This does not schedule or launch the next GPU run.",
+  "artifacts": {
+    "observed_prediction_timings.tsv": "6cc765503036f7425cd89827e42d0e419ef385888b82127251a58f8c75438d1d",
+    "length_bin_runtime.tsv": "7e37b5a2d1057a72a0a826eaa2288015833f9a3c44261926de8e4293b08507a6"
+  }
+}

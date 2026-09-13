@@ -1,0 +1,24 @@
+{
+  "predecessor_pid": 691140,
+  "predecessor_start_ticks": "176208473",
+  "predecessor_command_observation": "/home/bizon/anaconda3/envs/esmfold2/bin/python scripts/run_marker_predictions.py --inputs data/prediction_inputs/markers-v1 --checkpoint data/prediction_models/esmfold-v1 --output results/predictions/esmfold-marker-v1 --max-length 512 --limit 10394 ",
+  "predecessor_output": "results/predictions/esmfold-marker-v1",
+  "predecessor_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+  "inputs": "data/prediction_inputs/experimental-controls-v1",
+  "checkpoint": "data/prediction_models/esmfold-v1",
+  "prediction_output": "results/predictions/esmfold-experimental-controls-v1",
+  "control_output": "results/predictions/experimental-controls-controller-v1",
+  "python": "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+  "limit": 45,
+  "minimum_free_disk_bytes": 20000000000,
+  "controller_sha256": "13c20235f2a7ed7acd5c85f608a599db4e9ee3fe74f2e157b42ca17ffd2bcf64",
+  "pinned_files": {
+    "scripts/run_marker_predictions.py": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+    "data/prediction_inputs/experimental-controls-v1/receipt.json": "83879a33ce286c07739c3d0e25d4f88828e477ce547eb8b4e0b1ac8b1cd6ed97",
+    "data/prediction_models/esmfold-v1/receipt.json": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "metadata/experimental_control_prediction_resource_receipt.json": "5878590636d09f7a9665ff4fc4824e6a53cf5c27351a21b778bf499a8a64ccbe"
+  },
+  "cost": "Existing GPU after predecessor completion; no paid resources",
+  "scheduling": "Wait for this exact PID/start-time identity to end, require a clean completed chunk, then wait for no compute processes on its GPU. Never interrupt a predecessor or reuse an already-launched output."
+}

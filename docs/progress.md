@@ -987,3 +987,17 @@ confirmed running; phylogenetic stages still lack final completion receipts.
 The preceding turn completed full coordinate acquisition and taxon coverage;
 this turn contributes concrete evidence needed for circularity controls. The
 complete project remains active and incomplete.
+
+
+### Experimental-reference ESMFold control queue prepared and scheduled
+
+Prepared all 45 experimental-reference proteins eligible for the current full-
+length <=512-residue configuration; 35 longer proteins remain explicitly deferred.
+Verified every emitted sequence and disjointness from four existing queues.
+Estimated about 9.5 minutes of GPU time including the stated planning overhead,
+then started a controller waiting for the pinned original GPU1 run to complete
+cleanly and release the device. No extra GPU prediction process has launched.
+The prior turn added experimental starting-model dependency flags; this turn
+schedules the missing alternate-predictor evidence needed for three-way reference
+comparisons. Full CA mapping and major phylogenetic/prediction jobs continue.
+The overall goal remains active and incomplete.

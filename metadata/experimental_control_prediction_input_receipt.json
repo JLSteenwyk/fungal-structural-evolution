@@ -1,0 +1,26 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "reference_receipt_sha256": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+  "sequence_source_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "prior_input_receipt_sha256": {
+    "markers-v1": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+    "markers-followon-v1": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458",
+    "predictor-controls-v1": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539",
+    "ecology-markers-v1": "209fc201a9751317ea48da64e480a29d2b93ec0d4546f1907581cfa1f9f51b0f"
+  },
+  "script_sha256": "a4546df796c61a53ee89a419a85a0db94f40e10a476ea0b096eac93557bdc16b",
+  "experimental_reference_sequences": 80,
+  "prediction_candidates": 45,
+  "candidate_residues": 13442,
+  "sequence_status_counts": {
+    "deferred_length": 35,
+    "new_experimental_reference_control": 45
+  },
+  "selection": "All exact full canonical experimental-reference sequences eligible for the existing <=512-residue ESMFold configuration, excluding previously reserved sequence IDs. No selection on structure agreement, experimental resolution, or phenotype. No truncation.",
+  "limitations": "Preparation only; prior reservation is not successful prediction. Existing hardware is busy, no additional GPU process launched. Three-way AF/ESMFold/experiment comparison, experimental quality/context and training/template independence remain pending; reference sampling is concentrated in Ascomycota.",
+  "artifacts": {
+    "sequence_disposition.tsv": "9b00e143c842fdfe6c246c9e1940d2a5b5608c0aa17c9c9dbd7de27732587fc1",
+    "candidates.faa": "7245f05ff5db1e1e14097fb00e0ad32ab3d3098c727e3d3ca14b2e7ca82d7646",
+    "experimental_reference_links.tsv": "d91139f96e9f00de99df8435b063c4bf8e3b39ce61168836fb36b55a3e71a5e4"
+  }
+}
