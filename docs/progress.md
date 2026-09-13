@@ -280,3 +280,9 @@ Started the strict translation audit across all 519 NCBI-backed taxa and 5,847,3
 ## Marker-to-CDS identity indexing started
 
 Started source indexing for all 59,840 marker/taxon links across the full 526-taxon dataset. The index checks exact protein sequences and preserves gene-representative decisions, source-boundary conventions, missing CDSs and ambiguous duplicate records. It exports uniquely associated source DNA for later translation-qualified codon alignment. Two identity/ambiguity tests pass; initial taxa completed. This indexing run and the independent full NCBI translation audit are both active; no full codon-alignment result is claimed.
+
+## Full marker CDS source index completed and verified
+
+All 59,840 marker/taxon links across 526 taxa have a unique CDS source; no missing or multiply linked source records remain in this marker set. Independent readback verified the complete identity universe, original marker provenance, all exported nucleotide hashes/lengths and manifest coverage. Exported DNA totals 100,455,973 bases.
+
+The index preserves four alternative products and 313 unresolved/provisional gene mappings, recorded in a 317-row exception table. These are identity/annotation flags, not missing sequences. Full NCBI translation auditing continues; no codon-selection eligibility or selection inference is claimed. Verification script, receipts and coverage/exception tables are versioned.

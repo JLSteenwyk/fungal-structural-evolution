@@ -1,0 +1,28 @@
+{
+  "status": "complete_full_marker_cds_index_readback",
+  "source_index_receipt_sha256": "bf23c653305d5e702c9bf1581bd79f4ff301424454753b7d4d5270d701ce2060",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "marker_links": 59840,
+  "taxa": 526,
+  "exported_sequences": 59840,
+  "exported_nucleotides": 100455973,
+  "source_status_counts": {
+    "unique_source_cds": 59840
+  },
+  "representative_decision_counts": {
+    "longest_per_gene_lexical_tiebreak": 59523,
+    "alternative_product_retained_in_source": 4,
+    "retained_unresolved_gene": 313
+  },
+  "gene_mapping_status_counts": {
+    "unique_gene": 59527,
+    "unmapped": 124,
+    "provisional_orf": 189
+  },
+  "script_sha256": "2c208a04784b335baeea4917b7b113738997fcb2c646e23bf509404a2cbf1d20",
+  "interpretation": "All index artifacts, exact marker identity coverage, record multiplicity and exported sequence hashes verified independently. This is not translation verification, complete-gene validation or selection eligibility.",
+  "artifacts": {
+    "taxon_cds_coverage.tsv": "a2303d653392bec10f0ced6e104ca1c5b49030f3686b65fb2f8567e13b45aa45",
+    "marker_cds_exceptions.tsv": "52e5d2a1524ae0b234f43ee648d59962e76790ab3e870e5231fa6d5e4808c36b"
+  }
+}
