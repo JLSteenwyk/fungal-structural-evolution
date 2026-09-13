@@ -55,7 +55,7 @@ class GeneMapping(unittest.TestCase):
             gtf = Path(tmp) / 'x.gtf.gz'
             with gzip.open(gtf, 'wt') as out:
                 out.write('ctg\ttest\tCDS\t1\t10\t.\t+\t0\tgene_id "g"; transcript_id "t";\n')
-            self.assertEqual(mapping.parse_creolimax_gtf(gtf)[0], {'t': {'g'}})
+            self.assertEqual(mapping.parse_creolimax_gtf(gtf)[0], {'t': {'g'}, 'g': {'g'}})
 
     def test_parent_cycles_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:

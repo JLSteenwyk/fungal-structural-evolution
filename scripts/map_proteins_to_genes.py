@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Map exact protein accessions through GFF Parent links; flag ambiguous loci."""
 import csv
+import argparse
 import fcntl
 import gzip
 import hashlib
@@ -85,10 +86,15 @@ def parse_creolimax_gtf(path):
             if not attrs.get('gene_id') or not attrs.get('transcript_id'):
                 raise ValueError('CDS lacks gene/transcript ID')
             mapping[attrs['transcript_id']].add(attrs['gene_id'])
+            # This published proteome also labels 50 assembler products by exact gene ID.
+            mapping[attrs['gene_id']].add(attrs['gene_id'])
     return dict(mapping), set()
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--taxon', action='append', help='Refresh selected taxa in an existing mapping snapshot')
+    args = parser.parse_args()
     folder = ROOT / 'results/gene_mapping'
     folder.mkdir(parents=True, exist_ok=True)
     lock = (folder / '.mapping.lock').open('w')
@@ -120,6 +126,13 @@ def main():
                 annotations[record['taxon_id']] = dict(record, path=record['mapping_path'],
                     sha256=record['mapping_sha256'], mapping_mode='verified_orf_coordinates')
     summaries = []
+    if args.taxon:
+        selected_taxa = set(args.taxon)
+        if selected_taxa - set(annotations):
+            raise ValueError('Requested taxa lack available annotations')
+        previous = json.loads((ROOT / 'metadata/gene_mapping_snapshot.json').read_text())
+        summaries = [r for r in previous['taxa'] if r['taxon_id'] not in selected_taxa and r['taxon_id'] in taxa]
+        annotations = {k: v for k, v in annotations.items() if k in selected_taxa}
     for name, annotation in sorted(annotations.items()):
         gff = ROOT / annotation['path']
         source = ROOT / inputs[name]['input_path']
@@ -161,7 +174,7 @@ def main():
                           'mapping_path': str(target.relative_to(ROOT)),
                           'mapping_sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
     (ROOT / 'metadata/gene_mapping_snapshot.json').write_text(json.dumps({
-        'planned_taxa': len(taxa), 'mapped_taxa': len(summaries), 'taxa': summaries,
+        'planned_taxa': len(taxa), 'mapped_taxa': len(summaries), 'taxa': sorted(summaries, key=lambda r: r['taxon_id']),
         'note': 'No isoform selection performed; ambiguous/unmapped proteins require resolution. Gene IDs are local to this annotation version.'}, indent=2) + '\n')
     print('Mapped', len(summaries), 'taxa; multi-protein genes:', sum(r['genes_with_multiple_proteins'] for r in summaries))
 

@@ -2,7 +2,7 @@
 
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.
 
-Status: proteomes acquired for a working set of **501 fungi and 25 genome-backed outgroups (526 taxa)**. A further fungal candidate lacks an available proteome and remains in the candidate manifest with an exclusion record. Full-dataset protein QC and exact-sequence reuse of existing AlphaFold structures are running. Conserved-marker extraction and alignment scripts are implemented; species-tree inference and evolutionary analyses remain pending. Full-scale design; no separate pilot.
+Status: proteomes acquired and broad-marker QC completed for **501 fungi and 25 genome-backed outgroups (526 taxa)**. All 519 NCBI gene annotations are downloaded and verified. Full-dataset alignment of 59,840 single-copy marker sequences, gene-representative preparation and existing-structure acquisition are running. Species-tree inference and evolutionary analyses remain pending. Full-scale design; no separate pilot.
 
 ## Project records
 - [Original objective](docs/objective.txt)
@@ -13,9 +13,16 @@ Status: proteomes acquired for a working set of **501 fungi and 25 genome-backed
 - [Resource assessment](docs/resources.md)
 - [Phylogenetic workflow](docs/phylogenetic-workflow.md)
 - [Gene and isoform reconciliation](docs/gene-isoform-mapping.md)
+- [Methods draft: executed work and pending analyses](docs/methods-draft.md)
 - [Metadata definitions](metadata/README.md)
 
 ## Reproduction
 Python 3.10+ standard library suffices for NCBI metadata inventory; openpyxl is used to import published supplementary tables. Run `make inventory` to retrieve public NCBI fungal catalogs, record checksums, and generate candidate tables. These are discovery catalogs, not a final sample. Raw downloads remain in ignored `data/`; versioned metadata records source URLs and hashes.
 
 BUSCO uses the isolated environment specified in `environments/busco.yml`; marker workflows additionally use Biopython and MAFFT. Commands and validation gates are documented in the phylogenetic workflow. Large files must not enter Git history. GitHub: public repository https://github.com/JLSteenwyk/fungal-structural-evolution (user-confirmed).
+
+## Full-dataset QC
+
+![Sampling and broad marker recovery](docs/figures/marker_recovery.svg)
+
+These are raw-proteome results for the 125-marker broad eukaryotic panel, not a universal assembly-quality score. Reproduce with `python scripts/summarize_busco.py` and `python scripts/plot_full_dataset_qc.py`; the latter writes PNG, SVG, PDF and table artifacts under `results/qc/`. Copy its SVG to `docs/figures/marker_recovery.svg` to refresh the displayed figure. Plot dependencies are in `environments/qc-figures.yml`.
