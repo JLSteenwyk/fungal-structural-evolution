@@ -220,3 +220,47 @@ python scripts/audit_experimental_ca_mapping.py \
   --coordinates data/experimental_structures/coordinates-exact-partial-v1 \
   --output results/experimental_structures/ca-audit-partial-v1
 ```
+
+
+## Full reference metadata and coordinate expansion
+
+The frozen `reference-metadata-v2` inventory joins all 2,850 exact sequence rows
+(80 predicted proteins) to 1,036 verified entry responses. Every entry's method,
+methodology and resolution fields passed an independent source-field readback.
+The initial v1 inventory is retained outside Git; v2 explicitly adds methodology.
+
+The search's experimental-content filter also returned four entries whose entry
+metadata classify them as **integrative**: 8ZZ2, 9A15, 9A16 and 9A17. These remain
+in the accession/sequence inventory but are deferred from the experimental
+coordinate benchmark. RCSB describes [8ZZ2](https://www.rcsb.org/structure/8ZZ2)
+as an integrative structure; experimental restraints do not make all coordinates
+independent experimental observations. This correction applies to the full
+inventory interpretation, not to sequence correspondence.
+
+The 1,032 remaining entries comprise 583 electron-microscopy, 448 X-ray and one
+solution-NMR structure. Full source method-specific geometry, map, refinement,
+starting-model and date fields are preserved in a hash-tracked JSON artifact.
+Missing fields remain unknown. Entry metrics cannot establish target-chain
+quality; release dates alone cannot prove training independence. All 1,036
+entries are classified as heteromeric protein (477), protein/NA (555), or
+homomeric protein (4), so complex and conformational context require review.
+
+Coordinate expansion is running with one streaming worker, 2 GB memory planning
+and 20 GB disk headroom, with a broad 0.5–8 hour forecast on the existing host.
+It reuses 215 prior archives after checking collection/configuration/entry
+receipts, checksums, gzip integrity and entry identity; 817 downloads remain in
+the full requested universe. No new paid services are involved. The new output
+is `data/experimental_structures/coordinates-exact-full-v1`.
+
+Reproduce the metadata stage with:
+
+```bash
+python scripts/summarize_experimental_reference_metadata.py --screen results/experimental_structures/sequence-screen-full-v1 --metadata data/experimental_structures/metadata-v1 --output results/experimental_structures/reference-metadata-v2
+python scripts/retrieve_experimental_coordinates.py --screen results/experimental_structures/sequence-screen-full-v1 --reference-metadata results/experimental_structures/reference-metadata-v2 --reuse data/experimental_structures/coordinates-exact-partial-v1 --output data/experimental_structures/coordinates-exact-full-v1
+```
+
+Use new output paths to regenerate immutable metadata. The downloader resumes
+only with identical pinned configuration. Tests cover archive identity and
+truncation, verified reuse without network access, integrative deferral, and
+rejection of a tampered source archive. Three tests passed. Quality review,
+expanded residue mapping and direct prediction comparisons remain pending.

@@ -912,3 +912,21 @@ in five entries. Experimental-quality filtering and actual prediction comparison
 remain pending. The preceding turn applied the orthology caveat; this turn
 completes substantive experimental-reference acquisition and correspondence work.
 The full project remains active.
+
+
+### Experimental methodology review and full coordinate expansion
+
+Completed the full reference metadata inventory and independent method,
+methodology and resolution readback for all 1,036 exact-match entries. Four are
+integrative models, explicitly deferred; 1,032 experimental entries remain.
+Started full coordinate retrieval with verified reuse of 215 cached archives
+and 817 new requests. Metadata, tests, resource estimates and provenance are
+versioned; coordinate retrieval is still running.
+
+The 72-marker local ESMFold paired-site geometry producer also finished:
+259,780 accepted and 6,813 excluded taxon pairs. Output checksums passed readback;
+this checkpoint does not claim a fresh independent numerical audit of all pairs.
+These measurements use the same observed sites as the paired sequence/structural
+alphabet inputs. Joining them to completed supported tree fits and uncertainty
+estimates remains pending. Prediction, phylogeny and other background stages
+continue; the overall project remains active and incomplete.

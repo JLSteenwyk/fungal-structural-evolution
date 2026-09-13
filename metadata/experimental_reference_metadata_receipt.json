@@ -1,0 +1,31 @@
+{
+  "status": "complete_exact_sequence_reference_metadata_inventory",
+  "entries": 1036,
+  "entity_model_rows": 2850,
+  "distinct_predicted_proteins": 80,
+  "entry_methodology_counts": {
+    "experimental": 1032,
+    "integrative": 4
+  },
+  "entry_method_counts": {
+    "ELECTRON MICROSCOPY": 583,
+    "SOLUTION NMR": 1,
+    "X-RAY DIFFRACTION": 448,
+    "unknown": 4
+  },
+  "entry_composition_counts": {
+    "heteromeric protein": 477,
+    "protein/NA": 555,
+    "homomeric protein": 4
+  },
+  "entries_missing_resolution": 5,
+  "screen_receipt_sha256": "bca4bf8399af0b774a60341d1bb0e1c4481b2362292ce3df269b45fa144213d0",
+  "metadata_receipt_sha256": "ec2aaadfa56e885db1b8320e2c1f5321220c9372a3f3a7826ffd3441ad6d9458",
+  "script_sha256": "bbcc0aabe91c2b05d034f1ab174ca440a8c7899a3a39414e891e3b8bae7db1ed",
+  "interpretation": "All exact full canonical sequence candidates retained without choosing on prediction agreement. Resolution is recorded with experimental method, never substituted for local residue reliability. Entry-level geometry and map metrics are not target-chain metrics. Missing fields remain unknown. Dates do not establish training independence; refinement starting models and homolog/template overlap require review. Repeated entries/chains are not independent proteins.",
+  "artifacts": {
+    "entries.tsv": "a44f1b2379f674ddfb4e499b6b1156ea8e84d8d64f30000375728b8591bc5a21",
+    "method_specific_metadata.json": "22dd90623fbcadbf0b2f66e60d4229db2113a7b21801804120f460e0eb516ccf",
+    "entities.tsv": "6de93be8ace5a41c689986447f7b1d52a30c3153e7bf20a191df5f0c30e86633"
+  }
+}
