@@ -1,0 +1,154 @@
+  Develop and execute a reproducible comparative structural genomics project
+  across approximately 500 fungal species spanning fungal diversity, plus
+  approximately 25 non-fungal outgroup taxa.
+
+  The central objective is to identify where protein structures change across
+  the fungal phylogeny, determine how structural change relates to sequence
+  evolution, and test associations with gene duplication, domain architecture,
+  and ecological transitions.
+
+  Proceed directly with the full sampling design; do not require a separate
+  pilot study. Incorporate quality control, benchmarking, and intermediate
+  checkpoints into the full workflow.
+
+  PROJECT MANAGEMENT AND REPOSITORY
+
+  Use a GitHub repository named fungal-structural-evolution to track the
+  project, decisions, milestones, analyses, and reproducible scripts.
+
+  Inspect the existing workspace and GitHub configuration first. Create the
+  repository if account, ownership, and visibility are established; otherwise,
+  prepare the local repository and ask only for the missing GitHub details.
+  Do not overwrite existing work.
+
+  Maintain:
+  - A README describing objectives, scope, workflow, and project status.
+  - A versioned sampling manifest and data dictionary.
+  - A research plan with hypotheses, methods, and completion criteria.
+  - An annotated bibliography.
+  - A task tracker, decision log, and record of unresolved questions.
+  - Versioned workflows, environments, configurations, and analysis scripts.
+
+  Store large datasets and structures outside Git history. Track their
+  locations, accession identifiers, checksums, provenance, and retrieval
+  instructions in the repository.
+
+  SAMPLING
+
+  Select approximately 500 unique fungal species using both broad phylogenetic
+  coverage and denser sampling around informative evolutionary transitions.
+  Ensure representation of sparsely sampled fungal lineages.
+
+  Include approximately 25 non-fungal outgroup taxa in addition to the 500
+  fungal species. Select outgroups based on published phylogenetic evidence,
+  emphasizing close relatives and using more distant taxa where justified.
+  Do not require every outgroup in every protein-family analysis.
+
+  For each taxon, document assembly and annotation accessions, source and
+  version, quality metrics, taxonomy, ecological metadata, existing structural
+  coverage, and the reason for inclusion.
+
+  Evaluate assembly completeness, contamination, annotation quality, and
+  redundancy. Record exceptions needed to preserve phylogenetic coverage.
+  Represent uncertain or mixed ecological assignments explicitly.
+
+  PHYLOGENETIC FRAMEWORK
+
+  Construct a robust sequence-based species phylogeny and assess support,
+  gene-tree discordance, and sensitivity to taxon and marker selection.
+
+  Evaluate time calibration where defensible and propagate relevant dating
+  uncertainty. Distinguish change per unit time from relative divergence when
+  absolute times are insufficiently supported.
+
+  Infer protein families, orthology, and domain boundaries. Reconcile gene
+  trees with the species tree for analyses involving duplication and loss.
+  Do not equate structural clusters with orthogroups.
+
+  STRUCTURAL ATLAS
+
+  Inventory suitable existing predictions and predict missing structures.
+  Document prediction software, databases, settings, confidence metrics, and
+  provenance. Evaluate systematic differences between prediction sources.
+
+  Construct protein-level and domain-level structural comparisons and
+  clusters. Identify remote homolog candidates, annotate supported functions,
+  and characterize unannotated families.
+
+  Distinguish structural similarity, inferred homology, and experimentally
+  established function. Treat apparent structural novelty as a hypothesis
+  requiring additional checks.
+
+  EVOLUTIONARY ANALYSES
+
+  1. Identify branches and clades with elevated structural change within
+     homologous proteins and domains.
+
+  2. Model sequence–structure coupling and identify excess or reduced
+     structural change given sequence divergence.
+
+  3. Analyze domain gains, losses, fusions, duplications, and rearrangements
+     separately from changes within conserved domains and protein-family
+     turnover.
+
+  4. Test whether duplication is associated with structural divergence,
+     asymmetry between duplicates, or changes at functional sites.
+
+  5. Test associations with well-supported, independently replicated ecological
+     or morphological transitions.
+
+  6. Locate evolutionary changes in protein cores, surfaces, catalytic sites,
+     binding pockets, and supported interaction interfaces.
+
+  7. Where coding-sequence alignments and divergence permit, test selection
+     hypotheses and map implicated residues onto structures.
+
+  8. Reconstruct ancestral amino-acid sequences and predict structures for
+     selected compelling families, propagating ancestral uncertainty.
+     Prioritize experimentally testable functional hypotheses.
+
+  STATISTICAL AND TECHNICAL REQUIREMENTS
+
+  Account for shared ancestry, branch duration, protein-family effects,
+  uneven sampling, missing data, alignment coverage, protein length,
+  prediction uncertainty, and multiple testing.
+
+  Benchmark structural-alphabet branch estimates against direct structural
+  comparisons. Do not interpret structural-alphabet branch lengths as physical
+  displacement or assume raw structural distances are additive.
+
+  Evaluate potential circularity because predicted structures derive from
+  sequences. Check leading results using alternative prediction settings or
+  methods and experimental structures where available.
+
+  Do not interpret structural acceleration alone as positive selection.
+  Separate inherited structural changes from prediction artifacts, domain
+  orientation uncertainty, annotation errors, and alternative conformations.
+
+  Make workflows restartable and scalable. Preserve species-specific variation
+  needed for evolutionary analyses even when reducing redundancy for discovery.
+
+  EXECUTION AND DELIVERABLES
+
+  Begin with the repository, research plan, literature synthesis, sampling
+  manifest, data inventory, and resource estimates.
+
+  Estimate compute, storage, runtime, and costs before launching expensive
+  stages. Use available authorized resources; obtain authorization before
+  incurring new charges or provisioning paid infrastructure.
+
+  Execute feasible analyses and produce:
+  - A documented dataset and structural atlas.
+  - Species and reconciled gene phylogenies.
+  - Branch-specific sequence and structural change estimates with uncertainty.
+  - Tests of ecological transitions, duplication, and domain evolution.
+  - Reproducible figures, tables, and a methods draft.
+  - Prioritized mechanistic case studies and proposed validation experiments.
+  - Clear documentation of limitations and outstanding work.
+
+  Track progress against explicit milestones. Do not present plans as completed
+  analyses or mark the overall project complete while required work remains.
+  When external resources or experimental work are necessary, document the
+  dependency and continue independent tasks that can proceed.
+
+  This sets the target at approximately 525 taxa total and keeps the phylogenetic integration central to the project.
