@@ -58,3 +58,20 @@ Run `python scripts/run_marker_gene_trees.py` on the frozen profile-matrix-50-v1
 Four concurrent IQ-TREE jobs, two threads each, compare LG/WAG/JTT with empirical frequencies and gamma-distributed rates. ModelFinder's selected model and criteria are retained in each IQ-TREE report. Trees receive 1,000 SH-aLRT replicates; these are approximate likelihood-ratio supports, not bootstrap supports. Fixed marker-derived seeds and input/configuration/tree checksums support reproducibility. IQ-TREE checkpoint resume is allowed only under unchanged configuration. Pending jobs are cancelled if a job reports failure.
 
 The live run is `results/phylogeny/marker-gene-trees-v2`. Version v1 is a terminal failed launch: IQ-TREE rejected `--mfreq`; v2 uses the documented single-dash `-mfreq` and `-mrate G` spellings and has entered likelihood optimization. Preserve v1 logs as failure evidence. Completed trees must still be checked for gene-tree estimation error, support-sensitive discordance and compositional/model sensitivity before reconciliation or species-tree conclusions.
+
+## Full MAFFT and profile correspondence sensitivity
+
+All 125 full-protein MAFFT alignments completed and passed residue/identity preservation checks. The complete audit contains 697,866 raw columns, of which 63,750 pass 50% occupancy among taxa present in each marker. The profile alignments contain 50,941 HMM match-state columns, of which 49,027 pass the same occupancy rule. These different alignment scopes preclude interpreting raw retention fractions as relative accuracy.
+
+Reproduce the completed audit and alternative matrix using new output directories:
+
+```bash
+python scripts/assess_marker_alignments.py --alignments results/phylogeny/alignments-full-v1 --output results/phylogeny/mafft-audit-full-v1
+python scripts/build_species_matrix.py --alignments results/phylogeny/alignments-full-v1 --audit results/phylogeny/mafft-audit-full-v1 --output results/phylogeny/mafft-matrix-50-v1
+python scripts/compare_alignment_correspondence.py --profile results/phylogeny/profile-alignments-full-v1 --profile-audit results/phylogeny/profile-alignment-audit-full-v1 --mafft results/phylogeny/alignments-full-v1 --mafft-audit results/phylogeny/mafft-audit-full-v1 --output results/phylogeny/alignment-correspondence-v1
+python scripts/plot_alignment_correspondence.py --comparison results/phylogeny/alignment-correspondence-v1
+```
+
+Correspondence is evaluated on the identical protein residues retained by both 50%-occupancy masks. Each method defines a set of cross-taxon residue pairs occupying the same alignment column. A contingency table of profile-column/MAFFT-column memberships counts shared edges as the sum of n(n−1)/2 over cells, avoiding explicit pair expansion. Edge Jaccard is intersection divided by union; fractions of each method's edges recovered by the other are reported separately. Undefined values (no eligible edges) remain missing. Counts of residues retained by each method and by both distinguish coverage differences from correspondence differences. Per-profile-column summaries support later alignment-sensitive analyses.
+
+Input alignment and Stockholm hashes are checked; complete audit gates, identical source-protein hashes and ungapped residues, profile-to-Stockholm mapping, identical taxon sets and independently recomputed occupancy masks are required. Tests compare the contingency calculation against explicit cross-taxon edge enumeration and check invariance to column renumbering. Agreement is not ground-truth accuracy: both methods can make the same error. This comparison does not itself establish tree robustness or justify a new filtering threshold; topology/model/taxon sensitivities remain required. Plotting uses the existing structural-comparisons environment.

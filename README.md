@@ -2,7 +2,7 @@
 
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.
 
-Status: proteomes acquired and broad-marker QC completed for **501 fungal entries and 25 genome-backed outgroups (526 taxa)**. A [taxon-label audit](metadata/taxon_label_review.tsv) flags one hybrid and 21 incompletely identified fungal entries for species-level review. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. OrthoFinder reference-core inference has started with all remaining taxa prepared for assignment. MAFFT sensitivity alignments and existing-structure acquisition continue. Supported species trees, full orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
+Status: proteomes acquired and broad-marker QC completed for **501 fungal entries and 25 genome-backed outgroups (526 taxa)**. A [taxon-label audit](metadata/taxon_label_review.tsv) flags one hybrid and 21 incompletely identified fungal entries for species-level review. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. OrthoFinder reference-core inference has started with all remaining taxa prepared for assignment. All 125 MAFFT sensitivity alignments are complete, with a 63,750-position alternative matrix; existing-structure acquisition continues. Supported species trees, full orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
 
 ## Project records
 - [Original objective](docs/objective.txt)
@@ -34,3 +34,9 @@ These are raw-proteome results for the 125-marker broad eukaryotic panel, not a 
 ![PAE confidence sensitivity](docs/figures/pae_sensitivity.svg)
 
 Version-matched PAE matrices were validated for 422 models, enabling confidence sensitivity for all 858 marker taxon pairs qualifying at pLDDT ≥70. The figure compares residue-distance changes before and after a directional PAE filter. Filters change which residue pairs are compared; these descriptive measurements do not establish branch rates, domain movement or adaptation. Reproduction and interpretation are in the [structure integration workflow](docs/marker-structure-integration.md).
+
+## Alignment-method sensitivity
+
+![Profile and MAFFT correspondence](docs/figures/alignment_correspondence.svg)
+
+All 125 markers have completed profile and MAFFT alignments. Their alternative 526-taxon matrices retain 49,027 and 63,750 columns, respectively. Median residue-pair Jaccard agreement among residues retained by both methods is 0.945, with substantial disagreement in a few markers. Agreement is not accuracy; tree and structural-result sensitivities remain pending. See the [phylogenetic workflow](docs/phylogenetic-workflow.md).
