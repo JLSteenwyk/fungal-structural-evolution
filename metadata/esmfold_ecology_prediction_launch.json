@@ -1,0 +1,22 @@
+{
+  "status": "launching_ecology_predictions",
+  "controller_config_sha256": "b0947f8ca6c562aa33587c86deea19423f15c68cfa2aced3367536f164e730a2",
+  "predecessor_chunk_sha256": "caad2b13a869f2d550647b6c0ac5889e545fb8861aaca4f736fc9fe192930ddf",
+  "gpu_process_observation": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1, 691140\n",
+  "command": [
+    "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+    "--inputs",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/ecology-markers-v1",
+    "--checkpoint",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+    "--output",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-ecology-v1",
+    "--max-length",
+    "512",
+    "--limit",
+    "675"
+  ],
+  "gpu_uuid": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+  "unix_time": 1789326529.3679285
+}

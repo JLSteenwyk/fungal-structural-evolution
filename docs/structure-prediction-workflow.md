@@ -473,3 +473,21 @@ Each handoff uses one CPU thread, an 8 GB memory planning allowance and 100 GB
 output headroom; 0.2–12 hours is a conservative runtime planning envelope. It
 requires no GPU inference or paid resources. These are queued jobs; no full-batch
 audit or conversion completion is claimed at launch.
+
+
+## Follow-on prediction queue completed; ecology queue launched
+
+All 4,252 eligible follow-on sequences completed with zero cached models, zero
+OOM events, no interruption and zero eligible sequences remaining. The producer
+exited successfully. The 3,547 length/alphabet-deferred sequences remain explicit;
+completion applies to the eligible short-protein queue, not the full atlas.
+Execution records: `metadata/esmfold_followon_full_prediction_chunk.json` and
+`metadata/esmfold_followon_full_prediction_config.json`.
+
+The full artifact auditor was observed live reading all 4,252 model receipts.
+Audit results and subsequent mmCIF conversion remain pending. Independently,
+the ecology controller verified the same completed chunk and launched all 675
+queued ecology sequences on the freed GPU. Its launch receipt is
+`metadata/esmfold_ecology_prediction_launch.json`; the inference process was
+observed live. Neither launch establishes new confidence-qualified marker
+coverage or an ecological association result.

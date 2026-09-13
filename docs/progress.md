@@ -1722,3 +1722,12 @@ requires completed guide receipts, serial execution and 750 GiB available memory
 Resource evidence and limitations are in metadata/species_mixture_resource_receipt.json
 and docs/phylogenetic-workflow.md. This stage remains unlaunched; existing guide
 and gene-tree producers were confirmed live.
+
+
+Follow-on ESMFold inference completed: 4,252/4,252 eligible sequences, no OOM or
+interruption; producer session 43888 exited zero. Full artifact readback started
+(PID 3564443 under snapshot controller 3228696/session 77902), and the ecology
+controller launched the authorized 675-sequence queue (inference PID 3566770).
+Both launch identities were observed live and the ecology predecessor hash
+matched the completed chunk. Audit/conversion and ecology results remain pending.
+Versioned execution/launch receipts are linked in docs/structure-prediction-workflow.md.

@@ -1,0 +1,25 @@
+{
+  "script_sha256": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+  "input_receipt_sha256": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458",
+  "checkpoint_receipt_sha256": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+  "python": "3.12.13",
+  "packages": {
+    "torch": "2.6.0+cu126",
+    "transformers": "4.57.6",
+    "numpy": "2.4.6",
+    "safetensors": "0.7.0"
+  },
+  "modeling_source_sha256": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+  "cuda_runtime": "12.6",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "visible_gpu": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+  "seed": 20260913,
+  "dtype": "ESM stem float16, folding trunk and heads float32; no autocast; TF32 disabled",
+  "attention_chunk_size": 64,
+  "num_recycles_argument": null,
+  "expected_trunk_passes": 4,
+  "batch_size": 1,
+  "max_length": 512,
+  "plddt_conversion": "Transformers categorical_lddt returns 0..1; multiply by 100 for PDB and CA metadata",
+  "mode": "eval; torch.inference_mode; full single-chain sequence; no MSA; no template; no relaxation"
+}
