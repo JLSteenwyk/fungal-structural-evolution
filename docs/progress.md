@@ -1894,3 +1894,14 @@ Started full row-level normalization readback (session 90918), checking source
 field/order preservation, inverse scaling, terminal rules and all summary totals.
 Producer tables are versioned; independent readback remains running. Projection
 against raw residue tables and controlled exposure/evolution tests remain pending.
+
+
+Full AlphaFold accessibility normalization readback passed every one of
+4,148,852 rows and all scale/threshold summaries (session 90918 exit zero).
+Raw-residue projection verification and controlled modeling remain pending.
+
+Ecology predictions completed all 675 queued models without interruptions or
+memory deferrals (controller session 96562 exit zero). Automatic full artifact
+audit launched as PID 3807224 under snapshot-controller session 55711, with
+explicit ecology marker links; conversion is queued next. No ecological
+association or transition replication has been established by this acquisition.

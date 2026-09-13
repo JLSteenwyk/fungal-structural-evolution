@@ -502,3 +502,12 @@ tables or establish biological exposure. Allowances: one CPU, 4 GiB memory,
 1 GiB output and 0.05–2 planning hours, recorded in
 `metadata/gdm_accessibility_normalization_readback_resource_plan.json`.
 Completion and any corrected totals remain pending this readback.
+
+
+Full normalization readback completed with exit zero (session 90918). All
+4,148,852 source rows, normalization values, terminal rules, two scale summaries
+and five threshold-disagreement totals passed. The previously reported scale
+counts and 4.247% disagreement at 0.25 were confirmed. Receipt:
+`metadata/gdm_accessibility_normalization_full_readback.json`.
+Projection-to-raw-residue verification and controlled exposure/evolution modeling
+remain separate outstanding steps.

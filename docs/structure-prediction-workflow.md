@@ -738,3 +738,20 @@ Receipts and checks: `metadata/esmfold_followon_paired_input_receipt.json`,
 `metadata/esmfold_followon_paired_alignment_readback.json`,
 `metadata/esmfold_followon_paired_lineage_receipt.json`, and
 `metadata/esmfold_followon_descriptive_coverage_union.json`.
+
+
+## Ecology prediction batch completed; artifact audit running
+
+All 675 queued ecology marker predictions completed with zero cached models,
+zero memory/length/alphabet deferrals, zero remaining eligible models and no
+interruption. The ecology prediction controller exited zero (session 96562).
+This completes the queued subset, not all proteins or a test of ecological
+transitions. The existing snapshot controller launched the full artifact audit
+as PID 3807224, explicitly supplying `ecology_marker_links.tsv`; conversion is
+queued afterward. Residue mapping, native-feature qualification, same-method
+cohort integration and ecological transition tests remain pending.
+
+Versioned completion/configuration records:
+`metadata/esmfold_ecology_full_prediction_chunk.json`,
+`metadata/esmfold_ecology_full_prediction_config.json`, and
+`metadata/esmfold_ecology_full_audit_launch.json`.

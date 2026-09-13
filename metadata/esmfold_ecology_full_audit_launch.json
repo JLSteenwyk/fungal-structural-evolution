@@ -1,0 +1,39 @@
+{
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_local_predictions.py",
+      "--predictions",
+      "results/predictions/esmfold-ecology-v1",
+      "--inputs",
+      "data/prediction_inputs/ecology-markers-v1",
+      "--output",
+      "results/predictions/ecology-complete-audit-v1",
+      "--links",
+      "data/prediction_inputs/ecology-markers-v1/ecology_marker_links.tsv"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/convert_esmfold_snapshot.py",
+      "--predictions",
+      "results/predictions/esmfold-ecology-v1",
+      "--audit",
+      "results/predictions/ecology-complete-audit-v1",
+      "--output",
+      "results/structures/esmfold-ecology-complete-v1"
+    ]
+  ],
+  "config_sha256": "eb79c555b48db60173a62e958f3f9113adf1ffca0f845c54996f925e8df2b8c3",
+  "prediction_chunk_sha256": "c6e0b7b4396a92be9ade35dea77778e392de98d89345ee2373b78b26b3ed617d",
+  "resource_plan": {
+    "cpu_threads": 1,
+    "memory_gb": 8,
+    "output_budget_gb": 100,
+    "runtime_hours_planning": [
+      0.2,
+      12
+    ],
+    "scope": "Full 675-sequence ecology prediction artifact audit and mmCIF conversion; one CPU, no new inference or paid resources. Explicit ecology marker links retained."
+  },
+  "unix_time": 1789331344.315271
+}
