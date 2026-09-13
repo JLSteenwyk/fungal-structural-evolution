@@ -1573,3 +1573,16 @@ readback; all 28 earlier diagnostic requests match except output location.
 Initial fits are completing. Full execution, output audit and revised model
 sensitivity remain pending. Resampling is also still live with 209/216 batches
 complete at the launch check. The overall goal remains active and incomplete.
+
+
+### All full-local paired resampling draws complete; full audit started
+
+The 72-marker run completed all 216 marker/block batches and 43,200 planned
+paired draws: 43,184 reported estimable draws and 16 retained unestimable draws.
+The full marker/block grid, every batch receipt hash, replicate receipt-name
+grid and accounting totals passed readback. The producer exited successfully.
+Its controller then launched the full raw-output auditor automatically; live
+process and initial audited batches were verified. Full audit and conditional
+interval summaries remain pending. These completion counts alone do not
+validate branch uncertainty or establish biological acceleration. Other major
+production stages and the broader goal remain incomplete.
