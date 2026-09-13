@@ -16,6 +16,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungal entrie
 - [Assembly-quality workflow](docs/assembly-quality-workflow.md)
 - [Orthology workflow](docs/orthology-workflow.md)
 - [Domain annotation workflow](docs/domain-annotation-workflow.md)
+- [Ecological evidence and curation](docs/ecology-evidence-workflow.md)
 - [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)
 - [Methods draft: executed work and pending analyses](docs/methods-draft.md)
 - [Metadata definitions](metadata/README.md)
