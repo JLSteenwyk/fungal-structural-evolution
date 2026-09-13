@@ -263,3 +263,44 @@ are in `metadata/esmfold_accessibility_normalization_*` and
 ```bash
 OPENBLAS_NUM_THREADS=1 python scripts/normalize_paired_accessibility.py --projection results/structural_annotations/paired-accessibility-esmfold-v1 --snapshot results/structural_markers/esmfold-partial-v1 --config config/accessibility_normalization.json --output results/structural_annotations/paired-accessibility-normalized-esmfold-v1
 ```
+
+
+## Topology-aware site variation and extant exposure
+
+`scripts/summarize_site_parsimony_exposure.py` joins all 16,571 paired columns
+across 72 local markers to unit-cost minimum AA and 3Di changes on their fitted
+AA gene-tree topologies. Unknown tips permit any state. A postorder dynamic
+program supports hard multifurcations without inventing resolutions. This is a
+fixed-tree parsimony diagnostic ([method reference](https://doi.org/10.1137/0128004));
+it ignores branch lengths, time, unequal substitution costs and topology uncertainty.
+
+Each site retains observed taxon and distinct-model counts, matrix coordinates,
+copy-review status, distinct character states, and median/interquartile exposure
+under both normalization scales. All 714,936 taxon-site observations are accounted
+for. Exposure summaries concern extant observed taxa, not reconstructed ancestors.
+
+There are 12,759 AA-variable and 9,377 3Di-variable columns. Among the latter,
+1,595 have invariant focal AA characters. Context residues, spatial partners,
+other sequence differences and prediction variation can alter a 3Di state;
+this does not establish structural evolution independent of sequence.
+Alphabet-specific minimum counts are lower bounds, not comparable physical
+units or branch-rate estimates. No branch assignments or coupling significance
+are inferred. Exposure/rate models still require phylogenetic, sampling,
+confidence and predictor controls.
+
+Validation covered 243 exhaustive two-state/missing tip patterns on three tiny
+topologies, plus hard-polytomy, multicolumn and invalid-input tests. For the
+actual data, a separate set-membership frequency recurrence reproduced all
+33,142 AA/3Di scores. Every site observation/model count and six exposure
+quantiles passed readback from normalized residue rows. This validates the
+calculation, not the biological adequacy of unit-cost parsimony.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/summarize_site_parsimony_exposure.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --audit results/phylogeny/paired-fit-audit-esmfold-v1 --exposure results/structural_annotations/paired-accessibility-normalized-esmfold-v1 --projection results/structural_annotations/paired-accessibility-esmfold-v1 --review config/marker_orthology_review.json --output results/phylogeny/site-parsimony-exposure-esmfold-v1
+OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -p test_site_parsimony.py
+```
+
+The complete site table remains outside Git. Its hash, topology pins, source
+lineage, validation and descriptive counts are recorded in
+`metadata/esmfold_site_parsimony_exposure_{receipt,readback,summary}.json`;
+resource planning is in `metadata/site_parsimony_exposure_resource_plan.json`.

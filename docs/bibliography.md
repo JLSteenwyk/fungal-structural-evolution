@@ -41,3 +41,5 @@ These are methodological precedents, not an exhaustive systematic review. Access
 - Salazar et al. 2019. [Chromosome level assembly and comparative genome analysis confirm lager-brewing yeasts originated from a single hybridization](https://doi.org/10.1186/s12864-019-6263-3). Selected CBS 1483 genome study; hybrid ancestry requires explicit handling before conventional species-tree reconciliation.
 
 - Tien et al. 2013. [Maximum Allowed Solvent Accessibilites of Residues in Proteins](https://doi.org/10.1371/journal.pone.0080635). Table 1 supplies theoretical ALLOWED-region reference areas and reproduces the older Miller scale. Terminal residues and ASA implementation differences require care; applied here as explicit normalization conventions with unclipped outputs.
+
+- Sankoff 1975. [Minimal Mutation Trees of Sequences](https://doi.org/10.1137/0128004). Tree-based minimization of character-change cost. Here a unit-cost fixed-topology diagnostic is used, with missing tips unconstrained; it is not a fitted substitution-rate or ancestral-sequence uncertainty analysis.

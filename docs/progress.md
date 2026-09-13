@@ -1421,3 +1421,15 @@ sides of the five diagnostic thresholds across scales; no biological core/surfac
 labels or evolutionary transitions are inferred. DSSP/ShrakeRupley equivalence
 remains unestablished. Main fit, geometry, GPU prediction and resampling jobs
 were verified live. The overall research goal remains active and incomplete.
+
+
+### Every paired site linked to minimum tree-based character changes
+
+Following complete exposure normalization, added a topology-aware diagnostic
+for all 16,571 columns and both alphabets across 72 local-source markers.
+Minimum-change scores and extant exposure summaries preserve all 714,936
+observations. Exhaustive small-tree tests passed, and every one of 33,142 real
+scores matched a separate recurrence; all site exposure summaries also matched.
+These are minimum counts with explicit model limits, not branch rates or
+phylogenetically adjusted coupling tests. Main jobs were verified live. The
+overall research goal remains active and incomplete.
