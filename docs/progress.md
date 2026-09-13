@@ -1859,3 +1859,13 @@ passed all 1,333,542 valid follow-on contexts after a full earlier-cohort
 regression (1,173,099 contexts). Every preserved coordinate array and all model
 summary totals matched. Started paired AA/3Di input preparation with unchanged
 profile alignment and masks; retained coverage is not yet established.
+
+
+Follow-on paired inputs completed and emitted-file checks passed: 88 ready
+markers, 84 taxa (73 fungal entries/11 outgroups), 3,986 marker–taxon cells,
+843,060 observed paired cells. Full lineage coverage checks passed all 65,750
+design cells. The descriptive three-cohort union now covers 525/526 manifest
+entries (500 fungal entries/all 25 outgroups), adding 67 newly represented taxa;
+Amoeboaphelidium protococcarum F1243177 remains uncovered. This is a union of
+separately ready cells, not a merged analysis or proof of 500 unique species.
+Same-method cohort integration and predictor-confounding controls remain pending.

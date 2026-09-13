@@ -704,3 +704,37 @@ matrix and established masks. Resource allowance: one CPU, 8 GiB memory, 2 GiB
 output, 0.05–2 planning hours; see
 `metadata/esmfold_followon_paired_input_resource_plan.json`. Final retained marker
 and taxon coverage remain pending input completion and readback.
+
+
+## Follow-on paired inputs completed and coverage expanded
+
+Paired-input preparation finished (session 73988 exit zero): 88 ready markers,
+84 taxa, 3,986 marker–taxon cells and 843,060 observed paired alignment cells.
+Full emitted-file readback checked every FASTA identity, length, canonical
+alphabet, shared AA/3Di mask, retained-column index and observation count. It did
+not independently remap raw coordinates. The established lineage summary also
+checked the full 65,750-cell design grid and sequential masking partitions.
+
+The follow-on cohort represents 73 fungal entries in 14 lineage groups and 11
+outgroups in four groups. It includes Blastocladiomycota, Chytridiomycota,
+Microsporidia, Mucoromycota and other previously sparse groups; the versioned
+lineage table is `metadata/esmfold_followon_paired_lineage_coverage.tsv`.
+The all-design observed count, 859,924, includes cells outside ready alignments;
+843,060 is the observed count in the emitted ready alignments.
+
+A descriptive union of the three independently prepared cohorts (expanded
+AlphaFold, earlier ESMFold and follow-on ESMFold) contains 22,220 usable
+marker–taxon cells across 525 manifest entries: 500 fungal entries and all 25
+outgroups. The follow-on cohort adds 67 newly represented entries (60 fungal,
+seven outgroups), with no already-eligible marker–taxon cell overlap. This is
+neither proof of 500 unique species nor a merged character matrix. Coverage
+remains uneven and prediction-source confounding persists. Same-method cohort
+integration, re-evaluation of marker readiness and phylogenetic inference remain
+separate work. F1243177, *Amoeboaphelidium protococcarum*, is the only manifest
+entry without a usable marker in this union; the earlier duplication/orthology
+review remains relevant and absence is not evidence of biological loss.
+
+Receipts and checks: `metadata/esmfold_followon_paired_input_receipt.json`,
+`metadata/esmfold_followon_paired_alignment_readback.json`,
+`metadata/esmfold_followon_paired_lineage_receipt.json`, and
+`metadata/esmfold_followon_descriptive_coverage_union.json`.

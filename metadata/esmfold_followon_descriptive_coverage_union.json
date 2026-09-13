@@ -1,0 +1,22 @@
+{
+  "status": "descriptive_union_of_separately_ready_cohort_cells",
+  "source_receipts": {
+    "results/phylogeny/paired-inputs-gdm-expanded-v1": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "results/phylogeny/paired-inputs-esmfold-partial-v1": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+    "results/phylogeny/paired-inputs-esmfold-followon-v1": "a0440db23cfb6b7cbdd5f11b3c894db63931e3db9ca57b1168cd529b57d12582"
+  },
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "taxa": 525,
+  "study_roles": {
+    "ingroup": 500,
+    "outgroup": 25
+  },
+  "marker_taxon_cells": 22220,
+  "new_taxa_from_followon": 67,
+  "new_taxa_roles": {
+    "ingroup": 60,
+    "outgroup": 7
+  },
+  "followon_cells_already_in_baseline": 0,
+  "scope": "Set union of cells already eligible in separately prepared cohorts. No merging of character matrices, change in marker thresholds, predictor calibration or branch inference. Merging same-method cohorts may change readiness and requires separate preparation."
+}
