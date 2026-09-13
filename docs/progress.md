@@ -1349,3 +1349,15 @@ completed local fits and active resampling with the direct structural benchmark
 needed for later coupling analysis. Point estimates remain separate from
 uncertainty, additivity and phylogenetically adjusted inference. The overall
 research goal remains active and incomplete.
+
+
+### Local tree-path benchmark summarized across all 72 markers
+
+Computed 864 descriptive within-marker rank associations for four path models
+and three geometry metrics. All correlations and cohort counts passed separate
+SciPy recalculation, and all 12 equal-marker summaries passed readback. Local
+geometry has stronger median rank association than whole-protein RMSD across
+these models; ancestry, uncertainty and confidence effects remain unadjusted.
+Both GPU prediction jobs, expanded AF fits/geometry and full local resampling
+were verified live. This advances the completed point benchmark; phylogenetic
+coupling tests and the overall research goal remain incomplete and active.

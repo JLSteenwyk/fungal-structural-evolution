@@ -160,3 +160,43 @@ orthology-review overlay before confirmatory interpretation. Sources remain
 separate. Joining direct geometry to supported fitted paths and resampling is
 still required; these measurements do not themselves estimate branch rates or
 establish additive physical distances.
+
+
+## Complete local path benchmark and descriptive rank associations
+
+The completed local fits now supply AA and three 3Di-model path estimates for
+all 259,780 accepted geometry pairs across 72 markers. The 6,813 excluded pairs
+remain explicit. Path calculations passed 2,848 separate tree traversals and
+complete original-field readback (see `metadata/esmfold_tree_path_point_receipt.json`).
+These are point estimates; full local paired resampling is running separately.
+
+`scripts/summarize_tree_path_geometry_ranks.py` describes within-marker Spearman
+correlations. Each geometry metric uses the same available pairs for all four
+path models. Every one of 864 marker/model/geometry combinations was estimable;
+all correlations, cohort counts and 12 equal-marker summaries passed a separate
+calculation with SciPy `spearmanr` (the same underlying ranking library).
+
+| Tree-path model | Whole-protein CA RMSD | Local distance change | PAE10 local distance change |
+| --- | ---: | ---: | ---: |
+| AA LG+F+G4 | 0.396 | 0.627 | 0.641 |
+| 3Di AF+G4 | 0.461 | 0.637 | 0.653 |
+| 3Di AF+F+G4 | 0.449 | 0.628 | 0.641 |
+| 3Di LLM+G4 | 0.464 | 0.636 | 0.640 |
+
+Entries are medians of 72 within-marker rank correlations, giving each marker
+one contribution. They describe stronger rank association with local geometry
+than with whole-protein displacement. They do not demonstrate model superiority:
+shared ancestry, confidence selection, alignment coverage, topology and branch
+uncertainty remain unadjusted. There are no significance tests or independent
+pair assumptions. Correlation does not establish additive physical distances,
+sequence–structure evolutionary coupling, or branch-specific acceleration.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/summarize_tree_path_geometry_ranks.py --benchmark results/phylogeny/paired-path-points-esmfold-v1 --output results/phylogeny/path-geometry-ranks-esmfold-v1
+```
+
+Detailed results, source checksums and validation scope are preserved in
+`metadata/esmfold_tree_path_marker_ranks.tsv`,
+`metadata/esmfold_tree_path_rank_summary.tsv`,
+`metadata/esmfold_tree_path_rank_receipt.json` and
+`metadata/esmfold_tree_path_rank_readback.json`.
