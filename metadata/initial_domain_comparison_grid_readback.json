@@ -1,0 +1,13 @@
+{
+  "status": "passed_complete_domain_disposition_grid_and_metric_readback",
+  "domain_receipt_sha256": "adecd0a2bdd59a13dafe31eb0b118c1116b4c14e8c39fc681ea8ca47b6dad8bb",
+  "script_sha256": "4575e204d13b856ec48201895fb1f085c47609c132fa17322fa6126eda08bd29",
+  "baseline_pairs": 858,
+  "candidate_dispositions": 1214,
+  "accepted_domains": 738,
+  "exclusion_counts": {
+    "no_shared_eligible_single_instance_domain": 381,
+    "fewer_than_30_qualified_or_half_domain_shared_positions": 95
+  },
+  "interpretation": "Every candidate accounted for against reported eligible annotations; identities, bounds, baseline fields, fit relations and counts checked. Does not independently validate annotation eligibility, reconstruct residue masks or recompute coordinate geometry."
+}

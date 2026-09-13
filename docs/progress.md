@@ -1272,3 +1272,15 @@ The patched conversion has started and remains live; domain geometry also
 continues. This advances beyond the preceding verified-wait turn by completing
 and checking the first controlled result. The overall goal remains active and
 incomplete; no corrected score or membership claim has been made.
+
+### Full frozen ESMFold domain run completed with full candidate accounting
+
+Completed 171,474 conserved-domain comparisons over 135,959 marker–taxon pairs
+and 58 Pfam domains. All 266,788 baseline pairs and 306,789 candidate dispositions
+are accounted for: 128,146 no-shared-eligible-domain exclusions and 7,169
+insufficient-coverage domain exclusions. Added and executed full correspondence,
+count, baseline-field and fit-relation readback on both the full local dataset
+and earlier comparison dataset. Independent coordinate checks and interdomain
+placement review remain pending. The previous turn completed the unmodified
+Foldseek control; this turn completes a substantive domain-level dataset.
+The overall research goal remains active and incomplete.

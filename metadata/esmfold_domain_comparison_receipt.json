@@ -1,0 +1,37 @@
+{
+  "status": "complete_domain_comparison_snapshot",
+  "sources": {
+    "snapshot": {
+      "path": "results/structural_markers/esmfold-partial-v1",
+      "receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5"
+    },
+    "comparisons": {
+      "path": "results/structural_comparisons/esmfold-partial-v1",
+      "receipt_sha256": "367c7a660bab5d6f53870ffa66cfff7367bf1a31fced4e96bc5aef595fe849d3"
+    },
+    "annotations": {
+      "path": "results/domains/marker-annotations-v1",
+      "receipt_sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+    },
+    "pae": {
+      "path": "results/structural_pae/esmfold-partial-v1",
+      "receipt_sha256": "b83b8d840861c03216174e96d167467bd386731bf5a0f94e3d08e67ca1c7bb10"
+    }
+  },
+  "script_sha256": "ce254ad4c17d1d9471e772633ec8ce5ec33f9e567767426918738a41d796d690",
+  "geometry_script_sha256": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+  "full_marker_pairs_screened": 266788,
+  "domain_comparisons": 171474,
+  "distinct_marker_taxon_pairs": 135959,
+  "distinct_pfam_domains": 58,
+  "excluded_pair_or_domain_rows": 135315,
+  "mapped_annotation_hits": 8093,
+  "eligible_annotation_hits": 3512,
+  "filters": "Pfam Domain type; single instance; no overlap with any GA hit; >=50% HMM coverage; matched profile sites in both domain spans; both pLDDT>=70; >=30 qualified residues and >=50% shared domain sites; same direct-comparison baseline.",
+  "interpretation": "Descriptive conserved-domain geometry. Separate fitting necessarily improves fit and is not proof of biological domain motion. Pairwise rows are dependent; no branch rates, gains/losses, selection or significance are inferred. Restricted to the pinned source-specific structural comparison snapshot.",
+  "artifacts": {
+    "excluded_pairs.tsv": "ce012f68dc56ff80f6b139871f15383cd4d881c62d1b064a263dc80b9a1d967a",
+    "domain_eligibility.tsv": "36fce6128f620d83ffc56bea5e50ad0fa6f2666300505b85a4bf8dfe0b90656f",
+    "domain_comparisons.tsv": "b9b750d0434381f1802e300cf0f4da4845a69a21707a639b269e3225c7d5f583"
+  }
+}

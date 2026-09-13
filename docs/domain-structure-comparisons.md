@@ -135,3 +135,30 @@ entire frozen local-model collection, not all proteins in the fungal project.
 Results will require complete correspondence/exclusion readback and geometry
 checks before evolutionary interpretation. Interdomain-placement analysis can
 follow the completed domain fits.
+
+## Full frozen ESMFold domain comparison completed
+
+The run completed all 266,788 baseline pairs, producing 171,474 accepted domain
+comparisons over 135,959 distinct marker–taxon pairs and 58 Pfam domains.
+Of 8,093 mapped annotation-hit links, 3,512 pass the domain eligibility policy.
+There are 128,146 baseline pairs without a shared eligible single-instance
+domain and 7,169 candidate domains failing residue coverage. These are analysis
+exclusions, not domain-loss events.
+
+The complete candidate-accounting audit covers 306,789 accepted/excluded
+records. It checks correspondence to reported eligible hits, complete baseline
+pair coverage, uniqueness, recorded domain bounds, coverage/count limits,
+whole-marker baseline fields, domain-fit relationships and PAE-pair fractions.
+It also passes on the previous smaller source dataset. This readback does not
+independently establish annotation eligibility, reconstruct residue masks or
+recompute coordinate geometry. Those limits remain explicit before inference.
+
+```bash
+python scripts/audit_domain_comparison_grid.py --domains results/structural_domains/esmfold-full-frozen-v1 --comparisons results/structural_comparisons/esmfold-partial-v1 --output results/structural_domains/esmfold-grid-audit-v1
+```
+
+Full results remain in the immutable result directory; source and audit receipts
+are tracked in `metadata/esmfold_domain_comparison_*`. Further independent
+geometry checks and interdomain PAE analysis remain required. No branch-level
+acceleration, adaptive change or domain-orientation mechanism is inferred from
+these descriptive domain comparisons alone.
