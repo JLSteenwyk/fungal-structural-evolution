@@ -540,3 +540,13 @@ controls are retained in the global-RMSD inspection order. Large global/local
 differences motivate domain/orientation review but do not establish accuracy,
 biological acceleration or a causal explanation. Figure, script, table and
 provenance are versioned; local ESMFold marker mapping remains running.
+
+## Local marker mapping verified; PAE and native audits advancing
+
+Completed the ESMFold-only mapping: 5,121 models, 5,161 links, 201 taxa and
+900,303 mapped residues. Every mapped sequence/matrix character and confidence
+was checked against the original local predictions, and link identities exactly
+match the independent artifact audit. Started provenance-bound PAE export.
+Native Foldseek extraction finished, and coordinate feature reconstruction is
+now running. Joint-confidence eligibility and improved paired lineage coverage
+remain pending; no new branch or accuracy conclusion follows from extraction.

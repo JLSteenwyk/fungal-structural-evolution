@@ -228,3 +228,39 @@ sequence/taxon identities. Mapping counts and improved paired coverage are not
 yet claimed. Once the mapping completes, export its local PAE and extract/audit
 native features before preparing paired sequence/3Di inputs. The existing
 resource plan uses one CPU worker, 4 GB memory and 1 GB output headroom.
+
+## Local residue mapping completed; native feature validation started
+
+The local ESMFold mapping completed with all 5,121 models, 5,161 marker links,
+201 taxa and 900,303 matrix-residue links. Seventy-four markers have at least
+four linked taxa before confidence/coverage filtering. Readback checked every
+mapping artifact hash, exact link equality with the independent prediction
+audit, and every mapped amino acid against both the original NPZ sequence and
+retained matrix character. Each mapped confidence agrees with NPZ confidence
+within PDB decimal rounding; marker/taxon/column identities are unique.
+
+Local PAE export has started under `results/structural_pae/esmfold-partial-v1`.
+Pinned Foldseek extraction has finished under
+`results/structural_alphabet/native-esmfold-partial-v1`, and coordinate-feature
+reconstruction/validation is now running under
+`results/structural_alphabet/coordinate-esmfold-partial-v1`. Extracted states
+are not accepted for inference until that audit passes; joint PAE qualification
+and paired-input preparation remain pending.
+
+```bash
+python scripts/export_local_marker_pae.py \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --output results/structural_pae/esmfold-partial-v1
+python scripts/extract_structural_alphabet.py \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --output results/structural_alphabet/native-esmfold-partial-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_3di_features.py \
+  --native results/structural_alphabet/native-esmfold-partial-v1 \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --output results/structural_alphabet/coordinate-esmfold-partial-v1
+```
+
+Mapping receipts/readback, native configuration and prelaunch resource estimates
+are versioned as `metadata/esmfold_mapping_*`, `esmfold_native_extraction_*`
+and `esmfold_coordinate_audit_resource_plan.json`. Existing alphaFold and local
+snapshots remain separate, preserving prediction-source effects for assessment.
