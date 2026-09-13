@@ -2142,3 +2142,13 @@ Twelve dependencies are pinned. Allowances: one CPU, 8 GB memory, 100 GB output,
 .2–12 hours after production; these are planning estimates. An incomplete producer
 will stop the handoff for review. Residue mapping and evolutionary integration
 remain later stages. Both GPU producers are active.
+
+
+Prepared the codon-model environment while structural jobs run: HyPhy 2.5.101
+from pinned commit 646e16eb4243e5e5588ac340483fcb987552751d, isolated CMake 3.31.6,
+GCC 13.3, four build workers and 457 installed-file checksums. The upstream
+mitochondrial codon test passed likelihood, omega and total-tree-length assertions
+with two CPU threads. Version-specific BUSTED option incompatibilities are
+documented from source. No fungal selection or synonymous-saturation results
+are claimed; the genus/code screen still needs family-level eligibility work.
+See docs/codon-model-environment.md and versioned build/test receipts.

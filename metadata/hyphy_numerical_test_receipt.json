@@ -1,0 +1,15 @@
+{
+  "status": "passed_upstream_mtdna_codon_numerical_test",
+  "exit_code": 0,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+    "CPU=2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101/tests/hbltests/libv3/mtDNA-code.wbf"
+  ],
+  "test_sha256": "2f4142918bd2486dc07c1d8a68226e3acd2226dc14ab715acab0e63c0cfa7e81",
+  "fixture_sha256": "2a44903c12f7835250a5155f5e17bc688a09f75f4148c4be90e3bde385799800",
+  "report_sha256": "b4e04f40b65e022eb53f62a51b6c6208732d19410ed54e7ed8a49b0daf74e1ef",
+  "log_sha256": "55226cb2e6fca994aad3b4a597943773192fdac05be8ca7bfbd178dc0d7b01d3",
+  "assertions": "Upstream expected likelihood -12196.18, omega 0.01709463101059912 and total branch length 5.0779, using upstream check_value tolerances 0.01/0.05/0.05. Exit zero after all assertions.",
+  "scope": "One upstream alternate-genetic-code numerical test; not a full method-validation suite or fungal selection result."
+}

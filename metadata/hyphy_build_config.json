@@ -1,0 +1,36 @@
+{
+  "source_url": "https://github.com/veg/hyphy.git",
+  "tag": "2.5.101",
+  "commit": "646e16eb4243e5e5588ac340483fcb987552751d",
+  "source_path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101",
+  "build_path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-build",
+  "install_prefix": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+  "cmake": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-build-env/bin/cmake",
+  "cmake_version": "cmake version 3.31.6",
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "commands": [
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-build-env/bin/cmake",
+      "-S",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101",
+      "-B",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-build",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_INSTALL_PREFIX=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-build-env/bin/cmake",
+      "--build",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-build",
+      "--parallel",
+      "4"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-build-env/bin/cmake",
+      "--install",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-build"
+    ]
+  ],
+  "source_cmake_sha256": "a7a06e5699ec39547340fc1236f203b934f2b983d5fa76250dda6528e9725a87",
+  "configuration_notes": "System BLAS and ZLIB found; CURL and MPI not found. Build is for local file inputs and CPU threads. Installation and numerical tests pending."
+}
