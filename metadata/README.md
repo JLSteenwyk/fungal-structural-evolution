@@ -39,3 +39,7 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `sampling_manifest.tsv` is now the combined provisional 527-taxon manifest, superseding earlier notes that it was empty. It includes the unresolved S. jurei record; only 526 taxa currently have acquired protein data. Rebuild with scripts/build_sampling_manifest.py. Final annotation QC, ecological metadata and structure coverage remain pending.
 
 `busco_eukaryota_qc.tsv`: successful raw-proteome BUSCO runs, counts checked for internal consistency, source summary hashes retained. Rebuild with scripts/summarize_busco.py. It does not represent lineage-specific completeness or corrected isoform counts.
+
+`analysis_manifest.tsv`: 501 available fungal species plus 25 outgroups; candidate exclusion documented separately. Still subject to biological QC and trait review.
+
+`alphafold_bulk_coverage.tsv`: archived bulk availability at queried species and selected assembly taxids. `alphafold_bulk_objects.json` retains object generations, update dates, sizes and publisher hashes. `alphafold_selected_archives.json` retains highest-version-per-shard objects. No exact protein-sequence coverage is implied; no structure archive downloaded in this inventory. Reproduce with inventory_alphafold_archives.py then select_alphafold_archives.py. Query cache resides in ignored data/raw.

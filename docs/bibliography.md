@@ -13,3 +13,6 @@ These are methodological precedents, not an exhaustive systematic review. Access
 
 - Galindo et al. 2021. Phylogenomics of a new fungal phylum reveals multiple waves of reductive evolution across Holomycota. https://doi.org/10.1038/s41467-021-25308-w — Published Sanchytriomycota genomes and proteomes in Figshare project 91439 permit filling an annotation gap.
 - Grau-Bové et al. 2017. Dynamics of genomic innovation in the unicellular ancestry of animals. https://doi.org/10.7554/eLife.26036 — Genome-backed unicellular holozoan outgroup candidates and annotation bundles.
+
+- Official AFDB v6 release notes: https://www.ebi.ac.uk/pdbe/news/alphafold-database-release-notes — Current release differs from v4 bulk archives; unchanged coordinates may be relabeled. Model-version and sequence provenance must be retained.
+- Official bulk archive description: https://github.com/google-deepmind/alphafold/blob/main/afdb/README.md — Taxid-sharded public bucket inventory. Observed suffix versions, not bucket name, determine selected archive version.
