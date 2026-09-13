@@ -930,3 +930,16 @@ These measurements use the same observed sites as the paired sequence/structural
 alphabet inputs. Joining them to completed supported tree fits and uncertainty
 estimates remains pending. Prediction, phylogeny and other background stages
 continue; the overall project remains active and incomplete.
+
+
+### Paired-site geometry audit completed; expanded AlphaFold run started
+
+This continuation independently verified all 266,593 local ESMFold pair records
+and recalculated geometry and directional PAE filtering for 72 deterministically
+selected pairs, one per marker. All checks passed. Started the same geometry
+pipeline on 124 expanded AlphaFold markers with 744,853 possible taxon pairs,
+after recording resource estimates. The first marker has completed; the run
+continues. Full experimental-coordinate acquisition also continues. Supported
+phylogenies and downstream branch/uncertainty integration remain pending; the
+full goal remains active. The preceding turn was substantive progress through
+metadata review, coordinate expansion and versioned results.

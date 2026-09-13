@@ -124,3 +124,39 @@ OPENBLAS_NUM_THREADS=1 python scripts/prepare_paired_site_geometry.py \
   --pae results/structural_pae/esmfold-partial-v1 \
   --output results/structural_comparisons/paired-site-esmfold-v1
 ```
+
+
+## Expanded paired-site geometry and independent local audit
+
+The local ESMFold run completed 266,593 taxon pairs across 72 markers, with
+259,780 accepted and 6,813 excluded by the shared-site coverage rule.
+`scripts/audit_paired_site_geometry.py` independently checked the complete pair
+universe, duplicate absence, paired character masks, observed-site counts,
+eligibility, dimensions and AA/3Di differences. It also recalculated direct
+geometry for the smallest SHA256 taxon-pair identity within every marker:
+72 checks using SciPy rotation and condensed distances, with direct indexing of
+both directional PAE values in both models. All agreed within 1e-8 relative and
+absolute tolerance. Geometry was independently recalculated for these 72 pairs,
+not for all 259,780 accepted pairs. Upstream confidence-mask construction and
+biological orthology are separate checks.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geometry.py --comparisons results/structural_comparisons/paired-site-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --snapshot results/structural_markers/esmfold-partial-v1 --pae results/structural_pae/esmfold-partial-v1 --output results/structural_comparisons/paired-site-esmfold-audit-v1
+```
+
+The same production geometry pipeline is now running on the expanded AlphaFold
+inputs: 124 markers and up to 744,853 taxon pairs. It uses one CPU worker/thread,
+24 GB memory planning and 10 GB disk headroom on the existing host. The broad
+2–48 hour forecast reflects uncertainty from protein lengths and quadratic
+residue-distance work; no paid infrastructure was provisioned. Inputs and code
+are pinned in `metadata/paired_site_geometry_gdm_resource_plan.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/prepare_paired_site_geometry.py --inputs results/phylogeny/paired-inputs-gdm-expanded-v1 --snapshot results/structural_markers/gdm-expanded-v1 --pae results/structural_pae/gdm-expanded-v1 --output results/structural_comparisons/paired-site-gdm-expanded-v1
+```
+
+The known mixed-copy TFIIB marker remains diagnostic and requires the existing
+orthology-review overlay before confirmatory interpretation. Sources remain
+separate. Joining direct geometry to supported fitted paths and resampling is
+still required; these measurements do not themselves estimate branch rates or
+establish additive physical distances.

@@ -1,0 +1,19 @@
+{
+  "status": "prelaunch_expanded_AF_paired_site_geometry",
+  "markers": 124,
+  "maximum_taxon_pairs": 744853,
+  "input_receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+  "workers": 1,
+  "cpu_threads": 1,
+  "memory_gb_planning": 24,
+  "disk_headroom_gb": 10,
+  "wall_hours_planning_range": [
+    2,
+    48
+  ],
+  "estimate_basis": "Local 72-marker run completed 266593 pairs. Expanded inputs have more pairs and may have longer proteins; quadratic residue-distance work makes linear pair-count extrapolation unreliable. One worker with per-marker model cache.",
+  "disk_free_bytes": 12501528285184,
+  "producer_sha256": "3dd4aaf7e49813d18b8bc89345b74a1597ec62effe3f51a07d6f7ad779a66a49",
+  "cost": "Existing authorized CPU host; no paid provisioning",
+  "interpretation": "Benchmark on exact paired sites, including diagnostic mixed-copy marker. No branch acceleration or independent family validation implied."
+}
