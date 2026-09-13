@@ -1,0 +1,1994 @@
+{
+  "status": "complete_duplicate_marker_exact_sequence_audit",
+  "taxa_in_scope": 526,
+  "taxa_with_duplicated_calls": 328,
+  "duplicated_marker_calls": 2305,
+  "protein_pairs": 3189,
+  "pair_gene_relationships": {
+    "same_annotated_gene": 645,
+    "distinct_annotated_genes": 2538,
+    "unresolved_gene_mapping": 6
+  },
+  "exact_identical_pairs": 390,
+  "exact_identical_distinct_gene_pairs": 238,
+  "markers_with_identical_distinct_gene_pair": 229,
+  "copy_audit_receipt_sha256": "e8d7dff8d2b4a0d097a00cb7471aec3fc3c7fcc08d9f0fe67b4d295432d1f7a7",
+  "qc_input_receipts_sha256": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+  "script_sha256": "14146f7177ae8247a2c02aa301fb9b4d676066ea210334647dced9fca452fb79",
+  "sources": [
+    {
+      "taxon_id": "F1004511",
+      "source_proteome_path": "data/qc_proteomes/F1004511.faa",
+      "source_proteome_sha256": "d37251829f4861cf0b8e9faad7b8cdee4a88ef164be117a353344172386ac153",
+      "decision_sha256": "99c09e30826ff343364f4d2f88b67f03886b96a576e75f461cfd514330d1575d"
+    },
+    {
+      "taxon_id": "F1006475",
+      "source_proteome_path": "data/qc_proteomes/F1006475.faa",
+      "source_proteome_sha256": "318625ad424c52c15d9ce543a232a32118ca5af01ccecea9abf1abe1bb7c963b",
+      "decision_sha256": "ac02d22d6909e924f133aac4bb361ecbe6725cb00677298537a652336209c28f"
+    },
+    {
+      "taxon_id": "F100910",
+      "source_proteome_path": "data/qc_proteomes/F100910.faa",
+      "source_proteome_sha256": "fb1ab4402a4ac9a81dca33dd14e19d092a5a4916f23b9c982b80528533eac7dc",
+      "decision_sha256": "42f97339fcd323fe28e774914bd9ce8efa79c9fa0a355199726d000ae961457e"
+    },
+    {
+      "taxon_id": "F101097",
+      "source_proteome_path": "data/qc_proteomes/F101097.faa",
+      "source_proteome_sha256": "6864779ff49a6f04ce526398abfaba88b815bae7c84035669ee84e713394c201",
+      "decision_sha256": "5f4c87ddc7f637465a1790ee12d4a44f4d88a7c8fb4252436e933c2764de7268"
+    },
+    {
+      "taxon_id": "F101098",
+      "source_proteome_path": "data/qc_proteomes/F101098.faa",
+      "source_proteome_sha256": "b699c3384c93a32926cf972deeab2dfd8856efa458d279a04ac25c737b422955",
+      "decision_sha256": "88bb74c08f45492bbe8a35b18964814272e582ef52574754a95d3edd28c730f3"
+    },
+    {
+      "taxon_id": "F101201",
+      "source_proteome_path": "data/qc_proteomes/F101201.faa",
+      "source_proteome_sha256": "15add933eedf0f68fe6e470119aa45910d9a89eaf09ade44ca46666747ac3a28",
+      "decision_sha256": "07490d5535c61746f73719fd80cb9559bf70efa0e4639bd84425a90a0d7906d8"
+    },
+    {
+      "taxon_id": "F1031713",
+      "source_proteome_path": "data/qc_proteomes/F1031713.faa",
+      "source_proteome_sha256": "7b5953390d8e083748c53a5139dd05b15c65440203a819f40afe760aaa2bbb26",
+      "decision_sha256": "39fbf65314a908d0cc04a408147afd2392e87cb3400d897505fc586606dcbb3f"
+    },
+    {
+      "taxon_id": "F103449",
+      "source_proteome_path": "data/qc_proteomes/F103449.faa",
+      "source_proteome_sha256": "fe0070ece72ea678303400dee1984a5feacf9475a635ceae1930d1ce488016a0",
+      "decision_sha256": "d9872515722d5f5a22d9efc1238c5c8407925473f44550aef0b6dca1ef86f6a4"
+    },
+    {
+      "taxon_id": "F1042133",
+      "source_proteome_path": "data/qc_proteomes/F1042133.faa",
+      "source_proteome_sha256": "57e5af268f576dafd701ea01fca17c4a480bf6c2fbb4ece82f547d851a32e65c",
+      "decision_sha256": "47bf12e1fbbb475ba93a6e80993185cc65fdf6df9371b6ab6d8e07ee622b2bde"
+    },
+    {
+      "taxon_id": "F104669",
+      "source_proteome_path": "data/qc_proteomes/F104669.faa",
+      "source_proteome_sha256": "fbc627df4e1981d421d5faacd4e90b300804c4318896664921610f7547a048e1",
+      "decision_sha256": "d758d6c185e9d82246b18dd052eddabd92045126af27ee972cb3509bbef948d4"
+    },
+    {
+      "taxon_id": "F105984",
+      "source_proteome_path": "data/qc_proteomes/F105984.faa",
+      "source_proteome_sha256": "72b909d3fbb79b7baad7d62f8f66506d2d490bf6dd1da7ca3a15cb79732f84ba",
+      "decision_sha256": "ea2c966898276afc61ef46c33a0c85c7977b66b651fa3183e456db48762d3be1"
+    },
+    {
+      "taxon_id": "F106004",
+      "source_proteome_path": "data/qc_proteomes/F106004.faa",
+      "source_proteome_sha256": "2d416f5d3529bb6a06d6ad736e612b9d18a929cb0b444c52005593841455c818",
+      "decision_sha256": "5f626f30d6b9da7a1768dafc05c341a7a2d62c3f5a50d6108bd2d4d36e747e2b"
+    },
+    {
+      "taxon_id": "F1080349",
+      "source_proteome_path": "data/qc_proteomes/F1080349.faa",
+      "source_proteome_sha256": "681620c48a4c5de67704e985aafa723062511550229f8fc17105d86a336f30c3",
+      "decision_sha256": "6ceec28d8e2e0adbab43e5b5a6e63d031fc7d7afa51e530c2f1c808a62adff80"
+    },
+    {
+      "taxon_id": "F1093900",
+      "source_proteome_path": "data/qc_proteomes/F1093900.faa",
+      "source_proteome_sha256": "3c0ac9e6414c3dfd330440576a4f4d8a0d6ccbcbd7331bbcf500d7f48efd94f2",
+      "decision_sha256": "55000a32020c77c4253954e07b98d795183aaf916f357de9753917293df5a6d5"
+    },
+    {
+      "taxon_id": "F109760",
+      "source_proteome_path": "data/qc_proteomes/F109760.faa",
+      "source_proteome_sha256": "84f95d6070d5202bffd1f856cc8bdfdb142f47995b63c961816930eba9729a3f",
+      "decision_sha256": "3f7586cab441d5cbe051cee69963a6ee2d40cad61e997a589d120227505b9c98"
+    },
+    {
+      "taxon_id": "F109876",
+      "source_proteome_path": "data/qc_proteomes/F109876.faa",
+      "source_proteome_sha256": "044ca39ef6b972e94e9274ebcae6f98e76c6f4ca1ab1eefcf2b8d6d46b01d3cd",
+      "decision_sha256": "931eae5572a80886ad97cb9488133a72ffb9d03914f0d370ffcb1ac4e9121460"
+    },
+    {
+      "taxon_id": "F109889",
+      "source_proteome_path": "data/qc_proteomes/F109889.faa",
+      "source_proteome_sha256": "abc3f7d15c2400ed82c6a7092222d91b64f634488723098b4ce58f31cce95f81",
+      "decision_sha256": "a7131f5ff08febeba169c6ee506921a1c43835b0ba3779d487296cf23eb305e8"
+    },
+    {
+      "taxon_id": "F109899",
+      "source_proteome_path": "data/qc_proteomes/F109899.faa",
+      "source_proteome_sha256": "c338c6541406bfc3425b214fc053e7c2cbd64b754e0de3cf7b4ec6754110cfef",
+      "decision_sha256": "7030e5bd47fd17e90cef387db94b2e793f91b84545fa61cfe8a548b112070b8c"
+    },
+    {
+      "taxon_id": "F109932",
+      "source_proteome_path": "data/qc_proteomes/F109932.faa",
+      "source_proteome_sha256": "b2c95a12a46fc7e021a6a7822df9a0909d346a04ebb7fe24dcf631d34d423e8e",
+      "decision_sha256": "5062cb7fca317c8ebe36b7da8724bbe1c03518e5f04181e6d34accfa62fa6e4d"
+    },
+    {
+      "taxon_id": "F1099800",
+      "source_proteome_path": "data/qc_proteomes/F1099800.faa",
+      "source_proteome_sha256": "6ff21714e9e9746f00b60e814a6ede9ac801c31b3557bed1b6aebd5306b4b60b",
+      "decision_sha256": "a69e2e76d41700b3a826be5f8b26e4134fd5625c08072358118f8e418460605a"
+    },
+    {
+      "taxon_id": "F110093",
+      "source_proteome_path": "data/qc_proteomes/F110093.faa",
+      "source_proteome_sha256": "3c149004637c0d8632afc2a2e7ceb346d8bbe94821b75dc394516e826cf7035e",
+      "decision_sha256": "7c39f0538868ecaccc946f826d4d7a22781af863df3dd5e4b82494fbd36c873f"
+    },
+    {
+      "taxon_id": "F1116844",
+      "source_proteome_path": "data/qc_proteomes/F1116844.faa",
+      "source_proteome_sha256": "90fe0e53e000c59300a74f2533889009747e2d1cfbe15fdf0daec93583398aae",
+      "decision_sha256": "ac1e9e41498a846fd6a0ad6a7d34cd34af83c9d3c0757f01ce4fd13bc0023aa8"
+    },
+    {
+      "taxon_id": "F1117311",
+      "source_proteome_path": "data/qc_proteomes/F1117311.faa",
+      "source_proteome_sha256": "83c2cc6bd6f01b75b32e5d8b218b4f15a27a62c93e9212f274b155c8c4e2d3cb",
+      "decision_sha256": "fac1223bdde8647fbce605dc03bc35a38426e2967d3f8939367320afbd07e44d"
+    },
+    {
+      "taxon_id": "F112072",
+      "source_proteome_path": "data/qc_proteomes/F112072.faa",
+      "source_proteome_sha256": "a7e7203e2cd5d0161dba2a096d804424b5fa24c4a64088b4283961563879ee08",
+      "decision_sha256": "7ce4c7e1070bdfeb4f7106b77b1992a1301ee8e9366de33675bde6575029126a"
+    },
+    {
+      "taxon_id": "F1123529",
+      "source_proteome_path": "data/qc_proteomes/F1123529.faa",
+      "source_proteome_sha256": "fbef6d601387bb373cd1005793da70cee06a32cbd6bd6f19d1317e26755d2b82",
+      "decision_sha256": "1c45feb076ca3db82fd8945c3cb99965605d83aff9677029b66c16b2a7852a4e"
+    },
+    {
+      "taxon_id": "F112417",
+      "source_proteome_path": "data/qc_proteomes/F112417.faa",
+      "source_proteome_sha256": "657e57a4e43ba7616c4227a7aaf3864d8b5a3b47adb4465a1170c785b3eeed2b",
+      "decision_sha256": "4e96ee51d6662e6cb5d885da6da08b1278b7136b8b1795e514866934f00ab190"
+    },
+    {
+      "taxon_id": "F1125753",
+      "source_proteome_path": "data/qc_proteomes/F1125753.faa",
+      "source_proteome_sha256": "bb835f65588ac2a90b580df51b58e344eaae124671c6fa218394f498403b4264",
+      "decision_sha256": "41e97032a854bb99a12a4d00a8aa857ab18e35364d2eaf281f3f632778642753"
+    },
+    {
+      "taxon_id": "F1130053",
+      "source_proteome_path": "data/qc_proteomes/F1130053.faa",
+      "source_proteome_sha256": "edf0bebfa268c2f915b9034c79af721b7599a85272203d742f352ce3ecf4b255",
+      "decision_sha256": "1d7ea232e13d5fbacaa54847ba60799bd7912537d5b5c60e05d3c8e0c0dc84dd"
+    },
+    {
+      "taxon_id": "F113071",
+      "source_proteome_path": "data/qc_proteomes/F113071.faa",
+      "source_proteome_sha256": "fa7acc50d8263c7c73ecf5bcd71fe07a4db4c5af37e9a019453a1e889070787d",
+      "decision_sha256": "bb2103f35a94412c9b12c968a6a45edcfe0d56d34ba84e4b8682dde6891bcdbc"
+    },
+    {
+      "taxon_id": "F1145299",
+      "source_proteome_path": "data/qc_proteomes/F1145299.faa",
+      "source_proteome_sha256": "f5e2f953db0831b78698892019916cbad47cc598939e94dfcf6aadf0eaff8d3b",
+      "decision_sha256": "6de3889fa563d67a7e7b9c8a8796f4bc6dd0929e392a0a75a0eb90b99482aa5f"
+    },
+    {
+      "taxon_id": "F1145321",
+      "source_proteome_path": "data/qc_proteomes/F1145321.faa",
+      "source_proteome_sha256": "38de5d721a24e5f9cfd8b13d1fdea57f510f295c101875453d81f386c536be3e",
+      "decision_sha256": "79513ffcb540808b7ac071838cf4fe9fca60c2593cdeea9f61de8a2f5f152a2d"
+    },
+    {
+      "taxon_id": "F116603",
+      "source_proteome_path": "data/qc_proteomes/F116603.faa",
+      "source_proteome_sha256": "ef3f62ddfadbb07ee0ea651526fbdc142c495b0e353d16b935a22eb906bf685c",
+      "decision_sha256": "c3dbcbbaacd9fed9402bfb9be31f8d34bab9a9d4d9970d152e6c071e66f72420"
+    },
+    {
+      "taxon_id": "F116794",
+      "source_proteome_path": "data/qc_proteomes/F116794.faa",
+      "source_proteome_sha256": "098f96f3b42ba3ea4f8d0ab9ac6aabe66521dc0bf9949bc13890bd67cedb217e",
+      "decision_sha256": "60170ca48d65f289314d3e92d6e33e7669c86f0e8a05f39327d2603afbfb8d61"
+    },
+    {
+      "taxon_id": "F116982",
+      "source_proteome_path": "data/qc_proteomes/F116982.faa",
+      "source_proteome_sha256": "590929e14ca092aaf924539f50980cb40043912851e5e85afe068498ff714b6b",
+      "decision_sha256": "f7a2ce0db1ee27e29d7a474b44317328d4eefb565dd8f98f89ff6c1b99fec4a5"
+    },
+    {
+      "taxon_id": "F117187",
+      "source_proteome_path": "data/qc_proteomes/F117187.faa",
+      "source_proteome_sha256": "27357ff0112d580f83bf7b4543e84ed23cae033ea253e167a27ce83ea6334c2f",
+      "decision_sha256": "1f949ea7a93e8e6f0371701c240fdcda092bde4c20c4029fe890529a70ca5d5e"
+    },
+    {
+      "taxon_id": "F1176355",
+      "source_proteome_path": "data/qc_proteomes/F1176355.faa",
+      "source_proteome_sha256": "abccbfc80408779b320cf5398edb4fcd60cc8e719f1c7b07e4d9302822ce1fc7",
+      "decision_sha256": "a6840d8f4ee62d0588f1663d5ff12007c417e4965dcd8cd5d48e5e8e5a894ef7"
+    },
+    {
+      "taxon_id": "F1213189",
+      "source_proteome_path": "data/qc_proteomes/F1213189.faa",
+      "source_proteome_sha256": "cbb08d7cc65836e02d4b3484d7dd367dbd1358aadc77f46bb3bdb2d7ee425792",
+      "decision_sha256": "dbd53b73381ab0a3e7dce2578125637fee8c36697e1672e9f63c21453e205d94"
+    },
+    {
+      "taxon_id": "F1214568",
+      "source_proteome_path": "data/qc_proteomes/F1214568.faa",
+      "source_proteome_sha256": "607050ec86521201d040406a044e729e7bf7f1d6f85d71aba6589ff0f87fb528",
+      "decision_sha256": "d6be1c98ceb032627307523af0eaecb9a6306f433c0054e07304e50da4f63d38"
+    },
+    {
+      "taxon_id": "F1243177",
+      "source_proteome_path": "data/qc_proteomes/F1243177.faa",
+      "source_proteome_sha256": "d98a4942eb5466fe41eb24aa93c3173d111504374a8785d20da55c4a788df49e",
+      "decision_sha256": "14f1447a5c817c8dd4732986ee3894ca08601a3734178acfa57b2eed17993a31"
+    },
+    {
+      "taxon_id": "F1246581",
+      "source_proteome_path": "data/qc_proteomes/F1246581.faa",
+      "source_proteome_sha256": "946fa5afc8dca2f4e2006f3c9344ea6e3db015e79e4e5ef04264a455737b8e19",
+      "decision_sha256": "253a8820596af26296bb2285c3829d6e92c7450d7edc1924032c2c26f5213505"
+    },
+    {
+      "taxon_id": "F1269715",
+      "source_proteome_path": "data/qc_proteomes/F1269715.faa",
+      "source_proteome_sha256": "d56c8b59b26af6e14a05c4a4a256c830a36d390c48ea52fc60ddd6d6514d6ae8",
+      "decision_sha256": "9144d33ce7e524a45b0e48f51a1c7e05b6f69ca199e99d30704cf46078906e21"
+    },
+    {
+      "taxon_id": "F1276059",
+      "source_proteome_path": "data/qc_proteomes/F1276059.faa",
+      "source_proteome_sha256": "559b855e06d96b12ab55f8c0ccfdb4903f9760a2d44ff0d0f102deb2473e91a6",
+      "decision_sha256": "f9c19636795d2e9b6b7c83763dd35c25ecb4515324718835613a684420ef7a30"
+    },
+    {
+      "taxon_id": "F1323573",
+      "source_proteome_path": "data/qc_proteomes/F1323573.faa",
+      "source_proteome_sha256": "1268236e5da6b6779b1ba4827044c51e4712a3e5c568774b7da439c1fdf96628",
+      "decision_sha256": "af08464e10cd7278d21560cbd45ead7894cbdc815663980d46ba256cb5c22ff8"
+    },
+    {
+      "taxon_id": "F1328300",
+      "source_proteome_path": "data/qc_proteomes/F1328300.faa",
+      "source_proteome_sha256": "5bf6e4269a64eef3902120626ff6e83e50a7b752e38ac8e2a1f38f5eaaa6d9a4",
+      "decision_sha256": "758b64cb304bb6e5afce4c55c0a98c497db4b8823ee4010c9d49e70b257f6ed5"
+    },
+    {
+      "taxon_id": "F13290",
+      "source_proteome_path": "data/qc_proteomes/F13290.faa",
+      "source_proteome_sha256": "2aaff59adbf33400555fe04fa750ec0d582b797e07e802c3c89c7eab280321ca",
+      "decision_sha256": "bbf252341dda23ce10b65d531edd421e35c916daff6a2825ac1a70edfb25ba09"
+    },
+    {
+      "taxon_id": "F13291",
+      "source_proteome_path": "data/qc_proteomes/F13291.faa",
+      "source_proteome_sha256": "4a8b5c54667058672a4fdbe5ee921be4d4d71a9a19e119272df901f639e9315e",
+      "decision_sha256": "3b7fe5c35a8fd53130ce5ce9c91999e2b2c01c61b6869633655eb232d041d43b"
+    },
+    {
+      "taxon_id": "F1331295",
+      "source_proteome_path": "data/qc_proteomes/F1331295.faa",
+      "source_proteome_sha256": "68d318ff7c350a7463d06c128517b8b90c572f64e5f85e1bd7e192f04475539e",
+      "decision_sha256": "5e29b98cdb45a0ddd31c1dde67104f7505bb3600973d671482f958aac2550c85"
+    },
+    {
+      "taxon_id": "F133377",
+      "source_proteome_path": "data/qc_proteomes/F133377.faa",
+      "source_proteome_sha256": "5e1e70d4d1a0e4ab70fe0452d3abd14d5e8d37a91f723439e801c54a964543bf",
+      "decision_sha256": "e717988d2886524d195d8daedb7655d4899cda74cf53045b02aae4ac7479125a"
+    },
+    {
+      "taxon_id": "F133385",
+      "source_proteome_path": "data/qc_proteomes/F133385.faa",
+      "source_proteome_sha256": "e6797e06df9c2273e1bb7c8bbb1e5d96f3066a8e91b863a267b1305bde0a6231",
+      "decision_sha256": "aa18ec4419a24e9d5485520bdba3d193643b1bb834cc0abc52ec1074ee4b6954"
+    },
+    {
+      "taxon_id": "F1343614",
+      "source_proteome_path": "data/qc_proteomes/F1343614.faa",
+      "source_proteome_sha256": "7e70dfd3e02cd4e9b3a85026e10f9d4d3e0edc2c72f375e583567b9205c7280c",
+      "decision_sha256": "cefc785e0fa59d0bf37b46ca0eb8608254da9e789984aca0d464af6c0bfa8c12"
+    },
+    {
+      "taxon_id": "F135208",
+      "source_proteome_path": "data/qc_proteomes/F135208.faa",
+      "source_proteome_sha256": "6fba42585d81c24772302609aa32ecc7fb237ad783d3768f0577abaf2fc874d2",
+      "decision_sha256": "ba0692a58086f52053cbb0cb256d4161a250978a34859086ab57856a9620b195"
+    },
+    {
+      "taxon_id": "F135589",
+      "source_proteome_path": "data/qc_proteomes/F135589.faa",
+      "source_proteome_sha256": "51385b96928d2fb36e0290dd162f409fa187482309c60292061ff6cbd5a89828",
+      "decision_sha256": "537e9839d2e70c8b03edd948b2ce3b2ccc4d1ebc6811d2d0a392ec1c9ed5662e"
+    },
+    {
+      "taxon_id": "F136370",
+      "source_proteome_path": "data/qc_proteomes/F136370.faa",
+      "source_proteome_sha256": "00801c95b83d191756675145cc05202c1bf192ef00c423c8d291e039589afbfc",
+      "decision_sha256": "28545fa906ab3455a862d719dda5ca5ada564846e6241f1605c381b346059a6c"
+    },
+    {
+      "taxon_id": "F139363",
+      "source_proteome_path": "data/qc_proteomes/F139363.faa",
+      "source_proteome_sha256": "609416128d561a1b65615ac80d1a894e7b1448490e9f51d335c18d1cd5ddff03",
+      "decision_sha256": "ec1d63609fefb460bba01fded17e758410b79bb6c16f53d79b6497f0b7250d76"
+    },
+    {
+      "taxon_id": "F1396493",
+      "source_proteome_path": "data/qc_proteomes/F1396493.faa",
+      "source_proteome_sha256": "88186a90c0e9379a6db0ef03bfb2f97a87157e03f48cd7ce7071addf656543cd",
+      "decision_sha256": "9a63efe6a5217fe05baf5c7aeb163e47531a9827bed06b18ecc5af70473d6011"
+    },
+    {
+      "taxon_id": "F1419009",
+      "source_proteome_path": "data/qc_proteomes/F1419009.faa",
+      "source_proteome_sha256": "67dd5db860f205cf1f7ca671dc40a31971f16cb0a36cc7271e00fcd4e8275387",
+      "decision_sha256": "2ad0dc7704ee9923b2330bea236d26c43bb06973105b648c18fe0fef2d71e706"
+    },
+    {
+      "taxon_id": "F143232",
+      "source_proteome_path": "data/qc_proteomes/F143232.faa",
+      "source_proteome_sha256": "70649652ab7c68cd8303267674a22c87ac0634953c746a1f21e4456da11115eb",
+      "decision_sha256": "9e42dd74c5aaaa66b0360cbe9a5c90dc9c0baa9a633c81e07c39d1730adcc772"
+    },
+    {
+      "taxon_id": "F1440133",
+      "source_proteome_path": "data/qc_proteomes/F1440133.faa",
+      "source_proteome_sha256": "2b936efb017f14de8fea9d232eb3da8dc4da5b932b2ba9a0e8ff205d85a0d08d",
+      "decision_sha256": "b26454a8c15da33276e34ca5e710ab717393d7c46edcf151f078d502a9732092"
+    },
+    {
+      "taxon_id": "F144530",
+      "source_proteome_path": "data/qc_proteomes/F144530.faa",
+      "source_proteome_sha256": "de8bc2f78eb6d8082fffdabbab3f79cbab1983e154f048a585efa863e6527854",
+      "decision_sha256": "b53ab65c022a03d7d2010134eb3066ca51dacd24d35e9e0ffa481a3be3417009"
+    },
+    {
+      "taxon_id": "F144538",
+      "source_proteome_path": "data/qc_proteomes/F144538.faa",
+      "source_proteome_sha256": "cd3a1ea87f29959cc5086e4dc810911a7dacfcf88345b50c7605f44181dac5ff",
+      "decision_sha256": "a8e45d7cc44b6e26d33ea170b137cc0d9bd02b88b28ccfabad1e6880a2792b5b"
+    },
+    {
+      "taxon_id": "F144539",
+      "source_proteome_path": "data/qc_proteomes/F144539.faa",
+      "source_proteome_sha256": "cda37563e961dfaa5d4e2bbfbb03dae01c8b24c433455c4e972022d34a6af436",
+      "decision_sha256": "6448fd6bbede03f1870b77d50b1fe709b6a4da3a5e7e9e0bd93925b94f56458e"
+    },
+    {
+      "taxon_id": "F1453789",
+      "source_proteome_path": "data/qc_proteomes/F1453789.faa",
+      "source_proteome_sha256": "3e8eec9942a9c87d8978d273f75391ca9961e7e5355ab8e4f817f23b80a92245",
+      "decision_sha256": "c5c0ec70e4ca973383c99a44c9f9887e5f655bc6313d5e9bd6d0643148a367b6"
+    },
+    {
+      "taxon_id": "F145971",
+      "source_proteome_path": "data/qc_proteomes/F145971.faa",
+      "source_proteome_sha256": "f365a92ed4effae996f17235aacbf233eac6dad83755b6341edc2b0e36cedd2b",
+      "decision_sha256": "6c686dea3ada5f06e5b80c430b03b0f6f1e17f5029ce0861b890a9f4ec7f979e"
+    },
+    {
+      "taxon_id": "F148304",
+      "source_proteome_path": "data/qc_proteomes/F148304.faa",
+      "source_proteome_sha256": "15d810dad7d58d95b1c9d8af4cfcb66c52ff56ad9ad322df787bb169086e8d38",
+      "decision_sha256": "e3bad02a16861a106f8c422d652f6286e6e75e9d0015ac045002f65d43e27f91"
+    },
+    {
+      "taxon_id": "F148305",
+      "source_proteome_path": "data/qc_proteomes/F148305.faa",
+      "source_proteome_sha256": "090de7ee368edbf29cbd32e68ca1af0d70bf79e509c3efc15af8919a11b4d109",
+      "decision_sha256": "b467e0e3ad80a6612ab8e36698d9e6dff0ff34327c5a27df7cc361d595253e24"
+    },
+    {
+      "taxon_id": "F148313",
+      "source_proteome_path": "data/qc_proteomes/F148313.faa",
+      "source_proteome_sha256": "347d3d4db48e2318dd87272d4b7b3f9b1511be944bdccf961c32e6205cb637bb",
+      "decision_sha256": "7ca1a8947a618c5e33502d2c518c993ba324c7c8ce0295d156c43a28aeebb552"
+    },
+    {
+      "taxon_id": "F1500003",
+      "source_proteome_path": "data/qc_proteomes/F1500003.faa",
+      "source_proteome_sha256": "7b33524b9e256146b3d175b50469405bf2bca8b6d06f19b78372d25d51c83685",
+      "decision_sha256": "dc82431a4c404550f257b8b45a05f4c32452dc6ae12bb0c66f70e86f7fa6fa50"
+    },
+    {
+      "taxon_id": "F1506992",
+      "source_proteome_path": "data/qc_proteomes/F1506992.faa",
+      "source_proteome_sha256": "10e7b259559d88263b298e16e9a66e11a2b9d896f62542366017d7c92f124fdf",
+      "decision_sha256": "ec90a82d89fbe8c7f494a2ab543aaa6dd072ed2382e0db63bc6e2e04f805f846"
+    },
+    {
+      "taxon_id": "F1507870",
+      "source_proteome_path": "data/qc_proteomes/F1507870.faa",
+      "source_proteome_sha256": "cbe543c5b4ff0e8cdd085543d2e438cc3422fd9d642ef0051a4f1606bbafcae3",
+      "decision_sha256": "1b9270ef2f244b93e6d0ad48cbab6dcfb27d82e20ba45d88c7f89114dbd5dca6"
+    },
+    {
+      "taxon_id": "F1507873",
+      "source_proteome_path": "data/qc_proteomes/F1507873.faa",
+      "source_proteome_sha256": "e12b6a7f791b9faff3a7a6c565f9f4485ceb40cc98a5c9bbfe11cc77b5e9b11a",
+      "decision_sha256": "53b026228c2b49686a709e2c9a0444985d3ac0a7a3f686255b4ea14475e1b09a"
+    },
+    {
+      "taxon_id": "F150792",
+      "source_proteome_path": "data/qc_proteomes/F150792.faa",
+      "source_proteome_sha256": "c715007dc6258f0e0dc8215635a47f773bb01ef0e2dd077d0695818276d386c4",
+      "decision_sha256": "330bb6ba103ebf8a6cf480d8a7a8e75084aca8a6e056bc95f9f4140ad4895af4"
+    },
+    {
+      "taxon_id": "F1520584",
+      "source_proteome_path": "data/qc_proteomes/F1520584.faa",
+      "source_proteome_sha256": "37e7f313dc1805de7dd200ca65b2a87c89e947f0d8edd65f168fd76537371655",
+      "decision_sha256": "53a76212d60e4a403789abfa00d62c08a263002f176371913b31dd5105d20652"
+    },
+    {
+      "taxon_id": "F152956",
+      "source_proteome_path": "data/qc_proteomes/F152956.faa",
+      "source_proteome_sha256": "002d95c5ef3977d6c4295858ff5b51169aae574041299383c86fc6cb84b8fcbf",
+      "decision_sha256": "7d7d5e2d5fb3fde5f34e927501802c80a7727b1d59452693cde3c4f763da2797"
+    },
+    {
+      "taxon_id": "F156515",
+      "source_proteome_path": "data/qc_proteomes/F156515.faa",
+      "source_proteome_sha256": "9f1eaac4d4f87d937a0e0f43f0acded5dcd55e5ab4164b751ca1d2ba47494a6e",
+      "decision_sha256": "202f989a1a53a84bfdb91572a407a7600f65f672490d7bbface12ef7dd1e9b5e"
+    },
+    {
+      "taxon_id": "F1604274",
+      "source_proteome_path": "data/qc_proteomes/F1604274.faa",
+      "source_proteome_sha256": "0e6473bdddc4dde1228c2a436ef257ea8596767513c73504325dae71efcde9bf",
+      "decision_sha256": "1945ca8aae95eeec6e689c24b3a2994bb0571744eb9a78d284ae5255fa8cf7df"
+    },
+    {
+      "taxon_id": "F164576",
+      "source_proteome_path": "data/qc_proteomes/F164576.faa",
+      "source_proteome_sha256": "fd6ae9603df3c8f9f523cd30c54e8899d86ef2acbd7d3882e828ea4b176a9acc",
+      "decision_sha256": "1cfbae429a4eeffaf123157da07c44c9f9112fe15227fcb7f1bb3cca66d8fb46"
+    },
+    {
+      "taxon_id": "F164912",
+      "source_proteome_path": "data/qc_proteomes/F164912.faa",
+      "source_proteome_sha256": "58db958fc37efdc8c2e4107fbb7bfaadac6400775392ef5ea897007ab8da5393",
+      "decision_sha256": "d1a2a41e04fc1bb6124e540813f6226de9fbb1f5dc7262a05b455442c91b7576"
+    },
+    {
+      "taxon_id": "F1670608",
+      "source_proteome_path": "data/qc_proteomes/F1670608.faa",
+      "source_proteome_sha256": "245bf5d25dbf1eb59fd3b137f625f64506399e02ac49806aacdfed6c07524bd9",
+      "decision_sha256": "4a9585309ab8e78ce78dd1d0a97993909e1e31e04c4ddb9ed04b087189636fb0"
+    },
+    {
+      "taxon_id": "F1673888",
+      "source_proteome_path": "data/qc_proteomes/F1673888.faa",
+      "source_proteome_sha256": "7bcd3a99f466e8c992b39db3d6eeeacd3ee88dcbc29c5040aa4000830087ccf3",
+      "decision_sha256": "1e69cd1c5ef81472ff0be172f0aa5b2686f2cf79a696957169821dee7c3d47dd"
+    },
+    {
+      "taxon_id": "F1690604",
+      "source_proteome_path": "data/qc_proteomes/F1690604.faa",
+      "source_proteome_sha256": "db5a64ef2e1b4ec045770724fd747b5d144947236735c04f6da8ea83fb63f758",
+      "decision_sha256": "e24b55a5b5029b5f9ff3a12b22915fd7cf78a793cae45c703b2215892fb0f3a8"
+    },
+    {
+      "taxon_id": "F169141",
+      "source_proteome_path": "data/qc_proteomes/F169141.faa",
+      "source_proteome_sha256": "a29cc5f709c19f18ccf67c52b4d80f6ec50ef094a560d5899011b8358305f741",
+      "decision_sha256": "c681d7297806201e3023ac8121e387c4ee47cb0d16b02b4054efa84a80bb66ec"
+    },
+    {
+      "taxon_id": "F170000",
+      "source_proteome_path": "data/qc_proteomes/F170000.faa",
+      "source_proteome_sha256": "62b3becdf657f6477aa51053ada4cb0f530805a2babf0da8b5b5d49312c232a4",
+      "decision_sha256": "95d633d9470d3797811ae80b846e9393ca3b2f61deffa2d43ec7e2f37c1fe048"
+    },
+    {
+      "taxon_id": "F170446",
+      "source_proteome_path": "data/qc_proteomes/F170446.faa",
+      "source_proteome_sha256": "2413a458eaf45e59d1e127e171b9073b2aad82af7023ba40515ba1ae46cf326c",
+      "decision_sha256": "f5540a73f65994600c4946139b069939529c089bc251bf692e716feea5942b17"
+    },
+    {
+      "taxon_id": "F1712513",
+      "source_proteome_path": "data/qc_proteomes/F1712513.faa",
+      "source_proteome_sha256": "01a95779af119eb32942ae943cfd659f8a36732bd4c27ac8cccbe031c185a9fe",
+      "decision_sha256": "3de4a5007388e84b68128da4dab08e6a74993d830710f436f2bcb288201ec79d"
+    },
+    {
+      "taxon_id": "F173216",
+      "source_proteome_path": "data/qc_proteomes/F173216.faa",
+      "source_proteome_sha256": "a5e53599500a0ed5229f9a8e7f11424c59d11a2648635189d4984930b30424c6",
+      "decision_sha256": "dd9700005508e09e4106062ad28d8356cf27491b91c9a4e557b642c3ee2e31f3"
+    },
+    {
+      "taxon_id": "F1738374",
+      "source_proteome_path": "data/qc_proteomes/F1738374.faa",
+      "source_proteome_sha256": "995b39d40678bf50558a47856f9a6473401057dbadfb168809dfa8c8791aca45",
+      "decision_sha256": "c2f0416e3dad45811f94d7513461d495b87a1867fdb3dad9b20553102f2adff5"
+    },
+    {
+      "taxon_id": "F174680",
+      "source_proteome_path": "data/qc_proteomes/F174680.faa",
+      "source_proteome_sha256": "8d38b4ec917ecbf9e139adfe0cd46053d5a25095f5cc9521650eab120c225116",
+      "decision_sha256": "b448e63b61792f7bbc0c6c888ce3af53efd372082624d2463e1c61f6322736b4"
+    },
+    {
+      "taxon_id": "F174688",
+      "source_proteome_path": "data/qc_proteomes/F174688.faa",
+      "source_proteome_sha256": "88b617d094559494bce4b600aebf1f99ecea97eb1012c186e1790aeba45cacb0",
+      "decision_sha256": "ea93b32ca0da8a2c117cb4d829a249312553e125feac2bd7e569bfa68eb32349"
+    },
+    {
+      "taxon_id": "F1750568",
+      "source_proteome_path": "data/qc_proteomes/F1750568.faa",
+      "source_proteome_sha256": "f23b82c2060722a99299cb3dc1ff195baca28948c44a58042afd46bd18d02fd5",
+      "decision_sha256": "1971425ea0e017c8ea6c3288a9fbd7a10ecb542387f8dd41fb5602ecaed3db79"
+    },
+    {
+      "taxon_id": "F1754190",
+      "source_proteome_path": "data/qc_proteomes/F1754190.faa",
+      "source_proteome_sha256": "786f3b434adc5eda9c563e4417849176f618da9f855b86ae328a24be9bd46b31",
+      "decision_sha256": "6b84ea57c6c7946b5c79871c2c9423674b083ca4f8da2ef2a629ae12bad8b70a"
+    },
+    {
+      "taxon_id": "F1754191",
+      "source_proteome_path": "data/qc_proteomes/F1754191.faa",
+      "source_proteome_sha256": "8df5792950df61d510c0e0fe11bdee0f2f75689ee425c732ac40337993adfb04",
+      "decision_sha256": "dacfe36dd1bac786170f4beb992595f158035b325bc41fcf2dcca9ed5e8ccc99"
+    },
+    {
+      "taxon_id": "F1754192",
+      "source_proteome_path": "data/qc_proteomes/F1754192.faa",
+      "source_proteome_sha256": "acea59b32395520c88f4ebe72a2c36521e082bcf3ccdcdf19090d1e9f4432673",
+      "decision_sha256": "dc68a5d9ab51c864e7a58402cd88ca8ca9eaafad99b684ce80c082d92bf1f452"
+    },
+    {
+      "taxon_id": "F1759441",
+      "source_proteome_path": "data/qc_proteomes/F1759441.faa",
+      "source_proteome_sha256": "d3defb8da6def5521a846533f4cb81d0e6f093fe34c47468a99ffb4c7bb35c4e",
+      "decision_sha256": "f575c0f226508312e38b8aaae674c6ee622b07e0c82ad6fe785c587b9917dcc0"
+    },
+    {
+      "taxon_id": "F177199",
+      "source_proteome_path": "data/qc_proteomes/F177199.faa",
+      "source_proteome_sha256": "fb0466fa87f57d57d5c761e23fb0230a8bfb51484034a54c96b93d5bf837d0aa",
+      "decision_sha256": "7328f54b922bb6905f74dc602b3b4346945b192a23164889e8a60aebbd48b593"
+    },
+    {
+      "taxon_id": "F1774096",
+      "source_proteome_path": "data/qc_proteomes/F1774096.faa",
+      "source_proteome_sha256": "f8084faf54e82efbaa30cf632e169b2b7024eefddff8678b197a879352deeff4",
+      "decision_sha256": "79d0769eaf6427f3ade8eb017abce1092ace0b6261b914af08e7d2e216be7f15"
+    },
+    {
+      "taxon_id": "F1810926",
+      "source_proteome_path": "data/qc_proteomes/F1810926.faa",
+      "source_proteome_sha256": "66d2c5f2faf23709c0165efa6247dd3c63afd6c19d8c35fb4ff5ca1858b919e3",
+      "decision_sha256": "12fc9e8cd37c643e9596ea3afb5bfafe099370ce66bbba87c851324150a33ce1"
+    },
+    {
+      "taxon_id": "F182096",
+      "source_proteome_path": "data/qc_proteomes/F182096.faa",
+      "source_proteome_sha256": "3e44a3d97f7d58b4a087091c26c06e42c830b63461a3ea50eb32e9e282ff5611",
+      "decision_sha256": "70e786a277935a3e243d5153c13580a3ff3364569abac0f69842e8c34de94d7d"
+    },
+    {
+      "taxon_id": "F1825666",
+      "source_proteome_path": "data/qc_proteomes/F1825666.faa",
+      "source_proteome_sha256": "011dc3e292d33a67c339173ea09030dcdf47733c998fb377124cd33a4a446288",
+      "decision_sha256": "1d8bbd4453b18ca0c030f991d81f1fac29a7c276380eefe2ae4f339e160d0948"
+    },
+    {
+      "taxon_id": "F183962",
+      "source_proteome_path": "data/qc_proteomes/F183962.faa",
+      "source_proteome_sha256": "f36469c9fcf3a51ba85707e9755daf3d510c73ddc6a2479923caa3586a4797ef",
+      "decision_sha256": "0a7230751ff0e39e9acc718edd85f27d2879b698309052bc6b5c8b7196ec7861"
+    },
+    {
+      "taxon_id": "F1851185",
+      "source_proteome_path": "data/qc_proteomes/F1851185.faa",
+      "source_proteome_sha256": "97cf480b274e375d051f22a02793ec418ef194e9899abbfb296d60fffac0c773",
+      "decision_sha256": "6f082245232bc611776dc8731ec49221ec25ae59a0ff8d92865bb0b3de155ed6"
+    },
+    {
+      "taxon_id": "F1851187",
+      "source_proteome_path": "data/qc_proteomes/F1851187.faa",
+      "source_proteome_sha256": "5bc9f3892fe123ee51b6f360d0c5fc8d393fbde4d5a3a5d20fa7f1fde996de42",
+      "decision_sha256": "ce87080c7fbe9e3fada1d2d3066bfec09fd1a9f4f9152f9cf1470a0588281819"
+    },
+    {
+      "taxon_id": "F1858805",
+      "source_proteome_path": "data/qc_proteomes/F1858805.faa",
+      "source_proteome_sha256": "f7ae9d0a641d29120fbd98a15897eff592cae9b4f127b1d9c84d852bcd78f29a",
+      "decision_sha256": "bf8002b6d076ad033050d7fc2087eab3ae19d0e04995bf8d4b1bac0ec767925a"
+    },
+    {
+      "taxon_id": "F1897645",
+      "source_proteome_path": "data/qc_proteomes/F1897645.faa",
+      "source_proteome_sha256": "96ecfad60a3aef359da361df3d7649477e527189380da5f5fe978dd368e3991a",
+      "decision_sha256": "8eb362d7d805a1c794943f080b3a1b443832342b2d4c3cfd33e86e632b2f673e"
+    },
+    {
+      "taxon_id": "F1904413",
+      "source_proteome_path": "data/qc_proteomes/F1904413.faa",
+      "source_proteome_sha256": "03064adf74af575c255e44032032d6a40453aa1de070e8adcacd35704f828903",
+      "decision_sha256": "443d89046105604d9ed859ae7c24a982d61ad59fb3d1b6a5db7ce446315394a4"
+    },
+    {
+      "taxon_id": "F1907219",
+      "source_proteome_path": "data/qc_proteomes/F1907219.faa",
+      "source_proteome_sha256": "2d1f986319397a1ab90345b7a2e4747331626cd575386fbac772fb95b4df2066",
+      "decision_sha256": "7f8b5525ae4b723908368427c8e0de515bfc127b888c3c024edfbdd3ae65b50d"
+    },
+    {
+      "taxon_id": "F1912936",
+      "source_proteome_path": "data/qc_proteomes/F1912936.faa",
+      "source_proteome_sha256": "c1e8a3f84eeafda18bc3f4a99de5d1589c98629b6772a16ae85c58b30bdae29f",
+      "decision_sha256": "69f7a1197ff628253f932418ccf0c5bea2bacdd15851c0d15892b2b558012715"
+    },
+    {
+      "taxon_id": "F1912939",
+      "source_proteome_path": "data/qc_proteomes/F1912939.faa",
+      "source_proteome_sha256": "82294760107728223546ad72f1b085c2babf3425fb0f9243e41b4f12098de505",
+      "decision_sha256": "4ce79c2febbf1f3178a3a3014b827916a54c02c9072a56038440cb1cca4fbd76"
+    },
+    {
+      "taxon_id": "F1938712",
+      "source_proteome_path": "data/qc_proteomes/F1938712.faa",
+      "source_proteome_sha256": "c349002a6a5ec6e3d37c56d2308ded84475f01eea89823e1c612398466f83622",
+      "decision_sha256": "cae9c72831451153991bcc4a14ab1503bfeb3bb915b3d109a0e050f43ef1285d"
+    },
+    {
+      "taxon_id": "F1938954",
+      "source_proteome_path": "data/qc_proteomes/F1938954.faa",
+      "source_proteome_sha256": "d62415919af8d3097eeb657e35d5b0c26dcbfad1803cad1f6d413494ce8c7a70",
+      "decision_sha256": "6d83363a0f8bfa85ffe3c9e6cf9c750fa0c89f46f67668a544f58651621093c8"
+    },
+    {
+      "taxon_id": "F195108",
+      "source_proteome_path": "data/qc_proteomes/F195108.faa",
+      "source_proteome_sha256": "3906215b83266268345f10e20f4079aa842eb4dd4136535cdf05a6ba8e5f07af",
+      "decision_sha256": "07ff158568727bfb803c777021d1c30734138204704b4c634d2d65ee4ac47e4b"
+    },
+    {
+      "taxon_id": "F199306",
+      "source_proteome_path": "data/qc_proteomes/F199306.faa",
+      "source_proteome_sha256": "b3ed90d1eaeb1497a8ab2293f03d722ec4365d1834a93d411675f506b42e7e18",
+      "decision_sha256": "7976d61f29a9ce6d176cfcfef9430db1a7b9484f7ff06e882149b49fc1ee2976"
+    },
+    {
+      "taxon_id": "F2020955",
+      "source_proteome_path": "data/qc_proteomes/F2020955.faa",
+      "source_proteome_sha256": "4c1d86c82391c11e371bf436371c17a078e75380bd9a82bce2874bb5356ac94f",
+      "decision_sha256": "fc60f3725f08c7c962badab28704179e7145fa940d63cd7184b57f7a8be292f3"
+    },
+    {
+      "taxon_id": "F2024903",
+      "source_proteome_path": "data/qc_proteomes/F2024903.faa",
+      "source_proteome_sha256": "c921d44e70af9c2a5aed2cca5e295ac316fa2de2a006d7fc6808e3138c3515f2",
+      "decision_sha256": "03885406d478b1089ec22715a33041136551138d0fe6e088751821eb8c3e3264"
+    },
+    {
+      "taxon_id": "F202697",
+      "source_proteome_path": "data/qc_proteomes/F202697.faa",
+      "source_proteome_sha256": "805f3fb69fe1bd0d18ff9fa069a15a574dcda37c60518d80c4617a433b7b8fb6",
+      "decision_sha256": "aaba72fe17c2f6509d5135bd35ef1ff655eb6f43904e6030dc977d87722f2c7d"
+    },
+    {
+      "taxon_id": "F202698",
+      "source_proteome_path": "data/qc_proteomes/F202698.faa",
+      "source_proteome_sha256": "af7205111639832470c30e8fac0b63ec8d6e655b6c92a7cc4dd8977b8152cf75",
+      "decision_sha256": "67fdd42513dff288f4cec31c940e13595ed63348a115294b697382243d3961f3"
+    },
+    {
+      "taxon_id": "F2034170",
+      "source_proteome_path": "data/qc_proteomes/F2034170.faa",
+      "source_proteome_sha256": "6083ed841e16ff19c21a1b80692d280a974ebe926cfac847e4a4b6ba6ef0d3e2",
+      "decision_sha256": "bab8c4c1fe657039c91a0d2cdb93478bb32234805dfacab32ac74654e0ecbcde"
+    },
+    {
+      "taxon_id": "F203533",
+      "source_proteome_path": "data/qc_proteomes/F203533.faa",
+      "source_proteome_sha256": "65080a18d246bf88a7ca85957e88de092dab47f974fb6025e20e1cca12691f06",
+      "decision_sha256": "4ca608b6beac09bd0bf5fa17c47b0dcd8b2a7af65b144d2969108a81d50cad0d"
+    },
+    {
+      "taxon_id": "F2035830",
+      "source_proteome_path": "data/qc_proteomes/F2035830.faa",
+      "source_proteome_sha256": "0ceb6502b33e8cdb22af5bc6b08c504fbfc045cde629121ff8d850007560f5b0",
+      "decision_sha256": "0bad4d16b9eba4653f07e309ca8b81fab7a900444d3b8b7a1a9bcdcace5a61c6"
+    },
+    {
+      "taxon_id": "F203908",
+      "source_proteome_path": "data/qc_proteomes/F203908.faa",
+      "source_proteome_sha256": "309f3600f3ba046989dcf85d783be10b332e9e7114961f158f18410e89ab06d7",
+      "decision_sha256": "f5a02cbcd3da0728772b0ad98ad87e4c498b88b3397be2b1f8caa67db62e6667"
+    },
+    {
+      "taxon_id": "F208348",
+      "source_proteome_path": "data/qc_proteomes/F208348.faa",
+      "source_proteome_sha256": "b097117b112d25fe0470bf1353b70cfff35d3ac502954c246ab4534e45563f1c",
+      "decision_sha256": "daf28648a2e1ab63b68c1b6e60b7f213c8376b0d9379dd45bf2689dea237dbec"
+    },
+    {
+      "taxon_id": "F208960",
+      "source_proteome_path": "data/qc_proteomes/F208960.faa",
+      "source_proteome_sha256": "19dde453ee0a28edd35757abc0362a414026d68d01543d4c833e76169d761468",
+      "decision_sha256": "8b4a862fbf1ef50fa2f2720a6a73d6acec3ee8aeb37ce35cb4ead7141190235d"
+    },
+    {
+      "taxon_id": "F209281",
+      "source_proteome_path": "data/qc_proteomes/F209281.faa",
+      "source_proteome_sha256": "9209ca841345dc601208a056cc6ee5a1a13336ddc8fe16d86e093ee1ec60b951",
+      "decision_sha256": "ca707e8ffed05c1521441277e6837ccd3d1f1ca1c932f1b75889cea18ba34945"
+    },
+    {
+      "taxon_id": "F2109901",
+      "source_proteome_path": "data/qc_proteomes/F2109901.faa",
+      "source_proteome_sha256": "c633a454f0d5e78eab60ab20653ae43c90c1c91fe9f5d50c5123127210e6928f",
+      "decision_sha256": "798a31ab0ab3c8e2e4e6b03bcd82e7d33fe7bbe48922f5fa77e049219ae77d27"
+    },
+    {
+      "taxon_id": "F215637",
+      "source_proteome_path": "data/qc_proteomes/F215637.faa",
+      "source_proteome_sha256": "be691a7f4f0d1abdaedd0b271283e79127911b38ef8db1e674ac7a1d188c414c",
+      "decision_sha256": "c4dacbbf0237c761d2509b03795340ecddb30c62999d1e421a4f789baa430c0e"
+    },
+    {
+      "taxon_id": "F223192",
+      "source_proteome_path": "data/qc_proteomes/F223192.faa",
+      "source_proteome_sha256": "c808cb16d8ef5440e6b5273258ddec0e4c43a7c3d58a2f88adbdc2245959c5e7",
+      "decision_sha256": "ea341204642b0513e948d12b529918b9d3faa23d779f79926d3e856c60c41976"
+    },
+    {
+      "taxon_id": "F223376",
+      "source_proteome_path": "data/qc_proteomes/F223376.faa",
+      "source_proteome_sha256": "011cca652c1c9ded84d74bbfa96eac43bf2c3c61d2d4a730c9ac385e709503c6",
+      "decision_sha256": "04e02d1c8c479fbc9c67260621eda924c12907a4cd1f3700b0628508185b0d96"
+    },
+    {
+      "taxon_id": "F223818",
+      "source_proteome_path": "data/qc_proteomes/F223818.faa",
+      "source_proteome_sha256": "6bc8add7f5b8db2b663b8482dc6895e965ef5e1ab1e29d6b4cd150d77de6c8ca",
+      "decision_sha256": "fe091cfceee68e9b82f034912b36cc78e81548c0a58ae4940d133f0143469f59"
+    },
+    {
+      "taxon_id": "F2282107",
+      "source_proteome_path": "data/qc_proteomes/F2282107.faa",
+      "source_proteome_sha256": "73c858629473d19109620e0565984db3392a447a30b50323a4109968b2df3c53",
+      "decision_sha256": "13f39219d6864439f5c3b607b7db357944b779462063facd61f4e77c14acf3e4"
+    },
+    {
+      "taxon_id": "F2283408",
+      "source_proteome_path": "data/qc_proteomes/F2283408.faa",
+      "source_proteome_sha256": "ced9ac8e74793d9a8a68fefbd2e5f9a63152942dafcac2ebc7f6fd899528c10f",
+      "decision_sha256": "53ef0e4063551c17a71aac6ed939714d63d14e7fc478131cfed6d2235aef6a61"
+    },
+    {
+      "taxon_id": "F230603",
+      "source_proteome_path": "data/qc_proteomes/F230603.faa",
+      "source_proteome_sha256": "67722a8e4b2bce97d20b55fc825525e8d4fc420040fec18d3e152c3712c62f7a",
+      "decision_sha256": "4ecc9e55787ab155e3a739697de0451be8e528328bc054748fae6b98fd515ec3"
+    },
+    {
+      "taxon_id": "F231932",
+      "source_proteome_path": "data/qc_proteomes/F231932.faa",
+      "source_proteome_sha256": "69bbcc8dc7d6b435a8235be5efdbf0ce3bb257267160fa8f6eb7ccda93f622ac",
+      "decision_sha256": "63ff4a3f182d880398cff2dd5fafe619d93e840e9b2bd0723e3bda45cb0e2f53"
+    },
+    {
+      "taxon_id": "F2340872",
+      "source_proteome_path": "data/qc_proteomes/F2340872.faa",
+      "source_proteome_sha256": "ca54e8f103bb5c5a11339f80a71d8b406380390b5c141da4efbf843443727b53",
+      "decision_sha256": "e6db5160fbb16656720f2375055dd91c319303e3669f9e31dbd755a4ad16763d"
+    },
+    {
+      "taxon_id": "F236234",
+      "source_proteome_path": "data/qc_proteomes/F236234.faa",
+      "source_proteome_sha256": "17e8c91fc99cb0888e9ab21f3f8863fe30ac28de38ca438d00fcafc91d0b00d6",
+      "decision_sha256": "56c02f7513c7d3e337bf5e5c67e02f8753a51bbd04461479cd8c9f3289662f81"
+    },
+    {
+      "taxon_id": "F241526",
+      "source_proteome_path": "data/qc_proteomes/F241526.faa",
+      "source_proteome_sha256": "e9b8730e60d900f261fd2570756b9c08c6eac604cc312c8802fd9748e0b26fa0",
+      "decision_sha256": "76cbe056207166c8fdf6d4da7c0a3f01fd7a034955e0ebd243c2bdd1a8cece40"
+    },
+    {
+      "taxon_id": "F245174",
+      "source_proteome_path": "data/qc_proteomes/F245174.faa",
+      "source_proteome_sha256": "8c339125aec37ca3892766c6acd537cbd9c6c3f5c9c84889f4028717ebf47172",
+      "decision_sha256": "b1c1892c6896e1233b0935e1b9edfb1c409e1cf27ef204aa176f3ba11e65f28a"
+    },
+    {
+      "taxon_id": "F253628",
+      "source_proteome_path": "data/qc_proteomes/F253628.faa",
+      "source_proteome_sha256": "e1f4baf35bb2441f1fcbb5dd9e2717bab916a2649e1dd812bf015cb447343ba8",
+      "decision_sha256": "9e15d17f2d21985f81153e47eeefd017698ac091528b825d6a66a397bafdfc8f"
+    },
+    {
+      "taxon_id": "F2545709",
+      "source_proteome_path": "data/qc_proteomes/F2545709.faa",
+      "source_proteome_sha256": "cd74b550f241239ae7a9b799f58e12a49d84df2e0dab2768f49fa7382937c94a",
+      "decision_sha256": "b036c16fb8c20cd54a0f8e838ae514b9c63feff81127a06ea2e4ed3bc96a679b"
+    },
+    {
+      "taxon_id": "F2562287",
+      "source_proteome_path": "data/qc_proteomes/F2562287.faa",
+      "source_proteome_sha256": "993992f57f286de9d29f9dc6cdc9bb4b1635417f78615e4117e5ddb3954d34c4",
+      "decision_sha256": "5e3c395b8a3185f5fb4a191390bc5b2f54c2af5ba0bf241c9d04f2af80593d75"
+    },
+    {
+      "taxon_id": "F257869",
+      "source_proteome_path": "data/qc_proteomes/F257869.faa",
+      "source_proteome_sha256": "4c82685a5b5e1ce90ec124982e3e8c7eb512f9789d0c7d124e55898280029720",
+      "decision_sha256": "53aea9efd88d34a505f500bd75c5f8fba93a5d0dad6e06ba33f4302b1e882dd2"
+    },
+    {
+      "taxon_id": "F2600213",
+      "source_proteome_path": "data/qc_proteomes/F2600213.faa",
+      "source_proteome_sha256": "b6528503835d47ea45b8b021c18e6b2ebe2f0047cfc8ea07b9759d86f7a3484e",
+      "decision_sha256": "59a86ed69074772aab9ba4a104b70658c33965942d9e59128fc9de010422b034"
+    },
+    {
+      "taxon_id": "F2600215",
+      "source_proteome_path": "data/qc_proteomes/F2600215.faa",
+      "source_proteome_sha256": "3786c43a247d5e4dfa278554e4dad5938e5faf7baf4837dfe9838167663dc715",
+      "decision_sha256": "c53b5ee1d98819a8a0d21fc853d45dc8fae8c8766d417b369085873062c2defc"
+    },
+    {
+      "taxon_id": "F2600216",
+      "source_proteome_path": "data/qc_proteomes/F2600216.faa",
+      "source_proteome_sha256": "6d999a95590c81238c7a9f3e95eb5c285f57cb526c1afe2b608c3d3048f31a3c",
+      "decision_sha256": "fec8cd2622940d1a64642b05fa162388a1928ca5f8bdf2688d34ccd1ff1f855a"
+    },
+    {
+      "taxon_id": "F264124",
+      "source_proteome_path": "data/qc_proteomes/F264124.faa",
+      "source_proteome_sha256": "005c244b4a07f5d2e772f5d38a0e8b635a6b342902cc2b49cd874820aaf1aa90",
+      "decision_sha256": "50086d81d7cf4ca0e494bea3659f5bc031876e531028c69e9d076f78434daf3a"
+    },
+    {
+      "taxon_id": "F2650707",
+      "source_proteome_path": "data/qc_proteomes/F2650707.faa",
+      "source_proteome_sha256": "13b9e4d52ebc13299e7d088cfb57644d75c631ffbc9f63b6e22e65e2e1c7cd94",
+      "decision_sha256": "0da51a98c7734526deae8909ae54a6350dc370de77539553b837f6d0ebb7186e"
+    },
+    {
+      "taxon_id": "F265104",
+      "source_proteome_path": "data/qc_proteomes/F265104.faa",
+      "source_proteome_sha256": "7585e0ba21000fbe0414b42e1eb455fd39b2eea3acb6fc38b3b2b323adb1f195",
+      "decision_sha256": "1558f190dca07307ad45a123a32a64ff3445bade52781d90610f1cd17f563769"
+    },
+    {
+      "taxon_id": "F2725673",
+      "source_proteome_path": "data/qc_proteomes/F2725673.faa",
+      "source_proteome_sha256": "d4161892773cce731bc9b77efd8515292d6a2c0de0a9724d1ae9a230156fc265",
+      "decision_sha256": "8ff20b0ae3bb6547eca01406471f7416c6484f1f3864d361b04c8ac9b1e0a781"
+    },
+    {
+      "taxon_id": "F27291",
+      "source_proteome_path": "data/qc_proteomes/F27291.faa",
+      "source_proteome_sha256": "def62b0af6402893dd821a0fe7fa9a237961e7a4d50b2e5b8b887f85fb65dc09",
+      "decision_sha256": "6e98d395e1357f7f22f1ac55696f2276799f02c0edfc84267711a91663b3cee5"
+    },
+    {
+      "taxon_id": "F27292",
+      "source_proteome_path": "data/qc_proteomes/F27292.faa",
+      "source_proteome_sha256": "2ff415f4d48a750c9eb52d556e2ec8a91733a8b73294816a1dfd6d5d25704814",
+      "decision_sha256": "a45083dc707b904995b16db986651f31ffc0ed5da8a0ae8048992052fad547bc"
+    },
+    {
+      "taxon_id": "F2732470",
+      "source_proteome_path": "data/qc_proteomes/F2732470.faa",
+      "source_proteome_sha256": "5c587738bf0a9d5e63652fdf033e465de3d3833806a1f107cdbb6a689a97d276",
+      "decision_sha256": "ef84dcfc1896936112792219e2a2cda75c23fc81251edbc7a707a40de0c56985"
+    },
+    {
+      "taxon_id": "F27342",
+      "source_proteome_path": "data/qc_proteomes/F27342.faa",
+      "source_proteome_sha256": "2c64d2b0375fbb78ed842c027c736f9e95848dd99a6f8c407ba2fa0dd3a1ac6c",
+      "decision_sha256": "448587858ea2e77670fd4590fa31f8a42a56da60808aa484fbca316e0adb6531"
+    },
+    {
+      "taxon_id": "F2735257",
+      "source_proteome_path": "data/qc_proteomes/F2735257.faa",
+      "source_proteome_sha256": "8e29220efe0e2e6a69674faaddbc170c6c8c26100583c8ea37abd82508eacb2e",
+      "decision_sha256": "8555e91863769a6437519ba2874356b005289331e4f3da81b907aaa1d0a0a54c"
+    },
+    {
+      "taxon_id": "F27376",
+      "source_proteome_path": "data/qc_proteomes/F27376.faa",
+      "source_proteome_sha256": "bc86104115c5c2ebe96d338effcafcb47510867c9cc54e88d5ff70d57f29f7ca",
+      "decision_sha256": "5ae13692a9dcbedabd8222df1b8e9faa2964255c9248fd0c95fe22743bb38644"
+    },
+    {
+      "taxon_id": "F2748771",
+      "source_proteome_path": "data/qc_proteomes/F2748771.faa",
+      "source_proteome_sha256": "f8531efb602288559a2d8f12feef3cd176d92046a078c0a66bd635135bc6144d",
+      "decision_sha256": "39b1a43ca2916607a8e11e85021efca572a7e6d2ef0f7290b7d71ae958c4d86f"
+    },
+    {
+      "taxon_id": "F2754530",
+      "source_proteome_path": "data/qc_proteomes/F2754530.faa",
+      "source_proteome_sha256": "3535328bb413a9edd63e271cec74fdbb6b3e3b0b3298a2ef520682b899b9202c",
+      "decision_sha256": "082ea3b104993688804223d7a213c91a7e34e31975e680c310fb5895910c6e60"
+    },
+    {
+      "taxon_id": "F2767002",
+      "source_proteome_path": "data/qc_proteomes/F2767002.faa",
+      "source_proteome_sha256": "e7a28523db9529dff01abef889b0fb2e1a189f53cb9062042ed175deb57b86a2",
+      "decision_sha256": "7204f170e79286e693423dcfe58a7f1900adad197f62a604f40d96120430b5c7"
+    },
+    {
+      "taxon_id": "F2781224",
+      "source_proteome_path": "data/qc_proteomes/F2781224.faa",
+      "source_proteome_sha256": "cdcbcc2575d15e00877093251ddd9779f88dfdbf44cbcbe29608bd4b7bbcd6c4",
+      "decision_sha256": "f110b1c4df7f6b01b90238b396d5d4adc616615d3716bca17def0862ef845b0c"
+    },
+    {
+      "taxon_id": "F280036",
+      "source_proteome_path": "data/qc_proteomes/F280036.faa",
+      "source_proteome_sha256": "f5891e2fe17d44794014ced186045e6bb3389273a382ec2f25c91cd0763aa66c",
+      "decision_sha256": "53e385b8228f04d7bccdb382dd143329f9313c89c5db668135d065da83f5d8a2"
+    },
+    {
+      "taxon_id": "F2829486",
+      "source_proteome_path": "data/qc_proteomes/F2829486.faa",
+      "source_proteome_sha256": "50728caf9090be7601ad055f450cbb14fe313bf59a2223b42174f926d54164a7",
+      "decision_sha256": "19e1c0adf1dd33c7e1ef951596f3c0a3885a741860eb0abf1910d6282b9779f1"
+    },
+    {
+      "taxon_id": "F2831993",
+      "source_proteome_path": "data/qc_proteomes/F2831993.faa",
+      "source_proteome_sha256": "a20f43cc858c006f0e635c9471a88f7943aa3feeeeca3cb66e0d045acf418c05",
+      "decision_sha256": "cce16dcaeb06a6f0b094e5fe71693d4bde8d36212a71282cbeb64bf8ea33d408"
+    },
+    {
+      "taxon_id": "F2834505",
+      "source_proteome_path": "data/qc_proteomes/F2834505.faa",
+      "source_proteome_sha256": "21143f79121772d06832f38ec694c2e57bfe1db8f796042359fb2fac3be95105",
+      "decision_sha256": "e858fdb74ce648bbc3dbb85a485b9bf2e7ad88ee7518fbf017b7a10ee2c438a7"
+    },
+    {
+      "taxon_id": "F28583",
+      "source_proteome_path": "data/qc_proteomes/F28583.faa",
+      "source_proteome_sha256": "1fcdb516fd8a3b35fe79a1cad5da7bf3143f21662a0fb873290f81270b65acb7",
+      "decision_sha256": "8bf34de9ad7acbe8f27b0f551252a699b635044363dc452b3fb3681e4c21bea7"
+    },
+    {
+      "taxon_id": "F2871812",
+      "source_proteome_path": "data/qc_proteomes/F2871812.faa",
+      "source_proteome_sha256": "4ad31c21673b0903b0b3124828c84a414eed75cb85b429df31031d091c64ffd8",
+      "decision_sha256": "a848593cf773b501725b10b56cade7a0c1c25e040077f7555b0d06f2dd7c174f"
+    },
+    {
+      "taxon_id": "F288795",
+      "source_proteome_path": "data/qc_proteomes/F288795.faa",
+      "source_proteome_sha256": "116551bfb8e4d32799b3f3309918dcf049def2ce441fbf5aaf0fda44bba7b252",
+      "decision_sha256": "545d4fe9cba6a80eabd7e4737491969af5d11786bae34ff3c4f03eba28469ddc"
+    },
+    {
+      "taxon_id": "F289078",
+      "source_proteome_path": "data/qc_proteomes/F289078.faa",
+      "source_proteome_sha256": "f29b4fe683b31911c99f0b96f2f9d71adf798cca49d67d491aab6e6e1292975f",
+      "decision_sha256": "a12a2c71f6b238b1f44fd400223e65df6ee6c64a07ff00475ba560059d799869"
+    },
+    {
+      "taxon_id": "F291195",
+      "source_proteome_path": "data/qc_proteomes/F291195.faa",
+      "source_proteome_sha256": "3f22929eb4c3567ab9a03be25777c4949da8184fd5a3eef163672f6225a8e48e",
+      "decision_sha256": "68a82939030db67ca64ef944b37e99c6c646f521a979aa0fbf2b0256a118fff8"
+    },
+    {
+      "taxon_id": "F293227",
+      "source_proteome_path": "data/qc_proteomes/F293227.faa",
+      "source_proteome_sha256": "e54925e4230e2a1af06650a11071b103d51c12665c036a67b6bd65dceb2ac31b",
+      "decision_sha256": "52fd9bef8a5ef738e568ca797c25175953dd7a2ddc6eb9d98c9fbc4553b42881"
+    },
+    {
+      "taxon_id": "F29833",
+      "source_proteome_path": "data/qc_proteomes/F29833.faa",
+      "source_proteome_sha256": "f7a722366e7e82ef51aaec98e33b1d0927343cc01c6a1c14d5e9b581fcb94947",
+      "decision_sha256": "97bc424588565e814e51ea5c9c4eeb56686ac4c8d2d0d6eb6d22e115486fea8a"
+    },
+    {
+      "taxon_id": "F29883",
+      "source_proteome_path": "data/qc_proteomes/F29883.faa",
+      "source_proteome_sha256": "dc5a10e5e9cc931eed631c9db22244bd30020cb5e7e4c60092346522e0c35448",
+      "decision_sha256": "ed4ae3d0709361b17a5bd8802563deb22d377d24389cbd10e192fc0b36fdb962"
+    },
+    {
+      "taxon_id": "F29898",
+      "source_proteome_path": "data/qc_proteomes/F29898.faa",
+      "source_proteome_sha256": "169509fad80c4a3f3b10224adce9e44abcfb27ad25a3b866eff05df9ea3e40b6",
+      "decision_sha256": "544514099bf9e6589b5dbb85aa9e4782a857d2a25bcd555fc873b40ff717be8a"
+    },
+    {
+      "taxon_id": "F304332",
+      "source_proteome_path": "data/qc_proteomes/F304332.faa",
+      "source_proteome_sha256": "2ee2f5ab3624be83296bad9389cbcd42a15420cad0cf6e3925389bcb6164ede3",
+      "decision_sha256": "be94b091c548b62be4d548d410a1047bfa5e431c21095d8f1edc8b618bf3c173"
+    },
+    {
+      "taxon_id": "F3075319",
+      "source_proteome_path": "data/qc_proteomes/F3075319.faa",
+      "source_proteome_sha256": "da5ae80e85637600eb8a48ec661979e8acc004d6a50dc44f9d63437ae7ad1534",
+      "decision_sha256": "015a819f8caecc5a5ca355dff8b9eedeb1143759e76d07033cb199768bae7f96"
+    },
+    {
+      "taxon_id": "F3108450",
+      "source_proteome_path": "data/qc_proteomes/F3108450.faa",
+      "source_proteome_sha256": "9feb5b7e2d7bfc2a2571f8f37353ca53e6f4c06712fdaece711ef6d557b86348",
+      "decision_sha256": "5e676d8cd2fe18e2852ea2497e4d0872fbd6e9d885614c24ea50b97fcf041069"
+    },
+    {
+      "taxon_id": "F315204",
+      "source_proteome_path": "data/qc_proteomes/F315204.faa",
+      "source_proteome_sha256": "0b8f021c9928465d8d6bea782b3a338e54a74ec3bc7b172bf0b61dc2bb866700",
+      "decision_sha256": "da0971c89524c48a0cb087d2fb84d7f6ac75af59b3cec2e653800373248b7af1"
+    },
+    {
+      "taxon_id": "F318763",
+      "source_proteome_path": "data/qc_proteomes/F318763.faa",
+      "source_proteome_sha256": "97be6a2f48ad92b9a32ad96b4658965ff6c95ba1608c669b7ba8479ead3e1153",
+      "decision_sha256": "8922e62febac153aebb7e0b8329d2d8ab26f56de7c1346a870effd6af6efbfdd"
+    },
+    {
+      "taxon_id": "F318774",
+      "source_proteome_path": "data/qc_proteomes/F318774.faa",
+      "source_proteome_sha256": "cc9a68c81214e9611c126da4dca3b3c7f579b8207d8b57a3d07b582cee158700",
+      "decision_sha256": "6202e0cec05e1512fc44263da88caab95a0b1a9609282f357d104eb7e7ca12e7"
+    },
+    {
+      "taxon_id": "F332112",
+      "source_proteome_path": "data/qc_proteomes/F332112.faa",
+      "source_proteome_sha256": "e0d80eec217e181515fa931248ae12ab760e6620f7f004550398cc280bd0120a",
+      "decision_sha256": "180de3f572f9289d0156663d85741173be4d3f694c9718e75a27a3802881085b"
+    },
+    {
+      "taxon_id": "F3342545",
+      "source_proteome_path": "data/qc_proteomes/F3342545.faa",
+      "source_proteome_sha256": "09b146ffd7457a62fb7078e103ca5cf308b089887dc35c34ed04b7f12a765b3a",
+      "decision_sha256": "ebb9d5724b2869906067b8a10da1ff171c9035b02e30a4844a9db400c7bea96a"
+    },
+    {
+      "taxon_id": "F34349",
+      "source_proteome_path": "data/qc_proteomes/F34349.faa",
+      "source_proteome_sha256": "78bfbf6266485c47c1d563d735750033857f5c8842c3fb9fe3139e729dee232d",
+      "decision_sha256": "8c3770440673d88b76b3f7c3395e53be06c819cc7e42f4ecff3ab0036d2b9ec2"
+    },
+    {
+      "taxon_id": "F34406",
+      "source_proteome_path": "data/qc_proteomes/F34406.faa",
+      "source_proteome_sha256": "e44c84612a82daabf21e770985a333618ee52c386cb864698f4bc4e47a1314d3",
+      "decision_sha256": "948b064dd766cea6cb297a6c4cc37d3b9020aef229350485902098e9a5694c5f"
+    },
+    {
+      "taxon_id": "F34480",
+      "source_proteome_path": "data/qc_proteomes/F34480.faa",
+      "source_proteome_sha256": "49793f4adf7ec875f6d4f21aae328fca7f1393423bbefa58fe0604ad1b681e96",
+      "decision_sha256": "99d5635824157681b85650b371dbe8cca477b15bf80259127809f77d2739889a"
+    },
+    {
+      "taxon_id": "F34485",
+      "source_proteome_path": "data/qc_proteomes/F34485.faa",
+      "source_proteome_sha256": "bc938d4f8cd48ad95439b420e79f24dfbb669acd64a56f1a672373afb1503973",
+      "decision_sha256": "1fd3e947fd138ade2d5d881afb763b56c1793e551b59c780a0ac5575040f1a3a"
+    },
+    {
+      "taxon_id": "F34488",
+      "source_proteome_path": "data/qc_proteomes/F34488.faa",
+      "source_proteome_sha256": "1bcd0eb665b5f5fd7b7e335dc7498be27fdd4bc2226ab8c2086f862a52462052",
+      "decision_sha256": "673face6a037fbedf9dd6488f134fcf2c7109ec767683344f3cedeac8390e853"
+    },
+    {
+      "taxon_id": "F348617",
+      "source_proteome_path": "data/qc_proteomes/F348617.faa",
+      "source_proteome_sha256": "6d872f8f2488813ab951dd81a09cea059a98b8e4091b3b82e23f0891f1ea55e0",
+      "decision_sha256": "d08eac7fed3e616474590814be6ae0598ec48526105e5b6993d024a9942ec536"
+    },
+    {
+      "taxon_id": "F364733",
+      "source_proteome_path": "data/qc_proteomes/F364733.faa",
+      "source_proteome_sha256": "6a16138111eb4f715f89b025a1c77fd1c1e124393f101e47c1a32def28f9cc45",
+      "decision_sha256": "898e78d754212739a2477a4d1482a19b081b94135cdcf55fdc9cde65724669bf"
+    },
+    {
+      "taxon_id": "F36779",
+      "source_proteome_path": "data/qc_proteomes/F36779.faa",
+      "source_proteome_sha256": "d050e9402bf41aec36afd9f9e03e2216e93c61a654224172e67e630badb1be7c",
+      "decision_sha256": "2a70e615f0f6e7b75362ebb26e6d68da9944f020f7474d758f9ac6da34d8d160"
+    },
+    {
+      "taxon_id": "F37769",
+      "source_proteome_path": "data/qc_proteomes/F37769.faa",
+      "source_proteome_sha256": "3d174bed2b54aa5bd59008024ba766cbed685b105333a073bb47ab40492871cd",
+      "decision_sha256": "cc19f5e2166008e9d4502752295fed156ba7d6e9a62fcd484af55ac1219b4c79"
+    },
+    {
+      "taxon_id": "F378194",
+      "source_proteome_path": "data/qc_proteomes/F378194.faa",
+      "source_proteome_sha256": "e36912229d6fac8e438fcac1534085db9a0ca72cbcd7e0002da1e8d1e99350d7",
+      "decision_sha256": "b64481b0f5e53d48c1b3618c20d36543e401bf6b98ad84aeb27bc340a74e1979"
+    },
+    {
+      "taxon_id": "F382532",
+      "source_proteome_path": "data/qc_proteomes/F382532.faa",
+      "source_proteome_sha256": "2a719d76e3456ccef5e3ef14d5873469aca69997c53ee25511cb2e9625c97dda",
+      "decision_sha256": "ebebe55f6d37e6e550017e0adacf9479677192ff9ead1c5b25bca95fd5a65f7b"
+    },
+    {
+      "taxon_id": "F38799",
+      "source_proteome_path": "data/qc_proteomes/F38799.faa",
+      "source_proteome_sha256": "d0bf527e232d67896603483ed62721333f4f84551701209c4bc3ef44fc7aa03e",
+      "decision_sha256": "dbe7443ed9e480fd35b59ac0d014e3d2d6009870f0b7d15629d0ee6aa222535a"
+    },
+    {
+      "taxon_id": "F393283",
+      "source_proteome_path": "data/qc_proteomes/F393283.faa",
+      "source_proteome_sha256": "fbeac83af153862107092914a8b953375b950696f5f2729ec2b3f34ee9e2e506",
+      "decision_sha256": "42191622108a23e19e6f2c669ecc95dbd5c5476f48594a1ea67d6d057f909455"
+    },
+    {
+      "taxon_id": "F398673",
+      "source_proteome_path": "data/qc_proteomes/F398673.faa",
+      "source_proteome_sha256": "f0505caf993b20533559c10416e36795a6a5ed8f8930b94aaab2ccf71ec4a3b7",
+      "decision_sha256": "0c3efc97b199efe7d66d3049556e91c009b0d140fb071dabeb7eb4884f63fe22"
+    },
+    {
+      "taxon_id": "F40559",
+      "source_proteome_path": "data/qc_proteomes/F40559.faa",
+      "source_proteome_sha256": "703d71ff750ba0e729f026ea5c88332b4cb0593c5e2f6c2c327e49ed4d94cc4c",
+      "decision_sha256": "a13f13ac6f5c5fd41fe6a895d705ad94bf395e00a89d4de79a96ec9466df3f6b"
+    },
+    {
+      "taxon_id": "F41833",
+      "source_proteome_path": "data/qc_proteomes/F41833.faa",
+      "source_proteome_sha256": "9a56cf5e5eabddf1d5d913a4ad4cb5b232b45353b24a00140780bdcf0dc4d900",
+      "decision_sha256": "dd9ee716b10aca574c1f66ed94cf4c1c105a8ba5ed603b7c2d2df497fe475d4b"
+    },
+    {
+      "taxon_id": "F41956",
+      "source_proteome_path": "data/qc_proteomes/F41956.faa",
+      "source_proteome_sha256": "7ad5a7367a29f02414aabea10ecf68a0c43412b1b0651c3a307b7c98b1514838",
+      "decision_sha256": "2c2556897ee23c0655512bf106576c2b5f0e54dac47a365dd9927f6277b042a7"
+    },
+    {
+      "taxon_id": "F41990",
+      "source_proteome_path": "data/qc_proteomes/F41990.faa",
+      "source_proteome_sha256": "bc2fdbeb0f1050e8a5f7492848ca9b6b641b579e1a31894d37a7bab91b153cc1",
+      "decision_sha256": "08b3b454271c7683d71d0a43822af99c835291f59fe6fe2d72ce58f8b408e796"
+    },
+    {
+      "taxon_id": "F42068",
+      "source_proteome_path": "data/qc_proteomes/F42068.faa",
+      "source_proteome_sha256": "c04ea20e5a9161f442d9dad73f9d6a16b64c73a5c1d5b4d906f9f703a184e9fd",
+      "decision_sha256": "0d6f9dcf5f184b12b15004d4251ee7b76c5256db9338d332517cf8980d544215"
+    },
+    {
+      "taxon_id": "F423460",
+      "source_proteome_path": "data/qc_proteomes/F423460.faa",
+      "source_proteome_sha256": "41250198f6e2a24d9908c4b86816f063a916baf151c96710082a80b886364152",
+      "decision_sha256": "e847346afa420acae11f6ff26b7e48c2ef308ac2ebb4607aa22be172ea95f42e"
+    },
+    {
+      "taxon_id": "F42374",
+      "source_proteome_path": "data/qc_proteomes/F42374.faa",
+      "source_proteome_sha256": "e5c1b73bc7f9483f23da7083d6345d0bdc47b5b6441ae6213c90379cb5b05139",
+      "decision_sha256": "1b1f2c2833f2c3980f467412e690cdcecf19e4a2ad748a73715b80fd6cd6fd15"
+    },
+    {
+      "taxon_id": "F43433",
+      "source_proteome_path": "data/qc_proteomes/F43433.faa",
+      "source_proteome_sha256": "d113a3fb241d06501455a41b011015a052250a423878db5c8dbbfbfccd87ccf5",
+      "decision_sha256": "ad05b9db487b86885b8d22f9a767124239948a875167bf76ac40a62bad78dd2c"
+    },
+    {
+      "taxon_id": "F43959",
+      "source_proteome_path": "data/qc_proteomes/F43959.faa",
+      "source_proteome_sha256": "09f9e7db9a509593e5a4a66b8c11b3c386e91300127c991f146a6f4a40f74d11",
+      "decision_sha256": "bca5b2021f93de845c7cfaf1352bc6d48c658a95b935bef6eb3ba6ae222184e8"
+    },
+    {
+      "taxon_id": "F44089",
+      "source_proteome_path": "data/qc_proteomes/F44089.faa",
+      "source_proteome_sha256": "270459d8aa840399134e61051ed56d55e92f5538db4bdfc9e4495af9e84146bd",
+      "decision_sha256": "418f98663e14199c7def1e10231fee6c5513fcf855631b515d99cc8c0ed716e5"
+    },
+    {
+      "taxon_id": "F443868",
+      "source_proteome_path": "data/qc_proteomes/F443868.faa",
+      "source_proteome_sha256": "b427e7c4423407c118f32880580c6ec7c9e9867de23b0f61839ad7d5770e1b6a",
+      "decision_sha256": "799ca05163aa3f3ce02ddac5bd23afbeee671a27b2a6d8618c9467097b29f93a"
+    },
+    {
+      "taxon_id": "F44442",
+      "source_proteome_path": "data/qc_proteomes/F44442.faa",
+      "source_proteome_sha256": "22fa5e02b22d5ba523216cc33c60e61b58802cb239721e64823978cf4e370161",
+      "decision_sha256": "5dc39438b522cf772d53dae9569d91e8695c5496aaf36c2c89722154879a4129"
+    },
+    {
+      "taxon_id": "F44565",
+      "source_proteome_path": "data/qc_proteomes/F44565.faa",
+      "source_proteome_sha256": "c6997844b28e4bdbb265090b57562a3a89d8a5908a99e150c9549ce3595f5495",
+      "decision_sha256": "2bb4a11ff184d10d1692d5c3a97b89e2165c94f9867c8120ce4b1eb96e46778f"
+    },
+    {
+      "taxon_id": "F456999",
+      "source_proteome_path": "data/qc_proteomes/F456999.faa",
+      "source_proteome_sha256": "a69699a55c19c60759a6de56a69e39878e48226c208f5179b20867ed9430e141",
+      "decision_sha256": "492fe79a383330898ebe91978007d929924ea684f05189f0cd7a41cde6c356da"
+    },
+    {
+      "taxon_id": "F460848",
+      "source_proteome_path": "data/qc_proteomes/F460848.faa",
+      "source_proteome_sha256": "76efc73f4b40a163f0ce30352d14be7989e38e85508dd1cfbc67d9f6cf5a6da0",
+      "decision_sha256": "8b190c60b3ac9e20a1ac4e65d7a3d10d87ce2720a1125d65debdfca8f9d1fe54"
+    },
+    {
+      "taxon_id": "F462254",
+      "source_proteome_path": "data/qc_proteomes/F462254.faa",
+      "source_proteome_sha256": "79ec56b91551ed94ee3a11a656d7ea8888bbfaca711c0f6a522cb630eef0916a",
+      "decision_sha256": "6981d523088b40c14a62c90cb8d67a96fed5cdeabab4a8f97a99cb4a040a2e49"
+    },
+    {
+      "taxon_id": "F467971",
+      "source_proteome_path": "data/qc_proteomes/F467971.faa",
+      "source_proteome_sha256": "88cb86fa4fd14ddbbec895ae702cd0465bbfb999e38511662d5a8d17732ead2e",
+      "decision_sha256": "46af1427656e7fcdf7d8bc151ea2d1109417b98de352eb43ef81bf059505e766"
+    },
+    {
+      "taxon_id": "F470096",
+      "source_proteome_path": "data/qc_proteomes/F470096.faa",
+      "source_proteome_sha256": "3428e3d1716f4a204b77d3a5a582b7c11fb88ffd99b7c7c0e59a4ab546c76f48",
+      "decision_sha256": "c780cd248005e79ae641b0e75a324802ba34653cb70d57b2e56bd78a88147da3"
+    },
+    {
+      "taxon_id": "F4808",
+      "source_proteome_path": "data/qc_proteomes/F4808.faa",
+      "source_proteome_sha256": "286d1dc0108f840742da7edfe1d960a8317e3f0ec6ecdd9f84136fd1e633989c",
+      "decision_sha256": "7a1bcce8549134dd672d2925ca88cf6367558523027c356e3fb2e1cc6af9a335"
+    },
+    {
+      "taxon_id": "F4837",
+      "source_proteome_path": "data/qc_proteomes/F4837.faa",
+      "source_proteome_sha256": "6a4e1457665d315d5b9540a0e3cf1ab7444b43752c7708998d9166f3543e75fb",
+      "decision_sha256": "4d002c96c87d8f36be0760100c2a8522537a29b48f3653ad1f5d21ae1d824624"
+    },
+    {
+      "taxon_id": "F48563",
+      "source_proteome_path": "data/qc_proteomes/F48563.faa",
+      "source_proteome_sha256": "e0545a28030480dc3c7f201b6b1102fe7d9e9c698ee239d2d1f0e51e24fc79b4",
+      "decision_sha256": "a024a7f496a69437b895e1a6aa5c104315d09904973332c27dea54d1d0bb5537"
+    },
+    {
+      "taxon_id": "F48565",
+      "source_proteome_path": "data/qc_proteomes/F48565.faa",
+      "source_proteome_sha256": "5fe917e559621cbc7b364d4a1d663665b4f7d5d01813a21843edf4fd81637c49",
+      "decision_sha256": "f93df40440cd66976f9e31ecd4c6618488c73da208b707f28ebb9871f2ed467d"
+    },
+    {
+      "taxon_id": "F48578",
+      "source_proteome_path": "data/qc_proteomes/F48578.faa",
+      "source_proteome_sha256": "1efddc73d765c42b8802dc4175cb03d1f83d0face2f31d5a4b08bc6bc77306df",
+      "decision_sha256": "12b16aec61898f9f205d0e82b0cd95bb8e9f989c976a7617249f8bda78d6ba95"
+    },
+    {
+      "taxon_id": "F48586",
+      "source_proteome_path": "data/qc_proteomes/F48586.faa",
+      "source_proteome_sha256": "ddad5d646981bb325dd8b8153c2115d69762b1851d629555ddd4264c99f4025a",
+      "decision_sha256": "72eac72b033aecc51ce2d9098531821604508d7955ddeffe05b02b398e6593a6"
+    },
+    {
+      "taxon_id": "F48587",
+      "source_proteome_path": "data/qc_proteomes/F48587.faa",
+      "source_proteome_sha256": "e72220e2f22292500a16f64860d0c78117e79fbc8a96ec8bb20801fc3eaddae0",
+      "decision_sha256": "a20e30857fefa3fc73789e453fff3a1b71c0f39a04509f50e44b7663f289c0ce"
+    },
+    {
+      "taxon_id": "F48593",
+      "source_proteome_path": "data/qc_proteomes/F48593.faa",
+      "source_proteome_sha256": "887e725439bfba36c2d91d286e36d2258a40247ea8ee685b08b5ddd0fbd40808",
+      "decision_sha256": "78285de4e6a3415da58048e3c41c1a28668ed00c89a53462a114e3785c4321a5"
+    },
+    {
+      "taxon_id": "F4866",
+      "source_proteome_path": "data/qc_proteomes/F4866.faa",
+      "source_proteome_sha256": "8599ff6e0a7c02bedb16b80991b4e2c0ee547b2efbdb9542774ab171b67e50d0",
+      "decision_sha256": "b61c0582f352bd117095e3939390addf559a307c0ca42c3c0b5d4237382fc88c"
+    },
+    {
+      "taxon_id": "F4874",
+      "source_proteome_path": "data/qc_proteomes/F4874.faa",
+      "source_proteome_sha256": "80ffe5a5a2565e5dc5bed20f1ca790c80debb2a9fb1e2b8a17da65d0448dab0c",
+      "decision_sha256": "8266fced7ea95e37d253c025ae99a1f8245ca94acc514e16710a3992e080d895"
+    },
+    {
+      "taxon_id": "F4896",
+      "source_proteome_path": "data/qc_proteomes/F4896.faa",
+      "source_proteome_sha256": "7283b89b2ad50b8943666aef2f64a1b12cb96e3b5844bdde61fd12a5b1258a47",
+      "decision_sha256": "d8a7b2f33a0631e14fa02c443dbca1467104f6b6cd8c15e20eb17ec9ccf4c785"
+    },
+    {
+      "taxon_id": "F4897",
+      "source_proteome_path": "data/qc_proteomes/F4897.faa",
+      "source_proteome_sha256": "a3621be8a42b478b5e3eb2a1737cd7f136e5fb181d08b3b6c80436fcf1e8d340",
+      "decision_sha256": "3c78cb0c5614211310544cae55c686e1e28d42659b02645ce7051dcbd5d7d841"
+    },
+    {
+      "taxon_id": "F4903",
+      "source_proteome_path": "data/qc_proteomes/F4903.faa",
+      "source_proteome_sha256": "0cac4172b6e9adb8685341215b63f4e5926db6742d0424a8e0e299e01c528450",
+      "decision_sha256": "81e397080d4c949f1c7e8012042c90d36cb5e95c4cd346ac8e2ff3e0d87d616e"
+    },
+    {
+      "taxon_id": "F4918",
+      "source_proteome_path": "data/qc_proteomes/F4918.faa",
+      "source_proteome_sha256": "b1805348fafa4565523dc55f0566345bf5609f81544730985044e1fd9b71a455",
+      "decision_sha256": "5ca67880edc150b621a99f5780d9ac94f349ecb8ac92337b5d0867dd944f5056"
+    },
+    {
+      "taxon_id": "F4927",
+      "source_proteome_path": "data/qc_proteomes/F4927.faa",
+      "source_proteome_sha256": "ad78cd37b528f8fbbfd84e528bd22a231bfa47fd05fb1a6bccd9b0c3a2942ff3",
+      "decision_sha256": "7abf996dce1fb953168126173646533cbd909acd5bbf2a840477d221a04be1cc"
+    },
+    {
+      "taxon_id": "F50376",
+      "source_proteome_path": "data/qc_proteomes/F50376.faa",
+      "source_proteome_sha256": "83b923535360acc97af4737171389bf6ec7bb56e9881598872f3df7d6a25ae4d",
+      "decision_sha256": "b04ad387c4e1dc7e9e52ec407448ac16b6f3694d7e88adf68505649ab5e0b5c3"
+    },
+    {
+      "taxon_id": "F5062",
+      "source_proteome_path": "data/qc_proteomes/F5062.faa",
+      "source_proteome_sha256": "ea62c1da9227c8f183400567bf56d6a023845a7cfc0e4df8f3abc8728b433f11",
+      "decision_sha256": "115db78e25fd0c17ec995517d2499ba13cd316447f2f68d014b1dd52823b6bbe"
+    },
+    {
+      "taxon_id": "F50956",
+      "source_proteome_path": "data/qc_proteomes/F50956.faa",
+      "source_proteome_sha256": "a63d89098b6720c18b48b0637b90524997e3bcb207d08f19ce5e5971bc24d027",
+      "decision_sha256": "aae75d5970347cee9eae56d885dcc5854fbf83e9167498545438193038cc7e4d"
+    },
+    {
+      "taxon_id": "F50990",
+      "source_proteome_path": "data/qc_proteomes/F50990.faa",
+      "source_proteome_sha256": "90fb2a57713fcfc517abee2124d17a009797d2b8406322b36730d03a3aaa7471",
+      "decision_sha256": "b94d5941ee1a899bfb5dd667a85986272201b933c1808730ad6b1765e1f96f5c"
+    },
+    {
+      "taxon_id": "F5116",
+      "source_proteome_path": "data/qc_proteomes/F5116.faa",
+      "source_proteome_sha256": "c794c4e490403cf12c2ebf8fb4fa2dcc31fe625cf4ef9b87ca8db16aada54a11",
+      "decision_sha256": "1bdd72dc91d8bf27d12d56005084549c4647407a94d39b1101bacde4ca3cacaa"
+    },
+    {
+      "taxon_id": "F5127",
+      "source_proteome_path": "data/qc_proteomes/F5127.faa",
+      "source_proteome_sha256": "92bc9ed9089a733e80700960d55e384eb470926fbd028f032d789bb418fc0e19",
+      "decision_sha256": "41ae6f0bfab8ec20823d5b0815f5aeecc42348f0ce55e6310d7e6a7f2b7c36fa"
+    },
+    {
+      "taxon_id": "F5128",
+      "source_proteome_path": "data/qc_proteomes/F5128.faa",
+      "source_proteome_sha256": "5e6b79c50792028bdba605bf903f986aa86df77648f6f689ca6b269396db44d4",
+      "decision_sha256": "0a38febc03ca7d3b846009ed23f7aca14d4b825201b04873bc0c646e9a5960d3"
+    },
+    {
+      "taxon_id": "F5147",
+      "source_proteome_path": "data/qc_proteomes/F5147.faa",
+      "source_proteome_sha256": "bf279735663827d84085c5040241d1174a71f8261f018de01627ba4a17f69f39",
+      "decision_sha256": "be7e2f073ffbe6f43bcda57b913d3289bc4811625120e6c1b885582f3e54f20b"
+    },
+    {
+      "taxon_id": "F51930",
+      "source_proteome_path": "data/qc_proteomes/F51930.faa",
+      "source_proteome_sha256": "9a57988d5b4e74b03cca1e7ea410b456c33cfcf9ff56a5c9f4648b8c70b04790",
+      "decision_sha256": "0200a1915484988a26887d666d05138ffb6155066c0776f5acb7ec06c36b879d"
+    },
+    {
+      "taxon_id": "F5207",
+      "source_proteome_path": "data/qc_proteomes/F5207.faa",
+      "source_proteome_sha256": "965a0f1ba3d62ddd3ea22d2df7bd269d24802adbdb4c29101d52685d88168d79",
+      "decision_sha256": "eb11611383b1f4bce129bc3d017940cd309350aa5434530644ab89b1b3b1a167"
+    },
+    {
+      "taxon_id": "F5219",
+      "source_proteome_path": "data/qc_proteomes/F5219.faa",
+      "source_proteome_sha256": "a4b0e3e97bf79623237baedff4520d2b890c98685736bc343597bb509a52e1f5",
+      "decision_sha256": "f1d3763d8d1920641cf7c60e508a9bb98e517f81f681565ad62078eb1c3bf012"
+    },
+    {
+      "taxon_id": "F5281",
+      "source_proteome_path": "data/qc_proteomes/F5281.faa",
+      "source_proteome_sha256": "78b8b28b10cd3d35f157952ce77c01e57bdbb507dc413d6048e1015c061962fe",
+      "decision_sha256": "c658caac2f55ec30c08485a002affa5c3bfef62cc7467c9e2678b4fa2ed892de"
+    },
+    {
+      "taxon_id": "F52883",
+      "source_proteome_path": "data/qc_proteomes/F52883.faa",
+      "source_proteome_sha256": "67a9d2171de070cfc0bb04f407aee1c76d5589ffaeef17b16486fbd4dcfefc03",
+      "decision_sha256": "eae2b6bb62341dbee1285a0f4354dfad72fbea564d9f622a4a71c4b87a3a3f76"
+    },
+    {
+      "taxon_id": "F5364",
+      "source_proteome_path": "data/qc_proteomes/F5364.faa",
+      "source_proteome_sha256": "242fdf2b50f606406e133127cf299f42a1982b81b530f015030026fb41e45e82",
+      "decision_sha256": "b241144b2026ad377e189e1edbb1919b1644eaf67b0d8c3af2f9eee3ac0d86ba"
+    },
+    {
+      "taxon_id": "F5365",
+      "source_proteome_path": "data/qc_proteomes/F5365.faa",
+      "source_proteome_sha256": "14847f753dd62131c958d39072ce127f409dd21408db36a2bdf7f3757867ca97",
+      "decision_sha256": "6a819f4005378b567d267bd0aff2df678ce1df023a3862b690e5b49ff87b9d1a"
+    },
+    {
+      "taxon_id": "F5414",
+      "source_proteome_path": "data/qc_proteomes/F5414.faa",
+      "source_proteome_sha256": "d67924af82ce0b72b576d3873c112757156ee858764b1d538bd0b317f30df9c5",
+      "decision_sha256": "28e38e7d5649b3bd5955100f233b9a6f17951bcad9b26232c05c23abcf4022a7"
+    },
+    {
+      "taxon_id": "F54195",
+      "source_proteome_path": "data/qc_proteomes/F54195.faa",
+      "source_proteome_sha256": "9be4d2ba066a2f467bcacb9c19d377c8394b6d142f926c161b2043c1692e8800",
+      "decision_sha256": "e2d5fec79576c3cf06ce8423b22d24bf19e5564462abfc239e2fc1821cbce95c"
+    },
+    {
+      "taxon_id": "F5476",
+      "source_proteome_path": "data/qc_proteomes/F5476.faa",
+      "source_proteome_sha256": "a95a1fbb211d2a50240cf3a86a632d918722557102788f143ea5e5b604d08b12",
+      "decision_sha256": "536d1a2fc77621f38033561429133fa6117fa1e959213dee37c64e95ca5bb29b"
+    },
+    {
+      "taxon_id": "F5479",
+      "source_proteome_path": "data/qc_proteomes/F5479.faa",
+      "source_proteome_sha256": "0159c0e3cc88cec1be7bda8530ac7d3aba229a976789d150063a1dc41b7f0fdc",
+      "decision_sha256": "e54691b1b1c74b04c0c63939deade5723933541756626d5bc7498dd4cfe94d89"
+    },
+    {
+      "taxon_id": "F5482",
+      "source_proteome_path": "data/qc_proteomes/F5482.faa",
+      "source_proteome_sha256": "fe6b208d06cfde2ef72e0b9e2f429c2d52f2bc3a94ff179b4ef6e3d68f3898cf",
+      "decision_sha256": "36ca63b315de3ca22703345f546d3d7562d84fe62ec82a8536326c2293779993"
+    },
+    {
+      "taxon_id": "F5486",
+      "source_proteome_path": "data/qc_proteomes/F5486.faa",
+      "source_proteome_sha256": "742fed61c039ef08b23784c89165b7c61dc00160702b9ea61bc6b0199953c3c4",
+      "decision_sha256": "50be320d1337640f952bd508e15ad32fe7cc53d03166bb746de370f3138f03e7"
+    },
+    {
+      "taxon_id": "F549676",
+      "source_proteome_path": "data/qc_proteomes/F549676.faa",
+      "source_proteome_sha256": "e60a7b8831e721374232c4482b941e47d387e6d50e7c8d6d95e255d3263a5518",
+      "decision_sha256": "82d6c356e3c5a94d61aa42d79a465b9882a829f7c762db901842b9f89a537555"
+    },
+    {
+      "taxon_id": "F5570",
+      "source_proteome_path": "data/qc_proteomes/F5570.faa",
+      "source_proteome_sha256": "a451df093b4e05e1727cc3575b5c5d87844f60125ef7f531d715c779a1284309",
+      "decision_sha256": "fe048806b6cda4228deb39adb9f6f10567f74a4c512f3ffdbb5d423fa23755f3"
+    },
+    {
+      "taxon_id": "F5606",
+      "source_proteome_path": "data/qc_proteomes/F5606.faa",
+      "source_proteome_sha256": "6138efdcbd0d6b41bebb7cb78d0a55eff0c3123dfbb6de98ac098415fffdb4c1",
+      "decision_sha256": "d851b191be603e6c4975fd8148e251003714e0e187d0bea6bdbd82e6f59a1be8"
+    },
+    {
+      "taxon_id": "F5619",
+      "source_proteome_path": "data/qc_proteomes/F5619.faa",
+      "source_proteome_sha256": "7fb6cf7a6555c574c03fb98e3a79c36b3fa7792007c5157423be7a99a1d79954",
+      "decision_sha256": "a98308c4054f3edaa97d4e1b563699fb93aed3cf372815fb78bd11aa4930819e"
+    },
+    {
+      "taxon_id": "F5630",
+      "source_proteome_path": "data/qc_proteomes/F5630.faa",
+      "source_proteome_sha256": "3c402f954c2903d5da26fae4505c170288021af060afec447aee1d8fff113ef0",
+      "decision_sha256": "2ce431bec564d5d7f921d72127a6f4b0ab60de3fb3c4539c77f498f6250b6046"
+    },
+    {
+      "taxon_id": "F563466",
+      "source_proteome_path": "data/qc_proteomes/F563466.faa",
+      "source_proteome_sha256": "d448f748e2bf86cfcbba01062cc6a96276a045479a985453b558d979abc6e282",
+      "decision_sha256": "d0461ecbd901996f7b95c9dd227d07d7b7a613d08d126cc3c362d4456bc54659"
+    },
+    {
+      "taxon_id": "F56493",
+      "source_proteome_path": "data/qc_proteomes/F56493.faa",
+      "source_proteome_sha256": "f6a35123af8ae6f38b3d6a8605feed2841382f0de4b7b6e629d535d281fe4696",
+      "decision_sha256": "c90bc97fe65700c5826c2813b9b344283223901c648d3af527733dbc53aace54"
+    },
+    {
+      "taxon_id": "F574774",
+      "source_proteome_path": "data/qc_proteomes/F574774.faa",
+      "source_proteome_sha256": "d190ed12b8c6d60d5d53f71a92a24879eb8a2288fb60134446b34efae868ea39",
+      "decision_sha256": "78a9f33b469a404b5b05f1cc3cf63afcf4e6afb9cc16a44c0175a65409c100dd"
+    },
+    {
+      "taxon_id": "F58291",
+      "source_proteome_path": "data/qc_proteomes/F58291.faa",
+      "source_proteome_sha256": "2fe21cceef61fb3564cd07fa1a5138d6573a3ab5dbbc0e2bc9967862ae8d5393",
+      "decision_sha256": "d55e4199021626172377b21f30e032e3e24899b22c5fa3ce4df8f0b4291354d0"
+    },
+    {
+      "taxon_id": "F588596",
+      "source_proteome_path": "data/qc_proteomes/F588596.faa",
+      "source_proteome_sha256": "0c07b511324f35e5b2d8f0355e522e2e4691d95c56c0d0a2fad6278c874e173c",
+      "decision_sha256": "d9a8e744cda70056cf93b10cb548c19ff01d7e01e91d7b7a068d42367c04def1"
+    },
+    {
+      "taxon_id": "F599730",
+      "source_proteome_path": "data/qc_proteomes/F599730.faa",
+      "source_proteome_sha256": "f133ca7adec7d3c9103e781318503f6610f2325732358e2a257659926ebcff2d",
+      "decision_sha256": "fb885c103547b50e1d234059eb70f27e49d40c423a3a80c7168010b00497463f"
+    },
+    {
+      "taxon_id": "F599839",
+      "source_proteome_path": "data/qc_proteomes/F599839.faa",
+      "source_proteome_sha256": "6911aa4905ee42206daf2c0bf0f74a876bc151f6ecb9bf8d50fb6bb073c075e8",
+      "decision_sha256": "7377c6020a088cd204678036c365dbc116e4d46fc3826eb80c33aea79201880c"
+    },
+    {
+      "taxon_id": "F60197",
+      "source_proteome_path": "data/qc_proteomes/F60197.faa",
+      "source_proteome_sha256": "164169f3c25591b1ad9c031fa8640919227614b986c7cd32945fb83b02fab1f9",
+      "decision_sha256": "9b0eece659e8b29c908bb469ca3434c692afb2e3c3590c3b85f79581866986f3"
+    },
+    {
+      "taxon_id": "F6039",
+      "source_proteome_path": "data/qc_proteomes/F6039.faa",
+      "source_proteome_sha256": "3b9189045bd71a30402a2c6e6f4258df12c7e6dfb07731e4dffe6d90d58a0229",
+      "decision_sha256": "4e8335ed964b3bd3175bdcd6c9a043735181610bb8c42587c051e06d0b50585c"
+    },
+    {
+      "taxon_id": "F604196",
+      "source_proteome_path": "data/qc_proteomes/F604196.faa",
+      "source_proteome_sha256": "39627c09e2f26c152fadaa8e6c0ca531eb1008d0c94ede0d264488fee765e349",
+      "decision_sha256": "4d0d7aef999566ffec9351c85bf244bab25c763616aeecedd8cd1070e1ade9b8"
+    },
+    {
+      "taxon_id": "F610337",
+      "source_proteome_path": "data/qc_proteomes/F610337.faa",
+      "source_proteome_sha256": "1c49e12c3c3240c764fbcd23d0a081736eb22154f2715c5e84a2cc8924d51040",
+      "decision_sha256": "822e822ee179e2e334ed8ecd19bf9902a603cb43a1b490aed6f604173805d2a4"
+    },
+    {
+      "taxon_id": "F61395",
+      "source_proteome_path": "data/qc_proteomes/F61395.faa",
+      "source_proteome_sha256": "bad788bc4739aa1e17aa60bf5d86c1d255821e42f49568da15fe561947c499e9",
+      "decision_sha256": "e18d35b5f152749d4fe0e22b2924b446a68daad132e9df72b639d11fd7fae0d4"
+    },
+    {
+      "taxon_id": "F61397",
+      "source_proteome_path": "data/qc_proteomes/F61397.faa",
+      "source_proteome_sha256": "10af0e29c7a12bfc7171c10e85b2837fd3d77953ea21547a4341092e7f91653f",
+      "decision_sha256": "0a17e5db54616fcd30fb6e8ebedb0dd1144cb32aef7f5272dcb28c610aa25948"
+    },
+    {
+      "taxon_id": "F61424",
+      "source_proteome_path": "data/qc_proteomes/F61424.faa",
+      "source_proteome_sha256": "57421db99e43e746f7a19b80105a5810571205cc2a88641bdf94575a9d986b55",
+      "decision_sha256": "8e1c9cd5aaf11727c64c4a8c7d412d8445b5a573c9fddfb1d93dfb72ab45780b"
+    },
+    {
+      "taxon_id": "F63146",
+      "source_proteome_path": "data/qc_proteomes/F63146.faa",
+      "source_proteome_sha256": "c18873ffc6f416a96de344125c0926814b5fe5a829cf4fdbd0bff07a09fbcc53",
+      "decision_sha256": "5265d39c06971808cc285ab3c307f941a84630ff4f6c7bf6e166b09a17e54b70"
+    },
+    {
+      "taxon_id": "F63402",
+      "source_proteome_path": "data/qc_proteomes/F63402.faa",
+      "source_proteome_sha256": "ae2b4e7f0fbf12261633b14fcddd41ae951b0aa5f4a206e1234ce77a304ffd90",
+      "decision_sha256": "a349d321fc9c5ebd2745f5c0d7f2f4e293f9deda371c01607ad2e9cad60c3c46"
+    },
+    {
+      "taxon_id": "F63577",
+      "source_proteome_path": "data/qc_proteomes/F63577.faa",
+      "source_proteome_sha256": "666d61f49ea759399bdaf6b0862274ae5889a04a46a71461736fe95209e7182a",
+      "decision_sha256": "7bf1a0d88dbcdb11286ad96d387a69f366aa9ca1445046b53d492544d9963a9f"
+    },
+    {
+      "taxon_id": "F64505",
+      "source_proteome_path": "data/qc_proteomes/F64505.faa",
+      "source_proteome_sha256": "db5985a62d85ce0aee5f63f6b8729ef75e2d53be70eb54ce4ce47f5c6b352af2",
+      "decision_sha256": "d19201a37d3a88b4a1fbb6dd13638faf93f6081d470e933c114f7e41b2657a61"
+    },
+    {
+      "taxon_id": "F64508",
+      "source_proteome_path": "data/qc_proteomes/F64508.faa",
+      "source_proteome_sha256": "df1588dd7f08019c09271a74dbb5e8f4e58fdae46003d4be8addf139d915037f",
+      "decision_sha256": "7a93d970c6d8cfe1cca85167c2c0f5a49d9ee6502178e892408a3f437f84eea1"
+    },
+    {
+      "taxon_id": "F64525",
+      "source_proteome_path": "data/qc_proteomes/F64525.faa",
+      "source_proteome_sha256": "86208bf3c6cf281df65a998d8d8947d60c195eb3e8fdfdf7a7e80d7713641ffd",
+      "decision_sha256": "bb46a745f3fb8b33b06ed1998d495200044465318e6f76995367cac1e9b3a143"
+    },
+    {
+      "taxon_id": "F64526",
+      "source_proteome_path": "data/qc_proteomes/F64526.faa",
+      "source_proteome_sha256": "49b43e10136f3b7ac005b04d8a05c74797df51eb3f5453fc6f684e907c4b8a31",
+      "decision_sha256": "9f0649d97403403d9a7d4c98f8e7bc1e9fc2840c90e65216f8ee77eb0e4408e6"
+    },
+    {
+      "taxon_id": "F64571",
+      "source_proteome_path": "data/qc_proteomes/F64571.faa",
+      "source_proteome_sha256": "75de8c34091d937311c680b28de1c7d280629162bb31d44c52ff29fbe330982a",
+      "decision_sha256": "d1c6b34e28a0c3ad392673f5cae22e0bbd34c3486b83d232c500be3f44fb3625"
+    },
+    {
+      "taxon_id": "F64632",
+      "source_proteome_path": "data/qc_proteomes/F64632.faa",
+      "source_proteome_sha256": "e5e034616435e1d6c1a5a8fe02f1d30bbcb704a5d105cc6480240600ca78d74b",
+      "decision_sha256": "e8f160cd8010d9d093d4e0a6459a40f753c096fcca20f484011048361ddb1cd4"
+    },
+    {
+      "taxon_id": "F65468",
+      "source_proteome_path": "data/qc_proteomes/F65468.faa",
+      "source_proteome_sha256": "bc9416665f4eaf88ec6c068a0bcfac1826ddd65b1326e5b9245ed766578455c6",
+      "decision_sha256": "fdf830f79a39c7d65cb6b0d20b637a3e8afb4c3f0a37cac15d74b52b123a7192"
+    },
+    {
+      "taxon_id": "F655981",
+      "source_proteome_path": "data/qc_proteomes/F655981.faa",
+      "source_proteome_sha256": "03a045ed137ed7052036e4f389d70eddde64da678718788e509e85e1a795f5ad",
+      "decision_sha256": "06b5e528ad92bfaded0143a7fa2cf27ad845ac1a7eccd3f54b50515e69dbd47a"
+    },
+    {
+      "taxon_id": "F65672",
+      "source_proteome_path": "data/qc_proteomes/F65672.faa",
+      "source_proteome_sha256": "d3460f54b5754ef917a5d1ef9e54a095b3c2d7dcdb1119ceb63beb3598b26f68",
+      "decision_sha256": "282b1435a039e83ed2904dbf6ae7a3060c2c1aaeaefb3aea07e093836054f083"
+    },
+    {
+      "taxon_id": "F658196",
+      "source_proteome_path": "data/qc_proteomes/F658196.faa",
+      "source_proteome_sha256": "06600591c240e9caf21e14ad937bf25d51162434a45cdd7026e2dc254ad6301c",
+      "decision_sha256": "cab47d124a1a81616ecfaa7b9f3f45e3c45436c068cde3ee7dab118174ba8e11"
+    },
+    {
+      "taxon_id": "F669869",
+      "source_proteome_path": "data/qc_proteomes/F669869.faa",
+      "source_proteome_sha256": "abb21fbc3a6b10ac0fb5a97952025c4a627e667ffac4ce317ff36b26ffc2b5dd",
+      "decision_sha256": "f9566a918fc1ed0db687aafb14494d0654ce8a1767a166d70c1cdae559f7118a"
+    },
+    {
+      "taxon_id": "F68786",
+      "source_proteome_path": "data/qc_proteomes/F68786.faa",
+      "source_proteome_sha256": "7244d650124cf3ca4fb9811b3e893fe32f0a55d6028d8ed9a733069e63bc61d4",
+      "decision_sha256": "01932863e99109556661c919aeb4fcabd81d37f67c116fee6191a9a136edb6ac"
+    },
+    {
+      "taxon_id": "F703506",
+      "source_proteome_path": "data/qc_proteomes/F703506.faa",
+      "source_proteome_sha256": "0e45a075e57dde19c13bc64de1b9e43b667867a835973b82678dc8bd00c1771c",
+      "decision_sha256": "053783497209ce0cd4bad8b7d4cfe135e872e30b4dad7bf00b16bd21695a0794"
+    },
+    {
+      "taxon_id": "F706196",
+      "source_proteome_path": "data/qc_proteomes/F706196.faa",
+      "source_proteome_sha256": "2f1a1520539c940b0347169e8ca99e586a1400a7848eb30f0d81ec04863d3938",
+      "decision_sha256": "77d7e2c44200eb811ae05adc96eae31c93ea267bcb693f9357b8d36370e405d0"
+    },
+    {
+      "taxon_id": "F708070",
+      "source_proteome_path": "data/qc_proteomes/F708070.faa",
+      "source_proteome_sha256": "a94b4df6cbe958a9a5923107bb357c0d162c91c8f0ad0f9df410a33dc3361a0f",
+      "decision_sha256": "531827be2d0ce46cf868c1073681abd043265f629743b9a9f54c62da922b5fce"
+    },
+    {
+      "taxon_id": "F710243",
+      "source_proteome_path": "data/qc_proteomes/F710243.faa",
+      "source_proteome_sha256": "78c778c8ddfdbe56b37d0ae9703fc6572f70bbcc6c476a57370ef0eac47cbc0f",
+      "decision_sha256": "dcbb8a2d64ee7b8e751fe7164e305325a1cb107e67634021024232507c11690d"
+    },
+    {
+      "taxon_id": "F71933",
+      "source_proteome_path": "data/qc_proteomes/F71933.faa",
+      "source_proteome_sha256": "529352abeefc154ea9b5ecf51d4110af61e7101c0386f246080cfcb1fa7da62c",
+      "decision_sha256": "cbdcb5d98373f3bfc90b00d631158adeb65ad07f5ce3cf458a5b46b59bebb759"
+    },
+    {
+      "taxon_id": "F73868",
+      "source_proteome_path": "data/qc_proteomes/F73868.faa",
+      "source_proteome_sha256": "8e52bdb8d49c1e73fbf552f98964c28d1480dd6f7ea29cc946cc423a92800728",
+      "decision_sha256": "192eadc519081f40098ce3299e667fdbba5dd84e455247c320939d99c27123b6"
+    },
+    {
+      "taxon_id": "F76775",
+      "source_proteome_path": "data/qc_proteomes/F76775.faa",
+      "source_proteome_sha256": "c7931a188ce1a99c9afbfe0259099ebf76952fd6db266aff1356fec583b7b0be",
+      "decision_sha256": "50869dcc3de24c37dfa14e4d9dd00656c83f680e764c8b7a90cc9239e4c12b9a"
+    },
+    {
+      "taxon_id": "F76777",
+      "source_proteome_path": "data/qc_proteomes/F76777.faa",
+      "source_proteome_sha256": "d39f5ce49ff57d1bb6e3edb8b8f879aa4d599cab873e58174757bab644c268d6",
+      "decision_sha256": "e03d2ff8ac9c73d02af70313fe43b9957772f56af0d684e9d72d839fe3f00ebb"
+    },
+    {
+      "taxon_id": "F78915",
+      "source_proteome_path": "data/qc_proteomes/F78915.faa",
+      "source_proteome_sha256": "e20cb3a8186fcebdc72df04d5acd3cc4376cf09374ab23aa95370ab550c9b991",
+      "decision_sha256": "027711f0849d49a234d2c993b6d14bba29ae3826832d0bc139228eb657d6d697"
+    },
+    {
+      "taxon_id": "F78921",
+      "source_proteome_path": "data/qc_proteomes/F78921.faa",
+      "source_proteome_sha256": "430edc9b42cef191e8e7c8a9014aa7ac225ad7ddd8768f348810908c18c3c6d1",
+      "decision_sha256": "af22dc98d15002cde760725d8a97c5b5601f2f771bb437f4e3f43aa8805431b0"
+    },
+    {
+      "taxon_id": "F796604",
+      "source_proteome_path": "data/qc_proteomes/F796604.faa",
+      "source_proteome_sha256": "ea337a540adfbf651d61c3b7a9d0a9df888b8418de42493b0f6f062e0df422cb",
+      "decision_sha256": "9bbc23f362001c8046451c4e61c763044f0079485ce83508da79636d44d169ca"
+    },
+    {
+      "taxon_id": "F80663",
+      "source_proteome_path": "data/qc_proteomes/F80663.faa",
+      "source_proteome_sha256": "8ecf84e69e9361381ffa424e41d195c46b30263884ca698c092403c8dab878a1",
+      "decision_sha256": "8d3afa29da65f7e2a298e35162c20e9393b4632f17728351b695b11d75115bfa"
+    },
+    {
+      "taxon_id": "F80884",
+      "source_proteome_path": "data/qc_proteomes/F80884.faa",
+      "source_proteome_sha256": "344a21bb539af3a26ad269233d36d983e79ff31ad5689eb51474d7c7e9d68701",
+      "decision_sha256": "af669f26f6e3958c20e0787c708cd32026b2ede21521fb9cb81c3232f366b650"
+    },
+    {
+      "taxon_id": "F82268",
+      "source_proteome_path": "data/qc_proteomes/F82268.faa",
+      "source_proteome_sha256": "65c0c93f33711d4c83b2e204da952ea25419c7da8f4f2e3dc05fc0abbfca3e6f",
+      "decision_sha256": "906b6d3a5fe48cc0edbd64b6ab44e7065f49a2dbcef8e4338cefd2159b09cb4a"
+    },
+    {
+      "taxon_id": "F84751",
+      "source_proteome_path": "data/qc_proteomes/F84751.faa",
+      "source_proteome_sha256": "138cb3151474e52261571a8fe65c826b625a519302af903051e2ea85943c8dc7",
+      "decision_sha256": "66a8f7c19d8990a333a37237df81eb1415288f92194dc061b39734a1403fdc1d"
+    },
+    {
+      "taxon_id": "F84753",
+      "source_proteome_path": "data/qc_proteomes/F84753.faa",
+      "source_proteome_sha256": "0e634af72ab721b068bd2da592e2ce74e4b79256ae9a50535b58ba43fb5f00b4",
+      "decision_sha256": "5350a55be3fab5152794b52a30c1f4af954dad466bd003907550176c56af49d8"
+    },
+    {
+      "taxon_id": "F87326",
+      "source_proteome_path": "data/qc_proteomes/F87326.faa",
+      "source_proteome_sha256": "c7682ed6da89aea76b68b236151da9e3e028a40222e64fe3ee2ae184799fec71",
+      "decision_sha256": "ad99e05f70949a1b11a63e7c98ae6536b57a46c120131f3da68b630e6fee74ce"
+    },
+    {
+      "taxon_id": "F89243",
+      "source_proteome_path": "data/qc_proteomes/F89243.faa",
+      "source_proteome_sha256": "667afa39eecbfe92bd6de8bbdedb12d1fe2311aa678e086c31fd71183b209a7b",
+      "decision_sha256": "84cc81b0fa220ad9d64e31c0cdad4ba5f5d14b72c3023d9611cdd624bf07a92f"
+    },
+    {
+      "taxon_id": "F89922",
+      "source_proteome_path": "data/qc_proteomes/F89922.faa",
+      "source_proteome_sha256": "f2a45cb6fc4adef1700ae827bda5756b65029ff1b3007364c96016a96866a2c8",
+      "decision_sha256": "c4e5682ed9e3bf577214bf8ece191d2eca137d7e24105cd150383da0f1266410"
+    },
+    {
+      "taxon_id": "F90408",
+      "source_proteome_path": "data/qc_proteomes/F90408.faa",
+      "source_proteome_sha256": "72ad71a0ac1e58393d0ae97bdde7dcd92e2615a479d4938f26dea989c6b24eae",
+      "decision_sha256": "0512fbf3641218767e887fd36082bf05491ced5c3b325079c9120ee831597fc0"
+    },
+    {
+      "taxon_id": "F911321",
+      "source_proteome_path": "data/qc_proteomes/F911321.faa",
+      "source_proteome_sha256": "e2d6f50c4a48cb693407c53e4e299ee28006640047863326cb7556fb19dfd25e",
+      "decision_sha256": "02555ec3023fb19d83ddd6a1165ad44487007ab40b8d6325a5ef3d1d1bd314c2"
+    },
+    {
+      "taxon_id": "F91625",
+      "source_proteome_path": "data/qc_proteomes/F91625.faa",
+      "source_proteome_sha256": "5c7fb16487b6a50a6143767c77aeee56e8c2999b5e702a5920d8c5bc5bfd4d3d",
+      "decision_sha256": "535689be4fc975f008ba750a062c9f77a7a5b29c827a50c8f2b9d1409b9691fc"
+    },
+    {
+      "taxon_id": "F92988",
+      "source_proteome_path": "data/qc_proteomes/F92988.faa",
+      "source_proteome_sha256": "6730b8b7d5bbf112f2000495fcc3bc780cc4b4b60184b03599200a63ffcf8c8b",
+      "decision_sha256": "4880ee8d8085bf7da67227962cef98ceef535bed0d50df767b64b40c7e3526ee"
+    },
+    {
+      "taxon_id": "F933333",
+      "source_proteome_path": "data/qc_proteomes/F933333.faa",
+      "source_proteome_sha256": "965e6a367e7f452ff7c9bf101f939a91c8275a56c5d7aaf4e9dae041efa90fce",
+      "decision_sha256": "c5f169d408bdbb2e4c407a454b98ac713ab12c0289d7bfbdf2a66740a27a09d6"
+    },
+    {
+      "taxon_id": "F97331",
+      "source_proteome_path": "data/qc_proteomes/F97331.faa",
+      "source_proteome_sha256": "b97f1431f2710fa883a404dce47e1a0baeaf3e79e686a9a71a18b04493e6daf2",
+      "decision_sha256": "2cf67d8b9165d8a4c735a58fe2d05ff31316caae41f78a690a62a28de50ce3f5"
+    },
+    {
+      "taxon_id": "F979620",
+      "source_proteome_path": "data/qc_proteomes/F979620.faa",
+      "source_proteome_sha256": "5af38e7e9d12d9905d6477bb3020ecf95bc0f5d20251a2db81f79d86dc26afe9",
+      "decision_sha256": "6651b517abe9e4643cd4032256fc208b2a8df107e6ae49231e1bda62660a482e"
+    },
+    {
+      "taxon_id": "F979690",
+      "source_proteome_path": "data/qc_proteomes/F979690.faa",
+      "source_proteome_sha256": "d36611f4da3f05951a3cfdfd7ec5b1c0e64d0c97319f74d2bb29446b8f846d5f",
+      "decision_sha256": "a55559a4fbfa27faa82bdf13ce8485a93b989c8cf4fafd623c5252b821065ec7"
+    },
+    {
+      "taxon_id": "F979761",
+      "source_proteome_path": "data/qc_proteomes/F979761.faa",
+      "source_proteome_sha256": "33a2a5d82293dd3b6281fab823a1c1c197f46c188eb63ee17ff4abc092ee095c",
+      "decision_sha256": "8e5d0816f4c5cf0724f69f11513cc72afdeb3a07bb66aaa832e129526bfb3c6b"
+    },
+    {
+      "taxon_id": "F984962",
+      "source_proteome_path": "data/qc_proteomes/F984962.faa",
+      "source_proteome_sha256": "b020459dd22e5fa040861b1bebd48ae7d91902343e19b8dbb35a57a7967458f0",
+      "decision_sha256": "e2a95ca7c18687f23bc467bdcc54343faa8d5549191461c7716c0cf3dc371d2f"
+    },
+    {
+      "taxon_id": "F994334",
+      "source_proteome_path": "data/qc_proteomes/F994334.faa",
+      "source_proteome_sha256": "abba5628e979621385e825e2514110a3052dce7900841fff89d3ada9583e8141",
+      "decision_sha256": "2e310a355e3abc7f29d91e0d102ad364d76e4cbd86f53ad664129d733fb106a3"
+    },
+    {
+      "taxon_id": "O133409",
+      "source_proteome_path": "data/qc_proteomes/O133409.faa",
+      "source_proteome_sha256": "639fbb5c88f80af60a896c79ffedaf8c4db61cddc5bc37ce095d5f8b6a4640fb",
+      "decision_sha256": "49e17e78af6aaea5929ccb455f7385f87fa0b119f03311a5a5c8573ce100ee21"
+    },
+    {
+      "taxon_id": "O1890364",
+      "source_proteome_path": "data/qc_proteomes/O1890364.faa",
+      "source_proteome_sha256": "f5bab1cab88beefc59cca148f7a91da790906a98aa8b259f0c7dae034cf7d015",
+      "decision_sha256": "8a83a17a12989c5b37a7ad38829ee4134fff4bf3235922f2345a67a8ac4e6b32"
+    },
+    {
+      "taxon_id": "O192875",
+      "source_proteome_path": "data/qc_proteomes/O192875.faa",
+      "source_proteome_sha256": "785e318d3e863b2e6edf8e0ba256c7c33e85cf010f0e5e5deb2ec449c0a234fc",
+      "decision_sha256": "76a5673de7beeb6bdef3202f630f4e65271d16405913c6ee1f4969d03657927e"
+    },
+    {
+      "taxon_id": "O225164",
+      "source_proteome_path": "data/qc_proteomes/O225164.faa",
+      "source_proteome_sha256": "f0af15a7b07d886a76fdbbcb9b2e846d1205af5c9519b0a29cdf9e69a102a707",
+      "decision_sha256": "6214f16e736b9a143afafc07c93184d805a102613d13f6e08522f3d39a055416"
+    },
+    {
+      "taxon_id": "O2700040",
+      "source_proteome_path": "data/qc_proteomes/O2700040.faa",
+      "source_proteome_sha256": "232a7d3e81d7ac4019ee265d23d1b7eb98ae7961bf46a5e131bdb8567e52b875",
+      "decision_sha256": "0d871ab26cf8a6ef3aa09236e48662de83753139b68868428c89aa46c18eccdc"
+    },
+    {
+      "taxon_id": "O27923",
+      "source_proteome_path": "data/qc_proteomes/O27923.faa",
+      "source_proteome_sha256": "dbb3898be57658eefb7aeea17d4846b1f7939a62d466ebe38ee2add03dadfc0a",
+      "decision_sha256": "a5d853d461a92b39e30d6abb1414b59aa8adc72cf26dcba937a11696042850c0"
+    },
+    {
+      "taxon_id": "O283909",
+      "source_proteome_path": "data/qc_proteomes/O283909.faa",
+      "source_proteome_sha256": "729b1508b19c0d53d1e0d9e95b8c3daa8d217903afad466cd115164bdc6d6c1a",
+      "decision_sha256": "4ad56dc74bbdd721b52a30dd635e843f2a93849656171ab0becebd9454b23727"
+    },
+    {
+      "taxon_id": "O400682",
+      "source_proteome_path": "data/qc_proteomes/O400682.faa",
+      "source_proteome_sha256": "70dea03679a3dd38d9e126d0e97b3f90d6951512fa8a98fa63f8320cd3730f67",
+      "decision_sha256": "642981b6050bfc123019fb4294dae95094cd3314c481c795f090bbcd7248acee"
+    },
+    {
+      "taxon_id": "O44689",
+      "source_proteome_path": "data/qc_proteomes/O44689.faa",
+      "source_proteome_sha256": "bac5d48e15c7fb19e7f920ecfe641645ddf61a4c516b42283ff54c6b13e99fd7",
+      "decision_sha256": "b2c19c7c0a1f67cc4132ba7a23c3d584c0bc99caea558ed38ee3d6c61f5e6baf"
+    },
+    {
+      "taxon_id": "O45351",
+      "source_proteome_path": "data/qc_proteomes/O45351.faa",
+      "source_proteome_sha256": "2747d12df49a8e8aab2c1a93e134f5eae3385ab3525393001a8783b024342061",
+      "decision_sha256": "5f7929301f0514070d32f41031059675e5a02328fd6f2eaa0be4285b7b723094"
+    },
+    {
+      "taxon_id": "O5755",
+      "source_proteome_path": "data/qc_proteomes/O5755.faa",
+      "source_proteome_sha256": "5b9ab964abb4e04b17accdabdb8bf22e93838af257e1d15729462c69beb36ed9",
+      "decision_sha256": "9b81640b8332b3dae1d2fbc213b18f271a6c8eb8d4185c93d8581271d5127297"
+    },
+    {
+      "taxon_id": "O5786",
+      "source_proteome_path": "data/qc_proteomes/O5786.faa",
+      "source_proteome_sha256": "f15c710023ce56c069d522fd2e33f489baf10ad55f777ec074e414dc78c97366",
+      "decision_sha256": "a2d7a7a9ee32a3d67697f170de9518196dfe339affe48d02a964a72ce44335b7"
+    },
+    {
+      "taxon_id": "O6239",
+      "source_proteome_path": "data/qc_proteomes/O6239.faa",
+      "source_proteome_sha256": "5e49d5a8266b34d70d997f752706109077fa6a944d7251ba4a71dae38f22087c",
+      "decision_sha256": "c3c5ae0eeb039b8c07f3b6d2553c5589350e20cc61592c19311f7fec353adc09"
+    },
+    {
+      "taxon_id": "O691883",
+      "source_proteome_path": "data/qc_proteomes/O691883.faa",
+      "source_proteome_sha256": "5b545b7cab2fe1b83d1fb154a0f6dccb6a16c81d5ec5dad2119540c10f0e9469",
+      "decision_sha256": "589f7fcf7705551329ac0d23f8418d9ebb6bc58145092f72432504217e33a647"
+    },
+    {
+      "taxon_id": "O72019",
+      "source_proteome_path": "data/qc_proteomes/O72019.faa",
+      "source_proteome_sha256": "08ea5487d55dcf851e36419be7b1fc4d541ab35ebb58f1febcace2f7ed6c9858",
+      "decision_sha256": "057448c13436fa7fc32e7f25e06fdf9f0c94d9144486bd7333368b8c0191fcce"
+    },
+    {
+      "taxon_id": "O7227",
+      "source_proteome_path": "data/qc_proteomes/O7227.faa",
+      "source_proteome_sha256": "d2710bfdbc0d3d8c98a79ecfff61207966cb13def20649e736f061d03d56adda",
+      "decision_sha256": "6ceebcbe88550329d77fadbd6759a88d15c2bb55e88352bb4fcdf1a9d72f2ed6"
+    },
+    {
+      "taxon_id": "O81824",
+      "source_proteome_path": "data/qc_proteomes/O81824.faa",
+      "source_proteome_sha256": "afd92a61e0fe1456684497a83a363a9ec20aa992c634f681102af1d462b6a6be",
+      "decision_sha256": "4ab353d8e2e19495abfe70d020587d2ad975c421b54321b9ca44bd74bf8907b4"
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "source_proteome_path": "data/qc_proteomes/OFS1403592.faa",
+      "source_proteome_sha256": "897fc13d130dfb87ce2022579f200554631f9a4ae5e78bab682772bd5ac3e57a",
+      "decision_sha256": "0d66b8e5944a06617bc6b51c2c866a1c36e158ce99e96a8ab3392304f9b4c511"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "source_proteome_path": "data/qc_proteomes/OFS5426494.faa",
+      "source_proteome_sha256": "a1dfba36aeabdaef6ce221d230811c343d85da4933a0f1f6211d107f7d8715f2",
+      "decision_sha256": "7651f733572b9e8e2f0041c20a865fd7e0b7ad1ae22b5193dd864add0fd0391d"
+    }
+  ],
+  "interpretation": "Complete original protein strings compared without alignment, truncation or collapsing loci. Identical proteins from distinct annotated genes are compatible with biological copies, redundant haplotypes or annotation/assembly redundancy; this assay cannot distinguish those causes. Nonidentical sequences are not proven paralogs. All 526 taxa retained in summary; zero duplicated calls is not evidence against other genome duplication.",
+  "artifacts": {
+    "protein_pairs.tsv": "de87ac64f409a2be91ae5f14215943a1e80b7c54030f509f2c1ee2786dcc37c1",
+    "taxon_redundancy.tsv": "7832d49315e294e4ad871637664b0504223bf002ece913464dad5089e123db65",
+    "marker_redundancy.tsv": "8fcbe519c0eb3b50540358cfe86678176e96bfd98a6e46d85d7eaf19558d6ffe"
+  }
+}

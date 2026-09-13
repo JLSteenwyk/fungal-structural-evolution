@@ -92,3 +92,6 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 
 - `native_coordinate_regression_receipt.json`, `native_pae_regression_receipt.json`, and `staged_native_regression_receipt.json`: complete historical-snapshot regression of staged coordinate and PAE validation, with exact agreement of every final array and model summary. These receipts do not prove expanded production completion.
 - `expanded_coordinate_audit_resource_plan.json`: prelaunch single-worker envelope for 13,153-model coordinate/partner reconstruction while PAE acquisition proceeds; downstream confidence remains a separate gate.
+
+- `duplicate_marker_sequence_receipt.json` and `duplicate_marker_taxon_redundancy.tsv`: complete exact-string comparison of all pairs within duplicated raw BUSCO calls, retaining every taxon and distinct locus identity. Pair counts are not independent events.
+- `identical_copy_location_receipt.json` and `identical_copy_locations.tsv`: annotation positions for every identical-protein pair assigned to distinct genes. Intervals are 1-based inclusive; `interval_basis` separates gene features from Creolimax CDS bounding spans. Different assembly sequence names are not inferred chromosomes or proof of haplotigs. Overlap, gap and strand fields are blank where comparison is inapplicable, not zero.

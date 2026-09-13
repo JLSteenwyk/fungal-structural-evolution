@@ -32,3 +32,27 @@ python -m unittest discover -s tests -p test_busco_gene_copies.py
 ```
 
 Four focused tests distinguish isoforms from separate loci, preserve provisional-ORF uncertainty, retain the original BUSCO status when a representative excludes its hit, and reject repeated hit identifiers. `metadata/busco_gene_copy_summary.tsv` retains all taxa; `metadata/busco_gene_copy_review.tsv` contains the 2,305 duplicated calls and four representative exclusions. Full per-marker results and artifact hashes are recorded under `results/qc/busco-gene-copies-v1` and `metadata/busco_gene_copy_audit_receipt.json`. This audit does not replace representative-proteome BUSCO reruns, assembly/contamination assessment, orthology or gene-tree reconciliation.
+
+## Exact sequence redundancy and annotation locations
+
+Completed comparison of all **3,189 unordered protein pairs** within the **2,305 duplicated BUSCO calls**. These calls occur in 328 taxa; the summary retains all 526 taxa, including those without duplicated calls. Every source proteome checksum was verified against both QC and representative-selection provenance, and every requested protein identifier was recovered exactly once. Complete strings were compared without alignment or truncation.
+
+There are 645 pairs assigned to one annotated gene, 2,538 assigned to distinct annotated genes and six with unresolved gene relationships. Of 390 pairs with identical complete protein sequences, **238** link to distinct annotated genes, spanning **229 marker calls in 75 taxa**. Protein pairs within a multi-copy family are not independent duplication events. All annotated copies remain separate, including identical sequences.
+
+For Amoeboaphelidium protococcarum F1243177, only six of 123 distinct-gene protein pairs have identical complete sequences, across six markers; five of its 119 duplicated markers contain only one distinct full sequence. Thus, neither annotated isoforms nor exact protein duplicates explain most of its broad duplicated-marker signal. Divergence among the other copies, assembly redundancy, biological copy number and gene-tree placement remain to be assessed.
+
+The location audit resolves all 238 identical distinct-gene pairs: **208** occur on different assembly sequences and **30** occupy disjoint intervals on the same sequence. None has overlapping or unresolved intervals in this audit. Separate assembly sequences need not be separate chromosomes and do not establish redundant haplotypes. Disjoint intervals do not by themselves establish biological duplication. Appropriate follow-up includes flanking-sequence similarity, assembly/read-depth evidence and family-tree reconciliation; no copy was removed or relabeled as an artifact.
+
+Coordinates are 1-based inclusive. For 237 pairs, intervals come from exact annotated gene features. One Creolimax pair uses bounding spans of CDS records grouped by their exact `gene_id`, because its source gene-feature labels differ from the CDS identifiers used in the established gene mapping. This different interval definition is explicit in the table. Multi-sequence CDS groups are not merged into fictitious intervals. Two focused source-format tests passed, and all output hashes, count partitions and identity/length consistency checks passed independent readback.
+
+```bash
+python scripts/audit_duplicate_marker_sequences.py \
+  --copies results/qc/busco-gene-copies-v1 \
+  --output results/qc/duplicate-marker-sequences-v1
+python scripts/audit_identical_copy_locations.py \
+  --sequences results/qc/duplicate-marker-sequences-v1 \
+  --output results/qc/identical-copy-locations-v1
+python -m unittest discover -s tests -p test_copy_location_sources.py
+```
+
+Versioned records: `metadata/duplicate_marker_sequence_receipt.json`, `metadata/duplicate_marker_taxon_redundancy.tsv`, `metadata/identical_copy_location_receipt.json` and `metadata/identical_copy_locations.tsv`. Complete pair/marker tables remain under the recorded result directories. These audits describe sequence identity and annotation positions, not confirmed homology classes, evolutionary rates or duplication events.

@@ -1,0 +1,398 @@
+{
+  "status": "complete_identical_copy_annotation_location_audit",
+  "pairs": 238,
+  "taxa": 75,
+  "location_counts": {
+    "different_assembly_sequences": 208,
+    "same_sequence_disjoint_intervals": 30
+  },
+  "interval_basis_counts": {
+    "annotated_gene_feature": 237,
+    "CDS_bounding_span": 1
+  },
+  "sequence_audit_receipt_sha256": "908b1cc841e753949222f81e3127fb9c7582c491ff85c9e7166f162640e30dbd",
+  "mapping_snapshot_sha256": "c18108908e15d365120db7adc33bab3642199bdb74d0d18cc2785bcfecfed954",
+  "representative_receipt_sha256": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+  "script_sha256": "a9037e7771c1b76dc75a1a6de7533440ab363b8255e25834a4ecd6505c70c5c6",
+  "sources": [
+    {
+      "taxon_id": "F101098",
+      "annotation_path": "data/annotations/GCF_025024155.1_genomic.gff.gz",
+      "annotation_sha256": "1e7c0e45bdc577b043c39e664710ec5c5301be8365cefcdb6fd7be0be11d6bd6"
+    },
+    {
+      "taxon_id": "F109899",
+      "annotation_path": "data/annotations/GCA_000827415.1_genomic.gff.gz",
+      "annotation_sha256": "b0854817944754854b8aebabc35c5100ee063e799a7c4fc24bf9d459c726c8a8"
+    },
+    {
+      "taxon_id": "F1130053",
+      "annotation_path": "data/annotations/GCA_026023565.1_genomic.gff.gz",
+      "annotation_sha256": "c4c27b54c0c4be574f37ddac535adbd1c78ea904b9b91691d4356254b558ae9d"
+    },
+    {
+      "taxon_id": "F113071",
+      "annotation_path": "data/annotations/GCA_015039355.1_genomic.gff.gz",
+      "annotation_sha256": "05038d43fea9980a964e4953ae55dcd6a8ff467a1f644e2e213c7ba57991c19d"
+    },
+    {
+      "taxon_id": "F1213189",
+      "annotation_path": "data/annotations/GCA_001969505.1_genomic.gff.gz",
+      "annotation_sha256": "22eab8836edf5fe6ff06974f36dbb3f3cf86e12c95c7742ca6eb93234427fed4"
+    },
+    {
+      "taxon_id": "F1243177",
+      "annotation_path": "data/annotations/GCA_023515745.1_genomic.gff.gz",
+      "annotation_sha256": "d7031c7d05b43ec8ff6a6f0a00113e64c93b9566f8015618ad685cea6c952579"
+    },
+    {
+      "taxon_id": "F1246581",
+      "annotation_path": "data/annotations/GCA_002794465.1_genomic.gff.gz",
+      "annotation_sha256": "cf2ad9a7d0dcac093f8e9cda18ab29ef9aaef2cdee44bd8870fb21d901e91c12"
+    },
+    {
+      "taxon_id": "F1323573",
+      "annotation_path": "data/annotations/GCA_051356775.1_genomic.gff.gz",
+      "annotation_sha256": "6f3c19a6e6bbb786c5eb4f0e98a88bf911bf42e5c450763daaed1e7d5521f6ee"
+    },
+    {
+      "taxon_id": "F133377",
+      "annotation_path": "data/annotations/GCA_003097675.1_genomic.gff.gz",
+      "annotation_sha256": "6118b32659f86928952f9cb7540b1cf16ec30a308e56a6a1c1f685f807246f96"
+    },
+    {
+      "taxon_id": "F1419009",
+      "annotation_path": "data/annotations/GCA_020884735.1_genomic.gff.gz",
+      "annotation_sha256": "0c5540320978a278dcf9e35f58b91d588ea2fcb27cc42c82deb579da403f4b0e"
+    },
+    {
+      "taxon_id": "F1500003",
+      "annotation_path": "data/annotations/GCA_025602915.1_genomic.gff.gz",
+      "annotation_sha256": "0b050bb62c84da2474c77f0440241cbd3bad4ccba450f4883fa1995e406e8f1d"
+    },
+    {
+      "taxon_id": "F1507870",
+      "annotation_path": "data/annotations/GCA_002077065.1_genomic.gff.gz",
+      "annotation_sha256": "cfbd3210509ecdb0e5b3757ed7af512ac0df174bbd4f5aa6e26970168b3f7c9e"
+    },
+    {
+      "taxon_id": "F1673888",
+      "annotation_path": "data/annotations/GCA_003144235.1_genomic.gff.gz",
+      "annotation_sha256": "4cb9d0581b12a0c73c1d33bc267c275e328e814012a5ac5330c0fedc3db5c5d2"
+    },
+    {
+      "taxon_id": "F170000",
+      "annotation_path": "data/annotations/GCA_025201825.1_genomic.gff.gz",
+      "annotation_sha256": "48abcf077ef07f55ef9491a96e9c7df9aa5f06a1898e88037d92f44a5fe84120"
+    },
+    {
+      "taxon_id": "F170446",
+      "annotation_path": "data/annotations/GCA_016906575.1_genomic.gff.gz",
+      "annotation_sha256": "bcebdb4c4413fa00cf4bf16e40351a943ae5deb041b16719cb401819b6dbf7a7"
+    },
+    {
+      "taxon_id": "F1712513",
+      "annotation_path": "data/annotations/GCA_003614755.1_genomic.gff.gz",
+      "annotation_sha256": "6ca3af4c794ef79ecc9c1f8e327de1049cdb28e7a7044e37d0f5556bf770dd16"
+    },
+    {
+      "taxon_id": "F174680",
+      "annotation_path": "data/annotations/GCA_052576065.1_genomic.gff.gz",
+      "annotation_sha256": "20277419114b3f8a98f01cea644a7c8910dcb1512a34ee3b7b34e6b2b8c74039"
+    },
+    {
+      "taxon_id": "F174688",
+      "annotation_path": "data/annotations/GCA_052575965.1_genomic.gff.gz",
+      "annotation_sha256": "2b25d9720d85d9d182c46f075ef1c33925cbbad72ba45c5ea2a61c12ce118686"
+    },
+    {
+      "taxon_id": "F1750568",
+      "annotation_path": "data/annotations/GCF_015039405.1_genomic.gff.gz",
+      "annotation_sha256": "c2251ede42dbce95670fc6e603b9671e4f6b65a7aa3ce4b577dc36bc76cfe287"
+    },
+    {
+      "taxon_id": "F1754190",
+      "annotation_path": "data/annotations/GCA_002104975.1_genomic.gff.gz",
+      "annotation_sha256": "8022b8a26cab0c1ebfe7877cc9b8ab824ec5b1523b52edeead823bf391e40f69"
+    },
+    {
+      "taxon_id": "F1754192",
+      "annotation_path": "data/annotations/GCA_002104895.1_genomic.gff.gz",
+      "annotation_sha256": "bce1b48115eb4b102a30b0c9c029619e989420a6ccbe71ccbe6f9ce224f6fcdb"
+    },
+    {
+      "taxon_id": "F1759441",
+      "annotation_path": "data/annotations/GCA_001630335.1_genomic.gff.gz",
+      "annotation_sha256": "b5ad351aa8796be4dd4eaa6eeade6d85b24ae20634b81a5444495061c074428f"
+    },
+    {
+      "taxon_id": "F1851187",
+      "annotation_path": "data/annotations/GCA_025786725.1_genomic.gff.gz",
+      "annotation_sha256": "aad751dda9da422ca204880fa7c5383f4d69f8e2704fa121fbda6187e354035a"
+    },
+    {
+      "taxon_id": "F1912939",
+      "annotation_path": "data/annotations/GCF_016647785.1_genomic.gff.gz",
+      "annotation_sha256": "03bebcf9357ae0c003e2841c376391119a19e1c28dab14c0cc5d52ceecc9ca35"
+    },
+    {
+      "taxon_id": "F1938712",
+      "annotation_path": "data/annotations/GCA_021432655.1_genomic.gff.gz",
+      "annotation_sha256": "04455aa289cfa1d595f535f4fede1a09b04339769aaca526cd40a4a4dd382537"
+    },
+    {
+      "taxon_id": "F203533",
+      "annotation_path": "data/annotations/GCA_058224955.1_genomic.gff.gz",
+      "annotation_sha256": "a165ddc4afd09476be134ef7746542ff78be53538c7905ac14a56b4c097c238e"
+    },
+    {
+      "taxon_id": "F241526",
+      "annotation_path": "data/annotations/GCA_019359905.1_genomic.gff.gz",
+      "annotation_sha256": "4d7ab611cd725d0d36e26f658e25a60d89a522cac6a850653ae80a38c7bd9a57"
+    },
+    {
+      "taxon_id": "F27292",
+      "annotation_path": "data/annotations/GCA_011022315.1_genomic.gff.gz",
+      "annotation_sha256": "40a114566b86f8331cb240d4e18211fb62a6321de128993b96b2fe5b99f53c37"
+    },
+    {
+      "taxon_id": "F2748771",
+      "annotation_path": "data/annotations/GCA_014898675.1_genomic.gff.gz",
+      "annotation_sha256": "801bd13eb104591681a605efca1b68416cc858e4fb2ec4c0f51a4b9a71f682e9"
+    },
+    {
+      "taxon_id": "F2767002",
+      "annotation_path": "data/annotations/GCA_016946835.1_genomic.gff.gz",
+      "annotation_sha256": "936df4aaf53b932e9341f7eff2cb7c092bb5ff806ee81c29fbe42c53c2db336d"
+    },
+    {
+      "taxon_id": "F28583",
+      "annotation_path": "data/annotations/GCA_000151295.1_genomic.gff.gz",
+      "annotation_sha256": "3b7293e3a0c5b521d298ec9a59bf8b34233f2788fc6fdb3d64fe02f4c65243aa"
+    },
+    {
+      "taxon_id": "F304332",
+      "annotation_path": "data/annotations/GCA_025201865.1_genomic.gff.gz",
+      "annotation_sha256": "b5fdbbee05d9bb5759f8e3bf75551af508f8f2dad16500603bcbcf99b0d1c3a2"
+    },
+    {
+      "taxon_id": "F3108450",
+      "annotation_path": "data/annotations/GCA_050613775.1_genomic.gff.gz",
+      "annotation_sha256": "3cf014948a2ece5221a5bbbeb2194b2639d2d6db94716199f810c9ee0e834c91"
+    },
+    {
+      "taxon_id": "F318763",
+      "annotation_path": "data/annotations/GCA_026027315.1_genomic.gff.gz",
+      "annotation_sha256": "16cedb1ba5d19e6c742aead6d1a5e02b6de2cdcf68a87a83b5422a84a2e3b6d8"
+    },
+    {
+      "taxon_id": "F34349",
+      "annotation_path": "data/annotations/GCF_000708205.1_genomic.gff.gz",
+      "annotation_sha256": "1623528b690d9fe1b736da710b529f81fbfcc1599eff87d5deb178cb6f60a7f5"
+    },
+    {
+      "taxon_id": "F34480",
+      "annotation_path": "data/annotations/GCA_040143965.1_genomic.gff.gz",
+      "annotation_sha256": "b9f6eab764b7421733e800b8676824371e5a208d07323574e9da9026a3810ea2"
+    },
+    {
+      "taxon_id": "F34485",
+      "annotation_path": "data/annotations/GCA_014839935.2_genomic.gff.gz",
+      "annotation_sha256": "6c913312c068297265c214a7f0a834986686d96787191b1482f52868894e4552"
+    },
+    {
+      "taxon_id": "F378194",
+      "annotation_path": "data/annotations/GCF_022376455.1_genomic.gff.gz",
+      "annotation_sha256": "6c5fd4dbd3bbd76241d85f14df0453448e26c372668159dd557017bf57c39d9d"
+    },
+    {
+      "taxon_id": "F41956",
+      "annotation_path": "data/annotations/GCA_054369615.1_genomic.gff.gz",
+      "annotation_sha256": "9e970c10dfa6976674d523e28f571c6faa047fbe8e851532f7c1a26d42b6569f"
+    },
+    {
+      "taxon_id": "F423460",
+      "annotation_path": "data/annotations/GCA_002104905.1_genomic.gff.gz",
+      "annotation_sha256": "0e822af821d553e67c1a472e8b91c8e201e4c1a5798c524e78842abff9f38515"
+    },
+    {
+      "taxon_id": "F42374",
+      "annotation_path": "data/annotations/GCF_000026945.1_genomic.gff.gz",
+      "annotation_sha256": "79e9bf6532d7b451fe2535dbc3bd3bc2cf743af7f84079ff3431ebd2b02c2eaa"
+    },
+    {
+      "taxon_id": "F43433",
+      "annotation_path": "data/annotations/GCF_024521635.1_genomic.gff.gz",
+      "annotation_sha256": "e277b96969ed72d5aa6b07fecfcdbeaf3a67b9c34632f1dc8937d71a86776999"
+    },
+    {
+      "taxon_id": "F43959",
+      "annotation_path": "data/annotations/GCF_037102585.1_genomic.gff.gz",
+      "annotation_sha256": "c9f2ba5d434b180ae3432ce72901e29cd2a75d0f161a133e64179c44592701d5"
+    },
+    {
+      "taxon_id": "F4808",
+      "annotation_path": "data/annotations/GCA_025594325.1_genomic.gff.gz",
+      "annotation_sha256": "e2271e8463b8ece61519acd4f47315000f4fa8b13626686d9b08575cb2a9efc1"
+    },
+    {
+      "taxon_id": "F4837",
+      "annotation_path": "data/annotations/GCF_001638985.1_genomic.gff.gz",
+      "annotation_sha256": "cb74ff2857fd3d6d25dae2b477ee4e2f45876cd01246e0bd45b0b26586e9757d"
+    },
+    {
+      "taxon_id": "F48565",
+      "annotation_path": "data/annotations/GCA_011800875.2_genomic.gff.gz",
+      "annotation_sha256": "2047ea7ac9c0c0e11abcab13742a57f1b9d557eb92e0323616f79bf0c433bb78"
+    },
+    {
+      "taxon_id": "F48586",
+      "annotation_path": "data/annotations/GCF_016647625.1_genomic.gff.gz",
+      "annotation_sha256": "78f96ed2a563218f8fa34f54678846c2c9fd17493234f556812cfd50569c0332"
+    },
+    {
+      "taxon_id": "F48587",
+      "annotation_path": "data/annotations/GCF_016647635.1_genomic.gff.gz",
+      "annotation_sha256": "0ef6c5841cd8c9007a5573421f88e37ccce61c5e0e1def4c5b4558bba232e9cd"
+    },
+    {
+      "taxon_id": "F4896",
+      "annotation_path": "data/annotations/GCF_000002945.2_genomic.gff.gz",
+      "annotation_sha256": "5f66945cc8b9c25a3e50d3945f5931f22c669f51b230b52ce0dfa60e5ee05892"
+    },
+    {
+      "taxon_id": "F4903",
+      "annotation_path": "data/annotations/GCF_001661405.1_genomic.gff.gz",
+      "annotation_sha256": "c666e93b8890783fe7447d4795f619ff24882c313e6e9dd4dd8305883c6ccd4b"
+    },
+    {
+      "taxon_id": "F4927",
+      "annotation_path": "data/annotations/GCF_001661255.1_genomic.gff.gz",
+      "annotation_sha256": "0c636473a171386ff54746d4f420a2e1cc3348fb3f2ecc3b7482cd28202e8f99"
+    },
+    {
+      "taxon_id": "F5219",
+      "annotation_path": "data/annotations/GCA_001632375.1_genomic.gff.gz",
+      "annotation_sha256": "e7eec094542fa57388120e5bdf55cd30382a8a832346bcd6b4e50776eb6d9a51"
+    },
+    {
+      "taxon_id": "F5476",
+      "annotation_path": "data/annotations/GCF_000182965.3_genomic.gff.gz",
+      "annotation_sha256": "34778e72507ab4a4c7423924f6e8e4e8406ba1839c61de71dba6412876d39797"
+    },
+    {
+      "taxon_id": "F5479",
+      "annotation_path": "data/annotations/GCA_050495715.1_genomic.gff.gz",
+      "annotation_sha256": "d796935bc984e09a7cec2e7a0ef93a5d9ecfe6243a6202004fd681813f9a648c"
+    },
+    {
+      "taxon_id": "F5482",
+      "annotation_path": "data/annotations/GCF_000006335.3_genomic.gff.gz",
+      "annotation_sha256": "41798c0e1ba309ed84230e22eb33ee6efbf8cfce587bc25d4e771ba03fab984b"
+    },
+    {
+      "taxon_id": "F5486",
+      "annotation_path": "data/annotations/GCA_003327735.1_genomic.gff.gz",
+      "annotation_sha256": "a0b0074441ad724111fc31d824e6cfc8701e6da11267868c151ba1c26d7d8a1a"
+    },
+    {
+      "taxon_id": "F58291",
+      "annotation_path": "data/annotations/GCF_002708625.1_genomic.gff.gz",
+      "annotation_sha256": "2f47cb2bcacda73efc55baf54901a48effb2f072b831048c7b23d2d2409c9b47"
+    },
+    {
+      "taxon_id": "F61397",
+      "annotation_path": "data/annotations/GCF_025024165.1_genomic.gff.gz",
+      "annotation_sha256": "15ca2a80f6b9ca0d0992bd37e760bbfa0a83b205bcaa3b90a1d0a1faa425b3ea"
+    },
+    {
+      "taxon_id": "F61424",
+      "annotation_path": "data/annotations/GCA_003086725.1_genomic.gff.gz",
+      "annotation_sha256": "52258bed41e13de7a37112bdba08e30795561fee586aa38c38c061d987162205"
+    },
+    {
+      "taxon_id": "F64505",
+      "annotation_path": "data/annotations/GCA_027604645.1_genomic.gff.gz",
+      "annotation_sha256": "f71a001dd6a53ba34bb379a84378fca1856ed8cf99bbbeca09ffaee38223ddee"
+    },
+    {
+      "taxon_id": "F655981",
+      "annotation_path": "data/annotations/GCF_001641265.1_genomic.gff.gz",
+      "annotation_sha256": "8bb2e59ab6b68b938779469c698f63c629347c1233abbf612a85a9e22b39aa09"
+    },
+    {
+      "taxon_id": "F68786",
+      "annotation_path": "data/annotations/GCA_000827215.1_genomic.gff.gz",
+      "annotation_sha256": "cb6dde24b4e064b3ad76944c1b0346e3134c9f6660b7bc0a47b98f420bb29d26"
+    },
+    {
+      "taxon_id": "F708070",
+      "annotation_path": "data/annotations/GCF_035048745.1_genomic.gff.gz",
+      "annotation_sha256": "e5ee1b1e3ea94f7fe7ec9f460ebfa011f33dce8448420171dae5692ae0962969"
+    },
+    {
+      "taxon_id": "F71933",
+      "annotation_path": "data/annotations/GCA_015039365.1_genomic.gff.gz",
+      "annotation_sha256": "89c1d3fe8fe41fcc925772a5dd1b127b6fbaf1f18a0c9a5dc801d687e6989225"
+    },
+    {
+      "taxon_id": "F78915",
+      "annotation_path": "data/annotations/GCA_003614735.1_genomic.gff.gz",
+      "annotation_sha256": "1ebaa0aecb79bd298a549e7e10fd63d64f3cf170875ebd6bc57cde1e7c01cac0"
+    },
+    {
+      "taxon_id": "F78921",
+      "annotation_path": "data/annotations/GCA_027575765.1_genomic.gff.gz",
+      "annotation_sha256": "c110d04f83e1ee869e7a171eb1daaf7aa89b0aa8d8ccbffe6824b91106776243"
+    },
+    {
+      "taxon_id": "F796604",
+      "annotation_path": "data/annotations/GCA_900120095.1_genomic.gff.gz",
+      "annotation_sha256": "32e538b8c6360b74263e828e954eeece5d62a21a9bdd58ce1793aee5dbb88120"
+    },
+    {
+      "taxon_id": "F84753",
+      "annotation_path": "data/annotations/GCF_000747765.1_genomic.gff.gz",
+      "annotation_sha256": "5801690ac73f5db47cd20481ab953cc96738811f4a200f10e73d4488b82baf7d"
+    },
+    {
+      "taxon_id": "F984962",
+      "annotation_path": "data/annotations/GCF_000320585.1_genomic.gff.gz",
+      "annotation_sha256": "7d4a12ade4e62b297a52f590e29fb2434a43a8e2d3304095df4c01bbd3fa211d"
+    },
+    {
+      "taxon_id": "O1890364",
+      "annotation_path": "data/annotations/GCA_003024175.1_genomic.gff.gz",
+      "annotation_sha256": "c07db875e72118d8d032bc8c3df3a4f3fd0ba9c8d61c8ad67d972869aa1edff1"
+    },
+    {
+      "taxon_id": "O400682",
+      "annotation_path": "data/annotations/GCF_000090795.2_genomic.gff.gz",
+      "annotation_sha256": "fe9b3cbd2e3d2e0b5314670c2d6853aa45dc386108bb7bcfa827731c5758ee21"
+    },
+    {
+      "taxon_id": "O44689",
+      "annotation_path": "data/annotations/GCF_000004695.1_genomic.gff.gz",
+      "annotation_sha256": "78c1919a0a4d13841e676c2634ba8ee2a77e08a38e63fd27e81f3bf3c9a19b98"
+    },
+    {
+      "taxon_id": "O45351",
+      "annotation_path": "data/annotations/GCF_932526225.1_genomic.gff.gz",
+      "annotation_sha256": "50216b595a9c4ca0bc243c365fe7bfc214bb166c9d762e94d15e30bb83467d54"
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "annotation_path": "data/external/1403592/Creolimax_fragrantissima.gtf.gz",
+      "annotation_sha256": "9071dd4e83ef06d3e4a2f1bbaf3d2624dd75f0023d5ecefed66c3e5d20e73b70"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "annotation_path": "data/external/5426494/Nk52_long.annot.gff",
+      "annotation_sha256": "e90de169cc608147eebf4abe9e42ac3f19a448cc66b7f67474f7fa2ffd10ec8f"
+    }
+  ],
+  "interpretation": "Coordinates are 1-based inclusive annotation intervals. Assembly sequence identifiers need not represent separate chromosomes. Creolimax uses exact CDS gene_id bounding spans because its gene-feature names differ. Different assembly sequences do not prove haplotigs, and disjoint or overlapping gene intervals do not alone establish biological duplication or annotation error. No copies are removed.",
+  "artifacts": {
+    "identical_copy_locations.tsv": "761cb4fe5906ac62a31954510ebcae1db6ca22bd7b7618cb75018e485b1dd3fc"
+  }
+}
