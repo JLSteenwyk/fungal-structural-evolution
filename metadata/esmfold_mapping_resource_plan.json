@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_local_esmfold_marker_mapping",
+  "models": 5121,
+  "full_design_taxa": 526,
+  "full_design_markers": 125,
+  "workers": 1,
+  "planning_memory_gb": 4,
+  "planning_output_gb": 1,
+  "planning_runtime_hours": [
+    0.05,
+    2
+  ],
+  "free_disk_bytes": 12527930118144,
+  "inventory_receipt_sha256": "5728418918b8f92546a08faf5cea0af065ef44d137e6b7294a261555275f423d",
+  "basis": "Reuse verified full profile alignments and matrix columns, linking only exact complete sequences within local ESMFold v1. Parse 5121 converted CIF files, preserve all original taxon/marker identities. No prediction or inference in this stage.",
+  "cost": "Existing authorized host CPU only; no new charges"
+}

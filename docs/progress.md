@@ -521,3 +521,12 @@ Launched the 4,252 eligible follow-on missing-model predictions on the newly
 free GPU 0 after confirming disjoint inputs and no existing AF cache matches.
 The first prediction completed. Original prediction, local mmCIF conversion,
 phylogenetic and expanded paired branch-fitting jobs continue.
+
+## ESMFold conversion completed and marker mapping launched
+
+All 5,121 converted models passed inventory and per-file checksum readback,
+following exact-field conversion roundtrips. Started the local ESMFold-only
+mapping against the full profile-alignment/matrix source design. Mapping,
+local PAE binding and native feature qualification must finish before counting
+new confidence-qualified coverage. The 124-marker GDM branch batch, full
+phylogenetic searches and both missing-model GPU queues continue.

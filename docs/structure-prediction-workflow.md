@@ -202,3 +202,29 @@ completion guarantees. Fresh cache/device observations, source hashes and run
 configuration are recorded in `metadata/followon_prediction_launch_*`. The 3,547
 long/noncanonical input entries remain explicitly deferred by this configuration.
 No paid resources were provisioned.
+
+## All 5,121 mmCIF conversions completed; local mapping started
+
+Conversion finished for every audited model. Independent readback verified the
+completed inventory/provenance hashes, unique model IDs and every converted CIF
+checksum. The producer's per-model roundtrip preserved all exported atom fields
+and canonical sequences. The completion receipt is versioned as
+`metadata/esmfold_conversion_receipt.json`.
+
+Started the exact-sequence local ESMFold mapping across the full 526-taxon,
+125-marker source design:
+
+```bash
+python scripts/map_marker_structures.py \
+  --inventory results/structural_inventory/esmfold-partial-v1/inventory.jsonl \
+  --provider local --tool 'ESMFold v1' \
+  --output results/structural_markers/esmfold-partial-v1
+```
+
+The mapping process is live; its log is `logs/esmfold_marker_mapping_v1.log`.
+This uses the same verified profile alignments and retained matrix columns as
+the separate GDM mapping, with provider-specific model selection and retained
+sequence/taxon identities. Mapping counts and improved paired coverage are not
+yet claimed. Once the mapping completes, export its local PAE and extract/audit
+native features before preparing paired sequence/3Di inputs. The existing
+resource plan uses one CPU worker, 4 GB memory and 1 GB output headroom.
