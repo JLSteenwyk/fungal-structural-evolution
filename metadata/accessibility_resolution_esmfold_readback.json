@@ -1,0 +1,16 @@
+{
+  "status": "passed_all_selected_accessibility_resolution_outputs",
+  "assessment_receipt_sha256": "8f3526d9579c9e0e927390665eb038886830feaf805ab1c41a18d5334f6d6600",
+  "snapshot_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+  "script_sha256": "394f59d0291cd74b86acff30e6af5177bf8ed2ff3a1015d9f26f9bf6cf942819",
+  "models": 6,
+  "residues": 1234,
+  "median_absolute_residue_difference_A2": 0.3203928724071048,
+  "p95_absolute_residue_difference_A2": 1.1371346566220195,
+  "maximum_absolute_residue_difference_A2": 2.431296226071794,
+  "zero_nonzero_disagreements": 3,
+  "interpretation": "All selected input identities, output hashes/grids/sequences and reported resolution summaries independently checked. Zero/nonzero area sensitivity is a numerical diagnostic, not core/surface biological truth. Higher resolution is not exact ground truth; selected models do not prove full-dataset convergence.",
+  "artifacts": {
+    "resolution_sensitivity.tsv": "7a0477e6dbafa4b7ae134c3fe86b242dabf2f7f5d2e792981a54427f24295b31"
+  }
+}

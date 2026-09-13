@@ -80,3 +80,25 @@ launch duplicates. Their results will quantify sampling-resolution sensitivity
 on these selected proteins, not prove convergence or biological validity across
 the full atlas. Production annotation and evolutionary integration remain
 incomplete.
+
+
+## Completed local resolution assessment
+
+The six predetermined ESMFold models (1,234 residues) completed at both sphere
+resolutions. All selected-model identities, pinned files, per-residue sequence
+and index grids, area totals and reported numerical summaries passed an
+independent readback. Across these residues, absolute differences between 960
+and 3,840 points have median 0.320 Å², 95th percentile 1.137 Å² and maximum
+2.431 Å². These are residue-weighted descriptive differences in six selected
+proteins, not bounds on the entire local dataset or on structural prediction
+error.
+
+Three residues switch between exactly zero and nonzero area across the two
+resolutions. This supports retaining continuous area and avoiding an unqualified
+zero-area definition of a biological core. The higher-resolution calculation is
+still approximate. The AlphaFold assessment, including longer proteins, remains
+running; its results must be considered separately.
+
+```bash
+python scripts/audit_accessibility_resolution.py --assessment results/structural_annotations/accessibility-resolution-esmfold-v1 --snapshot results/structural_markers/esmfold-partial-v1 --output results/structural_annotations/accessibility-resolution-esmfold-audit-v1
+```

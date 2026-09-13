@@ -1041,3 +1041,16 @@ The previous turn initiated full frozen AlphaFold accessibility; this turn adds
 the second prediction source and numerical sensitivity. All stages remain
 partial until their completion receipts and subsequent audits pass. The full
 project goal remains active.
+
+
+### Local solvent-accessibility resolution assessment completed
+
+Completed and independently audited both sampling resolutions for six ESMFold
+models and all 1,234 residues. Median absolute per-residue area difference is
+0.320 Å², 95th percentile 1.137 Å², maximum 2.431 Å²; three residues switch
+between exactly zero and nonzero area. These findings constrain categorical
+burial interpretation without claiming biological accuracy or full-dataset
+convergence. AlphaFold resolution sensitivity and both production annotation
+runs continue. The previous turn launched local annotation and both sensitivity
+runs; this turn finishes and validates the local sensitivity result. The full
+research objective remains active and incomplete.
