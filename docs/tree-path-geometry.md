@@ -97,3 +97,30 @@ python scripts/summarize_pairwise_geometry.py \
 Use new output directories for deliberate reruns; existing snapshots are
 immutable. Full tables remain outside Git; source hashes, audit receipts and the
 small threshold summary are versioned under `metadata/`.
+
+
+## Geometry on the paired inference sites
+
+`prepare_paired_site_geometry.py` separates direct geometry preparation from
+completed tree fitting and resampling. It checks the paired-input, structure
+mapping and PAE receipts; uses the exact jointly observed AA/3Di columns; and
+requires at least 50 shared sites covering at least half of each taxon's observed
+sites. These input sites already pass six-residue pLDDT 70 and context PAE 10.
+For the local-distance summary, both directions of pairwise PAE must additionally
+be at most 10 in both models. These two PAE filters answer different questions.
+
+The full local snapshot has 72 eligible markers and up to 266,593 taxon pairs.
+The resource plan allows one CPU/BLAS thread, 16 GB RAM, 2 GB output and 1–12 hours
+on the existing host. Per-marker coordinate/PAE caches are released between
+markers. The extracted geometry workflow is checked against every shared field
+in the prior 52-marker benchmark before the expanded run. This precomputation
+produces no tree-path estimates or confidence intervals; those joins require
+completed and audited model fits and joint branch resampling.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/prepare_paired_site_geometry.py \
+  --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --pae results/structural_pae/esmfold-partial-v1 \
+  --output results/structural_comparisons/paired-site-esmfold-v1
+```

@@ -1,0 +1,19 @@
+{
+  "status": "prelaunch_full_local_paired_site_geometry",
+  "ready_markers": 72,
+  "maximum_taxon_pairs": 266593,
+  "maximum_alignment_columns": 422,
+  "workers": 1,
+  "blas_threads": 1,
+  "planning_memory_gb": 16,
+  "planning_output_gb": 2,
+  "planning_runtime_hours": [
+    1,
+    12
+  ],
+  "free_disk_bytes": 12507726921728,
+  "input_receipt_sha256": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+  "script_sha256": "3dd4aaf7e49813d18b8bc89345b74a1597ec62effe3f51a07d6f7ad779a66a49",
+  "basis": "Previous exhaustive local geometry completed 306673 pairs at three focal thresholds. This pass uses at most one matched-site geometry plus directional pairwise PAE filtering per eligible paired-input taxon pair, with per-marker model/PAE cache release. Conservative planning envelope; no new paid resources.",
+  "cost": "Existing authorized CPU host"
+}

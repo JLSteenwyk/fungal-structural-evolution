@@ -718,3 +718,21 @@ and 20 GB output headroom. Both GPUs are confirmed occupied by existing batches;
 no additional device or paid resource was provisioned. The preceding turn made
 progress by freezing these inputs; this turn validates completed geometry and
 makes the queue's resource requirements concrete. The full goal remains active.
+
+
+### Direct geometry on paired inference sites launched
+
+Extracted direct coordinate/PAE calculations from the tree-path benchmark so the
+full 72-marker local dataset can be prepared while supported tree fits continue.
+All shared fields matched the prior 52-marker benchmark: 722 accepted pairs and
+eight coverage exclusions. This regression verifies the refactor's behavior, not
+an independent validation of its shared geometry implementation.
+
+Launched the full local paired-site pass (up to 266,593 pairs) on one existing CPU
+thread after recording memory, storage and runtime estimates. Exact paired AA/3Di
+observations determine matched residues; the local metric additionally requires
+both directional pairwise PAE values <=10 in each model. Input/coordinate/PAE
+hashes are checked. The expanded calculation is running and has no completion
+receipt yet; tree-path joins, joint uncertainty and biological inference remain
+outstanding. The prior goal turn validated the broad local geometry baseline;
+this turn advances comparability to the actual phylogenetic character sets.
