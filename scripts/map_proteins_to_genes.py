@@ -4,6 +4,7 @@ import csv
 import gzip
 import hashlib
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import unquote
@@ -23,11 +24,12 @@ def attributes(text):
     return result
 
 
-def parse_gff(path):
+def parse_gff(path, transcript_ids=False):
     parents = defaultdict(set)
     genes, proteins = set(), defaultdict(set)
     partial = set()
-    with gzip.open(path, 'rt') as handle:
+    opener = gzip.open if path.suffix == '.gz' else open
+    with opener(path, 'rt') as handle:
         for line in handle:
             if line.startswith('##FASTA'):
                 break
@@ -35,6 +37,8 @@ def parse_gff(path):
                 continue
             fields = line.rstrip('\n').split('\t')
             attrs = attributes(fields[8])
+            if transcript_ids and fields[2] not in ('gene', 'pseudogene', 'mRNA', 'transcript'):
+                continue
             ids = attrs.get('ID', [])
             if len(ids) != 1:
                 if fields[2] in ('gene', 'pseudogene', 'CDS'):
@@ -44,6 +48,8 @@ def parse_gff(path):
             parents[ident].update(attrs.get('Parent', []))
             if fields[2] in ('gene', 'pseudogene'):
                 genes.add(ident)
+            if transcript_ids and fields[2] in ('mRNA', 'transcript'):
+                proteins[ident].add(ident)
             if fields[2] == 'CDS':
                 for protein in attrs.get('protein_id', []):
                     proteins[protein].add(ident)
@@ -65,6 +71,22 @@ def parse_gff(path):
     return mapping, partial
 
 
+def parse_creolimax_gtf(path):
+    mapping = defaultdict(set)
+    with gzip.open(path, 'rt') as handle:
+        for line in handle:
+            if line.startswith('#') or not line.strip():
+                continue
+            fields = line.rstrip('\n').split('\t')
+            if fields[2] != 'CDS':
+                continue
+            attrs = dict(re.findall(r'(\w+) "([^\"]*)"', fields[8]))
+            if not attrs.get('gene_id') or not attrs.get('transcript_id'):
+                raise ValueError('CDS lacks gene/transcript ID')
+            mapping[attrs['transcript_id']].add(attrs['gene_id'])
+    return dict(mapping), set()
+
+
 def main():
     with (ROOT / 'metadata/analysis_manifest.tsv').open() as handle:
         taxa = {row['taxon_id'] for row in csv.DictReader(handle, delimiter='\t')}
@@ -77,6 +99,15 @@ def main():
             continue  # A concurrent writer may be appending the final line.
         if record['status'] == 'validated' and record['taxon_id'] in taxa:
             annotations[record['taxon_id']] = record
+    external = {r['path']: r for r in json.loads((ROOT / 'metadata/external_genome_receipts.json').read_text())}
+    for article, basename in [('5426470', 'Clim_long.annot.gff'), ('5426494', 'Nk52_long.annot.gff'),
+                              ('5426506', 'Pgem_long.annot.gff'), ('5426458', 'Awhi_long.annot.gff'),
+                              ('1403592', 'Creolimax_fragrantissima.gtf.gz')]:
+        name = 'OFS' + article
+        path = f'data/external/{article}/{basename}'
+        if name in taxa:
+            annotations[name] = dict(external[path], taxon_id=name,
+                                     mapping_mode='creolimax_gtf' if article == '1403592' else 'transcript_gff')
     folder = ROOT / 'results/gene_mapping'
     folder.mkdir(parents=True, exist_ok=True)
     summaries = []
@@ -86,7 +117,8 @@ def main():
         for path, expected in [(gff, annotation['sha256']), (source, inputs[name]['sha256'])]:
             if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise ValueError(f'Changed source: {path}')
-        mapping, partial = parse_gff(gff)
+        mode = annotation.get('mapping_mode', 'ncbi_protein_gff')
+        mapping, partial = parse_creolimax_gtf(gff) if mode == 'creolimax_gtf' else parse_gff(gff, mode == 'transcript_gff')
         rows, counts = [], Counter()
         with source.open() as handle:
             for record in SeqIO.parse(handle, 'fasta'):
@@ -106,6 +138,7 @@ def main():
         summaries.append({'taxon_id': name, 'proteins': len(rows), **dict(counts),
                           'uniquely_mapped_genes': len(gene_counts),
                           'genes_with_multiple_proteins': sum(n > 1 for n in gene_counts.values()),
+                          'mapping_mode': mode,
                           'gff_sha256': annotation['sha256'], 'proteome_sha256': inputs[name]['sha256'],
                           'mapping_path': str(target.relative_to(ROOT)),
                           'mapping_sha256': hashlib.sha256(target.read_bytes()).hexdigest()})

@@ -8,6 +8,9 @@ from pathlib import Path
 spec = importlib.util.spec_from_file_location('mapping', Path(__file__).resolve().parents[1] / 'scripts/map_proteins_to_genes.py')
 mapping = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mapping)
+rep_spec = importlib.util.spec_from_file_location('representatives', Path(__file__).resolve().parents[1] / 'scripts/select_gene_representatives.py')
+representatives = importlib.util.module_from_spec(rep_spec)
+rep_spec.loader.exec_module(representatives)
 
 
 class GeneMapping(unittest.TestCase):
@@ -30,6 +33,29 @@ class GeneMapping(unittest.TestCase):
 
     def test_escaped_delimiters(self):
         self.assertEqual(mapping.attributes('ID=a%2Cb;Parent=x,y'), {'ID': ['a,b'], 'Parent': ['x', 'y']})
+
+    def test_representatives_preserve_separate_and_unresolved_loci(self):
+        import json
+        rows = [{'protein_id': pid, 'gene_ids_json': json.dumps(genes), 'status': status, 'protein_length': length}
+                for pid, genes, status, length in [
+                    ('b', ['g1'], 'unique_gene', 100), ('a', ['g1'], 'unique_gene', 100),
+                    ('c', ['g1'], 'unique_gene', 90), ('d', ['g2'], 'unique_gene', 100),
+                    ('e', [], 'unmapped', 100), ('f', ['g1', 'g2'], 'multiple_genes', 100)]]
+        selected, decisions = representatives.choose(rows)
+        self.assertEqual(selected, {'a', 'd', 'e', 'f'})
+        self.assertEqual(decisions['e'], 'retained_unresolved_gene')
+
+    def test_published_transcript_accessions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'x.gff'
+            path.write_text('ctg\ttest\tgene\t1\t10\t.\t+\t.\tID=g\n'
+                            'ctg\ttest\tmRNA\t1\t10\t.\t+\t.\tID=t;Parent=g\n'
+                            'ctg\ttest\tCDS\t1\t10\t.\t+\t0\tParent=t\n')
+            self.assertEqual(mapping.parse_gff(path, transcript_ids=True)[0], {'t': {'g'}})
+            gtf = Path(tmp) / 'x.gtf.gz'
+            with gzip.open(gtf, 'wt') as out:
+                out.write('ctg\ttest\tCDS\t1\t10\t.\t+\t0\tgene_id "g"; transcript_id "t";\n')
+            self.assertEqual(mapping.parse_creolimax_gtf(gtf)[0], {'t': {'g'}})
 
     def test_parent_cycles_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
