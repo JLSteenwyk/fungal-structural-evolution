@@ -2023,3 +2023,12 @@ a planning range. A pinned full-audit controller is queued. Combined accessibili
 integration, independent projected-row verification and controlled surface/core
 evolutionary analyses remain pending. Predicted isolated-chain exposure is not
 experimental accessibility or evidence of a binding interface.
+
+
+Added reusable full projected-accessibility readback and started it on the
+expanded AF cohort (4,148,852 observed paired cells). It checks each emitted row
+against original ASA tables, model provenance, source residue mapping and paired
+AA/3Di FASTAs, with exact values and complete observed-cell accounting. This
+closes the previously recorded raw-projection verification gap when it passes;
+it does not recompute ASA or establish experimental exposure. Execution remains
+pending. Follow-on audit/projection and ecology ASA acquisition continue.
