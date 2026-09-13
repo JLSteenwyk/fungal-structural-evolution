@@ -1657,3 +1657,17 @@ will be checked from all four raw diagnostic reports rather than trusting the
 selected-fit summary. Full optimization and its queued audit/comparison remain
 live; execution of the optimized readback remains pending. No biological
 rate conclusion or project completion is claimed.
+
+
+### Full 513–768-residue marker queue prepared and checked
+
+Prepared all 5,512 canonical sequences in this length band from the original
+and follow-on candidate queues, preserving 5,549 taxon/marker links across
+279 taxa and 108 markers. Updated exact-sequence reuse found two available
+models, leaving 5,510 candidates. Full sequence/link/reuse and resource-scenario
+readback passed. Frozen timing observations yield explicitly extrapolated
+41.82–66.70 GPU-hour inference scenarios and a 100.05-hour scheduling allowance.
+No longer-protein prediction was launched or queued yet. Existing GPU jobs,
+full FreeRate optimization and its queued audit remain live. Larger deferred
+proteins, broader structural coverage and the full research goal remain
+incomplete.

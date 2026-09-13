@@ -1,0 +1,46 @@
+{
+  "status": "extrapolated_planning_scenarios_not_measured_long_protein_performance",
+  "observed_receipts": 2408,
+  "observed_length_range": [
+    385,
+    512
+  ],
+  "target_length_range": [
+    513,
+    768
+  ],
+  "pending_sequences": 5510,
+  "scenarios": [
+    {
+      "length_exponent": 2,
+      "observed_percentile": 50,
+      "seconds_per_length_power": 7.135631803424351e-05,
+      "projected_inference_gpu_hours": 41.81725123761684
+    },
+    {
+      "length_exponent": 2,
+      "observed_percentile": 90,
+      "seconds_per_length_power": 7.641514534792726e-05,
+      "projected_inference_gpu_hours": 44.781897656768
+    },
+    {
+      "length_exponent": 3,
+      "observed_percentile": 50,
+      "seconds_per_length_power": 1.6299153801143148e-07,
+      "projected_inference_gpu_hours": 60.333129806721516
+    },
+    {
+      "length_exponent": 3,
+      "observed_percentile": 90,
+      "seconds_per_length_power": 1.801957181985153e-07,
+      "projected_inference_gpu_hours": 66.70144836552151
+    }
+  ],
+  "planning_hours_with_50percent_overhead": 100.05217254828227,
+  "quadratic_total_allocated_memory_extrapolation_bytes": 37860208927.859886,
+  "planned_gpu_count": 1,
+  "planned_cpu_threads": 4,
+  "planned_output_gb": 100,
+  "execution": "Not launched or queued. Use a separate output configuration and wait for authorized GPU availability. Preserve the existing stop-on-OOM behavior. Recheck exact-sequence reuse before launch.",
+  "limitations": "Quadratic/cubic timing and quadratic total-memory scaling are explicit scenarios, not validated complexity bounds or runtime/confidence intervals. Runtime, allocator overhead and fragmentation can differ beyond 512 residues. Timing receipts are observations, not an independent structure-quality audit. No extrapolation above 768 residues or to the full proteome atlas."
+}

@@ -366,3 +366,46 @@ Upstream control encoding stages reuse `convert_esmfold_snapshot.py`,
 `extract_structural_alphabet.py`, `audit_3di_features.py` and
 `qualify_native_pae.py` with the corresponding `esmfold-controls-v1` paths.
 Their completed provenance receipts and prelaunch resource plan are versioned.
+
+
+### Longer marker queue: 513–768 residues
+
+Prepared the complete canonical 513–768-residue band from the disjoint original
+and follow-on marker candidate queues. It contains 5,512 sequences linked to
+5,549 taxon/marker records across 279 taxa and 108 markers. A new frozen
+exact-sequence reuse check found two sequences with verified available models,
+leaving 5,510 prediction candidates. Complete protein sequences are retained.
+The source inventory also records 7,883 canonical proteins above 768 residues
+and 110 noncanonical proteins; this band does not resolve those gaps or the
+full-proteome atlas.
+
+Reproduce preparation with:
+
+```bash
+python scripts/prepare_long_marker_predictions.py \
+  --inputs data/prediction_inputs/markers-v1 data/prediction_inputs/markers-followon-v1 \
+  --predictions results/predictions/esmfold-marker-v1 results/predictions/esmfold-followon-v1 \
+  --output data/prediction_inputs/markers-513-768-v1
+```
+
+The current run freezes 2,408 timing/memory receipts for proteins of 385–512
+residues. Scaling runtime by length squared or cubed, using median and 90th
+percentile normalized observed times, gives 41.82–66.70 inference GPU-hours.
+The scheduling allowance is 100.05 hours (1.5 times the largest scenario).
+Quadratic scaling of total allocated GPU memory gives 37.86 GB at 768 residues.
+These are extrapolated scenarios, not measurements, complexity bounds or
+confidence intervals. Allocator overhead, fragmentation and longer-sequence
+behavior remain unmeasured. Plan one existing GPU, four CPU threads and 100 GB
+output space. Predictions require a distinct configuration/output directory,
+rechecked reuse and available GPU capacity, retaining the producer's OOM stop.
+No longer-protein execution or controller was launched in this step.
+
+Full readback verified every candidate sequence, the selected grid and all
+5,549 source links within their originating candidate queue; available model
+hashes; every resource observation; and all scenario calculations. An initial
+readback expectation mistakenly counted all-marker records outside their
+originating candidate queue; correcting that expectation removed duplicate
+follow-on provenance without changing production inputs. Receipts and resource
+plans are tracked in `metadata/long_marker_queue_receipt_v1.json`,
+`metadata/long_marker_queue_readback_v1.json` and
+`metadata/long_marker_resource_plan_v1.json`.

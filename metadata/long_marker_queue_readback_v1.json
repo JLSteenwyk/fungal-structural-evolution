@@ -1,0 +1,10 @@
+{
+  "status": "passed_long_marker_queue_readback",
+  "source_receipt_sha256": "bc9970261e7b0db535a7eaecffc75821e85613270e46a8573914196855e9c2ae",
+  "selected_sequences": 5512,
+  "pending_sequences": 5510,
+  "links": 5549,
+  "resource_observations": 2408,
+  "scope": "All candidate sequences exactly match source records; selected grid, full marker-link multiset within each originating candidate queue, reuse artifact hashes, all resource observation fields and all timing/memory scenario calculations checked. Estimates remain extrapolations; no prediction execution.",
+  "readback_correction": "Initial link expectation included all-marker records outside each source candidate queue and double-counted follow-on provenance; scoped to the originating candidate queue before comparing, with no production change."
+}
