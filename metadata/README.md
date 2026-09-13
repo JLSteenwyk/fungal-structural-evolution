@@ -21,3 +21,7 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `outgroup_assembly_candidates.tsv`: targeted name-based discovery from NCBI protozoan catalogs; requires taxonomic and annotation review and is not the final outgroup sample. Rebuild with `python scripts/inventory_outgroup_sources.py` after restoring sources.
 
 `proteome_availability.tsv`: generated when the resumable `scripts/check_proteome_availability.py` run completes. HEAD response and check time only; no claim that FASTA content or completeness was validated. Raw checkpoint records are ignored data, keyed by URL; malformed historical URLs are not used for corrected candidate URLs.
+
+`fungal_sampling_draft.tsv` and its summary describe 500 unique fungal species selected for full-scale QC, not the final frozen sample. The main sampling_manifest remains unpopulated until review. Selection is reproducible from config/sampling.json, with unknown ecology retained explicitly.
+
+`proteome_download_receipts.json`: completed download/QC records (can be partial during execution), publisher MD5, SHA256, source URL, local path and protein statistics. `proteome_qc_snapshot.json`: aggregate of those records, not a liveness indicator. Download via `python scripts/download_proteomes.py`; derive progress via `python scripts/summarize_downloads.py`. FASTA validity is not biological completeness.
