@@ -2162,3 +2162,14 @@ Ready cases comprise 1,613 standard-code and 99 code-12 groups; 14 ready TFIIB
 cases retain copy-reconciliation caveats. Curated-hybrid exclusions affect
 14 memberships. Group-specific phylogenetic/divergence inference remains next;
 no selection eligibility or positive-selection finding is claimed.
+
+
+Launched all 1,655 information-screened within-genus nucleotide tree searches
+with GTR+F+G4, 1,000 SH-aLRT and 1,000 UFB replicates plus bootstrap NNI;
+retain bootstrap trees. Four one-thread/2 GB workers run on the existing host.
+The complete 1,712-row information screen reproduces byte for byte; 57 cases
+remain explicit information exclusions for this workflow. A timestamped running
+observation records 287 completed case receipts. Full tree/report/support audit,
+codon divergence and selection eligibility review remain pending. Both ESMFold
+GPU queues were confirmed active. See docs/coding-sequence-workflow.md and
+metadata/genus_codon_tree_* for configurations, resources and progress provenance.

@@ -1,0 +1,24 @@
+{
+  "status": "prelaunch_genus_codon_tree_diagnostics",
+  "cases_screened": 1712,
+  "ready_cases": 1655,
+  "excluded_cases": 57,
+  "workers": 4,
+  "threads_per_job": 1,
+  "memory_per_job_gb": 2,
+  "output_allowance_gb": 10,
+  "planning_hours": [
+    1,
+    96
+  ],
+  "model": "GTR+F+G4",
+  "sh_alrt": 1000,
+  "ultrafast_bootstrap": 1000,
+  "bootstrap_nni": true,
+  "input_receipt_sha256": "e513c9ab7a4e3b422d5721e72b7927d01a3473736e2b8724c7c8a7da00678eb5",
+  "information_table_sha256": "d2c74c96b2ed08febce6a7306cb3fa60295fabf38af7d9ff2b904dc1efd07970",
+  "eligibility": "At least four distinct aligned nucleotide sequences and one parsimony-informative nucleotide column among the previously prepared cases. Diagnostic workflow scope, not a proof of phylogenetic information sufficiency or selection eligibility. Exclusions retained for future topology-constrained analysis.",
+  "scope": "All eligible within-genus/code nucleotide alignments, preserving invariant sites and original codon masks. Codon models and synonymous divergence follow separately. No species-tree or selection claim.",
+  "cost": "Existing authorized local CPU host; no new charges",
+  "free_disk_bytes": 12484249571328
+}

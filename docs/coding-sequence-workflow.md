@@ -361,3 +361,47 @@ Next stages are group-specific phylogenies and codon-model divergence diagnostic
 with alignment, gene-copy, recombination and genetic-code review. A genus label
 does not establish monophyly; tree availability or a coverage pass does not prove
 absence of synonymous saturation or validate a selection claim.
+
+
+## Supported within-genus nucleotide trees
+
+The reproducible information screen retains 1,655 of the 1,712 prepared groups
+for supported tree searches: at least four distinct aligned nucleotide strings
+and one parsimony-informative nucleotide column (at least two canonical states
+observed twice each). Missing states are ignored when counting informative
+columns, but retained in aligned strings. This is a workflow screen, not proof
+of phylogenetic adequacy. The other 57 cases remain recorded for possible
+analyses with externally justified topologies.
+
+All 1,655 searches are running with IQ-TREE 3.0.1, unpartitioned GTR+F+G4 DNA,
+1,000 SH-aLRT and 1,000 ultrafast bootstrap replicates with bootstrap NNI;
+bootstrap trees are retained. Four concurrent workers use one CPU and a 2 GB
+memory allowance each. Resource planning reserves 10 GB output and 1–96 hours
+on the existing host; this range is not a measured completion bound. Case seeds,
+alignments, executable, scripts and configuration are checksum-pinned. The
+runner preserves genetic-code and gene-copy caveats for later codon models.
+Execution checks exact tip sets and finite nonnegative edges; independent full
+report/model/support audit and codon divergence diagnostics remain pending.
+
+The information table was regenerated and matched byte for byte across all
+1,712 cases. At the timestamp recorded in
+`metadata/genus_codon_tree_execution_observation.json`, 287 cases had execution
+receipts; this is a running observation, not full completion.
+
+```bash
+python scripts/screen_genus_codon_tree_information.py \
+  --inputs results/cds/genus-codon-diagnostic-inputs-v1 \
+  --output /tmp/genus_codon_tree_information.tsv
+# Compare the regenerated screen to metadata/genus_codon_tree_information.tsv.
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_genus_codon_trees.py \
+  --inputs results/cds/genus-codon-diagnostic-inputs-v1 \
+  --readback metadata/genus_codon_diagnostic_readback.json \
+  --information metadata/genus_codon_tree_information.tsv \
+  --resources metadata/genus_codon_tree_resource_plan.json \
+  --output results/phylogeny/genus-codon-trees-v1
+```
+
+Do not start a second instance while this queue is active. Completed cases can
+be reused only with matching configuration and artifact hashes. These unrooted,
+within-genus/code trees do not establish genus monophyly, orthology, species-tree
+relationships, absence of synonymous saturation, or selection eligibility.
