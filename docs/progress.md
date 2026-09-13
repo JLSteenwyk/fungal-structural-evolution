@@ -1905,3 +1905,13 @@ memory deferrals (controller session 96562 exit zero). Automatic full artifact
 audit launched as PID 3807224 under snapshot-controller session 55711, with
 explicit ecology marker links; conversion is queued next. No ecological
 association or transition replication has been established by this acquisition.
+
+
+Ecology artifact audit and conversion completed for all 675 models
+(snapshot-controller session 55711 exit zero), with 696 curated marker links
+across 18 taxa/81 markers before confidence qualification. Full converted-file
+hash checks passed. The full marker panel yields 704 exact-sequence links;
+the eight additional links and complete expected grid are retained in versioned
+metadata. Launched direct residue mapping (session 37925) after conversion
+completed; no queued mapping controller exists. Final link/residue readback and
+native confidence qualification remain pending.

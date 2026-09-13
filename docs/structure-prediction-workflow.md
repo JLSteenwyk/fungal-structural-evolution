@@ -755,3 +755,26 @@ Versioned completion/configuration records:
 `metadata/esmfold_ecology_full_prediction_chunk.json`,
 `metadata/esmfold_ecology_full_prediction_config.json`, and
 `metadata/esmfold_ecology_full_audit_launch.json`.
+
+
+The ecology full artifact audit and conversion subsequently completed
+(snapshot-controller session 55711 exit zero): 675 models, 696 originating
+marker links, 18 taxa and 81 represented markers before confidence filtering.
+All converted coordinate hashes matched their inventory records. These counts
+are not final native-confidence-qualified marker coverage.
+
+The full marker panel contains 704 exact-sequence links for these 675 models,
+eight more than the curated prediction-input links. The complete expected grid
+is frozen in `metadata/esmfold_ecology_expected_global_marker_links.tsv` and will
+be checked after mapping; extra links retain their original taxon identities.
+Conversion finished before a queued-mapping configuration was created, so no
+mapping controller was launched. Mapping started directly under session 37925
+after completed receipt and coordinate-file checks. Allowances: one CPU, 8 GiB
+memory, 5 GiB output and 0.1–4 planning hours, recorded in
+`metadata/esmfold_ecology_mapping_resource_plan.json`.
+
+Mapping, independent residue readback, native confidence qualification and
+same-method ecological coverage assessment remain pending. Versioned receipts:
+`metadata/esmfold_ecology_full_audit_receipt.json`,
+`metadata/esmfold_ecology_full_conversion_receipt.json`, and
+`metadata/esmfold_ecology_snapshot_handoff_receipt.json`.

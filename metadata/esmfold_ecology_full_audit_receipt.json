@@ -1,0 +1,40 @@
+{
+  "status": "complete_artifact_readback",
+  "predictions": 675,
+  "partial_prediction_snapshot": false,
+  "taxon_marker_links": 696,
+  "taxa": 18,
+  "markers": 81,
+  "links_path": "data/prediction_inputs/ecology-markers-v1/ecology_marker_links.tsv",
+  "links_sha256": "711748757c3b11d46703d817df461e6737af062e4392b1d0fd9d71ead5758b3e",
+  "config_sha256": "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7",
+  "chunk_receipt_sha256": "c6e0b7b4396a92be9ade35dea77778e392de98d89345ee2373b78b26b3ed617d",
+  "script_sha256": "3982ef255f6973a0b5689e4dc908209499d017c0452cc14ba120960d48007836",
+  "remaining_eligible": 0,
+  "length_or_alphabet_deferred": 0,
+  "interpretation": "Short-protein production chunk; verified serialization and confidence provenance, not experimental accuracy or completed structural atlas.",
+  "artifacts": {
+    "taxon_links.tsv": "3ed32268dfc4337edd8871516f3a1e0aaf0f820dcb06480bcd324cb7fe0270ce",
+    "predictions.tsv": "23974c48f7febeb2b561b6ca56d4791c3dbf7dba3a9c5dea8fa1e512064848c7"
+  },
+  "length": {
+    "min": 86,
+    "median": 311.0,
+    "max": 512
+  },
+  "inference_seconds": {
+    "min": 0.9045093411114067,
+    "median": 5.428825733950362,
+    "max": 18.52931787003763
+  },
+  "peak_gpu_allocated_bytes": {
+    "min": 8501989888,
+    "median": 9142486528.0,
+    "max": 10306565120
+  },
+  "mean_ca_plddt": {
+    "min": 42.42110824584961,
+    "median": 85.5784683227539,
+    "max": 96.39930725097656
+  }
+}
