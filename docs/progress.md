@@ -358,3 +358,9 @@ Started the full candidate-family IQ-TREE search with restricted model selection
 Prepared two 92-column matrices with exactly the same 1,040 genes as the combined domain alignment. Independent split readback reproduces every original sequence; per-repeat coverage, identical-sequence counts and site-variation summaries are recorded. One second-repeat column has no canonical residues and remains explicit.
 
 Both repeat-specific supported tree searches entered likelihood/model optimization successfully, with two threads and 4 GB memory per job. Each requests 1,000 SH-aLRT and 1,000 NNI-refined ultrafast-bootstrap replicates. The combined-domain tree remains running. Topology/support concordance and duplication/species-tree reconciliation remain pending; no repeat-history conclusion is claimed.
+
+## Expanded PAE acquisition completed; confidence integration running
+
+All 13,153 catalog models now have verified PAE downloads, with zero failures: 1,779,429,556 compressed bytes and 12,518,772,192 original JSON bytes. The completed manifest hash passes readback. The catalog's models correspond to the expanded final mapping with 13,654 marker links across 322 taxa; these counts describe structural availability, not confidence-qualified phylogenetic coverage.
+
+The dependency-gated controller observed termination of the original prefetch process, checked its full completion receipt and exact catalog/mapping agreement, and started cache revalidation against the final mapping receipt. It will then qualify the completed coordinate encodings using six-residue directional PAE maxima and independently recount per-model joint pLDDT/PAE filters. Configuration, producer hashes and resource estimates are versioned; both directional-context tests pass. Final confidence qualification and expanded paired evolutionary analyses remain pending. The three TFIIB family/repeat tree searches continue.

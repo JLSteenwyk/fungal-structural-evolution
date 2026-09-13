@@ -1,0 +1,21 @@
+{
+  "prefetch_pid": 1255717,
+  "dependency_identity": {
+    "start_ticks": "176824989",
+    "command": "python scripts/retrieve_marker_pae.py --snapshot results/structural_markers/gdm-prefetch-catalog-v1 --output results/structural_pae/gdm-prefetch-v1"
+  },
+  "catalog_receipt_sha256": "b2774df8582936aaa9eb94496e84f787ae2db0f0faa4daf22b22ae33075678f0",
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "coordinate_receipt_sha256": "59bfb6ab8c604c2d3db93d3f7fac36461348e6ace1f0923f363ff1aa7128d172",
+  "producer_scripts": {
+    "verify_marker_catalog_mapping.py": "4f1cd8e2051e2fca012ecc10a06377560fb97de4659e84955e7ad2594ce01f88",
+    "retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "qualify_native_pae.py": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+    "retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "compare_marker_structures.py": "4a3a35879a8e7cf95dbaca06ca012ae1b3a7df9cd0e0c49dd36975d8d8a9bdb0"
+  },
+  "script_sha256": "3ac16530c2e0c531e7b0d0b2f929c85877d85cec327584e76a2401c8463f1a75",
+  "mapping_bound_output": "results/structural_pae/gdm-expanded-v1",
+  "qualified_output": "results/structural_alphabet/audited-gdm-expanded-v1"
+}
