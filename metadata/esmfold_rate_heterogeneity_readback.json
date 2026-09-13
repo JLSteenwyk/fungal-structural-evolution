@@ -1,0 +1,9 @@
+{
+  "status": "passed_full_rate_heterogeneity_readback",
+  "fits": 288,
+  "site_comparisons": 66284,
+  "branch_comparisons": 36488,
+  "optimization_flagged_fits": 7,
+  "comparison_receipt_sha256": "65494737c6b3596c4ea6a0b360ae9065ba96ea674d883bce1596077fab32acc1",
+  "scope": "All paired site values match raw .rate files; every paired branch matches trees using the shared topology helper. All ranks independently recomputed with scipy.stats.spearmanr, median differences with statistics.median; all totals and likelihood changes/flags checked. This does not independently recompute likelihoods, rate posteriors or tree parsing. Seven lower-likelihood FreeRate fits require optimization investigation."
+}

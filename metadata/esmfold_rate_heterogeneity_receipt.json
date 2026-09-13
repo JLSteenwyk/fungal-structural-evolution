@@ -1,0 +1,20 @@
+{
+  "status": "complete_matched_rate_heterogeneity_comparison",
+  "fits": 288,
+  "site_comparisons": 66284,
+  "branch_comparisons": 36488,
+  "source_receipts": {
+    "gamma": "fd45bd8ac0ebd6797ba0a6d85ed84ef893b37bc99bd09f70443ce77988744adb",
+    "gamma_audit": "b7b086be6f01269b20af0f89d07f00fe4af28b989d57ac23bd3b4a5785a92e1b",
+    "free": "cbc22eadfcc76ce032ac1a5c7db7045c91a07a83f83497b2f400a4f98d04cf93",
+    "free_audit": "0cedfcae7ef25daf15757b9854d8dd3c85979611d177d9e73b429c2fddae838c",
+    "inputs": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+  },
+  "script_sha256": "5dae05ae09219c5676b2a26298ab6c5272df58511c0f5e115c93b2a368a261d8",
+  "interpretation": "Conditional matched model sensitivity; average-tie rank correlations without p-values. No model selection, acceleration test or calibrated uncertainty. Site estimates are within-model relative multipliers; category labels are not homologous between models. FreeRate adds flexibility, so likelihood improvement alone does not establish adequacy. Lower likelihoods remain explicit optimization diagnostics.",
+  "artifacts": {
+    "branches.tsv": "4a34f1b5fb65afa3219673d00287a933398f7ce07710899a393c5d7a7ae40730",
+    "fit_summary.tsv": "867687155e47a7b76400947fbdf8eae9aa6552630a360fcffdd54486dc9bd022",
+    "sites.tsv": "3c8278d91b70dc3b21e0df0fbe5f3c44c43c4c3aef1047514f36456dd1574a8e"
+  }
+}

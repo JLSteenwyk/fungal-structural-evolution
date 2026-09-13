@@ -77,9 +77,9 @@ and exposure remain dependent and conditional on prediction/model choices.
 See [paired-marker model diagnostics](paired-model-adequacy.md) for the completed unfiltered symmetry screen and its substantial limitations in test availability.
 
 
-## Four-category FreeRate sensitivity in progress
+## Four-category FreeRate sensitivity: execution complete
 
-A full 72-marker × four-model FreeRate run is now active at
+The full 72-marker × four-model FreeRate run completed at
 `results/phylogeny/paired-site-rates-freerate-esmfold-v1`. It changes only the
 heterogeneity specification from `+G4` to `+R4` in the original matrix/frequency
 models; all original paired observations, fixed AA topologies and seeds are
@@ -106,8 +106,8 @@ within-fit rank correlations, tree-length totals and likelihood changes. It
 retains lower FreeRate likelihoods as optimization diagnostics. Tied ranks
 were checked against SciPy; constant-vector cases remain unavailable. A negative
 test correctly rejected Gamma output supplied as the FreeRate input before
-creating output. This comparison has not yet been run on the full FreeRate
-results, which remain in progress. Category numbers are not matched across
+creating output. The full comparison and readback are now complete; seven optimization
+diagnostics remain unresolved, as described below. Category numbers are not matched across
 models, and relative site multipliers are not absolute evolutionary rates.
 
 ```bash
@@ -116,3 +116,34 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/estimate_paired_site_rat
 OPENBLAS_NUM_THREADS=1 python scripts/audit_paired_site_rates.py --rates results/phylogeny/paired-site-rates-freerate-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --output results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1
 OPENBLAS_NUM_THREADS=1 python scripts/compare_site_rate_heterogeneity.py --gamma results/phylogeny/paired-site-rates-esmfold-v2 --gamma-audit results/phylogeny/paired-site-rates-audit-esmfold-v2 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --free-audit results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --output results/phylogeny/paired-rate-heterogeneity-esmfold-v1
 ```
+
+
+### Completed comparison and optimization diagnostics
+
+All 288 FreeRate fits completed and passed the full rate-output audit, including
+66,284 rate entries, model/topology identities, category bounds and site-likelihood
+accounting. Warnings are retained for 249 fits. The matched comparison contains
+66,284 site pairs and 36,488 branch pairs. Full readback matched every site value
+to its raw rate export and every branch value to the source trees through the
+shared topology helper. All 576 within-fit rank correlations were separately
+checked with SciPy; median differences, tree totals, likelihoods and flags also
+matched. This does not independently implement likelihoods, posterior weights
+or tree parsing.
+
+| Matrix/frequency specification | Median site-rate rank correlation | Median branch-length rank correlation | FreeRate likelihood lower by >0.1 |
+| --- | ---: | ---: | ---: |
+| AA LG+F | 0.997972 | 0.999486 | 1/72 |
+| 3Di AF | 0.996468 | 0.998500 | 1/72 |
+| 3Di AF+F | 0.995151 | 0.997607 | 3/72 |
+| 3Di LLM | 0.995608 | 0.998677 | 2/72 |
+
+These medians describe all 72 markers equally; high rank agreement does not
+establish equal absolute lengths, stable acceleration conclusions or model
+adequacy. Seven fits have lower FreeRate likelihoods, by 0.1805–17.3648 log
+units. They remain in the output and are listed in
+`metadata/esmfold_freerate_optimization_flags.tsv`. Because the more flexible
+model should be able to represent the Gamma categories, these are optimization
+diagnostics requiring investigation before likelihood-based interpretation.
+No flagged fit was silently replaced or removed. No model selection or
+acceleration test is claimed. Full summaries, receipts and readback are tracked
+under `metadata/esmfold_freerate_*` and `metadata/esmfold_rate_heterogeneity_*`.

@@ -1539,3 +1539,16 @@ field and count readback passed. Unannotated sites remain unknown, and repeated
 profile links are not counted as separate taxon observations or events. This
 prepares focused functional-site case studies while exposing limited annotation
 coverage. FreeRate and other major jobs remain running; the goal is incomplete.
+
+
+### FreeRate comparison completed; seven optimization diagnostics retained
+
+After verified waits, all 288 FreeRate fits completed. The full audit passed
+66,284 rate rows and retained warnings from 249 fits. All 66,284 matched site
+and 36,488 matched branch values passed readback, as did all rank correlations,
+median differences, tree totals and likelihood changes. Median rank agreement
+is high across model specifications, but seven FreeRate fits have lower
+likelihoods than Gamma (largest decrease 17.3648 log units). These remain
+explicit unresolved optimization diagnostics; no likelihood-based selection,
+acceleration or model-adequacy conclusion is made. Other major jobs and the
+full research goal remain incomplete.
