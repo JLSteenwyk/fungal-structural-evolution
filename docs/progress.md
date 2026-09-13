@@ -793,3 +793,16 @@ not inferred structural or taxonomic change. Marker and lineage counts plus
 hash receipts are versioned. The preceding turn launched taxon-sensitive guide
 trees; this turn measures their structural-data coverage consequences. Existing
 tree and geometry jobs remain active, and the research goal is incomplete.
+
+
+### Exact TFIIB input tips annotated for copy-selection review
+
+Joined all 1,040 tips to gene/protein, domain and BUSCO-selection evidence; all
+source domain-count triplets read back successfully. The inputs have 473
+BRF1-detected and 567 undetected entries, with both in 446 taxa. Selected focal
+BUSCO copies include 431 detected and 33 undetected entries; 13 of the latter
+taxa also have an aligned detected candidate. This extends the copy-selection
+review beyond the initial genus example but does not resolve orthology or
+establish domain loss. Combined/repeat trees remain live. The prior turn measured
+identity-policy coverage; this turn prepares exact family annotations needed for
+interpreting a mechanistic case. The full goal remains active and incomplete.

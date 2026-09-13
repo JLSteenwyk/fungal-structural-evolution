@@ -1,0 +1,24 @@
+{
+  "status": "complete_exact_tfiib_input_tip_annotation",
+  "input_receipt_sha256": "79490acb28e3f2fb6785404017e8346f2f9eb4915dbf3cb68e773c9d28ec55aa",
+  "candidate_receipt_sha256": "b651b498e597e066e01a0b5aa1daeb2153fb0e065faa8aa5303874eb655e588b",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "hybrid_config_sha256": "f7f4779e1100d0d42ec16b9d074879011031e8c240fa8308fac7da59ce4cd304",
+  "script_sha256": "19b187e375e4d90200dfe76b730678287d37a059c5c35e658ec5b971eb80dfeb",
+  "tree_input_tips": 1040,
+  "taxa": 512,
+  "class_counts": {
+    "BRF1_detected": 473,
+    "BRF1_not_detected": 567
+  },
+  "taxa_with_both_classes": 446,
+  "selected_focal_class_counts": {
+    "BRF1_detected": 431,
+    "BRF1_not_detected": 33
+  },
+  "interpretation": "Annotations of the exact 1040 input tips, usable for combined and individual-repeat trees. No fitted topology, clade association, functional identity or ancestral duplication is inferred.",
+  "artifacts": {
+    "taxon_class_coverage.tsv": "c06059a35d0cd18d8a3615ea65f662fb43d39c426b9143633f5d5a8e58114e68",
+    "tree_tip_annotations.tsv": "efa188561d0c51785d6be353f97c06f658dc735fe3737132bb1c3f30746b60cb"
+  }
+}
