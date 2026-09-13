@@ -62,3 +62,31 @@ responses remain outside Git. This is a candidate count, not the number of
 matched proteins, independent experiments or validated benchmark structures.
 RCSB entity metadata was verified accessible for the next sequence/construct
 screen; that screen has not yet been executed across these candidates.
+
+
+## Candidate metadata retrieval executing
+
+The complete inventory resolves to 3,592 polymer entities across 1,635 PDB
+entries. `retrieve_experimental_metadata.py` retrieves full entity and parent
+entry records through the [RCSB Data API](https://data.rcsb.org/), preserving
+sequences, construct/organism annotations, accession mappings and entry-level
+experimental/date metadata for subsequent screening. Two workers make 5,227
+requests before retries, with a quarter-second pause after each new successful
+request. The resource plan allows 2 GB RAM/output and 0.2–4 hours.
+
+Each HTTP 200 response must parse and report the exact requested `rcsb_id`.
+Atomic response/receipt writes record URL, retrieval time, configuration and
+SHA256. Restarted retrieval checks cached bytes and identities; a whole-stage
+completion receipt is written only after every requested record succeeds. Raw
+metadata remain outside Git under `data/experimental_structures/metadata-v1`.
+The initial entity responses were verified; the full retrieval is still running.
+
+```bash
+python scripts/retrieve_experimental_metadata.py \
+  --inventory data/experimental_structures/accession-inventory-v1 \
+  --output data/experimental_structures/metadata-v1
+```
+
+This is acquisition, not a sequence-matching or experimental-quality result.
+Deposited polymer sequences and observed atomic residues will be assessed
+separately; a complete deposited sequence may still have missing coordinates.

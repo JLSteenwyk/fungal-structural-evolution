@@ -818,3 +818,14 @@ benchmarks are claimed yet; entity sequence, construct, observed-coordinate,
 quality and training-overlap checks remain. The prior turn annotated TFIIB tree
 inputs; this turn establishes a concrete experimental-reference candidate set
 for the project's prediction/circularity controls. The full goal remains active.
+
+
+### Experimental entity and entry metadata retrieval started
+
+Launched complete retrieval for all 3,592 nominated experimental entities and
+1,635 parent entries, with identity checks, atomic cached responses, hashes and
+explicit resource limits. Initial entity records are arriving and their declared
+identities/sequence fields are present. The full 5,227-response stage remains
+running; exact sequence, construct and experimental-quality results are pending.
+The preceding turn completed candidate nomination; this turn acquires the data
+needed to determine actual reference eligibility. The full goal stays active.

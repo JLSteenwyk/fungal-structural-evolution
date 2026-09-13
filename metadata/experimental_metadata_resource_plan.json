@@ -1,0 +1,16 @@
+{
+  "status": "prelaunch_experimental_metadata_retrieval",
+  "polymer_entities": 3592,
+  "entries": 1635,
+  "http_requests_before_retries": 5227,
+  "workers": 2,
+  "planning_memory_gb": 2,
+  "planning_output_gb": 2,
+  "planning_runtime_hours": [
+    0.2,
+    4
+  ],
+  "basis": "Complete candidate metadata, two public REST request workers with per-worker 0.25-second pause and at most four attempts. Entity API schema/identity inspected on a known entry; no coordinates downloaded in this stage.",
+  "cost": "Public API and existing host; no paid resources",
+  "script_sha256": "0949d5cfff57d900d512b6f5ff76e0a18560bf6e533366aed4d6ff01c2d07da3"
+}
