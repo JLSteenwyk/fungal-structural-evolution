@@ -176,3 +176,33 @@ recheck GPU occupancy and use the same pinned predictor in a separate output
 directory. Exact-sequence geometry and confidence comparisons remain pending.
 Both methods derive structures from sequence; agreement alone cannot resolve
 shared training biases or replace experimental validation.
+
+### Control predictions launched
+
+A fresh device check found GPU 0 idle with 41 MiB used and no compute processes;
+the earlier unrelated workload had ended. Launched all 266 controls on GPU UUID
+`GPU-56e78ad3-b4d7-54f6-38fa-e95729009960`, while missing-model production
+continues on GPU 1. Configuration differs from the existing prediction run
+only in the input receipt and GPU UUID. Both cards have the same hardware model.
+The first four control predictions completed successfully; full completion and
+independent artifact readback remain pending. Current launch resources and
+configuration are pinned in `metadata/predictor_control_launch_resource_plan.json`
+and `metadata/predictor_control_prediction_config.json`.
+
+```bash
+CUDA_VISIBLE_DEVICES=GPU-56e78ad3-b4d7-54f6-38fa-e95729009960 \
+/home/bizon/anaconda3/envs/esmfold2/bin/python scripts/run_marker_predictions.py \
+  --inputs data/prediction_inputs/predictor-controls-v1 \
+  --checkpoint data/prediction_models/esmfold-v1 \
+  --output results/predictions/esmfold-controls-v1 --max-length 512 --limit 266
+```
+
+After the full control chunk completes, run the independent auditor with
+`--predictions results/predictions/esmfold-controls-v1`,
+`--inputs data/prediction_inputs/predictor-controls-v1`,
+`--links data/prediction_inputs/predictor-controls-v1/reference_links.tsv`, and a
+new `--output` directory. The auditor accepts either full sequence IDs or
+sequence hashes, rejects inconsistent identities, and records the link-table
+hash. Three focused tests cover both formats and malformed/conflicting links.
+This adds input compatibility to the existing artifact audit; the tests do not
+establish accuracy of future predictions.

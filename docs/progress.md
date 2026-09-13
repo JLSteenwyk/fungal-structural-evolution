@@ -407,3 +407,15 @@ All 13,153 PAE files now also pass cache revalidation bound to the final expande
 residue mapping, with zero failures. The exact manifest and mapping receipt
 hashes pass readback. Confidence qualification is running; its joint-filter
 counts are not yet claimed.
+
+## Dedicated predictor controls launched on newly idle GPU
+
+The previously occupied GPU 0 is now independently verified idle. Started all
+266 controls there using the existing pinned ESMFold environment and settings;
+GPU 1 continues the missing-model queue. Both live processes were observed on
+their separate cards, and the first four control predictions completed. The
+new configuration differs only in input receipt and GPU UUID. The launch
+resource record supersedes the earlier waiting assumption without adding paid
+resources. Extended independent artifact auditing to accept the reference-link
+format, with three identity-validation tests passing. Full control completion,
+readback and predictor geometry comparisons remain pending.

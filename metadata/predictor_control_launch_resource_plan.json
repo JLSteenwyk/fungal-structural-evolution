@@ -1,0 +1,33 @@
+{
+  "status": "prelaunch_control_predictions_on_newly_idle_gpu0",
+  "candidate_sequences": 266,
+  "residues": 78593,
+  "length_bins_128": {
+    "4": 79,
+    "2": 79,
+    "3": 77,
+    "1": 31
+  },
+  "empirical_receipts": 4919,
+  "empirical_receipt_list_sha256": "234472aea9eca76be841158d6bbc05a331351a7b4f603963d132a15a0002b40e",
+  "empirical_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "median_inference_seconds_by_bin": {
+    "2": 1.7702342295087874,
+    "3": 4.367783956462517,
+    "4": 14.876389408484101,
+    "1": 0.92478006798774
+  },
+  "estimated_inference_gpu_hours": 0.4666863372657422,
+  "planning_gpu_hours_with_2x_allowance_and_10min_startup": 1.100039341198151,
+  "planning_peak_gpu_memory_gb": 24,
+  "planning_disk_gb": 2,
+  "gpu_policy": "GPU0 now independently observed idle, no compute processes, <100 MiB used. Launch this 266-sequence control queue there; existing GPU1 missing-model production remains active. Same hardware model and pinned algorithm, separate immutable output.",
+  "cost": "Existing authorized host; no new charges",
+  "input_receipt_sha256": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539",
+  "gpu_uuid": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+  "gpu_observation_utc": "2026-09-13T10:02:22.816832+00:00",
+  "gpu_observation": "0, GPU-56e78ad3-b4d7-54f6-38fa-e95729009960, 49140 MiB, 41 MiB, 0 %\n1, GPU-21f34861-216e-5737-10cd-aad35dc83ac1, 49140 MiB, 15734 MiB, 100 %\n",
+  "compute_app_observation": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1, 691140, /home/bizon/anaconda3/envs/esmfold2/bin/python, 15480 MiB\n",
+  "prediction_output": "results/predictions/esmfold-controls-v1",
+  "producer_sha256": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc"
+}
