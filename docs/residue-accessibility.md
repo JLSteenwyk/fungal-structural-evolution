@@ -389,6 +389,30 @@ the existing host. Plan: `metadata/gdm_full_accessibility_audit_resource_plan.js
 Audit target: `results/structural_annotations/accessibility-gdm-full-audit-v1`.
 Projection onto exact paired sites and normalization remain subsequent steps.
 
+These two steps are now queued behind the exact running full-audit process.
+`scripts/advance_accessibility_projection.py` checks the completed audit's
+13,153-model, 6,910,765-residue universe and matching source receipts before
+launching the existing projection and normalization programs sequentially.
+The configuration pins 16 script, receipt and normalization-source files:
+`metadata/gdm_accessibility_projection_controller_config.json`.
+The projection covers all 124 ready markers with their existing paired masks.
+Normalization uses the established Tien and Miller references without clipping;
+reference thresholds remain diagnostic conventions, not validated biological
+core/surface assignments.
+
+Planning allowances are one CPU, 16 GiB memory, 10 GiB output and 0.1–8 hours;
+the controller requires 32 GiB available memory before launch. These are
+estimates, allowing for the 4,895,692-row mapping retained by the projection.
+Outputs will be `paired-accessibility-gdm-expanded-v1` and
+`paired-accessibility-normalized-gdm-expanded-v1` under
+`results/structural_annotations/`. Independent projection/normalization row
+readback and phylogenetically controlled exposure analyses remain pending.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/advance_accessibility_projection.py \
+  --config metadata/gdm_accessibility_projection_controller_config.json
+```
+
 ```bash
 OPENBLAS_NUM_THREADS=1 python scripts/audit_predicted_accessibility.py \
   --assessment results/structural_annotations/accessibility-gdm-v1 \

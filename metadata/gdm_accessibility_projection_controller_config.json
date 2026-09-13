@@ -1,0 +1,45 @@
+{
+  "predecessor_pid": 1312606,
+  "predecessor_start_ticks": "181323618",
+  "control_output": "results/structural_annotations/accessibility-gdm-projection-controller-v1",
+  "inputs": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+  "snapshot": "results/structural_markers/gdm-expanded-v1",
+  "accessibility": "results/structural_annotations/accessibility-gdm-v1",
+  "audit": "results/structural_annotations/accessibility-gdm-full-audit-v1",
+  "projection_output": "results/structural_annotations/paired-accessibility-gdm-expanded-v1",
+  "normalization_output": "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+  "normalization_config": "config/accessibility_normalization.json",
+  "models": 13153,
+  "residues": 6910765,
+  "ready_markers": 124,
+  "resource_plan": {
+    "cpus": 1,
+    "memory_allowance_gib": 16,
+    "minimum_available_memory_bytes": 34359738368,
+    "output_allowance_bytes": 10737418240,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "cost": "Existing authorized host; no new services.",
+    "basis": "Projection retains the full 4,895,692-row residue mapping in memory; allowance exceeds the smaller local cohort. Sequential normalization streams rows. Runtime and peak memory remain estimates."
+  },
+  "pinned_files": {
+    "config/accessibility_normalization.json": "15730c285a8f5c5641e2e6a992b384cbf8d7ed619d46b9c4ac3b3dfd2f07983f",
+    "data/literature/tien-2013/article.xml": "150ed9c7defe2ed3990e16ffaf633078131f2a90dd56e6a48d99a0d62ea066f8",
+    "results/phylogeny/paired-inputs-gdm-expanded-v1/receipt.json": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "results/structural_annotations/accessibility-gdm-v1/receipt.json": "e73eb7c7fcf4eb8f552e7113a2ca98becc8bc43f2230dddf5147980e618af32e",
+    "results/structural_markers/gdm-expanded-v1/receipt.json": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+    "scripts/advance_accessibility_projection.py": "5c167d4baa753698ecf2f02d5b639c3d4527c9502dbef96db4660852cfbb2a26",
+    "scripts/advance_prediction_snapshot.py": "00b08a1213c9deff64e48ebd696742942862b6fe8267362ae24c1c85118600c5",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/link_paired_sites_accessibility.py": "31dcfee03e1e6f89447f05101c7216eba9aba0dbdee12f97891e7696891d0b0c",
+    "scripts/normalize_paired_accessibility.py": "1c353d678507ec72d9cea5b158461d85a98d20ee7c547c6637914bd7a0efe1cf",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  }
+}

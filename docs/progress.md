@@ -1822,3 +1822,13 @@ preserves the full 13,153-entry receipt-map checksum. Started the full raw-mmCIF
 and residue-table audit (session 22787); independent ASA integration is not part
 of this readback. Exact paired-site projection/normalization remains pending.
 See docs/residue-accessibility.md and metadata/gdm_full_accessibility_*.
+
+Queued the expanded AlphaFold paired-site accessibility projection and reference
+normalization behind exact audit PID 1312606 (controller PID 1888349, session
+20643). The controller pins 16 dependencies, requires full matching audit counts,
+checks resource headroom and preserves immutable outputs. Syntax/import checks
+and the live wait state passed; neither downstream calculation has run yet.
+Audit progress reached 3,500/13,153 models; follow-on PAE export reached
+3,000/4,252 models. This handoff prepares exposure covariates for all 124 ready
+AlphaFold markers; controlled evolutionary analyses and independent output
+readback remain pending.
