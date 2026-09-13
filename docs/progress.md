@@ -1327,3 +1327,14 @@ inputs explicit in the full manifest. Earlier versions remain immutable.
 The previous turn verified the normalization correction; this turn propagates
 it into usable group and coverage tables without treating groups as orthology.
 The overall research goal remains active and incomplete.
+
+### All local paired fits completed; full resampling launched
+
+Completed and audited 288 fits across 72 local-source markers and 9,122 paired
+branches. Warnings and near-zero branch counts remain explicit (248 and 208
+fits, respectively). Started 43,200 paired resampling draws over every marker,
+with eight workers, source/configuration pins and a recorded resource estimate;
+all three resampling tests passed. The prior turn updated corrected structural
+groups; this turn advances branch estimation and its conditional uncertainty
+analysis. Nonlocal feature dependence and other uncertainty limits remain,
+and the overall research goal stays active and incomplete.

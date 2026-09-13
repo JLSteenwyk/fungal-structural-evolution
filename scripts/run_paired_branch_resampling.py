@@ -78,7 +78,7 @@ def main():
         'models': {'aa': 'LG+F+G4', '3di': str(args.models / 'Q.3Di.AF') + '+G4'},
         'method': 'Same resampled columns for every taxon and both alphabets; circular blocks over retained alignment columns, concatenated then truncated to original length. Refit branches and gamma (plus AA empirical frequencies) on fixed original sequence topology. Block=1 is ordinary site resampling.',
         'limits': 'Conditional sampling sensitivity only: no topology, dating, prediction, alignment or model uncertainty. Local blocks do not preserve all nonlocal 3Di feature dependencies; stationary/circular assumptions are not established for proteins. No calibrated acceleration tests or structural/AA ratios.',
-        'resource_plan': 'Default: 31,200 paired draws / 62,400 fits. Provisional 0.1-5 seconds/fit yields 0.2-11 hours at eight workers; initialization and I/O can add time. Reserve 20 GB output, eight CPU threads, requested 2 GB/fit. No paid resources.'}
+        'resource_plan': 'See the per-run metadata resource plan; draw count is recorded above. Eight workers and requested 2 GB/fit. Runtime and disk depend on taxon/column counts. Existing authorized host only.'}
     config_path = args.output / 'config.json'
     if config_path.exists() and json.loads(config_path.read_text()) != config:
         raise ValueError('Changed resampling configuration; use a new output')

@@ -282,3 +282,51 @@ python scripts/readback_feature_overlap_counts.py --overlap results/phylogeny/fe
 Results are tracked under `metadata/feature_overlap_gdm*` and
 `metadata/feature_overlap_esmfold_readback_v2.json`. Both feature-overlap runs are
 now complete; calibrated branch uncertainty still requires further work.
+
+### Full frozen ESMFold paired fits completed and audited
+
+All 72 markers completed four fits each: sequence LG+F+G4 topology search with
+1,000 SH-aLRT and 1,000 UFBoot replicates with BNNI, followed by three structural
+models fitted to the same sequence topology. The completed fit audit verifies
+288 model fits and 9,122 paired branches, source/alignment hashes, paired masks,
+identical topological splits, branch tables and reported total tree lengths.
+The input collection spans 199 eligible taxa and remains source-specific.
+
+There are 248 fits with recorded warnings and 208 with at least one branch
+≤1e-5; none has a branch ≥10. Warnings include substantial missingness and rare
+alphabet states. These are retained for review rather than hidden. Near-zero
+branches preclude naive structural/sequence ratios. The estimates remain
+conditional on marker topology, confidence selection and model assumptions,
+not calibrated acceleration estimates or substitutions per unit time.
+
+```bash
+python scripts/summarize_paired_marker_fits.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --models data/structural_models/garg-hochberg-v3 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --output results/phylogeny/paired-fit-audit-esmfold-v1
+```
+
+### Paired uncertainty sensitivity expanded to every local marker
+
+Started 200 paired draws at each block length 1, 10 and 30 across all 72 markers:
+43,200 draws and at most 86,400 fixed-topology fits. The same sampled columns are
+used for AA and 3Di in every taxon. This stage uses the published AF structural
+frequencies; it does not repeat the three-model sensitivity on every draw.
+Topologies remain fixed; AA frequencies, gamma and branch lengths are re-estimated
+as in the earlier resampling protocol. Unestimable draws remain explicit.
+
+The per-run resource plan allocates eight one-thread workers, requested 2 GB per
+fit, 24 GB total planning memory and 100 GB disk, with a 1–48 hour allowance.
+Original fixed-topology AF-3Di fits total 67.03 worker-seconds; AA refits, process
+startup, altered parameters and file output widen runtime uncertainty. The
+original AA searches/support are not repeated. All three existing resampling
+tests passed. The live producer preserves configuration/seed hashes and per-draw
+outputs for restart. Generic producer resource wording now points to the actual
+per-run plan instead of quoting the older 52-marker counts.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_paired_branch_resampling.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --models data/structural_models/garg-hochberg-v3 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --audit results/phylogeny/paired-fit-audit-esmfold-v1 --output results/phylogeny/paired-resampling-esmfold-v1
+```
+
+Receipts, fit/branch/warning tables and resampling plan/configuration are tracked
+in `metadata/esmfold_paired_*`. Expanded feature-overlap results still apply:
+local blocks miss nonlocal dependencies. These draws estimate conditional
+sampling sensitivity, not overall calibrated confidence intervals, shared-ancestry
+adjustment or positive selection. Full resampling output remains pending.
