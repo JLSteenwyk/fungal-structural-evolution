@@ -1,0 +1,17 @@
+{
+  "status": "complete_audited_esmfold_af_reference_comparison",
+  "reference_models": 266,
+  "unique_sequences": 266,
+  "comparison_rows": 798,
+  "script_sha256": "5371cfcb592617aabbfe4d7d7cdffb4758b8b9ef6654014d7636f13e2984ca3a",
+  "source_receipts": {
+    "inputs": "38b5e8d824ccc477464b2280df3b590b054cb75d3db77bd202818ea472019539",
+    "audit": "9a205f7163536a1be46104b4da6280bafffea57f9acadfc604b7d8f350dafe36",
+    "pae": "80e7577b2bbe17717f0b835285cfcfdd44720099280d0028d9c5ec56275595b4"
+  },
+  "interpretation": "Exact-sequence predictor differences, conditional on jointly selected pLDDT sites and optional bidirectional PAE filters. Direct CA geometry, not additive branch length or experimental accuracy. Local distance change is a custom metric, not lDDT. Selection and shared sequence/training biases prevent causal or independent-replicate interpretations.",
+  "artifacts": {
+    "model_provenance.tsv": "5d877f339fbb7bbed69c1fd8d8e8cc3a8ae504f27215ebb9d2f3bb15f94e5d6a",
+    "comparisons.tsv": "70ab37a4a12996936338055531aecc7442fe4ac327dcb1dcd38a7ffae2303cac"
+  }
+}

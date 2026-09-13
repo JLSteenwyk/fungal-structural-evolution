@@ -239,3 +239,36 @@ pass: rigid transformations produce zero change, reverse-direction PAE in
 either model excludes the affected pair, insufficient coverage stays missing,
 and nonfinite confidence is rejected. Full empirical comparison, sensitivity
 interpretation and experimental validation remain pending.
+
+## Full 266-control prediction comparison completed
+
+All 266 control predictions finished without interruption, OOM or deferred
+entries. Independent readback passed every model, 270 source links, 126 taxa
+and 81 marker identities. The geometry comparison completed all 798
+protein/threshold rows. The pLDDT ≥70 rule retains sufficient matched residues
+for 209 controls and excludes 57; pLDDT ≥90 retains 88 and excludes 178.
+
+| Joint pLDDT cutoff | Compared proteins | Median CA RMSD (Å) | Median local distance change (Å) | Median PAE≤10 local change (Å) |
+| --- | ---: | ---: | ---: | ---: |
+| 0 | 266 | 11.848 | 0.891 | 0.316 |
+| 70 | 209 | 1.114 | 0.236 | 0.219 |
+| 90 | 88 | 0.535 | 0.157 | 0.157 |
+
+These rows change both the protein cohort and residue sets. Holding the 209
+proteins that qualify at 70 fixed, their full-protein median RMSD is 7.615 Å,
+compared with 1.114 Å after residue filtering. The median within-protein change
+is −3.545 Å. Holding the 88 proteins qualifying at 90 fixed, the corresponding
+full-protein and filtered medians are 3.840 and 0.535 Å. These comparisons still
+change residue positions. They describe sensitivity of predictor agreement to
+confidence selection, not improvement in accuracy, experimental validation,
+biological change or independent-replicate statistical significance. Controls
+were intentionally stratified by availability, lineage, length and AF confidence;
+these medians are not estimates for all fungal proteins.
+
+`compare_esmfold_controls.py` and `summarize_predictor_controls.py` produced the
+completed artifacts under `results/prediction_controls/esmfold-af-comparisons-v1`
+and `esmfold-af-summary-v1`. The summary checks the complete 266-by-three grid,
+finite/nonnegative geometry and nested directional PAE retained-pair counts.
+Receipts, all comparison rows and both changing-/same-cohort summaries are
+versioned in `metadata/predictor_control_*`. Leading disagreements still require
+domain/orientation review and checks against experimental structures.

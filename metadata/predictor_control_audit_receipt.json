@@ -1,0 +1,40 @@
+{
+  "status": "complete_artifact_readback",
+  "predictions": 266,
+  "partial_prediction_snapshot": false,
+  "taxon_marker_links": 270,
+  "taxa": 126,
+  "markers": 81,
+  "links_path": "data/prediction_inputs/predictor-controls-v1/reference_links.tsv",
+  "links_sha256": "309f561bba7f5b06a313369a6f8a159938cf8eee99b15a25d224c91bdab9a771",
+  "config_sha256": "d4caea4d704d692308a747c50ae1fb0a38a343436fa25366a3593a252605a90b",
+  "chunk_receipt_sha256": "05d9baca1ac22fed336950e2b8c9aeddfb56a1efcf955473243508d1c4ea9d81",
+  "script_sha256": "96433b35562fc3e8d72a032730f89498f49542a6c731d60078da2f06f3730331",
+  "remaining_eligible": 0,
+  "length_or_alphabet_deferred": 0,
+  "interpretation": "Short-protein production chunk; verified serialization and confidence provenance, not experimental accuracy or completed structural atlas.",
+  "artifacts": {
+    "taxon_links.tsv": "55136ba01010e387ebba2e1272a90c3c8088cd7db0752369a7d514a5d8f41b4d",
+    "predictions.tsv": "92869dd919dd7ff24975f9a2f5eaecca84c4d73c6589cbca24a8610e0af165cf"
+  },
+  "length": {
+    "min": 94,
+    "median": 294.5,
+    "max": 508
+  },
+  "inference_seconds": {
+    "min": 0.8599581180606037,
+    "median": 4.709139476530254,
+    "max": 18.49578218581155
+  },
+  "peak_gpu_allocated_bytes": {
+    "min": 8513331712,
+    "median": 9066801920.0,
+    "max": 10269531136
+  },
+  "mean_ca_plddt": {
+    "min": 34.279998779296875,
+    "median": 83.15753936767578,
+    "max": 97.2094497680664
+  }
+}

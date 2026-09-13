@@ -185,3 +185,20 @@ maximum values. This stage has not launched: mmCIF conversion and completed
 local mapping are prerequisites. The maximum current input envelope is 5,121
 models and 303,017,975 matrix entries, with one CPU worker and conservative
 resource estimates in `metadata/local_pae_export_resource_plan.json`.
+
+## Follow-on missing-model predictions launched
+
+After the 266 controls finished, GPU 0 was again independently verified free.
+The prepared follow-on input has 4,252 canonical sequences no longer than 512
+residues; none has a model in the freshly checked AlphaFold cache, and the input
+is disjoint from the entire original prediction queue. Launched all 4,252 in
+`results/predictions/esmfold-followon-v1` using the same pinned configuration;
+only the input receipt differs from the completed control run. The first model
+completed successfully. GPU 1 continues the original queue.
+
+The existing empirical forecast is 8.23 GPU hours of inference, with a 16.77-hour
+planning envelope and 20 GB output headroom. These are planning scenarios, not
+completion guarantees. Fresh cache/device observations, source hashes and run
+configuration are recorded in `metadata/followon_prediction_launch_*`. The 3,547
+long/noncanonical input entries remain explicitly deferred by this configuration.
+No paid resources were provisioned.

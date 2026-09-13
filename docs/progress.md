@@ -507,3 +507,17 @@ exporter explicitly records local derivation, rather than remote AFDB retrieval,
 and keeps asymmetric directional values intact. Launch awaits completed local
 mmCIF conversion and residue mapping. Conversion and the separate control
 prediction run remain active.
+
+## Predictor controls completed; follow-on production launched
+
+All 266 controls completed and passed independent artifact audit. The full
+798-row AlphaFold–ESMFold geometry comparison is complete: 209 proteins pass
+joint pLDDT ≥70 coverage, with median RMSD 1.114 Å and local distance change
+0.236 Å. Same-protein cohort summaries separate cohort changes from residue
+selection effects. Results describe predictor agreement, not experimental
+accuracy or biological acceleration.
+
+Launched the 4,252 eligible follow-on missing-model predictions on the newly
+free GPU 0 after confirming disjoint inputs and no existing AF cache matches.
+The first prediction completed. Original prediction, local mmCIF conversion,
+phylogenetic and expanded paired branch-fitting jobs continue.

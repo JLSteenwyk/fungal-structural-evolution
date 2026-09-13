@@ -1,0 +1,27 @@
+{
+  "status": "prelaunch_followon_queue_on_gpu0_after_controls",
+  "pending_short_predictions": 4252,
+  "observed_predictions": 3640,
+  "median_projected_inference_hours": 8.230444890744078,
+  "observed_quantile_projection_hours": [
+    5.98110675353544,
+    11.176713334705358
+  ],
+  "planning_wall_hours_with_50percent_overhead": 16.76507000205804,
+  "planned_gpu": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+  "planning_vram_gb": 24,
+  "planning_output_gb": 20,
+  "cost": "Existing host; no paid resources",
+  "input_receipt_sha256": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458",
+  "prediction_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "script_sha256": "8e590f2e7d1c44ccb3b673644e7b83e7d36b71adbb2f5717d478491a8827af27",
+  "interpretation": "Existing length-bin resource forecast reused for identical hardware and algorithm. GPU0 controls finished and device is now free. All 4252 short canonical candidates remain absent from the fresh AF cache and disjoint from the original prediction input. Length/alphabet exclusions remain explicit; no full atlas completion inferred.",
+  "availability_check_utc": "2026-09-13T10:32:56.429699+00:00",
+  "compute_app_observation": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1, 691140, /home/bizon/anaconda3/envs/esmfold2/bin/python, 15480 MiB\n",
+  "cache_inventory_snapshot_sha256": "07fe049af3769b9df2a008f2657e778236cb22670400f337b3ab7210f2d2458d",
+  "eligible_with_existing_af_model": 0,
+  "disjoint_from_original_full_prediction_queue": true,
+  "prediction_output": "results/predictions/esmfold-followon-v1",
+  "source_resource_receipt_sha256": "651503d526208128a464b03ed36483b79e2532099604a9d5da7b53b9591d55ea",
+  "producer_sha256": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc"
+}
