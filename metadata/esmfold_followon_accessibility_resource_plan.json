@@ -1,0 +1,26 @@
+{
+  "status": "prelaunch_followon_accessibility",
+  "snapshot": "results/structural_markers/esmfold-followon-complete-v1",
+  "snapshot_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+  "residue_readback_receipt": "metadata/esmfold_followon_full_residue_readback.json",
+  "residue_readback_sha256": "18520ef1173721a71815b608bd200438bbdc7d8a61d36757d581da81bb417092",
+  "models": 4252,
+  "residues": 1342046,
+  "workers": 4,
+  "sphere_points_per_atom": 960,
+  "memory_allowance_gib": 8,
+  "output_allowance_gib": 5,
+  "planning_runtime_hours": [
+    0.5,
+    12
+  ],
+  "previous_cohort_models": 5121,
+  "previous_cohort_worker_elapsed_seconds": 15842.759343730519,
+  "previous_cohort_residues": 1183341,
+  "linear_residue_scaled_four_worker_hours": 1.2477449562894949,
+  "estimate_limit": "Previous elapsed times include host contention; residue scaling is a scenario, not a bound. Spatial packing and length affect cost.",
+  "output": "results/structural_annotations/accessibility-esmfold-followon-v1",
+  "script_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "cost": "Existing authorized host only; no paid provisioning.",
+  "interpretation": "Full isolated-chain heavy-atom accessibility for the follow-on ESMFold cohort. Separate from confidence qualification. Uses the same 960-point, 1.4-A probe method as previous cohorts; requires completed full audit before paired-site projection."
+}

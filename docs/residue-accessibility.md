@@ -419,3 +419,34 @@ OPENBLAS_NUM_THREADS=1 python scripts/audit_predicted_accessibility.py \
   --snapshot results/structural_markers/gdm-expanded-v1 \
   --output results/structural_annotations/accessibility-gdm-full-audit-v1
 ```
+
+
+## Follow-on ESMFold accessibility running
+
+The complete follow-on cohort now has an accessibility calculation running for
+4,252 models and 1,342,046 residues. All model IDs are disjoint from the previous
+5,121-model accessibility cohort. The same implementation, 960 sphere points
+per atom and 1.4-A probe are used; all heavy atoms remain potential occluders,
+regardless of confidence. Paired-site interpretation will use the separately
+qualified confidence masks.
+
+The earlier cohort consumed 15,842.76 summed worker seconds for 1,183,341 residues.
+Linear scaling by residue count gives a 1.25-hour four-worker scenario, not a
+runtime bound. The resource plan allows 0.5–12 hours, four CPUs, 8 GiB memory and
+5 GiB output on the existing host. See
+`metadata/esmfold_followon_accessibility_resource_plan.json` and the actual
+configuration in `metadata/esmfold_followon_accessibility_launch.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/annotate_predicted_accessibility.py \
+  --snapshot results/structural_markers/esmfold-followon-complete-v1 \
+  --output results/structural_annotations/accessibility-esmfold-followon-v1 \
+  --workers 4 --points 960
+```
+
+The established full-output auditor is queued after the exact producer process,
+using `metadata/esmfold_followon_accessibility_audit_controller_config.json`.
+It pins 11 dependencies and will check raw coordinate/residue identity, hashes,
+atom counts, confidence and ASA totals. This does not independently integrate
+ASA. Projection, normalization and controlled exposure/evolution tests remain
+pending; calculation launch is not evidence of a biological association.

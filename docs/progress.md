@@ -1832,3 +1832,13 @@ Audit progress reached 3,500/13,153 models; follow-on PAE export reached
 3,000/4,252 models. This handoff prepares exposure covariates for all 124 ready
 AlphaFold markers; controlled evolutionary analyses and independent output
 readback remain pending.
+
+
+Started full follow-on ESMFold accessibility for 4,252 models and 1,342,046
+residues (PID 2004958, session 50918), with the same 960-point method as earlier
+cohorts. Resource estimates use measured earlier-cohort worker times, with wider
+planning allowances. The established full-output auditor is queued under
+session 61482 after exact producer exit; 11 dependency pins are recorded.
+Initial models produced complete residue tables. Neither full calculation nor
+full audit is complete. See docs/residue-accessibility.md and
+metadata/esmfold_followon_accessibility_*.
