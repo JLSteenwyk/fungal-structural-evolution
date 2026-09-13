@@ -468,3 +468,16 @@ The queued controller automatically started paired-site projection as PID
 in `metadata/gdm_accessibility_projection_launch.json`. Projection is running;
 normalization follows sequentially. Final projection/normalization counts,
 independent row readback and exposure/evolution analyses remain pending.
+
+
+Paired-site projection subsequently completed for all 124 ready AlphaFold
+markers, using 13,066 distinct models and linking 4,148,852 observed alignment
+cells. A separate readback matched every marker's observed and masked-cell
+counts to its emitted paired AA alignment and verified all projection artifact
+hashes. Individual residue/ASA row readback remains pending. Records:
+`metadata/gdm_paired_accessibility_projection_receipt.json` and
+`metadata/gdm_paired_accessibility_projection_count_readback.json`.
+
+The controller started reference normalization as PID 3491107, using both the
+Tien and Miller scales. It is still running; final normalized counts, scale
+sensitivity and independent row-level validation remain pending.

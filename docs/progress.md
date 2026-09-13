@@ -1879,3 +1879,10 @@ session 20643; normalization remains queued behind it. This is output
 consistency evidence, not independent ASA integration or biological validation.
 See metadata/gdm_full_accessibility_audit_receipt.json and
 docs/residue-accessibility.md.
+
+
+AlphaFold accessibility projection completed: 124 markers, 13,066 models and
+4,148,852 paired-site observations. All marker observation/missingness counts
+matched emitted AA alignments; full projection file hashes passed. Individual
+row/ASA readback remains pending. Normalization started as PID 3491107 under
+controller session 20643, preserving both reference scales and unclipped values.
