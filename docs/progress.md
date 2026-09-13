@@ -336,3 +336,7 @@ The leading Aspergillus marker has two domain-hit patterns: six longer BRF1-hit 
 Verified the protected core orthogroup table and traced the only focal Aspergillus core taxon to OG0001567. Nine focal taxa are outside the reference core, so core membership alone cannot resolve the mixed-domain case.
 
 Started a focused three-profile Pfam search across all 5,654,720 additional representative sequences from the full 526-taxon design, with existing marker hits available for later reuse. Profile/library/input/marker-source and HMMER-binary hashes pass. The one-process/two-worker search is confirmed running, with resource estimates and configuration versioned. Full homolog recovery, family phylogeny and reconciliation remain pending; original full-Pfam and orthology jobs continue independently.
+
+## Focused full-proteome family search completed
+
+All three selected Pfam profiles finished searching the 5,654,720 additional unique sequences in 64.54 seconds, returning 2,109 domain-hit rows. All output and producer hashes, row counts and profile identities passed readback. This completes focused acquisition for the additional-sequence partition; combining reusable marker hits and expanding sequence-to-gene/taxon mappings is still required before family inference.
