@@ -272,3 +272,30 @@ finite/nonnegative geometry and nested directional PAE retained-pair counts.
 Receipts, all comparison rows and both changing-/same-cohort summaries are
 versioned in `metadata/predictor_control_*`. Leading disagreements still require
 domain/orientation review and checks against experimental structures.
+
+### Same-cohort agreement figure and review table
+
+![Predictor agreement under residue-confidence filtering](figures/predictor_agreement.svg)
+
+Both panels show the same 209 proteins that meet the pLDDT ≥70 coverage rule.
+The left panel compares whole-protein RMSD with RMSD on jointly qualified
+residues; points therefore retain protein identity but change residue masks.
+The right panel compares global-fit RMSD with local distance change after a
+PAE≤10 filter in both directions in both models. Color denotes the fraction of
+residues retained at pLDDT ≥70. The 57 excluded proteins are not silently treated
+as agreements or zero differences.
+
+Several controls retain large global RMSD while having much smaller local
+distance changes. Relative domain placement, uncertain orientations and other
+prediction/data artifacts require inspection before interpreting these patterns.
+The two metrics are not interchangeable or calibrated against experimental
+accuracy. All 209 controls are ordered by filtered global RMSD in
+`metadata/predictor_control_geometry_review_order.tsv`; this is a descriptive
+inspection order, not an acceleration or significance ranking.
+
+Reproduce with `plot_predictor_controls.py --comparisons
+results/prediction_controls/esmfold-af-comparisons-v1 --output
+results/prediction_controls/esmfold-af-figures-v1` using a new output for reruns.
+PNG, SVG and PDF artifacts were generated, and the PNG was visually inspected.
+The plotting code rejects nonpositive/nonfinite values rather than silently
+dropping them from logarithmic axes. Source and figure hashes are versioned.

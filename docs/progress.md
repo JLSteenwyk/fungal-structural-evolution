@@ -530,3 +530,13 @@ mapping against the full profile-alignment/matrix source design. Mapping,
 local PAE binding and native feature qualification must finish before counting
 new confidence-qualified coverage. The 124-marker GDM branch batch, full
 phylogenetic searches and both missing-model GPU queues continue.
+
+## Predictor agreement figure and inspection order completed
+
+Rendered and inspected the same-209-control comparison figure. It distinguishes
+whole-protein versus confidence-filtered RMSD from confident local distance
+changes, with excluded controls and residue retention explicit. All qualifying
+controls are retained in the global-RMSD inspection order. Large global/local
+differences motivate domain/orientation review but do not establish accuracy,
+biological acceleration or a causal explanation. Figure, script, table and
+provenance are versioned; local ESMFold marker mapping remains running.
