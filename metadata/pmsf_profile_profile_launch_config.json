@@ -1,0 +1,66 @@
+{
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+    "-s",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-matrix-50-v1/matrix.faa",
+    "-st",
+    "AA",
+    "-m",
+    "LG+C20+F+G4",
+    "--tree-freq",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-profile-profile-v1/input_guide.treefile",
+    "-T",
+    "16",
+    "--mem",
+    "600G",
+    "--seed",
+    "20260913",
+    "--alrt",
+    "1000",
+    "-B",
+    "1000",
+    "--bnni",
+    "--boot-trees",
+    "--prefix",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-profile-profile-v1/pmsf"
+  ],
+  "pinned_files": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-matrix-50-v1/matrix.faa": "1934ea4e2d0687d644a65d3fc550dc6eee25e42d85deeeec6a3e529bd1ddb045",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-guide-audit-v1/receipt.json": "0619cdfa1a5cf91d684603c61c9af03f7092715cd5c882ec42cfd8209991fca1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-guide-audit-v1/guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/species-mixture-resources-v2/receipt.json": "2c20cd54819d288d5322ad64d9081657a686c71bf8d90eed8d1c1db06b7d0bf4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-profile-profile-v1/input_guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45"
+  },
+  "resource_plan": {
+    "matrix_labels": [
+      "profile",
+      "mafft"
+    ],
+    "guide_labels": [
+      "profile",
+      "mafft"
+    ],
+    "crossed_runs": 4,
+    "model": "LG+C20+F+G4",
+    "method": "PMSF",
+    "concurrent_runs": 1,
+    "threads": 16,
+    "iqtree_memory_limit": "600G",
+    "minimum_available_memory_gib": 750,
+    "output_allowance_gb": 100,
+    "planning_wall_hours_per_run": [
+      24,
+      336
+    ],
+    "runtime_basis": "Conservative planning envelope for full-matrix mixture profile estimation and supported tree search, not a measured prediction.",
+    "prerequisites": "Both completed guide receipts, exact tip grids and finite branch lengths; freeze each guide before use. All four guide/alignment combinations preserve 526 taxa. Support, model adequacy, gene discordance and taxon/marker sensitivity remain required."
+  },
+  "available_memory_kib_at_launch": 917997900,
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "guide_audit_receipt_sha256": "0619cdfa1a5cf91d684603c61c9af03f7092715cd5c882ec42cfd8209991fca1",
+  "interpretation": "One full-taxon alignment/guide combination in crossed PMSF sensitivity; support conditions on estimated profiles. No final species-tree, adequacy or dating claim."
+}

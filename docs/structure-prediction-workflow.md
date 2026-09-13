@@ -491,3 +491,13 @@ queued ecology sequences on the freed GPU. Its launch receipt is
 `metadata/esmfold_ecology_prediction_launch.json`; the inference process was
 observed live. Neither launch establishes new confidence-qualified marker
 coverage or an ecological association result.
+
+
+The full follow-on artifact audit passed for 4,252 models, 4,304 marker links,
+84 taxa and 98 markers. Independent exported-table readback matched the entire
+eligible FASTA identity set and all originating marker-link rows. Median length
+is 309 residues; median model mean CA pLDDT is 85.878, which is not experimental
+accuracy. The full input queue spans more taxa than its short-protein eligible
+subset. Conversion is now running; residue mapping and confidence-qualified
+paired coverage remain pending. Receipt:
+`metadata/esmfold_followon_full_audit_receipt.json`.

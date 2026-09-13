@@ -1731,3 +1731,13 @@ controller launched the authorized 675-sequence queue (inference PID 3566770).
 Both launch identities were observed live and the ecology predecessor hash
 matched the completed chunk. Audit/conversion and ecology results remain pending.
 Versioned execution/launch receipts are linked in docs/structure-prediction-workflow.md.
+
+
+Profile guide completed and passed full 526-tip/report-edge audit; 520 nominal
+composition failures retained. First full-matrix C20-PMSF sensitivity launched
+with 1,000 SH-aLRT and 1,000 UFB replicates, 16 threads and 600G limit
+(parent PID 3700451, IQ-TREE PID 3700949, session 91598). Initialization estimates
+333,579 MB. Other crossed-guide runs and full supported-tree audit remain pending.
+Follow-on model audit also completed: 4,252 models, 4,304 links, 84 taxa, 98 markers;
+all exported identities/links checked independently. Conversion is live under
+PID 3676262/controller 3228696. See the phylogenetic and prediction workflows.

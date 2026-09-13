@@ -175,3 +175,47 @@ Receipt: `metadata/species_mixture_resource_receipt.json`; frozen logs:
 Completed guide receipts and frozen, validated trees are prerequisites. This
 sensitivity does not replace partitioned analysis, gene concordance, across-
 lineage composition assessment or taxon/marker sensitivity.
+
+
+## Profile guide completed and first full-matrix PMSF run launched
+
+The 49,027-site profile guide completed after 55,987.5 seconds of wrapper time.
+`scripts/audit_species_guide.py` verified the full input manifest, all 526 tips
+(501 fungal entries and 25 outgroups), 1,049 finite nonnegative edges, exact
+report/tree edge agreement and total branch length 146.2086028457. The reported
+log likelihood is −16,717,819.5477 under LG+F+G4. Nominal composition failures
+are 520/526; the frozen taxon table preserves the six passing entries as well.
+It is unrooted and has no support estimates. Receipts:
+`metadata/profile_guide_execution_receipt.json` and
+`metadata/profile_guide_full_audit_receipt.json`.
+
+The completed guide now supplies the first of four planned full-matrix C20-PMSF
+sensitivity combinations: profile alignment with profile guide. The earlier
+both-guides prerequisite is needed for completing the crossed comparison;
+this first combination can begin with its own completed, audited guide.
+`scripts/run_species_pmsf.py` validated input hashes, the exact taxon grid,
+current memory and disk headroom and the pinned IQ-TREE 3.0.1 executable.
+It requests 16 threads, a 600G memory limit, 1,000 SH-aLRT and 1,000 UFB
+replicates with bootstrap NNI and saved bootstrap trees. A shared execution lock
+prevents concurrent full-matrix PMSF runs through this script. IQ-TREE entered
+site-profile estimation and reported 333,579 MB required, consistent with the
+resource scenario; this is a program estimate, not measured peak memory.
+
+Launch config: `metadata/pmsf_profile_profile_launch_config.json`.
+Live output: `results/phylogeny/pmsf-profile-profile-v1`.
+PMSF support conditions on estimated site profiles. Full output/model/support
+validation remains necessary, as do the other guide/alignment combinations,
+partitioned analyses, discordance and across-lineage composition sensitivities.
+No supported final species tree is claimed.
+
+```bash
+python scripts/audit_species_guide.py \
+  --guide results/phylogeny/initial-guide-v1 \
+  --matrix results/phylogeny/profile-matrix-50-v1 \
+  --output results/phylogeny/profile-guide-audit-v1
+python scripts/run_species_pmsf.py \
+  --matrix results/phylogeny/profile-matrix-50-v1 \
+  --guide-audit results/phylogeny/profile-guide-audit-v1 \
+  --resources results/phylogeny/species-mixture-resources-v2 \
+  --output results/phylogeny/pmsf-profile-profile-v1
+```
