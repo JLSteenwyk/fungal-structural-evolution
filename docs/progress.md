@@ -286,3 +286,7 @@ Started source indexing for all 59,840 marker/taxon links across the full 526-ta
 All 59,840 marker/taxon links across 526 taxa have a unique CDS source; no missing or multiply linked source records remain in this marker set. Independent readback verified the complete identity universe, original marker provenance, all exported nucleotide hashes/lengths and manifest coverage. Exported DNA totals 100,455,973 bases.
 
 The index preserves four alternative products and 313 unresolved/provisional gene mappings, recorded in a 317-row exception table. These are identity/annotation flags, not missing sequences. Full NCBI translation auditing continues; no codon-selection eligibility or selection inference is claimed. Verification script, receipts and coverage/exception tables are versioned.
+
+## Marker code provenance and partial-boundary audit started
+
+Verified NCBI's documented default-code and GFF boundary conventions against its primary documentation. Started a full 519-taxon marker annotation audit to record CDS/region/default code provenance, strand-aware terminal and internal partialness, phase continuity, overlaps and strict source-CDS translation. The original full-proteome producer remains unchanged and running. Five focused tests passed; initial taxa completed. Annotation/translation matches remain separate from genome reconstruction and codon-selection eligibility.
