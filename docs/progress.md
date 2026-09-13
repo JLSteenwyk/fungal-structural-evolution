@@ -780,3 +780,16 @@ Neither exclusion policy removes an entire role/major-lineage group, although
 within-group and marker coverage remain relevant. These are running homogeneous
 model guides, not supported final species trees. The preceding turn prepared
 these matrices; this turn begins their actual inference. Overall goal stays active.
+
+
+### Identity-policy effects on paired marker availability quantified
+
+Reapplied the two taxon-exclusion policies to both frozen structural sources and
+verified ready-family identities against actual AA FASTAs. The stricter policy
+retains all 124 AlphaFold markers (320 taxa, 13,510 cells), but leaves 71 ESMFold
+markers (184 taxa, 4,286 cells). Local marker 776280at2759 falls from four taxa to
+three when Ceratobasidium sp. AG-Ba is removed. This is an availability effect,
+not inferred structural or taxonomic change. Marker and lineage counts plus
+hash receipts are versioned. The preceding turn launched taxon-sensitive guide
+trees; this turn measures their structural-data coverage consequences. Existing
+tree and geometry jobs remain active, and the research goal is incomplete.

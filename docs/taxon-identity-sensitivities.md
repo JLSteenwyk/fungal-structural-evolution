@@ -71,3 +71,38 @@ python scripts/run_taxon_sensitivity_trees.py \
   --inputs results/phylogeny/taxon-identity-inputs-v1 \
   --output results/phylogeny/taxon-identity-trees-v1
 ```
+
+
+## Source-specific paired marker coverage
+
+Reapplying each exclusion policy to the frozen paired inputs, while retaining
+per-taxon confidence/coverage criteria and rechecking the four-taxon family gate,
+gives the following availability counts:
+
+| Source and policy | Eligible markers | Taxa with an eligible marker | Taxon-marker cells |
+| --- | ---: | ---: | ---: |
+| AlphaFold, full | 124 | 322 | 13,565 |
+| AlphaFold, hybrids excluded | 124 | 320 | 13,510 |
+| AlphaFold, hybrids and uncertain labels excluded | 124 | 320 | 13,510 |
+| ESMFold, full | 72 | 199 | 4,669 |
+| ESMFold, hybrids excluded | 72 | 199 | 4,669 |
+| ESMFold, hybrids and uncertain labels excluded | 71 | 184 | 4,286 |
+
+The stricter ESMFold policy removes marker 776280at2759 from eligibility: its
+four original taxa are Tilletia caries, Ceratobasidium sp. AG-Ba, Zalaria obscura
+and Trypethelium subeluteriae. Excluding the uncertain Ceratobasidium label leaves
+three. Neither hybrid has eligible coverage in this local snapshot. Thus taxon
+policy changes the available source-specific data unevenly; topology or rate
+sensitivity cannot be interpreted as a pure taxonomic effect without examining
+these coverage changes. No new paired fits or effect estimates are claimed.
+
+```bash
+python scripts/assess_identity_policy_marker_coverage.py \
+  --output results/phylogeny/taxon-identity-paired-coverage-v1
+```
+
+Source receipts and actual ready-marker FASTA taxon identities were checked.
+Outputs include marker-level and role/lineage-level counts, preserving groups
+with zero coverage. The full-panel baseline reproduces the earlier source
+coverage counts. Exclusion policies cannot make a previously ineligible marker
+eligible, and no new confidence values are imputed.

@@ -1,0 +1,71 @@
+{
+  "status": "complete_identity_policy_paired_coverage",
+  "identity_input_receipt_sha256": "17f5561257f8558fd1bcc214a1772fd5094db0b7db267a9d8ab8d7008849ca26",
+  "paired_input_receipt_sha256": {
+    "AlphaFold": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "ESMFold": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+  },
+  "script_sha256": "1184df029485621d486d6520b90df7b15b3b4d6b08d36fe075d31bfe657f5b15",
+  "summaries": [
+    {
+      "source": "AlphaFold",
+      "policy": "full_frozen_panel",
+      "retained_panel_taxa": 526,
+      "ready_markers": 124,
+      "taxa_with_usable_marker": 322,
+      "usable_taxon_marker_cells": 13565,
+      "lost_ready_markers": ""
+    },
+    {
+      "source": "AlphaFold",
+      "policy": "exclude_curated_hybrids",
+      "retained_panel_taxa": 524,
+      "ready_markers": 124,
+      "taxa_with_usable_marker": 320,
+      "usable_taxon_marker_cells": 13510,
+      "lost_ready_markers": ""
+    },
+    {
+      "source": "AlphaFold",
+      "policy": "exclude_hybrids_and_uncertain_labels",
+      "retained_panel_taxa": 503,
+      "ready_markers": 124,
+      "taxa_with_usable_marker": 320,
+      "usable_taxon_marker_cells": 13510,
+      "lost_ready_markers": ""
+    },
+    {
+      "source": "ESMFold",
+      "policy": "full_frozen_panel",
+      "retained_panel_taxa": 526,
+      "ready_markers": 72,
+      "taxa_with_usable_marker": 199,
+      "usable_taxon_marker_cells": 4669,
+      "lost_ready_markers": ""
+    },
+    {
+      "source": "ESMFold",
+      "policy": "exclude_curated_hybrids",
+      "retained_panel_taxa": 524,
+      "ready_markers": 72,
+      "taxa_with_usable_marker": 199,
+      "usable_taxon_marker_cells": 4669,
+      "lost_ready_markers": ""
+    },
+    {
+      "source": "ESMFold",
+      "policy": "exclude_hybrids_and_uncertain_labels",
+      "retained_panel_taxa": 503,
+      "ready_markers": 71,
+      "taxa_with_usable_marker": 184,
+      "usable_taxon_marker_cells": 4286,
+      "lost_ready_markers": "776280at2759"
+    }
+  ],
+  "interpretation": "Source-specific availability after taxon exclusions and reapplication of the minimum-four-taxon gate. Original per-taxon confidence/coverage eligibility retained; ready-family FASTA identities verified. No new paired alignments, tree fits, power assessment or species validation implied.",
+  "artifacts": {
+    "marker_coverage.tsv": "2592f8720134dd78e21c6d212ac7ca2ae7fee5e41749c35d7082b85444d3380b",
+    "lineage_coverage.tsv": "e5c57ee62bdfb4dbedddab17a00b6c91c276a22cbbd5c4c7a658a01dac4695d2",
+    "summary.tsv": "f73f227f5676af74291dd1f19a7562f771f43dfa5164e269d16b01d693e57582"
+  }
+}
