@@ -1,0 +1,32 @@
+{
+  "status": "prelaunch_expanded_supported_paired_fits",
+  "markers": 124,
+  "fits": 496,
+  "taxa_range": [
+    5,
+    135
+  ],
+  "columns_range": [
+    73,
+    1184
+  ],
+  "workers": 4,
+  "threads_per_fit": 1,
+  "memory_per_fit_gb": 2,
+  "planning_runtime_hours": [
+    1,
+    96
+  ],
+  "planning_disk_gb": 10,
+  "free_disk_bytes": 12530237530112,
+  "sequence_tree_support": {
+    "sh_alrt": 1000,
+    "ultrafast_bootstrap": 1000,
+    "bootstrap_nni": true
+  },
+  "input_receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+  "model_receipt_sha256": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+  "producer_sha256": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+  "basis": "124 expanded alignments. Each gets one AA topology search with support plus three fixed-topology structural model fits. Wider planning envelope than earlier 4-12-tip snapshot; support/convergence can extend runtime. No dating, resampling intervals or acceleration test in this job.",
+  "cost": "Existing authorized host CPU only; no new charges"
+}

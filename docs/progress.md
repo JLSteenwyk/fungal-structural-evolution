@@ -451,3 +451,19 @@ The dependent paired-alignment producer has started on the full 526-taxon,
 125-marker matrix using these qualified encodings. Lineage coverage and
 expanded likelihood fits will follow its completed outputs. The overall
 structural atlas and evolutionary analyses remain incomplete.
+
+## Expanded paired alignments and lineage coverage completed
+
+All 526 taxa and 125 markers were screened. The expanded snapshot produces
+paired alignments for 124 markers (5–135 taxa, 73–1,184 columns), with 322 taxa
+in the union: 304 fungal entries and 18 outgroups. All emitted AA/3Di identity
+sets, dimensions and masks pass readback, and actual file memberships agree
+with every per-taxon coverage count. Twenty-three lineage/role groups are
+represented; Aphelidiomycota, Calcarisporiellomycota, Sanchytriomycota and
+Corallochytrea remain uncovered. Source entries remain in the full design.
+
+Launched the expanded 496-fit batch with four one-thread workers, 2 GB per fit,
+sequence-tree SH-aLRT and NNI-refined ultrafast-bootstrap support, and three
+structural models conditional on each AA topology. The first marker is in
+likelihood optimization. This begins expanded branch estimation; completion,
+uncertainty/model adequacy and biological interpretation remain pending.

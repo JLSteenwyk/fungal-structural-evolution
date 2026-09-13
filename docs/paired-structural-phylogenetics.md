@@ -167,3 +167,41 @@ same script will assess the expanded paired snapshot after it completes. All
 27 manifest lineage/role groups remain in the tables, including zero-coverage
 groups. Compact tables and readback receipts are versioned under
 `metadata/paired_*coverage*`.
+
+## Expanded paired inputs completed; supported fitting started
+
+The expanded acquisition snapshot passes the unchanged paired masks and
+coverage rules for 124 markers, up from 52. Marker 4999134at2759 remains
+coverage-limited. Emitted alignments have 5–135 taxa and 73–1,184 columns per
+marker; their union includes 322 taxa (304 fungal entries, 18 outgroups).
+Independent FASTA readback checked every AA/3Di identity set, dimension,
+missingness mask and per-taxon usable-marker count.
+
+Twenty-three of 27 manifest lineage/role groups have usable markers.
+Aphelidiomycota, Calcarisporiellomycota, Sanchytriomycota and the Corallochytrea
+outgroup group have none in this snapshot. All 526 entries remain in the
+coverage audit and ongoing acquisition/prediction design. Group presence does
+not imply dense coverage or sufficient support for every branch. The complete
+matrix-level sequential mask retains 4,160,922 observations before per-marker
+eligibility/column removal; this is distinct from whole-model state counts.
+
+The 496-fit batch has started: each of 124 markers receives an AA LG+F+G4 tree
+search with 1,000 SH-aLRT and 1,000 NNI-refined ultrafast-bootstrap replicates,
+then AF+G4, AF+F+G4 and LLM+G4 fits on that exact AA topology. Four concurrent
+one-thread jobs use up to 2 GB memory each. Input dimensions, a conservative
+1–96-hour runtime/10-GB output planning envelope, software and commands are
+pinned in `metadata/expanded_paired_fit_resource_plan.json` and
+`metadata/expanded_paired_fit_config.json`. Actual optimization has begun.
+
+```bash
+python scripts/run_paired_marker_fits.py \
+  --inputs results/phylogeny/paired-inputs-gdm-expanded-v1 \
+  --models data/structural_models/garg-hochberg-v3 \
+  --output results/phylogeny/paired-marker-fits-gdm-expanded-v1 \
+  --alrt 1000 --bootstrap 1000
+```
+
+These are candidate-marker branch fits conditional on selected sites and
+sequence topology. Gene-copy issues, model adequacy, topology and branch-length
+uncertainty, phylogenetic placement, geometry calibration and predictor
+circularity remain to be addressed before acceleration or selection claims.
