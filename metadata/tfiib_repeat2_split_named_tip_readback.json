@@ -1,0 +1,34 @@
+{
+  "status": "passed_independent_named_tip_reference_split_readback",
+  "repeat_comparison_receipt_sha256": "658110cf76fcd3cbb1e0741ff420d1abeb28228aaab22a381556524d64220493",
+  "reference_side_tips": 485,
+  "reference_branch_support_label": "99.8/100",
+  "difference_from_exploratory_split": [
+    {
+      "entry_id": "G0001173",
+      "taxon_id": "F6039",
+      "protein_id": "XP_065329635.1",
+      "sequence_id": "S7f282ffe3bbe4571e6a80426828b07d19e82fbb22fb6e08c8b6e7c5dd8bcc644",
+      "query_source": "marker-inputs-v1",
+      "protein_length": "376",
+      "gene_ids_json": "[\"gene-VNE69_05082\"]",
+      "gene_mapping_status": "unique_gene",
+      "representative_decision": "longest_per_gene_lexical_tiebreak",
+      "TFIIB_hits": "2",
+      "BRF1_hits": "0",
+      "Zn_Ribbon_TF_hits": "1",
+      "selected_busco_markers_json": "[\"4986044at2759\"]",
+      "pair_status": "eligible_ordered_pair",
+      "species_name": "Vairimorpha necatrix",
+      "study_role": "ingroup",
+      "lineage_group": "Microsporidia",
+      "BRF1_evidence_class": "BRF1_not_detected",
+      "selected_focal_marker": "True",
+      "curated_hybrid_taxon": "False",
+      "interpretation": "GA-profile detection class, not validated function or resolved orthology. Non-detection is not proven domain loss; distinct entries need gene/subgenome reconciliation.",
+      "best_split_side": "BRF1_enriched",
+      "class_disagrees_with_split": "True"
+    }
+  ],
+  "interpretation": "Independent named-tip set search on ML tree, not an independent recount of all bootstrap trees. Both repeat and combined alignment share sites."
+}

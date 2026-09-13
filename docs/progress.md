@@ -1068,3 +1068,17 @@ biological uncertainty. Both full production annotation runs and the larger
 research analyses remain incomplete. The prior turn completed the local
 assessment; this turn completes its AlphaFold counterpart. The full goal remains
 active.
+
+
+### Second TFIIB repeat supports the fixed class-associated split
+
+Repeat 2 completed with all 1,040 gene-copy tips and 1,000 retained bootstrap
+trees. The fixed combined-domain bipartition is present with SH-aLRT 99.8 and
+998/1,000 exact bootstrap occurrences. An independently checked named-tip search
+confirms the ML split. A nearby split improving annotation agreement by one
+Vairimorpha necatrix copy is much weaker (65.7 SH-aLRT, 471/1,000 bootstraps),
+so both results are retained explicitly. The result reinforces the copy-mixture
+review without certifying orthology or independent replication. Repeat 1 and
+species/gene reconciliation remain pending. The prior turn completed AlphaFold
+surface-resolution validation; this turn advances phylogenetic sensitivity.
+The full project remains active and incomplete.

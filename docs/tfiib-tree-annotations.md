@@ -89,3 +89,36 @@ Downstream confirmatory summaries must consume the explicit review status.
 python scripts/apply_marker_review_caveats.py \
   --output results/phylogeny/marker-review-overlay-v1
 ```
+
+
+## Completed second-repeat sensitivity
+
+The second positional repeat (92 alignment columns, the same 1,040 gene-copy
+tips) completed its supported tree analysis. The exact 485/555-tip bipartition
+identified in the combined-domain alignment occurs in its ML tree with SH-aLRT
+99.8 and UFBoot label 100. Direct recount finds that exact split in 998 of 1,000
+retained bootstrap trees; retain the count alongside the displayed support
+label. An independent named-tip-set search also verified the ML bipartition.
+Its BRF1-enriched side contains all 473 detected copies and 12 undetected copies.
+
+The repeat's exploratory minimum-domain-class-disagreement split instead has
+484/556 tips and moves one BRF1-undetected copy: G0001173, Vairimorpha necatrix
+(F6039), XP_065329635.1, gene VNE69_05082. This is the selected focal BUSCO copy
+and contains two TFIIB hits plus one Zn_Ribbon_TF hit. The nearby split improves
+class agreement by one tip but is weakly supported (SH-aLRT 65.7, UFBoot label
+47, direct bootstrap count 471/1,000). Selecting the better-fitting annotation
+split would therefore hide the distinction between domain-label agreement and
+phylogenetic support. Domain non-detection and these class labels do not prove
+function or domain loss.
+
+```bash
+python scripts/compare_tfiib_repeat_split.py --repeat results/phylogeny/tfiib-repeat-trees-v1/repeat2 --output results/phylogeny/tfiib-repeat2-split-review-v1
+```
+
+The comparison checks completion receipts, coordinate-independent tree and
+bootstrap hashes, all tip identities and branch validity, then recounts both
+fixed-reference and exploratory splits in all 1,000 bootstraps. Repeat data are
+part of the combined alignment, so agreement is a sensitivity result, not
+independent replication. Repeat 1 is still running. Rooting, duplication timing
+and species/gene reconciliation remain required; the existing mixed-copy marker
+caveat remains in force.
