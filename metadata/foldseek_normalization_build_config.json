@@ -1,0 +1,21 @@
+{
+  "revision": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "source_url": "https://codeload.github.com/steineggerlab/foldseek/tar.gz/e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "archive_sha256": "96f5dd38d062093beb802f4de0b22bb76b165f4a081d9b10b7024c744c5f3ede",
+  "producer_sha256": "376e6281daa2365a39e7f9166f99d768a891026c8a0ae0bf4976adf1c71d6519",
+  "configure_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-build-tools-v1/bin/cmake",
+    "-S",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-normalization-build-v1/foldseek-e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+    "-B",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-normalization-build-v1/build",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DHAVE_AVX2=1",
+    "-DENABLE_PROSTT5=0",
+    "-DENABLE_CUDA=0"
+  ],
+  "cmake_version": "cmake version 3.31.6\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+  "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "rust_version": "rustc 1.97.0 (2d8144b78 2026-07-07)\n",
+  "interpretation": "Same source and toolchain for unmodified and output-normalization patch builds; production binary unchanged. No biological result until rescoring readback."
+}

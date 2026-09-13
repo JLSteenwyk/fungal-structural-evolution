@@ -1,0 +1,19 @@
+{
+  "status": "prelaunch_isolated_normalization_build",
+  "revision": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "cpu_jobs": 4,
+  "memory_gb_planning": 16,
+  "disk_gb_planning": 10,
+  "wall_hours_planning": [
+    0.2,
+    4
+  ],
+  "cost": "Existing authorized host; no new charges",
+  "build_variants": [
+    "unmodified pinned source",
+    "same source with +1 in alignment score output denominator only"
+  ],
+  "purpose": "Within-toolchain control and corrected fixed-alignment rescoring; production binary unchanged",
+  "cmake_version": "3.31.6",
+  "free_disk_bytes": 12535709962240
+}

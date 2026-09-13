@@ -239,3 +239,33 @@ python scripts/audit_cluster_score_normalization.py --traces results/structural_
 The trace export command, source URLs/hashes and complete 72-case table are
 tracked in `metadata/cluster_score_normalization_*`. Source and full trace
 tables are outside Git. No installed executable or original result was altered.
+
+### Isolated normalization-control build started
+
+An isolated build now compiles the pinned revision twice with the same toolchain:
+unmodified source, then a one-expression patch adding one to both endpoint spans
+in the `alntmscore` output case. This tests inclusive minimum-span normalization;
+it does not change search, clustering, other score outputs or the production
+installation. A matched unmodified build is needed to separate the patch effect
+from compiler/build differences. Neither variant has yet produced a rescoring
+result.
+
+The resource plan allocates four build jobs, 16 GB memory and 10 GB disk on the
+existing host, with a 0.2–4 hour planning range. CMake 3.31.6 is isolated in a
+project-local virtual environment; compiler and Rust versions, source archive
+hash and exact configuration command are recorded. ProstT5 and CUDA are disabled
+for this CPU scoring build. Source extraction uses tar data filtering.
+
+```bash
+python -m venv data/software_source/foldseek-build-tools-v1
+data/software_source/foldseek-build-tools-v1/bin/python -m pip install cmake==3.31.6
+python scripts/build_foldseek_normalization_control.py --output data/software_source/foldseek-normalization-build-v1 --cmake data/software_source/foldseek-build-tools-v1/bin/cmake
+```
+
+`scripts/rescore_cluster_normalization_controls.py` is prepared for use after
+the build receipt exists. It verifies binary hashes and pins all source database
+files, then performs sequential exact-score conversions of the original saved
+alignments with both builds. Its planned runtime uses the observed 17.5-minute
+original conversion, with a broader 0.5–12 hour allowance for both variants.
+Numerical readback and membership sensitivity must follow; no exclusion has
+been reversed based on source inspection alone.

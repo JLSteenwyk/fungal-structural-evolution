@@ -1204,3 +1204,14 @@ rescoring; no scores were clamped, rescaled or reinstated. The prior turn
 quantified filtering coverage; this turn identifies a likely implementation
 cause behind some exclusions. Existing prediction, paired-fit and geometry
 processes remain live. The overall research goal remains active and incomplete.
+
+### Matched-toolchain normalization control build launched
+
+Started an isolated four-job build of the pinned Foldseek revision, producing
+an unmodified control and an inclusive-span output-normalization variant with
+the same toolchain. Source/configuration hashes and a resource plan are tracked;
+configuration passed and the unmodified compilation is verified live. Prepared
+receipt-gated rescoring of the unchanged saved alignments. The previous turn
+identified a likely normalization issue; this turn starts the controlled test
+needed before correcting scores or membership. Existing prediction and paired
+analysis processes remain live. The overall research goal remains incomplete.
