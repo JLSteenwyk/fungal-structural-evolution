@@ -5,3 +5,13 @@
 `sampling_manifest.tsv`: selected/review taxa only. Fields: taxon_id (stable project ID), species_name, species_taxid, study_role (ingroup/outgroup/boundary_review), lineage, assembly_accession, annotation_source_version, proteome_url, cds_url, genome_url, assembly_level, busco_complete_pct, contamination_status, ecology, ecology_source, structure_coverage, inclusion_reason, status. Empty values mean unknown, never zero or absence. No rows yet because selection is not complete.
 
 `source_receipts.json`: source URL, retrieval time, local ignored path, SHA256 and byte size. Catalog hashes pin snapshots; remote content may change. Preserve local snapshots or archive externally before publication.
+
+`assembly_candidates_taxonomy.tsv`: NCBI ranked lineage joined by species_taxid. Missing IDs remain missing; taxonomy updates and merged IDs require explicit follow-up.
+
+`taxonomy_coverage.json`: species coverage per NCBI phylum, including unclassified and missing-lineage cases. NCBI Fungi membership does not resolve competing biological circumscriptions.
+
+`species_assembly_candidates.tsv`: one provisionally preferred annotated latest assembly per species. URL templates are not yet availability-verified. This is not the final sample.
+
+`timetree_published_taxa.tsv`: 153 taxa and original data sources from Szánthó et al. Supplementary Tables 1–2. Published roles and taxonomy do not assign project roles; some published sources are transcriptomes rather than genomes. `timetree_source.json` preserves publisher file metadata and license. The downloaded archive's publisher MD5 was verified.
+
+Use `make restore-sources` to verify cached snapshots or restore them if the remote content still matches recorded SHA256. If mutable NCBI content has changed, the command fails rather than claiming exact reproduction. `make taxonomy`, `make published-taxa`, and `make species-candidates` rebuild derived tables. openpyxl is needed for the published workbook import.

@@ -2,7 +2,7 @@
 
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.
 
-Status: project initialized; public assembly catalog inventory underway. No taxa are yet finalized, structures predicted, or evolutionary results established. Full-scale design; no separate pilot.
+Status: project initialized; public assembly catalogs and taxonomic coverage inventoried; species selection underway. No taxa are yet finalized, structures predicted, or evolutionary results established. Full-scale design; no separate pilot.
 
 ## Project records
 - [Original objective](docs/objective.txt)
@@ -14,6 +14,6 @@ Status: project initialized; public assembly catalog inventory underway. No taxa
 - [Metadata definitions](metadata/README.md)
 
 ## Reproduction
-Python 3.10+ standard library suffices for metadata inventory. Run `make inventory` to retrieve public NCBI fungal catalogs, record checksums, and generate candidate tables. These are discovery catalogs, not a final sample. Raw downloads remain in ignored `data/`; versioned metadata records source URLs and hashes.
+Python 3.10+ standard library suffices for NCBI metadata inventory; openpyxl is used to import published supplementary tables. Run `make inventory` to retrieve public NCBI fungal catalogs, record checksums, and generate candidate tables. These are discovery catalogs, not a final sample. Raw downloads remain in ignored `data/`; versioned metadata records source URLs and hashes.
 
 Downstream workflow implementation is pending sample selection and data inventory. Large files must not enter Git history. GitHub: public repository https://github.com/JLSteenwyk/fungal-structural-evolution (user-confirmed).

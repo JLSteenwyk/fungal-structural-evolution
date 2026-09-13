@@ -16,5 +16,23 @@
     "retrieved_at_utc": null,
     "provenance_note": "Initial curl retrieval during project initialization; exact retrieval timestamp not logged. File mtime recorded separately.",
     "file_mtime_utc": "2026-09-13T02:16:50.226252+00:00"
+  },
+  "ncbi_taxonomy": {
+    "url": "https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz",
+    "path": "data/raw/new_taxdump.tar.gz",
+    "sha256": "a6ada3129845e683df6b2a7c1ce8b712d1e8d26c116ec001625d51bba3fef458",
+    "bytes": 161820772,
+    "file_mtime_utc": "2026-09-13T02:21:05.228745+00:00",
+    "retrieved_at_utc": null,
+    "provenance_note": "Initial curl retrieval; file mtime recorded. Preserve this snapshot; future downloads may change."
+  },
+  "timetree_supplement": {
+    "url": "https://ndownloader.figshare.com/files/57996817",
+    "doi": "10.6084/m9.figshare.28046594",
+    "figshare_version": 1,
+    "sha256": "6ad0c25f3c6184a291e11267ff0aa0e9b1059523d3fea4ae1d59e11992b7c28a",
+    "publisher_md5_verified": true,
+    "bytes": 56697488,
+    "path": "data/raw/timetree_data.zip"
   }
 }
