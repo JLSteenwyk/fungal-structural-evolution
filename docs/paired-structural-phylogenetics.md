@@ -141,3 +141,29 @@ rejection of invalid replication counts, and detection of missing, repeated
 or changed bootstrap taxon identities and incomplete replicate counts. The
 two existing unrooted-edge correspondence tests also pass. Existing outputs
 retain their original producer hashes; use a new output for the updated runner.
+
+## Lineage coverage of the earlier paired snapshot
+
+A full-grid coverage summary independently checked the actual 52 paired AA/3Di
+FASTA taxon sets against every per-taxon usable-marker count. All 105 retained
+taxa are Ascomycota; only two have at least ten usable markers. There are 286
+usable taxon/marker combinations. The source snapshot has models for 118 taxa,
+also entirely Ascomycota. Its conditional branch analyses therefore provide no
+evidence for structural-rate differences across fungal phyla or outgroups.
+
+Across 526 × 49,027 matrix cells, the sequential mask assigns 135,903 observed,
+3,009,758 noncanonical/missing sequence, 22,618,607 absent structural mapping,
+84 invalid native feature, 23,736 low feature pLDDT and 114 high feature PAE.
+These counts include all markers before per-taxon and per-marker eligibility;
+they are not the dimensions of the final paired alignments. Missing matrix
+sequence includes gaps and noncanonical symbols, and missing structures do not
+establish biological absence. Sequential reason counts are not independent
+causal effects of each filter.
+
+Reproduce with `summarize_paired_lineage_coverage.py --inputs
+results/phylogeny/paired-structural-inputs-v1 --output
+results/phylogeny/paired-lineage-coverage-v1` using a new output for reruns. The
+same script will assess the expanded paired snapshot after it completes. All
+27 manifest lineage/role groups remain in the tables, including zero-coverage
+groups. Compact tables and readback receipts are versioned under
+`metadata/paired_*coverage*`.

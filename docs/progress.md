@@ -392,3 +392,18 @@ sequence identities pass independent readback. Resource estimates use current
 production timings (0.467 GPU hours of median-bin inference, 1.10 hours with
 allowance). Prediction and geometry comparison are pending availability of the
 currently occupied authorized GPU; the missing-structure production continues.
+
+## Paired lineage coverage limitation quantified
+
+Completed the full 65,750-cell taxon/marker coverage summary for the earlier
+paired snapshot. Independent checks against all 52 actual paired FASTA sets
+show that the 105 retained taxa are entirely Ascomycota, with only two retaining
+at least ten markers. All 27 manifest lineage/role groups remain in the output,
+including zero-coverage groups. Prior branch results cannot support
+cross-phylum structural-rate claims. Expanded lineage coverage is pending its
+completed paired inputs.
+
+All 13,153 PAE files now also pass cache revalidation bound to the final expanded
+residue mapping, with zero failures. The exact manifest and mapping receipt
+hashes pass readback. Confidence qualification is running; its joint-filter
+counts are not yet claimed.

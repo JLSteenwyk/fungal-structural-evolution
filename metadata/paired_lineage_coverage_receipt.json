@@ -1,0 +1,26 @@
+{
+  "status": "complete_paired_lineage_coverage",
+  "source_receipt_sha256": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "a11781d7295b1b564d7df8bf90893e7af0f15959458de39d8166f2eae9463cdb",
+  "taxa": 526,
+  "markers": 125,
+  "taxon_marker_rows": 65750,
+  "taxa_with_any_model": 118,
+  "taxa_with_any_usable_marker": 105,
+  "represented_groups": 27,
+  "groups_with_usable_markers": 1,
+  "site_partition": {
+    "observed": 135903,
+    "noncanonical_or_missing_sequence": 3009758,
+    "no_structural_mapping": 22618607,
+    "invalid_native_feature": 84,
+    "low_feature_plddt": 23736,
+    "high_feature_pae": 114
+  },
+  "interpretation": "Every manifest entry retained. Usable means eligible in a marker with >=4 eligible taxa, not resolved orthology, supported branches or selection suitability. Site reasons follow sequential masking and are not independent causal effects. Missing sequence combines matrix gaps/noncanonical symbols; missing structure is not biological absence. Lineage labels are manifest groups, not inferred clades.",
+  "artifacts": {
+    "taxon_coverage.tsv": "1a330432d445ab449c3d5433c73363b716d1cee083c76a99fa3c7a088d472529",
+    "lineage_coverage.tsv": "97d4cc7452a68293f4bb2e9ed1e690322c4c03d00d5d68cde3cf61e8a9e7a007"
+  }
+}

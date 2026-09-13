@@ -1,0 +1,13 @@
+{
+  "status": "complete_paired_lineage_coverage_readback",
+  "source_receipt_sha256": "ae2a71b62df5e9a8d392572be8a60ed7c9354a2519d1f79b22228bf5801e41d2",
+  "paired_fasta_marker_files": 52,
+  "taxa_with_usable_marker": 105,
+  "checks": [
+    "All output hashes",
+    "Every per-taxon usable count agrees with actual paired AA and 3Di FASTA files",
+    "All 52 paired taxa sets agree",
+    "Full matrix site partition equals 526 * 49027",
+    "All retained taxa have Ascomycota manifest label"
+  ]
+}
