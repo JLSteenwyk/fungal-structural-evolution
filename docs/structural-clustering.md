@@ -210,3 +210,32 @@ source summary rows and the complete 526-taxon universe. The additional
 source-length-confidence table was not included in that independent readback.
 Tables and receipts are tracked in `metadata/reviewed_structure_coverage_*`.
 Lineage rows describe available models; the taxon table preserves absent inputs.
+
+### Source and alignment traces explain the possible score overshoot
+
+Retrieved and hashed scoring source at the exact reported binary revision
+`e3fadcd07f971e864c094ac4f3a78bf4ed845e07`. The
+[alignment-score conversion](https://github.com/steineggerlab/foldseek/blob/e3fadcd07f971e864c094ac4f3a78bf4ed845e07/src/strucclustutils/structureconvertalis.cpp#L996)
+passes `min(qEnd-qStart, tEnd-tStart)` as normalization length. All 32,050
+exported CIGARs reconstruct inclusive endpoints, so that expression omits one
+position from the shorter span. The
+[exact-score implementation](https://github.com/steineggerlab/foldseek/blob/e3fadcd07f971e864c094ac4f3a78bf4ed845e07/src/commons/TMaligner.cpp#L107)
+uses normalization in the final distance scale and score optimization.
+
+The full trace audit finds 7,398 alignments where the implemented denominator
+is smaller than the number of matched positions. All 72 observed scores above
+one are in this set and satisfy the corresponding upper bound
+`matched_positions / implemented_denominator` (allowing printed precision).
+For example, M000926→M011904 is `122M` over positions 1–122, denominator 121,
+with score 1.008. This supports an off-by-one normalization explanation, but
+has not yet been confirmed by running a corrected binary. Merely multiplying
+scores by a length ratio would not repeat the altered optimization. Deferred
+members remain deferred pending corrected rescoring and threshold sensitivity.
+
+```bash
+python scripts/audit_cluster_score_normalization.py --traces results/structural_clusters/edge-backtrace-review-v1 --review results/structural_clusters/edge-exact-review-v1 --source data/software_source/foldseek-score-review-v1 --output results/structural_clusters/normalization-audit-v1
+```
+
+The trace export command, source URLs/hashes and complete 72-case table are
+tracked in `metadata/cluster_score_normalization_*`. Source and full trace
+tables are outside Git. No installed executable or original result was altered.

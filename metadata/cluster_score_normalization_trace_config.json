@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+    "convertalis",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "results/structural_clusters/edge-validation-v1/alignments",
+    "results/structural_clusters/edge-backtrace-review-v1/backtraces.tsv",
+    "--threads",
+    "2",
+    "--format-output",
+    "query,target,qstart,qend,qlen,tstart,tend,tlen,alnlen,cigar"
+  ],
+  "cpu_threads": 2,
+  "memory_gb_planning": 8,
+  "output_gb_planning": 1,
+  "wall_minutes_planning": [
+    1,
+    20
+  ],
+  "cost": "Existing authorized host",
+  "purpose": "Export retained alignment traces without geometric rescoring",
+  "exact_completion_sha256": "1fa1243c0d9ca2f8af6c72d58646bb6668f815f314cf0bd17f11ab12e5b5de56"
+}

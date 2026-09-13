@@ -1192,3 +1192,15 @@ preceding turn derived reviewed groups; this turn characterizes their missingnes
 for downstream evolutionary interpretation. Prediction, paired-fit, accessibility
 and paired-geometry processes were observed live; their full receipts are not
 yet available. The overall research goal remains active and incomplete.
+
+### Pinned source and full alignment traces support normalization explanation
+
+Reviewed Foldseek source at the reported binary revision and exported all 32,050
+saved alignment traces. Every CIGAR agrees with inclusive endpoints, whereas
+alignment-TM normalization uses end-minus-start. All 72 scores above one have
+fewer denominator positions than matched positions and obey the resulting
+upper bound. This provides a concrete explanation to test with corrected
+rescoring; no scores were clamped, rescaled or reinstated. The prior turn
+quantified filtering coverage; this turn identifies a likely implementation
+cause behind some exclusions. Existing prediction, paired-fit and geometry
+processes remain live. The overall research goal remains active and incomplete.

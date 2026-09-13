@@ -1,0 +1,18 @@
+{
+  "status": "complete_pinned_normalization_source_and_trace_review",
+  "source_revision": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "source_receipt_sha256": "c1ca4f4f1d26cf911ffd2f530849b0ce5ac61ee5fcca002f43ad5129febecab4",
+  "trace_config_sha256": "28a100238946ec3220421df91bd2e411a44597f4664a7c5da019ec53192441d2",
+  "trace_table_sha256": "56da59e084509b3aa549b170f95dc32962af1132b0108233455a3f4a9ae766a7",
+  "review_receipt_sha256": "2cf867ed67ebda589f122cab4e29ea8d630f63b990e5da17a2f82366548c8394",
+  "script_sha256": "131e5248c26802bb0cd5657b3dd55aa1d8ed709a924195c49b5b434afbb1c2cc",
+  "directed_alignments_checked": 32050,
+  "scores_above_one": 72,
+  "denominator_below_matched_positions": 7398,
+  "all_overshoots_within_implemented_normalization_bound": true,
+  "interpretation": "Pinned source uses min(end-start) while every exported CIGAR reconstructs inclusive endpoints. All overshoots have a denominator smaller than their matched-position count and obey its resulting upper bound. This supports an off-by-one normalization explanation; no patched binary or independent TM optimizer has been run. Do not rescale existing scores: normalization also changes distance scale and optimized rotation. Original exclusions remain until corrected rescoring and threshold sensitivity are performed.",
+  "artifacts": {
+    "overshoot_cases.tsv": "505686159378bf13850505ea7ea0b3ffdbee2d065f31557f45b4c1009daedff7",
+    "normalization_review.tsv": "817ef894bf99f71d73bae7dbc6f6aadf73795c464ef82267d83240acd728b05c"
+  }
+}
