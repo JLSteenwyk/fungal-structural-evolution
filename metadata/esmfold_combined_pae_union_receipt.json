@@ -1,0 +1,31 @@
+{
+  "status": "complete_union_of_verified_local_pae_exports",
+  "models": 10048,
+  "mapping_receipt_sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+  "encoding_union_receipt_sha256": "ecc47fc33c62c61bca12e91a980f25782d453933ab4dad918d587e619f213342",
+  "source_cohorts": [
+    {
+      "path": "results/structural_pae/esmfold-partial-v1",
+      "receipt_sha256": "b83b8d840861c03216174e96d167467bd386731bf5a0f94e3d08e67ca1c7bb10",
+      "models": 5121,
+      "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5"
+    },
+    {
+      "path": "results/structural_pae/esmfold-followon-complete-v1",
+      "receipt_sha256": "d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f",
+      "models": 4252,
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab"
+    },
+    {
+      "path": "results/structural_pae/esmfold-ecology-complete-v1",
+      "receipt_sha256": "baafff96954d1fc55e7ed9cdbff428a20bc5ab49878c200534e9d978c09497ab",
+      "models": 675,
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62"
+    }
+  ],
+  "script_sha256": "39739e40eaa623e61d5c8abf5f6cee02761a398158f7723e60705aec547bc7c9",
+  "artifacts": {
+    "pae_manifest.json": "b0218d6cc4966e6e6e77898e916efd8ced02ff7438b14630be8471452ae52185"
+  },
+  "interpretation": "Unchanged source export rows, matrix hashes and original NPZ hashes checked against combined model provenance and qualified-cohort receipts. Original per-cohort lossless-export and full-context audits remain authoritative. No new PAE computation or confidence calibration."
+}

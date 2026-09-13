@@ -1,0 +1,20 @@
+{
+  "status": "prelaunch_combined_ESMFold_paired_site_geometry",
+  "markers": 89,
+  "maximum_taxon_pairs": 704031,
+  "maximum_alignment_columns": 462,
+  "workers": 1,
+  "cpu_threads": 1,
+  "memory_gb_planning": 24,
+  "disk_headroom_gb": 10,
+  "wall_hours_planning_range": [
+    2,
+    48
+  ],
+  "input_receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+  "producer_sha256": "3dd4aaf7e49813d18b8bc89345b74a1597ec62effe3f51a07d6f7ad779a66a49",
+  "disk_free_bytes": 12487972773888,
+  "estimate_basis": "Earlier full local geometry completed 266593 pairs; AF expansion completed 744853 pairs. Combined run retains one worker and per-marker coordinate/PAE cache, with proteins no longer than 512 residues. Pair count alone does not determine runtime.",
+  "cost": "Existing authorized CPU host; no new charges",
+  "interpretation": "Direct geometry on identical paired confidence-qualified residues; no acceleration or physical interpretation of alphabet branch lengths implied."
+}

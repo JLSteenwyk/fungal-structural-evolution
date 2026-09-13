@@ -1993,3 +1993,17 @@ runtime bound. Inputs span 4–237 taxa and 73–462 columns per marker. Matched
 direct geometry for this combined snapshot, uncertainty resampling, reconciliation
 and controlled acceleration/coupling analyses remain pending. The full fungal
 sampling, larger atlas and all eight evolutionary analyses remain the goal.
+
+
+Combined PAE manifest integration completed for all 10,048 models. Every
+exported matrix and original NPZ checksum matched combined provenance and the
+original qualification receipts; every emitted manifest field independently
+matched its original source row. The derived manifest preserves original files
+and lossless-export/context audits rather than recalculating PAE.
+
+Launched direct geometry for all 89 combined paired markers: up to 704,031 taxon
+pairs, on exactly the paired observed sites, with whole-chain/local comparisons
+and directional PAE filtering. One CPU worker, 24 GB memory allowance, 10 GB
+output headroom; 2–48 hours is a planning scenario. This will benchmark combined
+alphabet paths against coordinate changes after supported paired fits complete.
+Full numeric/output audit and path comparison remain pending.
