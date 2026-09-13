@@ -1644,3 +1644,16 @@ optimization process, then audits all 1,152 refits and runs the revised
 comparison. The controller entered its expected waiting state. Full execution,
 selected-fit numerical readback and broader evolutionary analyses remain
 outstanding; the overall goal is active and incomplete.
+
+
+### Full raw rate-comparison readback implemented and validated
+
+Added a reproducible checker for all source rates, tree edges, likelihoods,
+summary statistics and fit choices. The original complete comparison passed
+all 288 fit summaries, 66,284 site comparisons and 36,488 branch comparisons.
+The checker uses separate rate parsing and postorder edge collection, with
+shared Bio.Phylo Newick parsing explicitly recorded. Optimized fit choices
+will be checked from all four raw diagnostic reports rather than trusting the
+selected-fit summary. Full optimization and its queued audit/comparison remain
+live; execution of the optimized readback remains pending. No biological
+rate conclusion or project completion is claimed.

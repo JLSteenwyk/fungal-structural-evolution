@@ -256,3 +256,32 @@ Controller: `results/phylogeny/freerate-comparison-controller-esmfold-v1`.
 Future full audit: `results/phylogeny/freerate-optimization-all-audit-esmfold-v1`.
 Future comparison: `results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-v1`.
 Independent selected-fit numerical readback remains required after completion.
+
+
+### Reproducible raw-output readback for rate comparisons
+
+`scripts/readback_rate_heterogeneity.py` now checks every comparison row against
+raw rate files, reports and trees. It collects descendant sets in postorder
+without importing the production tree-edge helper, checks all split identities
+and lengths, recomputes rank correlations with scipy.stats.spearmanr and median
+changes with Python statistics, and validates all likelihood differences and
+flags. It verifies source receipt/artifact hashes first. Bio.Phylo remains the
+shared Newick parser; these are independent calculations of exported values,
+not independent likelihood optimizations.
+
+The complete original comparison passed: 288 fits, 66,284 site comparisons and
+36,488 branch comparisons. Receipt:
+`metadata/esmfold_rate_comparison_independent_readback.json`.
+When an optimized comparison is supplied, the checker additionally reads all
+four diagnostic likelihoods per fit, recalculates the maximum and verifies that
+the selected tree and rates come from that fit, retaining the original on ties.
+That optimized execution remains pending. After the queued comparison completes:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/readback_rate_heterogeneity.py \
+  --comparison results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-v1 \
+  --gamma results/phylogeny/paired-site-rates-esmfold-v2 \
+  --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 \
+  --optimization results/phylogeny/freerate-optimization-all-esmfold-v1 \
+  --output results/phylogeny/rate-comparison-readback-optimized-v1
+```

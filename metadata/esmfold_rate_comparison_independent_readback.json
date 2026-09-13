@@ -1,0 +1,10 @@
+{
+  "status": "passed_full_rate_comparison_readback",
+  "fits": 288,
+  "sites": 66284,
+  "branches": 36488,
+  "optimized_fits_selected": 0,
+  "comparison_receipt_sha256": "65494737c6b3596c4ea6a0b360ae9065ba96ea674d883bce1596077fab32acc1",
+  "script_sha256": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+  "scope": "All raw rate values, tree edges, likelihoods, grid identities and summary statistics recomputed. When optimization is present, all four raw diagnostic likelihoods determine selection independently. Tree parsing uses Bio.Phylo with separate postorder edge collection; Spearman uses scipy.stats.spearmanr. No independent likelihood optimization, model adequacy or biological inference."
+}
