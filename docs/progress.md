@@ -290,3 +290,13 @@ The index preserves four alternative products and 313 unresolved/provisional gen
 ## Marker code provenance and partial-boundary audit started
 
 Verified NCBI's documented default-code and GFF boundary conventions against its primary documentation. Started a full 519-taxon marker annotation audit to record CDS/region/default code provenance, strand-aware terminal and internal partialness, phase continuity, overlaps and strict source-CDS translation. The original full-proteome producer remains unchanged and running. Five focused tests passed; initial taxa completed. Annotation/translation matches remain separate from genome reconstruction and codon-selection eligibility.
+
+## Full marker boundary audit completed; codon projection started
+
+The completed 519-taxon audit covers 59,269 marker sequences: 58,967 exact translations, 280 non-triplet lengths and 22 mismatches. Ordered feature checks pass for all records, with 919 partial 5-prime ends, 965 partial 3-prime ends and 201 nonzero initial phases retained as separate flags. No internal partial boundaries or code conflicts were found. Code provenance is documented default for 58,562 markers and explicit CDS metadata for 707. Artifact hashes, full identity coverage and recounted summaries passed independent readback.
+
+Started codon projection for all 125 markers using the unchanged full MAFFT protein alignments and 50-percent occupancy columns. Five projection tests pass. Excluded records remain explicit; accepted partial and gene/isoform flags remain attached. Independent output translation readback is prepared and will run after projection completes. These alignments are not yet qualified for selection models.
+
+## Full codon alignment projection completed
+
+All 125 marker projections finished: 59,334 accepted sequence rows, 506 explicitly excluded, and 63,750 unchanged protein-mask columns represented as codons. Accepted taxa range from 418 to 502 per marker. There are 123 mixed-code markers, requiring code-compatible modeling subsets rather than one indiscriminate genetic code. Producer receipts and compact review rows are versioned. Independent per-codon translation readback is running; its success is not yet claimed. Selection feasibility, model fitting and saturation assessment remain pending.

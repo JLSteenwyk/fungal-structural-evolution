@@ -121,4 +121,28 @@ python scripts/audit_ncbi_marker_boundaries.py --output results/cds/ncbi-marker-
 python -m unittest discover -s tests -p test_marker_cds_boundaries.py
 ```
 
-This full 519-taxon audit is running with one worker and source-hash checks. Prelaunch scheduling estimate: 3–30 minutes, 2 GB memory and 1 GB output; see `metadata/marker_boundary_resource_plan.json`. Five tests cover reverse-strand partial starts, internal versus terminal boundaries, regional/default codes, code conflicts and split-codon phase continuity. The output supplements the marker source index and full-proteome translation audit. It does not reconstruct NCBI genomic sequence, repair frames or establish selection eligibility. External marker boundaries retain their separate verified extraction/projection policies. Producer log: `logs/ncbi_marker_boundaries_v1.log`.
+This full 519-taxon audit completed with one worker and source-hash checks. Prelaunch scheduling estimate: 3–30 minutes, 2 GB memory and 1 GB output; see `metadata/marker_boundary_resource_plan.json`. Five tests cover reverse-strand partial starts, internal versus terminal boundaries, regional/default codes, code conflicts and split-codon phase continuity. The output supplements the marker source index and full-proteome translation audit. It does not reconstruct NCBI genomic sequence, repair frames or establish selection eligibility. External marker boundaries retain their separate verified extraction/projection policies. Producer log: `logs/ncbi_marker_boundaries_v1.log`.
+
+## Codon projection onto fixed protein alignments
+
+The codon projection implementation preserves the 125 full MAFFT marker alignments and their previously hashed 50-percent protein occupancy masks. It verifies full-protein translation before selecting columns, inserts complete triplet gaps for protein gaps, and removes at most one verified terminal stop codon. A mismatch outside the retained columns still fails projection. Output columns map explicitly to the original protein alignment.
+
+NCBI sequences require strict translation agreement and consistent annotation metadata; nonzero initial phases, code conflicts and translational exceptions remain excluded pending coordinate review. Exact partial translations can enter these diagnostic alignments with boundary flags. External sequences inherit their verified extraction/projection policies. Gene alternatives and unresolved mappings remain flagged. Genetic codes are recorded per sequence; mixed-code marker alignments cannot be passed indiscriminately to a single-code selection model.
+
+```bash
+python scripts/build_marker_codon_alignments.py --output results/cds/marker-codon-alignments-v1
+python scripts/verify_marker_codon_alignments.py --alignments results/cds/marker-codon-alignments-v1 --output results/cds/marker-codon-readback-v1
+python -m unittest discover -s tests -p test_codon_alignment_projection.py
+```
+
+Five projection tests cover masked/gapped correspondence, nonstandard codes, mismatches outside retained columns, stop/partial-codon rejection and invalid masks. The independent verifier reads every output codon back against original masked protein columns and checks the complete identity/status universe. The prelaunch plan allows one worker, 3 GB memory, 1 GB output and 1–20 minutes for projection. These are diagnostic codon alignments; clade-specific saturation, copy/gene policies, alignment sensitivity and selection-model eligibility remain separate requirements. Execution/completion status is recorded in the progress log and result receipts.
+
+The completed boundary audit covers **59,269 NCBI marker sequences**: 58,967 strict exact translations, 280 non-triplet CDS lengths and 22 translation mismatches. All have consistent ordered CDS feature metadata under the checked strand/phase/overlap rules. Partial 5-prime and 3-prime boundaries occur in 919 and 965 records respectively (overlap is possible); no internal partial boundary was found. There are 201 nonzero initial phases. These flags remain independent of strict translation status.
+
+The code inventory comprises 58,562 table-1 defaults and 707 explicit CDS codes: 586 table-12, 120 table-26 and one table-6 marker sequences. No marker required source-region code fallback or showed a code conflict. Thus documented defaults resolve code provenance for this marker set without fitting codes to amino-acid agreement. Metadata consistency does not prove that all gene models are biologically correct.
+
+`metadata/ncbi_marker_boundary_receipt.json` preserves source and output provenance; `metadata/ncbi_marker_boundary_readback.json` records independent artifact/identity checks and recounted totals. A compact 1,673-row review table retains translation, boundary or annotation flags in `metadata/ncbi_marker_boundary_review.tsv`; full ordered genomic segments remain outside Git. Codon projection has been launched after successful boundary completion; its final receipt and independent codon readback determine completion.
+
+Projection completed for **all 125 markers**, accepting **59,334 marker/taxon sequences** and excluding 506 with explicit reasons. The unchanged masks retain 63,750 codon columns across markers. Each marker has 418–502 accepted taxa; 123 markers contain more than one translation code. The exclusions comprise 267 non-triplet sequences, 188 initial-phase review cases, 16 annotation-exception cases, 13 with both phase and non-triplet flags, 21 translation mismatches and one annotation-exception/mismatch case. These counts are mutually exclusive status combinations.
+
+The producer receipt is `metadata/marker_codon_alignment_receipt.json`. Compact exclusion/boundary/gene review rows are in `metadata/marker_codon_alignment_review.tsv`. The separate verifier is running and its completion is not yet claimed. Log: `logs/marker_codon_readback_v1.log`. No selection model has been fitted to these codon alignments.
