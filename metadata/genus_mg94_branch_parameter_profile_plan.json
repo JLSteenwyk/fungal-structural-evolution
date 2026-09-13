@@ -1,0 +1,32 @@
+{
+  "status": "prelaunch_full_case_branch_parameter_profiles",
+  "cases": 1655,
+  "branch_parameter_multipliers": [
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    10
+  ],
+  "unconstrained_reoptimization_per_case": 1,
+  "total_optimized_fits": 13240,
+  "fresh_saved_fit_readbacks": 13240,
+  "workers": 4,
+  "threads_per_worker": 1,
+  "memory_allowance_gb": 8,
+  "output_allowance_gb": 20,
+  "planning_hours": [
+    1,
+    24
+  ],
+  "runtime_basis": "Original 1655 MG94 fits consumed 1.0417 summed worker-hours (median 1.95 s, maximum 20.87 s per case). Eight refits per case plus fresh readback and tighter optimization; conservative 1\u201324 wall-hour allowance with four workers.",
+  "optimization_precision": 1e-06,
+  "starts": "Every point starts independently from the original saved model; no warm starts across points. Single-start optimized likelihoods may remain below the global profile maximum.",
+  "fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "slice_receipt_sha256": "60bdf037b9e84df60b14ba49536b40918433e36f09f9fc327eaddf9924de9f73",
+  "executable_sha256": "a773f2de6bf5aa18a15e58078ee9c938de9ad877a17db8ba017db16a9e5df6a9",
+  "cost": "Existing authorized host; no new charges",
+  "interpretation": "Profiles of the saved MG94 branch t parameter, reoptimizing remaining free branch parameters, five exchangeabilities and global omega. Empirical CF3x4 frequencies, genetic code, alignment and topology remain fixed. Because exchangeabilities change, original dS is a case-review label, not the profiled parameter or a dS confidence interval. Finite grid and single-start optimization do not establish global maxima, absence of saturation, calibrated confidence intervals, biological eligibility or selection."
+}

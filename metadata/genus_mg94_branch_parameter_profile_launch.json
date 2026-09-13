@@ -1,0 +1,70 @@
+{
+  "status": "full_profile_queue_verified_live_with_initial_completed_cases",
+  "producer": {
+    "pid": 3626481,
+    "start_ticks": "182654385",
+    "state": "S",
+    "command": [
+      "python",
+      "scripts/profile_genus_longest_branch_parameter.py",
+      "--fits",
+      "results/cds/genus-mg94-diagnostics-v3",
+      "--slices",
+      "results/cds/genus-mg94-longest-branch-slices-v1",
+      "--plan",
+      "metadata/genus_mg94_branch_parameter_profile_plan.json",
+      "--install",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+      "--output",
+      "results/cds/genus-mg94-branch-parameter-profiles-v2"
+    ]
+  },
+  "config_path": "results/cds/genus-mg94-branch-parameter-profiles-v2/config.json",
+  "config_sha256": "be926c7b4da35658876185a2df43c56c18dd0737b294174bc8b1026f09ccfc83",
+  "observed_complete_cases": 10,
+  "observed_optimized_fits_and_fresh_readbacks": 80,
+  "maximum_observed_absolute_readback_error": 8.640199666842818e-11,
+  "completed_case_receipts": [
+    {
+      "case_id": "Aspergillus__4986044at2759__code1",
+      "sha256": "fe78f5ab9a7ddc9cf3ec65ae73baf4f680f8d4a739c4c1046d52497c86391251"
+    },
+    {
+      "case_id": "Naganishia__129234at2759__code1",
+      "sha256": "1bb075761ef05ec79ce0494b836cb7b792b4e858d3d292bbc7825782d27f8f21"
+    },
+    {
+      "case_id": "Naganishia__260326at2759__code1",
+      "sha256": "77128bb8d6c396d8b63c57f2d83abe3a97c32517a4ce9a2d073ff21492fca5d1"
+    },
+    {
+      "case_id": "Naganishia__5013992at2759__code1",
+      "sha256": "c7c2470cb36cb4006bcc3aca68d0a78fa01ce73aa285a116a0f3aa8cbeb9cbdc"
+    },
+    {
+      "case_id": "Saccharomyces__4986044at2759__code1",
+      "sha256": "3075fcb2b666d204a480b3b55480b4f7319ae1e09e50cba0fa68350df8104f56"
+    },
+    {
+      "case_id": "Trichoderma__4810093at2759__code1",
+      "sha256": "fa18f6f8f4208f09546d8ee63df8fd2bfc28f6aa9f772474afda029f657a5bd8"
+    },
+    {
+      "case_id": "Umbelopsis__5005697at2759__code1",
+      "sha256": "f289c5764385c5802f4a3e397a6d36036f915bb41efa18155aad6b4df7c84b20"
+    },
+    {
+      "case_id": "Wallemia__319730at2759__code1",
+      "sha256": "f9938d82e4521112d428fb2dfbf16c236fb7c95535e0951bd921e3a4a4368de8"
+    },
+    {
+      "case_id": "Wallemia__4970538at2759__code1",
+      "sha256": "00f9a38615ecff8a983e28322b36cf8fb143934350a96c40266c21bc95c176bc"
+    },
+    {
+      "case_id": "Wallemia__5013992at2759__code1",
+      "sha256": "3ab7ebf5a1c598f866911a424faa17c1ea522df65b82bb54124d740ece86b774"
+    }
+  ],
+  "scope": "Initial completed-case snapshot, not completion or statistical validation of the planned full queue. No dS confidence interval or selection claim."
+}

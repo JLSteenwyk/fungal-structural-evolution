@@ -807,3 +807,54 @@ python scripts/readback_genus_branch_slices.py \
 ```
 
 Choose a new readback receipt path for reruns.
+
+## Longest-branch parameter profiles: full queue running
+
+The next numerical diagnostic reoptimizes all remaining free MG94 parameters
+while fixing the previously selected longest-dS branch's underlying `t` parameter
+at 0.1, 0.25, 0.5, 1, 2, 4 and 10 times its original value. Each of the 1,655
+cases also receives an unconstrained reoptimization: 13,240 fits in total.
+Every point starts independently from its original saved model, uses HyPhy
+`USE_LAST_RESULTS=1` and optimization precision 1e-6, and retains the same
+alignment, topology, genetic code and empirical CF3x4 frequencies. Five free
+exchangeabilities, global omega and the other branch parameters can change.
+
+These are finite-grid, single-start profiles of **branch parameter t**, not dS
+confidence intervals. Reoptimizing exchangeabilities changes the relationship
+between t and normalized synonymous distance. Original dS remains only a review
+label identifying the case and target. Optimized points may still fall below a
+global profile maximum; no confidence cutoff or saturation certificate is applied.
+The unconstrained fit and best evaluated point both remain explicit, so numerical
+improvements over the original fit cannot be hidden by a single baseline choice.
+
+Every optimized point is checked against its fixed-nuisance starting likelihood.
+The target must stay fixed where constrained. All branch and global free values
+are exported to a complete model, then a fresh HyPhy process reloads it and
+recalculates the likelihood without optimization (tolerance 1e-6). The full branch
+identity grid is checked against the original fit JSON before optimization.
+Detailed parameters, likelihoods, elapsed times, scripts, logs and hashes are
+retained outside Git; the final full-table audit remains pending.
+
+The first launch was retired after fresh readback exposed an exporter defect:
+the assignment parser omitted a last branch when a `SetParameter` command followed
+its semicolon on the same line. No complete case passed that launch. The original
+producer and failed artifacts remain in `genus-mg94-branch-parameter-profiles-v1`,
+with a retirement receipt. The corrected producer preserves trailing commands and
+checks the full branch grid. Its first completed cases pass fresh likelihood
+readback; it runs in the separate immutable v2 directory. Original MG94 fits,
+installed HyPhy libraries and the earlier fixed-nuisance slices are unchanged.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/profile_genus_longest_branch_parameter.py \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --slices results/cds/genus-mg94-longest-branch-slices-v1 \
+  --plan metadata/genus_mg94_branch_parameter_profile_plan.json \
+  --install /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install \
+  --output results/cds/genus-mg94-branch-parameter-profiles-v2
+```
+
+The queue is already running; use a new output path for any later rerun. The plan
+reserves four one-CPU workers, 8 GB memory, 20 GB disk and 1–24 hours on the
+existing host. The original fits consumed 1.042 summed worker-hours; repeated
+tighter fits and fresh readbacks justify the larger allowance. The launch receipt
+is only an initial completed-case/process observation, not full-run completion.

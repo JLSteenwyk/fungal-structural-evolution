@@ -2297,3 +2297,14 @@ three prerequisite-failure tests passed; both controller processes were verified
 live and waiting on the exact original fit producers. This advances automation
 of the expanded structural-branch benchmark; downstream results remain pending.
 See `docs/tree-path-geometry.md` and the versioned controller configurations.
+
+### Nuisance-reoptimized branch-parameter profiles running
+
+Launched the full 1,655-case MG94 diagnostic grid: seven fixed values of the
+longest branch parameter plus one unconstrained reoptimization per case, totaling
+13,240 fits and fresh saved-model likelihood readbacks. A first-launch exporter
+failure was caught by readback, diagnosed and retired with all artifacts retained.
+The corrected v2 queue now checks the complete branch parameter grid; initial
+completed cases reproduce their optimized likelihoods in fresh processes.
+The queue is live. Full summary/audit, interpretation and eligibility review
+remain pending; these parameter profiles are not dS intervals or selection tests.
