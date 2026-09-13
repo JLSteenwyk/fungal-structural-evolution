@@ -24,6 +24,7 @@ def rate_rows(path,expected):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     for name in ['inputs','fits','audit','output']:p.add_argument('--'+name,type=Path,required=True)
+    p.add_argument('--heterogeneity', choices=['G4','R4'], default='G4')
     a=p.parse_args();inputs=checked_receipt(a.inputs);audit=checked_receipt(a.audit)
     source=json.loads((a.fits/'receipt.json').read_text());parent=json.loads((a.fits/'config.json').read_text())
     if audit['fit_receipt_sha256']!=sha(a.fits/'receipt.json') or source['config_sha256']!=sha(a.fits/'config.json') or parent['input_receipt_sha256']!=sha(a.inputs/'receipt.json'):raise ValueError('Source lineage differs')
@@ -44,6 +45,9 @@ def main():
         pins[str(tree)]=sha(tree)
     a.output.mkdir(parents=True,exist_ok=True);lock=(a.output/'.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     config={'source_receipts':{k:sha(getattr(a,k)/'receipt.json') for k in ['inputs','fits','audit']},'script_sha256':sha(Path(__file__)),'tree_helper_sha256':sha(Path(__file__).with_name('run_paired_marker_fits.py')),'executable':parent['executable'],'executable_sha256':parent['executable_sha256'],'pinned_files':pins,'workers':4,'threads_per_fit':1,'memory_per_fit_gb':2,'markers':len(ready),'fits':len(ready)*4,'interpretation':'Existing AA LG+F+G4 and three 3Di G4 specifications, refitted on fixed original AA topologies with original paired masks. Branch lengths and model parameters reestimated; not an exact replay of previous parameter values. Empirical-Bayes posterior mean site-rate multipliers are conditional on these models and trees, not rates/year, physical displacement, selection or calibrated uncertainty. Model adequacy and Gamma-versus-other heterogeneity sensitivity remain pending.'}
+    config['heterogeneity']=a.heterogeneity
+    if a.heterogeneity=='R4':
+        config['interpretation']='Four-category FreeRate sensitivity for all four existing matrix/frequency specifications on the same paired observations and original fixed AA topology. Branches, category rates and weights reestimated. Comparison with Gamma4 is conditional model sensitivity, not model adequacy, calibrated uncertainty, physical displacement or selection.'
     cp=a.output/'config.json'
     if cp.exists() and json.loads(cp.read_text())!=config:raise ValueError('Run configuration changed')
     cp.write_text(json.dumps(config,indent=2)+'\n');config_hash=sha(cp)
@@ -64,6 +68,9 @@ def main():
                 if value=='--prefix':command.extend([value,str(prefix)]);i+=2;continue
                 command.append(value);i+=1
             command.extend(['-te',str(topology),'--rate','--sitelh'])
+            mi=command.index('-m')+1
+            if not command[mi].endswith('+G4'):raise ValueError('Expected Gamma4 source specification')
+            command[mi]=command[mi][:-2]+a.heterogeneity
             align=Path(command[command.index('-s')+1]);expected_align=json.loads((a.fits/marker/(label+'.config.json')).read_text())['alignment_sha256']
             if sha(align)!=expected_align:raise ValueError('Alignment changed')
             request={'command':command,'alignment_sha256':sha(align),'topology_sha256':sha(topology),'parent_config_sha256':config_hash}

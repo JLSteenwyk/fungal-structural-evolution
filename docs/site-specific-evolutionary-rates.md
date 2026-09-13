@@ -75,3 +75,44 @@ covariates does not mean their effects have been adjusted for. Estimated rates
 and exposure remain dependent and conditional on prediction/model choices.
 
 See [paired-marker model diagnostics](paired-model-adequacy.md) for the completed unfiltered symmetry screen and its substantial limitations in test availability.
+
+
+## Four-category FreeRate sensitivity in progress
+
+A full 72-marker × four-model FreeRate run is now active at
+`results/phylogeny/paired-site-rates-freerate-esmfold-v1`. It changes only the
+heterogeneity specification from `+G4` to `+R4` in the original matrix/frequency
+models; all original paired observations, fixed AA topologies and seeds are
+retained. Branch lengths, category rates and weights are reestimated. Resource
+planning is four single-thread workers, 8 GB RAM, 5 GB disk and 0.1–4 hours on
+the existing host. No paid resources are used.
+
+[IQ-TREE's rate-heterogeneity documentation](https://iqtree.github.io/doc/Substitution-Models#rate-heterogeneity-across-sites)
+defines FreeRate as relaxing the Gamma assumption. This comparison assesses
+sensitivity to that assumption; it does not establish model adequacy. Increased
+likelihood alone is insufficient evidence because FreeRate adds flexibility.
+No likelihood-ratio p-values or automatic model selection are planned here,
+given unresolved feature dependence and sparse-state diagnostics.
+
+The rate-export script accepts `--heterogeneity R4`; the default remains G4.
+The revised full auditor was rerun across all 288 completed Gamma fits. Every
+previous fit-summary value matched, and the site-rate and warnings tables were
+byte identical. The summary adds an explicit `rate_heterogeneity` column and
+leaves Gamma alpha blank for FreeRate. Two rate-parser tests passed.
+
+`scripts/compare_site_rate_heterogeneity.py` is prepared to compare both audited
+runs on identical inputs. It exports matched site and branch values and
+within-fit rank correlations, tree-length totals and likelihood changes. It
+retains lower FreeRate likelihoods as optimization diagnostics. Tied ranks
+were checked against SciPy; constant-vector cases remain unavailable. A negative
+test correctly rejected Gamma output supplied as the FreeRate input before
+creating output. This comparison has not yet been run on the full FreeRate
+results, which remain in progress. Category numbers are not matched across
+models, and relative site multipliers are not absolute evolutionary rates.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/estimate_paired_site_rates.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --audit results/phylogeny/paired-fit-audit-esmfold-v1 --heterogeneity R4 --output results/phylogeny/paired-site-rates-freerate-esmfold-v1
+# After the complete FreeRate receipt exists:
+OPENBLAS_NUM_THREADS=1 python scripts/audit_paired_site_rates.py --rates results/phylogeny/paired-site-rates-freerate-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --output results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1
+OPENBLAS_NUM_THREADS=1 python scripts/compare_site_rate_heterogeneity.py --gamma results/phylogeny/paired-site-rates-esmfold-v2 --gamma-audit results/phylogeny/paired-site-rates-audit-esmfold-v2 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --free-audit results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --output results/phylogeny/paired-rate-heterogeneity-esmfold-v1
+```

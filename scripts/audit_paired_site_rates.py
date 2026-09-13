@@ -36,10 +36,15 @@ def main():
             alignment=a.inputs/marker/('aa.faa' if label=='aa' else '3di.faa')
             if request['alignment_sha256']!=sha(alignment):raise ValueError('Alignment changed')
             report=(folder/(label+'.iqtree')).read_text();model=request['command'][request['command'].index('-m')+1]
-            if 'Model of substitution: '+model+'\n' not in report or 'Model of rate heterogeneity: Gamma with 4 categories' not in report:raise ValueError('Model identity differs')
+            heterogeneity=c.get('heterogeneity','G4')
+            original_command=json.loads((a.fits/marker/(label+'.config.json')).read_text())['command']
+            original_model=original_command[original_command.index('-m')+1]
+            if heterogeneity not in ['G4','R4'] or not original_model.endswith('+G4') or model!=original_model[:-2]+heterogeneity:raise ValueError('Unexpected model transformation')
+            rate_name={'G4':'Gamma','R4':'FreeRate'}[heterogeneity]
+            if 'Model of substitution: '+model+'\n' not in report or 'Model of rate heterogeneity: '+rate_name+' with 4 categories' not in report:raise ValueError('Model identity differs')
             if set(tree_edges(folder/(label+'.treefile'),taxa))!=set(tree_edges(topology,taxa)):raise ValueError('Topology changed')
-            block=report.split('Category  Relative_rate  Proportion',1)[1].split('Relative rates',1)[0]
-            category={int(x[0]):(float(x[1]),float(x[2])) for line in block.splitlines() if len(x:=line.split())==3}
+            block=report.split('Category  Relative_rate  Proportion',1)[1].strip().split('\n\n',1)[0].split('Relative rates',1)[0]
+            category={int(x[0]):(float(x[1]),float(x[2])) for line in block.splitlines() if len(x:=line.split())==3 and x[0].isdigit()}
             if set(category)!={1,2,3,4} or any(not math.isfinite(v) or v<0 for pair in category.values() for v in pair) or not math.isclose(sum(x[1] for x in category.values()),1,abs_tol=.00021):raise ValueError('Invalid Gamma categories')
             raw=[x.split() for x in (folder/(label+'.rate')).read_text().splitlines() if x.strip() and not x.startswith('#')]
             header=raw[0];data=raw[1:]
@@ -57,12 +62,13 @@ def main():
             oldreport=(a.fits/marker/(label+'.iqtree')).read_text();old=float(re.search(r'Log-likelihood of the tree: ([\d.eE+-]+)',oldreport).group(1))
             warning=sorted(set(line.strip() for line in (report+'\n'+(folder/(label+'.log')).read_text()).splitlines() if re.match(r'\s*(WARNING|ERROR):',line)))
             warnings.extend({'marker':marker,'fit':label,'warning':line} for line in warning)
-            fits.append({'marker':marker,'fit':label,'sites':width,'log_likelihood':float(lltext),'original_fit_log_likelihood':old,'log_likelihood_change':float(lltext)-old,'site_likelihood_sum_error':error,'printed_precision_bound':bound,'gamma_alpha':float(re.search(r'Gamma shape alpha: ([\d.eE+-]+)',report).group(1)),'warnings':len(warning)})
+            fits.append({'marker':marker,'fit':label,'sites':width,'log_likelihood':float(lltext),'original_fit_log_likelihood':old,'log_likelihood_change':float(lltext)-old,'site_likelihood_sum_error':error,'printed_precision_bound':bound,'gamma_alpha':float(re.search(r'Gamma shape alpha: ([\d.eE+-]+)',report).group(1)) if heterogeneity=='G4' else '', 'rate_heterogeneity':heterogeneity,'warnings':len(warning)})
     if len(fits)!=r['fits'] or len(sites)!=r['site_rate_rows']:raise ValueError('Aggregate dimensions differ')
     a.output.mkdir(parents=True)
     for name,rows in [('fit_summary.tsv',fits),('site_rates.tsv',sites),('warnings.tsv',warnings)]:
         if rows:write_table(a.output/name,rows)
     out={'status':'passed_full_site_rate_output_audit','rate_receipt_sha256':sha(a.rates/'receipt.json'),'script_sha256':sha(Path(__file__)),'markers':len(ready),'fits':len(fits),'site_rate_rows':len(sites),'fits_with_warnings':sum(x['warnings']>0 for x in fits),'scope':'All fit provenance, model/topology identities, rate grids, Gamma-category bounds and site-likelihood sums checked at exported precision. Posterior site rates themselves were not independently recomputed; these are conditional empirical-Bayes estimates, not calibrated confidence or selection tests.','artifacts':{f.name:sha(f) for f in a.output.iterdir()}}
+    out['scope']=out['scope'].replace('Gamma-category','four-category rate/weight')
     (a.output/'receipt.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
 
 if __name__=='__main__':main()

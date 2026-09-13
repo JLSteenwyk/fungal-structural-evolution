@@ -1515,3 +1515,16 @@ One CPU worker, 8 GB memory and 1 GB output are planned, with a conservative
 `metadata/esmfold_paired_resampling_audit_controller_config.json`.
 The controller compiled and entered the expected waiting state. The audit has
 not run yet; interval calibration and the overall research goal remain incomplete.
+
+
+### Full local rate-heterogeneity sensitivity launched
+
+Started all 288 FreeRate4 fits on the original paired alignments and fixed AA
+topologies. This extends the model sensitivity needed before interpreting
+sequence–structure coupling. Initial fits succeeded; full execution, FreeRate
+audit and matched comparison remain pending. The revised auditor passed all
+288 existing Gamma fits with identical prior statistics and site/warning tables.
+Prepared the matched site/branch comparison with rank and model-identity checks.
+Resources, provenance and reproducible commands are documented in
+`docs/site-specific-evolutionary-rates.md`. Main long-running stages and the
+resampling audit controller remain live. The research goal stays incomplete.
