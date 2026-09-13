@@ -19,9 +19,17 @@ prepare = module('prepare_phylogenetic_markers')
 align = module('align_phylogenetic_markers')
 assessment = module('assess_marker_alignments')
 matrix_builder = module('build_species_matrix')
+gene_trees = module('run_marker_gene_trees')
 
 
 class MarkerIntegrity(unittest.TestCase):
+    def test_gene_tree_coverage_filter_counts_only_observed_amino_acids(self):
+        kept, removed, threshold = gene_trees.select_rows({
+            'A': 'A' * 60 + '-' * 140, 'B': 'A' * 59 + 'X' * 141, 'C': '-' * 200})
+        self.assertEqual(threshold, 60)
+        self.assertEqual(set(kept), {'A'})
+        self.assertEqual(removed, {'B': 59, 'C': 0})
+
     def test_concatenation_preserves_missingness_and_coordinates(self):
         matrix, partitions, sites, coverage = matrix_builder.concatenate(
             ['A', 'B', 'C'], [('m1', {'A': 'ACX', 'B': '---'}, [1, 3]),
