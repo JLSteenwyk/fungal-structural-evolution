@@ -498,3 +498,12 @@ over 500 models have passed actual conversion roundtrips. Three conversion
 tests and three mapping-source/identity tests pass. Mapping now supports a
 separate local inventory without manufacturing UniProt identities. Full
 conversion, residue mapping and native confidence qualification remain pending.
+
+## Local prediction PAE integration prepared
+
+Implemented mapping-bound local PAE export with original prediction/NPZ
+provenance and exact matrix roundtrip checks. Three focused tests pass. The
+exporter explicitly records local derivation, rather than remote AFDB retrieval,
+and keeps asymmetric directional values intact. Launch awaits completed local
+mmCIF conversion and residue mapping. Conversion and the separate control
+prediction run remain active.

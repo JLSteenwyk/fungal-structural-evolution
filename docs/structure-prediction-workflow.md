@@ -164,3 +164,24 @@ identity tests pass. After conversion completes, a separate local ESMFold mappin
 can use `--provider local --tool 'ESMFold v1'`; local PAE binding and native
 feature qualification still require downstream work. Existing AlphaFold
 snapshots remain unchanged.
+
+## Local PAE export for structural-feature qualification
+
+`export_local_marker_pae.py` is prepared for the completed local ESMFold residue
+mapping. It requires a local/ESMFold-only source policy, validates every mapped
+model's original prediction receipt and NPZ hash/configuration/sequence identity,
+and exports directional PAE to gzip JSON in the downstream matrix schema.
+Every exported array must agree exactly with the original NPZ after decompression
+and parsing. No symmetrization, rounding, remote download or AlphaFold provenance
+is introduced. Matrix dimensions, finite/nonnegative values and the original
+ESMFold declared maximum are checked before export.
+
+The output manifest explicitly labels local prediction exports and records the
+original NPZ and prediction/configuration hashes. Its receipt binds the entire
+model set to the exact residue-mapping receipt, allowing native feature
+qualification to use the existing identity checks. Three tests cover directional
+precision-preserving roundtrips, wrong sequence identity and invalid matrices or
+maximum values. This stage has not launched: mmCIF conversion and completed
+local mapping are prerequisites. The maximum current input envelope is 5,121
+models and 303,017,975 matrix entries, with one CPU worker and conservative
+resource estimates in `metadata/local_pae_export_resource_plan.json`.
