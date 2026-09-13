@@ -338,3 +338,38 @@ Completion and review receipts are tracked in
 `metadata/cluster_normalization_control_review_receipt.json` and
 `metadata/cluster_normalization_patched_completion.json`; full raw and comparison
 tables remain outside Git in the corresponding result directories.
+
+### Memberships updated using corrected scores
+
+Bidirectional review of all 16,025 original representative/member pairs under
+inclusive-span normalization yields 14,780 passing both directions, 1,243
+passing neither and two passing one direction. Compared with the unpatched
+exact-score review, 34 pairs become eligible and 23 become ineligible. A direct
+set difference of derived memberships reproduces these 57 changes.
+
+`corrected-groups-v1` retains 17,029 models, including 2,249 representatives,
+and defers 1,245 models with no assigned derived group. There are 1,312
+representative slots without a retained nonself edge. All 18,815 taxon–marker
+links remain present. Complete readback independently recalculates membership
+from raw corrected numeric scores and checks all model provenance, partitions,
+group model counts and annotation links. No original result is overwritten.
+
+Recomputed coverage retains all 459 represented taxa; the manifest table also
+preserves 67 taxa without frozen input models. Retained source counts are
+12,457 AlphaFold and 4,572 ESMFold models. These rates remain confounded by
+protein/taxon/source availability and representative selection.
+
+```bash
+python scripts/review_corrected_cluster_edges.py --control-review results/structural_clusters/normalization-control-review-v1 --prior-review results/structural_clusters/edge-exact-review-v1 --output results/structural_clusters/corrected-edge-review-v1
+python scripts/derive_reviewed_structure_groups.py --clusters results/structural_clusters/frozen-marker-models-v1 --review results/structural_clusters/corrected-edge-review-v1 --annotations results/structural_clusters/provenance-annotations-v1 --output results/structural_clusters/corrected-groups-v1
+python scripts/audit_reviewed_structure_groups.py --groups results/structural_clusters/corrected-groups-v1 --clusters results/structural_clusters/frozen-marker-models-v1 --controls results/structural_clusters/normalization-controls-v1 --annotations results/structural_clusters/provenance-annotations-v1 --output results/structural_clusters/corrected-groups-audit-v1
+python scripts/summarize_reviewed_group_coverage.py --groups results/structural_clusters/corrected-groups-v1 --manifest metadata/analysis_manifest.tsv --output results/structural_clusters/corrected-coverage-v1
+```
+
+Receipts, edge classifications, summaries, deferred-model provenance, coverage
+and all 57 membership changes are tracked under `metadata/corrected_structure_*`.
+Use corrected memberships for further discovery while preserving earlier tables
+as sensitivity results. These remain representative-centered similarity groups;
+all-pairs equivalence, orthology, domain/confidence sensitivity and biological
+function are not established. The exact-status column names are retained for
+schema compatibility, with inclusive-span normalization explicit in provenance.

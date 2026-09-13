@@ -12,8 +12,11 @@ from audit_busco_gene_copies import sha, read_table
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    for name in ['groups', 'clusters', 'exact', 'annotations', 'output']:
+    for name in ['groups', 'clusters', 'annotations', 'output']:
         p.add_argument('--' + name, required=True, type=Path)
+    source = p.add_mutually_exclusive_group(required=True)
+    source.add_argument('--exact', type=Path)
+    source.add_argument('--controls', type=Path)
     a = p.parse_args()
     if a.output.exists():
         raise FileExistsError('Use immutable output')
@@ -21,15 +24,27 @@ def main():
     for name in ['clusters', 'annotations']:
         checked_receipt(getattr(a, name))
         assert receipt['source_receipts'][name] == sha(getattr(a, name) / 'receipt.json')
-    config = json.loads((a.exact / 'config.json').read_text())
-    completion = json.loads((a.exact / 'completion.json').read_text())
-    assert completion['alignment_table_sha256'] == sha(a.exact / 'alignments.tsv')
-    assert completion['config_sha256'] == sha(a.exact / 'config.json')
-    command = config['command']
+    if a.controls:
+        control = checked_receipt(a.controls)
+        config = json.loads((a.controls / 'config.json').read_text())
+        assert control['config_sha256'] == sha(a.controls / 'config.json')
+        command = config['commands'][1]
+        score_path = a.controls / 'inclusive-span.tsv'
+        score_receipt_path = a.controls / 'receipt.json'
+        assert Path(command[5]).resolve() == score_path.resolve()
+        assert Path(command[0]).name == 'foldseek-inclusive-span'
+    else:
+        config = json.loads((a.exact / 'config.json').read_text())
+        completion = json.loads((a.exact / 'completion.json').read_text())
+        assert completion['alignment_table_sha256'] == sha(a.exact / 'alignments.tsv')
+        assert completion['config_sha256'] == sha(a.exact / 'config.json')
+        command = config['command']
+        score_path = a.exact / 'alignments.tsv'
+        score_receipt_path = a.exact / 'completion.json'
     assert command[command.index('--exact-tmscore') + 1] == '1'
     fields = command[command.index('--format-output') + 1].split(',')
     scores = {}
-    for values in csv.reader((a.exact / 'alignments.tsv').open(), delimiter='\t'):
+    for values in csv.reader(score_path.open(), delimiter='\t'):
         assert len(values) == len(fields)
         row = dict(zip(fields, values)); key = row['query'], row['target']
         assert key not in scores
@@ -66,7 +81,7 @@ def main():
     a.output.mkdir(parents=True)
     result = {'status': 'passed_complete_membership_score_and_provenance_readback',
               'group_receipt_sha256': sha(a.groups / 'receipt.json'),
-              'exact_completion_sha256': sha(a.exact / 'completion.json'),
+              'score_source_receipt_sha256': sha(score_receipt_path),
               'script_sha256': sha(Path(__file__)), 'models_checked': len(original),
               'directed_scores_checked': len(scores), 'taxon_marker_links_checked': len(links),
               'groups_checked': len(summaries),

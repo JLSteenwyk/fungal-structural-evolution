@@ -1,0 +1,26 @@
+{
+  "status": "complete_corrected_normalization_bidirectional_edge_review",
+  "validation_receipt_sha256": "46804800b09dfa611343267a831189bc2a94bec4eca7069e3195f4fb6241c244",
+  "prior_review_receipt_sha256": "2cf867ed67ebda589f122cab4e29ea8d630f63b990e5da17a2f82366548c8394",
+  "control_review_receipt_sha256": "c35221f0be647d51f26a2daecb5545ee5d3ebb4b9e37b382fce3efcc40dc3bd1",
+  "script_sha256": "bedf01f8b3ffc42c9d31005b74040d2b2142cbde45993981e11bcf84a5416f62",
+  "directed_pairs": 32050,
+  "edge_pairs": 16025,
+  "edge_status_counts": {
+    "both_directions_pass": 14780,
+    "neither_direction_passes": 1243,
+    "one_direction_passes": 2
+  },
+  "transitions": {
+    "both_directions_pass_to_both_directions_pass": 14746,
+    "neither_direction_passes_to_neither_direction_passes": 1220,
+    "neither_direction_passes_to_both_directions_pass": 34,
+    "both_directions_pass_to_neither_direction_passes": 23,
+    "one_direction_passes_to_one_direction_passes": 2
+  },
+  "membership_eligibility_changes": 57,
+  "interpretation": "Fixed original representative edges under inclusive-span output normalization; existing exact_status fields retained for downstream schema compatibility. Both directions required. Preserves prior review and all source links. No new search, all-pairs equivalence, orthology or novelty claim.",
+  "artifacts": {
+    "edge_score_review.tsv": "cdab366e307b6a1dbd6b687d6a70a38824d86ab3dd370919e32f30579627fd2d"
+  }
+}

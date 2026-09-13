@@ -1,0 +1,27 @@
+{
+  "status": "complete_conservative_representative_group_derivation",
+  "source_receipts": {
+    "clusters": "b1be354173157307bfe3ed809f65e57f9e0e813ea220ab5f0750b8c26f496f31",
+    "review": "b1796aef983b5a360e419d744ca1eb4bd4c4bf029440eb483e602f245772669f",
+    "annotations": "e6853634276ec5fb9d7673ce3574eaa1b885ef2ba8dadfb334b58d94270d05cc"
+  },
+  "script_sha256": "57772737eb89d5f3f21bd4e6b839519bd8fa4c0a5c858306f940a1a4219a4aab",
+  "input_models": 18274,
+  "retained_models": 17029,
+  "deferred_models": 1245,
+  "groups": 2249,
+  "groups_without_nonself_edge": 1312,
+  "dispositions": {
+    "representative_no_self_edge_test": 2249,
+    "bidirectional_edge_pass": 14780,
+    "deferred_edge_criteria": 1245
+  },
+  "model_taxon_marker_links": 18815,
+  "interpretation": "Conservative representative stars from fixed original alignments. Every nonself retained edge passes exact-option review in both directions. Deferred models have no derived group and are not novel singleton families. No member/member similarity guarantee, transitive equivalence, homology, orthology or function claim. Original memberships remain immutable. Source, confidence, domain and threshold sensitivities remain required.",
+  "artifacts": {
+    "group_summary.tsv": "732e2081ffcf92514415c2c4187462356c0427578dff1bab55868ee79b83d8ec",
+    "retained_membership.tsv": "4678a992b27fc23483ab30d4560dd4166a47b974dbb8063a30920c25474f2302",
+    "model_taxon_marker_links.tsv": "d28089ce7668ccbf7cb97d9aa2c9e46bb507806078bc633222baf2b5e4319eab",
+    "deferred_members.tsv": "f5bad7c689a35ab749fa8a7c1ba911a8de1850c44c7fe9a53864f911d7bd1162"
+  }
+}

@@ -1316,3 +1316,14 @@ while 68 directed rows change fail→pass and 46 pass→fail. Membership revisio
 still require bidirectional review. The previous turn verified a live wait;
 this turn completes the controlled normalization result. The full research
 goal remains active and incomplete.
+
+### Corrected scores propagated into fully checked structural memberships
+
+Reviewed both directions of all original edges and regenerated groups:
+17,029 retained models and 1,245 deferred. Complete raw-score and provenance
+readback passed; 34 restorations and 23 new exclusions match direct membership
+set differences. Updated coverage retains all 459 represented taxa, with absent
+inputs explicit in the full manifest. Earlier versions remain immutable.
+The previous turn verified the normalization correction; this turn propagates
+it into usable group and coverage tables without treating groups as orthology.
+The overall research goal remains active and incomplete.
