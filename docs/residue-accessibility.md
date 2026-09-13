@@ -481,3 +481,24 @@ hashes. Individual residue/ASA row readback remains pending. Records:
 The controller started reference normalization as PID 3491107, using both the
 Tien and Miller scales. It is still running; final normalized counts, scale
 sensitivity and independent row-level validation remain pending.
+
+
+## Expanded AlphaFold reference normalization completed
+
+The handoff controller finished with exit zero (session 20643). Both reference
+scales cover all 4,148,852 projected rows; no terminal rows require exclusion.
+The producer reports two Tien-normalized values above one and 12,093
+Miller-normalized values above one. Values remain unclipped. At the diagnostic
+0.25 threshold, 176,214 rows (4.247%) change classification between scales;
+these are convention-dependent labels, not independent evolutionary events.
+Tables: `metadata/gdm_accessibility_scale_summary.tsv` and
+`metadata/gdm_accessibility_threshold_sensitivity.tsv`.
+
+Full streaming normalization readback is now running with
+`scripts/readback_accessibility_normalization.py`. It checks every source field,
+row order, inverse normalization, terminal treatment and recomputed scale and
+threshold totals. It does not independently recheck projection against raw ASA
+tables or establish biological exposure. Allowances: one CPU, 4 GiB memory,
+1 GiB output and 0.05–2 planning hours, recorded in
+`metadata/gdm_accessibility_normalization_readback_resource_plan.json`.
+Completion and any corrected totals remain pending this readback.

@@ -1886,3 +1886,11 @@ AlphaFold accessibility projection completed: 124 markers, 13,066 models and
 matched emitted AA alignments; full projection file hashes passed. Individual
 row/ASA readback remains pending. Normalization started as PID 3491107 under
 controller session 20643, preserving both reference scales and unclipped values.
+
+
+AlphaFold paired accessibility normalization completed for all 4,148,852 rows
+(controller session 20643 exit zero), preserving both unclipped reference scales.
+Started full row-level normalization readback (session 90918), checking source
+field/order preservation, inverse scaling, terminal rules and all summary totals.
+Producer tables are versioned; independent readback remains running. Projection
+against raw residue tables and controlled exposure/evolution tests remain pending.
