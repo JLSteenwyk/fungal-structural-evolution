@@ -1,0 +1,26 @@
+{
+  "status": "complete_disjoint_followon_prediction_inputs",
+  "additional_sequences_screened": 7799,
+  "prediction_candidates": 7799,
+  "taxon_marker_links": 7895,
+  "linked_taxa": 156,
+  "dispositions": {
+    "short_prediction_eligible": 4252,
+    "length_deferred": 3495,
+    "noncanonical_deferred": 52
+  },
+  "previous_receipt_sha256": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+  "current_receipt_sha256": "50d7f73e47fa5e5ab35de3686f2463f62b5965054cb3ce6ec023b7ddfb3cea49",
+  "delta_receipt_sha256": "ad541ca5e143993a6292449552c9302629ca30b593eed1b8cd5cc82f5cc55adc",
+  "script_sha256": "00730b2b5cbdb83df4937c3400b6dbd62a61167dcdc4ef77d395d924aee9ec4d",
+  "existing_prediction_directories": [
+    "results/predictions/esmfold-marker-v1"
+  ],
+  "interpretation": "Excludes every original candidate, including long/deferred ones; all follow-on taxon/protein links preserved. Current verified exact-sequence models and existing local predictions checked before preparation. Long/noncanonical sequences remain explicit. Input preparation does not launch predictions; recheck reuse and GPU availability before execution. Source inventory states in all_marker_links are historical, whereas queue_disposition records this snapshot.",
+  "artifacts": {
+    "all_marker_links.tsv": "7743629ff1ab10a7b705648e1af10bbf77f88920cb57484ba2bc7b83dec93a19",
+    "afdb_snapshot.jsonl": "37d95156a69c37c183b70ace134797c47d4735fd153ce1724fe4aa2e4cafef91",
+    "queue_disposition.tsv": "00d42852a18c7fe6ae7d93e2330b8e993fb5c44cff19ea7a1f1d4caccf0b5551",
+    "candidates.faa": "636e85ebf383e98178fbd51537fd26c6baba2da38b9b7503d3392e0fe2c6d713"
+  }
+}

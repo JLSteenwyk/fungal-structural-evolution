@@ -100,3 +100,6 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 - `taxon_matrix_coverage_sensitivity_receipt.json`, `taxon_matrix_coverage.tsv`, and `taxon_filter_lineage_sensitivity.tsv`: direct unambiguous-residue counts in both complete matrices, raw marker-copy context and explicit threshold memberships by lineage. Thresholds are descriptive sensitivities, not automatic exclusions or reliability guarantees; full membership files remain in the recorded result directory.
 
 - `marker_tree_support_snapshot_v2.tsv` and `marker_tree_support_snapshot_v2_receipt.json`: independently checked 12-tree completion checkpoint with 113 pending marker IDs. Missing SH-aLRT support is not zero; the subset does not establish full-marker concordance or reconciliation. Earlier snapshot artifacts remain preserved.
+
+- `followon_prediction_input_receipt.json`: runner-compatible inputs for the disjoint additional candidate set, with frozen new reuse checks and all taxon–marker links preserved. Preparation is not prediction completion.
+- `followon_prediction_resource_receipt.json` and `followon_prediction_runtime_bins.tsv`: observed-length-bin inference timing scenarios for the 4,252 short/canonical follow-on candidates. Quantile-based sums are not confidence intervals; long proteins and whole-atlas runtime are not covered.

@@ -72,3 +72,28 @@ controls and prediction circularity remain to be assessed.
 All 128 requested predictions finished, with 129 taxon-marker links across 129 taxa and 15 markers. Independent Biopython/PDB and NumPy readback passed. Protein lengths were 70–255 residues (median 119), inference times 0.845–2.899 seconds (median 0.944), and maximum measured GPU allocation 8.92 GB. Mean CA pLDDT ranged 38.81–91.81; low-confidence models remain labeled, not discarded or interpreted as validated folds. An execution audit checked that the only missing checkpoint parameters were the contact-regression bias/weight, installed a rejecting hook on that head, and completed folding inference without invoking it. Repeated PAE and CA confidence were identical for the checked sequence.
 
 Expansion retains the same configuration and resumes all 10,394 remaining canonical candidates no longer than 512 residues. A provisional 1–30 seconds per sequence gives approximately 3–87 GPU hours plus serialization and initialization; the first short-protein measurements do not validate the upper length regime. Reserve 50 GB output headroom and the same single GPU/four CPU threads. Per-sequence memory/runtime receipts and an explicit OOM stop remain in force. This expansion still leaves 9,958 length/alphabet-deferred sequences and future inventory/whole-proteome candidates pending.
+
+## Prepared follow-on missing-model inputs
+
+A runner-compatible follow-on input snapshot now covers all **7,799 additional unique sequences** identified by the completed full-inventory delta. It preserves **7,895 taxon–marker links across 156 taxa**. Every sequence is disjoint from the original 20,480-candidate queue, including that queue's deferred long proteins. A newly frozen AFDB inventory and the current local prediction directory were checked for verified exact-sequence reuse; none of these additional candidates had a reusable model at this checkpoint. This is a query-snapshot statement, not global database absence.
+
+The prepared dispositions are **4,252 short/canonical prediction candidates**, **3,495 canonical length-deferred candidates**, and **52 noncanonical candidates**. Noncanonical status takes precedence over length in this preparation table; total deferred proteins are 3,547. Complete sequences and links remain intact. The running GPU job continues with its original frozen inputs; no additional GPU run has been launched or queued by these preparation scripts.
+
+```bash
+python scripts/prepare_additional_prediction_inputs.py \
+  --previous data/prediction_inputs/markers-v1 \
+  --current data/prediction_inputs/markers-full-inventory-v2 \
+  --delta data/prediction_inputs/full-inventory-delta-v2 \
+  --existing-predictions results/predictions/esmfold-marker-v1 \
+  --output data/prediction_inputs/markers-followon-v1
+python scripts/estimate_followon_prediction_runtime.py \
+  --inputs data/prediction_inputs/markers-followon-v1 \
+  --predictions results/predictions/esmfold-marker-v1 \
+  --output results/predictions/followon-resource-v1
+```
+
+The length-stratified resource projection freezes **3,640 observed prediction receipts**, using separate 1–128, 129–256, 257–384 and 385–512 residue bins. Applying each bin's median runtime to the actual follow-on lengths gives **8.23 GPU-hours** of inference. The analogous sums using observed 10th/90th-percentile times are 5.98/11.18 hours; these are planning scenarios, not confidence intervals. A 50% allowance above the latter gives **16.77 hours** for scheduling, including overhead and contention. The plan allows 24 GB VRAM and 20 GB output space on the existing GPU, without new charges. These estimates do not apply to deferred long proteins or the whole multi-million-protein atlas.
+
+Before execution, confirm the current GPU run has finished, revalidate new reuse evidence and GPU availability, and use a new prediction output directory because the input receipt changes. No further user approval is required for continuing on the existing authorized host. The current runner's exact configuration and cache hashes remain protected. After prediction, independently validate artifacts and retain source strata before structural comparisons.
+
+All prepared input hashes, sequence identifiers, disjointness and short-candidate counts passed independent readback. Receipts and runtime-bin summaries are `metadata/followon_prediction_*`; the complete source/taxon links and timing observations remain under their recorded data/result directories. No prediction-completion claim follows from these preparation receipts.

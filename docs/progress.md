@@ -240,3 +240,9 @@ Completed direct matrix coverage verification for all taxa and recorded 10/30/50
 ## Twelve completed marker trees verified
 
 Completed a second immutable marker-tree support audit: 12/125 trees, 5,742 internal branches, 5,630 reported support values and 112 unreported values. Exact input/tree taxa, source hashes, branch validity and output hashes pass. The remaining 113 markers are explicitly pending; no full-dataset discordance or species-tree support result is claimed. Both full-matrix guide searches and expanded structural validation remain running.
+
+## Follow-on prediction inputs and length-aware resources
+
+Prepared a runner-compatible queue of all 7,799 additional missing-model sequences, retaining 7,895 links across 156 taxa and excluding every original candidate. Checked current verified AFDB models and existing local predictions; no overlap required reuse at this snapshot. There are 4,252 short/canonical candidates and 3,547 explicitly deferred by length/alphabet. Input hashes and disjointness passed independent readback.
+
+A projection from 3,640 frozen prediction receipts stratified by sequence length estimates 8.23 inference GPU-hours for the short follow-on queue, with a 16.77-hour scheduling allowance. This is preparation, not an additional GPU launch. The active ESMFold run remains on its original queue; fresh reuse and GPU checks precede the next execution. Expanded coordinate audit, confidence retrieval and phylogenetic/orthology/domain jobs continue.
