@@ -1,0 +1,16 @@
+{
+  "status": "controller_verified_live_waiting_on_first_pmsf",
+  "controller": {
+    "pid": 3707279,
+    "start_ticks": "182823478",
+    "state": "S",
+    "command": [
+      "python",
+      "scripts/advance_crossed_species_pmsf.py",
+      "--config",
+      "metadata/crossed_species_pmsf_controller_config.json"
+    ]
+  },
+  "config_sha256": "260e538500e3b0d52a65c0c71dffabe1c94bfaf213253edd9fe5ba48c07e1b45",
+  "interpretation": "Three serial follow-on runs queued; no completion claim."
+}

@@ -870,3 +870,21 @@ acceleration signal. Source/organism identity review and explicit exclusion
 sensitivities are required before biological interpretation. Existing numerical
 fits and profiles remain preserved as baseline diagnostics; their likelihood
 readback checks do not resolve this source-quality concern.
+
+### FCS-omission eligibility accounted for across all 1,655 codon cases
+
+The full-case source and taxon-grid check finds 1,626 cases unchanged by the
+specified EXCLUDE/FIX/TRIM omission rule. All 29 affected Naganishia cases would
+drop from four taxa to three after omitting F610337. They are therefore below the
+existing four-taxon project threshold and are not refitted under that policy.
+This is a design/eligibility limit, not evidence for a null effect or a general
+claim that three-taxon likelihood models are impossible. Source review, better
+sampling or a separately justified design would be needed for these cases.
+
+```bash
+python scripts/assess_fcs_codon_omission_eligibility.py --fits results/cds/genus-mg94-diagnostics-v3 --exposure results/qc/fcs-marker-analysis-exposure-v1 --output results/cds/fcs-omission-eligibility-v1
+```
+
+All case dispositions are versioned in `metadata/fcs_codon_omission_disposition.tsv`.
+Being unchanged by this one omission rule does not establish broader selection
+eligibility for the other cases.

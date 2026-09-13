@@ -219,3 +219,53 @@ python scripts/run_species_pmsf.py \
   --resources results/phylogeny/species-mixture-resources-v2 \
   --output results/phylogeny/pmsf-profile-profile-v1
 ```
+
+## Second full-taxon guide completed; crossed PMSF continuation queued
+
+The MAFFT-based guide completed in 57,023.9 seconds. Its full readback audit
+verifies the 526-taxon manifest (501 fungal entries plus 25 outgroups), 63,750
+alignment columns, 1,049 finite nonnegative branches and exact report/tree
+agreement. Total branch length is 145.6696520524 under LG+F+G4; reported log
+likelihood is −22,762,350.7173. All 526 sequences fail the nominal composition
+screen. This is an unsupported unrooted guide, not a final species phylogeny.
+Its likelihood must not be compared directly with the different profile alignment.
+
+The two guides share 470 of their 523 internal splits. Each contains 53 splits
+absent from the other: unrooted Robinson–Foulds distance 106, normalized by their
+1,046 total internal splits to 0.10134. Independent graph traversal verifies all
+2,098 edge bipartitions. Across 138,075 taxon pairs, tree-path rank correlation is
+0.98911; 200 deterministic path calculations were independently checked with
+Biopython traversal. This is a descriptive comparison, not independent-pair
+inference, support or a test identifying which guide is correct. Differences can
+reflect alignment, search and model effects.
+
+For the FCS-flagged N. cerealis entry, the three nearest taxa by tree-path length
+are other Naganishia entries in both guides. This concatenated-guide observation
+does not resolve the provenance of individual flagged proteins or rule out a
+mixed-source assembly. The 29 affected codon cases and 16 earlier ESMFold marker
+observations still require their documented source-quality review.
+
+```bash
+python scripts/audit_species_guide.py --guide results/phylogeny/initial-mafft-guide-v1 --matrix results/phylogeny/mafft-matrix-50-v1 --output results/phylogeny/mafft-guide-audit-v1
+python scripts/compare_full_species_guides.py --profile results/phylogeny/profile-guide-audit-v1 --mafft results/phylogeny/mafft-guide-audit-v1 --manifest metadata/analysis_manifest.tsv --output results/phylogeny/full-guide-comparison-v1
+```
+
+Both audited guides now satisfy the prerequisite for the previously planned
+2×2 alignment/guide PMSF comparison. A verified live controller waits for the
+original profile-alignment/profile-guide producer and requires its successful
+completion receipt. It then runs profile/MAFFT, MAFFT/profile and MAFFT/MAFFT
+serially. Each uses the existing runner's exclusive lock, 16 threads, 600G limit,
+750 GiB minimum available-memory check, 100 GB output allowance and 24–336 hour
+planning window per run. These are conservative planning scenarios, not runtime
+promises. No concurrent full-matrix PMSF job is added.
+
+```bash
+python scripts/advance_crossed_species_pmsf.py --config metadata/crossed_species_pmsf_controller_config.json
+```
+
+The controller is already running; do not launch another copy. It pins both
+matrix/guide artifact sets, scripts and the first run configuration, validates
+successful stage receipts and checkpoints each completed stage. A failed or
+uncheckpointed partial stage requires review. Full model/profile/support audits
+remain necessary after execution. This is the baseline full-manifest crossed
+comparison; separate FCS and taxon-identity sensitivities remain required.

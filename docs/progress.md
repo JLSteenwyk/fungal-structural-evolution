@@ -2349,3 +2349,19 @@ complements keep their original inputs and estimates. Launched 64 and 72 new
 supported sequence/structural fits respectively; both producer processes were
 verified live. Full fit audits, topology/path comparisons and downstream
 site-rate/coupling sensitivities remain pending. Baseline runs are preserved.
+
+### Full MAFFT guide audited and remaining crossed PMSF runs queued
+
+The 526-taxon, 63,750-site MAFFT LG+F+G4 guide completed and passed full readback.
+The two guides share 470/523 internal splits; their normalized unrooted RF
+distance is 0.10134. Full independent edge-split checks passed; path association
+is descriptive only. Composition concerns persist (526/526 nominal failures for
+MAFFT). Both guides are unsupported and not final species phylogenies.
+A live, pinned controller now queues the other three alignment/guide PMSF
+combinations serially after successful completion of the current first run,
+retaining existing resource checks and the exclusive PMSF lock.
+
+Full FCS-omission codon accounting also completed: all 29 affected cases would
+have three remaining taxa and fall below the existing four-taxon gate; the other
+1,626 are unchanged by this specific omission. The affected cases are not
+refitted under the current design and are not interpreted as null results.

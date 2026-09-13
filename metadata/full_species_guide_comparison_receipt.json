@@ -1,0 +1,26 @@
+{
+  "status": "complete_audited_full_species_guide_comparison",
+  "taxa": 526,
+  "internal_splits_per_guide": {
+    "profile": 523,
+    "mafft": 523
+  },
+  "shared_internal_splits": 470,
+  "unrooted_robinson_foulds_distance": 106,
+  "normalized_rf_by_total_internal_splits": 0.10133843212237094,
+  "tip_pair_distances_compared": 138075,
+  "descriptive_tip_pair_path_spearman": 0.9891117564066346,
+  "independent_graph_split_checks": 2098,
+  "independent_sampled_path_traversals": 200,
+  "source_audit_receipts": {
+    "profile": "0619cdfa1a5cf91d684603c61c9af03f7092715cd5c882ec42cfd8209991fca1",
+    "mafft": "2fa8fff788911b835fed6699457d0b3865a39c0facbdcf4e546469cadcdd7d24"
+  },
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "9ee9bd518d9d7e9f11e965454ffe629e83e9453e4c4f2d308a8e88335a80853d",
+  "artifacts": {
+    "internal_split_comparison.tsv": "bd3b6d16f2735aeacd4bfa45b6b3cf8a3521f88585f07636a305bd1e1136c147",
+    "flagged_taxon_nearest_guide_paths.tsv": "725a92cf6fd6fe0f3d77613ab43b72870303a089d03f6098942c50c493dc8b48"
+  },
+  "interpretation": "Unrooted split disagreement and descriptive path rank association between guides from different alignments. No support, uncertainty, topology significance, calibrated dates, independent pair observations or likelihood comparison across alignments. Nearest tree paths are descriptive and cannot confirm contamination or taxonomic identity; homogeneous-model composition concerns remain."
+}
