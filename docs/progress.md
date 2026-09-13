@@ -1251,3 +1251,14 @@ normalization controls remain verified live. The preceding turn extended domain
 geometry; this turn advances uncertainty assessment for sequence–structure
 comparisons. Potential dependence is not measured covariance, and the full
 research goal remains active and incomplete.
+
+### Expanded AlphaFold dependencies completed and both source counts verified
+
+Completed the 124-marker AlphaFold feature audit: 13,565 taxon–marker alignments,
+4,148,852 observed states and 23,393,290 pairs sharing coordinates. Fractions
+beyond length-10 and length-30 circular blocks are 46.81% and 28.97%. Added a
+reusable complete FASTA/count/fraction readback and ran it successfully on both
+expanded sources. This completes the dependency measurement started last turn;
+it does not establish calibrated branch intervals or statistical covariance.
+Domain comparisons and normalization controls remain verified live. The full
+research goal remains active and incomplete.

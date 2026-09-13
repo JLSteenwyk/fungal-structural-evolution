@@ -256,3 +256,29 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_3di_feature_overla
 Any expanded branch-resampling analysis must retain these limits: local block
 sensitivity alone does not establish calibrated uncertainty for structural
 change, and source-specific results cannot be pooled as independent replicates.
+
+### Expanded AlphaFold feature audit completed
+
+The expanded AlphaFold audit completed across all 124 ready markers and 13,565
+taxon–marker alignments: 4,148,852 observed features and 23,393,290 within-model
+feature pairs sharing coordinates. Of these pairs, 10,951,212 (46.81%) exceed
+the reach of a length-10 circular block and 6,777,381 (28.97%) that of length 30.
+As for ESMFold, these counts describe potential feature dependence, not measured
+covariance, independent observations or effective sample sizes. The source
+collections differ in taxa, proteins and length and are not predictor replicates.
+
+The reusable `readback_feature_overlap_counts.py` verifies the entire paired
+FASTA identity grid, lengths, observed-state counts, all summary totals, per-row
+block fractions and graph count bounds. It passed on both expanded datasets.
+The ESMFold v2 readback adds this reusable verification and fraction/total checks
+to the earlier one-off readback; original records remain preserved. Neither
+readback independently reconstructs all graphs.
+
+```bash
+python scripts/readback_feature_overlap_counts.py --overlap results/phylogeny/feature-overlap-gdm-expanded-v1 --inputs results/phylogeny/paired-inputs-gdm-expanded-v1 --output results/phylogeny/feature-overlap-gdm-readback-v1
+python scripts/readback_feature_overlap_counts.py --overlap results/phylogeny/feature-overlap-esmfold-partial-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --output results/phylogeny/feature-overlap-esmfold-readback-v2
+```
+
+Results are tracked under `metadata/feature_overlap_gdm*` and
+`metadata/feature_overlap_esmfold_readback_v2.json`. Both feature-overlap runs are
+now complete; calibrated branch uncertainty still requires further work.
