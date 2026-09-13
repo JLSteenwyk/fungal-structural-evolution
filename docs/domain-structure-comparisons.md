@@ -102,3 +102,36 @@ python -m unittest discover -s tests -p test_domain_geometry.py
 Use fresh output paths for reruns. Source/figure receipts, a complete manual
 review ordering and the cross-domain confidence table are tracked in metadata.
 Large coordinates, PAE matrices and raw annotations remain outside Git.
+
+## Expansion across the full frozen ESMFold dataset
+
+Started the same conserved-domain comparison protocol across all 266,788
+accepted pLDDT70 protein pairs in the frozen 5,121-model ESMFold collection.
+This source-specific extension uses the completed local PAE export and existing
+Pfam marker annotations. It retains single-instance, nonoverlapping Domain-type
+hits covering at least half the profile, and requires at least 30 qualified
+shared residues and half the shared domain sites. Multiple or overlapping
+instances remain excluded rather than assigned arbitrary correspondences.
+
+Every baseline whole-protein fit is reproduced before domain fits are accepted.
+Outputs compare the same domain sites under a whole-protein fit and a separate
+domain fit, plus local distance changes with and without directional PAE10
+filtering. A lower RMSD after separate fitting is an optimization consequence;
+it does not alone establish biological domain motion or a branch-specific rate.
+
+The prelaunch estimate allocates one CPU thread, 32 GB memory and 10 GB disk,
+with a 1–24 hour planning range on the existing host. The three existing geometry
+tests passed before launch. Source receipts and the producer hash are pinned in
+`metadata/esmfold_domain_comparison_resource_plan.json`. The producer now reports
+progress every 1,000 baseline pairs and uses source-neutral receipt wording;
+its numeric protocol is unchanged. No local-domain result is claimed yet.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/compare_marker_domains.py --snapshot results/structural_markers/esmfold-partial-v1 --comparisons results/structural_comparisons/esmfold-partial-v1 --annotations results/domains/marker-annotations-v1 --pae results/structural_pae/esmfold-partial-v1 --output results/structural_domains/esmfold-full-frozen-v1
+```
+
+The input paths retain their historical “partial” names: this run covers the
+entire frozen local-model collection, not all proteins in the fungal project.
+Results will require complete correspondence/exclusion readback and geometry
+checks before evolutionary interpretation. Interdomain-placement analysis can
+follow the completed domain fits.

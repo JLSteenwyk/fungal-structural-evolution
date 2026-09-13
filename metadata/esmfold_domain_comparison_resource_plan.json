@@ -1,0 +1,23 @@
+{
+  "status": "prelaunch_full_frozen_ESMFold_domain_comparisons",
+  "baseline_pairs": 266788,
+  "models": 5121,
+  "cpu_threads": 1,
+  "memory_gb_planning": 32,
+  "disk_gb_planning": 10,
+  "wall_hours_planning": [
+    1,
+    24
+  ],
+  "estimate_basis": "266788 accepted pLDDT70 whole-marker pairs. Recompute each original fit then all eligible shared Pfam domains; cache 5121 short-model PAE matrices and coordinates. Small earlier source snapshot validated geometry; runtime grows with domain count and squared residue count.",
+  "cost": "Existing authorized host; no paid services",
+  "script_sha256": "ce254ad4c17d1d9471e772633ec8ce5ec33f9e567767426918738a41d796d690",
+  "source_receipts": {
+    "results/structural_comparisons/esmfold-partial-v1": "367c7a660bab5d6f53870ffa66cfff7367bf1a31fced4e96bc5aef595fe849d3",
+    "results/structural_markers/esmfold-partial-v1": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+    "results/domains/marker-annotations-v1": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097",
+    "results/structural_pae/esmfold-partial-v1": "b83b8d840861c03216174e96d167467bd386731bf5a0f94e3d08e67ca1c7bb10"
+  },
+  "free_disk_bytes": 12534549725184,
+  "interpretation": "Full frozen local-source dataset, separate from AlphaFold. Not a pilot, branch-rate estimate, or biological domain-motion claim."
+}

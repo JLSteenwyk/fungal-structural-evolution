@@ -117,7 +117,9 @@ def main():
     with (args.comparisons / 'pairwise_metrics.tsv').open() as handle:
         pairs = [r for r in csv.DictReader(handle, delimiter='\t') if r['plddt_cutoff'] == '70']
     results, exclusions = [], []
-    for baseline in pairs:
+    for pair_number, baseline in enumerate(pairs, 1):
+        if pair_number % 1000 == 0:
+            print(f"Domain comparisons: {pair_number}/{len(pairs)} baseline pairs", flush=True)
         ka, kb = (baseline['marker'], baseline['taxon_a']), (baseline['marker'], baseline['taxon_b'])
         a, b = links[ka], links[kb]
         ma, mb = mapped[ka], mapped[kb]
@@ -191,7 +193,7 @@ def main():
         'excluded_pair_or_domain_rows': len(exclusions), 'mapped_annotation_hits': len(domain_audit),
         'eligible_annotation_hits': sum(r['status'] == 'eligible' for r in domain_audit),
         'filters': 'Pfam Domain type; single instance; no overlap with any GA hit; >=50% HMM coverage; matched profile sites in both domain spans; both pLDDT>=70; >=30 qualified residues and >=50% shared domain sites; same direct-comparison baseline.',
-        'interpretation': 'Descriptive conserved-domain geometry. Separate fitting necessarily improves fit and is not proof of biological domain motion. Pairwise rows are dependent; no branch rates, gains/losses, selection or significance are inferred. Restricted to existing immutable AFDB comparison snapshot.',
+        'interpretation': 'Descriptive conserved-domain geometry. Separate fitting necessarily improves fit and is not proof of biological domain motion. Pairwise rows are dependent; no branch rates, gains/losses, selection or significance are inferred. Restricted to the pinned source-specific structural comparison snapshot.',
         'artifacts': {p.name: sha(p) for p in args.output.iterdir()}}
     (args.output / 'receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(receipt, indent=2))

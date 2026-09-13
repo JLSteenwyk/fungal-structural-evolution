@@ -1226,3 +1226,16 @@ and rejects changes to other score fields between matched builds. The preceding
 turn launched compilation; this turn completes the build and starts the actual
 controlled score comparison. Results and corrected memberships remain pending.
 The full research goal remains active and incomplete.
+
+### Full frozen local-prediction domain comparisons launched
+
+Started conserved-domain geometry across 266,788 baseline pairs from all 5,121
+frozen ESMFold models, using completed Pfam annotations and local PAE exports.
+The existing three geometry tests pass, and source receipts/resource estimates
+are pinned. This extends the earlier small AlphaFold domain analysis to the full
+available local-source collection, separating within-domain geometry from
+whole-protein orientation effects. The producer and normalization-control
+conversion are both verified live. The previous turn started controlled score
+rescoring; this turn advances an independent prerequisite for interpreting
+structural change. Full domain outputs and the overall research goal remain
+incomplete.
