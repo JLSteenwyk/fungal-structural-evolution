@@ -1,0 +1,19 @@
+{
+  "stage": "Project fully audited accessibility onto all ready paired markers",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-partial-v1",
+  "snapshot": "results/structural_markers/esmfold-partial-v1",
+  "accessibility": "results/structural_annotations/accessibility-esmfold-v1",
+  "required_full_audit": "results/structural_annotations/accessibility-esmfold-full-audit-v1",
+  "output": "results/structural_annotations/paired-accessibility-esmfold-v1",
+  "cpu_workers": 1,
+  "memory_gb": 4,
+  "disk_headroom_gb": 2,
+  "runtime_minutes_estimate": [
+    1,
+    15
+  ],
+  "expected_markers": 72,
+  "expected_observed_sites_from_feature_overlap_audit": 714936,
+  "script_sha256": "31dcfee03e1e6f89447f05101c7216eba9aba0dbdee12f97891e7696891d0b0c",
+  "resources": "Existing authorized host; streaming output and a 128-model annotation cache."
+}

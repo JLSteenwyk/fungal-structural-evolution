@@ -1397,3 +1397,15 @@ estimates are recorded; the existing host is used. The controller is live and
 waiting, so full-audit completion is not yet claimed. This automates the next
 necessary validation step while broader analyses continue. The overall research
 goal remains active and incomplete.
+
+
+### Full local accessibility completed and linked to all paired sites
+
+Following the preceding verified wait, all 5,121 models and 1,183,341 residues
+completed production and passed the queued full raw-coordinate audit. A new
+projection links all 714,936 observed paired AA/3Di sites across 72 markers,
+4,669 taxon/marker cells and 4,630 models. Full alignment-site set and annotation
+readback passed, and partial-audit inputs were confirmed to fail before output.
+This advances the evolutionary localization dataset; normalized exposure,
+core/surface sensitivity and phylogenetic tests remain unfinished. The overall
+research goal remains active and incomplete.

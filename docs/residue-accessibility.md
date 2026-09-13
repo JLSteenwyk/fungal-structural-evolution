@@ -176,3 +176,46 @@ This is a queued validation stage, not evidence that full validation has passed.
 ```bash
 OPENBLAS_NUM_THREADS=1 python scripts/advance_accessibility_audit.py --config metadata/esmfold_accessibility_audit_controller_config.json
 ```
+
+
+## Full local production and evolutionary-site projection completed
+
+All 5,121 frozen ESMFold models completed: 1,183,341 residues. The automatic
+controller then completed the full raw-coordinate audit, covering every model
+and residue. The production, audit and controller receipts are recorded in
+`metadata/esmfold_accessibility_full_receipt.json`,
+`metadata/esmfold_accessibility_full_audit_receipt.json` and
+`metadata/esmfold_accessibility_audit_controller_receipt.json`.
+This supersedes the earlier partial-audit coverage limit for this snapshot.
+ASA values themselves were not independently recalculated by this audit.
+
+`scripts/link_paired_sites_accessibility.py` now joins continuous focal-residue
+ASA to every observed site in the exact paired AA/3Di inputs: 714,936 sites,
+72 markers, 4,669 marker–taxon combinations and 4,630 distinct models. The
+observed-site count matches the prior feature-overlap audit. Masked alignment
+cells are omitted from the residue table and counted in each marker summary.
+Species-specific observations are retained even when coordinates are identical.
+
+The projection requires a complete matching accessibility audit. A rejection
+check confirmed that the earlier partial audit cannot create projection outputs.
+After production, all 714,936 rows passed separate readback for complete observed
+site-set equality, duplicate exclusion, AA/3Di states, matrix columns and exact
+ASA/confidence/atom-count/context fields. All marker cell totals were reconciled.
+The original residue mapping and numerical ASA calculation are separate checks.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/link_paired_sites_accessibility.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --snapshot results/structural_markers/esmfold-partial-v1 --accessibility results/structural_annotations/accessibility-esmfold-v1 --audit results/structural_annotations/accessibility-esmfold-full-audit-v1 --output results/structural_annotations/paired-accessibility-esmfold-v1
+```
+
+The compressed residue table is outside Git under the output directory. Its
+checksum, source lineage and all-marker summary are recorded in
+`metadata/esmfold_paired_accessibility_receipt.json`,
+`metadata/esmfold_paired_accessibility_marker_summary.tsv` and
+`metadata/esmfold_paired_accessibility_readback.json`. Resources were estimated
+before launch in `metadata/esmfold_paired_accessibility_resource_plan.json`.
+
+This supplies a coordinate system for structural localization analyses. ASA
+is not normalized across amino-acid types; no categorical core/surface,
+interface or evolutionary transition is assigned here. Full-chain domain
+placement, low-confidence occluding residues and missing biological partners
+remain relevant. Phylogenetic modeling of changes in exposure is still pending.
