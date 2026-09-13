@@ -1,0 +1,76 @@
+{
+  "status": "complete_taxon_identity_sensitivity_inputs",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "label_receipt_sha256": "c55eeb81b2e5c65c54e0ca2cac0c34c08a728f1a53a39614a75668258fe6a0ec",
+  "curation_sha256": "f7f4779e1100d0d42ec16b9d074879011031e8c240fa8308fac7da59ce4cd304",
+  "assembly_catalog_sha256": "11b03013197060a77002e0ee6cd525eefe891fef04522d5c7b5af4bf09db5fe6",
+  "source_matrix_receipt_sha256": {
+    "profile": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "mafft": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231"
+  },
+  "script_sha256": "641930f8b40944a9b6d28de3cbee71291200475a0b1a7026731eccec0d01e9c1",
+  "curated_hybrids": 2,
+  "policies": {
+    "exclude_curated_hybrids": {
+      "retained": 524,
+      "excluded": 2,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      }
+    },
+    "exclude_hybrids_and_uncertain_labels": {
+      "retained": 503,
+      "excluded": 23,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      }
+    }
+  },
+  "matrices": [
+    {
+      "alignment": "profile",
+      "policy": "exclude_curated_hybrids",
+      "taxa": 524,
+      "columns": 49027,
+      "path": "profile-exclude_curated_hybrids.faa",
+      "sha256": "7e9f544c5d59def74beb40744a5d309f2a6962e309da065fbe813e279803b1ab"
+    },
+    {
+      "alignment": "profile",
+      "policy": "exclude_hybrids_and_uncertain_labels",
+      "taxa": 503,
+      "columns": 49027,
+      "path": "profile-exclude_hybrids_and_uncertain_labels.faa",
+      "sha256": "17a9c2fdef9cc1a2c7b516a7cfb4ba1bb112b5a2f924f27e2a78535587d07141"
+    },
+    {
+      "alignment": "mafft",
+      "policy": "exclude_curated_hybrids",
+      "taxa": 524,
+      "columns": 63750,
+      "path": "mafft-exclude_curated_hybrids.faa",
+      "sha256": "cd0763361e7ac9d01a3d1efaf3cafd263a584d0bd03e274bdc9b201ea5c679be"
+    },
+    {
+      "alignment": "mafft",
+      "policy": "exclude_hybrids_and_uncertain_labels",
+      "taxa": 503,
+      "columns": 63750,
+      "path": "mafft-exclude_hybrids_and_uncertain_labels.faa",
+      "sha256": "38fed364bdba2e7817b7ef6dd5166a7df1a5e55487cd27699194171fff4ca9c7"
+    }
+  ],
+  "interpretation": "Input preparation only. Sequences/columns remain exactly as in the full matrices; excluded taxa are retained in original data. No topology test, accepted species count, homeolog assignment or comprehensive hybrid screen is claimed.",
+  "artifacts": {
+    "taxon_membership.tsv": "9041cab8869dae0edeecac0364941260ffef161c770c1a773fee4deae115c98f",
+    "exclude_hybrids_and_uncertain_labels.tips.txt": "4a70f66d72231da4e6462a855119718efe18573326bea08aa8186aeee87b8d18",
+    "mafft-exclude_hybrids_and_uncertain_labels.faa": "38fed364bdba2e7817b7ef6dd5166a7df1a5e55487cd27699194171fff4ca9c7",
+    "mafft-exclude_curated_hybrids.faa": "cd0763361e7ac9d01a3d1efaf3cafd263a584d0bd03e274bdc9b201ea5c679be",
+    "exclude_curated_hybrids.tips.txt": "208bafa3d5e3835ac426f3dc6ee329338698646442c4a52dbcb24e03208012ce",
+    "profile-exclude_hybrids_and_uncertain_labels.faa": "17a9c2fdef9cc1a2c7b516a7cfb4ba1bb112b5a2f924f27e2a78535587d07141",
+    "hybrid_evidence.tsv": "f42ed6fcef509b9d0d4ffc4c4da7406899b33557d141f60711e167f14f8399b9",
+    "profile-exclude_curated_hybrids.faa": "7e9f544c5d59def74beb40744a5d309f2a6962e309da065fbe813e279803b1ab"
+  }
+}

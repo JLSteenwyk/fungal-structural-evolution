@@ -751,3 +751,19 @@ The paired-site geometry and supported tree jobs remain live. The previous turn
 made progress by launching comparable direct geometry; this turn closes the
 execution dependency for the ecology coverage gap. The full research goal stays
 active; scheduling does not complete the predictions or ecological tests.
+
+
+### Hybrid evidence linked to selected assemblies; taxon sensitivities prepared
+
+Verified accession/strain/publication linkage for VIN7 and CBS 1483 using the
+frozen assembly catalogue and primary genome studies. S. pastorianus is an
+additional curated hybrid missed by the name-only screen. Catalogue assembly
+representation does not establish biological ploidy or nonhybrid ancestry.
+
+Prepared four exact sequence-subset matrices: both alignment methods with the
+two hybrids excluded (499 fungal entries +25 outgroups), and with those hybrids
+plus 21 uncertain labels excluded (478 +25). All retained sequences passed full
+readback; original data remain intact. These are unrun sensitivity inputs, not
+a changed sampling objective or accepted unique-species count. The previous
+turn scheduled ecology predictions; this turn adds assembly-linked evidence
+and executable taxon-sensitivity inputs. The full goal remains active.
