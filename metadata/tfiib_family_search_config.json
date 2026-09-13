@@ -1,0 +1,44 @@
+{
+  "profiles": [
+    "PF00382.25",
+    "PF07741.19",
+    "PF08271.18"
+  ],
+  "profile_names": [
+    "BRF1",
+    "TFIIB",
+    "Zn_Ribbon_TF"
+  ],
+  "pfam_receipt_sha256": "63d5ff5665e12b2604b44a6331714cedc1c35f3c2758c71b9d00cfd995bc73ac",
+  "full_input_receipt_sha256": "8d21e215367ebcdca2c5fb157b3b0f4f6fab9fbc79624a8a0aa5e46c2586a928",
+  "marker_annotation_receipt_sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097",
+  "selected_profile_sha256": "62ab5813f58792f78ecf722d496ace6fb5140bef01c680a63142de343edbab41",
+  "fetch_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmfetch",
+    "-f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/pfam/38.2/Pfam-A.hmm",
+    "results/domains/tfiib-family-search-v1/profile_accessions.txt"
+  ],
+  "fetch_executable_sha256": "8d7ac8f5a5a5d96f70a93e5af4170f4247f30415074086c3fc11992669e1878e",
+  "search_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+    "--cut_ga",
+    "--cpu",
+    "2",
+    "--seed",
+    "42",
+    "--noali",
+    "--domtblout",
+    "results/domains/tfiib-family-search-v1/hits.domtblout",
+    "-o",
+    "results/domains/tfiib-family-search-v1/search.txt",
+    "results/domains/tfiib-family-search-v1/selected_profiles.hmm",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/domains/full-inputs-v1/additional_sequences.faa"
+  ],
+  "search_executable_sha256": "b4f3d1d5308d3716c2bf0c307beec2b491d0dcf77df7e55fba40cc7c39add1dd",
+  "version": "# HMMER 3.4 (Aug 2023); http://hmmer.org/",
+  "additional_unique_sequences": 5654720,
+  "representative_proteins": 5815847,
+  "taxa": 526,
+  "interpretation": "Focused acceleration of three domain searches across all additional representative sequences; existing marker hits are available for later combination. Gathering thresholds match the primary Pfam searches, but E-values use this additional database. Full-family membership/phylogeny/reconciliation still pending."
+}

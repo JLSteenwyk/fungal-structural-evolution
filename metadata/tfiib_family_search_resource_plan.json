@@ -1,0 +1,23 @@
+{
+  "status": "prelaunch_full_representative_targeted_domain_search",
+  "profiles": [
+    "PF00382.25",
+    "PF07741.19",
+    "PF08271.18"
+  ],
+  "additional_unique_sequences": 5654720,
+  "taxa": 526,
+  "workers": 1,
+  "hmmer_worker_threads": 2,
+  "coordinator_threads": 1,
+  "planning_runtime_minutes": [
+    2,
+    120
+  ],
+  "planning_memory_gb": 8,
+  "planning_output_gb": 1,
+  "free_disk_bytes": 12534428061696,
+  "basis": "Three short Pfam models searched against the existing 2.52-billion-residue additional-protein database; marker results already available. Far fewer models than the concurrent full Pfam search. Estimate is a scheduling allowance, not measured runtime.",
+  "cost": "Existing authorized host only; no new charges",
+  "reason": "Recover competing TFIIB/BRF1-like domain-bearing proteins throughout the full study, beyond one BUSCO-selected copy; later family inference and reconciliation must test hidden paralogy."
+}

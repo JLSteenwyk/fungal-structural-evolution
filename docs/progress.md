@@ -330,3 +330,9 @@ Rendered and inspected a figure of all 1,712 stricter-policy marker/group median
 Completed all 20 targeted group realignments and 163 pair correspondence comparisons, reproducing every original divergence baseline independently. Three coordinate/codon-mask tests passed. High median differences persist, while residue correspondences and selected columns show sensitivity to alignment context.
 
 The leading Aspergillus marker has two domain-hit patterns: six longer BRF1-hit proteins and four shorter proteins without that hit, both carrying TFIIB hits. The global median difference is 0.75 across patterns but 0.1336 and 0.0460 within them. All ten source identities and sequence hashes, domain source hashes and output artifacts were verified. This is exploratory evidence for mixed protein types/hidden paralogy as a competing explanation, not proof of duplication history or acceleration. Gene-family reconstruction/reconciliation is now necessary before biological interpretation of this case; baseline marker inputs remain preserved.
+
+## Broad candidate-family search launched
+
+Verified the protected core orthogroup table and traced the only focal Aspergillus core taxon to OG0001567. Nine focal taxa are outside the reference core, so core membership alone cannot resolve the mixed-domain case.
+
+Started a focused three-profile Pfam search across all 5,654,720 additional representative sequences from the full 526-taxon design, with existing marker hits available for later reuse. Profile/library/input/marker-source and HMMER-binary hashes pass. The one-process/two-worker search is confirmed running, with resource estimates and configuration versioned. Full homolog recovery, family phylogeny and reconciliation remain pending; original full-Pfam and orthology jobs continue independently.

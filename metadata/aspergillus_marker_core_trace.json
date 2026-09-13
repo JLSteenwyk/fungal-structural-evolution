@@ -1,0 +1,31 @@
+{
+  "status": "complete_case_core_membership_trace",
+  "case_taxa": 10,
+  "case_taxa_in_core": [
+    "F746128"
+  ],
+  "case_taxa_outside_core": [
+    "F1069201",
+    "F1220207",
+    "F162425",
+    "F1810926",
+    "F1810928",
+    "F182096",
+    "F41759",
+    "F5059",
+    "F5062"
+  ],
+  "membership": [
+    {
+      "taxon_id": "F746128",
+      "protein_id": "XP_754348.1",
+      "orthogroup": "OG0001567",
+      "core_taxa_in_group": 62,
+      "core_proteins_in_group": 72
+    }
+  ],
+  "orthogroup_table_sha256": "47b9312228f55ef3b6f81832d7ae2855705e0d384e3c9eadd87bd490e61fccf0",
+  "protected_core_config_sha256": "87345a8ac83f7e880427f489ecb3dbb1e4584f15e0a63192594fa319b0c897bf",
+  "case_table_sha256": "e96b82044b4bffde39b71fc4007a69fc26103e86b743565f89c6f489ea9f4c15",
+  "interpretation": "Only one focal Aspergillus taxon is in the completed reference core. Other focal taxa await full assignment; lack of core membership is not absence of a homolog. One core group association cannot resolve mixed protein types across ten taxa."
+}
