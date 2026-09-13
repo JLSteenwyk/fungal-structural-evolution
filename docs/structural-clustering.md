@@ -118,3 +118,27 @@ python scripts/annotate_structure_clusters.py --clusters results/structural_clus
 # Run only after exact conversion has a completion receipt:
 python scripts/review_exact_cluster_scores.py --validation results/structural_clusters/edge-validation-v1 --exact results/structural_clusters/edge-exact-score-v1 --output results/structural_clusters/edge-exact-review-v1
 ```
+
+
+### Exact-score review completed
+
+Conversion with `--exact-tmscore 1` completed on the same 32,050 retained directed
+alignments. All pair identities and fixed alignment fields match the preceding
+review. Of 16,025 representative/member pairs, 14,769 pass both directions,
+1,254 neither, and two one direction. There are 549 directed decision changes
+and 275 pair classification changes relative to the approximate-score review.
+
+Seventy-two directed alignment-normalized TM scores still exceed one (maximum
+1.008); all other bounded score fields pass range checks. Direct table readback
+preserves these values and marks their edges as failing review. The underlying
+cause remains unresolved; the exact option alone does not resolve this issue.
+No clamping, reassignment, orthology or novelty inference has been applied.
+Original groups and their prior annotations remain unchanged and exploratory.
+
+```bash
+python scripts/review_exact_cluster_scores.py --validation results/structural_clusters/edge-validation-v1 --exact results/structural_clusters/edge-exact-score-v1 --output results/structural_clusters/edge-exact-review-v1
+```
+
+Receipts and the complete pair classification table are tracked under
+`metadata/structure_cluster_exact_score_*`; full directed scores remain outside
+Git under `results/structural_clusters/edge-exact-review-v1`.

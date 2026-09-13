@@ -1,0 +1,42 @@
+{
+  "status": "complete_experimental_agreement_figure",
+  "comparison_receipt_sha256": "4197a1a6e2a73739cacb1f03f6e2aa4fbec463071ecfd2a02d4edd80babe1c95",
+  "summary_receipt_sha256": "e63ead245a5fb1cb7a87846de6dc37795f2294b4db567f0b1dbbdf69aeef6705",
+  "script_sha256": "a0cda5d7e5f7398cce811765ec1e4bd0751268ab30d3d133fb6db2c507d4c8f8",
+  "title": "Prediction\u2013experiment agreement: full exact-match reference set",
+  "reference_proteins": 80,
+  "plotted_proteins": 72,
+  "recomputed_threshold_summary": [
+    {
+      "predicted_plddt_cutoff": 0,
+      "accepted_comparisons": 3268,
+      "excluded_comparisons": 146,
+      "accepted_proteins": 72,
+      "comparison_weighted_median_RMSD": 1.2493047742769967,
+      "median_of_protein_median_RMSD": 3.0422866492277283
+    },
+    {
+      "predicted_plddt_cutoff": 70,
+      "accepted_comparisons": 3219,
+      "excluded_comparisons": 195,
+      "accepted_proteins": 68,
+      "comparison_weighted_median_RMSD": 1.057121420575711,
+      "median_of_protein_median_RMSD": 2.242209547368797
+    },
+    {
+      "predicted_plddt_cutoff": 90,
+      "accepted_comparisons": 2463,
+      "excluded_comparisons": 951,
+      "accepted_proteins": 37,
+      "comparison_weighted_median_RMSD": 0.656550688007947,
+      "median_of_protein_median_RMSD": 0.8913936773062285
+    }
+  ],
+  "interpretation": "Every plotted per-protein count and median independently recomputed from accepted comparison rows. Descriptive pinned reference dataset; no inferential independence or accuracy claim; no point is drawn for absent threshold coverage.",
+  "artifacts": {
+    "experimental_agreement.png": "14b0dac7c04b6c4443c0b3ddeb85377cc956021217e0b125c31874581ad7a509",
+    "experimental_agreement.pdf": "55c9c0bbdfbba2de74f1367c7efabde3eea58438ae9e2061287b397aa9e4b0ea",
+    "plotted_threshold_summary.tsv": "bc31cc8c171e6277c0af296391f99177e6bf237dfb467639033f7448b43f3abe",
+    "experimental_agreement.svg": "d4ccb52c4baf3885640249c12a6e0c484c66f31d53749c6fb26ca2338d0158ab"
+  }
+}

@@ -489,7 +489,7 @@ this is not a claim of corrupted deposition.
 python scripts/audit_experimental_ca_mapping.py --mapping results/experimental_structures/ca-mapping-full-v1 --screen results/experimental_structures/sequence-screen-full-v1 --coordinates data/experimental_structures/coordinates-exact-full-v1 --output results/experimental_structures/ca-audit-full-v1
 ```
 
-The full prediction–experiment comparison is now running against this audited
+The full prediction–experiment comparison completed against this audited
 mapping, using the same fixed protocol as the original partial comparison:
 retain all chains/models; predicted focal pLDDT 0/70/90; at least 50 matched CA
 and half the full canonical sequence; independently recompute every accepted
@@ -502,3 +502,40 @@ same nine Ascomycota project taxa.
 ```bash
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/compare_experimental_predictions.py --mapping results/experimental_structures/ca-mapping-full-v1 --screen results/experimental_structures/sequence-screen-full-v1 --predictions results/structural_markers/gdm-expanded-v1 --references results/experimental_structures/reference-metadata-v2 --output results/experimental_structures/prediction-agreement-full-v1
 ```
+
+
+### Full reference agreement completed
+
+All 8,950 accepted calculations passed independent numerical recalculation;
+1,292 threshold-specific comparisons were excluded. The complete grid contains
+3,414 chain/model/target combinations at three thresholds (10,242 rows).
+
+| Predicted focal pLDDT | Accepted / excluded | Proteins | Comparison median RMSD Å | Median of protein medians Å |
+| --- | ---: | ---: | ---: | ---: |
+| 0 | 3,268 / 146 | 72 | 1.2493 | 3.0423 |
+| 70 | 3,219 / 195 | 68 | 1.0571 | 2.2422 |
+| 90 | 2,463 / 951 | 37 | 0.6566 | 0.8914 |
+
+Eight of the 80 reference proteins never pass coverage. Keeping the chain/model
+cohort fixed gives baseline→filtered medians of 1.2212→1.0571 Å for threshold
+70 and 0.9221→0.6566 Å for threshold 90. Residue subsets still change. Neither
+comparison weighting nor equal-protein weighting establishes representative,
+independent accuracy estimates. Taxonomic coverage, experimental context and
+training/template independence remain limitations.
+
+The full comparison receipt retains the original generic “partial reference
+sampling” wording: retrieval of the selected exact-match set is complete, while
+coverage of the broader fungal project is limited. Summary v1 also inherited
+partial-snapshot wording; v2 corrects that description and reproduces identical
+numeric tables. Original results remain immutable.
+
+```bash
+python scripts/summarize_experimental_agreement.py --comparisons results/experimental_structures/prediction-agreement-full-v1 --output results/experimental_structures/prediction-agreement-summary-full-v2
+python scripts/plot_experimental_agreement.py --comparisons results/experimental_structures/prediction-agreement-full-v1 --summary results/experimental_structures/prediction-agreement-summary-full-v2 --output results/experimental_structures/prediction-agreement-figure-full-v1 --title 'Prediction–experiment agreement: full exact-match reference set'
+```
+
+![Full experimental agreement](figures/experimental_agreement_full.svg)
+
+Every plotted protein median/count was recalculated from comparison rows; the
+rendered PNG was visually inspected. Figure dimensions and exclusion counts now
+adapt to the actual input dataset. The partial figure remains available.

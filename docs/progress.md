@@ -1148,3 +1148,21 @@ Experimental quality/context/training independence and broad taxonomic coverage
 remain unresolved. The previous turn annotated structural groups; this turn
 completes the full reference correspondence dataset and expands its benchmark.
 The overall project goal remains active and incomplete.
+
+
+### Full experimental agreement and exact cluster-score review completed
+
+Completed and independently recalculated all 8,950 accepted experimental
+comparisons. Published protein-weighted and fixed-cohort summaries plus the
+full reference figure (72 baseline-eligible proteins of 80). Deposition
+multiplicity materially changes descriptive medians; limited reference coverage
+and training independence remain unresolved. Generalized plotting labels and
+corrected inherited partial-snapshot summary wording without altering old runs.
+
+Exact cluster-score conversion also completed: 14,769 representative/member
+pairs pass both directions; 1,256 do not. Seventy-two directed alignment-TM
+scores remain above one and explicitly fail review, with their values preserved
+for investigation. Original groups remain exploratory. Existing ESMFold,
+phylogeny and orthology jobs were verified live. The previous turn launched
+full agreement; this turn completes its summaries and exact edge review.
+The overall research goal remains active and incomplete.

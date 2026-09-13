@@ -1,0 +1,23 @@
+{
+  "status": "complete_exact_option_cluster_edge_review",
+  "validation_receipt_sha256": "46804800b09dfa611343267a831189bc2a94bec4eca7069e3195f4fb6241c244",
+  "exact_completion_sha256": "1fa1243c0d9ca2f8af6c72d58646bb6668f815f314cf0bd17f11ab12e5b5de56",
+  "script_sha256": "4063096a0b2c6e0818c1678ea0a6f49886e7865eacb435640c37168b9991f60a",
+  "directed_pairs": 32050,
+  "edge_pairs": 16025,
+  "checks": {
+    "invalid_score_rows": 72,
+    "criterion_decision_changes": 549
+  },
+  "exact_edge_status_counts": {
+    "both_directions_pass": 14769,
+    "neither_direction_passes": 1254,
+    "one_direction_passes": 2
+  },
+  "edge_decision_changes": 275,
+  "interpretation": "Exact-TM option of the same Foldseek implementation on unchanged saved alignments. Identity, fixed alignment fields, ranges and threshold decisions checked. Out-of-range scores are explicit failures of this review. Finite printed precision and fixed-alignment dependence remain. Original memberships remain immutable; no all-pairs, orthology, novelty or experimental validity claim.",
+  "artifacts": {
+    "directed_score_review.tsv": "e0b570314df55867f998fd15980b6ec74d04b8e37092ba78cff83530755d0dab",
+    "edge_score_review.tsv": "d328d594e8a816105e9ac9f17a5bd4cef923b455d1cc560f3a420c49d969d28d"
+  }
+}
