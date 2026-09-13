@@ -824,3 +824,19 @@ CA confidence arrays, invalid sentinels and 211,633 explicit six-residue minima
 `metadata/esmfold_ecology_coordinate_encoding_readback.json`. PAE qualification
 started after both primary stages completed and remains running; independent
 PAE-context checks remain required before evolutionary use. Resource plan: `metadata/esmfold_ecology_qualification_resource_plan.json`.
+
+
+Ecology qualification completed (session 59502 exit zero): 159,639 of 212,983
+full-chain residues pass native six-residue pLDDT70 and maximum context PAE10.
+The independent original-NPZ readback passed every one of 211,633 valid contexts
+and all preserved arrays and model totals (session 22429 exit zero). The check
+accumulates all 36 ordered pairs per context; it does not independently select
+spatial partners or establish prediction accuracy. Records:
+`metadata/esmfold_ecology_qualification_receipt.json` and
+`metadata/esmfold_ecology_full_pae_context_readback.json`.
+
+Paired AA/3Di input preparation is now running against the unchanged full profile
+matrix and eligibility criteria. Resource plan:
+`metadata/esmfold_ecology_paired_input_resource_plan.json`. Final usable markers,
+taxon coverage and matched ecological contrasts remain pending; full-chain
+qualified counts are not counts of retained alignment observations.

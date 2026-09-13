@@ -1,0 +1,19 @@
+{
+  "status": "passed_full_original_pae_context_readback",
+  "models": 675,
+  "totals": {
+    "length": 212983,
+    "valid_states": 211633,
+    "invalid_states": 1350,
+    "valid_focal_plddt70": 170452,
+    "valid_feature_plddt70": 159854,
+    "valid_feature_plddt70_pae10": 159639
+  },
+  "source_receipts": {
+    "snapshot": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+    "coordinates": "1e6c781c9012dc858fe88ca77013e688f3f65cfd421d6275d459291f302f8e13",
+    "qualified": "ca94b9e8d28dc5750a04e5d09182b6e11950fe25e9d486d8ed85c3ba3f794cdd"
+  },
+  "script_sha256": "22be27ca171a41447eb46d75226f644672dc9dd07312c84c8eebaec992b421c5",
+  "interpretation": "Every valid six-residue context checked against original local NPZ directional PAE by 36 ordered-pair maxima; all pre-existing coordinate arrays and summary counts preserved. Does not repeat native partner selection or establish confidence calibration or biological accuracy."
+}

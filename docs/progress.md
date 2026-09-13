@@ -1938,3 +1938,10 @@ Started PAE qualification after these completed prerequisites. Supplemental
 coordinate-array readback subsequently passed all 675 models and 211,633
 six-residue confidence minima (session 80243 exit zero). Final qualification
 counts and independent PAE-context checks remain pending.
+
+
+Ecology qualification and full PAE-context readback completed for all 675 models:
+211,633 valid contexts checked, 159,639 full-chain residues pass combined feature
+pLDDT70/PAE10. Started paired AA/3Di alignment preparation with unchanged profile
+matrix, masks and eligibility thresholds. Final usable coverage and ecological
+contrasts remain pending.
