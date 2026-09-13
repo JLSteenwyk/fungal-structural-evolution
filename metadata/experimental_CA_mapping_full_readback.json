@@ -1,0 +1,25 @@
+{
+  "status": "complete_CA_grid_and_sampled_raw_atom_readback",
+  "mapping_receipt_sha256": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd",
+  "script_sha256": "666c4c207ce4f3bf418b17a46452393e9e9affada35817d47671a8de28d1e685",
+  "entries_checked": 1032,
+  "position_rows_checked": 1306701,
+  "exported_CA_atoms_checked": 1009309,
+  "raw_mmcif_entries_checked": [
+    "7KEE",
+    "3NZX",
+    "7E8S",
+    "5N5Y",
+    "7E93"
+  ],
+  "raw_mmcif_position_rows_checked": 2842,
+  "status_counts": {
+    "no_CA_observation": 297499,
+    "unambiguous_full_occupancy_CA": 1008964,
+    "multiple_CA_records": 107,
+    "nonstandard_or_mismatching_monomer": 57,
+    "alternate_or_partial_occupancy": 73,
+    "invalid_coordinates_or_occupancy": 1
+  },
+  "interpretation": "All exported grids, sequence hashes, embedded atom identities and count partitions verified. Raw mmCIF atom fields independently read back for five identity-hash-selected entries only. Geometry and experimental quality not assessed."
+}

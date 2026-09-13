@@ -460,3 +460,45 @@ SVG, PNG and PDF exports and a hash receipt are retained in the immutable figure
 output. The SVG is published in the repository; the rendered PNG was visually
 inspected for readable labels, unclipped axes/legend and correct missing-point
 representation.
+
+## Full experimental CA mapping completed and audited
+
+All 1,032 experimental entries completed mapping, retaining 1,306,701 complete
+sequence-position records across deposited models and selected chains:
+
+| CA correspondence class | Position records |
+| --- | ---: |
+| Unambiguous, full occupancy | 1,008,964 |
+| No CA observation | 297,499 |
+| Multiple CA records | 107 |
+| Nonstandard or mismatching monomer | 57 |
+| Alternate location or partial occupancy | 73 |
+| Invalid coordinates or occupancy | 1 |
+
+Every exported sequence grid, sequence hash, embedded atom identity and count
+partition passed full readback. The 1,009,309 embedded atom records include
+multiple/alternate observations; their count is not the accepted-residue count.
+Independent raw mmCIF field readback covered 2,842 position rows in five
+identity-hash-selected entries (7KEE, 3NZX, 7E8S, 5N5Y, 7E93), not every raw
+source file. The one invalid-occupancy record was additionally checked directly
+in 5LQW: entity 14, model 1, label chain N, residue 640 has occupancy 0.00.
+Its coordinates are finite, but it is excluded as an observed CA by policy;
+this is not a claim of corrupted deposition.
+
+```bash
+python scripts/audit_experimental_ca_mapping.py --mapping results/experimental_structures/ca-mapping-full-v1 --screen results/experimental_structures/sequence-screen-full-v1 --coordinates data/experimental_structures/coordinates-exact-full-v1 --output results/experimental_structures/ca-audit-full-v1
+```
+
+The full prediction–experiment comparison is now running against this audited
+mapping, using the same fixed protocol as the original partial comparison:
+retain all chains/models; predicted focal pLDDT 0/70/90; at least 50 matched CA
+and half the full canonical sequence; independently recompute every accepted
+geometry with the second rotation/distance implementation. Resource planning
+reserves one CPU thread, 8 GB memory and 5 GB output with a 0.1–4 hour forecast
+on the existing host. Experimental quality, target-chain context and training
+independence remain unresolved; source coverage is still concentrated in the
+same nine Ascomycota project taxa.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/compare_experimental_predictions.py --mapping results/experimental_structures/ca-mapping-full-v1 --screen results/experimental_structures/sequence-screen-full-v1 --predictions results/structural_markers/gdm-expanded-v1 --references results/experimental_structures/reference-metadata-v2 --output results/experimental_structures/prediction-agreement-full-v1
+```

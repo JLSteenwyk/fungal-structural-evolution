@@ -1135,3 +1135,16 @@ without treating clusters as orthogroups. Exact-score conversion is verified
 live; its downstream reviewer is prepared but awaits completion. The preceding
 turn tested edge criteria; this turn completes group provenance annotation while
 preserving unresolved validation. The full research goal remains active.
+
+### Full experimental residue mapping audited; full agreement run started
+
+Completed all 1,032 entry mappings and audited 1,306,701 exported position
+records, including 1,008,964 unambiguous full-occupancy CA positions. Five
+selected raw mmCIF entries passed independent field readback; the sole
+zero-occupancy exclusion was separately confirmed in 5LQW. Started full
+prediction–experiment geometry after the audit passed, retaining the same
+protocol and independent numerical recalculations as the partial run.
+Experimental quality/context/training independence and broad taxonomic coverage
+remain unresolved. The previous turn annotated structural groups; this turn
+completes the full reference correspondence dataset and expands its benchmark.
+The overall project goal remains active and incomplete.
