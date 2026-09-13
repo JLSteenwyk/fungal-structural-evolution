@@ -806,3 +806,15 @@ review beyond the initial genus example but does not resolve orthology or
 establish domain loss. Combined/repeat trees remain live. The prior turn measured
 identity-policy coverage; this turn prepares exact family annotations needed for
 interpreting a mechanistic case. The full goal remains active and incomplete.
+
+
+### Experimental structure candidate inventory completed
+
+Queried the complete 13,153-accession frozen AlphaFold marker-model inventory
+against RCSB experimental polymer entities. All 132 batches completed, nominating
+3,592 unique entities. Saved query/response hashes, counts and the deduplicated
+union passed independent readback. No atomic structures or exact-sequence
+benchmarks are claimed yet; entity sequence, construct, observed-coordinate,
+quality and training-overlap checks remain. The prior turn annotated TFIIB tree
+inputs; this turn establishes a concrete experimental-reference candidate set
+for the project's prediction/circularity controls. The full goal remains active.
