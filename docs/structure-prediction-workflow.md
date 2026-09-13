@@ -806,3 +806,21 @@ CPU, 8 GiB memory, 2 GiB output and 0.05–2 planning hours in
 `metadata/esmfold_ecology_coordinate_audit_resource_plan.json`.
 PAE exporter PID 4052697 remains live. Neither pre-PAE coordinate completion nor
 final PAE-qualified coverage is claimed yet.
+
+
+Ecology PAE export completed (session 67992 exit zero): 675 verified models,
+zero failures and 608,276,489 compressed bytes. Separate full identity/source-link
+and file-size/hash readback passed all 675 outputs. The exporter checked exact
+numerical matrix round-trips. Records:
+`metadata/esmfold_ecology_full_pae_export_receipt.json` and
+`metadata/esmfold_ecology_pae_export_readback.json`.
+
+The primary coordinate-feature audit is also complete (session 25686 exit zero):
+212,983 residues, 211,633 valid states and 159,854 states passing six-residue
+pLDDT70 before PAE filtering. Additional independent coordinate-array/minimum
+readback subsequently passed all 675 model hashes, sequence identities, rounded
+CA confidence arrays, invalid sentinels and 211,633 explicit six-residue minima
+(session 80243 exit zero). Its receipt is
+`metadata/esmfold_ecology_coordinate_encoding_readback.json`. PAE qualification
+started after both primary stages completed and remains running; independent
+PAE-context checks remain required before evolutionary use. Resource plan: `metadata/esmfold_ecology_qualification_resource_plan.json`.

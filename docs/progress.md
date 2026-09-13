@@ -1929,3 +1929,12 @@ executable, extraction script and native-source hashes as the follow-on cohort.
 Full coordinate-feature audit is running (session 25686); initial models pass
 reconstruction. PAE export remains live as PID 4052697. Qualification and paired
 inputs remain pending.
+
+
+Ecology PAE export and full exported-file identity/hash readback completed for
+675 models (608 MB compressed). The primary coordinate audit completed with
+211,633 valid states and 159,854 pre-PAE six-residue confidence-qualified states.
+Started PAE qualification after these completed prerequisites. Supplemental
+coordinate-array readback subsequently passed all 675 models and 211,633
+six-residue confidence minima (session 80243 exit zero). Final qualification
+counts and independent PAE-context checks remain pending.
