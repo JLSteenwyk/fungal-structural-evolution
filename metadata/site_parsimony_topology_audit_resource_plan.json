@@ -1,0 +1,12 @@
+{
+  "scope": "All stored bootstrap-score grids and summaries; all 72000 tree tip sets; independent scores on one hash-selected tree per marker",
+  "cpu_workers": 1,
+  "memory_gb_plan": 4,
+  "disk_gb_plan": 1,
+  "runtime_hours_estimate": [
+    0.1,
+    2
+  ],
+  "basis": "Sequential bootstrap tree parsing plus 33142 independent site-score recalculations. Existing authorized host.",
+  "script_sha256": "60f74cecc8649900bd6758ebaaeb16970ea26cf3d7f86cb6720588d28b8e03c4"
+}

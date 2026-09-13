@@ -332,3 +332,34 @@ stage, not yet a completed all-marker result. Resource and execution configs are
 ```bash
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/assess_site_parsimony_topologies.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --diagnostic results/phylogeny/site-parsimony-exposure-esmfold-v1 --output results/phylogeny/site-parsimony-topologies-esmfold-v1 --workers 8 --bootstrap-trees 1000
 ```
+
+
+## Completed topology sensitivity and full artifact audit
+
+All 72,000 saved bootstrap topologies completed over 16,571 sites. The retained
+arrays contain 33,142,000 AA/3Di scores. Minimum counts vary across these trees
+at 7,514 AA sites and 4,965 3Di sites. This records topology sensitivity rather
+than a calibrated uncertainty interval or evidence of accelerated evolution.
+Different alphabets and amounts of observed variation prevent interpreting
+these totals as comparative accuracy or physical stability.
+
+`scripts/audit_site_parsimony_topologies.py` checked every array's dimensions,
+integer bounds and hash, all 72,000 tree tip universes, preservation of original
+site annotations, every summary statistic and aggregate count. Quantiles were
+reconstructed from sorted values with explicit interpolation. The audit also
+selected one bootstrap tree per marker by an identity-based SHA256 rule and
+independently recomputed all 33,142 site/alphabet scores on those 72 trees using
+a separate set-membership recurrence. Every check passed. The remaining 999
+trees per marker were not independently rescored; numerical and provenance
+checks cover their stored arrays and summaries.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/audit_site_parsimony_topologies.py --assessment results/phylogeny/site-parsimony-topologies-esmfold-v1 --diagnostic results/phylogeny/site-parsimony-exposure-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --output results/phylogeny/site-parsimony-topologies-audit-esmfold-v1
+```
+
+Complete arrays and site tables remain outside Git. Summary/provenance and
+validation artifacts are `metadata/esmfold_site_parsimony_topology_receipt.json`,
+`metadata/esmfold_site_parsimony_topology_audit_receipt.json` and
+`metadata/esmfold_site_parsimony_topology_marker_audit.tsv`.
+The separate column-resampling run is still active. Neither analysis includes
+all sources of model, alignment, prediction or biological uncertainty.

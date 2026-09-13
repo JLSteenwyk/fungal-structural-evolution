@@ -1454,3 +1454,14 @@ verified live with 14 marker outputs already complete; full-stage completion
 and independent output auditing remain pending. This adds topology sensitivity
 to the exposure-linked site dataset alongside ongoing column resampling. The
 overall research goal remains active and incomplete.
+
+
+### Full topology sensitivity completed and validated
+
+Following the preceding launch, all 72,000 AA bootstrap topologies completed.
+The 33,142,000 stored scores passed full grid/bound/provenance and summary checks;
+one predetermined tree per marker supplied 33,142 independently recalculated
+scores, all matching. Site minimum counts vary across topology samples at 7,514
+AA and 4,965 3Di sites. These remain descriptive topology sensitivity, not
+calibrated confidence or acceleration claims. Column resampling and other major
+stages remain live. The overall research goal remains active and incomplete.
