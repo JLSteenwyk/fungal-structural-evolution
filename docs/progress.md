@@ -1477,3 +1477,14 @@ and likelihood accounting passed audit. Warnings in 248 fits remain explicit.
 This adds a model-based evolutionary measure for later exposure/coupling analyses;
 model adequacy and inferential controls remain pending. The overall goal stays
 active and incomplete.
+
+
+### Matched site-evolution table assembled and fully checked
+
+After the preceding verified wait, joined all 16,571 sites to 66,284 rate
+estimates, exposure/parsimony/topology diagnostics and confidence/coverage/model
+covariates. Every inherited and rate field passed readback; all new confidence,
+model and marker summaries were independently checked. This prepares consistent
+inputs for controlled coupling/exposure models without treating the assembly
+as statistical adjustment. Main long-running stages remain live. The overall
+research goal remains active and incomplete.

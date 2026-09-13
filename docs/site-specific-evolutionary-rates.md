@@ -47,3 +47,29 @@ Full site tables and individual fit artifacts are outside Git. Provenance,
 configuration, fit summaries and warnings are in `metadata/esmfold_site_rate_*`.
 Resource planning used four single-thread fits, 8 GB RAM and 5 GB disk headroom
 on the existing authorized host; no new paid resources were used.
+
+
+## Matched analysis table completed
+
+`scripts/assemble_site_evolution_frame.py` now combines all 16,571 sites and
+66,284 rate estimates with their existing exposure/parsimony/topology-sensitivity
+fields. It adds observed taxon fractions, focal CA confidence minima/medians/
+quartiles, each fitted Gamma shape and fit warning count. All 714,936 original
+taxon-site observations are accounted for. Site identities and copy-review flags
+are retained; no filtering, regression or significance testing is performed.
+
+The assembly requires the completed rate and topology audits and checks common
+input/fit lineage. Full readback verified every inherited field and rate/category
+value. Confidence statistics were recalculated with sorted interpolation and
+standard-library medians. Every model parameter/warning covariate, tree taxon
+count and marker summary matched its source. Thus the next statistical step can
+use matched measurements without silently changing the site population.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/assemble_site_evolution_frame.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --topologies results/phylogeny/site-parsimony-topologies-esmfold-v1 --topology-audit results/phylogeny/site-parsimony-topologies-audit-esmfold-v1 --diagnostic results/phylogeny/site-parsimony-exposure-esmfold-v1 --rates results/phylogeny/paired-site-rates-esmfold-v2 --rate-audit results/phylogeny/paired-site-rates-audit-esmfold-v1 --projection results/structural_annotations/paired-accessibility-esmfold-v1 --output results/phylogeny/site-evolution-frame-esmfold-v1
+```
+
+The full table is outside Git. Its checksum, provenance, readback and coverage
+summaries are in `metadata/esmfold_site_evolution_frame_*`. Availability of these
+covariates does not mean their effects have been adjusted for. Estimated rates
+and exposure remain dependent and conditional on prediction/model choices.

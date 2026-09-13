@@ -1,0 +1,22 @@
+{
+  "status": "complete_matched_site_evolution_frame",
+  "markers": 72,
+  "sites": 16571,
+  "rate_cells": 66284,
+  "taxon_site_observations": 714936,
+  "source_receipts": {
+    "inputs": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+    "topologies": "ea4e471556c5819d5a88d503dc7eaf47c050ffc77246acb926eb27ca08d5323d",
+    "topology_audit": "5cd00367759fdde461970b2a74a839dc7998c9ea51c393a09135dffb196e8e6c",
+    "diagnostic": "8be2677c8f9ba2ce8a5a12a99bb0e50057a557bd4d783a5938d3c7a0277a265d",
+    "rate_audit": "6524f8b513d9c8e09a0237f2d39f9337974935a0549075bd20ffecfdab8a83cc",
+    "projection": "08e81e3d19bd71f0a39cb3b691324dd4b11ec15529c018b0a5c6585f5bc76ea0",
+    "rates": "fd45bd8ac0ebd6797ba0a6d85ed84ef893b37bc99bd09f70443ce77988744adb"
+  },
+  "script_sha256": "73df0ceee31f2035f0d4d62ae37b358db7cdd7ed17323a4d9a7e31b9185a5373",
+  "interpretation": "One row per original paired site, preserving parsimony/exposure/topology diagnostics and all four conditional empirical-Bayes site rates. Coverage and focal confidence are observed covariates; gamma parameters and fit warnings remain explicit. This assembly performs no regression, significance test, causal adjustment, selection test or ancestral reconstruction. Sites and estimated quantities remain dependent.",
+  "artifacts": {
+    "site_evolution_frame.tsv": "60ba3d18d28f73fc578b2f5553c80780c259b3833ceefd6a77ed8184a7a56b93",
+    "marker_summary.tsv": "574f73a3c10146fe3a2322035e65697ad5f77d568af4166e31105ecb157700bc"
+  }
+}
