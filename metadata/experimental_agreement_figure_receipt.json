@@ -1,0 +1,40 @@
+{
+  "status": "complete_experimental_agreement_figure",
+  "comparison_receipt_sha256": "c48bdb5ccd64763ebed4317349651788f82c9cc01615b661e94dac570ec1c10c",
+  "summary_receipt_sha256": "28869da33f40a2523db0befaef760d3709f37ad3cf3f4b40527d8c0e8686cd7b",
+  "script_sha256": "099a0c77822f427d2539d87fc78779486de25da15c0cae35a507f38da0d691ab",
+  "plotted_proteins": 33,
+  "recomputed_threshold_summary": [
+    {
+      "predicted_plddt_cutoff": 0,
+      "accepted_comparisons": 626,
+      "excluded_comparisons": 7,
+      "accepted_proteins": 33,
+      "comparison_weighted_median_RMSD": 0.8997977832327579,
+      "median_of_protein_median_RMSD": 3.2351574375783367
+    },
+    {
+      "predicted_plddt_cutoff": 70,
+      "accepted_comparisons": 617,
+      "excluded_comparisons": 16,
+      "accepted_proteins": 32,
+      "comparison_weighted_median_RMSD": 0.8742646644427271,
+      "median_of_protein_median_RMSD": 1.8596277335301874
+    },
+    {
+      "predicted_plddt_cutoff": 90,
+      "accepted_comparisons": 560,
+      "excluded_comparisons": 73,
+      "accepted_proteins": 18,
+      "comparison_weighted_median_RMSD": 0.6309591856288073,
+      "median_of_protein_median_RMSD": 0.7659773436305963
+    }
+  ],
+  "interpretation": "Every plotted per-protein count and median independently recomputed from accepted comparison rows. Descriptive partial snapshot; no inferential independence or accuracy claim. Baseline cohort includes 33 of 34 reference proteins; no point is drawn for absent threshold coverage.",
+  "artifacts": {
+    "experimental_agreement.png": "55ff7a03cd0442b72e9cc6ac273c0cb9fd19cd9fb3c47e2aacf71f2fd36748cc",
+    "experimental_agreement.pdf": "22b8f6da7a54c939570cbda6e8cb2e2556cdaa31e77270a36940703dae5d938c",
+    "plotted_threshold_summary.tsv": "a5fc96e9d70a4a803e04871f79bd92624e1df70d735f22dec2a71d4c789bacc0",
+    "experimental_agreement.svg": "8c4164616b37492ed2e341af0cf3da18c3eb96b9126c255a09864d0b027bec9e"
+  }
+}

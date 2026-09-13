@@ -431,3 +431,32 @@ The controller is already running; do not start a duplicate. Output will be
 validation and matched AlphaFold/ESMFold/experimental comparisons remain pending.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
+
+
+## Diagnostic figure: per-protein agreement and reference attrition
+
+![Initial experimental agreement](figures/experimental_agreement.svg)
+
+The figure shows every protein with accepted baseline coverage, sorted by its
+median CA RMSD, with its baseline number of chain/model comparisons. Missing
+higher-threshold points indicate failed coverage, not zero deviation. The
+right panel compares the median across all observations with the median across
+within-protein medians. Coverage declines from 33 proteins at baseline to 32 at
+pLDDT 70 and 18 at pLDDT 90. One of the 34 reference proteins has no eligible
+chain/model comparison even at baseline. All threshold row counts and plotted
+protein medians were recomputed directly from comparison tables.
+
+These are dependent, partial-snapshot descriptive measurements. Different
+thresholds change residues and sometimes the available chain/model and protein
+cohorts; fixed-cohort summaries are separately provided above. No visual trend
+establishes prediction accuracy or inherited structural change. Experimental
+quality, complex context and training independence still require review.
+
+```bash
+python scripts/plot_experimental_agreement.py --comparisons results/experimental_structures/prediction-agreement-partial-v1 --summary results/experimental_structures/prediction-agreement-summary-partial-v1 --output results/experimental_structures/prediction-agreement-figure-partial-v1
+```
+
+SVG, PNG and PDF exports and a hash receipt are retained in the immutable figure
+output. The SVG is published in the repository; the rendered PNG was visually
+inspected for readable labels, unclipped axes/legend and correct missing-point
+representation.

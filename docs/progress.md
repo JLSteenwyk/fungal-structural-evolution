@@ -1001,3 +1001,18 @@ The prior turn added experimental starting-model dependency flags; this turn
 schedules the missing alternate-predictor evidence needed for three-way reference
 comparisons. Full CA mapping and major phylogenetic/prediction jobs continue.
 The overall goal remains active and incomplete.
+
+
+### Experimental benchmark figure and coverage attrition verified
+
+Generated and visually inspected a reproducible SVG/PNG/PDF figure showing
+per-protein prediction–experiment agreement, deposition multiplicity and all
+coverage exclusions. Every plotted protein median and count was recomputed
+from comparison rows. The figure makes the change in eligible protein cohort
+explicit (33 baseline, 32 at pLDDT 70, 18 at 90), preventing a confidence-filter
+comparison from silently hiding reference attrition. Numerical measurements
+remain descriptive pending experimental/context/training review. Existing
+full CA mapping, species-tree and both GPU producers were verified live.
+The previous turn scheduled missing experimental ESMFold controls; this turn
+adds an inspected scientific figure and direct plot-data verification. The full
+objective remains active and incomplete.
