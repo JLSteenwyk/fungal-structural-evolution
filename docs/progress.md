@@ -1338,3 +1338,14 @@ all three resampling tests passed. The prior turn updated corrected structural
 groups; this turn advances branch estimation and its conditional uncertainty
 analysis. Nonlocal feature dependence and other uncertainty limits remain,
 and the overall research goal stays active and incomplete.
+
+### Complete local tree-path/geometry point benchmark assembled
+
+Linked all 259,780 accepted and 6,813 excluded geometry pairs to sequence and
+three structural-model tree paths across 72 markers. Full pair accounting,
+tree provenance/topology checks, 2,848 independent path traversals and complete
+original-field preservation readback passed. This follows the preceding turn's
+completed local fits and active resampling with the direct structural benchmark
+needed for later coupling analysis. Point estimates remain separate from
+uncertainty, additivity and phylogenetically adjusted inference. The overall
+research goal remains active and incomplete.

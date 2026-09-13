@@ -330,3 +330,31 @@ in `metadata/esmfold_paired_*`. Expanded feature-overlap results still apply:
 local blocks miss nonlocal dependencies. These draws estimate conditional
 sampling sensitivity, not overall calibrated confidence intervals, shared-ancestry
 adjustment or positive selection. Full resampling output remains pending.
+
+### Full local paired-site geometry linked to fitted tree paths
+
+Joined all 72 local markers' fitted sequence and three structural-model tree
+path point estimates to 259,780 accepted paired-site geometry comparisons and
+6,813 excluded pairs. Every expected taxon pair is accounted for. Paths are
+sums of branch lengths crossing the pair's split indicators; all four topologies
+and source tree hashes are verified. Independent Bio.Phylo traversals agree for
+2,848 deterministic selected paths (up to ten pair identities per marker and
+four models). Complete readback confirms every original geometry/exclusion field
+is unchanged and all appended paths are finite and nonnegative.
+
+The geometry uses each pair's shared qualified sites; tree fitting uses the full
+paired alignment with taxon-specific missingness. This distinction is recorded
+rather than claiming identical observed sites across every pair and tree.
+Current marker-copy caveats and pending uncertainty status are explicit per row;
+absence of a flag does not prove orthology. No structural/sequence ratios,
+fitted association, significance or raw-geometry additivity claim is produced.
+Resampling intervals and shared-ancestry analysis remain separate requirements.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/benchmark_paired_site_tree_points.py --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --audit results/phylogeny/paired-fit-audit-esmfold-v1 --geometry results/structural_comparisons/paired-site-esmfold-v1 --review config/marker_orthology_review.json --output results/phylogeny/paired-path-points-esmfold-v1
+```
+
+The run uses one worker, with a prelaunch 4 GB memory/2 GB output plan.
+Receipts, complete field-preservation readback and marker coverage are tracked
+in `metadata/esmfold_tree_path_point_*`; full point tables remain outside Git.
+The resampling producer remains active and unmodified by this benchmark.

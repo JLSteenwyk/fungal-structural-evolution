@@ -1,0 +1,13 @@
+{
+  "markers": 72,
+  "taxon_pairs": 266593,
+  "cpu_workers": 1,
+  "memory_gb_planning": 4,
+  "disk_gb_planning": 2,
+  "wall_hours_planning": [
+    0.1,
+    2
+  ],
+  "cost": "Existing authorized host",
+  "basis": "Four tree-distance matrices per marker and a join to existing geometry; no new geometry optimization or likelihood inference."
+}
