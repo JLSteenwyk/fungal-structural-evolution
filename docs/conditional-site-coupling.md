@@ -84,3 +84,61 @@ are versioned under `metadata/conditional_site_coupling_*`; the full joined
 covariates and all coefficients remain outside Git in the results directory.
 The pre-fit resource plan records the full grid, uncertainty convention,
 source hashes and existing-host allowances.
+
+
+## Marker influence and observed-mean contrasts
+
+Completed 2,000 paired marker-bootstrap draws for every one of the 24 models
+(48,000 fits) and omitted each of the 72 markers once per model (1,728 fits).
+The same multinomial marker counts are used across specifications. Each marker
+retains all of its sites; marker intercepts are absorbed by within-marker
+centering. All original point coefficients match the full-intercept fits to
+6.53e-15. A deterministic omission and bootstrap sample for each model also
+match independent expanded-row least squares to 4.22e-15. All 48,000 bootstrap
+fits are full rank; counts, coefficients and omission results are archived.
+
+In addition to the original reference-point coefficients, the analysis computes
+two contrasts at the full observed, site-weighted covariate means:
+
+- Sequence-rate association: beta_AA + beta_interaction × (mean RSA − 0.25).
+- RSA association: beta_RSA + beta_interaction × mean log(1 + AA rate).
+
+Those reference means remain fixed across resamples and omissions. This avoids
+interpreting the RSA coefficient only at an amino-acid rate of zero. These are
+model derivatives within observed covariate distributions, not causal effects.
+
+All 24 observed-mean sequence-rate contrasts are positive (0.0578–0.1727), and
+all observed-mean RSA contrasts are negative (−0.2204 to −0.1049). Neither changes
+sign when any single marker is omitted. Their unadjusted 95% marker-bootstrap
+percentile intervals exclude zero in all models. These intervals are **not**
+multiplicity-adjusted and do not replace the earlier 72-test BH analysis; the
+different inferential conventions should not be conflated. Every interaction
+interval includes zero; one omission reverses an already uncertain interaction's
+point-estimate sign.
+
+![Marker resampling at observed means](figures/conditional_site_coupling_marker_resampling.svg)
+
+The figure shows the six composition-adjusted FreeRate specifications; tables
+retain the complete 24-model grid and all five contrasts. The negative RSA
+association describes lower model-relative structural-alphabet rates at larger
+extant accessibility conditional on sequence rate and other predictors. It does
+not demonstrate lower physical structural change at exposed sites: alphabet
+representation, confidence filtering and prediction circularity remain possible
+explanations. The resampling also assumes markers are exchangeable independent
+units; it does not propagate uncertainty in trees/rates or remove shared-taxon
+dependence across markers.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/resample_conditional_site_coupling.py \
+  --fits results/phylogeny/conditional-site-coupling-esmfold-v1 \
+  --plan metadata/site_coupling_marker_resampling_plan.json \
+  --output results/phylogeny/conditional-site-coupling-marker-resampling-v1
+python scripts/plot_coupling_marker_resampling.py \
+  --results results/phylogeny/conditional-site-coupling-marker-resampling-v1 \
+  --output docs/figures/conditional_site_coupling_marker_resampling.svg
+```
+
+Use new output paths. Versioned summaries and verification receipts are under
+`metadata/site_coupling_marker_resampling_*`. Per-marker influence rows, all
+bootstrap coefficients and paired marker multiplicities remain in the results
+directory outside Git.

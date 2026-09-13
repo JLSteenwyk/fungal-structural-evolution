@@ -2229,3 +2229,16 @@ passed. The sequence-rate coefficient at RSA=.25 is positive in all 24 fits
 are documented in docs/conditional-site-coupling.md. Fixed-tree/rate uncertainty,
 marker dependence, extant-exposure weighting and prediction circularity remain
 limits; these are exploratory snapshot associations, not final biological tests.
+
+
+Completed coupling robustness across all 24 specifications: 48,000 paired
+marker-bootstrap fits and 1,728 leave-one-marker-out fits, with no singular
+bootstrap draws. Full-intercept and absorbed coefficients agree to 6.53e-15;
+selected omission/bootstrap fits independently match expanded-row least squares.
+Observed-mean sequence-rate contrasts remain positive and RSA contrasts negative
+under every single-marker omission. All unadjusted marker-bootstrap intervals
+for those contrasts exclude zero; interaction intervals all include zero.
+These are conditional resampling sensitivities, not new multiplicity-adjusted
+biological tests. Added observed-mean contrast figure and full results in
+docs/conditional-site-coupling.md. Full 1,655 nucleotide trees finished; their
+full bootstrap audit is running.
