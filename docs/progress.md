@@ -1488,3 +1488,15 @@ model and marker summaries were independently checked. This prepares consistent
 inputs for controlled coupling/exposure models without treating the assembly
 as statistical adjustment. Main long-running stages remain live. The overall
 research goal remains active and incomplete.
+
+
+### Symmetry screening completed with unavailable results explicit
+
+Following the preceding matched analysis table, screened all 144 paired local
+alignments without removing markers. Independent reconstruction of all 533,186
+Bowker pair counts matched the tool outputs. Of 432 maximum-test results, 186
+are unavailable; only 7/72 3Di alignments have estimable marginal/internal
+maximum tests. No model-adequacy conclusion follows from unavailable or nominal
+results. Calibration, multiplicity and further model sensitivities remain
+pending. Main long-running stages remain live; the overall goal stays active
+and incomplete.

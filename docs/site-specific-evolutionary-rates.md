@@ -73,3 +73,5 @@ The full table is outside Git. Its checksum, provenance, readback and coverage
 summaries are in `metadata/esmfold_site_evolution_frame_*`. Availability of these
 covariates does not mean their effects have been adjusted for. Estimated rates
 and exposure remain dependent and conditional on prediction/model choices.
+
+See [paired-marker model diagnostics](paired-model-adequacy.md) for the completed unfiltered symmetry screen and its substantial limitations in test availability.
