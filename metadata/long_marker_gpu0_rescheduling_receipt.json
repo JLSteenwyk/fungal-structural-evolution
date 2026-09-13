@@ -1,0 +1,10 @@
+{
+  "status": "superseded_before_prediction_launch",
+  "stopped_controller_pid": 2369141,
+  "stopped_controller_start_ticks": "180823628",
+  "old_config_sha256": "aaa185928098899b22be6b6bd6958a83cc9657c5614a29141945e2227975b1c4",
+  "reason": "Move the full refreshed longer queue onto idle GPU0. Original GPU1 predictions and controls continue. No active predictions interrupted.",
+  "replacement_inputs": "data/prediction_inputs/markers-513-768-gpu0-v1",
+  "replacement_control": "results/predictions/long-markers-gpu0-controller-v1",
+  "replacement_output": "results/predictions/esmfold-markers-513-768-gpu0-v1"
+}

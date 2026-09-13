@@ -2108,3 +2108,26 @@ remains uncovered. This does not establish 500 unique species or authorize
 pooling predictor-specific alignments. README now reflects completed ESMFold
 cohort integration. Supported combined fits and direct geometry remain active;
 controlled exposure/coupling inference and the full project remain incomplete.
+
+
+Moved the full 513–768-residue prediction queue onto idle GPU0. Fresh exact-sequence
+reuse/resource checks retain the same 5,512-sequence source universe, with two
+reusable structures and 5,510 prediction candidates across 279 taxa / 108 markers.
+The old longer-marker controller was confirmed waiting with no child process,
+refreshed input or prediction output, then terminated and marked superseded
+before launch. Its terminal receipt prevents accidental restart. Original GPU1
+predictions and experimental-control queue continue unchanged.
+
+The replacement controller launched all 5,510 candidates on the explicitly idle
+second RTX 6000 Ada, preserving full sequences, four CPU threads and stop-on-OOM
+behavior. Updated short-protein observations give 41.92–66.30 inference GPU-hour
+scenarios, 99.45 hours including overhead and 37.86 GB quadratic allocated-memory
+extrapolation; these are not measured long-protein bounds. Reserve 100 GB output.
+No new paid services. Execution, long-protein resource measurements and subsequent
+structure/PAE audits remain pending. Reproduce from
+`metadata/long_marker_gpu0_prediction_config.json` using
+`scripts/run_ready_long_marker_predictions.py`.
+
+GPU0 execution confirmed active alongside GPU1. The first completed full-queue
+record is 677 residues with 36.48 seconds inference; this single observation is
+not a runtime bound or independent structure-quality validation.

@@ -1,0 +1,81 @@
+{
+  "status": "complete_long_marker_input_preparation",
+  "selected_length_band_sequences": 5512,
+  "prediction_candidates": 5510,
+  "reusable_sequences": 2,
+  "selected_taxon_marker_links": 5549,
+  "selected_taxa": 279,
+  "selected_markers": 108,
+  "source_dispositions": {
+    "short_queue": 14774,
+    "longer_deferred": 7883,
+    "noncanonical": 110,
+    "selected_length_band": 5512
+  },
+  "source_receipts": {
+    "data/prediction_inputs/markers-v1": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+    "data/prediction_inputs/markers-followon-v1": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458"
+  },
+  "prediction_configs": {
+    "results/predictions/esmfold-marker-v1": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+    "results/predictions/esmfold-followon-v1": "63884b870ac421fd504bfd1b9232671373f12b2989735558122e61735a2c8c68",
+    "results/predictions/esmfold-ecology-v1": "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7"
+  },
+  "script_sha256": "259372cf1b93681a4ec4dfa98cfd90cb256ad330387c57355e59279645f80159",
+  "resource_plan": {
+    "status": "extrapolated_planning_scenarios_not_measured_long_protein_performance",
+    "observed_receipts": 3541,
+    "observed_length_range": [
+      385,
+      512
+    ],
+    "target_length_range": [
+      513,
+      768
+    ],
+    "pending_sequences": 5510,
+    "scenarios": [
+      {
+        "length_exponent": 2,
+        "observed_percentile": 50,
+        "seconds_per_length_power": 7.153162381767638e-05,
+        "projected_inference_gpu_hours": 41.9199864430082
+      },
+      {
+        "length_exponent": 2,
+        "observed_percentile": 90,
+        "seconds_per_length_power": 7.555475051513827e-05,
+        "projected_inference_gpu_hours": 44.27767675695898
+      },
+      {
+        "length_exponent": 3,
+        "observed_percentile": 50,
+        "seconds_per_length_power": 1.6219204456772217e-07,
+        "projected_inference_gpu_hours": 60.0371884203929
+      },
+      {
+        "length_exponent": 3,
+        "observed_percentile": 90,
+        "seconds_per_length_power": 1.791165790773678e-07,
+        "projected_inference_gpu_hours": 66.30199302280833
+      }
+    ],
+    "planning_hours_with_50percent_overhead": 99.45298953421249,
+    "quadratic_total_allocated_memory_extrapolation_bytes": 37860208927.859886,
+    "planned_gpu_count": 1,
+    "planned_cpu_threads": 4,
+    "planned_output_gb": 100,
+    "execution": "Not launched or queued. Use a separate output configuration and wait for authorized GPU availability. Preserve the existing stop-on-OOM behavior. Recheck exact-sequence reuse before launch.",
+    "limitations": "Quadratic/cubic timing and quadratic total-memory scaling are explicit scenarios, not validated complexity bounds or runtime/confidence intervals. Runtime, allocator overhead and fragmentation can differ beyond 512 residues. Timing receipts are observations, not an independent structure-quality audit. No extrapolation above 768 residues or to the full proteome atlas."
+  },
+  "interpretation": "Full selected length band from disjoint original and follow-on marker queues. Complete proteins and all source marker links retained. Exact sequence reuse checked at this frozen snapshot. No prediction execution or structural coverage claim.",
+  "artifacts": {
+    "all_marker_links.tsv": "b6198e92d1c306d784be8ddb607ef8a5e30e9e032f70ff0021f0c47f616a9b66",
+    "source_length_inventory.tsv": "941853dbd27fbb86202574747aeac82c6e3fd28f9359ce06b91b580222492029",
+    "resource_observations.tsv": "02dc1073b4b71a5c6b658629c0ff0b1f2e2834fa46dac9b179cc81ed1e92c048",
+    "afdb_snapshot.jsonl": "4a75c28e64501d63ba78ac4a05370a817f9b59d6194fa6a33a6f8d5d7f6e271e",
+    "queue_disposition.tsv": "fb64b182bf205ccb1bad9d5f27bd80ce9a690d58b4cf9ac62fadf052d44aef26",
+    "candidates.faa": "fb13a4319db12b0d211de39dcef9c907a5d88cab94f9ed1cdeb203dd5c8d06c6",
+    "resource_plan.json": "2380b017401a7988eef7aa699d770ab6c065d25ec3b6e261c8040008cd3b0d28"
+  }
+}
