@@ -1,0 +1,7 @@
+{
+  "source_url": "https://raw.githubusercontent.com/iqtree/iqtree3/d89ce077a639f5c812a10a52c022456b4e10b23a/tree/phylotree.cpp",
+  "commit": "d89ce077a639f5c812a10a52c022456b4e10b23a",
+  "local_path": "data/software_receipts/iqtree3-v3.0.1-phylotree.cpp",
+  "sha256": "f79a959d32d97b065f5a492cadff87c47d63e0003173ad20bb48418bb667da30",
+  "finding": "getMemoryRequired clamps max_lh_slots to leafNum-2 before checking min_lh_slots=log2(leafNum)+LH_MIN_CONST. For sufficiently small trees the cap itself can trigger the Too low -mem warning despite ample requested RAM. Treat this as a small-tree allocation diagnostic, not evidence the 2G argument failed. Numerical rare-state and near-zero-branch warnings remain substantive."
+}

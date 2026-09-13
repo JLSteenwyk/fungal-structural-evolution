@@ -1,0 +1,80 @@
+{
+  "status": "complete_published_3di_model_validation",
+  "doi": "10.17617/3.1MJJBH",
+  "paper_doi": "10.1093/molbev/msaf124",
+  "dataset_version": "3.0",
+  "retrieved_utc": "2026-09-13T06:17:42.182027+00:00",
+  "state_order": "ARNDCQEGHILKMFPSTWYV",
+  "format_reference": "https://iqtree.github.io/doc/Substitution-Models#user-defined-empirical-protein-models",
+  "interpretation": "PAML lower-triangular symmetric exchangeabilities plus stationary frequencies; not an instantaneous rate matrix. Letters encode 3Di states, not amino acids. AF is the coordinate-derived primary model; LLM is a training-source sensitivity model.",
+  "models": {
+    "Q.3Di.AF": {
+      "exchangeabilities": 190,
+      "frequencies": [
+        0.033931,
+        0.029677,
+        0.022718,
+        0.217063,
+        0.024418,
+        0.042391,
+        0.00953,
+        0.030112,
+        0.027921,
+        0.035267,
+        0.05428,
+        0.015301,
+        0.006238,
+        0.022522,
+        0.106582,
+        0.054584,
+        0.025223,
+        0.029034,
+        0.008336,
+        0.204872
+      ],
+      "frequency_sum": 1.0,
+      "url": "https://edmond.mpg.de/api/access/datafile/311466",
+      "file_id": 311466,
+      "publisher_md5": "8f897fffd14f247afbee44dad2fce2ce",
+      "sha256": "5e37984b3866f3798307bbcd8c39a2e8c188fdeda7f0499aa74c2b81a29f37b9",
+      "bytes": 1911
+    },
+    "Q.3Di.LLM": {
+      "exchangeabilities": 190,
+      "frequencies": [
+        0.021206,
+        0.020366,
+        0.01641,
+        0.256866,
+        0.024776,
+        0.029869,
+        0.005103,
+        0.022589,
+        0.019469,
+        0.030696,
+        0.037815,
+        0.013012,
+        0.005616,
+        0.015834,
+        0.120296,
+        0.040434,
+        0.01776,
+        0.025094,
+        0.003983,
+        0.272807
+      ],
+      "frequency_sum": 1.000001,
+      "url": "https://edmond.mpg.de/api/access/datafile/311467",
+      "file_id": 311467,
+      "publisher_md5": "3a6c99bdf5cc5fc72ba5eaedfc2dd2bd",
+      "sha256": "8cc3f62c647512b31394345986aae17d5e55fbc0012d824b2bb28d9789471b0e",
+      "bytes": 1911
+    }
+  },
+  "script_sha256": "efc9e6af210169858a7d6eeff2a5a27e579d329d2d23256e161572e599efeea9",
+  "artifacts": {
+    "Q.3Di.AF": "5e37984b3866f3798307bbcd8c39a2e8c188fdeda7f0499aa74c2b81a29f37b9",
+    "Q.3Di.LLM": "8cc3f62c647512b31394345986aae17d5e55fbc0012d824b2bb28d9789471b0e",
+    "deposit-v3.0.json": "f72eacc236e7e3b3e2ad304b9483f885329505568910ab4c0f203f07c8514814"
+  }
+}
