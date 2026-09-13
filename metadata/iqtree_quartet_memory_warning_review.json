@@ -1,0 +1,33 @@
+{
+  "status": "source_based_explanation_matching_all_snapshot_cases",
+  "source_repository": "https://github.com/iqtree/iqtree3",
+  "source_tag": "v3.0.1",
+  "source_commit": "d89ce077a639f5c812a10a52c022456b4e10b23a",
+  "source_file_sha256": {
+    "phylotree.cpp": "f79a959d32d97b065f5a492cadff87c47d63e0003173ad20bb48418bb667da30",
+    "phylotree.h": "cc9a6acefb13827868e4e47245b308d78b078ab4cfc4b0c6b5269729c75e35b5",
+    "tools.cpp": "0c5ec730a3a6fa9b7bb69d35702d5eddd8a7cc04154b6e9cf34e445a58733974",
+    "tools.h": "a9b6051e655a8ba61c4e909691b7c62e4c586d85fb344ef7abba22ca59665ae6"
+  },
+  "source_audit_sha256": "f9d5598112f5c2e2c8e597af5b3d9bafab0fe0e3532e4944fe7c00f190cfe12a",
+  "audited_cases": 415,
+  "warning_cases": 127,
+  "four_taxon_cases": 127,
+  "warning_case_set_equals_four_taxon_case_set": true,
+  "warning_lines": 127127,
+  "reported_adjusted_memory_mb_range": [
+    0.011,
+    0.894
+  ],
+  "source_locations": {
+    "tree/phylotree.cpp": [
+      "42: LH_MIN_CONST=1",
+      "1024-1045: slot limits and warning"
+    ],
+    "utils/tools.cpp": [
+      "4554-4575: --mem parsing; G suffix multiplied by 1073741824"
+    ]
+  },
+  "explanation": "In memory-saving mode, the requested-byte path caps max_lh_slots at leafNum-2. The minimum is integer(log2(leafNum)+1). For four taxa these are two and three, respectively, so the warning can fire despite ample requested memory; the slot count is then raised to three. All 127 four-taxon cases, and no other cases, carry the warning in this 415-case snapshot.",
+  "scope": "Source-based causal explanation consistent with archived logs; no compiled-binary tracing or paired numerical rerun performed. This explains this warning pattern, not all possible memory warnings or other model/convergence warnings. No production settings were changed."
+}

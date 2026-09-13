@@ -453,3 +453,45 @@ with `--audit results/phylogeny/genus-codon-tree-audit-snapshot-v1` and a new
 `--output` directory. Early-finishing cases can be biased; the full audit must
 be rerun after the complete queue finishes. No case, including those without
 warnings, is designated selection-ready by this summary.
+
+
+### Four-taxon memory-warning investigation
+
+The previously unresolved memory-warning pattern has a source-based explanation
+in IQ-TREE 3.0.1, pinned commit `d89ce077a639f5c812a10a52c022456b4e10b23a`.
+In `tree/phylotree.cpp`, `LH_MIN_CONST` is 1 (line 42). In memory-saving mode,
+lines 1024–1045 cap the likelihood-slot count at `leafNum - 2`, then require
+at least `int(log2(leafNum) + 1)` slots. With four taxa these limits are two
+and three: the warning is emitted and allocation raised to three even with
+ample requested memory. `utils/tools.cpp` lines 4554–4575 confirm that `--mem 2G`
+is parsed as 2 × 1,073,741,824 bytes, not two bytes or two MB.
+
+All 127 four-taxon cases in the 415-case audit have the warning, and none of the
+288 other cases does. Across 127,127 warning lines, reported adjusted allocation
+is 0.011–0.894 MB. This matches the source explanation and does not indicate
+exhaustion of the requested 2 GB. The inference is based on matching source and
+logs; compiled-binary tracing and paired numerical reruns were not performed.
+No production setting or executable was changed. Parameter-boundary, saturation
+and NNI-convergence warnings still require separate review.
+
+Source: [pinned IQ-TREE allocation implementation](https://github.com/iqtree/iqtree3/blob/d89ce077a639f5c812a10a52c022456b4e10b23a/tree/phylotree.cpp#L1024)
+and [memory-option parser](https://github.com/iqtree/iqtree3/blob/d89ce077a639f5c812a10a52c022456b4e10b23a/utils/tools.cpp#L4554).
+Full source files and receipt are archived in
+`results/environments/iqtree-3.0.1-memory-warning-review-v1`; checksums and the
+case-set comparison are versioned in `metadata/iqtree_quartet_memory_warning_review.json`.
+The earlier snapshot receipt remains unchanged as a historical record.
+
+The case-set comparison can be reproduced from the archived audit:
+
+```python
+import csv
+from pathlib import Path
+root = Path('results/phylogeny/genus-codon-tree-audit-snapshot-v1')
+with (root / 'case_audit.tsv').open() as handle:
+    quartets = {r['case_id'] for r in csv.DictReader(handle, delimiter='\t')
+                if int(r['taxa']) == 4}
+with (root / 'warnings.tsv').open() as handle:
+    flagged = {r['case_id'] for r in csv.DictReader(handle, delimiter='\t')
+               if 'Too low -mem' in r['warning']}
+assert flagged == quartets and len(flagged) == 127
+```

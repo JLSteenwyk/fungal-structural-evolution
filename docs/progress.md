@@ -2185,3 +2185,13 @@ Warning review flags seven cases for saturated nucleotide distances, 18 for
 parameter boundaries and 16 for NNI convergence; categories overlap. Retained
 127 cases with memory-adjustment warnings separately for investigation. These
 observations guide subsequent codon diagnostics, not selection claims.
+
+
+Investigated the 127,127 repeated IQ-TREE memory warnings against pinned 3.0.1
+source. They occur in exactly all 127 four-taxon cases in the audited snapshot.
+A slot-count cap of n-2 followed by a minimum int(log2(n)+1) explains the warning
+for n=4 despite ample requested memory; reported adjusted allocation ranges
+0.011–0.894 MB, and --mem 2G parsing is correct. Archived source files/checksums
+and full case-set evidence. No executable or live configuration was changed;
+other numerical warnings remain under review. This is a source/log explanation,
+not compiled-binary tracing or proof of model adequacy.
