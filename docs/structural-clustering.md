@@ -179,3 +179,34 @@ version 1 and produces identical four output tables; version 1 remains outside
 Git. Receipts, summaries and deferred-model provenance are tracked in
 `metadata/reviewed_structure_groups_*`; full membership and link tables remain
 in the checksummed result directory.
+
+### Coverage after conservative filtering
+
+Coverage summaries include all 526 analysis-manifest taxa, including 67 with
+no model in this frozen input collection. All 459 represented taxa retain at
+least one model after filtering. This differs from paired-phylogenetic coverage,
+which additionally requires eligible masks and enough taxa per marker.
+
+| Source | Input models | Retained models | Deferred | Tested nonself members retained |
+| --- | ---: | ---: | ---: | ---: |
+| AlphaFold | 13,153 | 12,441 | 712 | 11,206 / 11,918 |
+| ESMFold | 5,121 | 4,577 | 544 | 3,563 / 4,107 |
+
+Overall retention is 94.6% and 89.4%, respectively. Representatives are retained
+by definition and are reported separately; among tested nonself members the
+fractions are 94.0% and 86.8%. These descriptive rates do not compare predictor
+accuracy: source, protein length, confidence, taxon availability and representative
+selection differ. Tables also stratify by marker, lineage, source, and source ×
+length × mean predicted confidence. Mean confidence does not replace residue
+confidence masks. Models are deduplicated within each summary; shared identical
+models mean taxon/marker/lineage totals are not additive.
+
+```bash
+python scripts/summarize_reviewed_group_coverage.py --groups results/structural_clusters/reviewed-groups-v2 --manifest metadata/analysis_manifest.tsv --output results/structural_clusters/reviewed-coverage-v1
+```
+
+Independent pandas count readback checked all 677 taxon, marker, lineage and
+source summary rows and the complete 526-taxon universe. The additional
+source-length-confidence table was not included in that independent readback.
+Tables and receipts are tracked in `metadata/reviewed_structure_coverage_*`.
+Lineage rows describe available models; the taxon table preserves absent inputs.

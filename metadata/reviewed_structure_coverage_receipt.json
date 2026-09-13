@@ -1,0 +1,48 @@
+{
+  "status": "complete_descriptive_reviewed_group_coverage",
+  "group_receipt_sha256": "a443aed9cb6e077c63b853ec921e8919831bfe4f0b88b8d901d177e08486f82d",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "d842b8bda3ea2bf3dcb1acaf0f8a3bf0a9020c3886fc0d34b993459919f24347",
+  "manifest_taxa": 526,
+  "taxa_with_input_models": 459,
+  "taxa_with_retained_models": 459,
+  "taxa_losing_all_available_models": [],
+  "source_summary": [
+    {
+      "source": "AlphaFold",
+      "input_models": 13153,
+      "retained_models": 12441,
+      "deferred_models": 712,
+      "retained_representatives": 1235,
+      "retained_nonself_members": 11206,
+      "retained_fraction": 0.9458678628449784,
+      "nonself_retained_fraction": 0.9402584326229233,
+      "input_markers": 125,
+      "retained_markers": 125,
+      "input_taxa": 322,
+      "retained_taxa": 322
+    },
+    {
+      "source": "ESMFold",
+      "input_models": 5121,
+      "retained_models": 4577,
+      "deferred_models": 544,
+      "retained_representatives": 1014,
+      "retained_nonself_members": 3563,
+      "retained_fraction": 0.8937707479008006,
+      "nonself_retained_fraction": 0.8675432188945702,
+      "input_markers": 86,
+      "retained_markers": 86,
+      "input_taxa": 201,
+      "retained_taxa": 201
+    }
+  ],
+  "interpretation": "Descriptive filtering coverage in frozen marker model collection; no phylogenetic inference. All manifest taxa retained in taxon table, including absent input coverage. Counts deduplicate models within each stratum; identical models linked to multiple taxa/markers mean taxon, marker and lineage totals are not additive. Representatives retained by definition are reported separately from tested nonself members. Mean pLDDT is not a residue-level mask; source/length/confidence strata are confounded and do not establish prediction accuracy or evolutionary effects.",
+  "artifacts": {
+    "taxon_coverage.tsv": "b05d6ca6034ad8c364bdf4cd546561a30bf0ff4030fb2420dfea782fe4e0af1b",
+    "marker_coverage.tsv": "2d993e75ce6448c98b7733f62fb9fa3c2383d2f200a8b81756655453eda23fdd",
+    "source_length_confidence.tsv": "b7e9d4b7d5d3d4ce18e5aa8dce70baa72a2c2292954605f1825d3cbeb16e4e6c",
+    "source_coverage.tsv": "d960309621f9617d2f43d8987197e211b42b4172f564958042d82e1d004cd453",
+    "lineage_coverage.tsv": "f827d93894f15b4411b71542e75c8e4a640c8171e958fa6c2a8db24ad1fdcdb5"
+  }
+}

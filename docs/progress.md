@@ -1179,3 +1179,16 @@ similarity groups with orthogroups. The prior turn completed exact score review;
 this turn makes its eligibility decisions explicit in downstream group tables.
 Existing prediction, guide-tree and orthology processes remain verified live.
 The full research goal remains active and incomplete.
+
+### Structural filtering coverage quantified across the full manifest
+
+Summarized all 526 taxa, 125 marker labels, available lineages and both prediction
+sources before and after representative-edge filtering. All 459 represented
+taxa retain models; 67 have no frozen input model. Retention differs by source
+(94.6% AlphaFold, 89.4% ESMFold), with representatives reported separately from
+tested members and source/length/confidence confounding explicit. Independent
+readback verified all 677 taxon, marker, lineage and source count rows. The
+preceding turn derived reviewed groups; this turn characterizes their missingness
+for downstream evolutionary interpretation. Prediction, paired-fit, accessibility
+and paired-geometry processes were observed live; their full receipts are not
+yet available. The overall research goal remains active and incomplete.
