@@ -1,0 +1,25 @@
+{
+  "status": "prelaunch_comparison_waiting_for_complete_control_predictions_and_readback",
+  "models": 266,
+  "maximum_length": 512,
+  "plddt_thresholds": [
+    0,
+    70,
+    90
+  ],
+  "directional_pae_thresholds": [
+    5,
+    10,
+    15
+  ],
+  "workers": 1,
+  "planning_memory_gb": 4,
+  "planning_output_gb": 0.1,
+  "planning_runtime_hours": [
+    0.01,
+    1
+  ],
+  "free_disk_bytes": 12530860736512,
+  "basis": "Sequential parse of 266 reference CIF and ESMFold PDB/NPZ pairs, reuse validated PAE cache; per-pair arrays at most 512x512. No downloads, fitting or GPU computation in comparison.",
+  "cost": "Existing authorized host; no new charges"
+}

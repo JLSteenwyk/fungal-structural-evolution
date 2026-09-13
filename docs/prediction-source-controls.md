@@ -206,3 +206,36 @@ sequence hashes, rejects inconsistent identities, and records the link-table
 hash. Three focused tests cover both formats and malformed/conflicting links.
 This adds input compatibility to the existing artifact audit; the tests do not
 establish accuracy of future predictions.
+
+### Exact-sequence geometry comparison prepared
+
+`compare_esmfold_controls.py` requires the complete control chunk and its
+independent artifact audit before analyzing every reference pair. It verifies
+full residue identities/numbering, coordinate and prediction hashes, and
+mapping-bound reference PAE. It evaluates jointly retained pLDDT thresholds
+0, 70 and 90; fewer than 50 residues or less than half of the full protein
+produces an explicit coverage exclusion with missing metrics.
+
+For accepted comparisons, proper-rotation CA superposition gives RMSD. The
+local metric compares residue-pair distances within 15 Å in either prediction,
+excluding pairs separated by fewer than three sequence positions. Additional
+summaries require PAE at most 5, 10 or 15 Å in both directions in both models.
+These filters change the residue/pair sets; differences across thresholds do
+not by themselves diagnose prediction error. This local metric is not lDDT,
+and predictor differences are not biological branch lengths.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/compare_esmfold_controls.py \
+  --inputs data/prediction_inputs/predictor-controls-v1 \
+  --predictions results/predictions/esmfold-controls-v1 \
+  --audit results/predictions/audit-controls-v1 \
+  --pae results/structural_pae/gdm-expanded-v1 \
+  --output results/prediction_controls/esmfold-af-comparisons-v1
+```
+
+This command is prepared, not yet executed. The planned comparison uses one CPU
+worker, up to 4 GB memory and 0.1 GB output headroom. Four geometry/filter tests
+pass: rigid transformations produce zero change, reverse-direction PAE in
+either model excludes the affected pair, insufficient coverage stays missing,
+and nonfinite confidence is rejected. Full empirical comparison, sensitivity
+interpretation and experimental validation remain pending.

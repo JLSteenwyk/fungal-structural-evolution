@@ -419,3 +419,11 @@ resource record supersedes the earlier waiting assumption without adding paid
 resources. Extended independent artifact auditing to accept the reference-link
 format, with three identity-validation tests passing. Full control completion,
 readback and predictor geometry comparisons remain pending.
+
+## Predictor geometry comparison implemented
+
+Prepared exact-sequence AlphaFold–ESMFold comparison with complete-prediction
+and independent-readback gates, whole-protein CA RMSD, local distance changes,
+joint pLDDT thresholds and bidirectional PAE sensitivities. Four focused tests
+pass. Resource estimates and the reproducible command are versioned. The
+control GPU job remains live; no completed empirical comparison is claimed.
