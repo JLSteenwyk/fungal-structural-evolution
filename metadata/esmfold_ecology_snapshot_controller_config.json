@@ -1,0 +1,36 @@
+{
+  "producer_pid": 3566770,
+  "producer_start_ticks": "181111565",
+  "inputs": "data/prediction_inputs/ecology-markers-v1",
+  "predictions": "results/predictions/esmfold-ecology-v1",
+  "expected_predictions": 675,
+  "control_output": "results/predictions/ecology-snapshot-controller-v1",
+  "audit_output": "results/predictions/ecology-complete-audit-v1",
+  "conversion_output": "results/structures/esmfold-ecology-complete-v1",
+  "minimum_free_disk_bytes": 100000000000,
+  "resource_plan": {
+    "cpu_threads": 1,
+    "memory_gb": 8,
+    "output_budget_gb": 100,
+    "runtime_hours_planning": [
+      0.2,
+      12
+    ],
+    "scope": "Full 675-sequence ecology prediction artifact audit and mmCIF conversion; one CPU, no new inference or paid resources. Explicit ecology marker links retained."
+  },
+  "pinned_files": {
+    "data/prediction_inputs/ecology-markers-v1/ecology_marker_links.tsv": "711748757c3b11d46703d817df461e6737af062e4392b1d0fd9d71ead5758b3e",
+    "data/prediction_inputs/ecology-markers-v1/receipt.json": "209fc201a9751317ea48da64e480a29d2b93ec0d4546f1907581cfa1f9f51b0f",
+    "results/predictions/esmfold-ecology-v1/config.json": "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7",
+    "scripts/advance_prediction_snapshot_with_links.py": "1d62b603196b3e4a199cc8563b27cf91a0c052875d309b320b070109a60ed513",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_local_predictions.py": "3982ef255f6973a0b5689e4dc908209499d017c0452cc14ba120960d48007836",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/convert_esmfold_snapshot.py": "5c356f89bf5a8474ace8c0bde183e18e50852e30e821b482621421dafae6d1b8",
+    "scripts/prepare_pfam.py": "5de930c97989900c2287af5878e3de219a648a7f52b60e6e1f0b8ba8c7e12559",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  },
+  "links": "data/prediction_inputs/ecology-markers-v1/ecology_marker_links.tsv"
+}

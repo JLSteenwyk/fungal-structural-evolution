@@ -1741,3 +1741,12 @@ with 1,000 SH-aLRT and 1,000 UFB replicates, 16 threads and 600G limit
 Follow-on model audit also completed: 4,252 models, 4,304 links, 84 taxa, 98 markers;
 all exported identities/links checked independently. Conversion is live under
 PID 3676262/controller 3228696. See the phylogenetic and prediction workflows.
+
+
+Queued the full 675-model ecology audit/conversion with explicit ecology marker
+links (controller session 55711). All candidate identities, input hashes and link
+coverage were checked; the live producer is pinned by PID/start time. The added
+controller differs from the existing pinned controller only by explicit link
+forwarding and its description. Original/follow-on live controller files remain
+unchanged. Follow-on conversion reached 1,500 models; the full-matrix PMSF job
+was confirmed live. Completion of these stages remains pending.

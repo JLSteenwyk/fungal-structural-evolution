@@ -501,3 +501,25 @@ accuracy. The full input queue spans more taxa than its short-protein eligible
 subset. Conversion is now running; residue mapping and confidence-qualified
 paired coverage remain pending. Receipt:
 `metadata/esmfold_followon_full_audit_receipt.json`.
+
+
+## Ecology full-output audit queued
+
+All 675 ecology candidates were checked for unique identity, canonical sequence
+and length eligibility against the pinned input receipt. Every candidate has an
+originating marker link. The ecology input uses `ecology_marker_links.tsv`, so
+`scripts/advance_prediction_snapshot_with_links.py` adds explicit `--links`
+forwarding to the existing audit/conversion handoff. The original controller
+remains unchanged for its live jobs. An exact source comparison confirmed that
+link forwarding and the description are the only differences; the new script
+compiled and all source links passed the existing identity normalizer.
+
+Configuration: `metadata/esmfold_ecology_snapshot_controller_config.json`.
+The controller was observed live waiting for the exact ecology producer PID and
+start time. It requires clean full completion of all 675 predictions before
+starting `results/predictions/ecology-complete-audit-v1` and then
+`results/structures/esmfold-ecology-complete-v1`. All code/input/link pins matched.
+It retains the conservative existing one-CPU, 8 GB memory, 100 GB output and
+0.2–12 hour handoff allowance; no new inference or paid resources are requested.
+Audit/conversion outcomes and confidence-qualified ecological coverage remain
+pending.
