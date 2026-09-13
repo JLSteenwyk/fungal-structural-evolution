@@ -1,0 +1,27 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "marker_input_receipt_sha256": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+  "script_sha256": "65e8e619c3d72b51371b49ac710cc522987706f7708f50c31722733305aca842",
+  "completed_inventory_taxa": 363,
+  "all_marker_sequences": 58883,
+  "all_marker_links": 59840,
+  "unique_sequence_states": {
+    "inventory_pending": 16769,
+    "nominated_reuse_pending": 13170,
+    "verified_reuse_receipt": 8464,
+    "no_candidate_in_completed_inventory": 20480
+  },
+  "prediction_candidates": 20480,
+  "candidate_residues": 12446379,
+  "candidates_at_most_512_residues": 10536,
+  "candidate_taxa": 361,
+  "ordering": "Round-robin over lexically first completed taxon for each exact sequence, shortest first within each taxon.",
+  "interpretation": "No candidate in the completed taxon-specific UniProt cross-reference inventory is not proof of absence from all structural databases. Unfinished nominated retrievals and unfinished inventories are distinct. All taxon links retained; later inventories require a new snapshot.",
+  "artifacts": {
+    "uniprot_snapshot.jsonl": "fce6dc07fcb512cb05d9e3bdccd9d35f9bd6dca14854598250b663df89f1c5db",
+    "all_marker_links.tsv": "f223284ca7ce28d7c3e89827be9f048019d6800081b2fa3ea743df680f43c347",
+    "afdb_snapshot.jsonl": "a807cb93cef0797b158e9751c82e735c6a0bfaefb2f423fc6369fa5a3cf8b0df",
+    "candidates.faa": "09d2cce9415ccbcdc6634e83499c18e91c32b672affe8f5f865703cbe0419039"
+  },
+  "full_receipt_path": "data/prediction_inputs/markers-v1/receipt.json"
+}

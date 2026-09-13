@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+    "-f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/orthology_inputs/v1/core",
+    "-o",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1",
+    "-t",
+    "32",
+    "-a",
+    "8",
+    "-M",
+    "msa",
+    "-S",
+    "diamond",
+    "-A",
+    "famsa",
+    "-T",
+    "fasttree"
+  ],
+  "input_receipt_sha256": "a7d95d628a21bc7a5863b197e759506594cd1b2c8b54921c8b2d668357e537a0",
+  "software_receipt_sha256": "40f9fc01f776629310af45fafc2a3697f8b90ac9c48bfb091d7a62bb6c0fddac",
+  "scope": "64 reference taxa; all remaining 462 taxa require subsequent assignment and combined analysis",
+  "returncode": 0,
+  "elapsed_seconds": 6066.5813455430325,
+  "status": "core_finished_requires_full_assignment",
+  "results_directory": "results/orthology/core-v1/Results_Sep12",
+  "species_tree_sha256": "85b758930cf4027909fb93bddf0fce274d32317c1ae196851a049df7ce1cd3a7"
+}

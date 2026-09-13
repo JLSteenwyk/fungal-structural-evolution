@@ -61,3 +61,13 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 `ecology_candidates.tsv` contains genus-ranked evidence only; `species_verified` and `eligible_for_confirmatory_tests` are false throughout. Its receipt pins the publisher workbook, exact-match policy, duplicate names and source-row counts. `species_ecology_evidence.tsv` contains separately curated primary-literature statements from `config/ecology_species_evidence.json`, with species/variety scope, source locators, selected assembly and conflicts with genus projections. Published species classifications are distinct from exact-isolate experimental verification and from eligibility for a replicated-transition test. Neither table automatically overwrites the main manifest's ecology fields.
 
 `full_domain_input_receipt.json` records complete representative-proteome inputs for domain search, including every taxon's source checksum/count, exact unique-sequence totals, marker-query reuse and additional FASTA/link hashes. `full_domain_search_estimate.json` provides a provisional runtime projection with the observed chunk receipts and input/configuration hashes. Neither receipt proves full-proteome domain annotation is complete. Large search inputs and all protein/taxon links remain under `data/domains/full-inputs-v1/`.
+
+- `marker_domain_search_receipt.json` and `marker_domain_annotation_receipt.json`: completed all-profile marker searches and validated raw hits; overlaps retained, not resolved architectures.
+- `esmfold_checkpoint_receipt.json`: pinned publisher revision, weight checksum and model-file identities; local verified cache reuse.
+- `marker_prediction_input_summary.json`: frozen queue counts and artifact hashes; full per-taxon match hashes remain in the ignored input receipt. Inventory/retrieval pending is distinguished from absence of a reuse candidate.
+
+- `local_prediction_chunk1.tsv` and `local_prediction_chunk1_receipt.json`: independently read-back first 128 predictions, measured resources and confidence, with coverage and remaining-work counts.
+- `esmfold_execution_audit.json`: checkpoint-loading exceptions, rejecting contact-head hook, repeated inference and actual ESM Python source hashes.
+- `orthology_core_receipt.json`: successful 64-taxon computational core; not evidence of full-cohort orthology completion.
+
+- `orthofinder_numpy_install_report.json` and `orthofinder_numpy_compatibility.json`: NumPy 2.2.6 wheel provenance and successful round-trip through the assignment function that failed under 2.5.3; full install report outside Git.

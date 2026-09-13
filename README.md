@@ -2,7 +2,7 @@
 
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.
 
-Status: proteomes acquired and broad-marker QC completed for **501 fungal entries and 25 genome-backed outgroups (526 taxa)**. A [taxon-label audit](metadata/taxon_label_review.tsv) flags one hybrid and 21 incompletely identified fungal entries for species-level review. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. OrthoFinder reference-core inference has started with all remaining taxa prepared for assignment. All 125 MAFFT sensitivity alignments are complete, with a 63,750-position alternative matrix; existing-structure acquisition continues. Pfam 38.2 searches are running across the full marker-protein set. Domain-search inputs are also prepared and verified for all 5,815,847 representative proteins; additional full-proteome searches are queued behind successful marker-search validation. Supported species trees, full orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
+Status: proteomes acquired and broad-marker QC completed for **501 fungal entries and 25 genome-backed outgroups (526 taxa)**. A [taxon-label audit](metadata/taxon_label_review.tsv) flags one hybrid and 21 incompletely identified fungal entries for species-level review. Gene-representative preparation is complete with unresolved mappings flagged. All 125 profile-based marker alignments are complete; an initial tree search is running on a 49,027-position matrix. OrthoFinder reference-core inference is complete and assignment of all 462 additional taxa has started. All 125 MAFFT sensitivity alignments are complete, with a 63,750-position alternative matrix; existing-structure acquisition continues. Pfam 38.2 searches and raw-hit validation are complete across the full marker-protein set (163,650 hits; overlaps retained). Domain-search inputs are also prepared and verified for all 5,815,847 representative proteins; additional full-proteome searches are now running after successful marker-search validation. The first 128 local ESMFold v1 predictions passed independent artifact validation; the remaining eligible short-marker queue is now running. Supported species trees, full orthology and evolutionary analyses remain pending. Full-scale design; no separate pilot.
 
 ## Project records
 - [Original objective](docs/objective.txt)
@@ -16,6 +16,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungal entrie
 - [Assembly-quality workflow](docs/assembly-quality-workflow.md)
 - [Orthology workflow](docs/orthology-workflow.md)
 - [Domain annotation workflow](docs/domain-annotation-workflow.md)
+- [Local structure prediction](docs/structure-prediction-workflow.md)
 - [Ecological evidence and curation](docs/ecology-evidence-workflow.md)
 - [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)
 - [Methods draft: executed work and pending analyses](docs/methods-draft.md)

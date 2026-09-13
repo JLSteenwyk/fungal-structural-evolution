@@ -1,0 +1,39 @@
+{
+  "status": "loading_and_contact_head_execution_audit_passed",
+  "loading_info": {
+    "missing_keys": [
+      "esm.contact_head.regression.bias",
+      "esm.contact_head.regression.weight"
+    ],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "contact_head_forward_hook": "raises if invoked; complete folding inference passed",
+  "repeated_sequence_id": "S01be83a6abecc4ac7a9faa7132b0db9053b0bb4e27ba600f17b453135e637af5",
+  "length": 168,
+  "max_absolute_pae_difference": 0.0,
+  "max_absolute_ca_plddt_difference": 0.0,
+  "production_prediction_receipt_sha256": "99be543935cebcb19f5f44d9b6d9da416caa80d878a7092a977067c0144b6975",
+  "production_config_sha256": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+  "checkpoint_receipt_sha256": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+  "script_sha256": "1b7686097dd9722ecb1546cfb9963e0e3cb4ac40add204d12c0b2d0cd4f5aec0",
+  "esm_source_files": {
+    "__init__.py": "9ae4aabd532dea6c92928026ecc8f07a21472550528fbd0b95a9231e667a3c41",
+    "configuration_esm.py": "7a1c24a7d51c5dc5d7a7a76984c3bb72a767f86d41bf52d4078b2884ebd6cba6",
+    "modeling_esm.py": "47ba50c7afabb6d8fdbb1fbda6851772faeb5ed874ac99cd7283451b3d8922fa",
+    "modeling_esmfold.py": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+    "modeling_tf_esm.py": "e46b100f2f0d9a81f3934b3daebd4f84141798691eec582d298c5de9737493f9",
+    "openfold_utils/__init__.py": "5f2daeaaf16c2c2f00c7e38e71ee4f82804389980426024faacfffa794815946",
+    "openfold_utils/chunk_utils.py": "770c281bfef38fe8ee1988376dbd5065ad0b3c048db119bb2353aaf68a6d3309",
+    "openfold_utils/data_transforms.py": "43927f06927ff056b97d9f273fa90f079a29b3e638332752424c19fbfc8c0c10",
+    "openfold_utils/feats.py": "40262ea6c548368e6326ec18937f137a335890f9469ba29f735629354c6923cb",
+    "openfold_utils/loss.py": "b2775b60c317b8bd0a207973abb649525428211332d90dd91a5de1db4051d6b8",
+    "openfold_utils/protein.py": "222f68d63fea6ba70981c27c58136fad55e1bee517dfaebcb0e7f55829097e5a",
+    "openfold_utils/residue_constants.py": "fb2e38730f238d025a9114a39f8300302786845487a0fcd40a232ff4c7dd19eb",
+    "openfold_utils/rigid_utils.py": "a0cd6ae60181ba40eda50aab268b1399f0125044118ccecba3ebb63d1f96e82b",
+    "openfold_utils/tensor_utils.py": "f78c0d38639fb542ce541fd6b321fa6fe4afdfc372d5009ae11ea17b7891ca5f",
+    "tokenization_esm.py": "1dc6d543d27e7bb363ba1552a9c1cc8fed8f2064eda24fb9cd1453f9885f7dd1"
+  },
+  "interpretation": "Unused contact-regression parameters do not participate in this executed folding path. Repeatability of one sequence does not establish experimental accuracy or portability."
+}
