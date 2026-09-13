@@ -102,3 +102,30 @@ running; its results must be considered separately.
 ```bash
 python scripts/audit_accessibility_resolution.py --assessment results/structural_annotations/accessibility-resolution-esmfold-v1 --snapshot results/structural_markers/esmfold-partial-v1 --output results/structural_annotations/accessibility-resolution-esmfold-audit-v1
 ```
+
+
+## Completed AlphaFold resolution assessment
+
+All ten predetermined AlphaFold models completed at both resolutions, including
+the final 1,468-residue protein. All 5,839 residue pairs passed selection,
+configuration, receipt/hash, sequence/grid, total-area and numerical-summary
+readback. Comparing 960 versus 3,840 sphere points gives a residue-weighted
+median absolute difference of 0.282 Å², 95th percentile 1.048 Å² and maximum
+2.049 Å². Thirty-nine residues change between exactly zero and nonzero area.
+
+| Source | Selected models | Residues | Median absolute difference (Å²) | 95th percentile (Å²) | Zero/nonzero changes |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| AlphaFold | 10 | 5,839 | 0.282 | 1.048 | 39 |
+| ESMFold | 6 | 1,234 | 0.320 | 1.137 | 3 |
+
+These source subsets differ in length and protein identity. The table is a
+numerical-resolution assessment, not a comparison of predictor accuracy.
+Neither set establishes convergence of every production structure. Continuous
+ASA remains the primary annotation; any later normalized exposure or categorical
+core/surface partition requires explicit conventions and sensitivity analysis.
+Biological partners, uncertain domain orientations and low-confidence structure
+remain separate sources of uncertainty.
+
+```bash
+python scripts/audit_accessibility_resolution.py --assessment results/structural_annotations/accessibility-resolution-gdm-v1 --snapshot results/structural_markers/gdm-expanded-v1 --output results/structural_annotations/accessibility-resolution-gdm-audit-v1
+```

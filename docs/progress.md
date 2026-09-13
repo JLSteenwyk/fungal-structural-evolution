@@ -1054,3 +1054,17 @@ convergence. AlphaFold resolution sensitivity and both production annotation
 runs continue. The previous turn launched local annotation and both sensitivity
 runs; this turn finishes and validates the local sensitivity result. The full
 research objective remains active and incomplete.
+
+
+### AlphaFold accessibility-resolution assessment completed and audited
+
+Waited on the verified live resolution process through the final long model,
+then audited all ten selected models and 5,839 residues. Median absolute ASA
+difference is 0.282 Å², 95th percentile 1.048 Å², maximum 2.049 Å²; 39 residues
+switch between zero and nonzero area. Both source assessments are now complete,
+with all outputs and predetermined model selections checked. This supports
+continuous accessibility annotation while retaining explicit numerical and
+biological uncertainty. Both full production annotation runs and the larger
+research analyses remain incomplete. The prior turn completed the local
+assessment; this turn completes its AlphaFold counterpart. The full goal remains
+active.
