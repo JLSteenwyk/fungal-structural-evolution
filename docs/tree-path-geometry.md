@@ -336,3 +336,14 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geomet
   --pae results/structural_pae/gdm-expanded-v1 \
   --output results/structural_comparisons/paired-site-gdm-expanded-audit-v1
 ```
+
+
+The expanded AlphaFold audit completed successfully. All 744,853 pair records
+passed identity, shared-mask, coverage, dimension and AA/3Di difference checks;
+counts are 737,851 accepted and 7,002 excluded. Independent SciPy geometry and
+bidirectional PAE-index calculations agreed within the declared tolerance for
+124 SHA-selected pairs, one per accepted marker. The completion receipt and all
+four source-receipt hashes were verified. This provides a full grid/character
+readback with sampled numerical geometry validation, not independent numerical
+recomputation of every accepted pair. Receipt:
+`metadata/gdm_expanded_paired_geometry_audit_receipt.json`.

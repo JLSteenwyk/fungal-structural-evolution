@@ -1796,3 +1796,12 @@ with one SHA-selected numerical geometry/PAE check per accepted marker. Scope an
 resource limits are recorded in docs/tree-path-geometry.md; full numerical
 recomputation of every geometry is not claimed. Geometry audit and fitted-tree
 comparisons remain pending. Follow-on coordinate/PAE validation continues live.
+
+
+Expanded AlphaFold paired-site geometry audit completed (session 24060 exit zero):
+all 744,853 pair records checked; 737,851 accepted and 7,002 excluded. Independent
+SciPy geometry and directional PAE indexing matched for 124 preselected pairs,
+one per accepted marker. All source receipt hashes and the 124-marker sample grid
+were rechecked. Scope remains full pair/character verification with sampled
+numerical geometry, not full numerical reoptimization or branch-rate inference.
+Receipt: metadata/gdm_expanded_paired_geometry_audit_receipt.json.
