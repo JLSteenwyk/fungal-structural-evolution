@@ -1,0 +1,17 @@
+{
+  "status": "complete_full_case_conditional_longest_branch_slices",
+  "cases": 1655,
+  "slice_evaluations": 11585,
+  "restored_baseline_checks": 1655,
+  "plan_sha256": "d824aafcb739d12478863d460939ba3457efd6c653722412867ce288284b48b1",
+  "script_sha256": "3e5b7e338fa8616aa3ba637d14a4fd334f5d5a74fcc6438b3038a80e34c999a2",
+  "source_fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "normalization_receipt_sha256": "573b330eb9dac840e9f5dfb10999fd0147bdfa78e85d61b65f55eac47f67c017",
+  "artifacts": {
+    "case_review.tsv": "90c7d888cfcf79e1339f6ad1ef232c7bd943c604c4b8dd992c896830d944f5fe",
+    "likelihood_slices.tsv": "67045535f5239ee6b6e5cc05d5cff98b7980db00d2ae6cb19d3e5e78af4749f7"
+  },
+  "interpretation": "Conditional likelihood slices with all nuisance parameters fixed, not reoptimized profile likelihoods, confidence intervals, saturation certification or selection tests. Target selection is diagnostic, not a multiple-testing framework. Preserve continuous likelihood differences and existing coverage/copy/tree flags.",
+  "full_receipt_path": "results/cds/genus-mg94-longest-branch-slices-v1/receipt.json",
+  "full_receipt_sha256": "60bdf037b9e84df60b14ba49536b40918433e36f09f9fc327eaddf9924de9f73"
+}

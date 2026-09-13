@@ -1,0 +1,29 @@
+{
+  "status": "prelaunch_full_case_longest_branch_likelihood_slices",
+  "cases": 1655,
+  "branches_per_case": 1,
+  "target": "Largest normalized dS branch in each case; deterministic node-name tie break",
+  "branch_length_multipliers": [
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    10
+  ],
+  "likelihood_evaluations": 11585,
+  "workers": 2,
+  "threads_per_worker": 1,
+  "memory_allowance_gb": 4,
+  "output_allowance_gb": 1,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "normalization_receipt_sha256": "573b330eb9dac840e9f5dfb10999fd0147bdfa78e85d61b65f55eac47f67c017",
+  "fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "tree_review_sha256": "1c8d45f5ff977b4cb5465c21e3748b642d649ad358c182bbfb9bbd91278e8109",
+  "interpretation": "Conditional likelihood slices with all nuisance parameters fixed, not reoptimized profile likelihoods, confidence intervals, saturation certification or selection tests. Target selection is diagnostic, not a multiple-testing framework. Preserve continuous likelihood differences and existing coverage/copy/tree flags.",
+  "cost": "Existing authorized host; no new charges"
+}

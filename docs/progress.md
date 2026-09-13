@@ -2274,3 +2274,15 @@ inverse readback. Three regression tests pass. Very large dS estimates occur
 (maximum 99.09); identifiability/saturation and alignment review remain essential
 before selection inference. Normalization uses the documented equal-alternative
 opportunity convention, not a new branch-specific omega model.
+
+
+Completed longest-dS-branch conditional likelihood slices for every genus/code
+case: 11,585 evaluations and 1,655 restored-baseline checks. No sampled branch
+multiplier improves the saved fit beyond numerical precision (9.10e-12).
+Largest estimates can still have peaked fixed-nuisance curves; this does not
+establish absence of synonymous saturation. Added a full case review linking
+target branches to taxon splits, codon coverage and existing copy/tree warnings,
+plus a figure of the 12 largest estimates. Nuisance-reoptimized profiles and
+alignment/model eligibility reviews remain pending.
+
+Full raw-log/table readback of the longest-branch slices passed for all 1,655 cases and 11,585 points. The saved figure and scripts accompany this checkpoint. Structural fit queues remain active: 420/496 AF-based and 68/356 combined ESMFold fits at this observation; these counts are execution receipts, not final audited results. Both ESMFold GPU queues and the species-tree/orthology jobs remain running.

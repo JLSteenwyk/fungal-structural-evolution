@@ -741,3 +741,69 @@ alignment, branch-length identifiability and saturation review before biological
 interpretation. These descriptive values are not calibrated eligibility
 thresholds. No selection test was run, and no case is certified selection-ready
 by successful normalization.
+
+
+### Conditional longest-branch likelihood diagnostics
+
+Completed seven branch-length evaluations for every case's largest normalized-dS
+branch (11,585 evaluations across all 1,655 cases). Multipliers are 0.1, 0.25,
+0.5, 1, 2, 4 and 10 relative to the fitted branch parameter. All other parameters
+remain fixed. The script verifies actual assigned parameter values, recomputes
+the baseline at multiplier 1 and restores/rechecks the original likelihood
+at the end of every case. Target-node ties are resolved by node name.
+
+The full review table records the targeted branch's terminal/internal status,
+root-independent smaller-side taxon split, codon coverage, prior tree warnings
+and gene-copy caveat. This connects the largest distances to their input data;
+it does not label the branches as evolutionary accelerations.
+
+No sampled point improves the saved likelihood beyond numerical precision
+(maximum improvement 9.10e-12). The largest estimates are not automatically flat
+along this conditional slice. For example, the Wallemia hederae terminal branch
+F1540922 in marker 319730at2759 has fitted dS 99.09 and complete retained-codon
+coverage. Halving, doubling and multiplying its branch parameter tenfold change
+log likelihood by −53.03, −42.13 and −122.43, respectively. This does **not**
+certify absence of synonymous saturation: nuisance parameters were not
+reoptimized, and the global-omega model constrains synonymous and nonsynonymous
+components together. Alignment/gene-copy problems can also remain despite
+complete coverage and a peaked conditional curve.
+
+![Largest-dS conditional slices](figures/genus_longest_branch_likelihood_slices.svg)
+
+The figure shows the 12 largest estimates; every case and evaluation is retained
+in `results/cds/genus-mg94-longest-branch-slices-v1`. Case reviews and compact
+receipts are versioned under `metadata/genus_mg94_longest_branch_*`. These are
+fixed-parameter slices, **not profile likelihoods, confidence intervals or
+selection tests**. Nuisance-reoptimized profiles, alignment review and other
+model sensitivities are still needed before biological eligibility decisions.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/slice_genus_mg94_longest_branches.py \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --normalized results/cds/genus-mg94-normalized-branches-v2 \
+  --tree-review metadata/genus_codon_tree_full_case_review.tsv \
+  --plan metadata/genus_mg94_longest_branch_slice_plan.json \
+  --install /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install \
+  --output results/cds/genus-mg94-longest-branch-slices-v1
+python scripts/plot_genus_branch_likelihood_slices.py \
+  --slices results/cds/genus-mg94-longest-branch-slices-v1 \
+  --output docs/figures/genus_longest_branch_likelihood_slices.svg
+```
+
+Use new output paths for reruns. The plan reserves two one-CPU workers, 4 GB
+memory, 1 GB output and .1–4 hours on the existing host.
+
+Independent readback of all 1,655 raw HyPhy logs and 11,585 table points passed.
+It verifies source hashes, deterministic target selection, multiplier grids,
+branch-parameter and dS scaling, restored baselines, and summary likelihood
+differences. This is a log/table audit, not a second likelihood implementation.
+
+```bash
+python scripts/readback_genus_branch_slices.py \
+  --slices results/cds/genus-mg94-longest-branch-slices-v1 \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --normalized results/cds/genus-mg94-normalized-branches-v2 \
+  --output metadata/genus_mg94_longest_branch_slice_readback.json
+```
+
+Choose a new readback receipt path for reruns.
