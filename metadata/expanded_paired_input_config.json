@@ -1,0 +1,21 @@
+{
+  "dependency_pid": 1330467,
+  "dependency_identity": {
+    "start_ticks": "177720839",
+    "command": "python scripts/advance_expanded_structural_confidence.py --prefetch-pid 1255717 --output results/structural_alphabet/expanded-confidence-control-v1"
+  },
+  "confidence_config_sha256": "8454aa1816e29a1912eaff5146b1099df34d1e5447a82fc31af25a416f31ddc3",
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "baseline_path": "results/phylogeny/paired-structural-inputs-v1",
+  "baseline_receipt_sha256": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c",
+  "scripts": {
+    "run_expanded_paired_inputs.py": "f1f35e7b5a66cdad014728b4e874525efb504e7cadfcac551c3aa0f96859003c",
+    "prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "advance_expanded_structural_confidence.py": "3ac16530c2e0c531e7b0d0b2f929c85877d85cec327584e76a2401c8463f1a75",
+    "assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "compare_marker_structures.py": "4a3a35879a8e7cf95dbaca06ca012ae1b3a7df9cd0e0c49dd36975d8d8a9bdb0",
+    "audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4"
+  },
+  "inputs_output": "results/phylogeny/paired-inputs-gdm-expanded-v1"
+}

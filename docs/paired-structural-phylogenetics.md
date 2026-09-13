@@ -97,3 +97,25 @@ Median AA interval widths were 0.1447, 0.1552 and 0.1516 substitutions/site for 
 ![Conditional interval-width sensitivity](figures/paired_resampling.svg)
 
 The figure is generated with `python scripts/plot_paired_resampling.py --audit results/phylogeny/paired-resampling-audit-v1 --output results/phylogeny/paired-resampling-figures-v1`. Five focused tests cover resampling length/bounds/contiguity, paired missingness, deterministic seeds, remote feature overlap and graph components. All passed. Metadata receipts, conditional intervals and batch summaries are versioned; complete replicate artifacts remain outside Git.
+
+## Expanded paired input execution
+
+`run_expanded_paired_inputs.py` is running with control output
+`results/phylogeny/paired-expanded-control-v1`. It waits on the recorded live
+confidence-controller process identity, requires its complete verified receipt,
+and then invokes the existing paired-input preparation on
+`audited-gdm-expanded-v1`, `gdm-expanded-v1` and the unchanged
+`profile-matrix-50-v1` matrix. Output is
+`results/phylogeny/paired-inputs-gdm-expanded-v1`; main execution output is
+`logs/expanded_paired_inputs_v1.log` and the child log is `preparation.log` in
+the control directory. Configuration and resource estimates are versioned in
+`metadata/expanded_paired_input_config.json` and
+`metadata/expanded_paired_input_resource_plan.json`.
+
+The planned coverage comparison requires identical matrix, confidence-mask and
+eligibility definitions across snapshots and records eligible taxa and retained
+columns for every marker. Availability and chosen predictions can both change.
+These are acquisition/selection diagnostics, not biological rate estimates.
+The job uses a new immutable paired output; interrupted partial preparation
+requires inspection and a new output configuration. Expanded input completion,
+model fits, support, geometric calibration and uncertainty remain pending.
