@@ -487,3 +487,14 @@ queue completion. Two integration tests and three link-identity tests pass.
 The audit process is live. Completed artifact validation, lineage coverage and
 ESMFold residue/structural mapping remain next steps; original production and
 the separate 266-sequence predictor controls continue on their GPUs.
+
+## Audited ESMFold snapshot completed and conversion started
+
+All 5,121 frozen prediction models passed readback, linking 201 taxa and 86
+markers. The subset includes both sampled Aphelidiomycota, but does not yet
+establish usable structural coverage there. Started exact-field PDB-to-mmCIF
+conversion with canonical polymer sequences and local prediction provenance;
+over 500 models have passed actual conversion roundtrips. Three conversion
+tests and three mapping-source/identity tests pass. Mapping now supports a
+separate local inventory without manufacturing UniProt identities. Full
+conversion, residue mapping and native confidence qualification remain pending.

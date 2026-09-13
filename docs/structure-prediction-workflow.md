@@ -129,3 +129,38 @@ use a stale historical chunk receipt to verify that partial snapshots remain
 labeled partial and completed-chunk mode still rejects inconsistent counts.
 Three link-identity tests also pass. One CPU worker, 4 GB memory and 0.1 GB
 output headroom are planned; no new inference or paid resources are needed.
+
+## Partial ESMFold readback completed; mmCIF conversion running
+
+All 5,121 models in the frozen snapshot passed independent artifact validation:
+5,161 marker/taxon links, 201 taxa and 86 markers. The included taxa comprise
+122 Ascomycota, 76 Basidiomycota, two Aphelidiomycota and one
+Basidiobolomycota. This is the composition of the current snapshot, not the full
+queue or confidence-qualified structural coverage. In particular, Aphelidiomycota
+model availability must still pass residue mapping and feature confidence
+before claiming that its paired-coverage gap has been filled.
+
+`convert_esmfold_snapshot.py` is now exporting this audited snapshot into
+`results/structural_inventory/esmfold-partial-v1`. It writes explicit canonical
+polymer sequences and preserves every atom field, residue ID, coordinate and
+PDB confidence decimal in mmCIF, then parses each output back and compares all
+fields. It rejects alternate locations, insertion codes, unexpected heteroatoms
+and inconsistent sequence/numbering. Three focused conversion tests pass, and
+over 500 actual models have converted successfully. Full conversion is pending.
+
+```bash
+python scripts/convert_esmfold_snapshot.py \
+  --audit results/predictions/audit-marker-partial-v2 \
+  --predictions results/predictions/esmfold-marker-v1 \
+  --output results/structural_inventory/esmfold-partial-v1
+```
+
+The local inventory uses sequence-based record IDs, explicit ESMFold provenance,
+configuration-derived model IDs and a local representation version. It retains
+original PDB/NPZ paths and checksums. No UniProt accession or remote PAE URL is
+invented. The mapper now accepts `--inventory` and local `record_id` fields;
+its existing exact provider/tool restriction remains enforced. Three source/
+identity tests pass. After conversion completes, a separate local ESMFold mapping
+can use `--provider local --tool 'ESMFold v1'`; local PAE binding and native
+feature qualification still require downstream work. Existing AlphaFold
+snapshots remain unchanged.

@@ -14,6 +14,13 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROVIDER = 'GDM'
 DEFAULT_TOOL = 'AlphaFold Monomer v2.0 pipeline'
 
+def inventory_key(row):
+    key = row.get('record_id') or row.get('uniprot_accession')
+    if not isinstance(key, str) or not key.strip():
+        raise ValueError('Inventory record needs a local record ID or actual UniProt accession')
+    return key
+
+
 def source_candidates(candidates, provider, tool):
     return [m for m in candidates if m.get('provider') == provider and m.get('tool') == tool]
 
@@ -40,10 +47,11 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--provider', default=DEFAULT_PROVIDER)
     parser.add_argument('--tool', default=DEFAULT_TOOL)
+    parser.add_argument('--inventory', type=Path, default=ROOT / 'data/raw/afdb_models.jsonl')
     args = parser.parse_args()
     if args.output.exists():
         raise FileExistsError('Use an immutable new structure-mapping snapshot')
-    inventory_raw = (ROOT / 'data/raw/afdb_models.jsonl').read_bytes()
+    inventory_raw = args.inventory.read_bytes()
     inventory_lines = inventory_raw.splitlines(keepends=True)
     if inventory_lines and not inventory_lines[-1].endswith(b'\n'):
         inventory_lines.pop()  # Exclude only an unfinished concurrent append.
@@ -54,12 +62,15 @@ def main():
             row = json.loads(line)
         except json.JSONDecodeError as error:
             raise ValueError('Malformed complete inventory record') from error
-        latest[row['uniprot_accession']] = row
+        latest[inventory_key(row)] = row
     models = defaultdict(list)
     for row in latest.values():
         if row['status'] == 'verified':
             for model in row['models']:
-                models[model['sequence_sha256']].append(dict(model, uniprot_accession=row['uniprot_accession']))
+                origin = {'source_record_id': inventory_key(row)}
+                if row.get('uniprot_accession'):
+                    origin['uniprot_accession'] = row['uniprot_accession']
+                models[model['sequence_sha256']].append(dict(model, **origin))
     with (ROOT / 'results/phylogeny/markers-full-v1/protein_mapping.tsv').open() as handle:
         markers = list(csv.DictReader(handle, delimiter='\t'))
     source = defaultdict(dict)
@@ -151,6 +162,7 @@ def main():
                 writer.writerows(rows)
     (args.output / 'model_provenance.json').write_text(json.dumps(list(verified_models.values()), indent=2) + '\n')
     result = {'source_policy': {'provider': args.provider, 'tool': args.tool, 'selection': 'Highest mean CA pLDDT, version and model ID only within this exact provider/tool; no cross-pipeline fallback. Confidence ranking does not establish accuracy.'},
+              'source_inventory_path': str(args.inventory),
               'source_inventory_sha256': hashlib.sha256(frozen_inventory).hexdigest(),
               'script_sha256': digest(Path(__file__)),
               'marker_proteins_screened': len(markers), 'marker_proteins_linked': len(links),

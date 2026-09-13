@@ -1,0 +1,14 @@
+{
+  "status": "prelaunch_audited_esmfold_mmcif_conversion",
+  "models": 5121,
+  "workers": 1,
+  "planning_memory_gb": 4,
+  "planning_output_gb": 5,
+  "planning_runtime_hours": [
+    0.05,
+    2
+  ],
+  "free_disk_bytes": 12529493815296,
+  "basis": "Convert audited PDB atom records to canonical-sequence mmCIF; roundtrip every emitted field. Retain references to original PDB/NPZ and source receipts. No inference or coordinate relaxation.",
+  "cost": "Existing authorized host CPU only; no new charges"
+}
