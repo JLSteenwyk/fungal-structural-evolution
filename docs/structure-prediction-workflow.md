@@ -562,3 +562,43 @@ The queued residue mapper launched automatically and was observed live (PID
 Launch: `metadata/esmfold_followon_mapping_launch.json`. Mapping results,
 independent residue readback and confidence-qualified native features remain
 pending. Converted models alone do not establish additional evolutionary signal.
+
+
+## Full follow-on residue mapping completed
+
+The full mapping finished with 4,252 models, 4,304 marker links, 84 taxa and
+1,017,794 matrix-residue links. Ninety-one markers have at least four linked taxa
+before confidence and native-context filters; this is not the final paired cohort.
+The controller verified exact agreement with the full originating marker-link
+multiset and model universe. Receipts: `metadata/esmfold_followon_mapping_receipt.json`
+and `metadata/esmfold_followon_mapping_handoff_receipt.json`.
+
+`scripts/audit_local_residue_mapping.py` makes the previous local residue readback
+reusable. It reconstructs every expected retained position from Stockholm columns
+using cumulative non-gap counts, checks the amino acid in the concatenated matrix,
+and compares exported confidence with original NPZ arrays within PDB rounding
+precision. It also checks all model/source hashes, link identities and per-link
+confidence summaries. The alignment parser is shared Biopython; this does not
+independently infer alignments or validate PAE/native context.
+
+Full regression readback passed for the earlier 5,121-model snapshot: all 5,161
+marker links and 900,303 expected/exported residue positions. Receipt:
+`metadata/esmfold_existing_full_residue_readback.json`. The follow-on mapping
+completed before a wait configuration could be created; the wait attempt exited
+without launching work. After terminal-receipt verification, direct full readback
+started, using one CPU, 8 GB memory allowance and 1 GB output allowance with a
+0.01–2 hour planning range. Its result is recorded separately after completion.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/audit_local_residue_mapping.py \
+  --mapping results/structural_markers/esmfold-followon-complete-v1 \
+  --prediction-audit results/predictions/followon-complete-audit-v1 \
+  --output results/structural_markers/esmfold-followon-residue-readback-v1
+```
+
+
+The full follow-on readback subsequently passed: all 1,017,794 reconstructed
+positions match the exported mapping, matrix amino acids and prediction confidence.
+All 4,252 model and 4,304 marker-link identities were checked. Receipt:
+`metadata/esmfold_followon_full_residue_readback.json`. PAE binding and native
+structural-alphabet qualification remain the next prerequisites.

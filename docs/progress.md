@@ -1767,3 +1767,14 @@ prediction-receipt hashes passed independent readback. The residue mapper launch
 successfully (PID 175824 under controller 4137875/session 78949). Mapping and
 subsequent residue/PAE/native-feature checks remain pending. Completion and launch
 receipts are versioned in metadata/esmfold_followon_*.
+
+
+Full follow-on residue mapping and independent readback completed: 4,252 models,
+4,304 marker links, 84 taxa and 1,017,794 residues. The new reusable auditor also
+passed the entire prior local snapshot (5,121 models, 900,303 residues). All
+expected retained positions, matrix amino acids, original NPZ confidence and
+link/model identities checked. Mapping completed during queue setup, so the
+prelaunch wait attempt exited and direct readback proceeded after terminal
+verification; no producer was restarted. PAE/native qualification remains pending.
+Receipts are metadata/esmfold_followon_full_residue_readback.json and
+metadata/esmfold_existing_full_residue_readback.json.

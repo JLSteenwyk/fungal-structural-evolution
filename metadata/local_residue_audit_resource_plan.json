@@ -1,0 +1,13 @@
+{
+  "status": "prelaunch_full_existing_local_residue_readback",
+  "models": 5121,
+  "expected_matrix_residue_links": 900303,
+  "cpu_threads": 1,
+  "memory_allowance_gb": 8,
+  "output_allowance_gb": 1,
+  "planning_runtime_hours": [
+    0.01,
+    2
+  ],
+  "scope": "Full prior local snapshot regression readback for the reusable residue auditor; reconstruct all positions, compare matrix amino acids and confidence, and verify source hashes. Existing host only; not new inference."
+}
