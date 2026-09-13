@@ -1671,3 +1671,17 @@ No longer-protein prediction was launched or queued yet. Existing GPU jobs,
 full FreeRate optimization and its queued audit remain live. Larger deferred
 proteins, broader structural coverage and the full research goal remain
 incomplete.
+
+
+### Longer-marker GPU handoff queued
+
+Compiled and launched a pinned controller for the full 513–768-residue queue,
+waiting behind the already queued experimental controls on GPU 1. The exact
+predecessor process is live and the new controller entered its expected waiting
+state. It requires clean predecessor completion, refreshes model reuse and
+resource observations into a new immutable input snapshot, verifies the complete
+selected sequence/link universe, then launches the remaining candidates with
+max-length 768 and the existing OOM stop. The initial queue has 5,510 pending
+proteins; launch-time reuse can change that count. No longer-protein inference
+has started yet. Existing prediction and model-fitting jobs continue; the
+full project remains incomplete.

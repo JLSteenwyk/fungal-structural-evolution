@@ -1,0 +1,42 @@
+{
+  "predecessor_pid": 411930,
+  "predecessor_start_ticks": "179037405",
+  "predecessor_control": "results/predictions/experimental-controls-controller-v1",
+  "predecessor_predictions": "results/predictions/esmfold-experimental-controls-v1",
+  "predecessor_config_sha256": "9d26671f66193d0af12d85483c2041fa33958130c5fb78bff0b2c3264785503e",
+  "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+  "prepared_inputs": "data/prediction_inputs/markers-513-768-v1",
+  "refreshed_inputs": "data/prediction_inputs/markers-513-768-launch-v1",
+  "source_inputs": [
+    "data/prediction_inputs/markers-v1",
+    "data/prediction_inputs/markers-followon-v1"
+  ],
+  "reuse_prediction_directories": [
+    "results/predictions/esmfold-marker-v1",
+    "results/predictions/esmfold-followon-v1",
+    "results/predictions/esmfold-experimental-controls-v1"
+  ],
+  "prediction_output": "results/predictions/esmfold-markers-513-768-v1",
+  "control_output": "results/predictions/long-markers-controller-v1",
+  "checkpoint": "data/prediction_models/esmfold-v1",
+  "python": "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+  "minimum_free_disk_bytes": 100000000000,
+  "cost": "Existing authorized GPU only; no paid resources",
+  "scheduling": "Wait for exact experimental-control controller PID/start identity and clean prediction completion; wait for unoccupied GPU, refresh exact-sequence reuse and resource observations, then execute all remaining 513\u2013768-residue candidates. Do not restart or interrupt a predecessor. OOM/interruption requires review.",
+  "pinned_files": {
+    "scripts/advance_long_marker_predictions.py": "fbc05dbdcdb2a21794656a502e0a573715513bddb6bb3a62993d7d04704fa42d",
+    "scripts/advance_experimental_control_predictions.py": "13c20235f2a7ed7acd5c85f608a599db4e9ee3fe74f2e157b42ca17ffd2bcf64",
+    "scripts/prepare_long_marker_predictions.py": "259372cf1b93681a4ec4dfa98cfd90cb256ad330387c57355e59279645f80159",
+    "scripts/run_marker_predictions.py": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "metadata/experimental_control_prediction_controller_config.json": "9d26671f66193d0af12d85483c2041fa33958130c5fb78bff0b2c3264785503e",
+    "metadata/long_marker_resource_plan_v1.json": "8210f81919872b41b0d0c67d40748cdf9ca2bfcdd340667a472776756a39877b",
+    "metadata/long_marker_queue_readback_v1.json": "b4f32ecdfe940bbc9b1ec1c2c8a0b4fbb5744f8b5bb9acca6d32a90c22e44a97",
+    "data/prediction_inputs/markers-513-768-v1/receipt.json": "bc9970261e7b0db535a7eaecffc75821e85613270e46a8573914196855e9c2ae",
+    "data/prediction_models/esmfold-v1/receipt.json": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "data/prediction_inputs/markers-v1/receipt.json": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+    "data/prediction_inputs/markers-followon-v1/receipt.json": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458"
+  }
+}

@@ -409,3 +409,32 @@ follow-on provenance without changing production inputs. Receipts and resource
 plans are tracked in `metadata/long_marker_queue_receipt_v1.json`,
 `metadata/long_marker_queue_readback_v1.json` and
 `metadata/long_marker_resource_plan_v1.json`.
+
+
+### Longer-marker execution queued after experimental controls
+
+`scripts/advance_long_marker_predictions.py` is now running. It waits for the
+exact experimental-control controller PID/start-time identity, requires its
+successful receipt and a clean prediction chunk, then waits for the same GPU
+to have no compute processes. Neither existing prediction job is interrupted.
+Immediately before execution it reruns queue preparation into a new immutable
+`data/prediction_inputs/markers-513-768-launch-v1` snapshot to refresh available
+exact-sequence models and observed resource scenarios. It checks that the
+selected length band, source receipts and complete marker links remain the
+same; only the reusable/pending disposition may change.
+
+The full remaining band will run in
+`results/predictions/esmfold-markers-513-768-v1`, using the existing pinned
+ESMFold checkpoint, batch size one, four CPU threads and maximum length 768.
+The new output has its own prediction configuration. The controller requires
+100 GB free storage and an unoccupied existing 49,140-MiB GPU; the extrapolated
+memory estimate is not a guarantee of successful allocation. The existing
+producer stops on OOM, and unsuccessful or interrupted completion is recorded
+for review rather than automatically restarted. Final structure/PAE auditing
+remains separate from clean execution accounting.
+
+Controller configuration: `metadata/long_marker_prediction_controller_config.json`.
+Log: `logs/long_marker_prediction_controller_v1.log`.
+Controller outputs: `results/predictions/long-markers-controller-v1`.
+The script compiled, verified its initial pins and entered its expected waiting
+state. Input refresh and longer-protein prediction execution remain pending.
