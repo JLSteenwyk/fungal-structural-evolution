@@ -1361,3 +1361,16 @@ these models; ancestry, uncertainty and confidence effects remain unadjusted.
 Both GPU prediction jobs, expanded AF fits/geometry and full local resampling
 were verified live. This advances the completed point benchmark; phylogenetic
 coupling tests and the overall research goal remain incomplete and active.
+
+
+### Accessibility annotations checked against original atom records
+
+Added a reusable full-production audit with an explicit frozen-partial mode.
+All 4,652 entries available at launch passed raw mmCIF sequence, residue grid,
+atom-count, CA confidence, hash and ASA-total checks: 1,059,944 residues. This
+prepares annotations for subsequent structural localization analyses; it does
+not recalculate ASA or validate biological core/surface assignments. The 469
+entries outside the frozen audit still require checking. Larger phylogenetic
+and prediction runs were verified live. The previous turn completed the local
+rank benchmark; this turn advances residue annotation integrity. The overall
+research goal remains active and incomplete.

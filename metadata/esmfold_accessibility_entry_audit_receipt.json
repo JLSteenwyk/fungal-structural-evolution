@@ -1,0 +1,14 @@
+{
+  "status": "passed_frozen_completed_entries",
+  "snapshot_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+  "assessment_config_sha256": "4ca90ca2b52e89fe3e18ed48ade89766ffa9804cfcb457d830ef2e97a4b6e868",
+  "assessment_receipt_sha256": null,
+  "script_sha256": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+  "models_audited": 4652,
+  "models_expected": 5121,
+  "residues_audited": 1059944,
+  "scope": "All frozen completed entries checked against raw mmCIF atom tables, including hashes, sequence, residue grid, atom counts, CA confidence and ASA totals. ASA itself was not independently recalculated. Partial completion does not validate unaudited or unfinished entries. No biological exposure, core, surface or interface validation.",
+  "artifacts": {
+    "audited_models.tsv": "1cbdb1d1fb5889f937d56a5094e39e9f30bf9a063333a11d8b56c71a4d190134"
+  }
+}

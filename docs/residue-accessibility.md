@@ -129,3 +129,29 @@ remain separate sources of uncertainty.
 ```bash
 python scripts/audit_accessibility_resolution.py --assessment results/structural_annotations/accessibility-resolution-gdm-v1 --snapshot results/structural_markers/gdm-expanded-v1 --output results/structural_annotations/accessibility-resolution-gdm-audit-v1
 ```
+
+
+## Production residue-table audit
+
+`scripts/audit_predicted_accessibility.py` validates production annotations
+against the original mmCIF atom tables using `MMCIF2Dict`, separately from the
+producer's structure-object parser. It checks source/configuration/output hashes,
+sequence identity, the complete residue grid, atom names/counts, CA confidence,
+finite nonnegative ASA and reported totals. This does not independently
+recalculate ASA or establish biological exposure.
+
+The default requires every model and a matching full production receipt. For
+ongoing production, `--allow-partial` freezes the set of atomic entry receipts
+present at audit start. Its output identifies exactly which entries were checked
+and cannot establish completion of the full dataset. Unfinished entries are
+left to the producer; the auditor does not modify its outputs.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/audit_predicted_accessibility.py --assessment results/structural_annotations/accessibility-esmfold-v1 --snapshot results/structural_markers/esmfold-partial-v1 --output results/structural_annotations/accessibility-esmfold-entry-audit-v1 --allow-partial
+```
+
+The first production entry audit passed all 4,652 frozen completed models and
+1,059,944 residues. The other 469 models were not in this audit snapshot; this
+is not full production completion. The checked model/receipt list is recorded
+in `metadata/esmfold_accessibility_audited_models.tsv`, with aggregate scope and
+provenance in `metadata/esmfold_accessibility_entry_audit_receipt.json`.
