@@ -1,0 +1,37 @@
+{
+  "status": "complete_domain_comparison_snapshot",
+  "sources": {
+    "snapshot": {
+      "path": "results/structural_markers/snapshot-v2",
+      "receipt_sha256": "8de3f7949755aa684b51804d3c312c7427bcca615e549099df7e7a7b8ba9942e"
+    },
+    "comparisons": {
+      "path": "results/structural_comparisons/snapshot-v1",
+      "receipt_sha256": "2da8cb4699ffb5695821437ee0d3b78cb30f306cc8794fc904b1ce92d51f8370"
+    },
+    "annotations": {
+      "path": "results/domains/marker-annotations-v1",
+      "receipt_sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+    },
+    "pae": {
+      "path": "results/structural_pae/snapshot-v1",
+      "receipt_sha256": "34fec17d549d85893baba72978d368d11f5c34d68ff3a7e91c2bbb54d7f98725"
+    }
+  },
+  "script_sha256": "35ffafaf33d8574e4cbb46fb09ed5cb18ecf66070b3611f94bfa307dce394259",
+  "geometry_script_sha256": "4a3a35879a8e7cf95dbaca06ca012ae1b3a7df9cd0e0c49dd36975d8d8a9bdb0",
+  "full_marker_pairs_screened": 858,
+  "domain_comparisons": 738,
+  "distinct_marker_taxon_pairs": 463,
+  "distinct_pfam_domains": 84,
+  "excluded_pair_or_domain_rows": 476,
+  "mapped_annotation_hits": 1220,
+  "eligible_annotation_hits": 452,
+  "filters": "Pfam Domain type; single instance; no overlap with any GA hit; >=50% HMM coverage; matched profile sites in both domain spans; both pLDDT>=70; >=30 qualified residues and >=50% shared domain sites; same direct-comparison baseline.",
+  "interpretation": "Descriptive conserved-domain geometry. Separate fitting necessarily improves fit and is not proof of biological domain motion. Pairwise rows are dependent; no branch rates, gains/losses, selection or significance are inferred. Restricted to existing immutable AFDB comparison snapshot.",
+  "artifacts": {
+    "excluded_pairs.tsv": "afcaf0311989fc4670e2c5ba70dc99f7baf305ee3b1eb54d7d83b2b3346a08e9",
+    "domain_eligibility.tsv": "1ff7d14c7d86e7d2af6145903f496bad3a97868de1d9f1c96fb5e94c4ddc5128",
+    "domain_comparisons.tsv": "e0928790e493b6141aef37487bf1fd14c082b2c976720ce5e22d50da16bc0bcf"
+  }
+}

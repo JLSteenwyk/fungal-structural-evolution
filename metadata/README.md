@@ -71,3 +71,6 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 - `orthology_core_receipt.json`: successful 64-taxon computational core; not evidence of full-cohort orthology completion.
 
 - `orthofinder_numpy_install_report.json` and `orthofinder_numpy_compatibility.json`: NumPy 2.2.6 wheel provenance and successful round-trip through the assignment function that failed under 2.5.3; full install report outside Git.
+
+- `structural_domain_comparison_receipt.json`, `structural_domain_figure_receipt.json` and `structural_domain_review_order.tsv`: 738 conserved-domain comparisons, source hashes, plot provenance and complete manual review ordering. Refitting improvement is not evidence of biological motion.
+- `domain_placement_receipt.json` and `domain_placement_confidence.tsv`: 375 domain-pair/taxon-pair combinations at three directional PAE thresholds; absent confident residue-pair measurements remain missing, not zero.
