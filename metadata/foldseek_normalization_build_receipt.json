@@ -1,0 +1,20 @@
+{
+  "status": "complete_isolated_original_and_patched_build",
+  "config_sha256": "9adb58c35c9303f5669765192981653422e3070ff0df458c99ec460eeae28964",
+  "compile_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-build-tools-v1/bin/cmake",
+    "--build",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_source/foldseek-normalization-build-v1/build",
+    "--target",
+    "foldseek",
+    "--parallel",
+    "4"
+  ],
+  "unmodified_source_sha256": "3639e59c54c8141552469fcc939f505ed824d08e2dc23451d5602c98db1c79d7",
+  "patched_source_sha256": "425e765eb1b1bf5f32b44df1a12a8fedcf1762dd8a72964557fae275e68a5973",
+  "artifacts": {
+    "foldseek-unmodified": "f452446eb7737c159cf4344ce472273ceec0e900acd867e63dca9df4d3d8aa04",
+    "foldseek-inclusive-span": "c7508bbfcf1c26f3c79935baa34a1a7751235aebdfad6409ff68ba2eb1a3c271",
+    "normalization.patch": "478e981811a229ac6e7fc9a38b849c44d1a1222362f7881edf8ee6f3422c7f3f"
+  }
+}

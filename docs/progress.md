@@ -1215,3 +1215,14 @@ receipt-gated rescoring of the unchanged saved alignments. The previous turn
 identified a likely normalization issue; this turn starts the controlled test
 needed before correcting scores or membership. Existing prediction and paired
 analysis processes remain live. The overall research goal remains incomplete.
+
+### Normalization-control builds completed and full rescoring started
+
+Both pinned-source builds completed. Binary/source/patch readback passed, and
+the production executable remains unchanged. Launched two sequential exact
+conversions on all saved alignments, with the unmodified control verified live.
+Prepared a reviewer that separates toolchain effects from normalization effects
+and rejects changes to other score fields between matched builds. The preceding
+turn launched compilation; this turn completes the build and starts the actual
+controlled score comparison. Results and corrected memberships remain pending.
+The full research goal remains active and incomplete.

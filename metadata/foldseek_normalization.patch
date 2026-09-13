@@ -1,0 +1,11 @@
+--- a/src/strucclustutils/structureconvertalis.cpp
++++ b/src/strucclustutils/structureconvertalis.cpp
+@@ -996,7 +996,7 @@
+                                     case LocalParameters::OUTFMT_ALNTMSCORE:
+                                         tmres = tmaligner->computeTMscore(targetCaData, &targetCaData[res.dbLen], &targetCaData[res.dbLen+res.dbLen], res.dbLen,
+                                                                           res.qStartPos, res.dbStartPos, tmpBt,
+-                                                                          std::min(res.qEndPos - res.qStartPos, res.dbEndPos - res.dbStartPos));
++                                                                          std::min(res.qEndPos - res.qStartPos + 1, res.dbEndPos - res.dbStartPos + 1));
+                                         result.append(SSTR(tmres.tmscore));
+                                         break;
+                                     case LocalParameters::OUTFMT_QTMSCORE:

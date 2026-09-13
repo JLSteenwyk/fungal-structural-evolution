@@ -269,3 +269,28 @@ alignments with both builds. Its planned runtime uses the observed 17.5-minute
 original conversion, with a broader 0.5–12 hour allowance for both variants.
 Numerical readback and membership sensitivity must follow; no exclusion has
 been reversed based on source inspection alone.
+
+### Both isolated builds completed; control conversions running
+
+Both binaries compiled successfully. Readback verifies their hashes, the
+single-expression patch, the unmodified source against the earlier independent
+source retrieval, and the unchanged production executable. Build completion
+receipt and patch are tracked under `metadata/foldseek_normalization_*`.
+
+Started sequential conversions of all saved directed alignments using the
+unmodified and inclusive-span builds. Source database component hashes, command
+lines and resource estimates are in
+`metadata/cluster_normalization_control_config.json`. The unmodified conversion
+is verified live; corrected scores and membership decisions are still pending.
+
+```bash
+python scripts/rescore_cluster_normalization_controls.py --build data/software_source/foldseek-normalization-build-v1 --exact results/structural_clusters/edge-exact-score-v1 --output results/structural_clusters/normalization-controls-v1
+```
+
+The prepared `review_cluster_normalization_controls.py` compares production to
+rebuilt-unmodified outputs separately from rebuilt-unmodified to patched outputs.
+It checks the complete pair universe, fixed alignment fields, numeric ranges,
+score differences and threshold transitions. Between matched builds, only
+alignment-TM output may differ; a change in another score is an error requiring
+investigation. The reviewer has passed syntax checking but has not yet run on
+completed controls. No corrected group assignments have been made.
