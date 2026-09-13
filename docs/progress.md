@@ -252,3 +252,9 @@ A projection from 3,640 frozen prediction receipts stratified by sequence length
 Started checksum-validated CDS acquisition for all 519 NCBI-backed taxa after recording a two-worker resource envelope. Every URL matches its protein assembly directory/prefix. Early downloads pass publisher MD5, local SHA256, gzip, identifier and DNA-alphabet checks; non-triplet, ambiguous and unlinked records remain explicit. Three focused tests passed. The producer is running and the completed 519-taxon receipt is not yet available.
 
 Separately verified the CDS source inventory for all seven external taxa. Four published CDS FASTAs are present and checksum-valid, two sanchytrid translated/extracted subsets remain available with their original exception records, and Creolimax extraction is pending. This advances selection-analysis inputs; translation/codon validation and selection tests remain incomplete. See coding-sequence-workflow.md and metadata/external_cds_source_inventory.json.
+
+## Creolimax coding-sequence extraction
+
+Completed the genome/GTF/protein-matched extraction audit for all 8,694 Creolimax proteins. Exact translation passes for 8,558 CDSs; 136 remain exceptions (71 translation mismatches, 60 initial-phase flags, four non-triplet lengths, one ambiguous transcript mapping). Four strand/splice/phase/bounds tests passed, and independent output readback reproduced every accepted translation and the complete status partition. No exception was silently repaired.
+
+Updated the external CDS source inventory: all seven external taxa now have available published CDSs or verified extracted subsets; published-source translation checks and extraction exceptions remain explicit. Full NCBI CDS acquisition continues, as do the structural and phylogenetic jobs. Selection tests remain pending.

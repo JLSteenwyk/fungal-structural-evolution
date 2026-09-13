@@ -60,4 +60,4 @@ A [full-sampling gene-copy annotation audit](docs/gene-isoform-mapping.md#full-s
 
 Both full-taxon alignment strategies now have guide-tree searches running. A [taxon-coverage sensitivity audit](docs/phylogenetic-workflow.md#full-sampling-taxon-coverage-sensitivity-definitions) shows that a 50% coverage filter would eliminate all sampled Microsporidia and Olpidiomycota; the production design retains all 526 taxa. Supported trees and filtered-tree comparisons remain pending.
 
-[Assembly-matched coding-sequence acquisition](docs/coding-sequence-workflow.md) is running for the 519 NCBI-backed taxa. Six external CDS sources are available, with Creolimax extraction pending. Translation/codon validation and selection tests remain to be completed.
+[Assembly-matched coding-sequence acquisition](docs/coding-sequence-workflow.md) is running for the 519 NCBI-backed taxa. All seven external taxa now have available CDS sources or verified extracted subsets, including 8,558 exact translated Creolimax CDSs; exceptions remain explicit. Translation/codon validation and selection tests remain to be completed.

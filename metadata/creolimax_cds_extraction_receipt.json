@@ -1,0 +1,77 @@
+{
+  "status": "complete_creolimax_cds_extraction_audit",
+  "taxon_id": "OFS1403592",
+  "proteins_screened": 8694,
+  "annotation_cds_transcripts": 8695,
+  "status_counts": {
+    "exact_translation": 8558,
+    "translation_mismatch": 71,
+    "nonzero_or_missing_initial_phase": 60,
+    "non_triplet_cds_length": 4,
+    "ambiguous_gene_transcripts": 1
+  },
+  "mapping_basis_counts": {
+    "exact_transcript_id": 8644,
+    "exact_gene_id": 50
+  },
+  "unused_annotation_transcripts": 2,
+  "verified_cds_records": 8558,
+  "translation_table_tested": 1,
+  "source_receipt_sha256": "ef4f46dd5f3c003ccf414eca3662f3b92cbf3dea0d98b3b8047cd3d550388fac",
+  "qc_input_receipts_sha256": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+  "normalized_protein_sha256": "897fc13d130dfb87ce2022579f200554631f9a4ae5e78bab682772bd5ac3e57a",
+  "sources": {
+    "Creolimax_fragrantissima.gtf.gz": {
+      "article_id": 1403592,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.6084/m9.figshare.1403592",
+      "article_version": 1,
+      "name": "Creolimax_fragrantissima.gtf.gz",
+      "url": "https://ndownloader.figshare.com/files/3328013",
+      "path": "data/external/1403592/Creolimax_fragrantissima.gtf.gz",
+      "sha256": "9071dd4e83ef06d3e4a2f1bbaf3d2624dd75f0023d5ecefed66c3e5d20e73b70",
+      "publisher_md5": "dcd581287224fd291e81604a9f377638",
+      "bytes": 1803169,
+      "verified_at_utc": "2026-09-13T02:37:45.385976+00:00"
+    },
+    "Creolimax_fragrantissima.genome.fasta.gz": {
+      "article_id": 1403592,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.6084/m9.figshare.1403592",
+      "article_version": 1,
+      "name": "Creolimax_fragrantissima.genome.fasta.gz",
+      "url": "https://ndownloader.figshare.com/files/3328022",
+      "path": "data/external/1403592/Creolimax_fragrantissima.genome.fasta.gz",
+      "sha256": "bd7b35d17d5b7b2fb93fb6d0278a646a904b9aad394c0a0c015145f20660ab22",
+      "publisher_md5": "d6feb7946e8b0afd1e4ef1ba703a268b",
+      "bytes": 13852795,
+      "verified_at_utc": "2026-09-13T02:38:00.935882+00:00"
+    },
+    "Creolimax_fragrantissima.pep.fasta.gz": {
+      "article_id": 1403592,
+      "role": "outgroup_candidate",
+      "citation": "https://doi.org/10.6084/m9.figshare.1403592",
+      "article_version": 1,
+      "name": "Creolimax_fragrantissima.pep.fasta.gz",
+      "url": "https://ndownloader.figshare.com/files/3328016",
+      "path": "data/external/1403592/Creolimax_fragrantissima.pep.fasta.gz",
+      "sha256": "7b0b01c899879caf1661777eeb8e571ef5a2bef28cbb51217d4adb793a4c7a9b",
+      "publisher_md5": "4297f0058ce78db9e92f7d32d57b22ac",
+      "bytes": 2753336,
+      "verified_at_utc": "2026-09-13T02:37:47.715248+00:00",
+      "proteins": 8694,
+      "residues": 4549420,
+      "max_length": 5773,
+      "fasta_status": "validated",
+      "terminal_dot_records": 0,
+      "internal_dot_records": 0
+    }
+  },
+  "script_sha256": "77f8ca5d74f74ae2472c368fce0ac131386c047c785870b2bc8df70ba31a64b8",
+  "interpretation": "CDS blocks ordered in transcription direction, reverse-complemented on minus strand, bounds/non-overlap and phase continuity checked. Internal phase bases are retained across splice junctions, not individually trimmed. Requires initial phase zero and a multiple-of-three CDS. Standard-code translation must match the complete normalized protein after removing at most one terminal stop from the translation; DNA terminal stops are retained and flagged. Exceptions remain excluded from verified CDS, not repaired. Exact gene-ID fallback only when one transcript is explicitly linked. This does not establish codon alignment or selection-test suitability.",
+  "artifacts": {
+    "annotation_transcripts_without_selected_protein.json": "feb669388d505e0c03966cf438872f3ea61d5885f7148c10b18a9bbbf1da3223",
+    "protein_cds_audit.tsv": "8d42b85f8d59fbc58008603e874a34af4956552bfc0d084ea5809b59c6dfa107",
+    "verified_cds.fna": "4cef8c964782ceb83e93e11e5f0b2b0e95852c9a7e502bb3150f0e184ab4ea8d"
+  }
+}

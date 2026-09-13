@@ -1,5 +1,5 @@
 {
-  "status": "complete_external_cds_source_inventory_not_complete_extraction",
+  "status": "complete_external_cds_source_inventory",
   "taxa": [
     {
       "taxon_id": "F2109901",
@@ -77,14 +77,28 @@
     {
       "taxon_id": "OFS1403592",
       "species_name": "Creolimax fragrantissima",
-      "status": "annotation_guided_extraction_pending",
+      "status": "available_translation_verified_subset",
       "source_url": "",
-      "translation_scope": "No ready CDS FASTA recorded; use deposited genome and exact annotation with strand/phase validation"
+      "translation_scope": "Exact extracted translation for retained CDS; all extraction exceptions remain explicit",
+      "source_exception_counts": {
+        "exact_translation": 8558,
+        "translation_mismatch": 71,
+        "nonzero_or_missing_initial_phase": 60,
+        "non_triplet_cds_length": 4,
+        "ambiguous_gene_transcripts": 1
+      },
+      "path": "results/cds/creolimax-extraction-v1/verified_cds.fna",
+      "sha256": "4cef8c964782ceb83e93e11e5f0b2b0e95852c9a7e502bb3150f0e184ab4ea8d",
+      "cds_records": 8558,
+      "nucleotide_bases": 13512795
     }
   ],
+  "taxa_with_available_cds": 7,
+  "taxa_with_extraction_pending": 0,
   "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
   "external_source_receipt_sha256": "ef4f46dd5f3c003ccf414eca3662f3b92cbf3dea0d98b3b8047cd3d550388fac",
   "derived_cds_receipt_sha256": "0c9afb8731f80adcb0ff4cc8eb3e9fbbf4f56feb5fe24b9adca17c869da53343",
-  "script_sha256": "51f8ff8eca42df3ecd2d3fad0c04ea24913534a4f4147fa77cf7edea2dba30e1",
+  "creolimax_extraction_receipt_sha256": "34e17a5a062ac1597a07eb84223934c100582332e9bfa3b62666afa460c3c837",
+  "script_sha256": "79ed14d27c4f91af7cdc2e16fcbd134a47006d4dd40017cfdda2cdf02e2266df",
   "interpretation": "Available source hashes, unique FASTA identifiers and DNA alphabet checked. Published CDS availability does not establish exact translation, orthology or codon-model suitability. Pending extraction remains explicit; no taxon removed."
 }
