@@ -1,0 +1,27 @@
+{
+  "status": "complete_descriptive_audit_summary",
+  "source_audit_sha256": "f9d5598112f5c2e2c8e597af5b3d9bafab0fe0e3532e4944fe7c00f190cfe12a",
+  "source_audit_status": "passed_completed_case_snapshot",
+  "cases": 415,
+  "bootstrap_trees": 415000,
+  "internal_edges": 1686,
+  "cases_by_code": {
+    "1": 391,
+    "12": 24
+  },
+  "cases_with_warning_category": {
+    "memory_adjustment": 127,
+    "saturated_pairwise_distance": 7,
+    "parameter_boundary": 18,
+    "nni_convergence": 16,
+    "other": 0
+  },
+  "branches_ufb_lt95": 806,
+  "branches_sh_alrt_lt80": 468,
+  "cases_with_near_zero_edges": 109,
+  "script_sha256": "a16f0164d8e10a7d03d3492f5b18ee14b430931d33afd37205065c02f3244835",
+  "interpretation": "Descriptive completed-case snapshot, potentially biased by finishing time. Warning flags require follow-up, not automatic exclusion. IQ-TREE saturated-distance warnings are not a codon-specific synonymous-saturation test. Memory-adjustment warnings are retained separately; their cause is unresolved. Selection eligibility is not established even for unflagged cases.",
+  "artifacts": {
+    "case_review.tsv": "62f1751283b3abcdd0a82bbdbbbec779993e42fe28d8f57a00ebf047bc6a1c7c"
+  }
+}

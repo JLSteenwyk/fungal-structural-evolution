@@ -2173,3 +2173,15 @@ observation records 287 completed case receipts. Full tree/report/support audit,
 codon divergence and selection eligibility review remain pending. Both ESMFold
 GPU queues were confirmed active. See docs/coding-sequence-workflow.md and
 metadata/genus_codon_tree_* for configurations, resources and progress provenance.
+
+
+Independently audited the first 415 completed genus/code nucleotide trees and
+all 415,000 saved bootstrap trees. Exact tip grids, branch values, split counts,
+model reports, reported total lengths and UFB frequencies passed (rounding
+within 0.5 percentage points). Added root-invariance/malformed-tree tests (two
+passed). This is an immutable incomplete snapshot, not full-batch completion.
+Among 1,686 internal edges, 806 have UFB below 95 and 468 SH-aLRT below 80.
+Warning review flags seven cases for saturated nucleotide distances, 18 for
+parameter boundaries and 16 for NNI convergence; categories overlap. Retained
+127 cases with memory-adjustment warnings separately for investigation. These
+observations guide subsequent codon diagnostics, not selection claims.

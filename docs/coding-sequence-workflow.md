@@ -405,3 +405,51 @@ Do not start a second instance while this queue is active. Completed cases can
 be reused only with matching configuration and artifact hashes. These unrooted,
 within-genus/code trees do not establish genus monophyly, orthology, species-tree
 relationships, absence of synonymous saturation, or selection eligibility.
+
+
+`scripts/audit_genus_codon_trees.py` independently parses every completed ML
+and bootstrap tree with Bio.Phylo. It checks the exact taxon grid, finite
+nonnegative branches, resolved unrooted splits, input/configuration/artifact
+hashes, recorded model/support settings, finite likelihood and gamma shape,
+and the reported total tree length. It recounts each ML split across all 1,000
+saved bootstrap trees; reported integer UFB support must agree within rounding
+(0.5 percentage points). SH-aLRT ranges are checked but its statistics are not
+independently recomputed. Warnings and near-zero/very long edges are retained.
+
+Use `--allow-incomplete` only for a new immutable snapshot of completed cases;
+the receipt lists all pending cases. Without that option, the full batch receipt
+and exact case-receipt grid are required. Neither mode proves model adequacy,
+optimization convergence or selection eligibility. Tests verify root-independent
+split identities and reject duplicate/missing/extra tips, negative or absent
+edge lengths, and unresolved trees.
+
+```bash
+python scripts/audit_genus_codon_trees.py \
+  --trees results/phylogeny/genus-codon-trees-v1 \
+  --inputs results/cds/genus-codon-diagnostic-inputs-v1 \
+  --output results/phylogeny/genus-codon-tree-audit-full-v1
+```
+
+
+The first completed-case snapshot passed all implemented audit checks for
+415 cases (391 code 1, 24 code 12), 415,000 bootstrap trees and 1,686 internal
+edges. Recounted UFB values agree within 0.5 percentage points. Of these edges,
+806 have UFB below 95 and 468 have SH-aLRT below 80; 109 cases contain an edge
+at or below 1e-5 substitutions/site. These thresholds describe uncertainty;
+they are not automatic inclusion rules or calibrated biological error rates.
+
+Warning review identifies seven cases with saturated pairwise-distance warnings,
+18 with parameter-boundary warnings and 16 with unusually long NNI convergence
+warnings (categories can overlap). These require review before codon-model
+interpretation. Saturated nucleotide-distance warnings do not establish
+synonymous saturation. Another 127 cases have repeated IQ-TREE memory-adjustment
+warnings, often reporting tiny MB values; these are retained separately and
+require investigation of their cause. The raw 127,301 warning lines remain in
+the archived audit, outside Git. All case-level flags and summary receipts are
+versioned as `metadata/genus_codon_tree_*snapshot*`.
+
+Reproduce the categorization using `scripts/summarize_genus_tree_audit.py`
+with `--audit results/phylogeny/genus-codon-tree-audit-snapshot-v1` and a new
+`--output` directory. Early-finishing cases can be biased; the full audit must
+be rerun after the complete queue finishes. No case, including those without
+warnings, is designated selection-ready by this summary.
