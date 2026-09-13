@@ -45,7 +45,7 @@ def main():
         'branches_sh_alrt_lt80':sum(float(r['sh_alrt_percent'])<80 for r in branches),
         'cases_with_near_zero_edges':sum(int(r['near_zero_edges_le1e_5'])>0 for r in cases),
         'script_sha256':sha(Path(__file__)),
-        'interpretation':'Descriptive completed-case snapshot, potentially biased by finishing time. Warning flags require follow-up, not automatic exclusion. IQ-TREE saturated-distance warnings are not a codon-specific synonymous-saturation test. Memory-adjustment warnings are retained separately; their cause is unresolved. Selection eligibility is not established even for unflagged cases.'}
+        'interpretation':('Complete planned information-screened case set. ' if receipt['status']=='passed_full_genus_tree_audit' else 'Descriptive completed-case snapshot, potentially biased by finishing time. ')+'Warning flags require follow-up, not automatic exclusion. IQ-TREE saturated-distance warnings are not a codon-specific synonymous-saturation test. Memory-adjustment warnings are retained separately for source-specific interpretation. Selection eligibility is not established even for unflagged cases.'}
     args.output.mkdir(parents=True)
     with (args.output/'case_review.tsv').open('w',newline='') as stream:
         writer=csv.DictWriter(stream,list(output[0]),delimiter='\t',lineterminator='\n');writer.writeheader();writer.writerows(output)

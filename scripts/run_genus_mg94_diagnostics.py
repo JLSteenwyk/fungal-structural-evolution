@@ -20,7 +20,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     for key in ['inputs','trees','information','resources','code-check','hyphy-install','hyphy-source','installed-manifest','output']:
         parser.add_argument('--'+key,required=True,type=Path)
-    parser.add_argument('--tree-producer-pid',required=True,type=int)
+    parser.add_argument('--tree-producer-pid',type=int)
     args=parser.parse_args()
     plan=json.loads(args.resources.read_text());code_check=json.loads(args.code_check.read_text())
     if sha(args.inputs/'receipt.json')!=plan['source_input_receipt_sha256'] or sha(args.information)!=plan['information_table_sha256'] or sha(args.code_check)!=plan['code_check_sha256']:
@@ -39,14 +39,24 @@ def main():
     if len(info)!=plan['cases']:raise ValueError('Case count differs')
     tree_config=args.trees/'config.json'
     if json.loads(tree_config.read_text())['input_receipt_sha256']!=plan['source_input_receipt_sha256']:raise ValueError('Tree inputs differ')
-    producer=Path('/proc')/str(args.tree_producer_pid)
-    if not producer.exists():raise RuntimeError('Specified tree producer is not live at launch')
-    producer_start=producer.joinpath('stat').read_text().split()[21]
-    producer_cmd=producer.joinpath('cmdline').read_bytes()
-    if b'run_genus_codon_trees.py' not in producer_cmd:raise ValueError('Wrong producer process')
+    producer=None;producer_start=None;complete_tree_hash=None
+    if (args.trees/'receipt.json').exists():
+        batch=json.loads((args.trees/'receipt.json').read_text())
+        expected={r['case_id']:r['receipt_sha256'] for r in batch.get('case_receipts',[])}
+        if batch.get('status')!='complete_genus_nucleotide_tree_execution_pending_full_audit' or batch.get('config_sha256')!=sha(tree_config) or set(expected)!=set(info) or len(batch['case_receipts'])!=len(info):raise ValueError('Completed tree source does not match planned cases')
+        for case,digest in expected.items():
+            if sha(args.trees/case/'receipt.json')!=digest:raise ValueError('Changed completed tree case')
+        complete_tree_hash=sha(args.trees/'receipt.json')
+    else:
+        if args.tree_producer_pid is None:raise ValueError('Incomplete tree source requires --tree-producer-pid')
+        producer=Path('/proc')/str(args.tree_producer_pid)
+        if not producer.exists():raise RuntimeError('Specified tree producer is not live at launch')
+        producer_start=producer.joinpath('stat').read_text().split()[21]
+        producer_cmd=producer.joinpath('cmdline').read_bytes()
+        if b'run_genus_codon_trees.py' not in producer_cmd:raise ValueError('Wrong producer process')
     args.output.mkdir(parents=True,exist_ok=True)
     lock=(args.output/'.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    config={'resource_plan_sha256':sha(args.resources),'code_check_sha256':sha(args.code_check),'input_receipt_sha256':sha(args.inputs/'receipt.json'),'information_sha256':sha(args.information),'tree_config_sha256':sha(tree_config),'installed_manifest_sha256':sha(args.installed_manifest),'executable_sha256':sha(exe),'model_source_sha256':sha(model),'script_sha256':sha(Path(__file__)),'tree_helper_sha256':sha(Path(__file__).with_name('audit_genus_codon_trees.py')),'tree_producer_pid':args.tree_producer_pid,'tree_producer_start_ticks':producer_start,'workers':4,'cases':len(info),'model':'MG94xREV global CF3x4','selection_lrt':False,'kill_zero_lengths':'No','interpretation':plan['interpretation']}
+    config={'resource_plan_sha256':sha(args.resources),'code_check_sha256':sha(args.code_check),'input_receipt_sha256':sha(args.inputs/'receipt.json'),'information_sha256':sha(args.information),'tree_config_sha256':sha(tree_config),'installed_manifest_sha256':sha(args.installed_manifest),'executable_sha256':sha(exe),'model_source_sha256':sha(model),'script_sha256':sha(Path(__file__)),'tree_helper_sha256':sha(Path(__file__).with_name('audit_genus_codon_trees.py')),'tree_producer_pid':args.tree_producer_pid,'tree_producer_start_ticks':producer_start,'completed_tree_receipt_sha256_at_launch':complete_tree_hash,'workers':4,'cases':len(info),'model':'MG94xREV global CF3x4','selection_lrt':False,'kill_zero_lengths':'No','interpretation':plan['interpretation']}
     cp=args.output/'config.json'
     if cp.exists() and json.loads(cp.read_text())!=config:raise ValueError('Changed queue configuration')
     cp.write_text(json.dumps(config,indent=2)+'\n')
@@ -104,7 +114,7 @@ def main():
                 done,_=wait(active,timeout=10,return_when=FIRST_COMPLETED)
                 for future in done:completed.append(future.result());del active[future]
             elif pending:
-                if not producer.exists() or producer.joinpath('stat').read_text().split()[21]!=producer_start:raise RuntimeError('Tree producer stopped with unresolved pending cases')
+                if producer is None or not producer.exists() or producer.joinpath('stat').read_text().split()[21]!=producer_start:raise RuntimeError('Tree source has unresolved pending cases and no matching live producer')
                 time.sleep(10)
     if sha(Path(__file__))!=config['script_sha256']:raise ValueError('Producer changed during execution')
     result={'status':'complete_full_genus_mg94_execution_pending_audit','completed_cases':len(completed),'config_sha256':sha(cp),'case_receipts':sorted(completed,key=lambda r:r['case_id']),'interpretation':plan['interpretation']}

@@ -2242,3 +2242,14 @@ These are conditional resampling sensitivities, not new multiplicity-adjusted
 biological tests. Added observed-mean contrast figure and full results in
 docs/conditional-site-coupling.md. Full 1,655 nucleotide trees finished; their
 full bootstrap audit is running.
+
+
+All 1,655 nucleotide trees and corrected MG94 fits are now complete. Full tree
+readback passed 1,655,000 bootstrap trees and 6,721 internal edges. Full MG94
+readback passed 1,655 saved likelihood reevaluations and 18,407 branch records,
+with no numerical review flags (maximum LL discrepancy 9.10e-12; component
+additivity error 2e-10). Separate source binding verifies all expected case IDs
+and exact audited input topologies. Full warning review retains 33 saturated-
+distance, 53 boundary, 83 NNI-convergence and two high-gap cases; categories
+overlap. Memory warnings match exactly all 505 quartet cases. Codon-specific
+saturation, biological eligibility and uncertainty propagation remain pending.

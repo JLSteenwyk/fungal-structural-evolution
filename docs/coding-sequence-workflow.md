@@ -499,7 +499,7 @@ assert flagged == quartets and len(flagged) == 127
 
 ## Full MG94 diagnostic execution
 
-The full 1,655-case information-screened queue is active in
+The full 1,655-case information-screened queue completed in
 `results/cds/genus-mg94-diagnostics-v3`. Four one-CPU workers consume completed
 nucleotide-tree receipts as they become available. All 457 installed HyPhy files
 are checksum-verified at startup. The producer pins the executable, upstream
@@ -542,9 +542,10 @@ The launch command is the argument interface of
 in each case's `config.json`. Do not launch a duplicate while active.
 
 
-For a fresh run on this host, supply the live nucleotide-tree producer PID and
-an unused output directory; the current producer PID was 2749871 at launch.
-The program verifies its identity and records process start ticks.
+For a fresh run on this host, use an unused output directory. A complete tree
+source is checked through its full receipt and all case hashes, without a live
+producer requirement. Only an incomplete source requires --tree-producer-pid;
+the original run used PID 2749871 and recorded its process start ticks.
 
 ```bash
 HYPHY_SOFTWARE_ROOT=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE
@@ -557,7 +558,6 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_genus_mg94_diagnosti
   --hyphy-install "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101-install" \
   --hyphy-source "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101" \
   --installed-manifest results/environments/hyphy-2.5.101-v1/installed_files.json \
-  --tree-producer-pid 2749871 \
   --output results/cds/genus-mg94-diagnostics-v3
 ```
 
@@ -597,3 +597,44 @@ python scripts/audit_genus_mg94_fits.py \
   --install /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install \
   --output results/cds/genus-mg94-audit-full-v3
 ```
+
+
+## Complete tree and MG94 execution/readback
+
+All 1,655 nucleotide searches and all corrected v3 MG94 fits are complete.
+The full nucleotide audit read 1,655,000 bootstrap trees and checked 6,721 ML
+internal edges, exact taxon grids, finite branch lengths, report settings and
+support frequencies. All implemented checks passed. The complete group set
+contains 1,556 code-1 and 99 code-12 cases; the 57 information-screen exclusions
+remain recorded separately. The full review is
+`results/phylogeny/genus-codon-tree-review-full-v2`.
+
+Tree warnings remain material review inputs: 33 cases have saturated nucleotide
+pairwise-distance warnings, 53 parameter-boundary warnings, 83 NNI-convergence
+warnings, and two warn that a sequence has over 50% gaps/ambiguity (Amanita and
+Trichoderma, both marker 5005697at2759). Categories overlap. Memory adjustments
+occur in exactly the 505 four-taxon cases, consistent with the documented
+IQ-TREE slot-allocation explanation. Of 6,721 internal edges, 3,066 have UFB
+below 95 and 1,723 have SH-aLRT below 80; 388 cases contain near-zero edges.
+These are diagnostic summaries, not automatic biological exclusion rules.
+
+The full MG94 readback reloaded and evaluated every saved likelihood without
+optimization. All 1,655 cases and 18,407 branch records passed the implemented
+input-grid, topology, parameter/interval and additive-component checks, with
+zero numerical review flags. Maximum absolute likelihood discrepancy was
+9.10e-12; maximum branch-component additivity error was 2e-10. This verifies
+saved/reported consistency, not an optimum or calibrated uncertainty.
+
+A separate full binding check verifies that every information-screened case
+appears exactly once in both the MG94 completion grid and the independent tree
+audit, and that every MG94 input retains the corresponding audited topology.
+The script is `scripts/verify_genus_mg94_tree_bindings.py`; its receipt is
+`metadata/genus_mg94_full_tree_binding.json`. Full audit receipts, case-level
+review tables and execution summaries are versioned under the respective
+`genus_codon_tree_full_*` and `genus_mg94_full_*` prefixes. Compact receipts
+point to and hash their complete source receipts outside Git.
+
+Codon-specific saturation, recombination, alignment/gene-copy sensitivity,
+component normalization, optimization sensitivity and propagation of topology
+uncertainty still precede selection inference. Completion of these execution
+and readback stages does not establish selection eligibility.
