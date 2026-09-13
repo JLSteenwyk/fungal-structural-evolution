@@ -221,3 +221,38 @@ hours on the existing host, based on observed earlier fit runtimes. Execution,
 full output audit and updated sensitivity tables remain pending. More thorough
 FreeRate fitting does not itself demonstrate that Gamma parameters are globally
 optimal or that either model is adequate.
+
+
+### Consistent optimized comparison queued
+
+The full 288-fit optimization remains running. Once it finishes,
+`scripts/advance_freerate_comparison.py` will invoke the complete diagnostic
+auditor, then the extended `scripts/compare_site_rate_heterogeneity.py`. The
+controller checks the exact producer PID and start time, source/code hashes,
+completion status and expected fit counts. It uses one BLAS/OpenMP thread; the
+resource plan allows 4 GB RAM, 1 GB output and 0.05–1 hour for audit/comparison.
+No new likelihood fitting is launched by this controller.
+
+The comparison requires both `--optimization` and `--optimization-audit`, with
+full coverage of every original marker/model combination. For each fit it uses
+the maximum reported likelihood among the original R4 estimate and four
+explicit refits; ties retain the original. The selected fit supplies both site
+rates and tree branches. The fit summary records original and best diagnostic
+likelihoods, selected source and diagnostic identity. Gamma estimates remain
+the existing baseline. Neither model's global optimum is established, and
+likelihood improvement alone is not evidence of model adequacy.
+
+Before queuing, the default comparison was rerun against the full original
+dataset: all three output tables were byte-identical (288 fits, 66,284 matched
+sites and 36,488 matched branches). The earlier seven-case optimization run
+was rejected as insufficient full-fit scope and created no output. Initial
+gate testing encountered a missing legacy scope key; the check now explicitly
+rejects absent scope. These checks do not validate the optimized comparison's
+full numerical outputs, which remain pending.
+
+Configuration: `metadata/esmfold_freerate_comparison_controller_config.json`.
+Checks: `metadata/esmfold_optimized_comparison_preexecution_checks.json`.
+Controller: `results/phylogeny/freerate-comparison-controller-esmfold-v1`.
+Future full audit: `results/phylogeny/freerate-optimization-all-audit-esmfold-v1`.
+Future comparison: `results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-v1`.
+Independent selected-fit numerical readback remains required after completion.

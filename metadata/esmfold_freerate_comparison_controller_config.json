@@ -1,0 +1,32 @@
+{
+  "producer_pid": 601431,
+  "producer_start_ticks": "180430867",
+  "expected_source_fits": 288,
+  "controller_output": "results/phylogeny/freerate-comparison-controller-esmfold-v1",
+  "optimization": "results/phylogeny/freerate-optimization-all-esmfold-v1",
+  "optimization_audit": "results/phylogeny/freerate-optimization-all-audit-esmfold-v1",
+  "comparison_output": "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-v1",
+  "gamma": "results/phylogeny/paired-site-rates-esmfold-v2",
+  "gamma_audit": "results/phylogeny/paired-site-rates-audit-esmfold-v2",
+  "free": "results/phylogeny/paired-site-rates-freerate-esmfold-v1",
+  "free_audit": "results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-partial-v1",
+  "pinned_files": {
+    "scripts/advance_freerate_comparison.py": "a307932a88231aab1ec51b887b7788da9878f103a670822aaa32ba9beb0200d2",
+    "scripts/advance_paired_path_uncertainty.py": "0cd50009aa6966b802f8952574d4adc9ed44adc927d360d5d531b4ed86bf2055",
+    "scripts/audit_freerate_optimization.py": "13bf4ec833ddec954b912d5270920bea2be97816e906e505a488c73113adcbbc",
+    "scripts/compare_site_rate_heterogeneity.py": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "results/phylogeny/paired-site-rates-esmfold-v2/receipt.json": "fd45bd8ac0ebd6797ba0a6d85ed84ef893b37bc99bd09f70443ce77988744adb",
+    "results/phylogeny/paired-site-rates-audit-esmfold-v2/receipt.json": "b7b086be6f01269b20af0f89d07f00fe4af28b989d57ac23bd3b4a5785a92e1b",
+    "results/phylogeny/paired-site-rates-freerate-esmfold-v1/receipt.json": "cbc22eadfcc76ce032ac1a5c7db7045c91a07a83f83497b2f400a4f98d04cf93",
+    "results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1/receipt.json": "0cedfcae7ef25daf15757b9854d8dd3c85979611d177d9e73b429c2fddae838c",
+    "results/phylogeny/paired-inputs-esmfold-partial-v1/receipt.json": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+    "results/phylogeny/freerate-optimization-all-esmfold-v1/config.json": "864f0f2f595bab9313520f8c4026954b9dada2a54c53ee1bc9caeaede4d5479a"
+  }
+}

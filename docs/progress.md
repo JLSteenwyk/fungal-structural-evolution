@@ -1630,3 +1630,17 @@ sampling sensitivities, not calibrated confidence intervals or evolutionary
 acceleration results. The consistent 1,152-fit FreeRate optimization remains
 live, alongside the broader phylogeny, orthology, domain annotation, prediction
 and structural analysis jobs. Full project completion remains outstanding.
+
+
+### Full optimized model-comparison handoff queued
+
+All major production PIDs were revalidated live. Prepared the matched-rate
+comparison to select the best observed R4 fit consistently across all 288
+marker/model combinations, preserving original fits when better or tied.
+Default-mode full-data compatibility passed with all three tables byte-identical;
+the seven-case partial diagnostic input was explicitly rejected without output.
+Compiled and launched a pinned controller that waits for the exact live full
+optimization process, then audits all 1,152 refits and runs the revised
+comparison. The controller entered its expected waiting state. Full execution,
+selected-fit numerical readback and broader evolutionary analyses remain
+outstanding; the overall goal is active and incomplete.
