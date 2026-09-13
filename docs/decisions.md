@@ -38,3 +38,16 @@ Use an explicitly selected provider and prediction tool for the primary evolutio
 The user confirmed that no existing Google Cloud account is available and asked whether ESMFold would be faster. Cloud authentication is therefore not an available acceleration route for the previously attempted proteome archives. Continue the already authorized individual-model downloads and local ESMFold execution; no account creation or paid cloud provisioning is planned.
 
 At this check, the active ESMFold run had approximately 3,400 completed per-sequence prediction receipts, with median measured inference approximately 1.69 seconds and mean 2.43 seconds for the completed subset. The current production queue is limited to canonical proteins of at most 512 residues; this is a local execution limit, not an ESMFold hard limit. Completed short-sequence timings do not forecast long proteins or the entire multi-million-protein atlas. Individual AlphaFold acquisition and PAE acquisition are also progressing, so replacing already available models with new predictions would duplicate work. Continue complementary retrieval and prediction, with explicit predictor strata and same-sequence controls to avoid confounding clade effects with prediction methods. EBI also documents public FTP bulk subsets; the earlier authentication failure concerned the specific Google-hosted archives attempted, not all AlphaFold access.
+
+## Integrating disjoint ESMFold acquisition cohorts
+
+Combine completed cohorts only after checking identical inference settings apart
+from input receipts and physical GPU identifiers, disjoint model/sequence IDs,
+and unchanged coordinate provenance. Remap the complete union against the fixed
+full-panel sequence matrix. Before sharing qualified encodings, require every
+combined model-provenance, marker-link and residue-mapping row to equal the
+disjoint source union. Retain original encoding paths/checksums and native,
+coordinate, PAE and qualification receipts; the integration receipt explicitly
+describes a derived union, not a new native audit. Reassess marker eligibility
+using the combined full-design grid. Matching settings do not establish absence
+of batch effects, ecological replication, or sequence-independent evidence.

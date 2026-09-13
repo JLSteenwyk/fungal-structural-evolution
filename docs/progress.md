@@ -1963,3 +1963,14 @@ emitted inventory object matches its original source exactly. Started full-panel
 remapping against the fixed profile matrix; combined qualified encodings and
 re-evaluated paired alignments remain pending. The earlier full prediction queue
 continues independently; integration uses its frozen audited subset.
+
+
+Combined ESMFold mapping and qualified encoding integration completed: 10,048
+models, 294 mapped taxa, 10,169 marker–taxon links and 2,083,852 matrix-residue
+links. Every provenance/mapping row matches the disjoint source union. All
+10,048 emitted encoding-summary rows independently match their original source
+fields exactly. The unchanged qualified encodings contain 2,009,344 full-chain
+residues passing six-residue pLDDT70 and directional PAE10. Started combined
+paired alignment preparation on the full 526-taxon, 125-marker design; final
+usable coverage and combined branch inference remain pending. Original ESMFold
+prediction, follow-on accessibility and full-panel PMSF jobs remain active.

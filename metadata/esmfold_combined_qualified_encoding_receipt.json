@@ -1,0 +1,56 @@
+{
+  "status": "complete_union_of_previously_qualified_encodings",
+  "models": 10048,
+  "totals": {
+    "length": 2738370,
+    "valid_states": 2718274,
+    "invalid_states": 20096,
+    "valid_focal_plddt70": 2149672,
+    "valid_feature_plddt70": 2012767,
+    "valid_feature_plddt70_pae10": 2009344
+  },
+  "confidence_stage": "plddt_and_pae",
+  "mapping_receipt_sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+  "inventory_receipt_sha256": "22ea2f92b2e807139e0754f59ee3edd272750563f098a864bee835565d2bfa8c",
+  "source_cohorts": [
+    {
+      "mapping": "results/structural_markers/esmfold-partial-v1",
+      "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+      "encodings": "results/structural_alphabet/audited-esmfold-partial-v1",
+      "encoding_receipt_sha256": "f79de3d8752d9f6736d0acc19c205cb20f2dacf3146323044876799959231ffe",
+      "models": 5121,
+      "native_config_sha256": "ba6a61c04c32032d09f46499d0009d3619e5cb032f1d9019342e74ee21de6530",
+      "coordinate_audit_receipt_sha256": "a35c5f7f98b8d7e219e9cc3c9c10752c3ab0724c1a5626959cc680824ee100c9",
+      "pae_receipt_sha256": "b83b8d840861c03216174e96d167467bd386731bf5a0f94e3d08e67ca1c7bb10"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+      "encodings": "results/structural_alphabet/audited-esmfold-followon-v1",
+      "encoding_receipt_sha256": "f86547a352f9148cd5f5ef3860d25205db6c6a25658cedcc6843a135491d4a18",
+      "models": 4252,
+      "native_config_sha256": "0c8325bf3c7221fa69a2c84ddf287e91857c0a4c4bfeb44b392fe9a95c38f2cf",
+      "coordinate_audit_receipt_sha256": "8172c8444f42e2478a3d2bae2ae6d3392695f94a7c11db9c0feb492722bd6582",
+      "pae_receipt_sha256": "d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f"
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+      "encodings": "results/structural_alphabet/audited-esmfold-ecology-v1",
+      "encoding_receipt_sha256": "ca94b9e8d28dc5750a04e5d09182b6e11950fe25e9d486d8ed85c3ba3f794cdd",
+      "models": 675,
+      "native_config_sha256": "cfbfd3ad8403ef87429ca6a82e2ea2e77a3a719afd123c56945aae8533f8e482",
+      "coordinate_audit_receipt_sha256": "1e6c781c9012dc858fe88ca77013e688f3f65cfd421d6275d459291f302f8e13",
+      "pae_receipt_sha256": "baafff96954d1fc55e7ed9cdbff428a20bc5ab49878c200534e9d978c09497ab"
+    }
+  ],
+  "verified_mapping_union_rows": {
+    "marker_structure_links.tsv": 10169,
+    "matrix_to_structure_residues.tsv.gz": 2083852
+  },
+  "script_sha256": "c2aa4c609abb4915a69c524b09646fa10a5e05831882699e2a0c89d9e42f09a2",
+  "artifacts": {
+    "model_summary.tsv": "9e68182419f8583584587776a105ea436f3d19783a77b5abf30b6bdb52cfc6ff"
+  },
+  "interpretation": "Unchanged encodings reference original audited arrays and retain per-cohort native, coordinate, PAE and qualification receipts. Every combined mapping/provenance row equals the disjoint source union. This is a derived integration receipt, not a new coordinate or PAE audit. Shared settings do not exclude prediction batch effects."
+}
