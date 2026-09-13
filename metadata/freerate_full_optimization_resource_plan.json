@@ -1,0 +1,15 @@
+{
+  "scope": "All 288 local comparison fits, including originally unflagged fits; two starting states \u00d7 two optimizers = 1152 diagnostic fits",
+  "workers": 4,
+  "threads_per_fit": 1,
+  "memory_gb_plan": 8,
+  "disk_gb_plan": 10,
+  "runtime_hours_estimate": [
+    0.5,
+    8
+  ],
+  "basis": "Original 288 FreeRate fits took approximately 18 minutes; explicit-start tight-tolerance refits add work. Seven-case 28-fit diagnostics finished in minutes. Existing authorized host, no paid resources.",
+  "source_comparison_receipt_sha256": "65494737c6b3596c4ea6a0b360ae9065ba96ea674d883bce1596077fab32acc1",
+  "script_sha256": "cca4f577b97091883ce91a09eff044b32c67b2cf7830b83b418421eed81cb296",
+  "output": "results/phylogeny/freerate-optimization-all-esmfold-v1"
+}

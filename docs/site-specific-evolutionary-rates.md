@@ -190,3 +190,34 @@ OPENBLAS_NUM_THREADS=1 python scripts/audit_freerate_optimization.py --diagnosti
 Resource planning allowed four single-thread workers, 8 GB RAM, 1 GB disk and
 0.05–2 hours on the existing host. Full outputs stay outside Git; configuration,
 source review, receipts and all diagnostic summaries are in `metadata/`.
+
+
+### Consistent full FreeRate optimization in progress
+
+The same four diagnostic refits are now running for every one of the 288
+local comparison fits: 1,152 requests across all 72 markers, including the
+281 fits that did not trigger the original likelihood flag. The script's
+`--all-fits` option changes only the selected fit population. Original results
+and the seven-case diagnostic remain preserved in their earlier output paths.
+
+The entire request grid was checked before interpreting outputs. Every
+marker/model/start/optimizer combination is present exactly once, all original
+matrix/frequency settings, alignments, seeds and resource settings match, and
+all starting weights and weighted rates are normalized. The prior 28 diagnostic
+requests are reproduced exactly except for their output prefixes. No source
+report had a rounded zero category weight; rounded zero rate values use the
+same documented 1e-6 floor. The checksum of the full configuration is tracked
+in `metadata/esmfold_freerate_full_optimization_config_readback.json`; the full
+configuration remains with the large output artifacts.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/refit_flagged_freerate_models.py --all-fits --comparison results/phylogeny/paired-rate-heterogeneity-esmfold-v1 --gamma results/phylogeny/paired-site-rates-esmfold-v2 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --output results/phylogeny/freerate-optimization-all-esmfold-v1
+# After the complete run receipt exists:
+OPENBLAS_NUM_THREADS=1 python scripts/audit_freerate_optimization.py --diagnostics results/phylogeny/freerate-optimization-all-esmfold-v1 --free results/phylogeny/paired-site-rates-freerate-esmfold-v1 --output results/phylogeny/freerate-optimization-all-audit-esmfold-v1
+```
+
+Planning allows four single-thread workers, 8 GB RAM, 10 GB disk and 0.5–8
+hours on the existing host, based on observed earlier fit runtimes. Execution,
+full output audit and updated sensitivity tables remain pending. More thorough
+FreeRate fitting does not itself demonstrate that Gamma parameters are globally
+optimal or that either model is adequate.

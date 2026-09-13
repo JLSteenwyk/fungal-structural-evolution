@@ -1563,3 +1563,13 @@ case improved by 38.1536 log units. This supports initialization/optimizer
 sensitivity, not a biological reversal. Original outputs remain preserved and
 the diagnostic best-fit table is separate. Consistent full-run optimization,
 updated sensitivity inference and the broader research goal remain outstanding.
+
+
+### Consistent optimization launched across all local FreeRate fits
+
+Extended the exact four-refit procedure to every one of the 288 model fits,
+creating 1,152 requests. The full request grid and retained settings passed
+readback; all 28 earlier diagnostic requests match except output location.
+Initial fits are completing. Full execution, output audit and revised model
+sensitivity remain pending. Resampling is also still live with 209/216 batches
+complete at the launch check. The overall goal remains active and incomplete.

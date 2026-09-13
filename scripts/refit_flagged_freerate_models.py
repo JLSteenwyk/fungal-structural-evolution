@@ -20,13 +20,16 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     for name in ['comparison', 'gamma', 'free', 'output']:
         p.add_argument('--' + name, type=Path, required=True)
+    p.add_argument('--all-fits', action='store_true', help='Apply the same four refits to every comparison fit')
     a = p.parse_args()
     comparison = checked_receipt(a.comparison)
     for name in ['gamma', 'free']:
         if comparison['source_receipts'][name] != sha(getattr(a, name) / 'receipt.json'):
             raise ValueError('Source runs differ')
-    rows = [r for r in read_table(a.comparison / 'fit_summary.tsv')
-            if r['freerate_ll_lower_by_more_than_point_one'] == 'True']
+    all_rows = read_table(a.comparison / 'fit_summary.tsv')
+    rows = [r for r in all_rows if a.all_fits or r['freerate_ll_lower_by_more_than_point_one'] == 'True']
+    if len({(r['marker'], r['fit']) for r in rows}) != len(rows) or len(all_rows) != comparison['fits']:
+        raise ValueError('Duplicate or incomplete comparison fit grid')
     if not rows:
         raise ValueError('No flagged fits')
     pins = {}; requests = []
@@ -88,6 +91,9 @@ def main():
               'workers': 4, 'threads_per_fit': 1, 'memory_per_fit_gb': 2,
               'interpretation': 'Diagnostic refits of every FreeRate fit more than 0.1 log units below Gamma. Two starting points from reported category weights/rates and corresponding fitted trees; floor rounded zero rates at 1e-6 and normalize. Starts approximate printed estimates, not exact parameter replay. Both EM and 2-BFGS optimize from supplied values at epsilon 1e-6; no topology search. No automatic replacement or calibrated inference.'}
     cp = a.output / 'config.json'
+    config['scope'] = 'all_comparison_fits' if a.all_fits else 'lower_likelihood_flagged_fits'
+    if a.all_fits:
+        config['interpretation'] = config['interpretation'].replace('Diagnostic refits of every FreeRate fit more than 0.1 log units below Gamma.', 'Consistent four-refit sensitivity for every FreeRate fit in the completed comparison, including originally unflagged fits.')
     if cp.exists() and json.loads(cp.read_text()) != config:
         raise ValueError('Configuration changed; use a new output')
     cp.write_text(json.dumps(config, indent=2) + '\n')
@@ -128,7 +134,7 @@ def main():
                for r in sorted(results, key=lambda r: r['name'])]
     write_table(a.output / 'fit_summary.tsv', summary)
     result = {'status': 'complete_flagged_freerate_diagnostic_execution', 'config_sha256': config_hash,
-              'flagged_source_fits': len(rows), 'diagnostic_fits': len(results),
+              'source_fits': len(rows), 'flagged_source_fits': sum(r['freerate_ll_lower_by_more_than_point_one'] == 'True' for r in rows), 'diagnostic_fits': len(results),
               'artifacts': {'fit_summary.tsv': sha(a.output / 'fit_summary.tsv')},
               'fit_receipts': {r['name']: sha(a.output / r['name'] / 'receipt.json') for r in results},
               'interpretation': config['interpretation']}
