@@ -1,0 +1,26 @@
+{
+  "status": "prelaunch_full_genus_mg94_diagnostic_plan",
+  "cases": 1655,
+  "workers": 4,
+  "threads_per_job": 1,
+  "planning_memory_gb_per_job": 2,
+  "output_allowance_gb": 20,
+  "planning_hours": [
+    2,
+    168
+  ],
+  "model": "Global MG94xREV, CF3x4, fixed per-case nucleotide topology, shared omega, profile confidence interval",
+  "lrt": "No",
+  "genetic_codes": {
+    "1": "Universal",
+    "12": "Alt-Yeast-Nuclear"
+  },
+  "source_input_receipt_sha256": "e513c9ab7a4e3b422d5721e72b7927d01a3473736e2b8724c7c8a7da00678eb5",
+  "information_table_sha256": "d2c74c96b2ed08febce6a7306cb3fa60295fabf38af7d9ff2b904dc1efd07970",
+  "code_check_sha256": "4bca0a712db8adff8ee38aee9014dfadf6fce89bd16625760b1e15254b4974d1",
+  "interpretation": "Full eligible diagnostic queue, not a pilot. Starts cases as nucleotide-tree execution receipts become available. Full independent tree and codon output audits, convergence/alignment/copy/recombination/saturation review remain required before interpretation. Component branch lengths are synonymous/nonsynonymous substitutions per site, not automatically conventional dS/dN per synonymous/nonsynonymous site. No selection test. Runtime and memory are planning allowances, not measured bounds.",
+  "cost": "Existing authorized local host; no new charges",
+  "kill_zero_lengths": "No",
+  "supersedes": "results/cds/genus-mg94-diagnostics-v2",
+  "reason": "Preserve all input internal branches; validate exported topology and full branch identity grid."
+}

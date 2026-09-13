@@ -500,7 +500,7 @@ assert flagged == quartets and len(flagged) == 127
 ## Full MG94 diagnostic execution
 
 The full 1,655-case information-screened queue is active in
-`results/cds/genus-mg94-diagnostics-v2`. Four one-CPU workers consume completed
+`results/cds/genus-mg94-diagnostics-v3`. Four one-CPU workers consume completed
 nucleotide-tree receipts as they become available. All 457 installed HyPhy files
 are checksum-verified at startup. The producer pins the executable, upstream
 `tests/hbltests/libv3/support/FitMG94.bf`, inputs, tree configuration and scripts.
@@ -534,9 +534,9 @@ observation records 73 completed cases while the queue remains active. See
 `metadata/genus_mg94_{resource_plan,execution_config,execution_observation}.json`.
 
 The initial `v1` launch failed before loading the model because generic HBL
-assignments require the `ENV=` argument. Its logs are preserved. The corrected
-`v2` passes a deterministic per-case seed through `ENV=RANDOM_SEED=...;` and has
-confirmed completed fits. No failed attempt is counted as a biological result.
+assignments require the `ENV=` argument. Its logs are preserved. The initially corrected
+`v2` passed a deterministic per-case seed through `ENV=RANDOM_SEED=...;` and produced
+completed fits before the later topology correction described below. No failed attempt is counted as a biological result.
 The launch command is the argument interface of
 `scripts/run_genus_mg94_diagnostics.py`; exact per-case commands are preserved
 in each case's `config.json`. Do not launch a duplicate while active.
@@ -552,11 +552,48 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/run_genus_mg94_diagnosti
   --inputs results/cds/genus-codon-diagnostic-inputs-v1 \
   --trees results/phylogeny/genus-codon-trees-v1 \
   --information metadata/genus_codon_tree_information.tsv \
-  --resources metadata/genus_mg94_resource_plan.json \
+  --resources metadata/genus_mg94_preserved_topology_resource_plan.json \
   --code-check metadata/hyphy_fungal_genetic_code_check.json \
   --hyphy-install "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101-install" \
   --hyphy-source "$HYPHY_SOFTWARE_ROOT/hyphy-2.5.101" \
   --installed-manifest results/environments/hyphy-2.5.101-v1/installed_files.json \
   --tree-producer-pid 2749871 \
-  --output results/cds/genus-mg94-diagnostics-v2
+  --output results/cds/genus-mg94-diagnostics-v3
+```
+
+
+### Topology-preservation correction and saved-fit readback
+
+The v2 queue was retired cleanly after 433 completed fits. Independent readback
+found that HyPhy's default `--kill-zero-lengths Yes` removed internal branches
+estimated as zero during its preliminary nucleotide GTR fit: 48 of the 433
+cases had fewer internal branches than their inputs. This violated the intended
+fixed branch grid. All v2 outputs and the failed audit are preserved, with
+case counts in `metadata/genus_mg94_v2_retirement_receipt.json`; none is mixed
+into the corrected queue. Earlier execution observations are historical.
+
+The full v3 queue explicitly passes `--kill-zero-lengths No`. Its producer now
+checks both exported topology splits and the exact named branch grid before
+recording case completion. The upstream option is defined in
+`SelectionAnalyses/modules/shared-load-file.bf` lines 496–534 of pinned HyPhy
+2.5.101. No HyPhy library or executable was changed. New resource/configuration
+receipts use the `genus_mg94_preserved_topology_` prefix. The queue remains
+1,655 cases; this is a full correction, not a reduced experiment.
+
+`scripts/audit_genus_mg94_fits.py` independently reloads every saved likelihood
+function in a fresh one-CPU HyPhy process and evaluates it without optimization.
+It verifies case/configuration/artifact hashes, model/code options, codon
+coverage, taxa, topology, named branch components, saved omega and profile
+interval containment. Numerical discrepancies are retained as review flags.
+The first v3 snapshot passed for 41 cases and 389 branches: maximum absolute
+likelihood discrepancy 5.46e-12 and component additivity error 2e-10; no numerical
+review flags were triggered. This verifies output consistency, not optimization
+convergence, profile-interval calibration or biological eligibility. A full
+readback remains necessary after the complete queue finishes.
+
+```bash
+python scripts/audit_genus_mg94_fits.py \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --install /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install \
+  --output results/cds/genus-mg94-audit-full-v3
 ```

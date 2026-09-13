@@ -3,6 +3,7 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import fcntl
+import io
 import hashlib
 import json
 import math
@@ -45,7 +46,7 @@ def main():
     if b'run_genus_codon_trees.py' not in producer_cmd:raise ValueError('Wrong producer process')
     args.output.mkdir(parents=True,exist_ok=True)
     lock=(args.output/'.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    config={'resource_plan_sha256':sha(args.resources),'code_check_sha256':sha(args.code_check),'input_receipt_sha256':sha(args.inputs/'receipt.json'),'information_sha256':sha(args.information),'tree_config_sha256':sha(tree_config),'installed_manifest_sha256':sha(args.installed_manifest),'executable_sha256':sha(exe),'model_source_sha256':sha(model),'script_sha256':sha(Path(__file__)),'tree_helper_sha256':sha(Path(__file__).with_name('audit_genus_codon_trees.py')),'tree_producer_pid':args.tree_producer_pid,'tree_producer_start_ticks':producer_start,'workers':4,'cases':len(info),'model':'MG94xREV global CF3x4','selection_lrt':False,'interpretation':plan['interpretation']}
+    config={'resource_plan_sha256':sha(args.resources),'code_check_sha256':sha(args.code_check),'input_receipt_sha256':sha(args.inputs/'receipt.json'),'information_sha256':sha(args.information),'tree_config_sha256':sha(tree_config),'installed_manifest_sha256':sha(args.installed_manifest),'executable_sha256':sha(exe),'model_source_sha256':sha(model),'script_sha256':sha(Path(__file__)),'tree_helper_sha256':sha(Path(__file__).with_name('audit_genus_codon_trees.py')),'tree_producer_pid':args.tree_producer_pid,'tree_producer_start_ticks':producer_start,'workers':4,'cases':len(info),'model':'MG94xREV global CF3x4','selection_lrt':False,'kill_zero_lengths':'No','interpretation':plan['interpretation']}
     cp=args.output/'config.json'
     if cp.exists() and json.loads(cp.read_text())!=config:raise ValueError('Changed queue configuration')
     cp.write_text(json.dumps(config,indent=2)+'\n')
@@ -66,7 +67,7 @@ def main():
         if set(split_map(Phylo.read(treefile,'newick'),taxa))!=original_splits:raise ValueError('Topology changed during label removal')
         seed=int(hashlib.sha256(case.encode()).hexdigest()[:8],16)%2147483646+1
         code=code_check['mapping'][cases[case]['translation_table']]
-        command=[str(exe.resolve()),'CPU=1','ENV=RANDOM_SEED='+str(seed)+';',str(model.resolve()),'--code',code,'--alignment',str(alignment.resolve()),'--tree',str(treefile.resolve()),'--type','global','--frequencies','CF3x4','--lrt','No','--output',str((folder/'fit.json').resolve()),'--save-fit',str((folder/'fit.bf').resolve())]
+        command=[str(exe.resolve()),'CPU=1','ENV=RANDOM_SEED='+str(seed)+';',str(model.resolve()),'--code',code,'--alignment',str(alignment.resolve()),'--tree',str(treefile.resolve()),'--type','global','--frequencies','CF3x4','--lrt','No','--kill-zero-lengths','No','--output',str((folder/'fit.json').resolve()),'--save-fit',str((folder/'fit.bf').resolve())]
         rc={'command':command,'parent_config_sha256':sha(cp),'source_tree_receipt_sha256':sha(source/'receipt.json'),'alignment_sha256':sha(alignment),'tree_sha256':sha(treefile),'translation_table':cases[case]['translation_table'],'hyphy_code':code,'marker_copy_caveat':cases[case]['marker_copy_caveat'],'independent_tree_audit':'required_before_interpretation'}
         rp=folder/'config.json'
         if rp.exists() and json.loads(rp.read_text())!=rc:raise ValueError('Changed case configuration')
@@ -83,7 +84,10 @@ def main():
         result=json.loads((folder/'fit.json').read_text());fit=result['fits']['Standard MG94']
         if result['input']['number of sequences']!=len(taxa) or result['input']['number of sites']!=int(cases[case]['retained_codon_columns']):raise ValueError('Fit input dimensions differ')
         if not math.isfinite(fit['Log Likelihood']):raise ValueError('Nonfinite fit')
+        exported=Phylo.read(io.StringIO(result['input']['trees']['0']+';'),'newick')
+        if set(split_map(exported,taxa))!=original_splits:raise ValueError('HyPhy changed the input topology')
         values=result['branch attributes']['0']
+        if set(values)!={n.name for n in tree.find_clades() if n is not tree.root}:raise ValueError('HyPhy changed the branch identity grid')
         for value in values.values():
             for label in ['Standard MG94','synonymous','nonsynonymous']:
                 if not math.isfinite(value[label]) or value[label]<0:raise ValueError('Invalid fitted branch component')

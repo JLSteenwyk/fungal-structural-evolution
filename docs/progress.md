@@ -2206,3 +2206,14 @@ execution and remains archived. Saved likelihood functions, JSON reports and
 logs support independent review. Full tree/fit audits, branch-component scaling,
 profile-interval behavior and biological eligibility are still pending. No LRT
 or positive-selection result is claimed.
+
+
+MG94 audit caught and corrected a branch-grid violation: HyPhy's default
+zero-branch reduction collapsed internal edges in 48 of 433 completed v2 cases.
+Stopped that producer cleanly, preserved all outputs and launched the full
+1,655-case v3 queue with explicit --kill-zero-lengths No plus exported-topology
+and branch-identity checks. First corrected snapshot: 41 cases/389 branches
+passed saved-likelihood reevaluation, codon-grid and numerical-report readback;
+maximum likelihood discrepancy 5.46e-12, component additivity error 2e-10.
+No numerical flags in this snapshot; full audit and biological eligibility
+remain pending. Structure predictions and nucleotide-tree searches continue.
