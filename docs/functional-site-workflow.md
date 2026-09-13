@@ -47,3 +47,56 @@ immutable result directory. The deduplicated candidate index, receipt and
 independent readback are versioned as `metadata/pfam_active_site_*`. This first
 projection covers the complete marker annotation set; whole-proteome extension
 awaits the complete domain searches.
+
+## Structural and paired-alignment joins completed
+
+All projected correspondences, not only conserved candidates, were joined
+separately to the expanded AlphaFold and frozen local ESMFold snapshots.
+Reference-pattern duplicates were aggregated to 16,849 hit/profile-site
+identities while retaining expected residues, reference accessions and all
+pattern statuses. Protein links yield the same 17,105 taxon–marker–site rows
+for each source, including gapped, nonconserved and ambiguous correspondences.
+Keeping these rows avoids conditioning future analyses of functional-site
+change entirely on present-day residue conservation.
+
+The joins distinguish model availability, a mapped protein coordinate, valid
+native structural features, joint six-residue confidence and actual observation
+in the emitted paired phylogenetic alignment. Invalid native states remain
+unobserved. A site can have structural confidence but lie outside the retained
+marker matrix or an eligible paired alignment; these cases remain explicit.
+
+AlphaFold contributes 2,713 observed rows across 244 taxa and 21 markers,
+including 1,119 conserved candidates. ESMFold contributes 1,189 observed rows
+across 191 taxa and 13 markers, including 139 conserved candidates. The union
+contains 3,902 observations across 399 taxa, with no shared observed
+site/taxon/marker identities between these acquisition snapshots. This is
+coverage of homologous correspondences, not 3,902 independent evolutionary events.
+
+Independent readback verified the complete identical row universe, unique
+identities, joint confidence and all observed amino-acid/3Di characters at their
+reported paired-alignment columns. Three tests cover retention of nonconserved
+and gapped sites, reference-pattern deduplication and rejection of conflicting
+projections. Full result tables retain unavailable and excluded sites; versioned
+`metadata/{gdm,esmfold}_functional_sites_paired.tsv` files contain the observed
+subsets, and receipts pin the full outputs. Sources remain separate for inference.
+
+```bash
+python scripts/link_functional_sites_structures.py \
+  --functional-sites results/functional_sites/pfam-marker-v1 \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --encodings results/structural_alphabet/audited-gdm-expanded-v1 \
+  --paired results/phylogeny/paired-inputs-gdm-expanded-v1 \
+  --source-label AlphaFold --output results/functional_sites/gdm-linked-v1
+python scripts/link_functional_sites_structures.py \
+  --functional-sites results/functional_sites/pfam-marker-v1 \
+  --snapshot results/structural_markers/esmfold-partial-v1 \
+  --encodings results/structural_alphabet/audited-esmfold-partial-v1 \
+  --paired results/phylogeny/paired-inputs-esmfold-partial-v1 \
+  --source-label ESMFold --output results/functional_sites/esmfold-linked-v1
+python -m unittest discover -s tests -p test_functional_site_join.py
+```
+
+Branch localization, ancestral states, tests against matched background sites,
+functional enrichment and experimental interpretation remain pending. The
+joins provide checked coordinates and confidence; they do not themselves
+establish structural acceleration, positive selection or catalytic activity.

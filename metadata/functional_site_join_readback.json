@@ -1,0 +1,34 @@
+{
+  "status": "complete_two_source_functional_site_join_readback",
+  "sources": [
+    {
+      "source": "gdm",
+      "rows": 17105,
+      "paired_observed": 2713,
+      "conserved_candidates": 1119,
+      "taxa": 244,
+      "markers": 21,
+      "receipt_sha256": "ae1c9bb5b3bb5f6f314c8484b1852706713b19cdfef78cea7d445aeac914209f"
+    },
+    {
+      "source": "esmfold",
+      "rows": 17105,
+      "paired_observed": 1189,
+      "conserved_candidates": 139,
+      "taxa": 191,
+      "markers": 13,
+      "receipt_sha256": "b6b2a03202a3fd767cc0b0ffc026865cd0eb03f7e0d4862d83512663c36b78d1"
+    }
+  ],
+  "identical_full_site_universe": true,
+  "union_observed_taxon_marker_site_rows": 3902,
+  "shared_observed_taxon_marker_site_rows": 0,
+  "union_observed_taxa": 399,
+  "checks": [
+    "Complete identical site/taxon/marker universe for both sources",
+    "No repeated source-specific identities",
+    "Every observed row passes native/context confidence",
+    "Every observed row agrees with emitted AA and 3Di FASTA at its paired column"
+  ],
+  "interpretation": "Union of source-specific observed site correspondences, not independent evolutionary changes. All nonconserved and gapped sites retained in full result tables; sources are not pooled for inference."
+}

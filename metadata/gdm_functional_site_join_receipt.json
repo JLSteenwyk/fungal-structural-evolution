@@ -1,0 +1,40 @@
+{
+  "status": "complete_functional_site_structure_alignment_join",
+  "source_label": "AlphaFold",
+  "source_receipts": {
+    "functional_sites": {
+      "path": "results/functional_sites/pfam-marker-v1",
+      "sha256": "36912aa788496fe3b328884cbaa634df35e87876b1fe84b4b9ad89de0d10ba9f"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/gdm-expanded-v1",
+      "sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d"
+    },
+    "encodings": {
+      "path": "results/structural_alphabet/audited-gdm-expanded-v1",
+      "sha256": "78ee6c429a85f08d8de69d31e6e60a814086c895f16723c2ebda4e96afdd0a45"
+    },
+    "paired": {
+      "path": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4"
+    }
+  },
+  "script_sha256": "32be288981a04fe8381101d2b86336c9268458d7b7c3ba69226735375dd32ac0",
+  "unique_profile_sites": 16849,
+  "taxon_marker_site_rows": 17105,
+  "site_status_counts": {
+    "no_model_in_snapshot": 10843,
+    "gap_in_functional_profile_alignment": 3272,
+    "mapped_to_marker_matrix": 2846,
+    "model_site_outside_marker_matrix": 144
+  },
+  "paired_observed_rows": 2713,
+  "paired_observed_conserved_candidate_rows": 1119,
+  "paired_observed_other_correspondence_rows": 1594,
+  "paired_observed_taxa": 244,
+  "paired_observed_markers": 21,
+  "interpretation": "All projected functional correspondences retained, including nonconserved/gapped patterns and overlap ambiguity. One prediction source per output. Candidate status is separate from structure availability, native feature confidence and actual observation in matched AA/3Di alignments. Repeated homologous sites across taxa are not independent evolutionary events. No catalytic validation, branch effect, selection or causal claim.",
+  "artifacts": {
+    "site_structure_links.tsv": "3ac2fb33b3d0de97768342e5b65c2de42b384f6b38f0a2c88f40e89579164757"
+  }
+}

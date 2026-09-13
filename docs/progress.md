@@ -662,3 +662,20 @@ marker counts, exact assignments and launch configuration are now versioned.
 The previous goal turn advanced the executable lineage-QC pipeline; this turn
 completes functional-site mapping and validates the transition to QC execution.
 The overall research goal remains active and incomplete.
+
+### Functional sites linked to structures and paired phylogenetic characters
+
+Completed both predictor-specific joins, retaining all conserved, nonconserved,
+gapped and overlap-ambiguous Pfam correspondences. Each source has the same
+17,105 taxon–marker–site universe. There are 2,713 observed AlphaFold rows and
+1,189 observed local rows in the actual paired alignments, spanning 399 taxa in
+union. Of these, 1,258 are flagged as conserved candidates. The counts describe
+coverage and repeated homologous-site observations, not independent changes.
+
+All 3,902 observed rows passed independent native-confidence and emitted
+AA/3Di-character readback. Tests passed for keeping nonconserved/gapped rows,
+deduplicating reference annotations and rejecting conflicting projections.
+Complete tables remain outside Git, with receipts and observed subsets versioned.
+Branch localization and site-specific evolutionary tests remain outstanding.
+The previous goal turn completed the initial site projection; this turn advances
+its connection to the structural and phylogenetic data. Overall goal stays active.
