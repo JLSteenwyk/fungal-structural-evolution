@@ -1,0 +1,21 @@
+{
+  "status": "complete_independently_checked_mg94_opportunity_normalization",
+  "cases": 1655,
+  "branches": 18407,
+  "sense_codon_opportunity_checks": 244,
+  "per_fit_independent_checks": 1655,
+  "source_fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "source_audit_sha256": "a1dc321fc845d924a8b1a81bf83923f2439d1e918652d018ef19db998435c48a",
+  "source_definition_sha256": "fd179f390510152554a8a58ffa7537d99d04c6e20822dd8a10773f0795f4c1f9",
+  "plan_sha256": "ee6b89dc0256b6ce85fcb85b2bdff203f5a273d7e558d05136c3736184600931",
+  "script_sha256": "5066aad360e8eceeb8f4fe77bf58d353aa97eb400cedd0c81428c0822aecf9fe",
+  "artifacts": {
+    "check_opportunities.bf": "4def0d8676369478f511bddddf542d9c8d4f59138d8f8af734fca8f095052900",
+    "check_opportunities.log": "9df6c8bb082e486c61420f6ef1f4accd379d179741811ad24ecb6a6d6eac5762",
+    "case_normalization.tsv": "26e4ab1877e6b2a73e371f5b1527c6871dc3e03417518492b372d137ae77b36c",
+    "normalized_branches.tsv": "809d00f6c2d2a26383501bb8faeb0f93897ae24d31d8c2f9cc539c192cf4ebf5"
+  },
+  "interpretation": "Derived branch distances under an explicit upstream site-opportunity convention. No new optimization, saturation threshold, time calibration, branch-specific omega or selection test. Normalized dN/dS need not equal fitted omega because opportunity counting does not use the fitted mutation-rate weights.",
+  "full_receipt_path": "results/cds/genus-mg94-normalized-branches-v2/receipt.json",
+  "full_receipt_sha256": "573b330eb9dac840e9f5dfb10999fd0147bdfa78e85d61b65f55eac47f67c017"
+}

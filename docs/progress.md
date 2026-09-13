@@ -2261,3 +2261,16 @@ within-marker pair records checked (686,583 accepted, 17,448 excluded), plus
 paired branch fits remain running, so fitted-path benchmarking remains pending.
 Also pinned upstream FitMG94's equilibrium-opportunity normalization formula
 for dS/dN; this source review does not yet produce normalized divergence tables.
+
+
+Completed site-opportunity normalization for all 1,655 MG94 fits and 18,407
+branches. Independent checks first detected an upstream stop-compaction defect:
+GTT/TAC/TCT S/NS entries were overwritten in both codes (12 scalar errors).
+An isolated one-line correction passed all 244 opportunity assertions and exact
+patch-reproduction checks; installed libraries and fitted models remain intact.
+Every case's frequency-weighted opportunities independently agree between Python
+and HyPhy (maximum discrepancy 2.23e-15), and all normalized branch outputs passed
+inverse readback. Three regression tests pass. Very large dS estimates occur
+(maximum 99.09); identifiability/saturation and alignment review remain essential
+before selection inference. Normalization uses the documented equal-alternative
+opportunity convention, not a new branch-specific omega model.

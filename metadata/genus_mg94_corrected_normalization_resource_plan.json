@@ -1,0 +1,22 @@
+{
+  "status": "prelaunch_full_mg94_opportunity_normalization",
+  "cases": 1655,
+  "branches": 18407,
+  "workers": 2,
+  "threads_per_worker": 1,
+  "memory_allowance_gb": 4,
+  "output_allowance_gb": 1,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "source_fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "source_audit_sha256": "a1dc321fc845d924a8b1a81bf83923f2439d1e918652d018ef19db998435c48a",
+  "source_definition_sha256": "fd179f390510152554a8a58ffa7537d99d04c6e20822dd8a10773f0795f4c1f9",
+  "binding_sha256": "59173996e88ab7fbff1910708d66f3ab75b01a53f0e7b9989474db41a1497c06",
+  "method": "Use pinned upstream equal-alternative opportunity convention. Independently enumerate opportunities with Biopython; verify every sense-codon S/NS opportunity in HyPhy for both codes. Read all saved equilibrium-frequency vectors and verify frequency-weighted S/NS independently in a fresh HyPhy process for every fit. Normalize all audited branch components. Use the isolated stop-compaction correction, not the defective original helper.",
+  "interpretation": "Derived branch distances under an explicit upstream site-opportunity convention. No new optimization, saturation threshold, time calibration, branch-specific omega or selection test. Normalized dN/dS need not equal fitted omega because opportunity counting does not use the fitted mutation-rate weights.",
+  "cost": "Existing authorized local host; no new charges",
+  "corrected_helper_sha256": "ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5",
+  "correction_receipt_sha256": "4929140aeb706981313078b1f5fd5c4238659639fdeda842fde93ef636d2362e"
+}

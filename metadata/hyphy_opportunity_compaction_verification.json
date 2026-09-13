@@ -1,0 +1,16 @@
+{
+  "status": "passed_corrected_opportunity_vectors_and_patch_reproduction",
+  "original_defect_receipt_sha256": "4929140aeb706981313078b1f5fd5c4238659639fdeda842fde93ef636d2362e",
+  "corrected_helper_sha256": "ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5",
+  "patch_sha256": "c9f1772a8ab72b6ba27c354f4e3bffcc81dffa1c2676de174bdee192771a47a6",
+  "sense_codons_per_code": 61,
+  "codes": [
+    1,
+    12
+  ],
+  "independent_S_NS_assertions": 244,
+  "runtime_check_script_sha256": "4def0d8676369478f511bddddf542d9c8d4f59138d8f8af734fca8f095052900",
+  "runtime_check_log_sha256": "9df6c8bb082e486c61420f6ef1f4accd379d179741811ad24ecb6a6d6eac5762",
+  "verification": "Every corrected HyPhy sense-codon opportunity matches independent Biopython enumeration. Patch applied with zero fuzz to a temporary original helper reproduces the isolated corrected helper exactly. Original installed helper unchanged.",
+  "scope": "Validates opportunity vectors and correction reproducibility, not fitted parameters or saturation/selection eligibility."
+}

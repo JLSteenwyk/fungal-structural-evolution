@@ -1,0 +1,19 @@
+{
+  "status": "identified_and_isolated_stop_compaction_defect_pending_corrected_runtime_check",
+  "hyphy_version": "2.5.101",
+  "original_helper_sha256": "fbdf7f36e5e8aa68d51bd1645ba8f26ab1b535fbc6d2e42e2530579fbdc22e83",
+  "corrected_helper_sha256": "ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5",
+  "comparison_sha256": "95e21978551b325724054132f498a0a370271193d4729ba97757639d15b663ad",
+  "mismatched_entries": 12,
+  "affected_sense_codons": [
+    "GTT",
+    "TAC",
+    "TCT"
+  ],
+  "codes": [
+    1,
+    12
+  ],
+  "correction": "Continue past stop codons after increasing the offset; do not assign their zero site counts to the preceding sense-codon index. One inserted continue statement in isolated helper; installed files unchanged.",
+  "scope": "Defect in opportunity-vector compaction used for post-fit site normalization. Completed MG94 fits did not invoke this helper for normalization and are retained unchanged."
+}

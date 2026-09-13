@@ -1,0 +1,10 @@
+--- genetic_code.bf
++++ genetic_code_corrected.bf
+@@ -518,6 +518,7 @@
+         for (codon_1 = 0; codon_1 < 64; codon_1 += 1) {
+             if (genCode[codon_1] == stop_code) {
+                 codon_offset_1 += 1;
++                continue;
+             }
+             SS_sense [codon_1 - codon_offset_1] = SS[codon_1];
+             NS_sense [codon_1 - codon_offset_1] = NS[codon_1];

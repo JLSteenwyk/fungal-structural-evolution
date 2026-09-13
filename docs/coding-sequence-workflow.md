@@ -665,3 +665,79 @@ outputs or installed libraries were changed. The next step is to compute this
 normalization from the saved fits, independently verify opportunities and
 scaling under both genetic codes, then perform codon-divergence/saturation
 reviews. Raw synonymous components should not yet be labeled conventional dS.
+
+
+### Independent correction of stop-codon opportunity compaction
+
+The first normalization attempt stopped before producing branch distances:
+independent opportunity assertions detected a defect in the pinned HyPhy
+2.5.101 `ComputePairwiseDifferencesAndExpectedSites` helper. During conversion
+from 64-codon arrays to sense-codon arrays, the stop-codon branch increments the
+offset but still assigns the stop's zero counts. That overwrites the preceding
+sense-codon entry. In both codes 1 and 12, GTT, TAC and TCT lose their S and NS
+values: 12 mismatched scalar entries across the two codes. The full comparison
+is `metadata/hyphy_original_opportunity_comparison.tsv`.
+
+The isolated correction inserts `continue` after incrementing the offset, before
+assigning the S/NS values. The installed library and all saved fits remain
+unchanged. Patch application with zero fuzz reproduces the isolated helper's
+checksum. Every corrected opportunity entry passed independent Biopython
+enumeration: 61 sense codons × two opportunity types × two codes = 244 runtime
+assertions. Three regression tests cover codons preceding stops, stop-neighbor
+normalization and the code-12 CTG reassignment.
+
+The patch is `patches/hyphy-2.5.101-opportunity-compaction.patch`; the original
+source hash, defect comparison and corrected runtime verification are recorded
+in `metadata/hyphy_opportunity_compaction_{defect,verification}.json`. The first
+attempt remains archived as `genus-mg94-normalized-branches-v1` with a failure
+receipt. It is not a completed normalization or a new fitted model.
+
+The full corrected workflow, `scripts/normalize_genus_mg94_branches.py`, reads
+every saved equilibrium-codon-frequency vector, checks finite nonnegative
+entries and normalization, and computes frequency-weighted S and NS using the
+independent enumeration. A fresh HyPhy process for every fit loads the saved
+model and calculates the same quantities with the corrected helper. Agreement
+is required within 1e-12 before deriving dS and dN for that fit's branches.
+The output columns explicitly name the equal-alternative counting convention.
+The derived distance ratio need not equal the fitted global omega, since the
+opportunity convention does not use fitted nucleotide mutation-rate weights.
+It is not a separately estimated branch-specific omega.
+
+```bash
+# Apply only to a new output file; do not patch the installed library.
+patch --batch --fuzz=0 \
+  -o /tmp/genetic_code_corrected.bf \
+  /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/share/hyphy/TemplateBatchFiles/libv3/tasks/genetic_code.bf \
+  patches/hyphy-2.5.101-opportunity-compaction.patch
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/normalize_genus_mg94_branches.py \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --audit results/cds/genus-mg94-audit-full-v3 \
+  --binding metadata/genus_mg94_full_tree_binding.json \
+  --source metadata/hyphy_mg94_normalization_source.json \
+  --plan metadata/genus_mg94_corrected_normalization_resource_plan.json \
+  --install /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install \
+  --opportunity-helper /tmp/genetic_code_corrected.bf \
+  --output results/cds/genus-mg94-normalized-branches-v2
+```
+
+Use new output paths for reruns. The resource plan reserves two one-CPU workers,
+4 GB memory and 1 GB output, with .1–4 hours planning time on the existing host.
+Normalization does not establish synonymous-saturation limits, optimization
+adequacy, time calibration, topology uncertainty or selection eligibility.
+
+
+Corrected normalization is now complete for all 1,655 cases and 18,407 branches
+in `results/cds/genus-mg94-normalized-branches-v2`. All 1,655 independent HyPhy
+frequency-weighted opportunity checks passed; maximum disagreement with the
+Python calculation was 2.23e-15. Full inverse readback verified that every
+exported dS/dN component returns to its source component under inverse scaling,
+and the installed original helper's checksum is unchanged. Complete provenance
+and case summaries are in `metadata/genus_mg94_normalization_*` and
+`metadata/genus_mg94_case_normalization.tsv`.
+
+The median per-case maximum branch dS is 0.925 under this explicit convention,
+but the largest branch estimate is 99.09. Such very large estimates require
+alignment, branch-length identifiability and saturation review before biological
+interpretation. These descriptive values are not calibrated eligibility
+thresholds. No selection test was run, and no case is certified selection-ready
+by successful normalization.
