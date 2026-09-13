@@ -70,3 +70,32 @@ The gold category includes nominated retrievals, later downloaded models and pot
 Each group uses an equal 125-marker denominator per taxon. Manifest lineage bins are descriptive and need not have equal taxonomic rank. Counts here are taxon–marker links, whereas the prediction-input queue counts unique sequences; those denominators must not be interchanged. Model availability also precedes the confidence, correspondence and alignment masks used in evolutionary inference.
 
 The audit checks the exact marker universe, per-link protein/sequence identity, completed-inventory states, mutually exclusive count partition and every upstream receipt artifact. All output and script hashes passed independent readback, and the plotted figure was visually inspected. Versioned tables and receipts are `metadata/expanded_marker_*`; full catalog links and coordinates remain outside Git.
+
+## Completed expanded residue mapping
+
+The expanded mapper completed successfully with **4,895,692 matrix-to-structure residue links**, **13,654 marker proteins**, **13,153 models**, and **322 linked taxa**. There are at least four model-linked taxa for **124 markers**, before joint site/confidence filters. Completion and per-marker counts are recorded in `metadata/expanded_marker_mapping_receipt.json` and `metadata/expanded_marker_mapping_coverage.tsv`.
+
+`verify_marker_catalog_mapping.py` checked every artifact in both receipts and exact agreement of the model/version identities, coordinate paths and checksums, complete-sequence hashes, source policy and all taxon–marker links. Its passing receipt is `metadata/expanded_marker_catalog_mapping_agreement.json`. The model-provenance JSON files have different row orders, so semantic identity is checked rather than assuming byte equality.
+
+```bash
+python scripts/verify_marker_catalog_mapping.py \
+  --catalog results/structural_markers/gdm-prefetch-catalog-v1 \
+  --mapping results/structural_markers/gdm-expanded-v1 \
+  --output results/structural_markers/gdm-catalog-mapping-agreement-v1.json
+python scripts/extract_structural_alphabet.py \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --output results/structural_alphabet/native-gdm-expanded-v1
+```
+
+Native Foldseek extraction was launched for all 13,153 models (6,910,765 full-model residues), using the previously pinned binary/source version and four threads. The prelaunch plan reserves 16 GB RAM and 5 GB additional output space on the existing host; original coordinates are reused through symlinks. See `metadata/expanded_native_3di_resource_plan.json`. Native extraction completion and native feature/confidence validation remain distinct gates. The prefetched PAE still requires completion and a validated receipt bound to this final mapping before downstream use.
+
+Native extraction subsequently finished successfully. Independent export readback checked all **13,153 models**, **6,910,765 residues** and **69,107,650 descriptor values**: exact complete-sequence hashes, state alphabet/length, agreement between database FASTA and descriptor exports, finite ten-value feature vectors, and complete model coverage. There are 26,306 zero-log-sequence-offset rows; their exported letters are not accepted as valid structural observations. The native output occupies approximately 866 MB, within the planned disk envelope.
+
+```bash
+python scripts/audit_native_exports.py \
+  --native results/structural_alphabet/native-gdm-expanded-v1 \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --output results/structural_alphabet/native-gdm-expanded-exports-v1.json
+```
+
+`metadata/expanded_native_export_audit_receipt.json` pins the checked exports; `metadata/expanded_native_3di_config.json` records commands and software/source identities. This completed export audit precedes coordinate-based reconstruction of native features/partners and the six-residue pLDDT/PAE audit, which remains pending completed confidence acquisition. The existing small-snapshot evolutionary benchmarks have not been rerun on this expansion yet.

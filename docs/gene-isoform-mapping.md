@@ -15,3 +15,20 @@ Outputs are per-taxon protein-to-gene tables under `results/gene_mapping/` and a
 Run `python scripts/select_gene_representatives.py --output results/gene_representatives/full-v1` after mappings are available. The versioned baseline chooses the longest protein within each uniquely mapped gene, breaking equal-length ties lexically by exact protein accession. It retains proteins with unresolved mappings independently and flags them as unsuitable for gene-copy counts. Every alternative product remains in the source proteome with a decision-table entry. Outputs record source, mapping, selection and FASTA checksums. Incomplete taxon snapshots are explicitly marked staging; do not treat them as the full orthology dataset.
 
 Before orthogroup inference, investigate partial CDSs, unmapped accessions and multi-locus proteins. Longest-protein selection is an explicit baseline, not proof of the biologically canonical isoform; evaluate alternative representative policies for leading findings. Reassess apparent BUSCO duplication attributable to isoforms. Never collapse separate loci merely because their sequences are identical.
+
+## Full-sampling BUSCO copy annotation audit
+
+Completed an annotation-level audit of all **65,750 taxon–marker cells** in the 526-taxon broad eukaryotic BUSCO run. Every source BUSCO table and representative decision table was checked against its frozen receipt. Raw calls match the archived BUSCO QC for every taxon; the 59,840 complete single-copy hits also agree with the production marker-input count.
+
+Of **2,305 raw duplicated calls**, **312** have multiple protein products assigned to one explicit gene, **1,989** have multiple explicitly annotated genes, and **four** contain unresolved gene mappings. These categories preserve distinct gene identifiers even when sequences may be identical. The 312 one-gene cases retain one original BUSCO hit under the longest-protein representative policy. They are candidates for isoform-aware marker sensitivity, not automatically recalled single-copy BUSCOs.
+
+Four original complete-single-copy hits are excluded by that representative policy: F87326/5006412at2759, F143232/5015742at2759, F2340872/4888252at2759 and O400682/707076at2759. Their source proteins remain in the raw-proteome marker analysis. A different representative of each gene need not have the same sequence or BUSCO classification; no missing call is inferred without rerunning the search. This explains why raw marker inputs and the representative-proteome baseline must remain separately traceable.
+
+The strongest duplicated-call taxon, **Amoeboaphelidium protococcarum F1243177**, has 119 duplicated markers: 117 with two proteins and two with three. All 119 link to multiple annotated genes; none is explained by alternative products of one annotated gene in the available mapping. This makes assembly redundancy, biological copy number and gene-model provenance important follow-up checks. It does not establish polyploidy, contamination or duplication events. Its low single-copy marker coverage cannot be repaired by arbitrarily choosing a hit.
+
+```bash
+python scripts/audit_busco_gene_copies.py --output results/qc/busco-gene-copies-v1
+python -m unittest discover -s tests -p test_busco_gene_copies.py
+```
+
+Four focused tests distinguish isoforms from separate loci, preserve provisional-ORF uncertainty, retain the original BUSCO status when a representative excludes its hit, and reject repeated hit identifiers. `metadata/busco_gene_copy_summary.tsv` retains all taxa; `metadata/busco_gene_copy_review.tsv` contains the 2,305 duplicated calls and four representative exclusions. Full per-marker results and artifact hashes are recorded under `results/qc/busco-gene-copies-v1` and `metadata/busco_gene_copy_audit_receipt.json`. This audit does not replace representative-proteome BUSCO reruns, assembly/contamination assessment, orthology or gene-tree reconciliation.

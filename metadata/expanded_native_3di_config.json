@@ -1,0 +1,53 @@
+{
+  "version": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+  "executable_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+  "commands": [
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "createdb",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/inputs",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/structures",
+      "--threads",
+      "4",
+      "--coord-store-mode",
+      "1",
+      "--mask-bfactor-threshold",
+      "0"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "convert2fasta",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/structures",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/amino_acids.faa"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "lndb",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/structures_h",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/structures_ss_h"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "convert2fasta",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/structures_ss",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/states_3di.faa"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "structureto3didescriptor",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/inputs",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_alphabet/native-gdm-expanded-v1/descriptors.tsv",
+      "--threads",
+      "4"
+    ]
+  ],
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "models": 13153,
+  "script_sha256": "741caae85cacae7e6820a0c7861d9aeddd9ab7a32547c6b392dcbdec5c977f54",
+  "source_sha256": {
+    "structureto3didescriptor.cpp": "0e31199fd66fe65f53c16e18aea214fddcb6caa6650d07639f5da5221240089d",
+    "structureto3di.cpp": "cb86fa0c7c67d855e6d9bf1ef29e02a9e55708fe6fa1b727a69c9de14480f33e",
+    "structcreatedb.cpp": "f1b5aadfe69b2c3b9ff0fa648a2833ffebbf0de4f7304bbd578bfc327a257d0f",
+    "structureto3di.h": "0c2b80e1ca8ef176e4f1c11654429dce3d53e8bc7210450abd8a2154f06bb353"
+  }
+}

@@ -1,0 +1,2658 @@
+{
+  "status": "complete_raw_busco_gene_annotation_audit",
+  "taxa": 526,
+  "marker_taxon_cells": 65750,
+  "totals": {
+    "markers": 65750,
+    "raw_complete_single": 59840,
+    "raw_duplicated": 2305,
+    "raw_fragmented": 721,
+    "raw_missing": 2884,
+    "duplicated_one_annotated_gene": 312,
+    "duplicated_multiple_annotated_genes": 1989,
+    "duplicated_unresolved_gene_mapping": 4,
+    "detected_markers_with_no_original_hit_retained": 4,
+    "duplicated_markers_with_one_original_hit_retained": 312
+  },
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "marker_extraction_receipt_sha256": "6f4b0abafb51810a042214b059c368725e79386bf1a5038f599e4c597b8c6880",
+  "representative_receipt_sha256": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+  "script_sha256": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+  "sources": [
+    {
+      "taxon_id": "F1498855",
+      "busco_table_sha256": "76966b69ab4af30def142d42db9e1b5cdc70b71d153445347606af20589e345c",
+      "representative_decisions_sha256": "a227c94a03f97c0822de42a81fb4e59c60df7f92093f45de2236cd8c581e902a"
+    },
+    {
+      "taxon_id": "F1243177",
+      "busco_table_sha256": "4a35b2f9bb9dce966dfd2d9b0d1bd9e2e529880488a5c6d44db261aeeb11899d",
+      "representative_decisions_sha256": "14f1447a5c817c8dd4732986ee3894ca08601a3734178acfa57b2eed17993a31"
+    },
+    {
+      "taxon_id": "F2871812",
+      "busco_table_sha256": "f995141c9d3c8b76f03ecf2274d903b8a4e845cc4de655121fc97e3733c3eb4e",
+      "representative_decisions_sha256": "a848593cf773b501725b10b56cade7a0c1c25e040077f7555b0d06f2dd7c174f"
+    },
+    {
+      "taxon_id": "F318763",
+      "busco_table_sha256": "942aa3dd07918f93cff683989a35f06aa8dc42bbac982f513491224592a88383",
+      "representative_decisions_sha256": "8922e62febac153aebb7e0b8329d2d8ab26f56de7c1346a870effd6af6efbfdd"
+    },
+    {
+      "taxon_id": "F470096",
+      "busco_table_sha256": "0796d2bcf09324b42cfc997436349877f404ba4d0a3e94f2158e0d9c7c3618fa",
+      "representative_decisions_sha256": "c780cd248005e79ae641b0e75a324802ba34653cb70d57b2e56bd78a88147da3"
+    },
+    {
+      "taxon_id": "F4918",
+      "busco_table_sha256": "efb2172b54060c635c08976a5aec1e5dd68879419cd5e9b2b89bb5bd2e16fc76",
+      "representative_decisions_sha256": "5ca67880edc150b621a99f5780d9ac94f349ecb8ac92337b5d0867dd944f5056"
+    },
+    {
+      "taxon_id": "F1658444",
+      "busco_table_sha256": "fcf5a9354ba96b72328a0f29c0653128a6d0d452de9c1c169323fe3b2f072d26",
+      "representative_decisions_sha256": "ec5b31f9fc354d7809608a44ae9d219c952d6da846f9436b58232134585191cc"
+    },
+    {
+      "taxon_id": "F393283",
+      "busco_table_sha256": "765eade5bc4126b04d4a1a95ac3656b39c18298f2a929f5216287067a5a62e88",
+      "representative_decisions_sha256": "42191622108a23e19e6f2c669ecc95dbd5c5476f48594a1ea67d6d057f909455"
+    },
+    {
+      "taxon_id": "F1141098",
+      "busco_table_sha256": "5adb87dbd50eda469de283c0fbcca71297057347e4d58e520d08570787ff9ffb",
+      "representative_decisions_sha256": "de762df11788e10a93530acdcdacccce8fad349013a190ae36b1ee7ba447dcd2"
+    },
+    {
+      "taxon_id": "F91480",
+      "busco_table_sha256": "ceaf499b490460986d2ba1f171d21588d3fe712496c81a90d469f8cc6999fba7",
+      "representative_decisions_sha256": "c8f82c16a5da8aa0d454e1401bd76acbca30207d132393b3258030af7bef4d3c"
+    },
+    {
+      "taxon_id": "F2939400",
+      "busco_table_sha256": "db7dd3c8bf3fa5820c403d12a809e111dd413d8eacb0429734df8f09feb9e2f9",
+      "representative_decisions_sha256": "04f1c5f3412d08e70d9e8a4d0f4bda8692b2fefee4c19c5e7f72b0b0a05c0834"
+    },
+    {
+      "taxon_id": "F1542792",
+      "busco_table_sha256": "b16482ea64e5b0c0b7d5eced5066fac3b1ee6f7fcfcc71e3cec833386bb345c7",
+      "representative_decisions_sha256": "1e3929a14e7655934c8d694133785e8ec28b7596c788c149a5a480272be48f55"
+    },
+    {
+      "taxon_id": "F54195",
+      "busco_table_sha256": "bc24e3b418293070e8b7d93e413b6d604630b81788b8fe45637da0025e1b40f9",
+      "representative_decisions_sha256": "e2d5fec79576c3cf06ce8423b22d24bf19e5564462abfc239e2fc1821cbce95c"
+    },
+    {
+      "taxon_id": "F43959",
+      "busco_table_sha256": "74d70ac6dad91fd1d74500bb93975a135749e5af6c84dbca8ebc48fad0dca628",
+      "representative_decisions_sha256": "bca5b2021f93de845c7cfaf1352bc6d48c658a95b935bef6eb3ba6ae222184e8"
+    },
+    {
+      "taxon_id": "F1176130",
+      "busco_table_sha256": "fca27743f954970380a2b827a5472c64957131e12d1941685dd97ad044e34208",
+      "representative_decisions_sha256": "9aad7ea66e2af7d36d4708bddfa2ae03579f9f2c20e2455686db1fe7dfdd0cfc"
+    },
+    {
+      "taxon_id": "F1504668",
+      "busco_table_sha256": "1dc9f1c82f8ea116eed2b51246521f0f3ed06b3f73e3452f1f0eb26f978aa200",
+      "representative_decisions_sha256": "09311f7383d0f5f92cce229b9625eaaadce8b1fe92a306e4b49d60ddeb829ab0"
+    },
+    {
+      "taxon_id": "F1397036",
+      "busco_table_sha256": "c8e200a898d5b5c8f49a652f07829ea370411c25520c5fc34714cc399aa5e1ec",
+      "representative_decisions_sha256": "76b8427a2c17864d41b35efbd29c5d8ad5e7d7c1bafcc3a2feba7e6c442b3697"
+    },
+    {
+      "taxon_id": "F223409",
+      "busco_table_sha256": "344ad9329d8358614047eba65dec0fa14efa0f4b6665fcebe97580289d2ec661",
+      "representative_decisions_sha256": "58ed3f09b718ea02f2d28b816eb09a5a7c79c81862dcd16d30bbd7f897592bf2"
+    },
+    {
+      "taxon_id": "F1590129",
+      "busco_table_sha256": "2bb8b881a4055ec63b40ced6795654e4341fb8c04dd8d1e48cfe015ed0348f56",
+      "representative_decisions_sha256": "255a79b544a0dc1d8fce5185c1249c73ad881bf9365d0528bb85c07a1141f6fe"
+    },
+    {
+      "taxon_id": "F462254",
+      "busco_table_sha256": "297362b9101cb41623bcfd6700b4e1c845e7b7a027c66eea9a0841cbbb9af921",
+      "representative_decisions_sha256": "6981d523088b40c14a62c90cb8d67a96fed5cdeabab4a8f97a99cb4a040a2e49"
+    },
+    {
+      "taxon_id": "F236234",
+      "busco_table_sha256": "c711b41642ef8409a910f59b32cfb77ac856810b58819f897de60205a87189b9",
+      "representative_decisions_sha256": "56c02f7513c7d3e337bf5e5c67e02f8753a51bbd04461479cd8c9f3289662f81"
+    },
+    {
+      "taxon_id": "F121624",
+      "busco_table_sha256": "15c60b8d4441036e34f95da701a9bdf45e9ff5003f3871b35d9e6c3349c79dfb",
+      "representative_decisions_sha256": "55ee0b472dbab951d33daf81ede799c6c9d029614c262488cc1e162a1501ca51"
+    },
+    {
+      "taxon_id": "F3058885",
+      "busco_table_sha256": "dc0b37bcbf88a090e32b0b1993c2d32e8f987388dc4cf841204dde704c7509a6",
+      "representative_decisions_sha256": "33d1b3eef6c7f5e058664b1702058596c3a3fcb972899d51ad6dfdb17745a289"
+    },
+    {
+      "taxon_id": "F116794",
+      "busco_table_sha256": "4b05a852c49016bc2b94f9eafff1a2cad587a46b19be2c5a30a7c4ab695450c3",
+      "representative_decisions_sha256": "60170ca48d65f289314d3e92d6e33e7669c86f0e8a05f39327d2603afbfb8d61"
+    },
+    {
+      "taxon_id": "F116821",
+      "busco_table_sha256": "94acbb71f3ce046f0cf776b10414a8ff2719634ae05ed40e35ef6f6919c4beb1",
+      "representative_decisions_sha256": "e4259f9f36854ff64c7812231f37c43e66fc2afc1192485008e32f6d0299f887"
+    },
+    {
+      "taxon_id": "F41990",
+      "busco_table_sha256": "b8b4d32177423df0adf1d6709572922152b073f11c1ed5511d0ddef5c3837800",
+      "representative_decisions_sha256": "08b3b454271c7683d71d0a43822af99c835291f59fe6fe2d72ce58f8b408e796"
+    },
+    {
+      "taxon_id": "F460848",
+      "busco_table_sha256": "2f52ea785540793ed3348229dea481b4d3d8b3a4750252dcecb3b1682d06c3e9",
+      "representative_decisions_sha256": "8b190c60b3ac9e20a1ac4e65d7a3d10d87ce2720a1125d65debdfca8f9d1fe54"
+    },
+    {
+      "taxon_id": "F460854",
+      "busco_table_sha256": "5ddb3c8263fed4abd3fbf3c0127cf91a46d02e28b8494794106055242120347b",
+      "representative_decisions_sha256": "3cd8e3cfc6b28146e37b9094c16923fd29d22a434995ea7fb40306bd09f14e46"
+    },
+    {
+      "taxon_id": "F1453791",
+      "busco_table_sha256": "c6676fa8c448775bc370f5ae418dac1edc67c151e082d220ee9f818b02f0a353",
+      "representative_decisions_sha256": "2ae055c4aafda29e7cbb493a276d85684954f400d6561ea925e37a4b7d8bf34a"
+    },
+    {
+      "taxon_id": "F147573",
+      "busco_table_sha256": "af7ec536ad3a9bc021f9e16799fca45a4630fb75ca399406e8ab8d8df8c5ba75",
+      "representative_decisions_sha256": "d28ff04ef1af5b4223ae2460eaa61533d522025324d1b99663746895415d550d"
+    },
+    {
+      "taxon_id": "F705562",
+      "busco_table_sha256": "5fcedc813411574863be9c710344a13485ba953fb881ad9d7a5022c7409453a0",
+      "representative_decisions_sha256": "5b8bd5ea3a5e76b5293897f6dd0fc9d3b580c17ee3a4f290d6c63aa68e4964e3"
+    },
+    {
+      "taxon_id": "F1093897",
+      "busco_table_sha256": "0976c14ea7f3b520fd32fe88a6a63f0036ee433beb3317cd388f217e6120de14",
+      "representative_decisions_sha256": "63901996b703327b2f8726271e63680f4f72264e6215048484a8de17f565b3c7"
+    },
+    {
+      "taxon_id": "F223376",
+      "busco_table_sha256": "e1b7fdb933459d02d7c8a670a9b151b2f86dce8da4992f93daff6ff6ffa036c6",
+      "representative_decisions_sha256": "04e02d1c8c479fbc9c67260621eda924c12907a4cd1f3700b0628508185b0d96"
+    },
+    {
+      "taxon_id": "F1506992",
+      "busco_table_sha256": "3b741ecb771ae3ea588e992c1fa85d12d1ce283225d9bcbcb99bda0a8b6c5f29",
+      "representative_decisions_sha256": "ec90a82d89fbe8c7f494a2ab543aaa6dd072ed2382e0db63bc6e2e04f805f846"
+    },
+    {
+      "taxon_id": "F293227",
+      "busco_table_sha256": "61fc74ecc58364124eaa1012b7ffd8c67f4c403a353f305e1dd40a2426f67935",
+      "representative_decisions_sha256": "52fd9bef8a5ef738e568ca797c25175953dd7a2ddc6eb9d98c9fbc4553b42881"
+    },
+    {
+      "taxon_id": "F2486360",
+      "busco_table_sha256": "058febf902489ec53c14802ec60c91a2c358da6b3021917c4a37ceefe6127059",
+      "representative_decisions_sha256": "cfea13cc334e04840396c2671a80469139f43f3a1b012f4ac0e32e3ba7b21cad"
+    },
+    {
+      "taxon_id": "F1690604",
+      "busco_table_sha256": "bb834ad5b4b2460817bdbc63139ab2299bae7d128770fd12a309022c67b5f9ba",
+      "representative_decisions_sha256": "e24b55a5b5029b5f9ff3a12b22915fd7cf78a793cae45c703b2215892fb0f3a8"
+    },
+    {
+      "taxon_id": "F1052096",
+      "busco_table_sha256": "6dd8b8ce1d89979e9e879538eacd2870b6ce6ad8f4093ba797ad389af0a75981",
+      "representative_decisions_sha256": "ed6482609572709fdd22f0d5e6654d8ed627c0fc33718a593a6268abe8b149e8"
+    },
+    {
+      "taxon_id": "F1507870",
+      "busco_table_sha256": "110f9372f5f0a4bb517471aba8bdbd0a25b7f1e56e83a635c725e5c84cd732d5",
+      "representative_decisions_sha256": "1b9270ef2f244b93e6d0ad48cbab6dcfb27d82e20ba45d88c7f89114dbd5dca6"
+    },
+    {
+      "taxon_id": "F1507873",
+      "busco_table_sha256": "be971b9850b2c2a38d06e7eefafc7c21617969570996dc7c7c216352c0ca01c5",
+      "representative_decisions_sha256": "53b026228c2b49686a709e2c9a0444985d3ac0a7a3f686255b4ea14475e1b09a"
+    },
+    {
+      "taxon_id": "F91930",
+      "busco_table_sha256": "d48a45cf790997aa410ae984d75e81af2caf7cf0e2f0b44b2a2d553d8db4e88c",
+      "representative_decisions_sha256": "fa62895c653e9e23f1a39b46ee47b82bbbba09a117b16f4700c918baa95dff13"
+    },
+    {
+      "taxon_id": "F177197",
+      "busco_table_sha256": "26b09da1fa60dd5327720ef4f705dd673520156d03b7db85d9b652c66dc66105",
+      "representative_decisions_sha256": "954333ee6821f599c44682144b1c614a847936a12825876b6ffaf9f85106f5aa"
+    },
+    {
+      "taxon_id": "F177199",
+      "busco_table_sha256": "5fb6c76619cb3b3b7523f6c23c8600f9dd67336ec925bf324501ceeaf113edfe",
+      "representative_decisions_sha256": "7328f54b922bb6905f74dc602b3b4346945b192a23164889e8a60aebbd48b593"
+    },
+    {
+      "taxon_id": "F164576",
+      "busco_table_sha256": "9dc7b9eada690908a1af7162948ff05b8bf359d6f26d79d817933ce963683240",
+      "representative_decisions_sha256": "1cfbae429a4eeffaf123157da07c44c9f9112fe15227fcb7f1bb3cca66d8fb46"
+    },
+    {
+      "taxon_id": "F2939403",
+      "busco_table_sha256": "5e622a9acfc97f83181fdd85049d9d07dce0041daf6e97d3fe093a4b57610c5a",
+      "representative_decisions_sha256": "82fc9a624f0a248426cf1d476c9b2725b70a95cb85c943aeffe7b11f687cdf8a"
+    },
+    {
+      "taxon_id": "F5116",
+      "busco_table_sha256": "132a10a73a0aaba0afb146ad702e42f24a1cd4cb8c67dbf5623f09195cb4d01b",
+      "representative_decisions_sha256": "1bdd72dc91d8bf27d12d56005084549c4647407a94d39b1101bacde4ca3cacaa"
+    },
+    {
+      "taxon_id": "F1214568",
+      "busco_table_sha256": "a530f965de0a240d2cb1be1d6252aa4b27e757e7abfaf77ff41306f4a20a219a",
+      "representative_decisions_sha256": "d6be1c98ceb032627307523af0eaecb9a6306f433c0054e07304e50da4f63d38"
+    },
+    {
+      "taxon_id": "F148313",
+      "busco_table_sha256": "849e16fff629d60a58d3dbbcfd392d267ee3a357a367f6477acdd83e3917547e",
+      "representative_decisions_sha256": "7ca1a8947a618c5e33502d2c518c993ba324c7c8ce0295d156c43a28aeebb552"
+    },
+    {
+      "taxon_id": "F2268995",
+      "busco_table_sha256": "0323f13fed42318e6022976988c3f778d7af75509223d72f8886a7fc86ee5837",
+      "representative_decisions_sha256": "b2e33ce4c1fe014f738daad53404d1e1153d5767be747dfde64c6d784c9eda1a"
+    },
+    {
+      "taxon_id": "F2606893",
+      "busco_table_sha256": "0a2c4e1df771db47b07795b74547975d61312c0452ab9f8005d0acf46b7f9bdf",
+      "representative_decisions_sha256": "5580f25891f5a0fb321fbd1cf5439fd31c3e6363d6e050e57baefb16663e4352"
+    },
+    {
+      "taxon_id": "F796027",
+      "busco_table_sha256": "539713a5ea4226b7c77ed3f8378d05ab2d01db4de00056cff4899417a03515a7",
+      "representative_decisions_sha256": "90cf1e6c10c23340aeb34ac774578596303371d47a3b3d36cc06374c790741d6"
+    },
+    {
+      "taxon_id": "F5580",
+      "busco_table_sha256": "81e164a80679f1eae0e73cce88196cd20e2ec7918ad965bc31a53361b58310e8",
+      "representative_decisions_sha256": "6d199d7f0bb0a0a9634a8b60a3de09d0592382ea814bda470eba024972634238"
+    },
+    {
+      "taxon_id": "F2781224",
+      "busco_table_sha256": "f80fce6cc8e88a62269e5b2fde1f01b49409896c12f60f9f64721b0a27542a0e",
+      "representative_decisions_sha256": "f110b1c4df7f6b01b90238b396d5d4adc616615d3716bca17def0862ef845b0c"
+    },
+    {
+      "taxon_id": "F2024903",
+      "busco_table_sha256": "b8e562ad85e11d1f586b85c40f0d40a4e797e0662162355cc7a6c085aa7c5eef",
+      "representative_decisions_sha256": "03885406d478b1089ec22715a33041136551138d0fe6e088751821eb8c3e3264"
+    },
+    {
+      "taxon_id": "F1341166",
+      "busco_table_sha256": "9c8ed473194ee17f8a6205f0287fea22f32bf3eda84150573990a4d050f72750",
+      "representative_decisions_sha256": "eba4815871cc8297045081f18627feaaca1a88bf199464f205aa6483cfa5986d"
+    },
+    {
+      "taxon_id": "F182096",
+      "busco_table_sha256": "f87acd4d967f31569130424915562f2839fdc8bf9a87cf51b9afbf7befc678ab",
+      "representative_decisions_sha256": "70e786a277935a3e243d5153c13580a3ff3364569abac0f69842e8c34de94d7d"
+    },
+    {
+      "taxon_id": "F5059",
+      "busco_table_sha256": "b32d173abd887758b3a02d0da3a64d56fd8d6a1bf6dee6ccb5b4229f3611f69f",
+      "representative_decisions_sha256": "7d3c4b23ac5939a82f768ab8a6b9912d251e5bf2697938686c63978623970d69"
+    },
+    {
+      "taxon_id": "F746128",
+      "busco_table_sha256": "a43f6717cf31ccbbeaaed8789ffd5d06ff1b2fc2c35398eabbccc50a58b0bca7",
+      "representative_decisions_sha256": "99d123a791313a685b7e49967467f2a157546134d0c68a8902fc2ae39dde7b61"
+    },
+    {
+      "taxon_id": "F1069201",
+      "busco_table_sha256": "af1ee9806f642b6232214a40e6b550ba56dec6d1d1200ccbbde861ad8abeec1d",
+      "representative_decisions_sha256": "e40cdaec8a9e855ba3fcc7c318d5ef881014e7abf5332f31ff9acd0b8a842726"
+    },
+    {
+      "taxon_id": "F41759",
+      "busco_table_sha256": "610ea1078dcd5805f545a912e193756ebfecec2ca30710ea93ff0af92caa10a2",
+      "representative_decisions_sha256": "d456a941b412f3cbdf75ce66943de05d0999c53a4143b15dc98a7fada47acde8"
+    },
+    {
+      "taxon_id": "F162425",
+      "busco_table_sha256": "75189e477f0f2e8c1dc6e47289922d295087e294379fa3bbebe466d54658b103",
+      "representative_decisions_sha256": "572864a37633d4c7649e56978701b54c2936e86d4574332f4bd3fa984425cbc3"
+    },
+    {
+      "taxon_id": "F5062",
+      "busco_table_sha256": "4c5654a25d103325fdc23bc93c457293e99b659d765982fc864fc10067b9febc",
+      "representative_decisions_sha256": "115db78e25fd0c17ec995517d2499ba13cd316447f2f68d014b1dd52823b6bbe"
+    },
+    {
+      "taxon_id": "F1220207",
+      "busco_table_sha256": "12375ecf6dd64166fa7d5cb6cdffc2d3bc0678d2620f832d45942b786efc6624",
+      "representative_decisions_sha256": "ee962e9369089e1364c4cec7de747538232df1218c312e06b66de5fbfa84b391"
+    },
+    {
+      "taxon_id": "F1810926",
+      "busco_table_sha256": "134b2d0db9c7f30d93bdf4831e71f66accc323ac8028c41055bae4884bf39ccd",
+      "representative_decisions_sha256": "12fc9e8cd37c643e9596ea3afb5bfafe099370ce66bbba87c851324150a33ce1"
+    },
+    {
+      "taxon_id": "F1810928",
+      "busco_table_sha256": "f5fdbd652681cfa84f005ebfb95e1c6857de6f2e896b88c66b7aab05afa01c8a",
+      "representative_decisions_sha256": "4f63aea68a89cee230ecf09bc918481f1b16dc2e5e06e53ad91397a357907ecc"
+    },
+    {
+      "taxon_id": "F315204",
+      "busco_table_sha256": "66868f89f11d24b1212c8dc78c365ffd866355141305cef7a0709782ff65e347",
+      "representative_decisions_sha256": "da0971c89524c48a0cb087d2fb84d7f6ac75af59b3cec2e653800373248b7af1"
+    },
+    {
+      "taxon_id": "F1670608",
+      "busco_table_sha256": "6433b817a4fbcefc10f6dbbeecff9a448532814713620dbccb67bfb4efbc4eae",
+      "representative_decisions_sha256": "4a9585309ab8e78ce78dd1d0a97993909e1e31e04c4ddb9ed04b087189636fb0"
+    },
+    {
+      "taxon_id": "F265104",
+      "busco_table_sha256": "1e78e81096c0d239ed22d9815b6c0fc6d291b229204b2002b7ccc765f7b0ca43",
+      "representative_decisions_sha256": "1558f190dca07307ad45a123a32a64ff3445bade52781d90610f1cd17f563769"
+    },
+    {
+      "taxon_id": "F1671311",
+      "busco_table_sha256": "a4b033ad91f5ba94bc0edb4ddd8e141bac5d39a9ce9428da7d1536390b626ee3",
+      "representative_decisions_sha256": "93b351c8eb7903fef0f239ce2a390a51b144dc87470ca2f6ff49643ee33dd2b4"
+    },
+    {
+      "taxon_id": "F1209916",
+      "busco_table_sha256": "287f34c2840fa0a31920d0e31511c5710f492e87bf2495bf17ad16c7d70a19e6",
+      "representative_decisions_sha256": "3182db56463b588a2aa172e87e960716373e7bd2bf03deed664dac9c843b9bbe"
+    },
+    {
+      "taxon_id": "F34406",
+      "busco_table_sha256": "c35af432b8ad6a38be48a9667074c23ae45f6be1b8fe427cfb8910e24791c2fe",
+      "representative_decisions_sha256": "948b064dd766cea6cb297a6c4cc37d3b9020aef229350485902098e9a5694c5f"
+    },
+    {
+      "taxon_id": "F710243",
+      "busco_table_sha256": "7bdef47ea22f9c2254cbb21143489ca2e1f7d4b5ad4a9bfb82b5ee6ed9a89f88",
+      "representative_decisions_sha256": "dcbb8a2d64ee7b8e751fe7164e305325a1cb107e67634021024232507c11690d"
+    },
+    {
+      "taxon_id": "F474922",
+      "busco_table_sha256": "3134371586a502c5d76041ab4974e0ddccfae7fe020b17305924e7cc00a5bc13",
+      "representative_decisions_sha256": "dd3af425638b988a39e765288f4389090923b991c51f57f571f629705abcaefd"
+    },
+    {
+      "taxon_id": "F80884",
+      "busco_table_sha256": "3766da27dd14b7d52128b9e34d928e26c73cd4dad35fbb0535c5c17ac9623b03",
+      "representative_decisions_sha256": "af669f26f6e3958c20e0787c708cd32026b2ede21521fb9cb81c3232f366b650"
+    },
+    {
+      "taxon_id": "F2283408",
+      "busco_table_sha256": "9bb57594429e1e1e16f025199d1384e858b5220916d4b739c60d90123fd5bfa3",
+      "representative_decisions_sha256": "53ef0e4063551c17a71aac6ed939714d63d14e7fc478131cfed6d2235aef6a61"
+    },
+    {
+      "taxon_id": "F1095194",
+      "busco_table_sha256": "379380a73d92e85ee4cc678b1c964fd2a686b33e3ead9134bc70439affc20a4f",
+      "representative_decisions_sha256": "56b41aee8583d7effbbecf645dd85d5317b05ce8d4ccd2aaf6fbba15bdc9b3da"
+    },
+    {
+      "taxon_id": "F145971",
+      "busco_table_sha256": "fe41401f325d8dceacd17680641a92704c9ae108ff624a454ae6b8b5fb56c872",
+      "representative_decisions_sha256": "6c686dea3ada5f06e5b80c430b03b0f6f1e17f5029ce0861b890a9f4ec7f979e"
+    },
+    {
+      "taxon_id": "F1209934",
+      "busco_table_sha256": "a5d90b9fb4b8475951b7b358245806eef4cf9aff562b0848b8e1cbc9b0e992fc",
+      "representative_decisions_sha256": "685a4663df744e6c4dd0f8ef421ca40a8fb1c5cd239621c5f4426d006bf38bf6"
+    },
+    {
+      "taxon_id": "F5570",
+      "busco_table_sha256": "07e2d7d5478b75ccd3385b20eea6644d4d666f6573ec9aaaadc6003ffe4b6834",
+      "representative_decisions_sha256": "fe048806b6cda4228deb39adb9f6f10567f74a4c512f3ffdbb5d423fa23755f3"
+    },
+    {
+      "taxon_id": "F574774",
+      "busco_table_sha256": "c9d33c0841d14f06dece163b91f8c25e11b44b6be0ecf88db4da23ecf18be32e",
+      "representative_decisions_sha256": "78a9f33b469a404b5b05f1cc3cf63afcf4e6afb9cc16a44c0175a65409c100dd"
+    },
+    {
+      "taxon_id": "F5101",
+      "busco_table_sha256": "e5ccd73faabd3a65f95c472dcab4cd4f91fdfdd996a703a309a0b54045ac0615",
+      "representative_decisions_sha256": "269c320dd0c80808326c2042e47ac8f45aeca4334e7b8a9cdd7cc90c17a7ee2c"
+    },
+    {
+      "taxon_id": "F40559",
+      "busco_table_sha256": "e5f1446677a12581bca8fe2234ff34d396556269c3b27d228558fe877918b8f6",
+      "representative_decisions_sha256": "a13f13ac6f5c5fd41fe6a895d705ad94bf395e00a89d4de79a96ec9466df3f6b"
+    },
+    {
+      "taxon_id": "F2656787",
+      "busco_table_sha256": "d1ab029cc117c078f830bce36ff7b043a22c2393f7e92bd8ccef733535206a94",
+      "representative_decisions_sha256": "be05f7124c364d5182a0bc0fc6a5041bf3f2a8c443d1228f23d01d42b96a2b98"
+    },
+    {
+      "taxon_id": "F195108",
+      "busco_table_sha256": "ed040c475dd6dda272c88a09e2b7c7d348f46096320d55aa20037df9ed79960c",
+      "representative_decisions_sha256": "07ff158568727bfb803c777021d1c30734138204704b4c634d2d65ee4ac47e4b"
+    },
+    {
+      "taxon_id": "F5127",
+      "busco_table_sha256": "161f6b884c29a9d0c26c7b0dbcb097689ef61a8e024694ae9509fbee3a06eabe",
+      "representative_decisions_sha256": "41ae6f0bfab8ec20823d5b0815f5aeecc42348f0ce55e6310d7e6a7f2b7c36fa"
+    },
+    {
+      "taxon_id": "F5518",
+      "busco_table_sha256": "a017bd11349b5f439363bce2de622653d34b3f3fd797599053c9c038d2cd1ef8",
+      "representative_decisions_sha256": "8e9c975acbbc07ee35b36df32a0ca962015c2a8f8b6355bdff558cdcdf31fc39"
+    },
+    {
+      "taxon_id": "F1328300",
+      "busco_table_sha256": "60b55cc7a89cca3471fe290b58cb2c393b991453c87bda539b93aafee37db01a",
+      "representative_decisions_sha256": "758b64cb304bb6e5afce4c55c0a98c497db4b8823ee4010c9d49e70b257f6ed5"
+    },
+    {
+      "taxon_id": "F1042133",
+      "busco_table_sha256": "49ee9fff5cc62a01ef3824c815652a30bf737b3143adb1e6cab35ee3b872f4a4",
+      "representative_decisions_sha256": "47bf12e1fbbb475ba93a6e80993185cc65fdf6df9371b6ab6d8e07ee622b2bde"
+    },
+    {
+      "taxon_id": "F5507",
+      "busco_table_sha256": "c74e410454c02249cf35ba2e630d7cf85db22ef4a7849dd6c4fb73862e03d89d",
+      "representative_decisions_sha256": "5918ae093ccf5c7b0ffb269870f9b53cbd01e9444bd267324eb64fa935b1f55a"
+    },
+    {
+      "taxon_id": "F36050",
+      "busco_table_sha256": "d7854a8da1a5218fcc30c9dd1bcc6e8438d8171d5fa494e603e86294d3b1a3bb",
+      "representative_decisions_sha256": "f91f905d35f05c0b71694f1fb5d1f214c940f8cad28562be7178367d23c2cf8d"
+    },
+    {
+      "taxon_id": "F101028",
+      "busco_table_sha256": "78b3dc6a3f836a315fac6b7e1d7a7f7f728c0d82390c1fcf42dec6296e7e8621",
+      "representative_decisions_sha256": "e5fa26465c095e2171b4b1e23bdd48b4852f58328b2191d75404129f009963c8"
+    },
+    {
+      "taxon_id": "F5128",
+      "busco_table_sha256": "f980177caa4f191459b19c55f55d0f8306df1154b1a29e4b7230a96468913adc",
+      "representative_decisions_sha256": "0a38febc03ca7d3b846009ed23f7aca14d4b825201b04873bc0c646e9a5960d3"
+    },
+    {
+      "taxon_id": "F117187",
+      "busco_table_sha256": "c90215c4a42f143ecd9a331fb493f956e5a20be524f9a5818b1030bad1eef24b",
+      "representative_decisions_sha256": "1f949ea7a93e8e6f0371701c240fdcda092bde4c20c4029fe890529a70ca5d5e"
+    },
+    {
+      "taxon_id": "F173216",
+      "busco_table_sha256": "5c7658012106df3921ecc8f2573ce19c45e099781ebc073984d4fbb0ebfb9874",
+      "representative_decisions_sha256": "dd9700005508e09e4106062ad28d8356cf27491b91c9a4e557b642c3ee2e31f3"
+    },
+    {
+      "taxon_id": "F101201",
+      "busco_table_sha256": "a8162fa0fd20f874559cdaf5b635063a9b791398900fa22c1c358fba058bfb07",
+      "representative_decisions_sha256": "07490d5535c61746f73719fd80cb9559bf70efa0e4639bd84425a90a0d7906d8"
+    },
+    {
+      "taxon_id": "F63577",
+      "busco_table_sha256": "3c78bc471b6fbb7e9a7fc628d05899f101c91c8e047aa3352adf8fb3f6b380be",
+      "representative_decisions_sha256": "7bf1a0d88dbcdb11286ad96d387a69f366aa9ca1445046b53d492544d9963a9f"
+    },
+    {
+      "taxon_id": "F2034170",
+      "busco_table_sha256": "d314bf3631da4810e083319752e703313cf7b8a8159c290f714fb864557b0c46",
+      "representative_decisions_sha256": "bab8c4c1fe657039c91a0d2cdb93478bb32234805dfacab32ac74654e0ecbcde"
+    },
+    {
+      "taxon_id": "F1738374",
+      "busco_table_sha256": "458d9f9067b0ba5fe58e02fc7e272bc58954e15039a96628d6ceaab1819fb5f1",
+      "representative_decisions_sha256": "c2f0416e3dad45811f94d7513461d495b87a1867fdb3dad9b20553102f2adff5"
+    },
+    {
+      "taxon_id": "F58853",
+      "busco_table_sha256": "b298a627a6149eda35376f180a34c241a53ff5370058665de3247796a3e12640",
+      "representative_decisions_sha256": "a80e0cc3e30cc7ee46cd0edc0d59ded9265697622976cb0c0af73681e59116a6"
+    },
+    {
+      "taxon_id": "F549676",
+      "busco_table_sha256": "c0f8ef2ee163aa542a86b7d655d8cda22e7311bcd43c263171056bb203ad69c1",
+      "representative_decisions_sha256": "82d6c356e3c5a94d61aa42d79a465b9882a829f7c762db901842b9f89a537555"
+    },
+    {
+      "taxon_id": "F398673",
+      "busco_table_sha256": "a9f8e8e2b6ffd04e17955751ab6811a4acf2e7c4a48ef69ec16f216eff59a728",
+      "representative_decisions_sha256": "0c3efc97b199efe7d66d3049556e91c009b0d140fb071dabeb7eb4884f63fe22"
+    },
+    {
+      "taxon_id": "F65468",
+      "busco_table_sha256": "161282af7f530374fc597a16b19cb3c96fe6f1e830eb999c511d7dc7af5a503f",
+      "representative_decisions_sha256": "fdf830f79a39c7d65cb6b0d20b637a3e8afb4c3f0a37cac15d74b52b123a7192"
+    },
+    {
+      "taxon_id": "F5544",
+      "busco_table_sha256": "b8e375e8a64a383c7ef3a6c1e700a9b16743390fb0a8375e49b3bb26dd08b3c1",
+      "representative_decisions_sha256": "94afc99e345acd695c74f1b0b902bb8dff9af41a825ff327ac304706b087d0f4"
+    },
+    {
+      "taxon_id": "F2732470",
+      "busco_table_sha256": "4b94a35914730a412c8b27f45bff233964dadc01252e382a50593d74892538f2",
+      "representative_decisions_sha256": "ef84dcfc1896936112792219e2a2cda75c23fc81251edbc7a707a40de0c56985"
+    },
+    {
+      "taxon_id": "F209136",
+      "busco_table_sha256": "a5d56861c86c4f470e563aa31c3d8710fd175adcb5e221e8026f5c91cb6e8924",
+      "representative_decisions_sha256": "7f70f23b11b36a9fbb9f12ae30103174e926c60c22ddab0d59a38b70a58ad6f5"
+    },
+    {
+      "taxon_id": "F560253",
+      "busco_table_sha256": "b1cd848c6297e099caf3a25dceba9ffdb623cf9668a6e41319d1aee0c3ed8940",
+      "representative_decisions_sha256": "a1a98406f0529988e54fd30e153f25fb360e1e85e951a9bdcb59fa453d487a20"
+    },
+    {
+      "taxon_id": "F2939399",
+      "busco_table_sha256": "93d8900ff407202f4416f4559cab3686f90206e585aa7cbba6587e5840dfcf4d",
+      "representative_decisions_sha256": "604a5ef0478b6420614940ec71da099624e8319ebd5f47b27e7a1f513beaa7bd"
+    },
+    {
+      "taxon_id": "F3384825",
+      "busco_table_sha256": "fb548d4eab0dd3ae54487d5286cb78e1c5feb034f069e242688f2a22e78656b7",
+      "representative_decisions_sha256": "9bd67c338d8fbbaf29d265e5bef623bf39077292e6cafd0da12df6f0662ac8e5"
+    },
+    {
+      "taxon_id": "F174425",
+      "busco_table_sha256": "16b2e292d48e71adb3b807c067ccea5b3186c51e341857c5baa1c099d32bdc4e",
+      "representative_decisions_sha256": "b57a672d08c43c5d4f18ca7c4ad616d6204f9fa660d8e0a79cd5fff491aa7c24"
+    },
+    {
+      "taxon_id": "F318774",
+      "busco_table_sha256": "dce7588b2755f3e4a3beae32196f8a1a59efa5ffc117eeea1ac46003fd25aaae",
+      "representative_decisions_sha256": "6202e0cec05e1512fc44263da88caab95a0b1a9609282f357d104eb7e7ca12e7"
+    },
+    {
+      "taxon_id": "F2796175",
+      "busco_table_sha256": "59065bec36ec0f7e190d82a98bdf15e6dcf9dc4bc29b9ad081d5fcd6478f971a",
+      "representative_decisions_sha256": "daf508731293808e71071b76dce14cc3b927ce56586328edf387b51a8e918cba"
+    },
+    {
+      "taxon_id": "F578093",
+      "busco_table_sha256": "0d79979f75a5a1713c2eb750abba996a2ae81f8e2a996338b1875e7f71ffcb9c",
+      "representative_decisions_sha256": "6b77f554f8d14307d6ea7411c6d96d3ebccfdb3209fc864977172a98e94cf9d4"
+    },
+    {
+      "taxon_id": "F1125753",
+      "busco_table_sha256": "82e08d7cd88298057983a87225cae9fca10de08f1bd0f075877f305f162647c3",
+      "representative_decisions_sha256": "41e97032a854bb99a12a4d00a8aa857ab18e35364d2eaf281f3f632778642753"
+    },
+    {
+      "taxon_id": "F383834",
+      "busco_table_sha256": "70aa80526290383b88aeac1a005d051ed05811246014cf1b0cedaf4f2210ec99",
+      "representative_decisions_sha256": "90a85e70354e4ed513a0e7ff4db7b26ae76e7d5480c096f4766dc141389d8e5d"
+    },
+    {
+      "taxon_id": "F44089",
+      "busco_table_sha256": "bf0f406b54547e5b83248d140844924131f1333e11efe0b310e7c59b4e126839",
+      "representative_decisions_sha256": "418f98663e14199c7def1e10231fee6c5513fcf855631b515d99cc8c0ed716e5"
+    },
+    {
+      "taxon_id": "F339359",
+      "busco_table_sha256": "673cb62779eb46306ae715426b1d2bd240308c6ef638bb36d747515a9d6933d5",
+      "representative_decisions_sha256": "ea7f1662ceffebd84d9e3b4215c5259d43d95ff6ef47871dd9ac02fde9962c32"
+    },
+    {
+      "taxon_id": "F36779",
+      "busco_table_sha256": "e80e4a03d7e7659a20842e462d49f05af0a4703d2f9b085cf3dd78eda141a60d",
+      "representative_decisions_sha256": "2a70e615f0f6e7b75362ebb26e6d68da9944f020f7474d758f9ac6da34d8d160"
+    },
+    {
+      "taxon_id": "F148304",
+      "busco_table_sha256": "dcee61e378b6d6bc65435458d242e186e5a0f759f95091613701fcd1db4abc3a",
+      "representative_decisions_sha256": "e3bad02a16861a106f8c422d652f6286e6e75e9d0015ac045002f65d43e27f91"
+    },
+    {
+      "taxon_id": "F148305",
+      "busco_table_sha256": "6978640d6b0ba1f52d20e5c6e960e987e0d0786356637a189416ff2cd0a9f3ee",
+      "representative_decisions_sha256": "b467e0e3ad80a6612ab8e36698d9e6dff0ff34327c5a27df7cc361d595253e24"
+    },
+    {
+      "taxon_id": "F2035830",
+      "busco_table_sha256": "6daed7a4ea530f5f0fa303065399425cd9d52f90a16b65bf95f8cbe8da6925bb",
+      "representative_decisions_sha256": "0bad4d16b9eba4653f07e309ca8b81fab7a900444d3b8b7a1a9bcdcace5a61c6"
+    },
+    {
+      "taxon_id": "F2019550",
+      "busco_table_sha256": "9a448d655656d1d1912b0eb1e6ab3f779323d8c912050e2b1fca40e03a2658e2",
+      "representative_decisions_sha256": "39be4f578799dce7aa5dd986a3c8d6b0ca84751fae6044ef5ba743be286102fa"
+    },
+    {
+      "taxon_id": "F563466",
+      "busco_table_sha256": "6f0783bfbe875adf02e533a2388946704fd6e1997e696f7d91cf88c00865df24",
+      "representative_decisions_sha256": "d0461ecbd901996f7b95c9dd227d07d7b7a613d08d126cc3c362d4456bc54659"
+    },
+    {
+      "taxon_id": "F703497",
+      "busco_table_sha256": "d178461cb17f9a5f465a77c60952da3947a3e4905569874d8b751bac21c6e9ab",
+      "representative_decisions_sha256": "74592f539b3a45438d510d543b6285115de58a09a018bf0f7df9ca49c3e3622d"
+    },
+    {
+      "taxon_id": "F122368",
+      "busco_table_sha256": "9d5f97d04278c3699316ebe49a9e6fd4e328f5df9d447d414af19b7588592ef9",
+      "representative_decisions_sha256": "cc3f14ad7f2f7b6b5e638a6ebda07f71bc1c609e7aebd93eebb5806c45f9a1b5"
+    },
+    {
+      "taxon_id": "F574656",
+      "busco_table_sha256": "47e8eb2ed133b02abf124b3dbde043f6241709c535339afa8d1b6394a7891c85",
+      "representative_decisions_sha256": "ac09065be0927634f0489687188a597ba45a8c5e51a0ad6fad786fe4a740fab6"
+    },
+    {
+      "taxon_id": "F1690608",
+      "busco_table_sha256": "f1e6af0039605be04e9110ad62791b91c65b7f99563a071ce5365cc037ec2623",
+      "representative_decisions_sha256": "f4fd0406334e2d339897da3b995d55865f201fec82e73af3f186c084398106f5"
+    },
+    {
+      "taxon_id": "F2601811",
+      "busco_table_sha256": "083f6f66219e9f2b9cadf8ab38c1a8f5a6d8c2d420b17207384780cfef95acdc",
+      "representative_decisions_sha256": "8fb224ce362228382cf588f039bf004273b7dd63eabe0a0700bdb7d34e8156a5"
+    },
+    {
+      "taxon_id": "F147570",
+      "busco_table_sha256": "006a2dd0c72c6ab606d36586905a871e1f4e9eada34b8b978e46d8f3259dd4e6",
+      "representative_decisions_sha256": "0175cc91836e809e745de99acc941d7181123914b2c64a2065819eeb0a43ea54"
+    },
+    {
+      "taxon_id": "F2082308",
+      "busco_table_sha256": "6e7bdf9367dc2356a35b6299fe8ee9d783cbb4936f12041f574d2aef51323a08",
+      "representative_decisions_sha256": "acc6b8ea64c4e3f3c640facca2309a06607996bf2c9217c211df9f4ea1bb0fa1"
+    },
+    {
+      "taxon_id": "F741139",
+      "busco_table_sha256": "bb7d5507ec5022bffa464c9e3276f6ab13190f00eb50ff4ebef24e4f52737f0d",
+      "representative_decisions_sha256": "f95f8a384e7cad3e5ec320f30929a7b3a2e784fc2ad476af20917e51964649a7"
+    },
+    {
+      "taxon_id": "F390894",
+      "busco_table_sha256": "d571aadd4b0857c8d1fd9ec681a7b3b5f50cc1c8ca96f28f2d87ed69fb58dd4b",
+      "representative_decisions_sha256": "68ceb250a938111e0475e82451688fc32a3be149b73c8f402922ae5f9801d8d2"
+    },
+    {
+      "taxon_id": "F574789",
+      "busco_table_sha256": "df1686b2305bcded6d599b6a51f5adca947717a90007b7d71b5d385648ec27c7",
+      "representative_decisions_sha256": "f16cf5b8d2fd2cdc3b4ed487e5dd8352af243244d06e00cdb17c7445ab6faeee"
+    },
+    {
+      "taxon_id": "F48691",
+      "busco_table_sha256": "604a7e62b8be5fa05b6f441d1aec90c9b065ae3424791d7617054e1f7baa99cd",
+      "representative_decisions_sha256": "fd89ad14400c9cf2d7f1107baa177207be2c45a58c502018b49b37caa1511628"
+    },
+    {
+      "taxon_id": "F92988",
+      "busco_table_sha256": "4f6e0c59ef6d92064f02640a3fd70dd89f638e1f968fca4b62c7429e3e85710b",
+      "representative_decisions_sha256": "4880ee8d8085bf7da67227962cef98ceef535bed0d50df767b64b40c7e3526ee"
+    },
+    {
+      "taxon_id": "F199306",
+      "busco_table_sha256": "85968ef8e402cbf84a2fcb655ae308628a36018677aaaee38292e3bf5d5ff361",
+      "representative_decisions_sha256": "7976d61f29a9ce6d176cfcfef9430db1a7b9484f7ff06e882149b49fc1ee2976"
+    },
+    {
+      "taxon_id": "F63402",
+      "busco_table_sha256": "b1df2ca2eaf6d71d94cbc734384ab7bb008062d0b6628d91bef8342c72a9855f",
+      "representative_decisions_sha256": "a349d321fc9c5ebd2745f5c0d7f2f4e293f9deda371c01607ad2e9cad60c3c46"
+    },
+    {
+      "taxon_id": "F1048829",
+      "busco_table_sha256": "7bc214b91b56075947747a85ff2b153774efcd50cd0a50a864106dd5285e8b2b",
+      "representative_decisions_sha256": "8548f83fa9f1d40aaf1a421d416185e751b439fbb195266b60adbe999a807164"
+    },
+    {
+      "taxon_id": "F226899",
+      "busco_table_sha256": "f3c39bb8104b4deaa96921b88b553d413fd68146d67205da4b69843f21b36e5a",
+      "representative_decisions_sha256": "7004d3f05bdcda1ed06d88197c2b071288d6298f5991ffece1a4bfd7d105798c"
+    },
+    {
+      "taxon_id": "F61273",
+      "busco_table_sha256": "af543181602069ccd01c9c6fb46b78a80fa857c320ff426d683af28cf749b00b",
+      "representative_decisions_sha256": "483e2c9204f1be38c8a654472e711d6fb9a075d478db3d0bfe726f26276b4ea0"
+    },
+    {
+      "taxon_id": "F29908",
+      "busco_table_sha256": "8ff8963a3492302bdd675b3bef8af57ad29bf5f0d43c3fea9e645e820f5c3bc8",
+      "representative_decisions_sha256": "1e22eafbc24636c4f4468d91f959fb8a9f4d529d8aa1212bad7be0c207b3ab27"
+    },
+    {
+      "taxon_id": "F97331",
+      "busco_table_sha256": "e548a384c02dae451ed970527721cc0135e087622d0c2830ec0ac5362dcdd086",
+      "representative_decisions_sha256": "2cf67d8b9165d8a4c735a58fe2d05ff31316caae41f78a690a62a28de50ce3f5"
+    },
+    {
+      "taxon_id": "F1814901",
+      "busco_table_sha256": "3d66de4d5d40ad9fa0af1b45e993d62a054372e0ff713df820e727935275b488",
+      "representative_decisions_sha256": "5ac6b67babba68f26b0365f89f973f73af3a8b3dd25b49404a2cacc8d9a8d0f7"
+    },
+    {
+      "taxon_id": "F2813651",
+      "busco_table_sha256": "c42767c40dbd562ec41c3bb2a4273b4b37626a43f58326365790d10d5caa97de",
+      "representative_decisions_sha256": "4eee733c429ae76d13bcb2e1ed82fdb662d5ee6d5053070612e2e777fcd13fcc"
+    },
+    {
+      "taxon_id": "F1940652",
+      "busco_table_sha256": "b5ad1ef7035532d16f82ae71d23c795154a67d88f104709a530c2d0946816599",
+      "representative_decisions_sha256": "3a39b677b76afca413a3e9d21bf0f6e6bafa75703a8b4496f90d96220362db0b"
+    },
+    {
+      "taxon_id": "F2704026",
+      "busco_table_sha256": "2bf4fead5f436ecc0c6a5ac873c2187e4e660a708edea500186f8ba7a0d85c2c",
+      "representative_decisions_sha256": "ce841143ff032d55ebea6e9a8d3f72182c227ba65df0cb528577304dc1abe46f"
+    },
+    {
+      "taxon_id": "F209281",
+      "busco_table_sha256": "4d260631c07874463449e15537be56d23f71c4f9731611822835a093faef9bc3",
+      "representative_decisions_sha256": "ca707e8ffed05c1521441277e6837ccd3d1f1ca1c932f1b75889cea18ba34945"
+    },
+    {
+      "taxon_id": "F703506",
+      "busco_table_sha256": "1761f83ce555046abf30f5b8f1cda871036b72715d133a776e09bc040f12d58b",
+      "representative_decisions_sha256": "053783497209ce0cd4bad8b7d4cfe135e872e30b4dad7bf00b16bd21695a0794"
+    },
+    {
+      "taxon_id": "F669869",
+      "busco_table_sha256": "73b636ff5373ac7c88f1e187acaa6545c51ea653420ed8a0812808e1f1082d21",
+      "representative_decisions_sha256": "f9566a918fc1ed0db687aafb14494d0654ce8a1767a166d70c1cdae559f7118a"
+    },
+    {
+      "taxon_id": "F52883",
+      "busco_table_sha256": "b24b1ed4d6656b3376de26a2dbeaaf156e5e17dd7471f6e6ceda592984ac9795",
+      "representative_decisions_sha256": "eae2b6bb62341dbee1285a0f4354dfad72fbea564d9f622a4a71c4b87a3a3f76"
+    },
+    {
+      "taxon_id": "F169141",
+      "busco_table_sha256": "5a4f018e87bae02756074da673f69164fef472d9b18292ee7bc4d2e9e59c96e9",
+      "representative_decisions_sha256": "c681d7297806201e3023ac8121e387c4ee47cb0d16b02b4054efa84a80bb66ec"
+    },
+    {
+      "taxon_id": "F443868",
+      "busco_table_sha256": "07b49cfbe05ef8dec31b0a8974e255656fae54e42cf695cb568c44fa90fcdf17",
+      "representative_decisions_sha256": "799ca05163aa3f3ce02ddac5bd23afbeee671a27b2a6d8618c9467097b29f93a"
+    },
+    {
+      "taxon_id": "F1006475",
+      "busco_table_sha256": "1c779483120c5b6338dd098e971b2956f080a7cfcf68c19aefd843ea71d4853b",
+      "representative_decisions_sha256": "ac02d22d6909e924f133aac4bb361ecbe6725cb00677298537a652336209c28f"
+    },
+    {
+      "taxon_id": "F90408",
+      "busco_table_sha256": "4f231ebde6920d55e04e3ad6affd472fcd3a00dc8636afeeeed1b5a7a1571f35",
+      "representative_decisions_sha256": "0512fbf3641218767e887fd36082bf05491ced5c3b325079c9120ee831597fc0"
+    },
+    {
+      "taxon_id": "F1174673",
+      "busco_table_sha256": "ca18eafe2e49a47f71c707e1e8989c5ec5bc18e731e6343191a1e6b02703656e",
+      "representative_decisions_sha256": "0a3a452b284fcd9baff4c4756c4b342dad6ab1cf67da8dc4724ec5d395ae55c0"
+    },
+    {
+      "taxon_id": "F43433",
+      "busco_table_sha256": "bf5ab9cfd7e6c5e058667d7fae3e6c82412e8253aa33d5a42952bb6d92c33ec1",
+      "representative_decisions_sha256": "ad05b9db487b86885b8d22f9a767124239948a875167bf76ac40a62bad78dd2c"
+    },
+    {
+      "taxon_id": "F39416",
+      "busco_table_sha256": "0117d75144ddd648f90a83e145561bee323a16c840b670db02c9de8840f2184c",
+      "representative_decisions_sha256": "2b18942c6022b05cd0a224cda2aa14cf535f7cb21f5dc5172954f95ecd4f4a03"
+    },
+    {
+      "taxon_id": "F158046",
+      "busco_table_sha256": "e18f3d51e567ab8897722b7979cc1c044c2a8a362f4a100f449cdc021c2b3115",
+      "representative_decisions_sha256": "8e240e2e4be3b291876a9c610ff7df19d065e039591771fec2fb353202de7836"
+    },
+    {
+      "taxon_id": "F703511",
+      "busco_table_sha256": "75829f4a396ca6f29001d53444064e02628dd4c244fcb9afee25579d3b1523d4",
+      "representative_decisions_sha256": "48e938713fbc70c82f39126d8fe161c9c20ada9077984d414a04edb5c6d6bb5f"
+    },
+    {
+      "taxon_id": "F4927",
+      "busco_table_sha256": "86940d536c6a49e00112b527cb0a97c0fab3cb772ad2be5d54d7cb35283364ea",
+      "representative_decisions_sha256": "7abf996dce1fb953168126173646533cbd909acd5bbf2a840477d221a04be1cc"
+    },
+    {
+      "taxon_id": "F599730",
+      "busco_table_sha256": "1d8d023868aff75a22cb206ffe053b0fe45a2e64919a404ebc5366a2fe073bc0",
+      "representative_decisions_sha256": "fb885c103547b50e1d234059eb70f27e49d40c423a3a80c7168010b00497463f"
+    },
+    {
+      "taxon_id": "F4903",
+      "busco_table_sha256": "2e5fd6503e6f46203b4f38fe26860c84d93d9875e4fde88ff84f945bfa7fb5e2",
+      "representative_decisions_sha256": "81e397080d4c949f1c7e8012042c90d36cb5e95c4cd346ac8e2ff3e0d87d616e"
+    },
+    {
+      "taxon_id": "F1825666",
+      "busco_table_sha256": "405c2247547b53a87f8a50f8b47fb487db8cdcecfaae0889015d5358524ed0df",
+      "representative_decisions_sha256": "1d8bbd4453b18ca0c030f991d81f1fac29a7c276380eefe2ae4f339e160d0948"
+    },
+    {
+      "taxon_id": "F1276059",
+      "busco_table_sha256": "496cfdadf17cda15ad4c588c67b395f12c65cdadc7436953a4572530c6cfbb1e",
+      "representative_decisions_sha256": "f9c19636795d2e9b6b7c83763dd35c25ecb4515324718835613a684420ef7a30"
+    },
+    {
+      "taxon_id": "F13502",
+      "busco_table_sha256": "855f12f48aaedbe233e15b5e58ede7198411267d392825e36863eb9c793a1365",
+      "representative_decisions_sha256": "ceb2569e2d11ddc65431a157107669e8aa8f2125498dfce95c922baf99d33774"
+    },
+    {
+      "taxon_id": "F1005962",
+      "busco_table_sha256": "4fe7bf36b5ada6cbd50d1cec302973389998287bb6edd0e71997b004abad65a3",
+      "representative_decisions_sha256": "b9514d0039b5b586c95334cb8cdb64011b824da90ea4fd1f59ceb31eb291b29c"
+    },
+    {
+      "taxon_id": "F4909",
+      "busco_table_sha256": "0e6935a4bdd0252b5a00c86120eb3350fdbd8fcc23129638e374f53876d958ff",
+      "representative_decisions_sha256": "b0b90973a985efa1b9aa415873d65ca93396d1d67565ce292f175f998a752f60"
+    },
+    {
+      "taxon_id": "F48095",
+      "busco_table_sha256": "3dcd6b0205d9620cdd109fd74704b8d1af3d211fe25fe6af08bf822546c19bb7",
+      "representative_decisions_sha256": "a52bb793faf975eb6ce78e3a556c37d57e4be73a0dad3c21425ed4c609aa5f44"
+    },
+    {
+      "taxon_id": "F5454",
+      "busco_table_sha256": "a906a8f0c1dc349b5e5e1b302f4a08594bb9e0021652a358e6a4d31fb3f4aeda",
+      "representative_decisions_sha256": "4b4f75c82f3aa4679c614dfdd1ac4e30a07f69a05c82c86c732aafe16c787159"
+    },
+    {
+      "taxon_id": "F5022",
+      "busco_table_sha256": "4fb9b8c7eda879c5e5e5ea1b087e8c9dddb55d1665f3c9fc3a6d1b2ccba362e5",
+      "representative_decisions_sha256": "a24dceecb1b45da9e56d65492582b108262a76515641c61410fbf5c4990b7d04"
+    },
+    {
+      "taxon_id": "F4754",
+      "busco_table_sha256": "95ab81c2eb6750df07a62d5779dbd31fde785bcee06bd77bf5fc549ae0c8c101",
+      "representative_decisions_sha256": "f46cd2e9aa03b7a0123dc2102dcd610e4c78d8f9179302cfa2bfa25a204f7587"
+    },
+    {
+      "taxon_id": "F42068",
+      "busco_table_sha256": "c35f8d9001fa75d470098c8049f1ee66634fe16a52972794f5ae02e302b696cb",
+      "representative_decisions_sha256": "0d6f9dcf5f184b12b15004d4251ee7b76c5256db9338d332517cf8980d544215"
+    },
+    {
+      "taxon_id": "F263815",
+      "busco_table_sha256": "008f35545f08a695f7e689535b9035385e19ee2d6e7963a65ae6332e2de52b8e",
+      "representative_decisions_sha256": "d0bf1d809fdd781f3ac290dd7f9e563aeaeb78b27fb5eb4e9ec406cfd9232687"
+    },
+    {
+      "taxon_id": "F2977754",
+      "busco_table_sha256": "09ee0253167c97dcb10169b6fae62ceb59dc5f609952ed2fe077aee8ea1bb491",
+      "representative_decisions_sha256": "16e15f9f9d4c64759be6b2062690519605e89c583b26f95909423be559d64c3d"
+    },
+    {
+      "taxon_id": "F3060298",
+      "busco_table_sha256": "c521cbdf4274dfd9820ceaa3ad989eee9ef61f5dee4d33dff6a43a4d00b1e2c8",
+      "representative_decisions_sha256": "4bf34138c040f044d754a95acb57a46c480ed011c9ae19b9c1148dca3dc40664"
+    },
+    {
+      "taxon_id": "F1453789",
+      "busco_table_sha256": "3b14ddd8641dc054c1d4b89c6b045f619040819d939edaab5667e96941e3bca7",
+      "representative_decisions_sha256": "c5c0ec70e4ca973383c99a44c9f9887e5f655bc6313d5e9bd6d0643148a367b6"
+    },
+    {
+      "taxon_id": "F706196",
+      "busco_table_sha256": "d5028eba13b7708771bcf423d683c1dee41ac3cf2a9d923d902c7cf9263be095",
+      "representative_decisions_sha256": "77d7e2c44200eb811ae05adc96eae31c93ea267bcb693f9357b8d36370e405d0"
+    },
+    {
+      "taxon_id": "F4932",
+      "busco_table_sha256": "cbab2a1d843206d0188d99604d2b8b496437dfebd6f70f85954ad92cfcfce5b0",
+      "representative_decisions_sha256": "50576fcd95a6a56557bc6937335e01bf94ae9312b0971477ced3ba2a63cc64d7"
+    },
+    {
+      "taxon_id": "F332112",
+      "busco_table_sha256": "db126a4f8db531332f4140a70adf50f2e992b6a5aeb0b3b5321184a0c5329c27",
+      "representative_decisions_sha256": "180de3f572f9289d0156663d85741173be4d3f694c9718e75a27a3802881085b"
+    },
+    {
+      "taxon_id": "F1080349",
+      "busco_table_sha256": "2b5166a40cce3b2443495b5bff727c536df12e466059a322171230430021f230",
+      "representative_decisions_sha256": "6ceec28d8e2e0adbab43e5b5a6e63d031fc7d7afa51e530c2f1c808a62adff80"
+    },
+    {
+      "taxon_id": "F114524",
+      "busco_table_sha256": "06144159bcc8e2b424c8d6d53d53d5cc6ae4e8ac71eee548470382e6d1909a59",
+      "representative_decisions_sha256": "e14feda9e3ec1da0c404259231bd59fb55f3a1db3c63b198c574aba3a1832e86"
+    },
+    {
+      "taxon_id": "F114525",
+      "busco_table_sha256": "80fe570ac8b11abbf2d3d0e0416024687a6377c12a2f69182a035a95c935c9ac",
+      "representative_decisions_sha256": "0610ab632e5e8f1acea40d995669561a32558d88f5579080a23d4100d8ced326"
+    },
+    {
+      "taxon_id": "F27291",
+      "busco_table_sha256": "b2f187da7915420c298ee80d95c9066d41b68d8853bb6ce759552fc06406d648",
+      "representative_decisions_sha256": "6e98d395e1357f7f22f1ac55696f2276799f02c0edfc84267711a91663b3cee5"
+    },
+    {
+      "taxon_id": "F27292",
+      "busco_table_sha256": "1a87610a41acf84447152fc420b61df9db1f7ee0b1a3bb6b9d558d46f7e17734",
+      "representative_decisions_sha256": "a45083dc707b904995b16db986651f31ffc0ed5da8a0ae8048992052fad547bc"
+    },
+    {
+      "taxon_id": "F230603",
+      "busco_table_sha256": "1cf08293090db1c90afac5ef2c37909d6ee0930f11e972e6ce533196e7036352",
+      "representative_decisions_sha256": "4ecc9e55787ab155e3a739697de0451be8e528328bc054748fae6b98fd515ec3"
+    },
+    {
+      "taxon_id": "F29833",
+      "busco_table_sha256": "4903f07adab6a6b2e6eb7d506887cd0e5e545ae556f8d1d96cdd793e15f58ce9",
+      "representative_decisions_sha256": "97bc424588565e814e51ea5c9c4eeb56686ac4c8d2d0d6eb6d22e115486fea8a"
+    },
+    {
+      "taxon_id": "F56409",
+      "busco_table_sha256": "78ff54eb0563b7bb926a04e6472356815a16746119155d21c1f80070e863dff1",
+      "representative_decisions_sha256": "f18631e109e5079cdfc8266156d8390846642143a5dc641d010c984790bd61c8"
+    },
+    {
+      "taxon_id": "F36035",
+      "busco_table_sha256": "f7475b48900d258e87b37cac53d65e2d1ee50c8a8e382030076a7fce4ca3296b",
+      "representative_decisions_sha256": "e57ddda45aef18c4a716a56cc216e291b369da57fadea6ff7636c5a24b3bb012"
+    },
+    {
+      "taxon_id": "F1099800",
+      "busco_table_sha256": "6d9d37b0e2db13d76d43d68aa0fe573ebce9698452d238480251e57ae9e9e296",
+      "representative_decisions_sha256": "a69e2e76d41700b3a826be5f8b26e4134fd5625c08072358118f8e418460605a"
+    },
+    {
+      "taxon_id": "F5606",
+      "busco_table_sha256": "e23f540f70c925eb3fc32a8b0f3d52d99262214a8870caa78ac7cf38c16744e6",
+      "representative_decisions_sha256": "d851b191be603e6c4975fd8148e251003714e0e187d0bea6bdbd82e6f59a1be8"
+    },
+    {
+      "taxon_id": "F273283",
+      "busco_table_sha256": "fe6628aff9e15318be927964af320924db5b3117c30007d9a7178962719ba751",
+      "representative_decisions_sha256": "61ecca744c01b13e6b455e447707425497779501f0e39462499d35a0e559407d"
+    },
+    {
+      "taxon_id": "F400354",
+      "busco_table_sha256": "dca3113663dc6d6b1357484464afd41c6789ea3d628a154953dfc5c3ebacc278",
+      "representative_decisions_sha256": "48eece161d338fa8f8583739f973c621051929827b7e4b1040ba93fc4a0821be"
+    },
+    {
+      "taxon_id": "F1042397",
+      "busco_table_sha256": "563aa2f1cef2f8e94fcc2e951d7c527c89b72bd0bb4210108167f936b04d9efd",
+      "representative_decisions_sha256": "0842905194127dacfef62f9267d0245b2b34b091e19c681d8148d782f4e69bf3"
+    },
+    {
+      "taxon_id": "F4897",
+      "busco_table_sha256": "a5669fcea85c66b0a1a639afa4a580c13bdfe8c2649233395bc5ec46072cad29",
+      "representative_decisions_sha256": "3c78cb0c5614211310544cae55c686e1e28d42659b02645ce7051dcbd5d7d841"
+    },
+    {
+      "taxon_id": "F2545709",
+      "busco_table_sha256": "5ef4f31ce64fa3b736114295da954aeed3b5d8439fc30431d98311e4c54795d4",
+      "representative_decisions_sha256": "b036c16fb8c20cd54a0f8e838ae514b9c63feff81127a06ea2e4ed3bc96a679b"
+    },
+    {
+      "taxon_id": "F4896",
+      "busco_table_sha256": "a0249fc88c3c13d9c4c5f59b39444fd78aa059ce51ceeb080c5bc7a2f7b480b6",
+      "representative_decisions_sha256": "d8a7b2f33a0631e14fa02c443dbca1467104f6b6cd8c15e20eb17ec9ccf4c785"
+    },
+    {
+      "taxon_id": "F241526",
+      "busco_table_sha256": "2b69035bd956128d8625831a77dab2e23b7b29d58547875f5e9b9b6bd467b490",
+      "representative_decisions_sha256": "76cbe056207166c8fdf6d4da7c0a3f01fd7a034955e0ebd243c2bdd1a8cece40"
+    },
+    {
+      "taxon_id": "F5476",
+      "busco_table_sha256": "ff2f87ad72b059f6aa667516eabda725eba03a8c46956a9451f184f93ce084d5",
+      "representative_decisions_sha256": "536d1a2fc77621f38033561429133fa6117fa1e959213dee37c64e95ca5bb29b"
+    },
+    {
+      "taxon_id": "F42374",
+      "busco_table_sha256": "b2015181d210eec559c41fa33e13ca5e6e6bf54adff5ad9da7f8c8295dd1e82d",
+      "representative_decisions_sha256": "1b1f2c2833f2c3980f467412e690cdcecf19e4a2ad748a73715b80fd6cd6fd15"
+    },
+    {
+      "taxon_id": "F5479",
+      "busco_table_sha256": "8c303f2719c02c9e9fa0d47554200ab897f2102ac3e26fad3747c05a1e67efed",
+      "representative_decisions_sha256": "e54691b1b1c74b04c0c63939deade5723933541756626d5bc7498dd4cfe94d89"
+    },
+    {
+      "taxon_id": "F5482",
+      "busco_table_sha256": "00c5621f2efc7a77f9e5a528604e6853d2236c1190ed72e8e12645a714eb9439",
+      "representative_decisions_sha256": "36ca63b315de3ca22703345f546d3d7562d84fe62ec82a8536326c2293779993"
+    },
+    {
+      "taxon_id": "F5486",
+      "busco_table_sha256": "fa6ae16594c470559f3238cb40eb9cd1fba99fde521949a9aa9ebf29e7714d9a",
+      "representative_decisions_sha256": "50be320d1337640f952bd508e15ad32fe7cc53d03166bb746de370f3138f03e7"
+    },
+    {
+      "taxon_id": "F2609844",
+      "busco_table_sha256": "880798af528a76758a691433b97ac3616d6d86710b3315f2190a7a4a74bac3bb",
+      "representative_decisions_sha256": "c3ffdcd28ce9e00c5c4154e4a54aa16aca18dfb6d1d43db8aec0d340e5996690"
+    },
+    {
+      "taxon_id": "F72144",
+      "busco_table_sha256": "bacd47cf0ec5bd251b5debab090d97ccfc0c2d6f74936f9531e8a0b13cceae2d",
+      "representative_decisions_sha256": "b5423808c01b48702a8db070806da2221f19ae35ebba307efb6b1aa5deb8b835"
+    },
+    {
+      "taxon_id": "F5147",
+      "busco_table_sha256": "aede1e32af6c5b8937327d6afba676570cf5ca32a3b30e10c19d0e4382cdc8b2",
+      "representative_decisions_sha256": "be7e2f073ffbe6f43bcda57b913d3289bc4811625120e6c1b885582f3e54f20b"
+    },
+    {
+      "taxon_id": "F2754530",
+      "busco_table_sha256": "d3e001decec5d50adfc79aa6196db81a8d71be08382fa35321fe3911b7d75fa7",
+      "representative_decisions_sha256": "082ea3b104993688804223d7a213c91a7e34e31975e680c310fb5895910c6e60"
+    },
+    {
+      "taxon_id": "F5011",
+      "busco_table_sha256": "1599c36d51e55aa9ea7044ef879a49d39e3a0989ba770ee686ad6534f24e5896",
+      "representative_decisions_sha256": "2e11d3a0db2c85a8655e78e5adb17dba473cc2ad82f134f0633e1f0233839de0"
+    },
+    {
+      "taxon_id": "F1145299",
+      "busco_table_sha256": "70b80219f85771fb0f1e04687b7a3a65c0c20f324768e112d5e41f7368d1a88f",
+      "representative_decisions_sha256": "6de3889fa563d67a7e7b9c8a8796f4bc6dd0929e392a0a75a0eb90b99482aa5f"
+    },
+    {
+      "taxon_id": "F1145321",
+      "busco_table_sha256": "f2b36e9566bcfd367a216971c45bf1be45e9748f4ebc3cd209ec197aaad77d6a",
+      "representative_decisions_sha256": "79513ffcb540808b7ac071838cf4fe9fca60c2593cdeea9f61de8a2f5f152a2d"
+    },
+    {
+      "taxon_id": "F116982",
+      "busco_table_sha256": "2394ff71c569379e1d9650927e0487a98a127c7bbd953b0b3b1b70359e67a2df",
+      "representative_decisions_sha256": "f7a2ce0db1ee27e29d7a474b44317328d4eefb565dd8f98f89ff6c1b99fec4a5"
+    },
+    {
+      "taxon_id": "F3342545",
+      "busco_table_sha256": "ae2ab1cec36454f5fd7046b6d0dc8a34214dc643ae8a425e254a584202a4455c",
+      "representative_decisions_sha256": "ebb9d5724b2869906067b8a10da1ff171c9035b02e30a4844a9db400c7bea96a"
+    },
+    {
+      "taxon_id": "F655981",
+      "busco_table_sha256": "07bbedc1a133eb3d0181065bdc9aaa7d0e9018cc80c6c5392477d72f1890d2a3",
+      "representative_decisions_sha256": "06b5e528ad92bfaded0143a7fa2cf27ad845ac1a7eccd3f54b50515e69dbd47a"
+    },
+    {
+      "taxon_id": "F342668",
+      "busco_table_sha256": "65566c15c03dd82071a37c9389158a20912d3e226364c7a8e026f869b4444ccb",
+      "representative_decisions_sha256": "57746e3f098f06bf2e5a834f55abad7265c0ca7cf12cd6a307c9f7061c779cd0"
+    },
+    {
+      "taxon_id": "F1116844",
+      "busco_table_sha256": "bcc83c248409304ef498f9d78629c356bcfb7498cc04ab3ca0babb9ea04c11d7",
+      "representative_decisions_sha256": "ac1e9e41498a846fd6a0ad6a7d34cd34af83c9d3c0757f01ce4fd13bc0023aa8"
+    },
+    {
+      "taxon_id": "F2939404",
+      "busco_table_sha256": "7593f69156d639890f4e07e3786fa965dd13fcb1cc3b52defead89e2ed0c5db1",
+      "representative_decisions_sha256": "6ff46ca10dd9c599c8edd45872a4c26dac9d8502128753e4b77819eaf3e7d909"
+    },
+    {
+      "taxon_id": "F1093900",
+      "busco_table_sha256": "c4a7e6fc246aaec2dd2f395e2c2ad5bd4c2da60c30a11f94265916a12c80da36",
+      "representative_decisions_sha256": "55000a32020c77c4253954e07b98d795183aaf916f357de9753917293df5a6d5"
+    },
+    {
+      "taxon_id": "F223192",
+      "busco_table_sha256": "511155c5b0459f186db77e212f041282442a4c870b165b69f4661bd3b1d3dd1c",
+      "representative_decisions_sha256": "ea341204642b0513e948d12b529918b9d3faa23d779f79926d3e856c60c41976"
+    },
+    {
+      "taxon_id": "F2918522",
+      "busco_table_sha256": "720a40184b792f5024b47c6f29ec231a2f246226bffc571a9cb6fa7b79889d51",
+      "representative_decisions_sha256": "4d8bdf75ba1bf60d170f29e699911d7a85656192cea69fa9f718c0648f98e4fd"
+    },
+    {
+      "taxon_id": "F129515",
+      "busco_table_sha256": "371841b80a3c399414179af2f5b3b173f5d6d7f6f0f648f27f1714f545154a37",
+      "representative_decisions_sha256": "3de34918b5538ddad5fd2094fb47a71c2e281be425842ace8fb1eb1459b3018d"
+    },
+    {
+      "taxon_id": "F51930",
+      "busco_table_sha256": "9a9902332a5ee8e15f40f7a4a9caa798e95e236434eb8cd4e2477e2744e628ab",
+      "representative_decisions_sha256": "0200a1915484988a26887d666d05138ffb6155066c0776f5acb7ec06c36b879d"
+    },
+    {
+      "taxon_id": "F2939406",
+      "busco_table_sha256": "cfb8993a9a544fad97ea227f0f2a890380fd107eb6ec4c8444c8a4a467735ffa",
+      "representative_decisions_sha256": "8a2943a621ebbe53a0264881a7f79b110aeab5a1701e239cdee0d5acc7df06be"
+    },
+    {
+      "taxon_id": "F364730",
+      "busco_table_sha256": "ec27c45f548e47f33ee918be765d9972cc6c88ba1999258c46a4e1eb8574cd72",
+      "representative_decisions_sha256": "8f013d3c7ed595fd6e652da7591e29e7caddc3a95c51c51b5e32a335ffae56fc"
+    },
+    {
+      "taxon_id": "F1048519",
+      "busco_table_sha256": "5438d0b4380bdaf15d968d613f172d9a16e75a696b53ee9ff7d52ef4e7f62672",
+      "representative_decisions_sha256": "a8ad1547e972421cae3ae1e33e3a2ab139cb57535dddb8524b456f4fe138da88"
+    },
+    {
+      "taxon_id": "F318760",
+      "busco_table_sha256": "2e545ad0ff0cd650d9847e785e448a452f1b80fb359118d3c9540a017f82b1b4",
+      "representative_decisions_sha256": "e00dc6599c84cd27f2f5cd0037a6dbc726cd4193287bc1a294b9e15365360d0a"
+    },
+    {
+      "taxon_id": "F136370",
+      "busco_table_sha256": "7795663c06551d04ea0910fd0e5964c09759639ec78b550d45cb0ef9cdd06971",
+      "representative_decisions_sha256": "28545fa906ab3455a862d719dda5ca5ada564846e6241f1605c381b346059a6c"
+    },
+    {
+      "taxon_id": "F87287",
+      "busco_table_sha256": "86a150ae477b3f32f7853c12894f970869bdc7803a01b302fef55accf01eb6f6",
+      "representative_decisions_sha256": "7bc68658b8565016896158dfe12bcd7980d3f94b934642b168552ad7ddad5b28"
+    },
+    {
+      "taxon_id": "F1048955",
+      "busco_table_sha256": "b7a4b9ec55a74c14f1e37c398634c617be51e8d349e4ee0fa2a330cb0fc7b8d8",
+      "representative_decisions_sha256": "4cdcfaac854f0debf0e88c739ad650a3efccd1fbdb9987b0c228b3e36e824b9c"
+    },
+    {
+      "taxon_id": "F50376",
+      "busco_table_sha256": "de1dd4875f69ad960a0d1c98d8048b92e4947a06a934873362bf876df9a3eea5",
+      "representative_decisions_sha256": "b04ad387c4e1dc7e9e52ec407448ac16b6f3694d7e88adf68505649ab5e0b5c3"
+    },
+    {
+      "taxon_id": "F253628",
+      "busco_table_sha256": "dce230406a2aaee5de7b5a08d3b947ea3f9b11fdc09d233d2a93097e0536c742",
+      "representative_decisions_sha256": "9e15d17f2d21985f81153e47eeefd017698ac091528b825d6a66a397bafdfc8f"
+    },
+    {
+      "taxon_id": "F364733",
+      "busco_table_sha256": "aabb64eaa3ab8b74e196f008803a62b78e34e561e866324b586411b695d9b5d2",
+      "representative_decisions_sha256": "898e78d754212739a2477a4d1482a19b081b94135cdcf55fdc9cde65724669bf"
+    },
+    {
+      "taxon_id": "F2939408",
+      "busco_table_sha256": "a73ba0039d807267d6b321e2ef66ae250e0d641ba7780bf2d902e6b65f9f193a",
+      "representative_decisions_sha256": "857ec0104e31bafebb85bcbf0d13d1ec57e82d1e784083fde7befac3469f41b3"
+    },
+    {
+      "taxon_id": "F2939405",
+      "busco_table_sha256": "a2dd08c0c4af7abf28afa0a172dba02b3dd8e39c26f4da0c6ca6ab3fe411e91c",
+      "representative_decisions_sha256": "65cd7bc3070e536bccc20eda1fe8ba453a5af08c62a2bca12d3f71b3dda77d4f"
+    },
+    {
+      "taxon_id": "F326681",
+      "busco_table_sha256": "d4aca328f7e0f953bc04beae08e5e69d33c37e275419765e66da93f0e96535ff",
+      "representative_decisions_sha256": "c976a61064daa951071a46b78cac860b2df7364ec1b313ecb4712e26dcd2c29d"
+    },
+    {
+      "taxon_id": "F1682393",
+      "busco_table_sha256": "aefb4ba11593acf498e1da9edad21b4e887b8f3a3553872099e50892983ed3f3",
+      "representative_decisions_sha256": "d6c1d3527083c31b209c8d5a4f0f22bbce0bd6488ddcc6f453433dab306538ec"
+    },
+    {
+      "taxon_id": "F326684",
+      "busco_table_sha256": "bf6a81d32378bfc7c56d29852cff8e58ae7e6933463da697a1c31b6c5d427b1c",
+      "representative_decisions_sha256": "56cbecf6d30545f82efb3d47c60d9ea7440c6d71b9434560b2ee2aabd33f626e"
+    },
+    {
+      "taxon_id": "F1130053",
+      "busco_table_sha256": "4a6859b44e50c02973d3e5f72f1269b2d14be1116e74de0e57893e29b30a76a4",
+      "representative_decisions_sha256": "1d7ea232e13d5fbacaa54847ba60799bd7912537d5b5c60e05d3c8e0c0dc84dd"
+    },
+    {
+      "taxon_id": "F1217826",
+      "busco_table_sha256": "0e55f112da36968d1a0165fb4b0eb14121011d5e203f3fedb31d3f7f93bfdb9d",
+      "representative_decisions_sha256": "bd78fe8a8ad76e32b79d67cb34301e38d12a47e32ae2bc799aba4c4b8b2b8434"
+    },
+    {
+      "taxon_id": "F423460",
+      "busco_table_sha256": "98604729c6980863759adc3eaef6ae9f7bbc876e140cfe70ea45d5daee007740",
+      "representative_decisions_sha256": "e847346afa420acae11f6ff26b7e48c2ef308ac2ebb4607aa22be172ea95f42e"
+    },
+    {
+      "taxon_id": "F34480",
+      "busco_table_sha256": "c4a2b78333eff16d4ac42719e3a9c7124fd88b319b13b68fd7249d679f14c1b8",
+      "representative_decisions_sha256": "99d5635824157681b85650b371dbe8cca477b15bf80259127809f77d2739889a"
+    },
+    {
+      "taxon_id": "F87326",
+      "busco_table_sha256": "90bdd318c7379d39bd80e15c79e5b4225ebd35e6e238d453f4d3d75098965c9c",
+      "representative_decisions_sha256": "ad99e05f70949a1b11a63e7c98ae6536b57a46c120131f3da68b630e6fee74ce"
+    },
+    {
+      "taxon_id": "F933333",
+      "busco_table_sha256": "4f55410819f9989fb180a1c88400cd610022c3c07381f3c56ba57e848ebfb17a",
+      "representative_decisions_sha256": "c5f169d408bdbb2e4c407a454b98ac713ab12c0289d7bfbdf2a66740a27a09d6"
+    },
+    {
+      "taxon_id": "F41956",
+      "busco_table_sha256": "562afd1622f53e168f131eb022b38a010086e1ba5ab3408007fb810aa98bee64",
+      "representative_decisions_sha256": "2c2556897ee23c0655512bf106576c2b5f0e54dac47a365dd9927f6277b042a7"
+    },
+    {
+      "taxon_id": "F67723",
+      "busco_table_sha256": "73cd482ce9ef9e506084b7831e1409c87aaf94265b1903c3efc384a347c6dd85",
+      "representative_decisions_sha256": "1f4c93cb92eb0ce2fecae4ea2d752dd249bbd9531b2fb804851b5449fca09942"
+    },
+    {
+      "taxon_id": "F1004511",
+      "busco_table_sha256": "31e9a5ed21e57886c03a57a82a34bb9853a4bcbc24bca2bcea10bff71f2f7e70",
+      "representative_decisions_sha256": "99c09e30826ff343364f4d2f88b67f03886b96a576e75f461cfd514330d1575d"
+    },
+    {
+      "taxon_id": "F71933",
+      "busco_table_sha256": "bfb00d64b0c961abf3a6a48646438442bf478789c3b16342f7f14bb59120a087",
+      "representative_decisions_sha256": "cbdcb5d98373f3bfc90b00d631158adeb65ad07f5ce3cf458a5b46b59bebb759"
+    },
+    {
+      "taxon_id": "F235537",
+      "busco_table_sha256": "90a03e525998ec72ace8ef259ccb7b6643336feb5799375c8c7875027f193b30",
+      "representative_decisions_sha256": "cb359091eb7f178e272f0559bdc9b154397bd8613ae32d4027de1c18f3cd56af"
+    },
+    {
+      "taxon_id": "F89243",
+      "busco_table_sha256": "6d5995f6fe565b92c2183e1968454ed5b804d56c7dba8f81d7a78e41e268d1d1",
+      "representative_decisions_sha256": "84cc81b0fa220ad9d64e31c0cdad4ba5f5d14b72c3023d9611cdd624bf07a92f"
+    },
+    {
+      "taxon_id": "F29883",
+      "busco_table_sha256": "2cce1599409056b7c76a6422fa5d5bd8b6b72b6f081ad698a4205ee60d0e5b2c",
+      "representative_decisions_sha256": "ed4ae3d0709361b17a5bd8802563deb22d377d24389cbd10e192fc0b36fdb962"
+    },
+    {
+      "taxon_id": "F44565",
+      "busco_table_sha256": "a10afbcaef7c57f7cf11611cd997aa34c7d0cab1c3ae27758ce3b81dea207dbe",
+      "representative_decisions_sha256": "2bb4a11ff184d10d1692d5c3a97b89e2165c94f9867c8120ce4b1eb96e46778f"
+    },
+    {
+      "taxon_id": "F2831993",
+      "busco_table_sha256": "8df8700a6f550bc99b87a33799f985ea7542d05dc78193950917580c315327f1",
+      "representative_decisions_sha256": "cce16dcaeb06a6f0b094e5fe71693d4bde8d36212a71282cbeb64bf8ea33d408"
+    },
+    {
+      "taxon_id": "F1759441",
+      "busco_table_sha256": "ea7660826e7c379e10b20b0b378b0ce7c62d7f8d60e85ca5eb38ac69d3b0bf20",
+      "representative_decisions_sha256": "f575c0f226508312e38b8aaae674c6ee622b07e0c82ad6fe785c587b9917dcc0"
+    },
+    {
+      "taxon_id": "F2748771",
+      "busco_table_sha256": "c7a38c699ea887790da359a78dc4a66b1d4cf0ecccadc952465f72805de54a7f",
+      "representative_decisions_sha256": "39b1a43ca2916607a8e11e85021efca572a7e6d2ef0f7290b7d71ae958c4d86f"
+    },
+    {
+      "taxon_id": "F80663",
+      "busco_table_sha256": "fc22587e29130b559dae2944344ab561047c63a42dd16102d55fbf7476a56cbc",
+      "representative_decisions_sha256": "8d3afa29da65f7e2a298e35162c20e9393b4632f17728351b695b11d75115bfa"
+    },
+    {
+      "taxon_id": "F1938712",
+      "busco_table_sha256": "b026e4136514ddb8e4472d131cd0efeae84195160c85909111ffa7e117329656",
+      "representative_decisions_sha256": "cae9c72831451153991bcc4a14ab1503bfeb3bb915b3d109a0e050f43ef1285d"
+    },
+    {
+      "taxon_id": "F1331295",
+      "busco_table_sha256": "4589ec43ad091ccd889913c835ce62290fe1e2ecdf9e3ce05ef19784845b3c7f",
+      "representative_decisions_sha256": "5e29b98cdb45a0ddd31c1dde67104f7505bb3600973d671482f958aac2550c85"
+    },
+    {
+      "taxon_id": "F2829486",
+      "busco_table_sha256": "9daa188cb7743cd2d5f657045dc00729d97d8473eee088aadc37fe4faec548fe",
+      "representative_decisions_sha256": "19e1c0adf1dd33c7e1ef951596f3c0a3885a741860eb0abf1910d6282b9779f1"
+    },
+    {
+      "taxon_id": "F5219",
+      "busco_table_sha256": "41de35d1c0343dbc4f01168a1e6bda93c3c9d18adc5443c691d1ac75fc489e23",
+      "representative_decisions_sha256": "f1d3763d8d1920641cf7c60e508a9bb98e517f81f681565ad62078eb1c3bf012"
+    },
+    {
+      "taxon_id": "F48563",
+      "busco_table_sha256": "6f9bc76a2617caab6cff406e1da7d275857a56e1a7ff8605894b74c16ed19044",
+      "representative_decisions_sha256": "a024a7f496a69437b895e1a6aa5c104315d09904973332c27dea54d1d0bb5537"
+    },
+    {
+      "taxon_id": "F48565",
+      "busco_table_sha256": "1246bde92dd8f3e057f2ef824574dfba483fc0ccea181cc91f6a185308c49605",
+      "representative_decisions_sha256": "f93df40440cd66976f9e31ecd4c6618488c73da208b707f28ebb9871f2ed467d"
+    },
+    {
+      "taxon_id": "F1904413",
+      "busco_table_sha256": "8b4665fad3eb9d67e3755409b4e7241de0301c9d5d65c895dc065b283bba732e",
+      "representative_decisions_sha256": "443d89046105604d9ed859ae7c24a982d61ad59fb3d1b6a5db7ce446315394a4"
+    },
+    {
+      "taxon_id": "F1912936",
+      "busco_table_sha256": "c083672fdd036079e679e4eaf5c4f3621c3b856c39c5b8241ebbfde7a5298243",
+      "representative_decisions_sha256": "69f7a1197ff628253f932418ccf0c5bea2bacdd15851c0d15892b2b558012715"
+    },
+    {
+      "taxon_id": "F1912939",
+      "busco_table_sha256": "7a7fc926c2f329da17b8ff9ebdc015619a1f979eded43ce9e5abb8d3d8ece97c",
+      "representative_decisions_sha256": "4ce79c2febbf1f3178a3a3014b827916a54c02c9072a56038440cb1cca4fbd76"
+    },
+    {
+      "taxon_id": "F48578",
+      "busco_table_sha256": "51e9f5dd1c00fcc6d78681ad8e4e760d2bf7f867ce85a452d0f29e268517d20d",
+      "representative_decisions_sha256": "12b16aec61898f9f205d0e82b0cd95bb8e9f989c976a7617249f8bda78d6ba95"
+    },
+    {
+      "taxon_id": "F116603",
+      "busco_table_sha256": "03edb921e1c172a6324e8429e12af4a55561f5279dc2de465017c18ea0211db9",
+      "representative_decisions_sha256": "c3dbcbbaacd9fed9402bfb9be31f8d34bab9a9d4d9970d152e6c071e66f72420"
+    },
+    {
+      "taxon_id": "F48586",
+      "busco_table_sha256": "540ab901b8e2db767545494245797b8aec767c103400dae674ad4a850ad77d6c",
+      "representative_decisions_sha256": "72eac72b033aecc51ce2d9098531821604508d7955ddeffe05b02b398e6593a6"
+    },
+    {
+      "taxon_id": "F48587",
+      "busco_table_sha256": "ca209378e86aae478bfd957733c4c10c307c59ea948746bb5afab686ace8170c",
+      "representative_decisions_sha256": "a20e30857fefa3fc73789e453fff3a1b71c0f39a04509f50e44b7663f289c0ce"
+    },
+    {
+      "taxon_id": "F48593",
+      "busco_table_sha256": "433ba27cbd3b04b256985f92adc3b5563413aeb480859f1658e8a2e36a48ad02",
+      "representative_decisions_sha256": "78285de4e6a3415da58048e3c41c1a28668ed00c89a53462a114e3785c4321a5"
+    },
+    {
+      "taxon_id": "F264124",
+      "busco_table_sha256": "e3b396e1612b6904a36654a2cddf9b1e36974eaa45964e1631dcd7adc983ae60",
+      "representative_decisions_sha256": "50086d81d7cf4ca0e494bea3659f5bc031876e531028c69e9d076f78434daf3a"
+    },
+    {
+      "taxon_id": "F1750568",
+      "busco_table_sha256": "020a982d12c6b6cfa8be609188f4a6d427a06bf884e773041d16df8efd0147c0",
+      "representative_decisions_sha256": "1971425ea0e017c8ea6c3288a9fbd7a10ecb542387f8dd41fb5602ecaed3db79"
+    },
+    {
+      "taxon_id": "F170446",
+      "busco_table_sha256": "13c8be2877e5b6c85d9a920044a683fb06a4c6c86d6a7a336a1dfe710c0bec78",
+      "representative_decisions_sha256": "f5540a73f65994600c4946139b069939529c089bc251bf692e716feea5942b17"
+    },
+    {
+      "taxon_id": "F139363",
+      "busco_table_sha256": "894bc44d4149b30c4693db761d990430c7efb9f3ba24e44978387cac33eda818",
+      "representative_decisions_sha256": "ec1d63609fefb460bba01fded17e758410b79bb6c16f53d79b6497f0b7250d76"
+    },
+    {
+      "taxon_id": "F456999",
+      "busco_table_sha256": "f7c318798641c651b8a741e605450409b55603edfbe1609f16244d5fd4fb4da3",
+      "representative_decisions_sha256": "492fe79a383330898ebe91978007d929924ea684f05189f0cd7a41cde6c356da"
+    },
+    {
+      "taxon_id": "F156515",
+      "busco_table_sha256": "8792ed53e01eb492c40b9a949ac91fe9b0d270a09e2b9b1827fe7ef36b3d2c3e",
+      "representative_decisions_sha256": "202f989a1a53a84bfdb91572a407a7600f65f672490d7bbface12ef7dd1e9b5e"
+    },
+    {
+      "taxon_id": "F401625",
+      "busco_table_sha256": "5a10bc38548f6de8e75d6c78fb691c038c8e042efc763115b1ab91e38ba49c01",
+      "representative_decisions_sha256": "a42cc25f1940ebee7e50ccfc94246db8ce31be66abf8fb0747e480b8f279757b"
+    },
+    {
+      "taxon_id": "F1522189",
+      "busco_table_sha256": "31626e31341256921dcb8330f2596eb8cf0ef3393addd6a94ba6579efacceccf",
+      "representative_decisions_sha256": "3c387e4ef842362300da916eeadc46da3065f2a31323833503fc39ecba212ae4"
+    },
+    {
+      "taxon_id": "F203533",
+      "busco_table_sha256": "06cb23bc72d1d6974eab5b7980ee451597c7267e26fd45c927f883f9a65536f5",
+      "representative_decisions_sha256": "4ca608b6beac09bd0bf5fa17c47b0dcd8b2a7af65b144d2969108a81d50cad0d"
+    },
+    {
+      "taxon_id": "F202698",
+      "busco_table_sha256": "15b302d93aa9e2a585120313bc75c0c7f580838a360725c254689fea118aef02",
+      "representative_decisions_sha256": "67fdd42513dff288f4cec31c940e13595ed63348a115294b697382243d3961f3"
+    },
+    {
+      "taxon_id": "F2778381",
+      "busco_table_sha256": "8791643367799038d123e2ff75dfae30393b9d463e87c471f6d62342c68f81ad",
+      "representative_decisions_sha256": "d78859eb3330fe8c703fa0cbb37f56cbfd7f1dbda4fc8154265246761ea37ff5"
+    },
+    {
+      "taxon_id": "F29899",
+      "busco_table_sha256": "5e59e48484c81d5bd6c034b1cdca2bc346ddf118a19845822f903fb86cb77e2a",
+      "representative_decisions_sha256": "55f8f0215d6a9b5fce4222368d36f677d25eb96c5b1c11b282b9cb9dd8e6b58a"
+    },
+    {
+      "taxon_id": "F29902",
+      "busco_table_sha256": "b6b7450e5183e66a6036c46a5304df8d51339b9b6f145bde279e93de0cfdf1fe",
+      "representative_decisions_sha256": "04db46f6d9007deea242944f8afb520d3936de1f44ed1c9060371b74e6825198"
+    },
+    {
+      "taxon_id": "F264483",
+      "busco_table_sha256": "e886ed491f18c3e9509b3355f2e6049ea6d2a736f0123a9f623e2b940c117472",
+      "representative_decisions_sha256": "00450f4b71e278875ef32b137b243f399d2eb2706fedec5f974a9593b771abe4"
+    },
+    {
+      "taxon_id": "F29889",
+      "busco_table_sha256": "687cb5884e6eda8e6d1241f4ebe58f31d42340bd6594105ed2e49e024767b545",
+      "representative_decisions_sha256": "d7f3fdb4560ed4978094b5497c773c06c168c5c10af578d44acacc2b9d3b45ad"
+    },
+    {
+      "taxon_id": "F63146",
+      "busco_table_sha256": "1f486eb12ae88b910a05fbf020b475e3cbadbd5b09b318719ada8b75e28084b9",
+      "representative_decisions_sha256": "5265d39c06971808cc285ab3c307f941a84630ff4f6c7bf6e166b09a17e54b70"
+    },
+    {
+      "taxon_id": "F1858805",
+      "busco_table_sha256": "f066b070b1d6242ebbd41f0e6a13a5051866089aa222fb2aa7f2857377680ff3",
+      "representative_decisions_sha256": "bf8002b6d076ad033050d7fc2087eab3ae19d0e04995bf8d4b1bac0ec767925a"
+    },
+    {
+      "taxon_id": "F58919",
+      "busco_table_sha256": "7e45905414d7b5def5c0cde3ae0b5d15f2fee918c22b6729bbb5dd2061e4471a",
+      "representative_decisions_sha256": "2241d19ce0c3bf3810d68fcbb3b81246fcf06afeea87608470fd1cb2292a1558"
+    },
+    {
+      "taxon_id": "F5414",
+      "busco_table_sha256": "c6e43fdc57bb42cceb230b3b4ec8372072be57a3aa324a4465b3fce9b5351da7",
+      "representative_decisions_sha256": "28e38e7d5649b3bd5955100f233b9a6f17951bcad9b26232c05c23abcf4022a7"
+    },
+    {
+      "taxon_id": "F215250",
+      "busco_table_sha256": "a0801b03007c3697538b0caf7639098307acde1ca93aace03a62473f116d6112",
+      "representative_decisions_sha256": "b5b07ef90ada6f846266821886f8b2bc6ca972267bd0fabe79cda663b807f6b5"
+    },
+    {
+      "taxon_id": "F63378",
+      "busco_table_sha256": "b1205b1c971108625c17ed5bee34e74aee460dedc038b924aa24588dc9c34c9d",
+      "representative_decisions_sha256": "447a530205dddc0bfe0205b6f8947bdd205e626b3c978e7cf0bdc5102f2d868b"
+    },
+    {
+      "taxon_id": "F1280837",
+      "busco_table_sha256": "9bc034e8b6eb9ced1c805c43c6d1ac2ab28b7f6f391ecaec70cd66a715d3a925",
+      "representative_decisions_sha256": "d89fe5e3eef7bb14c148d1e329aae7dde27da6f4146c42c1dbc76f194837a861"
+    },
+    {
+      "taxon_id": "F5210",
+      "busco_table_sha256": "b2d843cd845063447cbff0c921f33fde4a9d8ec11449668e3172578d8e1e0b24",
+      "representative_decisions_sha256": "13537b435565768a0060948e4f2055489f60486c6e36b021290c20e1df587cbf"
+    },
+    {
+      "taxon_id": "F610337",
+      "busco_table_sha256": "446627fe332836f410705f84e42392bf5b46eb4896e733b6b452823c4d223607",
+      "representative_decisions_sha256": "822e822ee179e2e334ed8ecd19bf9902a603cb43a1b490aed6f604173805d2a4"
+    },
+    {
+      "taxon_id": "F89922",
+      "busco_table_sha256": "e50e26a5018e27b28f22c5dc41fd4034cb05e92bcedbbbad6728ee094a5a593a",
+      "representative_decisions_sha256": "c4e5682ed9e3bf577214bf8ece191d2eca137d7e24105cd150383da0f1266410"
+    },
+    {
+      "taxon_id": "F104408",
+      "busco_table_sha256": "3c528b972242390b20f20e4fe436186a08b3ff965d8f521385c13b2b520e3b88",
+      "representative_decisions_sha256": "78e5eea01f621fb24d8602be5e77fdf4fdd0cd004968436716cc8b3f6bac82c6"
+    },
+    {
+      "taxon_id": "F1424756",
+      "busco_table_sha256": "42c1b87e1fb0f315823ef9c5f55810f3ba08d8c0c055a878f54cc250f644e165",
+      "representative_decisions_sha256": "b039ff116b7549116dfa0d71a3d9586915f9eabdaea6d3f26d0314cbd80c58d2"
+    },
+    {
+      "taxon_id": "F68786",
+      "busco_table_sha256": "5407447f048625b17b181ca9a165b54fd1bd925bf56eb7cba9bb1ce876d729cb",
+      "representative_decisions_sha256": "01932863e99109556661c919aeb4fcabd81d37f67c116fee6191a9a136edb6ac"
+    },
+    {
+      "taxon_id": "F1230402",
+      "busco_table_sha256": "42b2edd105444fa052d0d72852f113ba2d3d7da668ca04c786ee8c8c68e1dc08",
+      "representative_decisions_sha256": "80f73562da7acc43d0765f51914368699ac48fc347365a225a371e426d4baf16"
+    },
+    {
+      "taxon_id": "F5281",
+      "busco_table_sha256": "a38d27aab7c7354f644aed03a3d9c71f238b5a0bd2d175e391c131202b504327",
+      "representative_decisions_sha256": "c658caac2f55ec30c08485a002affa5c3bfef62cc7467c9e2678b4fa2ed892de"
+    },
+    {
+      "taxon_id": "F104355",
+      "busco_table_sha256": "c855697a4b1983d0a9b69f35cc387d6a469c923ad3739df2bea8be14ab308081",
+      "representative_decisions_sha256": "a47f898847e20eba6b9c98d7f20afdf8acc11f12a89f56cf21c4d5e8903efa33"
+    },
+    {
+      "taxon_id": "F5364",
+      "busco_table_sha256": "d79a55454ce44e24e75f4aba89fd4792853f742253552038e0b33a7a98f3c372",
+      "representative_decisions_sha256": "b241144b2026ad377e189e1edbb1919b1644eaf67b0d8c3af2f9eee3ac0d86ba"
+    },
+    {
+      "taxon_id": "F38799",
+      "busco_table_sha256": "f28f08650e398bbfef95dc340f372793a392a377e0d307b9336b71f0926a5f1c",
+      "representative_decisions_sha256": "dbe7443ed9e480fd35b59ac0d014e3d2d6009870f0b7d15629d0ee6aa222535a"
+    },
+    {
+      "taxon_id": "F112417",
+      "busco_table_sha256": "45dd699b0ba309053b28ece937bc997cb36d602b577ee8203d2daeae958f13d5",
+      "representative_decisions_sha256": "4e96ee51d6662e6cb5d885da6da08b1278b7136b8b1795e514866934f00ab190"
+    },
+    {
+      "taxon_id": "F113071",
+      "busco_table_sha256": "26917af2645a65af09e1c9c2c2631cd22ce8371d517713033523a45c4c81365f",
+      "representative_decisions_sha256": "bb2103f35a94412c9b12c968a6a45edcfe0d56d34ba84e4b8682dde6891bcdbc"
+    },
+    {
+      "taxon_id": "F45228",
+      "busco_table_sha256": "a465273eb916c046fb65facd2af1ff418e4d97047ee585cd97d68f3cc35cea71",
+      "representative_decisions_sha256": "3570dc6801fd3fa3f27d0eae580f8ce34696665007802792a5b226cc2aec989b"
+    },
+    {
+      "taxon_id": "F257869",
+      "busco_table_sha256": "72d61abe119abc4b9eabc019edeccab5a147d4c6a69856d94004d3b5fcd9a85f",
+      "representative_decisions_sha256": "53aea9efd88d34a505f500bd75c5f8fba93a5d0dad6e06ba33f4302b1e882dd2"
+    },
+    {
+      "taxon_id": "F135589",
+      "busco_table_sha256": "7d1274d61d5a314fb04df1e90b96502d7c2cec3add661a837089e13dd13383ad",
+      "representative_decisions_sha256": "537e9839d2e70c8b03edd948b2ce3b2ccc4d1ebc6811d2d0a392ec1c9ed5662e"
+    },
+    {
+      "taxon_id": "F208960",
+      "busco_table_sha256": "0ab8f81844989881b0a13f4c50a26c52d687c86669b7ee1c69fe938818a77c88",
+      "representative_decisions_sha256": "8b4a862fbf1ef50fa2f2720a6a73d6acec3ee8aeb37ce35cb4ead7141190235d"
+    },
+    {
+      "taxon_id": "F2282107",
+      "busco_table_sha256": "c7e99e600a69e6f5ddf8d012c25f28edb4990d5942e8f0cd889794fc72e233a5",
+      "representative_decisions_sha256": "13f39219d6864439f5c3b607b7db357944b779462063facd61f4e77c14acf3e4"
+    },
+    {
+      "taxon_id": "F50990",
+      "busco_table_sha256": "adeadfad496705a738dc0f4cc257023fd94424b0b6a790d965c32740729967ba",
+      "representative_decisions_sha256": "b94d5941ee1a899bfb5dd667a85986272201b933c1808730ad6b1765e1f96f5c"
+    },
+    {
+      "taxon_id": "F27342",
+      "busco_table_sha256": "40048a47dfbeaaf1844a9f6971329a681416b08a37b267bc7408fd2ddda30887",
+      "representative_decisions_sha256": "448587858ea2e77670fd4590fa31f8a42a56da60808aa484fbca316e0adb6531"
+    },
+    {
+      "taxon_id": "F150792",
+      "busco_table_sha256": "ad964c66444e9ac084e916089c27e42e3328855893e8d3958d89f794c9285187",
+      "representative_decisions_sha256": "330bb6ba103ebf8a6cf480d8a7a8e75084aca8a6e056bc95f9f4140ad4895af4"
+    },
+    {
+      "taxon_id": "F202697",
+      "busco_table_sha256": "84302508f1d76dcd2b08f0ff63a164c17e9b887b2a8f6bae6d9525d98409b153",
+      "representative_decisions_sha256": "aaba72fe17c2f6509d5135bd35ef1ff655eb6f43904e6030dc977d87722f2c7d"
+    },
+    {
+      "taxon_id": "F1323573",
+      "busco_table_sha256": "4f912df5d572a731c0e25c4c0184870fe6215705e282257fdc7f06f34bee86b8",
+      "representative_decisions_sha256": "af08464e10cd7278d21560cbd45ead7894cbdc815663980d46ba256cb5c22ff8"
+    },
+    {
+      "taxon_id": "F418498",
+      "busco_table_sha256": "7a8e57b788edc8cf489551cf2aa98abe2ba0712e217464b62c2a55ccca1870a9",
+      "representative_decisions_sha256": "71ca80413032cae408ff23e90f5fe7defc141c508cddacb50d5bdc66ad3f0388"
+    },
+    {
+      "taxon_id": "F3038894",
+      "busco_table_sha256": "961612f797e083c924a4939afa76821361c31c0204bb7e9615a28c5b60d442ee",
+      "representative_decisions_sha256": "e29343594c9c8735adbb3d379df7d318f4f0852644f344c572bb0182763b03f5"
+    },
+    {
+      "taxon_id": "F106004",
+      "busco_table_sha256": "d6752802f2a1a97aea2c62316bac07dbcfc80e1a8cf59e1b690d3cd1823c01e7",
+      "representative_decisions_sha256": "5f626f30d6b9da7a1768dafc05c341a7a2d62c3f5a50d6108bd2d4d36e747e2b"
+    },
+    {
+      "taxon_id": "F223818",
+      "busco_table_sha256": "f23b91e7ecfb1a4f94d065ab2c868379487d05002763240320637d7ffe3dcf5c",
+      "representative_decisions_sha256": "fe091cfceee68e9b82f034912b36cc78e81548c0a58ae4940d133f0143469f59"
+    },
+    {
+      "taxon_id": "F77020",
+      "busco_table_sha256": "6ebc8abce05674eb6af35e2b72aba34fb30358a52d9f2a4c24f33f64d92150d9",
+      "representative_decisions_sha256": "e4b63482e825afacc43b83fe83e184cc99f40921ec27ce216da27dd0ec4fd3c8"
+    },
+    {
+      "taxon_id": "F76775",
+      "busco_table_sha256": "fb25ea7c0e2638701533f602c87125b0c4b3ab17b3c4985ad31c4007ebd6ad44",
+      "representative_decisions_sha256": "50869dcc3de24c37dfa14e4d9dd00656c83f680e764c8b7a90cc9239e4c12b9a"
+    },
+    {
+      "taxon_id": "F76777",
+      "busco_table_sha256": "2343fc4b3a845813341cd90b7eacc5a1646f849626a6608b7c099895bffdfbc1",
+      "representative_decisions_sha256": "e03d2ff8ac9c73d02af70313fe43b9957772f56af0d684e9d72d839fe3f00ebb"
+    },
+    {
+      "taxon_id": "F2020962",
+      "busco_table_sha256": "0db58ed6db09ca6fd8f701e2c4baa1cd4ace19998ff324954161f26055b06248",
+      "representative_decisions_sha256": "83d6239160f3d7d743d6da5924dbe70ee04b064f318b472f20e1b70dd27a9fbd"
+    },
+    {
+      "taxon_id": "F269621",
+      "busco_table_sha256": "b6c3a5806b6d85bb3583dcbf088e17b1badf2c68b504e6baec3e104465d8f8e3",
+      "representative_decisions_sha256": "311badc0c593a63be92c7449d5ae5bdbde5424dbaa1f58640084a55d1e34696f"
+    },
+    {
+      "taxon_id": "F288795",
+      "busco_table_sha256": "8448e6d219566e358a55cf9c91c3bc648f44c56d24e328a413b7a09da36e3464",
+      "representative_decisions_sha256": "545d4fe9cba6a80eabd7e4737491969af5d11786bae34ff3c4f03eba28469ddc"
+    },
+    {
+      "taxon_id": "F289078",
+      "busco_table_sha256": "9b80a4437b5e46b31c6ece1ba1f181bd326734628126c6f8e2110da2b7b41ea3",
+      "representative_decisions_sha256": "a12a2c71f6b238b1f44fd400223e65df6ee6c64a07ff00475ba560059d799869"
+    },
+    {
+      "taxon_id": "F796604",
+      "busco_table_sha256": "ef241e2786ffd2220d00474cb9eb268e62f81ded8cd61d80e3ab8ecdc080859e",
+      "representative_decisions_sha256": "9bbc23f362001c8046451c4e61c763044f0079485ce83508da79636d44d169ca"
+    },
+    {
+      "taxon_id": "F2878321",
+      "busco_table_sha256": "d8241ca73f05b6988cdc2dbaed74b37fce7bd50baf79654631fbe0ccb2c0e40b",
+      "representative_decisions_sha256": "d9f84f870ce6240abc57323a3414d4cfa21ab85ce34de47bc297a794f903cd14"
+    },
+    {
+      "taxon_id": "F1569628",
+      "busco_table_sha256": "7f1b66bba39b9463b9ceabcd2824be75fa90404d28d6ad7e812c2e8bf0f7bcb9",
+      "representative_decisions_sha256": "cd932c58ad2159c45c389386fde23f7ede8f4ad52437c14783821e83fe3ad84b"
+    },
+    {
+      "taxon_id": "F1684307",
+      "busco_table_sha256": "73df38a35cac90f4a9ee9d3995a5fb95e31e3ef118c872d622c5b6c53196a877",
+      "representative_decisions_sha256": "9184fe0e518ba07d64ac158b4215b65f1fbd28e2d83778df4c4ff66fcf45e01b"
+    },
+    {
+      "taxon_id": "F1463510",
+      "busco_table_sha256": "392635e75a11f2ade3a972c30caa1b290ccd760fcdc6e8de62fe7e04f509234a",
+      "representative_decisions_sha256": "dcd7a1a64e0b56e0bb9e155c2707da8698d24bc6c440f72ed67ca98b261bd0d5"
+    },
+    {
+      "taxon_id": "F574677",
+      "busco_table_sha256": "cf152e863eff06d2a0397368820ac95a351d7f0508bf9c424b9ad7235613b782",
+      "representative_decisions_sha256": "a0a32eb6fef234f409dc9b2222ebc18a68aa6ca3658233c6bd3b03f2f4cf077b"
+    },
+    {
+      "taxon_id": "F34349",
+      "busco_table_sha256": "e4b4e244bc4e9f457169d71f44428b6e610d58967d6d84ce802aba41ba2a2a57",
+      "representative_decisions_sha256": "8c3770440673d88b76b3f7c3395e53be06c819cc7e42f4ecff3ab0036d2b9ec2"
+    },
+    {
+      "taxon_id": "F112072",
+      "busco_table_sha256": "dce51f7395581cde478a31eadd0c36655f35b9f2378e5a938f99bcab0052ef92",
+      "representative_decisions_sha256": "7ce4c7e1070bdfeb4f7106b77b1992a1301ee8e9366de33675bde6575029126a"
+    },
+    {
+      "taxon_id": "F1419009",
+      "busco_table_sha256": "680a79a6a4df88168b09c157bee709c0a30a3e6c67286460b72a361912525ef7",
+      "representative_decisions_sha256": "2ad0dc7704ee9923b2330bea236d26c43bb06973105b648c18fe0fef2d71e706"
+    },
+    {
+      "taxon_id": "F378194",
+      "busco_table_sha256": "d62cc130b794deb4cc338fbd44822a1aefebc148db019046be11a228f1447c1e",
+      "representative_decisions_sha256": "b64481b0f5e53d48c1b3618c20d36543e401bf6b98ad84aeb27bc340a74e1979"
+    },
+    {
+      "taxon_id": "F599839",
+      "busco_table_sha256": "11004adc27ff784bbe6b15e767a9e337ae51bdf1019d7918da31ae6e8b56d768",
+      "representative_decisions_sha256": "7377c6020a088cd204678036c365dbc116e4d46fc3826eb80c33aea79201880c"
+    },
+    {
+      "taxon_id": "F5630",
+      "busco_table_sha256": "7bb0290b6417cfb6f461d710a5b67d64994fdbb6f75ac756205740da889c7522",
+      "representative_decisions_sha256": "2ce431bec564d5d7f921d72127a6f4b0ab60de3fb3c4539c77f498f6250b6046"
+    },
+    {
+      "taxon_id": "F5365",
+      "busco_table_sha256": "40d132174030fdc789d2848e932dca7ed2e4e49e7438f27ce17048dc3757efee",
+      "representative_decisions_sha256": "6a819f4005378b567d267bd0aff2df678ce1df023a3862b690e5b49ff87b9d1a"
+    },
+    {
+      "taxon_id": "F231932",
+      "busco_table_sha256": "d589d1e89b8beffed3cb0b0cb4bc771de4efd73f7f1da7dd3960bea484fae9db",
+      "representative_decisions_sha256": "63ff4a3f182d880398cff2dd5fafe619d93e840e9b2bd0723e3bda45cb0e2f53"
+    },
+    {
+      "taxon_id": "F104341",
+      "busco_table_sha256": "5331a8acbc4478492557512d8bf3424289fbc68c98de12bece8e20c3bcd847a4",
+      "representative_decisions_sha256": "0d8125107f9038deeda762f8ae58a6e5620dcea15d9efe3fd3dcd65802000567"
+    },
+    {
+      "taxon_id": "F181123",
+      "busco_table_sha256": "2c07fa83f02aebb8eebc1e4014262b0e4be44b9064d169a3c04891c9ac522f07",
+      "representative_decisions_sha256": "4a3dafc23017aa7e5a9de5dac99cd3d5c1ec8e9df7f44888e1107a213907fce1"
+    },
+    {
+      "taxon_id": "F60197",
+      "busco_table_sha256": "e2303ad31ed227f28473c88f02bb2fc54a86528571c955d73d75b541dc392ffc",
+      "representative_decisions_sha256": "9b0eece659e8b29c908bb469ca3434c692afb2e3c3590c3b85f79581866986f3"
+    },
+    {
+      "taxon_id": "F203908",
+      "busco_table_sha256": "b8e53d7ee290de4126e65b63cc2f1c7c44fff9578f288725c18ba5f5b8171598",
+      "representative_decisions_sha256": "f5a02cbcd3da0728772b0ad98ad87e4c498b88b3397be2b1f8caa67db62e6667"
+    },
+    {
+      "taxon_id": "F170000",
+      "busco_table_sha256": "2efc81ed2745d065be84395455110dcfee5cbda4844aaf25ff91817ce43f3a29",
+      "representative_decisions_sha256": "95d633d9470d3797811ae80b846e9393ca3b2f61deffa2d43ec7e2f37c1fe048"
+    },
+    {
+      "taxon_id": "F208348",
+      "busco_table_sha256": "c99b95f4ef331c7b08992ccf9172cb709bbc89b24dcd7ad9a07d14be04b541bd",
+      "representative_decisions_sha256": "daf28648a2e1ab63b68c1b6e60b7f213c8376b0d9379dd45bf2689dea237dbec"
+    },
+    {
+      "taxon_id": "F48021",
+      "busco_table_sha256": "266fe17b9dec236ff0f49085ff649ab8a2038d59ad473b8c6af208ce994089c5",
+      "representative_decisions_sha256": "85e567754ba7261ca490ecb87fb1aa06decd12ccd2471e2c8436aed28a634894"
+    },
+    {
+      "taxon_id": "F135208",
+      "busco_table_sha256": "8ef44d6f36687de7117c58fd682257dbda1d03017c83f3bf11589432afdbbc08",
+      "representative_decisions_sha256": "ba0692a58086f52053cbb0cb256d4161a250978a34859086ab57856a9620b195"
+    },
+    {
+      "taxon_id": "F984962",
+      "busco_table_sha256": "6534d2ab2fd0cb094cc9fb390600d0a240e49b4ffe13f1603d137587bc96c4d6",
+      "representative_decisions_sha256": "e2a95ca7c18687f23bc467bdcc54343faa8d5549191461c7716c0cf3dc371d2f"
+    },
+    {
+      "taxon_id": "F152956",
+      "busco_table_sha256": "6b8027aa68bffcca64a2199694abc0a5a5281d6b9ebc74966ed16acb8cd4722c",
+      "representative_decisions_sha256": "7d7d5e2d5fb3fde5f34e927501802c80a7727b1d59452693cde3c4f763da2797"
+    },
+    {
+      "taxon_id": "F40492",
+      "busco_table_sha256": "6cecef9eaa2195206e84bde1e0f5e81bfc6e1595a20f1f311a5d4b79c59d7005",
+      "representative_decisions_sha256": "6a6904563651e5f0b5c40d4d9b264e0ad3f73ee10f91c58bece48b2d1f1a0dc2"
+    },
+    {
+      "taxon_id": "F1314805",
+      "busco_table_sha256": "fa4e74120e802f1b10623e8504a1f63632d71539e772a19134c614a0653e2092",
+      "representative_decisions_sha256": "161cca32c9faee08e58c4b4ee59ff156689ea2cee6b54549cf79fa77aca1bf86"
+    },
+    {
+      "taxon_id": "F65672",
+      "busco_table_sha256": "7a0a16e37bd4d7ee2477c07d3d7280662d06fc6ff7ed531ee2c6f4b9c5c150ea",
+      "representative_decisions_sha256": "282b1435a039e83ed2904dbf6ae7a3060c2c1aaeaefb3aea07e093836054f083"
+    },
+    {
+      "taxon_id": "F2600213",
+      "busco_table_sha256": "e3c1215da890e4ea8e9fa56f43d07aedd8d1650a8b77bea981b84e51ea95d7e4",
+      "representative_decisions_sha256": "59a86ed69074772aab9ba4a104b70658c33965942d9e59128fc9de010422b034"
+    },
+    {
+      "taxon_id": "F2600215",
+      "busco_table_sha256": "1a33949e16304987455d387abe968194c6aee80a7701a2ff9ba4d4d981a7ea5d",
+      "representative_decisions_sha256": "c53b5ee1d98819a8a0d21fc853d45dc8fae8c8766d417b369085873062c2defc"
+    },
+    {
+      "taxon_id": "F2600216",
+      "busco_table_sha256": "83d80044b768cbc5bb2b997214307f613114cff2980bc1677084b22a3d678e1b",
+      "representative_decisions_sha256": "fec8cd2622940d1a64642b05fa162388a1928ca5f8bdf2688d34ccd1ff1f855a"
+    },
+    {
+      "taxon_id": "F109899",
+      "busco_table_sha256": "1a0fd47b45291014215c2d748e91413f8034733a5d09e6866beca6e3a3840f41",
+      "representative_decisions_sha256": "7030e5bd47fd17e90cef387db94b2e793f91b84545fa61cfe8a548b112070b8c"
+    },
+    {
+      "taxon_id": "F2834505",
+      "busco_table_sha256": "874deae0dbf0bfaa650173ef43a72b3cc1318fac34c515024d8ee0ca7b02def6",
+      "representative_decisions_sha256": "e858fdb74ce648bbc3dbb85a485b9bf2e7ad88ee7518fbf017b7a10ee2c438a7"
+    },
+    {
+      "taxon_id": "F467971",
+      "busco_table_sha256": "d07bd5abc20b1b632c179dce13f15c7ccf5259e93a7cdd2af2b620476798be60",
+      "representative_decisions_sha256": "46af1427656e7fcdf7d8bc151ea2d1109417b98de352eb43ef81bf059505e766"
+    },
+    {
+      "taxon_id": "F69979",
+      "busco_table_sha256": "78b1160d89ee2abba2a524524105f74e5bcc0980b997ae4117165ede1ea2026e",
+      "representative_decisions_sha256": "71f3c8ae667fad3dfae040458adb91692561380111c0f213394a73dc25cb5f77"
+    },
+    {
+      "taxon_id": "F100910",
+      "busco_table_sha256": "05c44d3225fe7bb701acbc40a6c7eb204314e6c6292aa143832ee00f9e9332d0",
+      "representative_decisions_sha256": "42f97339fcd323fe28e774914bd9ce8efa79c9fa0a355199726d000ae961457e"
+    },
+    {
+      "taxon_id": "F29898",
+      "busco_table_sha256": "af97a4602cb9a32eef8595ea0c64a8b273965e8d7683d192dcb4d04cda186590",
+      "representative_decisions_sha256": "544514099bf9e6589b5dbb85aa9e4782a857d2a25bcd555fc873b40ff717be8a"
+    },
+    {
+      "taxon_id": "F5286",
+      "busco_table_sha256": "13bbe14f3d4c23756b276fdf3c65f436e246e98ad154ce4ebc530a9711aaa3dc",
+      "representative_decisions_sha256": "6e2722ad9a3d87b45a5df2194defcfd1178e997dcc8a9672f73f45671ead60a6"
+    },
+    {
+      "taxon_id": "F500713",
+      "busco_table_sha256": "0ee8f83654f9e7aac0ae23baec812751ef0ca4f2cbf8a3022030df5232151a02",
+      "representative_decisions_sha256": "49817fe2a13b00a20e35631bb7e4f17c3fac0e1e86ebc2b682ffbcbd1394c6e5"
+    },
+    {
+      "taxon_id": "F183962",
+      "busco_table_sha256": "2132f0dcab9fa630beb1b2742b2f153b0746195c703fe08c26016467fd31303f",
+      "representative_decisions_sha256": "0a7230751ff0e39e9acc718edd85f27d2879b698309052bc6b5c8b7196ec7861"
+    },
+    {
+      "taxon_id": "F370292",
+      "busco_table_sha256": "828f91d06ae3b87e1129a8df5707ba1ad32da7758deae88b6a140458fa5cb67b",
+      "representative_decisions_sha256": "92bdb17b26f0fcb831a60f26bc56d0912313984c6cd78c7dec93cdf3ab33aa2f"
+    },
+    {
+      "taxon_id": "F56493",
+      "busco_table_sha256": "da9b0abd259a2e617b196898c9bd2c4033b53b52db36b5e592ab4907565bb0e1",
+      "representative_decisions_sha256": "c90bc97fe65700c5826c2813b9b344283223901c648d3af527733dbc53aace54"
+    },
+    {
+      "taxon_id": "F13290",
+      "busco_table_sha256": "f20eb288517f05e174e401e7de0a82a287b74fcb0131bf664c37064f2ca56154",
+      "representative_decisions_sha256": "bbf252341dda23ce10b65d531edd421e35c916daff6a2825ac1a70edfb25ba09"
+    },
+    {
+      "taxon_id": "F13291",
+      "busco_table_sha256": "0a74ae8db9233c64d075b9d38844cec886771f143e1d2efd27de0fc764d483cc",
+      "representative_decisions_sha256": "3b7fe5c35a8fd53130ce5ce9c91999e2b2c01c61b6869633655eb232d041d43b"
+    },
+    {
+      "taxon_id": "F157183",
+      "busco_table_sha256": "acffc2e85c83a2320dc4aead6cc631772f8926b880fa4ab6324c7c3c2f208bdb",
+      "representative_decisions_sha256": "8d269261901b09f45bcba4e2cd370832e7972b6d76f46b1819745ef42f3df2f6"
+    },
+    {
+      "taxon_id": "F1031713",
+      "busco_table_sha256": "2ebae6a0a30fe0c95736895861e5e13353008fa291c53bdb2505f2a4335ecbba",
+      "representative_decisions_sha256": "39fbf65314a908d0cc04a408147afd2392e87cb3400d897505fc586606dcbb3f"
+    },
+    {
+      "taxon_id": "F117179",
+      "busco_table_sha256": "a54c6b73dd3dff8e7d20573067774f62d6560501614d51ff8820ccb1913e5e88",
+      "representative_decisions_sha256": "fc3c29c4861ccd33b12ede5f35f052482eccdaf08134aece10993bfc8494e868"
+    },
+    {
+      "taxon_id": "F104669",
+      "busco_table_sha256": "0110290775496ddab2dd69a886b2128a1827b4722186912df514d3a7c560f51f",
+      "representative_decisions_sha256": "d758d6c185e9d82246b18dd052eddabd92045126af27ee972cb3509bbef948d4"
+    },
+    {
+      "taxon_id": "F552467",
+      "busco_table_sha256": "f5d90ca2ffc8b3317ed470501cd66934b1fb2ec48fcdc7edc614cd523b6e46c3",
+      "representative_decisions_sha256": "86496b4a4123946bc5376c1e811a8dec06cee6988b833568f82001e2c96f45ba"
+    },
+    {
+      "taxon_id": "F1859122",
+      "busco_table_sha256": "c7942d1fb1caae518bd9c55b9ba66babf51b11f4948b4e7943f62f64af32a70a",
+      "representative_decisions_sha256": "33791cac46e7dc327bc56d86ef61293722d5ad7081e16c8a8cb6181d7bbe03ba"
+    },
+    {
+      "taxon_id": "F40410",
+      "busco_table_sha256": "c9f6bd62e38f466df6b5594ed9963755f8d1055d2088d73851e3a2190d17977b",
+      "representative_decisions_sha256": "d94b9bb497e5d30318bb84c61ad377a2b04ea8f00a9162aaee7ccc5a8d262bb1"
+    },
+    {
+      "taxon_id": "F5208",
+      "busco_table_sha256": "397394e70e33ba7680b189e465a19657d8d5afb67b17b4151c29eed1db6bb107",
+      "representative_decisions_sha256": "e80590ee440099a58c46be70498c2b8c998710acefcb7c08dd016d87437fa6e7"
+    },
+    {
+      "taxon_id": "F1859096",
+      "busco_table_sha256": "551496bdd615291324f00aff21bf2a97ebea79667b21cdbe31f85a78bc74bb84",
+      "representative_decisions_sha256": "772c30afc6a69914da2dcfbd4018aedfdc9547ed82658ed51c8778488da424aa"
+    },
+    {
+      "taxon_id": "F37769",
+      "busco_table_sha256": "c023fcb72b7d280fffb0e112e15f96ea04ae08f3025672c65e975c9ee481a526",
+      "representative_decisions_sha256": "cc19f5e2166008e9d4502752295fed156ba7d6e9a62fcd484af55ac1219b4c79"
+    },
+    {
+      "taxon_id": "F5207",
+      "busco_table_sha256": "4885e69fe79a51d01401112677df6d1931a04dde7427ae077add87c18441b0d6",
+      "representative_decisions_sha256": "eb11611383b1f4bce129bc3d017940cd309350aa5434530644ab89b1b3b1a167"
+    },
+    {
+      "taxon_id": "F1859121",
+      "busco_table_sha256": "07d068a5eeccaea550ef6fa65daa84d94d8fa29b0419c85f17517cc173039791",
+      "representative_decisions_sha256": "1329be2d0687ee39c727d8ced30285d352c26c6e1ed23ca6237debf4dd51f4d7"
+    },
+    {
+      "taxon_id": "F5619",
+      "busco_table_sha256": "ce4e683b7d1ce52f5a6498a1495ff466b474fa944b1b06abd760f7ebe9f8ad8c",
+      "representative_decisions_sha256": "a98308c4054f3edaa97d4e1b563699fb93aed3cf372815fb78bd11aa4930819e"
+    },
+    {
+      "taxon_id": "F105984",
+      "busco_table_sha256": "2b38c187082bbad3f4fdad9bbca02ae433179f21d90a6a3317ec489e8c0bb042",
+      "representative_decisions_sha256": "ea2c966898276afc61ef46c33a0c85c7977b66b651fa3183e456db48762d3be1"
+    },
+    {
+      "taxon_id": "F1890679",
+      "busco_table_sha256": "4cfa4be7aabb1ae6ca6a39206245be014136f46a46b375d729a2543334d7f398",
+      "representative_decisions_sha256": "c92323f0b4cf6c46897ed699e463dbd988d30d46416f2048adfa0404d4aeb5da"
+    },
+    {
+      "taxon_id": "F279322",
+      "busco_table_sha256": "80083cbf8d4fab6137e4562094740eb74f264758018cde4ff964527db5df8121",
+      "representative_decisions_sha256": "8496b38f662d8588791eb9a871cb61d5fe0e77cb711ab3331584955dd11c159f"
+    },
+    {
+      "taxon_id": "F82508",
+      "busco_table_sha256": "72e128d4fd0bdd8dc9361dd8617725d3e7f74e339424a9bcce3bad433b0006d9",
+      "representative_decisions_sha256": "df74407b96a9cad0ec30141da042059740c71533efa033269938428f75700c6a"
+    },
+    {
+      "taxon_id": "F143232",
+      "busco_table_sha256": "8721c82717344fb0f0a1f9f36385ba102271f66b7785bce23ad7841cdfddfe82",
+      "representative_decisions_sha256": "9e42dd74c5aaaa66b0360cbe9a5c90dc9c0baa9a633c81e07c39d1730adcc772"
+    },
+    {
+      "taxon_id": "F1055551",
+      "busco_table_sha256": "054e1a69d5a3521f9177c2e6fdb4eeeb75826f87b5afeb2a073030d5c2bf7fdf",
+      "representative_decisions_sha256": "4e75cc6c2f848ce574183899eebafc1bf4f183ced8d1c6bf49351fdd2515dfcc"
+    },
+    {
+      "taxon_id": "F1269715",
+      "busco_table_sha256": "f520c2c79e03d09494da4a45d699fa197eb939de9a5d95dfef4d6552308ecf6e",
+      "representative_decisions_sha256": "9144d33ce7e524a45b0e48f51a1c7e05b6f69ca199e99d30704cf46078906e21"
+    },
+    {
+      "taxon_id": "F84753",
+      "busco_table_sha256": "fe53b842d9e95fe84562d0d75324b2e88ba6fbd7da5f2250c65bccd6ba2025b1",
+      "representative_decisions_sha256": "5350a55be3fab5152794b52a30c1f4af954dad466bd003907550176c56af49d8"
+    },
+    {
+      "taxon_id": "F84751",
+      "busco_table_sha256": "e8cfa08884ddb2e47249c585a655c75b0ff49ab1b6930311b70b17bde5fead64",
+      "representative_decisions_sha256": "66a8f7c19d8990a333a37237df81eb1415288f92194dc061b39734a1403fdc1d"
+    },
+    {
+      "taxon_id": "F280036",
+      "busco_table_sha256": "c99d8b553d4629923660659f7004c16c9391edde5b3dc57eb6f4b57b7abcea98",
+      "representative_decisions_sha256": "53e385b8228f04d7bccdb382dd143329f9313c89c5db668135d065da83f5d8a2"
+    },
+    {
+      "taxon_id": "F1882483",
+      "busco_table_sha256": "a79746df2c56c1072b1a5f0ed846539a8fb150222e3e672efbeee6166bc7547e",
+      "representative_decisions_sha256": "cb60324e60b75af9b3f20d3a01bd4fe4d4a2d94c26c7d81ba6c3733ca181e752"
+    },
+    {
+      "taxon_id": "F120017",
+      "busco_table_sha256": "7e9c9496a993b73a11f5d15136384f0847a78f7d3c39767095f4cecc6b6fa503",
+      "representative_decisions_sha256": "d8366071af7be957926ac1e7b82e779ab1a164a9c50f3974dd282036883ed2c0"
+    },
+    {
+      "taxon_id": "F1673888",
+      "busco_table_sha256": "32c81cae782e3bd2c472954f102dfff698455c136f9303678a1e8c6235afdb7d",
+      "representative_decisions_sha256": "1e69cd1c5ef81472ff0be172f0aa5b2686f2cf79a696957169821dee7c3d47dd"
+    },
+    {
+      "taxon_id": "F1708542",
+      "busco_table_sha256": "d5219906c18d2abe138d11c84578c7d9421828d8ef5473e31311a4b60462ed42",
+      "representative_decisions_sha256": "9e6cec1116ae07b7e2ea2f9bd117b52a5363ab494fa2ef0bf56e0403a7f2deaa"
+    },
+    {
+      "taxon_id": "F1540922",
+      "busco_table_sha256": "adf32455dd080698feb0ad534cca017e8ba66005f8ac11a95c6f24c4b263c7c2",
+      "representative_decisions_sha256": "37014a92016538bebe046c5277430baab8d58000f46d97c682961384fc1e0aa3"
+    },
+    {
+      "taxon_id": "F245174",
+      "busco_table_sha256": "1a132d6624873e54c4621a689c1dd27990de83784c4b04ecff5abdf28bb65e8c",
+      "representative_decisions_sha256": "b1c1892c6896e1233b0935e1b9edfb1c409e1cf27ef204aa176f3ba11e65f28a"
+    },
+    {
+      "taxon_id": "F1708541",
+      "busco_table_sha256": "f049b030c83f7dbc77f73a4068fbb73c00c037716b260602e3d4756e15586c6b",
+      "representative_decisions_sha256": "bfca349750343ed86949b35060c509b64d8963f8b0cefc431aaa48ea54eedf19"
+    },
+    {
+      "taxon_id": "F64504",
+      "busco_table_sha256": "40fba834b4a88585fce2307751b02eb1e302e523a22f7059eeb078e98784edf5",
+      "representative_decisions_sha256": "90533240e8e8cb39570a43bf810432b23b6a9f2923ce7d2d4f7aa3c8dcaac4e1"
+    },
+    {
+      "taxon_id": "F64505",
+      "busco_table_sha256": "0852f7c660dedfc3af58e3f87ba378dd7dc1ceb7bf70118c3ec89a019e1a4fcc",
+      "representative_decisions_sha256": "d19201a37d3a88b4a1fbb6dd13638faf93f6081d470e933c114f7e41b2657a61"
+    },
+    {
+      "taxon_id": "F28583",
+      "busco_table_sha256": "e80830a15088b44eae9f778a0f055291c2d29bb1b7fe2f5cc00b5284c07f44bb",
+      "representative_decisions_sha256": "8bf34de9ad7acbe8f27b0f551252a699b635044363dc452b3fb3681e4c21bea7"
+    },
+    {
+      "taxon_id": "F64508",
+      "busco_table_sha256": "f227ad775b9904c60aeca014f686d73b0b3f1ffda9a2510f2c00301d05695133",
+      "representative_decisions_sha256": "7a93d970c6d8cfe1cca85167c2c0f5a49d9ee6502178e892408a3f437f84eea1"
+    },
+    {
+      "taxon_id": "F4808",
+      "busco_table_sha256": "98fbbcd48688c56a713774f1bf4082bf36ca7cb20050c23b20043e669eeae94b",
+      "representative_decisions_sha256": "7a1bcce8549134dd672d2925ca88cf6367558523027c356e3fb2e1cc6af9a335"
+    },
+    {
+      "taxon_id": "F109876",
+      "busco_table_sha256": "774d1bb4f9beda1a512c3df6f7497bbbd3259e465d289df572c8d3209ca4fe3c",
+      "representative_decisions_sha256": "931eae5572a80886ad97cb9488133a72ffb9d03914f0d370ffcb1ac4e9121460"
+    },
+    {
+      "taxon_id": "F945690",
+      "busco_table_sha256": "bfe35cddf8f1a291042e3ea5265593003f3905f4f5959ea73b10bc9e55577b63",
+      "representative_decisions_sha256": "00d16e7def4dd6bd8dd4769d009e93e04aa85fd37fd6b420f4cb668dcf952960"
+    },
+    {
+      "taxon_id": "F3075319",
+      "busco_table_sha256": "f6c2e8e1e487ce88319497afd0ba9cfe22615058e99d6345a5f25b04fad552a8",
+      "representative_decisions_sha256": "015a819f8caecc5a5ca355dff8b9eedeb1143759e76d07033cb199768bae7f96"
+    },
+    {
+      "taxon_id": "F1500003",
+      "busco_table_sha256": "539b5502ff3078b2ec29564ee353adfbd3caf11fa032b406c07d69decf47b87a",
+      "representative_decisions_sha256": "dc82431a4c404550f257b8b45a05f4c32452dc6ae12bb0c66f70e86f7fa6fa50"
+    },
+    {
+      "taxon_id": "F911321",
+      "busco_table_sha256": "8b1137e3ffc84d9bb0f6fd8604172680ca047d87de46423e56744717052a994b",
+      "representative_decisions_sha256": "02555ec3023fb19d83ddd6a1165ad44487007ab40b8d6325a5ef3d1d1bd314c2"
+    },
+    {
+      "taxon_id": "F1555241",
+      "busco_table_sha256": "2f7bcd864a5a71f2f6a867182d6b86d73e54e4b57b03e71906952f59b5542b9c",
+      "representative_decisions_sha256": "a59e700b1a5992e118c21f543873868cbeb43a2e8f71ff0b414f30a3484469b3"
+    },
+    {
+      "taxon_id": "F1774096",
+      "busco_table_sha256": "96213fc757f18fe4420ea0590c2c8cb4621370fa954cc52252a67640e1257101",
+      "representative_decisions_sha256": "79d0769eaf6427f3ade8eb017abce1092ace0b6261b914af08e7d2e216be7f15"
+    },
+    {
+      "taxon_id": "F109932",
+      "busco_table_sha256": "eedd972dc73316a3275d086e91f27efff93a99264bd666ccc9579b170497d9bb",
+      "representative_decisions_sha256": "5062cb7fca317c8ebe36b7da8724bbe1c03518e5f04181e6d34accfa62fa6e4d"
+    },
+    {
+      "taxon_id": "F1604274",
+      "busco_table_sha256": "5d691287d1f35e46760741cbcaf7660d91e8f68c7264d77e0d7a777083077dae",
+      "representative_decisions_sha256": "1945ca8aae95eeec6e689c24b3a2994bb0571744eb9a78d284ae5255fa8cf7df"
+    },
+    {
+      "taxon_id": "F109889",
+      "busco_table_sha256": "3cdb311a55208f2871aa3a2aa80d3cade83caa8d3c36b604186ee32cf2ecd714",
+      "representative_decisions_sha256": "a7131f5ff08febeba169c6ee506921a1c43835b0ba3779d487296cf23eb305e8"
+    },
+    {
+      "taxon_id": "F110093",
+      "busco_table_sha256": "cc8728cdc99e02717a967dfa6b1a074ef385d22796e582f4ce16c710afc8596e",
+      "representative_decisions_sha256": "7c39f0538868ecaccc946f826d4d7a22781af863df3dd5e4b82494fbd36c873f"
+    },
+    {
+      "taxon_id": "F2735257",
+      "busco_table_sha256": "04768dc754cf02c28e92497711a338400badf4bdc1ff7b9e2face71f2fd23c66",
+      "representative_decisions_sha256": "8555e91863769a6437519ba2874356b005289331e4f3da81b907aaa1d0a0a54c"
+    },
+    {
+      "taxon_id": "F64517",
+      "busco_table_sha256": "e4d754590f97881ae034b07a9edda3291ec647ec9ecb5c4d9d4d4064883559d0",
+      "representative_decisions_sha256": "c80bb08e9b1e0a29496e3782d8992058210ef200d29dece65e5f397cbd1fc248"
+    },
+    {
+      "taxon_id": "F382532",
+      "busco_table_sha256": "69ebe2db05fa72bd199c9d0b5d649e3dd2f21065b6250c92b7814f1156bbe41a",
+      "representative_decisions_sha256": "ebebe55f6d37e6e550017e0adacf9479677192ff9ead1c5b25bca95fd5a65f7b"
+    },
+    {
+      "taxon_id": "F1396493",
+      "busco_table_sha256": "454723eb14596534e683d6e464d42d1b5650e15ea5b2d1e1bd15113db3f044a7",
+      "representative_decisions_sha256": "9a63efe6a5217fe05baf5c7aeb163e47531a9827bed06b18ecc5af70473d6011"
+    },
+    {
+      "taxon_id": "F109760",
+      "busco_table_sha256": "1d64795b35d26d8200c0e585d09363778dac81198203323becf30e19a9eaf5bd",
+      "representative_decisions_sha256": "3f7586cab441d5cbe051cee69963a6ee2d40cad61e997a589d120227505b9c98"
+    },
+    {
+      "taxon_id": "F1806994",
+      "busco_table_sha256": "9cfef54c56aa02f08318f1f9118e5782397a3f49ebdc1cb9a2ea240ab700555a",
+      "representative_decisions_sha256": "391956ca1c891c68f7d304a437386c23f61d2dccf62ee2e911a291a41c45a075"
+    },
+    {
+      "taxon_id": "F34488",
+      "busco_table_sha256": "bb383298f1b65d160ef99d9c082ad5aa0f4119467cf60174f946373d73ac95b9",
+      "representative_decisions_sha256": "673face6a037fbedf9dd6488f134fcf2c7109ec767683344f3cedeac8390e853"
+    },
+    {
+      "taxon_id": "F34485",
+      "busco_table_sha256": "d0c9b635b26bd2e65c7de7c7e7482448a99cec5a7f15f8ff66cee548831ac9a2",
+      "representative_decisions_sha256": "1fd3e947fd138ade2d5d881afb763b56c1793e551b59c780a0ac5575040f1a3a"
+    },
+    {
+      "taxon_id": "F348617",
+      "busco_table_sha256": "0f5721f0f7781fa0532057dcb3f09e33c46409090519ac266514d6899f166cb4",
+      "representative_decisions_sha256": "d08eac7fed3e616474590814be6ae0598ec48526105e5b6993d024a9942ec536"
+    },
+    {
+      "taxon_id": "F76012",
+      "busco_table_sha256": "a90fb4c61163385ef3e1ab4f5199fb18a048b2f6889caea4ac829ccbf925bc4e",
+      "representative_decisions_sha256": "cd1d1143ba0e732ef96f67f3c62d7dfa69640204a16b2e4f95c55f488b24f1da"
+    },
+    {
+      "taxon_id": "F144530",
+      "busco_table_sha256": "380be82bb4df89969f435ee3e9854656068fd19fa5f855b50574d32b1cb3d8e6",
+      "representative_decisions_sha256": "b53ab65c022a03d7d2010134eb3066ca51dacd24d35e9e0ffa481a3be3417009"
+    },
+    {
+      "taxon_id": "F144679",
+      "busco_table_sha256": "0b16b54d14568f18f3df83881d2bf84f623d61ab986227ffd39cf0409e3c26fc",
+      "representative_decisions_sha256": "869f4906a13d40c34d1bd673d3e527b6e23c84016036b6fcd5df46da25c4c08f"
+    },
+    {
+      "taxon_id": "F50956",
+      "busco_table_sha256": "260fcbf35f269b1e17a61a394fbea245e482943c36820242b5f0668086595680",
+      "representative_decisions_sha256": "aae75d5970347cee9eae56d885dcc5854fbf83e9167498545438193038cc7e4d"
+    },
+    {
+      "taxon_id": "F27376",
+      "busco_table_sha256": "8aaee6d46ac440178bb97c25c3285da9fbd29021cff2329cbf9c736f98050744",
+      "representative_decisions_sha256": "5ae13692a9dcbedabd8222df1b8e9faa2964255c9248fd0c95fe22743bb38644"
+    },
+    {
+      "taxon_id": "F1348612",
+      "busco_table_sha256": "4c63f89322fc1da317b4aed9c599c4950db026dae83ab38de92d68cbe95f8c06",
+      "representative_decisions_sha256": "69d1e4930613255bea89c07c2b0cffb5a1493b7079a0f9963186e471ecace306"
+    },
+    {
+      "taxon_id": "F4874",
+      "busco_table_sha256": "5b66a41fc237ddefac725947815981c9b51108d48a19afbbaf08597ec321e9e6",
+      "representative_decisions_sha256": "8266fced7ea95e37d253c025ae99a1f8245ca94acc514e16710a3992e080d895"
+    },
+    {
+      "taxon_id": "F2562287",
+      "busco_table_sha256": "b8c542be39b7d44f340feaad46d3a2736add7cb5f1336a0b1249d5a8979bee9b",
+      "representative_decisions_sha256": "5e3c395b8a3185f5fb4a191390bc5b2f54c2af5ba0bf241c9d04f2af80593d75"
+    },
+    {
+      "taxon_id": "F1117311",
+      "busco_table_sha256": "573c3bf83deba1f7afcd91e33b219e8ae6ceb0fb7bea7ae10751c58396f5040d",
+      "representative_decisions_sha256": "fac1223bdde8647fbce605dc03bc35a38426e2967d3f8939367320afbd07e44d"
+    },
+    {
+      "taxon_id": "F658196",
+      "busco_table_sha256": "62a9b9f5b733c3d09479e1f3e03699a20cc892e985e746b5f41f8fe9301ad124",
+      "representative_decisions_sha256": "cab47d124a1a81616ecfaa7b9f3f45e3c45436c068cde3ee7dab118174ba8e11"
+    },
+    {
+      "taxon_id": "F588596",
+      "busco_table_sha256": "264ef832a1b44dc5ee6ef2c4a06490f376574e13dc2445a93485a6dd69247497",
+      "representative_decisions_sha256": "d9a8e744cda70056cf93b10cb548c19ff01d7e01e91d7b7a068d42367c04def1"
+    },
+    {
+      "taxon_id": "F144538",
+      "busco_table_sha256": "05693939dad83d166f8282c65c6057c1b4bd1affe01699a04373fb18bb952aad",
+      "representative_decisions_sha256": "a8e45d7cc44b6e26d33ea170b137cc0d9bd02b88b28ccfabad1e6880a2792b5b"
+    },
+    {
+      "taxon_id": "F144539",
+      "busco_table_sha256": "975a712f27b77081f4ae7c7bd72e1f980851311805a333f820920ba542bfb330",
+      "representative_decisions_sha256": "6448fd6bbede03f1870b77d50b1fe709b6a4da3a5e7e9e0bd93925b94f56458e"
+    },
+    {
+      "taxon_id": "F215637",
+      "busco_table_sha256": "a2cc16df88d74998f1c1dd814bf9433c22a34c8d981c7030da541ab7f53f8f00",
+      "representative_decisions_sha256": "c4dacbbf0237c761d2509b03795340ecddb30c62999d1e421a4f789baa430c0e"
+    },
+    {
+      "taxon_id": "F1520584",
+      "busco_table_sha256": "2b23e7172048b8ee5808d1be47bea90f9039ca9b3b34f68d72df3b893ffa226e",
+      "representative_decisions_sha256": "53a76212d60e4a403789abfa00d62c08a263002f176371913b31dd5105d20652"
+    },
+    {
+      "taxon_id": "F78921",
+      "busco_table_sha256": "fc2eef594de4d7bdece1f88c3a9f50cc823408bfd64a5d68bb5cf77455007ce1",
+      "representative_decisions_sha256": "af22dc98d15002cde760725d8a97c5b5601f2f771bb437f4e3f43aa8805431b0"
+    },
+    {
+      "taxon_id": "F61424",
+      "busco_table_sha256": "d6b78e9e8c83fd9871a672537c35a9755d478421517348e1d53ec2512b70658a",
+      "representative_decisions_sha256": "8e1c9cd5aaf11727c64c4a8c7d412d8445b5a573c9fddfb1d93dfb72ab45780b"
+    },
+    {
+      "taxon_id": "F133377",
+      "busco_table_sha256": "9fb2162a69e2f00bb2547f61acf51f82ed3a8767344108e22d106b04fa68bdba",
+      "representative_decisions_sha256": "e717988d2886524d195d8daedb7655d4899cda74cf53045b02aae4ac7479125a"
+    },
+    {
+      "taxon_id": "F133385",
+      "busco_table_sha256": "4aa382ad96dd185c22fc121ea35650d02eb773489bc6d48be3fb023b5b606cd8",
+      "representative_decisions_sha256": "aa18ec4419a24e9d5485520bdba3d193643b1bb834cc0abc52ec1074ee4b6954"
+    },
+    {
+      "taxon_id": "F1213189",
+      "busco_table_sha256": "e61560e3665c2e4190c7093d74169009dcaf5a9e692b3a418c0330ccd9c0c9b7",
+      "representative_decisions_sha256": "dbd53b73381ab0a3e7dce2578125637fee8c36697e1672e9f63c21453e205d94"
+    },
+    {
+      "taxon_id": "F2650707",
+      "busco_table_sha256": "11063d61b017630403a9804a9130a4a40026549942b6525045e92c74ee2bd81c",
+      "representative_decisions_sha256": "0da51a98c7734526deae8909ae54a6350dc370de77539553b837f6d0ebb7186e"
+    },
+    {
+      "taxon_id": "F4866",
+      "busco_table_sha256": "55b65461ad1651d91ee0a83abd49541bc3e635617fc9f7deab97e7533718e3ad",
+      "representative_decisions_sha256": "b61c0582f352bd117095e3939390addf559a307c0ca42c3c0b5d4237382fc88c"
+    },
+    {
+      "taxon_id": "F61397",
+      "busco_table_sha256": "146c8192e477e61732ce00af8aec12348c5198c3af838f10b1bf011291237f4d",
+      "representative_decisions_sha256": "0a17e5db54616fcd30fb6e8ebedb0dd1144cb32aef7f5272dcb28c610aa25948"
+    },
+    {
+      "taxon_id": "F61395",
+      "busco_table_sha256": "f53124048482ef1642c58bc37c1ac133b1d671ea632851952e8a5689c93496e5",
+      "representative_decisions_sha256": "e18d35b5f152749d4fe0e22b2924b446a68daad132e9df72b639d11fd7fae0d4"
+    },
+    {
+      "taxon_id": "F304332",
+      "busco_table_sha256": "ebbf26c2332be992bc990635dc75aec340d864b0e0a07e84e0c5009f7ba00daf",
+      "representative_decisions_sha256": "be94b091c548b62be4d548d410a1047bfa5e431c21095d8f1edc8b618bf3c173"
+    },
+    {
+      "taxon_id": "F164912",
+      "busco_table_sha256": "93e73000d6f90ee3573e98e244ceaa28e73deb7d95974c97b2028e4cd0525b27",
+      "representative_decisions_sha256": "d1a2a41e04fc1bb6124e540813f6226de9fbb1f5dc7262a05b455442c91b7576"
+    },
+    {
+      "taxon_id": "F70536",
+      "busco_table_sha256": "5d3696e7ca1898726329a194cd5d295b2b101e602512586b3bfd76a670873409",
+      "representative_decisions_sha256": "b7eba2e92b6ae3add0f1ba9f784054c2a7758e160ee35332802b77e3d53b56c5"
+    },
+    {
+      "taxon_id": "F6035",
+      "busco_table_sha256": "dcb39893c2055bb0636529f56f825b8836cb12f06400d9c013663352705aef5b",
+      "representative_decisions_sha256": "78a4a5e7e0e60cb39bd93b97a861aada4d5c6c786214997e2ca4abd0e4c6d8ed"
+    },
+    {
+      "taxon_id": "F174680",
+      "busco_table_sha256": "c72c300ac9202cb3325d9f5c796a84fba71cdc2ae3e64778a2d8c3c173eb3ce2",
+      "representative_decisions_sha256": "b448e63b61792f7bbc0c6c888ce3af53efd372082624d2463e1c61f6322736b4"
+    },
+    {
+      "taxon_id": "F174688",
+      "busco_table_sha256": "e99e91dd4498780f1b3121a1a46491be4b9bbc6378a7f78d65b232377ea1b555",
+      "representative_decisions_sha256": "ea93b32ca0da8a2c117cb4d829a249312553e125feac2bd7e569bfa68eb32349"
+    },
+    {
+      "taxon_id": "F1176355",
+      "busco_table_sha256": "3793fb6606e56bcbb0c69decd247577bb27aec454bf1a611ac1c54d1fa710fe9",
+      "representative_decisions_sha256": "a6840d8f4ee62d0588f1663d5ff12007c417e4965dcd8cd5d48e5e8e5a894ef7"
+    },
+    {
+      "taxon_id": "F1081669",
+      "busco_table_sha256": "09deacc16d94857982b30d6a432c31e19f81dbdbe13ba430e8c85c75ec6f3d7e",
+      "representative_decisions_sha256": "b47a3a630580f4f078e928febcf00b810afb092b954aab647b5dffb5603aab1f"
+    },
+    {
+      "taxon_id": "F1300064",
+      "busco_table_sha256": "c14d04493181c3dcc985753018ec1022f501dc19e89c37bdba302a47d44fa419",
+      "representative_decisions_sha256": "39897bd099da57f0f3960133ca82f59ba562ac52cedd53e523b37d69bcd8bae7"
+    },
+    {
+      "taxon_id": "F3039483",
+      "busco_table_sha256": "25ecfe04d49e0bffef831cd84c7c54b9d95f7d51f9e05bcda46a5a4aefc5b44b",
+      "representative_decisions_sha256": "4d79887644553ee27ad1a995be0f9e73f5e354b2d8806a088d93884c1d8a555c"
+    },
+    {
+      "taxon_id": "F291195",
+      "busco_table_sha256": "07ba4a508da14bf8030b3df9239e1d501638d0b974544d660c21ba3b3fa81af5",
+      "representative_decisions_sha256": "68a82939030db67ca64ef944b37e99c6c646f521a979aa0fbf2b0256a118fff8"
+    },
+    {
+      "taxon_id": "F6039",
+      "busco_table_sha256": "821fec38be64fd7ef5d7bbb08273af21d22c8787d3a2177087874d3dd7e997bb",
+      "representative_decisions_sha256": "4e8335ed964b3bd3175bdcd6c9a043735181610bb8c42587c051e06d0b50585c"
+    },
+    {
+      "taxon_id": "F103449",
+      "busco_table_sha256": "680d2e8e8b83b200ed568d2ba721d5b3be786e3ae824edf7403afc738d0b9f27",
+      "representative_decisions_sha256": "d9872515722d5f5a22d9efc1238c5c8407925473f44550aef0b6dca1ef86f6a4"
+    },
+    {
+      "taxon_id": "F82268",
+      "busco_table_sha256": "1ae1904fe3cd5343092942577ba83ca83e050e61352b4702f6f50b64e59ef9bd",
+      "representative_decisions_sha256": "906b6d3a5fe48cc0edbd64b6ab44e7065f49a2dbcef8e4338cefd2159b09cb4a"
+    },
+    {
+      "taxon_id": "F1123529",
+      "busco_table_sha256": "637fdc116d74bef3b2557b515b4d1d4910a8c1295555af224d951f1158d6d3c3",
+      "representative_decisions_sha256": "1c45feb076ca3db82fd8945c3cb99965605d83aff9677029b66c16b2a7852a4e"
+    },
+    {
+      "taxon_id": "F2725673",
+      "busco_table_sha256": "06270a9e086def442543cb6af2a3946e00d6b7db1566a49cef4f0379ad1ed113",
+      "representative_decisions_sha256": "8ff20b0ae3bb6547eca01406471f7416c6484f1f3864d361b04c8ac9b1e0a781"
+    },
+    {
+      "taxon_id": "F1343610",
+      "busco_table_sha256": "bc91a9a8ab393c728d66f7d4e5a1f8fb4729afe41cbb9ccabed9304c674b5523",
+      "representative_decisions_sha256": "abf50c0baeb1781f3d0bd5cdf8a466d597297a9153c6b904d491528b7c5b3c32"
+    },
+    {
+      "taxon_id": "F979620",
+      "busco_table_sha256": "253ba40f79ca7b19a0ff02a08cdfd3206308484fcf701b63b6ef3992ae8418c6",
+      "representative_decisions_sha256": "6651b517abe9e4643cd4032256fc208b2a8df107e6ae49231e1bda62660a482e"
+    },
+    {
+      "taxon_id": "F101097",
+      "busco_table_sha256": "658cdcabc303212d24e2c43539ab9e595db6535c7bbc4392f5c4e72e7c11d972",
+      "representative_decisions_sha256": "5f4c87ddc7f637465a1790ee12d4a44f4d88a7c8fb4252436e933c2764de7268"
+    },
+    {
+      "taxon_id": "F101098",
+      "busco_table_sha256": "a4e0d864798d995360eadaeac1d0ccf83ee144eaefda0eb154422a245bde293a",
+      "representative_decisions_sha256": "88bb74c08f45492bbe8a35b18964814272e582ef52574754a95d3edd28c730f3"
+    },
+    {
+      "taxon_id": "F979690",
+      "busco_table_sha256": "28bd4386e47f1b61a350467ab9542fcf06ae4afd1e4e8ab9f99ccfe057f1d5b3",
+      "representative_decisions_sha256": "a55559a4fbfa27faa82bdf13ce8485a93b989c8cf4fafd623c5252b821065ec7"
+    },
+    {
+      "taxon_id": "F1897645",
+      "busco_table_sha256": "36a4a4b3a2b458d17409d4f25451aaae86335775fc3acc9171cbc5c7444e5ba0",
+      "representative_decisions_sha256": "8eb362d7d805a1c794943f080b3a1b443832342b2d4c3cfd33e86e632b2f673e"
+    },
+    {
+      "taxon_id": "F604196",
+      "busco_table_sha256": "a474afdb024faf20f081950a507ff7e706c3ca9aa17fb4424ce5f92336be8220",
+      "representative_decisions_sha256": "4d0d7aef999566ffec9351c85bf244bab25c763616aeecedd8cd1070e1ade9b8"
+    },
+    {
+      "taxon_id": "F64571",
+      "busco_table_sha256": "ba54b4e7bd0fd6a1714a5aca187665031d2b80ea079bc828745abf74b20e78ba",
+      "representative_decisions_sha256": "d1c6b34e28a0c3ad392673f5cae22e0bbd34c3486b83d232c500be3f44fb3625"
+    },
+    {
+      "taxon_id": "F979761",
+      "busco_table_sha256": "96b7be75bc9e0e885ccc47e90e006b0e7e971fdb4254a6be47be180733fd73e1",
+      "representative_decisions_sha256": "8e5d0816f4c5cf0724f69f11513cc72afdeb3a07bb66aaa832e129526bfb3c6b"
+    },
+    {
+      "taxon_id": "F1440133",
+      "busco_table_sha256": "aec24ded9522ccb1d8eb85448910f978edf515700e3f7681a7c42813cd7dcfc0",
+      "representative_decisions_sha256": "b26454a8c15da33276e34ca5e710ab717393d7c46edcf151f078d502a9732092"
+    },
+    {
+      "taxon_id": "F1343614",
+      "busco_table_sha256": "2c91266a94c2c6ff1f0259a72468addd96b27e52be63fae9ed3e627187495f7f",
+      "representative_decisions_sha256": "cefc785e0fa59d0bf37b46ca0eb8608254da9e789984aca0d464af6c0bfa8c12"
+    },
+    {
+      "taxon_id": "F64525",
+      "busco_table_sha256": "704c91a02c6e9590e2941e449977c2f623c5c459d71507056fb451430fb2a711",
+      "representative_decisions_sha256": "bb46a745f3fb8b33b06ed1998d495200044465318e6f76995367cac1e9b3a143"
+    },
+    {
+      "taxon_id": "F1938954",
+      "busco_table_sha256": "eaaa6bb9bbb46cdfcfbf3aa40ecaa6c3ec5e9694e01f1db14f95cdde93911daa",
+      "representative_decisions_sha256": "6d83363a0f8bfa85ffe3c9e6cf9c750fa0c89f46f67668a544f58651621093c8"
+    },
+    {
+      "taxon_id": "F2340872",
+      "busco_table_sha256": "54aa034ddbe75d11d90abf41145909fca73804c7023bda39d785be8c5613b76e",
+      "representative_decisions_sha256": "e6db5160fbb16656720f2375055dd91c319303e3669f9e31dbd755a4ad16763d"
+    },
+    {
+      "taxon_id": "F994334",
+      "busco_table_sha256": "944f5f4f765c3383caa07de9a0f5649a1973fd93083d789b942de9045e7e49f0",
+      "representative_decisions_sha256": "2e310a355e3abc7f29d91e0d102ad364d76e4cbd86f53ad664129d733fb106a3"
+    },
+    {
+      "taxon_id": "F708070",
+      "busco_table_sha256": "62bf6f68d2cc6d96c4a438fe28c9a17e8fc32c9231f328bfeae42a2231789b83",
+      "representative_decisions_sha256": "531827be2d0ce46cf868c1073681abd043265f629743b9a9f54c62da922b5fce"
+    },
+    {
+      "taxon_id": "F64632",
+      "busco_table_sha256": "42f4b911afa24945c688d57b448337f2619020625cf0b2ceb207b34bba395b07",
+      "representative_decisions_sha256": "e8f160cd8010d9d093d4e0a6459a40f753c096fcca20f484011048361ddb1cd4"
+    },
+    {
+      "taxon_id": "F4837",
+      "busco_table_sha256": "8072dd6ed96276db7478a3daf026c8a8c4e79e0ad36de92513a5a171ea486674",
+      "representative_decisions_sha256": "4d002c96c87d8f36be0760100c2a8522537a29b48f3653ad1f5d21ae1d824624"
+    },
+    {
+      "taxon_id": "F4840",
+      "busco_table_sha256": "c464f7a20e74fa95c204a9979925c32931e825c3bc84b801d0c5b47d85a651ee",
+      "representative_decisions_sha256": "6e2cb5cb20bd0d35190ba5f34b26fc1148a74ce52ce60382c12dc3f7fbd2505d"
+    },
+    {
+      "taxon_id": "F58291",
+      "busco_table_sha256": "d7e8e68a1b2dadc718476b625fce63bf4d99baf7ed66ff345f847cecc4a91a00",
+      "representative_decisions_sha256": "d55e4199021626172377b21f30e032e3e24899b22c5fa3ce4df8f0b4291354d0"
+    },
+    {
+      "taxon_id": "F91625",
+      "busco_table_sha256": "be3aa1e01884c1273b3d1c83980c7814eb801c290dfd7ddd28be12e43ee5a9e7",
+      "representative_decisions_sha256": "535689be4fc975f008ba750a062c9f77a7a5b29c827a50c8f2b9d1409b9691fc"
+    },
+    {
+      "taxon_id": "F64526",
+      "busco_table_sha256": "c99a8099c7cd7929e6045752b0a2037e3a640afc2fcbc2303d98187af9e4a810",
+      "representative_decisions_sha256": "9f0649d97403403d9a7d4c98f8e7bc1e9fc2840c90e65216f8ee77eb0e4408e6"
+    },
+    {
+      "taxon_id": "F41833",
+      "busco_table_sha256": "9177a7577ff3c0a4984bf081d51e4bd631f4644a39c91f7f8191ccd9264e2434",
+      "representative_decisions_sha256": "dd9ee716b10aca574c1f66ed94cf4c1c105a8ba5ed603b7c2d2df497fe475d4b"
+    },
+    {
+      "taxon_id": "F44442",
+      "busco_table_sha256": "95ded123b02366be7bc1859b804ed1c849b31b742e9af7eaed71a04be2f90dea",
+      "representative_decisions_sha256": "5dc39438b522cf772d53dae9569d91e8695c5496aaf36c2c89722154879a4129"
+    },
+    {
+      "taxon_id": "F1754192",
+      "busco_table_sha256": "d1b0c85032a21d62373cdb2b60641ceb582917d0d34b9a4a5302c05c1e35fe7b",
+      "representative_decisions_sha256": "dc68a5d9ab51c864e7a58402cd88ca8ca9eaafad99b684ce80c082d92bf1f452"
+    },
+    {
+      "taxon_id": "F1754190",
+      "busco_table_sha256": "65e028d6f12022b3b2125f103a2200ac0501add10a69dd67d2931b218eb17774",
+      "representative_decisions_sha256": "6b84ea57c6c7946b5c79871c2c9423674b083ca4f8da2ef2a629ae12bad8b70a"
+    },
+    {
+      "taxon_id": "F2767002",
+      "busco_table_sha256": "016ff64aae2256f60fe2836e2c27c22e375c13e52ec4914b2c85371ce46ebebb",
+      "representative_decisions_sha256": "7204f170e79286e693423dcfe58a7f1900adad197f62a604f40d96120430b5c7"
+    },
+    {
+      "taxon_id": "F3108450",
+      "busco_table_sha256": "f15a5d2654f38f65c4d67bbf487d4d684e5d79d0eeead1d37d1a5c69c8319c7d",
+      "representative_decisions_sha256": "5e676d8cd2fe18e2852ea2497e4d0872fbd6e9d885614c24ea50b97fcf041069"
+    },
+    {
+      "taxon_id": "F1754191",
+      "busco_table_sha256": "97178dec2147d5dd49d854f4eeef6ff914181c141081cf528b6bf7da2dc8a084",
+      "representative_decisions_sha256": "dacfe36dd1bac786170f4beb992595f158035b325bc41fcf2dcca9ed5e8ccc99"
+    },
+    {
+      "taxon_id": "F73868",
+      "busco_table_sha256": "25c18cd73611fe1097396ce702d9df922f876bccd7a621d5534b2e7f448aa1d6",
+      "representative_decisions_sha256": "192eadc519081f40098ce3299e667fdbba5dd84e455247c320939d99c27123b6"
+    },
+    {
+      "taxon_id": "F278681",
+      "busco_table_sha256": "45857b3022e65f88bc8217540b38ecba104b6dae533cd49c548833f4c2e429cc",
+      "representative_decisions_sha256": "24f2e7cf7d5d90a3c81105f8cbd3963a718c8182f69a98e75448821ef71fff44"
+    },
+    {
+      "taxon_id": "F1246581",
+      "busco_table_sha256": "f8ba09c83185431aabfa2de418689da33bc088346dad3e17a00ac9e654b46798",
+      "representative_decisions_sha256": "253a8820596af26296bb2285c3829d6e92c7450d7edc1924032c2c26f5213505"
+    },
+    {
+      "taxon_id": "F281847",
+      "busco_table_sha256": "3a4e7d8a77a925f7503579401ff5b05335d3ec770ea4aa5ce9717321241a8d5b",
+      "representative_decisions_sha256": "1fba5ecd38844acf465bf54ff3b7791c89abb052516cbc72516b84b6ffcf5c64"
+    },
+    {
+      "taxon_id": "F1907219",
+      "busco_table_sha256": "a460d5e2403b15270d57ae802d175423b604cc64857e8fd1c045e53a513e0a70",
+      "representative_decisions_sha256": "7f8b5525ae4b723908368427c8e0de515bfc127b888c3c024edfbdd3ae65b50d"
+    },
+    {
+      "taxon_id": "F1286916",
+      "busco_table_sha256": "86a16ddd564e95c5bc54340f3384a0b70fe6a3e290790d4ad94f207b39aafbc1",
+      "representative_decisions_sha256": "415afd4972724293db68895286078e3ac1e44158e15c1338ad94d9ff24f65678"
+    },
+    {
+      "taxon_id": "F1851187",
+      "busco_table_sha256": "582f3ca01b3b711d166827baf0605eef3ae32660f1618a487602cf6a9b6c5c37",
+      "representative_decisions_sha256": "ce87080c7fbe9e3fada1d2d3066bfec09fd1a9f4f9152f9cf1470a0588281819"
+    },
+    {
+      "taxon_id": "F1851185",
+      "busco_table_sha256": "2a94c139dd74310c38dc1d1ba7a9f5ab7c20a067cc251826488e92361434f31f",
+      "representative_decisions_sha256": "6f082245232bc611776dc8731ec49221ec25ae59a0ff8d92865bb0b3de155ed6"
+    },
+    {
+      "taxon_id": "F1712513",
+      "busco_table_sha256": "6736bae49f9c633522d5843e0b31718d09ddce56d01dc02414037c1a4a16723f",
+      "representative_decisions_sha256": "3de4a5007388e84b68128da4dab08e6a74993d830710f436f2bcb288201ec79d"
+    },
+    {
+      "taxon_id": "F78915",
+      "busco_table_sha256": "973da96400911fef5ccb3c9d1b613f1938c7bdafb623a743b3216b0c1590af39",
+      "representative_decisions_sha256": "027711f0849d49a234d2c993b6d14bba29ae3826832d0bc139228eb657d6d697"
+    },
+    {
+      "taxon_id": "F2109901",
+      "busco_table_sha256": "826b2c0a52b375b1d9c11896ee750c42d222a30e12ea7773f787c5d05309f58d",
+      "representative_decisions_sha256": "798a31ab0ab3c8e2e4e6b03bcd82e7d33fe7bbe48922f5fa77e049219ae77d27"
+    },
+    {
+      "taxon_id": "F2020955",
+      "busco_table_sha256": "65e31d378f2b5c7c3be89e0cbfbb914628f918b216eb37799c452d8399b4111b",
+      "representative_decisions_sha256": "fc60f3725f08c7c962badab28704179e7145fa940d63cd7184b57f7a8be292f3"
+    },
+    {
+      "taxon_id": "O691883",
+      "busco_table_sha256": "bc529ce0629c27270cbe8ed0927cf369b051b5eb47a5afd663b8db68edc0d936",
+      "representative_decisions_sha256": "589f7fcf7705551329ac0d23f8418d9ebb6bc58145092f72432504217e33a647"
+    },
+    {
+      "taxon_id": "O81824",
+      "busco_table_sha256": "672a234e7c5501793cf2f66c5007587dc5eb5495d5cb0488501699fcd3b9d0b2",
+      "representative_decisions_sha256": "4ab353d8e2e19495abfe70d020587d2ad975c421b54321b9ca44bd74bf8907b4"
+    },
+    {
+      "taxon_id": "O946362",
+      "busco_table_sha256": "83f94a0925ac5c7ec439be0337f7a72aedaabbe30eb76a6fede1556d8b5211e9",
+      "representative_decisions_sha256": "0ebd23421a86b28fda95536633124acb7437e6fce9e94db514a60022524db020"
+    },
+    {
+      "taxon_id": "O192875",
+      "busco_table_sha256": "a8ec2b5bc3bdcdf4c48d81e09038f26a98d65a1e82df34eb88e819bd09e801e1",
+      "representative_decisions_sha256": "76a5673de7beeb6bdef3202f630f4e65271d16405913c6ee1f4969d03657927e"
+    },
+    {
+      "taxon_id": "O72019",
+      "busco_table_sha256": "505d0edd156ac0ded90ee746a125776b84df7113a74197a415f6f0c11cf73662",
+      "representative_decisions_sha256": "057448c13436fa7fc32e7f25e06fdf9f0c94d9144486bd7333368b8c0191fcce"
+    },
+    {
+      "taxon_id": "O529818",
+      "busco_table_sha256": "149a42b0a811350ec8bb69f45e81a7277115f40f0c2959b0802d07a1231b1e77",
+      "representative_decisions_sha256": "7640c578c8f4db9eaa73a0bd0896ef8a91716e320e17a7a2df5680e7ef941223"
+    },
+    {
+      "taxon_id": "O5755",
+      "busco_table_sha256": "58fc8f0ad0efac34311bb0e4c949f3920e3e1e5c1cfa0d3c785b13e7893fe728",
+      "representative_decisions_sha256": "9b81640b8332b3dae1d2fbc213b18f271a6c8eb8d4185c93d8581271d5127297"
+    },
+    {
+      "taxon_id": "O44689",
+      "busco_table_sha256": "36f3b6fb92acb522548494810c0b3bccd1c9e74046a20173884799a200ba78da",
+      "representative_decisions_sha256": "b2c19c7c0a1f67cc4132ba7a23c3d584c0bc99caea558ed38ee3d6c61f5e6baf"
+    },
+    {
+      "taxon_id": "O5786",
+      "busco_table_sha256": "e0ea7438b237647cb070250a025e47de196cf84594ca03c840dd85bb5f94163d",
+      "representative_decisions_sha256": "a2d7a7a9ee32a3d67697f170de9518196dfe339affe48d02a964a72ce44335b7"
+    },
+    {
+      "taxon_id": "O133409",
+      "busco_table_sha256": "a29c1211547933734e27b3866ec9f6adda56d75c33795c66902a330710418119",
+      "representative_decisions_sha256": "49e17e78af6aaea5929ccb455f7385f87fa0b119f03311a5a5c8573ce100ee21"
+    },
+    {
+      "taxon_id": "O1890364",
+      "busco_table_sha256": "28635a2f1416861368b12af23c2fe99d1f42cefb2df16c59695c602a4ef3ae6f",
+      "representative_decisions_sha256": "8a83a17a12989c5b37a7ad38829ee4134fff4bf3235922f2345a67a8ac4e6b32"
+    },
+    {
+      "taxon_id": "O400682",
+      "busco_table_sha256": "272200dd8f27222f17cd8af64f9c9abf0418683622bc27e469935e3d19138180",
+      "representative_decisions_sha256": "642981b6050bfc123019fb4294dae95094cd3314c481c795f090bbcd7248acee"
+    },
+    {
+      "taxon_id": "O45351",
+      "busco_table_sha256": "d45e31c18e654530d10e80123ac41634e30853d5a52369c1a58f6a8d034df4ee",
+      "representative_decisions_sha256": "5f7929301f0514070d32f41031059675e5a02328fd6f2eaa0be4285b7b723094"
+    },
+    {
+      "taxon_id": "O10228",
+      "busco_table_sha256": "7138d306a25600469fca315770b87f47efa813153b95426e74bd72e4aa9912d9",
+      "representative_decisions_sha256": "06cf2f8ec94111548533def7084ae418875ea93f3f9f1ec6b552c823c4044db8"
+    },
+    {
+      "taxon_id": "O27923",
+      "busco_table_sha256": "3b640de9bc189b167f91f53a1ee884a8d71acf93adfcc39f0f88e0a492eead0d",
+      "representative_decisions_sha256": "a5d853d461a92b39e30d6abb1414b59aa8adc72cf26dcba937a11696042850c0"
+    },
+    {
+      "taxon_id": "O7227",
+      "busco_table_sha256": "4f05e8b45d9ad047a724bc4e90161dee62f5094b89cdfc7526cf396560941066",
+      "representative_decisions_sha256": "6ceebcbe88550329d77fadbd6759a88d15c2bb55e88352bb4fcdf1a9d72f2ed6"
+    },
+    {
+      "taxon_id": "O6239",
+      "busco_table_sha256": "d6118767f847e6e1b8a1aa788d0f39b1eae877b028b87a817a6bdfc97e68144e",
+      "representative_decisions_sha256": "c3c5ae0eeb039b8c07f3b6d2553c5589350e20cc61592c19311f7fec353adc09"
+    },
+    {
+      "taxon_id": "O283909",
+      "busco_table_sha256": "0691975eae88fd05a188a9dbd1ea9d2a7e5e7b86c09f7e26bc2c1d2fdf9b2305",
+      "representative_decisions_sha256": "4ad56dc74bbdd721b52a30dd635e843f2a93849656171ab0becebd9454b23727"
+    },
+    {
+      "taxon_id": "O225164",
+      "busco_table_sha256": "0518a034e0073d54e2fe8bb6a2db6f524e41f1776e4f661e8409c68df0402d95",
+      "representative_decisions_sha256": "6214f16e736b9a143afafc07c93184d805a102613d13f6e08522f3d39a055416"
+    },
+    {
+      "taxon_id": "O2700040",
+      "busco_table_sha256": "320c188797a9560ba5678c72132950d9fa6c4e708203a7ed48522e21bb77d819",
+      "representative_decisions_sha256": "0d871ab26cf8a6ef3aa09236e48662de83753139b68868428c89aa46c18eccdc"
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "busco_table_sha256": "a07c3f8b708c1360c34ef2822c900d202901f675fd80338e951c0761df205ec9",
+      "representative_decisions_sha256": "db1246f83a87eb88db0614765acff0ca0b1cb1d6c5c8e35046093bba770388da"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "busco_table_sha256": "37cbadce972f9a1dd083ed028e989a044043a149d3fca6cf1eb848db6c5c2e7d",
+      "representative_decisions_sha256": "7651f733572b9e8e2f0041c20a865fd7e0b7ad1ae22b5193dd864add0fd0391d"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "busco_table_sha256": "91fb7977b08748868c3ce9638e6bda1da5376218922ad032c72d96359d47fa16",
+      "representative_decisions_sha256": "00f2e933b591332ee0b3a5657c3266043bf905bd2aceb193f9962fb8356ded1c"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "busco_table_sha256": "73a80f96f8ed1ec9312da37bd027236a01dd3d7cbd39383a80fcf328cd485e45",
+      "representative_decisions_sha256": "2c272c2a1e642f137306d191f3aa28762691f4c995671e96d9eebbc06cdf51f6"
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "busco_table_sha256": "c77c84f1b973805093bb5f98c328f1df1b1eeefa2b7cf973b5c4b099d4188286",
+      "representative_decisions_sha256": "0d66b8e5944a06617bc6b51c2c866a1c36e158ce99e96a8ab3392304f9b4c511"
+    }
+  ],
+  "interpretation": "Annotations partition raw protein-mode BUSCO hits into explicit genes and products. This is not a BUSCO rerun on representatives: newly detectable or threshold-changing hits are not inferred. Distinct annotated genes do not prove biological duplication, ploidy, haplotig redundancy or contamination; unresolved mappings remain separate. No marker or taxon is reclassified in production inputs.",
+  "artifacts": {
+    "marker_gene_copies.tsv": "1750e3b9dc52479c7cb827d7d3fdcea2683ed7c1b2b4f44e11ca348e2aa50059",
+    "taxon_gene_copy_summary.tsv": "0c41f8f4fc39332650da287678d9e419ce421be93051d410e4f17c9b4495cf83"
+  }
+}

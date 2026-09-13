@@ -1,0 +1,18 @@
+{
+  "status": "prelaunch_resource_plan",
+  "stage": "expanded_native_3di_extraction",
+  "models": 13153,
+  "total_model_residues": 6910765,
+  "previous_models": 422,
+  "previous_residues": 215518,
+  "threads": 4,
+  "planning_memory_gb": 16,
+  "planning_output_disk_gb": 5,
+  "planning_runtime": "minutes to an hour; four-thread CIF parsing and descriptor extraction, uncertain I/O scaling",
+  "storage_basis": "Previous 422-model native output occupies 28 MB; reserve 5 GB for expanded native artifacts, original models reused through symlinks",
+  "free_disk_bytes": 12554165547008,
+  "cost": "Existing authorized host; no paid services",
+  "mapping_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "output": "results/structural_alphabet/native-gdm-expanded-v1",
+  "downstream_gate": "Extraction alone is insufficient; audit native validity, sequence identity and confidence after completed mapping-bound PAE acquisition."
+}

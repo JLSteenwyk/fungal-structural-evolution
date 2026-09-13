@@ -1,0 +1,26 @@
+{
+  "source_policy": {
+    "provider": "GDM",
+    "tool": "AlphaFold Monomer v2.0 pipeline",
+    "selection": "Highest mean CA pLDDT, version and model ID only within this exact provider/tool; no cross-pipeline fallback. Confidence ranking does not establish accuracy."
+  },
+  "source_inventory_sha256": "30e0f790eb052a26d609c1b80445711bd95c6a38533c946f2404aea7f7d0d8a0",
+  "script_sha256": "517ff1ece565494d7715a949cb39f691a5e178a68936765820029227cf8226f9",
+  "marker_proteins_screened": 59840,
+  "marker_proteins_linked": 13654,
+  "distinct_taxa_linked": 322,
+  "distinct_models": 13153,
+  "matrix_residue_links": 4895692,
+  "markers_with_at_least_4_linked_taxa": 124,
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "assignment_basis": "Exact complete amino-acid sequence, including reuse across taxa with identical sequences. Taxon identities and source accessions are retained.",
+  "caveat": "Partial acquisition snapshot. Confidence is descriptive; branch inference, PAE/domain assessment and source-sensitivity checks remain pending.",
+  "artifacts": {
+    "matrix_to_structure_residues.tsv.gz": "c6052ded23acb63ae4022f60e93960919dd86c6d2185e81096ff517dc17226e1",
+    "source_inventory.jsonl": "30e0f790eb052a26d609c1b80445711bd95c6a38533c946f2404aea7f7d0d8a0",
+    "marker_coverage.tsv": "b32c3976d52269b258066a15df7326db5c42dc38439e5e68919c381199d1bed6",
+    "model_provenance.json": "c44d05504eaf61f6abc2a68e21f6a990bf7ae9abf439d8c0d8c105c8a5880a36",
+    "marker_structure_links.tsv": "6b6a5a86fce49aebe5047fe2e6dac25671c20e8dd1fbff9c53e3a478e9cf46c6",
+    "source_selection_audit.tsv": "6e421ef402a6032ea6e84f76c9a2ca478e6076cba1a9c788c286b902e9c53938"
+  }
+}
