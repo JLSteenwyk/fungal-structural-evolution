@@ -32,11 +32,13 @@ def main():
     parser.add_argument('--inputs', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--links', type=Path, help='Explicit marker/reference links; default inputs/all_marker_links.tsv')
+    parser.add_argument('--snapshot-live', action='store_true', help='Audit a frozen list of completed per-model receipts without claiming production completion')
     args = parser.parse_args()
-    chunk = json.loads((args.predictions / 'last_chunk.json').read_text())
+    chunk = None if args.snapshot_live else json.loads((args.predictions / 'last_chunk.json').read_text())
     config_path = args.predictions / 'config.json'
     config = json.loads(config_path.read_text())
-    if chunk['config_sha256'] != digest(config_path) or config['input_receipt_sha256'] != digest(args.inputs / 'receipt.json'):
+    config_digest = digest(config_path)
+    if (chunk is not None and chunk['config_sha256'] != config_digest) or config['input_receipt_sha256'] != digest(args.inputs / 'receipt.json'):
         raise ValueError('Changed source configuration')
     ir = json.loads((args.inputs / 'receipt.json').read_text())
     for name, sha in ir['artifacts'].items():
@@ -47,7 +49,9 @@ def main():
     links = [normalize_link(r) for r in csv.DictReader(link_path.open(), delimiter='\t')]
     records = []
     pdb_parser = PDBParser(QUIET=True)
-    for path in sorted(args.predictions.glob('S*.json')):
+    snapshot_paths = sorted(args.predictions.glob('S*.json'))
+    print('Auditing frozen receipt list:', len(snapshot_paths), flush=True)
+    for path in snapshot_paths:
         row = json.loads(path.read_text())
         if row['status'] != 'verified_prediction':
             continue
@@ -81,7 +85,9 @@ def main():
                          'fraction_ca_plddt_below50', 'inference_seconds', 'peak_gpu_allocated_bytes']}
                        | {'prediction_receipt_sha256': digest(path)})
     ids = {r['sequence_id'] for r in records}
-    if len(ids) != len(records) or len(records) != chunk['cached_predictions'] + chunk['new_predictions']:
+    if digest(config_path) != config_digest:
+        raise ValueError('Configuration changed during audit')
+    if len(ids) != len(records) or (chunk is not None and len(records) != chunk['cached_predictions'] + chunk['new_predictions']):
         raise ValueError('Completed chunk and actual predictions disagree')
     matched_links = [r for r in links if r['sequence_id'] in ids]
     if args.output.exists():
@@ -93,13 +99,14 @@ def main():
                 writer = csv.DictWriter(handle, list(rows[0]), delimiter='\t', lineterminator='\n')
                 writer.writeheader()
                 writer.writerows(rows)
-    summary = {'status': 'complete_artifact_readback', 'predictions': len(records),
+    summary = {'status': 'complete_artifact_readback_of_partial_prediction_snapshot' if args.snapshot_live else 'complete_artifact_readback', 'predictions': len(records),
+        'partial_prediction_snapshot': args.snapshot_live,
         'taxon_marker_links': len(matched_links), 'taxa': len({r['taxon_id'] for r in matched_links}),
         'markers': len({r['marker'] for r in matched_links}),
         'links_path': str(link_path), 'links_sha256': digest(link_path),
-        'config_sha256': digest(config_path), 'chunk_receipt_sha256': digest(args.predictions / 'last_chunk.json'),
-        'script_sha256': digest(Path(__file__)), 'remaining_eligible': chunk['remaining_eligible'],
-        'length_or_alphabet_deferred': chunk['length_or_alphabet_deferred'],
+        'config_sha256': digest(config_path), 'chunk_receipt_sha256': digest(args.predictions / 'last_chunk.json') if chunk is not None else None,
+        'script_sha256': digest(Path(__file__)), 'remaining_eligible': chunk['remaining_eligible'] if chunk is not None else None,
+        'length_or_alphabet_deferred': chunk['length_or_alphabet_deferred'] if chunk is not None else None,
         'interpretation': 'Short-protein production chunk; verified serialization and confidence provenance, not experimental accuracy or completed structural atlas.',
         'artifacts': {p.name: digest(p) for p in args.output.iterdir()}}
     for field in ['length', 'inference_seconds', 'peak_gpu_allocated_bytes', 'mean_ca_plddt']:

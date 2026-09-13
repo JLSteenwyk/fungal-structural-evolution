@@ -1,0 +1,14 @@
+{
+  "status": "prelaunch_partial_prediction_snapshot_readback",
+  "receipt_files_observed": 5121,
+  "workers": 1,
+  "planning_memory_gb": 4,
+  "planning_output_gb": 0.1,
+  "planning_runtime_hours": [
+    0.05,
+    2
+  ],
+  "free_disk_bytes": 12529906307072,
+  "basis": "Freeze the completed per-model receipt path list once, independently parse PDB and NPZ/PAE, verify source/configuration/artifact hashes, and retain all exact marker/taxon links. Production continues; no full queue completion inferred.",
+  "cost": "Existing authorized host CPU only; no new charges"
+}

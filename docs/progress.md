@@ -477,3 +477,13 @@ Ascomycota. This limits interpretation of broad group presence as sufficient
 cross-lineage information. The figure, reproducible script and source/artifact
 hashes are versioned. Ongoing acquisition and missing-model prediction remain
 necessary to improve depth outside the best-covered lineage.
+
+## Active ESMFold production snapshot readback started
+
+Started independent validation of a frozen list of 5,121 per-model receipts
+from the ongoing missing-structure production. The new explicit snapshot mode
+preserves partial status and does not mistake an old chunk receipt for current
+queue completion. Two integration tests and three link-identity tests pass.
+The audit process is live. Completed artifact validation, lineage coverage and
+ESMFold residue/structural mapping remain next steps; original production and
+the separate 266-sequence predictor controls continue on their GPUs.

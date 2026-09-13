@@ -97,3 +97,35 @@ The length-stratified resource projection freezes **3,640 observed prediction re
 Before execution, confirm the current GPU run has finished, revalidate new reuse evidence and GPU availability, and use a new prediction output directory because the input receipt changes. No further user approval is required for continuing on the existing authorized host. The current runner's exact configuration and cache hashes remain protected. After prediction, independently validate artifacts and retain source strata before structural comparisons.
 
 All prepared input hashes, sequence identifiers, disjointness and short-candidate counts passed independent readback. Receipts and runtime-bin summaries are `metadata/followon_prediction_*`; the complete source/taxon links and timing observations remain under their recorded data/result directories. No prediction-completion claim follows from these preparation receipts.
+
+## Independent readback of an active production snapshot
+
+The auditor now supports `--snapshot-live` to freeze the current list of
+per-model JSON receipts and independently verify their source sequence,
+PDB coordinates/numbering, NPZ confidence/PAE and artifact hashes while the
+producer continues. Per-model receipts are published only after their artifacts
+are complete. The resulting audit is explicitly a partial prediction snapshot;
+it does not use an earlier `last_chunk.json` as evidence of current production
+completion, and reports remaining eligible count and chunk-receipt hash as
+unknown. The receipt TSV records every included prediction-receipt checksum.
+
+Started a 5,121-receipt snapshot audit under
+`results/predictions/audit-marker-partial-v2`, with output in
+`logs/esmfold_partial_snapshot_v2.log`. It has not yet completed. All original
+marker/taxon links are retained for included sequence identities. Following
+readback, this snapshot can support a separate ESMFold residue-mapping and
+structural-confidence pipeline; candidate availability alone does not establish
+usable paired coverage or justify mixing predictor effects into branch rates.
+
+```bash
+python scripts/audit_local_predictions.py \
+  --predictions results/predictions/esmfold-marker-v1 \
+  --inputs data/prediction_inputs/markers-v1 \
+  --output results/predictions/audit-marker-partial-v2 --snapshot-live
+```
+
+The existing completed-chunk audit remains the default. Two integration tests
+use a stale historical chunk receipt to verify that partial snapshots remain
+labeled partial and completed-chunk mode still rejects inconsistent counts.
+Three link-identity tests also pass. One CPU worker, 4 GB memory and 0.1 GB
+output headroom are planned; no new inference or paid resources are needed.
