@@ -795,3 +795,14 @@ PAE export (session 67992) and native structural-alphabet extraction (session
 `metadata/esmfold_ecology_feature_resource_plan.json`. Coordinate-feature audits,
 PAE qualification and paired-input preparation remain pending. The raw count of
 75 markers with at least four mapped taxa precedes confidence/coverage filtering.
+
+
+Ecology native extraction completed with exit zero (session 97473). Its
+executable, extraction script and native-source hashes match the earlier
+follow-on cohort. The actual configuration is preserved in
+`metadata/esmfold_ecology_native_config.json`. Started full coordinate-feature
+reconstruction (session 25686) for all 675 models; resource allowances are one
+CPU, 8 GiB memory, 2 GiB output and 0.05–2 planning hours in
+`metadata/esmfold_ecology_coordinate_audit_resource_plan.json`.
+PAE exporter PID 4052697 remains live. Neither pre-PAE coordinate completion nor
+final PAE-qualified coverage is claimed yet.

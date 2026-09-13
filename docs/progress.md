@@ -1922,3 +1922,10 @@ marker links across 19 taxa, and all 165,755 matrix-residue links verified.
 The expected global links equal all exact full-panel sequence matches and retain
 all 696 curated originating links. Started PAE export (session 67992) and native
 extraction (session 97473); final confidence/paired coverage remains pending.
+
+
+Ecology native extraction finished (session 97473 exit zero), using the same
+executable, extraction script and native-source hashes as the follow-on cohort.
+Full coordinate-feature audit is running (session 25686); initial models pass
+reconstruction. PAE export remains live as PID 4052697. Qualification and paired
+inputs remain pending.
