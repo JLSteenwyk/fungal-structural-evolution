@@ -222,3 +222,36 @@ OPENBLAS_NUM_THREADS=1 python scripts/plot_tree_path_geometry_ranks.py --summary
 SVG, PNG and PDF outputs and hashes are preserved in the results directory;
 figure provenance and readback are in `metadata/esmfold_tree_path_rank_figure_receipt.json`
 and `metadata/esmfold_tree_path_rank_figure_readback.json`.
+
+
+## Full local joint path sensitivity prepared
+
+All 43,200 paired resampling draws have completed, with 43,184 reported
+estimable draws and 16 retained unestimable draws. The full raw-output audit
+is running. `scripts/append_paired_path_uncertainty.py` requires that completed
+audit before computing path summaries for the existing exact-site benchmark.
+
+The implementation retains all accepted and excluded geometry pairs and every
+original point/geometry field. It updates the uncertainty-status label while
+preserving its original value in `source_point_uncertainty_status`. For each
+block length 1/10/30, it sums branches within each joint draw, then calculates
+path percentiles, standard deviations and paired sampling covariance. It
+summarizes AA and the published-frequency 3Di AF model, the only models in these
+resampling draws; the other point-estimate models do not acquire intervals.
+Unestimable draws remain counted, and fewer than 90% estimable draws suppress
+percentile summaries. Sampling covariance is not evolutionary coupling.
+
+Three targeted tests passed: negatively correlated branches with constant
+path sums, signed covariance between paired AA/3Di draws, and rejection of
+invalid or mismatched draw arrays. A full invocation correctly stopped at the
+missing final audit receipt without creating output. Full-data execution and
+readback remain pending. The implementation uses 512-pair chunks; planning
+allows one CPU/BLAS thread, 8 GB RAM, 5 GB disk and 0.1–2 hours on the existing
+host. No physical-displacement, additivity, calibrated-confidence, selection
+or acceleration claim follows from these conditional summaries.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -p test_joint_path_statistics.py
+# Run only after the full resampling audit completes:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/append_paired_path_uncertainty.py --points results/phylogeny/paired-path-points-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --fits results/phylogeny/paired-marker-fits-esmfold-partial-v1 --resampling results/phylogeny/paired-resampling-esmfold-v1 --resampling-audit results/phylogeny/paired-resampling-audit-esmfold-v1 --output results/phylogeny/paired-path-uncertainty-esmfold-v1
+```

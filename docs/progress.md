@@ -1586,3 +1586,13 @@ process and initial audited batches were verified. Full audit and conditional
 interval summaries remain pending. These completion counts alone do not
 validate branch uncertainty or establish biological acceleration. Other major
 production stages and the broader goal remain incomplete.
+
+
+### Joint tree-path uncertainty prepared behind the full audit
+
+While the raw resampling audit progresses, implemented propagation of joint
+branch draws into all accepted/excluded exact-site tree paths at block lengths
+1/10/30. Three covariance/validation tests passed; the missing-audit gate
+correctly prevented full-data execution and created no output. Resource plan
+and reproducible commands are recorded. Full audit, path execution and readback
+remain pending, as do the broader evolutionary analyses.

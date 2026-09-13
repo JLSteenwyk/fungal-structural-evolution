@@ -1,0 +1,16 @@
+{
+  "scope": "Append AA and 3Di AF joint-draw path summaries for all 266593 local taxon pairs, preserving 259780 accepted and 6813 excluded geometry pairs, at block lengths 1/10/30",
+  "cpu_workers": 1,
+  "blas_threads": 1,
+  "memory_gb_plan": 8,
+  "disk_gb_plan": 5,
+  "runtime_hours_estimate": [
+    0.1,
+    2
+  ],
+  "basis": "Per-marker branch arrays; matrix multiplication in 512-pair chunks; no coordinate recomputation. Retains full point/geometry tables and adds summary columns. Existing host, no paid resources.",
+  "required_completed_audit": "results/phylogeny/paired-resampling-audit-esmfold-v1/receipt.json",
+  "output": "results/phylogeny/paired-path-uncertainty-esmfold-v1",
+  "script_sha256": "700471530b38ff65290909f8b2e3a44d9b9553993a6aeaf5dfd05c03e3171643",
+  "status": "prepared_not_executed_full_audit_pending"
+}
