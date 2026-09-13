@@ -523,3 +523,23 @@ It retains the conservative existing one-CPU, 8 GB memory, 100 GB output and
 0.2–12 hour handoff allowance; no new inference or paid resources are requested.
 Audit/conversion outcomes and confidence-qualified ecological coverage remain
 pending.
+
+
+## Follow-on residue mapping queued after complete conversion
+
+`scripts/advance_marker_mapping.py` waits for the exact follow-on conversion
+controller to finish successfully. It verifies the audit/conversion receipt
+chain, every inventory identity and coordinate checksum, then invokes the existing
+local-source mapper on all 125 marker alignments. Post-mapping gates compare the
+full originating marker-link multiset and model count with the prediction audit.
+Independent residue-coordinate readback and PAE/native-feature qualification
+remain separate prerequisites for evolutionary use.
+
+Configuration: `metadata/esmfold_followon_mapping_controller_config.json`.
+Output: `results/structural_markers/esmfold-followon-complete-v1`.
+Controller: `results/structural_markers/followon-mapping-controller-v1`.
+The controller compiled, all 134 dependency hashes matched, and its live waiting
+process was observed. All 125 profile receipts were compared to the completed
+profile collection before pinning. Resource allowance is one CPU thread, 8 GB
+memory, 10 GB output headroom and 0.1–8 hours of unmeasured planning runtime on
+the existing host. Mapping results are not yet available.

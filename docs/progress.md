@@ -1750,3 +1750,12 @@ controller differs from the existing pinned controller only by explicit link
 forwarding and its description. Original/follow-on live controller files remain
 unchanged. Follow-on conversion reached 1,500 models; the full-matrix PMSF job
 was confirmed live. Completion of these stages remains pending.
+
+
+Queued full follow-on residue mapping after successful conversion, preserving
+all audited model and originating marker-link identities. The controller binds
+all 125 profile receipts to the completed alignment collection; all 134 source
+pins passed readback. Controller session 78949 is live waiting for conversion
+controller 3228696. Mapping, residue readback and PAE/native qualification remain
+pending. See metadata/esmfold_followon_mapping_controller_config.json and the
+structure-prediction workflow.
