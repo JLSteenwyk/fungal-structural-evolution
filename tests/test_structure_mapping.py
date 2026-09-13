@@ -1,5 +1,6 @@
 import importlib.util
 import unittest
+import numpy as np
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,9 +15,21 @@ def load(name):
 
 mapping = load('map_marker_structures')
 retrieval = load('retrieve_matched_models')
+comparison = load('compare_marker_structures')
 
 
 class StructuralIntegration(unittest.TestCase):
+    def test_geometry_is_invariant_to_rotation_and_translation(self):
+        x = np.array([[0., 0., 0.], [1., 0., 0.], [0., 2., 0.], [0., 0., 3.]])
+        rotation = np.array([[0., -1., 0.], [1., 0., 0.], [0., 0., 1.]])
+        y = x @ rotation + [5., 7., -3.]
+        result = comparison.geometry(x, y, [1, 4, 7, 10], [2, 5, 8, 11])
+        self.assertLess(result['ca_superposition_rmsd_angstrom'], 1e-10)
+        self.assertLess(result['local_distance_rms_change_angstrom'], 1e-10)
+        mirror = x.copy()
+        mirror[:, 0] *= -1
+        self.assertGreater(comparison.geometry(x, mirror, [1, 4, 7, 10], [1, 4, 7, 10])['ca_superposition_rmsd_angstrom'], .1)
+
     def test_insertions_advance_residue_coordinates_but_gaps_do_not(self):
         self.assertEqual(mapping.residue_positions('aaA.-BC'), [1, 2, 3, None, None, 4, 5])
 

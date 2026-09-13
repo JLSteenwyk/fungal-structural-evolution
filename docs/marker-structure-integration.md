@@ -15,3 +15,18 @@ Current acquisition first visits marker candidates in round-robin taxon order, t
 The earlier queue processed complete proteomes consecutively, delaying comparative coverage. It was intentionally terminated after preserving 6,924 valid model receipt records, then replaced only after its process was confirmed terminal. The new queue started with 12,007 priority marker accessions across 113 taxa, followed by the remaining candidates in a 1,043,924-accession snapshot. Matching continues across the full cohort, so later snapshots will add newly available candidates. The retrieval rate and full-data objective are unchanged.
 
 The second executed snapshot, `results/structural_markers/snapshot-v2`, confirms improved comparative coverage: 452 marker proteins across 118 taxa use 422 distinct models, with 159,837 matrix-to-structure residue links. Fifty-four markers have at least four represented taxa. Reuse across identical sequences explains why linked taxon count can exceed the number of taxa in the priority download set. This is an acquisition/mapping checkpoint, not evidence of accelerated structural evolution. The latest receipt and marker counts are copied into `metadata/marker_structure_mapping_snapshot.json` and `metadata/marker_structure_coverage.tsv`.
+
+## Direct matched-position comparisons
+
+```bash
+python scripts/compare_marker_structures.py --snapshot results/structural_markers/snapshot-v2 --output results/structural_comparisons/snapshot-v1
+python scripts/plot_structural_comparisons.py --comparisons results/structural_comparisons/snapshot-v1
+```
+
+These descriptive comparisons use the same homologous matrix positions for sequence differences and structural geometry. Both models must meet each pLDDT threshold (50, 70 or 90) at a position, and both amino acids must be unambiguous. A pair must retain at least 50 qualified residues and at least half of its shared profile positions. Excluded comparisons remain in an audit table.
+
+Global geometry is Cα RMSD after a least-squares proper rotation and translation; mirror reflections are prohibited. A separate local metric measures changes in Cα pair distances for unordered residue pairs within 15 Å in either model and separated by at least three sequence positions in both. Mean absolute and RMS distance changes are reported. This custom local-distance metric is not standard lDDT. Sequence difference is the uncorrected fraction of mismatches at exactly the compared positions. Shared coordinate files are flagged rather than counted as independent experimental confirmations.
+
+The first executed batch contains 2,209 qualifying rows across three thresholds, representing 865 distinct within-marker taxon pairs across 111 markers; 386 threshold-specific comparisons were excluded. At pLDDT ≥70, 858 comparisons qualified. The figure contrasts global RMSD and local geometry but fits no correlation or significance test because observations share proteins, taxa and ancestry. Some large global RMSDs coexist with much smaller local changes; domain motion, uncertain interdomain orientation, alignment error and annotation artifacts remain possible explanations. PAE/domain checks and supported phylogenies are required before interpreting outliers as evolutionary changes.
+
+Results are under `results/structural_comparisons/snapshot-v1`; the displayed SVG is copied to `docs/figures/direct_comparisons.svg`. Numpy, Biopython and plotting dependencies are pinned in `environments/structural-comparisons.yml`. Matrix/mapping/model checksums and rotation/reflection tests validate computation, not the biological assumptions. These distances must not be inserted directly as additive structural branch lengths.
