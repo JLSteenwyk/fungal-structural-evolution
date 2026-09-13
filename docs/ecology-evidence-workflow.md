@@ -83,3 +83,30 @@ python scripts/estimate_followon_prediction_runtime.py \
 The source predictions are an expanding directory. Rerunning the forecast in a
 new output directory freezes a new timing snapshot; the receipt and per-sequence
 measurement hashes identify the precise set used for this estimate.
+
+
+## Scheduled execution on an existing GPU
+
+The ecology queue is now scheduled by `advance_ecology_predictions.py`, using
+`metadata/ecology_prediction_controller_config.json`. The controller waits for
+the exact existing follow-on process identity (PID plus Linux start ticks), then
+requires its pinned configuration and a clean terminal chunk with no remaining
+eligible predictions, interruption or OOM deferral. It also waits until that
+GPU UUID has no compute processes, checks 20 GB free disk and the pinned queue,
+checkpoint, producer and resource receipt, and launches all 675 candidates.
+
+It does not interrupt current work. A control-directory lock prevents duplicate
+controllers, and a pre-existing launch record or prediction output requires
+explicit recovery review. The model producer independently checks input and
+checkpoint artifacts and locks its output directory. Tests cover live/absent
+process identity and rejection of failed/incomplete/mismatched chunks.
+
+```bash
+python scripts/advance_ecology_predictions.py \
+  --config metadata/ecology_prediction_controller_config.json
+```
+
+Control records and logs are under `results/predictions/ecology-control-v1`;
+models will be under `results/predictions/esmfold-ecology-v1`. Scheduler launch
+is not prediction completion. A successful final controller receipt still
+requires independent coordinate/PAE/sequence audit before downstream analysis.

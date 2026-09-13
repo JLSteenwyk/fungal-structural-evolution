@@ -736,3 +736,18 @@ hashes are checked. The expanded calculation is running and has no completion
 receipt yet; tree-path joins, joint uncertainty and biological inference remain
 outstanding. The prior goal turn validated the broad local geometry baseline;
 this turn advances comparability to the actual phylogenetic character sets.
+
+
+### Ecology predictions scheduled after existing GPU work
+
+Started the controller for all 675 frozen ecology prediction inputs, with exact
+predecessor process/configuration checks, clean-chunk completion gates, device
+availability checks and pinned producer/data/resource receipts. Two tests pass,
+including rejection of incomplete, interrupted, OOM-deferred and mismatched
+predecessor chunks. It is waiting on the confirmed live follow-on batch; no new
+GPU job is claimed yet and no paid resources were requested.
+
+The paired-site geometry and supported tree jobs remain live. The previous turn
+made progress by launching comparable direct geometry; this turn closes the
+execution dependency for the ecology coverage gap. The full research goal stays
+active; scheduling does not complete the predictions or ecological tests.
