@@ -1,11 +1,28 @@
 #!/usr/bin/env python3
 """Retrieve current full-length AFDB monomers with exact sequence and coordinate checks."""
-import csv,fcntl,hashlib,io,json,re,time
-from concurrent.futures import ThreadPoolExecutor,as_completed
+import csv,fcntl,hashlib,io,json,re,time,signal
+from collections import defaultdict,deque
+from concurrent.futures import ThreadPoolExecutor,wait,FIRST_COMPLETED
 from pathlib import Path
 from urllib.request import urlopen
 from Bio.PDB.MMCIF2Dict import MMCIF2Dict
 ROOT=Path(__file__).resolve().parents[1]
+def prioritize(links,marker_keys,done):
+ groups=defaultdict(set);remaining=set()
+ for row in links:
+  accession=row['uniprot_accession']
+  if accession in done:continue
+  remaining.add(accession)
+  if (row['taxon_id'],row['protein_id'],row['sequence_sha256']) in marker_keys:groups[row['taxon_id']].add(accession)
+ queues=[deque(sorted(groups[taxon])) for taxon in sorted(groups)];ordered=[];seen=set()
+ while any(queues):
+  for queue in queues:
+   while queue and queue[0] in seen:queue.popleft()
+   if queue:
+    accession=queue.popleft();ordered.append(accession);seen.add(accession)
+ priority_count=len(ordered)
+ ordered.extend(sorted(remaining-seen))
+ return ordered,priority_count,len(groups)
 def fetch(accession,expected):
  folder=ROOT/'data/structures/afdb';meta=folder/(accession+'.api.json')
  try:
@@ -45,10 +62,11 @@ def main():
   except json.JSONDecodeError:continue
   if r['status']=='matched':completed[r['taxon_id']]=r
  for r in completed.values():
-  for row in csv.DictReader((ROOT/r['match_path']).open(),delimiter='\t'):
-   a=row['uniprot_accession']
-   if not re.fullmatch(r'[A-Za-z0-9]+',a):raise ValueError('Invalid accession')
-   matches.setdefault(a,set()).add(row['sequence_sha256']);links.append(row)
+  with (ROOT/r['match_path']).open() as handle:
+   for row in csv.DictReader(handle,delimiter='\t'):
+    a=row['uniprot_accession']
+    if not re.fullmatch(r'[A-Za-z0-9]+',a):raise ValueError('Invalid accession')
+    matches.setdefault(a,set()).add(row['sequence_sha256']);links.append(row)
  # Retain every original protein mapping even when structures are downloaded once.
  with (folder/'input_links.tsv').open('w') as out:
   if links:
@@ -57,10 +75,26 @@ def main():
  if cache.exists():
   for line in cache.read_text().splitlines():
    r=json.loads(line)
-   if r['status']=='verified' and all((ROOT/m['path']).exists() for m in r['models']):done[r['uniprot_accession']]=r
- pending=[a for a in matches if a not in done];print('Unique model accessions queued:',len(pending),flush=True)
+   if r['status']=='verified' and all((ROOT/m['path']).exists() and hashlib.sha256((ROOT/m['path']).read_bytes()).hexdigest()==m['sha256'] for m in r['models']):done[r['uniprot_accession']]=r
+ with (ROOT/'results/phylogeny/markers-full-v1/protein_mapping.tsv').open() as handle:
+  marker_keys={(r['taxon_id'],r['protein_id'],r['sequence_sha256']) for r in csv.DictReader(handle,delimiter='\t')}
+ pending,priority_count,priority_taxa=prioritize(links,marker_keys,done)
+ plan={'queued_accessions':len(pending),'priority_marker_accessions':priority_count,'priority_taxa':priority_taxa,'verified_cached_accessions':len(done),'completed_matching_taxa':len(completed),'policy':'Round-robin marker accessions across taxa, then all other exact-sequence candidates; no atlas candidates discarded.'}
+ (ROOT/'metadata/structure_retrieval_queue_snapshot.json').write_text(json.dumps(plan,indent=2)+'\n');print(json.dumps(plan),flush=True)
+ stopping=[False]
+ def stop(signum,frame):stopping[0]=True
+ signal.signal(signal.SIGTERM,stop);signal.signal(signal.SIGINT,stop)
  with cache.open('a') as out,ThreadPoolExecutor(max_workers=2) as pool:
-  for n,f in enumerate(as_completed([pool.submit(fetch,a,matches[a]) for a in pending]),1):
-   r=f.result();out.write(json.dumps(r)+'\n');out.flush()
-   if n%100==0 or r['status']=='error':print(n,r['uniprot_accession'],r['status'],r.get('error',''),flush=True)
+  iterator=iter(pending);active=set();n=0
+  def submit():
+   a=next(iterator,None)
+   if a is not None:active.add(pool.submit(fetch,a,matches[a]))
+  for _ in range(4):submit()
+  while active:
+   ready,_=wait(active,return_when=FIRST_COMPLETED)
+   for future in ready:
+    active.remove(future);r=future.result();out.write(json.dumps(r)+'\n');out.flush();n+=1
+    if n%100==0 or r['status']=='error':print(n,r['uniprot_accession'],r['status'],r.get('error',''),flush=True)
+    if not stopping[0]:submit()
+  print('Stopped cleanly' if stopping[0] else 'Snapshot queue completed',n,flush=True)
 if __name__=='__main__':main()

@@ -14,6 +14,7 @@ Status: proteomes acquired and broad-marker QC completed for **501 fungi and 25 
 - [Phylogenetic workflow](docs/phylogenetic-workflow.md)
 - [Gene and isoform reconciliation](docs/gene-isoform-mapping.md)
 - [Orthology workflow](docs/orthology-workflow.md)
+- [Structure-to-phylogeny residue mapping](docs/marker-structure-integration.md)
 - [Methods draft: executed work and pending analyses](docs/methods-draft.md)
 - [Metadata definitions](metadata/README.md)
 
