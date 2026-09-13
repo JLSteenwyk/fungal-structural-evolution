@@ -1787,3 +1787,12 @@ started (session 91321), covering all 4,252 models and 1,342,046 residues. PAE
 export covers 476,502,626 directional entries. Joint PAE/native qualification
 and updated paired inputs remain pending. Resource plans and commands are recorded
 in the prediction workflow and metadata/esmfold_followon_*.
+
+
+Expanded AlphaFold direct paired-site geometry completed for all 124 ready markers:
+737,851 accepted and 7,002 excluded pairs (744,853 total). Producer session 73482
+exited zero. Full pair-grid/character audit launched under PID 812449/session 24060,
+with one SHA-selected numerical geometry/PAE check per accepted marker. Scope and
+resource limits are recorded in docs/tree-path-geometry.md; full numerical
+recomputation of every geometry is not claimed. Geometry audit and fitted-tree
+comparisons remain pending. Follow-on coordinate/PAE validation continues live.

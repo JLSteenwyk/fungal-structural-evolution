@@ -308,3 +308,31 @@ source batch receipt pins and the run configuration were also rechecked against
 the completed resampling receipt.
 These remain conditional sampling sensitivities, not calibrated confidence
 intervals, evidence of evolutionary coupling, or acceleration tests.
+
+
+## Expanded AlphaFold paired-site geometry completed
+
+Direct comparisons on the expanded source-specific paired mask finished for all
+124 markers: 737,851 accepted taxon pairs and 7,002 coverage exclusions, totaling
+744,853 pairs. Source inputs retain the jointly observed AA/3Di sites; additional
+local-distance comparisons use both directional PAE values in both models.
+This is direct geometry, not a fitted branch rate or an additive tree distance.
+Execution receipt: `metadata/gdm_expanded_paired_geometry_receipt.json`.
+
+The complete pair-grid audit has started with the same checker used for the local
+cohort. It verifies all pair identities, shared masks, eligibility decisions,
+dimensions and sequence/3Di differences. Independent numerical geometry uses
+SciPy rotation and condensed distances for one SHA-selected accepted pair per
+marker, including direct directional PAE indexing. This is not full numerical
+recomputation of all 737,851 accepted comparisons. Resource allowance: one CPU,
+24 GB memory, 1 GB output and 0.05–4 planning hours, recorded in
+`metadata/gdm_expanded_paired_geometry_audit_resource_plan.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geometry.py \
+  --comparisons results/structural_comparisons/paired-site-gdm-expanded-v1 \
+  --inputs results/phylogeny/paired-inputs-gdm-expanded-v1 \
+  --snapshot results/structural_markers/gdm-expanded-v1 \
+  --pae results/structural_pae/gdm-expanded-v1 \
+  --output results/structural_comparisons/paired-site-gdm-expanded-audit-v1
+```
