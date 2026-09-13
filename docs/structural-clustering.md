@@ -309,3 +309,32 @@ and is verified live. Its numerical review and any membership revision remain
 pending. The completed control and full-field comparison are tracked in
 `metadata/cluster_normalization_unmodified_*`. The full prepared reviewer will
 repeat this stage when both conversions finish.
+
+### Inclusive-span control completed and normalization effect verified
+
+The patched conversion finished in 18 minutes 43 seconds. Complete review of
+all 32,050 directed alignments confirms that the rebuilt control reproduces
+production output and the patch changes only alignment-TM scores. Every other
+score and fixed alignment field is identical between matched builds.
+
+All 72 out-of-range scores disappear. Alignment-TM changes in every row, with
+maximum absolute change 0.014 at exported precision. Acceptance changes in 114
+directed rows: 68 fail→pass, 46 pass→fail; 29,494 remain passing and 2,442 remain
+failing. Thus the patch is not simply reinstating the previously invalid rows.
+Both directions must still pass before a representative/member edge is accepted.
+
+This controlled test supports the diagnosed endpoint-normalization issue.
+The corrected output uses inclusive minimum endpoint span, not a newly inferred
+alignment or an independent TM-score optimizer. Original search/cluster results
+remain immutable. Revised membership, threshold sensitivity and biological
+family assessment remain separate downstream steps.
+
+```bash
+python scripts/review_cluster_normalization_controls.py --controls results/structural_clusters/normalization-controls-v1 --original results/structural_clusters/edge-exact-score-v1 --output results/structural_clusters/normalization-control-review-v1
+```
+
+Completion and review receipts are tracked in
+`metadata/cluster_normalization_controls_receipt.json`,
+`metadata/cluster_normalization_control_review_receipt.json` and
+`metadata/cluster_normalization_patched_completion.json`; full raw and comparison
+tables remain outside Git in the corresponding result directories.

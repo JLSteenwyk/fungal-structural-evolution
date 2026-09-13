@@ -1,0 +1,62 @@
+{
+  "status": "complete_toolchain_and_normalization_control_readback",
+  "control_receipt_sha256": "5895997880f0a08ac3231cd9587d5f9e6b415e2ab1fe6603742ccb019dbd16e5",
+  "original_completion_sha256": "1fa1243c0d9ca2f8af6c72d58646bb6668f815f314cf0bd17f11ab12e5b5de56",
+  "script_sha256": "40c66f83f44afedace5326d66d3a2e490438444f7f20515a9c53eac6518f1328",
+  "stage_summaries": [
+    {
+      "stage": "toolchain",
+      "directed_pairs": 32050,
+      "invalid_rows_before": 72,
+      "invalid_rows_after": 72,
+      "decision_transitions": {
+        "True_to_True": 29540,
+        "False_to_False": 2510
+      },
+      "score_rows_changed": {
+        "alntmscore": 0,
+        "qtmscore": 0,
+        "ttmscore": 0,
+        "lddt": 0,
+        "rmsd": 0
+      },
+      "maximum_absolute_score_changes": {
+        "alntmscore": 0.0,
+        "qtmscore": 0.0,
+        "ttmscore": 0.0,
+        "lddt": 0.0,
+        "rmsd": 0.0
+      }
+    },
+    {
+      "stage": "normalization",
+      "directed_pairs": 32050,
+      "invalid_rows_before": 72,
+      "invalid_rows_after": 0,
+      "decision_transitions": {
+        "True_to_True": 29494,
+        "False_to_False": 2442,
+        "False_to_True": 68,
+        "True_to_False": 46
+      },
+      "score_rows_changed": {
+        "alntmscore": 32050,
+        "qtmscore": 0,
+        "ttmscore": 0,
+        "lddt": 0,
+        "rmsd": 0
+      },
+      "maximum_absolute_score_changes": {
+        "alntmscore": 0.014000000000000012,
+        "qtmscore": 0.0,
+        "ttmscore": 0.0,
+        "lddt": 0.0,
+        "rmsd": 0.0
+      }
+    }
+  ],
+  "interpretation": "Complete fixed-alignment pair grid and finite/nonnegative scores checked. Toolchain effects are separate from the single output-denominator patch; other score fields must be identical between matched builds. Normalization sensitivity is not an independent structural alignment, orthology, prediction accuracy or novelty validation. Derived memberships require a separate explicit review.",
+  "artifacts": {
+    "directed_control_comparisons.tsv": "5d07df734d8070ea784e84e0f78909f0d457154eb4772fc3be645deead23f383"
+  }
+}

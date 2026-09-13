@@ -1306,3 +1306,13 @@ its descriptive summaries. These distinguish within-domain fit from placement
 uncertainty without claiming evolutionary rates or biological flexibility.
 The previous turn launched placement analysis; this turn completes its result
 and full grid readback. The overall research goal remains active and incomplete.
+
+### Patched normalization completes and resolves out-of-range scores
+
+After verified waits, the patched conversion completed and passed full
+32,050-alignment control review. The unmodified build matches production;
+only alignment-TM changes under the patch. All 72 out-of-range values disappear,
+while 68 directed rows change fail→pass and 46 pass→fail. Membership revisions
+still require bidirectional review. The previous turn verified a live wait;
+this turn completes the controlled normalization result. The full research
+goal remains active and incomplete.
