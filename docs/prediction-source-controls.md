@@ -32,3 +32,41 @@ python -m unittest discover -s tests -p test_structure_source_selection.py
 The comparison uses all available cross-pipeline pairs, records pLDDT thresholds 0/70/90, and separately labels insufficient coverage. Local CA pairs are within 15 Å in either model and separated by at least three sequence positions; directional PAE must be ≤10 Å in both models for the filtered metric. These are the same geometric definitions used elsewhere in the project. The one-pair resource estimate was recorded before execution: one CPU worker, cached/serial PAE retrieval, less than 1 GB RAM and 10 MB output expected, seconds to minutes, no paid resources.
 
 Receipts and results are in `metadata/prediction_source_*`. The large frozen inventory and model/PAE data remain outside Git. A figure is not needed for this single available sequence; the complete three-row table is retained for reproducibility.
+
+## Expanded model catalog and full-design coverage
+
+The frozen inventory for the expanded mapper now has a separately validated model catalog: **13,153 distinct GDM models**, linked by complete sequence identity to **13,654 marker proteins in 322 taxa**. Every selected coordinate checksum was verified. This makes confidence-matrix retrieval independent of the slower alignment-to-coordinate mapping. Retrieval is running with two workers under the pre-launch estimate in `metadata/expanded_pae_resource_plan.json`; the conservative uncompressed JSON allowance is 56.8 GB. The 412 candidate cache receipts require readback before reuse.
+
+The catalog and residue mapping have different receipts. Before prefetched confidence is used with the final mapping, their model identities, sequence identities, versions and coordinate hashes must agree. Once both producers finish, rerun the PAE retriever against the final mapping in a new output directory: its validated shared cache can supply the matrices while its new receipt binds them to that mapping. Catalog completion does not establish completed residue mapping, confidence-qualified coverage or native 3Di validation.
+
+```bash
+python scripts/prepare_marker_model_catalog.py \
+  --inventory results/structural_markers/gdm-expanded-v1/source_inventory.jsonl \
+  --output results/structural_markers/gdm-prefetch-catalog-v1
+python scripts/retrieve_marker_pae.py \
+  --snapshot results/structural_markers/gdm-prefetch-catalog-v1 \
+  --output results/structural_pae/gdm-prefetch-v1
+python scripts/audit_marker_model_coverage.py \
+  --catalog results/structural_markers/gdm-prefetch-catalog-v1 \
+  --inventory-inputs data/prediction_inputs/markers-full-inventory-v2 \
+  --output results/structural_markers/gdm-coverage-audit-v2
+```
+
+The coverage audit includes all **526 taxa × 125 markers = 65,750 slots**, partitioned into four mutually exclusive states:
+
+| State | Taxon–marker slots |
+| --- | ---: |
+| Downloaded GDM model in the frozen catalog | 13,654 |
+| Reuse candidate outside this catalog | 17,764 |
+| No candidate in the completed query snapshot | 28,422 |
+| Marker sequence unavailable | 5,910 |
+
+There are linked models for **304/501 fungal entries** and **18/25 outgroups**. All 204 taxa without catalog models remain in the tables. Aphelidiomycota, Calcarisporiellomycota, Sanchytriomycota and the Corallochytrea outgroup bin have no catalog models. Their recovered marker sequences have no candidate in the completed query snapshot; this is not evidence that the proteins or folds are biologically absent.
+
+![Full-sampling marker model coverage](figures/expanded_marker_model_coverage.svg)
+
+The gold category includes nominated retrievals, later downloaded models and potentially other pipelines outside this particular source catalog. Consequently, the prominent Ascomycota coverage advantage cannot be read as a biological difference: acquisition order and separately frozen checkpoints contribute to the pattern. Query scope and database coverage also limit the no-candidate category. Local predictions are not counted as downloaded GDM models. Sequence-identical model reuse preserves taxon links but does not create independent structural observations.
+
+Each group uses an equal 125-marker denominator per taxon. Manifest lineage bins are descriptive and need not have equal taxonomic rank. Counts here are taxon–marker links, whereas the prediction-input queue counts unique sequences; those denominators must not be interchanged. Model availability also precedes the confidence, correspondence and alignment masks used in evolutionary inference.
+
+The audit checks the exact marker universe, per-link protein/sequence identity, completed-inventory states, mutually exclusive count partition and every upstream receipt artifact. All output and script hashes passed independent readback, and the plotted figure was visually inspected. Versioned tables and receipts are `metadata/expanded_marker_*`; full catalog links and coordinates remain outside Git.

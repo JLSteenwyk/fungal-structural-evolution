@@ -1,0 +1,21 @@
+{
+  "status": "complete_full_sampling_model_coverage_audit",
+  "taxa": 526,
+  "markers": 125,
+  "taxa_with_models": 322,
+  "taxa_without_models": 204,
+  "sequence_marker_links": 59840,
+  "model_marker_links": 13654,
+  "lineage_groups": 27,
+  "inventory_input_receipt_sha256": "50d7f73e47fa5e5ab35de3686f2463f62b5965054cb3ce6ec023b7ddfb3cea49",
+  "catalog_receipt_sha256": "b2774df8582936aaa9eb94496e84f787ae2db0f0faa4daf22b22ae33075678f0",
+  "sampling_manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "0925880c1fcec3d584267f82d6f181a138fa6018b82e4d1de6e4d9feed2fc0ed",
+  "interpretation": "Every taxon retained. Distinguishes downloaded source models, reuse candidates outside this catalog, no candidate in the completed query snapshot, and marker non-recovery. Source catalog and query inventory are separately frozen acquisition checkpoints; outside-catalog candidates can include later downloads or other pipelines. None of these missing states proves biological absence. Model availability precedes residue/confidence validation. Group bars pool equal 125-marker denominators per taxon; linked models can be reused across identical sequences and are not independent evolutionary observations.",
+  "artifacts": {
+    "marker_model_coverage.svg": "b5d64b80d66057bf513ffb882f9e1aaf1106c4d159ada75653987f5c54c3b9a7",
+    "taxon_coverage.tsv": "f957910c883cfde4ce821d4974aec1eb0b95dcd03a2392006dc2600f03ac2036",
+    "lineage_coverage.tsv": "d0abbd46dababf757ff7d5faeb1081fed7f9bf83a84b97fe2624e706acdf54ae",
+    "marker_model_coverage.png": "6256fcf1b1803e0865c9440fda460f581c06b9f411329ef0e37a1f7a8876b882"
+  }
+}

@@ -9,5 +9,11 @@
   "workers": 2,
   "runtime_assumption": "0.1-60 seconds per uncached model plus cache validation/retries; actual service speed determines duration",
   "local_cost": "Existing authorized host and public downloads; no paid services",
-  "launch_gate": "Mapping producer must finish successfully; validate final source receipt and model count before starting PAE retrieval"
+  "launch_gate": "Validated frozen source-specific model catalog; confidence may be prefetched independently of residue mapping. Final mapping identities and coordinate hashes must match the catalog before downstream use.",
+  "catalog_path": "results/structural_markers/gdm-prefetch-catalog-v1",
+  "planned_output": "results/structural_pae/gdm-prefetch-v1",
+  "pending_download_wall_hours_range": [
+    0.17695833333333336,
+    106.175
+  ]
 }
