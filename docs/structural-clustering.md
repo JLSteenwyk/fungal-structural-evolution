@@ -59,3 +59,37 @@ independently checked for each representative/member pair. In particular,
 confidence seeding does not certify all aligned residues. Edge validation,
 threshold sensitivity, confidence/source analysis and domain-level clustering
 remain pending. Large retained intermediate databases allow those follow-ups.
+
+## All representative/member edges realigned
+
+Recomputed all 16,025 non-self representative/member pairs in both directions
+(32,050 directed alignments) without the clustering prefilter, retaining
+backtraces and permissive output filters. Every requested alignment returned.
+Scoring settings follow the clustering alignment log; this is the same Foldseek
+implementation, not an independent geometry calculation.
+
+Against the reported E-value, bilateral coverage and approximate alignment-TM
+criteria, 15,043 pairs pass in both directions, 979 in neither, and three in only
+one direction. The 982 non-bilateral pairs affect 200 original groups. Complete
+identity, numeric-finiteness and threshold-decision readback passed; coverage
+and TM-score failures dominate. The original memberships remain immutable and
+cannot be treated as uniformly satisfying their representative/member criteria.
+
+The audit also found 102 approximate alignment-normalized TM scores above one
+(maximum 1.008). Those values are explicitly retained in the readback flags,
+not silently clamped or presented as exact physical scores. Recalculation with
+Foldseek `convertalis --exact-tmscore 1` is now running on all saved alignments.
+Its command, input receipt/config hashes and resource estimate are saved in
+`metadata/structure_cluster_exact_score_resource_config.json`. Recalculation
+uses the same alignments, not a new search. Exact-score decision comparisons and
+conservative reassignment remain pending.
+
+```bash
+python scripts/validate_structure_cluster_edges.py --clusters results/structural_clusters/frozen-marker-models-v1 --output results/structural_clusters/edge-validation-v1
+```
+
+The full realignment used eight CPU threads with 32 GB memory and 20 GB output
+planning. Exact-score conversion reserves eight threads, 32 GB memory and 5 GB
+output on the existing host, with a broad 0.1–12 hour forecast. No paid services
+were used. Neither direction-specific failure nor singleton status establishes
+biological dissimilarity, novelty or orthology.

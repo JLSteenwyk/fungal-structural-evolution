@@ -1,0 +1,737 @@
+{
+  "status": "passed_edge_identity_and_reported_criterion_readback_with_approximate_score_flags",
+  "source_receipt_sha256": "46804800b09dfa611343267a831189bc2a94bec4eca7069e3195f4fb6241c244",
+  "directed_pairs": 32050,
+  "representative_member_pairs": 16025,
+  "edge_status_counts": {
+    "both_directions_pass": 15043,
+    "neither_direction_passes": 979,
+    "one_direction_passes": 3
+  },
+  "affected_original_clusters": 200,
+  "affected_representatives": [
+    "M000395",
+    "M000396",
+    "M000698",
+    "M000735",
+    "M001016",
+    "M001290",
+    "M001378",
+    "M001562",
+    "M001563",
+    "M001567",
+    "M001602",
+    "M001837",
+    "M001894",
+    "M002113",
+    "M002234",
+    "M002307",
+    "M002346",
+    "M002376",
+    "M002729",
+    "M002732",
+    "M002749",
+    "M002913",
+    "M002924",
+    "M003393",
+    "M003446",
+    "M003456",
+    "M003457",
+    "M003467",
+    "M003488",
+    "M003831",
+    "M003855",
+    "M003952",
+    "M003975",
+    "M004080",
+    "M004109",
+    "M004147",
+    "M004196",
+    "M004235",
+    "M004274",
+    "M004403",
+    "M004460",
+    "M004468",
+    "M004532",
+    "M004664",
+    "M005047",
+    "M005048",
+    "M005261",
+    "M005324",
+    "M005566",
+    "M005661",
+    "M005722",
+    "M005936",
+    "M006007",
+    "M006065",
+    "M006377",
+    "M006455",
+    "M006635",
+    "M006824",
+    "M006853",
+    "M006870",
+    "M006937",
+    "M006993",
+    "M007019",
+    "M007042",
+    "M007450",
+    "M007473",
+    "M007682",
+    "M007989",
+    "M008038",
+    "M008140",
+    "M008270",
+    "M008298",
+    "M008384",
+    "M008452",
+    "M008833",
+    "M008837",
+    "M008853",
+    "M009005",
+    "M009010",
+    "M009198",
+    "M009284",
+    "M009295",
+    "M009351",
+    "M009371",
+    "M009397",
+    "M009466",
+    "M009549",
+    "M009621",
+    "M009794",
+    "M009798",
+    "M009870",
+    "M010239",
+    "M010259",
+    "M010261",
+    "M010420",
+    "M010471",
+    "M010665",
+    "M010667",
+    "M010863",
+    "M010923",
+    "M011040",
+    "M011541",
+    "M011722",
+    "M011960",
+    "M012207",
+    "M012394",
+    "M012491",
+    "M012513",
+    "M012539",
+    "M012575",
+    "M012584",
+    "M012602",
+    "M012624",
+    "M013221",
+    "M013228",
+    "M013272",
+    "M013304",
+    "M013393",
+    "M013402",
+    "M013509",
+    "M013532",
+    "M013614",
+    "M013698",
+    "M013775",
+    "M013778",
+    "M013796",
+    "M013825",
+    "M013846",
+    "M013888",
+    "M013935",
+    "M013944",
+    "M014050",
+    "M014100",
+    "M014267",
+    "M014324",
+    "M014450",
+    "M014554",
+    "M014588",
+    "M014605",
+    "M014608",
+    "M014699",
+    "M014702",
+    "M014778",
+    "M014802",
+    "M014833",
+    "M014864",
+    "M014918",
+    "M015046",
+    "M015203",
+    "M015286",
+    "M015309",
+    "M015387",
+    "M015433",
+    "M015502",
+    "M015609",
+    "M015616",
+    "M015715",
+    "M015765",
+    "M015776",
+    "M015783",
+    "M015809",
+    "M015946",
+    "M015986",
+    "M016029",
+    "M016035",
+    "M016125",
+    "M016143",
+    "M016157",
+    "M016323",
+    "M016341",
+    "M016465",
+    "M016517",
+    "M016592",
+    "M016648",
+    "M016664",
+    "M016673",
+    "M016857",
+    "M017011",
+    "M017052",
+    "M017074",
+    "M017080",
+    "M017260",
+    "M017268",
+    "M017395",
+    "M017470",
+    "M017497",
+    "M017559",
+    "M017608",
+    "M017622",
+    "M017674",
+    "M017685",
+    "M017697",
+    "M017790",
+    "M017866",
+    "M017886",
+    "M017899",
+    "M017991",
+    "M018018",
+    "M018023",
+    "M018255"
+  ],
+  "directed_failure_combinations": {
+    "target_coverage": 700,
+    "alignment_TM": 531,
+    "query_coverage": 698,
+    "query_coverage;target_coverage": 12,
+    "target_coverage;alignment_TM": 8,
+    "evalue": 2,
+    "query_coverage;alignment_TM": 8,
+    "evalue;alignment_TM": 2
+  },
+  "approximate_alignment_TM_above_one": [
+    {
+      "query": "M002019",
+      "target": "M000079",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M013647",
+      "target": "M014675",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M013647",
+      "target": "M014211",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M013647",
+      "target": "M016317",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M014041",
+      "target": "M013629",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M014675",
+      "target": "M013647",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M006130",
+      "target": "M000433",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M013379",
+      "target": "M014329",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M017867",
+      "target": "M013499",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M011059",
+      "target": "M003923",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M016352",
+      "target": "M014231",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M003142",
+      "target": "M011151",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M006777",
+      "target": "M008181",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M000926",
+      "target": "M011904",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M005349",
+      "target": "M000433",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M006052",
+      "target": "M003627",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M007948",
+      "target": "M000079",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M003654",
+      "target": "M000079",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M003923",
+      "target": "M011059",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M013499",
+      "target": "M017867",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M015783",
+      "target": "M016844",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M015783",
+      "target": "M017627",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M015783",
+      "target": "M015854",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M003586",
+      "target": "M008599",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M003586",
+      "target": "M000990",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M003586",
+      "target": "M003352",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M003586",
+      "target": "M009478",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M005108",
+      "target": "M006163",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M005594",
+      "target": "M000433",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M000831",
+      "target": "M000910",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M008181",
+      "target": "M006777",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M009741",
+      "target": "M006771",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M006890",
+      "target": "M000433",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M006831",
+      "target": "M000433",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M017013",
+      "target": "M017316",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M006163",
+      "target": "M005501",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M006163",
+      "target": "M007059",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M006163",
+      "target": "M012286",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M006163",
+      "target": "M005334",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M006163",
+      "target": "M005108",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M007059",
+      "target": "M006163",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M007382",
+      "target": "M002877",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M009478",
+      "target": "M003586",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M002877",
+      "target": "M007382",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M006524",
+      "target": "M000079",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M015854",
+      "target": "M015783",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M011904",
+      "target": "M000926",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M003040",
+      "target": "M006771",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M003627",
+      "target": "M006052",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M007320",
+      "target": "M000433",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M016317",
+      "target": "M013647",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000079",
+      "target": "M002019",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000079",
+      "target": "M003654",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000079",
+      "target": "M007948",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M000079",
+      "target": "M006524",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M000079",
+      "target": "M003552",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M005334",
+      "target": "M006163",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M006194",
+      "target": "M000433",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M006771",
+      "target": "M003040",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M006771",
+      "target": "M005822",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M006771",
+      "target": "M009741",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M006771",
+      "target": "M010205",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M002651",
+      "target": "M000433",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M017627",
+      "target": "M015783",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M000910",
+      "target": "M000831",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M003352",
+      "target": "M003586",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M016844",
+      "target": "M015783",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M005433",
+      "target": "M000433",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M005867",
+      "target": "M005965",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M011151",
+      "target": "M003142",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M014329",
+      "target": "M013379",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M004569",
+      "target": "M001167",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M005822",
+      "target": "M006771",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M017316",
+      "target": "M017013",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M010205",
+      "target": "M006771",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000980",
+      "target": "M011120",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M000990",
+      "target": "M003586",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M001167",
+      "target": "M010780",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M001167",
+      "target": "M004569",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M001167",
+      "target": "M004897",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M010780",
+      "target": "M001167",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M004897",
+      "target": "M001167",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M014211",
+      "target": "M013647",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M005965",
+      "target": "M005867",
+      "alntmscore": "1.003E+00"
+    },
+    {
+      "query": "M011120",
+      "target": "M000980",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M014231",
+      "target": "M016352",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M011361",
+      "alntmscore": "1.008E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M005594",
+      "alntmscore": "1.007E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M006194",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M006130",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M007320",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M005349",
+      "alntmscore": "1.006E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M002651",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M006890",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M005433",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M000433",
+      "target": "M006831",
+      "alntmscore": "1.005E+00"
+    },
+    {
+      "query": "M012286",
+      "target": "M006163",
+      "alntmscore": "1.001E+00"
+    },
+    {
+      "query": "M013629",
+      "target": "M014041",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M003552",
+      "target": "M000079",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M008599",
+      "target": "M003586",
+      "alntmscore": "1.002E+00"
+    },
+    {
+      "query": "M005501",
+      "target": "M006163",
+      "alntmscore": "1.004E+00"
+    },
+    {
+      "query": "M011361",
+      "target": "M000433",
+      "alntmscore": "1.008E+00"
+    }
+  ],
+  "interpretation": "Every pair identity and reported threshold decision checked. All numeric fields finite/nonnegative; approximate alignment-TM overshoots above one retained explicitly, not clamped or treated as physically bounded exact scores. Exact-score reevaluation is required before criterion-qualified use. Same Foldseek implementation; no independent geometry verification. Original groups with failing edges require review; no novelty or orthology inference."
+}

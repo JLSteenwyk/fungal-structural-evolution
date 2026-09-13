@@ -1,0 +1,20 @@
+{
+  "status": "complete_representative_member_edge_realignment",
+  "config_sha256": "ababb21135fbc9169ffb1adb5120c7d31fd02bb11f81376a2d8472b55c161fc0",
+  "representative_member_pairs": 16025,
+  "requested_directed_pairs": 32050,
+  "returned_directed_pairs": 32050,
+  "missing_directed_pairs": 0,
+  "edge_status_counts": {
+    "both_directions_pass": 15043,
+    "neither_direction_passes": 979,
+    "one_direction_passes": 3
+  },
+  "interpretation": "Same Foldseek aligner, prefilter bypassed, scoring settings matched to clustering log. Both directions preserved. Independent of candidate-search screening, not an independent geometry implementation or all-pairs within-cluster proof. Missing alignments are retained as failures of this validation; they do not prove biological dissimilarity. Original clusters are immutable and require this review before interpretation.",
+  "artifacts": {
+    "requested_pairs.tsv": "cca74d039cc7a5f98018cfdae504c07ca2b190233125203d64b76b7415c28e63",
+    "alignments.tsv": "80404e19990cda02fd592e251990e17e3d91d753a83805e1376b6418d2669538",
+    "edge_review.tsv": "efb5fdf6559091bf1509c136aace113dc58df005ca9be888a24758d4a513c3b5",
+    "directed_alignment_review.tsv": "ead870dd2a43e1afadb2db34c2e80e458726eae3f7d5340279a3cc11c97994e6"
+  }
+}

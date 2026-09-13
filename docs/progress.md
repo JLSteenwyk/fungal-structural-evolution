@@ -1112,3 +1112,15 @@ fields passed complete readback. Representative/member alignment criteria and
 biological interpretation remain unvalidated. The prior turn launched clustering;
 this turn completes its first result and the remaining repeat sensitivity.
 The full research goal remains active and incomplete.
+
+### Structural cluster edge validation finds memberships requiring review
+
+Realigned all 32,050 directed representative/member edges; all returned.
+15,043 pairs pass the reported criteria bidirectionally, 979 fail both directions
+and three pass one direction. The discrepant memberships affect 200 original
+groups. Readback also found 102 approximate alignment-TM scores above one,
+explicitly flagged rather than clamped. Started exact-score conversion of the
+retained alignments before conservative membership decisions. The prior turn
+completed clustering and membership identity checks; this turn tests actual
+edge criteria and exposes limits that matter for atlas interpretation. Original
+clusters remain exploratory, and the full research goal remains active.

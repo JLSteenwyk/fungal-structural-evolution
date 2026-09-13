@@ -1,0 +1,28 @@
+{
+  "status": "prelaunch_exact_cluster_alignment_score_recalculation",
+  "source_validation_receipt_sha256": "46804800b09dfa611343267a831189bc2a94bec4eca7069e3195f4fb6241c244",
+  "source_config_sha256": "ababb21135fbc9169ffb1adb5120c7d31fd02bb11f81376a2d8472b55c161fc0",
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+    "convertalis",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_clusters/frozen-marker-models-v1/tmp/12383589624709452371/input",
+    "results/structural_clusters/edge-validation-v1/alignments",
+    "results/structural_clusters/edge-exact-score-v1/alignments.tsv",
+    "--threads",
+    "8",
+    "--format-output",
+    "query,target,evalue,qstart,qend,qlen,tstart,tend,tlen,alnlen,qcov,tcov,alntmscore,qtmscore,ttmscore,lddt,rmsd",
+    "--exact-tmscore",
+    "1"
+  ],
+  "cpu_threads": 8,
+  "memory_gb_planning": 32,
+  "output_gb_planning": 5,
+  "wall_hours_planning_range": [
+    0.1,
+    12
+  ],
+  "cost": "Existing host; no paid services",
+  "interpretation": "Exact-TM option on all retained directed alignments, not new alignment search or an independent geometry implementation. Preserve approximate results and compare threshold decisions."
+}
