@@ -33,3 +33,9 @@ Use `make restore-sources` to verify cached snapshots or restore them if the rem
 `qc_input_receipts.json`: raw proteomes normalized for preliminary BUSCO completeness. Terminal `*` and `.` markers removed; sequences with internal stops or other noncanonical characters excluded and counted. Source and output hashes preserved; no isoform collapse yet. This is separate from final orthology inputs.
 
 `busco_dataset_receipt.json`: dataset configuration and SHA256 for every file in the initial eukaryota_odb12.2 marker set. `environments/busco-linux-64.lock.txt` pins installed packages. Invoke BUSCO via conda run with .cache/envs/busco; directly invoking its script under the base Python does not activate the environment.
+
+`outgroup_sampling_draft.tsv`: exactly 25 genome-backed taxa; selection logic and citations in config/outgroups.json. External `assembly_accession` values prefixed `figshare:` identify the actual publisher assembly artifact, not an asserted NCBI match. Missing species taxids are unresolved identifiers, not absent organisms. `outgroup_ncbi_download_manifest_download_receipts.json` records all 20 validated NCBI outgroup downloads.
+
+`sampling_manifest.tsv` is now the combined provisional 527-taxon manifest, superseding earlier notes that it was empty. It includes the unresolved S. jurei record; only 526 taxa currently have acquired protein data. Rebuild with scripts/build_sampling_manifest.py. Final annotation QC, ecological metadata and structure coverage remain pending.
+
+`busco_eukaryota_qc.tsv`: successful raw-proteome BUSCO runs, counts checked for internal consistency, source summary hashes retained. Rebuild with scripts/summarize_busco.py. It does not represent lineage-specific completeness or corrected isoform counts.

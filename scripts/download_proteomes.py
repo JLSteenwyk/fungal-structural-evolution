@@ -69,6 +69,6 @@ def main():
    r=future.result();out.write(json.dumps(r)+'\n');out.flush();done[r['url']]=r
    if n%10==0:print('Processed',n,'of',len(todo),flush=True)
  selected=[done[r['proteome_url']] for r in rows]
- (ROOT/'metadata/proteome_download_receipts.json').write_text(json.dumps(selected,indent=2)+'\n')
+ (ROOT/('metadata/proteome_download_receipts.json' if a.manifest == 'metadata/fungal_sampling_draft.tsv' else 'metadata/'+Path(a.manifest).stem+'_download_receipts.json')).write_text(json.dumps(selected,indent=2)+'\n')
  print('Validated:',sum(r['status']=='validated' for r in selected),'of',len(rows),flush=True)
 if __name__=='__main__':main()
