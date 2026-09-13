@@ -778,3 +778,20 @@ same-method ecological coverage assessment remain pending. Versioned receipts:
 `metadata/esmfold_ecology_full_audit_receipt.json`,
 `metadata/esmfold_ecology_full_conversion_receipt.json`, and
 `metadata/esmfold_ecology_snapshot_handoff_receipt.json`.
+
+
+Ecology mapping completed (session 37925 exit zero): 675 models, 704 links,
+19 taxa and 165,755 matrix-residue links. The expanded link grid exactly matches
+the frozen expected set. The global-link readback variant retains the original
+residue checks and additionally requires that its expected links equal all
+full-panel matches to the audited sequence hashes and include every original
+curated link. All 165,755 retained positions, matrix amino acids and original NPZ
+confidence values passed (session 2442 exit zero). It does not independently
+infer alignments or native spatial partners. Receipt:
+`metadata/esmfold_ecology_full_residue_readback.json`.
+
+PAE export (session 67992) and native structural-alphabet extraction (session
+97473) are now running over the complete ecology snapshot. Resource plan:
+`metadata/esmfold_ecology_feature_resource_plan.json`. Coordinate-feature audits,
+PAE qualification and paired-input preparation remain pending. The raw count of
+75 markers with at least four mapped taxa precedes confidence/coverage filtering.

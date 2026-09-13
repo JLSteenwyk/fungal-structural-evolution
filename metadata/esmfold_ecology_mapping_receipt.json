@@ -1,0 +1,27 @@
+{
+  "source_policy": {
+    "provider": "local",
+    "tool": "ESMFold v1",
+    "selection": "Highest mean CA pLDDT, version and model ID only within this exact provider/tool; no cross-pipeline fallback. Confidence ranking does not establish accuracy."
+  },
+  "source_inventory_path": "results/structures/esmfold-ecology-complete-v1/inventory.jsonl",
+  "source_inventory_sha256": "57c7f743a0f8274352e340f93f06c3c09a9dc3722ea4f81b88a2bf82cd0c7c0a",
+  "script_sha256": "148069d55a06bdeb735c65b88f10058b35e0a7eb9a1b0313b2495faae304a763",
+  "marker_proteins_screened": 59840,
+  "marker_proteins_linked": 704,
+  "distinct_taxa_linked": 19,
+  "distinct_models": 675,
+  "matrix_residue_links": 165755,
+  "markers_with_at_least_4_linked_taxa": 75,
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "assignment_basis": "Exact complete amino-acid sequence, including reuse across taxa with identical sequences. Taxon identities and source accessions are retained.",
+  "caveat": "Partial acquisition snapshot. Confidence is descriptive; branch inference, PAE/domain assessment and source-sensitivity checks remain pending.",
+  "artifacts": {
+    "matrix_to_structure_residues.tsv.gz": "b41e3e1f55634102c6fe75c51a360bc2f49bd55f64f28d51f768480bf28602ff",
+    "source_inventory.jsonl": "57c7f743a0f8274352e340f93f06c3c09a9dc3722ea4f81b88a2bf82cd0c7c0a",
+    "marker_coverage.tsv": "fb2b2771eaef27df311c4a282e2549c7284af7f9935c031fce70e585e766b058",
+    "model_provenance.json": "25a6546eab35f9eae19609f807e987ddff2c4c34adfd33ac16f303f048623464",
+    "marker_structure_links.tsv": "120ffaecb566aaea2450e02f17ceaa0aa9c086f986a0425709307e0dff087bd8",
+    "source_selection_audit.tsv": "a565fa457d006f335e8eaddd5ed98b0eb70c3a2f66b75c350f0786d8e630bc09"
+  }
+}

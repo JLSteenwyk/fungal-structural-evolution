@@ -1,0 +1,24 @@
+{
+  "models": 675,
+  "residues": 212983,
+  "sum_squared_lengths": 75964815,
+  "pae": {
+    "workers": 1,
+    "memory_gib": 4,
+    "output_gib": 2,
+    "planning_hours": [
+      0.05,
+      2
+    ]
+  },
+  "native": {
+    "workers": 4,
+    "memory_gib": 8,
+    "output_gib": 2,
+    "planning_hours": [
+      0.01,
+      1
+    ]
+  },
+  "scope": "Same validated directional PAE export and pinned native extraction as previous cohorts. Existing host only; output/readback and confidence qualification remain separate."
+}

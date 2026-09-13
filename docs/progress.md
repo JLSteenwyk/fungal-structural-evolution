@@ -1915,3 +1915,10 @@ the eight additional links and complete expected grid are retained in versioned
 metadata. Launched direct residue mapping (session 37925) after conversion
 completed; no queued mapping controller exists. Final link/residue readback and
 native confidence qualification remain pending.
+
+
+Ecology mapping and full residue readback completed: 675 models, 704 exact
+marker links across 19 taxa, and all 165,755 matrix-residue links verified.
+The expected global links equal all exact full-panel sequence matches and retain
+all 696 curated originating links. Started PAE export (session 67992) and native
+extraction (session 97473); final confidence/paired coverage remains pending.
