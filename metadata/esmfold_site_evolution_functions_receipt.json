@@ -1,0 +1,27 @@
+{
+  "status": "complete_functionally_annotated_site_evolution_frame",
+  "markers": 72,
+  "sites": 16571,
+  "observed_functional_rows": 1189,
+  "sites_with_correspondence": 28,
+  "sites_with_conserved_candidate": 10,
+  "source_site_status_counts": {
+    "no_model_in_snapshot": 12558,
+    "gap_in_functional_profile_alignment": 3272,
+    "mapped_to_marker_matrix": 1271,
+    "model_site_outside_marker_matrix": 4
+  },
+  "source_receipts": {
+    "frame": "d35b22630a0622f1b7fce606c25a019ac954f5a544dc83a7558c3d9de4a5dcf6",
+    "functional": "b6b2a03202a3fd767cc0b0ffc026865cd0eb03f7e0d4862d83512663c36b78d1",
+    "projection": "08e81e3d19bd71f0a39cb3b691324dd4b11ec15529c018b0a5c6585f5bc76ea0",
+    "inputs": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+  },
+  "script_sha256": "b98b4e51adf2e2030cc12b038687207bb3cb8f2a1db40b920b31a89a6f150313",
+  "interpretation": "All original site-estimate rows retained. Counts describe observed projected Pfam correspondences, with conserved candidates distinguished from other correspondences; neither is experimental functional validation. No observed correspondence is unknown annotation status, not evidence of nonfunction. Taxon counts use sets; candidate and other correspondence sets may overlap. Fractions use all observed taxa, not annotation sensitivity. No functional enrichment, independent transition, branch effect or selection test.",
+  "artifacts": {
+    "site_evolution_frame.tsv": "1d3e00cdebf15d6b24c9b5e94fc472236ce42631b59db66cc5f0e629db393116",
+    "marker_summary.tsv": "254f64520ac65a2cbf1634140eaf0f27ac42712f8d713f89b54f0a2291cbb26d",
+    "observed_functional_links.tsv": "632f45cd462ec145d6c0ee7e52c5f02499e79fdbe19c92b9772a7786539ad156"
+  }
+}

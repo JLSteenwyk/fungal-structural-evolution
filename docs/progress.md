@@ -1528,3 +1528,14 @@ Prepared the matched site/branch comparison with rank and model-identity checks.
 Resources, provenance and reproducible commands are documented in
 `docs/site-specific-evolutionary-rates.md`. Main long-running stages and the
 resampling audit controller remain live. The research goal stays incomplete.
+
+
+### Functional correspondence added to the matched site-evolution frame
+
+Joined existing annotations to all 16,571 local sites without changing prior
+estimates. The 1,189 observed annotation links represent 1,066 taxon-site cells
+at 28 sites; 10 sites across seven markers carry conserved candidates. Full
+field and count readback passed. Unannotated sites remain unknown, and repeated
+profile links are not counted as separate taxon observations or events. This
+prepares focused functional-site case studies while exposing limited annotation
+coverage. FreeRate and other major jobs remain running; the goal is incomplete.

@@ -100,3 +100,37 @@ Branch localization, ancestral states, tests against matched background sites,
 functional enrichment and experimental interpretation remain pending. The
 joins provide checked coordinates and confidence; they do not themselves
 establish structural acceleration, positive selection or catalytic activity.
+
+
+## Functional annotations in the local site-evolution frame
+
+Completed `results/phylogeny/site-evolution-functions-esmfold-v1` retains all
+16,571 original sites across 72 local-source markers and adds the existing
+observed functional correspondences. The join verifies common paired-input
+provenance, model/protein identity, residue and matrix/paired column positions,
+and observed AA/3Di states against the accessibility projection.
+
+The 1,189 annotation rows span 1,066 distinct taxon-site observations at 28
+paired sites across 13 markers. Multiple profile correspondences can refer to
+one observed residue; per-site taxon counts therefore use sets. Conserved
+candidates contribute 139 annotation rows at 10 sites across seven markers.
+Candidate and other-correspondence taxon sets may overlap. The unannotated
+sites remain explicitly `no_observed_correspondence`; this is not evidence of
+nonfunction. Fractions use all observed taxa, not an assumed annotation
+sensitivity or a count of independent evolutionary events.
+
+All inherited frame and annotation fields passed full readback. Every appended
+coordinate ASA/confidence/context field, including repeated taxon-site rows,
+matched its source. All taxon sets, fractions, Pfam accession unions, status
+fields and marker summaries were reconstructed. These annotations enable
+later focused evolutionary case studies; no functional enrichment, branch
+effect, selection test or experimental functional validation has been performed.
+The limited current coverage does not support generalizing to fungal functional
+sites as a whole.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/annotate_site_evolution_functions.py --frame results/phylogeny/site-evolution-frame-esmfold-v1 --functional results/functional_sites/esmfold-linked-v1 --projection results/structural_annotations/paired-accessibility-esmfold-v1 --inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --output results/phylogeny/site-evolution-functions-esmfold-v1
+```
+
+Full tables remain outside Git; receipt, readback and marker coverage are in
+`metadata/esmfold_site_evolution_functions_*`.
