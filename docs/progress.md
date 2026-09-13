@@ -1124,3 +1124,14 @@ retained alignments before conservative membership decisions. The prior turn
 completed clustering and membership identity checks; this turn tests actual
 edge criteria and exposes limits that matter for atlas interpretation. Original
 clusters remain exploratory, and the full research goal remains active.
+
+### Structural groups linked to complete frozen taxon/marker provenance
+
+Attached and independently verified all 18,815 model–taxon–marker links across
+2,249 original similarity groups. Twenty-three groups have multiple marker labels,
+95 include outgroups, and all 200 groups with approximate edge failures retain
+explicit flags. This creates a traceable connection to the phylogenetic inputs
+without treating clusters as orthogroups. Exact-score conversion is verified
+live; its downstream reviewer is prepared but awaits completion. The preceding
+turn tested edge criteria; this turn completes group provenance annotation while
+preserving unresolved validation. The full research goal remains active.

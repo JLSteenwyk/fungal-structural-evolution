@@ -1,0 +1,18 @@
+{
+  "status": "complete_exploratory_cluster_provenance_annotation",
+  "cluster_receipt_sha256": "b1be354173157307bfe3ed809f65e57f9e0e813ea220ab5f0750b8c26f496f31",
+  "edge_validation_receipt_sha256": "46804800b09dfa611343267a831189bc2a94bec4eca7069e3195f4fb6241c244",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "a73d660c2de041515e8acbbc80f13adf3531b7da748fb177bec8bfe2fcb8343e",
+  "clusters": 2249,
+  "models": 18274,
+  "model_taxon_marker_links": 18815,
+  "multi_marker_clusters": 23,
+  "clusters_with_outgroup_taxa": 95,
+  "clusters_with_failed_approximate_edges": 200,
+  "interpretation": "Provenance annotation of original exploratory groups. Marker labels do not certify orthology; multiple markers can reflect shared domains, annotation differences or false grouping. Taxa and source composition describe uneven availability, not independent events or trait associations. Exact-score review, confidence/domain sensitivity and biological family inference remain pending.",
+  "artifacts": {
+    "cluster_annotations.tsv": "6c8b9e976673541d51178b09bb5f66f63454f7b6d410920ad5e58273466fe791",
+    "cluster_taxon_marker_links.tsv": "81f1083e095e66efbeaa99b01f5b1217163b48c587dd9cb95910b15b9c59e9da"
+  }
+}

@@ -93,3 +93,28 @@ planning. Exact-score conversion reserves eight threads, 32 GB memory and 5 GB
 output on the existing host, with a broad 0.1–12 hour forecast. No paid services
 were used. Neither direction-specific failure nor singleton status establishes
 biological dissimilarity, novelty or orthology.
+
+## Marker and taxon provenance attached to original groups
+
+All 2,249 original groups now have model/source/length/confidence summaries,
+marker sets, taxon counts and major-lineage annotations. All 18,815
+model–taxon–marker links exactly match the union of the frozen source tables;
+per-group marker and taxon counts also passed independent readback. Twenty-three
+groups contain multiple marker labels, and 95 contain outgroup taxa. These
+patterns are review cues, not validated homology, functional or evolutionary
+relationships. Shared domains, annotation differences and incorrect grouping
+remain possible explanations for mixed marker labels.
+
+The 200 groups with edges failing the approximate criteria retain explicit
+counts and a pending-exact-review flag. Singleton groups have no edge test.
+Every group keeps `orthology_status=not_established_by_structural_clustering`.
+Original memberships have not been modified; exact-score conversion remains
+running. A review script is prepared to compare all exact/approximate directed
+pairs and reject changed alignment identities or out-of-range scores; it has
+passed syntax compilation but has not yet run on completed exact-score output.
+
+```bash
+python scripts/annotate_structure_clusters.py --clusters results/structural_clusters/frozen-marker-models-v1 --edge-validation results/structural_clusters/edge-validation-v1 --output results/structural_clusters/provenance-annotations-v1
+# Run only after exact conversion has a completion receipt:
+python scripts/review_exact_cluster_scores.py --validation results/structural_clusters/edge-validation-v1 --exact results/structural_clusters/edge-exact-score-v1 --output results/structural_clusters/edge-exact-review-v1
+```
