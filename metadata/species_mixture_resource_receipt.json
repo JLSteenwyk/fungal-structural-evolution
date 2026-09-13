@@ -1,0 +1,91 @@
+{
+  "status": "prepared_full_matrix_mixture_resource_scenarios",
+  "script_sha256": "b66cae7dc6bbdad7cf341d834ae0879d4840aa3fd70f35c5d21cbab3008d3965",
+  "matrices": [
+    {
+      "label": "profile",
+      "matrix": "results/phylogeny/profile-matrix-50-v1",
+      "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+      "matrix_sha256": "1934ea4e2d0687d644a65d3fc550dc6eee25e42d85deeeec6a3e529bd1ddb045",
+      "taxa": 526,
+      "columns": 49027,
+      "patterns": 48817,
+      "guide_log_path": "results/phylogeny/initial-guide-v1/guide.log",
+      "guide_log_snapshot_sha256": "d72cd6b8b26a1a7c145402c3dcd27eeb1180619d2de373d74b3be14f6160082c",
+      "guide_memory_report_line": "NOTE: 15875 MB RAM (15 GB) is required!",
+      "homogeneous_reported_mb": 15875,
+      "mixture_memory_scenarios_reported_mb_units": [
+        {
+          "components_with_empirical_profile": 21,
+          "model": "LG+C20+F+G4",
+          "linear_component_scenario_mb": 333375,
+          "with_25_percent_headroom_mb": 416718.75
+        },
+        {
+          "components_with_empirical_profile": 61,
+          "model": "LG+C60+F+G4",
+          "linear_component_scenario_mb": 968375,
+          "with_25_percent_headroom_mb": 1210468.75
+        }
+      ]
+    },
+    {
+      "label": "mafft",
+      "matrix": "results/phylogeny/mafft-matrix-50-v1",
+      "matrix_receipt_sha256": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+      "matrix_sha256": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+      "taxa": 526,
+      "columns": 63750,
+      "patterns": 63543,
+      "guide_log_path": "results/phylogeny/initial-mafft-guide-v1/guide.log",
+      "guide_log_snapshot_sha256": "724af9891ad54dfa1c4fd0bb70aa0b8e2c79e22f90ee1c743e5eb238bad81992",
+      "guide_memory_report_line": "NOTE: 20661 MB RAM (20 GB) is required!",
+      "homogeneous_reported_mb": 20661,
+      "mixture_memory_scenarios_reported_mb_units": [
+        {
+          "components_with_empirical_profile": 21,
+          "model": "LG+C20+F+G4",
+          "linear_component_scenario_mb": 433881,
+          "with_25_percent_headroom_mb": 542351.25
+        },
+        {
+          "components_with_empirical_profile": 61,
+          "model": "LG+C60+F+G4",
+          "linear_component_scenario_mb": 1260321,
+          "with_25_percent_headroom_mb": 1575401.25
+        }
+      ]
+    }
+  ],
+  "source": "https://iqtree.github.io/doc/Complex-Models#site-specific-frequency-models",
+  "source_method_doi": "10.1093/sysbio/syx068",
+  "interpretation": "Linear component scaling of IQ-TREE startup RAM estimates, with explicit 25% scenario headroom; neither measured mixture memory nor an upper bound. PMSF profile estimation retains mixture memory costs. C20 is the initial feasible full-matrix sensitivity; C60 needs a separately verified memory-saving configuration. Neither model addresses all across-lineage compositional variation.",
+  "proposed_design": {
+    "matrix_labels": [
+      "profile",
+      "mafft"
+    ],
+    "guide_labels": [
+      "profile",
+      "mafft"
+    ],
+    "crossed_runs": 4,
+    "model": "LG+C20+F+G4",
+    "method": "PMSF",
+    "concurrent_runs": 1,
+    "threads": 16,
+    "iqtree_memory_limit": "600G",
+    "minimum_available_memory_gib": 750,
+    "output_allowance_gb": 100,
+    "planning_wall_hours_per_run": [
+      24,
+      336
+    ],
+    "runtime_basis": "Conservative planning envelope for full-matrix mixture profile estimation and supported tree search, not a measured prediction.",
+    "prerequisites": "Both completed guide receipts, exact tip grids and finite branch lengths; freeze each guide before use. All four guide/alignment combinations preserve 526 taxa. Support, model adequacy, gene discordance and taxon/marker sensitivity remain required."
+  },
+  "artifacts": {
+    "mafft_guide.log": "724af9891ad54dfa1c4fd0bb70aa0b8e2c79e22f90ee1c743e5eb238bad81992",
+    "profile_guide.log": "d72cd6b8b26a1a7c145402c3dcd27eeb1180619d2de373d74b3be14f6160082c"
+  }
+}

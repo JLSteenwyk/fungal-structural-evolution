@@ -136,3 +136,42 @@ python scripts/audit_marker_tree_support.py \
 ```
 
 The 113 pending marker IDs remain explicit in the receipt. Trees that finish early need not be representative of the full marker set. This checkpoint does not establish species-tree support, gene concordance factors, reconciliation or the cause of any discordance. The earlier three-tree snapshot remains preserved. New versioned records: `metadata/marker_tree_support_snapshot_v2.tsv` and `metadata/marker_tree_support_snapshot_v2_receipt.json`.
+
+
+## Full-matrix mixture sensitivity: resource assessment
+
+Both 526-taxon guide searches remain active. Before the next phylogenetic stage,
+`scripts/prepare_species_mixture_resources.py` verified both complete matrix
+artifact manifests, equal tip sets and alignment lengths, and froze their guide
+startup resource reports. The profile matrix has 48,817 distinct patterns and a
+reported homogeneous-model estimate of 15,875 MB; MAFFT has 63,543 patterns and
+20,661 MB. These are program estimates, not measured resident memory.
+
+A linear component-count scenario, including the empirical profile, gives:
+
+| Matrix | C20 scenario MB | C20 with 25% allowance MB | C60 scenario MB |
+|---|---:|---:|---:|
+| Profile | 333,375 | 416,718.75 | 968,375 |
+| MAFFT | 433,881 | 542,351.25 | 1,260,321 |
+
+Scaling is a planning assumption, not a guaranteed upper bound. The next feasible
+sensitivity is C20-PMSF on both full matrices, crossed with both completed guide
+topologies to expose dependence on guide choice. IQ-TREE derives site profiles
+from a mixture model and guide tree; its first PMSF phase retains mixture memory
+requirements. [IQ-TREE documentation](https://iqtree.github.io/doc/Complex-Models#site-specific-frequency-models);
+[Wang et al. 2018](https://doi.org/10.1093/sysbio/syx068).
+
+Plan one run at a time, 16 threads, a 600G IQ-TREE memory limit and at least
+750 GiB available host memory before launch, with 100 GB output allowance.
+Treating the reported MB conservatively as MiB, both C20 scenarios plus allowance
+fit this limit. The initial v1 plan used 512G; arithmetic review showed that the
+MAFFT allowance could exceed it, so v2 supersedes it before any launch. A broad
+24–336 hour planning range per supported run is unmeasured. Unrestricted C60
+requires revisiting memory strategy; reducing taxa is not the chosen remedy.
+
+The resource preparation and independent arithmetic/hash readback passed.
+Receipt: `metadata/species_mixture_resource_receipt.json`; frozen logs:
+`results/phylogeny/species-mixture-resources-v2`. No mixture fit has launched.
+Completed guide receipts and frozen, validated trees are prerequisites. This
+sensitivity does not replace partitioned analysis, gene concordance, across-
+lineage composition assessment or taxon/marker sensitivity.

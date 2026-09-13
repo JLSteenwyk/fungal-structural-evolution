@@ -1711,3 +1711,14 @@ metadata corruption and completion accounting checks. Both handoff controllers
 were observed live waiting for their still-running producers; all 11 dependency
 pins per configuration matched. Full audit/conversion results remain pending.
 See docs/structure-prediction-workflow.md and the two snapshot controller configs.
+
+
+Prepared and verified full-matrix PMSF resource scenarios from both current guide
+startup reports. Both 526-tip matrix manifests and taxon grids passed readback.
+C20 planning memory plus 25% allowance is approximately 417k/542k reported MB;
+C60 can exceed host RAM. A v1 512G allowance was corrected to 600G in v2 before
+launch. Proposed full-matrix crossed-guide sensitivity retains all taxa and
+requires completed guide receipts, serial execution and 750 GiB available memory.
+Resource evidence and limitations are in metadata/species_mixture_resource_receipt.json
+and docs/phylogenetic-workflow.md. This stage remains unlaunched; existing guide
+and gene-tree producers were confirmed live.
