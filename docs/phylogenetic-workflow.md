@@ -124,3 +124,15 @@ python scripts/assess_taxon_phylogenetic_coverage.py \
 ```
 
 All source artifacts, exact taxon membership, matrix length/alphabet, per-taxon counts and output hashes were checked. The output includes a complete 526-taxon table and explicit threshold membership for each taxon. No filtered tree has yet been inferred, so these tables alone do not establish topology sensitivity. Versioned summaries are `metadata/taxon_matrix_coverage.tsv`, `metadata/taxon_filter_lineage_sensitivity.tsv` and `metadata/taxon_matrix_coverage_sensitivity_receipt.json`.
+
+## Expanded marker-tree support checkpoint
+
+The second immutable support snapshot validates 12 completed marker trees and 5,742 internal branches. There are 5,630 branches with reported SH-aLRT support and 112 with no reported value; 3,534 reach SH-aLRT 80. Missing support remains distinct from zero, and SH-aLRT is not a bootstrap percentage. All source tree/alignment identities and branch invariants passed the audit; output artifacts passed independent checksum readback.
+
+```bash
+python scripts/audit_marker_tree_support.py \
+  --trees results/phylogeny/marker-gene-trees-v2 \
+  --output results/phylogeny/marker-support-snapshot-v2 --allow-incomplete
+```
+
+The 113 pending marker IDs remain explicit in the receipt. Trees that finish early need not be representative of the full marker set. This checkpoint does not establish species-tree support, gene concordance factors, reconciliation or the cause of any discordance. The earlier three-tree snapshot remains preserved. New versioned records: `metadata/marker_tree_support_snapshot_v2.tsv` and `metadata/marker_tree_support_snapshot_v2_receipt.json`.

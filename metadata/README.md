@@ -98,3 +98,5 @@ Legacy archive retrieval code is preserved but was stopped after verified access
 
 - `mafft_guide_resource_plan.json` and `mafft_guide_run_config.json`: prelaunch resource envelope and actual IQ-TREE command for the full MAFFT-matrix guide; no terminal tree/support result is implied.
 - `taxon_matrix_coverage_sensitivity_receipt.json`, `taxon_matrix_coverage.tsv`, and `taxon_filter_lineage_sensitivity.tsv`: direct unambiguous-residue counts in both complete matrices, raw marker-copy context and explicit threshold memberships by lineage. Thresholds are descriptive sensitivities, not automatic exclusions or reliability guarantees; full membership files remain in the recorded result directory.
+
+- `marker_tree_support_snapshot_v2.tsv` and `marker_tree_support_snapshot_v2_receipt.json`: independently checked 12-tree completion checkpoint with 113 pending marker IDs. Missing SH-aLRT support is not zero; the subset does not establish full-marker concordance or reconciliation. Earlier snapshot artifacts remain preserved.
