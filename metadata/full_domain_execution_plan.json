@@ -1,0 +1,13 @@
+{
+  "status_at_recording": "queued_behind_marker_search_lock",
+  "recorded_utc": "2026-09-13T05:12:29.145574+00:00",
+  "queue_command": "flock results/domains/marker-search-v1/.lock bash -c 'python scripts/summarize_marker_domains.py --search results/domains/marker-search-v1 --output results/domains/marker-annotations-v1 && python scripts/run_full_domains.py --output results/domains/full-search-v1'",
+  "full_input_receipt_sha256": "8d21e215367ebcdca2c5fb157b3b0f4f6fab9fbc79624a8a0aa5e46c2586a928",
+  "resource_estimate_sha256": "217e6992162f1089f91cf4988970da20b7dc767297ab6e1bd9845dd82f0851b7",
+  "runner_sha256": "36672a202c9106af76834f7e032f35b0e5dc6060b3c7936960d442bfaf7d43c5",
+  "marker_summarizer_sha256": "8384e0099e55ad2cdc1a318951aece53ee8ed179cab510f5a2e05ee7a64d6cfb",
+  "worker_jobs": 4,
+  "hmmer_worker_threads_per_job": 2,
+  "log": "logs/full_domain_search_queue.log",
+  "completion_evidence_required": "Successful marker annotation receipt plus all additional full-search chunk receipts and full-search completion receipt. Queue launch is not search completion."
+}

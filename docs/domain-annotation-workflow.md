@@ -32,3 +32,15 @@ The parser and overlap-coordinate tests are implementation checks, not biologica
 The marker and additional search partitions have different target database sizes. Curated gathering scores can be applied consistently, but raw sequence/domain E-values must remain labeled by search partition; conditional domain E-values cannot be globally calibrated by naively multiplying them by a protein-count ratio. Combining hits requires verified completion against the same Pfam version and compatible HMMER settings. Input preparation alone does not complete full-proteome annotation, and marker results cannot be reused before their complete search passes validation.
 
 The immutable input receipt records source/manifest hashes, per-taxon counts, unique sequence/residue totals and output checksums. Large FASTA and link tables remain outside Git. Its resource estimate precedes launch in `docs/resources.md`; the full-proteome search requires a separate estimate based on observed production throughput.
+
+## Queued full-proteome execution
+
+The additional full-proteome search is queued to reuse the marker search's CPU allocation:
+
+```bash
+flock results/domains/marker-search-v1/.lock bash -c 'python scripts/summarize_marker_domains.py --search results/domains/marker-search-v1 --output results/domains/marker-annotations-v1 && python scripts/run_full_domains.py --output results/domains/full-search-v1'
+```
+
+This command waits for the live marker process to release its lock, then requires a complete, validated marker annotation before launching four two-worker-thread HMMER jobs against the additional sequences. The full runner independently checks exact marker profile coverage, raw table and annotation hashes, marker/full-input linkage, identical Pfam receipt and identical HMMER binary. Failed or incomplete marker results stop the dependency chain. The new runner preserves per-chunk verified resume and streams checksums; output-table completion checks read only the file tail to avoid loading large result files into memory.
+
+`metadata/full_domain_execution_plan.json` pins the queued command, scripts, input receipt and resource estimate at submission. It is a historical queue record, not a live status or completion receipt. The queue holds the marker lock through the dependent full search; do not launch a second competing queue or restart either search merely because a polling interval expires. Once marker annotations exist, a future resume should invoke `run_full_domains.py` directly under its own output lock; do not rerun the immutable annotation writer. Merging the two search partitions and resolving architectures remain subsequent steps.
