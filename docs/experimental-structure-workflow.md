@@ -122,3 +122,31 @@ expanding download require new output directories and may include more entities.
 Without `--allow-partial`, complete metadata retrieval is required. Even an exact
 canonical sequence may include chemically modified monomers or missing atomic
 coordinates; sequence equality alone does not establish benchmark eligibility.
+
+
+## Atomic-coordinate acquisition for exact-sequence candidates
+
+The frozen partial sequence screen nominates 215 distinct PDB entries containing
+541 exact full canonical-sequence entity/model matches (34 distinct model
+proteins). Every nominated entry is included in coordinate acquisition, without
+selecting entries by observed agreement with predictions. `retrieve_experimental_coordinates.py`
+streams the compressed mmCIF files from the RCSB coordinate service, checks full
+gzip readability/CRC and the leading mmCIF data-block identity, then records
+URL, time, sizes and SHA256. Two tests verify identity checking, complete-stream
+reading and rejection of a truncated archive. These checks do not validate
+atomic records or residue correspondence.
+
+```bash
+python scripts/retrieve_experimental_coordinates.py \
+  --screen results/experimental_structures/sequence-screen-partial-v1 \
+  --output data/experimental_structures/coordinates-exact-partial-v1
+```
+
+The single-worker resource plan allows 2 GB RAM, 20 GB disk headroom and 0.5–8
+hours, retaining complete complexes. All 215 archives completed integrity and data-block checks. The expected entry
+universe, per-entry receipts and every compressed-file hash passed readback. Subsequent screens must account for
+multiple models, chains, alternate locations, occupancy, unresolved residues,
+chemical modifications and complex context. Exact canonical sequence is not
+permission to treat every atom or entity as an eligible benchmark. The full
+metadata inventory continues independently; these downloads reflect a frozen
+partial candidate set, not complete experimental coverage of the project.

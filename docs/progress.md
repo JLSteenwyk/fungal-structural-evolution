@@ -841,3 +841,16 @@ passed hash/length readback. Repeated entities are not independent proteins and
 no candidate is yet declared an eligible experimental benchmark. Full metadata
 retrieval continues. The prior turn started that acquisition; this turn produces
 actual sequence correspondence evidence. The full research goal remains active.
+
+
+### Experimental coordinate candidate acquisition completed
+
+Downloaded all 215 entries nominated by the frozen exact-sequence screen:
+324,469,519 compressed bytes and 1,297,265,050 uncompressed bytes.
+Every archive passed gzip integrity and data-block identity checks; complete
+entry membership, receipts and compressed hashes passed independent readback.
+Two integrity tests pass. Full complexes are preserved. Atomic residue mapping,
+experimental quality and independent-benchmark eligibility remain outstanding.
+The prior turn established sequence correspondence; this turn acquires the
+coordinates needed for actual structural benchmarking. Full metadata retrieval
+continues and the overall research goal remains active.
