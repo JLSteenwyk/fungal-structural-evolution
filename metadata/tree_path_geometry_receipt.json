@@ -1,0 +1,43 @@
+{
+  "status": "complete_tree_path_geometry_benchmark",
+  "markers": 52,
+  "accepted_taxon_pairs": 722,
+  "excluded_taxon_pairs": 8,
+  "source_receipts": {
+    "inputs": {
+      "path": "results/phylogeny/paired-structural-inputs-v1",
+      "sha256": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/snapshot-v2",
+      "sha256": "8de3f7949755aa684b51804d3c312c7427bcca615e549099df7e7a7b8ba9942e"
+    },
+    "pae": {
+      "path": "results/structural_pae/snapshot-v1",
+      "sha256": "34fec17d549d85893baba72978d368d11f5c34d68ff3a7e91c2bbb54d7f98725"
+    },
+    "fits": {
+      "path": "results/phylogeny/paired-marker-fits-v1",
+      "sha256": "01aabe9348747c0f14896b53ae9b22030758b0a28ed9e2205f46f73968009afe"
+    },
+    "fit_audit": {
+      "path": "results/phylogeny/paired-fit-audit-v1",
+      "sha256": "516d555220c2d6bab8bd589e2aaa55910096bfcd358079150dd2f840d33cf261"
+    },
+    "resampling": {
+      "path": "results/phylogeny/paired-resampling-v1",
+      "sha256": "7bfc15488314fe45fabf77f8980a0d568472d70b6fe49ddeb7204c38e565fed0"
+    },
+    "resampling_audit": {
+      "path": "results/phylogeny/paired-resampling-audit-v1",
+      "sha256": "2b17bc87e2699ff961cdec0fdb6117619b7dfa3339bb183997fd5e782e691d1a"
+    }
+  },
+  "script_sha256": "2068db31d1c4f710385e6c82776c7e4a878c2b3f9644ba305d6a59a26768c6ea",
+  "geometry_helper_sha256": "4a3a35879a8e7cf95dbaca06ca012ae1b3a7df9cd0e0c49dd36975d8d8a9bdb0",
+  "interpretation": "Leaf-to-leaf sums of fitted branch lengths benchmarked against matched-residue direct geometry. Path intervals sum branches within each joint block-30 draw before taking percentiles. Tree fits use all retained marker columns/taxa; pair geometry uses the jointly observed subset and records coverage. This is not a reconstruction of physical displacement on individual branches, a proof of geometric additivity, or an acceleration/coupling test. Distances and pairs share ancestry, sites and prediction sources.",
+  "artifacts": {
+    "path_geometry.tsv": "ef0d4edf4130c3e3421bb587a381f8a2d6c5001ad444a75e68c6be9039881401",
+    "coverage_exclusions.tsv": "1204d3ca13edcf21ef4d91a4a3fb84a2d0691b12556b81e2f054bd26d84be05b"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "complete_maximum_rmsd_case_diagnostic",
+  "selection": "Largest whole-marker RMSD among all accepted tree-path benchmark pairs",
+  "marker": "5000823at2759",
+  "taxon_a": "F332112",
+  "taxon_b": "F4918",
+  "benchmark_row": {
+    "marker": "5000823at2759",
+    "taxon_a": "F332112",
+    "taxon_b": "F4918",
+    "tree_taxa": "5",
+    "tree_alignment_columns": "699",
+    "observed_a": "645",
+    "observed_b": "622",
+    "geometry_matched_residues": "583",
+    "fraction_of_tree_columns": "0.8340486409155937",
+    "same_model_coordinates": "False",
+    "aa_path_distance": "1.6567472507",
+    "3di_af_path_distance": "0.2510979764",
+    "3di_af_empirical_path_distance": "0.3065096744",
+    "3di_llm_path_distance": "0.2279781081",
+    "aa_path_block30_p2_5": "1.2563622483725",
+    "aa_path_block30_median": "1.6722681404",
+    "aa_path_block30_p97_5": "2.2209894579",
+    "3di_path_block30_p2_5": "0.1503689452975",
+    "3di_path_block30_median": "0.2523640453",
+    "3di_path_block30_p97_5": "0.36094394381500006",
+    "estimable_block30_draws": "200",
+    "ca_superposition_rmsd_angstrom": "31.12322360816949",
+    "local_distance_pairs": "10290",
+    "local_distance_mean_absolute_change_angstrom": "0.8507832333260014",
+    "local_distance_rms_change_angstrom": "3.167139180191841",
+    "uncorrected_aa_difference": "0.5797598627787307",
+    "uncorrected_3di_difference": "0.18181818181818182",
+    "pae10_local_pairs": "10238",
+    "pae10_local_retained_fraction": "0.9949465500485909",
+    "pae10_local_mean_absolute_change_angstrom": "0.6929140365025789"
+  },
+  "regions_compared": 1,
+  "source_receipts": {
+    "benchmark": {
+      "path": "results/structural_alphabet/tree-path-geometry-v1",
+      "sha256": "f69ea052085c4993ae420dd284c28e184fb2a12c1fe8aa9f61f58a32006182dd"
+    },
+    "inputs": {
+      "path": "results/phylogeny/paired-structural-inputs-v1",
+      "sha256": "6a2a4c81d457d4692090b4a4fbf17a05992d350eca97c7c75191139d88baac3c"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/snapshot-v2",
+      "sha256": "8de3f7949755aa684b51804d3c312c7427bcca615e549099df7e7a7b8ba9942e"
+    },
+    "annotations": {
+      "path": "results/domains/marker-annotations-v1",
+      "sha256": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+    },
+    "pae": {
+      "path": "results/structural_pae/snapshot-v1",
+      "sha256": "34fec17d549d85893baba72978d368d11f5c34d68ff3a7e91c2bbb54d7f98725"
+    }
+  },
+  "script_sha256": "69ec3b2cd98bfe0dad8c2e7abfc617ed04d58108c13e02117d5bfc1266a41612",
+  "interpretation": "Single-instance, nonoverlapping, >=half-HMM shared Pfam regions are compared on identical retained sites. Repeat/Family annotations are not reclassified as independent domains. An improved separate rigid fit is mathematically expected and alone does not prove biological motion. Cross-region PAE qualifies orientation interpretability. Missing GA hits do not prove domain loss, and hybrid/taxonomic review remains necessary.",
+  "artifacts": {
+    "pfam_hits.tsv": "fd1c6022d02ccf34ed8182c59cb4e776443349ef71b0161f6c1da1e9407afaa6",
+    "region_geometry.tsv": "b6f108d809c7ce3bcf4a47bdc529c4d89dfac0981581d96859062ccdd0edcd38"
+  }
+}

@@ -1,12 +1,25 @@
 #!/usr/bin/env python3
 """Retrieve current full-length AFDB monomers with exact sequence and coordinate checks."""
-import csv,fcntl,hashlib,io,json,re,time,signal
+import csv,fcntl,gzip,hashlib,io,json,re,time,signal
+from datetime import datetime,timezone
 from collections import defaultdict,deque
 from concurrent.futures import ThreadPoolExecutor,wait,FIRST_COMPLETED
 from pathlib import Path
 from urllib.request import urlopen
 from Bio.PDB.MMCIF2Dict import MMCIF2Dict
 ROOT=Path(__file__).resolve().parents[1]
+def decode_http_payload(raw):
+ # urllib does not automatically decode HTTP Content-Encoding: gzip.
+ # Magic-byte detection also handles gzip bodies with absent/misleading headers.
+ encoded=raw.startswith(b'\x1f\x8b')
+ return (gzip.decompress(raw) if encoded else raw),{'response_payload_sha256':hashlib.sha256(raw).hexdigest(),'response_encoding':'gzip' if encoded else 'identity','response_bytes':len(raw)}
+def polymer_sequences(cif):
+ # Some contributed AFDB CIFs supply the literal one-letter sequence only.
+ # Accept it only through the same exact full-sequence equality check below;
+ # do not translate parenthesized modifications or guess missing residues.
+ values=cif.get('_entity_poly.pdbx_seq_one_letter_code_can')
+ if values is None:values=cif.get('_entity_poly.pdbx_seq_one_letter_code',[])
+ return [''.join(value.split()) for value in values]
 def prioritize(links,marker_keys,done):
  groups=defaultdict(set);remaining=set()
  for row in links:
@@ -27,7 +40,7 @@ def fetch(accession,expected):
  folder=ROOT/'data/structures/afdb';meta=folder/(accession+'.api.json')
  try:
   if not meta.exists():
-   with urlopen('https://alphafold.ebi.ac.uk/api/prediction/'+accession,timeout=45) as r:data=json.load(r)
+   with urlopen('https://alphafold.ebi.ac.uk/api/prediction/'+accession,timeout=45) as r:data=json.loads(decode_http_payload(r.read())[0])
    temp=meta.with_suffix('.partial');temp.write_text(json.dumps(data));temp.replace(meta)
   records=json.loads(meta.read_text());accepted=[]
   for model in records:
@@ -39,17 +52,18 @@ def fetch(accession,expected):
    path=folder/f'{ident}-v{version}.cif';url=model['cifUrl']
    if not url.startswith('https://alphafold.ebi.ac.uk/files/'):raise ValueError('Unexpected CIF provider')
    if not path.exists():
-    with urlopen(url,timeout=60) as r:content=r.read()
-   else:content=path.read_bytes()
+    with urlopen(url,timeout=60) as r:
+     content,transport=decode_http_payload(r.read());transport['http_content_encoding']=r.headers.get('Content-Encoding');transport['retrieved_utc']=datetime.now(timezone.utc).isoformat()
+   else:content=path.read_bytes();transport={'status':'reused_verified_content_after_readback','original_response_metadata':'not_available_in_this_fetch'}
    cif=MMCIF2Dict(io.StringIO(content.decode()))
-   seqs=[''.join(s.split()) for s in cif.get('_entity_poly.pdbx_seq_one_letter_code_can',[])]
+   seqs=polymer_sequences(cif)
    if seqs!=[sequence]:raise ValueError('CIF polymer sequence does not match API and input')
    atoms=cif['_atom_site.label_atom_id'];positions=cif['_atom_site.label_seq_id'];bfactors=cif['_atom_site.B_iso_or_equiv']
    ca={int(pos):float(b) for atom,pos,b in zip(atoms,positions,bfactors) if atom=='CA'}
    if set(ca)!=set(range(1,len(sequence)+1)):raise ValueError('Incomplete CA coverage')
    if not path.exists():
     temp=path.with_suffix('.partial');temp.write_bytes(content);temp.replace(path)
-   accepted.append({'model_id':ident,'version':version,'sequence_sha256':sha,'length':len(sequence),'mean_ca_plddt':sum(ca.values())/len(ca),'fraction_ca_plddt_below50':sum(x<50 for x in ca.values())/len(ca),'path':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(content).hexdigest(),'url':url,'model_created_date':model.get('modelCreatedDate'),'sequence_version_date':model.get('sequenceVersionDate'),'provider':model.get('providerId'),'tool':model.get('toolUsed'),'pae_url':model.get('paeDocUrl'),'pae_downloaded':False})
+   accepted.append({'model_id':ident,'version':version,'sequence_sha256':sha,'length':len(sequence),'mean_ca_plddt':sum(ca.values())/len(ca),'fraction_ca_plddt_below50':sum(x<50 for x in ca.values())/len(ca),'path':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(content).hexdigest(),'url':url,'model_created_date':model.get('modelCreatedDate'),'sequence_version_date':model.get('sequenceVersionDate'),'provider':model.get('providerId'),'tool':model.get('toolUsed'),'pae_url':model.get('paeDocUrl'),'pae_downloaded':False,'transport':transport})
   return {'uniprot_accession':accession,'status':'verified' if accepted else 'no_exact_full_length_model','models':accepted,'api_path':str(meta.relative_to(ROOT)),'api_sha256':hashlib.sha256(meta.read_bytes()).hexdigest()}
  except Exception as e:return {'uniprot_accession':accession,'status':'error','error':str(e)}
 def main():
