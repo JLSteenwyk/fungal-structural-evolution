@@ -74,3 +74,9 @@ are complete for 259,780 accepted structural comparisons and 6,813 exclusions;
 independent path readback passed, including 86,368 tree traversals. [Methods and tracked receipts](docs/tree-path-geometry.md).
 These conditional sensitivities are an intermediate result. Species phylogeny,
 full structural coverage and the evolutionary hypothesis tests remain incomplete.
+
+
+[Lineage-specific completeness QC](docs/lineage-completeness-workflow.md) is
+complete for all 501 fungal entries. The joined quality table retains the 25
+outgroups with broad-panel scores; panel differences and missing markers require
+lineage-aware interpretation, and contamination assessment remains pending.

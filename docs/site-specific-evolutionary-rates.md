@@ -285,3 +285,33 @@ OPENBLAS_NUM_THREADS=1 python scripts/readback_rate_heterogeneity.py \
   --optimization results/phylogeny/freerate-optimization-all-esmfold-v1 \
   --output results/phylogeny/rate-comparison-readback-optimized-v1
 ```
+
+
+### Full optimization and selected-output readback completed
+
+All 1,152 refits completed (288 source fits, two starts and two optimizers).
+The raw-output audit validated 265,136 diagnostic site-rate rows and all fixed
+topologies and parameter counts. Every selected refit improved on the original
+FreeRate likelihood, and no selected fit remains below Gamma by more than 0.1.
+Selection maximizes the reported likelihood among the original and four refits;
+it does not establish a global optimum or biological model adequacy.
+
+The independent selected-output readback passed for all 288 fits, 66,284 site
+comparisons and 36,488 branch comparisons. All four raw diagnostic likelihoods
+were checked for each fit, alongside selected rate values, tree edges and
+summary statistics. Versioned receipts are
+`metadata/esmfold_freerate_full_optimization_audit_receipt.json` and
+`metadata/esmfold_optimized_rate_comparison_readback.json`.
+
+| Fit | Markers | Median site-rate rank correlation | Median branch-length rank correlation |
+|---|---:|---:|---:|
+| 3di_af | 72 | 0.996398 | 0.998385 |
+| 3di_af_empirical | 72 | 0.995428 | 0.997657 |
+| 3di_llm | 72 | 0.996365 | 0.998246 |
+| aa | 72 | 0.997757 | 0.999389 |
+
+These compare Gamma with the selected FreeRate fit within each model and fixed
+AA topology. High rank agreement does not establish absolute agreement,
+sequence–structure coupling, acceleration or calibrated uncertainty. Matrix
+labels designate structural-alphabet models, not different structure predictors.
+Original outputs and their earlier diagnostics remain preserved.

@@ -67,3 +67,38 @@ its checksum in `metadata/lineage_busco_dataset_collection_receipt.json`.
 The full 501-job batch is now running; its first jobs completed successfully.
 Exact assignments and launch configuration are versioned. Final comparative
 QC results remain pending.
+
+
+## Full lineage QC and raw-output audit completed
+
+All 501 fungal jobs completed successfully. The audit checked 998,331 marker
+calls and 943,724 protein-hit rows against the dataset marker universes, input
+protein identities, summary counts and frozen checksums. The combined table
+retains all 526 taxa, including the 25 outgroups with their broad-panel scores.
+No taxon was filtered. Versioned results are `metadata/busco_panel_quality.tsv`
+and `metadata/lineage_busco_dataset_summary.tsv`; execution and audit receipts
+are `metadata/lineage_busco_execution_receipt.json` and
+`metadata/lineage_busco_audit_receipt.json`.
+
+| Panel | Fungal entries | Markers | Median complete (%) |
+|---|---:|---:|---:|
+| Ascomycota | 234 | 2,557 | 95.58 |
+| Basidiomycota | 157 | 1,811 | 96.69 |
+| Chytridiomycota | 12 | 1,300 | 93.77 |
+| Fungi fallback | 74 | 1,019 | 86.90 |
+| Microsporidia | 12 | 514 | 96.30 |
+| Mucoromycota | 12 | 1,541 | 95.00 |
+
+These are within-panel summaries, not interchangeable completeness scales.
+Protein-mode recovery measures annotation representation; missing and duplicated
+calls still require biological and technical interpretation. Contamination,
+assembly completeness and biological loss are not established by this audit.
+The checker validates existing calls rather than independently repeating HMM
+scoring.
+
+```bash
+python scripts/audit_lineage_busco_qc.py \
+  --run results/busco-lineage-v1 \
+  --datasets data/busco-lineage-qc-v1 \
+  --output results/busco-lineage-audit-v1
+```

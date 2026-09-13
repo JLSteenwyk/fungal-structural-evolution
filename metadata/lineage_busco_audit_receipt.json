@@ -1,0 +1,16 @@
+{
+  "status": "passed_full_lineage_busco_readback",
+  "taxa": 526,
+  "lineage_audited_taxa": 501,
+  "outgroups_broad_only": 25,
+  "lineage_marker_calls": 998331,
+  "lineage_protein_hit_rows": 943724,
+  "source_receipt_sha256": "91670e245ebc0225c45f5bbdb0f5b09f11d74b94375067a9fc50bd80668566de",
+  "script_sha256": "515a403ebd10dcbf519f9431666466ebcf02c29c69d67f3c9915e137aaf165ed",
+  "interpretation": "Every lineage full-table marker identity/status/count and hit protein identity checked, with broad QC retained for all taxa. Dataset-specific denominators are not interchangeable. Protein-mode completeness cannot establish assembly completeness, contamination, ploidy or biological loss; no taxon filtering.",
+  "artifacts": {
+    "raw_output_hashes.json": "c210e52dd7249952a6c6cab435a435d1bbad0922cf607094db2ccf6b96ebed2f",
+    "taxon_quality.tsv": "ec42a5d115b6b92a7ba493b75ee4c37d11d036f59fa16de264d6d00159c23196",
+    "dataset_summary.tsv": "a5822f5b634a1a486983d4a9dedaf3fa1d3b0994ec22ab65f8bf8f8f6ffa2a25"
+  }
+}

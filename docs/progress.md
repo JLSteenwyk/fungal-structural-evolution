@@ -6,7 +6,7 @@
 | GitHub remote | Published and public visibility verified via GitHub API | https://github.com/JLSteenwyk/fungal-structural-evolution |
 | Catalog discovery | NCBI fungal catalogs inventoried; additional sources pending | metadata/source_receipts.json and metadata/catalog_summary.json |
 | 500 fungi + 25 outgroups | 501 fungal entries +25 outgroups acquired; species identity review pending for 22 fungal labels | metadata/analysis_manifest.tsv; metadata/taxon_label_review.tsv |
-| Data QC and structure inventory | Broad BUSCO and assembly-statistics collection complete for 526; exact-sequence structure inventory ongoing; lineage-specific and contamination QC pending | Per-taxon receipts; metadata/busco_dataset_receipt.json |
+| Data QC and structure inventory | Broad BUSCO and assembly-statistics collection complete for 526; exact-sequence structure inventory ongoing; lineage-specific BUSCO complete for all 501 fungi; contamination QC pending | Per-taxon receipts; metadata/busco_dataset_receipt.json |
 | Species tree and discordance | 125 profile and MAFFT alignments complete; 49,027-site profile and 63,750-site MAFFT matrices built; guide and gene trees running; support/discordance/sensitivity pending | metadata/initial_species_matrix_receipt.json; results/phylogeny/ |
 | Families, domains and reconciliation | Representatives prepared for all 526; 64-taxon computational core complete; full assignment running; reconciliation validation pending; marker Pfam search and raw annotation complete; additional full-proteome search running | metadata/orthology_input_manifest.tsv; results/orthology/ |
 | Structural atlas | Frozen snapshots contain 13,153 AlphaFold and 5,121 ESMFold models; paired geometry and experimental benchmarks available with explicit limits; 18,274-model exploratory clustering and residue accessibility running; full-proteome atlas incomplete | metadata/frozen_structure_clustering_config.json; metadata/experimental_coordinate_full_receipt.json; metadata/paired_site_geometry_esmfold_receipt.json |
@@ -1685,3 +1685,20 @@ max-length 768 and the existing OOM stop. The initial queue has 5,510 pending
 proteins; launch-time reuse can change that count. No longer-protein inference
 has started yet. Existing prediction and model-fitting jobs continue; the
 full project remains incomplete.
+
+
+Full lineage BUSCO execution and raw-output audit completed: 501 fungal entries,
+998,331 marker calls and 943,724 protein-hit rows. The versioned quality table
+retains all 526 entries and outgroup broad-panel scores. All exported artifact
+checksums match the audit receipt. Six panel-specific summaries preserve their
+distinct denominators; no universal cutoff or biological-loss claim is applied.
+See docs/lineage-completeness-workflow.md and metadata/lineage_busco_audit_receipt.json.
+
+
+Full FreeRate optimization, automatic audit/comparison and independent raw-output
+readback completed: 1,152 refits across all 288 source fits; final comparisons
+contain 66,284 sites and 36,488 branches. All 288 selected refits improve the
+original FreeRate likelihood and remove the earlier seven >0.1 Gamma deficits.
+Model sensitivity remains conditional; this is not biological model adequacy or
+an acceleration result. See docs/site-specific-evolutionary-rates.md and
+metadata/esmfold_optimized_rate_comparison_readback.json.

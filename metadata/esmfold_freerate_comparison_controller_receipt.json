@@ -1,0 +1,41 @@
+{
+  "status": "complete_freerate_comparison_handoff",
+  "config_sha256": "39e6636d821c916f36a695286d141c935de076ff37f41b886f3bb8c5898c77ca",
+  "script_sha256": "a307932a88231aab1ec51b887b7788da9878f103a670822aaa32ba9beb0200d2",
+  "producer_receipt_sha256": "d9fffbd725293dc9cfa6c48ad79d45793163ecc66711da17daf815b8ca197e3c",
+  "audit_receipt_sha256": "73931dba058583feb1b718bf7f4fa83647baf9071d159cf0e0cf1081097d9289",
+  "comparison_receipt_sha256": "47cfaf5754a25746307e9641b591e39d622283606fad28d473fcd37554d6e463",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_freerate_optimization.py",
+      "--diagnostics",
+      "results/phylogeny/freerate-optimization-all-esmfold-v1",
+      "--free",
+      "results/phylogeny/paired-site-rates-freerate-esmfold-v1",
+      "--output",
+      "results/phylogeny/freerate-optimization-all-audit-esmfold-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_site_rate_heterogeneity.py",
+      "--gamma",
+      "results/phylogeny/paired-site-rates-esmfold-v2",
+      "--gamma-audit",
+      "results/phylogeny/paired-site-rates-audit-esmfold-v2",
+      "--free",
+      "results/phylogeny/paired-site-rates-freerate-esmfold-v1",
+      "--free-audit",
+      "results/phylogeny/paired-site-rates-freerate-audit-esmfold-v1",
+      "--inputs",
+      "results/phylogeny/paired-inputs-esmfold-partial-v1",
+      "--optimization",
+      "results/phylogeny/freerate-optimization-all-esmfold-v1",
+      "--optimization-audit",
+      "results/phylogeny/freerate-optimization-all-audit-esmfold-v1",
+      "--output",
+      "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-v1"
+    ]
+  ],
+  "interpretation": "Execution and audit completed; independent selected-fit comparison readback remains a separate step."
+}
