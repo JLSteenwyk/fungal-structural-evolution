@@ -858,3 +858,15 @@ reserves four one-CPU workers, 8 GB memory, 20 GB disk and 1–24 hours on the
 existing host. The original fits consumed 1.042 summed worker-hours; repeated
 tighter fits and fresh readbacks justify the larger allowance. The launch receipt
 is only an initial completed-case/process observation, not full-run completion.
+
+### Source-quality caveat identified after the numerical diagnostics
+
+The audited FCS/CDS overlap mapping identifies 29 completed genus-codon cases
+containing N. cerealis (F610337) marker proteins whose coding regions overlap
+publisher EXCLUDE intervals. These cases are listed in
+`metadata/fcs_codon_case_exposure.tsv`. Several high-distance examples involve
+this taxon, so a peaked branch likelihood does not establish a biological
+acceleration signal. Source/organism identity review and explicit exclusion
+sensitivities are required before biological interpretation. Existing numerical
+fits and profiles remain preserved as baseline diagnostics; their likelihood
+readback checks do not resolve this source-quality concern.

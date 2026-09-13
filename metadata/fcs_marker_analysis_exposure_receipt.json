@@ -1,0 +1,43 @@
+{
+  "status": "complete_exact_flagged_marker_input_exposure_trace",
+  "mapping_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+  "audit_receipt_sha256": "61d30bf005ca6a531a1ba22a9062319e9466d5e5f73f2cda01b7feee6bc904d6",
+  "source_fit_receipt_sha256": "4fcd151f7c23ec69c2fb03d1c35e6bd53c78a7f4ac5eefc8de8e64cdc3724187",
+  "structural_sources": {
+    "esmfold_earlier": {
+      "snapshot_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+      "input_receipt_sha256": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b"
+    },
+    "esmfold_combined": {
+      "snapshot_receipt_sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+      "input_receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261"
+    },
+    "alphafold_expanded": {
+      "snapshot_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+      "input_receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4"
+    }
+  },
+  "script_sha256": "efbbf27b94d30796f1a64b6ad64f0990db3786867da559ed1db94f035f8de7c1",
+  "flagged_marker_taxon_links": 54,
+  "structural_ready_alignment_exposure_counts": {
+    "esmfold_earlier": {
+      "F610337": 16
+    },
+    "esmfold_combined": {
+      "F610337": 16,
+      "F27376": 3
+    },
+    "alphafold_expanded": {}
+  },
+  "codon_case_exposures": 29,
+  "codon_exposure_by_taxon": {
+    "F610337": 29
+  },
+  "artifacts": {
+    "structural_dataset_exposure.tsv": "7af3e208366fcb2d21f59d8cece8e2519d72d83d1f4d1deb371ff78fd1b56338",
+    "codon_case_exposure.tsv": "d60f9f1d813e78f2a880ae76b75c96431ade083b3b1d5a6eaa2dc80d9c592c06"
+  },
+  "interpretation": "Protein-ID/sequence-hash joins verify flagged marker identities in structural snapshots; exact taxon presence checked in ready structural alignments and completed codon fits. Region overlap is a review signal, not confirmed foreign origin. These inputs need source review and explicit exclusion sensitivities before biological claims; existing results are preserved and no running inputs changed.",
+  "full_receipt_path": "results/qc/fcs-marker-analysis-exposure-v1/receipt.json",
+  "full_receipt_sha256": "10a0d692108ed2ece64431e28c205192bd7ba3e37fc928020b593b49971bd1d1"
+}

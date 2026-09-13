@@ -81,3 +81,64 @@ Mapping flagged genomic intervals onto CDSs, retained genes and structural
 markers is the next step. It will establish which downstream comparisons need
 contamination-related sensitivity analysis, without treating every assembly-level
 flag as affecting every protein from that assembly.
+
+## Coding-region overlaps and affected analyses
+
+The full mapping and independent audit are complete for all 86 assemblies with
+validated flagged regions. The audit enumerated every interval against the
+4,479,554 annotated CDS feature rows in those assemblies, finding 28,150
+region/CDS-feature intersections involving 11,092 distinct taxon–protein IDs.
+Of those proteins, 11,062 are retained gene representatives. Counts include
+review-only flags and are not confirmed contaminant-gene counts. Intersections
+use CDS segments, not complete gene spans across introns. Per-protein overlap
+lengths union overlapping segments separately by FCS action and sequence.
+All flagged sequence IDs were represented in the GFF files in this dataset.
+
+The original 59,840 marker–taxon observations include 54 with coding overlap:
+
+| Taxon | Marker observations | FCS action |
+|---|---:|---|
+| Naganishia cerealis (F610337) | 44 | EXCLUDE |
+| Acaulospora colombiana (F27376) | 9 | EXCLUDE |
+| Amphimedon queenslandica (O400682) | 1 | REVIEW |
+
+The N. cerealis report assigns the affected sequences to the FCS budding-yeast
+division. This is a consequential source-quality hypothesis, not independent
+confirmation that those proteins are contaminants. Some large codon-distance
+estimates involve this taxon; biological acceleration interpretation must await
+source review and exclusion sensitivities. Taxonomic misidentification and
+report/database errors remain possible alternatives to mixed-source assembly.
+
+Exact protein-ID and sequence-hash joins locate affected observations in frozen
+structural snapshots, and hashed FASTAs establish their actual use:
+
+- Earlier ESMFold paired alignments: 16 N. cerealis marker observations.
+- Combined ESMFold paired alignments: the same 16 plus three A. colombiana
+  observations, 19 in total.
+- Expanded AlphaFold paired alignments: none of these 54 observations present.
+- Completed genus MG94 inputs: 29 cases include affected N. cerealis markers.
+
+The first ESMFold sequence–structure coupling results therefore also require
+sensitivity analysis for these observations. The absence of this particular
+exposure in the AlphaFold inputs does not establish absence of other quality
+problems. Baseline results and running inputs remain unchanged. These flags will
+support explicit comparison with sensitivity datasets and should not be silently
+converted into whole-species or whole-protein-family exclusions.
+
+The independent checker verifies all positive and negative region/CDS
+intersections using array comparisons, annotation protein IDs, interval union
+lengths, representative decisions and all marker-overlap joins. Source GFF hashes
+and embedded assembly-version headers are checked. Boundary checks cover inclusive
+endpoints, adjacent non-overlap, intron-only overlap and duplicate segment unions.
+This stage does not yet map the exact affected coding bases onto structural
+residues, confirm foreign origin, or refit affected phylogenies.
+
+```bash
+python scripts/map_fcs_regions_to_cds.py --fcs results/qc/selected-assembly-fcs-audit-v1 --annotations metadata/annotation_download_receipts.json --representatives metadata/gene_representatives_receipt.json --markers results/phylogeny/markers-full-v1/protein_mapping.tsv --marker-index results/cds/marker-source-index-v1 --output results/qc/fcs-cds-overlap-v1
+python scripts/audit_fcs_cds_overlap.py --mapping results/qc/fcs-cds-overlap-v1 --fcs results/qc/selected-assembly-fcs-audit-v1 --annotations metadata/annotation_download_receipts.json --representatives metadata/gene_representatives_receipt.json --markers results/phylogeny/markers-full-v1/protein_mapping.tsv --output results/qc/fcs-cds-overlap-audit-v1
+python scripts/trace_fcs_marker_analysis_exposure.py --mapping results/qc/fcs-cds-overlap-v1 --audit results/qc/fcs-cds-overlap-audit-v1 --fits results/cds/genus-mg94-diagnostics-v3 --output results/qc/fcs-marker-analysis-exposure-v1
+```
+
+Full intersection and review tables remain in these result directories; compact
+receipts, the 86-taxon mapping summary, 54 affected marker observations and
+analysis-exposure tables are versioned under `metadata/fcs_*`.

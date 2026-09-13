@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_region_cds_intersection_and_protein_marker_join_audit",
+  "mapping_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+  "script_sha256": "08b777261ec11ea4a512b18a7f49475ef3256a962c3b531623bf3d9dec024728",
+  "taxa_scanned": 86,
+  "cds_feature_rows_scanned": 4479554,
+  "regions": 4039,
+  "overlap_feature_rows": 28150,
+  "overlapping_proteins": 11092,
+  "marker_links": 59840,
+  "interpretation": "All exact reported intervals independently tested against all annotated CDS segments on the matching sequence; full positive/negative overlap enumeration, source field identities, region/protein union counts and marker overlap joins checked. Does not establish biological contamination or resolve sequences absent from GFF.",
+  "full_receipt_path": "results/qc/fcs-cds-overlap-audit-v1/receipt.json",
+  "full_receipt_sha256": "61d30bf005ca6a531a1ba22a9062319e9466d5e5f73f2cda01b7feee6bc904d6"
+}

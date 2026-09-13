@@ -1,0 +1,34 @@
+{
+  "status": "complete_fcs_cds_marker_overlap_mapping_pending_independent_audit",
+  "source_receipts": {
+    "fcs": "02509e1bd06efb4a636f806ed6d28952068b077ca24b8d254a15d229d4b0e1c9",
+    "annotations": "821db828d32f095f30e1f5bbed17776ac2a6e9e63fbcd21a88bb2fbcbe9ab96d",
+    "representatives": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "marker_index": "bf23c653305d5e702c9bf1581bd79f4ff301424454753b7d4d5270d701ce2060"
+  },
+  "marker_mapping_sha256": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+  "script_sha256": "fadf0872455261a8c036ade2d964eb6d515680b0bb9857b29ebc61111d14e1ee",
+  "gff_attribute_parser_sha256": "6f616f0a4fece5880ac09366cba96c376f3d418f97a0a55958d81a44cd2d29d6",
+  "flagged_taxa_scanned": 86,
+  "regions": 4039,
+  "cds_feature_overlap_rows": 28150,
+  "overlapping_proteins": 11092,
+  "overlapping_selected_representatives": 11062,
+  "marker_links": 59840,
+  "marker_overlap_status_counts": {
+    "no_regions_reported_by_fcs": 49632,
+    "no_annotated_cds_overlap_with_reported_regions": 9458,
+    "cds_overlaps_fcs_region": 54,
+    "fcs_report_unresolved_or_external": 696
+  },
+  "artifacts": {
+    "cds_feature_overlaps.tsv": "050b21d81fa95b364b9a41a22ecebcf2d5d3109d9e27d9d61e523433812f74cc",
+    "region_annotation_review.tsv": "4eae550c14d3b7faf25bd0c6896ae1278beae7d893397e63c55e3c6351e5742d",
+    "protein_overlap_review.tsv": "baf7e5333584f72177b1da4c1a39ab2b5ba6997ab0581ff9f2cba5da6b116554",
+    "taxon_mapping_summary.tsv": "33391e14531c1e9b8d1d1731d5af277dc59798c383c235b04f0799e22283aeb8",
+    "marker_overlap_review.tsv": "c2ccd3623a581445954faa85b6b50ff442904c81b2cc4ad0a8d45a77094eb173"
+  },
+  "interpretation": "Exact CDS-segment intersections with FCS report intervals. Overlap is a review flag, not confirmed foreign origin. No intron-only overlap is counted as coding overlap; duplicate/overlapping CDS features are unioned for per-protein action summaries. Unrepresented GFF sequences and missing reports stay unresolved. No deletion, structural residue localization or recomputed phylogeny.",
+  "full_receipt_path": "results/qc/fcs-cds-overlap-v1/receipt.json",
+  "full_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70"
+}

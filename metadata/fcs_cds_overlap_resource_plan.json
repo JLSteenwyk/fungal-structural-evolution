@@ -1,0 +1,14 @@
+{
+  "stage": "FCS interval to annotated CDS and retained marker mapping",
+  "taxa_with_flagged_regions": 86,
+  "regions": 4039,
+  "workers": 1,
+  "memory_allowance_gb": 4,
+  "output_allowance_gb": 1,
+  "planning_minutes": [
+    1,
+    30
+  ],
+  "scope": "Read the exact GFF annotations of every taxon with validated FCS intervals; intersect CDS segments and preserve unresolved sequence IDs. Join exact protein IDs to representative decisions and every original marker link.",
+  "cost": "Existing local files and host; no new charges"
+}

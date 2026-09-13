@@ -2322,3 +2322,18 @@ checks passed. No genomes or proteins were removed. CDS/structural-marker overla
 and biological review are the next dependencies; these observations do not
 establish contamination-free assemblies or confirmed contamination in every
 protein. See `docs/assembly-quality-workflow.md` and `metadata/selected_assembly_fcs_*`.
+
+### Contamination-report coding overlaps and analysis exposure audited
+
+All 4,039 validated FCS regions were intersected with 4,479,554 CDS feature rows
+across 86 assemblies and independently audited. The 28,150 intersections involve
+11,092 annotated proteins (11,062 retained representatives). Fifty-four original
+marker observations overlap flagged coding regions: 44 N. cerealis, nine
+A. colombiana and one review-only A. queenslandica observation. Exact identity and
+input-presence checks locate 16 exposures in the earlier ESMFold paired data,
+19 in combined ESMFold, none of these 54 in expanded AlphaFold paired data, and
+29 affected N. cerealis genus-codon cases. Source-quality review and explicit
+exclusion sensitivities now take priority over interpreting these affected inputs
+as biological acceleration. Baseline results are retained; no running input or
+inference script was changed. Details and reproducible commands are in
+`docs/assembly-quality-workflow.md`.
