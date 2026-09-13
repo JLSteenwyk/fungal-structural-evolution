@@ -973,3 +973,17 @@ This narrows the defensible generalization of the benchmark and motivates
 broader homolog/reference evaluation. The prior turn completed direct geometry
 comparisons and weighting summaries; this turn completes full acquisition and
 expands mapping. Overall research scope remains active and incomplete.
+
+
+### Experimental starting-model and chronology review completed
+
+Added entry-level dependency flags for all 1,032 experimental references:
+two explicitly list AlphaFold starting models, five other computational models,
+548 only experimental starting models, and 477 have no starting-model annotation.
+Preserved and verified all source lists and 2,843 entity/model date comparisons.
+Target-chain attribution and training/template independence remain unresolved,
+including for structures released after prediction creation. Full CA mapping is
+confirmed running; phylogenetic stages still lack final completion receipts.
+The preceding turn completed full coordinate acquisition and taxon coverage;
+this turn contributes concrete evidence needed for circularity controls. The
+complete project remains active and incomplete.

@@ -358,3 +358,37 @@ a zero-coverage dictionary while rendering, inflating its covered-taxon total.
 It is explicitly marked `INVALIDATED.json` in its local output. The published v2
 uses the frozen 526-entry analysis manifest and checks coverage against nonzero
 rows and distinct links; no v1 numbers are used downstream.
+
+
+## Starting-model dependencies and prediction chronology
+
+Reviewed all 1,032 experimental entries against their frozen method-specific
+metadata. Two entries explicitly list AlphaFold starting models (8RAM, 8RAP),
+five list other computational models (4L9P, 4MBG: PHYRE; 9E2W, 9E2X, 9E2Y:
+unspecified Other), 548 report only experimental starting models, and 477 lack
+starting-model annotations. The raw lists are preserved alongside review flags.
+These are entry-level annotations and cannot yet be attributed to the exact
+matched target chains. Missing annotations are not evidence that no prediction
+was used, and experimental starting models can have their own dependencies.
+The authoritative source fields are the frozen RCSB entry responses and
+`pdbx_initial_refinement_model` records, including the entry response for
+[8RAM](https://data.rcsb.org/rest/v1/core/entry/8RAM).
+
+The experimental-only exact sequence inventory contains 2,843 entity/model rows
+(the full inventory also includes seven rows in four integrative entries).
+Of these, 2,315 entries were initially released before the linked prediction's
+recorded creation date and 528 after it. Dates are stored for each link.
+Prediction creation dates are not training or template cutoffs. Later releases
+do not establish absence of earlier homologs, sequences, alternate structures,
+or related templates. Every reference retains unresolved training independence.
+
+All 1,032 source starting-model lists and the ordering of all 2,843 date pairs
+passed readback, along with exact identities of the seven flagged entries.
+This review adds concrete dependency evidence; it does not complete chain-level
+methods review or establish an independent accuracy test. The current partial
+geometry results remain descriptive and should consume these flags during
+subsequent benchmark selection and sensitivity analyses.
+
+```bash
+python scripts/review_experimental_model_provenance.py --references results/experimental_structures/reference-metadata-v2 --predictions results/structural_markers/gdm-expanded-v1 --output results/experimental_structures/model-provenance-review-v1
+```

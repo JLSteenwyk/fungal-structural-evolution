@@ -1,0 +1,23 @@
+{
+  "status": "complete_entry_starting_model_and_prediction_chronology_review",
+  "reference_receipt_sha256": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+  "prediction_receipt_sha256": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+  "script_sha256": "f682c0f9a4c033cc1faecbd958205f97bc30f53e6d73663bd9d9b60720a0746f",
+  "experimental_entries": 1032,
+  "entry_review_counts": {
+    "only_experimental_starting_models_reported_not_independence_proof": 548,
+    "starting_model_annotation_missing": 477,
+    "other_computational_starting_model_entry_level": 5,
+    "explicit_AlphaFold_starting_model_entry_level": 2
+  },
+  "entity_model_rows": 2843,
+  "entity_model_chronology_counts": {
+    "released_after_prediction_creation": 528,
+    "released_before_prediction_creation": 2315
+  },
+  "interpretation": "Starting models describe whole entries, not necessarily the exact matched target chain. Missing annotations do not establish absence of prediction-assisted refinement. Reported experimental starting models may themselves have dependencies. Prediction creation dates are not training/template cutoffs; later entry releases do not prove unseen sequences, structures or homologs. All references retain unresolved independence.",
+  "artifacts": {
+    "entry_starting_model_review.tsv": "c49dbc30373a2cdcda6005be17dfcf47fb173dfeaef410c090f0475c3fa68af4",
+    "entity_prediction_chronology.tsv": "3a0575170d5b4ca4d4b3cd061f7cf0b97a23456eaf4881781483ef547f526362"
+  }
+}
