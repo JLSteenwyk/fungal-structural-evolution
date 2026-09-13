@@ -1,0 +1,32 @@
+{
+  "producer_pid": 595825,
+  "producer_start_ticks": "179704738",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-partial-v1",
+  "fits": "results/phylogeny/paired-marker-fits-esmfold-partial-v1",
+  "resampling": "results/phylogeny/paired-resampling-esmfold-v1",
+  "audit_output": "results/phylogeny/paired-resampling-audit-esmfold-v1",
+  "controller_output": "results/phylogeny/paired-resampling-audit-controller-esmfold-v1",
+  "pinned_files": {
+    "scripts/advance_paired_resampling_audit.py": "936cc7074d533ba0f443f3378b92e53d16048a384ce270e3caafaf3a2b9ece49",
+    "scripts/summarize_paired_resampling.py": "f637b7ba40d3b079b41f34f483d276d7f260fd993d890f53a1486fe55652fb61",
+    "scripts/run_paired_branch_resampling.py": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/phylogeny/paired-resampling-esmfold-v1/config.json": "2e39a774b7066e3ac5e932ccd671a8743f2548d2f9dee74240bb707af4fed720",
+    "results/phylogeny/paired-inputs-esmfold-partial-v1/receipt.json": "5f05242a7a9b351e3315216578c9b2bd7e343972a00a753af740deef5f689c7b",
+    "results/phylogeny/paired-marker-fits-esmfold-partial-v1/receipt.json": "e4312a32395194fee6603393bef1110defbf86e8703da3d4ae76b8f9661e8938"
+  },
+  "resource_plan": {
+    "cpu_workers": 1,
+    "memory_gb": 8,
+    "disk_gb": 1,
+    "estimated_runtime_hours": [
+      1,
+      12
+    ],
+    "basis": "Conservative estimate for checksum validation, reconstruction of both alignments and two fitted trees per estimable draw across 43200 draws. Existing authorized host; no paid resources."
+  }
+}

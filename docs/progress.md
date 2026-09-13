@@ -1500,3 +1500,18 @@ maximum tests. No model-adequacy conclusion follows from unavailable or nominal
 results. Calibration, multiplicity and further model sensitivities remain
 pending. Main long-running stages remain live; the overall goal stays active
 and incomplete.
+
+
+### Full local resampling audit queued automatically
+
+The 72-marker, 43,200-draw producer remains live. A controller now waits for
+its exact process identity to exit, requires its complete execution receipt,
+checks pinned configuration and code, and runs the full existing resampling
+auditor into a new immutable output. It does not restart or modify the producer.
+The audit reconstructs both alphabets from the sampled columns, checks artifact
+hashes and fixed-topology branch estimates, and retains unestimable draws.
+One CPU worker, 8 GB memory and 1 GB output are planned, with a conservative
+1–12 hour audit estimate on the existing host. Configuration is recorded in
+`metadata/esmfold_paired_resampling_audit_controller_config.json`.
+The controller compiled and entered the expected waiting state. The audit has
+not run yet; interval calibration and the overall research goal remain incomplete.
