@@ -1385,3 +1385,15 @@ readback, and the PNG was visually inspected. This follows the prior residue
 annotation audit and advances the reproducible benchmark figure deliverable.
 Larger geometry, fit, prediction and resampling processes remain live; the
 research goal remains active and incomplete.
+
+
+### Full accessibility audit queued behind verified live production
+
+After the preceding verified wait, production was confirmed live at PID 607025
+with 4,895 completed local-source entries. Added and launched a controller that
+waits for this specific producer, requires its final receipt and pinned inputs,
+and then audits all 5,121 models without partial mode. Runtime and resource
+estimates are recorded; the existing host is used. The controller is live and
+waiting, so full-audit completion is not yet claimed. This automates the next
+necessary validation step while broader analyses continue. The overall research
+goal remains active and incomplete.

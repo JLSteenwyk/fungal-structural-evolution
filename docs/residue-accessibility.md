@@ -155,3 +155,24 @@ The first production entry audit passed all 4,652 frozen completed models and
 is not full production completion. The checked model/receipt list is recorded
 in `metadata/esmfold_accessibility_audited_models.tsv`, with aggregate scope and
 provenance in `metadata/esmfold_accessibility_entry_audit_receipt.json`.
+
+
+## Automatic full-snapshot audit
+
+The full local-source audit is queued with
+`scripts/advance_accessibility_audit.py`. Its recorded producer PID and Linux
+start ticks distinguish the current calculation from any later PID reuse.
+The controller waits for that producer to exit, then requires its completion
+receipt and unchanged pinned configuration/code before launching the auditor
+without partial mode. A stopped producer without a receipt fails explicitly.
+The auditor then checks every entry and full completion counts; the controller
+records success only for a full-snapshot audit result.
+
+The resource estimate is one CPU, 4 GB RAM and 1 GB disk headroom, with 3–15
+minutes expected after production completes, based on the completed entry audit.
+The config is `metadata/esmfold_accessibility_audit_controller_config.json`.
+This is a queued validation stage, not evidence that full validation has passed.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/advance_accessibility_audit.py --config metadata/esmfold_accessibility_audit_controller_config.json
+```

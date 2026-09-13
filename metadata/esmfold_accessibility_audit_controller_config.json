@@ -1,0 +1,27 @@
+{
+  "producer_pid": 607025,
+  "producer_start_ticks": "179085182",
+  "assessment": "results/structural_annotations/accessibility-esmfold-v1",
+  "snapshot": "results/structural_markers/esmfold-partial-v1",
+  "audit_output": "results/structural_annotations/accessibility-esmfold-full-audit-v1",
+  "controller_output": "results/structural_annotations/accessibility-esmfold-audit-controller-v1",
+  "pinned_files": {
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/advance_accessibility_audit.py": "3cc22c8e28e7d5051817be46230bc8866e1a202b1bd9b44a1ec65dbf09228a26",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/structural_annotations/accessibility-esmfold-v1/config.json": "4ca90ca2b52e89fe3e18ed48ade89766ffa9804cfcb457d830ef2e97a4b6e868",
+    "results/structural_markers/esmfold-partial-v1/receipt.json": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5"
+  },
+  "resource_plan": {
+    "cpu_workers": 1,
+    "memory_gb": 4,
+    "disk_gb": 1,
+    "estimated_runtime_minutes": [
+      3,
+      15
+    ],
+    "basis": "Previous 4652-model atom-table audit completed in about four minutes; full input has 5121 models. Existing authorized host; no paid resources."
+  }
+}
