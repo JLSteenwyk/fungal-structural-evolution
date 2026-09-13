@@ -1,0 +1,45 @@
+{
+  "status": "complete_descriptive_experimental_prediction_agreement",
+  "source_receipts": {
+    "mapping": "1570013afe978a0fd8a63bfbf78c63dc38fe6e6bd5166954613947a328e59732",
+    "screen": "10dd1f1b9d85ee9925ed4b6d1b415b33f9fe3081c55ccdffbede15a2cc5b6dad",
+    "predictions": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+    "references": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378"
+  },
+  "script_sha256": "c3769bf6b81b5c9275fa13acbb8bca5c19ae650fbc531d935eaae9683210585b",
+  "geometry_helper_sha256": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+  "accepted_rows": 1803,
+  "excluded_rows": 96,
+  "threshold_summary": [
+    {
+      "predicted_plddt_cutoff": 0,
+      "accepted_chain_model_comparisons": 626,
+      "excluded_chain_model_comparisons": 7,
+      "distinct_predicted_proteins": 33,
+      "entries": 214,
+      "comparison_weighted_median_CA_RMSD_angstrom": 0.8997977832327579
+    },
+    {
+      "predicted_plddt_cutoff": 70,
+      "accepted_chain_model_comparisons": 617,
+      "excluded_chain_model_comparisons": 16,
+      "distinct_predicted_proteins": 32,
+      "entries": 214,
+      "comparison_weighted_median_CA_RMSD_angstrom": 0.8742646644427271
+    },
+    {
+      "predicted_plddt_cutoff": 90,
+      "accepted_chain_model_comparisons": 560,
+      "excluded_chain_model_comparisons": 73,
+      "distinct_predicted_proteins": 18,
+      "entries": 206,
+      "comparison_weighted_median_CA_RMSD_angstrom": 0.6309591856288073
+    }
+  ],
+  "independent_geometry_recalculations": 1803,
+  "interpretation": "Every experimental chain and deposited model retained; no best-agreement selection. Experimental B factors never used as pLDDT. Only predicted focal pLDDT thresholds, not six-residue or PAE filters. Coverage requires 50 CA and half full sequence. Chain/model-weighted summaries are descriptive and nonindependent; changing thresholds changes residues and sometimes cohort. Partial reference sampling, experimental quality/context, refinement/template overlap and prediction training independence remain unresolved. Agreement is not unbiased prediction accuracy or an evolutionary change estimate.",
+  "artifacts": {
+    "comparisons.tsv": "7305a8b146ac871e6b3bf7697ce80106b71cd4b9eb8bf0544b7a6d36c6460de1",
+    "exclusions.tsv": "b42333d548871d021040cd0fa3ecc01decb555ee2d956ccb7cec55c0c4eb9a74"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete_descriptive_protein_and_matched_cohort_summary",
+  "comparison_receipt_sha256": "c48bdb5ccd64763ebed4317349651788f82c9cc01615b661e94dac570ec1c10c",
+  "script_sha256": "154fffbc61de569215e04a8148325e27f89f6c67adf3e5ba7e41480e8938f613",
+  "unique_chain_model_targets": 633,
+  "threshold_grid_rows": 1899,
+  "equal_protein_median_of_within_protein_median_RMSD": {
+    "0": 3.2351574375783367,
+    "70": 1.8596277335301874,
+    "90": 0.7659773436305963
+  },
+  "matched_cohorts": [
+    {
+      "cutoff": 70,
+      "chain_model_comparisons": 617,
+      "distinct_predicted_proteins": 32,
+      "baseline_median_CA_RMSD_angstrom": 0.8924465776065926,
+      "filtered_median_CA_RMSD_angstrom": 0.8742646644427271,
+      "interpretation": "Identical chain/model cohort; residue subsets differ by predicted focal confidence. No causal accuracy improvement or independent samples implied."
+    },
+    {
+      "cutoff": 90,
+      "chain_model_comparisons": 560,
+      "distinct_predicted_proteins": 18,
+      "baseline_median_CA_RMSD_angstrom": 0.8273503140433573,
+      "filtered_median_CA_RMSD_angstrom": 0.6309591856288073,
+      "interpretation": "Identical chain/model cohort; residue subsets differ by predicted focal confidence. No causal accuracy improvement or independent samples implied."
+    }
+  ],
+  "interpretation": "Descriptive summaries of the retrieval-order partial snapshot. Equal-protein medians prevent prolific depositions from receiving extra between-protein weight but do not make proteins representative or independent. Each protein summary still weights all its chain/model observations equally. Experimental quality, context and training independence remain unresolved.",
+  "artifacts": {
+    "protein_summary.tsv": "e01611eeaf4f24d3b54d6af57d42f3aa3cdd7887b498a58a163bd9707c2bb3a8",
+    "matched_cohort_summary.tsv": "3dbe1c9cf1b687b08978dfd393374bd198bbd0e072da97501f12758c87eee8f1"
+  }
+}

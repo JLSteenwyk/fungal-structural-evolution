@@ -30,9 +30,12 @@ def main():
     selected=defaultdict(list)
     for r in read_table(a.screen/'sequence_correspondence.tsv'):
         if r['sequence_class']=='exact_full_sequence':selected[r['entity_id'].rsplit('_',1)[0]].append(r)
+    excluded=cc.get('excluded_entries',{})
+    if set(excluded)-set(selected):raise ValueError('Unknown deferred coordinate entries')
+    for entry in excluded:del selected[entry]
     if set(selected)!={r['entry_id'] for r in cr['results']}:raise ValueError('Coordinate entry set differs')
     a.output.mkdir(parents=True,exist_ok=True);lock=(a.output/'.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    config={'screen_receipt_sha256':sha(a.screen/'receipt.json'),'coordinate_receipt_sha256':sha(a.coordinates/'receipt.json'),'script_sha256':sha(Path(__file__)),'policy':'All deposited model IDs and selected struct_asym chains; no alternate-location selection; full sequence positions retained. CA status is a correspondence screen, not experimental quality.'}
+    config={'screen_receipt_sha256':sha(a.screen/'receipt.json'),'coordinate_receipt_sha256':sha(a.coordinates/'receipt.json'),'deferred_entries':excluded,'script_sha256':sha(Path(__file__)),'policy':'All deposited model IDs and selected struct_asym chains; no alternate-location selection; full sequence positions retained. CA status is a correspondence screen, not experimental quality.'}
     cp=a.output/'config.json'
     if cp.exists() and json.loads(cp.read_text())!=config:raise ValueError('Changed mapping configuration')
     cp.write_text(json.dumps(config,indent=2)+'\n');summaries=[]

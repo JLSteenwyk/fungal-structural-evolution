@@ -943,3 +943,19 @@ continues. Full experimental-coordinate acquisition also continues. Supported
 phylogenies and downstream branch/uncertainty integration remain pending; the
 full goal remains active. The preceding turn was substantive progress through
 metadata review, coordinate expansion and versioned results.
+
+
+### Initial experimental geometry comparisons completed
+
+Completed 1,803 accepted prediction–experimental-chain comparisons across the
+original 215-entry coordinate snapshot, with 96 explicit coverage exclusions.
+Every accepted geometry result agreed with independent rotation/distance
+recalculation. Summaries now report both comparison weighting and equal protein
+weighting, plus fixed chain/model cohorts across confidence thresholds. The
+unfiltered median is 0.900 Å per comparison versus 3.235 Å across protein medians,
+showing why deposition multiplicity must be accounted for. These remain partial,
+descriptive agreement results pending experimental quality/context/training
+review. Full coordinate retrieval and expanded phylogenetic/structural jobs
+continue. The preceding continuation completed the paired-site audit and started
+expanded AlphaFold geometry; both turns made concrete progress. The full goal
+remains active and incomplete.

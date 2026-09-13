@@ -264,3 +264,55 @@ only with identical pinned configuration. Tests cover archive identity and
 truncation, verified reuse without network access, integrative deferral, and
 rejection of a tampered source archive. Three tests passed. Quality review,
 expanded residue mapping and direct prediction comparisons remain pending.
+
+
+## Initial direct prediction–experiment agreement
+
+`compare_experimental_predictions.py` completed comparisons against all 215
+entries in the original audited CA snapshot: 633 unique target/chain/deposited
+model combinations, each evaluated at predicted focal pLDDT 0, 70 and 90.
+Experimental CA must be unambiguous and full occupancy; at least 50 matched
+positions and half the complete canonical sequence are required. All deposited
+models and chains are retained, with no choice based on prediction agreement.
+Experimental B factors are never interpreted as prediction confidence. This
+stage does not apply a six-residue context or PAE filter.
+
+There are 1,803 accepted and 96 excluded threshold rows. All 1,803 accepted
+comparisons passed a second geometry calculation using SciPy rotation and
+condensed distances, independent of the production geometry helper, at 1e-8
+relative/absolute tolerance. Predicted CA sequence hashes and coordinate files,
+experimental complete sequence grids and mapping receipts were verified.
+
+| Predicted pLDDT | Accepted comparisons | Proteins | Entries | Comparison-weighted median RMSD (Å) | Median of protein medians (Å) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 0 | 626 | 33 | 214 | 0.900 | 3.235 |
+| 70 | 617 | 32 | 214 | 0.874 | 1.860 |
+| 90 | 560 | 18 | 206 | 0.631 | 0.766 |
+
+The difference between weighting schemes is substantial. Per-protein summaries
+limit the influence of proteins with many deposited structures; neither summary
+makes the retrieval-order partial reference subset representative of fungi.
+Within each protein, its chain/model observations still receive equal weight.
+
+Matched-cohort summaries retain identical target/chain/model combinations at
+baseline and the higher threshold. For the 617 comparisons accepted at pLDDT 70,
+median RMSD is 0.892 Å before filtering and 0.874 Å after. For the 560 accepted at
+90, the corresponding values are 0.827 and 0.631 Å. These compare different
+residue subsets of the same chains and do not establish a causal improvement.
+The full 1,899-row threshold grid and coverage eligibility passed readback.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/compare_experimental_predictions.py --mapping results/experimental_structures/ca-mapping-partial-v1 --screen results/experimental_structures/sequence-screen-partial-v1 --predictions results/structural_markers/gdm-expanded-v1 --references results/experimental_structures/reference-metadata-v2 --output results/experimental_structures/prediction-agreement-partial-v1
+python scripts/summarize_experimental_agreement.py --comparisons results/experimental_structures/prediction-agreement-partial-v1 --output results/experimental_structures/prediction-agreement-summary-partial-v1
+```
+
+Resource planning reserved one CPU thread, 8 GB memory and 1 GB output with a
+0.05–2 hour estimate. No new services were used. Experimental quality, local
+reliability, complex/conformational context, refinement starting models and
+training/template overlap remain unresolved. These are descriptive agreement
+measurements, not an unbiased accuracy benchmark or evolutionary distances.
+
+The idle CA mapper now honors explicit excluded entries pinned in the coordinate
+retrieval configuration, permitting the full experimental-only expansion while
+retaining its four integrative deferrals. Unknown deferrals and mismatched entry
+universes are rejected. The two existing CA classification tests still pass.
