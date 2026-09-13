@@ -1,0 +1,31 @@
+{
+  "producer_pid": 1072649,
+  "producer_start_ticks": "181824664",
+  "assessment": "results/structural_annotations/accessibility-esmfold-ecology-v1",
+  "snapshot": "results/structural_markers/esmfold-ecology-complete-v1",
+  "controller_output": "results/structural_annotations/accessibility-ecology-audit-controller-v1",
+  "audit_output": "results/structural_annotations/accessibility-ecology-full-audit-v1",
+  "resource_plan": {
+    "cpus": 1,
+    "memory_allowance_gib": 8,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "scope": "All source-coordinate and residue-table hashes, identities, atom counts and ASA totals; no independent ASA integration."
+  },
+  "pinned_files": {
+    "scripts/advance_accessibility_audit.py": "3cc22c8e28e7d5051817be46230bc8866e1a202b1bd9b44a1ec65dbf09228a26",
+    "scripts/annotate_predicted_accessibility.py": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "results/structural_annotations/accessibility-esmfold-ecology-v1/config.json": "c829468228cdfe24f17de4be2856cc07c71fa4ac29b4c9d36755292067b59cbc",
+    "results/structural_markers/esmfold-ecology-complete-v1/receipt.json": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62"
+  }
+}

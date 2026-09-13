@@ -2007,3 +2007,19 @@ and directional PAE filtering. One CPU worker, 24 GB memory allowance, 10 GB
 output headroom; 2–48 hours is a planning scenario. This will benchmark combined
 alphabet paths against coordinate changes after supported paired fits complete.
 Full numeric/output audit and path comparison remain pending.
+
+
+Follow-on accessibility calculation completed for all 4,252 models and
+1,342,046 residues; its pinned full source audit is running. Queued paired-site
+projection and two-reference normalization behind that exact audit controller,
+with 17 pinned inputs/dependencies and fresh immutable outputs. The controller
+requires a complete matching full audit before proceeding.
+
+Started accessibility for all 675 ecology-cohort models / 212,983 residues, with
+the same software, radii, 960 sphere points and 1.4-A probe as the follow-on cohort.
+All method configuration fields matched after excluding snapshot and size fields.
+Four CPU workers, 8 GiB planning memory and 2 GiB output allowance; .1–3 hours is
+a planning range. A pinned full-audit controller is queued. Combined accessibility
+integration, independent projected-row verification and controlled surface/core
+evolutionary analyses remain pending. Predicted isolated-chain exposure is not
+experimental accessibility or evidence of a binding interface.
