@@ -1,0 +1,13 @@
+{
+  "status": "pinned_upstream_mg94_site_normalization_source",
+  "upstream_commit": "42a3fd041399a17b9bc9ccb64f31f2a2fb764972",
+  "upstream_url": "https://raw.githubusercontent.com/veg/hyphy-analyses/42a3fd041399a17b9bc9ccb64f31f2a2fb764972/FitMG94/FitMG94.bf",
+  "upstream_sha256": "d03b04d93e78e514b7b9005f1e78b371b73e96e44866e108b449be8c4c13e942",
+  "installed_version_source_genetic_code_sha256": "fbdf7f36e5e8aa68d51bd1645ba8f26ab1b535fbc6d2e42e2530579fbdc22e83",
+  "formula": {
+    "dS": "synonymous_component * (S + NS) / S",
+    "dN": "nonsynonymous_component * (S + NS) / NS"
+  },
+  "opportunities": "S and NS are equilibrium-codon-frequency-weighted expected site counts from ComputePairwiseDifferencesAndExpectedSites(code, {}). Defaults weight alternative nucleotide changes equally and exclude stop outcomes from synonymous/nonsynonymous numerators while retaining the alternative-nucleotide normalization denominator.",
+  "scope": "Source review only. Normalized dS/dN tables and independent numerical normalization checks are not yet produced. This does not introduce a new fitted model or establish saturation/selection eligibility."
+}

@@ -347,3 +347,35 @@ four source-receipt hashes were verified. This provides a full grid/character
 readback with sampled numerical geometry validation, not independent numerical
 recomputation of every accepted pair. Receipt:
 `metadata/gdm_expanded_paired_geometry_audit_receipt.json`.
+
+
+## Combined ESMFold coordinate comparisons
+
+Direct paired-site geometry is complete for the combined frozen ESMFold cohort:
+89 markers, 686,583 accepted taxon pairs and 17,448 coverage exclusions, spanning
+all 704,031 possible within-marker pairs. Full readback verified pair identities,
+paired AA/3Di masks, coverage eligibility, dimensions and observed character
+differences. Independent SciPy rotation/distance calculations and direct
+bidirectional PAE indexing matched one SHA256-selected pair per marker (89
+numerical checks). This is a full pair-grid readback plus sampled numerical
+geometry validation, not a numerical recomputation of all 686,583 comparisons.
+
+The output is `results/structural_comparisons/paired-site-esmfold-combined-v1`;
+the independent audit is `paired-site-esmfold-combined-audit-v1`. Source lineage
+is pinned to the combined paired inputs, residue-mapping snapshot and PAE union.
+The resource plan and complete/audit receipts are versioned under
+`metadata/esmfold_combined_geometry_*`. Supported branch fits for this cohort
+remain running; fitted-path benchmarking is still pending their completion and
+full fit audit. Direct distances alone do not establish branch-specific rates,
+physical additivity or accelerated structural evolution.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geometry.py \
+  --comparisons results/structural_comparisons/paired-site-esmfold-combined-v1 \
+  --inputs results/phylogeny/paired-inputs-esmfold-combined-v1 \
+  --snapshot results/structural_markers/esmfold-combined-frozen-v1 \
+  --pae results/structural_pae/esmfold-combined-v1 \
+  --output results/structural_comparisons/paired-site-esmfold-combined-audit-v1
+```
+
+Use a new immutable output path for a rerun.

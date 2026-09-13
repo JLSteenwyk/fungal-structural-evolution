@@ -2253,3 +2253,11 @@ and exact audited input topologies. Full warning review retains 33 saturated-
 distance, 53 boundary, 83 NNI-convergence and two high-gap cases; categories
 overlap. Memory warnings match exactly all 505 quartet cases. Codon-specific
 saturation, biological eligibility and uncertainty propagation remain pending.
+
+
+Combined ESMFold direct geometry and readback are complete: all 704,031
+within-marker pair records checked (686,583 accepted, 17,448 excluded), plus
+89 independently recomputed geometry/PAE examples selected by hash. The 89-marker
+paired branch fits remain running, so fitted-path benchmarking remains pending.
+Also pinned upstream FitMG94's equilibrium-opportunity normalization formula
+for dS/dN; this source review does not yet produce normalized divergence tables.

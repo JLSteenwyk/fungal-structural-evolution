@@ -638,3 +638,30 @@ Codon-specific saturation, recombination, alignment/gene-copy sensitivity,
 component normalization, optimization sensitivity and propagation of topology
 uncertainty still precede selection inference. Completion of these execution
 and readback stages does not establish selection eligibility.
+
+
+### Pinned site-normalization definition
+
+The upstream standalone FitMG94 analysis includes a normalization absent from
+the older test-support fitter used for our completed diagnostics. It computes
+synonymous and nonsynonymous expected-site opportunities S and NS, weighted by
+the fitted equilibrium codon frequencies, then reports:
+
+- dS = synonymous branch component × (S + NS) / S.
+- dN = nonsynonymous branch component × (S + NS) / NS.
+
+The [pinned upstream implementation](https://github.com/veg/hyphy-analyses/blob/42a3fd041399a17b9bc9ccb64f31f2a2fb764972/FitMG94/FitMG94.bf#L455)
+uses `ComputePairwiseDifferencesAndExpectedSites(code, {})`. In the installed
+HyPhy 2.5.101 helper, those defaults weight alternative nucleotide changes
+equally; stop outcomes do not contribute to the S/NS numerators, while the
+alternative-nucleotide denominator is retained. These are explicit upstream
+counting conventions, not a claim that all possible dS definitions coincide.
+
+Source files and hashes are archived in
+`results/environments/hyphy-mg94-normalization-source-v1` and
+`metadata/hyphy_mg94_normalization_source.json`. The downloaded branch tip was
+verified against pinned commit 42a3fd041399a17b9bc9ccb64f31f2a2fb764972. No fitted
+outputs or installed libraries were changed. The next step is to compute this
+normalization from the saved fits, independently verify opportunities and
+scaling under both genetic codes, then perform codon-divergence/saturation
+reviews. Raw synonymous components should not yet be labeled conventional dS.

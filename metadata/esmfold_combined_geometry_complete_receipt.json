@@ -1,0 +1,27 @@
+{
+  "status": "complete_paired_site_geometry",
+  "markers": 89,
+  "accepted_taxon_pairs": 686583,
+  "excluded_taxon_pairs": 17448,
+  "source_receipts": {
+    "inputs": {
+      "path": "results/phylogeny/paired-inputs-esmfold-combined-v1",
+      "sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/esmfold-combined-frozen-v1",
+      "sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879"
+    },
+    "pae": {
+      "path": "results/structural_pae/esmfold-combined-v1",
+      "sha256": "e71277ba0ee247ecf18f15ffb596df3484d2bca1629cf8d36d1ad4c36a85b2d5"
+    }
+  },
+  "script_sha256": "3dd4aaf7e49813d18b8bc89345b74a1597ec62effe3f51a07d6f7ad779a66a49",
+  "geometry_helper_sha256": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+  "interpretation": "Direct geometry on the exact jointly observed paired AA/3Di alignment sites. Inputs require native valid states, six-residue pLDDT>=70 and context PAE<=10. Additional local-distance pairs require both directional PAE<=10 in both models. No fitted tree, branch rates or uncertainty are claimed by this precomputation. Pairs share taxa, sites and prediction sources; coverage exclusions remain explicit.",
+  "artifacts": {
+    "paired_site_geometry.tsv": "95f35106a6d736268938d1c23d5a3ce8264af61b36c95fc0bebf1f57a815bc40",
+    "coverage_exclusions.tsv": "ece65e97b8edb0b1c20701a5e2ca015bdec855a50c8314e02bfb2eea6a088856"
+  }
+}
