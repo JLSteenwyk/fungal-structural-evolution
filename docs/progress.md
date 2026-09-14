@@ -2451,3 +2451,17 @@ interpolation and NumPy. Largest absolute median-RSA changes are 0.03954/0.03967
 (Tien/Miller) earlier and 0.01856/0.04695 combined. Extant covariate shifts are
 descriptive and do not establish robustness of the pending rate/coupling refits.
 Receipts and full marker summaries: metadata/*fcs_site_exposure*.
+
+Queued complete changed-marker rate/exposure continuations for both FCS
+sensitivity cohorts. Each eleven-stage controller waits for its exact live
+fit-audit/geometry parent, verifies completion and source pins, then performs
+Gamma4 and FreeRate exports/audits, all-fit four-start optimization checks,
+selected-fit comparison/readback, retained-taxon parsimony/exposure summaries
+and analysis-frame construction. 384 likelihood fits are planned for earlier
+ESMFold (16 markers), 432 for combined (18 markers). Existing resources only,
+four single-thread workers/2 GB each per inference stage; fresh 64 GiB memory
+and 20 GiB disk headroom gates. Both preflights and live wait states verified.
+Controllers PID 3786355/session 6692 and PID 3786372/session 76128; revalidate
+before any restart. Full configurations, commands, source/dependency hashes
+and resource estimates are versioned under metadata/fcs_rate_analysis_*.
+Merging unchanged baseline markers and re-estimating coupling remain pending.

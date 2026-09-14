@@ -1,0 +1,312 @@
+{
+  "parent_pid": 3714215,
+  "parent_start_ticks": "182852784",
+  "parent_command": [
+    "python",
+    "scripts/advance_paired_fit_benchmark.py",
+    "--config",
+    "metadata/paired_fit_benchmark_esmfold_fcs_sensitivity_config.json"
+  ],
+  "parent_config": "metadata/paired_fit_benchmark_esmfold_fcs_sensitivity_config.json",
+  "parent_receipt": "results/phylogeny/paired-fit-benchmark-controller-esmfold-fcs-sensitivity-v1/receipt.json",
+  "markers": 16,
+  "output": "results/phylogeny/fcs-rate-analysis-controller-esmfold-v1",
+  "resources": {
+    "workers_per_fitting_stage": 4,
+    "threads_per_fit": 1,
+    "memory_per_fit_gb": 2,
+    "minimum_available_memory_bytes": 68719476736,
+    "minimum_free_disk_bytes": 21474836480,
+    "total_likelihood_fits": 384,
+    "planning_wall_hours_after_parent_completion": [
+      1,
+      48
+    ],
+    "basis": "Two rate-model exports plus four FreeRate optimization checks per marker/model combination; same procedure as completed baseline analysis. Conservative planning range, not a measured timing prediction. Stages execute serially; readbacks also require temporary Python table memory.",
+    "paid_resources": false
+  },
+  "stages": [
+    {
+      "name": "G4",
+      "command": [
+        "scripts/estimate_paired_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-fcs-sensitivity-v1",
+        "--heterogeneity",
+        "G4",
+        "--output",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_paired_site_rate_exports",
+      "expected_counts": {
+        "markers": 16,
+        "fits": 64,
+        "site_rate_rows": 9968
+      }
+    },
+    {
+      "name": "G4_audit",
+      "command": [
+        "scripts/audit_paired_site_rates.py",
+        "--rates",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-site-rates-audit-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-audit-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "passed_full_site_rate_output_audit",
+      "expected_counts": {
+        "markers": 16,
+        "fits": 64
+      }
+    },
+    {
+      "name": "R4",
+      "command": [
+        "scripts/estimate_paired_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-fcs-sensitivity-v1",
+        "--heterogeneity",
+        "R4",
+        "--output",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_paired_site_rate_exports",
+      "expected_counts": {
+        "markers": 16,
+        "fits": 64,
+        "site_rate_rows": 9968
+      }
+    },
+    {
+      "name": "R4_audit",
+      "command": [
+        "scripts/audit_paired_site_rates.py",
+        "--rates",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-freerate-audit-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "passed_full_site_rate_output_audit",
+      "expected_counts": {
+        "markers": 16,
+        "fits": 64
+      }
+    },
+    {
+      "name": "initial_comparison",
+      "command": [
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_matched_rate_heterogeneity_comparison",
+      "expected_counts": {
+        "fits": 64
+      }
+    },
+    {
+      "name": "optimization",
+      "command": [
+        "scripts/refit_flagged_freerate_models.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-fcs-sensitivity-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--all-fits",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_flagged_freerate_diagnostic_execution",
+      "expected_counts": {
+        "source_fits": 64,
+        "diagnostic_fits": 256
+      }
+    },
+    {
+      "name": "optimization_audit",
+      "command": [
+        "scripts/audit_freerate_optimization.py",
+        "--diagnostics",
+        "results/phylogeny/freerate-optimization-all-esmfold-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-audit-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "passed_full_freerate_optimization_diagnostics",
+      "expected_counts": {
+        "source_fits": 64,
+        "diagnostic_fits": 256
+      }
+    },
+    {
+      "name": "selected_comparison",
+      "command": [
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-fcs-sensitivity-v1",
+        "--optimization-audit",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_matched_rate_heterogeneity_comparison",
+      "expected_counts": {
+        "fits": 64,
+        "site_comparisons": 9968
+      }
+    },
+    {
+      "name": "comparison_readback",
+      "command": [
+        "scripts/readback_rate_heterogeneity.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-fcs-sensitivity-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-fcs-sensitivity-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "passed_full_rate_comparison_readback",
+      "expected_counts": {
+        "fits": 64,
+        "sites": 9968
+      }
+    },
+    {
+      "name": "exposure",
+      "command": [
+        "scripts/summarize_site_parsimony_exposure.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-fcs-sensitivity-v1",
+        "--exposure",
+        "results/structural_annotations/paired-accessibility-normalized-esmfold-fcs-sensitivity-v1",
+        "--projection",
+        "results/structural_annotations/paired-accessibility-esmfold-fcs-sensitivity-v1",
+        "--review",
+        "config/marker_orthology_review.json",
+        "--output",
+        "results/phylogeny/site-parsimony-exposure-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/site-parsimony-exposure-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_site_parsimony_exposure_diagnostic",
+      "expected_counts": {
+        "markers": 16,
+        "sites": 2492
+      }
+    },
+    {
+      "name": "frame",
+      "command": [
+        "scripts/prepare_site_rate_exposure_frame.py",
+        "--rates",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-fcs-sensitivity-v1",
+        "--rate-readback",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-fcs-sensitivity-v1/receipt.json",
+        "--exposure",
+        "results/phylogeny/site-parsimony-exposure-esmfold-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/site-rate-exposure-frame-esmfold-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/site-rate-exposure-frame-esmfold-fcs-sensitivity-v1/receipt.json",
+      "status": "complete_site_rate_exposure_analysis_frame",
+      "expected_counts": {
+        "markers": 16,
+        "sites": 2492
+      }
+    }
+  ],
+  "pinned_files": {
+    "config/marker_orthology_review.json": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1/receipt.json": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d",
+    "results/phylogeny/paired-marker-fits-esmfold-fcs-sensitivity-v1/config.json": "eb565ef8e8f11743db8baafd81fef4c0a57a7b71be2a220d2ebea796a24f3baf",
+    "results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-audit-v1/receipt.json": "76e8077532b5fd9224f5ef2176b09a4ac44ca96c303266e5880c05d8d69892de",
+    "results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-v1/receipt.json": "cf42cb75c19a54c08ddfcfd3329b3129f1f2522fbf3364d2cabb4518c18d38b7",
+    "scripts/advance_paired_fit_benchmark.py": "a05390806f95b62ae9c08b8439818bafd4b9e4497e425800e8375af118504e90",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/benchmark_paired_site_tree_points.py": "b25c1411dd0a17a34afea3efb59ac35029fae02260158f011b1278342d615af2",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/plot_tree_path_geometry_ranks.py": "5aa83291c960a7d502f3076620615711baee5da586b197b8578a57b30301bd52",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/summarize_tree_path_geometry_ranks.py": "5dce19d3e0f45cbc88b54ebf903fafbe22cc8b84131164e39400bc5f56fc96c1",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "metadata/esmfold_fcs_accessibility_normalization_readback.json": "caddfeaf230b0f51c97bf139408fd5bdc1135cab80d02463ef643f8cdfba73a6",
+    "metadata/esmfold_fcs_accessibility_readback.json": "f7381c15378a4e0628f0377f3978e784da2ec4b1c33356c90ad3674796eb0232",
+    "scripts/compare_site_rate_heterogeneity.py": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+    "config/accessibility_normalization.json": "15730c285a8f5c5641e2e6a992b384cbf8d7ed619d46b9c4ac3b3dfd2f07983f",
+    "results/structural_annotations/paired-accessibility-normalized-esmfold-fcs-sensitivity-v1/receipt.json": "f55590ad81268563563b3b0113e25722dbe0a3a400390d8e76d406ca53f266f3",
+    "scripts/readback_rate_heterogeneity.py": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+    "scripts/audit_freerate_optimization.py": "13bf4ec833ddec954b912d5270920bea2be97816e906e505a488c73113adcbbc",
+    "scripts/summarize_site_parsimony_exposure.py": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+    "results/structural_annotations/paired-accessibility-esmfold-fcs-sensitivity-v1/receipt.json": "f85cf7490db6c0e8a435f5f7762d9a289aa239ebf1992dee78d4b07134809d5d",
+    "scripts/advance_fcs_rate_analysis.py": "89a4689f67bb802180659dbd2f7dd9bc75499347de8e58cd280daba259ca2c8d",
+    "scripts/refit_flagged_freerate_models.py": "cca4f577b97091883ce91a09eff044b32c67b2cf7830b83b418421eed81cb296",
+    "metadata/paired_fit_benchmark_esmfold_fcs_sensitivity_config.json": "15c35e3b41015ade0b4cf90f75051b0b37c269681997462d0e8aecf81ec7bee7",
+    "scripts/prepare_site_rate_exposure_frame.py": "6cd7e19c2578f614598bc999b450d5415ba86584de8c7c4a835ef405370b2991",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9"
+  },
+  "interpretation": "Queued changed-marker analysis only. No merging with unchanged baseline or coupling refit without subsequent explicit provenance checks."
+}

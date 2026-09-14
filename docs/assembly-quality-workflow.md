@@ -333,3 +333,45 @@ Receipts and all marker summaries are versioned under
 `metadata/{esmfold,esmfold_combined}_fcs_site_exposure_*`. Full per-site tables
 remain outside Git. Revised topology-dependent site diagnostics and likelihood
 rates must still be joined to these retained-cohort exposure summaries.
+
+### Queued rate and exposure-frame continuation
+
+Two controllers now wait for the corresponding complete FCS fit-audit/geometry
+handoff. Each verifies the live parent's PID, process start time and full command,
+then requires a successful full parent receipt and matching stage hashes before
+starting inference. Configuration, source data and all local script dependencies
+are pinned. Each stage has a separate immutable output and checked completion
+receipt; interrupted uncheckpointed stages require review before restart.
+
+The sequential workflow for each cohort is:
+
+1. Export Gamma4 site rates on its newly fitted AA topologies and audit all outputs.
+2. Fit four-category FreeRate on the same observations/topologies and audit outputs.
+3. Compare the initial fits, then run the same four optimization checks used for
+   the baseline (two starts and two optimizers) for every marker/model combination.
+4. Audit optimization results, select the highest observed likelihood under the
+   established procedure, and independently read back the selected rate comparison.
+5. Recompute topology-dependent minimum-change diagnostics and exposure summaries
+   for the retained taxa, then build the changed-marker rate/exposure frame.
+
+There are 384 likelihood fits for the earlier 16-marker cohort and 432 for the
+combined 18-marker cohort. Each fitting stage uses four single-thread workers
+with 2 GB per fit; stages within a controller execute serially. Fresh headroom
+checks require at least 64 GiB available memory and 20 GiB free disk. The planning
+allowance is 1–48 hours per cohort after its parent completes, not a measured
+runtime prediction. Both controllers use existing authorized resources.
+
+```bash
+python scripts/advance_fcs_rate_analysis.py --config metadata/fcs_rate_analysis_esmfold_config.json --check-config
+python scripts/advance_fcs_rate_analysis.py --config metadata/fcs_rate_analysis_esmfold_combined_config.json --check-config
+python scripts/advance_fcs_rate_analysis.py --config metadata/fcs_rate_analysis_esmfold_config.json
+python scripts/advance_fcs_rate_analysis.py --config metadata/fcs_rate_analysis_esmfold_combined_config.json
+```
+
+Both preflights passed and live waiting processes were verified; launch identities
+are in `metadata/fcs_rate_analysis_launch.json`. Rate estimates remain conditional
+on the fitted models and topologies. Four optimization checks do not establish a
+global optimum or biological model adequacy. Completion of these controllers
+will still require a separately audited merge with the 56/71 unchanged baseline
+markers and revised coupling fits. Neither controller declares the overall
+sensitivity analysis or project complete.

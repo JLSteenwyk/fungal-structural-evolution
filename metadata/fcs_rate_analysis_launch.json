@@ -1,0 +1,36 @@
+{
+  "controllers": [
+    {
+      "cohort": "esmfold",
+      "pid": 3786355,
+      "start_ticks": "183074714",
+      "command": [
+        "python",
+        "scripts/advance_fcs_rate_analysis.py",
+        "--config",
+        "metadata/fcs_rate_analysis_esmfold_config.json"
+      ],
+      "session_id": 6692,
+      "configuration": "metadata/fcs_rate_analysis_esmfold_config.json",
+      "configuration_sha256": "65004dea29a0f0dfd9798e144ee06dd8ddc67eacb9c80fb239e1176c266a9f30",
+      "status": "verified_live_waiting_for_parent"
+    },
+    {
+      "cohort": "esmfold_combined",
+      "pid": 3786372,
+      "start_ticks": "183074718",
+      "command": [
+        "python",
+        "scripts/advance_fcs_rate_analysis.py",
+        "--config",
+        "metadata/fcs_rate_analysis_esmfold_combined_config.json"
+      ],
+      "session_id": 76128,
+      "configuration": "metadata/fcs_rate_analysis_esmfold_combined_config.json",
+      "configuration_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "status": "verified_live_waiting_for_parent"
+    }
+  ],
+  "new_paid_resources": false,
+  "completion": "pending"
+}
