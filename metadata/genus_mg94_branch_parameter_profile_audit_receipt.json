@@ -1,0 +1,17 @@
+{
+  "status": "passed_full_branch_parameter_profile_artifact_and_numeric_audit",
+  "cases": 1655,
+  "optimized_points": 13240,
+  "saved_point_artifact_hashes_checked": 66200,
+  "saved_parameter_values_checked": 226696,
+  "maximum_fresh_readback_likelihood_error": 8.640199666842818e-11,
+  "cases_grid_beats_unconstrained_by_gt_1e_5": 4,
+  "source_receipt_sha256": "de7afe7ca5a1f489fc0bc0332d7808089710f17935c3dc7346597018e8b2c06e",
+  "script_sha256": "67a6c608c0dd6fecf09ec2c2f18666620ab72f69c8ba5a703cf1e62105f10266",
+  "fcs_exposure_receipt_sha256": "10a0d692108ed2ece64431e28c205192bd7ba3e37fc928020b593b49971bd1d1",
+  "fcs_exposed_cases": 29,
+  "artifacts": {
+    "case_summary.tsv": "1d98789c65e3e0f3101f273d5b026b3f51ee08f2b32a88faf782b808b06cfff7"
+  },
+  "interpretation": "Full finite-grid artifact and numerical readback, not a fresh rerun of optimizations. Profiles vary branch t while nuisance exchangeabilities and omega change; original dS is only a review label. Single-start finite grids can miss optima. Grid beating unconstrained fit identifies residual optimization concern. No calibrated intervals, absence-of-saturation certificate or selection conclusion. FCS and biological eligibility review remain separate."
+}

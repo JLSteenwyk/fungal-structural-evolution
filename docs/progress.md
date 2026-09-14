@@ -9,7 +9,7 @@
 | Families, domains and reconciliation | 64-taxon core complete; full 526-taxon orthology assignment and additional full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
 | Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
 | Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold fits running | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; site-rate and coupling sensitivity pending; model, prediction and phylogenetic uncertainty remain |
-| Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; nuisance profiles running; 29 FCS-exposed cases flagged; selection eligibility unresolved |
+| Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; all 13,240 nuisance-profile points audited; four optimization concerns and 29 FCS-exposed cases flagged; selection eligibility unresolved |
 | Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
 | Evolutionary objectives 1–8 | Intermediate analyses available; no objective set declared complete | docs/research-plan.md; final branch/clade tests, duplication/domain/ecological analyses, selection and ancestral case studies remain |
 | Figures, methods and mechanistic cases | QC and exploratory figures and methods available | docs/figures/; docs/methods-draft.md; final integrated results and validation proposals incomplete |
@@ -2650,3 +2650,18 @@ Diversispora/Ambispora. The N. cerealis selected/alternative contrast recurs,
 with weak support for some finer relationships explicitly retained. No candidate
 replacement or contamination conclusion accepted. Details and support caveats
 are in docs/fcs-copy-tree-review.md and the marker-specific review receipt.
+
+Full MG94 nuisance-profile execution completed: 1,655 cases, 13,240 optimized
+points and fresh saved-fit readbacks. New full audit checked 66,200 artifact
+hashes, 226,696 fitted parameter values, all unchanged model text, likelihood
+replays and the exact aggregate grid. Maximum likelihood readback discrepancy
+8.64e-11; additional readback of 26,480 target-t/omega summary fields agreed
+exactly. Initial audit-parser attempts incorrectly included the fixed reference
+exchangeability among optimized variables; corrected its scope and verified
+that fixed model content remains identical. No fitted outputs were changed.
+Four Malassezia cases have a constrained grid likelihood above the unconstrained
+reoptimization (maximum 1.995), so restart diagnostics remain necessary.
+All 29 FCS-exposed cases are flagged. Full results and caveats are recorded in
+docs/coding-sequence-workflow.md and metadata/genus_mg94_branch_parameter_profile_*.
+This is an audited finite-grid diagnostic, not dS intervals, global-optimum
+proof, saturation clearance or selection inference.

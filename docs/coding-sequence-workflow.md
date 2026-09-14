@@ -853,7 +853,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/profile_genus_longest_br
   --output results/cds/genus-mg94-branch-parameter-profiles-v2
 ```
 
-The queue is already running; use a new output path for any later rerun. The plan
+The queue has completed; use a new output path for any later rerun. The plan
 reserves four one-CPU workers, 8 GB memory, 20 GB disk and 1–24 hours on the
 existing host. The original fits consumed 1.042 summed worker-hours; repeated
 tighter fits and fresh readbacks justify the larger allowance. The launch receipt
@@ -888,3 +888,46 @@ python scripts/assess_fcs_codon_omission_eligibility.py --fits results/cds/genus
 All case dispositions are versioned in `metadata/fcs_codon_omission_disposition.tsv`.
 Being unchanged by this one omission rule does not establish broader selection
 eligibility for the other cases.
+
+### Completed profile audit and remaining optimization concerns
+
+All 1,655 cases completed seven fixed-t grid points and one unconstrained
+reoptimization, totaling 13,240 optimized fits and fresh saved-fit readbacks.
+The full audit checked 66,200 point-artifact hashes and 226,696 fitted parameter
+values. It also verified that the entire saved model text outside the profiled
+parameter declarations remained unchanged, including the fixed reference
+exchangeability. Maximum fresh likelihood readback discrepancy was 8.64e-11.
+An additional aggregate-table check verified all 26,480 target-t and omega
+values against the saved optimizer logs, with exact agreement.
+
+Four cases retain a substantive optimization concern: a constrained grid fit
+has higher likelihood than the unconstrained reoptimization by more than 1e-5.
+All four are Malassezia cases (730114at2759, 4940884at2759, 541070at2759 and
+4976279at2759), with excess log likelihoods approximately 1.995, 0.836, 0.538 and
+0.105. These need restarts from the better solutions before using the
+unconstrained optimum as a reference. They are not among the 29 FCS-exposed
+cases. The numerical audit passes because it verifies what was computed;
+it does not establish global optimization or selection eligibility.
+
+Across cases, the median unconstrained likelihood improvement over the original
+fit is 0.00266, with maximum 2.518. Allowing nuisance reoptimization substantially
+changes some fixed-t likelihoods, reinforcing that fixed-nuisance slices are
+not profile likelihoods. Neither analysis supplies a calibrated dS confidence
+interval: t is the profiled parameter and exchangeabilities can change.
+No saturation threshold or biological acceleration conclusion is derived here.
+All 29 FCS-exposed cases are explicitly marked in the new case summary.
+
+```bash
+python scripts/audit_genus_branch_parameter_profiles.py \
+  --profiles results/cds/genus-mg94-branch-parameter-profiles-v2 \
+  --fits results/cds/genus-mg94-diagnostics-v3 \
+  --slices results/cds/genus-mg94-longest-branch-slices-v1 \
+  --plan metadata/genus_mg94_branch_parameter_profile_plan.json \
+  --output results/cds/genus-mg94-branch-parameter-profile-audit-v1
+```
+
+The completed audit requires a fresh output directory on rerun. Case summaries,
+receipt and target/omega table check are in
+metadata/genus_mg94_branch_parameter_profile_audit_* and
+metadata/genus_mg94_profile_table_field_readback.json. The full completion
+receipt is metadata/genus_mg94_branch_parameter_profile_completion_receipt.json.
