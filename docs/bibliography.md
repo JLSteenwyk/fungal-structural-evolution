@@ -45,3 +45,16 @@ These are methodological precedents, not an exhaustive systematic review. Access
 - Sankoff 1975. [Minimal Mutation Trees of Sequences](https://doi.org/10.1137/0128004). Tree-based minimization of character-change cost. Here a unit-cost fixed-topology diagnostic is used, with missing tips unconstrained; it is not a fitted substitution-rate or ancestral-sequence uncertainty analysis.
 
 - Naser-Khdour et al. 2019. [The Prevalence and Impact of Model Violations in Phylogenetic Analysis](https://doi.org/10.1093/gbe/evz193). Introduces maximum matched-pairs diagnostics used in IQ-TREE for substitution-model assumption screening. Applied without filtering; unavailable results and calibration limits remain explicit for short, masked 3Di alignments.
+
+### Dating calibration provenance
+
+Parham et al. (2012), *Best Practices for Justifying Fossil Calibrations*.
+https://doi.org/10.1093/sysbio/syr107.
+Specimen-level placement and geological age justification guide the calibration
+review fields in dating-workflow.md. This methodological source does not supply
+approved fungal calibrations for the project.
+
+The existing Szánthó et al. (2025) archive was additionally audited for its four
+mean chronograms and project name overlap; see dating-workflow.md and
+metadata/published_chronogram_inventory_receipt.json. No published ages were
+transferred to project nodes.

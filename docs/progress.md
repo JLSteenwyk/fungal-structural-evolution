@@ -2487,3 +2487,15 @@ Launched two homogeneous LG+F+G4 guide sensitivities on existing resources with
 16 threads/32 GB each. Parent processes verified live; launch identities and
 resource estimates in metadata/fcs_species_guide_*. Full tree audits, topology
 comparisons and heterogeneous-model sensitivities remain pending.
+
+Dating evidence advanced: verified the existing publisher-MD5 timetree archive,
+inventoried all files, and audited four annotated mean chronograms against all
+node-age/interval summaries. Each contains 153 tips/305 nodes; 1,216 mean-age
+edge differences agree within 4.55e-13 Ma. Their 182-entry name maps contain 29
+entries absent from each tree, now explicitly marked. 57 actual published tips
+per scenario have exact-name project matches requiring identity review. No
+dates were transferred: these summary trees do not supply joint posterior
+branch-duration samples. Added calibration qualification and uncertainty
+requirements in docs/dating-workflow.md, grounded in primary timetree and
+calibration-provenance literature. Dating and per-time structural estimates
+remain pending, without blocking relative-divergence analyses.
