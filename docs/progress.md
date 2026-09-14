@@ -2691,3 +2691,11 @@ Reviewed a third completed alternative-copy tree, 4803900at2759: 419 tips,
 with three Candida entries, while the candidate groups with N. liquefaciens.
 Short-alignment, long-branch and source-quality caveats are retained in
 docs/fcs-copy-tree-review.md; no candidate replacement was accepted.
+
+User-requested temporary cooling applied September 14: current project process
+trees share 24 CPU cores; the active ESMFold process alternates 30-second
+run/rest periods. No hardware cap was available without administrator access.
+Initial live checks found all 913 examined thread affinities restricted and
+GPU power falling to 83–89 W during rest; predictions continue. This exception
+expires after 48 hours and does not change future defaults. Recovery, provenance
+and caveats: docs/temporary-cooling-20260914.md. Earlier GPU ETA is superseded.
