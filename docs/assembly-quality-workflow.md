@@ -205,3 +205,34 @@ python scripts/review_flagged_naganishia_marker_tree.py --output results/qc/naga
 
 The versioned receipt is `metadata/naganishia_flagged_marker_tree_review.json`.
 Other marker placements and proposed alternatives remain to be evaluated.
+
+### Alternative candidate profile alignment and independent readback
+
+All 41 candidate proteins were aligned to the same pinned HMMER marker models
+used in the baseline profile matrix and projected onto its unchanged retained
+sites. They span 33 markers and 35 affected marker–taxon observations. Their
+retained-site coverage ranges from 19.97% to 100%, with median 74.63%; this differs
+from raw HMM-domain coverage because the phylogenetic matrix retains a subset of
+profile match states. No candidate is entirely missing.
+
+An independent parser read the Stockholm alignment blocks, reconstructed original
+protein coordinates, and checked all 14,798 candidate site rows (9,855 canonical
+residues). It also verified all 5,757,596 baseline characters in the augmented
+alignments. Each augmented alignment preserves all 526 baseline entries and adds
+candidate gene copies with separate identifiers. Across the 33 alignments, 1,465
+baseline rows have no observed amino acids; the audit records these explicitly
+for removal before tree inference. These are per-marker rows, not 1,465 taxa.
+
+Candidates remain hypotheses requiring gene-copy and placement review. Short
+coverage can weaken placement, and the four non-triplet CDS records remain
+unqualified for codon analyses. No replacement or new phylogeny was accepted at
+this stage. Candidate sequences are not additional species.
+
+```bash
+python scripts/align_fcs_alternative_candidates.py --candidates results/qc/fcs-alternative-review-sequences-v1 --matrix results/phylogeny/profile-matrix-50-v1 --profiles results/phylogeny/profile-alignments-full-v1 --output results/qc/fcs-alternative-profile-alignments-v1
+python scripts/audit_fcs_candidate_alignments.py --source results/qc/fcs-alternative-profile-alignments-v1 --candidates results/qc/fcs-alternative-review-sequences-v1 --matrix results/phylogeny/profile-matrix-50-v1 --output results/qc/fcs-alternative-profile-alignment-audit-v1
+```
+
+Compact receipts and all 41 coverage rows are versioned in
+`metadata/fcs_alternative_profile_alignment_*`. Full alignments, residue mappings,
+and the 17,399-row sequence-disposition table remain outside Git.

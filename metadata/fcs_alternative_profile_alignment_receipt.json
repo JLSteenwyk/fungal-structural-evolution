@@ -1,0 +1,679 @@
+{
+  "status": "complete_candidate_profile_alignment_and_frozen_site_projection",
+  "candidates": 41,
+  "markers": 33,
+  "projected_candidate_site_rows": 14798,
+  "observed_canonical_candidate_residues": 9855,
+  "candidate_source_receipt_sha256": "e97a89a845a5fda18f9ee98aed91e7fdd28dec367425678fa8d0d7e7b3d11f89",
+  "baseline_matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "script_sha256": "04f64fc008bde74a2056195884bb61067b408df09e8faa9d0ec3684cedcf0039",
+  "hmmalign_executable_sha256": "5c0de7f7f850041d137dc764db0199cb057ff13ee9627c5a0b5d707b87af8eb5",
+  "hmmalign_version": "# HMMER 3.4 (Aug 2023); http://hmmer.org/",
+  "marker_proofs": [
+    {
+      "marker": "345792at2759",
+      "profile_model_sha256": "e63aa9ab431b7c9e0e448b6d5a104cd5cc0ecbfdb5141bd0eb27282d9527138c",
+      "baseline_profile_receipt_sha256": "481b4d1167bfdb847ad6039849f25805ed23e59519f2c3d7cb57922c99b1b457",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/345792at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/345792at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/345792at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "09ecec832f05780184eb5a5cbf98edf9cc14d0455dbc829d840b7f791c5f1522",
+        "baseline_plus_candidates.faa": "1af9c035159c8922770fb5cca86589cb71a5f4e2c3de3e09352d1e701193f6ac",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "568a5135f3d30c771e54f42953c0f5bdf0d19f3099a359a5c39af731ff54c49d",
+        "candidate_unaligned.faa": "598b812debde0343cedec2e4d50caa282dc6e96165ef21f38ac2028226df54e9"
+      }
+    },
+    {
+      "marker": "4764044at2759",
+      "profile_model_sha256": "67953406984528167ff2438d7338f327f21a3a8cec3c56db60286979e0b62653",
+      "baseline_profile_receipt_sha256": "45c4180036169d24213d842d0d81ff16f602aa797e7ff2c49ce373de8cb8d430",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4764044at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4764044at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4764044at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "5142a806c0002592091f5d1d51c440d7abd2304d68ed2cfbaa233b5fe7126e64",
+        "baseline_plus_candidates.faa": "2cbbfdcaf7b18ecc488666de936a09b9b44ba044bb27dce0869c9ab305e21348",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "e83a33bfd03b8379dd556f177cb982540e90ed4281017cdbbf092cd9e06c87d6",
+        "candidate_unaligned.faa": "5c2237ea9c362d9faa86a2aec6419b931a72c417f4b8270eb06430a3e584fb30"
+      }
+    },
+    {
+      "marker": "4803900at2759",
+      "profile_model_sha256": "e9bec8dfd5011c912cc0592f09b50e761b16d11877ebf8927418067bb3cce834",
+      "baseline_profile_receipt_sha256": "5a0c4654592563b395a284c7409063febeaec2b99a9bb915cd1514a55f79ee07",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4803900at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4803900at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4803900at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "e0fdcf71c6bb1271f3491f915799e06c4744c53e761c325b923dbed224838876",
+        "baseline_plus_candidates.faa": "8c7e07505ee9f4c2fde269326e3670d9841c10866bcc264902732e85fe621391",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "3b1a8961d522bed40ead079e1f590fafbdc380fd2491ecd432b459f950001247",
+        "candidate_unaligned.faa": "770a141b15eb6e20c88487e8df39b1d7d51602722976b4340b0ad308af29d814"
+      }
+    },
+    {
+      "marker": "4813267at2759",
+      "profile_model_sha256": "c4f76e587cf4e5716caa1bad46b0ce63174b1fc4d120aed15cd9ca27c01ee017",
+      "baseline_profile_receipt_sha256": "36fa723ce8cd2bd98586517cadc708607afc737f41bc2b2784a1393f6bb3348d",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4813267at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4813267at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4813267at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "7b4a1a3b296fccbdbc2b5fcb53c5d31d2f7a7a7ed40a052cba88ba5fe665e1ff",
+        "baseline_plus_candidates.faa": "3391577a91cada52fb20d0be8886434d0e7d4cbc7b9622655e8535fba63beae1",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "d5982609f11a92493684be312c282c3e309030ee163dc1ed54748dff77aefa1a",
+        "candidate_unaligned.faa": "9563ef9c2077f65d5476459f84fc12a2ea13d1fa9dd10dd203a7fe1194358486"
+      }
+    },
+    {
+      "marker": "4823929at2759",
+      "profile_model_sha256": "7d6d2d54f4b485f2f00049a34ddc97ac66dd25f3caa408e39de493e0726389d3",
+      "baseline_profile_receipt_sha256": "63e293256c2f6478bae9148d0df2d6737f19051b9ceab6b2243b241b68b9dacb",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4823929at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4823929at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4823929at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "0cbd6cc18351c7dc163118a915c7db25790006dc631257f1ef67ed44e58f896b",
+        "baseline_plus_candidates.faa": "8a8fc773ca13b421f9064b07413105b7391ed79e607c609eda5e932064e7b6e8",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "5abe36f2794cf8cabd7cdb447a3e5da749b450fb3fd1cd4d223e533871c392c3",
+        "candidate_unaligned.faa": "ed43cc9132882cce7327507e258c1078d932b2c67b2cee6d77abc9dc4b624885"
+      }
+    },
+    {
+      "marker": "4838864at2759",
+      "profile_model_sha256": "271a129ac92b8b74db73b14a7cd2193a08108379a981b6205b16f48540afd18d",
+      "baseline_profile_receipt_sha256": "2bc327d84c367864c2e08fa11ecefef69661920e0773e2bdb8d3a5042c1f5121",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4838864at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4838864at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4838864at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "c3a739c9bf7b026668ff2eacfd4b58522129e474c563d8cb21eb2229e2a68ba5",
+        "baseline_plus_candidates.faa": "d59e36a4979b05fef8c00dd63ffc6f2eed69c3545c212539a381865fe7af4b45",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "a2bce364d583afa2858fdd076cb8139eaf797bb6b936e214f3908a2a12fa5148",
+        "candidate_unaligned.faa": "96ce85716fd54842a931607423464cd909a4125d99568528fd4bbf2630cf0f77"
+      }
+    },
+    {
+      "marker": "4867008at2759",
+      "profile_model_sha256": "cfeb961ff71143dfc41cc25c68bd40ee6b09fdd710cb05f4eaf7ba1a1d4cc8c9",
+      "baseline_profile_receipt_sha256": "311d7b8df649f5392334f5438aa3ac5e3db15345968f7b6d97d2479c0f315951",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4867008at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4867008at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4867008at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "4562a0029c17b5f3d06e70f01e24dfe752ba20dce4439d139278f98d8d8874f0",
+        "baseline_plus_candidates.faa": "f8b2e49bf0ce32b6bdee4431ef8f4ba257e8cb6b02f2efc02d186ac5e7c695c9",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "99a03b16e77a9436d338aba6faea97172c475f4c1d97f63f22c4531a7b724610",
+        "candidate_unaligned.faa": "cf33f4536bb155296bbf501e7476ea2d4cbb66f61c88ecd1a33fff02952fb949"
+      }
+    },
+    {
+      "marker": "4908955at2759",
+      "profile_model_sha256": "dc932430d2da1cbeb195ab45e54fd88a696479b31e94354398347607aacb7b1b",
+      "baseline_profile_receipt_sha256": "d1a58dd32cacfaf737c330a54548b1e379f534b2a70bc59506fea7f74f55f8b0",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4908955at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4908955at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4908955at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "4b96e7f1940f3f0ba35a488f9c097375dbe0dea66307760753469adc3b2278b0",
+        "baseline_plus_candidates.faa": "12e0181327634b3dd2a87582728307020f3682f410d1cebd613161ace1f96d07",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "1acf04336ddadf457120c6c9ab1038ba4d1c95a13d790b5df5437d417b16b807",
+        "candidate_unaligned.faa": "d6e77d235ac01dfd1bdfa06b9decfc4dd4fb77ae9f4af8723c151077157c94d0"
+      }
+    },
+    {
+      "marker": "4911644at2759",
+      "profile_model_sha256": "3147e70dea3015169db92ce5520bd8d3a163ccf9e5d90c19193eb78b811f498e",
+      "baseline_profile_receipt_sha256": "78568e689f782e20dd96f22c21edfc2d90756b74b3ba3ea81427a73b2bc4640e",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4911644at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4911644at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4911644at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "f1ab263f9a6e7d7d86cd34d68ae7d5b5a106ba0d692b8fa692a09ada2cf140bf",
+        "baseline_plus_candidates.faa": "fa5280105ed7ee93bfc9ee57a8d57475d61e1504b4b8fcbd8107e67fdaa9f2a3",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "d15cf8a8d52d0b31247349ca0b655c8e24b98f54077e3f2e83b6fab646026e53",
+        "candidate_unaligned.faa": "4ea56e6bf41a43321f83c1cafd5af8e85739c2c7da5b6543128609a196bc4202"
+      }
+    },
+    {
+      "marker": "4970538at2759",
+      "profile_model_sha256": "65b494d1c25c6267d8673b56edfe4b1bcaeb446437c64dce11b9102a81939f6e",
+      "baseline_profile_receipt_sha256": "3d82918e15fa649552c56b7e4cbd273eee0c4af199d1526017a8efaee5a590ba",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4970538at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4970538at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4970538at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "c78c6331072e14337743d33a3efe8ec2cbd945fd5b3f33fe8148ae3173abd88d",
+        "baseline_plus_candidates.faa": "4b15169effcca7ebc55124a4faed7597e1a944a17bac83337ae02975befa292e",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "124f4b8468662414fad7c220d3a96f604161a07eb9d3011c05336da01ac8daca",
+        "candidate_unaligned.faa": "b87b8795fd62fbfaf04cd5c96c31e065d56e07cbbc9ca4031343e40a462ea7f2"
+      }
+    },
+    {
+      "marker": "4976279at2759",
+      "profile_model_sha256": "80022f33487777d5ea3bcce831f659a9912da5b573717171083b631f013dd94e",
+      "baseline_profile_receipt_sha256": "1e3a32e5d846131385a7226710ef1f5aa77992998e6ab510a84770ef6b78601b",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/4976279at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/4976279at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/4976279at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "7abe371f3175723217fa0c199d8acaa41ca78ac40c03bf2c96a01d2a4362dd9f",
+        "baseline_plus_candidates.faa": "4b4ee061873b9de607602ba2d35bedbddde44496819ed76fd3ef6874bfc69101",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "7c4ec5ce466b854523552e8051da41f5792485bce4728b520994777c483f5426",
+        "candidate_unaligned.faa": "3e262172b6fc273273d5f3105c43c675a6b2a8d227642e99f6e1e79cefa74031"
+      }
+    },
+    {
+      "marker": "5000371at2759",
+      "profile_model_sha256": "90f7254f267dba9206d255dc34909414c61d874a1f6e04fb240cd26fbf344c7c",
+      "baseline_profile_receipt_sha256": "ba29348f3880e6ef92318902336f06b6c1c13428a600a3d65377c32d5ab97532",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5000371at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5000371at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5000371at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "7b71e71e75edf78171e041284ac0489bf4cc6b498596ae50124e9da14dd32979",
+        "baseline_plus_candidates.faa": "b6def06b718a2f5a026c418fd68c6eaf75645e83505b7cdf1ec7d088268236d3",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "af3999ca4d41f4a73e8225630616518d80ae058aad1b4772e876c518363fa5b9",
+        "candidate_unaligned.faa": "b621a58f178ee21020e068506cb1c3fe21cbc0ae3f49a253fd76f02229e14fa0"
+      }
+    },
+    {
+      "marker": "5001273at2759",
+      "profile_model_sha256": "b10fa596ca535d1f0ca4ce8a725c05ff1929cbf4f280a0bd5d9a6f61bbb77383",
+      "baseline_profile_receipt_sha256": "239104bbadd5210f9861db15932109a6b3f772a0ae64caccba8636b1e26c526f",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001273at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5001273at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001273at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "921b47d69fec651f4da85718190629bf73b9e8b20435b59deb58cfec662c439c",
+        "baseline_plus_candidates.faa": "64b71816f77f73ab3cb94d76473115f644ff59ff6b44909c0a3e19c20d31b750",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "87569742ed7a36ef249bc9f8fa44f7faac704fb0d4917663f311d2e124092c73",
+        "candidate_unaligned.faa": "b68e162ad8c0a144ad17932aaf17f033274ceac3a48d052f0a545e6c9ebf08c5"
+      }
+    },
+    {
+      "marker": "5001318at2759",
+      "profile_model_sha256": "7883251e1830883b8a6f7a8e44e0040a176b4bf6b1a6681fbf4c40a603a650d9",
+      "baseline_profile_receipt_sha256": "a315abaeb7740b2b2e89f276db75b628ff969494d152d6d0b031865a98d9e070",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001318at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5001318at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001318at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "73cc2800050aec19a7dc662355aa32ac966ed97a7fa1e735d386297f391c1d31",
+        "baseline_plus_candidates.faa": "bf342d7a318fc6b6d48fb5517386b99853d8629e3a395a1e9823ebf9ed460a93",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "2338fd824ddd4ef9853c2dad1b9c94381973aeb422d90cb01f36276385e569a5",
+        "candidate_unaligned.faa": "eef93993bc788ed317a6d2a1c2927401872039d99ce55a7805d0c6b7b17d3462"
+      }
+    },
+    {
+      "marker": "5001413at2759",
+      "profile_model_sha256": "41049b9af971216e72088c02f0630671b44e9962d93d6be4ec4c0fc1ca1b43b9",
+      "baseline_profile_receipt_sha256": "0eb116203a8a741e44cf68287f829ab0c1c50b4f9299fa26bd5bddcb9f083757",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001413at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5001413at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001413at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "dad9d4478166d6802672cc730d5fcafa65cc6ceabd94ae071e26c9d1a22fc974",
+        "baseline_plus_candidates.faa": "78fa59ace049d0e85ad6f3281ad399a84caa75ff9016961c20830e0ca80ab947",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "a0eaec59137919a187fa32da5e24c7676cb42bd8cc10e89269cc9fea66570b6b",
+        "candidate_unaligned.faa": "63a7844e7ec59a7f745b7389409756b8cdf66626bbf593bd6c259c95d4df35f9"
+      }
+    },
+    {
+      "marker": "5001473at2759",
+      "profile_model_sha256": "e7099f9d7c4fbc74e91ac4a771d27d79cf084e4c2954b32b14d583bcfa70578e",
+      "baseline_profile_receipt_sha256": "dc44c0118da8cc3b5395d434533a99ea98cbebef079bc024d0b565fb2f9b7d48",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001473at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5001473at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5001473at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "63335f259c719231af766c6e0b63d67aa2453a8d491db6a884dd403bf9f77ed6",
+        "baseline_plus_candidates.faa": "753029e19014d561ac1ef064752e564e1fe70b1ad9350990da060cb41b088792",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "c1e293dd271da4c3e9d778b706daf4703956c84cd3f0f254ae2f41137515a09a",
+        "candidate_unaligned.faa": "cc9db9e620722f7f31fc0e3f936ce62594df37af9a47bec046205fb4d66459e4"
+      }
+    },
+    {
+      "marker": "5002573at2759",
+      "profile_model_sha256": "8be54f52d123aa4dbbcabd6ab17f74dc4a4fc577c44d24412dd478fcb714abb4",
+      "baseline_profile_receipt_sha256": "22d4bdd460200f2af9068f42d1358d229b9dbb2febf75002ed4b1eb67a57a0e4",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5002573at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5002573at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5002573at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "9827de8adc5ed78485d45f1bdd528148c20aa5a3dd70d0d40573d13157bf90b1",
+        "baseline_plus_candidates.faa": "03f90c95433e9a3ae5998036135b737e887563d96e03681521782b0e6e83a94a",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "0b0d1cfecbd38bc1183ea8b5b04540abb93c7c2da1e4c7d02392bdfaf0c5e9be",
+        "candidate_unaligned.faa": "2cea350a98ad9576a1c34ea5e07a2af004907cb58ed92e9d412850d59e98d127"
+      }
+    },
+    {
+      "marker": "5003856at2759",
+      "profile_model_sha256": "d5cc8a5f7afc312fab0e4ebbc1eb78b3d2088f9a91cb4fb9a7fa267544501f86",
+      "baseline_profile_receipt_sha256": "559627e3a7fdc6f92dfc5330402bef02667b74f0783c6c1cffa640c11fbb649f",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5003856at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5003856at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5003856at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "7250f9cb19ad825240df52e8328ec925324ab50e748c8775f6e333ae43fadf93",
+        "baseline_plus_candidates.faa": "39215f9b4ab7181887c79ff237f24c0c6abd3233634365029e4f36f87f31edad",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "30021ecddb8c66623899969693d0d70ee3debd3b94191716978ecad0373d79f6",
+        "candidate_unaligned.faa": "2c46782adabb0f84070fadc70621e81630a687af530fd6c3d5f6f4b807821fc5"
+      }
+    },
+    {
+      "marker": "5003972at2759",
+      "profile_model_sha256": "85606d1c9e1f5a0480e5e3467884226de1cc4680ea4a784bcc05aef0c9198089",
+      "baseline_profile_receipt_sha256": "fcb3216d02d6232a0ae106c5a8435664a645693e184f7b22253181750c623cb3",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5003972at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5003972at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5003972at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "70944543abe92a125760161b79171ab5c2c45590d9fe08cec21f1694aeb3ac55",
+        "baseline_plus_candidates.faa": "adfa9733be9746d9eda4e9f323705922650c6e71472ef0a703129bb92b6b890a",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "ddb39c24faa31351f89feb07b41ea7c63c9d5dd5fe936bd015b8dbcfb03275c2",
+        "candidate_unaligned.faa": "06c511b6a3b7c6cb8581a778b88f1ac69321dc9f8d4c6f54251d6e9c51e79236"
+      }
+    },
+    {
+      "marker": "5004118at2759",
+      "profile_model_sha256": "00238ed67e744333bd9b14f9a2bdffe05e40f74ae6441064c7ec3c80d712d9ec",
+      "baseline_profile_receipt_sha256": "745f5492378090606d1673362573b325c06f79255e99fca04150a5e265a219a1",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5004118at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5004118at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5004118at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "98dda1e6598131371bd9095ade261cfafab6e7685fafb198a8edfb6a38d0ba3a",
+        "baseline_plus_candidates.faa": "e645a2336e7bab442bb364c151c77dcbeb50782c80a8c9683a43664334fbfc57",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "ec70f0e333b939de1348d029012a6295e6d862635ace27f4f226753575f1c33f",
+        "candidate_unaligned.faa": "5f9a79eedd8c4315d78a8c1afc78f16c447abafa793bf9a0af60a708b0e58cb3"
+      }
+    },
+    {
+      "marker": "5005010at2759",
+      "profile_model_sha256": "619dcae7a927e35731f967712e256e8d6129a1bcd918f0ecb4d591acfafa7ec8",
+      "baseline_profile_receipt_sha256": "99bf5402ebe97f8451ad5e22e4e6985a6864fd039d78728ef81099544554f1bc",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005010at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5005010at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005010at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "d9cb165a6a84ea680c6cbc7e0234045472b6ab3f707d6397dffa30fea7b25404",
+        "baseline_plus_candidates.faa": "2324fe2ddf8a69dc1b49d19985d1e9fdd17527fceb7b1e84ddd26d80b5056a51",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "ee6cf825261b50ec4e4fed0bb5e20d42c97ddc4498393f8b4d46fe696ce95c84",
+        "candidate_unaligned.faa": "181c68200ecb391f36aed0fec06f8f209f799fc82ebd785941f424f1782ce4a4"
+      }
+    },
+    {
+      "marker": "5005215at2759",
+      "profile_model_sha256": "06363f4789036932cfb1d3235ed44ac609e6f307c63e62e736518032bf1b386e",
+      "baseline_profile_receipt_sha256": "3d68051594ca3652299e30b9e0a8c7366d41edb778845cded5f298bfd6a6e5f7",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005215at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5005215at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005215at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "f644baf3eb7f66004a33e8a10cc646a85397a703a7d228360316ee5f0799d679",
+        "baseline_plus_candidates.faa": "eef70a7b07343b25ea6a30c676739e8c81b2f4a055cce909a690af593bbddffe",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "17664eb190e5561ff369ed03343bc0718534e69f040386cc04225fbe8f3ac50e",
+        "candidate_unaligned.faa": "0136e2db0db145090ec441383a459d3652e3caeaea25d362768d8ab071c59e17"
+      }
+    },
+    {
+      "marker": "5005274at2759",
+      "profile_model_sha256": "714d503994e4b5a22d6329fb40f59e0a720d487c02e3db732300b45a21b615e3",
+      "baseline_profile_receipt_sha256": "e70e2ff44fc297f5a4d74e3a85669e8130903b351f0b69aafbee7c517dcb450c",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005274at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5005274at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005274at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "d6624fd037b5d5bb5a10eeee7a74cd18b0ee51906e6d83850a47f3a3e7b09035",
+        "baseline_plus_candidates.faa": "71181ccdfeca40dff1c469124aac9c6089553390624c7da2869492ff5a16bb93",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "a738ae30a38a8985e62a6c2a100340289929c31f0ec0a80c39470793fa97a94c",
+        "candidate_unaligned.faa": "6bcfa5d795c3592952cfc2d37f59e7df812dfd793ae8299c363686d14e95f219"
+      }
+    },
+    {
+      "marker": "5005697at2759",
+      "profile_model_sha256": "9df26526b597cc9fe466e562960cb5308af1fbb7e82845ce2b81aa3f56da335a",
+      "baseline_profile_receipt_sha256": "ead4abf84ec6444f913f30aa5e8d6fa0621e1ebd34ddd5cc71b8e6bf66c2e5cc",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005697at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5005697at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5005697at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "6c70483fc76e0f4ca9b28af40b9fab89fdaeb0d63a8679a069e3be846287080d",
+        "baseline_plus_candidates.faa": "bb644bd560839b36775dc9318ba8fce237e6696fef70224dbca794d42852c27f",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "83f23c5dda21923bd37502a92d1004bce91b8819d12d41243868b500e7a8a6e5",
+        "candidate_unaligned.faa": "2736017282d7f28f7543c46356a11bd10f4a4dce52798cdf063dcdf36edf7197"
+      }
+    },
+    {
+      "marker": "5006326at2759",
+      "profile_model_sha256": "b318631c598ea18a20bdd30276b8d45716a0dff9c3efb5cb3936b22dcf2dbc1d",
+      "baseline_profile_receipt_sha256": "16d3c6986da15e0cb84f64789497d15ad78f64991ba5cb16b44e1a230b9283c8",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5006326at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5006326at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5006326at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "d27ccda159859cfcda3af2b915b21b1f8dba594249c475e04e5ef19bf55071c6",
+        "baseline_plus_candidates.faa": "e838d423f6a333220a39c124fb49f97a237346500a656d80881a1e6117a5faf3",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "d98bc59315ff2913351847d03b7a766c7e5beba98de9ef711c2898a6788a1559",
+        "candidate_unaligned.faa": "3d7e02fa883ac93f6b6473ee99eb0f188b9eaa564024be3aee94255abdd32819"
+      }
+    },
+    {
+      "marker": "5011777at2759",
+      "profile_model_sha256": "2b82b05f0572b32533ad957845a2845e33d5be12348173bcabd6a93a3068f578",
+      "baseline_profile_receipt_sha256": "84a19de42a2d74f5d445f644243b9ae6e9b22c4ca5e6730cb7f77655e740fee6",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5011777at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5011777at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5011777at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "4acec33b2829e6d1a1ae96d055f400779e5d4b9b72cfa4028a00a145065dd426",
+        "baseline_plus_candidates.faa": "949a36ef4dedd8c0578f8d78bd68bdf6d86e92cea15cd03ca7277197fb3d299f",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "1e1032bb97ff842de9a1ad0aa8d6225d15f7cec5c9b4828df98cf95b7355208c",
+        "candidate_unaligned.faa": "12298eb859cb54f1c7b12a22a55e2720140243c760e4c200c71d97d5dd746b4d"
+      }
+    },
+    {
+      "marker": "5013259at2759",
+      "profile_model_sha256": "5e83d081fef8b0011dfb4a5403b6b56fc4d5afe45ff4540b47094b59d695efb5",
+      "baseline_profile_receipt_sha256": "68decf23a4b36ec3f9eaf5a942ec60ef5356356b01bb5cc6587e616e2655abf7",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5013259at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5013259at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5013259at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "0a133b5ce7512c67836a7070e6bbd5c2cfc77ca3d0f57a5dc66df282ca039e51",
+        "baseline_plus_candidates.faa": "057a378a8617d78083d463e161aa3c9491194219af7c7a420b78055095d6e66d",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "f08de98bbbc336612098ad7f82b8f6977983046e9edce8dcc6751a48d68346c7",
+        "candidate_unaligned.faa": "d479634aca319a48325c99e2c7cf08938eec8355789abf19c1ac37cd202a605d"
+      }
+    },
+    {
+      "marker": "5013726at2759",
+      "profile_model_sha256": "02a62b0737a6aff51d3a8989054e2a32fb16296917550876d4180871a6c67b99",
+      "baseline_profile_receipt_sha256": "6ff69f0ecb46d7e52f2679e430675b839ede6c97c8caefbc880a6f3ebbd9c082",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5013726at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5013726at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5013726at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "6095ad1dfe474d87accda3879d9b7a89c0913cd886bb10f863faf3a95823a529",
+        "baseline_plus_candidates.faa": "9871b97207366e3df3e423a552ecd0a2371f099b40389e6bdffb146830d9063d",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "65b59bc14ab6c1331d02146ab2894225ad7bcc360d5a7354d0112ac8f618d6c8",
+        "candidate_unaligned.faa": "bbae91b061f4ace10efcbc7cf856ddab706292cc6e1553d64d13f9b71ffac084"
+      }
+    },
+    {
+      "marker": "5014007at2759",
+      "profile_model_sha256": "505ae98552f08ce352cc0be37951c45f30758ebf3f7ca9cc37c150dcf4302483",
+      "baseline_profile_receipt_sha256": "9c1a9680915ffd1d3ab2788801c37f7554b0286a4545cbc97520bf047b5925f4",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5014007at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5014007at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5014007at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "3e1fd2845c03f662fd7b0d9e352e031866f41d7eb0010b831b498980f8bf28cc",
+        "baseline_plus_candidates.faa": "7bdbd389ec9d83c918952fb174d71ce6efe83a928ed22d1428971b43ca780a75",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "40b5d70c20a8b6ae8e61e75783dc1f01a20d0a7ad8d9be8400b565cf9f1739aa",
+        "candidate_unaligned.faa": "ce686efcb76e5c5f5e4e6aaff4ff7c4c78711b2d5062099f8838bd3b49c039e0"
+      }
+    },
+    {
+      "marker": "5015742at2759",
+      "profile_model_sha256": "dae13a168ad28ac4e65666c9a2b70e0a2cf83ca0c041e2d463342bb89574b8fe",
+      "baseline_profile_receipt_sha256": "12e460dc69af41989dfa20754203dea0d7eef1751b5c47c18d334beee514cb3f",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5015742at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5015742at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5015742at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "dc91189d393536e34e0aaa83f38edf10055f657a5f3b6a3a07d0014f5d607ccc",
+        "baseline_plus_candidates.faa": "fd3337ad91a59ab79d153dca9dff2203b4ecb41f2e5aa454205ca263610bddaf",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "e7d96e9c9ee693e616012408d82c631ca2f2d824a3be06a0ca8cd86c499d9106",
+        "candidate_unaligned.faa": "7ab19ca3caad7b99afa4431fbcf5956152a2d8fbb9525385304f4580a96f8df7"
+      }
+    },
+    {
+      "marker": "5015876at2759",
+      "profile_model_sha256": "bf6636ca7514400acf2ca5d41bad5a5c0a9c2b0378ee1c76dfb3cc6fe3438897",
+      "baseline_profile_receipt_sha256": "95361b4887a39364975ae6c5b049889036224baaec76e42b61ef4ec15bbe86ac",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/5015876at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/5015876at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/5015876at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "ec39f80becaae48bf9eaf3d6c1bf1445f7cc612f8463700bc53d61f41f0df01e",
+        "baseline_plus_candidates.faa": "8231b969fdc8f3c7c81465787025dd430e9cf3c3ed307b6c36dca5fec4f84c05",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "6e14558781b39e075ce187ff585ad955241f37cfefadc665665697a7e4351f32",
+        "candidate_unaligned.faa": "b846ce4582f50dac43c36d4e61a39cdac903d76e6d2c8abd17bfbc13ad300dd9"
+      }
+    },
+    {
+      "marker": "760428at2759",
+      "profile_model_sha256": "97c246a4a2f091f6e86c58c546cd872ec94877a3966f0d80d137464a98a65825",
+      "baseline_profile_receipt_sha256": "9baadf93e1f6f4c2d6676e85715dfe06036ef4080fe36b0f4fddc90e0308c330",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/760428at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/760428at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/760428at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "3ca86d8f9a841901f8898f476502e16ec2f81f8ad4e64a8ffc8ad5e22147a37c",
+        "baseline_plus_candidates.faa": "f6fc36afc905d882ee1564d32ad91318b76a3508bf142e115f6d77442f462621",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "12b88dd302ca4e6e78efd86612c8c70fb24d090f3d18f284f7f9ae9c422efedd",
+        "candidate_unaligned.faa": "15dff6c7a400f9ebcf5528affb494667042f5260d443bdffb31f7b7ffda5f912"
+      }
+    },
+    {
+      "marker": "776280at2759",
+      "profile_model_sha256": "45f3adcdaf7db6a4e3e871c94a02297443023bbce605fc7df00619b63fead4ec",
+      "baseline_profile_receipt_sha256": "d49a62934226ffcbba8077eec447bae161a3dc7cc61dbe19612395ec24e4ed2c",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmalign",
+        "--amino",
+        "-o",
+        "results/qc/fcs-alternative-profile-alignments-v1/776280at2759/candidates.sto",
+        "data/busco_downloads/lineages/eukaryota_odb12.2/hmms/776280at2759.hmm",
+        "results/qc/fcs-alternative-profile-alignments-v1/776280at2759/candidate_unaligned.faa"
+      ],
+      "artifacts": {
+        "candidate_projected.faa": "28602baa004ed3843daf00611ba76d6e08b9d58b17d3233f974847cd6848b378",
+        "baseline_plus_candidates.faa": "6c08062b69af38e4cdde69da8b89e7f914e84bcfb4df3d82588d00c08b732f4b",
+        "alignment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "candidates.sto": "0526d59eb4d7abd90c6a70a0b3f8adc88d8e4d1e9fa5c6c44ce71939a6af4340",
+        "candidate_unaligned.faa": "ccc856cf185df9b34df3a4ced3b45b1d3fec00a8d4d040ecebfd68c0d88af9e6"
+      }
+    }
+  ],
+  "artifacts": {
+    "candidate_residue_mapping.tsv": "daf9dac8ddb119bdedaa95ba3d2e4dedf0f114df7fd38e5ab9b137c9fda891d8",
+    "candidate_alignment_review.tsv": "6cc2acb3ad08c4359c15c17623f0a6eba7ada913d65a19e462baabf8152fcfe8"
+  },
+  "interpretation": "Candidate proteins aligned against the same marker HMMs and projected to the unchanged baseline matrix columns. Full sequence and residue-coordinate readback passed; original 526 baseline entries retained in augmented review files, including fully missing per-marker rows. No phylogeny inferred, species count increased, orthology accepted, candidate replaced, CDS frame repaired or structure predicted."
+}

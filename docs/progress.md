@@ -2394,3 +2394,18 @@ contains a split grouping N. cerealis with four Candida entries, reported SH-aLR
 87.2. This marker-specific discordance contrasts with concatenated-guide
 neighbors and motivates source review; it is not contamination confirmation or
 whole-genome taxonomic reassignment. Baseline/sensitivity inputs remain unchanged.
+
+
+Alternative candidate alignment checkpoint: 41 proteins across 33 markers were
+projected onto the unchanged profile-matrix columns using the original pinned
+HMMs. Independent Stockholm/coordinate readback checked 14,798 candidate site
+rows, 9,855 observed candidate residues and 5,757,596 unchanged baseline
+characters. Retained-site coverage min/median/max is 19.97%/74.63%/100%.
+All candidates have observed residues; 1,465 all-missing baseline marker rows
+are explicitly identified for exclusion before review-tree inference. None of
+these candidates is an accepted replacement. See assembly-quality-workflow.md
+and metadata/fcs_alternative_profile_alignment_{receipt,audit}.json.
+Original and long-sequence ESMFold producers, both baseline paired-fit queues,
+both FCS sensitivity fit queues, first PMSF run and nuisance-reoptimized codon
+branch profiles were verified live at this checkpoint. The project remains
+incomplete; gene-copy placement and the queued sensitivity results are pending.
