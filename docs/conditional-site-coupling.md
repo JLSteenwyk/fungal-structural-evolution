@@ -157,3 +157,18 @@ has passed its pair-grid and sampled-numerical audit. Site-rate refits, updated
 site/exposure summaries and re-estimation of the conditional coupling models
 remain necessary before claiming robustness to this omission. FCS overlap itself
 is a review signal, not independent confirmation of contamination.
+
+Full-cohort normalized exposure datasets are now assembled for the eventual
+coupling refits. The earlier cohort combines 56 unchanged markers with 16 changed
+markers: 712,769 retained observations after 2,167 observed-residue omissions.
+The combined cohort contains 71 unchanged and 18 changed markers: 1,696,368
+retained observations after 2,667 omissions. Every affected row matches the
+audited changed-marker normalization; the full retained amino-acid observation
+grid is checked against the respective alignments. Independent readback checked
+all 16 fields of every retained row against the filtered baseline (11,404,304
+and 27,141,888 field values). These cohorts overlap and are not independent
+replicates. This completes the full exposure input, not the rate-frame merge or
+coupling refit. Source receipts and readbacks are recorded in
+`metadata/{esmfold,esmfold_combined}_full_fcs_accessibility_*.json`; reproducible
+scripts are `merge_fcs_normalized_accessibility.py` and
+`readback_full_fcs_accessibility.py` in `scripts/`.

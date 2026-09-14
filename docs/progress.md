@@ -2546,3 +2546,16 @@ paired-fit receipts reached 488/496 expanded AlphaFold, 160/356 combined ESMFold
 60/64 earlier ESMFold FCS sensitivity and 28/72 combined FCS sensitivity;
 complete-batch audits remain pending. Conditional MG94 branch-parameter
 profiles reached 907/1,655 complete cases; the producer remains live.
+
+Full FCS-sensitivity normalized exposure inputs completed for both ESMFold
+cohorts. Reused all 56/71 unchanged markers and verified the affected 16/18
+markers against their audited normalized rows. Full retained alignment grids
+contain 712,769/1,696,368 observations, with 2,167/2,667 omissions. Independent
+readback checked every retained field against the baseline after the specified
+whole marker/taxon omissions (11,404,304/27,141,888 values); source and output
+hashes all match. No site-rate frame or coupling results were merged yet.
+Expanded AlphaFold paired fitting advanced to 492/496 individual receipts;
+its parent and downstream controller remain live, without a complete-batch
+receipt. The previous turn was progress (new scoped assembly-availability
+evidence and reproducible inventory); this turn completed the full exposure
+inputs needed by the forthcoming coupling sensitivity.
