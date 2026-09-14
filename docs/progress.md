@@ -2465,3 +2465,13 @@ Controllers PID 3786355/session 6692 and PID 3786372/session 76128; revalidate
 before any restart. Full configurations, commands, source/dependency hashes
 and resource estimates are versioned under metadata/fcs_rate_analysis_*.
 Merging unchanged baseline markers and re-estimating coupling remain pending.
+
+Marker-tree support snapshot v4 now covers 48/125 completed trees and 22,705
+internal edges (22,454 reported SH-aLRT values, 251 unreported). An independent
+source/input/split readback reconstructed all retained sequences from the frozen
+profile matrix, verified coverage exclusions and 8,465,734 alignment characters,
+and recovered all internal splits through undirected graph-edge removal.
+Fitted model labels, attached support/branch values and report hashes checked.
+77 markers remain pending; completion-order bias prevents full-batch discordance
+claims from this snapshot. See docs/phylogenetic-workflow.md and versioned v4
+snapshot/readback receipts and marker tables. Baseline FCS flags remain relevant.

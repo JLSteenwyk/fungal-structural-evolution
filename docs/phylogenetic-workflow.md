@@ -269,3 +269,35 @@ successful stage receipts and checkpoints each completed stage. A failed or
 uncheckpointed partial stage requires review. Full model/profile/support audits
 remain necessary after execution. This is the baseline full-manifest crossed
 comparison; separate FCS and taxon-identity sensitivities remain required.
+
+### Completed-marker support snapshot v4
+
+The fourth immutable support snapshot audits 48 of the 125 planned individual
+marker trees. It contains 22,705 internal splits: 22,454 with reported SH-aLRT
+support and 251 with no reported support value. Missing support is retained as
+missing and must not be interpreted as zero. These are 1,000-replicate SH-aLRT
+values, not bootstrap percentages or posterior probabilities.
+
+An additional independent readback reconstructed every retained sequence from
+the original profile matrix under the established coverage rule, checked all
+excluded-taxon counts, and verified 8,465,734 retained alignment characters.
+It recovered every internal bipartition by deleting an edge from an undirected
+tree graph and traversing the resulting component, then checked split identity,
+attached support and branch length against the snapshot. Fitted model labels
+were checked against the allowed LG/WAG/JTT+F+G4 family; report and coverage-file
+hashes are retained for every completed marker.
+
+```bash
+python scripts/audit_marker_tree_support.py --trees results/phylogeny/marker-gene-trees-v2 --output results/phylogeny/marker-tree-support-snapshot-v4 --allow-incomplete
+python scripts/readback_marker_tree_snapshot.py --snapshot results/phylogeny/marker-tree-support-snapshot-v4 --trees results/phylogeny/marker-gene-trees-v2 --matrix results/phylogeny/profile-matrix-50-v1 --output results/phylogeny/marker-tree-support-readback-v4
+```
+
+Receipts and marker summaries are versioned in
+`metadata/marker_tree_support_{snapshot,readback}_v4*`; full split tables remain
+outside Git. The 77 pending marker trees are not failed or excluded trees.
+Completion order can depend on alignment length, taxon coverage and inference
+difficulty, so this subset cannot stand in for full-batch discordance estimates.
+The checks establish input and split integrity, not model adequacy, rooting,
+orthology, species-tree concordance or reconciliation. FCS-flagged observations
+remain present in these original baseline trees and require their planned
+sensitivity and copy reviews.
