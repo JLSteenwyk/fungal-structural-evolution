@@ -68,3 +68,12 @@ in `results/temporary_cooling_20260914_reapplied_state.json`. Use these new
 paths, rather than the original state, for subsequent recovery. The systemd
 service is `fungal-reapply-cooling-20260914.service`; stopping that service
 normally sends SIGTERM and restores the recorded settings.
+
+At the September 14 12:14 status check, the relative timer displayed 13:44:30
+instead of the previously recorded 12:39:56 deadline. The cause was not
+established. A replacement calendar timer now explicitly enforces September
+14 12:39:56 America/New_York, and the old timer was stopped. The active timer
+is `fungal-reapply-cooling-deadline-20260914.timer`; its service is
+`fungal-reapply-cooling-deadline-20260914.service`. The reapplication config
+and state paths are unchanged. Correction and verification are recorded in
+metadata/temporary_cooling_20260914_timer_correction.json.
