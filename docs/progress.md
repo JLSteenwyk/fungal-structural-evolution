@@ -2377,3 +2377,20 @@ geometry checks. Both fit-to-benchmark controllers were verified live and waitin
 on the exact sensitivity fit producers. Full fit audits and sensitivity path
 summaries will follow successful fitting; matched-pair baseline comparisons,
 uncertainty and updated site-rate coupling remain pending.
+
+### Alternative-hit recovery inventory and exploratory gene-tree review
+
+Reviewed all raw HMMER outputs and final BUSCO calls for the 54 FCS-overlapping
+marker observations: 1,004 marker–protein hits, with no unflagged alternative in
+final BUSCO calls. Raw outputs yield 41 alternatives across 35 observations that
+lack recorded coding overlap and reach the absolute dataset score cutoff. Their
+exact sequences and audit metadata are staged for review; 37 have exact CDS
+translations and four non-triplet CDS records. They are not accepted replacements.
+The installed BUSCO relative-score filter was documented without attributing an
+unverified rejection cause to individual candidates.
+
+For one exploratory affected marker (129234at2759), the completed gene tree
+contains a split grouping N. cerealis with four Candida entries, reported SH-aLRT
+87.2. This marker-specific discordance contrasts with concatenated-guide
+neighbors and motivates source review; it is not contamination confirmation or
+whole-genome taxonomic reassignment. Baseline/sensitivity inputs remain unchanged.

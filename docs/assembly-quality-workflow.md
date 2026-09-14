@@ -142,3 +142,66 @@ python scripts/trace_fcs_marker_analysis_exposure.py --mapping results/qc/fcs-cd
 Full intersection and review tables remain in these result directories; compact
 receipts, the 86-taxon mapping summary, 54 affected marker observations and
 analysis-exposure tables are versioned under `metadata/fcs_*`.
+
+## Existing alternative marker hits reviewed
+
+To assess whether affected marker coverage can be recovered, reviewed every
+existing raw HMMER hit and final BUSCO call for all 54 flagged marker–taxon
+observations. The review verifies original protein lengths and sequence hashes,
+representative decisions, source BUSCO-table hashes, HMM query identities and
+coordinates, and complete HMMER report trailers. It does not rerun searches or
+replace any selected sequence.
+
+There are 1,004 raw marker–protein hits in these reports. No alternative final
+BUSCO call lacks a recorded CDS/FCS overlap. Raw outputs contain 567 alternative
+hits without recorded overlap; 41 of those meet or exceed their marker's absolute
+dataset score cutoff, covering 35 affected marker–taxon observations. The 41
+candidates comprise 32 N. cerealis and nine A. colombiana proteins. Their HMM
+profile union coverage ranges from 0.2411 to 0.9987 (median 0.8056); coverage and
+copy identity therefore need individual review.
+
+The installed BUSCO 6.1.0 source also contains a relative-score filter: within a
+hit category, matches below 85% of the best score can be removed. Source hashes
+and the precise function are recorded in
+`metadata/busco_relative_hit_filter_source_review.json`. This demonstrates why
+absolute cutoff passage is not equivalent to final acceptance; it does not
+reconstruct the individual rejection reasons for these candidates.
+
+All 41 exact candidate protein sequences were materialized for review and fully
+read back against their original hashes. Existing strict CDS audits report 37
+exact translations and four non-triplet CDS records. These checks do not establish
+orthology, lack of contamination or a suitable replacement. Full gene-copy and
+phylogenetic placement review, alignment coverage, and CDS qualification remain
+necessary. No candidate has been substituted into a baseline or sensitivity run.
+
+```bash
+python scripts/review_fcs_marker_alternative_hits.py --output results/qc/fcs-marker-alternative-hits-v1
+python scripts/prepare_fcs_alternative_review_sequences.py --review results/qc/fcs-marker-alternative-hits-v1 --output results/qc/fcs-alternative-review-sequences-v1
+```
+
+Raw-hit tables and candidate FASTA remain outside Git; compact receipts, all 54
+marker summaries and the 41 candidate review rows are versioned under
+`metadata/fcs_*alternative*` and `metadata/fcs_alternative_candidate_review.tsv`.
+
+### Exploratory marker-specific phylogenetic discordance
+
+A completed tree for marker 129234at2759 (472 taxa, 166 retained profile-alignment
+columns) places the FCS-flagged N. cerealis protein KAJ9108408.1 on a five-taxon
+unrooted split with Candida albicans, C. dubliniensis, C. maltosa and C. tropicalis.
+The separating branch has reported SH-aLRT support 87.2 from 1,000 replicates;
+this is not bootstrap support or a probability of contamination. Tree/input
+hashes, tip grids, dimensions and finite branches were verified, and the split
+was identified explicitly from both sides of each unrooted edge.
+
+This contrasts with the concatenated guides' nearest Naganishia neighbors and
+supports investigating individual marker provenance. It does not by itself
+distinguish contamination, misannotation, paralogy, other gene histories or model
+error, and it does not justify reassignment of the whole assembly. This case was
+selected for exploratory source review after the FCS/high-distance findings.
+
+```bash
+python scripts/review_flagged_naganishia_marker_tree.py --output results/qc/naganishia-flagged-marker-tree-review-v1
+```
+
+The versioned receipt is `metadata/naganishia_flagged_marker_tree_review.json`.
+Other marker placements and proposed alternatives remain to be evaluated.

@@ -1,0 +1,85 @@
+{
+  "status": "complete_exploratory_flagged_marker_tree_source_review",
+  "marker": "129234at2759",
+  "focal_taxon": "F610337",
+  "focal_species": "Naganishia cerealis",
+  "focal_protein": "KAJ9108408.1",
+  "fcs_actions": "EXCLUDE",
+  "tree_taxa": 472,
+  "columns": 166,
+  "largest_ascomycota_plus_focal_split": {
+    "taxa": [
+      "F42374",
+      "F5476",
+      "F5479",
+      "F5482",
+      "F610337"
+    ],
+    "sh_alrt_support": 87.2,
+    "separating_branch_length": 0.1295966516
+  },
+  "nearest_tree_path_taxa": [
+    {
+      "taxon_id": "F5482",
+      "species_name": "Candida tropicalis",
+      "path_length": 0.5156480525
+    },
+    {
+      "taxon_id": "F5476",
+      "species_name": "Candida albicans",
+      "path_length": 0.5733798522999999
+    },
+    {
+      "taxon_id": "F4903",
+      "species_name": "Williopsis jadinii",
+      "path_length": 0.5831518867000001
+    },
+    {
+      "taxon_id": "F42374",
+      "species_name": "Candida dubliniensis",
+      "path_length": 0.6075075274999999
+    },
+    {
+      "taxon_id": "F5479",
+      "species_name": "Candida maltosa",
+      "path_length": 0.6627756350999999
+    },
+    {
+      "taxon_id": "F4927",
+      "species_name": "Hansenula anomala",
+      "path_length": 0.6794765173000001
+    },
+    {
+      "taxon_id": "F54195",
+      "species_name": "Ascoidea rubescens",
+      "path_length": 0.7468281581
+    },
+    {
+      "taxon_id": "F1005962",
+      "species_name": "Ogataea parapolymorpha",
+      "path_length": 0.7724127467999999
+    },
+    {
+      "taxon_id": "F4918",
+      "species_name": "Pachysolen tannophilus",
+      "path_length": 0.8163557468
+    },
+    {
+      "taxon_id": "F43959",
+      "species_name": "Saccharomycopsis crataegensis",
+      "path_length": 0.8545502818
+    }
+  ],
+  "source_gene_tree_receipt_sha256": "75486c99d944d249be9a1d281ab41920d0701cc101d1e126d4a5b0a829ce9413",
+  "tree_sha256": "029b5c4c5ab52cc039334a04301dba45dee0086f35d1d3d78ab634fb41ee2ea8",
+  "alignment_sha256": "ba9003fdece3e1c95331609f9f332e344642b9688fdfca769b3f95933684ce76",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "fcs_overlap_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+  "script_sha256": "02bc330d79275e9fbe30a577309f6576ff17d4475a1259fffe46326f11249f09",
+  "artifacts": {
+    "reported_split_taxa.tsv": "6b0b804ce21a9c29260f2b411304aa4d85451f974aed5125847c2c0b82ca52f8"
+  },
+  "interpretation": "Exploratory marker-specific discordance: focal manifest Basidiomycota entry lies on an unrooted split with Ascomycota entries in this completed gene tree. Support is reported SH-aLRT, not bootstrap probability or a recomputed test. This is consistent with the FCS concern but does not distinguish mixed-source assembly, misannotation, paralogy, gene history or model error. No genome-wide taxonomic reassignment.",
+  "full_receipt_path": "results/qc/naganishia-flagged-marker-tree-review-v1/receipt.json",
+  "full_receipt_sha256": "c037b0e641f99b16fc2cdfd149b5978f160f15fee2d504681157543acd14dc3b"
+}

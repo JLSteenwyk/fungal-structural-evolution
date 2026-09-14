@@ -1,0 +1,30 @@
+{
+  "status": "complete_full_flagged_marker_existing_hit_review",
+  "affected_marker_taxon_observations": 54,
+  "raw_marker_protein_hits": 1004,
+  "alternative_final_calls_without_overlap": 0,
+  "alternative_raw_hits_without_overlap": 567,
+  "alternative_raw_hits_without_overlap_at_or_above_dataset_score_cutoff": 41,
+  "affected_observations_with_score_passing_unflagged_alternative": 35,
+  "candidate_counts_by_taxon": {
+    "F610337": 32,
+    "F27376": 9
+  },
+  "source_hashes": {
+    "mapping": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+    "audit": "61d30bf005ca6a531a1ba22a9062319e9466d5e5f73f2cda01b7feee6bc904d6",
+    "markers": "6f4b0abafb51810a042214b059c368725e79386bf1a5038f599e4c597b8c6880",
+    "representatives": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "proteins": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+    "cutoffs": "2c5f0fd3bbc14bf920644476ad5b59a780075295217d44ce3040a5307aa2c29e"
+  },
+  "script_sha256": "f830e5ef0fd9a02b1b9d215b021b1a5d3b6ef995f9b07e5730b38dd737efd164",
+  "artifacts": {
+    "all_raw_hit_review.tsv": "407211f6db79d0d34bd6225dfb6e61946c78ad65f554fdbec49349a6d2af09a3",
+    "score_passing_unflagged_alternatives.tsv": "45ab7f7cfb48c36d4641c8214cffcf1d3758d9b8377d6d61cd4bf2040894cb05",
+    "marker_alternative_summary.tsv": "6b7e09f58207d9be1cba94e2c15687467ce98737e861031693ef5ac7819b17d8"
+  },
+  "interpretation": "All existing raw HMMER hits and final BUSCO calls reviewed for every FCS-overlapping selected marker. Score cutoff comparison alone does not reproduce BUSCO acceptance, establish coverage/orthology, prove a hit free of contamination, or authorize replacement. Candidates require full gene-copy/phylogenetic, CDS and alignment review; no marker sequence was changed or inferred.",
+  "full_receipt_path": "results/qc/fcs-marker-alternative-hits-v1/receipt.json",
+  "full_receipt_sha256": "ca1957cd21bba6b94012ae83b4fc557aee70f93905493ad95ce57ed397a4bfaa"
+}

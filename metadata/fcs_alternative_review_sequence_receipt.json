@@ -1,0 +1,33 @@
+{
+  "status": "complete_alternative_review_sequence_materialization",
+  "source_review_receipt_sha256": "ca1957cd21bba6b94012ae83b4fc557aee70f93905493ad95ce57ed397a4bfaa",
+  "script_sha256": "392df7dce9a11d944b21bed99d09331023b967f1324637990d562ff4df56d482",
+  "candidate_marker_protein_records": 41,
+  "unique_proteins": 41,
+  "marker_taxon_observations": 35,
+  "cds_status_counts": {
+    "exact_translation": 37,
+    "non_triplet_length": 4
+  },
+  "source_proofs": [
+    {
+      "taxon_id": "F610337",
+      "protein_sha256": "1c49e12c3c3240c764fbcd23d0a081736eb22154f2715c5e84a2cc8924d51040",
+      "cds_audit_receipt_sha256": "4950de9148f3b1df4a8ee57ea6caeb8ef4e31dac4b626cc61d52b1cb8c8e28f6",
+      "cds_audit_table_sha256": "9d05b6d0f943d5e1ee97840a4d7b623c47dada6ab7a6e78972f5f6723af45c30"
+    },
+    {
+      "taxon_id": "F27376",
+      "protein_sha256": "bc86104115c5c2ebe96d338effcafcb47510867c9cc54e88d5ff70d57f29f7ca",
+      "cds_audit_receipt_sha256": "56165e64bf4a7ca4b76151e441e9db38addaab1b31b9af837f6358f8b71af35a",
+      "cds_audit_table_sha256": "9873bf3a2e647cfb052e1ab217e099903b84de6ed26b190f4ad6b4a21389202e"
+    }
+  ],
+  "artifacts": {
+    "candidate_review.tsv": "45afc5d5e643415c0a7ea6272ac1c4ff4bab1cc09de0eb001a40929a460fe01f",
+    "candidate_proteins.faa": "10c878cec08e57f8c565d7a30725c2e72f9ed83057793e03ff3d2e5a558fee7f"
+  },
+  "interpretation": "Exact original alternative-protein sequences and existing CDS translation evidence only. Raw HMM score passage and lack of recorded FCS overlap do not establish orthology or cleanliness. No marker replacements, new predictions or inferred evolutionary results.",
+  "full_receipt_path": "results/qc/fcs-alternative-review-sequences-v1/receipt.json",
+  "full_receipt_sha256": "e97a89a845a5fda18f9ee98aed91e7fdd28dec367425678fa8d0d7e7b3d11f89"
+}

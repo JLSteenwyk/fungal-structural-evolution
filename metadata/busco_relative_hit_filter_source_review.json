@@ -1,0 +1,11 @@
+{
+  "status": "installed_source_relative_hit_filter_review",
+  "version": "BUSCO 6.1.0",
+  "source_path": ".cache/envs/busco/lib/python3.12/site-packages/busco/busco_tools/hmmer.py",
+  "source_sha256": "aaa518ae30a8bdbb5168ac0800530e9683ae9f4ef7a263a287ae50e466fa37bd",
+  "archived_source": "results/environments/busco-relative-hit-filter-review-v1/hmmer.py",
+  "version_source_sha256": "f6c0983fa137d1478d009815907f3218f6c19cbd46f7d704b259b0ad56da6cfd",
+  "function": "_remove_low_scoring_matches",
+  "observation": "Within a BUSCO hit category, the installed implementation removes matches scoring below 85% of the best score when multiple matches exist.",
+  "interpretation": "This helps explain why exceeding the absolute dataset score cutoff need not produce a final BUSCO call. It is not a replay establishing the rejection reason for any individual alternative; category, length and other filters also matter."
+}
