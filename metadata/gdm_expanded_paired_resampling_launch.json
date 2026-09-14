@@ -1,0 +1,42 @@
+{
+  "status": "verified_live",
+  "producer_pid": 3921215,
+  "producer_start_ticks": "183439239",
+  "command": [
+    "python",
+    "scripts/run_paired_branch_resampling.py",
+    "--inputs",
+    "results/phylogeny/paired-inputs-gdm-expanded-v1",
+    "--models",
+    "data/structural_models/garg-hochberg-v3",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+    "--audit",
+    "results/phylogeny/paired-fit-audit-gdm-expanded-v1",
+    "--output",
+    "results/phylogeny/paired-resampling-gdm-expanded-v1",
+    "--replicates",
+    "200",
+    "--blocks",
+    "1",
+    "10",
+    "30"
+  ],
+  "session_id": 20841,
+  "output": "results/phylogeny/paired-resampling-gdm-expanded-v1",
+  "config_sha256": "03760028d54f8b0d5d648cd3cc60a7713b6ce7f52667fa2d1a4f431817df7548",
+  "resource_plan_sha256": "ec63a52ad2691c04e2295b655af8e44e956091535aeac17b53af277bd8eeb846",
+  "audit_controller": {
+    "pid": 3923340,
+    "start_ticks": "183442641",
+    "command": [
+      "python",
+      "scripts/advance_paired_resampling_audit.py",
+      "--config",
+      "metadata/gdm_expanded_paired_resampling_audit_controller_config.json"
+    ],
+    "session_id": 38481
+  },
+  "startup_check_completed_draw_receipts": 141,
+  "startup_check_active_fit_children": 8
+}

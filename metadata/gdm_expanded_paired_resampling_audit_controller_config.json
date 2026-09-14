@@ -1,0 +1,34 @@
+{
+  "producer_pid": 3921215,
+  "producer_start_ticks": "183439239",
+  "inputs": "results/phylogeny/paired-inputs-gdm-expanded-v1",
+  "fits": "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+  "resampling": "results/phylogeny/paired-resampling-gdm-expanded-v1",
+  "audit_output": "results/phylogeny/paired-resampling-audit-gdm-expanded-v1",
+  "controller_output": "results/phylogeny/paired-resampling-audit-controller-gdm-expanded-v1",
+  "pinned_files": {
+    "scripts/advance_paired_resampling_audit.py": "936cc7074d533ba0f443f3378b92e53d16048a384ce270e3caafaf3a2b9ece49",
+    "scripts/summarize_paired_resampling.py": "f637b7ba40d3b079b41f34f483d276d7f260fd993d890f53a1486fe55652fb61",
+    "scripts/run_paired_branch_resampling.py": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/phylogeny/paired-resampling-gdm-expanded-v1/config.json": "03760028d54f8b0d5d648cd3cc60a7713b6ce7f52667fa2d1a4f431817df7548",
+    "results/phylogeny/paired-inputs-gdm-expanded-v1/receipt.json": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "results/phylogeny/paired-marker-fits-gdm-expanded-v1/receipt.json": "008916dd741ed35933af61029fbf35627b40a5a6929236c4b39d38681d0f7a5e",
+    "results/phylogeny/paired-fit-audit-gdm-expanded-v1/receipt.json": "dc227a97cf285fedfe799c8209869e8de8e9cd0fcf3794cf0c4641f7795916c4",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5"
+  },
+  "resource_plan": {
+    "cpu_workers": 1,
+    "memory_gb": 16,
+    "disk_gb": 10,
+    "estimated_runtime_hours": [
+      1,
+      24
+    ],
+    "basis": "Full 74400 draw coverage, saved alignments and fitted-tree readback on existing host. No new charges."
+  }
+}

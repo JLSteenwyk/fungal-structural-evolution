@@ -1,0 +1,31 @@
+{
+  "source_receipts": {
+    "inputs": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "models": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "fits": "008916dd741ed35933af61029fbf35627b40a5a6929236c4b39d38681d0f7a5e",
+    "audit": "dc227a97cf285fedfe799c8209869e8de8e9cd0fcf3794cf0c4641f7795916c4"
+  },
+  "script_sha256": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+  "tree_helper_sha256": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+  "numpy_version": "2.2.6",
+  "rng": "PCG64; seed=first 64 bits of SHA256(paired-bootstrap-v1:marker:block:replicate)",
+  "executable": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+  "executable_sha256": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+  "replicates": 200,
+  "block_lengths": [
+    1,
+    10,
+    30
+  ],
+  "workers": 8,
+  "threads_per_fit": 1,
+  "markers": 124,
+  "planned_paired_draws": 74400,
+  "models": {
+    "aa": "LG+F+G4",
+    "3di": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/structural_models/garg-hochberg-v3/Q.3Di.AF+G4"
+  },
+  "method": "Same resampled columns for every taxon and both alphabets; circular blocks over retained alignment columns, concatenated then truncated to original length. Refit branches and gamma (plus AA empirical frequencies) on fixed original sequence topology. Block=1 is ordinary site resampling.",
+  "limits": "Conditional sampling sensitivity only: no topology, dating, prediction, alignment or model uncertainty. Local blocks do not preserve all nonlocal 3Di feature dependencies; stationary/circular assumptions are not established for proteins. No calibrated acceleration tests or structural/AA ratios.",
+  "resource_plan": "See the per-run metadata resource plan; draw count is recorded above. Eight workers and requested 2 GB/fit. Runtime and disk depend on taxon/column counts. Existing authorized host only."
+}

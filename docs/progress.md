@@ -2598,3 +2598,22 @@ orthology. The remaining queue remains live. Full findings, source-quality
 caveats and next qualification requirements are in docs/fcs-copy-tree-review.md
 and metadata/fcs_copy_tree_review_4764044at2759.json. No protein replacement or
 new prediction was made from this single-tree result.
+
+Launched conditional paired resampling for all 124 expanded AlphaFold markers
+after their completed fit audit. The established workflow uses 200 paired draws
+at circular block lengths 1, 10 and 30: 74,400 draws and up to 148,800 fixed-
+topology fits (AA LG+F+G4 and structural AF+G4). Prelaunch resource plan reserves
+32 GB memory and 250 GB disk with a broad 2–96 hour planning envelope; available
+host resources were checked and no paid resources provisioned. Producer PID
+3921215/session 20841 and its start identity are recorded in metadata. Startup
+inspection found eight active fit children and 141 completed draw receipts.
+The full audit controller is live under session 38481 and will wait for the
+exact producer before checking the complete output. Script/source hashes,
+configuration, resources and launch identities are in
+metadata/gdm_expanded_paired_resampling_*.json. No resampling batch is declared
+complete. These draws measure conditional sampling sensitivity, not calibrated
+confidence intervals: topology, dating, alignment, prediction and model
+uncertainty remain unpropagated, and local blocks do not preserve all nonlocal
+structural-alphabet feature dependencies. The preceding turn was a verified
+wait with advancing live jobs; this turn started the next required uncertainty
+analysis on the completed AlphaFold dataset.

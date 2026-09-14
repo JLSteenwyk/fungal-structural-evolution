@@ -1,0 +1,31 @@
+{
+  "status": "prelaunch_full_expanded_alphafold_paired_resampling",
+  "markers": 124,
+  "replicates_per_block": 200,
+  "block_lengths": [
+    1,
+    10,
+    30
+  ],
+  "paired_draws": 74400,
+  "maximum_fits": 148800,
+  "workers": 8,
+  "threads_per_fit": 1,
+  "requested_memory_gb_per_fit": 2,
+  "memory_gb_planning_total": 32,
+  "disk_gb_planning": 250,
+  "wall_hours_planning": [
+    2,
+    96
+  ],
+  "estimate_basis": "Same previously completed 72-marker ESMFold workflow and 200 draws per block length, expanded to 124 markers (1.72 times as many draws) with different taxon/site counts. Fixed-topology refits; sequence support searches are not repeated. Broad planning envelope, not measured runtime or guarantee.",
+  "minimum_retained_columns": 73,
+  "available_memory_bytes": 559215726592,
+  "free_disk_bytes": 12532926152704,
+  "script_sha256": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+  "input_receipt_sha256": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+  "fit_audit_receipt_sha256": "dc227a97cf285fedfe799c8209869e8de8e9cd0fcf3794cf0c4641f7795916c4",
+  "models": "AA LG+F+G4 and structural AF+G4 only; paired identical column draws",
+  "limits": "Conditional sampling sensitivity, not calibrated confidence intervals. Does not propagate topology, alignment, prediction, dating or model uncertainty; local blocks omit nonlocal structural-alphabet dependence. No structural/AA branch ratios.",
+  "cost": "Existing authorized host; no new charges"
+}
