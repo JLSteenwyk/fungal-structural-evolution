@@ -1,17 +1,18 @@
 # Progress and evidence
 
-| Milestone | State | Completion evidence required |
+| Milestone | Current verified state | Evidence and remaining requirements |
 |---|---|---|
-| Local repository and original objective | Created | Git history and docs/objective.txt |
-| GitHub remote | Published and public visibility verified via GitHub API | https://github.com/JLSteenwyk/fungal-structural-evolution |
-| Catalog discovery | NCBI fungal catalogs inventoried; additional sources pending | metadata/source_receipts.json and metadata/catalog_summary.json |
-| 500 fungi + 25 outgroups | 501 fungal entries +25 outgroups acquired; species identity review pending for 22 fungal labels | metadata/analysis_manifest.tsv; metadata/taxon_label_review.tsv |
-| Data QC and structure inventory | Broad BUSCO and assembly-statistics collection complete for 526; exact-sequence structure inventory ongoing; lineage-specific BUSCO complete for all 501 fungi; contamination QC pending | Per-taxon receipts; metadata/busco_dataset_receipt.json |
-| Species tree and discordance | 125 profile and MAFFT alignments complete; 49,027-site profile and 63,750-site MAFFT matrices built; guide and gene trees running; support/discordance/sensitivity pending | metadata/initial_species_matrix_receipt.json; results/phylogeny/ |
-| Families, domains and reconciliation | Representatives prepared for all 526; 64-taxon computational core complete; full assignment running; reconciliation validation pending; marker Pfam search and raw annotation complete; additional full-proteome search running | metadata/orthology_input_manifest.tsv; results/orthology/ |
-| Structural atlas | Frozen snapshots contain 13,153 AlphaFold and 5,121 ESMFold models; paired geometry and experimental benchmarks available with explicit limits; 18,274-model exploratory clustering and residue accessibility running; full-proteome atlas incomplete | metadata/frozen_structure_clustering_config.json; metadata/experimental_coordinate_full_receipt.json; metadata/paired_site_geometry_esmfold_receipt.json |
-| Evolutionary objectives 1–8 | Pending | Estimates, uncertainty, tests and sensitivity |
-| Figures, methods and case studies | QC and exploratory geometry figures/methods available; evolutionary results and case studies pending | docs/figures/; docs/methods-draft.md |
+| Repository and original objective | Public repository and reproducibility records maintained | Git history; docs/objective.txt |
+| Sampling | 501 fungal entries plus 25 outgroups acquired; 21 incomplete fungal labels and two curated hybrids require identity-aware interpretation | metadata/analysis_manifest.tsv; docs/taxon-identity-sensitivities.md; species uniqueness not fully established |
+| Assembly and protein QC | Broad QC for 526 and lineage-specific BUSCO for 501 fungi complete; FCS report inventory and exact coding-overlap audit complete | docs/assembly-quality-workflow.md; 518 usable reports, one checksum mismatch, seven external-source exceptions; biological review and omission/copy sensitivities pending |
+| Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 48/125 marker trees audited in latest frozen snapshot | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
+| Families, domains and reconciliation | 64-taxon core complete; full 526-taxon orthology assignment and additional full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
+| Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
+| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold and combined ESMFold fits running | docs/conditional-site-coupling.md; FCS omission refits required; model, prediction and phylogenetic uncertainty remain |
+| Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; nuisance profiles running; 29 FCS-exposed cases flagged; selection eligibility unresolved |
+| Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
+| Evolutionary objectives 1–8 | Intermediate analyses available; no objective set declared complete | docs/research-plan.md; final branch/clade tests, duplication/domain/ecological analyses, selection and ancestral case studies remain |
+| Figures, methods and mechanistic cases | QC and exploratory figures and methods available | docs/figures/; docs/methods-draft.md; final integrated results and validation proposals incomplete |
 
 ## Chronological execution record
 
@@ -2511,3 +2512,10 @@ approved or date transferred. Full provenance and qualification limits are in
 docs/dating-workflow.md and metadata/published_calibration_*.
 Alternative-copy tree producer was verified live; no completed copy trees were
 available at this checkpoint.
+
+
+Repository status reconciliation: updated the README and leading milestone table
+against current receipts and live job identities. Corrected stale MAFFT-guide,
+FCS-inventory and accessibility states; exposed the FCS caveat beside the initial
+coupling result; linked dating evidence and retained all eight objectives as
+incomplete. Historical execution entries remain unchanged and date-specific.
