@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/dschrempf/mcmc-date",
+  "commit": "cce22b458fbb583863ca53b0f44793719363980c",
+  "artifacts": [
+    {
+      "path": "lib/Mcmc/Tree/Prior/Node/Calibration.hs",
+      "url": "https://raw.githubusercontent.com/dschrempf/mcmc-date/cce22b458fbb583863ca53b0f44793719363980c/lib/Mcmc/Tree/Prior/Node/Calibration.hs",
+      "bytes": 15870,
+      "sha256": "4ded3bde58821df90d6f68d40965f070d165268ac951392b8e7258d162b5d884"
+    },
+    {
+      "path": "lib/Mcmc/Tree/Prior/Node/CalibrationFromTree.hs",
+      "url": "https://raw.githubusercontent.com/dschrempf/mcmc-date/cce22b458fbb583863ca53b0f44793719363980c/lib/Mcmc/Tree/Prior/Node/CalibrationFromTree.hs",
+      "bytes": 3716,
+      "sha256": "171fcf83885e92e42ad5a0dae4ca331f9179aa613f92caa0bd1f1fd5a6530ae9"
+    },
+    {
+      "path": "tests/06-leaves-constant-rate/data/calibrations.csv",
+      "url": "https://raw.githubusercontent.com/dschrempf/mcmc-date/cce22b458fbb583863ca53b0f44793719363980c/tests/06-leaves-constant-rate/data/calibrations.csv",
+      "bytes": 107,
+      "sha256": "d43b5a78161c805744995c363be15ea97f1d7b8e9a28bedcf3a0ea81ce7fa32c"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/dschrempf/mcmc-date/cce22b458fbb583863ca53b0f44793719363980c/README.md",
+      "bytes": 988,
+      "sha256": "5a3abf3e21b60cd1ceec7b37df0183d615936a925cb667096547da3c4d0818a9"
+    }
+  ],
+  "scope": "Source inspection only; not installed or executed. This commit is not established as the version used by the fungal timetree study.",
+  "findings": {
+    "node_target": "MRCA of supplied tip names; no automatic interpretation of a stem/crown word in the CSV interface",
+    "numeric_input": "Each provided age boundary requires its probability-mass field; missing corresponding fields are rejected",
+    "duplicate_checks": "Reviewed checkAndConvertCalibrationData groups entries by identical node path; source explicitly leaves additional conflict checking as TODO",
+    "published_study_version": "Not established; inspected current repository commit must not be attributed to the 2025 study",
+    "study_specific_calibration_input": "Not located in inspected archive member inventory and linked software tree; this is a scoped search, not proof of global absence",
+    "execution": "No software installation, clock inference or project calibration conversion performed"
+  },
+  "tree_inventory_sha256": "3ceb52ce20fdd0081c2fe7f016e1a2e18fd7cf72fa84d343a3d9a6fec663b485"
+}

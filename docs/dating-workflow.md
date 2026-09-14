@@ -113,3 +113,28 @@ candidate facts and independent extraction evidence are versioned in
 `metadata/published_calibration_heading_readback.json`. Full source PDFs/text
 remain outside Git. Next steps are specimen/source review and descendant-based
 mapping of each candidate onto qualified project topologies.
+
+## Dating input implementation review
+
+Inspected the [McmcDate calibration implementation at commit
+cce22b4](https://github.com/dschrempf/mcmc-date/blob/cce22b458fbb583863ca53b0f44793719363980c/lib/Mcmc/Tree/Prior/Node/Calibration.hs)
+and its supplied CSV example. This version targets the MRCA of two tip names and
+requires a probability-mass field for each supplied age boundary. A stem/crown
+label in our literature catalogue is not an executable instruction to this
+interface; it needs a justified conversion into the intended project node.
+The catalogue's numerical ages alone therefore do not specify priors.
+
+The reviewed duplicate-checking routine groups calibrations assigned to the
+same node and includes a TODO for additional conflict checking. Project-level
+compatibility checks across ancestor/descendant nodes remain necessary. These
+are observations about one pinned source version, not claims about every
+McmcDate version or the exact version used in the published fungal study.
+
+Source URLs, commit, file hashes, repository-tree inventory hash and review scope
+are recorded in `metadata/dating_input_source_review.json`. The study-specific
+executable calibration table was not located in the inspected archive member
+inventory or linked software tree. This scoped search does not establish that
+such a table is unavailable elsewhere. No software was installed or executed,
+and no default probability-mass parameters were assigned to the fungal
+calibration candidates. Locating or reconstructing a reviewed configuration
+with explicit node identities and prior parameters remains a dating dependency.

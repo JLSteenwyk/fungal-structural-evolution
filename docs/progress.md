@@ -2519,3 +2519,13 @@ against current receipts and live job identities. Corrected stale MAFFT-guide,
 FCS-inventory and accessibility states; exposed the FCS caveat beside the initial
 coupling result; linked dating evidence and retained all eight objectives as
 incomplete. Historical execution entries remain unchanged and date-specific.
+
+Dating input implementation review completed for pinned McmcDate source commit
+cce22b458fbb583863ca53b0f44793719363980c. Verified that CSV node targeting uses
+MRCA tip names and provided age boundaries require probability-mass fields.
+The literature heading catalogue alone is not an executable calibration model.
+Recorded the inspected duplicate-checking scope and need for cross-node
+compatibility review. The exact study software version and executable fungal
+calibration table remain unresolved; no priors were silently filled in and no
+clock run was launched. Source files and tree inventory are archived outside
+Git; URLs, hashes and findings are in metadata/dating_input_source_review.json.
