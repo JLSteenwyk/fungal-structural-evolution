@@ -236,3 +236,38 @@ python scripts/audit_fcs_candidate_alignments.py --source results/qc/fcs-alterna
 Compact receipts and all 41 coverage rows are versioned in
 `metadata/fcs_alternative_profile_alignment_*`. Full alignments, residue mappings,
 and the 17,399-row sequence-disposition table remain outside Git.
+
+### Exploratory alternative-copy trees launched
+
+Applied the established individual-marker coverage rule to both baseline proteins
+and alternative copies: at least `max(50, ceil(0.30 * retained columns))` canonical
+residues. Of 41 candidates, 38 qualify across all 33 markers. Three candidates
+remain excluded from this tree run, rather than being discarded from the review:
+F27376/CAG8452709.1 (5003856at2759), and F610337/KAJ9110660.1 and
+KAJ9113858.1 (5011777at2759). Their observed fractions are 24.20%, 19.97% and
+26.07%, respectively. Original selected proteins remain in the review alignments
+when they pass the same coverage rule, preserving the ability to compare copies.
+
+Input verification covered all 17,399 source sequence rows and 5,284,204 retained
+characters. It excludes 1,519 sequence rows across these marker alignments,
+including all entirely missing rows and the three below-threshold candidates.
+The full disposition table is stored with the inputs outside Git.
+
+The 33 exploratory trees use IQ-TREE 3.0.1 model selection among LG/WAG/JTT with
+empirical frequencies and Gamma rates, 1,000 SH-aLRT replicates, and preservation
+of identical tips. Two concurrent jobs use two threads and a 4 GB memory limit
+each. Existing host memory and disk headroom were checked before launch. The
+resource plan uses 48 completed baseline marker-tree runtimes: median-based
+projection about 20.8 wall hours, planning range 8–72 hours, with 20 GiB disk
+headroom. This is a runtime estimate, not a guarantee or new paid resource.
+
+```bash
+python scripts/prepare_fcs_candidate_gene_trees.py --source results/qc/fcs-alternative-profile-alignments-v1 --audit results/qc/fcs-alternative-profile-alignment-audit-v1 --output results/phylogeny/fcs-candidate-copy-tree-inputs-v1
+python scripts/run_fcs_candidate_copy_trees.py --inputs results/phylogeny/fcs-candidate-copy-tree-inputs-v1 --output results/phylogeny/fcs-candidate-copy-trees-v1 --resources metadata/fcs_candidate_copy_tree_resources.json
+```
+
+Launch identity, input receipts, marker dispositions and resource estimates are
+versioned under `metadata/fcs_candidate_copy_tree_*`. Tree completion, model and
+support audits, uncertainty in candidate placement, broader paralog sampling,
+and orthology decisions remain pending. A supported placement alone will not
+establish an acceptable replacement or resolve assembly provenance.

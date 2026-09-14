@@ -1,0 +1,18 @@
+{
+  "workers": 2,
+  "threads_per_worker": 2,
+  "memory_per_worker": "4G",
+  "minimum_available_memory_bytes": 34359738368,
+  "minimum_free_disk_bytes": 21474836480,
+  "markers": 33,
+  "estimated_wall_hours_median_based": 20.8,
+  "planning_wall_hours_range": [
+    8,
+    72
+  ],
+  "basis": "48 completed baseline marker trees: elapsed min/median/max 2060.54/4538.34/14382.57 seconds, each two threads. 33 markers / two concurrent jobs; candidates, alignment length and tree difficulty can change cost. Not a runtime guarantee.",
+  "storage_budget_bytes": 21474836480,
+  "paid_resources": false,
+  "model": "MFP among LG,WAG,JTT with empirical frequencies and Gamma; 1000 SH-aLRT; preserve identical tips",
+  "purpose": "exploratory placement of 38 coverage-qualified alternative gene copies across 33 markers; no replacement acceptance"
+}

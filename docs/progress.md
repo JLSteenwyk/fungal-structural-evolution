@@ -2409,3 +2409,22 @@ Original and long-sequence ESMFold producers, both baseline paired-fit queues,
 both FCS sensitivity fit queues, first PMSF run and nuisance-reoptimized codon
 branch profiles were verified live at this checkpoint. The project remains
 incomplete; gene-copy placement and the queued sensitivity results are pending.
+
+Alternative-copy phylogenetic review advanced: prepared all 33 affected marker
+alignments under the existing per-sequence gene-tree coverage rule. 38/41
+candidates qualify; three remain below threshold and explicitly recorded.
+Independent input readback checked 17,399 source rows and 5,284,204 retained
+characters, including exact retained/dropped identifier sets. Started 33
+exploratory copy trees with two concurrent IQ-TREE jobs (two threads, 4 GB each,
+MFP LG/WAG/JTT+F+Gamma, 1,000 SH-aLRT, identical tips preserved). Producer PID
+3765266/session 65513 and both initial IQ-TREE children were verified live;
+revalidate before any restart. Planning estimate about 20.8 hours from completed
+baseline trees, range 8–72 hours; no new paid infrastructure. Inputs/configuration
+and source/model/software hashes are pinned. No candidate orthology or
+replacement has been accepted; full tree audits and copy placement remain pending.
+
+At this checkpoint, original expanded AlphaFold paired fits had 460/496 individual
+fit receipts, combined ESMFold 120/356, and FCS sensitivity queues 20/64 and 8/72.
+All four producer processes were verified live and no full root receipt existed.
+The baseline marker-tree queue had 48 completed individual trees. These are
+partial completion counts, not fully audited final analyses.
