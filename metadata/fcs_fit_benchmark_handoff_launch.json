@@ -1,0 +1,30 @@
+{
+  "status": "two_fcs_benchmark_controllers_verified_live",
+  "controllers": [
+    {
+      "pid": 3714215,
+      "start_ticks": "182852784",
+      "state": "S",
+      "command": [
+        "python",
+        "scripts/advance_paired_fit_benchmark.py",
+        "--config",
+        "metadata/paired_fit_benchmark_esmfold_fcs_sensitivity_config.json"
+      ],
+      "config_sha256": "15c35e3b41015ade0b4cf90f75051b0b37c269681997462d0e8aecf81ec7bee7"
+    },
+    {
+      "pid": 3714217,
+      "start_ticks": "182852788",
+      "state": "S",
+      "command": [
+        "python",
+        "scripts/advance_paired_fit_benchmark.py",
+        "--config",
+        "metadata/paired_fit_benchmark_esmfold_combined_fcs_sensitivity_config.json"
+      ],
+      "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42"
+    }
+  ],
+  "interpretation": "Queued fit audit, sensitivity path benchmark, descriptive ranks and figures; no completed refit or baseline-comparison result yet."
+}

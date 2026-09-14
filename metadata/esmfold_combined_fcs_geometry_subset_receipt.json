@@ -1,0 +1,32 @@
+{
+  "status": "complete_exact_retained_pair_geometry_subset",
+  "markers": 18,
+  "accepted_taxon_pairs": 275252,
+  "excluded_taxon_pairs": 5702,
+  "source_receipts": {
+    "inputs": {
+      "path": "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+      "sha256": "3ce37910285bef1c26146ae9914821e5f4395bef6156f9e16a6cca3c7c2337f8"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/esmfold-combined-frozen-v1",
+      "sha256": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879"
+    },
+    "pae": {
+      "path": "results/structural_pae/esmfold-combined-v1",
+      "sha256": "e71277ba0ee247ecf18f15ffb596df3484d2bca1629cf8d36d1ad4c36a85b2d5"
+    }
+  },
+  "baseline_geometry_receipt_sha256": "370bc4a38e3b989070bb52a0c332ca2a55e5f52c1c12a15596b2ccdefdadcccd",
+  "baseline_geometry_audit_sha256": "4990d0441cf27dad0389624a712dabf98b5e12816c36c55062ff5710524ca7c1",
+  "sensitivity_readback_sha256": "13d4a287df8bef6a17f4cd3e0a24f64e04b8e43f71e164b6716a28a5df96610f",
+  "script_sha256": "7457bf78a2a6e4feb6a71f3cd926f5f2a92a62d50645570b56d057fedcd6ace7",
+  "all_output_source_fields_checked": 5292510,
+  "interpretation": "Exact baseline measurements retained for all remaining pairs of changed sensitivity markers. No coordinates, masks or alignment columns changed; only tree_taxa cohort annotations updated. Complete pair grid and every output field read back against baseline. Fresh sampled geometry audit and new fitted-tree path benchmark remain required. Unchanged-marker geometry remains in the baseline. No new geometry inference or branch result.",
+  "artifacts": {
+    "paired_site_geometry.tsv": "5ee949b5a9053932946a63a00e4618374ab3dd37ed54d671b99447e27eabf9b5",
+    "coverage_exclusions.tsv": "95897314003e2509f1ed9d1a512d7a28209375e46aa5c4110bd9caf1c5b84f47"
+  },
+  "full_receipt_path": "results/structural_comparisons/paired-site-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+  "full_receipt_sha256": "0e2bea3b1987b43884767f0d6c977d5cb9156c72d3c36c20c0e8f8a730c3c305"
+}

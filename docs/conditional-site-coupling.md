@@ -142,3 +142,18 @@ Use new output paths. Versioned summaries and verification receipts are under
 `metadata/site_coupling_marker_resampling_*`. Per-marker influence rows, all
 bootstrap coefficients and paired marker multiplicities remain in the results
 directory outside Git.
+
+## FCS-overlap sensitivity pending
+
+Subsequent source-quality review found 16 marker–taxon observations in the earlier
+72-marker ESMFold inputs whose CDS segments overlap publisher FCS EXCLUDE
+regions, all from N. cerealis. The baseline regressions and marker-resampling
+results above retain those observations. Their numerical validation and
+leave-one-marker-out stability do not resolve this source-quality concern.
+All 16 affected paired alignments have been rebuilt without those observations;
+every remaining character and column is unchanged. New supported sequence trees
+and structural branch fits are running, and the retained-pair geometric benchmark
+has passed its pair-grid and sampled-numerical audit. Site-rate refits, updated
+site/exposure summaries and re-estimation of the conditional coupling models
+remain necessary before claiming robustness to this omission. FCS overlap itself
+is a review signal, not independent confirmation of contamination.

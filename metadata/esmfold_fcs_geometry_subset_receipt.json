@@ -1,0 +1,32 @@
+{
+  "status": "complete_exact_retained_pair_geometry_subset",
+  "markers": 16,
+  "accepted_taxon_pairs": 105834,
+  "excluded_taxon_pairs": 2171,
+  "source_receipts": {
+    "inputs": {
+      "path": "results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1",
+      "sha256": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/esmfold-partial-v1",
+      "sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5"
+    },
+    "pae": {
+      "path": "results/structural_pae/esmfold-partial-v1",
+      "sha256": "b83b8d840861c03216174e96d167467bd386731bf5a0f94e3d08e67ca1c7bb10"
+    }
+  },
+  "baseline_geometry_receipt_sha256": "dd02f9e69dd0011762601c00d66a59aa729f22a98d344500b59e4a0c69907aa8",
+  "baseline_geometry_audit_sha256": "195612991e36465fab12f46c0f731b0027c92505b2f591bb062200ef4990edb7",
+  "sensitivity_readback_sha256": "c43b67d2d8f0734b196a1d9a94fd3828273f549634f12a8568735a7d9abc983b",
+  "script_sha256": "7457bf78a2a6e4feb6a71f3cd926f5f2a92a62d50645570b56d057fedcd6ace7",
+  "all_output_source_fields_checked": 2034727,
+  "interpretation": "Exact baseline measurements retained for all remaining pairs of changed sensitivity markers. No coordinates, masks or alignment columns changed; only tree_taxa cohort annotations updated. Complete pair grid and every output field read back against baseline. Fresh sampled geometry audit and new fitted-tree path benchmark remain required. Unchanged-marker geometry remains in the baseline. No new geometry inference or branch result.",
+  "artifacts": {
+    "paired_site_geometry.tsv": "60b55aad55cdd22091df4810cc63e67c016bb3d644a59576622f2f99fe632b08",
+    "coverage_exclusions.tsv": "decffd29190c9842a9c564afd619c1bf564faa6fbf2e1a6af8fe72fac3d2b1d3"
+  },
+  "full_receipt_path": "results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-v1/receipt.json",
+  "full_receipt_sha256": "cf42cb75c19a54c08ddfcfd3329b3129f1f2522fbf3364d2cabb4518c18d38b7"
+}

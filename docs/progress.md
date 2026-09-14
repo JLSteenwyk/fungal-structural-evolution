@@ -2365,3 +2365,15 @@ Full FCS-omission codon accounting also completed: all 29 affected cases would
 have three remaining taxa and fall below the existing four-taxon gate; the other
 1,626 are unchanged by this specific omission. The affected cases are not
 refitted under the current design and are not interpreted as null results.
+
+### FCS sensitivity direct-geometry subsets audited; fit handoffs queued
+
+Prepared exact baseline-geometry subsets for every remaining pair in the changed
+sensitivity markers: 108,005 earlier-ESMFold pairs and 280,954 combined-ESMFold
+pairs including exclusions. Every output field was checked against baseline
+measurements with only the cohort taxon count updated. Fresh full grid/mask/
+character/eligibility audits passed, plus 16/18 independent sampled numerical
+geometry checks. Both fit-to-benchmark controllers were verified live and waiting
+on the exact sensitivity fit producers. Full fit audits and sensitivity path
+summaries will follow successful fitting; matched-pair baseline comparisons,
+uncertainty and updated site-rate coupling remain pending.

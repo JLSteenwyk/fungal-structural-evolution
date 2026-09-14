@@ -1,0 +1,20 @@
+{
+  "status": "passed_complete_paired_grid_character_and_sampled_geometry_readback",
+  "source_receipts": {
+    "comparisons": "0e2bea3b1987b43884767f0d6c977d5cb9156c72d3c36c20c0e8f8a730c3c305",
+    "inputs": "3ce37910285bef1c26146ae9914821e5f4395bef6156f9e16a6cca3c7c2337f8",
+    "snapshot": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+    "pae": "e71277ba0ee247ecf18f15ffb596df3484d2bca1629cf8d36d1ad4c36a85b2d5"
+  },
+  "script_sha256": "0884de9ee6d1728814eb723ee76be005c01a70352cb7b66e9fa9145da27c070f",
+  "pair_rows": 280954,
+  "counts": {
+    "accepted": 275252,
+    "excluded": 5702
+  },
+  "independent_geometry_checks": 18,
+  "sample_selection": "Smallest SHA256 of marker and taxon pair per accepted marker, independent of metric values",
+  "interpretation": "All pair identities, shared paired masks, eligibility, dimensions and AA/3Di differences checked. Independent SciPy rotation, condensed distances and direct directional PAE indexing checked on one pair per accepted marker only. Not a full numerical audit of all geometry or a revalidation of upstream confidence masks, biological orthology, branch additivity or rate inference.",
+  "full_receipt_path": "results/structural_comparisons/paired-site-esmfold-combined-fcs-sensitivity-audit-v1/receipt.json",
+  "full_receipt_sha256": "3f94c39bd1e9244fa9d53e24bf2fb781b1e0d7a4d2373b94c8a9fa9b1b909a1a"
+}

@@ -421,3 +421,48 @@ Configuration files name the immutable output paths. Final receipts will be in
 The launch observation is `metadata/paired_fit_benchmark_handoff_launch.json`.
 Figures require visual review before publication. At this checkpoint the
 handoffs are queued, not completed analyses.
+
+## FCS-omission sensitivity geometry audited and benchmark handoffs queued
+
+For every changed ESMFold marker, the omission sensitivity retains exactly the
+same alignment columns and remaining observed characters. This permits direct
+reuse of baseline geometry for each retained taxon pair. The subset producer
+verifies the complete remaining-taxon pair grid and every emitted field against
+the baseline; only the cohort's `tree_taxa` count is updated. No coordinate,
+confidence, coverage fraction or geometric distance is changed.
+
+The earlier sensitivity has 16 markers, 105,834 accepted geometry pairs and 2,171
+coverage exclusions (108,005 total). Combined ESMFold has 18 markers, 275,252
+accepted pairs and 5,702 exclusions (280,954 total). Unchanged-marker comparisons
+remain in their baseline datasets. These subset tables cover the affected-marker
+refits and must not be mislabeled as complete replacements for all 72/89 markers.
+
+Both fresh audits passed all pair identities, paired masks, dimensions,
+AA/3Di differences and eligibility checks. Independent SciPy superposition,
+local distances and directional PAE calculations reproduce one deterministically
+selected pair per marker: 16 and 18 numerical checks, respectively. This does not
+constitute independent numerical recomputation of all pair distances. Source
+receipts preserve the baseline geometry and its audit as well as the sensitivity
+input projection and current cohort audit.
+
+```bash
+python scripts/subset_fcs_paired_geometry.py --baseline-inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --geometry results/structural_comparisons/paired-site-esmfold-v1 --geometry-audit results/structural_comparisons/paired-site-esmfold-audit-v1 --sensitivity results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1 --readback metadata/esmfold_fcs_sensitivity_input_readback.json --output results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-v1
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/audit_paired_site_geometry.py --comparisons results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-v1 --inputs results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1 --snapshot results/structural_markers/esmfold-partial-v1 --pae results/structural_pae/esmfold-partial-v1 --output results/structural_comparisons/paired-site-esmfold-fcs-sensitivity-audit-v1
+```
+
+The combined dataset uses its corresponding combined baseline, sensitivity,
+snapshot and PAE paths, recorded in the subset receipt. Use new output paths for
+reruns. Each audit reserved one CPU thread, 8 GB memory, 1 GB output and .1–4 hours
+on the existing host. The subset step adds no structure prediction or geometric
+inference.
+
+Two verified live controllers now await successful completion of the sensitivity
+fit producers. They will run the full fit audit, retained-pair tree-path benchmark,
+descriptive rank summary and figure generation. Their configurations are
+`metadata/paired_fit_benchmark_esmfold_fcs_sensitivity_config.json` and
+`metadata/paired_fit_benchmark_esmfold_combined_fcs_sensitivity_config.json`.
+All input/audit sources and execution helpers are pinned; changed, incomplete or
+failed prerequisite fits cannot authorize the benchmark. No duplicates should
+be launched. Final outputs still require review and comparison against baseline
+paths on the same retained pairs. Resampling uncertainty and updated site-rate
+coupling are separate pending analyses.

@@ -1,0 +1,17 @@
+{
+  "status": "prelaunch_fcs_sensitivity_geometry_audit",
+  "markers": 16,
+  "all_pair_rows": 108005,
+  "independent_numeric_pairs": 16,
+  "workers": 1,
+  "threads": 1,
+  "memory_allowance_gb": 8,
+  "disk_allowance_gb": 1,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "source_geometry_receipt_sha256": "cf42cb75c19a54c08ddfcfd3329b3129f1f2522fbf3364d2cabb4518c18d38b7",
+  "scope": "All pair identities, dimensions, masks, AA/3Di differences and coverage eligibility; independent SciPy coordinate/distance/PAE calculations for one deterministic pair per marker, not every pair.",
+  "cost": "Existing host and frozen local data; no new charges"
+}
