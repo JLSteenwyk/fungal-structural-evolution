@@ -8,7 +8,7 @@
 | Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 48/125 marker trees audited in latest frozen snapshot | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
 | Families, domains and reconciliation | 64-taxon core complete; full 526-taxon orthology assignment and additional full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
 | Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
-| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold and combined ESMFold fits running | docs/conditional-site-coupling.md; FCS omission refits required; model, prediction and phylogenetic uncertainty remain |
+| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold fits running | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; site-rate and coupling sensitivity pending; model, prediction and phylogenetic uncertainty remain |
 | Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; nuisance profiles running; 29 FCS-exposed cases flagged; selection eligibility unresolved |
 | Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
 | Evolutionary objectives 1–8 | Intermediate analyses available; no objective set declared complete | docs/research-plan.md; final branch/clade tests, duplication/domain/ecological analyses, selection and ancestral case studies remain |
@@ -2559,3 +2559,30 @@ its parent and downstream controller remain live, without a complete-batch
 receipt. The previous turn was progress (new scoped assembly-availability
 evidence and reproducible inventory); this turn completed the full exposure
 inputs needed by the forthcoming coupling sensitivity.
+
+Two supported paired-fit batches completed and passed their full audits:
+expanded AlphaFold 124 markers/496 fits/26,758 paired branches and earlier
+ESMFold FCS omission 16 markers/64 fits/3,428 paired branches. Near-zero branches
+occur in 491/496 and 63/64 fits, respectively; no branch is at least 10. These
+point estimates therefore require uncertainty analysis, not branch-length
+ratios. Their completed direct-geometry benchmarks contain 737,851 and 105,834
+accepted pairs, respectively, with 4,960/640 independent path checks. Both
+three-panel rank figures were visually inspected; receipts and visual reviews
+are now versioned in metadata. Earlier FCS G4 site rates and their audit have
+completed; its controller has advanced to R4, with optimization and coupling
+refits still pending.
+
+Compared earlier FCS paths against baseline fits on exactly the same 105,834
+retained accepted pairs: 423,336 path values and all 20 fixed fields per pair.
+All 448 reported before/after rank correlations independently reproduce through
+SciPy within 1.11e-16. The authoritative comparison is
+results/phylogeny/paired-path-fcs-comparison-esmfold-v2; v1 was superseded after
+the independent check detected default decimal-parser effects on geometry ties.
+Explicit round-trip parsing resolves the discrepancy without changing trees or
+input geometry. Median baseline/sensitivity path-rank agreement is 0.988 for AA
+and 0.968–0.982 for the structural models, but individual marker/model agreement
+can fall to 0.638. Geometry correlations on matched pairs also vary, with changes
+roughly -0.127 to +0.085. These descriptive checks do not establish robust
+coupling or acceleration. Scripts and compact marker-level tables are versioned
+as compare_fcs_paired_paths.py, readback_fcs_path_ranks.py and
+metadata/esmfold_fcs_path_comparison_*.

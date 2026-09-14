@@ -1,0 +1,7 @@
+{
+  "status": "superseded_before_interpretation",
+  "output": "results/phylogeny/paired-path-fcs-comparison-esmfold-v1",
+  "receipt_sha256": "b6b157b81d977bbef0976cf970763de911616f94f29af1ae37cbcac74e3c872e",
+  "reason": "Independent rank readback exposed default pandas decimal conversion effects on geometry ties. Recompute using explicit Python float parsing for both paths and geometry. Original inputs and fitted trees unchanged.",
+  "replacement": "results/phylogeny/paired-path-fcs-comparison-esmfold-v2"
+}

@@ -172,3 +172,14 @@ coupling refit. Source receipts and readbacks are recorded in
 `metadata/{esmfold,esmfold_combined}_full_fcs_accessibility_*.json`; reproducible
 scripts are `merge_fcs_normalized_accessibility.py` and
 `readback_full_fcs_accessibility.py` in `scripts/`.
+
+The earlier FCS paired-fit batch has now completed all 64 fits and its full
+audit, followed by a 105,834-pair direct-geometry benchmark. On identical retained
+pairs, median baseline/refit path-ranking agreement is 0.988 for AA and
+0.968–0.982 for structural models, while some marker/model combinations change
+substantially (minimum 0.638). The 448 before/after rank correlations passed an
+independent SciPy readback. These checks compare point estimates and do not
+resolve rate uncertainty or establish coupling robustness. G4 site rates have
+passed their audit; R4, optimization, full frame merging and regression refits
+remain pending. The authoritative matched-pair comparison is
+`results/phylogeny/paired-path-fcs-comparison-esmfold-v2`.

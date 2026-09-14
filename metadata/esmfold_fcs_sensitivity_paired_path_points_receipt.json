@@ -1,0 +1,21 @@
+{
+  "status": "complete_paired_site_tree_path_point_benchmark",
+  "source_receipts": {
+    "inputs": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d",
+    "fits": "391ed53793818b2cf2938e47eb2e197c0bbd295cb5523275515a388e7ac375be",
+    "audit": "6ecf0dbd805f2af0ae5f7aeedce54e4a15fa23400d8d049ed2933e0679a4af4c",
+    "geometry": "cf42cb75c19a54c08ddfcfd3329b3129f1f2522fbf3364d2cabb4518c18d38b7"
+  },
+  "marker_review_sha256": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+  "script_sha256": "b25c1411dd0a17a34afea3efb59ac35029fae02260158f011b1278342d615af2",
+  "markers": 16,
+  "accepted_pairs": 105834,
+  "excluded_pairs": 2171,
+  "independent_tree_path_checks": 640,
+  "interpretation": "All source geometry rows retained unchanged with fixed-topology path point estimates. Geometry uses shared qualified paired sites; tree fits use the full paired alignment with taxon-specific missingness. No fitted relationship, additive-geometry assumption, confidence interval, phylogenetically adjusted coupling or acceleration claim. Copy caveats remain explicit; no flag does not establish orthology.",
+  "artifacts": {
+    "path_geometry_points.tsv": "c21464c0e26458c125a682a1896fa09bcadb591bb13a2e24176e951cdbfd0d2a",
+    "geometry_exclusions_with_paths.tsv": "bcb3ec42ceeec1b79c006a86d9d8cdb2ce2d5b313940e1fba809ea34fee6ddbb",
+    "marker_summary.tsv": "133238e0ab345bcf4fbc3cd1ad1268c97477097414f951da6bde9242199da41e"
+  }
+}

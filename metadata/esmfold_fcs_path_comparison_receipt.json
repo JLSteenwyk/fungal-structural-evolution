@@ -1,0 +1,20 @@
+{
+  "status": "complete_common_pair_fcs_path_comparison",
+  "markers": 16,
+  "common_accepted_pairs": 105834,
+  "path_values_compared": 423336,
+  "unchanged_fields_per_pair": 20,
+  "marker_model_comparisons": 64,
+  "marker_model_geometry_comparisons": 192,
+  "source_receipts": {
+    "baseline": "c32a8deb3ac3e315033c403df0c76b765b50755feb3a38a2ba245cae8ae3fc46",
+    "sensitivity": "5ff5923e99f2f43e8a16c2a5d438c3d397ed08da848f9fbc1e990b3629312ccd",
+    "inputs": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d"
+  },
+  "script_sha256": "ea6fef008496fc9c17135902fd73f225d69e57de9356e978f4d86701ba2dceb4",
+  "artifacts": {
+    "matched_geometry_rank_changes.tsv": "d829b152bb8606ee82098fc30c6561934d721ecdc87b5b147a9ff41c9b13df3c",
+    "marker_path_changes.tsv": "11e5555d3a333c8ae7db992c33a815ddb519ac0ab80e2960918c877996bebba4"
+  },
+  "interpretation": "Within-model fitted path changes and geometry rank changes on identical retained pairs. Baseline trees retain flagged observations during fitting; sensitivity trees refit after omission. Geometry and masks are identical for compared pairs. Descriptive, without p-values or independent-pair assumptions. No path ratios, physical displacement interpretation, acceleration test or coupling robustness claim."
+}

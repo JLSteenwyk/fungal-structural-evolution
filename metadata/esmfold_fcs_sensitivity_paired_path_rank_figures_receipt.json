@@ -1,0 +1,35 @@
+{
+  "status": "complete_descriptive_figure",
+  "source_receipt_sha256": "db2f8d0bdc5fa75da7ad452a8cb1362315fc83726eb2500e121fe1df5b5f99ec",
+  "script_sha256": "5aa83291c960a7d502f3076620615711baee5da586b197b8578a57b30301bd52",
+  "source_label": "Earlier ESMFold (FCS omission)",
+  "markers": 16,
+  "displayed_points": 192,
+  "unestimable_omitted_points": 0,
+  "median_correlations": {
+    "ca_superposition_rmsd_angstrom": {
+      "aa_tree_path_point": 0.3674815046550041,
+      "3di_af_tree_path_point": 0.4555379998328356,
+      "3di_af_empirical_tree_path_point": 0.4530986152552202,
+      "3di_llm_tree_path_point": 0.43621291701565346
+    },
+    "local_distance_mean_absolute_change_angstrom": {
+      "aa_tree_path_point": 0.5808691897560527,
+      "3di_af_tree_path_point": 0.5995743579458497,
+      "3di_af_empirical_tree_path_point": 0.5677114002781105,
+      "3di_llm_tree_path_point": 0.5930718868759131
+    },
+    "pae10_local_mean_absolute_change_angstrom": {
+      "aa_tree_path_point": 0.5812403243635966,
+      "3di_af_tree_path_point": 0.6000864081834497,
+      "3di_af_empirical_tree_path_point": 0.5731601541768016,
+      "3di_llm_tree_path_point": 0.5940251995179013
+    }
+  },
+  "interpretation": "Average-tie rank correlations within markers, no p-values or independence claim. Equal-marker summaries are descriptive, not meta-analysis. Geometry availability defines each metric cohort; all four models use that same cohort. Shared ancestry, topology/branch uncertainty, source/confidence selection and model adequacy remain unadjusted. Correlation does not establish additive physical distances or evolutionary sequence\u2013structure coupling.",
+  "artifacts": {
+    "tree_path_geometry_ranks.pdf": "ef3df2b0a14e1a61923764a66ef328d1f3bed12a2ebb06a5b8bb1b5323d44461",
+    "tree_path_geometry_ranks.svg": "bb1f3faae487aba080cb0feb719431979e0ef03c3981c227773f7afde5ec05b4",
+    "tree_path_geometry_ranks.png": "2a9704ad2336cdad35c86f6bd75866483c5949a19eb11f1b0f0ab8c2008d50a4"
+  }
+}
