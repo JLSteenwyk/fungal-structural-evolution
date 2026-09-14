@@ -2428,3 +2428,16 @@ fit receipts, combined ESMFold 120/356, and FCS sensitivity queues 20/64 and 8/7
 All four producer processes were verified live and no full root receipt existed.
 The baseline marker-tree queue had 48 completed individual trees. These are
 partial completion counts, not fully audited final analyses.
+
+FCS omission exposure covariates completed: exact retained ASA projections for
+16 earlier ESMFold and 18 combined ESMFold markers contain 223,145 and 427,510
+observed residues. Full independent raw-source readbacks passed for every row,
+including protein/model/residue identity, confidence, atom count, context,
+AA/3Di character and observed-cell coverage. Both reference normalizations and
+all summary totals passed separate full readbacks. At relative ASA 0.25,
+normalization-scale disagreements are 4.14% and 4.07%, respectively, descriptive
+convention sensitivity only. Full command manifest and receipts committed under
+metadata/fcs_accessibility_execution.json and metadata/*fcs_accessibility*.
+Rate refits and exposure aggregation across retained sensitivity taxa are still
+needed before updated sequence–structure coupling tests. Earlier and combined
+cohorts overlap; this checkpoint is not independent replication.

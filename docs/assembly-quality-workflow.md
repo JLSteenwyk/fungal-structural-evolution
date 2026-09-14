@@ -271,3 +271,34 @@ versioned under `metadata/fcs_candidate_copy_tree_*`. Tree completion, model and
 support audits, uncertainty in candidate placement, broader paralog sampling,
 and orthology decisions remain pending. A supported placement alone will not
 establish an acceptable replacement or resolve assembly provenance.
+
+### Accessibility covariates for FCS omission sensitivity
+
+Prepared exact baseline solvent-accessibility rows for all retained observations
+in the changed sensitivity markers, preserving unchanged alignment columns,
+sequence characters and masks. The earlier ESMFold cohort has 223,145 observed
+residues across 16 markers, 1,738 marker–taxon cells and 1,725 models; the combined
+cohort has 427,510 residues across 18 markers, 3,056 cells and 3,014 models.
+These cohorts overlap and must not be treated as independent datasets.
+
+Full readback checked every retained row against the original raw accessibility,
+confidence, atom count and context fields, residue mappings and paired AA/3Di
+alignments. Both existing reference scales were then applied and independently
+checked for every normalized row, preserving all original fields and rebuilding
+scale/threshold totals. No terminal residue required withholding normalization.
+At the diagnostic relative-accessibility threshold 0.25, the scales classify
+9,248 earlier-cohort rows (4.14%) and 17,408 combined-cohort rows (4.07%)
+differently. This measures normalization-convention sensitivity; these counts
+are not independent biological changes or tests of evolutionary association.
+
+The full command manifest is `metadata/fcs_accessibility_execution.json`, with
+source receipts, full readbacks and compact summaries under
+`metadata/{esmfold,esmfold_combined}_fcs_accessibility_*`. The new subset script
+requires exact identity of retained columns and characters and stops if that
+condition changes; it does not recompute solvent area. Existing coordinate
+quality and missing-partner limitations still apply.
+
+These tables cover the 16/18 changed markers. The 56/71 unchanged markers reuse
+baseline accessibility. Later site-level exposure summaries must be recalculated
+across the retained sensitivity taxa for affected markers before coupling models
+are refit. Sensitivity rate estimates and revised coupling tests remain pending.
