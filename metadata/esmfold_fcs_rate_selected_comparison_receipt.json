@@ -1,0 +1,24 @@
+{
+  "status": "complete_matched_rate_heterogeneity_comparison",
+  "fits": 64,
+  "site_comparisons": 9968,
+  "branch_comparisons": 13712,
+  "source_receipts": {
+    "gamma": "f2da4b767dda6f99901cb63c9202f65ec67a36ff87f62d840f86c3751dbd7bfe",
+    "gamma_audit": "d17781dca112aa6ed80809e4f78f36b66de2bc3a2f0d6705f36103769c4d431c",
+    "free": "cb8f8b4791d4ee225252299d75e49e75961cfa1cc1549de99a6f25bdf89e3d44",
+    "free_audit": "b984dc97ff12ef05f670d5561799122e741ec955774b89be9f95bb3752789126",
+    "inputs": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d",
+    "optimization": "558bdc3e59100defc56e82164194144a70d5026e0f84204fb1b7013e51eee2ac",
+    "optimization_audit": "a78bc6f3da3ad75c2ef1a2520bf9518eca4bdaa20b85cdc5925eb0eda1a6a6af"
+  },
+  "script_sha256": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+  "interpretation": "Conditional matched model sensitivity; average-tie rank correlations without p-values. No model selection, acceleration test or calibrated uncertainty. Site estimates are within-model relative multipliers; category labels are not homologous between models. FreeRate adds flexibility, so likelihood improvement alone does not establish adequacy. Lower likelihoods remain explicit optimization diagnostics.",
+  "artifacts": {
+    "branches.tsv": "cb1b5d8df3f4bf838fa8922d284ce172c92ca4c1d3357ca647b30df62a28c0ce",
+    "fit_summary.tsv": "6ae5cf775feb10335b5c2399f37e5605f874629ec6c9adc0d19da7e5acaba512",
+    "sites.tsv": "a7b4ac39c4f827d62969c7784b04e44b32c09a73e62fa2236a87a87188155af0"
+  },
+  "freerate_selection": "Maximum reported likelihood among original R4 and four audited refits for every fit; original retained on ties. Gamma baseline unchanged. Neither global optimality nor model adequacy established.",
+  "optimized_fits_selected": 64
+}

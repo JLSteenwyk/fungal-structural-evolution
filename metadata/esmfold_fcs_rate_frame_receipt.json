@@ -1,0 +1,19 @@
+{
+  "status": "complete_site_rate_exposure_analysis_frame",
+  "markers": 16,
+  "sites": 2492,
+  "site_rate_values": 19936,
+  "taxon_site_observations": 223145,
+  "source_receipts": {
+    "rates": "74d89adaffa8ee7e960f1b3fb4ff4cdb613714a953662ef3e2fc261269dab72f",
+    "exposure": "8a50ec12140f2a398b3b755ffa117d9b23c4bf13e18c5e098766e3fecd402f2a",
+    "inputs": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d"
+  },
+  "rate_readback_sha256": "22f5cfcdce33a8b69dc1ac63cb50ecf0c4a3408bf872ec27e62fc5c40f77d348",
+  "script_sha256": "6cd7e19c2578f614598bc999b450d5415ba86584de8c7c4a835ef405370b2991",
+  "artifacts": {
+    "fit_diagnostics.tsv": "6ae5cf775feb10335b5c2399f37e5605f874629ec6c9adc0d19da7e5acaba512",
+    "site_rate_exposure.tsv": "8d3d64bbe7ddfcd37ebf33ae010d450348bf8efccdf1d24163fc721b6fae5f28"
+  },
+  "interpretation": "All paired sites retained with eight conditional model-relative rate estimates, extant exposure quantiles under two scales, amino-acid composition, coverage and copy-review status. Rates derive from phylogenetic likelihood fits but exposure summaries are not phylogenetically adjusted or ancestral. Model labels are not predictors; rates across models are not a shared physical scale. This is an analysis frame, not a coupling/exposure significance test. Family effects, topology and rate uncertainty, nonlocal feature dependence, prediction confidence, source circularity and missingness require further controls."
+}

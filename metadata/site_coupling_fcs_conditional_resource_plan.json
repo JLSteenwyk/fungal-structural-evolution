@@ -1,0 +1,56 @@
+{
+  "status": "pre_fit_fcs_omission_conditional_coupling_plan",
+  "sites": 16571,
+  "markers": 72,
+  "fits": 24,
+  "cpu_threads": 1,
+  "memory_allowance_gb": 4,
+  "output_allowance_gb": 2,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "source_frame_sha256": "73905c2fbee27317314b7e363e35530685a808d1b48c955009f281e903a1ada9",
+  "source_accessibility_sha256": "60750013372404a47a31c6737f54759d7a0041362820065f7b4ac6e609422e55",
+  "response": "log1p(structural-alphabet relative site rate)",
+  "focal_predictors": [
+    "log1p(amino-acid relative site rate)",
+    "median extant RSA minus 0.25",
+    "interaction of the two"
+  ],
+  "all_models_controls": [
+    "marker fixed intercepts",
+    "observed taxon fraction",
+    "site lower-quartile focal CA pLDDT divided by 100"
+  ],
+  "adjusted_sensitivity_controls": [
+    "19 amino-acid proportions (A reference)",
+    "amino-acid entropy"
+  ],
+  "grid": {
+    "alphabet_model": [
+      "3di_af",
+      "3di_af_empirical",
+      "3di_llm"
+    ],
+    "rate_model": [
+      "gamma",
+      "freerate"
+    ],
+    "rsa_scale": [
+      "tien2013",
+      "miller1987"
+    ],
+    "controls": [
+      "coverage_confidence",
+      "composition_adjusted"
+    ]
+  },
+  "uncertainty": "CR1 marker-cluster covariance with finite-sample correction and t(71) reference; conditional on estimated rates and fixed gene trees. BH correction across all 72 focal coefficient tests, no independence claim for sites.",
+  "interpretation": "Exploratory conditional association in the completed ESMFold snapshot. Does not propagate topology/rate-estimation uncertainty or demonstrate phylogenetically independent ecology, causal exposure effects, physical movement or selection. Structural predictions derive from sequences; circularity remains. Extant RSA and confidence summaries are not ancestral or phylogenetically weighted. Marker clusters need not be fully independent. No claim that the full lineage-wide objective is complete.",
+  "cost": "Existing authorized CPU host, no new charges",
+  "sensitivity": "Omit 16 FCS-flagged marker/taxon observations; retain all 72 baseline markers and identical 16571 site identities. Same 24 model specifications and 72-test BH family as baseline. Compare estimates, not significance labels alone.",
+  "baseline_plan_sha256": "7ab8b02aa54eef7a4619ddf8bea9ee9d857f2234d032f98504e0048be781de66",
+  "available_memory_bytes": 567404818432,
+  "free_disk_bytes": 12530483122176
+}

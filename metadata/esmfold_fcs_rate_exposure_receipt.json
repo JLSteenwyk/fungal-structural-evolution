@@ -1,0 +1,37 @@
+{
+  "status": "complete_site_parsimony_exposure_diagnostic",
+  "markers": 16,
+  "sites": 2492,
+  "taxon_site_observations": 223145,
+  "source_receipts": {
+    "inputs": "87cafedb0f581723a7401d16b2dc701fd9414af202a87bf58738251046a2b22d",
+    "fits": "391ed53793818b2cf2938e47eb2e197c0bbd295cb5523275515a388e7ac375be",
+    "audit": "6ecf0dbd805f2af0ae5f7aeedce54e4a15fa23400d8d049ed2933e0679a4af4c",
+    "exposure": "f55590ad81268563563b3b0113e25722dbe0a3a400390d8e76d406ca53f266f3",
+    "projection": "f85cf7490db6c0e8a435f5f7762d9a289aa239ebf1992dee78d4b07134809d5d"
+  },
+  "marker_review_sha256": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+  "tree_sha256": {
+    "129234at2759": "cf538ff93d2ba103274bd1a3ceac67fd288088bdf7fd02871bb83afe3aedf0a9",
+    "260326at2759": "5552cffa1631b6641508006d847583286be1817477650b90016be03a7eb22b72",
+    "345792at2759": "f088f87e2ba2e35d33882063040d7663483b3c93d459094ad21871cc37198901",
+    "4613677at2759": "76998a416d10102319cd48026b482c4f9e777e5d3c541d93ee1107200ca0fd25",
+    "4803900at2759": "cdc62af193c26b55bc73d2d46f04d1cac81d0e8e7df6f6041649d07ba478cd8d",
+    "4867008at2759": "99668b087e5a939e2fc51f30a781f123afd274d590ae492db3d9e4511839ec46",
+    "4896098at2759": "badedca159dcbcbf6b84d05e9488d4fb74b5a24e060fd8e0ceff5f401117ae36",
+    "5000452at2759": "27869eeb35300cab5cc478b3f3fb92b5c80d792ba2f2ecf9c91c7b12122cdfa0",
+    "5000743at2759": "6d432fe0cf3032b8790ab9f0c448e4a053b4627dc05d7f250f7682c78368ffc4",
+    "5001413at2759": "285729e4691da62971bbbb9d2182bbded6b2cc68f7653392c9dd1195d234ef5d",
+    "5001473at2759": "5af1dd379e4f798aa72d8b286e98d93538e7a396926ebb20dc8cb7fef3200e2e",
+    "5003972at2759": "f4874ff9849b2c57dc3a347c5a1e4c2abdf9668899534949c0f9b62910a1a20f",
+    "5004118at2759": "301725f77be12260f769ce107373934aedff90e0c4adcfb7ddf4c95e95f6e10a",
+    "5005010at2759": "e1621818aa08df2fd49771bae57113668c43769818b22d5595e1fc274bb27205",
+    "5013259at2759": "2428f7d9c3483a1db906813d928c849801527268a38e431d1eba9807f576c65f",
+    "5013726at2759": "5f4fd21da3106508f444971725d3c0a2de4f0e2753cab5cc230db776d8af3c4b"
+  },
+  "script_sha256": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+  "interpretation": "Unit-cost minimum character changes per site on the fitted AA topology, with unknown states unconstrained. Uses topology but ignores branch lengths, time, unequal substitution costs, homoplasy beyond its minimum and topology uncertainty. AA/3Di counts are alphabet-dependent lower bounds, not rates or selection tests. Exposure quantiles describe extant observed taxa and are not ancestral values or phylogenetically adjusted estimates. No particular branch/state assignment or coupling significance is inferred.",
+  "artifacts": {
+    "site_parsimony_exposure.tsv": "430a0b54874f0c11ae528ca34c0ddb2025f9c4a5ababcf149b0fdbc984672e2f"
+  }
+}

@@ -2617,3 +2617,17 @@ uncertainty remain unpropagated, and local blocks do not preserve all nonlocal
 structural-alphabet feature dependencies. The preceding turn was a verified
 wait with advancing live jobs; this turn started the next required uncertainty
 analysis on the completed AlphaFold dataset.
+
+Earlier ESMFold FCS workflow completed all 256 optimization refits, full audits,
+selected Gamma/FreeRate comparison, full rate readback, exposure and changed-
+marker frame. Merged its 16 changed markers with 56 unchanged baseline markers:
+all 16,571 sites/132,568 rates retained, 712,769 observed taxon-site exposures.
+Reran all 24 coupling specifications and independently verified every coefficient
+and cluster covariance (maximum errors 1.03e-14/4.03e-16). All sequence-rate
+coefficients remain positive; 20/24 meet the same 72-test BH threshold versus
+23/24 at baseline. No matched focal coefficient changes sign; all interaction
+intervals include zero. Threshold changes are not coefficient-difference tests.
+The full 72-pair coefficient comparison and reviewed figure are versioned.
+Rewrote the current sensitivity section in docs/conditional-site-coupling.md;
+FCS marker-resampling/influence checks and broader uncertainty/circularity
+controls remain incomplete, as does the combined-cohort sensitivity workflow.

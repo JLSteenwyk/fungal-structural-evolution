@@ -1,0 +1,26 @@
+{
+  "status": "complete_exploratory_conditional_site_coupling_fits",
+  "sites": 16571,
+  "markers": 72,
+  "fits": 24,
+  "focal_tests": 72,
+  "confidence_taxon_site_rows": 712769,
+  "plan_sha256": "539fed36e1d0a3f1035db3381952cc41cec444a523be97f9298e97ddb940eb7f",
+  "source_frame_sha256": "73905c2fbee27317314b7e363e35530685a808d1b48c955009f281e903a1ada9",
+  "source_accessibility_sha256": "60750013372404a47a31c6737f54759d7a0041362820065f7b4ac6e609422e55",
+  "script_sha256": "2e103155afff2f06e06063162cd66ec0b88998d54d858072f257725b4e49ac44",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "artifacts": {
+    "site_covariates.tsv": "233d00ad641604acd195bf20963ee0409e36f3cbf84da7684488854b9a01b7e2",
+    "focal_coefficients.tsv": "60af79e4523fdc4592d2cb43b38721599b9f54379e08bcbce8c01924e20330b9",
+    "all_coefficients.tsv": "fa4f09c768a8e6b7d38fc040565f41798630c13c2914e95d905dff95f41c931e",
+    "fit_summary.tsv": "a7dac2e27318ca59ec7ef3787d3e9a813656024bcb01704636ca2976bed0c03d"
+  },
+  "interpretation": "Exploratory conditional association in the completed ESMFold snapshot. Does not propagate topology/rate-estimation uncertainty or demonstrate phylogenetically independent ecology, causal exposure effects, physical movement or selection. Structural predictions derive from sequences; circularity remains. Extant RSA and confidence summaries are not ancestral or phylogenetically weighted. Marker clusters need not be fully independent. No claim that the full lineage-wide objective is complete.",
+  "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+}

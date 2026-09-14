@@ -143,43 +143,55 @@ Use new output paths. Versioned summaries and verification receipts are under
 bootstrap coefficients and paired marker multiplicities remain in the results
 directory outside Git.
 
-## FCS-overlap sensitivity pending
+## FCS-overlap omission sensitivity
 
-Subsequent source-quality review found 16 marker–taxon observations in the earlier
-72-marker ESMFold inputs whose CDS segments overlap publisher FCS EXCLUDE
-regions, all from N. cerealis. The baseline regressions and marker-resampling
-results above retain those observations. Their numerical validation and
-leave-one-marker-out stability do not resolve this source-quality concern.
-All 16 affected paired alignments have been rebuilt without those observations;
-every remaining character and column is unchanged. New supported sequence trees
-and structural branch fits are running, and the retained-pair geometric benchmark
-has passed its pair-grid and sampled-numerical audit. Site-rate refits, updated
-site/exposure summaries and re-estimation of the conditional coupling models
-remain necessary before claiming robustness to this omission. FCS overlap itself
-is a review signal, not independent confirmation of contamination.
+The earlier 72-marker ESMFold snapshot contains 16 marker–taxon observations
+whose CDS segments overlap publisher FCS EXCLUDE regions, all from N. cerealis.
+The baseline results above retain those observations. Whole marker/taxon
+omission, with every other character and site coordinate preserved, is now
+complete through paired fits, site rates, exposure summaries and coupling
+regression. FCS overlap remains a review signal rather than independent proof
+of contamination.
 
-Full-cohort normalized exposure datasets are now assembled for the eventual
-coupling refits. The earlier cohort combines 56 unchanged markers with 16 changed
-markers: 712,769 retained observations after 2,167 observed-residue omissions.
-The combined cohort contains 71 unchanged and 18 changed markers: 1,696,368
-retained observations after 2,667 omissions. Every affected row matches the
-audited changed-marker normalization; the full retained amino-acid observation
-grid is checked against the respective alignments. Independent readback checked
-all 16 fields of every retained row against the filtered baseline (11,404,304
-and 27,141,888 field values). These cohorts overlap and are not independent
-replicates. This completes the full exposure input, not the rate-frame merge or
-coupling refit. Source receipts and readbacks are recorded in
-`metadata/{esmfold,esmfold_combined}_full_fcs_accessibility_*.json`; reproducible
-scripts are `merge_fcs_normalized_accessibility.py` and
-`readback_full_fcs_accessibility.py` in `scripts/`.
+All 64 affected paired fits and 256 FreeRate optimization refits passed their
+full audits. The eleven-stage rate/exposure workflow completed its full numeric
+readback. Its 16 changed markers were merged with the 56 unchanged baseline
+markers, retaining all 16,571 site identities and 132,568 rate values. The full
+exposure input contains 712,769 observations after 2,167 observed-residue
+omissions. Source markers and receipt hashes are explicit in the merged frame.
+The separate combined-cohort exposure input is complete, but its rate and
+coupling analyses remain pending; the cohorts overlap and are not independent.
 
-The earlier FCS paired-fit batch has now completed all 64 fits and its full
-audit, followed by a 105,834-pair direct-geometry benchmark. On identical retained
-pairs, median baseline/refit path-ranking agreement is 0.988 for AA and
-0.968–0.982 for structural models, while some marker/model combinations change
-substantially (minimum 0.638). The 448 before/after rank correlations passed an
-independent SciPy readback. These checks compare point estimates and do not
-resolve rate uncertainty or establish coupling robustness. G4 site rates have
-passed their audit; R4, optimization, full frame merging and regression refits
-remain pending. The authoritative matched-pair comparison is
-`results/phylogeny/paired-path-fcs-comparison-esmfold-v2`.
+All 24 original regression specifications were rerun with the same controls and
+72-test BH family. Every coefficient and cluster covariance passed independent
+NumPy checks (maximum discrepancies 1.03e-14 and 4.03e-16). All sequence-rate
+coefficients remain positive, ranging from 0.0485 to 0.1713; 20/24 have BH q<0.05,
+compared with 23/24 at baseline. No coefficient changes sign among the 72 matched
+focal terms. The largest sequence-rate coefficient change is 0.00679. All 24
+interaction intervals still contain zero. RSA coefficients remain negative and
+all have q<0.05, but they describe the model at log(1 + AA rate)=0 and must not
+be generalized to all sequence rates. Threshold crossing is not a test of a
+coefficient difference, and the model specifications are dependent.
+
+The earlier matched-pair path comparison also retained exactly 105,834 accepted
+pairs. Median baseline/refit path-ranking agreement is 0.988 for AA and
+0.968–0.982 for structural models, with some marker/model agreement as low as
+0.638. All 448 before/after rank correlations passed independent SciPy readback.
+The authoritative comparison is paired-path-fcs-comparison-esmfold-v2.
+
+![FCS omission sensitivity](figures/conditional_site_coupling_fcs_sensitivity.svg)
+
+These results support directional stability of these conditional coefficients
+under the specified omission. They do not establish robust lineage-wide
+coupling: marker-resampling and influence checks for the new fits remain to be
+run, and topology/rate uncertainty, shared ancestry, prediction circularity and
+source quality remain unresolved. Exposure is extant and not phylogenetically
+weighted or ancestral. The full structural/evolutionary objective is incomplete.
+
+Reproduction uses merge_fcs_site_rate_frame.py, fit_conditional_site_coupling.py,
+compare_fcs_coupling_fits.py and plot_conditional_site_coupling.py in scripts/.
+Completed stage receipts: metadata/esmfold_fcs_rate_*.json. Full frame and marker
+provenance: metadata/esmfold_full_fcs_site_frame_*. Regression results and matched
+comparison: metadata/esmfold_fcs_conditional_coupling_* and
+metadata/esmfold_fcs_coupling_comparison_*. Resource/specification plan:
+metadata/site_coupling_fcs_conditional_resource_plan.json.

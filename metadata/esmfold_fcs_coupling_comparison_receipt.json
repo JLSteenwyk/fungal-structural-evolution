@@ -1,0 +1,49 @@
+{
+  "status": "complete_matched_fcs_conditional_coupling_comparison",
+  "coefficient_pairs": 72,
+  "source_receipts": {
+    "baseline": "f2a7a6890c4f80b9a0bec314928b14480ced2e1cb1bc9bbdcbe37591c86b9829",
+    "sensitivity": "99efd49f5afcbab7fda47d42aeb7bda22b6b6cf1457b2eeacdcb3d1c86cc8c60"
+  },
+  "script_sha256": "a3f1e31fce687ea5aea38ec78c648faa130ec3a1d756a14d06ced5ce23437e3f",
+  "summaries": [
+    {
+      "term": "aa_by_rsa",
+      "models": 24,
+      "sign_changes": 0,
+      "baseline_bh_q_below_0_05": 0,
+      "sensitivity_bh_q_below_0_05": 0,
+      "sensitivity_coefficient_minimum": 0.01954835163148058,
+      "sensitivity_coefficient_maximum": 0.07752477194478936,
+      "maximum_absolute_coefficient_change": 0.003291194519902889,
+      "sensitivity_intervals_containing_zero": 24
+    },
+    {
+      "term": "aa_log1p_rate",
+      "models": 24,
+      "sign_changes": 0,
+      "baseline_bh_q_below_0_05": 23,
+      "sensitivity_bh_q_below_0_05": 20,
+      "sensitivity_coefficient_minimum": 0.04849849283180466,
+      "sensitivity_coefficient_maximum": 0.17127999238178332,
+      "maximum_absolute_coefficient_change": 0.0067862586487962215,
+      "sensitivity_intervals_containing_zero": 1
+    },
+    {
+      "term": "rsa_centered",
+      "models": 24,
+      "sign_changes": 0,
+      "baseline_bh_q_below_0_05": 24,
+      "sensitivity_bh_q_below_0_05": 24,
+      "sensitivity_coefficient_minimum": -0.24345805366228046,
+      "sensitivity_coefficient_maximum": -0.14205339681743823,
+      "maximum_absolute_coefficient_change": 0.0025011970277362128,
+      "sensitivity_intervals_containing_zero": 0
+    }
+  ],
+  "artifacts": {
+    "term_summary.tsv": "b4d9ba39a6c6005e7ab7b7decf54e6b576f0bf9ff6bd9666477881f9cbcd5c80",
+    "matched_coefficients.tsv": "9e0b129c7ca0d8c06551c67e0f0d0ba08b0d6a527af24df5eb5b21fbe2f7670b"
+  },
+  "interpretation": "Descriptive differences between matched baseline and omission fits using the same specifications. Each fit set uses its own original 72-test BH family; threshold crossing is not a test of coefficient change. Models, sites and datasets are dependent. Conditional marker-cluster intervals do not propagate rate/tree/prediction uncertainty. FCS omission is a sensitivity analysis, not proof of contamination or robust lineage-wide coupling."
+}
