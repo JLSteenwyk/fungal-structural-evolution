@@ -56,3 +56,32 @@ Use a fresh output directory for re-execution. Full receipt and neighborhoods:
 `metadata/fcs_copy_tree_review_4764044at2759.json`. Candidate sequence provenance:
 `metadata/fcs_alternative_candidate_review.tsv`; retained alignment coverage:
 `metadata/fcs_alternative_profile_alignment_review.tsv`.
+
+## Second completed marker: 345792at2759
+
+This tree contains 484 tips and 226 alignment columns. Its two alternative tips
+and their selected counterparts yield 1,936 independently checked focal-to-tip
+paths (maximum discrepancy 8.89e-16).
+
+For *Acaulospora colombiana*, selected protein CAG8561170.1 overlaps FCS EXCLUDE.
+It is on a four-tip unrooted split with three *Serendipita* entries (reported
+SH-aLRT 83.7). Alternative CAG8780007.1 is instead nearest by tree path to
+*Diversispora epigaea*, *Ambispora leptoticha* and *A. gerdemannii*. Its two-tip
+split with *D. epigaea* has support 75.8. These neighborhoods differ, but support
+for nearby alternative-copy splits is variable (including 35.2 for a five-tip
+side); no fully resolved species placement is claimed.
+
+For *Naganishia cerealis*, selected protein KAJ9101333.1 also overlaps EXCLUDE
+and is nearest to *Candida* entries. Its two-tip split with *C. viswanathii* has
+support zero and should not be treated as established. Alternative KAJ9091994.1
+is nearest to *N. vaughanmartiniae*, *N. liquefaciens* and *N. friedmannii*. A
+five-tip split contains the alternative, those three *Naganishia* entries and
+*Filobasidium floriforme* (support 97.4). As in the first review, nearest path
+distance is distinct from a sister-tip relationship.
+
+These are two marker-level observations for N. cerealis and one for A. colombiana,
+not independent proof of assembly contamination or candidate orthology. The
+existing source-quality caveats, broader paralog/sequence checks, rooting and
+reconciliation requirements remain. No candidate was promoted or predicted.
+Reproduce using the command above with marker 345792at2759 and its own fresh
+output directory. Receipt: metadata/fcs_copy_tree_review_345792at2759.json.

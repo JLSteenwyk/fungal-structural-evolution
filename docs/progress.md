@@ -2631,3 +2631,22 @@ The full 72-pair coefficient comparison and reviewed figure are versioned.
 Rewrote the current sensitivity section in docs/conditional-site-coupling.md;
 FCS marker-resampling/influence checks and broader uncertainty/circularity
 controls remain incomplete, as does the combined-cohort sensitivity workflow.
+
+FCS coupling marker-resampling/influence checks completed: 48,000 bootstrap
+fits and 1,728 single-marker omissions, no singular bootstrap fits, all point
+and selected expanded-row solves verified. Full marker order and 2,000 sampling
+multiplicity vectors equal baseline; all 120 saved percentile intervals checked.
+Observed-mean sequence-rate contrasts stay positive and observed-mean RSA
+contrasts negative under every single-marker omission, with unadjusted bootstrap
+intervals excluding zero. All interaction intervals include zero, and one basic
+AF/FreeRate/Tien interaction changes sign under a marker omission. These are
+conditional sensitivity results, not new BH tests or resolved phylogenetic/rate
+uncertainty. Reviewed figure and full numerical/provenance records are versioned.
+
+Second alternative-copy tree reviewed: 345792at2759, 484 tips/226 columns,
+two alternative copies and 1,936 independent focal path checks. Selected
+A. colombiana copy lies with Serendipita entries; its alternative lies near
+Diversispora/Ambispora. The N. cerealis selected/alternative contrast recurs,
+with weak support for some finer relationships explicitly retained. No candidate
+replacement or contamination conclusion accepted. Details and support caveats
+are in docs/fcs-copy-tree-review.md and the marker-specific review receipt.

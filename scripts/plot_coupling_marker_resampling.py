@@ -15,6 +15,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--results',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--title',default='Marker resampling: composition-adjusted FreeRate models')
     args=parser.parse_args()
     if args.output.exists():raise FileExistsError('Use a new figure path')
     receipt=json.loads((args.results/'receipt.json').read_text());path=args.results/'contrast_summary.tsv'
@@ -35,7 +36,7 @@ def main():
         ax.set_title(title,fontsize=10);ax.set_xlabel('Conditional coefficient');ax.grid(axis='y',alpha=.15)
         ax.spines[['top','right']].set_visible(False)
     axes[0].set_yticks(range(len(rows)),[labels[a]+' | '+labels[s] for a,s in rows],fontsize=9);axes[0].invert_yaxis()
-    fig.suptitle('Marker resampling: composition-adjusted FreeRate models',fontsize=13)
+    fig.suptitle(args.title,fontsize=13)
     handles=[Line2D([0],[0],color='#176B99',lw=1.5,label='Unadjusted 95% marker-bootstrap interval'),Line2D([0],[0],color='#222222',lw=4,label='Leave-one-marker-out range')]
     fig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.62,.90),ncol=1,fontsize=9)
     fig.text(.02,.02,'2,000 paired marker resamples; 72 omissions per model. Reference means held fixed at the observed site-weighted distribution.\nAll 24 specifications are retained in tables; these panels show the six adjusted FreeRate fits.\nConditional on estimated rates and fixed trees; not causal effects or physical displacement.',fontsize=9)

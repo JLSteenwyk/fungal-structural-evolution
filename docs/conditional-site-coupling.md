@@ -183,8 +183,7 @@ The authoritative comparison is paired-path-fcs-comparison-esmfold-v2.
 
 These results support directional stability of these conditional coefficients
 under the specified omission. They do not establish robust lineage-wide
-coupling: marker-resampling and influence checks for the new fits remain to be
-run, and topology/rate uncertainty, shared ancestry, prediction circularity and
+coupling: topology/rate uncertainty, shared ancestry, prediction circularity and
 source quality remain unresolved. Exposure is extant and not phylogenetically
 weighted or ancestral. The full structural/evolutionary objective is incomplete.
 
@@ -195,3 +194,26 @@ provenance: metadata/esmfold_full_fcs_site_frame_*. Regression results and match
 comparison: metadata/esmfold_fcs_conditional_coupling_* and
 metadata/esmfold_fcs_coupling_comparison_*. Resource/specification plan:
 metadata/site_coupling_fcs_conditional_resource_plan.json.
+
+The revised marker-resampling and influence checks are complete: 48,000
+bootstrap fits (2,000 per specification) and 1,728 leave-one-marker-out fits,
+with no singular bootstrap fits. Marker order and all multiplicity vectors
+exactly match the baseline resampling, and all 120 saved percentile intervals
+were independently read back. Full point coefficients and predetermined
+expanded-row resamples/omissions agree within 5.08e-15. These checks verify the
+numerics, not independence of markers or the validity of the bootstrap model.
+
+At observed mean RSA, all 24 sequence-rate contrasts remain positive under every
+single-marker omission, and all unadjusted 95% marker-bootstrap intervals exclude
+zero. At observed mean AA rate, all RSA contrasts remain negative under every
+omission, and their unadjusted intervals exclude zero. At RSA=0.25, one sequence-
+rate percentile interval includes zero. All 24 interaction intervals include
+zero; the basic AF/FreeRate/Tien interaction has one leave-one-marker-out sign
+reversal (range -0.000176 to 0.04688). The interaction is not established.
+These unadjusted percentile intervals do not replace or expand the original
+BH-significance claims, and reference means are held at the FCS observed values.
+
+![FCS marker-resampling sensitivity](figures/coupling_fcs_marker_resampling.svg)
+
+Plan, full-fit receipt, numerical checks, interval/multiplicity readback and
+contrast summary are in metadata/site_coupling_fcs_marker_resampling_*.
