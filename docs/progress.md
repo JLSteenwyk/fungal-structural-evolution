@@ -2529,3 +2529,20 @@ compatibility review. The exact study software version and executable fungal
 calibration table remain unresolved; no priors were silently filled in and no
 clock run was launched. Source files and tree inventory are archived outside
 Git; URLs, hashes and findings are in metadata/dating_input_source_review.json.
+
+Alternative assembly availability review completed for the two taxa with
+EXCLUDE-overlapping marker observations. Both frozen fungal GenBank/RefSeq
+catalogs and fresh, fully paginated NCBI Datasets taxon queries return only the
+selected accession for each species: GCA_030039265.1 (Naganishia cerealis) and
+GCA_910592055.1 (Acaulospora colombiana). Saved-response readback verified all
+artifact hashes, exact taxids and accessions. No alternative accession was found
+within this scope; external archives, historical records and mislabelled taxa
+are not ruled out. No assembly replacement or sequence-provenance resolution
+was claimed. Reproducible inventory and evidence are in
+scripts/inventory_fcs_alternative_assemblies.py and
+metadata/fcs_alternative_assembly_inventory_*.json. Alternative-copy trees and
+FCS omission sensitivities remain in progress. At this checkpoint, individual
+paired-fit receipts reached 488/496 expanded AlphaFold, 160/356 combined ESMFold,
+60/64 earlier ESMFold FCS sensitivity and 28/72 combined FCS sensitivity;
+complete-batch audits remain pending. Conditional MG94 branch-parameter
+profiles reached 907/1,655 complete cases; the producer remains live.

@@ -1,0 +1,59 @@
+{
+  "status": "complete_scoped_assembly_availability_inventory",
+  "script_sha256": "ba089bb4b8024daa269f297b885b5b354beb9b35d483d73dd4f5351ea4c9356d",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "catalog_sha256": {
+    "data/raw/genbank_fungi_assembly_summary.txt": "7c0cf4bbd9404e5ef9730bb3652a21c9f44398e1e264edda3c96fe68fa511198",
+    "data/raw/refseq_fungi_assembly_summary.txt": "65c6bd62cb08468758422bd5484f2c5d097246b3050e639be1b0b4af58209564"
+  },
+  "requests": [
+    {
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/taxon/27376/dataset_report?page_size=100",
+      "file": "results/qc/fcs-alternative-assembly-inventory-v1/27376_page_0.json",
+      "sha256": "810d7cab3d19ed01b6c423a4ad9401219ee689ea25230b8831ec65bf21896538",
+      "retrieved_utc": "2026-09-14T01:16:27.795060+00:00"
+    },
+    {
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/taxon/610337/dataset_report?page_size=100",
+      "file": "results/qc/fcs-alternative-assembly-inventory-v1/610337_page_0.json",
+      "sha256": "fb4b950c91851588d1cb0875a75fc4b05452d5c4570f72efe5df793826859d8c",
+      "retrieved_utc": "2026-09-14T01:16:28.739178+00:00"
+    }
+  ],
+  "taxa": [
+    {
+      "taxon_id": "F27376",
+      "species_name": "Acaulospora colombiana",
+      "species_taxid": "27376",
+      "selected_assembly": "GCA_910592055.1",
+      "frozen_catalog_accessions": [
+        "GCA_910592055.1"
+      ],
+      "live_api_accessions": [
+        "GCA_910592055.1"
+      ],
+      "selected_found_in_live_api": true,
+      "other_accession_candidates": []
+    },
+    {
+      "taxon_id": "F610337",
+      "species_name": "Naganishia cerealis",
+      "species_taxid": "610337",
+      "selected_assembly": "GCA_030039265.1",
+      "frozen_catalog_accessions": [
+        "GCA_030039265.1"
+      ],
+      "live_api_accessions": [
+        "GCA_030039265.1"
+      ],
+      "selected_found_in_live_api": true,
+      "other_accession_candidates": []
+    }
+  ],
+  "artifacts": {
+    "610337_page_0.json": "fb4b950c91851588d1cb0875a75fc4b05452d5c4570f72efe5df793826859d8c",
+    "frozen_catalog_matches.json": "3cb5fd7ceeb813a7d1e33e3372c925ba9f48286c5b11dcb36f1fdc4032701a25",
+    "27376_page_0.json": "810d7cab3d19ed01b6c423a4ad9401219ee689ea25230b8831ec65bf21896538"
+  },
+  "limits": "Frozen fungal GenBank/RefSeq catalogs and current NCBI Datasets taxon endpoint only. No claim about all external archives, unpublished data, historical assemblies or taxonomically mislabelled accessions. Other accessions can be paired records or versions, not independent samples. No sequence provenance resolved and no assembly replacement made."
+}
