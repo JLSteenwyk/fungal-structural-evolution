@@ -1,0 +1,27 @@
+{
+  "status": "complete_full_species_fcs_mask_sensitivity",
+  "taxa": 526,
+  "columns": 49027,
+  "markers": 125,
+  "masked_marker_taxon_observations": 53,
+  "affected_markers": 48,
+  "affected_taxa": [
+    "F27376",
+    "F610337"
+  ],
+  "canonical_residues_removed": 16049,
+  "characters_changed": 17658,
+  "all_matrix_characters_checked": 25788202,
+  "baseline_matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "mapping_receipt_sha256": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+  "mapping_audit_receipt_sha256": "61d30bf005ca6a531a1ba22a9062319e9466d5e5f73f2cda01b7feee6bc904d6",
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "8c2f76075344a56df882ffb7f1df4297d9666686acc7455dd6c504d7586ecf12",
+  "artifacts": {
+    "matrix.faa": "daecefe75559cf5a20c9a6f1eaa45ba37be92d9fffac14be9045b87700436846",
+    "taxon_coverage.tsv": "59d8be76006c23a0dc43245d6ce9ed879a766e3b11b1920446c9484364c130cc",
+    "site_mapping.tsv": "a3f02805eaa8eacbbf60d6dfa2e995798b0a9ef8d75339031863591fd939d1be",
+    "masked_observations.tsv": "2290630c8b7680d13de96cdf054d01aef8e7a77c6c7943fee3af2c3414b8f322"
+  },
+  "interpretation": "Whole marker/taxon observations overlapping FCS EXCLUDE/FIX/TRIM coding regions masked as unknown. REVIEW-only observations retained. Original taxa and alignment columns preserved, no occupancy retrimming, alternative-copy replacement or confirmed-contamination claim. All resulting taxa retain canonical observations; coupled taxon-identity and heterogeneous-model sensitivities remain necessary."
+}

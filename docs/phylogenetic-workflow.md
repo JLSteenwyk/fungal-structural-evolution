@@ -301,3 +301,47 @@ The checks establish input and split integrity, not model adequacy, rooting,
 orthology, species-tree concordance or reconciliation. FCS-flagged observations
 remain present in these original baseline trees and require their planned
 sensitivity and copy reviews.
+
+### Full-taxon FCS marker-mask sensitivity
+
+Prepared profile and MAFFT matrices with the original 526 taxa, 125 markers and
+49,027/63,750 retained columns. Whole marker–taxon observations with CDS overlap
+against FCS EXCLUDE/FIX/TRIM regions are masked as unknown. The rule affects 53
+observations across 48 markers: 44 in F610337 (Naganishia cerealis) and nine in
+F27376 (Acaulospora colombiana). REVIEW-only observations remain included. All
+25 outgroups remain unchanged, and no taxon or alignment column is removed.
+
+All 25,788,202 profile-matrix characters and 33,532,500 MAFFT-matrix characters
+were read back against the explicit mask and original matrix. The masks remove
+16,049 and 19,839 canonical residues, respectively. Naganishia cerealis retains
+15,846/19,381 canonical residues and Acaulospora colombiana 24,174/32,093 in the
+profile/MAFFT matrices. All taxa retain observed residues. This is an observation
+omission sensitivity, not confirmation of contamination or acceptance of an
+alternative gene copy.
+
+The v1 receipt accidentally listed empty mask sets as affected taxa after a
+readback accessed a defaultdict. This reporting defect was caught before tree
+launch; v2 filters nonempty sets. The underlying matrices are byte-identical
+between v1 and v2. The old producer and retirement evidence are archived outside
+Git, with `metadata/fcs_species_matrix_v1_retirement.json` recording provenance.
+Only v2 inputs are used for inference.
+
+Two LG+F+G4 guide runs were launched with the same settings as the completed
+baseline guides (16 threads and 32 GB memory limit each, seed 20260913). Available
+memory exceeded the 128 GiB launch floor and disk exceeded 40 GiB. Comparable
+baseline runs took 15.6/15.8 hours; the planning range is 8–48 hours per tree.
+No new paid resources were provisioned. These homogeneous unpartitioned guides
+have no support estimation; completed-tree audits and within-alignment baseline
+comparisons remain required. Mixture models, combined taxon/marker sensitivities,
+rooting and gene-tree reconciliation remain part of the larger project.
+
+```bash
+python scripts/prepare_fcs_species_matrices.py --matrix results/phylogeny/profile-matrix-50-v1 --mapping results/qc/fcs-cds-overlap-v1 --audit results/qc/fcs-cds-overlap-audit-v1 --output results/phylogeny/profile-matrix-fcs-sensitivity-v2
+python scripts/prepare_fcs_species_matrices.py --matrix results/phylogeny/mafft-matrix-50-v1 --mapping results/qc/fcs-cds-overlap-v1 --audit results/qc/fcs-cds-overlap-audit-v1 --output results/phylogeny/mafft-matrix-fcs-sensitivity-v2
+python scripts/run_initial_species_tree.py --matrix results/phylogeny/profile-matrix-fcs-sensitivity-v2 --output results/phylogeny/fcs-profile-guide-v1
+python scripts/run_initial_species_tree.py --matrix results/phylogeny/mafft-matrix-fcs-sensitivity-v2 --output results/phylogeny/fcs-mafft-guide-v1
+```
+
+Versioned matrix receipts, mask tables and all taxon coverage rows are under
+`metadata/{profile,mafft}_fcs_species_matrix_*`; launch and resource records are
+`metadata/fcs_species_guide_{launch,resource_plan}.json`.

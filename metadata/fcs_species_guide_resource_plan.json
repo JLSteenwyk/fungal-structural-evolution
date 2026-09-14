@@ -1,0 +1,27 @@
+{
+  "analyses": [
+    "profile",
+    "mafft"
+  ],
+  "matrices_version": "fcs-sensitivity-v2",
+  "workers": 2,
+  "threads_per_tree": 16,
+  "memory_per_tree_gb": 32,
+  "minimum_available_memory_gib": 128,
+  "minimum_free_disk_gib": 40,
+  "model": "LG+F+G4",
+  "support": "none; homogeneous guide sensitivity",
+  "planning_wall_hours_per_tree": [
+    8,
+    48
+  ],
+  "basis": "Completed baseline guides with same 526 taxa/model/thread count took 55,987.5 and 57,023.9 seconds (15.6 and 15.8 hours). Masked observations may alter runtime.",
+  "paid_resources": false,
+  "pinned_files": {
+    "scripts/run_initial_species_tree.py": "7af140df87dd543d8ef541991a24ca3a4e97ae5ebbdc28cab541319adf82beed",
+    "scripts/prepare_fcs_species_matrices.py": "8c2f76075344a56df882ffb7f1df4297d9666686acc7455dd6c504d7586ecf12",
+    "results/phylogeny/profile-matrix-fcs-sensitivity-v2/receipt.json": "9ea658523f51a724737b4d832a695f3b704fbfb3eba773f9f200e4a340922866",
+    "results/phylogeny/mafft-matrix-fcs-sensitivity-v2/receipt.json": "c855b13b0414f019af490302e5252a87da8f99ee7ec7e9d2eb3a36c2d028eb80"
+  },
+  "available_memory_bytes_at_launch_check": 431593398272
+}

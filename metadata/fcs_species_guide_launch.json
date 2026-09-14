@@ -1,0 +1,37 @@
+{
+  "runs": [
+    {
+      "alignment": "profile",
+      "pid": 3799913,
+      "start_ticks": "183119635",
+      "command": [
+        "python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/profile-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-profile-guide-v1"
+      ],
+      "session_id": 90263,
+      "config_sha256": "c3bce5968866380f4c5d6a36b5df5cd26f5d6aa917d919f252d24ad978e19cee",
+      "status": "verified_live"
+    },
+    {
+      "alignment": "mafft",
+      "pid": 3799915,
+      "start_ticks": "183119641",
+      "command": [
+        "python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/mafft-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-mafft-guide-v1"
+      ],
+      "session_id": 84579,
+      "config_sha256": "544357ee080ad7f884d3320715366066c04cc7c390313084d08b736d2e913712",
+      "status": "verified_live"
+    }
+  ],
+  "full_tree_audits": "pending"
+}

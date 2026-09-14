@@ -2475,3 +2475,15 @@ Fitted model labels, attached support/branch values and report hashes checked.
 77 markers remain pending; completion-order bias prevents full-batch discordance
 claims from this snapshot. See docs/phylogenetic-workflow.md and versioned v4
 snapshot/readback receipts and marker tables. Baseline FCS flags remain relevant.
+
+Full species-tree FCS sensitivity inputs and guide runs advanced. Both v2
+matrices retain all 526 taxa (including all 25 outgroups), 125 markers and the
+original retained column sets. 53 observations across 48 markers in two fungi
+are masked (44 Naganishia cerealis, nine Acaulospora colombiana). Full readback
+checked 25,788,202/33,532,500 profile/MAFFT characters. All taxa retain observed
+residues. A v1 affected-taxa receipt-labeling defect was corrected before any
+inference; matrix bytes were unchanged and retirement evidence is retained.
+Launched two homogeneous LG+F+G4 guide sensitivities on existing resources with
+16 threads/32 GB each. Parent processes verified live; launch identities and
+resource estimates in metadata/fcs_species_guide_*. Full tree audits, topology
+comparisons and heterogeneous-model sensitivities remain pending.
