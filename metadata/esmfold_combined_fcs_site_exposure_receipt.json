@@ -1,0 +1,27 @@
+{
+  "status": "complete_matched_site_exposure_omission_comparison",
+  "markers": 18,
+  "sites": 2950,
+  "retained_observations": 427510,
+  "omitted_observations": 2667,
+  "sites_with_omitted_observation": 2502,
+  "rows_scanned": {
+    "baseline": 1699035,
+    "sensitivity": 427510
+  },
+  "max_abs_median_rsa_change_tien": 0.018559773911689836,
+  "max_abs_median_rsa_change_miller": 0.04695318751449862,
+  "source_receipts": {
+    "baseline": "ecc915a2b9a8ae0f69fbcf9ef6cad1bc93c3657e8bf992a66835135f4c88c87f",
+    "sensitivity": "6287c35bcc18315caf054f729bc198c67741c2099a6b964c07915756d11124ab",
+    "inputs": "3ce37910285bef1c26146ae9914821e5f4395bef6156f9e16a6cca3c7c2337f8",
+    "baseline_inputs": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261"
+  },
+  "normalization_readback_sha256": "c2aa54bdf1bc2d2906a35c605fa9a16386e5940e2b0476aea7112e5759813a47",
+  "script_sha256": "d07070109b0514c0b3a987e3df6957c0f8c5498a7e52176edb4829abfb96b3d8",
+  "artifacts": {
+    "marker_summary.tsv": "d321e3fa959c3ac5f33eea60f71479007aa757c345e80b575f7abb211784cd47",
+    "site_exposure_changes.tsv": "b775eb1d9b665848f5e5154475c93d6d50e621b1e37ad4bd2843ee15095da3a9"
+  },
+  "interpretation": "All matched extant-site exposure and confidence quantiles compared with exact retained-row and full alignment-grid checks. Quantiles independently checked by NumPy. Descriptive composition sensitivity, not phylogenetically adjusted exposure, ancestral reconstruction, rate inference, or coupling test."
+}

@@ -302,3 +302,34 @@ These tables cover the 16/18 changed markers. The 56/71 unchanged markers reuse
 baseline accessibility. Later site-level exposure summaries must be recalculated
 across the retained sensitivity taxa for affected markers before coupling models
 are refit. Sensitivity rate estimates and revised coupling tests remain pending.
+
+### Matched-site exposure changes after omissions
+
+Recomputed extant exposure and confidence quartiles at every site in the affected
+markers, comparing identical alignment columns before and after the omissions.
+Every retained normalized row was checked for exact equality with its baseline
+row; both cohorts' observed-taxon grids were checked against their AA alignments.
+All quantiles were checked using independent sorted linear interpolation and
+NumPy calculations.
+
+| Cohort | Affected markers | Sites compared | Observations omitted | Sites with an omitted observation | Maximum absolute median RSA change, Tien | Maximum absolute median RSA change, Miller |
+|---|---:|---:|---:|---:|---:|---:|
+| Earlier ESMFold | 16 | 2,492 | 2,167 | 2,167 | 0.03954 | 0.03967 |
+| Combined ESMFold | 18 | 2,950 | 2,667 | 2,502 | 0.01856 | 0.04695 |
+
+The scale-specific maxima can occur at different sites. These are absolute
+changes in dimensionless relative accessibility, not percentage changes or
+independent evolutionary events. Some combined-cohort sites lose two observed
+taxa. The overlapping cohorts are not independent replications. These results
+quantify changed covariates; they do not establish stability of phylogenetic
+rate estimates, regression coefficients or significance tests.
+
+```bash
+python scripts/compare_fcs_site_exposure.py --baseline results/structural_annotations/paired-accessibility-normalized-esmfold-v1 --sensitivity results/structural_annotations/paired-accessibility-normalized-esmfold-fcs-sensitivity-v1 --inputs results/phylogeny/paired-inputs-esmfold-fcs-sensitivity-v1 --baseline-inputs results/phylogeny/paired-inputs-esmfold-partial-v1 --readback metadata/esmfold_fcs_accessibility_normalization_readback.json --output results/structural_annotations/fcs-site-exposure-comparison-esmfold-v1
+python scripts/compare_fcs_site_exposure.py --baseline results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1 --sensitivity results/structural_annotations/paired-accessibility-normalized-esmfold-combined-fcs-sensitivity-v1 --inputs results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1 --baseline-inputs results/phylogeny/paired-inputs-esmfold-combined-v1 --readback metadata/esmfold_combined_fcs_accessibility_normalization_readback.json --output results/structural_annotations/fcs-site-exposure-comparison-esmfold-combined-v1
+```
+
+Receipts and all marker summaries are versioned under
+`metadata/{esmfold,esmfold_combined}_fcs_site_exposure_*`. Full per-site tables
+remain outside Git. Revised topology-dependent site diagnostics and likelihood
+rates must still be joined to these retained-cohort exposure summaries.

@@ -2441,3 +2441,13 @@ metadata/fcs_accessibility_execution.json and metadata/*fcs_accessibility*.
 Rate refits and exposure aggregation across retained sensitivity taxa are still
 needed before updated sequence–structure coupling tests. Earlier and combined
 cohorts overlap; this checkpoint is not independent replication.
+
+Matched-site FCS exposure comparison completed for all affected markers:
+earlier ESMFold 16 markers/2,492 sites/2,167 omitted residue observations;
+combined ESMFold 18 markers/2,950 sites/2,667 omitted observations at 2,502 sites.
+Exact retained-row equality and complete observed-taxon alignment grids passed.
+All exposure/confidence quartiles were checked by independent linear
+interpolation and NumPy. Largest absolute median-RSA changes are 0.03954/0.03967
+(Tien/Miller) earlier and 0.01856/0.04695 combined. Extant covariate shifts are
+descriptive and do not establish robustness of the pending rate/coupling refits.
+Receipts and full marker summaries: metadata/*fcs_site_exposure*.
