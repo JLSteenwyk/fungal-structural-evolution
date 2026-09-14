@@ -1,0 +1,82 @@
+{
+  "status": "complete_fit_audit_and_descriptive_geometry_benchmark_handoff",
+  "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42",
+  "fit_receipt_sha256": "75877ad2ab486307d760980d5b6df71c15c1fc33cfbb5b71717a88121586d842",
+  "geometry_audit_sha256": "3f94c39bd1e9244fa9d53e24bf2fb781b1e0d7a4d2373b94c8a9fa9b1b909a1a",
+  "stages": [
+    {
+      "stage": "audit",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/summarize_paired_marker_fits.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42",
+      "receipt_path": "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "7789e09807f9cf1afa27b5f6fcffaa5e63f2ec3a9fe2a62281cf3080ea04b05a"
+    },
+    {
+      "stage": "paths",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/benchmark_paired_site_tree_points.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--geometry",
+        "results/structural_comparisons/paired-site-esmfold-combined-fcs-sensitivity-v1",
+        "--review",
+        "config/marker_orthology_review.json",
+        "--output",
+        "results/phylogeny/paired-path-points-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42",
+      "receipt_path": "results/phylogeny/paired-path-points-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "9ce8da738efbc68310708347309d8b87083a78d7ce61ad8a92d1544e67e2c9a8"
+    },
+    {
+      "stage": "ranks",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/summarize_tree_path_geometry_ranks.py",
+        "--benchmark",
+        "results/phylogeny/paired-path-points-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-path-ranks-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42",
+      "receipt_path": "results/phylogeny/paired-path-ranks-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "148e09c6f3c7c62b306513f5938eb6137f23cd63f8092b9da2894372615d6dbe"
+    },
+    {
+      "stage": "figure",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_tree_path_geometry_ranks.py",
+        "--summary",
+        "results/phylogeny/paired-path-ranks-esmfold-combined-fcs-sensitivity-v1",
+        "--source-label",
+        "Combined ESMFold (FCS omission)",
+        "--output",
+        "results/phylogeny/paired-path-rank-figures-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "config_sha256": "ae874910e4e547b18915b01bac2b9c93156bb8f864aefec5054453c2e73afd42",
+      "receipt_path": "results/phylogeny/paired-path-rank-figures-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "d7c12d906c432c0ba282b4a04fe57e707a89eb0a16f9764288320038f904c979"
+    }
+  ],
+  "markers": 18,
+  "accepted_pairs": 275252,
+  "excluded_pairs": 5702,
+  "interpretation": "Point-estimate benchmark and descriptive rank comparisons only. Branch uncertainty, phylogenetic dependence, prediction circularity and biological interpretation remain unresolved. Figure requires visual review."
+}

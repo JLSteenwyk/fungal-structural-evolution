@@ -1,0 +1,24 @@
+{
+  "status": "prelaunch_flagged_profile_unconstrained_multistart",
+  "case_ids": [
+    "Malassezia__4940884at2759__code1",
+    "Malassezia__4976279at2759__code1",
+    "Malassezia__541070at2759__code1",
+    "Malassezia__730114at2759__code1"
+  ],
+  "discrepancy_threshold": 1e-05,
+  "fits": 32,
+  "fresh_model_readbacks": 32,
+  "workers": 1,
+  "threads_per_fit": 1,
+  "memory_allowance_gb": 4,
+  "disk_allowance_gb": 2,
+  "planning_hours": [
+    0.05,
+    2
+  ],
+  "basis": "Eight saved starts for each of four cases; existing audited HyPhy engine; single-CPU sequential fits and fresh model replays. Broad estimate, not measured runtime.",
+  "audit_receipt_sha256": "8c7f7040e48df8f34a1a36c72f6b7f2b80178bf00a675484bd8fb48933d626a9",
+  "available_memory_bytes": 583583612928,
+  "cost": "Existing authorized host; no new charges"
+}

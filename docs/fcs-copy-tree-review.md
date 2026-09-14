@@ -85,3 +85,20 @@ existing source-quality caveats, broader paralog/sequence checks, rooting and
 reconciliation requirements remain. No candidate was promoted or predicted.
 Reproduce using the command above with marker 345792at2759 and its own fresh
 output directory. Receipt: metadata/fcs_copy_tree_review_345792at2759.json.
+
+## Third completed marker: 4803900at2759
+
+This tree contains 419 tips and 106 alignment columns. The selected and
+alternative N. cerealis tips yield 838 independent path checks (maximum
+discrepancy 1.78e-15). Selected protein KAJ9100835.1 overlaps FCS EXCLUDE
+and lies on a four-tip split with C. albicans, C. dubliniensis and C. maltosa
+(SH-aLRT 98.7). Alternative KAJ9112374.1 shares a two-tip split with
+N. liquefaciens (SH-aLRT 100; separating branch length 1.0380).
+
+The short alignment, long separating branch and unresolved N. liquefaciens
+FCS checksum discrepancy require particular care. The observed contrast adds
+a third marker for N. cerealis; these observations do not provide independent
+proof of contamination or resolve candidate orthology. No replacement has
+been accepted. All neighborhoods and provenance are retained in
+metadata/fcs_copy_tree_review_4803900at2759.json. Reproduce with the same review
+command using marker 4803900at2759 and a fresh output directory.

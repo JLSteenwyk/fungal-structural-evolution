@@ -2665,3 +2665,29 @@ All 29 FCS-exposed cases are flagged. Full results and caveats are recorded in
 docs/coding-sequence-workflow.md and metadata/genus_mg94_branch_parameter_profile_*.
 This is an audited finite-grid diagnostic, not dS intervals, global-optimum
 proof, saturation clearance or selection inference.
+
+Launched 32 unconstrained restarts for the four flagged MG94 cases, using each
+case's eight saved profile solutions. Each completed restart releases only
+the target constraint, preserves the remaining model definition and undergoes
+a fresh saved-likelihood readback. Two cases have completed; the full run is
+still active. Source profiles remain unchanged. Resource estimates and the
+reproducible runner are recorded in metadata/genus_mg94_flagged_restart_plan.json
+and scripts/restart_flagged_genus_profile_optima.py. Finite restarts do not
+establish a global optimum; revised profiles remain a subsequent task.
+
+Combined ESMFold FCS omission fits and geometry benchmark completed for all
+18 affected markers: 72 fits, 6,058 paired branches, 275,252 accepted pairs,
+5,702 exclusions and 720 independent graph path checks. All four downstream
+receipt hashes and 11 listed artifacts were independently rechecked; the
+three-panel figure was visually reviewed. All 72 fits contain near-zero
+branches, so branch ratios are inappropriate. Descriptive within-marker rank
+correlations are not acceleration tests or adjusted sequence–structure
+coupling. Site-rate optimization is running through the existing controller;
+the full combined-cohort coupling analysis remains pending. Receipts are
+versioned under metadata/esmfold_combined_fcs_sensitivity_*.
+
+Reviewed a third completed alternative-copy tree, 4803900at2759: 419 tips,
+106 columns and 838 independent paths. The selected N. cerealis copy groups
+with three Candida entries, while the candidate groups with N. liquefaciens.
+Short-alignment, long-branch and source-quality caveats are retained in
+docs/fcs-copy-tree-review.md; no candidate replacement was accepted.
