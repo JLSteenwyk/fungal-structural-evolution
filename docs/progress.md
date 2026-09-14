@@ -2708,3 +2708,15 @@ settings at approximately 12:40 Eastern today. Original cooling expiry remains
 September 16 00:56 Eastern. Schedule and checks are versioned in
 metadata/temporary_full_compute_20260914_schedule.json; this is not a permanent
 change to project defaults.
+
+DGX Spark feasibility assessment completed September 14. Existing SSH access,
+10-Gb/s direct link, idle GB10/20 ARM cores/~116 GiB available memory confirmed.
+SLURM GPU smoke test and four ESMFold checks completed on Spark (job 20912,
+5m06s, exit 0). Checks used unchanged runner/weights in an isolated project
+venv; inherited PyTorch 2.10 differs from the workstation environment. Full
+output readback passed, but one 700-residue prediction differs by 6.417 A
+whole-chain CA RMSD (1.646 A on jointly confident positions). Spark predictions
+therefore remain separate from the atlas pending source-compatibility review.
+Four tested predictions were 4.1–4.9 times slower per sequence on Spark.
+No production work moved; local cooling schedule unchanged. CPU offload remains
+an option using native ARM tools. Details: docs/dgx-spark-resources.md.

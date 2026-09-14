@@ -1,0 +1,110 @@
+{
+  "status": "completed_four_sequence_platform_comparison",
+  "rows": [
+    {
+      "sequence_id": "S8b840ad596301c486e3f116abad4239ff5ae4560bd3b6d67213bb64af417acfe",
+      "length": 128,
+      "local_seconds": 0.9196844329126179,
+      "spark_seconds": 4.484101901995018,
+      "ca_superposition_rmsd_angstrom": 0.08328178329117994,
+      "local_mean_plddt": 40.90357208251953,
+      "spark_mean_plddt": 41.072357177734375,
+      "array_differences": {
+        "pae": {
+          "mean_absolute_difference": 0.0628288984298706,
+          "maximum_absolute_difference": 0.3849449157714844
+        },
+        "ca_plddt": {
+          "mean_absolute_difference": 0.17834103107452393,
+          "maximum_absolute_difference": 0.7014923095703125
+        },
+        "max_pae": {
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_receipt_sha256": "421796de3096db2eae7fdec87a9fac7198e7782888a548d137354382c3c73888",
+      "spark_receipt_sha256": "8b1d39fc733c5c344eb0206d6feb8c55d3e791cf381573a08b4aeafa3ce5de82"
+    },
+    {
+      "sequence_id": "S00e409c3c3fd84aa903bf209ee89ed57f3eccf50049be574b893d19af90e3ada",
+      "length": 256,
+      "local_seconds": 3.2606948150787503,
+      "spark_seconds": 14.98570220102556,
+      "ca_superposition_rmsd_angstrom": 0.30632597916147286,
+      "local_mean_plddt": 85.67830657958984,
+      "spark_mean_plddt": 85.63306427001953,
+      "array_differences": {
+        "pae": {
+          "mean_absolute_difference": 0.030971108004450798,
+          "maximum_absolute_difference": 0.47158050537109375
+        },
+        "ca_plddt": {
+          "mean_absolute_difference": 0.078839972615242,
+          "maximum_absolute_difference": 0.8751678466796875
+        },
+        "max_pae": {
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_receipt_sha256": "f2f6a0fe615893825b69bd9f8dd00931ca3ded2af369bcb018b4ff98b64dd76a",
+      "spark_receipt_sha256": "94f21cbfd20184db3e0950d06ddff9f4b230a68583db219dcd578404b9e05578"
+    },
+    {
+      "sequence_id": "S070fa12bc7aeb4033110792c3d93e099dec97a06a4aa9a3ae545a63c9c721856",
+      "length": 500,
+      "local_seconds": 18.88700834196061,
+      "spark_seconds": 77.16541726212017,
+      "ca_superposition_rmsd_angstrom": 0.004814718885973216,
+      "local_mean_plddt": 89.3876724243164,
+      "spark_mean_plddt": 89.39473724365234,
+      "array_differences": {
+        "pae": {
+          "mean_absolute_difference": 0.0036866108421236277,
+          "maximum_absolute_difference": 0.2482318878173828
+        },
+        "ca_plddt": {
+          "mean_absolute_difference": 0.010419021360576153,
+          "maximum_absolute_difference": 0.225830078125
+        },
+        "max_pae": {
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_receipt_sha256": "b5cdbdd7664973901986c638db028959272c7c0e6248de5c8d0ab78df4cbd7ff",
+      "spark_receipt_sha256": "fcb9418e2ab9160d49a1bf2ca8a3430230118a4b7846c3e9d4d3406d75708803"
+    },
+    {
+      "sequence_id": "S007c4ae3d087e66bfd5751313d1259cd6383571b78a2c57930c029740fa2ed89",
+      "length": 700,
+      "local_seconds": 42.36997073912062,
+      "spark_seconds": 175.5375418139156,
+      "ca_superposition_rmsd_angstrom": 6.4170857690377465,
+      "local_mean_plddt": 68.80970764160156,
+      "spark_mean_plddt": 68.94674682617188,
+      "array_differences": {
+        "pae": {
+          "mean_absolute_difference": 0.305425763130188,
+          "maximum_absolute_difference": 8.928661346435547
+        },
+        "ca_plddt": {
+          "mean_absolute_difference": 1.018908143043518,
+          "maximum_absolute_difference": 12.627250671386719
+        },
+        "max_pae": {
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_receipt_sha256": "9949423f006efd752e9c2717bc57b59675b3b50b4d9b0249a2c8bbcefea45d1b",
+      "spark_receipt_sha256": "0839b27ce319ec6ad5ad009d770fa9752d2b6431a931fbb7d67443e490e735b8"
+    }
+  ],
+  "source_input_sha256": "8d99c0bfadd5273db40dcca9ec86bad146f6a6aab723756f001c1deb643e0fdd",
+  "script_sha256": "2b143e7149447b48e5ab33c46c54586dd28879f625fcb79a01f7d910e2252967",
+  "spark_config_sha256": "d910f72d331bbb499aa3d4fdc8e972b0b907e3bcdee5202c7cfa1bdfcb421dde",
+  "spark_chunk_sha256": "2eaa23b1bc5c443b644ce42159363b8d93ac471164daae288cfc95e3a26c6be5",
+  "interpretation": "Finite output and full-sequence checks on four length-selected proteins; independent artifact readback and rigid CA alignment. Not an accuracy assessment, complete platform equivalence proof or calibrated tolerance for evolutionary effects. Source/runtime differences remain explicit."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "independent_BioPython_SVD_check_passed",
+  "source_sha256": "015d542f4272a9c1bf48e63c218549c62332d0fc7a854e598ade8ab07124b553",
+  "script_sha256": "edc20aef1fcc39a030a1a21289267998554bbd687dae849f16af90223dd2eae8",
+  "maximum_full_rmsd_error": 9.71445146547012e-16,
+  "checks": [
+    {
+      "sequence_id": "S8b840ad596301c486e3f116abad4239ff5ae4560bd3b6d67213bb64af417acfe",
+      "full_rmsd_independent_error": 9.71445146547012e-16,
+      "joint_plddt70_ca_count": 0,
+      "joint_plddt70_ca_superposition_rmsd_angstrom": null
+    },
+    {
+      "sequence_id": "S00e409c3c3fd84aa903bf209ee89ed57f3eccf50049be574b893d19af90e3ada",
+      "full_rmsd_independent_error": 8.326672684688674e-16,
+      "joint_plddt70_ca_count": 223,
+      "joint_plddt70_ca_superposition_rmsd_angstrom": 0.31814504286617745
+    },
+    {
+      "sequence_id": "S070fa12bc7aeb4033110792c3d93e099dec97a06a4aa9a3ae545a63c9c721856",
+      "full_rmsd_independent_error": 4.3281350725621337e-16,
+      "joint_plddt70_ca_count": 476,
+      "joint_plddt70_ca_superposition_rmsd_angstrom": 0.003255066101098186
+    },
+    {
+      "sequence_id": "S007c4ae3d087e66bfd5751313d1259cd6383571b78a2c57930c029740fa2ed89",
+      "full_rmsd_independent_error": 8.881784197001252e-16,
+      "joint_plddt70_ca_count": 376,
+      "joint_plddt70_ca_superposition_rmsd_angstrom": 1.6456038625731133
+    }
+  ],
+  "interpretation": "Confidence filtering is descriptive, not domain segmentation or proof of hardware/software causality."
+}

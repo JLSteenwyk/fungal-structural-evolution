@@ -1,0 +1,33 @@
+{
+  "status": "prepared_hardware_compatibility_checks",
+  "sequences": [
+    {
+      "sequence_id": "S8b840ad596301c486e3f116abad4239ff5ae4560bd3b6d67213bb64af417acfe",
+      "length": 128,
+      "local_receipt": "results/predictions/esmfold-marker-v1/S8b840ad596301c486e3f116abad4239ff5ae4560bd3b6d67213bb64af417acfe.json",
+      "local_receipt_sha256": "421796de3096db2eae7fdec87a9fac7198e7782888a548d137354382c3c73888"
+    },
+    {
+      "sequence_id": "S00e409c3c3fd84aa903bf209ee89ed57f3eccf50049be574b893d19af90e3ada",
+      "length": 256,
+      "local_receipt": "results/predictions/esmfold-marker-v1/S00e409c3c3fd84aa903bf209ee89ed57f3eccf50049be574b893d19af90e3ada.json",
+      "local_receipt_sha256": "f2f6a0fe615893825b69bd9f8dd00931ca3ded2af369bcb018b4ff98b64dd76a"
+    },
+    {
+      "sequence_id": "S070fa12bc7aeb4033110792c3d93e099dec97a06a4aa9a3ae545a63c9c721856",
+      "length": 500,
+      "local_receipt": "results/predictions/esmfold-marker-v1/S070fa12bc7aeb4033110792c3d93e099dec97a06a4aa9a3ae545a63c9c721856.json",
+      "local_receipt_sha256": "b5cdbdd7664973901986c638db028959272c7c0e6248de5c8d0ab78df4cbd7ff"
+    },
+    {
+      "sequence_id": "S007c4ae3d087e66bfd5751313d1259cd6383571b78a2c57930c029740fa2ed89",
+      "length": 700,
+      "local_receipt": "results/predictions/esmfold-markers-513-768-gpu0-v1/S007c4ae3d087e66bfd5751313d1259cd6383571b78a2c57930c029740fa2ed89.json",
+      "local_receipt_sha256": "9949423f006efd752e9c2717bc57b59675b3b50b4d9b0249a2c8bbcefea45d1b"
+    }
+  ],
+  "artifacts": {
+    "candidates.faa": "d2e9689d9072c00e768fdcb1cd37fdddd7a30addd34bc494041a480b55136e26"
+  },
+  "interpretation": "Four already-predicted sequences selected by length only for platform compatibility; not a biological pilot or an independent accuracy benchmark."
+}

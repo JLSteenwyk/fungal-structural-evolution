@@ -1,0 +1,31 @@
+{
+  "status": "qualification_completed_production_prediction_equivalence_unresolved",
+  "ssh_alias": "spark",
+  "host": "spark-7ff0",
+  "architecture": "aarch64",
+  "link_mbps": 10000,
+  "physical_cpu_cores": 20,
+  "gpu": "NVIDIA GB10",
+  "available_memory_gib_observed": 116,
+  "free_disk_tib_observed": 3.2,
+  "scheduler_partition": "spark",
+  "qualification_job_id": "20912",
+  "environment": "/home/jlsteenwyk/projects/fungal-structural-evolution/esmfold-env",
+  "base_environment": "/home/jlsteenwyk/miniforge3/envs/glm_safety",
+  "isolation": "venv with inherited base site packages; additional packages installed only in project venv",
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.6",
+  "cuda_smoke_test": "32x32 ones matrix multiplication returned expected sum 32768.0 under SLURM",
+  "compatibility_warning": "PyTorch lists maximum CUDA capability 12.0 while GB10 reports 12.1; actual ESMFold and numeric checks pending",
+  "local_cooling_schedule_changed": false,
+  "resource_plan_sha256": "4b92968401f46411c99a02dfbee7c7d943c128e5a2664a87f7e46030fb85ab65",
+  "sources": [
+    "https://docs.nvidia.com/dgx/dgx-spark-porting-guide/overview.html",
+    "https://docs.nvidia.com/dgx/dgx-spark-porting-guide/porting/software-requirements.html"
+  ],
+  "qualification_job_state": "COMPLETED",
+  "qualification_exit_code": "0:0",
+  "qualification_wall_seconds": 306,
+  "slurm_accounting": "sacct database unavailable; terminal scontrol record and project receipts retained",
+  "production_jobs_launched": 0
+}

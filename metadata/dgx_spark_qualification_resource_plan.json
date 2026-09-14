@@ -1,0 +1,20 @@
+{
+  "status": "prelaunch_qualification_plan",
+  "gpu": "DGX Spark GB10",
+  "partition": "spark",
+  "threads": 4,
+  "memory_gb": 64,
+  "gpu_count": 1,
+  "wall_limit_minutes": 30,
+  "sequences": 4,
+  "sequence_lengths": [
+    128,
+    256,
+    500,
+    700
+  ],
+  "transfer_gb": 8.5,
+  "disk_budget_gb": 20,
+  "paid_resources": false,
+  "purpose": "Validate unchanged prediction runner and pinned weights on ARM64/PyTorch 2.10; separate outputs and full source provenance; no production relocation yet."
+}
