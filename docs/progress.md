@@ -2586,3 +2586,15 @@ roughly -0.127 to +0.085. These descriptive checks do not establish robust
 coupling or acceleration. Scripts and compact marker-level tables are versioned
 as compare_fcs_paired_paths.py, readback_fcs_path_ranks.py and
 metadata/esmfold_fcs_path_comparison_*.
+
+The first of 33 alternative-copy trees completed: marker 4764044at2759,
+476 tips/391 columns. Audited artifacts and exact tip/input grid, then verified
+all 952 candidate/selected focal-to-tip paths through independent graph
+traversal (maximum difference 1.33e-15). The original N. cerealis protein lies
+on a five-tip split with four Candida species; its alternative copy lies on a
+three-tip split with N. friedmannii and N. liquefaciens. Both separating edges
+report SH-aLRT 100; this is not a contamination probability or acceptance of
+orthology. The remaining queue remains live. Full findings, source-quality
+caveats and next qualification requirements are in docs/fcs-copy-tree-review.md
+and metadata/fcs_copy_tree_review_4764044at2759.json. No protein replacement or
+new prediction was made from this single-tree result.
