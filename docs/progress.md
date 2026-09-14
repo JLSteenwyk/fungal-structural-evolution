@@ -2499,3 +2499,15 @@ branch-duration samples. Added calibration qualification and uncertainty
 requirements in docs/dating-workflow.md, grounded in primary timetree and
 calibration-provenance literature. Dating and per-time structural estimates
 remain pending, without blocking relative-divergence analyses.
+
+Dating calibration inventory advanced: downloaded and hashed the primary
+supplementary calibration document, catalogued all 27 entries across 24 numbered
+groups (21 published minimum bounds, six soft maxima), and retained separate A/B
+entries. Independent PyMuPDF extraction checked every heading's page, numeric
+age and bound type against the pdftotext-derived catalogue. Four entries have
+both anchor names exactly matched to project names; other candidates need
+explicit clade mapping, not automatic rejection. No fossil calibration was
+approved or date transferred. Full provenance and qualification limits are in
+docs/dating-workflow.md and metadata/published_calibration_*.
+Alternative-copy tree producer was verified live; no completed copy trees were
+available at this checkpoint.

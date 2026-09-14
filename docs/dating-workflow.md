@@ -76,3 +76,40 @@ handling of duplication/loss and different descendant sets. Until these
 requirements are met, figures and tables must continue to label quantities as
 relative divergence or conditional rate multipliers, without units of change
 per million years.
+
+## Published calibration candidate catalogue
+
+Downloaded and hashed the publisher's
+[Supplementary Information sections 1–6](https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41559-025-02851-z/MediaObjects/41559_2025_2851_MOESM4_ESM.pdf).
+Section 1 contains 27 calibration headings in numbered groups 1–24, with A/B
+entries for groups 7, 22 and 24. The catalogue records 21 published minimum
+bounds and six soft maximum bounds, their published ages, stem/crown/root labels,
+anchor names, PDF page and exact-name project matches. A/B entries are kept
+separate; they must not automatically be treated as constraints on identical
+nodes. Published geological ages have not been updated or approved for use here.
+
+A second PDF extraction engine (PyMuPDF) independently located each heading on
+its reported page and checked all 27 numeric ages and bound types against the
+pdftotext catalogue. Warnings from the full pdftotext extraction are preserved.
+This verifies factual transcription, not specimen identity, geological age
+justification or the calibration's phylogenetic placement.
+
+Four entries have both anchor names exactly represented in the current project
+manifest. Lack of an exact pair does not itself disqualify a calibration:
+representative descendants may define the same clade after explicit node mapping.
+Conversely, matching both names does not resolve the meaning of a published stem
+versus crown label, outgroup rooting, accession identity or topology uncertainty.
+No calibration has yet been accepted and no clock inference has been launched.
+
+```bash
+python scripts/catalog_published_fungal_calibrations.py --output results/phylogeny/published-calibration-candidates-v1
+```
+
+Reproduction requires the PDF at the path in
+`metadata/published_calibration_candidates_receipt.json`, downloaded from its
+recorded publisher URL and checked against the recorded SHA-256. Structured
+candidate facts and independent extraction evidence are versioned in
+`metadata/published_calibration_candidates.tsv` and
+`metadata/published_calibration_heading_readback.json`. Full source PDFs/text
+remain outside Git. Next steps are specimen/source review and descendant-based
+mapping of each candidate onto qualified project topologies.
