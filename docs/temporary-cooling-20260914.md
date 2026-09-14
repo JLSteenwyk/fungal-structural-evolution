@@ -43,3 +43,28 @@ an initial rest period fell from roughly 298 W / 81–82 C under load to
 power guarantees. ESMFold output generation is checked separately. The former
 41-hour ETA no longer applies; half-time GPU scheduling alone approximately
 doubles remaining prediction time, with further CPU contention possible.
+
+## Temporary full-compute interval, September 14
+
+At the user's request, the original cooling controller was stopped cleanly
+at about 09:10 Eastern. Full affinity restoration passed 896 thread checks;
+ESMFold resumed uninterrupted execution with access to all 192 logical CPUs.
+The prior controller PID 70110 is no longer active.
+
+A user systemd timer, `fungal-reapply-cooling-20260914.timer`, is armed for
+September 14 at approximately 12:39:56 Eastern, 3.5 hours after scheduling.
+It will start the same resource controller with the same 24-core and 30-second
+run/rest settings, using the recorded surviving project process trees and
+their descendants. It retains the original September 16 00:56 Eastern expiry.
+This one-off timer changes no future analysis defaults and does not require
+this chat to remain active; a host reboot would remove the transient timer.
+
+Schedule, exact commands and checks:
+`metadata/temporary_full_compute_20260914_schedule.json`.
+Reapplication configuration:
+`metadata/temporary_cooling_20260914_reapply_config.json`.
+After activation, the new controller's state and recovery information will be
+in `results/temporary_cooling_20260914_reapplied_state.json`. Use these new
+paths, rather than the original state, for subsequent recovery. The systemd
+service is `fungal-reapply-cooling-20260914.service`; stopping that service
+normally sends SIGTERM and restores the recorded settings.

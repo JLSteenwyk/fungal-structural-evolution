@@ -1,0 +1,35 @@
+{
+  "status": "full_compute_restored_recooling_timer_armed",
+  "created_at": 1789391396.7070024,
+  "approximate_resume_cooling_at_eastern": "2026-09-14T12:39:56.707002-04:00",
+  "original_cooling_expiry_eastern": "2026-09-16T00:56:23.116736-04:00",
+  "timer_unit": "fungal-reapply-cooling-20260914.timer",
+  "service_unit": "fungal-reapply-cooling-20260914.service",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-reapply-cooling-20260914",
+    "--on-active=210min",
+    "--timer-property=AccuracySec=1s",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/temporary_run_resource_limit.py",
+    "--config",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_cooling_20260914_reapply_config.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260914_reapplied_state.json"
+  ],
+  "reapply_config_sha256": "70a0c12d112c87ccd60b27afeb4927e60ca391a032ca1a571d97cbcfcbfcb8c1",
+  "original_controller_pid": 70110,
+  "original_controller_created": 1789361782.34,
+  "reapplied_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260914_reapplied_state.json",
+  "roots": 43,
+  "restored_at": 1789391433.6130679,
+  "verification": {
+    "threads_checked": 896,
+    "affinity_mismatches": [],
+    "gpu_state": "running",
+    "gpu_affinity_logical_cpus": 192,
+    "verified_at": 1789391464.3986273
+  }
+}

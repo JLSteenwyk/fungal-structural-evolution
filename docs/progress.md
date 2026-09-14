@@ -2699,3 +2699,12 @@ Initial live checks found all 913 examined thread affinities restricted and
 GPU power falling to 83–89 W during rest; predictions continue. This exception
 expires after 48 hours and does not change future defaults. Recovery, provenance
 and caveats: docs/temporary-cooling-20260914.md. Earlier GPU ETA is superseded.
+
+September 14, approximately 09:10 Eastern: user requested 3.5 hours at prior
+compute levels. Stopped the cooling controller cleanly and verified original
+CPU affinities across 896 live threads, with GPU prediction running normally.
+A one-off user systemd timer is active and waiting to restore the same cooling
+settings at approximately 12:40 Eastern today. Original cooling expiry remains
+September 16 00:56 Eastern. Schedule and checks are versioned in
+metadata/temporary_full_compute_20260914_schedule.json; this is not a permanent
+change to project defaults.
