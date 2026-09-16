@@ -1,0 +1,13 @@
+{
+  "status": "passed_full_experimental_control_geometry_readback",
+  "accepted_rows": 27,
+  "excluded_rows": 24,
+  "residue_masks_checked": 51,
+  "common_pair_masks_checked": 27,
+  "independent_geometry_triplets": 27,
+  "independent_superpositions": 81,
+  "links_without_chain_grids": 0,
+  "comparison_receipt_sha256": "e749b1ad345709da8f89d27c076d95f80780be27cf424804bc8659dd4f650cc7",
+  "script_sha256": "e6a82264a66a45702348810730bc19e067f53285d6e8eb257152ccd57583303b",
+  "scope": "Every source chain/model/threshold grid, residue mask, eligibility outcome, common pair count, RMSD and local-distance statistic independently recomputed using full cdist matrices and Bio.SVDSuperimposer. Structure-parser sequence/numbering checks plus float64 mmCIF fields avoid float32 cutoff changes. Protein summaries and biological independence remain separate."
+}

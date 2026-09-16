@@ -1,0 +1,22 @@
+{
+  "status": "complete_exact_sequence_experimental_predictor_crosswalk",
+  "control_sequences": 2,
+  "alphafold_models": 2,
+  "reference_links": 17,
+  "entries": 17,
+  "links_with_coordinate_mapping": 17,
+  "coordinate_sequences_checked": 4,
+  "source_receipts": {
+    "controls": "3714812adbaf57444197a124e1568347c6c8eaecc687a443f1b3600e026ae2ad",
+    "control_audit": "33e824d35629ce4d0585a25bc3e34a7887629b9cceb8f91d188b40468cb49cca",
+    "predictions": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+    "screen": "bca4bf8399af0b774a60341d1bb0e1c4481b2362292ce3df269b45fa144213d0",
+    "references": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+    "mapping": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd"
+  },
+  "script_sha256": "a764f261ef0c1a14f7efb1d39cfba0410060553cd3478177fb82b3c502c80639",
+  "artifacts": {
+    "crosswalk.tsv": "6007b20d11198d98fbc5af9db0d9467d0cd60561f5879f2469155450b26c1c68"
+  },
+  "interpretation": "Exact canonical sequence correspondence with both prediction coordinate sequences re-read. All linked entries retained; no agreement-based selection. Coordinate masks, matched geometry, experimental context and training/template independence require separate checks. Entries/entities are not independent protein replicates."
+}

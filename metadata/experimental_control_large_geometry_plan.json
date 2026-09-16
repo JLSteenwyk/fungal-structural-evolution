@@ -1,0 +1,81 @@
+{
+  "status": "prelaunch_long_control_geometry_audit_summary",
+  "created_at": 1789573587.3785036,
+  "controls": 2,
+  "reference_links": 17,
+  "entries": 17,
+  "cpu_affinity": [
+    28
+  ],
+  "threads": 1,
+  "memory_allowance_gib": 6,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.02,
+    1
+  ],
+  "basis": "All mapped chains/models for two controls of lengths 1361 and 1468; unchanged geometry eligibility and independent readback followed by hierarchical summaries.",
+  "commands": [
+    [
+      "python",
+      "scripts/compare_experimental_predictor_controls.py",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-1153-1536-v1",
+      "--mapping",
+      "results/experimental_structures/ca-mapping-full-v1",
+      "--references",
+      "results/experimental_structures/reference-metadata-v2",
+      "--output",
+      "results/experimental_structures/predictor-controls-geometry-1153-1536-v1"
+    ],
+    [
+      "python",
+      "scripts/audit_experimental_predictor_controls.py",
+      "--comparisons",
+      "results/experimental_structures/predictor-controls-geometry-1153-1536-v1",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-1153-1536-v1",
+      "--mapping",
+      "results/experimental_structures/ca-mapping-full-v1",
+      "--references",
+      "results/experimental_structures/reference-metadata-v2",
+      "--output",
+      "metadata/experimental_control_large_geometry_readback.json"
+    ],
+    [
+      "python",
+      "scripts/summarize_experimental_predictor_controls.py",
+      "--comparisons",
+      "results/experimental_structures/predictor-controls-geometry-1153-1536-v1",
+      "--audit",
+      "metadata/experimental_control_large_geometry_readback.json",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-1153-1536-v1",
+      "--output",
+      "results/experimental_structures/predictor-controls-summary-1153-1536-v1"
+    ],
+    [
+      "python",
+      "scripts/audit_control_hierarchical_summary.py",
+      "--comparisons",
+      "results/experimental_structures/predictor-controls-geometry-1153-1536-v1",
+      "--summary",
+      "results/experimental_structures/predictor-controls-summary-1153-1536-v1",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-1153-1536-v1",
+      "--output",
+      "metadata/experimental_control_large_summary_readback.json"
+    ]
+  ],
+  "pins": {
+    "scripts/compare_experimental_predictor_controls.py": "15680b3572fa43ba631b4daf0eb95854acced90d7025536165f7deeac5c20b4c",
+    "scripts/audit_experimental_predictor_controls.py": "e6a82264a66a45702348810730bc19e067f53285d6e8eb257152ccd57583303b",
+    "scripts/summarize_experimental_predictor_controls.py": "33e1472d346d07e4b1e3cdcbdf8f65fec8c7f47b00a5795abde504617ca9a40b",
+    "results/experimental_structures/predictor-controls-crosswalk-1153-1536-v1/receipt.json": "fb3df1d731b187bee6360fab04220db324a434c7008c2f6df10ed3e3dfc2bab4",
+    "results/experimental_structures/ca-mapping-full-v1/receipt.json": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd",
+    "results/experimental_structures/reference-metadata-v2/receipt.json": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/audit_control_hierarchical_summary.py": "dad5c7b887e31efce815f0ca85055ad81545ff72d0849f7ac6cc93adc2c4256c"
+  },
+  "paid_resources": false
+}

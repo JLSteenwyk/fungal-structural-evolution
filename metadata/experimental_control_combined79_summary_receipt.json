@@ -1,0 +1,41 @@
+{
+  "status": "complete_disjoint_control_summary_combination",
+  "control_sequences": 79,
+  "sources": [
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-v1",
+      "summary_receipt_sha256": "377d159cb6ad04b411b541a2d8dbad4ece57534e80523cb4dfcbddd623719d18",
+      "readback": "metadata/experimental_predictor_control_summary_readback.json",
+      "readback_sha256": "add3e7ab0f1214980f78940921e19a2ebfe406583f75157b99f707d383750e51",
+      "control_sequences": 45
+    },
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-513-768-v1",
+      "summary_receipt_sha256": "322402580fb3c20776547fa8067fe26241f57a6facde6d8a40944271f2eff31d",
+      "readback": "metadata/experimental_control_long_summary_readback.json",
+      "readback_sha256": "13d65e73637df8a0abbcb2e07901ae915e306c76925c9dce0ffd4823e4dbb6ae",
+      "control_sequences": 12
+    },
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-769-1152-v1",
+      "summary_receipt_sha256": "7bd8b7755fd09588e0858b7d8fc5834206d045178f327e8dfc7d555d6b5513c9",
+      "readback": "metadata/experimental_control_next_summary_readback.json",
+      "readback_sha256": "aab0aa1f115eb7d9a6ba817d9285d8e26c4edf73c0b2bf7be5c0b3f98864dae4",
+      "control_sequences": 20
+    },
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-1153-1536-v1",
+      "summary_receipt_sha256": "075d9e120ec51b58df666f68185a627672e5e13d81e3e5d92f7a851016a90a10",
+      "readback": "metadata/experimental_control_large_summary_readback.json",
+      "readback_sha256": "89c53b72f5c6b66bd525ad8432249120b10bfc788af1b96874c24baa551bd0ec",
+      "control_sequences": 2
+    }
+  ],
+  "script_sha256": "26981e41744e8d712e1ad6502c10371497f05ffa8c66fd1d6f80055206278599",
+  "interpretation": "Equal canonical-protein descriptive summaries of previously audited within-protein hierarchical medians. Source tiers remain explicit. Sequence disjointness is not statistical or evolutionary independence. Confidence filters change residues and eligible proteins; no causal length effect, significance or general accuracy claim. Additional pending controls and alternative chunk settings are not included.",
+  "artifacts": {
+    "protein_summary.tsv": "41c01d1cf0d623bc415497ce3d86d979e143788bf6dc7b90509e66a9a19d1c9c",
+    "protein_disposition.tsv": "b7f4b2faa6596dc5019ad301ac0aa1002c20107567e7bfb2d700ee4a3b942663",
+    "cohort_summary.tsv": "cfaf57e84072d0c72674109cb93c8304035da11fd7baf33169b5247d354f54a1"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "status": "complete_chunk_setting_control_comparison",
+  "sequence_id": "S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81",
+  "length": 741,
+  "configuration_differences": {
+    "input_receipt_sha256": [
+      "26c6d81df41747230958c4c46df95a03b17aafb1a0c0fbe83306058bd1e6b487",
+      "e6ad217ae9efbebc5e989533652a05a132f51abecf9e004f7599678b54ed850d"
+    ],
+    "script_sha256": [
+      "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+      "07c044b32d7a00bb4a282ef50b699a67fbf9e126be12e864bf7a9aafa7f8279f"
+    ],
+    "attention_chunk_size": [
+      64,
+      16
+    ],
+    "max_length": [
+      768,
+      3072
+    ]
+  },
+  "geometry": [
+    {
+      "joint_native_ca_plddt_cutoff": 0,
+      "residues": 741,
+      "ca_rmsd_angstrom": 3.2572223021892106e-14,
+      "max_aligned_ca_displacement_angstrom": 6.72308567373772e-14
+    },
+    {
+      "joint_native_ca_plddt_cutoff": 70,
+      "residues": 494,
+      "ca_rmsd_angstrom": 1.2927730761331423e-14,
+      "max_aligned_ca_displacement_angstrom": 4.369260109715201e-14
+    },
+    {
+      "joint_native_ca_plddt_cutoff": 90,
+      "residues": 223,
+      "ca_rmsd_angstrom": 1.2329961920381102e-14,
+      "max_aligned_ca_displacement_angstrom": 3.294651128092491e-14
+    }
+  ],
+  "serialized_ca_coordinates_exactly_equal": true,
+  "confidence_mean_absolute_difference": 0.0,
+  "confidence_max_absolute_difference": 0.0,
+  "pae_mean_absolute_difference_angstrom": 0.0,
+  "pae_max_absolute_difference_angstrom": 0.0,
+  "confidence_threshold_crossings": {
+    "50": 0,
+    "70": 0,
+    "90": 0
+  },
+  "baseline_inference_seconds": 52.89768117600033,
+  "alternative_inference_seconds": 48.79050891099905,
+  "baseline_peak_allocated_bytes": 12297761280,
+  "alternative_peak_allocated_bytes": 12297509376,
+  "pins": {
+    "results/predictions/esmfold-experimental-controls-513-768-v1/config.json": "6ff1c168fb254bfa9cb82694553da93e1ef11cf542adf328eb17efdff31d3684",
+    "results/predictions/esmfold-experimental-controls-chunk16-v1/config.json": "993125039e6c5d4e129f65250c9309985b881d779f6ad719e5d43a82e93b4eb2",
+    "results/predictions/esmfold-experimental-controls-513-768-v1/S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81.json": "9621070559ebfaec9afbaac23fb240a4bea6cc292824e002e1587d4d9c3a43e4",
+    "results/predictions/esmfold-experimental-controls-chunk16-v1/S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81.json": "7db33bb1055814750d65b32cff06ef3efae852d7fa078ddb250e832a2bfd65ce",
+    "results/predictions/experimental-controls-513-768-audit-v1/receipt.json": "8c9d186b146ad942d5041121270ce2006ca709a4f6ef0c6d210070d8b3248397",
+    "results/predictions/experimental-controls-chunk16-partial-audit-v1/receipt.json": "c0b0a50488a34d59c155f8bc08338a3d47425ff4bf6d0626df4f44057d18493a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/compare_control_chunk_settings.py": "6ae74392d96fb628b263a8deffa3df003f56a0d1dd810cd833d30bbb7f247901"
+  },
+  "interpretation": "Single full-sequence numerical sensitivity control; coordinate RMSD cross-checked with independent Bio.SVDSuperimposer. Native confidence masks may differ from rounded PDB masks. PAE differences include all directed entries including diagonal. No experimental accuracy, equivalence across proteins, or general memory-scaling claim."
+}
