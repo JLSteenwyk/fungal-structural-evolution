@@ -997,3 +997,13 @@ OPENBLAS_NUM_THREADS=1 python scripts/plot_control_region_placement.py --summary
 Use a fresh output directory. SVG is versioned in docs/figures; PNG and source
 receipt remain in the result directory. Figure receipt and visual/numeric
 review: metadata/experimental_control_region_figure_{receipt,review}.json.
+
+### Combined 79-control figure
+
+![Combined experimental controls](figures/combined_experimental_controls.svg)
+
+The combined snapshot contains 45/12/20/2 distinct proteins in the ≤512, 513–768, 769–1,152 and 1,153–1,536 residue tiers. Panels A–C show nested-median AlphaFold–experiment and ESMFold–experiment RMSD with identical logarithmic axes at each joint confidence cutoff. Panel D retains every tier denominator and shows residue/coverage/confidence eligibility. Panels E and F show paired differences computed at chain level before aggregation: E holds the 18-protein cohort fixed, while F includes all eligible proteins at each cutoff. Their symmetric-log axes share limits and are linear within ±1 Å. Holding proteins fixed still permits changed residues and experimental entries.
+
+The plotting script `plot_combined_experimental_controls.py` requires the exact combined-summary readback. Version 2 was visually reviewed after correcting a coverage-legend overlap in the draft. All 152 plotted protein/threshold rows (456 RMSD values), 12 coverage counts, six cohort medians and 18 common-protein memberships were checked against the audited source. SVG is versioned under docs/figures; PNG and plotted-value tables remain in `results/experimental_structures/predictor-controls-figure-combined79-v2`. Receipt and review are versioned under `metadata/experimental_control_combined79_figure_*`.
+
+These panels are descriptive. The proteins are selected experimental-reference controls, length tiers differ biologically, and stricter confidence thresholds change the sample. Training overlap, experimental context, alternative conformations and relative domain placement remain unresolved. Positive paired differences indicate lower AlphaFold discrepancy within this comparison, without establishing general accuracy or a causal filtering effect. The original 45-protein figure remains a historical cohort-specific result.
