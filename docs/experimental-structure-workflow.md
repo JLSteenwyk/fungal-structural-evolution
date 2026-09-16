@@ -469,6 +469,33 @@ Three-way coordinate comparisons still require common residue masks and
 protein-level summaries that retain repeated experimental chains/models without
 treating them as independent proteins. The crosswalk establishes sequence
 identity, not unbiased accuracy or experimental/training independence.
+
+The three-way matched geometry calculation is now running over that complete
+45-sequence crosswalk. Each experimental chain and deposited model is retained.
+For confidence thresholds 0, 70 and 90, a residue is eligible only when its
+experimental CA is unambiguous/full-occupancy and both predictors meet the
+threshold. All three geometry comparisons use exactly these same residues;
+coverage requires at least 50 residues and half the canonical sequence.
+Local-distance comparisons also share a single pair set: sequence separation
+at least three and distance at most 15 Angstrom in any of AF, ESMFold or the
+experimental structure. This differs from using a separate neighborhood set
+for each predictor. Selected residue positions and exclusions are retained.
+
+Each of the three CA superpositions is recomputed using a separate SciPy
+rotation calculation. Full independent residue-mask/local-distance readback
+and protein-level summaries remain pending. Missing chain grids are recorded
+explicitly, rather than treating entry-level mapping availability as proof of
+usable coordinates for every entity. Planning allowance: one core, 4 GiB memory,
+2 GiB disk, 0.1–4 hours; no GPU inference or new charges.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 taskset -c 28 python scripts/compare_experimental_predictor_controls.py --crosswalk results/experimental_structures/predictor-controls-crosswalk-v1 --mapping results/experimental_structures/ca-mapping-full-v1 --references results/experimental_structures/reference-metadata-v2 --output results/experimental_structures/predictor-controls-geometry-v1
+```
+
+Resource/source pins and live identity are
+metadata/experimental_predictor_control_geometry_{plan,launch}.json. Results
+remain conditional descriptive agreement, not independent accuracy or inherited
+structural change; repeated experimental structures are not independent proteins.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
 

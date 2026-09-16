@@ -1,0 +1,29 @@
+{
+  "status": "prelaunch_three_way_experimental_control_geometry",
+  "created_at": 1789568822.6190255,
+  "control_sequences": 45,
+  "reference_links": 2165,
+  "entries": 970,
+  "threads": 1,
+  "cpu_affinity": [
+    28
+  ],
+  "memory_allowance_gib": 4,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "basis": "Full mapped control cohort, all chains/models and three joint-confidence thresholds, three geometry pairs each. Matrices at most 499 residues; process experimental entries serially.",
+  "available_memory_bytes": 572513726464,
+  "output": "results/experimental_structures/predictor-controls-geometry-v1",
+  "pinned_files": {
+    "results/experimental_structures/predictor-controls-crosswalk-v1/receipt.json": "9a0585fb5cd8fe819f22185b22669d4c2580819e30a8b7c0a53f611cbb9e48a3",
+    "results/experimental_structures/ca-mapping-full-v1/receipt.json": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd",
+    "results/experimental_structures/reference-metadata-v2/receipt.json": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+    "scripts/compare_experimental_predictor_controls.py": "15680b3572fa43ba631b4daf0eb95854acced90d7025536165f7deeac5c20b4c",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173"
+  },
+  "paid_resources": false,
+  "interpretation": "Common residue mask across AF/ESM/experiment; distance pairs also shared across all three comparisons. Descriptive controls, not prediction accuracy or independent experimental validation."
+}

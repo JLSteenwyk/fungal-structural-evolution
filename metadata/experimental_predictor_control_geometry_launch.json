@@ -1,0 +1,21 @@
+{
+  "pid": 135416,
+  "created": 1789568822.57,
+  "command": [
+    "python",
+    "scripts/compare_experimental_predictor_controls.py",
+    "--crosswalk",
+    "results/experimental_structures/predictor-controls-crosswalk-v1",
+    "--mapping",
+    "results/experimental_structures/ca-mapping-full-v1",
+    "--references",
+    "results/experimental_structures/reference-metadata-v2",
+    "--output",
+    "results/experimental_structures/predictor-controls-geometry-v1"
+  ],
+  "session_id": 5726,
+  "cpu_affinity": [
+    28
+  ],
+  "verified_at": 1789568856.758772
+}
