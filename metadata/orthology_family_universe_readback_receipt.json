@@ -1,0 +1,19 @@
+{
+  "status": "passed_complete_cluster_to_family_identity_readback",
+  "counts": {
+    "genes": 4485438,
+    "families": 104138,
+    "singleton_families": 60423,
+    "two_sequence_families": 11077,
+    "alignment_eligible_at_least_two": 43715,
+    "tree_eligible_at_least_three": 32638
+  },
+  "species_in_clusters": 526,
+  "species_in_mapping": 526,
+  "species_without_clustered_genes": [],
+  "elapsed_seconds": 107.77879738807678,
+  "cluster_sha256": "f1875916a41c3b96340c79d9040471b2d86fc880d8ceb749d8aff159c502198f",
+  "species_ids_sha256": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+  "script_sha256": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+  "interpretation": "Exact gene identity universe and unique partition, not orthology/homology validation. Native >=2 alignment and >=3 tree eligibility assumes no restart-index exclusions. Source sequence contents are audited separately."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "complete_expected_artifact_name_and_size_readback",
+  "verified_at": 1789566878.5434997,
+  "source_universe_receipt_sha256": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+  "checks": {
+    "alignments": {
+      "expected": 43715,
+      "present": 43715,
+      "missing_eligible": [],
+      "unexpected": [],
+      "empty": []
+    },
+    "trees": {
+      "expected": 32638,
+      "present": 32638,
+      "missing_eligible": [],
+      "unexpected": [],
+      "empty": [
+        "OG0000017"
+      ]
+    }
+  },
+  "interpretation": "Exact expected file-name sets and empty-file detection only. Full sequence/alignment/tree content audit remains pending; count agreement does not prove usable trees."
+}

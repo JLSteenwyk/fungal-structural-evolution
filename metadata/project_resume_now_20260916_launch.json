@@ -1,0 +1,23 @@
+{
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-project-resume-20260916-now",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+    "resume",
+    "--manifest",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/project_pause_20260916_manifest.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/project_pause_20260916_state.json",
+    "--cooling-config",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/project_resume_pending_20260916_cooling_config.json",
+    "--cooling-state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/project_resume_now_20260916_cooling_state.json",
+    "--cooling-script",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/temporary_run_resource_limit.py"
+  ],
+  "launched_at": 1789566819.3752916,
+  "reason": "User clarified September 16 and requested immediate resume; no future restart timer requested."
+}
