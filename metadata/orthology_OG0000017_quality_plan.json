@@ -1,0 +1,31 @@
+{
+  "family": "OG0000017",
+  "source": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0000017.fa",
+  "alignment": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa",
+  "species_ids": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesIDs.txt",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "expected_genes": 55981,
+  "expected_alignment_columns": 27697,
+  "focal_taxon": "F181123",
+  "expected_focal_genes": 46787,
+  "output": "results/orthology/OG0000017-quality-v1",
+  "pins": {
+    "scripts/profile_large_family_quality.py": "695fa017b5cff872703bc3757d3500a5b08a41c2b0c9071751f734e85f4690a8",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0000017.fa": "6ca2ddc21fda535053065e3b5f35698e0d046bb83dd5d7c3c138bb049eaad87d",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa": "76389fed0f41bc6bac7688126c5acf194454440185cca7364b54a84db2ad51e6",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/orthology_OG0000017_taxon_concentration.json": "a95937484d9790b23f1acf997b9008353c8e27a87c22c051cad7c927bb39f9de"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 4,
+    "output_allowance_mib": 100,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "scope": "Descriptive full-family sequence and alignment quality. No exclusion or alteration of ongoing FastTree job."
+}
