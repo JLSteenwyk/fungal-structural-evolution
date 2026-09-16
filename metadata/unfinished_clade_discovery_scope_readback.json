@@ -1,0 +1,13 @@
+{
+  "status": "passed_native_clade_and_singleton_overlap_readback",
+  "guides": 2,
+  "clades_per_guide": [
+    45,
+    45
+  ],
+  "intermediate_proteins": 1390832,
+  "retained_singleton_overlap": 60423,
+  "review_sha256": "3a9dcebf80d82517d665143d1329ed7ad6075615eb52ed879f94e40f6928934b",
+  "script_sha256": "bb4f4baafa4ea42dd8044e56b7f745a5e85b6012175aff6f5e826a634f4ff4b3",
+  "scope": "Re-executes installed native clade selection, independently sums all clade species-pair products, and verifies exact intermediate/retained overlap. Does not validate scientific correctness of native clade restriction or perform discovery."
+}

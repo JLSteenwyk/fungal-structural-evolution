@@ -1,0 +1,30 @@
+{
+  "status": "complete_full_protein_family_coverage_accounting",
+  "taxa": 526,
+  "totals": {
+    "proteins": 5815847,
+    "outside_retained_partition": 1330409,
+    "singleton_family_proteins": 60423,
+    "two_member_family_proteins": 22154,
+    "tree_eligible_family_proteins": 4402861,
+    "intermediate_unassigned_proteins": 1390832,
+    "intermediate_unassigned_now_in_partition": 60423,
+    "intermediate_unassigned_still_outside": 1330409,
+    "outside_not_in_intermediate": 0
+  },
+  "family_counts_by_size_class": {
+    "3": 32638,
+    "2": 11077,
+    "1": 60423
+  },
+  "outside_fraction": 0.22875584588109008,
+  "elapsed_seconds": 42.19150471687317,
+  "plan_sha256": "f08878f4293add5ab5b348347c513d90f7eaf43846e76063fa5d0b7ffd9961d2",
+  "script_sha256": "1fe4c820b6b0e1e9a9d72ce13ba28100787c84cb88b31d041d9f9d4c0a3f50a8",
+  "artifacts": {
+    "taxon_coverage.tsv": "40cd126a85240182f147360f5936ed4c2b1055d49f81ca3e169d62d94eccad10",
+    "outside_retained_partition.tsv": "22dd8a79b36960de86027777e29f25db0a436207ff03c2be817d550aeafd3b81",
+    "intermediate_source_checksums.json": "f89435bbb7cf00ece24427405f1c279ebaf7d3d23c29ba5f3731794adf718e97"
+  },
+  "interpretation": "Exact native-ID accounting against the saved family partition and full species FASTAs. Historical Unassigned.Species files are compared as intermediate inputs, not presumed final assignments. Outside-partition proteins are retained for atlas/coverage work; this status is not evidence of biological novelty, missing homologs or gene loss. No family memberships changed."
+}

@@ -1,0 +1,23 @@
+{
+  "output": "results/orthology/full-protein-family-coverage-v1",
+  "working_directory": "results/orthology/full-reconciliation-inputs-v1/profile/Source/WorkingDirectory",
+  "original_working_directory": "results/orthology/core-v1/Results_full526v2/WorkingDirectory",
+  "staging_manifest": "results/orthology/full-reconciliation-inputs-v1/profile/copied_files.tsv",
+  "pins": {
+    "scripts/audit_full_protein_family_coverage.py": "1fe4c820b6b0e1e9a9d72ce13ba28100787c84cb88b31d041d9f9d4c0a3f50a8",
+    "scripts/audit_orthology_family_universe.py": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+    "metadata/full_reconciliation_input_staging_readback.json": "a9512c937574b28763a33afaa55588c8aecc1af2447c42a88123ee4cac3195dd",
+    "results/orthology/full-reconciliation-inputs-v1/profile/copied_files.tsv": "ed7488e4db32ce71228bd2e7059801ecae22020116f98a768037a8a201f32220",
+    "metadata/orthology_family_universe_readback_receipt.json": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 4,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "cost": "Existing host, no new charges"
+  }
+}

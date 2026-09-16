@@ -1,0 +1,2230 @@
+{
+  "status": "reviewed_unfinished_clade_discovery_scope",
+  "core_taxa": 64,
+  "added_taxa": 462,
+  "core_proteins": 597213,
+  "added_proteins": 5218634,
+  "core_outside_partition": 0,
+  "added_outside_partition": 1330409,
+  "intermediate_proteins": 1390832,
+  "retained_intermediate_overlap": 60423,
+  "overlap_exactly_all_retained_singletons": true,
+  "guides": [
+    {
+      "guide": "profile",
+      "clades": 45,
+      "covered_taxa": 526,
+      "uncovered_taxa": [],
+      "maximum_clade_taxa": 72,
+      "total_intermediate_proteins": 1390832,
+      "largest_clade_proteins": 355735,
+      "ordered_candidate_pairs_including_self": 199178446126,
+      "chunks": [
+        {
+          "clade": 0,
+          "species": [
+            25,
+            46,
+            64,
+            76,
+            77,
+            95,
+            101,
+            104,
+            110,
+            134,
+            139,
+            146,
+            147,
+            149,
+            152,
+            173,
+            176,
+            179,
+            196,
+            204,
+            207,
+            220,
+            226,
+            228,
+            229,
+            239,
+            240,
+            246,
+            255,
+            258,
+            259,
+            268,
+            269,
+            270,
+            275,
+            286,
+            289,
+            297,
+            298,
+            299,
+            317,
+            347,
+            349,
+            351,
+            358,
+            363,
+            371,
+            375,
+            379,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388,
+            405,
+            414,
+            417,
+            418,
+            435,
+            438,
+            449,
+            457,
+            469,
+            471,
+            480,
+            490,
+            496,
+            497,
+            503,
+            509
+          ],
+          "core_species": [
+            25,
+            46
+          ],
+          "proteins": 355735,
+          "outside_partition_proteins": 353878,
+          "ordered_candidate_pairs_including_self": 126547390225,
+          "unordered_cross_species_candidate_pairs": 62070181794
+        },
+        {
+          "clade": 1,
+          "species": [
+            31,
+            78,
+            79,
+            84,
+            153,
+            154,
+            221,
+            222,
+            223,
+            224,
+            267,
+            276,
+            294,
+            319,
+            348,
+            411,
+            412,
+            413,
+            429,
+            434,
+            454,
+            492,
+            498
+          ],
+          "core_species": [
+            31
+          ],
+          "proteins": 30415,
+          "outside_partition_proteins": 30371,
+          "ordered_candidate_pairs_including_self": 925072225,
+          "unordered_cross_species_candidate_pairs": 435457610
+        },
+        {
+          "clade": 2,
+          "species": [
+            5,
+            12,
+            177,
+            197,
+            262
+          ],
+          "core_species": [
+            5,
+            12
+          ],
+          "proteins": 3093,
+          "outside_partition_proteins": 886,
+          "ordered_candidate_pairs_including_self": 9566649,
+          "unordered_cross_species_candidate_pairs": 2273895
+        },
+        {
+          "clade": 3,
+          "species": [
+            43,
+            72,
+            114,
+            130,
+            137,
+            138,
+            163,
+            175,
+            180,
+            181,
+            191,
+            249,
+            302,
+            357,
+            415,
+            440,
+            447
+          ],
+          "core_species": [
+            43
+          ],
+          "proteins": 32335,
+          "outside_partition_proteins": 31914,
+          "ordered_candidate_pairs_including_self": 1045552225,
+          "unordered_cross_species_candidate_pairs": 485677095
+        },
+        {
+          "clade": 4,
+          "species": [
+            15,
+            50,
+            118,
+            128,
+            189,
+            237,
+            253,
+            296,
+            484,
+            485,
+            493,
+            494
+          ],
+          "core_species": [
+            15,
+            50
+          ],
+          "proteins": 8443,
+          "outside_partition_proteins": 7213,
+          "ordered_candidate_pairs_including_self": 71284249,
+          "unordered_cross_species_candidate_pairs": 30806951
+        },
+        {
+          "clade": 5,
+          "species": [
+            16,
+            39,
+            67,
+            85,
+            135,
+            195,
+            214,
+            218,
+            230,
+            245,
+            280,
+            303,
+            304,
+            318,
+            321,
+            362,
+            370,
+            398,
+            450,
+            489
+          ],
+          "core_species": [
+            16,
+            39
+          ],
+          "proteins": 117230,
+          "outside_partition_proteins": 115654,
+          "ordered_candidate_pairs_including_self": 13742872900,
+          "unordered_cross_species_candidate_pairs": 4713251517
+        },
+        {
+          "clade": 6,
+          "species": [
+            0,
+            28
+          ],
+          "core_species": [
+            0,
+            28
+          ],
+          "proteins": 1727,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 2982529,
+          "unordered_cross_species_candidate_pairs": 735732
+        },
+        {
+          "clade": 7,
+          "species": [
+            35,
+            47
+          ],
+          "core_species": [
+            35,
+            47
+          ],
+          "proteins": 2415,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 5832225,
+          "unordered_cross_species_candidate_pairs": 1458054
+        },
+        {
+          "clade": 8,
+          "species": [
+            26,
+            100,
+            292,
+            419
+          ],
+          "core_species": [
+            26
+          ],
+          "proteins": 7629,
+          "outside_partition_proteins": 6897,
+          "ordered_candidate_pairs_including_self": 58201641,
+          "unordered_cross_species_candidate_pairs": 18149232
+        },
+        {
+          "clade": 9,
+          "species": [
+            242
+          ],
+          "core_species": [],
+          "proteins": 5972,
+          "outside_partition_proteins": 5972,
+          "ordered_candidate_pairs_including_self": 35664784,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 10,
+          "species": [
+            19,
+            37,
+            65,
+            87,
+            106,
+            107,
+            145,
+            257,
+            261,
+            272,
+            283,
+            284,
+            316,
+            334,
+            342,
+            366,
+            368,
+            394,
+            395,
+            396,
+            397,
+            410,
+            420,
+            422,
+            423,
+            424,
+            425,
+            437,
+            448,
+            477,
+            488
+          ],
+          "core_species": [
+            19,
+            37
+          ],
+          "proteins": 29532,
+          "outside_partition_proteins": 28856,
+          "ordered_candidate_pairs_including_self": 872139024,
+          "unordered_cross_species_candidate_pairs": 409360177
+        },
+        {
+          "clade": 11,
+          "species": [
+            33,
+            102,
+            350
+          ],
+          "core_species": [
+            33
+          ],
+          "proteins": 2061,
+          "outside_partition_proteins": 1699,
+          "ordered_candidate_pairs_including_self": 4247721,
+          "unordered_cross_species_candidate_pairs": 1316666
+        },
+        {
+          "clade": 12,
+          "species": [
+            40,
+            66,
+            75,
+            108,
+            109,
+            111,
+            112,
+            113,
+            132,
+            148,
+            151,
+            160,
+            161,
+            183,
+            194,
+            232,
+            247,
+            248,
+            252,
+            281,
+            285,
+            301,
+            306,
+            324,
+            329,
+            330,
+            356,
+            369,
+            372,
+            373,
+            416,
+            470,
+            495,
+            499
+          ],
+          "core_species": [
+            40
+          ],
+          "proteins": 46901,
+          "outside_partition_proteins": 45903,
+          "ordered_candidate_pairs_including_self": 2199703801,
+          "unordered_cross_species_candidate_pairs": 1063548134
+        },
+        {
+          "clade": 13,
+          "species": [
+            4,
+            21
+          ],
+          "core_species": [
+            4,
+            21
+          ],
+          "proteins": 1121,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 1256641,
+          "unordered_cross_species_candidate_pairs": 244200
+        },
+        {
+          "clade": 14,
+          "species": [
+            10,
+            98,
+            187,
+            201,
+            278,
+            295,
+            310,
+            311,
+            328,
+            331
+          ],
+          "core_species": [
+            10
+          ],
+          "proteins": 10512,
+          "outside_partition_proteins": 10249,
+          "ordered_candidate_pairs_including_self": 110502144,
+          "unordered_cross_species_candidate_pairs": 48305410
+        },
+        {
+          "clade": 15,
+          "species": [
+            38,
+            53,
+            68,
+            71,
+            74,
+            89,
+            90,
+            91,
+            105,
+            115,
+            119,
+            120,
+            122,
+            129,
+            136,
+            162,
+            166,
+            167,
+            168,
+            170,
+            186,
+            188,
+            190,
+            199,
+            200,
+            208,
+            209,
+            217,
+            233,
+            235,
+            241,
+            243,
+            250,
+            251,
+            254,
+            256,
+            273,
+            279,
+            308,
+            312,
+            314,
+            320,
+            332,
+            333,
+            335,
+            336,
+            337,
+            338,
+            343,
+            346,
+            353,
+            355,
+            359,
+            364,
+            377,
+            406,
+            407,
+            408,
+            409,
+            426,
+            427,
+            428,
+            430,
+            436,
+            445,
+            455,
+            459,
+            467,
+            468,
+            479,
+            481,
+            491
+          ],
+          "core_species": [
+            38,
+            53
+          ],
+          "proteins": 162666,
+          "outside_partition_proteins": 160381,
+          "ordered_candidate_pairs_including_self": 26460227556,
+          "unordered_cross_species_candidate_pairs": 12989533249
+        },
+        {
+          "clade": 16,
+          "species": [
+            49,
+            81,
+            86,
+            103,
+            124,
+            182,
+            185,
+            192,
+            212,
+            213,
+            216,
+            234,
+            263,
+            307,
+            315,
+            325,
+            345,
+            360,
+            402,
+            403,
+            458
+          ],
+          "core_species": [
+            49
+          ],
+          "proteins": 31267,
+          "outside_partition_proteins": 30825,
+          "ordered_candidate_pairs_including_self": 977625289,
+          "unordered_cross_species_candidate_pairs": 463533374
+        },
+        {
+          "clade": 17,
+          "species": [
+            27,
+            48,
+            80,
+            82,
+            83,
+            116,
+            123,
+            125,
+            142,
+            164,
+            165,
+            169,
+            171,
+            172,
+            178,
+            193,
+            238,
+            244,
+            260,
+            264,
+            271,
+            293,
+            309,
+            313,
+            344,
+            352,
+            374,
+            376,
+            381,
+            400,
+            401,
+            421,
+            431,
+            432,
+            439,
+            441,
+            442,
+            443,
+            472,
+            473,
+            474,
+            476,
+            500,
+            502
+          ],
+          "core_species": [
+            27,
+            48
+          ],
+          "proteins": 93247,
+          "outside_partition_proteins": 91003,
+          "ordered_candidate_pairs_including_self": 8695003009,
+          "unordered_cross_species_candidate_pairs": 4229034800
+        },
+        {
+          "clade": 18,
+          "species": [
+            3,
+            354,
+            367
+          ],
+          "core_species": [
+            3
+          ],
+          "proteins": 6669,
+          "outside_partition_proteins": 4164,
+          "ordered_candidate_pairs_including_self": 44475561,
+          "unordered_cross_species_candidate_pairs": 14048135
+        },
+        {
+          "clade": 19,
+          "species": [
+            23,
+            215,
+            505
+          ],
+          "core_species": [
+            23
+          ],
+          "proteins": 3637,
+          "outside_partition_proteins": 2837,
+          "ordered_candidate_pairs_including_self": 13227769,
+          "unordered_cross_species_candidate_pairs": 3952840
+        },
+        {
+          "clade": 20,
+          "species": [
+            1,
+            265,
+            274,
+            290,
+            365,
+            378,
+            390,
+            392,
+            393,
+            399,
+            433
+          ],
+          "core_species": [
+            1
+          ],
+          "proteins": 7715,
+          "outside_partition_proteins": 7570,
+          "ordered_candidate_pairs_including_self": 59521225,
+          "unordered_cross_species_candidate_pairs": 26242573
+        },
+        {
+          "clade": 21,
+          "species": [
+            22
+          ],
+          "core_species": [
+            22
+          ],
+          "proteins": 2698,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 7279204,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 22,
+          "species": [
+            6,
+            69,
+            70,
+            143,
+            155,
+            225,
+            453,
+            463,
+            465,
+            506,
+            507,
+            508
+          ],
+          "core_species": [
+            6
+          ],
+          "proteins": 25395,
+          "outside_partition_proteins": 24887,
+          "ordered_candidate_pairs_including_self": 644906025,
+          "unordered_cross_species_candidate_pairs": 292814375
+        },
+        {
+          "clade": 23,
+          "species": [
+            45,
+            99,
+            144,
+            156,
+            157,
+            158,
+            159,
+            266,
+            288,
+            391,
+            404,
+            446
+          ],
+          "core_species": [
+            45
+          ],
+          "proteins": 70078,
+          "outside_partition_proteins": 69122,
+          "ordered_candidate_pairs_including_self": 4910926084,
+          "unordered_cross_species_candidate_pairs": 2199128327
+        },
+        {
+          "clade": 24,
+          "species": [
+            20,
+            231,
+            510
+          ],
+          "core_species": [
+            20
+          ],
+          "proteins": 5714,
+          "outside_partition_proteins": 4572,
+          "ordered_candidate_pairs_including_self": 32649796,
+          "unordered_cross_species_candidate_pairs": 7747571
+        },
+        {
+          "clade": 25,
+          "species": [
+            34,
+            36,
+            361,
+            382,
+            444,
+            464,
+            466,
+            478,
+            501
+          ],
+          "core_species": [
+            34,
+            36
+          ],
+          "proteins": 14763,
+          "outside_partition_proteins": 13662,
+          "ordered_candidate_pairs_including_self": 217946169,
+          "unordered_cross_species_candidate_pairs": 86182667
+        },
+        {
+          "clade": 26,
+          "species": [
+            52
+          ],
+          "core_species": [
+            52
+          ],
+          "proteins": 1590,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 2528100,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 27,
+          "species": [
+            32,
+            339
+          ],
+          "core_species": [
+            32
+          ],
+          "proteins": 2314,
+          "outside_partition_proteins": 1934,
+          "ordered_candidate_pairs_including_self": 5354596,
+          "unordered_cross_species_candidate_pairs": 734920
+        },
+        {
+          "clade": 28,
+          "species": [
+            41,
+            42,
+            121,
+            140,
+            141,
+            277,
+            323,
+            389,
+            456
+          ],
+          "core_species": [
+            41,
+            42
+          ],
+          "proteins": 13017,
+          "outside_partition_proteins": 12289,
+          "ordered_candidate_pairs_including_self": 169442289,
+          "unordered_cross_species_candidate_pairs": 69955880
+        },
+        {
+          "clade": 29,
+          "species": [
+            18,
+            174,
+            487
+          ],
+          "core_species": [
+            18
+          ],
+          "proteins": 3343,
+          "outside_partition_proteins": 2843,
+          "ordered_candidate_pairs_including_self": 11175649,
+          "unordered_cross_species_candidate_pairs": 3347606
+        },
+        {
+          "clade": 30,
+          "species": [
+            29,
+            340,
+            341,
+            483
+          ],
+          "core_species": [
+            29
+          ],
+          "proteins": 28321,
+          "outside_partition_proteins": 27276,
+          "ordered_candidate_pairs_including_self": 802079041,
+          "unordered_cross_species_candidate_pairs": 124904693
+        },
+        {
+          "clade": 31,
+          "species": [
+            14,
+            131,
+            198,
+            219,
+            227,
+            486
+          ],
+          "core_species": [
+            14
+          ],
+          "proteins": 5286,
+          "outside_partition_proteins": 4720,
+          "ordered_candidate_pairs_including_self": 27941796,
+          "unordered_cross_species_candidate_pairs": 11523620
+        },
+        {
+          "clade": 32,
+          "species": [
+            8,
+            44,
+            93,
+            300,
+            326,
+            380,
+            460,
+            461,
+            504
+          ],
+          "core_species": [
+            8,
+            44
+          ],
+          "proteins": 20154,
+          "outside_partition_proteins": 18754,
+          "ordered_candidate_pairs_including_self": 406183716,
+          "unordered_cross_species_candidate_pairs": 171058309
+        },
+        {
+          "clade": 33,
+          "species": [
+            9,
+            30,
+            92,
+            94,
+            96,
+            97,
+            150,
+            184,
+            210,
+            211,
+            287,
+            462
+          ],
+          "core_species": [
+            9,
+            30
+          ],
+          "proteins": 32153,
+          "outside_partition_proteins": 29847,
+          "ordered_candidate_pairs_including_self": 1033815409,
+          "unordered_cross_species_candidate_pairs": 459517441
+        },
+        {
+          "clade": 34,
+          "species": [
+            2,
+            51,
+            282
+          ],
+          "core_species": [
+            2,
+            51
+          ],
+          "proteins": 6278,
+          "outside_partition_proteins": 1943,
+          "ordered_candidate_pairs_including_self": 39413284,
+          "unordered_cross_species_candidate_pairs": 13063121
+        },
+        {
+          "clade": 35,
+          "species": [
+            13,
+            205,
+            206,
+            291,
+            327,
+            482
+          ],
+          "core_species": [
+            13
+          ],
+          "proteins": 25057,
+          "outside_partition_proteins": 24731,
+          "ordered_candidate_pairs_including_self": 627853249,
+          "unordered_cross_species_candidate_pairs": 240834033
+        },
+        {
+          "clade": 36,
+          "species": [
+            11,
+            17,
+            73,
+            88,
+            117,
+            127,
+            133,
+            202,
+            203,
+            236,
+            305,
+            322,
+            451,
+            452,
+            475
+          ],
+          "core_species": [
+            11,
+            17
+          ],
+          "proteins": 23005,
+          "outside_partition_proteins": 21342,
+          "ordered_candidate_pairs_including_self": 529230025,
+          "unordered_cross_species_candidate_pairs": 242686744
+        },
+        {
+          "clade": 37,
+          "species": [
+            24
+          ],
+          "core_species": [
+            24
+          ],
+          "proteins": 1252,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 1567504,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 38,
+          "species": [
+            7,
+            126
+          ],
+          "core_species": [
+            7
+          ],
+          "proteins": 4455,
+          "outside_partition_proteins": 3531,
+          "ordered_candidate_pairs_including_self": 19847025,
+          "unordered_cross_species_candidate_pairs": 3262644
+        },
+        {
+          "clade": 39,
+          "species": [
+            54,
+            512,
+            513,
+            514,
+            515,
+            516,
+            518,
+            521,
+            523
+          ],
+          "core_species": [
+            54
+          ],
+          "proteins": 74812,
+          "outside_partition_proteins": 73924,
+          "ordered_candidate_pairs_including_self": 5596835344,
+          "unordered_cross_species_candidate_pairs": 2414171275
+        },
+        {
+          "clade": 40,
+          "species": [
+            59,
+            60
+          ],
+          "core_species": [
+            59,
+            60
+          ],
+          "proteins": 3139,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 9853321,
+          "unordered_cross_species_candidate_pairs": 2440980
+        },
+        {
+          "clade": 41,
+          "species": [
+            56,
+            62
+          ],
+          "core_species": [
+            56,
+            62
+          ],
+          "proteins": 2000,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 4000000,
+          "unordered_cross_species_candidate_pairs": 984375
+        },
+        {
+          "clade": 42,
+          "species": [
+            61,
+            63,
+            522,
+            524,
+            525
+          ],
+          "core_species": [
+            61,
+            63
+          ],
+          "proteins": 40248,
+          "outside_partition_proteins": 37690,
+          "ordered_candidate_pairs_including_self": 1619901504,
+          "unordered_cross_species_candidate_pairs": 552107852
+        },
+        {
+          "clade": 43,
+          "species": [
+            55,
+            57,
+            511,
+            517,
+            519,
+            520
+          ],
+          "core_species": [
+            55,
+            57
+          ],
+          "proteins": 23940,
+          "outside_partition_proteins": 21070,
+          "ordered_candidate_pairs_including_self": 573123600,
+          "unordered_cross_species_candidate_pairs": 224412829
+        },
+        {
+          "clade": 44,
+          "species": [
+            58
+          ],
+          "core_species": [
+            58
+          ],
+          "proteins": 1498,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 2244004,
+          "unordered_cross_species_candidate_pairs": 0
+        }
+      ],
+      "guide_sha256": "51404418e687b6dc5148101f697b65f1196b306f1a3187760e4be330538194d7"
+    },
+    {
+      "guide": "mafft",
+      "clades": 45,
+      "covered_taxa": 526,
+      "uncovered_taxa": [],
+      "maximum_clade_taxa": 71,
+      "total_intermediate_proteins": 1390832,
+      "largest_clade_proteins": 355735,
+      "ordered_candidate_pairs_including_self": 192712000282,
+      "chunks": [
+        {
+          "clade": 0,
+          "species": [
+            25,
+            46,
+            64,
+            76,
+            77,
+            95,
+            101,
+            104,
+            110,
+            134,
+            139,
+            146,
+            147,
+            149,
+            152,
+            173,
+            176,
+            179,
+            196,
+            204,
+            207,
+            220,
+            226,
+            228,
+            229,
+            239,
+            240,
+            246,
+            255,
+            258,
+            259,
+            268,
+            269,
+            270,
+            275,
+            286,
+            289,
+            297,
+            298,
+            299,
+            317,
+            347,
+            349,
+            351,
+            358,
+            363,
+            371,
+            375,
+            379,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388,
+            405,
+            414,
+            417,
+            418,
+            435,
+            438,
+            449,
+            457,
+            469,
+            471,
+            480,
+            490,
+            496,
+            497,
+            503,
+            509
+          ],
+          "core_species": [
+            25,
+            46
+          ],
+          "proteins": 355735,
+          "outside_partition_proteins": 353878,
+          "ordered_candidate_pairs_including_self": 126547390225,
+          "unordered_cross_species_candidate_pairs": 62070181794
+        },
+        {
+          "clade": 1,
+          "species": [
+            31,
+            78,
+            79,
+            84,
+            153,
+            154,
+            221,
+            222,
+            223,
+            224,
+            267,
+            276,
+            294,
+            319,
+            348,
+            411,
+            412,
+            413,
+            429,
+            434,
+            454,
+            492,
+            498
+          ],
+          "core_species": [
+            31
+          ],
+          "proteins": 30415,
+          "outside_partition_proteins": 30371,
+          "ordered_candidate_pairs_including_self": 925072225,
+          "unordered_cross_species_candidate_pairs": 435457610
+        },
+        {
+          "clade": 2,
+          "species": [
+            5,
+            12,
+            177,
+            197,
+            262
+          ],
+          "core_species": [
+            5,
+            12
+          ],
+          "proteins": 3093,
+          "outside_partition_proteins": 886,
+          "ordered_candidate_pairs_including_self": 9566649,
+          "unordered_cross_species_candidate_pairs": 2273895
+        },
+        {
+          "clade": 3,
+          "species": [
+            43,
+            72,
+            114,
+            130,
+            137,
+            138,
+            163,
+            175,
+            180,
+            181,
+            191,
+            249,
+            302,
+            357,
+            415,
+            440,
+            447
+          ],
+          "core_species": [
+            43
+          ],
+          "proteins": 32335,
+          "outside_partition_proteins": 31914,
+          "ordered_candidate_pairs_including_self": 1045552225,
+          "unordered_cross_species_candidate_pairs": 485677095
+        },
+        {
+          "clade": 4,
+          "species": [
+            15,
+            50,
+            118,
+            128,
+            189,
+            237,
+            253,
+            296,
+            484,
+            485,
+            493,
+            494
+          ],
+          "core_species": [
+            15,
+            50
+          ],
+          "proteins": 8443,
+          "outside_partition_proteins": 7213,
+          "ordered_candidate_pairs_including_self": 71284249,
+          "unordered_cross_species_candidate_pairs": 30806951
+        },
+        {
+          "clade": 5,
+          "species": [
+            39,
+            67,
+            85,
+            135,
+            218,
+            230,
+            280,
+            303,
+            304,
+            318,
+            321,
+            362,
+            370,
+            398,
+            489
+          ],
+          "core_species": [
+            39
+          ],
+          "proteins": 33509,
+          "outside_partition_proteins": 33205,
+          "ordered_candidate_pairs_including_self": 1122853081,
+          "unordered_cross_species_candidate_pairs": 502423059
+        },
+        {
+          "clade": 6,
+          "species": [
+            0,
+            242
+          ],
+          "core_species": [
+            0
+          ],
+          "proteins": 6935,
+          "outside_partition_proteins": 5972,
+          "ordered_candidate_pairs_including_self": 48094225,
+          "unordered_cross_species_candidate_pairs": 5751036
+        },
+        {
+          "clade": 7,
+          "species": [
+            26,
+            100,
+            292,
+            419
+          ],
+          "core_species": [
+            26
+          ],
+          "proteins": 7629,
+          "outside_partition_proteins": 6897,
+          "ordered_candidate_pairs_including_self": 58201641,
+          "unordered_cross_species_candidate_pairs": 18149232
+        },
+        {
+          "clade": 8,
+          "species": [
+            28
+          ],
+          "core_species": [
+            28
+          ],
+          "proteins": 764,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 583696,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 9,
+          "species": [
+            35,
+            47
+          ],
+          "core_species": [
+            35,
+            47
+          ],
+          "proteins": 2415,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 5832225,
+          "unordered_cross_species_candidate_pairs": 1458054
+        },
+        {
+          "clade": 10,
+          "species": [
+            16,
+            195,
+            214,
+            245,
+            450
+          ],
+          "core_species": [
+            16
+          ],
+          "proteins": 83721,
+          "outside_partition_proteins": 82449,
+          "ordered_candidate_pairs_including_self": 7009205841,
+          "unordered_cross_species_candidate_pairs": 1405421469
+        },
+        {
+          "clade": 11,
+          "species": [
+            19,
+            37,
+            65,
+            87,
+            106,
+            107,
+            145,
+            257,
+            261,
+            272,
+            283,
+            284,
+            316,
+            334,
+            342,
+            366,
+            368,
+            394,
+            395,
+            396,
+            397,
+            410,
+            420,
+            422,
+            423,
+            424,
+            425,
+            437,
+            448,
+            477,
+            488
+          ],
+          "core_species": [
+            19,
+            37
+          ],
+          "proteins": 29532,
+          "outside_partition_proteins": 28856,
+          "ordered_candidate_pairs_including_self": 872139024,
+          "unordered_cross_species_candidate_pairs": 409360177
+        },
+        {
+          "clade": 12,
+          "species": [
+            33,
+            102,
+            350
+          ],
+          "core_species": [
+            33
+          ],
+          "proteins": 2061,
+          "outside_partition_proteins": 1699,
+          "ordered_candidate_pairs_including_self": 4247721,
+          "unordered_cross_species_candidate_pairs": 1316666
+        },
+        {
+          "clade": 13,
+          "species": [
+            40,
+            66,
+            75,
+            108,
+            109,
+            111,
+            112,
+            113,
+            132,
+            148,
+            151,
+            160,
+            161,
+            183,
+            194,
+            232,
+            247,
+            248,
+            252,
+            281,
+            285,
+            301,
+            306,
+            324,
+            329,
+            330,
+            356,
+            369,
+            372,
+            373,
+            416,
+            470,
+            495,
+            499
+          ],
+          "core_species": [
+            40
+          ],
+          "proteins": 46901,
+          "outside_partition_proteins": 45903,
+          "ordered_candidate_pairs_including_self": 2199703801,
+          "unordered_cross_species_candidate_pairs": 1063548134
+        },
+        {
+          "clade": 14,
+          "species": [
+            4,
+            21
+          ],
+          "core_species": [
+            4,
+            21
+          ],
+          "proteins": 1121,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 1256641,
+          "unordered_cross_species_candidate_pairs": 244200
+        },
+        {
+          "clade": 15,
+          "species": [
+            10,
+            98,
+            187,
+            201,
+            278,
+            295,
+            310,
+            311,
+            312,
+            314,
+            328,
+            331
+          ],
+          "core_species": [
+            10
+          ],
+          "proteins": 11976,
+          "outside_partition_proteins": 11713,
+          "ordered_candidate_pairs_including_self": 143424576,
+          "unordered_cross_species_candidate_pairs": 64222881
+        },
+        {
+          "clade": 16,
+          "species": [
+            49,
+            81,
+            86,
+            103,
+            124,
+            182,
+            185,
+            192,
+            212,
+            213,
+            216,
+            234,
+            263,
+            307,
+            315,
+            325,
+            345,
+            360,
+            402,
+            403,
+            458
+          ],
+          "core_species": [
+            49
+          ],
+          "proteins": 31267,
+          "outside_partition_proteins": 30825,
+          "ordered_candidate_pairs_including_self": 977625289,
+          "unordered_cross_species_candidate_pairs": 463533374
+        },
+        {
+          "clade": 17,
+          "species": [
+            27,
+            48,
+            80,
+            82,
+            83,
+            116,
+            123,
+            125,
+            142,
+            164,
+            165,
+            169,
+            171,
+            172,
+            178,
+            193,
+            238,
+            244,
+            260,
+            264,
+            271,
+            293,
+            309,
+            313,
+            344,
+            352,
+            374,
+            376,
+            381,
+            400,
+            401,
+            421,
+            431,
+            432,
+            439,
+            441,
+            442,
+            443,
+            472,
+            473,
+            474,
+            476,
+            500,
+            502
+          ],
+          "core_species": [
+            27,
+            48
+          ],
+          "proteins": 93247,
+          "outside_partition_proteins": 91003,
+          "ordered_candidate_pairs_including_self": 8695003009,
+          "unordered_cross_species_candidate_pairs": 4229034800
+        },
+        {
+          "clade": 18,
+          "species": [
+            38,
+            53,
+            68,
+            71,
+            74,
+            89,
+            90,
+            91,
+            105,
+            115,
+            119,
+            120,
+            122,
+            129,
+            136,
+            162,
+            166,
+            167,
+            168,
+            170,
+            186,
+            188,
+            190,
+            199,
+            200,
+            208,
+            209,
+            217,
+            233,
+            235,
+            241,
+            243,
+            250,
+            251,
+            254,
+            256,
+            273,
+            279,
+            308,
+            320,
+            332,
+            333,
+            335,
+            336,
+            337,
+            338,
+            343,
+            346,
+            353,
+            355,
+            359,
+            364,
+            377,
+            406,
+            407,
+            408,
+            409,
+            426,
+            427,
+            428,
+            430,
+            436,
+            445,
+            455,
+            459,
+            467,
+            468,
+            479,
+            481,
+            491
+          ],
+          "core_species": [
+            38,
+            53
+          ],
+          "proteins": 161202,
+          "outside_partition_proteins": 158917,
+          "ordered_candidate_pairs_including_self": 25986084804,
+          "unordered_cross_species_candidate_pairs": 12753005618
+        },
+        {
+          "clade": 19,
+          "species": [
+            3,
+            23,
+            215,
+            354,
+            367,
+            505
+          ],
+          "core_species": [
+            3,
+            23
+          ],
+          "proteins": 10306,
+          "outside_partition_proteins": 7001,
+          "ordered_candidate_pairs_including_self": 106213636,
+          "unordered_cross_species_candidate_pairs": 42256128
+        },
+        {
+          "clade": 20,
+          "species": [
+            1,
+            126,
+            265,
+            274,
+            290,
+            365,
+            378,
+            390,
+            392,
+            393,
+            399,
+            433
+          ],
+          "core_species": [
+            1
+          ],
+          "proteins": 11246,
+          "outside_partition_proteins": 11101,
+          "ordered_candidate_pairs_including_self": 126472516,
+          "unordered_cross_species_candidate_pairs": 53484238
+        },
+        {
+          "clade": 21,
+          "species": [
+            6,
+            69,
+            70,
+            143,
+            155,
+            225,
+            453,
+            463,
+            465,
+            506,
+            507,
+            508
+          ],
+          "core_species": [
+            6
+          ],
+          "proteins": 25395,
+          "outside_partition_proteins": 24887,
+          "ordered_candidate_pairs_including_self": 644906025,
+          "unordered_cross_species_candidate_pairs": 292814375
+        },
+        {
+          "clade": 22,
+          "species": [
+            45,
+            99,
+            144,
+            156,
+            157,
+            158,
+            159,
+            266,
+            288,
+            391,
+            404,
+            446
+          ],
+          "core_species": [
+            45
+          ],
+          "proteins": 70078,
+          "outside_partition_proteins": 69122,
+          "ordered_candidate_pairs_including_self": 4910926084,
+          "unordered_cross_species_candidate_pairs": 2199128327
+        },
+        {
+          "clade": 23,
+          "species": [
+            34,
+            36,
+            231,
+            361,
+            382,
+            444,
+            464,
+            466,
+            478,
+            501
+          ],
+          "core_species": [
+            34,
+            36
+          ],
+          "proteins": 15406,
+          "outside_partition_proteins": 14305,
+          "ordered_candidate_pairs_including_self": 237344836,
+          "unordered_cross_species_candidate_pairs": 95675276
+        },
+        {
+          "clade": 24,
+          "species": [
+            20,
+            510
+          ],
+          "core_species": [
+            20
+          ],
+          "proteins": 5071,
+          "outside_partition_proteins": 3929,
+          "ordered_candidate_pairs_including_self": 25715041,
+          "unordered_cross_species_candidate_pairs": 4486918
+        },
+        {
+          "clade": 25,
+          "species": [
+            52
+          ],
+          "core_species": [
+            52
+          ],
+          "proteins": 1590,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 2528100,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 26,
+          "species": [
+            32,
+            339
+          ],
+          "core_species": [
+            32
+          ],
+          "proteins": 2314,
+          "outside_partition_proteins": 1934,
+          "ordered_candidate_pairs_including_self": 5354596,
+          "unordered_cross_species_candidate_pairs": 734920
+        },
+        {
+          "clade": 27,
+          "species": [
+            14,
+            22,
+            131,
+            198,
+            219,
+            227,
+            486
+          ],
+          "core_species": [
+            14,
+            22
+          ],
+          "proteins": 7984,
+          "outside_partition_proteins": 4720,
+          "ordered_candidate_pairs_including_self": 63744256,
+          "unordered_cross_species_candidate_pairs": 25785248
+        },
+        {
+          "clade": 28,
+          "species": [
+            41,
+            42,
+            121,
+            140,
+            141,
+            277,
+            323,
+            389,
+            456
+          ],
+          "core_species": [
+            41,
+            42
+          ],
+          "proteins": 13017,
+          "outside_partition_proteins": 12289,
+          "ordered_candidate_pairs_including_self": 169442289,
+          "unordered_cross_species_candidate_pairs": 69955880
+        },
+        {
+          "clade": 29,
+          "species": [
+            18,
+            174,
+            487
+          ],
+          "core_species": [
+            18
+          ],
+          "proteins": 3343,
+          "outside_partition_proteins": 2843,
+          "ordered_candidate_pairs_including_self": 11175649,
+          "unordered_cross_species_candidate_pairs": 3347606
+        },
+        {
+          "clade": 30,
+          "species": [
+            29,
+            340,
+            341,
+            483
+          ],
+          "core_species": [
+            29
+          ],
+          "proteins": 28321,
+          "outside_partition_proteins": 27276,
+          "ordered_candidate_pairs_including_self": 802079041,
+          "unordered_cross_species_candidate_pairs": 124904693
+        },
+        {
+          "clade": 31,
+          "species": [
+            9,
+            30,
+            92,
+            94,
+            96,
+            97,
+            150,
+            184,
+            210,
+            211,
+            287,
+            462
+          ],
+          "core_species": [
+            9,
+            30
+          ],
+          "proteins": 32153,
+          "outside_partition_proteins": 29847,
+          "ordered_candidate_pairs_including_self": 1033815409,
+          "unordered_cross_species_candidate_pairs": 459517441
+        },
+        {
+          "clade": 32,
+          "species": [
+            2,
+            51,
+            282
+          ],
+          "core_species": [
+            2,
+            51
+          ],
+          "proteins": 6278,
+          "outside_partition_proteins": 1943,
+          "ordered_candidate_pairs_including_self": 39413284,
+          "unordered_cross_species_candidate_pairs": 13063121
+        },
+        {
+          "clade": 33,
+          "species": [
+            13,
+            205,
+            206,
+            291,
+            327,
+            482
+          ],
+          "core_species": [
+            13
+          ],
+          "proteins": 25057,
+          "outside_partition_proteins": 24731,
+          "ordered_candidate_pairs_including_self": 627853249,
+          "unordered_cross_species_candidate_pairs": 240834033
+        },
+        {
+          "clade": 34,
+          "species": [
+            8,
+            44,
+            93,
+            300,
+            326,
+            380,
+            460,
+            461,
+            504
+          ],
+          "core_species": [
+            8,
+            44
+          ],
+          "proteins": 20154,
+          "outside_partition_proteins": 18754,
+          "ordered_candidate_pairs_including_self": 406183716,
+          "unordered_cross_species_candidate_pairs": 171058309
+        },
+        {
+          "clade": 35,
+          "species": [
+            11,
+            17,
+            73,
+            88,
+            117,
+            127,
+            133,
+            202,
+            203,
+            236,
+            305,
+            322,
+            451,
+            452,
+            475
+          ],
+          "core_species": [
+            11,
+            17
+          ],
+          "proteins": 23005,
+          "outside_partition_proteins": 21342,
+          "ordered_candidate_pairs_including_self": 529230025,
+          "unordered_cross_species_candidate_pairs": 242686744
+        },
+        {
+          "clade": 36,
+          "species": [
+            24
+          ],
+          "core_species": [
+            24
+          ],
+          "proteins": 1252,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 1567504,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 37,
+          "species": [
+            7
+          ],
+          "core_species": [
+            7
+          ],
+          "proteins": 924,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 853776,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 38,
+          "species": [
+            54,
+            512,
+            513,
+            514,
+            515,
+            516,
+            518,
+            521,
+            523
+          ],
+          "core_species": [
+            54
+          ],
+          "proteins": 74812,
+          "outside_partition_proteins": 73924,
+          "ordered_candidate_pairs_including_self": 5596835344,
+          "unordered_cross_species_candidate_pairs": 2414171275
+        },
+        {
+          "clade": 39,
+          "species": [
+            59,
+            60
+          ],
+          "core_species": [
+            59,
+            60
+          ],
+          "proteins": 3139,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 9853321,
+          "unordered_cross_species_candidate_pairs": 2440980
+        },
+        {
+          "clade": 40,
+          "species": [
+            56
+          ],
+          "core_species": [
+            56
+          ],
+          "proteins": 875,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 765625,
+          "unordered_cross_species_candidate_pairs": 0
+        },
+        {
+          "clade": 41,
+          "species": [
+            61,
+            63,
+            522
+          ],
+          "core_species": [
+            61,
+            63
+          ],
+          "proteins": 10553,
+          "outside_partition_proteins": 7995,
+          "ordered_candidate_pairs_including_self": 111365809,
+          "unordered_cross_species_candidate_pairs": 21494151
+        },
+        {
+          "clade": 42,
+          "species": [
+            62,
+            524,
+            525
+          ],
+          "core_species": [
+            62
+          ],
+          "proteins": 30820,
+          "outside_partition_proteins": 29695,
+          "ordered_candidate_pairs_including_self": 949872400,
+          "unordered_cross_species_candidate_pairs": 250649241
+        },
+        {
+          "clade": 43,
+          "species": [
+            55,
+            57,
+            511,
+            517,
+            519,
+            520
+          ],
+          "core_species": [
+            55,
+            57
+          ],
+          "proteins": 23940,
+          "outside_partition_proteins": 21070,
+          "ordered_candidate_pairs_including_self": 573123600,
+          "unordered_cross_species_candidate_pairs": 224412829
+        },
+        {
+          "clade": 44,
+          "species": [
+            58
+          ],
+          "core_species": [
+            58
+          ],
+          "proteins": 1498,
+          "outside_partition_proteins": 0,
+          "ordered_candidate_pairs_including_self": 2244004,
+          "unordered_cross_species_candidate_pairs": 0
+        }
+      ],
+      "guide_sha256": "3e963cafe98a893426c2249cb5a28e963a0a1d4895a13c3766712aaa570d2851"
+    }
+  ],
+  "source_review": {
+    "BetweenCoreOrthogroupsWorkflow": "run/main.py:168-356 writes assigned partition and unassigned FASTAs, infers guide, then searches/clusters unassigned proteins within clades and appends families. Interrupted run has only its initial cluster file and lacks its native species-tree products.",
+    "from_trees": "run/main.py qStartFromTrees takes orthologue inference path; it does not call BetweenCoreOrthogroupsWorkflow.",
+    "singleton_handling": "accelerate.write_unassigned_fasta excludes all multi-member retained families, so all 60423 retained singleton proteins appear in discovery inputs. Any combined family partition must replace their old singleton membership when reassigned; blindly appending discovery groups would duplicate membership.",
+    "native_clade_behavior": "Executed installed get_new_species_clades as-is on both conditional guides; actual coverage reported. No source patch or biological search performed."
+  },
+  "remaining_requirements": [
+    "Complete clade-specific discovery and gene trees before asserting complete orthology",
+    "Resolve singleton replacement and enforce unique combined protein membership",
+    "Evaluate guide-dependent discovery and cross-clade missed homology",
+    "Reconcile expanded validated family partition; retained-family-only reconciliation must be labeled conditional/incomplete"
+  ],
+  "interpretation": "Candidate pair arithmetic sizes the possible search space, not DIAMOND executed alignments, actual runtime, homology or inferred orthology. Scope correction prevents treating a --from-trees restart of the retained partition as full discovery completion.",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/accelerate.py": "0501304748d8e983381f13d137d3831059c55a4972f040da302779c58997f0be",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/main.py": "a4b5222890d987bdef7fa0c1ff6031e55c5a0a27fcbbc45c9b7be02dfd252588",
+    "results/orthology/core-v1/Results_Sep12/WorkingDirectory/SpeciesIDs.txt": "8c16bc4babb47c34da30aa0fed06332c4d7d96d9055783d1dd91054e4899e4aa",
+    "results/orthology/full-protein-family-coverage-v1/receipt.json": "69f39f47388a0f515b6f3714fdcf0bbf948751f794af922cd487c02d404fc5db",
+    "metadata/full_protein_family_coverage_readback.json": "e7c541741ea0ee9c0a3432fe4ca6c00842aab50e34b17db5d16b378d6229e690"
+  }
+}
