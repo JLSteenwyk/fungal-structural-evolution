@@ -95,3 +95,39 @@ For each of the 52 covered markers, 200 paired draws at circular block lengths 1
 ## Tree-path versus geometric benchmark
 
 For the 52 fitted markers, leaf-to-leaf path sums were checked against tree traversal and compared with direct CA geometry on jointly observed confidence-qualified positions. Of 730 candidate taxon pairs, 722 passed ≥50-site and ≥half-of-each-taxon overlap requirements. Path intervals preserve covariance by summing branches within each joint block-30 draw before taking percentiles. Geometry includes whole-marker proper-rotation RMSD and local CA-distance changes, with a separate both-direction/both-model PAE≤10 filter. The benchmark records that tree fits use more marker information than an individual pairwise geometric subset. It does not establish physical branch displacements, geometric additivity, acceleration or independent pairwise statistics. The maximum-RMSD pair (5000823at2759, hybrid F332112 versus F4918) was diagnosed using a shared Pfam repeat region: its independent fit was 1.47 Å versus 31.12 Å whole-marker RMSD, and only 15.17% of cross-region pairs passed PAE. This is an artifact-control priority with annotation/taxon/source checks pending, not a validated innovation. See tree-path-geometry.md.
+
+
+### Matched predictor–experiment controls and region-placement diagnostics
+
+For completed exact-sequence controls, AlphaFold, ESMFold and experimental CA
+coordinates were compared on identical observed residue sets at joint focal
+pLDDT thresholds 0, 70 and 90. Whole-protein eligibility required at least 50
+residues and half the canonical sequence. All deposited chains and models
+were retained. Local pair masks required sequence separation of at least three
+and distance at most 15 Å in any of the three coordinate sets, shared across
+all comparisons. Superposition and distance calculations underwent independent
+numerical readback. Descriptive summaries used medians across chains within
+deposited models, models within entries, and entries within canonical proteins.
+Paired predictor differences were calculated before hierarchical aggregation.
+
+For the completed 12-control, 513–741-residue tier, every raw Pfam hit span was
+also analyzed; overlapping annotations and repeat/family types were retained
+explicitly and were not called independent domains. Regions required at least
+20 observed residues and half their annotated span. Separate regional fits
+were compared with regional residuals after fitting the full observed mask.
+This comparison mechanically favors separate fits and is a diagnostic of
+placement sensitivity, not a significance test or demonstration of motion.
+ESMFold PAE was summarized within and between annotated spans over full
+canonical positions, retaining both matrix directions and excluding within-hit
+diagonals. Distinct overlapping hits were excluded from between-hit PAE
+summaries. Native ESMFold and serialized AlphaFold focal confidence determined
+those masks, which need not equal experimental-coverage masks. Quantiles were
+computed in float64 and independently read back from scalar matrix values.
+
+The illustrated Q04305 case was selected after observing large whole-protein
+discrepancy and remains exploratory. Neither low local RMSD, focal confidence,
+nor PAE establishes general accuracy, training independence, biological motion
+or functional divergence. Experimental assembly/construct context and broader
+sampling remain unresolved. Commands, complete exclusions and evidence are in
+experimental-structure-workflow.md. Other prediction tiers and integrated
+analyses are tracked separately and are not implied complete by this section.

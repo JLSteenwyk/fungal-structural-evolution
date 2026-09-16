@@ -1,0 +1,62 @@
+{
+  "status": "complete_control_region_placement_figure",
+  "alphafold_model": "AF-Q04305-F1",
+  "sequence_sha256": "c4214baeff24b16caa93f67de339df82dfa7e06f3ef726aae3a8eba8ef80e8c0",
+  "regions": 4,
+  "cutoff": 90,
+  "plotted_values": [
+    {
+      "predictor": "AlphaFold",
+      "fit": "Separate region fit",
+      "values": [
+        0.356355683291152,
+        0.3946051085979396,
+        0.449023790052412,
+        0.6048955904893717
+      ]
+    },
+    {
+      "predictor": "AlphaFold",
+      "fit": "Whole-mask fit",
+      "values": [
+        1.018443831051553,
+        1.0376080772716314,
+        0.8740513748814056,
+        1.4227217182215537
+      ]
+    },
+    {
+      "predictor": "ESMFold",
+      "fit": "Separate region fit",
+      "values": [
+        0.3945070241212974,
+        0.4674059485727286,
+        0.4979117922465063,
+        0.7342976147787675
+      ]
+    },
+    {
+      "predictor": "ESMFold",
+      "fit": "Whole-mask fit",
+      "values": [
+        21.82007010440054,
+        19.076514003592315,
+        22.28785654375473,
+        26.009555712610528
+      ]
+    }
+  ],
+  "source_hashes": {
+    "metadata/experimental_control_pfam_segment_summaries.tsv": "1a50f4d03396386116568de5d82f9d74e155289b74879ad90fc6f33972a89f7c",
+    "metadata/experimental_control_segment_grid_reproducible_readback.json": "afc7fcd4d38b9506d7eb65c4fff2e91b372f61db3aa5de6b529b8be511f71e8b",
+    "results/experimental_structures/control-pfam-pae-513-768-v2/receipt.json": "cc1ddbce891cf83025129894841111c45ccb5fa714a32304679b46addc926d4f",
+    "metadata/experimental_control_region_pae_readback.json": "b1798adfdb2e09aeed397e496fa841890ed424e6cf6cf1149ee418cca51a5f8c",
+    "results/structures/esmfold-experimental-controls-513-768-v1/receipt.json": "548f00289cd9395dd842fdaa6ceb818037ac1e9026d42b625eb92f01a01b0044",
+    "results/predictions/esmfold-experimental-controls-513-768-v1/Sc4214baeff24b16caa93f67de339df82dfa7e06f3ef726aae3a8eba8ef80e8c0.npz": "812ee8102e9ac9a171a0daab13135be8415e0b88988de2c9e51f78662fa20790"
+  },
+  "script_sha256": "ebf2e34c618716a754f30f5f32747145071355e0995c8c3d8297147732a7a0cf",
+  "artifacts": {
+    "control_region_placement.png": "cf3eddaf348bebac8cb91d3e144c37ecdccf58fae30f05616efeadb4693734ef",
+    "control_region_placement.svg": "bc98018a3342d3c80b732e5c3704e484d75bf2f15e854b33e35cdc8f5986b687"
+  }
+}

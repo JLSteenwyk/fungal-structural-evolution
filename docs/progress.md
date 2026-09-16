@@ -2853,3 +2853,11 @@ handoff waits for the two larger controls to complete validation first.
 Original predictors/settings remain available; variant results require an
 explicit numerical comparison before integration. Source review and resource
 plan: metadata/experimental_control_chunk16_*. No completed prediction claimed.
+
+
+September 16: added a reviewed, reproducible Q04305 region-placement figure
+showing full-sequence PAE alongside matched regional/whole-mask RMSD for both
+predictors. All 16 plotted values match the archived table; rendering and file
+hashes checked. Added the executed matched-control and region/PAE procedures
+to the methods draft, retaining exploratory-selection and biological-context
+limitations. Figure: docs/figures/control_region_placement.svg.

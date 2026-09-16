@@ -974,3 +974,26 @@ receipt, disposition and verified live identity are versioned under
 metadata/experimental_control_chunk16_*. This transient controller does not
 survive reboot. The long target remains incomplete while queued; numerical
 agreement of the repeated control is not assumed in advance.
+
+
+### Reviewed illustration of the placement-control case
+
+![Local agreement and uncertain relative placement](figures/control_region_placement.svg)
+
+The left panel shows the complete unfiltered ESMFold PAE matrix; numbered
+outlines identify the four illustrated Pfam spans. The right panel compares
+nested experimental RMSD summaries at joint pLDDT90 after separate-region
+versus whole-mask fitting. Both predictors are shown. The two panels use
+different explicitly labeled masks and are not a calibrated PAE/error plot.
+All 16 plotted geometry values were checked against the archived source table;
+artifact hashes were checked and the rendered PNG was reviewed for clipping
+and readable annotations. Exploratory selection and fitting flexibility are
+stated in the figure caption.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/plot_control_region_placement.py --summary metadata/experimental_control_pfam_segment_summaries.tsv --summary-audit metadata/experimental_control_segment_grid_reproducible_readback.json --pae-summary results/experimental_structures/control-pfam-pae-513-768-v2 --pae-audit metadata/experimental_control_region_pae_readback.json --controls results/structures/esmfold-experimental-controls-513-768-v1 --alphafold-model AF-Q04305-F1 --cutoff 90 --output results/experimental_structures/control-region-placement-figure-v1
+```
+
+Use a fresh output directory. SVG is versioned in docs/figures; PNG and source
+receipt remain in the result directory. Figure receipt and visual/numeric
+review: metadata/experimental_control_region_figure_{receipt,review}.json.
