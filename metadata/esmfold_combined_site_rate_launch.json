@@ -1,0 +1,45 @@
+{
+  "pid": 74195,
+  "created": 1789567258.76,
+  "command": [
+    "python",
+    "-u",
+    "-"
+  ],
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/estimate_paired_site_rates.py",
+      "--inputs",
+      "results/phylogeny/paired-inputs-esmfold-combined-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-esmfold-combined-v1",
+      "--audit",
+      "results/phylogeny/paired-fit-audit-esmfold-combined-v1",
+      "--heterogeneity",
+      "G4",
+      "--output",
+      "results/phylogeny/paired-site-rates-esmfold-combined-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_paired_site_rates.py",
+      "--rates",
+      "results/phylogeny/paired-site-rates-esmfold-combined-v1",
+      "--inputs",
+      "results/phylogeny/paired-inputs-esmfold-combined-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-esmfold-combined-v1",
+      "--output",
+      "results/phylogeny/paired-site-rates-audit-esmfold-combined-v1"
+    ]
+  ],
+  "cpu_affinity": [
+    8,
+    12,
+    16,
+    20
+  ],
+  "launched_at": 1789567258.9768925,
+  "log": "logs/esmfold_combined_site_rates_v1.log"
+}

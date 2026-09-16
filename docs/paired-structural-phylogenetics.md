@@ -460,3 +460,18 @@ metadata/gdm_expanded_joint_path_readback_{plan,launch}.json.
 These are conditional sampling-sensitivity summaries, not calibrated confidence
 intervals, evolutionary coupling estimates or structural-acceleration tests.
 Topology, prediction, alignment and model uncertainty remain outside this stage.
+
+The combined ESMFold baseline site-rate export is now running over all 89
+eligible markers and four established model specifications (356 fits, 88,820
+expected rate rows). It retains each marker's original paired mask and AA
+topology, reestimates parameters under Gamma4, and automatically runs the
+existing full output audit after successful fitting. Four single-thread fits
+run concurrently, with 2 GB per fit and a 5-GB disk planning allowance. The
+initial four-core affinity was subsequently widened by the user's temporary
+compute increase; the fit concurrency remains four. Commands and source/script
+pins are recorded in metadata/esmfold_combined_site_rate_{launch,resource_plan}.json.
+Outputs are results/phylogeny/paired-site-rates-esmfold-combined-v1 and its
+paired-site-rates-audit-esmfold-combined-v1 audit. FreeRate sensitivity,
+optimization checks, exposure integration and expanded coupling are still
+pending. These conditional rate multipliers are not rates per year or direct
+physical structural changes.

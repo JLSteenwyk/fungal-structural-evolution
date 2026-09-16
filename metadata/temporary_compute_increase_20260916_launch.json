@@ -1,0 +1,24 @@
+{
+  "changed_at": 1789567301.0033712,
+  "previous_controller_pid": 61287,
+  "previous_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/project_resume_now_20260916_cooling_state.json",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-compute-increase-20260916",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/temporary_run_resource_limit.py",
+    "--config",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_compute_increase_20260916_config.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_compute_increase_20260916_state.json"
+  ],
+  "cpu_physical_cores_before": 24,
+  "cpu_physical_cores_after": 48,
+  "gpu_duty_before": 0.5,
+  "gpu_duty_after": 0.9,
+  "seconds_remaining": 84393.41593527794,
+  "hardware_power_cap_changed": false,
+  "reason": "Explicit user request to use more available compute."
+}
