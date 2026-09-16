@@ -315,3 +315,39 @@ AA topology. High rank agreement does not establish absolute agreement,
 sequence–structure coupling, acceleration or calibrated uncertainty. Matrix
 labels designate structural-alphabet models, not different structure predictors.
 Original outputs and their earlier diagnostics remain preserved.
+
+
+## Expanded-cohort Gamma-rate export diagnostics
+
+The AlphaFold cohort's Gamma4 export and output audit are complete: 124 markers,
+496 fits and 178,876 site-rate rows (44,719 paired columns). The combined
+ESMFold cohort has 89 markers, 356 fits and 88,820 rate rows (22,205 columns).
+These are conditional empirical-Bayes relative rates on fixed AA topologies;
+the audit does not independently recompute posterior rates or establish model
+adequacy. Source-specific cohorts remain separate.
+
+The reproducible diagnostic summary retains all warning messages and compares
+each export fit with its own original likelihood. Warnings occur in 486/496
+AlphaFold fits and 340/356 ESMFold fits, predominantly gap/ambiguity and rare
+state notices. They are not silently excluded or treated as equivalent to
+failed computation. All structural-alphabet export likelihoods match their
+original reports at printed precision. AA differences range from −0.0077 to
++0.0013 in AlphaFold and −2.5645 to +0.0157 in ESMFold.
+
+Exactly one fit exceeds the descriptive absolute 0.1-log-unit review threshold:
+ESMFold marker 5005750at2759, AA, with export minus original −2.5645. Independent
+reading of both raw IQ-TREE reports confirms this difference. A targeted Gamma
+optimization review is required before treating that export as optimized; the
+queued all-fit FreeRate refits do not reoptimize its Gamma baseline. The flag
+is not a significance test or biological signal. Existing pinned inputs and
+live downstream controllers remain unchanged; any corrected baseline must be
+validated and propagated as a new immutable sensitivity result.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/summarize_site_rate_diagnostics.py --audits results/phylogeny/paired-site-rates-audit-gdm-expanded-v1 results/phylogeny/paired-site-rates-audit-esmfold-combined-v1 --output results/phylogeny/expanded-gamma-rate-diagnostics-v1
+```
+
+Summary tables and receipt: metadata/expanded_gamma_rate_diagnostics_*.
+AlphaFold audit receipt: metadata/gdm_expanded_gamma_site_rate_audit_receipt.json.
+Both expanded FreeRate producers and subsequent comparison controllers were
+verified live at this review; completion and coupling inference remain pending.

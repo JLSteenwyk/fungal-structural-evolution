@@ -2778,3 +2778,11 @@ extrapolation/headroom; OOM requires review. Three original controls remain
 above the new ceiling (1,361/1,468/2,413 residues). Documentation and resource
 provenance: metadata/experimental_control_next_tier_*. No completion claim for
 the pending tier.
+
+
+September 16: archived the completed 124-marker AlphaFold Gamma-rate audit
+(496 fits, 178,876 rate rows). Combined diagnostics cover 852 Gamma export fits
+across separate source cohorts. One ESMFold AA export, marker 5005750at2759,
+is 2.5645 log-likelihood units below its original fit and requires targeted
+Gamma optimization review; queued FreeRate refits do not resolve that baseline.
+Original outputs remain unchanged. See docs/site-specific-evolutionary-rates.md.

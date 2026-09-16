@@ -1,0 +1,16 @@
+{
+  "status": "complete_descriptive_site_rate_diagnostics",
+  "source_audits": {
+    "results/phylogeny/paired-site-rates-audit-gdm-expanded-v1": "838a241fecdc0c433412effd92a154cc1f38d651437ab4c0c01101d60dc43427",
+    "results/phylogeny/paired-site-rates-audit-esmfold-combined-v1": "e8d4e9495822eac44da95c32f217c680ee44f2a7fa454f6cf1eb5ff560986831"
+  },
+  "script_sha256": "beb26440b4a2b428d2e04ae0257a0d6c0f41818b8b676e680ce96cbd1de98ff7",
+  "fits": 852,
+  "flagged_likelihood_changes": 1,
+  "interpretation": "Likelihood changes compare repeated exports of each fit within a cohort, not predictors or different models. Absolute 0.1 is a descriptive review threshold, not a significance cutoff. Warnings are retained, not automatic exclusions. Audit success does not establish convergence, model adequacy or calibrated rate uncertainty; pending optimization and rate-model sensitivity remain required.",
+  "artifacts": {
+    "model_summary.tsv": "d464dc7c93f53bf90d02e53d90d6380a763bdebd772e10265faaee0c57048625",
+    "warning_frequencies.tsv": "1fd17b68c1ab2bff0ded9260540a922fb3e54b029c356be707e1892ba4dfae1a",
+    "likelihood_change_flags.tsv": "e6a5969c202f62e9134ec5533a1d85941654c630544817e0c9c0b716a339a340"
+  }
+}
