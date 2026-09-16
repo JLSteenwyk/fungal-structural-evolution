@@ -673,3 +673,44 @@ OPENBLAS_NUM_THREADS=1 python scripts/plot_experimental_predictor_controls.py --
 Commands require fresh output directories; retain existing immutable results.
 
 ![Matched experimental predictor controls](figures/experimental_predictor_controls.svg)
+
+
+## Longer experimental-control tier on GPU1
+
+On September 16, the idle second RTX 6000 Ada was assigned 12 previously
+length-deferred experimental controls, 513–741 residues (7,097 total residues,
+251 experimental entity links). Independent FASTA readback confirmed exact
+sequence hashes, full lengths and disjointness from every other current
+candidate queue, including the live GPU0 5,510-sequence queue. All remaining
+23 reference sequences are retained as deferred in the disposition table;
+lengths above 768 require further memory planning. This is the next production
+tier, with unchanged ESMFold settings and no sequence truncation.
+
+The plan reserves four physical CPU cores (80,82,84,86), enforces a 64-GiB
+host-memory cgroup limit, requires 64 GiB available memory and 5 GiB free disk,
+and estimates 0.1–2 hours including startup, audit and conversion. The estimate
+uses observed 22–50-second predictions at similar lengths on GPU0; it is not a
+completion guarantee. GPU1 runs continuously at its existing 300-W default/max
+power limit; GPU0's temporary 90/10-second schedule remains active. No paid
+infrastructure or DGX Spark resources are used.
+
+The user systemd service fungal-experimental-controls-long-20260916.service
+runs the pinned plan. It requires all 12 predictions to finish without OOM or
+interruption before the independent PDB/NPZ/PAE audit and exact mmCIF conversion.
+Any failure preserves outputs for review, without automatic restart or partial
+completion claims. Source scripts remain unchanged while the service is live.
+The transient service does not survive a host reboot; saved predictions require
+review before resuming with the existing prediction runner.
+
+```bash
+python scripts/prepare_long_experimental_controls.py --output data/prediction_inputs/experimental-controls-513-768-v1 --max-length 768
+python scripts/run_experimental_control_tier.py --plan metadata/experimental_control_long_tier_plan.json
+```
+
+Preparation and staged execution require fresh output directories. Input
+receipt, disposition, resource plan and verified live launch identities are
+versioned as metadata/experimental_control_long_tier_*. The execution status is
+results/experimental_control_long_tier_execution.json; logs are available with
+`journalctl --user -u fungal-experimental-controls-long-20260916.service`.
+These predictions are not yet added to the reviewed 45-control comparison;
+that integration requires the completion audit and a new immutable crosswalk.

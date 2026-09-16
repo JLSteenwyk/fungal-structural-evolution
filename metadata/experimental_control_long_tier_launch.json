@@ -1,0 +1,57 @@
+{
+  "status": "live_launch_verified",
+  "checked_at": 1789569806.735989,
+  "unit": "fungal-experimental-controls-long-20260916.service",
+  "pid": 164315,
+  "created": 1789569779.71,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_experimental_control_tier.py",
+    "--plan",
+    "metadata/experimental_control_long_tier_plan.json"
+  ],
+  "plan_sha256": "68f363b925dec3639017b32b957b8828a81a606284d80b587df8cb4d373939a4",
+  "processes": [
+    {
+      "pid": 164315,
+      "created": 1789569779.71,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_experimental_control_tier.py",
+        "--plan",
+        "metadata/experimental_control_long_tier_plan.json"
+      ],
+      "cpu_affinity": [
+        80,
+        82,
+        84,
+        86
+      ]
+    },
+    {
+      "pid": 164385,
+      "created": 1789569779.83,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "scripts/run_marker_predictions.py",
+        "--inputs",
+        "data/prediction_inputs/experimental-controls-513-768-v1",
+        "--checkpoint",
+        "data/prediction_models/esmfold-v1",
+        "--output",
+        "results/predictions/esmfold-experimental-controls-513-768-v1",
+        "--max-length",
+        "768",
+        "--limit",
+        "12"
+      ],
+      "cpu_affinity": [
+        80,
+        82,
+        84,
+        86
+      ]
+    }
+  ],
+  "independent_queue_checks": "12 exact hash-identical full sequences, 7097 residues, length 513\u2013741, no overlap with any other current candidate FASTA; input artifact hashes verified"
+}

@@ -2759,3 +2759,12 @@ caveat that residues and entries can change. These are descriptive selected-set
 agreements, not training-independent accuracy estimates. The 35 longer control
 sequences remain pending. Details: docs/experimental-structure-workflow.md;
 figure: docs/figures/experimental_predictor_controls.svg.
+
+
+September 16, 10:43 Eastern: GPU1 now runs the next 12 experimental-reference
+controls (513–741 residues), disjoint from every existing prediction queue.
+Both GPUs were observed at 100% utilization during processing. The new service
+pins the unchanged prediction/audit/conversion scripts and advances only after
+all 12 predictions complete. Twenty-three longer controls remain deferred for
+memory planning; no truncation or completed-control claim. Plan and launch:
+metadata/experimental_control_long_tier_{plan,launch}.json.
