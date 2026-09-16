@@ -518,3 +518,27 @@ successfully across the full grid; its receipt is
 metadata/esmfold_combined_site_exposure_readback.json. Runner:
 scripts/readback_site_parsimony_exposure.py; plan and process identity:
 metadata/esmfold_combined_site_exposure_readback_{plan,launch}.json.
+
+The expanded AlphaFold joint-path readback has completed successfully:
+737,851 accepted and 7,002 excluded pairs retained every inherited field and
+passed all count, interval-order and covariance-bound checks. One deterministic
+pair per marker was independently traversed across all estimable draws in
+each block, giving 372 pair/block checks and 148,770 tree traversals. Numerical
+summaries for other pairs were not independently recomputed. Receipt:
+metadata/gdm_expanded_joint_path_uncertainty_readback.json. This validates
+conditional sampling summaries without establishing calibrated confidence or
+an acceleration test.
+
+The combined ESMFold downstream rate workflow is queued behind the identified
+FreeRate producer and its required full audit. Six sequential stages perform
+the initial model comparison, 1,424 optimization diagnostics across all 356
+fits, optimization audit, selected-fit comparison, full comparison readback,
+and exposure-frame assembly. Existing Gamma4 and exposure results are pinned;
+source hashes, complete counts and available memory/disk are checked at stage
+boundaries. Partial uncheckpointed stages require review, preventing blind
+re-execution. Up to four single-thread fits run concurrently within the current
+48-core allowance. The 1–96-hour planning range after prerequisites is an
+estimate. No downstream stage is yet claimed complete, and coupling inference
+remains separate. Runner: scripts/advance_site_rate_comparison.py; configuration
+and live identity: metadata/esmfold_combined_rate_comparison_controller_*.json;
+controller output: results/phylogeny/site-rate-comparison-controller-esmfold-combined-v1.

@@ -1,0 +1,2996 @@
+{
+  "status": "complete_joint_path_readback",
+  "pair_counts": {
+    "accepted": 737851,
+    "excluded": 7002
+  },
+  "markers": 124,
+  "independent_pair_block_checks": 372,
+  "independent_tree_traversals": 148770,
+  "scope": "All inherited fields, cohort identities, summary counts, interval bounds and covariance bounds; one SHA256-selected pair per marker independently traversed in every estimable draw and block with Bio.Phylo.distance and Python statistics. Other pair numerical summaries are not independently recomputed.",
+  "source_receipts": {
+    "paths": "5c09a811c43de400de794e9fe5efd03a35e5f11b7d9c1b3a58f8664bb59de33e",
+    "points": "93b2402f61824a98f218bd931e1f7b0bc58924c3d49239ce581f2d0e8fb1cf3f",
+    "resampling": "1e8c7ad781629899d04503b4d9a0e8d9c9e2fa12083fb5daef8f5b2ee298c303",
+    "resampling_audit": "da8b6ab4ab88368acf98453fbae4d91b33c7c79127766db95c5b71a951c0772b"
+  },
+  "script_sha256": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+  "checks": [
+    {
+      "marker": "115730at2759",
+      "block_length": 1,
+      "taxon_a": "F1048829",
+      "taxon_b": "F54195",
+      "selection_sha256": "000d718fae120cc51ec5e22cde34315953f5737ca20a8d41ae1dd4cf34580917",
+      "valid_draws": 200
+    },
+    {
+      "marker": "115730at2759",
+      "block_length": 10,
+      "taxon_a": "F1048829",
+      "taxon_b": "F54195",
+      "selection_sha256": "000d718fae120cc51ec5e22cde34315953f5737ca20a8d41ae1dd4cf34580917",
+      "valid_draws": 200
+    },
+    {
+      "marker": "115730at2759",
+      "block_length": 30,
+      "taxon_a": "F1048829",
+      "taxon_b": "F54195",
+      "selection_sha256": "000d718fae120cc51ec5e22cde34315953f5737ca20a8d41ae1dd4cf34580917",
+      "valid_draws": 200
+    },
+    {
+      "marker": "129234at2759",
+      "block_length": 1,
+      "taxon_a": "F117187",
+      "taxon_b": "F574774",
+      "selection_sha256": "000266d0da54247558976daffeb06b4806bf3cf7e335432331d6ad050a017eda",
+      "valid_draws": 200
+    },
+    {
+      "marker": "129234at2759",
+      "block_length": 10,
+      "taxon_a": "F117187",
+      "taxon_b": "F574774",
+      "selection_sha256": "000266d0da54247558976daffeb06b4806bf3cf7e335432331d6ad050a017eda",
+      "valid_draws": 199
+    },
+    {
+      "marker": "129234at2759",
+      "block_length": 30,
+      "taxon_a": "F117187",
+      "taxon_b": "F574774",
+      "selection_sha256": "000266d0da54247558976daffeb06b4806bf3cf7e335432331d6ad050a017eda",
+      "valid_draws": 198
+    },
+    {
+      "marker": "160487at2759",
+      "block_length": 1,
+      "taxon_a": "F1176130",
+      "taxon_b": "F34406",
+      "selection_sha256": "00284286d3fa122ca4829d6ce2a4fd954e07f857745900c8c677e71a7606dc5c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "160487at2759",
+      "block_length": 10,
+      "taxon_a": "F1176130",
+      "taxon_b": "F34406",
+      "selection_sha256": "00284286d3fa122ca4829d6ce2a4fd954e07f857745900c8c677e71a7606dc5c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "160487at2759",
+      "block_length": 30,
+      "taxon_a": "F1176130",
+      "taxon_b": "F34406",
+      "selection_sha256": "00284286d3fa122ca4829d6ce2a4fd954e07f857745900c8c677e71a7606dc5c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "201273at2759",
+      "block_length": 1,
+      "taxon_a": "F41990",
+      "taxon_b": "F470096",
+      "selection_sha256": "00119ec13eaf5f372493576afb72307915d219795eac9432f6401d5cff7a4b54",
+      "valid_draws": 200
+    },
+    {
+      "marker": "201273at2759",
+      "block_length": 10,
+      "taxon_a": "F41990",
+      "taxon_b": "F470096",
+      "selection_sha256": "00119ec13eaf5f372493576afb72307915d219795eac9432f6401d5cff7a4b54",
+      "valid_draws": 200
+    },
+    {
+      "marker": "201273at2759",
+      "block_length": 30,
+      "taxon_a": "F41990",
+      "taxon_b": "F470096",
+      "selection_sha256": "00119ec13eaf5f372493576afb72307915d219795eac9432f6401d5cff7a4b54",
+      "valid_draws": 200
+    },
+    {
+      "marker": "207567at2759",
+      "block_length": 1,
+      "taxon_a": "F2606893",
+      "taxon_b": "F63402",
+      "selection_sha256": "000606a78a11d6740a094168891794fe9db98fe48f071922dc6ca1fd9ddb76c9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "207567at2759",
+      "block_length": 10,
+      "taxon_a": "F2606893",
+      "taxon_b": "F63402",
+      "selection_sha256": "000606a78a11d6740a094168891794fe9db98fe48f071922dc6ca1fd9ddb76c9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "207567at2759",
+      "block_length": 30,
+      "taxon_a": "F2606893",
+      "taxon_b": "F63402",
+      "selection_sha256": "000606a78a11d6740a094168891794fe9db98fe48f071922dc6ca1fd9ddb76c9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "260326at2759",
+      "block_length": 1,
+      "taxon_a": "F114525",
+      "taxon_b": "F58853",
+      "selection_sha256": "00013dfb6d49555876ff404df607849e347bda0adbe1af4e5d7d83a54ceffbd0",
+      "valid_draws": 200
+    },
+    {
+      "marker": "260326at2759",
+      "block_length": 10,
+      "taxon_a": "F114525",
+      "taxon_b": "F58853",
+      "selection_sha256": "00013dfb6d49555876ff404df607849e347bda0adbe1af4e5d7d83a54ceffbd0",
+      "valid_draws": 200
+    },
+    {
+      "marker": "260326at2759",
+      "block_length": 30,
+      "taxon_a": "F114525",
+      "taxon_b": "F58853",
+      "selection_sha256": "00013dfb6d49555876ff404df607849e347bda0adbe1af4e5d7d83a54ceffbd0",
+      "valid_draws": 200
+    },
+    {
+      "marker": "2852757at2759",
+      "block_length": 1,
+      "taxon_a": "F122368",
+      "taxon_b": "O44689",
+      "selection_sha256": "0007b1ab1e38e1efbebda344bebe8b493abcf2704e446af0777979fa85a62d41",
+      "valid_draws": 200
+    },
+    {
+      "marker": "2852757at2759",
+      "block_length": 10,
+      "taxon_a": "F122368",
+      "taxon_b": "O44689",
+      "selection_sha256": "0007b1ab1e38e1efbebda344bebe8b493abcf2704e446af0777979fa85a62d41",
+      "valid_draws": 200
+    },
+    {
+      "marker": "2852757at2759",
+      "block_length": 30,
+      "taxon_a": "F122368",
+      "taxon_b": "O44689",
+      "selection_sha256": "0007b1ab1e38e1efbebda344bebe8b493abcf2704e446af0777979fa85a62d41",
+      "valid_draws": 200
+    },
+    {
+      "marker": "288615at2759",
+      "block_length": 1,
+      "taxon_a": "F13291",
+      "taxon_b": "F2034170",
+      "selection_sha256": "000d381423a215bd92faded15a5e60557448fc38338cc747926c223507b4216c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "288615at2759",
+      "block_length": 10,
+      "taxon_a": "F13291",
+      "taxon_b": "F2034170",
+      "selection_sha256": "000d381423a215bd92faded15a5e60557448fc38338cc747926c223507b4216c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "288615at2759",
+      "block_length": 30,
+      "taxon_a": "F13291",
+      "taxon_b": "F2034170",
+      "selection_sha256": "000d381423a215bd92faded15a5e60557448fc38338cc747926c223507b4216c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "319730at2759",
+      "block_length": 1,
+      "taxon_a": "F1670608",
+      "taxon_b": "F54195",
+      "selection_sha256": "00065300d311c2d62976600bc424050eb0dbe6eaaf0ebb3d8e246d70dbb0f071",
+      "valid_draws": 200
+    },
+    {
+      "marker": "319730at2759",
+      "block_length": 10,
+      "taxon_a": "F1670608",
+      "taxon_b": "F54195",
+      "selection_sha256": "00065300d311c2d62976600bc424050eb0dbe6eaaf0ebb3d8e246d70dbb0f071",
+      "valid_draws": 200
+    },
+    {
+      "marker": "319730at2759",
+      "block_length": 30,
+      "taxon_a": "F1670608",
+      "taxon_b": "F54195",
+      "selection_sha256": "00065300d311c2d62976600bc424050eb0dbe6eaaf0ebb3d8e246d70dbb0f071",
+      "valid_draws": 200
+    },
+    {
+      "marker": "340246at2759",
+      "block_length": 1,
+      "taxon_a": "F182096",
+      "taxon_b": "F42068",
+      "selection_sha256": "00071863560aac431fffa899215d11e558dabd3bd25a337f698852f1bbdead26",
+      "valid_draws": 200
+    },
+    {
+      "marker": "340246at2759",
+      "block_length": 10,
+      "taxon_a": "F182096",
+      "taxon_b": "F42068",
+      "selection_sha256": "00071863560aac431fffa899215d11e558dabd3bd25a337f698852f1bbdead26",
+      "valid_draws": 200
+    },
+    {
+      "marker": "340246at2759",
+      "block_length": 30,
+      "taxon_a": "F182096",
+      "taxon_b": "F42068",
+      "selection_sha256": "00071863560aac431fffa899215d11e558dabd3bd25a337f698852f1bbdead26",
+      "valid_draws": 200
+    },
+    {
+      "marker": "345792at2759",
+      "block_length": 1,
+      "taxon_a": "F158046",
+      "taxon_b": "F177199",
+      "selection_sha256": "0000880dd5a7f6fe664ce4d6cbba04d904148ec0944e03db9e3468c9025f5799",
+      "valid_draws": 200
+    },
+    {
+      "marker": "345792at2759",
+      "block_length": 10,
+      "taxon_a": "F158046",
+      "taxon_b": "F177199",
+      "selection_sha256": "0000880dd5a7f6fe664ce4d6cbba04d904148ec0944e03db9e3468c9025f5799",
+      "valid_draws": 200
+    },
+    {
+      "marker": "345792at2759",
+      "block_length": 30,
+      "taxon_a": "F158046",
+      "taxon_b": "F177199",
+      "selection_sha256": "0000880dd5a7f6fe664ce4d6cbba04d904148ec0944e03db9e3468c9025f5799",
+      "valid_draws": 200
+    },
+    {
+      "marker": "352891at2759",
+      "block_length": 1,
+      "taxon_a": "F101028",
+      "taxon_b": "F5101",
+      "selection_sha256": "000938b53f658e2f13f024199bcab61fbbc55f3ab7ac93cc9bdd51abedc4149a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "352891at2759",
+      "block_length": 10,
+      "taxon_a": "F101028",
+      "taxon_b": "F5101",
+      "selection_sha256": "000938b53f658e2f13f024199bcab61fbbc55f3ab7ac93cc9bdd51abedc4149a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "352891at2759",
+      "block_length": 30,
+      "taxon_a": "F101028",
+      "taxon_b": "F5101",
+      "selection_sha256": "000938b53f658e2f13f024199bcab61fbbc55f3ab7ac93cc9bdd51abedc4149a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "3643464at2759",
+      "block_length": 1,
+      "taxon_a": "F281847",
+      "taxon_b": "F5101",
+      "selection_sha256": "000029121e98bb3e3d60901abd69cf33b9fba69991ccd83a2300d6eb20d12578",
+      "valid_draws": 200
+    },
+    {
+      "marker": "3643464at2759",
+      "block_length": 10,
+      "taxon_a": "F281847",
+      "taxon_b": "F5101",
+      "selection_sha256": "000029121e98bb3e3d60901abd69cf33b9fba69991ccd83a2300d6eb20d12578",
+      "valid_draws": 200
+    },
+    {
+      "marker": "3643464at2759",
+      "block_length": 30,
+      "taxon_a": "F281847",
+      "taxon_b": "F5101",
+      "selection_sha256": "000029121e98bb3e3d60901abd69cf33b9fba69991ccd83a2300d6eb20d12578",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4613677at2759",
+      "block_length": 1,
+      "taxon_a": "F41990",
+      "taxon_b": "F462254",
+      "selection_sha256": "00094f675bb1c18cbe36bd312eac01a2a17fd41a2a82e72eafd665927af207ec",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4613677at2759",
+      "block_length": 10,
+      "taxon_a": "F41990",
+      "taxon_b": "F462254",
+      "selection_sha256": "00094f675bb1c18cbe36bd312eac01a2a17fd41a2a82e72eafd665927af207ec",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4613677at2759",
+      "block_length": 30,
+      "taxon_a": "F41990",
+      "taxon_b": "F462254",
+      "selection_sha256": "00094f675bb1c18cbe36bd312eac01a2a17fd41a2a82e72eafd665927af207ec",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4695236at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F41990",
+      "selection_sha256": "00001f4df73e350d3ac2ab6548023962314239de7abcadd0b7d3b157bc602cbd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4695236at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F41990",
+      "selection_sha256": "00001f4df73e350d3ac2ab6548023962314239de7abcadd0b7d3b157bc602cbd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4695236at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F41990",
+      "selection_sha256": "00001f4df73e350d3ac2ab6548023962314239de7abcadd0b7d3b157bc602cbd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4747214at2759",
+      "block_length": 1,
+      "taxon_a": "F2650707",
+      "taxon_b": "F703497",
+      "selection_sha256": "002171acb7e448f915c81a01a0d9995c1ab9ecc67aeb9983a5599c22759ab5bf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4747214at2759",
+      "block_length": 10,
+      "taxon_a": "F2650707",
+      "taxon_b": "F703497",
+      "selection_sha256": "002171acb7e448f915c81a01a0d9995c1ab9ecc67aeb9983a5599c22759ab5bf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4747214at2759",
+      "block_length": 30,
+      "taxon_a": "F2650707",
+      "taxon_b": "F703497",
+      "selection_sha256": "002171acb7e448f915c81a01a0d9995c1ab9ecc67aeb9983a5599c22759ab5bf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4764044at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F4903",
+      "selection_sha256": "00064d90582eb4461e9464a7c65e2346e9497591295d800c4031a9d009eaf096",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4764044at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F4903",
+      "selection_sha256": "00064d90582eb4461e9464a7c65e2346e9497591295d800c4031a9d009eaf096",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4764044at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F4903",
+      "selection_sha256": "00064d90582eb4461e9464a7c65e2346e9497591295d800c4031a9d009eaf096",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4803900at2759",
+      "block_length": 1,
+      "taxon_a": "F574656",
+      "taxon_b": "F574789",
+      "selection_sha256": "0028590d1ddf57258d0fc647ee9ae2f4c8e484cb33d427b66351ab56f67e7946",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4803900at2759",
+      "block_length": 10,
+      "taxon_a": "F574656",
+      "taxon_b": "F574789",
+      "selection_sha256": "0028590d1ddf57258d0fc647ee9ae2f4c8e484cb33d427b66351ab56f67e7946",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4803900at2759",
+      "block_length": 30,
+      "taxon_a": "F574656",
+      "taxon_b": "F574789",
+      "selection_sha256": "0028590d1ddf57258d0fc647ee9ae2f4c8e484cb33d427b66351ab56f67e7946",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4810093at2759",
+      "block_length": 1,
+      "taxon_a": "F5062",
+      "taxon_b": "F97331",
+      "selection_sha256": "004ff393862ac87a653e32b95a3ea7b4819609556cc25f72a33d3b619a638c6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4810093at2759",
+      "block_length": 10,
+      "taxon_a": "F5062",
+      "taxon_b": "F97331",
+      "selection_sha256": "004ff393862ac87a653e32b95a3ea7b4819609556cc25f72a33d3b619a638c6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4810093at2759",
+      "block_length": 30,
+      "taxon_a": "F5062",
+      "taxon_b": "F97331",
+      "selection_sha256": "004ff393862ac87a653e32b95a3ea7b4819609556cc25f72a33d3b619a638c6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4813267at2759",
+      "block_length": 1,
+      "taxon_a": "F101201",
+      "taxon_b": "F61273",
+      "selection_sha256": "0043a8f7e9253143831f35d45706b64a05036b0bc38f74657797111c8aed7edd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4813267at2759",
+      "block_length": 10,
+      "taxon_a": "F101201",
+      "taxon_b": "F61273",
+      "selection_sha256": "0043a8f7e9253143831f35d45706b64a05036b0bc38f74657797111c8aed7edd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4813267at2759",
+      "block_length": 30,
+      "taxon_a": "F101201",
+      "taxon_b": "F61273",
+      "selection_sha256": "0043a8f7e9253143831f35d45706b64a05036b0bc38f74657797111c8aed7edd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4823929at2759",
+      "block_length": 1,
+      "taxon_a": "F34406",
+      "taxon_b": "F5580",
+      "selection_sha256": "000e0873d0d5c308286dd88325762016eb1a46babd8e467e62240daee3e795f6",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4823929at2759",
+      "block_length": 10,
+      "taxon_a": "F34406",
+      "taxon_b": "F5580",
+      "selection_sha256": "000e0873d0d5c308286dd88325762016eb1a46babd8e467e62240daee3e795f6",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4823929at2759",
+      "block_length": 30,
+      "taxon_a": "F34406",
+      "taxon_b": "F5580",
+      "selection_sha256": "000e0873d0d5c308286dd88325762016eb1a46babd8e467e62240daee3e795f6",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4837017at2759",
+      "block_length": 1,
+      "taxon_a": "F42068",
+      "taxon_b": "F560253",
+      "selection_sha256": "00028b4cc76094253061da91ccc9b068591064fb4a88da14971e53d7abeb0792",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4837017at2759",
+      "block_length": 10,
+      "taxon_a": "F42068",
+      "taxon_b": "F560253",
+      "selection_sha256": "00028b4cc76094253061da91ccc9b068591064fb4a88da14971e53d7abeb0792",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4837017at2759",
+      "block_length": 30,
+      "taxon_a": "F42068",
+      "taxon_b": "F560253",
+      "selection_sha256": "00028b4cc76094253061da91ccc9b068591064fb4a88da14971e53d7abeb0792",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4838864at2759",
+      "block_length": 1,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5208",
+      "selection_sha256": "000a386260043dd015b0f88b47f3eb1ac26b91b8fb33457422acd4c4fa310936",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4838864at2759",
+      "block_length": 10,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5208",
+      "selection_sha256": "000a386260043dd015b0f88b47f3eb1ac26b91b8fb33457422acd4c4fa310936",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4838864at2759",
+      "block_length": 30,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5208",
+      "selection_sha256": "000a386260043dd015b0f88b47f3eb1ac26b91b8fb33457422acd4c4fa310936",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843240at2759",
+      "block_length": 1,
+      "taxon_a": "F117187",
+      "taxon_b": "F61273",
+      "selection_sha256": "000baed248770bc6838384fc302f2f43f3264642e832a1271b762896783dc7d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843240at2759",
+      "block_length": 10,
+      "taxon_a": "F117187",
+      "taxon_b": "F61273",
+      "selection_sha256": "000baed248770bc6838384fc302f2f43f3264642e832a1271b762896783dc7d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843240at2759",
+      "block_length": 30,
+      "taxon_a": "F117187",
+      "taxon_b": "F61273",
+      "selection_sha256": "000baed248770bc6838384fc302f2f43f3264642e832a1271b762896783dc7d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843824at2759",
+      "block_length": 1,
+      "taxon_a": "F41990",
+      "taxon_b": "F4903",
+      "selection_sha256": "0006f09e60fff81eb0f2a8b9e484f5960b1e8a4b90e5973df6c28b5387c74e6a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843824at2759",
+      "block_length": 10,
+      "taxon_a": "F41990",
+      "taxon_b": "F4903",
+      "selection_sha256": "0006f09e60fff81eb0f2a8b9e484f5960b1e8a4b90e5973df6c28b5387c74e6a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4843824at2759",
+      "block_length": 30,
+      "taxon_a": "F41990",
+      "taxon_b": "F4903",
+      "selection_sha256": "0006f09e60fff81eb0f2a8b9e484f5960b1e8a4b90e5973df6c28b5387c74e6a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4867008at2759",
+      "block_length": 1,
+      "taxon_a": "F133377",
+      "taxon_b": "F574656",
+      "selection_sha256": "0001e65ef74766613422a3a72dd0a881a17a4481980d30ab3b130cde9e2b7093",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4867008at2759",
+      "block_length": 10,
+      "taxon_a": "F133377",
+      "taxon_b": "F574656",
+      "selection_sha256": "0001e65ef74766613422a3a72dd0a881a17a4481980d30ab3b130cde9e2b7093",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4867008at2759",
+      "block_length": 30,
+      "taxon_a": "F133377",
+      "taxon_b": "F574656",
+      "selection_sha256": "0001e65ef74766613422a3a72dd0a881a17a4481980d30ab3b130cde9e2b7093",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4888252at2759",
+      "block_length": 1,
+      "taxon_a": "F2601811",
+      "taxon_b": "F36050",
+      "selection_sha256": "000254d3cea4b7982ea99fd401d921dc264230bcf339ebd3a8bcd20d902e6000",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4888252at2759",
+      "block_length": 10,
+      "taxon_a": "F2601811",
+      "taxon_b": "F36050",
+      "selection_sha256": "000254d3cea4b7982ea99fd401d921dc264230bcf339ebd3a8bcd20d902e6000",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4888252at2759",
+      "block_length": 30,
+      "taxon_a": "F2601811",
+      "taxon_b": "F36050",
+      "selection_sha256": "000254d3cea4b7982ea99fd401d921dc264230bcf339ebd3a8bcd20d902e6000",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4896098at2759",
+      "block_length": 1,
+      "taxon_a": "F106004",
+      "taxon_b": "F41990",
+      "selection_sha256": "00029396f1a3fb421557abe50d308507339509bc821dcdc7ea6c748febd21b07",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4896098at2759",
+      "block_length": 10,
+      "taxon_a": "F106004",
+      "taxon_b": "F41990",
+      "selection_sha256": "00029396f1a3fb421557abe50d308507339509bc821dcdc7ea6c748febd21b07",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4896098at2759",
+      "block_length": 30,
+      "taxon_a": "F106004",
+      "taxon_b": "F41990",
+      "selection_sha256": "00029396f1a3fb421557abe50d308507339509bc821dcdc7ea6c748febd21b07",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4900375at2759",
+      "block_length": 1,
+      "taxon_a": "F1069201",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00006b54cbb4c85cd92fb24149be849cd23e375a78ffa13ce05ea970f12e5a25",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4900375at2759",
+      "block_length": 10,
+      "taxon_a": "F1069201",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00006b54cbb4c85cd92fb24149be849cd23e375a78ffa13ce05ea970f12e5a25",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4900375at2759",
+      "block_length": 30,
+      "taxon_a": "F1069201",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00006b54cbb4c85cd92fb24149be849cd23e375a78ffa13ce05ea970f12e5a25",
+      "valid_draws": 198
+    },
+    {
+      "marker": "4908955at2759",
+      "block_length": 1,
+      "taxon_a": "F1052096",
+      "taxon_b": "F746128",
+      "selection_sha256": "0002657e2e3b6813a2e73a8ccbd8a9aa4f525eefb0b3796be6c25ed31158c69a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4908955at2759",
+      "block_length": 10,
+      "taxon_a": "F1052096",
+      "taxon_b": "F746128",
+      "selection_sha256": "0002657e2e3b6813a2e73a8ccbd8a9aa4f525eefb0b3796be6c25ed31158c69a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4908955at2759",
+      "block_length": 30,
+      "taxon_a": "F1052096",
+      "taxon_b": "F746128",
+      "selection_sha256": "0002657e2e3b6813a2e73a8ccbd8a9aa4f525eefb0b3796be6c25ed31158c69a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4911644at2759",
+      "block_length": 1,
+      "taxon_a": "F560253",
+      "taxon_b": "F61273",
+      "selection_sha256": "001b2a5ce6081945d938f9b11070b931cf70a212450de5f12741faac443a66e1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4911644at2759",
+      "block_length": 10,
+      "taxon_a": "F560253",
+      "taxon_b": "F61273",
+      "selection_sha256": "001b2a5ce6081945d938f9b11070b931cf70a212450de5f12741faac443a66e1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4911644at2759",
+      "block_length": 30,
+      "taxon_a": "F560253",
+      "taxon_b": "F61273",
+      "selection_sha256": "001b2a5ce6081945d938f9b11070b931cf70a212450de5f12741faac443a66e1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4940884at2759",
+      "block_length": 1,
+      "taxon_a": "F1093897",
+      "taxon_b": "F474922",
+      "selection_sha256": "0001ac7c6185d3b2804ce349b220d270eb1b47ae97f42df716269084472280c7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4940884at2759",
+      "block_length": 10,
+      "taxon_a": "F1093897",
+      "taxon_b": "F474922",
+      "selection_sha256": "0001ac7c6185d3b2804ce349b220d270eb1b47ae97f42df716269084472280c7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4940884at2759",
+      "block_length": 30,
+      "taxon_a": "F1093897",
+      "taxon_b": "F474922",
+      "selection_sha256": "0001ac7c6185d3b2804ce349b220d270eb1b47ae97f42df716269084472280c7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969018at2759",
+      "block_length": 1,
+      "taxon_a": "F109876",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00008f3f46286f2e2e91cdd7fe6a335cde39624ab201275ed7f0490591fd3cff",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969018at2759",
+      "block_length": 10,
+      "taxon_a": "F109876",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00008f3f46286f2e2e91cdd7fe6a335cde39624ab201275ed7f0490591fd3cff",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969018at2759",
+      "block_length": 30,
+      "taxon_a": "F109876",
+      "taxon_b": "F1220207",
+      "selection_sha256": "00008f3f46286f2e2e91cdd7fe6a335cde39624ab201275ed7f0490591fd3cff",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969636at2759",
+      "block_length": 1,
+      "taxon_a": "F157183",
+      "taxon_b": "F5518",
+      "selection_sha256": "0005c705a20038b593bdb24c1866a0a65eecb37cffd4cec3a3bfb5f8fae2712f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969636at2759",
+      "block_length": 10,
+      "taxon_a": "F157183",
+      "taxon_b": "F5518",
+      "selection_sha256": "0005c705a20038b593bdb24c1866a0a65eecb37cffd4cec3a3bfb5f8fae2712f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969636at2759",
+      "block_length": 30,
+      "taxon_a": "F157183",
+      "taxon_b": "F5518",
+      "selection_sha256": "0005c705a20038b593bdb24c1866a0a65eecb37cffd4cec3a3bfb5f8fae2712f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969990at2759",
+      "block_length": 1,
+      "taxon_a": "F101201",
+      "taxon_b": "F263815",
+      "selection_sha256": "0003b3a2895c2aa3c3e73843af803ec6780c18b689b8b7716ffc3ac3767f5e10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969990at2759",
+      "block_length": 10,
+      "taxon_a": "F101201",
+      "taxon_b": "F263815",
+      "selection_sha256": "0003b3a2895c2aa3c3e73843af803ec6780c18b689b8b7716ffc3ac3767f5e10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4969990at2759",
+      "block_length": 30,
+      "taxon_a": "F101201",
+      "taxon_b": "F263815",
+      "selection_sha256": "0003b3a2895c2aa3c3e73843af803ec6780c18b689b8b7716ffc3ac3767f5e10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4970387at2759",
+      "block_length": 1,
+      "taxon_a": "F5454",
+      "taxon_b": "F574656",
+      "selection_sha256": "002174acecf7d0a276a930a039d1f3e8705efbe0daa2ad914e2140ce2c30fa43",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4970387at2759",
+      "block_length": 10,
+      "taxon_a": "F5454",
+      "taxon_b": "F574656",
+      "selection_sha256": "002174acecf7d0a276a930a039d1f3e8705efbe0daa2ad914e2140ce2c30fa43",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4970387at2759",
+      "block_length": 30,
+      "taxon_a": "F5454",
+      "taxon_b": "F574656",
+      "selection_sha256": "002174acecf7d0a276a930a039d1f3e8705efbe0daa2ad914e2140ce2c30fa43",
+      "valid_draws": 199
+    },
+    {
+      "marker": "4970538at2759",
+      "block_length": 1,
+      "taxon_a": "F147573",
+      "taxon_b": "F41990",
+      "selection_sha256": "000229fa2ff1f3344be95654275e26fb7eb7af768bcd6b734d89834b1a923380",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4970538at2759",
+      "block_length": 10,
+      "taxon_a": "F147573",
+      "taxon_b": "F41990",
+      "selection_sha256": "000229fa2ff1f3344be95654275e26fb7eb7af768bcd6b734d89834b1a923380",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4970538at2759",
+      "block_length": 30,
+      "taxon_a": "F147573",
+      "taxon_b": "F41990",
+      "selection_sha256": "000229fa2ff1f3344be95654275e26fb7eb7af768bcd6b734d89834b1a923380",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4971272at2759",
+      "block_length": 1,
+      "taxon_a": "F13290",
+      "taxon_b": "F54195",
+      "selection_sha256": "0002fd2c20c72542cd3208f7d9a629f9f6fd3addf96affb04aa04c13d925d4b4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4971272at2759",
+      "block_length": 10,
+      "taxon_a": "F13290",
+      "taxon_b": "F54195",
+      "selection_sha256": "0002fd2c20c72542cd3208f7d9a629f9f6fd3addf96affb04aa04c13d925d4b4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4971272at2759",
+      "block_length": 30,
+      "taxon_a": "F13290",
+      "taxon_b": "F54195",
+      "selection_sha256": "0002fd2c20c72542cd3208f7d9a629f9f6fd3addf96affb04aa04c13d925d4b4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4974767at2759",
+      "block_length": 1,
+      "taxon_a": "F162425",
+      "taxon_b": "F61273",
+      "selection_sha256": "0000078c811f2d6cd6677b8acf8df9d834abd56f849bb1ebab86a2129f3b8074",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4974767at2759",
+      "block_length": 10,
+      "taxon_a": "F162425",
+      "taxon_b": "F61273",
+      "selection_sha256": "0000078c811f2d6cd6677b8acf8df9d834abd56f849bb1ebab86a2129f3b8074",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4974767at2759",
+      "block_length": 30,
+      "taxon_a": "F162425",
+      "taxon_b": "F61273",
+      "selection_sha256": "0000078c811f2d6cd6677b8acf8df9d834abd56f849bb1ebab86a2129f3b8074",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4975094at2759",
+      "block_length": 1,
+      "taxon_a": "F5486",
+      "taxon_b": "F741139",
+      "selection_sha256": "0017dd895b2309ae2ecc9759a3e84aac1ed665a1b834928fe940810dfa11baf4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4975094at2759",
+      "block_length": 10,
+      "taxon_a": "F5486",
+      "taxon_b": "F741139",
+      "selection_sha256": "0017dd895b2309ae2ecc9759a3e84aac1ed665a1b834928fe940810dfa11baf4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4975094at2759",
+      "block_length": 30,
+      "taxon_a": "F5486",
+      "taxon_b": "F741139",
+      "selection_sha256": "0017dd895b2309ae2ecc9759a3e84aac1ed665a1b834928fe940810dfa11baf4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4976279at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F4909",
+      "selection_sha256": "001ca899e4db233453ed4009f6d51aa3c63d5a1e5de11f5d9dde3eba7f9f86d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4976279at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F4909",
+      "selection_sha256": "001ca899e4db233453ed4009f6d51aa3c63d5a1e5de11f5d9dde3eba7f9f86d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4976279at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F4909",
+      "selection_sha256": "001ca899e4db233453ed4009f6d51aa3c63d5a1e5de11f5d9dde3eba7f9f86d8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4977163at2759",
+      "block_length": 1,
+      "taxon_a": "F145971",
+      "taxon_b": "F177197",
+      "selection_sha256": "00025ddcfd53000b2bdf805e14ced6a15bf481dd83ad7b991d9ab379880cdbd9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4977163at2759",
+      "block_length": 10,
+      "taxon_a": "F145971",
+      "taxon_b": "F177197",
+      "selection_sha256": "00025ddcfd53000b2bdf805e14ced6a15bf481dd83ad7b991d9ab379880cdbd9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4977163at2759",
+      "block_length": 30,
+      "taxon_a": "F145971",
+      "taxon_b": "F177197",
+      "selection_sha256": "00025ddcfd53000b2bdf805e14ced6a15bf481dd83ad7b991d9ab379880cdbd9",
+      "valid_draws": 197
+    },
+    {
+      "marker": "4977863at2759",
+      "block_length": 1,
+      "taxon_a": "F101028",
+      "taxon_b": "F703506",
+      "selection_sha256": "0004c71700d11877dc489e7931d0d3026a7314f06ebd6140900c9d3803e3ea4a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4977863at2759",
+      "block_length": 10,
+      "taxon_a": "F101028",
+      "taxon_b": "F703506",
+      "selection_sha256": "0004c71700d11877dc489e7931d0d3026a7314f06ebd6140900c9d3803e3ea4a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4977863at2759",
+      "block_length": 30,
+      "taxon_a": "F101028",
+      "taxon_b": "F703506",
+      "selection_sha256": "0004c71700d11877dc489e7931d0d3026a7314f06ebd6140900c9d3803e3ea4a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4983000at2759",
+      "block_length": 1,
+      "taxon_a": "F182096",
+      "taxon_b": "F36779",
+      "selection_sha256": "001211dca7ef2dca99f84cc962777c0e220e33a53df9bee642981babfc8ab861",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4983000at2759",
+      "block_length": 10,
+      "taxon_a": "F182096",
+      "taxon_b": "F36779",
+      "selection_sha256": "001211dca7ef2dca99f84cc962777c0e220e33a53df9bee642981babfc8ab861",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4983000at2759",
+      "block_length": 30,
+      "taxon_a": "F182096",
+      "taxon_b": "F36779",
+      "selection_sha256": "001211dca7ef2dca99f84cc962777c0e220e33a53df9bee642981babfc8ab861",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4985971at2759",
+      "block_length": 1,
+      "taxon_a": "F5518",
+      "taxon_b": "F599730",
+      "selection_sha256": "0002d1e5b5bcf41dae0a488043cad71db3f76766577fea6d14793704a3908e05",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4985971at2759",
+      "block_length": 10,
+      "taxon_a": "F5518",
+      "taxon_b": "F599730",
+      "selection_sha256": "0002d1e5b5bcf41dae0a488043cad71db3f76766577fea6d14793704a3908e05",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4985971at2759",
+      "block_length": 30,
+      "taxon_a": "F5518",
+      "taxon_b": "F599730",
+      "selection_sha256": "0002d1e5b5bcf41dae0a488043cad71db3f76766577fea6d14793704a3908e05",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4986044at2759",
+      "block_length": 1,
+      "taxon_a": "F2486360",
+      "taxon_b": "F705562",
+      "selection_sha256": "00054e9604cd9435e46b78516b9afd06c362c3ec1113735111ffb1e7a18b1d97",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4986044at2759",
+      "block_length": 10,
+      "taxon_a": "F2486360",
+      "taxon_b": "F705562",
+      "selection_sha256": "00054e9604cd9435e46b78516b9afd06c362c3ec1113735111ffb1e7a18b1d97",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4986044at2759",
+      "block_length": 30,
+      "taxon_a": "F2486360",
+      "taxon_b": "F705562",
+      "selection_sha256": "00054e9604cd9435e46b78516b9afd06c362c3ec1113735111ffb1e7a18b1d97",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4987397at2759",
+      "block_length": 1,
+      "taxon_a": "F1141098",
+      "taxon_b": "F5544",
+      "selection_sha256": "0000578561359311b431d35cb6f3d58fb0667c861e905ac5e673216982532f27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4987397at2759",
+      "block_length": 10,
+      "taxon_a": "F1141098",
+      "taxon_b": "F5544",
+      "selection_sha256": "0000578561359311b431d35cb6f3d58fb0667c861e905ac5e673216982532f27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4987397at2759",
+      "block_length": 30,
+      "taxon_a": "F1141098",
+      "taxon_b": "F5544",
+      "selection_sha256": "0000578561359311b431d35cb6f3d58fb0667c861e905ac5e673216982532f27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4988239at2759",
+      "block_length": 1,
+      "taxon_a": "F29898",
+      "taxon_b": "F4918",
+      "selection_sha256": "000a5aefbe0f6a239a00ce555c1bb328d01a70e1a3c5f30dba99fa9776b41a13",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4988239at2759",
+      "block_length": 10,
+      "taxon_a": "F29898",
+      "taxon_b": "F4918",
+      "selection_sha256": "000a5aefbe0f6a239a00ce555c1bb328d01a70e1a3c5f30dba99fa9776b41a13",
+      "valid_draws": 200
+    },
+    {
+      "marker": "4988239at2759",
+      "block_length": 30,
+      "taxon_a": "F29898",
+      "taxon_b": "F4918",
+      "selection_sha256": "000a5aefbe0f6a239a00ce555c1bb328d01a70e1a3c5f30dba99fa9776b41a13",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000045at2759",
+      "block_length": 1,
+      "taxon_a": "F236234",
+      "taxon_b": "F41990",
+      "selection_sha256": "0002f7a0a8e29c71cf5e965c3d4b197dc06ef4107bb776ccf475230d43db5e06",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000045at2759",
+      "block_length": 10,
+      "taxon_a": "F236234",
+      "taxon_b": "F41990",
+      "selection_sha256": "0002f7a0a8e29c71cf5e965c3d4b197dc06ef4107bb776ccf475230d43db5e06",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000045at2759",
+      "block_length": 30,
+      "taxon_a": "F236234",
+      "taxon_b": "F41990",
+      "selection_sha256": "0002f7a0a8e29c71cf5e965c3d4b197dc06ef4107bb776ccf475230d43db5e06",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000152at2759",
+      "block_length": 1,
+      "taxon_a": "F1912936",
+      "taxon_b": "F40559",
+      "selection_sha256": "000fd5d98902c762d53478aaaa6541f7fae460f7fa2f8a08bfd0ac7e86da3199",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000152at2759",
+      "block_length": 10,
+      "taxon_a": "F1912936",
+      "taxon_b": "F40559",
+      "selection_sha256": "000fd5d98902c762d53478aaaa6541f7fae460f7fa2f8a08bfd0ac7e86da3199",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000152at2759",
+      "block_length": 30,
+      "taxon_a": "F1912936",
+      "taxon_b": "F40559",
+      "selection_sha256": "000fd5d98902c762d53478aaaa6541f7fae460f7fa2f8a08bfd0ac7e86da3199",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000362at2759",
+      "block_length": 1,
+      "taxon_a": "F162425",
+      "taxon_b": "F236234",
+      "selection_sha256": "000dcd7f62d098507e94bbc6bd59e2f10b8166a60664469086b04293ed1bddbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000362at2759",
+      "block_length": 10,
+      "taxon_a": "F162425",
+      "taxon_b": "F236234",
+      "selection_sha256": "000dcd7f62d098507e94bbc6bd59e2f10b8166a60664469086b04293ed1bddbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000362at2759",
+      "block_length": 30,
+      "taxon_a": "F162425",
+      "taxon_b": "F236234",
+      "selection_sha256": "000dcd7f62d098507e94bbc6bd59e2f10b8166a60664469086b04293ed1bddbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000371at2759",
+      "block_length": 1,
+      "taxon_a": "F147570",
+      "taxon_b": "F393283",
+      "selection_sha256": "00030432a390a3b5d9ba60c8d5f4222ce29644ea41e78da753c16f172611e825",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000371at2759",
+      "block_length": 10,
+      "taxon_a": "F147570",
+      "taxon_b": "F393283",
+      "selection_sha256": "00030432a390a3b5d9ba60c8d5f4222ce29644ea41e78da753c16f172611e825",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000371at2759",
+      "block_length": 30,
+      "taxon_a": "F147570",
+      "taxon_b": "F393283",
+      "selection_sha256": "00030432a390a3b5d9ba60c8d5f4222ce29644ea41e78da753c16f172611e825",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000452at2759",
+      "block_length": 1,
+      "taxon_a": "F1209916",
+      "taxon_b": "F339359",
+      "selection_sha256": "000aea7dce3cf566350f6a6d0308afa70bf13966651ea21d3b12de2119cc64b9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000452at2759",
+      "block_length": 10,
+      "taxon_a": "F1209916",
+      "taxon_b": "F339359",
+      "selection_sha256": "000aea7dce3cf566350f6a6d0308afa70bf13966651ea21d3b12de2119cc64b9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000452at2759",
+      "block_length": 30,
+      "taxon_a": "F1209916",
+      "taxon_b": "F339359",
+      "selection_sha256": "000aea7dce3cf566350f6a6d0308afa70bf13966651ea21d3b12de2119cc64b9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000476at2759",
+      "block_length": 1,
+      "taxon_a": "F1690608",
+      "taxon_b": "F89243",
+      "selection_sha256": "001c409ac780d1459df990bd54848bedbe7ebb528b03b91e837d184a28d49c7e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000476at2759",
+      "block_length": 10,
+      "taxon_a": "F1690608",
+      "taxon_b": "F89243",
+      "selection_sha256": "001c409ac780d1459df990bd54848bedbe7ebb528b03b91e837d184a28d49c7e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000476at2759",
+      "block_length": 30,
+      "taxon_a": "F1690608",
+      "taxon_b": "F89243",
+      "selection_sha256": "001c409ac780d1459df990bd54848bedbe7ebb528b03b91e837d184a28d49c7e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000743at2759",
+      "block_length": 1,
+      "taxon_a": "F114524",
+      "taxon_b": "F195108",
+      "selection_sha256": "00128c3ef13f9574700e9b3349980f5aedc4dff27020386b9898951bf61fc9b5",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000743at2759",
+      "block_length": 10,
+      "taxon_a": "F114524",
+      "taxon_b": "F195108",
+      "selection_sha256": "00128c3ef13f9574700e9b3349980f5aedc4dff27020386b9898951bf61fc9b5",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000743at2759",
+      "block_length": 30,
+      "taxon_a": "F114524",
+      "taxon_b": "F195108",
+      "selection_sha256": "00128c3ef13f9574700e9b3349980f5aedc4dff27020386b9898951bf61fc9b5",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000823at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F177199",
+      "selection_sha256": "00014088eba97ef234c583ea7c6090bcca71ce823bf4634ac4e5c8dd7251a18f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000823at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F177199",
+      "selection_sha256": "00014088eba97ef234c583ea7c6090bcca71ce823bf4634ac4e5c8dd7251a18f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000823at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F177199",
+      "selection_sha256": "00014088eba97ef234c583ea7c6090bcca71ce823bf4634ac4e5c8dd7251a18f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000870at2759",
+      "block_length": 1,
+      "taxon_a": "F1141098",
+      "taxon_b": "F705562",
+      "selection_sha256": "00194355429b593449f051d292ea508ed29b4af3114fa25176d78791c32ecd9b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000870at2759",
+      "block_length": 10,
+      "taxon_a": "F1141098",
+      "taxon_b": "F705562",
+      "selection_sha256": "00194355429b593449f051d292ea508ed29b4af3114fa25176d78791c32ecd9b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000870at2759",
+      "block_length": 30,
+      "taxon_a": "F1141098",
+      "taxon_b": "F705562",
+      "selection_sha256": "00194355429b593449f051d292ea508ed29b4af3114fa25176d78791c32ecd9b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000986at2759",
+      "block_length": 1,
+      "taxon_a": "F5127",
+      "taxon_b": "F97331",
+      "selection_sha256": "0009f43d72c1db9b14ce040d3e0f7037a451d8bd364005274a0cbc3f76131d65",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000986at2759",
+      "block_length": 10,
+      "taxon_a": "F5127",
+      "taxon_b": "F97331",
+      "selection_sha256": "0009f43d72c1db9b14ce040d3e0f7037a451d8bd364005274a0cbc3f76131d65",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5000986at2759",
+      "block_length": 30,
+      "taxon_a": "F5127",
+      "taxon_b": "F97331",
+      "selection_sha256": "0009f43d72c1db9b14ce040d3e0f7037a451d8bd364005274a0cbc3f76131d65",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001156at2759",
+      "block_length": 1,
+      "taxon_a": "F293227",
+      "taxon_b": "F741139",
+      "selection_sha256": "000f7eb703ddb97c9aaa22872fcec52d18cddceca838ca54bc8489681d024e5c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001156at2759",
+      "block_length": 10,
+      "taxon_a": "F293227",
+      "taxon_b": "F741139",
+      "selection_sha256": "000f7eb703ddb97c9aaa22872fcec52d18cddceca838ca54bc8489681d024e5c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001156at2759",
+      "block_length": 30,
+      "taxon_a": "F293227",
+      "taxon_b": "F741139",
+      "selection_sha256": "000f7eb703ddb97c9aaa22872fcec52d18cddceca838ca54bc8489681d024e5c",
+      "valid_draws": 199
+    },
+    {
+      "marker": "5001273at2759",
+      "block_length": 1,
+      "taxon_a": "F462254",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000cbafc95b7210493d60dbf35d66aa73cab39a9c13f267f7392c6bb79bfa88",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001273at2759",
+      "block_length": 10,
+      "taxon_a": "F462254",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000cbafc95b7210493d60dbf35d66aa73cab39a9c13f267f7392c6bb79bfa88",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001273at2759",
+      "block_length": 30,
+      "taxon_a": "F462254",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000cbafc95b7210493d60dbf35d66aa73cab39a9c13f267f7392c6bb79bfa88",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001280at2759",
+      "block_length": 1,
+      "taxon_a": "F1042133",
+      "taxon_b": "F1419009",
+      "selection_sha256": "00009dc2ff42451f239c65d869d5ec0f3c443f86000a933b1f177c59f1d0e681",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001280at2759",
+      "block_length": 10,
+      "taxon_a": "F1042133",
+      "taxon_b": "F1419009",
+      "selection_sha256": "00009dc2ff42451f239c65d869d5ec0f3c443f86000a933b1f177c59f1d0e681",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001280at2759",
+      "block_length": 30,
+      "taxon_a": "F1042133",
+      "taxon_b": "F1419009",
+      "selection_sha256": "00009dc2ff42451f239c65d869d5ec0f3c443f86000a933b1f177c59f1d0e681",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001318at2759",
+      "block_length": 1,
+      "taxon_a": "F339359",
+      "taxon_b": "F5059",
+      "selection_sha256": "0006fc49e0c39342bb707e231679165331863f633eaa6ddf942e3bc4e1fb8b43",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001318at2759",
+      "block_length": 10,
+      "taxon_a": "F339359",
+      "taxon_b": "F5059",
+      "selection_sha256": "0006fc49e0c39342bb707e231679165331863f633eaa6ddf942e3bc4e1fb8b43",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001318at2759",
+      "block_length": 30,
+      "taxon_a": "F339359",
+      "taxon_b": "F5059",
+      "selection_sha256": "0006fc49e0c39342bb707e231679165331863f633eaa6ddf942e3bc4e1fb8b43",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001413at2759",
+      "block_length": 1,
+      "taxon_a": "F1052096",
+      "taxon_b": "F61273",
+      "selection_sha256": "000607a09af02144548b0a1e4faf601d9e02ce43ab2bb3d8ea9410dee8f4375f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001413at2759",
+      "block_length": 10,
+      "taxon_a": "F1052096",
+      "taxon_b": "F61273",
+      "selection_sha256": "000607a09af02144548b0a1e4faf601d9e02ce43ab2bb3d8ea9410dee8f4375f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001413at2759",
+      "block_length": 30,
+      "taxon_a": "F1052096",
+      "taxon_b": "F61273",
+      "selection_sha256": "000607a09af02144548b0a1e4faf601d9e02ce43ab2bb3d8ea9410dee8f4375f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001473at2759",
+      "block_length": 1,
+      "taxon_a": "F195108",
+      "taxon_b": "F796027",
+      "selection_sha256": "0000ffc0f6c938eba78494ddc6000608900b91d9ac9050eed3cc61bd028eb13a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001473at2759",
+      "block_length": 10,
+      "taxon_a": "F195108",
+      "taxon_b": "F796027",
+      "selection_sha256": "0000ffc0f6c938eba78494ddc6000608900b91d9ac9050eed3cc61bd028eb13a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001473at2759",
+      "block_length": 30,
+      "taxon_a": "F195108",
+      "taxon_b": "F796027",
+      "selection_sha256": "0000ffc0f6c938eba78494ddc6000608900b91d9ac9050eed3cc61bd028eb13a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001660at2759",
+      "block_length": 1,
+      "taxon_a": "F1209916",
+      "taxon_b": "F209136",
+      "selection_sha256": "00066c6a8da2847b147276aff2f2ddef8c82b49821e65b4e351409d99137eb6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001660at2759",
+      "block_length": 10,
+      "taxon_a": "F1209916",
+      "taxon_b": "F209136",
+      "selection_sha256": "00066c6a8da2847b147276aff2f2ddef8c82b49821e65b4e351409d99137eb6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001660at2759",
+      "block_length": 30,
+      "taxon_a": "F1209916",
+      "taxon_b": "F209136",
+      "selection_sha256": "00066c6a8da2847b147276aff2f2ddef8c82b49821e65b4e351409d99137eb6b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001734at2759",
+      "block_length": 1,
+      "taxon_a": "F34406",
+      "taxon_b": "O133409",
+      "selection_sha256": "0001bf49ff75f44797b174b5d425fafeeddbe2ce9807eca82aaeca5be4b6b05a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001734at2759",
+      "block_length": 10,
+      "taxon_a": "F34406",
+      "taxon_b": "O133409",
+      "selection_sha256": "0001bf49ff75f44797b174b5d425fafeeddbe2ce9807eca82aaeca5be4b6b05a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001734at2759",
+      "block_length": 30,
+      "taxon_a": "F34406",
+      "taxon_b": "O133409",
+      "selection_sha256": "0001bf49ff75f44797b174b5d425fafeeddbe2ce9807eca82aaeca5be4b6b05a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001941at2759",
+      "block_length": 1,
+      "taxon_a": "F109899",
+      "taxon_b": "F122368",
+      "selection_sha256": "002b76f1005457393c16db966cd49805a101e4de5b6085fcaf6833ff5549efb8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001941at2759",
+      "block_length": 10,
+      "taxon_a": "F109899",
+      "taxon_b": "F122368",
+      "selection_sha256": "002b76f1005457393c16db966cd49805a101e4de5b6085fcaf6833ff5549efb8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5001941at2759",
+      "block_length": 30,
+      "taxon_a": "F109899",
+      "taxon_b": "F122368",
+      "selection_sha256": "002b76f1005457393c16db966cd49805a101e4de5b6085fcaf6833ff5549efb8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002334at2759",
+      "block_length": 1,
+      "taxon_a": "F2813651",
+      "taxon_b": "F4927",
+      "selection_sha256": "001290d38555a62ec1125daf716a0fc1d3d210c2c408532b630b3102864bb7ed",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002334at2759",
+      "block_length": 10,
+      "taxon_a": "F2813651",
+      "taxon_b": "F4927",
+      "selection_sha256": "001290d38555a62ec1125daf716a0fc1d3d210c2c408532b630b3102864bb7ed",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002334at2759",
+      "block_length": 30,
+      "taxon_a": "F2813651",
+      "taxon_b": "F4927",
+      "selection_sha256": "001290d38555a62ec1125daf716a0fc1d3d210c2c408532b630b3102864bb7ed",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002573at2759",
+      "block_length": 1,
+      "taxon_a": "F101201",
+      "taxon_b": "F342668",
+      "selection_sha256": "0001f7e67982b703555501754802390d0a80b24bd05d2ad27862ee3374f2e315",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002573at2759",
+      "block_length": 10,
+      "taxon_a": "F101201",
+      "taxon_b": "F342668",
+      "selection_sha256": "0001f7e67982b703555501754802390d0a80b24bd05d2ad27862ee3374f2e315",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5002573at2759",
+      "block_length": 30,
+      "taxon_a": "F101201",
+      "taxon_b": "F342668",
+      "selection_sha256": "0001f7e67982b703555501754802390d0a80b24bd05d2ad27862ee3374f2e315",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003022at2759",
+      "block_length": 1,
+      "taxon_a": "F1504668",
+      "taxon_b": "F5059",
+      "selection_sha256": "00009f37e42526950fe8bd8823afc09d096a99be85503c9f3371b38da388ae95",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003022at2759",
+      "block_length": 10,
+      "taxon_a": "F1504668",
+      "taxon_b": "F5059",
+      "selection_sha256": "00009f37e42526950fe8bd8823afc09d096a99be85503c9f3371b38da388ae95",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003022at2759",
+      "block_length": 30,
+      "taxon_a": "F1504668",
+      "taxon_b": "F5059",
+      "selection_sha256": "00009f37e42526950fe8bd8823afc09d096a99be85503c9f3371b38da388ae95",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003192at2759",
+      "block_length": 1,
+      "taxon_a": "F38799",
+      "taxon_b": "F560253",
+      "selection_sha256": "0004d3dbce13947e4de7a1efb717dd5941e726eac16fb3c68b1f70c74117a742",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003192at2759",
+      "block_length": 10,
+      "taxon_a": "F38799",
+      "taxon_b": "F560253",
+      "selection_sha256": "0004d3dbce13947e4de7a1efb717dd5941e726eac16fb3c68b1f70c74117a742",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003192at2759",
+      "block_length": 30,
+      "taxon_a": "F38799",
+      "taxon_b": "F560253",
+      "selection_sha256": "0004d3dbce13947e4de7a1efb717dd5941e726eac16fb3c68b1f70c74117a742",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003205at2759",
+      "block_length": 1,
+      "taxon_a": "F796027",
+      "taxon_b": "O10228",
+      "selection_sha256": "0219af0231ce95712c35f2ab13a79a87ba13889266eed3a1f0e8c6880f27de78",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003205at2759",
+      "block_length": 10,
+      "taxon_a": "F796027",
+      "taxon_b": "O10228",
+      "selection_sha256": "0219af0231ce95712c35f2ab13a79a87ba13889266eed3a1f0e8c6880f27de78",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003205at2759",
+      "block_length": 30,
+      "taxon_a": "F796027",
+      "taxon_b": "O10228",
+      "selection_sha256": "0219af0231ce95712c35f2ab13a79a87ba13889266eed3a1f0e8c6880f27de78",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003856at2759",
+      "block_length": 1,
+      "taxon_a": "F148305",
+      "taxon_b": "F158046",
+      "selection_sha256": "00043047a4c0d4b73e5ca97b48ee24628ebb62e31e2de14648e2f36404eb5ca3",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003856at2759",
+      "block_length": 10,
+      "taxon_a": "F148305",
+      "taxon_b": "F158046",
+      "selection_sha256": "00043047a4c0d4b73e5ca97b48ee24628ebb62e31e2de14648e2f36404eb5ca3",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003856at2759",
+      "block_length": 30,
+      "taxon_a": "F148305",
+      "taxon_b": "F158046",
+      "selection_sha256": "00043047a4c0d4b73e5ca97b48ee24628ebb62e31e2de14648e2f36404eb5ca3",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003972at2759",
+      "block_length": 1,
+      "taxon_a": "F34406",
+      "taxon_b": "F4932",
+      "selection_sha256": "000a6402cf73b66cbc19346c9d8c7915ed5524fb24d73312cf549f705424760a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003972at2759",
+      "block_length": 10,
+      "taxon_a": "F34406",
+      "taxon_b": "F4932",
+      "selection_sha256": "000a6402cf73b66cbc19346c9d8c7915ed5524fb24d73312cf549f705424760a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5003972at2759",
+      "block_length": 30,
+      "taxon_a": "F34406",
+      "taxon_b": "F4932",
+      "selection_sha256": "000a6402cf73b66cbc19346c9d8c7915ed5524fb24d73312cf549f705424760a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004118at2759",
+      "block_length": 1,
+      "taxon_a": "F158046",
+      "taxon_b": "F63577",
+      "selection_sha256": "0016c1c3a0d2993aba32a9586980cc736395049db72ee0089b4c696494f83c44",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004118at2759",
+      "block_length": 10,
+      "taxon_a": "F158046",
+      "taxon_b": "F63577",
+      "selection_sha256": "0016c1c3a0d2993aba32a9586980cc736395049db72ee0089b4c696494f83c44",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004118at2759",
+      "block_length": 30,
+      "taxon_a": "F158046",
+      "taxon_b": "F63577",
+      "selection_sha256": "0016c1c3a0d2993aba32a9586980cc736395049db72ee0089b4c696494f83c44",
+      "valid_draws": 199
+    },
+    {
+      "marker": "5004265at2759",
+      "block_length": 1,
+      "taxon_a": "F1690608",
+      "taxon_b": "F42068",
+      "selection_sha256": "00038df5e5163282a53bf1580e560e11f8473c3c5a099b4a2c74f82212762324",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004265at2759",
+      "block_length": 10,
+      "taxon_a": "F1690608",
+      "taxon_b": "F42068",
+      "selection_sha256": "00038df5e5163282a53bf1580e560e11f8473c3c5a099b4a2c74f82212762324",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004265at2759",
+      "block_length": 30,
+      "taxon_a": "F1690608",
+      "taxon_b": "F42068",
+      "selection_sha256": "00038df5e5163282a53bf1580e560e11f8473c3c5a099b4a2c74f82212762324",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004327at2759",
+      "block_length": 1,
+      "taxon_a": "F398673",
+      "taxon_b": "F741139",
+      "selection_sha256": "0001ec51f4073bd0632f6586006872a31c27496a692927727802c92b2023c34d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004327at2759",
+      "block_length": 10,
+      "taxon_a": "F398673",
+      "taxon_b": "F741139",
+      "selection_sha256": "0001ec51f4073bd0632f6586006872a31c27496a692927727802c92b2023c34d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004327at2759",
+      "block_length": 30,
+      "taxon_a": "F398673",
+      "taxon_b": "F741139",
+      "selection_sha256": "0001ec51f4073bd0632f6586006872a31c27496a692927727802c92b2023c34d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004391at2759",
+      "block_length": 1,
+      "taxon_a": "F599730",
+      "taxon_b": "F703506",
+      "selection_sha256": "0007e7c4cde283b6ce5aac29616a17813cf4e6985a0b8a8f29c7f4ff371bcd01",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004391at2759",
+      "block_length": 10,
+      "taxon_a": "F599730",
+      "taxon_b": "F703506",
+      "selection_sha256": "0007e7c4cde283b6ce5aac29616a17813cf4e6985a0b8a8f29c7f4ff371bcd01",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004391at2759",
+      "block_length": 30,
+      "taxon_a": "F599730",
+      "taxon_b": "F703506",
+      "selection_sha256": "0007e7c4cde283b6ce5aac29616a17813cf4e6985a0b8a8f29c7f4ff371bcd01",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004478at2759",
+      "block_length": 1,
+      "taxon_a": "F1209916",
+      "taxon_b": "F2034170",
+      "selection_sha256": "0015d2874eaa6cf6e8419390a360c630a97719b02f2c471c65c0f52524c99e27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004478at2759",
+      "block_length": 10,
+      "taxon_a": "F1209916",
+      "taxon_b": "F2034170",
+      "selection_sha256": "0015d2874eaa6cf6e8419390a360c630a97719b02f2c471c65c0f52524c99e27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004478at2759",
+      "block_length": 30,
+      "taxon_a": "F1209916",
+      "taxon_b": "F2034170",
+      "selection_sha256": "0015d2874eaa6cf6e8419390a360c630a97719b02f2c471c65c0f52524c99e27",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004599at2759",
+      "block_length": 1,
+      "taxon_a": "F1052096",
+      "taxon_b": "F1220207",
+      "selection_sha256": "000a76d3b9bd6d9e1b7b8004229876b79f4e6bf2e64cbfefe8182a7b08d6c279",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004599at2759",
+      "block_length": 10,
+      "taxon_a": "F1052096",
+      "taxon_b": "F1220207",
+      "selection_sha256": "000a76d3b9bd6d9e1b7b8004229876b79f4e6bf2e64cbfefe8182a7b08d6c279",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5004599at2759",
+      "block_length": 30,
+      "taxon_a": "F1052096",
+      "taxon_b": "F1220207",
+      "selection_sha256": "000a76d3b9bd6d9e1b7b8004229876b79f4e6bf2e64cbfefe8182a7b08d6c279",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005010at2759",
+      "block_length": 1,
+      "taxon_a": "F1341166",
+      "taxon_b": "F5127",
+      "selection_sha256": "0009f020f47e4938c74d726f0833b7cc69030ba2f69c9bc2d72675fdb1bdceae",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005010at2759",
+      "block_length": 10,
+      "taxon_a": "F1341166",
+      "taxon_b": "F5127",
+      "selection_sha256": "0009f020f47e4938c74d726f0833b7cc69030ba2f69c9bc2d72675fdb1bdceae",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005010at2759",
+      "block_length": 30,
+      "taxon_a": "F1341166",
+      "taxon_b": "F5127",
+      "selection_sha256": "0009f020f47e4938c74d726f0833b7cc69030ba2f69c9bc2d72675fdb1bdceae",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005174at2759",
+      "block_length": 1,
+      "taxon_a": "F177197",
+      "taxon_b": "F5544",
+      "selection_sha256": "00074702938a8d7a1eb4b7e5b7bd37b13725b39a8e48b1bfff588395a4f98dda",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005174at2759",
+      "block_length": 10,
+      "taxon_a": "F177197",
+      "taxon_b": "F5544",
+      "selection_sha256": "00074702938a8d7a1eb4b7e5b7bd37b13725b39a8e48b1bfff588395a4f98dda",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005174at2759",
+      "block_length": 30,
+      "taxon_a": "F177197",
+      "taxon_b": "F5544",
+      "selection_sha256": "00074702938a8d7a1eb4b7e5b7bd37b13725b39a8e48b1bfff588395a4f98dda",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005196at2759",
+      "block_length": 1,
+      "taxon_a": "F390894",
+      "taxon_b": "F40559",
+      "selection_sha256": "00002861df92b1019984c6cdb34ec8e811161036756da29a9781d64ee398852a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005196at2759",
+      "block_length": 10,
+      "taxon_a": "F390894",
+      "taxon_b": "F40559",
+      "selection_sha256": "00002861df92b1019984c6cdb34ec8e811161036756da29a9781d64ee398852a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005196at2759",
+      "block_length": 30,
+      "taxon_a": "F390894",
+      "taxon_b": "F40559",
+      "selection_sha256": "00002861df92b1019984c6cdb34ec8e811161036756da29a9781d64ee398852a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005215at2759",
+      "block_length": 1,
+      "taxon_a": "F101201",
+      "taxon_b": "F4754",
+      "selection_sha256": "00000aa3e9d9d270f6a28afd38126f50b33d82547deaa75e5b08930aa5f3016c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005215at2759",
+      "block_length": 10,
+      "taxon_a": "F101201",
+      "taxon_b": "F4754",
+      "selection_sha256": "00000aa3e9d9d270f6a28afd38126f50b33d82547deaa75e5b08930aa5f3016c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005215at2759",
+      "block_length": 30,
+      "taxon_a": "F101201",
+      "taxon_b": "F4754",
+      "selection_sha256": "00000aa3e9d9d270f6a28afd38126f50b33d82547deaa75e5b08930aa5f3016c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005217at2759",
+      "block_length": 1,
+      "taxon_a": "F104341",
+      "taxon_b": "F563466",
+      "selection_sha256": "0018b892e950431e6b3cf8db9db6f421af47f29fa9b982f5f06d9dabc59f5bbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005217at2759",
+      "block_length": 10,
+      "taxon_a": "F104341",
+      "taxon_b": "F563466",
+      "selection_sha256": "0018b892e950431e6b3cf8db9db6f421af47f29fa9b982f5f06d9dabc59f5bbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005217at2759",
+      "block_length": 30,
+      "taxon_a": "F104341",
+      "taxon_b": "F563466",
+      "selection_sha256": "0018b892e950431e6b3cf8db9db6f421af47f29fa9b982f5f06d9dabc59f5bbf",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005274at2759",
+      "block_length": 1,
+      "taxon_a": "F1708541",
+      "taxon_b": "F390894",
+      "selection_sha256": "00143eda4b2fdfe3b996a0f21035f1085441608d877f03915a4ff7746073722e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005274at2759",
+      "block_length": 10,
+      "taxon_a": "F1708541",
+      "taxon_b": "F390894",
+      "selection_sha256": "00143eda4b2fdfe3b996a0f21035f1085441608d877f03915a4ff7746073722e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005274at2759",
+      "block_length": 30,
+      "taxon_a": "F1708541",
+      "taxon_b": "F390894",
+      "selection_sha256": "00143eda4b2fdfe3b996a0f21035f1085441608d877f03915a4ff7746073722e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005697at2759",
+      "block_length": 1,
+      "taxon_a": "F1209916",
+      "taxon_b": "F5127",
+      "selection_sha256": "000c2fc6c0015621b69eb5ddee1ce8946734a1734951f133a45889965db5605a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005697at2759",
+      "block_length": 10,
+      "taxon_a": "F1209916",
+      "taxon_b": "F5127",
+      "selection_sha256": "000c2fc6c0015621b69eb5ddee1ce8946734a1734951f133a45889965db5605a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005697at2759",
+      "block_length": 30,
+      "taxon_a": "F1209916",
+      "taxon_b": "F5127",
+      "selection_sha256": "000c2fc6c0015621b69eb5ddee1ce8946734a1734951f133a45889965db5605a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005750at2759",
+      "block_length": 1,
+      "taxon_a": "F13291",
+      "taxon_b": "F2486360",
+      "selection_sha256": "0008a66399e4c016dbff480945f48a2a2b9904bf175287d258e1c7edc87f76fc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005750at2759",
+      "block_length": 10,
+      "taxon_a": "F13291",
+      "taxon_b": "F2486360",
+      "selection_sha256": "0008a66399e4c016dbff480945f48a2a2b9904bf175287d258e1c7edc87f76fc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005750at2759",
+      "block_length": 30,
+      "taxon_a": "F13291",
+      "taxon_b": "F2486360",
+      "selection_sha256": "0008a66399e4c016dbff480945f48a2a2b9904bf175287d258e1c7edc87f76fc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005892at2759",
+      "block_length": 1,
+      "taxon_a": "F114524",
+      "taxon_b": "F4909",
+      "selection_sha256": "000b4cf3d57caa1159b401fe47c140375a8c2f5a1ce9afda069618cf75e2da10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005892at2759",
+      "block_length": 10,
+      "taxon_a": "F114524",
+      "taxon_b": "F4909",
+      "selection_sha256": "000b4cf3d57caa1159b401fe47c140375a8c2f5a1ce9afda069618cf75e2da10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5005892at2759",
+      "block_length": 30,
+      "taxon_a": "F114524",
+      "taxon_b": "F4909",
+      "selection_sha256": "000b4cf3d57caa1159b401fe47c140375a8c2f5a1ce9afda069618cf75e2da10",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006326at2759",
+      "block_length": 1,
+      "taxon_a": "F148305",
+      "taxon_b": "F40559",
+      "selection_sha256": "0002ab7a66abfae0e4385b4b77830c987098e2f782639e07bc23be0c2371416a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006326at2759",
+      "block_length": 10,
+      "taxon_a": "F148305",
+      "taxon_b": "F40559",
+      "selection_sha256": "0002ab7a66abfae0e4385b4b77830c987098e2f782639e07bc23be0c2371416a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006326at2759",
+      "block_length": 30,
+      "taxon_a": "F148305",
+      "taxon_b": "F40559",
+      "selection_sha256": "0002ab7a66abfae0e4385b4b77830c987098e2f782639e07bc23be0c2371416a",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006412at2759",
+      "block_length": 1,
+      "taxon_a": "F339359",
+      "taxon_b": "F560253",
+      "selection_sha256": "0009521dacc4da78089f0e4aeb50fdbcf686396fde0d1d4763791fa7219f2ee1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006412at2759",
+      "block_length": 10,
+      "taxon_a": "F339359",
+      "taxon_b": "F560253",
+      "selection_sha256": "0009521dacc4da78089f0e4aeb50fdbcf686396fde0d1d4763791fa7219f2ee1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5006412at2759",
+      "block_length": 30,
+      "taxon_a": "F339359",
+      "taxon_b": "F560253",
+      "selection_sha256": "0009521dacc4da78089f0e4aeb50fdbcf686396fde0d1d4763791fa7219f2ee1",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5011777at2759",
+      "block_length": 1,
+      "taxon_a": "F2034170",
+      "taxon_b": "F236234",
+      "selection_sha256": "000442200ccfab529cf14a2c9184bb69a6bd5f84728aac491a753b30b1df331f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5011777at2759",
+      "block_length": 10,
+      "taxon_a": "F2034170",
+      "taxon_b": "F236234",
+      "selection_sha256": "000442200ccfab529cf14a2c9184bb69a6bd5f84728aac491a753b30b1df331f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5011777at2759",
+      "block_length": 30,
+      "taxon_a": "F2034170",
+      "taxon_b": "F236234",
+      "selection_sha256": "000442200ccfab529cf14a2c9184bb69a6bd5f84728aac491a753b30b1df331f",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013042at2759",
+      "block_length": 1,
+      "taxon_a": "F1042133",
+      "taxon_b": "F5101",
+      "selection_sha256": "0008ce4ee6e48904ff792eb44feb18a3ff6f07bd3d773513248e01028ed4ad6d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013042at2759",
+      "block_length": 10,
+      "taxon_a": "F1042133",
+      "taxon_b": "F5101",
+      "selection_sha256": "0008ce4ee6e48904ff792eb44feb18a3ff6f07bd3d773513248e01028ed4ad6d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013042at2759",
+      "block_length": 30,
+      "taxon_a": "F1042133",
+      "taxon_b": "F5101",
+      "selection_sha256": "0008ce4ee6e48904ff792eb44feb18a3ff6f07bd3d773513248e01028ed4ad6d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013067at2759",
+      "block_length": 1,
+      "taxon_a": "F2486360",
+      "taxon_b": "F61273",
+      "selection_sha256": "001521ad80adf10ec66a7272bc7d97c8bae1ecae62c7329c6f1fc7155aa5cbdc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013067at2759",
+      "block_length": 10,
+      "taxon_a": "F2486360",
+      "taxon_b": "F61273",
+      "selection_sha256": "001521ad80adf10ec66a7272bc7d97c8bae1ecae62c7329c6f1fc7155aa5cbdc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013067at2759",
+      "block_length": 30,
+      "taxon_a": "F2486360",
+      "taxon_b": "F61273",
+      "selection_sha256": "001521ad80adf10ec66a7272bc7d97c8bae1ecae62c7329c6f1fc7155aa5cbdc",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013259at2759",
+      "block_length": 1,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5544",
+      "selection_sha256": "00078c0a87201e5daa5c622b368e882a2476929fa14b8f355629ebb1c243525c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013259at2759",
+      "block_length": 10,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5544",
+      "selection_sha256": "00078c0a87201e5daa5c622b368e882a2476929fa14b8f355629ebb1c243525c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013259at2759",
+      "block_length": 30,
+      "taxon_a": "F2606893",
+      "taxon_b": "F5544",
+      "selection_sha256": "00078c0a87201e5daa5c622b368e882a2476929fa14b8f355629ebb1c243525c",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013539at2759",
+      "block_length": 1,
+      "taxon_a": "F1005962",
+      "taxon_b": "F4903",
+      "selection_sha256": "00127b50462963be086884185f9bf6c3d7517df28e975db8bfbceb8bd7a46b84",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013539at2759",
+      "block_length": 10,
+      "taxon_a": "F1005962",
+      "taxon_b": "F4903",
+      "selection_sha256": "00127b50462963be086884185f9bf6c3d7517df28e975db8bfbceb8bd7a46b84",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013539at2759",
+      "block_length": 30,
+      "taxon_a": "F1005962",
+      "taxon_b": "F4903",
+      "selection_sha256": "00127b50462963be086884185f9bf6c3d7517df28e975db8bfbceb8bd7a46b84",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013726at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F5059",
+      "selection_sha256": "00042ed4ea45842d1fca377c4f37a479c4d1987d96c9130155f29608df54ca75",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013726at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F5059",
+      "selection_sha256": "00042ed4ea45842d1fca377c4f37a479c4d1987d96c9130155f29608df54ca75",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013726at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F5059",
+      "selection_sha256": "00042ed4ea45842d1fca377c4f37a479c4d1987d96c9130155f29608df54ca75",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013738at2759",
+      "block_length": 1,
+      "taxon_a": "F34406",
+      "taxon_b": "F4918",
+      "selection_sha256": "00036722294591397434a65cb490adac74f3ed9e29ae5339d0969165d5efe198",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013738at2759",
+      "block_length": 10,
+      "taxon_a": "F34406",
+      "taxon_b": "F4918",
+      "selection_sha256": "00036722294591397434a65cb490adac74f3ed9e29ae5339d0969165d5efe198",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013738at2759",
+      "block_length": 30,
+      "taxon_a": "F34406",
+      "taxon_b": "F4918",
+      "selection_sha256": "00036722294591397434a65cb490adac74f3ed9e29ae5339d0969165d5efe198",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013992at2759",
+      "block_length": 1,
+      "taxon_a": "F263815",
+      "taxon_b": "F574789",
+      "selection_sha256": "0001991496d63db4b900abf9e7a7ba9412524f935502cfb5428dc2ea9490f117",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013992at2759",
+      "block_length": 10,
+      "taxon_a": "F263815",
+      "taxon_b": "F574789",
+      "selection_sha256": "0001991496d63db4b900abf9e7a7ba9412524f935502cfb5428dc2ea9490f117",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5013992at2759",
+      "block_length": 30,
+      "taxon_a": "F263815",
+      "taxon_b": "F574789",
+      "selection_sha256": "0001991496d63db4b900abf9e7a7ba9412524f935502cfb5428dc2ea9490f117",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5014007at2759",
+      "block_length": 1,
+      "taxon_a": "F116794",
+      "taxon_b": "F5127",
+      "selection_sha256": "003a50f9ba5fc593837228daf21f58e20ba27075d7cd76ac42bf4069e4f1dbde",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5014007at2759",
+      "block_length": 10,
+      "taxon_a": "F116794",
+      "taxon_b": "F5127",
+      "selection_sha256": "003a50f9ba5fc593837228daf21f58e20ba27075d7cd76ac42bf4069e4f1dbde",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5014007at2759",
+      "block_length": 30,
+      "taxon_a": "F116794",
+      "taxon_b": "F5127",
+      "selection_sha256": "003a50f9ba5fc593837228daf21f58e20ba27075d7cd76ac42bf4069e4f1dbde",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015403at2759",
+      "block_length": 1,
+      "taxon_a": "F2082308",
+      "taxon_b": "F48691",
+      "selection_sha256": "000e92aab283591fc352b78a53001d1822de043860687e4d55315640aaedc624",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015403at2759",
+      "block_length": 10,
+      "taxon_a": "F2082308",
+      "taxon_b": "F48691",
+      "selection_sha256": "000e92aab283591fc352b78a53001d1822de043860687e4d55315640aaedc624",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015403at2759",
+      "block_length": 30,
+      "taxon_a": "F2082308",
+      "taxon_b": "F48691",
+      "selection_sha256": "000e92aab283591fc352b78a53001d1822de043860687e4d55315640aaedc624",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015647at2759",
+      "block_length": 1,
+      "taxon_a": "F177197",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000b8f386fb623ba0f768ae2f81ad09ea35d0d0edba9183ef3a7d984615563e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015647at2759",
+      "block_length": 10,
+      "taxon_a": "F177197",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000b8f386fb623ba0f768ae2f81ad09ea35d0d0edba9183ef3a7d984615563e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015647at2759",
+      "block_length": 30,
+      "taxon_a": "F177197",
+      "taxon_b": "F58853",
+      "selection_sha256": "0000b8f386fb623ba0f768ae2f81ad09ea35d0d0edba9183ef3a7d984615563e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015712at2759",
+      "block_length": 1,
+      "taxon_a": "F5059",
+      "taxon_b": "F5518",
+      "selection_sha256": "000bf0ac1895649398ec02ceb221059824ae1935cf540ce9837d8ff6e12af971",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015712at2759",
+      "block_length": 10,
+      "taxon_a": "F5059",
+      "taxon_b": "F5518",
+      "selection_sha256": "000bf0ac1895649398ec02ceb221059824ae1935cf540ce9837d8ff6e12af971",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015712at2759",
+      "block_length": 30,
+      "taxon_a": "F5059",
+      "taxon_b": "F5518",
+      "selection_sha256": "000bf0ac1895649398ec02ceb221059824ae1935cf540ce9837d8ff6e12af971",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015742at2759",
+      "block_length": 1,
+      "taxon_a": "F173216",
+      "taxon_b": "F393283",
+      "selection_sha256": "00069797bb6ab2dc9903853400ba64c512ca32ec402a56011bc504f4616b44aa",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015742at2759",
+      "block_length": 10,
+      "taxon_a": "F173216",
+      "taxon_b": "F393283",
+      "selection_sha256": "00069797bb6ab2dc9903853400ba64c512ca32ec402a56011bc504f4616b44aa",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015742at2759",
+      "block_length": 30,
+      "taxon_a": "F173216",
+      "taxon_b": "F393283",
+      "selection_sha256": "00069797bb6ab2dc9903853400ba64c512ca32ec402a56011bc504f4616b44aa",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015876at2759",
+      "block_length": 1,
+      "taxon_a": "F226899",
+      "taxon_b": "F5364",
+      "selection_sha256": "0001aa6a7a38edd7d2848e26e57aabc096a5bb9a9d027da7c50d5877f796a86b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015876at2759",
+      "block_length": 10,
+      "taxon_a": "F226899",
+      "taxon_b": "F5364",
+      "selection_sha256": "0001aa6a7a38edd7d2848e26e57aabc096a5bb9a9d027da7c50d5877f796a86b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5015876at2759",
+      "block_length": 30,
+      "taxon_a": "F226899",
+      "taxon_b": "F5364",
+      "selection_sha256": "0001aa6a7a38edd7d2848e26e57aabc096a5bb9a9d027da7c50d5877f796a86b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5017019at2759",
+      "block_length": 1,
+      "taxon_a": "F293227",
+      "taxon_b": "F462254",
+      "selection_sha256": "001a1cc7c2991e488439468889f24f8c6baf18e3970b7b8d97cb814103f226fd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5017019at2759",
+      "block_length": 10,
+      "taxon_a": "F293227",
+      "taxon_b": "F462254",
+      "selection_sha256": "001a1cc7c2991e488439468889f24f8c6baf18e3970b7b8d97cb814103f226fd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5017019at2759",
+      "block_length": 30,
+      "taxon_a": "F293227",
+      "taxon_b": "F462254",
+      "selection_sha256": "001a1cc7c2991e488439468889f24f8c6baf18e3970b7b8d97cb814103f226fd",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5018803at2759",
+      "block_length": 1,
+      "taxon_a": "F145971",
+      "taxon_b": "F36779",
+      "selection_sha256": "0002e76bad76785e39fcb269dcf84456d623e76e80e719c428b1f114486d8078",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5018803at2759",
+      "block_length": 10,
+      "taxon_a": "F145971",
+      "taxon_b": "F36779",
+      "selection_sha256": "0002e76bad76785e39fcb269dcf84456d623e76e80e719c428b1f114486d8078",
+      "valid_draws": 200
+    },
+    {
+      "marker": "5018803at2759",
+      "block_length": 30,
+      "taxon_a": "F145971",
+      "taxon_b": "F36779",
+      "selection_sha256": "0002e76bad76785e39fcb269dcf84456d623e76e80e719c428b1f114486d8078",
+      "valid_draws": 200
+    },
+    {
+      "marker": "529759at2759",
+      "block_length": 1,
+      "taxon_a": "F120017",
+      "taxon_b": "F703506",
+      "selection_sha256": "000567683c15a68fd4600397708c5d149cadf219b520a5533d619de063e79ac7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "529759at2759",
+      "block_length": 10,
+      "taxon_a": "F120017",
+      "taxon_b": "F703506",
+      "selection_sha256": "000567683c15a68fd4600397708c5d149cadf219b520a5533d619de063e79ac7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "529759at2759",
+      "block_length": 30,
+      "taxon_a": "F120017",
+      "taxon_b": "F703506",
+      "selection_sha256": "000567683c15a68fd4600397708c5d149cadf219b520a5533d619de063e79ac7",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530014at2759",
+      "block_length": 1,
+      "taxon_a": "F182096",
+      "taxon_b": "F209136",
+      "selection_sha256": "00025912b8032b331e6e999ab75f17047b44367e8085a98ffbe661661c3d366d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530014at2759",
+      "block_length": 10,
+      "taxon_a": "F182096",
+      "taxon_b": "F209136",
+      "selection_sha256": "00025912b8032b331e6e999ab75f17047b44367e8085a98ffbe661661c3d366d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530014at2759",
+      "block_length": 30,
+      "taxon_a": "F182096",
+      "taxon_b": "F209136",
+      "selection_sha256": "00025912b8032b331e6e999ab75f17047b44367e8085a98ffbe661661c3d366d",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530740at2759",
+      "block_length": 1,
+      "taxon_a": "F2082308",
+      "taxon_b": "F574656",
+      "selection_sha256": "00149dc4dd063d13252d5a2613a0521a44a7c8be3aada9b88561dcb9bfc47fd2",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530740at2759",
+      "block_length": 10,
+      "taxon_a": "F2082308",
+      "taxon_b": "F574656",
+      "selection_sha256": "00149dc4dd063d13252d5a2613a0521a44a7c8be3aada9b88561dcb9bfc47fd2",
+      "valid_draws": 200
+    },
+    {
+      "marker": "530740at2759",
+      "block_length": 30,
+      "taxon_a": "F2082308",
+      "taxon_b": "F574656",
+      "selection_sha256": "00149dc4dd063d13252d5a2613a0521a44a7c8be3aada9b88561dcb9bfc47fd2",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538728at2759",
+      "block_length": 1,
+      "taxon_a": "F332112",
+      "taxon_b": "F5101",
+      "selection_sha256": "00112c460f7ed7c3ec496128724fccb0e2213d4ce151f9f165f33a087440e35b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538728at2759",
+      "block_length": 10,
+      "taxon_a": "F332112",
+      "taxon_b": "F5101",
+      "selection_sha256": "00112c460f7ed7c3ec496128724fccb0e2213d4ce151f9f165f33a087440e35b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538728at2759",
+      "block_length": 30,
+      "taxon_a": "F332112",
+      "taxon_b": "F5101",
+      "selection_sha256": "00112c460f7ed7c3ec496128724fccb0e2213d4ce151f9f165f33a087440e35b",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538952at2759",
+      "block_length": 1,
+      "taxon_a": "F4932",
+      "taxon_b": "F741139",
+      "selection_sha256": "0002a7b413e1cde9aa8eac0eb50fe6371e07f4e94f9af5098eb0fa3d0e84dcc4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538952at2759",
+      "block_length": 10,
+      "taxon_a": "F4932",
+      "taxon_b": "F741139",
+      "selection_sha256": "0002a7b413e1cde9aa8eac0eb50fe6371e07f4e94f9af5098eb0fa3d0e84dcc4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "538952at2759",
+      "block_length": 30,
+      "taxon_a": "F4932",
+      "taxon_b": "F741139",
+      "selection_sha256": "0002a7b413e1cde9aa8eac0eb50fe6371e07f4e94f9af5098eb0fa3d0e84dcc4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "539632at2759",
+      "block_length": 1,
+      "taxon_a": "F1042133",
+      "taxon_b": "F796027",
+      "selection_sha256": "00006fc2f5e99df6d786927191cf22720d2cc528a385846e49070c59f9c30245",
+      "valid_draws": 200
+    },
+    {
+      "marker": "539632at2759",
+      "block_length": 10,
+      "taxon_a": "F1042133",
+      "taxon_b": "F796027",
+      "selection_sha256": "00006fc2f5e99df6d786927191cf22720d2cc528a385846e49070c59f9c30245",
+      "valid_draws": 200
+    },
+    {
+      "marker": "539632at2759",
+      "block_length": 30,
+      "taxon_a": "F1042133",
+      "taxon_b": "F796027",
+      "selection_sha256": "00006fc2f5e99df6d786927191cf22720d2cc528a385846e49070c59f9c30245",
+      "valid_draws": 200
+    },
+    {
+      "marker": "540946at2759",
+      "block_length": 1,
+      "taxon_a": "F2606893",
+      "taxon_b": "F741139",
+      "selection_sha256": "000b919763c2797705fff14b6ded53f6e5ce47f8383f97e77ae857c62b859f33",
+      "valid_draws": 200
+    },
+    {
+      "marker": "540946at2759",
+      "block_length": 10,
+      "taxon_a": "F2606893",
+      "taxon_b": "F741139",
+      "selection_sha256": "000b919763c2797705fff14b6ded53f6e5ce47f8383f97e77ae857c62b859f33",
+      "valid_draws": 200
+    },
+    {
+      "marker": "540946at2759",
+      "block_length": 30,
+      "taxon_a": "F2606893",
+      "taxon_b": "F741139",
+      "selection_sha256": "000b919763c2797705fff14b6ded53f6e5ce47f8383f97e77ae857c62b859f33",
+      "valid_draws": 200
+    },
+    {
+      "marker": "541070at2759",
+      "block_length": 1,
+      "taxon_a": "F147573",
+      "taxon_b": "F34406",
+      "selection_sha256": "000a21bb9cde6563eb2e800590a0cecc3752fc5d0d71adc5f6482a33bd2ba7b8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "541070at2759",
+      "block_length": 10,
+      "taxon_a": "F147573",
+      "taxon_b": "F34406",
+      "selection_sha256": "000a21bb9cde6563eb2e800590a0cecc3752fc5d0d71adc5f6482a33bd2ba7b8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "541070at2759",
+      "block_length": 30,
+      "taxon_a": "F147573",
+      "taxon_b": "F34406",
+      "selection_sha256": "000a21bb9cde6563eb2e800590a0cecc3752fc5d0d71adc5f6482a33bd2ba7b8",
+      "valid_draws": 200
+    },
+    {
+      "marker": "554735at2759",
+      "block_length": 1,
+      "taxon_a": "F39416",
+      "taxon_b": "F599730",
+      "selection_sha256": "00075696c6b012a6e7a8d9ecf29dd52e2eade05a8ca367fe234c05df91ddaa83",
+      "valid_draws": 200
+    },
+    {
+      "marker": "554735at2759",
+      "block_length": 10,
+      "taxon_a": "F39416",
+      "taxon_b": "F599730",
+      "selection_sha256": "00075696c6b012a6e7a8d9ecf29dd52e2eade05a8ca367fe234c05df91ddaa83",
+      "valid_draws": 200
+    },
+    {
+      "marker": "554735at2759",
+      "block_length": 30,
+      "taxon_a": "F39416",
+      "taxon_b": "F599730",
+      "selection_sha256": "00075696c6b012a6e7a8d9ecf29dd52e2eade05a8ca367fe234c05df91ddaa83",
+      "valid_draws": 200
+    },
+    {
+      "marker": "649304at2759",
+      "block_length": 1,
+      "taxon_a": "F398673",
+      "taxon_b": "F796027",
+      "selection_sha256": "0005645a89b88d767c1c596d02453dd46b4f4c594ab324116d69abf17c00e8f4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "649304at2759",
+      "block_length": 10,
+      "taxon_a": "F398673",
+      "taxon_b": "F796027",
+      "selection_sha256": "0005645a89b88d767c1c596d02453dd46b4f4c594ab324116d69abf17c00e8f4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "649304at2759",
+      "block_length": 30,
+      "taxon_a": "F398673",
+      "taxon_b": "F796027",
+      "selection_sha256": "0005645a89b88d767c1c596d02453dd46b4f4c594ab324116d69abf17c00e8f4",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707076at2759",
+      "block_length": 1,
+      "taxon_a": "F2034170",
+      "taxon_b": "F5507",
+      "selection_sha256": "0012dd60ab8d80339920090f40b9c8815da6e048c9c57a3c0a1d3b3ae945217e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707076at2759",
+      "block_length": 10,
+      "taxon_a": "F2034170",
+      "taxon_b": "F5507",
+      "selection_sha256": "0012dd60ab8d80339920090f40b9c8815da6e048c9c57a3c0a1d3b3ae945217e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707076at2759",
+      "block_length": 30,
+      "taxon_a": "F2034170",
+      "taxon_b": "F5507",
+      "selection_sha256": "0012dd60ab8d80339920090f40b9c8815da6e048c9c57a3c0a1d3b3ae945217e",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707202at2759",
+      "block_length": 1,
+      "taxon_a": "F122368",
+      "taxon_b": "F4927",
+      "selection_sha256": "000af3785f5fa5a8a76d116a2393c9d547081e053174fe468caaae2327e6ffcb",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707202at2759",
+      "block_length": 10,
+      "taxon_a": "F122368",
+      "taxon_b": "F4927",
+      "selection_sha256": "000af3785f5fa5a8a76d116a2393c9d547081e053174fe468caaae2327e6ffcb",
+      "valid_draws": 200
+    },
+    {
+      "marker": "707202at2759",
+      "block_length": 30,
+      "taxon_a": "F122368",
+      "taxon_b": "F4927",
+      "selection_sha256": "000af3785f5fa5a8a76d116a2393c9d547081e053174fe468caaae2327e6ffcb",
+      "valid_draws": 200
+    },
+    {
+      "marker": "727964at2759",
+      "block_length": 1,
+      "taxon_a": "F147573",
+      "taxon_b": "F1690608",
+      "selection_sha256": "0007e6f05e76cf77f237fa1d984d1dd994db268bf759ccc4c982ce3189222648",
+      "valid_draws": 200
+    },
+    {
+      "marker": "727964at2759",
+      "block_length": 10,
+      "taxon_a": "F147573",
+      "taxon_b": "F1690608",
+      "selection_sha256": "0007e6f05e76cf77f237fa1d984d1dd994db268bf759ccc4c982ce3189222648",
+      "valid_draws": 200
+    },
+    {
+      "marker": "727964at2759",
+      "block_length": 30,
+      "taxon_a": "F147573",
+      "taxon_b": "F1690608",
+      "selection_sha256": "0007e6f05e76cf77f237fa1d984d1dd994db268bf759ccc4c982ce3189222648",
+      "valid_draws": 198
+    },
+    {
+      "marker": "730114at2759",
+      "block_length": 1,
+      "taxon_a": "F1052096",
+      "taxon_b": "F177199",
+      "selection_sha256": "0013029e18191369302807dd0d8f5371f90bc105036f24175a885dfc2e2844f9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "730114at2759",
+      "block_length": 10,
+      "taxon_a": "F1052096",
+      "taxon_b": "F177199",
+      "selection_sha256": "0013029e18191369302807dd0d8f5371f90bc105036f24175a885dfc2e2844f9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "730114at2759",
+      "block_length": 30,
+      "taxon_a": "F1052096",
+      "taxon_b": "F177199",
+      "selection_sha256": "0013029e18191369302807dd0d8f5371f90bc105036f24175a885dfc2e2844f9",
+      "valid_draws": 200
+    },
+    {
+      "marker": "760428at2759",
+      "block_length": 1,
+      "taxon_a": "F1052096",
+      "taxon_b": "F89243",
+      "selection_sha256": "00112139ac991598a611622fa011d60b5af606d7ee9d7cbcc071474561aabe23",
+      "valid_draws": 200
+    },
+    {
+      "marker": "760428at2759",
+      "block_length": 10,
+      "taxon_a": "F1052096",
+      "taxon_b": "F89243",
+      "selection_sha256": "00112139ac991598a611622fa011d60b5af606d7ee9d7cbcc071474561aabe23",
+      "valid_draws": 200
+    },
+    {
+      "marker": "760428at2759",
+      "block_length": 30,
+      "taxon_a": "F1052096",
+      "taxon_b": "F89243",
+      "selection_sha256": "00112139ac991598a611622fa011d60b5af606d7ee9d7cbcc071474561aabe23",
+      "valid_draws": 200
+    },
+    {
+      "marker": "776280at2759",
+      "block_length": 1,
+      "taxon_a": "F4918",
+      "taxon_b": "F705562",
+      "selection_sha256": "0000c2ad680d7766bb7327bb5f64202305e1eaa9974182e6ff82657d82823316",
+      "valid_draws": 200
+    },
+    {
+      "marker": "776280at2759",
+      "block_length": 10,
+      "taxon_a": "F4918",
+      "taxon_b": "F705562",
+      "selection_sha256": "0000c2ad680d7766bb7327bb5f64202305e1eaa9974182e6ff82657d82823316",
+      "valid_draws": 200
+    },
+    {
+      "marker": "776280at2759",
+      "block_length": 30,
+      "taxon_a": "F4918",
+      "taxon_b": "F705562",
+      "selection_sha256": "0000c2ad680d7766bb7327bb5f64202305e1eaa9974182e6ff82657d82823316",
+      "valid_draws": 198
+    },
+    {
+      "marker": "801816at2759",
+      "block_length": 1,
+      "taxon_a": "F41990",
+      "taxon_b": "F706196",
+      "selection_sha256": "0005950494db2ce93e893520986a950b21736bbe3123b2079691dd15ac6473da",
+      "valid_draws": 200
+    },
+    {
+      "marker": "801816at2759",
+      "block_length": 10,
+      "taxon_a": "F41990",
+      "taxon_b": "F706196",
+      "selection_sha256": "0005950494db2ce93e893520986a950b21736bbe3123b2079691dd15ac6473da",
+      "valid_draws": 200
+    },
+    {
+      "marker": "801816at2759",
+      "block_length": 30,
+      "taxon_a": "F41990",
+      "taxon_b": "F706196",
+      "selection_sha256": "0005950494db2ce93e893520986a950b21736bbe3123b2079691dd15ac6473da",
+      "valid_draws": 200
+    }
+  ]
+}
