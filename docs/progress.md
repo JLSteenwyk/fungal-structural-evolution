@@ -2928,3 +2928,7 @@ Completed and visually reviewed the 79-control, six-panel benchmark figure, reta
 ### September 16: additional full-proteome hit annotation in production
 
 Pinned all 52 completed Pfam chunks (6,498,460 hits) and launched streaming annotation across the additional 5,654,720 query sequences. The original four HMMER workers remain live on subsequent chunks. At the checkpoint, 18 annotation shards totaling 2,472,034 hits had completed; the full snapshot remains in progress. An independently implemented raw-field readback is queued on the exact annotation producer identity. Resource plans, launch identities and parsers are versioned. No full-proteome architecture, overlap resolution or domain-absence claims are implied.
+
+### September 16: 6.5-million-hit annotation snapshot independently checked
+
+Completed streaming annotation and independent raw-field readback for all 52 pinned chunks: 6,498,460 hits. Every row retained source identity/order, coordinates, scores, E-values, posterior accuracy and HMM coverage. Pfam descriptive metadata remains from the pinned parser and was not independently reparsed. The remaining 12 search chunks are still pending. Installed and verified a live completion service to annotate/read back those chunks after successful raw-search completion and assemble a disjoint full64 catalog. Synthetic catalog gates reject missing, duplicate and modified shards. This completes the current annotation snapshot, not the entire full-proteome annotation, marker-partition merge, architecture or evolutionary analysis.

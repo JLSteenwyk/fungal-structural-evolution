@@ -1,0 +1,53 @@
+{
+  "producers": [
+    {
+      "pid": 40928,
+      "created": 1789565522.49,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_domains.py",
+        "--output",
+        "results/domains/full-search-v1"
+      ]
+    },
+    {
+      "pid": 323304,
+      "created": 1789575344.43,
+      "command": [
+        "python",
+        "-u",
+        "-"
+      ]
+    }
+  ],
+  "controller_output": "results/domains/full-annotation-completion-controller-v1",
+  "plan_template": "metadata/full_pfam_annotation_snapshot_plan.json",
+  "initial_snapshot": "results/domains/full-annotation-snapshot-v1",
+  "initial_readback": "results/domains/full-annotation-readback-v1",
+  "remaining_snapshot": "results/domains/full-annotation-remaining-v1",
+  "remaining_readback": "results/domains/full-annotation-remaining-readback-v1",
+  "catalog_output": "results/domains/full-annotation-catalog-v1",
+  "cpu_affinity": [
+    28
+  ],
+  "resources": {
+    "memory_allowance_gib": 8,
+    "service_memory_limit_gib": 16,
+    "output_allowance_gib": 10,
+    "planning_hours_after_search": [
+      0.1,
+      9
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "interpretation": "Wait for exact raw-search and initial-readback producers; require successful prerequisites, annotate remaining disjoint chunks, independently read back, catalog all64. No architecture/absence claims.",
+  "pins": {
+    "scripts/advance_full_pfam_annotation.py": "299d2b45ca1b1d1fa2b67776ed3cf7bda08bd14b51b8cd7152ea30e311c865d9",
+    "scripts/combine_full_pfam_annotation_snapshots.py": "0075c4e51894548173ebe0d224f608a7d58d1b73cc03344741c1b5cfbaa70711",
+    "scripts/annotate_completed_full_pfam_chunks.py": "c61fc7295c794f159a4a49fa35aa7030a4b738b02350ad2c8a08c91fc536beda",
+    "scripts/readback_full_pfam_annotation_chunks.py": "e0d381f8eac824bde21e3f7ed34ccf394e50effc6eed4d2c7a0429f7db621b2e",
+    "scripts/summarize_marker_domains.py": "8384e0099e55ad2cdc1a318951aece53ee8ed179cab510f5a2e05ee7a64d6cfb",
+    "scripts/prepare_pfam.py": "5de930c97989900c2287af5878e3de219a648a7f52b60e6e1f0b8ba8c7e12559",
+    "metadata/full_pfam_annotation_snapshot_plan.json": "f9acea1f719276a5d92ce9779174eeb5aa95787dc6e07d3096ae448a23a965b8"
+  }
+}
