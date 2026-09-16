@@ -1,0 +1,66 @@
+{
+  "producer": {
+    "pid": 190787,
+    "created": 1789570572.15,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_site_rate_comparison.py",
+      "--config",
+      "metadata/esmfold_combined_revised_rate_controller_config.json"
+    ]
+  },
+  "producer_receipt": "results/phylogeny/site-rate-comparison-controller-esmfold-combined-revised-v1/receipt.json",
+  "producer_config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+  "frame": "results/phylogeny/site-rate-exposure-frame-esmfold-combined-revised-v1",
+  "accessibility": "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1",
+  "markers": 89,
+  "sites": 22205,
+  "fit_template": "metadata/site_coupling_conditional_resource_plan.json",
+  "resampling_template": "metadata/site_coupling_marker_resampling_plan.json",
+  "controller_output": "results/phylogeny/coupling-controller-esmfold-combined-copy-omission-v1",
+  "fit_output": "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1",
+  "resampling_output": "results/phylogeny/site-coupling-resampling-esmfold-combined-copy-omission-v1",
+  "cpu_affinity": [
+    36
+  ],
+  "minimum_available_memory_gib": 32,
+  "minimum_free_disk_gib": 20,
+  "host_memory_limit_gib": 32,
+  "fit_planning_hours": [
+    0.25,
+    12
+  ],
+  "resampling_planning_hours": [
+    0.25,
+    12
+  ],
+  "paid_resources": false,
+  "basis": "Scale established 72-marker workflow to 89/124 markers and 22205/44719 sites. One CPU thread per cohort; 16 GiB planning allowance per stage, 32 GiB hard service limit. 24 fitted specifications, 48000 bootstrap fits and every marker omitted once. Planning ranges are not runtime guarantees.",
+  "interpretation": "Exploratory conditional site association in the esmfold-combined-revised cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: exclude_reviewed_markers. Marker 4986044at2759 still requires gene-copy reconciliation. Interpret together with the paired full-cohort/omission analysis; not confirmatory single-ortholog inference.",
+  "pins": {
+    "scripts/resample_conditional_site_coupling.py": "9ac79200d600726322db41dafccd22573b8f3a28c20c621eec8e256a231a52bf",
+    "scripts/audit_joint_path_uncertainty.py": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "metadata/esmfold_combined_revised_rate_controller_config.json": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+    "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1/receipt.json": "ecc915a2b9a8ae0f69fbcf9ef6cad1bc93c3657e8bf992a66835135f4c88c87f",
+    "metadata/site_coupling_conditional_resource_plan.json": "7ab8b02aa54eef7a4619ddf8bea9ee9d857f2234d032f98504e0048be781de66",
+    "metadata/site_coupling_marker_resampling_plan.json": "9853da2ec93902702965fedae3555971a0d38ff00cfad6d569e3ba2752a612d4",
+    "scripts/advance_reviewed_expanded_site_coupling.py": "43995c83e0dfe9755f1df940a41d1383b9576bc321940b737797543ba4b70d25",
+    "scripts/fit_reviewed_conditional_site_coupling.py": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+    "results/phylogeny/site-rate-exposure-frame-esmfold-combined-revised-v1/receipt.json": "2a837a64d05017be6c51061d88f38a54a1be19e1f369e21253833b51e12f14f7",
+    "results/phylogeny/site-rate-comparison-controller-esmfold-combined-revised-v1/receipt.json": "e4fbc2768ebd654fd4b8691d6fd817f285a27a3f504c4798ac0ff5f067d2b8b4"
+  },
+  "analysis_markers": 88,
+  "analysis_sites": 21904,
+  "marker_review_policy": {
+    "mode": "exclude_reviewed_markers",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 301
+      }
+    ],
+    "reason": "The expanded frame contains one pre-existing copy-review marker. Preserve the full 89-marker exploratory cohort and run a separately labeled omission sensitivity; neither is confirmatory single-ortholog evidence."
+  }
+}

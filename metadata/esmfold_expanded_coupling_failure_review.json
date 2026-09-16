@@ -1,0 +1,16 @@
+{
+  "status": "reviewed_terminal_coupling_preflight_failure",
+  "old_state_sha256": "b79ea56c4ca24d326b6fb94f8b65d3a589647db9d5cb98c66aec1e06ee780b6c",
+  "old_fit_output_exists": false,
+  "reason": "Original fitting script requires no copy-review flags. Full expanded frame has exactly one flagged marker with 301 sites. No fit output was created.",
+  "reviewed_flagged_markers": [
+    {
+      "marker": "4986044at2759",
+      "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+      "sites": 301
+    }
+  ],
+  "recovery": "Fresh isolated reviewed-fit variant and full89/omission88 plans; original pinned scripts preserved for live AlphaFold controller.",
+  "fit_script_original_sha256": "2e103155afff2f06e06063162cd66ec0b88998d54d858072f257725b4e49ac44",
+  "fit_script_reviewed_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52"
+}

@@ -1,0 +1,23 @@
+{
+  "action": "Supersede only waiting AlphaFold coupling controller with reviewed full124 and omission123 handoffs",
+  "previous_pid": 292815,
+  "previous_created": 1789574381.13,
+  "previous_state_sha256": "4e839397412b3fd2152eec209e423851f94164dc3d81e1582ec97c63a7811c2a",
+  "expected_flagged_markers": [
+    {
+      "marker": "4986044at2759",
+      "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+      "sites": 309
+    }
+  ],
+  "upstream_rate_producer_unchanged": {
+    "pid": 126695,
+    "created": 1789568510.55,
+    "command": [
+      "python",
+      "scripts/advance_site_rate_comparison.py",
+      "--config",
+      "metadata/gdm_expanded_rate_comparison_controller_config.json"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "complete_exploratory_conditional_site_coupling_fits",
+  "sites": 21904,
+  "markers": 88,
+  "fits": 24,
+  "focal_tests": 72,
+  "confidence_taxon_site_rows": 1699035,
+  "plan_sha256": "895e16b6a100e600c43772697296c1cb89ff0fca15c2cf6f3dcfa058177e2943",
+  "source_frame_sha256": "2a837a64d05017be6c51061d88f38a54a1be19e1f369e21253833b51e12f14f7",
+  "source_accessibility_sha256": "ecc915a2b9a8ae0f69fbcf9ef6cad1bc93c3657e8bf992a66835135f4c88c87f",
+  "script_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "artifacts": {
+    "site_covariates.tsv": "481e41dd94758c37349c182a422c1ea9c02041243114fd838a495ff86eb8f521",
+    "focal_coefficients.tsv": "ac74af1c0c3b6621a1f64d14284ae2115843f95ee852b1e524f898d98878b741",
+    "all_coefficients.tsv": "6877d01c7c8d7da9a9491d6f4029c290503179e0c77263a03a8cfb6d7553a9d3",
+    "fit_summary.tsv": "588c9c469e681428c0ebf9abb99f828cf67291a7235d0fe35a41463695ce35ac"
+  },
+  "interpretation": "Exploratory conditional site association in the esmfold-combined-revised cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: exclude_reviewed_markers. Marker 4986044at2759 still requires gene-copy reconciliation. Interpret together with the paired full-cohort/omission analysis; not confirmatory single-ortholog inference.",
+  "marker_review_policy": {
+    "mode": "exclude_reviewed_markers",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 301
+      }
+    ],
+    "reason": "The expanded frame contains one pre-existing copy-review marker. Preserve the full 89-marker exploratory cohort and run a separately labeled omission sensitivity; neither is confirmatory single-ortholog evidence."
+  },
+  "source_frame_sites": 22205,
+  "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+}

@@ -1,0 +1,65 @@
+{
+  "producer": {
+    "pid": 126695,
+    "created": 1789568510.55,
+    "command": [
+      "python",
+      "scripts/advance_site_rate_comparison.py",
+      "--config",
+      "metadata/gdm_expanded_rate_comparison_controller_config.json"
+    ]
+  },
+  "producer_receipt": "results/phylogeny/site-rate-comparison-controller-gdm-expanded-v1/receipt.json",
+  "producer_config_sha256": "34a2cfe2a732004081ab223a04a71f719e776342986822d2c035ee73db790224",
+  "frame": "results/phylogeny/site-rate-exposure-frame-gdm-expanded-v1",
+  "accessibility": "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+  "markers": 124,
+  "sites": 44719,
+  "fit_template": "metadata/site_coupling_conditional_resource_plan.json",
+  "resampling_template": "metadata/site_coupling_marker_resampling_plan.json",
+  "controller_output": "results/phylogeny/coupling-controller-gdm-expanded-reviewed-v1",
+  "fit_output": "results/phylogeny/site-coupling-gdm-expanded-reviewed-v1",
+  "resampling_output": "results/phylogeny/site-coupling-resampling-gdm-expanded-reviewed-v1",
+  "cpu_affinity": [
+    32
+  ],
+  "minimum_available_memory_gib": 32,
+  "minimum_free_disk_gib": 20,
+  "host_memory_limit_gib": 32,
+  "fit_planning_hours": [
+    0.25,
+    12
+  ],
+  "resampling_planning_hours": [
+    0.25,
+    24
+  ],
+  "paid_resources": false,
+  "basis": "Scale established 72-marker workflow to 89/124 markers and 22205/44719 sites. One CPU thread per cohort; 16 GiB planning allowance per stage, 32 GiB hard service limit. 24 fitted specifications, 48000 bootstrap fits and every marker omitted once. Planning ranges are not runtime guarantees.",
+  "interpretation": "Exploratory conditional site association in the gdm-expanded cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: retain_flagged_exploratory. Marker 4986044at2759 requires gene-copy reconciliation; interpret with paired full-cohort/omission sensitivity.",
+  "pins": {
+    "scripts/resample_conditional_site_coupling.py": "9ac79200d600726322db41dafccd22573b8f3a28c20c621eec8e256a231a52bf",
+    "scripts/audit_joint_path_uncertainty.py": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "metadata/gdm_expanded_rate_comparison_controller_config.json": "34a2cfe2a732004081ab223a04a71f719e776342986822d2c035ee73db790224",
+    "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1/receipt.json": "1722e4d59a55724821f9801b96da9c0d188c18b51227be023c2296e9ca7268b9",
+    "metadata/site_coupling_conditional_resource_plan.json": "7ab8b02aa54eef7a4619ddf8bea9ee9d857f2234d032f98504e0048be781de66",
+    "metadata/site_coupling_marker_resampling_plan.json": "9853da2ec93902702965fedae3555971a0d38ff00cfad6d569e3ba2752a612d4",
+    "scripts/advance_reviewed_expanded_site_coupling.py": "43995c83e0dfe9755f1df940a41d1383b9576bc321940b737797543ba4b70d25",
+    "scripts/fit_reviewed_conditional_site_coupling.py": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+    "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1/receipt.json": "0af2975e999d2027b42b51da433a4e426ceda92baf4c3f56f1a479f8e12dd1f9"
+  },
+  "analysis_markers": 124,
+  "analysis_sites": 44719,
+  "marker_review_policy": {
+    "mode": "retain_flagged_exploratory",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 309
+      }
+    ],
+    "reason": "Same flagged marker appears in the expanded AlphaFold source exposure grid with 309 sites. Preserve full124 exploratory cohort and paired123 omission sensitivity, with no confirmatory single-ortholog claim."
+  }
+}

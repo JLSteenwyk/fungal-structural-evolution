@@ -1,0 +1,75 @@
+{
+  "recorded_at": 1789584362.4038522,
+  "records": [
+    {
+      "unit": "fungal-esm-reviewed-coupling-20260916.service",
+      "recorded_state": {
+        "status": "complete_coupling_and_marker_resampling",
+        "pid": 4132852,
+        "created": 1789584078.7,
+        "config_sha256": "6ee61a7db8ff81cbd20d4b02806452df43630adf141f07d3332fbdad2e58c0c4",
+        "started_at": 1789584079.1374238,
+        "producer_receipt_sha256": "e4fbc2768ebd654fd4b8691d6fd817f285a27a3f504c4798ac0ff5f067d2b8b4",
+        "fit_receipt_sha256": "6d11cc45f8823043dd40ef6fa01b1d0c86222c44e3e0354a35ffabb4b3bb048f",
+        "resampling_receipt_sha256": "b61743bcae5b2d88e605bb4b503728e1fdd5a70c414daf235f33b523d0a90b5a",
+        "resampling_status": "complete_conditional_marker_resampling",
+        "updated_at": 1789584119.6386886
+      },
+      "state_sha256": "471dbcc0f16c8b1e7bbc8188aa99af6604437debcecb635fc094826a1947f312",
+      "current_main_pid": 0
+    },
+    {
+      "unit": "fungal-esm-copy-omission-coupling-20260916.service",
+      "recorded_state": {
+        "status": "complete_coupling_and_marker_resampling",
+        "pid": 4132907,
+        "created": 1789584078.73,
+        "config_sha256": "a86130b53ae9f25a9dfc703240f1abd47507485b9bf37e0c41cc0272a8952faf",
+        "started_at": 1789584079.188792,
+        "producer_receipt_sha256": "e4fbc2768ebd654fd4b8691d6fd817f285a27a3f504c4798ac0ff5f067d2b8b4",
+        "fit_receipt_sha256": "8cc931cbeb1e4043be3aca39a3775a197d755237c3d699c27e9cf85be22ced14",
+        "resampling_receipt_sha256": "9fbf023925d1a6692ed7dc0618176b33c1f67b20635d37e1ddd9cf0883cc7faf",
+        "resampling_status": "complete_conditional_marker_resampling",
+        "updated_at": 1789584132.7340314
+      },
+      "state_sha256": "9f25dc1074a9f6c2995432b9f7c1e8fb1fba5f561bf1ae8cb7fec277383f1980",
+      "current_main_pid": 0
+    },
+    {
+      "unit": "fungal-gdm-reviewed-coupling-20260916.service",
+      "recorded_state": {
+        "status": "waiting_for_frame_producer",
+        "pid": 89349,
+        "created": 1789584168.72,
+        "config_sha256": "e9448a871ff6126c6225942e0e071d8bd2d49c477e7f337a1c5d7b9d8bbc1b5f",
+        "started_at": 1789584169.1440423
+      },
+      "state_sha256": "d01ff6f4cef6d60219fff1b287644141a7345f55c5f18a559356e9ccfb3c3d37",
+      "current_main_pid": 89349,
+      "live_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_reviewed_expanded_site_coupling.py",
+        "--config",
+        "metadata/gdm-expanded-reviewed-v1_coupling_controller_config.json"
+      ]
+    },
+    {
+      "unit": "fungal-gdm-copy-omission-coupling-20260916.service",
+      "recorded_state": {
+        "status": "waiting_for_frame_producer",
+        "pid": 89464,
+        "created": 1789584168.77,
+        "config_sha256": "ffdfac893bb5e695d912303fe7e8178708cb57a0156657196e29d28ec4d9cfa1",
+        "started_at": 1789584169.1989198
+      },
+      "state_sha256": "a1a474281add16480ffdda4bd7876eeed51f42957e9f3c9262a32edd593d44df",
+      "current_main_pid": 89464,
+      "live_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_reviewed_expanded_site_coupling.py",
+        "--config",
+        "metadata/gdm-expanded-copy-omission-v1_coupling_controller_config.json"
+      ]
+    }
+  ]
+}

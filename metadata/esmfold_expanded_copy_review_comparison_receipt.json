@@ -1,0 +1,23 @@
+{
+  "status": "passed_copy_review_coupling_comparison",
+  "source_receipts": {
+    "results/phylogeny/site-coupling-esmfold-combined-reviewed-v1": "6d11cc45f8823043dd40ef6fa01b1d0c86222c44e3e0354a35ffabb4b3bb048f",
+    "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1": "8cc931cbeb1e4043be3aca39a3775a197d755237c3d699c27e9cf85be22ced14",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-reviewed-v1": "b61743bcae5b2d88e605bb4b503728e1fdd5a70c414daf235f33b523d0a90b5a",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-copy-omission-v1": "9fbf023925d1a6692ed7dc0618176b33c1f67b20635d37e1ddd9cf0883cc7faf"
+  },
+  "omitted_marker": "4986044at2759",
+  "full_markers": 89,
+  "omission_markers": 88,
+  "full_sites": 22205,
+  "omission_sites": 21904,
+  "matched_focal_coefficients": 72,
+  "full_loo_vs_separate_omission_max_difference": 5.0003404195031464e-15,
+  "script_sha256": "7634a44bb03e22d72cdf5b0b8368b6d759eef3e793da86ec2466927915e6f7fb",
+  "artifacts": {
+    "term_summary.tsv": "b8c2c98e3d3dc1548062d91449e9217aa48005b8e17c2c4d18967afb1add29b9",
+    "bootstrap_summary.tsv": "763121f8fa6f7d9e52961d790bd811c1dae0c1919f4ef184ab73e55c578747c8",
+    "matched_focal_coefficients.tsv": "7675566889739b1cbfc756a7972419fc0ecf84bb747a206faf138fb54a803948"
+  },
+  "interpretation": "Exact covariate subset and all 72 focal omission coefficients checked against independently absorbed full-cohort leave-one-marker-out estimates. BH families remain separate per analysis; bootstrap intervals are unadjusted sensitivity intervals. Results remain conditional on estimated rates, fixed gene trees and predicted structures; copy review is unresolved and no causal or confirmatory single-ortholog conclusion follows."
+}

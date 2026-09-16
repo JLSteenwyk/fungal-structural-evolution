@@ -1,0 +1,135 @@
+{
+  "status": "complete_site_rate_comparison_and_frame_handoff",
+  "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+  "prerequisite_receipts": {
+    "results/phylogeny/paired-site-rates-audit-esmfold-combined-revised-v1/receipt.json": "d01974c5a99729ba0c3e65bae70d5e7f8a93d3409785bccefb2016383f51295b",
+    "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-v1/receipt.json": "a3a4fdba75c6bf4d3d66c9100da2862a8cd24d069d119d0ac82772f35f891b67",
+    "metadata/esmfold_combined_site_exposure_readback.json": "fe8048f2aeb66290917229262be2a20965594d5d269400ba3b4768291e1d9aaf"
+  },
+  "stages": [
+    {
+      "stage": "initial_comparison",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-revised-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-combined-revised-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "ab96ec2689f9462c344263239786194a78589090d7f603839d4f825fe998aee6"
+    },
+    {
+      "stage": "optimization",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/refit_flagged_freerate_models.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-revised-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-revised-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-v1",
+        "--all-fits",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "c07f505f02e6a80ae1473f28c34226aa5b257c52778c6a8836802e4aa79a1ba6"
+    },
+    {
+      "stage": "optimization_audit",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_freerate_optimization.py",
+        "--diagnostics",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-revised-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-v1",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "43a6202b428ee5e4f7ba67ab273efe93aa154172e46598a3ef9c15eb88620c4b"
+    },
+    {
+      "stage": "selected_comparison",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-revised-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-combined-revised-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-revised-v1",
+        "--optimization-audit",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-revised-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "c630e61d087fd41a0c9200770bc4d8064d331d3dc00fb6e9d9c374fe09a308ae"
+    },
+    {
+      "stage": "comparison_readback",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_rate_heterogeneity.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-revised-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-revised-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-revised-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "68a0f4ca159b8258a7afbb13dfd18668502caa16bea97f58d1d1865107b00f4c"
+    },
+    {
+      "stage": "frame",
+      "config_sha256": "5d2edcfb888ca5ee223005e7a01d38230fe42ab83c17e023a2a7f4a0ce9d68cd",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/prepare_site_rate_exposure_frame.py",
+        "--rates",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-revised-v1",
+        "--rate-readback",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-revised-v1/receipt.json",
+        "--exposure",
+        "results/phylogeny/site-parsimony-exposure-esmfold-combined-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-v1",
+        "--output",
+        "results/phylogeny/site-rate-exposure-frame-esmfold-combined-revised-v1"
+      ],
+      "receipt": "results/phylogeny/site-rate-exposure-frame-esmfold-combined-revised-v1/receipt.json",
+      "receipt_sha256": "2a837a64d05017be6c51061d88f38a54a1be19e1f369e21253833b51e12f14f7"
+    }
+  ],
+  "interpretation": "Rate-model sensitivity, optimization audits and matched exposure frame complete. Coupling inference and its uncertainty remain separate stages."
+}
