@@ -1,0 +1,90 @@
+{
+  "status": "prelaunch_isolated_gamma_refit_plan",
+  "created_at": 1789570254.1704485,
+  "output": "results/phylogeny/gamma-export-refit-esmfold-5005750-v1",
+  "alignment": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-combined-v1/5005750at2759/aa.faa",
+  "reference_tree": "results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.treefile",
+  "original_likelihood": -11012.3128,
+  "export_likelihood": -11014.8773,
+  "requests": [
+    {
+      "name": "original_tree",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-combined-v1/5005750at2759/aa.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "1",
+        "--mem",
+        "2G",
+        "--seed",
+        "930538445",
+        "-keep-ident",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/gamma-export-refit-esmfold-5005750-v1/original_tree",
+        "-te",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.treefile",
+        "--rate",
+        "--sitelh",
+        "--epsilon",
+        "0.000001"
+      ]
+    },
+    {
+      "name": "export_tree",
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-combined-v1/5005750at2759/aa.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "1",
+        "--mem",
+        "2G",
+        "--seed",
+        "930538445",
+        "-keep-ident",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/gamma-export-refit-esmfold-5005750-v1/export_tree",
+        "-te",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-site-rates-esmfold-combined-v1/5005750at2759/aa.treefile",
+        "--rate",
+        "--sitelh",
+        "--epsilon",
+        "0.000001"
+      ]
+    }
+  ],
+  "cpu_affinity": [
+    28
+  ],
+  "threads": 1,
+  "memory_gib_per_fit": 2,
+  "planning_hours": [
+    0.001,
+    0.5
+  ],
+  "disk_gib": 1,
+  "paid_resources": false,
+  "basis": "Two serial fixed-topology fits of the existing 107-column alignment, epsilon 1e-6 instead of default 0.01. Different existing branch-length starts; same LG+F+G4 model, seed and data. No topology search or change to live sources.",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-combined-v1/5005750at2759/aa.faa": "5b921701eed330041bc188b5e4f38831cd1ff1b12c5de66567acc036d5207bac",
+    "scripts/refit_flagged_gamma_export.py": "038d14123ea610c92a6f130793de891bc78f83973748538166827831aa540a7c",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.treefile": "bd95e31f3f5cc6b119db6107c287603c0a1ab3bfc12c006332e4824ac3dd4209",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.iqtree": "f4d5f23ae8e9c7efa7683c1ac21f520f0f5dce6ef9f7211b61d054607579f5a5",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.config.json": "50b77e59b6f2322ef592d4279ca8239d3d5d86acfd216db98d203c7b1370259f",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1/5005750at2759/aa.receipt.json": "fa51176b37746d7dfd9345023e9ba08efa230dd12371f066b145d13b41dc5fdc",
+    "results/phylogeny/paired-site-rates-esmfold-combined-v1/5005750at2759/aa.treefile": "c3094b66a8b1c2cea6b19f556df607b40259268cce80223010b0524f62518276",
+    "results/phylogeny/paired-site-rates-esmfold-combined-v1/5005750at2759/aa.iqtree": "c3c246e1794b5094a1d115b88353405381876a4a5501679983edc88bad4831e7",
+    "results/phylogeny/paired-site-rates-esmfold-combined-v1/5005750at2759/aa.config.json": "2838a21d6ee30a19f2590ea729cae620668dcee925b69a9db728c1bdc70bff23",
+    "results/phylogeny/paired-site-rates-esmfold-combined-v1/5005750at2759/aa.receipt.json": "efbc963876da541d89e24c87f86aaa5f623db8c770deb689e80072086fdaa515"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed_independent_gamma_refit_rate_topology_readback",
+  "receipt_sha256": "2dfbc93af28d13a410ef3590ebf0ee496a202d7e8727e76b3c4f933087eff217",
+  "method": "Bio.Phylo split enumeration with root-equivalent edge summation independently confirms exact taxa and all bipartitions; finite nonnegative branches and full ordered 107-site rate grids. SciPy rank comparisons against preserved export. Does not independently recompute likelihood or posterior rates.",
+  "results": [
+    {
+      "start": "original_tree",
+      "taxa": 206,
+      "branches": 409,
+      "rates": 107,
+      "rate_rank_correlation_to_export": 0.9932081662424342,
+      "maximum_absolute_rate_change": 0.5795000000000003,
+      "median_absolute_rate_change": 0.09992000000000001,
+      "branch_rank_correlation_to_export": 0.9998152972468942
+    },
+    {
+      "start": "export_tree",
+      "taxa": 206,
+      "branches": 409,
+      "rates": 107,
+      "rate_rank_correlation_to_export": 0.9883992434272992,
+      "maximum_absolute_rate_change": 1.4420199999999999,
+      "median_absolute_rate_change": 0.09800999999999999,
+      "branch_rank_correlation_to_export": 0.9981298188474689
+    }
+  ]
+}

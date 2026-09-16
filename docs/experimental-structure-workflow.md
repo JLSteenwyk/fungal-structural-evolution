@@ -754,3 +754,13 @@ metadata/experimental_control_next_tier_*. Live state is recorded in
 results/experimental_control_next_tier_handoff.json and, once started,
 results/experimental_control_next_tier_execution.json. Existing 12-control
 prediction scripts and configuration were not changed.
+
+
+The 12-control length tier subsequently completed all predictions, independent
+artifact readback and mmCIF conversion without OOM or interruption. It covers
+130 experimental entries and 251 entity links; median inference time was
+27.94 seconds, maximum 52.90 seconds. All receipt artifact checksums were
+reverified before archiving the audit and conversion receipts as
+metadata/experimental_control_long_tier_{audit,conversion}_receipt.json.
+The next 20-control tier started automatically and has produced its first
+prediction. Integration with the existing three-way comparison is still pending.

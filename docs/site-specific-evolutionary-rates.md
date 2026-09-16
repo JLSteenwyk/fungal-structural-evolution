@@ -351,3 +351,40 @@ Summary tables and receipt: metadata/expanded_gamma_rate_diagnostics_*.
 AlphaFold audit receipt: metadata/gdm_expanded_gamma_site_rate_audit_receipt.json.
 Both expanded FreeRate producers and subsequent comparison controllers were
 verified live at this review; completion and coupling inference remain pending.
+
+
+### Flagged Gamma export: stricter refits completed
+
+Two isolated fixed-topology LG+F+G4 fits used the same alignment and seed,
+starting from the original and export branch lengths, with likelihood epsilon
+1e-6 instead of 0.01. The original-tree start recovered −11012.3128 (alpha
+0.6685); the export-tree start reached −11006.5889 (alpha 0.9168), improving on
+the original by 5.7239 and on the export by 8.2884 log units. Thus stricter
+optimization does not simply reproduce a unique estimate; it exposes distinct
+solutions. The best observed result is not proof of a global optimum.
+
+An independent Bio.Phylo split enumeration confirmed all 206 tips and 409
+unrooted edges for both fits, along with finite nonnegative lengths and the
+complete 107-site rate grids. Relative to the preserved export, the best
+refit's site-rate rank correlation is 0.988399, but the maximum absolute rate
+change is 1.44202 (median 0.09801). Branch-rank correlation is 0.998130. High
+rank agreement therefore does not justify treating the rates as unchanged.
+Site likelihood sums also match report totals within printed precision; the
+likelihood and posterior rates were not independently recomputed.
+
+Before final coupling interpretation, propagate the better observed Gamma fit
+through a new immutable rate-model comparison and exposure frame, checking
+whether FreeRate refits reach at least this revised baseline. Include an
+explicit affected-marker sensitivity. The currently running pinned baseline
+controllers retain their original inputs and must be labeled accordingly;
+they cannot by themselves close this optimization concern.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/refit_flagged_gamma_export.py --plan metadata/esmfold_flagged_gamma_refit_plan.json
+```
+
+The resource plan allocates one CPU thread, 2 GiB per fit, 1 GiB output and
+0.001–0.5 hours for two serial fits. Output requires a fresh directory. Commands,
+source hashes, result summary and independent readback are versioned under
+metadata/esmfold_flagged_gamma_refit_*. Raw outputs are preserved in
+results/phylogeny/gamma-export-refit-esmfold-5005750-v1.

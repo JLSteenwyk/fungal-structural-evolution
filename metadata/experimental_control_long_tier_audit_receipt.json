@@ -1,0 +1,40 @@
+{
+  "status": "complete_artifact_readback",
+  "predictions": 12,
+  "partial_prediction_snapshot": false,
+  "experimental_reference_links": 251,
+  "experimental_entries": 130,
+  "experimental_entities": 251,
+  "links_path": "data/prediction_inputs/experimental-controls-513-768-v1/experimental_reference_links.tsv",
+  "links_sha256": "f4ee40a76fc9f68151c6be449a5e10c524cf872c03791e06505255373f821e55",
+  "config_sha256": "6ff1c168fb254bfa9cb82694553da93e1ef11cf542adf328eb17efdff31d3684",
+  "chunk_receipt_sha256": "23b9e03b28c605e590a643a4528f9e37029c15efa0cb172197d5e27ce08c2122",
+  "script_sha256": "92b44d5cb0877bf3615cac6d3189ef6b2564dad7f090de32d637ef9ba9142542",
+  "remaining_eligible": 0,
+  "length_or_alphabet_deferred": 0,
+  "interpretation": "Experimental-reference control prediction chunk; verified serialization and confidence provenance. Reference entries/entities are not independent biological replicates; no experimental accuracy or training independence established.",
+  "artifacts": {
+    "predictions.tsv": "646f2c627cf05883dd4676027dd817d8f8857708139eafd9addb1ac6ac71573c",
+    "experimental_reference_links.tsv": "f4ee40a76fc9f68151c6be449a5e10c524cf872c03791e06505255373f821e55"
+  },
+  "length": {
+    "min": 513,
+    "median": 586.5,
+    "max": 741
+  },
+  "inference_seconds": {
+    "min": 17.983836946999872,
+    "median": 27.937396437999723,
+    "max": 52.89768117600033
+  },
+  "peak_gpu_allocated_bytes": {
+    "min": 10300750848,
+    "median": 10869736448.0,
+    "max": 12297761280
+  },
+  "mean_ca_plddt": {
+    "min": 56.899044036865234,
+    "median": 75.58564758300781,
+    "max": 89.15286254882812
+  }
+}

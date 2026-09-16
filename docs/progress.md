@@ -2786,3 +2786,12 @@ across separate source cohorts. One ESMFold AA export, marker 5005750at2759,
 is 2.5645 log-likelihood units below its original fit and requires targeted
 Gamma optimization review; queued FreeRate refits do not resolve that baseline.
 Original outputs remain unchanged. See docs/site-specific-evolutionary-rates.md.
+
+
+September 16: two stricter Gamma refits of ESMFold marker 5005750at2759 completed.
+The better observed fit improves the original by 5.7239 log units; full tip,
+edge and site-grid readback passed. A revised immutable Gamma baseline and
+affected-marker sensitivity remain necessary before final coupling claims.
+The original live controller inputs remain intact. Also verified completion
+and conversion of all 12 longer experimental controls; the next GPU1 batch
+started automatically. Receipts are versioned in metadata.
