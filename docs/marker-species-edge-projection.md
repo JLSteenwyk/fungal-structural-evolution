@@ -65,3 +65,13 @@ retain path/discordance uncertainty in branch-level models, and assess
 sequence–structure change within homologous proteins and resolved regions.
 The current count of uniquely mappable edges is an eligibility diagnostic,
 not a completed acceleration or clade-association analysis.
+
+## Numerical branch frame
+
+`results/phylogeny/projected-gamma-branch-frame-v1` attaches four paired G4 branch estimates (AA, 3Di AF exchangeabilities, 3Di AF with empirical frequencies, and 3Di LLM exchangeabilities) to every one of the 45,155 marker edges. The 852 fitted trees contribute 180,620 branch lengths. It uses the revised ESMFold Gamma baseline, including the reviewed optimization correction, and the audited expanded AlphaFold Gamma fits. Alignment site counts and fit-warning counts remain explicit.
+
+Every row retains both full-guide edge sets and the prior mapping disposition. A full-edge ID is assigned only when both guides identify the same single edge. Collapsed paths and discordant edges keep their marker-level estimates without allocating change among constituent species branches. The two prediction-source cohorts remain separate.
+
+Unique internal-edge coverage is 188 edges for ESMFold (median eight markers, 71 edges with at least ten) and 139 for AlphaFold (median twenty markers, 81 edges with at least ten). These are coverage diagnostics, not thresholds for statistical significance or independent replication. Terminal edges are summarized separately in `metadata/projected_gamma_branch_coverage_summary.tsv`.
+
+The independent readback reconstructs all tree splits through undirected graph edge deletion, checks all 180,620 lengths, preserves all 90,310 guide projections and checks each unique-edge coverage group. This validates assembly of the numerical frame. Branch lengths are expected substitutions in the fitted alphabet per aligned site, not physical displacement or change per unit time. The table is not an acceleration test; supported-guide, FreeRate, family, coverage and phylogenetic-dependence analyses remain required. The procedure is implemented in `scripts/assemble_projected_branch_frame.py` and `scripts/audit_projected_branch_frame.py`; the source hashes and readback are versioned under `metadata/projected_gamma_branch_frame_*`.
