@@ -1,0 +1,30 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "prediction_candidates": 2,
+  "candidate_residues": 2829,
+  "max_length": 1536,
+  "original_deferred_sequences": 35,
+  "reference_links": 17,
+  "source_receipt_sha256": "83879a33ce286c07739c3d0e25d4f88828e477ce547eb8b4e0b1ac8b1cd6ed97",
+  "source_fasta_sha256": "406e116f1acfcef61c5a20018d9ff9e3a5f159f484516f1c84bea19f8fcdb608",
+  "reservation_fasta_sha256": {
+    "data/prediction_inputs/dgx-spark-qualification-v1/candidates.faa": "d2e9689d9072c00e768fdcb1cd37fdddd7a30addd34bc494041a480b55136e26",
+    "data/prediction_inputs/ecology-markers-v1/candidates.faa": "37637e5e6ccf088e9c5b4990635ccd4f707e4b2218415dff51c638c31aab6460",
+    "data/prediction_inputs/experimental-controls-513-768-v1/candidates.faa": "b61f5cc35b549709133677b5eb8a29ab4dd449a7dec16598a06c2615d07d25fe",
+    "data/prediction_inputs/experimental-controls-769-1152-v1/candidates.faa": "b031b252576edb5da0db39d4d4486260e162ab7fdea8e425faa4dc3e83c520ba",
+    "data/prediction_inputs/experimental-controls-v1/candidates.faa": "7245f05ff5db1e1e14097fb00e0ad32ab3d3098c727e3d3ca14b2e7ca82d7646",
+    "data/prediction_inputs/markers-513-768-gpu0-v1/candidates.faa": "fb13a4319db12b0d211de39dcef9c907a5d88cab94f9ed1cdeb203dd5c8d06c6",
+    "data/prediction_inputs/markers-513-768-v1/candidates.faa": "fb13a4319db12b0d211de39dcef9c907a5d88cab94f9ed1cdeb203dd5c8d06c6",
+    "data/prediction_inputs/markers-followon-v1/candidates.faa": "636e85ebf383e98178fbd51537fd26c6baba2da38b9b7503d3392e0fe2c6d713",
+    "data/prediction_inputs/markers-full-inventory-v2/candidates.faa": "2efefce5d1927888061cae72b011d042d64b78e2da728d97e17ca4174bb46e4c",
+    "data/prediction_inputs/markers-v1/candidates.faa": "09d2cce9415ccbcdc6634e83499c18e91c32b672affe8f5f865703cbe0419039",
+    "data/prediction_inputs/predictor-controls-v1/candidates.faa": "af696b1c20eec879e98279c96779c9e7ebdf7b70fb320523c1f68736d65e8d27"
+  },
+  "script_sha256": "ad334e6c39d59bf2c6f91503847d0deca0ddfe2f99772398bd972e135d5f4481",
+  "selection": "All previously length-deferred experimental controls within this tier, excluding every existing candidate queue; full canonical sequences, no truncation or agreement-based selection.",
+  "artifacts": {
+    "sequence_disposition.tsv": "8426928f841d6be106276c9c0eea44351967fa382f66c68e551d5595b19b2a46",
+    "candidates.faa": "8f0ae1ad12da0deffcf318e0e354415213bdd0a3e0ea3183928cc2d5ff1d5002",
+    "experimental_reference_links.tsv": "ce814693f259dfd2fb1fc3efacd1eddc950e53b1373f843030cd09634085cc84"
+  }
+}

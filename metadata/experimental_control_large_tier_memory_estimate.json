@@ -1,0 +1,20 @@
+{
+  "status": "prelaunch_measured_anchor_extrapolation",
+  "observed_predictions": 15,
+  "anchor_length": 1017,
+  "anchor_peak_allocated_gib": 14.601279258728027,
+  "anchor_receipt": "results/predictions/esmfold-experimental-controls-769-1152-v1/S03b7797a0460645fc3278608ce831cc02c9437647883cfcf335a74b1b3aeb9c3.json",
+  "anchor_receipt_sha256": "cb718743740063086e0a7baf77903523868908d8c84f4209ca5f75ad642f8d05",
+  "next_lengths": [
+    1361,
+    1468
+  ],
+  "quadratic_allocated_estimate_gib": 30.422935207916847,
+  "planning_gpu_allowance_gib": 43.5498157702919,
+  "gpu_capacity_gib": 48,
+  "observed_device_used_mib": 33152,
+  "limitations": "Device usage includes allocator reservation and exceeded allocated-memory headroom in the preceding tier. Fresh process plus allocator cache reclamation may allow this tier, but the estimate is not a guarantee; unchanged runner stops on first OOM without truncation. No concurrent process on GPU1.",
+  "remaining_length": 2413,
+  "remaining_quadratic_allocated_estimate_gib": 82.19845321009196,
+  "remaining_disposition": "Deferred: estimate exceeds 48-GiB device; evaluate memory-saving execution without changing full sequence."
+}

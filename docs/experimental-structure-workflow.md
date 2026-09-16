@@ -887,3 +887,43 @@ OPENBLAS_NUM_THREADS=1 python scripts/audit_control_region_pae.py --summary resu
 Small table, receipt and readback: metadata/experimental_control_region_pae*.
 Use fresh outputs. This is a small serial readback of existing arrays; no new
 prediction or paid resource is involved.
+
+
+## Two larger full-sequence controls scheduled
+
+Fifteen successful predictions from the 20-control tier provided a new memory
+anchor at 1,017 residues: 14.601 GiB peak allocated GPU memory, 123.4 seconds
+inference. Squared-length scaling to 1,468 residues gives 30.423 GiB; adding
+30 percent and 4 GiB gives a 43.550-GiB planning allowance within 48 GiB.
+Observed device usage was 33,152 MiB during the preceding tier, higher than
+allocated-memory measurements because it includes reservations/other overhead.
+Thus this estimate is conditional on fresh-process execution and allocator
+reclamation, not a guaranteed memory bound. The runner stops on the first OOM
+and preserves the full sequence and outputs for review.
+
+The next immutable queue contains exactly two unreserved controls, 1,361 and
+1,468 residues (2,829 residues, 17 experimental entity links). Independent FASTA
+readback confirms exact hashes and no overlap with any other candidate queue.
+The unchanged ESMFold runner uses a 1,536-residue ceiling, batch size one and
+chunk size64, four physical CPU cores and a 64-GiB host-memory cgroup limit.
+Planning range is 0.1–2 hours, with existing free-memory/disk and GPU-idle gates.
+No paid resources are involved.
+
+User service fungal-experimental-controls-large-20260916.service is live and
+waiting for the exact 20-control execution process to finish successfully,
+including audit and conversion. It then invokes the new pinned plan; an OOM,
+interruption or failed predecessor stops progression for review. The new tier
+has not yet started at this record. These transient services do not survive
+reboot; inspect saved state before recovery.
+
+```bash
+python scripts/prepare_long_experimental_controls.py --output data/prediction_inputs/experimental-controls-1153-1536-v1 --max-length 1536
+python scripts/advance_experimental_control_tier.py --config metadata/experimental_control_large_tier_handoff_config.json
+```
+
+Resource estimate, source anchor, input receipt, all-35 dispositions, plan and
+verified live identity: metadata/experimental_control_large_tier_*.
+The one remaining 2,413-residue control remains an explicit project requirement:
+the same scaling predicts ~82.2 GiB allocated memory before overhead, exceeding
+the device. Evaluate a memory-saving full-sequence execution method separately;
+no truncation, successful prediction or omission is claimed.

@@ -1,0 +1,82 @@
+{
+  "status": "prelaunch_resource_and_provenance_plan",
+  "created_at": 1789571625.5674782,
+  "expected_predictions": 2,
+  "candidate_residues": 2829,
+  "length_range": [
+    1361,
+    1468
+  ],
+  "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+  "cpu_affinity": [
+    80,
+    82,
+    84,
+    86
+  ],
+  "host_memory_limit_gib": 64,
+  "minimum_available_memory_gib": 64,
+  "minimum_free_disk_gib": 5,
+  "planning_hours": [
+    0.1,
+    2
+  ],
+  "estimated_output_gib_upper": 2,
+  "paid_resources": false,
+  "basis": "Two full controls using unchanged ESMFold settings; conservative squared-length scaling of measured allocated memory plus 30 percent and 4 GiB. GPU reservation caveat and OOM stop retained. No truncation.",
+  "gpu_duty": "Continuous processing on idle GPU1 at existing default/max 300 W; GPU0 temporary 90/10 controller unchanged.",
+  "output_directories": [
+    "results/predictions/esmfold-experimental-controls-1153-1536-v1",
+    "results/predictions/experimental-controls-1153-1536-audit-v1",
+    "results/structures/esmfold-experimental-controls-1153-1536-v1"
+  ],
+  "chunk_path": "results/predictions/esmfold-experimental-controls-1153-1536-v1/last_chunk.json",
+  "execution_receipt": "results/experimental_control_large_tier_execution.json",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+      "scripts/run_marker_predictions.py",
+      "--inputs",
+      "data/prediction_inputs/experimental-controls-1153-1536-v1",
+      "--checkpoint",
+      "data/prediction_models/esmfold-v1",
+      "--output",
+      "results/predictions/esmfold-experimental-controls-1153-1536-v1",
+      "--max-length",
+      "1536",
+      "--limit",
+      "2"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_reference_control_predictions.py",
+      "--predictions",
+      "results/predictions/esmfold-experimental-controls-1153-1536-v1",
+      "--inputs",
+      "data/prediction_inputs/experimental-controls-1153-1536-v1",
+      "--links",
+      "data/prediction_inputs/experimental-controls-1153-1536-v1/experimental_reference_links.tsv",
+      "--output",
+      "results/predictions/experimental-controls-1153-1536-audit-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/convert_esmfold_snapshot.py",
+      "--predictions",
+      "results/predictions/esmfold-experimental-controls-1153-1536-v1",
+      "--audit",
+      "results/predictions/experimental-controls-1153-1536-audit-v1",
+      "--output",
+      "results/structures/esmfold-experimental-controls-1153-1536-v1"
+    ]
+  ],
+  "pins": {
+    "scripts/run_marker_predictions.py": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+    "scripts/audit_reference_control_predictions.py": "92b44d5cb0877bf3615cac6d3189ef6b2564dad7f090de32d637ef9ba9142542",
+    "scripts/convert_esmfold_snapshot.py": "5c356f89bf5a8474ace8c0bde183e18e50852e30e821b482621421dafae6d1b8",
+    "scripts/run_experimental_control_tier.py": "214f29b29d41906c65cd060c1fd7322c002d443e49b0fd7f14ef8ad6c73e0c43",
+    "data/prediction_inputs/experimental-controls-1153-1536-v1/receipt.json": "edbe1c8b0b0adf3d32f5becae1821ed74ee2b1dc937cd790801c875e618f1863",
+    "data/prediction_models/esmfold-v1/receipt.json": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "metadata/experimental_control_large_tier_memory_estimate.json": "22b05d5c1fa0d5c8723d45a453543e19a5c52ed27e7de6f68229106f43f00bd6"
+  }
+}

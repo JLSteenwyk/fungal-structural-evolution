@@ -2833,3 +2833,13 @@ repeats and UTP15_C, consistent with uncertain relative placement despite high
 focal confidence. PAE is predicted uncertainty, not measured error or biological
 motion. Also archived the completed 89-marker/356-fit ESMFold FreeRate audit;
 the revised downstream controller has started its 1,424 optimization fits.
+
+
+September 16: scheduled the 1,361- and 1,468-residue experimental controls behind
+the current 20-control batch, using measured GPU allocation through 1,017
+residues and an explicit allocator-reservation caveat. The live handoff requires
+completed predecessor prediction/audit/conversion and a fresh idle GPU.
+Sequences remain full length and disjoint from all other queues. One 2,413-
+residue control remains deferred for a memory-saving execution approach;
+its estimated allocation exceeds 48 GiB. No completed-results claim for queued
+controls. Plans and evidence: metadata/experimental_control_large_tier_*.
