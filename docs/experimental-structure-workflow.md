@@ -450,6 +450,25 @@ python scripts/convert_esmfold_snapshot.py --predictions results/predictions/esm
 Matched AlphaFold/ESMFold/experimental comparisons remain pending; these new
 ESMFold identifiers require explicit sequence-based correspondence to the
 existing experimental mapping. The 35 longer input sequences remain deferred.
+
+The explicit predictor crosswalk has now completed. All 45 audited ESMFold
+sequences match 45 AlphaFold models exactly, with canonical sequences reread
+from all 90 coordinate files. Their 2,165 original reference links span 970
+entries, and every link has an existing experimental CA mapping. The join checks
+the original exact-sequence screen, reference metadata, model hashes, entity
+identity and complete control coverage; no prediction-agreement filtering is
+applied. Table and source provenance:
+results/experimental_structures/predictor-controls-crosswalk-v1, with archived
+receipt metadata/experimental_predictor_crosswalk_receipt.json.
+
+```bash
+python scripts/prepare_experimental_predictor_crosswalk.py --controls results/structures/esmfold-experimental-controls-v1 --control-audit results/predictions/experimental-controls-audit-v1 --predictions results/structural_markers/gdm-expanded-v1 --screen results/experimental_structures/sequence-screen-full-v1 --references results/experimental_structures/reference-metadata-v2 --mapping results/experimental_structures/ca-mapping-full-v1 --output results/experimental_structures/predictor-controls-crosswalk-v1
+```
+
+Three-way coordinate comparisons still require common residue masks and
+protein-level summaries that retain repeated experimental chains/models without
+treating them as independent proteins. The crosswalk establishes sequence
+identity, not unbiased accuracy or experimental/training independence.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
 
