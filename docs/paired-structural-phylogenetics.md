@@ -542,3 +542,18 @@ estimate. No downstream stage is yet claimed complete, and coupling inference
 remains separate. Runner: scripts/advance_site_rate_comparison.py; configuration
 and live identity: metadata/esmfold_combined_rate_comparison_controller_*.json;
 controller output: results/phylogeny/site-rate-comparison-controller-esmfold-combined-v1.
+
+The expanded AlphaFold cohort has now entered the matching site-rate workflow:
+124 markers, four model specifications and two heterogeneity models give
+992 fits, with 178,876 expected rate entries per heterogeneity model. Gamma4
+fitting and its audit run first, then FreeRate fitting and its audit. Four
+single-thread fits execute concurrently within the current 48-core allowance,
+with 8 GiB of fitting memory and 10 GiB of disk budget. The 0.5–48-hour estimate
+is a broad planning range. Source receipts, individual thread/memory settings
+and available host memory were checked before launch; hashes and memory are
+rechecked between stages. Commands, source pins and process identity are in
+metadata/gdm_expanded_site_rate_{resource_plan,launch}.json. Outputs use
+paired-site-rates[-freerate][-audit]-gdm-expanded-v1 under results/phylogeny.
+The source-specific AlphaFold and ESMFold cohorts remain separate. No completed
+AlphaFold rate export, optimization assessment or coupling analysis is claimed
+by this launch.
