@@ -1,0 +1,18 @@
+{
+  "status": "complete_hierarchical_experimental_predictor_control_summary",
+  "control_sequences": 12,
+  "protein_threshold_rows": 22,
+  "disposition_rows": 36,
+  "same_proteins_all_thresholds": 1,
+  "comparison_receipt_sha256": "5707ebf815d0b05c72bc2e146986530ec873e2f73d6447f24777b6f601ad2699",
+  "audit_sha256": "a5a1006f5f26ddde5c243256844ca216442d227f3d0eab7b7dd6f75bd6fddc3d",
+  "script_sha256": "33e1472d346d07e4b1e3cdcbdf8f65fec8c7f47b00a5795abde504617ca9a40b",
+  "interpretation": "Median chains within deposited model, median models within entry, median entries within canonical protein; then equal-protein descriptive medians/quartiles. Paired deltas are ESM-experiment minus AF-experiment at the chain level before hierarchical aggregation; positive favors lower AF discrepancy. Matched protein cohorts still use threshold-dependent residues and may use different entries. No independent-protein assumption, significance test, calibrated accuracy, training-independence or causal claim.",
+  "artifacts": {
+    "protein_summary.tsv": "537108a74e64ca24c480e26b48a388e57f850742cb452c1ffa507b1af3d51cb0",
+    "entry_summary.tsv": "48134fc2f25afe2b27498f8ed28e362ef111d68f55734dd95d10348f3742fc0d",
+    "protein_disposition.tsv": "e0ed39f17eeb890e16d6129ff623d1f0d341758c8b8e7a3342a38ea18c8601de",
+    "deposited_model_summary.tsv": "bba14992d5814262f82456fc79ba39a151391af9949f8019c98997e8fe5d4989",
+    "cohort_summary.tsv": "b176340c5271a89db519cddf81b23d4870cb42be37aae65b85eeb1dae85600e7"
+  }
+}

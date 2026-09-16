@@ -764,3 +764,42 @@ reverified before archiving the audit and conversion receipts as
 metadata/experimental_control_long_tier_{audit,conversion}_receipt.json.
 The next 20-control tier started automatically and has produced its first
 prediction. Integration with the existing three-way comparison is still pending.
+
+
+## Matched geometry for the 12 longer controls
+
+The next length tier now has a completed exact-sequence crosswalk (12 ESMFold
+and 12 AlphaFold coordinate sequences re-read, 251 entity links, 130 entries).
+All 253 deposited chain/model grids were evaluated at the same three joint
+confidence cutoffs. Of 759 rows, 387 meet the minimum 50-residue/half-sequence
+coverage criteria and 372 are explicitly excluded. The independent audit
+reconstructed every residue mask, every accepted common pair mask and all
+1,161 superpositions, with no missing chain grids.
+
+Protein-balanced summaries use the same nested chain/model/entry medians as the
+45 shorter controls. Independent pandas aggregation checked 10,296 metric
+values, 216 quantiles, cohort sizes and paired-difference sign counts; disposition
+counts were not independently recomputed in that summary check.
+
+| Joint pLDDT cutoff | Eligible proteins / 12 | Median paired ESMFold-minus-AlphaFold experimental RMSD (Å) | Positive differences |
+| --- | ---: | ---: | ---: |
+| 0 | 12 | 5.5277 | 10 |
+| 70 | 9 | 4.1645 | 7 |
+| 90 | 1 | 20.8987 | 1 |
+
+The very small high-confidence cohort must not be presented as a representative
+accuracy estimate. Only one protein qualifies at every threshold; neither its
+large RMSD nor the larger median in this length tier establishes a length
+effect or biological novelty. Domain orientation, experimental conformation,
+construct context and local geometry need targeted review. Focal pLDDT does
+not resolve relative domain orientation, and these controls still do not prove
+training independence. Both predictors always use identical residue and local
+pair masks within each comparison.
+
+Commands and pins for crosswalk→geometry→independent audit→summary are recorded
+in metadata/experimental_control_long_geometry_plan.json (one CPU, 4-GiB
+memory allowance, 2-GiB output and 0.02–2-hour planning range). Results are in
+results/experimental_structures/predictor-controls-{crosswalk,geometry,summary}-513-768-v1.
+Receipts, small protein/cohort/disposition tables and readbacks are versioned
+under metadata/experimental_control_long_*. This length tier is kept explicit;
+a combined summary and remaining longer controls are still pending.

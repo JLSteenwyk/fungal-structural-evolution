@@ -2804,3 +2804,13 @@ its successor uses this audited baseline for the existing planned 1,424
 FreeRate optimization diagnostics and exposure-frame workflow. The FreeRate
 producer remains active. No duplicate diagnostic execution or final coupling
 claim. See docs/site-specific-evolutionary-rates.md.
+
+
+September 16: all 12 newly predicted longer experimental controls now have
+completed three-way structural comparisons and independent readback: 759
+threshold rows, 387 accepted, 372 excluded and 1,161 superpositions checked.
+All 12 proteins qualify without confidence filtering, nine at joint pLDDT70,
+and one at90. The unfiltered median paired ESMFold-minus-AlphaFold experimental
+RMSD is +5.5277 Å. Small selected cohorts, domain orientation and experimental
+context prevent general accuracy or biological interpretation. Full tables
+and limitations: docs/experimental-structure-workflow.md.

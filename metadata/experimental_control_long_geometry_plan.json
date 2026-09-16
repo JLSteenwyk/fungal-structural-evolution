@@ -1,0 +1,68 @@
+{
+  "status": "prelaunch_long_control_geometry_audit_summary",
+  "created_at": 1789570688.8101463,
+  "controls": 12,
+  "reference_links": 251,
+  "entries": 130,
+  "cpu_affinity": [
+    28
+  ],
+  "threads": 1,
+  "memory_allowance_gib": 4,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.02,
+    2
+  ],
+  "basis": "All deposited chains/models at joint cutoffs 0/70/90, same 50-residue and half-length eligibility, common local pair masks; largest predicted sequence 741 residues. Serial entries and full independent readback.",
+  "commands": [
+    [
+      "python",
+      "scripts/compare_experimental_predictor_controls.py",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-513-768-v1",
+      "--mapping",
+      "results/experimental_structures/ca-mapping-full-v1",
+      "--references",
+      "results/experimental_structures/reference-metadata-v2",
+      "--output",
+      "results/experimental_structures/predictor-controls-geometry-513-768-v1"
+    ],
+    [
+      "python",
+      "scripts/audit_experimental_predictor_controls.py",
+      "--comparisons",
+      "results/experimental_structures/predictor-controls-geometry-513-768-v1",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-513-768-v1",
+      "--mapping",
+      "results/experimental_structures/ca-mapping-full-v1",
+      "--references",
+      "results/experimental_structures/reference-metadata-v2",
+      "--output",
+      "metadata/experimental_control_long_geometry_readback.json"
+    ],
+    [
+      "python",
+      "scripts/summarize_experimental_predictor_controls.py",
+      "--comparisons",
+      "results/experimental_structures/predictor-controls-geometry-513-768-v1",
+      "--audit",
+      "metadata/experimental_control_long_geometry_readback.json",
+      "--crosswalk",
+      "results/experimental_structures/predictor-controls-crosswalk-513-768-v1",
+      "--output",
+      "results/experimental_structures/predictor-controls-summary-513-768-v1"
+    ]
+  ],
+  "pins": {
+    "scripts/compare_experimental_predictor_controls.py": "15680b3572fa43ba631b4daf0eb95854acced90d7025536165f7deeac5c20b4c",
+    "scripts/audit_experimental_predictor_controls.py": "e6a82264a66a45702348810730bc19e067f53285d6e8eb257152ccd57583303b",
+    "scripts/summarize_experimental_predictor_controls.py": "33e1472d346d07e4b1e3cdcbdf8f65fec8c7f47b00a5795abde504617ca9a40b",
+    "results/experimental_structures/predictor-controls-crosswalk-513-768-v1/receipt.json": "e44f56b964b36b64e1d33ff9bc9065c873bb6bf1ed2fbe56196587c6eab8825e",
+    "results/experimental_structures/ca-mapping-full-v1/receipt.json": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd",
+    "results/experimental_structures/reference-metadata-v2/receipt.json": "d57b2d4b1f6050f94cfbc97fe81659cacb68dd2a48fa66374f79d847461ae378",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173"
+  },
+  "paid_resources": false
+}
