@@ -1,0 +1,45 @@
+{
+  "status": "prepared_native_readback_continuation_descriptor",
+  "source_results": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2",
+  "original_log_sha256": "125150b801f7ce67e4e72a0285f6631d8a4f608f4a1d97c6547126ecab326842",
+  "universe_receipt_sha256": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+  "cluster_sha256": "f1875916a41c3b96340c79d9040471b2d86fc880d8ceb749d8aff159c502198f",
+  "species_ids_sha256": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+  "native_locator_before": {
+    "working_directory_chain": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_Sep12/WorkingDirectory/"
+    ],
+    "clusters": null,
+    "tree_working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/",
+    "rooted_species_tree": null,
+    "unrooted_species_tree": null
+  },
+  "native_locator_after": {
+    "working_directory_chain": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_Sep12/WorkingDirectory/"
+    ],
+    "clusters": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt",
+    "tree_working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/",
+    "rooted_species_tree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesTree_rooted_ids.txt",
+    "unrooted_species_tree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesTree_unrooted_ids.txt"
+  },
+  "missing_species_tree_artifacts": {
+    "rooted_species_tree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesTree_rooted_ids.txt",
+    "unrooted_species_tree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesTree_unrooted_ids.txt"
+  },
+  "repair_target_empty_at_preparation": true,
+  "parser_sha256": "eb26ae6f62eb02aa1311414e0f3cc297aa8b20e8dd441e0b307ffc4e3dd69a66",
+  "script_sha256": "43e8c479a9747cb1a2aa343ebd6f387efa706c0993e97e6d2464a3277a86775b",
+  "artifacts": {
+    "Log.txt": "2804da891d0c107202cd474b442074ba4b520e0d0f27cbf0f47eea240478a906"
+  },
+  "next_requirements": [
+    "Completed and independently installed OG0000017 repair",
+    "Reviewed rooted 526-taxon species tree supplied through -s, or verified species-tree artifacts",
+    "Pinned native continuation command, resource plan and output protection",
+    "Independent reconciliation and species-tree sensitivity validation"
+  ],
+  "interpretation": "Native read-only locator resolves audited clusters and existing gene-tree directory through separate explicitly constructed metadata. No completed species tree is asserted and no inference is launched. Original run log is unchanged."
+}

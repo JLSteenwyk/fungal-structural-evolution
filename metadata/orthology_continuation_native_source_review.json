@@ -1,0 +1,25 @@
+{
+  "status": "native_continuation_source_and_locator_reviewed_not_launch_ready",
+  "installed_source_sha256": {
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/process_args.py": "ba9f81896bfc1313bb50a0cda5acef8027c7bb38b33ca999aa78041c0ff81f82",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/main.py": "a4b5222890d987bdef7fa0c1ff6031e55c5a0a27fcbbc45c9b7be02dfd252588",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/files.py": "eb26ae6f62eb02aa1311414e0f3cc297aa8b20e8dd441e0b307ffc4e3dd69a66",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/comparative_genomics/orthologues.py": "64a4a11a0a184572c14bfbc71eef977f5cd7ade7ed41adaf1f85ae93e3354f65"
+  },
+  "descriptor_receipt_sha256": "29d254651484343106fbaa4631e9a09220d8456de2f667fbda0174fc1c3d6eaf",
+  "observations": [
+    "Actual installed parser accepts --from-trees/-fgt; some comments and error strings still say -ft.",
+    "Original interrupted Log.txt resolves the WorkingDirectory chain but has no FN_Orthogroups or WorkingDirectory_Trees entry; native locator returns no cluster file and no species tree.",
+    "Constructed descriptor independently resolves the pinned cluster file and existing tree directory; its inferred species-tree paths do not exist.",
+    "Main qStartFromTrees dispatches OrthologuesFromGeneTrees with root_from_previous=False. This path consumes GetSpeciesTreeUnrootedFN through RootSpeciesTree; supplied -s alone must not be assumed to populate that required IDs file without a native behavior check.",
+    "Options.fix_files defaults True; --no-fix-files sets it False. The default OrthologuesFromGeneTrees branch updates MSA/tree outputs and runs a second InferOrthologs call. This requires explicit output-isolation and scientific policy review before launch.",
+    "StartFromTrees creates a new named results directory but retains wd_trees pointing at previous tree inputs; output-directory creation alone does not prove source protection."
+  ],
+  "next_actions": [
+    "Prepare and validate a rooted 526-taxon species-tree input with uncertainty/sensitivity explicitly retained.",
+    "Prepare isolated native tree-input view and verify species-ID conversion and file-write behavior with disposable fixtures.",
+    "Require completed independent repair installation and complete artifact validation before full reconciliation.",
+    "Freeze exact command and resource estimates after native behavior review; preserve original source log and artifacts."
+  ],
+  "inference_launched": false
+}
