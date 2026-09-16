@@ -847,3 +847,43 @@ Use fresh output paths. Plan: metadata/experimental_control_segment_geometry_pla
 (one CPU, 4-GiB allowance, 2-GiB output, 0.01–1 hour). Small nested summary:
 metadata/experimental_control_pfam_segment_summaries.tsv. The reproducible audit
 regenerated this table byte-for-byte. Full row tables remain outside Git.
+
+
+### Region-level predicted aligned error
+
+ESMFold PAE was summarized for every within-hit and unordered between-hit pair
+across the same 35 annotated regions: 237 cutoff-specific rows, with 146
+eligible and 91 explicitly excluded by coverage or overlapping distinct hits.
+Both matrix directions are retained, and self-diagonal values are excluded
+within hits. Masks use the full canonical sequence, native ESMFold CA pLDDT
+and serialized AlphaFold CA pLDDT at thresholds 0/70/90, without experimental
+coverage filtering. These masks therefore need not match the observed-residue
+geometry masks or their confidence rounding exactly.
+
+For Q04305 at joint pLDDT90, within-hit median PAE is 0.86–1.36 Å. Between the
+three WD40 repeats it is 1.07–1.64 Å; between each repeat and UTP15_C it is
+24.36–28.07 Å across both directions. This predicted uncertainty is consistent
+with the observed whole-protein placement discrepancy despite local agreement.
+It is not measured error or proof of PAE calibration, biological movement,
+experimental incompatibility or functional divergence. Assembly/construct
+context remains unresolved. Focal confidence alone does not establish reliable
+relative placement of annotated regions.
+
+The initial float32 quantile calculation failed an independent scalar readback
+by 6.87e-6 Å in one checked upper quantile. Version2 promotes stored PAE values
+to float64 before quantiles; original values and predictions are unchanged.
+The original summary remains preserved, with its producer in commit e2a94ee.
+All 237 emitted row masks/dispositions and pair counts now pass, along with
+584 quantiles derived from 4,012,430 directed pair values, at 1e-12 comparison
+tolerance. This readback independently uses Bio.PDB for AF confidence and
+Python scalar lists/statistics for quantiles; it does not independently prove
+the completeness of the emitted hit-pair universe or calibrate uncertainty.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/summarize_control_region_pae.py --controls results/structures/esmfold-experimental-controls-513-768-v1 --crosswalk results/experimental_structures/predictor-controls-crosswalk-513-768-v1 --pfam results/domains/marker-annotations-v1 --output results/experimental_structures/control-pfam-pae-513-768-v2
+OPENBLAS_NUM_THREADS=1 python scripts/audit_control_region_pae.py --summary results/experimental_structures/control-pfam-pae-513-768-v2 --controls results/structures/esmfold-experimental-controls-513-768-v1 --crosswalk results/experimental_structures/predictor-controls-crosswalk-513-768-v1 --pfam results/domains/marker-annotations-v1 --output metadata/experimental_control_region_pae_readback.json
+```
+
+Small table, receipt and readback: metadata/experimental_control_region_pae*.
+Use fresh outputs. This is a small serial readback of existing arrays; no new
+prediction or paid resource is involved.

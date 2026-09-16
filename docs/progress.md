@@ -2824,3 +2824,12 @@ exploratory Q04305 case, individually fitted annotated regions agree locally
 This supports treating whole-protein placement separately from within-region
 change; it does not establish biological domain motion or functional novelty.
 Context/PAE review remains pending. Details: docs/experimental-structure-workflow.md.
+
+
+September 16: completed region-level ESMFold PAE summaries across 12 longer
+controls, with 237 rows and 584 independently checked quantiles. In the Q04305
+example, within-region median PAE is ~0.9–1.4 Å versus ~24–28 Å between WD40
+repeats and UTP15_C, consistent with uncertain relative placement despite high
+focal confidence. PAE is predicted uncertainty, not measured error or biological
+motion. Also archived the completed 89-marker/356-fit ESMFold FreeRate audit;
+the revised downstream controller has started its 1,424 optimization fits.

@@ -1,0 +1,31 @@
+{
+  "status": "complete_control_region_pae_summary",
+  "proteins": 12,
+  "pfam_hits": 35,
+  "rows": 237,
+  "included_rows": 146,
+  "source_receipts": {
+    "controls": "548f00289cd9395dd842fdaa6ceb818037ac1e9026d42b625eb92f01a01b0044",
+    "crosswalk": "e44f56b964b36b64e1d33ff9bc9065c873bb6bf1ed2fbe56196587c6eab8825e",
+    "pfam": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+  },
+  "npz_sha256": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S0b8d4e8ec034bbe7e38401be0db088e127c66d44ef0872e7474c7aa39df06ce9.npz": "f1a1f42e9c5b5d3fa6dae626d5c75d6f65c67f8e79db32a5209cfa73c6629705",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S1388a54cb398512d6ac226de5606198945e6acbd290b575424e095cd7fbe6438.npz": "efb0ba04415b209d75d673237a2da0cc61a8c2f2523cdccf93d1181b4d7df375",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81.npz": "77d48d2c5ebe31b4aa53730b36728e22787611ab7d9887cf30da5a921ceb81dc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S4a79a9ca6b6fcb3175539bdae202a7cc5e2df058476852f87bf482b5d1127fd2.npz": "77767c6f3ba7d74f7cb2748cb8092b8592417b722184cab0cb7aad9acb5fba74",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S5bf066d076b004974606b1090a7d63589eabd59b61cfb3b2e1bf0c2f6bc8f8fc.npz": "1c976b12d19b921a92a589455380f6d3b1a3d3256a93da75d6aa6e113ac6a078",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S6c6238ce3df8a0730a750c002381624b18a9118d769139354008a70ca5ac7ee5.npz": "c818234e43e01d9430db369cc3b8bf63b606aa4f1733e3d462d467fe1f3bb279",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S6e7fd9e10994e26e9895de924a49c0063dfda2ba87b7f91ecbfd6f3df4dfa650.npz": "72b3aac575201b70db541e4ed7ca07d6434aa254f93c9905e5c0298829a256cf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S89d2fdfca2ef088a14904ec0666b8ad3b69f7e91ab028ebe763777e0acf6c69c.npz": "c0a6268520e8f0b48005fed98723ec14da8a387129b54766e9886ef693884307",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S8ffdab9ad3bb166a8856b225168506babb0f843c04a03ac7585f9214c3993f79.npz": "bcd9ee0b83f4cdec540c94c68b2f6b64e3d0ffa2f78d388999c65eb76010ab8b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/S9b034068144dc1c8f367dcc1d0940877c694565a6c15b2ee590634a8d512edac.npz": "5a7602a9de4c553bdcb956dda430dc288f7ee5988fd1773f2bdb06d9145411f6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/Sbf05158060be9cb3c113f731b4fb731d0cd45873415da4d31b30f3e292b21589.npz": "50b92659a5e60a39dc3cc776c9612884de1fb66b151acecb198f584785a82358",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-experimental-controls-513-768-v1/Sc4214baeff24b16caa93f67de339df82dfa7e06f3ef726aae3a8eba8ef80e8c0.npz": "812ee8102e9ac9a171a0daab13135be8415e0b88988de2c9e51f78662fa20790"
+  },
+  "script_sha256": "9f73dfad4cf8066f3cba4c73e9357409c795b84fe85335f35a92e975d833b373",
+  "interpretation": "ESMFold PAE, retaining both matrix directions; within-hit diagonal excluded. All full canonical positions passing joint AF/ESM focal confidence considered, without experimental-coverage restriction. Minimum 20 residues and half span per region. Overlapping different hits excluded explicitly. Raw Pfam hits are not independent structural domains. Predicted uncertainty is not measured error, biological motion or evidence of calibration.",
+  "artifacts": {
+    "region_pae.tsv": "6232aa70ace5c63f8012d029695f7014194e956f030619e08f87a74cef2763be"
+  }
+}

@@ -32,7 +32,7 @@ def main():
         sid=model['sequence_sha256'];link=links[sid];file=root/model['local_pae_npz_path']
         if sha(file)!=model['local_pae_npz_sha256']:raise ValueError('Changed PAE artifact')
         npz_pins[str(file)]=sha(file)
-        with np.load(file,allow_pickle=False) as d:pae=d['pae'].copy();esm=d['ca_plddt'].copy()
+        with np.load(file,allow_pickle=False) as d:pae=d['pae'].astype(np.float64);esm=d['ca_plddt'].copy()
         n=int(model['length'])
         if pae.shape!=(n,n) or esm.shape!=(n,) or not np.isfinite(pae).all():raise ValueError('Invalid PAE dimensions/values')
         afpath=root/link['alphafold_path']

@@ -429,3 +429,12 @@ revised audit receipt are versioned in metadata/esmfold_*revised* and
 metadata/esmfold_original_rate_controller_supersession.json. The new controller
 is transient and requires review after reboot. Downstream completion and the
 affected-marker coupling sensitivity remain pending.
+
+
+The combined ESMFold FreeRate export has now completed its full output audit:
+89 markers, 356 fits, 88,820 site-rate rows. Artifact hashes were reverified
+before archiving metadata/esmfold_combined_freerate_audit_receipt.json. The
+revised controller automatically completed its initial comparison and launched
+the 1,424 diagnostic optimization fits; its controller and four IQ-TREE workers
+were verified live. Optimization completion/selected output and coupling remain
+pending.
