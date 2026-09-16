@@ -1,0 +1,17 @@
+{
+  "task": "Independent full-proteome domain query-to-protein link readback",
+  "script_sha256": "7124ca8eb30c0448306072718db846a0e8af4cdd92fa7fc33721d1088ef3b070",
+  "input": "data/domains/full-inputs-v1",
+  "output": "results/domains/full-protein-link-readback-v1",
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 4,
+    "output_allowance_mib": 10,
+    "planning_hours": [
+      0.02,
+      0.5
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "scope": "Read every query and representative FASTA; verify all 5815847 links and complete deduplication coverage; no biological annotation claims."
+}

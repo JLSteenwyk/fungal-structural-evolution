@@ -78,3 +78,14 @@ The catalog gate requires all expected Pfam chunks exactly once, matching source
 The service is pinned by `metadata/full_pfam_annotation_completion_config.json`; its script is `advance_full_pfam_annotation.py`, with catalog assembly in `combine_full_pfam_annotation_snapshots.py`. It uses one CPU, an 8 GiB planning allowance, 16 GiB service limit, 32 GiB available-memory/50 GiB free-disk gates and a 0.1–9 hour planning range after search completion. No new charges. Failure leaves reviewable state and does not automatically restart or reinterpret incomplete output as success. A transient service does not survive reboot. The marker-query partition, protein-level joins, overlap resolution and architecture inference remain separate downstream requirements.
 
 The initial raw-field readback subsequently passed for all 52 chunks and all 6,498,460 rows. Its receipt is archived as `metadata/full_pfam_annotation_readback_receipt.json`. The completion controller continues waiting for the remaining HMMER search; no full64 catalog exists yet.
+
+## Full-proteome query linkage readback
+
+`scripts/readback_full_domain_protein_links.py` independently reconstructs every query identifier from source representative FASTA sequences, using a minimal streaming parser separate from the preparation script's Bio.SeqIO parser. It requires an exact match for every taxon, protein accession, sequence hash and search partition in `protein_links.tsv`. It checks unique protein identifiers within each taxon, all query sequence hashes, disjoint marker/additional query sets, complete additional-query coverage, and per-taxon and aggregate counts against pinned source receipts. Marker queries not represented in the full proteome are reported explicitly. Identical sequences remain linked to every source protein; deduplication is only a search optimization.
+
+```bash
+python scripts/readback_full_domain_protein_links.py \
+  --output results/domains/full-protein-link-readback-v1
+```
+
+The output is immutable; use a fresh directory for subsequent runs. A passing receipt verifies computational linkage, not the biological correctness of representative selection, taxonomy, homology or Pfam assignments. Downstream joins must retain the query-source partition and pass both this linkage check and the corresponding complete annotation checks before interpreting protein-level coverage. Full architecture resolution and evolutionary inference remain separate requirements. The resource estimate is recorded in `metadata/full_domain_protein_link_readback_plan.json`.
