@@ -425,3 +425,27 @@ Any topology changes must be distinguished from changes in branch lengths.
 Site rates, exposure covariates and sequence–structure coupling also need
 recomputation after the omission; refitted branch point estimates alone will not
 establish robustness of the earlier coupling results.
+
+## Expanded AlphaFold joint path uncertainty: September 16 continuation
+
+The complete 124-marker resampling audit now covers 372 marker/block batches,
+74,400 attempted paired draws and 148,770 validated fits. Fifteen draws were
+unestimable. Its two artifact hashes and the full point-benchmark artifact
+hashes were independently rechecked before downstream launch. The audit
+receipt and 372-row batch summary are versioned under
+metadata/gdm_expanded_paired_resampling_*.
+
+Joint path uncertainty is now being calculated for all 737,851 accepted and
+7,002 excluded geometry pairs using the existing implementation. Each draw's
+branches are summed before calculating path quantiles and covariance, preserving
+correlated branch estimation error. This adds AA and 3Di AF summaries at block
+lengths 1, 10 and 30; the other structural models remain point estimates.
+The calculation uses one CPU core, single-thread BLAS, and a 32-GB memory/
+10-GB disk planning allowance. No geometry cohort or fitted tree was changed.
+
+Output results/phylogeny/paired-path-uncertainty-gdm-expanded-v1 remains pending
+until its complete receipt exists and numerical readback is performed. Resource
+plan and verified process identity are metadata/gdm_expanded_joint_path_*.json.
+These are conditional sampling-sensitivity summaries, not calibrated confidence
+intervals, evolutionary coupling estimates or structural-acceleration tests.
+Topology, prediction, alignment and model uncertainty remain outside this stage.

@@ -1,0 +1,26 @@
+{
+  "status": "live_full_path_uncertainty_job",
+  "pid": 53615,
+  "created": 1789566297.77,
+  "session_id": 56802,
+  "command": [
+    "python",
+    "scripts/append_paired_path_uncertainty.py",
+    "--points",
+    "results/phylogeny/paired-path-points-gdm-expanded-v1",
+    "--inputs",
+    "results/phylogeny/paired-inputs-gdm-expanded-v1",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+    "--resampling",
+    "results/phylogeny/paired-resampling-gdm-expanded-v1",
+    "--resampling-audit",
+    "results/phylogeny/paired-resampling-audit-gdm-expanded-v1",
+    "--output",
+    "results/phylogeny/paired-path-uncertainty-gdm-expanded-v1"
+  ],
+  "affinity": [
+    4
+  ],
+  "verified_at": 1789566355.1025815
+}

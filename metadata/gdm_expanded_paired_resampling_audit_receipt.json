@@ -1,0 +1,20 @@
+{
+  "status": "complete_paired_resampling_audit",
+  "markers": 124,
+  "batches": 372,
+  "attempted_paired_draws": 74400,
+  "unestimable_draws": 15,
+  "validated_fits": 148770,
+  "fits_with_warnings": 147127,
+  "branch_interval_rows": 160548,
+  "resampling_receipt_sha256": "1e8c7ad781629899d04503b4d9a0e8d9c9e2fa12083fb5daef8f5b2ee298c303",
+  "script_sha256": "f637b7ba40d3b079b41f34f483d276d7f260fd993d890f53a1486fe55652fb61",
+  "resampling_helper_sha256": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+  "numpy_version": "2.2.6",
+  "quantile_method": "linear; 2.5 and 97.5 percentiles, at least 90% draws estimable",
+  "interpretation": "Conditional site/circular-block sampling sensitivity on fixed sequence marker topologies. Intervals are not calibrated for topology/model/prediction error or all spatial feature dependence. Paired sampling covariance describes estimation error, not evolutionary coupling. No branch ratios, p-values or acceleration rankings.",
+  "artifacts": {
+    "batch_summary.tsv": "e53fff173d071609c23da07b28929bb816147ab89bf15117bc24cfe644cff434",
+    "conditional_intervals.tsv": "4de6e9cd07aa8a0b789239addc672c290d8bd1e1268561a3330b0c2bba36bcac"
+  }
+}

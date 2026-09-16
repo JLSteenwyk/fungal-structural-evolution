@@ -1,0 +1,39 @@
+{
+  "status": "prelaunch_full_124_marker_joint_path_sensitivity",
+  "markers": 124,
+  "accepted_pairs": 737851,
+  "excluded_pairs": 7002,
+  "block_lengths": [
+    1,
+    10,
+    30
+  ],
+  "replicates_per_block": 200,
+  "attempted_draws": 74400,
+  "validated_fits": 148770,
+  "unestimable_draws": 15,
+  "threads": 1,
+  "cpu_affinity": [
+    4
+  ],
+  "memory_budget_gb": 32,
+  "disk_budget_gb": 10,
+  "planning_hours": [
+    0.5,
+    12
+  ],
+  "basis": "Approximately 2.8 times earlier 72-marker pair count; existing verified joint-draw implementation, 512-pair matrix chunks. Full tables remain in memory. Estimates are not guarantees.",
+  "available_memory_bytes": 608305393664,
+  "paid_resources": false,
+  "output": "results/phylogeny/paired-path-uncertainty-gdm-expanded-v1",
+  "source_audit_receipt_sha256": "da8b6ab4ab88368acf98453fbae4d91b33c7c79127766db95c5b71a951c0772b",
+  "source_point_receipt_sha256": "93b2402f61824a98f218bd931e1f7b0bc58924c3d49239ce581f2d0e8fb1cf3f",
+  "pinned_scripts": {
+    "scripts/append_paired_path_uncertainty.py": "700471530b38ff65290909f8b2e3a44d9b9553993a6aeaf5dfd05c03e3171643",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999"
+  },
+  "interpretation": "Conditional sampling sensitivity only. Sum branches within each joint draw; not calibrated acceleration tests or evolutionary coupling."
+}

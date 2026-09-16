@@ -1,0 +1,28 @@
+{
+  "status": "live_identity_universe_readback",
+  "pid": 55299,
+  "created": 1789566444.5,
+  "session_id": 12750,
+  "command": [
+    "python",
+    "scripts/audit_orthology_family_universe.py",
+    "--working",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory",
+    "--output",
+    "results/orthology/family-universe-readback-v1/receipt.json"
+  ],
+  "cpu_affinity": [
+    8
+  ],
+  "verified_at": 1789566486.6302502,
+  "resource_envelope": {
+    "threads": 1,
+    "memory_gb": 2,
+    "input_gb": 2.4,
+    "planning_hours": [
+      0.05,
+      2
+    ],
+    "paid_resources": false
+  }
+}
