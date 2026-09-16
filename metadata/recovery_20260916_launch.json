@@ -1,0 +1,123 @@
+{
+  "status": "launched_reviewed_jobs_with_cooling",
+  "boot_id": "968ec9b7-a655-466d-8a29-02a815b9051b",
+  "started_at": 1789565522.5975814,
+  "jobs": [
+    {
+      "old_pid": 2006275,
+      "pid": 40917,
+      "created": 1789565522.48,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-513-768-gpu0-v1",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-513-768-gpu0-v1",
+        "--max-length",
+        "768",
+        "--limit",
+        "5510"
+      ],
+      "log": "results/recovery-20260916/2006275.log"
+    },
+    {
+      "old_pid": 3150233,
+      "pid": 40919,
+      "created": 1789565522.48,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_marker_gene_trees.py"
+      ],
+      "log": "results/recovery-20260916/3150233.log"
+    },
+    {
+      "old_pid": 3765266,
+      "pid": 40922,
+      "created": 1789565522.48,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_fcs_candidate_copy_trees.py",
+        "--inputs",
+        "results/phylogeny/fcs-candidate-copy-tree-inputs-v1",
+        "--output",
+        "results/phylogeny/fcs-candidate-copy-trees-v1",
+        "--resources",
+        "metadata/fcs_candidate_copy_tree_resources.json"
+      ],
+      "log": "results/recovery-20260916/3765266.log"
+    },
+    {
+      "old_pid": 3392402,
+      "pid": 40923,
+      "created": 1789565522.48,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_taxon_sensitivity_trees.py",
+        "--inputs",
+        "results/phylogeny/taxon-identity-inputs-v1",
+        "--output",
+        "results/phylogeny/taxon-identity-trees-v1"
+      ],
+      "log": "results/recovery-20260916/3392402.log"
+    },
+    {
+      "old_pid": 3799913,
+      "pid": 40925,
+      "created": 1789565522.49,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/profile-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-profile-guide-v1"
+      ],
+      "log": "results/recovery-20260916/3799913.log"
+    },
+    {
+      "old_pid": 3799915,
+      "pid": 40927,
+      "created": 1789565522.49,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/mafft-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-mafft-guide-v1"
+      ],
+      "log": "results/recovery-20260916/3799915.log"
+    },
+    {
+      "old_pid": 18695,
+      "pid": 40928,
+      "created": 1789565522.49,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_domains.py",
+        "--output",
+        "results/domains/full-search-v1"
+      ],
+      "log": "results/recovery-20260916/18695.log"
+    },
+    {
+      "old_pid": 287662,
+      "pid": 40929,
+      "created": 1789565522.49,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/retrieve_matched_models.py"
+      ],
+      "log": "results/recovery-20260916/287662.log"
+    }
+  ],
+  "pending_manual_review": [
+    "supported PMSF checkpoint recovery",
+    "OrthoFinder assignment continuation",
+    "replacement completion controllers"
+  ],
+  "cooling_config_sha256": "53e09843e9d1d5373ebd9f114bd4146e4076c3a8d8649c857aee5f61c4215b1f"
+}

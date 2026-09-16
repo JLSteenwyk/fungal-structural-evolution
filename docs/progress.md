@@ -2720,3 +2720,15 @@ therefore remain separate from the atlas pending source-compatibility review.
 Four tested predictions were 4.1–4.9 times slower per sequence on Spark.
 No production work moved; local cooling schedule unchanged. CPU offload remains
 an option using native ARM tools. Details: docs/dgx-spark-resources.md.
+
+September 16 reboot recovery: the user-requested pause suspended 32 processes,
+but the scheduled continuation has no success record. Host rebooted at 08:58
+Eastern; all prior process identities and the transient timer were gone.
+Recovered eight reviewed restartable jobs, retaining 2,477 saved ESMFold
+prediction receipts for startup validation and reusing checked tree/search
+outputs. Four incomplete domain tables were archived before rerunning their
+chunks. PMSF had no serialized checkpoint: preserved old logs, checked all
+input pins, and began the same analysis in a fresh recovery directory.
+The 24-core and 30-second GPU run/rest limits remain active. OrthoFinder
+continuation and replacement completion controllers are still pending review.
+Details and recovery provenance: docs/recovery-20260916.md.

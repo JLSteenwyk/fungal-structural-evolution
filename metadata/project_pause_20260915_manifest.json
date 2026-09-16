@@ -1,0 +1,593 @@
+{
+  "purpose": "User-requested project pause until Wednesday September 16 00:05 Pacific local time (PDT), 03:05 Eastern",
+  "roots": [
+    {
+      "pid": 18695,
+      "created": 1789276736.5,
+      "command": [
+        "python",
+        "scripts/run_full_domains.py",
+        "--output",
+        "results/domains/full-search-v1"
+      ]
+    },
+    {
+      "pid": 287662,
+      "created": 1789282287.43,
+      "command": [
+        "python",
+        "scripts/retrieve_matched_models.py"
+      ]
+    },
+    {
+      "pid": 838660,
+      "created": 1789277671.59,
+      "command": [
+        "python",
+        "scripts/run_orthology_assignment.py"
+      ]
+    },
+    {
+      "pid": 841175,
+      "created": 1789277674.86,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+        "--assign",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/orthology_inputs/v1/additional",
+        "--core",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_Sep12",
+        "-n",
+        "full526v2",
+        "-t",
+        "32",
+        "-a",
+        "8",
+        "-M",
+        "msa",
+        "-S",
+        "diamond",
+        "-A",
+        "famsa",
+        "-T",
+        "fasttree"
+      ]
+    },
+    {
+      "pid": 841701,
+      "created": 1789277676.11,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+        "--assign",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/orthology_inputs/v1/additional",
+        "--core",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_Sep12",
+        "-n",
+        "full526v2",
+        "-t",
+        "32",
+        "-a",
+        "8",
+        "-M",
+        "msa",
+        "-S",
+        "diamond",
+        "-A",
+        "famsa",
+        "-T",
+        "fasttree"
+      ]
+    },
+    {
+      "pid": 1157876,
+      "created": 1789283372.23,
+      "command": [
+        "/bin/sh",
+        "-c",
+        "FastTree /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa > /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0000017.txt"
+      ]
+    },
+    {
+      "pid": 1157877,
+      "created": 1789283372.24,
+      "command": [
+        "FastTree",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa"
+      ]
+    },
+    {
+      "pid": 2005801,
+      "created": 1789335163.81,
+      "command": [
+        "python",
+        "scripts/run_ready_long_marker_predictions.py",
+        "--config",
+        "metadata/long_marker_gpu0_prediction_config.json"
+      ]
+    },
+    {
+      "pid": 2006275,
+      "created": 1789335164.55,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-513-768-gpu0-v1",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-513-768-gpu0-v1",
+        "--max-length",
+        "768",
+        "--limit",
+        "5510"
+      ]
+    },
+    {
+      "pid": 2104592,
+      "created": 1789335330.76,
+      "command": [
+        "python",
+        "scripts/advance_prediction_snapshot.py",
+        "--config",
+        "metadata/long_marker_gpu0_snapshot_controller_config.json"
+      ]
+    },
+    {
+      "pid": 3150233,
+      "created": 1789271402.51,
+      "command": [
+        "python",
+        "scripts/run_marker_gene_trees.py"
+      ]
+    },
+    {
+      "pid": 3392402,
+      "created": 1789302284.78,
+      "command": [
+        "python",
+        "scripts/run_taxon_sensitivity_trees.py",
+        "--inputs",
+        "results/phylogeny/taxon-identity-inputs-v1",
+        "--output",
+        "results/phylogeny/taxon-identity-trees-v1"
+      ]
+    },
+    {
+      "pid": 3392528,
+      "created": 1789302285.24,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/taxon-identity-inputs-v1/profile-exclude_hybrids_and_uncertain_labels.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "8",
+        "--mem",
+        "32G",
+        "--seed",
+        "20260913",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/taxon-identity-trees-v1/profile-exclude_hybrids_and_uncertain_labels/guide"
+      ]
+    },
+    {
+      "pid": 3392530,
+      "created": 1789302285.25,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/taxon-identity-inputs-v1/profile-exclude_curated_hybrids.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "8",
+        "--mem",
+        "32G",
+        "--seed",
+        "20260913",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/taxon-identity-trees-v1/profile-exclude_curated_hybrids/guide"
+      ]
+    },
+    {
+      "pid": 3700451,
+      "created": 1789326797.11,
+      "command": [
+        "python",
+        "scripts/run_species_pmsf.py",
+        "--matrix",
+        "results/phylogeny/profile-matrix-50-v1",
+        "--guide-audit",
+        "results/phylogeny/profile-guide-audit-v1",
+        "--resources",
+        "results/phylogeny/species-mixture-resources-v2",
+        "--output",
+        "results/phylogeny/pmsf-profile-profile-v1"
+      ]
+    },
+    {
+      "pid": 3700949,
+      "created": 1789326797.47,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-matrix-50-v1/matrix.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+C20+F+G4",
+        "--tree-freq",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-profile-profile-v1/input_guide.treefile",
+        "-T",
+        "16",
+        "--mem",
+        "600G",
+        "--seed",
+        "20260913",
+        "--alrt",
+        "1000",
+        "-B",
+        "1000",
+        "--bnni",
+        "--boot-trees",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-profile-profile-v1/pmsf"
+      ]
+    },
+    {
+      "pid": 3707279,
+      "created": 1789343647.78,
+      "command": [
+        "python",
+        "scripts/advance_crossed_species_pmsf.py",
+        "--config",
+        "metadata/crossed_species_pmsf_controller_config.json"
+      ]
+    },
+    {
+      "pid": 3765266,
+      "created": 1789345474.64,
+      "command": [
+        "python",
+        "scripts/run_fcs_candidate_copy_trees.py",
+        "--inputs",
+        "results/phylogeny/fcs-candidate-copy-tree-inputs-v1",
+        "--output",
+        "results/phylogeny/fcs-candidate-copy-trees-v1",
+        "--resources",
+        "metadata/fcs_candidate_copy_tree_resources.json"
+      ]
+    },
+    {
+      "pid": 3799913,
+      "created": 1789346609.35,
+      "command": [
+        "python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/profile-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-profile-guide-v1"
+      ]
+    },
+    {
+      "pid": 3800065,
+      "created": 1789346609.79,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/profile-matrix-fcs-sensitivity-v2/matrix.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "16",
+        "--mem",
+        "32G",
+        "--seed",
+        "20260913",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-profile-guide-v1/guide"
+      ]
+    },
+    {
+      "pid": 3799915,
+      "created": 1789346609.41,
+      "command": [
+        "python",
+        "scripts/run_initial_species_tree.py",
+        "--matrix",
+        "results/phylogeny/mafft-matrix-fcs-sensitivity-v2",
+        "--output",
+        "results/phylogeny/fcs-mafft-guide-v1"
+      ]
+    },
+    {
+      "pid": 3800066,
+      "created": 1789346609.81,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-fcs-sensitivity-v2/matrix.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "16",
+        "--mem",
+        "32G",
+        "--seed",
+        "20260913",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-mafft-guide-v1/guide"
+      ]
+    },
+    {
+      "pid": 1381922,
+      "created": 1789413473.27,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5002573at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "1075177510",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5002573at2759/tree"
+      ]
+    },
+    {
+      "pid": 1410138,
+      "created": 1789415119.65,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003022at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "2055575764",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003022at2759/tree"
+      ]
+    },
+    {
+      "pid": 1664094,
+      "created": 1789435556.58,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+        "--cut_ga",
+        "--cpu",
+        "2",
+        "--noali",
+        "--domtblout",
+        "results/domains/full-search-v1/chunk-052.domtblout",
+        "-o",
+        "/dev/null",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/pfam/38.2/hmm_chunks/chunk-052.hmm",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/domains/full-inputs-v1/additional_sequences.faa"
+      ]
+    },
+    {
+      "pid": 1672271,
+      "created": 1789436459.22,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+        "--cut_ga",
+        "--cpu",
+        "2",
+        "--noali",
+        "--domtblout",
+        "results/domains/full-search-v1/chunk-053.domtblout",
+        "-o",
+        "/dev/null",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/pfam/38.2/hmm_chunks/chunk-053.hmm",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/domains/full-inputs-v1/additional_sequences.faa"
+      ]
+    },
+    {
+      "pid": 1678175,
+      "created": 1789437123.31,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+        "--cut_ga",
+        "--cpu",
+        "2",
+        "--noali",
+        "--domtblout",
+        "results/domains/full-search-v1/chunk-054.domtblout",
+        "-o",
+        "/dev/null",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/pfam/38.2/hmm_chunks/chunk-054.hmm",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/domains/full-inputs-v1/additional_sequences.faa"
+      ]
+    },
+    {
+      "pid": 1694359,
+      "created": 1789438970.88,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src/hmmsearch",
+        "--cut_ga",
+        "--cpu",
+        "2",
+        "--noali",
+        "--domtblout",
+        "results/domains/full-search-v1/chunk-055.domtblout",
+        "-o",
+        "/dev/null",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/pfam/38.2/hmm_chunks/chunk-055.hmm",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/domains/full-inputs-v1/additional_sequences.faa"
+      ]
+    },
+    {
+      "pid": 1701368,
+      "created": 1789439741.63,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003192at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "2009240211",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003192at2759/tree"
+      ]
+    },
+    {
+      "pid": 1743738,
+      "created": 1789444544.25,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-candidate-copy-tree-inputs-v1/5001318at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "--keep-ident",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "1862237931",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-candidate-copy-trees-v1/5001318at2759/tree"
+      ]
+    },
+    {
+      "pid": 1760480,
+      "created": 1789446351.2,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-candidate-copy-tree-inputs-v1/5001413at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "--keep-ident",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "588816721",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/fcs-candidate-copy-trees-v1/5001413at2759/tree"
+      ]
+    },
+    {
+      "pid": 1775985,
+      "created": 1789448085.95,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003205at2759/input.faa",
+        "-st",
+        "AA",
+        "-m",
+        "MFP",
+        "-mset",
+        "LG,WAG,JTT",
+        "-mfreq",
+        "F",
+        "-mrate",
+        "G",
+        "--alrt",
+        "1000",
+        "-T",
+        "2",
+        "--mem",
+        "4G",
+        "--seed",
+        "1604256937",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/marker-gene-trees-v2/5003205at2759/tree"
+      ]
+    }
+  ],
+  "excluded_pids": [
+    1,
+    2772037,
+    1781543,
+    22227,
+    1781556,
+    1243412,
+    2775512,
+    2775290
+  ],
+  "created_at": 1789448431.9800007,
+  "python": "/home/bizon/anaconda3/bin/python",
+  "cooling_script_sha256": "b1d23e2286c471d29c270659d9ad141fdd2a7de142227121c0e7bc1e85258ec8",
+  "pause_resume_script_sha256": "1d59837391eae1c3e09d99146b9a91661bc5a87a16f769411183f7476278bbc8"
+}

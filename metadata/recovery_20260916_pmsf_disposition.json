@@ -1,0 +1,37 @@
+{
+  "status": "interrupted_without_serialized_checkpoint",
+  "observed_at": 1789565612.886045,
+  "old_output": "results/phylogeny/pmsf-profile-profile-v1",
+  "preserved_artifacts": {
+    "config.json": "39cbecba1cad6bb30e198119fbe4787ffdb097cd6baa5044d2eb9206833c2368",
+    "stdout.log": "4b59acb65145bb47c9bb8bd6ea20262f68766bff95a47b2c546dbe00b07bde2c",
+    "input_guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "pmsf.log": "4b59acb65145bb47c9bb8bd6ea20262f68766bff95a47b2c546dbe00b07bde2c"
+  },
+  "restart_output": "results/phylogeny/pmsf-profile-profile-recovery-v2",
+  "reason": "Reboot lost in-memory profile optimization; no ckp, sitefreq or completed tree exists. Source inputs and executable pins all checked. Requires recomputation, not checkpoint recovery.",
+  "resource_plan": {
+    "matrix_labels": [
+      "profile",
+      "mafft"
+    ],
+    "guide_labels": [
+      "profile",
+      "mafft"
+    ],
+    "crossed_runs": 4,
+    "model": "LG+C20+F+G4",
+    "method": "PMSF",
+    "concurrent_runs": 1,
+    "threads": 16,
+    "iqtree_memory_limit": "600G",
+    "minimum_available_memory_gib": 750,
+    "output_allowance_gb": 100,
+    "planning_wall_hours_per_run": [
+      24,
+      336
+    ],
+    "runtime_basis": "Conservative planning envelope for full-matrix mixture profile estimation and supported tree search, not a measured prediction.",
+    "prerequisites": "Both completed guide receipts, exact tip grids and finite branch lengths; freeze each guide before use. All four guide/alignment combinations preserve 526 taxa. Support, model adequacy, gene discordance and taxon/marker sensitivity remain required."
+  }
+}

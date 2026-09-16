@@ -1,0 +1,87 @@
+{
+  "status": "partial_job_recovery_verified",
+  "boot_time": 1789563530.0,
+  "observed_at": 1789565590.4215922,
+  "prior_suspended_processes_surviving": 0,
+  "recovered_jobs": [
+    {
+      "pid": 40917,
+      "old_pid": 2006275,
+      "status": "running",
+      "cpu_count": 24,
+      "log_tail": ""
+    },
+    {
+      "pid": 40919,
+      "old_pid": 3150233,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": "\n5000743at2759 inferred\n5000870at2759 inferred\n5001273at2759 inferred\n5001156at2759 inferred\n5000986at2759 inferred\n5001280at2759 inferred\n5001413at2759 inferred\n5001318at2759 inferred\n5001473at2759 inferred\n5001660at2759 inferred\n5001734at2759 inferred\n5001941at2759 inferred\n5002334at2759 inferred\n"
+    },
+    {
+      "pid": 40922,
+      "old_pid": 3765266,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": ""
+    },
+    {
+      "pid": 40923,
+      "old_pid": 3392402,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": ""
+    },
+    {
+      "pid": 40925,
+      "old_pid": 3799913,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": ""
+    },
+    {
+      "pid": 40927,
+      "old_pid": 3799915,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": ""
+    },
+    {
+      "pid": 40928,
+      "old_pid": 18695,
+      "status": "sleeping",
+      "cpu_count": 24,
+      "log_tail": ".7\nchunk-041 62316 12505.3\nchunk-040 103373 12796.4\nchunk-042 123124 11697.6\nchunk-043 125177 11068.8\nchunk-044 113610 14206.7\nchunk-048 79416 23724.3\nchunk-045 115270 13276.7\nchunk-046 161775 14097.8\nchunk-050 85343 26155.2\nchunk-047 150789 15421.8\nchunk-051 100052 22835.8\nchunk-049 187511 23736.8\n"
+    },
+    {
+      "pid": 40929,
+      "old_pid": 287662,
+      "status": "running",
+      "cpu_count": 24,
+      "log_tail": ""
+    }
+  ],
+  "saved_predictions_before_recovery": 2477,
+  "pending": [
+    "OrthoFinder: partial alignment/tree outputs and FAMSA errors require per-family continuation review",
+    "completion controllers: refresh parent identities"
+  ],
+  "cooling_state_path": "results/recovery-20260916/cooling_state.json",
+  "pmsf_recomputation_launched": {
+    "pid": 44920,
+    "created": 1789565641.56,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_species_pmsf.py",
+      "--matrix",
+      "results/phylogeny/profile-matrix-50-v1",
+      "--guide-audit",
+      "results/phylogeny/profile-guide-audit-v1",
+      "--resources",
+      "results/phylogeny/species-mixture-resources-v2",
+      "--output",
+      "results/phylogeny/pmsf-profile-profile-recovery-v2"
+    ]
+  },
+  "current_cooling_state_path": "results/recovery-20260916/cooling_v2_state.json"
+}
