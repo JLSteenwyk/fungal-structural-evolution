@@ -2997,3 +2997,8 @@ Installed-source review identifies the unfinished clade-specific discovery stage
 ### 2026-09-16 — complete discovery inputs prepared for both guides
 
 Staged and independently verified all 1,390,832 intermediate discovery proteins for both guide alternatives. Reused only identical complete clade memberships: 90 guide-clade occurrences reduce to 60 distinct input sets, with 30 shared clades. All 676 copied FASTAs passed checksum, source-isolation, identifier, residue and count checks; both guides cover exactly the same protein universe without within-guide duplication. Eight distinct single-taxon clades remain explicitly included. No discovery inference has launched; native workflow validation, resource planning and combined membership checks remain necessary. Running prediction, annotation and tree work was not changed.
+
+
+### 2026-09-16 — native discovery paths validated on software fixtures
+
+Executed and independently checked two-taxon and single-taxon discovery software paths. Found that --only-groups still triggers downstream trees under default file fixing; --no-fix-files preserves the exact fixture family partition while stopping before tree inference. Found that one-taxon -f and -b with -o both fail with exit code zero. A complete native one-taxon self-search restart without -o recovers all 48 synthetic input IDs in 24 expected groups and leaves source artifacts unchanged. All eight biological single-taxon clades remain included in the planned analysis. Production self-search generation, full resource planning and artifact-level completion checks remain pending; no biological subset/pilot or discovery batch was run.

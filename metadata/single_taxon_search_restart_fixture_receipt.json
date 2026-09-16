@@ -1,0 +1,38 @@
+{
+  "status": "observed_single_taxon_native_search_restart",
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 2.974301815032959,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+    "-b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/single-taxon-search-restart-fixture-v3/WorkingDirectory",
+    "-t",
+    "2",
+    "-a",
+    "1",
+    "-S",
+    "diamond",
+    "--scores-v2",
+    "--only-groups",
+    "--no-fix-files",
+    "-I",
+    "1.2",
+    "-n",
+    "single_taxon_fixture"
+  ],
+  "original_input_sha256": {
+    "Species0.fa": "1a2ca5de3b8ed05fbe29ce678e73d574789309ede333ef8cb6965791b6b78bd0",
+    "Blast0_0.txt.gz": "bf49dee9515429db4f5298d15604ee540e050bd53413ce76efb150c052fdb5fd",
+    "SpeciesIDs.txt": "e898554d3e343fe19125ac8fc715ab05dfbae79d5848caf5c1328d4e6ea35c05",
+    "SequenceIDs.txt": "8de8f380283a7dccda43d5c02a15996e95d7991af97b4573fd95d2056d090a0a"
+  },
+  "original_inputs_unchanged": true,
+  "result_directories": [
+    "WorkingDirectory/OrthoFinder/Results_single_taxon_fixture"
+  ],
+  "fixture_receipt_sha256": "59062fcf33db4311e6dd8c14b734f3ff4c6aec0c9822e8b56b22329d5055d76b",
+  "log_sha256": "0cabce4d2f7e73c1a9222dee1a158fc34c82d298ae3f52d13db77cd0e270dfbc",
+  "script_sha256": "c602eafffd4f87ef01ed92a5e4e5cf95fd6b11314010d05bfc541670ccc5a520",
+  "interpretation": "Synthetic self-search copied from the two-taxon software fixture. Native restart is tested without adding a fictitious species. Exit status requires artifact validation; no biological inference or full-scale search launched."
+}

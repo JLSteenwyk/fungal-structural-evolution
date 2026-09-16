@@ -1,0 +1,21 @@
+{
+  "output": "results/orthology/native-clade-discovery-fixture-v2",
+  "script_sha256": "893604817cd5d772f406a119784632f00be8944d0af3537021b67841ad309e59",
+  "resources": {
+    "cpu_threads": 2,
+    "memory_allowance_gib": 4,
+    "output_allowance_gib": 1,
+    "timeout_seconds_per_case": 180,
+    "cases": 4,
+    "cost": "Existing host; no new charges"
+  },
+  "scope": "Software contract fixtures using synthetic strings; full biological sampling unchanged.",
+  "supplemental_single_taxon_restart": {
+    "script": "scripts/check_single_taxon_search_restart.py",
+    "output": "results/orthology/single-taxon-search-restart-fixture-v3",
+    "cpu_threads": 2,
+    "memory_allowance_gib": 4,
+    "timeout_seconds": 180,
+    "scope": "Synthetic self-search restart, no biological data"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed_native_discovery_software_contract_readback",
+  "cases": [
+    {
+      "case": "1-taxon-default",
+      "behavior": "rejected_single_taxon_without_clusters",
+      "returncode": 0
+    },
+    {
+      "case": "2-taxon-default",
+      "behavior": "exact_synthetic_partition",
+      "families": 24,
+      "proteins": 96,
+      "gene_trees": 24,
+      "returncode": 0,
+      "cluster_sha256": "d864950fed5a1edbfe921126fcc99404ca8d0235915c345efab55491e79a5d97"
+    },
+    {
+      "case": "1-taxon-no-fix",
+      "behavior": "rejected_single_taxon_without_clusters",
+      "returncode": 0
+    },
+    {
+      "case": "2-taxon-no-fix",
+      "behavior": "exact_synthetic_partition",
+      "families": 24,
+      "proteins": 96,
+      "gene_trees": 0,
+      "returncode": 0,
+      "cluster_sha256": "70e02c4ffc95519de4948afacfabbfcb04d70c8b8eaf405916719f386349ac76"
+    }
+  ],
+  "receipt_sha256": "59062fcf33db4311e6dd8c14b734f3ff4c6aec0c9822e8b56b22329d5055d76b",
+  "script_sha256": "0c00b70d7a496a476ac6e04afaab6e954836a26c7a7fd7a9f31ad89567580f56",
+  "conclusion": "For >=2 taxa use --only-groups --no-fix-files to avoid unintended downstream inference. Single-taxon -f input is rejected with exit 0 and requires a separately validated path. Validate artifact contents rather than exit status.",
+  "limitations": "Synthetic exact-copy grouping and software control flow only, not biological accuracy or scale validation."
+}
