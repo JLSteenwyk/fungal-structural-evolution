@@ -1,0 +1,23 @@
+{
+  "status": "passed_file_based_discovery_merge_fixture",
+  "guides": [
+    {
+      "guide": "profile",
+      "proteins": 99,
+      "families": 25,
+      "retained_tree_source_crosswalk_checked": true,
+      "singleton_relocation_checked": true
+    },
+    {
+      "guide": "mafft",
+      "proteins": 99,
+      "families": 25,
+      "retained_tree_source_crosswalk_checked": true,
+      "singleton_relocation_checked": true
+    }
+  ],
+  "plan_sha256": "e57823c709e554d11ef1fee88858515bcad1e5587e3b180a6611a32d0f1680b6",
+  "merge_receipt_sha256": "8f3be89323b75531aae0d12ac581a4d0e33eda0b90e3b156ce2534cc7e99432a",
+  "script_sha256": "00bd0d03502c0c7f02e65f05637abda721601683f85f5f5455551ccbfb9eda68",
+  "scope": "Complete file-based merge command on independently audited synthetic native discovery artifacts. Both guide labels intentionally share one discovery output. Checks all serialized membership sets, contiguous indices, retained-tree source mapping and replacement of a singleton by a four-member group. Not a full biological merge or homology validation."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed_discovery_merge_identity_kernel_fixtures",
+  "valid_guides": 2,
+  "proteins_per_guide": 7,
+  "retained_multi_families": 2,
+  "replaced_singleton_slots": 1,
+  "rejected_cases": [
+    "missing_new_protein",
+    "retained_overlap",
+    "duplicate_across_clades",
+    "unknown_protein",
+    "duplicate_inside_discovery",
+    "duplicate_discovery_family_label",
+    "duplicate_original_gene",
+    "duplicate_original_family_label",
+    "empty_original_family",
+    "empty_discovery_family"
+  ],
+  "script_sha256": "0f70fa97057719422e5eb3ce01c08d98a14375a4c140179d00880f292d5c49a6",
+  "merge_script_sha256": "acd44a2e221130f17efff27c2fa80becc5cecee561b60387b14dc33c8c1119c5",
+  "scope": "Synthetic identity-set fixtures check retained-family preservation, singleton replacement, guide alternatives, source-index crosswalk and ten invalid partitions. Does not execute a full biological merge, file-based provenance gates or independent merged-file readback."
+}

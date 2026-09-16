@@ -1,0 +1,37 @@
+{
+  "output": "results/orthology/guide-discovery-merge-v1",
+  "discovery_output": "results/orthology/clade-discovery-v1",
+  "discovery_plan": "metadata/clade_discovery_execution_plan.json",
+  "clade_mapping": "results/orthology/clade-discovery-inputs-v1/clades.json",
+  "sequence_ids": "results/orthology/full-reconciliation-inputs-v1/profile/Source/WorkingDirectory/SequenceIDs.txt",
+  "original_clusters": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt",
+  "expected_proteins": 5815847,
+  "expected_original_families": 104138,
+  "expected_original_singletons": 60423,
+  "expected_retained_multi_families": 43715,
+  "pins": {
+    "scripts/merge_clade_discovery_partitions.py": "acd44a2e221130f17efff27c2fa80becc5cecee561b60387b14dc33c8c1119c5",
+    "scripts/audit_orthology_family_universe.py": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+    "metadata/discovery_merge_fixture_receipt.json": "bbbf1d9fe1445cd565a86f59d44d552d970e16498f1a52b194dfd00590d6fb16",
+    "metadata/clade_discovery_execution_plan.json": "ef53a23d1910de0a0b15adc515e411bef47bf768b8e0267101bcc58c058f0693",
+    "results/orthology/clade-discovery-inputs-v1/clades.json": "bc498c0a066fd27366a5f1609ceb898fe750d22160d3745d50dff2225cb1a051",
+    "results/orthology/full-reconciliation-inputs-v1/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f1875916a41c3b96340c79d9040471b2d86fc880d8ceb749d8aff159c502198f",
+    "metadata/orthology_family_universe_readback_receipt.json": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+    "metadata/full_protein_family_coverage_readback.json": "e7c541741ea0ee9c0a3432fe4ca6c00842aab50e34b17db5d16b378d6229e690",
+    "metadata/discovery_merge_file_fixture_receipt.json": "37cd1db6630b08531e6fd7c420c17af1396fd0db05d9e4bda0cbce217c3d9ea1"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 8,
+    "output_allowance_gib": 2,
+    "minimum_free_disk_gib": 10,
+    "planning_minutes": [
+      5,
+      60
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "status": "prepared_not_launched_requires_complete_discovery_and_independent_readback",
+  "scope": "Separate complete partitions for each guide, contiguous family indices with mandatory crosswalks. No source memberships/trees overwritten."
+}
