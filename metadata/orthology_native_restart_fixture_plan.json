@@ -1,0 +1,15 @@
+{
+  "task": "Disposable native restart behavior check",
+  "script_sha256": "7df76daa86cb5391ac204d5f7f1fb53cddb724fa504664f3aa54f227b6b290d2",
+  "output": "results/orthology/native-restart-fixture-v1",
+  "resources": {
+    "threads": 2,
+    "algorithm_workers": 1,
+    "memory_allowance_gib": 4,
+    "disk_allowance_gib": 1,
+    "wall_timeout_seconds_per_case": 120,
+    "case_count": 2,
+    "cost": "Existing host; no new charges"
+  },
+  "scope": "Software fixtures only; no scientific sampling or production inputs modified."
+}
