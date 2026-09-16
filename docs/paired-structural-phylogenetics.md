@@ -569,3 +569,12 @@ metadata/gdm_expanded_site_exposure_{plan,launch}.json. Output is
 results/phylogeny/site-parsimony-exposure-gdm-expanded-v1, followed by
 metadata/gdm_expanded_site_exposure_readback.json. Both completion and
 validation remain pending; neither step infers ancestral exposure or coupling.
+
+Completion update: the AlphaFold exposure diagnostic and independent numerical
+readback both passed across 124 markers, 44,719 sites and 4,148,852 observed
+cells. All 89,438 minimum-change scores and 268,314 exposure quantiles were
+checked, along with taxon/state identities and model counts. Receipts:
+metadata/gdm_expanded_site_exposure_receipt.json and
+metadata/gdm_expanded_site_exposure_readback.json. This supplies a validated
+exposure input for downstream source-specific rate/coupling analyses; it does
+not itself test those associations.

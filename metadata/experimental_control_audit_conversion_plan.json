@@ -1,0 +1,20 @@
+{
+  "status": "prelaunch_experimental_control_artifact_audit_and_conversion",
+  "created_at": 1789568379.3045292,
+  "models": 45,
+  "threads": 1,
+  "cpu_affinity": [
+    28
+  ],
+  "memory_allowance_gib": 4,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.01,
+    0.5
+  ],
+  "basis": "45 short proteins; full PDB/NPZ/PAE readback and exact atom-record mmCIF conversion. No inference or coordinate relaxation.",
+  "chunk_sha256": "0682751428a7d22570aa70c9e923921e59e708e6b166790945eda0639bcfc2c0",
+  "audit_output": "results/predictions/experimental-controls-audit-v1",
+  "conversion_output": "results/structures/esmfold-experimental-controls-v1",
+  "paid_resources": false
+}

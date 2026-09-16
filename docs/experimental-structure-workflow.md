@@ -426,9 +426,30 @@ python scripts/prepare_experimental_prediction_controls.py --output data/predict
 python scripts/advance_experimental_control_predictions.py --config metadata/experimental_control_prediction_controller_config.json
 ```
 
-The controller is already running; do not start a duplicate. Output will be
-`results/predictions/esmfold-experimental-controls-v1`. Independent artifact
-validation and matched AlphaFold/ESMFold/experimental comparisons remain pending.
+The controller completed all 45 predictions without interruption, OOM or
+remaining eligible sequences. Output is
+`results/predictions/esmfold-experimental-controls-v1`. The independent artifact
+audit now passes for every PDB/NPZ pair, sequence, numbering, confidence and PAE
+array. Its reference-specific summary preserves 2,165 PDB entity links across
+970 entries rather than assigning invented marker/taxon identifiers. These
+links are not independent biological replicates. A separate audit entry point
+retains the same model checks as the marker auditor, which remains pinned by
+live prediction controllers and was not modified.
+
+All 45 models were converted to sequence-explicit mmCIF without relaxation or
+coordinate fitting. Atom fields and canonical sequence passed the converter's
+roundtrip checks. Snapshot: results/structures/esmfold-experimental-controls-v1.
+Audit and conversion receipts are metadata/experimental_control_prediction_audit_receipt.json
+and metadata/experimental_control_conversion_receipt.json. Commands:
+
+```bash
+python scripts/audit_reference_control_predictions.py --predictions results/predictions/esmfold-experimental-controls-v1 --inputs data/prediction_inputs/experimental-controls-v1 --links data/prediction_inputs/experimental-controls-v1/experimental_reference_links.tsv --output results/predictions/experimental-controls-audit-v1
+python scripts/convert_esmfold_snapshot.py --predictions results/predictions/esmfold-experimental-controls-v1 --audit results/predictions/experimental-controls-audit-v1 --output results/structures/esmfold-experimental-controls-v1
+```
+
+Matched AlphaFold/ESMFold/experimental comparisons remain pending; these new
+ESMFold identifiers require explicit sequence-based correspondence to the
+existing experimental mapping. The 35 longer input sequences remain deferred.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
 
