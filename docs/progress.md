@@ -2861,3 +2861,14 @@ predictors. All 16 plotted values match the archived table; rendering and file
 hashes checked. Added the executed matched-control and region/PAE procedures
 to the methods draft, retaining exploratory-selection and biological-context
 limitations. Figure: docs/figures/control_region_placement.svg.
+
+
+September 16: completed marker-to-full-guide branch projection for both source
+cohorts: 45,155 marker edges, 90,310 guide-specific rows. All 426 independent
+pruned trees and 67,994 compatible path sums passed readback. Internal edges
+mapping uniquely to the same full split in both guides number 1,975/9,065 for
+ESMFold and 4,600/13,193 for AlphaFold. Collapsed paths and discordance are
+explicit; no structural change is assigned to an arbitrary full-tree branch.
+Supported-tree variants and final acceleration models remain pending. Details:
+docs/marker-species-edge-projection.md. Also verified all 20 longer GPU controls
+passed artifact audit/conversion; the next two larger controls are running.

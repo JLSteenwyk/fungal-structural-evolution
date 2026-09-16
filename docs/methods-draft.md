@@ -131,3 +131,19 @@ or functional divergence. Experimental assembly/construct context and broader
 sampling remain unresolved. Commands, complete exclusions and evidence are in
 experimental-structure-workflow.md. Other prediction tiers and integrated
 analyses are tracked separately and are not implied complete by this section.
+
+
+### Marker-to-species edge correspondence
+
+To expose ambiguity when marker trees cover different taxa, full-guide
+bipartitions were restricted to each marker's taxon set and canonicalized as
+unrooted splits. A matching marker edge was classified as a unique full edge
+or a path formed by several full edges after pruning. Absent matches and
+differences between the profile and MAFFT guides were retained explicitly.
+No marker branch estimate was distributed across a collapsed path. Independent
+repeated taxon pruning checked all projected compatibility outcomes and the
+corresponding guide-edge length sums. The completed projection covers the
+89-marker combined ESMFold and 124-marker expanded AlphaFold cohorts, kept
+separate. The guides lack support estimates, so this analysis establishes
+conditional mapping eligibility rather than a final clade assignment,
+reconciliation or acceleration test. See marker-species-edge-projection.md.

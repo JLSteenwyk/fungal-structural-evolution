@@ -1,0 +1,18 @@
+{
+  "status": "prelaunch_full_guide_pruning_readback",
+  "created_at": 1789572434.6190882,
+  "cohort_markers": 213,
+  "guides": 2,
+  "projection_rows": 90310,
+  "threads": 1,
+  "cpu_affinity": [
+    28
+  ],
+  "memory_allowance_gib": 2,
+  "disk_allowance_gib": 1,
+  "planning_hours": [
+    0.01,
+    1
+  ],
+  "basis": "Independently prune each 526-tip guide to every marker taxon set and compare compatible edge lengths with projected full-edge path sums; no inference refits or paid resources."
+}
