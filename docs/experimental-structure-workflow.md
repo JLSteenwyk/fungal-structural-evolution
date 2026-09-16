@@ -629,3 +629,47 @@ python scripts/plot_experimental_agreement.py --comparisons results/experimental
 Every plotted protein median/count was recalculated from comparison rows; the
 rendered PNG was visually inspected. Figure dimensions and exclusion counts now
 adapt to the actual input dataset. The partial figure remains available.
+
+
+## Protein-balanced matched predictor controls
+
+The 45 predicted control sequences now have completed hierarchical summaries.
+Each metric uses the median across chains within a deposited model, then across
+models within an entry, then across entries for the same canonical protein.
+Cohort summaries weight proteins equally. Paired differences are calculated
+within each original chain comparison before aggregation; they are not the
+difference between two independently aggregated medians.
+
+| Joint focal pLDDT cutoff | Eligible proteins / 45 | Median paired RMSD difference, ESMFold minus AlphaFold (Å) | Proteins with positive difference |
+| --- | ---: | ---: | ---: |
+| 0 | 39 | 0.6154 | 34 |
+| 70 | 36 | 0.4688 | 34 |
+| 90 | 16 | 0.2995 | 15 |
+
+Positive differences mean lower AlphaFold discrepancy from experiment in this
+selected set. Six proteins never meet coverage eligibility. Among the same 16
+proteins eligible at every cutoff, median paired differences are 0.5435,
+0.4711 and 0.2995 Å, respectively. Their residues and sometimes contributing
+entries still change across cutoffs. These descriptive results do not establish
+an unbiased accuracy ranking or a causal effect of confidence filtering.
+Taxonomic representation, training/template overlap and experimental context
+remain unresolved; the 35 longer reference sequences remain unpredicted in
+this control cohort.
+
+An independent pandas aggregation checked all 125,515 hierarchical metric
+values, 216 cohort quantiles and the paired-difference sign counts. This check
+does not independently validate every contributing-unit or disposition count.
+The figure was visually reviewed for readable labels and clipping, and every
+summary and figure artifact checksum was reverified. Small protein, disposition
+and cohort tables, summary/figure receipts and the numerical readback are
+archived under metadata/experimental_predictor_control_*. Larger model- and
+entry-level tables remain in results/experimental_structures/predictor-controls-summary-v1.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/summarize_experimental_predictor_controls.py --comparisons results/experimental_structures/predictor-controls-geometry-v1 --audit metadata/experimental_predictor_control_geometry_readback.json --crosswalk results/experimental_structures/predictor-controls-crosswalk-v1 --output results/experimental_structures/predictor-controls-summary-v1
+OPENBLAS_NUM_THREADS=1 python scripts/plot_experimental_predictor_controls.py --summary results/experimental_structures/predictor-controls-summary-v1 --audit metadata/experimental_predictor_control_summary_readback.json --output results/experimental_structures/predictor-controls-figure-v1
+```
+
+Commands require fresh output directories; retain existing immutable results.
+
+![Matched experimental predictor controls](figures/experimental_predictor_controls.svg)

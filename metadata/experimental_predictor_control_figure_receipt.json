@@ -1,0 +1,29 @@
+{
+  "status": "complete_experimental_predictor_control_figure",
+  "summary_receipt_sha256": "377d159cb6ad04b411b541a2d8dbad4ece57534e80523cb4dfcbddd623719d18",
+  "audit_sha256": "add3e7ab0f1214980f78940921e19a2ebfe406583f75157b99f707d383750e51",
+  "script_sha256": "fb045d6df4d6304947795042637f0d3bdd11bc1b61c70911816653d022e2b34d",
+  "scatter_panels": [
+    {
+      "panel": "No confidence filter",
+      "points": 39,
+      "cutoff": 0
+    },
+    {
+      "panel": "Both predictors pLDDT \u226590",
+      "points": 16,
+      "cutoff": 90
+    }
+  ],
+  "matched_protein_lines": 16,
+  "matched_median_delta_rmsd": [
+    0.5434792733096442,
+    0.47109993940593986,
+    0.2994818961107869
+  ],
+  "interpretation": "Descriptive nested-median summaries; log scatter axes. Matched-protein panel does not hold residue or entry cohort fixed across thresholds. No significance or unbiased accuracy claim.",
+  "artifacts": {
+    "experimental_predictor_controls.png": "e363e9d2f73748e18f382ca3aacdeb2d45a2e4772d4e5143ba18c752e48beca4",
+    "experimental_predictor_controls.svg": "1e872853e4664173027d07fc6dea1312d5c7812871853c0f976356388306fa19"
+  }
+}

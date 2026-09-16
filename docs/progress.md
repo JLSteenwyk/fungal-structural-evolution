@@ -6,9 +6,9 @@
 | Sampling | 501 fungal entries plus 25 outgroups acquired; 21 incomplete fungal labels and two curated hybrids require identity-aware interpretation | metadata/analysis_manifest.tsv; docs/taxon-identity-sensitivities.md; species uniqueness not fully established |
 | Assembly and protein QC | Broad QC for 526 and lineage-specific BUSCO for 501 fungi complete; FCS report inventory and exact coding-overlap audit complete | docs/assembly-quality-workflow.md; 518 usable reports, one checksum mismatch, seven external-source exceptions; biological review and omission/copy sensitivities pending |
 | Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 48/125 marker trees audited in latest frozen snapshot | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
-| Families, domains and reconciliation | 64-taxon core complete; full 526-taxon orthology assignment and additional full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
+| Families, domains and reconciliation | 64-taxon core complete; full 526-taxon artifact audit identifies one required family-tree repair, now running; full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
 | Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
-| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold fits running | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; site-rate and coupling sensitivity pending; model, prediction and phylogenetic uncertainty remain |
+| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold 356 fits and Gamma4 site-rate audit complete; FreeRate and downstream comparisons running | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; site-rate and coupling sensitivity pending; model, prediction and phylogenetic uncertainty remain |
 | Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; all 13,240 nuisance-profile points audited; four optimization concerns and 29 FCS-exposed cases flagged; selection eligibility unresolved |
 | Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
 | Evolutionary objectives 1–8 | Intermediate analyses available; no objective set declared complete | docs/research-plan.md; final branch/clade tests, duplication/domain/ecological analyses, selection and ancestral case studies remain |
@@ -2741,3 +2741,21 @@ input pins, and began the same analysis in a fresh recovery directory.
 The 24-core and 30-second GPU run/rest limits remain active. OrthoFinder
 continuation and replacement completion controllers are still pending review.
 Details and recovery provenance: docs/recovery-20260916.md.
+
+
+September 16, 10:40 Eastern: verified the temporary compute increase remains
+active at 48 physical cores and 90-second GPU run / 10-second rest cycles.
+GPU0 is computing at its default/max 300 W limit, around 80 C without reported
+thermal slowdown; GPU1 is idle. Prediction, PMSF and isolated OG0000017 FastTree
+processes are live. Both site-rate wrappers and downstream controllers remain
+live; their terminal completion is not yet asserted.
+
+Matched experimental controls now have reviewed protein-balanced tables and a
+figure: 39/36/16 proteins eligible at joint pLDDT cutoffs 0/70/90. Independent
+aggregation verified 125,515 metric values and 216 quantiles. All-protein median
+paired ESMFold-minus-AlphaFold experimental RMSD differences are +0.6154,
++0.4688 and +0.2995 Å. The same-16-protein comparison explicitly retains the
+caveat that residues and entries can change. These are descriptive selected-set
+agreements, not training-independent accuracy estimates. The 35 longer control
+sequences remain pending. Details: docs/experimental-structure-workflow.md;
+figure: docs/figures/experimental_predictor_controls.svg.
