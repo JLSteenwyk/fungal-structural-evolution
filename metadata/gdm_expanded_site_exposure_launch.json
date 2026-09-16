@@ -1,0 +1,48 @@
+{
+  "pid": 119313,
+  "created": 1789568250.29,
+  "command": [
+    "python",
+    "-u",
+    "-"
+  ],
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_site_parsimony_exposure.py",
+      "--inputs",
+      "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+      "--audit",
+      "results/phylogeny/paired-fit-audit-gdm-expanded-v1",
+      "--exposure",
+      "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+      "--projection",
+      "results/structural_annotations/paired-accessibility-gdm-expanded-v1",
+      "--review",
+      "config/marker_orthology_review.json",
+      "--output",
+      "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_site_parsimony_exposure.py",
+      "--diagnostic",
+      "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1",
+      "--inputs",
+      "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+      "--exposure",
+      "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+      "--output",
+      "metadata/gdm_expanded_site_exposure_readback.json"
+    ]
+  ],
+  "cpu_affinity": [
+    26
+  ],
+  "launched_at": 1789568250.4556568,
+  "log": "logs/gdm_expanded_site_exposure_v1.log"
+}

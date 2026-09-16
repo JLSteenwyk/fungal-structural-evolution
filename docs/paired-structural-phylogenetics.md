@@ -557,3 +557,15 @@ paired-site-rates[-freerate][-audit]-gdm-expanded-v1 under results/phylogeny.
 The source-specific AlphaFold and ESMFold cohorts remain separate. No completed
 AlphaFold rate export, optimization assessment or coupling analysis is claimed
 by this launch.
+
+The corresponding AlphaFold exposure join and full numerical readback are
+also running sequentially. The existing audited accessibility projection
+contains 4,148,852 observed taxon-site cells across 124 markers and 44,719 paired
+columns. The diagnostic will join extant normalized exposure to minimum
+AA/3Di change counts; the independent readback will recompute every score and
+exposure quantile. One core and a 16-GiB memory planning allowance were assigned
+after checking host headroom. Commands and source/helper pins are recorded in
+metadata/gdm_expanded_site_exposure_{plan,launch}.json. Output is
+results/phylogeny/site-parsimony-exposure-gdm-expanded-v1, followed by
+metadata/gdm_expanded_site_exposure_readback.json. Both completion and
+validation remain pending; neither step infers ancestral exposure or coupling.

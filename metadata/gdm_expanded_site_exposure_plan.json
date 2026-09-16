@@ -1,0 +1,72 @@
+{
+  "status": "prelaunch_expanded_AF_site_exposure_and_readback",
+  "created_at": 1789568250.3395708,
+  "markers": 124,
+  "sites": 44719,
+  "taxon_site_observations": 4148852,
+  "threads": 1,
+  "cpu_affinity": [
+    26
+  ],
+  "memory_allowance_gib": 16,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "basis": "Same join and independent full score/quantile readback as completed combined ESMFold cohort; about 2.4 times its residue observations. Planning estimate, not guaranteed runtime.",
+  "available_memory_bytes": 575817453568,
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_site_parsimony_exposure.py",
+      "--inputs",
+      "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+      "--audit",
+      "results/phylogeny/paired-fit-audit-gdm-expanded-v1",
+      "--exposure",
+      "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+      "--projection",
+      "results/structural_annotations/paired-accessibility-gdm-expanded-v1",
+      "--review",
+      "config/marker_orthology_review.json",
+      "--output",
+      "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_site_parsimony_exposure.py",
+      "--diagnostic",
+      "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1",
+      "--inputs",
+      "results/phylogeny/paired-inputs-gdm-expanded-v1",
+      "--fits",
+      "results/phylogeny/paired-marker-fits-gdm-expanded-v1",
+      "--exposure",
+      "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1",
+      "--output",
+      "metadata/gdm_expanded_site_exposure_readback.json"
+    ]
+  ],
+  "source_receipts": {
+    "results/phylogeny/paired-inputs-gdm-expanded-v1/receipt.json": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "results/phylogeny/paired-marker-fits-gdm-expanded-v1/receipt.json": "008916dd741ed35933af61029fbf35627b40a5a6929236c4b39d38681d0f7a5e",
+    "results/phylogeny/paired-fit-audit-gdm-expanded-v1/receipt.json": "dc227a97cf285fedfe799c8209869e8de8e9cd0fcf3794cf0c4641f7795916c4",
+    "results/structural_annotations/paired-accessibility-normalized-gdm-expanded-v1/receipt.json": "1722e4d59a55724821f9801b96da9c0d188c18b51227be023c2296e9ca7268b9",
+    "results/structural_annotations/paired-accessibility-gdm-expanded-v1/receipt.json": "973f9eac9ae95289172a8c29ea73cc8671e4129c9f38071951907d473485daa9"
+  },
+  "pinned_scripts": {
+    "scripts/summarize_site_parsimony_exposure.py": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+    "scripts/readback_site_parsimony_exposure.py": "fd36f2cefce1edcc41ef0ee152760a2b85adad04c2fa3081a8134c746506aeb6",
+    "scripts/audit_site_parsimony_topologies.py": "60f74cecc8649900bd6758ebaaeb16970ea26cf3d7f86cb6720588d28b8e03c4",
+    "scripts/audit_joint_path_uncertainty.py": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1"
+  },
+  "marker_review_sha256": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+  "paid_resources": false,
+  "interpretation": "Source-specific extant exposure summaries and minimum change counts; not rates, ancestral reconstructions or coupling inference."
+}
