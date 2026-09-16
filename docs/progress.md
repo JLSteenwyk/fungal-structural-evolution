@@ -2924,3 +2924,7 @@ Completed two-policy minimum-change mapping for detectable Domain/Family/Repeat 
 ### September 16: combined experimental benchmark figure
 
 Completed and visually reviewed the 79-control, six-panel benchmark figure, retaining four length tiers and confidence-filter exclusions. Independently checked 152 plotted protein/threshold rows, 456 RMSD values, 12 coverage counts, six medians and common-protein membership. Corrected draft legend overlap and used shared scales before publishing the SVG. Updated README marker-tree and paired-fit status from the latest receipts. Full prediction, supported-phylogeny and coupling workflows remain active; this figure does not complete the broader objective.
+
+### September 16: additional full-proteome hit annotation in production
+
+Pinned all 52 completed Pfam chunks (6,498,460 hits) and launched streaming annotation across the additional 5,654,720 query sequences. The original four HMMER workers remain live on subsequent chunks. At the checkpoint, 18 annotation shards totaling 2,472,034 hits had completed; the full snapshot remains in progress. An independently implemented raw-field readback is queued on the exact annotation producer identity. Resource plans, launch identities and parsers are versioned. No full-proteome architecture, overlap resolution or domain-absence claims are implied.

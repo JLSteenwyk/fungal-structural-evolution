@@ -1,0 +1,26 @@
+{
+  "producer_pid": 321008,
+  "producer_created": 1789575237.16,
+  "producer_command": [
+    "/home/bizon/anaconda3/bin/python",
+    "-u",
+    "scripts/annotate_completed_full_pfam_chunks.py",
+    "--plan",
+    "metadata/full_pfam_annotation_snapshot_plan.json"
+  ],
+  "annotation_output": "results/domains/full-annotation-snapshot-v1",
+  "annotation_plan": "metadata/full_pfam_annotation_snapshot_plan.json",
+  "output": "results/domains/full-annotation-readback-v1",
+  "cpu_threads": 1,
+  "memory_allowance_gib": 2,
+  "planning_hours": [
+    0.05,
+    3
+  ],
+  "output_allowance_gib": 0.1,
+  "pins": {
+    "scripts/readback_full_pfam_annotation_chunks.py": "e0d381f8eac824bde21e3f7ed34ccf394e50effc6eed4d2c7a0429f7db621b2e",
+    "scripts/prepare_pfam.py": "5de930c97989900c2287af5878e3de219a648a7f52b60e6e1f0b8ba8c7e12559",
+    "metadata/full_pfam_annotation_snapshot_plan.json": "f9acea1f719276a5d92ce9779174eeb5aa95787dc6e07d3096ae448a23a965b8"
+  }
+}

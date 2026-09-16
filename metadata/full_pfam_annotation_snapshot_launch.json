@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-full-pfam-annotation-20260916.service",
+  "pid": 321008,
+  "created": 1789575237.16,
+  "observed_status": "running",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "-u",
+    "scripts/annotate_completed_full_pfam_chunks.py",
+    "--plan",
+    "metadata/full_pfam_annotation_snapshot_plan.json"
+  ],
+  "recorded_at": 1789575254.8577988,
+  "plan": "metadata/full_pfam_annotation_snapshot_plan.json",
+  "note": "Transient service with 16 GiB memory limit; verify process identity and any partial outputs after interruption before resuming."
+}
