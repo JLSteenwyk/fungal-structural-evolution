@@ -2675,6 +2675,15 @@ reproducible runner are recorded in metadata/genus_mg94_flagged_restart_plan.jso
 and scripts/restart_flagged_genus_profile_optima.py. Finite restarts do not
 establish a global optimum; revised profiles remain a subsequent task.
 
+September 16 completion update: all 32 restarts and fresh likelihood replays
+have now finished. A subsequent complete readback verified 194 artifact hashes,
+model exports, saved likelihoods and summary arithmetic. All four cases found
+better likelihoods than the previous best evaluated solution (gains 0.0112 to
+2.2559), with large target-t estimates. Revised profiles and identifiability
+assessment remain outstanding; no selection eligibility is inferred. Results
+are archived in metadata/genus_mg94_flagged_restart_* and documented in
+docs/coding-sequence-workflow.md.
+
 Combined ESMFold FCS omission fits and geometry benchmark completed for all
 18 affected markers: 72 fits, 6,058 paired branches, 275,252 accepted pairs,
 5,702 exclusions and 720 independent graph path checks. All four downstream

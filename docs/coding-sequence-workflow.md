@@ -931,3 +931,38 @@ receipt and target/omega table check are in
 metadata/genus_mg94_branch_parameter_profile_audit_* and
 metadata/genus_mg94_profile_table_field_readback.json. The full completion
 receipt is metadata/genus_mg94_branch_parameter_profile_completion_receipt.json.
+
+### Completed restarts for the four optimization discrepancies
+
+All 32 unconstrained restarts completed, using eight previously evaluated
+solutions for each flagged Malassezia case. Every saved fit underwent a fresh
+likelihood replay during execution. A subsequent readback checked 194 artifact
+hashes, the complete case/start grid, logged likelihoods, exported parameters,
+unchanged model definitions and summary arithmetic. The maximum saved replay
+discrepancy is 7.28e-12. Original profiles remain unchanged.
+
+| Marker | Best start | Gain over previous best evaluated likelihood | Target t | Omega |
+| --- | --- | ---: | ---: | ---: |
+| 4940884at2759 | factor 10 | 2.255891 | 2169.302 | 0.0001211 |
+| 4976279at2759 | factor 4 | 0.011193 | 230.185 | 0.0022809 |
+| 541070at2759 | factor 10 | 0.179187 | 490.474 | 0.0005640 |
+| 730114at2759 | factor 10 | 0.615943 | 377.675 | 0.0011325 |
+
+Better evaluated solutions resolve the earlier ordering discrepancy but do not
+establish global optima. Very large target parameters paired with small omega
+require further identifiability assessment; t is not normalized dS. The finite
+profile grids have not been regenerated around these solutions, and no case is
+cleared for selection inference or saturation-sensitive comparisons. These four
+cases are not among the separately flagged FCS-exposed cases.
+
+Full outputs: results/cds/genus-mg94-flagged-profile-restarts-v1. Archived
+receipt, points, summary and readback: metadata/genus_mg94_flagged_restart_*.
+The following command checks saved artifacts without rerunning optimization;
+choose a new output path for another readback:
+
+```bash
+python scripts/audit_flagged_mg94_restarts.py \
+  --restarts results/cds/genus-mg94-flagged-profile-restarts-v1 \
+  --plan metadata/genus_mg94_flagged_restart_plan.json \
+  --output metadata/genus_mg94_flagged_restart_readback.json
+```
