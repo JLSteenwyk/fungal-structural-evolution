@@ -2843,3 +2843,13 @@ Sequences remain full length and disjoint from all other queues. One 2,413-
 residue control remains deferred for a memory-saving execution approach;
 its estimated allocation exceeds 48 GiB. No completed-results claim for queued
 controls. Plans and evidence: metadata/experimental_control_large_tier_*.
+
+
+September 16: queued a separate attention-chunk16 ESMFold attempt for the last
+2,413-residue experimental control, plus an intentional 741-residue method
+comparison. Local code review confirms the supported attention setting but
+not a guaranteed total-memory reduction; an OOM stops for review. The live
+handoff waits for the two larger controls to complete validation first.
+Original predictors/settings remain available; variant results require an
+explicit numerical comparison before integration. Source review and resource
+plan: metadata/experimental_control_chunk16_*. No completed prediction claimed.

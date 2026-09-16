@@ -1,0 +1,85 @@
+{
+  "status": "prelaunch_resource_and_provenance_plan",
+  "created_at": 1789571883.1790226,
+  "expected_predictions": 2,
+  "candidate_residues": 3154,
+  "length_range": [
+    741,
+    2413
+  ],
+  "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+  "cpu_affinity": [
+    80,
+    82,
+    84,
+    86
+  ],
+  "host_memory_limit_gib": 64,
+  "minimum_available_memory_gib": 64,
+  "minimum_free_disk_gib": 5,
+  "planning_hours": [
+    0.25,
+    8
+  ],
+  "estimated_output_gib_upper": 2,
+  "paid_resources": false,
+  "basis": "Standard-settings squared-length extrapolation ~82.2 GiB allocated is not a measurement. Chunk16 reduces axial attention workspace but no reliable total peak is established; bounded exclusive 48-GiB GPU attempt, stop on OOM. Host cgroup64GiB. This plan does not claim guaranteed fit.",
+  "gpu_duty": "Continuous processing on idle GPU1 at existing default/max 300 W; GPU0 temporary 90/10 controller unchanged.",
+  "output_directories": [
+    "results/predictions/esmfold-experimental-controls-chunk16-v1",
+    "results/predictions/experimental-controls-chunk16-audit-v1",
+    "results/structures/esmfold-experimental-controls-chunk16-v1"
+  ],
+  "chunk_path": "results/predictions/esmfold-experimental-controls-chunk16-v1/last_chunk.json",
+  "execution_receipt": "results/experimental_control_chunk16_execution.json",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+      "scripts/run_chunked_control_predictions.py",
+      "--inputs",
+      "data/prediction_inputs/experimental-controls-chunk16-v1",
+      "--checkpoint",
+      "data/prediction_models/esmfold-v1",
+      "--output",
+      "results/predictions/esmfold-experimental-controls-chunk16-v1",
+      "--max-length",
+      "3072",
+      "--attention-chunk-size",
+      "16",
+      "--limit",
+      "2"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_reference_control_predictions.py",
+      "--predictions",
+      "results/predictions/esmfold-experimental-controls-chunk16-v1",
+      "--inputs",
+      "data/prediction_inputs/experimental-controls-chunk16-v1",
+      "--links",
+      "data/prediction_inputs/experimental-controls-chunk16-v1/experimental_reference_links.tsv",
+      "--output",
+      "results/predictions/experimental-controls-chunk16-audit-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/convert_esmfold_snapshot.py",
+      "--predictions",
+      "results/predictions/esmfold-experimental-controls-chunk16-v1",
+      "--audit",
+      "results/predictions/experimental-controls-chunk16-audit-v1",
+      "--output",
+      "results/structures/esmfold-experimental-controls-chunk16-v1"
+    ]
+  ],
+  "pins": {
+    "scripts/run_chunked_control_predictions.py": "07c044b32d7a00bb4a282ef50b699a67fbf9e126be12e864bf7a9aafa7f8279f",
+    "scripts/audit_reference_control_predictions.py": "92b44d5cb0877bf3615cac6d3189ef6b2564dad7f090de32d637ef9ba9142542",
+    "scripts/convert_esmfold_snapshot.py": "5c356f89bf5a8474ace8c0bde183e18e50852e30e821b482621421dafae6d1b8",
+    "scripts/run_experimental_control_tier.py": "214f29b29d41906c65cd060c1fd7322c002d443e49b0fd7f14ef8ad6c73e0c43",
+    "data/prediction_inputs/experimental-controls-chunk16-v1/receipt.json": "e6ad217ae9efbebc5e989533652a05a132f51abecf9e004f7599678b54ed850d",
+    "data/prediction_models/esmfold-v1/receipt.json": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "/home/bizon/anaconda3/envs/esmfold2/lib/python3.1/site-packages/transformers/models/esm/modeling_esmfold.py": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+    "metadata/experimental_control_chunk16_source_review.json": "45ee5a6469357848f413936d5bf51ca3f9193fe2372ca76c5b513556287b3801"
+  }
+}

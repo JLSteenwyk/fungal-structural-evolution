@@ -927,3 +927,50 @@ The one remaining 2,413-residue control remains an explicit project requirement:
 the same scaling predicts ~82.2 GiB allocated memory before overhead, exceeding
 the device. Evaluate a memory-saving full-sequence execution method separately;
 no truncation, successful prediction or omission is claimed.
+
+
+## Full 2,413-residue control: queued memory-variant attempt
+
+Local source inspection identified the supported trunk attention chunk-size
+setting. A separate runner exposes that setting and records both peak allocated
+and reserved GPU memory. Its reviewed diff changes only the positive chunk-size
+argument/configuration, trunk setter and memory telemetry, apart from the
+module description. Original live scripts remain untouched. Model weights,
+precision, TF32 setting, recycles, seed, batch size, sequence and output
+validation are unchanged.
+
+The new queue contains the full remaining 2,413-residue reference plus a
+deliberately repeated 741-residue control, the longest successfully audited
+member of the earlier tier. This repetition is a method-sensitivity check,
+selected by length rather than agreement; it is the only allowed overlap with
+existing queues. The 2,413-residue target is disjoint from all other candidates.
+Independent FASTA checks verified both hashes and the intended overlap.
+
+Attention chunk16 replaces chunk64 in this isolated configuration. The local
+implementation chunks triangle axial attention, but not every pairwise tensor,
+triangle-multiplication operation or pair MLP. Thus memory is not assumed to
+fall fourfold. No reliable total peak for the long protein is established.
+The plan is a bounded attempt on an exclusive 48-GiB GPU with the existing
+first-OOM stop, 64-GiB host-memory cgroup limit, four CPU cores and free-memory/
+disk gates. Planning range is 0.25–8 hours, with 2 GiB output allowance; no paid
+resources. There is no truncation or fallback that silently changes precision.
+
+The live fungal-experimental-controls-chunk16-20260916.service waits for the
+larger-tier handoff to finish, then requires the larger tier's successful
+prediction/audit/conversion receipt. It runs the 741-residue control first and
+then the full target, followed by the existing independent artifact audit and
+conversion only if both predictions succeed. An OOM preserves partial outputs
+for review and does not trigger automatic retries. Method-control coordinate,
+confidence and PAE comparison is required before atlas integration; all outputs
+remain in a separate configuration cohort regardless of successful execution.
+
+```bash
+python scripts/prepare_chunked_reference_controls.py --output data/prediction_inputs/experimental-controls-chunk16-v1
+python scripts/advance_experimental_control_tier.py --config metadata/experimental_control_chunk16_handoff_config.json
+```
+
+Fresh outputs are required. Source review, model-code checksum, plan, input
+receipt, disposition and verified live identity are versioned under
+metadata/experimental_control_chunk16_*. This transient controller does not
+survive reboot. The long target remains incomplete while queued; numerical
+agreement of the repeated control is not assumed in advance.

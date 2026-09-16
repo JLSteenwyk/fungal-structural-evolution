@@ -1,0 +1,18 @@
+{
+  "status": "verified_live_chunk16_handoff",
+  "pid": 229848,
+  "created": 1789571883.08,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_experimental_control_tier.py",
+    "--config",
+    "metadata/experimental_control_chunk16_handoff_config.json"
+  ],
+  "checked_at": 1789571935.6672587,
+  "intentional_method_control_overlaps": {
+    "data/prediction_inputs/experimental-controls-513-768-v1/candidates.faa": [
+      "S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81"
+    ]
+  },
+  "new_2413_sequence_disjoint": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "complete_prediction_queue_preparation",
+  "prediction_candidates": 2,
+  "new_reference_sequences": 1,
+  "intentional_repredictions": 1,
+  "original_reference_receipt_sha256": "83879a33ce286c07739c3d0e25d4f88828e477ce547eb8b4e0b1ac8b1cd6ed97",
+  "comparison_control_audit_sha256": "8c9d186b146ad942d5041121270ce2006ca709a4f6ef0c6d210070d8b3248397",
+  "comparison_control_prediction_receipt_sha256": "9621070559ebfaec9afbaac23fb240a4bea6cc292824e002e1587d4d9c3a43e4",
+  "comparison_control_sequence_id": "S156cf677b796c2aaebdb1cd6921ef4a0fd409dce1c8b22e2d01eadc82b0b8d81",
+  "reservation_fasta_sha256": {
+    "data/prediction_inputs/ecology-markers-v1/candidates.faa": "37637e5e6ccf088e9c5b4990635ccd4f707e4b2218415dff51c638c31aab6460",
+    "data/prediction_inputs/experimental-controls-1153-1536-v1/candidates.faa": "8f0ae1ad12da0deffcf318e0e354415213bdd0a3e0ea3183928cc2d5ff1d5002",
+    "data/prediction_inputs/markers-full-inventory-v2/candidates.faa": "2efefce5d1927888061cae72b011d042d64b78e2da728d97e17ca4174bb46e4c",
+    "data/prediction_inputs/experimental-controls-769-1152-v1/candidates.faa": "b031b252576edb5da0db39d4d4486260e162ab7fdea8e425faa4dc3e83c520ba",
+    "data/prediction_inputs/experimental-controls-513-768-v1/candidates.faa": "b61f5cc35b549709133677b5eb8a29ab4dd449a7dec16598a06c2615d07d25fe",
+    "data/prediction_inputs/markers-followon-v1/candidates.faa": "636e85ebf383e98178fbd51537fd26c6baba2da38b9b7503d3392e0fe2c6d713",
+    "data/prediction_inputs/predictor-controls-v1/candidates.faa": "af696b1c20eec879e98279c96779c9e7ebdf7b70fb320523c1f68736d65e8d27",
+    "data/prediction_inputs/markers-v1/candidates.faa": "09d2cce9415ccbcdc6634e83499c18e91c32b672affe8f5f865703cbe0419039",
+    "data/prediction_inputs/experimental-controls-v1/candidates.faa": "7245f05ff5db1e1e14097fb00e0ad32ab3d3098c727e3d3ca14b2e7ca82d7646",
+    "data/prediction_inputs/dgx-spark-qualification-v1/candidates.faa": "d2e9689d9072c00e768fdcb1cd37fdddd7a30addd34bc494041a480b55136e26",
+    "data/prediction_inputs/markers-513-768-gpu0-v1/candidates.faa": "fb13a4319db12b0d211de39dcef9c907a5d88cab94f9ed1cdeb203dd5c8d06c6",
+    "data/prediction_inputs/markers-513-768-v1/candidates.faa": "fb13a4319db12b0d211de39dcef9c907a5d88cab94f9ed1cdeb203dd5c8d06c6"
+  },
+  "script_sha256": "9bcec6d5a81922e19aae0d4ebf1c1ceb6a09d369d05ca68c02d9b342faadcb91",
+  "interpretation": "New 2413-residue full reference plus longest successfully audited 513\u2013768 control, selected by length rather than agreement. The existing control is deliberately repeated under chunk16 to assess numerical sensitivity; not pooled with original predictions.",
+  "artifacts": {
+    "sequence_disposition.tsv": "93f3025f68052f1f58e436b5936380004c804b4381fe174ea6a2a5ef367555d6",
+    "candidates.faa": "f3ebf449cfbe2a6d53dbd1d87afb9d911a39b6560edc39bc3e4f2ce52035040f",
+    "experimental_reference_links.tsv": "0bc6e79eb7801ba238d36a20cec863f99691c05e780bd85b90f45fee24edc1db"
+  }
+}

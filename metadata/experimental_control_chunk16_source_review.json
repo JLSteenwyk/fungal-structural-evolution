@@ -1,0 +1,17 @@
+{
+  "status": "local_implementation_review_for_memory_variant",
+  "modeling_source": "/home/bizon/anaconda3/envs/esmfold2/lib/python3.1/site-packages/transformers/models/esm/modeling_esmfold.py",
+  "modeling_source_sha256": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+  "unchanged_base_runner_sha256": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+  "variant_runner_sha256": "07c044b32d7a00bb4a282ef50b699a67fbf9e126be12e864bf7a9aafa7f8279f",
+  "change": "Expose positive attention chunk size; change trunk chunk64 to chunk16; additionally record peak reserved GPU bytes. Weights, precision, recycle count, full sequence, output checks and OOM handling otherwise unchanged.",
+  "source_evidence": "set_chunk_size at lines1886\u20131891 feeds triangle axial attention at lines1214/1217. Pairwise states, triangle multiplication and pair MLP remain unchunked by this option, so total memory is not reduced fourfold.",
+  "memory_estimate": "Standard-settings squared-length extrapolation ~82.2 GiB allocated is not a measurement. Chunk16 reduces axial attention workspace but no reliable total peak is established; bounded exclusive 48-GiB GPU attempt, stop on OOM. Host cgroup64GiB. This plan does not claim guaranteed fit.",
+  "method_control": "Repredict the longest completed control (741 residues) first; compare coordinates, confidence and PAE against chunk64 before atlas integration. All variant outputs remain a separate configuration cohort.",
+  "planning_hours": [
+    0.25,
+    8
+  ],
+  "output_gib_allowance": 2,
+  "paid_resources": false
+}
