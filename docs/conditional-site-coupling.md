@@ -217,3 +217,13 @@ BH-significance claims, and reference means are held at the FCS observed values.
 
 Plan, full-fit receipt, numerical checks, interval/multiplicity readback and
 contrast summary are in metadata/site_coupling_fcs_marker_resampling_*.
+
+### Expanded coupling handoffs
+
+Two transient user services now wait for the existing rate-comparison controllers: `fungal-esmfold-coupling-handoff-20260916.service` and `fungal-gdm-coupling-handoff-20260916.service`. No rate producer or fitting configuration was modified. They bind the producer PID, process creation time, command and controller configuration hash, then require its completed frame handoff and artifact checksums. Expected frame sizes are 89 markers/22,205 sites for revised ESMFold and 124 markers/44,719 sites for expanded AlphaFold.
+
+After validation, each service creates source-hashed plans and runs the existing 24-specification conditional model grid (three structural alphabets × two rate models × two RSA scales × two covariate specifications). It then runs 2,000 paired whole-marker bootstrap draws per specification (48,000 fits per cohort) and every leave-one-marker-out fit (2,136 ESMFold; 2,976 AlphaFold). The fit script independently checks NumPy coefficients and manually assembled CR1 covariance; the resampling script checks absorbed point estimates and selected expanded-row solves. Resampling completion requires the full expected model, marker, bootstrap and omission counts.
+
+These are queued analyses, not completed results. One CPU core and a 16 GiB memory allowance per active stage are planned, with a 32 GiB service limit and 32 GiB available-memory/20 GiB disk gates. Planning ranges are 0.25–12 hours for fitting and 0.25–12/24 hours for ESMFold/AlphaFold resampling; they are not guarantees. Sources and scripts are pinned in `metadata/{esmfold_combined_revised,gdm_expanded}_coupling_controller_config.json`; launch identities are recorded in `metadata/expanded_coupling_handoff_launch.json`. Dynamic plans and stage logs remain under the corresponding `results/phylogeny/coupling-controller-*-v1` directories. Services do not survive reboot; partial or failed state requires review before resuming.
+
+The models remain exploratory conditional associations. Marker effects and cluster covariance do not resolve cross-marker phylogenetic dependence, uncertainty in estimated rates/topology, nonlocal alphabet features, extant-covariate interpretation, prediction circularity or missingness. Source-specific conclusions, FCS and corrected-marker omission sensitivities, and broader branch/domain/duplication analyses remain pending.
