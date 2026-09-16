@@ -1,0 +1,47 @@
+{
+  "status": "passed_synthetic_family_installation_gates",
+  "cases": [
+    {
+      "case": "complete",
+      "exit_code": 0,
+      "status": "complete_verified_family_tree_installation",
+      "production_preserved_on_failure": false
+    },
+    {
+      "case": "wrong_tips",
+      "exit_code": 1,
+      "status": "failed_requires_review",
+      "production_preserved_on_failure": true
+    },
+    {
+      "case": "negative_branch",
+      "exit_code": 1,
+      "status": "failed_requires_review",
+      "production_preserved_on_failure": true
+    },
+    {
+      "case": "missing_length",
+      "exit_code": 1,
+      "status": "failed_requires_review",
+      "production_preserved_on_failure": true
+    },
+    {
+      "case": "occupied_target",
+      "exit_code": 1,
+      "status": "failed_requires_review",
+      "production_preserved_on_failure": true
+    },
+    {
+      "case": "missing_receipt",
+      "exit_code": 1,
+      "status": "failed_requires_review",
+      "production_preserved_on_failure": true
+    }
+  ],
+  "scripts": {
+    "scripts/advance_repaired_family_installation.py": "39d2b2372231d15f6593b40c1a41c10a28f8f8af6294b7726bd2962d9c962952",
+    "scripts/validate_repaired_tree_native.py": "0b6cd27419c503a351597980336d0c80a850a65a6de568216d14089e36e6b925",
+    "scripts/check_family_installation_gates.py": "651fe6643a7f41f77fde57e4db15b523946be28e2fcd48c7d42c4c3e8c87fa00"
+  },
+  "scope": "Three-tip disposable fixtures; actual native parser and installer, including atomic replacement. Does not establish large-tree performance or biological validity."
+}

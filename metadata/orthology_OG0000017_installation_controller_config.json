@@ -1,0 +1,41 @@
+{
+  "producer": {
+    "pid": 99931,
+    "created": 1789567713.74,
+    "command": [
+      "python",
+      "scripts/rebuild_audited_family_tree.py",
+      "--plan",
+      "metadata/orthology_OG0000017_rebuild_plan.json"
+    ]
+  },
+  "rebuild_plan": "metadata/orthology_OG0000017_rebuild_plan.json",
+  "output": "results/orthology/OG0000017-installation-controller-v1",
+  "python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+  "cpu_affinity": [
+    26
+  ],
+  "minimum_available_memory_bytes": 17179869184,
+  "minimum_free_disk_bytes": 5368709120,
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 8,
+    "service_memory_limit_gib": 16,
+    "output_allowance_gib": 1,
+    "planning_hours_after_rebuild": [
+      0.01,
+      1
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "pins": {
+    "scripts/advance_repaired_family_installation.py": "39d2b2372231d15f6593b40c1a41c10a28f8f8af6294b7726bd2962d9c962952",
+    "scripts/validate_repaired_tree_native.py": "0b6cd27419c503a351597980336d0c80a850a65a6de568216d14089e36e6b925",
+    "metadata/orthology_OG0000017_rebuild_plan.json": "3409b54363ac455e5bf0eda5d663d4629823d870521c386b2c37a956aeb23056",
+    "metadata/orthology_OG0000017_rebuild_launch.json": "cf6e5d45166edac09f9bb5b0c46530756fa4e5c7905e880150582d6508a6f541",
+    "metadata/orthology_family_installation_gate_checks.json": "4ce61b82d0cce1494157957198305770f401122e981f4689974bee70a8dc8777",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/tree.py": "6581d8f8329cb330d5c76322dc6456fd8e76046629aa391531269230e3082c59",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/newick.py": "52e7f9c29046dfb1bcf9d12f7fbc4c4f4b98511238967070b8fbf9495b2b05f7"
+  },
+  "scope": "Wait for exact live rebuild wrapper; require completed source-pinned receipt, validate with independent native tree parser, atomically replace only the audited empty target. No automatic reconciliation launch; no alteration to live rebuild inputs."
+}

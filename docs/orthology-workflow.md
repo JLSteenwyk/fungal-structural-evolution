@@ -66,3 +66,16 @@ the installer refuses a missing/wrong process, advanced stage, active writer,
 existing output or changed source. Diagnostic commands, executable hashes,
 resource plans, recovery outputs and installation are recorded in
 `metadata/orthology_family_*`. Raw intermediate alignments remain outside Git.
+
+
+## Audited large-family repair installation handoff
+
+The isolated `OG0000017` FastTree rebuild remains live. Its wrapper validates the tree with Bio.Phylo and leaves production untouched. The additional service `fungal-family-tree-installation-20260916.service` waits for that exact wrapper PID, creation time and command, then requires its successful completion receipt and unchanged source hashes. It independently parses the repaired tree with OrthoFinder's bundled ETE-derived reader, verifies the complete source tip universe and explicit finite nonnegative branch lengths, and records the parser checksums. This uses the actual native parser that downstream OrthoFinder consumes, independently of the repair wrapper's Bio.Phylo parser.
+
+After validation, the handoff stages and fsyncs an exact tree copy, checks that the production target remains the audited empty file, and atomically installs the copy. The isolated repair, log and validation receipt remain available. An occupied target, changed input, absent completion receipt or failed native readback stops for review. No source alignment or running rebuild is modified. The installation controller and its validator are pinned while this service is active.
+
+Configuration and launch identities are in `metadata/orthology_OG0000017_installation_controller_{config,launch}.json`; live state and subsequent readback are under `results/orthology/OG0000017-installation-controller-v1`. The stage uses one CPU, an 8 GiB memory planning allowance with a 16 GiB service ceiling, 1 GiB output allowance, and 0.01–1 hour after the rebuild for checks and installation. Launch requires 16 GiB available memory and 5 GiB free disk at the validation stage. No additional charges are incurred. The transient service does not survive reboot; a partial installation or failed state requires inspection before any fresh controller launch.
+
+`python scripts/check_family_installation_gates.py` exercises the actual native parser and installer in disposable three-tip fixtures. It accepts and installs a valid tree, and rejects wrong tips, negative branches, omitted branch lengths, an occupied target and a missing completion receipt while preserving the target. The check record is `metadata/orthology_family_installation_gate_checks.json`. These fixtures verify the handoff logic, not large-tree runtime or biological topology.
+
+Installation is a prerequisite to a separately reviewed native `--from-trees` / `-fgt` continuation. Reconciliation has not been launched by this handoff and remains required, together with species-tree/root sensitivities and independent output validation.
