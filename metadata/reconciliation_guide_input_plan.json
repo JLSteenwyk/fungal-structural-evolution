@@ -1,0 +1,32 @@
+{
+  "manifest": "metadata/analysis_manifest.tsv",
+  "species_ids": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesIDs.txt",
+  "guides": {
+    "profile": "results/phylogeny/profile-guide-audit-v1/guide.treefile",
+    "mafft": "results/phylogeny/mafft-guide-audit-v1/guide.treefile"
+  },
+  "native_python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+  "output": "results/orthology/reconciliation-guide-inputs-v1",
+  "pins": {
+    "scripts/prepare_reconciliation_guide_trees.py": "e09b74fbe7139f2c386ece46f6e76d1b0e8172bd65f8f03913d8c47846490871",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/fungal_outgroup_root_diagnostic_receipt.json": "8049cb2659a716e83a1e7f99fc92ff9bf7afd2b27287b3a4a4d9efa0748b066c",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/phylogeny/profile-guide-audit-v1/guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "results/phylogeny/mafft-guide-audit-v1/guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/infer_trees.py": "176745c415b6c2650062a9969f5b81944beda13bb04723146f7c039c0e2457d1",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/tree.py": "6581d8f8329cb330d5c76322dc6456fd8e76046629aa391531269230e3082c59",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/newick.py": "52e7f9c29046dfb1bcf9d12f7fbc4c4f4b98511238967070b8fbf9495b2b05f7"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 2,
+    "output_allowance_mib": 20,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "scope": "Prepare both existing homogeneous guide sensitivities with named/native-ID trees. No inference launch, no final topology claim."
+}

@@ -1,0 +1,50 @@
+{
+  "status": "passed_all_rooted_guide_graph_and_id_readbacks",
+  "checks": [
+    {
+      "guide": "profile",
+      "file": "species_tree_taxa.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 0.0
+    },
+    {
+      "guide": "profile",
+      "file": "species_tree_ids.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 0.0
+    },
+    {
+      "guide": "profile",
+      "file": "native_converter_check.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 4.770499999917632e-06
+    },
+    {
+      "guide": "mafft",
+      "file": "species_tree_taxa.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 0.0
+    },
+    {
+      "guide": "mafft",
+      "file": "species_tree_ids.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 0.0
+    },
+    {
+      "guide": "mafft",
+      "file": "native_converter_check.nwk",
+      "taxa_checked": 526,
+      "canonical_edges_checked": 1049,
+      "max_edge_length_error": 4.5783000000021445e-06
+    }
+  ],
+  "source_receipt_sha256": "af821add6dcbc1c06555c8a77301d0171c9b81c83678148c73c5d0dc0dee200a",
+  "script_sha256": "b3d829919548a0630f94acad048ea1790bab7cc0c14a8ffc9eb96ca2b4724ad9",
+  "scope": "All six output trees: independent undirected edge deletion, exact native-ID mapping, 501/25 root partition, full bifurcation and all 6294 canonical edge comparisons. Intended named/IDs inputs preserve lengths to 1e-12; native converter rounding is separately quantified. Does not establish a final supported species tree or biological root."
+}

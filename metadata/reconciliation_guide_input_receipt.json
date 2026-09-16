@@ -1,0 +1,49 @@
+{
+  "status": "prepared_rooted_reconciliation_guide_sensitivities",
+  "guides": [
+    {
+      "guide": "profile",
+      "tips": 526,
+      "unrooted_edges": 1049,
+      "root_split_taxa": [
+        501,
+        25
+      ],
+      "root_edge_original_length": 0.0695540359,
+      "root_child_lengths": [
+        0.03477701795,
+        0.03477701795
+      ],
+      "maximum_native_converter_edge_rounding_error": 4.770499999917632e-06,
+      "artifacts": {
+        "native_converter_check.nwk": "f87c78d83b3f2c0d2acfa927c5b839c0690019af3f01edb6e6f5d1dd230ade7d",
+        "species_tree_taxa.nwk": "eca7894169f8844493828abe6534d170f98eb6ecb433245c6aed626b539e4862",
+        "species_tree_ids.nwk": "51404418e687b6dc5148101f697b65f1196b306f1a3187760e4be330538194d7"
+      }
+    },
+    {
+      "guide": "mafft",
+      "tips": 526,
+      "unrooted_edges": 1049,
+      "root_split_taxa": [
+        501,
+        25
+      ],
+      "root_edge_original_length": 0.059788186,
+      "root_child_lengths": [
+        0.029894093,
+        0.029894093
+      ],
+      "maximum_native_converter_edge_rounding_error": 4.5783000000021445e-06,
+      "artifacts": {
+        "native_converter_check.nwk": "fc1ac3a5fa38110dae84a69cce41376a676225d741ad545fbed93e03b94346dd",
+        "species_tree_taxa.nwk": "41418d744c88a327d1dfa952d7d4f4baf41bf447b72405c3c098593b8d9a0d62",
+        "species_tree_ids.nwk": "3e963cafe98a893426c2249cb5a28e963a0a1d4895a13c3766712aaa570d2851"
+      }
+    }
+  ],
+  "plan_sha256": "026729e1249ea41af03aaf9b66085d640f8e2ccbfd46579f17958c7b0cbecf9c",
+  "script_sha256": "e09b74fbe7139f2c386ece46f6e76d1b0e8172bd65f8f03913d8c47846490871",
+  "mapping_sha256": "1a9c125bfb7a5795f65e569ad807afb88354525bd88f5ce9ba789139f447e50e",
+  "interpretation": "Both homogeneous guide alternatives rooted on their shared 501-fungal/25-outgroup separating edge. Equal edge halves are a serialization convention, not inferred root position or branch duration. Unrooted topology/lengths and 526 native IDs checked. No final supported topology, time calibration or completed reconciliation is claimed."
+}
