@@ -1,0 +1,15 @@
+{
+  "name": "orthology_inventory",
+  "pid": 49495,
+  "created": 1789565964.41,
+  "session_id": 20548,
+  "command": [
+    "python",
+    "scripts/audit_interrupted_orthology_families.py",
+    "--working",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory",
+    "--output",
+    "results/orthology/interrupted-family-inventory-v1"
+  ],
+  "verified_at": 1789565986.917376
+}

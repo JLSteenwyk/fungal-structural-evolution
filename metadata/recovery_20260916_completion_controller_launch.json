@@ -1,0 +1,47 @@
+{
+  "status": "live_handles_verified",
+  "retired_initial_attempt": "Short-lived launch parents exited before children persisted; no controller/output directories were created. Relaunched as tracked exec sessions.",
+  "processes": [
+    {
+      "name": "prediction_snapshot",
+      "pid": 49491,
+      "created": 1789565964.36,
+      "session_id": 30628,
+      "command": [
+        "python",
+        "scripts/advance_prediction_snapshot.py",
+        "--config",
+        "metadata/recovery_20260916_prediction_snapshot_config.json"
+      ],
+      "verified_at": 1789565986.576588
+    },
+    {
+      "name": "crossed_pmsf",
+      "pid": 49493,
+      "created": 1789565964.38,
+      "session_id": 12048,
+      "command": [
+        "python",
+        "scripts/advance_crossed_species_pmsf.py",
+        "--config",
+        "metadata/recovery_20260916_crossed_pmsf_config.json"
+      ],
+      "verified_at": 1789565986.7471962
+    },
+    {
+      "name": "orthology_inventory",
+      "pid": 49495,
+      "created": 1789565964.41,
+      "session_id": 20548,
+      "command": [
+        "python",
+        "scripts/audit_interrupted_orthology_families.py",
+        "--working",
+        "results/orthology/core-v1/Results_full526v2/WorkingDirectory",
+        "--output",
+        "results/orthology/interrupted-family-inventory-v1"
+      ],
+      "verified_at": 1789565986.917376
+    }
+  ]
+}

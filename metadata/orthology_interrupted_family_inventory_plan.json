@@ -1,0 +1,15 @@
+{
+  "scope": "Read all 104138 source-family FASTAs, existing alignments and trees",
+  "threads": 1,
+  "memory_budget_gb": 2,
+  "disk_budget_gb": 1,
+  "input_gb": 9.8,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "paid_resources": false,
+  "mutation": "none to source files",
+  "largest_alignment_gb": 1.577,
+  "strategy": "Stream FASTA records; hold only one source family in memory. Largest source family file is 16.3 MB."
+}
