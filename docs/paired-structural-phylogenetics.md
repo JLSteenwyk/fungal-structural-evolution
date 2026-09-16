@@ -578,3 +578,18 @@ metadata/gdm_expanded_site_exposure_receipt.json and
 metadata/gdm_expanded_site_exposure_readback.json. This supplies a validated
 exposure input for downstream source-specific rate/coupling analyses; it does
 not itself test those associations.
+
+The expanded AlphaFold rate-comparison controller is now waiting on its exact
+Gamma4/FreeRate producer identity. It requires both full rate audits and the
+completed exposure readback before running six sequential stages: initial
+comparison, 1,984 optimization diagnostics for all 496 source fits, optimization
+audit, selected-fit comparison, full comparison readback and exposure-frame
+assembly. The existing controller and inference scripts are reused unchanged.
+Four single-thread fits run concurrently within the 48-core allowance, with
+64-GiB available-memory and 20-GiB disk gates at each stage. Its 1–168-hour
+post-prerequisite runtime range is a planning estimate. Source files and expected
+124-marker/178,876-rate-entry counts are pinned; incomplete stages require
+review before retry. Configuration and live identity:
+metadata/gdm_expanded_rate_comparison_controller_{config,launch}.json.
+Output: results/phylogeny/site-rate-comparison-controller-gdm-expanded-v1.
+The controller is live but downstream completion and coupling remain pending.

@@ -1,0 +1,273 @@
+{
+  "producer": {
+    "pid": 116783,
+    "created": 1789568163.24,
+    "command": [
+      "python",
+      "-u",
+      "-"
+    ]
+  },
+  "created_at": 1789568510.5402124,
+  "output": "results/phylogeny/site-rate-comparison-controller-gdm-expanded-v1",
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64,
+    66,
+    68,
+    70,
+    72,
+    74,
+    76,
+    78,
+    80,
+    82,
+    84,
+    86,
+    88,
+    90,
+    92,
+    94
+  ],
+  "resources": {
+    "workers": 4,
+    "threads_per_fit": 1,
+    "memory_per_fit_gib": 2,
+    "minimum_available_memory_bytes": 68719476736,
+    "minimum_free_disk_bytes": 21474836480,
+    "disk_allowance_gib": 20,
+    "diagnostic_fits": 1984,
+    "planning_hours": [
+      1,
+      168
+    ],
+    "basis": "Same complete six-stage workflow, expanded to 124 markers and 496 source model fits; four optimization diagnostics per source fit. Sequential audit/readback/frame stages; conservative runtime estimate.",
+    "paid_resources": false
+  },
+  "prerequisites": [
+    {
+      "receipt": "results/phylogeny/paired-site-rates-audit-gdm-expanded-v1/receipt.json",
+      "status": "passed_full_site_rate_output_audit",
+      "expected_counts": {
+        "markers": 124,
+        "fits": 496
+      }
+    },
+    {
+      "receipt": "results/phylogeny/paired-site-rates-freerate-audit-gdm-expanded-v1/receipt.json",
+      "status": "passed_full_site_rate_output_audit",
+      "expected_counts": {
+        "markers": 124,
+        "fits": 496
+      }
+    },
+    {
+      "receipt": "metadata/gdm_expanded_site_exposure_readback.json",
+      "status": "passed_full_site_parsimony_exposure_readback",
+      "expected_counts": {
+        "markers": 124,
+        "sites": 44719,
+        "independent_character_scores": 89438
+      }
+    }
+  ],
+  "stages": [
+    {
+      "name": "initial_comparison",
+      "command": [
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-gdm-expanded-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-gdm-expanded-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-gdm-expanded-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-gdm-expanded-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-gdm-expanded-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-gdm-expanded-v1/receipt.json",
+      "status": "complete_matched_rate_heterogeneity_comparison",
+      "expected_counts": {
+        "fits": 496
+      }
+    },
+    {
+      "name": "optimization",
+      "command": [
+        "scripts/refit_flagged_freerate_models.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-gdm-expanded-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-gdm-expanded-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-gdm-expanded-v1",
+        "--all-fits",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-gdm-expanded-v1/receipt.json",
+      "status": "complete_flagged_freerate_diagnostic_execution",
+      "expected_counts": {
+        "source_fits": 496,
+        "diagnostic_fits": 1984
+      }
+    },
+    {
+      "name": "optimization_audit",
+      "command": [
+        "scripts/audit_freerate_optimization.py",
+        "--diagnostics",
+        "results/phylogeny/freerate-optimization-all-gdm-expanded-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-gdm-expanded-v1",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-audit-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-audit-gdm-expanded-v1/receipt.json",
+      "status": "passed_full_freerate_optimization_diagnostics",
+      "expected_counts": {
+        "source_fits": 496,
+        "diagnostic_fits": 1984
+      }
+    },
+    {
+      "name": "selected_comparison",
+      "command": [
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-gdm-expanded-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-gdm-expanded-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-gdm-expanded-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-gdm-expanded-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-gdm-expanded-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-gdm-expanded-v1",
+        "--optimization-audit",
+        "results/phylogeny/freerate-optimization-all-audit-gdm-expanded-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-optimized-gdm-expanded-v1/receipt.json",
+      "status": "complete_matched_rate_heterogeneity_comparison",
+      "expected_counts": {
+        "fits": 496,
+        "site_comparisons": 178876
+      }
+    },
+    {
+      "name": "comparison_readback",
+      "command": [
+        "scripts/readback_rate_heterogeneity.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-gdm-expanded-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-gdm-expanded-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-gdm-expanded-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-gdm-expanded-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-readback-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-readback-gdm-expanded-v1/receipt.json",
+      "status": "passed_full_rate_comparison_readback",
+      "expected_counts": {
+        "fits": 496,
+        "sites": 178876
+      }
+    },
+    {
+      "name": "frame",
+      "command": [
+        "scripts/prepare_site_rate_exposure_frame.py",
+        "--rates",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-gdm-expanded-v1",
+        "--rate-readback",
+        "results/phylogeny/paired-rate-heterogeneity-readback-gdm-expanded-v1/receipt.json",
+        "--exposure",
+        "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-gdm-expanded-v1",
+        "--output",
+        "results/phylogeny/site-rate-exposure-frame-gdm-expanded-v1"
+      ],
+      "receipt": "results/phylogeny/site-rate-exposure-frame-gdm-expanded-v1/receipt.json",
+      "status": "complete_site_rate_exposure_analysis_frame",
+      "expected_counts": {
+        "markers": 124,
+        "sites": 44719
+      }
+    }
+  ],
+  "pinned_files": {
+    "scripts/advance_paired_fit_benchmark.py": "a05390806f95b62ae9c08b8439818bafd4b9e4497e425800e8375af118504e90",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/benchmark_paired_site_tree_points.py": "b25c1411dd0a17a34afea3efb59ac35029fae02260158f011b1278342d615af2",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/plot_tree_path_geometry_ranks.py": "5aa83291c960a7d502f3076620615711baee5da586b197b8578a57b30301bd52",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/summarize_tree_path_geometry_ranks.py": "5dce19d3e0f45cbc88b54ebf903fafbe22cc8b84131164e39400bc5f56fc96c1",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "scripts/compare_site_rate_heterogeneity.py": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+    "scripts/readback_rate_heterogeneity.py": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+    "scripts/audit_freerate_optimization.py": "13bf4ec833ddec954b912d5270920bea2be97816e906e505a488c73113adcbbc",
+    "scripts/summarize_site_parsimony_exposure.py": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+    "scripts/advance_fcs_rate_analysis.py": "89a4689f67bb802180659dbd2f7dd9bc75499347de8e58cd280daba259ca2c8d",
+    "scripts/refit_flagged_freerate_models.py": "cca4f577b97091883ce91a09eff044b32c67b2cf7830b83b418421eed81cb296",
+    "scripts/prepare_site_rate_exposure_frame.py": "6cd7e19c2578f614598bc999b450d5415ba86584de8c7c4a835ef405370b2991",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9",
+    "scripts/advance_site_rate_comparison.py": "976a79f235693b59f8b8694808978493e14eb1f8c5f04f6ac799c825043b1be8",
+    "results/phylogeny/paired-inputs-gdm-expanded-v1/receipt.json": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "results/phylogeny/paired-marker-fits-gdm-expanded-v1/receipt.json": "008916dd741ed35933af61029fbf35627b40a5a6929236c4b39d38681d0f7a5e",
+    "results/phylogeny/paired-fit-audit-gdm-expanded-v1/receipt.json": "dc227a97cf285fedfe799c8209869e8de8e9cd0fcf3794cf0c4641f7795916c4",
+    "results/phylogeny/site-parsimony-exposure-gdm-expanded-v1/receipt.json": "0af2975e999d2027b42b51da433a4e426ceda92baf4c3f56f1a479f8e12dd1f9",
+    "metadata/gdm_expanded_site_exposure_readback.json": "1737745b3579265e26ebaf196189d1ec034256654ae82a3d6c247dc833b7a358",
+    "metadata/gdm_expanded_site_rate_resource_plan.json": "287b53ab65285e4c521a4e7574f8bc1e79c50027314d063d299bbf6fe267e557",
+    "metadata/gdm_expanded_site_exposure_receipt.json": "0af2975e999d2027b42b51da433a4e426ceda92baf4c3f56f1a479f8e12dd1f9",
+    "results/phylogeny/paired-site-rates-gdm-expanded-v1/config.json": "862cead4f1bdfe75375a81e4e768a2b5a3bf07ec0d0a27aa5201e4e6f345fb25"
+  }
+}
