@@ -1,0 +1,35 @@
+{
+  "status": "prelaunch_isolated_large_family_tree_rebuild",
+  "created_at": 1789567699.808966,
+  "family": "OG0000017",
+  "source": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0000017.fa",
+  "alignment": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa",
+  "production_tree": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0000017.txt",
+  "disposition": "metadata/orthology_interrupted_repair_disposition_20260916.json",
+  "executable": ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/FastTree",
+  "output": "results/orthology/OG0000017-recovery-v1",
+  "cpu_affinity": [
+    24
+  ],
+  "threads": 1,
+  "address_space_limit_bytes": 274877906944,
+  "minimum_available_memory_bytes": 429496729600,
+  "minimum_free_disk_bytes": 10737418240,
+  "disk_allowance_gib": 5,
+  "planning_hours": [
+    24,
+    336
+  ],
+  "basis": "Same serial SSE3 FastTree 2.1.11 invocation as production. Scaling the completed 769-tip/2112-column 121-second repair by tips and columns gives roughly 32 hours, but nonlinear tree search and sparsity make this uncertain; previous interrupted large-family run exceeded one day. Memory allowance is a hard process address-space cap, not a predicted peak. An illustrative dense 20-state float profile per sequence would require about 116 GiB; multiple profiles and overhead are implementation-dependent. Allocation failure requires review, not automatic retry.",
+  "available_memory_bytes": 575781769216,
+  "paid_resources": false,
+  "pinned_files": {
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Sequences_ids/OG0000017.fa": "6ca2ddc21fda535053065e3b5f35698e0d046bb83dd5d7c3c138bb049eaad87d",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa": "76389fed0f41bc6bac7688126c5acf194454440185cca7364b54a84db2ad51e6",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0000017.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/FastTree": "6fe112c32a2e0b5a2cc6baeeb5f564300f5f650b0dfe96b54a06f0c2ef7a97a5",
+    "metadata/orthology_interrupted_repair_disposition_20260916.json": "6eb6265695376744aef3fba443cdb438ec9495f376bb0f6068add9a9979a82b6",
+    "scripts/rebuild_audited_family_tree.py": "d3555f806c2314bf4e90d7ee6b46ba2ed7dc532a77a80d4b81300b0a563e1b78"
+  },
+  "interpretation": "Isolated recomputation from audited existing alignment; no production replacement until completion and independent validation. No method change to fastest mode or a different executable."
+}

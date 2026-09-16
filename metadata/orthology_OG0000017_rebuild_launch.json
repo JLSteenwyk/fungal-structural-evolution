@@ -1,0 +1,26 @@
+{
+  "pid": 99931,
+  "created": 1789567713.74,
+  "command": [
+    "python",
+    "scripts/rebuild_audited_family_tree.py",
+    "--plan",
+    "metadata/orthology_OG0000017_rebuild_plan.json"
+  ],
+  "session_id": 71271,
+  "cpu_affinity": [
+    24
+  ],
+  "children": [
+    {
+      "pid": 100200,
+      "created": 1789567716.81,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/FastTree",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0000017.fa"
+      ],
+      "rss_bytes": 1283457024
+    }
+  ],
+  "verified_at": 1789567732.3492475
+}
