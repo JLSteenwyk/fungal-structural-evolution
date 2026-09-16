@@ -1,0 +1,88 @@
+{
+  "status": "complete_long_marker_input_preparation",
+  "selected_length_band_sequences": 4369,
+  "prediction_candidates": 4363,
+  "reusable_sequences": 6,
+  "selected_taxon_marker_links": 4397,
+  "selected_taxa": 277,
+  "selected_markers": 99,
+  "source_dispositions": {
+    "short_queue": 20286,
+    "longer_deferred": 3514,
+    "noncanonical": 110,
+    "selected_length_band": 4369
+  },
+  "source_receipts": {
+    "data/prediction_inputs/markers-v1": "5e421c01f64d53d53b57cb8a674dc65a27bac51f0ac931e9170ea850fc38521c",
+    "data/prediction_inputs/markers-followon-v1": "5728c78a78fed5449d54f128491a051eda43e6e9176fc16fb5a1f7242582b458"
+  },
+  "prediction_configs": {
+    "results/predictions/esmfold-marker-v1": "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042",
+    "results/predictions/esmfold-followon-v1": "63884b870ac421fd504bfd1b9232671373f12b2989735558122e61735a2c8c68",
+    "results/predictions/esmfold-markers-513-768-gpu0-v1": "3d82b4d905c2147ddf82613e427ee418d7f79e9bc5ec9082936fd7bf651625a2",
+    "results/predictions/esmfold-controls-v1": "d4caea4d704d692308a747c50ae1fb0a38a343436fa25366a3593a252605a90b",
+    "results/predictions/esmfold-ecology-v1": "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7",
+    "results/predictions/esmfold-experimental-controls-v1": "a2c1353d7f382c76c749a8ba9027788e2b4e88a11b14f0f0e8200258fbd5bef1",
+    "results/predictions/esmfold-experimental-controls-513-768-v1": "6ff1c168fb254bfa9cb82694553da93e1ef11cf542adf328eb17efdff31d3684",
+    "results/predictions/esmfold-experimental-controls-769-1152-v1": "334e833a869e164f396c9e8a95141a469b3623f0a7f2604f7a07871bfae3d0ae",
+    "results/predictions/esmfold-experimental-controls-1153-1536-v1": "37b6ab27645b5c6bee3b8e1dfda7a90191ec96244ebee533a93a78b83afdc3c3",
+    "results/predictions/esmfold-experimental-controls-chunk16-v1": "993125039e6c5d4e129f65250c9309985b881d779f6ad719e5d43a82e93b4eb2"
+  },
+  "script_sha256": "dec5fab2734412bbbd15a1e0d0e40e740ddd8c32f5e2a9f023674550ec4239f3",
+  "resource_plan": {
+    "status": "extrapolated_planning_scenarios_based_on_long_control_timings",
+    "observed_receipts": 20,
+    "observed_length_range": [
+      788,
+      1063
+    ],
+    "target_length_range": [
+      769,
+      1024
+    ],
+    "pending_sequences": 4363,
+    "scenarios": [
+      {
+        "length_exponent": 2,
+        "observed_percentile": 50,
+        "seconds_per_length_power": 0.00011451594652856924,
+        "projected_inference_gpu_hours": 113.01126685757588
+      },
+      {
+        "length_exponent": 2,
+        "observed_percentile": 90,
+        "seconds_per_length_power": 0.0001398968116296929,
+        "projected_inference_gpu_hours": 138.05864065982306
+      },
+      {
+        "length_exponent": 3,
+        "observed_percentile": 50,
+        "seconds_per_length_power": 1.23990967575651e-07,
+        "projected_inference_gpu_hours": 111.45044919863525
+      },
+      {
+        "length_exponent": 3,
+        "observed_percentile": 90,
+        "seconds_per_length_power": 1.3464412872533587e-07,
+        "projected_inference_gpu_hours": 121.02614345066549
+      }
+    ],
+    "planning_hours_with_50percent_overhead": 207.0879609897346,
+    "quadratic_total_allocated_memory_extrapolation_bytes": 21620028631.596996,
+    "planned_gpu_count": 1,
+    "planned_cpu_threads": 4,
+    "planned_output_gb": 100,
+    "execution": "Not launched or queued. Use a separate output configuration and wait for authorized GPU availability. Preserve the existing stop-on-OOM behavior. Recheck exact-sequence reuse before launch.",
+    "limitations": "Quadratic/cubic timing and quadratic total-memory scaling are explicit scenarios, not validated complexity bounds or runtime/confidence intervals. Runtime, allocator overhead and fragmentation can differ between controls and marker proteins. Timing receipts are observations, not an independent structure-quality audit. No extrapolation above 1024 residues or to the full proteome atlas."
+  },
+  "interpretation": "Full selected length band from disjoint original and follow-on marker queues. Complete proteins and all source marker links retained. Exact sequence reuse checked at this frozen snapshot. No prediction execution or structural coverage claim.",
+  "artifacts": {
+    "all_marker_links.tsv": "bf275a0dd8632d180599a64a343c52b9311617112eb56ac3c53b9be8c508947c",
+    "source_length_inventory.tsv": "c7e63d9922d8c8601784d3cc25d1748538bbd9fe9fdd9db8c6be079e7e12561a",
+    "resource_observations.tsv": "e5178260be0e61fe11505fbcf7c0352940943c4a11db10351630b4eb97a8c77f",
+    "afdb_snapshot.jsonl": "5daf5e6fc836848d22c19924edf861c790e883b5eee9ab597e05c1c0f880a948",
+    "queue_disposition.tsv": "5ba16630d7ef3a8fd1c5e81e51575589c9b264b359165f97e490a382a044e260",
+    "candidates.faa": "7352f5f01464143c95ce4a58f6efc15289a7a48b4cfba463dce384de9fdfbf98",
+    "resource_plan.json": "144f983e9190290dd863f8c920c3f79e536a5e0f8ed8230b0a33efb5d01a6c4f"
+  }
+}

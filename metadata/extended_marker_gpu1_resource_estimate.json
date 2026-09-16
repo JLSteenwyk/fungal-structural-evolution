@@ -1,0 +1,46 @@
+{
+  "status": "extrapolated_planning_scenarios_based_on_long_control_timings",
+  "observed_receipts": 20,
+  "observed_length_range": [
+    788,
+    1063
+  ],
+  "target_length_range": [
+    769,
+    1024
+  ],
+  "pending_sequences": 4363,
+  "scenarios": [
+    {
+      "length_exponent": 2,
+      "observed_percentile": 50,
+      "seconds_per_length_power": 0.00011451594652856924,
+      "projected_inference_gpu_hours": 113.01126685757588
+    },
+    {
+      "length_exponent": 2,
+      "observed_percentile": 90,
+      "seconds_per_length_power": 0.0001398968116296929,
+      "projected_inference_gpu_hours": 138.05864065982306
+    },
+    {
+      "length_exponent": 3,
+      "observed_percentile": 50,
+      "seconds_per_length_power": 1.23990967575651e-07,
+      "projected_inference_gpu_hours": 111.45044919863525
+    },
+    {
+      "length_exponent": 3,
+      "observed_percentile": 90,
+      "seconds_per_length_power": 1.3464412872533587e-07,
+      "projected_inference_gpu_hours": 121.02614345066549
+    }
+  ],
+  "planning_hours_with_50percent_overhead": 207.0879609897346,
+  "quadratic_total_allocated_memory_extrapolation_bytes": 21620028631.596996,
+  "planned_gpu_count": 1,
+  "planned_cpu_threads": 4,
+  "planned_output_gb": 100,
+  "execution": "Not launched or queued. Use a separate output configuration and wait for authorized GPU availability. Preserve the existing stop-on-OOM behavior. Recheck exact-sequence reuse before launch.",
+  "limitations": "Quadratic/cubic timing and quadratic total-memory scaling are explicit scenarios, not validated complexity bounds or runtime/confidence intervals. Runtime, allocator overhead and fragmentation can differ between controls and marker proteins. Timing receipts are observations, not an independent structure-quality audit. No extrapolation above 1024 residues or to the full proteome atlas."
+}

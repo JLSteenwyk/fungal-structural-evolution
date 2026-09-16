@@ -1,0 +1,18 @@
+{
+  "status": "launched",
+  "unit": "fungal-extended-marker-gpu1-20260916.service",
+  "pid": 267204,
+  "created": 1789573381.08,
+  "recorded_at": 1789573404.661688,
+  "plan": "metadata/extended_marker_gpu1_plan.json",
+  "note": "Transient service; verify outputs and process identity after a host reboot before resuming.",
+  "verified_at": 1789573447.2219808,
+  "children": [
+    {
+      "pid": 267239,
+      "created": 1789573381.2,
+      "status": "running"
+    }
+  ],
+  "gpu_observation": "index, utilization.gpu [%], memory.used [MiB], power.limit [W]\n0, 100 %, 24118 MiB, 300.00 W\n1, 100 %, 20816 MiB, 300.00 W\n"
+}

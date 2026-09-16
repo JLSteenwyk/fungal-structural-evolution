@@ -1,0 +1,81 @@
+{
+  "status": "prelaunch_resource_and_provenance_plan",
+  "created_at": 1789573381.1522808,
+  "expected_predictions": 4363,
+  "candidate_residues": 3924624,
+  "length_range": [
+    769,
+    1024
+  ],
+  "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+  "cpu_affinity": [
+    80,
+    82,
+    84,
+    86
+  ],
+  "host_memory_limit_gib": 64,
+  "minimum_available_memory_gib": 64,
+  "minimum_free_disk_gib": 200,
+  "planning_hours": [
+    111,
+    207.1
+  ],
+  "estimated_output_gib_upper": 100,
+  "paid_resources": false,
+  "basis": "Twenty completed 788\u20131063-residue control timings; quadratic/cubic scenarios. Estimated allocated GPU memory 20.14 GiB, or approximately 30.18 GiB with 30 percent plus 4 GiB headroom. Device reservation may differ. Stop on first OOM; preserve complete sequences.",
+  "gpu_duty": "Continuous GPU1 production at normal 300 W power limit; no scheduled pauses.",
+  "output_directories": [
+    "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+    "results/predictions/markers-769-1024-gpu1-audit-v1",
+    "results/structures/esmfold-markers-769-1024-gpu1-v1"
+  ],
+  "chunk_path": "results/predictions/esmfold-markers-769-1024-gpu1-v1/last_chunk.json",
+  "execution_receipt": "results/extended_marker_gpu1_execution.json",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+      "scripts/run_marker_predictions.py",
+      "--inputs",
+      "data/prediction_inputs/markers-769-1024-gpu1-v1",
+      "--checkpoint",
+      "data/prediction_models/esmfold-v1",
+      "--output",
+      "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+      "--max-length",
+      "1024",
+      "--limit",
+      "4363"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_local_predictions.py",
+      "--predictions",
+      "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+      "--inputs",
+      "data/prediction_inputs/markers-769-1024-gpu1-v1",
+      "--output",
+      "results/predictions/markers-769-1024-gpu1-audit-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/convert_esmfold_snapshot.py",
+      "--predictions",
+      "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+      "--audit",
+      "results/predictions/markers-769-1024-gpu1-audit-v1",
+      "--output",
+      "results/structures/esmfold-markers-769-1024-gpu1-v1"
+    ]
+  ],
+  "pins": {
+    "scripts/run_experimental_control_tier.py": "214f29b29d41906c65cd060c1fd7322c002d443e49b0fd7f14ef8ad6c73e0c43",
+    "scripts/run_marker_predictions.py": "10d9c1e7892baf063b92d5b301bb8ae9231af0de1de058be79395d37d41592cc",
+    "scripts/audit_local_predictions.py": "3982ef255f6973a0b5689e4dc908209499d017c0452cc14ba120960d48007836",
+    "scripts/convert_esmfold_snapshot.py": "5c356f89bf5a8474ace8c0bde183e18e50852e30e821b482621421dafae6d1b8",
+    "data/prediction_inputs/markers-769-1024-gpu1-v1/receipt.json": "1c7c34e10e619807e8a440ab0b21e62974579df8b3dea668bdda633d4e3e3f2c",
+    "data/prediction_models/esmfold-v1/receipt.json": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "metadata/extended_marker_gpu1_resource_estimate.json": "144f983e9190290dd863f8c920c3f79e536a5e0f8ed8230b0a33efb5d01a6c4f",
+    "metadata/extended_marker_gpu1_queue_readback.json": "434b17cf2922aeca107d24b55bca960356a976e3ff34593a0f4fc52f2695d33e"
+  }
+}
