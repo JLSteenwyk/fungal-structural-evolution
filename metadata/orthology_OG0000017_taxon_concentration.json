@@ -1,0 +1,70 @@
+{
+  "family": "OG0000017",
+  "family_genes": 55981,
+  "represented_taxa": 346,
+  "largest_taxon_contributions": [
+    {
+      "native_species_id": "214",
+      "taxon_id": "F181123",
+      "species_name": "Austropuccinia psidii",
+      "study_role": "ingroup",
+      "assembly_accession": "GCA_000469055.2",
+      "family_members": 46787,
+      "representative_proteome_genes": 133973,
+      "fraction_of_family": 0.8357657062217538,
+      "fraction_of_representative_proteome": 0.3492270830689766
+    },
+    {
+      "native_species_id": "196",
+      "taxon_id": "F170446",
+      "species_name": "Ceratobasidium sp. AG-Ba",
+      "study_role": "ingroup",
+      "assembly_accession": "GCA_016906575.1",
+      "family_members": 1198,
+      "representative_proteome_genes": 29016,
+      "fraction_of_family": 0.021400117897143675,
+      "fraction_of_representative_proteome": 0.04128756548111387
+    },
+    {
+      "native_species_id": "371",
+      "taxon_id": "F456999",
+      "species_name": "Rhizoctonia solani",
+      "study_role": "ingroup",
+      "assembly_accession": "GCF_016906535.1",
+      "family_members": 1082,
+      "representative_proteome_genes": 12301,
+      "fraction_of_family": 0.019327986281059646,
+      "fraction_of_representative_proteome": 0.08796032842858305
+    },
+    {
+      "native_species_id": "404",
+      "taxon_id": "F50956",
+      "species_name": "Geosiphon pyriformis",
+      "study_role": "ingroup",
+      "assembly_accession": "GCA_016748015.1",
+      "family_members": 539,
+      "representative_proteome_genes": 23936,
+      "fraction_of_family": 0.00962826673335596,
+      "fraction_of_representative_proteome": 0.022518382352941176
+    },
+    {
+      "native_species_id": "243",
+      "taxon_id": "F2035830",
+      "species_name": "Berkeleyomyces rouxiae",
+      "study_role": "ingroup",
+      "assembly_accession": "GCF_048999995.1",
+      "family_members": 491,
+      "representative_proteome_genes": 8286,
+      "fraction_of_family": 0.008770832961183259,
+      "fraction_of_representative_proteome": 0.0592565773594014
+    }
+  ],
+  "interpretation": "Exact clustered gene-identifier counts mapped through native SpeciesIDs and full representative manifest. Large taxon concentration requires annotation/homology review; not evidence of duplication by itself. No genes excluded or repair settings changed.",
+  "source_sha256": {
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f1875916a41c3b96340c79d9040471b2d86fc880d8ceb749d8aff159c502198f",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/gene_representatives/full-v2/receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7"
+  },
+  "reproduction": "Use installed orthofinder.tools.mcl.GetPredictedOGs on pinned clusters; select index 17; count each gene identifier prefix before underscore; map through SpeciesIDs filename stem to analysis manifest and representative receipt."
+}

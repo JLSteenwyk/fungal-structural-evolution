@@ -1,0 +1,25 @@
+{
+  "output": "results/orthology/full-reconciliation-workload-v1",
+  "universe_receipt": "metadata/orthology_family_universe_readback_receipt.json",
+  "inventory_receipt": "results/orthology/interrupted-family-inventory-v1/receipt.json",
+  "clusters": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt",
+  "tree_directory": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids",
+  "pins": {
+    "scripts/estimate_full_reconciliation_workload.py": "82dd57dffd3a4a44645c3c26802ba2a22226a40823cbe1f116e21d0918e8cd75",
+    "metadata/orthology_family_universe_readback_receipt.json": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+    "results/orthology/interrupted-family-inventory-v1/receipt.json": "bb04d98f8caef6b922c153ed10618fd130a3ff4ba8a320d39f6cdb2f2a4ed6fa",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f1875916a41c3b96340c79d9040471b2d86fc880d8ceb749d8aff159c502198f",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 4,
+    "disk_allowance_mib": 50,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "scope": "Read-only full-cluster workload arithmetic; no protein pair materialization and no reconciliation launch."
+}
