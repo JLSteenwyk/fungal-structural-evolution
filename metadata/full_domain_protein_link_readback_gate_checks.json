@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "script_sha256": "7124ca8eb30c0448306072718db846a0e8af4cdd92fa7fc33721d1088ef3b070",
+  "cases": [
+    {
+      "case": "complete",
+      "expected": "accept",
+      "observed_exit_code": 0,
+      "terminal_detail": "All linkage counts passed"
+    },
+    {
+      "case": "missing_link",
+      "expected": "reject",
+      "observed_exit_code": 1,
+      "terminal_detail": "ValueError: Protein link missing, changed, duplicated, or reordered"
+    },
+    {
+      "case": "duplicate_link",
+      "expected": "reject",
+      "observed_exit_code": 1,
+      "terminal_detail": "ValueError: Extra protein links"
+    },
+    {
+      "case": "wrong_partition",
+      "expected": "reject",
+      "observed_exit_code": 1,
+      "terminal_detail": "ValueError: Protein link missing, changed, duplicated, or reordered"
+    },
+    {
+      "case": "wrong_taxon",
+      "expected": "reject",
+      "observed_exit_code": 1,
+      "terminal_detail": "ValueError: Protein link missing, changed, duplicated, or reordered"
+    }
+  ],
+  "scope": "Synthetic 2-taxon, 4-protein fixture includes repeated sequence across taxa and one unused marker query. Re-pinned mutated link artifacts ensure rejection tests exercise link reconstruction rather than only hash checks."
+}

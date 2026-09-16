@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_domain_protein_link_readback",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "additional_unique_sequences": 5654720,
+  "reused_unique_marker_sequences": 58879,
+  "full_proteome_unique_sequences": 5713599,
+  "marker_query_protein_links": 60033,
+  "additional_query_residues_checked": 2520735813,
+  "marker_queries_outside_representative_proteomes": 4,
+  "elapsed_seconds": 452.8946313858032,
+  "source_receipt_pins": {
+    "data/domains/full-inputs-v1/receipt.json": "8d21e215367ebcdca2c5fb157b3b0f4f6fab9fbc79624a8a0aa5e46c2586a928",
+    "data/domains/marker-inputs-v1/receipt.json": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6",
+    "results/gene_representatives/full-v2/receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5"
+  },
+  "script_sha256": "7124ca8eb30c0448306072718db846a0e8af4cdd92fa7fc33721d1088ef3b070",
+  "artifacts": {
+    "taxon_link_readback.tsv": "7c452ad0c1f0ff01ee8388065312b30a5fe204e5c2215a995e16da12df4ca05d"
+  },
+  "scope": "All protein links and query sequence hashes independently reconstructed from representative FASTA files. Exact source and partition coverage checked. Does not validate gene-representative selection, taxonomy, homology, domain assignments, or biological absence."
+}
