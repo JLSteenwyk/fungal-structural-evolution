@@ -1,0 +1,15 @@
+{
+  "status": "prelaunch_marker_pfam_detection_mapping",
+  "cpu_threads": 1,
+  "memory_allowance_gib": 4,
+  "output_allowance_gib": 2,
+  "planning_hours": [
+    0.02,
+    2
+  ],
+  "source_markers": 70,
+  "candidate_marker_profile_pairs_before_tree_taxon_filter": 1315,
+  "policy": "Retain all Domain/Family/Repeat profile dispositions; fit only >=5 detected and >=5 undetected tips, separately with all GA hits and overlap/partial unknown states.",
+  "paid_resources": false,
+  "script_sha256": "7e902ee7f9efd77d62490267df39965ba7c79432f98744fcc5e734639e095e15"
+}
