@@ -1,0 +1,28 @@
+{
+  "status": "passed_complete_staged_file_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "checked_files": 33168,
+      "checked_bytes": 3006793101,
+      "source_aliases": 0,
+      "native_species_fasta_count": 526,
+      "native_fasta_sequences": 5815847
+    },
+    {
+      "guide": "mafft",
+      "checked_files": 33168,
+      "checked_bytes": 3006793079,
+      "source_aliases": 0,
+      "native_species_fasta_count": 526,
+      "native_fasta_sequences": 5815847
+    }
+  ],
+  "receipt_sha256": "785e4dcfacfe9805bce2a259657f63172b8a42940d18c6c092b5496b2d882569",
+  "script_sha256": "b2d34973de2e3edd648895eeb1d7fa4839a1c79f3230f85fa4c0cf48b7bf7099",
+  "launch_ready": false,
+  "pending_families": [
+    "OG0000017"
+  ],
+  "scope": "All copied files independently hashed against original files; exact expected file universe and independent inode identity checked. Validates staging, not orthology or native runtime access completeness."
+}

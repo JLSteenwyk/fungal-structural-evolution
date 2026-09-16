@@ -1,0 +1,30 @@
+{
+  "output": "results/orthology/full-reconciliation-inputs-v1",
+  "source_working_directories": [
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory",
+    "results/orthology/core-v1/Results_Sep12/WorkingDirectory"
+  ],
+  "universe_receipt": "metadata/orthology_family_universe_readback_receipt.json",
+  "inventory_receipt": "results/orthology/interrupted-family-inventory-v1/receipt.json",
+  "guide_receipt": "metadata/reconciliation_guide_input_receipt.json",
+  "guide_directory": "results/orthology/reconciliation-guide-inputs-v1",
+  "pins": {
+    "scripts/stage_full_reconciliation_inputs.py": "425a77408e7646fb96edc7c5dcc66225fec085aa9796c177f1843ba0b5cb65f1",
+    "metadata/orthology_family_universe_readback_receipt.json": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+    "results/orthology/interrupted-family-inventory-v1/receipt.json": "bb04d98f8caef6b922c153ed10618fd130a3ff4ba8a320d39f6cdb2f2a4ed6fa",
+    "metadata/reconciliation_guide_input_receipt.json": "af821add6dcbc1c06555c8a77301d0171c9b81c83678148c73c5d0dc0dee200a",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/files.py": "eb26ae6f62eb02aa1311414e0f3cc297aa8b20e8dd441e0b307ffc4e3dd69a66"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 2,
+    "disk_allowance_gib": 10,
+    "minimum_free_disk_gib": 20,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "scope": "Copy full restart inputs for both guides; defer repaired family and launch until verified."
+}

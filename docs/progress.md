@@ -2980,3 +2980,8 @@ Profiled all 55,981 OG0000017 sequences and all 27,697 alignment columns. The 46
 ### September 16: expanded coupling sensitivity figure published
 
 Generated and visually reviewed a three-panel forest plot retaining all 24 model specifications for full89 and omission88 ESMFold analyses. Checked 144 plotted rows and 432 point/interval values against pinned bootstrap summaries. Explicit reference values, unadjusted intervals, nuisance controls and interpretation limits appear in the figure. Published the SVG with reproducible plotting code and review receipt. This visualizes completed conditional analyses; it does not add biological replication or complete the pending full project.
+
+
+### 2026-09-16 — isolated full reconciliation inputs staged and verified
+
+Prepared both conditional guide alternatives with independent copies of 33,168 files each, covering all 526 native species FASTAs and 32,637 validated gene trees. Independent full-file checksum/size and inode readback passed; native sequence accounting resolves 5,815,847 proteins per variant. Original live results were not changed. OG0000017 is explicitly pending, and only non-runnable `Log.pending.txt` descriptors are published. No full reconciliation is claimed or launched. Next gates are validated repair insertion, final inventory, native launch resource planning and complete output validation. The previous goal turn was a verified wait on live prediction, domain-search, rate and repair processes; this turn completed input staging and readback. See `metadata/full_reconciliation_input_staging_{plan,receipt,readback}.json` and the orthology workflow.

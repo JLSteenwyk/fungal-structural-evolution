@@ -1,0 +1,40 @@
+{
+  "status": "staged_incomplete_full_reconciliation_inputs",
+  "guides": [
+    {
+      "guide": "profile",
+      "copied_files": 33168,
+      "copied_bytes": 3006793101,
+      "taxa": 526,
+      "validated_gene_trees": 32637,
+      "manifest_sha256": "ed7488e4db32ce71228bd2e7059801ecae22020116f98a768037a8a201f32220",
+      "pending_descriptor_sha256": "0d86cb83c7440db0c3edaf639c02d6117557a609f31fb864d75b19737128c29c",
+      "native_locator_isolated": true,
+      "runnable_log_present": false
+    },
+    {
+      "guide": "mafft",
+      "copied_files": 33168,
+      "copied_bytes": 3006793079,
+      "taxa": 526,
+      "validated_gene_trees": 32637,
+      "manifest_sha256": "700fefcfdade79639991abcd6905a63474eefa62c9f5833f86bcbba98f279f82",
+      "pending_descriptor_sha256": "4b32d794c414f83a931a0959c8a103e3fdb2fc44ed495b268f8d714fbd31a6b5",
+      "native_locator_isolated": true,
+      "runnable_log_present": false
+    }
+  ],
+  "pending_families": [
+    "OG0000017"
+  ],
+  "plan_sha256": "b43e7a6b38a4098420c5a13a04c7373acd63981bd0fe645bdfd78429edb98d75",
+  "script_sha256": "425a77408e7646fb96edc7c5dcc66225fec085aa9796c177f1843ba0b5cb65f1",
+  "elapsed_seconds": 55.820435762405396,
+  "launch_ready": false,
+  "remaining_gates": [
+    "Independently validated repaired OG0000017 copied into both variants",
+    "Final complete input inventory and native restart resource plan",
+    "Output validation beyond process exit status"
+  ],
+  "interpretation": "Independent physical copies for all 526 taxa and both conditional homogeneous guide alternatives. No live source files modified, no inference launched, and no runnable restart log published. Alignments/search intermediates are omitted for the previously tested --from-trees --no-fix-files path; runtime source-access coverage still requires full-run verification."
+}
