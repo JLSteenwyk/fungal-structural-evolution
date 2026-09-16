@@ -1,0 +1,21 @@
+{
+  "status": "prelaunch_complete_control_geometry_readback",
+  "created_at": 1789569051.1888642,
+  "accepted_rows": 6017,
+  "excluded_rows": 1786,
+  "threads": 1,
+  "cpu_affinity": [
+    28
+  ],
+  "memory_allowance_gib": 4,
+  "disk_allowance_gib": 1,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "basis": "Full reconstruction of all experimental chain/model/threshold masks; independent full distance matrices and three superpositions per accepted row.",
+  "source_receipt_sha256": "27cddbf1ef18e6750233deeaee8c3d5b4444964bcef6a0b42c1d95ebca8caea9",
+  "script_sha256": "e6a82264a66a45702348810730bc19e067f53285d6e8eb257152ccd57583303b",
+  "output": "metadata/experimental_predictor_control_geometry_readback.json",
+  "paid_resources": false
+}

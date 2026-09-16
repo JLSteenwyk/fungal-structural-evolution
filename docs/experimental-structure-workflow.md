@@ -496,6 +496,23 @@ Resource/source pins and live identity are
 metadata/experimental_predictor_control_geometry_{plan,launch}.json. Results
 remain conditional descriptive agreement, not independent accuracy or inherited
 structural change; repeated experimental structures are not independent proteins.
+
+Three-way geometry execution completed: all 2,165 reference links have usable
+chain grids, giving 2,601 chain/deposited-model grids and 7,803 threshold rows.
+There are 6,017 accepted rows and 1,786 explicit coverage exclusions. All 18,051
+superpositions were recalculated during execution. Completion receipt:
+metadata/experimental_predictor_control_geometry_receipt.json.
+
+A complete independent readback is now running over accepted and excluded rows.
+It reconstructs the entire source grid, joint-confidence residue masks and
+coverage decisions, then checks all common pair counts, RMSDs and local-distance
+statistics using full SciPy cdist matrices and Bio.SVDSuperimposer. Prediction
+sequence/numbering is checked through a separate structure parser; decimal
+coordinates are retained in float64 to avoid float32 rounding at the 15-A cutoff.
+The audit also checks reference metadata and missing-link accounting. No
+protein-level predictor comparison is interpreted before this audit completes.
+Runner: scripts/audit_experimental_predictor_controls.py. Plan/live identity:
+metadata/experimental_predictor_control_geometry_readback_{plan,launch}.json.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
 
