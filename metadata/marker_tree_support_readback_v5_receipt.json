@@ -1,0 +1,13 @@
+{
+  "status": "passed_all_snapshot_input_and_graph_split_readbacks",
+  "snapshot_receipt_sha256": "31cf18c27873ecdfe44b74e725ff9b3d19471126071130cde3bbad57cc2ecd7d",
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "script_sha256": "f6ba8d98a180c9bdad7f3570a2699866612d3e657b55a51b3ba923ed70c45bfc",
+  "markers": 70,
+  "retained_alignment_characters_checked": 14170535,
+  "internal_splits_checked": 33068,
+  "artifacts": {
+    "marker_readback.tsv": "728fca2a431ef346c6f62b7bac4d9dd2130c7933aa3831add1428fb048d128cf"
+  },
+  "interpretation": "Every completed snapshot input reconstructed from original matrix and coverage exclusions; every internal support split independently recovered by graph-edge removal. Incomplete, completion-order-biased marker subset; no full-batch discordance inference or model adequacy claim."
+}

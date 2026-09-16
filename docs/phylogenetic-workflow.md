@@ -345,3 +345,13 @@ python scripts/run_initial_species_tree.py --matrix results/phylogeny/mafft-matr
 Versioned matrix receipts, mask tables and all taxon coverage rows are under
 `metadata/{profile,mafft}_fcs_species_matrix_*`; launch and resource records are
 `metadata/fcs_species_guide_{launch,resource_plan}.json`.
+
+### Expanded supported-marker snapshot and guide conflict diagnostics
+
+Snapshot v5 contains 70 of the 125 planned supported marker trees. Independent readback reconstructs 14,170,535 retained alignment characters and checks all 33,068 internal splits, branch lengths and reported SH-aLRT support values. The 55 unfinished markers remain pending, not failed or excluded. Snapshot receipts and marker summaries are versioned under `metadata/marker_tree_support_*v5*`.
+
+`results/phylogeny/supported-marker-guide-conflict-v1` compares these trees with each full internal edge of both provisional guides. It restricts each guide split to the marker's actual taxa. Fewer than two retained taxa on either side is uninformative coverage. At descriptive SH-aLRT cutoffs 80 and 95, an exact supported marker split is concordant; a supported marker split with all four intersections nonempty is conflicting. Otherwise the row is unresolved at that cutoff. Missing support is not assigned zero confidence or treated as supported. Strongest conflicting support and a witness split are retained. SH-aLRT is neither a bootstrap percentage nor a posterior probability.
+
+The output contains 146,440 marker/full-edge/cutoff rows and 2,092 full-edge summaries. These are not independent observations: pruning can collapse several full-guide branches into the same marker split. At cutoff 80, profile/MAFFT guides have 15,212/15,315 concordant and 11,695/11,700 conflicting rows; cutoff 95 gives 10,554/10,632 concordant and 4,811/4,766 conflicting rows. Counts are descriptive diagnostics of this incomplete snapshot, not full-batch gene concordance factors, quartet statistics, guide-quality rankings or evidence of particular biological causes. Completion-order bias, marker-tree uncertainty, guide support, rooting and reconciliation remain unresolved.
+
+The implementation is `scripts/assess_supported_marker_guide_conflict.py`. Its separate readback verifies the complete marker/guide/cutoff grid, restricted splits, exact supports, classifications, conflict witnesses and grouped counts. It exhaustively recalculates the strongest conflicting support with direct taxon-set intersections for five deterministic guide edges per marker/guide (700 comparisons); maxima for the remaining edges are not independently exhaustively recomputed. Reuse the procedure on the complete marker set and supported guide variants before final discordance or lineage-level claims.
