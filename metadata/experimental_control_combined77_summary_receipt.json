@@ -1,0 +1,34 @@
+{
+  "status": "complete_disjoint_control_summary_combination",
+  "control_sequences": 77,
+  "sources": [
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-v1",
+      "summary_receipt_sha256": "377d159cb6ad04b411b541a2d8dbad4ece57534e80523cb4dfcbddd623719d18",
+      "readback": "metadata/experimental_predictor_control_summary_readback.json",
+      "readback_sha256": "add3e7ab0f1214980f78940921e19a2ebfe406583f75157b99f707d383750e51",
+      "control_sequences": 45
+    },
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-513-768-v1",
+      "summary_receipt_sha256": "322402580fb3c20776547fa8067fe26241f57a6facde6d8a40944271f2eff31d",
+      "readback": "metadata/experimental_control_long_summary_readback.json",
+      "readback_sha256": "13d65e73637df8a0abbcb2e07901ae915e306c76925c9dce0ffd4823e4dbb6ae",
+      "control_sequences": 12
+    },
+    {
+      "summary": "results/experimental_structures/predictor-controls-summary-769-1152-v1",
+      "summary_receipt_sha256": "7bd8b7755fd09588e0858b7d8fc5834206d045178f327e8dfc7d555d6b5513c9",
+      "readback": "metadata/experimental_control_next_summary_readback.json",
+      "readback_sha256": "aab0aa1f115eb7d9a6ba817d9285d8e26c4edf73c0b2bf7be5c0b3f98864dae4",
+      "control_sequences": 20
+    }
+  ],
+  "script_sha256": "26981e41744e8d712e1ad6502c10371497f05ffa8c66fd1d6f80055206278599",
+  "interpretation": "Equal canonical-protein descriptive summaries of previously audited within-protein hierarchical medians. Source tiers remain explicit. Sequence disjointness is not statistical or evolutionary independence. Confidence filters change residues and eligible proteins; no causal length effect, significance or general accuracy claim. Additional pending controls and alternative chunk settings are not included.",
+  "artifacts": {
+    "protein_summary.tsv": "8db49a7f07e9772f7d536b5fbd1b196372c8a230d1a96629dbca91efb46379a9",
+    "protein_disposition.tsv": "2083699f270f607603fcbd52545db8a73db825c6391018bf9ca3a43097ab7680",
+    "cohort_summary.tsv": "c44e5fd9a707b37cc075e99e4ec93a9a84acb7b61c7c56ecff46f3a71550e90d"
+  }
+}
