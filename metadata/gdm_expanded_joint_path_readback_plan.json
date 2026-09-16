@@ -1,0 +1,23 @@
+{
+  "status": "prelaunch_joint_path_readback",
+  "created_at": 1789567140.6907303,
+  "markers": 124,
+  "accepted_pairs": 737851,
+  "excluded_pairs": 7002,
+  "threads": 1,
+  "cpu_affinity": [
+    4
+  ],
+  "memory_allowance_gb": 8,
+  "disk_allowance_gb": 1,
+  "planning_hours": [
+    0.2,
+    8
+  ],
+  "basis": "Stream expanded path rows; hold point-row identities in memory; parse 148770 trees independently for one deterministic pair per marker across 3 blocks. Reuses prior 72-marker auditor. Runtime is an estimate.",
+  "available_memory_bytes": 601180639232,
+  "output": "results/phylogeny/paired-path-uncertainty-readback-gdm-expanded-v1",
+  "script_sha256": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+  "scope": "All cohort identities and inherited fields, all interval/covariance bounds; independent numerical path summaries for one hash-selected pair per marker. Not independent recomputation of every pair.",
+  "paid_resources": false
+}

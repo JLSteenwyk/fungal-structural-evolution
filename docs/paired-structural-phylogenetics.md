@@ -435,7 +435,7 @@ hashes were independently rechecked before downstream launch. The audit
 receipt and 372-row batch summary are versioned under
 metadata/gdm_expanded_paired_resampling_*.
 
-Joint path uncertainty is now being calculated for all 737,851 accepted and
+Joint path uncertainty has completed for all 737,851 accepted and
 7,002 excluded geometry pairs using the existing implementation. Each draw's
 branches are summed before calculating path quantiles and covariance, preserving
 correlated branch estimation error. This adds AA and 3Di AF summaries at block
@@ -443,9 +443,20 @@ lengths 1, 10 and 30; the other structural models remain point estimates.
 The calculation uses one CPU core, single-thread BLAS, and a 32-GB memory/
 10-GB disk planning allowance. No geometry cohort or fitted tree was changed.
 
-Output results/phylogeny/paired-path-uncertainty-gdm-expanded-v1 remains pending
-until its complete receipt exists and numerical readback is performed. Resource
-plan and verified process identity are metadata/gdm_expanded_joint_path_*.json.
+Output results/phylogeny/paired-path-uncertainty-gdm-expanded-v1 now has a complete
+receipt and 372 marker/block summaries, archived in
+metadata/gdm_expanded_joint_path_uncertainty_receipt.json and
+metadata/gdm_expanded_joint_path_marker_block_summary.tsv. Numerical readback
+is running on one CPU core with an 8-GB memory planning allowance. The existing
+auditor checks all inherited fields, accepted/excluded identities, draw counts,
+interval bounds and covariance bounds. For one SHA256-selected pair per marker,
+it independently traverses every estimable AA/3Di tree and recomputes path
+percentiles, standard deviations and covariance with Python statistics.
+This entails 148,770 tree traversals; other pairs' numerical summaries are not
+independently recomputed. Validation remains pending its terminal receipt at
+results/phylogeny/paired-path-uncertainty-readback-gdm-expanded-v1.
+Resource plan and verified process identity are
+metadata/gdm_expanded_joint_path_readback_{plan,launch}.json.
 These are conditional sampling-sensitivity summaries, not calibrated confidence
 intervals, evolutionary coupling estimates or structural-acceleration tests.
 Topology, prediction, alignment and model uncertainty remain outside this stage.

@@ -1,0 +1,20 @@
+{
+  "status": "complete_joint_path_sampling_sensitivity",
+  "markers": 124,
+  "accepted_pairs": 737851,
+  "excluded_pairs": 7002,
+  "source_receipts": {
+    "points": "93b2402f61824a98f218bd931e1f7b0bc58924c3d49239ce581f2d0e8fb1cf3f",
+    "inputs": "03b3c18ecaca3004827d8601e3a5ef952f09b8e6da29b3c5406fc553cb1ff2a4",
+    "fits": "008916dd741ed35933af61029fbf35627b40a5a6929236c4b39d38681d0f7a5e",
+    "resampling": "1e8c7ad781629899d04503b4d9a0e8d9c9e2fa12083fb5daef8f5b2ee298c303",
+    "resampling_audit": "da8b6ab4ab88368acf98453fbae4d91b33c7c79127766db95c5b71a951c0772b"
+  },
+  "script_sha256": "700471530b38ff65290909f8b2e3a44d9b9553993a6aeaf5dfd05c03e3171643",
+  "interpretation": "Same pair cohorts and geometry fields as the point benchmark. AA and 3Di AF path percentiles sum branches within each joint draw; covariance is sampling covariance, not evolutionary coupling. Circular blocks 1/10/30 do not cover all spatial dependencies. Conditional sensitivity only, not calibrated confidence, physical displacement, selection or an acceleration test. Other 3Di models retain point estimates only.",
+  "artifacts": {
+    "path_geometry_uncertainty.tsv": "9d929c50034d5bca797b4214360912fe3d149fdded874bdf456f1a315a5a4078",
+    "marker_block_summary.tsv": "b012faa0b5367c9ae004c88c37c90781c0e53b5d1e3a278d8f0dcdcb9cbc5775",
+    "geometry_exclusions_with_uncertainty.tsv": "085a7423be409b71819ed3c1bf2e23ba45bf3cca1364e6cfcbd4ad4ac31d79a0"
+  }
+}

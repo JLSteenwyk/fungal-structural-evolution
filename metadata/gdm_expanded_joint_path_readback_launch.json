@@ -1,0 +1,25 @@
+{
+  "pid": 71282,
+  "created": 1789567140.63,
+  "command": [
+    "python",
+    "scripts/audit_joint_path_uncertainty.py",
+    "--paths",
+    "results/phylogeny/paired-path-uncertainty-gdm-expanded-v1",
+    "--points",
+    "results/phylogeny/paired-path-points-gdm-expanded-v1",
+    "--resampling",
+    "results/phylogeny/paired-resampling-gdm-expanded-v1",
+    "--resampling-audit",
+    "results/phylogeny/paired-resampling-audit-gdm-expanded-v1",
+    "--output",
+    "results/phylogeny/paired-path-uncertainty-readback-gdm-expanded-v1"
+  ],
+  "session_id": 76766,
+  "verified_at": 1789567153.7275,
+  "cpu_affinity": [
+    4
+  ],
+  "status": "running",
+  "log": "logs/gdm_expanded_joint_path_readback_v1.log"
+}
