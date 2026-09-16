@@ -1,0 +1,35 @@
+{
+  "status": "prior_family_repair_and_restart_source_reviewed",
+  "verified_at": 1789566161.933054,
+  "prior_installation_receipt_sha256": "8f07d3dffdfb906516cf0e1dbda3788f71a0cbe80728b1af434f40614ad8e18a",
+  "prior_repaired_family": "OG0001522",
+  "installed_artifacts_verified": [
+    {
+      "path": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Alignments_ids/OG0001522.fa",
+      "sha256": "814bc5aeb7b33225fecbced905d7dcb22128491dd5eb94e39f95b68ab4c7cb2b",
+      "source_path": "results/orthology/OG0001522-recovery-v1/alignment.faa"
+    },
+    {
+      "path": "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0001522.txt",
+      "sha256": "ef24cc9d1d57e1a2ab669b40d7f21b23d04e2a3ba1796474c875394aff4f1165",
+      "source_path": "results/orthology/OG0001522-recovery-v1/tree.nwk"
+    }
+  ],
+  "empty_tree_files": [
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/Trees_ids/OG0000017.txt"
+  ],
+  "installed_source_sha256": {
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/process_args.py": "ba9f81896bfc1313bb50a0cda5acef8027c7bb38b33ca999aa78041c0ff81f82",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/main.py": "a4b5222890d987bdef7fa0c1ff6031e55c5a0a27fcbbc45c9b7be02dfd252588",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/trees_msa.py": "780cf0691ae41eae1278f10216fa34a0ecac708f5ed945c94fda22ea6d2d2745",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/trim.py": "1794574ca2a4c8a6fc62b5e808614119113bc6123d505a08725e55991105eeca"
+  },
+  "observations": [
+    "Installed parser accepts --from-groups/-fg and --from-trees/-fgt.",
+    "GetTreeCommands selects families with at least three sequences among alignment-selected families; do not classify every absent tree as failure.",
+    "Default trim_fn calls trim.main(fn,fn,10,0.1,500,0.75,False) in this run.",
+    "Historical OG0001522 FAMSA failure has already been repaired; installed alignment/tree checksums still match.",
+    "GetAlignmentCommandsAndNewFilenames selects families with at least two sequences, subject to i_og_restart."
+  ],
+  "next_gate": "Complete artifact inventory and map exact eligible family universe before repair/continuation; no native continuation launched."
+}
