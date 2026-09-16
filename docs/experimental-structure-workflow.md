@@ -714,3 +714,43 @@ results/experimental_control_long_tier_execution.json; logs are available with
 `journalctl --user -u fungal-experimental-controls-long-20260916.service`.
 These predictions are not yet added to the reviewed 45-control comparison;
 that integration requires the completion audit and a new immutable crosswalk.
+
+
+### Next control tier scheduled
+
+The same GPU has a pinned handoff for another 20 controls, 788–1,063 residues
+(18,673 total residues, 388 reference entity links). An independent FASTA
+readback checked all full sequence identities and confirmed disjointness from
+every other current candidate queue. The immutable queue ceiling is 1,152;
+no selected protein exceeds 1,063. Three original controls remain above it:
+1,361, 1,468 and 2,413 residues. They are not omitted from the project target.
+
+The memory estimate uses the largest observed allocated-memory measurement at
+768 residues (11.736 GiB) from 2,579 completed longer-marker receipts. Scaling
+the entire peak by the squared length ratio gives 22.484 GiB at 1,063 residues;
+adding 30 percent plus 4 GiB gives a 33.230-GiB planning allowance within the
+48-GiB GPU. This extrapolation is not a measured peak or a guarantee: reserved
+memory, workspace and kernel behavior may differ. The existing runner records
+and stops on the first OOM. Host memory remains capped at 64 GiB, with four
+physical CPU cores, 5 GiB free-disk gate and a 0.25–4-hour planning range.
+
+The new user service fungal-experimental-controls-next-20260916.service waits
+for the exact predecessor PID/create-time identity to terminate, then requires
+its successful prediction/audit/conversion receipt and matching plan hash.
+Only then does it invoke the next tier's pinned plan, which independently
+requires an idle GPU and fresh output directories. Changed sources or failed
+predecessor execution stop the handoff for review. The controller is live and
+waiting; these 20 predictions are not yet claimed complete. Like the first
+service, this transient handoff does not survive a reboot.
+
+```bash
+python scripts/prepare_long_experimental_controls.py --output data/prediction_inputs/experimental-controls-769-1152-v1 --max-length 1152
+python scripts/advance_experimental_control_tier.py --config metadata/experimental_control_next_tier_handoff_config.json
+```
+
+Memory anchor provenance, resource plan, input receipt, all-35 disposition,
+handoff configuration and live controller identity are versioned under
+metadata/experimental_control_next_tier_*. Live state is recorded in
+results/experimental_control_next_tier_handoff.json and, once started,
+results/experimental_control_next_tier_execution.json. Existing 12-control
+prediction scripts and configuration were not changed.

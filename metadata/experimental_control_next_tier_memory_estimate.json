@@ -1,0 +1,22 @@
+{
+  "status": "planning_extrapolation_not_measured_long_sequence_usage",
+  "observed_predictions": 2579,
+  "anchor_length": 768,
+  "anchor_allocated_gib": 11.736411571502686,
+  "anchor_receipt": "results/predictions/esmfold-markers-513-768-gpu0-v1/S747990a3f28db59838b103502c0080d20dd6e938205856c4a5a0191750d09914.json",
+  "anchor_receipt_sha256": "b0e4656adc9e61431fa9f7c24027a6f5b150deb3eaf042cda5c5313ac87797be",
+  "largest_next_length": 1063,
+  "quadratic_allocation_estimate_gib": 22.48430251573235,
+  "planning_gpu_headroom_gib": 33.22959327045206,
+  "device_memory_gib": 48,
+  "method": "Scale entire observed peak allocated memory by squared length ratio; add 30 percent and 4 GiB for planning headroom. Allocation is not reserved/device memory and sequence-dependent workspace or kernel changes can invalidate extrapolation. Stop on first OOM; do not automatically shrink/truncate.",
+  "planning_hours": [
+    0.25,
+    4
+  ],
+  "remaining_after_next_tier_lengths": [
+    1361,
+    1468,
+    2413
+  ]
+}

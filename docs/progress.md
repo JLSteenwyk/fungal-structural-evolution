@@ -2768,3 +2768,13 @@ pins the unchanged prediction/audit/conversion scripts and advances only after
 all 12 predictions complete. Twenty-three longer controls remain deferred for
 memory planning; no truncation or completed-control claim. Plan and launch:
 metadata/experimental_control_long_tier_{plan,launch}.json.
+
+
+September 16, 10:46 Eastern: scheduled 20 additional full experimental controls
+(788–1,063 residues) behind the 12-control GPU1 tier. The live handoff requires
+successful predecessor prediction/audit/conversion before checking GPU idleness
+and launching. Memory planning uses observed 768-residue peaks with explicit
+extrapolation/headroom; OOM requires review. Three original controls remain
+above the new ceiling (1,361/1,468/2,413 residues). Documentation and resource
+provenance: metadata/experimental_control_next_tier_*. No completion claim for
+the pending tier.
