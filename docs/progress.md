@@ -2814,3 +2814,13 @@ and one at90. The unfiltered median paired ESMFold-minus-AlphaFold experimental
 RMSD is +5.5277 Å. Small selected cohorts, domain orientation and experimental
 context prevent general accuracy or biological interpretation. Full tables
 and limitations: docs/experimental-structure-workflow.md.
+
+
+September 16: completed all annotated Pfam-region comparisons for the 12 longer
+experimental controls: 35 hits, 2,220 threshold rows, 1,368 eligible. Independent
+grid/count/eligibility readback passed; dual-superposition checks passed. In the
+exploratory Q04305 case, individually fitted annotated regions agree locally
+(ESMFold ~0.4–0.7 Å) despite ~19–26 Å discrepancies under whole-mask alignment.
+This supports treating whole-protein placement separately from within-region
+change; it does not establish biological domain motion or functional novelty.
+Context/PAE review remains pending. Details: docs/experimental-structure-workflow.md.

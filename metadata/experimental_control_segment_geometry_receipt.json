@@ -1,0 +1,23 @@
+{
+  "status": "complete_experimental_control_pfam_segment_geometry",
+  "source_grids": 759,
+  "proteins": 12,
+  "proteins_with_hits": 12,
+  "pfam_hits": 35,
+  "accepted_segment_rows": 1368,
+  "excluded_segment_rows": 852,
+  "independent_superposition_checks": 6243,
+  "source_receipts": {
+    "comparisons": "5707ebf815d0b05c72bc2e146986530ec873e2f73d6447f24777b6f601ad2699",
+    "crosswalk": "e44f56b964b36b64e1d33ff9bc9065c873bb6bf1ed2fbe56196587c6eab8825e",
+    "mapping": "24201515efceb184b5ff050db695c37c86ca893a2d413636d5a5ebc212a037fd",
+    "pfam": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+  },
+  "geometry_audit_sha256": "a5a1006f5f26ddde5c243256844ca216442d227f3d0eab7b7dd6f75bd6fddc3d",
+  "script_sha256": "d1a2cb1a3c484caee19a3701f2e534ebc661769dba910e2786a045e773320c8f",
+  "interpretation": "All raw Pfam alignment spans retained, including overlapping hits, repeats and families; these are not resolved independent structural domains. Same audited joint residue masks, with segment eligibility >=20 CA and >=half hit span, including rows excluded at whole-protein coverage. Independent segment versus whole-mask rigid fits are descriptive and mechanically favor separate fits; no significance, accuracy or domain-motion causality claim. Independent full grid/mask readback remains pending.",
+  "artifacts": {
+    "exclusions.tsv": "51fca6857835e460dd6d2ef47367b75afda9f8f61734dccff602969191da6d59",
+    "segments.tsv": "391353ca21afd256dd4705d991441f0ffacf1f90724a3b3e7cadc129f820df09"
+  }
+}

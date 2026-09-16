@@ -1,0 +1,22 @@
+{
+  "status": "prelaunch_all_long_control_pfam_segment_geometry",
+  "created_at": 1789571017.058145,
+  "cpu_affinity": [
+    28
+  ],
+  "threads": 1,
+  "memory_allowance_gib": 4,
+  "disk_allowance_gib": 2,
+  "planning_hours": [
+    0.01,
+    1
+  ],
+  "basis": "12 longer controls; all 759 audited chain/model/threshold grids and all raw Pfam hit spans. Three rigid comparisons, each checked against a second SVD implementation. No fitting of new evolutionary models.",
+  "pins": {
+    "scripts/compare_control_pfam_segments.py": "d1a2cb1a3c484caee19a3701f2e534ebc661769dba910e2786a045e773320c8f",
+    "metadata/experimental_control_long_geometry_readback.json": "a5a1006f5f26ddde5c243256844ca216442d227f3d0eab7b7dd6f75bd6fddc3d",
+    "results/experimental_structures/predictor-controls-geometry-513-768-v1/receipt.json": "5707ebf815d0b05c72bc2e146986530ec873e2f73d6447f24777b6f601ad2699",
+    "results/domains/marker-annotations-v1/receipt.json": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097"
+  },
+  "paid_resources": false
+}

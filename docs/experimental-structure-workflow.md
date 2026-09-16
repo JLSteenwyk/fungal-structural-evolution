@@ -803,3 +803,47 @@ results/experimental_structures/predictor-controls-{crosswalk,geometry,summary}-
 Receipts, small protein/cohort/disposition tables and readbacks are versioned
 under metadata/experimental_control_long_*. This length tier is kept explicit;
 a combined summary and remaining longer controls are still pending.
+
+
+## Pfam-region comparison of longer controls
+
+All 35 raw Pfam alignment spans across the 12 longer controls were compared,
+including repeats, families and overlapping annotations. These spans are not
+asserted to be independent structural domains. The analysis crosses all 759
+audited chain/model/threshold rows, including rows failing whole-protein
+coverage, with each sequence's annotations: 2,220 segment rows, of which 1,368
+meet the explicit minimum 20 CA/half-hit-span criterion and 852 are excluded.
+Within each segment, both predictors use the same audited experimental residue
+mask. Whole-mask and separate segment fits were checked by SciPy rotations and
+Bio.SVDSuperimposer (6,243 superpositions total). An independent pandas join
+reconstructed the complete grid, boundary-derived counts and eligibility.
+This is not an independent full replay of all geometry calculations.
+
+For AF-Q04305-F1's exact-sequence ESMFold counterpart at joint pLDDT90, nested
+chain/model/entry medians show:
+
+| Pfam alignment span | Annotation type | ESMFold–experiment separate segment RMSD Å | Segment RMSD after whole-mask fit Å |
+| --- | --- | ---: | ---: |
+| 129–153, WD40 | Repeat | 0.3945 | 21.8201 |
+| 160–197, WD40 | Repeat | 0.4674 | 19.0765 |
+| 252–285, WD40 | Repeat | 0.4979 | 22.2879 |
+| 366–511, UTP15_C | Family | 0.7343 | 26.0096 |
+
+The corresponding AlphaFold separate-region discrepancies are 0.36–0.60 Å.
+The contrast is consistent with a placement/orientation discrepancy, but
+independently fitting smaller regions mechanically favors lower RMSD. It does
+not establish a hinge mechanism, physical motion, predictor error, functional
+change or unbiased accuracy. Experimental assembly context and inter-region
+PAE require review. Repeat-level fits may conceal changes at a larger fold
+scale. All annotated regions were retained; this illustrative case was selected
+after observing large whole-protein discrepancy and must remain exploratory.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/compare_control_pfam_segments.py --comparisons results/experimental_structures/predictor-controls-geometry-513-768-v1 --audit metadata/experimental_control_long_geometry_readback.json --crosswalk results/experimental_structures/predictor-controls-crosswalk-513-768-v1 --mapping results/experimental_structures/ca-mapping-full-v1 --pfam results/domains/marker-annotations-v1 --output results/experimental_structures/control-pfam-segments-513-768-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_control_segment_grid.py --segments results/experimental_structures/control-pfam-segments-513-768-v1 --comparisons results/experimental_structures/predictor-controls-geometry-513-768-v1 --pfam results/domains/marker-annotations-v1 --output metadata/experimental_control_segment_grid_reproducible_readback.json --summary results/experimental_structures/control-pfam-segment-summary-513-768-v1.tsv
+```
+
+Use fresh output paths. Plan: metadata/experimental_control_segment_geometry_plan.json
+(one CPU, 4-GiB allowance, 2-GiB output, 0.01–1 hour). Small nested summary:
+metadata/experimental_control_pfam_segment_summaries.tsv. The reproducible audit
+regenerated this table byte-for-byte. Full row tables remain outside Git.
