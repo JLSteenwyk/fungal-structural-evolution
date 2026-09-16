@@ -499,3 +499,22 @@ Output: results/phylogeny/site-parsimony-exposure-esmfold-combined-v1. Completio
 and subsequent numerical checks remain pending. Minimum change counts ignore
 branch lengths and are not rates; exposure summaries describe extant taxa,
 not ancestral exposure or phylogenetically adjusted core/surface effects.
+
+Completion update: the combined Gamma4 baseline passed its full output audit
+for 356 fits and 88,820 site-rate rows (340 fits carry warnings). The audit
+checks model/topology identity, exported rate grids, category bounds and
+site-likelihood accounting; it does not independently recompute posterior rates.
+Receipt: metadata/esmfold_combined_site_rate_audit_receipt.json. FreeRate fitting
+remains active and model comparison is not yet ready.
+
+The exposure join also completed for all 89 markers, 22,205 sites and 1,699,035
+observations. Its artifacts were hash-checked and the receipt archived as
+metadata/esmfold_combined_site_exposure_receipt.json. A new reusable readback
+runner independently recomputes all 44,410 AA/3Di minimum-change scores with the
+existing set-membership recurrence and all 133,230 exposure quantiles with
+scalar interpolation. It checks observed taxon/state identities, columns,
+unique-model counts and complete coverage. This numerical readback completed
+successfully across the full grid; its receipt is
+metadata/esmfold_combined_site_exposure_readback.json. Runner:
+scripts/readback_site_parsimony_exposure.py; plan and process identity:
+metadata/esmfold_combined_site_exposure_readback_{plan,launch}.json.

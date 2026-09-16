@@ -1,0 +1,28 @@
+{
+  "status": "prelaunch_full_exposure_numerical_readback",
+  "created_at": 1789567875.5856185,
+  "markers": 89,
+  "sites": 22205,
+  "taxon_site_observations": 1699035,
+  "threads": 1,
+  "cpu_affinity": [
+    22
+  ],
+  "memory_allowance_gb": 8,
+  "disk_allowance_gb": 1,
+  "planning_hours": [
+    0.05,
+    3
+  ],
+  "basis": "Independent set recurrence for all 44410 character scores plus full residue identity and six exposure quantiles per site. Single CPU with 8-GiB planning allowance.",
+  "output": "metadata/esmfold_combined_site_exposure_readback.json",
+  "available_memory_bytes": 560101896192,
+  "source_receipts": {
+    "results/phylogeny/paired-inputs-esmfold-combined-v1/receipt.json": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+    "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1/receipt.json": "ecc915a2b9a8ae0f69fbcf9ef6cad1bc93c3657e8bf992a66835135f4c88c87f",
+    "results/structural_annotations/paired-accessibility-esmfold-combined-v1/receipt.json": "f9afe29997694acd8074331a93364a0b3016fae992651f7ebfaf3e0776ad4951"
+  },
+  "script_sha256": "fd36f2cefce1edcc41ef0ee152760a2b85adad04c2fa3081a8134c746506aeb6",
+  "interpretation": "Unit-cost minimum changes on fixed AA topologies and extant RSA summaries, not rates, ancestral states, branch assignments or coupling tests.",
+  "paid_resources": false
+}

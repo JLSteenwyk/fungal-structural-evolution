@@ -1,0 +1,23 @@
+{
+  "pid": 107712,
+  "created": 1789567875.57,
+  "command": [
+    "python",
+    "scripts/readback_site_parsimony_exposure.py",
+    "--diagnostic",
+    "results/phylogeny/site-parsimony-exposure-esmfold-combined-v1",
+    "--inputs",
+    "results/phylogeny/paired-inputs-esmfold-combined-v1",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1",
+    "--exposure",
+    "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1",
+    "--output",
+    "metadata/esmfold_combined_site_exposure_readback.json"
+  ],
+  "cpu_affinity": [
+    22
+  ],
+  "session_id": 13535,
+  "verified_at": 1789567902.8614469
+}
