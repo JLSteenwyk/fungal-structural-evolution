@@ -388,3 +388,44 @@ The resource plan allocates one CPU thread, 2 GiB per fit, 1 GiB output and
 source hashes, result summary and independent readback are versioned under
 metadata/esmfold_flagged_gamma_refit_*. Raw outputs are preserved in
 results/phylogeny/gamma-export-refit-esmfold-5005750-v1.
+
+
+### Revised full Gamma cohort audited and scheduled downstream
+
+A new immutable 89-marker Gamma dataset replaces only the reviewed AA fit for
+5005750at2759. All 356 fit identities and 88,820 site-rate rows remain present.
+The assembler records both the original receipts and the exact refit command;
+it retains the actual alternate starting-tree hash separately from the
+reference topology hash. Its copied reports retain their original output paths
+as provenance. Reassembly does not imply that unchanged fits were rerun.
+
+Independent byte comparisons of all five numerical/report/log artifacts per
+fit found 1,775 unchanged files and exactly five replacements, all belonging
+to the intended fit. The revised full audit passed rate/category bounds,
+likelihood sums, model identities and all fixed topologies. Its alternate-start
+check requires both the actual starting-tree hash and exact split equality to
+the original topology, plus the matching reviewed replacement provenance.
+No check was relaxed to accept a different topology or model.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/assemble_revised_gamma_exports.py --source results/phylogeny/paired-site-rates-esmfold-combined-v1 --source-audit results/phylogeny/paired-site-rates-audit-esmfold-combined-v1 --refits results/phylogeny/gamma-export-refit-esmfold-5005750-v1 --readback metadata/esmfold_flagged_gamma_refit_readback.json --plan metadata/esmfold_flagged_gamma_refit_plan.json --marker 5005750at2759 --output results/phylogeny/paired-site-rates-esmfold-combined-revised-v1
+OPENBLAS_NUM_THREADS=1 python scripts/audit_revised_paired_site_rates.py --rates results/phylogeny/paired-site-rates-esmfold-combined-revised-v1 --inputs results/phylogeny/paired-inputs-esmfold-combined-v1 --fits results/phylogeny/paired-marker-fits-esmfold-combined-v1 --output results/phylogeny/paired-site-rates-audit-esmfold-combined-revised-v1
+```
+
+The old downstream controller was verified to have no child processes, no
+stage outputs and only its initial configuration marker/lock. It was stopped
+before any comparisons/refits began, with an explicit supersession receipt.
+The replacement user service fungal-revised-esm-rate-comparison-20260916.service
+is live and waits for the same running FreeRate producer. It will use the
+revised Gamma baseline for the initial comparison, all 1,424 diagnostic refits,
+full optimization audit, selected comparison/readback and exposure-frame join.
+All stage output directories are new. Resource allowances remain four workers,
+one thread and 2 GiB per fit, with 64-GiB available-memory and 20-GiB free-disk
+gates; original 1–96-hour planning range retained. No duplicate diagnostic run
+was launched. The AlphaFold controller is unaffected.
+
+Controller configuration, supersession, live identity, artifact-diff result and
+revised audit receipt are versioned in metadata/esmfold_*revised* and
+metadata/esmfold_original_rate_controller_supersession.json. The new controller
+is transient and requires review after reboot. Downstream completion and the
+affected-marker coupling sensitivity remain pending.

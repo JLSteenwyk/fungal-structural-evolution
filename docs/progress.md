@@ -2795,3 +2795,12 @@ affected-marker sensitivity remain necessary before final coupling claims.
 The original live controller inputs remain intact. Also verified completion
 and conversion of all 12 longer experimental controls; the next GPU1 batch
 started automatically. Receipts are versioned in metadata.
+
+
+September 16: revised ESMFold Gamma baseline passed the full 356-fit/88,820-rate
+audit. Byte comparisons confirm only marker 5005750at2759 AA outputs changed.
+Replaced the verified idle downstream controller before any stage started;
+its successor uses this audited baseline for the existing planned 1,424
+FreeRate optimization diagnostics and exposure-frame workflow. The FreeRate
+producer remains active. No duplicate diagnostic execution or final coupling
+claim. See docs/site-specific-evolutionary-rates.md.
