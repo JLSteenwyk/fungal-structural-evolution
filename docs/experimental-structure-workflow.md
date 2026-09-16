@@ -513,6 +513,12 @@ The audit also checks reference metadata and missing-link accounting. No
 protein-level predictor comparison is interpreted before this audit completes.
 Runner: scripts/audit_experimental_predictor_controls.py. Plan/live identity:
 metadata/experimental_predictor_control_geometry_readback_{plan,launch}.json.
+
+The complete readback subsequently passed all 7,803 residue masks, 6,017 common
+distance-pair masks and 18,051 superpositions, including every local-distance
+summary and exclusion decision. No reference link lacked a chain grid. Receipt:
+metadata/experimental_predictor_control_geometry_readback.json. Protein-level
+aggregation and experimental/context qualification remain outstanding.
 Alternate prediction does not establish experimental or training independence,
 and this reference set remains taxonomically narrow.
 
