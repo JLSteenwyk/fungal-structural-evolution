@@ -2976,3 +2976,7 @@ The revised ESMFold rate handoff completed optimization, audits, comparison and 
 ### September 16: large-family sequence and alignment quality reviewed
 
 Profiled all 55,981 OG0000017 sequences and all 27,697 alignment columns. The 46,787 focal Austropuccinia psidii proteins represent 46,782 distinct sequences, so the concentration is not mostly repeated identical records. Focal median sequence length is 172 versus 417 residues elsewhere; alignment occupancy is sparse, with 3,997 columns containing any residues from both groups. All genes remain retained and the live repair is untouched. Independent export readback checked identities, duplicate counts, ratios, cross-axis residue totals and all 105 summary quantiles. These diagnostics sharpen the annotation/domain/homology review requirement; they do not establish a biological expansion, repeat identity or incorrect gene models. Reproducible scripts, source hashes and compact evidence are versioned.
+
+### September 16: expanded coupling sensitivity figure published
+
+Generated and visually reviewed a three-panel forest plot retaining all 24 model specifications for full89 and omission88 ESMFold analyses. Checked 144 plotted rows and 432 point/interval values against pinned bootstrap summaries. Explicit reference values, unadjusted intervals, nuisance controls and interpretation limits appear in the figure. Published the SVG with reproducible plotting code and review receipt. This visualizes completed conditional analyses; it does not add biological replication or complete the pending full project.
