@@ -475,3 +475,16 @@ paired-site-rates-audit-esmfold-combined-v1 audit. FreeRate sensitivity,
 optimization checks, exposure integration and expanded coupling are still
 pending. These conditional rate multipliers are not rates per year or direct
 physical structural changes.
+
+The matched four-category FreeRate export has also started for the complete
+89-marker baseline (356 fits and 88,820 expected rate rows). It runs independently
+of Gamma4 with four additional single-thread fits, within the user's 48-core
+allowance. Together the two fitting stages permit eight concurrent fits and
+16 GB of requested fit memory. Each run performs its own full audit after
+export. FreeRate source hashes and memory/disk gates passed before launch;
+its separate outputs are paired-site-rates-freerate-esmfold-combined-v1 and
+paired-site-rates-freerate-audit-esmfold-combined-v1 under results/phylogeny.
+Launch and planning records are metadata/esmfold_combined_freerate_*.json.
+Neither run has yet produced a terminal audit receipt. Their comparison and
+the full multi-start optimization checks must complete before selecting rates
+for the expanded coupling models.
