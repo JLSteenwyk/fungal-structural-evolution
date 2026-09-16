@@ -1,0 +1,22 @@
+{
+  "status": "passed_complete_native_clade_discovery_readback",
+  "clades": [
+    {
+      "clade_id": "synthetic_1",
+      "proteins": 48,
+      "families": 24,
+      "synthetic_exact_copies_checked": true
+    },
+    {
+      "clade_id": "synthetic_2",
+      "proteins": 96,
+      "families": 24,
+      "synthetic_exact_copies_checked": true
+    }
+  ],
+  "plan_sha256": "b215524fbf5207cfd429cdf2f9eef1e74c892633cdaa62368fe22ed75815c5b9",
+  "receipt_sha256": "14eae6d0d3339f7519cc8aab2e7ef4cace6ba37d412cd037cf6d14d2f1fab50e",
+  "script_sha256": "d28d5230c648a5e97fb0f193265f5224d5d7156900b30d16f075580051373058",
+  "native_reader_sha256": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+  "scope": "Independent BioPython FASTA parsing and native cluster reader check every exported family and original protein ID. Does not establish homology accuracy, cross-clade completeness or reconciled orthology."
+}

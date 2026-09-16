@@ -1,0 +1,4654 @@
+{
+  "output": "results/orthology/clade-discovery-v1",
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "controller_python": "/home/bizon/anaconda3/bin/python",
+  "orthofinder_python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+  "orthofinder": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+  "diamond": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond",
+  "environment_path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS//bin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS//bin:/home/bizon/.codex/tmp/arg0/codex-arg0FueMRM:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/bizon/.grok/bin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/bin:/home/bizon/.grok/bin:/home/bizon/.cargo/bin:/home/bizon/anaconda3/bin:/home/bizon/anaconda3/condabin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin",
+  "cases": [
+    {
+      "clade_id": "C6889be19648b82aa",
+      "taxa": 71,
+      "proteins": 355735,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C6889be19648b82aa/proteomes",
+      "input_files": [
+        {
+          "filename": "F29889.faa",
+          "sha256": "a55a89580786c4878c94fb58b241f69ee00f015e3fb60e57c7cdd870ee3de847",
+          "proteins": 1596,
+          "species_id": 25
+        },
+        {
+          "filename": "F67723.faa",
+          "sha256": "d26a6d69c6a4075828a58a4aa10646dab9b288cea4bd15270fb545435e804c75",
+          "proteins": 261,
+          "species_id": 46
+        },
+        {
+          "filename": "F1004511.faa",
+          "sha256": "6dd9e4d7338c738138196066b96b36f8941a8c5df764e7f27938b289d54dd891",
+          "proteins": 923,
+          "species_id": 64
+        },
+        {
+          "filename": "F104341.faa",
+          "sha256": "f7bb746084d162aed6393a3691812414bb92de8f1c03c211b8ca5c1455e93373",
+          "proteins": 3863,
+          "species_id": 76
+        },
+        {
+          "filename": "F104355.faa",
+          "sha256": "3b55a1eac464a1692163836cf501b21ac32c410e5f049ceb45e8fd7dea2d3655",
+          "proteins": 2690,
+          "species_id": 77
+        },
+        {
+          "filename": "F109899.faa",
+          "sha256": "09f990b69f7a4736cd0fde6b7d9ed4b14ed9511b15888f095e195dd81b0c3025",
+          "proteins": 5661,
+          "species_id": 95
+        },
+        {
+          "filename": "F112417.faa",
+          "sha256": "9fe0d03a72cc57d3be73a08a113191f36ce73b68711e01a088ab277733cfe1c6",
+          "proteins": 9086,
+          "species_id": 101
+        },
+        {
+          "filename": "F113071.faa",
+          "sha256": "fc49ef17c70915b3c37917b4a36a0d217e75a06b71c71cd3eef6edc871579665",
+          "proteins": 8855,
+          "species_id": 104
+        },
+        {
+          "filename": "F116603.faa",
+          "sha256": "1d5cadabb88a8a134a3694824da8eb9854d595455c35f087a5c64f980c2a0d63",
+          "proteins": 5279,
+          "species_id": 110
+        },
+        {
+          "filename": "F1314805.faa",
+          "sha256": "f4663a4dc9a1ba899e9a40f34ff6e3e053f4161b5dede2f3723c18d8caeadfff",
+          "proteins": 2450,
+          "species_id": 134
+        },
+        {
+          "filename": "F1331295.faa",
+          "sha256": "86244b3ea526753da1684accf29c8244d32458ab1755ececbebe35105fa71719",
+          "proteins": 10416,
+          "species_id": 139
+        },
+        {
+          "filename": "F135208.faa",
+          "sha256": "88a0f6f667b24241e76b4cc373dd6b32bd1f6b55bd5da55eefcfc28e85654ffe",
+          "proteins": 2983,
+          "species_id": 146
+        },
+        {
+          "filename": "F135589.faa",
+          "sha256": "185c925ba439cb05f63ae6f1efeffea621385db4ce406e0077b3f65af7124918",
+          "proteins": 1003,
+          "species_id": 147
+        },
+        {
+          "filename": "F139363.faa",
+          "sha256": "7125395adf814ece64b99b8f3eec81b054f07a5ed33bedd2aa0c5950a336b0c0",
+          "proteins": 9550,
+          "species_id": 149
+        },
+        {
+          "filename": "F1419009.faa",
+          "sha256": "0ece7ca7419859e8b27f93026789fc16067743ea1f60eccf42c67a000708e0fa",
+          "proteins": 2725,
+          "species_id": 152
+        },
+        {
+          "filename": "F150792.faa",
+          "sha256": "0ca41f223424262d2c3ad8066b46e0709af6df9ce4957d1615c776593c2ae6c3",
+          "proteins": 5073,
+          "species_id": 173
+        },
+        {
+          "filename": "F152956.faa",
+          "sha256": "3eb2fc2087f4bcfd669492e67da448040813b5c5b0728351d7275017a40c77ae",
+          "proteins": 2993,
+          "species_id": 176
+        },
+        {
+          "filename": "F156515.faa",
+          "sha256": "e425c18942096c805ed3d703dcf9004f86202b0c7744a088924d65fff1fe929a",
+          "proteins": 8072,
+          "species_id": 179
+        },
+        {
+          "filename": "F170446.faa",
+          "sha256": "260e18d56221e4762cfb3a463f8537c6c8305bc452e2a3e666812bbf9de48a82",
+          "proteins": 8033,
+          "species_id": 196
+        },
+        {
+          "filename": "F1750568.faa",
+          "sha256": "0f0e87fac06d00459408027a77c2535a21f9ee4e44df9a5d0c925f14dc11d7c1",
+          "proteins": 7468,
+          "species_id": 204
+        },
+        {
+          "filename": "F1759441.faa",
+          "sha256": "6eb1ee0e1bbea9f04c80b035f8e2baea885cea9d9a8a154154c60f7bcb5d140a",
+          "proteins": 14421,
+          "species_id": 207
+        },
+        {
+          "filename": "F1858805.faa",
+          "sha256": "5cdac4d94e38a3fda78cba6cb328881f0b489368ffe2a47339a31ff500898459",
+          "proteins": 1705,
+          "species_id": 220
+        },
+        {
+          "filename": "F1904413.faa",
+          "sha256": "8d8611d744cd0b45b3a72c6ed36e0254e0c2a2cad3c476ddbcde4fd609ec6d8a",
+          "proteins": 4468,
+          "species_id": 226
+        },
+        {
+          "filename": "F1912936.faa",
+          "sha256": "5cc63373fc33068aa7269bc27da39ca13cc6c876c2b2fcc8f5b38a65317ad11b",
+          "proteins": 5444,
+          "species_id": 228
+        },
+        {
+          "filename": "F1912939.faa",
+          "sha256": "fc1c96c1222ddd704fee66f5c6a5ffdb809bdc9a84c7db71693ff65d0d067250",
+          "proteins": 6290,
+          "species_id": 229
+        },
+        {
+          "filename": "F202697.faa",
+          "sha256": "93c050a08bc848c18dcb74501250c127a567792a9ccfa8eb527b656b885c2e42",
+          "proteins": 5362,
+          "species_id": 239
+        },
+        {
+          "filename": "F202698.faa",
+          "sha256": "a79bfe444b3af0970e38fd11c607fec75ad9c0cd66317a1bbe99a0f53e93763d",
+          "proteins": 2641,
+          "species_id": 240
+        },
+        {
+          "filename": "F208960.faa",
+          "sha256": "9a835a6351b1171bcb86dd48c5f99b19ba023db53e8691412520374f16f4ee76",
+          "proteins": 3087,
+          "species_id": 246
+        },
+        {
+          "filename": "F2282107.faa",
+          "sha256": "1076e41f24920e92043d1edd53e57ed0c8932da2070245615970b93a14767a29",
+          "proteins": 2276,
+          "species_id": 255
+        },
+        {
+          "filename": "F231932.faa",
+          "sha256": "70cd87f6c39a591d823e81bcf48bd9da11a337c12b551f4214dff667f1e690b5",
+          "proteins": 4438,
+          "species_id": 258
+        },
+        {
+          "filename": "F235537.faa",
+          "sha256": "e642cc913d1357f598edbdd1336a4e8dae061b72dbecbfa9f57d1e7109fde8e1",
+          "proteins": 2186,
+          "species_id": 259
+        },
+        {
+          "filename": "F2600213.faa",
+          "sha256": "a3d2a2a526e0ff2ad1a07256b8cf0509f392a41e6fe619ba60fef706c8ad9c1d",
+          "proteins": 4618,
+          "species_id": 268
+        },
+        {
+          "filename": "F2600215.faa",
+          "sha256": "d5e6dd33d8684f4a7d35eb849e97e43c4983a35ba0c036bcc356e5c6db6f5a6a",
+          "proteins": 4282,
+          "species_id": 269
+        },
+        {
+          "filename": "F2600216.faa",
+          "sha256": "8e5723a9f28403e81a8f7a6661db3150e16f4e6138d7d2aa32d0aedde42e4487",
+          "proteins": 4356,
+          "species_id": 270
+        },
+        {
+          "filename": "F264124.faa",
+          "sha256": "e91afcf101b239e9716ed7fb3dc6647767ad631a0154828984da89fc29eaae66",
+          "proteins": 5833,
+          "species_id": 275
+        },
+        {
+          "filename": "F27342.faa",
+          "sha256": "97bb72e942d0783100a00850b555da9a7c0a6bdd09f7621bbfe7bfa1c12832ad",
+          "proteins": 6641,
+          "species_id": 286
+        },
+        {
+          "filename": "F2748771.faa",
+          "sha256": "9dc5d6399410b70bf6b481fbbf98bb8de35c9f3385c0fe5613f4c3bb2ed9a054",
+          "proteins": 5117,
+          "species_id": 289
+        },
+        {
+          "filename": "F2829486.faa",
+          "sha256": "b2cfc03006757657993fdbb567529f0e547a43e3bfbc6e1bc3fe2c177e024e84",
+          "proteins": 4801,
+          "species_id": 297
+        },
+        {
+          "filename": "F2831993.faa",
+          "sha256": "590d5e03ec9af053599789a0afe19aecf7ab0f63b89f01a1081b5dd9868f2185",
+          "proteins": 4051,
+          "species_id": 298
+        },
+        {
+          "filename": "F2834505.faa",
+          "sha256": "025cd68efb37db945a1545c5fd6f1a7b16bbf59f74be9c08ba553633badf0458",
+          "proteins": 4239,
+          "species_id": 299
+        },
+        {
+          "filename": "F29883.faa",
+          "sha256": "04ecf7a98e08c2d2cca3c01f464bbc4b45ce08e4e56917bc79bc6c1a73d590aa",
+          "proteins": 7977,
+          "species_id": 317
+        },
+        {
+          "filename": "F370292.faa",
+          "sha256": "c6a2c6bab7dd939b97d4dbec007c8bf7539ff0be5b6ffc8361592d6c6dc6e5d8",
+          "proteins": 4132,
+          "species_id": 347
+        },
+        {
+          "filename": "F378194.faa",
+          "sha256": "d8c1799c5e2d9a7c3d62f066807e9e3c5c4530b7f818a5149e514f439320b7db",
+          "proteins": 3835,
+          "species_id": 349
+        },
+        {
+          "filename": "F38799.faa",
+          "sha256": "8367ad3333788959a08f7287d779879b6e5d2ef9fa84e541c5a051cd6591a477",
+          "proteins": 3878,
+          "species_id": 351
+        },
+        {
+          "filename": "F40492.faa",
+          "sha256": "e02a65815cd8b948b9b178a3cab7653943aa50e3a3cb35b4dd955d3bd64669d5",
+          "proteins": 3630,
+          "species_id": 358
+        },
+        {
+          "filename": "F41956.faa",
+          "sha256": "6667d39ed4e6132f754d8e8fb701263845b3eb277a0ea93ea988e06b81519dd1",
+          "proteins": 3824,
+          "species_id": 363
+        },
+        {
+          "filename": "F456999.faa",
+          "sha256": "7662c579f6e7f5eee3d35a41ef8c9c25e98f8f58d81bb4a82f1a733116fdad87",
+          "proteins": 2674,
+          "species_id": 371
+        },
+        {
+          "filename": "F467971.faa",
+          "sha256": "5422e3da33a687dea4e6636b43e4208f025fde380d27d17281dabe4748d1594a",
+          "proteins": 4704,
+          "species_id": 375
+        },
+        {
+          "filename": "F48021.faa",
+          "sha256": "e9de6a347b28f4c348c5b817c0fc6b2e269e5eda17e75e3a6898975b8146fcee",
+          "proteins": 5000,
+          "species_id": 379
+        },
+        {
+          "filename": "F48563.faa",
+          "sha256": "e24f5007606f7f4d10ddb0a5306bd20a058b8498ab1a575faaf35f866df2de70",
+          "proteins": 3806,
+          "species_id": 383
+        },
+        {
+          "filename": "F48565.faa",
+          "sha256": "4de22d43f13fbf68bba1e149aef20e068056ce7b334b1386dd31bc49b29152bc",
+          "proteins": 8837,
+          "species_id": 384
+        },
+        {
+          "filename": "F48578.faa",
+          "sha256": "d9ddd781e1b116fbd1d59c6ddb0a9c2a26aea75eceb98b7ca9a2e4bd6e9b0153",
+          "proteins": 5658,
+          "species_id": 385
+        },
+        {
+          "filename": "F48586.faa",
+          "sha256": "6b6d9dc242e06efa07703a14f77031b655d44edc9a79e2b920c4389a7032f65a",
+          "proteins": 5650,
+          "species_id": 386
+        },
+        {
+          "filename": "F48587.faa",
+          "sha256": "8ea49e9bac68d804050fd9830610920ecbd9ee810dc9f3c251d7c436ee56b337",
+          "proteins": 5579,
+          "species_id": 387
+        },
+        {
+          "filename": "F48593.faa",
+          "sha256": "55f494c80e25af489f7cf722b21544fa923a6500d47f18b1fd02cf42ad8ce269",
+          "proteins": 5360,
+          "species_id": 388
+        },
+        {
+          "filename": "F50990.faa",
+          "sha256": "f69b5dd1a7dd6b0e58c0d5df3045297bfc2cd8b5187990c1d1955eee0cb42801",
+          "proteins": 5674,
+          "species_id": 405
+        },
+        {
+          "filename": "F5219.faa",
+          "sha256": "b11507c96d7feccb75bcd1480649de2a79a31a90d28e42bc19e0be2dfdecc684",
+          "proteins": 11628,
+          "species_id": 414
+        },
+        {
+          "filename": "F5364.faa",
+          "sha256": "a6aec2d421d69f5904322121e68d30e89703b1e40127d273a394619b2e4099b3",
+          "proteins": 3376,
+          "species_id": 417
+        },
+        {
+          "filename": "F5365.faa",
+          "sha256": "6d067311529aa9def8cc95296e42869f5d18da9a9b513b5d7bfad6db7a8319ac",
+          "proteins": 5043,
+          "species_id": 418
+        },
+        {
+          "filename": "F5630.faa",
+          "sha256": "05d8b1391a3220b356c7334c939a8444be74f04f59d3a4fb97e4b77e2eedb5d8",
+          "proteins": 4533,
+          "species_id": 435
+        },
+        {
+          "filename": "F56493.faa",
+          "sha256": "cc21e01dbfad57c59f29acf94a0e2fdbb1f739048dbb4edfccedd968bdbdd341",
+          "proteins": 4393,
+          "species_id": 438
+        },
+        {
+          "filename": "F599839.faa",
+          "sha256": "cf900b10eca1ba2117e3ebcf8a7d8fdfc359e86135894cceaed5f61fa57f6c8c",
+          "proteins": 1803,
+          "species_id": 449
+        },
+        {
+          "filename": "F63146.faa",
+          "sha256": "c54040c336f90c69e485c9a9a403f585ba4f6533453583aaab43fed852edecf2",
+          "proteins": 2099,
+          "species_id": 457
+        },
+        {
+          "filename": "F65672.faa",
+          "sha256": "3400fa273653ff41c91ca41e67a4d327c101533a5074afd2fdfe119b17cfe91b",
+          "proteins": 2316,
+          "species_id": 469
+        },
+        {
+          "filename": "F68786.faa",
+          "sha256": "eb0ca12891ba132056a45e71dd36155397fb0791c63a590143a9f6bb2f5a9c93",
+          "proteins": 16627,
+          "species_id": 471
+        },
+        {
+          "filename": "F71933.faa",
+          "sha256": "de2847e9d71607b081fd356631cc71db57fee4b0ef39c2d2a4233a9f0136e7d9",
+          "proteins": 3312,
+          "species_id": 480
+        },
+        {
+          "filename": "F80663.faa",
+          "sha256": "1b8bb3d9e27355e3550ca4f61788f95a6f798f659526da4cbdbdef426f63f6b0",
+          "proteins": 9312,
+          "species_id": 490
+        },
+        {
+          "filename": "F87326.faa",
+          "sha256": "deffbf8753b24991e849bb4381342a9220e48c34097f135332c2a78e90e94720",
+          "proteins": 3567,
+          "species_id": 496
+        },
+        {
+          "filename": "F89243.faa",
+          "sha256": "5c8e0c86e2550da1e7de5bfe45e3ffb6ae43e011ffe8d3a996c84b51652a6e00",
+          "proteins": 6874,
+          "species_id": 497
+        },
+        {
+          "filename": "F933333.faa",
+          "sha256": "44afb94fe899c2d8cd0e4ec6c7a73c764e770d4a00834d0ee41125c115cbf5c6",
+          "proteins": 784,
+          "species_id": 503
+        },
+        {
+          "filename": "F984962.faa",
+          "sha256": "73da0202b8ef36f0c53259dd736580e0bf27cc0337963784c5bd05eadc5384d2",
+          "proteins": 4614,
+          "species_id": 509
+        }
+      ]
+    },
+    {
+      "clade_id": "C523e7414c09cc595",
+      "taxa": 72,
+      "proteins": 162666,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C523e7414c09cc595/proteomes",
+      "input_files": [
+        {
+          "filename": "F5101.faa",
+          "sha256": "4980c8a82f630afc749214e7f3db2284c3a70031c8a4d39fc6153bb0f8e0c8f5",
+          "proteins": 1208,
+          "species_id": 38
+        },
+        {
+          "filename": "F91930.faa",
+          "sha256": "a220ec7d4cd67be57baa2de6405f7c4905e907db5444091fea5d5a69575281d3",
+          "proteins": 1077,
+          "species_id": 53
+        },
+        {
+          "filename": "F101028.faa",
+          "sha256": "64b2e282f1fe0b968fb48582fdfc19c7f859b4ae69cb8ed5fefd8ec8b41b4e88",
+          "proteins": 2178,
+          "species_id": 68
+        },
+        {
+          "filename": "F101201.faa",
+          "sha256": "22877b9fd5c8ed236a54a6b8410dac77070470ccbff967c00cb19ec16c6cec39",
+          "proteins": 2294,
+          "species_id": 71
+        },
+        {
+          "filename": "F1042133.faa",
+          "sha256": "77624a6e1726d798ad7dd97fe10536c07fd63bb33c233833caef952a9d5f5dc5",
+          "proteins": 2191,
+          "species_id": 74
+        },
+        {
+          "filename": "F1093897.faa",
+          "sha256": "c4f714ae7219dd2ead84e333cba80280bf86a052178f483b14cb73e95e692c08",
+          "proteins": 1483,
+          "species_id": 89
+        },
+        {
+          "filename": "F1093900.faa",
+          "sha256": "b79948541c12266c1784ab8fe9d07e301e16dde3773b294fa835b3b553199949",
+          "proteins": 1547,
+          "species_id": 90
+        },
+        {
+          "filename": "F1095194.faa",
+          "sha256": "ae73fc964432f1112b1af42aca58ee5a7335e90f0f25b350b0392a7f242ec8da",
+          "proteins": 1723,
+          "species_id": 91
+        },
+        {
+          "filename": "F1141098.faa",
+          "sha256": "2a04f5745fb03a394710f23e7c722b582e62086f87a4cefde04e0af98a7e91f0",
+          "proteins": 2594,
+          "species_id": 105
+        },
+        {
+          "filename": "F117187.faa",
+          "sha256": "7043f374b5a33e9b875479b151afbbe21d28f605710b7f1e7fb86d80332202c2",
+          "proteins": 3509,
+          "species_id": 115
+        },
+        {
+          "filename": "F1209916.faa",
+          "sha256": "181f55f26bb5e1dc4ee8f0d184e9306d86aadc8cdaa7a6d7990de8c39127c60b",
+          "proteins": 5140,
+          "species_id": 119
+        },
+        {
+          "filename": "F1209934.faa",
+          "sha256": "9b0b6d51aed67e821f4cf8dd165a39eb470108b93fd30bf66c11b1dca837a437",
+          "proteins": 5347,
+          "species_id": 120
+        },
+        {
+          "filename": "F1214568.faa",
+          "sha256": "9329bd50cf1981aa9e3fc19e3ad88475812e282bd1a458db79231f7e0e9a9e96",
+          "proteins": 2916,
+          "species_id": 122
+        },
+        {
+          "filename": "F1276059.faa",
+          "sha256": "83c5ad195eb60bf7ae421318515b19aceea1f6b0a7149815d52ce148953d1b55",
+          "proteins": 2232,
+          "species_id": 129
+        },
+        {
+          "filename": "F1328300.faa",
+          "sha256": "59e0bb2a7ec1c26dc1dc166137abbc2ae9a76e6bdd705c0732a131815f3f1560",
+          "proteins": 1714,
+          "species_id": 136
+        },
+        {
+          "filename": "F145971.faa",
+          "sha256": "3fdfb289b8ba296859933c163041f642941ca177d38a4976d23549292b52d9d0",
+          "proteins": 7106,
+          "species_id": 162
+        },
+        {
+          "filename": "F148304.faa",
+          "sha256": "b45a0ceadea989d265a1a015e89e606503f8395f82ab79a7c57040e8ab3b66d6",
+          "proteins": 3494,
+          "species_id": 166
+        },
+        {
+          "filename": "F148305.faa",
+          "sha256": "b0895351f9a5fb65b475f0e7fbbae44b653e7c8a953ca8755284d7a14c09d42b",
+          "proteins": 3225,
+          "species_id": 167
+        },
+        {
+          "filename": "F148313.faa",
+          "sha256": "c657999cd680130d89a04661e33b2656600b5f4a87b305156d86c3f1de1970a5",
+          "proteins": 1339,
+          "species_id": 168
+        },
+        {
+          "filename": "F1506992.faa",
+          "sha256": "e201fd72e6d04d071f51b25417fd9d15c472c6bc7f67b1ab22e32c3dfd627125",
+          "proteins": 5151,
+          "species_id": 170
+        },
+        {
+          "filename": "F1658444.faa",
+          "sha256": "35f5e7328a7768df1cae927b6179a630042babedf7e2d4fb0067ab566a36cd65",
+          "proteins": 2095,
+          "species_id": 186
+        },
+        {
+          "filename": "F1671311.faa",
+          "sha256": "143190591baf8fbf12c82724448d9e17f6230a152f08284939065dd94f6bb41c",
+          "proteins": 5016,
+          "species_id": 188
+        },
+        {
+          "filename": "F1682393.faa",
+          "sha256": "c41ed761923266566ebbe145f9ab695bec09085cc537c31615935ec1fab91c6a",
+          "proteins": 4149,
+          "species_id": 190
+        },
+        {
+          "filename": "F173216.faa",
+          "sha256": "49e6858d8ece5e39c75e4cd04ad7ece42c75b3fc727ae028a805d205cdc53f44",
+          "proteins": 1368,
+          "species_id": 199
+        },
+        {
+          "filename": "F1738374.faa",
+          "sha256": "3c77df4278836a17045f99fe40e5200af193366b375726d1f4fdd376021c8292",
+          "proteins": 2303,
+          "species_id": 200
+        },
+        {
+          "filename": "F177197.faa",
+          "sha256": "c25b0eeb7223ad86719b8a3d42d0dc73f7b86c7ff117682ff3d7f6b837da647b",
+          "proteins": 2712,
+          "species_id": 208
+        },
+        {
+          "filename": "F177199.faa",
+          "sha256": "da3ea04b992ec961b06ff6a45edbae60fb924026d5ac7f2e1a16c2054bfb4371",
+          "proteins": 1115,
+          "species_id": 209
+        },
+        {
+          "filename": "F1825666.faa",
+          "sha256": "291f882975c9d590bc4b82aa8c86bea79c20fd6e231ea105d9f365de8945ed47",
+          "proteins": 2039,
+          "species_id": 217
+        },
+        {
+          "filename": "F195108.faa",
+          "sha256": "09da6756820dfb8bacb9e1b7f2eb4554166e549538c672dc275d4efd0aeb7266",
+          "proteins": 1692,
+          "species_id": 233
+        },
+        {
+          "filename": "F2019550.faa",
+          "sha256": "8bdb6efdb357200a637ea001b6c296af7b2bd3754be5961148fe9eef43ed9546",
+          "proteins": 1028,
+          "species_id": 235
+        },
+        {
+          "filename": "F2034170.faa",
+          "sha256": "3879ff2a2a1614fff7b0faf90df2725b1d1cde048e3199a833b97aea13d24475",
+          "proteins": 1205,
+          "species_id": 241
+        },
+        {
+          "filename": "F2035830.faa",
+          "sha256": "d0ca7f4ce409b90912061191c9c3275835b97de0d5958442363adf4216c9532e",
+          "proteins": 1069,
+          "species_id": 243
+        },
+        {
+          "filename": "F223192.faa",
+          "sha256": "fc702b6e8c788e187d5221213003242afbf8af2254f8d33ad5be32769ca2a42b",
+          "proteins": 722,
+          "species_id": 250
+        },
+        {
+          "filename": "F223376.faa",
+          "sha256": "c6fef764e839f66cefc9e6663cc54aac6d3695e6ab9d84d6de16d930102146f3",
+          "proteins": 2921,
+          "species_id": 251
+        },
+        {
+          "filename": "F226899.faa",
+          "sha256": "4534fa3c1e5bbf099e69e2e4c41942cef006bd1124a86819f0d6ebf1e6ac84d6",
+          "proteins": 949,
+          "species_id": 254
+        },
+        {
+          "filename": "F2283408.faa",
+          "sha256": "63c7cbee91ad428f103d8d5fcff6fddce14e9cf6c8bd7e335493372d3803121d",
+          "proteins": 1614,
+          "species_id": 256
+        },
+        {
+          "filename": "F2609844.faa",
+          "sha256": "cca8b774d9076dbc1f9805d5904f7548ccf8bb027d138dd6711f2951f12e3c9d",
+          "proteins": 2117,
+          "species_id": 273
+        },
+        {
+          "filename": "F2656787.faa",
+          "sha256": "8046d49fe28e0503fe2383a8cdd43320c7629867f437f015794a2b824b1012a8",
+          "proteins": 1391,
+          "species_id": 279
+        },
+        {
+          "filename": "F2939399.faa",
+          "sha256": "0a257826d3e725cb2388bf11f927ed343cd9e8b88ac6b6bcc038cc0fdfd846fc",
+          "proteins": 707,
+          "species_id": 308
+        },
+        {
+          "filename": "F2939405.faa",
+          "sha256": "809d78768a716645500fcaf6e8e4fd24e17d2a631dd38a3f6f4d064ed3350d3f",
+          "proteins": 821,
+          "species_id": 312
+        },
+        {
+          "filename": "F2939408.faa",
+          "sha256": "0cbc93719ab8b56a3ea240549bdc5369649d029a439506d01f51a808f4f970c6",
+          "proteins": 643,
+          "species_id": 314
+        },
+        {
+          "filename": "F29908.faa",
+          "sha256": "109614ab8893caa76c3921ac97c2ab798ed6287cddda0d1eb3d9e18eb577065d",
+          "proteins": 2207,
+          "species_id": 320
+        },
+        {
+          "filename": "F326681.faa",
+          "sha256": "37c429d44373b652c5b964dc33db2612c6353f3cdb39aefc5e93794fbdb4b205",
+          "proteins": 1676,
+          "species_id": 332
+        },
+        {
+          "filename": "F326684.faa",
+          "sha256": "51c547510c0ee8e307b18efd058d0d2127b432ed44daedb75464c56038d373a6",
+          "proteins": 1961,
+          "species_id": 333
+        },
+        {
+          "filename": "F3342545.faa",
+          "sha256": "4f276edf57d7b85faba95eb16312f29b0d1b73257fa6c6f416a7ac8c795f67c2",
+          "proteins": 1374,
+          "species_id": 335
+        },
+        {
+          "filename": "F339359.faa",
+          "sha256": "c455243ffdc655046863473f98bbd0231c580c4003807049003712b8ce41f9f0",
+          "proteins": 2705,
+          "species_id": 336
+        },
+        {
+          "filename": "F342668.faa",
+          "sha256": "1718fb72126b8044c2bcdbd8ac411c96d93e6738f97384178e38261846a9bb49",
+          "proteins": 1237,
+          "species_id": 337
+        },
+        {
+          "filename": "F34406.faa",
+          "sha256": "961d98538e8a8a07978905841a77d380dbffd2a2f74d8607942f05e06a2d29e7",
+          "proteins": 3509,
+          "species_id": 338
+        },
+        {
+          "filename": "F36050.faa",
+          "sha256": "048f38f450d38ce80cb06f015cabfff3b8452d0d8d39c8100dd2830a9b50b608",
+          "proteins": 2866,
+          "species_id": 343
+        },
+        {
+          "filename": "F36779.faa",
+          "sha256": "da6cdde9cdf2b5f18e289ccaca9fd7cb0fb35010d2ad9b033d33beb25bf880f2",
+          "proteins": 4924,
+          "species_id": 346
+        },
+        {
+          "filename": "F393283.faa",
+          "sha256": "bbc88790aac8a2683e254b2096b3002a6a04b2813fedd741bca1e5a79a113b7c",
+          "proteins": 2189,
+          "species_id": 353
+        },
+        {
+          "filename": "F398673.faa",
+          "sha256": "a86b48e5986b0049f062288b0e0308e83792ab060993ade0d4939023cce11bbf",
+          "proteins": 1708,
+          "species_id": 355
+        },
+        {
+          "filename": "F40559.faa",
+          "sha256": "2d5fe617b0c58a0c4e68f5fb7f44ed4f506c64591fb34005885b6c552f0adf58",
+          "proteins": 2169,
+          "species_id": 359
+        },
+        {
+          "filename": "F41990.faa",
+          "sha256": "8c90736dec264ebe191ee0b911baa162d6175fce882a5dd6aebbb8ca3172f00f",
+          "proteins": 1314,
+          "species_id": 364
+        },
+        {
+          "filename": "F474922.faa",
+          "sha256": "f79faec82a149e1bda42a9a38a5d5fe78d2935f4dfd8c21940d914f3a442a1b3",
+          "proteins": 2397,
+          "species_id": 377
+        },
+        {
+          "filename": "F5116.faa",
+          "sha256": "50d859e24c73cfadcb7395879f0e0360e3e23146455fdb6d7ad0bc5074e446ac",
+          "proteins": 2315,
+          "species_id": 406
+        },
+        {
+          "filename": "F5127.faa",
+          "sha256": "1a08df03ecf1214dce0f8965fa32aa88f8405cb1320fdaf63d96c6a82a2e0a0d",
+          "proteins": 2560,
+          "species_id": 407
+        },
+        {
+          "filename": "F5128.faa",
+          "sha256": "62270f3712a7dc84bee8c7ce1bf7c89e657110cbafcf33e50e30fb50dfa5a0b2",
+          "proteins": 1915,
+          "species_id": 408
+        },
+        {
+          "filename": "F5147.faa",
+          "sha256": "09f3bebe4b85738cf6f0bacf5a6fbaed762fd9aa2fa17ea8aba3076c313c0cd6",
+          "proteins": 2038,
+          "species_id": 409
+        },
+        {
+          "filename": "F549676.faa",
+          "sha256": "2d9283924f764d087ef124b2768f07007ef02c6dbe7484a890849a150ba9ef24",
+          "proteins": 1932,
+          "species_id": 426
+        },
+        {
+          "filename": "F5507.faa",
+          "sha256": "81f50c9c611008c643838d98696155c04ca279fe8089d415f049b596befa684a",
+          "proteins": 2775,
+          "species_id": 427
+        },
+        {
+          "filename": "F5518.faa",
+          "sha256": "0f47c48895061c7f9b5f8d3dfc29f4fc5992f745e10d0f33d805bc10ee2d9150",
+          "proteins": 2871,
+          "species_id": 428
+        },
+        {
+          "filename": "F5544.faa",
+          "sha256": "8e2ac1f87d6a304e5bcad5a4a1df0c37599bbfb9e003783f61eaccc403aa0a9b",
+          "proteins": 3209,
+          "species_id": 430
+        },
+        {
+          "filename": "F563466.faa",
+          "sha256": "714f76b70110f48f508524d79f76fc142d8f12c67de439bf7e42cc6d56bb2734",
+          "proteins": 792,
+          "species_id": 436
+        },
+        {
+          "filename": "F58853.faa",
+          "sha256": "83cffb55b0da63ec7bb4d0a6ff1c7d20613c761b6e15a048ce6242218fa8bf9b",
+          "proteins": 1245,
+          "species_id": 445
+        },
+        {
+          "filename": "F61273.faa",
+          "sha256": "a862d1cd48f5b2ddfd5a65f9019a5cfb37d5136bd626e69ce3a6c8a7677a76b3",
+          "proteins": 1116,
+          "species_id": 455
+        },
+        {
+          "filename": "F63577.faa",
+          "sha256": "a6ec2ee04160d95e733a032be25fd479a3e63ab3b5cd45360a6d0fc3b71070af",
+          "proteins": 2950,
+          "species_id": 459
+        },
+        {
+          "filename": "F65468.faa",
+          "sha256": "0a40148035db747752486b9bd2819810066106976bef718178393b5392ebd27c",
+          "proteins": 2311,
+          "species_id": 467
+        },
+        {
+          "filename": "F655981.faa",
+          "sha256": "2d13608bab695de1cd354a917d0db1e3cded5f61e185bb10acf507568b616652",
+          "proteins": 1999,
+          "species_id": 468
+        },
+        {
+          "filename": "F710243.faa",
+          "sha256": "18d541567e7dd51acb0e5f925da1704f0eabe0c900b38f49274620b47b659616",
+          "proteins": 1435,
+          "species_id": 479
+        },
+        {
+          "filename": "F72144.faa",
+          "sha256": "d1ee4585af7594ef7faf39347e068bf4937471c14bd6de65c787dad5cf6b5ebe",
+          "proteins": 678,
+          "species_id": 481
+        },
+        {
+          "filename": "F80884.faa",
+          "sha256": "7f6674f882ab32de8c0f0dace71491db21c5dd17e73de07a1b564eee64d01019",
+          "proteins": 3145,
+          "species_id": 491
+        }
+      ]
+    },
+    {
+      "clade_id": "Cc5131e64fa18d8f5",
+      "taxa": 70,
+      "proteins": 161202,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cc5131e64fa18d8f5/proteomes",
+      "input_files": [
+        {
+          "filename": "F5101.faa",
+          "sha256": "4980c8a82f630afc749214e7f3db2284c3a70031c8a4d39fc6153bb0f8e0c8f5",
+          "proteins": 1208,
+          "species_id": 38
+        },
+        {
+          "filename": "F91930.faa",
+          "sha256": "a220ec7d4cd67be57baa2de6405f7c4905e907db5444091fea5d5a69575281d3",
+          "proteins": 1077,
+          "species_id": 53
+        },
+        {
+          "filename": "F101028.faa",
+          "sha256": "64b2e282f1fe0b968fb48582fdfc19c7f859b4ae69cb8ed5fefd8ec8b41b4e88",
+          "proteins": 2178,
+          "species_id": 68
+        },
+        {
+          "filename": "F101201.faa",
+          "sha256": "22877b9fd5c8ed236a54a6b8410dac77070470ccbff967c00cb19ec16c6cec39",
+          "proteins": 2294,
+          "species_id": 71
+        },
+        {
+          "filename": "F1042133.faa",
+          "sha256": "77624a6e1726d798ad7dd97fe10536c07fd63bb33c233833caef952a9d5f5dc5",
+          "proteins": 2191,
+          "species_id": 74
+        },
+        {
+          "filename": "F1093897.faa",
+          "sha256": "c4f714ae7219dd2ead84e333cba80280bf86a052178f483b14cb73e95e692c08",
+          "proteins": 1483,
+          "species_id": 89
+        },
+        {
+          "filename": "F1093900.faa",
+          "sha256": "b79948541c12266c1784ab8fe9d07e301e16dde3773b294fa835b3b553199949",
+          "proteins": 1547,
+          "species_id": 90
+        },
+        {
+          "filename": "F1095194.faa",
+          "sha256": "ae73fc964432f1112b1af42aca58ee5a7335e90f0f25b350b0392a7f242ec8da",
+          "proteins": 1723,
+          "species_id": 91
+        },
+        {
+          "filename": "F1141098.faa",
+          "sha256": "2a04f5745fb03a394710f23e7c722b582e62086f87a4cefde04e0af98a7e91f0",
+          "proteins": 2594,
+          "species_id": 105
+        },
+        {
+          "filename": "F117187.faa",
+          "sha256": "7043f374b5a33e9b875479b151afbbe21d28f605710b7f1e7fb86d80332202c2",
+          "proteins": 3509,
+          "species_id": 115
+        },
+        {
+          "filename": "F1209916.faa",
+          "sha256": "181f55f26bb5e1dc4ee8f0d184e9306d86aadc8cdaa7a6d7990de8c39127c60b",
+          "proteins": 5140,
+          "species_id": 119
+        },
+        {
+          "filename": "F1209934.faa",
+          "sha256": "9b0b6d51aed67e821f4cf8dd165a39eb470108b93fd30bf66c11b1dca837a437",
+          "proteins": 5347,
+          "species_id": 120
+        },
+        {
+          "filename": "F1214568.faa",
+          "sha256": "9329bd50cf1981aa9e3fc19e3ad88475812e282bd1a458db79231f7e0e9a9e96",
+          "proteins": 2916,
+          "species_id": 122
+        },
+        {
+          "filename": "F1276059.faa",
+          "sha256": "83c5ad195eb60bf7ae421318515b19aceea1f6b0a7149815d52ce148953d1b55",
+          "proteins": 2232,
+          "species_id": 129
+        },
+        {
+          "filename": "F1328300.faa",
+          "sha256": "59e0bb2a7ec1c26dc1dc166137abbc2ae9a76e6bdd705c0732a131815f3f1560",
+          "proteins": 1714,
+          "species_id": 136
+        },
+        {
+          "filename": "F145971.faa",
+          "sha256": "3fdfb289b8ba296859933c163041f642941ca177d38a4976d23549292b52d9d0",
+          "proteins": 7106,
+          "species_id": 162
+        },
+        {
+          "filename": "F148304.faa",
+          "sha256": "b45a0ceadea989d265a1a015e89e606503f8395f82ab79a7c57040e8ab3b66d6",
+          "proteins": 3494,
+          "species_id": 166
+        },
+        {
+          "filename": "F148305.faa",
+          "sha256": "b0895351f9a5fb65b475f0e7fbbae44b653e7c8a953ca8755284d7a14c09d42b",
+          "proteins": 3225,
+          "species_id": 167
+        },
+        {
+          "filename": "F148313.faa",
+          "sha256": "c657999cd680130d89a04661e33b2656600b5f4a87b305156d86c3f1de1970a5",
+          "proteins": 1339,
+          "species_id": 168
+        },
+        {
+          "filename": "F1506992.faa",
+          "sha256": "e201fd72e6d04d071f51b25417fd9d15c472c6bc7f67b1ab22e32c3dfd627125",
+          "proteins": 5151,
+          "species_id": 170
+        },
+        {
+          "filename": "F1658444.faa",
+          "sha256": "35f5e7328a7768df1cae927b6179a630042babedf7e2d4fb0067ab566a36cd65",
+          "proteins": 2095,
+          "species_id": 186
+        },
+        {
+          "filename": "F1671311.faa",
+          "sha256": "143190591baf8fbf12c82724448d9e17f6230a152f08284939065dd94f6bb41c",
+          "proteins": 5016,
+          "species_id": 188
+        },
+        {
+          "filename": "F1682393.faa",
+          "sha256": "c41ed761923266566ebbe145f9ab695bec09085cc537c31615935ec1fab91c6a",
+          "proteins": 4149,
+          "species_id": 190
+        },
+        {
+          "filename": "F173216.faa",
+          "sha256": "49e6858d8ece5e39c75e4cd04ad7ece42c75b3fc727ae028a805d205cdc53f44",
+          "proteins": 1368,
+          "species_id": 199
+        },
+        {
+          "filename": "F1738374.faa",
+          "sha256": "3c77df4278836a17045f99fe40e5200af193366b375726d1f4fdd376021c8292",
+          "proteins": 2303,
+          "species_id": 200
+        },
+        {
+          "filename": "F177197.faa",
+          "sha256": "c25b0eeb7223ad86719b8a3d42d0dc73f7b86c7ff117682ff3d7f6b837da647b",
+          "proteins": 2712,
+          "species_id": 208
+        },
+        {
+          "filename": "F177199.faa",
+          "sha256": "da3ea04b992ec961b06ff6a45edbae60fb924026d5ac7f2e1a16c2054bfb4371",
+          "proteins": 1115,
+          "species_id": 209
+        },
+        {
+          "filename": "F1825666.faa",
+          "sha256": "291f882975c9d590bc4b82aa8c86bea79c20fd6e231ea105d9f365de8945ed47",
+          "proteins": 2039,
+          "species_id": 217
+        },
+        {
+          "filename": "F195108.faa",
+          "sha256": "09da6756820dfb8bacb9e1b7f2eb4554166e549538c672dc275d4efd0aeb7266",
+          "proteins": 1692,
+          "species_id": 233
+        },
+        {
+          "filename": "F2019550.faa",
+          "sha256": "8bdb6efdb357200a637ea001b6c296af7b2bd3754be5961148fe9eef43ed9546",
+          "proteins": 1028,
+          "species_id": 235
+        },
+        {
+          "filename": "F2034170.faa",
+          "sha256": "3879ff2a2a1614fff7b0faf90df2725b1d1cde048e3199a833b97aea13d24475",
+          "proteins": 1205,
+          "species_id": 241
+        },
+        {
+          "filename": "F2035830.faa",
+          "sha256": "d0ca7f4ce409b90912061191c9c3275835b97de0d5958442363adf4216c9532e",
+          "proteins": 1069,
+          "species_id": 243
+        },
+        {
+          "filename": "F223192.faa",
+          "sha256": "fc702b6e8c788e187d5221213003242afbf8af2254f8d33ad5be32769ca2a42b",
+          "proteins": 722,
+          "species_id": 250
+        },
+        {
+          "filename": "F223376.faa",
+          "sha256": "c6fef764e839f66cefc9e6663cc54aac6d3695e6ab9d84d6de16d930102146f3",
+          "proteins": 2921,
+          "species_id": 251
+        },
+        {
+          "filename": "F226899.faa",
+          "sha256": "4534fa3c1e5bbf099e69e2e4c41942cef006bd1124a86819f0d6ebf1e6ac84d6",
+          "proteins": 949,
+          "species_id": 254
+        },
+        {
+          "filename": "F2283408.faa",
+          "sha256": "63c7cbee91ad428f103d8d5fcff6fddce14e9cf6c8bd7e335493372d3803121d",
+          "proteins": 1614,
+          "species_id": 256
+        },
+        {
+          "filename": "F2609844.faa",
+          "sha256": "cca8b774d9076dbc1f9805d5904f7548ccf8bb027d138dd6711f2951f12e3c9d",
+          "proteins": 2117,
+          "species_id": 273
+        },
+        {
+          "filename": "F2656787.faa",
+          "sha256": "8046d49fe28e0503fe2383a8cdd43320c7629867f437f015794a2b824b1012a8",
+          "proteins": 1391,
+          "species_id": 279
+        },
+        {
+          "filename": "F2939399.faa",
+          "sha256": "0a257826d3e725cb2388bf11f927ed343cd9e8b88ac6b6bcc038cc0fdfd846fc",
+          "proteins": 707,
+          "species_id": 308
+        },
+        {
+          "filename": "F29908.faa",
+          "sha256": "109614ab8893caa76c3921ac97c2ab798ed6287cddda0d1eb3d9e18eb577065d",
+          "proteins": 2207,
+          "species_id": 320
+        },
+        {
+          "filename": "F326681.faa",
+          "sha256": "37c429d44373b652c5b964dc33db2612c6353f3cdb39aefc5e93794fbdb4b205",
+          "proteins": 1676,
+          "species_id": 332
+        },
+        {
+          "filename": "F326684.faa",
+          "sha256": "51c547510c0ee8e307b18efd058d0d2127b432ed44daedb75464c56038d373a6",
+          "proteins": 1961,
+          "species_id": 333
+        },
+        {
+          "filename": "F3342545.faa",
+          "sha256": "4f276edf57d7b85faba95eb16312f29b0d1b73257fa6c6f416a7ac8c795f67c2",
+          "proteins": 1374,
+          "species_id": 335
+        },
+        {
+          "filename": "F339359.faa",
+          "sha256": "c455243ffdc655046863473f98bbd0231c580c4003807049003712b8ce41f9f0",
+          "proteins": 2705,
+          "species_id": 336
+        },
+        {
+          "filename": "F342668.faa",
+          "sha256": "1718fb72126b8044c2bcdbd8ac411c96d93e6738f97384178e38261846a9bb49",
+          "proteins": 1237,
+          "species_id": 337
+        },
+        {
+          "filename": "F34406.faa",
+          "sha256": "961d98538e8a8a07978905841a77d380dbffd2a2f74d8607942f05e06a2d29e7",
+          "proteins": 3509,
+          "species_id": 338
+        },
+        {
+          "filename": "F36050.faa",
+          "sha256": "048f38f450d38ce80cb06f015cabfff3b8452d0d8d39c8100dd2830a9b50b608",
+          "proteins": 2866,
+          "species_id": 343
+        },
+        {
+          "filename": "F36779.faa",
+          "sha256": "da6cdde9cdf2b5f18e289ccaca9fd7cb0fb35010d2ad9b033d33beb25bf880f2",
+          "proteins": 4924,
+          "species_id": 346
+        },
+        {
+          "filename": "F393283.faa",
+          "sha256": "bbc88790aac8a2683e254b2096b3002a6a04b2813fedd741bca1e5a79a113b7c",
+          "proteins": 2189,
+          "species_id": 353
+        },
+        {
+          "filename": "F398673.faa",
+          "sha256": "a86b48e5986b0049f062288b0e0308e83792ab060993ade0d4939023cce11bbf",
+          "proteins": 1708,
+          "species_id": 355
+        },
+        {
+          "filename": "F40559.faa",
+          "sha256": "2d5fe617b0c58a0c4e68f5fb7f44ed4f506c64591fb34005885b6c552f0adf58",
+          "proteins": 2169,
+          "species_id": 359
+        },
+        {
+          "filename": "F41990.faa",
+          "sha256": "8c90736dec264ebe191ee0b911baa162d6175fce882a5dd6aebbb8ca3172f00f",
+          "proteins": 1314,
+          "species_id": 364
+        },
+        {
+          "filename": "F474922.faa",
+          "sha256": "f79faec82a149e1bda42a9a38a5d5fe78d2935f4dfd8c21940d914f3a442a1b3",
+          "proteins": 2397,
+          "species_id": 377
+        },
+        {
+          "filename": "F5116.faa",
+          "sha256": "50d859e24c73cfadcb7395879f0e0360e3e23146455fdb6d7ad0bc5074e446ac",
+          "proteins": 2315,
+          "species_id": 406
+        },
+        {
+          "filename": "F5127.faa",
+          "sha256": "1a08df03ecf1214dce0f8965fa32aa88f8405cb1320fdaf63d96c6a82a2e0a0d",
+          "proteins": 2560,
+          "species_id": 407
+        },
+        {
+          "filename": "F5128.faa",
+          "sha256": "62270f3712a7dc84bee8c7ce1bf7c89e657110cbafcf33e50e30fb50dfa5a0b2",
+          "proteins": 1915,
+          "species_id": 408
+        },
+        {
+          "filename": "F5147.faa",
+          "sha256": "09f3bebe4b85738cf6f0bacf5a6fbaed762fd9aa2fa17ea8aba3076c313c0cd6",
+          "proteins": 2038,
+          "species_id": 409
+        },
+        {
+          "filename": "F549676.faa",
+          "sha256": "2d9283924f764d087ef124b2768f07007ef02c6dbe7484a890849a150ba9ef24",
+          "proteins": 1932,
+          "species_id": 426
+        },
+        {
+          "filename": "F5507.faa",
+          "sha256": "81f50c9c611008c643838d98696155c04ca279fe8089d415f049b596befa684a",
+          "proteins": 2775,
+          "species_id": 427
+        },
+        {
+          "filename": "F5518.faa",
+          "sha256": "0f47c48895061c7f9b5f8d3dfc29f4fc5992f745e10d0f33d805bc10ee2d9150",
+          "proteins": 2871,
+          "species_id": 428
+        },
+        {
+          "filename": "F5544.faa",
+          "sha256": "8e2ac1f87d6a304e5bcad5a4a1df0c37599bbfb9e003783f61eaccc403aa0a9b",
+          "proteins": 3209,
+          "species_id": 430
+        },
+        {
+          "filename": "F563466.faa",
+          "sha256": "714f76b70110f48f508524d79f76fc142d8f12c67de439bf7e42cc6d56bb2734",
+          "proteins": 792,
+          "species_id": 436
+        },
+        {
+          "filename": "F58853.faa",
+          "sha256": "83cffb55b0da63ec7bb4d0a6ff1c7d20613c761b6e15a048ce6242218fa8bf9b",
+          "proteins": 1245,
+          "species_id": 445
+        },
+        {
+          "filename": "F61273.faa",
+          "sha256": "a862d1cd48f5b2ddfd5a65f9019a5cfb37d5136bd626e69ce3a6c8a7677a76b3",
+          "proteins": 1116,
+          "species_id": 455
+        },
+        {
+          "filename": "F63577.faa",
+          "sha256": "a6ec2ee04160d95e733a032be25fd479a3e63ab3b5cd45360a6d0fc3b71070af",
+          "proteins": 2950,
+          "species_id": 459
+        },
+        {
+          "filename": "F65468.faa",
+          "sha256": "0a40148035db747752486b9bd2819810066106976bef718178393b5392ebd27c",
+          "proteins": 2311,
+          "species_id": 467
+        },
+        {
+          "filename": "F655981.faa",
+          "sha256": "2d13608bab695de1cd354a917d0db1e3cded5f61e185bb10acf507568b616652",
+          "proteins": 1999,
+          "species_id": 468
+        },
+        {
+          "filename": "F710243.faa",
+          "sha256": "18d541567e7dd51acb0e5f925da1704f0eabe0c900b38f49274620b47b659616",
+          "proteins": 1435,
+          "species_id": 479
+        },
+        {
+          "filename": "F72144.faa",
+          "sha256": "d1ee4585af7594ef7faf39347e068bf4937471c14bd6de65c787dad5cf6b5ebe",
+          "proteins": 678,
+          "species_id": 481
+        },
+        {
+          "filename": "F80884.faa",
+          "sha256": "7f6674f882ab32de8c0f0dace71491db21c5dd17e73de07a1b564eee64d01019",
+          "proteins": 3145,
+          "species_id": 491
+        }
+      ]
+    },
+    {
+      "clade_id": "C15bec0d646ef3db1",
+      "taxa": 20,
+      "proteins": 117230,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C15bec0d646ef3db1/proteomes",
+      "input_files": [
+        {
+          "filename": "F203908.faa",
+          "sha256": "8faac47b90d7cb7332f937698d4ce916b534b1a5a3bf07965efb1e3a3473d569",
+          "proteins": 1272,
+          "species_id": 16
+        },
+        {
+          "filename": "F5286.faa",
+          "sha256": "4bc8caf78c3e0c226865c0567b208c7f881ca6d81c1947c3661fd19fc9770d89",
+          "proteins": 304,
+          "species_id": 39
+        },
+        {
+          "filename": "F100910.faa",
+          "sha256": "73be2cf914c274b13b67c8c7fcca44df9816ea3b7808a6aa4f4e3a1d2f3f5638",
+          "proteins": 1478,
+          "species_id": 67
+        },
+        {
+          "filename": "F106004.faa",
+          "sha256": "d2ed5d87417f2da6d1998a1355fc3916c47b47236daf8003964856556fc1f450",
+          "proteins": 1969,
+          "species_id": 85
+        },
+        {
+          "filename": "F1323573.faa",
+          "sha256": "cfc8360cbd1a9ed5fa5f1c472de91c856b216478bc3b2546e6e6d621773fe8c6",
+          "proteins": 2751,
+          "species_id": 135
+        },
+        {
+          "filename": "F170000.faa",
+          "sha256": "965204c94ceaeb2baf2331332ccda462055e9a328083144bfc034c599e7fe125",
+          "proteins": 8294,
+          "species_id": 195
+        },
+        {
+          "filename": "F181123.faa",
+          "sha256": "7e45caae1dd12e890cb737985f5aa0f27f6938531436867c2c9f566d9de4d1f6",
+          "proteins": 63833,
+          "species_id": 214
+        },
+        {
+          "filename": "F183962.faa",
+          "sha256": "d68cca07d69738314c7e42cdc48b8695a297eb184a8a52537926b8101c3a8f95",
+          "proteins": 1102,
+          "species_id": 218
+        },
+        {
+          "filename": "F1938712.faa",
+          "sha256": "8f4cf29798af36a26b61e6215d9b6212fac1c3c372d74193b7cc99df1a8f4e1e",
+          "proteins": 7068,
+          "species_id": 230
+        },
+        {
+          "filename": "F208348.faa",
+          "sha256": "625bbc8a0e9aa1b4e7343327c98548a2ba1cb78ae8df66c6b5b9cb414c6df76d",
+          "proteins": 5285,
+          "species_id": 245
+        },
+        {
+          "filename": "F269621.faa",
+          "sha256": "388a14b1a6ca1126f1bd63e8d38263c3d46e4f866a5c7d7677f94ac95475b933",
+          "proteins": 1406,
+          "species_id": 280
+        },
+        {
+          "filename": "F288795.faa",
+          "sha256": "c6fc13605b79bc92ba7ed8a3ed39423d9f1d4cce98243229a2f8695f842b2487",
+          "proteins": 1198,
+          "species_id": 303
+        },
+        {
+          "filename": "F289078.faa",
+          "sha256": "6bc8b36ce12872d26ac9479b2329e6787b028d074f427ca0e012b74d2fb582fe",
+          "proteins": 3084,
+          "species_id": 304
+        },
+        {
+          "filename": "F29898.faa",
+          "sha256": "35ba333d1c2db9f3370d45bfc21e42d2f7a5524d74ffff00b404ca0b30028f16",
+          "proteins": 802,
+          "species_id": 318
+        },
+        {
+          "filename": "F3038894.faa",
+          "sha256": "215b32ac0201ba44ed22970270e109dd719e7809b9792939d9edb6b41d23f1b2",
+          "proteins": 2575,
+          "species_id": 321
+        },
+        {
+          "filename": "F418498.faa",
+          "sha256": "fcf1a8c9a85e216b89644667250f24767549384d3cbf4eaa673f221910942ac0",
+          "proteins": 2699,
+          "species_id": 362
+        },
+        {
+          "filename": "F45228.faa",
+          "sha256": "d6b07034c89e13c00c3e47d2cfeb280257bc07b361314158ad355f6ef895b80a",
+          "proteins": 1839,
+          "species_id": 370
+        },
+        {
+          "filename": "F500713.faa",
+          "sha256": "305a50cd2149d904713d599591c0418ee7e26abc54b557d57ffe11e064229c34",
+          "proteins": 549,
+          "species_id": 398
+        },
+        {
+          "filename": "F60197.faa",
+          "sha256": "5c541ca80ec8c7848535df72afbea0c4fbbd098722456df4f856c981bf244304",
+          "proteins": 5037,
+          "species_id": 450
+        },
+        {
+          "filename": "F796604.faa",
+          "sha256": "66db5b014c109c77d7de5bb82fddda4393b392285e5fa2b49d8d9bce1879b0f5",
+          "proteins": 4685,
+          "species_id": 489
+        }
+      ]
+    },
+    {
+      "clade_id": "Cacd69e2efe5d55b4",
+      "taxa": 44,
+      "proteins": 93247,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cacd69e2efe5d55b4/proteomes",
+      "input_files": [
+        {
+          "filename": "F3384825.faa",
+          "sha256": "90f7e692a2b192b88a32f4b6aef817bbdfe6f9c07f49f877667f33ca4d6b17ce",
+          "proteins": 742,
+          "species_id": 27
+        },
+        {
+          "filename": "F741139.faa",
+          "sha256": "fd0db2e3762b726bc5e22d79e7a3d5aff72122ca5e1157ddd6b56ecd759b5c42",
+          "proteins": 1502,
+          "species_id": 48
+        },
+        {
+          "filename": "F1048519.faa",
+          "sha256": "8833bd6592c7cd8274db653da87b0d14b06dce83dc35fc129f332378927758d5",
+          "proteins": 2120,
+          "species_id": 80
+        },
+        {
+          "filename": "F1048955.faa",
+          "sha256": "7f7685df744c23dc7788ecbc07f3c21b9c38099d903c74a6695b5ede99d8e869",
+          "proteins": 3595,
+          "species_id": 82
+        },
+        {
+          "filename": "F1052096.faa",
+          "sha256": "8b7c2a3fc1116ab31330bd745cf81dad34b9fdff2bc51988673e7db9a6506e76",
+          "proteins": 879,
+          "species_id": 83
+        },
+        {
+          "filename": "F1176130.faa",
+          "sha256": "5c76056d0eceedf289949e1feb7179e93d8686aff62458b0ff6f83c4b7cb3a30",
+          "proteins": 3213,
+          "species_id": 116
+        },
+        {
+          "filename": "F121624.faa",
+          "sha256": "87e91a705d3107a9c7516682dc881a27fc1ad98e34215457658a1f3cf2fba87b",
+          "proteins": 3953,
+          "species_id": 123
+        },
+        {
+          "filename": "F122368.faa",
+          "sha256": "996ddb54657a211f0343956a73925a717ffec0ab99a7fe8c97bcaab68c7b7329",
+          "proteins": 2949,
+          "species_id": 125
+        },
+        {
+          "filename": "F1341166.faa",
+          "sha256": "753c2188a7fe715c5e7f59fb5df799b213fd8a54df522be7f42643f894928fa6",
+          "proteins": 1757,
+          "species_id": 142
+        },
+        {
+          "filename": "F147570.faa",
+          "sha256": "713fc57ee0f3844438ba47e3c2abc54a2d2a778d91e0932feda06b80db1ac61c",
+          "proteins": 2234,
+          "species_id": 164
+        },
+        {
+          "filename": "F147573.faa",
+          "sha256": "758b35beba5fe75cc92284caa45b8edb7084c73ca14e9d078e10b097f8b8dcee",
+          "proteins": 1766,
+          "species_id": 165
+        },
+        {
+          "filename": "F1504668.faa",
+          "sha256": "d7de1614ef59b6a20a86477d7d3ceff910ba1563bafc1e7e34308d2339979888",
+          "proteins": 1853,
+          "species_id": 169
+        },
+        {
+          "filename": "F1507870.faa",
+          "sha256": "5087a28f670af47758680e57ffbee88418bbab916039d5a289ddf7a70fae68ec",
+          "proteins": 3124,
+          "species_id": 171
+        },
+        {
+          "filename": "F1507873.faa",
+          "sha256": "6347d49955e219589d38be1a8a607ba154066297c860bde3f4f5e644fdc9f6b8",
+          "proteins": 1374,
+          "species_id": 172
+        },
+        {
+          "filename": "F1542792.faa",
+          "sha256": "f814ff7924853c6bd6ebcb50e8598612f95974ae92f07d0fd98c03c46b4ba9dd",
+          "proteins": 1466,
+          "species_id": 178
+        },
+        {
+          "filename": "F1690608.faa",
+          "sha256": "b757ccf4fa56cafed4f8060fec12b3a87a29502bc6762e072d2a907c104ca7ff",
+          "proteins": 1993,
+          "species_id": 193
+        },
+        {
+          "filename": "F2024903.faa",
+          "sha256": "97b9b0983404feda8e38a22af5ff778c1a9e10c1784c290a861e796d651f70ba",
+          "proteins": 1707,
+          "species_id": 238
+        },
+        {
+          "filename": "F2082308.faa",
+          "sha256": "4ddbbc046be022ebf4bae56bf5fca6530979317b85716c706e8c15219b5ad55b",
+          "proteins": 897,
+          "species_id": 244
+        },
+        {
+          "filename": "F236234.faa",
+          "sha256": "6147aef6be4bdf6c8e0f96b12357c05f1df826dec6d7159a9e6d6c2e30fe07a7",
+          "proteins": 1412,
+          "species_id": 260
+        },
+        {
+          "filename": "F253628.faa",
+          "sha256": "f4714517164822588ac24b82061f476f71f3f40b50e56508365a8aa7b8743672",
+          "proteins": 1338,
+          "species_id": 264
+        },
+        {
+          "filename": "F2601811.faa",
+          "sha256": "2dd6cd7bfce55877b2e59b0e5b60d7f10b8df9c8c469e90dbcf3119a63ad26d5",
+          "proteins": 1508,
+          "species_id": 271
+        },
+        {
+          "filename": "F2781224.faa",
+          "sha256": "5a8ff14e31e88392206745c556264fd9193f38e13da5a3b37a2e02ec7f86a39d",
+          "proteins": 410,
+          "species_id": 293
+        },
+        {
+          "filename": "F2939400.faa",
+          "sha256": "a74287e187ed0bc6e52f22f57ef1f00c7ffc2ac880377a1e1d95b1d133be5508",
+          "proteins": 1047,
+          "species_id": 309
+        },
+        {
+          "filename": "F2939406.faa",
+          "sha256": "930d93ca28780a7a56960ac7d210b969b4d00c14c1a4a1a9d55d230a2ba6b0d5",
+          "proteins": 1587,
+          "species_id": 313
+        },
+        {
+          "filename": "F364730.faa",
+          "sha256": "5a861ecc2518b1f1779269315edf6f8bed7ff42fe6352a7d3725e3fee1fe626c",
+          "proteins": 1020,
+          "species_id": 344
+        },
+        {
+          "filename": "F390894.faa",
+          "sha256": "18d0531ec1b658f04fb85f313371b26b99f201f9d9201dbf956993ec522bdc45",
+          "proteins": 3590,
+          "species_id": 352
+        },
+        {
+          "filename": "F462254.faa",
+          "sha256": "915c894570c0dc2d4cf174626ef691d2f5a5556ac59f874a40e4819fd6a53a29",
+          "proteins": 3381,
+          "species_id": 374
+        },
+        {
+          "filename": "F470096.faa",
+          "sha256": "2d1f1bc618ae5978157d98d7f55bfc363928727901edb0f11f4d3c7340b52ebb",
+          "proteins": 2397,
+          "species_id": 376
+        },
+        {
+          "filename": "F48095.faa",
+          "sha256": "e01cbf6a5eb032f56270d019be67a608264ad18a59293e3fc1bc03ea20507d54",
+          "proteins": 1136,
+          "species_id": 381
+        },
+        {
+          "filename": "F5022.faa",
+          "sha256": "f23f2ac0e00f67550448f62f7e3a6f06dda45ae4e250c1a2f19ff7724bf4f0b2",
+          "proteins": 3411,
+          "species_id": 400
+        },
+        {
+          "filename": "F50376.faa",
+          "sha256": "dd136c2e1bca91c28508e57e7f735b10a06db2c5ec9508b104782876844e2bf4",
+          "proteins": 2189,
+          "species_id": 401
+        },
+        {
+          "filename": "F5454.faa",
+          "sha256": "3577f45fd18d980a538ce07ae77d7afbced5a12cdfd8175710327a18dadaf6fe",
+          "proteins": 2076,
+          "species_id": 421
+        },
+        {
+          "filename": "F5570.faa",
+          "sha256": "e18f1d29219269f5fd5f8444f1bebcb14a8e92023bdf0c89ad2c4defc178f979",
+          "proteins": 3312,
+          "species_id": 431
+        },
+        {
+          "filename": "F5580.faa",
+          "sha256": "441cd9686ff4b09c3aa8aa84d43a2d73de79e2807bb11b196e5616e586733f95",
+          "proteins": 2655,
+          "species_id": 432
+        },
+        {
+          "filename": "F574656.faa",
+          "sha256": "b81ca47ac76c2be755eeb603a51d5333ff35a82439ef289e24082091f15e2cf8",
+          "proteins": 1904,
+          "species_id": 439
+        },
+        {
+          "filename": "F574774.faa",
+          "sha256": "458dcc5de23ea2237d099ac94b36f49e3f81f6a2f57c95ec229e31a7bbb176c7",
+          "proteins": 2600,
+          "species_id": 441
+        },
+        {
+          "filename": "F574789.faa",
+          "sha256": "5bb3fb29639abca8f27e77b1a5a6973d05f987a3eed6c492860d3c3a7e854337",
+          "proteins": 4396,
+          "species_id": 442
+        },
+        {
+          "filename": "F578093.faa",
+          "sha256": "84a1dc8b7398e4b0fd5f4f21c8ca00ab27f111a9b261d742db574dd6ef306a5a",
+          "proteins": 2611,
+          "species_id": 443
+        },
+        {
+          "filename": "F703497.faa",
+          "sha256": "1001aed4c7ab5749bd42134aa7f392d4a1e633fa7e680edcca8bd069c7bdc720",
+          "proteins": 3023,
+          "species_id": 472
+        },
+        {
+          "filename": "F703506.faa",
+          "sha256": "a1eb6faeb550f52291265e62d01fe64a688e351fcbf38c6ac2fbdc0d1d9e4441",
+          "proteins": 1670,
+          "species_id": 473
+        },
+        {
+          "filename": "F703511.faa",
+          "sha256": "8c8ac4902ef2b975e20095aebf0fb5a0eea15741586611b3868d8ef5444f93eb",
+          "proteins": 2823,
+          "species_id": 474
+        },
+        {
+          "filename": "F705562.faa",
+          "sha256": "aa2acbbb0c5ad132414217d8686c82958f75b803fd63624d5fa23477f00ab461",
+          "proteins": 2176,
+          "species_id": 476
+        },
+        {
+          "filename": "F91480.faa",
+          "sha256": "2be4d825ad277db0f31c5a5fe3f9e69398e1393f96a83198104d0567bb45784f",
+          "proteins": 1321,
+          "species_id": 500
+        },
+        {
+          "filename": "F92988.faa",
+          "sha256": "167a5e4bc42ac4792292fb6fcc9aebfc86c82019c8e39152671a05305d29da10",
+          "proteins": 1130,
+          "species_id": 502
+        }
+      ]
+    },
+    {
+      "clade_id": "C0745b21a8f17b4c5",
+      "taxa": 5,
+      "proteins": 83721,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C0745b21a8f17b4c5/proteomes",
+      "input_files": [
+        {
+          "filename": "F203908.faa",
+          "sha256": "8faac47b90d7cb7332f937698d4ce916b534b1a5a3bf07965efb1e3a3473d569",
+          "proteins": 1272,
+          "species_id": 16
+        },
+        {
+          "filename": "F170000.faa",
+          "sha256": "965204c94ceaeb2baf2331332ccda462055e9a328083144bfc034c599e7fe125",
+          "proteins": 8294,
+          "species_id": 195
+        },
+        {
+          "filename": "F181123.faa",
+          "sha256": "7e45caae1dd12e890cb737985f5aa0f27f6938531436867c2c9f566d9de4d1f6",
+          "proteins": 63833,
+          "species_id": 214
+        },
+        {
+          "filename": "F208348.faa",
+          "sha256": "625bbc8a0e9aa1b4e7343327c98548a2ba1cb78ae8df66c6b5b9cb414c6df76d",
+          "proteins": 5285,
+          "species_id": 245
+        },
+        {
+          "filename": "F60197.faa",
+          "sha256": "5c541ca80ec8c7848535df72afbea0c4fbbd098722456df4f856c981bf244304",
+          "proteins": 5037,
+          "species_id": 450
+        }
+      ]
+    },
+    {
+      "clade_id": "C536aec780be81ee8",
+      "taxa": 9,
+      "proteins": 74812,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C536aec780be81ee8/proteomes",
+      "input_files": [
+        {
+          "filename": "O10228.faa",
+          "sha256": "56c05c583a3dfbc31ecb12f3c5cd76bbf561fd6470e2dc83eebd0100180309f9",
+          "proteins": 888,
+          "species_id": 54
+        },
+        {
+          "filename": "O225164.faa",
+          "sha256": "38d941b0f37233ff1da880819a1f12c66180601ff9a5da84ba13104cf88c9f95",
+          "proteins": 11191,
+          "species_id": 512
+        },
+        {
+          "filename": "O2700040.faa",
+          "sha256": "a6d9f95025a241d7b9b4bfb9e65e93e16597d3e2c3113f4cd47c64cb2ee9cd59",
+          "proteins": 7408,
+          "species_id": 513
+        },
+        {
+          "filename": "O27923.faa",
+          "sha256": "3b35747d609ccfa7f0ac94ea5b53f05b1db33e57f654691fdcc951a6e9a4dbdf",
+          "proteins": 9422,
+          "species_id": 514
+        },
+        {
+          "filename": "O283909.faa",
+          "sha256": "e6899b3f2e81de90760d26ff5698ff71df822533ace6676ae670a6031b467707",
+          "proteins": 15580,
+          "species_id": 515
+        },
+        {
+          "filename": "O400682.faa",
+          "sha256": "f1b26f428e8f7b1d49c521f0245bf2b7e198c2b507faeb331acd1948db64a6dc",
+          "proteins": 7366,
+          "species_id": 516
+        },
+        {
+          "filename": "O45351.faa",
+          "sha256": "4c500dea87a280600a5b2d611718b0a36d8cabc457cc6c7004679d748604484e",
+          "proteins": 5425,
+          "species_id": 518
+        },
+        {
+          "filename": "O6239.faa",
+          "sha256": "257f3035c3a8cd6960013857f768d4423e66a07a7ffed32acdaa316369bf9507",
+          "proteins": 11824,
+          "species_id": 521
+        },
+        {
+          "filename": "O7227.faa",
+          "sha256": "c7859ad8fd0d4a6e0a6c973d8fb0acec417a15946d66fbcd3b2528c21394e067",
+          "proteins": 5708,
+          "species_id": 523
+        }
+      ]
+    },
+    {
+      "clade_id": "Ca9f1d344bcf7a8b6",
+      "taxa": 12,
+      "proteins": 70078,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ca9f1d344bcf7a8b6/proteomes",
+      "input_files": [
+        {
+          "filename": "F658196.faa",
+          "sha256": "63bcd7cabeb5dfaf41c1bc73740859abe4f9f2eb07d751de5280ec7c1cea9a74",
+          "proteins": 956,
+          "species_id": 45
+        },
+        {
+          "filename": "F1117311.faa",
+          "sha256": "d7bae7b1e053cd5a9d54de68898663282bb854760bbe1ae2ec9a537f8073480f",
+          "proteins": 6120,
+          "species_id": 99
+        },
+        {
+          "filename": "F1348612.faa",
+          "sha256": "ada98a0dd743d9e915fef508ffe333acc9b9169a694731c8231596d62c009ba9",
+          "proteins": 7980,
+          "species_id": 144
+        },
+        {
+          "filename": "F144530.faa",
+          "sha256": "e1c5c0b48567f3e46b0219aee5315e64ea8b79f7a7afe30608726fc687b70341",
+          "proteins": 4658,
+          "species_id": 156
+        },
+        {
+          "filename": "F144538.faa",
+          "sha256": "cad279d80328719858ef8ac1ac70edbbdec5f1e471f44df241fa32f6e557f0e8",
+          "proteins": 3268,
+          "species_id": 157
+        },
+        {
+          "filename": "F144539.faa",
+          "sha256": "920e749eb6fe79540d86b3dd0bb0483edce2ee0b3bd142b65eeedb7b0090b73b",
+          "proteins": 3204,
+          "species_id": 158
+        },
+        {
+          "filename": "F144679.faa",
+          "sha256": "53dd2be63fe303d3cfa65779164690521770d50b774142a2d73907290c2ed2c9",
+          "proteins": 5161,
+          "species_id": 159
+        },
+        {
+          "filename": "F2562287.faa",
+          "sha256": "cccb6a3bab0787a7e5085acaa5bcc2031354456dd8a02f9b4a37080fc2680f46",
+          "proteins": 4040,
+          "species_id": 266
+        },
+        {
+          "filename": "F27376.faa",
+          "sha256": "ef4c336a5ba56fa117cb487738407ee993456ff5a3dd8922234dc24b06631702",
+          "proteins": 5826,
+          "species_id": 288
+        },
+        {
+          "filename": "F4874.faa",
+          "sha256": "2b654bc325f66c13e5703eb0b5c8c0acdd0870fddddb4ad1cbf9f62b8440f67b",
+          "proteins": 9270,
+          "species_id": 391
+        },
+        {
+          "filename": "F50956.faa",
+          "sha256": "bdbf33dc0330835ef66e948274a0755775491bfd6d3cccd998078f11a3e7274c",
+          "proteins": 12363,
+          "species_id": 404
+        },
+        {
+          "filename": "F588596.faa",
+          "sha256": "acbd9d1b4ace0469bf55ee6830c95dc97678fcbb18c949c286d9d6bb9f6eb997",
+          "proteins": 7232,
+          "species_id": 446
+        }
+      ]
+    },
+    {
+      "clade_id": "Cb475aea6bc3ba3db",
+      "taxa": 34,
+      "proteins": 46901,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cb475aea6bc3ba3db/proteomes",
+      "input_files": [
+        {
+          "filename": "F560253.faa",
+          "sha256": "556835f06b28b367de43008115fc4f08e6ac9b5e6498ad7d1782f401a22d6523",
+          "proteins": 998,
+          "species_id": 40
+        },
+        {
+          "filename": "F1006475.faa",
+          "sha256": "fb5a622468619eade7885da7c880ad5c1dabae66ece89301dcd255f78e75696a",
+          "proteins": 1502,
+          "species_id": 66
+        },
+        {
+          "filename": "F1042397.faa",
+          "sha256": "2251138eb6c90ff7a4085a00bd00930d959436df62da4fe9ec5a05060de59b7a",
+          "proteins": 692,
+          "species_id": 75
+        },
+        {
+          "filename": "F1145299.faa",
+          "sha256": "1f09f8e6d7a58ab809da698426142f935e56c839e0572ac9b774dfd755a4f8be",
+          "proteins": 1026,
+          "species_id": 108
+        },
+        {
+          "filename": "F1145321.faa",
+          "sha256": "53687439f76c31c457f0e82516319542c370d438b483f7f5de3e86a5e6ee8762",
+          "proteins": 1062,
+          "species_id": 109
+        },
+        {
+          "filename": "F116794.faa",
+          "sha256": "649b974abb9ebccc0a0d70ddc84798f8d4b9e1ba6c1cf0d111f90b5ddf545059",
+          "proteins": 1716,
+          "species_id": 111
+        },
+        {
+          "filename": "F116821.faa",
+          "sha256": "de80d7cb4e1b44d8eca57156e0e807b2b57a336c85bb1ba31845e2a077494c2d",
+          "proteins": 1832,
+          "species_id": 112
+        },
+        {
+          "filename": "F116982.faa",
+          "sha256": "e35aeab61d765ac7673639fbfe9ec768199e68dc51b829bc981913fac0a4fea3",
+          "proteins": 1613,
+          "species_id": 113
+        },
+        {
+          "filename": "F129515.faa",
+          "sha256": "b7701752ea2669e1752080fddf8be27180ae774eeee3d1b8b6a5ea038835cd6e",
+          "proteins": 1422,
+          "species_id": 132
+        },
+        {
+          "filename": "F136370.faa",
+          "sha256": "2e34ac457eec286f12022e68ee89b2d84be0b82fb1dc35f18aa2aa8ffa27517d",
+          "proteins": 1750,
+          "species_id": 148
+        },
+        {
+          "filename": "F1397036.faa",
+          "sha256": "8ce20dcd103c6e951ed92dafaeceeda5795ea1555ea86bf7fdb93ad5c6b0d6e5",
+          "proteins": 1248,
+          "species_id": 151
+        },
+        {
+          "filename": "F1453789.faa",
+          "sha256": "843e721ddc8c99f469cf8eeb5e711f64bc0c9c3fd6e01758d35b3c302f0874ef",
+          "proteins": 1070,
+          "species_id": 160
+        },
+        {
+          "filename": "F1453791.faa",
+          "sha256": "6c99377a4df2f7610ec07981898813e4772a8b040b97e120edf53b0d73db7581",
+          "proteins": 781,
+          "species_id": 161
+        },
+        {
+          "filename": "F1590129.faa",
+          "sha256": "eb24ff994db71b209e5711c171ba6bd8cb638313b81860165481c273f625f65d",
+          "proteins": 1276,
+          "species_id": 183
+        },
+        {
+          "filename": "F169141.faa",
+          "sha256": "f837da62acd1c918ce4638252a3734eaed88575d540a3dcbc5b3135d6bcb29ee",
+          "proteins": 2153,
+          "species_id": 194
+        },
+        {
+          "filename": "F1940652.faa",
+          "sha256": "372dfdb9ec4563d99a2cd26b641122c381e344232f09462b9d0d4fd4993dca7f",
+          "proteins": 1201,
+          "species_id": 232
+        },
+        {
+          "filename": "F209136.faa",
+          "sha256": "288656f0d6b4841d3918545fe3b34d722ec4c73b2e2fb542b68f55056935778c",
+          "proteins": 1714,
+          "species_id": 247
+        },
+        {
+          "filename": "F209281.faa",
+          "sha256": "c11864dc62b26188aa3a2ec0410b4a9107910e105d4503d857ab48a2c1f04ccc",
+          "proteins": 2064,
+          "species_id": 248
+        },
+        {
+          "filename": "F223409.faa",
+          "sha256": "df63cdc7d0eb5d30ea798b178e8635b22b3b8a00a9e0a6a842bfa3ab1e904c9a",
+          "proteins": 829,
+          "species_id": 252
+        },
+        {
+          "filename": "F2704026.faa",
+          "sha256": "af78299b26fc3ee932c28adf9991b6b9e7c2d02ac18ac636ee03493923c58276",
+          "proteins": 1694,
+          "species_id": 281
+        },
+        {
+          "filename": "F2732470.faa",
+          "sha256": "3feb4b0f060d64beefe4beea98738e3b7bfe847d1bc2dc6b6a186ada80c35e09",
+          "proteins": 1866,
+          "species_id": 285
+        },
+        {
+          "filename": "F2871812.faa",
+          "sha256": "eb0d93611b22cac56ad9858b9a692df4968d28f35afd5b472493d69b6c3d8bef",
+          "proteins": 844,
+          "species_id": 301
+        },
+        {
+          "filename": "F2918522.faa",
+          "sha256": "0120f41a93df7785078dbbd6f1befe8e0d81e8dba690078823bcc9e7a63ae3ac",
+          "proteins": 731,
+          "species_id": 306
+        },
+        {
+          "filename": "F3058885.faa",
+          "sha256": "65033a351092436fa0e24ed09f87127fc05d8da9d8931fdbdf8d33f237ad0670",
+          "proteins": 1265,
+          "species_id": 324
+        },
+        {
+          "filename": "F318760.faa",
+          "sha256": "81ffa70cb87aeec64335d927ca0f2554584f8cd00a4723ed887fe6061389c230",
+          "proteins": 1010,
+          "species_id": 329
+        },
+        {
+          "filename": "F318763.faa",
+          "sha256": "6af13588459adadaf3d9a6933e99d00137ecb7259905e5100354ee07226268a0",
+          "proteins": 1543,
+          "species_id": 330
+        },
+        {
+          "filename": "F400354.faa",
+          "sha256": "03f17373dfca2b13845cb02ea3ec4c68b0c8e001f7bcb224c8df7e4f4725a728",
+          "proteins": 883,
+          "species_id": 356
+        },
+        {
+          "filename": "F443868.faa",
+          "sha256": "eb884e641e9541958c0ea13f691358ce86dd3d0a1ef1428534ffd2e17478d5b1",
+          "proteins": 1003,
+          "species_id": 369
+        },
+        {
+          "filename": "F460848.faa",
+          "sha256": "e2cb2c070690ae885f7ed4b2e6d01917808fc0bf44b75b92e115df7bbdc27667",
+          "proteins": 1237,
+          "species_id": 372
+        },
+        {
+          "filename": "F460854.faa",
+          "sha256": "cba12094573c2131c8de2012cda09a665f8fe206ac5334e3911ec6ae5ab51e0c",
+          "proteins": 1349,
+          "species_id": 373
+        },
+        {
+          "filename": "F52883.faa",
+          "sha256": "675b710a15728015fb86b40faf0a031730742222ae3b6fffa9e20e6b340611b9",
+          "proteins": 1933,
+          "species_id": 416
+        },
+        {
+          "filename": "F669869.faa",
+          "sha256": "80acc665f548e67b047e65b8b1350a78fdacd5a9d09d50505854b403d6122494",
+          "proteins": 2582,
+          "species_id": 470
+        },
+        {
+          "filename": "F87287.faa",
+          "sha256": "c620598a34b843703403f8f8c4ad4b45b51ca42ddd4c8fbe89f65a0c57779ead",
+          "proteins": 754,
+          "species_id": 495
+        },
+        {
+          "filename": "F90408.faa",
+          "sha256": "aa087ca081ac5fec906c3dfa209e61dca7672a269bcfcd2b04c9cfd086f21af2",
+          "proteins": 2258,
+          "species_id": 499
+        }
+      ]
+    },
+    {
+      "clade_id": "Ce8dba5afcbfdebe3",
+      "taxa": 5,
+      "proteins": 40248,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ce8dba5afcbfdebe3/proteomes",
+      "input_files": [
+        {
+          "filename": "OFS1403592.faa",
+          "sha256": "6690e6e98c38d2bbd837cfaf15399db0013ed6e91e8e93f427d3f4e56ac36301",
+          "proteins": 509,
+          "species_id": 61
+        },
+        {
+          "filename": "OFS5426494.faa",
+          "sha256": "15223c01fabfc6acae0e208bb7e95977bbf66ab62d6eaadb68de71c7a2eb09f1",
+          "proteins": 2049,
+          "species_id": 63
+        },
+        {
+          "filename": "O72019.faa",
+          "sha256": "0b122951e5acf1c4a586faebeec2b4c1d0a0c260f51b0f03fa0706bf2b078656",
+          "proteins": 7995,
+          "species_id": 522
+        },
+        {
+          "filename": "OFS5426458.faa",
+          "sha256": "0d8bef18117ac07b2937b77f4910561b4989f50ad17c623f3c5a5c17f73606b9",
+          "proteins": 13057,
+          "species_id": 524
+        },
+        {
+          "filename": "OFS5426506.faa",
+          "sha256": "e782a9faf0d26fefca57c687eab78bb3276681840f9d6d222278de9c6de7ea26",
+          "proteins": 16638,
+          "species_id": 525
+        }
+      ]
+    },
+    {
+      "clade_id": "Cf03905b5913e9c76",
+      "taxa": 15,
+      "proteins": 33509,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cf03905b5913e9c76/proteomes",
+      "input_files": [
+        {
+          "filename": "F5286.faa",
+          "sha256": "4bc8caf78c3e0c226865c0567b208c7f881ca6d81c1947c3661fd19fc9770d89",
+          "proteins": 304,
+          "species_id": 39
+        },
+        {
+          "filename": "F100910.faa",
+          "sha256": "73be2cf914c274b13b67c8c7fcca44df9816ea3b7808a6aa4f4e3a1d2f3f5638",
+          "proteins": 1478,
+          "species_id": 67
+        },
+        {
+          "filename": "F106004.faa",
+          "sha256": "d2ed5d87417f2da6d1998a1355fc3916c47b47236daf8003964856556fc1f450",
+          "proteins": 1969,
+          "species_id": 85
+        },
+        {
+          "filename": "F1323573.faa",
+          "sha256": "cfc8360cbd1a9ed5fa5f1c472de91c856b216478bc3b2546e6e6d621773fe8c6",
+          "proteins": 2751,
+          "species_id": 135
+        },
+        {
+          "filename": "F183962.faa",
+          "sha256": "d68cca07d69738314c7e42cdc48b8695a297eb184a8a52537926b8101c3a8f95",
+          "proteins": 1102,
+          "species_id": 218
+        },
+        {
+          "filename": "F1938712.faa",
+          "sha256": "8f4cf29798af36a26b61e6215d9b6212fac1c3c372d74193b7cc99df1a8f4e1e",
+          "proteins": 7068,
+          "species_id": 230
+        },
+        {
+          "filename": "F269621.faa",
+          "sha256": "388a14b1a6ca1126f1bd63e8d38263c3d46e4f866a5c7d7677f94ac95475b933",
+          "proteins": 1406,
+          "species_id": 280
+        },
+        {
+          "filename": "F288795.faa",
+          "sha256": "c6fc13605b79bc92ba7ed8a3ed39423d9f1d4cce98243229a2f8695f842b2487",
+          "proteins": 1198,
+          "species_id": 303
+        },
+        {
+          "filename": "F289078.faa",
+          "sha256": "6bc8b36ce12872d26ac9479b2329e6787b028d074f427ca0e012b74d2fb582fe",
+          "proteins": 3084,
+          "species_id": 304
+        },
+        {
+          "filename": "F29898.faa",
+          "sha256": "35ba333d1c2db9f3370d45bfc21e42d2f7a5524d74ffff00b404ca0b30028f16",
+          "proteins": 802,
+          "species_id": 318
+        },
+        {
+          "filename": "F3038894.faa",
+          "sha256": "215b32ac0201ba44ed22970270e109dd719e7809b9792939d9edb6b41d23f1b2",
+          "proteins": 2575,
+          "species_id": 321
+        },
+        {
+          "filename": "F418498.faa",
+          "sha256": "fcf1a8c9a85e216b89644667250f24767549384d3cbf4eaa673f221910942ac0",
+          "proteins": 2699,
+          "species_id": 362
+        },
+        {
+          "filename": "F45228.faa",
+          "sha256": "d6b07034c89e13c00c3e47d2cfeb280257bc07b361314158ad355f6ef895b80a",
+          "proteins": 1839,
+          "species_id": 370
+        },
+        {
+          "filename": "F500713.faa",
+          "sha256": "305a50cd2149d904713d599591c0418ee7e26abc54b557d57ffe11e064229c34",
+          "proteins": 549,
+          "species_id": 398
+        },
+        {
+          "filename": "F796604.faa",
+          "sha256": "66db5b014c109c77d7de5bb82fddda4393b392285e5fa2b49d8d9bce1879b0f5",
+          "proteins": 4685,
+          "species_id": 489
+        }
+      ]
+    },
+    {
+      "clade_id": "Cfa0dc242df7c99b6",
+      "taxa": 17,
+      "proteins": 32335,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cfa0dc242df7c99b6/proteomes",
+      "input_files": [
+        {
+          "filename": "F63378.faa",
+          "sha256": "79a459ea42c2ce96c2b3deffeebb8910b8f6f79fba4b4baab6cdaff780bee4c7",
+          "proteins": 421,
+          "species_id": 43
+        },
+        {
+          "filename": "F1031713.faa",
+          "sha256": "25120743301b66e0b86f7d5e2033c611c4ac1c4013edeec8f48526678a31a7e5",
+          "proteins": 3537,
+          "species_id": 72
+        },
+        {
+          "filename": "F117179.faa",
+          "sha256": "b7e877574a18828c94c6750c69633a6d3fc73b43e9fa173b5a483dc731b54363",
+          "proteins": 1827,
+          "species_id": 114
+        },
+        {
+          "filename": "F1280837.faa",
+          "sha256": "10f9d8b4f3657d342c585dc603ea1978b6b9f9a7d82c0b458194aae0df7acff2",
+          "proteins": 1450,
+          "species_id": 130
+        },
+        {
+          "filename": "F13290.faa",
+          "sha256": "be3596befc58474648a7f46130754f82303400229ccfb56992ba0e321d1d4b05",
+          "proteins": 3128,
+          "species_id": 137
+        },
+        {
+          "filename": "F13291.faa",
+          "sha256": "3c11d1cf3d64e64b83e18742a0706eb050f0d7165a2f49620dff3f9210a892b5",
+          "proteins": 3070,
+          "species_id": 138
+        },
+        {
+          "filename": "F1463510.faa",
+          "sha256": "08bc445b458d1f9ff2eaf131889c7677092a67b9b0acbd592d90cff45cb86b74",
+          "proteins": 1126,
+          "species_id": 163
+        },
+        {
+          "filename": "F1522189.faa",
+          "sha256": "8e6a9c50bf261b8f1224631bc71fcf4838dd64f12c44d326853f03713a00ec75",
+          "proteins": 2148,
+          "species_id": 175
+        },
+        {
+          "filename": "F1569628.faa",
+          "sha256": "373f846216b80c7fc8fc310a00f893f7e66a3c3329e003b938f4dfe7fd691e1e",
+          "proteins": 1565,
+          "species_id": 180
+        },
+        {
+          "filename": "F157183.faa",
+          "sha256": "401e1921a588e0e91ac0b271afa4bffc88407ecc77782f89ec1cac4312e976dd",
+          "proteins": 3257,
+          "species_id": 181
+        },
+        {
+          "filename": "F1684307.faa",
+          "sha256": "5fcfa59082f549d68d2e070b9391809fb419a7dd7f3052b97303b3d02e72227a",
+          "proteins": 1330,
+          "species_id": 191
+        },
+        {
+          "filename": "F215250.faa",
+          "sha256": "c64d82af97d5a5c746aee9631051170fa439aad4997f843c030db95ac92c94ab",
+          "proteins": 1414,
+          "species_id": 249
+        },
+        {
+          "filename": "F2878321.faa",
+          "sha256": "c1e75cd4115b5b58e23dce7127e95b26e2e5d9c76399cf84cc02c44cd47fc701",
+          "proteins": 962,
+          "species_id": 302
+        },
+        {
+          "filename": "F401625.faa",
+          "sha256": "b1ddd51c01fffb7dbd151b4a66396453692fbf372bd157a5245b66ee377dd064",
+          "proteins": 2453,
+          "species_id": 357
+        },
+        {
+          "filename": "F5281.faa",
+          "sha256": "75bc4b6edc1ab8be45b7a193da5b35a38ef99150a1c05607f0f49aaecbcbed0a",
+          "proteins": 1468,
+          "species_id": 415
+        },
+        {
+          "filename": "F574677.faa",
+          "sha256": "c46f67a3c46f8008108dc8e2ce6025c36a9a084714ed38bcf79d88f3e73ce66a",
+          "proteins": 1553,
+          "species_id": 440
+        },
+        {
+          "filename": "F58919.faa",
+          "sha256": "5834dd156ee267d82701ac75b4887b4c9acd61b44c47720da0746085fb4c36b3",
+          "proteins": 1626,
+          "species_id": 447
+        }
+      ]
+    },
+    {
+      "clade_id": "C5dc8d76e4d416da9",
+      "taxa": 12,
+      "proteins": 32153,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C5dc8d76e4d416da9/proteomes",
+      "input_files": [
+        {
+          "filename": "F1555241.faa",
+          "sha256": "12b5da0755f02da872383c4e78ba946b74df69cace30fef81b63bab5cc82f7e4",
+          "proteins": 1035,
+          "species_id": 9
+        },
+        {
+          "filename": "F382532.faa",
+          "sha256": "9646fc8e72569c4265d6b582df0c7b73d21f32af36fc0f5e798a2ac54da64b6a",
+          "proteins": 1271,
+          "species_id": 30
+        },
+        {
+          "filename": "F109760.faa",
+          "sha256": "1bf73bb2344ed1a35330122e4075c3b93cceb8ad92d57f7802a42897480f2b9f",
+          "proteins": 1653,
+          "species_id": 92
+        },
+        {
+          "filename": "F109889.faa",
+          "sha256": "ae12e024c8b944cc3539b7967c89b33f5c992a8bc36a02e12c91ce39be222a33",
+          "proteins": 2422,
+          "species_id": 94
+        },
+        {
+          "filename": "F109932.faa",
+          "sha256": "0444e95a9977ef32e657d43041083216cee7d471132b66d5f580c5018bc4c6d2",
+          "proteins": 2471,
+          "species_id": 96
+        },
+        {
+          "filename": "F110093.faa",
+          "sha256": "74d07cc70929bdef22e9d30c1be33c4f1ae4f6abc036647a7cc013e25a283047",
+          "proteins": 2802,
+          "species_id": 97
+        },
+        {
+          "filename": "F1396493.faa",
+          "sha256": "a33a79f7fb8de5c5a3db9769eb0c4e81a37540431df438d63c822d496122a492",
+          "proteins": 2651,
+          "species_id": 150
+        },
+        {
+          "filename": "F1604274.faa",
+          "sha256": "d69ec18e18a59c1f0f7cd62de48f206fe402db98d015aab3a3551da866c955ad",
+          "proteins": 6368,
+          "species_id": 184
+        },
+        {
+          "filename": "F1774096.faa",
+          "sha256": "c1d64ef2b7195b7db4596b662e38159ce3dd9bd6216ffd04fb797c10a56e1938",
+          "proteins": 3251,
+          "species_id": 210
+        },
+        {
+          "filename": "F1806994.faa",
+          "sha256": "70272416dec5c44f428ac4cd771062c5f4ea9b1b088aa5162fdcc4cb921fc875",
+          "proteins": 368,
+          "species_id": 211
+        },
+        {
+          "filename": "F2735257.faa",
+          "sha256": "cb801cc78f447a9b8facd5cdf62243377510cb8a01b89e16d39d1e45e84e70e9",
+          "proteins": 3508,
+          "species_id": 287
+        },
+        {
+          "filename": "F64517.faa",
+          "sha256": "8eb7571372cffffdbb92f18ded3a7ce9348e353bac8b75df2c0684f6bb0bbea3",
+          "proteins": 4353,
+          "species_id": 462
+        }
+      ]
+    },
+    {
+      "clade_id": "C8f493e44633023f1",
+      "taxa": 21,
+      "proteins": 31267,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C8f493e44633023f1/proteomes",
+      "input_files": [
+        {
+          "filename": "F746128.faa",
+          "sha256": "70bcdf4279162fc02d0eddc0991aaa6bb23a22b70e9c37f4264f9113bd71b14e",
+          "proteins": 442,
+          "species_id": 49
+        },
+        {
+          "filename": "F1048829.faa",
+          "sha256": "bbfa260e20988a6135d489984f2a3ba7798166da72fea090226c0616d20b0d7f",
+          "proteins": 2084,
+          "species_id": 81
+        },
+        {
+          "filename": "F1069201.faa",
+          "sha256": "69cc8d12e54de14625ea816d9af5f9fe8addc10264466dcd941bc4a884b505fd",
+          "proteins": 1840,
+          "species_id": 86
+        },
+        {
+          "filename": "F1130053.faa",
+          "sha256": "13f89b3830a993ffdbcdac99134acd2048700fa6b2f56220f450d408832b9f8e",
+          "proteins": 1132,
+          "species_id": 103
+        },
+        {
+          "filename": "F1220207.faa",
+          "sha256": "f2ec1c23722e4372be85d824809cbde9672cb83e046543dec01c2144455d6939",
+          "proteins": 1560,
+          "species_id": 124
+        },
+        {
+          "filename": "F158046.faa",
+          "sha256": "41d24477d178081fd967003042e79567442c382b40c76e31ee16c12b66f8d183",
+          "proteins": 542,
+          "species_id": 182
+        },
+        {
+          "filename": "F162425.faa",
+          "sha256": "44a94cca7897381b7d57bd1f36a701cc83bfc97fc02d83c8aa6348dd470bf079",
+          "proteins": 1259,
+          "species_id": 185
+        },
+        {
+          "filename": "F1690604.faa",
+          "sha256": "3d519419c45d5d4f8ce8e8b289c2620aab974ee437fb766b63f4006c38950bd7",
+          "proteins": 1362,
+          "species_id": 192
+        },
+        {
+          "filename": "F1810926.faa",
+          "sha256": "a11307b1da7a9cf966bdf2cb949724d307b775bac6eac41fe71870f26c9b5a12",
+          "proteins": 1902,
+          "species_id": 212
+        },
+        {
+          "filename": "F1810928.faa",
+          "sha256": "8b16573724c0d8ba824ac9ef23c36a2e847171ead5a9bd7007482ae56e20d57d",
+          "proteins": 1896,
+          "species_id": 213
+        },
+        {
+          "filename": "F182096.faa",
+          "sha256": "83c10ea6faa579f4d73a0e20a3bd970e60ec05c0f5f42426977343318f5e37bd",
+          "proteins": 1292,
+          "species_id": 216
+        },
+        {
+          "filename": "F199306.faa",
+          "sha256": "fefc45f0fc261ca679debf4532e97b03353dde9f602210d694c07141541cdac8",
+          "proteins": 1106,
+          "species_id": 234
+        },
+        {
+          "filename": "F2486360.faa",
+          "sha256": "b931fc9e5fca3b4eb78172b5e3d7cd7919599e7212697e9b69e1916d093e6445",
+          "proteins": 1429,
+          "species_id": 263
+        },
+        {
+          "filename": "F293227.faa",
+          "sha256": "e7f4663bc30de712b864359937a88eeb26b690328e0d9de8e87bd1d43118fbbe",
+          "proteins": 1525,
+          "species_id": 307
+        },
+        {
+          "filename": "F2977754.faa",
+          "sha256": "94a46139731d54484b11d12d2b45c71e7b6b851139816c2739689f3f6d60e1e1",
+          "proteins": 1588,
+          "species_id": 315
+        },
+        {
+          "filename": "F3060298.faa",
+          "sha256": "9d7afc3c0c3350226c62f2c45db7328b70e7212ad401f52bee55f72ba30fe25f",
+          "proteins": 1560,
+          "species_id": 325
+        },
+        {
+          "filename": "F364733.faa",
+          "sha256": "863053a6936e15808ae143c7bb8d81b55d46f0732938c6ac8baf4eceec731820",
+          "proteins": 1483,
+          "species_id": 345
+        },
+        {
+          "filename": "F41759.faa",
+          "sha256": "e9c1e30ef45a2557e3907e304121ab1145e18e14b87ac10dfbddd18315103e09",
+          "proteins": 2180,
+          "species_id": 360
+        },
+        {
+          "filename": "F5059.faa",
+          "sha256": "c305d8069108ca3f6cb4cb1b3b019b31ec4f4d154baa1cbc9b8c34c6010fffe1",
+          "proteins": 2048,
+          "species_id": 402
+        },
+        {
+          "filename": "F5062.faa",
+          "sha256": "70184f6d43d635e564e36fd337e7017987541d742ad1176ab43f9cf4cb424b73",
+          "proteins": 1519,
+          "species_id": 403
+        },
+        {
+          "filename": "F63402.faa",
+          "sha256": "75e2be8b184203fa19819392073d6156917791d3f2f0271f57323e21df4c66ad",
+          "proteins": 1518,
+          "species_id": 458
+        }
+      ]
+    },
+    {
+      "clade_id": "Cb10f68c647fc6663",
+      "taxa": 3,
+      "proteins": 30820,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cb10f68c647fc6663/proteomes",
+      "input_files": [
+        {
+          "filename": "OFS5426470.faa",
+          "sha256": "b2ea96be0e5a4faef5391a11b2ed160c75b98c67ed8cabcf7e8e0cd2adc42a11",
+          "proteins": 1125,
+          "species_id": 62
+        },
+        {
+          "filename": "OFS5426458.faa",
+          "sha256": "0d8bef18117ac07b2937b77f4910561b4989f50ad17c623f3c5a5c17f73606b9",
+          "proteins": 13057,
+          "species_id": 524
+        },
+        {
+          "filename": "OFS5426506.faa",
+          "sha256": "e782a9faf0d26fefca57c687eab78bb3276681840f9d6d222278de9c6de7ea26",
+          "proteins": 16638,
+          "species_id": 525
+        }
+      ]
+    },
+    {
+      "clade_id": "C97cb8e1c6791f665",
+      "taxa": 23,
+      "proteins": 30415,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C97cb8e1c6791f665/proteomes",
+      "input_files": [
+        {
+          "filename": "F40410.faa",
+          "sha256": "30143d0973315682164be6a910b471f9af981734d450fa370caf075d89e5f542",
+          "proteins": 44,
+          "species_id": 31
+        },
+        {
+          "filename": "F104408.faa",
+          "sha256": "45fba43bd951b40cdae4aaae2ed06fd3b4b404ff7e38fbef47438925855ddf8a",
+          "proteins": 1207,
+          "species_id": 78
+        },
+        {
+          "filename": "F104669.faa",
+          "sha256": "50d11a310c613f46ecf697e0003b1cb4c3f6f10ec1d3087406fe487844a2f697",
+          "proteins": 1474,
+          "species_id": 79
+        },
+        {
+          "filename": "F105984.faa",
+          "sha256": "6970fd3cdab6f46f70b4746cfc1664f13bb38305948c658feda345b7f26cb1ca",
+          "proteins": 2243,
+          "species_id": 84
+        },
+        {
+          "filename": "F1424756.faa",
+          "sha256": "46ee25a3483195c737aacb778ed0d0df1d407a61b502aaf5c6d0d7973a1b36d9",
+          "proteins": 1653,
+          "species_id": 153
+        },
+        {
+          "filename": "F143232.faa",
+          "sha256": "fd9899d13895e37e71265977b32f0ddb85034a577140196cb4114c9217754e4a",
+          "proteins": 2656,
+          "species_id": 154
+        },
+        {
+          "filename": "F1859096.faa",
+          "sha256": "189a38d102e6e9fada99202aa759f5b6db34acd0efe25fb2aee3a41cf90f2e1d",
+          "proteins": 324,
+          "species_id": 221
+        },
+        {
+          "filename": "F1859121.faa",
+          "sha256": "a939e6d5f3ed4fe5f7ec7a6d7d9ef1844087ce52856790990eecf6a59c0b6d9d",
+          "proteins": 539,
+          "species_id": 222
+        },
+        {
+          "filename": "F1859122.faa",
+          "sha256": "16343217f331323014fd18fa76969c61a283160e4032ca9569908fa9d09144b9",
+          "proteins": 542,
+          "species_id": 223
+        },
+        {
+          "filename": "F1890679.faa",
+          "sha256": "8bae121e19c180b90089cdc2161fe813692e90ca3bf0b072ef5ca70fdfbb2d50",
+          "proteins": 1055,
+          "species_id": 224
+        },
+        {
+          "filename": "F257869.faa",
+          "sha256": "ad18a894c3f6ff1ec5b5ed3b5136c03531ef944069b685e51fbb8815b4daf5b9",
+          "proteins": 1054,
+          "species_id": 267
+        },
+        {
+          "filename": "F264483.faa",
+          "sha256": "e7cc4b9154333e3b13c27fff72d1dc4d567be8ac7b60f31b6511180e1cfd6b43",
+          "proteins": 1089,
+          "species_id": 276
+        },
+        {
+          "filename": "F279322.faa",
+          "sha256": "0199cdee721ed1c6635985020db66aa090f7120bae419bb899559ab15bfb5bb5",
+          "proteins": 1505,
+          "species_id": 294
+        },
+        {
+          "filename": "F29902.faa",
+          "sha256": "95c49fbf7544a1b71a9522fbd54a26f346a7ec9d67bd59d5d01f072787eaef36",
+          "proteins": 2779,
+          "species_id": 319
+        },
+        {
+          "filename": "F37769.faa",
+          "sha256": "25c96f2bc988304f412e6ffc5620f1a9859cf7ada1076f481a7fab6020cc9f76",
+          "proteins": 549,
+          "species_id": 348
+        },
+        {
+          "filename": "F5207.faa",
+          "sha256": "6dfe64aefd362386061cc6b9915cf9053304c6b14dde358a17d08fe13294c5e3",
+          "proteins": 538,
+          "species_id": 411
+        },
+        {
+          "filename": "F5208.faa",
+          "sha256": "1f9c9c64cd0964bf6c77694339395fac525376b386333ef84ccf546065f9f004",
+          "proteins": 789,
+          "species_id": 412
+        },
+        {
+          "filename": "F5210.faa",
+          "sha256": "29ead57d4028f89a1e5492ed40169c2f958da080f788cf9cbca1e6300c331e78",
+          "proteins": 2254,
+          "species_id": 413
+        },
+        {
+          "filename": "F552467.faa",
+          "sha256": "ca4449efa35faa6c8bc6b15d5f1453314b065680f28b1968b65da5cb340daa66",
+          "proteins": 561,
+          "species_id": 429
+        },
+        {
+          "filename": "F5619.faa",
+          "sha256": "8cd3a3be688b4c3701ffff1b9de90fad40c5233731a68ff83579660d6e47f8d6",
+          "proteins": 1428,
+          "species_id": 434
+        },
+        {
+          "filename": "F610337.faa",
+          "sha256": "63902169c518ce56905ff74849fac005b8318bb0577cacddb8b74378a6e298b2",
+          "proteins": 1910,
+          "species_id": 454
+        },
+        {
+          "filename": "F82508.faa",
+          "sha256": "ee3975dfd218288de85693e0b1f375d798ed9d3edc48c5d55e0a9914b61d00e5",
+          "proteins": 2565,
+          "species_id": 492
+        },
+        {
+          "filename": "F89922.faa",
+          "sha256": "ddc5582b96c103e976b7bc7a64ea25ef2c5f758d4d2718102205080eb3e3f0e5",
+          "proteins": 1657,
+          "species_id": 498
+        }
+      ]
+    },
+    {
+      "clade_id": "Cd0908ffa6fc0fbd9",
+      "taxa": 31,
+      "proteins": 29532,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cd0908ffa6fc0fbd9/proteomes",
+      "input_files": [
+        {
+          "filename": "F2268995.faa",
+          "sha256": "c5174cf20d209ab99bea1fceeae18a7cd84665c812cb525cc598b6c6bd250aab",
+          "proteins": 446,
+          "species_id": 19
+        },
+        {
+          "filename": "F4932.faa",
+          "sha256": "961d9890e96b11c1a16783479a3ec3eb0525645ee1e8d8eb668daee948218f29",
+          "proteins": 230,
+          "species_id": 37
+        },
+        {
+          "filename": "F1005962.faa",
+          "sha256": "2360b5e40df7a569894189fbd5476665d65a72a5bff8bcb6f4aa0575a45b2e0c",
+          "proteins": 739,
+          "species_id": 65
+        },
+        {
+          "filename": "F1080349.faa",
+          "sha256": "8cdc411adfa6458e79bdfa943ac2bb2330a4bad258c6414c087ed889c119a136",
+          "proteins": 317,
+          "species_id": 87
+        },
+        {
+          "filename": "F114524.faa",
+          "sha256": "398679d6bc9af65f4473e28255a824119569c2575dce2361ce100b050c247487",
+          "proteins": 292,
+          "species_id": 106
+        },
+        {
+          "filename": "F114525.faa",
+          "sha256": "4ee3a96b9bc1e203c2dde1f2246aa5862dcb30afa0d034233fbee69ebabfbf2b",
+          "proteins": 302,
+          "species_id": 107
+        },
+        {
+          "filename": "F13502.faa",
+          "sha256": "faac96b8c8e7f9ecdfe9d50b4d214a21482a6120bfb35e8b6fdc18c434542291",
+          "proteins": 663,
+          "species_id": 145
+        },
+        {
+          "filename": "F230603.faa",
+          "sha256": "6e761441fade681fc2d8e250a75d2462adb2aa4758dec8022e771ea782fca0be",
+          "proteins": 295,
+          "species_id": 257
+        },
+        {
+          "filename": "F241526.faa",
+          "sha256": "30a9a9f2765f6791639c2564f037552477430ee15894e9edd50de491477d019d",
+          "proteins": 367,
+          "species_id": 261
+        },
+        {
+          "filename": "F2606893.faa",
+          "sha256": "9fe1a40f0a7754f1e4ee19beec6d3d857254277d2c982bc99a969bfa50e70b54",
+          "proteins": 1239,
+          "species_id": 272
+        },
+        {
+          "filename": "F27291.faa",
+          "sha256": "0d309e3130fa45af44476d49d35dc7d5ca332e70fcb8f362f16c711f66d50906",
+          "proteins": 273,
+          "species_id": 283
+        },
+        {
+          "filename": "F27292.faa",
+          "sha256": "2b814ffd6e97fbaa4fa62797cd266326b74cbb63a2e0f2ac1150e4e2ad84b0ac",
+          "proteins": 648,
+          "species_id": 284
+        },
+        {
+          "filename": "F29833.faa",
+          "sha256": "6e37c8196951da8da55472be5a86d97b44632fe53485fbdc4e5b1986b81d3bc3",
+          "proteins": 913,
+          "species_id": 316
+        },
+        {
+          "filename": "F332112.faa",
+          "sha256": "f321bfdfd05d64769a603e0b5726adc58b0fa40ed14229ad04e1914055f00300",
+          "proteins": 657,
+          "species_id": 334
+        },
+        {
+          "filename": "F36035.faa",
+          "sha256": "6a3d10e8ba6a5a92717f52254dc83a1452ff45ca562e00cdbb65bb34503b7ec1",
+          "proteins": 708,
+          "species_id": 342
+        },
+        {
+          "filename": "F42374.faa",
+          "sha256": "9609b8363cb53f359950bfcee610f6c1c24cff6151a323905db5b76eee76ba43",
+          "proteins": 1095,
+          "species_id": 366
+        },
+        {
+          "filename": "F43959.faa",
+          "sha256": "e10dff130e20a2802068173473c5a6bfc8eb54e3a3c3e5997f2412995035ab13",
+          "proteins": 1553,
+          "species_id": 368
+        },
+        {
+          "filename": "F4903.faa",
+          "sha256": "bb48591fbe59446589c21f817804734a727d8821d541fdad7638aed214c1ff86",
+          "proteins": 1069,
+          "species_id": 394
+        },
+        {
+          "filename": "F4909.faa",
+          "sha256": "9a0696f994a1baaf0f48b756383bc9c868d26483dfa4afa79dde5e892d035665",
+          "proteins": 880,
+          "species_id": 395
+        },
+        {
+          "filename": "F4918.faa",
+          "sha256": "d231d6e568046bcfa59d29bb05e1705e3662b445b13be0e989e9d161dfe88e72",
+          "proteins": 907,
+          "species_id": 396
+        },
+        {
+          "filename": "F4927.faa",
+          "sha256": "e781d4f3730100c169f84b1f6350990814215299fc25364028ff0791f4e14d3c",
+          "proteins": 1087,
+          "species_id": 397
+        },
+        {
+          "filename": "F51930.faa",
+          "sha256": "172672aee04cf204de1a467f8b9a41f988b887e3a756218ae0cab79f2377d765",
+          "proteins": 680,
+          "species_id": 410
+        },
+        {
+          "filename": "F54195.faa",
+          "sha256": "4ac29515ef32972e91f4dcf7edc35b27d70d9e1a183cdb65b7161fd685bbbbf5",
+          "proteins": 2082,
+          "species_id": 420
+        },
+        {
+          "filename": "F5476.faa",
+          "sha256": "6f137926ec02c96a13b4b662f63fac02860c5e644fea89908f28d6fe9d1ed509",
+          "proteins": 1219,
+          "species_id": 422
+        },
+        {
+          "filename": "F5479.faa",
+          "sha256": "8ffbfc03a80474f9427d8582a7b5d534f376361cfea97d7f0bca1f0f90c92519",
+          "proteins": 862,
+          "species_id": 423
+        },
+        {
+          "filename": "F5482.faa",
+          "sha256": "7d5ac9bb0c3a58d8506c29915d3e894cce2415dc546cdfb48d0a32276775b9d2",
+          "proteins": 1404,
+          "species_id": 424
+        },
+        {
+          "filename": "F5486.faa",
+          "sha256": "30133930d5b4caaf3a8db8a5b70fc95333db2e33ba421e9d60c6defc4bc8142a",
+          "proteins": 2434,
+          "species_id": 425
+        },
+        {
+          "filename": "F56409.faa",
+          "sha256": "2299185df3674143e84e01408913ab6a840786dba1509f6290c5405fcdb793eb",
+          "proteins": 722,
+          "species_id": 437
+        },
+        {
+          "filename": "F599730.faa",
+          "sha256": "8f681fdf064878cd8a530313c611f527e826cea7d7e421619070257fc85bbf2c",
+          "proteins": 4979,
+          "species_id": 448
+        },
+        {
+          "filename": "F706196.faa",
+          "sha256": "92bd34dfd84f77b92d892961c64b97dd9537ae6caf1d9c17961679852b8901c9",
+          "proteins": 163,
+          "species_id": 477
+        },
+        {
+          "filename": "F796027.faa",
+          "sha256": "5caba0b24323f2224d50aa7898f8d107f50bb448c4508edb52f4d407321367c8",
+          "proteins": 307,
+          "species_id": 488
+        }
+      ]
+    },
+    {
+      "clade_id": "C6a908bbfeefbe13f",
+      "taxa": 4,
+      "proteins": 28321,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C6a908bbfeefbe13f/proteomes",
+      "input_files": [
+        {
+          "filename": "F34488.faa",
+          "sha256": "c58c5b95f7b63b7bb1820bd6dddccf91af1a11f601ccf911eb92d0486f7abc56",
+          "proteins": 1045,
+          "species_id": 29
+        },
+        {
+          "filename": "F34485.faa",
+          "sha256": "55b544fb6d7418cc9bf9b67d7b671a90bb802fdeea7c2fe049f49d668f812b5b",
+          "proteins": 23299,
+          "species_id": 340
+        },
+        {
+          "filename": "F348617.faa",
+          "sha256": "af35671df054fc631ad6fa918aae4871e4f1a6d365cb3d8f9e6b62e16dc61b15",
+          "proteins": 1527,
+          "species_id": 341
+        },
+        {
+          "filename": "F76012.faa",
+          "sha256": "8c0a024c8b3b89c4a295c0b108ee8c2b6b4878927c195e17448bb7226c54afd8",
+          "proteins": 2450,
+          "species_id": 483
+        }
+      ]
+    },
+    {
+      "clade_id": "C6504241bc38d4876",
+      "taxa": 12,
+      "proteins": 25395,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C6504241bc38d4876/proteomes",
+      "input_files": [
+        {
+          "filename": "F1343610.faa",
+          "sha256": "10da30287097a2e771355cf9f32f8e47f98ad4125a4080eb3d53b6eed7638b69",
+          "proteins": 508,
+          "species_id": 6
+        },
+        {
+          "filename": "F101097.faa",
+          "sha256": "72119aabb8a6ad0def990074738d4224da30fe7de73f8219f0a80647f8643bea",
+          "proteins": 1625,
+          "species_id": 69
+        },
+        {
+          "filename": "F101098.faa",
+          "sha256": "054152ccbffff81f5429c52eafd9413811a2d277f37aa11872e355663ec80ba6",
+          "proteins": 2769,
+          "species_id": 70
+        },
+        {
+          "filename": "F1343614.faa",
+          "sha256": "bcabfce41de3540e06d39e7978ba244a9a23dc1d657a2ac217fb06442eddb73b",
+          "proteins": 1341,
+          "species_id": 143
+        },
+        {
+          "filename": "F1440133.faa",
+          "sha256": "35630130b667d11719fd287740b171a15de4283fb81c0e92357e083f8c74de87",
+          "proteins": 3144,
+          "species_id": 155
+        },
+        {
+          "filename": "F1897645.faa",
+          "sha256": "be6a2c371efa42b3c363bcdfb2bca7220441dc292f1be46d2a4cac235d860a76",
+          "proteins": 2717,
+          "species_id": 225
+        },
+        {
+          "filename": "F604196.faa",
+          "sha256": "70cacf912de3046264fb57088c4f4c845009d63dc5f5d01c545dc3104cfc8992",
+          "proteins": 2322,
+          "species_id": 453
+        },
+        {
+          "filename": "F64525.faa",
+          "sha256": "baa7f063c5bfe3fb3e1523066e168b820c3d30985ca90e382ba7eb127087e4a2",
+          "proteins": 1893,
+          "species_id": 463
+        },
+        {
+          "filename": "F64571.faa",
+          "sha256": "9f0ab878f469f3f74928eb818a860a33931ede82daba6da26b55eb1f60e12fec",
+          "proteins": 2379,
+          "species_id": 465
+        },
+        {
+          "filename": "F979620.faa",
+          "sha256": "bb6dc7443cbb671844aa108cb2b1e5c2a12e7ef88c8dc4c2aac4250606a7802c",
+          "proteins": 2420,
+          "species_id": 506
+        },
+        {
+          "filename": "F979690.faa",
+          "sha256": "bc1bdba5c8bd49e4961f516bef1cf397e585cc29b2529a924401d5258f898696",
+          "proteins": 2204,
+          "species_id": 507
+        },
+        {
+          "filename": "F979761.faa",
+          "sha256": "568a10bac8917704d82e78069a706407a1d0c6bc4ced9d695bc6cb70efaa62af",
+          "proteins": 2073,
+          "species_id": 508
+        }
+      ]
+    },
+    {
+      "clade_id": "Cad3aacc43ab8760b",
+      "taxa": 6,
+      "proteins": 25057,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cad3aacc43ab8760b/proteomes",
+      "input_files": [
+        {
+          "filename": "F1754191.faa",
+          "sha256": "44507a4026a3959b31701baab2691f33a583d26c9e75d46dfb27d832426d2a3a",
+          "proteins": 326,
+          "species_id": 13
+        },
+        {
+          "filename": "F1754190.faa",
+          "sha256": "218ce406db01a9701a2efd9d5b1d509ded2132c8597774eb08968da8fd0a553d",
+          "proteins": 4049,
+          "species_id": 205
+        },
+        {
+          "filename": "F1754192.faa",
+          "sha256": "a4cc47bf1e8bf165b05f5992e996a6444ad9f45767de96557a8fa43c802e9850",
+          "proteins": 2657,
+          "species_id": 206
+        },
+        {
+          "filename": "F2767002.faa",
+          "sha256": "d67bff4c654b1db138b160cdfebb37edf8e275d7950c6e28ff4d7e3909291621",
+          "proteins": 8886,
+          "species_id": 291
+        },
+        {
+          "filename": "F3108450.faa",
+          "sha256": "57a1053e150ddf3a456d320a04583fe2ebb099ba3d142ee67d98eb5a786d8426",
+          "proteins": 5545,
+          "species_id": 327
+        },
+        {
+          "filename": "F73868.faa",
+          "sha256": "65fa62c8590e4c66f83d6148a709745e863eda7416443685e6a18cff407881de",
+          "proteins": 3594,
+          "species_id": 482
+        }
+      ]
+    },
+    {
+      "clade_id": "C84475a2f1d351cf5",
+      "taxa": 6,
+      "proteins": 23940,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C84475a2f1d351cf5/proteomes",
+      "input_files": [
+        {
+          "filename": "O133409.faa",
+          "sha256": "faf16a47031623ae9379ac5845591bbb415fb3ed3f9c153382ac6933a72ebf59",
+          "proteins": 590,
+          "species_id": 55
+        },
+        {
+          "filename": "O529818.faa",
+          "sha256": "07749c81d7de194d4a61dfc2c0d7e6a4d3f062fcdc804e55ebc1a2ea51fb8afd",
+          "proteins": 2280,
+          "species_id": 57
+        },
+        {
+          "filename": "O1890364.faa",
+          "sha256": "185664191e73c9e2b7ad503d0e022dbc26e49cfc3354d000337987f30fc9b2e0",
+          "proteins": 7411,
+          "species_id": 511
+        },
+        {
+          "filename": "O44689.faa",
+          "sha256": "561816293d2e65ad06025540e74ecacdbe43ed17124e0436f33c66e500beea7e",
+          "proteins": 4266,
+          "species_id": 517
+        },
+        {
+          "filename": "O5755.faa",
+          "sha256": "0c81e1fd7c0d416cae1cde1caaedf5eda3029308fa5a230e96c9c4cca3b19fb4",
+          "proteins": 5567,
+          "species_id": 519
+        },
+        {
+          "filename": "O5786.faa",
+          "sha256": "bfb954443490cebbc379a54b814ca4a2bc334d8fc78d0eb1fef516e954b98002",
+          "proteins": 3826,
+          "species_id": 520
+        }
+      ]
+    },
+    {
+      "clade_id": "Ccb6abf1f5f958c91",
+      "taxa": 15,
+      "proteins": 23005,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ccb6abf1f5f958c91/proteomes",
+      "input_files": [
+        {
+          "filename": "F164912.faa",
+          "sha256": "23334acfa1b9b45299d471e40eab08d670be0abefda8892003fc749ed9cac062",
+          "proteins": 296,
+          "species_id": 11
+        },
+        {
+          "filename": "F2109901.faa",
+          "sha256": "943d84313fc3d35768e534f0cae7b515417cf022c479f83561f465a3b9116ad5",
+          "proteins": 1367,
+          "species_id": 17
+        },
+        {
+          "filename": "F103449.faa",
+          "sha256": "049934d2a769ef738c3c2c5a127f7a9afa974c727e897db4d8923ae96592d39b",
+          "proteins": 1397,
+          "species_id": 73
+        },
+        {
+          "filename": "F1081669.faa",
+          "sha256": "fa2fb9aec982196f9a281b7996ae1a0cc833567fc5eed17a17bbe083fc74d23d",
+          "proteins": 1728,
+          "species_id": 88
+        },
+        {
+          "filename": "F1176355.faa",
+          "sha256": "1299328c636a837af455cbe666a61afa94d6cf33a13f5e2ce99da60016a0b1d5",
+          "proteins": 1669,
+          "species_id": 117
+        },
+        {
+          "filename": "F1246581.faa",
+          "sha256": "4880f1192604efb9c11a1a4632539e176d31d94eb4d70b1d58beb6f3aafb902d",
+          "proteins": 1187,
+          "species_id": 127
+        },
+        {
+          "filename": "F1300064.faa",
+          "sha256": "718ae14f8919833c6bd24b89d6ebe00e2dbbb05ee2d1aa08e23d287f6a599e0f",
+          "proteins": 1424,
+          "species_id": 133
+        },
+        {
+          "filename": "F174680.faa",
+          "sha256": "7bd40fb285f2d1c05c19e2b87b2e2462a11c697d8ae89d38134f56b240868387",
+          "proteins": 1123,
+          "species_id": 202
+        },
+        {
+          "filename": "F174688.faa",
+          "sha256": "1d4db1e906cfbf72c1bf29d1ae3e044e7904f08c2f2df4da954bf328da7d91a3",
+          "proteins": 2057,
+          "species_id": 203
+        },
+        {
+          "filename": "F2020955.faa",
+          "sha256": "a72293f09e010811a20c2a26be3b827d689580e7b07f0df213d5c4e21a9bc870",
+          "proteins": 3332,
+          "species_id": 236
+        },
+        {
+          "filename": "F291195.faa",
+          "sha256": "fe786462979982f37066b6008c6b8dbbde79af80e84fe5cfeacac16dcf071759",
+          "proteins": 1645,
+          "species_id": 305
+        },
+        {
+          "filename": "F3039483.faa",
+          "sha256": "0291cd32d87114fbd927be037c32f80fca43d0aff2c053d834449ef40b9a1188",
+          "proteins": 589,
+          "species_id": 322
+        },
+        {
+          "filename": "F6035.faa",
+          "sha256": "0fca89b30b040b53e0de597c760c0c817c9ca29bd4f814260dd995bf09f5f595",
+          "proteins": 727,
+          "species_id": 451
+        },
+        {
+          "filename": "F6039.faa",
+          "sha256": "d6394093e227ef6ad9ac84e9a2eb9da0fe8866e5528bcd34ca930d7a0b198e06",
+          "proteins": 1684,
+          "species_id": 452
+        },
+        {
+          "filename": "F70536.faa",
+          "sha256": "0ff2d42a9a44184b3e1c8707055e01036f5b204a324c07eaca183767e7c11652",
+          "proteins": 2780,
+          "species_id": 475
+        }
+      ]
+    },
+    {
+      "clade_id": "Cb9630bea852fefc9",
+      "taxa": 9,
+      "proteins": 20154,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cb9630bea852fefc9/proteomes",
+      "input_files": [
+        {
+          "filename": "F1500003.faa",
+          "sha256": "0374c9214d93444003bfedc9bc54f1d623f6ebd777a4ae6ce2dbe191aef5e3e5",
+          "proteins": 1313,
+          "species_id": 8
+        },
+        {
+          "filename": "F64504.faa",
+          "sha256": "465aac656c9a520c2bd9e634c8bd6b5cad9b74cb03e3983810096d700ad9a29c",
+          "proteins": 87,
+          "species_id": 44
+        },
+        {
+          "filename": "F109876.faa",
+          "sha256": "414b0ee3331fe82267cbefca6446e145012b258da73328a33600ecf79adf1855",
+          "proteins": 5492,
+          "species_id": 93
+        },
+        {
+          "filename": "F28583.faa",
+          "sha256": "4546e9536733f89a708f24d3156d58acd67bf4c3d485ef09fa7fb94eb0685e3d",
+          "proteins": 2063,
+          "species_id": 300
+        },
+        {
+          "filename": "F3075319.faa",
+          "sha256": "22ae27a4271548da6a30b1ca875a20aa5e52c763709deb70cf28f8919ef7be33",
+          "proteins": 1932,
+          "species_id": 326
+        },
+        {
+          "filename": "F4808.faa",
+          "sha256": "9e0adc149b2480b78c0143bc8d828c5e148dd016a0d4f74b966b9fc2f54b6fae",
+          "proteins": 2762,
+          "species_id": 380
+        },
+        {
+          "filename": "F64505.faa",
+          "sha256": "8c1ba8b5b6aa97847a1ac55f16c1034d1ae1bd49190221bce0c3c664cee86de3",
+          "proteins": 901,
+          "species_id": 460
+        },
+        {
+          "filename": "F64508.faa",
+          "sha256": "05566f5d733497f5d0c03a60f5b7276b178cd5d1997c85b4ef2b928c425d66cf",
+          "proteins": 2947,
+          "species_id": 461
+        },
+        {
+          "filename": "F945690.faa",
+          "sha256": "204d8053f0c1ddf7e1d990153c9ddb6faffefb9bb7fe5482b542a51941268adf",
+          "proteins": 2657,
+          "species_id": 504
+        }
+      ]
+    },
+    {
+      "clade_id": "C99f48e74122639cd",
+      "taxa": 10,
+      "proteins": 15406,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C99f48e74122639cd/proteomes",
+      "input_files": [
+        {
+          "filename": "F44442.faa",
+          "sha256": "eff98a94308ad9b023cab7c879152505152f9b3af4ab37797f3082b47d71512e",
+          "proteins": 89,
+          "species_id": 34
+        },
+        {
+          "filename": "F4840.faa",
+          "sha256": "b2083bdeafd37aaec46c4556662acf8184a08a7dff14566d57af072424f094bb",
+          "proteins": 1012,
+          "species_id": 36
+        },
+        {
+          "filename": "F1938954.faa",
+          "sha256": "244ba0e4400549ea6838c38fb4bad3982ac63e6d3211faca09e77ce0594d23aa",
+          "proteins": 643,
+          "species_id": 231
+        },
+        {
+          "filename": "F41833.faa",
+          "sha256": "e3a41fdc9ab04345488d9784e6baf92546ae106b9ccac76c8334805fd21dd1eb",
+          "proteins": 1207,
+          "species_id": 361
+        },
+        {
+          "filename": "F4837.faa",
+          "sha256": "b8663e59fd83981526b7f2effaa8be3c3d3fd4845c499080fcbc38be9578f22f",
+          "proteins": 5623,
+          "species_id": 382
+        },
+        {
+          "filename": "F58291.faa",
+          "sha256": "4b62c64c7c084faaeaf98cc0143c2b851e0b9bfa8b1ce8e474fdb9ec58f54655",
+          "proteins": 1751,
+          "species_id": 444
+        },
+        {
+          "filename": "F64526.faa",
+          "sha256": "e251e0c2b610d6dd389503d9c2ddeab2484e0f2935041677cd6aaa1df1623674",
+          "proteins": 494,
+          "species_id": 464
+        },
+        {
+          "filename": "F64632.faa",
+          "sha256": "c9e24a432e1661ce8090f86005998ad6a8572aa69206e8b49d1b4364f150149c",
+          "proteins": 2013,
+          "species_id": 466
+        },
+        {
+          "filename": "F708070.faa",
+          "sha256": "b6c08420f4a621f6e2b27648c4005490eaa19096565b202066a493779de27181",
+          "proteins": 1919,
+          "species_id": 478
+        },
+        {
+          "filename": "F91625.faa",
+          "sha256": "8cb29caae2aff1c43fddd757cd3e3bc497208e25996e6d9b3790e52df5f813ef",
+          "proteins": 655,
+          "species_id": 501
+        }
+      ]
+    },
+    {
+      "clade_id": "Cbee239fc6d58d1a3",
+      "taxa": 9,
+      "proteins": 14763,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cbee239fc6d58d1a3/proteomes",
+      "input_files": [
+        {
+          "filename": "F44442.faa",
+          "sha256": "eff98a94308ad9b023cab7c879152505152f9b3af4ab37797f3082b47d71512e",
+          "proteins": 89,
+          "species_id": 34
+        },
+        {
+          "filename": "F4840.faa",
+          "sha256": "b2083bdeafd37aaec46c4556662acf8184a08a7dff14566d57af072424f094bb",
+          "proteins": 1012,
+          "species_id": 36
+        },
+        {
+          "filename": "F41833.faa",
+          "sha256": "e3a41fdc9ab04345488d9784e6baf92546ae106b9ccac76c8334805fd21dd1eb",
+          "proteins": 1207,
+          "species_id": 361
+        },
+        {
+          "filename": "F4837.faa",
+          "sha256": "b8663e59fd83981526b7f2effaa8be3c3d3fd4845c499080fcbc38be9578f22f",
+          "proteins": 5623,
+          "species_id": 382
+        },
+        {
+          "filename": "F58291.faa",
+          "sha256": "4b62c64c7c084faaeaf98cc0143c2b851e0b9bfa8b1ce8e474fdb9ec58f54655",
+          "proteins": 1751,
+          "species_id": 444
+        },
+        {
+          "filename": "F64526.faa",
+          "sha256": "e251e0c2b610d6dd389503d9c2ddeab2484e0f2935041677cd6aaa1df1623674",
+          "proteins": 494,
+          "species_id": 464
+        },
+        {
+          "filename": "F64632.faa",
+          "sha256": "c9e24a432e1661ce8090f86005998ad6a8572aa69206e8b49d1b4364f150149c",
+          "proteins": 2013,
+          "species_id": 466
+        },
+        {
+          "filename": "F708070.faa",
+          "sha256": "b6c08420f4a621f6e2b27648c4005490eaa19096565b202066a493779de27181",
+          "proteins": 1919,
+          "species_id": 478
+        },
+        {
+          "filename": "F91625.faa",
+          "sha256": "8cb29caae2aff1c43fddd757cd3e3bc497208e25996e6d9b3790e52df5f813ef",
+          "proteins": 655,
+          "species_id": 501
+        }
+      ]
+    },
+    {
+      "clade_id": "Cfd05a22cfa51daf8",
+      "taxa": 9,
+      "proteins": 13017,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cfd05a22cfa51daf8/proteomes",
+      "input_files": [
+        {
+          "filename": "F61397.faa",
+          "sha256": "97fc607b60482f69542903da4cfd591bea87888273742c83dd3226cd0e072d1e",
+          "proteins": 625,
+          "species_id": 41
+        },
+        {
+          "filename": "F61424.faa",
+          "sha256": "9896ddbaabd64028cf370315a9c9971d4d1d93bcc7adf1d7b27c3c0dc702496c",
+          "proteins": 103,
+          "species_id": 42
+        },
+        {
+          "filename": "F1213189.faa",
+          "sha256": "554f1221d5b97c0255cebf51bd8dfb299162f196538c36079b1d4bbcb17363bc",
+          "proteins": 2895,
+          "species_id": 121
+        },
+        {
+          "filename": "F133377.faa",
+          "sha256": "e7260bf1a0b70168009917137048271b1ddeb013a5355d854620bd12122489a8",
+          "proteins": 506,
+          "species_id": 140
+        },
+        {
+          "filename": "F133385.faa",
+          "sha256": "df9da8ae72f316639251da4640f3b86679aa1b413b45d85d5f1d3f0a820a846c",
+          "proteins": 1612,
+          "species_id": 141
+        },
+        {
+          "filename": "F2650707.faa",
+          "sha256": "12e813f70a3368e617df66f94cbae443436cb002ddb6e51d5cc7d728c16d849a",
+          "proteins": 749,
+          "species_id": 277
+        },
+        {
+          "filename": "F304332.faa",
+          "sha256": "1f35136f10c87ff7b63b10ab799165055c1caf3a05c0f68bd4e26ead1e1a0256",
+          "proteins": 3338,
+          "species_id": 323
+        },
+        {
+          "filename": "F4866.faa",
+          "sha256": "29592b2986f69cf364d424491d5a3fab223f3edab30d846160407fcc9fa000de",
+          "proteins": 851,
+          "species_id": 389
+        },
+        {
+          "filename": "F61395.faa",
+          "sha256": "523e847f42d205d621b6d0b27af27c19e67282592950cbeef86689fae1bede8d",
+          "proteins": 2338,
+          "species_id": 456
+        }
+      ]
+    },
+    {
+      "clade_id": "Cccfd544cc8b8dac2",
+      "taxa": 12,
+      "proteins": 11976,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cccfd544cc8b8dac2/proteomes",
+      "input_files": [
+        {
+          "filename": "F164576.faa",
+          "sha256": "3015a06f6814750b718d9eea05bcbca7a65d0a303f68c724ec01fd7cbcb2a35b",
+          "proteins": 263,
+          "species_id": 10
+        },
+        {
+          "filename": "F1116844.faa",
+          "sha256": "b9d30863a4eef31a1e6fe04236a5841db3205c46ed81f2aa81773b9f3c4efb1d",
+          "proteins": 590,
+          "species_id": 98
+        },
+        {
+          "filename": "F1670608.faa",
+          "sha256": "693c9d67b00d347f2d5b1b9927a25c46359eea3cbd2261b2d057085ab9353804",
+          "proteins": 982,
+          "species_id": 187
+        },
+        {
+          "filename": "F174425.faa",
+          "sha256": "9a8012f0f45485ff9707b806bb074074cd6dc03ffc8c9f68d839f9da46a5239a",
+          "proteins": 836,
+          "species_id": 201
+        },
+        {
+          "filename": "F265104.faa",
+          "sha256": "4d5d54ca6f1bd640b7be527a3f1cc804057bf19dc33f96d361909907b3837700",
+          "proteins": 1531,
+          "species_id": 278
+        },
+        {
+          "filename": "F2796175.faa",
+          "sha256": "9655ac8379bc620f059cf179e456e3351d5ac20d76e25984cf997512850a5673",
+          "proteins": 1708,
+          "species_id": 295
+        },
+        {
+          "filename": "F2939403.faa",
+          "sha256": "7bb2fdf5513cb366665549558889d099f2d03e87b0328b38e89f3019e428dc96",
+          "proteins": 730,
+          "species_id": 310
+        },
+        {
+          "filename": "F2939404.faa",
+          "sha256": "a39d32802f91e94c7570ee70442e91f1884d41697c1a6cea8902c7f6ea25296d",
+          "proteins": 503,
+          "species_id": 311
+        },
+        {
+          "filename": "F2939405.faa",
+          "sha256": "809d78768a716645500fcaf6e8e4fd24e17d2a631dd38a3f6f4d064ed3350d3f",
+          "proteins": 821,
+          "species_id": 312
+        },
+        {
+          "filename": "F2939408.faa",
+          "sha256": "0cbc93719ab8b56a3ea240549bdc5369649d029a439506d01f51a808f4f970c6",
+          "proteins": 643,
+          "species_id": 314
+        },
+        {
+          "filename": "F315204.faa",
+          "sha256": "29395e1405fdb077caa27ab4c4825fdb8aadae2291f1a9fbbfc3a42d51f03137",
+          "proteins": 1474,
+          "species_id": 328
+        },
+        {
+          "filename": "F318774.faa",
+          "sha256": "e12b3c4551287d773940ce5347a908f20b48f88413596ba8e79b4f7b4ced94a6",
+          "proteins": 1895,
+          "species_id": 331
+        }
+      ]
+    },
+    {
+      "clade_id": "Cab638f87bde46185",
+      "taxa": 12,
+      "proteins": 11246,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cab638f87bde46185/proteomes",
+      "input_files": [
+        {
+          "filename": "F1099800.faa",
+          "sha256": "cb45c1a1d49bcc8e464cbedd0068afed781cfd229149c326957af2067b80e933",
+          "proteins": 145,
+          "species_id": 1
+        },
+        {
+          "filename": "F1243177.faa",
+          "sha256": "ad83709e04001d02a25549b9ee64b7418152fe580d7fc13289cd03a9f8b3e055",
+          "proteins": 3531,
+          "species_id": 126
+        },
+        {
+          "filename": "F2545709.faa",
+          "sha256": "8d7f3c8fa2601674871406d88c87e093577ba1a843272f6c91d7574faf4706ca",
+          "proteins": 779,
+          "species_id": 265
+        },
+        {
+          "filename": "F263815.faa",
+          "sha256": "d5b1e5408aa04b4b3b3fecda40c8188801c70eecae81c827d7e59e08c1e5e169",
+          "proteins": 358,
+          "species_id": 274
+        },
+        {
+          "filename": "F2754530.faa",
+          "sha256": "79f2832c555aa65c08488a2673ca6338d78f6830a92d17c9d1b75d3bf168c437",
+          "proteins": 1654,
+          "species_id": 290
+        },
+        {
+          "filename": "F42068.faa",
+          "sha256": "1f9972cbf7e97f808c7b95e25bf67a81d901de061403542ac518069103327a6c",
+          "proteins": 551,
+          "species_id": 365
+        },
+        {
+          "filename": "F4754.faa",
+          "sha256": "256801087503918c24295fe697c8201307525b25aaf9fbe40ee94a8e030c3483",
+          "proteins": 399,
+          "species_id": 378
+        },
+        {
+          "filename": "F48691.faa",
+          "sha256": "061390924b5e2099505e76f0175a6e35416e2dc4aeaebc7997f5b42520f01cb5",
+          "proteins": 1107,
+          "species_id": 390
+        },
+        {
+          "filename": "F4896.faa",
+          "sha256": "48df6de4ab2c8354e950afd7c404423b518dbc0948471bd9e07ad089c8c536e5",
+          "proteins": 730,
+          "species_id": 392
+        },
+        {
+          "filename": "F4897.faa",
+          "sha256": "250113c3353ca6a407276cc0098b0c4fe8419634bcb073158956429b51e14658",
+          "proteins": 657,
+          "species_id": 393
+        },
+        {
+          "filename": "F5011.faa",
+          "sha256": "be7d0bb164a9758e41bc6bb83730a9ffbdb5ef4ad95742c2e466f9a8d2198a9f",
+          "proteins": 653,
+          "species_id": 399
+        },
+        {
+          "filename": "F5606.faa",
+          "sha256": "eb37530c879df2816aea1d44336fe3d2f4d8e93afdff5c99c0371ceaf039dd1b",
+          "proteins": 682,
+          "species_id": 433
+        }
+      ]
+    },
+    {
+      "clade_id": "C161028ef9aa8951c",
+      "taxa": 3,
+      "proteins": 10553,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C161028ef9aa8951c/proteomes",
+      "input_files": [
+        {
+          "filename": "OFS1403592.faa",
+          "sha256": "6690e6e98c38d2bbd837cfaf15399db0013ed6e91e8e93f427d3f4e56ac36301",
+          "proteins": 509,
+          "species_id": 61
+        },
+        {
+          "filename": "OFS5426494.faa",
+          "sha256": "15223c01fabfc6acae0e208bb7e95977bbf66ab62d6eaadb68de71c7a2eb09f1",
+          "proteins": 2049,
+          "species_id": 63
+        },
+        {
+          "filename": "O72019.faa",
+          "sha256": "0b122951e5acf1c4a586faebeec2b4c1d0a0c260f51b0f03fa0706bf2b078656",
+          "proteins": 7995,
+          "species_id": 522
+        }
+      ]
+    },
+    {
+      "clade_id": "C5cdbdd7d3b795269",
+      "taxa": 10,
+      "proteins": 10512,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C5cdbdd7d3b795269/proteomes",
+      "input_files": [
+        {
+          "filename": "F164576.faa",
+          "sha256": "3015a06f6814750b718d9eea05bcbca7a65d0a303f68c724ec01fd7cbcb2a35b",
+          "proteins": 263,
+          "species_id": 10
+        },
+        {
+          "filename": "F1116844.faa",
+          "sha256": "b9d30863a4eef31a1e6fe04236a5841db3205c46ed81f2aa81773b9f3c4efb1d",
+          "proteins": 590,
+          "species_id": 98
+        },
+        {
+          "filename": "F1670608.faa",
+          "sha256": "693c9d67b00d347f2d5b1b9927a25c46359eea3cbd2261b2d057085ab9353804",
+          "proteins": 982,
+          "species_id": 187
+        },
+        {
+          "filename": "F174425.faa",
+          "sha256": "9a8012f0f45485ff9707b806bb074074cd6dc03ffc8c9f68d839f9da46a5239a",
+          "proteins": 836,
+          "species_id": 201
+        },
+        {
+          "filename": "F265104.faa",
+          "sha256": "4d5d54ca6f1bd640b7be527a3f1cc804057bf19dc33f96d361909907b3837700",
+          "proteins": 1531,
+          "species_id": 278
+        },
+        {
+          "filename": "F2796175.faa",
+          "sha256": "9655ac8379bc620f059cf179e456e3351d5ac20d76e25984cf997512850a5673",
+          "proteins": 1708,
+          "species_id": 295
+        },
+        {
+          "filename": "F2939403.faa",
+          "sha256": "7bb2fdf5513cb366665549558889d099f2d03e87b0328b38e89f3019e428dc96",
+          "proteins": 730,
+          "species_id": 310
+        },
+        {
+          "filename": "F2939404.faa",
+          "sha256": "a39d32802f91e94c7570ee70442e91f1884d41697c1a6cea8902c7f6ea25296d",
+          "proteins": 503,
+          "species_id": 311
+        },
+        {
+          "filename": "F315204.faa",
+          "sha256": "29395e1405fdb077caa27ab4c4825fdb8aadae2291f1a9fbbfc3a42d51f03137",
+          "proteins": 1474,
+          "species_id": 328
+        },
+        {
+          "filename": "F318774.faa",
+          "sha256": "e12b3c4551287d773940ce5347a908f20b48f88413596ba8e79b4f7b4ced94a6",
+          "proteins": 1895,
+          "species_id": 331
+        }
+      ]
+    },
+    {
+      "clade_id": "C2144e3695f40928a",
+      "taxa": 6,
+      "proteins": 10306,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C2144e3695f40928a/proteomes",
+      "input_files": [
+        {
+          "filename": "F1174673.faa",
+          "sha256": "6d278e0a23f2bd0d038c2ad6c034e0a7f548a3e7bb59f8b7dc7e3316563d6bcb",
+          "proteins": 2505,
+          "species_id": 3
+        },
+        {
+          "filename": "F2813651.faa",
+          "sha256": "ab1f8897ca92eae508eb6b64ff005ddada040e09a47d6bce5530d98b7b2110c2",
+          "proteins": 800,
+          "species_id": 23
+        },
+        {
+          "filename": "F1814901.faa",
+          "sha256": "c4d37cc38079fb51d155fdab223cb0d7ca8466f1445ee9e014238705cb5a21c0",
+          "proteins": 1992,
+          "species_id": 215
+        },
+        {
+          "filename": "F39416.faa",
+          "sha256": "af0080701e5a91fe69873021b0aff5e9adb2323380f3fe779a52939c5f0007a9",
+          "proteins": 1235,
+          "species_id": 354
+        },
+        {
+          "filename": "F43433.faa",
+          "sha256": "e69ab502d5fdace30390baa1f89ee73ba6b5096254385c5148dffaeb36b96930",
+          "proteins": 2929,
+          "species_id": 367
+        },
+        {
+          "filename": "F97331.faa",
+          "sha256": "478ae7b259599117eba8eb9143c210ae4eb0d8a89188beb9c945eff8a15d0cb5",
+          "proteins": 845,
+          "species_id": 505
+        }
+      ]
+    },
+    {
+      "clade_id": "Cea095ce87029ba93",
+      "taxa": 12,
+      "proteins": 8443,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cea095ce87029ba93/proteomes",
+      "input_files": [
+        {
+          "filename": "F1882483.faa",
+          "sha256": "c05bfae13683e1fb141e672b10468475d875b69bb9ab5f0a183540b49b54274e",
+          "proteins": 1178,
+          "species_id": 15
+        },
+        {
+          "filename": "F76775.faa",
+          "sha256": "7e30d63a35d6e12b709c9e27d19cb18732241b1fedd5dc61d006c5712c053e45",
+          "proteins": 52,
+          "species_id": 50
+        },
+        {
+          "filename": "F120017.faa",
+          "sha256": "30b883675404dc395996cf0f92fb1fbd7e78a03eab7efd54c004c163c7165f9b",
+          "proteins": 1151,
+          "species_id": 118
+        },
+        {
+          "filename": "F1269715.faa",
+          "sha256": "1dd55f1ff921a3fa96ae410612b2c703ca98f7dae4ac82a367dcb41a945d1f83",
+          "proteins": 1006,
+          "species_id": 128
+        },
+        {
+          "filename": "F1673888.faa",
+          "sha256": "16856536daa9537797e25f4954c0b53fa047e2f6d615c2a358a2dbac93d2ba96",
+          "proteins": 1965,
+          "species_id": 189
+        },
+        {
+          "filename": "F2020962.faa",
+          "sha256": "acb0a37381e0773fb75a79fd0d53cd5c628ce9aa67c59b0bb3e6efa782dd42f0",
+          "proteins": 210,
+          "species_id": 237
+        },
+        {
+          "filename": "F223818.faa",
+          "sha256": "fe16ed6e6c8cf482ace25b15422ad7418f2cd066238e620b83a6f4dd3b9c3b0d",
+          "proteins": 206,
+          "species_id": 253
+        },
+        {
+          "filename": "F280036.faa",
+          "sha256": "50ffa0d77dfba82caf9cdd931be38c0c80eb38ab3e2defa30495205db8ff0926",
+          "proteins": 530,
+          "species_id": 296
+        },
+        {
+          "filename": "F76777.faa",
+          "sha256": "41479d5629545a0dfa7d372ee243e737091aac819b3f771852783aff49d24a70",
+          "proteins": 112,
+          "species_id": 484
+        },
+        {
+          "filename": "F77020.faa",
+          "sha256": "eb6e4868a2595f548ac01fa1a742ec67a257e8b98fc57764ce9ca945cc277e53",
+          "proteins": 214,
+          "species_id": 485
+        },
+        {
+          "filename": "F84751.faa",
+          "sha256": "07f57a482a57d26fcdde921c9a79506a7c3d7b900f29552929e8daf531ba54fb",
+          "proteins": 880,
+          "species_id": 493
+        },
+        {
+          "filename": "F84753.faa",
+          "sha256": "98798d6367b938e9ad3df916603a62ed780678d4f3d551dddefa90ef23b694cc",
+          "proteins": 939,
+          "species_id": 494
+        }
+      ]
+    },
+    {
+      "clade_id": "C3df3ba804f83652f",
+      "taxa": 7,
+      "proteins": 7984,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C3df3ba804f83652f/proteomes",
+      "input_files": [
+        {
+          "filename": "F1851187.faa",
+          "sha256": "fc126678bbc5e0730dd47b139d5b539d4155cdef2eb6e9c095f4fac024c2b27e",
+          "proteins": 566,
+          "species_id": 14
+        },
+        {
+          "filename": "F278681.faa",
+          "sha256": "980dda6a2bc68435c4ef5d5bc31c46eea59eed8132dc051e58335b7929915b50",
+          "proteins": 2698,
+          "species_id": 22
+        },
+        {
+          "filename": "F1286916.faa",
+          "sha256": "00988869c8bb63abd8f6c107e523983fad97ada2846da820bb01ae0088356382",
+          "proteins": 1135,
+          "species_id": 131
+        },
+        {
+          "filename": "F1712513.faa",
+          "sha256": "1d9422b2d1063cf45c31705741c55485289c79bbb25892f943314a977f2c6af8",
+          "proteins": 694,
+          "species_id": 198
+        },
+        {
+          "filename": "F1851185.faa",
+          "sha256": "26b8af4c513baf1a97a7f7f547c5bc62a6840794144fb2f0105ea74ebaabf265",
+          "proteins": 1017,
+          "species_id": 219
+        },
+        {
+          "filename": "F1907219.faa",
+          "sha256": "fc38986b894ec3963b0f3ed2f0479c40e7d52776328f6332fc7f66aad7a21cb6",
+          "proteins": 1021,
+          "species_id": 227
+        },
+        {
+          "filename": "F78915.faa",
+          "sha256": "58920c7dcb04d27103a0a0fc0b0c2688f22c8c32be3cbbadd94a555c0843731d",
+          "proteins": 853,
+          "species_id": 486
+        }
+      ]
+    },
+    {
+      "clade_id": "C41918cb2d73b0b42",
+      "taxa": 11,
+      "proteins": 7715,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C41918cb2d73b0b42/proteomes",
+      "input_files": [
+        {
+          "filename": "F1099800.faa",
+          "sha256": "cb45c1a1d49bcc8e464cbedd0068afed781cfd229149c326957af2067b80e933",
+          "proteins": 145,
+          "species_id": 1
+        },
+        {
+          "filename": "F2545709.faa",
+          "sha256": "8d7f3c8fa2601674871406d88c87e093577ba1a843272f6c91d7574faf4706ca",
+          "proteins": 779,
+          "species_id": 265
+        },
+        {
+          "filename": "F263815.faa",
+          "sha256": "d5b1e5408aa04b4b3b3fecda40c8188801c70eecae81c827d7e59e08c1e5e169",
+          "proteins": 358,
+          "species_id": 274
+        },
+        {
+          "filename": "F2754530.faa",
+          "sha256": "79f2832c555aa65c08488a2673ca6338d78f6830a92d17c9d1b75d3bf168c437",
+          "proteins": 1654,
+          "species_id": 290
+        },
+        {
+          "filename": "F42068.faa",
+          "sha256": "1f9972cbf7e97f808c7b95e25bf67a81d901de061403542ac518069103327a6c",
+          "proteins": 551,
+          "species_id": 365
+        },
+        {
+          "filename": "F4754.faa",
+          "sha256": "256801087503918c24295fe697c8201307525b25aaf9fbe40ee94a8e030c3483",
+          "proteins": 399,
+          "species_id": 378
+        },
+        {
+          "filename": "F48691.faa",
+          "sha256": "061390924b5e2099505e76f0175a6e35416e2dc4aeaebc7997f5b42520f01cb5",
+          "proteins": 1107,
+          "species_id": 390
+        },
+        {
+          "filename": "F4896.faa",
+          "sha256": "48df6de4ab2c8354e950afd7c404423b518dbc0948471bd9e07ad089c8c536e5",
+          "proteins": 730,
+          "species_id": 392
+        },
+        {
+          "filename": "F4897.faa",
+          "sha256": "250113c3353ca6a407276cc0098b0c4fe8419634bcb073158956429b51e14658",
+          "proteins": 657,
+          "species_id": 393
+        },
+        {
+          "filename": "F5011.faa",
+          "sha256": "be7d0bb164a9758e41bc6bb83730a9ffbdb5ef4ad95742c2e466f9a8d2198a9f",
+          "proteins": 653,
+          "species_id": 399
+        },
+        {
+          "filename": "F5606.faa",
+          "sha256": "eb37530c879df2816aea1d44336fe3d2f4d8e93afdff5c99c0371ceaf039dd1b",
+          "proteins": 682,
+          "species_id": 433
+        }
+      ]
+    },
+    {
+      "clade_id": "Caf9a2fdd4a4a23a9",
+      "taxa": 4,
+      "proteins": 7629,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Caf9a2fdd4a4a23a9/proteomes",
+      "input_files": [
+        {
+          "filename": "F29899.faa",
+          "sha256": "958959038666f677a93d79dad7523705cb5e0315e1e8029026a7b24011ca4d31",
+          "proteins": 732,
+          "species_id": 26
+        },
+        {
+          "filename": "F112072.faa",
+          "sha256": "93173ce6bb45323f011e1ef8257292dbf41024d6f75197814c12ea4f10345934",
+          "proteins": 4009,
+          "species_id": 100
+        },
+        {
+          "filename": "F2778381.faa",
+          "sha256": "badd35f7049a19e90cb024bb08d196708c1b280b1ad513baaf3f7f1943b0d9ab",
+          "proteins": 694,
+          "species_id": 292
+        },
+        {
+          "filename": "F5414.faa",
+          "sha256": "889158cef1187f92927aeed52aa8c500bd8d03e4ba4cb99e93db3f46e6e04ad1",
+          "proteins": 2194,
+          "species_id": 419
+        }
+      ]
+    },
+    {
+      "clade_id": "C371cb866c6354d08",
+      "taxa": 2,
+      "proteins": 6935,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C371cb866c6354d08/proteomes",
+      "input_files": [
+        {
+          "filename": "F1055551.faa",
+          "sha256": "e49a2b79a74350b892b54c189e3aaadafaf567fe2e8547a27a17723ffb2b2355",
+          "proteins": 963,
+          "species_id": 0
+        },
+        {
+          "filename": "F203533.faa",
+          "sha256": "ebc70d74b55bbb1e9b6ee1f34f26bb6989e1e10b729aaed678c28229d645f149",
+          "proteins": 5972,
+          "species_id": 242
+        }
+      ]
+    },
+    {
+      "clade_id": "C02a3c3bd792fbee1",
+      "taxa": 3,
+      "proteins": 6669,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C02a3c3bd792fbee1/proteomes",
+      "input_files": [
+        {
+          "filename": "F1174673.faa",
+          "sha256": "6d278e0a23f2bd0d038c2ad6c034e0a7f548a3e7bb59f8b7dc7e3316563d6bcb",
+          "proteins": 2505,
+          "species_id": 3
+        },
+        {
+          "filename": "F39416.faa",
+          "sha256": "af0080701e5a91fe69873021b0aff5e9adb2323380f3fe779a52939c5f0007a9",
+          "proteins": 1235,
+          "species_id": 354
+        },
+        {
+          "filename": "F43433.faa",
+          "sha256": "e69ab502d5fdace30390baa1f89ee73ba6b5096254385c5148dffaeb36b96930",
+          "proteins": 2929,
+          "species_id": 367
+        }
+      ]
+    },
+    {
+      "clade_id": "C9d60f21e505e60ad",
+      "taxa": 3,
+      "proteins": 6278,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C9d60f21e505e60ad/proteomes",
+      "input_files": [
+        {
+          "filename": "F1123529.faa",
+          "sha256": "fd2a47af3fb23092519ee29ea90b134eec35d953a11339fd53ba8ee903058daf",
+          "proteins": 1927,
+          "species_id": 2
+        },
+        {
+          "filename": "F82268.faa",
+          "sha256": "e00ba694d19a20ad52f72cf44f918a337a80b7c77d4f85bf195feb4f0b1c744e",
+          "proteins": 2408,
+          "species_id": 51
+        },
+        {
+          "filename": "F2725673.faa",
+          "sha256": "f9eb6743be288221cab92aa3fa29201186888d90577486fe3f028d0cb84e4672",
+          "proteins": 1943,
+          "species_id": 282
+        }
+      ]
+    },
+    {
+      "clade_id": "C14063697603e22d6",
+      "taxa": 1,
+      "proteins": 5972,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C14063697603e22d6/proteomes",
+      "input_files": [
+        {
+          "filename": "F203533.faa",
+          "sha256": "ebc70d74b55bbb1e9b6ee1f34f26bb6989e1e10b729aaed678c28229d645f149",
+          "proteins": 5972,
+          "species_id": 242
+        }
+      ]
+    },
+    {
+      "clade_id": "Cd8b53bfc74325972",
+      "taxa": 3,
+      "proteins": 5714,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cd8b53bfc74325972/proteomes",
+      "input_files": [
+        {
+          "filename": "F2340872.faa",
+          "sha256": "95cfa30230e6c896c30491b5b124b57a8820034ee355333731f971d690da3d40",
+          "proteins": 1142,
+          "species_id": 20
+        },
+        {
+          "filename": "F1938954.faa",
+          "sha256": "244ba0e4400549ea6838c38fb4bad3982ac63e6d3211faca09e77ce0594d23aa",
+          "proteins": 643,
+          "species_id": 231
+        },
+        {
+          "filename": "F994334.faa",
+          "sha256": "fc3b5660c84064f2f442329eb9d74df872505504516412f5787454fed4d538c4",
+          "proteins": 3929,
+          "species_id": 510
+        }
+      ]
+    },
+    {
+      "clade_id": "Ce273faeb1abceed2",
+      "taxa": 6,
+      "proteins": 5286,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ce273faeb1abceed2/proteomes",
+      "input_files": [
+        {
+          "filename": "F1851187.faa",
+          "sha256": "fc126678bbc5e0730dd47b139d5b539d4155cdef2eb6e9c095f4fac024c2b27e",
+          "proteins": 566,
+          "species_id": 14
+        },
+        {
+          "filename": "F1286916.faa",
+          "sha256": "00988869c8bb63abd8f6c107e523983fad97ada2846da820bb01ae0088356382",
+          "proteins": 1135,
+          "species_id": 131
+        },
+        {
+          "filename": "F1712513.faa",
+          "sha256": "1d9422b2d1063cf45c31705741c55485289c79bbb25892f943314a977f2c6af8",
+          "proteins": 694,
+          "species_id": 198
+        },
+        {
+          "filename": "F1851185.faa",
+          "sha256": "26b8af4c513baf1a97a7f7f547c5bc62a6840794144fb2f0105ea74ebaabf265",
+          "proteins": 1017,
+          "species_id": 219
+        },
+        {
+          "filename": "F1907219.faa",
+          "sha256": "fc38986b894ec3963b0f3ed2f0479c40e7d52776328f6332fc7f66aad7a21cb6",
+          "proteins": 1021,
+          "species_id": 227
+        },
+        {
+          "filename": "F78915.faa",
+          "sha256": "58920c7dcb04d27103a0a0fc0b0c2688f22c8c32be3cbbadd94a555c0843731d",
+          "proteins": 853,
+          "species_id": 486
+        }
+      ]
+    },
+    {
+      "clade_id": "C384e4a8607b279f9",
+      "taxa": 2,
+      "proteins": 5071,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C384e4a8607b279f9/proteomes",
+      "input_files": [
+        {
+          "filename": "F2340872.faa",
+          "sha256": "95cfa30230e6c896c30491b5b124b57a8820034ee355333731f971d690da3d40",
+          "proteins": 1142,
+          "species_id": 20
+        },
+        {
+          "filename": "F994334.faa",
+          "sha256": "fc3b5660c84064f2f442329eb9d74df872505504516412f5787454fed4d538c4",
+          "proteins": 3929,
+          "species_id": 510
+        }
+      ]
+    },
+    {
+      "clade_id": "C82404f02653dcfbe",
+      "taxa": 2,
+      "proteins": 4455,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C82404f02653dcfbe/proteomes",
+      "input_files": [
+        {
+          "filename": "F1498855.faa",
+          "sha256": "1ee6db24c7400c8f2a9325b29ad51eb936b4b0db9e602d06c492451d1ac059bd",
+          "proteins": 924,
+          "species_id": 7
+        },
+        {
+          "filename": "F1243177.faa",
+          "sha256": "ad83709e04001d02a25549b9ee64b7418152fe580d7fc13289cd03a9f8b3e055",
+          "proteins": 3531,
+          "species_id": 126
+        }
+      ]
+    },
+    {
+      "clade_id": "Cb15bc9ba8aa2a917",
+      "taxa": 3,
+      "proteins": 3637,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cb15bc9ba8aa2a917/proteomes",
+      "input_files": [
+        {
+          "filename": "F2813651.faa",
+          "sha256": "ab1f8897ca92eae508eb6b64ff005ddada040e09a47d6bce5530d98b7b2110c2",
+          "proteins": 800,
+          "species_id": 23
+        },
+        {
+          "filename": "F1814901.faa",
+          "sha256": "c4d37cc38079fb51d155fdab223cb0d7ca8466f1445ee9e014238705cb5a21c0",
+          "proteins": 1992,
+          "species_id": 215
+        },
+        {
+          "filename": "F97331.faa",
+          "sha256": "478ae7b259599117eba8eb9143c210ae4eb0d8a89188beb9c945eff8a15d0cb5",
+          "proteins": 845,
+          "species_id": 505
+        }
+      ]
+    },
+    {
+      "clade_id": "C26cc231d54848c44",
+      "taxa": 3,
+      "proteins": 3343,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C26cc231d54848c44/proteomes",
+      "input_files": [
+        {
+          "filename": "F215637.faa",
+          "sha256": "39d88880e6f9877352bfa5c1f39c09dd1f660171fe920fc8622cd32502d0f78a",
+          "proteins": 500,
+          "species_id": 18
+        },
+        {
+          "filename": "F1520584.faa",
+          "sha256": "cef742a36225cad4014f322f1412574a18a5363a32f0539108b4dcf98069db43",
+          "proteins": 1114,
+          "species_id": 174
+        },
+        {
+          "filename": "F78921.faa",
+          "sha256": "8439ccaf76743ec9a4321e3097ab72dd4872ad27f0eb9dc6ad22813b1c36c543",
+          "proteins": 1729,
+          "species_id": 487
+        }
+      ]
+    },
+    {
+      "clade_id": "Ccae1a137f32d19f6",
+      "taxa": 2,
+      "proteins": 3139,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ccae1a137f32d19f6/proteomes",
+      "input_files": [
+        {
+          "filename": "O81824.faa",
+          "sha256": "c4be30d097020073d066b08a8fea0748376c4c285cf561245bef44b60bc5c4a1",
+          "proteins": 1420,
+          "species_id": 59
+        },
+        {
+          "filename": "O946362.faa",
+          "sha256": "6432ff08cf525bfd56aef8c3cdb6ad991449fc945863fd6d05324acf3b6e9a62",
+          "proteins": 1719,
+          "species_id": 60
+        }
+      ]
+    },
+    {
+      "clade_id": "Ca849492999992888",
+      "taxa": 5,
+      "proteins": 3093,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ca849492999992888/proteomes",
+      "input_files": [
+        {
+          "filename": "F1230402.faa",
+          "sha256": "73944314a8aa977999ba97c200df858cb4282d30fb5355bd1dd7983b23b67416",
+          "proteins": 2177,
+          "species_id": 5
+        },
+        {
+          "filename": "F1708542.faa",
+          "sha256": "5b33b1fbfb19b11a8bd3dd7fd8fa2c3e067e73c5ef1b6efb8db3e8a7cc0c6315",
+          "proteins": 30,
+          "species_id": 12
+        },
+        {
+          "filename": "F1540922.faa",
+          "sha256": "598b6fd9ccb4fea3110732e98fcddf65b4291632e0221e78d8f1f39419f6d700",
+          "proteins": 189,
+          "species_id": 177
+        },
+        {
+          "filename": "F1708541.faa",
+          "sha256": "935ec64b483628052d9db492ae25e9c18ab6c1cff98bff8b6e937f1a52681b89",
+          "proteins": 347,
+          "species_id": 197
+        },
+        {
+          "filename": "F245174.faa",
+          "sha256": "3a9fef34fe11e6be65c6227412256f5ffe2715c8cea3e93ad18dbf2a1715f9ca",
+          "proteins": 350,
+          "species_id": 262
+        }
+      ]
+    },
+    {
+      "clade_id": "C785f3ec7eb32f30b",
+      "taxa": 1,
+      "proteins": 2698,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C785f3ec7eb32f30b/proteomes",
+      "input_files": [
+        {
+          "filename": "F278681.faa",
+          "sha256": "980dda6a2bc68435c4ef5d5bc31c46eea59eed8132dc051e58335b7929915b50",
+          "proteins": 2698,
+          "species_id": 22
+        }
+      ]
+    },
+    {
+      "clade_id": "Ca7b58738e79b33aa",
+      "taxa": 2,
+      "proteins": 2415,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Ca7b58738e79b33aa/proteomes",
+      "input_files": [
+        {
+          "filename": "F44565.faa",
+          "sha256": "364402855cb5706cd0f52993c34ce68113504fe5661e67b3cc0689bfcd5c7a45",
+          "proteins": 1209,
+          "species_id": 35
+        },
+        {
+          "filename": "F69979.faa",
+          "sha256": "dd86ad01814f96e04f7ff10b0d30e00f184828c71a8fff0df767cb283ab2b6df",
+          "proteins": 1206,
+          "species_id": 47
+        }
+      ]
+    },
+    {
+      "clade_id": "C620c594d4e5e1ad9",
+      "taxa": 2,
+      "proteins": 2314,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C620c594d4e5e1ad9/proteomes",
+      "input_files": [
+        {
+          "filename": "F423460.faa",
+          "sha256": "1e14e9c25dbdd8a3321a932f14166e0c6e40cfbdf24386c14af8f8323c4b4f5c",
+          "proteins": 380,
+          "species_id": 32
+        },
+        {
+          "filename": "F34480.faa",
+          "sha256": "b65e2199d3839d31c79ffda9712a5bd42bd116ecd09d99ee2b6e0de59c7e7276",
+          "proteins": 1934,
+          "species_id": 339
+        }
+      ]
+    },
+    {
+      "clade_id": "C22a3f476a713cdaf",
+      "taxa": 3,
+      "proteins": 2061,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C22a3f476a713cdaf/proteomes",
+      "input_files": [
+        {
+          "filename": "F44089.faa",
+          "sha256": "664a91d5a584d1837942366e456255e9c0e4a20d4ab009e64ecea9bf12003f8d",
+          "proteins": 362,
+          "species_id": 33
+        },
+        {
+          "filename": "F1125753.faa",
+          "sha256": "4ed8c73b5a369201303dd7f6a05e6f8d19d23b0200f772c2d22c4fdd8a052c47",
+          "proteins": 708,
+          "species_id": 102
+        },
+        {
+          "filename": "F383834.faa",
+          "sha256": "ede0cd285a1c68b2b4ef99cd990e0bb8ed99407814412a5579a692a77e361437",
+          "proteins": 991,
+          "species_id": 350
+        }
+      ]
+    },
+    {
+      "clade_id": "C574795256e6a3995",
+      "taxa": 2,
+      "proteins": 2000,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C574795256e6a3995/proteomes",
+      "input_files": [
+        {
+          "filename": "O192875.faa",
+          "sha256": "a3fd3e956efd5e02ae913b145ecd1aaaee58711e311a44a9ea26879834aff833",
+          "proteins": 875,
+          "species_id": 56
+        },
+        {
+          "filename": "OFS5426470.faa",
+          "sha256": "b2ea96be0e5a4faef5391a11b2ed160c75b98c67ed8cabcf7e8e0cd2adc42a11",
+          "proteins": 1125,
+          "species_id": 62
+        }
+      ]
+    },
+    {
+      "clade_id": "C1b382fe73f9ee567",
+      "taxa": 2,
+      "proteins": 1727,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C1b382fe73f9ee567/proteomes",
+      "input_files": [
+        {
+          "filename": "F1055551.faa",
+          "sha256": "e49a2b79a74350b892b54c189e3aaadafaf567fe2e8547a27a17723ffb2b2355",
+          "proteins": 963,
+          "species_id": 0
+        },
+        {
+          "filename": "F34349.faa",
+          "sha256": "9a4a6418a90521ebef37410b9e7710e8e31d515c850ab1830ec0d77c3585fd56",
+          "proteins": 764,
+          "species_id": 28
+        }
+      ]
+    },
+    {
+      "clade_id": "C41cfc0d1f2d127b0",
+      "taxa": 1,
+      "proteins": 1590,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C41cfc0d1f2d127b0/proteomes",
+      "input_files": [
+        {
+          "filename": "F911321.faa",
+          "sha256": "739045942066c605d7048826a01aae855caf73373d879563f91e3f27542b1843",
+          "proteins": 1590,
+          "species_id": 52
+        }
+      ]
+    },
+    {
+      "clade_id": "C6208ef0f7750c111",
+      "taxa": 1,
+      "proteins": 1498,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C6208ef0f7750c111/proteomes",
+      "input_files": [
+        {
+          "filename": "O691883.faa",
+          "sha256": "2659b42856cef11efcfb3f267af4234a8b4879cf54d0ec9aca006bc7eacefdc3",
+          "proteins": 1498,
+          "species_id": 58
+        }
+      ]
+    },
+    {
+      "clade_id": "Cc2356069e9d1e79c",
+      "taxa": 1,
+      "proteins": 1252,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cc2356069e9d1e79c/proteomes",
+      "input_files": [
+        {
+          "filename": "F281847.faa",
+          "sha256": "3180701c4c78e93dc159a4f3a19ca62e797594504a08f7a8ca7aad2b1d854e4c",
+          "proteins": 1252,
+          "species_id": 24
+        }
+      ]
+    },
+    {
+      "clade_id": "Cb93f907a06806da7",
+      "taxa": 2,
+      "proteins": 1121,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/Cb93f907a06806da7/proteomes",
+      "input_files": [
+        {
+          "filename": "F1217826.faa",
+          "sha256": "cf19fb741ae696aa827605d0ab3ba7a7b530476cdb3896afa71c786d3a2c254e",
+          "proteins": 825,
+          "species_id": 4
+        },
+        {
+          "filename": "F273283.faa",
+          "sha256": "cce9f88a0fe98701a913094bfeb1a7ff4924dfde8e3cd2e51faf4303688c9212",
+          "proteins": 296,
+          "species_id": 21
+        }
+      ]
+    },
+    {
+      "clade_id": "C7902699be42c8a8e",
+      "taxa": 1,
+      "proteins": 924,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C7902699be42c8a8e/proteomes",
+      "input_files": [
+        {
+          "filename": "F1498855.faa",
+          "sha256": "1ee6db24c7400c8f2a9325b29ad51eb936b4b0db9e602d06c492451d1ac059bd",
+          "proteins": 924,
+          "species_id": 7
+        }
+      ]
+    },
+    {
+      "clade_id": "C7688b6ef52555962",
+      "taxa": 1,
+      "proteins": 875,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C7688b6ef52555962/proteomes",
+      "input_files": [
+        {
+          "filename": "O192875.faa",
+          "sha256": "a3fd3e956efd5e02ae913b145ecd1aaaee58711e311a44a9ea26879834aff833",
+          "proteins": 875,
+          "species_id": 56
+        }
+      ]
+    },
+    {
+      "clade_id": "C59e19706d51d39f6",
+      "taxa": 1,
+      "proteins": 764,
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades/C59e19706d51d39f6/proteomes",
+      "input_files": [
+        {
+          "filename": "F34349.faa",
+          "sha256": "9a4a6418a90521ebef37410b9e7710e8e31d515c850ab1830ec0d77c3585fd56",
+          "proteins": 764,
+          "species_id": 28
+        }
+      ]
+    }
+  ],
+  "pins": {
+    "scripts/run_clade_discovery.py": "2cab50a5f717089871863d8f978e4920c31d2ee0785fc8761b69007e89deda22",
+    "scripts/advance_clade_discovery.py": "9e21d105ae3837f2797fea90dce67e30560d41e41f69a18bec282299b61ea588",
+    "scripts/readback_clade_discovery.py": "d28d5230c648a5e97fb0f193265f5224d5d7156900b30d16f075580051373058",
+    "scripts/audit_orthology_family_universe.py": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+    "metadata/clade_discovery_input_readback.json": "15bdd91534d08d6607d7e090b888ff9aa908e850a22d3d22f01a7b729e0696cb",
+    "metadata/clade_discovery_runner_fixture_readback.json": "492d82d2fad2a9e7e9d6004aa37391ba7472eddd7577b4400883581f4ddb9fc3",
+    "metadata/clade_discovery_input_receipt.json": "c8ada4b9050c0f26627db78c8212e86c201d669faa7e295d41a25f9de4d87b6a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/clades.json": "bc498c0a066fd27366a5f1609ceb898fe750d22160d3745d50dff2225cb1a051",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/clade-discovery-inputs-v1/files.tsv": "50f89590b96a254e14966aded71516caa65a427fceb053cd4e4da6d4d7bfd70c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder": "a9e297a0bc4c584d5cf47186845cb2f0514987396f8c75ef349cc664027c72cc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond": "c7f86801666886519d62175863af95eb4d34dc6486043f3e9f9b81e94a491978",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin/mcl": "ff32e8535e4913b3fc2646d1497c6c4ebd480ad404ad9e302f99faddee2d1db1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/config.json": "10a10a93262c9676865f03ba05b2b77d48285c312dca435d2458939894a474b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/__init__.py": "fdf01b248f3a691292802e94b6a39758bce6e8f8d04330e93b41f7446476d06d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/__main__.py": "23f930bf8581e17b1e7ed0e1f5b234b993d59d8377a6c33e5a9255bcf9407791",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/citation.py": "a33fdf4f5501421a342e3a25aa5720e820804439bd4f2a858e3c118b5fc0453c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/_version.py": "a872cc0baf1ac1e5319805e63022a7d406d257df6b99f6a0ba5a557142bacb7f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/trees2ologs_of.py": "e1e570832d85d807d16579718648b735e792909c07a5a69012125b49ea600d50",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/resolve.py": "4da1486afab8dbd2402bd934f89e746f9abfdd812e013def4b3afee91980b6e4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/infer_trees.py": "176745c415b6c2650062a9969f5b81944beda13bb04723146f7c039c0e2457d1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/accelerate.py": "0501304748d8e983381f13d137d3831059c55a4972f040da302779c58997f0be",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/orthogroups_set.py": "d2e59743428e04c1fee5e4c77c000d327c809d4b9403351ff55ff70579adfa2e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/gathering.py": "d942df722f3d9c94271e357683e080603ee3f958e6f805869d7d6d6cb5a40e3f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/orthogroups/sample_genes.py": "4458fa603a6f2a90b7f4eee018169697f78dac5c2164134440c2fe886cb98e21",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/helpinfo.py": "3fdefea21aac370330372221d4bc00dece427a46e660ec16e46493eb9123a626",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/check_dependencies.py": "0aeb1b7a3562801a02c2497841fe7f139848259d1dbef28979e6e1ef35b4dcf9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/run_info.py": "f436e2677a3714cfcb7aa9c78f8c9a37063a84afa815e74a82f4eee2848b46bb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/run_commands.py": "10aeb00c3affb31175a337478957807b79b153b9b91597b29e4dccb782d8d387",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/main.py": "a4b5222890d987bdef7fa0c1ff6031e55c5a0a27fcbbc45c9b7be02dfd252588",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/species_info.py": "06beee8f0b1ad8f258b01aa76d8818fc6fc31beca54b6a3bfc65a97fa2dd78bd",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/process_args.py": "ba9f81896bfc1313bb50a0cda5acef8027c7bb38b33ca999aa78041c0ff81f82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/split_ortholog_files.py": "612aab4ba5177ed017ad480411f1009d3010c9eb6d6bac8637883568be4662c0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/fasta_processor.py": "cc9880875cf298192e7194c5c1134005dcfbe7e79215351ff5855486849b4055",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/blast_file_processor.py": "c7a0aed3a773b2fb377a953c17dfde581a74b299b678f3b174659a2615f73e0c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/parallel_task_manager.py": "834a1e9fb28d0cc458f13b4b4532390d76b999db686593fe1593895a63c00a7a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/files.py": "eb26ae6f62eb02aa1311414e0f3cc297aa8b20e8dd441e0b307ffc4e3dd69a66",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/matrices.py": "0d7452e0c935e6364a3833b1e31393a53344d46f4fa4fdd225c3dcf05ac5520b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/util.py": "673156c3c58d3d633e027a58b1f9e8d5afb73e660bbcf3ae4f520d2ebe491912",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/program_caller.py": "10576ebdf0f39c40726ec952d443e241b46c4bc6f57856be52072ff5f19563e4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/tree.py": "6581d8f8329cb330d5c76322dc6456fd8e76046629aa391531269230e3082c59",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/consensus_tree.py": "b504bd66028a808d14f85fa3974fed69d65d9e06225a67110c790dd4fa1c06a8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/stride.py": "69e45673035a5b112d620eb2724e207f2ee03580f92a0a72c3eb63f89e6f7fa2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/newick.py": "52e7f9c29046dfb1bcf9d12f7fbc4c4f4b98511238967070b8fbf9495b2b05f7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/waterfall.py": "304324b1967f917dd523c9d98a7d0c7cffba7cd730ac8b31176ef4f0f80918c8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/trim.py": "1794574ca2a4c8a6fc62b5e808614119113bc6123d505a08725e55991105eeca",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/dendroblast.py": "ee2313ba8af51371a54e1b39a4d33802dc25266ee302d4c28ccf3b71ede04846",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/trees_msa.py": "780cf0691ae41eae1278f10216fa34a0ecac708f5ed945c94fda22ea6d2d2745",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/astral.py": "566a0ac12955ed2cc8bc7034d7a092f358b7b6a740c6a6a29414042e06fa9a39",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/stag.py": "f8a2a4952e90b8b8306d5bf6b87b7cf36c1ece0ab9918ba0066c19c1ce257212",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/file_updates/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/file_updates/ogs.py": "e45c16079aa1188f0784323075eaeac09e8fd3c677d8e4884dc83f58720e3911",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/file_updates/file_updates.py": "2e493b0b3cae8d9af7bb7a5e6ee92443db70e6b41226c53dc7a5bfc5a820d882",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/file_updates/trees.py": "ba94f0265f1c2b97b6e772a6d8d30d263ac576d16257dccd54c5344f3c4d9436",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/comparative_genomics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/comparative_genomics/stats.py": "d6fd249da7e9595fc71f31529a399498087c93a155f4ac13a3d570c52d7abd70",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/comparative_genomics/orthologues.py": "64a4a11a0a184572c14bfbc71eef977f5cd7ade7ed41adaf1f85ae93e3354f65"
+  },
+  "resources": {
+    "search_threads": 16,
+    "analysis_threads": 4,
+    "service_memory_limit_gib": 192,
+    "minimum_available_memory_gib": 256,
+    "stop_available_memory_gib": 32,
+    "minimum_free_disk_gib": 1024,
+    "output_allowance_gib": 1024,
+    "step_timeout_hours": 336,
+    "planning_hours": [
+      4,
+      168
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "resource_basis": {
+    "unique_clades": 60,
+    "shared_clades": 30,
+    "single_taxon_clades": 8,
+    "proteins_across_runs": 1782124,
+    "residues_across_runs": 452966656,
+    "ordered_candidate_pairs_including_self": 235111040244,
+    "largest_clade_proteins": 355735,
+    "prior_core_proteins": 597213,
+    "prior_core_full_pipeline_seconds": 6066.5813455430325,
+    "prior_core_search_threads": 32,
+    "limitations": "Planning envelope, not measured ETA or confidence bound. Prior core includes downstream steps and different sequence composition; pair dimensions are not executed alignment counts. Large-clade sparsity and MCL memory are uncertain. Runtime, output and available memory are monitored; service enforces 192 GiB."
+  },
+  "method": {
+    "mcl_inflation": 1.2,
+    "scores_v2": true,
+    "discovery_only": true,
+    "no_fix_files": true,
+    "multitaxon_entry": "-f",
+    "single_taxon_entry": "native-compatible complete self-search followed by -b",
+    "single_search": "Installed diamond config: BLOSUM62, gap 11/1, more-sensitive, e=0.001, gzip; thread count raised to 16. Other DIAMOND defaults retained.",
+    "reuse": "Identical full species-set clades only; guide-specific partitions kept separate."
+  },
+  "remaining_requirements": [
+    "Independent full readback after queue completion",
+    "Unique guide-level merge with replacement of retained singleton memberships",
+    "Added family trees, expanded reconciliation and cross-clade homology sensitivity"
+  ]
+}

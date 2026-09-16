@@ -1,0 +1,61 @@
+{
+  "output": "results/orthology/clade-discovery-runner-fixture-v1",
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "orthofinder": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+  "diamond": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond",
+  "environment_path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS//bin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS//bin:/home/bizon/.codex/tmp/arg0/codex-arg0FueMRM:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/home/bizon/.grok/bin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/bin:/home/bizon/.grok/bin:/home/bizon/.cargo/bin:/home/bizon/anaconda3/bin:/home/bizon/anaconda3/condabin:/usr/local/cuda/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/VSEARCH/vsearch-2.30.5-linux-x86_64/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/clustalo:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/eggnog-mapper/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hmmer-3.4/src:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/NPM_DOWNLOADS/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/raxml-ng_v1.2.2_linux_x86_64/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/FastTree_v220/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/TREE-QMC/build/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/muscle_v5.3/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/indelible/:/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/:/usr/local/cuda/bin:/home/bizon/.pyenv/plugins/pyenv-virtualenv/shims:/home/bizon/.pyenv/shims:/home/bizon/.pyenv/bin:/home/bizon/.vscode-server/cli/servers/Stable-258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/bizon/.cache/lm-studio/bin",
+  "cases": [
+    {
+      "clade_id": "synthetic_1",
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/native-clade-discovery-fixture-v2/1-taxon-no-fix/inputs",
+      "input_files": [
+        {
+          "filename": "SyntheticTaxon0.faa",
+          "sha256": "9dec35f91eef30a8196d8fa9b3338ce23f018dbf336a2cfd69a84b9664aca2ee",
+          "proteins": 48,
+          "species_id": 100
+        }
+      ],
+      "taxa": 1,
+      "proteins": 48
+    },
+    {
+      "clade_id": "synthetic_2",
+      "input_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/native-clade-discovery-fixture-v2/2-taxon-no-fix/inputs",
+      "input_files": [
+        {
+          "filename": "SyntheticTaxon0.faa",
+          "sha256": "9dec35f91eef30a8196d8fa9b3338ce23f018dbf336a2cfd69a84b9664aca2ee",
+          "proteins": 48,
+          "species_id": 100
+        },
+        {
+          "filename": "SyntheticTaxon1.faa",
+          "sha256": "f34570fb49b719fe6776e3d695839a2fb1e8e438455f343b0a67c493a7f922ee",
+          "proteins": 48,
+          "species_id": 101
+        }
+      ],
+      "taxa": 2,
+      "proteins": 96
+    }
+  ],
+  "pins": {
+    "scripts/run_clade_discovery.py": "2cab50a5f717089871863d8f978e4920c31d2ee0785fc8761b69007e89deda22",
+    "scripts/audit_orthology_family_universe.py": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder": "a9e297a0bc4c584d5cf47186845cb2f0514987396f8c75ef349cc664027c72cc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond": "c7f86801666886519d62175863af95eb4d34dc6486043f3e9f9b81e94a491978",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mcl-02-063/bin/mcl": "ff32e8535e4913b3fc2646d1497c6c4ebd480ad404ad9e302f99faddee2d1db1",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/config.json": "10a10a93262c9676865f03ba05b2b77d48285c312dca435d2458939894a474b3"
+  },
+  "resources": {
+    "search_threads": 2,
+    "analysis_threads": 1,
+    "minimum_free_disk_gib": 10,
+    "minimum_available_memory_gib": 4,
+    "stop_available_memory_gib": 2,
+    "output_allowance_gib": 2,
+    "step_timeout_hours": 0.1
+  },
+  "scope": "Execute production runner against synthetic single/two-taxon fixtures, including actual self-search generation; no biological pilot."
+}

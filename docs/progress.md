@@ -3002,3 +3002,8 @@ Staged and independently verified all 1,390,832 intermediate discovery proteins 
 ### 2026-09-16 — native discovery paths validated on software fixtures
 
 Executed and independently checked two-taxon and single-taxon discovery software paths. Found that --only-groups still triggers downstream trees under default file fixing; --no-fix-files preserves the exact fixture family partition while stopping before tree inference. Found that one-taxon -f and -b with -o both fail with exit code zero. A complete native one-taxon self-search restart without -o recovers all 48 synthetic input IDs in 24 expected groups and leaves source artifacts unchanged. All eight biological single-taxon clades remain included in the planned analysis. Production self-search generation, full resource planning and artifact-level completion checks remain pending; no biological subset/pilot or discovery batch was run.
+
+
+### 2026-09-16 — full 60-clade discovery batch running
+
+Launched all 60 distinct discovery clades with both guide alternatives and all eight single-taxon cases included. The production runner passed synthetic end-to-end checks, including actual self-search generation and independent native/BioPython readback. The largest 355,735-protein clade entered DIAMOND all-versus-all search with 16 live workers. Resource limits are 16 search/four analysis threads, 192 GiB memory and 1 TiB output, with explicit stop conditions. The broad 4–168-hour planning envelope will be refined from production timings. Completed clades retain identity-checked receipts, and independent full output readback is queued automatically. Guide-level merging, expanded family trees and reconciliation remain pending. Existing GPU prediction and other analyses continue unchanged.

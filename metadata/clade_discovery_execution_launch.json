@@ -1,0 +1,25 @@
+{
+  "status": "launched_full_clade_discovery_with_readback",
+  "unit": "fungal-clade-discovery-20260916.service",
+  "pid": 3703532,
+  "created": 1789588971.68,
+  "plan_sha256": "ef53a23d1910de0a0b15adc515e411bef47bf768b8e0267101bcc58c058f0693",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-clade-discovery-20260916.service",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=MemoryMax=192G",
+    "--property=MemorySwapMax=0",
+    "--property=KillMode=control-group",
+    "--collect",
+    "/home/bizon/anaconda3/bin/python",
+    "-u",
+    "scripts/advance_clade_discovery.py",
+    "--plan",
+    "metadata/clade_discovery_execution_plan.json"
+  ],
+  "launched_at": 1789588971.8370018,
+  "available_memory_gib": 539.6621284484863,
+  "scope": "All60 distinct clades in one serial queue; synthetic fixtures only preceded production. Both guide alternatives and all8 single-taxon clades included. Independent readback follows completion."
+}
