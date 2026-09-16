@@ -1,0 +1,25 @@
+{
+  "output": "results/orthology/clade-discovery-inputs-v1",
+  "review": "metadata/unfinished_clade_discovery_scope_review.json",
+  "taxon_coverage": "metadata/full_protein_family_coverage_taxa.tsv",
+  "intermediate_checksums": "results/orthology/full-protein-family-coverage-v1/intermediate_source_checksums.json",
+  "pins": {
+    "scripts/prepare_clade_discovery_inputs.py": "5434de7870dea456c83daeb9654be6b963742b28276738ce68306d2f97107158",
+    "metadata/unfinished_clade_discovery_scope_review.json": "3a9dcebf80d82517d665143d1329ed7ad6075615eb52ed879f94e40f6928934b",
+    "metadata/unfinished_clade_discovery_scope_readback.json": "1a2c73aec7d65c385e64daf95321baa1164452d28e153953f43a61c2deee53f8",
+    "metadata/full_protein_family_coverage_taxa.tsv": "40cd126a85240182f147360f5936ed4c2b1055d49f81ca3e169d62d94eccad10",
+    "results/orthology/full-protein-family-coverage-v1/intermediate_source_checksums.json": "f89435bbb7cf00ece24427405f1c279ebaf7d3d23c29ba5f3731794adf718e97",
+    "metadata/full_protein_family_coverage_readback.json": "e7c541741ea0ee9c0a3432fe4ca6c00842aab50e34b17db5d16b378d6229e690"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 2,
+    "output_allowance_gib": 2,
+    "minimum_free_disk_gib": 10,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "cost": "Existing host; no new charges"
+  }
+}

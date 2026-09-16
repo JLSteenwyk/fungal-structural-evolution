@@ -1,0 +1,24 @@
+{
+  "status": "prepared_complete_unique_clade_discovery_inputs",
+  "guides": 2,
+  "clades_per_guide": {
+    "profile": 45,
+    "mafft": 45
+  },
+  "unique_clades": 60,
+  "shared_clades": 30,
+  "unique_single_taxon_clades": 8,
+  "species": 526,
+  "distinct_input_proteins": 1390832,
+  "proteins_in_unique_clade_runs": 1782124,
+  "residues_in_unique_clade_runs": 452966656,
+  "copied_files": 676,
+  "copied_bytes": 479409438,
+  "plan_sha256": "996404350928465fcb936edc3cd8a337cb3e1247a26216de98aebee2e2de5579",
+  "script_sha256": "5434de7870dea456c83daeb9654be6b963742b28276738ce68306d2f97107158",
+  "artifacts": {
+    "files.tsv": "50f89590b96a254e14966aded71516caa65a427fceb053cd4e4da6d4d7bfd70c",
+    "clades.json": "bc498c0a066fd27366a5f1609ceb898fe750d22160d3745d50dff2225cb1a051"
+  },
+  "interpretation": "Full intermediate discovery input retained for both conditional guides; only identical complete taxon sets share a planned run. Native original protein IDs are preserved as FASTA headers. No sequence filtering, singleton removal, clustering or reconciliation performed. Single-taxon clades remain explicit and require an appropriate inference path before launch."
+}
