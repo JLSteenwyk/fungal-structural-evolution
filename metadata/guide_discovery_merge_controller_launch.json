@@ -1,0 +1,23 @@
+{
+  "status": "launched_waiting_for_discovery_and_readback",
+  "unit": "fungal-guide-discovery-merge-20260916.service",
+  "pid": 1127241,
+  "created": 1789590620.21,
+  "launched_at": 1789590620.3776248,
+  "config_sha256": "4fcb85c73f09b0307b1fae7aa99b7e8d619273b0e8cb99790b3f7e6e4f04ffe1",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-guide-discovery-merge-20260916.service",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--property=KillMode=control-group",
+    "--collect",
+    "/home/bizon/anaconda3/bin/python",
+    "-u",
+    "scripts/advance_guide_discovery_merge.py",
+    "--config",
+    "metadata/guide_discovery_merge_controller_config.json"
+  ]
+}

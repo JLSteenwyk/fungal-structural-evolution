@@ -1,0 +1,39 @@
+{
+  "controller_output": "results/orthology/guide-discovery-merge-controller-v1",
+  "producer": {
+    "pid": 3703532,
+    "created": 1789588971.68
+  },
+  "discovery_output": "results/orthology/clade-discovery-v1",
+  "discovery_plan_sha256": "ef53a23d1910de0a0b15adc515e411bef47bf768b8e0267101bcc58c058f0693",
+  "merge_plan": "metadata/guide_discovery_merge_plan.json",
+  "readback_output": "results/orthology/guide-discovery-merge-v1/readback.json",
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "controller_python": "/home/bizon/anaconda3/bin/python",
+  "native_python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+  "minimum_available_memory_gib": 32,
+  "minimum_free_disk_gib": 20,
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 8,
+    "service_memory_limit_gib": 16,
+    "output_allowance_gib": 2,
+    "planning_hours_after_discovery": [
+      0.2,
+      3
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "pins": {
+    "scripts/advance_guide_discovery_merge.py": "3b969a2fbd1149e11e348ae79e406018e89ff11811b90724bd2164d5b6abc264",
+    "scripts/merge_clade_discovery_partitions.py": "acd44a2e221130f17efff27c2fa80becc5cecee561b60387b14dc33c8c1119c5",
+    "scripts/readback_guide_discovery_merge.py": "61f16e404b270a7b57c773d473b4b265facb9ab9b55ac656b04096ce5aa593d3",
+    "scripts/audit_orthology_family_universe.py": "93a546d7f62ad28b1273a35f793d9dd117da358bce45ea0b4d0da3aba42cb6ec",
+    "metadata/guide_discovery_merge_plan.json": "82ca90574bda6d9d1e778f14c3a5a9ba1e99eea7d54c37ff25f941803bc9dbd8",
+    "metadata/clade_discovery_execution_plan.json": "ef53a23d1910de0a0b15adc515e411bef47bf768b8e0267101bcc58c058f0693",
+    "metadata/guide_discovery_merge_readback_fixture.json": "28ce2febbe3eb7c02e26c95731b3da062655037d26be626f1e7f8986c5cfdcaf",
+    "metadata/guide_merge_readback_rejections.json": "b3bc558a2673d0dc95c51612afe91eb477fc6282afb7287b2e1a5eb88f8885a6",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590"
+  },
+  "scope": "Wait for exact live discovery controller, require successful independent discovery readback, merge both complete guide partitions and independently validate all memberships/crosswalks. Does not launch tree inference or reconciliation."
+}

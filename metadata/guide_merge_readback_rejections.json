@@ -1,0 +1,33 @@
+{
+  "status": "passed_rechecksummed_merge_corruption_fixtures",
+  "cases": [
+    {
+      "case": "wrong_source_family",
+      "rejected": true,
+      "reason": "Source crosswalk membership differs"
+    },
+    {
+      "case": "wrong_tree_candidate",
+      "rejected": true,
+      "reason": "Original tree candidate differs"
+    },
+    {
+      "case": "wrong_singleton_target",
+      "rejected": true,
+      "reason": "Singleton relocation differs"
+    },
+    {
+      "case": "duplicate_serialized_gene",
+      "rejected": true,
+      "reason": "Serialized indexing or multiplicity differs"
+    },
+    {
+      "case": "missing_serialized_gene",
+      "rejected": true,
+      "reason": "Source crosswalk membership differs"
+    }
+  ],
+  "script_sha256": "ae7bd2a63c2a19bfd2c4e10574886148c1c5fb29268bb282b1c39faa813deac9",
+  "auditor_sha256": "61f16e404b270a7b57c773d473b4b265facb9ab9b55ac656b04096ce5aa593d3",
+  "scope": "Five synthetic output corruptions with updated artifact/plan digests test semantic validation rather than checksum rejection. Original biological and synthetic source artifacts are untouched."
+}

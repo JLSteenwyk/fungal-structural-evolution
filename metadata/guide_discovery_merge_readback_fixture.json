@@ -1,0 +1,27 @@
+{
+  "status": "passed_complete_guide_discovery_merge_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "proteins": 99,
+      "families": 25,
+      "retained_multi_families": 1,
+      "singletons_relocated": 1,
+      "all_memberships_and_crosswalks_checked": true
+    },
+    {
+      "guide": "mafft",
+      "proteins": 99,
+      "families": 25,
+      "retained_multi_families": 1,
+      "singletons_relocated": 1,
+      "all_memberships_and_crosswalks_checked": true
+    }
+  ],
+  "plan_sha256": "e57823c709e554d11ef1fee88858515bcad1e5587e3b180a6611a32d0f1680b6",
+  "merge_receipt_sha256": "8f3be89323b75531aae0d12ac581a4d0e33eda0b90e3b156ce2534cc7e99432a",
+  "script_sha256": "61f16e404b270a7b57c773d473b4b265facb9ab9b55ac656b04096ce5aa593d3",
+  "native_reader_sha256": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+  "peak_rss_kib": 172456,
+  "scope": "Every serialized merged family checked against original or discovered source memberships, all full-universe protein identities, contiguous indices, source/tree-candidate crosswalks and all singleton relocations. Does not validate biological homology or copy/install gene trees."
+}
