@@ -1,0 +1,30 @@
+{
+  "status": "complete_interrupted_orthology_repair_disposition",
+  "verified_at": 1789567546.640405,
+  "counts": {
+    "families": 104138,
+    "source_sequences": 4485438,
+    "expected_missing_alignment": 60423,
+    "expected_missing_tree": 71500,
+    "valid_alignment": 43715,
+    "valid_tree": 32637
+  },
+  "required_tree_repairs": [
+    {
+      "family": "OG0000017",
+      "source_sequences": "55981",
+      "source_duplicate_ids": "0",
+      "source_sha256": "6ca2ddc21fda535053065e3b5f35698e0d046bb83dd5d7c3c138bb049eaad87d",
+      "alignment_status": "content_checks_passed",
+      "alignment_columns": "27697",
+      "alignment_sha256": "76389fed0f41bc6bac7688126c5acf194454440185cca7364b54a84db2ad51e6",
+      "tree_status": "empty",
+      "tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "issues": ""
+    }
+  ],
+  "inventory_receipt_sha256": "bb04d98f8caef6b922c153ed10618fd130a3ff4ba8a320d39f6cdb2f2a4ed6fa",
+  "universe_receipt_sha256": "c7154c6ad0f55e83a764fbdefbb938d2336f5e8af95ff545a6834b114fad4c88",
+  "decision": "Retain all 43715 validated alignments and 32637 validated trees. Rebuild only empty OG0000017 tree in an isolated output, validate it before installation, then assess native from-trees continuation. No production artifacts modified.",
+  "limits": "Content checks establish identity/shape/residue preservation and tree syntax/branches, not inferred homology or exact trimming mask. OG0000017 requires a separate large-family resource estimate before launch."
+}

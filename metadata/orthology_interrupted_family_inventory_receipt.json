@@ -1,0 +1,23 @@
+{
+  "status": "complete_interrupted_family_artifact_inventory",
+  "families": 104138,
+  "source_sequences": 4485438,
+  "counts": {
+    "alignment_content_checks_passed": 43715,
+    "tree_tip_branch_checks_passed": 32637,
+    "source_duplicate_families": 0,
+    "tree_empty": 1,
+    "tree_missing": 71500,
+    "alignment_missing": 60423
+  },
+  "orphan_artifacts": {
+    "Alignments_ids": [],
+    "Trees_ids": []
+  },
+  "elapsed_seconds": 1522.3765244483948,
+  "script_sha256": "3a318be1fc67942aa00d3d77fcdddaab25778e17de3e0093025175eca67c5caa",
+  "artifacts": {
+    "families.tsv": "def87e794f83e66762cd47be6b60544845cd07b1bc98adeb48f5c03bdf9f0860"
+  },
+  "interpretation": "Artifact inventory, not inferred orthology validation. Missing trees may be expected for small families; disposition requires source-workflow review. Retained-residue subsequence checks allow upstream column trimming; they do not validate alignment homology or reconstruct the exact trimming mask. No files replaced."
+}

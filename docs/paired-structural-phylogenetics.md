@@ -488,3 +488,14 @@ Launch and planning records are metadata/esmfold_combined_freerate_*.json.
 Neither run has yet produced a terminal audit receipt. Their comparison and
 the full multi-start optimization checks must complete before selecting rates
 for the expanded coupling models.
+
+The combined baseline site-parsimony/exposure join has started independently
+of rate fitting. It covers 22,205 paired columns and 1,699,035 observed taxon-site
+cells across all 89 markers. The existing normalized accessibility projection
+is linked to minimum AA/3Di character-change counts on the audited AA trees.
+It runs on one core with an 8-GB memory planning allowance; provenance and
+process identity are metadata/esmfold_combined_site_exposure_{plan,launch}.json.
+Output: results/phylogeny/site-parsimony-exposure-esmfold-combined-v1. Completion
+and subsequent numerical checks remain pending. Minimum change counts ignore
+branch lengths and are not rates; exposure summaries describe extant taxa,
+not ancestral exposure or phylogenetically adjusted core/surface effects.

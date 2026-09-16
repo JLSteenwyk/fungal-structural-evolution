@@ -1,0 +1,27 @@
+{
+  "pid": 82633,
+  "created": 1789567489.58,
+  "command": [
+    "python",
+    "scripts/summarize_site_parsimony_exposure.py",
+    "--inputs",
+    "results/phylogeny/paired-inputs-esmfold-combined-v1",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-esmfold-combined-v1",
+    "--audit",
+    "results/phylogeny/paired-fit-audit-esmfold-combined-v1",
+    "--exposure",
+    "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-v1",
+    "--projection",
+    "results/structural_annotations/paired-accessibility-esmfold-combined-v1",
+    "--review",
+    "config/marker_orthology_review.json",
+    "--output",
+    "results/phylogeny/site-parsimony-exposure-esmfold-combined-v1"
+  ],
+  "cpu_affinity": [
+    22
+  ],
+  "session_id": 15625,
+  "verified_at": 1789567502.9962468
+}
