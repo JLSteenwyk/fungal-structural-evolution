@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-09-16T15:37:16.460786+00:00",
+  "reason": "User requested analysis use available compute without excessive throttling",
+  "action": "Sent SIGTERM to temporary resource controller; normal cleanup restored tracked process/thread affinity and removed GPU duty cycling",
+  "controller_service": "fungal-compute-increase-20260916.service",
+  "controller_final_status": "restored",
+  "restore_errors": [],
+  "gpu_duty_cycle_restriction_removed": true,
+  "gpu_power_limits_watts": [
+    300,
+    300
+  ],
+  "hardware_thermal_protections_changed": false,
+  "analysis_settings_changed": false,
+  "scope": "Current project execution; not a global policy. Existing job-specific thread counts and memory limits remain.",
+  "gpu_verification": "index, utilization.gpu [%], power.draw [W], power.limit [W], temperature.gpu\n0, 100 %, 299.71 W, 300.00 W, 81\n1, 0 %, 38.01 W, 300.00 W, 67\n"
+}

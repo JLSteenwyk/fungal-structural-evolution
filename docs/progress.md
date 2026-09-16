@@ -2872,3 +2872,7 @@ explicit; no structural change is assigned to an arbitrary full-tree branch.
 Supported-tree variants and final acceleration models remain pending. Details:
 docs/marker-species-edge-projection.md. Also verified all 20 longer GPU controls
 passed artifact audit/conversion; the next two larger controls are running.
+
+### September 16: remove temporary compute throttling
+
+At the user’s request, terminated the temporary resource controller cleanly. Its restoration receipt reports no errors: GPU 0 no longer receives scheduled 10-second pauses, and tracked CPU processes/threads regained their original affinity. Both GPUs were observed at 100% utilization with normal 300 W power limits after restoration. Existing job-specific thread counts and memory limits remain; hardware thermal protections and scientific prediction settings are unchanged. This applies to the current execution, not a global resource policy. See `metadata/compute_unthrottled_20260916_receipt.json`.
