@@ -3198,3 +3198,12 @@ coverage and no-hit queries remain explicit. The service and exact process
 identity were verified live. Software checks passed again before launch.
 Full-data completion and independent empirical readback remain pending;
 architecture and gain/loss inference have not been performed.
+
+
+Queued full independent domain-competition readback after the exact running
+producer. The independent pair-graph implementation agreed with all 2,000
+complete policy outputs across 500 seeded synthetic cases. Every query and
+all four policies will be checked, including complete hit dispositions,
+blocker lists, rank ties, unresolved overlaps, nesting candidates and summary
+counts. Producer and waiting controller were verified live. Full empirical
+readback and architecture interpretation remain pending.

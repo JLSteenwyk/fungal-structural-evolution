@@ -1,0 +1,24 @@
+{
+  "plan": "metadata/full_domain_competition_plan.json",
+  "producer": {
+    "pid": 4100580,
+    "created": 1789659029.78
+  },
+  "output": "results/domains/full-domain-competition-readback-controller-v1",
+  "pins": {
+    "metadata/full_domain_competition_plan.json": "cce6668ca5a6c5d512794ce93e70edbe43ad2ad9bf6756f105a076f26ee7d3e6",
+    "scripts/readback_full_domain_competition.py": "a87efa2b1b54de46999b7423b9ab41cc0676941c287c8288848268b560c22b20",
+    "scripts/advance_full_domain_competition_readback.py": "26f741fe4a18b7f9a2f1d70c36fc4d331544e659c60eff416085327b052d22c5",
+    "scripts/check_independent_domain_competition.py": "612c987dc2e0611ea25a7470efaa261faf2176e82d1ac95cb2e53f157440a11b"
+  },
+  "resources": {
+    "cpu_threads": 1,
+    "memory_planning_gib": 4,
+    "service_memory_limit_gib": 16,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "cost": "Existing host; no new charges"
+  }
+}

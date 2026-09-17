@@ -299,3 +299,23 @@ limit, disabled swap, 20 GiB output limit and 50 GiB free-disk gate. The
 used. A partial run requires explicit review and a new output directory;
 existing results are never overwritten. Independent full empirical readback
 remains a required subsequent stage and is not yet queued.
+
+
+The independent full-data check is now queued under
+`fungal-full-domain-competition-readback-20260917.service`.
+`advance_full_domain_competition_readback.py` waits for the recorded producer
+PID and creation time, requires its complete receipt, verifies pinned scripts
+and runs `readback_full_domain_competition.py`. The auditor constructs all
+pair relationships before solving ordered competition and does not import
+the production kernel. Every query, retained ordering, suppression blocker,
+primary-score tie, unresolved overlap and nested candidate is compared under
+all four policies. It also verifies partial-HMM counts, no-hit states,
+policy agreement, all totals and output hashes. All 2,000 complete policy
+comparisons from 500 seeded synthetic cases passed in
+`check_independent_domain_competition.py`.
+
+The audit uses one CPU with a 4 GiB memory planning allowance, 16 GiB service
+limit and no swap; the planning runtime range is 0.5–12 hours. These services
+are transient and need explicit review after a machine restart. The audit
+has been queued, not completed; computational agreement does not establish
+biological domain boundaries or validate gain/loss inference.
