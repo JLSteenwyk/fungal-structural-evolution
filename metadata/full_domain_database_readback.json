@@ -1,0 +1,14 @@
+{
+  "status": "passed_complete_domain_database_source_readback",
+  "proteins": 5815847,
+  "taxa": 526,
+  "hit_rows": 8103610,
+  "proteins_with_raw_hits": 3792842,
+  "protein_linked_raw_hit_rows": 8249685,
+  "database_receipt_sha256": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+  "script_sha256": "0c23943de5488546b21344c213ab5a8a48779d88500c53b7ead92238e0637ea0",
+  "artifacts": {
+    "taxon_domain_detection.tsv": "c9d536b9e867deb484e05c0d4c2f47d486746350581d47ce1b8259a1a255c7ca"
+  },
+  "scope": "Every hit field and protein link compared exactly to source tables; all 526 taxon join totals checked against independently counted source hits. No architecture resolution or proof of domain absence."
+}

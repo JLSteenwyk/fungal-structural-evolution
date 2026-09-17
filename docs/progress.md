@@ -6,7 +6,7 @@
 | Sampling | 501 fungal entries plus 25 outgroups acquired; 21 incomplete fungal labels and two curated hybrids require identity-aware interpretation | metadata/analysis_manifest.tsv; docs/taxon-identity-sensitivities.md; species uniqueness not fully established |
 | Assembly and protein QC | Broad QC for 526 and lineage-specific BUSCO for 501 fungi complete; FCS report inventory and exact coding-overlap audit complete | docs/assembly-quality-workflow.md; 518 usable reports, one checksum mismatch, seven external-source exceptions; biological review and omission/copy sensitivities pending |
 | Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 70/125 marker trees audited in latest frozen snapshot; supported-split guide conflict diagnostic computed | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
-| Families, domains and reconciliation | Full guide-specific discovery and merged membership readback complete for all 5,815,847 proteins; original family-tree repair running; all 64 additional Pfam chunks catalogued | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
+| Families, domains and reconciliation | Full guide-specific discovery and merged membership readback complete for all 5,815,847 proteins; original family-tree repair running; all 64 additional Pfam chunks and marker hits joined, with independent full database readback | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
 | Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
 | Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold 356 fits and corrected Gamma4 audit complete; 45,155 marker edges linked to both provisional guides with 180,620 audited branch estimates; Expanded ESMFold and AlphaFold optimization, conditional coupling and copy-review omission comparisons complete | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; expanded FCS sensitivity and final branch models pending; model, prediction and phylogenetic uncertainty remain |
 | Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; all 13,240 nuisance-profile points audited; four optimization concerns and 29 FCS-exposed cases flagged; selection eligibility unresolved |
@@ -3096,3 +3096,12 @@ review: all 160 NE occurrences, including repeated entries, resolve to 150
 unique model pairs. Independent block/regex extraction verified every pair
 and its multiplicity. No observed protein architecture is inferred from this
 metadata alone; domain database validation and overlap analysis remain pending.
+
+
+Full domain database validation passed: all 8,103,610 hit rows and 5,815,847
+protein links matched their immutable sources. Independent source counts
+agreed with database joins for all 526 taxa. A total of 3,792,842 proteins have
+at least one GA hit, while 2,023,005 retain an explicitly qualified no-hit
+state. Receipts are archived; architectures and overlap resolution remain
+pending. The family-tree service had completed 748 tasks without reported
+failures at this observation and remains running.

@@ -1,0 +1,17 @@
+{
+  "status": "complete_domain_partition_database_requires_independent_readback",
+  "proteins": 5815847,
+  "taxa": 526,
+  "queries": 5713603,
+  "marker_only_queries": 4,
+  "additional_hit_rows": 7939960,
+  "marker_hit_rows": 163650,
+  "total_hit_rows": 8103610,
+  "plan_sha256": "9bcf97eabb0952658d18454f0c8c61a71a6dadb5a677d77c9219bbd851d52586",
+  "script_sha256": "21ad74a770693d4bbbcd7447380064291735ceb6d462437ce530b5d346692ec7",
+  "artifacts": {
+    "domains.sqlite": "ec509a6fce0f18446011d086280e839dcb116b269c729c6dcae1143c8faf5919",
+    "source_shards.json": "f9678d0f57ef49ae11451eb33288f96bd174d22229a4b07d22c52b474e095df6"
+  },
+  "scope": "Every source hit and full-proteome protein link retained. Text values preserve source scores, coordinates and partition-specific E-values exactly. Views expose protein joins and explicitly qualified no-hit states; no overlap resolution or biological absence inference."
+}

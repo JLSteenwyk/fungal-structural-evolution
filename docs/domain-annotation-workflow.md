@@ -149,3 +149,20 @@ extract this multivalued NE relation. Its existing annotations are unchanged.
 Architecture processing must use the complete nested relationship table and
 observed coordinates; these curated model relationships alone do not establish
 nesting in any project protein or justify accepting all overlapping hits.
+
+
+The full database and independent readback have now completed. Every field of
+all 8,103,610 source hit rows and all 5,815,847 protein links matched the
+original tables. All 526 taxon-level join summaries matched independent source
+counts. There are 3,792,842 representative proteins with at least one GA hit
+and 2,023,005 with no GA hit; non-detection remains explicitly qualified and
+is not evidence of biological absence. Joining sequence-level hits back to
+protein links produces 8,249,685 protein-linked hit rows. This differs from
+the source hit count because identical sequences may have multiple protein
+links and four marker-only queries lack representative links.
+
+Completed receipts are archived in `metadata/full_domain_database_{receipt,readback}.json`.
+The immutable database, source-shard manifest and checked 526-row
+`taxon_domain_detection.tsv` remain under `results/domains/full-domain-database-v1/`.
+The exported table hash and totals were checked again before archiving the
+receipts. Overlap resolution and domain architecture analyses remain incomplete.
