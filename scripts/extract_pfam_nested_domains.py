@@ -53,7 +53,7 @@ def main():
     a.output.mkdir(parents=True)
     table = a.output / 'nested_domains.tsv'
     with table.open('w') as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(output[0]), delimiter='\t')
+        writer = csv.DictWriter(handle, fieldnames=list(output[0]), delimiter='\t', lineterminator='\n')
         writer.writeheader()
         writer.writerows(output)
     result = dict(status='complete_release_nested_domain_metadata', pfam_families=len(records),
