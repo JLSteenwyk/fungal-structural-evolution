@@ -166,3 +166,34 @@ The immutable database, source-shard manifest and checked 526-row
 `taxon_domain_detection.tsv` remain under `results/domains/full-domain-database-v1/`.
 The exported table hash and totals were checked again before archiving the
 receipts. Overlap resolution and domain architecture analyses remain incomplete.
+
+
+## Full overlap inventory (running)
+
+`map_full_domain_overlaps.py` is now running across every query in the validated
+database, under `fungal-full-domain-overlaps-20260917.service`. It emits all
+pairs whose inclusive envelope intervals intersect, with their alignment
+intersection sizes, same-family and same-clan flags, both directions of curated
+NE relationships, both directions of coordinate containment, and their
+conjunction. Pair flags remain separate: neither shared clan membership nor a
+curated nested relationship automatically resolves an observed overlap.
+
+The per-query inventory retains all source hits in alignment-coordinate order,
+including model type and accession, explicit no-hit queries, counts of overlap
+pairs and HMM coverage below0.70. Nonoverlapping raw annotations are labelled
+as such, not as validated architectures. Overlap pairs are sorted and enumerated
+with an interval sweep; no best-scoring hit is silently selected or discarded.
+Output goes to `results/domains/full-domain-overlaps-v1/`.
+
+`check_full_domain_overlap_sweep.py` compared 400 synthetic input sets to an
+exhaustive integer-residue-set calculation under shuffled input order. All
+32,997 overlapping pairs matched in identity, alignment/envelope size,
+family/clan flags and directed curated-plus-coordinate nesting. This checks
+the software kernel; independent readback of the full empirical output remains
+required after completion. Architecture assignment, competing-model resolution
+and evolutionary gain/loss interpretation are still pending.
+
+The plan uses one CPU, a 4 GiB memory estimate and a 16 GiB service limit, with
+50 GiB minimum free disk and a 20 GiB output allowance. The broad0.25–6 hour
+planning window is not a measured ETA. Full configuration, pins, fixture
+receipt and launch identity are versioned as `metadata/full_domain_overlap_*`.

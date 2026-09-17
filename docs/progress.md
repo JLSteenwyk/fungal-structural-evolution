@@ -3105,3 +3105,11 @@ at least one GA hit, while 2,023,005 retain an explicitly qualified no-hit
 state. Receipts are archived; architectures and overlap resolution remain
 pending. The family-tree service had completed 748 tasks without reported
 failures at this observation and remains running.
+
+
+Full-domain overlap enumeration is launched across all 5,713,603 queries and
+8,103,610 source hits. All envelope overlaps are retained with alignment,
+clan and curated nesting flags, while every query retains an ordered raw-hit
+inventory or an explicit no-hit state. The interval kernel passed 400 exhaustive
+synthetic checks (32,997 pairs); full empirical readback and architecture
+resolution remain pending. The inference jobs continue independently.

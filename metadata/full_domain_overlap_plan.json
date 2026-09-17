@@ -1,0 +1,27 @@
+{
+  "database_root": "results/domains/full-domain-database-v1",
+  "nested_table": "metadata/pfam_nested_domains.tsv",
+  "output": "results/domains/full-domain-overlaps-v1",
+  "resources": {
+    "cpu_threads": 1,
+    "memory_planning_gib": 4,
+    "service_memory_limit_gib": 16,
+    "minimum_free_disk_gib": 50,
+    "output_allowance_gib": 20,
+    "planning_hours": [
+      0.25,
+      6
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "basis": "Stream 5713603 queries and 8103610 hits, retain at most one query group in memory. Enumerate pairs using inclusive envelope interval sweep; alignment overlap is a subset. Output size depends on empirical multiplicity; no pairs or families excluded.",
+  "pins": {
+    "scripts/map_full_domain_overlaps.py": "5ba9a8f553d45cfab6b635b739283b3d2f131a0b54be3d14f31e8c360ca8e3a7",
+    "scripts/check_full_domain_overlap_sweep.py": "4338c3c957bbb856f10971b460f7080f90aea74bc7734dff6ce2735e5026e9c7",
+    "metadata/full_domain_overlap_fixture_receipt.json": "6da89b429d7858050d1705f585969682dfdd7ec02f4dc92a4dbac9440ee73e3d",
+    "metadata/pfam_nested_domains.tsv": "4427c0b478c730e15b6971808d24a6d0a3ac1d65d40fd10fdef269fa1f70368a",
+    "metadata/pfam_nested_metadata_readback.json": "6f3796109e869853cca548135e682ef0851dcf730c5977f0fd1efcd06fb2d157",
+    "results/domains/full-domain-database-v1/receipt.json": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+    "results/domains/full-domain-database-v1/readback.json": "7c1ec077048cde8dee05212ce15160f12a8b794741dd90cb2ea242fd1b6ac2b6"
+  }
+}
