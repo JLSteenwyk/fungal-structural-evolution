@@ -1,0 +1,29 @@
+{
+  "output": "results/domains/full-domain-database-v1",
+  "full_inputs": "data/domains/full-inputs-v1",
+  "marker_inputs": "data/domains/marker-inputs-v1",
+  "marker_annotations": "results/domains/marker-annotations-v1",
+  "catalog": "results/domains/full-annotation-catalog-v1",
+  "resources": {
+    "cpu_threads": 1,
+    "memory_planning_gib": 8,
+    "service_memory_limit_gib": 16,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 50,
+    "planning_hours": [
+      0.25,
+      6
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "basis": "Stream 8103610 hit rows and 5815847 protein links into indexed SQLite; TEXT hit fields preserve source serialization. Independent reader streams all source rows and compares 526 taxon joins. No overlaps resolved or proteins filtered.",
+  "pins": {
+    "scripts/build_full_domain_database.py": "21ad74a770693d4bbbcd7447380064291735ceb6d462437ce530b5d346692ec7",
+    "scripts/readback_full_domain_database.py": "0c23943de5488546b21344c213ab5a8a48779d88500c53b7ead92238e0637ea0",
+    "results/domains/full-annotation-catalog-v1/receipt.json": "d7a6f93d4e4b7335bb82d5ad854ae886d35b9feb4b2c0b79a2ec24cf29cca16d",
+    "results/domains/full-protein-link-readback-v1/receipt.json": "f406e234887e4c57043e986e1f04f044ffd505206350491bd4df347fa1b7badb",
+    "results/domains/marker-annotations-v1/receipt.json": "f990eabe189bcb00d13c0b2b4cf5a0e715e33eb2c9c64bcc142d533a47d71097",
+    "data/domains/full-inputs-v1/receipt.json": "8d21e215367ebcdca2c5fb157b3b0f4f6fab9fbc79624a8a0aa5e46c2586a928",
+    "data/domains/marker-inputs-v1/receipt.json": "5e8d59345060fbfbe9d95d755d5c27e516b61a4d7575a1a279d7b7e5050328e6"
+  }
+}

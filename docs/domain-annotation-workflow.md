@@ -91,3 +91,40 @@ python scripts/readback_full_domain_protein_links.py \
 The output is immutable; use a fresh directory for subsequent runs. A passing receipt verifies computational linkage, not the biological correctness of representative selection, taxonomy, homology or Pfam assignments. Downstream joins must retain the query-source partition and pass both this linkage check and the corresponding complete annotation checks before interpreting protein-level coverage. Full architecture resolution and evolutionary inference remain separate requirements. The resource estimate is recorded in `metadata/full_domain_protein_link_readback_plan.json`.
 
 The full readback completed on September 16: all 5,815,847 protein links across 526 taxa passed. It independently verified 5,713,599 distinct full-proteome sequences, including 58,879 reused marker queries with 60,033 protein links; four marker queries are outside the representative-proteome universe. All 5,654,720 additional queries are represented, with no overlap between query partitions. The receipt and 526-row taxon summary are archived under `metadata/full_domain_protein_link_readback_*`. Synthetic re-pinned fixtures confirmed rejection of missing links, extra duplicate links, wrong partitions and wrong taxa. This establishes linkage integrity; complete annotation merging and architecture analysis remain pending.
+
+
+## Complete partition and protein joins (2026-09-17)
+
+The full raw-hit database is being built by
+`scripts/build_full_domain_database.py` under
+`fungal-full-domain-database-20260917.service`. All 7,939,960 additional hits
+and 163,650 marker hits are retained alongside the 5,815,847 representative
+protein links. The query universe includes 5,713,599 full-proteome sequences
+plus four marker-only sequences; those four have no representative-protein
+link. Exact source hit IDs remain qualified by search partition. Coordinates,
+scores and partition-specific E-values are stored as their original text;
+no numerical normalization, overlap filtering or architecture assignment is
+performed. Consumers must explicitly cast numerical fields for numeric SQL
+comparisons rather than use text sorting.
+
+The database exposes `protein_hits` for hit joins and `protein_detection` for
+all proteins, including the explicitly qualified `no_GA_hit_not_proven_absence`
+state. Identical sequences share search results while every species/protein
+association remains available. Unique protein keys, unique partition/hit IDs,
+query partition integrity and complete counts are checked during construction.
+
+After construction, `scripts/readback_full_domain_database.py` compares every
+stored hit field and every protein link to the immutable source tables. A
+separate source-hit counter supplies all 526 expected taxon-level detection
+and joined-hit totals, which are compared with database aggregation. Its
+receipt and `taxon_domain_detection.tsv` are required before using the joins.
+No database completion or readback is claimed yet. Clan-aware overlap review,
+nested domains, architecture uncertainty and family-tree integration remain
+subsequent analyses.
+
+The plan and exact live launch identity are versioned as
+`metadata/full_domain_database_{plan,launch}.json`. The existing host supplies
+one CPU, an 8 GiB memory planning allowance and 16 GiB service cap; 100 GiB
+free disk is required and the build has a 50 GiB database allowance. The
+0.25–6 hour window is a broad planning estimate. This transient service does
+not survive reboot; partial outputs require review and are not overwritten.

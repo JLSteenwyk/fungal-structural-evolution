@@ -3078,3 +3078,14 @@ IDs, and checkpoint reuse. Independent native-parser readback is queued after
 successful completion. Resource planning and limits are recorded in
 `metadata/expanded_family_tree_execution_plan.json`; this launch does not mark
 new trees, reconciliation or the overall project complete.
+
+
+The full domain database build and independent row-level readback are now
+queued as one running service, preserving all 8,103,610 Pfam hit rows and
+5,815,847 protein links. Both source partitions and all no-hit proteins remain
+explicit; four marker-only queries have no representative-protein link. This
+advances the full structural-atlas domain layer; overlap resolution and
+architecture evolution remain pending. Plan, scripts and launch identity are
+versioned under `full_domain_database`. The new-family tree service continues
+in parallel; four early completed trees passed the separate native-parser
+checker without modifying live outputs.

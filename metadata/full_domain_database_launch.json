@@ -1,0 +1,24 @@
+{
+  "unit": "fungal-full-domain-database-20260917.service",
+  "pid": 3600636,
+  "created": 1789655825.34,
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_domain_database.py",
+      "--plan",
+      "metadata/full_domain_database_plan.json"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_domain_database.py",
+      "--plan",
+      "metadata/full_domain_database_plan.json",
+      "--output",
+      "results/domains/full-domain-database-v1/readback.json"
+    ]
+  ],
+  "plan_sha256": "9bcf97eabb0952658d18454f0c8c61a71a6dadb5a677d77c9219bbd851d52586",
+  "started_at": 1789655825.4899404,
+  "scope": "Full source-preserving database construction followed by independent readback. Transient service; partial output requires review, no automatic overwrite."
+}
