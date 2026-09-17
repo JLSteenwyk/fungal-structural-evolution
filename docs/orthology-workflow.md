@@ -217,3 +217,36 @@ The checker passed the complete synthetic file fixture. Five additional fixture 
 `fungal-guide-discovery-merge-20260916.service` is live and waiting for the exact discovery controller process identity. After that process terminates, it requires the discovery controller's successful terminal state and independently checked output hashes before running the merge and its complete readback. The service has a 16 GiB memory cap, an 8 GiB planning allowance, no swap allocation, and requires at least 32 GiB available memory and 20 GiB free disk before execution. The combined merge/readback planning envelope is 0.2–3 hours after discovery completes. No added gene trees or reconciliation are launched by this handoff.
 
 Controller configuration and launch identity are versioned as `metadata/guide_discovery_merge_controller_{config,launch}.json`; live state is `results/orthology/guide-discovery-merge-controller-v1/state.json`. Successful biological outputs will remain at `results/orthology/guide-discovery-merge-v1`, including `readback.json`. The merge plan and controller/auditor scripts are now pinned for this live handoff and must not be edited in place. This supersedes the earlier unqueued preparation status; biological merging and validation are still pending.
+
+
+## Expanded family tree workload (2026-09-17)
+
+The completed guide-specific partitions were enumerated before scheduling
+expanded alignments and trees. Exact memberships, rather than renumbered OG
+labels, identify reusable tasks. Across both guides there are 96,587 distinct
+families with at least three proteins: 32,638 retained tree candidates and
+63,949 new tasks. The profile guide requires 62,846 new trees and the MAFFT
+guide 62,956; 61,853 new tasks have identical memberships in both guides.
+The largest new family contains 10,072 proteins. These counts do not provide
+a runtime estimate: sequence lengths, alignment dimensions and method choice
+must inform the execution resource plan.
+
+All singleton and pair families remain in the source partitions; they are
+accounted separately from inferred trees. The profile partition has 500,113
+singletons and 62,586 pairs (11,077 retained plus 51,509 newly discovered).
+The MAFFT partition has 500,481 singletons and 62,447 pairs. No biological
+novelty or lineage restriction is inferred from these counts.
+
+`scripts/census_expanded_family_tree_workload.py` verifies merged artifact
+hashes and each serialized membership against its source crosswalk, then
+writes `results/orthology/expanded-family-tree-workload-v1/unique_tree_tasks.tsv`.
+`scripts/readback_expanded_family_tree_workload.py` uses the installed native
+MCL reader to independently check every task's size, taxon count, source,
+representative index and guide multiplicity: 96,587 tasks covering 191,078
+guide-specific tree occurrences. Receipts are archived under
+`metadata/expanded_family_tree_workload_*`.
+
+This completes workload enumeration only. Expanded family FASTAs, new
+alignments and gene trees still need execution; retained tree candidates need
+validation against their exact memberships before reuse. The original large
+family repair remains running. Reconciliation is not yet complete.

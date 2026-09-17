@@ -1,0 +1,49 @@
+{
+  "status": "complete_expanded_family_tree_workload_census",
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "retained_tree_families": 32638,
+      "retained_tree_proteins": 4402861,
+      "single_taxon_families": 552818,
+      "retained_pair_families": 11077,
+      "retained_pair_proteins": 22154,
+      "discovery_tree_families": 62846,
+      "discovery_tree_proteins": 787701,
+      "discovery_pair_families": 51509,
+      "discovery_pair_proteins": 103018,
+      "discovery_singleton_families": 500113,
+      "discovery_singleton_proteins": 500113
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "retained_tree_families": 32638,
+      "retained_tree_proteins": 4402861,
+      "single_taxon_families": 553282,
+      "retained_pair_families": 11077,
+      "retained_pair_proteins": 22154,
+      "discovery_tree_families": 62956,
+      "discovery_tree_proteins": 787611,
+      "discovery_pair_families": 51370,
+      "discovery_pair_proteins": 102740,
+      "discovery_singleton_families": 500481,
+      "discovery_singleton_proteins": 500481
+    }
+  ],
+  "unique_tree_tasks": 96587,
+  "retained_tree_candidates": 32638,
+  "unique_new_tree_tasks": 63949,
+  "tasks_shared_across_guides": 94491,
+  "largest_new_family": 10072,
+  "merge_receipt_sha256": "a6236b4b2b27111a1b41170de71a884b512fa4e10e58a0aaf7576080c631403e",
+  "merge_readback_sha256": "c4cdfd1caa67aa1a160b6799e5384f818d24b9962a69b757b11f8d73adf4a93a",
+  "script_sha256": "09fb0b53bc3e560e3b8989502cb50d7449b9e8d1bc5cff807c550ed00bbab279",
+  "artifacts": {
+    "unique_tree_tasks.tsv": "f8e6c87a397a0855a5e1d6632fc07f77470d0adbaa2e9c330bcf8f9645e8a790"
+  },
+  "interpretation": "Exact membership deduplication across guide partitions. All families retained in source partitions; singleton/pair families require no inferred bifurcating gene tree. Retained trees are candidates requiring validation before reuse. New alignments, trees and reconciliation remain pending. Counts are not runtime estimates or biological validation."
+}

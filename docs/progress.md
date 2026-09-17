@@ -3045,3 +3045,13 @@ absolute difference 6.11e-15). Evidence is archived in
 Both GPUs remain active at 100% utilization with 300 W limits. The large
 retained-family FastTree repair has reached ML NNI refinement; supported
 species-tree inference remains live. The overall project is incomplete.
+
+
+Expanded family tree workload now has an independently checked task list:
+96,587 distinct memberships with at least three proteins, comprising 32,638
+retained tree candidates and 63,949 new trees. Native MCL readback verified all
+191,078 guide-specific occurrences. Exact-membership reuse avoids repeating
+61,853 shared new families across the two guides while preserving both
+partitions. No new tree inference has yet been launched from this list;
+sequence staging and a length-aware compute plan are next. Both ESMFold GPUs
+and the existing large-family tree repair were verified live during this turn.
