@@ -1,0 +1,33 @@
+{
+  "status": "passed_complete_available_expanded_input_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "trees_checked": 95483,
+      "tree_tips_checked": 5134581,
+      "pending": [
+        "OG0000017"
+      ],
+      "physical_files_checked": 96015,
+      "native_locator_isolated": true
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "trees_checked": 95593,
+      "tree_tips_checked": 5134491,
+      "pending": [
+        "OG0000017"
+      ],
+      "physical_files_checked": 96125,
+      "native_locator_isolated": true
+    }
+  ],
+  "input_receipt_sha256": "a49e6681f808602eb291023372c47d523ec85cd0e2430d1a7b6df4f580e57090",
+  "script_sha256": "63e7fd06026ef4c4c3d5933305d35cb59a639846a0ab673cb15ed3317aebb66e",
+  "launch_ready": false,
+  "scope": "All available physical copies and native tree tips checked against full expanded partitions. Missing repaired family remains explicit; no reconciliation or final species-tree validation."
+}

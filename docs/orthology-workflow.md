@@ -408,3 +408,11 @@ tests the native path locator using a disposable descriptor. This readback
 uses one CPU, with a 2 GiB memory allowance and 1–20 minute planning range.
 Repaired-tree installation, the final complete-input check and the native
 reconciliation execution plan remain required before launch.
+
+The complete available-input readback passed for both guides: 95,483 profile
+trees (5,134,581 tips) and 95,593 MAFFT trees (5,134,491 tips). All 192,140
+physical file copies were checked, and both native locators resolve entirely
+within the isolated expanded inputs. The result is archived in
+`metadata/expanded_reconciliation_input_staging_readback.json`. Both
+partitions still require the validated OG0000017 repair before final launch
+readiness can be established.

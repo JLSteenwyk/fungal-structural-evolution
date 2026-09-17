@@ -3169,3 +3169,14 @@ of copied content. An independent complete input readback is launched to
 check every tree against the actual native expanded partition and verify
 isolated restart paths. Its completion remains pending. No runnable restart
 descriptor or reconciliation result has been produced.
+
+
+Independent expanded-input readback passed for both complete partitions.
+Profile: 95,483 trees / 5,134,581 tips / 96,015 physical files. MAFFT:
+95,593 trees / 5,134,491 tips / 96,125 physical files. Every available tree
+matched its actual expanded family membership, every copy matched its source
+hash, and both native restart locators stayed within their isolated inputs.
+Each partition retains all 5,815,847 proteins; OG0000017 remains explicitly
+pending. The completed readback receipt is archived. Repaired-tree
+installation, final complete-input validation and reconciliation execution
+remain outstanding.
