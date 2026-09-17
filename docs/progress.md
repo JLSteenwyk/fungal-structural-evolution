@@ -3180,3 +3180,12 @@ Each partition retains all 5,815,847 proteins; OG0000017 remains explicitly
 pending. The completed readback receipt is archived. Repaired-tree
 installation, final complete-input validation and reconciliation execution
 remain outstanding.
+
+
+Reviewed primary Pfam documentation and implemented a clan-competition kernel
+with four coordinate/ranking policy combinations. Every hit retains a
+retained/suppressed disposition; rank ties, unresolved overlaps and candidate
+nesting remain explicit. Software checks passed for overlap chains, decimal
+precision, order invariance, ties, nesting and policy differences. The
+full-dataset driver and independent empirical validation remain to be
+implemented; no resolved architecture or gain/loss result is claimed.

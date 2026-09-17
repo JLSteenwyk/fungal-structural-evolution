@@ -240,3 +240,41 @@ Pfam Family, Repeat, Motif and other types are not silently relabelled Domains.
 Choosing among competing models, validating nested segments, propagating
 annotation uncertainty and comparing architectures on reconciled trees remain
 required. The raw and checked overlap outputs are preserved unchanged.
+
+
+## Clan competition implementation and planned architecture sensitivities
+
+The [Pfam FAQ](https://pfam-docs.readthedocs.io/en/latest/pfam-faq.html)
+describes selecting the lowest-E-value match among overlapping clan members.
+The [2016 Pfam paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4702930/)
+also distinguishes nested domains and a database-curation exception for small
+overlaps that depends on family-wide frequencies. That exception is not a
+blanket license to ignore every overlap shorter than 20 residues in this
+project.
+
+The implemented kernel `scripts/domain_clan_competition.py` uses within-query,
+within-clan greedy competition, retaining a full disposition for every input
+hit. The planned baseline uses alignment spans and independent domain
+E-values; envelope spans and domain bit scores define three additional
+sensitivity combinations. These are project policies, not a claim to reproduce
+a particular PfamScan version. Decimal arithmetic preserves very small
+serialized E-values. Secondary score and hit ID select a reproducible
+representative, but ties on the primary ranking criterion remain explicit,
+including rounded zero E-values. Cross-clan and missing-clan overlaps remain
+unresolved. A chain of overlaps does not collapse to one component-wide winner.
+
+A curated directed nesting relationship plus strict alignment containment
+preserves both candidate hits. This is an annotation hypothesis: the kernel
+does not infer physical nesting, remove internal sequence segments or recover
+HMM match-state boundaries from a domain table. Equal boundaries do not meet
+the containment exception. Model types, repeat instances and all suppressed
+matches must remain available in the full output. No-hit queries remain
+unknown for biological absence. Partial-HMM coverage and policy disagreement
+must be propagated separately before phylogenetic architecture tests.
+
+`check_domain_clan_competition.py` passed chain and input-order checks,
+sub-floating-point E-value precision, rank ties, missing/different clans,
+directed strict nesting, coordinate and ranking sensitivities, empty inputs
+and invalid-input rejection. These are software checks. Full-data competition,
+independent empirical validation, architecture calls and gain/loss analyses
+have not yet run.
