@@ -1,0 +1,44 @@
+{
+  "status": "staged_expanded_inputs_requires_readback_and_repaired_tree",
+  "launch_ready": false,
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "copied_trees": 95483,
+      "pending_families": [
+        {
+          "family": "OG0000017",
+          "original_family": "OG0000017",
+          "membership_sha256": "adfbaade5a18d74eadcb8e40aa16bbb8ae69d0fa6fa7d042b2a3af852051432f"
+        }
+      ],
+      "copied_files": 96015,
+      "copied_bytes": 3122474608,
+      "manifest_sha256": "375396f7231a8f2bc1a8b7977002536cbd1efacb09010fe726a6fa06d64367f2",
+      "pending_descriptor_sha256": "85a0bff8afab1f89393b4569f37a138aa71fa700a80a5c17a265c91ad7d0e319"
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "copied_trees": 95593,
+      "pending_families": [
+        {
+          "family": "OG0000017",
+          "original_family": "OG0000017",
+          "membership_sha256": "adfbaade5a18d74eadcb8e40aa16bbb8ae69d0fa6fa7d042b2a3af852051432f"
+        }
+      ],
+      "copied_files": 96125,
+      "copied_bytes": 3122509628,
+      "manifest_sha256": "706e574c26d65f280eebe5c62aba97f7c0618c4ca9a2c74d0fa52aac0ae5918e",
+      "pending_descriptor_sha256": "6b33d127d946be17d62ffef377c30baac70ca4d5be0090ce57d3e4182735bd73"
+    }
+  ],
+  "plan_sha256": "8724c851a66fd176922ac09af52d8398fe9bebe261e9c02ed6cc259561d87549",
+  "script_sha256": "d84138130c62944d41f8fd21f216ee82cf738282f73de6353ea6ee066ea18844",
+  "elapsed_seconds": 95.0902886390686,
+  "scope": "Complete expanded partitions and all available validated trees copied using exact family mappings; singleton and pair families retained. No runnable Log.txt, no reconciliation launched. Both guides remain conditional homogeneous alternatives."
+}

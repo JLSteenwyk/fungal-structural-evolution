@@ -3158,3 +3158,14 @@ table totals were checked. Candidate counts are not inferred ortholog counts;
 storage illustrations are not native-output forecasts. The final retained
 tree repair, assembly of complete inputs and reconciliation execution remain
 outstanding.
+
+Expanded native reconciliation inputs are now physically assembled under
+`results/orthology/expanded-reconciliation-inputs-v1/`: 95,483 available gene
+trees for profile and 95,593 for MAFFT, each with its complete 5,815,847-protein
+partition and 526 species FASTAs. Both datasets preserve singleton/pair
+families and explicitly record OG0000017 as pending. All copied files were
+checked against source hashes; together the datasets contain about 6.25 GB
+of copied content. An independent complete input readback is launched to
+check every tree against the actual native expanded partition and verify
+isolated restart paths. Its completion remains pending. No runnable restart
+descriptor or reconciliation result has been produced.

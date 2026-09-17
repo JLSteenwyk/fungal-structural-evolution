@@ -378,3 +378,33 @@ outputs; candidate pairs are not inferred orthologs. Family-level tables and
 the receipt are under the output directory, with the receipt archived at
 `metadata/expanded_reconciliation_workload_receipt.json`. Reconciliation
 runtime, peak memory and output handling still require a final execution plan.
+
+## Expanded native input assembly
+
+`scripts/stage_expanded_reconciliation_inputs.py --plan
+metadata/expanded_reconciliation_input_staging_plan.json` assembles both
+complete expanded partitions under
+`results/orthology/expanded-reconciliation-inputs-v1/`. It makes independent
+physical copies of all 526 species FASTAs, sequence/species mappings, matching
+conditional guide trees and expanded cluster files. Retained and newly
+discovered trees are copied under the destination family IDs established by
+the exact membership crosswalks. Singleton and pair families remain present
+in the partitions. Every copy is checked against its source hash, and source
+paths and hashes are recorded in each guide's `copied_files.tsv`.
+
+The plan allows one CPU, 2 GiB memory and 12 GiB output, requires 30 GiB free
+disk and estimates 1–20 minutes for staging on the existing host. OG0000017
+remains explicit in the pending list, and only `Log.pending.txt` is written.
+This preserves incomplete inputs without enabling a native restart that could
+silently omit the missing tree.
+
+`scripts/readback_expanded_reconciliation_inputs.py --inputs
+results/orthology/expanded-reconciliation-inputs-v1 --output
+results/orthology/expanded-reconciliation-inputs-v1/readback.json` checks the
+entire copied-file universe and all hashes, reads both complete partitions
+with native MCL, and compares every available tree's exact tips to its actual
+expanded family. It also checks explicit finite nonnegative branches and
+tests the native path locator using a disposable descriptor. This readback
+uses one CPU, with a 2 GiB memory allowance and 1–20 minute planning range.
+Repaired-tree installation, the final complete-input check and the native
+reconciliation execution plan remain required before launch.
