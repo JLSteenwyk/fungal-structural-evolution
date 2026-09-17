@@ -346,3 +346,35 @@ reconciliation inputs, not a reconciliation result. Run with:
 The validator uses one CPU, reads roughly 3 GB of existing staged inputs,
 and writes a small catalog without copying trees. Re-execution requires a
 new output directory to preserve the earlier evidence.
+
+The catalog completed with 32,637 validated trees and one pending family,
+OG0000017. Every serialized destination mapping was checked against both
+expanded crosswalks. Separately, all 63,949 new-family trees subsequently
+passed complete independent native readback (824,364 tips and 1,453,772
+edges); the inference/validation service exited successfully. Archived
+receipts are `metadata/retained_tree_catalog_receipt.json` and
+`metadata/expanded_family_tree_completed_readback.json`.
+
+## Complete expanded reconciliation dimensions
+
+`scripts/estimate_expanded_reconciliation_workload.py` reads both complete
+merged partitions with the native MCL reader, verifies every membership
+against its source crosswalk, and counts candidate pairs using two equivalent
+calculations without enumerating them. Run with `--merged
+results/orthology/guide-discovery-merge-v1 --output
+results/orthology/expanded-reconciliation-workload-v1` in the native
+OrthoFinder Python environment. Existing output directories are refused.
+
+| Guide | Families | Tree-eligible families | Unordered cross-species candidate pairs |
+| --- | ---: | ---: | ---: |
+| Profile | 658,183 | 95,484 | 5,203,124,554 |
+| MAFFT | 658,522 | 95,594 | 5,203,032,176 |
+
+Both include all 5,815,847 proteins and 526 taxa. Singleton and pair families
+remain in the complete partitions. Illustrative flat directed-pair tables
+would require about 620, 1,241 or 2,481 GiB per guide at 64, 128 or 256 bytes
+per pair. These are arithmetic scenarios, not predictions for native grouped
+outputs; candidate pairs are not inferred orthologs. Family-level tables and
+the receipt are under the output directory, with the receipt archived at
+`metadata/expanded_reconciliation_workload_receipt.json`. Reconciliation
+runtime, peak memory and output handling still require a final execution plan.

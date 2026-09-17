@@ -3141,3 +3141,20 @@ and every destination mapping were checked against both complete source
 crosswalks. The catalog receipt is archived in metadata. This prepares the
 retained component of expanded reconciliation inputs; reconciliation itself
 and the full new-tree readback remain pending.
+
+All 63,949 new-family alignment/tree tasks completed without recorded failures,
+and complete independent native-parser readback passed for 824,364 tips and
+1,453,772 edges. Source FASTAs and all alignment/tree artifacts were rehashed;
+the service exited successfully. Completed state and readback receipts are
+archived. This establishes computational output integrity, not biological
+topology accuracy or reconciled orthology.
+
+The complete expanded reconciliation workload is now measured for both
+partitions: profile has 658,183 families and 95,484 tree-eligible families;
+MAFFT has 658,522 and 95,594, respectively. Each includes all 5,815,847 proteins
+across 526 taxa. Cross-species candidate pairs number 5,203,124,554 (profile)
+and 5,203,032,176 (MAFFT), counted without materializing pairs. Serialized
+table totals were checked. Candidate counts are not inferred ortholog counts;
+storage illustrations are not native-output forecasts. The final retained
+tree repair, assembly of complete inputs and reconciliation execution remain
+outstanding.

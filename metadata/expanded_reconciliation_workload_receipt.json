@@ -1,0 +1,523 @@
+{
+  "status": "completed_expanded_reconciliation_workload",
+  "guides": [
+    {
+      "guide": "profile",
+      "genes": 5815847,
+      "families": 658183,
+      "tree_eligible_families": 95484,
+      "single_taxon_families": 552818,
+      "unordered_cross_species_candidate_pairs": 5203124554,
+      "occupied_unordered_family_taxon_pairs": 357216131,
+      "retained_candidate_pairs": 5177610933,
+      "discovery_candidate_pairs": 25513621,
+      "taxa": 526,
+      "directed_cross_species_candidate_pairs": 10406249108,
+      "flat_directed_pair_storage_scenarios": [
+        {
+          "bytes_per_pair": 64,
+          "gib": 620.2607815265656
+        },
+        {
+          "bytes_per_pair": 128,
+          "gib": 1240.521563053131
+        },
+        {
+          "bytes_per_pair": 256,
+          "gib": 2481.043126106262
+        }
+      ],
+      "top25_families": [
+        {
+          "family": "OG0000002",
+          "source_type": "retained",
+          "genes": 30868,
+          "taxa": 507,
+          "maximum_copies_per_taxon": 510,
+          "unordered_cross_species_candidate_pairs": 474505470,
+          "occupied_unordered_taxon_pairs": 128271
+        },
+        {
+          "family": "OG0000017",
+          "source_type": "retained",
+          "genes": 55981,
+          "taxa": 346,
+          "maximum_copies_per_taxon": 46787,
+          "unordered_cross_species_candidate_pairs": 470471562,
+          "occupied_unordered_taxon_pairs": 59685
+        },
+        {
+          "family": "OG0000001",
+          "source_type": "retained",
+          "genes": 20466,
+          "taxa": 517,
+          "maximum_copies_per_taxon": 167,
+          "unordered_cross_species_candidate_pairs": 208779077,
+          "occupied_unordered_taxon_pairs": 133386
+        },
+        {
+          "family": "OG0000012",
+          "source_type": "retained",
+          "genes": 19018,
+          "taxa": 347,
+          "maximum_copies_per_taxon": 583,
+          "unordered_cross_species_candidate_pairs": 179394661,
+          "occupied_unordered_taxon_pairs": 60031
+        },
+        {
+          "family": "OG0000011",
+          "source_type": "retained",
+          "genes": 16302,
+          "taxa": 482,
+          "maximum_copies_per_taxon": 279,
+          "unordered_cross_species_candidate_pairs": 132320675,
+          "occupied_unordered_taxon_pairs": 115921
+        },
+        {
+          "family": "OG0000000",
+          "source_type": "retained",
+          "genes": 16019,
+          "taxa": 476,
+          "maximum_copies_per_taxon": 206,
+          "unordered_cross_species_candidate_pairs": 127740377,
+          "occupied_unordered_taxon_pairs": 113050
+        },
+        {
+          "family": "OG0000008",
+          "source_type": "retained",
+          "genes": 15857,
+          "taxa": 520,
+          "maximum_copies_per_taxon": 168,
+          "unordered_cross_species_candidate_pairs": 125281609,
+          "occupied_unordered_taxon_pairs": 134940
+        },
+        {
+          "family": "OG0000013",
+          "source_type": "retained",
+          "genes": 14417,
+          "taxa": 489,
+          "maximum_copies_per_taxon": 179,
+          "unordered_cross_species_candidate_pairs": 103581970,
+          "occupied_unordered_taxon_pairs": 119316
+        },
+        {
+          "family": "OG0000014",
+          "source_type": "retained",
+          "genes": 14195,
+          "taxa": 473,
+          "maximum_copies_per_taxon": 133,
+          "unordered_cross_species_candidate_pairs": 100390694,
+          "occupied_unordered_taxon_pairs": 111628
+        },
+        {
+          "family": "OG0000004",
+          "source_type": "retained",
+          "genes": 10480,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 75,
+          "unordered_cross_species_candidate_pairs": 54784779,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000005",
+          "source_type": "retained",
+          "genes": 9979,
+          "taxa": 518,
+          "maximum_copies_per_taxon": 459,
+          "unordered_cross_species_candidate_pairs": 49340830,
+          "occupied_unordered_taxon_pairs": 133903
+        },
+        {
+          "family": "OG0000053",
+          "source_type": "retained",
+          "genes": 9117,
+          "taxa": 494,
+          "maximum_copies_per_taxon": 163,
+          "unordered_cross_species_candidate_pairs": 41356829,
+          "occupied_unordered_taxon_pairs": 121771
+        },
+        {
+          "family": "OG0000023",
+          "source_type": "retained",
+          "genes": 9010,
+          "taxa": 518,
+          "maximum_copies_per_taxon": 125,
+          "unordered_cross_species_candidate_pairs": 40450061,
+          "occupied_unordered_taxon_pairs": 133903
+        },
+        {
+          "family": "OG0000010",
+          "source_type": "retained",
+          "genes": 8890,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 53,
+          "unordered_cross_species_candidate_pairs": 39427007,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000007",
+          "source_type": "retained",
+          "genes": 8432,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 38,
+          "unordered_cross_species_candidate_pairs": 35474892,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000093",
+          "source_type": "retained",
+          "genes": 8412,
+          "taxa": 315,
+          "maximum_copies_per_taxon": 143,
+          "unordered_cross_species_candidate_pairs": 35122977,
+          "occupied_unordered_taxon_pairs": 49455
+        },
+        {
+          "family": "OG0000040",
+          "source_type": "retained",
+          "genes": 8086,
+          "taxa": 501,
+          "maximum_copies_per_taxon": 78,
+          "unordered_cross_species_candidate_pairs": 32585291,
+          "occupied_unordered_taxon_pairs": 125250
+        },
+        {
+          "family": "OG0000009",
+          "source_type": "retained",
+          "genes": 7904,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 50,
+          "unordered_cross_species_candidate_pairs": 31170835,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000112",
+          "source_type": "retained",
+          "genes": 9053,
+          "taxa": 190,
+          "maximum_copies_per_taxon": 4294,
+          "unordered_cross_species_candidate_pairs": 30634475,
+          "occupied_unordered_taxon_pairs": 17955
+        },
+        {
+          "family": "OG0000042",
+          "source_type": "retained",
+          "genes": 7735,
+          "taxa": 413,
+          "maximum_copies_per_taxon": 165,
+          "unordered_cross_species_candidate_pairs": 29730561,
+          "occupied_unordered_taxon_pairs": 85078
+        },
+        {
+          "family": "OG0000045",
+          "source_type": "retained",
+          "genes": 7711,
+          "taxa": 513,
+          "maximum_copies_per_taxon": 53,
+          "unordered_cross_species_candidate_pairs": 29646091,
+          "occupied_unordered_taxon_pairs": 131328
+        },
+        {
+          "family": "OG0000006",
+          "source_type": "retained",
+          "genes": 7679,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 39,
+          "unordered_cross_species_candidate_pairs": 29420292,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000036",
+          "source_type": "retained",
+          "genes": 7485,
+          "taxa": 510,
+          "maximum_copies_per_taxon": 63,
+          "unordered_cross_species_candidate_pairs": 27940005,
+          "occupied_unordered_taxon_pairs": 129795
+        },
+        {
+          "family": "OG0000015",
+          "source_type": "retained",
+          "genes": 7475,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 37,
+          "unordered_cross_species_candidate_pairs": 27880783,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000021",
+          "source_type": "retained",
+          "genes": 7044,
+          "taxa": 515,
+          "maximum_copies_per_taxon": 49,
+          "unordered_cross_species_candidate_pairs": 24743474,
+          "occupied_unordered_taxon_pairs": 132355
+        }
+      ],
+      "artifacts": {
+        "profile_family_workload.tsv": "541d31a79fa767f4afd6092b177d5d8d9a2f5e9122f2f2cc5b3c7a2506ad0ca4"
+      }
+    },
+    {
+      "guide": "mafft",
+      "genes": 5815847,
+      "families": 658522,
+      "tree_eligible_families": 95594,
+      "single_taxon_families": 553282,
+      "unordered_cross_species_candidate_pairs": 5203032176,
+      "occupied_unordered_family_taxon_pairs": 357205869,
+      "retained_candidate_pairs": 5177610933,
+      "discovery_candidate_pairs": 25421243,
+      "taxa": 526,
+      "directed_cross_species_candidate_pairs": 10406064352,
+      "flat_directed_pair_storage_scenarios": [
+        {
+          "bytes_per_pair": 64,
+          "gib": 620.2497692108154
+        },
+        {
+          "bytes_per_pair": 128,
+          "gib": 1240.4995384216309
+        },
+        {
+          "bytes_per_pair": 256,
+          "gib": 2480.9990768432617
+        }
+      ],
+      "top25_families": [
+        {
+          "family": "OG0000002",
+          "source_type": "retained",
+          "genes": 30868,
+          "taxa": 507,
+          "maximum_copies_per_taxon": 510,
+          "unordered_cross_species_candidate_pairs": 474505470,
+          "occupied_unordered_taxon_pairs": 128271
+        },
+        {
+          "family": "OG0000017",
+          "source_type": "retained",
+          "genes": 55981,
+          "taxa": 346,
+          "maximum_copies_per_taxon": 46787,
+          "unordered_cross_species_candidate_pairs": 470471562,
+          "occupied_unordered_taxon_pairs": 59685
+        },
+        {
+          "family": "OG0000001",
+          "source_type": "retained",
+          "genes": 20466,
+          "taxa": 517,
+          "maximum_copies_per_taxon": 167,
+          "unordered_cross_species_candidate_pairs": 208779077,
+          "occupied_unordered_taxon_pairs": 133386
+        },
+        {
+          "family": "OG0000012",
+          "source_type": "retained",
+          "genes": 19018,
+          "taxa": 347,
+          "maximum_copies_per_taxon": 583,
+          "unordered_cross_species_candidate_pairs": 179394661,
+          "occupied_unordered_taxon_pairs": 60031
+        },
+        {
+          "family": "OG0000011",
+          "source_type": "retained",
+          "genes": 16302,
+          "taxa": 482,
+          "maximum_copies_per_taxon": 279,
+          "unordered_cross_species_candidate_pairs": 132320675,
+          "occupied_unordered_taxon_pairs": 115921
+        },
+        {
+          "family": "OG0000000",
+          "source_type": "retained",
+          "genes": 16019,
+          "taxa": 476,
+          "maximum_copies_per_taxon": 206,
+          "unordered_cross_species_candidate_pairs": 127740377,
+          "occupied_unordered_taxon_pairs": 113050
+        },
+        {
+          "family": "OG0000008",
+          "source_type": "retained",
+          "genes": 15857,
+          "taxa": 520,
+          "maximum_copies_per_taxon": 168,
+          "unordered_cross_species_candidate_pairs": 125281609,
+          "occupied_unordered_taxon_pairs": 134940
+        },
+        {
+          "family": "OG0000013",
+          "source_type": "retained",
+          "genes": 14417,
+          "taxa": 489,
+          "maximum_copies_per_taxon": 179,
+          "unordered_cross_species_candidate_pairs": 103581970,
+          "occupied_unordered_taxon_pairs": 119316
+        },
+        {
+          "family": "OG0000014",
+          "source_type": "retained",
+          "genes": 14195,
+          "taxa": 473,
+          "maximum_copies_per_taxon": 133,
+          "unordered_cross_species_candidate_pairs": 100390694,
+          "occupied_unordered_taxon_pairs": 111628
+        },
+        {
+          "family": "OG0000004",
+          "source_type": "retained",
+          "genes": 10480,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 75,
+          "unordered_cross_species_candidate_pairs": 54784779,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000005",
+          "source_type": "retained",
+          "genes": 9979,
+          "taxa": 518,
+          "maximum_copies_per_taxon": 459,
+          "unordered_cross_species_candidate_pairs": 49340830,
+          "occupied_unordered_taxon_pairs": 133903
+        },
+        {
+          "family": "OG0000053",
+          "source_type": "retained",
+          "genes": 9117,
+          "taxa": 494,
+          "maximum_copies_per_taxon": 163,
+          "unordered_cross_species_candidate_pairs": 41356829,
+          "occupied_unordered_taxon_pairs": 121771
+        },
+        {
+          "family": "OG0000023",
+          "source_type": "retained",
+          "genes": 9010,
+          "taxa": 518,
+          "maximum_copies_per_taxon": 125,
+          "unordered_cross_species_candidate_pairs": 40450061,
+          "occupied_unordered_taxon_pairs": 133903
+        },
+        {
+          "family": "OG0000010",
+          "source_type": "retained",
+          "genes": 8890,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 53,
+          "unordered_cross_species_candidate_pairs": 39427007,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000007",
+          "source_type": "retained",
+          "genes": 8432,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 38,
+          "unordered_cross_species_candidate_pairs": 35474892,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000093",
+          "source_type": "retained",
+          "genes": 8412,
+          "taxa": 315,
+          "maximum_copies_per_taxon": 143,
+          "unordered_cross_species_candidate_pairs": 35122977,
+          "occupied_unordered_taxon_pairs": 49455
+        },
+        {
+          "family": "OG0000040",
+          "source_type": "retained",
+          "genes": 8086,
+          "taxa": 501,
+          "maximum_copies_per_taxon": 78,
+          "unordered_cross_species_candidate_pairs": 32585291,
+          "occupied_unordered_taxon_pairs": 125250
+        },
+        {
+          "family": "OG0000009",
+          "source_type": "retained",
+          "genes": 7904,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 50,
+          "unordered_cross_species_candidate_pairs": 31170835,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000112",
+          "source_type": "retained",
+          "genes": 9053,
+          "taxa": 190,
+          "maximum_copies_per_taxon": 4294,
+          "unordered_cross_species_candidate_pairs": 30634475,
+          "occupied_unordered_taxon_pairs": 17955
+        },
+        {
+          "family": "OG0000042",
+          "source_type": "retained",
+          "genes": 7735,
+          "taxa": 413,
+          "maximum_copies_per_taxon": 165,
+          "unordered_cross_species_candidate_pairs": 29730561,
+          "occupied_unordered_taxon_pairs": 85078
+        },
+        {
+          "family": "OG0000045",
+          "source_type": "retained",
+          "genes": 7711,
+          "taxa": 513,
+          "maximum_copies_per_taxon": 53,
+          "unordered_cross_species_candidate_pairs": 29646091,
+          "occupied_unordered_taxon_pairs": 131328
+        },
+        {
+          "family": "OG0000006",
+          "source_type": "retained",
+          "genes": 7679,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 39,
+          "unordered_cross_species_candidate_pairs": 29420292,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000036",
+          "source_type": "retained",
+          "genes": 7485,
+          "taxa": 510,
+          "maximum_copies_per_taxon": 63,
+          "unordered_cross_species_candidate_pairs": 27940005,
+          "occupied_unordered_taxon_pairs": 129795
+        },
+        {
+          "family": "OG0000015",
+          "source_type": "retained",
+          "genes": 7475,
+          "taxa": 526,
+          "maximum_copies_per_taxon": 37,
+          "unordered_cross_species_candidate_pairs": 27880783,
+          "occupied_unordered_taxon_pairs": 138075
+        },
+        {
+          "family": "OG0000021",
+          "source_type": "retained",
+          "genes": 7044,
+          "taxa": 515,
+          "maximum_copies_per_taxon": 49,
+          "unordered_cross_species_candidate_pairs": 24743474,
+          "occupied_unordered_taxon_pairs": 132355
+        }
+      ],
+      "artifacts": {
+        "mafft_family_workload.tsv": "8619df672b665ab50b8e2a234d9e506f5d9b71d27a55b1c0627f55f7c79b6dac"
+      }
+    }
+  ],
+  "merge_receipt_sha256": "a6236b4b2b27111a1b41170de71a884b512fa4e10e58a0aaf7576080c631403e",
+  "script_sha256": "c040be7b6ccc07671a0ffaa986e6e0d94deb023dd1f39c7a2f234e54575cd477",
+  "elapsed_seconds": 27.889073133468628,
+  "interpretation": "Exact full-partition candidate dimensions, not inferred orthology. Candidate pairs are not materialized. Storage scenarios describe hypothetical flat directed pair tables, not native grouped output predictions. A final runtime/memory execution plan remains required."
+}
