@@ -3207,3 +3207,11 @@ all four policies will be checked, including complete hit dispositions,
 blocker lists, rank ties, unresolved overlaps, nesting candidates and summary
 counts. Producer and waiting controller were verified live. Full empirical
 readback and architecture interpretation remain pending.
+
+
+User-requested temporary cooling restored September 17: both ESMFold workers
+use 30-second run/rest cycles, and current project process trees share the
+earlier 24-core CPU set. A one-off calendar timer restores full activity at
+18:00 Pacific local time (PDT), September 17, using normal controller shutdown
+and affinity restoration. This is a temporary exception, not a global default.
+See docs/temporary-cooling-20260917.md and the recorded launch identities.

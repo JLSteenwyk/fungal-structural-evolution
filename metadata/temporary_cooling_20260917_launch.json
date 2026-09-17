@@ -1,0 +1,41 @@
+{
+  "created": "2026-09-17T15:43:28.999916+00:00",
+  "deadline": "2026-09-17T18:00:00-07:00",
+  "deadline_utc": "2026-09-18T01:00:00+00:00",
+  "timezone_assumption": "6 PM Pacific local time (PDT); question pending if literal PST intended",
+  "controllers": [
+    {
+      "unit": "fungal-temporary-cooling-20260917-gpu0.service",
+      "pid": 260635,
+      "created": 1789659809.33,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/temporary_run_resource_limit.py",
+        "--config",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_cooling_20260917_gpu0_config.json",
+        "--state",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260917_gpu0_state.json"
+      ],
+      "config": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_cooling_20260917_gpu0_config.json",
+      "state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260917_gpu0_state.json"
+    },
+    {
+      "unit": "fungal-temporary-cooling-20260917-gpu1.service",
+      "pid": 260638,
+      "created": 1789659809.37,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/temporary_run_resource_limit.py",
+        "--config",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_cooling_20260917_gpu1_config.json",
+        "--state",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260917_gpu1_state.json"
+      ],
+      "config": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/temporary_cooling_20260917_gpu1_config.json",
+      "state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/temporary_cooling_20260917_gpu1_state.json"
+    }
+  ],
+  "timer": "fungal-end-cooling-20260917.timer",
+  "controller_script_sha256": "b1d23e2286c471d29c270659d9ad141fdd2a7de142227121c0e7bc1e85258ec8",
+  "scope": "Temporary current-project jobs only; both GPU workers 30 seconds running / 30 seconds resting and disjoint process trees restricted to shared 24-core CPU set; hardware power limits unchanged"
+}

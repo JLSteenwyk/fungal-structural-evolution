@@ -1,0 +1,60 @@
+{
+  "status": "verified_both_gpu_run_rest_cycles",
+  "deadline": "2026-09-17T18:00:00-07:00",
+  "samples": [
+    {
+      "at": 1789659894.3583753,
+      "statuses": [
+        {
+          "gpu_pid": 40917,
+          "phase": "running"
+        },
+        {
+          "gpu_pid": 267239,
+          "phase": "running"
+        }
+      ]
+    },
+    {
+      "at": 1789659896.3644505,
+      "statuses": [
+        {
+          "gpu_pid": 40917,
+          "phase": "running"
+        },
+        {
+          "gpu_pid": 267239,
+          "phase": "running"
+        }
+      ]
+    },
+    {
+      "at": 1789659898.3703737,
+      "statuses": [
+        {
+          "gpu_pid": 40917,
+          "phase": "running"
+        },
+        {
+          "gpu_pid": 267239,
+          "phase": "running"
+        }
+      ]
+    },
+    {
+      "at": 1789659900.3762765,
+      "statuses": [
+        {
+          "gpu_pid": 40917,
+          "phase": "resting"
+        },
+        {
+          "gpu_pid": 267239,
+          "phase": "resting"
+        }
+      ]
+    }
+  ],
+  "gpu_sample": "0, 100 %, 76, 256.72 W, 300.00 W\n1, 100 %, 81, 295.40 W, 300.00 W\n",
+  "timer": "NextElapseUSecRealtime=Thu 2026-09-17 21:00:00 EDT\nActiveState=active\n"
+}
