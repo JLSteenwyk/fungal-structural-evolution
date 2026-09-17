@@ -278,3 +278,24 @@ directed strict nesting, coordinate and ranking sensitivities, empty inputs
 and invalid-input rejection. These are software checks. Full-data competition,
 independent empirical validation, architecture calls and gain/loss analyses
 have not yet run.
+
+
+Full-data execution is launched under
+`fungal-full-domain-competition-20260917.service` using
+`scripts/run_full_domain_competition.py` and the pinned
+`metadata/full_domain_competition_plan.json`. All 5,713,603 queries and
+8,103,610 raw hits are included. Output is
+`results/domains/full-domain-competition-v1/query_competition.tsv.gz` with
+one row per query and complete four-policy hit dispositions, retained IDs,
+rank-tie pairs, unresolved overlaps and candidate nested pairs. All original
+annotation fields remain accessible through the immutable source database.
+The query row also records partial-HMM hit counts, no-hit status and whether
+retained sets agree across policies. Agreement alone does not validate an
+architecture, and partial matches are counted without being silently removed.
+
+The single-process run has a 4 GiB memory planning allowance, 16 GiB service
+limit, disabled swap, 20 GiB output limit and 50 GiB free-disk gate. The
+0.5–12 hour planning range is not a calibrated ETA. No paid resources are
+used. A partial run requires explicit review and a new output directory;
+existing results are never overwritten. Independent full empirical readback
+remains a required subsequent stage and is not yet queued.

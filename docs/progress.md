@@ -3189,3 +3189,12 @@ nesting remain explicit. Software checks passed for overlap chains, decimal
 precision, order invariance, ties, nesting and policy differences. The
 full-dataset driver and independent empirical validation remain to be
 implemented; no resolved architecture or gain/loss result is claimed.
+
+
+Full-domain clan competition is running over all 5,713,603 queries and
+8,103,610 raw hits under four coordinate/ranking policies. Every hit retains
+its disposition; ties, unresolved overlaps, nesting candidates, partial HMM
+coverage and no-hit queries remain explicit. The service and exact process
+identity were verified live. Software checks passed again before launch.
+Full-data completion and independent empirical readback remain pending;
+architecture and gain/loss inference have not been performed.
