@@ -257,3 +257,35 @@ Reproducibility: `fit_reviewed_conditional_site_coupling.py`, `advance_reviewed_
 
 
 The [expanded copy-review comparison figure](figures/expanded_copy_review_coupling.svg) shows every one of the 24 specifications for both the full89 and omission88 cohorts. Panels retain explicit fixed reference values for sequence-rate and RSA effects, with the interaction in a separate panel. Lines are unadjusted 95% whole-marker bootstrap intervals; symbols are point estimates. The plotted table retains all 144 rows, and 432 numerical values were checked against source summaries. The SVG was visually inspected for row readability, interval visibility and unclipped annotations. `plot_expanded_copy_review_coupling.py` and `metadata/expanded_copy_review_coupling_figure_{receipt,review}.json` record reproduction and source hashes. The structural-alphabet model labels in the rows do not denote different prediction sources: this figure uses the expanded ESMFold cohort throughout.
+
+
+## Expanded AlphaFold completion and copy-review comparison (2026-09-17)
+
+The full124/44,719-site and omission123/44,410-site analyses and marker
+resampling are complete. `compare_copy_review_coupling.py` verified source
+artifact hashes, exact covariate subset equality and all 72 focal omission
+coefficients against full-cohort leave-one-marker-out fits, with maximum
+absolute difference 6.11e-15. Each cohort has 24 model specifications and
+48,000 bootstrap fits; leave-one-marker-out fits number 2,976 and 2,952.
+The omitted marker is 4986044at2759 (309 sites), whose copy review is unresolved.
+
+In each cohort all 24 sequence-rate coefficients are positive, all 24 RSA
+main effects negative, and all 24 sequence-rate-by-RSA interactions negative.
+All pass BH q < 0.05 within their respective 72-test family. Unadjusted
+marker-bootstrap intervals exclude zero in those directions for every
+specification; sequence and RSA contrasts at their observed mean reference
+values retain the same directions. These remain conditional associations
+with fixed estimated rates/topologies and sequence-derived predictions.
+
+The AlphaFold interaction intervals differ descriptively from the expanded
+ESMFold results, whose intervals include zero. The cohorts differ in markers,
+sites and taxa, so this is not a test of predictor differences. A matched-cohort
+source comparison, expanded FCS sensitivity and phylogenetic uncertainty
+remain necessary. Neither result establishes structural acceleration,
+causality, selection or physical displacement.
+
+Reproduce with `scripts/compare_copy_review_coupling.py`, using the
+`site-coupling-gdm-expanded-{reviewed,copy-omission}-v1` and corresponding
+`site-coupling-resampling-*` folders under `results/phylogeny/`. The comparison
+is `copy-review-coupling-comparison-gdm-expanded-v1`; receipts and all three
+comparison tables are archived as `metadata/gdm_expanded_copy_review_comparison_*`.

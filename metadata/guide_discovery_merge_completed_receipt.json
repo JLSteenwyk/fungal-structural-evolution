@@ -1,0 +1,36 @@
+{
+  "status": "complete_guide_specific_discovery_merge_requires_independent_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "proteins": 5815847,
+      "families": 658183,
+      "retained_multi_families": 43715,
+      "discovery_families": 614468,
+      "old_singletons_relocated": 60423,
+      "artifacts": {
+        "profile/clusters_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+        "profile/family_sources.tsv": "e146db00a53f7030b58b1fa8de25bc4064670b13cda8a4eb1bde95bbfb80b350",
+        "profile/singleton_relocations.tsv": "90518f619af75274c6dddd29c5fc30d8d7fc589190c38b723f45a335b4d233c6"
+      }
+    },
+    {
+      "guide": "mafft",
+      "proteins": 5815847,
+      "families": 658522,
+      "retained_multi_families": 43715,
+      "discovery_families": 614807,
+      "old_singletons_relocated": 60423,
+      "artifacts": {
+        "mafft/clusters_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e",
+        "mafft/family_sources.tsv": "92c1e36168759c81954adf7325fbf475ebbb6dc9be07ecd563e806f0516b79b6",
+        "mafft/singleton_relocations.tsv": "c5b1c557332c88669b97e43e99e79d823a149fedd520b465ff6f6e9fc252ef70"
+      }
+    }
+  ],
+  "plan_sha256": "82ca90574bda6d9d1e778f14c3a5a9ba1e99eea7d54c37ff25f941803bc9dbd8",
+  "script_sha256": "acd44a2e221130f17efff27c2fa80becc5cecee561b60387b14dc33c8c1119c5",
+  "discovery_receipt_sha256": "b7b5cc9c6ebc83e2bce0c9262a1b2cf54dcf28d54f0247ae7712ee60a17a1f58",
+  "discovery_readback_sha256": "f3f20b6b07613f1cc98f5d6f2d1e3dcc4d5cf85e19db13b26d27032d097d2347",
+  "interpretation": "Full protein partitions with unique membership, retaining every original multi-protein family and replacing all original singleton slots through complete guide-specific discovery. Family indices are renumbered contiguously; source and singleton crosswalks are mandatory. Original trees are candidates only and are not copied or assumed valid. Independent merged-partition readback, added trees and reconciliation remain required."
+}

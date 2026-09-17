@@ -1,0 +1,26 @@
+{
+  "status": "complete_audited_additional_full_proteome_annotation_catalog",
+  "chunks": 64,
+  "pfam_profiles": 30134,
+  "annotated_hit_rows": 7939960,
+  "source_snapshots": [
+    {
+      "snapshot": "results/domains/full-annotation-snapshot-v1",
+      "receipt_sha256": "cfbd61d33ac375d866435de691bdd6e39ecda97316364a8e3247bb152af0e049",
+      "readback": "results/domains/full-annotation-readback-v1",
+      "readback_sha256": "1973c7e73e3ced3e54a9d08ebf3b4a93d8fa2b400038680ddc69660c9bc50ca3"
+    },
+    {
+      "snapshot": "results/domains/full-annotation-remaining-v1",
+      "receipt_sha256": "4de2df096aaaffe5fbe5663a73812fcdde497501a157b321b7765666a00ed708",
+      "readback": "results/domains/full-annotation-remaining-readback-v1",
+      "readback_sha256": "8d2d3fec7f2af31c98c1fc5fc979d2a0c10898e2a742012e8c91a9a00a280bc3"
+    }
+  ],
+  "raw_search_receipt_sha256": "bd662ef6b71124b089a94de39a72a8979e4317d45fa1021e5b70080f6a44437d",
+  "script_sha256": "0075c4e51894548173ebe0d224f608a7d58d1b73cc03344741c1b5cfbaa70711",
+  "interpretation": "Complete disjoint catalog of additional full-proteome annotation shards. Marker query partition remains separate. Not overlap-resolved architectures or proof of biological absence. Source-partition E-values retained.",
+  "artifacts": {
+    "annotation_shards.tsv": "f40cc425d70e6bfe130d59d1a5c94d90764e8a4ed08ba7d8b29882f4d5f58fc8"
+  }
+}

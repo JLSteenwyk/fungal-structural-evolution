@@ -6,9 +6,9 @@
 | Sampling | 501 fungal entries plus 25 outgroups acquired; 21 incomplete fungal labels and two curated hybrids require identity-aware interpretation | metadata/analysis_manifest.tsv; docs/taxon-identity-sensitivities.md; species uniqueness not fully established |
 | Assembly and protein QC | Broad QC for 526 and lineage-specific BUSCO for 501 fungi complete; FCS report inventory and exact coding-overlap audit complete | docs/assembly-quality-workflow.md; 518 usable reports, one checksum mismatch, seven external-source exceptions; biological review and omission/copy sensitivities pending |
 | Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 70/125 marker trees audited in latest frozen snapshot; supported-split guide conflict diagnostic computed | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
-| Families, domains and reconciliation | 64-taxon core complete; full 526-taxon artifact audit identifies one required family-tree repair, now running; full-proteome Pfam searches running | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
+| Families, domains and reconciliation | Full guide-specific discovery and merged membership readback complete for all 5,815,847 proteins; original family-tree repair running; all 64 additional Pfam chunks catalogued | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
 | Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
-| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold 356 fits and corrected Gamma4 audit complete; 45,155 marker edges linked to both provisional guides with 180,620 audited branch estimates; FreeRate optimization/downstream comparisons running | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; site-rate and coupling sensitivity pending; model, prediction and phylogenetic uncertainty remain |
+| Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold 356 fits and corrected Gamma4 audit complete; 45,155 marker edges linked to both provisional guides with 180,620 audited branch estimates; Expanded ESMFold and AlphaFold optimization, conditional coupling and copy-review omission comparisons complete | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; expanded FCS sensitivity and final branch models pending; model, prediction and phylogenetic uncertainty remain |
 | Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; all 13,240 nuisance-profile points audited; four optimization concerns and 29 FCS-exposed cases flagged; selection eligibility unresolved |
 | Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
 | Evolutionary objectives 1–8 | Intermediate analyses available; no objective set declared complete | docs/research-plan.md; final branch/clade tests, duplication/domain/ecological analyses, selection and ancestral case studies remain |
@@ -3017,3 +3017,31 @@ Implemented the guide-specific merger that preserves 43,715 original multi-prote
 ### 2026-09-16 — independent merged-partition validation queued
 
 Completed the independent native-reader audit for all merged memberships, protein coverage, raw multiplicity, source/tree-reference crosswalks and singleton relocations. The valid full-file synthetic fixture passed. Five deliberately corrupted fixtures with updated checksums were rejected on semantic grounds. Launched a waiting controller that requires exact discovery-process completion and successful independent discovery readback, then runs both guide merges and their independent validation. Its live process identity and 16 GiB service limit are recorded. Biological merge outputs remain pending; tree inference and reconciliation are not part of this handoff. This changes the prior merge status from prepared-only to queued.
+
+
+## 2026-09-17: completed discovery, annotation catalog and AlphaFold coupling
+
+Previous goal turn was a verified wait on live processes. Overnight completion
+was checked against controller receipts and downstream evidence. All 60 clade
+discovery runs passed native readback. Both merged partitions contain exactly
+5,815,847 proteins: 658,183 profile-guide families and 658,522 MAFFT-guide
+families, including singletons. All six merged artifacts and discovery/readback
+receipt links were rehashed. Membership completeness does not establish
+biological homology. Expanded indexed family alignments, gene trees and
+reconciliation remain required; source crosswalks are mandatory when reusing
+retained trees.
+
+The 64-chunk additional Pfam catalog contains 7,939,960 annotated hit rows;
+its source readback links and shard catalog checksum were checked. The marker
+partition remains separate. Protein joins, overlap resolution and architectures
+are not yet complete.
+
+AlphaFold completed all six rate-comparison/frame stages, 24 coupling fits
+and 48,000 marker-bootstrap fits for each of the full124 and omission123
+cohorts. The new comparison checked exact covariate subsets and all 72 omission
+coefficients against full-cohort leave-one-marker-out estimates (maximum
+absolute difference 6.11e-15). Evidence is archived in
+`metadata/gdm_expanded_copy_review_comparison_*` and completed-stage receipts.
+Both GPUs remain active at 100% utilization with 300 W limits. The large
+retained-family FastTree repair has reached ML NNI refinement; supported
+species-tree inference remains live. The overall project is incomplete.

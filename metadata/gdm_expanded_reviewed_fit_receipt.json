@@ -1,0 +1,38 @@
+{
+  "status": "complete_exploratory_conditional_site_coupling_fits",
+  "sites": 44719,
+  "markers": 124,
+  "fits": 24,
+  "focal_tests": 72,
+  "confidence_taxon_site_rows": 4148852,
+  "plan_sha256": "c9943b5105676d72a632db1a7cb9c5db3b38f782a93ea880f4e13ff7fbd18ac5",
+  "source_frame_sha256": "a81e3414361f4d5d27a2d7c858172ea2452a9ca7e75bce61f3151d3b80b52bec",
+  "source_accessibility_sha256": "1722e4d59a55724821f9801b96da9c0d188c18b51227be023c2296e9ca7268b9",
+  "script_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "artifacts": {
+    "site_covariates.tsv": "ef8f29adc5153015ed65408e2d11f51dc37ee8165c6ec8fd182f78411265c907",
+    "focal_coefficients.tsv": "d91e0ec98d94a4f956333ba1af9d605af5583b9a0755bac122bc0b471a8324ba",
+    "all_coefficients.tsv": "eaa833a9aee8659548db3e69daa33b5a36e51d5b29e852a611c1d19762cc3bec",
+    "fit_summary.tsv": "e789940afc44d7ef713c07fd57f1a56aa5e1e83c4b4c1c88d33949d52c884d71"
+  },
+  "interpretation": "Exploratory conditional site association in the gdm-expanded cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: retain_flagged_exploratory. Marker 4986044at2759 requires gene-copy reconciliation; interpret with paired full-cohort/omission sensitivity.",
+  "marker_review_policy": {
+    "mode": "retain_flagged_exploratory",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 309
+      }
+    ],
+    "reason": "Same flagged marker appears in the expanded AlphaFold source exposure grid with 309 sites. Preserve full124 exploratory cohort and paired123 omission sensitivity, with no confirmatory single-ortholog claim."
+  },
+  "source_frame_sites": 44719,
+  "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+}
