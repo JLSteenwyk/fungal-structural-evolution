@@ -3113,3 +3113,13 @@ clan and curated nesting flags, while every query retains an ordered raw-hit
 inventory or an explicit no-hit state. The interval kernel passed 400 exhaustive
 synthetic checks (32,997 pairs); full empirical readback and architecture
 resolution remain pending. The inference jobs continue independently.
+
+
+Queued an automatic independent readback for the full overlap inventory.
+Every query and every reported pair will be checked against exhaustive
+within-query combinations, rather than the production sweep, along with all
+annotation fields and complete totals. The producer and exact-PID waiting
+controller were verified live; producer progress reached3.9 million queries.
+The all-field pair comparison passed300 additional synthetic cases. This is
+validation preparation; full overlap readback and architecture resolution
+remain pending.

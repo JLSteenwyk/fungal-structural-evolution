@@ -197,3 +197,24 @@ The plan uses one CPU, a 4 GiB memory estimate and a 16 GiB service limit, with
 50 GiB minimum free disk and a 20 GiB output allowance. The broad0.25–6 hour
 planning window is not a measured ETA. Full configuration, pins, fixture
 receipt and launch identity are versioned as `metadata/full_domain_overlap_*`.
+
+
+The complete empirical overlap readback is now queued under
+`fungal-full-domain-overlap-readback-20260917.service`.
+`advance_full_domain_overlap_readback.py` waits on the exact producer PID and
+creation time, requires its complete receipt and pinned plan, then runs
+`readback_full_domain_overlaps.py`. The reader uses exhaustive within-query
+combinations, independently of the interval-sweep kernel, to check the complete
+pair universe and every alignment/envelope, clan, family, containment and NE
+flag. It also checks all query inventories, ordered source annotations,
+partial-HMM counts, status labels and aggregate totals. Extra, missing or
+repeated pair/query rows fail the readback.
+
+Three hundred additional synthetic cases (17,610 overlap pairs) agreed across
+all nine pair annotations between the independent exhaustive calculation and
+the production sweep. Full empirical checks remain pending. The reader uses
+one CPU and a 16 GiB service cap (4 GiB planning allowance); its broad planning
+window is0.25–8 hours after producer completion. No high-multiplicity query is
+excluded. Config, fixture evidence and exact live service identity are in
+`metadata/full_domain_overlap_readback_*`. A transient-service failure or
+partial output requires review; source products are never overwritten.

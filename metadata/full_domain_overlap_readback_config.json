@@ -1,0 +1,25 @@
+{
+  "producer": {
+    "pid": 3635296,
+    "created": 1789656676.35
+  },
+  "plan": "metadata/full_domain_overlap_plan.json",
+  "output": "results/domains/full-domain-overlap-readback-controller-v1",
+  "resources": {
+    "cpu_threads": 1,
+    "memory_planning_gib": 4,
+    "service_memory_limit_gib": 16,
+    "planning_hours_after_producer": [
+      0.25,
+      8
+    ],
+    "cost": "Existing host; no new charges"
+  },
+  "basis": "Exhaustive within-query pair enumeration over all queries. Mostly small hit sets; no high-multiplicity query omitted. One query held in memory; full gzip and database readback. Planning range is not calibrated runtime.",
+  "pins": {
+    "scripts/readback_full_domain_overlaps.py": "cc1bcd7fab71fab73d18235d183564bdcd32f8fdeb47e53cbca833f26fe0ef62",
+    "scripts/advance_full_domain_overlap_readback.py": "b406472caee917c5e295e48388c4b1d3475652bbf18de46e9914ddbd88fdaa09",
+    "metadata/full_domain_overlap_plan.json": "9f7e20f84c1851cd200a648129d400f0baf250f419a5c53123686732bd7d2895",
+    "metadata/full_domain_overlap_readback_fixture.json": "000b7700d5f269e64fe15fba52295f1256361528869dc960f1ae1ef297238f42"
+  }
+}
