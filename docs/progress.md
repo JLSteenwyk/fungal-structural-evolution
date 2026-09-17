@@ -3131,3 +3131,13 @@ nesting fields matched exhaustive independent calculation. Both output gzip
 hashes were checked before archiving receipts. There are 932,514 queries with
 overlaps requiring review; the inventory does not resolve their competing
 models or infer gains/losses. Architecture resolution remains outstanding.
+
+Retained-tree catalog completed: all 32,637 available immutable staged trees
+passed native-parser exact membership, taxon-count and explicit finite
+nonnegative branch checks. All 32,638 retained candidates have mappings into
+both expanded guide partitions (65,276 mappings); OG0000017 remains explicitly
+pending while its reconstruction runs. Serialized catalog counts, uniqueness
+and every destination mapping were checked against both complete source
+crosswalks. The catalog receipt is archived in metadata. This prepares the
+retained component of expanded reconciliation inputs; reconciliation itself
+and the full new-tree readback remain pending.

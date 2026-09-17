@@ -317,3 +317,32 @@ fixtures, not a biological pilot or runtime benchmark. Fixture and live launch
 receipts are versioned in metadata. This transient service requires explicit
 state review after a machine restart. Retained-tree validation and full
 reconciliation remain outstanding.
+
+## Retained-tree membership catalog (2026-09-17)
+
+`scripts/catalog_retained_family_trees.py` maps every retained tree candidate
+to the profile and MAFFT expanded partitions through their audited membership
+hashes and source-family crosswalks. It reads immutable staged trees from
+`results/orthology/full-reconciliation-inputs-v1/profile/`, verifies their
+manifest hashes, and uses the native OrthoFinder parser to check unique tips,
+the exact membership fingerprint, taxon count and explicit finite nonnegative
+branch lengths. An absent staged tree remains an explicit pending row; an
+unmanifested or changed tree is an error. The running OG0000017 repair is not
+read while it is being written.
+
+The output is `results/orthology/retained-tree-catalog-v1/`. Its TSV records
+source paths, hashes and both destination family IDs; the receipt records
+validated and pending totals. This is a catalog for later assembly of complete
+reconciliation inputs, not a reconciliation result. Run with:
+
+```bash
+.cache/envs/orthofinder/bin/python scripts/catalog_retained_family_trees.py \
+  --census results/orthology/expanded-family-tree-workload-v1 \
+  --staged results/orthology/full-reconciliation-inputs-v1/profile \
+  --merged results/orthology/guide-discovery-merge-v1 \
+  --output results/orthology/retained-tree-catalog-v1
+```
+
+The validator uses one CPU, reads roughly 3 GB of existing staged inputs,
+and writes a small catalog without copying trees. Re-execution requires a
+new output directory to preserve the earlier evidence.
