@@ -250,3 +250,29 @@ This completes workload enumeration only. Expanded family FASTAs, new
 alignments and gene trees still need execution; retained tree candidates need
 validation against their exact memberships before reuse. The original large
 family repair remains running. Reconciliation is not yet complete.
+
+
+## New-family sequence staging (2026-09-17)
+
+`scripts/stage_expanded_family_sequences.py` stages all 63,949 distinct new
+families under `results/orthology/expanded-family-sequences-v1/families/`.
+Filenames use exact native-ID membership hashes so later jobs need not depend
+on guide-specific renumbering. The input plan pins the independently verified
+task census, merged partitions and the 526-proteome source manifest.
+
+The staged collection contains 788,325 distinct native protein IDs, 824,364
+family-sequence records and 240,132,391 amino-acid residues in 249,384,973 FASTA
+bytes. Some proteins occur in differing families under the alternative guide
+partitions; these occurrences are preserved. Full sequences and native IDs
+are retained without trimming or sequence deduplication. The per-family table
+records protein/taxon counts, residue totals, minimum/maximum lengths and file
+checksums. Staging was planned for one CPU, 16 GiB memory and a 5 GiB output
+allowance, using existing resources.
+
+Independent validation uses `scripts/readback_expanded_family_sequences.py`
+and Bio.SeqIO against the original source FASTAs, rather than the copied
+staging sources. It checks every full sequence, exact family membership,
+file checksum and recorded dimension. A successful `readback.json` is required
+before inference. Alignments and new trees have not yet been run; large-family
+memory requirements and native alignment settings must be included in the
+execution plan. Retained-tree reuse and reconciliation remain separate stages.

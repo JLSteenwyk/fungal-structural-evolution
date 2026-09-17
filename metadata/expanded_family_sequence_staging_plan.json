@@ -1,0 +1,26 @@
+{
+  "output": "results/orthology/expanded-family-sequences-v1",
+  "census": "results/orthology/expanded-family-tree-workload-v1",
+  "merged": "results/orthology/guide-discovery-merge-v1",
+  "source_root": "results/orthology/full-reconciliation-inputs-v1/profile",
+  "expected_tasks": 63949,
+  "minimum_free_disk_gib": 20,
+  "output_allowance_gib": 5,
+  "resources": {
+    "cpu_threads": 1,
+    "memory_allowance_gib": 16,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "pins": {
+    "scripts/stage_expanded_family_sequences.py": "e628607cea25110101df757551396a1bcdef8b042e03aa131fe4a91ed3712837",
+    "scripts/census_expanded_family_tree_workload.py": "09fb0b53bc3e560e3b8989502cb50d7449b9e8d1bc5cff807c550ed00bbab279",
+    "results/orthology/expanded-family-tree-workload-v1/receipt.json": "09c2213616a69cee5eea1fece198f542500598f178735d362c7b5b03a06e9646",
+    "results/orthology/expanded-family-tree-workload-v1/readback.json": "b23b152c2a4d75f599b7ccebba02840b1b8539928f53a5630c4b5ceeababe571",
+    "results/orthology/guide-discovery-merge-v1/receipt.json": "a6236b4b2b27111a1b41170de71a884b512fa4e10e58a0aaf7576080c631403e",
+    "results/orthology/full-reconciliation-inputs-v1/profile/copied_files.tsv": "ed7488e4db32ce71228bd2e7059801ecae22020116f98a768037a8a201f32220"
+  }
+}

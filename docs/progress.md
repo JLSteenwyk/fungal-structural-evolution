@@ -3055,3 +3055,16 @@ retained tree candidates and 63,949 new trees. Native MCL readback verified all
 partitions. No new tree inference has yet been launched from this list;
 sequence staging and a length-aware compute plan are next. Both ESMFold GPUs
 and the existing large-family tree repair were verified live during this turn.
+
+
+All 63,949 distinct new-family FASTAs are now staged and independently verified
+against all 526 original source proteomes. They contain 788,325 distinct protein
+IDs and 824,364 family-sequence records (240,132,391 residues); alternative
+partition memberships explain repeated proteins across task files. Every
+sequence, membership and recorded file dimension passed readback. Versioned
+scripts and `metadata/expanded_family_sequence_staging_*` reproduce and record
+the stage. Median family size is five proteins; 26 families contain at least
+1,000 proteins, with a maximum of 10,072. The largest individual protein is
+16,223 residues. Alignment/tree resource planning must accommodate this range;
+no new-family tree inference has yet been launched. Existing GPU and long
+phylogenetic jobs were verified live during staging.
