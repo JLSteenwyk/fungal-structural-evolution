@@ -128,3 +128,24 @@ one CPU, an 8 GiB memory planning allowance and 16 GiB service cap; 100 GiB
 free disk is required and the build has a 50 GiB database allowance. The
 0.25–6 hour window is a broad planning estimate. This transient service does
 not survive reboot; partial outputs require review and are not overwritten.
+
+
+## Preserve curated nested-domain relationships
+
+Pfam describes nested domains as insertions within a containing domain and
+marks them with NE tags ([Pfam database paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC308855/)).
+The checksum-verified 38.2 metadata contains 160 NE occurrences representing
+150 distinct directed model relationships in 111 containing families. Twenty-seven
+families have multiple NE tags (maximum11), and ten occurrences repeat a
+pair already recorded in that source. `extract_pfam_nested_domains.py` retains
+every occurrence and resolves model names to accessions within the same release.
+An independent regular-expression/block parser confirmed the complete exported
+pair multiset, including multiplicity. Receipts and the small relationship table
+are versioned as `metadata/pfam_nested_*`.
+
+The existing marker annotation parser retains one value per metadata key; it
+is sufficient for its scalar hit annotation fields but must not be reused to
+extract this multivalued NE relation. Its existing annotations are unchanged.
+Architecture processing must use the complete nested relationship table and
+observed coordinates; these curated model relationships alone do not establish
+nesting in any project protein or justify accepting all overlapping hits.

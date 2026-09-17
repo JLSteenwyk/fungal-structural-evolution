@@ -3089,3 +3089,10 @@ architecture evolution remain pending. Plan, scripts and launch identity are
 versioned under `full_domain_database`. The new-family tree service continues
 in parallel; four early completed trees passed the separate native-parser
 checker without modifying live outputs.
+
+
+Prepared the complete Pfam38.2 nested-domain relation for architecture overlap
+review: all 160 NE occurrences, including repeated entries, resolve to 150
+unique model pairs. Independent block/regex extraction verified every pair
+and its multiplicity. No observed protein architecture is inferred from this
+metadata alone; domain database validation and overlap analysis remain pending.
