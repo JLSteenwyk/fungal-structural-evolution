@@ -1,0 +1,37 @@
+{
+  "output": "results/orthology/expanded-family-trees-v1",
+  "inputs": "results/orthology/expanded-family-sequences-v1",
+  "expected_families": 63949,
+  "famsa": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa",
+  "fasttree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/FastTree",
+  "resources": {
+    "workers": 16,
+    "threads_per_worker": 1,
+    "per_worker_address_space_gib": 16,
+    "service_memory_limit_gib": 320,
+    "minimum_available_memory_gib": 64,
+    "minimum_free_disk_gib": 1024,
+    "output_planning_allowance_gib": 256,
+    "step_timeout_hours": 72,
+    "planning_total_hours": [
+      4,
+      168
+    ],
+    "cost": "Existing host, no new charges"
+  },
+  "basis": "63949 tasks: median5 proteins, 99th percentile129, 26 tasks >=1000, maximum10072; 240132391 source residues, longest sequence16223aa. Sixteen single-thread jobs; memory limits are allocation ceilings, not measured peaks. Runtime range is a broad planning allowance, not a calibrated ETA. Native FAMSA and FastTree match original retained-family run. Native trim parameters10/.1/500/.75 preserved; raw alignments retained. No exclusions.",
+  "pins": {
+    "scripts/run_expanded_family_trees.py": "d2e1cf6eb412f0f05f4fa2fcbaf60fe4f7bcb9547d0876d0953f75483e6ba1a8",
+    "scripts/readback_expanded_family_trees.py": "bec9b46544d8f777b85031568499549a963a6510b97721855919e8bc6c5f61e9",
+    "scripts/check_expanded_family_tree_runner.py": "cd0fc0b02ba412d18e07f9bab19b2d4f8d85a7c10cd486b51b7f63d5d5ed5380",
+    "results/orthology/expanded-family-tree-runner-fixture-v1/receipt.json": "d03ae67324d0e636606441cb0b49e944b3e2d362f285bd55151d27bc9873124e",
+    "results/orthology/expanded-family-sequences-v1/receipt.json": "937cc3d86ee0f05e0f9ac8bfe8644c4d81f8a5a1426096e462107d9c196c49f1",
+    "results/orthology/expanded-family-sequences-v1/readback.json": "df6c0d727d86300db521e663cd4b8dace07f16a9545ab2ed4e305b5db25b6555",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa": "20b52ee56519facaae159b61a40f424835ff6f0e6b7492bf632628b8c06f7ed3",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/FastTree": "6fe112c32a2e0b5a2cc6baeeb5f564300f5f650b0dfe96b54a06f0c2ef7a97a5",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/trim.py": "1794574ca2a4c8a6fc62b5e808614119113bc6123d505a08725e55991105eeca",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/tree.py": "6581d8f8329cb330d5c76322dc6456fd8e76046629aa391531269230e3082c59",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/newick.py": "52e7f9c29046dfb1bcf9d12f7fbc4c4f4b98511238967070b8fbf9495b2b05f7",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/run/config.json": "10a10a93262c9676865f03ba05b2b77d48285c312dca435d2458939894a474b3"
+  }
+}

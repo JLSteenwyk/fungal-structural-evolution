@@ -276,3 +276,44 @@ file checksum and recorded dimension. A successful `readback.json` is required
 before inference. Alignments and new trees have not yet been run; large-family
 memory requirements and native alignment settings must be included in the
 execution plan. Retained-tree reuse and reconciliation remain separate stages.
+
+
+## Expanded alignment and tree execution (2026-09-17)
+
+All 63,949 distinct new-family tasks are running under
+`fungal-expanded-family-trees-20260917.service`, using
+`scripts/run_expanded_family_trees.py` and the pinned
+`metadata/expanded_family_tree_execution_plan.json`. Inspection of the original
+full526v2 log established FAMSA, rather than MAFFT, as its alignment method.
+The new run matches that method: FAMSA 2.2.3 with one thread, installed native
+OrthoFinder trimming (minimum sequence threshold10, meaningful-character
+fraction0.1, minimum columns500, retained-character fraction0.75), then the
+same default FastTree executable. Untrimmed alignments are retained.
+
+Sixteen independent workers process all tasks, largest residue totals first.
+Each worker has a 16 GiB address-space ceiling; the service has a 320 GiB
+memory cap with swap disabled. New tasks require 64 GiB available memory and
+1 TiB free disk; each command has a 72-hour timeout. The output planning
+allowance is 256 GiB (not a filesystem quota), and the initial total planning
+range is 4–168 hours, not a calibrated ETA. No paid resources are used.
+
+The runner checks exact source IDs and untrimmed residues, rectangular
+alignments, trimmed columns as an ordered subset of raw columns, nonempty
+trimmed sequences, and exact tree tips with finite nonnegative branch lengths.
+Per-family receipts and artifact hashes allow verified completed tasks to be
+reused. Partial tasks require review and are not automatically overwritten.
+Failures remain explicit while other families continue. After all jobs pass,
+`scripts/readback_expanded_family_trees.py` independently reads every tree
+using OrthoFinder's native parser and checks explicit branch serialization,
+source tips and all saved artifact hashes. Completion of the job service alone
+does not establish this readback or biological accuracy.
+
+`check_expanded_family_tree_runner.py` exercised the production worker using
+three- and twelve-sequence synthetic families. Identical sequences with
+distinct IDs were preserved. The twelve-sequence alignment was trimmed from
+900 to 600 columns, retaining 7,200 of 7,500 residues. Checkpoint reuse passed,
+and wrong alignment IDs and wrong tree tips were rejected. These are software
+fixtures, not a biological pilot or runtime benchmark. Fixture and live launch
+receipts are versioned in metadata. This transient service requires explicit
+state review after a machine restart. Retained-tree validation and full
+reconciliation remain outstanding.

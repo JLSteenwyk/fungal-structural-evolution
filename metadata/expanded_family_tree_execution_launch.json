@@ -1,0 +1,24 @@
+{
+  "unit": "fungal-expanded-family-trees-20260917.service",
+  "pid": 3588557,
+  "created": 1789655441.11,
+  "commands": [
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+      "scripts/run_expanded_family_trees.py",
+      "--plan",
+      "metadata/expanded_family_tree_execution_plan.json"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+      "scripts/readback_expanded_family_trees.py",
+      "--plan",
+      "metadata/expanded_family_tree_execution_plan.json",
+      "--output",
+      "results/orthology/expanded-family-trees-v1/readback.json"
+    ]
+  ],
+  "plan_sha256": "c680175ee3dfd84288fa5ecd3796e1f768729a1f80f6e2b5c91992c1c54337da",
+  "launched_at": 1789655441.267579,
+  "scope": "All new-family tasks followed by independent native tree readback. Transient service requires review after reboot. Partial task outputs are never overwritten automatically."
+}

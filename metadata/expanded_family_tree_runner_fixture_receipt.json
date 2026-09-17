@@ -1,0 +1,34 @@
+{
+  "status": "passed_synthetic_family_runner_checks",
+  "cases": [
+    {
+      "proteins": 3,
+      "dimensions": {
+        "proteins": 3,
+        "raw_columns": 600,
+        "trimmed_columns": 600,
+        "raw_residues": 1800,
+        "trimmed_residues": 1800
+      },
+      "checkpoint_reuse_passed": true,
+      "wrong_tree_tips_rejected": true,
+      "wrong_alignment_ids_rejected": true
+    },
+    {
+      "proteins": 12,
+      "dimensions": {
+        "proteins": 12,
+        "raw_columns": 900,
+        "trimmed_columns": 600,
+        "raw_residues": 7500,
+        "trimmed_residues": 7200
+      },
+      "checkpoint_reuse_passed": true,
+      "wrong_tree_tips_rejected": true,
+      "wrong_alignment_ids_rejected": true
+    }
+  ],
+  "runner_sha256": "d2e1cf6eb412f0f05f4fa2fcbaf60fe4f7bcb9547d0876d0953f75483e6ba1a8",
+  "script_sha256": "cd0fc0b02ba412d18e07f9bab19b2d4f8d85a7c10cd486b51b7f63d5d5ed5380",
+  "scope": "Software validation only, including duplicate tips, actual trimming and checkpoint reuse; not a biological pilot or full-scale runtime benchmark."
+}

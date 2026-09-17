@@ -3068,3 +3068,13 @@ the stage. Median family size is five proteins; 26 families contain at least
 16,223 residues. Alignment/tree resource planning must accommodate this range;
 no new-family tree inference has yet been launched. Existing GPU and long
 phylogenetic jobs were verified live during staging.
+
+
+Full new-family inference is now launched for all 63,949 staged tasks. The
+16-worker FAMSA/native-trim/FastTree service and active child executables were
+verified live. Production worker software checks passed on synthetic cases,
+including actual trimming, preservation of identical sequences with distinct
+IDs, and checkpoint reuse. Independent native-parser readback is queued after
+successful completion. Resource planning and limits are recorded in
+`metadata/expanded_family_tree_execution_plan.json`; this launch does not mark
+new trees, reconciliation or the overall project complete.
