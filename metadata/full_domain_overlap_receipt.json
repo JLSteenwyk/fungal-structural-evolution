@@ -1,0 +1,21 @@
+{
+  "status": "complete_full_overlap_inventory_requires_independent_readback",
+  "totals": {
+    "queries": 5713603,
+    "hits": 8103610,
+    "alignment_overlap_pairs": 3376062,
+    "envelope_overlap_pairs": 3531482,
+    "no_GA_hit_not_proven_absence": 1991329,
+    "nonoverlapping_raw_annotations_not_validated_architecture": 2789760,
+    "same_clan_pairs": 3466306,
+    "curated_and_coordinate_nesting_pairs": 26157,
+    "overlaps_require_review": 932514
+  },
+  "plan_sha256": "9f7e20f84c1851cd200a648129d400f0baf250f419a5c53123686732bd7d2895",
+  "script_sha256": "5ba9a8f553d45cfab6b635b739283b3d2f131a0b54be3d14f31e8c360ca8e3a7",
+  "artifacts": {
+    "overlap_pairs.tsv.gz": "132e489c5e59a8b47ff3a910f250e035cd115cc642007e974ae54e0b92b4dfce",
+    "query_annotation_inventory.tsv.gz": "825a73f6bc45fbb2359c9a689285a7c88ee7431adf93d3e6fc204370c068dfa4"
+  },
+  "scope": "Every query and source hit retained; all inclusive envelope-overlap pairs enumerated with alignment overlap, clan and curated nesting flags. No competing hit removed, no automatic nested-domain acceptance, no architecture or gain/loss inference."
+}

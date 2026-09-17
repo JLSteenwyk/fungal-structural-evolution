@@ -3123,3 +3123,11 @@ controller were verified live; producer progress reached3.9 million queries.
 The all-field pair comparison passed300 additional synthetic cases. This is
 validation preparation; full overlap readback and architecture resolution
 remain pending.
+
+
+Full overlap readback completed successfully for all 5,713,603 query inventories
+and 3,531,482 envelope-overlap pairs. Every pair's coordinate, family/clan and
+nesting fields matched exhaustive independent calculation. Both output gzip
+hashes were checked before archiving receipts. There are 932,514 queries with
+overlaps requiring review; the inventory does not resolve their competing
+models or infer gains/losses. Architecture resolution remains outstanding.

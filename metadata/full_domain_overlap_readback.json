@@ -1,0 +1,17 @@
+{
+  "status": "passed_complete_exhaustive_overlap_readback",
+  "totals": {
+    "queries": 5713603,
+    "hits": 8103610,
+    "alignment_overlap_pairs": 3376062,
+    "envelope_overlap_pairs": 3531482,
+    "no_GA_hit_not_proven_absence": 1991329,
+    "same_clan_pairs": 3466306,
+    "curated_and_coordinate_nesting_pairs": 26157,
+    "nonoverlapping_raw_annotations_not_validated_architecture": 2789760,
+    "overlaps_require_review": 932514
+  },
+  "source_receipt_sha256": "e9c01231afef6540a84372d744d48d5dcb853e7c7624009663f97eb0a526bae6",
+  "script_sha256": "cc1bcd7fab71fab73d18235d183564bdcd32f8fdeb47e53cbca833f26fe0ef62",
+  "scope": "Every query inventory and every envelope-overlap pair checked against exhaustive within-query combinations, including all coordinate, clan and directed nesting flags. Does not resolve competing annotations or establish biological architectures."
+}

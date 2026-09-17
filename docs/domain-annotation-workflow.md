@@ -218,3 +218,25 @@ window is0.25–8 hours after producer completion. No high-multiplicity query is
 excluded. Config, fixture evidence and exact live service identity are in
 `metadata/full_domain_overlap_readback_*`. A transient-service failure or
 partial output requires review; source products are never overwritten.
+
+
+The complete overlap inventory and exhaustive empirical readback have now
+passed. Every query, ordered raw annotation and overlap pair was checked.
+Both gzip artifact hashes were reverified before archiving the receipts in
+`metadata/full_domain_overlap_{receipt,readback}.json`.
+
+Across 5,713,603 sequence queries and 8,103,610 hits, there are 3,531,482
+inclusive envelope-overlap pairs, of which 3,376,062 also overlap in alignment
+coordinates. A total of 3,466,306 envelope pairs share a nonempty Pfam clan;
+26,157 agree with both a directed curated NE relationship and coordinate
+containment. These flags can overlap and are not mutually exclusive classes.
+They do not establish which hits represent the biological architecture.
+
+The query inventory retains 932,514 queries with overlapping hits requiring
+review, 2,789,760 with nonoverlapping raw annotations and 1,991,329 without a
+GA hit. These are sequence-query counts, not protein-link counts; they also
+include four marker-only queries. Ordered annotations retain model types, so
+Pfam Family, Repeat, Motif and other types are not silently relabelled Domains.
+Choosing among competing models, validating nested segments, propagating
+annotation uncertainty and comparing architectures on reconciled trees remain
+required. The raw and checked overlap outputs are preserved unchanged.
