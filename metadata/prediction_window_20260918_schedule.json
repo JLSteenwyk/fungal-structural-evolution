@@ -1,0 +1,48 @@
+{
+  "status": "paused_and_both_timers_scheduled",
+  "manifest_sha256": "bccb164b9bfe5eff79f58a4746c79bc7fee9c88da2349fede949bafea52c4d51",
+  "timers": [
+    {
+      "unit": "fungal-prediction-resume-20260918.timer",
+      "when": "2026-09-18T18:00:00-07:00",
+      "command": [
+        "systemd-run",
+        "--user",
+        "--unit=fungal-prediction-resume-20260918",
+        "--on-calendar=2026-09-19 01:00:00 UTC",
+        "--timer-property=AccuracySec=1s",
+        "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+        "resume",
+        "--manifest",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_window_20260918_manifest.json",
+        "--state",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260918_initial_pause.json"
+      ]
+    },
+    {
+      "unit": "fungal-prediction-pause-20260919.timer",
+      "when": "2026-09-19T06:00:00-07:00",
+      "command": [
+        "systemd-run",
+        "--user",
+        "--unit=fungal-prediction-pause-20260919",
+        "--on-calendar=2026-09-19 13:00:00 UTC",
+        "--timer-property=AccuracySec=1s",
+        "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "/home/bizon/anaconda3/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+        "pause",
+        "--manifest",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_window_20260918_manifest.json",
+        "--state",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260919_final_pause.json"
+      ]
+    }
+  ],
+  "initial_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260918_initial_pause.json",
+  "final_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260919_final_pause.json",
+  "resume_at": "2026-09-18T18:00:00-07:00",
+  "pause_again_at": "2026-09-19T06:00:00-07:00"
+}

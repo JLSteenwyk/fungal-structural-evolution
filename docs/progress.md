@@ -3215,3 +3215,10 @@ earlier 24-core CPU set. A one-off calendar timer restores full activity at
 18:00 Pacific local time (PDT), September 17, using normal controller shutdown
 and affinity restoration. This is a temporary exception, not a global default.
 See docs/temporary-cooling-20260917.md and the recorded launch identities.
+
+
+September 18 user-directed prediction pause: the sole live ESMFold worker is
+now suspended. Identity-checked timers resume it at 18:00 PDT September 18
+and pause it again at 06:00 PDT September 19, a 12-hour execution window.
+GPU 0 remains idle after its completed batch; other analyses continue.
+See docs/prediction-window-20260918.md for schedule and recovery details.

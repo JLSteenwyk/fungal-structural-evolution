@@ -1,0 +1,32 @@
+{
+  "purpose": "Pause all current protein structure prediction now, run from 6 PM PDT September 18 through 6 AM PDT September 19, then pause again",
+  "created_at": "2026-09-18T16:14:05.844134+00:00",
+  "resume_at": "2026-09-18T18:00:00-07:00",
+  "pause_again_at": "2026-09-19T06:00:00-07:00",
+  "roots": [
+    {
+      "pid": 267239,
+      "created": 1789573381.2,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "scripts/run_marker_predictions.py",
+        "--inputs",
+        "data/prediction_inputs/markers-769-1024-gpu1-v1",
+        "--checkpoint",
+        "data/prediction_models/esmfold-v1",
+        "--output",
+        "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+        "--max-length",
+        "1024",
+        "--limit",
+        "4363"
+      ]
+    }
+  ],
+  "excluded_pids": [
+    3234289
+  ],
+  "python": "/home/bizon/anaconda3/bin/python",
+  "script_sha256": "1d59837391eae1c3e09d99146b9a91661bc5a87a16f769411183f7476278bbc8",
+  "scope": "Prediction worker only; CPU analyses and postprediction auditing continue. No new prediction worker is authorized by this schedule."
+}
