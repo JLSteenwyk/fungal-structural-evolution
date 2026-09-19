@@ -1,5 +1,16 @@
 # Prediction pause and overnight window, September 18–19
 
+**Updated schedule:** the user superseded the original window. Structure
+prediction remains paused until **03:00 PDT September 19**, runs for ten
+hours, then pauses at **13:00 PDT September 19**. The old two timers were
+stopped and replaced by `fungal-prediction-resume-revised-20260919.timer` and
+`fungal-prediction-pause-revised-20260919.timer`. Both are verified active.
+The immutable original manifest/initial pause state are reused for resume;
+the final pause writes `results/prediction_window_20260919_revised_final_pause.json`.
+See `metadata/prediction_window_20260919_revised_schedule.json`.
+
+The earlier schedule below is retained as history and is no longer active.
+
 The user requested a complete pause of protein structure prediction until
 18:00 Pacific local time on September 18, followed by 12 hours of execution
 and another pause at 06:00 Pacific local time on September 19. PDT is used,

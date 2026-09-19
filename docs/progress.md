@@ -3222,3 +3222,11 @@ now suspended. Identity-checked timers resume it at 18:00 PDT September 18
 and pause it again at 06:00 PDT September 19, a 12-hour execution window.
 GPU 0 remains idle after its completed batch; other analyses continue.
 See docs/prediction-window-20260918.md for schedule and recovery details.
+
+
+User revised the prediction window before the September 18 resume fired.
+The old timers are stopped. Structure prediction stays paused until 03:00 PDT
+September 19 and will pause again at 13:00 PDT that day (ten hours running).
+Both replacement calendar timers are verified active and the original worker
+remains stopped. GPU 0 is occupied by a separate project; no unrelated jobs
+were changed. The revised schedule is recorded in metadata.
