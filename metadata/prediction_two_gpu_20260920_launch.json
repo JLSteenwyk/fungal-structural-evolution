@@ -1,0 +1,65 @@
+{
+  "status": "both_workers_launched_pause_timer_verified",
+  "workers": [
+    {
+      "unit": "fungal-split-prediction-gpu0-20260920.service",
+      "gpu_uuid": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1022"
+      ],
+      "output": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+      "cpus": [
+        64,
+        66,
+        68,
+        70
+      ],
+      "pid": 288443,
+      "created": 1789930178.08
+    },
+    {
+      "unit": "fungal-split-prediction-gpu1-20260920.service",
+      "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1023"
+      ],
+      "output": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+      "cpus": [
+        80,
+        82,
+        84,
+        86
+      ],
+      "pid": 288446,
+      "created": 1789930178.12
+    }
+  ],
+  "timer": "fungal-split-prediction-pause-20260920.timer",
+  "timer_verification": "NextElapseUSecRealtime=Sun 2026-09-20 15:53:17 EDT\nActiveState=active\n",
+  "pause_manifest": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_two_gpu_20260920_pause_manifest.json",
+  "pause_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260920_pause_state.json",
+  "plan_sha256": "2f1a90629f0afae03d4528d0936c9945883a1b95d11c457de89554a9964635f7",
+  "deadline": "2026-09-20T19:53:17+00:00"
+}

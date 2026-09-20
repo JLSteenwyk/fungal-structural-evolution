@@ -1,0 +1,76 @@
+{
+  "status": "authorized_two_gpu_split_until_existing_pause",
+  "deadline": "2026-09-20T19:53:17+00:00",
+  "resources": {
+    "gpu_count": 2,
+    "cpu_threads_per_worker": 4,
+    "host_memory_limit_gib_per_worker": 64,
+    "minimum_host_available_gib": 128,
+    "output_allowance_gib": 100,
+    "planning_remaining_hours_full_speed": [
+      25,
+      30
+    ],
+    "basis": "Same checkpoint and 769\u20131024-residue settings already running on identical 48 GiB GPUs; 2045 remaining proteins split by cubic-length cost. Actual run stops at user deadline. Stop on OOM; no truncation."
+  },
+  "input_receipt_sha256": "ee3742af6e5ef2196b1f3b06f8d9a989d3c48d8e162a821914e400f38612c60c",
+  "partition_readback": {
+    "total": 4363,
+    "complete": 2318,
+    "gpu0": 1022,
+    "gpu1": 1023,
+    "all_sequences_and_marker_links_match": true
+  },
+  "workers": [
+    {
+      "unit": "fungal-split-prediction-gpu0-20260920.service",
+      "gpu_uuid": "GPU-56e78ad3-b4d7-54f6-38fa-e95729009960",
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1022"
+      ],
+      "output": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+      "cpus": [
+        64,
+        66,
+        68,
+        70
+      ]
+    },
+    {
+      "unit": "fungal-split-prediction-gpu1-20260920.service",
+      "gpu_uuid": "GPU-21f34861-216e-5737-10cd-aad35dc83ac1",
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1023"
+      ],
+      "output": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+      "cpus": [
+        80,
+        82,
+        84,
+        86
+      ]
+    }
+  ]
+}

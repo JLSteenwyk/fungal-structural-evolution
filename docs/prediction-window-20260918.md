@@ -1,5 +1,12 @@
 # Prediction pause and overnight window, September 18–19
 
+**Superseding execution, September 20:** remaining predictions now run in
+two disjoint GPU queues. The unchanged 12:53:17 PDT deadline is enforced by
+`fungal-split-prediction-pause-20260920.timer`, covering both new workers.
+Use the new identities and pause state in
+[the two-GPU execution record](two-gpu-prediction-20260920.md); the original
+single-GPU PID and timers are superseded.
+
 **Latest update, September 20:** prediction resumed at 06:53 PDT for six
 hours, with automatic pause at 12:53:17 PDT today. See
 `metadata/prediction_window_20260920_schedule.json`. Earlier windows below

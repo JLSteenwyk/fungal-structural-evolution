@@ -1,0 +1,40 @@
+{
+  "status": "complete_two_gpu_remaining_partition",
+  "total": 4363,
+  "completed": 2318,
+  "remaining": 2045,
+  "queues": [
+    {
+      "status": "complete_disjoint_remaining_queue",
+      "gpu_index": 0,
+      "prediction_candidates": 1022,
+      "marker_links": 1028,
+      "residues": 918381,
+      "cubic_length_cost": 755805461931,
+      "original_input_receipt_sha256": "1c7c34e10e619807e8a440ab0b21e62974579df8b3dea668bdda633d4e3e3f2c",
+      "original_chunk_sha256": "6a0f1ac57d083483a64d3bb96b5aca9cefe53ccc5050588b124c3d8d476b95d2",
+      "artifacts": {
+        "candidates.faa": "441b4e06ec673a97b568c75235781be71849d425081f68310b6297c098fed7cc",
+        "all_marker_links.tsv": "546454ee57a0d3338878de3ad5c6b0ce3f71b5a28a7a3ec75b1d57b0b460cfdc"
+      }
+    },
+    {
+      "status": "complete_disjoint_remaining_queue",
+      "gpu_index": 1,
+      "prediction_candidates": 1023,
+      "marker_links": 1028,
+      "residues": 919149,
+      "cubic_length_cost": 756258437643,
+      "original_input_receipt_sha256": "1c7c34e10e619807e8a440ab0b21e62974579df8b3dea668bdda633d4e3e3f2c",
+      "original_chunk_sha256": "6a0f1ac57d083483a64d3bb96b5aca9cefe53ccc5050588b124c3d8d476b95d2",
+      "artifacts": {
+        "candidates.faa": "334cebf1051291556212f26593ded1196f74f325f3b52f0af38537b7f3fb1c37",
+        "all_marker_links.tsv": "918bd6566489de1142429e3ff7fb24b54dc523c269e254cfa34bbe73bba955df"
+      }
+    }
+  ],
+  "original_predictions": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-gpu1-v1",
+  "script_sha256": "65e1cf53474912f88490708b7ba3989bf068b85d6fdb31c83985222e87ff14ea",
+  "completed_source_receipts_sha256": "8c34fc34fd5bf6b7c3ba1a5f7efc5710109693a9263610ef60488aab16e7cd94",
+  "interpretation": "Completed original artifacts preserved and rehashed. Remaining full sequences divided into disjoint queues, balanced by cubic length; separate output provenance is required. Original wrapper is superseded, not a full completed prediction tier."
+}

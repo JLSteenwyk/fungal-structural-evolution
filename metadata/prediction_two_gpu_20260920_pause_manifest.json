@@ -1,0 +1,43 @@
+{
+  "roots": [
+    {
+      "pid": 288443,
+      "created": 1789930178.08,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1022"
+      ]
+    },
+    {
+      "pid": 288446,
+      "created": 1789930178.12,
+      "command": [
+        "/home/bizon/anaconda3/envs/esmfold2/bin/python",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_marker_predictions.py",
+        "--inputs",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1",
+        "--checkpoint",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/prediction_models/esmfold-v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+        "--max-length",
+        "1024",
+        "--limit",
+        "1023"
+      ]
+    }
+  ],
+  "excluded_pids": [],
+  "python": "/home/bizon/anaconda3/bin/python",
+  "purpose": "Pause both split structure-prediction workers at original 12:53:17 PDT deadline"
+}

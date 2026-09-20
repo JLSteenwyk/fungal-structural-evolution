@@ -3238,3 +3238,12 @@ timer fungal-prediction-pause-6h-20260920.timer pauses it at 19:53:17 UTC
 (12:53:17 PDT) September 20. The prior final-pause state was used to resume
 the same process; the new pause writes a separate state. Schedule and exact
 commands are in metadata/prediction_window_20260920_schedule.json.
+
+
+User authorized GPU 0 participation until the September 20 12:53 PDT pause.
+Checkpointed GPU 1 cleanly at 2,318 completed models; preserved and rehashed
+all completed artifacts. Split 2,045 remaining sequences into disjoint queues
+of 1,022 and 1,023, with exact sequence/link coverage independently checked.
+Both new prediction services are launched and a replacement timer targets
+both workers at the unchanged deadline. The original single-GPU wrapper is
+superseded after intentional interruption. See docs/two-gpu-prediction-20260920.md.
