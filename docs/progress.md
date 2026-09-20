@@ -3230,3 +3230,11 @@ September 19 and will pause again at 13:00 PDT that day (ten hours running).
 Both replacement calendar timers are verified active and the original worker
 remains stopped. GPU 0 is occupied by a separate project; no unrelated jobs
 were changed. The revised schedule is recorded in metadata.
+
+
+September 20: user requested six more hours of structure prediction. The
+identity-verified worker resumed at 13:53 UTC (06:53 PDT). The active one-off
+timer fungal-prediction-pause-6h-20260920.timer pauses it at 19:53:17 UTC
+(12:53:17 PDT) September 20. The prior final-pause state was used to resume
+the same process; the new pause writes a separate state. Schedule and exact
+commands are in metadata/prediction_window_20260920_schedule.json.

@@ -1,0 +1,27 @@
+{
+  "status": "resumed_with_six_hour_pause_scheduled",
+  "requested_at": "2026-09-20T13:53:17.338780+00:00",
+  "pause_at_utc": "2026-09-20T19:53:17+00:00",
+  "pause_at_pacific": "2026-09-20T12:53:17-07:00",
+  "timer": "fungal-prediction-pause-6h-20260920.timer",
+  "timer_verification": "NextElapseUSecRealtime=Sun 2026-09-20 15:53:17 EDT\nActiveState=active\n",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-prediction-pause-6h-20260920",
+    "--on-calendar=2026-09-20 19:53:17 UTC",
+    "--timer-property=AccuracySec=1s",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+    "pause",
+    "--manifest",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_window_20260918_manifest.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260920_final_pause.json"
+  ],
+  "manifest_sha256": "bccb164b9bfe5eff79f58a4746c79bc7fee9c88da2349fede949bafea52c4d51",
+  "resume_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260919_revised_final_pause.json",
+  "final_pause_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_window_20260920_final_pause.json",
+  "scope": "Resume existing structure-prediction worker, automatically pause after six hours; other analyses unchanged"
+}

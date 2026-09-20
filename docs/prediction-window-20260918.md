@@ -1,5 +1,10 @@
 # Prediction pause and overnight window, September 18–19
 
+**Latest update, September 20:** prediction resumed at 06:53 PDT for six
+hours, with automatic pause at 12:53:17 PDT today. See
+`metadata/prediction_window_20260920_schedule.json`. Earlier windows below
+are historical. The same process and immutable manifest remain in use.
+
 **Updated schedule:** the user superseded the original window. Structure
 prediction remains paused until **03:00 PDT September 19**, runs for ten
 hours, then pauses at **13:00 PDT September 19**. The old two timers were
