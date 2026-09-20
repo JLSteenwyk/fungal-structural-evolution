@@ -3247,3 +3247,13 @@ of 1,022 and 1,023, with exact sequence/link coverage independently checked.
 Both new prediction services are launched and a replacement timer targets
 both workers at the unchanged deadline. The original single-GPU wrapper is
 superseded after intentional interruption. See docs/two-gpu-prediction-20260920.md.
+
+
+September 20 afternoon: user requested one hour of dual-GPU prediction,
+then a second overnight window. Both identity-verified workers resumed at
+14:38:37 PDT, with automatic pause at 15:38:37 PDT. Additional active timers
+resume both at 23:30 PDT September 20 and pause both at 06:00 PDT September 21
+(6.5 hours overnight). The overnight resume uses the afternoon pause state;
+all three calendar timers are verified active and both GPUs are at full
+utilization. Schedule records: metadata/prediction_two_gpu_20260920_one_hour_schedule.json
+and metadata/prediction_two_gpu_20260920_overnight_schedule.json.

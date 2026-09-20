@@ -1,0 +1,37 @@
+{
+  "status": "both_prediction_workers_resumed_for_one_hour",
+  "started_at": "2026-09-20T21:38:37.083445+00:00",
+  "pause_at_utc": "2026-09-20T22:38:37+00:00",
+  "pause_at_pacific": "2026-09-20T15:38:37-07:00",
+  "timer": "fungal-two-gpu-pause-1h-20260920.timer",
+  "verification": "NextElapseUSecRealtime=Sun 2026-09-20 18:38:37 EDT\nActiveState=active\n",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-two-gpu-pause-1h-20260920",
+    "--on-calendar=2026-09-20 22:38:37 UTC",
+    "--timer-property=AccuracySec=1s",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+    "pause",
+    "--manifest",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_two_gpu_20260920_pause_manifest.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260920_one_hour_pause_state.json"
+  ],
+  "manifest": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_two_gpu_20260920_pause_manifest.json",
+  "manifest_sha256": "274d774c283e67b627f32a728dadde8976040cbe3cb9836410f91eb3569c20dc",
+  "resumed_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260920_pause_state.json",
+  "next_pause_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260920_one_hour_pause_state.json",
+  "workers": [
+    {
+      "pid": 288443,
+      "created": 1789930178.08
+    },
+    {
+      "pid": 288446,
+      "created": 1789930178.12
+    }
+  ]
+}

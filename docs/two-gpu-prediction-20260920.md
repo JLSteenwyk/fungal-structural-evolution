@@ -1,5 +1,16 @@
 # Two-GPU structure prediction, September 20
 
+**Latest schedule:** both workers resumed at 14:38:37 PDT September 20
+for one hour, pausing at 15:38:37 PDT. They resume again at **23:30 PDT
+September 20** and pause at **06:00 PDT September 21**. The three active
+calendar timers are `fungal-two-gpu-pause-1h-20260920.timer`,
+`fungal-two-gpu-resume-night-20260920.timer`, and
+`fungal-two-gpu-pause-morning-20260921.timer`. The first pause state is
+`results/prediction_two_gpu_20260920_one_hour_pause_state.json`; the final
+overnight pause state is `results/prediction_two_gpu_20260921_overnight_pause_state.json`.
+The same two workers, disjoint inputs and immutable pause manifest are used.
+The earlier deadline below is retained as history.
+
 The user authorized use of GPU 0 until the existing 12:53 PM PDT pause.
 The original GPU 1 worker was asked to stop cleanly after its current model.
 It exited with a recorded intentional interruption, no OOM, 2,318 completed
