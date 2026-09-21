@@ -3257,3 +3257,11 @@ resume both at 23:30 PDT September 20 and pause both at 06:00 PDT September 21
 all three calendar timers are verified active and both GPUs are at full
 utilization. Schedule records: metadata/prediction_two_gpu_20260920_one_hour_schedule.json
 and metadata/prediction_two_gpu_20260920_overnight_schedule.json.
+
+
+September 21: at the user’s request, resumed both identity-verified GPU
+prediction workers from the completed overnight pause. The new active timer
+fungal-two-gpu-pause-1700-20260921.timer pauses both at 17:00 PDT September 21
+(00:00 UTC September 22). Schedule and commands are recorded in
+metadata/prediction_two_gpu_20260921_1700_schedule.json; the resulting pause
+state will be results/prediction_two_gpu_20260921_1700_pause_state.json.
