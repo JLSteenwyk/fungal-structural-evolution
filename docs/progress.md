@@ -3277,3 +3277,10 @@ audit; the MAFFT/profile third run is live. Full new-family tree validation,
 the final retained-tree repair and domain-competition readback are complete.
 Reconciliation, new structure integration and full evolutionary inference
 remain outstanding; prediction completion is not overall project completion.
+
+
+September 21: user extended dual-GPU structure prediction until 04:00 Pacific
+local time September 22 (PDT, following the earlier explicit clarification).
+Both workers remain running. The replacement calendar pause timer is active
+for 11:00 UTC September 22; the earlier 19:00 PDT timer is canceled. Schedule:
+metadata/prediction_two_gpu_20260922_0400_schedule.json.

@@ -1,5 +1,10 @@
 # Two-GPU structure prediction, September 20
 
+**Latest deadline:** both GPUs run until **04:00 PDT September 22**.
+`fungal-two-gpu-pause-0400-20260922.timer` replaces the canceled 19:00 timer.
+The new pause state is `results/prediction_two_gpu_20260922_0400_pause_state.json`;
+see `metadata/prediction_two_gpu_20260922_0400_schedule.json`.
+
 **Latest deadline:** the September 21 run is extended to **19:00 PDT**.
 `fungal-two-gpu-pause-1900-20260921.timer` replaces the canceled 17:00 timer.
 The pause state will be `results/prediction_two_gpu_20260921_1900_pause_state.json`;
