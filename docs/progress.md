@@ -3265,3 +3265,15 @@ fungal-two-gpu-pause-1700-20260921.timer pauses both at 17:00 PDT September 21
 (00:00 UTC September 22). Schedule and commands are recorded in
 metadata/prediction_two_gpu_20260921_1700_schedule.json; the resulting pause
 state will be results/prediction_two_gpu_20260921_1700_pause_state.json.
+
+
+September 21 21:00 UTC update: user extended both GPU workers to 19:00 PDT.
+Replacement timer fungal-two-gpu-pause-1900-20260921.timer is active; the
+17:00 timer was canceled. At observation, the longer prediction cohort had
+2,318 original plus 498 GPU-0 and 459 GPU-1 models (3,275/4,363, about 75%).
+Both GPUs were at full utilization, with no OOM receipts in these outputs.
+The first two crossed PMSF runs have execution-complete receipts pending full
+audit; the MAFFT/profile third run is live. Full new-family tree validation,
+the final retained-tree repair and domain-competition readback are complete.
+Reconciliation, new structure integration and full evolutionary inference
+remain outstanding; prediction completion is not overall project completion.

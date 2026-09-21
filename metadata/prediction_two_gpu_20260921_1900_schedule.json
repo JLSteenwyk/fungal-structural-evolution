@@ -1,0 +1,26 @@
+{
+  "status": "extended_both_prediction_workers_until_1900_pdt",
+  "recorded_at": "2026-09-21T21:00:00.948296+00:00",
+  "pause_at_pacific": "2026-09-21T19:00:00-07:00",
+  "pause_at_utc": "2026-09-22T02:00:00+00:00",
+  "superseded_timer": "fungal-two-gpu-pause-1700-20260921.timer",
+  "timer": "fungal-two-gpu-pause-1900-20260921.timer",
+  "verification": "NextElapseUSecRealtime=Mon 2026-09-21 22:00:00 EDT\nActiveState=active\n",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-two-gpu-pause-1900-20260921",
+    "--on-calendar=2026-09-22 02:00:00 UTC",
+    "--timer-property=AccuracySec=1s",
+    "--property=WorkingDirectory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/pause_resume_project.py",
+    "pause",
+    "--manifest",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_two_gpu_20260920_pause_manifest.json",
+    "--state",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260921_1900_pause_state.json"
+  ],
+  "manifest": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/metadata/prediction_two_gpu_20260920_pause_manifest.json",
+  "next_pause_state": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/prediction_two_gpu_20260921_1900_pause_state.json"
+}
