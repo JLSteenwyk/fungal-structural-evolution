@@ -175,7 +175,7 @@ additionally checked for consistent totals and nested masks. Archived receipts:
 - `metadata/esmfold_original_full_qualified_receipt.json`
 - `metadata/esmfold_original_full_pae_context_readback.json`
 
-Long-cohort confidence processing and extended-cohort PAE export remain active.
+Long-cohort confidence processing has also completed; extended-cohort PAE export remains active.
 The existing qualified-union controller will advance only after their full
 qualification and readback gates pass.
 
@@ -251,3 +251,50 @@ that no earlier AlphaFold marker link was lost. Current outputs are under
 
 The updated AlphaFold models require residue mapping, confidence processing
 and integration before downstream phylogenetic and structural comparisons.
+
+
+## Refreshed AlphaFold mapping and PAE preparation running
+
+Two independent stages now run through
+`scripts/advance_refreshed_afdb_inputs.py`, with 392 input/script pins recorded
+in `metadata/current_afdb_input_preparation_plan.json`:
+
+- `fungal-current-afdb-mapping-20260922.service` maps all 30,588 selected models
+  and 31,384 marker/protein links onto the complete frozen profile matrix. It
+  then requires exact catalog/mapping identity agreement. Output is
+  `results/structural_markers/gdm-current-mapping-20260922-v1/`.
+- `fungal-current-afdb-pae-20260922.service` retrieves or revalidates all
+  version-matched PAE matrices. Output is
+  `results/structural_pae/gdm-current-prefetch-20260922-v1/`. A failed model
+  remains explicit in the manifest and prevents acceptance of the full stage.
+
+The catalog contains 15,949,929 protein residues, a maximum length of 2,416,
+and 10,859,772,095 PAE matrix entries. At planning time 13,127 cached PAE
+receipt files were present and 17,461 were absent. File presence is not
+validation: every reused matrix is checked for provenance, compressed and
+uncompressed checksums, dimensions and valid numeric entries.
+
+Mapping is capped at one CPU and 64 GiB RAM; PAE retrieval at two CPU
+equivalents and 8 GiB RAM, with two retrieval threads. Both have zero swap.
+The plan reserves 30 GiB for mapping and 200 GiB for PAE cache/output, gated on
+300 GiB free disk. Uncalibrated runtime allowances are 0.5–12 hours for mapping
+and 2–48 hours for PAE preparation; these are not measured ETAs. Existing local
+resources are used without new GPU inference or paid infrastructure. Launch
+identities are recorded in `metadata/current_afdb_input_preparation_launch.json`.
+
+Independent residue readback, mapping-bound PAE checks, native structural
+features and confidence qualification remain subsequent requirements. Passing
+these preparation stages alone will not establish new evolutionary results.
+
+## Long ESMFold cohort confidence completed
+
+All 5,510 models of length 513–768 residues now pass the feature/confidence
+pipeline and original directional-PAE-context readback. Of 3,386,360 model
+residues, 3,375,340 have valid structural-alphabet states, 2,069,197 pass pLDDT
+70 over the full feature context, and 2,065,046 additionally pass maximum
+context PAE 10 Å. All stage hashes and per-model nested-mask counts were checked
+before archival. Counts precede marker-alignment filtering and do not measure
+biological accuracy. Receipts are archived as
+`metadata/esmfold_long_feature_completed_receipt.json`,
+`metadata/esmfold_long_qualified_receipt.json` and
+`metadata/esmfold_long_pae_context_readback.json`.

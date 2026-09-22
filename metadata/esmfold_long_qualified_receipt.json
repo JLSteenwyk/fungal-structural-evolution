@@ -1,0 +1,37 @@
+{
+  "status": "complete_native_3di_feature_audit",
+  "models": 5510,
+  "totals": {
+    "length": 3386360,
+    "valid_states": 3375340,
+    "invalid_states": 11020,
+    "valid_focal_plddt70": 2278488,
+    "valid_feature_plddt70": 2069197,
+    "valid_feature_plddt70_pae10": 2065046
+  },
+  "native_config_sha256": "939752784211fef333a6c038dbda602ff52b63caa52e39b943d97429a8f0a561",
+  "native_path": "results/structural_alphabet/native-esmfold-long-v1",
+  "native_artifacts": {
+    "amino_acids.faa": "3800f8877832ea374eac82c5572fa77a6fb01019970e4cf9d04869c19884f201",
+    "states_3di.faa": "d2583dff71215cd036cf6652c92f1154ccbfe35a0c60d322ff23ec4c8b789b0f",
+    "descriptors.tsv": "ecf92964f1c0ebd112852ea61af58cac1843bec17fde3b3bddce140da1e95154",
+    "model_provenance.json": "0447c651ecc96bffb3fcaf98618fed89419bdc304119838d19d0fe165004733a"
+  },
+  "mapping_receipt_sha256": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101",
+  "pae_receipt_sha256": "82003a3f5cfeca45b9acad8b115069b041eb39b927b6425f9a0a82cbf29b1347",
+  "script_sha256": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+  "numpy_version": "2.2.6",
+  "feature_verification_tolerance": {
+    "rtol": 0.00052,
+    "atol": 1e-10,
+    "reason": "Native descriptor output has four significant digits"
+  },
+  "confidence_stage": "plddt_and_pae",
+  "interpretation": "Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.",
+  "artifacts": {
+    "model_summary.tsv": "5af63ac292dc1cdb501a594f6ce2c6b0e40c73e977b3cd51ff5582f3278bc01b"
+  },
+  "coordinate_audit_receipt_sha256": "3ee9191c2b744b616bcaffaad6c00e7f85c4f9c531dc07573b67c9b5fe29f6f6",
+  "coordinate_audit_path": "results/structural_alphabet/coordinate-esmfold-long-v1",
+  "coordinate_audit_script_sha256": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b"
+}
