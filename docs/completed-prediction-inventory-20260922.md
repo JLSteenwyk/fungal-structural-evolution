@@ -298,3 +298,38 @@ biological accuracy. Receipts are archived as
 `metadata/esmfold_long_feature_completed_receipt.json`,
 `metadata/esmfold_long_qualified_receipt.json` and
 `metadata/esmfold_long_pae_context_readback.json`.
+
+
+## Full refreshed AlphaFold residue readback queued
+
+`scripts/readback_refreshed_afdb_residues.py` waits for the exact live mapping
+controller and requires its successful catalog-agreement receipt before
+reading the full mapped output. The service is
+`fungal-current-afdb-residue-readback-20260922.service`; the pinned plan is
+`metadata/current_afdb_residue_readback_plan.json`. It inherits the preparation
+plan's complete frozen-input checks and writes to
+`results/structural_markers/gdm-current-residue-readback-20260922-v1/`.
+
+For every mapped marker/taxon record, the auditor checks the source amino-acid
+sequence against its hash, the ungapped Stockholm alignment and the complete
+mmCIF polymer. It requires exactly one Cα coordinate per sequence position and
+valid pLDDT values. A cumulative non-gap projection independently reconstructs
+the sequence position for each retained matrix column. Every exported residue
+identity, matrix position, sequence position and confidence value must match,
+with no missing or extra rows. All mapped models and marker links must be
+covered, and each link's confidence count, mean and threshold fraction must
+agree. The audit shares BioPython Stockholm/mmCIF parsers with the producer;
+it does not independently assess alignment quality or model accuracy.
+
+An end-to-end two-model synthetic test with seven hand-specified residue links
+passed. Rehashed semantic corruptions were rejected for shifted positions,
+altered confidence, missing rows, extra rows and duplicate Cα coordinates.
+Reproduce with `python scripts/check_refreshed_afdb_residue_readback.py`.
+The fixture evidence is recorded in
+`metadata/current_afdb_residue_readback_fixture_checks.json`; this establishes
+implementation checks, not a passed production audit.
+
+The queued audit is capped at one CPU, 16 GiB RAM and zero swap, with a 50-GiB
+free-disk gate and 1-GiB output allowance. The 0.5–12 hour interval after mapping
+completion is an uncalibrated planning allowance. PAE qualification, native
+structural features and evolutionary integration remain separate stages.

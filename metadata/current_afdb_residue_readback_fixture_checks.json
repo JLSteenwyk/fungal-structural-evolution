@@ -1,0 +1,19 @@
+{
+  "status": "passed_full_residue_auditor_synthetic_checks",
+  "command": "python scripts/check_refreshed_afdb_residue_readback.py",
+  "known_valid_models": 2,
+  "known_valid_marker_links": 2,
+  "known_valid_residue_links": 7,
+  "corruptions_rejected": [
+    "position",
+    "confidence",
+    "missing",
+    "extra",
+    "duplicate_ca"
+  ],
+  "script_hashes": {
+    "scripts/readback_refreshed_afdb_residues.py": "e37af54b63493e133fe936828b41f436126e07792e2aa69f63f8c002655c615a",
+    "scripts/check_refreshed_afdb_residue_readback.py": "276561bbdd6e4464c0e201d565a08fa43de3ccfee9dc4738539c6ee74b243431"
+  },
+  "scope": "Complete synthetic CLI executions, including valid known projection and rehashed semantic corruptions. Does not claim production residue output has been checked."
+}
