@@ -54,3 +54,11 @@ Fixture evidence:
 `metadata/orthology_native_save_space_four_worker_fixture_{receipt,readback}.json`.
 The first stage begins with input copying; native inference starts only after
 those copies pass hash checks.
+# September 22 recovery update
+
+The initial full run ended with a native progress-stall error and incomplete
+outputs. Its zero exit was rejected by the controller. A tested, traced recovery
+has started in fresh directories with the full dataset retained; see
+[failure evidence and recovery](reconciliation-stall-recovery-20260922.md).
+The original execution details below are retained as provenance, not a claim
+of completed reconciliation.

@@ -1,0 +1,19 @@
+{
+  "status": "reviewed_terminal_incomplete_native_execution",
+  "native_log_sha256": "99f0c94314bd25cef631f5213c6c456487d85d7b2f9156b7a0b63679689bea87",
+  "controller_state_sha256": "8cfe9e96bf6e0d0c84ee8b8a6adf0c385a9e97328b977b58d39f9009dc2b008a",
+  "queued_families": 70307,
+  "nonempty_resolved_tree_files": 70306,
+  "missing_resolved_trees": [
+    {
+      "family": "OG0000017",
+      "proteins": 55981
+    }
+  ],
+  "extra_resolved_files": [],
+  "copied_source_files_checked": 96016,
+  "changed_copied_sources": [],
+  "installed_stall_timeout_seconds": 120,
+  "evidence": "Native log reports completed 70306/70307 then 120-second stall. Controller rejected zero exit with missing mandatory final outputs. No usable final reconciliation receipt.",
+  "interpretation": "Unfinished family OG0000017 is annotation/homology flagged. Nonempty resolved files are not independently validated results. Worker state at timeout is not recorded, so a slow task versus another stall is not yet distinguished. Recovery must preserve the full family and log per-family progress; no installed library change."
+}

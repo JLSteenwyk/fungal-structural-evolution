@@ -86,7 +86,7 @@ def main():
                                   f'FN_Orthogroups: {wd}/clusters_OrthoFinder.txt_id_pairs.txt\n'
                                   f'WorkingDirectory_Trees: {wd}/\n')
             descriptor_sha = sha(descriptor)
-            command = [str(ROOT / plan['executable']), '--from-trees', str(base / 'Source'),
+            command = [str(ROOT / plan['executable'])] + plan.get('launcher_arguments', []) + ['--from-trees', str(base / 'Source'),
                        '-s', str(base / 'species_tree_taxa.nwk'), '-n', 'expanded_' + name,
                        '-t', str(plan['resources']['search_threads']),
                        '-a', str(plan['resources']['analysis_workers']), '-M', 'msa',

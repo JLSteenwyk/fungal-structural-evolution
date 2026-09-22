@@ -25,6 +25,8 @@ def main():
     ap.add_argument('--output', type=Path, required=True)
     ap.add_argument('--save-space', action='store_true', help='Exercise native grouped-only ortholog output')
     ap.add_argument('--analysis-workers', type=int, default=1)
+    ap.add_argument('--wrapper', type=Path, help='Optional explicitly traced native launcher')
+    ap.add_argument('--stall-timeout-seconds', type=float, default=21600)
     a = ap.parse_args()
     out = a.output.resolve()
     out.mkdir(parents=True, exist_ok=False)
@@ -52,7 +54,9 @@ def main():
         if case == 'prepared_ids_tree':
             (wd / 'SpeciesTree_unrooted_ids.txt').write_text('((0:0.1,1:0.1):0.1,(2:0.1,3:0.1):0.1);\n')
         before = snapshot(source)
-        command = [str(executable), '--from-trees', str(source), '-s', str(user_tree),
+        launcher = ([str(executable.parent/'python'), str(a.wrapper.resolve()),
+                     '--stall-timeout-seconds', str(a.stall_timeout_seconds), '--'] if a.wrapper else [str(executable)])
+        command = launcher + ['--from-trees', str(source), '-s', str(user_tree),
                    '-n', 'native_fixture', '-t', '2', '-a', str(a.analysis_workers), '-M', 'msa',
                    '-S', 'diamond', '-A', 'famsa', '-T', 'fasttree', '--no-fix-files']
         if a.save_space:

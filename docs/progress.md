@@ -3430,3 +3430,16 @@ The complete original-cohort residue mapping has passed (10,522 models,
 is running. Integration of all five qualified encoding cohorts is queued
 behind the combined mapping and three active feature controllers, with
 complete mapping-union and original directional-PAE checks required.
+
+
+## September 22 reconciliation recovery
+
+The first expanded native reconciliation failed its completion gate after a
+120-second task-progress stall at 70,306/70,307 queued families. The sole
+missing intermediate resolved tree is OG0000017 (55,981 proteins). All 96,016
+copied input files are unchanged; incomplete outputs remain separate.
+A four-worker known-answer fixture passed with a run-specific six-hour stall
+allowance and per-family tracing. Recovery is running on fresh full inputs,
+with the installed package unchanged and original CPU/memory/disk limits.
+No final reconciliation is accepted yet. See
+[recovery evidence](reconciliation-stall-recovery-20260922.md).
