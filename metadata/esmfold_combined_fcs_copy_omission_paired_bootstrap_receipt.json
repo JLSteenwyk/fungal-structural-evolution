@@ -1,0 +1,43 @@
+{
+  "status": "complete_paired_conditional_fcs_bootstrap_comparison",
+  "models": 24,
+  "markers": 88,
+  "sites": 21904,
+  "draws_per_model": 2000,
+  "contrasts": 120,
+  "source_receipts": {
+    "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1/receipt.json": "8cc931cbeb1e4043be3aca39a3775a197d755237c3d699c27e9cf85be22ced14",
+    "results/phylogeny/site-coupling-esmfold-combined-fcs-copy-omission-v2/receipt.json": "71b0de69c51433ec72a2c17e6f271a8f41984ef2b6833f59ff4d44f3b04ba41e",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-copy-omission-v1/receipt.json": "9fbf023925d1a6692ed7dc0618176b33c1f67b20635d37e1ddd9cf0883cc7faf",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-copy-omission-v2/receipt.json": "8384c928b8281776f2b9f08c153efeb1707d3b7b3c0d96c97ee81482ebfc6ce2"
+  },
+  "script_sha256": "3329eb96cc942a95810c81991dd2ad356088d0c4aa30d90d82f53432c456ee62",
+  "artifacts": {
+    "3di_llm__freerate__tien2013__coverage_confidence.npz": "dc97c50eb0e1d51275979ab6d1558dc504ecd0d3ebf446347271ce2cc807bf49",
+    "3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "b64b41667f52f470920b927cae6b90c1e538e3f1233637aaf13bf2e0c6da0b63",
+    "3di_af__gamma__miller1987__composition_adjusted.npz": "6fc3c340d312a329d12ab49b62e3984543cec80a2540a2bef01125be0b129478",
+    "3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "43e4a948fe1f875619c0c769876e8ec5297a1a16938734d5d14f0efa001350ad",
+    "3di_llm__gamma__miller1987__coverage_confidence.npz": "0cffc159d56ca5ba694ac3599ca6aff40ac4d0b449dbbc22f895932f4df16942",
+    "3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "65177d2558d246001d0ae26e2ced10873e007b7c72a96d961701111d5bdc9c99",
+    "3di_llm__gamma__tien2013__coverage_confidence.npz": "37aa3f69ea9b2b1989faecd180ea71d07cc0cbf70ff3485aeb26ce0c0190db9f",
+    "3di_llm__gamma__miller1987__composition_adjusted.npz": "a6323362044f09a12d6b523e7a3fe24559e2f7a6344d95e179f9117eb2e14857",
+    "3di_af__freerate__miller1987__coverage_confidence.npz": "ce8e9174ebdbc61866347342c9c3a7f7fdcf4d5b0d0363ad8c1f685f2bf85b5c",
+    "3di_llm__freerate__miller1987__coverage_confidence.npz": "cd2196edc1e31a310c9a2e09082546d7bf6a8b437a547f3f5040b79fe6cea838",
+    "3di_af__freerate__tien2013__composition_adjusted.npz": "6c0ab5de5bd2d94f5563a62305a4c33f7aef63ba64ce3ac82fdf24448863bd9d",
+    "3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "5f956145b19981d6630f7b55aadfb9c21a254ed51784e3c6b9ba30f62db32408",
+    "3di_af__gamma__tien2013__composition_adjusted.npz": "a305a575c057620fc1c5d1fb54e8bc109c27ee5456db64bc39b7f031157a37db",
+    "3di_af__freerate__miller1987__composition_adjusted.npz": "ab245a78cb557034a71c8bde1fb0f070d906730a9bde809ed4f694d85933013e",
+    "3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "8b903111c6217ccc36b8d7f1d7ecfc203d4bbd4030e4ae432efcb437b58d6d3c",
+    "3di_llm__gamma__tien2013__composition_adjusted.npz": "388949987ef29347faee720c58e867fd34074e7f913a3fff5c7dc3bcf0935dbe",
+    "3di_af__gamma__tien2013__coverage_confidence.npz": "ffdea93d0af688da58a8a43c396e583b993982c693b1409149ffe02326661250",
+    "3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "a8ff2666739fc4a042d60e55aafa112282e65b462f396d8e9ef83695fa8f644e",
+    "3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "d1820f861ad08308cbdb22d798159c2e4e1de49b052f4c1cf1f549901f67503a",
+    "3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "2f3ec58f3411b4fd64914b3d8a0a270a47a8c4aedd948ea2e8cc60dd2cc25ff1",
+    "3di_llm__freerate__tien2013__composition_adjusted.npz": "ec909f942062121e98bfdd1bb6ee258f785ca9f8a041b6e7f6e624f4f3705929",
+    "paired_difference_summary.tsv": "76ec7e3a2a7e388ac428beb8f2fa009de3a45b15716d6bde69d1ebf99ec9406b",
+    "3di_af__gamma__miller1987__coverage_confidence.npz": "e91f7bdc2d3bf35281ca2c84a6eef13662273ed02ee61e46b2f1a0cb512751c4",
+    "3di_llm__freerate__miller1987__composition_adjusted.npz": "cb262af9f9178b3df13d42b495d69d4915ff826c019827fc62ae4b0638cb3b4d",
+    "3di_af__freerate__tien2013__coverage_confidence.npz": "5e340ff9905fef31d83bb8a013bfa973b548f8aa743ad5530a981c01683e3386"
+  },
+  "scope": "Identical marker identities and multinomial counts paired across baseline/FCS draws. Both contrasts use fixed baseline site-weighted reference means. Unadjusted percentile difference intervals; no multiple-testing significance claim, equivalence test or causal/lineage-wide inference. Conditional on estimated rates/topologies and predicted structures; cross-marker phylogenetic dependence remains."
+}

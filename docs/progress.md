@@ -3565,3 +3565,21 @@ Source-matched coefficient comparisons and complete output hashes passed;
 receipts and small tables are archived. Paired difference intervals and
 phylogenetic/rate/prediction uncertainty remain outstanding. See
 [full sensitivity results](conditional-site-coupling.md#expanded-esmfold-fcs-sensitivity-completion-22-september-2026).
+
+
+## Paired FCS differences and completed architecture inventory — 22 September 2026
+
+Completed paired baseline/FCS bootstrap differences for both full89 and
+copy-omission88 cohorts using identical marker multiplicities and fixed common
+baseline reference values. All 240 contrast rows, saved difference arrays and
+sorted-draw percentiles passed numerical readback. AA-rate difference intervals
+include zero throughout; some RSA/interaction difference intervals exclude
+zero before multiple-testing adjustment. These are conditional sensitivities,
+not equivalence tests or additional confirmatory discoveries.
+
+Both full family-architecture inventories completed (5,266,820 policy rows
+across the two partitions). Their output hashes and receipt were archived.
+Independent summary reconstruction remains live, with guide comparison queued.
+Original and long-cohort PAE exports have logged 10,000/10,522 and 4,500/5,510
+models, respectively; extended export remains active. Overall completion is
+not claimed.

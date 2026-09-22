@@ -136,3 +136,12 @@ altered, missing or duplicated rows. Run
 comparison uses one CPU, 16 GiB RAM, no swap, a 1-GiB output allowance and
 a 50-GiB free-disk gate; 0.5–8 hours is an uncalibrated planning interval.
 Results remain pending until the full producer and audit finish.
+
+The full v2 architecture inventory has completed: 2,632,732 profile-guide rows
+and 2,634,088 MAFFT-guide rows (four policies per family), each partition
+covering all 5,815,847 proteins. Both compressed output hashes were verified,
+and the receipt is archived as
+`metadata/family_architecture_variation_completed_receipt.json`. Independent
+full row reconstruction is running; guide comparison remains behind that gate.
+These completed descriptive summaries are not yet validated domain-event
+results.

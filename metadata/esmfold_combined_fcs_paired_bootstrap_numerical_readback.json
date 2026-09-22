@@ -1,0 +1,29 @@
+{
+  "status": "passed_all_saved_difference_arrays_and_sorted_percentiles",
+  "checks": [
+    {
+      "cohort": "reviewed",
+      "models": 24,
+      "contrasts": 120,
+      "draws_per_model": 2000,
+      "max_difference_array_error": 1.8431436932253575e-18,
+      "max_sorted_quantile_error": 9.877081791342945e-17
+    },
+    {
+      "cohort": "copy-omission",
+      "models": 24,
+      "contrasts": 120,
+      "draws_per_model": 2000,
+      "max_difference_array_error": 3.469446951953614e-18,
+      "max_sorted_quantile_error": 1.0061396160665481e-16
+    }
+  ],
+  "scope": "Every saved difference recomputed from source focal coefficients using explicit scalar contrast formulas; all 240 interval endpoints independently interpolated from sorted draws per cohort. Does not refit source bootstraps or establish interval calibration.",
+  "input_receipts": {
+    "results/phylogeny/paired-fcs-bootstrap-esmfold-combined-reviewed-v2/receipt.json": "8ca6069363cbfa36660a9cc43c8409f5bb9af8da932ed67a7644ff8d36057604",
+    "results/phylogeny/site-coupling-esmfold-combined-reviewed-v1/receipt.json": "6d11cc45f8823043dd40ef6fa01b1d0c86222c44e3e0354a35ffabb4b3bb048f",
+    "results/phylogeny/paired-fcs-bootstrap-esmfold-combined-copy-omission-v2/receipt.json": "67e3fc3f32ef43a36e4c803702768287df5e489cb33c57bc77bb10d7e01b0043",
+    "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1/receipt.json": "8cc931cbeb1e4043be3aca39a3775a197d755237c3d699c27e9cf85be22ced14"
+  },
+  "baseline_reference_pairs_checked": 240
+}

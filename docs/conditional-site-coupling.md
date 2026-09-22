@@ -368,3 +368,46 @@ features and sequence-derived prediction circularity limit interpretation.
 The result does not establish causal exposure effects, structural acceleration,
 selection or lineage-wide robustness. It concerns the completed 89-marker
 baseline and is separate from the larger 25,322-model integration underway.
+
+
+### Paired FCS difference intervals at common reference values
+
+The 89-marker and 88-marker comparisons now pair all 2,000 bootstrap draws
+per specification using exactly matching marker identities and multinomial
+counts. Mismatched draw order or marker identities are rejected. Both datasets
+are evaluated at the same reference values: RSA=0.25, log1p AA rate=0, and
+the corresponding baseline site-weighted mean RSA and mean log1p AA rate.
+The latter means are fixed across all draws. This avoids attributing a change
+in the chosen reference value to a coefficient change.
+
+For each draw, sensitivity minus baseline is calculated before taking
+percentiles. All 24 specifications and five contrasts are retained per cohort.
+Source coefficient arrays, both singularity masks and the common references
+are preserved in provenance; no draw was excluded in these completed inputs.
+Every saved difference array was separately reconstructed using explicit
+contrast formulas. All 120 intervals per cohort were checked by interpolating
+sorted draws, and every reported reference pair matched the original baseline
+site-covariate frame.
+
+| Contrast | Difference intervals excluding zero, full89 | Difference intervals excluding zero, omission88 |
+|---|---:|---:|
+| AA rate at RSA=0.25 | 0/24 | 0/24 |
+| AA rate at baseline mean RSA | 0/24 | 0/24 |
+| RSA at log1p AA rate=0 | 8/24 | 8/24 |
+| RSA at baseline mean log1p AA rate | 1/24 | 1/24 |
+| Interaction | 4/24 | 4/24 |
+
+These are unadjusted conditional percentile intervals across dependent
+specifications, not additional multiplicity-controlled discoveries. A
+difference interval excluding zero does not imply the absolute interaction
+is established: its absolute intervals still span zero in both datasets.
+Intervals including zero do not establish equivalence or a negligible effect.
+No claim of FCS-insensitive lineage-wide evolution follows from these tables.
+
+Reproduce with `scripts/compare_paired_fcs_bootstrap.py` and the exact commands
+and source hashes in `metadata/esmfold_combined_fcs_paired_bootstrap_plan.json`.
+Outputs are `results/phylogeny/paired-fcs-bootstrap-esmfold-combined-{reviewed,copy-omission}-v2/`.
+Both receipts, all 240 contrast rows and the numerical readback are archived
+under `metadata/esmfold_combined_fcs_*paired_bootstrap*`. The comparisons used
+existing draws, one CPU each, a 4-GiB memory and 1-GiB output allowance, and
+a 0.05–1-hour planning interval. No likelihood fit or GPU inference was rerun.

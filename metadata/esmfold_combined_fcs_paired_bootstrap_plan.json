@@ -1,0 +1,53 @@
+{
+  "commands": [
+    [
+      "scripts/compare_paired_fcs_bootstrap.py",
+      "--baseline",
+      "results/phylogeny/site-coupling-esmfold-combined-reviewed-v1",
+      "--sensitivity",
+      "results/phylogeny/site-coupling-esmfold-combined-fcs-reviewed-v2",
+      "--baseline-resampling",
+      "results/phylogeny/site-coupling-resampling-esmfold-combined-reviewed-v1",
+      "--sensitivity-resampling",
+      "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-reviewed-v2",
+      "--output",
+      "results/phylogeny/paired-fcs-bootstrap-esmfold-combined-reviewed-v2"
+    ],
+    [
+      "scripts/compare_paired_fcs_bootstrap.py",
+      "--baseline",
+      "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1",
+      "--sensitivity",
+      "results/phylogeny/site-coupling-esmfold-combined-fcs-copy-omission-v2",
+      "--baseline-resampling",
+      "results/phylogeny/site-coupling-resampling-esmfold-combined-copy-omission-v1",
+      "--sensitivity-resampling",
+      "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-copy-omission-v2",
+      "--output",
+      "results/phylogeny/paired-fcs-bootstrap-esmfold-combined-copy-omission-v2"
+    ]
+  ],
+  "pins": {
+    "results/phylogeny/site-coupling-esmfold-combined-reviewed-v1/receipt.json": "6d11cc45f8823043dd40ef6fa01b1d0c86222c44e3e0354a35ffabb4b3bb048f",
+    "results/phylogeny/site-coupling-esmfold-combined-fcs-reviewed-v2/receipt.json": "30010454dbe53a8cb20435a82961d1a92af3c035d6573196a175bcb7e6d024c6",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-reviewed-v1/receipt.json": "b61743bcae5b2d88e605bb4b503728e1fdd5a70c414daf235f33b523d0a90b5a",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-reviewed-v2/receipt.json": "43690a175fd71deedb24e0d475be13cb7a6d7be17146270b90f2003006b2bcbe",
+    "results/phylogeny/site-coupling-esmfold-combined-copy-omission-v1/receipt.json": "8cc931cbeb1e4043be3aca39a3775a197d755237c3d699c27e9cf85be22ced14",
+    "results/phylogeny/site-coupling-esmfold-combined-fcs-copy-omission-v2/receipt.json": "71b0de69c51433ec72a2c17e6f271a8f41984ef2b6833f59ff4d44f3b04ba41e",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-copy-omission-v1/receipt.json": "9fbf023925d1a6692ed7dc0618176b33c1f67b20635d37e1ddd9cf0883cc7faf",
+    "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-copy-omission-v2/receipt.json": "8384c928b8281776f2b9f08c153efeb1707d3b7b3c0d96c97ee81482ebfc6ce2",
+    "scripts/compare_paired_fcs_bootstrap.py": "3329eb96cc942a95810c81991dd2ad356088d0c4aa30d90d82f53432c456ee62"
+  },
+  "resources": {
+    "cpu_equivalents_per_comparison": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.05,
+      1
+    ],
+    "paid_resources": false
+  },
+  "reference": "Baseline site-weighted means held fixed for both datasets, separately within each full or copy-omission cohort.",
+  "scope": "Unadjusted conditional paired-bootstrap sensitivity intervals, not confirmatory difference or equivalence tests."
+}

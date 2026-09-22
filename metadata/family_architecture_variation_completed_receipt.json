@@ -1,0 +1,34 @@
+{
+  "status": "complete_family_architecture_variation_inventory",
+  "guides": [
+    {
+      "guide": "profile",
+      "rows": 2632732,
+      "families": 658183,
+      "proteins": 5815847
+    },
+    {
+      "guide": "mafft",
+      "rows": 2634088,
+      "families": 658522,
+      "proteins": 5815847
+    }
+  ],
+  "artifacts": {
+    "profile_family_architectures.tsv.gz": "9fdd318356a9fdf298588cb9349f503342be3f07707b080ca4de7bdb5c862bf1",
+    "mafft_family_architectures.tsv.gz": "b333f7c4218c4ed18f509678e0c2bf6875dfdf5a6122f94efa5b9b43f647c9f2"
+  },
+  "input_hashes": {
+    "metadata/family_architecture_variation_recovery_plan.json": "b4ecd775a1dec91d8153b8570564e7c0e0850e0b734e2c51c0776caca5c08470",
+    "scripts/summarize_family_architectures.py": "a056ceab44320d8854401ca34d5b09f106503768a3ebfb3add0964d1ebbc9ca9",
+    "scripts/check_family_architecture_variation.py": "0cab89aa6efc0d654fcc8780bb1eed4b867ff828649a33a779be05f29aa2e4c8",
+    "metadata/family_domain_bridge_plan.json": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+    "metadata/family_domain_bridge_indexed_readback_plan.json": "dbaeb4fdb72b747a194f1ff192cb7852c5660a96d7210e22b236da443c9a8bf2",
+    "results/domains/family-domain-bridge-readback-v2/receipt.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "results/domains/family-domain-bridge-v1/receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0"
+  },
+  "elapsed_seconds": 1372.9393322467804,
+  "scope": "Descriptive within-family annotation variation across four policies, preserving no-hit and QC flags. Conservative excludes policy disagreement, partial matches, ties, overlap and candidate nesting. No event directions, branch rates, homology validation or statistical significance inferred."
+}
