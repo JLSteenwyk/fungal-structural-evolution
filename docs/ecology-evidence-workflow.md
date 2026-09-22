@@ -1,5 +1,9 @@
 # Ecological evidence and transition curation
 
+The latest [sample-linked curation and phylogenetic sensitivity](ecology-phylogenetic-diagnostic-20260922.md)
+contains 32 species statements. Earlier 21- and 26-species inputs below are
+preserved for their existing analyses.
+
 A subsequent [species-level supplementary-data import](ecology-species-source-import-20260922.md)
 links 36 sampled species, including 21 absent from the curated table. It
 preserves source labels and disagreements separately pending review.

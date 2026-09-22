@@ -1,5 +1,37 @@
 # Ecological classification and minimum changes on species trees
 
+## Sample-linked extension to 32 species
+
+The new `metadata/species_ecology_evidence_sample_linked_20260922.tsv`
+preserves the original 26 statements and adds Amanita rubescens, Gautieria
+morchelliformis, Hysterangium stoloniferum, Ramaria rubella and both sampled
+Thelephora species. Each added classification is directly reported in
+Miyauchi Dataset 2 and linked to the selected assembly by Dataset 1's
+BioSample and WGS project. `scripts/curate_sample_linked_ecology.py` records
+the curated choices and checks these source/identity joins. Five additions
+are ectomycorrhizal; Ramaria is source-classified saprotrophic. Its disagreement
+with the genus-level candidate and the source's R. acris naming remain
+explicit. This is a source-specific coding, not a resolved taxonomy claim.
+
+Rerunning the unchanged diagnostic with
+`metadata/ecology_sample_linked_parsimony_plan.json` gives **seven minimum
+changes** on both ML trees and all 2,000 bootstrap trees. The binary coding
+has 24 ECM and seven asymbiotic/saprotrophic classifications; 495 tips remain
+unknown, including the orchid symbiont. There are 2,064 output rows. The
+independent graph-cut readback passes all 64 ML/leave-one-out checks.
+Treating Ramaria's classification as unknown reduces both ML scores to six.
+Thus the new score depends on its uncertain source-specific assignment;
+it must not be presented as a robust count of seven independent origins.
+
+The new output is
+`results/ecology/sample-linked-classification-parsimony-20260922-v1`, with
+versioned `ecology_sample_linked_parsimony_{receipt,readback}.json` records.
+The frozen 26-species analysis below remains available as a sensitivity
+comparison. Neither analysis establishes transition locations, ancestral
+direction, ecological effects or sufficient independent replication.
+
+## Earlier 26-species diagnostic
+
 The 26-species evidence table now has an explicit phylogenetic diagnostic on
 both completed profile-alignment C20-PMSF trees. The binary coding retains
 19 published ectomycorrhizal classifications and six source-classified

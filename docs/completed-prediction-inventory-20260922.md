@@ -408,6 +408,14 @@ full-context readback are pending; their queueing does not establish calibrated
 confidence, biological accuracy or completed evolutionary analyses.
 # Refreshed AlphaFold paired alignments queued
 
+The extended ESMFold cohort has completed its mapping-bound PAE export:
+4,363 requested and verified models, zero failed exports, 27,440,436,824
+compressed bytes. The manifest hash and mapping binding were checked and
+the receipt archived as `metadata/esmfold_extended_full_pae_export_receipt.json`.
+Its controller has advanced to confidence qualification. Original-context
+readback and full-cohort encoding integration are still pending; export
+completion does not establish confidence-qualified coverage.
+
 The subsequent fitting controller is also queued as
 `fungal-current-afdb-paired-fits-20260922.service`; its plan is
 `metadata/current_afdb_paired_fits_plan.json`. It requires the exact paired
