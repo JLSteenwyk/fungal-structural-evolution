@@ -333,3 +333,31 @@ The queued audit is capped at one CPU, 16 GiB RAM and zero swap, with a 50-GiB
 free-disk gate and 1-GiB output allowance. The 0.5–12 hour interval after mapping
 completion is an uncalibrated planning allowance. PAE qualification, native
 structural features and evolutionary integration remain separate stages.
+
+
+## Refreshed AlphaFold native coordinate features queued
+
+The full 30,588-model, 15,949,929-residue catalog is queued for native 3Di
+extraction, independent export identity checks and coordinate-feature
+reconstruction. `scripts/advance_refreshed_afdb_features.py` waits for the exact
+residue auditor process and requires its passing full-output receipt, matching
+plan hash, mapping receipt and model count. It uses the existing extraction and
+audit scripts unchanged; its dependency gate is specific to the refreshed
+AlphaFold residue audit.
+
+The service is `fungal-current-afdb-native-features-20260922.service`, with
+`metadata/current_afdb_native_feature_plan.json` and launch evidence in
+`metadata/current_afdb_native_feature_launch.json`. The controller output is
+`results/structural_alphabet/current-afdb-feature-controller-20260922-v1/`;
+native exports and audited coordinate encodings will be in
+`results/structural_alphabet/native-gdm-current-20260922-v1/` and
+`results/structural_alphabet/coordinate-gdm-current-20260922-v1/`.
+
+The Foldseek executable, commit and four source-file hashes match the previously
+qualified build. The job is capped at four CPU equivalents, four native threads,
+16 GiB RAM and zero swap, with a 100-GiB output allowance and a 150-GiB free-disk
+gate. The 1–24 hour interval after residue readback is uncalibrated planning.
+No GPU inference or paid resources are used. The final stage verifies native
+partner selection and coordinate descriptors and records full feature-context
+pLDDT. PAE binding/qualification and evolutionary integration are still required;
+this coordinate-only stage cannot by itself certify PAE-qualified states.
