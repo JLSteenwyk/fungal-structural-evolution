@@ -3443,3 +3443,10 @@ allowance and per-family tracing. Recovery is running on fresh full inputs,
 with the installed package unchanged and original CPU/memory/disk limits.
 No final reconciliation is accepted yet. See
 [recovery evidence](reconciliation-stall-recovery-20260922.md).
+
+The new independent paired-character/mask reconstruction passed the full
+previous combined ESMFold dataset (89 ready markers, 1,699,035 observations).
+Expanded paired-input preparation and the same full readback are queued behind
+qualified encoding integration. Eligibility rules and the alignment matrix
+remain fixed for the coverage comparison. Updated branch inference remains
+pending; see [expanded paired inputs](expanded-paired-inputs-20260922.md).

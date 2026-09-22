@@ -1,0 +1,19 @@
+{
+  "status": "passed_complete_paired_inputs_from_qualified_arrays_readback",
+  "markers": 89,
+  "taxa": 292,
+  "marker_taxon_cells": 9332,
+  "observed_paired_cells": 1699035,
+  "retained_marker_columns": 22205,
+  "taxa_audited": 526,
+  "markers_audited": 125,
+  "source_receipt_sha256": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+  "script_sha256": "66323a9f98e49e13a3eff70d6c7bc622d96a54c492f2aef94742435ab73c1293",
+  "input_receipts": {
+    "results/phylogeny/paired-inputs-esmfold-combined-v1/receipt.json": "b7d1162700b21a339d005c8bc18d2a1d64700b61896815987c7627bdbb079261",
+    "results/structural_alphabet/audited-esmfold-combined-v1/receipt.json": "ecc47fc33c62c61bca12e91a980f25782d453933ab4dad918d587e619f213342",
+    "results/structural_markers/esmfold-combined-frozen-v1/receipt.json": "13adcdb150cfc87ec48a45e5c6633e93f2bb61a4cd9e99f9f388aa59dcb26879",
+    "results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57"
+  },
+  "scope": "Every emitted character, observation mask, taxon eligibility and retained column reconstructed independently from mapped qualified arrays and source AA matrix; all 526-by-125 coverage cells checked. Does not re-infer structural features or establish biological accuracy, homology or branch rates."
+}
