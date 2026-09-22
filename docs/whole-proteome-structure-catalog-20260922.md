@@ -105,3 +105,31 @@ those require their own measured dimensions, resource estimates and
 membership/edge checks. The launch receipt also records an initial setup
 failure before database work began, followed by the verified corrected
 launch. No existing database or running analysis was restarted.
+
+## Gene-family coverage bridge queued
+
+`scripts/bridge_whole_proteome_structures_to_families.py` is queued behind
+the independent catalog readback. Its plan is
+`metadata/whole_proteome_family_coverage_plan.json`, launched as
+`fungal-whole-proteome-family-coverage-20260922.service`. The stage requires
+the previously completed independent family/domain bridge audit, then joins
+every structural link by exact taxon, protein accession and sequence hash.
+The existing family database is attached read-only; results are written to
+`results/structures/whole-proteome-family-coverage-20260922-v1`.
+
+Both complete partitions are retained: 658,183 profile-guide families and
+658,522 MAFFT-guide families, each covering 5,815,847 proteins. Output rows
+include total family proteins and taxa, proteins and taxa with models,
+distinct modeled sequences and distinct models. Families with no structures
+remain present. Same-taxon copies and identical sequences are not confused
+with independently sampled taxa or models. A hand-calculated fixture checks
+these distinctions and the retention of an entirely unmodeled family.
+
+The stage uses one CPU equivalent, 32 GiB memory, no swap, 20 GiB output
+allowance and a 100 GiB free-disk gate, with an uncalibrated 0.5–24 hour
+runtime range. Both partition totals and every structural link's sequence
+identity must agree before completion. The new coverage outputs will still
+require independent readback. These family assignments are not finalized
+reconciled orthology, and the models have not been confidence-qualified
+atlas-wide. Coverage does not establish duplication or domain events,
+remote homology, structural acceleration or statistical power.

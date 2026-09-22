@@ -1,0 +1,41 @@
+{
+  "status": "passed_hand_calculated_family_coverage_fixture",
+  "source_proteins": 4,
+  "families": 2,
+  "verified_cases": [
+    "same-taxon copies counted separately",
+    "identical sequences share one model",
+    "distinct modeled taxa counted",
+    "family with zero models retained"
+  ],
+  "expected_rows": [
+    [
+      "A",
+      3,
+      2,
+      3,
+      2,
+      2,
+      2
+    ],
+    [
+      "B",
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "columns": [
+    "family",
+    "proteins",
+    "taxa",
+    "structure_proteins",
+    "structure_taxa",
+    "structure_sequences",
+    "structure_models"
+  ],
+  "script_sha256": "4b4c520a51c4f3811f69bd2ad6116cc5bacb55a7ec3da8aa695ea7299eee88a2"
+}
