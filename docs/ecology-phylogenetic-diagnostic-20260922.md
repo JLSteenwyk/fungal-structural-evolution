@@ -84,3 +84,9 @@ the expanded ecological evidence. No branch is yet accepted as an
 independent ecological transition. Further curation, ancestral-state model
 sensitivity, completed crossed trees and matched structural coverage are
 required before association testing.
+
+The expanded confidence-qualified ESMFold inputs now have a separate
+[full ecological overlap diagnostic](qualified-ecology-coverage-20260922.md).
+It intersects actual alignment observations across the 32 curated species;
+28 have eligible ESMFold markers. This coverage check does not change the
+parsimony results or establish independent ecological transitions.

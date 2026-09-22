@@ -1,0 +1,27 @@
+{
+  "evidence": "metadata/species_ecology_evidence_sample_linked_20260922.tsv",
+  "evidence_receipt": "metadata/ecology_sample_linked_curation_receipt.json",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+  "input_readback": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1-readback.json",
+  "output": "results/ecology/qualified-esmfold-overlap-20260922-v1",
+  "minimum_shared_columns": 50,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 0.02,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/species_ecology_evidence_sample_linked_20260922.tsv": "c03f124defcb8fba162daf53bddc28f4a7c661e69e5459982621ea89c7102911",
+    "metadata/ecology_sample_linked_curation_receipt.json": "e1c75356bbb5bc8cc752e00cf3f30cc668355553a64e7d6a24e246683beafa7d",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1-readback.json": "ab4be9d7804864b74f7aa4e1468be198cb7566bd6c911e8a608b59cb263daecf",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/receipt.json": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180",
+    "scripts/assess_qualified_ecology_overlap.py": "cf61d9a0ed85c4d98df1386b272204c8178807248a2c2c18de2395e92c3a6e25",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb"
+  }
+}
