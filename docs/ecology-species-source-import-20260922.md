@@ -44,3 +44,39 @@ and identifier cells, the complete name intersection and assembly joins.
 These additional source links support expanded trait curation, not completed
 ecological tests or a count of independent transitions. In particular, the
 earlier six-change diagnostic still uses its frozen 26-species table.
+
+## Published-sample linkage
+
+`python scripts/link_ecology_source_biosamples.py` joins Dataset 1's explicit
+identifiers to the exact selected assembly accessions in the cached NCBI
+assembly catalogue. It also checks catalogue BioSamples against the
+independently parsed assembly-statistics table (treating catalogue `na` and
+an empty report field as missing). Eight species match both the published
+BioSample and WGS accession root:
+
+- Amanita rubescens
+- Cantharellus anzutake
+- Gautieria morchelliformis
+- Hydnum rufescens
+- Hysterangium stoloniferum
+- Ramaria rubella
+- Thelephora ganbajun
+- Thelephora terrestris
+
+Cantharellus has a different selected BioProject identifier, PRJNA691513,
+from the paper's PRJNA245611, while its BioSample SAMN02745813 and WGS
+project WJDU00000000 agree. This discrepancy is retained. WGS version
+suffixes are explicitly ignored for project linkage; Thelephora terrestris
+has selected WGS version `.2`. No claim of identical assembly sequences or
+annotation versions follows. Amanita's paper strain spelling includes an
+accent; identifiers, rather than a guessed transliteration, establish the
+sample linkage.
+
+The 36-row `metadata/miyauchi_ecology_sample_identity.tsv` preserves all
+source and selected identifiers. Twenty-eight rows have no unique published
+sample identifier in Dataset 1 and remain unresolved, rather than being
+declared mismatches. Raw ZIP/XML parsing independently checked the eight
+matched source rows and identifier comparisons. Receipts pin the workbook,
+catalogue, statistics table, imported species table and implementation.
+These sample links do not resolve source ecological-label disagreements,
+taxonomic concepts or selected-isolate experimental phenotype validation.

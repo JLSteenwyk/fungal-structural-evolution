@@ -1,0 +1,19 @@
+{
+  "status": "complete_published_sample_identifier_linkage",
+  "records": 36,
+  "dispositions": {
+    "no_unique_published_sample_identifier": 28,
+    "same_biosample_and_wgs_project": 8
+  },
+  "inputs": {
+    "source": "1e146002cd1dc84eccb7388d36f34b64b02ad28a7506cc3d071a625346796bd5",
+    "downloads": "8bfa2437d02afd61e718663fb0b42c1b3e6da43609b136964fae7a98ebf0bbe1",
+    "matches": "d45ad521abdb637c52fce067971d71d8e3f568175856a4f6e8163e30e3aee90b",
+    "match_receipt": "b33e2719feef3068d8a1851718a484df398da86983e38ccecd41b20a773f1f86",
+    "assemblies": "b020475c149ec78f79215fe8e1b6577bcc33f8bd0e57efda10af2f7ebdbb80a2",
+    "quality": "abb3cd9db6d592953b2a3f888a1ff804b96dacad98d91604cdba93f9e8b0694a"
+  },
+  "script_sha256": "188e895a4deb73c689194390c5d4407b5190a24ec0015b42b8b39069d704c633",
+  "output_sha256": "6684f82d1d11a86a388073f1c5d1b943f92e9838717f9dbbbc2d08ed39668add",
+  "scope": "Sample and WGS project linkage only. Selected assembly accession matched exactly; WGS version suffix ignored explicitly. Unmatched entries remain unresolved, not negative matches."
+}
