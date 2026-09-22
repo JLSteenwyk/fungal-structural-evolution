@@ -1,0 +1,128 @@
+{
+  "status": "completed_synthetic_small_family_output_observation",
+  "genes": 18,
+  "families": {
+    "OG0000000": [
+      "0_0",
+      "1_0",
+      "2_0",
+      "3_0"
+    ],
+    "OG0000001": [
+      "0_1",
+      "1_1",
+      "2_1"
+    ],
+    "OG0000002": [
+      "0_2",
+      "0_3",
+      "2_2"
+    ],
+    "OG0000003": [
+      "1_2",
+      "1_3",
+      "1_4"
+    ],
+    "OG0000004": [
+      "0_4",
+      "2_3"
+    ],
+    "OG0000005": [
+      "3_1",
+      "3_2"
+    ],
+    "OG0000006": [
+      "2_4"
+    ]
+  },
+  "early_singleton": false,
+  "expected_directed_pairs": 24,
+  "observed_directed_pairs": 22,
+  "missing_directed_pairs": [
+    [
+      "OG0000004",
+      "protein_0_4",
+      "protein_2_3"
+    ],
+    [
+      "OG0000004",
+      "protein_2_3",
+      "protein_0_4"
+    ]
+  ],
+  "source_unchanged": true,
+  "source_hashes": {
+    "Log.txt": "248981900af3b81671c99a6518d58f04b1228e08a98231c88165bc65ca57cdaa",
+    "WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "5a88f6c8e8825e3f2f684fab3876d5d2303e3cbf77b95333d0d64febd4e690b3",
+    "WorkingDirectory/Species3.fa": "aa10f50da74001d78e1884d11de3087bfa66aa0a872daf07ad3af867339ff0d2",
+    "WorkingDirectory/SequenceIDs.txt": "c9880a95f39d5d2d1be7b3f808e73773ed7a318f6c3b31465844dce15d9719d1",
+    "WorkingDirectory/SpeciesTree_unrooted_ids.txt": "0f27d96bf1bc2642e14d993c4c90f3b7f39f8b543cdc8c8a46dc1f021229f7ae",
+    "WorkingDirectory/SpeciesIDs.txt": "ad6c5550828e71551a58bf8a79f4e024b7431ccbb685e400f8f6af893e0aa6f7",
+    "WorkingDirectory/Species0.fa": "6c8235034d104f128a62995aefc694c55c46b2d607fa94a2b32fc8a127560432",
+    "WorkingDirectory/Species2.fa": "12edef8e0ad480318b0d25f570e5259f99890c86b7f0abd2be87e83178f4f57b",
+    "WorkingDirectory/Species1.fa": "a4924f91075836619e7bd1b417725071543beff72d3616d316b13f5c7b298664",
+    "WorkingDirectory/Trees_ids/OG0000000.txt": "7919534f6b2004ea6be74c01fbedb54785ae54cd68260defa641578b7c0f3dd6"
+  },
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+    "--from-trees",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/native-small-family-output-fixture-v2/Source",
+    "-s",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/native-small-family-output-fixture-v2/species_tree.nwk",
+    "-n",
+    "small_fixture",
+    "-t",
+    "2",
+    "-a",
+    "1",
+    "-M",
+    "msa",
+    "-S",
+    "diamond",
+    "-A",
+    "famsa",
+    "-T",
+    "fasttree",
+    "--no-fix-files",
+    "--save-space"
+  ],
+  "returncode": 0,
+  "script_sha256": "f820468e0daf06765615450eb3f9c0c038c609b4dfdfea34788f2c3b5df4d099",
+  "executable_sha256": "a9e297a0bc4c584d5cf47186845cb2f0514987396f8c75ef349cc664027c72cc",
+  "native_orthologues_source_sha256": "64a4a11a0a184572c14bfbc71eef977f5cd7ade7ed41adaf1f85ae93e3354f65",
+  "result_hashes": {
+    "Log.txt": "5ace8ceb8f97da5b2b1ed083b09aa0b21ef5a7798cfd32edda2f57fc76285eb3",
+    "Citation.txt": "76a86a4cd969c42c7a8d396a2e0aa79bbf964c19de7f5ad23c9c9b5c539b79f9",
+    "WorkingDirectory/N0.ids.tsv": "7a4f1013d5b0d1a4ce0b0b218c8be99a8d1e4311934b3198e55daf147aaaa79d",
+    "WorkingDirectory/SpeciesTree_rooted_ids.txt": "0f27d96bf1bc2642e14d993c4c90f3b7f39f8b543cdc8c8a46dc1f021229f7ae",
+    "Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "43df1381694350cae3d8a8cb051740947f03e4dac8435287bba5e863b7eee126",
+    "Phylogenetic_Hierarchical_Orthogroups/N2.tsv": "7b0fc23123cb4de32037ef12970aad892542fce70389141d416d2f1487efbac1",
+    "Phylogenetic_Hierarchical_Orthogroups/N1.tsv": "650f4021c7a13f36075a1ad7a3f3ed5ef7ed45c8e2eeac094ff894e60fc15e05",
+    "Gene_Duplication_Events/Duplications.tsv": "cbc305868f5a01e2410e45530852f0c85e1ea51a813449c2155916fda97cc846",
+    "Gene_Duplication_Events/SpeciesTree_Gene_Duplications_0.5_Support.txt": "d8b48047c6295041ba0dffcf4f62701bd9b829c9a850e065621fa8766c590d95",
+    "Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "eb7b7211a276b67cafe1f414c439163b874307241f96c423e70469eca1eae70d",
+    "Orthogroups/Orthogroups_SingleCopyOrthologues.txt": "82b0f6ee81f8311aff33447a1fd367af9e8557915589be5a5388650cbcce8f6e",
+    "Orthologues/Taxon3.tsv": "8377705d1d9f5d210afc34f8065a07ac35a39f09b87f37f5ebfef4b5117c4f2d",
+    "Orthologues/Taxon0.tsv": "05e65f5f60e74166bde0759f5e05bdce6aba16e5a0664a686d74c328c4df2088",
+    "Orthologues/Taxon2.tsv": "9c17254cce7b9c3bae6460462af42c7d7efd92c9990669ef20826679cc5afd7d",
+    "Orthologues/Taxon1.tsv": "5912a9172bea4766e4e9479b432977965daffa153be7a422ccf1dcdcbe2f3ef6",
+    "Putative_Xenologs/Taxon3.tsv": "ae0d81583b7b5020d940254848ec32c777afbe9019168c7926338c5075e31f9f",
+    "Putative_Xenologs/Taxon0.tsv": "be642523248be3e3c9951fbd49d9a19d3d5f59a42c84217bbf7da54f0c74374d",
+    "Putative_Xenologs/Taxon2.tsv": "61b0cacefd09ffdf385117fcb2a1488fd9938a8a4175e5fce88d4c07dae06c14",
+    "Putative_Xenologs/Taxon1.tsv": "510eb0efcf74d5fef137b1dc8df17f7af3f0e67af8ad7dcb5263d953fa5d8302",
+    "Single_Copy_Orthologue_Sequences/OG0000000.fa": "ee09ff847e93fb3ce0c758d3d183d4a677a159103b43c901f69a742784cab0ca",
+    "Comparative_Genomics_Statistics/OrthologuesStats_many-to-one.tsv": "dc7d90f41e416e5bd8584a0ef3a63e772f7154a0e0791ac71fc6645862bf7eb5",
+    "Comparative_Genomics_Statistics/OrthologuesStats_many-to-many.tsv": "c4b2d7815d27b51ff8cd50e7d5662bf1a1066779e2f0a35df84e92524bea8cd0",
+    "Comparative_Genomics_Statistics/OrthologuesStats_one-to-many.tsv": "a4f4c05bb101e38b4c5fe9086de77fe84042b5b736b62a81e14466b402235298",
+    "Comparative_Genomics_Statistics/OrthologuesStats_one-to-one.tsv": "9525114c2909eb96fc852faa917b81cf2d65608cf82b9f0b15c821ca5e7fe5fb",
+    "Comparative_Genomics_Statistics/OrthologuesStats_Totals.tsv": "60ec39a4a6e7fb2b989b1d0c1b581f81bc92322cde82765d54b5f19d0323c680",
+    "Comparative_Genomics_Statistics/Duplications_per_Species_Tree_Node.tsv": "eeb936693cd59ff31b8699b3ef436f9626c5a6cdd3e6398c0a112256f2d6fe23",
+    "Comparative_Genomics_Statistics/Statistics_PerSpecies.tsv": "7ff9d25d84422afc34a56c9e653bd970695f5cc7ac9a053ae493d7a46e7f4c03",
+    "Comparative_Genomics_Statistics/Duplications_per_Orthogroup.tsv": "534976a77feea7be16ba2db41c24e0abaa7a499250ec3bf4b926b668b4de81fd",
+    "Comparative_Genomics_Statistics/Statistics_Overall.tsv": "645bcb6e46a9c8a99e383e7e20ea8add771efe492eb701dd756225e8c1b325de",
+    "Species_Tree/SpeciesTree_rooted_node_labels.txt": "1b7f0e7c554024e12ace341fe283e33a0056ad4da5e460a44bb554ab8bce5aa6",
+    "Species_Tree/SpeciesTree_rooted.txt": "3e2aa8db67c4f2e3164385cf6eadd96d1436783dc13327551de524e454ab42ee"
+  },
+  "elapsed_seconds": 1.4215543270111084,
+  "scope": "Synthetic output coverage observation, not a passing full reconciliation audit or a biological validation. Missing expected pairs remain explicit."
+}

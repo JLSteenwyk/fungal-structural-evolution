@@ -1,0 +1,50 @@
+{
+  "status": "complete_input_exposure_assessment_pending_native_output_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "first_singleton": "OG0044000",
+      "families": 658183,
+      "proteins": 5815847,
+      "genes3_taxa1": 8251,
+      "genes3_taxa2": 5134,
+      "genes3_taxa3": 11792,
+      "genes2_taxa1": 31530,
+      "genes2_taxa2": 31056,
+      "two_gene_pair_not_appended": 31056,
+      "exposed_families": 42623,
+      "expected_missing_directed_pairs": 124056,
+      "three_gene_family_after_first_singleton": 11567
+    },
+    {
+      "guide": "mafft",
+      "first_singleton": "OG0046181",
+      "families": 658522,
+      "proteins": 5815847,
+      "genes3_taxa1": 8256,
+      "genes3_taxa2": 5103,
+      "genes3_taxa3": 11823,
+      "genes2_taxa1": 31557,
+      "genes2_taxa2": 30890,
+      "two_gene_pair_not_appended": 30890,
+      "exposed_families": 42337,
+      "expected_missing_directed_pairs": 123144,
+      "three_gene_family_after_first_singleton": 11447
+    }
+  ],
+  "input_hashes": {
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/receipt.json": "c502b9ebc25ff05b6395cb2fc7e41a325eed814a267624a938d4d2c32884fea2",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/copied_files.tsv": "a4e2a4371e7b080b8cf4ffb4cfd36827efb39f6bb0d9930f40b651e029acd228",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/family_sources.tsv": "e146db00a53f7030b58b1fa8de25bc4064670b13cda8a4eb1bde95bbfb80b350",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/mafft/copied_files.tsv": "2858277a9a2e74e06bbb6f293475d0f4623a422e4368507e66742b2e8c421011",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/mafft/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/mafft/family_sources.tsv": "92c1e36168759c81954adf7325fbf475ebbb6dc9be07ecd563e806f0516b79b6"
+  },
+  "artifacts": {
+    "profile_exposed_small_families.tsv": "ea685ea2ae1922345a35bd03db94abeeea85d960a56f20e452f06740779fe82e",
+    "mafft_exposed_small_families.tsv": "e39dfd9c7938e1d443152872327065f237d01b4ed26c0ce07d5b46e622d44db4"
+  },
+  "script_sha256": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+  "scope": "Expected output omissions inferred from installed-code behavior reproduced on synthetic fixtures. Does not assert observed omission counts in still-running production results, repair native outputs, or establish biological orthology."
+}

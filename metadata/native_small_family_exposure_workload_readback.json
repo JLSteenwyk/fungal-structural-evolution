@@ -1,0 +1,18 @@
+{
+  "status": "passed_exposure_comparison_with_prior_workload",
+  "checks": [
+    {
+      "guide": "profile",
+      "families": 42623,
+      "directed_pairs": 124056,
+      "workload_sha256": "541d31a79fa767f4afd6092b177d5d8d9a2f5e9122f2f2cc5b3c7a2506ad0ca4"
+    },
+    {
+      "guide": "mafft",
+      "families": 42337,
+      "directed_pairs": 123144,
+      "workload_sha256": "8619df672b665ab50b8e2a234d9e506f5d9b71d27a55b1c0627f55f7c79b6dac"
+    }
+  ],
+  "scope": "All exposed family identifiers and expected directed-pair counts agree with the earlier workload table. Native production outputs have not yet been read back."
+}
