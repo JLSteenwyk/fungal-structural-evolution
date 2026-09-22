@@ -1,0 +1,34 @@
+{
+  "producer_plan": "metadata/whole_proteome_family_coverage_plan.json",
+  "output": "results/structures/whole-proteome-family-coverage-20260922-v1-readback.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.1,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "metadata/whole_proteome_family_coverage_plan.json": "730ecb43cdd1f0742feaa1557412ef69a397af8f0375cfd1f16daf6fa3369ec2",
+    "metadata/whole_proteome_structure_catalog_readback_plan.json": "94352837285cd5d7552d19453bd84430913993f18cd30ccb15b3d64147a36f5a",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/domains/family-domain-bridge-v1/receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/protein_model_links.tsv": "6937557ffcb6318a8e176b2562001ca8614b897712fc7ae4a50c8a755290958d",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/receipt.json": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+    "results/structures/whole-proteome-family-coverage-20260922-v1/family_structure_coverage.tsv": "9d875f1ec7666c7685b687a975b073ad5fd8635f66183bbe2d4752ef0a5ad7e4",
+    "results/structures/whole-proteome-family-coverage-20260922-v1/receipt.json": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378",
+    "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+    "scripts/bridge_whole_proteome_structures_to_families.py": "4b4c520a51c4f3811f69bd2ad6116cc5bacb55a7ec3da8aa695ea7299eee88a2",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/check_whole_proteome_family_readback.py": "71305c91157b7e9ba44bc2033de429022600425e28fc7cb4dd85d374b477bda7",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb"
+  }
+}

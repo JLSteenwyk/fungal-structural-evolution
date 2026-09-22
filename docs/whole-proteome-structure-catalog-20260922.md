@@ -156,3 +156,31 @@ occur in each complete family partition. These are provisional producer totals:
 independent family-level reconstruction is the next acceptance gate. A family
 with every protein modeled may be a singleton and is not necessarily eligible
 for comparative analysis. No family-level evolutionary result is inferred here.
+
+## Independent family coverage verification running
+
+`scripts/readback_whole_proteome_family_coverage.py` now checks both complete
+family partitions under `fungal-whole-proteome-family-readback-20260922.service`.
+Its plan, `metadata/whole_proteome_family_coverage_readback_plan.json`, pins
+15 source, implementation and output files. The checker reconstructs the
+native gene/model identities from the catalog and original protein database,
+then compares every identity against the new structural bridge. It separately
+streams each source family and accumulates Python sets for taxa, sequences
+and models; it does not reuse the producer's SQL coverage aggregation.
+Every coverage-table row, including families without models, must match.
+
+The checker also reports counts of families with models in at least 2, 4,
+10, 25, 50 and 100 taxa. These describe availability, not reconciled orthology,
+independent evolutionary transitions, confidence qualification or statistical
+power. The hand-calculated fixture includes same-taxon copies, shared model
+sequences and an unmodeled family; incorrect model identity, sequence identity,
+taxon counts, extra families and omitted unmodeled families are rejected.
+Reproduce those checks with
+`python scripts/check_whole_proteome_family_readback.py`.
+
+The full run uses one CPU equivalent, 32 GiB RAM, no swap, reduced scheduling
+priority and a 0.01 GiB output allowance. The pre-launch runtime planning range
+is 0.1–12 hours and is uncalibrated. The small final receipt will be written to
+`results/structures/whole-proteome-family-coverage-20260922-v1-readback.json`;
+launch and fixture records are versioned in `metadata/`. The scientific
+family-level verification remains pending until that receipt passes.
