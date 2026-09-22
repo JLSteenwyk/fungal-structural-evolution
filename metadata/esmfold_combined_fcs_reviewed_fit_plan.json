@@ -1,0 +1,65 @@
+{
+  "status": "pre_fit_conditional_site_coupling_plan",
+  "sites": 22205,
+  "markers": 89,
+  "fits": 24,
+  "cpu_threads": 1,
+  "memory_allowance_gb": 16,
+  "output_allowance_gb": 4,
+  "planning_hours": [
+    0.25,
+    12
+  ],
+  "source_frame_sha256": "5e3f18ae6d9cb1f06bd29a4e7d5b1b60aa1985bbe5c3078f6aecaeaa4503c303",
+  "source_accessibility_sha256": "3de0ad32cda2c9fd0058d9e9ce201242619fb0e7c45e57f0be93287c0e844622",
+  "response": "log1p(structural-alphabet relative site rate)",
+  "focal_predictors": [
+    "log1p(amino-acid relative site rate)",
+    "median extant RSA minus 0.25",
+    "interaction of the two"
+  ],
+  "all_models_controls": [
+    "marker fixed intercepts",
+    "observed taxon fraction",
+    "site lower-quartile focal CA pLDDT divided by 100"
+  ],
+  "adjusted_sensitivity_controls": [
+    "19 amino-acid proportions (A reference)",
+    "amino-acid entropy"
+  ],
+  "grid": {
+    "alphabet_model": [
+      "3di_af",
+      "3di_af_empirical",
+      "3di_llm"
+    ],
+    "rate_model": [
+      "gamma",
+      "freerate"
+    ],
+    "rsa_scale": [
+      "tien2013",
+      "miller1987"
+    ],
+    "controls": [
+      "coverage_confidence",
+      "composition_adjusted"
+    ]
+  },
+  "uncertainty": "CR1 marker-cluster covariance and t(88) reference; BH across 72 focal tests. Marker resampling is a subsequent required stage.",
+  "interpretation": "Exploratory FCS observation-omission sensitivity of the 89-marker completed ESMFold baseline, reviewed. Fixed estimated rates/topologies, extant RSA, marker-cluster dependence and sequence-derived prediction circularity remain limitations. Not a final phylogenetically adjusted structural-acceleration or selection test.",
+  "cost": "Existing authorized CPU host, no new charges",
+  "analysis_sites": 22205,
+  "analysis_markers": 89,
+  "marker_review_policy": {
+    "mode": "retain_flagged_exploratory",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 301
+      }
+    ],
+    "reason": "Preserve the existing explicit copy-review sensitivity within the FCS observation-omission dataset. Neither inclusion nor exclusion validates orthology."
+  }
+}

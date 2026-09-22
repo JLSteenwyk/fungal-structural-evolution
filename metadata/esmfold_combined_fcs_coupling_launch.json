@@ -1,0 +1,32 @@
+{
+  "observed_unix": 1790097488.697381,
+  "services": [
+    {
+      "MainPID": "1333896",
+      "CPUQuotaPerSecUSec": "1s",
+      "MemoryMax": "34359738368",
+      "MemorySwapMax": "0",
+      "ActiveState": "active",
+      "unit": "fungal-esmfold-combined-fcs-reviewed-fit-20260922.service",
+      "process_stat": "1333896 (python) R 4729 1333896 1333896 0 -1 4194304 426458 0 36 0 2324 134 0 0 20 0 2 0 53393389 976572416 144422 18446744073709551615 4321280 6396818 140725119243376 0 0 0 0 16781312 2 0 0 0 17 146 0 0 0 0 0 7459464 7666528 938307584 140725119249019 140725119249448 140725119249448 140725119250391 0\n",
+      "command": "/home/bizon/anaconda3/bin/python scripts/fit_reviewed_conditional_site_coupling.py --frame results/phylogeny/site-rate-exposure-frame-esmfold-combined-full-fcs-sensitivity-v2 --accessibility results/structural_annotations/paired-accessibility-normalized-esmfold-combined-full-fcs-sensitivity-v1 --plan metadata/esmfold_combined_fcs_reviewed_fit_plan.json --output results/phylogeny/site-coupling-esmfold-combined-fcs-reviewed-v2 "
+    },
+    {
+      "MainPID": "1334079",
+      "CPUQuotaPerSecUSec": "1s",
+      "MemoryMax": "34359738368",
+      "MemorySwapMax": "0",
+      "ActiveState": "active",
+      "unit": "fungal-esmfold-combined-fcs-copy-omission-fit-20260922.service",
+      "process_stat": "1334079 (python) R 4729 1334079 1334079 0 -1 4194304 375656 0 34 0 2340 110 0 0 20 0 2 0 53393400 992587776 145660 18446744073709551615 4321280 6396818 140730657661392 0 0 0 0 16781312 2 0 0 0 17 190 0 0 0 0 0 7459464 7666528 366227456 140730657667692 140730657668131 140730657668131 140730657669079 0\n",
+      "command": "/home/bizon/anaconda3/bin/python scripts/fit_reviewed_conditional_site_coupling.py --frame results/phylogeny/site-rate-exposure-frame-esmfold-combined-full-fcs-sensitivity-v2 --accessibility results/structural_annotations/paired-accessibility-normalized-esmfold-combined-full-fcs-sensitivity-v1 --plan metadata/esmfold_combined_fcs_copy_omission_fit_plan.json --output results/phylogeny/site-coupling-esmfold-combined-fcs-copy-omission-v2 "
+    }
+  ],
+  "pins": {
+    "scripts/fit_reviewed_conditional_site_coupling.py": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+    "metadata/esmfold_combined_fcs_reviewed_fit_plan.json": "70f5e948b5a1202ec7523198f6564adb7a1637eaebc9e8b2e263719e56acd5c5",
+    "metadata/esmfold_combined_fcs_copy_omission_fit_plan.json": "b7c56b9b3de317d4af0360d24649548acfb7f95ea31df95050dea13fe67897a6",
+    "metadata/esmfold_combined_full_fcs_frame_readback.json": "16267cfa255b3c64fb2ba9b615ccb0ee9f0208b03f42ce762f570fae22c5181f"
+  },
+  "resampling": "Pending completed fit receipts; 2000 whole-marker draws per specification and every marker omitted once remain required."
+}

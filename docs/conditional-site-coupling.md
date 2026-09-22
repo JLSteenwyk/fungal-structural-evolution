@@ -289,3 +289,82 @@ Reproduce with `scripts/compare_copy_review_coupling.py`, using the
 `site-coupling-resampling-*` folders under `results/phylogeny/`. The comparison
 is `copy-review-coupling-comparison-gdm-expanded-v1`; receipts and all three
 comparison tables are archived as `metadata/gdm_expanded_copy_review_comparison_*`.
+
+
+## Expanded ESMFold FCS sensitivity completion (22 September 2026)
+
+The historical failed initial coupling service had already been superseded by
+the reviewed full-cohort and copy-omission analyses. Its gene-copy guard was
+not bypassed. A separate unfinished handoff was completed here: the 18
+FCS-affected markers had finished all eleven rate/exposure stages, but their
+rows had not been merged with the 71 unchanged revised-baseline markers.
+
+The full merged frame retains 89 markers, 22,205 sites and 1,696,368 taxon-site
+observations. The underlying sensitivity omits whole marker/taxon observations
+whose CDS overlaps publisher FCS EXCLUDE/FIX/TRIM regions, while retaining
+REVIEW-only observations. Input preparation records 19 omitted marker/taxon
+observations across 18 affected ready markers. This is not proof of contamination
+or a whole-species deletion. Unchanged markers retain the revised baseline
+rates; affected markers use their completed, audited refits.
+
+`scripts/merge_fcs_site_rate_frame.py` checked all eleven upstream stages,
+source lineage, unchanged coordinates and full retained-accessibility totals.
+`scripts/readback_full_fcs_frame.py` independently matched every merged site
+field, 356 fit-diagnostic rows and all marker source references against the
+selected source records. The unresolved copy-review marker 4986044at2759 and
+its 301 sites remain explicitly flagged. The merge and readback are recorded
+in `metadata/esmfold_combined_full_fcs_frame_{plan,receipt,readback}.json`.
+
+The unchanged reviewed fitter completed 24 specifications in each of the
+full89/22,205-site and copy-omission88/21,904-site datasets. It retained the
+exact confidence/RSA joins, independent NumPy coefficient checks and manually
+assembled CR1 covariance checks. Whole-marker resampling completed 48,000
+fits per dataset, with no singular draws and 2,136/2,112 leave-one-marker-out
+fits, respectively. All absorbed point estimates matched the fitted marker
+intercept models; one deterministic resample and omission per specification
+were checked independently using expanded-row least squares. These checks
+do not independently resolve every statistical assumption or propagate
+rate/tree/prediction uncertainty.
+
+| Result across 24 specifications | Full FCS sensitivity | FCS plus copy omission |
+|---|---:|---:|
+| Positive AA-rate coefficient, BH q <0.05 | 24 | 24 |
+| Negative RSA main coefficient, BH q <0.05 | 24 | 24 |
+| Interaction BH q <0.05 | 0 | 0 |
+| Interaction bootstrap intervals including zero | 24 | 24 |
+
+Sequence and RSA bootstrap contrasts at both specified reference values and
+observed means retain positive and negative directions, respectively. Compared
+with the corresponding pre-FCS baseline, neither AA-rate nor RSA-main
+coefficients change sign. Interaction coefficients change sign in two full
+cohort specifications and one copy-omission specification, while remaining
+unresolved by the reported intervals. Maximum absolute coefficient changes
+are approximately 0.0028 for AA rate, 0.0068 for RSA main effects and 0.0098
+for interactions; these scales differ and are not physical displacement units.
+
+The separate copy-omission fit used exactly the retained covariate subset.
+All 72 focal omission coefficients matched the full FCS cohort's corresponding
+leave-one-marker-out solutions (maximum difference 5.30e-15). Baseline/FCS
+comparisons matched all model identities and all 72 focal coefficients in
+each cohort. Each analysis retains its own 72-test BH family. Threshold
+agreement or crossing is not a test of coefficient change, and the 24
+specifications are dependent sensitivity choices, not independent replications.
+Paired bootstrap differences between FCS and baseline remain to be assessed.
+
+The fit and resampling plans are
+`metadata/esmfold_combined_fcs_{reviewed,copy_omission}_{fit,resampling}_plan.json`.
+Outputs are under `results/phylogeny/site-coupling[-resampling]-esmfold-combined-fcs-{reviewed,copy-omission}-v2/`.
+Descriptive comparisons used unchanged `compare_fcs_coupling_fits.py` and
+`compare_copy_review_coupling.py`. Receipts and small comparison tables are
+archived as `metadata/esmfold_combined_fcs_*`; the completion checkpoint binds
+all five resampling/comparison receipts. Large per-draw arrays remain outside
+Git. Each fit/resampling stage used one CPU, a 16-GiB planning allowance,
+a 32-GiB service limit and no swap. Pre-launch runtime planning was 0.25–12
+hours per stage; this was not an ETA. No GPU inference was launched.
+
+These remain exploratory conditional site associations. Extant accessibility,
+fixed estimated rates and gene trees, marker-cluster dependence, nonlocal
+features and sequence-derived prediction circularity limit interpretation.
+The result does not establish causal exposure effects, structural acceleration,
+selection or lineage-wide robustness. It concerns the completed 89-marker
+baseline and is separate from the larger 25,322-model integration underway.

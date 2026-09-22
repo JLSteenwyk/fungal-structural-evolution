@@ -1,0 +1,38 @@
+{
+  "status": "complete_exploratory_conditional_site_coupling_fits",
+  "sites": 22205,
+  "markers": 89,
+  "fits": 24,
+  "focal_tests": 72,
+  "confidence_taxon_site_rows": 1696368,
+  "plan_sha256": "70f5e948b5a1202ec7523198f6564adb7a1637eaebc9e8b2e263719e56acd5c5",
+  "source_frame_sha256": "5e3f18ae6d9cb1f06bd29a4e7d5b1b60aa1985bbe5c3078f6aecaeaa4503c303",
+  "source_accessibility_sha256": "3de0ad32cda2c9fd0058d9e9ce201242619fb0e7c45e57f0be93287c0e844622",
+  "script_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "artifacts": {
+    "site_covariates.tsv": "0a2995cbf6de831e468ef0f6f9459c0957bb5d74eaa2f1a5d09c30da7806b2de",
+    "focal_coefficients.tsv": "0a6e7ca61966ab2d1199a83f7b5d1136d8666ea6a3a5bc87d87123498ffd6304",
+    "all_coefficients.tsv": "8e5b0a656a838f2ba80de5904319361a12d84ca621fb4b20ead3ae762b1ae794",
+    "fit_summary.tsv": "d325573be47681232a4ff8ac0fa11cf3f5266e26333e84531aaceaa22c795d02"
+  },
+  "interpretation": "Exploratory FCS observation-omission sensitivity of the 89-marker completed ESMFold baseline, reviewed. Fixed estimated rates/topologies, extant RSA, marker-cluster dependence and sequence-derived prediction circularity remain limitations. Not a final phylogenetically adjusted structural-acceleration or selection test.",
+  "marker_review_policy": {
+    "mode": "retain_flagged_exploratory",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 301
+      }
+    ],
+    "reason": "Preserve the existing explicit copy-review sensitivity within the FCS observation-omission dataset. Neither inclusion nor exclusion validates orthology."
+  },
+  "source_frame_sites": 22205,
+  "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+}

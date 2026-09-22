@@ -1,0 +1,38 @@
+{
+  "status": "complete_exploratory_conditional_site_coupling_fits",
+  "sites": 21904,
+  "markers": 88,
+  "fits": 24,
+  "focal_tests": 72,
+  "confidence_taxon_site_rows": 1696368,
+  "plan_sha256": "b7c56b9b3de317d4af0360d24649548acfb7f95ea31df95050dea13fe67897a6",
+  "source_frame_sha256": "5e3f18ae6d9cb1f06bd29a4e7d5b1b60aa1985bbe5c3078f6aecaeaa4503c303",
+  "source_accessibility_sha256": "3de0ad32cda2c9fd0058d9e9ce201242619fb0e7c45e57f0be93287c0e844622",
+  "script_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "artifacts": {
+    "site_covariates.tsv": "a033a21bb14a132b6cecafb179812f0cc6a18afb3512833f04d9d63adb35fa16",
+    "focal_coefficients.tsv": "c668e95624a3282860b145c3f3549e1df381c8bf9a3c21d9aafbfcb2965af550",
+    "all_coefficients.tsv": "729199048ef0e247562fc2c75a44a4973556ed82e5b11ed4959352358eff812e",
+    "fit_summary.tsv": "2e46af5bdbba69e57aeb5837368f214e0934d1b39e092a2706a13472e85e0bf5"
+  },
+  "interpretation": "Exploratory FCS observation-omission sensitivity of the 89-marker completed ESMFold baseline, copy-omission. Fixed estimated rates/topologies, extant RSA, marker-cluster dependence and sequence-derived prediction circularity remain limitations. Not a final phylogenetically adjusted structural-acceleration or selection test.",
+  "marker_review_policy": {
+    "mode": "exclude_reviewed_markers",
+    "expected_flagged_markers": [
+      {
+        "marker": "4986044at2759",
+        "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+        "sites": 301
+      }
+    ],
+    "reason": "Preserve the existing explicit copy-review sensitivity within the FCS observation-omission dataset. Neither inclusion nor exclusion validates orthology."
+  },
+  "source_frame_sites": 22205,
+  "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+}

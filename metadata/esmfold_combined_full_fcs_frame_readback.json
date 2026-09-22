@@ -1,0 +1,20 @@
+{
+  "status": "passed_full_fcs_frame_source_row_readback",
+  "markers": 89,
+  "sites": 22205,
+  "changed_markers": 18,
+  "unchanged_markers": 71,
+  "taxon_site_observations": 1696368,
+  "diagnostic_rows": 356,
+  "flagged_markers": [
+    {
+      "marker": "4986044at2759",
+      "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+      "sites": 301
+    }
+  ],
+  "frame_receipt_sha256": "5e3f18ae6d9cb1f06bd29a4e7d5b1b60aa1985bbe5c3078f6aecaeaa4503c303",
+  "plan_sha256": "d990bacbb4df64b2dafe2f0b518ebe1501c6bf89157075181de89c60f440f78e",
+  "script_sha256": "98262bdffa964d695351646a051ac1197a8db5d098e4c8e8de85c03394f2f088",
+  "scope": "Every merged site field, fit diagnostic and marker source reference matched to selected baseline or changed-marker rows. Observation totals checked against full retained accessibility receipt. Does not independently repeat source fits, accessibility calculation or FCS annotation."
+}

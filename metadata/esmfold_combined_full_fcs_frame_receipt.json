@@ -1,0 +1,23 @@
+{
+  "status": "complete_full_cohort_fcs_site_rate_exposure_frame",
+  "markers": 89,
+  "sites": 22205,
+  "site_rate_values": 177640,
+  "taxon_site_observations": 1696368,
+  "changed_markers": 18,
+  "unchanged_markers": 71,
+  "source_receipts": {
+    "baseline": "2a837a64d05017be6c51061d88f38a54a1be19e1f369e21253833b51e12f14f7",
+    "changed": "18cc8093f41d55511f196837ec25accdc73b308538b59060788bc6082e4a1bdf",
+    "inputs": "3ce37910285bef1c26146ae9914821e5f4395bef6156f9e16a6cca3c7c2337f8",
+    "accessibility": "3de0ad32cda2c9fd0058d9e9ce201242619fb0e7c45e57f0be93287c0e844622"
+  },
+  "controller_receipt_sha256": "2e1c3caf1230803ef394e8383c64a73e4ecb786565d6f222703929dcff6b6261",
+  "script_sha256": "9d0a34f628e83112ad45e8d7831676044b9f33c1a8132f8e234f1cce2e35b941",
+  "artifacts": {
+    "fit_diagnostics.tsv": "06edd66b52eeb2359f95b1c7bca4d50d97fe3fc592a86470aec5040209424a19",
+    "marker_provenance.tsv": "3a54fcfa6eed1772f1bc82971f8a81259ce58c4e6c05b380ff7bde5cfe17d241",
+    "site_rate_exposure.tsv": "9d2dd9b6c0d24685e451fd2d9fc9378f4b24b737b9823d1d15da2a28d302cb61"
+  },
+  "interpretation": "Full baseline marker universe, with affected marker rows replaced only from the complete audited FCS workflow. Unchanged rows and all selected-row fields copied exactly. Counts match full retained normalized exposure. Not a completed coupling test; rates remain conditional on fitted trees/models and extant exposure is not ancestral or phylogenetically weighted."
+}

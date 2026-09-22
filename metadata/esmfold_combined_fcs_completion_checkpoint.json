@@ -1,0 +1,34 @@
+{
+  "status": "complete_expanded_fcs_conditional_fits_resampling_and_descriptive_comparisons",
+  "observed_unix": 1790097668.8617854,
+  "stages": [
+    {
+      "path": "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-reviewed-v2/receipt.json",
+      "sha256": "43690a175fd71deedb24e0d475be13cb7a6d7be17146270b90f2003006b2bcbe",
+      "bootstrap_fits": 48000,
+      "leave_one_marker_out_fits": 2136
+    },
+    {
+      "path": "results/phylogeny/site-coupling-resampling-esmfold-combined-fcs-copy-omission-v2/receipt.json",
+      "sha256": "8384c928b8281776f2b9f08c153efeb1707d3b7b3c0d96c97ee81482ebfc6ce2",
+      "bootstrap_fits": 48000,
+      "leave_one_marker_out_fits": 2112
+    },
+    {
+      "path": "results/phylogeny/copy-review-coupling-comparison-esmfold-combined-fcs-v2/receipt.json",
+      "sha256": "45b5dd6b07674e768bc51cb9340c5a6c843705d4856c2da5e34976bd086c013a",
+      "status": "passed_copy_review_coupling_comparison"
+    },
+    {
+      "path": "results/phylogeny/fcs-coupling-comparison-esmfold-combined-reviewed-v2/receipt.json",
+      "sha256": "72e3a3659e90eb2ffc9fe5ac373474a256b0ede98ee42bfe4086317a1b2e843b",
+      "status": "complete_matched_fcs_conditional_coupling_comparison"
+    },
+    {
+      "path": "results/phylogeny/fcs-coupling-comparison-esmfold-combined-copy-omission-v2/receipt.json",
+      "sha256": "bb11a551278ab3be394ec137b121139ce99ad768fe2f2c20acf5e73b2a514c57",
+      "status": "complete_matched_fcs_conditional_coupling_comparison"
+    }
+  ],
+  "scope": "89-marker FCS omission and 88-marker copy-review omission; source matched descriptive baseline contrasts. Not a coefficient-change significance test, final phylogenetically adjusted analysis or full atlas completion."
+}

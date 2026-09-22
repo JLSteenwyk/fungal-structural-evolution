@@ -3544,3 +3544,24 @@ confirm the documented candidate models and SH-aLRT settings. Receipt hashes
 and scoped completion statuses are indexed in
 `metadata/methods_checkpoint_20260922_sources.json`; local methods links resolve.
 The full atlas and final evolutionary analyses remain unfinished.
+
+
+## Expanded FCS coupling sensitivity completed — 22 September 2026
+
+Merged 18 affected-marker rate frames with 71 unchanged revised-baseline
+markers and independently checked every site field, diagnostic row and source
+reference. The merged 89-marker frame contains 22,205 sites and 1,696,368
+observations; the copy-review flag remains explicit.
+
+Both full89 and copy-omission88 coupling grids completed 24 specifications,
+48,000 marker-bootstrap fits each and all single-marker omissions. No bootstrap
+draw was singular. The separate omission fits match full-cohort leave-one-out
+coefficients within 5.30e-15. All 24 specifications retain positive AA-rate and
+negative RSA-main coefficients after FCS omission; interaction intervals include
+zero throughout. Two/one interaction signs change descriptively relative to
+the respective baselines, without evidence of interaction significance.
+
+Source-matched coefficient comparisons and complete output hashes passed;
+receipts and small tables are archived. Paired difference intervals and
+phylogenetic/rate/prediction uncertainty remain outstanding. See
+[full sensitivity results](conditional-site-coupling.md#expanded-esmfold-fcs-sensitivity-completion-22-september-2026).

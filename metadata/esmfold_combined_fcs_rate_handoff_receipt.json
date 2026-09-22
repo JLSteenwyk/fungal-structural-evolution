@@ -1,0 +1,232 @@
+{
+  "status": "complete_fcs_rate_and_exposure_frame_handoff",
+  "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+  "parent_receipt_sha256": "257078af47221a3e627b9f24b8a8e22f1d3fec77fd2bc326e8ccb54458af4549",
+  "stages": [
+    {
+      "stage": "G4",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/estimate_paired_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--heterogeneity",
+        "G4",
+        "--output",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "e65dc8ce288d50df0c15ca41ca9806dec3cfb9177caa4056c0a3c2621f05f3a1"
+    },
+    {
+      "stage": "G4_audit",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_paired_site_rates.py",
+        "--rates",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-site-rates-audit-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-audit-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "e694cb3a84fe8ea2a48162f2758272e239cf4864f9989cfac92fff96fca7be6d"
+    },
+    {
+      "stage": "R4",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/estimate_paired_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--heterogeneity",
+        "R4",
+        "--output",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "ab483ad53202a33c281fdb2a73cfaded0dc60ed0ff055dac33e20fb1454541ed"
+    },
+    {
+      "stage": "R4_audit",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_paired_site_rates.py",
+        "--rates",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "7a5655956b12ab507393423b5d541aefb30c640faf3a2b1fbf33c036e7baaff5"
+    },
+    {
+      "stage": "initial_comparison",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "eede2f01ed3a7f632a48099d8f528f51fa9f84122cd0c9f69a8be374850c20bd"
+    },
+    {
+      "stage": "optimization",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/refit_flagged_freerate_models.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-esmfold-combined-fcs-sensitivity-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--all-fits",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "c53d0150594412518ceb68f6b53faa676215cf1aa33758ba3d350f05030f14f2"
+    },
+    {
+      "stage": "optimization_audit",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_freerate_optimization.py",
+        "--diagnostics",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "47be1780dc839fb07650138e45664042b50af14c251357c2f0b4c7168676afe4"
+    },
+    {
+      "stage": "selected_comparison",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/compare_site_rate_heterogeneity.py",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1",
+        "--gamma-audit",
+        "results/phylogeny/paired-site-rates-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--free-audit",
+        "results/phylogeny/paired-site-rates-freerate-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-fcs-sensitivity-v1",
+        "--optimization-audit",
+        "results/phylogeny/freerate-optimization-all-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "21ea234689396bb41e290d7920f84e43e4674b5bfa02ca91036146ceb8b71ea7"
+    },
+    {
+      "stage": "comparison_readback",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_rate_heterogeneity.py",
+        "--comparison",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-fcs-sensitivity-v1",
+        "--gamma",
+        "results/phylogeny/paired-site-rates-esmfold-combined-fcs-sensitivity-v1",
+        "--free",
+        "results/phylogeny/paired-site-rates-freerate-esmfold-combined-fcs-sensitivity-v1",
+        "--optimization",
+        "results/phylogeny/freerate-optimization-all-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "859e15f427792717b36f031f803844f98bb982a19ee6392a093a82222fe64d28"
+    },
+    {
+      "stage": "exposure",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/summarize_site_parsimony_exposure.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-combined-fcs-sensitivity-v1",
+        "--audit",
+        "results/phylogeny/paired-fit-audit-esmfold-combined-fcs-sensitivity-v1",
+        "--exposure",
+        "results/structural_annotations/paired-accessibility-normalized-esmfold-combined-fcs-sensitivity-v1",
+        "--projection",
+        "results/structural_annotations/paired-accessibility-esmfold-combined-fcs-sensitivity-v1",
+        "--review",
+        "config/marker_orthology_review.json",
+        "--output",
+        "results/phylogeny/site-parsimony-exposure-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/site-parsimony-exposure-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "3ecc7b01c51d5d9ffc3572603d18c6a217aa1ab1cf0809419b1f6cd7aee8ef7a"
+    },
+    {
+      "stage": "frame",
+      "config_sha256": "51ac501ba8dcc69fd31dac1a7f3830421ba6afc8cf8554a2d1b4cfc1524caa82",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/prepare_site_rate_exposure_frame.py",
+        "--rates",
+        "results/phylogeny/paired-rate-heterogeneity-optimized-esmfold-combined-fcs-sensitivity-v1",
+        "--rate-readback",
+        "results/phylogeny/paired-rate-heterogeneity-readback-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+        "--exposure",
+        "results/phylogeny/site-parsimony-exposure-esmfold-combined-fcs-sensitivity-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-combined-fcs-sensitivity-v1",
+        "--output",
+        "results/phylogeny/site-rate-exposure-frame-esmfold-combined-fcs-sensitivity-v1"
+      ],
+      "receipt": "results/phylogeny/site-rate-exposure-frame-esmfold-combined-fcs-sensitivity-v1/receipt.json",
+      "receipt_sha256": "18cc8093f41d55511f196837ec25accdc73b308538b59060788bc6082e4a1bdf"
+    }
+  ],
+  "markers": 18,
+  "interpretation": "Changed-marker rate comparison, full readback and exposure frame complete. Merge with unchanged baseline markers and revised coupling inference remain separate required steps."
+}

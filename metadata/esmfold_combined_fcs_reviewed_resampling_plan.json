@@ -1,0 +1,29 @@
+{
+  "status": "prelaunch_marker_resampling_and_influence_plan",
+  "source_fit_receipt_sha256": "30010454dbe53a8cb20435a82961d1a92af3c035d6573196a175bcb7e6d024c6",
+  "models": 24,
+  "markers": 89,
+  "marker_bootstrap_draws": 2000,
+  "seed": 20260913,
+  "leave_one_marker_out_fits": 2136,
+  "bootstrap_fits": 48000,
+  "workers": 1,
+  "memory_allowance_gb": 16,
+  "output_allowance_gb": 4,
+  "planning_hours": [
+    0.25,
+    12
+  ],
+  "method": "Within-marker centering; paired multinomial resampling of 89 whole markers, 2000 draws across 24 specifications, and omission of every marker. Expanded-row numerical checks retained.",
+  "contrasts": [
+    "aa_log1p_rate_at_RSA_0.25",
+    "rsa_at_aa_log1p_rate_0",
+    "interaction",
+    "aa_log1p_rate_at_observed_mean_RSA",
+    "rsa_at_observed_mean_aa_log1p_rate"
+  ],
+  "reference_distribution": "Observed site-weighted means held fixed for all resamples and leave-one-out fits; no causal intervention interpretation.",
+  "intervals": "Unadjusted percentile 95% marker-bootstrap intervals, not new multiplicity-adjusted significance tests. Singular draws retained explicitly.",
+  "interpretation": "Sensitivity to marker sampling/influence conditional on fixed rates, gene trees and observed covariates. Does not propagate phylogenetic/rate estimation uncertainty or resolve cross-marker dependence, nonlocal alphabet artifacts, prediction circularity or causal exposure effects.",
+  "cost": "Existing authorized host; no new charges"
+}
