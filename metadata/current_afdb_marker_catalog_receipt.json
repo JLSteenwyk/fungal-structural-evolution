@@ -1,0 +1,22 @@
+{
+  "status": "complete_source_specific_model_catalog",
+  "inventory_path": "results/structures/afdb-inventory-20260922-v1/inventory.jsonl",
+  "inventory_sha256": "647f55004a2a7d1205d2556ecfc35f4c8344ec81749ac8de83e3ea1857c6405b",
+  "marker_mapping_sha256": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+  "source_policy": {
+    "provider": "GDM",
+    "tool": "AlphaFold Monomer v2.0 pipeline"
+  },
+  "marker_proteins_screened": 59840,
+  "marker_proteins_linked": 31384,
+  "distinct_models": 30588,
+  "distinct_taxa_linked": 339,
+  "sum_squared_model_lengths": 10859772095,
+  "script_sha256": "3c830ad9de3d016cf982ff1933d36784b28900f99ddd76b828cc2fe9e9749eb0",
+  "selection_source_sha256": "148069d55a06bdeb735c65b88f10058b35e0a7eb9a1b0313b2495faae304a763",
+  "interpretation": "Prefetch catalog derived from the same frozen inventory and source-selection policy as the running residue mapper. Cached coordinate hashes verified; this does not complete alignment/coordinate mapping or confidence audit. Final mapping model identities and hashes must match before confidence artifacts are bound to that mapping.",
+  "artifacts": {
+    "model_provenance.json": "a7347e25152e5efce3f87a634cdc6f2e0e0fbe71396b9cc9b5865ddfe6805e21",
+    "marker_model_links.tsv": "64e5474b46b5315ef55cfe1be8d7a9914ad884edb2968c7e8c9e6b56e1738c65"
+  }
+}

@@ -153,3 +153,101 @@ The receipt and per-taxon table are versioned as
 `metadata/completed_marker_taxon_availability.tsv`. The complete per-marker
 availability table remains in
 `results/structures/completed-marker-availability-20260922-v1/`.
+
+
+## Original-cohort confidence processing completed
+
+The complete 10,522-model original cohort has passed native feature extraction,
+coordinate reconstruction, confidence qualification and independent checks
+against its original directional PAE arrays. Across 3,355,507 residues,
+3,334,463 have valid structural-alphabet states. Of these, 2,602,366 pass the
+focal-residue pLDDT threshold of 70; 2,427,934 pass that threshold over the full
+six-residue feature context; and 2,424,268 also pass the directional-context PAE
+threshold of 10 Å. These counts are per model residue, before marker-alignment
+filtering, and are not independent observations or measures of prediction
+accuracy.
+
+The PAE readback checked all 36 ordered pairs within each valid six-residue
+context. All controller stage hashes and every model-summary count were
+additionally checked for consistent totals and nested masks. Archived receipts:
+
+- `metadata/esmfold_original_full_feature_completed_receipt.json`
+- `metadata/esmfold_original_full_qualified_receipt.json`
+- `metadata/esmfold_original_full_pae_context_readback.json`
+
+Long-cohort confidence processing and extended-cohort PAE export remain active.
+The existing qualified-union controller will advance only after their full
+qualification and readback gates pass.
+
+## Refreshing downloaded AlphaFold marker availability
+
+The retrieval process has continued beyond the September 13 frozen catalog.
+A new immutable snapshot captures 1,316,471 complete retrieval-log records
+(1,542,870,552 bytes), including all statuses and repeated accessions. These
+records are not counts of unique accessions or available models. The snapshot
+is `results/structures/afdb-inventory-20260922-v1/inventory.jsonl`; its hash and
+source-prefix readback are archived in
+`metadata/current_afdb_inventory_freeze_receipt.json`.
+
+`scripts/freeze_append_only_inventory.py` copies only the complete-line prefix
+within the source's initial byte length, then independently rereads that source
+prefix. Concurrent later appends are excluded. The complete-line and unfinished-
+tail cases passed focused checks. The unchanged
+`scripts/prepare_marker_model_catalog.py` completed on this frozen input under
+`fungal-current-afdb-marker-catalog-20260922.service`, selecting models with the
+same GDM/AlphaFold Monomer v2.0 source policy as the earlier catalog and verifying
+selected coordinate hashes. Output is
+`results/structural_markers/gdm-current-catalog-20260922-v1/`.
+
+The resource plan is `metadata/current_afdb_marker_catalog_plan.json`: one CPU,
+32 GiB RAM, no swap, 3 GiB output allowance and a 50-GiB free-disk gate. The
+0.1–2 hour interval is uncalibrated planning. The launch record is
+`metadata/current_afdb_marker_catalog_launch.json`. No new predictions or paid
+resources are involved. Updated combined coverage and the actual remaining
+prediction queue require the completed catalog and independent joins; the
+older 20,909-record gap remains a statement about the older frozen catalogs.
+
+
+## Current combined availability: 93.9% of recovered marker records
+
+The refreshed GDM catalog contains 30,588 selected models linked to 31,384
+marker/protein records across 339 taxa. Its coordinate hashes passed catalog
+construction checks. `scripts/readback_marker_catalog_selection.py` independently
+replayed all 1,316,471 frozen log records and reproduced every selected model and
+marker link, including latest-accession status, source policy and tie handling.
+The readback does not repeat coordinate parsing or assess biological accuracy.
+
+Together with the 25,322 completed ESMFold models, the updated catalogs cover
+**56,171 of 59,840 recovered marker/protein records (93.87%)**:
+
+| Current catalog availability | Marker/protein records |
+| --- | ---: |
+| ESMFold only | 24,787 |
+| AlphaFold only | 30,662 |
+| Both | 722 |
+| Neither | 3,669 |
+
+All 526 sampled entries have at least one model-linked marker. The refreshed
+AlphaFold catalog retains every earlier AlphaFold-linked marker record and
+adds 17,730 links. Of those additions, 17,240 fill previously uncovered records;
+the other 490 overlap ESMFold coverage. The earlier 65.1% figure remains valid
+for its older frozen catalog but is superseded for current downloaded-model
+availability. Neither percentage is proteome-wide or confidence-qualified
+coverage, and existing evolutionary analyses have not yet incorporated these
+additional models. The 3,669 uncovered records still require checks against
+other source policies and later retrievals before defining a prediction queue.
+
+The unchanged `summarize_completed_marker_availability.py` ran under
+`metadata/current_marker_availability_plan.json`. An independent pandas join
+reproduced all 59,840 classifications and all 526 taxon summaries, and confirmed
+that no earlier AlphaFold marker link was lost. Current outputs are under
+`results/structures/current-marker-availability-20260922-v2/`. Archived evidence:
+
+- `metadata/current_afdb_marker_catalog_receipt.json`
+- `metadata/current_afdb_marker_catalog_selection_readback.json`
+- `metadata/current_marker_availability_receipt.json`
+- `metadata/current_marker_availability_join_readback.json`
+- `metadata/current_marker_taxon_availability.tsv`
+
+The updated AlphaFold models require residue mapping, confidence processing
+and integration before downstream phylogenetic and structural comparisons.

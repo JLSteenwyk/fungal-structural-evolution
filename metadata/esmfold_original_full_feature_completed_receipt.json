@@ -1,0 +1,48 @@
+{
+  "status": "complete_native_features_and_original_pae_context_readback",
+  "models": 10522,
+  "mapping_receipt_sha256": "90e02d04d3adb292953b3c0b666638eedd1ea7717eb91286fd197586909ec3bf",
+  "residue_readback_receipt_sha256": "2670a3b3e85c0e89c7297eea5f1e534873d3f19bda708b74533b7046f93ccc78",
+  "plan_sha256": "0aed22d47aeff695d6f4ad4b341db30f456ec22ca30409c6d048aa2d5a910731",
+  "stages": [
+    {
+      "name": "native_extraction",
+      "result": "results/structural_alphabet/native-esmfold-original-v1/config.json",
+      "sha256": "ca641ba32c639f6ea5acdaf372c35410d678789d2c61de26d18e60a35c628018"
+    },
+    {
+      "name": "native_export_readback",
+      "result": "results/structural_alphabet/original-full-feature-controller-v1/native_export_readback.json",
+      "sha256": "42e76d2f05d6a032d1b1150cae758a724fcebdae2922f5423a4069f8ecdc3773"
+    },
+    {
+      "name": "coordinate_audit",
+      "result": "results/structural_alphabet/coordinate-esmfold-original-v1/receipt.json",
+      "sha256": "608a37bbc1f5733b7ed2e327100f04447de1d2ad9e6b93b9a931a5c74d0b5e61"
+    },
+    {
+      "name": "pae_export",
+      "result": "results/structural_pae/esmfold-original-complete-v1/receipt.json",
+      "sha256": "ad1dbf3aa5ed582bc91d9a10f34d67a104b4d1c459f53f1164e10729a774f20d"
+    },
+    {
+      "name": "confidence_qualification",
+      "result": "results/structural_alphabet/audited-esmfold-original-v1/receipt.json",
+      "sha256": "9699b7a7265cb8bee13a4507bbde71babded72d249a920343a6a65bccbead522"
+    },
+    {
+      "name": "original_pae_context_readback",
+      "result": "results/structural_alphabet/original-full-feature-controller-v1/original_pae_context_readback.json",
+      "sha256": "f5b81f83676179ec3416c6fbccb9316348a36486947afcb3e4305dee47905895"
+    }
+  ],
+  "totals": {
+    "length": 3355507,
+    "valid_states": 3334463,
+    "invalid_states": 21044,
+    "valid_focal_plddt70": 2602366,
+    "valid_feature_plddt70": 2427934,
+    "valid_feature_plddt70_pae10": 2424268
+  },
+  "scope": "Full cohort native feature extraction, coordinate reconstruction and directional confidence readback. Biological model accuracy, alignment uncertainty and evolutionary analyses remain separate."
+}

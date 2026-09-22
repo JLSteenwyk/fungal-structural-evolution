@@ -1,0 +1,15 @@
+{
+  "status": "passed_all_marker_and_taxon_availability_join_readback",
+  "marker_records": 59840,
+  "taxon_records": 526,
+  "new_alphafold_links": 17730,
+  "previous_alphafold_links_absent": 0,
+  "counts": {
+    "both": 722,
+    "esmfold_only": 24787,
+    "alphafold_only": 30662,
+    "neither_catalog": 3669
+  },
+  "producer_receipt_sha256": "711e4b468e8dc8b1928de2f48b2b7dd379f5d8adfa0dad7c942057b19d758fc3",
+  "scope": "Independent pandas left joins reproduced every marker classification and every taxon count. This does not independently verify source model selection or confidence."
+}

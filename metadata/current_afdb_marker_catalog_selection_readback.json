@@ -1,0 +1,16 @@
+{
+  "status": "passed_full_frozen_inventory_marker_catalog_selection_readback",
+  "inventory_records": 1316471,
+  "models": 30588,
+  "marker_links": 31384,
+  "inventory_sha256": "647f55004a2a7d1205d2556ecfc35f4c8344ec81749ac8de83e3ea1857c6405b",
+  "catalog_receipt_sha256": "4b6a31cd6d68d153c9384f64b6f8b34c81cfcb0ddacc49d2163a0a2bdecc0816",
+  "script_sha256": "a9d30138a854d45a040708fef9e54185f516228d80a96d1bcd7139c73d125023",
+  "input_hashes": {
+    "results/structural_markers/gdm-current-catalog-20260922-v1/receipt.json": "4b6a31cd6d68d153c9384f64b6f8b34c81cfcb0ddacc49d2163a0a2bdecc0816",
+    "results/phylogeny/markers-full-v1/protein_mapping.tsv": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+    "results/structural_markers/gdm-current-catalog-20260922-v1/model_provenance.json": "a7347e25152e5efce3f87a634cdc6f2e0e0fbe71396b9cc9b5865ddfe6805e21",
+    "results/structural_markers/gdm-current-catalog-20260922-v1/marker_model_links.tsv": "64e5474b46b5315ef55cfe1be8d7a9914ad884edb2968c7e8c9e6b56e1738c65"
+  },
+  "scope": "Full frozen log replay, latest-accession semantics, source policy, tie handling and exact selected model/link records checked without importing catalog producer functions. Does not repeat coordinate parsing or qualify structural confidence."
+}

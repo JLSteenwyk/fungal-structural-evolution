@@ -1,0 +1,37 @@
+{
+  "status": "complete_native_3di_feature_audit",
+  "models": 10522,
+  "totals": {
+    "length": 3355507,
+    "valid_states": 3334463,
+    "invalid_states": 21044,
+    "valid_focal_plddt70": 2602366,
+    "valid_feature_plddt70": 2427934,
+    "valid_feature_plddt70_pae10": 2424268
+  },
+  "native_config_sha256": "ca641ba32c639f6ea5acdaf372c35410d678789d2c61de26d18e60a35c628018",
+  "native_path": "results/structural_alphabet/native-esmfold-original-v1",
+  "native_artifacts": {
+    "amino_acids.faa": "57687f89dc45fc97f57992ae4f859dccc0d7d87606cade04a3d07a32246234dc",
+    "states_3di.faa": "37b83ce1731cf6c6232f9ae4c215a74c7b4762d9f09ef5ec575391413a6e65d8",
+    "descriptors.tsv": "1890cecefad702e0930f96aadad30a348dde275330470f9cae1cdbbc829aceec",
+    "model_provenance.json": "062beb4cc9ff0ebadf8990cf9ac3e9434e8fe58119a3a161f304376ba26cda23"
+  },
+  "mapping_receipt_sha256": "90e02d04d3adb292953b3c0b666638eedd1ea7717eb91286fd197586909ec3bf",
+  "pae_receipt_sha256": "ad1dbf3aa5ed582bc91d9a10f34d67a104b4d1c459f53f1164e10729a774f20d",
+  "script_sha256": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+  "numpy_version": "2.2.6",
+  "feature_verification_tolerance": {
+    "rtol": 0.00052,
+    "atol": 1e-10,
+    "reason": "Native descriptor output has four significant digits"
+  },
+  "confidence_stage": "plddt_and_pae",
+  "interpretation": "Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.",
+  "artifacts": {
+    "model_summary.tsv": "5f41cc848ea26d5e3b79f08615aafa7c30c944eff17b65877aa3dda953b1c470"
+  },
+  "coordinate_audit_receipt_sha256": "608a37bbc1f5733b7ed2e327100f04447de1d2ad9e6b93b9a931a5c74d0b5e61",
+  "coordinate_audit_path": "results/structural_alphabet/coordinate-esmfold-original-v1",
+  "coordinate_audit_script_sha256": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b"
+}

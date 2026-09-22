@@ -1,0 +1,26 @@
+{
+  "source": "data/raw/afdb_models.jsonl",
+  "source_observed_bytes": 1542870552,
+  "freeze_output": "results/structures/afdb-inventory-20260922-v1",
+  "catalog_output": "results/structural_markers/gdm-current-catalog-20260922-v1",
+  "pins": {
+    "scripts/freeze_append_only_inventory.py": "7ea72d31915ff52a798b82c6887c9d84991d62e6e01ef220d786698ad4f598f4",
+    "scripts/prepare_marker_model_catalog.py": "3c830ad9de3d016cf982ff1933d36784b28900f99ddd76b828cc2fe9e9749eb0",
+    "scripts/map_marker_structures.py": "148069d55a06bdeb735c65b88f10058b35e0a7eb9a1b0313b2495faae304a763",
+    "results/phylogeny/markers-full-v1/protein_mapping.tsv": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 3,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      0.1,
+      2
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Freeze complete-line prefix and use unchanged source selection policy on current downloaded coordinates. Does not predict new structures or alter existing catalogs."
+}
