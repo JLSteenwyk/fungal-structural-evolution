@@ -44,3 +44,10 @@ ecology, long and extended cohorts, retain configuration differences, regenerate
 paired inference inputs, and rerun the relevant phylogenetic analyses. A larger
 model count alone does not establish increased qualified alignment coverage or
 support for any evolutionary hypothesis.
+
+The full original-cohort mapping and independent residue readback have now
+passed: 10,522 models, 10,573 marker/protein links and 2,469,510 matrix-residue
+links. Receipts are archived as `metadata/esmfold_original_full_mapping_completed.json`
+and `metadata/esmfold_original_full_residue_readback.json`. Native feature and
+confidence processing has started. This supersedes the launch-time mapping
+status above; it does not establish completed confidence qualification.

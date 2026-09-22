@@ -1,0 +1,107 @@
+{
+  "output": "results/structural_alphabet/audited-esmfold-all-completed-20260922-v1",
+  "control": "results/structural_alphabet/all-completed-encoding-union-controller-v1",
+  "models": 25322,
+  "mapping": "results/structural_markers/esmfold-all-completed-20260922-v1",
+  "mapping_readback": "results/structural_markers/esmfold-all-completed-residue-readback-20260922-v1",
+  "inventory": "results/structures/esmfold-all-completed-20260922-v1",
+  "predecessors": [
+    {
+      "pid": 2722499,
+      "create_time": 1790093761.57,
+      "receipt": "results/structural_markers/all-completed-mapping-controller-v1/receipt.json",
+      "plan": "metadata/esmfold_all_completed_mapping_plan.json",
+      "status": "complete_full_prediction_union_mapping_and_residue_readback"
+    },
+    {
+      "pid": 2408920,
+      "create_time": 1790093190.29,
+      "receipt": "results/structural_alphabet/original-full-feature-controller-v1/receipt.json",
+      "plan": "metadata/esmfold_original_full_native_feature_plan.json",
+      "status": "complete_native_features_and_original_pae_context_readback"
+    },
+    {
+      "pid": 1444248,
+      "create_time": 1790091318.86,
+      "receipt": "results/structural_alphabet/long-cohort-feature-controller-v1/receipt.json",
+      "plan": "metadata/esmfold_long_native_feature_plan.json",
+      "status": "complete_native_features_and_original_pae_context_readback"
+    },
+    {
+      "pid": 1629554,
+      "create_time": 1790091892.38,
+      "receipt": "results/structural_alphabet/extended-cohort-feature-controller-v1/receipt.json",
+      "plan": "metadata/esmfold_extended_native_feature_plan.json",
+      "status": "complete_native_features_and_original_pae_context_readback"
+    }
+  ],
+  "cohorts": [
+    {
+      "name": "original",
+      "models": 10522,
+      "mapping": "results/structural_markers/esmfold-original-complete-v1",
+      "encodings": "results/structural_alphabet/audited-esmfold-original-v1",
+      "confidence_readback": "results/structural_alphabet/original-full-feature-controller-v1/original_pae_context_readback.json"
+    },
+    {
+      "name": "followon",
+      "models": 4252,
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "encodings": "results/structural_alphabet/audited-esmfold-followon-v1",
+      "confidence_readback": "metadata/esmfold_followon_full_pae_context_readback.json"
+    },
+    {
+      "name": "ecology",
+      "models": 675,
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "encodings": "results/structural_alphabet/audited-esmfold-ecology-v1",
+      "confidence_readback": "metadata/esmfold_ecology_full_pae_context_readback.json"
+    },
+    {
+      "name": "long",
+      "models": 5510,
+      "mapping": "results/structural_markers/esmfold-long-complete-v1",
+      "encodings": "results/structural_alphabet/audited-esmfold-long-v1",
+      "confidence_readback": "results/structural_alphabet/long-cohort-feature-controller-v1/original_pae_context_readback.json"
+    },
+    {
+      "name": "extended",
+      "models": 4363,
+      "mapping": "results/structural_markers/esmfold-extended-complete-v1",
+      "encodings": "results/structural_alphabet/audited-esmfold-extended-v1",
+      "confidence_readback": "results/structural_alphabet/extended-cohort-feature-controller-v1/original_pae_context_readback.json"
+    }
+  ],
+  "pins": {
+    "metadata/esmfold_all_completed_mapping_plan.json": "423f5871e630aa071944af8aa3816cd8ea4d2f92f928b0e179357d8f4aa2a59a",
+    "metadata/esmfold_original_full_native_feature_plan.json": "0aed22d47aeff695d6f4ad4b341db30f456ec22ca30409c6d048aa2d5a910731",
+    "metadata/esmfold_long_native_feature_plan.json": "a05778260250c9b28c8914ea97451b3a250c7f10f332e88e0a782033177cb5ab",
+    "metadata/esmfold_extended_native_feature_plan.json": "0c1e1765e00007b6934fda04bd300497ba12bb6c53f40ce75724d0736a3969d5",
+    "scripts/merge_complete_qualified_encodings.py": "b90b85736b29f2d3e2f76ad54e35092761743a349936a4be5545b0447e8bb00e",
+    "scripts/merge_qualified_structure_encodings.py": "c2aa4c609abb4915a69c524b09646fa10a5e05831882699e2a0c89d9e42f09a2",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "results/structures/esmfold-all-completed-20260922-v1/receipt.json": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+    "results/structures/esmfold-all-completed-readback-20260922-v1/receipt.json": "6d45696e39c43626f65a1d725246d7911f1ab92323dbb90216750a1f177062bb",
+    "metadata/esmfold_followon_full_pae_context_readback.json": "84f96495ead33a4325110717fa3b3b4f7e9d9b72f005796d9b0fdeb3b3ba64e9",
+    "results/structural_markers/esmfold-followon-complete-v1/receipt.json": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+    "results/structural_alphabet/audited-esmfold-followon-v1/receipt.json": "f86547a352f9148cd5f5ef3860d25205db6c6a25658cedcc6843a135491d4a18",
+    "metadata/esmfold_ecology_full_pae_context_readback.json": "7772648cdda7dff41ad06e03c1dad050e960d6d0b27a665060a47cb26eeaaa19",
+    "results/structural_markers/esmfold-ecology-complete-v1/receipt.json": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+    "results/structural_alphabet/audited-esmfold-ecology-v1/receipt.json": "ca94b9e8d28dc5750a04e5d09182b6e11950fe25e9d486d8ed85c3ba3f794cdd"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 2,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}

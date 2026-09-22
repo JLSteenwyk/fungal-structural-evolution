@@ -3423,3 +3423,10 @@ independent full readback scheduled afterward. Its plan preserves all seven
 prediction configurations and all 25,509 exact marker/protein links. This
 does not yet establish qualified paired-alignment coverage; source feature
 qualification and combined encoding checks remain required.
+
+
+The complete original-cohort residue mapping has passed (10,522 models,
+10,573 marker links, 2,469,510 retained residue links). Its feature pipeline
+is running. Integration of all five qualified encoding cohorts is queued
+behind the combined mapping and three active feature controllers, with
+complete mapping-union and original directional-PAE checks required.

@@ -81,3 +81,30 @@ larger memory allowance supports full residue-level dictionaries during
 readback. This uses existing predictions and does not launch GPU inference.
 Completed mapping and confidence-qualified encoding integration remain
 separate gates before rebuilding paired phylogenetic inputs.
+
+## Qualified encoding integration
+
+`scripts/merge_complete_qualified_encodings.py` is queued under
+`fungal-all-completed-encodings-20260922.service`. Its plan,
+`metadata/esmfold_all_completed_encoding_union_plan.json`, waits for four
+verified process identities: combined residue mapping and the original, long,
+and extended cohort feature controllers. Each predecessor must finish with
+the expected successful receipt bound to its pinned plan. Existing follow-on
+and ecology qualification receipts and full original-PAE-context readbacks
+are pinned directly.
+
+The integration requires all five cohort qualified summaries to match their
+mapping and directional PAE readbacks. It checks every model's sequence,
+provenance, encoding hash and summary totals, then compares the complete
+combined marker-link and residue-link tables against the disjoint multiset
+union of the five source mappings. Raw inventory records acquire only the
+standard mapping `source_record_id` field; prediction batch provenance stays
+unchanged. The earlier overlapping partial-original cohort is excluded.
+
+The output will reference existing qualified arrays under
+`results/structural_alphabet/audited-esmfold-all-completed-20260922-v1/`.
+No arrays are averaged or re-predicted. Resources are one CPU equivalent,
+32 GiB RAM, no swap, 2 GiB output and a 50 GiB disk gate, with an uncalibrated
+0.5–12 hour allowance after predecessors complete. Being queued is not a
+completed qualification or evolutionary result. Paired-input reconstruction
+and updated supported tree fits remain subsequent stages.
