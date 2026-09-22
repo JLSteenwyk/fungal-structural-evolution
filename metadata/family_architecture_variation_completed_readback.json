@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_family_architecture_variation_readback",
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "rows": 2632732
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "rows": 2634088
+    }
+  ],
+  "producer_receipt_sha256": "73459021bd182e256bcf402090ccc18c145426a54a3bbe816eb653b837d1ac03",
+  "plan_sha256": "17c4ef6a26e52e15448d829c9d43b00f0c42182f86fb2e355ce879c91189aa94",
+  "script_sha256": "885b6c44bbb1a63f5e5cff555ce328254aba47e8a908b30d75b8b363c16c7c74",
+  "elapsed_seconds": 1945.610497713089,
+  "scope": "Every family/policy row reconstructed from the audited bridge and candidate annotation database without importing producer metrics. Uses the same SQLite input join; does not repeat Pfam search, membership inference or architecture resolution. No evolutionary event or significance claim."
+}

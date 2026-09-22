@@ -142,6 +142,8 @@ and 2,634,088 MAFFT-guide rows (four policies per family), each partition
 covering all 5,815,847 proteins. Both compressed output hashes were verified,
 and the receipt is archived as
 `metadata/family_architecture_variation_completed_receipt.json`. Independent
-full row reconstruction is running; guide comparison remains behind that gate.
-These completed descriptive summaries are not yet validated domain-event
-results.
+full row reconstruction has now passed for all 5,266,820 rows. The archived
+receipt is `metadata/family_architecture_variation_completed_readback.json`;
+its producer, plan and script hashes were checked before archival. The exact-
+membership guide comparison has passed this dependency gate and is running.
+These validated descriptive summaries do not establish domain-event results.
