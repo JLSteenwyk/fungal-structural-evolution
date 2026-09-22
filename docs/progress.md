@@ -3370,3 +3370,28 @@ all original six-residue PAE contexts. Scope: 3,386,360 residues and
 2,109,723,548 PAE entries; no GPU inference. The queued state is not completion.
 See metadata/esmfold_long_native_feature_plan.json and
 docs/long-cohort-structure-integration-20260922.md.
+
+
+September 22: all 4,363 extended-cohort models passed independent artifact
+readback and sequence-explicit mmCIF conversion. The exact original candidate
+union and all 4,384 taxon-marker links match. The combined inventory preserves
+all three prediction configurations and original source references. Full
+residue mapping has started, with independent readback afterward; the cohort
+covers 99 markers and 276 taxa before confidence qualification.
+Receipt: metadata/extended_partitioned_handoff_20260922_completed.json.
+
+September 22: candidate architecture construction completed for all 5,713,603
+queries and all 5,815,847 protein links across 526 taxa. The representation has
+5,767,208 distinct per-query retained-hit alternatives across four policies.
+Independent full readback is running; these remain candidate annotations,
+not validated domain architectures or evolutionary gains/losses.
+Receipt: metadata/full_candidate_domain_architecture_completed_receipt.json.
+
+
+September 22: long-cohort mapping and full independent residue readback passed
+for all 5,510 models, 5,544 marker links and 1,984,383 retained residue links.
+The gated native-feature controller advanced automatically: native extraction
+and export readback passed, and coordinate-feature reconstruction is running.
+PAE qualification and full context readback remain pending. Receipts are
+archived as metadata/esmfold_long_cohort_mapping_completed.json and
+metadata/esmfold_long_cohort_residue_readback.json.

@@ -1,0 +1,34 @@
+{
+  "status": "complete_partitioned_prediction_snapshot_handoff",
+  "config_sha256": "6dd92eaeedc925275471a1ce7b511c13b67fe9ee7f37bcb2053110334b377b98",
+  "predictions": 4363,
+  "taxon_marker_links": 4384,
+  "cohorts": [
+    {
+      "name": "original",
+      "predictions": 2318,
+      "audit": "results/predictions/extended-original-audit-20260922-v1",
+      "audit_receipt_sha256": "c6512b71fce6239febeb109e898c04cf7b0ec5278b779ef3e47d6385b81cc50c",
+      "conversion": "results/structures/esmfold-extended-original-20260922-v1",
+      "conversion_receipt_sha256": "5f3fe44b8873b7c3d182745a17942a3f9382d62226b782961a3409f67627df56"
+    },
+    {
+      "name": "gpu0",
+      "predictions": 1022,
+      "audit": "results/predictions/extended-gpu0-audit-20260922-v1",
+      "audit_receipt_sha256": "f381b8f53e1dc42f2ce1a7c1b1d2736caf722c100d8a51d1b26498178e68223c",
+      "conversion": "results/structures/esmfold-extended-gpu0-20260922-v1",
+      "conversion_receipt_sha256": "97d36e4ace6268a93ac4b35dfd5d775163a833d5e114bd7d0666d0e01865784e"
+    },
+    {
+      "name": "gpu1",
+      "predictions": 1023,
+      "audit": "results/predictions/extended-gpu1-audit-20260922-v1",
+      "audit_receipt_sha256": "91a4bf1f938c3c8ad302a9d8413f7bf0e682139ddab02b39e92b407e01831bc8",
+      "conversion": "results/structures/esmfold-extended-gpu1-20260922-v1",
+      "conversion_receipt_sha256": "234ce2c50901b27c8c82f6f41606b302b3a63af49a5aa0da645810c42c895db2"
+    }
+  ],
+  "finished_unix": 1790091639.61654,
+  "interpretation": "Exact original candidate union audited and converted; source configs remain separate. Previously reused models are outside this prediction queue. Native features and evolutionary analyses remain pending."
+}

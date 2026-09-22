@@ -8,8 +8,9 @@ unchanged; its remaining 2,045 sequences were completed by the two continuations
 The separate 513–768-residue cohort contains 5,510 audited, converted predictions.
 These are marker cohorts, not predictions for the full fungal proteomes.
 
-Independent validation of the 4,363 new predictions is **running**, not yet
-complete. The CPU-only controller is
+Independent validation and mmCIF conversion of all 4,363 new predictions
+**passed** on September 22. The completed combined receipt is archived as
+`metadata/extended_partitioned_handoff_20260922_completed.json`. The CPU-only controller is
 `scripts/advance_partitioned_prediction_snapshot.py`, configured by
 `metadata/extended_partitioned_handoff_20260922_config.json`. The service is
 `fungal-extended-validation-20260922.service`; its observed process identity is
@@ -44,3 +45,35 @@ experimental structural accuracy. Residue mapping, PAE binding, native feature
 extraction, matched predictor comparisons, and phylogenetic integration remain
 separate downstream tasks. GPU prediction remains stopped after the authorized
 run window.
+
+## Whole-cohort residue integration
+
+The 4,363 candidate sequence identities match 4,384 global marker-protein links
+across 99 markers and 276 taxa. The subsequent controller verified the successful combined validation receipt
+and began mapping. It combined the three audited inventories without copying coordinates or
+changing model IDs, prediction configuration hashes, original receipt references
+or confidence-array paths. The original interrupted partition remains explicitly
+identified as a partial source in the combined provenance.
+
+`scripts/integrate_partitioned_structure_cohort.py` checks every source receipt,
+disjoint model identities, exact coverage of the original candidate FASTA, and
+original/global marker-link multiplicities. It then runs the existing retained
+matrix mapping and independent residue readback for the complete cohort. The
+combined audit has its own partition-union status; it does not invent a single
+shared prediction configuration. Six previously reused sequences remain outside
+this prediction queue.
+
+Plan: `metadata/esmfold_extended_cohort_mapping_plan.json` (389 pinned sources).
+Unit: `fungal-extended-cohort-mapping-20260922.service`. Resources are one CPU
+equivalent, 16 GiB memory, no swap, a 20 GiB planning output allowance and a
+50 GiB free-disk gate. The 0.5–12-hour planning range begins after predecessor
+validation; it is not a measured ETA. No GPU or paid resource is used.
+
+The combined audit and model inventory are stored in
+`results/predictions/extended-partition-union-audit-v1` and
+`results/structures/esmfold-extended-union-v1`. Mapping and independent residue
+readback will be under `results/structural_markers/esmfold-extended-complete-v1`
+and `esmfold-extended-residue-readback-v1`. Controller state and logs are in
+`results/structural_markers/extended-cohort-mapping-controller-v1`. The inventory union is complete; residue mapping is running and independent
+residue readback follows. Native features and confidence qualification remain
+subsequent requirements.

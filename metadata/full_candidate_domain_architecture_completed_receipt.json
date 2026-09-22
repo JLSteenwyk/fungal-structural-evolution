@@ -1,0 +1,21 @@
+{
+  "status": "completed_candidate_architecture_database_requires_independent_readback",
+  "counts": {
+    "queries": 5713603,
+    "raw_hits": 8103610,
+    "alternatives": 5767208,
+    "no_hit_queries": 1991329,
+    "policy_disagreement_queries": 53248
+  },
+  "proteins": 5815847,
+  "taxa": 526,
+  "database_receipt_sha256": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+  "competition_readback_sha256": "0b433b63217cf43b7218c50421cf1beda122f6f64c6de31d15c850a32fed625f",
+  "plan_sha256": "57bedc413162bdee020ddf563c11af80e80b3806d375e1d7dedc9c9d0ae92e3c",
+  "script_sha256": "c79b8df7e108da528528fec596e499126ab698bc071e380eb04840f48f217a74",
+  "artifacts": {
+    "candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0"
+  },
+  "elapsed_seconds": 1101.3002541065216,
+  "scope": "All four policy-specific candidate architectures and all protein links. Raw model types, repeats, coordinates and uncertainty retained. No-hit is not absence; ordering and signatures do not establish validated architectures, homology, gains or losses."
+}

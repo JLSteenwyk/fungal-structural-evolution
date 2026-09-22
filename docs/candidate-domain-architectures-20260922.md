@@ -1,5 +1,12 @@
 # Full candidate domain-architecture representation
 
+**September 22 update:** construction is complete for all 5,713,603 queries and
+5,815,847 protein links across 526 taxa. Independent full readback is running.
+The representation contains 5,767,208 per-query retained-hit alternatives;
+these are not globally distinct biological architectures. The producer receipt
+is archived at `metadata/full_candidate_domain_architecture_completed_receipt.json`.
+The launch descriptions below preserve the initial state and planning context.
+
 The complete clan-competition output passed independent readback over all
 5,713,603 queries and 8,103,610 annotation hits. There are 53,248 queries whose
 retained hit sets differ across the four policies, 1,534,637 raw hits with

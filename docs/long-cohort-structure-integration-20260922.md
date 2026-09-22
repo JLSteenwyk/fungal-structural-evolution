@@ -1,5 +1,13 @@
 # Integrating the completed 513–768-residue marker cohort
 
+**September 22 update:** mapping and independent readback passed for all 5,510
+models, 5,544 marker links and 1,984,383 retained residue links. Native feature
+extraction and export readback also passed; coordinate-feature reconstruction
+is running, with PAE qualification and context readback still pending. Receipts:
+`metadata/esmfold_long_cohort_mapping_completed.json` and
+`metadata/esmfold_long_cohort_residue_readback.json`. The launch descriptions
+below retain their original planning context.
+
 All 5,510 models in this length cohort passed the independent prediction
 artifact audit and sequence-explicit mmCIF conversion. They match 5,544 global
 marker-protein records across 108 markers and 279 taxa by exact complete
