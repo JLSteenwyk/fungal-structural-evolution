@@ -1,5 +1,9 @@
 # Additional species evidence and structural coverage
 
+The subsequent [phylogenetic classification diagnostic](ecology-phylogenetic-diagnostic-20260922.md)
+evaluates minimum changes and classification sensitivity on both completed
+PMSF trees and their 2,000 bootstrap trees.
+
 The expanded evidence table has 26 species statements, retaining the previous
 21 unchanged and adding five classifications reviewed in [Miyauchi et al.
 2020](https://doi.org/10.1038/s41467-020-18795-w), Results, “Losses of PCWDEs”.

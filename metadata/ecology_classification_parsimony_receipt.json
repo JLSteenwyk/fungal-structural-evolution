@@ -1,0 +1,30 @@
+{
+  "status": "complete_ecological_classification_parsimony_diagnostic",
+  "plan_sha256": "55fd4e1783806c72a82cfa0f56f5230a0ca87d38d48d664c4357f8281cd973e6",
+  "states": {
+    "1": 19,
+    "0": 6
+  },
+  "unknown_tips": 501,
+  "summaries": [
+    {
+      "source": "profile_profile",
+      "ml_minimum_changes": 6,
+      "bootstrap_distribution": {
+        "6": 1000
+      }
+    },
+    {
+      "source": "profile_mafft",
+      "ml_minimum_changes": 6,
+      "bootstrap_distribution": {
+        "6": 1000
+      }
+    }
+  ],
+  "rows": 2052,
+  "artifacts": {
+    "minimum_changes.tsv": "6063d1c8128db11d0ff869121b608e970ceaf82ae9a4c2321a55a9256f9fab04"
+  },
+  "scope": "Minimum total changes under binary symmetric equal costs, conditional on published classifications. Unknowns remain unconstrained, including orchid symbiosis. No rooted gains/losses, replicated-origin count, transition locations, effect test or statistical confidence interval. Bootstrap distribution samples topology variation on one sequence alignment, not trait or model uncertainty."
+}

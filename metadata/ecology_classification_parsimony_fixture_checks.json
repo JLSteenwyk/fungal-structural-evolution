@@ -1,0 +1,12 @@
+{
+  "status": "passed_exhaustive_small_tree_assignments",
+  "cases": 243,
+  "topologies": [
+    "balanced_binary",
+    "four_way_polytomy",
+    "pectinate"
+  ],
+  "tip_states": "Every combination of 0, 1, unknown on four tips",
+  "oracle": "Brute-force enumerate binary states on every internal and unknown leaf node; count unequal-state edges",
+  "script_sha256": "4165588c3b65308720fbc26a5895e00750c21288ecfe43085083738fc4f96916"
+}
