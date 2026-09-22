@@ -1,5 +1,10 @@
 # Two-GPU structure prediction, September 20
 
+**September 22 outcome:** both continuation queues completed before the final
+deadline. Together with the original 2,318 predictions, they cover all 4,363
+candidate sequences. GPU prediction is stopped; [CPU validation and conversion](extended-prediction-validation-20260922.md)
+are running. The schedule notices below are historical.
+
 **Latest deadline:** both GPUs run until **04:00 PDT September 22**.
 `fungal-two-gpu-pause-0400-20260922.timer` replaces the canceled 19:00 timer.
 The new pause state is `results/prediction_two_gpu_20260922_0400_pause_state.json`;

@@ -1,0 +1,75 @@
+{
+  "output": "results/predictions/extended-partitioned-handoff-20260922-v1",
+  "expected_predictions": 4363,
+  "original_fasta": "data/prediction_inputs/markers-769-1024-gpu1-v1/candidates.faa",
+  "original_links": "data/prediction_inputs/markers-769-1024-gpu1-v1/all_marker_links.tsv",
+  "minimum_free_disk_bytes": 107374182400,
+  "resource_plan": {
+    "gpus": 0,
+    "cpu_quota_cores": 2,
+    "memory_max_gib": 16,
+    "swap_max_bytes": 0,
+    "parallel_cohorts": 1,
+    "estimated_output_gib_upper_planning": 50,
+    "estimated_wall_hours_planning": [
+      0.5,
+      6
+    ],
+    "cost": "existing local CPU and disk; no paid services"
+  },
+  "cohorts": [
+    {
+      "name": "original",
+      "expected_predictions": 2318,
+      "predictions": "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+      "inputs": "data/prediction_inputs/markers-769-1024-gpu1-v1",
+      "partial_source": true,
+      "audit": "results/predictions/extended-original-audit-20260922-v1",
+      "conversion": "results/structures/esmfold-extended-original-20260922-v1"
+    },
+    {
+      "name": "gpu0",
+      "expected_predictions": 1022,
+      "predictions": "results/predictions/esmfold-markers-769-1024-split-gpu0-20260920",
+      "inputs": "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0",
+      "partial_source": false,
+      "audit": "results/predictions/extended-gpu0-audit-20260922-v1",
+      "conversion": "results/structures/esmfold-extended-gpu0-20260922-v1"
+    },
+    {
+      "name": "gpu1",
+      "expected_predictions": 1023,
+      "predictions": "results/predictions/esmfold-markers-769-1024-split-gpu1-20260920",
+      "inputs": "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1",
+      "partial_source": false,
+      "audit": "results/predictions/extended-gpu1-audit-20260922-v1",
+      "conversion": "results/structures/esmfold-extended-gpu1-20260922-v1"
+    }
+  ],
+  "pinned_files": {
+    "data/prediction_inputs/markers-769-1024-gpu1-v1/all_marker_links.tsv": "bf275a0dd8632d180599a64a343c52b9311617112eb56ac3c53b9be8c508947c",
+    "data/prediction_inputs/markers-769-1024-gpu1-v1/candidates.faa": "7352f5f01464143c95ce4a58f6efc15289a7a48b4cfba463dce384de9fdfbf98",
+    "data/prediction_inputs/markers-769-1024-gpu1-v1/receipt.json": "1c7c34e10e619807e8a440ab0b21e62974579df8b3dea668bdda633d4e3e3f2c",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0/all_marker_links.tsv": "546454ee57a0d3338878de3ad5c6b0ce3f71b5a28a7a3ec75b1d57b0b460cfdc",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0/candidates.faa": "441b4e06ec673a97b568c75235781be71849d425081f68310b6297c098fed7cc",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu0/receipt.json": "e4925f8618b752700a25a3cd9c2f842d87b7121640bd2425f5a55fab12e7831f",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1/all_marker_links.tsv": "918bd6566489de1142429e3ff7fb24b54dc523c269e254cfa34bbe73bba955df",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1/candidates.faa": "334cebf1051291556212f26593ded1196f74f325f3b52f0af38537b7f3fb1c37",
+    "data/prediction_inputs/markers-769-1024-two-gpu-20260920/gpu1/receipt.json": "84b9de7860bbaff5943daef964bec9e74d9bbd19e2b296de91a35b698880c41f",
+    "results/predictions/esmfold-markers-769-1024-gpu1-v1/config.json": "a1cb40f635158e16bfecd227196d218408a4cdb8ed5d25dfd8f8a653e6ecaee0",
+    "results/predictions/esmfold-markers-769-1024-gpu1-v1/last_chunk.json": "6a0f1ac57d083483a64d3bb96b5aca9cefe53ccc5050588b124c3d8d476b95d2",
+    "results/predictions/esmfold-markers-769-1024-split-gpu0-20260920/config.json": "727df5a1aceae34e5b55983cb9b7398c2f15a928fdbc0b91e4f1f2508cbf540c",
+    "results/predictions/esmfold-markers-769-1024-split-gpu0-20260920/last_chunk.json": "432d5975a8ace5a1e8ed6bc550764ec231d25ff16f0a316bd0c065026539b7d1",
+    "results/predictions/esmfold-markers-769-1024-split-gpu1-20260920/config.json": "b2d0fc04f9442161f9a3dc3976e361a45b8a55024187b1f1162ddac9be2c8d9c",
+    "results/predictions/esmfold-markers-769-1024-split-gpu1-20260920/last_chunk.json": "98eee555cfc7bd5872cec1b814f8f21cc305354fca2dd469a0ccab5086fcbffc",
+    "scripts/advance_partitioned_prediction_snapshot.py": "0f8df1628143f82ceddcc5d992cbbd147a7e6dde77d4ed373fcffdae5715b512",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_local_predictions.py": "3982ef255f6973a0b5689e4dc908209499d017c0452cc14ba120960d48007836",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/convert_esmfold_snapshot.py": "5c356f89bf5a8474ace8c0bde183e18e50852e30e821b482621421dafae6d1b8",
+    "scripts/prepare_pfam.py": "5de930c97989900c2287af5878e3de219a648a7f52b60e6e1f0b8ba8c7e12559",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "running_independent_structure_validation",
+  "checked_unix": 1790089119.1951282,
+  "unit": "fungal-extended-validation-20260922.service",
+  "controller_pid": 610705,
+  "controller_create_time": 1790089103.46,
+  "children": [
+    {
+      "pid": 610925,
+      "create_time": 1790089103.78,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_local_predictions.py",
+        "--predictions",
+        "results/predictions/esmfold-markers-769-1024-gpu1-v1",
+        "--inputs",
+        "data/prediction_inputs/markers-769-1024-gpu1-v1",
+        "--output",
+        "results/predictions/extended-original-audit-20260922-v1",
+        "--snapshot-live"
+      ]
+    }
+  ],
+  "config": "metadata/extended_partitioned_handoff_20260922_config.json",
+  "scope": "4363 new predictions in disjoint original/gpu0/gpu1 cohorts; no GPU inference",
+  "completion_receipt": "results/predictions/extended-partitioned-handoff-20260922-v1/receipt.json"
+}
