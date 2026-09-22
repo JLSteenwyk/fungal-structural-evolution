@@ -406,3 +406,31 @@ stage uses existing predictions and local cached confidence data; no GPU
 prediction or paid infrastructure is launched. Production qualification and
 full-context readback are pending; their queueing does not establish calibrated
 confidence, biological accuracy or completed evolutionary analyses.
+# Refreshed AlphaFold paired alignments queued
+
+The next CPU stage is registered as
+`fungal-current-afdb-paired-inputs-20260922.service`, with plan
+`metadata/current_afdb_paired_inputs_plan.json` and controller
+`scripts/advance_refreshed_afdb_paired_inputs.py`. It waits for the exact
+confidence-controller process identity and requires successful full-cohort
+confidence qualification and context readback for all 30,588 models, bound
+to the refreshed mapping and pinned confidence plan. A completed download
+alone does not unlock preparation.
+
+The unchanged `prepare_paired_phylogenetic_inputs.py` builds paired AA/3Di
+inputs at `results/phylogeny/paired-inputs-gdm-current-20260922-v1`.
+`readback_paired_inputs_from_encodings.py` then independently reconstructs
+the emitted characters from qualified arrays. Final acceptance checks the
+source bindings, all paired characters, unchanged masks and eligibility
+rules, the same sequence matrix, and the complete marker universe. The
+controller writes per-marker coverage changes against the older AlphaFold
+alignments. Existing outputs remain available for sensitivity comparisons.
+
+The stage has one CPU equivalent, 32 GiB RAM, no swap, no GPU, 10 GiB output
+allowance and a 100 GiB free-disk gate. The uncalibrated runtime allowance is
+0.5–24 hours after dependencies complete; it is not a measured ETA. The plan
+pins 388 existing inputs and implementation files. Preparation and readback
+are queued, not completed; fitted trees and ecological effects are separate
+downstream work. The new Hydnum models are absent from the older qualified
+snapshot, so current model-availability counts cannot stand in for completed
+paired alignments.
