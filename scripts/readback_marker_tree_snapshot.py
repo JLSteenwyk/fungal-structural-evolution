@@ -137,7 +137,7 @@ def main():
               'script_sha256': sha(Path(__file__)), 'markers': len(summaries),
               'retained_alignment_characters_checked': characters, 'internal_splits_checked': edges,
               'artifacts': {path.name: sha(path)},
-              'interpretation': 'Every completed snapshot input reconstructed from original matrix and coverage exclusions; every internal support split independently recovered by graph-edge removal. Incomplete, completion-order-biased marker subset; no full-batch discordance inference or model adequacy claim.'}
+              'interpretation': 'Every completed snapshot input reconstructed from original matrix and coverage exclusions; every internal support split independently recovered by graph-edge removal. ' + ('Full planned marker batch; no model adequacy or biological discordance-cause claim.' if sr['completed_markers'] == sr['planned_markers'] and not sr.get('pending_markers') else 'Incomplete, completion-order-biased marker subset; no full-batch discordance inference or model adequacy claim.')}
     (a.output / 'receipt.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
 

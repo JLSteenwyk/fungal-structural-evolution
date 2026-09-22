@@ -1,0 +1,33 @@
+{
+  "status": "complete_full_marker_support_and_guide_diagnostics",
+  "markers": 125,
+  "plan_sha256": "602dce6b59ac032f7f19e6755ef1e106f52ad3147950e283ea7b6fb8d7bd7d2a",
+  "stages": [
+    {
+      "name": "support_snapshot",
+      "receipt": "results/phylogeny/marker-tree-support-complete-v1/receipt.json",
+      "sha256": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def"
+    },
+    {
+      "name": "input_graph_readback",
+      "receipt": "results/phylogeny/marker-tree-support-complete-readback-v1/receipt.json",
+      "sha256": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab"
+    },
+    {
+      "name": "guide_conflict",
+      "receipt": "results/phylogeny/supported-marker-guide-conflict-complete-v1/receipt.json",
+      "sha256": "9911a72cda8f7e4e864cf8a340fc1c1bffc9ba767e4c542b786880f4e9a3497f"
+    },
+    {
+      "name": "conflict_readback",
+      "receipt": "results/phylogeny/supported-marker-guide-conflict-complete-v1-readback.json",
+      "sha256": "cbeeb28896b2afbd998e2ac72dedac62e5f98fac96b335371bfba62afa6dadf5"
+    },
+    {
+      "name": "root_split",
+      "receipt": "results/phylogeny/fungal-outgroup-root-complete-v1/receipt.json",
+      "sha256": "5b09e0853b6df0974e4ec7aa40caa61cd581b8d8e81a2ae5ac04c494268a7366"
+    }
+  ],
+  "scope": "All planned supported marker trees audited; full-marker homogeneous-guide conflict and role-separation diagnostics. SH-aLRT is not bootstrap support; restricted guide rows are dependent. Does not establish final species topology, rooting, reconciliation or biological causes of discordance."
+}

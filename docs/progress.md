@@ -3456,3 +3456,19 @@ AA-tree searches and three matched-topology structural-model fits, followed
 by report/output validation. The same fitting producer, executable and model
 hashes as the earlier run are retained. This stage is waiting for the paired
 input gate; no expanded branch results or acceleration claims exist yet.
+
+
+## Complete marker phylogeny diagnostics — 22 September 2026
+
+All 125 marker trees and five full-batch diagnostic stages completed. Independent
+input/graph readback checked 23,441,199 alignment characters and 59,315 internal
+splits; guide-conflict readback checked all 261,500 grid rows with the separately
+documented sampling limit for exhaustive conflict maxima. The exact fungal versus
+outgroup split occurs in 21 marker trees (17 at SH-aLRT >=80, 11 at >=95),
+compared with both homogeneous guides. This does not establish rooting or a
+biological explanation for discordance. Receipts and the per-tree root-split
+table are archived; see [full-batch results](complete-marker-diagnostics-20260922.md).
+The 70-marker snapshot is retained as historical evidence, not the current
+full-batch estimate. Structural mapping/features, family-domain readback and
+reconciliation recovery were confirmed live by process inspection; GPU prediction
+remains paused after its authorized window. The overall project is unfinished.
