@@ -63,8 +63,8 @@ intended two-/three-gene rules without changing larger-family inference. Before
 use, it must be tested against complete synthetic expectations and compared
 against native production rows so missing pairs are filled without duplicating
 existing rows. Any supplemented statistics must be labeled as recomputed; raw
-native totals cannot silently be treated as corrected. This supplement and
-full native output readback remain outstanding.
+native totals cannot silently be treated as corrected. The supplement implementation is now tested and queued as described below;
+production supplementation and full native output readback remain outstanding.
 
 ## Reproduction and evidence
 
@@ -89,3 +89,48 @@ Commands require fresh output directories. Archived evidence:
 - `metadata/native_small_family_early_singleton_observation.json`
 - `metadata/native_small_family_exposure_receipt.json`
 - `metadata/native_small_family_exposure_workload_readback.json`
+
+
+## Tested supplement and queued production execution
+
+`scripts/supplement_small_family_orthologs.py` enumerates the intended
+cross-species directed pairs for every two-/three-gene family, independent of
+family ordering. It scans every completed grouped ortholog file and compares
+its small-family rows with that expectation. Unexpected pairs, duplicate pairs,
+missing taxon tables and ambiguous labels fail validation. Large-family rows
+are streamed without expanding their potentially enormous pair products; they
+remain outside this check's validation scope.
+
+Only absent pairs are written to `supplemental_directed_pairs.tsv`. Each record
+includes the family, native gene IDs, species and protein labels and explicit
+supplement provenance. Native files and statistics are never edited. The
+receipt binds source mappings, the scanned native tables and the supplement.
+The CLI requires a completed native execution, verifies the execution plan and
+source manifest, and rejects modified bound inputs. It supports the tested
+single-token accession naming mode; other normalization modes require review.
+
+The full CLI produced two missing directed pairs for the size-ordered fixture
+and twelve for the early-singleton fixture. Independent checks compared every
+supplement record against the original fixture's missing-pair list and proved
+that native plus supplemental small-family pairs equal the expectation without
+overlap. Corruption tests reject duplicate/unexpected pairs, a missing species
+table, changed source IDs and an incomplete execution. Reproduce with:
+
+```bash
+python scripts/check_small_family_supplement.py
+```
+
+The production controller `scripts/advance_small_family_supplement.py` is queued
+under `fungal-small-family-supplement-20260922.service`, bound to the exact active
+native controller PID/start time. It requires successful completion of both
+guides before scanning either production result. The pinned plan is
+`metadata/native_small_family_supplement_plan.json`; the launch record is
+`metadata/native_small_family_supplement_launch.json`. Outputs will be under
+`results/orthology/expanded-small-family-supplements-v1/`.
+
+Resources are capped at one CPU, 8 GiB RAM and zero swap, with a 50-GiB free-disk
+gate and 1-GiB planned output allowance. A 0.5–12 hour execution allowance is
+uncalibrated planning, not an ETA; runtime depends on final native ortholog-table
+volume. No GPU or paid resources are used. Full gene-tree/HOG/duplication
+readback, final integrated ortholog statistics and biological interpretation
+remain separate requirements.

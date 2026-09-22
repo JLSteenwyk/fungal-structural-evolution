@@ -1,0 +1,26 @@
+{
+  "status": "complete_separate_small_family_ortholog_supplement",
+  "expected_directed_pairs": 12,
+  "native_directed_pairs": 0,
+  "supplemental_directed_pairs": 12,
+  "supplemented_families": 3,
+  "native_rows_scanned": 12,
+  "input_hashes": {
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "b3d996d8bf466864b46df15cec5fab5130fa915a546cf4fdd4b486423ffcaf81",
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Source/WorkingDirectory/SequenceIDs.txt": "c9880a95f39d5d2d1be7b3f808e73773ed7a318f6c3b31465844dce15d9719d1",
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Source/WorkingDirectory/SpeciesIDs.txt": "ad6c5550828e71551a58bf8a79f4e024b7431ccbb685e400f8f6af893e0aa6f7"
+  },
+  "native_ortholog_hashes": {
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Results_small_fixture/Orthologues/Taxon0.tsv": "bd2d77b851559090ebf1270b433dea73b84d529d157a4139f96f8171efe0a90d",
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Results_small_fixture/Orthologues/Taxon1.tsv": "0091fc187f546adca63f25f750c57402aa2ead536d55fb1e0e43b92df99c22be",
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Results_small_fixture/Orthologues/Taxon2.tsv": "3607aa9d844fdcdf0a06532c1ce64afa70a277a1950f0bd28bb0a43f54b623b0",
+    "results/orthology/native-small-family-early-singleton-fixture-v1/Results_small_fixture/Orthologues/Taxon3.tsv": "8377705d1d9f5d210afc34f8065a07ac35a39f09b87f37f5ebfef4b5117c4f2d"
+  },
+  "artifacts": {
+    "supplemental_directed_pairs.tsv": "1ad0816b06bb25578b52cc67ba4cab65194b62c8e2341610d6b3cb4878875b68",
+    "native_completion_snapshot.json": "c18565ebf8abe9ea96ec867ae6b7259bc1816a0ab399de8d13bb79c8bf4d133e"
+  },
+  "script_sha256": "c9192a9c60f4ddcad7bce1c26e804d03e29b2cada5d04d7b8cf9f63a641a76f8",
+  "cluster_parser_sha256": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+  "scope": "Missing directed cross-species pairs in two-/three-gene families under the intended native small-family rule. Raw native outputs and statistics are unchanged. Larger families, biological orthology, HOGs, duplications and final combined statistics are not validated here."
+}

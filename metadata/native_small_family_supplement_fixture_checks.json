@@ -1,0 +1,22 @@
+{
+  "status": "passed_small_family_supplement_fixture_checks",
+  "fixtures": [
+    {
+      "fixture": "sorted",
+      "supplemental_pairs": 2,
+      "expected_small_family_pairs": 12
+    },
+    {
+      "fixture": "early",
+      "supplemental_pairs": 12,
+      "expected_small_family_pairs": 12
+    }
+  ],
+  "corruption_checks": [
+    "duplicate_pair",
+    "unexpected_singleton_pair",
+    "missing_taxon_table",
+    "changed_bound_source",
+    "incomplete_native_execution"
+  ]
+}

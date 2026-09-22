@@ -1,0 +1,28 @@
+{
+  "output": "results/orthology/expanded-small-family-supplements-v1",
+  "execution_plan": "metadata/expanded_reconciliation_execution_recovery_plan.json",
+  "predecessor_pid": 3149983,
+  "predecessor_start_ticks": "53093293",
+  "pins": {
+    "metadata/expanded_reconciliation_execution_recovery_plan.json": "acfad6db2a809a29ccb4f114aa662326e7e37eb476a4d60cab681a7bdc8b725a",
+    "scripts/supplement_small_family_orthologs.py": "c9192a9c60f4ddcad7bce1c26e804d03e29b2cada5d04d7b8cf9f63a641a76f8",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "scripts/advance_small_family_supplement.py": "d3ae7a0e6b7b55ebe189e76707850d134ab1051723c6de2d787fa3d7014ebe32",
+    "scripts/check_small_family_supplement.py": "f08b6d90d9c23dfc56e8c00db408910389cf4fdc1a334ed62362a2f6bd479a66",
+    "metadata/native_small_family_supplement_fixture_checks.json": "c7cc3ffb6b444d9d02776671d5fc9854968824dedda55b1d3888e064cbab0007"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 50,
+    "output_allowance_gib": 1,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Read completed native grouped ortholog tables once per guide; preserve all native files and write small-family missing-pair deltas separately. Full reconciliation readback and recomputed integrated statistics remain outstanding."
+}

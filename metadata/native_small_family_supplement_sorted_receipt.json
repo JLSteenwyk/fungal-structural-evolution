@@ -1,0 +1,26 @@
+{
+  "status": "complete_separate_small_family_ortholog_supplement",
+  "expected_directed_pairs": 12,
+  "native_directed_pairs": 10,
+  "supplemental_directed_pairs": 2,
+  "supplemented_families": 1,
+  "native_rows_scanned": 20,
+  "input_hashes": {
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "5a88f6c8e8825e3f2f684fab3876d5d2303e3cbf77b95333d0d64febd4e690b3",
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/SequenceIDs.txt": "c9880a95f39d5d2d1be7b3f808e73773ed7a318f6c3b31465844dce15d9719d1",
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/SpeciesIDs.txt": "ad6c5550828e71551a58bf8a79f4e024b7431ccbb685e400f8f6af893e0aa6f7"
+  },
+  "native_ortholog_hashes": {
+    "results/orthology/native-small-family-output-fixture-v2/Results_small_fixture/Orthologues/Taxon0.tsv": "05e65f5f60e74166bde0759f5e05bdce6aba16e5a0664a686d74c328c4df2088",
+    "results/orthology/native-small-family-output-fixture-v2/Results_small_fixture/Orthologues/Taxon1.tsv": "5912a9172bea4766e4e9479b432977965daffa153be7a422ccf1dcdcbe2f3ef6",
+    "results/orthology/native-small-family-output-fixture-v2/Results_small_fixture/Orthologues/Taxon2.tsv": "9c17254cce7b9c3bae6460462af42c7d7efd92c9990669ef20826679cc5afd7d",
+    "results/orthology/native-small-family-output-fixture-v2/Results_small_fixture/Orthologues/Taxon3.tsv": "8377705d1d9f5d210afc34f8065a07ac35a39f09b87f37f5ebfef4b5117c4f2d"
+  },
+  "artifacts": {
+    "supplemental_directed_pairs.tsv": "3111469fab1e4ed0eb58a571b5151b93bccb16ccde73dd2749e5198a5715e949",
+    "native_completion_snapshot.json": "d0f55b37fcd83a9b05eca9c186ad6235bff067fd9af59758a4443ab14059ae9c"
+  },
+  "script_sha256": "c9192a9c60f4ddcad7bce1c26e804d03e29b2cada5d04d7b8cf9f63a641a76f8",
+  "cluster_parser_sha256": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+  "scope": "Missing directed cross-species pairs in two-/three-gene families under the intended native small-family rule. Raw native outputs and statistics are unchanged. Larger families, biological orthology, HOGs, duplications and final combined statistics are not validated here."
+}
