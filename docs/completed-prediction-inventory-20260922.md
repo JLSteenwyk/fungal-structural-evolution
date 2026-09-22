@@ -505,3 +505,43 @@ for these 122 markers (up to 488 AA/3Di fits across the planned models).
 Branch uncertainty, direct-geometry benchmarking, copy/annotation sensitivity
 and revised evolutionary inference remain unfinished. This checkpoint does
 not update the earlier reported biological results.
+
+## Full expanded branch resampling queued
+
+The 122-marker point-fit run now has a queued successor,
+`fungal-all-completed-paired-resampling-20260922.service`, using
+`scripts/advance_complete_paired_resampling.py` and the pinned plan
+`metadata/esmfold_all_completed_paired_resampling_plan.json`. It waits for
+the exact point-fit controller process identity, then requires its successful
+completion receipt, complete 488-fit audit and bound input/model artifacts.
+It cannot advance from a partial fit directory or a missing completion receipt.
+
+The unchanged previously executed resampling workflow requests 200 draws
+for each of 122 markers at block lengths 1, 10 and 30: **73,200 paired draws**
+and at most **146,400 fixed-topology fits**. Both alphabets and all taxa receive
+the same resampled column indices. AA uses LG+F+G4 and structural states use
+the published AF+G4 model. Circular blocks use retained alignment columns;
+wraparound does not imply biological adjacency of protein termini.
+Unestimable draws are retained with their reasons, not replaced silently.
+
+A complete subsequent audit verifies deterministic draws, emitted paired
+alignments, model reports, fixed splits, artifact hashes and the complete
+marker/block/replicate grid before summarizing conditional branch intervals
+and covariance. Fit warnings remain explicit. Three existing resampling tests
+passed; new completion-gate checks rejected missing status, marker count,
+plan binding and audit binding. No production resampling completion is claimed.
+
+The pre-launch allowance is eight one-thread workers, 2 GiB per fit within a
+32 GiB job limit, no swap, 250 GiB output, a 500 GiB free-disk gate and 64 GiB
+available-memory gate. The 2–168 hour planning range starts after point-fit
+completion and is uncalibrated; it is not an ETA. The marker input dimensions
+are 4–243 taxa and 73–1,044 columns. Only existing local CPUs and disk are used;
+GPU prediction remains paused. All 388 pinned dependencies and the actual
+runtime dimensions are recorded before native execution.
+
+These intervals quantify conditional site/block sampling sensitivity, not
+uncertainty from topology, alignment, prediction source, time calibration or
+all nonlocal dependencies among structural features. Sampling covariance is
+not biological sequence–structure coupling. Broader uncertainty propagation,
+direct-coordinate benchmarking and calibrated branch/clade tests remain
+required before reporting structural acceleration.
