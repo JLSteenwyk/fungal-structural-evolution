@@ -3340,3 +3340,13 @@ overlapping/nested candidates, partial matches and no-hit uncertainty remain
 explicit. This is candidate annotation representation; biological architecture
 validation and domain evolution remain pending. See
 docs/candidate-domain-architectures-20260922.md.
+
+
+September 22: queued independent full candidate-architecture readback behind
+the exact live database-builder process identity. It checks every query,
+annotation field, repeat/type count, coordinate overlap, partial hit, signature,
+policy alternative and every protein link without importing the producer's
+architecture function. Five hundred seeded four-policy cases and six corrupt
+export checks passed. At observation the builder had processed 2.7 million
+queries; completed full-dataset readback is not yet established. Plans and
+process records are under metadata/full_candidate_domain_architecture_readback_*.json.

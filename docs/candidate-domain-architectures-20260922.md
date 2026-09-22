@@ -51,3 +51,25 @@ will still require independent full readback against the source annotations,
 competition outcomes and protein links. Domain architecture validation,
 family integration, fusion/rearrangement inference and evolutionary tests
 remain unfinished.
+
+An independent full readback is queued under
+`fungal-candidate-architecture-readback-20260922.service`. It waits for the
+exact builder PID and creation time, requires a successful producer receipt,
+and then streams every query against both the raw-hit database and the audited
+competition table. `scripts/readback_candidate_domain_architectures.py` does
+not import the architecture-producing function. It independently checks every
+annotation field, coordinate ordering, model/type multiplicity, signature,
+partial-HMM count, inclusive interval overlap, alternative reference and
+policy-specific uncertainty count. It also compares all protein-link tuples
+in sorted order and checks database integrity and foreign keys.
+
+The validator passed 500 seeded four-policy cases and rejected six deliberately
+corrupted exports (changed annotation type, repeat count, partial-match count,
+uncertainty count, alternative reference and no-hit status). Reproduce with
+`python scripts/check_candidate_architecture_readback.py`.
+Its plan is `metadata/full_candidate_domain_architecture_readback_plan.json`;
+state and the eventual completion receipt are under
+`results/domains/full-candidate-architectures-readback-v1/`. Resources are one
+CPU equivalent, 8 GiB memory, no swap and small audit outputs. The 0.5–8-hour
+planning allowance starts after the builder completes. Queuing the audit does
+not establish that the database has passed.

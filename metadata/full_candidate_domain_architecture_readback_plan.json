@@ -1,0 +1,28 @@
+{
+  "database": "results/domains/full-domain-database-v1",
+  "competition": "results/domains/full-domain-competition-v1",
+  "architecture": "results/domains/full-candidate-architectures-v1",
+  "output": "results/domains/full-candidate-architectures-readback-v1",
+  "producer_pid": 1141407,
+  "producer_create_time": 1790090517.31,
+  "pins": {
+    "scripts/readback_candidate_domain_architectures.py": "abe5031d26000aa2739649e73139001a0c9d596f2b91e555901c0de6c80836ed",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "metadata/full_candidate_domain_architecture_plan.json": "57bedc413162bdee020ddf563c11af80e80b3806d375e1d7dedc9c9d0ae92e3c",
+    "results/domains/full-domain-database-v1/receipt.json": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+    "results/domains/full-domain-database-v1/readback.json": "7c1ec077048cde8dee05212ce15160f12a8b794741dd90cb2ea242fd1b6ac2b6",
+    "results/domains/full-domain-competition-v1/receipt.json": "5fdae7801fb739ba8528b7d9d4cea6a99c7dbd4844e8a7af25db6bca7e3f43ea",
+    "results/domains/full-domain-competition-v1/readback.json": "0b433b63217cf43b7218c50421cf1beda122f6f64c6de31d15c850a32fed625f"
+  },
+  "resources": {
+    "cpu_quota_cores": 1,
+    "memory_max_gib": 8,
+    "swap_max_bytes": 0,
+    "output_allowance_mib": 10,
+    "planning_wall_hours": [
+      0.5,
+      8
+    ],
+    "cost": "Existing local CPU; read-only source access and small audit outputs"
+  }
+}
