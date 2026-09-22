@@ -74,3 +74,33 @@ under `fungal-family-architecture-variation-recovery-20260922.service`, with
 audit PID/start ticks and requires the successful v2 bridge readback. CPU,
 memory, disk and validation requirements are unchanged. The prior incomplete
 output directory remains preserved. See the [bridge recovery](family-domain-bridge-20260922.md#indexed-readback-recovery).
+
+## Full summary readback
+
+`scripts/readback_family_architecture_variation.py` is queued behind the exact
+replacement producer process under
+`fungal-family-architecture-readback-20260922.service`. It requires the completed
+producer receipt, the passing independent bridge audit and matching source
+database hashes. Its pinned plan is
+`metadata/family_architecture_variation_readback_plan.json`; fresh output is
+`results/domains/family-architecture-variation-readback-v2/`.
+
+For every family and each of the four policies, the audit independently
+reconstructs protein/taxon/sequence counts, missing-hit and uncertainty counts,
+ordered signatures, multiplicity-preserving multisets, model/type sets and
+within-taxon variation. It implements multiplicity as sorted repeated tokens,
+separately from the producer's token-count representation, and does not import
+the producer's metric functions. It checks the complete observed and
+conservatively screened summaries, exact row order, absence of extra rows and
+full partition totals. The SQLite input join is shared in design; this audit
+does not independently repeat Pfam searches or infer family membership.
+
+Pre-launch checks passed with `python scripts/check_family_architecture_readback.py`:
+known order/multiplicity examples, 100 seeded cases varying repeats, annotation
+types and QC flags, rejection of altered/missing/repeated rows, and an end-to-end
+two-guide database fixture. These tests validate the implementation, not the
+unfinished production output. The resource allowance is one CPU, 16 GiB RAM,
+no swap, 1 GiB output and 50 GiB free disk, with an uncalibrated 1–24 hour
+planning interval after the producer finishes. The successful output status
+will be `passed_full_family_architecture_variation_readback`; no such production
+completion is claimed at launch.

@@ -1,0 +1,16 @@
+{
+  "MainPID": "556523",
+  "CPUQuotaPerSecUSec": "1s",
+  "MemoryMax": "17179869184",
+  "MemorySwapMax": "0",
+  "ActiveState": "active",
+  "unit": "fungal-family-architecture-readback-20260922.service",
+  "observed_unix": 1790096630.153916,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_family_architecture_variation.py",
+    "--plan",
+    "metadata/family_architecture_variation_readback_plan.json"
+  ],
+  "process_stat": "556523 (python) S 4729 556523 556523 0 -1 4194304 2488 0 0 0 3 1 0 0 20 0 1 0 53308208 34918400 2688 18446744073709551615 4321280 6396818 140727505319408 0 0 0 0 16781312 2 1 0 0 17 94 0 0 0 0 0 7459464 7666528 525430784 140727505325035 140727505325183 140727505325183 140727505326039 0\n"
+}

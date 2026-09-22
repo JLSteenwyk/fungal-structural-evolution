@@ -3501,3 +3501,16 @@ and preserved; replacements now use fresh v2 directories and pinned plans.
 The independent full bridge audit remains running; architecture summaries wait
 for its passing receipt. No source database, scientific filtering or GPU
 schedule changed. See [recovery details](family-domain-bridge-20260922.md#indexed-readback-recovery).
+
+
+## Full family-architecture validation queued — 22 September 2026
+
+An independent reconstruction of every family/policy architecture summary is
+implemented and queued behind the replacement producer. Known examples, 100
+seeded metric cases, corruption rejection and a full two-guide fixture passed.
+The audit retains the complete family universe, all four competition policies
+and both observed and conservative counts. It uses one CPU and 16 GiB memory;
+production output validation remains pending. The indexed bridge audit has
+advanced through 650,000 MAFFT-guide families after checking the profile guide,
+and all three structural PAE-export child processes were confirmed running.
+See [summary validation](family-architecture-variation-20260922.md#full-summary-readback).

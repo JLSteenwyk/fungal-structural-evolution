@@ -1,0 +1,26 @@
+{
+  "output": "results/domains/family-architecture-variation-readback-v2",
+  "producer_plan": "metadata/family_architecture_variation_recovery_plan.json",
+  "producer_pid": 290546,
+  "producer_start_ticks": "53279714",
+  "pins": {
+    "metadata/family_architecture_variation_recovery_plan.json": "b4ecd775a1dec91d8153b8570564e7c0e0850e0b734e2c51c0776caca5c08470",
+    "scripts/readback_family_architecture_variation.py": "885b6c44bbb1a63f5e5cff555ce328254aba47e8a908b30d75b8b363c16c7c74",
+    "scripts/check_family_architecture_readback.py": "1814c83fc71b67f3f305e5dc132ed0624b83dcaaefbb329225d6c150cb32a39d",
+    "scripts/summarize_family_architectures.py": "a056ceab44320d8854401ca34d5b09f106503768a3ebfb3add0964d1ebbc9ca9",
+    "scripts/check_family_architecture_variation.py": "0cab89aa6efc0d654fcc8780bb1eed4b867ff828649a33a779be05f29aa2e4c8"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      1,
+      24
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}
