@@ -1,5 +1,9 @@
 # Ecological evidence and transition curation
 
+The [September 22 expansion](ecology-expansion-20260922.md) provides a separate
+26-species evidence table and current structural coverage for five additional
+species. Earlier analyses below retain their frozen 21-species input.
+
 Ecological tests require species-level evidence and independently supported transitions. A database match to a genus is useful for prioritizing curation, but it is not a validated species state, a negative result for unrecorded traits, or evidence of an independent evolutionary transition.
 
 ## Genus-level candidate catalogue
