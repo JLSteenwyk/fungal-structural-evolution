@@ -3350,3 +3350,12 @@ architecture function. Five hundred seeded four-policy cases and six corrupt
 export checks passed. At observation the builder had processed 2.7 million
 queries; completed full-dataset readback is not yet established. Plans and
 process records are under metadata/full_candidate_domain_architecture_readback_*.json.
+
+
+September 22: launched exact-sequence residue mapping and subsequent independent
+readback for all 5,510 audited 513–768-residue models. They match 5,544 marker
+protein records across 108 markers and 279 taxa. The full global link set
+agrees with the original cohort links. Mapping/readback bind coordinates and
+NPZ confidence to the frozen Stockholm alignments and retained matrix sites.
+Native features, PAE qualification and evolutionary integration remain pending.
+See docs/long-cohort-structure-integration-20260922.md.

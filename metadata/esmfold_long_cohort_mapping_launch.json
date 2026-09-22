@@ -1,0 +1,32 @@
+{
+  "status": "running_long_cohort_residue_mapping",
+  "pid": 1344105,
+  "create_time": 1790091048.02,
+  "checked_unix": 1790091108.844168,
+  "unit": "fungal-long-cohort-mapping-20260922.service",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/map_audited_local_cohort.py",
+    "--plan",
+    "metadata/esmfold_long_cohort_mapping_plan.json"
+  ],
+  "children": [
+    {
+      "pid": 1344350,
+      "create_time": 1790091049.78,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/map_marker_structures.py",
+        "--inventory",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structures/esmfold-long-gpu0-complete-v1/inventory.jsonl",
+        "--provider",
+        "local",
+        "--tool",
+        "ESMFold v1",
+        "--output",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/structural_markers/esmfold-long-complete-v1"
+      ]
+    }
+  ],
+  "plan": "metadata/esmfold_long_cohort_mapping_plan.json"
+}
