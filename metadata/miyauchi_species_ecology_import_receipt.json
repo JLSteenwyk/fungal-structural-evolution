@@ -1,0 +1,31 @@
+{
+  "status": "complete_exact_species_name_source_import_pending_review",
+  "source_records": 135,
+  "matched_records": 36,
+  "previously_curated": 15,
+  "newly_linked_species": 21,
+  "genus_ECM_disagreements": 2,
+  "source_state_counts": {
+    "Ectomycorrhizae": 14,
+    "Saprotroph": 8,
+    "Wood decayer": 5,
+    "Pathogen": 5,
+    "Orchid mycorrhizae": 1,
+    "Endophyte": 1,
+    "Yeast": 1,
+    "Arbuscular mycorrhizae": 1
+  },
+  "inputs": {
+    "downloads": "8bfa2437d02afd61e718663fb0b42c1b3e6da43609b136964fae7a98ebf0bbe1",
+    "manifest": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "genus": "7a25b299fc3b8b7b113f0cd6c6cac606c145c8559a263a20b83af6ac77498c27",
+    "curated": "b2129d4976018420aaa375c0a55859adf363a095840cb35136a77b0daa5e44c4"
+  },
+  "script_sha256": "7c35195c57e7da559b07716c6d646c9fd02671c5194fa118ec1be4882a800f5c",
+  "openpyxl_version": "3.1.5",
+  "artifacts": {
+    "miyauchi_species_ecology_matches.tsv": "d45ad521abdb637c52fce067971d71d8e3f568175856a4f6e8163e30e3aee90b",
+    "miyauchi_species_ecology_source_disposition.tsv": "e2d2dc741c97104da30b83c1ffb4cbfc9c1ed501cf76e1e08ca47a248a5e5d33"
+  },
+  "scope": "Published species-name classifications with original labels and source rows. Whitespace trimming only; no synonym, strain or assembly equivalence inferred. Not automatically merged into curated states or ecological tests; conflicts and noncommensurate classifications require review."
+}

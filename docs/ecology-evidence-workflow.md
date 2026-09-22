@@ -1,5 +1,9 @@
 # Ecological evidence and transition curation
 
+A subsequent [species-level supplementary-data import](ecology-species-source-import-20260922.md)
+links 36 sampled species, including 21 absent from the curated table. It
+preserves source labels and disagreements separately pending review.
+
 The [September 22 expansion](ecology-expansion-20260922.md) provides a separate
 26-species evidence table and current structural coverage for five additional
 species. Earlier analyses below retain their frozen 21-species input.
