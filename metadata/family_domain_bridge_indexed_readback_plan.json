@@ -1,0 +1,25 @@
+{
+  "output": "results/domains/family-domain-bridge-readback-v2",
+  "producer_pid": 1973371,
+  "producer_start_ticks": "52897809",
+  "producer_plan": "metadata/family_domain_bridge_plan.json",
+  "pins": {
+    "metadata/family_domain_bridge_plan.json": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+    "scripts/readback_family_domain_bridge.py": "cb0ecf36cd3a5fd09ac0f62a8ecf9bcc6f96306c05b1a7b314c68dd2cd856995",
+    "scripts/readback_family_domain_bridge_indexed.py": "c78991425e4d0721751c70cec9b19f8a095c78975a9dca826d0dabf80df437c2",
+    "scripts/check_family_domain_bridge_indexed_readback.py": "e40a23fb88dd26d971cfffcd90c3fdaede33706cfb9dabe07beebc7f84bf0031",
+    "metadata/family_domain_indexed_query_comparison.json": "d1a9fb9075ada9ab328fc0379c3ad409956ed2341841d2020c8734e1b362d1f8"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "matched_full_family_membership_with_indexed_query",
+  "family": "OG0000000",
+  "guide": "profile",
+  "queries": {
+    "original": {
+      "query_plan": [
+        [
+          4,
+          0,
+          0,
+          "SEARCH assignments USING INDEX sqlite_autoindex_assignments_1 (guide=?)"
+        ]
+      ],
+      "seconds": 12.258807272999547,
+      "rows": 16019,
+      "membership_sha256": "81bd3257f424e20fa48a14d26d73c666a3486ed6e10eb32aff6649e97410dea1"
+    },
+    "indexed": {
+      "query_plan": [
+        [
+          4,
+          0,
+          0,
+          "SEARCH assignments USING INDEX assignments_family (guide=? AND family=?)"
+        ],
+        [
+          17,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ],
+      "seconds": 0.014637649059295654,
+      "rows": 16019,
+      "membership_sha256": "81bd3257f424e20fa48a14d26d73c666a3486ed6e10eb32aff6649e97410dea1"
+    }
+  },
+  "scope": "Full single-family query comparison, not full bridge readback. Indexed fixture also rejects sequence and membership corruption."
+}

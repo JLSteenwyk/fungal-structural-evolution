@@ -41,7 +41,7 @@ independent full bridge readback before use in evolutionary inference.
 Domain-event inference, reconciliation and uncertainty-aware branch analyses
 remain outstanding.
 
-An independent full readback is queued under
+The initial independent full readback was queued under
 `fungal-family-domain-readback-20260922.service`. It waits for the exact producer
 PID and Linux process start ticks, then requires a successful producer receipt
 and matching database checksum. `scripts/readback_family_domain_bridge.py`
@@ -57,9 +57,9 @@ an uncalibrated 0.5–12 hour runtime allowance after the producer exits.
 `scripts/check_family_domain_bridge_readback.py` passed a complete fixture,
 rejected changed sequence links and missing family members even after updating
 the producer checksum, and rejected three malformed serialized partitions.
-The eventual full receipt will be under
-`results/domains/family-domain-bridge-readback-v1/`; being queued does not
-establish that the production database has passed.
+The initial output location was
+`results/domains/family-domain-bridge-readback-v1/`; this attempt was later
+stopped for the query-plan performance issue described below and did not pass.
 
 Database construction has completed for both full partitions in 359 seconds.
 The receipt is archived as `metadata/family_domain_bridge_completed_receipt.json`;
@@ -67,3 +67,33 @@ the independent full readback is now running. A downstream descriptive
 within-family annotation inventory is queued behind that audit, documented in
 `docs/family-architecture-variation-20260922.md`. No domain evolutionary event
 is inferred from successful database construction.
+
+## Indexed readback recovery
+
+The first audit was live and consuming CPU, but SQLite chose the primary-key
+index on `(guide, native_gene_id)` for each family-membership query, scanning
+the guide's 5,815,847 assignments to filter one family. `EXPLAIN QUERY PLAN`
+confirmed this access path. For the complete 16,019-member profile family
+OG0000000, the original query took 12.26 seconds; explicitly selecting the
+existing `(guide, family)` index took 0.0146 seconds and returned exactly the
+same sorted membership hash. This is one query comparison under current cache
+conditions, not a measured full-audit speedup or ETA.
+
+The replacement `scripts/readback_family_domain_bridge_indexed.py` preserves
+all checks and adds `INDEXED BY assignments_family` to that one query, plus
+progress records at phase boundaries. It leaves the source database and its
+indices unchanged. The full synthetic fixture passed; changed sequence links,
+missing members and malformed partitions were still rejected. Reproduce that
+check with `.cache/envs/orthofinder/bin/python
+scripts/check_family_domain_bridge_indexed_readback.py`.
+
+The old waiting architecture job was stopped first, then the old audit, with
+process identities and state captured in
+`metadata/family_domain_readback_performance_recovery.json`. Old scripts, plans
+and incomplete outputs remain preserved. The replacement audit is running
+under `fungal-family-domain-indexed-readback-20260922.service`, using
+`metadata/family_domain_bridge_indexed_readback_plan.json` and fresh output
+`results/domains/family-domain-bridge-readback-v2/`. It retains the one-CPU,
+8-GiB, no-swap limits. The new downstream architecture job waits for this
+exact process identity and a passing receipt. Full production validation is
+still pending; the timing comparison is not its substitute.

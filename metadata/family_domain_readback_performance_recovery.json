@@ -1,0 +1,29 @@
+{
+  "status": "indexed_readback_launched",
+  "observed_unix": 1790096297.8370876,
+  "reason": "EXPLAIN shows guide-wide scan for every family. Identical 16019-member query takes 12.26 seconds versus 0.0146 seconds with existing family index. No source database changes.",
+  "processes": {
+    "2129015": {
+      "stat": "2129015 (python) R 4729 2129015 2129015 0 -1 4194304 39162 0 0 0 130938 207875 0 0 20 0 1 0 52919778 44371968 6017 18446744073709551615 4321280 6396818 140732109947600 0 0 0 0 16781312 2 0 0 0 17 173 0 0 0 0 0 7459464 7666528 592355328 140732109949954 140732109950084 140732109950084 140732109950935 0\n",
+      "command": "/home/bizon/anaconda3/bin/python scripts/readback_family_domain_bridge.py --plan metadata/family_domain_bridge_readback_plan.json "
+    },
+    "2262707": {
+      "stat": "2262707 (python) S 4729 2262707 2262707 0 -1 4194304 2482 0 0 0 5 2 0 0 20 0 1 0 52941991 34906112 3840 18446744073709551615 4321280 6396818 140736123899888 0 0 0 0 16781312 2 1 0 0 17 28 0 0 0 0 0 7459464 7666528 135692288 140736123907066 140736123907197 140736123907197 140736123908055 0\n",
+      "command": "/home/bizon/anaconda3/bin/python scripts/summarize_family_architectures.py --plan metadata/family_architecture_variation_plan.json "
+    }
+  },
+  "family-domain-bridge-readback-v1": {
+    "stage": "native_identity_readback",
+    "elapsed_seconds": 389.1699376106262,
+    "proteins": 5800000
+  },
+  "family-architecture-variation-v1": {
+    "stage": "waiting_for_exact_bridge_auditor",
+    "elapsed_seconds": 1.0728836059570312e-05
+  },
+  "replacement_pid": 269635,
+  "replacement_start_ticks": "53276793",
+  "replacement_plan": "metadata/family_domain_bridge_indexed_readback_plan.json",
+  "launched_unix": 1790096327.2405984,
+  "prior_processes_terminated": true
+}

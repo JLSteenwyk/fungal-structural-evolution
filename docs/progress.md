@@ -3487,3 +3487,17 @@ and at least one marker per sampled entry (526 entries), before confidence
 filtering. Independent pandas joins reproduced every classification and all
 per-taxon counts. Missing-from-catalog is not a current retrieval failure or
 a ready prediction queue. See the [inventory checkpoint](completed-prediction-inventory-20260922.md).
+
+
+## Corrected family-audit query plan — 22 September 2026
+
+The live bridge audit selected a guide-wide assignment scan for each family.
+A read-only comparison confirmed identical sorted membership for OG0000000
+(16,019 proteins), taking 12.26 seconds with the original query versus 0.0146
+seconds using the existing family index. This is a single-query benchmark, not
+a full-audit ETA. The indexed auditor passed the complete fixture and corruption
+rejection tests. The old audit and its still-waiting dependent job were stopped
+and preserved; replacements now use fresh v2 directories and pinned plans.
+The independent full bridge audit remains running; architecture summaries wait
+for its passing receipt. No source database, scientific filtering or GPU
+schedule changed. See [recovery details](family-domain-bridge-20260922.md#indexed-readback-recovery).

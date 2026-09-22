@@ -62,3 +62,15 @@ readback and guide sensitivity comparisons remain required after execution.
 Subsequent event analyses must use supported genealogies and reconciliation,
 check sequence/annotation quality, account for missingness and uncertainty,
 and distinguish within-domain structural change from architecture turnover.
+
+## Updated dependency after bridge audit performance recovery
+
+The initial waiting job was stopped without running the family analysis while
+the bridge audit was replaced to use its existing family index. The unchanged
+architecture summarizer already explicitly uses that index. It is queued again
+under `fungal-family-architecture-variation-recovery-20260922.service`, with
+`metadata/family_architecture_variation_recovery_plan.json` and fresh output
+`results/domains/family-architecture-variation-v2/`. This plan binds the new
+audit PID/start ticks and requires the successful v2 bridge readback. CPU,
+memory, disk and validation requirements are unchanged. The prior incomplete
+output directory remains preserved. See the [bridge recovery](family-domain-bridge-20260922.md#indexed-readback-recovery).
