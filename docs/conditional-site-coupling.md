@@ -411,3 +411,21 @@ Both receipts, all 240 contrast rows and the numerical readback are archived
 under `metadata/esmfold_combined_fcs_*paired_bootstrap*`. The comparisons used
 existing draws, one CPU each, a 4-GiB memory and 1-GiB output allowance, and
 a 0.05–1-hour planning interval. No likelihood fit or GPU inference was rerun.
+
+
+![Paired FCS omission differences across all model specifications and both copy-review policies](figures/expanded_fcs_paired_differences.svg)
+
+The figure shows all 240 intervals without selection by direction or threshold
+crossing. Every exported point and endpoint was checked against the validated
+summary tables. Panel scales differ; each baseline/FCS pair uses the fixed
+reference values of its own cohort. The plotted lines are unadjusted conditional
+percentile intervals. A difference interval excluding zero is not a new
+multiplicity-controlled discovery, and inclusion of zero is not equivalence.
+
+A [vector PDF](figures/expanded_fcs_paired_differences.pdf) is also available.
+Reproduce with `scripts/plot_paired_fcs_bootstrap.py --full
+results/phylogeny/paired-fcs-bootstrap-esmfold-combined-reviewed-v2 --omission
+results/phylogeny/paired-fcs-bootstrap-esmfold-combined-copy-omission-v2
+--readback metadata/esmfold_combined_fcs_paired_bootstrap_numerical_readback.json
+--output NEW_FIGURE_DIRECTORY`. Figure receipt, all plotted coordinates and
+visual review are archived under `metadata/esmfold_combined_fcs_paired_figure_*`.

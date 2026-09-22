@@ -3583,3 +3583,15 @@ Independent summary reconstruction remains live, with guide comparison queued.
 Original and long-cohort PAE exports have logged 10,000/10,522 and 4,500/5,510
 models, respectively; extended export remains active. Overall completion is
 not claimed.
+
+
+## Reproducible paired FCS sensitivity figure — 22 September 2026
+
+Produced and visually reviewed an SVG/PDF figure showing all 240 paired
+difference intervals, all five contrasts and both copy-review policies.
+Plotted coordinates were read back against the validated source summaries.
+The caption states the within-cohort fixed-reference convention, varying panel
+scales and unadjusted conditional interpretation. Numerical results are
+unchanged. See [the figure](figures/expanded_fcs_paired_differences.svg).
+Structural PAE export, native reconciliation and full architecture validation
+were confirmed live; the overall study remains incomplete.
