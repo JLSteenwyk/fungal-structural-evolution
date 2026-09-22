@@ -1,0 +1,28 @@
+{
+  "output": "results/domains/family-architecture-variation-v1",
+  "auditor_pid": 2129015,
+  "auditor_start_ticks": "52919778",
+  "bridge_readback": "results/domains/family-domain-bridge-readback-v1/receipt.json",
+  "bridge_receipt": "results/domains/family-domain-bridge-v1/receipt.json",
+  "bridge_database": "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite",
+  "architecture_database": "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite",
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 10,
+    "minimum_free_disk_gib": 100,
+    "runtime_planning_hours": [
+      1,
+      24
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/summarize_family_architectures.py": "a056ceab44320d8854401ca34d5b09f106503768a3ebfb3add0964d1ebbc9ca9",
+    "scripts/check_family_architecture_variation.py": "0cab89aa6efc0d654fcc8780bb1eed4b867ff828649a33a779be05f29aa2e4c8",
+    "metadata/family_domain_bridge_plan.json": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+    "metadata/family_domain_bridge_readback_plan.json": "edf3542ea0577e0dd5c029d2944b761e2037818550c702d9f2c36f5b5607ccee"
+  }
+}

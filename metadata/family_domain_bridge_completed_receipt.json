@@ -1,0 +1,23 @@
+{
+  "status": "complete_family_domain_bridge_requires_independent_readback",
+  "proteins": 5815847,
+  "taxa": 526,
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847
+    }
+  ],
+  "plan_sha256": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+  "script_sha256": "7f981e29582d23d09ce8269774ba9d36b690a4b517ab90d73aa85e7543782c04",
+  "architecture_database_sha256": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+  "bridge_sha256": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+  "elapsed_seconds": 359.2586748600006,
+  "scope": "Exact taxon/protein/sequence links and both complete family partitions. Attach the pinned architecture database to retrieve alternatives. Family assignments are not reconciled orthology; domain events remain uninferred."
+}

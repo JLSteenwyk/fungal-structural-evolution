@@ -60,3 +60,10 @@ the producer checksum, and rejected three malformed serialized partitions.
 The eventual full receipt will be under
 `results/domains/family-domain-bridge-readback-v1/`; being queued does not
 establish that the production database has passed.
+
+Database construction has completed for both full partitions in 359 seconds.
+The receipt is archived as `metadata/family_domain_bridge_completed_receipt.json`;
+the independent full readback is now running. A downstream descriptive
+within-family annotation inventory is queued behind that audit, documented in
+`docs/family-architecture-variation-20260922.md`. No domain evolutionary event
+is inferred from successful database construction.
