@@ -3529,3 +3529,18 @@ renumbered IDs, and report changed-membership partitions separately, with
 observed/conservative order and multiplicity counts. This prepares domain
 evolution inputs without calling partition changes evolutionary events.
 See [guide sensitivity](family-architecture-variation-20260922.md#guide-sensitivity-with-exact-family-memberships).
+
+
+## Methods draft synchronized with verified full-data checkpoints — 22 September 2026
+
+Updated the manuscript methods to distinguish historical exploratory snapshots
+from the complete marker-tree batch, the two validated profile-alignment PMSF
+runs, 25,322 completed ESMFold models and their residue mapping, full-proteome
+Pfam competition/candidate architectures, and the complete family/domain bridge.
+Corrected obsolete statements that finished stages had not started. Retained
+explicit limits on rooting, confidence qualification, reconciliation, missing
+annotation and evolutionary interpretation. All 125 saved marker configurations
+confirm the documented candidate models and SH-aLRT settings. Receipt hashes
+and scoped completion statuses are indexed in
+`metadata/methods_checkpoint_20260922_sources.json`; local methods links resolve.
+The full atlas and final evolutionary analyses remain unfinished.

@@ -1,0 +1,81 @@
+{
+  "recorded_utc": "2026-09-22T17:13:05.026046+00:00",
+  "scope": "Evidence index for the 22 September methods update. Completion applies only to each receipt scope; overall study and biological interpretation remain unfinished.",
+  "sources": [
+    {
+      "path": "metadata/complete_marker_support_snapshot_receipt.json",
+      "sha256": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def",
+      "status": "complete_support_audit"
+    },
+    {
+      "path": "metadata/complete_marker_input_graph_readback_receipt.json",
+      "sha256": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab",
+      "status": "passed_all_snapshot_input_and_graph_split_readbacks"
+    },
+    {
+      "path": "metadata/complete_marker_conflict_readback_receipt.json",
+      "sha256": "cbeeb28896b2afbd998e2ac72dedac62e5f98fac96b335371bfba62afa6dadf5",
+      "status": "passed_supported_marker_conflict_readback"
+    },
+    {
+      "path": "metadata/complete_marker_root_split_receipt.json",
+      "sha256": "5b09e0853b6df0974e4ec7aa40caa61cd581b8d8e81a2ae5ac04c494268a7366",
+      "status": "complete_fungal_outgroup_split_diagnostic"
+    },
+    {
+      "path": "metadata/pmsf_profile_profile_readback.json",
+      "sha256": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+      "status": "passed_pmsf_profile_tree_and_bootstrap_readback"
+    },
+    {
+      "path": "metadata/pmsf_profile_mafft_readback.json",
+      "sha256": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+      "status": "passed_pmsf_profile_tree_and_bootstrap_readback"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_inventory_receipt.json",
+      "sha256": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+      "status": "complete_disjoint_prediction_inventory_union_with_batch_provenance"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_residue_readback.json",
+      "sha256": "e59780e6a76f4e9173a8fafc3bb3b722f6f19b3c6374bce092b3e8b4b5190354",
+      "status": "passed_full_local_residue_mapping_readback"
+    },
+    {
+      "path": "metadata/completed_marker_availability_receipt.json",
+      "sha256": "a6755e507f6febfd8c2a79ea8bb8b541e5828f6b009f8ad3b66ffc70ff129411",
+      "status": "complete_frozen_catalog_marker_availability"
+    },
+    {
+      "path": "metadata/full_domain_database_receipt.json",
+      "sha256": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+      "status": "complete_domain_partition_database_requires_independent_readback"
+    },
+    {
+      "path": "metadata/full_domain_database_readback.json",
+      "sha256": "7c1ec077048cde8dee05212ce15160f12a8b794741dd90cb2ea242fd1b6ac2b6",
+      "status": "passed_complete_domain_database_source_readback"
+    },
+    {
+      "path": "metadata/full_domain_protein_link_readback_receipt.json",
+      "sha256": "f406e234887e4c57043e986e1f04f044ffd505206350491bd4df347fa1b7badb",
+      "status": "passed_full_domain_protein_link_readback"
+    },
+    {
+      "path": "metadata/full_domain_competition_completed_readback.json",
+      "sha256": "0b433b63217cf43b7218c50421cf1beda122f6f64c6de31d15c850a32fed625f",
+      "status": "passed_complete_independent_domain_competition_readback"
+    },
+    {
+      "path": "metadata/full_candidate_domain_architecture_completed_readback.json",
+      "sha256": "ccdcc4ce4c7a64ee0ae1e70df734bbe8103c559031f852d4caae3d1ad63e83e9",
+      "status": "passed_complete_independent_candidate_architecture_readback"
+    },
+    {
+      "path": "metadata/family_domain_bridge_completed_readback.json",
+      "sha256": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+      "status": "passed_complete_independent_family_domain_bridge_readback"
+    }
+  ]
+}

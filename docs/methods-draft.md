@@ -1,10 +1,10 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
-This draft describes work executed so far. Phylogenetic inference, structural clustering and evolutionary tests are not yet completed and are not represented as results here.
+This draft describes executed methods through 22 September 2026. Early exploratory datasets remain explicitly identified by their snapshot sizes. Full structural-atlas construction and the final phylogenetically integrated evolutionary analyses remain unfinished; completed preparation and conditional estimates are not treated as final biological results.
 
 ## Sampling and sequence acquisition
 
-The working analysis manifest contains 501 fungal taxon entries and 25 non-fungal outgroups. A name-based identity audit flags one explicit hybrid and 21 incompletely identified fungal labels; these 501 entries are not yet established as 501 distinct accepted species. Candidate selection used annotated public assemblies and a deterministic taxonomic diversity design, supplemented by published proteomes from underrepresented lineages. The current fungal circumscription follows the broad NCBI classification; sensitivity to a narrower fungal circumscription remains planned. A further fungal candidate, Saccharomyces jurei, lacks an available protein dataset and is retained in the candidate manifest with an exclusion record. Species selection, ecological curation and quality exceptions remain subject to review.
+The working analysis manifest contains 501 fungal taxon entries and 25 non-fungal outgroups. A name-based identity audit flags 21 incompletely identified fungal labels. Subsequent assembly-linked literature curation identifies two hybrids, including one not detected by the original name-only screen; these 501 entries are not yet established as 501 distinct accepted species. Candidate selection used annotated public assemblies and a deterministic taxonomic diversity design, supplemented by published proteomes from underrepresented lineages. The current fungal circumscription follows the broad NCBI classification; sensitivity to a narrower fungal circumscription remains planned. A further fungal candidate, Saccharomyces jurei, lacks an available protein dataset and is retained in the candidate manifest with an exclusion record. Species selection, ecological curation and quality exceptions remain subject to review.
 
 We acquired 519 proteomes from assembly-specific NCBI files and seven from published Figshare bundles. Publisher checksums, local SHA256 digests, source versions and retrieval locations were recorded. Original files were preserved. QC inputs removed terminal stop/period markers and excluded internally interrupted or noncanonical sequences according to the recorded normalization policy. The published Abeoforma proteome contains terminal periods, which were tracked separately before normalization. QC inputs retain alternative products; they are not gene-collapsed proteomes.
 
@@ -12,7 +12,7 @@ We acquired 519 proteomes from assembly-specific NCBI files and seven from publi
 
 BUSCO 6.1.0 was run in protein mode with the pinned eukaryota_odb12.2 dataset (125 markers; dataset creation 2026-05-13), using four threads per job and at most four simultaneous jobs. All 526 jobs completed successfully. Per-taxon summaries were checked for internal count consistency. These scores describe recovery of a broad eukaryotic marker panel and do not establish genome completeness independently of evolutionary marker loss, divergence and annotation quality. No uniform exclusion threshold was imposed. Microsporidia have a median complete-marker recovery of 42.4%; Pirum gemmata and Abeoforma whisleri each recover 5.6%. These observations motivate lineage-specific QC and sensitivity analyses, not automatic removal.
 
-Single-copy complete hits were extracted only from successful jobs whose input checksums matched the recorded proteomes. Marker sequences were checked for exact protein accession and sequence equality against source inputs. The full extraction contains 59,840 sequences across 125 markers and all 526 screened taxa, with missing and duplicated markers retained as explicit absences from the single-copy matrix. MAFFT 7.525 alignment was launched using `--auto --inputorder`, four concurrent alignments and two threads per alignment. Validation requires identical taxon IDs and ungapped residues. All 125 MAFFT alignments completed and passed identity and residue-preservation checks. They contain 697,866 full-protein alignment columns; requiring unambiguous residues in at least half the taxa present in each marker retained 63,750 columns in a 526-taxon alternative matrix. Separately, HMMER 3.4 profile alignments against the pinned BUSCO models completed for all 125 markers, yielding 50,941 profile match columns. Requiring unambiguous residues in at least half the taxa present for each marker retained 49,027 columns in the 526-taxon concatenation. An initial LG+F+G4 guide-tree inference and individual marker-tree inference are running. Supported species-tree estimation, gene-tree discordance assessment and model, marker and taxon sensitivity analyses remain outstanding; the guide tree is not a final species-tree result.
+Single-copy complete hits were extracted only from successful jobs whose input checksums matched the recorded proteomes. Marker sequences were checked for exact protein accession and sequence equality against source inputs. The full extraction contains 59,840 sequences across 125 markers and all 526 screened taxa, with missing and duplicated markers retained as explicit absences from the single-copy matrix. MAFFT 7.525 alignment was launched using `--auto --inputorder`, four concurrent alignments and two threads per alignment. Validation requires identical taxon IDs and ungapped residues. All 125 MAFFT alignments completed and passed identity and residue-preservation checks. They contain 697,866 full-protein alignment columns; requiring unambiguous residues in at least half the taxa present in each marker retained 63,750 columns in a 526-taxon alternative matrix. Separately, HMMER 3.4 profile alignments against the pinned BUSCO models completed for all 125 markers, yielding 50,941 profile match columns. Requiring unambiguous residues in at least half the taxa present for each marker retained 49,027 columns in the 526-taxon concatenation. Both full-taxon homogeneous guide trees and all 125 supported marker trees have completed inference and validation. Two of four crossed C20-PMSF species-tree executions have passed full saved-profile/tree/bootstrap readback. Their current scope and the remaining species-tree requirements are described below; the homogeneous guides are not final species-tree results.
 
 ## Annotation and isoform reconciliation
 
@@ -20,13 +20,13 @@ All 519 assembly-matched NCBI GFF downloads passed checksum and feature-format v
 
 For the two sanchytrids, published protein-header coordinates were checked against deposited genome contigs using exact translation. All 7,220 Amoeboradix proteins and 9,367 of 9,368 Sanchytrium proteins were verified. Contig-name aliases were accepted only when a unique node/length prefix and exact translation agreed. The remaining Sanchytrium interval exceeded the deposited contig length. Verified ORFs are provisional loci and are not treated as resolved gene/isoform models.
 
-A reproducible representative baseline chooses the longest protein per uniquely mapped gene, breaking ties lexically by accession. Alternative products remain in source proteomes with selection audit records. Unresolved and provisional ORF products are retained independently and flagged against direct use as gene-copy counts. Representative preparation completed for all 526 taxa, retaining 5,815,847 proteins and recording 111,898 alternative products. Sensitivity to representative selection remains required. OrthoFinder 3.1.5 inference is running on a diversity-selected 64-taxon computational core (54 fungi and 10 outgroups); the remaining 462 taxa are prepared for subsequent assignment. Full-dataset orthology and reconciliation are not yet complete.
+A reproducible representative baseline chooses the longest protein per uniquely mapped gene, breaking ties lexically by accession. Alternative products remain in source proteomes with selection audit records. Unresolved and provisional ORF products are retained independently and flagged against direct use as gene-copy counts. Representative preparation completed for all 526 taxa, retaining 5,815,847 proteins and recording 111,898 alternative products. Sensitivity to representative selection remains required. OrthoFinder 3.1.5 inference began with a diversity-selected 64-taxon computational core (54 fungi and 10 outgroups), followed by full assignment and guide-defined clade discovery. Both expanded family partitions now include all 5,815,847 proteins exactly once; their annotation linkage has passed independent validation. Reconciliation under alternative guides is running and final reconciled orthology remains unvalidated.
 
 ## Structural acquisition and remaining analyses
 
 Existing structure candidates are nominated by exact full-sequence matches to UniProt entries with AlphaFoldDB cross-references. Current AFDB metadata and coordinates are retrieved with version and source provenance. Accepted models require exact agreement between input, API and CIF polymer sequences and complete alpha-carbon residue coverage. Per-model confidence summaries are retained. Retrieval is ongoing; downloaded models have not yet passed the additional domain, PAE, orthology and prediction-source assessments needed for evolutionary interpretation.
 
-Supported species-tree inference, gene-tree reconciliation, domain annotation, missing-structure prediction, full-atlas structural comparisons, all eight evolutionary analyses, and mechanistic case studies remain outstanding. No claim of structural acceleration, adaptation, ecological association or functional novelty follows from the current data-preparation results.
+Full-proteome domain annotation and five local prediction cohorts are complete. Final species-tree selection, validated gene-tree reconciliation, remaining structural acquisition, full-atlas structural comparisons, completion of all eight evolutionary analyses, and validated mechanistic case studies remain outstanding. No claim of structural acceleration, adaptation, ecological association or functional novelty follows from the current data-preparation results.
 
 ### Executed exploratory direct comparisons
 
@@ -46,9 +46,9 @@ Version-matched PAE matrices were retrieved and validated for all 422 distinct m
 
 Profile and MAFFT alignments were compared using identical protein-residue identities retained by both methods' 50%-occupancy masks. Cross-taxon residues assigned to the same column define a residue-pair edge. Counts of profile edges, MAFFT edges and their intersection were obtained from a contingency table of column memberships; edge Jaccard is intersection divided by union. The calculation does not enumerate all pairs. Complete-audit status, alignment hashes, source-protein agreement, Stockholm residue coordinates and recomputed occupancy rules were verified. The common retained universe contains 22,269,691 residues; pooled edge Jaccard is 0.925532 and the median across 125 markers is 0.944903 (range 0.573155–0.993988). Per-column coverage and agreement are retained for later sensitivity analyses. Shared agreement cannot establish alignment accuracy, and these results do not yet assess topology or evolutionary-rate robustness.
 
-### Domain annotation preparation and active searches
+### Domain annotation search design
 
-Pfam 38.2 profiles and associated entry-type, clan and active-site resources were retrieved from a version-specific EBI archive using pinned publisher MD5 values and local SHA256 provenance. Active-site transfer has not been implemented. All 30,134 HMMs passed accession, length and gathering-threshold checks. Full marker sequences were reconciled against the complete 526-taxon extraction; 59,840 protein records collapsed to 58,883 exact unique sequences for search, preserving every taxon/protein association. All profiles were partitioned into 64 deterministic chunks balanced by summed HMM match-state lengths. HMMER 3.4 searches are running against the whole unique marker-sequence target database with curated sequence and domain gathering thresholds (`--cut_ga`), four concurrent jobs and two HMMER worker threads per job. The full-proteome search and completed domain annotations remain pending. The prepared parser retains raw overlaps and Pfam entry types rather than equating each hit with a discrete structural domain or resolved architecture.
+Pfam 38.2 profiles and associated entry-type, clan and active-site resources were retrieved from a version-specific EBI archive using pinned publisher MD5 values and local SHA256 provenance. Active-site transfer has not been implemented. All 30,134 HMMs passed accession, length and gathering-threshold checks. Full marker sequences were reconciled against the complete 526-taxon extraction; 59,840 protein records collapsed to 58,883 exact unique sequences for search, preserving every taxon/protein association. All profiles were partitioned into 64 deterministic chunks balanced by summed HMM match-state lengths. HMMER 3.4 searches used the whole unique marker-sequence target database with curated sequence and domain gathering thresholds (`--cut_ga`), four concurrent jobs and two HMMER worker threads per job. Marker and additional full-proteome searches subsequently completed; the merged annotation and candidate-architecture procedures are described below. The prepared parser retains raw overlaps and Pfam entry types rather than equating each hit with a discrete structural domain or resolved architecture.
 
 ### Assembly contiguity and deposited metadata
 
@@ -58,21 +58,21 @@ Assembly-version-matched NCBI statistics reports were acquired for all 519 NCBI 
 
 The publisher-hosted FungalTraits genus supplement was checksum-pinned and matched by exact genus labels to the selected fungal entries. It supplied candidate records for 482 entries; 19 lacked exact matches and the 25 outgroups were left unassigned. Source primary and secondary lifestyles, other trait fields, spreadsheet coordinates and taxonomy were preserved without promoting genus-level information to confirmed species traits. Six species-level statements from primary genomic studies were recorded separately, with source locators, assembly identity and taxonomic/strain scope limitations. These include two Amanita species whose published asymbiotic classifications conflict with a genus-level ectomycorrhizal projection. Confirmatory-test eligibility remains pending taxonomic linkage, supported phylogenies and independent-transition review; no ecological association test has been performed.
 
-### Initial completed marker-tree support audit
+### Historical three-marker support snapshot
 
-Three of the 125 planned marker trees have completed inference and passed checks of source provenance, taxon membership, nonnegative finite branch lengths and resolved unrooted edge counts. Their 1,422 internal branches include 1,390 reported SH-aLRT values and 32 unreported values, retained explicitly as missing rather than zero. Support summaries and canonical unrooted split identities are archived as an incomplete diagnostic snapshot. SH-aLRT values are not bootstrap percentages or posterior probabilities. Full marker inference, weak-edge sensitivity, discordance analysis and species-tree estimation remain incomplete.
+The initial three of the 125 planned marker trees completed inference and passed checks of source provenance, taxon membership, nonnegative finite branch lengths and resolved unrooted edge counts. Their 1,422 internal branches include 1,390 reported SH-aLRT values and 32 unreported values, retained explicitly as missing rather than zero. Support summaries and canonical unrooted split identities are archived as an incomplete diagnostic snapshot. SH-aLRT values are not bootstrap percentages or posterior probabilities. This historical snapshot has been superseded by the complete 125-marker audit described below. Model adequacy, biological interpretation of discordance and final species-tree selection remain incomplete.
 
 ### Full-proteome domain input preparation
 
-All 526 representative proteomes were checksum-verified and streamed into a domain-search input catalogue preserving 5,815,847 protein/taxon associations. Exact sequence deduplication identified 5,713,599 unique sequences; 58,879 matched existing marker-search inputs, and 5,654,720 additional sequences were written once. These additional sequences contain 2,520,735,813 residues. This deduplication affects search work only; original protein identities, taxon associations and unresolved gene-mapping status remain available through source provenance. Preparation is complete, but the additional full-proteome domain searches and merged annotation are not yet executed. Search-partition-specific E-values must not be treated as globally calibrated values merely because gathering thresholds are shared.
+All 526 representative proteomes were checksum-verified and streamed into a domain-search input catalogue preserving 5,815,847 protein/taxon associations. Exact sequence deduplication identified 5,713,599 unique sequences; 58,879 matched existing marker-search inputs, and 5,654,720 additional sequences were written once. These additional sequences contain 2,520,735,813 residues. This deduplication affects search work only; original protein identities, taxon associations and unresolved gene-mapping status remain available through source provenance. The additional full-proteome domain searches and merged annotation subsequently completed, as documented below. Search-partition-specific E-values must not be treated as globally calibrated values merely because gathering thresholds are shared.
 
-## Completed marker-domain annotation and local prediction preparation
+## Historical marker-domain annotation and initial prediction batches
 
-All 30,134 Pfam 38.2 profiles were searched against 58,883 unique marker sequences using HMMER gathering thresholds. Complete-result validation retained 163,650 hits of all Pfam types, including overlapping hits, and linked annotations back to 59,840 marker proteins. The 13,983 sequences with overlaps require architecture review; no-hit states are not proof of domain absence. Additional full-proteome searches are running.
+All 30,134 Pfam 38.2 profiles were searched against 58,883 unique marker sequences using HMMER gathering thresholds. Complete-result validation retained 163,650 hits of all Pfam types, including overlapping hits, and linked annotations back to 59,840 marker proteins. The 13,983 sequences with overlaps require architecture review; no-hit states are not proof of domain absence. Additional full-proteome searches subsequently completed; their results are included in the full-data procedures below.
 
 A checksum-pinned ESMFold v1 checkpoint and frozen missing-candidate marker queue were prepared. The initial 128-sequence production chunk is restricted to complete canonical proteins no longer than 512 residues, with longer and noncanonical proteins explicitly deferred. Execution settings, source distinctions, confidence scaling and validation are documented in structure-prediction-workflow.md. At launch, actual prediction completion remained unverified; preparation and tests are not structural results.
 
-The initial local prediction chunk subsequently completed: 128 ESMFold v1 predictions, 129 taxon-marker links, all passing independent coordinate/sequence/confidence/PAE artifact readback. The separate loading/execution audit excluded use of the uninitialized contact-regression head and reproduced saved confidence/PAE for one sequence. All 10,394 remaining eligible short-marker candidates were then resumed with identical settings. These are predicted structures, not experimentally validated structures. The 64-taxon OrthoFinder core also completed and full 526-taxon assignment has started.
+The initial local prediction chunk subsequently completed: 128 ESMFold v1 predictions, 129 taxon-marker links, all passing independent coordinate/sequence/confidence/PAE artifact readback. The separate loading/execution audit excluded use of the uninitialized contact-regression head and reproduced saved confidence/PAE for one sequence. All 10,394 remaining eligible short-marker candidates were then resumed with identical settings and subsequently completed. These are predicted structures, not experimentally validated structures. The 64-taxon OrthoFinder core and subsequent full assignment completed; expanded family inference and its current reconciliation status are described below.
 
 ## Domain-conditioned geometry and placement uncertainty
 
@@ -84,7 +84,7 @@ Native Foldseek encodings (pinned commit e3fadcd07f971e864c094ac4f3a78bf4ed845e0
 
 The benchmark reproduced 858 whole-marker and 738 domain baselines and recomputed amino-acid mismatch, 3Di mismatch and geometry on identical retained sites. Three regimes yielded 4,743 accepted and 45 excluded comparison rows; the strictest retained 856 whole-marker and 717 domain comparisons. These dependent uncorrected state fractions do not establish branch lengths, physical displacement, independent evolutionary events or model suitability. Native encoding of predicted coordinates does not eliminate sequence-derived prediction circularity. Details and reproduction are in structural-alphabet-benchmark.md.
 
-## Paired sequence and structural branch fitting checkpoint
+## Initial paired sequence and structural branch fitting checkpoint
 
 Audited coordinate-derived 3Di states were projected onto the original profile alignment with identical amino-acid/structural missingness masks. All six feature residues required pLDDT ≥70 and maximum directional context PAE ≤10 Å. The 526-taxon/125-marker audit yielded 52 eligible marker alignments (4–12 taxa each, 105 taxa in their union). IQ-TREE 3.0.1 inferred LG+F+G4 marker sequence topologies, then fitted AF+G4, AF+F+G4 and LLM+G4 published structural models on each fixed topology, keeping identical sequences and invariant columns. Publisher model files were checksum-verified. All 208 fits passed the provenance and branch-correspondence audit, yielding 416 matched branches. These are conditional point estimates with frequent rare-state/near-zero warnings; no acceleration or coupling test has been established. See paired-structural-phylogenetics.md for commands, resource estimates, diagnostics and unresolved uncertainty/model checks.
 
@@ -147,3 +147,128 @@ corresponding guide-edge length sums. The completed projection covers the
 separate. The guides lack support estimates, so this analysis establishes
 conditional mapping eligibility rather than a final clade assignment,
 reconciliation or acceleration test. See marker-species-edge-projection.md.
+
+
+## Full-data phylogenetic checkpoint, 22 September 2026
+
+All 125 marker trees were inferred with IQ-TREE 3.0.1 on the frozen profile
+matrix partitions and their documented taxon-coverage masks. The recorded
+model search considered LG, WAG and JTT exchangeabilities with empirical
+frequencies and gamma rate variation; each run used 1,000 SH-aLRT replicates.
+A complete independent readback reconstructed 23,441,199 retained alignment
+characters from the original matrix and coverage exclusions, and recovered
+59,315 internal splits by graph-edge removal. Unreported support remains
+missing; SH-aLRT values are not bootstrap percentages or posterior probabilities.
+
+For each of the two homogeneous guides, each internal guide split was
+restricted to each marker's actual taxon set. Splits with fewer than two taxa
+on either side were uninformative. Exact marker splits and incompatible
+splits (all four bipartition intersections nonempty) were classified at
+descriptive SH-aLRT cutoffs of 80 and 95. All 261,500 guide/marker/edge/cutoff
+rows and 2,092 edge summaries were checked. Independent exhaustive maximum
+conflict searches covered five deterministic guide edges per marker/guide;
+the remaining maxima were checked through their witnesses, not independently
+reoptimized over every candidate. Restricted splits can represent collapsed
+paths and are not independent branch replicates or gene concordance factors.
+The separate role-separation diagnostic tested an exact unrooted split between
+retained fungal and outgroup entries in each tree, requiring at least two
+entries of each role. It does not locate a root along an edge or infer event
+direction. Full commands and receipts are in
+[complete marker diagnostics](complete-marker-diagnostics-20260922.md).
+
+On the 49,027-site profile alignment, both completed guide-conditioned C20-PMSF
+runs retained all 526 taxa and 1,000 bootstrap trees. Saved site-frequency
+vectors, tree/report identities, replicate tip sets and branch values were
+validated; empirical split frequencies were reconstructed from every replicate.
+Support remains attached to explicit splits rather than transferred by node
+number. SH-aLRT calculations and likelihood optimization were not independently
+rerun. Guide-conditioned profiles differ, so cross-run likelihood differences
+are not a direct topology preference test. The other crossed alignment/guide
+runs, model adequacy, rooting and marker/taxon sensitivities remain required.
+See [PMSF validation](pmsf-profile-readback-20260922.md).
+
+## Completed local predictions and residue correspondence
+
+Five disjoint exact-sequence ESMFold v1 cohorts contain 25,322 models: 10,522
+original short proteins, 4,252 additional short proteins, 675 ecology-targeted
+proteins, 5,510 proteins of length 513–768 residues and 4,363 of length
+769–1,024 residues. The earlier 5,121-model partial original snapshot overlaps
+the complete original cohort and is not added to these totals. Seven native
+prediction configurations remain recorded separately; their differing fields
+are input-receipt hash, maximum permitted sequence length and visible GPU.
+This does not establish the absence of batch effects.
+
+Original model records, exact protein sequences, prediction receipts, coordinate
+hashes and directional PAE bindings were preserved in a combined inventory.
+Mapping used complete-sequence identity, including reuse across identical
+proteins while retaining all taxon/marker/protein associations. Independent
+readback reconstructed non-gap retained Stockholm positions using cumulative
+residue counts and checked matrix amino acids and confidence values against
+the original prediction arrays, allowing documented PDB serialization rounding.
+All 25,509 marker/protein links and 8,335,615 matrix-residue links passed. The
+readback uses a shared alignment parser and does not independently infer the
+alignment or validate biological coordinate accuracy.
+
+Availability in this completed local inventory was joined with the separately
+frozen AlphaFold catalog by exact marker, taxon, protein and sequence identity.
+The union covers 38,931 of 59,840 recovered marker records, with 232 records
+in both catalogs. Counts precede confidence qualification and are not
+whole-proteome coverage. Absence from these frozen catalogs is not absence
+from current caches or public databases. Feature extraction, original
+directional-PAE context checks, qualification and regenerated paired inputs
+remain separate gates before the expanded evolutionary fits. See the
+[complete prediction checkpoint](completed-prediction-inventory-20260922.md)
+and [expanded paired-input workflow](expanded-paired-inputs-20260922.md).
+
+## Full-proteome annotations and family architecture representation
+
+The merged Pfam database retains 8,103,610 raw gathering-threshold hits across
+5,713,603 unique search queries, including four marker-only queries, and all
+5,815,847 representative protein links across 526 taxa. Raw scores, coordinates,
+annotation types, source partitions and E-values remain available without
+rescaling partition-specific significance values. Full independent checks
+covered hit fields and protein identities.
+
+Candidate within-clan competition crossed alignment versus envelope spans
+with independent domain E-value versus domain bit-score ranking. Decimal
+arithmetic preserved small E-values and ranking ties. Deterministic secondary
+ordering did not remove primary-score uncertainty. Curated directed nesting
+relationships combined with strict containment could preserve candidate nested
+hits; cross-clan and missing-clan overlaps remained unresolved. Every retained
+and suppressed hit, blocker and uncertainty disposition was preserved and
+independently reconstructed under all four policies. This is the documented
+project policy, not a claim to reproduce an unspecified PfamScan release.
+
+Candidate architectures retain Pfam entry types, repeat multiplicity, coordinates
+and alternative retained sets. Coordinate ordering and model/type signatures
+are descriptive representations, not proof of biological boundaries or domain
+homology. The database contains 5,767,208 alternatives summed across queries;
+this is not a count of globally distinct architectures. No-hit queries remain
+missing annotation evidence. Every candidate field, alternative reference,
+policy uncertainty count and protein link passed independent readback. See
+[candidate architecture methods](candidate-domain-architectures-20260922.md).
+
+The full annotation database was joined through native gene IDs to both
+expanded family partitions (658,183 profile-guide families and 658,522
+MAFFT-guide families). Independent validation checked every native identity,
+sequence/source link, family member and source crosswalk, plus database
+integrity and final hashes. Family indices are guide-specific: comparisons
+use full membership identities rather than matching family labels. These
+partitions are not completed reconciled orthology. Reconciliation is running
+on isolated physical copies under both homogeneous guide alternatives;
+completed native outputs still require full validation.
+
+Within-family architecture summaries are currently running. They distinguish
+ordered signatures, multiplicity-preserving multisets and model/type sets,
+retain missing hits and ambiguity counts, and compare observed data with a
+conservative subset excluding policy disagreement, rank ties, overlap, candidate
+nesting and retained HMM matches below 0.70 coverage. The conservative rule is
+a sensitivity choice, not proof of architecture correctness. Independent full
+summary reconstruction and exact-membership guide comparisons are queued.
+Domain gain/loss, fusion, rearrangement and duplication tests remain unfinished
+and must incorporate supported genealogies, annotation uncertainty and
+missingness. See [family-domain linkage](family-domain-bridge-20260922.md) and
+[architecture variation](family-architecture-variation-20260922.md).
+
+The completion evidence used for this update is indexed, with receipt hashes
+and scoped statuses, in `metadata/methods_checkpoint_20260922_sources.json`.

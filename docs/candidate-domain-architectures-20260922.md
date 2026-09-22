@@ -1,7 +1,7 @@
 # Full candidate domain-architecture representation
 
 **September 22 update:** construction is complete for all 5,713,603 queries and
-5,815,847 protein links across 526 taxa. Independent full readback is running.
+5,815,847 protein links across 526 taxa. Independent full readback has passed.
 The representation contains 5,767,208 per-query retained-hit alternatives;
 these are not globally distinct biological architectures. The producer receipt
 is archived at `metadata/full_candidate_domain_architecture_completed_receipt.json`.
@@ -89,6 +89,6 @@ the four competition policies. The 5,767,208 alternatives count sums alternative
 across queries; it is not a count of globally distinct biological architectures.
 No-hit queries and uncertain overlap/nesting remain explicitly represented.
 
-Family integration is the next stage; see
+The full family/annotation bridge also passed independent readback; see
 `docs/family-domain-bridge-20260922.md`. Passing this annotation audit does not
 establish domain gains, losses, fusions, or rearrangements.
