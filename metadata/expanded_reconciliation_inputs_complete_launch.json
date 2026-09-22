@@ -1,0 +1,16 @@
+{
+  "status": "running_complete_input_staging_and_readback",
+  "checked_unix": 1790089366.166302,
+  "unit": "fungal-complete-reconciliation-inputs-20260922.service",
+  "pid": 682024,
+  "create_time": 1790089322.16,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "scripts/complete_expanded_reconciliation_inputs.py",
+    "--plan",
+    "metadata/expanded_reconciliation_inputs_complete_plan.json"
+  ],
+  "plan": "metadata/expanded_reconciliation_inputs_complete_plan.json",
+  "output": "results/orthology/expanded-reconciliation-inputs-complete-v2",
+  "interpretation": "New copies include final repaired tree; independent native readback follows. No reconciliation launched."
+}

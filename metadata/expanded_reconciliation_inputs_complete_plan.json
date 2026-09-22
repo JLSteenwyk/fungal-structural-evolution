@@ -1,0 +1,30 @@
+{
+  "source": "results/orthology/expanded-reconciliation-inputs-v1",
+  "output": "results/orthology/expanded-reconciliation-inputs-complete-v2",
+  "installation": "results/orthology/OG0000017-installation-controller-v1/state.json",
+  "native_readback": "results/orthology/OG0000017-installation-controller-v1/native_readback.json",
+  "pins": {
+    "scripts/complete_expanded_reconciliation_inputs.py": "328eec77813207358a4582d811ac6c053926850d3e9c996d6f282b8bdd38886d",
+    "scripts/readback_expanded_reconciliation_inputs.py": "26a7e87d79d9f243ab6e267ab5b3183711713af0ead84abdbfd2970e9147a7c9",
+    "results/orthology/expanded-reconciliation-inputs-v1/receipt.json": "a49e6681f808602eb291023372c47d523ec85cd0e2430d1a7b6df4f580e57090",
+    "results/orthology/expanded-reconciliation-inputs-v1/readback.json": "de142bc9a2c9d4c6bcd7b50e721ea39772fce2ed53019c4443ecf79a8bebdce2",
+    "results/orthology/OG0000017-installation-controller-v1/state.json": "a3264e7ddd9d9dd679d4f648828ed26984cd8f05ae08a2c0dd81c0daf841f5b1",
+    "results/orthology/OG0000017-installation-controller-v1/native_readback.json": "c0ce7b21504090ef8658c7ae59f69e811b4dbe13369a92781df81f175b793d5f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/tree.py": "6581d8f8329cb330d5c76322dc6456fd8e76046629aa391531269230e3082c59",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/newick.py": "52e7f9c29046dfb1bcf9d12f7fbc4c4f4b98511238967070b8fbf9495b2b05f7",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+    ".cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/utils/files.py": "eb26ae6f62eb02aa1311414e0f3cc297aa8b20e8dd441e0b307ffc4e3dd69a66"
+  },
+  "resources": {
+    "cpu_threads": 2,
+    "memory_max_gib": 16,
+    "swap_max_bytes": 0,
+    "expected_new_disk_gib": 6,
+    "minimum_free_disk_gib": 30,
+    "planning_wall_hours": [
+      0.25,
+      3
+    ],
+    "cost": "Existing host; no new charges"
+  }
+}

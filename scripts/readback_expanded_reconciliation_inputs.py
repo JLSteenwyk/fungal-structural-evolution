@@ -99,9 +99,10 @@ def main():
         summaries.append(summary)
         print(json.dumps(summary),flush=True)
         del groups
-    result=dict(status='passed_complete_available_expanded_input_readback',guides=summaries,
+    complete=all(not g['pending'] for g in summaries)
+    result=dict(status='passed_complete_expanded_input_readback' if complete else 'passed_complete_available_expanded_input_readback',guides=summaries,
                 input_receipt_sha256=sha(a.inputs/'receipt.json'),script_sha256=sha(Path(__file__)),
-                launch_ready=False,scope='All available physical copies and native tree tips checked against full expanded partitions. Missing repaired family remains explicit; no reconciliation or final species-tree validation.')
+                launch_ready=False,scope='All physical copies and native tree tips checked against full expanded partitions; pending families, if any, remain explicit. No reconciliation or final species-tree validation.')
     a.output.write_text(json.dumps(result,indent=2)+'\n')
 
 

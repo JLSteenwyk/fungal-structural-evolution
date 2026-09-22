@@ -3284,3 +3284,18 @@ local time September 22 (PDT, following the earlier explicit clarification).
 Both workers remain running. The replacement calendar pause timer is active
 for 11:00 UTC September 22; the earlier 19:00 PDT timer is canceled. Schedule:
 metadata/prediction_two_gpu_20260922_0400_schedule.json.
+
+
+September 22: all 4,363 extended marker predictions finished across the original
+and two continuation queues. CPU-only independent audits and mmCIF conversion
+are running under the partitioned handoff controller; GPUs remain stopped.
+The original 2,318-model partial receipt is preserved, and the combined audit
+will check exact sequence coverage and taxon-marker link multiplicities.
+See docs/extended-prediction-validation-20260922.md.
+
+September 22: preparation of complete expanded reconciliation inputs is running
+in a fresh v2 directory, adding the verified 55,981-tip repaired OG0000017 tree
+to both partitions while preserving the previous snapshots. A full independent
+native-parser readback follows staging. Expected tree totals are 95,484 and
+95,594; completion requires the new readback receipt. Reconciliation itself
+has not launched. See docs/completed-reconciliation-inputs-20260922.md.
