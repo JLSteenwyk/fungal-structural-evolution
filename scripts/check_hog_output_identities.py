@@ -24,7 +24,8 @@ def main():
         cases=[('wrong_family',n1.replace('OG0000000','OG0000001'),'HOG changes source family'),
                ('outside_clade',n1.rstrip('\n')+'p2\n','Gene outside HOG species clade'),
                ('duplicate_gene',n1.replace('p0\t','p0, p0\t'),'Gene repeated'),
-               ('unknown_protein',n1.replace('p1','absent'),'Unknown HOG protein')]
+               ('unknown_protein',n1.replace('p1','absent'),'Unknown HOG protein'),
+               ('oversized_cell_semantic_check',n1.replace('p0\t',(', '.join(['p0']*40000))+'\t'),'Gene repeated')]
         rejected=[]
         for name,text,error in cases:
             (tables/'N1.tsv').write_text(text)

@@ -12,6 +12,7 @@ from assess_small_family_output_exposure import groups, sha
 
 def audit(source, result, output):
     if output.exists():raise FileExistsError(output)
+    csv.field_size_limit(16 * 1024 * 1024)
     tree_path=result/'Species_Tree/SpeciesTree_rooted_node_labels.txt'
     paths=[source/name for name in ('SpeciesIDs.txt','SequenceIDs.txt','clusters_OrthoFinder.txt_id_pairs.txt')]+[tree_path]
     pins={str(p):sha(p) for p in paths}
