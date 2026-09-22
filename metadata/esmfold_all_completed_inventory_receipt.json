@@ -1,0 +1,65 @@
+{
+  "status": "complete_disjoint_prediction_inventory_union_with_batch_provenance",
+  "models": 25322,
+  "source_cohorts": [
+    {
+      "cohort": "original",
+      "inventory": "results/structures/esmfold-original-complete-v1",
+      "models": 10522,
+      "receipt_sha256": "d314024ca3bd46f1f4d65e5428c6dd32256190129d1b12fe8ad7412556afa1a8",
+      "inventory_sha256": "0379d8fcf50163c6d91653cca37b28080d9cfed6cd5b5059e82bc4319318fc88"
+    },
+    {
+      "cohort": "followon",
+      "inventory": "results/structures/esmfold-followon-complete-v1",
+      "models": 4252,
+      "receipt_sha256": "98b6deac879c040f8bfdf2b6f4a16ff8872a00b78cd973454fbd5bdbf3ed4972",
+      "inventory_sha256": "5054e0c59fd502bfa117de6dedd45b19ea5706021a0237d87670451d5033f7be"
+    },
+    {
+      "cohort": "ecology",
+      "inventory": "results/structures/esmfold-ecology-complete-v1",
+      "models": 675,
+      "receipt_sha256": "b430b60be0c5e6b5332db877878e69aa17282e5c688f90f468f5c0766b714a74",
+      "inventory_sha256": "57c7f743a0f8274352e340f93f06c3c09a9dc3722ea4f81b88a2bf82cd0c7c0a"
+    },
+    {
+      "cohort": "long-gpu0",
+      "inventory": "results/structures/esmfold-long-gpu0-complete-v1",
+      "models": 5510,
+      "receipt_sha256": "60c8c4356a1fdb5c587e0b4cb81db066cb80a6cb8bfedeaa265056822df7cffe",
+      "inventory_sha256": "7f84a10d554f37d83840e0811fc434c323d949885e0fac70f027953782debe56"
+    },
+    {
+      "cohort": "extended-union",
+      "inventory": "results/structures/esmfold-extended-union-v1",
+      "models": 4363,
+      "receipt_sha256": "92e787598067f4d152e1babb1fcb6bdda70865b09da62915b40828f87537d581",
+      "inventory_sha256": "d81dee150002a4aaa6e4d7e2cc4338fa25276a783143b79e68249f77063a68d7"
+    }
+  ],
+  "configurations": 7,
+  "models_by_configuration": {
+    "d662a12b8ced6491eb2273b4d19e92f620316acb138ea7568fb622fc77392042": 10522,
+    "63884b870ac421fd504bfd1b9232671373f12b2989735558122e61735a2c8c68": 4252,
+    "623b296eee586c076dbddfe265dac41ba8015f91b5a5828d4f7c4a3d64f520e7": 675,
+    "3d82b4d905c2147ddf82613e427ee418d7f79e9bc5ec9082936fd7bf651625a2": 5510,
+    "a1cb40f635158e16bfecd227196d218408a4cdb8ed5d25dfd8f8a653e6ecaee0": 2318,
+    "b2d0fc04f9442161f9a3dc3976e361a45b8a55024187b1f1162ddac9be2c8d9c": 1023,
+    "727df5a1aceae34e5b55983cb9b7398c2f15a928fdbc0b91e4f1f2508cbf540c": 1022
+  },
+  "varying_configuration_fields": [
+    "input_receipt_sha256",
+    "max_length",
+    "visible_gpu"
+  ],
+  "plan_sha256": "34cc559c778bae3c3aa372959197230fe90873af8439ef2ff13c33bf3695b512",
+  "script_sha256": "7cc4671e69010f9d81b1bf9133538ec8b17bd9bab774d672fb73bc0b31e4b6ec",
+  "elapsed_seconds": 19.60551619529724,
+  "artifacts": {
+    "inventory.jsonl": "0c44c08ce1cc8fabbecf867e4ca4164e6ba37f0f6390acd7df04bf5cceac9681",
+    "model_cohorts.tsv": "5e9793e258834bdf3487b258a542f25fe4fb5af549c471bc30031c4b2953ea34",
+    "prediction_configurations.json": "bcdc2ace1ec60c3802b7826b689195fafd139581450a587f570ee77b677c2f77"
+  },
+  "scope": "Unchanged source model records, disjoint exact sequences and model IDs, all coordinate and prediction receipt hashes checked. Configurations remain explicit. PAE files remain bound by original hashes; no new PAE or coordinate-accuracy audit. Mapping, feature qualification and evolutionary analyses remain separate."
+}

@@ -3404,3 +3404,16 @@ provenance. Scope is 3,924,624 residues and 3,552,697,882 PAE entries; four CPU
 equivalents, 16 GiB memory, no GPU prediction. The native workflow remains
 queued while mapping is active. Plan and process identity are in
 metadata/esmfold_extended_native_feature_{plan,launch}.json.
+
+
+## September 22: completed local prediction inventory
+
+The full five-cohort ESMFold inventory and independent record/configuration
+readback passed: 25,322 distinct sequence/model identities, seven preserved
+prediction configurations, and 25,509 exact global marker links across 295
+taxa and 124 markers. This is pre-qualification local availability, separate
+from AlphaFold and not full-proteome coverage. The full original cohort is
+being mapped (10,522 models, replacing its earlier 5,121-model partial cohort);
+long and extended residue mappings passed and feature/confidence processing
+is running. Combined qualified inputs and evolutionary analyses remain open.
+See [inventory evidence](completed-prediction-inventory-20260922.md).
