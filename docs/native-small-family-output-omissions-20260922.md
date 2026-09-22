@@ -134,3 +134,45 @@ uncalibrated planning, not an ETA; runtime depends on final native ortholog-tabl
 volume. No GPU or paid resources are used. Full gene-tree/HOG/duplication
 readback, final integrated ortholog statistics and biological interpretation
 remain separate requirements.
+
+
+## Full resolved-tree membership check queued
+
+`scripts/readback_resolved_tree_memberships.py` checks every native resolved
+tree against the exact sorted membership of its source family. It translates
+native output labels through the staged species/sequence ID maps, rejects
+ambiguous labels and duplicated genes, and requires exactly one output tree
+for every family with at least four genes. Every non-root branch must have a
+finite nonnegative length. An iterative traversal avoids recursion-depth
+failures on large or highly unbalanced trees; no pairwise ortholog expansion
+is performed.
+
+The staged inputs contain gene trees for families with at least three genes,
+but the installed native `Get_iOGs4` routine selects families of size at least
+four for reconciliation. Three-gene input trees must therefore not be confused
+with missing resolved output. Their pair coverage is handled by the separate
+small-family supplement. The resolved-tree readback does not validate event
+placement, HOG membership, inferred orthology or biological homology.
+
+`python scripts/check_resolved_tree_readback.py` passed a native three-family,
+13-gene fixture and a synthetic 1,500-tip deep tree. It rejected missing or
+duplicate trees, a gene substituted from another family, duplicate leaves,
+negative branch lengths and missing non-root branch lengths. Results are in
+`metadata/resolved_tree_readback_fixture_checks.json`.
+
+The production controller `scripts/advance_resolved_tree_readback.py` is queued
+behind the exact running native controller and requires successful completion
+of both guides before reading either final output. It verifies native source
+files against the original staged manifests and binds resolved-tree output
+hashes to the native completion record. Configuration and launch evidence are
+`metadata/expanded_resolved_tree_readback_plan.json` and
+`metadata/expanded_resolved_tree_readback_launch.json`. The service is
+`fungal-expanded-resolved-tree-readback-20260922.service`; output will be under
+`results/orthology/expanded-resolved-tree-readback-v1/`.
+
+The resource limit is one CPU, 32 GiB RAM and zero swap, with 1 GiB of planned
+output and a 50-GiB free-disk gate. Memory supports exact gene-label lookup
+across both full partitions, processed sequentially. The 0.5–12 hour execution
+allowance is uncalibrated planning, not an ETA. Full native reconciliation
+output validation remains incomplete until these and the separate HOG/event/
+ortholog checks pass.
