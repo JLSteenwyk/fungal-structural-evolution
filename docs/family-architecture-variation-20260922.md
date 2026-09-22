@@ -147,3 +147,56 @@ receipt is `metadata/family_architecture_variation_completed_readback.json`;
 its producer, plan and script hashes were checked before archival. The exact-
 membership guide comparison has passed this dependency gate and is running.
 These validated descriptive summaries do not establish domain-event results.
+
+
+## Completed guide comparison
+
+The full comparison passed. Both partitions share 656,507 families with exactly
+identical sorted gene membership, containing 5,778,033 of 5,815,847 proteins
+(99.35%). All 2,626,028 matched family/policy rows agree exactly. The remaining
+37,814 proteins belong to 1,676 profile-guide families or 2,015 MAFFT-guide
+families with guide-specific membership. These alternative partitions should
+be retained in downstream event analyses, even though their total protein
+coverage is the same.
+
+The following counts use the alignment/E-value policy and all families. Other
+policies remain available in the full table; they are sensitivity analyses of
+the same proteins, not independent replicates.
+
+| Descriptive measure | Profile guide | MAFFT guide |
+| --- | ---: | ---: |
+| Families with at least two annotated taxa | 28,817 | 28,799 |
+| Families with multiple ordered annotation signatures | 16,298 | 16,300 |
+| Families with order variation at fixed annotation multiplicity | 1,100 | 1,100 |
+| Families with multiplicity variation at fixed model/type set | 7,997 | 8,006 |
+| Conservatively screened families with order variation | 657 | 657 |
+| Conservatively screened families with multiplicity variation | 3,725 | 3,733 |
+
+Across both guides and all four policies, the observed order-variation counts
+range from 1,097 to 1,105 families; conservative counts range from 651 to 657.
+Observed multiplicity-variation counts range from 7,568 to 8,006, falling to
+3,699–3,733 under conservative screening. These are counts of families
+containing annotation patterns, not counts of evolutionary events. Multiple
+patterns can occur within one taxon; the full table separately identifies
+families containing at least two annotated taxa, which still does not establish
+independent transitions.
+
+Each guide contains 3,792,842 annotated proteins and 2,023,005 proteins without
+a qualifying Pfam hit (34.78%). Missing annotations cannot support a domain-loss
+call. Conservative screening retains 2,944,832–2,952,415 proteins depending on
+policy. Screening removes uncertain evidence and may also remove real biology;
+its reduced variation counts do not measure an artifact rate.
+
+The completed receipt is
+[`metadata/family_architecture_guide_comparison_completed_receipt.json`](../metadata/family_architecture_guide_comparison_completed_receipt.json).
+The complete 24-row guide/policy/scope table is
+[`metadata/family_architecture_guide_policy_summary.tsv`](../metadata/family_architecture_guide_policy_summary.tsv).
+All count columns were additionally checked for shared-plus-specific arithmetic,
+exact shared-summary equality between guides, coverage totals and subset bounds;
+that summary-level check is recorded in
+`metadata/family_architecture_guide_summary_arithmetic_readback.json`.
+It does not independently recompute the aggregation from all source rows.
+
+Reconciliation, domain-boundary review and phylogeny-aware event inference
+remain necessary before using these patterns in duplication, fusion, loss or
+rearrangement tests, or relating them to structural divergence.

@@ -1,0 +1,45 @@
+{
+  "status": "complete_audited_family_architecture_guide_summary",
+  "exact_shared_memberships": 656507,
+  "matched_family_policy_rows_checked": 2626028,
+  "summary_rows": 24,
+  "guides": [
+    {
+      "guide": "profile",
+      "rows": 2632732,
+      "families": 658183,
+      "proteins": 5815847
+    },
+    {
+      "guide": "mafft",
+      "rows": 2634088,
+      "families": 658522,
+      "proteins": 5815847
+    }
+  ],
+  "plan_sha256": "ae46d74684add1f492d1f3632cb48aba38e3c9193c9f74953793b7ddd02429bc",
+  "input_hashes": {
+    "metadata/family_architecture_guide_comparison_plan.json": "ae46d74684add1f492d1f3632cb48aba38e3c9193c9f74953793b7ddd02429bc",
+    "metadata/family_architecture_variation_readback_plan.json": "17c4ef6a26e52e15448d829c9d43b00f0c42182f86fb2e355ce879c91189aa94",
+    "scripts/compare_family_architecture_guides.py": "3c744f2d818a57c4524d22c21c1bf807f6b1892a4543f50f093e8551648156e3",
+    "scripts/check_family_architecture_guide_comparison.py": "3fef1e3b993b8d9dde126649c835e220a52de3f50920cda88ba1370f650fb7c9",
+    "metadata/family_architecture_variation_recovery_plan.json": "b4ecd775a1dec91d8153b8570564e7c0e0850e0b734e2c51c0776caca5c08470",
+    "scripts/summarize_family_architectures.py": "a056ceab44320d8854401ca34d5b09f106503768a3ebfb3add0964d1ebbc9ca9",
+    "scripts/check_family_architecture_variation.py": "0cab89aa6efc0d654fcc8780bb1eed4b867ff828649a33a779be05f29aa2e4c8",
+    "metadata/family_domain_bridge_plan.json": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+    "metadata/family_domain_bridge_indexed_readback_plan.json": "dbaeb4fdb72b747a194f1ff192cb7852c5660a96d7210e22b236da443c9a8bf2",
+    "results/domains/family-domain-bridge-readback-v2/receipt.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "results/domains/family-domain-bridge-v1/receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "results/domains/family-architecture-variation-v2/receipt.json": "73459021bd182e256bcf402090ccc18c145426a54a3bbe816eb653b837d1ac03",
+    "results/domains/family-architecture-variation-readback-v2/receipt.json": "4f7ed2ddabe45becf048c02f84cc24c503a148a348187c2d31e3672ca696a881",
+    "results/domains/family-architecture-variation-v2/profile_family_architectures.tsv.gz": "9fdd318356a9fdf298588cb9349f503342be3f07707b080ca4de7bdb5c862bf1",
+    "results/domains/family-architecture-variation-v2/mafft_family_architectures.tsv.gz": "b333f7c4218c4ed18f509678e0c2bf6875dfdf5a6122f94efa5b9b43f647c9f2"
+  },
+  "artifacts": {
+    "guide_policy_architecture_summary.tsv": "2f8e6b0ed11976bcdabebd66ba2edc1eb9d2fdee8bb594c6e1e5fd57a1a17639"
+  },
+  "elapsed_seconds": 1986.6560726165771,
+  "scope": "Descriptive annotation variation under both full guide partitions, with exact-membership controls. Shared-family metrics must agree exactly. Guide-specific membership is not a domain evolutionary event. Protein counts repeat across policy and scope rows; multi-taxon variation does not establish independent transitions, duplication, branch direction or statistical significance."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed_summary_arithmetic_and_shared_membership_equality",
+  "rows_checked": 24,
+  "count_fields_checked": 27,
+  "producer_receipt_sha256": "53a9bf04002ac0970e99bb1b9067ff4c614d482ecbba8fd0a9855dc58a122ee5",
+  "summary_sha256": "2f8e6b0ed11976bcdabebd66ba2edc1eb9d2fdee8bb594c6e1e5fd57a1a17639",
+  "checks": [
+    "All counts partition into shared and guide-specific membership scopes",
+    "Shared-membership summary counts agree across both guides for each policy",
+    "Protein totals and annotated/no-hit partitions match",
+    "Conservative protein counts and multi-taxon variation counts respect bounds"
+  ],
+  "scope": "Summary-level arithmetic and receipt binding only; full family/policy reconstruction is covered by the separately archived production audit."
+}
