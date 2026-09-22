@@ -40,3 +40,35 @@ The script checks exact species/assembly joins and preserves the earlier
 evidence table used by frozen analyses. The new table has not yet been used
 to fit ecological effects. Source passages were reviewed online; no local
 article checksum or experimental verification is claimed.
+
+## Common-marker coverage across all 26 curated taxa
+
+`python scripts/summarize_expanded_ecology_marker_overlap.py` evaluates all
+325 unordered taxon pairs and the eight provisional curation groups against
+the frozen marker availability table. Multiple proteins per marker/taxon are
+rejected instead of silently selecting a copy. The tables preserve the exact
+marker lists for each pair and prediction method. An independent pandas
+readback using marker joins and grouped sums checked every pair count, marker
+list and group count; the result is
+`metadata/ecology_expanded_marker_overlap_readback.json`.
+
+Hydnum–Botryobasidium shares 115 AlphaFold markers, and Hydnum–Tulasnella shares
+98. Across all four curated Cantharellales taxa, 86 markers have recovered
+sequences and 79 have some model in every taxon, but zero have a single
+prediction method represented in every taxon. Cantharellus is the source
+coverage bottleneck. These are acquisition counts, not qualified structural
+sites or independent evolutionary contrasts.
+
+The earlier mixed-state groups now have 46 common ESMFold markers across all
+five Amanita entries and 62 across the three Cenococcum/comparator entries.
+The Cenococcum group also has one common AlphaFold marker. These counts use
+the complete prediction inventory, before joint confidence filtering; they
+must not replace the smaller, previously reported qualified-alignment counts.
+
+The pair table distinguishes markers with any model from markers with a
+matched prediction source. A marker represented by opposite methods in the
+two taxa is explicitly counted as mixed-source-only. Neither the 325 pairs
+nor the eight groups is an independent-transition count. Groups containing
+one species are reported as descriptive coverage only. The next gate is
+to intersect these candidates with the completed confidence-qualified
+alignments, then assess trait transitions on the supported phylogenies.
