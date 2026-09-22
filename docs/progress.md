@@ -3417,3 +3417,9 @@ being mapped (10,522 models, replacing its earlier 5,121-model partial cohort);
 long and extended residue mappings passed and feature/confidence processing
 is running. Combined qualified inputs and evolutionary analyses remain open.
 See [inventory evidence](completed-prediction-inventory-20260922.md).
+
+The combined 25,322-model residue mapping has now started, with a bound
+independent full readback scheduled afterward. Its plan preserves all seven
+prediction configurations and all 25,509 exact marker/protein links. This
+does not yet establish qualified paired-alignment coverage; source feature
+qualification and combined encoding checks remain required.

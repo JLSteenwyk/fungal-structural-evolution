@@ -55,3 +55,29 @@ The full original cohort is undergoing residue mapping; long and extended
 cohorts have completed residue mapping and are undergoing feature/confidence
 qualification. Combined qualified mappings, regenerated paired alignments,
 updated phylogenetic fits and evolutionary tests remain unfinished.
+
+## Combined residue mapping
+
+The combined mapping started under
+`fungal-all-completed-mapping-20260922.service`, using
+`scripts/map_complete_prediction_union.py` and
+`metadata/esmfold_all_completed_mapping_plan.json`. The plan pins 413 source
+and script files. It requires the passed inventory readback, binds every
+model to its previously audited prediction record, and preserves all original
+audit statuses and table schemas in a derived union. A missing source column
+is serialized as blank, not inferred from another cohort. A focused check
+verified this handling for the ecology audit's absent reuse-state column.
+
+The controller maps all 25,322 models, then independently verifies every
+exported residue against the original NPZ sequence/confidence, Stockholm
+alignment and frozen profile matrix. The declared scope is all 25,509 exact
+global marker/protein links. The mapped snapshot is
+`results/structural_markers/esmfold-all-completed-20260922-v1`; its independent
+readback is `results/structural_markers/esmfold-all-completed-residue-readback-20260922-v1`.
+
+The pre-launch allowance is one CPU equivalent, 32 GiB RAM, no swap, 50 GiB
+output, a 100 GiB free-disk gate, and 1–24 hours of uncalibrated planning. The
+larger memory allowance supports full residue-level dictionaries during
+readback. This uses existing predictions and does not launch GPU inference.
+Completed mapping and confidence-qualified encoding integration remain
+separate gates before rebuilding paired phylogenetic inputs.
