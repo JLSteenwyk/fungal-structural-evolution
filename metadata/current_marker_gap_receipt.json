@@ -1,0 +1,40 @@
+{
+  "status": "complete_frozen_marker_gap_characterization",
+  "inventory_records": 1316471,
+  "missing_marker_records": 3669,
+  "missing_unique_sequences": 3656,
+  "missing_taxa": 508,
+  "missing_markers": 120,
+  "link_length_bins": {
+    "at_most_1536": 2726,
+    "at_most_3072": 508,
+    "at_most_2048": 287,
+    "above_3072": 25,
+    "at_most_1024": 25,
+    "at_most_768": 30,
+    "at_most_512": 68
+  },
+  "unique_length_bins": {
+    "at_most_1536": 2718,
+    "at_most_3072": 504,
+    "at_most_2048": 286,
+    "at_most_768": 30,
+    "at_most_1024": 25,
+    "at_most_512": 68,
+    "above_3072": 25
+  },
+  "noncanonical_sequences": 110,
+  "maximum_missing_sequence_length": 5502,
+  "alternative_cached_models": 0,
+  "missing_sequences_with_alternative_models": 0,
+  "missing_links_with_alternative_models": 0,
+  "plan_sha256": "b6b21ecd4e4c6fff28a6fac9edaa859dd7440b0818a2c0691d2979be59997394",
+  "script_sha256": "b7746ab6824b625816a30b3bb6458915c7e6bf83776dc44fcb3c356bacf1459f",
+  "artifacts": {
+    "gap_unique_sequences.tsv": "b0110f33d5673434c1a5ce6366cee191e5638bd988c326462d49e5b3eef254ea",
+    "gap_marker_records.tsv": "4782412969fe63fef36faead99c6447fff43de656e14271ddfee900078e5e098",
+    "alternative_cached_models.tsv": "46b84f303a4c117be2ade35293257d99bac9e0e37747f8ba0348b6a1119adfec",
+    "lineage_marker_availability.tsv": "c19bc9eadf2f33d9dcc31889e9e32acc55397376ff3be49ccb08057e7fbdd6d2"
+  },
+  "scope": "Full recovered-marker gaps in the specified catalogs, with exact frozen-log checks for alternative cached sources. Length bins are disjoint. Alternative models are not qualified or silently substituted. Not a launched prediction queue, proof of public-database absence, or whole-proteome coverage."
+}
