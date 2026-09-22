@@ -2,6 +2,7 @@
 """Check native restart fixtures against their known orthology and duplication truth."""
 import argparse
 import csv
+import gzip
 import hashlib
 from io import StringIO
 import json
@@ -14,7 +15,10 @@ def sha(p):
 
 
 def table(p):
-    with p.open() as handle:
+    compressed = p.with_suffix(p.suffix + '.gz')
+    if p.exists() and compressed.exists():
+        raise ValueError('Ambiguous plain and compressed table: ' + str(p))
+    with (p.open() if p.exists() else gzip.open(compressed, 'rt')) as handle:
         return list(csv.DictReader(handle, delimiter='\t'))
 
 

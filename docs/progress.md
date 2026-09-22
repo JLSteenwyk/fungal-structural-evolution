@@ -3317,3 +3317,16 @@ confirmed with the native OrthoFinder parser. No incompatible split pair
 passes SH-aLRT >=80 and empirical UFBoot >=95 in both runs. This is one
 alignment's guide sensitivity, not a final species tree or model-adequacy
 result. See docs/pmsf-profile-readback-20260922.md.
+
+
+September 22: launched the full expanded reconciliation controller for the
+profile and MAFFT homogeneous-guide sensitivities, sequentially, with all
+5,815,847 proteins in each partition. It first creates verified isolated
+physical input copies, then runs native --from-trees --no-fix-files
+--save-space with four analysis workers. The exact command mode passed a
+four-worker synthetic orthology/duplication fixture. The native flag suppresses
+species-pair exports but leaves uncompressed per-species tables on this code
+path. CPU/memory/disk gates and source pins are in
+metadata/expanded_reconciliation_execution_plan.json. Native output completion
+and independent full readback remain unproven. See
+docs/expanded-reconciliation-execution-20260922.md.

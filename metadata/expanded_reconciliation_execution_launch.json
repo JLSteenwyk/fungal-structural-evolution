@@ -1,0 +1,41 @@
+{
+  "status": "native_profile_reconciliation_running",
+  "pid": 1034872,
+  "create_time": 1790090213.9,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_expanded_reconciliation.py",
+    "--plan",
+    "metadata/expanded_reconciliation_execution_plan.json"
+  ],
+  "checked_unix": 1790090272.2728481,
+  "unit": "fungal-expanded-reconciliation-20260922.service",
+  "plan": "metadata/expanded_reconciliation_execution_plan.json",
+  "state": "results/orthology/expanded-reconciliation-execution-v1/state.json",
+  "native_pid": 1047895,
+  "native_create_time": 1790090241.02,
+  "native_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/orthofinder",
+    "--from-trees",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-v1/profile/Source",
+    "-s",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-v1/profile/species_tree_taxa.nwk",
+    "-n",
+    "expanded_profile",
+    "-t",
+    "8",
+    "-a",
+    "4",
+    "-M",
+    "msa",
+    "-S",
+    "diamond",
+    "-A",
+    "famsa",
+    "-T",
+    "fasttree",
+    "--no-fix-files",
+    "--save-space"
+  ]
+}
