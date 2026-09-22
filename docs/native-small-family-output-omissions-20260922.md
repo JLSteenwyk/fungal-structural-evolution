@@ -176,7 +176,23 @@ across both full partitions, processed sequentially. The 0.5–12 hour execution
 allowance is uncalibrated planning, not an ETA. Full native reconciliation
 output validation remains incomplete until these and the separate HOG/event/
 ortholog checks pass.
-# First full reconciliation guide completed; tree readback running
+# First full reconciliation guide and tree-membership readback completed
+
+The early profile-guide readback has passed for **70,307 resolved trees,
+5,115,031 gene tips and 10,132,459 nodes**, covering every expected family
+with at least four genes. The receipt is archived as
+`metadata/profile_resolved_tree_completed_readback.json` and matches the
+frozen native output hash, source-family/protein counts and auditor hash.
+All source memberships, unique labels and finite nonnegative branch
+lengths passed. This verifies membership and output integrity, not
+reconciliation-event semantics or biological orthology.
+
+The completed profile ortholog output contains 526 grouped tables totaling
+41,164,777,599 bytes. The existing small-family supplement controller remains
+live and waits for both native guide runs to finish, as required by its
+production completion gate. No duplicate early scan or native-output edit
+was launched. The second guide and final HOG/event/ortholog validation remain
+unfinished.
 
 The profile-guide native execution has finished under the recovery plan;
 its stage receipt is archived in
@@ -185,7 +201,7 @@ controller has moved on to the MAFFT-guide execution. This is execution
 completion only: the known small-family output omissions and full output
 semantics still require validation and supplementation.
 
-An early full profile-guide resolved-tree readback is running as
+The early full profile-guide resolved-tree readback ran as
 `fungal-profile-resolved-tree-early-readback-20260922.service`, using the
 unchanged tested `readback_resolved_tree_memberships.py`. Before launch,
 the 219,045,061-byte resolved-tree file matched its native completion hash,
