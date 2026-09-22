@@ -1,0 +1,34 @@
+{
+  "output": "results/structural_clusters/whole-proteome-afdb-database-20260922-v1",
+  "catalog": "results/structures/whole-proteome-afdb-catalog-20260922-v1",
+  "readback": "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json",
+  "catalog_plan": "metadata/whole_proteome_structure_catalog_plan.json",
+  "readback_plan": "metadata/whole_proteome_structure_catalog_readback_plan.json",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "predecessor": {
+    "pid": 2052780,
+    "create_time": 1790104435.25
+  },
+  "pins": {
+    "scripts/build_whole_proteome_foldseek_database.py": "612452b9ba6b35142a80039cfc342162485b02245436b5106b37ae74c27f13db",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/whole_proteome_structure_catalog_plan.json": "522f1149059ed9c620304da528be7df5674e301fb78bdd4ee0c2a1da17211271",
+    "metadata/whole_proteome_structure_catalog_readback_plan.json": "94352837285cd5d7552d19453bd84430913993f18cd30ccb15b3d64147a36f5a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 500,
+    "minimum_available_memory_gib": 128,
+    "output_planning_gib": 250,
+    "runtime_planning_hours": [
+      1,
+      48
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

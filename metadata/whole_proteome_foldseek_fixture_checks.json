@@ -1,0 +1,16 @@
+{
+  "status": "passed_installed_foldseek_path_list_and_database_contract",
+  "models": 2,
+  "residues": 534,
+  "checks": [
+    "path-list input preserves model aliases",
+    "all AA sequences match catalog hashes",
+    "3Di symbols and lengths valid",
+    "float coordinate shapes finite",
+    "altered AA sequence rejected",
+    "nonfinite coordinate rejected"
+  ],
+  "executable_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+  "script_sha256": "612452b9ba6b35142a80039cfc342162485b02245436b5106b37ae74c27f13db",
+  "scope": "Compatibility and corruption fixture, not a full-dataset clustering pilot or independent 3Di-value reconstruction."
+}

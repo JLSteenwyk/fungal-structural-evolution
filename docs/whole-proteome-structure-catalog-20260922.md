@@ -74,3 +74,34 @@ been updated. This tests semantic reconstruction rather than only hashes.
 The producer's live log reports 1,290,278 selected models and has entered
 coordinate hash verification. This is a provisional selection count,
 not a completed coverage result; acceptance awaits both completion receipts.
+
+## Search-database construction queued
+
+The next stage is queued behind the independent readback as
+`fungal-whole-proteome-foldseek-db-20260922-v2.service`. Its plan,
+`metadata/whole_proteome_foldseek_database_plan.json`, pins the catalog and
+readback plans, installed executable and implementation. It will process
+the entire verified catalog into
+`results/structural_clusters/whole-proteome-afdb-database-20260922-v1`.
+
+The installed Foldseek version e3fadcd07f971e864c094ac4f3a78bf4ed845e07
+accepts a newline-separated path list, verified against its [pinned source](https://github.com/steineggerlab/foldseek/blob/e3fadcd07f971e864c094ac4f3a78bf4ed845e07/src/strucclustutils/structcreatedb.cpp)
+and a native two-model compatibility fixture. This avoids creating a million
+additional symlinks. The command explicitly sets four threads, GPU off,
+pLDDT70 seeding masking and float32 coordinate storage.
+
+After native database construction, every lookup identity and amino-acid
+sequence hash is checked against the catalog. The verifier checks every
+3Di record's length and alphabet and every coordinate record's size and
+finiteness. It does not independently regenerate 3Di values or compare
+all coordinates back to CIF. Corrupted amino-acid and nonfinite-coordinate
+fixtures were rejected. pLDDT seeding masks are not full confidence masks.
+
+Resources are four CPU equivalents, 64 GiB RAM, no swap, 250 GiB output
+allowance, 500 GiB free disk and 128 GiB available-memory gates. The
+uncalibrated runtime allowance is 1–48 hours after catalog verification.
+No pairwise search or clustering is launched by this database stage;
+those require their own measured dimensions, resource estimates and
+membership/edge checks. The launch receipt also records an initial setup
+failure before database work began, followed by the verified corrected
+launch. No existing database or running analysis was restarted.
