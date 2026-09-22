@@ -1,0 +1,24 @@
+{
+  "output": "results/domains/family-architecture-guide-comparison-v2",
+  "auditor_plan": "metadata/family_architecture_variation_readback_plan.json",
+  "auditor_pid": 556523,
+  "auditor_start_ticks": "53308208",
+  "pins": {
+    "metadata/family_architecture_variation_readback_plan.json": "17c4ef6a26e52e15448d829c9d43b00f0c42182f86fb2e355ce879c91189aa94",
+    "scripts/compare_family_architecture_guides.py": "3c744f2d818a57c4524d22c21c1bf807f6b1892a4543f50f093e8551648156e3",
+    "scripts/check_family_architecture_guide_comparison.py": "3fef1e3b993b8d9dde126649c835e220a52de3f50920cda88ba1370f650fb7c9"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      0.5,
+      8
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}

@@ -104,3 +104,35 @@ no swap, 1 GiB output and 50 GiB free disk, with an uncalibrated 1–24 hour
 planning interval after the producer finishes. The successful output status
 will be `passed_full_family_architecture_variation_readback`; no such production
 completion is claimed at launch.
+
+## Guide sensitivity with exact family memberships
+
+The bridge readback passed, and the v2 architecture producer is running.
+`scripts/compare_family_architecture_guides.py` is queued after the independent
+summary readback under
+`fungal-family-architecture-guide-comparison-20260922.service`. Its plan is
+`metadata/family_architecture_guide_comparison_plan.json`; output will be
+`results/domains/family-architecture-guide-comparison-v2/`.
+
+The comparison matches families by the hash of their complete sorted native
+gene membership, not by their guide-specific family names. For exact shared
+memberships, every policy-specific metric must agree, even when family names
+differ. Missing, duplicate or mismatched rows fail the comparison.
+
+Per-guide/per-policy summaries report all families, exact shared memberships
+and guide-specific memberships separately. They count missing annotations, QC
+flags, ordered-signature variation, multiplicity variation and order variation.
+The observed and conservative subsets remain separate. Counts also distinguish
+families with at least two annotated taxa; this is descriptive coverage, not
+proof of replicated evolutionary transitions. No family or taxon is removed
+from the full analysis. Guide-specific membership does not itself indicate a
+domain evolutionary event. Summing across the all-family and subset rows, or
+across policies, would double-count proteins.
+
+The pre-launch fixture passed exact-membership matching across renamed family
+IDs, full partition totals, order/multiplicity summaries and rejection of
+altered, missing or duplicated rows. Run
+`python scripts/check_family_architecture_guide_comparison.py`. The queued
+comparison uses one CPU, 16 GiB RAM, no swap, a 1-GiB output allowance and
+a 50-GiB free-disk gate; 0.5–8 hours is an uncalibrated planning interval.
+Results remain pending until the full producer and audit finish.

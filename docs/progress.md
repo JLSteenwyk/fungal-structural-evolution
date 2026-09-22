@@ -3514,3 +3514,18 @@ production output validation remains pending. The indexed bridge audit has
 advanced through 650,000 MAFFT-guide families after checking the profile guide,
 and all three structural PAE-export child processes were confirmed running.
 See [summary validation](family-architecture-variation-20260922.md#full-summary-readback).
+
+
+## Complete family bridge validated; guide comparison queued — 22 September 2026
+
+The indexed bridge readback passed all 5,815,847 proteins from 526 taxa and
+both full family partitions in 423.5 seconds. Its receipt is archived and
+bound to the producer, plan and script. The v2 domain-architecture producer
+has started the profile partition. Full summary readback remains queued.
+
+An exact-membership guide comparison is implemented, tested and queued after
+that readback. It will compare annotations within unchanged families despite
+renumbered IDs, and report changed-membership partitions separately, with
+observed/conservative order and multiplicity counts. This prepares domain
+evolution inputs without calling partition changes evolutionary events.
+See [guide sensitivity](family-architecture-variation-20260922.md#guide-sensitivity-with-exact-family-memberships).

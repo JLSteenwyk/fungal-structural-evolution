@@ -97,3 +97,12 @@ under `fungal-family-domain-indexed-readback-20260922.service`, using
 8-GiB, no-swap limits. The new downstream architecture job waits for this
 exact process identity and a passing receipt. Full production validation is
 still pending; the timing comparison is not its substitute.
+
+The indexed production readback subsequently passed in 423.5 seconds. It checked
+all 5,815,847 proteins and 526 taxa, all 658,183 profile-guide families and
+658,522 MAFFT-guide families, complete source memberships and provenance,
+SQLite integrity and foreign keys, and final input hashes. The receipt is
+archived as `metadata/family_domain_bridge_completed_readback.json`, with its
+producer, plan and script hashes checked on archival. The waiting architecture
+analysis has started its profile-guide partition. This validates the bridge;
+reconciled orthology and biological domain-event inference remain unfinished.
