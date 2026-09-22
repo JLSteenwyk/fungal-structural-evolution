@@ -1,7 +1,7 @@
 # Whole-proteome structure catalog
 
 The marker catalog does not measure whole-proteome coverage. A separate
-full-data catalog is running against all **5,815,847 representative proteins
+full-data catalog has completed screening all **5,815,847 representative proteins
 from 526 sampled entries**. It uses the same frozen AlphaFold retrieval log
 as the refreshed marker work and preserves the one-longest-protein-per-gene
 selection policy of `metadata/gene_representatives_receipt.json`.
@@ -21,7 +21,7 @@ The immutable output directory is
 `results/structures/whole-proteome-afdb-catalog-20260922-v1`. Outputs include
 all protein/model links, model provenance in JSONL, per-taxon coverage and
 a completion receipt. Downstream work must require that completion receipt;
-files from the running producer are incomplete. Absence from this catalog
+partial files alone do not establish successful completion. Absence from this catalog
 means absence from the frozen source snapshot, not absence from public
 databases or from later downloads. ESMFold models are not included in this
 source-specific catalog and will require an explicit subsequent integration.
@@ -38,7 +38,7 @@ on a synthetic fixture: best-confidence model selection, latest failed
 accession exclusion, wrong-provider exclusion, repeated sequence links
 and rejection of a changed coordinate file. Fixture coordinate bytes are
 not valid structures: this explicitly tests catalog and integrity logic,
-not coordinate validation. The scientific catalog remains in progress.
+not coordinate validation. The scientific catalog and independent full-data link readback have passed.
 
 Reproduce with a fresh output path in a new pinned plan:
 
@@ -52,7 +52,7 @@ remote-homology review and atlas-wide evolutionary tests remain unfinished.
 
 ## Independent full-data link readback
 
-`scripts/readback_whole_proteome_catalog.py` is queued behind the exact
+`scripts/readback_whole_proteome_catalog.py` completed after waiting for the exact
 producer PID and creation time. It requires successful catalog completion,
 checks the frozen primary inputs and output hashes, then independently
 replays latest accession statuses and selects models by a stable descending
@@ -71,13 +71,29 @@ finishes. The updated synthetic fixture verifies both successful readback
 and rejection of an incorrect protein link whose artifact checksum has
 been updated. This tests semantic reconstruction rather than only hashes.
 
-The producer's live log reports 1,290,278 selected models and has entered
-coordinate hash verification. This is a provisional selection count,
-not a completed coverage result; acceptance awaits both completion receipts.
+The completed catalog contains **1,290,278 unique models linked to 1,319,513
+of 5,815,847 proteins (22.69%)**, with models for 496 of 526 sampled entries.
+The producer verified 492,263,006,636 coordinate bytes. Independent readback
+reconstructed all representative sequences, model selections and protein links.
+Both systemd jobs terminated successfully. Completion receipts and the complete
+526-row coverage table are archived under `metadata/whole_proteome_structure_catalog_completed_receipt.json`,
+`metadata/whole_proteome_structure_catalog_completed_readback.json` and
+`metadata/whole_proteome_structure_taxon_coverage.tsv`. All catalog artifact
+hashes and coverage-table totals were rechecked before archival.
 
-## Search-database construction queued
+| Sampling role | Entries with models / total | Proteins with models / total | Coverage |
+|---|---:|---:|---:|
+| Fungal ingroup | 472 / 501 | 1,254,497 / 5,431,687 | 23.10% |
+| Non-fungal outgroup | 24 / 25 | 65,016 / 384,160 | 16.92% |
 
-The next stage is queued behind the independent readback as
+These are sampled entries, not a new validation of distinct species identities.
+Coverage is source-specific availability before confidence filtering. It does
+not include local ESMFold models and does not establish that proteins missing
+from this catalog lack models elsewhere.
+
+## Search-database construction running
+
+The next stage passed the independent-readback gate and is running as
 `fungal-whole-proteome-foldseek-db-20260922-v2.service`. Its plan,
 `metadata/whole_proteome_foldseek_database_plan.json`, pins the catalog and
 readback plans, installed executable and implementation. It will process
@@ -106,10 +122,10 @@ membership/edge checks. The launch receipt also records an initial setup
 failure before database work began, followed by the verified corrected
 launch. No existing database or running analysis was restarted.
 
-## Gene-family coverage bridge queued
+## Gene-family coverage bridge completed; independent readback pending
 
-`scripts/bridge_whole_proteome_structures_to_families.py` is queued behind
-the independent catalog readback. Its plan is
+`scripts/bridge_whole_proteome_structures_to_families.py` completed after
+the independent catalog readback passed. Its plan is
 `metadata/whole_proteome_family_coverage_plan.json`, launched as
 `fungal-whole-proteome-family-coverage-20260922.service`. The stage requires
 the previously completed independent family/domain bridge audit, then joins
@@ -133,3 +149,10 @@ require independent readback. These family assignments are not finalized
 reconciled orthology, and the models have not been confidence-qualified
 atlas-wide. Coverage does not establish duplication or domain events,
 remote homology, structural acceleration or statistical power.
+
+The producer reports 30,959 profile-guide families and 30,934 MAFFT-guide
+families with models in at least two taxa. All 1,319,513 modeled protein links
+occur in each complete family partition. These are provisional producer totals:
+independent family-level reconstruction is the next acceptance gate. A family
+with every protein modeled may be a singleton and is not necessarily eligible
+for comparative analysis. No family-level evolutionary result is inferred here.

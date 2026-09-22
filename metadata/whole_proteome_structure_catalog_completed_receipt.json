@@ -1,0 +1,23 @@
+{
+  "status": "complete_whole_representative_proteome_exact_sequence_catalog",
+  "taxa": 526,
+  "proteins_screened": 5815847,
+  "proteins_linked": 1319513,
+  "unique_models": 1290278,
+  "taxa_with_models": 496,
+  "coordinate_bytes_verified": 492263006636,
+  "inventory_records": 1316471,
+  "latest_accession_status_counts": {
+    "verified": 1310297,
+    "no_exact_full_length_model": 13,
+    "error": 3549
+  },
+  "plan_sha256": "522f1149059ed9c620304da528be7df5674e301fb78bdd4ee0c2a1da17211271",
+  "elapsed_seconds": 1091.4286363124847,
+  "artifacts": {
+    "taxon_coverage.tsv": "68902ab65d13bc06d7c0e370bbbd71f8df3397b7cb528ba105b393fc8725aa4b",
+    "models.jsonl": "7361c7de4c851f3d4a20dbe077269d738968035c425fe2f72908b120b5078dd2",
+    "protein_model_links.tsv": "6937557ffcb6318a8e176b2562001ca8614b897712fc7ae4a50c8a755290958d"
+  },
+  "scope": "All representative proteins screened by exact sequence hash and length; selected coordinate bytes checked against existing verification records. One source-specific model per sequence. No new CIF-content audit, confidence qualification, PAE assessment, structure clustering, orthology assignment or experimental validation. Missing means absent from this frozen source catalog, not public-database absence."
+}
