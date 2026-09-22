@@ -1,0 +1,56 @@
+{
+  "output": "results/domains/family-domain-bridge-v1",
+  "proteins": 5815847,
+  "taxa": 526,
+  "architecture_database": "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite",
+  "architecture_receipt": "results/domains/full-candidate-architectures-v1/receipt.json",
+  "architecture_readback": "results/domains/full-candidate-architectures-readback-v1/receipt.json",
+  "merge_receipt": "results/orthology/guide-discovery-merge-v1/receipt.json",
+  "merge_readback": "metadata/guide_discovery_merge_completed_readback.json",
+  "species_ids": "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/Source/WorkingDirectory/SpeciesIDs.txt",
+  "sequence_ids": "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/Source/WorkingDirectory/SequenceIDs.txt",
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 30,
+    "minimum_free_disk_gib": 100,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "guides": [
+    {
+      "name": "profile",
+      "clusters": "results/orthology/guide-discovery-merge-v1/profile/clusters_id_pairs.txt",
+      "crosswalk": "results/orthology/guide-discovery-merge-v1/profile/family_sources.tsv",
+      "families": 658183
+    },
+    {
+      "name": "mafft",
+      "clusters": "results/orthology/guide-discovery-merge-v1/mafft/clusters_id_pairs.txt",
+      "crosswalk": "results/orthology/guide-discovery-merge-v1/mafft/family_sources.tsv",
+      "families": 658522
+    }
+  ],
+  "pins": {
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "results/domains/full-candidate-architectures-v1/receipt.json": "43dd56e25a284c55ee4d6f7bedd534454998c7e0d8599a5755ebc0292d4e6f3c",
+    "results/domains/full-candidate-architectures-readback-v1/receipt.json": "ccdcc4ce4c7a64ee0ae1e70df734bbe8103c559031f852d4caae3d1ad63e83e9",
+    "results/orthology/guide-discovery-merge-v1/receipt.json": "a6236b4b2b27111a1b41170de71a884b512fa4e10e58a0aaf7576080c631403e",
+    "metadata/guide_discovery_merge_completed_readback.json": "c4cdfd1caa67aa1a160b6799e5384f818d24b9962a69b757b11f8d73adf4a93a",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "scripts/build_family_domain_bridge.py": "7f981e29582d23d09ce8269774ba9d36b690a4b517ab90d73aa85e7543782c04",
+    "scripts/check_family_domain_bridge.py": "337a593ef62bbc8327f7508135c27068c23070bb1a29c8958dbfa3ca7ed9079d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/tools/mcl.py": "f51f5fac8377a40c27e66edffcd147430d6c5990a563bd26684a35fbd121d590",
+    "metadata/expanded_reconciliation_inputs_complete_readback.json": "7321da0448f5ca32c46f2ef945f4070bb05a4e1f55a52ecc02ccb465bf355000",
+    "results/orthology/guide-discovery-merge-v1/profile/clusters_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+    "results/orthology/guide-discovery-merge-v1/profile/family_sources.tsv": "e146db00a53f7030b58b1fa8de25bc4064670b13cda8a4eb1bde95bbfb80b350",
+    "results/orthology/guide-discovery-merge-v1/mafft/clusters_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e",
+    "results/orthology/guide-discovery-merge-v1/mafft/family_sources.tsv": "92c1e36168759c81954adf7325fbf475ebbb6dc9be07ecd563e806f0516b79b6"
+  }
+}

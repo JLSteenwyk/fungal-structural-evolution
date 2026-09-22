@@ -80,3 +80,15 @@ state and the eventual completion receipt are under
 CPU equivalent, 8 GiB memory, no swap and small audit outputs. The 0.5–8-hour
 planning allowance starts after the builder completes. Queuing the audit does
 not establish that the database has passed.
+
+The independent audit has now passed in full. The archived receipt is
+`metadata/full_candidate_domain_architecture_completed_readback.json`.
+It checks 5,713,603 queries, 8,103,610 raw hits, and all 5,815,847 protein links
+across 526 taxa. There are 53,248 queries whose retained hit sets differ among
+the four competition policies. The 5,767,208 alternatives count sums alternatives
+across queries; it is not a count of globally distinct biological architectures.
+No-hit queries and uncertain overlap/nesting remain explicitly represented.
+
+Family integration is the next stage; see
+`docs/family-domain-bridge-20260922.md`. Passing this annotation audit does not
+establish domain gains, losses, fusions, or rearrangements.
