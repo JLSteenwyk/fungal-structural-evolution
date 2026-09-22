@@ -408,6 +408,28 @@ full-context readback are pending; their queueing does not establish calibrated
 confidence, biological accuracy or completed evolutionary analyses.
 # Refreshed AlphaFold paired alignments queued
 
+The subsequent fitting controller is also queued as
+`fungal-current-afdb-paired-fits-20260922.service`; its plan is
+`metadata/current_afdb_paired_fits_plan.json`. It requires the exact paired
+input controller to finish successfully and checks the completed input and
+independent array-readback receipts before using any new alignment.
+Every eligible marker receives an AA LG+F+G4 tree search with 1,000 SH-aLRT
+and 1,000 UFBoot replicates with BNNI, then AF+G4, AF+F+G4 and LLM+G4
+structural branch fits on that marker's fixed AA topology. This is at most
+125 markers and 500 fits; actual dimensions are recorded after qualification.
+
+The fitting producer, report auditor, structural models and IQ-TREE executable
+are unchanged and hash-pinned. The controller allows four concurrent
+single-thread fits, 2 GiB per fit, with a 16 GiB total memory cap, no swap,
+and four CPU equivalents. Planning reserves 50 GiB output and requires
+100 GiB free disk and 32 GiB available memory before execution. The
+uncalibrated 1–336 hour runtime range is inherited from the full-cohort
+planning allowance and is not a measured ETA. No GPU or paid resources are
+used. The final report audit checks the fit grid, provenance, branch tables
+and numerical warnings; it does not independently recompute likelihoods.
+These are conditional point estimates. Branch uncertainty, model adequacy,
+direct structural comparisons and ecological inference remain separate work.
+
 The next CPU stage is registered as
 `fungal-current-afdb-paired-inputs-20260922.service`, with plan
 `metadata/current_afdb_paired_inputs_plan.json` and controller
