@@ -34,11 +34,25 @@ def main():
         assert receipt['proteins_screened']==4 and receipt['proteins_linked']==2 and receipt['unique_models']==1
         rows=list(csv.DictReader((root/'output/protein_model_links.tsv').open(),delimiter='\t'))
         assert {r['protein_id'] for r in rows}=={'p1','p4'} and {r['model_id'] for r in rows}=={'high'}
+        auditor=script.with_name('readback_whole_proteome_catalog.py')
+        audit_plan=root/'readback_plan.json'
+        audit_config=dict(producer_plan=str(plan_path),output=str(root/'readback.json'),
+                          pins={str(p):digest(p) for p in (plan_path,auditor)})
+        audit_plan.write_text(json.dumps(audit_config))
+        subprocess.run([sys.executable,str(auditor),'--plan',str(audit_plan)],check=True,capture_output=True)
+        link_path=root/'output/protein_model_links.tsv'
+        original=link_path.read_text()
+        link_path.write_text(original.replace('\tp1\t','\twrong_protein\t'))
+        receipt['artifacts'][link_path.name]=digest(link_path)
+        (root/'output/receipt.json').write_text(json.dumps(receipt))
+        audit_config['output']=str(root/'bad_readback.json');audit_plan.write_text(json.dumps(audit_config))
+        bad=subprocess.run([sys.executable,str(auditor),'--plan',str(audit_plan)],capture_output=True,text=True)
+        assert bad.returncode!=0 and 'Protein/model link differs' in bad.stderr
         Path(high['path']).write_text('altered bytes')
         plan['output']=str(root/'tampered');plan_path.write_text(json.dumps(plan))
         failed=subprocess.run([sys.executable,str(script),'--plan',str(plan_path)],capture_output=True,text=True)
         assert failed.returncode!=0 and 'Changed coordinate file' in failed.stderr
-    print(json.dumps(dict(status='passed_whole_proteome_catalog_fixture',checks=['best confidence model selected','latest failed accession excluded','other provider excluded','duplicate sequences retain separate protein links','tampered selected coordinates rejected'],script_sha256=hashlib.sha256(script.read_bytes()).hexdigest()),indent=2))
+    print(json.dumps(dict(status='passed_whole_proteome_catalog_fixture',checks=['best confidence model selected','latest failed accession excluded','other provider excluded','duplicate sequences retain separate protein links','tampered selected coordinates rejected','independent full link readback','incorrect link rejected despite updated artifact hash'],script_sha256=hashlib.sha256(script.read_bytes()).hexdigest(),readback_script_sha256=hashlib.sha256(auditor.read_bytes()).hexdigest()),indent=2))
 
 
 if __name__=='__main__':

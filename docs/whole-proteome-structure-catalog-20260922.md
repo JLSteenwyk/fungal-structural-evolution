@@ -49,3 +49,28 @@ python scripts/catalog_whole_proteome_structures.py \
 
 Confidence/PAE qualification, domain-level comparisons, structural clusters,
 remote-homology review and atlas-wide evolutionary tests remain unfinished.
+
+## Independent full-data link readback
+
+`scripts/readback_whole_proteome_catalog.py` is queued behind the exact
+producer PID and creation time. It requires successful catalog completion,
+checks the frozen primary inputs and output hashes, then independently
+replays latest accession statuses and selects models by a stable descending
+sort. A separate FASTA parser reconstructs every expected link across all
+5,815,847 proteins and compares it against the emitted table. It verifies
+all per-taxon coverage rows, model provenance, totals and absence of extra
+links. It does not repeat the producer's coordinate-byte hashing or perform
+new CIF-content/PAE validation.
+
+The readback plan is
+`metadata/whole_proteome_structure_catalog_readback_plan.json`, launched as
+`fungal-whole-proteome-catalog-readback-20260922.service`, with one CPU,
+32 GiB RAM, no swap and reduced scheduling priority. It writes only a small
+receipt, with an uncalibrated 0.5–6 hour planning range after the producer
+finishes. The updated synthetic fixture verifies both successful readback
+and rejection of an incorrect protein link whose artifact checksum has
+been updated. This tests semantic reconstruction rather than only hashes.
+
+The producer's live log reports 1,290,278 selected models and has entered
+coordinate hash verification. This is a provisional selection count,
+not a completed coverage result; acceptance awaits both completion receipts.

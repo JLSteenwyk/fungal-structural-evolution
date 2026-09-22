@@ -1,0 +1,25 @@
+{
+  "producer_plan": "metadata/whole_proteome_structure_catalog_plan.json",
+  "output": "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json",
+  "predecessor": {
+    "pid": 1985821,
+    "create_time": 1790104207.05
+  },
+  "pins": {
+    "metadata/whole_proteome_structure_catalog_plan.json": "522f1149059ed9c620304da528be7df5674e301fb78bdd4ee0c2a1da17211271",
+    "scripts/readback_whole_proteome_catalog.py": "1e4fc2bd8764204b01d8a1c6251b27437a79a5d93dc842a92d8cb9e73fa3549c"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.5,
+      6
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  }
+}
