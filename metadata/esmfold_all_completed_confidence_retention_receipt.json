@@ -1,0 +1,12 @@
+{
+  "status": "complete_descriptive_cohort_confidence_retention",
+  "models": 25322,
+  "source_receipt": "results/structural_alphabet/audited-esmfold-all-completed-20260922-v1/receipt.json",
+  "source_receipt_sha256": "75b948659abe23bb6975be780e9a591eede23a3f28c3aaf76ebcc932e983ffd4",
+  "source_summary_sha256": "99441e5ec281c14861a424a83ac45d478c152818277ea6b2f4f9de6e5dbc8e46",
+  "script_sha256": "d2db57ad4f93ec343c6a2c5b8b38dbf1f91135ede4fcc72dbecde0e404a1a0b8",
+  "artifacts": {
+    "metadata/esmfold_all_completed_confidence_retention.tsv": "3db93ce4f3f1d0cf041372ce353aa8f621737ccf4dfc6420d686c274f92c7a5c"
+  },
+  "scope": "Full protein residue counts, before marker alignment eligibility. Joint filter requires native validity, all six context residues pLDDT>=70 and maximum directional context PAE<=10. Cohorts differ in length and sampling; differences are not predictor accuracy, biological divergence or independent evolutionary observations."
+}

@@ -184,3 +184,25 @@ is 0.1–12 hours and is uncalibrated. The small final receipt will be written t
 `results/structures/whole-proteome-family-coverage-20260922-v1-readback.json`;
 launch and fixture records are versioned in `metadata/`. The scientific
 family-level verification remains pending until that receipt passes.
+
+## Full family coverage verification passed
+
+The independent check finished successfully in 126 seconds, reconstructing
+all 1,319,513 model identities and every row across both partitions (658,183
+profile-guide and 658,522 MAFFT-guide families). Completion and readback
+receipts are archived as `metadata/whole_proteome_family_coverage_completed_receipt.json`
+and `metadata/whole_proteome_family_coverage_completed_readback.json`.
+This supersedes the pending verification status in the launch record above.
+
+| Minimum modeled taxa per family | Profile-guide families | MAFFT-guide families |
+|---|---:|---:|
+| 2 | 30,959 | 30,934 |
+| 4 | 13,662 | 13,655 |
+| 10 | 7,333 | 7,333 |
+| 25 | 4,487 | 4,487 |
+| 50 | 3,289 | 3,289 |
+| 100 | 2,239 | 2,239 |
+
+Matching totals do not establish matching memberships between guides. These
+counts identify available taxon coverage; evolutionary eligibility still
+requires homology, alignment, confidence and reconciliation checks.

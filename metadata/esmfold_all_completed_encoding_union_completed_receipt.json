@@ -1,0 +1,87 @@
+{
+  "status": "complete_union_of_previously_qualified_encodings",
+  "models": 25322,
+  "totals": {
+    "length": 12221520,
+    "valid_states": 12170876,
+    "invalid_states": 50644,
+    "valid_focal_plddt70": 9001370,
+    "valid_feature_plddt70": 8322072,
+    "valid_feature_plddt70_pae10": 8306117
+  },
+  "confidence_stage": "plddt_and_pae",
+  "mapping_receipt_sha256": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+  "inventory_receipt_sha256": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+  "source_cohorts": [
+    {
+      "name": "original",
+      "mapping": "results/structural_markers/esmfold-original-complete-v1",
+      "mapping_receipt_sha256": "90e02d04d3adb292953b3c0b666638eedd1ea7717eb91286fd197586909ec3bf",
+      "encodings": "results/structural_alphabet/audited-esmfold-original-v1",
+      "encoding_receipt_sha256": "9699b7a7265cb8bee13a4507bbde71babded72d249a920343a6a65bccbead522",
+      "models": 10522,
+      "confidence_readback_sha256": "f5b81f83676179ec3416c6fbccb9316348a36486947afcb3e4305dee47905895",
+      "native_config_sha256": "ca641ba32c639f6ea5acdaf372c35410d678789d2c61de26d18e60a35c628018",
+      "coordinate_audit_receipt_sha256": "608a37bbc1f5733b7ed2e327100f04447de1d2ad9e6b93b9a931a5c74d0b5e61",
+      "pae_receipt_sha256": "ad1dbf3aa5ed582bc91d9a10f34d67a104b4d1c459f53f1164e10729a774f20d"
+    },
+    {
+      "name": "followon",
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+      "encodings": "results/structural_alphabet/audited-esmfold-followon-v1",
+      "encoding_receipt_sha256": "f86547a352f9148cd5f5ef3860d25205db6c6a25658cedcc6843a135491d4a18",
+      "models": 4252,
+      "confidence_readback_sha256": "84f96495ead33a4325110717fa3b3b4f7e9d9b72f005796d9b0fdeb3b3ba64e9",
+      "native_config_sha256": "0c8325bf3c7221fa69a2c84ddf287e91857c0a4c4bfeb44b392fe9a95c38f2cf",
+      "coordinate_audit_receipt_sha256": "8172c8444f42e2478a3d2bae2ae6d3392695f94a7c11db9c0feb492722bd6582",
+      "pae_receipt_sha256": "d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f"
+    },
+    {
+      "name": "ecology",
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+      "encodings": "results/structural_alphabet/audited-esmfold-ecology-v1",
+      "encoding_receipt_sha256": "ca94b9e8d28dc5750a04e5d09182b6e11950fe25e9d486d8ed85c3ba3f794cdd",
+      "models": 675,
+      "confidence_readback_sha256": "7772648cdda7dff41ad06e03c1dad050e960d6d0b27a665060a47cb26eeaaa19",
+      "native_config_sha256": "cfbfd3ad8403ef87429ca6a82e2ea2e77a3a719afd123c56945aae8533f8e482",
+      "coordinate_audit_receipt_sha256": "1e6c781c9012dc858fe88ca77013e688f3f65cfd421d6275d459291f302f8e13",
+      "pae_receipt_sha256": "baafff96954d1fc55e7ed9cdbff428a20bc5ab49878c200534e9d978c09497ab"
+    },
+    {
+      "name": "long",
+      "mapping": "results/structural_markers/esmfold-long-complete-v1",
+      "mapping_receipt_sha256": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101",
+      "encodings": "results/structural_alphabet/audited-esmfold-long-v1",
+      "encoding_receipt_sha256": "f0493a86d94194df3f8a11684e379ea5647448225a04587d11dbbc55bcb108c5",
+      "models": 5510,
+      "confidence_readback_sha256": "a1cef038f892f7b06c644a33cabae49591c0d70035142f20f8023359f755b423",
+      "native_config_sha256": "939752784211fef333a6c038dbda602ff52b63caa52e39b943d97429a8f0a561",
+      "coordinate_audit_receipt_sha256": "3ee9191c2b744b616bcaffaad6c00e7f85c4f9c531dc07573b67c9b5fe29f6f6",
+      "pae_receipt_sha256": "82003a3f5cfeca45b9acad8b115069b041eb39b927b6425f9a0a82cbf29b1347"
+    },
+    {
+      "name": "extended",
+      "mapping": "results/structural_markers/esmfold-extended-complete-v1",
+      "mapping_receipt_sha256": "b876173320900d6cd7698528b7091691947b984703028a7b9179b9a19d220bab",
+      "encodings": "results/structural_alphabet/audited-esmfold-extended-v1",
+      "encoding_receipt_sha256": "03031e0603d7a4430b595c3c1e60a82ee35cd1bcdbdb26650eed25fe6680c0cc",
+      "models": 4363,
+      "confidence_readback_sha256": "822fa979e3dcb5357bc0b9993ae140e5ba3a28591d79765c7e5269b9343a46fd",
+      "native_config_sha256": "581371505f72bd485162e9b457c949f6aa568450abf660ba58bc2b7a592f41fc",
+      "coordinate_audit_receipt_sha256": "d0d16ffd08910a95e7a825912c04500ed1248bc7b2d1ba56ec9c19e8ffb4eca7",
+      "pae_receipt_sha256": "56b11c54c3a3eccfaf8c08e98535d04c58cf3e7159fd566401212ad16467b47a"
+    }
+  ],
+  "verified_mapping_union_rows": {
+    "marker_structure_links.tsv": 25509,
+    "matrix_to_structure_residues.tsv.gz": 8335615
+  },
+  "plan_sha256": "c01446070876b79ffdaeafe6aaf1913608056f18cbbbcda418d1eebf80b9b3bc",
+  "script_sha256": "b90b85736b29f2d3e2f76ad54e35092761743a349936a4be5545b0447e8bb00e",
+  "artifacts": {
+    "model_summary.tsv": "99441e5ec281c14861a424a83ac45d478c152818277ea6b2f4f9de6e5dbc8e46"
+  },
+  "interpretation": "Unchanged encodings, complete disjoint source mapping union, and matched full directional confidence readbacks. Seven original prediction configurations retained by the source inventory. No new prediction, coordinate averaging, homology claim or evolutionary test."
+}

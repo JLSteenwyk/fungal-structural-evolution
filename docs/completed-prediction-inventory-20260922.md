@@ -464,3 +464,44 @@ are queued, not completed; fitted trees and ecological effects are separate
 downstream work. The new Hydnum models are absent from the older qualified
 snapshot, so current model-availability counts cannot stand in for completed
 paired alignments.
+
+## Completed confidence processing and paired-input expansion
+
+All five cohorts have now completed structural feature and confidence processing,
+including the extended cohort's independent comparison against the original
+NPZ directional PAE arrays. The 25,322-model union preserves 12,221,520 protein
+residues, of which 8,306,117 (67.96%) meet native-state validity, six-residue
+context pLDDT >=70 and maximum directional context PAE <=10. These are
+whole-protein residues before marker alignment eligibility. The earlier
+in-progress descriptions above record preceding checkpoints.
+
+| Cohort | Models | Residues passing joint filter | Fraction of all residues |
+|---|---:|---:|---:|
+| Original | 10,522 | 2,424,268 | 72.25% |
+| Follow-on | 4,252 | 1,006,992 | 75.03% |
+| Ecology | 675 | 159,639 | 74.95% |
+| Long | 5,510 | 2,065,046 | 60.98% |
+| Extended | 4,363 | 2,650,172 | 67.53% |
+
+Across all cohorts, 130 models have no joint-qualified states and 4,908 retain
+less than half their residues. Cohorts differ in length and sampling; these
+fractions do not measure prediction accuracy or biological divergence.
+`scripts/summarize_completed_esmfold_confidence.py` produces the full counts
+in `metadata/esmfold_all_completed_confidence_retention.tsv`; all cohort totals
+were also checked using independent pandas aggregation. Completion and full
+original-PAE readback receipts are archived in `metadata/`.
+
+Paired input preparation and independent reconstruction of every emitted AA/3Di
+character have also passed. Under unchanged eligibility and confidence rules,
+**122 markers** now qualify (previously 89), covering **294 taxa**, **44,198
+retained marker columns**, and **6,758,598 observed paired cells**. All 526-by-125
+coverage combinations were checked, including exclusions. The completed
+controller and array-readback receipts are archived as
+`metadata/esmfold_all_completed_paired_inputs_completed_receipt.json` and
+`metadata/esmfold_all_completed_paired_inputs_completed_readback.json`.
+
+The previously queued fitting controller has advanced to native tree fitting
+for these 122 markers (up to 488 AA/3Di fits across the planned models).
+Branch uncertainty, direct-geometry benchmarking, copy/annotation sensitivity
+and revised evolutionary inference remain unfinished. This checkpoint does
+not update the earlier reported biological results.

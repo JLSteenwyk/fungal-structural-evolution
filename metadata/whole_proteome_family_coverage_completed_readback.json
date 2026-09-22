@@ -1,0 +1,43 @@
+{
+  "protein_links": 1319513,
+  "source_proteins": 5815847,
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "structure_proteins": 1319513,
+      "families_with_models_in_multiple_taxa": 30959,
+      "families_with_all_proteins_modeled": 142155,
+      "families_at_minimum_modeled_taxa": {
+        "2": 30959,
+        "4": 13662,
+        "10": 7333,
+        "25": 4487,
+        "50": 3289,
+        "100": 2239
+      }
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "structure_proteins": 1319513,
+      "families_with_models_in_multiple_taxa": 30934,
+      "families_with_all_proteins_modeled": 142359,
+      "families_at_minimum_modeled_taxa": {
+        "2": 30934,
+        "4": 13655,
+        "10": 7333,
+        "25": 4487,
+        "50": 3289,
+        "100": 2239
+      }
+    }
+  ],
+  "status": "passed_independent_full_structure_family_coverage_readback",
+  "plan_sha256": "ea0e3795d979bb6b29e3c782ed076d4dd293e9b59650c3209bff5254f9c8f5c3",
+  "producer_receipt_sha256": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378",
+  "elapsed_seconds": 125.99750113487244,
+  "scope": "Every model identity and every family coverage row reconstructed from catalog and source membership using Python sets. Availability only; no confidence qualification, orthology, duplication events or statistical power validation."
+}

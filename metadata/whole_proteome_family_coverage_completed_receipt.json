@@ -1,0 +1,30 @@
+{
+  "status": "complete_structure_family_coverage_bridge_pending_independent_readback",
+  "protein_links": 1319513,
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "structure_proteins": 1319513,
+      "families_with_models_in_multiple_taxa": 30959,
+      "families_with_all_proteins_modeled": 142155
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "structure_proteins": 1319513,
+      "families_with_models_in_multiple_taxa": 30934,
+      "families_with_all_proteins_modeled": 142359
+    }
+  ],
+  "plan_sha256": "730ecb43cdd1f0742feaa1557412ef69a397af8f0375cfd1f16daf6fa3369ec2",
+  "catalog_receipt_sha256": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+  "catalog_readback_sha256": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+  "artifacts": {
+    "structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+    "family_structure_coverage.tsv": "9d875f1ec7666c7685b687a975b073ad5fd8635f66183bbe2d4752ef0a5ad7e4"
+  },
+  "scope": "Exact taxon/protein/sequence join to both full family partitions. Includes families without structures. Unqualified model availability; family membership is not reconciled orthology. No duplication, domain-event, homology or structural acceleration inference."
+}
