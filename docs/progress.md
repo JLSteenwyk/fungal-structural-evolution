@@ -3395,3 +3395,12 @@ and export readback passed, and coordinate-feature reconstruction is running.
 PAE qualification and full context readback remain pending. Receipts are
 archived as metadata/esmfold_long_cohort_mapping_completed.json and
 metadata/esmfold_long_cohort_residue_readback.json.
+
+
+September 22: queued the same six-stage native-feature and directional-confidence
+workflow for all 4,363 extended models, gated on their complete independent
+residue readback. The three prediction configurations remain per-model
+provenance. Scope is 3,924,624 residues and 3,552,697,882 PAE entries; four CPU
+equivalents, 16 GiB memory, no GPU prediction. The native workflow remains
+queued while mapping is active. Plan and process identity are in
+metadata/esmfold_extended_native_feature_{plan,launch}.json.

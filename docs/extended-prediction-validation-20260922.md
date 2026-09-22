@@ -77,3 +77,27 @@ and `esmfold-extended-residue-readback-v1`. Controller state and logs are in
 `results/structural_markers/extended-cohort-mapping-controller-v1`. The inventory union is complete; residue mapping is running and independent
 residue readback follows. Native features and confidence qualification remain
 subsequent requirements.
+
+## Queued feature extraction and confidence qualification
+
+The six-stage workflow in `scripts/advance_local_structural_features.py` is now
+queued for this cohort under `fungal-extended-native-features-20260922.service`.
+Its plan, `metadata/esmfold_extended_native_feature_plan.json`, binds the exact
+live mapping-controller identity and requires successful full mapping and
+independent residue readback before proceeding. It retains each model's source
+configuration and original NPZ confidence arrays.
+
+The stages are native Foldseek extraction, export identity/shape readback,
+coordinate-feature reconstruction, lossless directional PAE export,
+six-residue confidence qualification, and independent context readback against
+the original arrays. The 4,363 models contain 3,924,624 residues and
+3,552,697,882 PAE entries. The same previously qualified native build and source
+hashes used for the other cohorts are required.
+
+The sequential stages use at most four CPU equivalents and 16 GiB memory,
+with no swap or GPU inference. The plan allows 100 GiB output and requires
+150 GiB free disk before each stage. Its 0.5–36-hour runtime range is a planning
+allowance after mapping finishes, not an observed ETA. Logs and state are under
+`results/structural_alphabet/extended-cohort-feature-controller-v1/`; the queued
+workflow is not evidence of completed feature qualification or evolutionary
+analysis.
