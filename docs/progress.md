@@ -3359,3 +3359,14 @@ agrees with the original cohort links. Mapping/readback bind coordinates and
 NPZ confidence to the frozen Stockholm alignments and retained matrix sites.
 Native features, PAE qualification and evolutionary integration remain pending.
 See docs/long-cohort-structure-integration-20260922.md.
+
+
+September 22: queued six native-feature and confidence stages for the full
+5,510-model long cohort, conditional on completed independent residue mapping.
+The exact live mapping-controller identity is bound in the plan. Existing
+qualified scripts will extract native 3Di, check exports, reconstruct coordinate
+features, export directional PAE, qualify confidence, and independently read
+all original six-residue PAE contexts. Scope: 3,386,360 residues and
+2,109,723,548 PAE entries; no GPU inference. The queued state is not completion.
+See metadata/esmfold_long_native_feature_plan.json and
+docs/long-cohort-structure-integration-20260922.md.

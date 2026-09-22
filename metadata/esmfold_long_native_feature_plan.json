@@ -1,0 +1,161 @@
+{
+  "control": "results/structural_alphabet/long-cohort-feature-controller-v1",
+  "models": 5510,
+  "residues": 3386360,
+  "pae_matrix_entries": 2109723548,
+  "predecessor_pid": 1344105,
+  "predecessor_create_time": 1790091048.02,
+  "predecessor_control": "results/structural_markers/long-cohort-mapping-controller-v1",
+  "mapping_plan": "metadata/esmfold_long_cohort_mapping_plan.json",
+  "mapping": "results/structural_markers/esmfold-long-complete-v1",
+  "residue_readback": "results/structural_markers/esmfold-long-residue-readback-v1",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "native_source_sha256": {
+    "structureto3didescriptor.cpp": "0e31199fd66fe65f53c16e18aea214fddcb6caa6650d07639f5da5221240089d",
+    "structureto3di.cpp": "cb86fa0c7c67d855e6d9bf1ef29e02a9e55708fe6fa1b727a69c9de14480f33e",
+    "structcreatedb.cpp": "f1b5aadfe69b2c3b9ff0fa648a2833ffebbf0de4f7304bbd578bfc327a257d0f",
+    "structureto3di.h": "0c2b80e1ca8ef176e4f1c11654429dce3d53e8bc7210450abd8a2154f06bb353"
+  },
+  "stages": [
+    {
+      "name": "native_extraction",
+      "arguments": [
+        "scripts/extract_structural_alphabet.py",
+        "--snapshot",
+        "results/structural_markers/esmfold-long-complete-v1",
+        "--output",
+        "results/structural_alphabet/native-esmfold-long-v1"
+      ],
+      "output": "results/structural_alphabet/native-esmfold-long-v1",
+      "result": "results/structural_alphabet/native-esmfold-long-v1/config.json",
+      "expected": {
+        "models": 5510,
+        "version": "e3fadcd07f971e864c094ac4f3a78bf4ed845e07",
+        "executable_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc"
+      }
+    },
+    {
+      "name": "native_export_readback",
+      "arguments": [
+        "scripts/audit_native_exports.py",
+        "--native",
+        "results/structural_alphabet/native-esmfold-long-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-long-complete-v1",
+        "--output",
+        "results/structural_alphabet/long-cohort-feature-controller-v1/native_export_readback.json"
+      ],
+      "output": "results/structural_alphabet/long-cohort-feature-controller-v1/native_export_readback.json",
+      "result": "results/structural_alphabet/long-cohort-feature-controller-v1/native_export_readback.json",
+      "expected": {
+        "status": "complete_native_export_identity_audit",
+        "models": 5510
+      }
+    },
+    {
+      "name": "coordinate_audit",
+      "arguments": [
+        "scripts/audit_3di_features.py",
+        "--native",
+        "results/structural_alphabet/native-esmfold-long-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-long-complete-v1",
+        "--output",
+        "results/structural_alphabet/coordinate-esmfold-long-v1"
+      ],
+      "output": "results/structural_alphabet/coordinate-esmfold-long-v1",
+      "result": "results/structural_alphabet/coordinate-esmfold-long-v1/receipt.json",
+      "expected": {
+        "status": "complete_native_3di_coordinate_audit",
+        "models": 5510
+      }
+    },
+    {
+      "name": "pae_export",
+      "arguments": [
+        "scripts/export_local_marker_pae.py",
+        "--snapshot",
+        "results/structural_markers/esmfold-long-complete-v1",
+        "--output",
+        "results/structural_pae/esmfold-long-complete-v1"
+      ],
+      "output": "results/structural_pae/esmfold-long-complete-v1",
+      "result": "results/structural_pae/esmfold-long-complete-v1/receipt.json",
+      "expected": {
+        "status": "complete_local_mapping_bound_pae_export",
+        "models_requested": 5510,
+        "models_verified": 5510,
+        "models_failed": 0
+      }
+    },
+    {
+      "name": "confidence_qualification",
+      "arguments": [
+        "scripts/qualify_native_pae.py",
+        "--coordinates",
+        "results/structural_alphabet/coordinate-esmfold-long-v1",
+        "--pae",
+        "results/structural_pae/esmfold-long-complete-v1",
+        "--output",
+        "results/structural_alphabet/audited-esmfold-long-v1"
+      ],
+      "output": "results/structural_alphabet/audited-esmfold-long-v1",
+      "result": "results/structural_alphabet/audited-esmfold-long-v1/receipt.json",
+      "expected": {
+        "status": "complete_native_3di_feature_audit",
+        "models": 5510
+      }
+    },
+    {
+      "name": "original_pae_context_readback",
+      "arguments": [
+        "scripts/readback_local_pae_qualification.py",
+        "--snapshot",
+        "results/structural_markers/esmfold-long-complete-v1",
+        "--coordinates",
+        "results/structural_alphabet/coordinate-esmfold-long-v1",
+        "--qualified",
+        "results/structural_alphabet/audited-esmfold-long-v1",
+        "--output",
+        "results/structural_alphabet/long-cohort-feature-controller-v1/original_pae_context_readback.json"
+      ],
+      "output": "results/structural_alphabet/long-cohort-feature-controller-v1/original_pae_context_readback.json",
+      "result": "results/structural_alphabet/long-cohort-feature-controller-v1/original_pae_context_readback.json",
+      "expected": {
+        "status": "passed_full_original_pae_context_readback",
+        "models": 5510
+      }
+    }
+  ],
+  "resources": {
+    "cpu_quota_cores": 4,
+    "native_threads": 4,
+    "memory_max_gib": 16,
+    "swap_max_bytes": 0,
+    "output_planning_gib": 100,
+    "minimum_free_disk_gib": 150,
+    "planning_wall_hours": [
+      0.5,
+      24
+    ],
+    "cost": "Existing local CPUs and disk; native source retrieval from pinned public commit, no prediction or paid resources"
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+    "metadata/esmfold_followon_native_config.json": "0c8325bf3c7221fa69a2c84ddf287e91857c0a4c4bfeb44b392fe9a95c38f2cf",
+    "metadata/esmfold_long_cohort_mapping_plan.json": "98acd48f9e29cfc7cf01d9c6bb484cdb3db0206643a179ba7ab5be33b998588f",
+    "results/structures/esmfold-long-gpu0-complete-v1/receipt.json": "60c8c4356a1fdb5c587e0b4cb81db066cb80a6cb8bfedeaa265056822df7cffe",
+    "scripts/advance_local_structural_features.py": "e860eb384da08c6ab26604011bad10f948559728fceda78942679aac59a406b9",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_3di_features.py": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_native_exports.py": "995bc09c0913e115566e18b4af1be42ab9a9134393fa3b343afc5e702f7bac39",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/export_local_marker_pae.py": "e8b9290996144fa1a45b6c066def764b17c7653a4065265dfe97615b4dce1072",
+    "scripts/extract_structural_alphabet.py": "741caae85cacae7e6820a0c7861d9aeddd9ab7a32547c6b392dcbdec5c977f54",
+    "scripts/qualify_native_pae.py": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+    "scripts/readback_local_pae_qualification.py": "22be27ca171a41447eb46d75226f644672dc9dd07312c84c8eebaec992b421c5",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  }
+}

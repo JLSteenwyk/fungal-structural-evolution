@@ -40,3 +40,31 @@ PAE binding, native structural-alphabet extraction, coordinate-feature checks,
 confidence qualification, integration with the newer 769–1,024-residue models,
 and evolutionary analyses remain subsequent steps. The previously published
 89-marker ESMFold results do not yet incorporate this cohort.
+
+The six-stage native-feature follow-up is now queued under
+`fungal-long-native-features-20260922.service`, using
+`scripts/advance_local_structural_features.py` and
+`metadata/esmfold_long_native_feature_plan.json`. It waits for the exact live
+mapping-controller identity, then requires the completed controller receipt
+and independent residue-readback receipt before any feature work begins.
+
+The stages use the existing qualified implementations: pinned Foldseek 3Di
+extraction; native export identity/shape readback; coordinate reconstruction
+of spatial partners and ten descriptors; lossless directional PAE export;
+six-residue confidence qualification; and independent context readback against
+the original local NPZ arrays. The last check evaluates all 36 ordered residue
+pairs in each valid six-residue context. It also verifies that coordinate
+arrays and their summary counts remain unchanged. Each stage must retain the
+same 5,510-model universe and mapping provenance.
+
+This cohort contains 3,386,360 residues and 2,109,723,548 PAE entries. The
+sequential follow-up has a four-CPU-equivalent cap, 16 GiB memory, no swap,
+100 GiB planning output allowance, and a 150 GiB free-disk gate before each
+stage. The 0.5–24-hour planning range is not a measured ETA. No GPU prediction
+or paid resource is used. Native encoder source files are retrieved from the
+same immutable public commit and compared with the previously qualified source
+hashes; a different build cannot silently enter this cohort.
+
+Controller state, stage logs and eventual completion evidence are under
+`results/structural_alphabet/long-cohort-feature-controller-v1/`. Queuing these
+stages does not establish completion or validate biological structural changes.
