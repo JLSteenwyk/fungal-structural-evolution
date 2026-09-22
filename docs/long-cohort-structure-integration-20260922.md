@@ -76,3 +76,14 @@ hashes; a different build cannot silently enter this cohort.
 Controller state, stage logs and eventual completion evidence are under
 `results/structural_alphabet/long-cohort-feature-controller-v1/`. Queuing these
 stages does not establish completion or validate biological structural changes.
+# Extended cohort mapping checkpoint
+
+The 769–1,024-residue cohort now has a completed mapping and independent
+residue readback: 4,363 models, 4,384 taxon/marker links and 2,698,173
+matrix-residue links. Completion receipts are archived in
+`metadata/esmfold_extended_cohort_mapping_completed.json` and
+`metadata/esmfold_extended_cohort_residue_readback.json`.
+The three original prediction partitions retain their separate provenance.
+Native extraction and native-export readback have also completed; coordinate
+validation is running. PAE qualification and downstream evolutionary analyses
+are separate and are not established by this mapping checkpoint.

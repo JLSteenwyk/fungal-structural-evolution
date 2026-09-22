@@ -1,0 +1,23 @@
+{
+  "output": "results/domains/family-domain-bridge-readback-v1",
+  "producer_pid": 1973371,
+  "producer_start_ticks": "52897809",
+  "producer_plan": "metadata/family_domain_bridge_plan.json",
+  "pins": {
+    "metadata/family_domain_bridge_plan.json": "2b5eaf171a2acfe4063b622e790f5477fce3535a94793f83286b55abe1f4b1ac",
+    "scripts/readback_family_domain_bridge.py": "cb0ecf36cd3a5fd09ac0f62a8ecf9bcc6f96306c05b1a7b314c68dd2cd856995",
+    "scripts/check_family_domain_bridge_readback.py": "953766824e41e0a141b121e6fd2b990d0886657409376d54b4267231dc696a3f"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}
