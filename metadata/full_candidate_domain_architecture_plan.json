@@ -1,0 +1,26 @@
+{
+  "database": "results/domains/full-domain-database-v1",
+  "competition": "results/domains/full-domain-competition-v1",
+  "output": "results/domains/full-candidate-architectures-v1",
+  "pins": {
+    "scripts/build_candidate_domain_architectures.py": "c79b8df7e108da528528fec596e499126ab698bc071e380eb04840f48f217a74",
+    "scripts/candidate_domain_architecture.py": "a616d7f2c2f5b4b3fb3c154359611bf03d72bd14aafbbbfc7dc3ce5c75ddca7d",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "results/domains/full-domain-database-v1/receipt.json": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+    "results/domains/full-domain-database-v1/readback.json": "7c1ec077048cde8dee05212ce15160f12a8b794741dd90cb2ea242fd1b6ac2b6",
+    "results/domains/full-domain-competition-v1/receipt.json": "5fdae7801fb739ba8528b7d9d4cea6a99c7dbd4844e8a7af25db6bca7e3f43ea",
+    "results/domains/full-domain-competition-v1/readback.json": "0b433b63217cf43b7218c50421cf1beda122f6f64c6de31d15c850a32fed625f"
+  },
+  "resources": {
+    "cpu_quota_cores": 1,
+    "memory_max_gib": 8,
+    "swap_max_bytes": 0,
+    "output_allowance_gib": 50,
+    "minimum_free_disk_gib": 100,
+    "planning_wall_hours": [
+      0.5,
+      8
+    ],
+    "cost": "Existing local CPU and disk; no new charges"
+  }
+}

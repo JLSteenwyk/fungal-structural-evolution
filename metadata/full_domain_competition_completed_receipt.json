@@ -1,0 +1,47 @@
+{
+  "status": "completed_full_competition_requires_independent_readback",
+  "totals": {
+    "queries": 5713603,
+    "hits": 8103610,
+    "partial_hmm_hits_below_070": 1534637,
+    "queries_with_policy_disagreement": 53248,
+    "queries_without_hits": 1991329
+  },
+  "policies": {
+    "alignment_evalue": {
+      "retained_hits": 6286154,
+      "suppressed_hits": 1817456,
+      "queries_with_primary_rank_ties": 3252,
+      "queries_with_unresolved_overlaps": 9261,
+      "queries_with_candidate_nesting": 23652
+    },
+    "alignment_bitscore": {
+      "retained_hits": 6286328,
+      "suppressed_hits": 1817282,
+      "queries_with_primary_rank_ties": 5980,
+      "queries_with_unresolved_overlaps": 9251,
+      "queries_with_candidate_nesting": 23652
+    },
+    "envelope_evalue": {
+      "retained_hits": 6241835,
+      "suppressed_hits": 1861775,
+      "queries_with_primary_rank_ties": 3389,
+      "queries_with_unresolved_overlaps": 29847,
+      "queries_with_candidate_nesting": 23569
+    },
+    "envelope_bitscore": {
+      "retained_hits": 6242038,
+      "suppressed_hits": 1861572,
+      "queries_with_primary_rank_ties": 6230,
+      "queries_with_unresolved_overlaps": 29823,
+      "queries_with_candidate_nesting": 23569
+    }
+  },
+  "plan_sha256": "cce6668ca5a6c5d512794ce93e70edbe43ad2ad9bf6756f105a076f26ee7d3e6",
+  "script_sha256": "593be9eb4435bf1543f36934592b1cb040538538d556fc412a411dc947cc5db6",
+  "artifacts": {
+    "query_competition.tsv.gz": "be7d41c7a5aa9dc8890595490b939a8fa71ce4689c783320f7d6268e22b91662"
+  },
+  "elapsed_seconds": 731.6632363796234,
+  "scope": "Every query and every raw hit has a disposition under all four policies. All raw annotation fields remain in the pinned source database. Retained hits are candidate annotations, not validated architectures or domain gains/losses. Independent empirical readback remains required."
+}

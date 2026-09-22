@@ -1,0 +1,44 @@
+{
+  "status": "passed_complete_independent_domain_competition_readback",
+  "totals": {
+    "queries": 5713603,
+    "hits": 8103610,
+    "partial_hmm_hits_below_070": 1534637,
+    "queries_with_policy_disagreement": 53248,
+    "queries_without_hits": 1991329
+  },
+  "policies": {
+    "alignment_evalue": {
+      "retained_hits": 6286154,
+      "suppressed_hits": 1817456,
+      "queries_with_primary_rank_ties": 3252,
+      "queries_with_unresolved_overlaps": 9261,
+      "queries_with_candidate_nesting": 23652
+    },
+    "alignment_bitscore": {
+      "retained_hits": 6286328,
+      "suppressed_hits": 1817282,
+      "queries_with_primary_rank_ties": 5980,
+      "queries_with_unresolved_overlaps": 9251,
+      "queries_with_candidate_nesting": 23652
+    },
+    "envelope_evalue": {
+      "retained_hits": 6241835,
+      "suppressed_hits": 1861775,
+      "queries_with_primary_rank_ties": 3389,
+      "queries_with_unresolved_overlaps": 29847,
+      "queries_with_candidate_nesting": 23569
+    },
+    "envelope_bitscore": {
+      "retained_hits": 6242038,
+      "suppressed_hits": 1861572,
+      "queries_with_primary_rank_ties": 6230,
+      "queries_with_unresolved_overlaps": 29823,
+      "queries_with_candidate_nesting": 23569
+    }
+  },
+  "plan_sha256": "cce6668ca5a6c5d512794ce93e70edbe43ad2ad9bf6756f105a076f26ee7d3e6",
+  "production_receipt_sha256": "5fdae7801fb739ba8528b7d9d4cea6a99c7dbd4844e8a7af25db6bca7e3f43ea",
+  "script_sha256": "a87efa2b1b54de46999b7423b9ab41cc0676941c287c8288848268b560c22b20",
+  "scope": "Every query and every four-policy disposition, retained ordering, blocker list, primary tie, residual overlap and nested candidate compared to an independently constructed exhaustive pair graph. All summaries matched. Not biological architecture or gain/loss validation."
+}

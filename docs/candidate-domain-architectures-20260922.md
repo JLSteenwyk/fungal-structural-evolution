@@ -1,0 +1,53 @@
+# Full candidate domain-architecture representation
+
+The complete clan-competition output passed independent readback over all
+5,713,603 queries and 8,103,610 annotation hits. There are 53,248 queries whose
+retained hit sets differ across the four policies, 1,534,637 raw hits with
+HMM coverage below 0.70, and 1,991,329 queries with no gathering-threshold hit.
+These last queries are not confirmed biological domain absences. Production
+and independent audit receipts are archived under
+`metadata/full_domain_competition_completed_{receipt,readback}.json`.
+
+The next full-scale stage began September 22. It joins every query's audited
+competition outcome to raw annotation fields and creates a candidate
+architecture database, with the original 5,815,847 protein links across all
+526 taxa. Four marker-only queries also remain in the query universe. A
+sequence shared by multiple proteins keeps every taxon-specific protein link.
+
+The representation retains all Pfam annotation types, including Family and
+Repeat; they are not silently relabeled as structural domains. Repeated model
+occurrences retain multiplicity and coordinates. For each distinct retained
+hit set, annotations are sorted by alignment start/end and deterministic hit
+ID. The four policy records point to these alternatives and retain counts of
+primary score ties, unresolved overlaps and candidate nesting relationships.
+The complete per-hit suppression/blocker history remains in the audited source
+competition table, identified by the source receipt.
+
+Every alternative also records all alignment-overlap pairs, partial-HMM hit
+counts, ordered model/type tokens and their signature. Coordinate sorting
+does not resolve nesting or establish an unambiguous biological domain order.
+Token signatures are descriptive annotation identifiers, not homology or
+functional classifications. Empty annotations have an explicit no-hit state.
+This layer is intended to support later family-aware domain comparisons, not
+to supply domain gains/losses without further validation and phylogenetic work.
+
+Implementation: `scripts/candidate_domain_architecture.py` and
+`scripts/build_candidate_domain_architectures.py`. The deterministic fixtures
+in `scripts/check_candidate_domain_architecture.py` verify repeated-model and
+annotation-type preservation, partial and overlapping matches, alternative
+policies, explicit missing hits and invalid-ID rejection.
+
+The plan is `metadata/full_candidate_domain_architecture_plan.json`; the unit
+is `fungal-candidate-architectures-20260922.service`. It uses one CPU equivalent,
+8 GiB memory, no swap, a 50 GiB output allowance, and a 100 GiB free-disk gate.
+The planning allowance is 0.5–8 hours on existing local resources. No GPU or
+paid service is involved. Output is
+`results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite`.
+The `queries` table stores candidate alternatives and policy uncertainty;
+`proteins` preserves the taxon/protein-to-sequence mapping with foreign keys.
+
+At launch, database construction is running. A successful producer receipt
+will still require independent full readback against the source annotations,
+competition outcomes and protein links. Domain architecture validation,
+family integration, fusion/rearrangement inference and evolutionary tests
+remain unfinished.

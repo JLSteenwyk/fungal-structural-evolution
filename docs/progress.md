@@ -3330,3 +3330,13 @@ path. CPU/memory/disk gates and source pins are in
 metadata/expanded_reconciliation_execution_plan.json. Native output completion
 and independent full readback remain unproven. See
 docs/expanded-reconciliation-execution-20260922.md.
+
+
+September 22: archived the independently passed full domain-competition results
+(5,713,603 queries, 8,103,610 raw hits, 53,248 policy-disagreement queries).
+Launched a full candidate-architecture database joining all four policies to
+raw coordinates/types and preserving every protein/taxon link. Repeated models,
+overlapping/nested candidates, partial matches and no-hit uncertainty remain
+explicit. This is candidate annotation representation; biological architecture
+validation and domain evolution remain pending. See
+docs/candidate-domain-architectures-20260922.md.
