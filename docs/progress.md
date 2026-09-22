@@ -3450,3 +3450,9 @@ Expanded paired-input preparation and the same full readback are queued behind
 qualified encoding integration. Eligibility rules and the alignment matrix
 remain fixed for the coverage comparison. Updated branch inference remains
 pending; see [expanded paired inputs](expanded-paired-inputs-20260922.md).
+
+All newly eligible expanded paired markers are now scheduled for supported
+AA-tree searches and three matched-topology structural-model fits, followed
+by report/output validation. The same fitting producer, executable and model
+hashes as the earlier run are retained. This stage is waiting for the paired
+input gate; no expanded branch results or acceleration claims exist yet.

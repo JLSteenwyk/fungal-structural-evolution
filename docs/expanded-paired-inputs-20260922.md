@@ -47,3 +47,36 @@ evidence of structural acceleration or a prediction-source effect. Supported
 sequence trees, structural fits on matched genealogies, branch uncertainty,
 direct-geometry checks and gene-copy/annotation sensitivities remain required
 before updated evolutionary conclusions.
+
+## Supported paired tree fitting
+
+`scripts/advance_complete_paired_fits.py` is queued behind the exact paired-input
+controller. It requires successful input preparation, full independent array
+readback, and the previously validated published 3Di models. The fitting
+producer, IQ-TREE 3.0.1 executable and structural model files have the same
+hashes as the earlier 89-marker/356-fit analysis.
+
+Every eligible marker receives an AA LG+F+G4 tree search with 1,000 SH-aLRT
+replicates and 1,000 ultrafast bootstrap replicates with bootstrap NNI, followed
+by AF+G4, AF+F+G4 and LLM+G4 structural-alphabet fits on that same unrooted AA
+topology. Identical sequences remain included. The runner checks all bootstrap
+tip sets, branch validity and structural-fit topology correspondence. The
+subsequent report audit verifies model identities, provenance, masks, tree
+branch tables, numerical summaries and warnings; it does not independently
+recompute likelihoods.
+
+The plan `metadata/esmfold_all_completed_paired_fits_plan.json` allows four
+single-thread workers, 2 GiB per fit, a 16 GiB service memory limit, no swap,
+and a 32 GiB available-memory gate. Storage planning is 50 GiB with a 100 GiB
+free-disk gate. At most 125 source markers yield 500 fits; actual ready-marker,
+taxon and site dimensions are recorded before the fitting subprocess starts.
+The 1–336 hour runtime range is uncalibrated planning, not an ETA.
+
+The service is `fungal-all-completed-paired-fits-20260922.service`, with outputs
+under `results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/`
+and a separate report-audit directory. Existing local CPUs are used, without
+GPU prediction or paid resources. These are conditional branch point estimates
+in expected substitutions per site, not physical displacement or change per
+year. Model adequacy, genealogical uncertainty, correlated structural features,
+prediction circularity, direct geometry, and branch-resampling analyses remain
+necessary before interpreting structural acceleration or coupling.

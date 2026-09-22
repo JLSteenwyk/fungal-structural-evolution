@@ -1,0 +1,54 @@
+{
+  "control": "results/phylogeny/all-completed-paired-fit-controller-v1",
+  "fits": "results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1",
+  "audit": "results/phylogeny/paired-marker-fit-audit-esmfold-all-completed-20260922-v1",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+  "input_readback": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1-readback.json",
+  "models": "data/structural_models/garg-hochberg-v3",
+  "iqtree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+  "predecessor_pid": 3405596,
+  "predecessor_create_time": 1790094884.53,
+  "predecessor_receipt": "results/phylogeny/all-completed-paired-input-controller-v1/receipt.json",
+  "predecessor_plan": "metadata/esmfold_all_completed_paired_inputs_plan.json",
+  "pins": {
+    "scripts/advance_complete_paired_fits.py": "78e0226fbddfe60a06f5088bc9f875cf86e4a182fcb25940a3a148d62aab0d70",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "metadata/esmfold_all_completed_paired_inputs_plan.json": "b78aac79cf9071eb234a9faa08958793532d657edf23fcd104e55eeb3a8dccb2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "data/structural_models/garg-hochberg-v3/Q.3Di.AF": "5e37984b3866f3798307bbcd8c39a2e8c188fdeda7f0499aa74c2b81a29f37b9",
+    "data/structural_models/garg-hochberg-v3/Q.3Di.LLM": "8cc3f62c647512b31394345986aae17d5e55fbc0012d824b2bb28d9789471b0e",
+    "data/structural_models/garg-hochberg-v3/deposit-v3.0.json": "f72eacc236e7e3b3e2ad304b9483f885329505568910ab4c0f203f07c8514814"
+  },
+  "resources": {
+    "cpu_equivalents": 4,
+    "workers": 4,
+    "threads_per_fit": 1,
+    "memory_per_fit_gib": 2,
+    "memory_max_gib": 16,
+    "minimum_available_memory_gib": 32,
+    "swap_gib": 0,
+    "maximum_markers": 125,
+    "maximum_fits": 500,
+    "output_planning_gib": 50,
+    "minimum_free_disk_gib": 100,
+    "runtime_planning_hours": [
+      1,
+      336
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "support": {
+    "sh_alrt_replicates": 1000,
+    "ultrafast_bootstrap_replicates": 1000,
+    "bootstrap_nni": true
+  },
+  "basis": "Same validated IQ-TREE executable, fitting producer and published structural models as the previous 89-marker/356-fit run. All newly eligible markers will be included; dimensions measured and recorded before launch. Up to 125 source markers and 500 fits. Planning allowance, not a measured ETA."
+}
