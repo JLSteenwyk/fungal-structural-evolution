@@ -1,0 +1,113 @@
+{
+  "output": "results/structural_alphabet/current-afdb-confidence-controller-20260922-v1",
+  "mapping": "results/structural_markers/gdm-current-mapping-20260922-v1",
+  "catalog": "results/structural_markers/gdm-current-catalog-20260922-v1",
+  "prefetch": "results/structural_pae/gdm-current-prefetch-20260922-v1",
+  "models": 30588,
+  "dependencies": [
+    {
+      "name": "features",
+      "pid": 422757,
+      "start_ticks": "53734829",
+      "receipt": "results/structural_alphabet/current-afdb-feature-controller-20260922-v1/receipt.json",
+      "plan": "metadata/current_afdb_native_feature_plan.json",
+      "expected_status": "complete_refreshed_afdb_native_coordinate_features"
+    },
+    {
+      "name": "prefetch",
+      "pid": 171493,
+      "start_ticks": "53683865",
+      "receipt": "results/structural_markers/gdm-current-input-controller-20260922-v1/pae/receipt.json",
+      "plan": "metadata/current_afdb_input_preparation_plan.json",
+      "expected_status": "complete_refreshed_catalog_pae_prefetch_pending_mapping_binding"
+    }
+  ],
+  "stages": [
+    {
+      "name": "mapping_bound_pae",
+      "arguments": [
+        "scripts/retrieve_marker_pae.py",
+        "--snapshot",
+        "results/structural_markers/gdm-current-mapping-20260922-v1",
+        "--output",
+        "results/structural_pae/gdm-current-mapping-bound-20260922-v1"
+      ],
+      "output": "results/structural_pae/gdm-current-mapping-bound-20260922-v1",
+      "result": "results/structural_pae/gdm-current-mapping-bound-20260922-v1/receipt.json",
+      "expected": {
+        "models_requested": 30588,
+        "models_verified": 30588,
+        "models_failed": 0
+      }
+    },
+    {
+      "name": "confidence_qualification",
+      "arguments": [
+        "scripts/qualify_native_pae.py",
+        "--coordinates",
+        "results/structural_alphabet/coordinate-gdm-current-20260922-v1",
+        "--pae",
+        "results/structural_pae/gdm-current-mapping-bound-20260922-v1",
+        "--output",
+        "results/structural_alphabet/audited-gdm-current-20260922-v1"
+      ],
+      "output": "results/structural_alphabet/audited-gdm-current-20260922-v1",
+      "result": "results/structural_alphabet/audited-gdm-current-20260922-v1/receipt.json",
+      "expected": {
+        "status": "complete_native_3di_feature_audit",
+        "models": 30588
+      }
+    },
+    {
+      "name": "full_context_readback",
+      "arguments": [
+        "scripts/readback_afdb_pae_qualification.py",
+        "--snapshot",
+        "results/structural_markers/gdm-current-mapping-20260922-v1",
+        "--coordinates",
+        "results/structural_alphabet/coordinate-gdm-current-20260922-v1",
+        "--qualified",
+        "results/structural_alphabet/audited-gdm-current-20260922-v1",
+        "--pae",
+        "results/structural_pae/gdm-current-mapping-bound-20260922-v1",
+        "--output",
+        "results/structural_alphabet/current-afdb-confidence-controller-20260922-v1/full_context_readback.json"
+      ],
+      "output": "results/structural_alphabet/current-afdb-confidence-controller-20260922-v1/full_context_readback.json",
+      "result": "results/structural_alphabet/current-afdb-confidence-controller-20260922-v1/full_context_readback.json",
+      "expected": {
+        "status": "passed_full_afdb_pae_context_readback",
+        "models": 30588
+      }
+    }
+  ],
+  "pins": {
+    "scripts/advance_refreshed_afdb_confidence.py": "3442d6b21282c0a4229c212bfd9336cc77461e6e8e21712894805873259f2808",
+    "scripts/readback_afdb_pae_qualification.py": "c9dd7d1c853ecc8e6017f3441426ef513eadc73ff0f59d590c64c3ef990bd0dc",
+    "scripts/check_afdb_pae_readback.py": "2aa566aab0e77aac06a40801a41c2ee2a2aef6cb1f60c62160bf83b81db72c0a",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/qualify_native_pae.py": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/current_afdb_pae_readback_fixture_checks.json": "07b48841aac0e5e930fbd13228ba934a82c9bbc9ee6626b7d53716116aa564d8",
+    "metadata/current_afdb_native_feature_plan.json": "300a1083d31573cc532ab48afb3e17899f5c94d9dc0ed4afe6a68c53860d46c8",
+    "metadata/current_afdb_input_preparation_plan.json": "433f781b69132a77eeed184b45ca07c8124cfb2925273bac1c278e93ad9d4daf",
+    "results/structural_markers/gdm-current-catalog-20260922-v1/receipt.json": "4b6a31cd6d68d153c9384f64b6f8b34c81cfcb0ddacc49d2163a0a2bdecc0816"
+  },
+  "resources": {
+    "cpu_equivalents": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 150,
+    "output_allowance_gib": 100,
+    "runtime_planning_hours": [
+      1,
+      48
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Wait for both verified prefetch and native coordinates, revalidate version-bound cached matrices into mapping receipt, qualify and independently read back every directional feature context. Raw source predictions remain unchanged."
+}

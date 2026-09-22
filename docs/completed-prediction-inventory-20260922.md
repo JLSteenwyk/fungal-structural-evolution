@@ -361,3 +361,48 @@ No GPU inference or paid resources are used. The final stage verifies native
 partner selection and coordinate descriptors and records full feature-context
 pLDDT. PAE binding/qualification and evolutionary integration are still required;
 this coordinate-only stage cannot by itself certify PAE-qualified states.
+
+
+## Mapping-bound refreshed AlphaFold confidence queued
+
+The final confidence controller waits for both the exact native-coordinate
+controller and the exact PAE-prefetch controller. It requires their successful
+receipts, matching plans, complete model counts and source bindings. It then:
+
+1. Revalidates all cached PAE matrices into a receipt bound to the completed
+   residue mapping, using the existing `retrieve_marker_pae.py`.
+2. Runs the unchanged `qualify_native_pae.py` on all audited coordinate arrays.
+3. Independently reads back every qualified six-residue PAE context using
+   `scripts/readback_afdb_pae_qualification.py`.
+
+The readback verifies compressed and uncompressed JSON checksums and model,
+version, sequence-hash, length and URL provenance. It checks all pre-existing
+coordinate arrays are unchanged, then accumulates the maximum across all 36
+ordered pairs in each valid context without using the qualifier helper. Invalid
+states must retain NaN PAE values. Every per-model and aggregate confidence
+count must agree. Because AFDB PAE JSON does not itself embed the amino-acid
+sequence, sequence identity is bound through the retrieval receipt and model
+provenance; this is not direct sequence validation from the PAE payload.
+
+An end-to-end synthetic six-residue asymmetric matrix passes with the expected
+one confidence-qualified state. Corruptions of context maxima, invalid-state
+sentinels, coordinate arrays, sequence provenance and uncompressed checksums
+are rejected. Run `python scripts/check_afdb_pae_readback.py`; recorded results
+are in `metadata/current_afdb_pae_readback_fixture_checks.json`.
+
+`fungal-current-afdb-confidence-20260922.service` runs
+`scripts/advance_refreshed_afdb_confidence.py` with
+`metadata/current_afdb_confidence_plan.json`; its verified waiting process is
+recorded in `metadata/current_afdb_confidence_launch.json`. The controller is
+under `results/structural_alphabet/current-afdb-confidence-controller-20260922-v1/`.
+Mapping-bound PAE will be under
+`results/structural_pae/gdm-current-mapping-bound-20260922-v1/`; qualified arrays
+will be under `results/structural_alphabet/audited-gdm-current-20260922-v1/`.
+
+Resources are capped at two CPU equivalents, 16 GiB RAM and zero swap, with a
+150-GiB free-disk gate and 100-GiB output allowance. The uncalibrated execution
+allowance is 1–48 hours after both predecessors complete, not an ETA. This
+stage uses existing predictions and local cached confidence data; no GPU
+prediction or paid infrastructure is launched. Production qualification and
+full-context readback are pending; their queueing does not establish calibrated
+confidence, biological accuracy or completed evolutionary analyses.
