@@ -1,0 +1,29 @@
+{
+  "output": "results/structures/completed-marker-availability-20260922-v1",
+  "global_links": "results/phylogeny/markers-full-v1/protein_mapping.tsv",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "esmfold_links": "results/structures/esmfold-all-completed-readback-20260922-v1/expected_global_links.tsv",
+  "esmfold_readback": "results/structures/esmfold-all-completed-readback-20260922-v1/receipt.json",
+  "alphafold_links": "results/structural_markers/gdm-prefetch-catalog-v1/marker_model_links.tsv",
+  "alphafold_receipt": "results/structural_markers/gdm-prefetch-catalog-v1/receipt.json",
+  "pins": {
+    "results/phylogeny/markers-full-v1/protein_mapping.tsv": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/structures/esmfold-all-completed-readback-20260922-v1/expected_global_links.tsv": "19929b92fefbc0069e633ce63bf1c4fcebcd01462c213f465b41ee1ade1e7bb1",
+    "results/structures/esmfold-all-completed-readback-20260922-v1/receipt.json": "6d45696e39c43626f65a1d725246d7911f1ab92323dbb90216750a1f177062bb",
+    "results/structural_markers/gdm-prefetch-catalog-v1/marker_model_links.tsv": "ea18ff08338a021d8bcb5cd3061934feb331dd60915f6a1743fd2c0e49142150",
+    "results/structural_markers/gdm-prefetch-catalog-v1/receipt.json": "b2774df8582936aaa9eb94496e84f787ae2db0f0faa4daf22b22ae33075678f0",
+    "scripts/summarize_completed_marker_availability.py": "a2a7459b04f21412d027820a8119c88ba2f6e4488b69bcf25af9d23445afbd61"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 1,
+    "output_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      5
+    ],
+    "gpu": false,
+    "paid_resources": false
+  }
+}

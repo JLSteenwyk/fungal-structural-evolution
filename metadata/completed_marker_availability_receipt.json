@@ -1,0 +1,22 @@
+{
+  "status": "complete_frozen_catalog_marker_availability",
+  "taxa": 526,
+  "markers": 125,
+  "marker_links": 59840,
+  "distinct_sequences": 58883,
+  "link_counts": {
+    "both": 232,
+    "esmfold_only": 25277,
+    "alphafold_only": 13422,
+    "neither_catalog": 20909
+  },
+  "links_with_model": 38931,
+  "taxa_with_model": 526,
+  "plan_sha256": "bd2b696af5016ac12c9b4a631293406d99f002294e06ecdf1a0d17d8520414b9",
+  "script_sha256": "a2a7459b04f21412d027820a8119c88ba2f6e4488b69bcf25af9d23445afbd61",
+  "artifacts": {
+    "marker_availability.tsv": "e76ac39991d725c3a813492e44ae4b62e5c83c200039ee21c99d9887d7ec5423",
+    "taxon_availability.tsv": "07d473cca9995b9c7f845d04b7bdaa98598516641ab12788f907116e688e63a4"
+  },
+  "scope": "Exact marker/protein links in the two specified frozen catalogs. Neither catalog is not proof of absence from current caches or public databases. Counts precede confidence qualification and are not full-proteome coverage. Identical sequences and shared models are not independent observations."
+}

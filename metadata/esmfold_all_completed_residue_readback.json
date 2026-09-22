@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_local_residue_mapping_readback",
+  "models": 25322,
+  "marker_links": 25509,
+  "matrix_residue_links": 8335615,
+  "reconstructed_expected_residue_links": 8335615,
+  "mapping_receipt_sha256": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+  "prediction_audit_receipt_sha256": "a2263d8ad4ab28d16cf5376ef4ec8f48158fb319d0abad69bf29f30333445e3a",
+  "expected_links_sha256": "19929b92fefbc0069e633ce63bf1c4fcebcd01462c213f465b41ee1ade1e7bb1",
+  "global_marker_links_sha256": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+  "originating_links": 25501,
+  "additional_exact_sequence_links": 8,
+  "script_sha256": "b7e226141f87d004d0843f4294456647d1c1a257741075bbb45e145f6789d7cc",
+  "scope": "All source/link identities and NPZ/coordinate hashes checked. Every expected non-gap retained Stockholm position independently reconstructed using cumulative residue counts; all exported positions, matrix amino acids and NPZ confidence checked with PDB rounding tolerance. Shared Biopython alignment parser; no independent alignment inference. PAE/native context and biological interpretation remain separate.",
+  "artifacts": {
+    "profile_input_hashes.json": "e4505c7898b2b7802808338af1609f037b69c390362e0a950417263b2a713dd8"
+  }
+}

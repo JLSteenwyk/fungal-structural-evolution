@@ -3472,3 +3472,18 @@ The 70-marker snapshot is retained as historical evidence, not the current
 full-batch estimate. Structural mapping/features, family-domain readback and
 reconciliation recovery were confirmed live by process inspection; GPU prediction
 remains paused after its authorized window. The overall project is unfinished.
+
+
+## Full completed-model mapping and combined availability — 22 September 2026
+
+The 25,322-model ESMFold mapping and independent residue readback completed:
+25,509 marker/protein links and 8,335,615 matrix-residue links. Archived receipts
+are bound to the controller's recorded hashes. Qualification remains pending.
+
+A reproducible comparison with the frozen AlphaFold catalog partitions all
+59,840 recovered marker records: 25,277 ESMFold-only, 13,422 AlphaFold-only,
+232 in both and 20,909 in neither. The union covers 38,931 records (65.1%)
+and at least one marker per sampled entry (526 entries), before confidence
+filtering. Independent pandas joins reproduced every classification and all
+per-taxon counts. Missing-from-catalog is not a current retrieval failure or
+a ready prediction queue. See the [inventory checkpoint](completed-prediction-inventory-20260922.md).

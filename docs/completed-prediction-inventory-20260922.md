@@ -51,10 +51,11 @@ python scripts/readback_completed_prediction_inventory.py \
   --output results/structures/esmfold-all-completed-readback-new
 ```
 
-The full original cohort is undergoing residue mapping; long and extended
-cohorts have completed residue mapping and are undergoing feature/confidence
-qualification. Combined qualified mappings, regenerated paired alignments,
-updated phylogenetic fits and evolutionary tests remain unfinished.
+All five cohorts and their full combined inventory have completed residue
+mapping. Independent combined readback verified 8,335,615 matrix-residue links,
+25,509 marker/protein links and all 25,322 models. Native feature/confidence
+qualification, regenerated paired alignments, updated phylogenetic fits and
+evolutionary tests remain unfinished.
 
 ## Combined residue mapping
 
@@ -79,8 +80,11 @@ The pre-launch allowance is one CPU equivalent, 32 GiB RAM, no swap, 50 GiB
 output, a 100 GiB free-disk gate, and 1–24 hours of uncalibrated planning. The
 larger memory allowance supports full residue-level dictionaries during
 readback. This uses existing predictions and does not launch GPU inference.
-Completed mapping and confidence-qualified encoding integration remain
-separate gates before rebuilding paired phylogenetic inputs.
+The mapping gate has passed. Confidence-qualified encoding integration remains
+a separate gate before rebuilding paired phylogenetic inputs. Completion
+receipts are archived under `metadata/esmfold_all_completed_mapping_completed.json`,
+`metadata/esmfold_all_completed_residue_readback.json` and
+`metadata/esmfold_all_completed_mapping_controller_receipt.json`.
 
 ## Qualified encoding integration
 
@@ -108,3 +112,44 @@ No arrays are averaged or re-predicted. Resources are one CPU equivalent,
 0.5–12 hour allowance after predecessors complete. Being queued is not a
 completed qualification or evolutionary result. Paired-input reconstruction
 and updated supported tree fits remain subsequent stages.
+
+## Availability across the completed ESMFold and frozen AlphaFold catalogs
+
+The full marker universe contains 59,840 recovered marker/protein records
+(58,883 distinct sequences), across 125 markers and 526 sampled entries.
+An exact marker/taxon/protein/sequence join partitions every recovered record:
+
+| Availability in these catalogs | Marker/protein records |
+|---|---:|
+| ESMFold only | 25,277 |
+| AlphaFold only | 13,422 |
+| Both | 232 |
+| Neither | 20,909 |
+
+Together, these catalogs cover 38,931 records (65.1%), with at least one
+model-linked marker in every one of the 526 sampled entries. These are
+pre-qualification counts; they do not supersede confidence-qualified coverage
+counts or demonstrate adequate within-family or within-lineage sampling.
+They also do not represent all proteins in the genomes. The denominator
+excludes unrecovered marker sequences, which remain separately tabulated.
+
+“Neither” means absent from the completed ESMFold inventory and the frozen
+GDM/AlphaFold catalog used in this comparison. It does not establish absence
+from newer cached downloads or public databases, and must not be converted
+directly into a prediction queue without a current retrieval check. Models
+shared by exact sequences are not independent observations.
+
+Reproduce with `python scripts/summarize_completed_marker_availability.py
+--plan metadata/completed_marker_availability_plan.json` after selecting a fresh
+output directory in a copied plan. The plan pins all inputs and the producer,
+and records a one-CPU, 1-GiB memory, 0.1-GiB output, 1–5-minute planning
+allowance. This computation uses no GPU. Every source link is checked against
+the global inventory and its source receipt. A separate pandas two-left-join
+calculation reproduced all 59,840 output classifications, all 526 taxon rows and
+the aggregate counts; it also checked marker/taxon uniqueness.
+
+The receipt and per-taxon table are versioned as
+`metadata/completed_marker_availability_receipt.json` and
+`metadata/completed_marker_taxon_availability.tsv`. The complete per-marker
+availability table remains in
+`results/structures/completed-marker-availability-20260922-v1/`.
