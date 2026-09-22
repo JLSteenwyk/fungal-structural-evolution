@@ -176,3 +176,31 @@ across both full partitions, processed sequentially. The 0.5–12 hour execution
 allowance is uncalibrated planning, not an ETA. Full native reconciliation
 output validation remains incomplete until these and the separate HOG/event/
 ortholog checks pass.
+# First full reconciliation guide completed; tree readback running
+
+The profile-guide native execution has finished under the recovery plan;
+its stage receipt is archived in
+`metadata/expanded_reconciliation_profile_native_stage.json`. The native
+controller has moved on to the MAFFT-guide execution. This is execution
+completion only: the known small-family output omissions and full output
+semantics still require validation and supplementation.
+
+An early full profile-guide resolved-tree readback is running as
+`fungal-profile-resolved-tree-early-readback-20260922.service`, using the
+unchanged tested `readback_resolved_tree_memberships.py`. Before launch,
+the 219,045,061-byte resolved-tree file matched its native completion hash,
+and the three source identity/cluster files matched the staged-input
+manifest. The original partition contains 658,183 families and 5,815,847
+proteins. The checker requires exactly the resolved trees expected for
+families of at least four genes, with exact source membership, unique
+labels and finite nonnegative branch lengths.
+
+The plan and launch are
+`metadata/profile_resolved_tree_early_readback_{plan,launch}.json`; output is
+`results/orthology/profile-resolved-tree-early-readback-20260922-v1.json`.
+Resources are one CPU, 32 GiB RAM, no swap, under 0.01 GiB output and the
+existing uncalibrated 0.5–12 hour planning allowance. This checks the first
+guide now so failures need not wait for the second run. The already queued
+final controller remains responsible for both completed guide outputs.
+Neither this membership check nor a native exit code validates HOGs,
+duplication/loss events, complete ortholog tables or biological homology.

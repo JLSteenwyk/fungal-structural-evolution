@@ -1,0 +1,20 @@
+{
+  "source": "results/orthology/expanded-reconciliation-execution-v2/profile/Source/WorkingDirectory",
+  "results": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile",
+  "output": "results/orthology/profile-resolved-tree-early-readback-20260922-v1.json",
+  "expected_source_families": 658183,
+  "expected_source_proteins": 5815847,
+  "resolved_tree_sha256": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+  "script_sha256": "7e1acb1d149e30a60d60c694f3588d561e073183c86faded4767b2e02fe425ed",
+  "scope": "Early complete first-guide readback while the second guide runs. Final two-guide controller will validate both final outputs separately.",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "output_gib": 0.01
+  }
+}
