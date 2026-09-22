@@ -1,0 +1,26 @@
+{
+  "status": "complete_same_alignment_two_guide_descriptive_sensitivity",
+  "taxa": 526,
+  "sites": 49027,
+  "internal_splits_a": 523,
+  "internal_splits_b": 523,
+  "shared_internal_splits": 516,
+  "rf_distance": 14,
+  "high_support_splits_a": 456,
+  "high_support_splits_b": 461,
+  "incompatible_high_support_split_pairs": 0,
+  "site_profile_l1_mean": 0.017408236506781978,
+  "site_profile_l1_max": 1.00381081,
+  "inputs": {
+    "results/phylogeny/pmsf-profile-profile-readback-v1/receipt.json": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json": "b2642f338eb34116f1046c75c2d58ded71ad610482ec38cdfd5243e5a3ee2591",
+    "results/phylogeny/pmsf-profile-mafft-readback-v1/receipt.json": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+    "results/phylogeny/pmsf-profile-mafft-v1/receipt.json": "1a40206961cb0caa110551398ec30a74e4c3e385295506a8a580960eac27c41e"
+  },
+  "script_sha256": "35a1980b13b14cff503569c31a4da329d59336ccb350baaede7903fa19e85296",
+  "artifacts": {
+    "split_comparison.tsv": "15a67d39bb7ec7a1e2eea733446f568de2647dc1a105ac6a7bd2f3685c823dca",
+    "supported_conflicts.tsv": "ab2dcb48aa325b1c585a0840ee0ad778303bb4c86ea13dabaa1fe0aaada41e23"
+  },
+  "scope": "Descriptive guide sensitivity on one fixed alignment. High support means SH-aLRT >=80 and empirical UFBoot >=95. Different guide-estimated profiles prevent interpreting cross-run likelihood differences as model preference. Two other crossed runs, rooting, adequacy and gene discordance remain required."
+}

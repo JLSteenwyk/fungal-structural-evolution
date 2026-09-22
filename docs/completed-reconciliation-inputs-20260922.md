@@ -1,5 +1,13 @@
 # Completing expanded gene-tree inputs
 
+**Completed September 22:** staging and independent native readback passed.
+All 95,484 profile-partition trees and 95,594 MAFFT-partition trees are present,
+with no pending families. The audits checked 5,190,562 and 5,190,472 tree tips,
+respectively, against the full partitions. Receipts are archived as
+`metadata/expanded_reconciliation_inputs_complete_receipt.json` and
+`metadata/expanded_reconciliation_inputs_complete_readback.json`. Reconciliation
+execution remains separate. The launch description below records the initial state.
+
 The independently repaired OG0000017 tree has 55,981 distinct tips and SHA-256
 `0b7af9780b1ffce2fc6c4d5abaa02ba37347431b94cba0ca382656beb1a46ffe`.
 It was installed in the original tree collection, but remained absent from

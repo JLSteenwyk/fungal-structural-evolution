@@ -3299,3 +3299,21 @@ to both partitions while preserving the previous snapshots. A full independent
 native-parser readback follows staging. Expected tree totals are 95,484 and
 95,594; completion requires the new readback receipt. Reconciliation itself
 has not launched. See docs/completed-reconciliation-inputs-20260922.md.
+
+
+September 22: complete expanded input staging and independent native readback
+finished successfully. Both partitions retain all 5,815,847 proteins; 95,484
+profile trees and 95,594 MAFFT trees passed exact family-tip, branch, physical
+copy and native-path checks. No pending trees remain. Reconciliation itself
+and final species-phylogeny validation remain outstanding. Receipts are
+archived in metadata/expanded_reconciliation_inputs_complete_{receipt,readback}.json.
+
+September 22: the two completed profile-alignment PMSF runs passed complete
+saved-profile, tree/report and 1,000-replicate empirical bootstrap readback.
+Their ML and reoptimized consensus trees have identical topology within each
+run; consensus likelihoods improve by about 0.698 and 0.293 respectively.
+Across guides they share 516/523 internal splits (RF=14), independently
+confirmed with the native OrthoFinder parser. No incompatible split pair
+passes SH-aLRT >=80 and empirical UFBoot >=95 in both runs. This is one
+alignment's guide sensitivity, not a final species tree or model-adequacy
+result. See docs/pmsf-profile-readback-20260922.md.
