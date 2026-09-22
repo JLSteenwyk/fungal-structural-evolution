@@ -82,3 +82,35 @@ Archived receipts are `metadata/current_marker_gap_receipt.json` and
 verified every gap sequence hash, length and symbol set; a separate join of the
 526-taxon availability table to the manifest reproduced every lineage count.
 The alternative-source log replay was not independently repeated.
+
+
+## Coverage figure
+
+![Marker recovery and model availability across all 27 lineage groups](figures/current_marker_coverage.svg)
+
+[Download the figure as PDF](figures/current_marker_coverage.pdf).
+The left panel uses all 125 marker slots per sampled entry; the right panel
+conditions on recovered marker sequences and explicitly uses an 85–101% axis.
+Across all 526 entries, 56,171 of 65,750 marker slots have both sequence and
+model (85.4%); the remaining slots contain 3,669 recovered sequences without a
+selected model and 5,910 unrecovered sequences. Conditioning on sequence
+recovery gives 56,171/59,840 = 93.9%. Neither denominator measures qualified
+structural sites or whole-proteome coverage.
+
+Reproduce into a fresh directory:
+
+```bash
+python scripts/plot_current_marker_coverage.py \
+  --summary metadata/current_marker_lineage_availability.tsv \
+  --receipt metadata/current_marker_gap_receipt.json \
+  --readback metadata/current_marker_gap_readback.json \
+  --output results/figures/current-marker-coverage-20260922-v1
+```
+
+Every saved bar count and denominator was checked against the validated source
+table. The plotting script checks all 81 segment boundaries/widths and all 27
+conditional point positions. The rendered PNG was visually inspected for
+labels, legends, axis ranges and clipping. Figure provenance and review are in
+`metadata/current_marker_coverage_figure_receipt.json` and
+`metadata/current_marker_coverage_figure_review.json`. The figure is descriptive;
+lineage bins have unequal sampling and are not equivalent taxonomic ranks.
