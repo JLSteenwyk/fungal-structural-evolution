@@ -269,3 +269,51 @@ The live waiting controller is recorded in metadata. Limits are four CPUs,
 128 GiB available RAM; planning allows 50 GiB output and an uncalibrated
 2–48 hours after the full archive audit. Clustering, threshold/boundary
 sensitivity, domain homology and evolutionary inference remain subsequent work.
+
+## Full alignment/envelope boundary sensitivity
+
+The complete extraction manifest contains **594,797 candidate model/hit pairs**
+from **427,255 models**, counted once across the union of four annotation
+policies. Comparing the two boundaries for every pair gives:
+
+| Boundary comparison | Candidate pairs |
+|---|---:|
+| Identical alignment and envelope endpoints | 111,002 |
+| Envelope extends beyond alignment | 483,795 |
+| Envelope adds at least 10 residues | 99,194 |
+| Envelope adds at least 20% of alignment length | 28,271 |
+
+The last two rows overlap. Reporting thresholds are descriptive bins, not
+validated exclusion criteria. The median added length is two residues; the
+90th, 95th and 99th percentiles are 15, 24 and 47 residues, respectively, with
+a maximum of 426. Thus the typical boundary difference is small, but the
+longer tail warrants retaining both alternatives in structural comparisons.
+These counts do not establish which boundary is biologically correct or
+whether the difference changes a structural or evolutionary result.
+
+`scripts/summarize_domain_boundary_sensitivity.py` validates the complete
+manifest hashes, one alignment/envelope pair per candidate, containment and
+length arithmetic, and writes every pair to
+`results/domains/domain-boundary-sensitivity-20260923-v1/boundary_sensitivity.tsv.gz`.
+A separate CSV/dictionary implementation in
+`scripts/readback_domain_boundary_sensitivity.py` reconstructs every row from
+the original manifest and checks the identity grid, endpoints, lengths,
+extensions, fractions and threshold counts. The quantiles are producer
+summaries and are not separately recomputed by this readback. Both receipts
+are archived in `metadata/domain_boundary_sensitivity_{receipt,readback}.json`.
+
+Reproduce with:
+
+```bash
+python scripts/summarize_domain_boundary_sensitivity.py \
+  --manifest results/domains/domain-extraction-manifest-20260923-v1 \
+  --output results/domains/domain-boundary-sensitivity-20260923-v1
+python scripts/readback_domain_boundary_sensitivity.py \
+  --manifest results/domains/domain-extraction-manifest-20260923-v1 \
+  --result results/domains/domain-boundary-sensitivity-20260923-v1
+```
+
+Use a fresh output directory when rerunning the producer. This bounded local
+CPU summary does not modify extraction inputs or launch GPU prediction.
+Coordinate audits, PAE qualification and comparative structural tests remain
+separate stages.

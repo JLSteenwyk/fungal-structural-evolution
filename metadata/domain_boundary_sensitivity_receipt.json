@@ -1,0 +1,37 @@
+{
+  "status": "complete_full_candidate_domain_boundary_sensitivity",
+  "candidate_model_hit_pairs": 594797,
+  "source_models": 427255,
+  "identical_boundary_pairs": 111002,
+  "different_boundary_pairs": 483795,
+  "pairs_with_at_least_10_added_residues": 99194,
+  "pairs_with_at_least_20_percent_added_residues": 28271,
+  "added_residues_quantiles": {
+    "0": 0.0,
+    "0.25": 1.0,
+    "0.5": 2.0,
+    "0.75": 6.0,
+    "0.9": 15.0,
+    "0.95": 24.0,
+    "0.99": 47.0,
+    "1": 426.0
+  },
+  "added_fraction_quantiles": {
+    "0": 0.0,
+    "0.5": 0.01809954751131222,
+    "0.9": 0.12698412698412698,
+    "0.95": 0.193717277486911,
+    "0.99": 0.3615401999130829,
+    "1": 2.9210526315789473
+  },
+  "source_hashes": {
+    "results/domains/domain-extraction-manifest-20260923-v1/receipt.json": "9b6dd32cea51c151953ee3aa73d7a13628917aff216694b83396d97dd99a6069",
+    "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "results/domains/domain-extraction-manifest-20260923-v1/boundary_links.tsv.gz": "5562955a1d0e2f37c674b4599dcf03e934fac158fdab7ca3083382220cdde040"
+  },
+  "script_sha256": "9989d340e7b445dfd808e15e76c341fd71ff564895678a9fad90aea36367469f",
+  "scope": "Every candidate model/hit in the four-policy union, counted once with both alignment and envelope boundaries. Descriptive boundary sensitivity only; thresholds are reporting bins, not validated exclusions. No confidence, PAE, structural-distance or evolutionary-effect validation.",
+  "artifacts": {
+    "boundary_sensitivity.tsv.gz": "9afa9565b23157a9222f8829cb6201fd7f108907b124a9ba077f2b181a653a65"
+  }
+}

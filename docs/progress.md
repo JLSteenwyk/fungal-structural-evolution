@@ -3666,3 +3666,14 @@ structural-alphabet exports also passed the full identity/shape audit for
 and the receipts archived in metadata. Coordinate-derived feature reconstruction
 is now running; confidence/PAE qualification and downstream evolutionary fits
 remain pending. See [scoped completion details](completed-prediction-inventory-20260922.md).
+
+## Full candidate domain boundary comparison completed — 23 September 2026
+
+Compared alignment and envelope endpoints for all 594,797 candidate model/hit
+pairs across 427,255 models. Independent CSV reconstruction passed every
+output row and reporting-bin count. Boundaries match for 111,002 pairs;
+99,194 envelopes add at least ten residues and 28,271 add at least 20% of
+the alignment length. These overlapping descriptive bins support retaining
+both boundary alternatives; biological boundaries and structural effects
+remain unvalidated. Scripts, complete local table and archived receipts are
+documented in the [domain registry report](whole-proteome-structure-domain-registry-20260923.md).
