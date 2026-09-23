@@ -3647,3 +3647,12 @@ coordinates and confidence are checked; rejections and missing backbone atoms
 remain explicit. Small independent PDB/tar fixtures passed. Full archive readback,
 PAE assessment, domain comparisons and evolutionary inference remain pending.
 See [extraction methods and resources](whole-proteome-structure-domain-registry-20260923.md).
+
+## First production domain archive source-atom readback passed — 23 September 2026
+
+Checked every atom in all 2,473 domain exports from the first completed
+1,000-model production archive against original CIF arrays. Source and export
+hashes, exact atom/residue identity, coordinates, occupancy, confidence and
+fragment sequences passed. The receipt is archived; the full extraction and
+all-archive audit remain active/queued. This limited completion does not replace
+the planned full-data validation.

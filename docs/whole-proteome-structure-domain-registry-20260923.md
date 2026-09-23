@@ -218,3 +218,20 @@ Fixtures passed a complete real-source archive and rejected a changed coordinate
 Limits are four CPUs, 32 GiB memory, no swap and no GPU; output planning is
 0.01 GiB and runtime planning is an uncalibrated 6–120 hours after extraction.
 The readback is queued and not yet a completed validation result.
+
+## First completed production archive checked against source atoms
+
+While the full extraction continued, the queued auditor's shard-check routine
+was applied to the complete `shard_00000` archive. It passed for **all 2,473
+exported domains from 1,000 source models**. Every exported atom was checked
+against original CIF arrays, including exact identities and membership,
+coordinates within serialization precision, occupancy, confidence, fragment
+sequence and missing-backbone flags. No interval in this archive was rejected
+or had missing backbone atoms. The check took about 118 seconds.
+
+`metadata/domain_coordinate_first_completed_shard_readback.json` binds the
+result to unchanged job, shard receipt and auditor hashes. This is one complete
+production archive, not the full extraction result: the global manifest/catalog
+scope checks and all other archive readbacks remain pending. At the subsequent
+checkpoint, extraction had completed 16/428 shards, producing 38,992 domains
+from 16,000 models without rejections. It continues across the full manifest.

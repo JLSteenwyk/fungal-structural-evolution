@@ -1,0 +1,15 @@
+{
+  "status": "passed_completed_domain_shard_original_atom_readback",
+  "shard": "shard_00000.receipt.json",
+  "counts": {
+    "models": 1000,
+    "intervals": 2473,
+    "exported": 2473,
+    "missing_backbone_intervals": 0
+  },
+  "shard_receipt_sha256": "50e780e626ec1edccedee9f7bc4a79b679df423a6cd23a309cc6ed24f994ea73",
+  "job_sha256": "59ac74e56b5d5c05b24a4feee442d251ac483699887efe845a8ca4e4edee8fe8",
+  "auditor_sha256": "9e703dd752e958281103739b27cd20666c7b2156ee994a0fd0bf017efdd220d1",
+  "elapsed_seconds": 117.8354781220005,
+  "scope": "Every exported atom in this single completed shard compared to original CIF arrays by the queued full auditor. Production extraction continues across the full manifest; global job/catalog/manifest checks and all remaining archive readbacks are still pending."
+}
