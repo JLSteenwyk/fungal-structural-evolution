@@ -528,3 +528,41 @@ normalization readbacks passed for every cell. The .25 classification differs fo
 cells between Tien and Miller references; retain continuous values and both
 scales. This is normalization sensitivity, not evidence for evolutionary
 transitions or biological core/surface truth.
+
+## Accessibility for the two remaining ESMFold cohorts launched — 23 September 2026
+
+The complete long and extended prediction cohorts now have full-chain
+accessibility jobs, using the unchanged established producer and source-audit
+controller. The long cohort contains **5,510 models / 3,386,360 residues**;
+the extended cohort contains **4,363 models / 3,924,624 residues**. Together
+these add 9,873 models and 7,310,984 residues to the accessibility workflow.
+Previously completed original, follow-on and ecology calculations are retained.
+
+Each cohort uses four CPU workers, 16 GiB RAM, no swap, a 1.4-angstrom probe
+and 960 sphere points per atom. OpenBLAS threads are limited to one per worker.
+Output planning is 10 GiB per cohort, with an uncalibrated 2–48-hour runtime
+allowance reflecting longer proteins, packing and host contention. Available
+RAM exceeded 860 GiB and disk space exceeded 11 TiB before launch. There are
+no new predictions, GPU jobs or paid resources.
+
+Output directories are
+`results/structural_annotations/accessibility-esmfold-long-20260923-v1` and
+`results/structural_annotations/accessibility-esmfold-extended-20260923-v1`.
+Their units are `fungal-esmfold-{long,extended}-accessibility-20260923.service`.
+Pinned resource plans, verified live-process records and audit configurations
+are `metadata/esmfold_{long,extended}_accessibility_*`.
+
+Each queued audit waits for the exact producer PID/start-time identity and
+requires a complete production receipt. It verifies the complete model and
+residue grid, source coordinate hashes, raw atom/residue identities, confidence,
+entry artifacts and summary totals using `audit_predicted_accessibility.py`.
+It does not independently recompute the surface-area algorithm. Audit limits
+are one CPU, 8 GiB RAM, no swap and 1 GiB output, with an uncalibrated 0.1–8-hour
+planning allowance after its producer finishes.
+
+The producer retains all heavy atoms as potential occluders and confidence as
+an annotation. These isolated predicted-chain areas do not establish physical
+exposure in a complex, binding pockets or biologically correct domain
+orientation. Full audited union, paired-site projection, reference normalization
+and their readbacks remain required before these new cohorts enter the
+surface/core evolutionary analyses. The jobs are running, not completed.

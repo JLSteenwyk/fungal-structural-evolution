@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-09-23T15:29:23.844524+00:00",
+  "producer": {
+    "unit": "fungal-esmfold-extended-accessibility-20260923",
+    "pid": 2480720,
+    "create_time": 1790177363.26,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/annotate_predicted_accessibility.py",
+      "--snapshot",
+      "results/structural_markers/esmfold-extended-complete-v1",
+      "--output",
+      "results/structural_annotations/accessibility-esmfold-extended-20260923-v1",
+      "--workers",
+      "4",
+      "--points",
+      "960"
+    ]
+  },
+  "audit": {
+    "unit": "fungal-esmfold-extended-accessibility-20260923-audit",
+    "pid": 2481433,
+    "create_time": 1790177363.31,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_accessibility_audit.py",
+      "--config",
+      "metadata/esmfold_extended_accessibility_audit_controller_config.json"
+    ]
+  }
+}

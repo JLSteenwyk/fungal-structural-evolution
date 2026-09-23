@@ -1,0 +1,29 @@
+{
+  "producer_pid": 2479569,
+  "producer_start_ticks": "776513",
+  "snapshot": "results/structural_markers/esmfold-long-complete-v1",
+  "assessment": "results/structural_annotations/accessibility-esmfold-long-20260923-v1",
+  "audit_output": "results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit",
+  "controller_output": "results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit-controller",
+  "pinned_files": {
+    "scripts/annotate_predicted_accessibility.py": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/advance_accessibility_audit.py": "3cc22c8e28e7d5051817be46230bc8866e1a202b1bd9b44a1ec65dbf09228a26",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/structural_markers/esmfold-long-complete-v1/receipt.json": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101",
+    "results/structural_markers/esmfold-long-complete-v1/model_provenance.json": "0447c651ecc96bffb3fcaf98618fed89419bdc304119838d19d0fe165004733a"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.1,
+      8
+    ],
+    "runtime_is_uncalibrated": true
+  }
+}

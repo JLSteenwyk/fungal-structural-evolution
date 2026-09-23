@@ -3727,3 +3727,12 @@ functional correspondence rows across 283 taxa and 21 markers, including
 updates structural coverage of functional correspondences; it is not evidence
 of catalytic activity, structural acceleration or selection. See the
 [functional-site workflow](functional-site-workflow.md).
+
+## Remaining ESMFold accessibility cohorts launched — 23 September 2026
+
+Started the established full-chain accessibility calculation for all 9,873
+long/extended models covering 7,310,984 residues, with eight CPU workers total
+and no GPU prediction. Both complete source audits are queued behind exact
+producer identities. Results, full-cohort union, paired-site projection,
+normalization and downstream evolutionary analyses remain pending. See the
+[accessibility workflow](residue-accessibility.md).

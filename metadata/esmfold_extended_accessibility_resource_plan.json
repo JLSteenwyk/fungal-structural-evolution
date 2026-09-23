@@ -1,0 +1,24 @@
+{
+  "status": "prelaunch_complete_remaining_esmfold_accessibility",
+  "snapshot": "results/structural_markers/esmfold-extended-complete-v1",
+  "snapshot_receipt_sha256": "b876173320900d6cd7698528b7091691947b984703028a7b9179b9a19d220bab",
+  "models": 4363,
+  "residues": 3924624,
+  "workers": 4,
+  "sphere_points_per_atom": 960,
+  "memory_allowance_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 10,
+  "planning_runtime_hours": [
+    2,
+    48
+  ],
+  "runtime_is_uncalibrated": true,
+  "estimate_basis": "Complete long-protein cohort using the established full-chain heavy-atom method; runtime uncertainty includes increased protein lengths, packing and host contention. Not a calibrated ETA.",
+  "output": "results/structural_annotations/accessibility-esmfold-extended-20260923-v1",
+  "script_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "available_memory_gib": 869,
+  "free_disk_gib": 11822,
+  "cost": "Existing authorized host; no paid resources or GPUs",
+  "scope": "Every model in the completed cohort, isolated-chain ASA with confidence retained. Requires full source audit, union/projection and normalization before evolutionary interpretation."
+}
