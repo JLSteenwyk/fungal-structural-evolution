@@ -1,0 +1,68 @@
+{
+  "status": "both_native_executions_complete_pending_full_output_readback",
+  "plan_sha256": "badd40621f777a9b4b1940f4f4a5bd497eedd58eaa1b8d1f6419e9e79bbf16c0",
+  "started_unix": 1790171250.1970665,
+  "stages": [
+    {
+      "guide": "profile",
+      "status": "native_execution_complete_pending_full_output_readback",
+      "elapsed_seconds": 9814.757196187973,
+      "result": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile",
+      "mandatory_artifacts": {
+        "Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "83e4a5aac59c374ddfef4839794afa90c105308414ea06bcf76d4f57ab386532",
+        "Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+        "Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+        "Species_Tree/SpeciesTree_rooted.txt": "278691efb860d17fed0b444dc10d8dd080b961b63e744ba6e9b7d1001e645399",
+        "Comparative_Genomics_Statistics/Statistics_Overall.tsv": "ac8009f96ac590c027ddd3685519b7faf2a6473292433ce053a906bb59305902"
+      },
+      "source_inputs_unchanged": true,
+      "reused_stage_receipt": "metadata/expanded_reconciliation_profile_native_stage.json",
+      "reused_stage_receipt_sha256": "f470385a16e54739218066caaa4961a7f99efd16cf5701e473337cd36f22fa32"
+    },
+    {
+      "guide": "mafft",
+      "status": "native_execution_complete_pending_full_output_readback",
+      "elapsed_seconds": 10796.362067461014,
+      "result": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft",
+      "mandatory_artifacts": {
+        "Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "83ef338e59e41ee4ee4b7be55d128d864b74da9eecf2487aaec432fdb7fa095c",
+        "Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+        "Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+        "Species_Tree/SpeciesTree_rooted.txt": "4c9e9026ac3898ed0f46bc5b326b4624133c20fe55a8c69269177581f844d69b",
+        "Comparative_Genomics_Statistics/Statistics_Overall.tsv": "8fc1e8d13d66bf4436f88025251f6314586ba3cae9a1cb39ada6a3834b0f23b0"
+      },
+      "source_inputs_unchanged": true
+    }
+  ],
+  "updated_unix": 1790182125.2378716,
+  "guide": "mafft",
+  "native_pid": 220514,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+    "--stall-timeout-seconds",
+    "21600",
+    "--",
+    "--from-trees",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+    "-s",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+    "-n",
+    "expanded_mafft",
+    "-t",
+    "8",
+    "-a",
+    "4",
+    "-M",
+    "msa",
+    "-S",
+    "diamond",
+    "-A",
+    "famsa",
+    "-T",
+    "fasttree",
+    "--no-fix-files",
+    "--save-space"
+  ],
+  "native_started_unix": 1790171325.1191607
+}

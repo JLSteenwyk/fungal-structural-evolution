@@ -3892,3 +3892,17 @@ under `metadata/profile_root_hog_*completed_receipt.json`. This resolves the
 algorithmic omission accounting, not biological loss, rooting or duplication
 timing. The MAFFT-guide reconciliation is still writing its outputs, and the
 cross-guide interpretation remains pending.
+
+### September 23: both native reconciliation runs completed
+
+The recovered MAFFT-guide native run completed successfully at 12:48 EDT,
+joining the previously completed profile-guide run. The controller verified
+526 taxa and 5,815,847 genes in final statistics, preserved input hashes and
+required output files. Before archiving the terminal state, independently
+checked all pinned plan inputs and the five recorded output hashes for each
+guide. Evidence is
+`metadata/expanded_reconciliation_both_native_completed_state_20260923.json`.
+Both queued successors advanced automatically: full resolved-tree membership
+readback and the small-family ortholog supplement have live worker processes.
+Native execution is complete; full output validation, guide sensitivity and
+biological duplication/loss interpretation remain unfinished.
