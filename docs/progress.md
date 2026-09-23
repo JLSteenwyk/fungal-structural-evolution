@@ -4328,3 +4328,23 @@ wait and is checking source archives before conversion. Database completion
 is still pending. This validation shares the CIF lexical parser and does not
 establish biological domain boundaries, PAE qualification, homology or
 evolutionary change; boundary sensitivity and clustering remain downstream.
+
+
+### September 23: full-cohort rate comparison and exposure integration queued
+
+Queued the six-stage model-comparison controller for all 122 completed-cohort
+markers: 488 source fits, 1,952 optimization diagnostics, 176,792 matched
+site comparisons and a 44,198-site exposure frame. It waits for both identified
+rate-export and exposure controllers, then requires their completion receipts
+and all six export/audit/exposure receipts before proceeding. The new runner
+checks both producer identities on every poll; an absent first producer does
+not bypass waiting for the second, and a changed second command fails closed.
+Both dependency checks, syntax compilation and the actual plan check passed.
+The live waiting service and 42 pinned dependencies are recorded in
+`metadata/completed_rate_comparison_{plan,launch}.json`.
+
+Resource envelope: four CPU equivalents, 16 GiB hard memory, no swap or GPU;
+64 GiB available-memory and 20 GiB free-disk gates, 20 GiB output allowance,
+1–168 hours uncalibrated planning range. No rate-comparison result is claimed
+yet. This extends the earlier 89-marker workflow; coupling inference, branch
+change estimates and evolutionary interpretation remain subsequent work.
