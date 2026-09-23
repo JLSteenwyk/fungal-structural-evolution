@@ -3656,3 +3656,13 @@ hashes, exact atom/residue identity, coordinates, occupancy, confidence and
 fragment sequences passed. The receipt is archived; the full extraction and
 all-archive audit remain active/queued. This limited completion does not replace
 the planned full-data validation.
+
+## Refreshed AlphaFold mapping and native exports checked — 23 September 2026
+
+Full residue readback passed for 30,588 models, 31,384 marker links and
+11,194,264 alignment-to-structure residue links across 125 markers. Native
+structural-alphabet exports also passed the full identity/shape audit for
+15,949,929 residues. Both receipts and their bound artifacts were verified
+and the receipts archived in metadata. Coordinate-derived feature reconstruction
+is now running; confidence/PAE qualification and downstream evolutionary fits
+remain pending. See [scoped completion details](completed-prediction-inventory-20260922.md).

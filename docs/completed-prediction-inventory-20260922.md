@@ -545,3 +545,29 @@ all nonlocal dependencies among structural features. Sampling covariance is
 not biological sequence–structure coupling. Broader uncertainty propagation,
 direct-coordinate benchmarking and calibrated branch/clade tests remain
 required before reporting structural acceleration.
+
+## Refreshed AlphaFold residue mapping and native exports checked — 23 September 2026
+
+The full refreshed AlphaFold residue readback passed for **30,588 models**,
+**31,384 marker/protein links**, all **125 markers**, and **11,194,264
+alignment-to-structure residue links**. Every exported position and pLDDT,
+complete model/link coverage, and per-link confidence summaries were checked.
+The readback projects cumulative nongap sequence positions separately from the
+producer, while sharing BioPython parsers and upstream alignments. It does not
+validate coordinate accuracy, PAE, or biological inference. The archived receipt
+is `metadata/current_afdb_residue_completed_readback.json`.
+
+Native structural-alphabet extraction and its full export identity audit also
+completed: **15,949,929 residues** across all 30,588 models, including
+159,499,290 descriptor values. Every model's full sequence, state length and
+alphabet, export agreement and finite ten-feature shape were checked. The
+61,176 zero-offset descriptor rows remain explicitly counted; this does not
+accept their structural states as valid. The archived receipt is
+`metadata/current_afdb_native_export_completed_readback.json`.
+
+Completion receipt bindings, all six mapping artifacts, all five native export
+artifacts and pinned residue-audit dependencies were rehashed before archival.
+The existing controller has advanced to coordinate-derived feature and partner
+reconstruction. Six-residue confidence/PAE qualification and downstream paired
+inputs and fits remain pending; these exports are not yet authorized for
+unmasked evolutionary interpretation. No new GPU predictions were launched.
