@@ -4204,3 +4204,18 @@ or the source/tree-position traversal. These results explain the native output
 rules on the resolved trees; they do not independently validate rooting,
 duplication timing, ancestral homology or biological gene loss. Large-family
 ortholog semantics and downstream structural divergence tests remain pending.
+
+### September 23: whole-protein structural candidate clustering complete
+
+The Foldseek run completed successfully for all 1,290,278 database models,
+producing 400,127 clusters, including 339,722 singletons. The largest cluster
+contains 4,162 models. Rechecked plan pins, database receipt binding and all
+output hashes, then independently reread the full membership table: each
+expected model occurs exactly once, every representative is a member of its
+own cluster, and the entire size table and summary totals agree. Archived
+`metadata/whole_proteome_structural_clustering_completed_receipt_20260923.json`.
+
+This verifies the complete partition and its provenance, not every native
+alignment threshold or biological homology. Confidence qualification, domain
+clustering, sensitivity and phylogenetic integration remain outstanding.
+Structural clusters must not be treated as orthogroups or evolutionary events.

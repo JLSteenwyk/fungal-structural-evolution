@@ -1,0 +1,60 @@
+{
+  "status": "complete_structural_candidate_partition_membership_readback",
+  "models": 1290278,
+  "clusters": 400127,
+  "singleton_clusters": 339722,
+  "largest_cluster_models": 4162,
+  "plan_sha256": "170758e40f8cb7a0b4db1287909c730623d308aaeab1d5e70b12dc2b31d2064f",
+  "database_receipt_sha256": "149f74a331adff85b128458e4ae08505f696318a0edc52f3f7fe67708a83f954",
+  "commands": [
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "cluster",
+      "results/structural_clusters/whole-proteome-afdb-database-20260923-v1/structures",
+      "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/clusters",
+      "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/tmp",
+      "--threads",
+      "8",
+      "--split-memory-limit",
+      "64G",
+      "--alignment-type",
+      "2",
+      "--cov-mode",
+      "0",
+      "-c",
+      "0.8",
+      "-e",
+      "0.001",
+      "-s",
+      "7.5",
+      "--max-seqs",
+      "1000",
+      "--cluster-mode",
+      "0",
+      "--cluster-reassign",
+      "1",
+      "--remove-tmp-files",
+      "0"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "createtsv",
+      "results/structural_clusters/whole-proteome-afdb-database-20260923-v1/structures",
+      "results/structural_clusters/whole-proteome-afdb-database-20260923-v1/structures",
+      "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/clusters",
+      "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/cluster_members.tsv",
+      "--threads",
+      "8"
+    ]
+  ],
+  "artifacts": {
+    "cluster_members.tsv": "a2db431e77a499d4db82c3112fb184df8a73463917d1dd3ac2ee4090020831b8",
+    "stage_0.log": "5872a531fc1c77614fba28f426cdc215ddbe9efaa445e7443f98d6b92c793799",
+    "clusters.index": "03158944e676b17e541b143db368abc005b403cb557f33a3448e90fe37babfbd",
+    "stage_1.log": "7533a30c826d118ed6bee44db8ff6dca483fe6de06f83e4344326ff93c149369",
+    "cluster_sizes.tsv": "36d7bcfede9b9eec162675e43b58bd1616b57b7f73f3da4b8b00dc0636feea3b",
+    "clusters": "49a1555e0d65eec5526c86b82a512a7db75775c8dc0421d3b98c6dff34a925a4",
+    "clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8"
+  },
+  "scope": "Full model partition and representative membership verified. Candidate whole-protein clustering with confidence-masked seeding, finite prefilter cap and native reassignment; not independent alignment-threshold validation, confidence qualification, orthology, remote homology confirmation or evolutionary events. Domain clustering and sensitivity remain required."
+}
