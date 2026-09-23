@@ -3610,3 +3610,14 @@ receipts are indexed with checksums in
 The methods retain earlier analyses' original cohorts and distinguish active
 fits, native replay, MAFFT reconciliation and database construction from
 completed results. No new biological effect or overall completion is claimed.
+
+## Full-atlas domain interval linkage launched — 23 September 2026
+
+Started a one-CPU build linking all frozen catalog structures to complete Pfam
+annotation intervals, preserving all policies, repeated hits, annotation types,
+missing annotations and original taxon/protein associations. Exact source
+checksums match the previously audited catalog and architecture database.
+The producer validates sequence identity and coordinate bounds before emitting
+a domain-candidate registry. It does not claim confidence-qualified domains or
+structural boundaries. Independent readback and coordinate extraction remain
+required. See [registry design and execution](whole-proteome-structure-domain-registry-20260923.md).
