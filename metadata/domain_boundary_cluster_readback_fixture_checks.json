@@ -1,0 +1,27 @@
+{
+  "status": "passed_independent_boundary_cluster_table_fixtures",
+  "categories": 6,
+  "rejected_cases": 17,
+  "rejected": [
+    "altered_output_model_key",
+    "altered_output_hit_id",
+    "altered_output_alignment_interval",
+    "altered_output_envelope_interval",
+    "altered_output_alignment_cluster",
+    "altered_output_envelope_cluster",
+    "altered_output_disposition",
+    "missing_output_pair",
+    "duplicate_output_pair",
+    "missing_source_boundary",
+    "duplicate_source_boundary",
+    "wrong_source_model",
+    "unknown_source_boundary",
+    "duplicate_lookup",
+    "missing_partition_member",
+    "nonself_representative",
+    "duplicate_partition_member"
+  ],
+  "script_sha256": "510593d69d18f68b089894999d989a85ce26e82f05279950e9563a9485b197ad",
+  "readback_script_sha256": "b42f8b21592829bd45726d6ee45542c60f866e77b55ba06d957c275870fcc57d",
+  "scope": "Synthetic complete-table reconstruction and malformed source/output tests. Production output readback remains pending; not a controller lifecycle or biological validation test."
+}

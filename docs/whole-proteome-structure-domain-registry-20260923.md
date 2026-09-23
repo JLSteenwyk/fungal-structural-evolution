@@ -448,3 +448,36 @@ This stage requests one CPU, 8 GiB RAM, no swap and 2 GiB output planning,
 with a 50 GiB free-disk gate. Planning allows an uncalibrated 1–60 minutes
 after clustering completes; 869 GiB RAM and 11,826 GiB disk were available
 before queuing. No GPUs, paid resources or changes to existing jobs are used.
+
+### Full boundary-cluster output verification queued
+
+`scripts/readback_domain_boundary_clusters.py` independently reconstructs
+all seven fields for every model/hit output row from the original interval
+manifest, both boundary links, database lookup and cluster membership table.
+It does not import the producer's comparison or classification functions.
+It checks that interval/model identities agree, both boundaries exist exactly
+once, partition members cover the lookup exactly, representatives include
+themselves, every result pair occurs once, and all disposition and exclusion
+counts agree with the completed source receipts. Source files, plans and
+receipts are bound by checksums checked before and after reconstruction.
+
+The six-category fixture passed; 17 altered output/source cases were rejected,
+including wrong assignments, missing/duplicated pairs, incorrect model links,
+incomplete partitions and representatives lacking self-membership. Evidence:
+`metadata/domain_boundary_cluster_readback_fixture_checks.json`. These are
+synthetic table checks; the production comparison has not completed.
+
+The full readback is queued as `fungal-domain-boundary-readback-20260923`,
+waiting for the exact comparison process recorded in
+`metadata/domain_boundary_cluster_readback_plan.json`. The launch record is
+`metadata/domain_boundary_cluster_readback_launch.json`; the future output is
+`results/structural_clusters/domain-boundary-dispositions-readback-20260923-v1`.
+The job uses one CPU equivalent, 8 GiB RAM and no swap or GPUs. Its uncalibrated
+runtime allowance is 1–60 minutes after its predecessor completes, with
+0.1 GiB output planning and a 50 GiB free-disk gate. At launch, 858 GiB RAM and
+11,809 GiB disk were available. No existing producer or pinned plan was changed.
+
+A passing readback will establish complete output reconstruction within the
+same partition. Independent clustering parameter sensitivity, alignment
+threshold validation, homology, biological boundaries and evolutionary effects
+remain separate requirements.

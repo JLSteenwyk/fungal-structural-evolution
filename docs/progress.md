@@ -3770,3 +3770,15 @@ use new plans, exact new predecessor identities, and fresh v2 output paths.
 The coordinate audit continues unchanged. Details, validation scope, resources,
 and evidence paths are in [the recovery record](reboot-recovery-20260923.md#pae-cache-repair-and-dependent-controller-replacement).
 Confidence qualification and fits remain pending; GPU prediction remains paused.
+
+### September 23: independent full domain-boundary cluster readback queued
+
+Added full reconstruction of all boundary-comparison output fields from the
+original interval manifest and complete structural partition. All six category
+fixtures and 17 corruption-rejection tests passed. The readback waits on the
+exact comparison process under a pinned plan; production completion remains
+pending. See `metadata/domain_boundary_cluster_readback_{plan,launch,fixture_checks}.json`
+and the domain registry workflow. During this continuation, species-tree,
+paired-fit, domain-extraction, Foldseek database and AlphaFold coordinate-audit
+processes were confirmed live; domain extraction had reached 120,000 models
+and 297,486 exported intervals with zero rejections at that observation.

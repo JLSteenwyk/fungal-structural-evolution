@@ -1,0 +1,37 @@
+{
+  "producer_plan": "metadata/domain_boundary_cluster_plan.json",
+  "output": "results/structural_clusters/domain-boundary-dispositions-readback-20260923-v1",
+  "predecessor": {
+    "pid": 33500,
+    "create_time": 1790176866.39
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 50,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      60
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/compare_domain_boundary_clusters.py": "6a05cde8d1d25c08d59a4912236ce41805eda3355b866383568f43a7f2c8bb57",
+    "scripts/check_domain_boundary_clusters.py": "5ef13722dee9cda4aa3c900b497a5a953a1e74fb36a7bc6d84c33cb6558b7cd5",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_boundary_cluster_fixture_checks.json": "593c80562de6405f3bcc76989e239802f04d3c5dc63a7f034d9500c78f511fbe",
+    "metadata/domain_clustering_plan.json": "a45abdc4b877dae232df3bc6efbad10dd4bad38a653e6663f5ac359e65df1ac9",
+    "metadata/full_domain_search_database_plan.json": "f8dd57ad5e2fbc8930f8a76cf79ba3602f2db7c1d09fcc1addd90262d805cad1",
+    "results/domains/domain-extraction-manifest-20260923-v1/receipt.json": "9b6dd32cea51c151953ee3aa73d7a13628917aff216694b83396d97dd99a6069",
+    "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "results/domains/domain-extraction-manifest-20260923-v1/boundary_links.tsv.gz": "5562955a1d0e2f37c674b4599dcf03e934fac158fdab7ca3083382220cdde040",
+    "metadata/domain_boundary_cluster_plan.json": "b0efd7fcff5847e3b6e7443c9c5e9f6ce06722638c208f0596cc046d5fedad5f",
+    "scripts/readback_domain_boundary_clusters.py": "b42f8b21592829bd45726d6ee45542c60f866e77b55ba06d957c275870fcc57d",
+    "scripts/check_domain_boundary_cluster_readback.py": "510593d69d18f68b089894999d989a85ce26e82f05279950e9563a9485b197ad",
+    "metadata/domain_boundary_cluster_readback_fixture_checks.json": "6775473a3d268b3da1579f26368fddbbb9758551f7d02686eaeae1bf2a31aee4"
+  }
+}
