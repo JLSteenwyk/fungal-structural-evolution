@@ -4144,3 +4144,22 @@ audited-model table hash, unique model identities and complete residue totals.
 This archival check did not repeat the raw-coordinate traversal. The extended
 cohort remains a prerequisite for the full completed-ESMFold accessibility
 combination and projection; those stages remain incomplete.
+
+### September 23: extended-protein accessibility completed and audited
+
+The extended cohort passed full snapshot accessibility validation: 4,363 models
+and 3,924,624 residues. Before archiving the producer, audit and controller
+receipts in `metadata/esmfold_extended_accessibility_completed_*_receipt.json`,
+rechecked all eight controller pins, configuration and receipt hash bindings,
+the audited-table hash, unique model identities, complete residue totals and
+all entry-receipt identities. This archival check does not repeat the raw
+coordinate traversal; the completed audit checks sequence, residue grids,
+atom counts, CA confidence and ASA totals against the input mmCIF files.
+Neither check independently recomputes ASA or establishes biological exposure.
+
+The combined accessibility controller has now completed the six-cohort union
+and advanced to alignment projection. Projection and normalization readbacks
+remain pending. Domain extraction was at 416/428 shards on the live status
+check. CPU phylogenetic inference, structural clustering and direct geometry
+comparisons remain active; GPU prediction remains paused and the overall
+project is incomplete.
