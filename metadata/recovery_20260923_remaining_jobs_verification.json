@@ -1,0 +1,245 @@
+{
+  "status": "live_reconciliation_and_retrieval_recovery_verified",
+  "jobs": [
+    {
+      "unit": "fungal-reconciliation-recovery-20260923.service",
+      "pid": 194259,
+      "create_time": 1790171249.58,
+      "observed_status": "sleeping",
+      "properties": {
+        "MainPID": "194259",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 220514,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        },
+        {
+          "pid": 221012,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        },
+        {
+          "pid": 240721,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        },
+        {
+          "pid": 240722,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        },
+        {
+          "pid": 240731,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        },
+        {
+          "pid": 240732,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_orthofinder_with_progress.py",
+            "--stall-timeout-seconds",
+            "21600",
+            "--",
+            "--from-trees",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/species_tree_taxa.nwk",
+            "-n",
+            "expanded_mafft",
+            "-t",
+            "8",
+            "-a",
+            "4",
+            "-M",
+            "msa",
+            "-S",
+            "diamond",
+            "-A",
+            "famsa",
+            "-T",
+            "fasttree",
+            "--no-fix-files",
+            "--save-space"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "fungal-small-family-recovery-20260923.service",
+      "pid": 208598,
+      "create_time": 1790171287.29,
+      "observed_status": "sleeping",
+      "properties": {
+        "MainPID": "208598",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "unit": "fungal-resolved-tree-recovery-20260923.service",
+      "pid": 208601,
+      "create_time": 1790171287.34,
+      "observed_status": "sleeping",
+      "properties": {
+        "MainPID": "208601",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "unit": "fungal-structure-retrieval-recovery-20260923.service",
+      "pid": 245995,
+      "create_time": 1790171398.13,
+      "observed_status": "sleeping",
+      "properties": {
+        "MainPID": "245995",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 246560,
+          "command": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/retrieve_matched_models.py"
+          ]
+        }
+      ]
+    }
+  ],
+  "reconciliation_state": "running_native_reconciliation",
+  "reused_profile_stage": true,
+  "gpu_prediction": "paused"
+}

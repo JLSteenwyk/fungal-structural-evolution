@@ -1,7 +1,7 @@
 # Fungal structural evolution
 
 
-September 23 recovery: a host reboot interrupted the CPU workflows. The long species-tree run and expanded marker fits have resumed from verified checkpoints; the HOG audit is running again. Foldseek and the AlphaFold processing chain are also restored; MAFFT-guide reconciliation and background full-catalog retrieval still need recovery. GPU prediction remains paused. [Verified recovery state and pending jobs](docs/reboot-recovery-20260923.md).
+September 23 recovery: a host reboot interrupted the CPU workflows. The long species-tree run and expanded marker fits have resumed from verified checkpoints; the HOG audit is running again. Foldseek, the AlphaFold processing chain, MAFFT-guide reconciliation and background catalog retrieval are also restored, with incomplete stages rerun in fresh outputs. GPU prediction remains paused. [Verified recovery state and pending jobs](docs/reboot-recovery-20260923.md).
 
 September 22 whole-proteome checkpoint: independent verification passed for **1,290,278 downloaded AlphaFold models matching 1,319,513/5,815,847 representative proteins (22.69%)** across 496/526 sampled entries. This source-specific coverage excludes local ESMFold additions and precedes confidence filtering. CPU search-database construction is running; gene-family coverage has passed independent readback across both full partitions. [Catalog, per-taxon coverage and verification](docs/whole-proteome-structure-catalog-20260922.md).
 Comparative structural genomics of approximately **500 fungal species plus 25 non-fungal outgroups**. The central question is where structural evolution accelerates or decouples from sequence evolution, and how these changes relate to duplication and ecology.

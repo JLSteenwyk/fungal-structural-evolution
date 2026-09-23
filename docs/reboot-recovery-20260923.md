@@ -99,3 +99,52 @@ inventory above. MAFFT-guide reconciliation and its dependent checks/small-famil
 supplement, plus the background full-catalog retrieval job, still need recovery.
 The species-tree, marker fits, HOG verification and their reconnected downstream
 jobs remain separate live recovery branches. GPU prediction remains paused.
+
+## Reconciliation and background retrieval restored
+
+The remaining reconciliation and retrieval recovery services are now live.
+`scripts/recover_expanded_reconciliation.py` preserves the original controller's
+native execution and verification logic while permitting explicit reuse of a
+completed guide. The profile stage's archived completion status, original plan
+binding, mandatory output hashes and every copied source-file hash are checked
+before reuse. A new directory link exposes that preserved profile result to
+read-only downstream checks; no profile native inference is rerun. The MAFFT
+stage receives fresh physical input copies and fresh native output under
+`results/orthology/expanded-reconciliation-execution-20260923-v3`.
+
+The incomplete previous MAFFT output remains intact. No resumable native
+reconciliation checkpoint was established, so the replacement reruns the stage.
+The same eight CPU equivalents, four native analysis workers, 128 GiB memory,
+no swap, six-hour task-completion allowance and disk/memory gates are retained.
+Five completion-gate checks reject incorrect guide, incomplete status, changed
+source flag, missing mandatory artifacts and incorrect original-plan binding.
+Both-guide resolved-tree validation and the small-family orthologue supplement
+are queued against the replacement controller's exact PID/start time and plan.
+All mandatory outputs are rehashed before the eventual combined completion
+handoff. Full semantic reconciliation validation remains outstanding.
+
+The unchanged background `retrieve_matched_models.py` also resumed through
+`scripts/recover_structure_retrieval.py`. Before launch, every record of the
+1,557,799,515-byte JSONL log was parsed: 1,329,102 records, 1,326,490 distinct
+latest accessions, including 1,322,928 latest verified statuses. These are log
+statuses, not newly audited unique models. The original producer rehashes
+cached coordinate bytes before constructing its remaining queue, then retains
+the existing two HTTP-worker limit and exact full-sequence checks. It keeps
+its exclusive cache lock, appends new records and updates the unversioned live
+queue snapshot. Frozen catalogs used by running analyses remain unchanged.
+
+Retrieval recovery is capped at two CPU equivalents and 64 GiB RAM with no
+swap and reduced scheduling priority. It starts only with at least 3 TiB free;
+a wrapper requests a clean stop below 1 TiB, allowing outstanding requests to
+drain before escalation if needed. The 2 TiB output and 24–1,008-hour runtime
+allowances are conservative, uncalibrated planning bounds for the remaining
+full catalog, not a new completion ETA or a commitment to fill every missing
+protein. No new paid infrastructure or GPU prediction is involved.
+
+The replacement plans, initial launch records and a second live process check
+are in `metadata/recovery_20260923_reconciliation_*`,
+`metadata/recovery_20260923_{small_family_supplement,resolved_tree_readback}_plan.json`,
+`metadata/recovery_20260923_structure_retrieval_*` and
+`metadata/recovery_20260923_remaining_jobs_verification.json`.
+This supersedes the pending recovery status for these jobs above. Restoration
+of execution is not completion of the scientific analyses.

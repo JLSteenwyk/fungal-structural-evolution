@@ -1,0 +1,29 @@
+{
+  "output": "results/orthology/expanded-resolved-tree-readback-20260923-v2",
+  "execution_plan": "metadata/recovery_20260923_reconciliation_plan.json",
+  "predecessor_pid": 194259,
+  "predecessor_start_ticks": "165158",
+  "pins": {
+    "scripts/advance_resolved_tree_readback.py": "c0389c3849d8c3561811d7fd51f51a45bb7a7a7e0a6e77141d3d6fa872749520",
+    "scripts/readback_resolved_tree_memberships.py": "7e1acb1d149e30a60d60c694f3588d561e073183c86faded4767b2e02fe425ed",
+    "scripts/check_resolved_tree_readback.py": "12409a954336e6d58f3c4d13ac1ebb4bb6d05b17586b781420080a2a107e6ed3",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/resolved_tree_readback_fixture_checks.json": "9b299d7a0c460c78d28a797b57c509a53e2c7db2f197728e3369b752943d17cd",
+    "metadata/recovery_20260923_reconciliation_plan.json": "badd40621f777a9b4b1940f4f4a5bd497eedd58eaa1b8d1f6419e9e79bbf16c0",
+    "scripts/recover_expanded_reconciliation.py": "ce63ff08178a183727845e670bf463b38979d19bc340e13c2e48b8b3001bd913"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "All expected resolved trees under both complete partitions, including the largest family. Iterative traversal and membership hashing; no expansion of potentially billions of ortholog pairs."
+}

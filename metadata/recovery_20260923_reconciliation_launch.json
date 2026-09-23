@@ -1,0 +1,44 @@
+{
+  "boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320",
+  "jobs": [
+    {
+      "unit": "fungal-reconciliation-recovery-20260923.service",
+      "pid": 194259,
+      "create_time": 1790171249.58,
+      "start_ticks": "165158",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_expanded_reconciliation.py",
+        "--plan",
+        "metadata/recovery_20260923_reconciliation_plan.json"
+      ],
+      "observed_status": "running"
+    },
+    {
+      "unit": "fungal-small-family-recovery-20260923.service",
+      "pid": 208598,
+      "create_time": 1790171287.29,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_small_family_supplement.py",
+        "--plan",
+        "metadata/recovery_20260923_small_family_supplement_plan.json"
+      ],
+      "observed_status": "running",
+      "plan_sha256": "b4a2042df04e27c21d49bbc43c11dc4a70f734344cef534d76365364e3eed449"
+    },
+    {
+      "unit": "fungal-resolved-tree-recovery-20260923.service",
+      "pid": 208601,
+      "create_time": 1790171287.34,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_resolved_tree_readback.py",
+        "--plan",
+        "metadata/recovery_20260923_resolved_tree_readback_plan.json"
+      ],
+      "observed_status": "running",
+      "plan_sha256": "169df2f2938f95540f35da88f1468cc9fc4873fa23072b58bd95dfc14ecf066e"
+    }
+  ]
+}
