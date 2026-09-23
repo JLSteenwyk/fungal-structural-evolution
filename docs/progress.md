@@ -3688,3 +3688,13 @@ Both boundary alternatives remain identifiable and must not be treated as
 independent observations. Candidate clustering, homology confirmation and
 parameter/boundary sensitivity remain unfinished. See the
 [domain workflow](whole-proteome-structure-domain-registry-20260923.md).
+
+## Pfam boundary sensitivity completed — 23 September 2026
+
+Summarized all 594,797 domain-candidate model/hit pairs across 5,209 Pfam
+accessions. Every endpoint matched the audited registry, and direct SQL
+aggregation reproduced every per-family integer count. A total of 2,232 Pfam
+accessions contain at least one envelope extension of 20% or more. The complete
+versioned table supports later boundary sensitivity checks; it does not
+establish structural divergence or an evolutionary effect. See the
+[domain registry report](whole-proteome-structure-domain-registry-20260923.md).

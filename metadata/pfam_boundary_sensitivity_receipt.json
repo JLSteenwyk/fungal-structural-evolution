@@ -1,0 +1,19 @@
+{
+  "status": "complete_pfam_boundary_sensitivity_with_full_sql_aggregation_readback",
+  "candidate_pairs": 594797,
+  "pfam_accessions": 5209,
+  "pfams_with_at_least_one_20_percent_extension": 2232,
+  "source_hashes": {
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/structure_domains.sqlite": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/receipt.json": "77632f91db393bc489cb7c1134db1a6e6f773e6bf7a0afbe7ddc9879585bb713",
+    "metadata/whole_proteome_structure_domain_registry_completed_readback.json": "b2b0e593abd2a67f42f48a6e89bdcbe4e858a79886de7883113ac75650f899e8",
+    "results/domains/domain-boundary-sensitivity-20260923-v1/receipt.json": "d5fae3c2c5c92ab19405b6d6e1545ec1d9620d1b3012807e061048fb7c5df88d",
+    "results/domains/domain-boundary-sensitivity-20260923-v1/readback.json": "9b60bb38b2ea99723c410b888f8d6c8a7dba5cf51aedc8ee12cd9e9c6b5303bd",
+    "results/domains/domain-boundary-sensitivity-20260923-v1/boundary_sensitivity.tsv.gz": "9afa9565b23157a9222f8829cb6201fd7f108907b124a9ba077f2b181a653a65"
+  },
+  "script_sha256": "9daf1cbeca45ab8b7663ea1519868824d8ceb9c75b43842beff0f24bd4abf476",
+  "artifacts": {
+    "pfam_boundary_sensitivity.tsv": "085cbbd32a4bc41cb817941318db9273dc237e68a096096fe44962b50172984e"
+  },
+  "scope": "All candidate model/hit pairs joined exactly to audited Pfam accessions and original endpoints; all per-Pfam integer aggregates independently recomputed in SQL. Counts are unique model/hit observations, not species, independent transitions or confidence-qualified domains. Descriptive ranking by absolute count, without enrichment or evolutionary inference."
+}

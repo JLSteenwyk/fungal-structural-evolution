@@ -375,3 +375,44 @@ no GPUs and no paid resources. Its receipt is archived in
 `metadata/domain_clustering_cli_fixture_checks.json`; reproduce with
 `python scripts/check_domain_clustering_controller.py`. Native alignment
 thresholds and biological interpretation still require separate validation.
+
+## Pfam-stratified boundary sensitivity
+
+All 594,797 candidate model/hit pairs were joined exactly to the independently
+audited domain registry, covering **5,209 Pfam accessions**. Every original
+alignment/envelope endpoint matched. A separate SQL aggregation directly
+from registry endpoints reproduced every per-Pfam integer summary: candidate
+and model counts, identical boundaries, extension reporting bins, total added
+residues and maximum added length. **2,232 accessions** contain at least one
+hit whose envelope adds at least 20% of its aligned length.
+
+The largest absolute counts in that reporting bin are:
+
+| Pfam accession | Candidate model/hit pairs | At least 20% added | Fraction |
+|---|---:|---:|---:|
+| PF04082.24 | 4,015 | 1,113 | 27.72% |
+| PF01399.34 | 2,075 | 594 | 28.63% |
+| PF00172.24 | 6,596 | 592 | 8.98% |
+
+This ranking reflects absolute observation counts and sampling; it is not an
+enrichment test, a phylogenetically independent comparison or a demonstrated
+structural effect. Repeated domains and shared full-sequence models remain
+distinct from species counts. These are annotation-qualified candidates,
+without residue confidence or PAE qualification. Both interval definitions
+remain available for subsequent structural comparisons.
+
+The complete table is versioned at `metadata/pfam_boundary_sensitivity.tsv`,
+with `metadata/pfam_boundary_sensitivity_receipt.json` binding the source
+registry, its audit, the boundary table, its audit and the generating script.
+Reproduce with:
+
+```bash
+python scripts/summarize_pfam_boundary_sensitivity.py \
+  --registry results/domains/whole-proteome-structure-domain-registry-20260923-v1 \
+  --registry-readback metadata/whole_proteome_structure_domain_registry_completed_readback.json \
+  --boundaries results/domains/domain-boundary-sensitivity-20260923-v1 \
+  --output results/domains/pfam-boundary-sensitivity-20260923-v1
+```
+
+Use a fresh output directory for a rerun. This local CPU summary leaves all
+production extraction inputs and running job plans unchanged.
