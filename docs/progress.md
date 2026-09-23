@@ -4163,3 +4163,25 @@ remain pending. Domain extraction was at 416/428 shards on the live status
 check. CPU phylogenetic inference, structural clustering and direct geometry
 comparisons remain active; GPU prediction remains paused and the overall
 project is incomplete.
+
+### September 23: full completed-ESMFold accessibility integration passed
+
+All six cohorts are combined: 25,322 models and 12,221,520 residues. Projection
+covers 6,758,598 observed aligned sites across 122 markers, 23,799 marker/taxon
+cells and 23,629 used models. Full projection readback checks every observed
+cell against raw accessibility fields, source maps and paired AA/3Di identities,
+including duplicate, missing and masked-cell rejection. Normalization and its
+full-row readback also passed for all 6,758,598 rows, checking preserved fields,
+recovered ASA, terminal treatment and scale/threshold totals.
+
+Before archiving three `metadata/completed_esmfold_accessibility_*_20260923.json`
+receipts, rechecked all 52 plan pins, the controller plan binding, all five stage
+receipt hashes, their declared artifact hashes and cross-receipt row/binding
+agreement. This archival check did not repeat the full raw-row traversal.
+These checks do not independently recompute solvent area or validate biological
+exposure. Controlled evolutionary analyses remain outstanding.
+
+Domain extraction has separately completed all 428 shards: 427,255 source
+models and 1,078,592 exported intervals, with zero rejected intervals. Four
+workers are now conducting the full coordinate archive readback. Extraction
+completion is not yet full archive validation or a completed domain atlas.

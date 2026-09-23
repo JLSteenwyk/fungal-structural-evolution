@@ -1,0 +1,34 @@
+{
+  "status": "complete_all_cohort_accessibility_projection_and_normalization_readbacks",
+  "plan_sha256": "d22e5ed7bf54e4576cbfe7822bdcf034516a7f42da9b1dbd8a13ad18e9be41e9",
+  "completed_stages": [
+    {
+      "name": "union",
+      "receipt": "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "456bf56b832465e0d7a794dbdbd66324c6e31730e3e56a8c41db96106f5e0712"
+    },
+    {
+      "name": "projection",
+      "receipt": "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "0b720c6a9134059e1d7be5a9a5cc616885fb0e220c441b6efb10f62d3616ea10"
+    },
+    {
+      "name": "projection_readback",
+      "receipt": "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/projection_readback.json",
+      "sha256": "622aadc7e7527ba6b98957092f45716ea67548c3047544d83b5e94717c49cd80"
+    },
+    {
+      "name": "normalization",
+      "receipt": "results/structural_annotations/normalized-accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "49c5094d54b6343002c37abe5210c5b7fd372c12ffba62536ec4828eb95819ee"
+    },
+    {
+      "name": "normalization_readback",
+      "receipt": "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/normalization_readback.json",
+      "sha256": "a86d012d45e30bfd4ca161d45e797887a741e3bb4a88cabe1de58d695cca2dbd"
+    }
+  ],
+  "models": 25322,
+  "observed_sites": 6758598,
+  "scope": "All source audits, disjoint full-model ASA union, paired projection and normalization full-row readbacks completed. ASA method and prediction accuracy not independently revalidated here; controlled evolutionary and functional analyses remain separate."
+}
