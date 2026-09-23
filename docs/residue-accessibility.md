@@ -566,3 +566,40 @@ exposure in a complex, binding pockets or biologically correct domain
 orientation. Full audited union, paired-site projection, reference normalization
 and their readbacks remain required before these new cohorts enter the
 surface/core evolutionary analyses. The jobs are running, not completed.
+
+## Original-cohort remainder identified and launched
+
+The full-cohort handoff exposed an additional coverage gap: the earlier
+original-cohort accessibility audit covers the **5,121-model partial snapshot**,
+not all 10,522 models eventually completed in that prediction cohort. Thus the
+long and extended cohorts described above were not the only remaining ASA
+work. Their calculations continue unchanged.
+
+`scripts/prepare_original_accessibility_gap.py` derived the exact complement:
+**5,401 models / 2,172,166 residues**. Every common model's provenance field
+and coordinate checksum matches between old and completed snapshots, except
+for relocated file paths. This validates identity records, not a new read of
+those coordinate bytes. The input manifest is recorded in
+`metadata/esmfold_original_accessibility_gap_manifest_receipt.json`; it is
+an accessibility-specific model list, not a replacement marker mapping.
+Existing 5,121-model ASA results are retained for subsequent checked reuse.
+
+The missing original models are now being calculated with the unchanged ASA
+producer: four CPU workers, 16 GiB memory, no swap, 960 sphere points and no
+GPU prediction. Planning allows 10 GiB output and an uncalibrated 1–24 hours.
+The full raw-source audit is queued behind the exact producer identity with
+one CPU, 8 GiB memory and no swap. Producer and auditor verify actual source
+coordinate hashes. Inputs are
+`results/structural_annotations/original-accessibility-gap-inputs-20260923-v1`;
+outputs are `results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1`.
+
+Launch, resource and pinned audit records are in
+`metadata/esmfold_original_gap_accessibility_*`. The producer unit is
+`fungal-esmfold-original-gap-accessibility-20260923.service`. There are now
+12 ASA workers across the three incomplete cohorts. Together the existing
+10,048 audited models and the three new cohorts cover the intended 25,322
+model universe, subject to full completion, exact identity and byte checks.
+
+Full-cohort union/projection/normalization is not yet queued: its handoff must
+handle this original-cohort complement and relocated but checksum-identical
+paths explicitly. No claim of complete accessibility coverage is made.

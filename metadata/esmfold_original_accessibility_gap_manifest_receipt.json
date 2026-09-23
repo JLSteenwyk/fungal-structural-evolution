@@ -1,0 +1,18 @@
+{
+  "status": "complete_exact_accessibility_gap_model_manifest",
+  "models": 5401,
+  "residues": 2172166,
+  "full_models": 10522,
+  "previously_audited_models": 5121,
+  "common_models_with_relocated_paths": 5121,
+  "source_receipts": {
+    "results/structural_markers/esmfold-original-complete-v1/receipt.json": "90e02d04d3adb292953b3c0b666638eedd1ea7717eb91286fd197586909ec3bf",
+    "results/structural_markers/esmfold-partial-v1/receipt.json": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+    "results/structural_annotations/accessibility-esmfold-full-audit-v1/receipt.json": "878c03d9c06575716c6231bf1da9feb2d1a49d4981dfee8736cc7fb4c2d8d634"
+  },
+  "script_sha256": "10153aff4948b3e12ae4c689863f4f539cd23de206584ec12bcab9cea4d1a285",
+  "artifacts": {
+    "model_provenance.json": "f212e48c00bfb6ed0c88bc1038aff8e6f1c70a76564c9b978e0b49108b8e43e7"
+  },
+  "scope": "Exact model-ID complement, requiring unchanged common provenance fields and coordinate checksums except relocation of paths. Input for missing accessibility only, not a marker mapping or a new coordinate-byte audit. Production ASA and its source audit must verify actual coordinate bytes."
+}

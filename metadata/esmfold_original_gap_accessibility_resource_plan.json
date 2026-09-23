@@ -1,0 +1,24 @@
+{
+  "status": "prelaunch_complete_remaining_esmfold_accessibility",
+  "snapshot": "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1",
+  "snapshot_receipt_sha256": "0afcd9dda94759d1f602d3fd1c86d3c13760c3f0b5d0c57587261dad05e42d2b",
+  "models": 5401,
+  "residues": 2172166,
+  "workers": 4,
+  "sphere_points_per_atom": 960,
+  "memory_allowance_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 10,
+  "planning_runtime_hours": [
+    1,
+    24
+  ],
+  "runtime_is_uncalibrated": true,
+  "estimate_basis": "Exact original-cohort gap, 5401 models and 2172166 residues. Prior 5121-model results preserved; planning range is uncalibrated.",
+  "output": "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1",
+  "script_sha256": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+  "available_memory_gib": 880,
+  "free_disk_gib": 11820,
+  "cost": "Existing authorized host; no paid resources or GPUs",
+  "scope": "Every model in the completed cohort, isolated-chain ASA with confidence retained. Requires full source audit, union/projection and normalization before evolutionary interpretation."
+}

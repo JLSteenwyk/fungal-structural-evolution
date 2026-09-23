@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-09-23T15:32:21.437230+00:00",
+  "producer": {
+    "unit": "fungal-esmfold-original-gap-accessibility-20260923",
+    "pid": 687334,
+    "create_time": 1790177540.83,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/annotate_predicted_accessibility.py",
+      "--snapshot",
+      "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1",
+      "--output",
+      "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1",
+      "--workers",
+      "4",
+      "--points",
+      "960"
+    ]
+  },
+  "audit": {
+    "unit": "fungal-esmfold-original-gap-accessibility-20260923-audit",
+    "pid": 688049,
+    "create_time": 1790177540.9,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_accessibility_audit.py",
+      "--config",
+      "metadata/esmfold_original_gap_accessibility_audit_controller_config.json"
+    ]
+  }
+}

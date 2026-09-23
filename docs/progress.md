@@ -3736,3 +3736,15 @@ and no GPU prediction. Both complete source audits are queued behind exact
 producer identities. Results, full-cohort union, paired-site projection,
 normalization and downstream evolutionary analyses remain pending. See the
 [accessibility workflow](residue-accessibility.md).
+
+## Original accessibility gap corrected — 23 September 2026
+
+Full-cohort handoff inspection showed that the previous original accessibility
+result covered 5,121 of 10,522 original predictions. Derived and launched the
+exact remaining 5,401 models (2,172,166 residues), retaining previously audited
+calculations. Common provenance and coordinate checksums match apart from
+relocated paths; production and source audit will verify actual bytes.
+This corrects the earlier description of only two remaining ASA cohorts.
+Three ASA cohorts now run; the complete union/projection handoff remains to
+be configured with the original-cohort complement. See the
+[accessibility workflow](residue-accessibility.md).
