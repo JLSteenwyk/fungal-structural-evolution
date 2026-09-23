@@ -183,3 +183,28 @@ initial rooting and tree resolution are not independently rerun. It confirms
 one real instance rather than establishing the cause of all omissions or the
 biological correctness of the duplication assignment. The full affected-family
 replay and guide sensitivity remain outstanding.
+
+## All affected families: native replay running
+
+The full **1,712-family** replay launched on September 23 under
+`fungal-profile-root-hog-native-replay-20260923.service`, with original native
+species and gene identifiers. It covers every family containing an unflagged
+root omission, without a family-size exclusion. For each resolved tree it reruns
+native classification and the HOG writer, compares exact parent-clade
+memberships, misplaced-gene identities and missing identities, and records
+the immediate parent state of every target gene. Mismatches and per-family
+errors are preserved; a passing receipt requires all families to match.
+
+The pinned plan `metadata/profile_root_hog_native_replay_plan.json` binds 57
+source and implementation files, including the installed native Python sources.
+`metadata/profile_root_hog_native_replay_launch.json` records the verified live
+process. Limits are one CPU, 32 GiB memory, no swap, no GPU or paid resources;
+output planning is 1 GiB and runtime planning is an uncalibrated 1–48 hours.
+Available memory exceeded 800 GiB and disk space exceeded 12 TiB at planning.
+Small families run first; every completed family's result is flushed to
+`results/orthology/profile-root-hog-native-replay-20260923-v1/family_replays.jsonl`.
+The run uses a fresh directory and leaves production outputs untouched.
+
+This is a replay from resolved trees, not independent initial rooting or tree
+resolution. Biological duplication/loss interpretation and alternative-guide
+sensitivity remain separate requirements, even if all memberships match.
