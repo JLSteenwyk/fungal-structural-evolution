@@ -4219,3 +4219,19 @@ This verifies the complete partition and its provenance, not every native
 alignment threshold or biological homology. Confidence qualification, domain
 clustering, sensitivity and phylogenetic integration remain outstanding.
 Structural clusters must not be treated as orthogroups or evolutionary events.
+
+### September 23: full structural cluster composition annotation launched
+
+Started `annotate_whole_proteome_cluster_composition.py` for the completed
+1,290,278-model partition. The pinned plan joins all 1,319,513 protein links
+to taxa and both full family partitions, preserving model sharing across
+proteins. Outputs are a SQLite bridge and per-cluster model/protein/taxon and
+family counts. Expected coverage is enforced before a completion receipt.
+Independent source-join and aggregate readback is still required.
+
+One CPU, 32 GiB hard memory limit, no swap, no GPU or paid resources. Planning
+allowances are 10 GiB output and 0.1–8 hours (uncalibrated); approximately 12 TiB
+disk and 930 GiB memory were available at launch. Syntax compilation passed
+and the exact live service PID/command were recorded in metadata. Composition
+is descriptive; clusters are not orthogroups or validated homology, and counts
+are not independent evolutionary events. Completion remains pending.

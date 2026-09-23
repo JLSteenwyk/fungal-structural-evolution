@@ -1,0 +1,29 @@
+{
+  "output": "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1",
+  "structures": "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite",
+  "families": "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite",
+  "members": "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/cluster_members.tsv",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 10,
+    "runtime_planning_hours": [
+      0.1,
+      8
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1/cluster_members.tsv": "a2db431e77a499d4db82c3112fb184df8a73463917d1dd3ac2ee4090020831b8",
+    "scripts/annotate_whole_proteome_cluster_composition.py": "ee4eb57d1b4f5f7931d526a0899a12be5e162ceebb0f9044fbdea98bff56827b",
+    "metadata/whole_proteome_structural_clustering_completed_receipt_20260923.json": "40b75e1c5851b38a1ff1d3282441ed467f3c639efbf02f7b967e223a1b0c4ffa",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "metadata/whole_proteome_family_coverage_completed_readback.json": "a9d4ed26ac281cdbf696760e260115cf5840695aaccc5754541d1b96357de81b",
+    "metadata/whole_proteome_family_coverage_completed_receipt.json": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378"
+  }
+}
