@@ -4428,3 +4428,22 @@ This measures boundary sensitivity within one partition. It is not independent
 clustering-run stability, biological domain-boundary validation, structural
 divergence or an evolutionary-event count; parameter and confidence sensitivity
 and phylogenetic interpretation remain outstanding.
+
+
+### September 23: boundary extension and cluster disagreement quantified
+
+Added `summarize_boundary_cluster_extension.py` to join every validated boundary
+pair to original interval coordinates, enforce envelope containment, and
+stratify cluster disagreement by added residues. All 594,797 pairs and
+1,078,592 interval identities are accounted for. Disagreement fractions are
+0/111,002 for identical boundaries; 32,115/297,428 (10.8%) for 1–4 added
+residues; 16,935/87,173 (19.4%) for 5–9; 16,280/58,386 (27.9%) for 10–19;
+17,080/35,585 (48.0%) for 20–49; and 4,093/5,223 (78.4%) for 50 or more.
+
+An independent full pandas join using interval lengths, rather than coordinate
+extensions, and pd.cut/groupby reproduced all six bin denominators, disagreement
+counts and fractions. Exact results and provenance are archived in
+`metadata/domain_boundary_extension_cluster_summary_20260923.tsv` and its
+receipt. This descriptive pattern motivates boundary-sensitive follow-up;
+it does not establish causality, independent observations, biological
+divergence or separate-run clustering robustness.
