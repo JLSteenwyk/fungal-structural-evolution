@@ -148,3 +148,40 @@ are in `metadata/recovery_20260923_reconciliation_*`,
 `metadata/recovery_20260923_remaining_jobs_verification.json`.
 This supersedes the pending recovery status for these jobs above. Restoration
 of execution is not completion of the scientific analyses.
+
+
+## PAE cache repair and dependent-controller replacement
+
+The refreshed PAE prefetch terminated with 30,587 verified matrices and one
+failure. Both cached files for AF-A0A0C3AZU7-F1 version 6 (compressed matrix
+and receipt) were zero bytes. They were preserved under
+`results/recovery-20260923/pae-empty-cache-quarantine/` while holding the cache
+lock. A fresh version-matched retrieval passed matrix validation (340 residues).
+The cause of the empty files has not been established.
+
+`scripts/recover_refreshed_pae_manifest.py`, with
+`metadata/refreshed_afdb_pae_repair_plan.json`, rebuilt a fresh complete manifest
+at `results/structural_pae/gdm-current-prefetch-repaired-20260923-v1`.
+Every compressed matrix was rehashed; all 30,587 previously successful records
+were unchanged, and model/version/sequence/length/URL bindings were checked
+against the full catalog. All 30,588 matrices are now verified, with zero
+failures. Numerical validation was reused for unchanged matrices; complete
+mapping-bound validation and directional context readback remain downstream.
+The completed result and controller receipts are archived as
+`metadata/refreshed_afdb_pae_repair_{completed,controller}_receipt.json`.
+
+Three waiting controllers were confirmed live with no children, stopped, and
+replaced: confidence qualification, paired input preparation, and paired fits.
+The new plans are `metadata/pae_repair_20260923_afdb_*_plan.json`; process
+identities and exact launch commands are in
+`metadata/pae_repair_20260923_afdb_launch.json`. All new dependent outputs use
+fresh v2 paths. The healthy native coordinate audit and its v1 output are
+preserved. The completed PAE repair is bound by plan and result checksums;
+PID zero explicitly represents an already completed predecessor.
+
+Live replacement process identities and all cross-stage paths were checked
+after launch. The confidence controller waits for the ongoing coordinate
+audit; the other two controllers wait on their exact new predecessors.
+Resource limits remain 2 CPU/16 GiB, 1 CPU/32 GiB, and 4 CPU/16 GiB respectively,
+with no swap or GPU use. This repairs the pipeline dependency; it does not
+establish completion of confidence qualification or evolutionary fitting.

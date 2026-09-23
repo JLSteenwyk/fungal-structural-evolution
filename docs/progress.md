@@ -7,7 +7,7 @@
 | Assembly and protein QC | Broad QC for 526 and lineage-specific BUSCO for 501 fungi complete; FCS report inventory and exact coding-overlap audit complete | docs/assembly-quality-workflow.md; 518 usable reports, one checksum mismatch, seven external-source exceptions; biological review and omission/copy sensitivities pending |
 | Species phylogeny and discordance | Both 526-taxon homogeneous guides audited; supported mixture analyses and gene trees running; 70/125 marker trees audited in latest frozen snapshot; supported-split guide conflict diagnostic computed | docs/phylogenetic-workflow.md; full support, discordance, root and sensitivity analyses pending |
 | Families, domains and reconciliation | Full guide-specific discovery and merged membership readback complete for all 5,815,847 proteins; original family-tree repair running; all 64 additional Pfam chunks and marker hits joined, with independent full database readback | docs/orthology-workflow.md; docs/domain-annotation-workflow.md; reconciled families pending |
-| Structural atlas | Frozen source cohorts include 13,153 AlphaFold and 10,048 combined ESMFold models; source-specific mapping, confidence and accessibility checks complete | docs/prediction-source-controls.md; larger acquisitions/predictions running; full atlas incomplete and source cohorts not pooled for inference |
+| Structural atlas | Full completed ESMFold inventory has 25,322 models; audited marker catalog covers 56,171/59,840 recovered marker–taxon entries across prediction sources. Whole-proteome AlphaFold catalog contains 1,290,278 unique models. Refreshed marker PAE retrieval repaired: 30,588/30,588 verified | metadata/esmfold_all_completed_inventory_receipt.json; metadata/current_marker_availability_receipt.json; docs/reboot-recovery-20260923.md; GPU prediction paused, full accessibility and refreshed AlphaFold confidence checks pending, atlas incomplete |
 | Sequence–structure analyses | Earlier 72-marker fits, conditional resampling and exploratory coupling complete; expanded AlphaFold 496 fits and benchmark audited; combined ESMFold 356 fits and corrected Gamma4 audit complete; 45,155 marker edges linked to both provisional guides with 180,620 audited branch estimates; Expanded ESMFold and AlphaFold optimization, conditional coupling and copy-review omission comparisons complete | docs/conditional-site-coupling.md; Earlier ESMFold 64 FCS omission fits audited; expanded FCS sensitivity and final branch models pending; model, prediction and phylogenetic uncertainty remain |
 | Coding-sequence analyses | 125 marker codon alignments, 1,655 nucleotide trees and 1,655 global MG94 diagnostics audited | docs/coding-sequence-workflow.md; all 13,240 nuisance-profile points audited; four optimization concerns and 29 FCS-exposed cases flagged; selection eligibility unresolved |
 | Dating | Published summary chronograms inventoried and 27 calibration candidates catalogued | docs/dating-workflow.md; specimen/placement/prior review and joint age uncertainty pending; no time-normalized project rates |
@@ -3759,3 +3759,14 @@ audits. The stages require all 6,758,598 paired observations. Runtime source
 checks handle relocated original paths explicitly. This is queued work;
 full-cohort results and evolutionary interpretation remain pending. See the
 [accessibility workflow](residue-accessibility.md).
+
+
+### September 23: repaired PAE retrieval and restored dependent jobs
+
+One zero-byte cached matrix/receipt pair was preserved and retrieved again.
+The full repaired manifest has 30,588 verified matrices, zero failures, and
+unchanged prior successful records. Three waiting downstream controllers now
+use new plans, exact new predecessor identities, and fresh v2 output paths.
+The coordinate audit continues unchanged. Details, validation scope, resources,
+and evidence paths are in [the recovery record](reboot-recovery-20260923.md#pae-cache-repair-and-dependent-controller-replacement).
+Confidence qualification and fits remain pending; GPU prediction remains paused.

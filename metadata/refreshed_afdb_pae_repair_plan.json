@@ -1,0 +1,24 @@
+{
+  "prior": "results/structural_pae/gdm-current-prefetch-20260923-v1",
+  "catalog": "results/structural_markers/gdm-current-catalog-20260922-v1",
+  "output": "results/structural_pae/gdm-current-prefetch-repaired-20260923-v1",
+  "control": "results/structural_markers/gdm-current-pae-repair-controller-20260923-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ]
+  },
+  "pins": {
+    "scripts/recover_refreshed_pae_manifest.py": "dac41096b8769fa135bdaf71aaa0631c7bd239aeb5911ff2388b2570fd7b6b87",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/refreshed_afdb_pae_single_retry_20260923.json": "09ba9f1a204d45f999f06ee212ad602c6ff0712cccda0bd4a5e1a05a4c8184e5",
+    "results/structural_pae/gdm-current-prefetch-20260923-v1/receipt.json": "2c0d507884012ace39e135363861cf7b69c0964b18102c068843d160f2224732",
+    "results/structural_pae/gdm-current-prefetch-20260923-v1/pae_manifest.json": "59be4460ab1a779a2120816301d60f8208e8f1070d8214c7e520d8453b401b40",
+    "results/structural_markers/gdm-current-catalog-20260922-v1/receipt.json": "4b6a31cd6d68d153c9384f64b6f8b34c81cfcb0ddacc49d2163a0a2bdecc0816",
+    "results/structural_markers/gdm-current-catalog-20260922-v1/model_provenance.json": "a7347e25152e5efce3f87a634cdc6f2e0e0fbe71396b9cc9b5865ddfe6805e21"
+  }
+}
