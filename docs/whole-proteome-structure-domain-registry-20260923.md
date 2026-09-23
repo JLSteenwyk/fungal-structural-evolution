@@ -235,3 +235,37 @@ production archive, not the full extraction result: the global manifest/catalog
 scope checks and all other archive readbacks remain pending. At the subsequent
 checkpoint, extraction had completed 16/428 shards, producing 38,992 domains
 from 16,000 models without rejections. It continues across the full manifest.
+
+## Full domain search database queued
+
+The installed Foldseek version was tested with a TSV list of tar archives using
+two exported domains (279 residues) from the source-atom-checked archive. Native
+lookup identifiers, full amino-acid hashes, 3Di length/alphabet and every float32
+Cα coordinate matched. The test is reproducible with
+`python scripts/check_domain_foldseek_archive_input.py`; its receipt is
+`metadata/domain_foldseek_archive_fixture_checks.json`.
+
+A full-database controller now waits for the all-archive original-atom auditor.
+It requires that completed audit, its exact producer receipt and both plan
+bindings. It checks each input tar/disposition hash and builds the database from
+all successfully exported intervals, accounting separately for rejected inputs
+and missing-backbone flags. Both boundary definitions retain their interval IDs;
+these variants are not independent evolutionary observations.
+
+Native `createdb` uses four CPU threads, pLDDT70 seeding masks and float32 Cα
+storage. Domain 3Di encodings are calculated afresh on cropped coordinates;
+they are not slices of the full-protein encodings. After conversion, every
+lookup and amino-acid hash, structural-state length/alphabet and stored Cα
+coordinate is checked against the audited PDB spans. Full archive hashes are
+rechecked afterwards. This does not independently validate the native 3Di
+network outputs or qualify alignments by residue confidence/PAE.
+
+Script: `scripts/advance_domain_search_database.py`.
+Plan: `metadata/full_domain_search_database_plan.json`.
+Output: `results/structural_clusters/full-domain-database-20260923-v1`.
+Unit: `fungal-full-domain-database-20260923.service`.
+The live waiting controller is recorded in metadata. Limits are four CPUs,
+64 GiB memory, no swap and no GPU. Launch gates require 500 GiB free disk and
+128 GiB available RAM; planning allows 50 GiB output and an uncalibrated
+2–48 hours after the full archive audit. Clustering, threshold/boundary
+sensitivity, domain homology and evolutionary inference remain subsequent work.
