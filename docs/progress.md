@@ -4055,3 +4055,22 @@ bindings and agreement of totals before archiving
 `metadata/current_afdb_confidence_completed_{receipt,readback}.json`.
 The paired-input controller has advanced to preparation; downstream fits and
 evolutionary inference remain incomplete.
+
+### September 23: refreshed paired inputs and whole-proteome database completed
+
+The refreshed AlphaFold input set passed complete array readback: 125 ready
+markers, 339 represented taxa, 47,529 retained marker columns and 9,446,142
+observed paired character cells. All 526-by-125 eligibility cells were checked.
+Verified receipt bindings and coverage-table hash; evidence is archived under
+`metadata/current_afdb_paired_inputs_completed_*`. Four native IQ-TREE workers
+started automatically. Coverage is not a completed branch-rate result.
+
+The whole-proteome Foldseek database also completed for 1,290,278 models and
+514,418,704 residues. Its producer checked every lookup identity, AA sequence
+hash, structural-alphabet length/symbol set and coordinate shape/finiteness;
+it did not independently reconstruct coordinates or 3Di values from CIF.
+Rehashed every database artifact before archiving
+`metadata/whole_proteome_foldseek_database_completed_receipt.json`.
+The queued clustering service advanced and a native Foldseek worker was
+confirmed running. Clusters, homology and functional interpretation remain
+pending.
