@@ -3698,3 +3698,12 @@ accessions contain at least one envelope extension of 20% or more. The complete
 versioned table supports later boundary sensitivity checks; it does not
 establish structural divergence or an evolutionary effect. See the
 [domain registry report](whole-proteome-structure-domain-registry-20260923.md).
+
+## Domain boundary cluster sensitivity queued — 23 September 2026
+
+Queued a complete paired alignment/envelope comparison after verified domain
+clustering. Every model/hit pair will retain identical, same-cluster,
+different-cluster or explicitly unclustered dispositions. All six outcome
+fixtures and malformed-identity rejections passed. This is a pending test of
+boundary sensitivity within one partition, not a completed biological result.
+See the [domain workflow](whole-proteome-structure-domain-registry-20260923.md).

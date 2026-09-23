@@ -416,3 +416,35 @@ python scripts/summarize_pfam_boundary_sensitivity.py \
 
 Use a fresh output directory for a rerun. This local CPU summary leaves all
 production extraction inputs and running job plans unchanged.
+
+## Paired boundary cluster sensitivity queued
+
+A full-data successor now waits for the exact domain-clustering process and
+its passing receipt. `scripts/compare_domain_boundary_clusters.py`, driven by
+`metadata/domain_boundary_cluster_plan.json`, will join every original
+model/hit boundary pair to the completed interval partition. It requires
+bound clustering/database plans, receipt and lookup/member hashes, exact
+partition coverage, representative self-membership and agreement between the
+unclustered interval count and the recorded extraction exclusions.
+
+Every pair receives one explicit disposition: identical interval; distinct
+intervals in the same cluster; distinct intervals in different clusters;
+alignment unclustered; envelope unclustered; or both unclustered. The identical
+case is kept separate because it is a reused interval rather than two
+independent structures. Missing intervals are retained in the denominator.
+No disagreements are silently removed or interpreted as evolutionary change.
+This analysis measures paired boundary agreement within one joint candidate
+partition. It does not compare independently clustered datasets, validate
+homology or quantify direct structural displacement.
+
+All six classification fixtures passed. Duplicate boundaries, missing partners
+and unknown boundary labels were rejected. These tests do not replace full
+production output readback, which remains required. The full output will be
+`results/structural_clusters/domain-boundary-dispositions-20260923-v1`.
+The live waiting unit is `fungal-domain-boundary-clusters-20260923.service`,
+recorded in `metadata/domain_boundary_cluster_launch.json`.
+
+This stage requests one CPU, 8 GiB RAM, no swap and 2 GiB output planning,
+with a 50 GiB free-disk gate. Planning allows an uncalibrated 1–60 minutes
+after clustering completes; 869 GiB RAM and 11,826 GiB disk were available
+before queuing. No GPUs, paid resources or changes to existing jobs are used.

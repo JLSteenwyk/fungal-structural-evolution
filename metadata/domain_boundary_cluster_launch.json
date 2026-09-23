@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-domain-boundary-clusters-20260923.service",
+  "pid": 33500,
+  "create_time": 1790176866.39,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_domain_boundary_clusters.py",
+    "--plan",
+    "metadata/domain_boundary_cluster_plan.json"
+  ],
+  "systemd": {
+    "MainPID": "33500",
+    "ActiveState": "active"
+  },
+  "observed_at": "2026-09-23T15:22:01.190117+00:00"
+}
