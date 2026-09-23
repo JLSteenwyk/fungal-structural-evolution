@@ -1,0 +1,43 @@
+{
+  "status": "complete_union_of_verified_local_pae_exports",
+  "models": 25322,
+  "mapping_receipt_sha256": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+  "encoding_union_receipt_sha256": "75b948659abe23bb6975be780e9a591eede23a3f28c3aaf76ebcc932e983ffd4",
+  "source_cohorts": [
+    {
+      "path": "results/structural_pae/esmfold-original-complete-v1",
+      "receipt_sha256": "ad1dbf3aa5ed582bc91d9a10f34d67a104b4d1c459f53f1164e10729a774f20d",
+      "models": 10522,
+      "mapping_receipt_sha256": "90e02d04d3adb292953b3c0b666638eedd1ea7717eb91286fd197586909ec3bf"
+    },
+    {
+      "path": "results/structural_pae/esmfold-followon-complete-v1",
+      "receipt_sha256": "d38c2f2744b1be8d500c2c111d6c079fa5505a1190dee45f7e337e5e6025d54f",
+      "models": 4252,
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab"
+    },
+    {
+      "path": "results/structural_pae/esmfold-ecology-complete-v1",
+      "receipt_sha256": "baafff96954d1fc55e7ed9cdbff428a20bc5ab49878c200534e9d978c09497ab",
+      "models": 675,
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62"
+    },
+    {
+      "path": "results/structural_pae/esmfold-long-complete-v1",
+      "receipt_sha256": "82003a3f5cfeca45b9acad8b115069b041eb39b927b6425f9a0a82cbf29b1347",
+      "models": 5510,
+      "mapping_receipt_sha256": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101"
+    },
+    {
+      "path": "results/structural_pae/esmfold-extended-complete-v1",
+      "receipt_sha256": "56b11c54c3a3eccfaf8c08e98535d04c58cf3e7159fd566401212ad16467b47a",
+      "models": 4363,
+      "mapping_receipt_sha256": "b876173320900d6cd7698528b7091691947b984703028a7b9179b9a19d220bab"
+    }
+  ],
+  "script_sha256": "39739e40eaa623e61d5c8abf5f6cee02761a398158f7723e60705aec547bc7c9",
+  "artifacts": {
+    "pae_manifest.json": "992f639e34c4d3ff1eaba91a95282942ddbcaf881f3fe1e4ae06373859a81e4e"
+  },
+  "interpretation": "Unchanged source export rows, matrix hashes and original NPZ hashes checked against combined model provenance and qualified-cohort receipts. Original per-cohort lossless-export and full-context audits remain authoritative. No new PAE computation or confidence calibration."
+}

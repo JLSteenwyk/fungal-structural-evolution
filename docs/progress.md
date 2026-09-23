@@ -3807,3 +3807,14 @@ The live PAE-union worker was verified after launch. See
 `metadata/completed_esmfold_geometry_{plan,launch}.json` and
 `docs/structural-alphabet-benchmark.md`. Geometry and its comparison to tree
 paths are not yet complete. No GPU prediction was resumed.
+
+### September 23: full PAE union complete and tree-path benchmark connected
+
+Verified completion of the five-cohort PAE union for all 25,322 ESMFold models;
+the direct geometry worker is now running. Archived its receipt as
+`metadata/completed_esmfold_pae_union_receipt.json`. Queued a pinned successor
+that waits for both the full geometry audit and recovered supported tree-fit
+audit before joining all 2,527,033 pairs to four model-specific tree paths,
+producing descriptive within-marker ranks and a figure. No result is claimed
+for the queued benchmark; full output/figure review and uncertainty analyses
+remain. See `metadata/completed_geometry_tree_benchmark_{plan,launch}.json`.

@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-completed-geometry-tree-benchmark-20260923",
+  "pid": 1568681,
+  "create_time": 1790179859.59,
+  "plan_sha256": "a4f3189b76ac2f409de9295d3c14cd9da25f1f390ac70d01b1b8de6c411d7778",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-completed-geometry-tree-benchmark-20260923",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "-p",
+    "CPUQuota=100%",
+    "-p",
+    "MemoryMax=64G",
+    "-p",
+    "MemorySwapMax=0",
+    "-p",
+    "Nice=10",
+    "-p",
+    "IOWeight=50",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_completed_geometry_tree_benchmark.py",
+    "--plan",
+    "metadata/completed_geometry_tree_benchmark_plan.json"
+  ]
+}

@@ -227,3 +227,38 @@ geometry and all-cohort fits pass their checks. Prediction circularity,
 phylogenetic dependence, direct-distance nonadditivity, branch uncertainty and
 biological interpretation remain separate requirements. Pair counts are not
 counts of independent evolutionary observations.
+
+### PAE union completed; tree-path benchmark queued
+
+The PAE union completed for all 25,322 models in five source cohorts; its
+manifest hash was checked and receipt archived as
+`metadata/completed_esmfold_pae_union_receipt.json`. The geometry controller
+has advanced to direct pairwise calculations. This union rechecks existing
+exports and original array hashes; it does not generate new predictions.
+
+The successor `fungal-completed-geometry-tree-benchmark-20260923` waits for
+both exact live controller identities: the full geometry/audit pipeline and
+the recovered all-cohort paired-fit/audit pipeline. Its pinned plan and launch
+record are `metadata/completed_geometry_tree_benchmark_{plan,launch}.json`.
+It checks successful controller receipts, exact plan checksums, matching
+paired-input provenance and complete fit/geometry counts before execution.
+It reuses the already queued fit audit rather than repeating fitting or audits.
+
+The three successor stages use existing scripts to join all accepted and
+excluded geometry pairs to AA and three 3Di model tree-path point estimates,
+calculate within-marker descriptive rank associations, and produce a figure.
+The planned grid is 122 markers and 2,527,033 pairs; final accepted/excluded
+counts must agree with the geometry audit. Existing marker-copy review labels
+remain attached, and an absence of a flag does not prove orthology.
+
+The successor uses one CPU equivalent, at most 64 GiB RAM, no swap or GPU,
+a 96 GiB available-memory gate and 100 GiB free-disk gate. Its allowance is
+20 GiB output and an uncalibrated 1–48 hours after both predecessors complete.
+The successor's live process and waiting state were verified after launch.
+Production outputs are pending. The controller writes to
+`results/phylogeny/all-completed-geometry-tree-controller-20260923-v1`.
+
+These stages produce point-estimate joins and descriptive associations, not
+independent pairwise hypothesis tests, confidence intervals or calibrated
+physical branch lengths. Full output readback, visual figure review and
+uncertainty-aware biological analyses remain required.
