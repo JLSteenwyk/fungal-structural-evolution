@@ -4185,3 +4185,22 @@ Domain extraction has separately completed all 428 shards: 427,255 source
 models and 1,078,592 exported intervals, with zero rejected intervals. Four
 workers are now conducting the full coordinate archive readback. Extraction
 completion is not yet full archive validation or a completed domain atlas.
+
+### September 23: MAFFT root-HOG replay and omission accounting complete
+
+All 1,718 affected families passed native classification replay from resolved
+gene trees, reproducing root parent/membership assignments and misplaced flags.
+The follow-up full disposition readback accounts for all 5,972 unflagged missing
+genes and 24,220 replayed root-HOG memberships. Every omission has the native
+writer disposition `root_duplication_blocked_parent_with_leaf_without_group`.
+The final, computationally expensive family was OG0000017; it completed without
+restart. Both completion receipts are archived in metadata with the
+`mafft_root_hog_*_completed_receipt.json` names.
+
+Before archiving, rechecked both plans' pins, plan/receipt bindings, declared
+artifact hashes, the cross-receipt replay binding, unique full 5,972-gene grid,
+1,718-family coverage and disposition totals. This did not repeat native replay
+or the source/tree-position traversal. These results explain the native output
+rules on the resolved trees; they do not independently validate rooting,
+duplication timing, ancestral homology or biological gene loss. Large-family
+ortholog semantics and downstream structural divergence tests remain pending.
