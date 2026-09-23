@@ -1,0 +1,23 @@
+{
+  "original_output": "results/phylogeny/pmsf-mafft-profile-v1",
+  "control": "results/recovery-20260923/pmsf-mafft-profile",
+  "recovery_boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320",
+  "previous_boot_id": "968ec9b7a655466d8a2902a815b9051b",
+  "checkpoint_sha256": "22933b977c5d71257d559ad41a955c845252a97c2c8c1182260e76cb40f584d6",
+  "resources": {
+    "cpu": 16,
+    "memory_max_gib": 650,
+    "minimum_available_memory_gib": 750,
+    "minimum_free_disk_gib": 100,
+    "swap_gib": 0,
+    "runtime_remaining_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/phylogeny/pmsf-mafft-profile-v1/config.json": "70172146ce49c9242092757fc03055c28f15eaa7e763f46df25a8e84c663a8c4",
+    "scripts/recover_species_pmsf_checkpoint.py": "cf7a456ad33027f58d08ac13b634e6bd8403e77d872875e30f9c0eb84f7805ab",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de"
+  }
+}

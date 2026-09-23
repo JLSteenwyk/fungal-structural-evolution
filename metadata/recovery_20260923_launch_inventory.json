@@ -1,0 +1,276 @@
+{
+  "status": "partial_cpu_recovery_in_progress",
+  "boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320",
+  "previous_boot_id": "968ec9b7a655466d8a2902a815b9051b",
+  "boot_time_unix": 1790169598.0,
+  "jobs": [
+    {
+      "unit": "fungal-pmsf-checkpoint-recovery-20260923.service",
+      "pid": 24278,
+      "create_time": 1790170770.12,
+      "observed_process_status": "sleeping",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_species_pmsf_checkpoint.py",
+        "--plan",
+        "metadata/recovery_20260923_pmsf_plan.json"
+      ],
+      "properties": {
+        "MainPID": "24278",
+        "ExecMainStatus": "0",
+        "CPUQuotaPerSecUSec": "16s",
+        "MemoryMax": "697932185600",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 24353,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/matrix.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+C20+F+G4",
+            "--tree-freq",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-profile-v1/input_guide.treefile",
+            "-T",
+            "16",
+            "--mem",
+            "600G",
+            "--seed",
+            "20260913",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-profile-v1/pmsf"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "fungal-paired-fit-recovery-20260923.service",
+      "pid": 55253,
+      "create_time": 1790170851.32,
+      "observed_process_status": "sleeping",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_paired_fits_checkpoint.py",
+        "--plan",
+        "metadata/recovery_20260923_paired_fit_plan.json"
+      ],
+      "properties": {
+        "MainPID": "55253",
+        "ExecMainStatus": "0",
+        "CPUQuotaPerSecUSec": "4s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 56732,
+          "command": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_paired_marker_fits.py",
+            "--inputs",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+            "--models",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/structural_models/garg-hochberg-v3",
+            "--output",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1",
+            "--alrt",
+            "1000",
+            "--bootstrap",
+            "1000"
+          ]
+        },
+        {
+          "pid": 56738,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/201273at2759/aa.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "1",
+            "--mem",
+            "2G",
+            "--seed",
+            "1453467018",
+            "-keep-ident",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/201273at2759/aa",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees"
+          ]
+        },
+        {
+          "pid": 56739,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/160487at2759/aa.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "1",
+            "--mem",
+            "2G",
+            "--seed",
+            "232723550",
+            "-keep-ident",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/160487at2759/aa",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees"
+          ]
+        },
+        {
+          "pid": 56740,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/129234at2759/aa.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "1",
+            "--mem",
+            "2G",
+            "--seed",
+            "1305297909",
+            "-keep-ident",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/129234at2759/aa",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees"
+          ]
+        },
+        {
+          "pid": 56741,
+          "command": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/115730at2759/aa.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "1",
+            "--mem",
+            "2G",
+            "--seed",
+            "633836963",
+            "-keep-ident",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/115730at2759/aa",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "fungal-crossed-pmsf-recovery-20260923.service",
+      "pid": 55264,
+      "create_time": 1790170851.35,
+      "observed_process_status": "sleeping",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_crossed_species_pmsf.py",
+        "--config",
+        "metadata/recovery_20260923_crossed_pmsf_config.json"
+      ],
+      "properties": {
+        "MainPID": "55264",
+        "ExecMainStatus": "0",
+        "CPUQuotaPerSecUSec": "16s",
+        "MemoryMax": "697932185600",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "unit": "fungal-paired-resampling-recovery-20260923.service",
+      "pid": 67492,
+      "create_time": 1790170889.21,
+      "observed_process_status": "sleeping",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_complete_paired_resampling.py",
+        "--plan",
+        "metadata/recovery_20260923_paired_resampling_plan.json"
+      ],
+      "properties": {
+        "MainPID": "67492",
+        "ExecMainStatus": "0",
+        "CPUQuotaPerSecUSec": "8s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "unit": "fungal-profile-hog-recovery-20260923.service",
+      "pid": 67494,
+      "create_time": 1790170889.24,
+      "observed_process_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_hog_output_identities.py",
+        "--plan",
+        "metadata/recovery_20260923_profile_hog_plan.json"
+      ],
+      "properties": {
+        "MainPID": "67494",
+        "ExecMainStatus": "0",
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    }
+  ],
+  "gpu_prediction": "remains_paused",
+  "pending_recovery": [
+    "MAFFT-guide reconciliation and final both-guide readbacks/small-family supplement",
+    "Whole-proteome Foldseek database construction",
+    "Refreshed AlphaFold residue readback and feature/confidence/paired-fit chain",
+    "AlphaFold PAE prefetch and background retrieval inventory"
+  ],
+  "scope": "Live process verification after reboot; does not claim all previous jobs restored or analyses completed."
+}

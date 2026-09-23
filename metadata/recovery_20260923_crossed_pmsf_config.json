@@ -1,0 +1,78 @@
+{
+  "status": "queued_fourth_crossed_pmsf_after_recovered_third",
+  "producer_pid": 24278,
+  "producer_start_ticks": "117212",
+  "producer_command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/recover_species_pmsf_checkpoint.py",
+    "--plan",
+    "metadata/recovery_20260923_pmsf_plan.json"
+  ],
+  "producer_output": "results/phylogeny/pmsf-mafft-profile-v1",
+  "controller_output": "results/phylogeny/crossed-pmsf-recovery-controller-20260923",
+  "resources": "results/phylogeny/species-mixture-resources-v2",
+  "resource_plan": {
+    "matrix_labels": [
+      "profile",
+      "mafft"
+    ],
+    "guide_labels": [
+      "profile",
+      "mafft"
+    ],
+    "crossed_runs": 4,
+    "model": "LG+C20+F+G4",
+    "method": "PMSF",
+    "concurrent_runs": 1,
+    "threads": 16,
+    "iqtree_memory_limit": "600G",
+    "minimum_available_memory_gib": 750,
+    "output_allowance_gb": 100,
+    "planning_wall_hours_per_run": [
+      24,
+      336
+    ],
+    "runtime_basis": "Conservative planning envelope for full-matrix mixture profile estimation and supported tree search, not a measured prediction.",
+    "prerequisites": "Both completed guide receipts, exact tip grids and finite branch lengths; freeze each guide before use. All four guide/alignment combinations preserve 526 taxa. Support, model adequacy, gene discordance and taxon/marker sensitivity remain required."
+  },
+  "remaining_runs": [
+    {
+      "label": "mafft_mafft",
+      "matrix": "results/phylogeny/mafft-matrix-50-v1",
+      "guide_audit": "results/phylogeny/mafft-guide-audit-v1",
+      "output": "results/phylogeny/pmsf-mafft-mafft-v1"
+    }
+  ],
+  "interpretation": "Baseline full-manifest sensitivity across two alignments and two guides. Existing FCS and taxon-identity concerns are retained and require separate sensitivities. One PMSF process at a time, existing runner lock and fresh memory/disk checks for each stage; no new charges.",
+  "pinned_files": {
+    "results/phylogeny/mafft-guide-audit-v1/guide.iqtree": "5648f781e23930ed6804b1e7dc2270dfc8a5e49c77a264dfccdd49c9f731797d",
+    "results/phylogeny/mafft-guide-audit-v1/guide.log": "bb19e324ba5490572b9b1f5b4193bcbc7e85b63fe86de4cc2dbf29f8860a84b7",
+    "results/phylogeny/mafft-guide-audit-v1/guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "results/phylogeny/mafft-guide-audit-v1/receipt.json": "2fa8fff788911b835fed6699457d0b3865a39c0facbdcf4e546469cadcdd7d24",
+    "results/phylogeny/mafft-guide-audit-v1/run_config.json": "3f5f8ee347f3db381aa8916d9f9ddb27398f3defbdf3f2440742c3bdbb39f13d",
+    "results/phylogeny/mafft-guide-audit-v1/taxon_qc.tsv": "2bfb48af69db58cb55b99878d8375c6f4e1bf08e32bf5f3876cf2bf0ec5bea1e",
+    "results/phylogeny/mafft-matrix-50-v1/matrix.faa": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+    "results/phylogeny/mafft-matrix-50-v1/partitions.nex": "6efefab7f13acb4104cd781cfc32d1e83fcc5d659450b995a9ef4ea05ab73725",
+    "results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "results/phylogeny/mafft-matrix-50-v1/site_mapping.tsv": "3a6645b397965034419c525e71b3ac24f72f92ec42408ac4cedc8ad4b78bdf4a",
+    "results/phylogeny/mafft-matrix-50-v1/taxon_coverage.tsv": "2ea622d865c02981da14b8d3b5272260a54d74c33bb62b6a8924da2cf3caaa73",
+    "results/phylogeny/profile-guide-audit-v1/guide.iqtree": "04bed048ef9457b9a11123b172c92a087d8d0f0e9a67ff7133e66c18423cfdeb",
+    "results/phylogeny/profile-guide-audit-v1/guide.log": "fd4c4f3ad30a8ad569801d29ef2b530e86a0d2753c4e847d73137f7a7dd25e22",
+    "results/phylogeny/profile-guide-audit-v1/guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "results/phylogeny/profile-guide-audit-v1/receipt.json": "0619cdfa1a5cf91d684603c61c9af03f7092715cd5c882ec42cfd8209991fca1",
+    "results/phylogeny/profile-guide-audit-v1/run_config.json": "da66cedb30d074ed5cbdfd16b44fdc40b2b5b6e21639d4fe0b2ee3ae6734e821",
+    "results/phylogeny/profile-guide-audit-v1/taxon_qc.tsv": "50e93e30a3066aed784d694adc4f261d6dca6cb1c1b93a1d2f91bdb68e29aeaf",
+    "results/phylogeny/profile-matrix-50-v1/matrix.faa": "1934ea4e2d0687d644a65d3fc550dc6eee25e42d85deeeec6a3e529bd1ddb045",
+    "results/phylogeny/profile-matrix-50-v1/partitions.nex": "5cfbfe5d267cb3901cc4632ccc5ebdb1cf54525feff0e4a7429ce4df10ce11d9",
+    "results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "results/phylogeny/profile-matrix-50-v1/site_mapping.tsv": "a3f02805eaa8eacbbf60d6dfa2e995798b0a9ef8d75339031863591fd939d1be",
+    "results/phylogeny/profile-matrix-50-v1/taxon_coverage.tsv": "a10aa523806a8918ee0d7e0855c462606b6315072c97596293459c0cba3b0151",
+    "results/phylogeny/species-mixture-resources-v2/receipt.json": "2c20cd54819d288d5322ad64d9081657a686c71bf8d90eed8d1c1db06b7d0bf4",
+    "scripts/advance_crossed_species_pmsf.py": "dfc7887b1248f46f221d925d75c290c34e9ecb293f2bb6504fcc5c9fb49bed14",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/config.json": "bb837757ac510748cfa014bd35f02493543d0002b86570941858bba533809cd6",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/input_guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "metadata/recovery_20260923_pmsf_plan.json": "82677ca1a5a1f4a8f58521df923f103a13ff1c56590f2ad4ca47121f95df4221"
+  }
+}
