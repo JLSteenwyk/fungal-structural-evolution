@@ -1,0 +1,18 @@
+{
+  "status": "complete_all_candidate_domain_extraction_manifest",
+  "source_models": 427255,
+  "candidate_model_hit_pairs": 594797,
+  "boundary_links": 1189594,
+  "unique_intervals": 1078592,
+  "unique_interval_residues": 168431396,
+  "maximum_interval_residues": 1103,
+  "registry_receipt_sha256": "77632f91db393bc489cb7c1134db1a6e6f773e6bf7a0afbe7ddc9879585bb713",
+  "registry_readback_sha256": "b2b0e593abd2a67f42f48a6e89bdcbe4e858a79886de7883113ac75650f899e8",
+  "registry_database_sha256": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+  "script_sha256": "9f03bd1a20d84e88bb53cce81c249917cd2f08678a0d28089ff26492f139906d",
+  "artifacts": {
+    "intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "boundary_links.tsv.gz": "5562955a1d0e2f37c674b4599dcf03e934fac158fdab7ca3083382220cdde040"
+  },
+  "scope": "Union of all four policy-qualified Domain hits, retaining alignment and envelope boundaries and exact model/hit associations. Identical source-sequence intervals deduplicated reversibly. Full boundary-link round trip checked. Coordinate extraction, residue confidence, PAE and independent structural validation not performed."
+}

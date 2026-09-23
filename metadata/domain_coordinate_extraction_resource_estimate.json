@@ -1,0 +1,27 @@
+{
+  "status": "pre_execution_planning_estimate_not_launched",
+  "source_models": 427255,
+  "source_full_protein_residues": 198306563,
+  "domain_intervals": 1078592,
+  "domain_interval_residues": 168431396,
+  "cpu": 4,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "output_planning_gib": 500,
+  "runtime_planning_hours": [
+    6,
+    96
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "output_basis": "168 million interval residues, potentially roughly 80\u2013140 GiB uncompressed all-atom PDB depending on atom count, plus archives and validation outputs; 500 GiB allowance is not measured usage.",
+  "requirements_before_execution": [
+    "verify source coordinate hashes and full polymer sequences",
+    "extract alignment and envelope spans retaining residue identity and confidence",
+    "retain missing-atom/noncanonical/low-confidence dispositions",
+    "verify every exported sequence and coordinate association",
+    "preserve all manifest and species/protein links"
+  ],
+  "scope": "Planning only; does not authorize a new paid service or launch extraction. PAE and domain-boundary validation remain separate."
+}

@@ -108,3 +108,41 @@ Bound receipts are archived as
 The earlier queued/running text records launch history. Coordinate extraction,
 residue confidence and PAE assessment, domain-level comparisons and evolutionary
 interpretation remain unfinished.
+
+## Complete domain extraction manifest
+
+The union of candidate Domain hits across all four policies contains **594,797
+model/hit pairs across 427,255 source models**. Preparing both alignment and
+envelope spans yields **1,189,594 boundary associations**. Deduplication by the
+full protein sequence hash and inclusive start/end coordinates retains
+**1,078,592 unique intervals**, totaling **168,431,396 interval residues**; the
+longest interval is 1,103 residues. The source models contain 198,306,563
+full-protein residues.
+
+The manifest retains every model/hit/boundary association in a deterministic
+compressed table, so identical coordinates are stored once without losing
+annotation provenance. It includes the full union, not a subsample. Interval
+IDs hash the full source-sequence identity and bounds; they do not claim a
+new evolutionary family or unique domain sequence.
+
+Reproduce with `scripts/prepare_domain_extraction_manifest.py`, using a fresh
+output directory. Outputs are under
+`results/domains/domain-extraction-manifest-20260923-v1`; the archived receipt is
+`metadata/domain_extraction_manifest_completed_receipt.json`. The producer
+checked every boundary association against its original hit. The separate
+`readback_domain_extraction_manifest.py` reconstructs the complete distinct
+interval set with SQL UNION, then checks every exported model, source sequence,
+path, bound, length and interval hash.
+
+Coordinate extraction has not launched. Its dimension-based resource estimate
+is recorded in `metadata/domain_coordinate_extraction_resource_estimate.json`:
+four CPU workers, 32 GiB memory, no swap or GPU, 500 GiB output allowance and an
+uncalibrated 6–96 hour planning range. The allowance covers potentially roughly
+80–140 GiB of uncompressed all-atom PDB text, archives and validation outputs;
+actual usage is not yet measured. Source coordinate hashes, full polymer
+sequences, residue identity, missing atoms and confidence must be checked during
+extraction. Domain boundaries, PAE qualification and downstream comparisons
+remain separate checks.
+
+The independent full manifest readback **passed** for all 1,078,592 intervals;
+its receipt is `metadata/domain_extraction_manifest_readback.json`.
