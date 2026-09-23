@@ -1,0 +1,34 @@
+{
+  "status": "complete_full_codon_case_review_ledger",
+  "input_cases": 1712,
+  "fitted_cases": 1655,
+  "unfitted_cases": 57,
+  "multistart_review_cases": 4,
+  "case_specific_flag_counts": {
+    "tree_parameter_boundary_warning": 53,
+    "tree_pairwise_saturation_warning": 33,
+    "tree_nni_convergence_warning": 83,
+    "near_zero_nucleotide_tree_edge": 388,
+    "copy_reconciliation_required": 14,
+    "other_tree_warning": 2,
+    "multistart_refit_identifiability_unresolved": 4,
+    "insufficient_sequence_information": 57,
+    "fcs_omission_below_four_taxa": 29
+  },
+  "cases_with_case_specific_flags": 549,
+  "cases_without_listed_case_specific_flags": 1163,
+  "selection_eligible_cases": 0,
+  "sources": {
+    "metadata/genus_codon_tree_information.tsv": "d2c74c96b2ed08febce6a7306cb3fa60295fabf38af7d9ff2b904dc1efd07970",
+    "metadata/genus_codon_tree_full_case_review.tsv": "1c8d45f5ff977b4cb5465c21e3748b642d649ad358c182bbfb9bbd91278e8109",
+    "metadata/genus_mg94_full_case_audit.tsv": "16b699ccc23616e13d3a62a929d64e8b04343fcd96bdb25160830bcf30e8b443",
+    "metadata/genus_mg94_branch_parameter_profile_audit_case_summary.tsv": "1d98789c65e3e0f3101f273d5b026b3f51ee08f2b32a88faf782b808b06cfff7",
+    "metadata/fcs_codon_omission_disposition.tsv": "a13ebaf0837cf69f6a121a0baf4f82bb9f2b5671d544f8a22d016cdf54c109cb",
+    "metadata/genus_mg94_flagged_restart_case_summary.tsv": "2b1d2f58bc601732164d0022255f6fc46d783e8b42f8e0e4004a7d97ad8b12b5"
+  },
+  "script_sha256": "f479a3716ff190e0d9e8754201025acd9f7dc954f1ccab1f497d6a1c9a777a3f",
+  "artifacts": {
+    "case_readiness.tsv": "b463f54e764d2f8813180d874b8c8d60553891947e3f0b61ea237d1079e50792"
+  },
+  "scope": "Exact joins of completed diagnostic summaries, with case grids, copy flags, taxon counts and alignment dimensions checked. Flags overlap and are review triggers, not validated exclusion thresholds. Absence of listed flags does not establish eligibility. No new selection test, saturation certificate or biological rate conclusion."
+}

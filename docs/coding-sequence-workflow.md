@@ -966,3 +966,37 @@ python scripts/audit_flagged_mg94_restarts.py \
   --plan metadata/genus_mg94_flagged_restart_plan.json \
   --output metadata/genus_mg94_flagged_restart_readback.json
 ```
+
+### Full codon-case review ledger — September 23
+
+The completed diagnostic summaries have now been joined into one explicit
+review ledger covering all **1,712 prepared codon cases**: 1,655 fitted and
+57 lacking sufficient sequence information for the existing tree workflow.
+Case grids, taxon counts, nucleotide/codon dimensions and copy flags agree
+across the source tables. The four profile-discrepancy cases map exactly to
+the completed multistart refits and remain flagged for identifiability review.
+
+There are 549 cases with at least one listed case-specific review flag and
+1,163 without those listed flags. Absence of a flag is not selection eligibility.
+Overlapping flag counts include 388 near-zero nucleotide-tree edges, 83 NNI
+convergence warnings, 53 parameter-boundary warnings, 33 pairwise-saturation
+warnings, 29 cases falling below four taxa under declared FCS omission, 14
+copy-reconciliation caveats across the full input set, two other tree warnings,
+and the four multistart identifiability concerns. The 57 information-limited
+cases are also explicitly retained. Counts must not be summed as independent
+cases, and numerical thresholds here are inherited review labels, not validated
+biological exclusion rules.
+
+Every row retains `selection_eligibility=not_established`. Saturation and
+identifiability assessment, alignment/copy adequacy and the selection model/test
+design remain required. This ledger supports explicit eligibility decisions
+and prevents completed numerical checks from being mistaken for biological
+clearance; it does not perform a selection test.
+
+Reproduce with `python scripts/summarize_codon_analysis_readiness.py` (fresh
+output directory required). Outputs are archived in
+`metadata/codon_analysis_readiness.tsv` and
+`metadata/codon_analysis_readiness_receipt.json`. An independent pandas join
+and Boolean reconstruction reproduced the exact full case grid and flagged
+case union, recorded in `metadata/codon_analysis_readiness_readback.json`.
+The local summary completed in under one second without GPUs or model refits.
