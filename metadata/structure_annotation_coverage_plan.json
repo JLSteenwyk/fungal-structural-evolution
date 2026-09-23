@@ -1,0 +1,30 @@
+{
+  "architectures": "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite",
+  "links": "results/structures/whole-proteome-afdb-catalog-20260922-v1/protein_model_links.tsv",
+  "taxon_coverage": "results/structures/whole-proteome-afdb-catalog-20260922-v1/taxon_coverage.tsv",
+  "structure_bridge": "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite",
+  "output": "results/structures/annotation-stratified-coverage-20260923-v1",
+  "expected_proteins": 5815847,
+  "expected_links": 1319513,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.25,
+      4
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/protein_model_links.tsv": "6937557ffcb6318a8e176b2562001ca8614b897712fc7ae4a50c8a755290958d",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/taxon_coverage.tsv": "68902ab65d13bc06d7c0e370bbbd71f8df3397b7cb528ba105b393fc8725aa4b",
+    "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+    "scripts/summarize_structure_annotation_coverage.py": "07d5bab20ff3d02b73e9d7d5a910167aeb9d4f8ace655e3ce517aa81823a6cf9",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441"
+  }
+}
