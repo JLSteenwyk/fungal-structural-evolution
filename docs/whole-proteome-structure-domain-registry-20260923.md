@@ -481,3 +481,35 @@ A passing readback will establish complete output reconstruction within the
 same partition. Independent clustering parameter sensitivity, alignment
 threshold validation, homology, biological boundaries and evolutionary effects
 remain separate requirements.
+
+### Descriptive boundary-sensitivity figure
+
+![Distribution of envelope extensions and Pfams with the largest numbers of at least 20 percent extensions](figures/domain_boundary_sensitivity.svg)
+
+[Download the figure as PDF](figures/domain_boundary_sensitivity.pdf).
+
+The left panel partitions all 594,797 candidate model/hit pairs into disjoint
+bins for the number of residues added by the HMM envelope relative to the
+alignment span. Half (297,428) add 1–4 residues, 111,002 have identical bounds,
+and 5,223 add at least 50 residues. The right panel selects ten Pfam accessions
+by the absolute number of candidate pairs with added length at least 20% of
+the alignment-span length. Labels show affected/total pairs within each Pfam
+and the corresponding percentage. This is a count ranking, not an enrichment
+analysis; observations share models and taxa.
+
+All 16 bar widths were checked against the saved plot-data table. Full-table
+aggregation reproduced the independently checked source counts and Pfam totals.
+The rendered PNG was inspected for readability, labels and clipping; SVG and
+PDF exports use the same figure object. Data, receipt and visual review are
+`metadata/domain_boundary_sensitivity_figure_{data.tsv,receipt.json,review.json}`.
+Thresholds are reporting categories, not validated biological cutoffs.
+
+Reproduce into a fresh output directory:
+
+```bash
+python scripts/plot_domain_boundary_sensitivity.py \
+  --boundaries results/domains/domain-boundary-sensitivity-20260923-v1 \
+  --pfam-table metadata/pfam_boundary_sensitivity.tsv \
+  --pfam-receipt metadata/pfam_boundary_sensitivity_receipt.json \
+  --output results/figures/domain-boundary-sensitivity-20260923-v2
+```

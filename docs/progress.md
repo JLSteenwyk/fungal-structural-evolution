@@ -3818,3 +3818,13 @@ audit before joining all 2,527,033 pairs to four model-specific tree paths,
 producing descriptive within-marker ranks and a figure. No result is claimed
 for the queued benchmark; full output/figure review and uncertainty analyses
 remain. See `metadata/completed_geometry_tree_benchmark_{plan,launch}.json`.
+
+### September 23: domain-boundary sensitivity figure completed
+
+Created and visually reviewed a reproducible two-panel SVG/PDF figure covering
+all 594,797 candidate model/hit pairs: disjoint envelope-extension length bins
+and the ten Pfams with the most at-least-20% extensions, with within-Pfam
+denominators. All 16 bar widths and the full-table aggregate counts were
+checked. The figure is descriptive annotation sensitivity, not an evolutionary
+or structural effect test. See `docs/figures/domain_boundary_sensitivity.svg`,
+`metadata/domain_boundary_sensitivity_figure_*` and the domain registry workflow.

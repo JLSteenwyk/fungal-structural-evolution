@@ -1,0 +1,14 @@
+{
+  "status": "visually_reviewed_domain_boundary_sensitivity_figure",
+  "figure_receipt_sha256": "b749063b89e711953144005619467d1e092d2b7ef22fc7f39f2943a6196cb4b8",
+  "reviewed_png_sha256": "02ad086b53d2aaad8c2e3c00853415f3d398e41105b94ca5c240b238a48e499d",
+  "checks": [
+    "All labels, panel titles, axes, denominator annotations and footnotes visible without overlap or clipping",
+    "Six mutually exclusive length bins shown on zero-origin percentage axis",
+    "Top ten Pfams ranked by absolute affected count; within-Pfam denominators and percentages explicit",
+    "Source totals and all 16 bar widths checked by plotting script"
+  ],
+  "scope": "Visual presentation review of the generated PNG and script-checked data mapping. SVG/PDF use the same figure object; no new structural or biological validation.",
+  "output": "results/figures/domain-boundary-sensitivity-20260923-v2",
+  "serialization_note": "Final PNG bytes identical to visually inspected render; SVG trailing whitespace normalized."
+}
