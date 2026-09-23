@@ -1,0 +1,35 @@
+{
+  "status": "complete_descriptive_cluster_census_with_bin_readback_and_visual_review",
+  "clusters": 400127,
+  "models": 1290278,
+  "protein_links": 1319513,
+  "source_hashes": {
+    "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1/cluster_composition.tsv": "7228c4725fb0b890aaf92c3dcb104988f31ee0b740ce8832da52844ebfa1652e",
+    "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1/receipt.json": "1da13b31b6c2f2b3183dc5aa0f6f47736cced30323742c4e1672bcd4264a6d06",
+    "results/structural_clusters/whole-proteome-cluster-composition-readback-20260923-v1/receipt.json": "2aa52c54ca7ee001ce0c878ecfdcbe8a40852d6a9126f0aefcdbc5ddf991fa18",
+    "metadata/whole_proteome_cluster_composition_summary_20260923.json": "adfa7ff93183cbc8eed0a269659cb94202a0be010b067a48816048b325572f70"
+  },
+  "script_sha256": "7400629a606f12ecd3215d23d97e1b980bb1bec9db8fc04fbcbb971cff6723e2",
+  "bars_checked": 12,
+  "artifacts": {
+    "whole_proteome_cluster_census.pdf": "f1c62b341fc98947c1c3ed9b4eccf4505a3895aa377fea16fc051cc1aa9ea6d4",
+    "whole_proteome_cluster_census.svg": "e9145b8ba554d810f94e67d5d362308497f70049324bde6c051fcb93c3b3abaa",
+    "whole_proteome_cluster_census.png": "0532b9f515c81eb7a8bfe6debbdf3ebf4d45473faaeaf1e1760139e2d18ba475",
+    "plot_data.tsv": "b4df812904b6eb657983f5fbddf6b43b23007a9e1db00eafc85afc1c483146a1"
+  },
+  "scope": "Full composition-table census and all bar heights checked; no confidence, homology, orthology or evolutionary inference.",
+  "visual_review": "PNG inspected: both panels and all counts legible; log axes and scope explicit; no clipping.",
+  "independent_bin_readback": "All 12 bins independently reproduced using pandas.cut over the complete 400127-row source table.",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/plot_whole_proteome_cluster_census.py",
+    "--composition",
+    "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1",
+    "--readback",
+    "results/structural_clusters/whole-proteome-cluster-composition-readback-20260923-v1/receipt.json",
+    "--summary",
+    "metadata/whole_proteome_cluster_composition_summary_20260923.json",
+    "--output",
+    "results/structural_clusters/whole-proteome-cluster-census-figure-20260923-v1"
+  ]
+}

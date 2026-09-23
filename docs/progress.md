@@ -4290,3 +4290,18 @@ No rate result is claimed yet. These fixed-topology conditional estimates are
 not rates per year, physical displacement, selection tests or calibrated
 uncertainty. Optimization sensitivity, matched model comparison, exposure
 integration and sequence–structure coupling remain subsequent work.
+
+### September 23: structural candidate cluster census figure complete
+
+Added `plot_whole_proteome_cluster_census.py` and exported SVG/PDF figures at
+`docs/figures/whole_proteome_cluster_census.*`. The two panels show model counts
+and taxon counts per candidate cluster, with disjoint bins and explicit log
+count axes. The full 400,127-row validated composition table was aggregated;
+all 12 bin counts were independently reproduced with pandas.cut and all bar
+heights checked. The rendered PNG was inspected for legibility and clipping.
+Exact plotting data, provenance hashes and command are archived in metadata.
+
+There are 339,722 single-model clusters and 952 clusters spanning at least
+100 taxa. Models may map to multiple protein/taxon records; these panels are
+descriptive and do not establish homology, orthology, novelty or evolutionary
+change. Confidence qualification and phylogenetic integration remain pending.
