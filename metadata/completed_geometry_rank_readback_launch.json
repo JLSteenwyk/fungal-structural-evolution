@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-completed-geometry-rank-readback-20260923",
+  "pid": 865254,
+  "create_time": 1790181324.83,
+  "plan_sha256": "9b92cc859d3f8bb9557caa301530c4cd1ec5f5226aef131e6b903585f0bcb29d",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-completed-geometry-rank-readback-20260923",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "-p",
+    "CPUQuota=100%",
+    "-p",
+    "MemoryMax=8G",
+    "-p",
+    "MemorySwapMax=0",
+    "-p",
+    "Nice=10",
+    "-p",
+    "IOWeight=50",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "--setenv=CUDA_VISIBLE_DEVICES=",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_tree_path_geometry_ranks.py",
+    "--plan",
+    "metadata/completed_geometry_rank_readback_plan.json"
+  ]
+}

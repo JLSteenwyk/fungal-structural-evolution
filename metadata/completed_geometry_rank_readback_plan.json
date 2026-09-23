@@ -1,0 +1,31 @@
+{
+  "benchmark": "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1",
+  "summary": "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1",
+  "output": "results/phylogeny/paired-path-ranks-esmfold-all-completed-readback-20260923-v1",
+  "predecessor": {
+    "pid": 1568681,
+    "create_time": 1790179859.59,
+    "plan": "metadata/completed_geometry_tree_benchmark_plan.json"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 16,
+    "minimum_free_disk_gib": 20,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      120
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Processes one marker group at a time. Full previous 89-marker cohort passed; expanded benchmark has up to 2,527,033 possible pairs and 122 markers."
+  },
+  "pins": {
+    "metadata/completed_geometry_tree_benchmark_plan.json": "a4f3189b76ac2f409de9295d3c14cd9da25f1f390ac70d01b1b8de6c411d7778",
+    "scripts/readback_tree_path_geometry_ranks.py": "23e91e87ff0f9f92d37821ad7f3d5ea086fe69f6628bf70209c3c58e759e368b",
+    "metadata/esmfold_combined_geometry_rank_readback_receipt.json": "d753d821f76f14a8b3df635a3ab31ab96162593328193ef6a535eab85e83a048"
+  }
+}

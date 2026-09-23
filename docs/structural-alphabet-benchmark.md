@@ -332,3 +332,35 @@ process was confirmed live and the log showed verified cache records.
 Subsequent PAE qualification and complete directional-context readback remain
 pending; the paired-input and paired-fit controllers continue waiting for
 those successful completion receipts.
+
+### Rank-summary numerical readback
+
+The separate `scripts/readback_tree_path_geometry_ranks.py` replays the
+accepted pair table one marker at a time, preserving exact float parsing,
+metric-specific missingness and ties. It checks every marker/model/geometry
+row, cohort size, omitted count, estimability status and review label;
+recalculates Spearman correlations through the SciPy interface; and verifies
+all equal-marker medians and negative-count summaries with Python statistics.
+The producer uses explicit rankdata/corrcoef calls. Ranking/numerical libraries
+are shared; no p-values are retained or interpreted.
+
+The earlier combined benchmark passed all 1,068 reported correlations across
+89 markers and all 12 equal-marker summaries, using 686,583 accepted pairs.
+The largest absolute correlation difference was 1.1102230246251565e-16.
+Evidence and reproduction plan are
+`metadata/esmfold_combined_geometry_rank_readback_{plan,receipt}.json`.
+Together with the separate full path check, this validates the earlier
+benchmark's numerical reporting; it does not adjust phylogenetic dependence,
+measure physical branch rates or establish evolutionary coupling.
+
+The same rank readback is queued for the expanded benchmark, waiting for the
+exact source-controller process and successfully bound completion/stage
+receipts. Unit: `fungal-completed-geometry-rank-readback-20260923`.
+Plan/launch: `metadata/completed_geometry_rank_readback_{plan,launch}.json`.
+Output: `results/phylogeny/paired-path-ranks-esmfold-all-completed-readback-20260923-v1`.
+It uses one CPU equivalent, 8 GiB maximum RAM, no swap/GPU, a 16 GiB
+available-memory gate and a 20 GiB free-disk gate. Its allowances are 0.1 GiB
+output and an uncalibrated 1–120 minutes after benchmark completion.
+The waiting process was verified live. Expanded results and visual review
+remain pending; markers without accepted geometry are outside the rank cohort
+and remain represented in the upstream benchmark's coverage accounting.

@@ -1,0 +1,22 @@
+{
+  "status": "passed_all_descriptive_geometry_rank_rows_and_summaries",
+  "plan_sha256": "69b6a3b11e282265b286d0de602219232dd88c7fc6d8809ddc10b1242a1af457",
+  "markers": 89,
+  "accepted_pairs": 686583,
+  "rank_rows": 1068,
+  "estimable_correlations": 1068,
+  "equal_marker_summary_rows": 12,
+  "maximum_absolute_correlation_difference": 1.1102230246251565e-16,
+  "source_hashes": {
+    "metadata/esmfold_combined_geometry_rank_readback_plan.json": "69b6a3b11e282265b286d0de602219232dd88c7fc6d8809ddc10b1242a1af457",
+    "scripts/readback_tree_path_geometry_ranks.py": "23e91e87ff0f9f92d37821ad7f3d5ea086fe69f6628bf70209c3c58e759e368b",
+    "results/phylogeny/paired-path-points-esmfold-combined-v1/receipt.json": "02bffa4e08c3f8f71a421a23e3a28008124b2b6a50d3c96388f771d20f99dacd",
+    "results/phylogeny/paired-path-ranks-esmfold-combined-v1/receipt.json": "5c68fea85d863d534ffcd64d8441a090ca536ef9b20cde89ee73dee4b55dfc7d",
+    "results/phylogeny/paired-path-points-esmfold-combined-v1/path_geometry_points.tsv": "26168a4efecc6318918a5b958c5d11eec7e300a676659aae57824cc14fd3eaa4",
+    "results/phylogeny/paired-path-points-esmfold-combined-v1/geometry_exclusions_with_paths.tsv": "f38296f9d046342165948fa7118cd30364dca076bfaef8c6faea383c2c28e61f",
+    "results/phylogeny/paired-path-points-esmfold-combined-v1/marker_summary.tsv": "cb6d7623ac307865566a871b365ee1a83ddd5c2bbda888b12c31faf6766c0aef",
+    "results/phylogeny/paired-path-ranks-esmfold-combined-v1/marker_rank_associations.tsv": "797ee6530c6f046393745707d8abdea460f1ea210c5fb67af216eaa766582871",
+    "results/phylogeny/paired-path-ranks-esmfold-combined-v1/equal_marker_summary.tsv": "979453d29848118ea2c894e55160e2543d6b174aea65871208789d828c742b0c"
+  },
+  "scope": "Every rank-grid row, missing/constant case, denominator, review label and equal-marker median/count recomputed. SciPy Spearman used instead of producer rankdata/corrcoef call; shared ranking/numerical libraries, no p-values retained or independence/biological inference claimed."
+}

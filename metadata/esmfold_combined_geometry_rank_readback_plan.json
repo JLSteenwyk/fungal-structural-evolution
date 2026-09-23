@@ -1,0 +1,24 @@
+{
+  "benchmark": "results/phylogeny/paired-path-points-esmfold-combined-v1",
+  "summary": "results/phylogeny/paired-path-ranks-esmfold-combined-v1",
+  "output": "results/phylogeny/paired-path-ranks-esmfold-combined-readback-20260923-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "minimum_available_memory_gib": 16,
+    "minimum_free_disk_gib": 20,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      30
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/readback_tree_path_geometry_ranks.py": "23e91e87ff0f9f92d37821ad7f3d5ea086fe69f6628bf70209c3c58e759e368b",
+    "results/phylogeny/paired-path-points-esmfold-combined-v1/receipt.json": "02bffa4e08c3f8f71a421a23e3a28008124b2b6a50d3c96388f771d20f99dacd",
+    "results/phylogeny/paired-path-ranks-esmfold-combined-v1/receipt.json": "5c68fea85d863d534ffcd64d8441a090ca536ef9b20cde89ee73dee4b55dfc7d"
+  }
+}

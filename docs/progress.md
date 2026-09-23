@@ -3854,3 +3854,13 @@ and `metadata/current_afdb_coordinate_audit_manifest_readback.json`.
 The repaired confidence controller automatically advanced to final mapping-bound
 PAE validation. Confidence qualification and refreshed paired inference remain
 pending; this is not a completed evolutionary analysis.
+
+### September 23: full descriptive rank-summary verification
+
+Recomputed all 1,068 rank correlations and 12 equal-marker summaries for the
+completed 89-marker combined ESMFold benchmark. Every reported value and
+cohort denominator passed; maximum absolute correlation difference was
+1.1e-16. Queued the same numerical check after the expanded benchmark under
+`metadata/completed_geometry_rank_readback_plan.json`. This completes another
+numerical reporting check for the earlier cohort, not inference of biological
+coupling or independence among pairs. Expanded readback remains pending.
