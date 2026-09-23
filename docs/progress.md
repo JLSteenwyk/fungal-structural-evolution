@@ -3932,3 +3932,15 @@ no swap or GPU, 0.01 GiB planned output and an uncalibrated 0.1–4 hour runtime
 range. Available resources exceeded 900 GiB RAM and 11 TiB disk at launch.
 See `metadata/mafft_hog_identity_audit_{plan,launch}.json`; output is
 `results/orthology/mafft-hog-identities-20260923-v1`. Completion is pending.
+
+### September 23: both small-family supplements completed
+
+Completed the full native-table scans for both guides, producing separate
+two-/three-gene-family supplements: 124,056 directed pairs for the profile
+guide and 123,144 for MAFFT. Before archiving receipts and terminal controller
+state under `metadata/expanded_small_family_*20260923.json`, checked source
+hashes, supplemental artifact hashes, unique directed-pair identities, family
+counts and native-plus-supplement count totals. This archival check did not
+repeat the native-table scan or independently re-infer orthology. Native files
+and statistics remain unchanged; integrated statistics, larger-family pair
+semantics and biological interpretation remain outstanding.
