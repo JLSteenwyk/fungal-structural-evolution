@@ -3864,3 +3864,17 @@ cohort denominator passed; maximum absolute correlation difference was
 `metadata/completed_geometry_rank_readback_plan.json`. This completes another
 numerical reporting check for the earlier cohort, not inference of biological
 coupling or independence among pairs. Expanded readback remains pending.
+
+### September 23: refreshed AlphaFold PAE validation completed
+
+All 30,588 version-matched PAE matrices passed mapping-bound validation, with
+zero failures. The completed retrieval stage checked compressed and expanded
+hashes, matrix dimensions, finite nonnegative values and declared maxima.
+Before archiving its receipt, checked the manifest hash, exact model/version
+set, sequence hashes, lengths, URLs, byte totals and mapping-receipt binding
+against the current mapping. Completion evidence is
+`metadata/current_afdb_mapping_bound_pae_completed_receipt.json`.
+The existing controller advanced automatically to confidence qualification;
+its qualifier child was confirmed running. Qualification and the subsequent
+full directional-context readback are still pending. This completes PAE input
+validation, not the downstream confidence-filtered evolutionary analysis.
