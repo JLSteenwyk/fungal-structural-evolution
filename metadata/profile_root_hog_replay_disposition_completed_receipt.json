@@ -1,0 +1,15 @@
+{
+  "status": "complete_full_replay_omission_disposition_readback",
+  "families": 1712,
+  "genes": 5942,
+  "root_hog_memberships_replayed": 24116,
+  "parent_state_dispositions": {
+    "root_duplication_blocked_parent_with_leaf_without_group": 5942
+  },
+  "replay_receipt_sha256": "94ed7c76cb525eda63999e8165d295b90a365839fc5ff9c7df0c05c49b378f80",
+  "plan_sha256": "92ad544dc1ce8b4365e960bb2068f4a6ea4c9ff132ff0c0aa244ff48c046c924",
+  "artifacts": {
+    "omission_dispositions.tsv": "704fe547d39fa73d9d50bb6588d108039c59c6e210c5d20336947967697607cd"
+  },
+  "scope": "Every unflagged missing gene accounted for against source IDs and independent tree-position trace; completed native replay reproduced root memberships and misplaced flags. Parent states identify the native writer rule within these resolved trees. Does not independently establish tree rooting, duplication timing, ancestral homology, biological loss or correctness under another guide."
+}

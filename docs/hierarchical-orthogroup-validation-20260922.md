@@ -209,15 +209,17 @@ This is a replay from resolved trees, not independent initial rooting or tree
 resolution. Biological duplication/loss interpretation and alternative-guide
 sensitivity remain separate requirements, even if all memberships match.
 
-## Final omission accounting queued
+## Final omission accounting completed
 
-The full native replay remains active. At the 1,668-family checkpoint all
-families matched, and all 5,432 target genes processed so far had immediate
-parents mapped to `N0` with an `N0` duplication at or below that parent. This
-is a partial observation, not a result for the remaining families.
+The full native replay and final accounting both completed with exit status
+zero on September 23. All 1,712 affected families matched the native root
+memberships, misplaced-gene flags and omissions. All 5,942 unflagged omitted
+genes had immediate parents mapped to `N0` with an `N0` duplication at or below
+that parent. The native writer's blocked-parent and skipped-leaf behavior
+therefore accounts for every unflagged omission in this affected-family set.
 
-A final accounting controller now waits for that exact native-replay process.
-It requires a passing full receipt and pinned output hash, checks the complete
+A final accounting controller waited for that exact native-replay process.
+It required a passing full receipt and pinned output hash, checked the complete
 source family/gene grid and flagged-gene counts, and matches every target's
 parent label to the independent resolved-tree placement trace. It also requires
 the same number of affected root HOG memberships as the earlier full placement
@@ -228,7 +230,13 @@ Script: `scripts/summarize_root_hog_replay.py`.
 Plan: `metadata/profile_root_hog_replay_disposition_plan.json`.
 Output: `results/orthology/profile-root-hog-replay-dispositions-20260923-v1`.
 Unit: `fungal-root-hog-replay-dispositions-20260923.service`.
-The controller is confirmed live and recorded in metadata. Limits are one CPU,
+Completed receipts are archived as
+`metadata/profile_root_hog_native_replay_completed_receipt.json` and
+`metadata/profile_root_hog_replay_disposition_completed_receipt.json`.
+All source/implementation pins, output hashes, 5,942 unique disposition rows
+and category totals were checked before archiving. The accounting agrees with
+all 24,116 affected root HOG memberships from the earlier placement trace.
+The controller's limits were one CPU,
 2 GiB memory and no swap; planning allows 0.01 GiB output and 1–5 minutes after
 replay completion. Full-CLI fixtures passed exact identity/count/parent-state
 accounting and rejected a conflicting independently recorded parent label.

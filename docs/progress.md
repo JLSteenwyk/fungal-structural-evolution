@@ -3878,3 +3878,17 @@ The existing controller advanced automatically to confidence qualification;
 its qualifier child was confirmed running. Qualification and the subsequent
 full directional-context readback are still pending. This completes PAE input
 validation, not the downstream confidence-filtered evolutionary analysis.
+
+### September 23: full root-orthogroup omission replay completed
+
+All 1,712 affected profile-guide families passed native classification replay.
+The successor accounting stage also completed: every one of the 5,942
+unflagged omitted genes is explained by the native writer's root-duplication
+blocked-parent/skipped-leaf behavior on these resolved trees. All 24,116
+affected root HOG memberships agree with the prior tree-position trace.
+Both services exited successfully; source pins, output hashes and disposition
+row identities/counts were checked before archiving the two completed receipts
+under `metadata/profile_root_hog_*completed_receipt.json`. This resolves the
+algorithmic omission accounting, not biological loss, rooting or duplication
+timing. The MAFFT-guide reconciliation is still writing its outputs, and the
+cross-guide interpretation remains pending.
