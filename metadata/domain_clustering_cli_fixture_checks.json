@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_domain_clustering_cli_and_rejection_gates",
+  "native_fixture_intervals": 2,
+  "native_fixture_clusters": 2,
+  "rejected_before_native_execution": [
+    "incomplete_status",
+    "wrong_plan",
+    "changed_artifact"
+  ],
+  "controller_sha256": "873cb24880309409f87fc1d4da4e4d43ceeb69cc97a99ed9f2795667b9767f4c",
+  "script_sha256": "da56a559438cd1e44901ea10742d34029b5eb337710542214ba652c5f3065c97",
+  "foldseek_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+  "scope": "Real native createdb, cluster and createtsv on two source-checked exported domains; full controller CLI including domains prefix, partition and exclusion-count propagation. Fixture-only database completion receipt. Rejects incomplete status, wrong plan binding and changed artifact before clustering. Does not validate production completion, every alignment threshold, homology or evolutionary effects."
+}

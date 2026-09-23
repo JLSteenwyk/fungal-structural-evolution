@@ -354,3 +354,24 @@ after database completion. Temporary clustering files are retained.
 
 Clustering is queued, not completed. Candidate structural groups do not by
 themselves establish homology, orthology, function or evolutionary events.
+
+### Native controller integration fixture
+
+`scripts/check_domain_clustering_controller.py` now exercises the entire
+queued domain controller CLI on two actual exported domains from the first
+source-atom-checked archive. Native `createdb`, `cluster` and `createtsv` passed,
+including the `domains` database prefix, full partition checks and propagation
+of explicit exclusion/backbone counters. The two fixture domains formed two
+clusters; this is software validation, not a biological clustering result.
+The fixture uses a synthetic database-completion receipt and does not certify
+production completion. It rejects incomplete status, a wrong plan binding and
+a changed database artifact before any native clustering starts.
+
+The initial fixture-only 1G split-memory limit was below the native prefilter's
+minimum and failed explicitly. Repeating with the unchanged production 64G
+setting passed. Production remains queued and its pinned scripts and plans
+were not modified. The fixture uses one native thread, temporary local files,
+no GPUs and no paid resources. Its receipt is archived in
+`metadata/domain_clustering_cli_fixture_checks.json`; reproduce with
+`python scripts/check_domain_clustering_controller.py`. Native alignment
+thresholds and biological interpretation still require separate validation.
