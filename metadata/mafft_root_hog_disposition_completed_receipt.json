@@ -1,0 +1,24 @@
+{
+  "status": "complete_root_hog_gene_disposition",
+  "source_genes": 5815847,
+  "source_families": 658522,
+  "singleton_genes": 500481,
+  "nonsingleton_genes": 5315366,
+  "root_hogs": 183997,
+  "root_assigned_genes": 5275405,
+  "missing_nonsingleton_genes": 39961,
+  "native_flagged_genes": 33989,
+  "native_flag_files": 519,
+  "missing_exactly_matches_native_flagged": false,
+  "unexplained_missing": 5972,
+  "native_flagged_but_not_missing": 0,
+  "flagged_present_in_root": 0,
+  "affected_families": 5625,
+  "affected_taxa": 521,
+  "plan_sha256": "05d5d29608439e9a1611df0242bc59fb09371914a607e2c55593065239a4de1e",
+  "artifacts": {
+    "missing_genes.tsv": "3a52012e07a8f2487862d07a673fceebb1bdc35e04b49e68ad445724e3b94ecc",
+    "taxon_disposition.tsv": "f440f591ff2a82c4c0a0305a3bace1d097d2a7d9fe9fa3d8537c4e9efb610a30"
+  },
+  "scope": "Exact source/root/native-flag disposition. Native misplaced classification is an algorithmic output, not independently established contamination, horizontal transfer or biological error. No validated ancestral membership, duplication event or loss inference."
+}

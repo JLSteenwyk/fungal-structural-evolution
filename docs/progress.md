@@ -3957,3 +3957,17 @@ before archiving `metadata/mafft_hog_identity_completed_readback.json` and
 identity/clade checks. Root omissions, ancestral memberships, gene-tree parent
 clades, nested orthology and duplication events still require their separate
 checks; the profile-guide omission result must not be transferred to MAFFT.
+
+### September 23: MAFFT root-gene accounting completed
+
+Ran the existing full source/root/native-flag comparison under a new plan
+binding 525 files, with one CPU, 32 GiB RAM, no swap/GPU, 0.1 GiB output and
+an uncalibrated 1–30 minute planning range. Of 5,815,847 source genes, 500,481
+are singletons and 5,275,405 occur in 183,997 root HOGs. The remaining 39,961
+nonsingleton genes comprise 33,989 native-flagged genes and 5,972 unflagged
+omissions. No native-flagged gene occurs in the root assignments.
+Source pins, output hashes, unique omission identities and count totals were
+verified before archiving `metadata/mafft_root_hog_disposition_completed_receipt.json`.
+Plan and launch evidence are `metadata/mafft_root_hog_disposition_{plan,launch}.json`.
+The 5,972 unflagged omissions need MAFFT-specific tree tracing and native
+classification replay; their mechanism and biological meaning remain open.
