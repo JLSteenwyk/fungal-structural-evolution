@@ -3707,3 +3707,13 @@ different-cluster or explicitly unclustered dispositions. All six outcome
 fixtures and malformed-identity rejections passed. This is a pending test of
 boundary sensitivity within one partition, not a completed biological result.
 See the [domain workflow](whole-proteome-structure-domain-registry-20260923.md).
+
+## Complete ESMFold functional-site join launched — 23 September 2026
+
+Started updating the full conserved/nonconserved/gapped functional-site
+correspondence universe to all 25,322 completed local predictions and the
+122-marker paired inputs. Exact cohort bindings to the independent paired-array
+readback are required. Existing projection aggregation tests passed for the
+new script; production output and full readback remain pending. This advances
+functional-site coverage without launching further protein prediction.
+See the [functional-site workflow](functional-site-workflow.md).

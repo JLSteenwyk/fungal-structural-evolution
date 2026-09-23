@@ -134,3 +134,43 @@ OPENBLAS_NUM_THREADS=1 python scripts/annotate_site_evolution_functions.py --fra
 
 Full tables remain outside Git; receipt, readback and marker coverage are in
 `metadata/esmfold_site_evolution_functions_*`.
+
+## Complete ESMFold-cohort functional join running — 23 September 2026
+
+The earlier local-source functional join remains an acquisition checkpoint.
+A new full-cohort join now uses all 25,322 completed ESMFold models and the
+122-marker paired input set. It preserves the complete original functional
+correspondence universe, including nonconserved and gapped sites. It does not
+pool prediction sources or reinterpret conserved patterns as proven activity.
+
+`scripts/link_completed_esmfold_functional_sites.py` preserves the existing
+join's coordinate, sequence, native-validity, confidence and paired-character
+checks while requiring a completed qualified-encoding union and the full
+paired-array readback. Every requested mapping/encoding/paired receipt must
+be covered by that readback and retain its exact hash. The joint pLDDT/PAE
+qualification stage is required. The original producer remains unchanged for
+reproducibility of the older checkpoint.
+
+The three existing tests for retained nonconserved/gapped rows, reference
+pattern deduplication and conflicting projections passed against the new
+script's aggregation function. Full production readback remains pending.
+The live unit is `fungal-completed-esmfold-functional-sites-20260923.service`;
+its launch record and prelaunch source/resource plan are in
+`metadata/completed_esmfold_functional_site_join_{launch,plan}.json`.
+One CPU and 8 GiB RAM are allowed, without swap, GPUs or new charges. Output
+planning is 1 GiB and runtime planning is an uncalibrated 0.02–1 hour.
+
+```bash
+python scripts/link_completed_esmfold_functional_sites.py \
+  --functional-sites results/functional_sites/pfam-marker-v1 \
+  --snapshot results/structural_markers/esmfold-all-completed-20260922-v1 \
+  --encodings results/structural_alphabet/audited-esmfold-all-completed-20260922-v1 \
+  --paired results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1 \
+  --paired-readback metadata/esmfold_all_completed_paired_inputs_completed_readback.json \
+  --source-label ESMFold \
+  --output results/functional_sites/esmfold-all-completed-linked-20260923-v1
+```
+
+This refresh is running, not yet a completed functional result. Branch/site
+localization, matched background tests, ancestral uncertainty and experimental
+interpretation remain outstanding.

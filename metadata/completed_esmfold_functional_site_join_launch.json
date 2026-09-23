@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-completed-esmfold-functional-sites-20260923.service",
+  "pid": 2179993,
+  "create_time": 1790177037.15,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/link_completed_esmfold_functional_sites.py",
+    "--functional-sites",
+    "results/functional_sites/pfam-marker-v1",
+    "--snapshot",
+    "results/structural_markers/esmfold-all-completed-20260922-v1",
+    "--encodings",
+    "results/structural_alphabet/audited-esmfold-all-completed-20260922-v1",
+    "--paired",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+    "--paired-readback",
+    "metadata/esmfold_all_completed_paired_inputs_completed_readback.json",
+    "--source-label",
+    "ESMFold",
+    "--output",
+    "results/functional_sites/esmfold-all-completed-linked-20260923-v1"
+  ],
+  "observed_at": "2026-09-23T15:24:13.201108+00:00",
+  "systemd": {
+    "MainPID": "2179993",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  }
+}

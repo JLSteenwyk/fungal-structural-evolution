@@ -1,0 +1,25 @@
+{
+  "status": "prelaunch_completed_esmfold_functional_site_join",
+  "scope": "All original functional correspondence rows, including nonconserved and unmapped sites, joined to the full completed ESMFold union and 122-marker paired inputs. No additional prediction or biological inference.",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.02,
+      1
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/link_completed_esmfold_functional_sites.py": "17285a4cb5d90052f252fb465281af8b5c0699fe6d9808408c3159ac3f089d2f",
+    "metadata/esmfold_all_completed_paired_inputs_completed_readback.json": "ab4be9d7804864b74f7aa4e1468be198cb7566bd6c911e8a608b59cb263daecf",
+    "results/functional_sites/pfam-marker-v1/receipt.json": "36912aa788496fe3b328884cbaa634df35e87876b1fe84b4b9ad89de0d10ba9f",
+    "results/structural_markers/esmfold-all-completed-20260922-v1/receipt.json": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+    "results/structural_alphabet/audited-esmfold-all-completed-20260922-v1/receipt.json": "75b948659abe23bb6975be780e9a591eede23a3f28c3aaf76ebcc932e983ffd4",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/receipt.json": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180"
+  }
+}
