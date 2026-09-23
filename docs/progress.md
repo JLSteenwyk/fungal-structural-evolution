@@ -3985,3 +3985,18 @@ Resources are one CPU, 16 GiB RAM, no swap/GPU, 0.1 GiB output and an
 uncalibrated 1–30 minute runtime range. Output is
 `results/orthology/mafft-root-hog-omission-trace-20260923-v1`; completion remains
 pending, with CPU progress confirmed after launch.
+
+### September 23: MAFFT omission tree tracing completed
+
+All 5,972 unflagged omitted genes across 1,718 families lie outside emitted
+root HOG parent clades. The trace checked 24,220 affected root parent
+memberships against tree descendants minus native flags. Every target has an
+ancestor joining emitted HOG descendants. Verified the pinned inputs, output
+hash and full target-gene grid before archiving
+`metadata/mafft_root_hog_omission_trace_completed_receipt.json`.
+Native classification replay is still needed to test the writer mechanism;
+these placements alone do not establish biological loss or duplication timing.
+
+The refreshed AlphaFold confidence producer also finished and automatically
+advanced to the full directional-context readback (live worker confirmed).
+Confidence-filtered downstream inference remains gated on that validation.
