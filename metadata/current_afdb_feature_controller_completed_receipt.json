@@ -1,0 +1,32 @@
+{
+  "status": "complete_refreshed_afdb_native_coordinate_features",
+  "models": 30588,
+  "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+  "residue_readback_receipt_sha256": "1dbe1c3320b748e027595e265a67a2e1175a6cbc3bfd6c29c1b675ee47cda388",
+  "plan_sha256": "ad71bd2b0218534e1abb8680287c1eb32483666d0c914a88f7550e89997f1e89",
+  "stages": [
+    {
+      "name": "native_extraction",
+      "result": "results/structural_alphabet/native-gdm-current-20260923-v1/config.json",
+      "sha256": "529a76df4babf4be505e3b962f32748732ef7eb42a862bc79a65ebadb39613d2"
+    },
+    {
+      "name": "native_export_readback",
+      "result": "results/structural_alphabet/current-afdb-feature-controller-20260923-v1/native_export_readback.json",
+      "sha256": "95853eb34cabc99cbdf86832019c58e8c3c81726aef0f3ddc68a5b2495f0d3c8"
+    },
+    {
+      "name": "coordinate_audit",
+      "result": "results/structural_alphabet/coordinate-gdm-current-20260923-v1/receipt.json",
+      "sha256": "7267df74443765748367f4e8e7e3e396a2156d7157a7ac5cce4ff4ddc0846641"
+    }
+  ],
+  "totals": {
+    "length": 15949929,
+    "valid_states": 15888753,
+    "invalid_states": 61176,
+    "valid_focal_plddt70": 11808454,
+    "valid_feature_plddt70": 10841286
+  },
+  "scope": "Full refreshed AlphaFold native feature extraction, export readback and coordinate reconstruction. PAE binding/qualification, biological accuracy and evolutionary analyses remain separate."
+}

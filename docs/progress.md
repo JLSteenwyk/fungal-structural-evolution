@@ -3840,3 +3840,17 @@ readback remains pending, and no independent phylogenetic or biological
 validation is implied. Evidence is
 `metadata/esmfold_combined_full_path_geometry_readback.json` and
 `metadata/completed_tree_path_geometry_readback_{plan,launch}.json`.
+
+### September 23: refreshed AlphaFold coordinate audit complete
+
+The feature controller exited successfully for all 30,588 models and
+15,949,929 full-model residues. Native feature reconstruction retained
+15,888,753 valid states; 61,176 terminal states remain explicitly invalid.
+All-six-residue pLDDT>=70 coverage is 10,841,286 states before PAE qualification.
+Verified the controller plan and all three stage receipts; a separate full
+manifest check rehashed every encoding and reproduced every summary total.
+Archived completion evidence under `metadata/current_afdb_*completed_receipt.json`
+and `metadata/current_afdb_coordinate_audit_manifest_readback.json`.
+The repaired confidence controller automatically advanced to final mapping-bound
+PAE validation. Confidence qualification and refreshed paired inference remain
+pending; this is not a completed evolutionary analysis.

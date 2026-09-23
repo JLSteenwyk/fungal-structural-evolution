@@ -296,3 +296,39 @@ Its uncalibrated runtime allowance is 0.1–12 hours after its predecessor ends.
 The live waiting process was checked after launch. Rank-summary numerical
 readback, visual figure review, geometry recomputation beyond the existing
 sample and uncertainty-aware biological interpretation remain separate work.
+
+## Refreshed 30,588-model AlphaFold coordinate audit completed
+
+The recovered feature controller exited successfully after native extraction,
+full native-export readback and coordinate-feature reconstruction for all
+30,588 refreshed AlphaFold models. Across 15,949,929 full-model residues,
+15,888,753 have valid native states and 61,176 are explicitly invalid.
+There are 11,808,454 valid focal states with pLDDT at least 70 and 10,841,286
+whose six-residue feature contexts all meet that threshold. These are
+full-model counts, not counts of usable marker alignment cells or independent
+observations. Joint PAE qualification is not yet included.
+
+The auditor reconstructs partner selection and ten geometric descriptors from
+backbone coordinates and compares them to the native exports. Its tolerance
+accounts for four-significant-digit native output (relative 0.00052,
+absolute 1e-10). This checks coordinate features and confidence contexts; it
+does not independently retrain or validate the neural structural alphabet,
+calibrate prediction accuracy or establish evolutionary change.
+
+After completion, `scripts/readback_coordinate_audit_manifest.py` checked the
+entire model identity/sequence/length grid against the final mapping, rehashed
+every saved per-model encoding and independently summed all summary counts.
+It passed for all 30,588 models. This final manifest check does not repeat the
+numerical coordinate reconstruction. Completed evidence is archived in:
+
+- `metadata/current_afdb_feature_controller_completed_receipt.json`
+- `metadata/current_afdb_coordinate_audit_completed_receipt.json`
+- `metadata/current_afdb_coordinate_audit_manifest_readback.json`
+
+The replacement confidence controller automatically advanced to the full
+mapping-bound PAE stage in
+`results/structural_pae/gdm-current-mapping-bound-20260923-v2`. Its child
+process was confirmed live and the log showed verified cache records.
+Subsequent PAE qualification and complete directional-context readback remain
+pending; the paired-input and paired-fit controllers continue waiting for
+those successful completion receipts.

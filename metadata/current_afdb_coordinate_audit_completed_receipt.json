@@ -1,0 +1,33 @@
+{
+  "status": "complete_native_3di_coordinate_audit",
+  "models": 30588,
+  "totals": {
+    "length": 15949929,
+    "valid_states": 15888753,
+    "invalid_states": 61176,
+    "valid_focal_plddt70": 11808454,
+    "valid_feature_plddt70": 10841286
+  },
+  "native_config_sha256": "529a76df4babf4be505e3b962f32748732ef7eb42a862bc79a65ebadb39613d2",
+  "native_path": "results/structural_alphabet/native-gdm-current-20260923-v1",
+  "native_artifacts": {
+    "amino_acids.faa": "ce95990a3fa998a1abc29e0ccbe9ba067ac37bbbaf9a87dfe1c651682baf49fc",
+    "states_3di.faa": "13e20e58a312c6667005b14f8520aebbedd8212b41d4d725dd6fc477f0d164fb",
+    "descriptors.tsv": "fbb46c47a0f896617f9d1c86d14a811a6e4bf57f1ef84edd4eb5e4323c817a44",
+    "model_provenance.json": "75c0b42e91ca13d95596b6a9a9d91acb8cb20051092d8c628e93319659bb4ae8"
+  },
+  "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+  "pae_receipt_sha256": null,
+  "script_sha256": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b",
+  "numpy_version": "2.2.6",
+  "feature_verification_tolerance": {
+    "rtol": 0.00052,
+    "atol": 1e-10,
+    "reason": "Native descriptor output has four significant digits"
+  },
+  "confidence_stage": "coordinate_and_plddt_only_pae_pending",
+  "interpretation": "Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.",
+  "artifacts": {
+    "model_summary.tsv": "b4d7be7f3bcc3080f4fd1c9a6986a1708507150abb3c4fe2219c9f96a928b497"
+  }
+}
