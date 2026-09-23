@@ -3794,3 +3794,16 @@ tracked. See `docs/remaining-marker-model-gaps-20260922.md` and
 `metadata/current_marker_gap_cache_refresh_{plan,receipt,readback}.json`.
 This is a cache-coverage result, not proof of public-database absence. Existing
 retrieval and CPU analyses continue; no GPU prediction was launched.
+
+### September 23: full-cohort direct geometry benchmark launched
+
+Started the full ESMFold paired-site geometry pipeline for all 122 ready markers
+and all 2,527,033 possible taxon pairs. Existing coverage and confidence rules
+are preserved; accepted and excluded pairs will both be retained. The pipeline
+first verifies the 25,322-model PAE union, then computes direct geometry and
+runs complete pair-grid/character checks plus sampled independent numerical
+geometry checks. All inputs, scripts and full-input readback are pinned.
+The live PAE-union worker was verified after launch. See
+`metadata/completed_esmfold_geometry_{plan,launch}.json` and
+`docs/structural-alphabet-benchmark.md`. Geometry and its comparison to tree
+paths are not yet complete. No GPU prediction was resumed.

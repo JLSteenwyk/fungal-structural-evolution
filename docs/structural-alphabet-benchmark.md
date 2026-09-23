@@ -172,3 +172,58 @@ model summary remain under `results/structural_alphabet/audited-gdm-expanded-v1`
 Expanded paired alignment preparation has started. Geometry calibration,
 lineage-qualified coverage, structural model adequacy and evolutionary
 inference for this expanded snapshot remain pending.
+
+## Full completed ESMFold cohort: direct geometry launched September 23
+
+The expanded paired input has 122 inference-ready markers and 2,527,033
+possible unordered taxon pairs, with up to 1,044 retained alignment columns.
+These pairs are not all guaranteed to pass the direct-geometry coverage gate.
+The same existing rule is retained: at least 50 jointly observed sites and
+shared coverage of at least half of each taxon's observations. Excluded pairs
+remain in the output rather than disappearing from the benchmark denominator.
+
+`fungal-completed-esmfold-geometry-20260923` runs the pinned plan
+`metadata/completed_esmfold_geometry_plan.json` through
+`scripts/advance_completed_esmfold_geometry.py`. Its three stages are:
+
+1. Reuse `merge_local_pae_manifests.py` to verify and combine unchanged PAE
+   exports for all 25,322 models from the original, follow-on, ecology, long
+   and extended cohorts. Model identities, prediction configurations,
+   original NPZ hashes and exported matrix hashes remain bound to the audited
+   mapping and encoding union.
+2. Reuse `prepare_paired_site_geometry.py` for the full pair grid on exactly
+   the shared qualified alignment sites. Outputs include C-alpha superposition
+   RMSD, intraprotein distance changes and directional-PAE-filtered local
+   distance changes, alongside AA/3Di differences and coverage exclusions.
+3. Reuse `audit_paired_site_geometry.py` to check every pair identity,
+   observation mask, eligibility decision, dimension and AA/3Di difference.
+   It independently recomputes geometry using SciPy on one deterministically
+   selected accepted pair per marker. This is explicitly a sampled numerical
+   geometry check, not a full numerical recomputation of 2.5 million pairs.
+
+Before launch, all paired-input artifacts and the full independent input
+readback were verified, source cohort PAE paths were checked against the full
+mapping, and every source receipt/artifact used by the controller was pinned.
+The new job's live identity and PAE-union child were checked after launch.
+This is execution in progress, not a completed benchmark.
+
+The job uses one CPU equivalent, 64 GiB maximum RAM, no swap and no GPUs.
+The resource plan requires 96 GiB available RAM and 100 GiB free disk, allows
+20 GiB output, and gives an uncalibrated 8–336-hour runtime range. The sum of
+pair count times squared retained alignment length is 12.81 times the older
+89-marker cohort; actual runtime also depends on shared-site masks, PAE input
+sizes and parsing. This range is a planning allowance, not a completion ETA.
+At launch, 866 GiB RAM and 11,803 GiB disk were available; no paid resources
+were added.
+
+The controller output is
+`results/structural_comparisons/all-completed-geometry-controller-20260923-v1`;
+PAE union, geometry and audit outputs are recorded in the plan. The launch
+record is `metadata/completed_esmfold_geometry_launch.json`. Existing jobs,
+source scripts and older results are unchanged.
+
+Joining geometry to fitted tree paths remains a subsequent stage once both
+geometry and all-cohort fits pass their checks. Prediction circularity,
+phylogenetic dependence, direct-distance nonadditivity, branch uncertainty and
+biological interpretation remain separate requirements. Pair counts are not
+counts of independent evolutionary observations.
