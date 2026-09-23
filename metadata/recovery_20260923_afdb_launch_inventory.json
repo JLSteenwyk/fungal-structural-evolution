@@ -1,0 +1,221 @@
+{
+  "status": "live_afdb_recovery_chain_verified",
+  "boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320",
+  "jobs": [
+    {
+      "unit": "fungal-foldseek-db-recovery-20260923.service",
+      "pid": 136070,
+      "create_time": 1790171089.38,
+      "start_ticks": "149138",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/build_whole_proteome_foldseek_database.py",
+        "--plan",
+        "metadata/recovery_20260923_foldseek_database_plan.json"
+      ],
+      "plan_sha256": "1078d6f38e1b06817a2d6fc4b4bd97ae6d6bced33bca79fb921f2c7a4d4846e3",
+      "properties": {
+        "MainPID": "136070",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 4,
+      "memory_gib": 64,
+      "rechecked_properties": {
+        "MainPID": "136070",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "disk-sleep",
+      "children": []
+    },
+    {
+      "unit": "fungal-afdb-residue-recovery-20260923.service",
+      "pid": 136073,
+      "create_time": 1790171089.43,
+      "start_ticks": "149143",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_refreshed_afdb_residues.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_residue_plan.json"
+      ],
+      "plan_sha256": "2273c8e655188a5a10d4ac4d2d325fd3ef0b779a137de887217889264ad36e10",
+      "properties": {
+        "MainPID": "136073",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 1,
+      "memory_gib": 16,
+      "rechecked_properties": {
+        "MainPID": "136073",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "running",
+      "children": []
+    },
+    {
+      "unit": "fungal-afdb-pae-recovery-20260923.service",
+      "pid": 136076,
+      "create_time": 1790171089.45,
+      "start_ticks": "149145",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_refreshed_afdb_inputs.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_prefetch_plan.json",
+        "--stage",
+        "pae"
+      ],
+      "plan_sha256": "23fbcf668d4935966870a87079d01a1bcb6535c71411f8466e312e797369eab0",
+      "properties": {
+        "MainPID": "136076",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 2,
+      "memory_gib": 8,
+      "rechecked_properties": {
+        "MainPID": "136076",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "sleeping",
+      "children": [
+        {
+          "pid": 137927,
+          "command": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/retrieve_marker_pae.py",
+            "--snapshot",
+            "results/structural_markers/gdm-current-catalog-20260922-v1",
+            "--output",
+            "results/structural_pae/gdm-current-prefetch-20260923-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "fungal-afdb-features-recovery-20260923.service",
+      "pid": 136142,
+      "create_time": 1790171089.47,
+      "start_ticks": "149147",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_refreshed_afdb_features.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_feature_plan.json"
+      ],
+      "plan_sha256": "ad71bd2b0218534e1abb8680287c1eb32483666d0c914a88f7550e89997f1e89",
+      "properties": {
+        "MainPID": "136142",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 4,
+      "memory_gib": 16,
+      "rechecked_properties": {
+        "MainPID": "136142",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "sleeping",
+      "children": []
+    },
+    {
+      "unit": "fungal-afdb-confidence-recovery-20260923.service",
+      "pid": 136204,
+      "create_time": 1790171089.49,
+      "start_ticks": "149149",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_refreshed_afdb_confidence.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_confidence_plan.json"
+      ],
+      "plan_sha256": "111ba69b9d15ea19e5bb80776bb8e0cf76172d6dc610e8855662f64d8d525dd0",
+      "properties": {
+        "MainPID": "136204",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 2,
+      "memory_gib": 16,
+      "rechecked_properties": {
+        "MainPID": "136204",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "sleeping",
+      "children": []
+    },
+    {
+      "unit": "fungal-afdb-paired-inputs-recovery-20260923.service",
+      "pid": 136211,
+      "create_time": 1790171089.52,
+      "start_ticks": "149152",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_refreshed_afdb_paired_inputs.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_paired_inputs_plan.json"
+      ],
+      "plan_sha256": "09500fcf6231a50f84364a69f6d651386711cc9aa95b3d5c2107e4b97173a945",
+      "properties": {
+        "MainPID": "136211",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 1,
+      "memory_gib": 32,
+      "rechecked_properties": {
+        "MainPID": "136211",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "sleeping",
+      "children": []
+    },
+    {
+      "unit": "fungal-afdb-paired-fits-recovery-20260923.service",
+      "pid": 136214,
+      "create_time": 1790171089.54,
+      "start_ticks": "149154",
+      "observed_status": "running",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_refreshed_afdb_paired_fits.py",
+        "--plan",
+        "metadata/recovery_20260923_afdb_paired_fits_plan.json"
+      ],
+      "plan_sha256": "14d0f8ca9ec7bf533fd3e457dad02cd627075d7b970ffa466b14a38f38d4f6c4",
+      "properties": {
+        "MainPID": "136214",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "cpu_equivalents": 4,
+      "memory_gib": 16,
+      "rechecked_properties": {
+        "MainPID": "136214",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      },
+      "rechecked_process_status": "sleeping",
+      "children": []
+    }
+  ],
+  "gpu": false,
+  "pending": [
+    "MAFFT reconciliation recovery and dependents",
+    "background full AFDB retrieval"
+  ]
+}

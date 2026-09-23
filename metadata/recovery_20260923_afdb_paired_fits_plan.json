@@ -1,0 +1,55 @@
+{
+  "control": "results/phylogeny/current-afdb-paired-fit-controller-20260923-v1",
+  "fits": "results/phylogeny/paired-marker-fits-gdm-current-20260923-v1",
+  "audit": "results/phylogeny/paired-marker-fit-audit-gdm-current-20260923-v1",
+  "inputs": "results/phylogeny/paired-inputs-gdm-current-20260923-v1",
+  "input_readback": "results/phylogeny/paired-inputs-gdm-current-20260923-v1-readback.json",
+  "models": "data/structural_models/garg-hochberg-v3",
+  "iqtree": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+  "predecessor_pid": 136211,
+  "predecessor_create_time": 1790171089.52,
+  "predecessor_receipt": "results/phylogeny/current-afdb-paired-input-controller-20260923-v1/receipt.json",
+  "predecessor_plan": "metadata/recovery_20260923_afdb_paired_inputs_plan.json",
+  "resources": {
+    "cpu_equivalents": 4,
+    "workers": 4,
+    "threads_per_fit": 1,
+    "memory_per_fit_gib": 2,
+    "memory_max_gib": 16,
+    "minimum_available_memory_gib": 32,
+    "swap_gib": 0,
+    "maximum_markers": 125,
+    "maximum_fits": 500,
+    "output_planning_gib": 50,
+    "minimum_free_disk_gib": 100,
+    "runtime_planning_hours": [
+      1,
+      336
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "support": {
+    "sh_alrt_replicates": 1000,
+    "ultrafast_bootstrap_replicates": 1000,
+    "bootstrap_nni": true
+  },
+  "basis": "Unchanged validated fitting producer, IQ-TREE executable and structural models used by earlier AlphaFold and ESMFold runs. Four fits per eligible marker, up to 125 markers and 500 fits. Exact dimensions recorded after full refreshed-input readback. Runtime is an uncalibrated planning range, not an ETA.",
+  "pins": {
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "data/structural_models/garg-hochberg-v3/Q.3Di.AF": "5e37984b3866f3798307bbcd8c39a2e8c188fdeda7f0499aa74c2b81a29f37b9",
+    "data/structural_models/garg-hochberg-v3/Q.3Di.LLM": "8cc3f62c647512b31394345986aae17d5e55fbc0012d824b2bb28d9789471b0e",
+    "data/structural_models/garg-hochberg-v3/deposit-v3.0.json": "f72eacc236e7e3b3e2ad304b9483f885329505568910ab4c0f203f07c8514814",
+    "scripts/advance_refreshed_afdb_paired_fits.py": "5f62fa0065196015a812efb68cdd9d998bb4e6cda7fde69e2161a40cc81a6918",
+    "metadata/recovery_20260923_afdb_paired_inputs_plan.json": "09500fcf6231a50f84364a69f6d651386711cc9aa95b3d5c2107e4b97173a945"
+  },
+  "recovery_boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320"
+}

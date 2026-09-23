@@ -58,3 +58,44 @@ bindings. Their old PIDs must not be used as live dependencies. The completed
 catalogs, verified ESMFold inputs, first-guide native output and archived
 receipts are retained. The unrelated IQ-TREE process already running after
 boot was left untouched. GPU structure prediction remains paused.
+
+## Structural atlas and AlphaFold chain restored
+
+A second recovery pass has verified seven live services. The original completed
+catalog and mapping are reused with their existing checksums. Every interrupted
+output directory is preserved; replacement runs use September 23 output paths.
+No checkpoint-resume capability is assumed for incomplete Foldseek database
+construction or residue-level readback: those stages run again from their
+verified inputs.
+
+| Stage | CPU quota | Memory limit | Recovery status |
+|---|---:|---:|---|
+| Whole-proteome Foldseek database | 4 | 64 GiB | Running, fresh database output |
+| Refreshed AFDB residue readback | 1 | 16 GiB | Running, complete mapping reused |
+| AFDB PAE prefetch | 2 | 8 GiB | Running, validated global cache reused |
+| Native structural features | 4 | 16 GiB | Waiting for new residue auditor |
+| Mapping-bound confidence and full-context readback | 2 | 16 GiB | Waiting for new feature/prefetch processes |
+| Paired AA/3Di input preparation/readback | 1 | 32 GiB | Waiting for new confidence process |
+| Supported paired point fits and audit | 4 | 16 GiB | Waiting for new paired-input process |
+
+All services have no swap and reduced CPU/IO priority. Existing per-stage disk,
+RAM and runtime planning limits are retained in their recovery plans; quotas are
+limits rather than reserved CPU usage while waiting. The new process identities,
+creation times/start ticks, command lines and second live-status observations
+are recorded in `metadata/recovery_20260923_afdb_launch_inventory.json`.
+Dependency plans bind the new producer receipts and plan checksums. The completed
+mapping's original preparation plan remains unchanged so its receipt retains
+its exact original provenance.
+
+PAE prefetch uses the existing `data/structures/pae` cache. Cached receipts and
+matrix bytes must pass the existing checks before reuse. A replacement manifest
+will be produced rather than accepting the interrupted manifest. Foldseek output
+is now `results/structural_clusters/whole-proteome-afdb-database-20260923-v1`;
+the fixed source catalog still contains 1,290,278 models. No structural search,
+clustering or evolutionary result is claimed by merely restoring these jobs.
+
+This supersedes the stopped status for these stages in the initial recovery
+inventory above. MAFFT-guide reconciliation and its dependent checks/small-family
+supplement, plus the background full-catalog retrieval job, still need recovery.
+The species-tree, marker fits, HOG verification and their reconnected downstream
+jobs remain separate live recovery branches. GPU prediction remains paused.

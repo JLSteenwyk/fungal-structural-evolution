@@ -1,0 +1,28 @@
+{
+  "preparation_plan": "metadata/current_afdb_input_preparation_plan.json",
+  "output": "results/structural_markers/gdm-current-residue-readback-20260923-v1",
+  "predecessor_pid": 171401,
+  "predecessor_start_ticks": "53683862",
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 50,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Check complete refreshed mapping after exact producer identity finishes. Every mapped matrix/sequence/coordinate position and pLDDT, source model coverage and per-link summary checked; no sample restriction.",
+  "pins": {
+    "metadata/current_afdb_input_preparation_plan.json": "433f781b69132a77eeed184b45ca07c8124cfb2925273bac1c278e93ad9d4daf",
+    "metadata/current_afdb_residue_readback_fixture_checks.json": "534a79e89abedd907dacec445bf3f259348e506f82e6be56804f6737df47e186",
+    "scripts/readback_refreshed_afdb_residues.py": "e37af54b63493e133fe936828b41f436126e07792e2aa69f63f8c002655c615a",
+    "scripts/check_refreshed_afdb_residue_readback.py": "276561bbdd6e4464c0e201d565a08fa43de3ccfee9dc4738539c6ee74b243431",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2"
+  },
+  "recovery_boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320"
+}
