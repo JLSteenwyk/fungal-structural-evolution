@@ -1,0 +1,17 @@
+{
+  "status": "passed_complete_resolved_tree_membership_readback",
+  "source_families": 658522,
+  "source_proteins": 5815847,
+  "resolved_trees": 70412,
+  "resolved_tips": 5114926,
+  "resolved_nodes": 10132146,
+  "input_hashes": {
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e"
+  },
+  "resolved_tree_file_sha256": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+  "script_sha256": "7e1acb1d149e30a60d60c694f3588d561e073183c86faded4767b2e02fe425ed",
+  "cluster_parser_sha256": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+  "scope": "Every native resolved tree for families with at least four genes checked for exact source membership, unique labels and finite nonnegative branch lengths. Native min_seq=4 output contract; three-gene input trees are not expected as resolved outputs. Does not independently infer rooting/topology, reconciliation events, HOGs, ortholog pairs or biological homology."
+}

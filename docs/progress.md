@@ -3906,3 +3906,15 @@ Both queued successors advanced automatically: full resolved-tree membership
 readback and the small-family ortholog supplement have live worker processes.
 Native execution is complete; full output validation, guide sensitivity and
 biological duplication/loss interpretation remain unfinished.
+
+### September 23: both resolved-tree membership checks passed
+
+Full checks passed for all 70,307 profile-guide resolved trees (5,115,031 tips)
+and 70,412 MAFFT-guide resolved trees (5,114,926 tips). Every expected tree for
+families with at least four genes has exact source membership, unique tip
+labels and finite nonnegative branch lengths. Source and output hashes were
+verified before archiving the controller receipt and both guide readbacks as
+`metadata/expanded_resolved_tree_*20260923.json`. This validates membership
+and branch-length formatting, not rooting, topology, inferred duplication/loss,
+hierarchical orthogroups or complete ortholog-table semantics. Small-family
+processing remains active.
