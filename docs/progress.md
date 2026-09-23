@@ -4129,3 +4129,18 @@ uniqueness, finite bounded support, node type and unique family/gene-node keys.
 It does not establish gene-tree-node membership, event completeness, support
 calculation, rooting, timing or biological duplication/loss. Those checks and
 structural divergence tests remain outstanding.
+
+### September 23: long-protein accessibility completed and passed full audit
+
+The long ESMFold cohort completed accessibility calculation and full snapshot
+validation: 5,510 models, 3,386,360 residues. The audit checks every model
+against raw mmCIF atom tables, including sequence/residue identities, atom
+counts, CA confidence, artifact hashes and ASA totals. It does not independently
+recompute ASA or validate biological exposure, interfaces or pockets.
+
+Before archiving `metadata/esmfold_long_accessibility_completed_*_receipt.json`,
+verified all controller pins, producer/audit/controller hash bindings, the
+audited-model table hash, unique model identities and complete residue totals.
+This archival check did not repeat the raw-coordinate traversal. The extended
+cohort remains a prerequisite for the full completed-ESMFold accessibility
+combination and projection; those stages remain incomplete.

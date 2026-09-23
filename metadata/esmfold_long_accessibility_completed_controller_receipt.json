@@ -1,0 +1,19 @@
+{
+  "status": "complete_full_accessibility_audit",
+  "config_sha256": "ea20e19e6315b433fb857a060da117003b7388c7215e162b40fec0973b7508ba",
+  "script_sha256": "3cc22c8e28e7d5051817be46230bc8866e1a202b1bd9b44a1ec65dbf09228a26",
+  "producer_receipt_sha256": "2f55e5b875402e160c15a62747b033c019434150b25b48dc38338bd7f55a91e6",
+  "audit_receipt_sha256": "7b85dd135a9f7254d886065b8ca2250134f512453eb9fac39960f4bd2bc9d420",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_predicted_accessibility.py",
+    "--assessment",
+    "results/structural_annotations/accessibility-esmfold-long-20260923-v1",
+    "--snapshot",
+    "results/structural_markers/esmfold-long-complete-v1",
+    "--output",
+    "results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit"
+  ],
+  "models_audited": 5510,
+  "residues_audited": 3386360
+}
