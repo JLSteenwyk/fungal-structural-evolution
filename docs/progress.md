@@ -4408,3 +4408,23 @@ are retained, so intervals are not independent proteins or evolutionary events.
 The partition verifies membership, not native alignment thresholds, confidence
 qualification, orthology or remote homology. Boundary/parameter sensitivity
 and phylogenetic integration remain required.
+
+
+### September 23: full domain-boundary cluster sensitivity validated
+
+The complete comparison and independent readback passed for 594,797 paired
+boundary definitions (1,189,594 links, 1,078,592 unique clustered intervals).
+There are 111,002 identical intervals, 397,292 distinct-boundary pairs assigned
+to the same cluster, and 86,503 assigned to different clusters. Thus 17.9%
+of the 483,795 nonidentical-boundary pairs disagree within this partition.
+No intervals are unclustered.
+
+The independent checker reconstructed every output field from original interval
+identities, paired boundaries, database lookup and the complete partition,
+without producer comparison functions. Rechecked all recorded source hashes
+and both plans before archiving completed producer and readback receipts in
+`metadata/domain_boundary_clusters_completed_{receipt,readback}_20260923.json`.
+This measures boundary sensitivity within one partition. It is not independent
+clustering-run stability, biological domain-boundary validation, structural
+divergence or an evolutionary-event count; parameter and confidence sensitivity
+and phylogenetic interpretation remain outstanding.

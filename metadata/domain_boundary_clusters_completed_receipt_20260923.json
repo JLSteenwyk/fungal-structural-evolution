@@ -1,0 +1,19 @@
+{
+  "status": "complete_all_domain_boundary_cluster_dispositions",
+  "candidate_pairs": 594797,
+  "intervals": 1078592,
+  "clustered_intervals": 1078592,
+  "unclustered_intervals": 0,
+  "dispositions": {
+    "distinct_intervals_same_cluster": 397292,
+    "identical_interval": 111002,
+    "distinct_intervals_different_clusters": 86503
+  },
+  "plan_sha256": "b0efd7fcff5847e3b6e7443c9c5e9f6ce06722638c208f0596cc046d5fedad5f",
+  "cluster_receipt_sha256": "b43b8b5bc1446ef673bfca55fbf7ff662d969495b096a39eb54df494f43f45ff",
+  "database_receipt_sha256": "b24273a5aa678b7db14cf7204aef353650ed0dd40eb4a3600fa1d374947dc841",
+  "artifacts": {
+    "boundary_cluster_dispositions.tsv.gz": "a9394ef699c82b74e065a07653724e8af9400deccc1321105a8e621bc23689b7"
+  },
+  "scope": "Every original model/hit boundary pair compared within one candidate partition, retaining excluded intervals. Identical intervals are separated from distinct boundaries sharing a cluster. Disagreement is sensitivity within this partition, not separate-run stability, direct structural distance, independent transitions, homology or biological divergence. Full output readback and parameter sensitivity remain required."
+}
