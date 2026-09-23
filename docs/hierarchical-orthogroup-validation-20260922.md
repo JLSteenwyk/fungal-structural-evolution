@@ -245,3 +245,19 @@ This check accounts for the native algorithm's output on the existing resolved
 trees. It does not validate the ancestral rooting, duplication timing or
 biological homology, nor interpret unassigned genes as losses. Overall
 reconciliation interpretation and the other-guide comparison remain unfinished.
+
+## MAFFT-guide identity audit completed
+
+On September 23 the same full-table verifier passed all 525 MAFFT-guide HOG
+tables: 8,865,648 rows and 78,276,663 assignments across levels, against
+658,522 source families and 5,815,847 proteins. All 532 plan pins and per-table
+hashes were verified, and summary counts were reproduced before archiving
+`metadata/mafft_hog_identity_completed_readback.json` and
+`metadata/mafft_hog_identity_node_summary.tsv`. The reproducible plan is
+`metadata/mafft_hog_identity_audit_plan.json`.
+
+This extends exact identity, species-clade containment and within-level
+uniqueness checks to both guides. It does not transfer the profile guide's
+root-omission explanation to MAFFT or establish ancestral groups and biological
+duplication/loss events. Counts across levels include repeated proteins and
+depend on tree shape, so their difference is not an evolutionary effect size.

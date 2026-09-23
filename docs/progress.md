@@ -3944,3 +3944,16 @@ counts and native-plus-supplement count totals. This archival check did not
 repeat the native-table scan or independently re-infer orthology. Native files
 and statistics remain unchanged; integrated statistics, larger-family pair
 semantics and biological interpretation remain outstanding.
+
+### September 23: MAFFT HOG identity audit completed
+
+All 525 MAFFT hierarchy tables passed, covering 8,865,648 HOG rows and
+78,276,663 gene assignments summed across levels, from 658,522 source families
+and 5,815,847 proteins. Repeated assignment across levels is expected; the
+assignment total is not a distinct-protein count. Verified all 532 plan pins,
+the summary hash, per-table hashes, unique node identities and aggregate totals
+before archiving `metadata/mafft_hog_identity_completed_readback.json` and
+`metadata/mafft_hog_identity_node_summary.tsv`. Both guides now have full
+identity/clade checks. Root omissions, ancestral memberships, gene-tree parent
+clades, nested orthology and duplication events still require their separate
+checks; the profile-guide omission result must not be transferred to MAFFT.
