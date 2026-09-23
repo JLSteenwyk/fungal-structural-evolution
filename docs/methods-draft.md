@@ -209,16 +209,54 @@ All 25,509 marker/protein links and 8,335,615 matrix-residue links passed. The
 readback uses a shared alignment parser and does not independently infer the
 alignment or validate biological coordinate accuracy.
 
-Availability in this completed local inventory was joined with the separately
+Availability in this completed local inventory was joined with the refreshed
 frozen AlphaFold catalog by exact marker, taxon, protein and sequence identity.
-The union covers 38,931 of 59,840 recovered marker records, with 232 records
-in both catalogs. Counts precede confidence qualification and are not
-whole-proteome coverage. Absence from these frozen catalogs is not absence
-from current caches or public databases. Feature extraction, original
-directional-PAE context checks, qualification and regenerated paired inputs
-remain separate gates before the expanded evolutionary fits. See the
+The union covers 56,171 of 59,840 recovered marker records (93.87%), with 722
+records in both catalogs, 24,787 ESMFold-only and 30,662 AlphaFold-only records.
+The 3,669 uncovered records represent 3,656 unique sequences. These availability
+counts precede confidence qualification and are not whole-proteome coverage.
+Absence from these catalogs is not evidence of public-database absence.
+
+All five ESMFold cohorts completed native structural-feature extraction,
+coordinate readback and directional-PAE context checks against original arrays.
+Of 12,221,520 whole-protein residues, 8,306,117 (67.96%) pass native-state
+validity, pLDDT >=70 at all six encoding-context residues and maximum ordered
+context PAE <=10 Å. Counts precede alignment eligibility and do not measure
+predictor accuracy. Model length and sampling differ across cohorts.
+
+AA and 3Di characters were projected onto the same source alignment using
+identical observation masks. Taxa required at least max(50, ceil(0.30 times
+the source alignment length)) jointly observed positions; markers required
+at least four eligible taxa. Only columns missing in every eligible taxon
+were removed, retaining invariant columns. Independent reconstruction checked
+every character and all 526-by-125 eligibility combinations. The completed
+inputs contain 122 markers, 294 taxa, 44,198 retained marker columns and
+6,758,598 observed paired cells. Expanded point fits and block-resampling
+uncertainty remain in progress; these input counts do not update the earlier
+cohort-specific evolutionary results. Refreshed AlphaFold feature/confidence
+processing remains a separate active workflow. See the
 [complete prediction checkpoint](completed-prediction-inventory-20260922.md)
 and [expanded paired-input workflow](expanded-paired-inputs-20260922.md).
+
+## Whole-proteome structural availability
+
+All 5,815,847 representative proteins across 526 sampled entries were screened
+against a frozen AlphaFold inventory using exact sequence hash and length.
+The source-specific selection retained one model per sequence, ranked by mean
+Cα pLDDT, version and model identifier. It covers 1,319,513 protein links
+(22.69%) with 1,290,278 unique models across 496 entries. Identical-sequence
+reuse retains each species/protein link and is not an independent observation.
+The catalog excludes local ESMFold additions and precedes confidence filtering.
+
+The producer checked selected coordinate-file hashes against existing
+verification records. Independent readback reconstructed all representative
+FASTA identities, model selections and per-taxon coverage from the frozen
+inventory; it did not repeat coordinate-content or confidence validation.
+Full source-family joins under both guide partitions were independently
+reconstructed with Python sets. Model availability is not validated orthology
+or evidence of statistical power. CPU Foldseek database construction is in
+progress; structural clustering and remote-homology analysis are unfinished.
+See [whole-proteome catalog methods](whole-proteome-structure-catalog-20260922.md).
 
 ## Full-proteome annotations and family architecture representation
 
@@ -254,17 +292,31 @@ MAFFT-guide families). Independent validation checked every native identity,
 sequence/source link, family member and source crosswalk, plus database
 integrity and final hashes. Family indices are guide-specific: comparisons
 use full membership identities rather than matching family labels. These
-partitions are not completed reconciled orthology. Reconciliation is running
-on isolated physical copies under both homogeneous guide alternatives;
-completed native outputs still require full validation.
+partitions are not completed reconciled orthology. The profile-guide native reconciliation completed; MAFFT-guide reconciliation
+is running on an isolated copy. All 525 profile HOG tables passed source
+identity, species-clade containment and within-level uniqueness checks, covering
+9,277,304 HOG rows and 93,034,008 assignments summed across levels. These are
+not distinct-gene counts or proof of ancestral membership completeness.
+Of 5,315,734 nonsingleton-family proteins, 41,129 lack root assignments;
+35,187 have native misplaced-gene flags and 5,942 do not. The latter are present
+in resolved trees but outside emitted root HOG parent clades. They remain
+explicitly unassigned rather than being treated as biological losses. Native
+classification replay across all affected families is running; event semantics
+and alternative-guide validation remain outstanding. See
+[HOG validation](hierarchical-orthogroup-validation-20260922.md).
 
-Within-family architecture summaries are currently running. They distinguish
+Within-family architecture summaries completed across all four policies and
+both full guide partitions (5,266,820 family/policy rows). They distinguish
 ordered signatures, multiplicity-preserving multisets and model/type sets,
 retain missing hits and ambiguity counts, and compare observed data with a
 conservative subset excluding policy disagreement, rank ties, overlap, candidate
 nesting and retained HMM matches below 0.70 coverage. The conservative rule is
 a sensitivity choice, not proof of architecture correctness. Independent full
-summary reconstruction and exact-membership guide comparisons are queued.
+summary reconstruction passed. Exact-membership comparisons identified 656,507
+shared families and verified identical metrics for all 2,626,028 shared
+family/policy rows. Guide-specific membership remains explicit. Across either
+guide, 2,023,005 proteins (34.78%) lack qualifying Pfam hits; missing annotation
+cannot establish domain loss.
 Domain gain/loss, fusion, rearrangement and duplication tests remain unfinished
 and must incorporate supported genealogies, annotation uncertainty and
 missingness. See [family-domain linkage](family-domain-bridge-20260922.md) and
@@ -272,3 +324,7 @@ missingness. See [family-domain linkage](family-domain-bridge-20260922.md) and
 
 The completion evidence used for this update is indexed, with receipt hashes
 and scoped statuses, in `metadata/methods_checkpoint_20260922_sources.json`.
+
+The September 23 structural-coverage, confidence, architecture and HOG updates
+are indexed separately in `metadata/methods_checkpoint_20260923_sources.json`.
+Earlier executed analyses above retain their original cohorts and scopes.

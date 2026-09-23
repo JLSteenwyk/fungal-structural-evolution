@@ -3595,3 +3595,18 @@ scales and unadjusted conditional interpretation. Numerical results are
 unchanged. See [the figure](figures/expanded_fcs_paired_differences.svg).
 Structural PAE export, native reconciliation and full architecture validation
 were confirmed live; the overall study remains incomplete.
+
+## Methods synchronized with verified outputs — 23 September 2026
+
+Updated the methods draft to the refreshed 56,171/59,840 marker-record
+availability checkpoint, completed confidence processing of all 25,322 ESMFold
+models, and independently reconstructed 122-marker/294-taxon paired inputs.
+Added whole-proteome catalog selection, validation scope and 22.69% source-specific
+coverage. Replaced obsolete pending architecture-summary statements with the
+completed full readback and exact-membership guide comparison. Added the HOG
+identity audit and explicit treatment of unassigned root genes. Sixteen source
+receipts are indexed with checksums in
+`metadata/methods_checkpoint_20260923_sources.json`; local Markdown links resolve.
+The methods retain earlier analyses' original cohorts and distinguish active
+fits, native replay, MAFFT reconciliation and database construction from
+completed results. No new biological effect or overall completion is claimed.

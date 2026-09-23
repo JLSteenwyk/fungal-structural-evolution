@@ -1,0 +1,86 @@
+{
+  "recorded_utc": "2026-09-23T14:14:05.816995+00:00",
+  "scope": "Evidence for the September 23 methods update; each source retains its stated validation scope. Active fits, replay, reconciliation, database construction and final evolutionary analyses are not claimed complete.",
+  "sources": [
+    {
+      "path": "metadata/current_marker_availability_receipt.json",
+      "sha256": "711e4b468e8dc8b1928de2f48b2b7dd379f5d8adfa0dad7c942057b19d758fc3",
+      "status": "complete_frozen_catalog_marker_availability"
+    },
+    {
+      "path": "metadata/current_marker_gap_receipt.json",
+      "sha256": "23d2c2935fb29e1c0947ba26e6ab7427f4690a904d0a061a2afe95c52135c549",
+      "status": "complete_frozen_marker_gap_characterization"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_encoding_union_completed_receipt.json",
+      "sha256": "75b948659abe23bb6975be780e9a591eede23a3f28c3aaf76ebcc932e983ffd4",
+      "status": "complete_union_of_previously_qualified_encodings"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_confidence_retention_receipt.json",
+      "sha256": "d82a6c4670af67577d4645f22d5bf8a57b26d0fca1448c90db3506efdb6c94b7",
+      "status": "complete_descriptive_cohort_confidence_retention"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_paired_inputs_completed_receipt.json",
+      "sha256": "ec96060f346bafacfc20022b65a6f8243883d7820cb3de9be5d19535b4503e6a",
+      "status": "complete_full_cohort_paired_inputs_and_independent_array_readback"
+    },
+    {
+      "path": "metadata/esmfold_all_completed_paired_inputs_completed_readback.json",
+      "sha256": "ab4be9d7804864b74f7aa4e1468be198cb7566bd6c911e8a608b59cb263daecf",
+      "status": "passed_complete_paired_inputs_from_qualified_arrays_readback"
+    },
+    {
+      "path": "metadata/whole_proteome_structure_catalog_completed_receipt.json",
+      "sha256": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+      "status": "complete_whole_representative_proteome_exact_sequence_catalog"
+    },
+    {
+      "path": "metadata/whole_proteome_structure_catalog_completed_readback.json",
+      "sha256": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+      "status": "passed_full_proteome_sequence_and_model_selection_readback"
+    },
+    {
+      "path": "metadata/whole_proteome_family_coverage_completed_receipt.json",
+      "sha256": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378",
+      "status": "complete_structure_family_coverage_bridge_pending_independent_readback"
+    },
+    {
+      "path": "metadata/whole_proteome_family_coverage_completed_readback.json",
+      "sha256": "a9d4ed26ac281cdbf696760e260115cf5840695aaccc5754541d1b96357de81b",
+      "status": "passed_independent_full_structure_family_coverage_readback"
+    },
+    {
+      "path": "metadata/family_architecture_variation_completed_receipt.json",
+      "sha256": "73459021bd182e256bcf402090ccc18c145426a54a3bbe816eb653b837d1ac03",
+      "status": "complete_family_architecture_variation_inventory"
+    },
+    {
+      "path": "metadata/family_architecture_variation_completed_readback.json",
+      "sha256": "4f7ed2ddabe45becf048c02f84cc24c503a148a348187c2d31e3672ca696a881",
+      "status": "passed_full_family_architecture_variation_readback"
+    },
+    {
+      "path": "metadata/family_architecture_guide_comparison_completed_receipt.json",
+      "sha256": "53a9bf04002ac0970e99bb1b9067ff4c614d482ecbba8fd0a9855dc58a122ee5",
+      "status": "complete_audited_family_architecture_guide_summary"
+    },
+    {
+      "path": "metadata/profile_hog_identity_completed_readback.json",
+      "sha256": "6c3f6b60b0ed5d7df525a430d200683e02e845fff9ac939805ef18b83fc6d0b4",
+      "status": "passed_all_hog_identity_and_species_clade_checks"
+    },
+    {
+      "path": "metadata/profile_root_hog_disposition_receipt.json",
+      "sha256": "7f64f36834dbbc22ffcc2e47cf271dbf0740c1e6f4e1dc31342d9b4a3fe24866",
+      "status": "complete_root_hog_gene_disposition"
+    },
+    {
+      "path": "metadata/profile_root_hog_omission_trace_receipt.json",
+      "sha256": "38e264ef6267152898e2d51cb196b48e9402b2417fa9b56c4a3cf3372cbb7756",
+      "status": "complete_root_omission_parent_clade_trace"
+    }
+  ]
+}
