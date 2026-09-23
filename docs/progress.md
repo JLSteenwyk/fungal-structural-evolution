@@ -4029,3 +4029,15 @@ for review. Plan and verified launch are
 is waiting for replay completion. Resources are one CPU, 2 GiB RAM, no
 swap/GPU, 0.01 GiB output and an uncalibrated 1–5 minutes after the dependency.
 Output is `results/orthology/mafft-root-hog-replay-dispositions-20260923-v1`.
+
+### September 23: remaining original-cohort accessibility audit passed
+
+Completed accessibility calculations and the full output audit for all 5,401
+remaining original-cohort models and 2,172,166 residues. The audit checks raw
+mmCIF atom tables, source hashes, sequence/residue grids, atom counts, CA
+confidence and ASA totals; it does not independently recalculate ASA or
+validate experimental exposure. Checked the source pins, receipt chain and
+audited-table hash before archiving producer, audit and controller receipts as
+`metadata/esmfold_original_gap_accessibility_completed_*_receipt.json`.
+The long and extended accessibility cohorts and their audits remain pending;
+the full-cohort combination continues to wait for those prerequisites.
