@@ -4305,3 +4305,10 @@ There are 339,722 single-model clusters and 952 clusters spanning at least
 100 taxa. Models may map to multiple protein/taxon records; these panels are
 descriptive and do not establish homology, orthology, novelty or evolutionary
 change. Confidence qualification and phylogenetic integration remain pending.
+
+
+### 2026-09-23: full completed ESMFold site-exposure analysis queued
+
+Queued the full 122-marker, 44,198-site exposure diagnostic behind the identified live paired-fit controller (PID 55253), requiring both its final receipt and the complete 488-fit audit. The new controller uses completed normalized accessibility for 6,758,598 observations and will independently rescore every AA/3Di site and read back all exposure quantiles. The 34 pinned files include the accessibility projection and normalization readbacks, copy-review configuration, inputs and recursive local script dependencies. Configuration/producer checks passed, and systemd service `fungal-completed-site-exposure-20260923` was observed waiting for that producer. Plan: `metadata/completed_site_exposure_plan.json`; launch: `metadata/completed_site_exposure_launch.json`.
+
+Resource envelope: one CPU, 32 GiB hard memory limit, no swap, 64 GiB available-memory and 20 GiB free-disk gates, 2 GiB output allowance; 0.25–12 hours is an uncalibrated planning range. No GPU work or paid resources. This produces minimum character-change counts on fixed AA topologies and extant exposure summaries; branch rates, ancestral exposure, optimization sensitivity and coupling inference remain separate and incomplete.
