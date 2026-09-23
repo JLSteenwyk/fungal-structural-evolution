@@ -1,0 +1,26 @@
+{
+  "producer_plan": "metadata/whole_proteome_cluster_composition_plan.json",
+  "output": "results/structural_clusters/whole-proteome-cluster-composition-readback-20260923-v1",
+  "predecessor": {
+    "pid": 2133929,
+    "create_time": 1790194752.71
+  },
+  "pins": {
+    "scripts/readback_whole_proteome_cluster_composition.py": "2a2086d73e7b921547e88cd170f43082cd7428879fe3b4921ac549f3a5302d21",
+    "scripts/annotate_whole_proteome_cluster_composition.py": "ee4eb57d1b4f5f7931d526a0899a12be5e162ceebb0f9044fbdea98bff56827b",
+    "metadata/whole_proteome_cluster_composition_plan.json": "8304fcf243a0cb71ffaae4a1058c065ba24bc8b4e6662f8c4a16700e8e89df58"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.1,
+      8
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

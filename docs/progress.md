@@ -4235,3 +4235,18 @@ disk and 930 GiB memory were available at launch. Syntax compilation passed
 and the exact live service PID/command were recorded in metadata. Composition
 is descriptive; clusters are not orthogroups or validated homology, and counts
 are not independent evolutionary events. Completion remains pending.
+
+### September 23: full cluster-composition source readback queued
+
+Queued `readback_whole_proteome_cluster_composition.py`, bound to the exact
+producer PID/create time and pinned implementation/plan. It compares the full
+model partition, streams every protein identity from the source database,
+checks both family partitions against their original assignments, and rebuilds
+every cluster count using Python sets/counters rather than the producer's SQL
+aggregation. All expected protein/model/family universes must agree.
+
+One CPU, 32 GiB hard memory limit, no swap or GPU; 1 GiB output and 0.1–8 hours
+are uncalibrated planning allowances. Syntax compilation passed and the live
+controller was verified. No validation result is claimed until its full run
+finishes. Homology, orthology, confidence and evolutionary interpretation remain
+outside this identity/composition readback.
