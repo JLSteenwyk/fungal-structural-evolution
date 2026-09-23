@@ -4074,3 +4074,29 @@ Rehashed every database artifact before archiving
 The queued clustering service advanced and a native Foldseek worker was
 confirmed running. Clusters, homology and functional interpretation remain
 pending.
+
+### September 23: duplication-event identity audit launched for both guides
+
+Added `scripts/audit_duplication_event_identities.py` and launched the full
+profile/MAFFT duplication-table audit under
+`metadata/duplication_event_identity_audit_plan.json`. Thirteen pinned files
+bind both source family/sequence/species universes, labelled species trees,
+native event tables, implementation and archived native completion. Both
+native duplication-table hashes match the archived completion evidence.
+The MAFFT table contains 1,204,919 reported events before validation.
+
+The audit checks every emitted gene's source identity, family and species-clade
+containment, uniqueness within each event, bounded finite support, terminal
+versus internal species-node type and unique family/gene-node event keys.
+Native multifurcation rows with an empty second gene list are preserved.
+Two valid representations and ten deliberately corrupted cases were exercised
+before launch. These checks do not establish gene-tree-node membership,
+event completeness, support calculation, rooting, duplication timing or
+biological correctness. Nested event counts are not independent observations.
+
+The verified live process is recorded in
+`metadata/duplication_event_identity_audit_launch.json`; output is
+`results/orthology/duplication-event-identities-20260923-v1`. Limits are one CPU,
+32 GiB RAM, no swap, no GPU and no paid resources. Planning estimates are
+0.01 GiB output and 0.1–4 hours (uncalibrated). The latest resource check showed
+12 TiB available disk and 931 GiB available memory. Completion is pending.
