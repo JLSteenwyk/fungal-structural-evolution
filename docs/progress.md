@@ -4016,3 +4016,16 @@ recorded in `metadata/mafft_root_hog_native_replay_launch.json`; the plan is
 `results/orthology/mafft-root-hog-native-replay-20260923-v1`.
 This tests the algorithm on existing resolved trees, not independent rooting
 or biological event validity. Full replay completion remains pending.
+
+### September 23: MAFFT replay accounting queued
+
+Queued the existing full omission-accounting script behind the exact live
+MAFFT replay PID and creation time. It requires a passing full replay, then
+checks every target gene, affected family, native flag count and immediate
+parent against the independently completed tree trace, including agreement
+with the 24,220 affected root memberships. Other parent states are retained
+for review. Plan and verified launch are
+`metadata/mafft_root_hog_replay_disposition_{plan,launch}.json`; the service
+is waiting for replay completion. Resources are one CPU, 2 GiB RAM, no
+swap/GPU, 0.01 GiB output and an uncalibrated 1–5 minutes after the dependency.
+Output is `results/orthology/mafft-root-hog-replay-dispositions-20260923-v1`.

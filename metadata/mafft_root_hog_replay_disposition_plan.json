@@ -1,0 +1,33 @@
+{
+  "replay": "results/orthology/mafft-root-hog-native-replay-20260923-v1",
+  "replay_plan": "metadata/mafft_root_hog_native_replay_plan.json",
+  "missing": "results/orthology/mafft-root-hog-disposition-20260923-v1/missing_genes.tsv",
+  "placements": "results/orthology/mafft-root-hog-omission-trace-20260923-v1/gene_tree_positions.tsv",
+  "placement_receipt": "results/orthology/mafft-root-hog-omission-trace-20260923-v1/receipt.json",
+  "output": "results/orthology/mafft-root-hog-replay-dispositions-20260923-v1",
+  "predecessor": {
+    "pid": 1188072,
+    "create_time": 1790183409.27
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_minutes": [
+      1,
+      5
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/mafft_root_hog_native_replay_plan.json": "c43a44a0fae5d70c2d4c503347d27da40a1f07d16ba86051a89503aacfd4bb5e",
+    "results/orthology/mafft-root-hog-disposition-20260923-v1/missing_genes.tsv": "3a52012e07a8f2487862d07a673fceebb1bdc35e04b49e68ad445724e3b94ecc",
+    "results/orthology/mafft-root-hog-omission-trace-20260923-v1/gene_tree_positions.tsv": "b3934993982f646558cdca5c11c76dda61ed49fcb06bb78fac067422595ea771",
+    "results/orthology/mafft-root-hog-omission-trace-20260923-v1/receipt.json": "77de832575007dec3d98b6e2ff7c87f73a2f0ae575d732ad89d6325940b16349",
+    "scripts/summarize_root_hog_replay.py": "a7d0527c4e182fe311891ac43c1522adbfadf9735520d0e8c221efaa13dfa74f",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441"
+  }
+}
