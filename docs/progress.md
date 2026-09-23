@@ -4041,3 +4041,17 @@ audited-table hash before archiving producer, audit and controller receipts as
 `metadata/esmfold_original_gap_accessibility_completed_*_receipt.json`.
 The long and extended accessibility cohorts and their audits remain pending;
 the full-cohort combination continues to wait for those prerequisites.
+
+### September 23: full refreshed AlphaFold confidence validation passed
+
+All 30,588 models passed the independent directional PAE context readback.
+Across 15,949,929 full-model residues, 15,888,753 structural states are valid;
+10,841,286 pass all-six-residue pLDDT>=70 and 10,828,234 additionally pass
+directional PAE<=10. The readback checks all 36 ordered pairs per valid
+six-residue context against version-bound JSON matrices. It preserves the
+coordinate arrays and counts, but does not recalibrate confidence or prove
+biological accuracy. Verified all plan pins, stage hashes, source receipt
+bindings and agreement of totals before archiving
+`metadata/current_afdb_confidence_completed_{receipt,readback}.json`.
+The paired-input controller has advanced to preparation; downstream fits and
+evolutionary inference remain incomplete.

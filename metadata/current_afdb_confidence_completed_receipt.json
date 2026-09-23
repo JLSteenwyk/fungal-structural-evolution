@@ -1,0 +1,32 @@
+{
+  "status": "complete_refreshed_afdb_mapping_bound_confidence_and_full_context_readback",
+  "models": 30588,
+  "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+  "plan_sha256": "5e6c1653273c31b5dc18234d587e72825e35b719591ce59c6f4878c6c8db1df7",
+  "stages": [
+    {
+      "name": "mapping_bound_pae",
+      "result": "results/structural_pae/gdm-current-mapping-bound-20260923-v2/receipt.json",
+      "sha256": "e3f64e753646765c5014d10cb2e44f75647c92ceb41e11896a0f84e8d6df42a0"
+    },
+    {
+      "name": "confidence_qualification",
+      "result": "results/structural_alphabet/audited-gdm-current-20260923-v2/receipt.json",
+      "sha256": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8"
+    },
+    {
+      "name": "full_context_readback",
+      "result": "results/structural_alphabet/current-afdb-confidence-controller-20260923-v2/full_context_readback.json",
+      "sha256": "865fd61ffd3ded85ad04b1dd3d90e2f0a6d1e4c9aab2ca58b3cf2945a78577af"
+    }
+  ],
+  "totals": {
+    "length": 15949929,
+    "valid_states": 15888753,
+    "invalid_states": 61176,
+    "valid_focal_plddt70": 11808454,
+    "valid_feature_plddt70": 10841286,
+    "valid_feature_plddt70_pae10": 10828234
+  },
+  "scope": "Full mapping-bound AFDB confidence qualification and independent ordered-pair context readback. No new prediction, confidence calibration, or evolutionary inference."
+}
