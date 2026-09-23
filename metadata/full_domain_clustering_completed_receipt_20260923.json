@@ -1,0 +1,62 @@
+{
+  "status": "complete_domain_candidate_partition_membership_readback",
+  "intervals": 1078592,
+  "excluded_rejected_intervals": 0,
+  "exported_intervals_with_missing_backbone": 0,
+  "clusters": 70537,
+  "singleton_clusters": 41930,
+  "largest_cluster_models": 9215,
+  "plan_sha256": "a45abdc4b877dae232df3bc6efbad10dd4bad38a653e6663f5ac359e65df1ac9",
+  "database_receipt_sha256": "b24273a5aa678b7db14cf7204aef353650ed0dd40eb4a3600fa1d374947dc841",
+  "commands": [
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "cluster",
+      "results/structural_clusters/full-domain-database-20260923-v1/domains",
+      "results/structural_clusters/full-domain-clusters-20260923-v1/clusters",
+      "results/structural_clusters/full-domain-clusters-20260923-v1/tmp",
+      "--threads",
+      "8",
+      "--split-memory-limit",
+      "64G",
+      "--alignment-type",
+      "2",
+      "--cov-mode",
+      "0",
+      "-c",
+      "0.8",
+      "-e",
+      "0.001",
+      "-s",
+      "7.5",
+      "--max-seqs",
+      "1000",
+      "--cluster-mode",
+      "0",
+      "--cluster-reassign",
+      "1",
+      "--remove-tmp-files",
+      "0"
+    ],
+    [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+      "createtsv",
+      "results/structural_clusters/full-domain-database-20260923-v1/domains",
+      "results/structural_clusters/full-domain-database-20260923-v1/domains",
+      "results/structural_clusters/full-domain-clusters-20260923-v1/clusters",
+      "results/structural_clusters/full-domain-clusters-20260923-v1/cluster_members.tsv",
+      "--threads",
+      "8"
+    ]
+  ],
+  "artifacts": {
+    "cluster_members.tsv": "857e7aca45d333788b5ed3957012081c6e4eb49baa53577ffbfc9c3237971e50",
+    "stage_0.log": "a1d55098f271e40b7a7cd8f616ff72bb953105aadab73d03129ed3e38207bdd5",
+    "clusters.index": "8dcf1b30191514464f29593fb5419899380cb7cea0b4c7d17b0a908048eebe62",
+    "stage_1.log": "5f46fed61db9c61f011189feeceaf7ff16e665370d80510b31af8105ffa9c0c1",
+    "cluster_sizes.tsv": "c38d4618837c4b43fd5a9c4613be0926bfd9dcc394d3563f5c0ea2e2289ae2bf",
+    "clusters": "dec727e56b7c8e3d36092dc22e9eb2573e64f1149c3829bf6c5f4e7ed1d65db0",
+    "clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8"
+  },
+  "scope": "Full exported-interval partition and representative membership verified. Both alignment and envelope intervals retained, so alternative boundaries are not independent observations. Candidate domain clustering with confidence-masked seeding, finite prefilter cap and native reassignment; not independent alignment-threshold validation, confidence qualification, orthology, remote homology confirmation or evolutionary events. Boundary and parameter sensitivity remain required; rejected intervals are excluded explicitly."
+}

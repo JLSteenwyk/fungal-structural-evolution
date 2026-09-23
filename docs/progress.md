@@ -4390,3 +4390,21 @@ definitions remain represented. Clustering completion and boundary sensitivity
 are pending. pLDDT seeding masks are not full confidence qualification; native
 3Di states were not independently reconstructed, and this milestone does not
 establish PAE-qualified comparisons, homology or evolutionary change.
+
+
+### September 23: full domain candidate partition complete
+
+Clustering completed for all 1,078,592 exported intervals: 70,537 candidate
+clusters, including 41,930 singleton clusters; the largest contains 9,215
+intervals. Rechecked the bound database receipt, all plan pins and seven output
+artifacts. Independently rebuilt the full membership map against every database
+lookup identity: each interval occurs exactly once, every representative belongs
+to its own cluster, and all 70,537 size-table rows and summary counts agree.
+Archived `metadata/full_domain_clustering_completed_receipt_20260923.json`.
+
+The boundary-comparison producer has left its wait and was observed actively
+processing; its readback controller remains queued. Both alternative boundaries
+are retained, so intervals are not independent proteins or evolutionary events.
+The partition verifies membership, not native alignment thresholds, confidence
+qualification, orthology or remote homology. Boundary/parameter sensitivity
+and phylogenetic integration remain required.
