@@ -3637,3 +3637,13 @@ A reproducible SVG/PDF figure and all 1,052 taxon/annotation strata are saved.
 These are descriptive sampling diagnostics, not tests of evolutionary effects.
 See [domain registry](whole-proteome-structure-domain-registry-20260923.md) and
 [coverage results](structure-annotation-coverage-20260923.md).
+
+## Full domain coordinate extraction launched — 23 September 2026
+
+Started extraction of all 1,078,592 independently verified alignment/envelope
+intervals from 427,255 models, with four CPU workers and bounded archive shards.
+Source bytes, polymer and atom residue identities, serialized fragment sequences,
+coordinates and confidence are checked; rejections and missing backbone atoms
+remain explicit. Small independent PDB/tar fixtures passed. Full archive readback,
+PAE assessment, domain comparisons and evolutionary inference remain pending.
+See [extraction methods and resources](whole-proteome-structure-domain-registry-20260923.md).

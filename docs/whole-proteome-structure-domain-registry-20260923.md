@@ -146,3 +146,45 @@ remain separate checks.
 
 The independent full manifest readback **passed** for all 1,078,592 intervals;
 its receipt is `metadata/domain_extraction_manifest_readback.json`.
+
+## Full coordinate extraction launched
+
+The full 1,078,592-interval extraction is now running under
+`fungal-domain-coordinate-extraction-20260923.service`; this supersedes the
+not-yet-launched checkpoint above. The plan and verified live process record
+are `metadata/domain_coordinate_extraction_plan.json` and
+`metadata/domain_coordinate_extraction_launch.json`.
+
+`extract_domain_coordinates.py` partitions all 427,255 source models into
+1,000-model jobs and runs four CPU workers. Each worker reads each CIF once
+into memory, checks that exact byte buffer against the catalog checksum,
+verifies full polymer identity and atom-to-residue identities, and checks
+finite coordinates, occupancy and confidence. Unsupported residues, alternate
+locations, multiple models/chains, duplicate atoms and incomplete Cα coverage
+receive explicit rejection dispositions. Missing other backbone atoms are
+recorded on exported intervals and require downstream exclusion/review.
+
+Exports retain all source atoms within the interval, with one-based local
+residue numbering and the original start/end mapping in the manifest. PDB
+coordinate/confidence rounding, serialized atom identity and fragment sequence
+are checked before each export. Both boundary alternatives are retained through
+the earlier reversible manifest. Each job produces an uncompressed tar archive,
+a per-interval JSONL disposition/quality table and checksummed receipt. The
+manifest includes source hashes, fragment sequence hashes, PDB hashes, mean
+Cα pLDDT and fraction of Cα residues at pLDDT >=70. Those summaries do not make
+an interval confidence- or PAE-qualified.
+
+Independent Bio.PDB parsing checked serialized residue numbering, coordinates
+and confidence on a real source fragment. Fixtures also rejected altered source
+checksums and verified tar membership and completed-shard checksum checks. A
+full independent archive readback is still required; these fixtures are not a
+replacement for it. Completed shards carry receipts; unreceipted partial shards
+require explicit recovery review rather than silent reuse. The top-level run
+requires a fresh directory.
+
+The run is capped at four CPUs, 32 GiB RAM and no swap. It requires 2 TiB free
+disk before starting and checks a 1 TiB reserve before each source model. The
+500 GiB storage allowance and 6–96 hour runtime range remain planning estimates.
+On a worker failure, queued work is cancelled and already running bounded jobs
+finish or reach their own checks. No GPU prediction, paid infrastructure,
+biological domain-boundary validation or evolutionary inference is performed.
