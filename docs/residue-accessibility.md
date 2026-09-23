@@ -603,3 +603,56 @@ model universe, subject to full completion, exact identity and byte checks.
 Full-cohort union/projection/normalization is not yet queued: its handoff must
 handle this original-cohort complement and relocated but checksum-identical
 paths explicitly. No claim of complete accessibility coverage is made.
+
+## Complete accessibility union and five-stage handoff queued
+
+The full identity preflight now partitions all **25,322 models / 12,221,520
+residues** exactly across six accessibility inputs: the 5,121-model original
+partial snapshot, 4,252 follow-on models, 675 ecology models, 5,401 original-gap
+models, 5,510 long models and 4,363 extended models. There are no overlaps or
+missing model identities. All six runtime ASA method configurations match
+when cohort size, source snapshot and worker count are excluded.
+`metadata/completed_accessibility_cohort_manifest.json` records the partition.
+
+`scripts/merge_completed_accessibility.py` preserves the original audited
+per-model entries through relative symlinks and requires their full raw-source
+audits. It accepts path relocation only when every other model provenance
+field matches, and hashes both the original source and full-union coordinate
+paths. Four changed/missing identity fixtures were rejected; an unchanged
+model with a relocated path was accepted. This preflight is not a completed
+production merge and does not substitute for the runtime byte checks.
+
+`fungal-completed-accessibility-handoff-20260923.service` now waits for all
+three outstanding audit-controller process identities. Each must finish with
+a full-audit receipt bound to its pinned configuration. It then executes:
+
+1. Complete disjoint ASA merge, requiring 25,322 models and 12,221,520 residues.
+2. Projection onto the full 122-marker paired inputs.
+3. Full projection-to-raw-residue readback.
+4. Unclipped reference normalization with the existing Tien and Miller scales.
+5. Full normalization readback.
+
+The final four stages must each retain the expected **6,758,598 observed paired
+cells**. Scripts independently check source bindings, row identities and their
+respective ASA/projection/normalization fields. Incomplete or mismatched stage
+status/count fixtures were rejected. A complete native handoff fixture has not
+been run; production stage checks and readbacks remain required.
+
+The controller is `scripts/advance_completed_accessibility.py`, with pinned
+plan, fixture result and verified live launch record in
+`metadata/completed_accessibility_handoff_*`. Its control output is
+`results/structural_annotations/all-completed-accessibility-controller-20260923-v1`.
+The full-union accessibility, paired projection and normalized directories are
+respectively `accessibility-esmfold-all-completed-20260923-v1`,
+`paired-accessibility-esmfold-all-completed-20260923-v1` and
+`normalized-accessibility-esmfold-all-completed-20260923-v1` under
+`results/structural_annotations/`.
+
+This sequential CPU-only handoff is limited to one CPU, 32 GiB RAM and no swap.
+It requires 64 GiB available RAM and 100 GiB free disk before starting; output
+planning is 30 GiB and runtime planning is an uncalibrated 1–24 hours after
+all audits finish. It introduces no predictions, GPUs or paid resources.
+This supersedes the earlier statement that the handoff was not queued.
+Full-cohort accessibility completion and controlled evolutionary tests remain
+pending; normalized accessibility does not establish biological surface/core
+truth, complexes or pocket function.

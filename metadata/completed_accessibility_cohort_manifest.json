@@ -1,0 +1,59 @@
+{
+  "status": "complete_full_accessibility_cohort_identity_preflight",
+  "snapshot": "results/structural_markers/esmfold-all-completed-20260922-v1",
+  "snapshot_receipt_sha256": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+  "cohorts": [
+    {
+      "mapping": "results/structural_markers/esmfold-partial-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-v1",
+      "audit": "results/structural_annotations/accessibility-esmfold-full-audit-v1",
+      "mapping_receipt_sha256": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+      "models": 5121,
+      "residues": 1183341
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-followon-complete-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-followon-v1",
+      "audit": "results/structural_annotations/accessibility-followon-full-audit-v1",
+      "mapping_receipt_sha256": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+      "models": 4252,
+      "residues": 1342046
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-ecology-complete-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-ecology-v1",
+      "audit": "results/structural_annotations/accessibility-ecology-full-audit-v1",
+      "mapping_receipt_sha256": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+      "models": 675,
+      "residues": 212983
+    },
+    {
+      "mapping": "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1",
+      "audit": "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1-audit",
+      "mapping_receipt_sha256": "0afcd9dda94759d1f602d3fd1c86d3c13760c3f0b5d0c57587261dad05e42d2b",
+      "models": 5401,
+      "residues": 2172166
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-long-complete-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-long-20260923-v1",
+      "audit": "results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit",
+      "mapping_receipt_sha256": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101",
+      "models": 5510,
+      "residues": 3386360
+    },
+    {
+      "mapping": "results/structural_markers/esmfold-extended-complete-v1",
+      "accessibility": "results/structural_annotations/accessibility-esmfold-extended-20260923-v1",
+      "audit": "results/structural_annotations/accessibility-esmfold-extended-20260923-v1-audit",
+      "mapping_receipt_sha256": "b876173320900d6cd7698528b7091691947b984703028a7b9179b9a19d220bab",
+      "models": 4363,
+      "residues": 3924624
+    }
+  ],
+  "models": 25322,
+  "residues": 12221520,
+  "relocated_paths": 5121,
+  "scope": "Complete disjoint model-ID partition with all provenance fields unchanged except path relocation. Does not certify pending ASA results or reread coordinate bytes; merge rehashes both source and target paths."
+}

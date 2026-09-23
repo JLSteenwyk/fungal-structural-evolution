@@ -1,0 +1,218 @@
+{
+  "control": "results/structural_annotations/all-completed-accessibility-controller-20260923-v1",
+  "models": 25322,
+  "observed_sites": 6758598,
+  "predecessors": [
+    {
+      "pid": 688049,
+      "create_time": 1790177540.9,
+      "config": "metadata/esmfold_original_gap_accessibility_audit_controller_config.json",
+      "receipt": "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1-audit-controller/receipt.json"
+    },
+    {
+      "pid": 2479832,
+      "create_time": 1790177363.18,
+      "config": "metadata/esmfold_long_accessibility_audit_controller_config.json",
+      "receipt": "results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit-controller/receipt.json"
+    },
+    {
+      "pid": 2481433,
+      "create_time": 1790177363.31,
+      "config": "metadata/esmfold_extended_accessibility_audit_controller_config.json",
+      "receipt": "results/structural_annotations/accessibility-esmfold-extended-20260923-v1-audit-controller/receipt.json"
+    }
+  ],
+  "stages": [
+    {
+      "name": "union",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/merge_completed_accessibility.py",
+        "--snapshot",
+        "results/structural_markers/esmfold-all-completed-20260922-v1",
+        "--inventory",
+        "results/structures/esmfold-all-completed-20260922-v1",
+        "--cohort-manifest",
+        "metadata/completed_accessibility_cohort_manifest.json",
+        "--output",
+        "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1",
+        "--cohort",
+        "results/structural_markers/esmfold-partial-v1=results/structural_annotations/accessibility-esmfold-v1=results/structural_annotations/accessibility-esmfold-full-audit-v1",
+        "--cohort",
+        "results/structural_markers/esmfold-followon-complete-v1=results/structural_annotations/accessibility-esmfold-followon-v1=results/structural_annotations/accessibility-followon-full-audit-v1",
+        "--cohort",
+        "results/structural_markers/esmfold-ecology-complete-v1=results/structural_annotations/accessibility-esmfold-ecology-v1=results/structural_annotations/accessibility-ecology-full-audit-v1",
+        "--cohort",
+        "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1=results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1=results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1-audit",
+        "--cohort",
+        "results/structural_markers/esmfold-long-complete-v1=results/structural_annotations/accessibility-esmfold-long-20260923-v1=results/structural_annotations/accessibility-esmfold-long-20260923-v1-audit",
+        "--cohort",
+        "results/structural_markers/esmfold-extended-complete-v1=results/structural_annotations/accessibility-esmfold-extended-20260923-v1=results/structural_annotations/accessibility-esmfold-extended-20260923-v1-audit"
+      ],
+      "receipt": "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "expected": {
+        "status": "complete_disjoint_audited_accessibility_union",
+        "models": 25322,
+        "residues": 12221520
+      }
+    },
+    {
+      "name": "projection",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/link_paired_sites_accessibility.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-all-completed-20260922-v1",
+        "--accessibility",
+        "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1",
+        "--audit",
+        "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1/audit",
+        "--output",
+        "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1"
+      ],
+      "receipt": "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "expected": {
+        "status": "complete_audited_accessibility_projection",
+        "markers": 122,
+        "observed_sites_linked": 6758598
+      }
+    },
+    {
+      "name": "projection_readback",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_paired_accessibility_projection.py",
+        "--projection",
+        "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-all-completed-20260922-v1",
+        "--accessibility",
+        "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1",
+        "--audit",
+        "results/structural_annotations/accessibility-esmfold-all-completed-20260923-v1/audit",
+        "--output",
+        "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/projection_readback.json"
+      ],
+      "receipt": "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/projection_readback.json",
+      "expected": {
+        "status": "passed_full_raw_accessibility_projection_readback",
+        "rows": 6758598
+      }
+    },
+    {
+      "name": "normalization",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/normalize_paired_accessibility.py",
+        "--projection",
+        "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-all-completed-20260922-v1",
+        "--config",
+        "config/accessibility_normalization.json",
+        "--output",
+        "results/structural_annotations/normalized-accessibility-esmfold-all-completed-20260923-v1"
+      ],
+      "receipt": "results/structural_annotations/normalized-accessibility-esmfold-all-completed-20260923-v1/receipt.json",
+      "expected": {
+        "status": "complete_reference_normalization",
+        "rows": 6758598
+      }
+    },
+    {
+      "name": "normalization_readback",
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_accessibility_normalization.py",
+        "--projection",
+        "results/structural_annotations/paired-accessibility-esmfold-all-completed-20260923-v1",
+        "--normalized",
+        "results/structural_annotations/normalized-accessibility-esmfold-all-completed-20260923-v1",
+        "--snapshot",
+        "results/structural_markers/esmfold-all-completed-20260922-v1",
+        "--config",
+        "config/accessibility_normalization.json",
+        "--output",
+        "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/normalization_readback.json"
+      ],
+      "receipt": "results/structural_annotations/all-completed-accessibility-controller-20260923-v1/normalization_readback.json",
+      "expected": {
+        "status": "passed_full_accessibility_normalization_readback",
+        "rows": 6758598
+      }
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 30,
+    "minimum_free_disk_gib": 100,
+    "minimum_available_memory_gib": 64,
+    "runtime_planning_hours": [
+      1,
+      24
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "config/accessibility_normalization.json": "15730c285a8f5c5641e2e6a992b384cbf8d7ed619d46b9c4ac3b3dfd2f07983f",
+    "data/literature/tien-2013/article.xml": "150ed9c7defe2ed3990e16ffaf633078131f2a90dd56e6a48d99a0d62ea066f8",
+    "metadata/completed_accessibility_cohort_manifest.json": "3c969b973af65673d2957722ddb7861a5f9df2c5de0557427120b56e04ea2ebf",
+    "metadata/completed_accessibility_union_fixture_checks.json": "97e184e9821030cf77372652c48bdc55ac27f01bc3db2b56bebb5356dfd956ad",
+    "metadata/esmfold_all_completed_paired_inputs_completed_readback.json": "ab4be9d7804864b74f7aa4e1468be198cb7566bd6c911e8a608b59cb263daecf",
+    "metadata/esmfold_ecology_accessibility_audit_controller_config.json": "af1dda9798afbd3c7c87b74627a5a27ffb0467eb2e2b6b131caa78f444e2b906",
+    "metadata/esmfold_extended_accessibility_audit_controller_config.json": "13e5e5305eac78e5f1d1b06f9012654a0876c04280a072e6930601ef7b1cc5f5",
+    "metadata/esmfold_long_accessibility_audit_controller_config.json": "ea20e19e6315b433fb857a060da117003b7388c7215e162b40fec0973b7508ba",
+    "metadata/esmfold_original_gap_accessibility_audit_controller_config.json": "3f50b2a9803fd601fdbcc470179c838a9e1b3309352487364af8a5685a7293c5",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/receipt.json": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180",
+    "results/phylogeny/paired-inputs-esmfold-ecology-v1/receipt.json": "89c9ceeafa3144a2d21591ec00c53c9303a4012fa5b0316607e238c3ef98e3ca",
+    "results/structural_annotations/accessibility-ecology-full-audit-v1/receipt.json": "b99911c21a10d815294c7c1499d5152272b83295b67c7ff2d56d6ac18e7ba8f7",
+    "results/structural_annotations/accessibility-esmfold-ecology-v1/config.json": "c829468228cdfe24f17de4be2856cc07c71fa4ac29b4c9d36755292067b59cbc",
+    "results/structural_annotations/accessibility-esmfold-extended-20260923-v1/config.json": "3f856c8e2b6fe060aef8ee00a9d8e96e8ad3d82640067a01d4dbca7b464d9ba7",
+    "results/structural_annotations/accessibility-esmfold-followon-v1/config.json": "b7d42786408336db0f2579da0d85ad9355c83243db4ae2804034f4285b7dd229",
+    "results/structural_annotations/accessibility-esmfold-full-audit-v1/receipt.json": "878c03d9c06575716c6231bf1da9feb2d1a49d4981dfee8736cc7fb4c2d8d634",
+    "results/structural_annotations/accessibility-esmfold-long-20260923-v1/config.json": "1e1ad0b07477f6317fc1e95b63a34f862a74305b86a5393fb634b2affd7f04c0",
+    "results/structural_annotations/accessibility-esmfold-original-gap-20260923-v1/config.json": "f59f815dde96c675c4a7da16db8ac82f5355488d4457190ddc8e2ae7987c7ec3",
+    "results/structural_annotations/accessibility-esmfold-v1/config.json": "4ca90ca2b52e89fe3e18ed48ade89766ffa9804cfcb457d830ef2e97a4b6e868",
+    "results/structural_annotations/accessibility-followon-full-audit-v1/receipt.json": "dbd5df5e687d3660c55a91394dff09728b9f514233c6da26901da930cee3fab0",
+    "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1/model_provenance.json": "f212e48c00bfb6ed0c88bc1038aff8e6f1c70a76564c9b978e0b49108b8e43e7",
+    "results/structural_annotations/original-accessibility-gap-inputs-20260923-v1/receipt.json": "0afcd9dda94759d1f602d3fd1c86d3c13760c3f0b5d0c57587261dad05e42d2b",
+    "results/structural_markers/esmfold-all-completed-20260922-v1/model_provenance.json": "c8a5408e2d40abb22369deb7a62fa2c680578f9cb9f5e5a11405dd1f129b1395",
+    "results/structural_markers/esmfold-all-completed-20260922-v1/receipt.json": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b",
+    "results/structural_markers/esmfold-ecology-complete-v1/model_provenance.json": "25a6546eab35f9eae19609f807e987ddff2c4c34adfd33ac16f303f048623464",
+    "results/structural_markers/esmfold-ecology-complete-v1/receipt.json": "80f7db21223aae67c4ca7375dd8adf5cd8dc28e27e6d6ce533084b7d890d3d62",
+    "results/structural_markers/esmfold-extended-complete-v1/model_provenance.json": "82340fb1a599d63be05e19a0d2dd6879f948b18b1170be0933f522512b1eebd6",
+    "results/structural_markers/esmfold-extended-complete-v1/receipt.json": "b876173320900d6cd7698528b7091691947b984703028a7b9179b9a19d220bab",
+    "results/structural_markers/esmfold-followon-complete-v1/model_provenance.json": "773e8f504b4834f610c14520c15f9e111cbbd0b60e396e19fbee7781563b9a00",
+    "results/structural_markers/esmfold-followon-complete-v1/receipt.json": "212dcfbc4ed94375ab2fb99c0fdd1985a5d7cbb9323a2b8c523a3eb0d3755dab",
+    "results/structural_markers/esmfold-long-complete-v1/model_provenance.json": "0447c651ecc96bffb3fcaf98618fed89419bdc304119838d19d0fe165004733a",
+    "results/structural_markers/esmfold-long-complete-v1/receipt.json": "bffea3367bf725988ff1a74d65b8c8ef1fcd649af73da4dab423d1a1be925101",
+    "results/structural_markers/esmfold-partial-v1/model_provenance.json": "3cb6c7693e59f7c8d4a0e75172b2320dce7fa2d927f6fe518964db7b1099fe1f",
+    "results/structural_markers/esmfold-partial-v1/receipt.json": "c31de4550f66977e8918746f0ac483643525e94200179fda319374d327e82cc5",
+    "results/structures/esmfold-all-completed-20260922-v1/receipt.json": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+    "scripts/advance_accessibility_projection.py": "5c167d4baa753698ecf2f02d5b639c3d4527c9502dbef96db4660852cfbb2a26",
+    "scripts/advance_completed_accessibility.py": "83becd31fd95bb4df8a24ccc46625b40094c65d5df969e9af98f53abd806c589",
+    "scripts/advance_prediction_snapshot.py": "00b08a1213c9deff64e48ebd696742942862b6fe8267362ae24c1c85118600c5",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/link_paired_sites_accessibility.py": "3f049f42de1a3833ec6e511e995a147534cc466c79330c59efc85fc6231845d6",
+    "scripts/merge_completed_accessibility.py": "609d81a6f9ee7e273a6bbb7849d881b8791361ca95e2e160ea05c4c8b5047772",
+    "scripts/normalize_paired_accessibility.py": "1c353d678507ec72d9cea5b158461d85a98d20ee7c547c6637914bd7a0efe1cf",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/readback_accessibility_normalization.py": "835176ea7dbba69cc20f17038350bc46da37ec6016743c756bce29618fdda37b",
+    "scripts/readback_paired_accessibility_projection.py": "108d5a72f9e5deedd79a0ea07361aca8869dcc3941bb84bb4f90b2a8a05af9a8",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "metadata/completed_accessibility_handoff_fixture_checks.json": "de972cc7b45bc009a6898a6c4fa10142cc24d60a47de2e5751f4d31556eaaf86"
+  }
+}

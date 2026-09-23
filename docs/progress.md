@@ -3748,3 +3748,14 @@ This corrects the earlier description of only two remaining ASA cohorts.
 Three ASA cohorts now run; the complete union/projection handoff remains to
 be configured with the original-cohort complement. See the
 [accessibility workflow](residue-accessibility.md).
+
+## Complete accessibility handoff queued — 23 September 2026
+
+Confirmed exact disjoint coverage of all 25,322 ESMFold models across six ASA
+inputs, including the newly identified original-cohort remainder. Queued the
+full audited merge, 122-marker projection, full raw-residue readback, two-scale
+normalization and full normalization readback after all three pending source
+audits. The stages require all 6,758,598 paired observations. Runtime source
+checks handle relocated original paths explicitly. This is queued work;
+full-cohort results and evolutionary interpretation remain pending. See the
+[accessibility workflow](residue-accessibility.md).
