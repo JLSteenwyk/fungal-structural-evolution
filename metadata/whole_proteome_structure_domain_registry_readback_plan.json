@@ -1,0 +1,33 @@
+{
+  "producer_plan": "metadata/whole_proteome_structure_domain_registry_plan.json",
+  "output": "results/domains/whole-proteome-structure-domain-registry-readback-20260923-v1",
+  "predecessor": {
+    "pid": 561247,
+    "create_time": 1790173277.72
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/models.jsonl": "7361c7de4c851f3d4a20dbe077269d738968035c425fe2f72908b120b5078dd2",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/protein_model_links.tsv": "6937557ffcb6318a8e176b2562001ca8614b897712fc7ae4a50c8a755290958d",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "scripts/build_structure_domain_registry.py": "f5806dea8e4a8a0a0561c7c04c5b882a3a1bcca99523c02dbdd98053ff092160",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/whole_proteome_structure_catalog_completed_readback.json": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "metadata/family_domain_bridge_completed_receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "metadata/whole_proteome_structure_domain_registry_plan.json": "41c19371582d26d2027caed4444bc663e2cb6815b27c0a3ebb2f958003d2757b",
+    "scripts/readback_structure_domain_registry.py": "8c9ad8f237a449467bb25346652e59aedc0e6b32d58d74e15052474dae8742d7"
+  }
+}

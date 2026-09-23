@@ -58,3 +58,29 @@ memberships, conservative exclusion on policy disagreement and rejection of an
 out-of-bounds envelope. A completed producer receipt will still be labeled
 pending independent readback. At this checkpoint the build is running and no
 registry result is claimed.
+
+## Independent full readback queued
+
+`readback_structure_domain_registry.py` now waits on the exact live registry
+producer and requires its completed receipt, plan binding and database hash.
+It reconstructs every model row from the catalog, every interval and policy
+membership from the source annotation JSON, and every species/protein link
+from both the catalog and original annotation protein table. It also checks
+full table counts, foreign keys and database integrity. Source and output hashes
+are checked before and after the readback.
+
+The auditor does not import the producer's interval logic. In particular,
+alignment overlap is recomputed by interval intersection, and partial-hit
+exclusion is recomputed from each annotation's HMM coverage, instead of trusting
+the producer's architecture summary counts. Fixtures show that stale summary
+fields do not hide actual overlaps or partial HMM matches. This remains a check
+against the same source annotations, not an independent Pfam search or a
+validation of biological domain boundaries.
+
+Plan: `metadata/whole_proteome_structure_domain_registry_readback_plan.json`.
+Output: `results/domains/whole-proteome-structure-domain-registry-readback-20260923-v1`.
+Unit: `fungal-structure-domain-readback-20260923.service`.
+The controller is live; its launch record is archived in metadata. Limits are
+one CPU, 16 GiB RAM and no swap; output planning is 0.01 GiB and uncalibrated
+runtime planning is 0.5–12 hours after the producer. No GPU or paid service is
+used. Independent validation is queued, not complete.
