@@ -1,0 +1,37 @@
+{
+  "status": "passed_full_duplication_event_identity_audit",
+  "plan_sha256": "16383f74199b5d549efc50caacd80f926275e4aa66b4623159216b87ba097a49",
+  "guides": [
+    {
+      "guide": "profile",
+      "source_genes": 5815847,
+      "source_families": 658183,
+      "event_families": 53944,
+      "counts": {
+        "events": 1204638,
+        "gene_assignments_across_events": 39699193,
+        "empty_second_side_events": 2540,
+        "Non-Terminal": 269633,
+        "Terminal": 935005
+      },
+      "artifact": "results/orthology/duplication-event-identities-20260923-v2/profile_node_counts.tsv",
+      "artifact_sha256": "c442e3556b96988d809bb632f70dd2efd5118af43370d95473dde984d21fe034"
+    },
+    {
+      "guide": "mafft",
+      "source_genes": 5815847,
+      "source_families": 658522,
+      "event_families": 53997,
+      "counts": {
+        "events": 1204919,
+        "gene_assignments_across_events": 39699509,
+        "empty_second_side_events": 2539,
+        "Non-Terminal": 269758,
+        "Terminal": 935161
+      },
+      "artifact": "results/orthology/duplication-event-identities-20260923-v2/mafft_node_counts.tsv",
+      "artifact_sha256": "9ad999239d54603cd4d12711f4dc34ab315d2e483cb4d59735402024868619e8"
+    }
+  ],
+  "scope": "All reported event genes checked for source identity, family, species-clade containment and uniqueness within event; finite bounded support, node type and unique family/gene-node event keys checked. Empty second sides retained as native multifurcation representation. Does not validate gene-tree node membership, event completeness, support calculation, rooting, timing, biological duplication/loss or independence of events. Counts are nested reported events, not independent observations."
+}

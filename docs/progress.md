@@ -4109,3 +4109,23 @@ bare IDs in different species), with a new script/plan/output and launch
 receipt suffixed `v2`. The replacement process was verified alive with CPU time
 accumulating after 30 seconds. Full event validation remains pending; this was
 an auditor mapping error, not evidence of defective native duplication output.
+
+### September 23: both duplication-event identity audits passed
+
+Revision 2 completed successfully for all reported events: profile 1,204,638
+across 53,944 families; MAFFT 1,204,919 across 53,997 families. Both source
+universes contain 5,815,847 genes. Profile has 269,633 internal and 935,005
+terminal events; MAFFT has 269,758 internal and 935,161 terminal events.
+Empty second gene lists were retained for 2,540 and 2,539 native events,
+respectively. These are nested reported events, not independent observations.
+
+Rechecked all 13 source/implementation pins, the receipt's plan binding,
+both summary hashes, unique node/type cells and complete summary totals before
+archiving `metadata/duplication_event_identity_completed_receipt_20260923.json`
+and `metadata/duplication_event_{profile,mafft}_node_counts_20260923.tsv`.
+This archival check did not repeat the full event-table traversal. The completed
+audit checks source identities, family, species-clade containment, within-event
+uniqueness, finite bounded support, node type and unique family/gene-node keys.
+It does not establish gene-tree-node membership, event completeness, support
+calculation, rooting, timing or biological duplication/loss. Those checks and
+structural divergence tests remain outstanding.
