@@ -1,0 +1,58 @@
+{
+  "database": "results/structural_clusters/full-domain-database-20260923-v1",
+  "database_plan": "metadata/full_domain_search_database_plan.json",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "output": "results/structural_clusters/full-domain-clusters-20260923-v1",
+  "predecessor": {
+    "pid": 3038042,
+    "create_time": 1790175508.33
+  },
+  "cluster_arguments": [
+    "--threads",
+    "8",
+    "--split-memory-limit",
+    "64G",
+    "--alignment-type",
+    "2",
+    "--cov-mode",
+    "0",
+    "-c",
+    "0.8",
+    "-e",
+    "0.001",
+    "-s",
+    "7.5",
+    "--max-seqs",
+    "1000",
+    "--cluster-mode",
+    "0",
+    "--cluster-reassign",
+    "1",
+    "--remove-tmp-files",
+    "0"
+  ],
+  "resources": {
+    "cpu": 8,
+    "memory_gib": 128,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "minimum_available_memory_gib": 192,
+    "output_planning_gib": 500,
+    "runtime_planning_hours": [
+      6,
+      168
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/full_domain_search_database_plan.json": "f8dd57ad5e2fbc8930f8a76cf79ba3602f2db7c1d09fcc1addd90262d805cad1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+    "scripts/advance_domain_clustering.py": "873cb24880309409f87fc1d4da4e4d43ceeb69cc97a99ed9f2795667b9767f4c",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_clustering_fixture_checks.json": "a7f272ce5e9c6113327098b891f4a178578d9a5c17a5baf87e858461c836e058"
+  },
+  "scope": "All successfully exported candidate intervals from the full domain manifest, preserving both boundary alternatives. Rejections stay explicitly excluded; confidence and homology confirmation remain separate."
+}

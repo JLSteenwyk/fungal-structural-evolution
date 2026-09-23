@@ -3677,3 +3677,14 @@ the alignment length. These overlapping descriptive bins support retaining
 both boundary alternatives; biological boundaries and structural effects
 remain unvalidated. Scripts, complete local table and archived receipts are
 documented in the [domain registry report](whole-proteome-structure-domain-registry-20260923.md).
+
+## Full domain clustering queued — 23 September 2026
+
+Queued CPU clustering of all successfully exported domain intervals after the
+full atom audit and complete sequence/coordinate-checked Foldseek database.
+The pinned controller verifies complete partition membership and representative
+identity; resource gates and an emergency disk reserve bound native execution.
+Both boundary alternatives remain identifiable and must not be treated as
+independent observations. Candidate clustering, homology confirmation and
+parameter/boundary sensitivity remain unfinished. See the
+[domain workflow](whole-proteome-structure-domain-registry-20260923.md).

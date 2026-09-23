@@ -317,3 +317,40 @@ Use a fresh output directory when rerunning the producer. This bounded local
 CPU summary does not modify extraction inputs or launch GPU prediction.
 Coordinate audits, PAE qualification and comparative structural tests remain
 separate stages.
+
+## Full domain structural clustering queued
+
+`fungal-domain-clustering-20260923.service` waits for the exact full-domain
+Foldseek database controller process, then requires its passing full sequence
+and coordinate readback receipt, bound plan and all database artifact hashes.
+The controller is `scripts/advance_domain_clustering.py`, with pinned plan
+`metadata/domain_clustering_plan.json`; its verified live process is recorded
+in `metadata/domain_clustering_launch.json`. The output directory is
+`results/structural_clusters/full-domain-clusters-20260923-v1`.
+
+The candidate partition uses the same initial settings as the queued
+whole-protein clustering: native alignment type 2, bidirectional coverage 0.8,
+E-value 0.001, sensitivity 7.5, maximum 1,000 prefilter candidates, greedy
+set-cover clustering and reassignment. These are project discovery settings,
+not validated homology cutoffs. Every successfully exported interval is
+included; rejected intervals and missing-backbone counts remain explicit.
+Alignment and envelope alternatives are both retained and are not independent
+biological observations. Boundary and parameter sensitivity remain required.
+
+After clustering and TSV export, every member must be a known interval,
+assigned exactly once, and every representative must have self-membership.
+The entire database is rehashed after execution. Partition fixtures passed a
+valid multi-cluster case and rejected missing, duplicate, unknown and invalid
+representative assignments. These tests do not independently verify native
+alignment thresholds or the scientific validity of cluster membership.
+
+Resources were assessed before queuing: approximately 868 GiB available RAM
+and 11,831 GiB free disk. The service allows eight CPU equivalents, 128 GiB
+RAM, no swap, no GPU and no paid resources; native split-memory is 64G.
+Execution requires 192 GiB available RAM and 2 TiB free disk, with an emergency
+1 TiB disk reserve that stops this controller's own native process group.
+Output planning is 500 GiB and runtime planning is an uncalibrated 6–168 hours
+after database completion. Temporary clustering files are retained.
+
+Clustering is queued, not completed. Candidate structural groups do not by
+themselves establish homology, orthology, function or evolutionary events.
