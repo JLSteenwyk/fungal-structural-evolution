@@ -4312,3 +4312,19 @@ change. Confidence qualification and phylogenetic integration remain pending.
 Queued the full 122-marker, 44,198-site exposure diagnostic behind the identified live paired-fit controller (PID 55253), requiring both its final receipt and the complete 488-fit audit. The new controller uses completed normalized accessibility for 6,758,598 observations and will independently rescore every AA/3Di site and read back all exposure quantiles. The 34 pinned files include the accessibility projection and normalization readbacks, copy-review configuration, inputs and recursive local script dependencies. Configuration/producer checks passed, and systemd service `fungal-completed-site-exposure-20260923` was observed waiting for that producer. Plan: `metadata/completed_site_exposure_plan.json`; launch: `metadata/completed_site_exposure_launch.json`.
 
 Resource envelope: one CPU, 32 GiB hard memory limit, no swap, 64 GiB available-memory and 20 GiB free-disk gates, 2 GiB output allowance; 0.25–12 hours is an uncalibrated planning range. No GPU work or paid resources. This produces minimum character-change counts on fixed AA topologies and extant exposure summaries; branch rates, ancestral exposure, optimization sensitivity and coupling inference remain separate and incomplete.
+
+
+### September 23: full domain-coordinate source validation complete
+
+All 428 extraction batches passed full source readback: 427,255 models and
+1,078,592 exported domain intervals, with no rejected or missing-backbone
+intervals. The audit checks every manifest/job identity and exported atom,
+residue, coordinate, occupancy and confidence against original CIF arrays
+and fragment sequences. Both plans and all 16 pinned file entries were
+rechecked before archiving the producer and readback receipts in metadata.
+
+The existing domain database controller has advanced beyond its predecessor
+wait and is checking source archives before conversion. Database completion
+is still pending. This validation shares the CIF lexical parser and does not
+establish biological domain boundaries, PAE qualification, homology or
+evolutionary change; boundary sensitivity and clustering remain downstream.
