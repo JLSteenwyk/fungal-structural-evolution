@@ -102,3 +102,34 @@ exactly explained omission from an unexplained omission and reject unknown
 flagged identities and wrong source-family assignments. Reproduce with
 `python scripts/check_root_hog_disposition.py`; full-data reproduction requires
 a fresh output path in `metadata/profile_root_hog_disposition_plan.json`.
+
+## Resolved-tree placement of every unflagged root omission
+
+The September 23 parent-clade trace completed for all **5,942 unflagged missing
+root genes**, spanning **1,712 families and 486 taxa**. All lie outside the
+emitted root HOG parent clades. In these affected families, every one of the
+**24,116 emitted root HOG memberships** equals the descendants of its named
+resolved-tree parent node after removing native flagged genes. Thus the
+unflagged missing genes are not dropped from within those represented clades.
+Every omitted gene's immediate parent also has at least one emitted HOG below
+it; none requires climbing an additional ancestral edge to reach such a join.
+
+These are properties of the native output partition, not independent evidence
+that the ancestral grouping or duplication assignments are biologically correct.
+The native rules that selected these parent clades still need semantic review.
+Keep the omitted genes in the source inventory and distinguish them from
+biological absences in subsequent duplication, loss and structure comparisons.
+No missing gene was reassigned and no native output was changed.
+
+Reproduce with `scripts/trace_root_hog_omissions.py --plan
+metadata/profile_root_hog_omission_trace_plan.json` using a fresh output path.
+The pinned plan uses one CPU, 16 GiB RAM, no swap and no GPU. Full results remain
+at `results/orthology/profile-root-hog-omission-trace-20260923-v1`; the archived
+receipt is `metadata/profile_root_hog_omission_trace_receipt.json`.
+`python scripts/check_root_hog_omission_trace.py` passed exact placement and
+multi-edge join fixtures and rejects wrong membership, nested root clades,
+missing targets and already assigned targets. A separate full-table readback
+matched every output identity to the source missing-gene inventory, checked
+uniqueness and counts, and summarized join distances; its record is
+`metadata/profile_root_hog_omission_trace_readback.json`. That readback checks
+identities and table consistency, not an independent reconstruction of trees.

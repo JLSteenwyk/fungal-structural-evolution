@@ -1,0 +1,27 @@
+{
+  "missing": "results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv",
+  "root_hogs": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Phylogenetic_Hierarchical_Orthogroups/N0.tsv",
+  "resolved_trees": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+  "output": "results/orthology/profile-root-hog-omission-trace-20260923-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      30
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv": "a202b4c34c025e8659aa9f06f150b3feea82c7a08f11d21e5cf44da520452c43",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "83e4a5aac59c374ddfef4839794afa90c105308414ea06bcf76d4f57ab386532",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "scripts/trace_root_hog_omissions.py": "2f085b3c0dc3bd4ec2c565eaa561a042515d5f4cb87dfc3b16e2085e53ec4fa8",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/profile_root_hog_disposition_receipt.json": "7f64f36834dbbc22ffcc2e47cf271dbf0740c1e6f4e1dc31342d9b4a3fe24866"
+  }
+}
