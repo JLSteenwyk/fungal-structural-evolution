@@ -4348,3 +4348,27 @@ Resource envelope: four CPU equivalents, 16 GiB hard memory, no swap or GPU;
 1–168 hours uncalibrated planning range. No rate-comparison result is claimed
 yet. This extends the earlier 89-marker workflow; coupling inference, branch
 change estimates and evolutionary interpretation remain subsequent work.
+
+
+### September 23: full-cohort conditional coupling and marker sensitivity queued
+
+Queued the established conditional site-coupling workflow for all 122 markers
+and 44,198 sites, gated on the exact live full-cohort rate-comparison controller,
+its configuration hash and validated frame handoff. The 24 specifications
+span three structural-alphabet models, two rate models, two RSA scales and
+two covariate sets. Numerical coefficient/covariance checks, 2,000 whole-marker
+bootstrap draws (48,000 fits) and omission of every marker (2,928 fits) remain
+required before completion. The new runner changes only the accepted upstream
+completion status; previous live scripts and plans are unchanged.
+
+Syntax and configuration checks passed; the service is live and waiting.
+49 pinned dependencies, configuration and launch identity are archived in
+`metadata/completed_site_coupling_{plan,launch}.json`. Resources: one CPU,
+32 GiB hard memory, no swap or GPU, 32 GiB available-memory and 20 GiB free-disk
+gates, 4 GiB output per stage, 0.25–24 hours per stage as uncalibrated planning
+ranges. Approximately 920 GiB memory and 12 TiB disk were available.
+
+This is exploratory conditional association with marker intercepts and
+marker-cluster covariance, not full propagation of phylogenetic/rate uncertainty,
+branch acceleration, causal exposure, ecological or selection inference.
+No full-cohort coupling result is claimed yet.
