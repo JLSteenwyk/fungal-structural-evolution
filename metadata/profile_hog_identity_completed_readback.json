@@ -1,0 +1,20 @@
+{
+  "status": "passed_all_hog_identity_and_species_clade_checks",
+  "source_proteins": 5815847,
+  "source_families": 658183,
+  "node_tables": 525,
+  "hog_rows": 9277304,
+  "gene_assignments_across_levels": 93034008,
+  "input_hashes": {
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Species_Tree/SpeciesTree_rooted_node_labels.txt": "01ac1b2279eef33cc31874f52ffd7aacc661a6ddcafd9c171b7cc97c6b99f6ac"
+  },
+  "script_sha256": "1428e8eb891f4efe2a362f59da9617b8fa006330301a818702251fc52e8f135f",
+  "cluster_parser_sha256": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+  "artifacts": {
+    "node_summary.tsv": "8b32550d4709724d3c40d39719e45312a0874b2c4f62401289b1027c265ce0f2"
+  },
+  "scope": "Every emitted HOG protein checked against source taxon/protein/family identities, species-tree clade containment and nonduplication within each hierarchical level. Expected internal-node table set checked. Repeated genes across levels are expected. Does not prove completeness of gene assignment, ancestral HOG membership, parent gene-tree clades, nested orthology, rooting or duplication events."
+}

@@ -52,3 +52,53 @@ to a bounded 16 MiB and uses a fresh output directory and service. An added
 160-kilobyte cell fixture verifies that semantic duplicate checks still run
 past the old parser limit. The original implementation remains in Git at
 commit `2451379`; recovery plans and launch records identify the corrected run.
+
+## Completed full identity audit and root disposition
+
+After the September 23 reboot, the read-only audit completed in fresh output
+`results/orthology/profile-hog-identities-20260923-v3`. All 525 node tables
+passed: 9,277,304 HOG rows and 93,034,008 gene assignments summed across levels.
+The latter is not a distinct-gene count. The completed receipt and all per-node
+counts/hashes are archived as `metadata/profile_hog_identity_completed_readback.json`
+and `metadata/profile_hog_identity_node_summary.tsv`.
+
+A separate full-data source/root comparison now accounts for missing root
+assignments using `scripts/resolve_root_hog_gene_disposition.py`:
+
+| Disposition | Genes |
+|---|---:|
+| Source proteins | 5,815,847 |
+| Source singleton families (outside this root comparison) | 500,113 |
+| Source proteins in nonsingleton families | 5,315,734 |
+| Assigned to 183,956 root HOGs | 5,274,605 |
+| Missing from root HOGs | 41,129 |
+| Missing and in native phylogenetically misplaced lists | 35,187 |
+| Missing without that native flag | 5,942 |
+
+Every native flagged gene is absent from the root HOG table. However, the
+flagged-gene lists do **not** fully explain the missing set. All 5,942 remaining
+genes belong to families of four or more genes; those families are covered by
+the previously passed full resolved-tree membership readback. Their absence
+from root HOGs therefore does not imply absence from the resolved gene trees.
+The native HOG writer explicitly skips leaves carrying its `X` flag. Its other
+ancestral-group and duplication rules still need examination before assigning
+a cause to the remaining omissions. No root-completeness, biological gene-loss,
+contamination or horizontal-transfer claim is justified by these counts.
+
+The new analysis checks every emitted root protein against the original
+species/protein/family maps, rejects repeated or wrong-family assignments,
+retains all unassigned nonsingleton genes and compares their exact identities
+with all 519 native flagged-gene files. All missing genes span 5,688 families
+and 521 taxa. Per-gene details remain outside Git at
+`results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv`;
+its checksum, counts and per-taxon summary are archived in
+`metadata/profile_root_hog_disposition_receipt.json` and
+`metadata/profile_root_hog_taxon_disposition.tsv`.
+
+The plan pins 525 input/implementation files, uses one CPU and 32 GiB RAM
+without swap, allows 0.1 GiB output and planned 1–30 minutes. It completed in
+approximately 31 CPU seconds. Four full-CLI fixture cases distinguish an
+exactly explained omission from an unexplained omission and reject unknown
+flagged identities and wrong source-family assignments. Reproduce with
+`python scripts/check_root_hog_disposition.py`; full-data reproduction requires
+a fresh output path in `metadata/profile_root_hog_disposition_plan.json`.
