@@ -1,0 +1,13 @@
+{
+  "unit": "fungal-mafft-root-hog-native-replay-20260923.service",
+  "pid": 1188072,
+  "create_time": 1790183409.27,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "scripts/replay_all_root_hog_omissions.py",
+    "--plan",
+    "metadata/mafft_root_hog_native_replay_plan.json"
+  ],
+  "plan": "metadata/mafft_root_hog_native_replay_plan.json",
+  "plan_sha256": "c43a44a0fae5d70c2d4c503347d27da40a1f07d16ba86051a89503aacfd4bb5e"
+}

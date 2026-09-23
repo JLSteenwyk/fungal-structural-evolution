@@ -4000,3 +4000,19 @@ these placements alone do not establish biological loss or duplication timing.
 The refreshed AlphaFold confidence producer also finished and automatically
 advanced to the full directional-context readback (live worker confirmed).
 Confidence-filtered downstream inference remains gated on that validation.
+
+### September 23: full MAFFT native classification replay launched
+
+Started the unchanged native replay script for every affected MAFFT family:
+1,718 families containing 5,972 unflagged root omissions. The new plan pins
+the MAFFT source identities, resolved trees, species tree, root groups and
+installed implementation. It compares complete affected-family root
+memberships, flags and omissions and preserves any discrepancies. Resources
+are one CPU, 32 GiB RAM, no swap/GPU, 1 GiB planned output and a 1–48 hour
+planning range; the earlier profile replay took about 2.6 hours, which does not
+guarantee the MAFFT runtime. The live worker was verified and its identity is
+recorded in `metadata/mafft_root_hog_native_replay_launch.json`; the plan is
+`metadata/mafft_root_hog_native_replay_plan.json`. Output is
+`results/orthology/mafft-root-hog-native-replay-20260923-v1`.
+This tests the algorithm on existing resolved trees, not independent rooting
+or biological event validity. Full replay completion remains pending.
