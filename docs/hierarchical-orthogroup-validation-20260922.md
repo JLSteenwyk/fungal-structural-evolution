@@ -159,3 +159,27 @@ CPU/memory, opens no native output files and changes neither the installed
 package nor production group assignments. Future loss analyses must retain
 explicit unassigned states rather than converting these missing assignments
 to inferred losses.
+
+## Production-family replay
+
+A deterministic selection of the smallest affected family chose **OG0010309**
+(seven genes). Reclassifying its existing resolved tree with the installed
+native reconciliation code, then running the native HOG writer, reproduced
+both emitted root parent clades (`n2`, `n5`) and their exact memberships.
+The same gene, `O400682_XP_011409098.1`, was omitted; no genes were marked as
+misplaced in this replay. The reconstructed duplication at gene-tree node
+`n1` maps to species-tree node `N0`, matching the mechanism above. Two other
+duplications (`n3`, `n4`) map to native species 30. The native root-duplication
+support is 0.0038022813688212928; this is the software's species-overlap
+fraction, not a bootstrap probability or independent evidence of an ancient
+duplication.
+
+Reproduce with `.cache/envs/orthofinder/bin/python
+scripts/replay_root_hog_omission_case.py`. The result is archived at
+`metadata/native_root_hog_production_case_replay.json`, with source and code
+checksums. This small CPU-only diagnostic completed in seconds and did not
+modify native outputs. It starts from the already resolved production tree:
+initial rooting and tree resolution are not independently rerun. It confirms
+one real instance rather than establishing the cause of all omissions or the
+biological correctness of the duplication assignment. The full affected-family
+replay and guide sensitivity remain outstanding.

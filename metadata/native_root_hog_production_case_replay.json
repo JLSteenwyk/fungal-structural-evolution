@@ -1,0 +1,40 @@
+{
+  "status": "passed_native_resolved_tree_case_replay",
+  "family": "OG0010309",
+  "genes": 7,
+  "omitted": [
+    "O400682_XP_011409098.1"
+  ],
+  "native_suspect_genes": [],
+  "root_parent_clades": [
+    "n2",
+    "n5"
+  ],
+  "replayed_duplications": [
+    {
+      "species_node": "N0",
+      "gene_node": "n1",
+      "support": 0.0038022813688212928
+    },
+    {
+      "species_node": "30",
+      "gene_node": "n3",
+      "support": 1.0
+    },
+    {
+      "species_node": "30",
+      "gene_node": "n4",
+      "support": 1.0
+    }
+  ],
+  "pins": {
+    "results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv": "a202b4c34c025e8659aa9f06f150b3feea82c7a08f11d21e5cf44da520452c43",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Species_Tree/SpeciesTree_rooted_node_labels.txt": "01ac1b2279eef33cc31874f52ffd7aacc661a6ddcafd9c171b7cc97c6b99f6ac",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "83e4a5aac59c374ddfef4839794afa90c105308414ea06bcf76d4f57ab386532",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/trees2ologs_of.py": "e1e570832d85d807d16579718648b735e792909c07a5a69012125b49ea600d50",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/replay_root_hog_omission_case.py": "b14fc8ffdce7fdadac525637baeceb58d471abf41ce6baf3660c9f774767b224"
+  },
+  "scope": "Smallest affected family selected deterministically; native reconciliation classification rerun on its already resolved tree, followed by exact root parent/membership comparison. Does not rerun initial rooting/tree resolution, independently validate biological events or establish all-family causality."
+}
