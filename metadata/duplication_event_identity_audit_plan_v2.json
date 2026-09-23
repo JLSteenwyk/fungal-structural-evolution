@@ -1,0 +1,45 @@
+{
+  "guides": [
+    {
+      "guide": "profile",
+      "source": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory",
+      "result": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile"
+    },
+    {
+      "guide": "mafft",
+      "source": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory",
+      "result": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft"
+    }
+  ],
+  "pins": {
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Species_Tree/SpeciesTree_rooted_node_labels.txt": "01ac1b2279eef33cc31874f52ffd7aacc661a6ddcafd9c171b7cc97c6b99f6ac",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Species_Tree/SpeciesTree_rooted_node_labels.txt": "b1d559989c67e29d206f53affc5e12c338af10d073d1fc582b0168a78fc471ee",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/expanded_reconciliation_both_native_completed_state_20260923.json": "de576ad895f55276a4f99473b3a527b5e3e4dd68475c0ffc3516ee33da3f8b5c",
+    "scripts/audit_duplication_event_identities_v2.py": "9382cdff44679f06dc068dfc84b13bbed3ee555b6c5a71745b1524dbe34d89a2"
+  },
+  "output": "results/orthology/duplication-event-identities-20260923-v2",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.1,
+      4
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "validation": "Valid binary and empty-second-side forms checked; 10 corruptions rejected (family, clade, empty node, NaN/range support, type, unknown/repeated/outside gene, insufficient genes).",
+  "revision_reason": "Native event labels are taxon + underscore + source protein ID; v1 stopped on unknown protein before completing any guide."
+}

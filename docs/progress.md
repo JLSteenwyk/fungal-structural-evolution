@@ -4100,3 +4100,12 @@ The verified live process is recorded in
 32 GiB RAM, no swap, no GPU and no paid resources. Planning estimates are
 0.01 GiB output and 0.1–4 hours (uncalibrated). The latest resource check showed
 12 TiB available disk and 931 GiB available memory. Completion is pending.
+
+The first duplication audit terminated with `Unknown protein`: native event
+labels use `taxon + '_' + protein`, whereas SequenceIDs stores the bare protein.
+No guide passed that run. Preserved its script, plan and output. Revision 2
+constructs the exact taxon-qualified lookup (also avoiding collisions between
+bare IDs in different species), with a new script/plan/output and launch
+receipt suffixed `v2`. The replacement process was verified alive with CPU time
+accumulating after 30 seconds. Full event validation remains pending; this was
+an auditor mapping error, not evidence of defective native duplication output.
