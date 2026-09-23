@@ -1,0 +1,32 @@
+{
+  "producer_plan": "metadata/domain_coordinate_extraction_plan.json",
+  "output": "results/domains/domain-coordinate-readback-20260923-v1",
+  "predecessor": {
+    "pid": 1539007,
+    "create_time": 1790174523.54
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      6,
+      120
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/models.jsonl": "7361c7de4c851f3d4a20dbe077269d738968035c425fe2f72908b120b5078dd2",
+    "results/domains/domain-extraction-manifest-20260923-v1/receipt.json": "9b6dd32cea51c151953ee3aa73d7a13628917aff216694b83396d97dd99a6069",
+    "metadata/domain_extraction_manifest_readback.json": "3ee45083e3e738943285626795ff48b45b58f5a4ed6937dad7c7c758b099e4cd",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/check_domain_coordinate_extraction.py": "93370d0cde737e42cbffa13a421339bb40b961f2121351fa3a5613407ec2495b",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_coordinate_extraction_plan.json": "526b647df59e93aeda726e5007fbe3603930dc3332bacb6d65f3e7ca36c61412",
+    "scripts/readback_domain_coordinate_archives.py": "9e703dd752e958281103739b27cd20666c7b2156ee994a0fd0bf017efdd220d1"
+  }
+}

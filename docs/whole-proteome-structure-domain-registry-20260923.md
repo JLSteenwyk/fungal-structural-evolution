@@ -188,3 +188,33 @@ disk before starting and checks a 1 TiB reserve before each source model. The
 On a worker failure, queued work is cancelled and already running bounded jobs
 finish or reach their own checks. No GPU prediction, paid infrastructure,
 biological domain-boundary validation or evolutionary inference is performed.
+
+## Full domain archive readback queued
+
+`readback_domain_coordinate_archives.py` now waits for the exact extraction
+process and requires its completed receipt and plan binding. Before checking
+archives it matches every job model to the original catalog and every job
+interval to the full verified manifest, rejecting duplicate or missing scope.
+It then uses four CPU workers to read every completed archive and disposition
+record, checking hashes, exact tar membership and each exported atom against
+original CIF arrays. Checks cover source/local residue numbering, atom and
+residue names, elements, coordinates, occupancy, confidence, fragment sequence,
+missing-backbone positions and confidence summaries. Standard PDB rounding
+is allowed explicitly; altered coordinates are rejected by a fixture.
+
+The auditor reconstructs expected atom sets and decodes PDB fixed-width fields
+without importing the producer's extraction/serialization functions. The CIF
+lexical parser is shared, so this is not a wholly independent file parser.
+Rejected intervals must retain known identities and reasons; their rejection
+causes are not independently adjudicated by this pass. The resulting receipt
+will distinguish checked exports from excluded intervals. No PAE qualification
+or biological boundary inference is implied.
+
+Plan: `metadata/domain_coordinate_archive_readback_plan.json`.
+Output: `results/domains/domain-coordinate-readback-20260923-v1`.
+Unit: `fungal-domain-coordinate-readback-20260923.service`.
+The live controller is recorded in `metadata/domain_coordinate_archive_readback_launch.json`.
+Fixtures passed a complete real-source archive and rejected a changed coordinate.
+Limits are four CPUs, 32 GiB memory, no swap and no GPU; output planning is
+0.01 GiB and runtime planning is an uncalibrated 6–120 hours after extraction.
+The readback is queued and not yet a completed validation result.
