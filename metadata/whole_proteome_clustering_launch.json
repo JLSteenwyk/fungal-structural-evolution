@@ -1,0 +1,17 @@
+{
+  "unit": "fungal-whole-proteome-clustering-20260923.service",
+  "pid": 2842990,
+  "create_time": 1790173040.4,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_whole_proteome_clustering.py",
+    "--plan",
+    "metadata/whole_proteome_clustering_plan.json"
+  ],
+  "observed_at": "2026-09-23T14:18:00.287444+00:00",
+  "systemd": {
+    "MainPID": "2842990",
+    "ActiveState": "active"
+  },
+  "status": "live_waiting_for_database_readback"
+}

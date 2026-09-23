@@ -206,3 +206,42 @@ This supersedes the pending verification status in the launch record above.
 Matching totals do not establish matching memberships between guides. These
 counts identify available taxon coverage; evolutionary eligibility still
 requires homology, alignment, confidence and reconciliation checks.
+
+## Whole-protein structural clustering queued — September 23
+
+A CPU controller now waits for the recovered full-database builder and its
+successful sequence/database readback. It rechecks every database artifact
+hash and the plan binding before running on all 1,290,278 catalog models.
+Outputs go to `results/structural_clusters/whole-proteome-afdb-clusters-20260923-v1`;
+configuration and live launch records are in
+`metadata/whole_proteome_clustering_plan.json` and
+`metadata/whole_proteome_clustering_launch.json`.
+
+The pinned Foldseek executable runs `cluster` with 3Di+AA alignment, coverage
+0.8 in both query and target (`--cov-mode 0`), E-value 0.001, sensitivity 7.5,
+maximum 1,000 prefilter results per query, greedy set-cover mode and native
+cluster reassignment enabled. These are project discovery settings; sensitivity
+and threshold comparisons remain necessary. The finite prefilter limit can
+miss relationships. Database pLDDT masking affects seeding and does not mean
+all aligned positions pass confidence criteria. Native reassignment is not an
+independent verification of every final representative/member alignment.
+Parameter meanings were checked against the installed executable's help and
+[official Foldseek documentation](https://github.com/steineggerlab/foldseek#cluster).
+
+The controller converts the native partition to TSV and requires every input
+model exactly once, known representatives, and representative self-membership.
+It emits cluster sizes and hashes. Membership fixtures accept a complete
+partition and reject duplicates, unknown members, incomplete coverage and
+missing representative membership. This validates the partition bookkeeping,
+not structural homology or evolutionary events. Orthology, domain-level
+clustering, direct structural comparisons and confidence/threshold sensitivity
+remain separate requirements.
+
+Resources are eight CPU threads, 128 GiB RAM, no swap, and a 64 GiB prefilter
+split-memory setting. The input contains 514,418,704 residues. Planning allows
+500 GiB output and 6–168 hours after database readiness; these are uncalibrated
+allowances, not a benchmark or ETA. Launch gates require 2 TiB free disk and
+192 GiB available RAM. A running-stage monitor terminates only its own native
+process group if free disk drops below 1 TiB. Temporary files are retained.
+No GPUs, external service or paid infrastructure are used. At this checkpoint
+the controller is live and waiting; no clustering result is claimed.
