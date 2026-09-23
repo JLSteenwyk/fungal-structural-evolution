@@ -133,3 +133,29 @@ matched every output identity to the source missing-gene inventory, checked
 uniqueness and counts, and summarized join distances; its record is
 `metadata/profile_root_hog_omission_trace_readback.json`. That readback checks
 identities and table consistency, not an independent reconstruction of trees.
+
+## Native writer mechanism reproduced
+
+A minimal, read-only reproduction now exercises the installed `HogWriter`
+directly, using species tree `(0,1)N0` and gene tree
+`(0_a,((0_b,1_b)n2,(0_c,1_c)n3)n1)n0`. With `n1` assigned a duplication
+at `N0`, the writer emits root HOGs at `n2` and `n3`, omitting `0_a`.
+With that duplication flag removed, the same topology yields one root HOG
+at `n0`, including all five genes. No misplaced-gene flags are used.
+
+The mechanism combines the writer's suppression of ancestral HOGs above a
+duplication with its immediate return for leaf nodes: the isolated leaf does
+not receive its own fallback HOG. The reproduction assigns the reconciliation
+features explicitly; it does not validate the upstream inference of those
+features. It demonstrates how an unflagged gene can be omitted without being
+absent from the source or tree. The production placement results are consistent
+with this mechanism, but attributing all 5,942 cases to it still requires
+reconstructing and checking their actual native reconciliation state.
+
+Run `.cache/envs/orthofinder/bin/python scripts/check_native_hog_leaf_omission.py`.
+The archived result `metadata/native_hog_leaf_omission_reproduction.json`
+records the implementation hash, both outcomes and scope. It uses negligible
+CPU/memory, opens no native output files and changes neither the installed
+package nor production group assignments. Future loss analyses must retain
+explicit unassigned states rather than converting these missing assignments
+to inferred losses.

@@ -1,0 +1,22 @@
+{
+  "status": "passed_native_hog_leaf_omission_reproduction",
+  "native_module": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/gene_tree_inference/trees2ologs_of.py",
+  "native_module_sha256": "e1e570832d85d807d16579718648b735e792909c07a5a69012125b49ea600d50",
+  "script_sha256": "7afb4acee01390f1a96bd94e15116b1a94bde58c071e857b0e5b8006b4eb7f76",
+  "with_nested_root_duplication": {
+    "parent_clades": [
+      "n2",
+      "n3"
+    ],
+    "omitted": [
+      "0_a"
+    ]
+  },
+  "without_duplication": {
+    "parent_clades": [
+      "n0"
+    ],
+    "omitted": []
+  },
+  "scope": "Synthetic assigned reconciliation features exercise the installed HOG writer. Demonstrates a possible omission mechanism and counterfactual, not independent reconciliation or proof of the cause of every production omission. No native outputs written."
+}
