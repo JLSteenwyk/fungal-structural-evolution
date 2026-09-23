@@ -4447,3 +4447,26 @@ counts and fractions. Exact results and provenance are archived in
 receipt. This descriptive pattern motivates boundary-sensitive follow-up;
 it does not establish causality, independent observations, biological
 divergence or separate-run clustering robustness.
+
+### September 23: boundary-dependent cluster disagreement figure
+
+Exported and visually reviewed [SVG](figures/boundary_cluster_extension.svg)
+and [PDF](figures/boundary_cluster_extension.pdf) for all 594,797 paired domain
+boundaries. The script verifies the audited summary hash, six disjoint bins,
+all denominators and proportions, and all six plotted bar heights. The zero
+extension bin is an identity control because identical intervals share one
+database entry. Different-cluster fractions increase from 10.8% for 1–4 added
+residues to 78.4% for at least 50; these are descriptive within-partition
+observations, not independent replicates or evidence of evolutionary events.
+
+Reproduce with:
+
+```bash
+python scripts/plot_boundary_cluster_extension.py --table metadata/domain_boundary_extension_cluster_summary_20260923.tsv --receipt metadata/domain_boundary_extension_cluster_summary_receipt_20260923.json --output results/structural_clusters/domain-boundary-extension-figure-20260923-v1
+```
+
+Use a fresh output directory when rerunning. Figure provenance and visual
+review are recorded in
+`metadata/domain_boundary_extension_figure_receipt_20260923.json`.
+Phylogenetic fitting and direct structural comparisons remain active; the
+overall evolutionary analyses and missing-structure coverage remain incomplete.
