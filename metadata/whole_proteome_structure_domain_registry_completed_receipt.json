@@ -1,0 +1,21 @@
+{
+  "status": "complete_structure_domain_interval_registry_pending_independent_readback",
+  "counts": {
+    "models": 1290278,
+    "models_without_hits": 456081,
+    "segments": 1319276,
+    "policy_hits": 5251715,
+    "protein_links": 1319513
+  },
+  "candidate_domain_intervals_by_policy": {
+    "alignment_bitscore": 594127,
+    "alignment_evalue": 594425,
+    "envelope_bitscore": 592279,
+    "envelope_evalue": 592574
+  },
+  "plan_sha256": "41c19371582d26d2027caed4444bc663e2cb6815b27c0a3ebb2f958003d2757b",
+  "database_sha256": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+  "elapsed_seconds": 264.2481949180001,
+  "coordinate_convention": "1-based inclusive source protein positions; alignment and envelope boundaries retained separately",
+  "scope": "Full exact-sequence model/annotation and protein-link join with all policy alternatives and Pfam types. Candidate Domain intervals require conservative architecture, HMM coverage>=0.70 and alignment length>=30. No residue confidence or PAE qualification, coordinate extraction, validated structural boundaries, homology or evolutionary events."
+}

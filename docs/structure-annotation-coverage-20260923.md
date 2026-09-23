@@ -36,3 +36,37 @@ The process was confirmed live and recorded in
 is an uncalibrated 0.25–4 hours. The source hashes come from the previously
 audited catalogs/databases and are checked before and after the run. Results
 are pending; no coverage contrast is reported yet.
+
+## Completed coverage inventory and figure
+
+The full 526-taxon, 1,052-stratum comparison passed both aggregation paths and
+all original per-taxon catalog totals. Pooled availability is:
+
+| Annotation status | Representative proteins | With catalog models | Availability |
+| --- | ---: | ---: | ---: |
+| At least one Pfam hit | 3,792,842 | 855,725 | 22.56% |
+| No Pfam hit | 2,023,005 | 463,788 | 22.93% |
+
+Within taxa, availability is higher for hit-containing proteins in 373 taxa,
+lower in 123 and equal in 30. The median within-taxon difference is +0.078
+percentage points, ranging from −23.70 to +26.34 points. These unweighted taxon
+summaries and protein-weighted pooled fractions answer different descriptive
+questions; neither demonstrates equal ascertainment or a causal annotation
+effect. The per-taxon strata remain available for later sampling sensitivities.
+
+![Structural availability by annotation status](figures/structure_annotation_coverage.svg)
+
+Panel A pools protein records; panel B counts each taxon once, including the
+30 ties in the bin containing zero. No confidence intervals or hypothesis tests
+are implied. Proteins and taxa are dependent observations. The catalog excludes
+local ESMFold additions and predates confidence qualification.
+
+The figure was produced by `scripts/plot_structure_annotation_coverage.py`, with
+all fractions and pooled totals checked against the full table and every taxon
+accounted for in the histogram. SVG/PDF exports were generated and the rendered
+figure visually reviewed. Source bindings, exact histogram bins/counts and
+summary values are recorded in
+`metadata/structure_annotation_coverage_figure_receipt.json`. The completed
+analysis receipt and per-taxon table are archived as
+`metadata/structure_annotation_coverage_completed_receipt.json` and
+`metadata/structure_annotation_taxon_coverage.tsv`.

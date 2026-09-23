@@ -3621,3 +3621,19 @@ The producer validates sequence identity and coordinate bounds before emitting
 a domain-candidate registry. It does not claim confidence-qualified domains or
 structural boundaries. Independent readback and coordinate extraction remain
 required. See [registry design and execution](whole-proteome-structure-domain-registry-20260923.md).
+
+## Domain registry and annotation-stratified coverage completed — 23 September 2026
+
+The all-model domain registry and independent reconstruction completed:
+1,290,278 models, 1,319,276 annotation intervals, all four policy memberships
+and 1,319,513 protein links. The registry preserves 456,081 models without
+Pfam hits. Domain candidates remain unqualified by residue confidence or PAE;
+coordinate extraction is still required.
+
+The complete 5,815,847-protein availability analysis passed two independent
+aggregation paths and original taxon totals. Pooled catalog coverage is 22.56%
+with Pfam hits and 22.93% without; within-taxon differences vary substantially.
+A reproducible SVG/PDF figure and all 1,052 taxon/annotation strata are saved.
+These are descriptive sampling diagnostics, not tests of evolutionary effects.
+See [domain registry](whole-proteome-structure-domain-registry-20260923.md) and
+[coverage results](structure-annotation-coverage-20260923.md).

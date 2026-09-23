@@ -84,3 +84,27 @@ The controller is live; its launch record is archived in metadata. Limits are
 one CPU, 16 GiB RAM and no swap; output planning is 0.01 GiB and uncalibrated
 runtime planning is 0.5–12 hours after the producer. No GPU or paid service is
 used. Independent validation is queued, not complete.
+
+## Completed registry and independent readback
+
+Both stages finished successfully. The full registry contains **1,290,278
+models**, **1,319,276 distinct model/hit intervals**, **5,251,715 policy/hit
+memberships** and all **1,319,513 protein links**. Of the models, 456,081 have
+no qualifying Pfam hit; their records remain present.
+
+The independent reconstruction matched every model field, interval, policy
+membership, candidate flag and protein link, including recalculated interval
+overlap and partial-HMM exclusions. Candidate Domain intervals number 594,425
+under alignment/E-value ranking, 594,127 under alignment/bit-score ranking,
+592,574 under envelope/E-value ranking and 592,279 under envelope/bit-score
+ranking. These overlapping policy counts must not be added as unique domains.
+
+The producer completed in about 264 seconds and the independent readback in
+about 271 seconds, excluding their initial checks/waits. The SQLite SHA256 is
+`90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e`.
+Bound receipts are archived as
+`metadata/whole_proteome_structure_domain_registry_completed_receipt.json` and
+`metadata/whole_proteome_structure_domain_registry_completed_readback.json`.
+The earlier queued/running text records launch history. Coordinate extraction,
+residue confidence and PAE assessment, domain-level comparisons and evolutionary
+interpretation remain unfinished.

@@ -1,0 +1,24 @@
+{
+  "status": "complete_full_structure_annotation_coverage_with_independent_aggregation",
+  "proteins": 5815847,
+  "modeled_protein_links": 1319513,
+  "taxa": 526,
+  "strata": 1052,
+  "pooled": {
+    "with_pfam_hit": {
+      "proteins": 3792842,
+      "modeled": 855725,
+      "modeled_fraction": 0.22561577835301339
+    },
+    "without_pfam_hit": {
+      "proteins": 2023005,
+      "modeled": 463788,
+      "modeled_fraction": 0.22925697168321382
+    }
+  },
+  "plan_sha256": "539256c34cf1b740118bb56e7e03e967a7a616d445a35fb5f12c6cac52876b47",
+  "artifacts": {
+    "taxon_annotation_coverage.tsv": "da1b25afdd11b18a825b2398eca28e88774df72251cab53816ad93f19285def0"
+  },
+  "scope": "Descriptive frozen AlphaFold availability by taxon and any raw Pfam gathering-threshold hit. Complete protein-level join and independent SQL/structure-bridge aggregation; original taxon totals checked. Models not confidence-qualified; proteins and taxa not independent replicates. No causal, novelty, loss or statistical significance claim; excludes ESMFold additions."
+}
