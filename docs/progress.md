@@ -3782,3 +3782,15 @@ and the domain registry workflow. During this continuation, species-tree,
 paired-fit, domain-extraction, Foldseek database and AlphaFold coordinate-audit
 processes were confirmed live; domain extraction had reached 120,000 models
 and 297,486 exported intervals with zero rejections at that observation.
+
+### September 23: current retrieval cache does not close the marker gaps
+
+Froze and screened all 1,340,852 complete retrieval-log records (24,381 more
+than the earlier frozen catalog log). No latest verified model matches any of
+the 3,656 missing marker sequences; 3,669 marker/protein gaps remain. Independent
+reverse-log selection reproduced the full output and counts. The immutable
+1.57 GB log prefix stays outside Git, with its checksum and all small receipts
+tracked. See `docs/remaining-marker-model-gaps-20260922.md` and
+`metadata/current_marker_gap_cache_refresh_{plan,receipt,readback}.json`.
+This is a cache-coverage result, not proof of public-database absence. Existing
+retrieval and CPU analyses continue; no GPU prediction was launched.

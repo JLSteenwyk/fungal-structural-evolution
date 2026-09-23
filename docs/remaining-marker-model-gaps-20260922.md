@@ -114,3 +114,35 @@ labels, legends, axis ranges and clipping. Figure provenance and review are in
 `metadata/current_marker_coverage_figure_receipt.json` and
 `metadata/current_marker_coverage_figure_review.json`. The figure is descriptive;
 lineage bins have unequal sampling and are not equivalent taxonomic ranks.
+
+## September 23 retrieval-cache refresh
+
+At 16:00 UTC on September 23, a fresh immutable prefix of the live retrieval
+log contained 1,340,852 complete records, 24,381 more than the original frozen
+inventory. The prefix was copied without changing the active retrieval log;
+its bytes were checked against the same source extent. Its size is
+1,571,673,545 bytes and SHA-256 is
+`5eedad4c6b2fc3908bd06518042935c59455725d7a30cec81bae6b9877d20771`.
+The snapshot is outside Git at
+`results/structures/current-marker-gap-cache-refresh-20260923-v1/retrieval_prefix.jsonl`.
+
+Screening latest records per accession found **zero verified cached model
+candidates for the 3,656 missing sequences**. All 3,669 marker/protein gaps
+therefore remain absent from this newer cache snapshot. An independent reverse
+replay of all 1,340,852 records selected the first occurrence per accession
+and reproduced the candidate output, every sequence availability row and all
+summary counts. More retrieval records have not yet filled these marker gaps;
+this does not establish absence from public databases or subsequent retrievals.
+The selected structural catalogs remain unchanged, and GPU prediction remains
+paused.
+
+Reproduce with `scripts/refresh_marker_gap_cached_models.py --plan
+metadata/current_marker_gap_cache_refresh_plan.json`, choosing a fresh output
+path in a copied plan, then run
+`scripts/readback_marker_gap_cache_refresh.py --plan <copied-plan>`.
+The producer records the exact live-log prefix in its output. A later run will
+observe later records; the archived prefix is the reproducible input for this
+observation. The preparation plan allowed one CPU, 4 GiB memory, 4 GiB output,
+a 10 GiB free-disk gate and an uncalibrated 1–10 minute runtime. No GPU or paid
+resource was used. Receipt and readback are archived in
+`metadata/current_marker_gap_cache_refresh_{receipt,readback}.json`.
