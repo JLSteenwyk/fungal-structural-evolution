@@ -656,3 +656,19 @@ This supersedes the earlier statement that the handoff was not queued.
 Full-cohort accessibility completion and controlled evolutionary tests remain
 pending; normalized accessibility does not establish biological surface/core
 truth, complexes or pocket function.
+
+### Complete merge CLI fixtures passed
+
+The complete command-line merger now passes a two-cohort synthetic
+metadata/file fixture via `scripts/check_completed_accessibility_merge_cli.py`.
+The test checks unchanged entry receipts referenced through relative symlinks,
+accepts identical bytes at relocated paths, and rejects missing cohorts,
+duplicate cohorts, changed target coordinate bytes and incomplete source
+audits. The result is archived in
+`metadata/completed_accessibility_merge_cli_fixture_checks.json`.
+
+The fixture deliberately uses synthetic metadata and file bytes; it does not
+validate physical coordinates or the ASA algorithm. It exercises the complete
+merge executable rather than only its identity predicate. Full projection and
+normalization production checks remain pending. The queued controller and all
+pinned production scripts/plans were left unchanged.

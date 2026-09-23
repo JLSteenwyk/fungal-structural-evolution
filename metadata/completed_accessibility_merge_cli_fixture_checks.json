@@ -1,0 +1,15 @@
+{
+  "status": "passed_complete_accessibility_merge_cli_fixtures",
+  "fixture_models": 2,
+  "fixture_cohorts": 2,
+  "unchanged_relative_symlink_entries": true,
+  "rejected_cases": [
+    "missing_cohort",
+    "duplicate_cohort",
+    "changed_target_bytes",
+    "incomplete_source_audit"
+  ],
+  "merger_sha256": "609d81a6f9ee7e273a6bbb7849d881b8791361ca95e2e160ea05c4c8b5047772",
+  "script_sha256": "5fb4849d05cd5c875beaaadaa5a6a90157bdadbbf37e5519e6bf7306e86649c3",
+  "scope": "Synthetic metadata/file-lifecycle fixture, not physical coordinate or ASA validation. Full CLI verifies relocated byte identity, disjoint source coverage, completion gates and unchanged symlinked entry receipts. No production inputs modified."
+}
