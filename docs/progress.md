@@ -3918,3 +3918,17 @@ verified before archiving the controller receipt and both guide readbacks as
 and branch-length formatting, not rooting, topology, inferred duplication/loss,
 hierarchical orthogroups or complete ortholog-table semantics. Small-family
 processing remains active.
+
+### September 23: full MAFFT-guide HOG identity audit launched
+
+Started the existing full-table identity verifier on all 525 completed MAFFT
+hierarchy tables (5,955,961,431 bytes), after both resolved-tree membership
+checks passed. The new plan pins 532 source, output and implementation files;
+the native MAFFT stage and live service identity are archived in metadata.
+The audit checks every emitted protein's taxon/family identity, species-clade
+containment and uniqueness within each level. It does not infer ancestral
+membership or validate duplication events. Resources are one CPU, 32 GiB RAM,
+no swap or GPU, 0.01 GiB planned output and an uncalibrated 0.1–4 hour runtime
+range. Available resources exceeded 900 GiB RAM and 11 TiB disk at launch.
+See `metadata/mafft_hog_identity_audit_{plan,launch}.json`; output is
+`results/orthology/mafft-hog-identities-20260923-v1`. Completion is pending.

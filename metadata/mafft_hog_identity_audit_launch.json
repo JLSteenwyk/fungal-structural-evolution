@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-mafft-hog-identities-20260923.service",
+  "pid": 1097458,
+  "create_time": 1790182595.43,
+  "observed_utc": "2026-09-23T16:56:36.105819+00:00",
+  "plan": "metadata/mafft_hog_identity_audit_plan.json",
+  "plan_sha256": "77e0014094b6d4603ff35e95ce41cf901f2491c9485a84050bb73b7510c1225b",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_hog_output_identities.py",
+    "--plan",
+    "metadata/mafft_hog_identity_audit_plan.json"
+  ],
+  "status": "running"
+}
