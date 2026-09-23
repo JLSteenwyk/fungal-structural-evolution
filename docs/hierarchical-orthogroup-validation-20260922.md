@@ -208,3 +208,32 @@ The run uses a fresh directory and leaves production outputs untouched.
 This is a replay from resolved trees, not independent initial rooting or tree
 resolution. Biological duplication/loss interpretation and alternative-guide
 sensitivity remain separate requirements, even if all memberships match.
+
+## Final omission accounting queued
+
+The full native replay remains active. At the 1,668-family checkpoint all
+families matched, and all 5,432 target genes processed so far had immediate
+parents mapped to `N0` with an `N0` duplication at or below that parent. This
+is a partial observation, not a result for the remaining families.
+
+A final accounting controller now waits for that exact native-replay process.
+It requires a passing full receipt and pinned output hash, checks the complete
+source family/gene grid and flagged-gene counts, and matches every target's
+parent label to the independent resolved-tree placement trace. It also requires
+the same number of affected root HOG memberships as the earlier full placement
+analysis. It emits an explicit algorithmic disposition for each gene; any other
+parent state is retained for review rather than forced into the proposed rule.
+
+Script: `scripts/summarize_root_hog_replay.py`.
+Plan: `metadata/profile_root_hog_replay_disposition_plan.json`.
+Output: `results/orthology/profile-root-hog-replay-dispositions-20260923-v1`.
+Unit: `fungal-root-hog-replay-dispositions-20260923.service`.
+The controller is confirmed live and recorded in metadata. Limits are one CPU,
+2 GiB memory and no swap; planning allows 0.01 GiB output and 1–5 minutes after
+replay completion. Full-CLI fixtures passed exact identity/count/parent-state
+accounting and rejected a conflicting independently recorded parent label.
+
+This check accounts for the native algorithm's output on the existing resolved
+trees. It does not validate the ancestral rooting, duplication timing or
+biological homology, nor interpret unassigned genes as losses. Overall
+reconciliation interpretation and the other-guide comparison remain unfinished.

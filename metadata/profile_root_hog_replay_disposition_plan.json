@@ -1,0 +1,33 @@
+{
+  "replay": "results/orthology/profile-root-hog-native-replay-20260923-v1",
+  "replay_plan": "metadata/profile_root_hog_native_replay_plan.json",
+  "missing": "results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv",
+  "placements": "results/orthology/profile-root-hog-omission-trace-20260923-v1/gene_tree_positions.tsv",
+  "placement_receipt": "results/orthology/profile-root-hog-omission-trace-20260923-v1/receipt.json",
+  "output": "results/orthology/profile-root-hog-replay-dispositions-20260923-v1",
+  "predecessor": {
+    "pid": 1023411,
+    "create_time": 1790172700.34
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_minutes": [
+      1,
+      5
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/profile_root_hog_native_replay_plan.json": "ef1b298f470cd8baf38d4949cf74970d0845382264d3523a9c745c8ca87a4920",
+    "results/orthology/profile-root-hog-disposition-20260923-v1/missing_genes.tsv": "a202b4c34c025e8659aa9f06f150b3feea82c7a08f11d21e5cf44da520452c43",
+    "results/orthology/profile-root-hog-omission-trace-20260923-v1/gene_tree_positions.tsv": "65a139b88467ffccaa4d27728c5eade60750d81a8ef4845220ed7b5ab3b05bf9",
+    "results/orthology/profile-root-hog-omission-trace-20260923-v1/receipt.json": "38e264ef6267152898e2d51cb196b48e9402b2417fa9b56c4a3cf3372cbb7756",
+    "scripts/summarize_root_hog_replay.py": "a7d0527c4e182fe311891ac43c1522adbfadf9735520d0e8c221efaa13dfa74f",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441"
+  }
+}
