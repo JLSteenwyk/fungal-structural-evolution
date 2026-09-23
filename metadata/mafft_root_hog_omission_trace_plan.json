@@ -1,0 +1,27 @@
+{
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      30
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "missing": "results/orthology/mafft-root-hog-disposition-20260923-v1/missing_genes.tsv",
+  "root_hogs": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Phylogenetic_Hierarchical_Orthogroups/N0.tsv",
+  "resolved_trees": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+  "output": "results/orthology/mafft-root-hog-omission-trace-20260923-v1",
+  "pins": {
+    "results/orthology/mafft-root-hog-disposition-20260923-v1/missing_genes.tsv": "3a52012e07a8f2487862d07a673fceebb1bdc35e04b49e68ad445724e3b94ecc",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "83ef338e59e41ee4ee4b7be55d128d864b74da9eecf2487aaec432fdb7fa095c",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "scripts/trace_root_hog_omissions.py": "2f085b3c0dc3bd4ec2c565eaa561a042515d5f4cb87dfc3b16e2085e53ec4fa8",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/mafft_root_hog_disposition_completed_receipt.json": "9b495a7a350ca8e74c84cffdd0af30a91f06b894ee780364f693d4fb50b31407"
+  }
+}

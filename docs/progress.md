@@ -3971,3 +3971,17 @@ verified before archiving `metadata/mafft_root_hog_disposition_completed_receipt
 Plan and launch evidence are `metadata/mafft_root_hog_disposition_{plan,launch}.json`.
 The 5,972 unflagged omissions need MAFFT-specific tree tracing and native
 classification replay; their mechanism and biological meaning remain open.
+
+### September 23: MAFFT root-omission tree tracing launched
+
+Started `scripts/trace_root_hog_omissions.py` for all 5,972 unflagged MAFFT
+omissions, using the completed source/root disposition, resolved gene trees
+and root HOG table. The check traces each omitted tip relative to emitted
+parent clades and compares affected-family parent memberships with descendants
+minus native flags. It does not establish the native classification mechanism
+or biological duplication/loss. The new pinned plan and verified live process
+are recorded in `metadata/mafft_root_hog_omission_trace_{plan,launch}.json`.
+Resources are one CPU, 16 GiB RAM, no swap/GPU, 0.1 GiB output and an
+uncalibrated 1–30 minute runtime range. Output is
+`results/orthology/mafft-root-hog-omission-trace-20260923-v1`; completion remains
+pending, with CPU progress confirmed after launch.
