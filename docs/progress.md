@@ -4250,3 +4250,20 @@ are uncalibrated planning allowances. Syntax compilation passed and the live
 controller was verified. No validation result is claimed until its full run
 finishes. Homology, orthology, confidence and evolutionary interpretation remain
 outside this identity/composition readback.
+
+### September 23: complete structural cluster composition passed source readback
+
+Full source readback passed for 1,290,278 models, 1,319,513 protein links,
+400,127 clusters and 2,639,026 family assignments across both guides. Every
+model membership, protein identity and family assignment was compared with
+source records; Python sets/counters reproduced every composition-table row.
+Before archiving both receipts, rechecked producer/audit plan pins and bindings,
+all output hashes and complete table totals.
+
+Of the 400,127 clusters, 60,405 contain multiple models and 54,217 span multiple
+taxa. Multiple source families occur in 32,543 clusters under the profile guide
+and 32,546 under MAFFT; 32,542 satisfy this condition under both guides. These
+are descriptive candidate groups for further examination, not confirmed remote
+homology or evolutionary events. Confidence, domain architecture, alignment
+coverage and family-tree evidence remain necessary. Archived the exact counts
+and source hashes in `metadata/whole_proteome_cluster_composition_summary_20260923.json`.
