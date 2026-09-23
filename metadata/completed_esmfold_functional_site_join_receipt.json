@@ -1,0 +1,44 @@
+{
+  "status": "complete_functional_site_structure_alignment_join",
+  "source_label": "ESMFold",
+  "source_receipts": {
+    "functional_sites": {
+      "path": "results/functional_sites/pfam-marker-v1",
+      "sha256": "36912aa788496fe3b328884cbaa634df35e87876b1fe84b4b9ad89de0d10ba9f"
+    },
+    "snapshot": {
+      "path": "results/structural_markers/esmfold-all-completed-20260922-v1",
+      "sha256": "61df98faa3c56e1baba87cb13d4fa01a4fbc68e71ab8052e6046e4e080ff368b"
+    },
+    "encodings": {
+      "path": "results/structural_alphabet/audited-esmfold-all-completed-20260922-v1",
+      "sha256": "75b948659abe23bb6975be780e9a591eede23a3f28c3aaf76ebcc932e983ffd4"
+    },
+    "paired": {
+      "path": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+      "sha256": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180"
+    }
+  },
+  "script_sha256": "17285a4cb5d90052f252fb465281af8b5c0699fe6d9808408c3159ac3f089d2f",
+  "paired_readback": {
+    "path": "metadata/esmfold_all_completed_paired_inputs_completed_readback.json",
+    "sha256": "ab4be9d7804864b74f7aa4e1468be198cb7566bd6c911e8a608b59cb263daecf"
+  },
+  "unique_profile_sites": 16849,
+  "taxon_marker_site_rows": 17105,
+  "site_status_counts": {
+    "no_model_in_snapshot": 7783,
+    "model_site_outside_marker_matrix": 282,
+    "mapped_to_marker_matrix": 5768,
+    "gap_in_functional_profile_alignment": 3272
+  },
+  "paired_observed_rows": 5576,
+  "paired_observed_conserved_candidate_rows": 2240,
+  "paired_observed_other_correspondence_rows": 3336,
+  "paired_observed_taxa": 283,
+  "paired_observed_markers": 21,
+  "interpretation": "All projected functional correspondences retained, including nonconserved/gapped patterns and overlap ambiguity. One prediction source per output. Candidate status is separate from structure availability, native feature confidence and actual observation in matched AA/3Di alignments. Repeated homologous sites across taxa are not independent evolutionary events. No catalytic validation, branch effect, selection or causal claim.",
+  "artifacts": {
+    "site_structure_links.tsv": "ad93f985b660081760311179ddec493c7bbbde1e91c1d2096c779d307935771e"
+  }
+}

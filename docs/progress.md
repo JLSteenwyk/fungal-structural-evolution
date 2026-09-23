@@ -3717,3 +3717,13 @@ readback are required. Existing projection aggregation tests passed for the
 new script; production output and full readback remain pending. This advances
 functional-site coverage without launching further protein prediction.
 See the [functional-site workflow](functional-site-workflow.md).
+
+## Complete ESMFold functional-site join validated — 23 September 2026
+
+The expanded join and independent full-field reconstruction passed all 17,105
+rows, including unavailable and excluded sites. There are 5,576 observed
+functional correspondence rows across 283 taxa and 21 markers, including
+2,240 conserved candidates. Completion/readback receipts are archived. This
+updates structural coverage of functional correspondences; it is not evidence
+of catalytic activity, structural acceleration or selection. See the
+[functional-site workflow](functional-site-workflow.md).

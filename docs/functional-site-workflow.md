@@ -174,3 +174,43 @@ python scripts/link_completed_esmfold_functional_sites.py \
 This refresh is running, not yet a completed functional result. Branch/site
 localization, matched background tests, ancestral uncertainty and experimental
 interpretation remain outstanding.
+
+## Complete ESMFold functional join and full readback passed
+
+The full-cohort job finished with exit status zero. Independent reconstruction
+now passed **every field of all 17,105 taxon–marker–site rows**, retaining
+16,849 unique profile-site correspondences. The completed ESMFold cohort
+provides **5,576 paired-observed rows across 283 taxa and 21 markers**:
+2,240 conserved-candidate rows and 3,336 other correspondence rows. These
+are annotation rows, not necessarily distinct protein residues or independent
+evolutionary events. The earlier 1,189-row local-source coverage remains an
+older acquisition checkpoint and should not be presented as current coverage.
+
+The complete output retains 7,783 rows without a model, 282 modeled sites
+outside the marker matrix, 5,768 mapped rows and 3,272 gaps in the functional
+profile alignment. Of the mapped rows, 5,576 are observed in the qualified
+paired alignments. Those availability categories are not functional-loss
+classes and do not indicate whether a missing model exists in another source.
+
+`scripts/readback_completed_functional_sites.py` reconstructs the reference
+pattern aggregation and complete row universe from original projections and
+protein links, then checks source model identities, residue/matrix positions,
+all emitted confidence/state fields and both presence and absence in paired
+FASTA arrays. It imports no producer join functions, while sharing existing
+source projections, qualified arrays, parsers and the checksum helper. It does
+not repeat HMM alignment, coordinate reconstruction or PAE qualification.
+
+The completion and readback receipts are archived as
+`metadata/completed_esmfold_functional_site_join_{receipt,readback}.json`.
+The complete result table remains at
+`results/functional_sites/esmfold-all-completed-linked-20260923-v1/site_structure_links.tsv`.
+Reproduce its readback with:
+
+```bash
+python scripts/readback_completed_functional_sites.py \
+  --result results/functional_sites/esmfold-all-completed-linked-20260923-v1
+```
+
+This supersedes the running/readback-pending status immediately above.
+Functional-site evolutionary effects, matched background tests, ancestral
+uncertainty and experimental interpretation remain unfinished.
