@@ -3828,3 +3828,15 @@ denominators. All 16 bar widths and the full-table aggregate counts were
 checked. The figure is descriptive annotation sensitivity, not an evolutionary
 or structural effect test. See `docs/figures/domain_boundary_sensitivity.svg`,
 `metadata/domain_boundary_sensitivity_figure_*` and the domain registry workflow.
+
+### September 23: full path-value verification completed for earlier cohort
+
+Independently verified every inherited geometry field and all 2,816,124 tree
+path values across the earlier combined ESMFold benchmark's 704,031 accepted
+and excluded pairs. Adjacency-graph traversal agrees with producer paths to
+3.6e-15 maximum absolute difference. Queued the same full readback after the
+expanded benchmark, covering 122 markers and 10,108,132 path values. Expanded
+readback remains pending, and no independent phylogenetic or biological
+validation is implied. Evidence is
+`metadata/esmfold_combined_full_path_geometry_readback.json` and
+`metadata/completed_tree_path_geometry_readback_{plan,launch}.json`.

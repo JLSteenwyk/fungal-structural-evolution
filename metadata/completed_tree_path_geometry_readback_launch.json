@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-completed-tree-path-readback-20260923",
+  "pid": 2818245,
+  "create_time": 1790180598.54,
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-completed-tree-path-readback-20260923",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "-p",
+    "CPUQuota=100%",
+    "-p",
+    "MemoryMax=32G",
+    "-p",
+    "MemorySwapMax=0",
+    "-p",
+    "Nice=10",
+    "-p",
+    "IOWeight=50",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_tree_path_geometry_readback.py",
+    "--plan",
+    "metadata/completed_tree_path_geometry_readback_plan.json"
+  ],
+  "plan_sha256": "f26fa5d7ec52711815de270ee129792dd831c12aa1713bfc5ebedfdbe01dd0b8"
+}

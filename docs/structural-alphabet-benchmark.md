@@ -262,3 +262,37 @@ These stages produce point-estimate joins and descriptive associations, not
 independent pairwise hypothesis tests, confidence intervals or calibrated
 physical branch lengths. Full output readback, visual figure review and
 uncertainty-aware biological analyses remain required.
+
+### Full tree-path point readback
+
+`scripts/readback_tree_path_geometry_points.py` independently constructs an
+undirected adjacency graph from each fitted tree and traverses it from every
+tip. This differs from the benchmark producer's bipartition-distance summation.
+For every accepted and excluded pair, it verifies all four model-specific path
+values, all inherited geometry strings, review/uncertainty labels and marker
+summary counts. It also checks the complete pair grid against the aligned taxa
+and checks the source artifact hashes before and after reconstruction.
+
+The full earlier combined ESMFold benchmark passed: 89 markers, 686,583
+accepted pairs and 17,448 excluded pairs (704,031 total), with all 2,816,124
+path values checked. The maximum absolute difference was
+3.552713678800501e-15. Its receipt is
+`metadata/esmfold_combined_full_path_geometry_readback.json`; this is a
+completed validation of the earlier cohort, not completion of the expanded
+benchmark. The same fitted trees and BioPython parser are shared, so this is
+not an independent phylogenetic inference or biological validation.
+
+The full expanded readback is queued as
+`fungal-completed-tree-path-readback-20260923`, waiting on the exact benchmark
+controller identity. Its plan and launch record are
+`metadata/completed_tree_path_geometry_readback_{plan,launch}.json`.
+Successful completion must cover 122 markers, all 2,527,033 accepted/excluded
+pairs and all 10,108,132 path values. The future output is
+`results/phylogeny/paired-path-points-esmfold-all-completed-full-readback-20260923-v1`.
+
+The queued job has one CPU equivalent, 32 GiB maximum RAM, no swap or GPU,
+a 48 GiB available-memory gate, 50 GiB free-disk gate and 1 GiB output allowance.
+Its uncalibrated runtime allowance is 0.1–12 hours after its predecessor ends.
+The live waiting process was checked after launch. Rank-summary numerical
+readback, visual figure review, geometry recomputation beyond the existing
+sample and uncertainty-aware biological interpretation remain separate work.
