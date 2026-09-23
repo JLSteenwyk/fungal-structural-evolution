@@ -4267,3 +4267,26 @@ are descriptive candidate groups for further examination, not confirmed remote
 homology or evolutionary events. Confidence, domain architecture, alignment
 coverage and family-tree evidence remain necessary. Archived the exact counts
 and source hashes in `metadata/whole_proteome_cluster_composition_summary_20260923.json`.
+
+### September 23: full-cohort site-rate exports and audits queued
+
+Queued `advance_completed_site_rate_exports.py`, derived from the existing
+pinned stage runner, behind the exact live paired-fit recovery PID/create time.
+The controller requires completed 122-marker/488-fit producer and audit
+receipts before starting. It exports Gamma4 and FreeRate4 conditional site
+rates for all four sequence/structural model specifications, then audits each
+complete fit grid. The source marker table confirms 44,198 retained columns:
+488 fits and 176,792 site-rate rows per rate model, 976 fits overall.
+
+The plan pins 23 scripts, inputs, model and provenance files. Configuration
+validation passed against the current producer identity, and the new systemd
+service was confirmed live and waiting. Four CPU equivalents, 16 GiB hard
+memory limit, no swap, GPU or paid resources; 20 GiB output and 1–96 hours are
+uncalibrated planning allowances, with 64 GiB available-memory and 100 GiB free
+storage gates. Plan and launch identity are recorded in
+`metadata/completed_site_rate_exports_{plan,launch}.json`.
+
+No rate result is claimed yet. These fixed-topology conditional estimates are
+not rates per year, physical displacement, selection tests or calibrated
+uncertainty. Optimization sensitivity, matched model comparison, exposure
+integration and sequence–structure coupling remain subsequent work.

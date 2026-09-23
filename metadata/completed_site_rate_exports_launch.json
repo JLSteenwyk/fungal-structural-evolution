@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-completed-site-rate-exports-20260923",
+  "pid": 2241047,
+  "create_time": 1790195509.5,
+  "plan_sha256": "b679c6a8c04baaf9668c067f2438e0160d91e5bd79f3eebd7dabea026344f016",
+  "command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-completed-site-rate-exports-20260923",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "-p",
+    "CPUQuota=400%",
+    "-p",
+    "MemoryMax=16G",
+    "-p",
+    "MemorySwapMax=0",
+    "-p",
+    "Nice=10",
+    "-p",
+    "IOWeight=50",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_completed_site_rate_exports.py",
+    "--config",
+    "metadata/completed_site_rate_exports_plan.json"
+  ],
+  "observed_status": "sleeping"
+}
