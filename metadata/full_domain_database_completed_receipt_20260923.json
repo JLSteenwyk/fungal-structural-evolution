@@ -1,0 +1,43 @@
+{
+  "status": "complete_domain_foldseek_database_with_full_sequence_and_coordinate_readback",
+  "models": 1078592,
+  "residues": 168431396,
+  "plan_sha256": "f8dd57ad5e2fbc8930f8a76cf79ba3602f2db7c1d09fcc1addd90262d805cad1",
+  "extraction_receipt_sha256": "a6c730339deccdd6bef9cc2e60a7c50d8df2457a3dfac1b681391350feb2cf36",
+  "audit_receipt_sha256": "79634aa4a9207aa8d26b7083fdb6c3855d791a688ef8542d29b9f309b8ba0d1e",
+  "excluded_rejected_intervals": 0,
+  "exported_intervals_with_missing_backbone": 0,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+    "createdb",
+    "results/structural_clusters/full-domain-database-20260923-v1/archives.tsv",
+    "results/structural_clusters/full-domain-database-20260923-v1/domains",
+    "--threads",
+    "4",
+    "--gpu",
+    "0",
+    "--mask-bfactor-threshold",
+    "70",
+    "--coord-store-mode",
+    "1"
+  ],
+  "artifacts": {
+    "domains.source": "2abc4739ef18c6da1703716f313464082a5abd42fd7c049cd7e8937f47178137",
+    "domains_ss": "04eefad5b2508d6264c477635ee297e6fe5fa37cff757fdcc1c99802d0daeba8",
+    "domains_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+    "domains_ca.dbtype": "8fc6cb4a9816d75621652de783118eee13112cda196e61d1bde0460f29b26e3e",
+    "domains.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "domains_ss.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "domains": "a6a4187df47d86c1c7c7c4236bb0663d3f9b52d1b0a39a58b265c47607648696",
+    "domains_ca.index": "ab51994f4e31660bb1fa68e2e502910abef6e7e8b14b2056a31b7453d8af8a42",
+    "domains.index": "e44cc57d6cfdf57d95e079efb60406c06cc706861586d2ae175e9ba8beae7ba8",
+    "createdb.log": "feedf065ea1bf10715461f1b8b0ab4a29a6166dfc365852123a0b1820953f50c",
+    "domains_ss.index": "e44cc57d6cfdf57d95e079efb60406c06cc706861586d2ae175e9ba8beae7ba8",
+    "domains_h.index": "d39086f340d0e166c6af44a989d892efc239bd1ed79cd90d3b6c0e3775fe58cc",
+    "domains.lookup": "dbaf8dde0b072f5fda2addc78da1c557f6bc5658d680d03bbc8e330260791a86",
+    "archives.tsv": "df40313093f7dbd8d2b923fb5dcb6a5cd179133e1c3a200f808e8c4207d29b45",
+    "domains_ca": "b507b859faa53379ec6de19268d2ec2417cbfc23d033a8347bdf4be467a08b57",
+    "domains_h": "11dec0915d3e996f267a67237582359fa7b0d81c3f2173d48508985bf60cc8c2"
+  },
+  "scope": "All successfully exported intervals encoded afresh, retaining both boundary definitions. Every lookup/AA sequence, 3Di length/alphabet and C-alpha coordinate compared with audited PDB spans. pLDDT masking affects seeding, not full confidence qualification. Native 3Di states not independently reconstructed here; PAE, boundary sensitivity, clustering and evolutionary inference remain separate."
+}

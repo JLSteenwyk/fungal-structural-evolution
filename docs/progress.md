@@ -4372,3 +4372,21 @@ This is exploratory conditional association with marker intercepts and
 marker-cluster covariance, not full propagation of phylogenetic/rate uncertainty,
 branch acceleration, causal exposure, ecological or selection inference.
 No full-cohort coupling result is claimed yet.
+
+
+### September 23: full domain database validated; clustering started
+
+The full Foldseek domain database passed its complete sequence and coordinate
+readback: 1,078,592 intervals and 168,431,396 residues. Native conversion took
+6 minutes 18 seconds and skipped no input intervals. Every lookup/AA sequence,
+3Di length/alphabet and C-alpha coordinate was checked against the audited
+PDB spans, followed by source-archive checksum verification. Rechecked all
+16 database artifacts, seven plan pins and producer/audit receipt bindings
+before archiving `metadata/full_domain_database_completed_receipt_20260923.json`.
+
+The existing eight-CPU clustering controller advanced automatically; its native
+Foldseek child was observed running structural rescoring. Both domain-boundary
+definitions remain represented. Clustering completion and boundary sensitivity
+are pending. pLDDT seeding masks are not full confidence qualification; native
+3Di states were not independently reconstructed, and this milestone does not
+establish PAE-qualified comparisons, homology or evolutionary change.
