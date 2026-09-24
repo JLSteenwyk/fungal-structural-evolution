@@ -166,3 +166,30 @@ python scripts/inspect_focal_domain_architectures.py \
 
 The output file must not already exist. This export records candidate annotation
 context; it does not validate biological domain architectures or infer events.
+
+## Precompetition hit review
+
+The five proteins have 12 stored hits before overlap competition. Nine are
+retained; the three excluded hits are PF13728.13 (TraF), overlapping the stronger
+PF00085 hits in XP_007871995.1, XP_018228094.1, and XP_018226490.1. Their annotation
+description does not establish plasmid-transfer function in these proteins.
+No stored PF26973 hit was removed from any of the three sister proteins.
+Thus overlap filtering does not explain their missing retained PF26973 calls;
+search sensitivity and the corresponding sequence regions still need review.
+These stored hits already passed the original search reporting thresholds.
+
+Protein lengths in these hits are 510/512 residues for the Rozella focal/sister
+pair and 382/387/384 for the Pneumocystis focal/two sisters. Similar lengths alone
+do not validate completeness or correspondence of individual domains.
+
+`metadata/cross_clan_focal_raw_hits_20260924.json` preserves all 12 complete hit
+records, retained/excluded identifiers, and source hashes. Every retained
+annotation field was checked against its raw hit, and protein/sequence links and
+raw-hit counts matched the preceding export. Reproduce with:
+
+```bash
+python scripts/inspect_focal_raw_domain_hits.py \
+  --architectures metadata/cross_clan_focal_architectures_20260924.json \
+  --database results/domains/full-domain-database-v1/domains.sqlite \
+  --output metadata/cross_clan_focal_raw_hits_20260924.json
+```
