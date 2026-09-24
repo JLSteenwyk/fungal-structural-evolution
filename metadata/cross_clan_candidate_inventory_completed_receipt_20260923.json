@@ -1,0 +1,27 @@
+{
+  "status": "complete_cross_clan_candidate_inventory",
+  "source_hashes": {
+    "results/structural_clusters/domain-pfam-pair-screen-20260923-v2/receipt.json": "fe80f01f5daf60f481681180dc216b851ccd9529aaa28d8eeae472e65f54f6fe",
+    "results/structural_clusters/domain-cluster-pfam-20260923-v1/receipt.json": "32147c068cdd3565fec0407f93b704b865f45d8ec75415b58b63444fa0812a81",
+    "results/structural_clusters/domain-pfam-pair-screen-20260923-v2/pfam_pair_screen.tsv": "c785b07fb7c14d827b7cf4e73fd3ce16591f8d08e22d4e1c003c55ce0607ec63",
+    "results/structural_clusters/domain-cluster-pfam-20260923-v1/cluster_pfam.sqlite": "08c182d0bed7c1394d818b3090b492be3aadb192560fd962ac67196eae70f994",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_cross_clan_candidates.py": "f263313afd326106ea64d247144887a6997ccf1dac25487e121048f9b6bfc8fc"
+  },
+  "candidates_by_boundary": {
+    "alignment": 32,
+    "envelope": 36
+  },
+  "unique_accession_pairs": 41,
+  "source_models": 2669,
+  "intervals": 3559,
+  "candidate_member_rows": 4600,
+  "exclusive_model_pairs_by_boundary": {
+    "alignment": 8606,
+    "envelope": 9503
+  },
+  "artifacts": {
+    "candidate_members.tsv": "71524aad1a4649d53fdbe5b906b4cdf8ae91398fa6de0203515e0c818df198a2",
+    "candidates.tsv": "c923f0b8f3fa142f76b2b0f38bd788e123ac4d8df285d51354ef7af2b8e6ef10"
+  },
+  "scope": "Complete different-known-clan candidate inventory from one joint partition. Boundary views overlap. Model exclusivity is local to a candidate pair and cluster. No confidence qualification, direct alignment, homology, functional or evolutionary claims."
+}

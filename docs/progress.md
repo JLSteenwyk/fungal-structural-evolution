@@ -4639,3 +4639,28 @@ boundary-only index. The completed v2 run explicitly uses the existing
 cluster/accession index; partial v1 output is retained without a completion
 receipt. Evidence is archived in
 `metadata/domain_pfam_pair_screen_completed_receipt_20260923.json`.
+
+### Cross-clan candidate inventory for direct comparison
+
+`scripts/prepare_cross_clan_candidates.py` inventories every different-known-clan
+entry from `domain-pfam-pair-screen-20260923-v2`, using annotations from
+`domain-cluster-pfam-20260923-v1`. Its output is
+`results/structural_clusters/cross-clan-candidate-inventory-20260923-v1`;
+the three paths are supplied with `--screen`, `--annotations`, and `--output`.
+This small inventory ran on one CPU in under a second without new resources.
+
+The 68 boundary/cluster/accession-pair entries encompass 41 unique accession
+pairs, 2,669 source models and 3,559 intervals. The member table retains all
+4,600 candidate/member associations and flags model exclusivity within each
+pair and cluster. All serialized member identities and exclusivity flags were
+checked against source SQL. There are 8,606 alignment-view and 9,503
+envelope-view exclusive model combinations before interval multiplicity or
+confidence filtering. Boundary views overlap; these are not independent tests.
+The receipt pins source files and output hashes in
+`metadata/cross_clan_candidate_inventory_completed_receipt_20260923.json`.
+
+Direct structural alignment remains pending. US-align is available locally,
+and exported-domain manifests retain mean C-alpha pLDDT and the fraction at
+least 70. The next stage must join confidence and archive locations, retain
+exclusion reasons, estimate the actual interval-pair workload, and compare
+qualified candidates directly before making homology or functional claims.
