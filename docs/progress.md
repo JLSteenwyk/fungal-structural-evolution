@@ -4470,3 +4470,25 @@ review are recorded in
 `metadata/domain_boundary_extension_figure_receipt_20260923.json`.
 Phylogenetic fitting and direct structural comparisons remain active; the
 overall evolutionary analyses and missing-structure coverage remain incomplete.
+
+### September 23: domain-cluster family and taxon joins launched
+
+`annotate_domain_cluster_composition.py` joins all 1,078,592 domain intervals
+and 70,537 candidate clusters to the audited whole-protein composition database.
+It preserves original interval coordinates, source-model and protein identities,
+taxa, and both guide-specific family assignments. Distinct cluster/protein
+links avoid double-counting a protein within a cluster when alternative
+boundaries co-cluster; proteins can still contribute to multiple clusters.
+
+Eight input/script hashes and the upstream source-readback receipt binding
+were checked before launch. The systemd service is limited to one CPU, 32 GiB
+RAM, no swap, with a 10 GiB output planning allowance and uncalibrated runtime
+range of 0.1–8 hours. Available memory was 933 GiB and free disk was 12 TiB.
+No GPU or paid resource is used. Configuration and live-process identity are
+recorded in `metadata/domain_cluster_composition_{plan,launch}.json`.
+
+The output directory is
+`results/structural_clusters/domain-cluster-composition-20260923-v1`.
+The job is running, not a completed result. Full independent source-join and
+aggregate readback is required before these annotations support interpretation.
+These links alone do not establish homology, orthology or evolutionary events.
