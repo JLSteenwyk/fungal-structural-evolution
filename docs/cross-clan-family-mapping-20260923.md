@@ -247,3 +247,44 @@ python scripts/align_focal_domain_regions.py \
   --mafft-root /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions \
   --output results/domains/cross-clan-focal-alignments-20260924-v1
 ```
+
+## Existing-structure comparisons of mapped regions
+
+Four of the five proteins have exact-sequence models in the frozen whole-proteome
+structure bridge. XP_007871995.1 is missing from that bridge, so its geometry
+comparison is explicitly skipped; this is not a claim of public-database absence.
+No new structures were predicted.
+
+For each available focal/sister pair, both sequence alignments and both domain
+boundaries were compared using proper-rotation least-squares C-alpha
+superposition. All mapped residues were retained initially, then filtered at
+joint pLDDT thresholds 70 and 90, yielding 24 comparisons. There was no structural
+realignment, outlier removal, or PAE filter.
+
+At joint pLDDT at least 70, the PF26973 alignment-boundary comparisons give:
+
+| Focal/sister | Matched residues / focal domain length | Local-pair RMSD (Å) | Global-pair RMSD (Å) |
+|---|---:|---:|---:|
+| EPZ34216.1 / XP_031856394.1 | 74/91 | 2.361 | 2.384 |
+| XP_018228094.1 / XP_018226490.1 | 60/73 | 0.757 | 0.757 |
+
+The corresponding envelope results are 77/99 residues at 2.319–2.342 Å and
+81/96 residues at 0.815 Å. The pLDDT 90 subset retains only 16 and 32 residues
+respectively, so its lower RMSD must not be presented without its reduced
+coverage. These descriptive results support investigating annotation sensitivity
+and conserved structure in the sister regions; they do not establish a new
+homology relationship, function, domain event, or structural acceleration.
+
+All coordinate sequences matched the annotated source sequences. An independent
+MMCIFParser plus explicit NumPy Kabsch implementation verified all 24 confidence
+subsets and RMSDs (maximum difference 1.25e-7 Å). Source hashes, model identities,
+missing comparisons, exact residue subsets, and metrics are archived in
+`metadata/cross_clan_focal_geometry_20260924.json`.
+
+```bash
+python scripts/compare_focal_region_geometry.py \
+  --mappings results/domains/cross-clan-focal-alignments-20260924-v1/receipt.json \
+  --sequences results/domains/cross-clan-focal-sequences-20260924-v1/proteins.faa \
+  --bridge results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite \
+  --output metadata/cross_clan_focal_geometry_20260924.json
+```
