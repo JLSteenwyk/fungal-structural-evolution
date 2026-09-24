@@ -40,3 +40,41 @@ python scripts/map_cross_clan_families.py \
 ```
 
 The output directory must not already exist.
+
+## Direct-comparison join within shared families
+
+`scripts/screen_cross_clan_shared_families.py` joins every exclusive-model
+cross-clan pair within an assigned family to the completed bidirectional
+structural comparisons. The two qualifying candidate entries are the alignment
+and envelope views of PF00085.27 versus PF26973.1 in the same structural cluster.
+Both guides assign the shared family as OG0000030.
+
+The complete join contains 1,312 protein-pair/guide/boundary rows representing
+631 distinct interval pairs. These repeated views and source-protein links are
+not independent observations. For each guide separately, rows passing minimum
+TM-score 0.5 and minimum coverage 0.8 are:
+
+| Boundary | No confidence fraction cutoff | 0.5 | 0.8 | 0.9 |
+|---|---:|---:|---:|---:|
+| Alignment | 172 | 172 | 172 | 169 |
+| Envelope | 375 | 371 | 367 | 342 |
+
+Confidence fractions require pLDDT at least 70 in both whole domains and matched
+residues in both alignment directions. No PAE qualification is included. These
+screens prioritize gene-tree and domain-architecture inspection; they are not
+tests of evolutionary transitions or homology.
+
+All serialized pair identities were independently reconstructed with pandas
+merges, all direct scores matched their source table, and every screen flag was
+recomputed. Results reside in
+`results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1/`;
+the source/output hash receipt is archived in
+`metadata/cross_clan_shared_family_screen_completed_receipt_20260923.json`.
+The join uses one CPU, takes seconds, and requires no new structural inference.
+
+```bash
+python scripts/screen_cross_clan_shared_families.py \
+  --mapping results/structural_clusters/cross-clan-family-mapping-20260923-v1 \
+  --comparisons results/structural_comparisons/cross-clan-confidence-summary-20260923-v1 \
+  --output results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1
+```
