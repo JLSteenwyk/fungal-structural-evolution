@@ -401,3 +401,53 @@ not independent evidence of remote homology, functional equivalence or
 evolutionary events. Candidate interpretation still requires confidence
 qualification, checks for overlapping annotations and shared models, and
 direct comparisons within supported genealogies.
+
+## Direct comparisons of cross-clan domain candidates
+
+All within-cluster Pfam accession pairs were enumerated separately for the
+alignment and envelope boundary views. Source-model overlap was retained
+explicitly. Models exclusive to one accession within a given pair and cluster
+were used for direct comparisons; this local exclusivity does not establish
+global annotation exclusivity or independent evolutionary observations.
+The different-known-clan subset contained 68 boundary/cluster/accession-pair
+entries representing 41 unique accession pairs, 2,669 source models and
+3,559 domain intervals. Unknown-clan pairs were retained in the broader screen
+but were outside this particular cross-clan comparison subset.
+
+Candidate coordinates were extracted from the audited domain archives. Every
+selected member and written PDB matched the recorded checksum. Fragment
+sequence, complete C-alpha coverage, finite coordinates and mean confidence
+within PDB rounding tolerance were checked. The 17,769 unique unordered
+interval pairs were aligned in both input orders with the checksum-pinned
+US-align 20241108 executable using `-mol prot -mm 0 -outfmt 0 -ter 2`.
+All 35,538 directed comparisons completed, retaining native raw output,
+alignment strings, both length-normalized TM-scores, aligned length, RMSD
+and sequence identity. Both orders were retained to evaluate heuristic
+alignment asymmetry. These were full-domain alignments without a PAE mask or
+removal of low-confidence residues before fitting.
+
+An independent implementation reconstructed every residue correspondence,
+aligned length and sequence identity, and recomputed the least-squares RMSD
+using proper rigid rotations. All RMSDs agreed with native output within
+its two-decimal rounding; the maximum discrepancy was less than 0.005 Angstrom.
+TM-scores were checked against native output but were not independently
+reoptimized. Matched-residue confidence was calculated from rounded PDB
+C-alpha pLDDT values. Input/output checksums and an independently reconstructed
+pair grid established complete coverage of this candidate subset.
+
+Descriptive summaries used the minimum TM-score across both length
+normalizations and both input orders, minimum coverage and matched confidence,
+maximum RMSD, and maximum score difference between input orders. Confidence
+fractions of 0, 0.5, 0.8 and 0.9 were applied to both full-domain fractions and
+both matched-residue fractions with pLDDT at least 70. All 68 entries remained
+in each summary, including strata with no retained comparisons. A prioritization
+screen of minimum TM-score at least 0.5 and minimum coverage at least 0.8
+retained at least one interval comparison for 23, 23, 20 and 18 entries,
+respectively. These cutoffs are descriptive choices, not significance tests
+or proof of homology. Shared models, overlapping boundary views, selection
+through structural clustering, annotation uncertainty and missing PAE
+qualification limit biological interpretation. Functional and phylogenetic
+validation remain unfinished.
+
+Completion evidence is indexed in
+`metadata/methods_cross_clan_checkpoint_20260923_sources.json`.
