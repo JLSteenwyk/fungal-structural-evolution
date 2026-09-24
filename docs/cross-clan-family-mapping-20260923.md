@@ -211,3 +211,39 @@ python scripts/prepare_focal_protein_sequences.py \
   --proteomes data/qc_proteomes \
   --output results/domains/cross-clan-focal-sequences-20260924-v1
 ```
+
+## Corresponding-region alignment sensitivity
+
+MAFFT 7.525 local-pair and global-pair iterative alignments of all five proteins
+were run separately with one thread and 1,000 maximum iterations. This small
+CPU-only check took less than a second including hashing; no prediction was run.
+Input proteins were recovered exactly by removing alignment gaps.
+
+For the focal PF26973 alignment boundaries, the Rozella comparison maps 85 of
+91 focal residues to sister residues (30 identical under local-pair, 29 under
+global-pair). Each Pneumocystis comparison maps 72 of 73 residues, with 32 and
+28 identical residues respectively. Envelope boundaries map 88/99 and 95/96
+residues respectively. All Pneumocystis residue correspondences are identical
+between settings. The Rozella mappings share 84/85 alignment-boundary pairs
+and 87/88 envelope-boundary pairs.
+
+Thus these alignments contain corresponding sequence across most of the focal
+domain span in the sisters without retained PF26973 annotations. This motivates
+structural and profile-sensitivity checks rather than a domain-loss call.
+Repeated thioredoxin-like domains can still be misaligned, and agreement of two
+settings does not independently validate homology or ancestral domain content.
+
+All 12 explicit residue maps and identity counts were independently recalculated
+from aligned prefixes. Source/software hashes, exact commands, output hashes,
+and all mappings are archived in
+`metadata/cross_clan_focal_alignment_receipt_20260924.json`; alignments and logs
+reside in `results/domains/cross-clan-focal-alignments-20260924-v1/`.
+
+```bash
+python scripts/align_focal_domain_regions.py \
+  --sequences results/domains/cross-clan-focal-sequences-20260924-v1/proteins.faa \
+  --architectures metadata/cross_clan_focal_architectures_20260924.json \
+  --context metadata/cross_clan_shared_family_tree_context_20260924.json \
+  --mafft-root /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions \
+  --output results/domains/cross-clan-focal-alignments-20260924-v1
+```
