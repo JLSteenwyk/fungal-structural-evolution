@@ -4805,3 +4805,19 @@ unmodeled PAE, and selection through a structural cluster remain limitations.
 No significance, functional equivalence or evolutionary conclusion follows
 from these thresholds; candidate biology and phylogenetic integration remain
 unfinished.
+
+### Cross-clan confidence figure
+
+The [confidence-sensitivity figure](figures/cross_clan_confidence.svg) and
+[PDF](figures/cross_clan_confidence.pdf) summarize the completed descriptive
+screen, retaining all 32 alignment-view and 36 envelope-view entries in their
+respective denominators. Eight bar heights were checked against the source
+summary and receipt totals; the rendered PNG was inspected for legibility.
+Counts, source hashes and visual review are recorded in
+`metadata/cross_clan_confidence_figure_plot_data.tsv` and
+`metadata/cross_clan_confidence_figure_receipt.json`.
+Reproduce with `scripts/plot_cross_clan_confidence.py --summary
+results/structural_comparisons/cross-clan-confidence-summary-20260923-v1
+--output <new-output-directory>`. The figure states the confidence, coverage
+and score criteria and identifies the overlapping, descriptive nature of
+these counts.
