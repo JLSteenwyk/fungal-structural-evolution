@@ -1,0 +1,21 @@
+{
+  "database": "results/structural_clusters/domain-cluster-pfam-20260923-v1/cluster_pfam.sqlite",
+  "source_receipt": "metadata/domain_cluster_pfam_completed_receipt_20260923.json",
+  "output": "results/structural_clusters/domain-pfam-pair-screen-20260923-v2",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "output_gib_upper": 0.1,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "estimate": "7952 pairs and 59 million simple model-pair checks; uncalibrated allowance; no paid resources"
+  },
+  "pins": {
+    "scripts/screen_domain_pfam_pairs.py": "820ffcb8a92d88320e02a4f50ca04e69c53fe23af5c01eef9448ac9d7d2d634e",
+    "metadata/domain_cluster_pfam_completed_receipt_20260923.json": "32147c068cdd3565fec0407f93b704b865f45d8ec75415b58b63444fa0812a81",
+    "results/structural_clusters/domain-cluster-pfam-20260923-v1/cluster_pfam.sqlite": "08c182d0bed7c1394d818b3090b492be3aadb192560fd962ac67196eae70f994"
+  },
+  "supersedes": "v1 stopped before completion: SQLite selected boundary-only index for verification; use existing group_idx explicitly. Partial v1 retained; no receipt."
+}

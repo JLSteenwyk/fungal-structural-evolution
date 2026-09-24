@@ -1,0 +1,28 @@
+{
+  "status": "complete_domain_pfam_pair_screen",
+  "plan_sha256": "49fd9c64768b4b7fd6dd3232c2950389daa88b7d8297ded50862c9038b37845d",
+  "source_links": 1189594,
+  "multi_pfam_clusters": {
+    "alignment": 1305,
+    "envelope": 1207
+  },
+  "pair_rows": 7952,
+  "counts": {
+    "alignment:different_known_clans": 32,
+    "alignment:distinct_model_support": 4015,
+    "alignment:exclusive_model_support": 3998,
+    "alignment:pairs": 4020,
+    "alignment:same_known_clan": 3937,
+    "alignment:unknown_clan": 51,
+    "envelope:different_known_clans": 36,
+    "envelope:distinct_model_support": 3926,
+    "envelope:exclusive_model_support": 3907,
+    "envelope:pairs": 3932,
+    "envelope:same_known_clan": 3835,
+    "envelope:unknown_clan": 61
+  },
+  "artifacts": {
+    "pfam_pair_screen.tsv": "c785b07fb7c14d827b7cf4e73fd3ce16591f8d08e22d4e1c003c55ce0607ec63"
+  },
+  "scope": "All within-cluster accession pairs, separated by boundary view. Distinct model pairs exclude identical source models; exclusive model pairs require each model to carry only its own accession among this pair within this cluster. Shared intervals detect identical intervals, not all overlaps. No confidence qualification, independent clustering, direct structural alignment, homology, functional equivalence, or evolutionary inference is established."
+}

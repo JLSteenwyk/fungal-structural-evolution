@@ -4611,3 +4611,31 @@ confidence qualification and phylogenetic interpretation remain required.
 Evidence is archived in
 `metadata/domain_cluster_pfam_completed_receipt_20260923.json`; full tables
 remain outside Git in the output directory recorded by the plan.
+
+### Domain Pfam pair screening
+
+`scripts/screen_domain_pfam_pairs.py` completed all 7,952 within-cluster
+accession pairs using `metadata/domain_pfam_pair_screen_plan.json`. It retains
+separate alignment/envelope views and records source-model overlap, distinct
+model pairs, model pairs exclusive to the respective accessions within that
+cluster, identical-interval overlap, and known/unknown clan relationships.
+All 1,189,594 source links and all multi-Pfam cluster counts matched the source
+receipt. Independent enumeration checked distinct and exclusive model-pair
+counts for every output row; disjoint, overlapping and identical model-set
+examples also passed. Output and plan hashes were checked after completion.
+
+The alignment view contains 4,020 accession pairs: 3,937 share a known clan,
+32 have different known clans, and 51 have at least one unknown clan. The
+envelope view contains 3,932 pairs: 3,835, 36 and 61 in those categories.
+Distinct-model support exists for 4,015 alignment and 3,926 envelope pairs;
+exclusive-model support exists for 3,998 and 3,907 respectively. These views
+overlap and must not be summed as independent candidates. The screen does
+not evaluate all interval overlaps, model confidence, direct alignments,
+homology, function, or evolutionary events. Those checks remain necessary
+before prioritizing mechanistic cases.
+
+The initial verification run was stopped after SQLite selected a broad
+boundary-only index. The completed v2 run explicitly uses the existing
+cluster/accession index; partial v1 output is retained without a completion
+receipt. Evidence is archived in
+`metadata/domain_pfam_pair_screen_completed_receipt_20260923.json`.
