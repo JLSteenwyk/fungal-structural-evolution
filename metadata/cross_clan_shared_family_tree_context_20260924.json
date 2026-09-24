@@ -1,0 +1,74 @@
+{
+  "status": "complete_focal_resolved_tree_membership_context",
+  "source_hashes": {
+    "results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1/shared_family_pairs.tsv": "37be90722fa6d71792e173d75621d5917e2c4adcdd6985da88f0e8c3d9e77bf6",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1/receipt.json": "ff6a14c7ded49a16aacd47ea1db2a6a823c7056bbf53599924b7250113768e41",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inspect_shared_family_gene_trees.py": "ad593f0dd6c64f3505b50e95ada36f699892f13ea3d167c255a98a64c8cd6177",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/map_cross_clan_families.py": "6b99ebcec7cc2aff564fc063d082a54888ba09c8d29b7a9d18c73f8552bd0816"
+  },
+  "results": [
+    {
+      "guide": "profile",
+      "family": "OG0000030",
+      "tips": 5118,
+      "candidate_left_tips": 283,
+      "candidate_right_tips": 2,
+      "right_mrca_tips": 500,
+      "focal_context": [
+        {
+          "label": "F281847_EPZ34216.1",
+          "terminal_branch_length": 0.82431,
+          "parent_label": "n537",
+          "sister_labels": [
+            "F2606893_XP_031856394.1"
+          ],
+          "sister_candidate_left_labels": []
+        },
+        {
+          "label": "F42068_XP_018228094.1",
+          "terminal_branch_length": 0.70811,
+          "parent_label": "n1029",
+          "sister_labels": [
+            "F263815_XP_007871995.1",
+            "F4754_XP_018226490.1"
+          ],
+          "sister_candidate_left_labels": []
+        }
+      ]
+    },
+    {
+      "guide": "mafft",
+      "family": "OG0000030",
+      "tips": 5118,
+      "candidate_left_tips": 283,
+      "candidate_right_tips": 2,
+      "right_mrca_tips": 500,
+      "focal_context": [
+        {
+          "label": "F281847_EPZ34216.1",
+          "terminal_branch_length": 0.82431,
+          "parent_label": "n537",
+          "sister_labels": [
+            "F2606893_XP_031856394.1"
+          ],
+          "sister_candidate_left_labels": []
+        },
+        {
+          "label": "F42068_XP_018228094.1",
+          "terminal_branch_length": 0.70811,
+          "parent_label": "n1029",
+          "sister_labels": [
+            "F263815_XP_007871995.1",
+            "F4754_XP_018226490.1"
+          ],
+          "sister_candidate_left_labels": []
+        }
+      ]
+    }
+  ],
+  "scope": "Exact focal candidate membership and immediate sister context in existing native resolved trees. Branch lengths are sequence divergence, not time or structural displacement. Native node names are not support values. Does not validate rooting, reconciliation events, orthology, domain histories, or structural acceleration."
+}

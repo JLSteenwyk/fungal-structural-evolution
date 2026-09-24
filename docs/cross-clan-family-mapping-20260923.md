@@ -98,3 +98,32 @@ The exact three boundary/taxon/protein/model records, Pfam annotation rows,
 and hashes of the complete source tables are recorded in
 `metadata/cross_clan_shared_family_annotation_review_20260924.json`.
 Full domain architecture and gene-tree inspection remain pending.
+
+## Focal gene-tree context (September 24)
+
+Membership/context inspection now places all 283 candidate-left proteins and
+both candidate-right proteins in the 5,118-tip OG0000030 resolved tree under
+each guide. The right-side proteins have a common ancestor containing 500 tips
+in each native rooted tree; this count does not establish a domain transition.
+Their immediate sister labels are identical under both guides:
+
+- *Rozella* EPZ34216.1: `F2606893_XP_031856394.1`.
+- *Pneumocystis* XP_018228094.1: `F263815_XP_007871995.1` and
+  `F4754_XP_018226490.1`.
+
+None of those immediate sister proteins is among the candidate-left proteins
+in this cross-clan screen. The next annotation review therefore needs these
+sister proteins as well as the focal proteins, without assuming that an absent
+screen membership means an absent domain. Both guides giving the same local
+context is a sensitivity result, not independent replication.
+
+`scripts/inspect_shared_family_gene_trees.py` performs this inspection with
+Biopython, checks both complete source-tree file hashes against the prior
+membership audits, and records all inputs in
+`metadata/cross_clan_shared_family_tree_context_20260924.json`. An independent
+DendroPy parser confirmed both full tree sizes, focal branch lengths, immediate
+sister memberships, parent labels, and the 500-tip common-ancestor scope.
+An attempted ETE check was unavailable because that package was not installed;
+no environment change was needed. These are checks of existing tree context,
+not new inference, support assessment, rooting validation, reconciliation-event
+validation, or evidence of structural acceleration.
