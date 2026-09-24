@@ -1,0 +1,49 @@
+{
+  "status": "complete_focal_source_sequence_export",
+  "source_hashes": {
+    "metadata/cross_clan_focal_architectures_20260924.json": "7dcf4c5cc3778fe4453a06b62032ee3d49b3d257cdc7927dc5e6484002f20996",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_focal_protein_sequences.py": "fc6abcf485674e3049915d70b6850a62ad7bf137371467f8477fdb357cd74ec7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inspect_focal_domain_architectures.py": "4eefd23e610e2b0e554aefd37975c77cdce5504429d078b1781da3bab53d2b0e",
+    "data/qc_proteomes/F2606893.faa": "037b63058b04771d18f17614a5b486bd85a5bbec85c4886de1aa7bc0c118dba8",
+    "data/qc_proteomes/F263815.faa": "e4f5a1e162eaa6c75dc24b82fe767be29c9d0c168cbca503af6c4b625525af28",
+    "data/qc_proteomes/F281847.faa": "e1e17452a9643ef657afbc96fcfd4be787c0c5408294083e6b184909f0e87e60",
+    "data/qc_proteomes/F42068.faa": "c04ea20e5a9161f442d9dad73f9d6a16b64c73a5c1d5b4d906f9f703a184e9fd",
+    "data/qc_proteomes/F4754.faa": "6b3a65687733a8df3d4fa71674fb6a84818e8f3f8e1e1788507992161b2eedb6"
+  },
+  "proteins": [
+    {
+      "label": "F2606893_XP_031856394.1",
+      "length": 512,
+      "sequence_sha256": "748dacb6445ec107d93488a82ce53f08b6f2b0f423dad3aa762fb4b07e51a770",
+      "original_description": "XP_031856394.1"
+    },
+    {
+      "label": "F263815_XP_007871995.1",
+      "length": 387,
+      "sequence_sha256": "f679797ee0886ad726b7693fdd1d73c68c7c966ae779c263e0af0414541c520a",
+      "original_description": "XP_007871995.1"
+    },
+    {
+      "label": "F281847_EPZ34216.1",
+      "length": 510,
+      "sequence_sha256": "e43bcc2f616ced81d4dca605d417a8a17d8c1d7f1556f131aea491230342ebcc",
+      "original_description": "EPZ34216.1"
+    },
+    {
+      "label": "F42068_XP_018228094.1",
+      "length": 382,
+      "sequence_sha256": "066dd59474887ee51dc602aeb99d0fb95a77e6edbe3f00034e8a7bb00506cc23",
+      "original_description": "XP_018228094.1"
+    },
+    {
+      "label": "F4754_XP_018226490.1",
+      "length": 384,
+      "sequence_sha256": "61a43d86d5b7339a8c604fe310aa822fc868b0a6d4a792c131b889d289ca68a6",
+      "original_description": "XP_018226490.1"
+    }
+  ],
+  "artifacts": {
+    "proteins.faa": "4712b1353becf15293f61c3b5c01280ece04da7096326f6fbd2db4cffd2a06d3"
+  },
+  "scope": "Exact source sequences matching domain annotation hashes. Does not validate completeness, alignment, orthology, or domain events."
+}

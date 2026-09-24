@@ -193,3 +193,21 @@ python scripts/inspect_focal_raw_domain_hits.py \
   --database results/domains/full-domain-database-v1/domains.sqlite \
   --output metadata/cross_clan_focal_raw_hits_20260924.json
 ```
+
+## Source sequences for region comparisons
+
+All five full-length source sequences were extracted into
+`results/domains/cross-clan-focal-sequences-20260924-v1/proteins.faa`.
+Each sequence exactly matches its domain-annotation SHA-256 identifier;
+independent FASTA readback also confirmed every raw-hit protein length.
+The archived receipt is
+`metadata/cross_clan_focal_sequences_receipt_20260924.json`.
+This prepares the corresponding-region comparison; it is not an alignment or
+a completeness assessment. Reproduce with:
+
+```bash
+python scripts/prepare_focal_protein_sequences.py \
+  --architectures metadata/cross_clan_focal_architectures_20260924.json \
+  --proteomes data/qc_proteomes \
+  --output results/domains/cross-clan-focal-sequences-20260924-v1
+```
