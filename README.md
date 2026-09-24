@@ -23,10 +23,10 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Combined marker availability | 56,171 of 59,840 recovered marker/protein records have a model (93.9%); 3,669 records remain unmodeled in the frozen catalogs | Availability precedes confidence filtering and is not proteome-wide coverage |
 | Whole-proteome AlphaFold catalog | 1,290,278 models linked to 1,319,513 of 5,815,847 representative proteins (22.69%) | Source-specific coverage excludes local ESMFold; confidence qualification and comparative atlas analyses remain incomplete |
 | Complete ESMFold paired inputs | Full readback passed for 122 markers, 294 taxa and 6,758,598 observed paired AA/3Di cells | Updated tree fits, resampling and evolutionary integration |
-| Refreshed AlphaFold marker inputs | Full residue mapping, native exports and coordinate-feature reconstruction passed for 30,588 models; 15,949,929 full-model residues checked | Final mapping-bound PAE qualification and downstream paired inference |
-| Candidate domains | Full registry and manifest readbacks passed; 1,078,592 distinct extraction intervals from 427,255 models | Coordinate extraction, full atom audit, structural clustering and boundary/parameter sensitivity |
+| Refreshed AlphaFold marker inputs | Full residue mapping, native exports and coordinate-feature reconstruction passed for 30,588 models; 15,949,929 full-model residues checked | Mapping-bound PAE qualification complete; refreshed paired phylogenetic fits underway |
+| Candidate domains | All 1,078,592 intervals extracted and atom-audited; database sequence/coordinate readback and 70,537-cluster partition verified; all 594,797 boundary pairs compared | Confidence and clustering-parameter sensitivity, family/phylogeny integration and evolutionary tests |
 | Functional correspondences | Every field of 17,105 rows checked; 5,576 observed rows across 283 taxa and 21 markers | Branch/site tests, matched backgrounds and biological interpretation; rows are not independent events |
-| Accessibility | 10,048 models previously audited; 15,274 additional models are being processed in three disjoint sets | Full source audits, 25,322-model merge, paired projection and two-scale normalization/readbacks |
+| Accessibility | All 25,322 models merged; paired projection and two-scale normalization readbacks complete for 6,758,598 observations | Full-cohort site-rate coupling and uncertainty analyses; accessibility does not establish binding interfaces |
 
 Coverage sources and exact limitations:
 [completed prediction inventory](docs/completed-prediction-inventory-20260922.md),

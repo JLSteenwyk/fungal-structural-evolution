@@ -513,3 +513,31 @@ python scripts/plot_domain_boundary_sensitivity.py \
   --pfam-receipt metadata/pfam_boundary_sensitivity_receipt.json \
   --output results/figures/domain-boundary-sensitivity-20260923-v2
 ```
+
+## Completed coordinate and cluster outputs
+
+All 1,078,592 intervals from 427,255 models were exported. The full atom
+readback passed across all 428 archive shards, and the domain Foldseek database
+passed sequence and coordinate readback for 168,431,396 residues. The complete
+partition contains 70,537 candidate clusters, including 41,930 singletons.
+These counts include alternative boundaries, which are not independent domains.
+
+Independent readback covered all 594,797 alignment/envelope pairs and
+1,189,594 boundary links. Among the 483,795 nonidentical pairs, 86,503 (17.88%)
+have different cluster assignments in the joint partition.
+[The extension-length figure](figures/boundary_cluster_extension.svg) reports
+bin-specific numerators and denominators. This is within-partition boundary
+sensitivity, not stability across separate clustering runs or evolutionary change.
+
+Completion evidence is archived in:
+
+- `metadata/domain_coordinate_full_completed_readback_20260923.json`
+- `metadata/full_domain_database_completed_receipt_20260923.json`
+- `metadata/full_domain_clustering_completed_receipt_20260923.json`
+- `metadata/domain_boundary_clusters_completed_readback_20260923.json`
+- `metadata/domain_boundary_extension_figure_receipt_20260923.json`
+
+Remaining work includes clustering-parameter and confidence sensitivity,
+family and taxon annotation of domain clusters, direct comparisons within
+homologous domains, and phylogenetic tests. Clusters alone do not establish
+orthology, remote homology, domain gains/losses or structural acceleration.
