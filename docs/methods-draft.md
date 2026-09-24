@@ -384,3 +384,20 @@ and structural evolution remain unfinished.
 
 Evidence for this completed-methods section is indexed in
 `metadata/methods_domain_atlas_checkpoint_20260923_sources.json`.
+
+The domain partition was additionally joined to the source Pfam accessions
+and clans using `scripts/summarize_domain_cluster_pfam.py --plan
+metadata/domain_cluster_pfam_plan.json`. Each model/hit identity and both
+boundary coordinates were checked against the audited domain registry before
+aggregation. The resulting 1,189,594 boundary links formed 105,519
+boundary/cluster/accession/clan groups. Counts of source models, model/hit
+pairs and intervals were retained separately. Source-derived Python sets
+agreed with SQL aggregates, and every serialized summary row was checked.
+Within the alignment-boundary view, 1,305 of 52,800 represented clusters
+contained multiple Pfam accessions; within the envelope-boundary view,
+1,207 of 48,658 did. Both views derive from the same joint partition and
+include shared source models. These are annotation-composition counts,
+not independent evidence of remote homology, functional equivalence or
+evolutionary events. Candidate interpretation still requires confidence
+qualification, checks for overlapping annotations and shared models, and
+direct comparisons within supported genealogies.
