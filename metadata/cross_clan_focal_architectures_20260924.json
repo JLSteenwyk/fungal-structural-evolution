@@ -1,0 +1,457 @@
+{
+  "status": "complete_focal_and_sister_candidate_architecture_export",
+  "source_hashes": {
+    "metadata/cross_clan_shared_family_tree_context_20260924.json": "cc21a075e250c3004263558707bc96ec1202e6d46adcf5f10767c95d2e3e080a",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inspect_focal_domain_architectures.py": "4eefd23e610e2b0e554aefd37975c77cdce5504429d078b1781da3bab53d2b0e"
+  },
+  "proteins": 5,
+  "records": [
+    {
+      "taxon_id": "F2606893",
+      "protein_id": "XP_031856394.1",
+      "sequence_id": "S748dacb6445ec107d93488a82ce53f08b6f2b0f423dad3aa762fb4b07e51a770",
+      "query_source": "additional_full_proteome",
+      "search_partition": "additional_full_proteome",
+      "raw_hits": 1,
+      "retained_sets_agree": 1,
+      "candidate_architectures": {
+        "alternatives": [
+          {
+            "alignment_overlap_pairs": 0,
+            "annotations": [
+              {
+                "alignment_end": 117,
+                "alignment_start": 36,
+                "envelope_end": 145,
+                "envelope_start": 35,
+                "hit_id": "FULL-chunk-020-000165648",
+                "hmm_coverage": "0.7766990291262136",
+                "pfam_accession": "PF00085.27",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              }
+            ],
+            "interpretation": "Coordinate-sorted candidate annotations; repeated models and all Pfam types retained. Signature is not a homology assignment or validated biological architecture.",
+            "model_multiplicities": [
+              [
+                "PF00085.27",
+                "Domain",
+                1
+              ]
+            ],
+            "ordered_model_tokens": [
+              [
+                "PF00085.27",
+                "Domain"
+              ]
+            ],
+            "partial_hmm_hits_below_070": 0,
+            "token_signature_sha256": "49cfe1a6effb8ea7044218d0ca8560f34d8992fd840197ceea82db5e2c811ae0"
+          }
+        ],
+        "policies": {
+          "alignment_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "alignment_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          }
+        },
+        "status": "candidate_architecture_requires_validation"
+      },
+      "tree_label": "F2606893_XP_031856394.1"
+    },
+    {
+      "taxon_id": "F263815",
+      "protein_id": "XP_007871995.1",
+      "sequence_id": "Sf679797ee0886ad726b7693fdd1d73c68c7c966ae779c263e0af0414541c520a",
+      "query_source": "additional_full_proteome",
+      "search_partition": "additional_full_proteome",
+      "raw_hits": 3,
+      "retained_sets_agree": 1,
+      "candidate_architectures": {
+        "alternatives": [
+          {
+            "alignment_overlap_pairs": 0,
+            "annotations": [
+              {
+                "alignment_end": 128,
+                "alignment_start": 27,
+                "envelope_end": 133,
+                "envelope_start": 26,
+                "hit_id": "FULL-chunk-020-000163957",
+                "hmm_coverage": "0.9320388349514563",
+                "pfam_accession": "PF00085.27",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              },
+              {
+                "alignment_end": 364,
+                "alignment_start": 252,
+                "envelope_end": 365,
+                "envelope_start": 248,
+                "hit_id": "FULL-chunk-032-000197699",
+                "hmm_coverage": "0.9692307692307692",
+                "pfam_accession": "PF24541.2",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              }
+            ],
+            "interpretation": "Coordinate-sorted candidate annotations; repeated models and all Pfam types retained. Signature is not a homology assignment or validated biological architecture.",
+            "model_multiplicities": [
+              [
+                "PF00085.27",
+                "Domain",
+                1
+              ],
+              [
+                "PF24541.2",
+                "Domain",
+                1
+              ]
+            ],
+            "ordered_model_tokens": [
+              [
+                "PF00085.27",
+                "Domain"
+              ],
+              [
+                "PF24541.2",
+                "Domain"
+              ]
+            ],
+            "partial_hmm_hits_below_070": 0,
+            "token_signature_sha256": "04ac5490422efcef250f792b2a3fc0deb8cf2e96e3e2d43630f39cd232243489"
+          }
+        ],
+        "policies": {
+          "alignment_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "alignment_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          }
+        },
+        "status": "candidate_architecture_requires_validation"
+      },
+      "tree_label": "F263815_XP_007871995.1"
+    },
+    {
+      "taxon_id": "F281847",
+      "protein_id": "EPZ34216.1",
+      "sequence_id": "Se43bcc2f616ced81d4dca605d417a8a17d8c1d7f1556f131aea491230342ebcc",
+      "query_source": "additional_full_proteome",
+      "search_partition": "additional_full_proteome",
+      "raw_hits": 2,
+      "retained_sets_agree": 1,
+      "candidate_architectures": {
+        "alternatives": [
+          {
+            "alignment_overlap_pairs": 0,
+            "annotations": [
+              {
+                "alignment_end": 375,
+                "alignment_start": 263,
+                "envelope_end": 376,
+                "envelope_start": 262,
+                "hit_id": "FULL-chunk-020-000163401",
+                "hmm_coverage": "0.9805825242718447",
+                "pfam_accession": "PF00085.27",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              },
+              {
+                "alignment_end": 489,
+                "alignment_start": 399,
+                "envelope_end": 492,
+                "envelope_start": 394,
+                "hit_id": "FULL-chunk-021-000093995",
+                "hmm_coverage": "0.9142857142857143",
+                "pfam_accession": "PF26973.1",
+                "pfam_clan": "CL0176",
+                "pfam_type": "Domain"
+              }
+            ],
+            "interpretation": "Coordinate-sorted candidate annotations; repeated models and all Pfam types retained. Signature is not a homology assignment or validated biological architecture.",
+            "model_multiplicities": [
+              [
+                "PF00085.27",
+                "Domain",
+                1
+              ],
+              [
+                "PF26973.1",
+                "Domain",
+                1
+              ]
+            ],
+            "ordered_model_tokens": [
+              [
+                "PF00085.27",
+                "Domain"
+              ],
+              [
+                "PF26973.1",
+                "Domain"
+              ]
+            ],
+            "partial_hmm_hits_below_070": 0,
+            "token_signature_sha256": "0b247b5a0c0eb9d95e392bbd15969327daf4f161ef79bded78a33b17841ca3ab"
+          }
+        ],
+        "policies": {
+          "alignment_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "alignment_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          }
+        },
+        "status": "candidate_architecture_requires_validation"
+      },
+      "tree_label": "F281847_EPZ34216.1"
+    },
+    {
+      "taxon_id": "F42068",
+      "protein_id": "XP_018228094.1",
+      "sequence_id": "S066dd59474887ee51dc602aeb99d0fb95a77e6edbe3f00034e8a7bb00506cc23",
+      "query_source": "additional_full_proteome",
+      "search_partition": "additional_full_proteome",
+      "raw_hits": 4,
+      "retained_sets_agree": 1,
+      "candidate_architectures": {
+        "alternatives": [
+          {
+            "alignment_overlap_pairs": 0,
+            "annotations": [
+              {
+                "alignment_end": 132,
+                "alignment_start": 28,
+                "envelope_end": 133,
+                "envelope_start": 26,
+                "hit_id": "FULL-chunk-020-000164896",
+                "hmm_coverage": "0.970873786407767",
+                "pfam_accession": "PF00085.27",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              },
+              {
+                "alignment_end": 217,
+                "alignment_start": 145,
+                "envelope_end": 237,
+                "envelope_start": 142,
+                "hit_id": "FULL-chunk-021-000094000",
+                "hmm_coverage": "0.7428571428571429",
+                "pfam_accession": "PF26973.1",
+                "pfam_clan": "CL0176",
+                "pfam_type": "Domain"
+              },
+              {
+                "alignment_end": 359,
+                "alignment_start": 246,
+                "envelope_end": 360,
+                "envelope_start": 243,
+                "hit_id": "FULL-chunk-032-000197697",
+                "hmm_coverage": "0.9769230769230769",
+                "pfam_accession": "PF24541.2",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              }
+            ],
+            "interpretation": "Coordinate-sorted candidate annotations; repeated models and all Pfam types retained. Signature is not a homology assignment or validated biological architecture.",
+            "model_multiplicities": [
+              [
+                "PF00085.27",
+                "Domain",
+                1
+              ],
+              [
+                "PF24541.2",
+                "Domain",
+                1
+              ],
+              [
+                "PF26973.1",
+                "Domain",
+                1
+              ]
+            ],
+            "ordered_model_tokens": [
+              [
+                "PF00085.27",
+                "Domain"
+              ],
+              [
+                "PF26973.1",
+                "Domain"
+              ],
+              [
+                "PF24541.2",
+                "Domain"
+              ]
+            ],
+            "partial_hmm_hits_below_070": 0,
+            "token_signature_sha256": "c5d0938f803e660b5625713bd0bfb583fb39b23c633d5fd3b1a698cbb134fcba"
+          }
+        ],
+        "policies": {
+          "alignment_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "alignment_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          }
+        },
+        "status": "candidate_architecture_requires_validation"
+      },
+      "tree_label": "F42068_XP_018228094.1"
+    },
+    {
+      "taxon_id": "F4754",
+      "protein_id": "XP_018226490.1",
+      "sequence_id": "S61a43d86d5b7339a8c604fe310aa822fc868b0a6d4a792c131b889d289ca68a6",
+      "query_source": "additional_full_proteome",
+      "search_partition": "additional_full_proteome",
+      "raw_hits": 2,
+      "retained_sets_agree": 1,
+      "candidate_architectures": {
+        "alternatives": [
+          {
+            "alignment_overlap_pairs": 0,
+            "annotations": [
+              {
+                "alignment_end": 129,
+                "alignment_start": 27,
+                "envelope_end": 133,
+                "envelope_start": 26,
+                "hit_id": "FULL-chunk-020-000163902",
+                "hmm_coverage": "0.9514563106796117",
+                "pfam_accession": "PF00085.27",
+                "pfam_clan": "CL0172",
+                "pfam_type": "Domain"
+              }
+            ],
+            "interpretation": "Coordinate-sorted candidate annotations; repeated models and all Pfam types retained. Signature is not a homology assignment or validated biological architecture.",
+            "model_multiplicities": [
+              [
+                "PF00085.27",
+                "Domain",
+                1
+              ]
+            ],
+            "ordered_model_tokens": [
+              [
+                "PF00085.27",
+                "Domain"
+              ]
+            ],
+            "partial_hmm_hits_below_070": 0,
+            "token_signature_sha256": "49cfe1a6effb8ea7044218d0ca8560f34d8992fd840197ceea82db5e2c811ae0"
+          }
+        ],
+        "policies": {
+          "alignment_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "alignment_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_bitscore": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          },
+          "envelope_evalue": {
+            "alternative_index": 0,
+            "candidate_nested_pairs": 0,
+            "primary_rank_tie_pairs": 0,
+            "unresolved_overlap_pairs": 0
+          }
+        },
+        "status": "candidate_architecture_requires_validation"
+      },
+      "tree_label": "F4754_XP_018226490.1"
+    }
+  ],
+  "scope": "Full retained candidate annotations under all recorded overlap policies. Missing retained hits do not establish domain absence, gain, or loss. Does not establish function, orthology, or structural acceleration."
+}

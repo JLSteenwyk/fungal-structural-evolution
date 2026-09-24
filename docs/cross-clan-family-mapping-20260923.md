@@ -127,3 +127,42 @@ An attempted ETE check was unavailable because that package was not installed;
 no environment change was needed. These are checks of existing tree context,
 not new inference, support assessment, rooting validation, reconciliation-event
 validation, or evidence of structural acceleration.
+
+## Full focal and sister annotation context (September 24)
+
+All five proteins have full-proteome candidate annotations. The four overlap
+policies agree on retained hits for each protein:
+
+| Protein | Ordered retained Pfam annotations |
+|---|---|
+| F281847_EPZ34216.1 | PF00085.27, PF26973.1 |
+| F2606893_XP_031856394.1 | PF00085.27 |
+| F42068_XP_018228094.1 | PF00085.27, PF26973.1, PF24541.2 |
+| F263815_XP_007871995.1 | PF00085.27, PF24541.2 |
+| F4754_XP_018226490.1 | PF00085.27 |
+
+Both focal proteins therefore contain both Pfam models in the original
+cross-clan comparison. The three immediate sister proteins have PF00085
+annotations despite not belonging to the candidate-left set. The original
+screen restricts membership by structural cluster and model exclusivity;
+its membership cannot be substituted for whole-protein domain content.
+The missing retained PF26973 calls in the sisters do not yet establish domain
+absence or gains/losses. Raw-hit review, sequence completeness, and comparisons
+of corresponding regions remain necessary before interpreting a transition.
+
+The complete annotations, coordinates, policy alternatives, sequence identifiers,
+and input hashes are archived in
+`metadata/cross_clan_focal_architectures_20260924.json`. All five exports were
+checked using an independent two-step protein/sequence lookup, and the database
+hash matched the earlier full-proteome snapshot. Reproduce with one CPU and no
+GPU (database hashing dominates this short lookup):
+
+```bash
+python scripts/inspect_focal_domain_architectures.py \
+  --context metadata/cross_clan_shared_family_tree_context_20260924.json \
+  --architectures results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite \
+  --output metadata/cross_clan_focal_architectures_20260924.json
+```
+
+The output file must not already exist. This export records candidate annotation
+context; it does not validate biological domain architectures or infer events.
