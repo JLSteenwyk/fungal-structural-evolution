@@ -4664,3 +4664,31 @@ and exported-domain manifests retain mean C-alpha pLDDT and the fraction at
 least 70. The next stage must join confidence and archive locations, retain
 exclusion reasons, estimate the actual interval-pair workload, and compare
 qualified candidates directly before making homology or functional claims.
+
+### Cross-clan confidence and comparison workload
+
+`scripts/join_cross_clan_confidence.py` completed the full confidence/location
+join for all 3,559 candidate intervals, scanning all 1,078,592 exported-domain
+manifest rows and checking every manifest checksum against the audited
+extraction receipt. Input arguments are `--candidates` pointing to the inventory
+above, `--extraction results/domains/domain-coordinates-20260923-v1`,
+`--audit metadata/domain_coordinate_full_completed_readback_20260923.json`, and
+`--output results/structural_clusters/cross-clan-confidence-20260923-v1`.
+All serialized confidence values were checked against source manifests;
+independent pandas joins reproduced every reported pair count and candidate
+count at every threshold. The completion receipt is
+`metadata/cross_clan_confidence_completed_receipt_20260923.json`.
+
+Restricting each pair to models exclusive to its respective accession within
+that cluster gives 17,769 unique unordered interval comparisons before
+confidence filtering. Requiring at least 50%, 80%, or 90% of C-alpha positions
+to have pLDDT at least 70 retains 17,762, 16,246, or 12,100 comparisons.
+At the 80% threshold, 27 alignment-view and 33 envelope-view candidate entries
+retain comparisons; at 90%, 20 and 24 do. These are descriptive sensitivity
+choices, not proof of correct folds or homology. All intervals and their
+confidence values remain available; no candidate was silently dropped.
+
+Archive paths, expected archive/member hashes, fragment sequence hashes and
+source coordinates are recorded. Archive bytes were not rehashed in this join;
+selected member bytes must be verified before direct alignment. PAE filtering,
+direct structural comparisons and biological interpretation remain pending.
