@@ -1,0 +1,39 @@
+{
+  "coordinates": "results/structural_clusters/cross-clan-coordinates-20260923-v1",
+  "confidence_receipt": "results/structural_clusters/cross-clan-confidence-20260923-v1/receipt.json",
+  "candidate_receipt": "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/receipt.json",
+  "members": "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/candidate_members.tsv",
+  "usalign": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+  "options": [
+    "-mol",
+    "prot",
+    "-mm",
+    "0",
+    "-outfmt",
+    "0",
+    "-ter",
+    "2"
+  ],
+  "output": "results/structural_comparisons/cross-clan-usalign-20260923-v1",
+  "per_pair_timeout_seconds": 600,
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib_upper": 2,
+    "planning_hours": [
+      1,
+      24
+    ],
+    "estimate": "Uncalibrated allowance for 35538 directed alignments; no GPU or paid resources"
+  },
+  "pins": {
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "results/structural_clusters/cross-clan-coordinates-20260923-v1/receipt.json": "9bb697d7810cf5cbf1fad1e8963bd2944b8f439324d17326e71550052195f3f1",
+    "results/structural_clusters/cross-clan-confidence-20260923-v1/receipt.json": "a9250a031e3547e84073ec06e8cdcef6fd43a57d04192fb0ca1798e5bdae5c8a",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/receipt.json": "7f8770eebca84eba283811c0ed2089fa099cfea7be3408675320a651dea08f71",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/candidate_members.tsv": "71524aad1a4649d53fdbe5b906b4cdf8ae91398fa6de0203515e0c818df198a2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "metadata/cross_clan_alignment_fixture_checks.json": "0b280fb3a065def64edaff8a3c3d2ba9fdcd084a944c74e775a1decf14f3680e"
+  }
+}

@@ -4712,3 +4712,29 @@ no GPU or paid resources were used. The completed receipt is archived in
 `metadata/cross_clan_coordinates_completed_receipt_20260923.json`.
 Direct alignments remain pending; this stage establishes reproducible inputs,
 not structural similarity, remote homology or evolutionary change.
+
+### Cross-clan direct structural comparisons launched
+
+`scripts/run_cross_clan_alignments.py --plan metadata/cross_clan_alignment_plan.json`
+is running under `fungal-cross-clan-alignments-20260923.service` with four CPU
+workers, an 8 GiB memory limit, no swap and no GPU. The initial planning
+allowance is 1–24 hours and at most 2 GiB output; this is not a calibrated ETA.
+The full 17,769 unordered interval pairs are each aligned in both input orders
+(35,538 directed comparisons), retaining all confidence levels for subsequent
+sensitivity analyses. All source coordinate bytes are checked before execution.
+
+US-align 20241108 is pinned by binary hash and uses monomeric protein alignment
+with `-mol prot -mm 0 -outfmt 0 -ter 2`. Both length-normalized TM-scores,
+aligned length, RMSD, sequence identity, aligned sequences and raw output are
+retained. Native sequence output is checked against the source fragments.
+Every completed pair is atomically checkpointed; re-entry checks plan identity
+and re-parses stored output before reuse, while an exclusive lock prevents
+concurrent runs in the same output directory. Self-superposition returned
+TM-score 1 and RMSD 0, two distinct-input orientations parsed successfully,
+and a deliberately mismatched sequence was rejected.
+
+Launch evidence is `metadata/cross_clan_alignment_launch.json`; outputs reside
+in `results/structural_comparisons/cross-clan-usalign-20260923-v1`. Completion,
+independent numeric validation, confidence stratification and interpretation
+are pending. These comparisons alone cannot establish homology, function,
+structural novelty, or evolutionary change.
