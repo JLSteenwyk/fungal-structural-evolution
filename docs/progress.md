@@ -4692,3 +4692,23 @@ Archive paths, expected archive/member hashes, fragment sequence hashes and
 source coordinates are recorded. Archive bytes were not rehashed in this join;
 selected member bytes must be verified before direct alignment. PAE filtering,
 direct structural comparisons and biological interpretation remain pending.
+
+### Cross-clan coordinate preparation complete
+
+`scripts/materialize_cross_clan_coordinates.py --plan
+metadata/cross_clan_coordinate_plan.json` materialized all 3,559 candidate
+domains from 428 archives into
+`results/structural_clusters/cross-clan-coordinates-20260923-v1`.
+The PDB files total 348,964,970 bytes. Each selected archive member and written
+file matched its audited checksum. Every candidate was decoded to verify
+fragment sequence, the complete C-alpha grid, finite coordinates, and mean
+confidence within PDB rounding tolerance. Full archive bytes were not rehashed;
+individual selected member bytes were checked. All output file hashes and
+FASTA sequences were independently read back after completion. Changed-byte
+and mismatched-fragment checks were rejected as expected.
+
+The resource plan allowed one CPU, 4 GiB memory and up to 2 GiB output;
+no GPU or paid resources were used. The completed receipt is archived in
+`metadata/cross_clan_coordinates_completed_receipt_20260923.json`.
+Direct alignments remain pending; this stage establishes reproducible inputs,
+not structural similarity, remote homology or evolutionary change.

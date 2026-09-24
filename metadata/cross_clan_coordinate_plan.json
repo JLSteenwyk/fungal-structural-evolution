@@ -1,0 +1,21 @@
+{
+  "confidence_receipt": "results/structural_clusters/cross-clan-confidence-20260923-v1/receipt.json",
+  "intervals": "results/structural_clusters/cross-clan-confidence-20260923-v1/interval_confidence.tsv",
+  "output": "results/structural_clusters/cross-clan-coordinates-20260923-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "output_gib_upper": 2,
+    "minimum_free_disk_gib": 100,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "runtime_estimate": "Uncalibrated allowance for tar-header traversal and 3559 member reads; no paid resources"
+  },
+  "pins": {
+    "scripts/materialize_cross_clan_coordinates.py": "2fe41d63c7b9889c060279208e6792d6b361a5770541fd17b6b8888798fe1ea9",
+    "results/structural_clusters/cross-clan-confidence-20260923-v1/receipt.json": "a9250a031e3547e84073ec06e8cdcef6fd43a57d04192fb0ca1798e5bdae5c8a",
+    "results/structural_clusters/cross-clan-confidence-20260923-v1/interval_confidence.tsv": "ba379e309ea8cd7d42ebc49cf5aeb4d5d14e8e25f81a1b120650c52f06f1ccbb"
+  }
+}
