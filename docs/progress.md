@@ -4738,3 +4738,19 @@ in `results/structural_comparisons/cross-clan-usalign-20260923-v1`. Completion,
 independent numeric validation, confidence stratification and interpretation
 are pending. These comparisons alone cannot establish homology, function,
 structural novelty, or evolutionary change.
+
+### Cross-clan direct alignment execution complete
+
+The US-align service exited successfully after about eight minutes, using
+30 minutes 51.867 seconds of CPU time. All 35,538 directed alignments for
+17,769 unordered interval pairs completed. An independent pandas join rebuilt
+the entire expected pair grid from the candidate member table; every expected
+orientation occurred exactly once. Every output checksum, checkpoint identity
+and source-plan pin matched. Pair outputs total 129,674,027 bytes.
+
+The inventory evidence is
+`metadata/cross_clan_alignment_completed_inventory_20260923.json`, which pins
+the full producer receipt and its per-output checksums outside Git. This
+establishes execution and complete output identity, not independent numerical
+validation. Alignment mappings, numerical summaries, confidence stratification
+and biological interpretation remain pending.
