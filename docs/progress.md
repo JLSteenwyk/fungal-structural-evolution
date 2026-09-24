@@ -4539,3 +4539,26 @@ interval-to-model and cluster-to-protein relations remain in
 `results/structural_clusters/domain-cluster-composition-20260923-v1/domain_cluster_composition.sqlite`.
 Confidence/parameter sensitivity, direct domain comparisons, and phylogenetic
 evolutionary tests remain unfinished.
+
+### September 23: full-manifest domain representation census
+
+Added `summarize_domain_taxon_coverage.py` and executed it against the fully
+audited domain composition database. All 526 taxa are retained: 475 have
+represented domain-bearing proteins and 51 have none in this selected catalog.
+The total is 439,217 protein records. Each taxon's distinct models, proteins,
+intervals, clusters and both family counts agree between independent Python
+set and SQL aggregation. Serialized rows were also checked against the full
+manifest, including identities and all six zero counts for unrepresented taxa.
+
+The 526-row table and checksum-bound receipt are archived as
+`metadata/domain_cluster_taxon_coverage_20260923.tsv` and
+`metadata/domain_cluster_taxon_coverage_receipt_20260923.json`.
+A zero is structural-catalog nonrepresentation, not biological domain absence.
+The catalog is AlphaFold/Pfam-specific and retains alternative boundaries.
+Phylogenetic missingness models and domain gain/loss tests remain unfinished.
+
+```bash
+python scripts/summarize_domain_taxon_coverage.py --composition results/structural_clusters/domain-cluster-composition-20260923-v1 --audit metadata/domain_cluster_composition_completed_readback_20260923.json --manifest metadata/analysis_manifest.tsv --output results/structural_clusters/domain-taxon-coverage-20260923-v1
+```
+
+Use a fresh output directory when rerunning.

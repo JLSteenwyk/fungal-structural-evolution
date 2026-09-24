@@ -1,0 +1,18 @@
+{
+  "status": "complete_all_taxon_domain_coverage_with_full_sql_set_agreement",
+  "taxa": 526,
+  "represented_taxa": 475,
+  "unrepresented_taxa": 51,
+  "proteins": 439217,
+  "source_hashes": {
+    "results/structural_clusters/domain-cluster-composition-20260923-v1/receipt.json": "6754c6617b6df4d2615f15d7eda33351acd5fe66921e44dd12a3074b6d94c56a",
+    "metadata/domain_cluster_composition_completed_readback_20260923.json": "793824438d016d3d3b06430f2941e50447699b43818ff7a433c2f133507918ed",
+    "results/structural_clusters/domain-cluster-composition-20260923-v1/domain_cluster_composition.sqlite": "546d629d9c4fdeb2c05ae37c8a093cf6a71378267604d56e22c2d0836c02df72",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5"
+  },
+  "script_sha256": "12df3efbeb060d1eaec75d74ed03c7e661da0fc2d1656a06d4bcf972e69e8fee",
+  "artifacts": {
+    "taxon_coverage.tsv": "89f377feebfa6ad79b6745c1769243ca5387f9a8636883ea1961c3590595928b"
+  },
+  "scope": "Full manifest retained, including zero representation. Counts describe the selected AlphaFold/Pfam domain catalog; zero does not establish gene/domain absence. Alternative boundaries and shared models are not independent observations. No confidence qualification or evolutionary-event inference."
+}
