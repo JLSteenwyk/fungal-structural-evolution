@@ -1,0 +1,27 @@
+{
+  "registry": "results/domains/whole-proteome-structure-domain-registry-20260923-v1/structure_domains.sqlite",
+  "intervals": "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv",
+  "pairs": "results/structural_clusters/domain-boundary-dispositions-20260923-v1/boundary_cluster_dispositions.tsv.gz",
+  "boundary_audit": "metadata/domain_boundary_clusters_completed_readback_20260923.json",
+  "registry_audit": "metadata/whole_proteome_structure_domain_registry_completed_readback.json",
+  "output": "results/structural_clusters/domain-cluster-pfam-20260923-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "expected_output_gib_upper": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "runtime_estimate": "Uncalibrated planning allowance for 594797 indexed joins and full grouping/readback; no new paid resources"
+  },
+  "pins": {
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/structure_domains.sqlite": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+    "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "results/structural_clusters/domain-boundary-dispositions-20260923-v1/boundary_cluster_dispositions.tsv.gz": "a9394ef699c82b74e065a07653724e8af9400deccc1321105a8e621bc23689b7",
+    "metadata/domain_boundary_clusters_completed_readback_20260923.json": "dac0aa885103d44661e23a0a5dd3c1bb72a5cc19594bed7736de53afd74675a0",
+    "metadata/whole_proteome_structure_domain_registry_completed_readback.json": "b2b0e593abd2a67f42f48a6e89bdcbe4e858a79886de7883113ac75650f899e8",
+    "scripts/summarize_domain_cluster_pfam.py": "f90b93a3838f0aa18bcec85405eda7796ac4c23065c29da7706b46057a6f82ca"
+  }
+}

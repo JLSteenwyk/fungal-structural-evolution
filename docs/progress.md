@@ -4562,3 +4562,32 @@ python scripts/summarize_domain_taxon_coverage.py --composition results/structur
 ```
 
 Use a fresh output directory when rerunning.
+
+### September 23: domain cluster Pfam annotation join launched
+
+Launched `summarize_domain_cluster_pfam.py` across all 594,797 audited
+model/domain-hit pairs. The join verifies interval coordinates against the
+independently audited structure/domain registry and retains alignment and
+envelope alternatives separately. For each boundary/cluster/Pfam/clan group,
+it counts distinct source models, model/hit pairs, and intervals. Source-derived
+Python sets must agree with SQL aggregation, and every serialized count is
+checked against the resulting database.
+
+A temporary synthetic fixture passed for alternative boundaries, repeated
+source models, multiple Pfam accessions in a cluster, and rejection of a
+changed source coordinate even after updating input hashes. Compilation passed.
+The full dataset run is not yet declared complete.
+
+Six inputs are checksum-pinned in `metadata/domain_cluster_pfam_plan.json`;
+the live process identity is in `metadata/domain_cluster_pfam_launch.json`.
+The service uses one CPU, 16 GiB memory and no swap. Expected output allowance
+is 2 GiB with an uncalibrated 0.1–4 hour planning range and no paid resources.
+Outputs go to `results/structural_clusters/domain-cluster-pfam-20260923-v1`.
+This descriptive annotation layer can prioritize cross-family comparisons;
+it does not establish homology, validated function, or evolutionary events.
+
+```bash
+python scripts/summarize_domain_cluster_pfam.py --plan metadata/domain_cluster_pfam_plan.json
+```
+
+Use a fresh output path in a new pinned plan for a rerun.
