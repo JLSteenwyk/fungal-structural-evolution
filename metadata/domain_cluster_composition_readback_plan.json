@@ -1,0 +1,39 @@
+{
+  "producer_plan": "metadata/domain_cluster_composition_plan.json",
+  "output": "results/structural_clusters/domain-cluster-composition-readback-20260923-v1",
+  "predecessor": {
+    "pid": 1648084,
+    "create_time": 1790208300.7,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/annotate_domain_cluster_composition.py",
+      "--plan",
+      "metadata/domain_cluster_composition_plan.json"
+    ]
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.1,
+      8
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1/cluster_composition.sqlite": "aa5a9cdb6734d2954bbdb11d9780d6efca6c97935db2779f20063fae9c74dbbe",
+    "results/domains/domain-extraction-manifest-20260923-v1/intervals.tsv": "cd4ea02d9ef04b3adb3401604258458a97f76c8985610a43ec13a8be00611af7",
+    "results/structural_clusters/full-domain-clusters-20260923-v1/cluster_members.tsv": "857e7aca45d333788b5ed3957012081c6e4eb49baa53577ffbfc9c3237971e50",
+    "scripts/annotate_domain_cluster_composition.py": "ddc30d8d9d78cd4505855f19f60db1074d28fb73ee30cdd465ea2d436105d2fd",
+    "results/structural_clusters/whole-proteome-cluster-composition-20260923-v1/receipt.json": "1da13b31b6c2f2b3183dc5aa0f6f47736cced30323742c4e1672bcd4264a6d06",
+    "metadata/whole_proteome_cluster_composition_completed_readback_receipt.json": "2aa52c54ca7ee001ce0c878ecfdcbe8a40852d6a9126f0aefcdbc5ddf991fa18",
+    "results/domains/domain-extraction-manifest-20260923-v1/receipt.json": "9b6dd32cea51c151953ee3aa73d7a13628917aff216694b83396d97dd99a6069",
+    "results/structural_clusters/full-domain-clusters-20260923-v1/receipt.json": "b43b8b5bc1446ef673bfca55fbf7ff662d969495b096a39eb54df494f43f45ff",
+    "metadata/domain_cluster_composition_plan.json": "68e11d4b6e463df6efe2bfabec4ee73676bca415256ef502677c3dda4b4526db",
+    "scripts/readback_domain_cluster_composition.py": "a045bbd4bc9e620ac5f11f0393d1fc1d9e2b0e92d502fc0f988bd7055cb1a787"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "unit": "fungal-domain-cluster-composition-readback-20260923",
+  "pid": 1682989,
+  "create_time": 1790208480.18,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_domain_cluster_composition.py",
+    "--plan",
+    "metadata/domain_cluster_composition_readback_plan.json"
+  ],
+  "status": "running_or_waiting_for_producer",
+  "plan": "metadata/domain_cluster_composition_readback_plan.json"
+}

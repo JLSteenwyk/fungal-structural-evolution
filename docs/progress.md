@@ -4492,3 +4492,23 @@ The output directory is
 The job is running, not a completed result. Full independent source-join and
 aggregate readback is required before these annotations support interpretation.
 These links alone do not establish homology, orthology or evolutionary events.
+
+### September 23: full domain composition readback queued
+
+`readback_domain_cluster_composition.py` independently rebuilds all interval
+coordinates and memberships, protein/taxon identities, both family mappings,
+cluster/protein links and every aggregate count using Python sets/counters.
+It verifies pinned sources and output hashes before and after reading.
+The predecessor is checked by PID, creation time and command before its
+completion receipt and producer-plan binding are accepted.
+
+A small fixture with a protein contributing two alternative boundaries to
+different clusters passed; changing a taxon count while updating the artifact
+hash was rejected by the independent aggregation comparison. This verifies
+the checker behavior, not completion of the full dataset audit.
+
+The full audit is queued/running under a one-CPU, 32 GiB, zero-swap service,
+with a 1 GiB output allowance and uncalibrated 0.1–8 hour planning range.
+Ten pinned inputs include the producer sources, both scripts and producer plan.
+See `metadata/domain_cluster_composition_readback_{plan,launch}.json`.
+No domain-composition result is yet declared independently verified.
