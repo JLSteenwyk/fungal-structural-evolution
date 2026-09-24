@@ -1,0 +1,23 @@
+{
+  "status": "complete_domain_cluster_pfam_source_set_sql_agreement",
+  "plan_sha256": "26dc342354a268ef1679bbfb53d8e9a0caa4cdd870681eb9bf8619066e7a303f",
+  "pairs": 594797,
+  "intervals": 1078592,
+  "clusters": 70537,
+  "boundary_links": 1189594,
+  "annotation_groups": 105519,
+  "represented_clusters_by_boundary": {
+    "alignment": 52800,
+    "envelope": 48658
+  },
+  "multiple_pfam_clusters_by_boundary": {
+    "alignment": 1305,
+    "envelope": 1207
+  },
+  "elapsed_seconds": 51.35703922500397,
+  "artifacts": {
+    "cluster_pfam.tsv": "2d75b31e70f2c1670a0d02f30b584884e20a416878d71ae2d2edffe5aef45a7b",
+    "cluster_pfam.sqlite": "08c182d0bed7c1394d818b3090b492be3aadb192560fd962ac67196eae70f994"
+  },
+  "scope": "Full selected Domain/Pfam annotation join. Alignment and envelope alternatives remain separate; counts distinguish source models, model/hit pairs and intervals. SQL aggregates agree with source-derived Python sets and all serialized counts are checked. Shared source annotation and cluster partition; no new annotation searches, independent clustering, confidence qualification, established homology, function or evolutionary events."
+}

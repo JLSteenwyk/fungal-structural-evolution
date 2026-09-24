@@ -4591,3 +4591,23 @@ python scripts/summarize_domain_cluster_pfam.py --plan metadata/domain_cluster_p
 ```
 
 Use a fresh output path in a new pinned plan for a rerun.
+
+### September 23: full domain cluster Pfam join completed
+
+The run finished successfully in 51 seconds. All 594,797 source model/hit
+pairs and 1,189,594 boundary links were joined across 1,078,592 intervals and
+70,537 clusters. The 105,519 boundary/cluster/Pfam/clan groups passed complete
+source-set versus SQL aggregation and serialized-count checks. The plan,
+six pinned inputs and both output artifact hashes were rechecked afterward.
+
+Alignment boundaries represent 52,800 clusters, of which 1,305 contain multiple
+Pfam accessions; envelope boundaries represent 48,658 clusters, of which 1,207
+contain multiple accessions. These overlapping views of one joint partition
+are not independent clustering runs. Multiple accessions may reflect related
+Pfam families, structural similarity, or annotation/boundary effects; they do
+not establish remote homology or functional equivalence. Direct comparisons,
+confidence qualification and phylogenetic interpretation remain required.
+
+Evidence is archived in
+`metadata/domain_cluster_pfam_completed_receipt_20260923.json`; full tables
+remain outside Git in the output directory recorded by the plan.
