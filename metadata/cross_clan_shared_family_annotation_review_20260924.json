@@ -1,0 +1,54 @@
+{
+  "status": "complete_shared_family_candidate_annotation_review",
+  "source_hashes": {
+    "results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1/shared_family_pairs.tsv": "37be90722fa6d71792e173d75621d5917e2c4adcdd6985da88f0e8c3d9e77bf6",
+    "metadata/domain_cluster_taxon_coverage_20260923.tsv": "89f377feebfa6ad79b6745c1769243ca5387f9a8636883ea1961c3590595928b",
+    "data/pfam/38.2/Pfam-A.clans.tsv": "e85aa48dfb63057d27bedfbbb82df8281f4791822d184288bd3ea0aaec22b870"
+  },
+  "pfam_annotation_rows": {
+    "PF00085": [
+      "PF00085",
+      "CL0172",
+      "Thioredoxin",
+      "Thioredoxin",
+      "Thioredoxin"
+    ],
+    "PF26973": [
+      "PF26973",
+      "CL0176",
+      "Chemosens_recp",
+      "Thioredoxin-like_DJC16_2nd",
+      "DJC16, Thioredoxin-like domain 2"
+    ]
+  },
+  "right_side_records": [
+    {
+      "boundary": "alignment",
+      "taxon_id": "F281847",
+      "protein_id": "EPZ34216.1",
+      "native_gene_id": "24_3474",
+      "model": "AF-A0A075AV72-F1-v6",
+      "species_name": "Rozella allomycis",
+      "study_role": "ingroup"
+    },
+    {
+      "boundary": "envelope",
+      "taxon_id": "F281847",
+      "protein_id": "EPZ34216.1",
+      "native_gene_id": "24_3474",
+      "model": "AF-A0A075AV72-F1-v6",
+      "species_name": "Rozella allomycis",
+      "study_role": "ingroup"
+    },
+    {
+      "boundary": "envelope",
+      "taxon_id": "F42068",
+      "protein_id": "XP_018228094.1",
+      "native_gene_id": "365_324",
+      "model": "AF-A0A0W4ZDZ6-F1-v6",
+      "species_name": "Pneumocystis jirovecii",
+      "study_role": "ingroup"
+    }
+  ],
+  "interpretation": "PF26973 is already annotated as a thioredoxin-like domain. Its cross-clan relationship to PF00085 is not a newly established fold relationship. Right-side sampling is one taxon in alignment boundaries and two in envelope boundaries; this is not replicated evolutionary transition evidence. Gene-tree, full architecture and annotation checks remain pending."
+}

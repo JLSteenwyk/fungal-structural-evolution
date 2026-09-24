@@ -78,3 +78,23 @@ python scripts/screen_cross_clan_shared_families.py \
   --comparisons results/structural_comparisons/cross-clan-confidence-summary-20260923-v1 \
   --output results/structural_comparisons/cross-clan-shared-family-screen-20260923-v1
 ```
+
+## Annotation and taxonomic review (September 24)
+
+The local Pfam 38.2 annotation calls PF00085 "Thioredoxin" and PF26973
+"DJC16, Thioredoxin-like domain 2", despite their different clan assignments.
+Thus this candidate does not establish a previously unknown fold relationship.
+It remains useful for checking annotation consistency and family history.
+
+The PF26973 side comprises *Rozella allomycis* protein EPZ34216.1
+(`24_3474`, model `AF-A0A075AV72-F1-v6`) in both boundary views, with
+*Pneumocystis jirovecii* XP_018228094.1 (`365_324`, model
+`AF-A0A0W4ZDZ6-F1-v6`) additionally represented in the envelope view.
+Both are ingroup taxa in the sampling table. Numerous pairwise comparisons
+therefore do not provide numerous independent changes on this side of the
+comparison. No replicated transition or branch acceleration is established.
+
+The exact three boundary/taxon/protein/model records, Pfam annotation rows,
+and hashes of the complete source tables are recorded in
+`metadata/cross_clan_shared_family_annotation_review_20260924.json`.
+Full domain architecture and gene-tree inspection remain pending.
