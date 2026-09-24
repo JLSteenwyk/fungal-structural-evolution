@@ -1,0 +1,23 @@
+{
+  "producer_plan": "metadata/cross_clan_alignment_plan.json",
+  "alignments": "results/structural_comparisons/cross-clan-usalign-20260923-v1",
+  "coordinates": "results/structural_clusters/cross-clan-coordinates-20260923-v1",
+  "output": "results/structural_comparisons/cross-clan-usalign-readback-20260923-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "output_gib_upper": 0.1,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "estimate": "Full 35538 coordinate fits and checkpoint reads; no paid resources"
+  },
+  "pins": {
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "metadata/cross_clan_alignment_plan.json": "83bd79489b644743b4ea7891475149b76ea8240c45ce13546717a877ae11a396",
+    "results/structural_comparisons/cross-clan-usalign-20260923-v1/receipt.json": "64f5ccf684c41b0e5799f951316330952c341669f1ef6170f56bc81e8665faf1",
+    "results/structural_clusters/cross-clan-coordinates-20260923-v1/receipt.json": "9bb697d7810cf5cbf1fad1e8963bd2944b8f439324d17326e71550052195f3f1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign.cpp": "d182c5b9deec816057ee195af61ba774ac78e3c2089d3664edece062acaa6064"
+  }
+}

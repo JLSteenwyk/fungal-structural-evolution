@@ -4754,3 +4754,25 @@ the full producer receipt and its per-output checksums outside Git. This
 establishes execution and complete output identity, not independent numerical
 validation. Alignment mappings, numerical summaries, confidence stratification
 and biological interpretation remain pending.
+
+### Full cross-clan correspondence and RMSD readback complete
+
+`scripts/readback_cross_clan_alignments.py --plan
+metadata/cross_clan_alignment_readback_plan.json` independently reconstructed
+every residue correspondence, sequence identity and least-squares RMSD across
+all 35,538 directed alignments. All source coordinate hashes and expected
+directed pair identities were checked. The largest RMSD discrepancy was
+0.0049994078522992424 Angstrom, within native two-decimal rounding. The rigid-fit
+implementation passed a rotation/translation example and retained nonzero
+RMSD for a reflected noncoplanar example.
+
+The full table includes alignment coverage and the count/fraction of matched
+residue pairs where both C-alpha pLDDT values are at least 70. Every serialized
+row is finite and unique, and confidence count/fraction consistency passed.
+Evidence is `metadata/cross_clan_alignment_completed_readback_20260923.json`;
+the table is outside Git in
+`results/structural_comparisons/cross-clan-usalign-readback-20260923-v1`.
+TM-scores were checked against native raw output, not independently
+reoptimized. Confidence uses rounded PDB values and does not incorporate PAE.
+Confidence-stratified candidate summaries, functional interpretation and
+phylogenetic integration remain pending.
