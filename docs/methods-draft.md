@@ -328,3 +328,59 @@ and scoped statuses, in `metadata/methods_checkpoint_20260922_sources.json`.
 The September 23 structural-coverage, confidence, architecture and HOG updates
 are indexed separately in `metadata/methods_checkpoint_20260923_sources.json`.
 Earlier executed analyses above retain their original cohorts and scopes.
+
+## Completed domain structural atlas and representation census
+
+The September 23 domain atlas retained both alignment and HMM-envelope
+boundaries for the union of eligible Domain hits across the four documented
+annotation policies. An interval was identified by the full source-sequence
+SHA-256 and inclusive residue coordinates; hit and boundary associations
+remained explicit when intervals coincided. The 594,797 model/hit pairs yielded
+1,078,592 distinct intervals from 427,255 source models. Every exported atom,
+residue, coordinate, occupancy and confidence value was read back against
+the original CIF arrays and fragment sequence across 428 archive shards.
+No interval was rejected or missing backbone atoms. The shared CIF lexical
+parser and absence of biological boundary/PAE validation limit this audit.
+
+Foldseek database construction used `--gpu 0 --threads 4
+--mask-bfactor-threshold 70 --coord-store-mode 1`. Full sequence and coordinate
+readback covered 168,431,396 residues. Candidate clustering used
+`--alignment-type 2 --cov-mode 0 -c 0.8 -e 0.001 -s 7.5
+--max-seqs 1000 --cluster-mode 0 --cluster-reassign 1`, with eight threads
+and a 64 GiB split-memory limit. The exact binary hash, commands and source
+hashes are pinned in `metadata/full_domain_search_database_plan.json` and
+`metadata/domain_clustering_plan.json`. Database confidence masking is not
+equivalent to full residue or domain confidence qualification.
+
+The partition contained 70,537 candidate clusters, including 41,930 singletons.
+Every interval occurred exactly once and each representative belonged to its
+own cluster. All 594,797 alignment/envelope pairs were reconstructed from
+the original boundary associations and partition: 111,002 had identical
+intervals, 397,292 distinct intervals shared a cluster, and 86,503 distinct
+intervals occupied different clusters. Disagreement was therefore 17.88% among
+the 483,795 nonidentical pairs. Proportions were also summarized by envelope
+extension length. This assesses boundary sensitivity within a joint partition;
+it does not measure stability across separate clustering runs, validate native
+alignment thresholds, or establish structural evolutionary change.
+
+Domain intervals and clusters were joined to 439,217 protein records, their
+taxa, and both guide-specific protein-family assignments. The 688,246 distinct
+cluster/protein links count a protein once within a cluster while retaining
+its original intervals and allowing membership in multiple clusters. An
+independent implementation rebuilt every source identity, relation and summary
+using Python sets and counters. Structural clusters were not treated as
+orthogroups or proof of remote homology.
+
+The representation census retained all 526 manifest taxa, with all six counts
+(models, proteins, intervals, clusters and the two family counts) agreeing
+between set-based and SQL aggregation. The selected domain catalog represented
+452 fungal entries and 23 outgroups; 49 fungal entries and two outgroups had
+zero representation. These zeros indicate missing evidence in the selected
+AlphaFold/Pfam catalog, not biological domain absence. Alternative boundaries,
+shared models, uneven coverage and shared ancestry preclude treating entries
+as independent evolutionary observations. Confidence and clustering-parameter
+sensitivity, direct within-domain comparisons, and phylogenetic tests of domain
+and structural evolution remain unfinished.
+
+Evidence for this completed-methods section is indexed in
+`metadata/methods_domain_atlas_checkpoint_20260923_sources.json`.
