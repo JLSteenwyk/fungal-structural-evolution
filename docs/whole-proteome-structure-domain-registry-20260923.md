@@ -538,6 +538,26 @@ Completion evidence is archived in:
 - `metadata/domain_boundary_extension_figure_receipt_20260923.json`
 
 Remaining work includes clustering-parameter and confidence sensitivity,
-family and taxon annotation of domain clusters, direct comparisons within
+direct comparisons within
 homologous domains, and phylogenetic tests. Clusters alone do not establish
 orthology, remote homology, domain gains/losses or structural acceleration.
+
+## Validated family and taxon links
+
+Full independent readback now verifies 439,217 source proteins and 688,246
+distinct cluster/protein links across all 70,537 clusters. Both guide-specific
+family mappings are preserved. The database retains interval coordinates and
+source-model links, so alternative boundaries and proteins sharing a model
+remain distinguishable. There are 16,648 clusters spanning multiple taxa;
+7,353 span multiple inferred families under both guides. This identifies
+candidate comparison groups, not established homology or evolutionary events.
+
+See `metadata/domain_cluster_composition_completed_readback_20260923.json`
+and `metadata/domain_cluster_composition_summary_20260923.json` for the
+full-scope validation and descriptive census. Reproduce the producer and audit
+with their respective `scripts/annotate_domain_cluster_composition.py` and
+`scripts/readback_domain_cluster_composition.py` commands, passing the matching
+`metadata/domain_cluster_composition_plan.json` and
+`metadata/domain_cluster_composition_readback_plan.json` via `--plan`.
+Existing outputs are protected; new runs require fresh output paths and
+updated pinned plans/process identities.

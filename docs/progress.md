@@ -4512,3 +4512,30 @@ with a 1 GiB output allowance and uncalibrated 0.1–8 hour planning range.
 Ten pinned inputs include the producer sources, both scripts and producer plan.
 See `metadata/domain_cluster_composition_readback_{plan,launch}.json`.
 No domain-composition result is yet declared independently verified.
+
+### September 23: domain composition full source readback complete
+
+The independent audit passed for all 1,078,592 intervals, 427,255 source models,
+439,217 proteins, 70,537 clusters and 688,246 distinct cluster/protein links.
+Every interval coordinate, cluster membership, selected protein/taxon identity,
+both family mappings, database summary and TSV count was reconstructed from
+source rows using Python sets/counters. Ten pinned inputs, two output artifact
+hashes and both plan/receipt bindings were rechecked after completion.
+
+The validated table contains 28,607 clusters with multiple intervals, but only
+17,766 with multiple source models; alternative boundaries contribute to this
+difference. There are 18,455 clusters with multiple protein records and 16,648
+with multiple taxa. Multiple inferred families occur in 7,354 profile-guide
+clusters and 7,353 MAFFT-guide clusters; 7,353 span multiple families in both.
+These are descriptive candidate groups, not independently established remote
+homologs, orthogroups or structural changes.
+
+Archived evidence: `metadata/domain_cluster_composition_completed_receipt_20260923.json`,
+`metadata/domain_cluster_composition_completed_readback_20260923.json` and
+`metadata/domain_cluster_composition_summary_20260923.json`.
+The summary counts rows with each audited TSV count greater than one; the
+both-guide count requires both family columns greater than one. Original
+interval-to-model and cluster-to-protein relations remain in
+`results/structural_clusters/domain-cluster-composition-20260923-v1/domain_cluster_composition.sqlite`.
+Confidence/parameter sensitivity, direct domain comparisons, and phylogenetic
+evolutionary tests remain unfinished.
