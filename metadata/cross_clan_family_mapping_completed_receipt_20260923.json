@@ -1,0 +1,21 @@
+{
+  "status": "complete_cross_clan_source_protein_family_mapping",
+  "source_hashes": {
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/candidate_members.tsv": "71524aad1a4649d53fdbe5b906b4cdf8ae91398fa6de0203515e0c818df198a2",
+    "results/structural_clusters/domain-cluster-composition-20260923-v1/domain_cluster_composition.sqlite": "546d629d9c4fdeb2c05ae37c8a093cf6a71378267604d56e22c2d0836c02df72",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/receipt.json": "7f8770eebca84eba283811c0ed2089fa099cfea7be3408675320a651dea08f71",
+    "results/structural_clusters/domain-cluster-composition-20260923-v1/receipt.json": "6754c6617b6df4d2615f15d7eda33351acd5fe66921e44dd12a3074b6d94c56a",
+    "metadata/domain_cluster_composition_completed_readback_20260923.json": "793824438d016d3d3b06430f2941e50447699b43818ff7a433c2f133507918ed",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/map_cross_clan_families.py": "6b99ebcec7cc2aff564fc063d082a54888ba09c8d29b7a9d18c73f8552bd0816"
+  },
+  "candidate_entries": 68,
+  "input_members": 4600,
+  "mapped_rows": 4746,
+  "proteins": 2759,
+  "taxa": 224,
+  "artifacts": {
+    "candidate_proteins.tsv": "76a489964dc49f26a33794821b80bcc56a2654058301595296273827bd7705b8",
+    "candidate_family_summary.tsv": "7a155c2b664fa3ebe61e3910b1b3889f91f6314b5630b82bcd44f91044621fb3"
+  },
+  "scope": "All candidate members retained, including shared models. Exclusive-model summaries use pair/cluster-local exclusivity. Counts precede confidence and direct-alignment screening. Shared family assignments are not proof of orthology or homology; shared taxa are not evolutionary transitions. Boundary views overlap. One structure can map to multiple source proteins."
+}
