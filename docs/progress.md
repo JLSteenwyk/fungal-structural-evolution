@@ -4776,3 +4776,32 @@ TM-scores were checked against native raw output, not independently
 reoptimized. Confidence uses rounded PDB values and does not incorporate PAE.
 Confidence-stratified candidate summaries, functional interpretation and
 phylogenetic integration remain pending.
+
+### Descriptive cross-clan confidence summaries complete
+
+`scripts/summarize_cross_clan_comparisons.py` completed all 17,769 unordered
+pairs and all 272 candidate/threshold rows (68 entries at four confidence
+thresholds). Arguments are `--candidates` with the candidate inventory,
+`--confidence` with the confidence join, `--readback` with the full alignment
+readback, and `--output
+results/structural_comparisons/cross-clan-confidence-summary-20260923-v1`.
+Independent pandas joins reproduced every bidirectional pair metric and all
+candidate counts, medians and maxima. The receipt is archived in
+`metadata/cross_clan_confidence_summary_completed_receipt_20260923.json`.
+
+Each pair uses the minimum TM-score across both length normalizations and
+input orders, minimum alignment coverage and matched confidence, and maximum
+RMSD and input-order score discrepancy. Confidence thresholds 0, 0.5, 0.8 and
+0.9 apply to both whole-domain fractions and both matched-residue fractions
+with C-alpha pLDDT at least 70. Empty candidate/threshold strata remain explicit.
+
+A descriptive prioritization screen requiring minimum TM-score at least 0.5
+and minimum coverage at least 0.8 retains at least one interval comparison for
+23, 23, 20 and 18 candidate entries at those thresholds, respectively. The
+80% confidence stratum comprises nine alignment-view and eleven envelope-view
+entries. These are overlapping boundary/cluster/accession-pair entries, not
+independent homolog discoveries. Shared models, annotation uncertainty,
+unmodeled PAE, and selection through a structural cluster remain limitations.
+No significance, functional equivalence or evolutionary conclusion follows
+from these thresholds; candidate biology and phylogenetic integration remain
+unfinished.

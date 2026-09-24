@@ -1,0 +1,27 @@
+{
+  "status": "complete_descriptive_cross_clan_confidence_summary",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/summarize_cross_clan_comparisons.py": "ed54ea4499cbf48ecb3cfdbd6ed898d02dfceafbe36ac58260d7596de339e300",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/receipt.json": "7f8770eebca84eba283811c0ed2089fa099cfea7be3408675320a651dea08f71",
+    "results/structural_clusters/cross-clan-confidence-20260923-v1/receipt.json": "a9250a031e3547e84073ec06e8cdcef6fd43a57d04192fb0ca1798e5bdae5c8a",
+    "results/structural_comparisons/cross-clan-usalign-readback-20260923-v1/receipt.json": "7c50a0c1ba19891fdd41968815b07f58d5f2fbda0520aeb4e742656cbdae1358",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/candidate_members.tsv": "71524aad1a4649d53fdbe5b906b4cdf8ae91398fa6de0203515e0c818df198a2",
+    "results/structural_clusters/cross-clan-candidate-inventory-20260923-v1/candidates.tsv": "c923f0b8f3fa142f76b2b0f38bd788e123ac4d8df285d51354ef7af2b8e6ef10",
+    "results/structural_clusters/cross-clan-confidence-20260923-v1/interval_confidence.tsv": "ba379e309ea8cd7d42ebc49cf5aeb4d5d14e8e25f81a1b120650c52f06f1ccbb",
+    "results/structural_comparisons/cross-clan-usalign-readback-20260923-v1/alignment_readback.tsv": "aedb6bcc4896ec030aef771ee82c6a94fe5211576bae21f1e34e0c33fb297775"
+  },
+  "unordered_pairs": 17769,
+  "candidate_entries": 68,
+  "summary_rows": 272,
+  "screen_entries_by_threshold": {
+    "0": 23,
+    "0.5": 23,
+    "0.8": 20,
+    "0.9": 18
+  },
+  "artifacts": {
+    "bidirectional_pairs.tsv": "97a3a2a6b0fac26513ba2465f832eca79edcf4e8458b0a9d44d731b4e9f1a419",
+    "candidate_confidence_summary.tsv": "c630bb3f9290c79e712da3ac4a69a6ea31d370699a7d40c3f93e7c5dcdeb0531"
+  },
+  "scope": "Descriptive only. Each pair uses the minimum score/coverage/confidence across both input orders and length normalizations. Confidence fraction applies to both full domains and both matched-residue alignments. Screen requires minimum TM-score >=0.5 and coverage >=0.8; these are prioritization choices, not proof of homology. Boundary views, source models and pair observations overlap; no independent tests, PAE filtering, function or evolutionary claims."
+}
