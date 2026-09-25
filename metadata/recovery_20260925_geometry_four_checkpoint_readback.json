@@ -1,0 +1,43 @@
+{
+  "status": "passed_available_checkpoint_hash_and_complete_pair_grid_readback",
+  "config_sha256": "7ce9ad233d0f806858058692518891511fb87e7ffd920926e6eabd67dbf9fdaf",
+  "checkpoints": [
+    {
+      "marker": "115730at2759",
+      "checkpoint": "results/structural_comparisons/paired-site-esmfold-checkpoints-20260925-v1/115730at2759.json",
+      "sha256": "0d70bdc4dcb07890279ed5acd8368d55173c44b3e6b133bc229811ea9c4e99aa",
+      "input_fasta_sha256": "bd7832f8219bc68ce893c0e9ea3606435ddc395dacb58323e4f29425f18afb30",
+      "accepted": 23900,
+      "excluded": 190,
+      "taxa": 220
+    },
+    {
+      "marker": "129234at2759",
+      "checkpoint": "results/structural_comparisons/paired-site-esmfold-checkpoints-20260925-v1/129234at2759.json",
+      "sha256": "f8cbc73e9ea987183028c36f9288823b7057dca4a248e64e1cf68f1e3f8ef88e",
+      "input_fasta_sha256": "b1a9b4be6bec134f42ee18b0c0750462cfcdbb83b609c26e9cca95c2fe3b3802",
+      "accepted": 25163,
+      "excluded": 262,
+      "taxa": 226
+    },
+    {
+      "marker": "160487at2759",
+      "checkpoint": "results/structural_comparisons/paired-site-esmfold-checkpoints-20260925-v1/160487at2759.json",
+      "sha256": "8345a8c7c0b93eb9269fee3758f18befeaff2522ae7c5f3e14fe7f2a9034f48f",
+      "input_fasta_sha256": "d5e45ddf111b67e2824abce8dfcd45d6eff8519bbb0b7fd49cea55ddca3f617e",
+      "accepted": 23220,
+      "excluded": 0,
+      "taxa": 216
+    },
+    {
+      "marker": "201273at2759",
+      "checkpoint": "results/structural_comparisons/paired-site-esmfold-checkpoints-20260925-v1/201273at2759.json",
+      "sha256": "56bff46547eb5a0fb84cb8ebceb52aa64367596ce6e77fad7a95602b315313da",
+      "input_fasta_sha256": "ffd968eb7af288d2811c1d23cb4f45a422893bc89291d05d9fbac00ba3e522a8",
+      "accepted": 6328,
+      "excluded": 0,
+      "taxa": 113
+    }
+  ],
+  "scope": "All four completed checkpoints observed at this readback. Payload hashes and complete taxon-pair grids checked against source FASTA; numerical geometry and full-cohort completion remain unverified."
+}
