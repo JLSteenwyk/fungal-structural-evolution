@@ -1,0 +1,80 @@
+{
+  "stages": [
+    [
+      "scripts/extract_structural_alphabet.py",
+      "--snapshot",
+      "results/structural_markers/recovered-markers-20260925-v1",
+      "--output",
+      "results/structural_alphabet/native-recovered-mapped-20260925-v1"
+    ],
+    [
+      "scripts/audit_native_exports.py",
+      "--native",
+      "results/structural_alphabet/native-recovered-mapped-20260925-v1",
+      "--snapshot",
+      "results/structural_markers/recovered-markers-20260925-v1",
+      "--output",
+      "metadata/recovered_mapped_native_exports_20260925.json"
+    ],
+    [
+      "scripts/audit_3di_features.py",
+      "--native",
+      "results/structural_alphabet/native-recovered-mapped-20260925-v1",
+      "--snapshot",
+      "results/structural_markers/recovered-markers-20260925-v1",
+      "--output",
+      "results/structural_alphabet/coordinate-recovered-mapped-20260925-v1"
+    ],
+    [
+      "scripts/retrieve_marker_pae.py",
+      "--snapshot",
+      "results/structural_markers/recovered-markers-20260925-v1",
+      "--output",
+      "results/structural_pae/recovered-mapped-20260925-v1"
+    ],
+    [
+      "scripts/qualify_native_pae.py",
+      "--coordinates",
+      "results/structural_alphabet/coordinate-recovered-mapped-20260925-v1",
+      "--pae",
+      "results/structural_pae/recovered-mapped-20260925-v1",
+      "--output",
+      "results/structural_alphabet/qualified-recovered-mapped-20260925-v1"
+    ],
+    [
+      "scripts/readback_afdb_pae_qualification.py",
+      "--snapshot",
+      "results/structural_markers/recovered-markers-20260925-v1",
+      "--coordinates",
+      "results/structural_alphabet/coordinate-recovered-mapped-20260925-v1",
+      "--qualified",
+      "results/structural_alphabet/qualified-recovered-mapped-20260925-v1",
+      "--pae",
+      "results/structural_pae/recovered-mapped-20260925-v1",
+      "--output",
+      "metadata/recovered_mapped_qualification_readback_20260925.json"
+    ]
+  ],
+  "pins": {
+    "scripts/extract_structural_alphabet.py": "741caae85cacae7e6820a0c7861d9aeddd9ab7a32547c6b392dcbdec5c977f54",
+    "scripts/audit_native_exports.py": "995bc09c0913e115566e18b4af1be42ab9a9134393fa3b343afc5e702f7bac39",
+    "scripts/audit_3di_features.py": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/qualify_native_pae.py": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+    "scripts/readback_afdb_pae_qualification.py": "c9dd7d1c853ecc8e6017f3441426ef513eadc73ff0f59d590c64c3ef990bd0dc",
+    "results/structural_markers/recovered-markers-20260925-v1/receipt.json": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+    "metadata/recovered_marker_mapping_readback_20260925.json": "d63cb73a1148c7438c8d518487ac5604d7d8530882e6f5e8762653a157c6566f"
+  },
+  "control": "results/structural_alphabet/recovered-mapped-controller-20260925-v1",
+  "resources": {
+    "native_threads": 4,
+    "numerical_threads": 1,
+    "models": 30,
+    "residues": 10763,
+    "pae_entries": 4753517,
+    "estimated_output_mib": 100,
+    "estimated_minutes": 2,
+    "gpu": false
+  },
+  "scope": "Re-execute small encoding cohort against final mapping provenance; use existing PAE caches. No changes to running cohort."
+}

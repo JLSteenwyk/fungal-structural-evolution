@@ -1,0 +1,19 @@
+{
+  "status": "complete_native_export_identity_audit",
+  "models": 30,
+  "residues": 10763,
+  "descriptor_values": 107630,
+  "zero_log_sequence_offset_rows": 60,
+  "native_path": "results/structural_alphabet/native-recovered-mapped-20260925-v1",
+  "mapping_receipt_sha256": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+  "native_config_sha256": "4a711c6fb31acf54a1162d119b253f88d9b0be3af10689aeab9acba2c6893d9c",
+  "script_sha256": "995bc09c0913e115566e18b4af1be42ab9a9134393fa3b343afc5e702f7bac39",
+  "interpretation": "Exact full-sequence identity, state length/alphabet, export agreement and finite ten-feature shape checked for every model. Zero-offset descriptor rows are counted without accepting their state as valid. Coordinate-derived feature/partner reconstruction and six-residue pLDDT/PAE qualification are still required; this receipt does not authorize evolutionary use of unmasked states.",
+  "artifacts": {
+    "config.json": "4a711c6fb31acf54a1162d119b253f88d9b0be3af10689aeab9acba2c6893d9c",
+    "model_provenance.json": "21ab8087ab331ce089a0d6e9aeb77ea0e3850eb403aa0ed61ac29d0dd5cb1304",
+    "amino_acids.faa": "1ff73c850cb351b48a6cf4724b9519cfca52c9dc48cdf22ec11723efeff92fba",
+    "states_3di.faa": "2488a920cc79a2adba7aaf560cb6b100ddbcdd512351eb74452523061ff1824d",
+    "descriptors.tsv": "61fb753059f1836f44199ac4b9927894098bfb5a8eb5b3c07cf459dc1c343564"
+  }
+}
