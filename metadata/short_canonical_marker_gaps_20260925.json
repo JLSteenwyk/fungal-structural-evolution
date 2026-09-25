@@ -1,0 +1,59 @@
+{
+  "status": "complete_short_canonical_residual_inventory",
+  "unique_sequences": 4,
+  "marker_records": 4,
+  "records": [
+    {
+      "marker": "5015742at2759",
+      "taxon_id": "F1738374",
+      "protein_id": "XP_083077081.1",
+      "species_name": "Trichoderma camerunense",
+      "assembly_accession": "GCF_050948025.1",
+      "length": 518,
+      "sequence_sha256": "aa0809a358aa1dd45e353b61c149ad973e29d671fe36cf3ef356d0d916679cbc"
+    },
+    {
+      "marker": "340246at2759",
+      "taxon_id": "F4896",
+      "protein_id": "NP_593214.2",
+      "species_name": "Schizosaccharomyces pombe",
+      "assembly_accession": "GCF_000002945.2",
+      "length": 714,
+      "sequence_sha256": "435ff404aa19bbdd4dc3a15e405ae3ab65821e9090cca91b43ab2f6e1b910388"
+    },
+    {
+      "marker": "5000986at2759",
+      "taxon_id": "F4896",
+      "protein_id": "NP_595834.3",
+      "species_name": "Schizosaccharomyces pombe",
+      "assembly_accession": "GCF_000002945.2",
+      "length": 555,
+      "sequence_sha256": "2c5abc13581e53fff269d21449bf5a4c8a7d2d5a8625ffbd754b3bbe5810ec45"
+    },
+    {
+      "marker": "4900375at2759",
+      "taxon_id": "F241526",
+      "protein_id": "KAG8202236.1",
+      "species_name": "Candida africana",
+      "assembly_accession": "GCA_019359905.1",
+      "length": 236,
+      "sequence_sha256": "62a5d33a0243f1caae9582bda5d83c2b3b0ec534a34bb45a48ac9eae3536cdfe"
+    }
+  ],
+  "source_sha256": {
+    "metadata/current_marker_residual_gap_summary_20260925.json": "20108b138e4892f79124dc29b51daf95b217b99d0ea9baf30d2dff8615e13a19",
+    "metadata/current_marker_gap_plan.json": "b6b21ecd4e4c6fff28a6fac9edaa859dd7440b0818a2c0691d2979be59997394",
+    "results/structures/current-marker-gaps-20260922-v1/gap_unique_sequences.tsv": "b0110f33d5673434c1a5ce6366cee191e5638bd988c326462d49e5b3eef254ea",
+    "results/structures/current-marker-gaps-20260922-v1/receipt.json": "23d2c2935fb29e1c0947ba26e6ab7427f4690a904d0a061a2afe95c52135c549",
+    "results/structures/current-marker-gaps-20260922-v1/gap_marker_records.tsv": "4782412969fe63fef36faead99c6447fff43de656e14271ddfee900078e5e098",
+    "results/structures/current-marker-gap-cache-refresh-20260925-v1/gap_sequence_availability.tsv": "604dbd9b993c956a02c5d5d4b9f0c9b7c0232677149112b9c41edbacd6f41338",
+    "results/structures/current-marker-gap-cache-refresh-20260925-v1/receipt.json": "295a772749800e36efe60583eea02b846dea553818f0f8c5893d42555fab5f1d",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/phylogeny/markers-full-v1/unaligned/5015742at2759.faa": "a6f1fefcaaa146c58a03ab8c077af0765c5b0346baf87707e9d462383f180802",
+    "results/phylogeny/markers-full-v1/unaligned/340246at2759.faa": "3235c18491d8049faeab18353291d8989c0886951bf6bd7c5d0e0c5507249e27",
+    "results/phylogeny/markers-full-v1/unaligned/5000986at2759.faa": "e697ff72eac4d1925c9227e1a2460c1b25577a5285499160ae5c1fba38db0f20",
+    "results/phylogeny/markers-full-v1/unaligned/4900375at2759.faa": "63dac1f10cddb80a06ea4d0fed9ff13299a0ab3be141f71607c319e29fc64d45"
+  },
+  "script_sha256": "7d5175fa6e4bf8c3c46f19841f437308c7eea024d84836e2ff8dfbd1814dab9e",
+  "scope": "Frozen cache gaps with exact canonical sequences at most 1024 residues. Not a GPU launch, a feasibility guarantee, or proof of current database absence."
+}
