@@ -1,0 +1,71 @@
+[
+  {
+    "unit": "fungal-recovery-20260925-geometry-tree-benchmark",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-geometry-tree-benchmark",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=64G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_completed_geometry_tree_benchmark.py",
+      "--plan",
+      "metadata/recovery_20260925_geometry_tree_benchmark_plan.json"
+    ],
+    "pid": 675282,
+    "create_time": 1790353378.04
+  },
+  {
+    "unit": "fungal-recovery-20260925-tree-path-readback",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-tree-path-readback",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=32G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_tree_path_geometry_readback.py",
+      "--plan",
+      "metadata/recovery_20260925_tree_path_readback_plan.json"
+    ],
+    "pid": 675285,
+    "create_time": 1790353378.08
+  },
+  {
+    "unit": "fungal-recovery-20260925-geometry-rank-readback",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-geometry-rank-readback",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=8G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_tree_path_geometry_ranks.py",
+      "--plan",
+      "metadata/recovery_20260925_geometry_rank_readback_plan.json"
+    ],
+    "pid": 675288,
+    "create_time": 1790353378.1
+  }
+]
