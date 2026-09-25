@@ -1,0 +1,37 @@
+{
+  "cohorts": [
+    {
+      "mapping": "results/structural_markers/gdm-current-mapping-20260922-v1",
+      "encodings": "results/structural_alphabet/audited-gdm-current-20260923-v2"
+    },
+    {
+      "mapping": "results/structural_markers/recovered-markers-20260925-v1",
+      "encodings": "results/structural_alphabet/qualified-recovered-mapped-20260925-v1"
+    }
+  ],
+  "models": 30618,
+  "marker_links": 31414,
+  "residue_links": 11202520,
+  "output": "results/structural_markers/afdb-recovered-union-20260925-v1",
+  "minimum_free_disk_gib": 10,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 2,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false
+  },
+  "pins": {
+    "scripts/merge_disjoint_afdb_mappings.py": "9c3d73ddbb0c345fd1b1c0a167a5f772320732c6b086f1696587d2abbb5d6ae3",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "metadata/recovered_afdb_union_preflight_20260925.json": "2d1da3cb6da0f3f6d637107a9474e42487cea1ef414e3f0942d3b8bed110e3e7",
+    "results/structural_markers/gdm-current-mapping-20260922-v1/receipt.json": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+    "results/structural_alphabet/audited-gdm-current-20260923-v2/receipt.json": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8",
+    "results/structural_markers/recovered-markers-20260925-v1/receipt.json": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+    "results/structural_alphabet/qualified-recovered-mapped-20260925-v1/receipt.json": "4ffbb61bf6a7d3bda8b9301447180b6d1bacbf064ab9ab2af203133db11ba338"
+  }
+}

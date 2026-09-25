@@ -1,0 +1,26 @@
+{
+  "status": "passed_full_disjoint_afdb_union_row_readback",
+  "models": 30618,
+  "marker_links": 31414,
+  "residue_links": 11202520,
+  "source_sha256": {
+    "metadata/recovered_afdb_union_plan_20260925.json": "feb204bb23febe2fe95f172b77126dd9461c0e14567372f28d902687979d71c3",
+    "scripts/merge_disjoint_afdb_mappings.py": "9c3d73ddbb0c345fd1b1c0a167a5f772320732c6b086f1696587d2abbb5d6ae3",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "metadata/recovered_afdb_union_preflight_20260925.json": "2d1da3cb6da0f3f6d637107a9474e42487cea1ef414e3f0942d3b8bed110e3e7",
+    "results/structural_markers/gdm-current-mapping-20260922-v1/receipt.json": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+    "results/structural_alphabet/audited-gdm-current-20260923-v2/receipt.json": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8",
+    "results/structural_markers/recovered-markers-20260925-v1/receipt.json": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+    "results/structural_alphabet/qualified-recovered-mapped-20260925-v1/receipt.json": "4ffbb61bf6a7d3bda8b9301447180b6d1bacbf064ab9ab2af203133db11ba338",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/receipt.json": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/matrix_to_structure_residues.tsv.gz": "d1de7e71d4c462d123f3956e601dd90ee6f8acf49994437a69a35a78cdc7e954",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/marker_coverage.tsv": "ff5341bcc6e9b067171af617d1f2abe5adcbe6c40452d3222b1e84281c73e184",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/model_provenance.json": "8eea8f81cd956b0dada89dad8eb729a420107b65a86ff5a6b3f197dd861061cc",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/marker_structure_links.tsv": "7037e441616fc5c453cda45adda2a497057c8ff902aac63a9207e516662928a1",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings/receipt.json": "aba587f9024a5469561a6d668f66388379c5cd0953668d4893bd3fd00db675f1",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings/model_summary.tsv": "d685219a6494e5da03573630f9ace344332fc3490430728493ed63cbf86914df"
+  },
+  "script_sha256": "b1c6bc1c9e6ca09e9a9dd37b6267bdedf7ae60fbfe27e1d15577afed781ae538",
+  "scope": "All model provenance, marker-link and encoding-summary rows equal the source union; every decompressed residue row is byte-identical to its source. Does not rerun source coordinate or confidence audits."
+}

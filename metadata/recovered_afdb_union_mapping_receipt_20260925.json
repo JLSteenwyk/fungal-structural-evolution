@@ -1,0 +1,35 @@
+{
+  "source_cohorts": [
+    {
+      "mapping": "results/structural_markers/gdm-current-mapping-20260922-v1",
+      "encodings": "results/structural_alphabet/audited-gdm-current-20260923-v2",
+      "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+      "encoding_receipt_sha256": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8"
+    },
+    {
+      "mapping": "results/structural_markers/recovered-markers-20260925-v1",
+      "encodings": "results/structural_alphabet/qualified-recovered-mapped-20260925-v1",
+      "mapping_receipt_sha256": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+      "encoding_receipt_sha256": "4ffbb61bf6a7d3bda8b9301447180b6d1bacbf064ab9ab2af203133db11ba338"
+    }
+  ],
+  "plan_sha256": "feb204bb23febe2fe95f172b77126dd9461c0e14567372f28d902687979d71c3",
+  "script_sha256": "9c3d73ddbb0c345fd1b1c0a167a5f772320732c6b086f1696587d2abbb5d6ae3",
+  "status": "complete_disjoint_afdb_mapping_union",
+  "source_policy": {
+    "provider": "GDM",
+    "tool": "AlphaFold Monomer v2.0 pipeline",
+    "selection": "Highest mean CA pLDDT, version and model ID only within this exact provider/tool; no cross-pipeline fallback. Confidence ranking does not establish accuracy."
+  },
+  "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+  "distinct_models": 30618,
+  "marker_proteins_linked": 31414,
+  "distinct_taxa_linked": 339,
+  "matrix_residue_links": 11202520,
+  "artifacts": {
+    "matrix_to_structure_residues.tsv.gz": "d1de7e71d4c462d123f3956e601dd90ee6f8acf49994437a69a35a78cdc7e954",
+    "marker_coverage.tsv": "ff5341bcc6e9b067171af617d1f2abe5adcbe6c40452d3222b1e84281c73e184",
+    "model_provenance.json": "8eea8f81cd956b0dada89dad8eb729a420107b65a86ff5a6b3f197dd861061cc",
+    "marker_structure_links.tsv": "7037e441616fc5c453cda45adda2a497057c8ff902aac63a9207e516662928a1"
+  }
+}

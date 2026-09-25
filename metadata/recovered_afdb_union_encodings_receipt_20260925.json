@@ -1,0 +1,34 @@
+{
+  "source_cohorts": [
+    {
+      "mapping": "results/structural_markers/gdm-current-mapping-20260922-v1",
+      "encodings": "results/structural_alphabet/audited-gdm-current-20260923-v2",
+      "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+      "encoding_receipt_sha256": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8"
+    },
+    {
+      "mapping": "results/structural_markers/recovered-markers-20260925-v1",
+      "encodings": "results/structural_alphabet/qualified-recovered-mapped-20260925-v1",
+      "mapping_receipt_sha256": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+      "encoding_receipt_sha256": "4ffbb61bf6a7d3bda8b9301447180b6d1bacbf064ab9ab2af203133db11ba338"
+    }
+  ],
+  "plan_sha256": "feb204bb23febe2fe95f172b77126dd9461c0e14567372f28d902687979d71c3",
+  "script_sha256": "9c3d73ddbb0c345fd1b1c0a167a5f772320732c6b086f1696587d2abbb5d6ae3",
+  "status": "complete_disjoint_afdb_qualified_encoding_union",
+  "models": 30618,
+  "totals": {
+    "length": 15960692,
+    "valid_states": 15899456,
+    "invalid_states": 61236,
+    "valid_focal_plddt70": 11817664,
+    "valid_feature_plddt70": 10849960,
+    "valid_feature_plddt70_pae10": 10836903
+  },
+  "confidence_stage": "plddt_and_pae",
+  "mapping_receipt_sha256": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+  "artifacts": {
+    "model_summary.tsv": "d685219a6494e5da03573630f9ace344332fc3490430728493ed63cbf86914df"
+  },
+  "scope": "Unchanged source arrays, rehashed at union; source qualification receipts retained. No new structure inference, confidence recalibration, or fitted evolutionary results."
+}
