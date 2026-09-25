@@ -1,0 +1,20 @@
+{
+  "status": "passed_full_afdb_pae_context_readback",
+  "models": 30,
+  "totals": {
+    "length": 10763,
+    "valid_states": 10703,
+    "invalid_states": 60,
+    "valid_focal_plddt70": 9210,
+    "valid_feature_plddt70": 8674,
+    "valid_feature_plddt70_pae10": 8669
+  },
+  "source_receipts": {
+    "snapshot": "ebba0a1dbda310b743dcfcbd763e5a9ee718f5893be3cb41e9517174c0156325",
+    "coordinates": "01241997695fbc22bfd05f8581726a2f6c8d13b9ffed652e575a71537a9dcd97",
+    "qualified": "70892a89a638071316de9036c85116b8686760c446654cbaa4dd14ee2ea46d2a",
+    "pae": "9e20e9d26ce828bea2406590b9ccf725bcc0977721cda7a8198b1743c9bda141"
+  },
+  "script_sha256": "c9dd7d1c853ecc8e6017f3441426ef513eadc73ff0f59d590c64c3ef990bd0dc",
+  "interpretation": "Every valid six-residue context checked against version-bound AFDB JSON PAE by 36 ordered-pair maxima using a separate JSON/array readback; all pre-existing coordinate arrays and summary counts preserved. Model identity is receipt-bound because PAE JSON does not embed the amino-acid sequence. Does not repeat native partner selection or establish confidence calibration or biological accuracy."
+}

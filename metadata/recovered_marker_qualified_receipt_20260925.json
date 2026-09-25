@@ -1,0 +1,37 @@
+{
+  "status": "complete_native_3di_feature_audit",
+  "models": 30,
+  "totals": {
+    "length": 10763,
+    "valid_states": 10703,
+    "invalid_states": 60,
+    "valid_focal_plddt70": 9210,
+    "valid_feature_plddt70": 8674,
+    "valid_feature_plddt70_pae10": 8669
+  },
+  "native_config_sha256": "22228c40cb2259cc259cb8b68bfc3d9625c9f59eceff56638e609ded4f14230a",
+  "native_path": "results/structural_alphabet/native-recovered-markers-20260925-v1",
+  "native_artifacts": {
+    "amino_acids.faa": "1ff73c850cb351b48a6cf4724b9519cfca52c9dc48cdf22ec11723efeff92fba",
+    "states_3di.faa": "2488a920cc79a2adba7aaf560cb6b100ddbcdd512351eb74452523061ff1824d",
+    "descriptors.tsv": "61fb753059f1836f44199ac4b9927894098bfb5a8eb5b3c07cf459dc1c343564",
+    "model_provenance.json": "2f801adfe4f69910100f38fe9ad251ef1c4d0d69181ba4fa24b15d4a310f725f"
+  },
+  "mapping_receipt_sha256": "ebba0a1dbda310b743dcfcbd763e5a9ee718f5893be3cb41e9517174c0156325",
+  "pae_receipt_sha256": "9e20e9d26ce828bea2406590b9ccf725bcc0977721cda7a8198b1743c9bda141",
+  "script_sha256": "ac4a088c699ea48331352d68b5956768cc4c575400bb3b50f0a15bdd99d7c6e1",
+  "numpy_version": "2.2.6",
+  "feature_verification_tolerance": {
+    "rtol": 0.00052,
+    "atol": 1e-10,
+    "reason": "Native descriptor output has four significant digits"
+  },
+  "confidence_stage": "plddt_and_pae",
+  "interpretation": "Coordinate-derived 20-state alphabet with explicit validity mask. Invalid terminal states use the ordinary coil symbol and must not be counted as observations. Confidence contexts cover i-1,i,i+1,j-1,j,j+1; PAE is the maximum over all directional pairs in that context. Alphabet states are not amino acids and distances are not physical displacement.",
+  "artifacts": {
+    "model_summary.tsv": "c29280a80153b1b89c27d270aa2ad0ac35718fc5ce30e2b2d3d9440eee29daaf"
+  },
+  "coordinate_audit_receipt_sha256": "01241997695fbc22bfd05f8581726a2f6c8d13b9ffed652e575a71537a9dcd97",
+  "coordinate_audit_path": "results/structural_alphabet/coordinate-recovered-markers-20260925-v1",
+  "coordinate_audit_script_sha256": "0cd5b98d1a39943c6f3f96cc5d78f7f083f8a37c64e55d42ac84d08148af7e2b"
+}
