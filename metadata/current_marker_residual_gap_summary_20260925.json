@@ -1,0 +1,32 @@
+{
+  "status": "complete_refreshed_marker_gap_summary",
+  "residual_unique_sequences": 3626,
+  "residual_marker_records": 3639,
+  "residual_taxa": 508,
+  "residual_markers": 118,
+  "disjoint_length_alphabet_categories": {
+    "above_1024_canonical": 3512,
+    "above_1024_noncanonical": 21,
+    "at_most_1024_canonical": 4,
+    "at_most_1024_noncanonical": 89
+  },
+  "disjoint_length_bins": {
+    "above_3072": 25,
+    "at_most_1024": 23,
+    "at_most_1536": 2718,
+    "at_most_2048": 286,
+    "at_most_3072": 504,
+    "at_most_512": 42,
+    "at_most_768": 28
+  },
+  "maximum_length": 5502,
+  "source_sha256": {
+    "results/structures/current-marker-gaps-20260922-v1/gap_unique_sequences.tsv": "b0110f33d5673434c1a5ce6366cee191e5638bd988c326462d49e5b3eef254ea",
+    "results/structures/current-marker-gaps-20260922-v1/receipt.json": "23d2c2935fb29e1c0947ba26e6ab7427f4690a904d0a061a2afe95c52135c549",
+    "results/structures/current-marker-gaps-20260922-v1/gap_marker_records.tsv": "4782412969fe63fef36faead99c6447fff43de656e14271ddfee900078e5e098",
+    "results/structures/current-marker-gap-cache-refresh-20260925-v1/gap_sequence_availability.tsv": "604dbd9b993c956a02c5d5d4b9f0c9b7c0232677149112b9c41edbacd6f41338",
+    "results/structures/current-marker-gap-cache-refresh-20260925-v1/receipt.json": "295a772749800e36efe60583eea02b846dea553818f0f8c5893d42555fab5f1d"
+  },
+  "script_sha256": "fd1ad58581dac46b26008303fdc375506a31111b2ca0c90b6d87c5e73f7372ec",
+  "scope": "Residual recovered-marker sequence gaps after the specified frozen cache refresh. Length and alphabet derive from the checksum-bound prior characterization. Not proof of database absence, GPU feasibility, whole-proteome coverage, or authorization to launch predictions."
+}
