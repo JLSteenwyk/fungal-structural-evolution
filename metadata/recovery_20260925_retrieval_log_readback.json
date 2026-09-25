@@ -1,0 +1,17 @@
+{
+  "status": "passed_full_retrieval_log_json_readback_before_recovery",
+  "path": "data/raw/afdb_models.jsonl",
+  "bytes": 1678006451,
+  "records": 1430818,
+  "latest_accessions": 1424644,
+  "latest_status_counts": {
+    "verified": 1424630,
+    "no_exact_full_length_model": 13,
+    "error": 1
+  },
+  "sha256": "53645615bfdc57bd6c248397b24d5547be3c2259694d8f75bd0f84b12bdc50ec",
+  "preserved_original": "results/recovery-20260925/retrieval-log-original.jsonl",
+  "preserved_original_sha256": "523c10aa93e14e4bc36d51923c7e9eff28747a56544a1d02de35efc275e87e07",
+  "removed_zero_tail_bytes": 1869,
+  "scope": "All complete JSONL records parsed; only zero-filled incomplete tail removed after full original backup. Cached coordinate hashes remain rechecked by runner."
+}

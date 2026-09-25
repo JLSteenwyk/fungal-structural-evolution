@@ -1,0 +1,32 @@
+{
+  "output": "results/recovery-20260925/structure-retrieval",
+  "log_readback": "metadata/recovery_20260925_retrieval_log_readback.json",
+  "resources": {
+    "cpu_equivalents": 2,
+    "http_workers": 2,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 3072,
+    "emergency_free_disk_gib": 1024,
+    "output_planning_gib": 2048,
+    "runtime_planning_hours": [
+      24,
+      1008
+    ],
+    "runtime_is_uncalibrated": true,
+    "basis": "Resume original full-catalog queue; cached coordinates rehashed before scheduling remaining accessions. Output and runtime are planning allowances, not exact remaining-work counts or ETA.",
+    "observed_free_disk_bytes": 12779970011136,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/recover_structure_retrieval.py": "675bf900a2e25172229494dad1a7afc4a2e7b22a7ad96286f89dea0d330973ad",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "metadata/recovery_20260923_retrieval_log_readback.json": "7a3031dd02ff642d909b9434c111ca9640d4ad8f12e5f87a73edcada404c3f28",
+    "data/raw/uniprot_matches.jsonl": "aca4a957f5f1a3f802735fdcbdcff941430d945e49698256c369556dd94b4296",
+    "metadata/recovery_20260923_structure_retrieval_plan.json": "1149a9fa4f4fca484aee5ce36f110ca18be9e591a7fee4b9d5dd096daef11eef",
+    "metadata/recovery_20260925_retrieval_log_readback.json": "3a0ff4ca890da4c2688ea4765b3d945875b90291619cbe6d2f8930966b884789"
+  },
+  "replaces_plan": "metadata/recovery_20260923_structure_retrieval_plan.json"
+}

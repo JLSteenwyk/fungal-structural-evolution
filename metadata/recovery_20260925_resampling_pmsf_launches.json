@@ -1,0 +1,44 @@
+[
+  {
+    "unit": "fungal-recovery-20260925-paired-resampling",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-paired-resampling",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=800%",
+      "-p",
+      "MemoryMax=32G",
+      "-p",
+      "MemorySwapMax=0",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_complete_paired_resampling.py",
+      "--plan",
+      "metadata/recovery_20260925_paired_resampling_plan.json"
+    ],
+    "pid": 766737,
+    "create_time": 1790353470.22
+  },
+  {
+    "unit": "fungal-recovery-20260925-crossed-pmsf",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-crossed-pmsf",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=1600%",
+      "-p",
+      "MemoryMax=650G",
+      "-p",
+      "MemorySwapMax=0",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_crossed_species_pmsf.py",
+      "--config",
+      "metadata/recovery_20260925_crossed_pmsf_config.json"
+    ],
+    "pid": 767155,
+    "create_time": 1790353470.39
+  }
+]
