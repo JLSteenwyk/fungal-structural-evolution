@@ -1,0 +1,33 @@
+{
+  "unit": "fungal-recovered-afdb-paired-inputs-20260925.service",
+  "pid": 1171615,
+  "create_time": 1790360744.63,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_afdb_union_paired_inputs.py",
+    "--plan",
+    "metadata/recovered_afdb_paired_inputs_plan_20260925.json"
+  ],
+  "boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "plan": "metadata/recovered_afdb_paired_inputs_plan_20260925.json",
+  "plan_sha256": "fcfb673154ba322097efab7ef9f00a20f6814887a9a0630fc83be5c1e3c5eb62",
+  "observed_status": "sleeping",
+  "children": [
+    {
+      "pid": 1171745,
+      "create_time": 1790360745.66,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/prepare_paired_phylogenetic_inputs.py",
+        "--encodings",
+        "results/structural_markers/afdb-recovered-union-20260925-v1/encodings",
+        "--snapshot",
+        "results/structural_markers/afdb-recovered-union-20260925-v1/mapping",
+        "--matrix",
+        "results/phylogeny/profile-matrix-50-v1",
+        "--output",
+        "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1"
+      ]
+    }
+  ]
+}

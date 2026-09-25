@@ -1,0 +1,36 @@
+{
+  "mapping": "results/structural_markers/afdb-recovered-union-20260925-v1/mapping",
+  "encodings": "results/structural_markers/afdb-recovered-union-20260925-v1/encodings",
+  "models": 30618,
+  "union_readback": "metadata/recovered_afdb_union_readback_20260925.json",
+  "matrix": "results/phylogeny/profile-matrix-50-v1",
+  "baseline": "results/phylogeny/paired-inputs-gdm-current-20260923-v2",
+  "inputs": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+  "readback": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json",
+  "control": "results/phylogeny/paired-inputs-afdb-recovered-controller-20260925-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 100,
+    "output_planning_gib": 10,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false
+  },
+  "pins": {
+    "scripts/advance_afdb_union_paired_inputs.py": "b88bf67a148fbc00e736aad37f3b2d018ddc3f86a2104e4555f8634f5d105413",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/readback_paired_inputs_from_encodings.py": "66323a9f98e49e13a3eff70d6c7bc622d96a54c492f2aef94742435ab73c1293",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "metadata/recovered_afdb_union_readback_20260925.json": "acb044920c93c07a3f61fcf973c52c702412a895cd97ce3a098b5a30d60e1e6e",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/receipt.json": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings/receipt.json": "aba587f9024a5469561a6d668f66388379c5cd0953668d4893bd3fd00db675f1",
+    "results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "results/phylogeny/paired-inputs-gdm-current-20260923-v2/receipt.json": "a7c08334cbfd7196fa1e45523d537dd21edc9e02baf92fd53edaf511e1353dcb"
+  }
+}
