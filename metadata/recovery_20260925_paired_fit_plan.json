@@ -1,0 +1,22 @@
+{
+  "original_plan": "metadata/esmfold_all_completed_paired_fits_plan.json",
+  "control": "results/recovery-20260925/paired_fit",
+  "recovery_boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "resources": {
+    "cpu": 4,
+    "memory_max_gib": 16,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/esmfold_all_completed_paired_fits_plan.json": "6c4864187e03efd4e49cc3bf71d1bbe3ff6a0376deb918e953bb7187d646faef",
+    "scripts/recover_paired_fits_checkpoint.py": "8a33671eddea284ab42f4bdaeb3902ed190df5ee955f0a4d1d2509819a6588f2",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1/config.json": "b5a6296671639722a0574d470b2e57976ee083f2bbdae3377e00094b45caf11c"
+  },
+  "previous_recovery_plan": "metadata/recovery_20260923_paired_fit_plan.json",
+  "previous_boot_id": "fc395436-1aa2-45ef-88a4-8de064b1f320"
+}

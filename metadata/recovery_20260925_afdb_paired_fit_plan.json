@@ -1,0 +1,20 @@
+{
+  "original_plan": "metadata/pae_repair_20260923_afdb_paired_fits_plan.json",
+  "control": "results/recovery-20260925/afdb-paired-fits",
+  "recovery_boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "resources": {
+    "cpu": 4,
+    "memory_max_gib": 16,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/pae_repair_20260923_afdb_paired_fits_plan.json": "915d829953c3ce12353f5598e318905cb10b6387680a28a69a666856650d5ec4",
+    "scripts/recover_paired_fits_checkpoint.py": "8a33671eddea284ab42f4bdaeb3902ed190df5ee955f0a4d1d2509819a6588f2",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "results/phylogeny/paired-marker-fits-gdm-current-20260923-v2/config.json": "f9050acf529b2b61bf75374812532f769320e45fea735e83bdc71799201bbbd2"
+  }
+}
