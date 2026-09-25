@@ -1,0 +1,29 @@
+{
+  "status": "passed_recovered_afdb_union_identity_preflight",
+  "cohorts": [
+    {
+      "mapping": "results/structural_markers/gdm-current-mapping-20260922-v1",
+      "mapping_receipt_sha256": "5d5c014497a3ac0db47cffd37631e10232bf78b01e6e3c1ad4d308ead0751678",
+      "qualified": "results/structural_alphabet/audited-gdm-current-20260923-v2",
+      "qualified_receipt_sha256": "6fa4642ddc137ce6a4e2be3eb49029a9324a6f5e3932cbea61292390094646e8",
+      "models": 30588,
+      "marker_links": 31384,
+      "matrix_residue_links": 11194264,
+      "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57"
+    },
+    {
+      "mapping": "results/structural_markers/recovered-markers-20260925-v1",
+      "mapping_receipt_sha256": "a7e91e308cae9f09bb342e88c13c7bf44f29b2ba7504f100b56bc74ec36fccf1",
+      "qualified": "results/structural_alphabet/qualified-recovered-mapped-20260925-v1",
+      "qualified_receipt_sha256": "4ffbb61bf6a7d3bda8b9301447180b6d1bacbf064ab9ab2af203133db11ba338",
+      "models": 30,
+      "marker_links": 30,
+      "matrix_residue_links": 8256,
+      "matrix_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57"
+    }
+  ],
+  "combined_models": 30618,
+  "combined_marker_links": 31414,
+  "combined_residue_links": 11202520,
+  "scope": "Source receipt/summary bindings, same alignment matrix and recorded prediction pipeline, disjoint sequence/model/marker-link identities. Does not merge tables, rehash all original coordinates/encodings, or establish identical hidden prediction settings."
+}
