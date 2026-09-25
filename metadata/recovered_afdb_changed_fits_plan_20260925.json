@@ -1,0 +1,44 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_paired_marker_fits.py",
+    "--inputs",
+    "results/phylogeny/paired-inputs-afdb-recovered-changed-20260925-v1",
+    "--models",
+    "data/structural_models/garg-hochberg-v3",
+    "--output",
+    "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1",
+    "--alrt",
+    "1000",
+    "--bootstrap",
+    "1000"
+  ],
+  "markers": 30,
+  "fits": 120,
+  "inputs": "results/phylogeny/paired-inputs-afdb-recovered-changed-20260925-v1",
+  "output": "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1",
+  "models": "data/structural_models/garg-hochberg-v3",
+  "resources": {
+    "cpu_workers": 4,
+    "threads_per_fit": 1,
+    "per_fit_memory_gib": 2,
+    "memory_limit_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 20,
+    "minimum_free_disk_gib": 100,
+    "planning_wall_days": [
+      1,
+      14
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false
+  },
+  "pins": {
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/select_changed_paired_markers.py": "15645284894b88dc9c277180481a20f683e54a9cb2f3ded8466499895393fc52",
+    "results/phylogeny/paired-inputs-afdb-recovered-changed-20260925-v1/receipt.json": "4e3a3f582615513145f4a1aa724b7a31928e4c130302a00f55c16682d56d4ee9",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f"
+  },
+  "scope": "Refit changed markers from expanded paired inputs with unchanged model and support settings. Original full-cohort fits continue; no unchanged fit reuse performed."
+}
