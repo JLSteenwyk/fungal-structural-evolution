@@ -1,0 +1,41 @@
+{
+  "status": "complete_single_ambiguous_residue_source_trace",
+  "taxon_id": "F87326",
+  "species": "Amanita brunnescens",
+  "assembly": "GCA_001691785.3",
+  "protein_id": "KAF8702138.1",
+  "protein_length": 649,
+  "cds_length": 1950,
+  "residue_position_1based": 477,
+  "original_protein_symbol": "B",
+  "original_cds_codon": "RAT",
+  "cds_positions_1based": [
+    1429,
+    1430,
+    1431
+  ],
+  "standard_code_alternatives": {
+    "AAT": "N",
+    "GAT": "D"
+  },
+  "standard_code_full_translation_matches_original_protein_plus_terminal_stop": true,
+  "existing_translation_audit_rows": [
+    {
+      "taxon_id": "F87326",
+      "cds_id": "lcl|JNHV02000996.1_cds_KAF8702138.1_10776",
+      "protein_id": "KAF8702138.1",
+      "status": "exact_translation",
+      "translation_table": "1",
+      "code_source": "table_1_assumption_no_explicit_code",
+      "terminal_stop": "True",
+      "gff_flags": "",
+      "cds_header": "lcl|JNHV02000996.1_cds_KAF8702138.1_10776 [locus_tag=AX14_014493] [protein=hypothetical protein] [protein_id=KAF8702138.1] [location=join(2467..2946,2997..3051,3103..3238,3288..3728,3782..3866,3919..4004,4059..4209,4260..4331,4382..4515,4572..4670,4720..4930)] [gbkey=CDS]"
+    }
+  ],
+  "source_sha256": {
+    "data/proteomes/GCA_001691785.3_protein.faa.gz": "807c9bb966db0b077280fba4a2506b965433df756c0e9bd77393ecbe2a962116",
+    "data/cds/GCA_001691785.3_cds_from_genomic.fna.gz": "f76f78544296a3f72274ccc610773414cc050ba006f31108408a0daf7738b5fd",
+    "results/cds/ncbi-strict-translation-v1/F87326.audit.tsv": "7517e0566d1ef1c343492f3f694a0522420e70add2b0db29d869841b4db90c0d"
+  },
+  "interpretation": "Original CDS retains nucleotide ambiguity; no evidence here selects N or D. No sequence modification or prediction. This check does not reconstruct the genome or establish the correct base."
+}
