@@ -1,0 +1,24 @@
+{
+  "gaps": "results/structures/current-marker-gaps-20260922-v1",
+  "inventory": "data/raw/afdb_models.jsonl",
+  "output": "results/structures/current-marker-gap-cache-refresh-20260925-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "minimum_free_disk_gib": 10,
+    "output_planning_gib": 4,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/refresh_marker_gap_cached_models.py": "84c14d6d0e7048226a86515d85c18ee6a783c563a89ef1b0fa4b2ce766f5c541",
+    "results/structures/current-marker-gaps-20260922-v1/receipt.json": "23d2c2935fb29e1c0947ba26e6ab7427f4690a904d0a061a2afe95c52135c549",
+    "results/structures/current-marker-gaps-20260922-v1/gap_unique_sequences.tsv": "b0110f33d5673434c1a5ce6366cee191e5638bd988c326462d49e5b3eef254ea",
+    "results/structures/current-marker-gaps-20260922-v1/gap_marker_records.tsv": "4782412969fe63fef36faead99c6447fff43de656e14271ddfee900078e5e098"
+  }
+}
