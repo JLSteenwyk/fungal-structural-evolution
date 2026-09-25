@@ -1,0 +1,64 @@
+[
+  {
+    "unit": "fungal-recovery-20260925-rate-comparison",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-rate-comparison",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=400%",
+      "-p",
+      "MemoryMax=16G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_completed_rate_comparison.py",
+      "--config",
+      "metadata/recovery_20260925_rate_comparison_plan.json"
+    ],
+    "process": {
+      "pid": 595622,
+      "created": 1790353304.31,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_completed_rate_comparison.py",
+        "--config",
+        "metadata/recovery_20260925_rate_comparison_plan.json"
+      ]
+    }
+  },
+  {
+    "unit": "fungal-recovery-20260925-site-coupling",
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260925-site-coupling",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=32G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_completed_site_coupling.py",
+      "--config",
+      "metadata/recovery_20260925_site_coupling_plan.json"
+    ],
+    "process": {
+      "pid": 595956,
+      "created": 1790353304.55,
+      "command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_completed_site_coupling.py",
+        "--config",
+        "metadata/recovery_20260925_site_coupling_plan.json"
+      ]
+    }
+  }
+]
