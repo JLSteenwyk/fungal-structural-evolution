@@ -94,3 +94,46 @@ artifacts were subsequently rehashed; the receipt is archived in
 `metadata/grouped_ortholog_identity_reproducibility_20260926.json`.
 Use a fresh output path to reproduce it. The two live production scans and
 their pinned checker were unchanged.
+
+## Large-field parser recovery
+
+The first profile scan terminated with exit code 1 after 164 complete tables
+(264,544,191 rows). Python's default CSV field limit rejected a 174,200-byte
+gene-list field in F181123.tsv, line 40,897, family OG0000017. The file still
+matches the completed native snapshot. Reproducing the failing parse and then
+allowing a 16-MiB field verified all identities in the offending row and its
+12,443 directed incidences. This is a parser-size issue, not an established
+biological expansion or an identity mismatch.
+
+The original script, failed service and partial output are preserved.
+`scripts/audit_grouped_ortholog_identities_large_fields.py` sets the CSV field
+limit and calls the unchanged producer. Its full fixture run passed with
+unchanged 4-taxon/18-gene/20-row/22-incidence totals; output hashes were read
+back. The actual-row and fixture checks are archived in
+`metadata/grouped_ortholog_large_field_check_20260926.json` and
+`metadata/grouped_ortholog_large_field_fixture_20260926.json`.
+
+The profile scan was relaunched only after confirming terminal failure, using
+fresh output `results/orthology/grouped-ortholog-identities-profile-20260926-v2`
+and the original resource caps. Its plan and launch identity are
+`metadata/grouped_ortholog_identity_profile_large_fields_plan_20260926.json`
+and `metadata/grouped_ortholog_identity_profile_large_fields_launch_20260926.json`.
+The plan pins both the wrapper and original producer. This restarts the audit
+scan, not native reconciliation. Earlier state counts are not reused as
+completed output artifacts. The service is
+`fungal-grouped-ortholog-identities-profile-large-fields-20260926.service`.
+The original MAFFT audit was still active at this recovery checkpoint and was
+not altered. Full audit completion remains outstanding.
+
+The original MAFFT audit subsequently terminated with the same CSV limit
+failure. Its offending OG0000017 row independently passed the larger-field
+identity check (12,443 directed incidences), recorded in
+`metadata/grouped_ortholog_large_field_mafft_check_20260926.json`. After terminal
+failure was confirmed, it too was relaunched through the tested wrapper with
+fresh `grouped-ortholog-identities-mafft-20260926-v2` output and unchanged resource
+caps. Its plan/launch records are
+`metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json` and
+`metadata/grouped_ortholog_identity_mafft_large_fields_launch_20260926.json`;
+service `fungal-grouped-ortholog-identities-mafft-large-fields-20260926.service`.
+Both v1 scans remain failed attempts; neither partial count establishes full
+validation. Both v2 scans are running and their final receipts remain pending.

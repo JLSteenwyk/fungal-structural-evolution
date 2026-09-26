@@ -1,0 +1,14 @@
+{
+  "unit": "fungal-grouped-ortholog-identities-mafft-large-fields-20260926.service",
+  "pid": 2674057,
+  "create_time": 1790452481.47,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_grouped_ortholog_identities_large_fields.py",
+    "--plan",
+    "metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json"
+  ],
+  "boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "plan_sha256": "a1d641f0496eccdfd4906af6d667dd8ea4207da762d1e3f22ecdf8901b1ecc11",
+  "previous_service_status": "Result=exit-code\nExecMainStatus=1\nActiveState=failed\n"
+}

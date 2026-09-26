@@ -1,0 +1,24 @@
+{
+  "status": "passed_actual_large_field_identity_check",
+  "table": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Orthologues/F181123.tsv",
+  "table_sha256": "4bea2df7b21afc718a8dc5152dc94a38364d493e2f8cf854ac7a98903a905377",
+  "line_number": 40968,
+  "row_sha256": "a84a71236f1f01b1d8f78d7d02df7f16fde9fe3b174a11626738692931dba1a1",
+  "field_bytes": [
+    9,
+    7,
+    174200,
+    14
+  ],
+  "original_error": "field larger than field limit (131072)",
+  "new_field_limit": 16777216,
+  "family": "OG0000017",
+  "directed_incidences": 12443,
+  "source_identity_hashes": {
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "f5930cf12db51ff0b24358b36de0255942402fabbc8b225fb4e8af6eacc3e52e",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b"
+  },
+  "wrapper_sha256": "43d6be59bc9c4a28871e45a7008fdb12531db4a8c625e1888c73e6c3070b12ee",
+  "scope": "Actual MAFFT failing row identity check; complete corrected scan pending."
+}

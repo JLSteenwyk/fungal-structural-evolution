@@ -1,0 +1,38 @@
+{
+  "output": "results/orthology/grouped-ortholog-identities-mafft-20260926-v2",
+  "supplement_receipt": "metadata/expanded_small_family_mafft_completed_receipt_20260923.json",
+  "pins": {
+    "scripts/audit_grouped_ortholog_identities.py": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "metadata/expanded_small_family_mafft_completed_receipt_20260923.json": "dc493b906663152ba9d477bcae97d3457a43341e95d4e7a4afa80479198b26b5",
+    "scripts/audit_grouped_ortholog_identities_large_fields.py": "43d6be59bc9c4a28871e45a7008fdb12531db4a8c625e1888c73e6c3070b12ee"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 50,
+    "output_allowance_gib": 1,
+    "runtime_planning_hours": [
+      1,
+      48
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Stream all grouped rows and validate protein/species/family identities. No pair expansion or biological orthology claim; reciprocal equality, cross-row duplication and missing larger-family pairs remain separate work.",
+  "prelaunch_inventory": {
+    "native_tables": 526,
+    "native_bytes": 41159858967,
+    "expected_native_rows": 839250464,
+    "available_disk_bytes": 12284106887168,
+    "independent_of_profile_scan": true
+  },
+  "recovery": {
+    "original_plan": "metadata/grouped_ortholog_identity_mafft_plan_20260926.json",
+    "original_plan_sha256": "fee3a8adeea141c316d8e1816b13d3af6dec7900db04bc75dcb56c16c920a30a",
+    "reason": "field larger than field limit (131072)",
+    "csv_field_limit_bytes": 16777216,
+    "previous_outputs_preserved": true
+  }
+}

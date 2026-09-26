@@ -1,0 +1,15 @@
+{
+  "status": "complete_grouped_ortholog_protein_family_identity_audit",
+  "plan_sha256": "55b1afc776c674f34286197eb9c043561ffa7aeeedb82a402527042bcea4795a",
+  "script_sha256": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a",
+  "taxa": 4,
+  "proteins": 18,
+  "rows": 20,
+  "directed_incidences": 22,
+  "families_with_rows": 3,
+  "artifacts": {
+    "family_counts.tsv": "283d8a52ee8918abd6014361f9b862a962a163f880bf1126f4f314f5c0970da8",
+    "table_counts.tsv": "6ca10f4af2b644ed1e9579e250f234e75425f7ce981e42c18fdba29fa34ffdf7"
+  },
+  "scope": "Every native grouped row has valid species/protein/family identities and no within-side repeats; native file hashes match the completed supplement snapshot. Counts are directed row incidences, not unique pairs. Cross-row overlap, reciprocal equality, missing larger-family pairs, reconciliation semantics, biological orthology and corrected integrated statistics remain unvalidated."
+}
