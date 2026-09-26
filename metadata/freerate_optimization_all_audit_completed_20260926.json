@@ -1,0 +1,20 @@
+{
+  "receipt_path": "results/phylogeny/freerate-optimization-all-audit-esmfold-all-completed-20260923-v1/receipt.json",
+  "receipt_sha256": "eb312eeafd1561a25ab657ef51cab40f14961fd564ef9d364412243e20d5f42e",
+  "receipt": {
+    "status": "passed_full_freerate_optimization_diagnostics",
+    "diagnostic_fits": 1952,
+    "source_fits": 488,
+    "site_rate_rows": 707168,
+    "source_fits_with_diagnostic_at_least_gamma": 488,
+    "diagnostic_receipt_sha256": "4c2542cfb2dcdffb6dd191c9229dda9c6c6ccb1f7b0670f5c60c524113ed1e11",
+    "script_sha256": "13bf4ec833ddec954b912d5270920bea2be97816e906e505a488c73113adcbbc",
+    "interpretation": "All diagnostic grids, hashes, model/parameter counts, fixed topologies, site-rate/category bounds and likelihood sums checked. Best diagnostics maximize observed likelihood among four explicit refits; global optimality is not established. Original outputs remain unchanged. This diagnoses initialization/optimizer sensitivity, not biological model adequacy or selection.",
+    "artifacts": {
+      "best_diagnostics.tsv": "b46c58348bf1fc81ce021136bac88c5e164c090196a84f89f6375388f87ef29d",
+      "all_fits.tsv": "cad7ecab47a6fe88d70a5d9be35e0d69f7e826e50b92fb7f55f872675af23cad"
+    }
+  },
+  "artifact_and_producer_hashes_rechecked": true,
+  "scope": "Completed diagnostic audit and checksum readback. Matched comparison independent readback remains pending; no biological adequacy or global optimality claim."
+}

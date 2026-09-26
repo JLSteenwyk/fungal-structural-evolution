@@ -4892,3 +4892,20 @@ Successful exit, receipt bindings, plan pins, count identities and stream
 size were verified. Both native guide tables now pass reciprocal multiplicity
 consistency; biological orthology and cross-guide pair overlap remain separate
 questions. See [audit details](grouped-ortholog-identities-20260926.md).
+
+
+### September 26: full-cohort rate optimization diagnostics passed
+
+All 1,952 diagnostic refits across 488 source fits completed. The full audit
+passed grid completeness, hashes, model and parameter counts, fixed topologies,
+site-rate/category bounds and likelihood sums across 707,168 site-rate rows.
+Every source fit had a diagnostic likelihood at least as high as its Gamma
+baseline. The audit receipt, producer and output hashes were independently
+rechecked and archived in
+`metadata/freerate_optimization_all_audit_completed_20260926.json`.
+
+The controller generated a matched comparison (488 fits, 176,792 site
+comparisons and 188,928 branch comparisons) and started its independent
+readback. That validation is pending. Better observed likelihoods among these
+starts do not establish global optimality, biological model adequacy,
+structural acceleration or selection. Original fits remain preserved.
