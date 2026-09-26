@@ -1,0 +1,23 @@
+{
+  "status": "complete_grouped_ortholog_count_and_binding_readback",
+  "taxa": 4,
+  "proteins": 18,
+  "families_with_rows": 3,
+  "rows": 20,
+  "directed_incidences": 22,
+  "source_sha256": {
+    "metadata/native_small_family_supplement_sorted_receipt.json": "a57afabec6ea3598642e7dd3efa1b3ac79ad7d2bb4d778ee163c74fafaca7458",
+    "scripts/audit_grouped_ortholog_identities.py": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "scripts/audit_grouped_ortholog_identities_large_fields.py": "43d6be59bc9c4a28871e45a7008fdb12531db4a8c625e1888c73e6c3070b12ee",
+    "metadata/grouped_ortholog_identity_fixture_large_fields_plan_20260926.json": "55b1afc776c674f34286197eb9c043561ffa7aeeedb82a402527042bcea4795a",
+    "results/orthology/grouped-ortholog-identities-fixture-20260926-v2/receipt.json": "d11c43168de051188435384ee69824ddbf74990283e7b11cfe2b8152052443e9",
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "5a88f6c8e8825e3f2f684fab3876d5d2303e3cbf77b95333d0d64febd4e690b3",
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/SequenceIDs.txt": "c9880a95f39d5d2d1be7b3f808e73773ed7a318f6c3b31465844dce15d9719d1",
+    "results/orthology/native-small-family-output-fixture-v2/Source/WorkingDirectory/SpeciesIDs.txt": "ad6c5550828e71551a58bf8a79f4e024b7431ccbb685e400f8f6af893e0aa6f7",
+    "results/orthology/grouped-ortholog-identities-fixture-20260926-v2/family_counts.tsv": "283d8a52ee8918abd6014361f9b862a962a163f880bf1126f4f314f5c0970da8",
+    "results/orthology/grouped-ortholog-identities-fixture-20260926-v2/table_counts.tsv": "6ca10f4af2b644ed1e9579e250f234e75425f7ce981e42c18fdba29fa34ffdf7"
+  },
+  "script_sha256": "78ea61747397e0e0f564d2b91d8d0c089caa36c72ea6bd6963e395181e066d4f",
+  "scope": "Recomputed totals from both complete count tables, exact native table coverage and recorded hash equality to the pinned snapshot, rehashed plan/producer/source identities/count artifacts. Raw ortholog tables were not rescanned; per-row identities, per-family assignments, reciprocal equality, cross-row duplicates, missing pairs and biological orthology were not independently tested by this readback."
+}

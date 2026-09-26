@@ -137,3 +137,33 @@ caps. Its plan/launch records are
 service `fungal-grouped-ortholog-identities-mafft-large-fields-20260926.service`.
 Both v1 scans remain failed attempts; neither partial count establishes full
 validation. Both v2 scans are running and their final receipts remain pending.
+
+## Count-table readback prepared
+
+`scripts/readback_grouped_ortholog_counts.py` requires a completed identity
+audit and independently sums both its family and taxon tables. It checks
+unique keys, integer counts, the complete native taxon-table set, recorded
+native hashes against the pinned snapshot, source protein count, and the
+plan/producer/source/count-file hashes. It does not rescan the native ortholog
+rows or independently validate their per-family assignments or pair semantics.
+
+The four-taxon fixture passed (18 proteins, 20 rows, 22 directed incidences);
+the result is archived in
+`metadata/grouped_ortholog_counts_fixture_readback_20260926.json`. Temporary
+copies with refreshed artifact hashes still rejected unequal family/table
+totals, a duplicate family key, and a missing taxon table. The unchanged
+temporary copy passed. These checks did not alter production data.
+
+After each v2 scan writes its final receipt, run the matching command below.
+Neither production readback has been executed yet:
+
+```bash
+python scripts/readback_grouped_ortholog_counts.py --plan metadata/grouped_ortholog_identity_profile_large_fields_plan_20260926.json --output metadata/grouped_ortholog_counts_profile_readback_20260926.json
+python scripts/readback_grouped_ortholog_counts.py --plan metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json --output metadata/grouped_ortholog_counts_mafft_readback_20260926.json
+```
+
+Each readback uses one CPU, streams source hashes and protein counts, and
+loads only the two small count tables. Planned resources are under 2 GiB RAM,
+under 1 MiB output, and minutes of runtime (uncalibrated); it does not repeat
+the approximately 41-GB native-table scan. Full identity and biological
+orthology validation remain distinct from this numerical consistency check.
