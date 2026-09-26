@@ -1,0 +1,29 @@
+{
+  "identity_plan": "metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json",
+  "output": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1",
+  "sort_executable": "/usr/bin/sort",
+  "sort_memory": "2G",
+  "minimum_free_disk_gib": 500,
+  "emergency_free_disk_gib": 250,
+  "pins": {
+    "metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json": "a1d641f0496eccdfd4906af6d667dd8ea4207da762d1e3f22ecdf8901b1ecc11",
+    "results/orthology/grouped-ortholog-identities-mafft-20260926-v2/receipt.json": "d92080547a9df43a7e763938ab50dd3755a8636baf668ba48ca51af7474af1cb",
+    "/usr/bin/sort": "ee2d0669d4033ef13a5f0141b77799aec696da3df7f6464dfd0c67601f91f077",
+    "scripts/audit_ortholog_pair_reciprocity.py": "9d0b47c214adef25dc2fd230cb6a82ec6bb8331f867a09da3db763a4cc245ae0",
+    "scripts/readback_grouped_ortholog_counts.py": "78ea61747397e0e0f564d2b91d8d0c089caa36c72ea6bd6963e395181e066d4f"
+  },
+  "resources": {
+    "cpu_equivalents": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "encoded_bytes": 15722495180,
+    "scratch_allowance_gib": 100,
+    "output_allowance_gib": 50,
+    "runtime_planning_hours": [
+      4,
+      72
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  }
+}

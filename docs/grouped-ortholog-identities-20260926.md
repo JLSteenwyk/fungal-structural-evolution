@@ -198,3 +198,48 @@ count-table and provenance readback also passed, archived in
 Both full identity scans and their count readbacks are now complete; the
 earlier running states above are historical. The pair-semantics and biological
 limitations described above still apply to both guides.
+
+## Exact pair multiplicity scans launched
+
+`scripts/audit_ortholog_pair_reciprocity.py` now checks the next output-level
+requirements: reciprocal presence and repeated directed pairs across rows.
+It requires a completed identity audit and passing count readback, assigns
+each source protein its zero-based line ordinal in the pinned SequenceIDs
+file, and expands each grouped row into exact directed pairs. Each pair is
+stored as two canonical six-digit hexadecimal IDs plus a direction digit
+and newline (14 bytes). GNU sort runs in the C locale, using external storage.
+The sorted stream is scanned for exact direction multiplicities. Counts cover
+every pair; at most 1,000 lexicographically first violation examples are kept.
+The complete sorted stream remains available with its SHA256 for reproduction.
+
+Synthetic cases correctly counted reciprocal pairs, a repeated direction and
+a missing reverse, and rejected an unsorted stream. The full existing native
+fixture returned 22 directed incidences and 11 unordered pairs, each once in
+both directions. An independent native-table enumeration exactly matched the
+decoded sorted pair multiset. Its plan and result are
+`metadata/ortholog_pair_reciprocity_fixture_plan_20260926.json` and
+`metadata/ortholog_pair_reciprocity_fixture_completed_20260926.json`.
+
+Full profile and MAFFT scans have been launched under user services
+`fungal-ortholog-pair-reciprocity-profile-20260926.service` and
+`fungal-ortholog-pair-reciprocity-mafft-20260926.service`. Plans and recorded
+process identities are `metadata/ortholog_pair_reciprocity_<guide>_plan_20260926.json`
+and `metadata/ortholog_pair_reciprocity_<guide>_launch_20260926.json`.
+Their output directories are
+`results/orthology/ortholog-pair-reciprocity-<guide>-20260926-v1`.
+Do not launch duplicate copies. To reproduce later, use a new output path in
+a new plan and run `python scripts/audit_ortholog_pair_reciprocity.py --plan PLAN`.
+
+Each service is capped at two CPU equivalents, 16 GiB RAM and zero swap,
+with low scheduling priority. Per-guide planning allowances are 100 GiB
+scratch and 50 GiB output; expected encoded data are 15,725,918,376 profile
+bytes and 15,722,495,180 MAFFT bytes. The initial disk requirement is 500 GiB
+free, with a 250-GiB reserve checked between native tables. Runtime planning
+is 4–72 hours per guide, uncalibrated. No GPU or paid resources are used.
+
+These scans are in progress. A complete receipt reports counts even if
+violations are found; completion alone must not be called a passing reciprocity
+result. Native table hashes are checked during encoding against the completed
+snapshot. Even zero violations would not establish pairs absent in both
+directions, reconciliation semantics, biological orthology or duplication
+effects. Small-family supplements remain separate and are not counted here.

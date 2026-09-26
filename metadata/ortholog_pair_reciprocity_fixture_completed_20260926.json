@@ -1,0 +1,34 @@
+{
+  "receipt": {
+    "directed_incidences": 22,
+    "unique_unordered_pairs": 11,
+    "unique_directed_pairs": 22,
+    "duplicate_directed_incidences": 0,
+    "pairs_with_repeated_direction": 0,
+    "pairs_missing_reverse": 0,
+    "pairs_with_unequal_multiplicity": 0,
+    "pairs_exactly_once_each_direction": 11,
+    "sorted_pairs_sha256": "a6403164b731312c4938477575ef7fce017dd9d8730def7f7a66813f66631157",
+    "violation_examples": [],
+    "example_limit": 1000,
+    "status": "complete_native_ortholog_pair_multiplicity_audit",
+    "plan_sha256": "c25e7e801085b0b461acde6cfc83b96768ea8c2c34a022288c3abddacb5ba6cf",
+    "script_sha256": "9d0b47c214adef25dc2fd230cb6a82ec6bb8331f867a09da3db763a4cc245ae0",
+    "identity_receipt_sha256": "d11c43168de051188435384ee69824ddbf74990283e7b11cfe2b8152052443e9",
+    "rows": 20,
+    "proteins": 18,
+    "sort_command": [
+      "/usr/bin/sort",
+      "--parallel=1",
+      "-S",
+      "64M",
+      "-T",
+      "results/orthology/ortholog-pair-reciprocity-fixture-20260926-v1/sort-temp",
+      "-o",
+      "results/orthology/ortholog-pair-reciprocity-fixture-20260926-v1/sorted_pairs.hex"
+    ],
+    "scope": "Exact counts of reciprocal presence and repeated directed pairs across all native grouped rows, using source-line protein IDs. Native snapshot hashes checked during encoding. Does not detect pairs absent in both directions, validate reconciliation semantics or biological orthology, or integrate small-family supplements."
+  },
+  "independent_native_pair_enumeration_equal": true,
+  "fixture_only": true
+}

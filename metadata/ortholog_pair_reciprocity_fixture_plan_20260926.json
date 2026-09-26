@@ -1,0 +1,15 @@
+{
+  "identity_plan": "metadata/grouped_ortholog_identity_fixture_large_fields_plan_20260926.json",
+  "output": "results/orthology/ortholog-pair-reciprocity-fixture-20260926-v1",
+  "sort_executable": "/usr/bin/sort",
+  "sort_memory": "64M",
+  "minimum_free_disk_gib": 1,
+  "emergency_free_disk_gib": 1,
+  "pins": {
+    "metadata/grouped_ortholog_identity_fixture_large_fields_plan_20260926.json": "55b1afc776c674f34286197eb9c043561ffa7aeeedb82a402527042bcea4795a",
+    "results/orthology/grouped-ortholog-identities-fixture-20260926-v2/receipt.json": "d11c43168de051188435384ee69824ddbf74990283e7b11cfe2b8152052443e9",
+    "/usr/bin/sort": "ee2d0669d4033ef13a5f0141b77799aec696da3df7f6464dfd0c67601f91f077",
+    "scripts/audit_ortholog_pair_reciprocity.py": "9d0b47c214adef25dc2fd230cb6a82ec6bb8331f867a09da3db763a4cc245ae0",
+    "scripts/readback_grouped_ortholog_counts.py": "78ea61747397e0e0f564d2b91d8d0c089caa36c72ea6bd6963e395181e066d4f"
+  }
+}

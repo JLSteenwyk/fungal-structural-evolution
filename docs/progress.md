@@ -34,6 +34,10 @@ software-fixture and corruption checks also pass. Cross-row pair duplication,
 reciprocal equality, larger-family ortholog semantics and corrected integrated
 statistics remain outstanding;
 native directed row counts must not be treated as independent ortholog pairs.
+Exact external-sort scans for reciprocal presence and repeated directed pairs
+are now running for both guides, each capped at two CPU equivalents and
+16 GiB RAM. Fixture pair multisets agree with independent native enumeration;
+full-cohort multiplicity results remain pending.
 See [audit scope, plans and completed output paths](grouped-ortholog-identities-20260926.md).
 
 The five-protein focal annotation sensitivity analysis and its figure are

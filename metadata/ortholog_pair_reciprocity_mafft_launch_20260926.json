@@ -1,0 +1,27 @@
+{
+  "service": "fungal-ortholog-pair-reciprocity-mafft-20260926.service",
+  "pid": 2773860,
+  "create_time": 1790456889.27,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ortholog_pair_reciprocity.py",
+    "--plan",
+    "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json"
+  ],
+  "boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "plan_sha256": "c1ec84a16baa301147b669260da3700f2ea6142fc6b593b29ab1de92fba2c5ac",
+  "launch_command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-ortholog-pair-reciprocity-mafft-20260926",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--property=Nice=10",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ortholog_pair_reciprocity.py",
+    "--plan",
+    "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json"
+  ]
+}
