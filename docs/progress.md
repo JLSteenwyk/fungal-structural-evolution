@@ -4871,3 +4871,14 @@ results/structural_comparisons/cross-clan-confidence-summary-20260923-v1
 --output <new-output-directory>`. The figure states the confidence, coverage
 and score criteria and identifies the overlapping, descriptive nature of
 these counts.
+
+
+### September 26: profile ortholog pair multiplicity audit completed
+
+The full profile audit found 561,639,942 unique protein pairs, each occurring
+exactly once in each direction, with zero duplicate or missing reverse entries.
+The service exited with status zero; receipt bindings, pinned files, count
+identities and stream size were rechecked. The MAFFT audit remains running.
+See [audit details](grouped-ortholog-identities-20260926.md). These checks do
+not establish biological orthology, detect pairs absent in both directions,
+or include the separate small-family supplements.
