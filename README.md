@@ -5,7 +5,7 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 23 September 2026
+## Current checkpoint — 26 September 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -20,10 +20,11 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Component | Verified scope | Remaining work |
 |---|---|---|
 | Completed local predictions | 25,322 ESMFold models across five cohorts, preserving seven prediction configurations | Remaining marker gaps and broader proteome coverage |
-| Combined marker availability | 56,171 of 59,840 recovered marker/protein records have a model (93.9%); 3,669 records remain unmodeled in the frozen catalogs | Availability precedes confidence filtering and is not proteome-wide coverage |
+| Combined marker availability | September 25 cache refresh leaves 3,639 unmodeled marker/protein records representing 3,626 unique sequences; 30 previously missing sequences recovered | Availability precedes confidence filtering and is not proteome-wide coverage |
 | Whole-proteome AlphaFold catalog | 1,290,278 models linked to 1,319,513 of 5,815,847 representative proteins (22.69%) | Source-specific coverage excludes local ESMFold; confidence qualification and comparative atlas analyses remain incomplete |
-| Complete ESMFold paired inputs | Full readback passed for 122 markers, 294 taxa and 6,758,598 observed paired AA/3Di cells | Updated tree fits, resampling and evolutionary integration |
-| Refreshed AlphaFold marker inputs | Full residue mapping, native exports and coordinate-feature reconstruction passed for 30,588 models; 15,949,929 full-model residues checked | Mapping-bound PAE qualification complete; refreshed paired phylogenetic fits underway |
+| Complete ESMFold paired inputs | Full input readback passed for 122 markers, 294 taxa and 6,758,598 observed paired AA/3Di cells; all 488 fits and their audit completed | Resampling and evolutionary integration |
+| Refreshed AlphaFold marker inputs | Thirty recovered models added; expanded paired inputs preserve previous observations across 125 markers, with 30 changed and 95 unchanged markers. All 120 fits for the changed markers audited | Original 500-fit batch still running; source-preserving integration of unchanged and refitted markers pending |
+| Direct geometry and fitted tree paths | 2,527,033 pairs across 122 markers; all 10,108,132 tree-path values and 1,464 descriptive rank rows checked | Geometry numerically sampled one pair per marker; phylogenetic dependence, uncertainty and biological acceleration tests remain |
 | Candidate domains | All 1,078,592 intervals extracted and atom-audited; database sequence/coordinate readback and 70,537-cluster partition verified; all 594,797 boundary pairs compared; complete family/taxon source joins audited | Confidence and clustering-parameter sensitivity, phylogenetic integration and evolutionary tests |
 | Functional correspondences | Every field of 17,105 rows checked; 5,576 observed rows across 283 taxa and 21 markers | Branch/site tests, matched backgrounds and biological interpretation; rows are not independent events |
 | Accessibility | All 25,322 models merged; paired projection and two-scale normalization readbacks complete for 6,758,598 observations | Full-cohort site-rate coupling and uncertainty analyses; accessibility does not establish binding interfaces |
@@ -31,18 +32,22 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 Coverage sources and exact limitations:
 [completed prediction inventory](docs/completed-prediction-inventory-20260922.md),
 [remaining marker gaps](docs/remaining-marker-model-gaps-20260922.md),
+[September 25 residual inventory](metadata/current_marker_residual_gap_summary_20260925.json),
+[September 26 completion evidence](docs/recovery-20260926.md),
 [whole-proteome catalog](docs/whole-proteome-structure-catalog-20260922.md),
 [domain registry and clustering](docs/whole-proteome-structure-domain-registry-20260923.md),
 [functional sites](docs/functional-site-workflow.md), and
 [accessibility](docs/residue-accessibility.md).
 
-The remaining supported species-tree comparisons, updated paired-marker fits,
-MAFFT-guide reconciliation and final large-family root-HOG replay remain
-unfinished. All 5,942 unflagged root-HOG omissions have been placed outside
-emitted parent clades; that accounting does not establish biological loss or
-correct duplication timing. See [orthogroup validation](docs/hierarchical-orthogroup-validation-20260922.md)
-and [reboot recovery](docs/reboot-recovery-20260923.md). Queued stages require
-successful, source-bound completion records before advancing.
+Supported species-tree comparisons, branch resampling and rate-optimization
+sensitivity remain active. Full-cohort site-rate exports and site-parsimony/exposure
+readbacks have completed; these do not establish sequence–structure coupling.
+The full path and rank benchmark is descriptive, with shared ancestry and
+prediction uncertainty still requiring treatment. See the
+[September 26 checkpoint](docs/recovery-20260926.md) for completed stages and
+[orthogroup validation](docs/hierarchical-orthogroup-validation-20260922.md)
+for reconciliation limitations. Queued stages require successful, source-bound
+completion records before advancing.
 
 ## Evolutionary objectives still open
 

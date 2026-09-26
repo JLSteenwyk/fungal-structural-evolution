@@ -1,5 +1,25 @@
 # Progress and evidence
 
+## September 26 checkpoint
+
+The [September 26 completion record](recovery-20260926.md) supersedes older
+execution states below for the paired-fit and geometry workflows. All 488
+ESMFold-backed fits across 122 markers and all 120 supplemental AlphaFold fits
+across 30 changed markers have completed their fit audits. The full geometry
+benchmark has completed, including readbacks of 10,108,132 tree paths and
+1,464 descriptive rank rows. These checks do not establish biological
+acceleration or phylogenetically independent significance.
+
+The September 25 frozen cache refresh leaves 3,626 unique unmodeled marker
+sequences (3,639 marker records); see
+[the residual inventory](../metadata/current_marker_residual_gap_summary_20260925.json).
+This supersedes the earlier 3,669-record gap count, not the whole-proteome
+coverage inventory. GPU prediction remains paused. The original AlphaFold fit
+batch, species-tree analysis, resampling and rate optimization remain unfinished;
+full-cohort coupling and the eight evolutionary objectives remain open.
+
+## Earlier milestone baseline
+
 | Milestone | Current verified state | Evidence and remaining requirements |
 |---|---|---|
 | Repository and original objective | Public repository and reproducibility records maintained | Git history; docs/objective.txt |
