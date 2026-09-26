@@ -4882,3 +4882,13 @@ identities and stream size were rechecked. The MAFFT audit remains running.
 See [audit details](grouped-ortholog-identities-20260926.md). These checks do
 not establish biological orthology, detect pairs absent in both directions,
 or include the separate small-family supplements.
+
+
+### September 26: MAFFT ortholog pair multiplicity audit completed
+
+The second full audit counted 561,517,685 unique protein pairs, each recorded
+exactly once in each direction, with zero duplicates or missing reverses.
+Successful exit, receipt bindings, plan pins, count identities and stream
+size were verified. Both native guide tables now pass reciprocal multiplicity
+consistency; biological orthology and cross-guide pair overlap remain separate
+questions. See [audit details](grouped-ortholog-identities-20260926.md).

@@ -237,7 +237,7 @@ bytes and 15,722,495,180 MAFFT bytes. The initial disk requirement is 500 GiB
 free, with a 250-GiB reserve checked between native tables. Runtime planning
 is 4–72 hours per guide, uncalibrated. No GPU or paid resources are used.
 
-The MAFFT scan remains in progress; the profile result is recorded below.
+Both scans are complete; their results are recorded below.
 A complete receipt reports counts even if
 violations are found; completion alone must not be called a passing reciprocity
 result. Native table hashes are checked during encoding against the completed
@@ -277,3 +277,24 @@ The retained stream checksum is
 `a24588039cc690cb7387cf5ec35793788c3fb826b53ac061dd47bb0c9e5338e1`.
 The scope limitations above still apply; this establishes reciprocal table
 consistency, not biological orthology or completeness of unreported pairs.
+
+## Completed MAFFT pair audit
+
+The MAFFT service also exited successfully on September 26. Its 526 native
+tables contained 839,250,464 grouped rows, 1,123,035,370 directed incidences
+and 561,517,685 unique unordered protein pairs. Every pair occurred exactly
+once in each direction. Duplicate directed incidences, missing reverses,
+repeated directions and unequal multiplicities were all zero.
+
+`metadata/ortholog_pair_reciprocity_mafft_completed_20260926.json` archives
+the receipt and checksum. All plan pins, count identities and the
+15,722,495,180-byte stream size were rechecked after successful service exit.
+The retained stream checksum is
+`8cd8f41cf5a37b14799cb3e02f7394e98d2b2953e0727ee4792f87db68cba7b3`.
+This binding readback does not independently rescan the full stream.
+
+Both guides therefore pass reciprocal multiplicity consistency for their
+native pair tables. Their difference of 122,257 in total unordered pair count
+is a net count difference, not the number of discordant pairs: pair identities
+must be compared to establish overlap and guide sensitivity. Neither audit
+includes small-family supplements or establishes biological orthology.
