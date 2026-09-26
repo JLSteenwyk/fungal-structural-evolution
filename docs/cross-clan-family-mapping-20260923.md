@@ -344,3 +344,27 @@ attempt failed while parsing gathering thresholds before any search ran; `v2`
 handles the library's GA lines without a trailing semicolon. The prelaunch
 estimate was one worker plus a master thread, 1 GiB memory, ten minutes and
 10 MiB output. No GPU prediction or paid resources were used.
+
+## Integrated exploratory figure
+
+![Profile scores, mapped-region RMSD and retained coverage](figures/focal_annotation_sensitivity_20260926.png)
+
+The figure places five full-protein profile scores beside the two available
+focal/sister geometry comparisons. Both MAFFT correspondence settings are shown
+at joint pLDDT thresholds 0, 70 and 90. Geometry uses alignment boundaries;
+envelope-boundary results remain in the complete source table. The strictest
+confidence subset must be interpreted with its retained coverage. The highest
+profile-scoring region need not be the structurally compared region. This is
+a descriptive case figure, not evidence of a domain event or independent tests.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/plot_focal_annotation_sensitivity.py --output results/domains/cross-clan-focal-figure-20260926-v1
+```
+
+The command completed, producing PNG, SVG, PDF and explicit plot data in the
+immutable output directory. All five profile rows, all 12 geometry rows, the
+missing-model identity and both displayed gathering thresholds were checked
+against source records; source/output hashes passed. The PNG was visually
+inspected for label, legend and caption placement. The archived receipt is
+`metadata/cross_clan_focal_figure_receipt_20260926.json`; the embedded PNG is an
+exact copy of the generated artifact.
