@@ -243,3 +243,20 @@ result. Native table hashes are checked during encoding against the completed
 snapshot. Even zero violations would not establish pairs absent in both
 directions, reconciliation semantics, biological orthology or duplication
 effects. Small-family supplements remain separate and are not counted here.
+
+## Reproducible compact-stream validation
+
+Run `python scripts/check_ortholog_pair_reciprocity.py` to reproduce six
+standard-library test groups without modifying production inputs or outputs.
+All six passed on September 26. A tuple-based Counter independently derives
+all multiplicity totals and the ordered violation examples, including 100
+deterministically randomized multisets. Explicit cases cover empty input,
+24-bit boundary IDs, reciprocal pairs, equal and unequal repeated directions,
+missing reverses, and truncation of the example list without truncating counts.
+Negative cases reject invalid IDs, malformed or noncanonical records,
+unsorted pair and direction order, and incorrect expected incidence totals.
+
+These tests validate the compact-stream summarizer, not the entire native-table
+encoding pipeline or the biological conclusions. The native fixture described
+above supplies separate end-to-end evidence. Full production audits remain
+in progress; their producer script was not changed by adding these checks.
