@@ -288,3 +288,59 @@ python scripts/compare_focal_region_geometry.py \
   --bridge results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite \
   --output metadata/cross_clan_focal_geometry_20260924.json
 ```
+
+## Focal profile sensitivity — September 26
+
+Before selecting ancestral targets from the apparent architecture difference,
+the five existing full-length sequences were searched against the exact
+PF00085.27 and PF26973.1 models from the checksum-verified Pfam 38.2 library.
+HMMER 3.4 used one worker thread, seed 42, and three conditions: standard
+`--cut_ga`, `--max --cut_ga`, and permissive `--max -T -1000 --domT -1000`.
+The last condition is diagnostic and does not accept extra annotations.
+HMMER documents that `--max` disables the acceleration filters and that
+`--cut_ga` applies both sequence and domain gathering thresholds
+([official manual](https://github.com/EddyRivasLab/hmmer/blob/master/documentation/man/hmmsearch.man.in)).
+
+Both gathering-threshold searches returned the same seven domain rows,
+including the same two PF26973 hits. All 22 permissively reported rows were
+retained; applying the recorded sequence/domain gathering thresholds recovers
+exactly those seven accepted rows. The PF26973 sequence and domain thresholds
+are both 26.2 bits. The strongest PF26973 domain score anywhere in each protein
+was:
+
+| Protein | Sequence score (bits) | Best domain score (bits) | Best domain alignment span | Passes both thresholds |
+|---|---:|---:|---|---|
+| EPZ34216.1 | 43.3 | 33.8 | 399–489 | Yes |
+| XP_018228094.1 | 32.1 | 28.3 | 145–217 | Yes |
+| XP_018226490.1 | 14.3 | 12.5 | 144–207 | No |
+| XP_007871995.1 | 9.2 | 9.6 | 145–202 | No |
+| XP_031856394.1 | 2.3 | 0.1 | 71–107 | No |
+
+These are maxima over each full protein, not necessarily homologous positions;
+in particular the best Rozella-sister hit is outside the second-region
+comparison. E-values in these focused searches use five target sequences and
+must not be compared directly with the original proteome searches. The unchanged
+accepted hits under `--max` show that the annotation difference is not rescued
+by removing search filters under these settings. Subthreshold matches plus the
+earlier mapped geometry motivate annotation sensitivity as an alternative to a
+domain event; they do not establish domain gain/loss, homology, function, or a
+validated ancestral target. Repeated-domain correspondence and gene-tree support
+remain unresolved for ancestral interpretation.
+
+All 36 reported hit rows across the three searches were independently parsed
+with Bio.SearchIO, checking every archived field, coordinate convention and
+threshold flag; all output artifacts were rehashed. This validates parsing,
+not an independent search or biological inference. Evidence:
+`metadata/cross_clan_focal_profile_sensitivity_receipt_20260926.json` and
+`metadata/cross_clan_focal_profile_sensitivity_readback_20260926.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/check_focal_profile_sensitivity.py --output results/domains/cross-clan-focal-profile-sensitivity-20260926-v2
+OPENBLAS_NUM_THREADS=1 python scripts/readback_focal_profile_sensitivity.py --search results/domains/cross-clan-focal-profile-sensitivity-20260926-v2 --output metadata/cross_clan_focal_profile_sensitivity_readback_20260926.json
+```
+
+Both commands completed; their outputs are immutable. The preserved `v1`
+attempt failed while parsing gathering thresholds before any search ran; `v2`
+handles the library's GA lines without a trailing semicolon. The prelaunch
+estimate was one worker plus a master thread, 1 GiB memory, ten minutes and
+10 MiB output. No GPU prediction or paid resources were used.
