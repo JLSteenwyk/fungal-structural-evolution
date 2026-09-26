@@ -1,0 +1,15 @@
+{
+  "status": "passed_native_fixture_identity_and_corruption_checks",
+  "native_rows": 20,
+  "directed_incidences": 22,
+  "fixture_genes": 18,
+  "rejected_cases": {
+    "wrong_family": "rejected",
+    "same_species": "rejected",
+    "unknown_protein": "rejected",
+    "repeated_protein": "rejected",
+    "malformed": "rejected"
+  },
+  "script_sha256": "43d310bb6381468c891283f9c1a215968d9f241d20de31f42a2e467981f9a587",
+  "scope": "Row parser and complete fixture source mapping checked; does not test full production scan completion or biological orthology."
+}

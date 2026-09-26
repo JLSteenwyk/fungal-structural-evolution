@@ -1,0 +1,23 @@
+{
+  "output": "results/orthology/grouped-ortholog-identities-fixture-20260926-v1",
+  "supplement_receipt": "metadata/native_small_family_supplement_sorted_receipt.json",
+  "pins": {
+    "metadata/native_small_family_supplement_sorted_receipt.json": "a57afabec6ea3598642e7dd3efa1b3ac79ad7d2bb4d778ee163c74fafaca7458",
+    "scripts/audit_grouped_ortholog_identities.py": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2"
+  },
+  "resources": {
+    "cpu_equivalents": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 50,
+    "output_allowance_gib": 1,
+    "runtime_planning_hours": [
+      1,
+      48
+    ],
+    "runtime_is_uncalibrated": true,
+    "paid_resources": false
+  },
+  "scope": "Stream all grouped rows and validate protein/species/family identities. No pair expansion or biological orthology claim; reciprocal equality, cross-row duplication and missing larger-family pairs remain separate work."
+}
