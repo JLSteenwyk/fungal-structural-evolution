@@ -451,3 +451,32 @@ validation remain unfinished.
 
 Completion evidence is indexed in
 `metadata/methods_cross_clan_checkpoint_20260923_sources.json`.
+
+## Exploratory focal domain-profile sensitivity
+
+Five full-length proteins from the PF00085/PF26973 shared-family case were
+examined for annotation sensitivity before interpreting an apparent domain
+transition. These proteins were selected after the structural candidate screen;
+this was an exploratory case analysis. Source-sequence hashes were checked
+against the archived export. PF00085.27 and PF26973.1 were extracted from the
+checksum-verified Pfam 38.2 library with `hmmfetch`. HMMER 3.4 `hmmsearch` used
+one worker thread and seed 42 under three conditions: standard `--cut_ga`,
+`--max --cut_ga`, and diagnostic `--max -T -1000 --domT -1000`.
+The first two conditions test sensitivity to acceleration filters while
+retaining the curated sequence and domain thresholds. The permissive condition
+records weaker matches without accepting them as annotations. Option semantics
+follow the [HMMER manual](https://github.com/EddyRivasLab/hmmer/blob/master/documentation/man/hmmsearch.man.in).
+
+Both gathering-threshold searches returned seven identical domain-hit rows.
+The permissive search returned 22 rows; requiring both gathering thresholds
+recovered exactly the same seven rows. Sequence/domain scores and explicit
+alignment, envelope and profile coordinates were retained. E-values refer to
+the five-sequence target database and were not compared directly with those
+from the full-proteome searches. All 36 rows across the three conditions were
+reparsed using Bio.SearchIO, including coordinate conversions and threshold
+flags; output checksums were verified. This checks the recorded searches, not
+biological homology or independent evolutionary events. Repeated-domain
+correspondence, gene-tree support and ancestral interpretation remain pending.
+
+Commands, complete hit records, evidence and limitations are documented in
+[the focal case record](cross-clan-family-mapping-20260923.md#focal-profile-sensitivity--september-26).
