@@ -4909,3 +4909,21 @@ comparisons and 188,928 branch comparisons) and started its independent
 readback. That validation is pending. Better observed likelihoods among these
 starts do not establish global optimality, biological model adequacy,
 structural acceleration or selection. Original fits remain preserved.
+
+
+### September 26: rate comparison readback passed; coupling plan needs revision
+
+The independent full readback passed all 488 fits, 176,792 site comparisons
+and 188,928 branch comparisons, recomputing raw rates, edges, likelihoods,
+selection identities and summary statistics. The controller completed its
+44,198-site, 122-marker exposure frame and exited successfully. Stage and
+prerequisite receipt hashes were rechecked and archived in
+`metadata/rate_comparison_completed_handoff_20260926.json`.
+
+The subsequent coupling service terminated with exit 1 at its copy-review
+guard before producing fits. Marker `4986044at2759` contributes 307 sites
+marked `requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis`;
+the other 43,891 sites carry no current copy-review flag. The failed controller
+state and log remain in `results/recovery-20260925/site-coupling`. A revised
+analysis plan must explicitly handle this marker before a fresh coupling run;
+the guard has not been bypassed, and this stage is not complete.
