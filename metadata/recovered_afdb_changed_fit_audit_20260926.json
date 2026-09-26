@@ -1,0 +1,17 @@
+{
+  "status": "complete_paired_fit_audit",
+  "markers": 30,
+  "fits": 120,
+  "paired_branches": 15450,
+  "fits_with_warnings": 120,
+  "fits_with_near_zero_branches": 120,
+  "fits_with_branches_ge_10": 0,
+  "fit_receipt_sha256": "fd03cd519fa8ba51d91d8ee9ac52cd8b4ee2c93efc9a136593368dc9eb5557ca",
+  "script_sha256": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+  "interpretation": "Verified model identity, provenance, paired masks/topologies and branch tables. Point estimates are not confidence intervals or acceleration tests. Likelihoods must not be compared across AA and 3Di data; model comparisons within the same 3Di data require parameter penalties. Near-zero lengths warrant uncertainty analysis, not division into branch-length ratios.",
+  "artifacts": {
+    "warnings.tsv": "c45fc1e7747db46329edff0bb169214703632351e6fab2956ee9d2296923fd2e",
+    "paired_branches.tsv": "054b601d51df2d9f8f7cd9814cb36179e693b84761af0e7e007ec418454dcb63",
+    "fit_summary.tsv": "e25b799d2e73c0f1f7c1d4502cc78dfb3436356e6ac019823555824737e94ac3"
+  }
+}
