@@ -75,3 +75,22 @@ This command is already running; do not duplicate it. Both complete receipts,
 their output readbacks and comparison of the guide-specific results remain
 outstanding. The identity audit still does not validate ortholog-pair semantics
 or justify interpreting native directed incidences as independent observations.
+
+## Reproducible validation command
+
+The previously recorded manual fixture checks now have a standalone runner:
+
+```bash
+python scripts/check_grouped_ortholog_identities.py --output results/orthology/grouped-ortholog-identity-reproducibility-20260926-v1
+```
+
+This run passed. It rechecks the native fixture source hashes, rejects six
+malformed/incorrect row cases, executes the full audit CLI, independently
+enumerates the small fixture's grouped pairs to verify each table count, and
+confirms rejection of a changed provenance pin and an existing output path.
+It uses the existing four-taxon/18-gene software fixture, runs on one CPU in
+under a second, and does not rerun native phylogenetic inference. All runner
+artifacts were subsequently rehashed; the receipt is archived in
+`metadata/grouped_ortholog_identity_reproducibility_20260926.json`.
+Use a fresh output path to reproduce it. The two live production scans and
+their pinned checker were unchanged.

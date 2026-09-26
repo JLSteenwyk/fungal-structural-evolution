@@ -1,0 +1,43 @@
+{
+  "status": "passed_reproducible_grouped_identity_checks",
+  "rejected_row_cases": [
+    "unknown_family",
+    "same_species",
+    "unknown_species",
+    "unknown_protein",
+    "repeated_protein",
+    "malformed"
+  ],
+  "cli_checks": [
+    "baseline",
+    "wrong-pin",
+    "refuse-overwrite"
+  ],
+  "expected_native_fixture": {
+    "taxa": 4,
+    "proteins": 18,
+    "rows": 20,
+    "directed_incidences": 22
+  },
+  "source_sha256": {
+    "metadata/native_small_family_supplement_sorted_receipt.json": "a57afabec6ea3598642e7dd3efa1b3ac79ad7d2bb4d778ee163c74fafaca7458",
+    "scripts/audit_grouped_ortholog_identities.py": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a"
+  },
+  "script_sha256": "65577f8bead7e458ea3af5187c641f36cc8597c6535e015b1bd3b866aae03267",
+  "artifacts": {
+    "wrong-pin.plan.json": "7b3e6caefd6e6cb0200d4916e0bbaf2642c857db24299cfd3f70153c9718271f",
+    "baseline.stdout.txt": "383745a6a12ba949492bd39856fb6ec1462d41fc57ff5be8c18b6a7b843822db",
+    "wrong-pin.stderr.txt": "9f38927ad2916d127c9854b92c8333b3ef09deacc642ca7737f42c8870e3bf4b",
+    "refuse-overwrite.plan.json": "6e69b83fc57b9868303cfaa26c6f402449b2e4b0eec9f3d56601000cad4b1fc8",
+    "refuse-overwrite.stderr.txt": "226cdfb9fcfcd871d87a2501921240f228a4bd65df067442b9e63d2c7f1a1fd6",
+    "refuse-overwrite.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baseline.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baseline.plan.json": "6e69b83fc57b9868303cfaa26c6f402449b2e4b0eec9f3d56601000cad4b1fc8",
+    "wrong-pin.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baseline/receipt.json": "52d5e290b6e4e28b0811aebeb564c498a3cc017b6991be0b62cb882702be3829",
+    "baseline/table_counts.tsv": "6ca10f4af2b644ed1e9579e250f234e75425f7ce981e42c18fdba29fa34ffdf7",
+    "baseline/family_counts.tsv": "283d8a52ee8918abd6014361f9b862a962a163f880bf1126f4f314f5c0970da8",
+    "baseline/state.json": "c0370750e6d65349b348a62ec954e37b7f9ba76ad113df86be9283fb5a5415ed"
+  },
+  "scope": "Software fixture checks only. No full production completion or ortholog-pair semantics claim."
+}
