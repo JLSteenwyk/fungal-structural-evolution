@@ -1,0 +1,24 @@
+{
+  "status": "complete_all_cohort_descriptive_tree_path_geometry_benchmark",
+  "markers": 122,
+  "pairs": 2527033,
+  "plan_sha256": "dd4905d27e5fe721fc57d73dc73440fd4ee1f5ea8d443814eabfb9f1649c52a9",
+  "stages": [
+    {
+      "name": "paths",
+      "receipt": "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "a1154f153fe769ed44295ce9998fe4f488c19899ecec4e0a007bf9aea310e52f"
+    },
+    {
+      "name": "ranks",
+      "receipt": "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "982a4d0bda0b0df7b4ef34f4adb323de98d238dad1742aa3052f90f385679b7f"
+    },
+    {
+      "name": "figure",
+      "receipt": "results/phylogeny/paired-path-rank-figures-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "f9bc893f1edc4d498715b8b9cac0d458a6cde5d401ab536da7af27e6f1f76043"
+    }
+  ],
+  "scope": "Full matched-topology path/geometry point-estimate join and within-marker descriptive ranks. Numerical path checks sampled by original producer. Not independent pairwise tests, calibrated physical branch lengths, uncertainty analysis or biological acceleration. Figure requires visual review; full output readback remains required."
+}
