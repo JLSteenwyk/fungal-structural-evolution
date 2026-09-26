@@ -429,3 +429,32 @@ results/phylogeny/paired-fcs-bootstrap-esmfold-combined-copy-omission-v2
 --readback metadata/esmfold_combined_fcs_paired_bootstrap_numerical_readback.json
 --output NEW_FIGURE_DIRECTORY`. Figure receipt, all plotted coordinates and
 visual review are archived under `metadata/esmfold_combined_fcs_paired_figure_*`.
+
+
+## September 26: full completed ESMFold copy-review sensitivity
+
+The 122-marker frame has 44,198 sites, including 307 sites from the previously
+flagged TFIIB/BRF1 marker 4986044at2759. Its original coupling controller
+failed at the explicit copy-review guard before producing fits. That failure
+is preserved in `results/recovery-20260925/site-coupling`.
+
+Two fresh pinned plans reuse `fit_reviewed_conditional_site_coupling.py`:
+`metadata/completed_site_coupling_reviewed_plan_20260926.json` retains all
+122 markers for exploratory analysis; the `copy-omission` counterpart excludes
+exactly that marker, retaining 121 markers and 43,891 sites. The unchanged
+fitter checks the exact flagged marker, status and site count before applying
+the policy. Both use the complete source confidence/exposure join. Each plans
+24 specifications, 48,000 marker-bootstrap fits and 24 times the retained
+marker count leave-one-marker-out fits. Final comparison must check identical
+retained covariates and compare omission coefficients with full-cohort LOMO.
+
+`advance_reviewed_completed_site_coupling.py` differs from the established
+reviewed controller only in the expected completed-cohort producer status.
+Both configuration pin checks passed before launch. Launch records are
+`metadata/completed_site_coupling_<reviewed|copy-omission>_launch_20260926.json`.
+Each service uses one CPU equivalent, one pinned CPU, 32 GiB memory maximum,
+zero swap and low priority; stage planning allowances are 16 GiB memory,
+4 GiB output and the ranges recorded in the plans. No GPUs or paid resources
+are used. Both analyses are running, not completed. Neither omission nor
+exploratory retention resolves orthology or permits confirmatory single-copy
+claims. Previous failure, source labels and original fits remain intact.

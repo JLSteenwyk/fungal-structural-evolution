@@ -1,0 +1,27 @@
+{
+  "service": "fungal-completed-coupling-reviewed-20260926.service",
+  "pid": 3156854,
+  "create_time": 1790466868.93,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_reviewed_completed_site_coupling.py",
+    "--config",
+    "metadata/completed_site_coupling_reviewed_plan_20260926.json"
+  ],
+  "plan_sha256": "d3bb085938a92b67608d7bf05b0f1bce98867d7c03fa89cff6016c1fee6c9e99",
+  "boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "launch_command": [
+    "systemd-run",
+    "--user",
+    "--unit=fungal-completed-coupling-reviewed-20260926",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=100%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--property=Nice=10",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_reviewed_completed_site_coupling.py",
+    "--config",
+    "metadata/completed_site_coupling_reviewed_plan_20260926.json"
+  ]
+}

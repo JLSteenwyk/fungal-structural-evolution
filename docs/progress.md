@@ -4927,3 +4927,13 @@ the other 43,891 sites carry no current copy-review flag. The failed controller
 state and log remain in `results/recovery-20260925/site-coupling`. A revised
 analysis plan must explicitly handle this marker before a fresh coupling run;
 the guard has not been bypassed, and this stage is not complete.
+
+
+### September 26: reviewed full-cohort coupling analyses launched
+
+Launched paired exploratory retention (122 markers/44,198 sites) and explicit
+copy-review omission (121 markers/43,891 sites), using the existing reviewed
+fitter with exact marker/status/count checks. Fresh plans and outputs preserve
+the failed original handoff. Both configuration pin checks passed; each job
+is capped at one CPU and 32 GiB RAM with no swap. Fits and marker-resampling
+remain pending. See [coupling workflow](conditional-site-coupling.md).
