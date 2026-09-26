@@ -1,0 +1,116 @@
+{
+  "output": "results/recovery-20260926/geometry-tree-benchmark",
+  "inputs": "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+  "geometry_plan": "metadata/completed_esmfold_geometry_plan.json",
+  "fit_plan": "metadata/esmfold_all_completed_paired_fits_plan.json",
+  "geometry": "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1",
+  "geometry_audit": "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1-audit",
+  "markers": 122,
+  "pairs": 2527033,
+  "dependencies": [
+    {
+      "pid": 441039,
+      "create_time": 1790353178.67,
+      "plan": "metadata/completed_esmfold_geometry_plan.json",
+      "output": "results/structural_comparisons/all-completed-geometry-controller-20260923-v1",
+      "status": "complete_all_cohort_paired_geometry_and_grid_audit"
+    },
+    {
+      "pid": 75123,
+      "create_time": 1790352878.69,
+      "plan": "metadata/recovery_20260925_paired_fit_plan.json",
+      "output": "results/recovery-20260925/paired_fit",
+      "status": "complete_paired_fit_checkpoint_recovery"
+    }
+  ],
+  "stages": [
+    {
+      "name": "paths",
+      "output": "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1",
+      "status": "complete_paired_site_tree_path_point_benchmark",
+      "arguments": [
+        "scripts/benchmark_paired_site_tree_points.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+        "--fits",
+        "results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1",
+        "--audit",
+        "results/phylogeny/paired-marker-fit-audit-esmfold-all-completed-20260922-v1",
+        "--geometry",
+        "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1",
+        "--review",
+        "config/marker_orthology_review.json",
+        "--output",
+        "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1"
+      ]
+    },
+    {
+      "name": "ranks",
+      "output": "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1",
+      "status": "complete_descriptive_within_marker_rank_summary",
+      "arguments": [
+        "scripts/summarize_tree_path_geometry_ranks.py",
+        "--benchmark",
+        "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1",
+        "--output",
+        "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1"
+      ]
+    },
+    {
+      "name": "figure",
+      "output": "results/phylogeny/paired-path-rank-figures-esmfold-all-completed-20260923-v1",
+      "status": "complete_descriptive_figure",
+      "arguments": [
+        "scripts/plot_tree_path_geometry_ranks.py",
+        "--summary",
+        "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1",
+        "--source-label",
+        "All completed ESMFold cohorts",
+        "--output",
+        "results/phylogeny/paired-path-rank-figures-esmfold-all-completed-20260923-v1"
+      ]
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 96,
+    "minimum_free_disk_gib": 100,
+    "output_planning_gib": 20,
+    "runtime_planning_hours": [
+      1,
+      48
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Full 2,527,033 pair join with four path estimates per pair and per-marker ranks; reuses completed fits and geometry; no new inference."
+  },
+  "pins": {
+    "metadata/completed_esmfold_geometry_plan.json": "88a66be45d4c1647e40259b066699a8e7546185b4adc98d5ccabea6dde0c7a5b",
+    "metadata/esmfold_all_completed_paired_fits_plan.json": "6c4864187e03efd4e49cc3bf71d1bbe3ff6a0376deb918e953bb7187d646faef",
+    "metadata/recovery_20260923_paired_fit_plan.json": "84655bb4315660e6d710136c141ed1da5382119ba5a6b47d56c9791cb8ac4daf",
+    "config/marker_orthology_review.json": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/receipt.json": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180",
+    "scripts/advance_completed_geometry_tree_benchmark.py": "4e91e02dc4d5009a7ce9c7faa8fca840e123a20e56cc81748557e8a2e02360d9",
+    "scripts/readback_domain_boundary_clusters.py": "b42f8b21592829bd45726d6ee45542c60f866e77b55ba06d957c275870fcc57d",
+    "scripts/benchmark_paired_site_tree_points.py": "b25c1411dd0a17a34afea3efb59ac35029fae02260158f011b1278342d615af2",
+    "scripts/summarize_tree_path_geometry_ranks.py": "5dce19d3e0f45cbc88b54ebf903fafbe22cc8b84131164e39400bc5f56fc96c1",
+    "scripts/plot_tree_path_geometry_ranks.py": "5aa83291c960a7d502f3076620615711baee5da586b197b8578a57b30301bd52",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "metadata/recovery_20260925_geometry_plan.json": "47dad19387112d223e522c734a37cb4c6f111af0383d15b750cc47b4ee161a0e",
+    "metadata/recovery_20260925_paired_fit_plan.json": "d0d5bea39d37f1a7dcfae3145f5c2303407b5671afdd978feede2014da5c6b17",
+    "metadata/completed_geometry_tree_benchmark_plan.json": "a4f3189b76ac2f409de9295d3c14cd9da25f1f390ac70d01b1b8de6c411d7778",
+    "metadata/recovery_20260925_geometry_tree_benchmark_plan.json": "cf1ddc7a455b4db2c1687087e07f7937a83e0532decd6ef50ca37662f531526e",
+    "metadata/recovery_20260926_geometry_plan.json": "aeb6a5fd30a30ce9325978e77be5c56df0dbe18caa3b258246b702f88efa26e2",
+    "results/recovery-20260926/geometry/receipt.json": "b86273ffca18b9174a38680332aef5c990826f7513337948bc3953f7363c350e"
+  },
+  "replaces_plan": "metadata/recovery_20260925_geometry_tree_benchmark_plan.json"
+}

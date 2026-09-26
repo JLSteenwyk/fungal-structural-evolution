@@ -1,0 +1,55 @@
+{
+  "output": "results/recovery-20260926/tree-path-readback",
+  "benchmark_plan": "metadata/recovery_20260926_geometry_tree_benchmark_plan.json",
+  "predecessor": {
+    "pid": 2482873,
+    "create_time": 1790444725.08
+  },
+  "readback_output": "results/phylogeny/paired-path-points-esmfold-all-completed-full-readback-20260923-v1",
+  "arguments": [
+    "scripts/readback_tree_path_geometry_points.py",
+    "--inputs",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1",
+    "--fits",
+    "results/phylogeny/paired-marker-fits-esmfold-all-completed-20260922-v1",
+    "--geometry",
+    "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1",
+    "--benchmark",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1",
+    "--review",
+    "config/marker_orthology_review.json",
+    "--output",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-full-readback-20260923-v1"
+  ],
+  "markers": 122,
+  "pairs": 2527033,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 48,
+    "minimum_free_disk_gib": 50,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.1,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Full 704,031-pair/2,816,124-path prior cohort passed with the same auditor; target contains 2,527,033 pairs. Planning allowance retains headroom for source dictionaries and path graphs."
+  },
+  "pins": {
+    "metadata/completed_geometry_tree_benchmark_plan.json": "a4f3189b76ac2f409de9295d3c14cd9da25f1f390ac70d01b1b8de6c411d7778",
+    "metadata/esmfold_all_completed_paired_fits_plan.json": "6c4864187e03efd4e49cc3bf71d1bbe3ff6a0376deb918e953bb7187d646faef",
+    "scripts/readback_tree_path_geometry_points.py": "20393180830b5068c85f32102f49355bdea11ea6d7e12024415ce22add145b3f",
+    "scripts/advance_tree_path_geometry_readback.py": "f017ac1b2c8795acdb81df60727c4fdb02ddd8799dfb9591ac34343c937bd81c",
+    "config/marker_orthology_review.json": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+    "metadata/esmfold_combined_full_path_geometry_readback.json": "18fc30706263ca3f8b7906befda66412b131cf48814a5e666296f4b12de69049",
+    "metadata/recovery_20260925_geometry_tree_benchmark_plan.json": "cf1ddc7a455b4db2c1687087e07f7937a83e0532decd6ef50ca37662f531526e",
+    "metadata/completed_tree_path_geometry_readback_plan.json": "f26fa5d7ec52711815de270ee129792dd831c12aa1713bfc5ebedfdbe01dd0b8",
+    "metadata/recovery_20260925_tree_path_readback_plan.json": "3bb13a94d63d2a08110845e8a5b2afc1f7b45ea768fda23b1d197843e2002880",
+    "metadata/recovery_20260926_geometry_tree_benchmark_plan.json": "dd4905d27e5fe721fc57d73dc73440fd4ee1f5ea8d443814eabfb9f1649c52a9"
+  },
+  "replaces_plan": "metadata/recovery_20260925_tree_path_readback_plan.json"
+}

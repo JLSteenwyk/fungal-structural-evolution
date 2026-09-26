@@ -1,0 +1,25 @@
+{
+  "status": "complete_all_cohort_paired_geometry_and_grid_audit",
+  "plan_sha256": "88a66be45d4c1647e40259b066699a8e7546185b4adc98d5ccabea6dde0c7a5b",
+  "recovery_plan_sha256": "aeb6a5fd30a30ce9325978e77be5c56df0dbe18caa3b258246b702f88efa26e2",
+  "markers": 122,
+  "pairs": 2527033,
+  "stages": [
+    {
+      "name": "pae_union",
+      "receipt": "results/structural_pae/esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "27bcf3f9ce5f0f6e3182b55a1167c0d12edd27b64c71be501fc30952c19463c9"
+    },
+    {
+      "name": "geometry",
+      "receipt": "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1/receipt.json",
+      "sha256": "b741bef837b2b1f19c91925851e76c4dd26b5595c014d4e8e9cbf1ca16d447e0"
+    },
+    {
+      "name": "readback",
+      "receipt": "results/structural_comparisons/paired-site-esmfold-all-completed-20260923-v1-audit/receipt.json",
+      "sha256": "d3e4f556cc3d2fb7a2f465a3f5f9966d51488f2fce1118d3bce625c3538093aa"
+    }
+  ],
+  "scope": "Checkpointed geometry; full grid/character audit and one numerical pair per marker. Not full numerical validation or evolutionary inference."
+}

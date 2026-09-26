@@ -1,0 +1,28 @@
+{
+  "original_plan": "metadata/completed_esmfold_geometry_plan.json",
+  "boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "control": "results/recovery-20260926/geometry",
+  "checkpoints": "results/structural_comparisons/paired-site-esmfold-checkpoints-20260925-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 96,
+    "minimum_free_disk_gib": 100,
+    "gpu": false,
+    "paid_resources": false,
+    "runtime_planning_hours": [
+      8,
+      336
+    ],
+    "runtime_is_uncalibrated": true
+  },
+  "pins": {
+    "metadata/completed_esmfold_geometry_plan.json": "88a66be45d4c1647e40259b066699a8e7546185b4adc98d5ccabea6dde0c7a5b",
+    "scripts/prepare_checkpointed_paired_site_geometry.py": "6f5456ed44cf79e8f661fdff0be80791f68cace9dbb7dd11672d99d70cad9eb8",
+    "scripts/recover_completed_geometry.py": "89544bab1ec3ca5cbab47e573e99139c51b418330aec6fb4d707a7ee0f4269fa",
+    "scripts/inspect_focal_domain_architectures.py": "4eefd23e610e2b0e554aefd37975c77cdce5504429d078b1781da3bab53d2b0e",
+    "scripts/check_geometry_checkpoint_recovery.py": "ee2296099b3e6fa1be356f3e9cd2bce017285e021e1811c3d1d92bcdc5796b2f",
+    "scripts/recover_completed_geometry_receipt.py": "92e3aeaa30f04f0307f8677ff247a1cab6407ad9ba4d3af897145285a21fbf56"
+  }
+}

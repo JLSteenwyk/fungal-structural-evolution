@@ -1,0 +1,46 @@
+[
+  {
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260926-tree-path-readback",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=32G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_tree_path_geometry_readback.py",
+      "--plan",
+      "metadata/recovery_20260926_tree_path_readback_plan.json"
+    ],
+    "pid": 2483557,
+    "create_time": 1790444756.34
+  },
+  {
+    "command": [
+      "systemd-run",
+      "--user",
+      "--unit=fungal-recovery-20260926-geometry-rank-readback",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "-p",
+      "CPUQuota=100%",
+      "-p",
+      "MemoryMax=8G",
+      "-p",
+      "MemorySwapMax=0",
+      "-p",
+      "Nice=10",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_tree_path_geometry_ranks.py",
+      "--plan",
+      "metadata/recovery_20260926_geometry_rank_readback_plan.json"
+    ],
+    "pid": 2483560,
+    "create_time": 1790444756.37
+  }
+]
