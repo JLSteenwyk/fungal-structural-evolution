@@ -1,0 +1,29 @@
+{
+  "status": "passed_all_descriptive_geometry_rank_rows_and_summaries",
+  "plan_sha256": "ed184c4728d74ced7d35fbed28bca0919ae77cb26d37f406221193e087d107bf",
+  "markers": 122,
+  "accepted_pairs": 2475703,
+  "rank_rows": 1464,
+  "estimable_correlations": 1464,
+  "equal_marker_summary_rows": 12,
+  "maximum_absolute_correlation_difference": 2.220446049250313e-16,
+  "source_hashes": {
+    "metadata/recovery_20260926_geometry_rank_readback_plan.json": "ed184c4728d74ced7d35fbed28bca0919ae77cb26d37f406221193e087d107bf",
+    "metadata/completed_geometry_tree_benchmark_plan.json": "a4f3189b76ac2f409de9295d3c14cd9da25f1f390ac70d01b1b8de6c411d7778",
+    "scripts/readback_tree_path_geometry_ranks.py": "23e91e87ff0f9f92d37821ad7f3d5ea086fe69f6628bf70209c3c58e759e368b",
+    "metadata/esmfold_combined_geometry_rank_readback_receipt.json": "d753d821f76f14a8b3df635a3ab31ab96162593328193ef6a535eab85e83a048",
+    "metadata/recovery_20260925_geometry_tree_benchmark_plan.json": "cf1ddc7a455b4db2c1687087e07f7937a83e0532decd6ef50ca37662f531526e",
+    "metadata/completed_geometry_rank_readback_plan.json": "9b92cc859d3f8bb9557caa301530c4cd1ec5f5226aef131e6b903585f0bcb29d",
+    "metadata/recovery_20260925_geometry_rank_readback_plan.json": "57adc19d00a8c6324b0e69cd4112bfc8ca63c9ca15f649885162597717f1824a",
+    "metadata/recovery_20260926_geometry_tree_benchmark_plan.json": "dd4905d27e5fe721fc57d73dc73440fd4ee1f5ea8d443814eabfb9f1649c52a9",
+    "results/recovery-20260926/geometry-tree-benchmark/receipt.json": "0447b1a7caf2076de6965022b38d82227e4fc39b76087ee2da40a95fc2ebd540",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1/receipt.json": "a1154f153fe769ed44295ce9998fe4f488c19899ecec4e0a007bf9aea310e52f",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1/path_geometry_points.tsv": "03d4f18792701f6b4a3ee616339edcc146cfdc5fa1910299395a837472a01a23",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1/geometry_exclusions_with_paths.tsv": "4d5131a3cf7cf477c8fbb18343b8864bab7d5a78a58b1740b3fbc012212a8bf7",
+    "results/phylogeny/paired-path-points-esmfold-all-completed-20260923-v1/marker_summary.tsv": "548b76197ade7e72044b3836929123845e805463be3bbd5234bc37caa23fd538",
+    "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1/receipt.json": "982a4d0bda0b0df7b4ef34f4adb323de98d238dad1742aa3052f90f385679b7f",
+    "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1/marker_rank_associations.tsv": "9eb6aa48c4d94e1b1981ad3f0026311d43e614bd3703fc82dc2c505c1a092f0f",
+    "results/phylogeny/paired-path-ranks-esmfold-all-completed-20260923-v1/equal_marker_summary.tsv": "ec163bff5b520d90ab84b0b8a0a6306a43a095ca5829a1a21ea63f13ed013d91"
+  },
+  "scope": "Every rank-grid row, missing/constant case, denominator, review label and equal-marker median/count recomputed. SciPy Spearman used instead of producer rankdata/corrcoef call; shared ranking/numerical libraries, no p-values retained or independence/biological inference claimed."
+}
