@@ -18,6 +18,31 @@ coverage inventory. GPU prediction remains paused. The original AlphaFold fit
 batch, species-tree analysis, resampling and rate optimization remain unfinished;
 full-cohort coupling and the eight evolutionary objectives remain open.
 
+The refreshed predictor-coverage comparison is complete and independently
+checked against actual AA and 3Di alignment membership for all 65,750
+taxon–marker cells. At least one usable marker is available from either source
+for 525/526 sampled entries; 505 entries have at least 50 usable markers.
+ESMFold adds 186 entries beyond the AlphaFold cohort. This coverage union is
+not a combined predictor-calibrated inference dataset. See the
+[coverage results and reproduction commands](recovery-20260926.md#full-cohort-predictor-coverage).
+
+Both complete native reconciliation runs have separate small-family ortholog
+supplements. New full-table protein/species/family identity audits are running
+for both guides, each capped at one CPU with a 32-GiB memory limit. Their
+software-fixture and corruption checks are reproducible and pass. Full scan
+completion, cross-row pair duplication, reciprocal equality, larger-family
+ortholog semantics and corrected integrated statistics remain outstanding;
+native directed row counts must not be treated as independent ortholog pairs.
+See [audit scope, plans and live output paths](grouped-ortholog-identities-20260926.md).
+
+The five-protein focal annotation sensitivity analysis and its figure are
+complete. Turning off HMMER filters did not rescue an additional annotation
+at the curated thresholds; permissive matches remain subthreshold evidence.
+The [case record](cross-clan-family-mapping-20260923.md) retains sequence-mapped
+geometry and confidence/coverage sensitivity. These checks do not establish
+domain gain/loss, functional equivalence or a validated ancestral target.
+Ancestral reconstruction has not started for this case.
+
 ## Earlier milestone baseline
 
 | Milestone | Current verified state | Evidence and remaining requirements |
