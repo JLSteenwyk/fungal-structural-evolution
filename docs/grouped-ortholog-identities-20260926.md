@@ -167,3 +167,34 @@ loads only the two small count tables. Planned resources are under 2 GiB RAM,
 under 1 MiB output, and minutes of runtime (uncalibrated); it does not repeat
 the approximately 41-GB native-table scan. Full identity and biological
 orthology validation remain distinct from this numerical consistency check.
+
+## Profile-guide scan completed
+
+The corrected profile-guide service exited successfully (exit code 0), and
+its final receipt is archived in
+`metadata/grouped_ortholog_identity_profile_completed_receipt_20260926.json`.
+All 526 native tables passed the identity scan: 839,296,556 grouped rows,
+1,123,279,884 directed row incidences and 62,742 families with rows, using
+the full 5,815,847-protein source partition. These incidence counts are not
+deduplicated ortholog-pair counts.
+
+The production count-table readback command above also passed; evidence is
+`metadata/grouped_ortholog_counts_profile_readback_20260926.json`.
+Both count-table totals agree with the receipt, all 526 recorded native hashes
+match the pinned snapshot, and all checked source/producer/artifact bindings
+remain intact. The MAFFT-guide scan is still running at this checkpoint.
+Reciprocity, cross-row duplicates, missing larger-family pairs and biological
+orthology remain unvalidated, as do their use in duplication–structure tests.
+
+## MAFFT-guide scan completed
+
+The corrected MAFFT-guide service subsequently exited with code 0. Its
+archived receipt is
+`metadata/grouped_ortholog_identity_mafft_completed_receipt_20260926.json`:
+526 tables, 839,250,464 grouped rows, 1,123,035,370 directed row incidences,
+62,903 families with rows and 5,815,847 source proteins. Its production
+count-table and provenance readback also passed, archived in
+`metadata/grouped_ortholog_counts_mafft_readback_20260926.json`.
+Both full identity scans and their count readbacks are now complete; the
+earlier running states above are historical. The pair-semantics and biological
+limitations described above still apply to both guides.

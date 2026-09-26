@@ -1,0 +1,23 @@
+{
+  "status": "complete_grouped_ortholog_count_and_binding_readback",
+  "taxa": 526,
+  "proteins": 5815847,
+  "families_with_rows": 62742,
+  "rows": 839296556,
+  "directed_incidences": 1123279884,
+  "source_sha256": {
+    "metadata/expanded_small_family_profile_completed_receipt_20260923.json": "f2e9c30af442f45198a3008aca130d6548ef02b8d8efe2950f2c132b266e0321",
+    "scripts/audit_grouped_ortholog_identities.py": "e970a4c4964fba283d0b43ff514ed9d21046524c9815a8e85a598a4175cef09a",
+    "scripts/assess_small_family_output_exposure.py": "c3a29325799f63ea6046a0fc81af17c856f3941153d8b4151565e8cca14150d2",
+    "scripts/audit_grouped_ortholog_identities_large_fields.py": "43d6be59bc9c4a28871e45a7008fdb12531db4a8c625e1888c73e6c3070b12ee",
+    "metadata/grouped_ortholog_identity_profile_large_fields_plan_20260926.json": "61f894043998a06a74694a9f2b85996b0a3c4134800a9f50a9984206baffcb7f",
+    "results/orthology/grouped-ortholog-identities-profile-20260926-v2/receipt.json": "e02e4b15d6625e902f244e6069c7836a1ec39c296cc86487f1f48036d4c9cb7d",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/clusters_OrthoFinder.txt_id_pairs.txt": "d1fb364bc392fe0ad15178bb748709fbc12a429cf8faf24243ce8583e4b6e546",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/grouped-ortholog-identities-profile-20260926-v2/family_counts.tsv": "a19410620091643972ca665496d211992abe424c172668b54e4c9f6a536822f1",
+    "results/orthology/grouped-ortholog-identities-profile-20260926-v2/table_counts.tsv": "d4d00427663cc149c59f2ddcf41aebcae81684ca0d39cd32824d299eb3f353fb"
+  },
+  "script_sha256": "78ea61747397e0e0f564d2b91d8d0c089caa36c72ea6bd6963e395181e066d4f",
+  "scope": "Recomputed totals from both complete count tables, exact native table coverage and recorded hash equality to the pinned snapshot, rehashed plan/producer/source identities/count artifacts. Raw ortholog tables were not rescanned; per-row identities, per-family assignments, reciprocal equality, cross-row duplicates, missing pairs and biological orthology were not independently tested by this readback."
+}
