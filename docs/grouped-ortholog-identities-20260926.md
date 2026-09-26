@@ -50,3 +50,28 @@ one CPU and 32 GiB RAM, with no swap, low scheduling priority and a 50-GiB
 initial free-disk gate. Planned output is below 1 GiB. The 1–48-hour planning
 range is uncalibrated, not a completion forecast. This scan uses no GPU or paid
 resources. The second guide and any full-scan numerical readback remain pending.
+
+## Matching MAFFT-guide audit launched
+
+The matching MAFFT scan has now launched using the same fixture-tested script
+and resource caps. Its 526 completed native tables total 41,159,858,967 bytes;
+the source snapshot records 839,250,464 grouped rows. The launch preflight
+verified all table paths, the unchanged checker/parser and approximately
+12.28 TB of free disk. Each guide has independent inputs and outputs, so the
+two read-only scans run concurrently, capped at two CPU equivalents and 64 GiB
+RAM in total. At launch the profile scan was live and using about 634 MiB RAM.
+
+The MAFFT plan and live process identity are
+`metadata/grouped_ortholog_identity_mafft_plan_20260926.json` and
+`metadata/grouped_ortholog_identity_mafft_launch_20260926.json`.
+The service is `fungal-grouped-ortholog-identities-mafft-20260926.service`,
+writing `results/orthology/grouped-ortholog-identities-mafft-20260926-v1`.
+
+```bash
+python scripts/audit_grouped_ortholog_identities.py --plan metadata/grouped_ortholog_identity_mafft_plan_20260926.json
+```
+
+This command is already running; do not duplicate it. Both complete receipts,
+their output readbacks and comparison of the guide-specific results remain
+outstanding. The identity audit still does not validate ortholog-pair semantics
+or justify interpreting native directed incidences as independent observations.
