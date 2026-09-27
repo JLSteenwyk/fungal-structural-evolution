@@ -1,0 +1,42 @@
+{
+  "status": "complete_verified_primary_rmsd_diagnostic_and_short_geometry",
+  "scientific_eligibility": false,
+  "terminal_states": {
+    "fungal-primary-alignment-rmsd-diagnostic-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-rmsd-diagnostic-completion-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-short-geometry-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1/receipt.json": "2edca4a1f89170edd855ad702f0498a1c2a7ee3bfd4bb5a8a61ab689105a283f",
+    "metadata/primary_alignment_rmsd_diagnostic_completed_20260927.json": "6f57c4b12a3d6ef3a5ff26c2bae37bebb8f17e33d42a16f1f9e419e62079dac8",
+    "metadata/primary_alignment_short_geometry_readback_20260927.json": "960d181de1f0cc7b54c957fd5f8527c808bb0d830394e66bdd00fc6827aad55e"
+  },
+  "script_sha256": "7ee4ef8f8262c5b79e24987924336a56a069925e9d792d19bf39cf636d5de5b6",
+  "dispositions": 412800,
+  "numeric_alignments": 387646,
+  "unavailable": 25154,
+  "rmsd_discrepancies": 27,
+  "short_mapping_discrepancies": 27,
+  "longer_mapping_discrepancies": 0,
+  "short_alignments": 327,
+  "aligned_length_counts": {
+    "at_least_3": 387319,
+    "2": 287,
+    "1": 40
+  },
+  "maximum_rmsd_discrepancy": 0.2574187283729639,
+  "maximum_short_analytic_agreement_error": 8.992806499463768e-15,
+  "scope": "Full native-disposition/mapping/RMSD diagnostic and all short-case analytic checks completed. Original strict audit failure and discrepant native values remain quarantined. No complete geometry qualification, biological duplication effect or prediction accuracy is established."
+}

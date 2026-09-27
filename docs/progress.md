@@ -8063,3 +8063,24 @@ removal. Median scaled condition was 11.56 for quadratic and 110.74 for cubic
 terms without establishing their fitted uncertainty or biological utility.
 Completion: `metadata/nonlinear_matched_design_completed_20260927.json`.
 Joint support remains a separate running stage.
+
+### September 27: primary RMSD census and short geometry verified
+
+All 412,800 dispositions and 387,646 successful alignments have completed the
+full diagnostic. There are 27 RMSD mismatches, all two-residue mappings, with
+maximum discrepancy 0.2574187284 Å; no mapping of at least three residues was
+flagged. Full report accounting passed, including every discrepancy field.
+Independent pair-distance formulas verified all 327 short mappings (40 one-pair,
+287 two-pair), maximum agreement error 8.99e-15 Å. All three services terminated
+successfully; source and artifact bindings are consolidated in
+`metadata/primary_rmsd_diagnostic_and_short_completed_20260927.json`.
+
+The failed strict audit remains unchanged. All short mappings remain unsuitable
+for unique-rotation interpretation even where native RMSD agrees. A separate
+geometry stage now checks all 387,646 alignments after the completed diagnostic
+and analytic prerequisites; no discrepancy is silently accepted. It records
+coordinate ranks and proper-rotation curvature, checks each row using an
+independent quaternion calculation, and preserves RMSD flags. Serialized readback
+and usable-cohort qualification remain pending. Producer: one CPU, 16 GiB, no
+swap, 2 GiB output, 0.5–12 hours; plan/launch use the
+`metadata/primary_diagnostic_geometry_*_20260927.json` prefix.
