@@ -1,0 +1,30 @@
+{
+  "status": "complete_full_whole_protein_reference_triad_inventory_pending_readback",
+  "event_reference_links": 36944,
+  "distinct_oriented_model_triads": 17619,
+  "distinct_model_count_distribution": {
+    "3": 15713,
+    "2": 1904,
+    "1": 2
+  },
+  "pair_source_counts": {
+    "ab:primary_pair": 16034,
+    "a_reference:additional_reference_pair": 17296,
+    "b_reference:additional_reference_pair": 17296,
+    "a_reference:identical_model": 159,
+    "b_reference:primary_pair": 157,
+    "ab:identical_model": 1585,
+    "a_reference:primary_pair": 164,
+    "b_reference:identical_model": 166
+  },
+  "future_two_mask_eight_order_dispositions": 281904,
+  "inventory_receipt_sha256": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+  "primary_queue_receipt_sha256": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+  "source_readback_sha256": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+  "script_sha256": "6fc55dd05ae0e4d52a54995220c706653105808d224e397742f1444a6dc2e16d",
+  "artifacts": {
+    "model_triads.tsv": "9fdde272039d19fad472ead3e5fd12bcb32c67e9db936ea0ad71274895b85ecf",
+    "event_reference_triads.tsv": "4eecddbc391cf479e1650230d236c479230f224d4d4cc167318369da139c0a03"
+  },
+  "scope": "All eligible event and tied-reference links mapped to exact oriented A/B/reference model/version triples and pair-work sources. Identity models explicit without invented alignments. No residue intersection, fit, ancestral change or biological asymmetry inferred. Full original no-reference dispositions remain upstream. Future all-order mapping requires primary/reference full audits and explicit identity/mask handling."
+}

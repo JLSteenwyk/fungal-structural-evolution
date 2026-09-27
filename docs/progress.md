@@ -7541,3 +7541,16 @@ event/reference/mask rows and 24 summary combinations. Profile-guide both-side/
 both-order numerical availability is 18,156 full and 16,673 pLDDT70 cases; MAFFT
 has 18,143 and 16,653. These are repeated-reference availability rows, not
 independent events or asymmetry results. All eight aims remain open; GPU paused.
+
+## September 27 full whole-protein reference triad inventory verified
+
+The preceding turn verified reference event coverage (progress). Background
+alignments remain live. Prepared the complete shared-residue-analysis universe:
+36,944 event/reference links, 17,619 oriented model triples, exact A–B/A–reference/
+B–reference work partitions and all identity cases. Independent joins checked
+all 73,888 source-side links and every model/version/sequence, pair and triple
+identity. Of 17,619 triples, 15,713 use three models, 1,904 use two and two use
+one; none silently dropped. The future full two-mask/eight-order grid has
+281,904 dispositions, but mapping/fitting awaits primary alignment validation.
+No partial fitted subset or biological claim substituted. All eight aims remain
+open; GPU prediction paused.
