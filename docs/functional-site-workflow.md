@@ -425,3 +425,29 @@ full provenance receipt are `metadata/functional_context_geometry_*_20260927.*`.
 No new predictions, structural-alphabet encodings or biological inference were
 performed. The next mechanistic distinction would require native descriptor
 and side-chain/pocket analysis alongside broader homologous-site controls.
+
+### Predictor geometry figure (September 27)
+
+[Full four-panel figure](figures/functional_predictor_geometry_20260927.png)
+([PDF](figures/functional_predictor_geometry_20260927.pdf),
+[SVG](figures/functional_predictor_geometry_20260927.svg)) shows all 600 local
+coordinate comparisons at the 150 shared exact protein positions. Every panel
+contains the same positions: 118 with matching states and partners, nine with
+matching states but different partners, 11 with different states but matching
+partners, and 12 differing in both. Black bars denote descriptive medians;
+points are dependent observations and panel groups are not independent trials.
+
+The figure makes the overlap among groups visible: disagreement in a discrete
+structural-alphabet state does not imply a large local coordinate displacement,
+and agreement does not imply identical coordinates. All displayed RMSDs are
+below 0.45 Å for these specific local position sets; this does not establish
+whole-protein agreement, experimental accuracy, or evolutionary divergence.
+Contexts use exact corresponding positions with equal weight per unique residue.
+The focal panel contains three consecutive sequence positions; the other panels
+add predictor-selected partner neighborhoods or their union.
+
+`scripts/plot_functional_predictor_geometry.py` verifies the source receipt,
+full summary readback, all 16 counts/minima/medians/maxima, complete position
+identities and all 600 plotted observations. The PNG was visually inspected.
+Source and artifact hashes are in
+`figures/functional_predictor_geometry_20260927.receipt.json`.
