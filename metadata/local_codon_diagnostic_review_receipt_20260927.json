@@ -1,0 +1,28 @@
+{
+  "status": "complete_local_codon_diagnostic_review_pending_readback",
+  "cases": 1712,
+  "fitted_cases": 1632,
+  "local_flag_counts": {
+    "tree_warning_review_required": 593,
+    "near_zero_nucleotide_tree_edge": 365,
+    "copy_reconciliation_required": 14,
+    "fit_warning_review_required": 96,
+    "local_fit_unavailable": 80
+  },
+  "historical_flagged_cases": 549,
+  "local_flagged_cases": 934,
+  "selection_eligible_cases": 0,
+  "sources": {
+    "results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv": "c07f3ff318d83f974e168a581f48e0dd8bf8badc8d3698ba9d5deb236f3d1c2f",
+    "results/cds/full-group-alignment-readiness-20260927-v1/receipt.json": "882a17f3e05e0f1b11a09ae993647f0997a826717d34b99e72f6ba9e364316a5",
+    "results/phylogeny/local-codon-tree-audit-20260927-v1/receipt.json": "60f204dad24af49f2169d354738353b353ff3e67b0dbb848f8ee6273f769545b",
+    "results/cds/local-mg94-audit-20260927-v1/receipt.json": "cc272632d553d9ac7be625edcecfc42530b3470939e9d00e9a2ccaf34f43a2aa",
+    "metadata/local_mg94_completed_audit_20260927.json": "eb200e4820d734283239b7a63062dc4d24c87c55bae6ce4ed88f73072fb1be34",
+    "metadata/local_codon_tree_information_20260927.tsv": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4"
+  },
+  "script_sha256": "be58e7d9ade7f7c97eadbe160c6a9732b681957e353317379865709c7d1ed194",
+  "artifacts": {
+    "cases.tsv": "c07f039222b0e84526a8ea82b7b0a976bcf205fd3375ba1b8da29b811cf79225"
+  },
+  "scope": "Full local diagnostics joined to unchanged historical warnings. Existing near-zero (<=1e-5) and long-edge (>=10) labels are review triggers, not biological exclusion thresholds. Warning-line counts are not numbers of independent problems. Missing fits remain missing. No historical concern is cleared and no selection eligibility established."
+}

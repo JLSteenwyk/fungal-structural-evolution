@@ -7176,3 +7176,15 @@ maximum likelihood discrepancy is 7.275957614183426e-12. No case is established
 as selection-eligible. Completion evidence is archived separately from the
 still-pending normalized divergence comparison. All eight scientific aims
 remain open and GPU prediction remains paused.
+
+## September 27 local diagnostic review integrated and checked
+
+The preceding goal turn verified the full numerical fit audit. This turn
+confirmed normalization live, then integrated all local tree and fit diagnostics
+into the complete 1,712-case review ledger. An independent dataframe checker
+verified every preserved original field, new diagnostic field, disposition and
+flag. Local review triggers include 365 near-zero-edge cases, 593 cases with
+tree warnings and 96 with fit warnings; categories overlap. All 549 historical
+flagged cases retain their warnings. Numerical consistency does not remove
+biological or optimization review requirements. Normalized divergence comparison
+remains pending. All eight aims are open and GPU prediction stays paused.

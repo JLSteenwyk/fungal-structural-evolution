@@ -1628,3 +1628,28 @@ These results establish saved-fit numerical consistency only. They do not prove
 optimality, calibrated profile intervals, model adequacy, absence of saturation,
 or suitability for selection testing. Corrected opportunity normalization and
 the full original/local comparison remain downstream.
+
+## Local diagnostic review ledger
+
+`results/cds/local-codon-diagnostic-review-20260927-v1/cases.tsv` now joins the
+complete local tree/fit diagnostics to all 1,712 original ledger cases. All
+historical flags and original columns are retained; only the historical-scope
+annotation is updated. A separate dataframe reconstruction checks every column
+and every review flag. Scripts are `integrate_local_codon_diagnostics.py` and
+`readback_local_codon_diagnostics.py`; receipts are archived under
+`metadata/local_codon_diagnostic_review_*_20260927.json`.
+
+Among local cases, 365 have near-zero nucleotide-tree edges under the existing
+<=1e-5 review label, 593 have tree warning lines, 96 have fit warning lines,
+14 retain copy caveats, and 80 have no local fit. These categories overlap;
+934 cases have at least one listed local review trigger. There are no local
+>=10 nucleotide-tree-edge labels or saved-fit numerical-consistency flags.
+Warning lines can repeat and do not count independent problems. Fit warning
+lines do not contradict the successful numerical replay audit. Their scientific
+implications still require review. The broad tree-warning category here is not
+directly comparable to the earlier categorized historical flag count.
+
+All 549 historically flagged cases retain those flags, including earlier
+optimization concerns. Absence of current listed flags does not clear those
+concerns or establish biological adequacy. Selection eligibility remains
+`not_established` for every case.
