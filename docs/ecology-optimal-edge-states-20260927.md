@@ -120,3 +120,19 @@ python scripts/readback_ecology_bootstrap_edges.py --plan metadata/ecology_boots
 Production and the full independent audit remain pending. A verification rerun
 recomputes the network flows; partial proof files are not silently accepted as
 completed verification.
+
+## Bootstrap production complete; full audit running
+
+The producer exited successfully after all 2,000 trees and 4,000 coding/tree
+combinations. It emitted 4,196,000 edge records and 5,006 source/coding/split
+summary rows. All 2,000 compressed tree-shard hashes, their checkpoint receipts
+and both summary hashes were checked against the final source-bound receipt.
+Completion evidence is archived in
+`metadata/ecology_bootstrap_edges_production_completed_20260927.json`.
+
+The independent verifier automatically advanced from its dependency wait and
+was observed computing with four live workers (PIDs 2167140–2167143 under the
+recorded controller). Its first ten completed trees cover 83,920 constrained
+cost checks. The full audit is still pending; these partial checks do not
+validate the entire ensemble, and no final bootstrap transition interpretation
+is yet claimed. No restart or change to pinned live code was needed.

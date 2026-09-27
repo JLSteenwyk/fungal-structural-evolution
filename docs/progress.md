@@ -6815,3 +6815,16 @@ within the existing machine, with a measured 1–6-hour planning allowance. All
 The previous turn launched bootstrap production; this turn implements, tests
 and queues its full independent audit. Neither pending stage is reported as
 complete. All eight scientific aims remain open; GPU prediction stays paused.
+
+## September 27 full bootstrap edge production complete
+
+Verified successful producer exit and all 2,000 tree-shard/checkpoint receipts
+and summary hashes. Production covers 4,000 coding/tree combinations,
+4,196,000 edges and 5,006 split-summary rows. The queued independent verifier
+advanced automatically and has four live workers; its full proof remains
+pending. See [production milestone](ecology-optimal-edge-states-20260927.md#bootstrap-production-complete-full-audit-running).
+
+The prior turn queued independent verification; this turn archives completed
+production and verifies the transition to active computation. All eight aims
+remain open; no partial audit is presented as a final scientific result.
+GPU prediction stays paused.

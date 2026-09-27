@@ -1,0 +1,32 @@
+{
+  "status": "completed_bootstrap_ecology_edge_production_pending_independent_readback",
+  "checked_at": "2026-09-27T10:42:17.457865+00:00",
+  "source_receipt": "results/ecology/bootstrap-optimal-edge-states-20260927-v1/receipt.json",
+  "source_receipt_sha256": "7804912cdbc82f7e87effd6b530b88338c04ea09d2ffbd32dffe065b18e5d364",
+  "plan_sha256": "0765f537dd268f4807278f44203f6317b27151d49cb72a06a1aa4807d7f74ddb",
+  "trees": 2000,
+  "coding_tree_combinations": 4000,
+  "edge_rows": 4196000,
+  "split_summary_rows": 5006,
+  "verified_tree_shards": 2000,
+  "artifacts": {
+    "tree_summaries.tsv": "860e9623f52ccb468c86795aa59e30d5e14bf13941db33b13516d947f1efdfd2",
+    "split_frequencies.tsv": "6429e9ba21206e9a4d5b30426c298946c04bbf7442f489cf4a04675392a08afa"
+  },
+  "producer_terminal_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "live_verifier": {
+    "pid": 2165039,
+    "created": 1790505658.16,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_ecology_bootstrap_edges.py",
+      "--plan",
+      "metadata/ecology_bootstrap_edges_readback_plan_20260927.json"
+    ]
+  },
+  "scope": "Successful terminal producer and all 2000 compressed tree-shard hashes plus both summary hashes checked. Full independent network-flow audit remains pending; no validated bootstrap transition result claimed."
+}
