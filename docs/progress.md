@@ -5303,3 +5303,14 @@ Original protein residue numbering is preserved. Independent parsing and
 two-source handoff/corruption fixtures passed. Production is waiting;
 independent domain serialization readback and alignments remain pending.
 See [domain workflow](duplication-domain-controls-20260926.md).
+
+
+### September 26: full domain-coordinate readback queued
+
+All domain/mask dispositions will be independently checked against audited
+full-model arrays before domain alignment. Checks cover each ready PDB atom's
+original residue identity, XYZ, confidence and occupancy, as well as complete
+source/interval grids and explicit short/rejected inputs. The end-to-end
+fixture passed and rejected a changed coordinate despite an updated file hash.
+The one-CPU readback is queued, not yet completed. See
+[domain workflow](duplication-domain-controls-20260926.md).

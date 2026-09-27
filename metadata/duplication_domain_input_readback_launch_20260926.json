@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-domain-input-readback-20260926.service",
+  "pid": 172163,
+  "created": 1790473834.26,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_domain_inputs.py",
+    "--plan",
+    "metadata/duplication_domain_input_readback_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_domain_input_readback_plan_20260926.json",
+  "plan_sha256": "c1b1287c2a4b944da4c7b1160bf5d7f68f804149e8f54dcfd81df0b5c1ed825b",
+  "fixture": "Full two-source extraction/readback handoff passed 4 dispositions and 10 PDB atoms; changed coordinate rejected even after its recorded PDB hash was updated."
+}

@@ -196,3 +196,38 @@ allowance and 100 GiB free-disk reserve. Its uncalibrated planning interval is
 Production extraction is waiting, not completed. Independent full domain
 serialization readback and domain alignments remain to be prepared. No PAE,
 biological boundary or evolutionary-event validation is implied.
+
+## Independent domain-coordinate readback queued
+
+`scripts/readback_duplication_domain_inputs.py` now waits for the exact domain
+extraction process and requires its successful plan-bound receipt. It checks
+the complete 229,180 interval/mask grid, source model/shard identities, upstream
+coordinate receipt/proof bindings and all ready PDB file hashes. It independently
+selects residues from the audited full-model arrays and checks every PDB atom's
+original residue number, amino-acid identity, XYZ, confidence, occupancy and
+serialization fields. It does not import the extraction renderer. Coordinate
+and confidence tolerances are fixed at their printed rounding limits:
+0.000501 Å and 0.005001 confidence units. Short masks and rejected sources are
+checked explicitly. Raw-CIF reconstruction is provided by the earlier source
+coordinate audits, not repeated here.
+
+The completed two-source extraction/readback fixture passed four dispositions
+and ten PDB C-alpha atoms. A changed coordinate was rejected even after its
+recorded PDB hash was updated. Reproduce with:
+
+```bash
+python scripts/check_duplication_domain_input_readback.py
+```
+
+Plan and exact process identity:
+`metadata/duplication_domain_input_readback_plan_20260926.json` and the
+corresponding launch record. Run with
+`python scripts/readback_duplication_domain_inputs.py --plan
+metadata/duplication_domain_input_readback_plan_20260926.json`.
+Output will be
+`results/structural_comparisons/duplication-domain-input-readback-20260926-v1.json`.
+
+The queued readback uses one CPU, 8 GiB RAM and no swap, GPU or paid resources.
+Its output is a small proof receipt; uncalibrated runtime planning is 0.1–8
+hours after extraction. Production readback is waiting, not complete. Domain
+alignment orchestration and biological analyses remain pending.
