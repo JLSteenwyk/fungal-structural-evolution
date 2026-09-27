@@ -1686,3 +1686,23 @@ these are descriptive distributions, not independent replicates or significance
 tests. Original fits remain the archived baseline, including their unresolved
 optimization concerns. All historical warnings and eligibility limitations
 remain in force.
+
+## Reproducible alignment-sensitivity figure
+
+![Codon alignment sensitivity](figures/codon_alignment_sensitivity_20260927.png)
+
+[PDF](figures/codon_alignment_sensitivity_20260927.pdf),
+[SVG](figures/codon_alignment_sensitivity_20260927.svg), and
+[data](figures/codon_alignment_sensitivity_20260927.tsv) are available.
+Panel A shows full empirical distributions of log2 local/original tree-total
+dS, tree-total dN and fitted global omega. Panel B includes every matched case,
+showing dN sensitivity versus median retention of original residue-pair
+correspondences, colored by topology change. One zero/zero omega ratio remains
+undefined; no pseudocount, outlier clipping or causal trend fit is used.
+
+Reproduce with `scripts/plot_codon_alignment_sensitivity.py` (new artifacts only).
+`scripts/readback_codon_alignment_figure.py` recomputes every plotted value from
+the raw audited comparison and checks all case identities, flags and topology
+labels. The PNG was visually inspected for full ranges, axis and legend labels,
+counts and caveats. The figure does not establish either alignment as correct,
+selection, or independent replication across gene groups.

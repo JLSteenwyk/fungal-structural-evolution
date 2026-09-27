@@ -7200,3 +7200,15 @@ Among 1,625 matched groups, median local/original total normalized dS is 1.00225
 and dN is 1.16542. These shifts combine alignment, coverage, topology and model
 fit sensitivity; they are not evidence of selection or proof either alignment
 is correct. All eight scientific aims remain open and GPU prediction is paused.
+
+## September 27 alignment-sensitivity figure completed
+
+The preceding turn verified the full normalized comparison and descriptive
+summary. This turn adds a two-panel figure, PDF/SVG/PNG exports and complete
+1,625-case plotted-data table. All plotted ratios were independently recomputed
+from audited comparison tables, with exact case/flag/topology joins and explicit
+zero handling. The PNG was visually inspected. Structural comparison services
+remain live; checkpoint counts were 233,152/412,800 primary, 118,336/130,164
+reference, 5,312/285,800 background whole-chain and 81,856/267,716 background
+domain dispositions. These include documented skips and remain unfinished.
+All eight scientific aims remain open and GPU prediction remains paused.
