@@ -1,0 +1,24 @@
+{
+  "status": "complete_full_marker_common_taxon_topology_comparison_pending_independent_readback",
+  "markers": 125,
+  "changed_topologies": 0,
+  "split_rows": 59315,
+  "sources": {
+    "first": {
+      "support_receipt_sha256": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def",
+      "audit_receipt_sha256": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab"
+    },
+    "second": {
+      "support_receipt_sha256": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def",
+      "audit_receipt_sha256": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab"
+    }
+  },
+  "coverage_receipt_sha256": "0f360b6d6b0d4ca77c5b4214242ca0a159e030a9e34944d2b7332340f1bfde5b",
+  "script_sha256": "83cc710c354fbd4162b1986680ca2072635f2d306e330188ec19fc90aaa7c4f2",
+  "artifacts": {
+    "split_comparison.tsv": "9edec9b59ce245b160f97f71949720f8218df30aa89c7ed6d4349070ce588b04",
+    "marker_comparison.tsv": "f2c4082904d1fe3592af6d798901f026e368eafc0bfa44c8c83ac5891087a203"
+  },
+  "scope": "Unrooted topology comparison after restricting each split to shared taxa. Pruning is not refitting and does not remove inference effects of different taxon sampling. Zero-length edges remain represented. No likelihood, support significance, preferred alignment or biological-cause claim.",
+  "identity_table_check": "All 125 zero-RF summaries and all 59315 split identities match the previously audited support table."
+}

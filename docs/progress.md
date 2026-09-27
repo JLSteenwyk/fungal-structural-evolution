@@ -7405,3 +7405,16 @@ waiting process is verified live. CLI parsing succeeded; complete output audit
 execution awaits inference and is not claimed finished. Plans and identities:
 `metadata/hybrid_excluded_guide_audit_{plan,launch}_20260927.json`. Full mixture
 model sensitivity remains downstream. All eight aims remain open; GPU paused.
+
+## September 27 full marker topology comparison machinery verified
+
+The preceding goal turn queued hybrid-excluded tree audits (progress). Added the
+125-marker comparison that verifies exact alignment-eligible tree tips, projects
+splits onto shared taxa, and retains every shared/lost/gained split. Full profile
+identity comparison returns zero RF for every marker and all 59,315 output split
+identities match the audited support table. Independent DendroPy pruning agrees
+with Bio.Phylo projection over all 125 trees both before and after removing all
+outgroups: 250 conditions, 116,039 internal splits. Cross-method inference and
+its full audit remain pending; comparison is prepared, not yet run or queued.
+See `docs/marker-alignment-topology-comparison-20260927.md`. All eight aims remain
+open; GPU prediction remains paused.
