@@ -1,0 +1,47 @@
+{
+  "inventory": "results/structural_comparisons/background-measurement-inventory-20260927-v1",
+  "readback": "metadata/background_measurement_inventory_completed_readback_20260927.json",
+  "dependency": {
+    "service": "fungal-background-measurement-readback-20260927.service",
+    "pid": 582718,
+    "created": 1790499522.4,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_measurements.py",
+      "--config",
+      "metadata/background_measurement_readback_plan_20260927.json"
+    ],
+    "config": "metadata/background_measurement_readback_plan_20260927.json",
+    "config_sha256": "f0da9dc85812fc74c5084a7e1eb37ece4f0a81df323ce416df5cc1afde5d8355"
+  },
+  "output": "results/structural_comparisons/background-coordinate-validation-20260927-v1",
+  "workers": 4,
+  "models_per_shard": 1000,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "metadata/background_measurement_readback_launch_20260927.json": "d1d2b86757293dbbcb34eb5655af499e843b7707b3876282f0bb0a1049d833d0",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "scripts/validate_background_coordinates.py": "4a563170021ad0b7a0b5c590f583de7c6e47e9c1563901bb6971e351cc71239e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/additional_models.jsonl": "8693d749ddcca553d9dafb0736b63e6a44ab25a7f2a0804e61cff67792517247"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "source_models": 148104,
+    "source_residues": 66498349,
+    "source_coordinate_bytes": 63311748521,
+    "maximum_sequence_length": 1335,
+    "basis": "All 148104 additional models; existing validated CIF parser and compressed C-alpha/confidence shards. Four CPU workers, restartable 1000-model checkpoints with raw-hash revalidation. Broad uncalibrated planning range excludes dependency wait. Existing local resources, no GPU or paid services."
+  }
+}

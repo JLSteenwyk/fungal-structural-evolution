@@ -1,0 +1,20 @@
+{
+  "service": "fungal-background-coordinate-validation-20260927.service",
+  "pid": 646266,
+  "created": 1790499599.29,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/validate_background_coordinates.py",
+    "--plan",
+    "metadata/background_coordinate_validation_plan_20260927.json"
+  ],
+  "plan": "metadata/background_coordinate_validation_plan_20260927.json",
+  "plan_sha256": "ccf7ef853b85595aac0a8c2d74a854581555eb8c612717db101063a06c50218d",
+  "fixture_status": "passed_coordinate_arrays_checkpoint_reuse_content_rejection_and_changed_source_rejection",
+  "fixture_command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_duplication_coordinate_validation.py",
+    "--models",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/additional_models.jsonl"
+  ]
+}

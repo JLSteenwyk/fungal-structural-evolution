@@ -256,3 +256,46 @@ sets passed. Production support counts and full independent validation remain
 pending. This diagnoses possible support only: domain architecture, length,
 confidence, coverage, taxonomic balance and shared ancestry still require
 assessment before any matched effect test.
+
+## Membership and measurement inventories verified; coordinates running
+
+All 78,372 membership rows passed independent binary-search verification,
+including exact protein ordinals and absent records. The guide comparison and
+membership receipts are now both complete. The measurement inventory also passed
+full independent reconstruction of every field, frozen model join, metadata
+value, pair identity and model/work partition. Evidence:
+[orthology readback](../metadata/terminal_background_orthology_completed_readback_20260927.json)
+and [measurement readback](../metadata/background_measurement_inventory_completed_readback_20260927.json).
+
+Of 78,372 candidates, 77,909 meet candidate-plus-native-ortholog criteria in at
+least one guide, 77,707 in both, and 70,209 also have unreported parents in both.
+The ledger retains 463 candidates qualified in neither guide and 6,448 identical-
+model pairs. There are 71,461 qualified distinct-model pairs: 11 already in the
+reference queue and 71,450 new pairs. The candidate universe uses 150,280 models,
+of which 149,356 are active for the qualified pool and 148,104 are absent from
+the prior primary/reference model inventories. These are existing predictions,
+not a requirement to infer 148,104 new structures.
+
+`validate_background_coordinates.py` is now validating every additional model,
+using the existing pinned raw-CIF/shard validator. The input contains 66,498,349
+residues and 63,311,748,521 coordinate bytes. Four CPU workers, 16 GiB RAM, no
+swap, a 32 GiB output allowance and a 100 GiB free-disk reserve are configured.
+The 0.5–24 hour interval is an uncalibrated planning range. Checkpoints contain
+1,000 models and require unchanged source hashes for reuse. Content rejections
+remain explicit; missing or changed files fail provenance checks. No new
+predictions or structural alignments are launched by this stage.
+
+Plan: `metadata/background_coordinate_validation_plan_20260927.json`; output:
+`results/structural_comparisons/background-coordinate-validation-20260927-v1`.
+The coordinate-array/checkpoint/rejection fixture passed with the additional
+model inventory. An initial fixture invocation omitted its required `--models`
+argument and exited with usage output; the corrected invocation passed before
+launch. Full independent raw-coordinate readback remains downstream, followed
+by input materialization, background alignments and domain/coverage matching.
+
+The matching-support producer also completed all 655,419 target/set rows, but
+that independent readback remains pending. Its provisional profile-guide counts
+show 31,435 targets with no same-family background under the local-guide set;
+only 53,184 have any background within the factor-1.5 distance range. These
+preliminary support counts motivate retaining unsupported targets and reporting
+the eventual matched estimand separately from the full target universe.

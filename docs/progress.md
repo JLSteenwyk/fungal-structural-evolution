@@ -6321,3 +6321,21 @@ See [design and limits](terminal-sister-backgrounds-20260927.md#guide-union-veri
 The prior turn prepared measurement work partitions; this turn verifies the
 full guide union and adds a pre-matching support diagnostic. Full project aims
 remain open and GPU prediction remains paused.
+
+## September 27 background memberships and measurement inventory verified
+
+Archived successful full readbacks for all 78,372 native-membership and
+measurement records. Exact joins and work partitions passed: 77,909 candidates
+qualified in either guide, 463 in neither, 6,448 identical-model pairs, 71,450
+new distinct-model comparisons and 11 already queued reference comparisons.
+The prior goal turn completed guide validation and queued support diagnostics;
+this turn completes the native-membership and measurement-inventory gates.
+
+Launched four-worker raw-coordinate validation of 148,104 additional existing
+models (66,498,349 residues, 63.31 GB source coordinates), with a 16 GiB memory
+limit, checkpointed output and pinned source hashes. The existing coordinate
+fixture passed after correcting an invocation that lacked its required models
+argument. No GPU inference was launched. Matching-support production completed
+655,419 rows; its independent validation remains pending. See
+[verified counts and execution scope](terminal-sister-backgrounds-20260927.md#membership-and-measurement-inventories-verified-coordinates-running).
+The full scientific goal remains active and incomplete; GPU prediction is paused.

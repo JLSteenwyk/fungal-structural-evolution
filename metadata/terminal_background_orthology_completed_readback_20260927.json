@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_background_orthology_membership_readback",
+  "config_sha256": "6cbc8cad1a8b9a7112e105193d8b794a566e7d0ed3411a1da149bf7e9b8bd254",
+  "producer_receipt_sha256": "3db42cf15916ca0574287976d03a80098c959d015ef3ec84378557090c9299e0",
+  "guide_readback_sha256": "502189bdd6ed7a641bad0aaaa13ab5a9ced1110b204e72a9415c7945c3e29159",
+  "candidate_rows": 78372,
+  "guides": {
+    "profile": {
+      "stream_pairs": 561639942,
+      "queries": 78372,
+      "present": 77863,
+      "absent": 509
+    },
+    "mafft": {
+      "stream_pairs": 561517685,
+      "queries": 78372,
+      "present": 77857,
+      "absent": 515
+    }
+  },
+  "checker_sha256": "b5f34c378e43f3eda98a8e6a28f5f3e6e18edcdedd4d03948fa76596b2ace1b0",
+  "scope": "Every candidate source field and protein ordinal reconstructed; all membership flags checked by independent binary search with reciprocal-record validation and bracketing for absences. Full stream hashes bind to prior global ordering/multiplicity audits. Guide union readback required. Native assignment is not independent biological orthology or a matched duplication effect."
+}
