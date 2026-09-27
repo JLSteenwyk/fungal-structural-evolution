@@ -5824,3 +5824,20 @@ This validates the geometric measurements at their stated numerical precision.
 It does not resolve the known native RMSD reporting discrepancy or establish
 prediction accuracy or biological asymmetry. Geometry-aware integration and
 comparisons on consistent residue correspondences remain the next steps.
+
+
+## September 27 common-residue domain triad mapping launched
+
+Launched the mapping inventory needed to compare duplicates against identical
+reference residues. The 72,336 event/domain records reduce to 7,986 oriented
+interval triads for computation; every event/reference/policy/boundary/Pfam
+link is retained. Both masks and all eight native-order combinations yield
+127,776 planned dispositions. Reference-position intersections and the subset
+consistent with the direct duplicate-pair alignment are stored separately.
+
+Source numeric/geometry exclusions are propagated; no new RMSDs or biological
+contrasts are calculated yet. Fixtures passed shared/disjoint/inconsistent
+mappings, original-position preservation, nonbijective rejection and duplicate
+label reversal. See [methods](duplication-domain-common-residues-20260927.md)
+and the [launch record](../metadata/duplication_domain_common_residues_launch_20260927.json).
+The full inventory and independent mapping readback remain pending.
