@@ -299,3 +299,49 @@ results/prediction_controls/esmfold-af-figures-v1` using a new output for reruns
 PNG, SVG and PDF artifacts were generated, and the PNG was visually inspected.
 The plotting code rejects nonpositive/nonfinite values rather than silently
 dropping them from logarithmic axes. Source and figure hashes are versioned.
+
+
+## Qualified full-cohort overlap diagnostic (September 26)
+
+The recovered AlphaFold and completed ESMFold paired-input datasets share 673
+eligible taxon–marker combinations, spanning 21 taxa and 78 markers. A new
+comparison joins each marker by its original alignment column, rather than
+assuming independently filtered matrices have identical column indices.
+Both sources must refer to the same original marker-matrix receipt. Each
+source's existing confidence mask is retained; a residue enters the state
+comparison only when both have observed, identical amino-acid states.
+
+There are **134,586 jointly observed positions**, all with matching amino acids.
+Of these, **19,908 (14.792%) have different structural states**. All 673 cells
+remain in the table, including any with no jointly comparable positions; empty
+denominators are blank, not zero disagreement. A full reference-state/local-state
+confusion table accompanies cell-level observed counts and disagreement fractions.
+The pooled fraction weights residues, not taxa or proteins equally.
+
+This diagnostic demonstrates source-associated disagreement in the overlapping
+qualified analysis data. It is not an isolated estimate of predictor error:
+matching amino acids at observed positions does not establish identical complete
+proteins, model context or prediction settings. It does not replace the dedicated
+same-sequence predictor controls elsewhere in this document. The small,
+ascertained overlap, shared markers/taxa and state dependence prevent extrapolating
+the pooled fraction across fungi or treating residues as independent replicates.
+Disagreement in structural alphabet states is not physical displacement or an
+evolutionary branch effect. Models are not calibrated by this comparison.
+
+Output: `results/phylogeny/paired-source-state-comparison-20260926-v1/`.
+Independent array intersections reconstructed every shared FASTA-header membership,
+all 673 cell counts/fractions/statuses and the complete confusion table. Source
+and output hashes were checked. The completed result is archived in
+`metadata/paired_source_state_comparison_completed_20260926.json`.
+Reproduce with a fresh output directory:
+
+```bash
+python scripts/compare_paired_source_states.py \
+  --reference results/phylogeny/paired-inputs-afdb-recovered-20260925-v1 \
+  --local results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1 \
+  --output <fresh-output-directory>
+```
+
+This one-CPU table/sequence comparison uses existing qualified inputs; it does
+not run predictions or alter source alignments. Full protein/model provenance
+matching is the next requirement before predictor-specific interpretation.

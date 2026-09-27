@@ -5456,3 +5456,14 @@ explicit, including failed-order dispositions. Known reversal/failure/full-grid
 and rehashed missing-record tests passed. The one-CPU controller waits for both
 complete numeric audits; no production summary or biological effect is claimed.
 See [order summaries](duplication-alignment-readback-20260926.md#both-order-comparison-summaries-queued).
+
+
+### September 26: full-cohort source-overlap structural-state diagnostic
+
+All 673 overlapping qualified taxon–marker combinations (21 taxa, 78 markers)
+were compared at original alignment positions. Their 134,586 jointly observed
+residues have identical amino-acid states; 19,908 (14.792%) differ in structural
+state. Independent array joins verified all cell counts and the full confusion
+table. This is source-associated disagreement, not a matched complete-protein
+predictor experiment or error calibration; full model-context matching remains.
+See [source diagnostic](prediction-source-controls.md#qualified-full-cohort-overlap-diagnostic-september-26).
