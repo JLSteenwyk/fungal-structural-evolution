@@ -1776,3 +1776,21 @@ a selection result. Full profile audit remains pending; the historical auditor
 has a hardcoded old-cohort FCS exposure source and must be adapted with verified
 local case provenance before use. All eight aims remain open; GPU predictions
 remain paused.
+
+## September 27 local fitted-case FCS exposure verified
+
+`scripts/audit_local_codon_fcs_exposure.py` binds all 1,632 local fits to their
+hashed configuration, alignment and saved model. All 11,599 case–taxon rows
+and 18,846,954 embedded nucleotide/missing characters match the source FASTA.
+The full 59,840-row audited marker map joins every fitted entry; zero retained
+entries overlap reported EXCLUDE/FIX/TRIM actions. This is evidence about the
+existing FCS calls, not absence of contamination or selection eligibility.
+Full rows and proof are in `results/qc/local-codon-fcs-exposure-20260927-v1`;
+the receipt is archived as `metadata/local_codon_fcs_exposure_readback_20260927.json`.
+
+A separate `scripts/audit_local_branch_parameter_profiles.py` now accepts an
+explicit `--exposure` directory and checks the full case universe and positive
+subset. It preserves the historical profile auditor and running producer.
+The new audit has passed CLI parsing but awaits the complete profile batch;
+its full numeric/artifact validation is not yet run or queued. The producer
+was revalidated by PID, creation time and command with four worker children.

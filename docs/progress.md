@@ -7362,3 +7362,15 @@ a selection result. Full profile audit remains pending; the historical auditor
 has a hardcoded old-cohort FCS exposure source and must be adapted with verified
 local case provenance before use. All eight aims remain open; GPU predictions
 remain paused.
+
+## September 27 local codon contamination exposure audit
+
+The preceding goal turn completed slice verification and launched nuisance
+optimization (progress). This turn independently parses every saved model's
+embedded alignment and matches all 18,846,954 characters to hashed source
+FASTA, then joins all 11,599 case–taxon entries to the full audited FCS marker
+map. All 1,632 fitted cases have zero EXCLUDE/FIX/TRIM exposure. This does not
+certify contamination absence. A separate profile auditor accepts and validates
+this local exposure source; its complete execution awaits the running batch.
+Verified the profile producer identity and four live children. All eight aims
+remain open; GPU predictions remain paused.
