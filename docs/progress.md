@@ -7529,3 +7529,15 @@ of potentially different cores rather than uncertainty or biological effects.
 Independent cumulative-index mapping and sorted-quantile readback passed all
 62,887 rows and 27 quantile summaries. Both orders retained. All eight aims
 remain open; GPU prediction paused.
+
+## September 27 reference numerical coverage mapped to every event link
+
+The preceding turn verified full reference input-order sensitivity (progress).
+Background alignments and their existing validators remain live. Projected all
+73,888 source event/reference/side links onto both masks, preserving pending
+reused primary comparisons, identical-model links, tied references and original
+fields. Independent dataframe joins checked all 147,776 expanded links, 73,888
+event/reference/mask rows and 24 summary combinations. Profile-guide both-side/
+both-order numerical availability is 18,156 full and 16,673 pLDDT70 cases; MAFFT
+has 18,143 and 16,653. These are repeated-reference availability rows, not
+independent events or asymmetry results. All eight aims remain open; GPU paused.

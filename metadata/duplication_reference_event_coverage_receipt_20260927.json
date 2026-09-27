@@ -1,0 +1,36 @@
+{
+  "status": "complete_full_reference_event_coverage_pending_independent_readback",
+  "source_links": 73888,
+  "masked_links": 147776,
+  "masked_event_references": 73888,
+  "link_status_counts": {
+    "profile:full:2_directions_numerically_usable": 36312,
+    "profile:plddt70:2_directions_numerically_usable": 33978,
+    "profile:full:identical_model_not_independent_comparison": 324,
+    "profile:plddt70:identical_model_not_independent_comparison": 324,
+    "profile:full:awaiting_primary_pair_audit": 320,
+    "profile:plddt70:awaiting_primary_pair_audit": 320,
+    "profile:plddt70:0_directions_numerically_usable": 2330,
+    "profile:plddt70:1_directions_numerically_usable": 4,
+    "mafft:full:2_directions_numerically_usable": 36286,
+    "mafft:plddt70:2_directions_numerically_usable": 33947,
+    "mafft:full:identical_model_not_independent_comparison": 325,
+    "mafft:plddt70:identical_model_not_independent_comparison": 325,
+    "mafft:full:awaiting_primary_pair_audit": 321,
+    "mafft:plddt70:awaiting_primary_pair_audit": 321,
+    "mafft:plddt70:0_directions_numerically_usable": 2335,
+    "mafft:plddt70:1_directions_numerically_usable": 4
+  },
+  "both_sides_all_orders": 69625,
+  "inventory_receipt_sha256": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+  "summary_receipt_sha256": "f732f44fe818e9a151935015480c2fcd89e32daf7c631999bf316dd300f777ac",
+  "inventory_readback_sha256": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+  "summary_readback_sha256": "790cfe28297a0f03ee2c54ca595e7a9900693667e95c6a57416e821ac49e7173",
+  "script_sha256": "280cc3fa0403c6763f5abdf0220ce00a1fccf25f23814a09677f78ca55b09646",
+  "artifacts": {
+    "coverage_summary.tsv": "7cc5c25d6a04154d81188ebf515215670429fe2c68d2a989ee48a65e7cc2601c",
+    "event_reference_coverage.tsv": "5adcba3eac785a3c69b446ab011f572250e4a5cc36b26195469bdadb65d9592c",
+    "comparison_link_coverage.tsv": "05379e0c8bf7241be069a2e0b1f204e4f28011eee55f2f8a25be88158e04a83c"
+  },
+  "scope": "All provisionally eligible event/tied-reference/duplicate-side links retained for both masks. Completed additional comparisons projected; reused primary pairs remain pending audit and identical-model links remain explicit without invented metrics. Numerical availability is not orthology, coverage/confidence suitability or structural asymmetry. This inventory excludes original events lacking a provisional reference, whose dispositions remain in the upstream full event ledger."
+}
