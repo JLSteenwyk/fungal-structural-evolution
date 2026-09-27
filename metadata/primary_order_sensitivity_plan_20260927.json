@@ -1,0 +1,39 @@
+{
+  "producer": {
+    "unit": "fungal-primary-usable-orders-readback-20260927.service",
+    "pid": 330515,
+    "created": 1790533183.6,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_primary_usable_orders.py",
+      "--plan",
+      "metadata/primary_usable_orders_plan_20260927.json",
+      "--launch",
+      "metadata/primary_usable_orders_launch_20260927.json",
+      "--output",
+      "metadata/primary_usable_orders_readback_20260927.json"
+    ],
+    "plan_sha256": "03f7502ae9c629b4a33d176a65fdc9429dfe1e7167e11b9656e08b3959fa36ee"
+  },
+  "source": "results/structural_comparisons/primary-usable-orders-20260927-v1",
+  "native": "results/structural_comparisons/duplication-alignments-20260926-v1",
+  "audit": "metadata/primary_usable_orders_readback_20260927.json",
+  "output": "results/structural_comparisons/primary-order-sensitivity-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_prerequisite": [
+      0.1,
+      2
+    ]
+  },
+  "pins": {
+    "metadata/primary_usable_orders_readback_launch_20260927.json": "d26909b19d26e89c88f8911bab3d94003334754602f98c9aaaed82347fdf887e",
+    "metadata/primary_usable_orders_plan_20260927.json": "03f7502ae9c629b4a33d176a65fdc9429dfe1e7167e11b9656e08b3959fa36ee",
+    "scripts/summarize_primary_order_sensitivity.py": "ea5eb58fa6b17fd16b6fca69e6dc89fabc4c565017f47497787e837f97fd0277",
+    "scripts/readback_primary_order_sensitivity.py": "f2049483a05a2c73e4cbb613c0b9392996d26f979a06cab3e4a39cc84dd0893b",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}

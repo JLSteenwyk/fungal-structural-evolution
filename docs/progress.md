@@ -8142,3 +8142,26 @@ adequacy or model fit. The job uses one CPU, 12 GiB, no swap and under 1 GiB out
 planning allowance 0.1–2 hours after its prerequisite. Script:
 `scripts/refine_nonlinear_joint_support.py`; plan and exact process identity:
 `metadata/nonlinear_joint_support_projection_{plan,launch}_20260927.json`.
+
+### September 27: primary residue-correspondence sensitivity queued
+
+The preceding turn was a verified wait: exact live worker identities showed CPU
+progress for geometry, support, matched models, MG94 and ecological readback.
+The primary counterpart to completed reference order-sensitivity analysis is now
+queued behind the full usable-order readback. It reconstructs both native residue
+correspondence sets for every pair/mask with two numerically usable orders and
+records set overlap, equal-count/different-mapping cases, and all eight metric
+differences. Full-mask totals and the identical pair cohort across masks remain
+separate. No preferred order or biological duplication effect is inferred.
+
+A separate checker reconstructs correspondence sets with cumulative-index arrays
+and verifies all output fields and quantiles by sorted interpolation. Source
+checkpoint hashes, complete usable cohorts, exact dependency process identity and
+successful terminal states are required. A gapped/reversed-order fixture passed;
+full data verification is pending. Each job uses one CPU, 12 GiB, no swap, under
+1 GiB output and a planning allowance of 0.1–2 hours after its prerequisite.
+Scripts: `summarize_primary_order_sensitivity.py` and
+`readback_primary_order_sensitivity.py`; plan/launch files use the
+`metadata/primary_order_sensitivity_*_20260927.json` prefix. These outputs will
+permit a descriptive comparison with reference alignments; the comparative table
+and biological adjustment are not yet complete.
