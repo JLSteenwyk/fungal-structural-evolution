@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-whole-protein-ancestors-20260927.service",
+  "state": {
+    "MainPID": "572780",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 572780,
+  "created": 1790551660.59,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/infer_whole_protein_ancestors.py"
+  ],
+  "plan_sha256": "d04f097d39b58068eb9c4ac0c0eb4de01a4a18f1390e4edc4418566a3542ad24",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "paid_cost": 0
+  }
+}

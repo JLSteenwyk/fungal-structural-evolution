@@ -9278,3 +9278,18 @@ against these hashes, with snapshot counts in
 production readback remains pending as downstream outputs arrive. This
 mapping enables subsequent combination with amino-acid marginals; it does
 not establish gap compatibility or complete ancestral sequence ensembles.
+
+### 2026-09-27: full whole-protein ancestral amino-acid probabilities launched
+
+Started all78 previously audited whole-protein LG/WAG/JTT model fits across
+13 families and two aligners. Reconstruct all20 amino-acid probabilities at
+three incident-partition-matched ancestral vertices per fit (234 fit/nodes).
+The fourth degree-two local root remains unidentifiable. Full sequences and
+all gene copies are retained; X and gaps are unknown likelihood evidence,
+with original alignments/hash provenance and audited empirical frequencies
+preserved. Checkpoint tree/likelihood consistency is checked for each node.
+
+OneCPU,8GiB RAM,noGPU; planning0.5–12h and3GiB output. This complements
+the completed domain marginals and running gap models. Independent full
+posterior replay, whole-protein optimization sensitivity, gap compatibility
+and final ancestral sequence ensembles remain pending.

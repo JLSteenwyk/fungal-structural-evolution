@@ -1,0 +1,33 @@
+{
+  "fits": "results/ancestral/whole-protein-model-fits-20260927-v1",
+  "audit_receipt": "results/ancestral/whole-protein-model-readback-20260927-v1/receipt.json",
+  "parameters": "results/ancestral/whole-protein-model-readback-20260927-v1/parameters.json",
+  "source_nodes": "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv",
+  "exchangeabilities": "data/software_audits/iqtree-3.0.1/modelprotein.cpp",
+  "output": "results/ancestral/whole-protein-ancestors-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All78 whole-protein LG/WAG/JTT fits across13 families and2 aligners; all20 amino-acid probabilities at three topology-matched candidate vertices, fourth degree-two root unidentifiable. Preserve all full proteins, gaps/X treated as unknown evidence and never deleted from original alignments; audited version-specific empirical frequencies retained. Conditional on fitted parameters, not indel histories or final ancestral sequences. Whole-protein optimization sensitivity, independent posterior replay and gap/AA compatibility remain pending.",
+  "pins": {
+    "results/ancestral/whole-protein-model-readback-20260927-v1/receipt.json": "1b89f6caa5093b9c80976d1d9f676a5d6f6b4a266b5b74797d3d1f05cb3c4ac1",
+    "results/ancestral/whole-protein-model-readback-20260927-v1/parameters.json": "6bb48ad3ef4673ef869cd43a797646a789e1d9676804af0b86330217d140fe0f",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "results/ancestral/whole-protein-model-fits-20260927-v1/receipt.json": "e3c7a124c609826bede0417ecfa917e45059d7535a65d56751f8b6ae23eb8b81",
+    "scripts/infer_whole_protein_ancestors.py": "1d5fb4f8dcd3918a9df05757b2998bdaaa35d81ef9ab39c98c4733f390a5a9cc",
+    "scripts/infer_refined_domain_ancestors.py": "1bf49a52fe81fe608f0600b79903ba34d35b946367527d8d472225b15965aa08",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/ancestral_whole_model_audit_completed_20260927.json": "d8bee0b1fcb109d90ded4eaf9f4a3d70cc27b45c1bce4e083f8059c105a57f2a"
+  }
+}
