@@ -1,0 +1,101 @@
+{
+  "status": "all_four_stable_indel_stages_terminal_success",
+  "stages": [
+    {
+      "receipt_path": "results/ancestral/stable-indel-refinements-20260927-v1/receipt.json",
+      "receipt_sha256": "6121f1cb52c369b34811900571433c12a479eeb57ac82bce26ee16ac6028e675",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "all_stable_refinements_produced_pending_audit",
+        "plan_sha256": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+        "scope": "All312 dispositions,306 nonempty models,918 prior solutions refined with direct event denominator. Powell then3-point L-BFGS-B at unchanged bounds; retain initial and both optimizer candidates with signed changes, statuses and feasible coordinate perturbations. Both ascertainment models and terminal policies retained. Independent final likelihood/posterior replay and uncertainty qualification remain necessary; boundary solutions not discarded or declared converged."
+      }
+    },
+    {
+      "receipt_path": "results/ancestral/stable-indel-refinement-audit-20260927-v1/receipt.json",
+      "receipt_sha256": "7c0471bbf94ba305cf60ef315a507ea0983bcb8fc288e6e9bc3302ec49d80f70",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "all_312_input_dispositions_and_2754_candidate_likelihoods_verified",
+        "starts_outside_tolerance": 0,
+        "high_precision_starts": 109,
+        "input_dispositions": 312,
+        "nonempty_models": 306,
+        "starts_checked": 2754,
+        "maximum_likelihood_error": 9.87462158263952e-07,
+        "best_optimizer_failures": 0,
+        "retained_initial_best_models": 57,
+        "best_bound_models": 177,
+        "models_with_start_spread_above_001": 12,
+        "producer_terminal_state": {
+          "MainPID": "0",
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "producer_receipt_sha256": "6121f1cb52c369b34811900571433c12a479eeb57ac82bce26ee16ac6028e675",
+        "audit_plan_sha256": "09abd894b4b50b18b8d608f6b0627bc13c14ecdb67c952c27c59508a5e527f80",
+        "scope": "Independent arithmetic verification at all fitted parameters. Bounds, optimizer flags and start sensitivity retained; not proof of convergence, model adequacy or final ancestral sequence validity."
+      }
+    },
+    {
+      "receipt_path": "results/ancestral/stable-indel-ancestors-20260927-v1/receipt.json",
+      "receipt_sha256": "14b64a0771db0023b3291af280a3c346d2ccb89ec2b7fcdfd0c94570800e5658",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "all_selected_fit_gap_posteriors_produced_pending_independent_validation",
+        "input_dispositions": 312,
+        "nonempty_models": 306,
+        "probabilities": 16116680,
+        "plan_sha256": "72a8d50bbd719dd003945bc324572c72cbadee907535b4e6f7360399a2f98ca7",
+        "audit_receipt_sha256": "7c0471bbf94ba305cf60ef315a507ea0983bcb8fc288e6e9bc3302ec49d80f70",
+        "auditor_terminal_state": {
+          "MainPID": "0",
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "scope": "All312 dispositions and306 selected model fits, every coded character and fitted-tree node. Both ascertainment and terminal policies preserved. All nine source likelihood candidates must independently pass before production. Conditional probabilities at selected fitted parameters, with optimization/bound diagnostics retained; not parameter-uncertainty ensembles, inferred numbers of events, residue-presence probabilities or final ancestor sequences. Internal-node incident-tip partition hashes support subsequent candidate-node mapping. Independent full posterior audit and overlapping-gap compatibility remain pending."
+      }
+    },
+    {
+      "receipt_path": "results/ancestral/stable-indel-posterior-audit-20260927-v1/receipt.json",
+      "receipt_sha256": "e8bbe2dd9b2d8577c3462f05e299b15617105733f7aebda1142e25adbd37dedf",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "all_selected_fit_gap_probabilities_independently_verified",
+        "input_dispositions": 312,
+        "nonempty_models": 306,
+        "probabilities": 16116680,
+        "maximum_probability_error": 4.773959005888173e-14,
+        "maximum_site_log_likelihood_error": 1.8474111129762605e-13,
+        "producer_terminal_state": {
+          "MainPID": "0",
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "source_receipt_sha256": "14b64a0771db0023b3291af280a3c346d2ccb89ec2b7fcdfd0c94570800e5658",
+        "plan_sha256": "73e844e725e3f39c82ff300563560ca23c753ecb3956298b5d5b9923d81c5b28",
+        "scope": "All312 input dispositions and all node/character probabilities of306 selected gap models; independent reversible log-space messages,1e-9 probability/1e-8 site likelihood tolerances. Selected parameters, serialized dimensions and source hashes verified. Numerical verification only, not global optimization, model adequacy, parameter-uncertainty propagation or compatible ancestral sequences."
+      }
+    }
+  ],
+  "scope": "Numerical production/audit closure only; compatibility violations and parameter/model uncertainty prevent final ancestral sequence qualification."
+}

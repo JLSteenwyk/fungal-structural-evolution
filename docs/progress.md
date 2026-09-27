@@ -9321,3 +9321,27 @@ These are sensitivity comparisons among dependent characters, not counts of
 independent events or likelihood-ratio tests between differently conditioned
 datasets. Completion, resulting differences and final ancestral sequence
 compatibility remain pending.
+
+### 2026-09-27: complete gap computation; sequence compatibility violations identified
+
+Stable refinements, candidate-likelihood audit, gap-probability production
+and independent posterior audit all terminated inactive/success/exit0;
+their receipt artifacts were read back and closure hashes recorded in
+`metadata/stable_indel_inference_execution_completed_20260927.json`.
+
+Constructed5,307 mutually exclusive exact-gap sets across all156 encodings,
+including overlapping and touching runs. All1,548,542 extant sequence/set
+checks pass. A single aligned sequence cannot contain two such exact maximal
+runs; touching runs would merge. Any joint distribution over exact gap runs
+therefore requires each set's marginal-probability sum to be<=1.
+
+The available independently verified posterior snapshot now covers all918
+nonempty candidate node/model combinations:614 violate at least one exclusion
+constraint (tolerance1e-9),maximum probability sum5.07933. These are model
+replicates and redundant constraint sets,not independent event counts.
+The finding distinguishes numerical correctness from compatibility: raw SIC
+marginals cannot directly supply a coherent joint sequence distribution.
+No marginal projection, independent gap sampling or final ancestral FASTA
+was performed. A justified joint/compatibility treatment and its uncertainty
+must precede sequence assembly. Reproducible scripts:
+`build_indel_compatibility_constraints.py`, `check_indel_posterior_compatibility.py`.
