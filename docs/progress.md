@@ -8431,3 +8431,13 @@ serialized readback passed. The modeled-reference inventories share 14,731 of
 guides; 2,356 retain one structural sign across both guides and all settings,
 spanning 1,106 families and 113 taxa. Equal per-guide totals therefore did not
 imply identical membership. See [cross-guide comparisons](whole-protein-cross-guide-sensitivity-20260927.md).
+
+### 2026-09-27: model reuse and sampling dependence in whole-protein candidates
+
+Mapped exact model/version reuse for all six screens and both eligible and
+direction-stable subsets. Union-find and graph traversal agreed on every
+component; full serialized readback passed. At n50/c70, the 2,356 direction-stable
+pairs use 7,005 models, 68 reused across pairs; the largest family contributes
+62 pairs and the largest taxon 251. Component and sampling tables preserve
+these dependencies for statistical modeling; they are not independent-sample
+counts. See [candidate dependence](whole-protein-candidate-dependence-20260927.md).
