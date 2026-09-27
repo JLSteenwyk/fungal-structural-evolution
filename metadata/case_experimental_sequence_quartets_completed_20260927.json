@@ -1,0 +1,16 @@
+{
+  "status": "complete_case_experimental_sequence_quartets",
+  "script_sha256": "4498599d6107ea9a6e7047ecf71be6421a1c1643748e5363e23b391074a7a66e",
+  "triads": 13,
+  "triads_with_shared_candidates": 8,
+  "quartet_maps": 923,
+  "common_residue_occurrences": 433680,
+  "artifacts": {
+    "quartet_residue_maps.jsonl.gz": "98a971639868c774b1c85a4c5b35d48658e5ccb2873833060210ad0c7faad72b",
+    "triad_dispositions.json": "f49c0a1ff0e545f884e2b1615f495a308c2784979864770bac62a9fb6f2cfc75",
+    "case_reference_links.tsv": "1d66a45f8849752833da480b5149d810af8c8ef3a94df5ebc89257a9678796ef"
+  },
+  "scope": "Common sequence correspondences anchored to one experimental entity for A/B/reference. Every common hit and context combination retained, plus explicit no-shared-hit triads. Sequence-only definition differs from structural alignment maps; coordinate availability, domain partitions, confidence masks, methodology exclusion, fit rank and biological interpretation remain downstream.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-sequence-quartets-20260927-v1/receipt.json",
+  "source_receipt_sha256": "121028bf62d5958ac4d57fc5fcd28666704ef8cd016e93a28fec02321310564f"
+}

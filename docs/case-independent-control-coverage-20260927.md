@@ -306,3 +306,30 @@ contexts are retained rather than counted as independent observations.
 
 Output: `results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1`.
 Closure: `metadata/case_experimental_residue_pairs_completed_20260927.json`.
+
+## Shared four-protein sequence correspondences completed
+
+`prepare_case_experimental_quartets.py` intersected the three fungal-to-
+experimental residue maps for each of the thirteen distinct A/B/reference
+model triplets. Eight triplets have at least one experimental entity shared by
+all three sequences. All 923 shared-hit/context combinations are retained,
+comprising 433,680 common residue occurrences; five triplets have explicit
+no-shared-candidate dispositions. Both species-guide links remain attached.
+
+Each row lists one-based positions in A, B, the fungal reference and the same
+experimental entity. Every intersection passed an independent ordered membership
+scan. All alignment-context combinations are retained without merging their
+residues. These maps define sequence-anchored correspondences, distinct from the
+structural-alignment maps used in earlier within-fungal comparisons. This
+alternative definition must remain explicit in downstream sensitivity analyses.
+
+No coverage or geometric acceptance follows from a shared sequence hit. Before
+fitting, all four coordinates must be present, the experimental entry must be
+classified experimental, the selected chain/model must have unambiguous CA
+observations, and fungal confidence masks and domain/outside partitions must be
+applied. Common-residue coverage uses original lengths, and degenerate fits must
+remain excluded from rotation interpretation.
+
+Outputs are in
+`results/experimental_structures/whole-domain-case-sequence-quartets-20260927-v1`;
+closure is `metadata/case_experimental_sequence_quartets_completed_20260927.json`.

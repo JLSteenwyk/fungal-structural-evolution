@@ -8616,3 +8616,12 @@ indexing passed for all 1,419,058 paired occurrences. These inputs support fair
 common-residue geometric comparisons; they are not observed-coverage or structural
 results. Experimental CA mapping remains active, as do the large model-fitting,
 background-alignment and codon multistart jobs checked this turn.
+
+### 2026-09-27: common sequence maps for fungal/experimental quartets completed
+
+Eight of thirteen A/B/reference triplets share experimental sequence candidates.
+Retained all 923 shared-hit/context maps and 433,680 common residue occurrences,
+with explicit zero-candidate dispositions for the other five. Every intersection
+passed a separate ordered membership check. These are sequence correspondences,
+not observed-coordinate coverage or geometric fits; all four coordinates and
+confidence/domain restrictions must be applied downstream.
