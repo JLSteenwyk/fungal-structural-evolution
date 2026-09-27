@@ -46,4 +46,20 @@ python scripts/compare_marker_alignment_topologies.py \
   --output results/phylogeny/marker-alignment-topology-comparison-20260927-v1
 ```
 
-The cross-method comparison is prepared, not yet executed or queued.
+The cross-method comparison and independent readback are now queued after the
+complete MAFFT input/support audit; neither cross-method result has completed.
+
+
+The independent readback script is
+`scripts/readback_marker_alignment_topologies.py`. It accepts the same source
+arguments plus `--comparison` and a new JSON `--output`. All 125 marker summaries
+and 59,315 split rows passed its full DendroPy-based identity-batch readback.
+Evidence: `metadata/marker_topology_identity_independent_readback_20260927.json`.
+The earlier 250-condition pruning check separately covers taxon removal.
+
+Automatic handoff uses `scripts/advance_marker_alignment_topology_comparison.py`
+and `metadata/marker_alignment_topology_handoff_plan_20260927.json`. The waiting
+service is confirmed live with one CPU, 8 GiB and no swap. It pins the scripts
+and completed sources, requires the entire MAFFT audit receipt, then compares
+and independently verifies all markers. Allowance after dependencies is 0.1–2
+hours and 1 GiB output. Comparison results still await those dependencies.

@@ -7466,3 +7466,15 @@ All 58 have nonunique rotations, even when the native RMSD passes tolerance.
 These checks do not establish scientific eligibility for the remaining 125,778
 mappings. Full geometry assessment and independent readback remain pending.
 Original strict failure remains; all eight aims open and GPU prediction paused.
+
+## September 27 full marker comparison and independent readback queued
+
+The preceding turn verified the reference numeric diagnostic and all short
+fits (progress). Added full independent DendroPy readback of comparison source
+identities, retained taxa, pruned splits and all per-marker summaries. The entire
+125-marker identity batch passed, covering 59,315 split rows. A pinned handoff
+now waits for the exact live MAFFT audit controller and complete full-batch
+receipt, then runs the cross-method comparison and independent verification.
+The one-CPU/8-GiB/no-swap waiting process is verified live. Cross-method results
+remain pending; no subset substituted. Reference geometry separately reached
+110,000/125,836 alignments. All eight aims remain open; GPU prediction paused.

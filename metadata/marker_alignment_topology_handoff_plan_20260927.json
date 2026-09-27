@@ -1,0 +1,92 @@
+{
+  "producer": {
+    "service": "fungal-mafft-marker-tree-audit-20260927.service",
+    "pid": 2712467,
+    "created": 1790512830.29,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_mafft_marker_tree_audit.py",
+      "--plan",
+      "metadata/mafft_marker_tree_audit_plan_20260927.json"
+    ],
+    "plan_sha256": "b9e154e946ee201f29c14366095d26b38c6d426912507527a9a9a1cba58ddc4b",
+    "status": "verified_live_waiting_for_complete_mafft_marker_batch"
+  },
+  "producer_plan": "metadata/mafft_marker_tree_audit_plan_20260927.json",
+  "handoff_receipt": "results/phylogeny/mafft-marker-audit-handoff-20260927-v1/receipt.json",
+  "comparison": "results/phylogeny/marker-alignment-topology-comparison-20260927-v1",
+  "readback": "results/phylogeny/marker-alignment-topology-readback-20260927-v1.json",
+  "controller_output": "results/phylogeny/marker-alignment-topology-handoff-20260927-v1",
+  "commands": [
+    [
+      "scripts/compare_marker_alignment_topologies.py",
+      "--first-trees",
+      "results/phylogeny/marker-gene-trees-v2",
+      "--first-support",
+      "results/phylogeny/marker-tree-support-complete-v1",
+      "--first-audit",
+      "results/phylogeny/marker-tree-support-complete-readback-v1",
+      "--first-coverage",
+      "profile",
+      "--second-trees",
+      "results/phylogeny/mafft-marker-gene-trees-20260927-v1",
+      "--second-support",
+      "results/phylogeny/mafft-marker-support-complete-20260927-v1",
+      "--second-audit",
+      "results/phylogeny/mafft-marker-support-readback-20260927-v1",
+      "--second-coverage",
+      "mafft",
+      "--coverage",
+      "results/phylogeny/marker-alignment-coverage-20260927-v1",
+      "--output",
+      "results/phylogeny/marker-alignment-topology-comparison-20260927-v1"
+    ],
+    [
+      "scripts/readback_marker_alignment_topologies.py",
+      "--first-trees",
+      "results/phylogeny/marker-gene-trees-v2",
+      "--first-support",
+      "results/phylogeny/marker-tree-support-complete-v1",
+      "--first-audit",
+      "results/phylogeny/marker-tree-support-complete-readback-v1",
+      "--first-coverage",
+      "profile",
+      "--second-trees",
+      "results/phylogeny/mafft-marker-gene-trees-20260927-v1",
+      "--second-support",
+      "results/phylogeny/mafft-marker-support-complete-20260927-v1",
+      "--second-audit",
+      "results/phylogeny/mafft-marker-support-readback-20260927-v1",
+      "--second-coverage",
+      "mafft",
+      "--coverage",
+      "results/phylogeny/marker-alignment-coverage-20260927-v1",
+      "--comparison",
+      "results/phylogeny/marker-alignment-topology-comparison-20260927-v1",
+      "--output",
+      "results/phylogeny/marker-alignment-topology-readback-20260927-v1.json"
+    ]
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Full 125-marker projected topology comparison and independent readback only after full MAFFT input/support audit; no GPU or new charges.",
+  "pins": {
+    "metadata/mafft_marker_tree_audit_launch_20260927.json": "2ae2518c86552e2b7570fa87802da6c244a37481b024543022d583d547827e83",
+    "metadata/mafft_marker_tree_audit_plan_20260927.json": "b9e154e946ee201f29c14366095d26b38c6d426912507527a9a9a1cba58ddc4b",
+    "scripts/compare_marker_alignment_topologies.py": "83cc710c354fbd4162b1986680ca2072635f2d306e330188ec19fc90aaa7c4f2",
+    "scripts/readback_marker_alignment_topologies.py": "c32b8c26c7fb39b0acec66100ebe1c84ab3c999e05d5134e8170ef86c96c67a1",
+    "scripts/advance_marker_alignment_topology_comparison.py": "8cb6831da656be65ee15b7938c1a170bc9fde88de4e6bcb9a37075bfe0ca62ba",
+    "metadata/marker_topology_identity_independent_readback_20260927.json": "a6d848688c2ac3011b25d8696e55f7f7c2c5718dfaafe639cac334d50e6e558c",
+    "results/phylogeny/marker-tree-support-complete-v1/receipt.json": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def",
+    "results/phylogeny/marker-tree-support-complete-readback-v1/receipt.json": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab",
+    "results/phylogeny/marker-alignment-coverage-20260927-v1/receipt.json": "0f360b6d6b0d4ca77c5b4214242ca0a159e030a9e34944d2b7332340f1bfde5b"
+  }
+}
