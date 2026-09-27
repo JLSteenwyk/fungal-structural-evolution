@@ -6102,3 +6102,20 @@ completed coupling results. See [methods](conditional-site-coupling.md).
 The preceding goal turn made progress through full frame validation and a queued
 join; this turn adds the gated downstream statistical and gene-copy sensitivity
 workflows. GPU prediction remains paused and all eight scientific aims remain open.
+
+## September 27 robust domain candidates annotated and fully checked
+
+Annotated all 947 cross-guide stable event/domain candidates with exact-version
+Pfam 38.2 metadata and quality/geometry ranges from all 56,864 alternatives across
+1,777 distinct interval triads. The independent checker reconstructed all joins,
+triad sets, extrema and 583 domain summary groups. All concordant, discordant,
+unresolved, fungal and outgroup candidates remain represented.
+
+Among 194 fungal discordant combinations, P450 is the most represented Pfam
+annotation (seven combinations, two families, six taxa); this is descriptive
+concentration, not enrichment or validated functional change. Detailed core
+length, identity, confidence and contrast summaries are in
+[the annotation report](duplication-domain-candidate-annotations-20260927.md).
+The previous goal turn made progress by queuing conditional coupling and copy
+sensitivity. This turn completes an independent candidate-review dataset for
+duplication and mechanistic follow-up. The full objective remains incomplete.

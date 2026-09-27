@@ -1,0 +1,27 @@
+{
+  "candidates": "results/structural_comparisons/duplication-domain-candidate-sampling-20260927-v1/annotated_comparisons.tsv",
+  "pfam": "data/pfam/38.2/Pfam-A.hmm.dat",
+  "links": "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/event_domain_links.tsv",
+  "fits": "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/common_residue_fits.tsv",
+  "output": "results/structural_comparisons/duplication-domain-candidate-annotations-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "Metadata join and extrema over previously audited fit tables; no new fits, GPU or charges."
+  },
+  "pins": {
+    "results/structural_comparisons/duplication-domain-candidate-sampling-20260927-v1/annotated_comparisons.tsv": "8aa16812dacc76379cea631f27ff03855f14d419083cd48c577c2863710fafa5",
+    "data/pfam/38.2/Pfam-A.hmm.dat": "ead9a40cdb871e1e6ceb151ea15c7aeaff083add2558031b4811afb9d7496b2d",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/event_domain_links.tsv": "4bd600c42de35b6ac8f408a9e08a119bd0a158ebbbd740455cda67e3c43d4fe2",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/common_residue_fits.tsv": "276044477863c58de6142b65783938beec5f28cd9fadd649fded8ff48f804396",
+    "scripts/annotate_robust_domain_candidates.py": "afe04c000d7fd218b8f3a61e65f0cabe11d2d480e63c76bfc2b7c9953b1bf063",
+    "metadata/pfam_release_receipt.json": "63d5ff5665e12b2604b44a6331714cedc1c35f3c2758c71b9d00cfd995bc73ac",
+    "metadata/duplication_domain_candidate_sampling_completed_20260927.json": "43d7ec78f362153ac18abd9090dff26ef4f73820c6ca82707bb08cae559b240a",
+    "metadata/duplication_domain_common_core_fits_completed_20260927.json": "7d8d36e96ab28841feb204f2bbcc705ac5f2b3eda591ced9f51cb82d3a7f8e7c"
+  }
+}
