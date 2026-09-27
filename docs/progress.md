@@ -6612,3 +6612,17 @@ remain pending. See
 The prior goal turn launched covariate characterization; this turn confirms its
 completion and completes full verification. All eight aims remain active and GPU
 prediction remains paused.
+
+## September 27 full metadata control selection launched
+
+Started nearest-control selection across the full 54-scenario grid for every
+target/policy record, using a fixed sequence-distance/length/confidence score
+and orientation-consistent calipers. All unmatched scenario IDs and reused
+controls are recorded explicitly. No structural response enters selection.
+Fixtures passed all scenarios, ties, exclusions, zero distances and boundary/
+orientation cases. Full production, independent readback and actual covariate
+balance remain pending. See [selection design](terminal-sister-backgrounds-20260927.md#metadata-control-selection-launched).
+
+The previous goal turn verified all candidate covariates; this turn advances
+actual control selection. All eight aims remain active, and GPU prediction
+remains paused.

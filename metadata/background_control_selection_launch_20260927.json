@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-control-selection-20260927.service",
+  "pid": 2084078,
+  "created": 1790502962.96,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/select_background_controls.py",
+    "--plan",
+    "metadata/background_control_selection_plan_20260927.json"
+  ],
+  "plan": "metadata/background_control_selection_plan_20260927.json",
+  "plan_sha256": "429789e39ba3e2f50cd251a13b6fdf5d809df392c33905b061e524d457e8a9eb",
+  "fixture_status": "passed_all54_scenarios_ties_shared_focal_qualification_empty_zero_joint_orientation_distance_boundary_cases"
+}

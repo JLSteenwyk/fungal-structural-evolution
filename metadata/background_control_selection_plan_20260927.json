@@ -1,0 +1,35 @@
+{
+  "covariates": "results/orthology/background-match-covariates-20260927-v1",
+  "graph": "results/orthology/background-match-graph-20260927-v1",
+  "readback": "metadata/background_match_covariate_completed_readback_20260927.json",
+  "output": "results/orthology/background-control-selection-20260927-v1",
+  "pins": {
+    "metadata/background_match_covariate_completed_readback_20260927.json": "68113f66d00a4099f2133a573c1172e7f07e43ee24c94555e5e588800183b17f",
+    "results/orthology/background-match-covariates-20260927-v1/receipt.json": "767b0bc057d7aa831f29759251161c31d930474c1bbf4ed44fd850909d4c7a35",
+    "results/orthology/background-match-covariates-20260927-v1/edge_covariates.tsv": "0f67a09e64105ba6a9c6ab2aa52a712c6d38a8a21350d6957310faae86966d0a",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "scripts/select_background_controls.py": "f65fb2622674e575dab0b9639cdb6951413c5b6ee6e9124027a70162e97ea9b4",
+    "scripts/check_background_control_selection.py": "ea6de59fac7a047d2d218ed014f20e8ecb6745cd21e5327ab62bacc4dd150ce9",
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d",
+    "results/orthology/background-match-graph-20260927-v1/edges.tsv": "8a73995e18e23b59d38916c5f022e6a15a4d153023b847da096e92668249d2c9",
+    "results/orthology/background-match-graph-20260927-v1/target_policy_dispositions.tsv": "2fec0c91e78f77aa44700a5827214d97172ea1754c58cd08281c13c68bf109e2"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.25,
+      8
+    ],
+    "source_edges": 1661948,
+    "target_policy_records": 873892,
+    "scenarios_per_target_policy": 54,
+    "total_target_policy_scenario_decisions": 47190168,
+    "basis": "All three native-background qualification sets, sequence distance ranges, metadata tolerance bands and any/focal options. Streaming target/policy groups with sparse selected rows, explicit matched/unmatched scenario lists for every target/policy, and per-scenario reuse counts. Fixed squared metadata score, no structural response, with replacement; no GPU or charges. Runtime range uncalibrated."
+  }
+}

@@ -829,3 +829,42 @@ For profile/alignment-E-value, 55,785 of 207,950 candidate edges meet the tight
 band, 127,538 the moderate band and 173,094 the wide band. No edge in this subset
 shares a gene, model or sequence with its target. These are dependent edge
 counts, not unique supported targets, selected matches or effective sample sizes.
+
+## Metadata control selection launched
+
+Started deterministic nearest-control selection over the full verified graph.
+The sensitivity grid has 54 scenarios: three native-background qualification
+sets × three sequence-distance ranges × three metadata tolerance bands × any-
+or focal-taxon backgrounds. Both guides and all four annotation policies remain
+separate. Every one of 873,892 target/policy records retains explicit matched
+and unmatched scenario lists: 47,190,168 scenario decisions. Selected records
+are sparse; the complete target universe and all denominators remain intact.
+
+Within an eligible scenario, the fixed ranking score sums squares of:
+
+- log(background/target sequence distance) divided by log(1.5);
+- log(maximum endpoint length ratio) divided by log(1.25);
+- maximum endpoint mean-pLDDT difference divided by 10;
+- maximum endpoint low-confidence-fraction difference divided by 0.1.
+
+A single endpoint correspondence must pass all calipers; among eligible
+correspondences the lowest score is used. Zero target sequence distance admits
+only zero background distance, contributing zero to that score component.
+Exact ties use background node hash and then endpoint order. These scales are
+fixed design choices, not learned effect-size weights or reliability guarantees.
+No structural response is used to construct or rank controls.
+
+Selection is one control per target/scenario with replacement. Shared target/
+background genes, model identities or sequence hashes are excluded explicitly.
+Identical-model pairs within a target or within a background remain marked in
+the source node records. Reuse counts are exported separately for each guide,
+policy and scenario. Matching does not make repeated controls, related taxa,
+gene families or alternative guides independent. Outcome eligibility and
+confidence adjustment can change the estimand and require explicit accounting.
+
+Known tests passed all scenarios, ties, shared/focal/qualification exclusions,
+empty pools, exact zero, distance boundaries and the joint-orientation
+counterexample. Resources: one CPU, 16 GiB RAM, no swap, 8 GiB output allowance,
+uncalibrated 0.25–8-hour planning range. Production, full independent selection
+readback, measured covariate balance and phylogenetically informed effect tests
+remain pending. No GPU or paid resources were enabled.
