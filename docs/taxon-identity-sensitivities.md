@@ -142,3 +142,26 @@ hashes. All six matrix hashes, membership and assembly evidence are in
 closure is `metadata/neocallimastix_identity_inputs_completed_20260927.json`.
 No new sensitivity tree has been inferred yet. Final species counting still
 requires broader taxonomic review and genome-wide assessment of this complex.
+
+### Neocallimastix guide searches launched
+
+All six prepared matrices are now submitted to
+`run_neocallimastix_sensitivity_trees.py`. Two searches run concurrently with
+eight threads and 32 GiB maximum memory each, LG+F+G4 and seed 20260913, matching
+the prior homogeneous guide model/seed. The service has a 16-CPU quota, 72 GiB
+aggregate memory cap and no swap. Planning allowance is 36–336 hours and 5 GiB
+output. The host had 192 logical CPUs, load near 63 and about 525 GiB available
+memory at launch. These estimates are not a completion guarantee.
+
+The first startup failed before creating tree outputs because its explicit PATH
+omitted IQ-TREE's installed directory. That failed unit is retained; a new unit
+with the correct executable directory now has two verified running IQ-TREE
+children. No inference was restarted or existing output overwritten.
+
+Launch identity and resource estimates are recorded in
+`metadata/neocallimastix_guide_launch_20260927.json`. Results will be under
+`results/phylogeny/neocallimastix-identity-guides-20260927-v1`. Checkpoint reuse
+requires identical configuration and input hashes; successful outputs must have
+exact expected tips and finite, nonnegative branch lengths. Full tree readback
+and topology comparisons remain downstream. No bootstrap support or species
+boundary conclusion is claimed by this stage.

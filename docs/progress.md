@@ -8688,3 +8688,12 @@ checked all six alignment subsets retaining each representative in turn, with
 all 25 outgroups. This is taxonomic sensitivity, not a formal synonymy decision
 or a validated species count. Original data/analyses remain unchanged.
 See [evidence and membership](taxon-identity-sensitivities.md).
+
+### 2026-09-27: all six Neocallimastix guide sensitivities launched
+
+Started two concurrent eight-thread IQ-TREE searches, with all six matrices
+queued under the prior LG+F+G4 model and seed. Exact parent/child processes and
+input commands verified. A startup-only PATH error was corrected in a new unit,
+with the failed unit preserved and no tree output overwritten. Planning envelope
+36–336 hours, 16 CPUs and 72 GiB aggregate RAM; no GPU use. Tree validation and
+comparisons remain pending.

@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-neocallimastix-guides-20260927-v2.service",
+  "pid": 440407,
+  "created": 1790542102.67,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_neocallimastix_sensitivity_trees.py",
+    "--inputs",
+    "results/phylogeny/neocallimastix-identity-inputs-20260927-v1",
+    "--output",
+    "results/phylogeny/neocallimastix-identity-guides-20260927-v1"
+  ],
+  "script_sha256": "2eca4fe85c4bcdc32e048968b4028d7b338f5bb5b2c1ce492dfb0bfc84424a96",
+  "resources": {
+    "cpu": 16,
+    "workers": 2,
+    "threads_per_tree": 8,
+    "memory_per_tree_gib": 32,
+    "cgroup_memory_gib": 72,
+    "swap_gib": 0,
+    "output_gib": 5,
+    "planning_hours": [
+      36,
+      336
+    ]
+  },
+  "startup_correction": "First unit terminated before creating tree outputs because its explicit PATH omitted the installed IQ-TREE directory. Failed unit preserved; v2 unit includes that directory. No inference was restarted.",
+  "scope": "All six single-representative sensitivity guides; same LG+F+G4 model and seed20260913 as prior guides. No support or species-delimitation claim."
+}
