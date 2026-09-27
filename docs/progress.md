@@ -5156,3 +5156,14 @@ and exact model/pair partition checks passed. The workload adds 14,540 models
 (5.4 GiB coordinates) and 32,541 model pairs; 321 distinct pairs can reuse the
 existing frozen comparison queue. Additional validation and alignments are
 not yet running. See [reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: supplementary reference-coordinate validation running
+
+All 14,540 additional reference-comparison models are now undergoing the same
+raw-coordinate checks as the primary queue in a separate two-CPU/8-GiB job.
+Exact inventory partition and audit bindings were checked before launch;
+actual-coordinate handoff, corruption rejection and checkpoint reuse fixtures
+passed. Independent source-CIF readback is queued behind the exact producer.
+Main duplication jobs continue unchanged. Reference alignments and biological
+tests remain pending. See [reference workflow](duplication-sister-references-20260926.md).

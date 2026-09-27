@@ -162,5 +162,55 @@ python scripts/prepare_duplication_reference_comparisons.py \
 Run the readback with `scripts/readback_duplication_reference_comparisons.py`,
 passing `--inventory` as the new comparison inventory, `--references` as the
 sister-reference inventory, `--base-queue` as the unchanged duplicate-pair
-queue, and `--output` as a fresh JSON proof path. Additional coordinate
-validation and reference alignments have not yet been launched.
+queue, and `--output` as a fresh JSON proof path.
+
+
+## Additional coordinate validation launched
+
+The supplementary driver `scripts/validate_duplication_reference_coordinates.py`
+now validates all 14,540 additional models in 15 checkpointed shards. It
+requires the successful inventory ledger readback and verifies the exact
+model-record set difference against the original queue, including unchanged
+provenance for reused models. It calls the same raw-coordinate validation
+function as the primary run without modifying primary scripts or plans.
+
+The resource plan allocates two CPU workers, 8 GiB RAM, no swap, a 4 GiB
+estimated output allowance and a 100 GiB free-disk reserve. Maximum sequence
+length is 2,271 residues. The uncalibrated planning interval is 0.1–8 hours;
+this is not a measured completion estimate. GPUs and paid services are not
+used. Validation is running, not yet complete.
+
+Reproduce with:
+
+```bash
+python scripts/validate_duplication_reference_coordinates.py \
+  --plan metadata/duplication_reference_coordinate_validation_plan_20260926.json
+```
+
+The corresponding launch record saves the service, PID, process creation time,
+command and plan hash. Output is
+`results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/`.
+
+The existing independent raw-CIF readback script is queued behind this exact
+producer identity using
+`metadata/duplication_reference_coordinate_readback_plan_20260926.json`.
+It requires the matching successful producer receipt and checks every accepted
+exported C-alpha sequence, coordinate and confidence value from source CIFs.
+The readback has its own two-CPU/8-GiB limit and writes to
+`results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/`.
+Rejected-model identities/reasons are checked but rejection causes are not
+independently adjudicated. Both stages must finish before alignment inputs
+can be approved.
+
+The supplementary fixture passed an actual-coordinate producer/readback
+handoff, checkpoint reuse, rejection of an incorrectly partitioned model
+despite updated artifact hashes, and rejection of an audit bound to another
+receipt. Reproduce with:
+
+```bash
+python scripts/check_duplication_reference_coordinates.py \
+  --models results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/additional_models.jsonl
+```
+
+Reference alignments, independent sister-choice/path validation and biological
+asymmetry tests remain pending.

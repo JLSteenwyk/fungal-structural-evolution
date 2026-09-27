@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-reference-coordinate-validation-20260926.service",
+  "pid": 138879,
+  "created": 1790471345.19,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/validate_duplication_reference_coordinates.py",
+    "--plan",
+    "metadata/duplication_reference_coordinate_validation_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_reference_coordinate_validation_plan_20260926.json",
+  "plan_sha256": "34171f71fd3e472b2d7f5738894044d4ead4b7ef7d923878f2a92852eea55904",
+  "fixture": "Exact partition rejection even with updated hashes; audit binding rejection; actual CIF producer/readback handoff and checkpoint reuse passed."
+}
