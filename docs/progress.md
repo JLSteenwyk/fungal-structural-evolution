@@ -6119,3 +6119,19 @@ length, identity, confidence and contrast summaries are in
 The previous goal turn made progress by queuing conditional coupling and copy
 sensitivity. This turn completes an independent candidate-review dataset for
 duplication and mechanistic follow-up. The full objective remains incomplete.
+
+## September 27 candidate sequence context checked against exported PDBs
+
+Completed context distinctions for every one of the 947 robust candidates and
+1,777 interval triads. Independent sequence decoding and hash/position checks
+passed for all 3,426 selected full-mask PDBs. Fifty-four candidates have identical
+letters across all aligned cores; 48 have identical complete intervals; 40 satisfy
+both conditions. None has identical full-chain sequence hashes.
+
+Eight identical-interval cases contain nonidentical residue pairs in some
+reference-based common cores. These remain explicit correspondence-sensitive
+candidates requiring sequence-position controls, not established biological
+sequence/structure decoupling. See [methods and counts](duplication-candidate-sequence-context-20260927.md).
+The previous turn completed domain/quality annotations; this turn adds direct
+sequence evidence that changes the next case-review step. The full project
+remains active and GPU prediction remains paused.

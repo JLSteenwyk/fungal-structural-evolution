@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_candidate_sequence_context_readback",
+  "candidates": 947,
+  "triads": 1777,
+  "full_mask_pdbs_checked": 3426,
+  "all_aligned_cores_identical": 54,
+  "all_complete_intervals_identical": 48,
+  "full_chain_hashes_identical": 0,
+  "identical_intervals_but_not_all_aligned_cores_identical": 8,
+  "plan_sha256": "f6cc76721ad7cebc66d42cc94df0f72802b58ab691f6aa5851d3376b2a6adb00",
+  "producer_receipt_sha256": "27c0818c5f60caab396aeafdb4624a3cfbee9a474a6f2d1afd450bcf56bfcf41",
+  "checker_sha256": "c4fe2e5c9cee47995aaaa60d7cebfb973c3fdfefd9bde8fdd054d7ac90dd85e3",
+  "scope": "Every candidate field and triad membership checked. All selected full-mask PDB sequence letters, residue positions and hashes read independently; interval equality and classification strata reconstructed. Full-chain equality uses previously validated source sequence hashes, not new full-chain coordinate parsing."
+}
