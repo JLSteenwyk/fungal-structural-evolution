@@ -1,0 +1,42 @@
+{
+  "status": "complete_verified_primary_diagnostic_geometry",
+  "alignments": 387646,
+  "numerically_unique_rotations": 387319,
+  "degenerate_short_alignments": 327,
+  "rmsd_classification_counts": {
+    "within_printed_rounding": 387619,
+    "outside_printed_rounding": 27
+  },
+  "counts": {
+    "full:unique_at_numeric_tolerance": 206400,
+    "plddt70:unique_at_numeric_tolerance": 180919,
+    "plddt70:degenerate_at_numeric_tolerance": 327
+  },
+  "terminal_states": {
+    "fungal-primary-diagnostic-geometry-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-diagnostic-geometry-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/primary_diagnostic_geometry_plan_20260927.json": "02dcf102322745d9c32a89f4f709e455bf67e458ba87483d6e85b7a9779555f3",
+    "metadata/primary_diagnostic_geometry_readback_plan_20260927.json": "6ba1af6fd1d362cde56f299e289358fcb21d1dcf6af06b93fdf7223cdb0bac28",
+    "metadata/primary_diagnostic_geometry_launch_20260927.json": "37a805e923089c2230b2d701177a976b4553b22a925c51cf5502409de8afbc68",
+    "metadata/primary_diagnostic_geometry_readback_launch_20260927.json": "1b6209cae3635fff664474dac7031a040745bb1e3870940a38e202ade15e22f4",
+    "metadata/primary_alignment_short_geometry_readback_20260927.json": "960d181de1f0cc7b54c957fd5f8527c808bb0d830394e66bdd00fc6827aad55e",
+    "metadata/primary_rmsd_diagnostic_and_short_completed_20260927.json": "7760bfc5ab86a9a38c2b771f5c983d65120f68e3ae4a461e439433cb94bd3d00",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/receipt.json": "81ad9b63a3288ba74d26e1c75da83e6e46547b7105e1c7a6e8eb982af367ee98",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/alignment_geometry.tsv": "65c72fee0e84b9c5889ee948b140bc666dae071ba57de5191ba329064c85d9fb",
+    "metadata/primary_diagnostic_geometry_readback_20260927.json": "5e101dab890b72c779ccd7c0f4c72d484149ad5d4048f44b64491f945e0a3740"
+  },
+  "maximum_scaled_quaternion_curvature_error": 2.357004709793344e-15,
+  "near_zero_quaternion_gaps": 327,
+  "script_sha256": "dc477e93749d07bcea7c6ad924e80690a8705f82d500e429235e5198bc2185a2",
+  "scope": "Full geometry production and serialized independent readback passed. All 327 degenerate mappings exactly match the separately checked short-alignment census; all 27 RMSD discrepancies remain retained. Unique rotation under numerical tolerance is not prediction accuracy, confidence/coverage qualification or biological inference. Original strict audit failure remains unchanged."
+}

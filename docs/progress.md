@@ -8216,3 +8216,22 @@ primary-audit dependency with the completed diagnostic and active full geometry
 readback. README and nonlinear workflow status now include the running full ML
 grid. All eight scientific aims remain open; production numerical checks and
 likelihood comparisons are not substitutes for inferential calibration.
+
+### September 27: all primary diagnostic geometry independently verified
+
+Both geometry services terminated successfully. Full serialized readback passed
+387,646 alignments: 206,400 full-mask and 180,919 confidence-masked directions
+have unique proper rotations under the numerical tolerance; 327 masked mappings
+are degenerate. Exact pair/mask/order joins show those 327 are precisely the
+previously verified short alignments, with all 27 RMSD discrepancies retained.
+Maximum scaled independent quaternion-curvature discrepancy was 2.36e-15; all
+327 near-zero gaps are explicit. This is numerical geometry qualification, not
+prediction accuracy or biological eligibility.
+
+Closure script: `record_primary_diagnostic_geometry_completion.py`; source-bound
+record: `metadata/primary_diagnostic_geometry_completed_20260927.json`; full
+readback: `metadata/primary_diagnostic_geometry_readback_20260927.json`.
+The queued usable-order producer then completed all 206,400 pair/mask rows.
+Its full independent readback is active; raw producer totals are not yet treated
+as independently accepted order-summary results. Original strict failure and
+all short/discrepant exclusions remain unchanged.

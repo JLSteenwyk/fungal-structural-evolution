@@ -31,8 +31,10 @@ Chronological receipts and process records remain in [progress](progress.md).
   audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
   to two-residue mappings. All 327 short mappings passed separate analytic checks
   and remain excluded from unique-rotation interpretation. Geometry production
-  finished 387,646 successful alignments; its full independent readback is active.
-  Usable-order and residue-correspondence summaries wait on that readback. The
+  and full independent readback passed all 387,646 successful alignments. The
+  327 degenerate mappings exactly match the short-alignment census. Usable-order
+  production is complete with readback active; residue-correspondence sensitivity
+  waits on that check. The
   failed strict audit remains preserved. Reference geometry/order sensitivity is
   verified; background alignments and whole-protein triad comparisons remain open.
 - Domain comparisons, common-core numerical verification, alternative-setting
