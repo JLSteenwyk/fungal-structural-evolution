@@ -1,0 +1,17 @@
+{
+  "status": "complete_case_experimental_dependence_census",
+  "script_sha256": "cae7710ae56ba68457f57f46e1ad141824a5c6e4d9972a481abc6a96c02fd8a7",
+  "experimental_entities": 1204,
+  "exact_sequences": 314,
+  "components": 196,
+  "largest_component": 541,
+  "case_screen_region_rows": 156,
+  "artifacts": {
+    "entity_components.tsv": "f421066fc7ab185a1ac3fe9dac644db0099c32cf802c9d5d9607302c5e6c5647",
+    "dependency_edges.tsv": "47f264189e78ce50ba818f1c92fe29dbc562809f6ddb4909f9a99785cf164924",
+    "case_summary.tsv": "f653bcf483192208decb483ec71ca03a2af753ed84e5ed57473471b10be33b10"
+  },
+  "scope": "Conservative linkage census on all experimentally classified candidate entities, before coverage selection. Edges represent exact canonical sequence, shared entry, DOI or PubMed identifier; unknown citations never joined. Full union-find components independently matched graph traversal. Components can connect different proteins through a paper or entry and are not proven independent experiments, phylogenetic units or effective sample sizes. No structures discarded; no-hits remain in case summaries.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-experimental-dependence-20260927-v1/receipt.json",
+  "source_receipt_sha256": "3871a8148cab32c4e7a9c9bf13e86d04d6cdfd13d5f53676ef845502b559d8ea"
+}

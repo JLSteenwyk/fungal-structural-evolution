@@ -387,3 +387,34 @@ residues or experiments. The readback has started processing the original files;
 coverage and geometry services remain gated on its successful completion.
 Production closure is
 `metadata/case_experimental_ca_mapping_production_completed_20260927.json`.
+
+## Experimental candidate repetition and publication links
+
+`measure_case_experimental_dependence.py` checked all 1,204 experimentally
+classified entities (the remaining entity is integrative). They contain 314
+exact canonical sequences. A graph linking identical sequences, shared entries,
+DOIs or PubMed identifiers has 196 components; the largest contains 541 entities.
+All graph components matched an independently traversed adjacency graph. Missing
+citation identifiers are not joined. Every candidate remains retained.
+
+For n50/c70 alignment coverage of both regions:
+
+| Case | Entities | Exact sequences | Linked components |
+| --- | ---: | ---: | ---: |
+| Heliocybe | 19 | 9 | 6 |
+| Cryoendolithus | 97 | 5 | 4 |
+| Furculomyces | 6 | 5 | 3 |
+| Jaapia | 101 | 46 | 38 |
+| Phycomyces | 26 | 10 | 6 |
+
+All other cases retain zero counts at this setting. Components are formed on the
+full candidate inventory before coverage selection, so links through other
+entries remain represented. A publication or entry can connect different proteins;
+these components are conservative dependence annotations, not proven independent
+experiments, phylogenetic units or effective sample sizes. Neither 1,204 entities
+nor 196 components should be treated automatically as independent replicates.
+Geometry-based selection was not used.
+
+Entity assignments, explicit linkage edges and all 156 case/screen/region rows
+are in `results/experimental_structures/whole-domain-case-experimental-dependence-20260927-v1`.
+The completion record is `metadata/case_experimental_dependence_completed_20260927.json`.

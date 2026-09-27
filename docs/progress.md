@@ -8644,3 +8644,12 @@ positions and 244,982 positions without CA observations; other ambiguity classes
 remain explicit. Full raw-coordinate readback is now active. Coverage and
 geometry remain gated; these totals are not yet independently validated against
 all original atoms.
+
+### 2026-09-27: experimental candidate repetition quantified
+
+The 1,204 experimentally classified entities comprise 314 exact sequences.
+Sequence/entry/publication links form 196 conservative components, independently
+checked by graph traversal. All 156 case/screen/region summaries retain zero
+counts and all structures. Cryoendolithus has 97 entities but only five exact
+sequences at the n50/c70 both-region alignment screen. These are dependence
+annotations, not independent experiment counts or effective sample sizes.
