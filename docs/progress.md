@@ -5187,3 +5187,13 @@ separate driver verifies the exact additional-model partition and source
 identities; completed-handoff and altered-proof fixtures passed. Primary
 jobs remain unchanged. Actual reference-pair alignments and biological
 asymmetry tests are still pending. See [reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: complete sister-reference reconstruction passed
+
+All 218,473 rows passed independent reconstruction under both guides, including
+reference choices, every tie, parent/sister counts and eligibility statuses.
+Maximum sequence-distance difference was 3.55e-15. Successful service exit,
+all source pins and output hashes were verified; receipt archived in
+`metadata/duplication_sister_reference_readback_completed_20260926.json`.
+Biological orthology/rooting and structural asymmetry remain unestablished.

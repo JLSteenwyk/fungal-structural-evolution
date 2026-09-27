@@ -215,7 +215,7 @@ python scripts/check_duplication_reference_coordinates.py \
 Reference alignments, independent sister-choice/path validation and biological
 asymmetry tests remain pending.
 
-## Independent reference-choice and path readback launched
+## Independent reference-choice and path readback completed
 
 `scripts/readback_duplication_sister_references.py` reconstructs every output
 field for all 218,473 candidates using leaf-interval subtraction for sister
@@ -234,7 +234,7 @@ absolute/relative rounding differences between downward summation and upward
 `math.fsum`; maximum observed differences are reported. This validates the
 selection algorithm on fixed trees, not orthology, rooting or event timing.
 
-The full run is active under
+The full run completed successfully under
 `metadata/duplication_sister_reference_readback_plan_20260926.json`, with its
 process identity in the corresponding launch record. All inherited source
 pins were checked equal to the original inventory plan. Resources are one
@@ -247,7 +247,12 @@ python scripts/readback_duplication_sister_references.py \
 ```
 
 Output is `results/orthology/duplication-sister-reference-readback-20260926-v1/`.
-A successful final receipt is required; launch alone is not a passed audit.
+The final receipt reports `passed_full_duplication_sister_reference_readback`.
+All 109,245 profile and 109,228 MAFFT rows passed, with exact reference
+choices, ties, counts and eligibility statuses. Maximum sequence-distance
+difference was 3.552713678800501e-15 in each guide. All source pins and output
+artifact hashes were rechecked after successful service exit. The receipt is
+archived in `metadata/duplication_sister_reference_readback_completed_20260926.json`.
 Known-tree tests passed all six statuses, ties, four known distances,
 isolation from a very long ancestral edge, six deliberately corrupted export
 fields and malformed-tree rejection. Reproduce these with

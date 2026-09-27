@@ -1,0 +1,42 @@
+{
+  "status": "passed_full_sister_reference_reconstruction_archived",
+  "receipt_path": "results/orthology/duplication-sister-reference-readback-20260926-v1/receipt.json",
+  "receipt_sha256": "31ec8ce00b6f986574030c1266249874af0ea06e465712e23921f862fccee760",
+  "receipt": {
+    "status": "passed_full_duplication_sister_reference_readback",
+    "plan_sha256": "a60ed4b6961c40c6aee881d36d6e4eaf11a1e6b1c32e4b22091acb2a95ae2b6b",
+    "producer_receipt_sha256": "7d6250412686cddd62a71111f92b624183d42dd84addbada095ef4c30b2d7e43",
+    "guides": [
+      {
+        "guide": "profile",
+        "candidates": 109245,
+        "families": 20492,
+        "counts": {
+          "no_modeled_nonfocal_sister": 36817,
+          "parent_reported_duplication": 54891,
+          "provisional_reference_available": 17461,
+          "parent_not_bifurcating": 76
+        },
+        "maximum_sequence_distance_difference": 3.552713678800501e-15
+      },
+      {
+        "guide": "mafft",
+        "candidates": 109228,
+        "families": 20474,
+        "counts": {
+          "no_modeled_nonfocal_sister": 36820,
+          "parent_reported_duplication": 54884,
+          "provisional_reference_available": 17448,
+          "parent_not_bifurcating": 76
+        },
+        "maximum_sequence_distance_difference": 3.552713678800501e-15
+      }
+    ],
+    "artifacts": {
+      "mafft.json": "4113bbba21cd94d9c6e2528819b3a8d103fa46f857c99e55b8e59f15bc3f7e5a",
+      "profile.json": "98afe3ae9f0ba9f15fac8c956af7e59498370d9b7fc013ed69249f46fd6925db"
+    },
+    "scope": "Every candidate and all exported sister/reference fields checked. Leaf-interval subtraction and upward edge sums independently reconstruct sister membership, nearest ties, representative/model and sequence distances. Shares Bio.Phylo Newick parser, not producer selection functions. Fixed gene trees and native duplication calls are inputs, not biological truth. No independent orthology, rooting, event timing or structural inference."
+  },
+  "verification": "Successful service exit; all plan source pins and output artifact hashes checked again; both complete guide totals confirmed."
+}
