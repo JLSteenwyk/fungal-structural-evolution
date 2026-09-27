@@ -5,7 +5,7 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 26 September 2026
+## Current checkpoint — 27 September 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -29,7 +29,13 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Candidate domains | All 1,078,592 intervals extracted and atom-audited; database sequence/coordinate readback and 70,537-cluster partition verified; all 594,797 boundary pairs compared; complete family/taxon source joins audited | Confidence and clustering-parameter sensitivity, phylogenetic integration and evolutionary tests |
 | Functional correspondences | Every field of 17,105 rows checked; 5,576 observed rows across 283 taxa and 21 markers | Branch/site tests, matched backgrounds and biological interpretation; rows are not independent events |
 | Accessibility and site coupling | All 25,322 models merged; paired projection verified for 6,758,598 observations. Conditional coupling completed for 122 markers/44,198 sites, including marker resampling and copy-omission sensitivity | Phylogenetic, prediction, alignment and model uncertainty; accessibility does not establish binding interfaces |
-| Duplication comparisons | Terminal event coverage, provisional references, sequence covariates and architecture controls verified; 212,549 primary models passed initial coordinate validation and 14,540 additional models passed independent coordinate checks | Primary independent coordinate verification, protein/domain alignments and their audits, matched controls and evolutionary tests |
+| Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | Whole-protein comparisons and audits continue; phylogenetically adjusted effects, uncertainty and biological interpretation remain |
+
+The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
+shows that weighting can reverse the descriptive difference in some settings.
+[Taxon and reuse inputs](docs/selected-taxon-inputs-20260927.md) preserve the
+dependence information needed for the next modeling stage; adjusted effects
+have not yet been fitted.
 
 Coverage sources and exact limitations:
 [completed prediction inventory](docs/completed-prediction-inventory-20260922.md),

@@ -7566,3 +7566,21 @@ Preserved the strict failed audit and launched a separate full discrepancy
 inventory with unchanged tolerance and scientific eligibility false. Its
 one-CPU/16-GiB/no-swap process is confirmed live; full enumeration remains
 pending. All eight aims remain open and GPU prediction remains paused.
+
+## September 27 selected taxon and reuse inputs verified
+
+The preceding status turn confirmed live comparison workers and advancing
+checkpoints (verified wait). Built the full selected-node taxon inventory for
+all 2,786,912 selected records, preserving 65,287 unique nodes, endpoint taxa,
+526-tip species-kernel indices, original families and shared-identity family
+components. An independent dataframe reconstruction checked every one of
+718,157 exported cells and all record-level family/guide joins. There are
+265,580 selected records with the focal species in their background pair;
+repeated settings do not constitute independent events. Original selection
+records and all source files remain checksum-bound.
+
+See [taxon input methods](selected-taxon-inputs-20260927.md) and
+`metadata/selected_taxon_inputs_readback_20260927.json`. This prepares dependence
+inputs without fitting a covariance or effect. Whole-protein comparison workers
+continue; adjusted inference, ancestral work and other goal requirements remain
+incomplete. All eight aims remain open. GPU prediction remains paused.

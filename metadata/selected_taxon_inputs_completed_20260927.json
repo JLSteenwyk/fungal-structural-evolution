@@ -1,0 +1,42 @@
+{
+  "status": "complete_selected_taxon_inputs_with_full_source_readback",
+  "selected_records": 2786912,
+  "selected_nodes": 65287,
+  "selected_records_with_focal_taxon_in_background": 265580,
+  "unique_nodes_by_role": {
+    "target": 38500,
+    "background": 26787
+  },
+  "pins": {
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d",
+    "results/orthology/background-match-graph-20260927-v1/edges.tsv": "8a73995e18e23b59d38916c5f022e6a15a4d153023b847da096e92668249d2c9",
+    "results/orthology/background-match-graph-20260927-v1/target_policy_dispositions.tsv": "2fec0c91e78f77aa44700a5827214d97172ea1754c58cd08281c13c68bf109e2",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/background-control-selection-20260927-v1/target_policy_selection_status.tsv": "c6b851af81727c013cd43a9c07ea7649732ceea662908304cecdb725bf8df2b1",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-control-selection-20260927-v1/background_reuse.tsv": "8dbb5f8dd10dab387adb246487fb4392f5704736d10c9916bb636efb1d8e1cff",
+    "results/orthology/selected-control-family-dependencies-20260927-v1/receipt.json": "85064df35557fdd6f41ca64124b1bc754dd76e53e4a3f30ed68d5f4d9c0c1c45",
+    "results/orthology/selected-control-family-dependencies-20260927-v1/family_components.tsv": "0319476bde76566caa24cd0de37d8136657f0633a72efc611b053e330ed8c8c0",
+    "results/orthology/selected-control-family-dependencies-20260927-v1/cross_family_entities.tsv": "e241075890df9d7528c2e1ddeae8e22172e2dc46426b0b9fd4a3287e97708d5c",
+    "results/orthology/selected-control-family-dependencies-20260927-v1/selected_endpoint_entities.tsv.gz": "b09a44664d0acaae6664cea2ca72498651522f4c05efb7de5d0a468178de21d4",
+    "results/phylogeny/species-distance-kernels-20260927-v1/receipt.json": "a4a0828e49c642b5096908a716d1e1f6d6ad70705b7c0e1c3d27049e260f14a2",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_profile.npz": "68aa4f9691c8838ed3160a5d0f4310eb49f3ddddb5796f8b31c055868df1da6c",
+    "results/phylogeny/species-distance-kernels-20260927-v1/taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_mafft.npz": "4797faed6d053bd9b1cdf36320dfa5a3caceae0e95e7154eabd534353919c47b",
+    "results/phylogeny/species-distance-kernels-20260927-v1/profile_guide.npz": "3cb8f49eb3ef381d28847105c6895ac4c2fe95cd6e032124dee578906bf7f504",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_mafft_profile.npz": "fe9d11cd175762e00f437c2bd6c2a79571ae7bbdf551bba2b641ac68e61bbe5e",
+    "results/phylogeny/species-distance-kernels-20260927-v1/mafft_guide.npz": "d1fdf4388ec2f596d60822f2daa1cdf789c8b69580e9dfdc00c7b30c28f601bf",
+    "metadata/background_match_graph_completed_readback_20260927.json": "711e3445c954795a2ceb58fd8c82ef16e26bb4e862e1d75129a9dd5d430e64d1",
+    "metadata/background_control_selection_completed_readback_20260927.json": "0004a74ec8de9bb219979f592a0254ac25600f69b89b34f9f41a2c8d12a2714e",
+    "metadata/selected_control_family_dependency_readback_20260927.json": "d6074daa41757d082fbec665e6f81b5ddbd0e83c3f3e9324ad9e76fd860af6f4",
+    "metadata/species_distance_kernel_readback_20260927.json": "ecbcdb3c5f699b246966ca181b5864f418dadcefbeaa9d041d91466a1f9212f4"
+  },
+  "script_sha256": "41f61d81b2b0b20f495a0e1eedbac9a8cc33a9ae9c4b3c71683733cd9e342d01",
+  "artifacts": {
+    "selected_node_taxa.tsv": "4ff4ab0c1c0bc06ddeb81be5bd0659b7fd434fa94ce491df5028bffac29a611d"
+  },
+  "scope": "Lossless node-key join to every original selected record; all policies and scenarios remain in the pinned selections table. Endpoint labels retain source order. Reuse counts are not independent observations. No structural filtering, fitted covariance, effect estimate or assumption about additive taxon effects."
+}
