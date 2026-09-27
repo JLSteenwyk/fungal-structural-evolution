@@ -7955,3 +7955,12 @@ nested-design comparisons at fixed covariance. Cancellation fallback and rank
 rejection were checked. This enables later fixed-effect comparisons without
 misusing current REML objectives; optimizer and inferential calibration remain.
 [Methods](matched-ordinary-likelihood-20260927.md). Existing fits unchanged.
+
+### September 27: ordinary ML optimizer numerical validation
+
+The separate analytic-score ML optimizer passed six synthetic nested-design fits,
+132 dense candidate objective checks, a closed-form random-intercept solution,
+zero-boundary and upper-bound checks, and forced iteration-failure retention.
+Empty species kernels are explicitly flagged; numerical passing does not establish
+variance-component identifiability. No production ML fits launched.
+[Details](matched-ordinary-likelihood-20260927.md).

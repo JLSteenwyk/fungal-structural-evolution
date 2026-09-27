@@ -43,3 +43,29 @@ The existing REML estimate cannot substitute for the ML optimum. Boundary and
 multistart optimizer checks, nonlinear joint support, model adequacy, uncertainty
 and multiplicity calibration remain required. No automatic chi-square calibration,
 selected polynomial degree or causal duplication effect is established here.
+
+## Analytic optimizer numerical validation
+
+`fit_matched_ml.py` now enumerates all eight zero-component faces with three
+starts on each nonempty face (22 candidates), using analytic log1p-ratio scores.
+Every candidate is reevaluated with the separate cached objective. All attempts
+remain recorded, including failed attempts. Acceptance requires optimizer success,
+projected gradient at most 1e-3, agreement of the three full-face objectives within
+1e-5, and no upper-bound contact. Bounds are never silently expanded. Analytic
+cancellation fails explicitly; it does not substitute a noisy finite difference.
+
+`check_matched_ml_optimizer.py` passed six synthetic fits across three nested
+fixed designs and empty/nonempty species factors. All 132 candidate objectives
+were independently checked against dense Gaussian calculations, as were final
+coefficients, scale, conditional covariance and analytic scores. A balanced
+random-intercept fit matched its closed-form ML solution; an exact zero-group-mean
+case reached the zero-variance boundary. Forced iteration limits retained failed
+attempts and required review; a deliberately restrictive variance bound also
+required review. Evidence: `metadata/matched_ml_optimizer_checks_20260927.json`.
+
+Numerical convergence does not establish identifiable variance components. The
+empty-factor cases can return arbitrary species ratios on a flat likelihood;
+`species_kernel_is_zero` records this explicitly and
+`component_identifiability_assessed` remains false. Such a ratio is not evidence
+for phylogenetic variance. Production-size timing, expanded joint support, full
+input verification and statistical calibration remain before production ML fitting.

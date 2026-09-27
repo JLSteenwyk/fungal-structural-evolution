@@ -1,0 +1,91 @@
+{
+  "status": "passed_matched_ml_optimizer_numerical_checks",
+  "synthetic_fits": [
+    {
+      "factor_columns": 0,
+      "fixed_columns": 5,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.1804933839200358,
+        2.1139645237935323,
+        20.0
+      ],
+      "objective": 102.17563818973275,
+      "wall_seconds": 0.0651103480195161
+    },
+    {
+      "factor_columns": 0,
+      "fixed_columns": 6,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.1776065495178865,
+        2.1134179263169584,
+        0.0
+      ],
+      "objective": 102.17541220436303,
+      "wall_seconds": 0.06578909998643212
+    },
+    {
+      "factor_columns": 0,
+      "fixed_columns": 7,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.13463028858881,
+        2.2043172238453295,
+        0.0
+      ],
+      "objective": 101.6612716174869,
+      "wall_seconds": 0.06711330497637391
+    },
+    {
+      "factor_columns": 3,
+      "fixed_columns": 5,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.117093254321815,
+        1.7349928974747297,
+        1.2336870384275131
+      ],
+      "objective": 98.17776215998154,
+      "wall_seconds": 0.10121770499972627
+    },
+    {
+      "factor_columns": 3,
+      "fixed_columns": 6,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.0983175897459465,
+        1.7530217164151376,
+        1.2263895373963312
+      ],
+      "objective": 98.14850435059593,
+      "wall_seconds": 0.10597594300634228
+    },
+    {
+      "factor_columns": 3,
+      "fixed_columns": 7,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        1.173544483174297,
+        1.7504598883132931,
+        1.2808379438901345
+      ],
+      "objective": 97.94781007607713,
+      "wall_seconds": 0.10608366699307226
+    }
+  ],
+  "dense_candidate_checks": 132,
+  "closed_form_random_intercept_checks": 1,
+  "zero_random_intercept_boundary_checks": 1,
+  "upper_bound_review_checks": 1,
+  "iteration_limit_failure_retention_checks": 1,
+  "pins": {
+    "scripts/fit_matched_ml.py": "aee83a0255bbdc3a60604510a25d7c21c1f938d762443a14df895b53667a2518",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/check_matched_ml.py": "541a740e0a1d03af0d00f33f14f7e7f605470780c06aaf38702e110b4ee316ca",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_ml_optimizer.py": "042442eafab7d9ddf2cd5f84a7615f6777e265720c049945f0466dcf62fe18bd"
+  },
+  "scope": "Numerical optimizer checks only, not global optimality, calibrated uncertainty, model adequacy or biological evidence. All 22 candidates retained per fit; analytic score cancellation fails explicitly. No production ML fit launched."
+}
