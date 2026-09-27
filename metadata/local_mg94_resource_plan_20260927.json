@@ -1,0 +1,37 @@
+{
+  "status": "prelaunch_full_local_alignment_mg94_diagnostics",
+  "cases": 1632,
+  "workers": 4,
+  "threads_per_job": 1,
+  "memory_gib": 16,
+  "output_allowance_gb": 20,
+  "planning_hours": [
+    0.5,
+    8
+  ],
+  "previous_full_run": {
+    "cases": 1655,
+    "summed_case_seconds": 3750.1353990577627,
+    "median_case_seconds": 1.9517000031191856,
+    "maximum_case_seconds": 20.869712243089452,
+    "ideal_four_worker_hours": 0.2604260693790113
+  },
+  "model": "Global MG94xREV CF3x4, fixed audited local nucleotide topology",
+  "lrt": "No",
+  "kill_zero_lengths": "No",
+  "source_input_receipt_sha256": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+  "information_table_sha256": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4",
+  "code_check_sha256": "4bca0a712db8adff8ee38aee9014dfadf6fce89bd16625760b1e15254b4974d1",
+  "pins": {
+    "scripts/run_local_mg94_diagnostics.py": "783c8bbdc1fed61ff90dc12cfec3d9694e2bbc9514618477386458988954379e",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101/tests/hbltests/libv3/support/FitMG94.bf": "5261a1f132f020a6a0f093ff3d65c2aa24b0e54e0bfda5c789a8e27c6b285326",
+    "results/environments/hyphy-2.5.101-v1/installed_files.json": "c2bd80bc6ebe49b019d37ad2be6d71870c3c102f144b62a8879dded24cb4da0a",
+    "metadata/hyphy_fungal_genetic_code_check.json": "4bca0a712db8adff8ee38aee9014dfadf6fce89bd16625760b1e15254b4974d1",
+    "metadata/full_codon_realignment_projection_readback_20260927.json": "b78152cac3d6db5c40eed0cb6761f566b2868c952a00a85c178a1876afe48f07",
+    "metadata/local_codon_tree_information_20260927.tsv": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4",
+    "metadata/local_codon_tree_plan_readback_20260927.json": "1069eda5e311a6b3ac7cfb3fd2f3b0d9abc49aaee57640e9c1fd9bc1de3c342c"
+  },
+  "interpretation": "Full local-alignment divergence sensitivity on all 1632 FCS/information-qualified cases, with copy caveats retained. No selection test. Numerical fit replay, corrected site-opportunity normalization, alignment/copy/recombination/saturation and identifiability review remain required. Component branch lengths are not automatically conventional dS/dN. Original timing is evidence for planning, not a bound on the new fits.",
+  "cost": "Existing authorized local CPU host; no new charges or GPU work"
+}

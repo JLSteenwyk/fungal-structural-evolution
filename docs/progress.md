@@ -6973,3 +6973,16 @@ the local tree producer had 424 case receipts. No unfinished audit was called
 complete and no duplicate job was launched. Full comparison results and codon
 model adequacy remain pending. All eight aims remain open; GPU prediction
 remains paused.
+## September 27 full local-alignment MG94 refits queued
+
+The previous turn queued independent reconstruction of tree-comparison results.
+This turn advances the divergence component by queuing all 1,632 eligible local
+MG94 fits behind the complete tree audit, preserving the original model, seeds,
+genetic codes and branch grid. All installed HyPhy files and the model source
+were checked. An incomplete-audit fixture was rejected before fitting. The
+four-CPU/16-GiB controller is verified live; no pinned live script was changed.
+
+Measured original fit times inform a 0.5–8 hour planning allowance after the
+tree audit. Full fit replay, corrected opportunity normalization and numerical
+comparison remain downstream. These are divergence diagnostics, not selection
+tests. All eight scientific aims remain open; GPU prediction stays paused.

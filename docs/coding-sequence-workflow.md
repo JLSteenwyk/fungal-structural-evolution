@@ -1343,3 +1343,38 @@ range after comparison. Expected proof is
 `metadata/codon_tree_comparison_completed_readback_20260927.json`.
 The real comparison is still pending, and the successful identity test does
 not establish that the new alignments preserve topology or model adequacy.
+## Full local-alignment MG94 diagnostics queued
+
+All 1,632 information/FCS-qualified local groups are queued for MG94 refitting
+after their complete independent nucleotide-tree audit. The separate runner
+`scripts/run_local_mg94_diagnostics.py` preserves the original MG94xREV global
+CF3x4 model, deterministic case seeds, code 1/12 handling, retained zero-length
+branches and `--lrt No`. It binds the full tree audit to the exact producer
+case receipts, verifies the source case metadata, and retains copy caveats.
+The original runner and installed HyPhy files remain unchanged.
+
+All 457 installed HyPhy files were checked against their manifest, and the
+FitMG94 model source matches the original diagnostic fits. A fixture confirmed
+that a partial tree audit is rejected before model access or fit execution.
+`scripts/advance_local_mg94_diagnostics.py` waits for the identified full-tree
+audit controller and its successful receipt. Plan and live identity are in
+`metadata/local_mg94_handoff_plan_20260927.json` and
+`metadata/local_mg94_launch_20260927.json`.
+
+The resource plan `metadata/local_mg94_resource_plan_20260927.json` reserves
+four single-thread workers, 16 GiB RAM, no swap and 20 GB output. The original
+1,655 fits recorded 3,750.14 summed case-seconds (median 1.95, maximum 20.87
+seconds), corresponding to 0.26 hours under ideal four-worker scheduling.
+The new planning range is 0.5–8 hours after tree auditing, allowing for different
+alignment lengths, numerical behavior and shared-host load; it is not a bound.
+No GPU or paid resources are involved. Expected fits are under
+`results/cds/local-mg94-diagnostics-20260927-v1`.
+
+The new fits are pending, and no selection test is being run. Saved-likelihood
+replay, full numerical audit, corrected post-fit site-opportunity normalization
+and original-versus-local parameter comparison remain required. The previously
+identified opportunity-compaction defect concerns post-fit normalization and
+must use the isolated corrected helper; it does not alter the pinned MG94
+fitting model. Component branch lengths must not be called conventional dS/dN
+before that normalization. Source/copy, recombination, saturation and
+identifiability reviews also remain open.

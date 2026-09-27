@@ -1,0 +1,18 @@
+{
+  "service": "fungal-local-mg94-diagnostics-20260927.service",
+  "pid": 2455841,
+  "created": 1790508515.09,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_local_mg94_diagnostics.py",
+    "--plan",
+    "metadata/local_mg94_handoff_plan_20260927.json"
+  ],
+  "plan_sha256": "6ed11d906059b8c81b7413d0a6f5c6978181672b8abcdeca92e5de59dd3c75d3",
+  "status": "verified_live_waiting_for_complete_tree_audit",
+  "checks": [
+    "all_457_installed_hyphy_files_verified",
+    "model_source_matches_original_fits",
+    "incomplete_tree_audit_rejected_before_model_access"
+  ]
+}
