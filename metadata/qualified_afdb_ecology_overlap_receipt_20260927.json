@@ -1,0 +1,17 @@
+{
+  "status": "complete_qualified_afdb_ecology_overlap",
+  "taxa": 32,
+  "taxa_with_eligible_markers": 23,
+  "markers": 125,
+  "pairs": 496,
+  "provisional_groups": 9,
+  "pairs_with_at_least_one_50_column_marker": 246,
+  "plan_sha256": "b853d1d67141c61ebf35b14616f4b0fe48abb969a79268163fd175b74e3c4b95",
+  "artifacts": {
+    "taxa.tsv": "aca6b0b9d7f2ecce548dc78d102f3261fd43f30e58267203d260c996b4eda526",
+    "pairs.tsv": "fec5cf6e6683bc1979efdd5c199d326c04b18d90a4c97a43caa870ef1f8953e0",
+    "pair_marker_columns.tsv": "55b520540d9f70af9c1b54fbff7d8662220669ee56853a48a1f588393b986541",
+    "groups.tsv": "e62643b1920846f412e11f0641dc8359fca907738938b0cd6b93d8a6cfbc5bae"
+  },
+  "scope": "Shared identical alignment columns under existing AA/3Di confidence and eligibility masks. AlphaFold only, minimum 50 common columns is descriptive, not a power criterion. Taxon pairs and provisional groups are not independent transitions; no ecological effect or orthology claim."
+}

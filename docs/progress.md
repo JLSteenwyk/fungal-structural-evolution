@@ -6728,3 +6728,18 @@ The previous turn archived coordinate production; this turn completes a
 full-grid diagnostic of sampling imbalance for later evolutionary contrasts.
 Coordinate readback remains live (6/149 shards observed). All eight aims remain
 open and GPU prediction stays paused.
+
+## September 27 qualified AlphaFold ecology overlap verified
+
+Advanced aim 5 using the completed expanded AlphaFold paired inputs. All
+32 curated taxa, 496 taxon pairs, 125 markers and nine provisional groups were
+checked for actual shared confidence-qualified columns; independent matrix
+readback passed every output count. There are 23 taxa with eligible markers and
+246 pairs with a shared ≥50-column marker. Hydnum–Botryobasidium has 112 such
+markers; complete Cantharellales coverage remains absent within either source.
+See [results and predictor-specific limitations](qualified-afdb-ecology-coverage-20260927.md).
+
+The prior turn completed control-concentration diagnostics; this turn advances
+a separate ecological coverage requirement across the full curated cohort.
+Transitions and controlled ecological tests remain outstanding. All eight aims
+remain open; GPU prediction stays paused.

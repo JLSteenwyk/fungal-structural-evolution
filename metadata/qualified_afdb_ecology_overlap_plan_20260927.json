@@ -1,0 +1,28 @@
+{
+  "evidence": "metadata/species_ecology_evidence_sample_linked_20260922.tsv",
+  "evidence_receipt": "metadata/ecology_sample_linked_curation_receipt.json",
+  "inputs": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+  "input_readback": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json",
+  "output": "results/ecology/qualified-afdb-recovered-overlap-20260927-v1",
+  "minimum_shared_columns": 50,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 0.02,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/species_ecology_evidence_sample_linked_20260922.tsv": "c03f124defcb8fba162daf53bddc28f4a7c661e69e5459982621ea89c7102911",
+    "metadata/ecology_sample_linked_curation_receipt.json": "e1c75356bbb5bc8cc752e00cf3f30cc668355553a64e7d6a24e246683beafa7d",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json": "26010266e2ab3aa59c7fee6ff766f458a75e38df4a2368e4bf5d3553daeed565",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "scripts/assess_qualified_afdb_ecology_overlap.py": "4e179af164535e29dbcb352ac43072db4f7df35fcefeb047b5a3b9d9aa2c6b71",
+    "scripts/readback_qualified_ecology_overlap.py": "b6dc57186b1cab36ca71be34a8f666b30da481e5e3e206c7eb57e95db87156d8",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb"
+  }
+}

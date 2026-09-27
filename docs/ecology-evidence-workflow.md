@@ -148,3 +148,11 @@ same-method snapshot/character integration. It does not create merged alignments
 or re-evaluate readiness. Amanita remains a single-origin case; the Cenococcum
 transition needs phylogenetic review. Independent transition replication and
 phylogenetically controlled ecological effects remain unestablished.
+
+## Expanded AlphaFold coverage
+
+The [September 27 qualified AlphaFold overlap](qualified-afdb-ecology-coverage-20260927.md)
+checks all 32 curated taxa, 496 pairs and nine provisional groups using actual
+shared observation masks. Independent verification passed; 23 taxa have
+eligible markers and 246 pairs share a ≥50-column marker. Prediction sources
+remain separate, and independent ecological transitions remain unestablished.
