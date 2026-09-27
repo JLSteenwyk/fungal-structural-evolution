@@ -251,3 +251,48 @@ range is 0.5–24 hours after the dependency completes. Output will be
 No source job is automatically restarted, and no GPU work is scheduled.
 Passing readback remains a dependency for downstream coordinate use; full
 structural comparisons and biological tests remain unfinished.
+
+
+## Full and confidence-masked alignment inputs queued
+
+The next stage is queued behind the exact independent-readback process. It
+requires a passing audit receipt and matching coordinate producer/plan,
+per-shard audit proofs and queue provenance before writing alignment inputs.
+All 212,549 source models receive both `full` and `plddt70` dispositions.
+Source-rejected models remain recorded. Masks with fewer than three residues
+are marked too short for alignment; the native US-align source rejects
+lengths below three. No failed or short input is silently replaced.
+
+`scripts/duplication_alignment_inputs.py` serializes C-alpha-only PDBs and
+retains original one-based residue numbers and the exact mask-position map.
+Noncontiguous high-confidence residues keep their original numbering.
+Coordinates round to 0.001 angstrom and confidence to 0.01, with field-width
+and numerical-error checks. Written files are hash-verified and the manifest
+records each hash, sequence, retained length and source identity.
+
+Four native US-align fixture runs recovered the expected near-identical
+scores for a known rigid rotation/translation in both input orders, using
+full coordinates and a noncontiguous pLDDT>=70 mask. An independent PDB
+parser checked original residue numbering; empty masks and nonfinite inputs
+were tested. A synthetic completed-handoff fixture preserved six expected
+full/masked/short/rejected dispositions and rejected a changed audit proof.
+Run `python scripts/check_duplication_alignment_inputs.py` and
+`python scripts/check_duplication_materialization.py` to reproduce.
+
+Confidence masking is a sensitivity analysis. Masked alignment lengths and
+TM-score normalizations refer to retained residues, so those scores are not
+interchangeable with full-model scores. Noncontiguous masks, alignment
+coverage, absent PAE qualification and interdomain-orientation uncertainty
+remain explicit limitations. Matched nonduplication controls and ancestral
+or outgroup references are still needed for duplication effects/asymmetry.
+
+Plan: `metadata/duplication_alignment_input_plan_20260926.json`.
+Service: `fungal-duplication-alignment-inputs-20260926.service`.
+Launch identity: `metadata/duplication_alignment_input_launch_20260926.json`.
+Output: `results/structural_comparisons/duplication-alignment-inputs-20260926-v1/`.
+The waiting service uses one CPU, 8 GiB RAM and no swap, with a 32-GiB output
+allowance and 100-GiB free-disk reserve. The uncalibrated planning interval
+is 0.1–8 hours after the audit completes. At most 425,098 model/mask records
+will be prepared. Production materialization and pair alignments have not
+started; the coordinate producer had validated its first 20,000 models when
+this dependent stage was queued.

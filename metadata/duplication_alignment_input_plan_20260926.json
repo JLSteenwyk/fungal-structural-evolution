@@ -1,0 +1,41 @@
+{
+  "readback": "results/structural_comparisons/duplication-coordinate-readback-20260926-v1",
+  "readback_plan": "metadata/duplication_coordinate_readback_plan_20260926.json",
+  "coordinates": "results/structural_comparisons/duplication-coordinate-validation-20260926-v1",
+  "coordinate_plan": "metadata/duplication_coordinate_validation_plan_20260926.json",
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1",
+  "output": "results/structural_comparisons/duplication-alignment-inputs-20260926-v1",
+  "producer": {
+    "pid": 3653918,
+    "created": 1790469355.82,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_duplication_coordinates.py",
+      "--plan",
+      "metadata/duplication_coordinate_readback_plan_20260926.json"
+    ]
+  },
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "metadata/duplication_coordinate_readback_plan_20260926.json": "94b1dd56af2031bf501174c6f4315c648d82779970bd714a5e5928e4e82ee891",
+    "metadata/duplication_coordinate_validation_plan_20260926.json": "7cc948f6d80f102d64d6555af081aeabf67b0187c8b92749edf4933586bdfae8",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "metadata/duplication_coordinate_readback_launch_20260926.json": "1691387695eefee9948653e6caa2b8ba04fc878a2c0e0465ef6c96aad9c54227",
+    "scripts/materialize_duplication_alignment_inputs.py": "935ae216fe400a631fed88a8fd4e64308e721321cb71fd18cb0474652bb04e96",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_inputs.py": "5dee250b495f50c2b96dee569824622588cba9d6b2bf4b91e51ff1e8aee6ccda",
+    "scripts/check_duplication_materialization.py": "ee2417dc17e83d2d71f3ed596af561440b6c37ffdb2b7e06d948766578cc6dc9"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "basis": "After full coordinate readback, serialize two C-alpha inputs per accepted model, at most 425098 dispositions/files across 212549 models; full and pLDDT>=70 masks, original residue numbers retained. No alignment inference, GPU or paid resources."
+  }
+}

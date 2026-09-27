@@ -5101,3 +5101,14 @@ completion receipt. It reconstructs every accepted C-alpha record from raw
 CIF atom rows and checks the full disposition grid. An intact fixture passed,
 and six altered exports plus altered source bytes were rejected. The full
 audit has not started yet. See [duplication workflow](duplication-structure-coverage-20260926.md).
+
+
+### September 26: full and confidence-masked alignment inputs prepared in code
+
+Coordinate validation reached 20,000 accepted models. Full and pLDDT>=70
+C-alpha input serialization passed native rigid-transform, sparse residue
+mapping and completed-handoff fixtures. Production materialization is now
+queued behind the exact independent-readback process and requires passing
+checksums/proofs. All model/mask dispositions, including short masks and
+rejected sources, will be preserved. No pair alignment has started. See
+[duplication workflow](duplication-structure-coverage-20260926.md).

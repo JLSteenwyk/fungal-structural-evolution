@@ -1,0 +1,15 @@
+{
+  "service": "fungal-duplication-alignment-inputs-20260926.service",
+  "pid": 3951003,
+  "created": 1790469675.49,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_duplication_alignment_inputs.py",
+    "--plan",
+    "metadata/duplication_alignment_input_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_alignment_input_plan_20260926.json",
+  "plan_sha256": "96a935b2038b0ddbaafa12b26cff73b59cd58be0b8f4734353176ff9d88a5b11",
+  "state_at_launch": "waiting_for_independent_coordinate_readback",
+  "checks": "Four native US-align rigid-transform checks, full/noncontiguous residue mapping, empty mask, nonfinite rejection; completed-handoff fixture preserved all six dispositions and rejected corrupted audit proof."
+}
