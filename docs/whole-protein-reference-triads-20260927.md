@@ -43,3 +43,10 @@ Evidence: `metadata/whole_protein_reference_triads_{receipt,readback}_20260927.j
 The original no-reference event dispositions remain in the upstream full sister-
 reference inventory. Extant references are not ancestors or proven orthologous
 outgroups. No structural asymmetry, selection or ancestral change is inferred.
+
+A [full primary geometry assessment](primary-alignment-geometry-20260927.md)
+is now queued behind the strict primary audit. It will identify numerically
+ambiguous rotations in every successful primary mapping before these mappings
+are used for shared-residue triad comparisons. The reference geometry already
+has a separate complete quaternion readback; neither inventory nor queued
+primary geometry constitutes a completed triad analysis.
