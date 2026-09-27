@@ -97,3 +97,31 @@ strain fields and review decision in
 previous reliance on a search-result-only lead with directly inspected primary
 literature. It does not establish absence of pathogenicity or validate a binary
 trait coding for ecological effect tests.
+
+## Qualified structural coverage for the seven exact-name matches
+
+Both source-specific coverage analyses and full independent matrix readbacks
+have completed. All seven taxa have eligible AlphaFold markers, spanning 19 of
+21 taxon pairs with at least one marker sharing 50 qualified columns. ESMFold
+covers three taxa and three pairs. Its three covered taxa are all classified
+as white rot in the reviewed figure. The sole matched brown-rot taxon,
+Gloeophyllum trabeum, has AlphaFold coverage but no eligible ESMFold markers.
+Thus ESMFold alone cannot currently supply a between-class comparison here.
+
+AlphaFold marker counts range from two (Fomitiporia mediterranea) to 122
+(Gloeophyllum trabeum); all four white-rot taxa have no marker in common as a
+complete group. Pairwise availability does not establish balanced sampling or
+independent ecological replication. A single brown-rot tip is insufficient to
+claim independently replicated brown-rot origins. The two uncertain taxa remain
+uncertain and are not forced into either class.
+
+Plans and proofs are `metadata/qualified_{afdb,esmfold}_wood_decay_*_20260927.*`;
+completion is recorded in `metadata/wood_decay_coverage_completed_20260927.json`.
+Full tables remain under `results/ecology/qualified-{afdb,esmfold}-wood-decay-overlap-20260927-v1`.
+Reproduction uses `scripts/prepare_wood_decay_coverage.py`, then the existing
+source-specific `assess_qualified_*ecology_overlap.py` and
+`readback_qualified_ecology_overlap.py` with these plans and fresh output paths.
+All 21 pairs, per-marker counts and three descriptive source-category groups
+were checked independently. Category grouping is bookkeeping for coverage,
+not a grouping of inferred evolutionary origins. Each stage had a one-CPU,
+4-GiB, 1–10-minute planning allowance and completed in seconds; no GPU was used.
