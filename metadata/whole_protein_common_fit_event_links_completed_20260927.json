@@ -1,0 +1,124 @@
+{
+  "status": "complete_whole_protein_common_fit_event_eligibility",
+  "source_hashes": {
+    "metadata/whole_protein_common_fits_completed_20260927.json": "58dae4247cfdc16404d121d729d3b3f20ce1cfddd2de1dfeeb65dea061125d2f",
+    "metadata/whole_protein_common_fits_plan_20260927.json": "a9510b9c977f57179c94e16feed14ce54ec2189748d5b3855667430ad9bc4f76",
+    "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1/receipt.json": "8965c0c83adccc6175753ecd7200c32243410ab3c2078a433f8ce0ea708ac281",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/event_reference_triads.tsv": "4eecddbc391cf479e1650230d236c479230f224d4d4cc167318369da139c0a03"
+  },
+  "script_sha256": "36f343461fc870854fe4c076a03e96698c54641410de3c1aaa27501cfd5704ac",
+  "triads": 17619,
+  "event_reference_links": 36944,
+  "summaries": [
+    {
+      "guide": "mafft",
+      "screen": "n30_c50",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 6238,
+      "events_with_at_least_one_robust_reference": 5877
+    },
+    {
+      "guide": "mafft",
+      "screen": "n30_c70",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 3805,
+      "events_with_at_least_one_robust_reference": 3538
+    },
+    {
+      "guide": "mafft",
+      "screen": "n30_c90",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 1024,
+      "events_with_at_least_one_robust_reference": 948
+    },
+    {
+      "guide": "mafft",
+      "screen": "n50_c50",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 6211,
+      "events_with_at_least_one_robust_reference": 5851
+    },
+    {
+      "guide": "mafft",
+      "screen": "n50_c70",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 3801,
+      "events_with_at_least_one_robust_reference": 3534
+    },
+    {
+      "guide": "mafft",
+      "screen": "n50_c90",
+      "event_reference_links": 18466,
+      "unique_events": 17448,
+      "three_model_robust_reference_links": 1024,
+      "events_with_at_least_one_robust_reference": 948
+    },
+    {
+      "guide": "profile",
+      "screen": "n30_c50",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 6239,
+      "events_with_at_least_one_robust_reference": 5878
+    },
+    {
+      "guide": "profile",
+      "screen": "n30_c70",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 3805,
+      "events_with_at_least_one_robust_reference": 3538
+    },
+    {
+      "guide": "profile",
+      "screen": "n30_c90",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 1024,
+      "events_with_at_least_one_robust_reference": 948
+    },
+    {
+      "guide": "profile",
+      "screen": "n50_c50",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 6212,
+      "events_with_at_least_one_robust_reference": 5852
+    },
+    {
+      "guide": "profile",
+      "screen": "n50_c70",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 3801,
+      "events_with_at_least_one_robust_reference": 3534
+    },
+    {
+      "guide": "profile",
+      "screen": "n50_c90",
+      "event_reference_links": 18478,
+      "unique_events": 17461,
+      "three_model_robust_reference_links": 1024,
+      "events_with_at_least_one_robust_reference": 948
+    }
+  ],
+  "artifacts": {
+    "triad_eligibility.tsv": "8ddcf7de299f458ffb8caa369df3c0b562d28e7049098d89b9da0b503846b3b0",
+    "event_reference_eligibility.tsv": "721308bb4c329618b4a9690ac0618ad6d63601368de5fa7940d3fd28db7ff3c3",
+    "eligibility_summary.tsv": "d9796e34619b12e304c14d7350b1ca500a5ac76944e2844859947942724d3240"
+  },
+  "scope": "Descriptive eligibility for all 32 mask/order/mapping configurations and six screens. All reference ties and shared-model cases retained in linked table; robust-reference counts require three distinct models. Events with one passing reference need not be robust to all references. No hypothesis test or evolutionary asymmetry claim.",
+  "receipt_path": "results/structural_comparisons/whole-protein-common-fit-event-links-20260927-v1/receipt.json",
+  "receipt_sha256": "9be84238b32869ca1535508901315c2a0aab1bc5591405489bcdbe97ff08e0a9",
+  "coverage_summary_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}

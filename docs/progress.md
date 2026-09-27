@@ -8401,3 +8401,13 @@ See [common-core comparisons](whole-protein-common-core-comparisons-20260927.md)
 The launch is recorded in
 `metadata/whole_protein_common_fit_summary_launch_20260927.json`.
 No biological result or overall project completion is claimed.
+
+### 2026-09-27: whole-protein common-core fits verified and linked to events
+
+The independent audit passed all 563,808 fit records; maximum RMSD/contrast
+agreement error was 2.42e-13 Å. The full coverage summary passed both independent
+aggregations and serialization checks. All 36,944 event/reference links now
+retain eligibility for all six screens and all 32 configurations. At 50 residues
+and 70% coverage, 3,534 events per guide have at least one passing three-model
+reference. This is descriptive eligibility, not evidence of structural asymmetry.
+See [results and denominators](whole-protein-common-core-comparisons-20260927.md).

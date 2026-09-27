@@ -37,7 +37,10 @@ Chronological receipts and process records remain in [progress](progress.md).
   correspondence sensitivity and a [descriptive figure](whole-protein-order-sensitivity-20260927.md)
   are independently checked across 193,642 primary pair/mask comparisons. The
   failed strict audit remains preserved. Reference geometry/order sensitivity is
-  verified; background alignments and whole-protein triad comparisons remain open.
+  verified. Whole-protein common-core fits passed independent checks for all
+  563,808 records; all 36,944 event/reference links now retain coverage eligibility
+  across masks, orders and mapping definitions. See [triplet coverage](whole-protein-common-core-comparisons-20260927.md).
+  Background alignments and biological duplication tests remain open.
 - Domain comparisons, common-core numerical verification, alternative-setting
   robustness, cross-guide comparisons and candidate sampling summaries completed.
   See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).

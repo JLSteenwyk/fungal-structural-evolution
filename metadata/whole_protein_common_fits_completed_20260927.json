@@ -1,0 +1,69 @@
+{
+  "status": "complete_verified_whole_protein_common_fits_and_coverage_summary",
+  "terminal_states": {
+    "fungal-whole-protein-common-fits-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-common-fits-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_common_fits_plan_20260927.json": "a9510b9c977f57179c94e16feed14ce54ec2189748d5b3855667430ad9bc4f76",
+    "metadata/whole_protein_common_fits_launch_20260927.json": "8aba4047831241540462d47d88e21fcd85ba0eabe2a076d5c219e9127583491a",
+    "metadata/whole_protein_common_fits_readback_launch_20260927.json": "b10372b6ac97e495e4663389c999d7d1ff7b0a462b32543fc84324f415b45f2a",
+    "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1/receipt.json": "8965c0c83adccc6175753ecd7200c32243410ab3c2078a433f8ce0ea708ac281",
+    "metadata/whole_protein_common_fits_readback_20260927.json": "804141ebfe40c40e39fe1f3404c7071d12b3571754a6ee59d76bc205cc97fefa"
+  },
+  "script_sha256": "0b4f63ae3b4144d0a1e30cc1fa1d7df65d6ab9b6412c2cfaaf30569a350d427b",
+  "fit_rows": 563808,
+  "triad_mask_definition_groups": 70476,
+  "counts": {
+    "full:reference_common:computed_unique_at_numeric_tolerance": 137656,
+    "full:cycle_consistent:computed_unique_at_numeric_tolerance": 116068,
+    "plddt70:reference_common:computed_unique_at_numeric_tolerance": 123782,
+    "plddt70:cycle_consistent:computed_unique_at_numeric_tolerance": 110954,
+    "plddt70:cycle_consistent:fewer_than_three_common_residues": 17928,
+    "full:cycle_consistent:fewer_than_three_common_residues": 24884,
+    "plddt70:reference_common:fewer_than_three_common_residues": 5100,
+    "plddt70:reference_common:source_excluded": 12070,
+    "plddt70:cycle_consistent:source_excluded": 12070,
+    "full:reference_common:fewer_than_three_common_residues": 3296
+  },
+  "screen_pass_counts": {
+    "full:reference_common:n30_c50": 74696,
+    "full:reference_common:n30_c70": 51616,
+    "full:reference_common:n30_c90": 23064,
+    "full:reference_common:n50_c50": 74256,
+    "full:reference_common:n50_c70": 51544,
+    "full:reference_common:n50_c90": 23064,
+    "full:cycle_consistent:n30_c50": 68884,
+    "full:cycle_consistent:n30_c70": 47168,
+    "full:cycle_consistent:n30_c90": 20224,
+    "full:cycle_consistent:n50_c50": 68588,
+    "full:cycle_consistent:n50_c70": 47112,
+    "full:cycle_consistent:n50_c90": 20224,
+    "plddt70:reference_common:n30_c50": 57664,
+    "plddt70:reference_common:n30_c70": 35512,
+    "plddt70:reference_common:n30_c90": 10424,
+    "plddt70:reference_common:n50_c50": 57376,
+    "plddt70:reference_common:n50_c70": 35464,
+    "plddt70:reference_common:n50_c90": 10424,
+    "plddt70:cycle_consistent:n30_c50": 55888,
+    "plddt70:cycle_consistent:n30_c70": 34224,
+    "plddt70:cycle_consistent:n30_c90": 9920,
+    "plddt70:cycle_consistent:n50_c50": 55584,
+    "plddt70:cycle_consistent:n50_c70": 34168,
+    "plddt70:cycle_consistent:n50_c90": 9920
+  },
+  "maximum_absolute_rmsd_or_contrast_difference": 2.4127282085689844e-13,
+  "summary_rows": 72,
+  "artifacts": {
+    "results/structural_comparisons/whole-protein-common-fit-summary-20260927-v1/order_robust_coverage.tsv": "e366e09b11620e8193671459d0d3a9cb407f6e73bd847074c290cec9bae0a346"
+  },
+  "scope": "Full independent quaternion readback and two complete coverage aggregations. Counts are oriented model triads, not independent duplication events. Separate 1/2/3-model strata; all orders retained. Coverage robustness is not evidence of biological asymmetry or an ancestral reference."
+}
