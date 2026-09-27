@@ -7279,3 +7279,14 @@ verified live; plan, input hashes and identities are archived. Original runs
 remain intact. This is fresh full-sampling sensitivity, not a final mixture
 analysis or tree result. Full audits and mixture follow-up remain required.
 All eight scientific aims remain open and GPU prediction stays paused.
+
+## September 27 fourth species-tree audit queued
+
+The preceding goal turn launched fresh full hybrid-excluded guide inference.
+This turn verified that controller still live, identified the active fourth
+crossed PMSF producer, and queued its full profile/tree/bootstrap readback.
+The new handoff uses exact process identity and checksum-pinned inputs/scripts;
+its live identity was recorded after launch. It will reuse the unchanged full
+auditor after successful producer termination, under one CPU/8 GiB/no swap.
+No additional inference was started and no unfinished tree is reported as
+validated. All eight scientific aims remain open; GPU prediction stays paused.

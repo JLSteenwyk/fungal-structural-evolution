@@ -149,3 +149,22 @@ These are full-sampling homogeneous-model sensitivities and fresh guide inputs,
 not completed results or substitutes for subsequent mixture-model analyses.
 Full result/support audits, mixture-model guide sensitivity, and the other
 identity, contamination and marker-sampling checks remain required.
+
+## Fourth-run full readback queued
+
+The fourth (MAFFT/MAFFT) run now has an automatic full saved-output audit
+queued behind its exact live controller identity. The new controller
+`scripts/advance_fourth_pmsf_readback.py` checks the producer PID, creation time
+and command, waits for termination, requires a successful completed inference
+receipt, then runs the unchanged `audit_species_pmsf.py`. Inputs, execution
+configuration and audit scripts are pinned. The audit requires all 526 taxa,
+63,750 profiles and 1,000 bootstrap trees, and rechecks output hashes.
+
+Resource allowance is one CPU, 8 GiB RAM, no swap and 100 MB output; the
+0.01–2-hour post-inference planning range is conservative relative to the third
+run's 16.6-CPU-second readback. This starts no additional inference. Plan and
+verified live identity are archived as
+`metadata/pmsf_fourth_readback_{plan,launch}_20260927.json`. Actual results are
+pending under `results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1`, with a
+separate handoff receipt directory. All-four comparison and remaining framework
+sensitivities still require completion after the audit.
