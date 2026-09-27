@@ -58,3 +58,14 @@ The existing Szánthó et al. (2025) archive was additionally audited for its fo
 mean chronograms and project name overlap; see dating-workflow.md and
 metadata/published_chronogram_inventory_receipt.json. No published ages were
 transferred to project nodes.
+
+## Mixed-model computation
+
+Bates D, Mächler M, Bolker B, Walker S (2015). Fitting Linear Mixed-Effects
+Models Using lme4. *Journal of Statistical Software* 67(1):1–48.
+[Primary article](https://www.jstatsoft.org/article/view/v067i01). Describes
+profiled ML/REML computation and constrained covariance-parameter estimation.
+Relevant to the proposed shared-control, family and phylogenetic mixed model;
+it does not validate our particular covariance assumptions. Our specialized
+evaluator is checked separately against direct dense calculations; optimization
+and inferential calibration remain outstanding.

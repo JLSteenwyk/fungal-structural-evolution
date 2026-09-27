@@ -1,0 +1,20 @@
+{
+  "status": "complete_matched_design_diagnostics_pending_independent_readback",
+  "plan_sha256": "5df4aee158a1178353db6205d7c7897bda56b83c7441ab155327b46f0937e05d",
+  "settings": 192,
+  "strata": 82944,
+  "rank_deficient_after_constant_removal": 0,
+  "constant_covariate_cells": {
+    "identity_difference": 0,
+    "original_coverage_difference": 0,
+    "log_aligned_length_ratio": 0,
+    "confidence_fraction_difference": 41472
+  },
+  "strata_with_zero_outside_some_marginal_range": 0,
+  "rank_absolute_tolerance": 1e-07,
+  "constant_absolute_range_tolerance": 1e-12,
+  "artifacts": {
+    "design_diagnostics.tsv": "314d4ffefeaa62d8e4f908cfc061a906401bc5fa7a4f32a40e3d91c4a7414902"
+  },
+  "scope": "All 192 settings and 432 strata each. Direct SVD of centered population-SD-scaled equal-record covariates. Intercept rank adds one. Positive alternative weights preserve exact rank but can alter conditioning. Marginal zero coverage is not joint convex-hull support. No response fit, uncertainty estimate, effective sample size, phylogenetic adjustment or causal claim."
+}

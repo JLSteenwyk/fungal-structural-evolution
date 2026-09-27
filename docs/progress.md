@@ -7636,3 +7636,20 @@ working additive endpoint assumption. Shared-control/family components, fitted
 variance multipliers, model adequacy and evolutionary inference remain open.
 The covariate-design producer remains live with advancing checkpoints.
 All eight aims remain open. GPU prediction remains paused.
+
+## September 27 mixed covariance likelihood evaluator checked
+
+The preceding turn completed and independently verified all working species
+covariance factors (progress). Added a nested background/family-component plus
+low-rank phylogenetic covariance evaluator, and a profiled restricted-likelihood
+calculation at fixed component ratios. Dense independent calculations agree in
+243 variance/factor cases and their row-permuted counterparts; all five invalid
+input cases reject. Maximum solve/logdet/likelihood errors are below 1e-12.
+[Methods, assumptions and remaining validation](matched-mixed-covariance-20260927.md).
+This implements numerical likelihood algebra, not optimization or data fitting.
+
+The complete 82,944-stratum design producer is authoritatively inactive with
+exit status zero. Its preliminary output reports no rank deficiency after
+constant removal and 41,472 constant confidence-difference columns. Independent
+full readback remains live; these design results are not yet promoted to fully
+verified. All eight aims remain open. GPU prediction remains paused.

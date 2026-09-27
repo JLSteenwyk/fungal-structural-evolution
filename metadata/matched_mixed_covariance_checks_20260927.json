@@ -1,0 +1,14 @@
+{
+  "status": "passed_dense_reference_matched_mixed_covariance_checks",
+  "variance_factor_cases": 243,
+  "permuted_cases": 243,
+  "expected_rejections": 5,
+  "maximum_absolute_solve_error": 9.809930645587883e-13,
+  "maximum_absolute_logdet_error": 3.979039320256561e-13,
+  "maximum_absolute_profiled_reml_error": 6.252776074688882e-13,
+  "pins": {
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_mixed_covariance.py": "6cde19271fa61ee0a9a1b3c4dc96e2a9d4cf0c64951feacdd92eabb63c5446ef"
+  },
+  "scope": "Synthetic numerical validation across zero/nonzero components, three residual scales, empty/full/duplicated species factors and row permutations. Direct dense solves, determinants, generalized least squares and restricted likelihood agree. Not a dataset pilot, optimizer verification, confidence-interval calibration or biological result."
+}
