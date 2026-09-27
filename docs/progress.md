@@ -5123,3 +5123,14 @@ short/unavailable inputs, native/parse failures and timeouts are preserved
 with provenance and checkpoints. Four CPU workers and 16 GiB RAM are planned;
 production native alignments have not started. See the resource estimates,
 fixtures and limitations in [duplication workflow](duplication-structure-coverage-20260926.md).
+
+
+### September 26: sister-clade reference inventory launched
+
+All 218,473 reviewed terminal-candidate rows are now being evaluated for
+modeled nonfocal proteins in their immediate sister clades. Parent duplication
+flags, multifurcations, focal-taxon presence, missing models and reference
+ties remain explicit. Known-tree fixtures passed. This CPU-only inventory
+supports future asymmetry comparisons but does not establish outgroup
+orthology, ancestral structure or a duplication effect. See
+[sister-reference workflow](duplication-sister-references-20260926.md).
