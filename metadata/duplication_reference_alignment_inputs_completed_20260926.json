@@ -1,0 +1,26 @@
+{
+  "status": "complete_additional_reference_inputs_with_manifest_hash_readback",
+  "receipt_path": "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json",
+  "receipt_sha256": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+  "receipt": {
+    "status": "complete_additional_reference_alignment_input_materialization",
+    "plan_sha256": "317527ee77c300ce2f5042d266c2cfd0af9294a1310494e06606e5517d487df2",
+    "readback_receipt_sha256": "bac5673fecd69c1515b1d30b28845604dabe082d54576bbf25e0818bfab9846a",
+    "coordinate_receipt_sha256": "84952d0b62d81aa4a89ae941471e1337b73ea68e00d373bdebeb5f92e8125fa5",
+    "inventory_receipt_sha256": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "models": 14540,
+    "input_dispositions": 29080,
+    "counts": {
+      "full:ready": 14540,
+      "plddt70:ready": 14050,
+      "plddt70:too_few_retained_residues": 490
+    },
+    "pdb_bytes": 816376377,
+    "artifacts": {
+      "inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef"
+    },
+    "script_sha256": "0f6092d62c9de42e1a423fbe0b55ea8da6947ee882466de9a57b6df75715261b",
+    "scope": "Full and pLDDT>=70 C-alpha inputs for the exact additional-model partition of the frozen reference inventory. Original residue positions and masked sequence retained; short masks and source rejections explicit. PDB coordinates rounded to 0.001 A with bounds checked, confidence to 0.01. No PAE qualification; masked TM scores normalize to retained length and cannot be interpreted interchangeably with full-model scores. Pair alignments, domain/orientation controls and biological effects pending."
+  },
+  "verification": "All source pins, upstream receipt bindings, exact model/mask grid, counts and every ready PDB hash/byte total checked. Full independent PDB numeric reconstruction is deferred to queued alignment readback; not claimed here."
+}

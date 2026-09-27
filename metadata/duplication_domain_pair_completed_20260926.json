@@ -1,0 +1,35 @@
+{
+  "status": "complete_domain_pair_inventory_pending_full_readback",
+  "receipt_path": "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/receipt.json",
+  "receipt_sha256": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+  "receipt": {
+    "status": "complete_duplication_domain_pair_inventory_pending_readback",
+    "plan_sha256": "9a56aa6ad1cabb1d290bd253adbf5b7645ff5621d2e06b651dd2532cc3b4ccce",
+    "source_control_receipt_sha256": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+    "source_domain_match_rows": 150690,
+    "policy_boundary_links": 301380,
+    "link_counts": {
+      "alignment_evalue:alignment": 37755,
+      "alignment_evalue:envelope": 37755,
+      "alignment_bitscore:alignment": 37750,
+      "alignment_bitscore:envelope": 37750,
+      "envelope_evalue:alignment": 37595,
+      "envelope_evalue:envelope": 37595,
+      "envelope_bitscore:alignment": 37590,
+      "envelope_bitscore:envelope": 37590
+    },
+    "unique_intervals": 114590,
+    "unique_interval_pairs": 70395,
+    "unique_models": 50204,
+    "interval_residues": 19891530,
+    "maximum_interval_length": 1066,
+    "planned_directed_mask_dispositions": 281580,
+    "artifacts": {
+      "intervals.jsonl": "948f8b22ae31c7239705d7726ac6d679fdc7844cda540cacf38209835373da5f",
+      "domain_pairs.tsv": "07f2e554859c43bca0f1bf3c9269d1434742803d6e65e64151ac45e972cdfcf6",
+      "domain_pair_links.tsv": "7936be904534fcec82233fdf67d06043929ac07dcf5f6f15476072f6a5210dbb"
+    },
+    "scope": "Every verified single-copy candidate Domain match expanded to alignment and envelope boundaries. All policy, source protein pair, scope, accession and hit links retained; only identical coordinate-interval computations deduplicated. No domain coordinates extracted or compared yet; residue confidence, PAE, independent output readback and biological interpretation remain pending."
+  },
+  "verification": "Plan binding and all source/output artifact hashes checked; full link/interval reconstruction still pending."
+}

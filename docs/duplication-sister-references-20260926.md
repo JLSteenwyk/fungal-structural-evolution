@@ -341,3 +341,23 @@ the additional pair aligned in both directions, short-mask outcomes were
 preserved in both directions, all checkpoint hashes matched, and altered
 source provenance was rejected even after updating the manifest hash.
 Production alignments are queued, not yet started.
+
+## Additional coordinates verified and alignment inputs prepared
+
+The supplementary raw-coordinate validation and independent readback completed
+for all 14,540 models, with no rejections. Every exported accepted coordinate,
+sequence and confidence value was reconstructed from the raw CIF atom rows:
+6,029,194 C-alpha residues in total. All source pins, shard output hashes and
+independent proof hashes were checked again. The result is archived in
+`metadata/duplication_reference_coordinates_completed_20260926.json`.
+
+Full/masked input preparation also completed with 29,080 dispositions:
+14,540 full inputs ready, 14,050 pLDDT>=70 inputs ready, and 490 masked inputs
+with fewer than three retained residues. These are explicit exclusions, not
+failed predictions or missing structures. The 28,590 ready PDBs total
+816,376,377 bytes. The exact model/mask grid, all ready PDB hashes, byte totals,
+source pins and upstream receipt bindings were checked and archived in
+`metadata/duplication_reference_alignment_inputs_completed_20260926.json`.
+That check is a manifest/hash readback, not an independent numeric validation
+of every serialized PDB; the queued alignment readback handles the latter for
+successful comparisons. Reference alignments still wait for primary inputs.

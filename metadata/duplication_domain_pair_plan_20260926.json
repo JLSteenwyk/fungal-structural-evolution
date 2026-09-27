@@ -1,0 +1,33 @@
+{
+  "control_plan": "metadata/duplication_domain_control_plan_20260926.json",
+  "controls": "results/structural_comparisons/duplication-domain-controls-20260926-v1",
+  "readback": "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json",
+  "output": "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1",
+  "pins": {
+    "metadata/duplication_domain_control_plan_20260926.json": "610f9a6ddb162fb4c2d099de79e066a3b369e08c8f1b1a7d52238d3f0c8fbc4e",
+    "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json": "0dd82c0359ced0669b450eb35f9c3921a22877ea7d0db1dea5a2b4388e994a6c",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/receipt.json": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+    "scripts/prepare_duplication_domain_pairs.py": "074679ee50f9562d245194e30b3e2ccc36f7edf01f089e774374f5e8066d70b0",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl": "7423c03ac2abf93f659b538f76de8358133f135fe75c82c5bd1dccdec4d48e22",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/single_copy_domain_pairs.tsv": "59ffd07f049d7963bb5bb55011817ab4a1351f394bb347ec5231bbf84ea6f7b7",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/pair_architecture_controls.tsv": "21c846692e952fa632fcbe6cd8a242b24a584d5adc2174fba4143d0a4a326916",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "source_policy_domain_matches": 150690,
+    "expanded_policy_boundary_links": 301380,
+    "basis": "Full two-boundary expansion of all verified single-copy Domain matches; exact interval/pair deduplication preserving links. One CPU, no GPU, native alignments or charges. Runtime and output allowance are estimates."
+  }
+}

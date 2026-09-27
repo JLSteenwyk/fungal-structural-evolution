@@ -5271,3 +5271,15 @@ reconstruction. All source/output pins were checked again and the readback
 receipt archived. Domain-level coordinate comparisons and biological
 interpretation remain pending; the inventory does not establish evolutionary
 gains, losses or rearrangements.
+
+
+### September 26: supplementary coordinates passed; domain workload inventoried
+
+Independent raw-CIF readback passed all 14,540 additional reference models and
+6,029,194 C-alpha residues. Their full/masked inputs are prepared: 28,590 ready
+PDBs and 490 explicit short-mask exclusions; all hashes and the complete
+model/mask grid were checked. Separately, the two-boundary domain expansion
+contains 70,395 distinct interval pairs while retaining 301,380 policy/boundary
+links. Domain inventory full readback and coordinate extraction remain pending.
+See [reference completion](duplication-sister-references-20260926.md) and
+[domain workload](duplication-domain-controls-20260926.md).

@@ -1,0 +1,36 @@
+{
+  "status": "passed_additional_reference_coordinate_validation_and_readback",
+  "producer_receipt_path": "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "84952d0b62d81aa4a89ae941471e1337b73ea68e00d373bdebeb5f92e8125fa5",
+  "readback_receipt_path": "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/receipt.json",
+  "readback_receipt_sha256": "bac5673fecd69c1515b1d30b28845604dabe082d54576bbf25e0818bfab9846a",
+  "readback_receipt": {
+    "status": "passed_duplication_exported_ca_readback",
+    "plan_sha256": "9f048353a9889e3fa3a5c98094340bc49a32c622ea4dcc7d82fe3f1e51b313a2",
+    "producer_receipt_sha256": "84952d0b62d81aa4a89ae941471e1337b73ea68e00d373bdebeb5f92e8125fa5",
+    "models": 14540,
+    "counts": {
+      "validated": 14540
+    },
+    "validated_residues": 6029194,
+    "proofs": {
+      "shard-00000.jsonl.gz.readback.json": "98da9cdd7d32be3f85be21cf7c4951c20e22147be5b1751c6f7dd11952bf0e1f",
+      "shard-00003.jsonl.gz.readback.json": "09db529a825d1acbee75a821771edf50ea84cfd8cd7a4aedac211544d2d27569",
+      "shard-00014.jsonl.gz.readback.json": "48ba9e5dc4c5ade615d60cf449396f7bc9a46482f4d52c9c38382de96ce584dc",
+      "shard-00008.jsonl.gz.readback.json": "f0167dc1384b7da911e28bb002bddcccd5160f39056957c20c456439b47f94f3",
+      "shard-00007.jsonl.gz.readback.json": "f95c46cf19b203f63651b401cf16bd531fa370c2cc519786589493c354768608",
+      "shard-00013.jsonl.gz.readback.json": "3a55e682d4d0baf31968ad80e0acc6b755aaace02ca681b9b96e93e47632eb55",
+      "shard-00010.jsonl.gz.readback.json": "65f8f123eeca3893fc8d6b4a87007ec81483ee685c10741af438a865d961bb17",
+      "shard-00012.jsonl.gz.readback.json": "42d4d7e5b69e833de9b5d0dc332681dec17a8b1031a05a22ef307a071f567add",
+      "shard-00006.jsonl.gz.readback.json": "446cd4206a6405eaf753111c57ebf50087d232486f6c8549fc0e44ac6da9c4c4",
+      "shard-00011.jsonl.gz.readback.json": "6935fd5e504ee853e2349bbee135bb4c1e6ee6a01c1ed497d658d3cff5bd1acc",
+      "shard-00004.jsonl.gz.readback.json": "fc2884992896cb1d68498a35ce2743cc9cf93cfd9b50487f9edf102f85b58cc5",
+      "shard-00001.jsonl.gz.readback.json": "d5da987200012f4abbc5aee1fe2b5d31d2fb768189663a276b7547b993a335a8",
+      "shard-00009.jsonl.gz.readback.json": "44f9b776c2bdf2d505da793f6d07d16762afa1e0cc2161061273b99cee4a1242",
+      "shard-00005.jsonl.gz.readback.json": "fca6dc237959705960f18234b58d31f8f71a74c55f36630c1020ed99873a504f",
+      "shard-00002.jsonl.gz.readback.json": "89296e59edb352b96ed6b70fe2d714ae5eefe3da724de6e1c4caccfd48460569"
+    },
+    "scope": "Every exported accepted C-alpha sequence, coordinate and confidence value independently reconstructed from frozen CIF atom rows; full model/disposition grid and summaries checked. Shares CIF lexical parser, not producer extraction function. Rejection identities/reasons retained but rejection causes not independently adjudicated. No PAE or biological inference."
+  },
+  "verification": "Successful independent full raw-CIF sequence, coordinate and confidence readback. All plan pins, 15 shard output hashes and 15 proof hashes checked again; no rejected models."
+}
