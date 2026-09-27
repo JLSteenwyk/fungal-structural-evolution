@@ -9195,3 +9195,17 @@ bind this run to the completed initial fits and numerical validation. Two
 CPUs,8GiB RAM,noGPU; planning estimate1–96h and3GiB output. Producer PID,
 creation time and command recorded. Independent refined-fit validation,
 boundary sensitivity and ancestral probability propagation remain pending.
+
+### 2026-09-27: all stable-refinement candidates independently audited in flight
+
+Verified the refinement producer live by PID,creation time and command.
+Launched separate independent audit covering all312 input dispositions and
+2,754 retained candidate likelihoods (306 models x3 starts x initial/Powell/
+polished). All selected-per-start/global best choices and signed improvement
+arithmetic checked, including retained initial solutions. The audit reuses
+independent expm pruning and70-digit fallback with unchanged1e-6 tolerance;
+genuine discrepancies remain explicit. First full nine-candidate check passed
+with maximum error7.11e-15. One CPU,8GiB RAM,noGPU; planning1–72h plus
+producer wait. Numerical verification is distinct from convergence and
+biological adequacy. Full audit, optimization qualification and posterior
+propagation remain pending.

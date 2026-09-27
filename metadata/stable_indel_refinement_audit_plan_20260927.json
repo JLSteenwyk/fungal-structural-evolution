@@ -1,0 +1,25 @@
+{
+  "producer_plan": "metadata/stable_indel_refinement_plan_20260927.json",
+  "producer_launch": "metadata/stable_indel_refinement_launch_20260927.json",
+  "output": "results/ancestral/stable-indel-refinement-audit-20260927-v1",
+  "pins": {
+    "metadata/stable_indel_refinement_plan_20260927.json": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+    "metadata/stable_indel_refinement_launch_20260927.json": "4ce1922774b5376f74eca861dba98e08116783ae87cd110accb586ef2c5bcb0f",
+    "scripts/audit_stable_indel_refinements.py": "fe60e70511d9bcbba58118c495629532870813ed65b31357cf1c9dd093a6aceb",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/diagnose_indel_extreme_rates.py": "5d283155de3f1b44cdc8a21d08e67eb38fb7940cf8b132dfafbfffa914613e74",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      1,
+      72
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All312 dispositions;306 models x3 starts x3 retained candidates=2754 likelihoods, independent expm with70-digit fallback, fixed1e-6 tolerance. Signed improvements and best selection verified. Any unresolved discrepancies retained and prevent verified status; optimization/global-convergence qualification remains separate."
+}

@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-stable-indel-refinement-audit-20260927.service",
+  "state": {
+    "MainPID": "564473",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 564473,
+  "created": 1790550970.17,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_stable_indel_refinements.py"
+  ],
+  "plan_sha256": "09abd894b4b50b18b8d608f6b0627bc13c14ecdb67c952c27c59508a5e527f80",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      1,
+      72
+    ],
+    "paid_cost": 0
+  }
+}
