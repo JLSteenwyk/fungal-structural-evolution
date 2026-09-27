@@ -5336,3 +5336,14 @@ identity, coverage and least-squares RMSD will be reconstructed. Native fixture
 and missing-disposition rejection passed. TM-scores are checked against native
 text only. Production readback is waiting. See
 [domain workflow](duplication-domain-controls-20260926.md).
+
+
+### September 26: duplication structural-coverage denominators running
+
+Complete native event tables are being independently reconstructed for all
+reported terminal singleton-side duplications, including zero/one-model cases
+outside the structural pair queue. Taxon and family summaries retain all
+sampled taxa and distinguish zero denominators from zero coverage. This
+quantifies frozen model ascertainment; it does not correct sampling bias or
+establish biological duplication history. See
+[coverage analysis](duplication-sampling-coverage-20260926.md).
