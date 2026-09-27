@@ -6456,3 +6456,20 @@ See [checker scope and resources](terminal-sister-backgrounds-20260927.md#full-b
 The previous goal turn made progress by queuing all new background comparisons;
 this turn adds their independent full-result verification stage. All eight aims
 remain open and in scope. GPU prediction remains paused; the goal remains active.
+
+## September 27 taxonomic support concentration verified
+
+Summarized every architecture-support row by taxon, guide, qualification set and
+annotation policy, then independently verified all 3,672 output cells. Under the
+strict alignment-E-value/1.5-distance definition, supported targets occur in
+143 of 153 observed target taxa, with five taxa contributing 36.469% of supported
+records. Focal-taxon backgrounds support at least one target in only 81 taxa.
+This adds an explicit uneven-sampling diagnostic for the duplication test and
+motivates taxon-balanced and leave-one-taxon-out sensitivity analyses. Counts
+represent availability, not matched effects or independent evolutionary events.
+See [taxonomic concentration](terminal-sister-backgrounds-20260927.md#taxonomic-concentration-of-matching-support).
+
+The prior goal turn queued numerical verification; this turn completes a new
+full-data sampling diagnostic. Rate optimization and accessibility services were
+confirmed running; their downstream stages remain pending. The full eight-aim
+goal remains active, and GPU prediction remains paused.

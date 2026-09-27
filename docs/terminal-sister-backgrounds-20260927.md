@@ -532,3 +532,37 @@ Resources: one CPU, 16 GiB RAM, no swap, estimated 1 GiB output and uncalibrated
 1–48 hours after producer completion. All 285,800 possible dispositions are in
 scope. No GPU or paid infrastructure is used. Plan, script hashes, dependency
 identity and checker launch are versioned in metadata.
+
+## Taxonomic concentration of matching support
+
+Regrouped all 2,621,676 verified architecture-support rows into 3,672
+separate guide/background-set/policy/taxon cells. The output preserves all
+153 observed target taxa, including zero-support taxa, architecture categories,
+identical-model target counts, unique family counts and support at all three
+sequence-distance ranges, with focal-taxon counts separately. An independent
+pandas implementation verified every aggregate and concentration statistic.
+Commands, hashes and all 24 guide/set/policy summaries are recorded in
+`metadata/architecture_support_taxa_completed_20260927.json`; the full table is
+`results/orthology/architecture-support-taxa-20260927-v1/taxon_support.tsv`.
+
+For the alignment-E-value policy and the stricter both-guide/unreported-parent
+background set, a multiplicative 1.5 sequence-distance range yields 18,454
+supported target records in either guide. They occur in 143 of the 153 observed
+target taxa; only 81 taxa have any supported target with a background that
+includes the focal taxon. Five taxa account for 36.469% of supported targets:
+F1507870, F5486, F28583, F5219 and F423460. Guide totals are sensitivity results,
+not independent replicates or counts to add together.
+
+This is availability, not completed matching. The denominator is modeled
+terminal duplicate targets, not the complete 526-taxon sampling or all genes.
+Taxa absent from that observed target universe are not represented by zero rows.
+Identical-model targets remain explicit, and missing/different architectures
+remain outside this conserved-architecture comparison without being discarded
+from the larger project. Counts do not establish independent evolutionary events.
+
+The concentration motivates reporting taxon-balanced as well as event-weighted
+effects, leave-one-taxon-out sensitivity, and family/shared-ancestry adjustments
+when structural responses are ready. Equal taxon weighting alone does not
+correct phylogenetic dependence, missing structural coverage or assembly and
+gene-copy uncertainty. Domain-architecture-changing events remain a separate
+analysis, rather than being generalized from these conserved controls.

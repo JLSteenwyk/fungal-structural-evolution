@@ -1,0 +1,479 @@
+{
+  "status": "complete_taxon_architecture_support_summary_pending_readback",
+  "source_bindings": {
+    "results/orthology/architecture-matched-background-support-20260927-v1/receipt.json": "6cccaf1a544b0065e3441f6d93b8e5aec3cc3fb0e237bc7b124428166bf8114c",
+    "metadata/architecture_matching_support_completed_readback_20260927.json": "51831285140ad43e97a9465b37f9261188753e89193d2f5a92757fe5679415d5",
+    "results/orthology/architecture-matched-background-support-20260927-v1/architecture_support.tsv": "bdc8d504ef1565c96b4184860dc85cb0e4b87d1a78630b13a4d1e9e2631514dd"
+  },
+  "source_rows": 2621676,
+  "taxon_strata": 3672,
+  "summary": [
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19438,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3588332132935487,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19439,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.359226297649056,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19395,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.35880381541634443,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19396,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.3591977727366467,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 18451,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 80,
+      "top_five_supported_target_fraction": 0.36437049482412875,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 18454,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.364690581987645,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 18416,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 80,
+      "top_five_supported_target_fraction": 0.36435708079930496,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 18419,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3646777783810196,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "guide_native_ortholog",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19440,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3587962962962963,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "guide_native_ortholog",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19441,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.3591893421120313,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "guide_native_ortholog",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19397,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3587668196112801,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "mafft",
+      "background_set": "guide_native_ortholog",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109228,
+      "supported_targets_1_5": 19398,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.3591607382204351,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19438,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3588332132935487,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19439,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.359226297649056,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19395,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.35880381541634443,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_native_ortholog",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19396,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.3591977727366467,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 18451,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 80,
+      "top_five_supported_target_fraction": 0.36437049482412875,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 18454,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.364690581987645,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 18416,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 80,
+      "top_five_supported_target_fraction": 0.36435708079930496,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "both_guides_unreported_parents",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 18419,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3646777783810196,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "guide_native_ortholog",
+      "policy": "alignment_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19439,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.35881475384536243,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "guide_native_ortholog",
+      "policy": "alignment_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19440,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.35920781893004117,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "guide_native_ortholog",
+      "policy": "envelope_bitscore",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19396,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 81,
+      "top_five_supported_target_fraction": 0.3587853165601155,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    },
+    {
+      "guide": "profile",
+      "background_set": "guide_native_ortholog",
+      "policy": "envelope_evalue",
+      "target_taxa": 153,
+      "targets": 109245,
+      "supported_targets_1_5": 19397,
+      "supported_taxa_1_5": 143,
+      "focal_supported_taxa_1_5": 82,
+      "top_five_supported_target_fraction": 0.35917925452389543,
+      "top_five_taxa": [
+        "F1507870",
+        "F5486",
+        "F28583",
+        "F5219",
+        "F423460"
+      ]
+    }
+  ],
+  "artifacts": {
+    "taxon_support.tsv": "87491669e9b002cbe9f2349099ac0a491d128d773815c0dfce58a83241899d3e"
+  },
+  "scope": "Availability only: each guide/set/policy has its own denominator of modeled terminal duplicate targets, not all fungal genes or taxa. Zero-support target taxa retained; entirely absent taxa are outside this observed denominator. Guides are sensitivity alternatives, not replicates. Identical-model targets retained explicitly. No actual matching, structural effects, causal inference or clade coverage claim.",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_architecture_support_taxa.py",
+      "--source",
+      "results/orthology/architecture-matched-background-support-20260927-v1",
+      "--proof",
+      "metadata/architecture_matching_support_completed_readback_20260927.json",
+      "--output",
+      "results/orthology/architecture-support-taxa-20260927-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_architecture_support_taxa.py",
+      "--source",
+      "results/orthology/architecture-matched-background-support-20260927-v1",
+      "--summary",
+      "results/orthology/architecture-support-taxa-20260927-v1",
+      "--output",
+      "metadata/architecture_support_taxa_completed_readback_20260927.json"
+    ]
+  ],
+  "pins": {
+    "scripts/summarize_architecture_support_taxa.py": "5634bab7a73df8bc09cf5c02dee6d9f407adcb5587d8d2b4a8318495abec1c96",
+    "scripts/readback_architecture_support_taxa.py": "2a2ea23de88839287258b582c9f3b063bdc4294fcef3f4e9d66967ca3fb945d6",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/architecture-support-taxa-20260927-v1/receipt.json": "a9e9fc81c2e4ebe8ce651b2517fcad86776f7bb9af4e8b4ef545bb06ad01157a",
+    "results/orthology/architecture-support-taxa-20260927-v1/taxon_support.tsv": "87491669e9b002cbe9f2349099ac0a491d128d773815c0dfce58a83241899d3e",
+    "metadata/architecture_support_taxa_completed_readback_20260927.json": "ab3dde3293cc768777d2bc7dd32de2760d8d47d7b0a11cc98640b28a1d52ac20"
+  },
+  "verification": "Full independent pandas regrouping passed for every source row and output cell; see completed readback."
+}
