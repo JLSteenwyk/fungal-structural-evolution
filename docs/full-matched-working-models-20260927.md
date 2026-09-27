@@ -89,3 +89,28 @@ readback accepted 28,784 original certificates; a separately documented
 nonnegative-weight construction supported the remaining 24 within the unchanged
 1e-8 scaled tolerance. This clears the numerical reference-support diagnostic,
 not the pending covariance, optimization, uncertainty or biological gates.
+
+## Complete reporting grid queued
+
+After terminal success of the analytic-stationarity readback,
+`scripts/export_matched_model_grid.py` will export all 144,040 unique fits and
+all 414,720 original setting/tree combinations. Every fit retains original
+status, analytic assessment, explicit numerical-review reasons, source-file
+hash, coefficients in original units, conditional intercept variance, profiled
+scale, objective and variance ratios. Omitted covariates remain null, never
+zero. Failed fits retain their inventory record counts and missing estimates.
+All original and projected joint-support dispositions remain joined to settings.
+
+The exporter requires the full source-receipt chain and hashes, recomputes review
+flags through the separately checked scalar logic, verifies the complete
+input-by-tree key set, checks record counts, and reads both Parquet exports back.
+Every expanded field must be constant across settings reusing a unique fit.
+Native coefficient, omitted-covariate and failed-fit retention checks passed;
+these are export checks, not model validation or calibrated inference.
+
+Plan/launch: `metadata/matched_model_grid_export_{plan,launch}_20260927.json`.
+Output: `results/structural_comparisons/full-working-model-grid-export-20260927-v1`.
+The queued stage has one CPU, 8 GiB RAM, no swap, a 2 GiB output allowance, and
+0.1–8 hours planned after the upstream readback. No confidence intervals,
+p-values or biological effects are inferred by the export. Full-grid execution
+is pending; this creates the reporting input for subsequent model assessment.

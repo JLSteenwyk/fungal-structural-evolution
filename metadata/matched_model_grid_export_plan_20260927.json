@@ -1,0 +1,31 @@
+{
+  "dependency_launch": "metadata/full_analytic_stationarity_readback_launch_20260927.json",
+  "analytic_readback": "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1",
+  "analytic_source": "results/model_validation/full-working-model-analytic-stationarity-20260927-v1",
+  "production": "results/structural_comparisons/full-matched-working-models-20260927-v1",
+  "support": "results/model_validation/joint-support-projection-20260927-v1",
+  "output": "results/structural_comparisons/full-working-model-grid-export-20260927-v1",
+  "pins": {
+    "scripts/readback_full_analytic_stationarity.py": "308acdbe2148a66ddcd4b5f87bf1cfd27f2120ab69819fe1693fae2bdf31a271",
+    "scripts/check_analytic_stationarity_readback.py": "59d9d70aaea4b1a95e75f16ae86a6bfe73c415fda3243dac0d5b889a81ae00d2",
+    "metadata/analytic_stationarity_readback_checks_20260927.json": "5d9b3ed4fb03f94f131223689aa8dfc36b1f39a4695107253d0c483854531fb2",
+    "metadata/full_working_model_analytic_stationarity_plan_20260927.json": "d6ae934b69eb2846b08785b41550742519ec21850cbd2aae8bb7af1c5de611d3",
+    "metadata/full_working_model_analytic_stationarity_launch_20260927.json": "fae895d3d3298982a23f7b4d6a6dffae3683938e081089cc3148bb3fa1388a69",
+    "scripts/export_matched_model_grid.py": "dc524d9c8979cd35357e4ed4cdab71a4fed73c08345acc628a5d2a2d3fbe1927",
+    "metadata/matched_model_grid_export_checks_20260927.json": "d2069bc78a87a055fb221aadefe3557811e70b52460420e1669c17e9d204be0d",
+    "metadata/full_analytic_stationarity_readback_launch_20260927.json": "0025679f45e84550e90e05d3ac587cfa9833784a829b99ba8dc25852b3c00ad2",
+    "metadata/joint_support_completed_20260927.json": "3b9b52be6d618f98779acf563f2488c592dc330fcdeec335d60c4e16274ea580",
+    "results/model_validation/joint-support-projection-20260927-v1/receipt.json": "db7bad57523ba93fc74a0591f03303047df8a0c787d6a1ea54f865aa401d67c4",
+    "results/model_validation/joint-support-projection-20260927-v1/full_setting_projection.tsv": "47d345eb9f148e8b515e88d5085a2bf2dc3a915095d694d71337bb6a4a0ffb11"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_readback": [
+      0.1,
+      8
+    ]
+  }
+}
