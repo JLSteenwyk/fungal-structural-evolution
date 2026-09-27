@@ -1,0 +1,77 @@
+{
+  "status": "complete_verified_primary_order_summary",
+  "pair_mask_rows": 206400,
+  "distinct_pairs": 103200,
+  "numerically_usable_directions": 387319,
+  "missing_input_directions": 25154,
+  "numerically_excluded_directions": 327,
+  "pair_categories": {
+    "full:both_orders_numerically_usable": 103200,
+    "plddt70:both_orders_numerically_usable": 90442,
+    "plddt70:both_orders_input_unavailable": 12577,
+    "plddt70:one_order_numerically_usable": 35,
+    "plddt70:both_orders_excluded_numerically": 146
+  },
+  "ordered_dispositions": [
+    {
+      "mask": "full",
+      "order0_status": "aligned",
+      "order1_status": "aligned",
+      "pairs": 103200
+    },
+    {
+      "mask": "plddt70",
+      "order0_status": "aligned",
+      "order1_status": "aligned",
+      "pairs": 90442
+    },
+    {
+      "mask": "plddt70",
+      "order0_status": "aligned",
+      "order1_status": "excluded_numerically",
+      "pairs": 9
+    },
+    {
+      "mask": "plddt70",
+      "order0_status": "excluded_numerically",
+      "order1_status": "aligned",
+      "pairs": 26
+    },
+    {
+      "mask": "plddt70",
+      "order0_status": "excluded_numerically",
+      "order1_status": "excluded_numerically",
+      "pairs": 146
+    },
+    {
+      "mask": "plddt70",
+      "order0_status": "input_unavailable",
+      "order1_status": "input_unavailable",
+      "pairs": 12577
+    }
+  ],
+  "numeric_values_independently_checked": 4647688,
+  "terminal_states": {
+    "fungal-primary-usable-orders-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-usable-orders-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/primary_usable_orders_plan_20260927.json": "03f7502ae9c629b4a33d176a65fdc9429dfe1e7167e11b9656e08b3959fa36ee",
+    "metadata/primary_usable_orders_launch_20260927.json": "903d6b06237f5a5fa2109742009c9813d318e32c6ae673ea9e001a20c87adfd1",
+    "metadata/primary_usable_orders_readback_launch_20260927.json": "d26909b19d26e89c88f8911bab3d94003334754602f98c9aaaed82347fdf887e",
+    "metadata/primary_usable_orders_readback_20260927.json": "3cdd7ba94784a89d8e34139055af6cf5ab030ec07d2a529dd59ae818ee929eb5",
+    "results/structural_comparisons/primary-usable-orders-20260927-v1/receipt.json": "e755922a32ff137b0041787a839098f097f4c0da19f5191d52f9e0d3dc0ef74c",
+    "results/structural_comparisons/primary-usable-orders-20260927-v1/pair_mask_order_summary.tsv": "d2fd874884395a6d59a11657ef673537ebf87f383f0cccb7128a49f8035b50f6",
+    "metadata/primary_diagnostic_geometry_readback_20260927.json": "5e101dab890b72c779ccd7c0f4c72d484149ad5d4048f44b64491f945e0a3740"
+  },
+  "script_sha256": "3017d487fedb3dab6812a70d32064b25b815084495f76480e13593dbd98cd1b3",
+  "scope": "Complete audited eligibility ledger, including input-unavailable and asymmetric order qualification. Pair counts are numerical disposition counts, not independent events, confidence/coverage-qualified comparisons or biological effects. Full-mask and confidence-mask results are dependent."
+}

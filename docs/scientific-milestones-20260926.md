@@ -33,8 +33,8 @@ Chronological receipts and process records remain in [progress](progress.md).
   and remain excluded from unique-rotation interpretation. Geometry production
   and full independent readback passed all 387,646 successful alignments. The
   327 degenerate mappings exactly match the short-alignment census. Usable-order
-  production is complete with readback active; residue-correspondence sensitivity
-  waits on that check. The
+  production and full readback passed all 206,400 pair/mask rows; residue-
+  correspondence sensitivity is running. The
   failed strict audit remains preserved. Reference geometry/order sensitivity is
   verified; background alignments and whole-protein triad comparisons remain open.
 - Domain comparisons, common-core numerical verification, alternative-setting

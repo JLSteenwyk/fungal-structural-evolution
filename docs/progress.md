@@ -8235,3 +8235,20 @@ The queued usable-order producer then completed all 206,400 pair/mask rows.
 Its full independent readback is active; raw producer totals are not yet treated
 as independently accepted order-summary results. Original strict failure and
 all short/discrepant exclusions remain unchanged.
+
+### September 27: complete primary order summary independently verified
+
+Producer and checker terminated successfully. All 206,400 pair/mask rows and
+4,647,688 numeric values passed full readback. Full input has both orders usable
+for every one of 103,200 pairs. Masked input retains 90,442 pairs in both orders,
+35 in only one order, 146 excluded in both and 12,577 without usable inputs.
+The asymmetric cases split nine order-0-only and 26 order-1-only. All 327
+numerical exclusions and 25,154 missing-input dispositions reconcile exactly;
+no favorable input order is substituted.
+
+Closure script: `record_primary_order_summary_completion.py`; full readback and
+closure records: `metadata/primary_usable_orders_readback_20260927.json` and
+`metadata/primary_order_summary_completed_20260927.json`. Residue-correspondence
+sensitivity started automatically after successful verification and is actively
+processing 193,642 two-order pair/mask comparisons. These counts remain numerical
+qualification, not biological duplication evidence.

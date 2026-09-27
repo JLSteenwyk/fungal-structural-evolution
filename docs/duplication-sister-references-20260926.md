@@ -415,3 +415,40 @@ python scripts/prepare_duplication_sequence_covariates.py \
 This small table transformation uses one CPU and no GPU, with no new native
 phylogenetic fitting. Structural-response joins, sequence-conditioned tests,
 family/phylogenetic dependence and nonduplication controls remain unfinished.
+
+## Primary whole-protein numerical qualification (September 27)
+
+Full primary geometry and input-order readbacks now pass. All 387,646 successful
+native mappings were reconstructed and checked; 327 short mappings are
+numerically degenerate, exactly matching the separate one-/two-residue census.
+The original strict audit failure remains preserved. All 27 native RMSD rounding
+discrepancies occur among these excluded two-residue mappings.
+
+The complete order-summary readback verifies 206,400 pair/mask rows and 4,647,688
+numeric values, retaining all 103,200 primary model pairs:
+
+| Numerical disposition | Full protein | pLDDT ≥70 masked input |
+|---|---:|---:|
+| Both input orders usable | 103,200 | 90,442 |
+| One input order usable | 0 | 35 |
+| Both orders numerically excluded | 0 | 146 |
+| Both orders lack usable inputs | 0 | 12,577 |
+
+The 35 asymmetric cases comprise nine with only order 0 usable and 26 with only
+order 1 usable. Neither order is selected to rescue the pair for two-order
+sensitivity analysis. The 146 double exclusions plus 35 single exclusions
+account for all 327 excluded directions. Missing masked inputs account for
+25,154 directed dispositions. Thus masking changes measurement availability as
+well as the coordinates being compared; pair membership must be held constant
+for a direct mask-sensitivity contrast.
+
+These are numerical eligibility counts, not independent evolutionary events or
+coverage-qualified biological comparisons. Source controls, aligned fraction,
+domain orientation, prediction uncertainty, phylogenetic dependence and matched
+backgrounds remain relevant. The residue-correspondence sensitivity stage now
+examines all 193,642 pair/mask comparisons having two usable input orders, with
+90,442 pairs shared across the two masks. Its independent check remains pending.
+
+Source-bound closure records:
+`metadata/primary_diagnostic_geometry_completed_20260927.json` and
+`metadata/primary_order_summary_completed_20260927.json`.
