@@ -1,0 +1,17 @@
+{
+  "status": "complete_all_case_experimental_residue_correspondences",
+  "script_sha256": "c3b5484939d19ef64a790bb47d910134cac5f8aa0272a28e5084b8024fd37209",
+  "sequences": 39,
+  "contexts": 3091,
+  "paired_residue_occurrences": 1419058,
+  "identical_residue_occurrences": 621030,
+  "query_residues_aligned_to_gap": 138892,
+  "subject_residues_aligned_to_gap": 68232,
+  "artifacts": {
+    "residue_correspondences.jsonl.gz": "a5e20189b4359688d181793dae7ee11112d05fb73b5b1464c9a4f1b63e4b055e",
+    "sequence_dispositions.json": "a2e5a69e2934fd1670b9ce0641e62181a14c2df65a465e2aa40f3a2437b302ed"
+  },
+  "scope": "All search contexts retained, including integrative candidates. One-based query/entity coordinates and insertion/deletion positions reconstructed against exact canonical sequences; independently checked by alignment-column indexing. Paired occurrences are not independent observations, observed experimental residues, or a common-residue fit. No structural or functional conclusion.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1/receipt.json",
+  "source_receipt_sha256": "6fa80439bd6d2a2db945db6e7ffe3c4efb95cff77c05d18164f84ab4da01e299"
+}

@@ -286,3 +286,23 @@ Artifacts are `annotated_candidate_entities.tsv` and
 `results/experimental_structures/whole-domain-case-metadata-links-20260927-v1`.
 Full source bindings and the independent readback are recorded in
 `metadata/case_experimental_metadata_links_completed_20260927.json`.
+
+## Exact query/experimental residue correspondences completed
+
+`prepare_case_experimental_residue_pairs.py` froze all 3,091 alignment contexts
+for the 39 queries. It records 1,419,058 paired residue occurrences, including
+621,030 identical pairs, plus 138,892 query residues and 68,232 subject residues
+aligned to gaps. All positions are one-based in the original canonical sequence.
+Each mapping was reconstructed against both exact sequences and independently
+checked using alignment-column indexing. All twelve no-hit queries remain in
+the sequence-disposition table.
+
+These mappings are inputs for intersecting fungal A/B/reference correspondences
+with a single observed experimental chain/model. They do not themselves establish
+observed coverage, equivalent conformational states or a common-residue geometric
+fit. The integrative candidate remains in this sequence-only inventory and must
+remain excluded from experimental-coordinate analyses. All occurrences and
+contexts are retained rather than counted as independent observations.
+
+Output: `results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1`.
+Closure: `metadata/case_experimental_residue_pairs_completed_20260927.json`.

@@ -8607,3 +8607,12 @@ entities (100 entries) from one integrative entity. Phycomyces has mutations
 reported for 17 of its 26 alignment-qualified entities. All annotations remain
 explicit without quality-based selection; actual coordinate coverage is pending.
 See [case table](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: exact experimental residue correspondence inputs completed
+
+Exported all 3,091 search contexts with exact query/subject position pairs and
+explicit gap positions. Both canonical sequences and independent alignment-column
+indexing passed for all 1,419,058 paired occurrences. These inputs support fair
+common-residue geometric comparisons; they are not observed-coverage or structural
+results. Experimental CA mapping remains active, as do the large model-fitting,
+background-alignment and codon multistart jobs checked this turn.
