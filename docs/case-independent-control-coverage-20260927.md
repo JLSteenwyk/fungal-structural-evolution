@@ -177,3 +177,23 @@ The closure is `metadata/case_experimental_coordinates_completed_20260927.json`.
 The residue-mapping service has now passed its prerequisite gate and is writing
 per-entry residue tables. Those tables are not yet a completed or independently
 validated coordinate-coverage analysis.
+
+## Full raw-coordinate readback queued
+
+`readback_case_experimental_ca_mapping.py` waits on the exact recorded mapping
+PID, creation time and command, then requires successful terminal service state.
+It checks all 706 entries against the original mmCIF files, not a sample: every
+selected entity sequence, chain/model grid, full sequence position, exported CA
+atom field and observation status. It also checks that no selected raw CA record
+was omitted. Status logic is separately implemented; eight fixtures covering
+missing, multiple, modified, invalid, alternate/partial and unambiguous records
+passed. The producer and checker share Biopython's mmCIF parser, so parser
+independence is not claimed.
+
+The checker will export `chain_model_coverage.tsv` under
+`results/experimental_structures/whole-domain-case-ca-readback-20260927-v1`.
+This is experimental entity coverage, not fungal-query or domain coverage;
+projection through all recorded search alignments remains required. The launch
+record is `metadata/case_experimental_ca_readback_launch_20260927.json`.
+Resources are one CPU, 4 GiB RAM, no swap, 0.2 GiB output and a 1–12 hour planning
+allowance. The checker is queued; its validation has not yet completed.

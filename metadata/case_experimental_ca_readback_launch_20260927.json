@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-case-experimental-ca-readback-20260927.service",
+  "pid": 413565,
+  "created": 1790539917.51,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_case_experimental_ca_mapping.py"
+  ],
+  "script_sha256": "de18278ea4761a2f0c72a628c712a46b08530a86eb17ceb2209157fd9ced9132",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours": [
+      1,
+      12
+    ]
+  },
+  "validation": "Eight independent status fixtures passed; full raw-coordinate validation queued behind successful mapping termination."
+}

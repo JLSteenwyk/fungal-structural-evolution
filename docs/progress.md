@@ -8571,3 +8571,12 @@ readback successfully: 962 MB compressed, 4.39 GB decompressed. Every identity,
 hash, size and gzip-integrity check passed. Residue mapping has started and is
 producing per-entry tables; observed coverage and geometry remain unvalidated.
 Completion evidence: `metadata/case_experimental_coordinates_completed_20260927.json`.
+
+### 2026-09-27: full experimental residue readback queued
+
+Residue mapping is active. Added and launched a terminal-gated verifier covering
+every original coordinate file and every exported atom, residue position,
+chain/model grid and observation status. Eight classification fixtures passed.
+The verifier will retain all chain/model coverage results and does not substitute
+entity sequence coverage for observed query/domain coverage. Full validation is
+pending. See [validation scope](case-independent-control-coverage-20260927.md).
