@@ -772,3 +772,32 @@ Resources: one CPU, 24 GiB RAM, no swap, negligible receipt output, uncalibrated
 0.1–4-hour planning range; no native structural comparisons, GPU or new charges.
 The full objective, including architecture-changing events and phylogenetic
 adjustment, is unchanged by this conserved-architecture candidate graph.
+
+## Candidate graph verified; endpoint covariates running
+
+Full independent graph verification passed all 218,473 target nodes, 155,616
+background nodes, 1,661,948 edges, 873,892 target/policy dispositions and all
+2,621,676 support-table rows. The proof is archived as
+`metadata/background_match_graph_completed_readback_20260927.json`.
+
+Started full-edge length/confidence characterization. For each of the two
+possible endpoint correspondences, retain the maximum endpoint length ratio,
+absolute mean-CA-pLDDT difference and absolute low-confidence-fraction difference.
+Three prespecified descriptive sensitivity bands require all three quantities
+to be within (1.1, 5, 0.05), (1.25, 10, 0.1) or (1.5, 15, 0.2), respectively.
+At least one *single* correspondence must pass all components; favorable values
+from different correspondences cannot be mixed. These are matching tolerances,
+not validated model-reliability thresholds. Both raw mappings remain available.
+
+All graph edges remain explicit. Shared genes, model/version identities and
+sequence hashes are counted to expose dependence and potential trivial matches.
+No exclusion or final match selection is claimed. Confidence balancing can
+change the estimand and cannot eliminate sequence-derived prediction circularity.
+Length/confidence handling does not replace alignment coverage, PAE, domain
+orientation or phylogenetic controls.
+
+Known cases passed identity, endpoint swaps, invalid covariates and a deliberate
+case where lengths match only under one orientation and confidence only under
+the other (correctly failing joint calipers). Resource plan: one CPU, 8 GiB RAM,
+no swap, 2 GiB output, uncalibrated 0.1–4 hours. Production and full independent
+covariate verification remain pending; no structural responses or GPUs are used.

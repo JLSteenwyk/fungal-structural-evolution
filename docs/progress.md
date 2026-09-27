@@ -6582,3 +6582,19 @@ control selection remain pending. See
 The prior goal turn launched graph construction; this turn confirms successful
 production and advances its full independent check. All eight aims remain open
 and active. GPU prediction remains paused.
+
+## September 27 graph verification complete; covariate assessment running
+
+The full candidate graph passed independent source-node, edge eligibility and
+support-completeness verification. Archived the proof and started endpoint
+length/confidence characterization for all 1,661,948 edges, retaining both
+possible endpoint mappings and shared-gene/model/sequence flags. Three explicit
+joint tolerance bands are sensitivity settings, not model-quality guarantees.
+Known cases passed, including rejection of mixing favorable components across
+opposite endpoint mappings. Production covariate assessment, independent
+readback and final matching remain pending. See
+[graph proof and covariate definitions](terminal-sister-backgrounds-20260927.md#candidate-graph-verified-endpoint-covariates-running).
+
+The previous turn launched graph verification; this turn completes that
+milestone and advances matching quality assessment. All eight scientific aims
+remain active. GPU prediction stays paused.
