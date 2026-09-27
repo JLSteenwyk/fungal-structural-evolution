@@ -252,3 +252,40 @@ Known-tree tests passed all six statuses, ties, four known distances,
 isolation from a very long ancestral edge, six deliberately corrupted export
 fields and malformed-tree rejection. Reproduce these with
 `python scripts/check_duplication_sister_reference_readback.py`.
+
+## Additional alignment-input preparation queued
+
+`scripts/materialize_duplication_reference_inputs.py` is queued behind the
+exact supplementary coordinate-readback process. It requires a successful
+readback bound to the coordinate producer and the reference inventory, checks
+the exact additional-model partition again, and verifies every source record's
+model, version, raw-file path/hash and sequence hash. Every coordinate shard
+must have a matching independent proof. It produces full and pLDDT>=70
+C-alpha PDBs using the same serializer as the primary workflow, preserving
+original residue positions, masked sequences and file hashes. Short masks and
+rejected source models remain explicit dispositions.
+
+The planned scope is 14,540 models and 29,080 model/mask dispositions. Resources
+are one CPU, 8 GiB RAM, no swap, a 4 GiB output planning allowance and a 100 GiB
+free-disk reserve; uncalibrated runtime range 0.1–8 hours after the readback.
+The job uses no GPU or paid services. Configuration and exact process identity
+are in `metadata/duplication_reference_alignment_input_plan_20260926.json`
+and the corresponding launch record. Reproduce with:
+
+```bash
+python scripts/materialize_duplication_reference_inputs.py \
+  --plan metadata/duplication_reference_alignment_input_plan_20260926.json
+```
+
+Output will be
+`results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/`.
+Its completion status explicitly identifies additional reference inputs.
+A synthetic completed handoff passed full, sparse-mask, empty-mask and
+source-rejected cases, written-coordinate hashes and altered-proof rejection:
+`python scripts/check_duplication_reference_materialization.py`.
+
+Production input preparation is waiting, not complete. Reference-pair
+alignment orchestration still needs to combine these additional inputs with
+the relevant audited primary inputs. Full and masked scores normalize to
+different retained lengths; no PAE or domain-orientation qualification is
+implied by serialization.

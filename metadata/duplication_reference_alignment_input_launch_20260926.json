@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-reference-alignment-inputs-20260926.service",
+  "pid": 144399,
+  "created": 1790471776.77,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_duplication_reference_inputs.py",
+    "--plan",
+    "metadata/duplication_reference_alignment_input_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_reference_alignment_input_plan_20260926.json",
+  "plan_sha256": "317527ee77c300ce2f5042d266c2cfd0af9294a1310494e06606e5517d487df2",
+  "fixture": "Synthetic bound inventory/coordinate/readback handoff: full, sparse mask, empty mask and rejected-source dispositions, output hashes and altered-proof rejection passed."
+}

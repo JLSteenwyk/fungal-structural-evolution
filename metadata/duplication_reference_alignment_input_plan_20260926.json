@@ -1,0 +1,57 @@
+{
+  "producer": {
+    "pid": 139215,
+    "created": 1790471370.97,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_duplication_coordinates.py",
+      "--plan",
+      "metadata/duplication_reference_coordinate_readback_plan_20260926.json"
+    ]
+  },
+  "readback": "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1",
+  "readback_plan": "metadata/duplication_reference_coordinate_readback_plan_20260926.json",
+  "coordinates": "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1",
+  "coordinate_plan": "metadata/duplication_reference_coordinate_validation_plan_20260926.json",
+  "output": "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1",
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/event_reference_comparisons.tsv": "692dc046eb280c1f129c05b2a47a674a3e56ff2c836b34fca9176d2afd6f2731",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/additional_models.jsonl": "1d6289a600251cfb431e13d57343685def9fb5de61375e8a72ca56756210eab3",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/check_duplication_reference_coordinates.py": "72e015d969350f93c596e42a7fc1b01f987664490c8a8a798557611a9d8db6f3",
+    "metadata/duplication_reference_coordinate_validation_plan_20260926.json": "34171f71fd3e472b2d7f5738894044d4ead4b7ef7d923878f2a92852eea55904",
+    "metadata/duplication_reference_coordinate_validation_launch_20260926.json": "7ee786c4cd740417b0da82a9f965614f97dd7ee74e9bd59dc8008798bd1a3383",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "metadata/duplication_reference_coordinate_readback_plan_20260926.json": "9f048353a9889e3fa3a5c98094340bc49a32c622ea4dcc7d82fe3f1e51b313a2",
+    "metadata/duplication_reference_coordinate_readback_launch_20260926.json": "32aa1053e22b06c52dc11c8483d5840bee357cdcba454212cf9792e58529cf7f",
+    "scripts/materialize_duplication_reference_inputs.py": "0f6092d62c9de42e1a423fbe0b55ea8da6947ee882466de9a57b6df75715261b",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/check_duplication_reference_materialization.py": "0686d5672b6b55f4661d762f4f3fc116655ed5194ebe57620256fb854f8e836f"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 4,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "models": 14540,
+    "input_dispositions": 29080,
+    "basis": "Wait for independent additional-coordinate readback, then serialize full and pLDDT70 C-alpha PDBs with original residue mapping. Include short masks and rejected sources explicitly. One CPU, no GPU or paid resources; interval uncalibrated, output allowance estimate only."
+  }
+}

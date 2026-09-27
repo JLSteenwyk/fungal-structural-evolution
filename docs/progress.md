@@ -5177,3 +5177,13 @@ intervals and upward edge sums reconstruct sister membership, eligibility,
 nearest ties and sequence distances. Known-tree and corruption tests passed;
 the full one-CPU readback is running, not yet passed. This does not establish
 biological reference orthology. See [reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: supplementary reference alignment inputs queued
+
+Preparation of 29,080 full/confidence-masked dispositions for 14,540 additional
+models is queued behind successful independent coordinate readback. The
+separate driver verifies the exact additional-model partition and source
+identities; completed-handoff and altered-proof fixtures passed. Primary
+jobs remain unchanged. Actual reference-pair alignments and biological
+asymmetry tests are still pending. See [reference workflow](duplication-sister-references-20260926.md).
