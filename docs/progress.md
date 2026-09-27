@@ -7684,3 +7684,20 @@ producer checkpoints advance. One CPU and 12 GiB memory per stage, no swap.
 [Workload scope and methods](full-matched-fit-inventory-20260927.md).
 Full inventory/readback and runtime planning remain pending. All eight aims
 remain open. GPU prediction remains paused.
+
+## September 27 full-size likelihood runtime benchmark completed
+
+The preceding goal turn launched the complete fitting-input inventory and
+independent checker (progress); their producer remains live and advancing.
+Measured 60 synthetic numerical likelihood evaluations at the observed minimum,
+median-bracketing and maximum record/group counts. Full phylogenetic evaluations
+used approximately 2.9, 14, 38 and 160 ms for 148, 980, 2,320 and 10,963 records
+respectively, with one numerical-library thread. The observed record median is
+1,650 between two distinct cohort sizes; both bracketing sizes were retained.
+[Measurements and limits](matched-likelihood-runtime-20260927.md).
+
+The validated synthetic optimizations used 367–790 objective calls each; these
+are not convergence bounds or an ETA for real data. Evidence now supports
+caching invariant grouped sufficient statistics before full fitting, with
+exact-equivalence checks against the existing evaluator. The full covariate
+design readback also remains active. All eight aims remain open; GPU paused.
