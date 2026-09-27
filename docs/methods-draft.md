@@ -589,3 +589,118 @@ proteins and acquisition ascertainment limit inference. These comparisons assess
 source sensitivity on matched sequences; they do not measure experimental
 accuracy or evolutionary substitutions. Reproduction, receipts and the
 confidence/coverage figure are in [prediction-source controls](prediction-source-controls.md#qualified-full-cohort-overlap-diagnostic-september-26).
+
+## Matched domain contrasts and phylogenetic working models (September 27)
+
+The matched analysis retains 192 combinations of domain boundaries, confidence
+masks, cohort, coverage screen and alignment input order, each with 432
+species-guide, annotation-policy and matching-scenario strata. The resulting
+82,944 settings are represented by an audited map to 28,808 exact record inputs.
+Identity requires agreement of both the complete numeric matrix and the ordered
+target, background, family-component and species-pattern identities; numeric
+similarity alone is insufficient for reuse. Each input is fitted under five
+species-tree alternatives, yielding 144,040 unique fits and 414,720 logical
+setting/tree results. These alternatives are correlated sensitivity analyses,
+not independent replicates. The full fitting and validation workflow remains
+in progress.
+
+The response is target-minus-background Cα RMSD, averaged equally over eligible
+domains within each selected record. The four adjustment variables are the
+corresponding exact sequence-identity difference, original-interval coverage
+difference, log aligned-length ratio and joint high-confidence residue-fraction
+difference. The fixed design contains an intercept and varying covariates scaled
+by their population standard deviations without centering. Zero constant
+columns are explicitly omitted; a nonzero constant column stops that fit for
+review. Thus the intercept refers to zero covariate differences, rather than
+the sample-average covariate combination. Full design checks found no remaining
+rank deficiency after constant-column removal. The confidence-difference column
+was constant in 41,472 settings. These checks do not establish adequate overlap
+or remove sequence/prediction confounding.
+
+For record i, the working species effect is the focal-species effect minus one
+half of each background-endpoint species effect. We combine weights when taxa
+coincide. This additive endpoint assumption defines a zero-sum contrast matrix
+W; it does not assume that structural distances themselves are additive. For
+each tree, D contains patristic substitution distances, and the centered kernel
+is C = −HDH/2, with H the centering matrix. D is not squared. The species term
+is W C Wᵀ. Because the rows of W sum to zero, it is invariant to root placement
+for the same unrooted branch-length distances. It is neither a dated covariance
+nor an estimate of structural change per unit time.
+
+The working response covariance is
+
+\[
+\operatorname{Var}(y)=s^2\{I+r_b ZZ^T+r_f GG^T+r_p FF^T\},
+\]
+
+where Z indicates shared backgrounds, G indicates family components joined by
+shared model identities, and F Fᵀ equals the selected species-contrast
+covariance. Backgrounds must nest within family components. The three ratios
+are nonnegative and the overall residual multiplier s² is positive. The full
+species-pattern design has 4,568 rows and rank 242; compact factors retain this
+estimable space without adding diagonal jitter. Independent tree-edge features
+verified all 104,333,120 pattern-pair/tree covariance entries. Numerical agreement
+establishes implementation of this working covariance, not its biological
+adequacy.
+
+We profile s² by restricted likelihood and optimize log(1 + ratio), bounded by
+a variance ratio of 10,000. The optimizer retains all eight zero-component
+faces: the exact all-zero face and three starts (ratios 0.05, 1 and 20) for
+each other face, totaling 22 attempts. Saved candidates include failures,
+objectives, convergence messages and boundary flags. A separate direct evaluator
+checks candidate likelihoods and conditional coefficient calculations. An
+analytic-gradient follow-up is queued to assess stationarity where coarse
+finite-difference diagnostics are inconclusive. Original flags remain preserved.
+Passing numerical checks does not prove a global optimum; conditional covariance
+matrices are not final calibrated uncertainty estimates.
+
+A separate complete-input diagnostic tests whether the equal-covariate reference
+is within the observed joint convex hull. Each covariate is divided by its
+maximum absolute value (one for an all-zero column), without centering. A linear
+program minimizes the largest absolute coordinate of a convex combination of
+records. Saved nonnegative weights and separating vectors are checked against
+the original matrices. Numerical support uses a maximum absolute barycenter
+coordinate of 1e-8; separation requires a minimum projection greater than 1e-7
+with a direction of L1 norm at most one within tolerance. Solver failures,
+invalid certificates and unresolved boundary cases remain explicit. Marginal
+range overlap alone does not pass this joint check, and convex-hull support does
+not establish dense local sampling or causal comparability.
+
+Production details and source-bound validation records are linked in
+[full matched models](full-matched-working-models-20260927.md),
+[species covariance factors](matched-species-covariance-factors-20260927.md),
+[design diagnostics](matched-domain-design-diagnostics-20260927.md) and
+[joint support](joint-covariate-support-20260927.md). Covariance adequacy,
+nonlinear sequence adjustment, calibrated uncertainty and multiplicity treatment
+remain required before interpreting a duplication-associated effect.
+
+## Local coordinate checks at shared functional positions (September 27)
+
+For all 150 exact protein positions jointly observed in the qualified AlphaFold
+and ESMFold functional-annotation datasets, we compared four corresponding
+Cα subsets: the focal residue and its sequence neighbors, the AlphaFold-selected
+partner neighborhood, the ESMFold-selected partner neighborhood, and their
+union. Each context includes the focal neighborhood; repeated positions in a
+context receive only one equal weight. Correspondence uses exact full protein
+sequences and native residue coordinates, not a new structural alignment.
+All 600 comparisons were retained. Raw coordinate hashes and residue sequences
+were checked for 186 source models.
+
+Proper-rotation least-squares RMSD was checked against a quaternion eigensystem;
+intracontext pair-distance differences were independently calculated by scalar
+and vector operations. We retained confidence values and numerical geometry
+status without additional confidence filtering. Summaries distinguish agreement
+in the structural-alphabet state from agreement in the descriptor's selected
+partner residue. The four groups contain 118, nine, 11 and 12 positions for
+same-state/same-partner, same-state/different-partner,
+different-state/same-partner and different-state/different-partner, respectively.
+Each position recurs in all four contexts; these measurements are dependent.
+
+The [four-panel figure](figures/functional_predictor_geometry_20260927.pdf)
+shows all observations and descriptive medians. These matched-sequence controls
+assess prediction-source sensitivity in local backbone geometry. They do not
+measure experimental accuracy, side-chain or pocket agreement, whole-protein
+displacement, ancestral changes or independent evolutionary events. Annotation
+correspondences remain hypotheses about functional positions. Source records,
+reproduction scripts and limitations are described in the
+[functional-site workflow](functional-site-workflow.md).
