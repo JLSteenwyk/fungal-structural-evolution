@@ -1,0 +1,21 @@
+{
+  "status": "resampling_execution_complete_full_output_audit_pending",
+  "recorded_utc": "2026-09-27T04:30:46.707426+00:00",
+  "source": "results/phylogeny/paired-resampling-esmfold-all-completed-20260922-v1",
+  "producer_receipt_sha256": "b89f75b751ef829a95eea89db8424c78d53d3bfbe2adbda357cefcaacf1286e6",
+  "config_sha256": "9a1174563fd6156bc312f2a312e0071d0da002beffc5923f483d49e14a452c13",
+  "markers": 122,
+  "batches": 366,
+  "attempted_paired_draws": 73200,
+  "draw_status_counts": {
+    "completed_draw": 73167,
+    "unestimable_draw": 33
+  },
+  "unestimable_reasons": {
+    "all_missing_taxon": 33
+  },
+  "receipt_reported_native_fits": 146334,
+  "verification": "Exact marker/block/replicate grid, every batch and draw receipt checksum, request checksum, statuses and counts. Native outputs and numerical branch intervals remain under the separately running full audit.",
+  "audit_output": "results/phylogeny/paired-resampling-audit-esmfold-all-completed-20260922-v1",
+  "limitations": "Conditional sampling sensitivity only: no topology, dating, prediction, alignment or model uncertainty. Local blocks do not preserve all nonlocal 3Di feature dependencies; stationary/circular assumptions are not established for proteins. No calibrated acceleration tests or structural/AA ratios."
+}

@@ -5551,3 +5551,18 @@ artifact hashes passed. Warnings remain for 495 fits and are not silently
 excluded. FreeRate fitting is now live. No optimization adequacy or coupling
 conclusion follows from export completion. See
 [Gamma checkpoint](conditional-site-coupling.md#recovered-alphafold-gamma-export-and-audit-completed).
+
+### September 27: expanded ESMFold branch resampling execution complete
+
+Finished all 73,200 attempted paired draws across 122 markers, 200 replicates,
+and block lengths 1, 10 and 30. Verified the exact marker/block/replicate grid,
+all batch and draw receipt checksums, request checksums and completion counts.
+The records contain 73,167 completed draws (146,334 native fits) and 33
+unestimable draws, each reporting an all-missing taxon after resampling.
+These draws remain explicit rather than being replaced or silently removed.
+
+The controller automatically started the full native-output audit; numerical
+interval validation remains pending. Execution completion does not establish
+structural acceleration or biological coupling, and these conditional sampling
+intervals do not include topology, prediction or model uncertainty. See the
+[execution checkpoint](../metadata/completed_esmfold_resampling_execution_20260927.json).
