@@ -1,0 +1,54 @@
+{
+  "producer": {
+    "unit": "fungal-whole-protein-ancestors-20260927.service",
+    "state": {
+      "MainPID": "572780",
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "active"
+    },
+    "pid": 572780,
+    "created": 1790551660.59,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/infer_whole_protein_ancestors.py"
+    ],
+    "plan_sha256": "d04f097d39b58068eb9c4ac0c0eb4de01a4a18f1390e4edc4418566a3542ad24",
+    "resources": {
+      "cpus": 1,
+      "memory_gib": 8,
+      "swap_gib": 0,
+      "output_gib": 3,
+      "planning_hours": [
+        0.5,
+        12
+      ],
+      "paid_cost": 0
+    }
+  },
+  "producer_plan": "metadata/whole_protein_ancestor_plan_20260927.json",
+  "source": "results/ancestral/whole-protein-ancestors-20260927-v1",
+  "output": "results/ancestral/whole-protein-posterior-audit-20260927-v1",
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-07,
+  "pins": {
+    "metadata/whole_protein_ancestor_plan_20260927.json": "d04f097d39b58068eb9c4ac0c0eb4de01a4a18f1390e4edc4418566a3542ad24",
+    "metadata/whole_protein_ancestor_launch_20260927.json": "2445d108d40d60a77b6d7acee0ac7ae5320d19574ccbf005036dbde962332068",
+    "scripts/audit_whole_protein_posteriors.py": "84da18ed810df54c4292d97db574952c362b2cb7168dbceab53b5f69e3979813",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All78 fits234 nodes all20 amino-acid marginals and full columns. Independent fixed-root inside/outside and expm algorithm. X/gaps unknown. Requires producer terminalsuccess and pinned full output manifest. Numerical validation only; optimization sensitivity and final ancestors remain pending."
+}

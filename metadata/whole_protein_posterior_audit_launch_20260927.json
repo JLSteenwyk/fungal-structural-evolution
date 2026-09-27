@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-whole-protein-posterior-audit-20260927.service",
+  "state": {
+    "MainPID": "573579",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 573579,
+  "created": 1790551735.41,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_whole_protein_posteriors.py"
+  ],
+  "plan_sha256": "5cb53e14bb9e9fe7a09eaecefa616b7320ef7b8e873f76c9f1b37d5f403b69ea",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "paid_cost": 0
+  }
+}

@@ -9293,3 +9293,16 @@ OneCPU,8GiB RAM,noGPU; planning0.5–12h and3GiB output. This complements
 the completed domain marginals and running gap models. Independent full
 posterior replay, whole-protein optimization sensitivity, gap compatibility
 and final ancestral sequence ensembles remain pending.
+
+### 2026-09-27: whole-protein probability verification queued
+
+Launched independent fixed-root inside/outside/direct-expm verification
+behind the verified whole-protein producer. Covers all78 fits234 ancestors,
+217,719 node/sites and4,354,380 amino-acid probabilities expected from the
+input alignment widths. Producer terminal success and output artifact hashes
+are required before comparisons; all X/gap evidence remains unknown.
+Probability tolerance1e-8 and site-log-likelihood tolerance1e-7; a two-internal-
+node analytic enumeration check precedes the full comparison. OneCPU,8GiB
+RAM,noGPU; planning0.5–12h plus producer wait and1GiB output. Numerical
+verification, optimization sensitivity and final sequence assembly remain
+pending; expected dimensions are not completed-output counts.
