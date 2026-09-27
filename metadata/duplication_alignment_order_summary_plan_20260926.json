@@ -1,0 +1,60 @@
+{
+  "control": "results/recovery-20260926/duplication-alignment-order-summaries",
+  "stages": [
+    {
+      "name": "primary",
+      "dependency": {
+        "pid": 152125,
+        "created": 1790472323.47,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_duplication_alignments.py",
+          "--plan",
+          "metadata/duplication_alignment_readback_plan_20260926.json"
+        ]
+      },
+      "readback_plan": "metadata/duplication_alignment_readback_plan_20260926.json",
+      "producer": "results/structural_comparisons/duplication-alignments-20260926-v1",
+      "readback": "results/structural_comparisons/duplication-alignment-readback-20260926-v1",
+      "output": "results/structural_comparisons/duplication-alignment-order-summary-20260926-v1"
+    },
+    {
+      "name": "reference",
+      "dependency": {
+        "pid": 152126,
+        "created": 1790472323.5,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_duplication_alignments.py",
+          "--plan",
+          "metadata/duplication_reference_alignment_readback_plan_20260926.json"
+        ]
+      },
+      "readback_plan": "metadata/duplication_reference_alignment_readback_plan_20260926.json",
+      "producer": "results/structural_comparisons/duplication-reference-alignments-20260926-v1",
+      "readback": "results/structural_comparisons/duplication-reference-alignment-readback-20260926-v1",
+      "output": "results/structural_comparisons/duplication-reference-alignment-order-summary-20260926-v1"
+    }
+  ],
+  "pins": {
+    "metadata/duplication_alignment_readback_plan_20260926.json": "17c35642d6d8d2be85d6120acb3811312df83becb7f41cf12f973bd0fb306b81",
+    "metadata/duplication_alignment_plan_20260926.json": "c1be1963e07bbe2edb41a153fabf0f305a318c0f3f6921f2172d2615c82e7537",
+    "metadata/duplication_reference_alignment_readback_plan_20260926.json": "92a85409578a5eb291e56b3eabe6ccd6be5f3f3e7e44205cad76520cc1f25cf4",
+    "metadata/duplication_reference_alignment_plan_20260926.json": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+    "scripts/advance_duplication_alignment_order_summaries.py": "f294fbcf4337c0316297d43f208ea13869df499f52e7375d36ec93ef447335a6",
+    "scripts/summarize_duplication_alignment_orders.py": "9b4448ca0dcc53143752c2ce06f5c2c8192c7e7ffb21472f1f91d3455927fd3a",
+    "scripts/check_duplication_alignment_order_summary.py": "e08ff51ee8c706f72eedf5c4354c72691073e8213ba129a7b47b559d476ecc12",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "estimated_output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "Two completed audited workloads, 135741 unique pairs, two masks per pair. Table-only source joins, no alignments/GPU/charges. Runtime after dependencies is uncalibrated."
+  }
+}

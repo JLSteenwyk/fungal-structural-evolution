@@ -62,3 +62,55 @@ still fails the full-grid readback.
 These checks do not establish structural novelty, ancestry, selection,
 reference orthology, domain orientation reliability or a duplication effect.
 Statistical analysis and interpretation remain separate requirements.
+
+
+## Both-order comparison summaries queued
+
+`scripts/summarize_duplication_alignment_orders.py` consumes only a completed
+alignment run and its source-bound successful numeric readback. The exact
+pair × mask × order grid and numerical-success set must match the producer
+and audit counts. The resulting `pair_mask_order_summary.tsv` retains both
+orders' dispositions and metrics, plus absolute order differences when both
+succeeded. Neither a failed order nor an excluded input receives invented
+numeric values. No favorable-order selection or averaging is performed.
+
+TM-score normalizations and coverage are converted from left/right input
+orientation to the fixed order-0 a/b endpoints. The other retained metrics
+are aligned length, independently recomputed RMSD, exact sequence identity,
+and jointly high-confidence aligned fraction. Confidence is still based on
+rounded PDB values. A TM-score's native normalization is preserved; no
+reoptimization or claim of metric additivity is made. Order differences are
+algorithmic sensitivity measurements, not confidence intervals or biological
+duplicate asymmetry. Failed comparisons remain available for denominator review.
+
+Tests passed known asymmetric endpoint normalization, explicit one-order
+failure, a complete two-mask fixture and rejection of a missing disposition
+even after updating source hashes:
+`python scripts/check_duplication_alignment_order_summary.py`.
+These are software fixtures, not completed production comparisons.
+
+The controller `scripts/advance_duplication_alignment_order_summaries.py`
+waits for the exact primary and supplementary numeric-readback processes,
+requires their matching plan-bound receipts, then creates one immutable
+summary per workload. Plan and process identity are
+`metadata/duplication_alignment_order_summary_plan_20260926.json` and
+`metadata/duplication_alignment_order_summary_launch_20260926.json`.
+Resources are one CPU, 8 GiB RAM, no swap and an estimated 2 GiB output.
+The 0.1–4 hour planning range applies after dependencies and is uncalibrated.
+No new structural alignments, GPUs or paid services are used.
+
+Outputs will be
+`results/structural_comparisons/duplication-alignment-order-summary-20260926-v1/`
+and
+`results/structural_comparisons/duplication-reference-alignment-order-summary-20260926-v1/`.
+The total scope is 135,741 distinct pairs and 271,482 pair/mask rows.
+Production is waiting; event/reference response joins, matched controls,
+phylogenetic tests, confidence/domain sensitivity and biological interpretation
+remain unfinished. Reproduce each summary only after its full audit completes:
+
+```bash
+python scripts/summarize_duplication_alignment_orders.py \
+  --producer <completed-alignment-directory> \
+  --readback <passed-numeric-readback-directory> \
+  --output <fresh-summary-directory>
+```

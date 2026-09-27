@@ -5445,3 +5445,14 @@ collection, full ESMFold conditional coupling and current duplication controls.
 A linked scientific milestone tracker retains all eight original aims and their
 remaining evidence requirements; no aim is marked complete. Current compute
 dependencies, source-specific uncertainty and coverage limitations are explicit.
+
+
+### September 26: audited alignment-order summaries queued
+
+The next table stage retains both alignment orders for all 135,741 distinct
+primary/reference pairs and both masks. Endpoint-normalized TM-scores and
+coverage, RMSD, identity, confidence fractions and order differences remain
+explicit, including failed-order dispositions. Known reversal/failure/full-grid
+and rehashed missing-record tests passed. The one-CPU controller waits for both
+complete numeric audits; no production summary or biological effect is claimed.
+See [order summaries](duplication-alignment-readback-20260926.md#both-order-comparison-summaries-queued).
