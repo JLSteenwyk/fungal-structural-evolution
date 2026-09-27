@@ -55,3 +55,35 @@ The completion receipt is
 `metadata/domain_anchored_displacement_completed_20260927.json`. Biological
 localization, confidence qualification and prediction-error calibration remain
 separate stages.
+
+## Original-length coverage checks
+
+`screen_domain_anchored_displacement.py` completed all 4,992 partition/screen
+rows and 78 case/screen rows. The anchor denominator is each original annotated
+domain interval; the outside denominator is the original protein length minus
+that interval. Every one of the three proteins must meet the threshold. Outside
+screening is a separate sensitivity requirement and does not change the anchor
+flag. Missing or confidence-masked residues remain in the original denominators.
+Integer comparisons and independent rational arithmetic agreed on every decision;
+partition coordinates and all serialized outputs were checked.
+
+| Minimum residues / coverage | All anchors pass, of 13 cases | Both anchor and outside pass, of 13 cases |
+| --- | ---: | ---: |
+| 30 / 50% | 11 | 8 |
+| 30 / 70% | 11 | 3 |
+| 30 / 90% | 6 | 1 |
+| 50 / 50% | 11 | 8 |
+| 50 / 70% | 11 | 3 |
+| 50 / 90% | 6 | 1 |
+
+The all-alternative flags require every interval definition, reference, mask,
+order and mapping definition, not merely one passing fit. At n50/c70, the three
+cases passing both requirements are Heliocybe OG0000054/PF00043.31, Jaapia
+OG0000294/PF00009.34 and Phycomyces OG0002812/PF08267.19. These are coverage-qualified
+coordinate comparisons, not established mechanisms or independent evidence for
+selection. Anchor eligibility alone leaves outside regions variably represented.
+
+Full tables are in
+`results/structural_comparisons/domain-anchored-coverage-20260927-v1`;
+versioned completion evidence is in
+`metadata/domain_anchored_coverage_completed_20260927.json`.

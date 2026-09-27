@@ -1,0 +1,64 @@
+{
+  "status": "complete_domain_anchor_coverage_screens",
+  "source_hashes": {
+    "results/structural_comparisons/domain-anchored-displacement-20260927-v1/receipt.json": "241ab5ae8b291a6cd5c2eaf2fd934f9abc24905f516d5cdd2ab856a595670d99",
+    "results/structural_comparisons/domain-anchored-displacement-20260927-v1/pair_displacements.tsv": "f9a413fe97ca43ed9dd532de1b83dcf6fd255f04c295171dd4e9af69704743db",
+    "results/structural_comparisons/domain-anchored-displacement-20260927-v1/residue_partitions.jsonl": "9a94357af8807a49bfb063ac33c98b4acaf41f9a79829adb2584c6c48dffa039",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/receipt.json": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/triads.jsonl": "aa3f3a3268e7e584bb6bca8dba9020b48fc4abe9156a3832e4db589b1053f37a",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/receipt.json": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/case_dossiers.tsv": "3948e0657d8b330da911416210a3ea856ac30702ca21b2a7f6b777eac4434ff2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/domain_reference_links.tsv": "7e4fbfbc8d36983786c73d6d3cbee33893fb8525968da9d8b6359d0a7b8ab7d6"
+  },
+  "script_sha256": "82333bb3d6f7791dbeff1f128baa560a99ca663a794680646447570364268315",
+  "partition_screen_rows": 4992,
+  "case_screen_rows": 78,
+  "summaries": [
+    {
+      "screen": "n30_c50",
+      "cases": 13,
+      "all_anchors_pass": 11,
+      "all_anchors_and_outside_pass": 8
+    },
+    {
+      "screen": "n30_c70",
+      "cases": 13,
+      "all_anchors_pass": 11,
+      "all_anchors_and_outside_pass": 3
+    },
+    {
+      "screen": "n30_c90",
+      "cases": 13,
+      "all_anchors_pass": 6,
+      "all_anchors_and_outside_pass": 1
+    },
+    {
+      "screen": "n50_c50",
+      "cases": 13,
+      "all_anchors_pass": 11,
+      "all_anchors_and_outside_pass": 8
+    },
+    {
+      "screen": "n50_c70",
+      "cases": 13,
+      "all_anchors_pass": 11,
+      "all_anchors_and_outside_pass": 3
+    },
+    {
+      "screen": "n50_c90",
+      "cases": 13,
+      "all_anchors_pass": 6,
+      "all_anchors_and_outside_pass": 1
+    }
+  ],
+  "artifacts": {
+    "partition_screens.tsv": "10ac5b8cdbeec86194900277da34dc0f9ddcc6d1d1693387fa2bfccbcd146748",
+    "case_screens.tsv": "451065aeafd5c054e86cff41f48d33352957a56e94a5abb9da8b6865ab89862e",
+    "summary.tsv": "1577a2e665dd8e64cc16c1c6b798d0a3ce68adc3199f3d8ca529f5fcf938524a"
+  },
+  "scope": "Six exact length/coverage screens applied to all three original domain intervals; outside coverage separately uses full original protein length minus interval length. Both masks, mappings, native orders and interval definitions required for all-alternative flags. Passing is descriptive eligibility, not uncertainty calibration or biological significance.",
+  "receipt_path": "results/structural_comparisons/domain-anchored-coverage-20260927-v1/receipt.json",
+  "receipt_sha256": "cb3b740c263f66646489e10894ee44841376bff851bc6572f00a5ee46007f911"
+}

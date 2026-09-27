@@ -8470,3 +8470,12 @@ opposing-scale cases. Quaternion and SVD anchor/outside residuals agreed within
 Whole-protein mappings produce anchors as short as 24 residues, so anchor-specific
 coverage screens remain necessary even though native domain fits passed the
 previous baseline. See [coordinate measurements](domain-anchored-displacement-20260927.md).
+
+### 2026-09-27: domain-anchor and outside-region coverage screened
+
+Completed 4,992 partition/screen and 78 case/screen rows using original domain
+and outside-region lengths. Integer and rational arithmetic agreed on every
+threshold decision; full readback passed. At n50/c70, 11 cases pass all anchor
+alternatives but only three also pass all outside-region alternatives
+(Heliocybe, Jaapia, Phycomyces). All failures and separate eligibility flags are
+retained. See [coverage results](domain-anchored-displacement-20260927.md).
