@@ -1,0 +1,25 @@
+{
+  "status": "complete_codon_divergence_sensitivity_summary_pending_readback",
+  "matched_cases": 1625,
+  "comparison_receipt_sha256": "4ebc996e5841372ce47e918cd25e82e33acbd01052bd292de125e1e32fc8e6ae",
+  "comparison_readback_sha256": "7ac52f9e5672741b5acb5f98da68a884b19d8cda0aa18a54ae803702ab69c961",
+  "topology_receipt_sha256": "2d13928cfb8c8b9200b96f03a81ae395ee756b80f5ebfc7d3339aec37b56d812",
+  "script_sha256": "fe6382908cf899d53c62401b16894677add108acc65f73f797a1b79f26197410",
+  "ratio_dispositions": {
+    "global_omega": {
+      "positive_both": 1624,
+      "zero_both": 1
+    },
+    "tree_ds_equal_alternative": {
+      "positive_both": 1625
+    },
+    "tree_dn_equal_alternative": {
+      "positive_both": 1625
+    }
+  },
+  "artifacts": {
+    "matched_cases.tsv": "a568c27f4737ddfd20dddc9bcb92b37eb2a2cf8988ab7f6d65b357c5c650ba92",
+    "case_quantiles.tsv": "bca569bcf9916e8fa5fa81640fd5445653672b4f7825c868d39470709885a9be"
+  },
+  "scope": "Descriptive case-level sensitivity only. Signed log2(local/original) requires both values positive; zeros remain explicit and receive no pseudocount. Pair summaries are first aggregated within case. Cases remain phylogenetically/family correlated; no tests or confidence intervals. Changed alignment coverage and topology both contribute. Historical warnings persist; neither alignment is established as correct."
+}

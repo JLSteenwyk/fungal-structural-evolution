@@ -1,0 +1,17 @@
+{
+  "status": "passed_full_normalized_codon_divergence_independent_readback",
+  "cases": 1712,
+  "split_rows": 18705,
+  "pair_rows": 40755,
+  "dispositions": {
+    "matched": 1625,
+    "original_only": 30,
+    "neither_fitted": 50,
+    "local_only": 7
+  },
+  "source_receipt_sha256": "4ebc996e5841372ce47e918cd25e82e33acbd01052bd292de125e1e32fc8e6ae",
+  "plan_sha256": "f4e8438c93c91bd469ecfd090dbcb3f4057204ce06886aeac72db89fd64d96c1",
+  "script_sha256": "68f80011ff7c547688bd29ed3fb5a45b7b91f8e40e2190de8be085299ce61f95",
+  "dendropy_version": "5.0.8",
+  "scope": "Independent DendroPy trees and direct path matrices check every normalized branch, taxon-pair distance, total, omega delta, flag, missing cell and ledger disposition; tolerance 1e-10 absolute/relative. Uses audited normalized lengths, does not independently refit models or establish selection eligibility."
+}

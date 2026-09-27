@@ -7188,3 +7188,15 @@ tree warnings and 96 with fit warnings; categories overlap. All 549 historical
 flagged cases retain their warnings. Numerical consistency does not remove
 biological or optimization review requirements. Normalized divergence comparison
 remains pending. All eight aims are open and GPU prediction stays paused.
+
+## September 27 full normalized divergence comparison and summary verified
+
+The preceding goal turn integrated local diagnostics. This turn confirmed
+successful termination of normalization, comparison and independent readback.
+All 1,712 dispositions, 18,705 split rows and 40,755 pairs passed the independent
+comparison check. Added a descriptive summary and independently reconstructed
+all case ratios, explicit zero dispositions, pair medians and 15 quantile rows.
+Among 1,625 matched groups, median local/original total normalized dS is 1.00225
+and dN is 1.16542. These shifts combine alignment, coverage, topology and model
+fit sensitivity; they are not evidence of selection or proof either alignment
+is correct. All eight scientific aims remain open and GPU prediction is paused.
