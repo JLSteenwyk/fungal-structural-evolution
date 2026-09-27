@@ -5314,3 +5314,14 @@ source/interval grids and explicit short/rejected inputs. The end-to-end
 fixture passed and rejected a changed coordinate despite an updated file hash.
 The one-CPU readback is queued, not yet completed. See
 [domain workflow](duplication-domain-controls-20260926.md).
+
+
+### September 26: all domain structural comparisons queued
+
+The complete 70,395-pair domain workload is queued behind passed full-domain
+coordinate verification. Both input orders and masks give 281,580 explicit
+dispositions, preserving source intervals and all boundary/policy links.
+The native completed-handoff, checkpoint reuse and altered-proof fixtures
+passed. Four CPU workers and 16 GiB RAM are allocated; production is waiting.
+Independent result readback and biological interpretation remain pending.
+See [domain workflow](duplication-domain-controls-20260926.md).

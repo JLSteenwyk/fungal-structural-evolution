@@ -231,3 +231,42 @@ The queued readback uses one CPU, 8 GiB RAM and no swap, GPU or paid resources.
 Its output is a small proof receipt; uncalibrated runtime planning is 0.1–8
 hours after extraction. Production readback is waiting, not complete. Domain
 alignment orchestration and biological analyses remain pending.
+
+## Complete domain alignment workload queued
+
+`scripts/run_duplication_domain_alignments.py` now waits for the exact full
+domain-coordinate readback process. The handoff requires its passed receipt,
+the matching materialization receipt/plan, the exact interval/mask grid and
+all interval identities. The interval-pair table and canonical pair hashes
+are checked before execution. Every checkpoint retains both interval IDs,
+source model/version, bounds, mask, input file hashes, command, native output
+and timing. The complete input manifest, producer receipt and passed readback
+receipt jointly bind every checkpoint.
+
+The scope is all 70,395 interval pairs × two orders × two masks, or 281,580
+explicit dispositions. Alignment/envelope boundaries and all policy links
+remain in the frozen inventory for later sensitivity analysis. Short masks,
+rejected sources, native errors, parse errors and timeouts remain explicit;
+no automatic substitution or retry occurs.
+
+Resources: four CPU workers, 16 GiB RAM, no swap, 32 GiB output planning
+allowance, 100 GiB free-disk reserve and 600-second per-call timeout. At most
+64 futures are pending. The 8–480 hour planning range is uncalibrated and not
+a guaranteed bound. No GPUs or paid resources are used. The native fixture
+passed both input orders, masked exclusions, checkpoint reuse and hash checks,
+plus rejection of a mismatched independent-input-readback receipt:
+
+```bash
+python scripts/check_duplication_domain_alignment_handoff.py
+```
+
+Plan: `metadata/duplication_domain_alignment_plan_20260926.json`.
+Exact launch: `metadata/duplication_domain_alignment_launch_20260926.json`.
+Output: `results/structural_comparisons/duplication-domain-alignments-20260926-v1/`.
+Run with `python scripts/run_duplication_domain_alignments.py --plan
+metadata/duplication_domain_alignment_plan_20260926.json`.
+
+Production alignments are waiting for verified input preparation. The future
+completion status explicitly retains `pending_readback`; independent alignment
+numeric readback, boundary/annotation-policy sensitivity and biological tests
+remain separate requirements.

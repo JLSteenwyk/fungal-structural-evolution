@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-domain-alignments-20260926.service",
+  "pid": 174263,
+  "created": 1790473999.09,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_duplication_domain_alignments.py",
+    "--plan",
+    "metadata/duplication_domain_alignment_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_domain_alignment_plan_20260926.json",
+  "plan_sha256": "2d6c95e525d5b7d0331bb5b5fdb7aa066dfed7a1a2e201d0a1c817ae611ccc29",
+  "fixture": "Native completed domain handoff passed both orders and masks, correct interval identities, checkpoint reuse/hash checks and altered input-readback binding rejection."
+}
