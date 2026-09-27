@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-recovered-afdb-copy-review-comparison-20260927.service",
+  "pid": 3593734,
+  "create_time": 1790496330.77,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_recovered_copy_review_comparison.py",
+    "--config",
+    "metadata/recovered_afdb_copy_review_comparison_plan_20260927.json"
+  ],
+  "plan_sha256": "fbffbe6f266f1e770ed9078878931a89b38be4c9e1fc48f456f0637a13c141c7",
+  "controller_sha256": "a9528a055d325202f1fd6a992759685b2adc310f894bd252653f0317d0157852",
+  "state_at_record": "sleeping",
+  "systemd_properties": [
+    "CPUQuotaPerSecUSec=1s",
+    "MemoryMax=4294967296",
+    "MemorySwapMax=0",
+    "Nice=10"
+  ]
+}

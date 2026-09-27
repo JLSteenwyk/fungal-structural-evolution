@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-recovered-afdb-coupling-full-20260927.service",
+  "pid": 3583941,
+  "create_time": 1790496287.29,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_recovered_site_coupling.py",
+    "--config",
+    "metadata/recovered_afdb_site_coupling_full_plan_20260927.json"
+  ],
+  "plan_sha256": "f7ed027f1fe3f60352c35078eea8fd06b501ba964743232e2c89b0b673c2bba0",
+  "controller_sha256": "c0d7bcf4ceb293f5cc30ed576adad6c7b341f37d9a55a1438e0f1fea05c59182",
+  "state_at_record": "running",
+  "systemd_properties": [
+    "CPUQuotaPerSecUSec=1s",
+    "MemoryMax=34359738368",
+    "MemorySwapMax=0",
+    "Nice=10"
+  ]
+}

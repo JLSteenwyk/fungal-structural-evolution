@@ -672,3 +672,44 @@ and `results/recovery-20260927/afdb-site-rate-frame/readback/receipt.json`.
 These outputs are queued, not completed coupling analyses. The conditional
 models, copy-omission sensitivity and marker resampling remain downstream;
 shared ancestry, rate uncertainty and prediction circularity remain limitations.
+
+### Recovered AlphaFold full/omission coupling queued (September 27)
+
+Both analyses now have separate pinned controllers waiting for the completed
+rate/exposure frame **and its full independent readback**, bound to the upstream
+controller's stage records. No coupling fits have run yet. The full analysis
+uses 125 markers/47,529 sites; omission sensitivity uses 124 markers/47,216 sites.
+The existing TFIIB/BRF1 caveat applies to marker `4986044at2759`, which contributes
+313 sites in this cohort (the ESMFold count was 307). Exclusion does not resolve
+reconciliation or establish that every other marker is free of copy ambiguity.
+
+Both use the reviewed QR implementation and identical 24-specification grid:
+three structural-alphabet matrices, two rate-heterogeneity models, two RSA
+scales, and coverage/confidence versus composition-adjusted controls. Marker
+intercepts and CR1 marker-cluster covariance are retained. Each analysis has
+72 focal tests with its own BH correction. Each schedules 2,000 whole-marker
+bootstrap draws per specification (48,000 fits), plus 3,000 full-cohort or 2,976
+omission leave-one-marker-out fits. Bootstrap intervals are unadjusted sensitivity
+intervals; specifications are correlated, not independent replications.
+
+The numerical checks compare QR coefficients against NumPy SVD least squares
+and manually assembled covariance. A further queued comparison requires exact
+omission of the 313 flagged sites with all remaining covariates unchanged, and
+checks all 72 separately fitted omission coefficients against the full analysis's
+independently absorbed leave-one-marker-out estimates. This workflow reuses the
+verified algorithms from the completed ESMFold analysis; AlphaFold execution and
+validation remain pending.
+
+Plans are `metadata/recovered_afdb_site_coupling_{full,copy-omission}_plan_20260927.json`
+and `metadata/recovered_afdb_copy_review_comparison_plan_20260927.json`, with
+adjacent launch records. Each fit/resampling controller has one CPU, 32 GiB RAM,
+no swap, and per-stage allowances of 16 GiB memory/4 GiB output. Fit and resampling
+planning ranges are each 0.25–24 hours, excluding predecessor wait time. The final
+comparison has one CPU/4 GiB and a 1–20 minute allowance. No paid resources or GPU
+predictions are involved.
+
+The analysis remains conditional on estimated site rates, fixed gene trees and
+extant exposure summaries. It does not fully account for shared ancestry across
+markers, prediction circularity, nonlocal alphabet effects or rate uncertainty.
+These queued results cannot establish causality, physical displacement, selection
+or completion of the broader evolutionary aims.

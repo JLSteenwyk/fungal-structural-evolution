@@ -6084,3 +6084,21 @@ See [methods and completion evidence](conditional-site-coupling.md). The precedi
 goal turn made progress through verified topology preparation and its queued
 handoff; this turn adds tested join verification and the next executing handoff.
 GPU prediction remains paused, with the full scientific objective still active.
+
+## September 27 recovered AlphaFold coupling and copy sensitivity queued
+
+Validated exact reviewed marker membership from the recovered paired inputs:
+125 markers/47,529 sites, with 313 sites in the known copy-ambiguous marker.
+Prepared and launched waiting full (125/47,529) and omission (124/47,216)
+controllers using the reviewed QR numerical implementation. Each requires the
+upstream frame and bound full readback before fitting or resampling.
+
+Each schedules 24 specifications and 48,000 marker-bootstrap fits; full/omission
+leave-one-marker-out counts are 3,000/2,976. A third waiting controller compares
+the exact covariate subset and all 72 focal omission coefficients against the
+independently absorbed full-cohort omission estimates. Resource plans, process
+identities and receipt requirements are pinned. These are queued analyses, not
+completed coupling results. See [methods](conditional-site-coupling.md).
+The preceding goal turn made progress through full frame validation and a queued
+join; this turn adds the gated downstream statistical and gene-copy sensitivity
+workflows. GPU prediction remains paused and all eight scientific aims remain open.
