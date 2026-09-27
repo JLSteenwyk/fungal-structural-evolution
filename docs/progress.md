@@ -5424,3 +5424,14 @@ paired branch rows and 986 warning rows. All source/artifact hashes and receipt
 bindings were rechecked after successful service exit. These are point estimates,
 not uncertainty intervals or acceleration tests; near-zero branch warnings remain.
 See [completion and limitations](recovery-20260926.md#completed-expanded-alphafold-fit-collection).
+
+
+### September 26: full expanded AlphaFold paired resampling launched
+
+All 125 recovered markers now have 75,000 paired site/block draws running on
+eight CPU workers, followed automatically by the native-output/interval audit.
+The source resolver passed complete native provenance checks and retains the
+95 unchanged/30 refitted marker origins. Block sizes are 1/10/30 with 200 draws
+each; no GPU or paid resources. This estimates conditional sampling sensitivity,
+not total uncertainty or calibrated acceleration. See
+[execution and limitations](recovery-20260926.md#expanded-alphafold-uncertainty-analysis-launched).
