@@ -14,7 +14,7 @@ distances) independently gives 0.147182554481411 Å. This confirms the coordinat
 minimum but does not explain the native implementation's reported value or
 prove that other rows are unaffected.
 
-A separate full diagnostic is now running:
+The separate full diagnostic completed successfully:
 `scripts/diagnose_background_domain_rmsds.py --plan
 metadata/background_domain_rmsd_diagnostic_plan_20260927.json`.
 It preserves all source, input, mapping and identity checks, but records every
@@ -23,8 +23,25 @@ failed strict audit and its tolerance remain unchanged. The new diagnostic
 cannot establish scientific acceptance. Output:
 `results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1`.
 
-The diagnostic was confirmed live under one CPU, 16 GiB and no swap; budget is
-0.2–8 hours and 2 GiB output, using existing resources without predictions or
-new charges. Full diagnostic readback, geometry/rotation qualification and
-matched-control inference remain downstream. Both target and background
+The completed diagnostic reconstructs all 267,246 successful mappings. Five
+RMSDs exceed the original tolerance, all involving two aligned residues. In
+all, 13 alignments contain two residues and 267,233 contain at least three.
+The completion check verifies every successful checkpoint key, all artifact
+hashes, counts, classifications, and all pinned sources; it is recorded in
+`metadata/background_domain_rmsd_diagnostic_completed_20260927.json`.
+The original strict audit remains failed, and scientific eligibility remains
+unestablished.
+
+Full geometry assessment is running under
+`metadata/background_domain_geometry_plan_20260927.json`. An independent
+quaternion/alternative-SVD readback is queued under
+`metadata/background_domain_geometry_readback_plan_20260927.json` and waits
+for the exact producer process identity. Each stage uses one CPU, 16 GiB,
+no swap, and a planning estimate of 0.2–8 hours; output budgets are 2 GiB and
+1 GiB, respectively. Mathematical functions match the existing domain
+implementation exactly. Point, two-point, planar, reflected and random
+fixtures pass; corrupted rank, curvature, status and ratio are rejected.
+These stages assess numerical identifiability, not prediction uncertainty.
+
+Matched-control inference remains downstream. Both target and background
 comparisons must undergo compatible numerical and coverage criteria.

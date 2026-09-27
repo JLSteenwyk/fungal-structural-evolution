@@ -1,0 +1,26 @@
+{
+  "diagnostic": "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1",
+  "diagnostic_plan": "metadata/background_domain_rmsd_diagnostic_plan_20260927.json",
+  "output": "results/structural_comparisons/background-domain-geometry-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.2,
+      8
+    ]
+  },
+  "scope": "All 267246 successful background domain alignments. Original numeric tolerances and RMSD exclusions retained. No prediction uncertainty or biological claim.",
+  "pins": {
+    "metadata/background_domain_rmsd_diagnostic_plan_20260927.json": "6828ae744d1abaf9f581e33922fdd5ad71cb9f11c3606563d4f029d4eb5176f3",
+    "metadata/background_domain_alignment_plan_20260927.json": "a9be93cf842956434f13bed8afff1ea0a71cc56156c2068b76a532b0a2de7665",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/receipt.json": "0ad891a51ca4e8dfe31dc0ea8fcbd9148a5f0e51f5c045a29a071f9d63206992",
+    "scripts/assess_background_domain_geometry.py": "1034883163b25db022b8e15b71555365e1160d4a9e23ad92da9d42d1072f4e40",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/duplication_alignment_numeric_diagnostic.py": "eef5e96762c2870031f247b6d01d7389aa2bd6a7de059e4af45a6bc4c0426515",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9"
+  }
+}
