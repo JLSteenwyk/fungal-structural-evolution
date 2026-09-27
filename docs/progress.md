@@ -8811,3 +8811,12 @@ It will independently check all sequences/occupancies, map each aligned residue
 back to full-protein coordinates, and compare alignment methods within each
 boundary. One CPU, 4 GiB RAM; no GPU. Results remain pending, as do cross-boundary
 and whole-protein comparisons and ancestral inference.
+
+### 2026-09-27: all 52 domain alignments and full checks completed
+
+Producer and checker both terminated successfully. Verified all 637,340 residue
+coordinate records, 9,349 columns and 3,828 focal-pair union records. Twenty-one
+of 26 family/boundary sets have identical focal pair maps across aligners; five
+differ. Full-clade correspondence can vary even when focal pairs agree, so both
+alignments remain retained. Full comparison table and limitations are in
+`docs/ancestral-case-inputs.md`; ancestral inference remains pending.

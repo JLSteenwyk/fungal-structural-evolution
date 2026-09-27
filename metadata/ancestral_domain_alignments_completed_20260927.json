@@ -1,0 +1,25 @@
+{
+  "status": "complete_52_ancestral_domain_alignment_readbacks_and_protein_correspondences",
+  "source_receipt_path": "results/ancestral/case-domain-alignment-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "465325b5615d33a775d759d8f701aca7b8a02289131a2ee3e4104e02c1627c7e",
+  "terminal_states": {
+    "fungal-ancestral-domain-alignments-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-ancestral-domain-alignment-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "alignments": 52,
+  "family_boundary_sets": 26,
+  "protein_position_records": 637340,
+  "column_records": 9349,
+  "focal_pair_records": 3828,
+  "sets_with_identical_focal_pair_mapping": 21,
+  "scope": "Every domain input residue/copy, occupancy column and original protein coordinate checked; all position maps exported. Full-column and focal-pair comparisons use absolute protein positions within each boundary definition. Exact column matching is stringent, not a homology probability. Export family IDs include the boundary suffix. No cross-boundary inference, ancestral sequence, trimming or selection claim.",
+  "summary_readback": "Every shared-column count/fraction and focal shared/union pair count independently reaggregated from serialized comparison tables."
+}

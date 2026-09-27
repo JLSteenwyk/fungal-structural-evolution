@@ -250,3 +250,59 @@ launch identity: `metadata/ancestral_domain_alignment_audit_plan_20260927.json`
 and `metadata/ancestral_domain_alignment_audit_launch_20260927.json`. Resources:
 one CPU, 4 GiB RAM, no swap, 0.5 GiB output allowance, planned 0.1–2 hours after
 production finishes. No completed readback or ancestral inference is claimed yet.
+
+## All 52 domain alignments and full readback completed
+
+Both the domain producer and checker terminated inactive/success/exit-zero.
+All 52 alignments passed full sequence/copy preservation, column occupancy and
+protein-coordinate checks: 637,340 mapped residue records, 9,349 columns and
+3,828 focal-pair union records. The latter counts include both boundaries and
+methods and must not be interpreted as independent observations.
+
+MAFFT and FAMSA give identical focal duplicate pair maps in 21 of 26
+family/boundary sets. They differ for Rhodonia alignment-span, Cryoendolithus
+alignment-span, Jaapia envelope and both Piloderma boundaries. Even when focal
+pair maps agree, other sequences can yield substantial full-clade correspondence
+differences. For Neolecta, all 213 alignment-span and 225 envelope focal pairs
+agree, while only 45.8–46.4% and 39.7–40.6% of full-clade columns respectively
+match exactly between methods. The stringent full-column measure depends on
+clade size and is not directly comparable as an error rate across families.
+
+| Family/boundary | MAFFT columns | FAMSA columns | Shared full columns | Shared focal pairs / union |
+| --- | ---: | ---: | ---: | ---: |
+| OG0000054-alignment | 90 | 90 | 88 | 74 / 74 |
+| OG0000054-envelope | 95 | 95 | 93 | 94 / 94 |
+| OG0000095-alignment | 147 | 160 | 90 | 108 / 122 |
+| OG0000095-envelope | 151 | 161 | 85 | 125 / 125 |
+| OG0000107-alignment | 112 | 112 | 106 | 91 / 99 |
+| OG0000107-envelope | 112 | 112 | 108 | 100 / 100 |
+| OG0000152-alignment | 130 | 130 | 130 | 114 / 114 |
+| OG0000152-envelope | 133 | 133 | 133 | 119 / 119 |
+| OG0000230-alignment | 125 | 124 | 121 | 108 / 108 |
+| OG0000230-envelope | 125 | 124 | 121 | 116 / 116 |
+| OG0000294-alignment | 231 | 231 | 231 | 224 / 224 |
+| OG0000294-envelope | 232 | 232 | 226 | 226 / 236 |
+| OG0000336-alignment | 147 | 147 | 141 | 136 / 136 |
+| OG0000336-envelope | 148 | 148 | 142 | 137 / 137 |
+| OG0000972-alignment | 397 | 392 | 182 | 213 / 213 |
+| OG0000972-envelope | 453 | 443 | 180 | 225 / 225 |
+| OG0001082-alignment | 105 | 106 | 88 | 72 / 72 |
+| OG0001082-envelope | 114 | 117 | 80 | 73 / 73 |
+| OG0001200-alignment | 168 | 167 | 114 | 123 / 123 |
+| OG0001200-envelope | 200 | 204 | 107 | 164 / 164 |
+| OG0001203-alignment | 89 | 90 | 81 | 72 / 72 |
+| OG0001203-envelope | 94 | 95 | 86 | 74 / 74 |
+| OG0002650-alignment | 194 | 192 | 178 | 174 / 180 |
+| OG0002650-envelope | 218 | 216 | 202 | 186 / 192 |
+| OG0002812-alignment | 327 | 328 | 317 | 316 / 316 |
+| OG0002812-envelope | 331 | 332 | 318 | 320 / 320 |
+
+Every displayed shared-column count/fraction and focal shared/union count was
+reaggregated from the serialized detailed comparison tables. These are
+correspondence-sensitivity diagnostics, not evidence that one alignment is
+correct or that an ancestral state is certain. Both methods remain in scope.
+
+Results: `results/ancestral/case-domain-alignment-readback-20260927-v1/`.
+Closure: `metadata/ancestral_domain_alignments_completed_20260927.json`.
+Whole-protein alignments, cross-boundary comparison, topology/node eligibility
+and ancestral sequence ensembles remain incomplete.
