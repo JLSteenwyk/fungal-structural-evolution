@@ -56,3 +56,20 @@ SQL joins, covariance moments and eigenvalues. Full counts, reuse maxima, ranges
 means, spectra, ranks, conditions and marginal support are compared. Polynomial
 and redundant-column numerical fixtures passed. Near-threshold spectral
 disagreement will stop verification; it will not silently approve a design.
+
+## Expanded input inventory running
+
+The earlier linear-model reuse map is insufficient to establish equality of
+nonlinear inputs. `inventory_nonlinear_model_inputs.py` now reconstructs every
+quadratic/cubic setting, preserving the exact ordered response/covariate values
+and target, background, family-component and species-pattern identities. The
+polynomial degree is part of the fingerprint. Only signed zeros are canonicalized;
+no tolerance-based merging is allowed. All 165,888 settings remain represented.
+
+An independent SQL reconstruction, `readback_nonlinear_model_inputs.py`, waits
+for producer terminal success and will verify all fingerprints, source labels,
+record counts and representative recipes. Plans/launches use the
+`metadata/nonlinear_model_input_*_20260927.json` prefix. Each stage uses one CPU
+and 12 GiB, no swap, with 0.1–2 hours estimated; inventory output allowance is
+2 GiB. Candidate tree-fit counts will estimate workload only: nonlinear model
+fitting, joint support checks and inferential comparisons are not launched.

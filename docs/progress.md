@@ -7939,3 +7939,10 @@ summarize and independently verify all bootstrap split frequencies and metric
 distributions. An additional 8,000 within-tree metric rows separate uncertain
 trait-coding sensitivity from tree changes. Exact-process and terminal-success
 gates preserve prerequisite verification. [Scope](wood-decay-phylogenetic-diagnostic-20260927.md).
+
+### September 27: full nonlinear input inventory running
+
+The expanded quadratic/cubic input inventory now rebuilds exact values and ordered
+node/family/species identities across all 165,888 settings. Existing linear reuse
+groups are not assumed valid for expanded designs. A full independent SQL audit
+is queued behind successful producer completion. No nonlinear fits are launched.
