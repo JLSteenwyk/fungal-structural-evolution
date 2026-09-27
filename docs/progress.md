@@ -5841,3 +5841,22 @@ mappings, original-position preservation, nonbijective rejection and duplicate
 label reversal. See [methods](duplication-domain-common-residues-20260927.md)
 and the [launch record](../metadata/duplication_domain_common_residues_launch_20260927.json).
 The full inventory and independent mapping readback remain pending.
+
+
+## September 27 common-residue domain triad mapping independently verified
+
+The full mapping readback passed all 7,986 oriented interval triads, all 72,336
+event/domain links and all 127,776 mask/order combinations. Independent native
+map reconstruction confirmed 21,112,952 common-reference residue occurrences
+and 20,915,760 occurrences consistent with the direct duplicate-pair alignment.
+37,240 dispositions contain some disagreement between those mapping definitions;
+these are repeated mask/order cases, not independent biological observations.
+
+127,072 dispositions have at least one consistent residue triple; minimum
+length and original-interval coverage still need to be applied to these newly
+intersected sets before fitting and interpretation. Source exclusions remain
+explicit. Verified all plan pins, checker hash, producer/auditor bindings,
+artifact hashes and aggregate agreement. See the
+[completion record](../metadata/duplication_domain_common_residues_completed_20260927.json)
+and [mapping methods/results](duplication-domain-common-residues-20260927.md).
+Common-residue structural fits and controlled biological contrasts remain next.

@@ -1,0 +1,32 @@
+{
+  "status": "verified_completed_domain_common_residue_readback",
+  "producer_receipt_sha256": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+  "audit_path": "results/structural_comparisons/duplication-domain-common-residue-readback-20260927-v1.json",
+  "audit_sha256": "c7e24fca1e78ba238744fd2831e63b0aa10987ac83ca8edc6186ad51b7568164",
+  "audit": {
+    "status": "passed_full_domain_common_residue_readback",
+    "producer_receipt_sha256": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+    "plan_sha256": "008e9d4d389ffb7b12684b56b935268166a21665a668ebdb0be0749ade78f2ce",
+    "checker_sha256": "6536287f4efadb359525a2a9e3406652fa879a61857bb2eec706b786cc67c7ff",
+    "triads": 7986,
+    "event_links": 72336,
+    "dispositions": 127776,
+    "common_reference_residue_occurrences": 21112952,
+    "cycle_consistent_residue_occurrences": 20915760,
+    "dispositions_with_nonempty_reference_intersection": 127424,
+    "dispositions_with_nonempty_consistent_mapping": 127072,
+    "dispositions_with_any_mapping_disagreement": 37240,
+    "counts": {
+      "full:recorded_without_edge_exclusions": 63800,
+      "plddt70:recorded_without_edge_exclusions": 63272,
+      "plddt70:input_unavailable;no_common_reference_residues": 336,
+      "plddt70:no_cycle_consistent_residues": 248,
+      "full:no_cycle_consistent_residues": 88,
+      "plddt70:no_common_reference_residues": 16,
+      "plddt70:degenerate_geometry;no_cycle_consistent_residues": 16
+    },
+    "scope": "Every event link and triad identity checked against integration source; every residue triple and all exclusions reconstructed from hashed native maps using independent relation intersections. These are alignment hypotheses and repeated order/mask occurrences, not validated evolutionary homology or biological effect estimates."
+  },
+  "plan_sha256": "008e9d4d389ffb7b12684b56b935268166a21665a668ebdb0be0749ade78f2ce",
+  "verification": "All plan pins, checker hash, producer/auditor binding, output artifact hashes and aggregate agreement checked. The completed independent readback reconstructed every map and event link; this completion checkpoint does not repeat its per-record reconstruction."
+}

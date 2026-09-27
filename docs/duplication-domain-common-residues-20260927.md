@@ -54,3 +54,29 @@ python scripts/prepare_domain_triad_common_residues.py --plan metadata/duplicati
 Outputs refuse overwrite. Fixtures check common-reference intersections,
 inconsistent direct mappings, disjoint and missing maps, noncontiguous original
 positions, nonbijective-map rejection and swapping duplicate labels.
+
+## Completed and independently verified
+
+The full independent readback passed all 7,986 oriented interval triads,
+72,336 event/domain links and 127,776 mask/order dispositions. It reconstructed
+every residue triple from hashed native alignment records using independent
+relation intersections and verified every exclusion.
+
+There are 21,112,952 common-reference residue occurrences and 20,915,760
+occurrences that also agree with the direct duplicate-pair map. Of the 127,776
+dispositions, 127,424 have a nonempty reference intersection and 127,072 have
+at least one consistent triple. In 37,240 dispositions, at least one
+reference-based correspondence disagrees with the direct duplicate-pair map.
+These are repeated mask/order occurrences, not independent sites or events.
+Nonempty does not imply sufficient coverage for structural fitting or inference.
+
+This disagreement is a reason to carry both mapping definitions into subsequent
+sensitivity analyses. It is not evidence of structural divergence or evolutionary
+homology. The [completion record](../metadata/duplication_domain_common_residues_completed_20260927.json)
+contains checked source/artifact hashes and the full audit summary.
+
+```bash
+python scripts/readback_domain_triad_common_residues.py --plan metadata/duplication_domain_common_residues_plan_20260927.json --output results/structural_comparisons/duplication-domain-common-residue-readback-20260927-v1.json
+```
+
+The readback refuses to overwrite an existing receipt.

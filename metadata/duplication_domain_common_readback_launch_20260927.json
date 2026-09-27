@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-duplication-domain-common-readback-20260927.service",
+  "pid": 3006762,
+  "created": 1790492853.06,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_domain_triad_common_residues.py",
+    "--plan",
+    "metadata/duplication_domain_common_residues_plan_20260927.json",
+    "--output",
+    "results/structural_comparisons/duplication-domain-common-residue-readback-20260927-v1.json"
+  ],
+  "pins": {
+    "metadata/duplication_domain_common_residues_plan_20260927.json": "008e9d4d389ffb7b12684b56b935268166a21665a668ebdb0be0749ade78f2ce",
+    "scripts/readback_domain_triad_common_residues.py": "6536287f4efadb359525a2a9e3406652fa879a61857bb2eec706b786cc67c7ff",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/receipt.json": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "Independent reconstruction of all 127776 stored map records from native checkpoints; no alignment or GPU. Same scale as producer completed in about one minute."
+  }
+}
