@@ -420,3 +420,28 @@ passed (`scripts/check_architecture_support_cases.py`). Production is running;
 full independent output validation remains required. Length, prediction
 confidence, coordinate coverage and phylogenetic dependence are still outside
 this support diagnostic and remain necessary for final matching/inference.
+
+## Full architecture-support readback running
+
+The producer completed all 2,621,676 records. An independent readback now rebuilds
+all target identities, signatures, qualification pools and architecture labels,
+then recounts each family/focal/nonfocal distance window with unsorted NumPy
+masks rather than binary interval searches. The checker verifies the exact full
+row grid and every summary count; it samples no rows. One thousand independent
+signature/status fixtures and an empty-annotation guard passed.
+
+Config: `metadata/architecture_matching_support_readback_plan_20260927.json`;
+success output: `metadata/architecture_matching_support_completed_readback_20260927.json`.
+One CPU, 8 GiB RAM, no swap and 0.01 GiB output are budgeted, with an uncalibrated
+0.1–4 hour planning range. Production verification remains running.
+
+Provisional producer counts under alignment/E-value policy and the strict
+both-guide/unreported-parent qualification set show 18,454 targets per guide
+with at least one same-family, same-conservative-architecture background within
+factor 1.5 sequence distance; 1,322 also have focal-taxon representation. The
+profile guide has 34,819 shared-conservative-architecture targets overall,
+13,100 shared but nonconservative, 10,192 different ordered annotations, 8,591
+with one model unannotated and 42,543 with neither annotated. The full readback
+must pass before treating these counts as verified. These distinctions preserve
+architecture-changing and annotation-uncertain targets for separate analysis;
+this conserved-architecture subset cannot stand for the entire project.

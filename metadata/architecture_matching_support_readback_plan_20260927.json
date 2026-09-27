@@ -1,0 +1,22 @@
+{
+  "source_plan": "metadata/architecture_matching_support_plan_20260927.json",
+  "output": "metadata/architecture_matching_support_completed_readback_20260927.json",
+  "pins": {
+    "metadata/architecture_matching_support_plan_20260927.json": "898f73db7278e554eda984a0cd78386cb7d1793a687e7a26f6b4249e3e0101cc",
+    "scripts/readback_architecture_support.py": "12e4b8d1ccf812c115ce3b127fa065466f9d918ca915a646548b50a46a1c18cf",
+    "scripts/check_architecture_support_readback_cases.py": "0a85d05a7b8e03b0d09621ffcf572ce08e11dae82bee9f53a49bdd643affd40b",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "rows": 2621676,
+    "basis": "Full unsorted-vector reconstruction of every target/qualification/policy support row; compressed signatures and per-family pools. No sampling, GPU or paid resources."
+  }
+}

@@ -6394,3 +6394,18 @@ uses those controls to advance the matching design while existing coordinate
 validation continues. Whole-architecture change remains a separate scientific
 question; this diagnostic does not narrow the project to conserved architectures.
 The full goal remains active and GPU prediction remains paused.
+
+## September 27 full architecture-support readback launched
+
+Architecture-support production completed all 2,621,676 target/set/policy rows.
+Started a full independent reconstruction using unsorted vector counts, checking
+every row, annotation status, background qualification and summary. One thousand
+signature/status fixtures and empty-annotation checks passed. Production counts
+suggest substantial further loss of support when requiring four proteins to
+share a conservative architecture; exact provisional numbers and limitations
+are in [the support report](terminal-sister-backgrounds-20260927.md#full-architecture-support-readback-running).
+
+The previous turn started the full architecture diagnostic. This turn adds its
+independent full-data verification while coordinate validation continues. No
+matched effect or biological event inference is claimed. The original eight-aim
+objective remains active and GPU prediction remains paused.
