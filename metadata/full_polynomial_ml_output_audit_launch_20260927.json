@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-polynomial-ml-output-audit-20260927.service",
+  "pid": 338486,
+  "created": 1790533714.62,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_full_polynomial_ml_outputs.py",
+    "--plan",
+    "metadata/full_polynomial_ml_plan_20260927.json",
+    "--launch",
+    "metadata/full_polynomial_ml_launch_20260927.json",
+    "--output",
+    "metadata/full_polynomial_ml_output_audit_20260927.json"
+  ],
+  "plan_sha256": "6eb6dff6f8a65f9689070bd6bc845ae38d298b4e6fc8bf081d5f381d37b17d85",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0
+  }
+}

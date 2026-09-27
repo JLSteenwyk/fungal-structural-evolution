@@ -8165,3 +8165,23 @@ Scripts: `summarize_primary_order_sensitivity.py` and
 `metadata/primary_order_sensitivity_*_20260927.json` prefix. These outputs will
 permit a descriptive comparison with reference alignments; the comparative table
 and biological adjustment are not yet complete.
+
+### September 27: full ordinary-ML polynomial comparison launched
+
+Moved from validated input inventories and optimizer benchmarks to full
+production: 86,424 unique linear/quadratic/cubic inputs times five trees gives
+432,120 fit dispositions. Linear models are refitted under ordinary ML on the
+same observations; no REML/ML objective contrast is used. Each fit preserves all
+22 face/start attempts, directly re-evaluates their likelihoods, exports original
+unit coefficients and retains errors/review flags in atomic checkpoints.
+
+A 15-fit worker fixture checked 330 candidates against independent dense
+calculations (maximum objective discrepancy 3.56e-14), degree/scaling metadata,
+successful/error checkpoint resume and changed-plan rejection. Full production
+uses eight CPUs, 48 GiB, no swap, estimated 30 GiB output and a 36–504 hour planning
+allowance based on synthetic timings with substantial convergence uncertainty.
+The complete output auditor is queued with one CPU/8 GiB and a 0.5–12 hour
+allowance after production. Source plans and identities are recorded in
+`metadata/full_polynomial_ml_*_20260927.json`; fixture proof is
+`metadata/polynomial_ml_runner_checks_20260927.json`. Production convergence,
+model adequacy and inferential calibration are not established by these checks.

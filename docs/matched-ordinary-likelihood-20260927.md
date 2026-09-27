@@ -86,3 +86,36 @@ These are three synthetic timing observations, not a representative convergence
 distribution or full-grid ETA. Full workload sizing still needs the completed
 expanded inventory, observed record-size distribution, shared machine load and
 allowance for difficult or flagged fits. The existing REML run remains unchanged.
+
+## Full ordinary-ML grid launched
+
+The exact-observation inventory is now complete: 28,808 linear inputs and 57,616
+quadratic/cubic inputs, or 432,120 fits across five covariance trees. The linked
+82,944 original settings retain all three degrees. The runner independently
+reconstructs and hashes every numeric matrix and ordered observation identity
+before fitting. All degrees use ordinary ML; existing REML results are separate.
+
+`run_full_polynomial_ml.py` uses the checked analytic optimizer, all 22 face/start
+attempts, direct residual evaluation of every candidate, coefficient conversion
+to original covariate units, atomic per-fit checkpoints and a single-run lock.
+Errors and optimization-review outcomes remain explicit. It stops for review if
+at least ten errors exceed ten percent of processed dispositions.
+
+The worker fixture passed 15 fits across three degrees and five factor choices,
+including a zero species kernel. All 330 candidate objectives agreed with dense
+Gaussian calculations within 3.56e-14. Successful and error checkpoints resumed
+unchanged, changed-plan reuse was rejected, and nonzero constant covariates
+produced five explicit error records. This validates the worker, not production
+convergence. `audit_full_polynomial_ml_outputs.py` waits for successful terminal
+production and checks every expected output, face/start, bound and gradient flag,
+ML n-denominator, degree and coefficient conversion; it does not independently
+repeat production likelihood calculations.
+
+Resource allocation: eight CPU workers, 48 GiB RAM, no swap, estimated 30 GiB
+output. Synthetic timings imply roughly 31–218 hours at eight workers if
+representative; planning allowance is 36–504 hours to accommodate convergence and
+shared-machine variation. This is not a measured ETA. Audit allowance: one CPU,
+8 GiB and approximately 0.5–12 hours after production. No GPU or paid resources.
+Plans and exact process identities: `metadata/full_polynomial_ml_*_20260927.json`.
+Model adequacy, full numerical review, support classifications, uncertainty,
+multiplicity and biological interpretation remain required.
