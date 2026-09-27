@@ -6284,3 +6284,23 @@ The prior turn added guide-union verification; this turn archives a completed
 full-data milestone and supplies the remaining native-membership validation
 stage. Background matching and biological tests remain open. The full objective
 remains active and GPU prediction remains paused.
+
+## September 27 background measurement inventory queued
+
+The complete guide comparison produced 1,582,382 union pairs and 78,372 modeled
+background candidates: 78,202 shared, 102 profile-only and 68 MAFFT-only. Full
+guide readback and native orthology membership are active; these are not yet
+validated matched-control counts.
+
+Implemented and launched a measurement inventory after both validations. It
+retains every candidate, per-guide/native-orthology eligibility, exact catalog
+joins and length/confidence covariates, with explicit identical-model and
+neither-guide-qualified cases. Distinct qualified pairs are partitioned against
+existing primary/reference queues and genuinely new work; models are likewise
+partitioned for later coordinate processing. Fixture checks passed. No new
+coordinate parsing, alignment or prediction was launched. See
+[measurement design](terminal-sister-backgrounds-20260927.md#guide-comparison-produced-measurement-inventory-queued).
+
+The prior turn archived the full inventory audit and added membership readback;
+this turn advances the pool toward measured controls. Matching and scientific
+tests remain unfinished. The full objective remains active; GPU prediction is paused.

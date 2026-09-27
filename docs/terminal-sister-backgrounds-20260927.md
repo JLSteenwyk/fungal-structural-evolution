@@ -183,3 +183,39 @@ stream and corrupt-record cases. The queued production check uses one CPU,
 output: `metadata/terminal_background_orthology_completed_readback_20260927.json`.
 This validates native output membership, not independent biological orthology,
 matched comparability or a causal effect of duplication.
+
+## Guide comparison produced; measurement inventory queued
+
+The guide comparison produced a union of 1,582,382 terminal pairs: 1,571,991
+shared, 5,213 profile-only and 5,178 MAFFT-only. The modeled candidate union
+contains 78,372 pairs, including 78,202 shared candidates, 102 profile-only and
+68 MAFFT-only. Of the shared modeled candidates, 70,684 have unreported parents
+in both guides. Shared pairs do not change the reported-duplication versus
+cross-taxon-unreported label between guides. These are producer results;
+independent guide-union readback and orthology membership remain running.
+
+`prepare_background_measurements.py` is queued behind successful full native
+membership readback, which itself requires the guide-union readback. It retains
+all 78,372 candidate rows and adds separate per-guide flags requiring both the
+cross-taxon-unreported label and native ortholog membership. Either-guide,
+both-guide and both-guide/unreported-parent flags remain separate sensitivity
+sets. These flags are computational qualification, not matched comparability.
+Pairs qualifying in neither guide remain explicit in the output ledger.
+
+Every gene is joined to the frozen sequence-qualified model bridge and catalog.
+Model IDs, versions and coordinate paths must agree. The ledger adds sequence
+hashes, lengths, mean C-alpha pLDDT and the fraction below 50 for each model.
+Distinct model pairs qualified in either guide are partitioned into already
+present in the primary queue, already present in the reference queue, or new.
+Existing queue membership does not establish completed or valid measurements.
+Identical models remain explicit without redundant alignment jobs. All candidate
+models, active models and additional models absent from both prior model
+inventories are exported separately; additional does not mean newly predicted.
+
+Plan: `metadata/background_measurement_inventory_plan_20260927.json`.
+Output: `results/structural_comparisons/background-measurement-inventory-20260927-v1`.
+Known-case eligibility, pair-symmetry and version-sensitivity checks passed.
+One CPU, 4 GiB RAM, no swap, 2 GiB output and a 0.1–2 hour planning range excluding
+waits are budgeted. This stage parses no coordinates and launches no predictions
+or alignments. Full output readback, additional-coordinate validation,
+domain/coverage comparisons and matching remain necessary.
