@@ -120,3 +120,8 @@ Outputs are in
 `results/structural_comparisons/domain-anchored-contrast-summary-20260927-v1`;
 completion and visual inspection evidence is in
 `metadata/domain_anchored_contrast_summary_completed_20260927.json`.
+
+Regional PAE now limits the arrangement interpretation: Jaapia has inter-region
+p90 values of 13–20 Å across roles and settings. Its coordinate pattern remains
+an inspection hypothesis with substantial placement uncertainty, not an accepted
+mechanistic result. See [regional confidence results](whole-domain-case-pae-20260927.md).

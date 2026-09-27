@@ -8498,3 +8498,13 @@ one of 11,389,053 matrix entries, compressed/raw hashes and all manifest records
 zero models failed. Both services terminated successfully. Regional confidence
 qualification remains downstream. No new structure predictions were run.
 See [case PAE](whole-domain-case-pae-20260927.md).
+
+### 2026-09-27: regional PAE qualifies domain-arrangement hypotheses
+
+Completed 7,488 regional PAE rows and 117 case/role/block summaries, retaining
+both inter-region directions and internal off-diagonal confidence. Independent
+scalar checks and full serialization passed. Jaapia inter-region p90 values
+range 13–20 Å, weakening confidence in the arrangement hypothesis suggested by
+its coordinate contrasts. Heliocybe is 5–8 Å and Phycomyces 9–10 Å; these are
+confidence summaries, not contrast error bars or independent validation.
+See [regional PAE](whole-domain-case-pae-20260927.md).
