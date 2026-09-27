@@ -1,0 +1,24 @@
+{
+  "status": "reproduced_first_primary_numeric_audit_failure",
+  "checkpoint": "results/structural_comparisons/duplication-alignments-20260926-v1/pairs/0a/0ad3add6f75b3532d3d47589d7a74341a97ac4a12c91c240f80e7809277cd06d-plddt70-1.json",
+  "checkpoint_sha256": "14fdffa574589a17dbaa6d1b1f22cfb848d976a551b7f53bd45791db1cf34861",
+  "producer_receipt_sha256": "263f672755f58d1ae8d8ba52a65dac826caea14b7167d911b1b087cb9347d4a3",
+  "partial_audit_rows": 16223,
+  "partial_table_sha256": "fbea54569992d5db18261b664e2aa45ba6d8360c4cbb05d629ad186bc3cee0e7",
+  "strict_error": "RMSD exceeds printed rounding",
+  "diagnostic": {
+    "rmsd_status": "outside_printed_rounding",
+    "aligned_length": 2,
+    "rmsd_recomputed": 0.006773339318514578,
+    "rmsd_native": 0.0,
+    "rmsd_rounding_error": 0.006773339318514578,
+    "sequence_identity_exact": 0.0,
+    "tm_left_native": 0.09998,
+    "tm_right_native": 0.39993,
+    "coverage_left": 0.1,
+    "coverage_right": 0.4,
+    "joint_plddt70_pairs": 2,
+    "joint_plddt70_fraction": 1.0
+  },
+  "scope": "First failure only; no full-workload validation or discrepancy repair. Strict audit remains failed."
+}

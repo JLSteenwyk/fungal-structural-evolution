@@ -7997,3 +7997,23 @@ work. Individual checkpoint hashes, alignment/PDB mappings and RMSD/identity
 values are not certified by this production-closure check. Geometry remains
 gated on successful full numeric readback. Background comparisons and inferential
 analyses remain outstanding; no biological duplication effect is claimed.
+
+### September 27: primary strict audit failed; full discrepancy census running
+
+At 13:55 EDT the strict primary auditor stopped after 16,223 successful numeric
+rows on an RMSD rounding discrepancy. The exact next successful checkpoint was
+rehashed and reproduced with the strict checker: two aligned residues, native
+RMSD 0.00 Å versus coordinate-recomputed 0.0067733393 Å, exceeding the 0.00501 Å
+rounding threshold. Evidence: `metadata/primary_alignment_first_rmsd_failure_20260927.json`.
+
+The strict failure and partial output remain unchanged. Downstream geometry
+requiring strict success cannot proceed. A separate full diagnostic now checks
+every disposition and alignment, preserving RMSD discrepancies explicitly
+without issuing scientific acceptance. It uses one CPU, 16 GiB, no swap, 2 GiB
+output allowance, and 0.5–8 hours planned. Script:
+`diagnose_primary_alignment_rmsds.py`; plan/launch:
+`metadata/primary_alignment_rmsd_diagnostic_*_20260927.json`.
+
+Only the first failure is characterized so far. It does not establish that every
+other discrepancy, if any, is short or numerically harmless. Full census, separate
+geometry validation and usable-cohort qualification remain required.
