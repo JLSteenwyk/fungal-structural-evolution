@@ -8589,3 +8589,12 @@ retains all six screens and requires a single chain/model across every required
 case role and interval. Original fungal domain/outside lengths remain the
 denominators. Gap/offset/projection fixtures passed; production results await
 upstream validation. No GPU work started.
+
+### 2026-09-27: experimental construct and starting-model annotations reviewed
+
+Completed metadata review for all 707 entries and 1,205 entities. Six entries
+explicitly mention AlphaFold starting models; 117 entities report mutations.
+Retained all method-specific fields, source/host and construct annotations,
+release dates and unknowns. Entry-level starting models are not assigned to the
+matched chain, and none is claimed training-independent. Full metadata readback
+passed. See [review details](case-independent-control-coverage-20260927.md).

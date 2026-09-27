@@ -1,0 +1,38 @@
+{
+  "status": "complete_case_experimental_metadata_annotation_review",
+  "script_sha256": "867c35612c296b0b839020b4cd4302a01c862fe92dc0db6e301ec9b2c367b1a0",
+  "entries": 707,
+  "entities": 1205,
+  "methodologies": {
+    "experimental": 706,
+    "integrative": 1
+  },
+  "starting_model_categories": {
+    "only_experimental_starting_models_reported_not_independence_proof": 405,
+    "starting_model_annotation_missing": 283,
+    "other_or_incomplete_starting_model_annotation": 7,
+    "other_computational_starting_model_entry_level": 6,
+    "explicit_AlphaFold_starting_model_entry_level": 6
+  },
+  "entries_with_alphafold_starting_annotation": 6,
+  "entries_with_alphafold_software_annotation": 0,
+  "entities_with_positive_reported_mutation_count": 117,
+  "entities_with_unknown_mutation_count": 0,
+  "artifacts": {
+    "entries.tsv": "43635d2ebcdf5b3e03b17681c9f1d5c089593f908e52f5daecf4732e28b41d05",
+    "entities.tsv": "63d949db02c766276e32825352eb9599fb6e147e13b9cd103318e2492eeec194",
+    "method_specific_annotations.json": "8a4347d815072a71c9aa0fbad736e1dc04f53373ac94b51466235d37955f4611"
+  },
+  "scope": "All candidates retained, including integrative entry. Metadata annotations only; missing annotation is not absence of modification or prediction-assisted refinement. Resolution and validation metrics remain method-specific. Entry starting models are not attributed to the target chain. Release dates are not training/template cutoffs; independence unresolved for every entry. No quality-based ranking or geometry acceptance.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-metadata-review-20260927-v1/receipt.json",
+  "source_receipt_sha256": "0d6dd29763e45153b7eecc2b2f1ecb34b536d097e641dbe69c2e2c9fb6b96be3",
+  "alphafold_starting_annotation_entries": [
+    "8S0B",
+    "8S0D",
+    "8S0E",
+    "9TI8",
+    "9TI9",
+    "9U4X"
+  ],
+  "additional_readback": "All 707 release dates and 1205 entity mutation/nonstandard counts and mutation text rechecked against raw metadata. Six explicit AlphaFold annotation flags recounted independently."
+}

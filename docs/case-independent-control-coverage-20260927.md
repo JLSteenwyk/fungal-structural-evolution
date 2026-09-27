@@ -223,3 +223,34 @@ planning allowance. `metadata/case_experimental_observed_coverage_launch_2026092
 records the exact process and script hash. The service is queued, not a completed
 coverage result. Geometry, construct quality and prediction-training overlap
 remain separate checks.
+
+## Method, construct and starting-model annotations reviewed
+
+`summarize_case_experimental_metadata.py` completed an annotation review of all
+707 entries and 1,205 candidate protein entities. It retains method-specific
+refinement/validation fields, resolution arrays, release dates, primary citations,
+source/host organisms, construct annotations and all reported starting models.
+No candidates were ranked or filtered on these fields. All serialized outputs
+passed readback; all release dates and entity mutation/nonstandard counts and
+mutation text were checked again against raw metadata.
+
+Six entries explicitly mention AlphaFold starting models: 8S0B, 8S0D, 8S0E,
+9TI8, 9TI9 and 9U4X. Six others report other computational starting models;
+405 report only experimental starting models, 283 lack this annotation and
+seven have other/incomplete annotations. These categories cover the full
+707-entry inventory, including its one integrative entry. Target-chain
+attribution remains unresolved. Missing annotation does not establish absence
+of prediction-assisted refinement, and experimental starting models may have
+their own dependencies.
+
+There are 117 entities with positive reported mutation counts. Zero counts are
+not proof that constructs match native fungal proteins. All candidate homologs
+still require sequence, coordinate and biological-context review. Release dates
+are recorded but are not treated as prediction training/template cutoffs;
+training independence remains unresolved for every entry.
+
+Outputs are `entries.tsv`, `entities.tsv` and
+`method_specific_annotations.json` in
+`results/experimental_structures/whole-domain-case-metadata-review-20260927-v1`.
+Hashes, counts and explicit flagged entry IDs are recorded in
+`metadata/case_experimental_metadata_review_completed_20260927.json`.
