@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-domain-refinement-audit-20260927.service",
+  "state": {
+    "MainPID": "531404",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 531404,
+  "created": 1790548140.07,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ancestral_domain_refinements.py"
+  ],
+  "plan_sha256": "b5034556fa2f37d18b9e49b74760b2280cdb539e4e1d1b36da285efa3b9a9718",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      6
+    ]
+  }
+}

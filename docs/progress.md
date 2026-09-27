@@ -8988,3 +8988,10 @@ solution for each model/bound pair, including original baselines (selected
 in20 cases). Epsilon tightened to1e-8; all prior solutions retained.
 Two concurrent four-thread fits,12GiB memory,noGPU. Verification and signed
 likelihood changes remain pending; no convergence claim.
+
+### 2026-09-27: all312 refinements produced; full audit launched
+
+Best-start refinement production finished. Launched full report/checkpoint
+and independent-likelihood validation, retaining signed changes from the
+verified selected starting likelihoods plus gamma/branch changes. One CPU,
+4GiB RAM,noGPU. Audit results and stability conclusions remain pending.

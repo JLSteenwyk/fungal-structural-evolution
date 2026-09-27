@@ -839,3 +839,20 @@ metadata/ancestral_domain_refinement_plan_20260927.json`. Output:
 `results/ancestral/domain-refinements-20260927-v1/`. Two concurrent four-thread
 fits,8CPUs aggregate,12GiB memory,no swap/GPU; planning0.5–24 hours,4GiB output.
 Plan/launch metadata freeze all selected starts and verified live identity.
+
+## Refinement audit queued
+
+The312 best-start refinements have finished production. A separate checker
+requires successful producer termination and checks every report/checkpoint,
+input hash, topology, tip identity, frequency and gamma parameter, information
+criterion and independently recomputed likelihood (tolerance0.001).
+It verifies each selected starting likelihood directly from its original
+checkpoint, then retains signed likelihood changes, gamma-shape changes and
+maximum branch-length changes for every refinement. Improving and worsening
+solutions both remain represented. Stability is not global optimality.
+
+Run `python scripts/audit_ancestral_domain_refinements.py`; plan/launch
+metadata use `ancestral_domain_refinement_audit_`, date `20260927`. Output:
+`results/ancestral/domain-refinement-readback-20260927-v1/`. One CPU,4GiB
+memory,no swap/GPU; estimate0.1–6 hours after production,0.2GiB output.
+Full audit results and refined ancestral probabilities remain pending.
