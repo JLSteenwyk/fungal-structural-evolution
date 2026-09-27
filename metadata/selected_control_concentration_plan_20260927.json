@@ -1,0 +1,47 @@
+{
+  "graph": "results/orthology/background-match-graph-20260927-v1",
+  "selection": "results/orthology/background-control-selection-20260927-v1",
+  "balance": "results/orthology/background-control-balance-20260927-v1",
+  "output": "results/orthology/selected-control-concentration-20260927-v1",
+  "proof_status": {
+    "graph": "passed_full_background_match_graph_readback",
+    "selection": "passed_full_background_control_selection_readback",
+    "balance": "passed_full_background_control_balance_readback"
+  },
+  "required_artifacts": {
+    "graph": [
+      "target_nodes.jsonl"
+    ],
+    "selection": [
+      "selections.tsv.gz"
+    ],
+    "balance": [
+      "selection_coverage.tsv"
+    ]
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "output_allowance_gib": 0.2,
+    "basis": "One streaming pass over 2,786,912 selections and compact per-stratum Counters; existing local CPU only."
+  },
+  "graph_proof": "metadata/background_match_graph_completed_readback_20260927.json",
+  "selection_proof": "metadata/background_control_selection_completed_readback_20260927.json",
+  "balance_proof": "metadata/background_control_balance_completed_readback_20260927.json",
+  "pins": {
+    "scripts/summarize_selected_control_concentration.py": "92de7ba97a195c45f72a1d332af750aad84b3ebb5a35db12df270fad1eaacd72",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "metadata/background_match_graph_completed_readback_20260927.json": "711e3445c954795a2ceb58fd8c82ef16e26bb4e862e1d75129a9dd5d430e64d1",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+    "metadata/background_control_selection_completed_readback_20260927.json": "0004a74ec8de9bb219979f592a0254ac25600f69b89b34f9f41a2c8d12a2714e",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-control-balance-20260927-v1/receipt.json": "9fd0aea3f91b2ad9d6d0e641b8b1184d6963c5b12e44da1430ca28010c1127c3",
+    "metadata/background_control_balance_completed_readback_20260927.json": "42262669c1b2b5a76753bc301bc935fdb818d55c1722f3327f36f8b6db6f006d",
+    "results/orthology/background-control-balance-20260927-v1/selection_coverage.tsv": "46c7228ca8a7581fce86a4fe59684f1652a8b82767eac4d56d1c35aa24433ffc"
+  }
+}

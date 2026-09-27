@@ -76,6 +76,38 @@ matched SD differences were additionally reconstructed from moments. Export
 hashes, reproduction commands and visual review are recorded in
 `metadata/background_control_balance_figure_*_20260927.json`.
 
+## Taxon and family concentration
+
+Full independent reconstruction passed all 2,786,912 selected records, 513,240
+represented-group rows and 864 summaries (432 configurations × two grouping
+levels). Group tables include represented groups, their original target counts
+and selection fractions. Summaries explicitly count original groups with no
+matches; the original population is all modeled terminal targets per guide.
+
+For profile/alignment-E-value:
+
+| Diagnostic | S45: any background taxon | S46: focal taxon required |
+|---|---:|---:|
+| Top five taxa, share of selected targets | 35.62% | 36.87% |
+| Top five families, share of selected targets | 12.16% | 33.84% |
+| Largest taxon contribution | 1,595 | 83 |
+| Largest family contribution | 593 | 142 |
+| Original taxa with no selected targets (of 153) | 10 | 84 |
+| Original families with no selected targets (of 20,492) | 18,454 | 20,312 |
+
+S45's 143 represented taxa have an inverse concentration of 25.05, calculated as
+N² / sum(group count²). This describes the equivalent number of equally
+represented groups; it is **not** an independent sample size or a phylogenetic
+correction. Its 2,038 families have an analogous value of 170.33. These results
+motivate taxon/family weighting and sensitivity checks alongside explicit
+phylogenetic modeling; confidence balance alone does not address dependence.
+Weighting changes the population-average contrast and must be stated when
+reporting effects. No structural outcomes were used in these diagnostics.
+
+Full outputs: `results/orthology/selected-control-concentration-20260927-v1`.
+Plans, script hashes, reproduction commands and independent proof are archived
+in `metadata/selected_control_concentration_*_20260927.json`.
+
 ## Reproducibility and remaining work
 
 Design and stage history are in [the background report](terminal-sister-backgrounds-20260927.md).

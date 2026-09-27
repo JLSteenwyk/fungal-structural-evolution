@@ -1,0 +1,23 @@
+{
+  "status": "completed_and_independently_verified_selected_control_concentration",
+  "receipt": "results/orthology/selected-control-concentration-20260927-v1/receipt.json",
+  "receipt_sha256": "b234330a4fad69c4647d44b625edb536a9fae45f6ec4e9fef881f15094c8fa8c",
+  "readback": "metadata/selected_control_concentration_completed_readback_20260927.json",
+  "readback_sha256": "9dce77298acaa6bc6a1983d73467dfb976c84d646b1500f589a96d1fa4a5e1a7",
+  "script_sha256": {
+    "scripts/summarize_selected_control_concentration.py": "92de7ba97a195c45f72a1d332af750aad84b3ebb5a35db12df270fad1eaacd72",
+    "scripts/readback_selected_control_concentration.py": "81ff3fd7982db8297afd42dc37fb31e2622fc927a5a1488588d95a867b6fab9b"
+  },
+  "commands": [
+    "/home/bizon/anaconda3/bin/python scripts/summarize_selected_control_concentration.py --plan metadata/selected_control_concentration_plan_20260927.json",
+    "/home/bizon/anaconda3/bin/python scripts/readback_selected_control_concentration.py --plan metadata/selected_control_concentration_plan_20260927.json --output metadata/selected_control_concentration_completed_readback_20260927.json"
+  ],
+  "output_artifacts": {
+    "concentration.tsv": "ddbfc74673638c2081effcf668bbdc23ce2188a5f4817a6597a01245d69e9653",
+    "group_counts.tsv": "d4a6f618d32d740d62f28f40be39635cca79dc987700ba4d613335a1d6dbcd7b"
+  },
+  "selected_records": 2786912,
+  "group_rows": 513240,
+  "summary_rows": 864,
+  "scope": "Selected target records aggregated separately by taxon and family in every guide/policy/scenario; group table contains represented groups only, summaries explicitly count original groups with no matches. Original means all modeled terminal targets in the guide. Inverse concentration is N squared / sum(group count squared), a descriptive equivalent number of equally represented groups, NOT an independent sample size or phylogenetic correction. No structural outcomes or effects used."
+}

@@ -6713,3 +6713,18 @@ input preparation remains gated on its proof. See
 The previous goal turn completed the balance figure; this turn archives a newly
 completed structural-data stage. All eight aims remain open. GPU prediction
 stays paused.
+
+## September 27 selected-control concentration verified
+
+Computed taxon and family concentration for every matching configuration. An
+independent pandas join/groupby reconstruction verified all 2,786,912 selections,
+513,240 represented-group rows and 864 summaries. In the illustrative profile
+S45 configuration, the five largest taxa supply 35.62% of selected targets and
+the five largest families 12.16%. Missing groups and selection fractions are
+explicit; inverse concentration is descriptive, not independent sample size.
+See [concentration results](duplication-control-balance-20260927.md#taxon-and-family-concentration).
+
+The previous turn archived coordinate production; this turn completes a
+full-grid diagnostic of sampling imbalance for later evolutionary contrasts.
+Coordinate readback remains live (6/149 shards observed). All eight aims remain
+open and GPU prediction stays paused.
