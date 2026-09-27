@@ -1,0 +1,25 @@
+{
+  "status": "complete_verified_marker_gap_cache_refresh",
+  "checked_at": "2026-09-27T15:57:44.070505+00:00",
+  "terminal_units": {
+    "fungal-marker-gap-cache-refresh-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-marker-gap-cache-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    }
+  },
+  "producer_receipt_sha256": "8a9b7f59432c4ed0c0b6d34300c21a7b0bfbf3374f014e91543fa3a7fdeec72e",
+  "readback_sha256": "fe5907cdc65ad6acc0ef62181ca6e86c959e3dbc6750d975dd5e96ee3390bbcf",
+  "summary_sha256": "c79d00f399842aaf8fb313310401cb9bd18a081d96d0e3c7cf2b813ddb625511",
+  "additional_log_records_since_september25": 326633,
+  "candidate_and_availability_tables_byte_identical_to_september25": true,
+  "residual_unique_sequences": 3626,
+  "scope": "Current frozen cache screen of prior marker gaps, not whole-proteome prediction completeness or public database absence. GPU prediction remains paused."
+}

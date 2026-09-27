@@ -1,0 +1,19 @@
+{
+  "status": "complete_frozen_current_cache_marker_gap_screen",
+  "observed_at": "2026-09-27T15:56:00.961343+00:00",
+  "plan_sha256": "5cff17dfd2b96798c509aa873c9e0b343f3fdfb376593f056a5bfad6893862df",
+  "inventory_records": 1764707,
+  "observed_live_bytes": 2072595230,
+  "frozen_complete_record_bytes": 2072595230,
+  "gap_unique_sequences": 3656,
+  "gap_marker_records": 3669,
+  "candidate_models": 30,
+  "gap_sequences_with_cached_candidates": 30,
+  "gap_marker_records_with_cached_candidates": 30,
+  "artifacts": {
+    "retrieval_prefix.jsonl": "6f3ce3719d5b36ebfad6f7485b04ee5125dcacfc5a3761a9e4a827671fc43884",
+    "gap_sequence_availability.tsv": "604dbd9b993c956a02c5d5d4b9f0c9b7c0232677149112b9c41edbacd6f41338",
+    "candidate_models.jsonl": "9f196756be8216de1db8d0a6537b501e602ed8a6ffa5677a70577f97ff70f696"
+  },
+  "scope": "All prior frozen marker gaps checked against latest records per accession in a new immutable complete-line retrieval-log prefix. Candidate full-sequence hash/length and cached coordinate bytes checked. Not confidence qualification, a changed selected catalog, proof of public-database absence, or authorization to resume GPU prediction."
+}

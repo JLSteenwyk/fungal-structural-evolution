@@ -1,5 +1,29 @@
 # Progress and evidence
 
+## September 27 missing-marker structure refresh
+
+A new immutable cache snapshot and full reverse-log readback checked all
+1,764,707 retrieval records, 326,633 more than the September 25 snapshot.
+The candidate and sequence-availability tables are byte-identical to that
+checkpoint: **3,626 unique marker proteins remain without cached models**
+(3,639 marker records, 508 taxa, 118 markers). Of these, 3,533 exceed 1,024
+residues; the 93 shorter sequences include four canonical and 89 noncanonical
+sequences. The longest is 5,502 residues. This is marker coverage, not a
+whole-proteome missing-structure count or proof of database absence.
+
+Both refresh and independent reverse replay exited successfully. The
+[completion record](../metadata/current_marker_gap_cache_completed_20260927.json)
+and [new residual summary](../metadata/current_marker_residual_gap_summary_20260927.json)
+archive the evidence. Reproduce using `refresh_marker_gap_cached_models.py`
+and `readback_marker_gap_cache_refresh.py`, each with `--plan
+metadata/current_marker_gap_cache_refresh_plan_20260927.json` (choose a new
+output directory in a new plan to rerun), followed by
+`summarize_refreshed_marker_gaps.py` using the original gap directory and
+`results/structures/current-marker-gap-cache-refresh-20260927-v1`.
+The scripts and source inputs are pinned by the plan. GPU prediction remains
+paused; the continuing retrieval job was not interrupted.
+
+
 ## September 27 recovered-marker accessibility completed
 
 The recovered AlphaFold collection now has audited accessibility for 30,618
