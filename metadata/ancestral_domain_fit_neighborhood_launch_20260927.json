@@ -1,0 +1,32 @@
+{
+  "unit": "fungal-ancestral-domain-fit-neighborhoods-20260927.service",
+  "state": {
+    "MainPID": "506347",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 506347,
+  "created": 1790546911.63,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_ancestral_domain_fit_neighborhoods.py"
+  ],
+  "plan_sha256": "1ae0b473125edf2e1ae9a5bdc7956eb8de4ebb8791e2018932bb01e5f814b94d",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours": [
+      0.1,
+      6
+    ]
+  },
+  "alpha_lower_bound_source": {
+    "path": "data/software_audits/iqtree-3.0.1/tools.cpp",
+    "sha256": "0c5ec730a3a6fa9b7bb69d35702d5eddd8a7cc04154b6e9cf34e445a58733974",
+    "line": 6399,
+    "definition": "--alpha-min default 0.02"
+  }
+}

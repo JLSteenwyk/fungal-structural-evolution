@@ -8896,3 +8896,11 @@ in 84,141 comparisons. No conflicting MAP pair has both probabilities >=0.90.
 Unmatched alignment columns remain explicitly unresolved; dependent comparison
 counts are not biological replicates. Full output readback passed. See
 `docs/ancestral-case-inputs.md`; convergence, indels and structures remain open.
+
+### 2026-09-27: all-domain likelihood-neighborhood diagnostic launched
+
+Started 2,340 finite gamma-shape/branch-scale evaluations across all 156 fits.
+Original likelihoods must first reproduce; below-default gamma-bound points
+are explicitly labeled. One CPU, 4 GiB RAM, no swap/GPU; verified live.
+Results pending. This grid can identify improving directions but cannot
+establish convergence or replace full alternate-start optimization.

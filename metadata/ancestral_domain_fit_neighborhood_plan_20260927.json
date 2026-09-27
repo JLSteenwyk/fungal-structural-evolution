@@ -1,0 +1,40 @@
+{
+  "fits": "results/ancestral/case-domain-model-fits-20260927-v1",
+  "parameters": "results/ancestral/case-domain-model-readback-20260927-v1/parameters.json",
+  "exchangeabilities": "data/software_audits/iqtree-3.0.1/modelprotein.cpp",
+  "output": "results/ancestral/domain-fit-neighborhoods-20260927-v1",
+  "alpha_factors": [
+    0.5,
+    0.9,
+    1.0,
+    1.1,
+    2.0
+  ],
+  "branch_factors": [
+    0.9,
+    1.0,
+    1.1
+  ],
+  "original_alpha_lower_bound": 0.02,
+  "improvement_tolerance": 0.001,
+  "pins": {
+    "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json": "178fd4ad19dcda616e266994dafc4f65e3b30d158ce6b135e2358dcc19cea6d5",
+    "results/ancestral/case-domain-model-readback-20260927-v1/parameters.json": "0dcd085807874311a352c66b20dc1655e8a295ba0dc9422ec3101f88d134cecd",
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "scripts/diagnose_ancestral_domain_fit_neighborhoods.py": "437ee0ca68dd7aa4419f87cd20069997b024e6d0f322692d0d3bc2e507203331",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/ancestral_domain_likelihood_replay_completed_20260927.json": "a38b5e642e108ca6ee73cab48c39a97e2f7a8341722b785c0603b62ec2034fca"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours": [
+      0.1,
+      6
+    ]
+  },
+  "scope": "2340 finite parameter-grid evaluations across all 156 fits, including original points. No changes to original fits and no GPU."
+}

@@ -577,3 +577,29 @@ One CPU, 4 GiB memory limit, no swap/GPU. These comparisons remain conditional
 on the current fixed trees and optimized parameters. Optimization sensitivity,
 whole-protein context, indel uncertainty and ancestral structural ensembles
 remain unfinished.
+
+## Finite likelihood-neighborhood diagnostic running
+
+The full 156-fit set now has a CPU diagnostic evaluating 15 parameter
+combinations each (2,340 points): fitted gamma shape multiplied by
+0.5, 0.9, 1, 1.1 or 2 and all branch lengths multiplied by 0.9, 1 or 1.1.
+Frequencies and topology remain fixed. The original point must reproduce its
+checkpoint likelihood within 0.001 log units before any perturbations are
+accepted. The same threshold flags improvements. All signed changes are
+retained, not just improving points.
+
+Some gamma perturbations extend below IQ-TREE's default lower bound of 0.02,
+confirmed in the cached version-specific source (`tools.cpp`, line 6399;
+checksum recorded with the launch). Those points are labeled separately:
+improvement outside the original feasible domain does not itself demonstrate
+a failure of the original constrained optimization. Improvement inside it
+would identify fits needing further optimization. Failure to find improvement
+on this finite grid cannot establish convergence or global optimality.
+
+Run `python scripts/diagnose_ancestral_domain_fit_neighborhoods.py`; plan and
+launch use prefix `ancestral_domain_fit_neighborhood_`, date `20260927`.
+Output: `results/ancestral/domain-fit-neighborhoods-20260927-v1/`.
+One CPU, 4 GiB memory limit, no swap/GPU; estimate 0.1–6 hours and at most
+0.2 GiB output. Verified live at launch; full results remain pending.
+Independent branch optimization, alternate starts and posterior propagation
+after refitting remain required.
