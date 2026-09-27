@@ -1,0 +1,56 @@
+{
+  "inventory": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1",
+  "inventory_audit": "metadata/selected_control_domain_inventory_readback_20260927.json",
+  "qualification": "results/structural_comparisons/domain-coverage-geometry-20260927-v1",
+  "qualification_audit": "metadata/domain_coverage_geometry_readback_20260927.json",
+  "cohorts": {
+    "target": {
+      "diagnostic": "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1",
+      "coverage": "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1"
+    },
+    "background": {
+      "diagnostic": "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1",
+      "coverage": "results/structural_comparisons/background-domain-coverage-screen-20260927-v1"
+    }
+  },
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "output": "results/structural_comparisons/matched-domain-measurements-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "150080 shared boundary matches expanded to 1200640 mask/order measurement rows, all sensitivity screens retained. No effect tests, predictions or charges.",
+  "pins": {
+    "scripts/prepare_matched_domain_contrasts.py": "2dbec487baa0089d0dd8ea67144048cc550c81eff5639948d6d7066663237f59",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/selected_control_domain_inventory_readback_20260927.json": "9f96f1eb74a72c187441db189463d3101a1d7dcc72c163712a9bd04e99ed8699",
+    "metadata/domain_coverage_geometry_readback_20260927.json": "0de58b8ea740b7c5c0944957e3ef3321ccbef430320f9743d3d245e478c49db1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/receipt.json": "6f1b912cbac6e637747752febc6ad08b2cc3d3de677283161ae1423b4f7f24db",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/domain_configurations.jsonl": "bb9b4f5463a4209b6054ec17cfa5636b0283008cce19e0469139512ac8a914f1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/receipt.json": "301a5177bf12536f0106f3685b8e5f1239fc74021c5f2c4b4d5a23e3d58e1e14",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/background.tsv": "e14a2c925633f860ba2533f90c6c5e325c5d26a821117c40725ea64337d4cb8c",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/target.tsv": "37e7358a900e9c6ce4864cf8ddcbce3b92917288417d81d85e18a559c5ce0c7e",
+    "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1/receipt.json": "baefebd99f32daac913ca4074a88bd6c1e81a14905901bd7ccb99b7148cd49e1",
+    "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1/numeric_readback.tsv": "e4076474fe7aedb4b6100288987089f2bff7db386705b1aba16bf2e9a7e565ae",
+    "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/receipt.json": "e65b4375f983232c6c0160a30212f5aa95eb452af72eca3a43f6af8e6a3eb290",
+    "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/pair_mask_coverage.tsv": "987b155efb87349abff04a4638564739e487b74c4f83beb69a1c4de5c5f3bbed",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/receipt.json": "0ad891a51ca4e8dfe31dc0ea8fcbd9148a5f0e51f5c045a29a071f9d63206992",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/numeric_readback.tsv": "b34b4289423c7c0a0379939f20ac610c0431da00851c323ea0be73a6b2ad944e",
+    "results/structural_comparisons/background-domain-coverage-screen-20260927-v1/receipt.json": "0046e5ae2259877729e08598ad6dc9985da651dcfe58c8aca538f2a482e4fb72",
+    "results/structural_comparisons/background-domain-coverage-screen-20260927-v1/pair_mask_coverage.tsv": "0f29159f77d6de98127296d273110b2ee3bdb4399fa0282a3097e97583d95536"
+  }
+}

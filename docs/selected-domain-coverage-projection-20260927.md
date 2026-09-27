@@ -5,7 +5,8 @@ configuration qualification grid. It covers 100,328,832 record/boundary/mask/
 screen combinations across 54 matching scenarios, four annotation policies,
 two phylogenetic guides, two domain boundaries, three mask cohorts and six
 coverage screens. All 15,552 summary strata must be present, including zeros.
-Production and independent verification are running/queued, not yet complete.
+The v2 production and independent verification are complete: all 15,552
+summary cells and 233,280 numeric values passed, with both services exiting zero.
 
 Each stratum reports the metadata-selected denominator, usable selected records,
 eligible domain occurrences, all five availability statuses, selected and usable
@@ -57,3 +58,21 @@ unchanged. The unchanged independent verifier is queued with the new plan,
 exact process identity and a new output path. Fourteen settings completed at
 the live checkpoint, with cgroup memory near 0.8 GiB. This is evidence of
 progress, not completion or a full-memory benchmark.
+
+
+## Verified illustrative coverage
+
+For the profile guide, alignment-evalue policy, alignment boundaries and the
+same-domain both-mask cohort at n50/c70, S45 retains 6,301 of 11,917 selected
+records (7,824 eligible domain occurrences), 127 of 143 taxa, 1,115 of 2,038
+families, and 3,817 of 7,414 distinct background nodes. Maximum usable background
+reuse is 22. Of the records, 5,971 have every shared domain pass, 330 have some
+pass, 378 have none pass, 3,793 have no shared domain comparison, and 1,445
+involve identical models requiring separate treatment.
+
+Under the corresponding focal-only S46 setting, 495 of 792 records remain,
+with 563 eligible domain occurrences, 63 taxa, 102 families and 314 distinct
+backgrounds; maximum reuse remains 22. These are illustrative settings already
+examined in the metadata-balance analysis, not selections based on structural
+effects. All 15,552 settings remain in the complete output. They quantify
+conditional availability and repeated observations, not independent replicates.
