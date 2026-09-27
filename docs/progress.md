@@ -8828,3 +8828,11 @@ unique and distinct across examined levels; local roots are unchanged. Full
 readback verified 7,420 induced edge lengths and rooted descendant sets, plus
 4,100 tip dispositions. Branch lengths remain inherited inputs requiring
 alignment-specific refitting. No ancestral state or posterior inference yet.
+
+### 2026-09-27: 156 domain substitution-model fits launched
+
+Started all 52 verified domain alignments under LG/WAG/JTT +F+G4 on fixed local
+topologies, refitting branch lengths. Two four-thread fits run concurrently,
+12 GiB service memory limit, no swap/GPU. Identical guide topologies are fitted
+once with both provenance links retained. Initial production checks passed;
+full parameter/likelihood audit and ancestral inference remain pending.

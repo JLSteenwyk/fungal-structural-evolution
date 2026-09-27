@@ -1,0 +1,85 @@
+{
+  "unit": "fungal-ancestral-domain-model-fits-20260927.service",
+  "plan_sha256": "74c132d7ccdb63a44b5fd2776492a16001a0f9791e7fd3a5beea2b170c4bc506",
+  "resources": {
+    "cpus": 8,
+    "workers": 2,
+    "threads_per_fit": 4,
+    "memory_per_fit_gib": 4,
+    "cgroup_memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      1,
+      48
+    ],
+    "basis": "156 fixed-topology fits, maximum 563 proteins and 453 alignment columns; existing host, no GPU or paid resources."
+  },
+  "observed_state": {
+    "MainPID": "481755",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 481755,
+  "created": 1790545114.21,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ancestral_domain_model_fits.py",
+    "--plan",
+    "metadata/ancestral_domain_model_fit_plan_20260927.json"
+  ],
+  "status": "verified_live_full_156_model_fit_producer",
+  "children": [
+    {
+      "pid": 482457,
+      "created": 1790545135.5,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-domain-alignments-20260927-v1/OG0000972-alignment-famsa/alignment.faa",
+        "-st",
+        "AA",
+        "-t",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-local-trees-20260927-v1/profile-OG0000972-domain.nwk",
+        "--tree-fix",
+        "-m",
+        "JTT+F+G4",
+        "-T",
+        "4",
+        "--mem",
+        "4G",
+        "--seed",
+        "20260927",
+        "-keep-ident",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-domain-model-fits-20260927-v1/OG0000972-alignment-famsa-JTT/fit"
+      ]
+    },
+    {
+      "pid": 482483,
+      "created": 1790545139.71,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-domain-alignments-20260927-v1/OG0000972-envelope-mafft/alignment.faa",
+        "-st",
+        "AA",
+        "-t",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-local-trees-20260927-v1/profile-OG0000972-domain.nwk",
+        "--tree-fix",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "4",
+        "--mem",
+        "4G",
+        "--seed",
+        "20260927",
+        "-keep-ident",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-domain-model-fits-20260927-v1/OG0000972-envelope-mafft-LG/fit"
+      ]
+    }
+  ]
+}

@@ -336,3 +336,35 @@ sampling/root sensitivity remain required before interpreting ancestors.
 Reproduce: `python scripts/prepare_ancestral_case_trees.py`. Local artifacts:
 `results/ancestral/case-local-trees-20260927-v1/`. Completion record:
 `metadata/ancestral_case_local_trees_completed_20260927.json`.
+
+## Domain substitution-model and branch-length fitting launched
+
+All 52 domain alignments are being fitted under LG+F+G4, WAG+F+G4 and JTT+F+G4
+with IQ-TREE 3.0.1, producing 156 model/alignment combinations. The empirical
+exchangeability models share observed amino-acid frequencies and four discrete
+gamma rate categories. All models remain retained; no best model, adequacy or
+ancestral-state conclusion is assigned at this stage.
+
+Each fit fixes the local unrooted topology (`-t ... --tree-fix`) while estimating
+model parameters and branch lengths from that alignment. `-keep-ident` retains
+identical sequence copies. Output tips, nonnegative finite branch lengths and
+unrooted splits are checked against the input; the reported likelihood must
+be finite and the model label must match. The full likelihood/parameter audit
+and convergence assessment remain downstream.
+
+The profile-domain tree is used once because every corresponding MAFFT-guide
+local tree has identical rooted edge sets and source lengths. This saves
+duplicate computation while retaining both guides' provenance; it does not
+create independent replicate estimates or resolve topology/root uncertainty.
+Fits under different boundary definitions or alignment methods have different
+data and their raw likelihoods must not be compared as a model-selection test.
+
+Two fits run concurrently, four threads and a 4 GiB IQ-TREE memory allowance
+each. The service has an eight-CPU quota, 12 GiB memory limit and no swap.
+Planning envelope: 1–48 hours, 2 GiB output, existing local CPU only. First-family
+production checks passed; the full run is still active at launch verification.
+
+Script: `scripts/run_ancestral_domain_model_fits.py`. Frozen plan and exact
+launch identity: `metadata/ancestral_domain_model_fit_plan_20260927.json` and
+`metadata/ancestral_domain_model_fit_launch_20260927.json`. No ancestral
+sequences, ancestral structures or indel states have been inferred.
