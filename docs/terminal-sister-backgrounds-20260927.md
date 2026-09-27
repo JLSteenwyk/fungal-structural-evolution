@@ -103,3 +103,34 @@ in `results/orthology/terminal-sister-guide-comparison-20260927-v1`. One CPU,
 Known-guide fixtures passed label changes, candidate disagreements, one-guide
 pairs, missing/identical models, and rejection of inconsistent identities.
 Production comparison and independent output checking remain pending.
+
+## Native orthology membership queued
+
+The next source-bound stage queries both audited native ortholog-pair streams
+for every row of the modeled candidate union, retaining all positive, negative
+and disagreeing assignments. Protein IDs are exact zero-based line ordinals
+from the pinned `SequenceIDs.txt`, qualified with the species mapping. The ID
+files are identical across guides. Candidate pairs are sorted by their native
+integer keys and merged against each complete reciprocal stream. Every stream
+record is checked for ordering, canonical IDs and exactly one record in each
+direction; stream hashes must match the earlier full multiplicity audits before
+and after querying. A negative result means absent from that native output,
+not independently established paralogy. These are reconciliation-derived
+ortholog assignments and are not independent biological validation.
+
+Run `scripts/query_terminal_background_orthology.py --plan
+metadata/terminal_background_orthology_plan_20260927.json`. It waits for the
+recorded guide-comparison process and its complete receipt, compiles
+`scripts/query_ortholog_pair_membership.cpp`, runs known-set and corruption
+fixtures, and exports all candidate fields plus both membership flags under
+`results/orthology/terminal-background-orthology-20260927-v1`. It can compute
+before the guide-comparison independent readback, but its receipt explicitly
+requires that readback and independent membership verification before any
+matched-control eligibility or scientific use.
+
+The scanner passed exact comparison to a Python set, presence and leading,
+interior and trailing absence, empty streams and queries, and rejection of six
+corrupted stream/query cases. The queued production scan is not yet complete.
+One CPU, 4 GiB RAM, no swap and 1 GiB output are budgeted; each roughly 15.7 GiB
+input stream receives a complete scan and before/after checksums. The 0.1–4 hour
+planning range excludes dependency wait. No predictions or paid resources run.

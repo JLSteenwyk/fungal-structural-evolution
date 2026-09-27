@@ -6234,3 +6234,18 @@ union for later orthology/matching checks. Known-guide fixtures passed. See
 The prior turn added full inventory verification; this turn adds the complete
 guide-sensitivity join. Production join/readback, orthology checks and matching
 remain unfinished. The full objective is active and GPU prediction remains paused.
+
+## September 27 background native orthology membership queued
+
+Implemented and launched a gated query of both complete audited reciprocal
+ortholog streams for the modeled terminal-pair candidate union. Source-line
+protein IDs preserve exact identities, and the full scans retain absent and
+disagreeing memberships. Known-set, empty-input and six corruption fixtures
+passed. The upstream full inventory readback remains live and is progressing;
+the guide comparison and membership stages await their dependencies.
+
+The previous turn prepared the guide-sensitivity join. This turn adds the
+native orthology check needed before background matching. Full join and
+membership readbacks, matching and evolutionary tests remain open. See
+[native membership methods](terminal-sister-backgrounds-20260927.md#native-orthology-membership-queued).
+The full goal remains active and GPU prediction remains paused.
