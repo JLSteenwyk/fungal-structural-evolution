@@ -1316,3 +1316,30 @@ live identity are `metadata/codon_tree_comparison_plan_20260927.json` and
 CPU/8 GiB RAM, no swap, 1 GB planned output and a 0.01–2 hour planning allowance
 after auditing. No GPU or paid resources are used. The actual comparison and
 its independent full output readback remain pending.
+## Independent full tree-comparison readback queued
+
+`scripts/readback_codon_tree_comparison.py` reconstructs the full comparison
+with DendroPy 5.0.8, independently of the producer's Bio.Phylo parser and
+split-summed distances. It checks every case disposition and retained flag,
+every union split and support/length delta, and every taxon-pair distance using
+DendroPy's direct phylogenetic distance matrix. Row grids and missing fields
+must match exactly; floating-point comparisons use `1e-10` absolute/relative
+tolerance. Input, source receipt and output artifact hashes are checked.
+
+The checker passed the entire original-tree identity run (1,712 ledger cases,
+1,655 matched cases, 18,407 split rows and 40,935 pair rows). Evidence is in
+`metadata/codon_tree_comparison_identity_independent_readback_20260927.json`.
+`scripts/check_codon_tree_comparison_readback.py` then confirmed that both a
+wrong pair distance and a missing pair are rejected even when artifact hashes
+and the declared row count are updated. No success proof was written for either
+corrupted fixture.
+
+The full realignment-comparison checker is now waiting on the recorded comparison
+controller's exact PID, creation time and command. Plan and launch records are
+`metadata/codon_tree_comparison_readback_plan_20260927.json` and
+`metadata/codon_tree_comparison_readback_launch_20260927.json`. It uses one
+CPU/8 GiB RAM, no swap, a 0.1 GB output allowance and a 0.01–2 hour planning
+range after comparison. Expected proof is
+`metadata/codon_tree_comparison_completed_readback_20260927.json`.
+The real comparison is still pending, and the successful identity test does
+not establish that the new alignments preserve topology or model adequacy.

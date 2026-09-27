@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_codon_tree_comparison_independent_readback",
+  "cases": 1712,
+  "dispositions": {
+    "matched": 1655,
+    "neither_fitted": 57
+  },
+  "split_rows": 18407,
+  "pair_rows": 40935,
+  "changed_topology_cases": 0,
+  "source_receipt_sha256": "13732103e10a3a78c7897763271af84a25789dc959dc3723b1d469bc72dc6dbc",
+  "pins": {
+    "metadata/codon_tree_comparison_identity_readback_plan_20260927.json": "b8b6c6d445440b03bd65b4055c7caadddeaec926bb015215570b7f587dd8e528",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_codon_tree_comparison.py": "eceb230ae79da1331f151f456a334566eaed54c9d9df65d7d83bc28466350f90"
+  },
+  "dendropy_version": "5.0.8",
+  "scope": "Independent DendroPy parser and direct phylogenetic distance matrix reconstruct every split, support/length delta and taxon-pair distance. Exact case, flag, missing-field and full row grids checked; numerical tolerance 1e-10 absolute/relative. Does not rerun phylogenetic inference or establish model adequacy."
+}

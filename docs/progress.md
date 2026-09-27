@@ -6958,3 +6958,18 @@ at the check. No actual local-versus-original result is claimed yet.
 Next steps remain independent comparison readback and alignment-dependent
 codon model adequacy. All eight scientific aims remain open. GPU prediction
 remains paused; current work uses existing CPU resources.
+## September 27 independent tree-comparison readback queued
+
+The preceding turn implemented and queued the full tree comparison. This turn
+adds independent DendroPy reconstruction of every case, split and pair result,
+passes the full original-tree identity check, and verifies rejection of
+rehashed numerical corruption and a missing pair. The checker is queued behind
+the verified comparison controller with one CPU/8 GiB RAM and no swap.
+
+All four inspected producers/controllers had matching live PID, creation time
+and commands. The ecological bootstrap audit had reached 1,360/2,000 trees;
+the background-coordinate audit had 135 shard receipts at a later check, and
+the local tree producer had 424 case receipts. No unfinished audit was called
+complete and no duplicate job was launched. Full comparison results and codon
+model adequacy remain pending. All eight aims remain open; GPU prediction
+remains paused.

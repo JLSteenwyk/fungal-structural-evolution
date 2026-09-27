@@ -1,0 +1,24 @@
+{
+  "comparison_plan": "metadata/codon_tree_comparison_plan_20260927.json",
+  "wait_for": "metadata/codon_tree_comparison_launch_20260927.json",
+  "output": "metadata/codon_tree_comparison_completed_readback_20260927.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "output_allowance_gb": 0.1,
+    "cost": "Existing local CPU host; no GPU or new charges"
+  },
+  "pins": {
+    "scripts/readback_codon_tree_comparison.py": "eceb230ae79da1331f151f456a334566eaed54c9d9df65d7d83bc28466350f90",
+    "scripts/check_codon_tree_comparison_readback.py": "0b1c7bf23c2b78c788291b11ffe98b1f739450c71c30324a20c274373ab846ef",
+    "metadata/codon_tree_comparison_plan_20260927.json": "c3ff79de6117a73fbcf73f05fe6b949ccb34672ff12689adb8328a823bb24020",
+    "metadata/codon_tree_comparison_launch_20260927.json": "8fe3fe5050095aef3f6e1c7a2304851aa1a9d87fcf08ce6d1069c7a13511c7cc",
+    "metadata/codon_tree_comparison_identity_independent_readback_20260927.json": "e994e7b7e14ce766dd4377c8a2461fbbec1a4f872ff15ab05d67af06df3e3b38"
+  },
+  "scope": "Independently reconstruct every field of the complete realignment tree comparison, using DendroPy and direct phylogenetic distances; launch only after numerical-corruption and missing-pair fixtures reject."
+}

@@ -1,0 +1,22 @@
+{
+  "service": "fungal-codon-tree-comparison-readback-20260927.service",
+  "pid": 2450670,
+  "created": 1790508340.01,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_codon_tree_comparison.py",
+    "--comparison-plan",
+    "metadata/codon_tree_comparison_plan_20260927.json",
+    "--wait-for",
+    "metadata/codon_tree_comparison_launch_20260927.json",
+    "--output",
+    "metadata/codon_tree_comparison_completed_readback_20260927.json"
+  ],
+  "plan_sha256": "ebe11471a451c5294747495fdc7cba5c1dda824e1f239ac1b1871a28ba52585f",
+  "status": "verified_live_waiting_for_complete_comparison",
+  "fixtures": [
+    "full_original_identity_comparison_passed",
+    "wrong_distance_rejected_with_updated_hash",
+    "missing_pair_rejected_with_updated_hash_and_count"
+  ]
+}
