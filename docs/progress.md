@@ -7058,3 +7058,13 @@ conditional mapping results, not seven independent origins or an ecological
 effect. Detailed distributions, caveats and receipts are recorded in the
 ecological edge-state report. All eight aims remain open; GPU prediction stays
 paused.
+## September 27 verified ecological uncertainty figure completed
+
+The preceding turn completed the full bootstrap audit and summary. This turn
+adds reproducible PNG/PDF/SVG figures and a 48-row data export showing required
+terminal transitions, optional-edge distributions and coding sensitivity.
+Independently reconstructed every plotted value from the original audited
+bootstrap tables and visually inspected the PNG. All guide/coding conditions
+and zero-probability bins remain explicit, without treating conditional mapping
+frequencies as independent biological origins. Source hashes and review evidence
+are archived. All eight scientific aims remain open; GPU prediction is paused.

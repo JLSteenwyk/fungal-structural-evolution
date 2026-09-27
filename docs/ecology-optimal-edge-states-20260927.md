@@ -209,3 +209,29 @@ minimum scores therefore coexist with uncertain transition placement. Rooting,
 broader ecological coding and evidence for replicated independent transitions
 remain necessary before an ecological structural-effect test. This stage does
 not establish that seven contrasts are available.
+## Reproducible bootstrap uncertainty figure
+
+![Ecological bootstrap uncertainty](figures/ecology_bootstrap_uncertainty_20260927.png)
+
+The [PDF](figures/ecology_bootstrap_uncertainty_20260927.pdf) and
+[SVG](figures/ecology_bootstrap_uncertainty_20260927.svg) provide vector exports;
+the [TSV](figures/ecology_bootstrap_uncertainty_20260927.tsv) records every plotted
+value. Reproduce with `scripts/plot_ecology_bootstrap_uncertainty.py --prefix`
+followed by a fresh output prefix. The script requires the completed full
+summary readback and verifies input hashes.
+
+Panel A shows every terminal edge that is required in any bootstrap mapping,
+across all four conditions. Percentages refer to bootstrap trees in which an
+edge must change under every optimal mapping. All these terminal splits occur
+in every tree, so conditional and ensemble denominators coincide here. The
+Ramaria-unknown zero is explicitly not evidence for ecological stasis.
+Panel B shows the entire optional-edge count distribution, including zero
+bins. The two codings are shown together only after exact distribution-equality
+checks. The minimum scores of seven and six are annotations, not biological
+origin or independent-contrast counts.
+
+All 48 plotted records were independently reconstructed from the original
+audited bootstrap tables, with exact condition/taxon/bin coverage; all output
+hashes were checked and the PNG visually reviewed. Evidence is archived in
+`metadata/ecology_bootstrap_figure_readback_20260927.json`. The figure remains a
+conditional mapping diagnostic, not a test of ecological structural effects.
