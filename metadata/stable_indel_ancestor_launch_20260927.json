@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-stable-indel-ancestors-20260927.service",
+  "state": {
+    "MainPID": "567274",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 567274,
+  "created": 1790551222.34,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/infer_stable_indel_ancestors.py"
+  ],
+  "plan_sha256": "72a8d50bbd719dd003945bc324572c72cbadee907535b4e6f7360399a2f98ca7",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "paid_cost": 0
+  }
+}

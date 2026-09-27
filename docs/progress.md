@@ -9227,3 +9227,20 @@ maximum difference2.23e-16. Unknown tip states are included. Scripts:
 Production propagation over audited fits and independent production-posterior
 verification remain pending; these conditional SIC probabilities will not
 alone establish residue presence or compatible ancestral sequences.
+
+### 2026-09-27: complete selected-fit gap probability propagation launched
+
+Launched all312 input dispositions/306 nonempty selected models. Each job
+requires its nine retained likelihood candidates to pass independent replay
+before computing probabilities for every fitted-tree node and coded gap.
+Both correction assumptions and terminal policies remain separate. All
+observed tip states, output dimensions and probability bounds are checked;
+internal-node incident-tip partition hashes and original tree labels retain
+the information needed to map candidate ancestors without trusting labels.
+
+OneCPU,8GiB RAM,noGPU; planning0.1–8h plus verified-auditor wait,3GiB output.
+These are conditional SIC gap probabilities at selected fitted parameters;
+optimization/bound warnings remain attached. Full independent posterior
+validation, parameter sensitivity, candidate-node mapping, overlapping-gap
+compatibility and ancestral sequence ensembles remain pending. No historical
+event counts or residue-presence interpretation is asserted.

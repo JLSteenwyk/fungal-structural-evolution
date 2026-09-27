@@ -1,0 +1,28 @@
+{
+  "fit_plan": "metadata/stable_indel_refinement_plan_20260927.json",
+  "auditor_launch": "metadata/stable_indel_refinement_audit_launch_20260927.json",
+  "audit_output": "results/ancestral/stable-indel-refinement-audit-20260927-v1",
+  "output": "results/ancestral/stable-indel-ancestors-20260927-v1",
+  "pins": {
+    "metadata/stable_indel_refinement_plan_20260927.json": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+    "metadata/stable_indel_refinement_audit_launch_20260927.json": "4bfea0cff0dba3238b4710c4c7945c307b256725c150cff8e5fd7cec4bdc79d9",
+    "metadata/stable_indel_refinement_audit_plan_20260927.json": "09abd894b4b50b18b8d608f6b0627bc13c14ecdb67c952c27c59508a5e527f80",
+    "scripts/infer_stable_indel_ancestors.py": "c0a8de39882c878333176a927b794a1268f0540d4a56b42392be35885bde8537",
+    "scripts/stable_indel_posteriors.py": "6c5f11e5baee24be27cc5f6a83d9b6992d8b4f0ce1cf4c682cdde1c718e7d82f",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/stable_indel_posterior_validation_20260927.json": "a84eaec68e679d17139e1438e3efa747e0a3b7d3bb965a6303bcf2f2136fa5b4"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All312 dispositions and306 selected model fits, every coded character and fitted-tree node. Both ascertainment and terminal policies preserved. All nine source likelihood candidates must independently pass before production. Conditional probabilities at selected fitted parameters, with optimization/bound diagnostics retained; not parameter-uncertainty ensembles, inferred numbers of events, residue-presence probabilities or final ancestor sequences. Internal-node incident-tip partition hashes support subsequent candidate-node mapping. Independent full posterior audit and overlapping-gap compatibility remain pending."
+}
