@@ -1,0 +1,36 @@
+{
+  "unit": "fungal-ancestral-domain-multistarts-20260927-v2.service",
+  "state": {
+    "MainPID": "508940",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 508940,
+  "created": 1790547087.27,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ancestral_domain_multistarts.py",
+    "--plan",
+    "metadata/ancestral_domain_multistart_plan_20260927.json"
+  ],
+  "plan_sha256": "6b899172e7dc8197a5babfd908c0ac8b59f8b297ad635746bb19b4f6c2ab7862",
+  "resources": {
+    "concurrent_fits": 2,
+    "threads_per_fit": 4,
+    "aggregate_cpus": 8,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 8,
+    "planning_hours": [
+      1,
+      48
+    ]
+  },
+  "prior_attempt": {
+    "unit": "fungal-ancestral-domain-multistarts-20260927.service",
+    "terminal_state": "failed_exit1_missing_plan",
+    "cause": "Input preparation stopped on absent root stem versus serialized zero. Corrected by explicitly zeroing the non-edge root stem before full export readback. No IQ-TREE fit ran in that attempt.",
+    "preserved_inputs": "results/ancestral/domain-multistart-inputs-20260927-v1"
+  }
+}

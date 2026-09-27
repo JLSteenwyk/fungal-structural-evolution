@@ -8904,3 +8904,13 @@ Original likelihoods must first reproduce; below-default gamma-bound points
 are explicitly labeled. One CPU, 4 GiB RAM, no swap/GPU; verified live.
 Results pending. This grid can identify improving directions but cannot
 establish convergence or replace full alternate-start optimization.
+
+### 2026-09-27: 936 alternate-start ancestral domain refits launched
+
+Three gamma/branch starting combinations across all 156 fits, each with
+original and lower gamma bounds, now running with tighter optimization
+epsilon. First completed output confirms gamma is optimized rather than
+fixed. Two concurrent four-thread fits, 12 GiB aggregate memory, no GPU.
+Full parameter/likelihood verification, across-start comparison and updated
+ancestral probabilities remain pending. Finite-neighborhood diagnostic also
+remains active. See `docs/ancestral-case-inputs.md`.

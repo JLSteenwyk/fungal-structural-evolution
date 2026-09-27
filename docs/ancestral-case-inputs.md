@@ -603,3 +603,36 @@ One CPU, 4 GiB memory limit, no swap/GPU; estimate 0.1–6 hours and at most
 0.2 GiB output. Verified live at launch; full results remain pending.
 Independent branch optimization, alternate starts and posterior propagation
 after refitting remain required.
+
+## Alternate-start domain model refits running
+
+All 156 baseline fits are being refitted from three gamma/branch starts:
+(alpha 0.05, branch scale 0.5), (alpha 0.5, scale 1), and (alpha 2, scale 2).
+Each runs with gamma lower bound 0.02 and 0.005, totaling 936 fits. Branch
+scaling is applied to each baseline fitted tree; unrooted topology and all
+tip identities are retained. The nonexistent root stem is explicitly zero.
+All exported tree labels and lengths are checked after serialization.
+
+IQ-TREE 3.0.1 receives `-a <start> -optfromgiven --alpha-min <bound>` and
+`--epsilon 0.000001`, with branch lengths and gamma shape free to optimize.
+The cached version-specific `model/rategamma.cpp` confirms that positive
+starting alpha is optimized when `optimize_from_given_params` is enabled;
+its hash and source URL are pinned. The first completed fit moves alpha from
+0.05 to about 1.2053 and retains 39 free parameters, confirming runtime
+behavior for that job. Full output qualification remains pending.
+
+Preparation: `python scripts/prepare_ancestral_domain_multistarts.py`.
+Execution: `python scripts/run_ancestral_domain_multistarts.py --plan
+metadata/ancestral_domain_multistart_plan_20260927.json`. Inputs are under
+`results/ancestral/domain-multistart-inputs-20260927-v2/`; outputs under
+`results/ancestral/domain-multistarts-20260927-v1/`. Two concurrent four-thread
+fits, aggregate eight CPUs and 12 GiB memory, no swap/GPU. Planning envelope:
+1–48 hours and up to 8 GiB output. Launch identity and an early failed
+preparation/launch attempt are preserved in launch metadata. Original fits
+and posterior calculations are unchanged.
+
+Completion will require every fit's input/tip/topology/parameter audit,
+likelihood replay and comparison of solutions across starts and bounds.
+Posterior sensitivity must then be propagated from qualified solutions.
+Alternate-start agreement alone cannot establish model adequacy or global
+optimality.
