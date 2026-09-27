@@ -50,3 +50,35 @@ stated numerical tolerance. These counts span dependent sensitivity settings,
 not independent tests or repeated confirmations of a biological hypothesis.
 The observed raw differences still require sequence/coverage adjustment,
 phylogenetic/family/control-dependence modeling and prediction-error sensitivity.
+
+## Full-grid figure
+
+![Unadjusted matched-domain weighting sensitivity](figures/matched_weighting_sensitivity_20260927.png)
+
+[PDF](figures/matched_weighting_sensitivity_20260927.pdf) and
+[SVG](figures/matched_weighting_sensitivity_20260927.svg) versions accompany the
+PNG. Panel A includes all 82,944 original settings, including all four input
+orders, for each weighting. Thin segments show the complete range, thick
+segments the interquartile range, and white points the median. These describe
+the distribution across dependent sensitivity settings, not sampling uncertainty.
+Panel B includes all 54 matching scenarios and all 384 guide/policy/boundary/
+mask/cohort/screen groups per scenario for each weighting.
+
+Negative contrasts in all four orders occur in S02 and S20 under family-equal
+weighting (48 groups each), S48 under family-equal weighting (16 groups), and
+S42 under taxon-equal weighting (64 groups). No scenario has negative
+record-weighted contrasts. These settings are dependent and these counts are
+not independent biological replications. Scenario definitions remain in the
+complete background-control selection's `scenarios.json`; no thresholds or
+matching criteria were selected from this figure.
+
+Reproduce with `python scripts/plot_matched_weighting_sensitivity.py` after
+choosing an unused output stem if rerunning. The script requires the completed
+full source-summary and sensitivity audits and verifies their artifact hashes.
+All 15 plotted quantiles are read back using scalar order-statistic interpolation
+from the original TSV, and all 162 scenario/weighting cells are checked using
+separate CSV counters. The exported tables and provenance receipt are adjacent
+to the figures as `matched_weighting_sensitivity_20260927_*` and
+`matched_weighting_sensitivity_20260927.receipt.json`. The rendered PNG was
+visually inspected for labels and layout. Phylogenetically adjusted effect
+estimates, uncertainty and model adequacy remain pending.

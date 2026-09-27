@@ -1,0 +1,29 @@
+{
+  "status": "complete_verified_matched_weighting_sensitivity_figure",
+  "raw_setting_rows": 82944,
+  "sensitivity_rows": 62208,
+  "quantile_values_checked": 15,
+  "scenario_weighting_cells_checked": 162,
+  "negative_groups_by_weighting": {
+    "record": 0,
+    "family_equal": 112,
+    "taxon_equal": 64
+  },
+  "source_sha256": {
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/receipt.json": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0",
+    "metadata/matched_domain_record_summary_readback_20260927.json": "96d27e8f5efcc13c161cfadf73a1eae9604736045d1910e8dc565126edbe6d73",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/record_summary.tsv": "d15946ba0f9b9cbf6a5b83de3979e23413051a812beb911fb4b2f106ed636ba1",
+    "results/structural_comparisons/matched-record-sensitivity-20260927-v1/receipt.json": "e3c735ab172a97c28ab6526989e045c45bd9db99ffd22629c500b7a4734cd14c",
+    "metadata/matched_record_sensitivity_readback_20260927.json": "e99eb6d7c5b3a4325276699ad65258a3243de5d49f74676f5061b3a36973f35f",
+    "results/structural_comparisons/matched-record-sensitivity-20260927-v1/order_weighting_sensitivity.tsv": "9ec709d3dae234520aa86d3697e4e8e7a53c784ace43f6f76016380cdf58c629"
+  },
+  "script_sha256": "addbfa54264fbdba9bc3b2b3102d7bc3a07f08ad46b7fabea36e0898f6edef33",
+  "artifacts": {
+    "docs/figures/matched_weighting_sensitivity_20260927.png": "e77e9de045aaf4abdef3a77f9c8b576f1d3525887d46ba1b82d6500a9fd32406",
+    "docs/figures/matched_weighting_sensitivity_20260927.pdf": "d773cff16328e9d85f6ef9c6cd14b0177e945a833fa60344e790f8345f028005",
+    "docs/figures/matched_weighting_sensitivity_20260927.svg": "dab9c16299b5a04a43db6558ea578ad4d98e6afb2370a90468af9e85dd86125a",
+    "docs/figures/matched_weighting_sensitivity_20260927_quantiles.tsv": "d3b56b565fef9ba51bb46f73a61c41aaf0e410f6e5804d07503835ff9353c96f",
+    "docs/figures/matched_weighting_sensitivity_20260927_negative_groups.tsv": "ed4922358d12782fde730ca9bd75bfe5e261b7b088d49c4ef9fbed2561977d27"
+  },
+  "scope": "All settings retained; exported quantiles independently reconstructed by scalar interpolation and all negative-group counts by CSV counters. Descriptive weighting sensitivity, not independent replications, confidence intervals, adjusted duplication effects or biological significance."
+}
