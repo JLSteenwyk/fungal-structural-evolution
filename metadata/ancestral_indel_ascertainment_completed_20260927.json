@@ -1,0 +1,17 @@
+{
+  "status": "complete_all_156_character_observability_audit",
+  "encodings": 156,
+  "characters": 12957,
+  "characters_with_unknown": 12117,
+  "characters_without_observed_one": 0,
+  "empty_encodings": [
+    "OG0000294-alignment-famsa-terminal_unknown",
+    "OG0000294-alignment-mafft-terminal_unknown",
+    "OG0000294-envelope-famsa-terminal_unknown"
+  ],
+  "source_receipt_sha256": "3e90202ae9cf9fd34fed3cd91b1f2f658ba5d7f9f54cb16f485b3cb1ded91120",
+  "script_sha256": "848303ca4dc2da194d4d5c05bba8e9527e28437e884ad399142a2acc8e452d59",
+  "scope": "Character observability only. No fitted indel model or ancestral posterior. Missing states are coding-dependent; a mask-conditional correction alone does not establish an adequate generative model.",
+  "receipt_path": "results/ancestral/indel-ascertainment-audit-20260927-v1/receipt.json",
+  "receipt_sha256": "4c6376bd703acf94e170f615a53d48f2ffb4aeb7bf2a1d292011896800f196d5"
+}

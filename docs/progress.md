@@ -9050,3 +9050,15 @@ All156 indel encodings subsequently completed:12,957 character records and
 job receipts and artifacts checked after successful termination. Closure:
 `metadata/ancestral_indel_coding_completed_20260927.json`. These are encoded
 gap characters, not inferred historical indel events or ancestral sequences.
+
+### 2026-09-27: all indel-character observability audited
+
+Inspected all156 encodings and12,957 characters against their hashed coding
+outputs.12,117 characters contain unknown states; all nonempty characters
+retain an observed1. Three terminal-unknown OG0000294 encodings have no
+characters and require explicit empty-data dispositions. Source inspection
+shows FastML's default ascertainment denominator uses the full-taxon all-zero
+pattern, not each character's unknown mask. Recorded the distinction and
+working-model sensitivity requirements in
+`docs/ancestral-indel-ascertainment-20260927.md`. No ancestral indel posterior
+or final ancestral sequence is claimed. GPU prediction remains paused.
