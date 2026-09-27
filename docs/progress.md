@@ -8778,3 +8778,12 @@ terminal production. Checks cover every sequence, occupancy count and residue
 coordinate; outputs compare full-clade columns and focal duplicate pair maps
 separately. No alignment or ancestral biological result is claimed while the
 producer and checker are still running.
+
+### 2026-09-27: candidate ancestral domain context exported
+
+Exact-sequence joins recovered all four Pfam annotation policies for 1,025
+proteins. Policies agree throughout this subset, but 167 proteins lack a retained
+focal Pfam hit and 46 have partial focal HMM coverage. Two focal duplicate pairs
+have different ordered annotations. All records remain retained; these are
+diagnostic annotation differences, not inferred domain losses or ASR eligibility.
+See `docs/ancestral-case-inputs.md` and the completed domain-context receipt.

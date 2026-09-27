@@ -1,0 +1,17 @@
+{
+  "status": "complete_ancestral_candidate_domain_context_export",
+  "source_receipt_path": "results/ancestral/case-domain-context-20260927-v1/receipt.json",
+  "source_receipt_sha256": "53f10d7d66c8f69a954d3c78f90730099f521c587eb317771dac4fa3d7915c0c",
+  "proteins": 1025,
+  "policy_rows": 4100,
+  "family_policy_rows": 52,
+  "all_four_policies_agree_for_every_selected_protein": true,
+  "proteins_without_target_annotation": 167,
+  "proteins_with_partial_target_hit": 46,
+  "proteins_without_any_retained_annotation": 85,
+  "focal_pairs_with_different_ordered_annotations": [
+    "OG0000230",
+    "OG0001082"
+  ],
+  "scope": "Exact sequence-hash join to fully audited Pfam candidate architectures; all four overlap policies and all model types retained. Target absence is no retained annotation, not domain loss. HMM coverage below 0.70 flags partial model alignment, not proven protein truncation. Ordered architecture agreement is not functional equivalence or ASR eligibility."
+}

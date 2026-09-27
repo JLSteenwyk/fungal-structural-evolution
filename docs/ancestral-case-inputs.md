@@ -133,3 +133,46 @@ and a planned 0.1–2 hours after alignment completion. Script:
 `metadata/ancestral_case_alignment_audit_plan_20260927.json` and
 `metadata/ancestral_case_alignment_audit_launch_20260927.json`.
 Full validation and alignment-sensitivity results remain pending.
+
+## Domain context reviewed for all candidate proteins
+
+All 1,025 proteins were joined by taxon/protein identifier and exact sequence
+hash to the fully audited Pfam candidate architecture database. All four overlap
+policies were retained (4,100 protein-policy rows and 52 family-policy rows).
+The policies agree for every selected protein in this subset.
+
+| Family | Proteins | With focal Pfam hit | Without focal hit | Partial focal HMM hit | Ordered annotation patterns |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| OG0000054 | 11 | 11 | 0 | 0 | 1 |
+| OG0000095 | 83 | 83 | 0 | 34 | 3 |
+| OG0000107 | 9 | 9 | 0 | 0 | 1 |
+| OG0000152 | 7 | 6 | 1 | 0 | 3 |
+| OG0000230 | 24 | 24 | 0 | 0 | 3 |
+| OG0000294 | 9 | 9 | 0 | 0 | 2 |
+| OG0000336 | 10 | 10 | 0 | 0 | 1 |
+| OG0000972 | 622 | 563 | 59 | 4 | 8 |
+| OG0001082 | 111 | 85 | 26 | 5 | 14 |
+| OG0001200 | 29 | 13 | 16 | 1 | 4 |
+| OG0001203 | 21 | 14 | 7 | 0 | 2 |
+| OG0002650 | 77 | 19 | 58 | 2 | 2 |
+| OG0002812 | 12 | 12 | 0 | 0 | 1 |
+
+Across these sets, 167 proteins lack a retained focal Pfam annotation, 85 have
+no retained annotation, and 46 have a focal hit covering less than 70% of the
+Pfam HMM. Partial model coverage does not prove a truncated protein. Likewise,
+a missing retained hit is not proof of domain absence or evolutionary loss.
+
+The focal pairs in OG0000230 (Furculomyces) and OG0001082 (Leucosporidium) have
+different ordered candidate annotations. These cases need explicit separation
+of domain-content differences from changes inside homologous domains. No
+proteins were removed, and no ancestor or final reconstruction eligibility was
+assigned from these summaries. Annotation patterns retain Pfam types and repeats
+and do not establish functional equivalence.
+
+Full annotations and policy-specific coordinates are retained under
+`results/ancestral/case-domain-context-20260927-v1/`. Reproduce with
+`python scripts/annotate_ancestral_case_domains.py`. Exact source database hash,
+prior full readback, protein-sequence hashes and output hashes are recorded.
+Closure: `metadata/ancestral_case_domain_context_completed_20260927.json`.
+These results motivate domain-aware alignment assessment before ancestral
+reconstruction, alongside the ongoing two-method full-sequence comparison.
