@@ -8123,3 +8123,22 @@ hours after its prerequisite and under 1 GiB of output. Files:
 This is numerical qualification; confidence/coverage selection, prediction
 uncertainty and biological duplication inference remain outstanding. GPUs remain
 paused.
+
+### September 27: nonlinear unresolved-support follow-up queued
+
+The previous goal turn made progress by launching the full primary order-summary
+handoff and verifier. Nonlinear support production and its readback are still
+live. A new follow-up waits for successful terminal readback, then reconstructs
+every unresolved quadratic/cubic input from fingerprinted observations. It
+removes negative candidate weights, renormalizes positive weights, and tests the
+result against the original matrix. Unsupported or missing-weight cases stay
+unresolved. Original classifications remain in the 165,888-setting export.
+
+Every projected certificate receives scalar and vector barycenter checks,
+nonnegativity/normalization checks, serialization verification, and a full
+setting-map readback. Numerical checks covered supported, separated and absent
+weight cases. This does not establish an LP optimum, interior overlap, causal
+adequacy or model fit. The job uses one CPU, 12 GiB, no swap and under 1 GiB output;
+planning allowance 0.1–2 hours after its prerequisite. Script:
+`scripts/refine_nonlinear_joint_support.py`; plan and exact process identity:
+`metadata/nonlinear_joint_support_projection_{plan,launch}_20260927.json`.
