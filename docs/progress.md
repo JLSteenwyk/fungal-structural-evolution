@@ -9417,3 +9417,26 @@ Fixed diagnostic rates are not fitted ancestors; full completion and output
 auditing remain pending. Launch and resource limits are in
 `metadata/historian_capacity_launch_20260927.json` and
 `metadata/historian_capacity_plan_20260927.json`. GPUs remain paused.
+
+### 2026-09-27: independent Historian output checks and full audit handoff
+
+The first six completed capacity jobs independently pass output graph, root,
+all known tip residues, tip lengths and the descendant sets of all four
+candidate vertices. Twelve paired candidate comparisons show zero ungapped
+sequence edits between the two branch-floor settings. This is a partial
+snapshot: 318 of 324 dispositions were pending at observation, so it does not
+establish full-family stability or complete indel-history uncertainty.
+
+`audit_historian_capacity_outputs.py` accounts for every planned disposition
+and retains unsuccessful execution outcomes. Pairwise Levenshtein distances
+compare one factor at a time (floor or star resolution); artificial nodes are
+excluded and level-three roots remain explicitly assumption-dependent.
+It independently reads output graphs and sequences, but does not replay
+Historian likelihoods. Snapshot artifact hashes verified in
+`metadata/historian_capacity_partial_audit_20260927.json`.
+
+A pinned CPU audit handoff now waits on the live producer's PID, creation time,
+command and systemd state. It will verify all 324 receipts before the final
+readback; producer inactivity alone cannot trigger success. Both producer and
+audit process identities were checked. All inference qualification, rate
+fitting and remaining project aims stay open; GPUs remain paused.
