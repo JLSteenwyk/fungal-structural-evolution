@@ -8914,3 +8914,17 @@ fixed. Two concurrent four-thread fits, 12 GiB aggregate memory, no GPU.
 Full parameter/likelihood verification, across-start comparison and updated
 ancestral probabilities remain pending. Finite-neighborhood diagnostic also
 remains active. See `docs/ancestral-case-inputs.md`.
+
+### 2026-09-27: complete alternate-start model audit queued
+
+Queued full 936-fit report/checkpoint checks and independent likelihood
+recomputation behind the verified live producer. All312 three-start groups
+and 156 bound comparisons will retain discrepancies for follow-up. One CPU,
+4 GiB RAM, no GPU. Results and updated ancestral probabilities remain pending.
+
+### 2026-09-27: all 2,340 finite likelihood perturbations completed
+
+Full grid and serialized readback passed. No fit improved above the 0.001
+log-unit tolerance in the tested directions; maximum change 2.14938e-6.
+This finite result does not establish convergence. Full alternate-start
+branch/gamma refits and their queued audit remain active.

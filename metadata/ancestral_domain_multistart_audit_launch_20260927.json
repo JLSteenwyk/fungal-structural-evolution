@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-domain-multistart-audit-20260927.service",
+  "state": {
+    "MainPID": "512980",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 512980,
+  "created": 1790547221.68,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ancestral_domain_multistarts.py"
+  ],
+  "plan_sha256": "d933868ae4983b5353cc0b7e1c4be0493167c3f2825eac5f803367d417246f54",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      6
+    ]
+  }
+}

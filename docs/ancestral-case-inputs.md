@@ -636,3 +636,32 @@ likelihood replay and comparison of solutions across starts and bounds.
 Posterior sensitivity must then be propagated from qualified solutions.
 Alternate-start agreement alone cannot establish model adequacy or global
 optimality.
+
+## Complete alternate-start audit queued
+
+A separately launched one-CPU checker waits on the exact refit producer
+PID, creation time and command line, then requires terminal success. It
+checks all 936 input/output hashes, tip and edge identities, gamma parameters,
+eight-iteration empirical frequencies, gamma-category means, report/checkpoint
+likelihoods, free-parameter counts and information-criterion arithmetic.
+Every saved likelihood is independently recomputed with the previously
+validated scaled-pruning engine (absolute tolerance 0.001 log units).
+
+All three starts are compared within each of the 312 baseline/bound groups,
+retaining likelihood ranges, best-fit identifiers and changes from baseline.
+A second table compares bounds for every baseline fit. The checker does not
+require agreement between starts or an improved fit: discrepancies remain
+results for further optimization and posterior sensitivity, not omitted cases.
+
+Reproduce with `python scripts/audit_ancestral_domain_multistarts.py`; plan
+and launch metadata use prefix `ancestral_domain_multistart_audit_` and date
+`20260927`. Output: `results/ancestral/domain-multistart-readback-20260927-v1/`.
+One CPU, 4 GiB memory limit, no swap/GPU; estimated 0.1–6 hours after refits,
+up to 0.2 GiB output. Producer and checker verified live; audit results pending.
+
+The finite-neighborhood diagnostic subsequently completed and passed full
+2,340-row readback. None of the 156 fits improved by more than 0.001 log units
+at the specified grid points (maximum increase 2.14938e-6). This result only
+concerns the tested gamma/uniform-branch directions; the full alternate-start
+branch refits remain active and may find improvements outside those directions.
+Closure: `metadata/ancestral_domain_fit_neighborhood_completed_20260927.json`.
