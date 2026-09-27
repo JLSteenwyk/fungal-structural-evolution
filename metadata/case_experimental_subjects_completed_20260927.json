@@ -1,0 +1,33 @@
+{
+  "status": "complete_case_subject_metadata_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "checker_sha256": "7b4b0e98ed493c0a1575db79fc88f81accecea3d36f2863e6b0e66e9980a9070",
+  "entities": 1205,
+  "entries": 707,
+  "alignment_contexts": 3091,
+  "dispositions": {
+    "exact_canonical_subject_match": 3091
+  },
+  "artifacts": {
+    "subject_metadata_checks.tsv": "8cac92e03ebb9bff0e0a7756b59cfdfe713b440249de6c0d9eb30cf23050b664"
+  },
+  "scope": "All metadata response identities/hashes and subject alignment substrings checked. Mismatches explicit; mutation, method, resolution and release annotations exported without selecting favorable entries. Canonical entity sequence is not observed residue coverage; coordinate and construct validation remain outstanding.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-subject-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "30a4fef40267c3cb0f910b152b13bb6284edc0b6c2c05016012f87e36a737758",
+  "terminal_states": {
+    "fungal-case-experimental-metadata-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-case-experimental-subject-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

@@ -8553,3 +8553,13 @@ Every primary-coding tree has minimum change count two but no edge required in
 all optimal mappings. A specific split becomes required in 996/1,000 trees per
 ensemble only when uncertain Jaapia is forced brown; this cannot establish a
 primary ecological transition. See [verified diagnostic](wood-decay-phylogenetic-diagnostic-20260927.md).
+
+### 2026-09-27: case experimental subjects verified; observed-coordinate checks queued
+
+All 1,912 metadata responses and 3,091 subject alignments passed independent
+readback. Metadata distinguishes 706 experimental entries from one integrative
+entry. Started full experimental-coordinate retrieval and queued independent
+archive checks followed by all-entity/all-chain/all-model CA mapping, retaining
+missing, alternate and partial-occupancy observations. Mapping requires successful
+archive readback. GPU prediction remains paused. Coordinate coverage and geometry
+are not yet validated. See [methods and resource bounds](case-independent-control-coverage-20260927.md).

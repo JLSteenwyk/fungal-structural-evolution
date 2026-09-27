@@ -59,8 +59,8 @@ polymer entities. Raw verbose responses preserve reported alignments and scores.
 Every query and response count passed readback. Each query alignment was
 reconstructed against its exact original sequence; aligned-column and paired-
 residue counts, identity denominators, and query/subject span coverage are
-exported explicitly. Subject spans have valid lengths, but independent subject
-sequence and coordinate verification remain outstanding. Query alignment
+exported explicitly. Subject spans have valid lengths. Subsequent independent subject-sequence
+verification passed for every alignment; coordinate verification remains separate. Query alignment
 coverage must not be reported as experimentally observed residue coverage.
 
 Run `scripts/search_case_experimental_homologs.py` for the fixed restartable
@@ -81,34 +81,48 @@ observed residues and model-training overlap must be checked before selecting
 structural controls. Results from related proteins are not exact-sequence
 validation of the fungal cases.
 
-## Complete entity and entry metadata retrieval launched
+## Complete entity and entry metadata verified
 
-A frozen input inventory now contains all 1,205 experimental entities and 707
-unique PDB entries from the sequence search. The metadata retrieval service is
-running all 1,912 requests with two HTTP workers, one CPU and a 2 GiB memory cap.
-Planning allowance is 10–90 minutes and 0.5 GiB output; no paid resources or GPU
-prediction are involved. Per-response receipts make the retrieval restartable.
+All 1,912 metadata requests completed for the 1,205 entities and 707 entries.
+Both retrieval and independent subject readback terminated successfully. All
+3,091 search alignment subjects exactly match the retrieved canonical entity
+sequences. Response identities, hashes, mutation annotations, experimental
+methods, resolution and release dates are retained. The completion record is
+`metadata/case_experimental_subjects_completed_20260927.json`.
 
-`prepare_case_experimental_metadata_inventory.py` binds the inventory to the
-completed query-alignment readback. The existing
-`retrieve_experimental_metadata.py` retrieves every entity and entry without
-selecting on quality or geometric agreement. The queued
-`check_case_experimental_subjects.py` waits on the exact recorded process and
-requires terminal success, then checks all response identities and hashes and
-compares every search subject to its independently retrieved canonical entity
-sequence. It retains sequence mismatches and exports experimental method,
-resolution, release date and reported mutation/nonstandard-residue metadata.
-This checker has been queued, not reported as completed.
+The metadata classifies 706 entries as experimental and one as integrative.
+`retrieve_case_experimental_coordinates.py` downloads all 706 experimental
+entries, retaining the integrative entry explicitly as an exclusion. Selection
+does not depend on quality or agreement with predictions. Retrieval uses one
+HTTP worker, one CPU, 2 GiB memory and no swap; disk allowance is 10 GiB with
+20 GiB minimum headroom. The planning allowance was 0.5–6 hours. No GPU or
+paid infrastructure is used.
 
-Retrieval output is
-`results/experimental_structures/whole-domain-case-metadata-20260927-v1`;
-planned readback output is
+`scripts/readback_case_experimental_archives.py` waits for the recorded producer
+process and successful terminal state, then independently streams every archive
+to verify identity, hashes, compressed/uncompressed sizes and gzip integrity.
+It reconstructs methodology selection from the metadata. The queued
+`scripts/map_case_experimental_ca_residues.py` requires the successful archive
+readback before mapping all nominated entities, chains, deposited models and
+full canonical sequence positions to CA observations. Missing residues,
+alternates, partial occupancy and modified/mismatching monomers remain explicit.
+It checks coordinate entity sequences against the retrieved experimental
+sequences, not against the fungal targets. It uses one CPU, 4 GiB memory,
+no swap and a 10 GiB output allowance, with 1–12 hours planned.
+
+Metadata and subject-readback directories are respectively
+`results/experimental_structures/whole-domain-case-metadata-20260927-v1` and
 `results/experimental_structures/whole-domain-case-subject-readback-20260927-v1`.
-Exact process identities are recorded in
-`metadata/case_experimental_metadata_launch_20260927.json` and
-`metadata/case_experimental_subject_readback_launch_20260927.json`.
-Canonical sequence agreement will not establish observed coordinate coverage,
-construct equivalence or independence from prediction training data.
+Coordinates, archive checks and residue maps are under the same parent with
+suffixes `whole-domain-case-coordinates-20260927-v1`,
+`whole-domain-case-coordinate-readback-20260927-v1` and
+`whole-domain-case-ca-mapping-20260927-v1`. Launch records preserve commands,
+process identities, script hashes and resource limits in `metadata/`.
+
+Canonical sequence agreement does not establish observed coordinate coverage,
+construct equivalence, training independence or experimental quality. Mapping
+outputs will need full readback and projection through the query/subject
+alignments before applying domain/outside coverage thresholds.
 
 ## Domain and outside-region alignment coverage
 
@@ -144,8 +158,8 @@ coordinate coverage. Multiple entities may belong to the same PDB entry; entries
 may share constructs or experimental context. Both the fungal prediction coverage
 and experimental alignment coverage are needed: Cryoendolithus and Furculomyces
 passing this search screen does not override their earlier predicted-coordinate
-coverage limitations. The metadata retrieval and subject-sequence check remain
-running/queued as of this update.
+coverage limitations. The metadata retrieval and subject-sequence check have completed; coordinate
+and observed-residue validation are now underway.
 
 Full alignment/interval decisions, shared-entity decisions and all 78 case/screen
 rows are in

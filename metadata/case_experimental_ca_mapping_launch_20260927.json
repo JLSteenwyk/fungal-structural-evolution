@@ -1,0 +1,28 @@
+{
+  "unit": "fungal-case-experimental-ca-mapping-20260927.service",
+  "pid": 410458,
+  "created": 1790539660.72,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/map_case_experimental_ca_residues.py",
+    "--metadata",
+    "results/experimental_structures/whole-domain-case-metadata-20260927-v1",
+    "--coordinates",
+    "results/experimental_structures/whole-domain-case-coordinates-20260927-v1",
+    "--audit",
+    "results/experimental_structures/whole-domain-case-coordinate-readback-20260927-v1",
+    "--output",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1"
+  ],
+  "script_sha256": "d948ebb318c25099c95343cfe19819ce8dec99b1a6f1d87ff7120156ce8f479c",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 10,
+    "planning_hours": [
+      1,
+      12
+    ]
+  }
+}

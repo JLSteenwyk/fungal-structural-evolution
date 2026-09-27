@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-case-experimental-coordinates-20260927.service",
+  "pid": 405643,
+  "created": 1790539270.86,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retrieve_case_experimental_coordinates.py",
+    "--metadata",
+    "results/experimental_structures/whole-domain-case-metadata-20260927-v1",
+    "--audit",
+    "results/experimental_structures/whole-domain-case-subject-readback-20260927-v1",
+    "--output",
+    "results/experimental_structures/whole-domain-case-coordinates-20260927-v1"
+  ],
+  "script_sha256": "06a19985e3fb9e071e5285fe9f083f75f9faa2e74865a53f281dd350cf79097d",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "http_workers": 1,
+    "output_gib": 10,
+    "planning_hours": [
+      0.5,
+      6
+    ]
+  }
+}
