@@ -1,0 +1,12 @@
+{
+  "status": "passed_full_model_worker_synthetic_restart_checks",
+  "tree_cases": 5,
+  "direct_candidate_checks": 110,
+  "resume_identical": true,
+  "corrupted_payload_rejected": true,
+  "pins": {
+    "scripts/run_full_matched_models.py": "d7f023e55250ec38602c7d2d853cb69da6bc3b76b060599a643ac13538bb017d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_matched_model_worker.py": "4607bc681f2ae068fe08f502870fd25b70ce171dab646f80521d05d624f5ef62"
+  },
+  "scope": "Worker execution, zero-constant removal, direct candidate readback, raw coefficient shape, exact resume and corruption rejection. Computational fixtures only; full fitting-input inventory audit remains a required launch gate."
+}

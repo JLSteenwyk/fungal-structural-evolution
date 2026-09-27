@@ -7737,3 +7737,21 @@ All three numerical fixtures pass, with largest best-objective difference
 diagnostics and inferential calibration remain outstanding. The exact-input
 inventory readback remains live with advancing checkpoints and must pass before
 production reuse. All eight aims remain open. GPU prediction remains paused.
+
+## September 27 complete working-model grid queued behind source audit
+
+The preceding turn verified cached optimizer equivalence (progress). Prepared
+and launched the restartable full working-model controller for all 28,808
+unique record inputs times five trees (144,040 dispositions), mapping to every
+original setting. It waits for the exact inventory verifier to finish
+successfully and for its matching full readback receipt. The live controller
+identity is recorded; no partial or unaudited source subset is substituted.
+
+The worker preserves all 22 optimizer attempts and checks every candidate
+likelihood directly. Five synthetic tree cases passed 110 candidate readbacks,
+exact resume and corrupted-payload rejection. Input fingerprints are rechecked
+before dispatch, outputs are atomic and checksum-bound, and errors/review cases
+remain explicit. Eight CPU workers, 48 GiB memory, no swap; planning allowance
+12 hours to two weeks, not a measured ETA.
+[Complete run specification](full-matched-working-models-20260927.md).
+All eight aims remain open. GPU prediction remains paused.
