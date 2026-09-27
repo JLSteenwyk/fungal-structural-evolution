@@ -47,3 +47,15 @@ The controller is queued behind the running primary audit; its identity is in
 a complete serialized-table readback and the downstream shared-residue triad
 comparisons remain pending. This stage tests numerical identifiability, not
 prediction accuracy, structural asymmetry or ancestral change.
+
+Full serialized-table readback is now queued behind terminal geometry success.
+`scripts/readback_primary_alignment_geometry.py` reconstructs every successful
+native alignment from hashed PDB coordinates, independently derives the paired
+indexes, and checks every exported geometry field with the existing alternate
+SVD/quaternion validator. Complete identity sets, status counts, curvature
+errors, and near-zero flags are also checked. Six serialized fixtures and six
+corruption checks passed. The plan and launch identity are recorded in
+`metadata/primary_geometry_serialized_plan_20260927.json` and
+`metadata/primary_geometry_serialized_launch_20260927.json`.
+Resources: one CPU, 16 GiB RAM, no swap, 0.5–12 hours after geometry completion.
+The strict alignment gate remains required; no failed audit is bypassed.
