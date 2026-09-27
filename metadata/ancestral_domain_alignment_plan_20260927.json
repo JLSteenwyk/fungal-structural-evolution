@@ -1,0 +1,39 @@
+{
+  "inputs": "results/ancestral/case-domain-sequences-20260927-v1",
+  "input_proof": "metadata/ancestral_domain_sequences_completed_20260927.json",
+  "output": "results/ancestral/case-domain-alignments-20260927-v1",
+  "mafft": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft",
+  "famsa": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa",
+  "versions": {
+    "mafft": "v7.525 (2024/Mar/13)",
+    "famsa": "FAMSA (Fast and Accurate Multiple Sequence Alignment) \n  version 2.2.3-1669fc1 (2024-09-17)\n  S. Deorowicz, A. Debudaj-Grabysz, A. Gudys\n\nUsage:\n  famsa [options] <input_file> [<input_file_2>] <output_file>\n\nPositional parameters:\n  input_file, input_file_2 - input files in FASTA format; action depe"
+  },
+  "pins": {
+    "results/ancestral/case-domain-sequences-20260927-v1/receipt.json": "72ab21453bd996303d1559a94527f30f9a6d6a71de8c83738fcf128c4bef7c21",
+    "results/ancestral/case-domain-sequences-20260927-v1/input_summary.tsv": "0c1b3b64d399e63b1a8d74bf5c9991bf62f916e1169fb17e367eadb2eda569ec",
+    "metadata/ancestral_domain_sequences_completed_20260927.json": "cf808e7a317f50eb77a259a393316ad407ccd06c1dbe8cdcf3974c4ce0edf99a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft": "49ed001a2598e43c2ea37f24f01696b84ffaf7d49b68151a32713dee0cc05326",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa": "20b52ee56519facaae159b61a40f424835ff6f0e6b7492bf632628b8c06f7ed3",
+    "scripts/run_ancestral_domain_alignments.py": "4f31745f90f6caecb9343b7b9fd3647fb9e6c5c0bc1f6ba06079a4e5e4cdb34e",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "methods": {
+    "mafft": "L-INS-i: amino, localpair, maxiterate1000, thread4, threadit0",
+    "famsa": "four threads, keep-duplicates"
+  },
+  "resources": {
+    "cpus": 4,
+    "workers": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.25,
+      24
+    ],
+    "maximum_sequences": 563,
+    "maximum_domain_length": 331,
+    "basis": "52 sequential domain alignments under two boundaries and two methods; existing host only, no GPU or paid resources."
+  },
+  "scope": "Complete 13-case domain input grid; no sequence deduplication, trimming, unknown replacement or removal of partial HMM hits. No ancestral inference."
+}

@@ -8795,3 +8795,11 @@ All 858 single-hit proteins retained, including partial HMM hits; all 167 no-hit
 proteins explicitly recorded. Full residue-coordinate readback covers 318,670
 residues. Both focal duplicates are present in every set. Domain alignments and
 ancestral inference remain pending; whole-protein alignments continue running.
+
+### 2026-09-27: complete domain alignment grid launched
+
+Launched all 52 case/boundary/method combinations on four CPUs, up to 8 GiB RAM,
+no swap or GPU. Twenty-eight outputs passed initial exact-sequence checks at
+launch verification; the largest case is running. Full independent audit and
+comparison to whole-protein correspondences remain pending. This stage does not
+constitute ancestral reconstruction.

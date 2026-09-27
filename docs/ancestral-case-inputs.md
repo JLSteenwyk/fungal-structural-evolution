@@ -202,3 +202,23 @@ Reproduce: `python scripts/prepare_ancestral_domain_sequences.py`. Artifacts:
 `results/ancestral/case-domain-sequences-20260927-v1/`, including full source
 coordinates and checksums. Closure:
 `metadata/ancestral_domain_sequences_completed_20260927.json`.
+
+## Domain alignments launched under both boundaries and methods
+
+All 52 combinations (13 cases × two Pfam boundaries × MAFFT/FAMSA) are queued
+with the same alignment settings as the whole-protein sensitivity run. The
+largest input contains 563 proteins and the longest extracted domain is 331
+residues. Each output must preserve every original domain residue and protein
+copy, including partial HMM hits, and records all column occupancies. No
+sequence trimming, deduplication or residue replacement is applied.
+
+The separate service uses four CPUs and at most 8 GiB RAM, no swap and no GPU.
+The planning envelope is 0.25–24 hours and 1 GiB output. Exact script/settings
+and source hashes are frozen in `metadata/ancestral_domain_alignment_plan_20260927.json`;
+process identity is in `metadata/ancestral_domain_alignment_launch_20260927.json`.
+Run script: `scripts/run_ancestral_domain_alignments.py`.
+
+At launch verification, 28 alignments had passed initial preservation checks.
+Production is not complete; independent readback, comparison of residue
+correspondence across both boundaries/methods, and comparison with whole-protein
+alignments remain pending. No ancestral sequence or structure has been inferred.
