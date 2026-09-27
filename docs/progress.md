@@ -6686,3 +6686,18 @@ The prior turn queued balance verification; this turn completes and archives
 the matching milestone with an explicit interpretation of selection effects.
 Structural outcome qualification and evolutionary tests remain pending; all
 eight scientific aims remain active. GPU prediction stays paused.
+
+## September 27 control-balance figure verified
+
+Completed the two-panel matched-balance and target-selection figure, with PNG,
+PDF, SVG and all plotted data. All 32 values and sample counts passed source
+readback; matched standardized differences were recalculated from moments.
+Export hashes and reproduction commands are archived, and the PNG was visually
+reviewed. The figure explicitly separates close matching from selection toward
+higher-confidence targets and makes no structural-effect claim. See
+[figure and interpretation](duplication-control-balance-20260927.md#balance-and-selection-figure).
+
+The preceding status turn was a verified wait: live systemd job handles were
+checked, with comparison counts advancing. This turn completes a reproducible
+scientific reporting artifact. All eight aims remain open; GPU prediction stays
+paused and CPU structural analyses continue.

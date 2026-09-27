@@ -57,6 +57,25 @@ balance uses 10,470 pairs and excludes zeros explicitly, with no epsilon.
 Structural outcome processing must preserve these categories and avoid treating
 identical predictions as independent evidence of biological invariance.
 
+## Balance and selection figure
+
+![Matched balance and selection shifts](figures/background_control_balance_20260927.png)
+
+Panel A shows selected-target minus control means divided by pooled matched SD;
+panel B shows selected-target minus original-target means divided by the original
+target SD. The axes share a range but use different denominators. Both guides
+are sensitivity alternatives, not independent replicates. S45 is illustrative,
+not a designated confirmatory primary analysis. Positive-log distance excludes
+zero-distance matches. These are descriptive diagnostics, not structural effects.
+
+Download [PDF](figures/background_control_balance_20260927.pdf),
+[SVG](figures/background_control_balance_20260927.svg), or
+[plotted values](figures/background_control_balance_20260927.tsv). All 32 values
+and sample counts were checked against the fully audited source table; pooled
+matched SD differences were additionally reconstructed from moments. Export
+hashes, reproduction commands and visual review are recorded in
+`metadata/background_control_balance_figure_*_20260927.json`.
+
 ## Reproducibility and remaining work
 
 Design and stage history are in [the background report](terminal-sister-backgrounds-20260927.md).

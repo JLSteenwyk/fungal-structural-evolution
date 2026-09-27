@@ -1,0 +1,14 @@
+{
+  "commands": [
+    "/home/bizon/anaconda3/bin/python scripts/plot_background_control_balance.py --source results/orthology/background-control-balance-20260927-v1 --proof metadata/background_control_balance_completed_readback_20260927.json --prefix docs/figures/background_control_balance_20260927 --receipt metadata/background_control_balance_figure_completed_20260927.json",
+    "/home/bizon/anaconda3/bin/python scripts/check_background_control_balance_figure.py --receipt metadata/background_control_balance_figure_completed_20260927.json --output metadata/background_control_balance_figure_readback_20260927.json"
+  ],
+  "script_sha256": {
+    "scripts/plot_background_control_balance.py": "07d3d0f68148a01c3aaa4e3ac00ba07d8af0631b6ea5643efa7e2f673c8a5a6d",
+    "scripts/check_background_control_balance_figure.py": "68f2ec55072d3908bfdff3c0f9832df33378360c3e7aed5bf9876288c1194cde"
+  },
+  "python": "3.10.13",
+  "matplotlib": "3.10.8",
+  "visual_review": "PNG inspected: feature labels, markers, panel denominators and sample-count footnote readable; no clipping observed.",
+  "scope": "Illustrative S45 sensitivity configuration; no confirmatory primary scenario designated."
+}
