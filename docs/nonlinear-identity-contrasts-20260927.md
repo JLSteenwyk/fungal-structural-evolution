@@ -110,3 +110,20 @@ Neither marginal range coverage nor full column rank proves joint support. Even
 a valid support certificate establishes numerical convex-hull inclusion only,
 not interior overlap, dense local observations, causal exchangeability or valid
 confidence intervals. Unsupported cases must remain visible in model reporting.
+
+## Inventory independently verified and linked to linear references
+
+Both inventory services terminated successfully. Full independent SQL readback
+verified all 165,888 setting rows and 57,616 distinct quadratic/cubic inputs.
+`link_polynomial_model_inputs.py` then joined every setting to its linear reference,
+checking shared source bindings, exact record counts, ordered observation
+identities and nested base-column names. All 82,944 settings are represented by
+28,808 unique linear/quadratic/cubic input triplets; no linear input splits into
+multiple expanded triplets in this dataset. This was checked, not assumed from
+the earlier inventory. Both exported tables passed serialized readback.
+
+Artifacts: `results/model_validation/polynomial-model-input-links-20260927-v1/`
+contains the full setting map and unique comparison sets. Completion and source
+hashes: `metadata/polynomial_model_input_links_completed_20260927.json`. The
+nonlinear support producer is now able to proceed through its verified dependency.
+This does not authorize comparing existing REML objectives with future ML fits.

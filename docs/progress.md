@@ -8043,3 +8043,13 @@ reconstruction belongs to the full diagnostic and separate geometry checks.
 The checker uses one CPU, 8 GiB, no swap; allowance 1–10 minutes after completion.
 Script: `check_completed_primary_rmsd_diagnostic.py`; identity recorded in
 `metadata/primary_rmsd_diagnostic_completion_launch_20260927.json`.
+
+### September 27: nonlinear inventory verified; polynomial triplets linked
+
+The full independent inventory readback completed successfully across 165,888
+settings and 57,616 expanded inputs. Exact-observation linking to the linear
+inventory produced 28,808 unique three-model comparison sets and retained all
+82,944 setting labels. No linear reuse group splits under the added terms.
+Both exported maps passed readback; source/terminal bindings are recorded in
+`metadata/polynomial_model_input_links_completed_20260927.json`. Nonlinear
+joint-support production is live after its prerequisite passed.

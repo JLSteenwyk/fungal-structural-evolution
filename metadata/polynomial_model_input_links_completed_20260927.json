@@ -1,0 +1,40 @@
+{
+  "status": "complete_verified_identical_observation_polynomial_input_links",
+  "terminal_states": {
+    "fungal-nonlinear-model-input-inventory-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-nonlinear-model-input-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "settings": 82944,
+  "unique_comparison_sets": 28808,
+  "linear_inputs_with_multiple_expanded_sets": 0,
+  "source_hashes": {
+    "results/model_validation/full-matched-fit-inventory-20260927-v1/full_setting_fit_map.tsv": "3fa564214205858e17200885bcbb241708e80f4340f234b85099e39ad7e9baea",
+    "results/model_validation/full-matched-fit-inventory-20260927-v1/unique_fit_recipes.jsonl": "c93284727c6308c84df298318e3a664b84991e2be4542ae5454ada4cb23af61f",
+    "metadata/full_matched_fit_inventory_plan_20260927.json": "d1c5e7061acc86d0a92d7125744208787fd9660bcb67a569482c6c73fb63ff88",
+    "metadata/full_matched_fit_inventory_readback_20260927.json": "bd2dc8692725c89d20f1d6eaba186cb5a38729e8c1f1cb5f0da50215bb8d3e28",
+    "results/model_validation/full-matched-fit-inventory-20260927-v1/receipt.json": "cc345c2ac748c84d93dddf87656a62fdf0310f6d4bca4f6b9844e610df50a0c3",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/full_setting_fit_map.tsv": "da779174809e1f444933c1ec9c66f7efb2af69b7706af0e20f63a5400132266a",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/unique_fit_recipes.jsonl": "afe32ea5639292715bb00e76cb3a7d94d6aab52e757677a4753344c92e592337",
+    "metadata/nonlinear_model_input_inventory_plan_20260927.json": "8ac99f4caf55f56967af24b048d187b47c022f1303efc4933f6211e5f0debd42",
+    "metadata/nonlinear_model_input_inventory_readback_20260927.json": "ddeab31fdf9624d9dd710900a571dca33286306bb64f87b0c5694d52e2110182",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/receipt.json": "67f4a99054e284d123f212891efccdda0993dceb615ae79e643ea8792db4b046",
+    "results/orthology/selected-taxon-inputs-20260927-v1/selected_node_taxa.tsv": "4ff4ab0c1c0bc06ddeb81be5bd0659b7fd434fa94ce491df5028bffac29a611d",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/selected_pair_patterns.tsv.gz": "b8e3bae3faad9a88109b21f49c167dab7620e71494a19f0680828acc920e033e",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/receipt.json": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0"
+  },
+  "artifacts": {
+    "full_setting_links.tsv": "3ddbe3113ac743a40d24ecc3d90d11fa3c82c21082cc7e137ffbb885a65c1aff",
+    "unique_comparison_sets.tsv": "6b0284cb0021b021200193bd204e0985407410cbdaa8af26deea6170a54332d5"
+  },
+  "script_sha256": "a80aaef15682ebf8c6fc48db84090cd2e382502bd7a052118017d16ec2196d8c",
+  "scope": "All settings joined one-to-one with exact record counts and ordered observation identities; audited shared original data establish common response/base covariates. Input links only. Existing REML objectives are not ML reference fits, and no likelihood comparison or significance test is performed."
+}
