@@ -6538,3 +6538,18 @@ See [numerical verification scope](terminal-sister-backgrounds-20260927.md#full-
 The previous goal turn queued domain measurements; this turn completes their
 queued verification chain. All eight scientific aims remain active and require
 further work. GPU prediction remains paused.
+
+## September 27 verified control-availability figure
+
+Produced PNG/PDF/SVG figures and source-point tables for within-architecture
+control availability and taxonomic concentration. Independent readback verified
+all 16 coverage and 306 concentration points; the rendered PNG passed visual
+inspection. The plot makes explicit that about 17% of observed modeled duplicate
+targets have eligible strict backgrounds, versus about 1.2% with focal-taxon
+support, and that five taxa contribute 36.5% of supported targets. These are
+availability diagnostics, not biological effects. See the
+[figure and denominator definitions](terminal-sister-backgrounds-20260927.md#control-availability-figure).
+
+The previous turn completed the queued domain verification chain. This turn
+adds a verified, reproducible research figure documenting sampling limitations.
+All eight aims remain active; GPU prediction remains paused.

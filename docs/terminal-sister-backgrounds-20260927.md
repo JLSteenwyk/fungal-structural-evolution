@@ -687,3 +687,35 @@ uses no GPU or paid infrastructure. Production measurements, numerical
 verification, boundary/confidence sensitivity and biological effects remain
 pending. The complete background domain pipeline is now queued through its
 numerical verification stage.
+
+## Control availability figure
+
+![Verified background control availability and taxonomic concentration](figures/background_support_coverage_20260927.png)
+
+[Vector PDF](figures/background_support_coverage_20260927.pdf) and
+[SVG](figures/background_support_coverage_20260927.svg) are available, with
+[coverage points](figures/background_support_coverage_20260927_coverage.tsv) and
+[concentration points](figures/background_support_coverage_20260927_concentration.tsv).
+
+Panel A reports the percentage of all observed modeled terminal duplicate
+records with at least one same-family, conservative shared-architecture
+background within a factor of 1.5 of sequence distance. Backgrounds require
+native ortholog assignment and unreported parent duplication in both guides;
+this does not establish speciation. Filled points allow either background taxon;
+open points require the focal duplicate taxon among background endpoints.
+Approximately 17% have any such control, compared with about 1.2% with focal
+support. All four annotation policies and both guide alternatives are shown.
+
+Panel B ranks all 153 observed target taxa by supported-target count under the
+alignment-E-value policy. Five taxa contribute 36.5% of supported targets.
+The dotted diagonal is an equal-share reference, not a statistical null test.
+Identical-model targets and zero-support observed taxa remain explicit; taxa
+outside the observed target universe are outside these denominators. Guides are
+sensitivity alternatives, not independent replicates. This figure measures
+availability, not matched effects, uncertainty intervals or causal inference.
+
+Every one of the 16 coverage and 306 concentration points was independently
+reconstructed from verified source rows, including denominators, ranks and
+cumulative counts. The rendered PNG was visually inspected. Reproduction
+commands and script/export hashes are recorded in
+`metadata/background_support_figure_reproduction_20260927.json`.
