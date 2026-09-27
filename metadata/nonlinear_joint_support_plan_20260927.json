@@ -1,0 +1,38 @@
+{
+  "inventory_plan": "metadata/nonlinear_model_input_inventory_plan_20260927.json",
+  "inventory_audit": "metadata/nonlinear_model_input_inventory_readback_20260927.json",
+  "inventory_audit_launch": "metadata/nonlinear_model_input_readback_launch_20260927.json",
+  "output": "results/model_validation/nonlinear-joint-support-20260927-v1",
+  "pins": {
+    "results/orthology/selected-taxon-inputs-20260927-v1/selected_node_taxa.tsv": "4ff4ab0c1c0bc06ddeb81be5bd0659b7fd434fa94ce491df5028bffac29a611d",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/selected_pair_patterns.tsv.gz": "b8e3bae3faad9a88109b21f49c167dab7620e71494a19f0680828acc920e033e",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/receipt.json": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/record_summary.tsv": "d15946ba0f9b9cbf6a5b83de3979e23413051a812beb911fb4b2f106ed636ba1",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/partition_manifest.json": "5ddd0a7150ac6804ff2beea90906e08ec4b1df4bef370d45ed02dd5efdacb1cd",
+    "results/model_validation/nonlinear-identity-contrasts-20260927-v1/receipt.json": "1e86563b1708b969a35f604d875e060a87a87922eb2e373d503852e6092b99ac",
+    "metadata/nonlinear_identity_contrasts_completed_20260927.json": "d5ad2481223de5b619f395c7789fd7b2f40fce9ea93bd80eb9cd19764cbc87ed",
+    "scripts/inventory_nonlinear_model_inputs.py": "8a6b6c8985ec9620e0657156c92188ddec52b630767335cdd3e3de6ca74e8748",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/nonlinear_model_input_inventory_plan_20260927.json": "8ac99f4caf55f56967af24b048d187b47c022f1303efc4933f6211e5f0debd42",
+    "metadata/nonlinear_model_input_readback_launch_20260927.json": "d025c7cdbc730e7779a0d52f00cdaeb349476a5072c6e9206fcebfa7f64ca065",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/receipt.json": "67f4a99054e284d123f212891efccdda0993dceb615ae79e643ea8792db4b046",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/full_setting_fit_map.tsv": "da779174809e1f444933c1ec9c66f7efb2af69b7706af0e20f63a5400132266a",
+    "results/model_validation/nonlinear-model-input-inventory-20260927-v1/unique_fit_recipes.jsonl": "afe32ea5639292715bb00e76cb3a7d94d6aab52e757677a4753344c92e592337",
+    "scripts/assess_nonlinear_joint_support.py": "c04c8133db88efeba819c5cdcbf0a08b626f01d02fe3b4ab3fca640de8ce73d4",
+    "scripts/readback_nonlinear_joint_support.py": "1cf8ae2dfcff84de9ad6b678328d6b29aa6e586d21837701d2ba451e09404e92",
+    "scripts/matched_joint_covariate_support.py": "d5e950b86c8c0e9bb561ee1417bd63463b341bbea7588fa65781a8c3c1675f39",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_inventory_audit": [
+      1,
+      12
+    ]
+  },
+  "scope": "Full 57616 quadratic/cubic inputs; same uncentered zero-reference certificate method; all unresolved outputs preserved."
+}

@@ -83,3 +83,30 @@ The design producer has now completed all 165,888 rows with no rank deficiencies
 after constant removal and no zero reference outside any marginal range. These
 are producer results pending the active full independent readback, and do not
 establish joint nonlinear support.
+
+## Nonlinear joint-reference support queued
+
+The inventory producer finished successfully: 165,888 settings map to 57,616
+distinct quadratic/cubic inputs, implying 288,080 candidate tree fits across the
+five trees. The full independent inventory readback remains active; these are
+not yet accepted production recipes. The ordinary-ML linear reference would
+require additional fits for fair fixed-effect comparisons.
+
+`assess_nonlinear_joint_support.py` waits for the exact inventory-auditor process
+and successful terminal service before checking every one of the 57,616 expanded
+inputs. It reconstructs original ordered identities and numeric fingerprints,
+then applies the existing zero-reference convex-hull method to all covariates,
+retaining constants. It records sparse support weights or separating directions
+where resolved and preserves every unresolved case.
+
+`readback_nonlinear_joint_support.py` then independently checks every saved
+certificate against its reconstructed matrix and maps classifications back to
+all 165,888 settings. Producer/readback use one CPU and 12 GiB each, no swap,
+2 GiB output allowances; planning estimates are 1–12 hours for support and
+0.25–4 hours for readback after prerequisites. Plans and exact process identities
+are under `metadata/nonlinear_joint_support_*_20260927.json`.
+
+Neither marginal range coverage nor full column rank proves joint support. Even
+a valid support certificate establishes numerical convex-hull inclusion only,
+not interior overlap, dense local observations, causal exchangeability or valid
+confidence intervals. Unsupported cases must remain visible in model reporting.

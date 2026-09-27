@@ -7973,3 +7973,11 @@ with direct residual evaluation; all fits passed numerical checks. Terminal
 success and artifact hashes verified. These timings are not a whole-project ETA.
 The nonlinear design producer completed all 165,888 rows; its independent
 readback is now processing the complete output.
+
+### September 27: full nonlinear reference-support checks queued
+
+The expanded inventory producer completed 57,616 unique inputs (165,888 settings);
+its independent readback is active. Full joint support and certificate readback
+are queued behind successful prerequisite verification. Both polynomial degrees
+retain exact matrix/row identities and unresolved cases. No nonlinear fit launched.
+[Scope and resources](nonlinear-identity-contrasts-20260927.md).

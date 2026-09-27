@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-nonlinear-joint-support-readback-20260927.service",
+  "pid": 309424,
+  "created": 1790531516.5,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_nonlinear_joint_support.py",
+    "--plan",
+    "metadata/nonlinear_joint_support_plan_20260927.json",
+    "--launch",
+    "metadata/nonlinear_joint_support_launch_20260927.json",
+    "--output",
+    "results/model_validation/nonlinear-joint-support-readback-20260927-v1"
+  ],
+  "script_sha256": "1cf8ae2dfcff84de9ad6b678328d6b29aa6e586d21837701d2ba451e09404e92",
+  "plan_sha256": "fb434d5deb35329b560245bba6cc977f2b18d2e54cec1c5e7804feef933b5d84",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_producer": [
+      0.25,
+      4
+    ]
+  }
+}
