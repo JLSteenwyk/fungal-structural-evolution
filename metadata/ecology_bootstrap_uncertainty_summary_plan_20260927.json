@@ -1,0 +1,18 @@
+{
+  "script": "scripts/summarize_ecology_bootstrap_uncertainty.py",
+  "wait_for": "metadata/ecology_bootstrap_edges_readback_launch_20260927.json",
+  "output": "results/ecology/bootstrap-uncertainty-summary-20260927-v1",
+  "script_sha256": "2bc2e140ea9e20f1b119e48b931520e4fd752721918fb99c062bae694a9b368b",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gb": 0.1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "cost": "Existing local CPU resources"
+  },
+  "scope": "Complete audited bootstrap split frequencies joined to audited ML mappings; separate absent edges, required changes and optional changes. All conditions, splits and distributions retained."
+}

@@ -136,3 +136,31 @@ recorded controller). Its first ten completed trees cover 83,920 constrained
 cost checks. The full audit is still pending; these partial checks do not
 validate the entire ensemble, and no final bootstrap transition interpretation
 is yet claimed. No restart or change to pinned live code was needed.
+## Full bootstrap uncertainty summary queued
+
+The independent bootstrap audit was verified live and had reached 1,910 of
+2,000 trees at the latest checkpoint. Its final receipt was not yet present.
+`scripts/summarize_ecology_bootstrap_uncertainty.py` now waits for that exact
+process and requires a successful full network-flow audit of all 16,784,000
+endpoint-constrained costs before summarizing results.
+
+The summary joins every bootstrap split to the audited maximum-likelihood
+mapping, retaining splits present in either source. It reports absence
+separately from no change, and reports required/optional/no-change frequencies
+both across all 1,000 trees per guide and conditional on split presence.
+Minimum-change and edge-status count distributions are retained for all four
+guide/coding conditions, with exact bootstrap-index coverage checks.
+
+This is conditional root-free, equal-cost mapping uncertainty. Fractions are
+not posterior probabilities, inferred biological origin counts or independent
+ecological contrasts; gains and losses cannot be assigned from these unrooted
+results. Optional edges are jointly constrained by complete optimal mappings.
+Source ecology labels and the Ramaria coding alternative remain explicit.
+
+The plan and verified live identity are
+`metadata/ecology_bootstrap_uncertainty_summary_plan_20260927.json` and
+`metadata/ecology_bootstrap_uncertainty_summary_launch_20260927.json`.
+Expected output is `results/ecology/bootstrap-uncertainty-summary-20260927-v1`.
+Resources are one CPU/4 GiB RAM, no swap, 0.1 GB output and 1–10 minutes after
+the audit, on the existing host. The summary and its independent aggregation
+readback remain pending.

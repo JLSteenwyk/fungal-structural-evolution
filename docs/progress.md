@@ -7028,3 +7028,17 @@ and remain recorded explicitly. The two-CPU/4-GiB controller is verified live.
 No normalized local results or biological conclusions are claimed yet.
 Original-versus-local divergence comparison remains downstream. All eight aims
 remain open and GPU structure prediction remains paused.
+## September 27 ecological bootstrap summary queued
+
+The preceding turn queued corrected local-codon normalization. This turn
+advances ecological-transition interpretation by implementing and queuing the
+complete bootstrap uncertainty summary behind the verified network-flow audit.
+The audit reached 1,910/2,000 trees. The new summary keeps absent splits separate
+from unchanged states and reports both ensemble and presence-conditional
+frequencies for all guide/coding conditions. It requires full validation before
+running and does not turn mapping ambiguity into biological origins.
+
+The summary controller is verified live under one CPU/4 GiB RAM. The local tree
+producer and both background input preparation processes were also verified
+live. No actual bootstrap summary is claimed complete; independent aggregation
+readback remains next. All eight aims remain open; GPU prediction is paused.
