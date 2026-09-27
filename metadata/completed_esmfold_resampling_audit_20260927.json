@@ -1,0 +1,49 @@
+{
+  "status": "complete_esmfold_resampling_full_audit",
+  "recorded_utc": "2026-09-27T06:21:51.824540+00:00",
+  "audit_receipt_path": "results/phylogeny/paired-resampling-audit-esmfold-all-completed-20260922-v1/receipt.json",
+  "audit_receipt_sha256": "d843e7bdddd127a955f0c1b0de58944e807d5573ee1513022a9b005ad9f995d6",
+  "audit_receipt": {
+    "status": "complete_paired_resampling_audit",
+    "markers": 122,
+    "batches": 366,
+    "attempted_paired_draws": 73200,
+    "unestimable_draws": 33,
+    "validated_fits": 146334,
+    "fits_with_warnings": 143367,
+    "branch_interval_rows": 283392,
+    "resampling_receipt_sha256": "b89f75b751ef829a95eea89db8424c78d53d3bfbe2adbda357cefcaacf1286e6",
+    "script_sha256": "f637b7ba40d3b079b41f34f483d276d7f260fd993d890f53a1486fe55652fb61",
+    "resampling_helper_sha256": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+    "numpy_version": "2.2.6",
+    "quantile_method": "linear; 2.5 and 97.5 percentiles, at least 90% draws estimable",
+    "interpretation": "Conditional site/circular-block sampling sensitivity on fixed sequence marker topologies. Intervals are not calibrated for topology/model/prediction error or all spatial feature dependence. Paired sampling covariance describes estimation error, not evolutionary coupling. No branch ratios, p-values or acceleration rankings.",
+    "artifacts": {
+      "batch_summary.tsv": "5a46ff6536a2859c05de9abda439a47ae73f9d12642dcf80d711ab07d8633e38",
+      "conditional_intervals.tsv": "5946ca01ce33e2e63b5b08456f29c5ae3a28a6e0841c08e0623b056a7a8c7976"
+    }
+  },
+  "controller_receipt": {
+    "status": "complete_expanded_paired_branch_resampling_and_audit",
+    "plan_sha256": "29ed52acf968530c37d458de5632a05cd03e976363d10dba42dcc481e78959f0",
+    "markers": 122,
+    "attempted_paired_draws": 73200,
+    "validated_fits": 146334,
+    "unestimable_draws": 33,
+    "fits_with_warnings": 143367,
+    "predecessor_receipt_sha256": "cc6e38804a2c533396810da8591c89101137cf35212071426f62c6ea9168cef6",
+    "resampling_receipt_sha256": "b89f75b751ef829a95eea89db8424c78d53d3bfbe2adbda357cefcaacf1286e6",
+    "audit_receipt_sha256": "d843e7bdddd127a955f0c1b0de58944e807d5573ee1513022a9b005ad9f995d6",
+    "scope": "Conditional paired site/block branch sampling sensitivity on fixed AA topologies. Not total calibrated uncertainty, independent biological coupling, selection or acceleration evidence."
+  },
+  "independent_table_checks": {
+    "batches": 366,
+    "markers": 122,
+    "interval_rows": 283392,
+    "paired_branch_rows": 141696,
+    "status_counts": {
+      "conditional_percentile_sensitivity": 283392
+    },
+    "scope": "All artifact hashes, audit source hashes and controller binding; exact marker/block grid, count agreement, unique branch/fit keys, paired covariance equality and Cauchy bounds, finite ordered percentiles and valid ranges. Percentiles not independently recomputed in this checkpoint. Full native artifact and resampled-alignment validation is provided by the completed auditor."
+  }
+}

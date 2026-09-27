@@ -5628,3 +5628,26 @@ pinned source files. The separate full numerical readback started
 automatically and remains pending. This execution milestone does not yet
 validate the alignment metrics or establish structural divergence,
 duplication effects, or domain-boundary robustness.
+
+
+## September 27 expanded ESMFold branch resampling audit complete
+
+The full audit has completed for all 122 markers, 366 marker/block batches,
+and 73,200 attempted paired draws. It validated 146,334 native fits from
+73,167 estimable draws; 33 draws were explicitly unestimable. Warnings were
+retained for 143,367 fits. The final table contains 283,392 branch/fit interval
+rows, all meeting the prespecified minimum of 90% estimable draws.
+
+The [completion record](../metadata/completed_esmfold_resampling_audit_20260927.json)
+includes the producer/auditor controller receipt and independent checks of
+artifact hashes, all table keys/counts, percentile ordering and ranges, and
+paired covariance equality/bounds. This additional table check does not
+independently recompute the percentiles. The completed full auditor checked
+native artifacts, deterministic resampled alignments, topology, and recorded
+branch values.
+
+These are conditional site/circular-block sampling sensitivities on fixed
+AA marker topologies. They do not cover all topology, model, prediction, or
+spatial-dependence uncertainty. Sampling covariance is estimation error,
+not biological coupling; acceleration rankings and selection claims remain
+unsupported by this checkpoint alone.
