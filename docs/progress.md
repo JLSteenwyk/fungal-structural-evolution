@@ -8526,3 +8526,11 @@ experimental-only content and all hits retained. Twenty-seven sequences yielded
 and exact reconstruction of all 3,091 query alignments passed; twelve no-hit
 queries remain explicit. Subject metadata and experimental coordinate validation
 remain outstanding. See [sequence-search evidence](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: complete case experimental metadata retrieval launched
+
+Started metadata retrieval for every one of 1,205 candidate entities and 707
+entries, preserving all search hits. Queued full response and subject-sequence
+readback behind exact-process/terminal-success gates. Retrieval uses two HTTP
+workers and one CPU; GPUs remain paused. Subject sequence, construct and
+coordinate validation are not yet complete. See [retrieval scope](case-independent-control-coverage-20260927.md).

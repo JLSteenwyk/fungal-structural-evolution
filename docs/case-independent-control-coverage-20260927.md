@@ -80,3 +80,32 @@ Next, entity sequences, constructs, domain coverage, experimental quality,
 observed residues and model-training overlap must be checked before selecting
 structural controls. Results from related proteins are not exact-sequence
 validation of the fungal cases.
+
+## Complete entity and entry metadata retrieval launched
+
+A frozen input inventory now contains all 1,205 experimental entities and 707
+unique PDB entries from the sequence search. The metadata retrieval service is
+running all 1,912 requests with two HTTP workers, one CPU and a 2 GiB memory cap.
+Planning allowance is 10–90 minutes and 0.5 GiB output; no paid resources or GPU
+prediction are involved. Per-response receipts make the retrieval restartable.
+
+`prepare_case_experimental_metadata_inventory.py` binds the inventory to the
+completed query-alignment readback. The existing
+`retrieve_experimental_metadata.py` retrieves every entity and entry without
+selecting on quality or geometric agreement. The queued
+`check_case_experimental_subjects.py` waits on the exact recorded process and
+requires terminal success, then checks all response identities and hashes and
+compares every search subject to its independently retrieved canonical entity
+sequence. It retains sequence mismatches and exports experimental method,
+resolution, release date and reported mutation/nonstandard-residue metadata.
+This checker has been queued, not reported as completed.
+
+Retrieval output is
+`results/experimental_structures/whole-domain-case-metadata-20260927-v1`;
+planned readback output is
+`results/experimental_structures/whole-domain-case-subject-readback-20260927-v1`.
+Exact process identities are recorded in
+`metadata/case_experimental_metadata_launch_20260927.json` and
+`metadata/case_experimental_subject_readback_launch_20260927.json`.
+Canonical sequence agreement will not establish observed coordinate coverage,
+construct equivalence or independence from prediction training data.
