@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-primary-usable-orders-readback-20260927.service",
+  "pid": 330515,
+  "created": 1790533183.6,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_primary_usable_orders.py",
+    "--plan",
+    "metadata/primary_usable_orders_plan_20260927.json",
+    "--launch",
+    "metadata/primary_usable_orders_launch_20260927.json",
+    "--output",
+    "metadata/primary_usable_orders_readback_20260927.json"
+  ],
+  "plan_sha256": "03f7502ae9c629b4a33d176a65fdc9429dfe1e7167e11b9656e08b3959fa36ee"
+}

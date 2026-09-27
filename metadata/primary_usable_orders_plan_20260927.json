@@ -1,0 +1,42 @@
+{
+  "producer": {
+    "unit": "fungal-primary-diagnostic-geometry-readback-20260927.service",
+    "pid": 324930,
+    "created": 1790532700.29,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_primary_diagnostic_geometry.py",
+      "--plan",
+      "metadata/primary_diagnostic_geometry_readback_plan_20260927.json"
+    ],
+    "plan_sha256": "6ba1af6fd1d362cde56f299e289358fcb21d1dcf6af06b93fdf7223cdb0bac28"
+  },
+  "native": "results/structural_comparisons/duplication-alignments-20260926-v1",
+  "diagnostic": "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1",
+  "geometry": "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2",
+  "geometry_audit": "metadata/primary_diagnostic_geometry_readback_20260927.json",
+  "geometry_audit_plan": "metadata/primary_diagnostic_geometry_readback_plan_20260927.json",
+  "output": "results/structural_comparisons/primary-usable-orders-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "All 103200 primary pairs, two masks and two native input orders retained; numerical exclusions explicit. Coverage/confidence qualification and biological inference remain separate.",
+  "pins": {
+    "metadata/primary_diagnostic_geometry_readback_launch_20260927.json": "1b6209cae3635fff664474dac7031a040745bb1e3870940a38e202ade15e22f4",
+    "metadata/primary_diagnostic_geometry_readback_plan_20260927.json": "6ba1af6fd1d362cde56f299e289358fcb21d1dcf6af06b93fdf7223cdb0bac28",
+    "scripts/summarize_primary_usable_orders.py": "21718580352905bdd8378be573bd517dfbdb2d6754bd01eaff97646922c8c569",
+    "scripts/readback_primary_usable_orders.py": "84a8340ba8ec12d514856d64fbf6bedae784b0625d40056138f831e76b6a7e6c",
+    "scripts/summarize_duplication_alignment_orders.py": "9b4448ca0dcc53143752c2ce06f5c2c8192c7e7ffb21472f1f91d3455927fd3a",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/structural_comparisons/duplication-alignments-20260926-v1/receipt.json": "263f672755f58d1ae8d8ba52a65dac826caea14b7167d911b1b087cb9347d4a3",
+    "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1/receipt.json": "2edca4a1f89170edd855ad702f0498a1c2a7ee3bfd4bb5a8a61ab689105a283f"
+  }
+}

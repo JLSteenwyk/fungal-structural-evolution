@@ -8100,3 +8100,26 @@ The full 387,646-row readback uses one CPU, 16 GiB, no swap; planning allowance
 are recorded in `metadata/primary_diagnostic_geometry_readback_{plan,launch}_20260927.json`.
 This new diagnostic qualification path preserves the original strict audit
 failure and does not infer biological duplication effects.
+
+### September 27: full primary input-order comparison queued
+
+The previous update verified live production rather than declaring completion.
+The next whole-protein primary stage now waits for successful terminal geometry
+readback. It preserves all 103,200 pairs, 206,400 pair/mask rows and both native
+input orders, with explicit exclusions for RMSD discrepancies, fewer than three
+paired residues, or nonunique rotation. Excluded numeric values stay blank;
+endpoint-normalized scores and order differences are calculated only where
+eligible. No favorable input order is selected.
+
+A separately implemented readback waits for this producer's successful terminal
+state and verifies every exported status, exclusion, metric and order difference
+against the audited source tables, along with exact record coverage and hashes.
+Both jobs pin scripts and prerequisite plans and verify process identity before
+handoff. Each uses one CPU, 16 GiB, no swap, with a planning allowance of 0.1–2
+hours after its prerequisite and under 1 GiB of output. Files:
+`scripts/summarize_primary_usable_orders.py`,
+`scripts/readback_primary_usable_orders.py`, and
+`metadata/primary_usable_orders_{plan,launch,readback_launch}_20260927.json`.
+This is numerical qualification; confidence/coverage selection, prediction
+uncertainty and biological duplication inference remain outstanding. GPUs remain
+paused.
