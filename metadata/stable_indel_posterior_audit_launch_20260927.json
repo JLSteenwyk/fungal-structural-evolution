@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-stable-indel-posterior-audit-20260927.service",
+  "state": {
+    "MainPID": "570128",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 570128,
+  "created": 1790551391.82,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_stable_indel_posteriors.py"
+  ],
+  "plan_sha256": "73e844e725e3f39c82ff300563560ca23c753ecb3956298b5d5b9923d81c5b28",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "paid_cost": 0
+  }
+}

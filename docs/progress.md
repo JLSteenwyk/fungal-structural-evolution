@@ -9244,3 +9244,19 @@ optimization/bound warnings remain attached. Full independent posterior
 validation, parameter sensitivity, candidate-node mapping, overlapping-gap
 compatibility and ancestral sequence ensembles remain pending. No historical
 event counts or residue-presence interpretation is asserted.
+
+### 2026-09-27: independent complete gap-posterior audit launched
+
+Implemented a separate reversible tree-message calculation entirely in log
+space, with log transition probabilities, both directed edge messages and
+node-wise mixture integration. Exhaustive70-digit enumeration of60 synthetic
+node/site probabilities passes (max error2.23e-16), including unknown tips,
+rare-event rates and gamma extremes.
+
+Launched full comparison of every production node/character probability and
+site log likelihood across all312 dispositions/306 selected models, with
+1e-9 probability and1e-8 site-log-likelihood tolerances. Source hashes,
+selected fitted parameters, original node order/labels and serialized
+dimensions checked. OneCPU,8GiB RAM,noGPU; planning0.1–12h plus verified
+producer wait,1GiB output. Full numerical verification is pending and will
+not resolve optimization bounds, model adequacy or gap compatibility.

@@ -1,0 +1,27 @@
+{
+  "fit_plan": "metadata/stable_indel_refinement_plan_20260927.json",
+  "producer_launch": "metadata/stable_indel_ancestor_launch_20260927.json",
+  "posterior_output": "results/ancestral/stable-indel-ancestors-20260927-v1",
+  "output": "results/ancestral/stable-indel-posterior-audit-20260927-v1",
+  "pins": {
+    "metadata/stable_indel_refinement_plan_20260927.json": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+    "metadata/stable_indel_ancestor_launch_20260927.json": "c40d1f00a66a09dd96395b356e151dfa739fe83a3b60ba737ff3fa7d9591fb8b",
+    "metadata/stable_indel_ancestor_plan_20260927.json": "72a8d50bbd719dd003945bc324572c72cbadee907535b4e6f7360399a2f98ca7",
+    "scripts/audit_stable_indel_posteriors.py": "e93a63930ae47050265ede8fc2374c8bf6998cff2b0f1a21fdee70d940f39fe7",
+    "scripts/logspace_indel_posteriors.py": "0f32bf292f38c2f52063e8bb58c6273074ab187796eb33db9348f4fba58b5247",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/logspace_indel_posterior_validation_20260927.json": "4d04d8c59671da774093cc49d4eb55287d3c3b282e2edb919467955cbbfc6c31"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All312 input dispositions and all node/character probabilities of306 selected gap models; independent reversible log-space messages,1e-9 probability/1e-8 site likelihood tolerances. Selected parameters, serialized dimensions and source hashes verified. Numerical verification only, not global optimization, model adequacy, parameter-uncertainty propagation or compatible ancestral sequences."
+}
