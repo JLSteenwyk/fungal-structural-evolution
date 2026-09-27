@@ -1,0 +1,26 @@
+{
+  "service": "fungal-background-support-readback-20260927.service",
+  "pid": 862892,
+  "created": 1790499745.01,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_matching_support.py",
+    "--plan",
+    "metadata/background_matching_support_plan_20260927.json",
+    "--output",
+    "metadata/background_matching_support_completed_readback_20260927.json"
+  ],
+  "script_sha256": "cdcd07a0870c15bf62dea32ca0a6282d468504422078aae5acbc764e721dddbb",
+  "plan_sha256": "1fde72c012d4ff0e81d1060d750dc0a98b71034a067d6698f65d19d96e2278ab",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "basis": "655419 rows reconstructed with per-family unsorted NumPy masks; no pair expansion stored, existing CPU only."
+  }
+}

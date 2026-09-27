@@ -1,0 +1,93 @@
+{
+  "status": "passed_full_background_matching_support_readback",
+  "producer_receipt_sha256": "67cc244a00a76bf5101de8b4ac6689116d1c46d9bed40d768a100d94e4b3522e",
+  "plan_sha256": "1fde72c012d4ff0e81d1060d750dc0a98b71034a067d6698f65d19d96e2278ab",
+  "target_records": 218473,
+  "support_rows": 655419,
+  "guides": [
+    {
+      "guide": "profile",
+      "targets": 109245,
+      "counts": {
+        "guide_native_ortholog:targets_within_factor_1_25": 44887,
+        "guide_native_ortholog:targets_focal_within_factor_1_25": 5257,
+        "guide_native_ortholog:targets_within_factor_1_5": 53184,
+        "guide_native_ortholog:targets_focal_within_factor_1_5": 7381,
+        "guide_native_ortholog:targets_within_factor_2_0": 59707,
+        "guide_native_ortholog:targets_focal_within_factor_2_0": 9813,
+        "guide_native_ortholog:targets": 109245,
+        "guide_native_ortholog:no_family_background": 31435,
+        "guide_native_ortholog:zero_target_distance": 6527,
+        "both_guides_native_ortholog:targets_within_factor_1_25": 44825,
+        "both_guides_native_ortholog:targets_focal_within_factor_1_25": 5204,
+        "both_guides_native_ortholog:targets_within_factor_1_5": 53104,
+        "both_guides_native_ortholog:targets_focal_within_factor_1_5": 7310,
+        "both_guides_native_ortholog:targets_within_factor_2_0": 59580,
+        "both_guides_native_ortholog:targets_focal_within_factor_2_0": 9695,
+        "both_guides_native_ortholog:targets": 109245,
+        "both_guides_native_ortholog:no_family_background": 31617,
+        "both_guides_native_ortholog:zero_target_distance": 6527,
+        "both_guides_unreported_parents:targets_within_factor_1_25": 40448,
+        "both_guides_unreported_parents:targets_focal_within_factor_1_25": 3474,
+        "both_guides_unreported_parents:targets_within_factor_1_5": 48571,
+        "both_guides_unreported_parents:targets_focal_within_factor_1_5": 5103,
+        "both_guides_unreported_parents:targets_within_factor_2_0": 55049,
+        "both_guides_unreported_parents:targets_focal_within_factor_2_0": 6928,
+        "both_guides_unreported_parents:targets": 109245,
+        "both_guides_unreported_parents:no_family_background": 35594,
+        "both_guides_unreported_parents:zero_target_distance": 6527
+      },
+      "background_model_classes": {
+        "guide_native_ortholog:identical_model": 6444,
+        "both_guides_native_ortholog:identical_model": 6442,
+        "both_guides_unreported_parents:identical_model": 5839,
+        "guide_native_ortholog:two_distinct_models": 71374,
+        "both_guides_native_ortholog:two_distinct_models": 71265,
+        "both_guides_unreported_parents:two_distinct_models": 64370
+      }
+    },
+    {
+      "guide": "mafft",
+      "targets": 109228,
+      "counts": {
+        "guide_native_ortholog:targets_within_factor_1_25": 44877,
+        "guide_native_ortholog:targets_focal_within_factor_1_25": 5251,
+        "guide_native_ortholog:targets_within_factor_1_5": 53188,
+        "guide_native_ortholog:targets_focal_within_factor_1_5": 7383,
+        "guide_native_ortholog:targets_within_factor_2_0": 59664,
+        "guide_native_ortholog:targets_focal_within_factor_2_0": 9774,
+        "guide_native_ortholog:targets": 109228,
+        "guide_native_ortholog:no_family_background": 31414,
+        "guide_native_ortholog:zero_target_distance": 6528,
+        "both_guides_native_ortholog:targets_within_factor_1_25": 44827,
+        "both_guides_native_ortholog:targets_focal_within_factor_1_25": 5210,
+        "both_guides_native_ortholog:targets_within_factor_1_5": 53103,
+        "both_guides_native_ortholog:targets_focal_within_factor_1_5": 7311,
+        "both_guides_native_ortholog:targets_within_factor_2_0": 59575,
+        "both_guides_native_ortholog:targets_focal_within_factor_2_0": 9696,
+        "both_guides_native_ortholog:targets": 109228,
+        "both_guides_native_ortholog:no_family_background": 31599,
+        "both_guides_native_ortholog:zero_target_distance": 6528,
+        "both_guides_unreported_parents:targets_within_factor_1_25": 40446,
+        "both_guides_unreported_parents:targets_focal_within_factor_1_25": 3473,
+        "both_guides_unreported_parents:targets_within_factor_1_5": 48566,
+        "both_guides_unreported_parents:targets_focal_within_factor_1_5": 5100,
+        "both_guides_unreported_parents:targets_within_factor_2_0": 55041,
+        "both_guides_unreported_parents:targets_focal_within_factor_2_0": 6923,
+        "both_guides_unreported_parents:targets": 109228,
+        "both_guides_unreported_parents:no_family_background": 35582,
+        "both_guides_unreported_parents:zero_target_distance": 6528
+      },
+      "background_model_classes": {
+        "guide_native_ortholog:identical_model": 6446,
+        "both_guides_native_ortholog:identical_model": 6442,
+        "both_guides_unreported_parents:identical_model": 5839,
+        "guide_native_ortholog:two_distinct_models": 71352,
+        "both_guides_native_ortholog:two_distinct_models": 71265,
+        "both_guides_unreported_parents:two_distinct_models": 64370
+      }
+    }
+  ],
+  "checker_sha256": "cdcd07a0870c15bf62dea32ca0a6282d468504422078aae5acbc764e721dddbb",
+  "scope": "Every target/set row and all family/focal/nonfocal counts reconstructed from original native target and qualified background rows. Unsorted vector masks independently verify all distance windows, including zero targets; full target grid and summaries checked. Availability is not matched comparability or independent event replication."
+}

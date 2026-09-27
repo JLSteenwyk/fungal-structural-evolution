@@ -6339,3 +6339,21 @@ argument. No GPU inference was launched. Matching-support production completed
 655,419 rows; its independent validation remains pending. See
 [verified counts and execution scope](terminal-sister-backgrounds-20260927.md#membership-and-measurement-inventories-verified-coordinates-running).
 The full scientific goal remains active and incomplete; GPU prediction is paused.
+
+## September 27 matching support verified and coordinate readback queued
+
+Independent unsorted-vector reconstruction passed every one of 655,419 support
+rows for all 218,473 duplicate targets. Under local-guide qualification, about
+31,400 targets per guide lack any same-family background, and about 53,200 have
+one within factor 1.5 sequence distance. Requiring both guides and unreported
+parents reduces this to about 48,600; only about 5,100 also have focal-taxon
+representation. These are pre-filter availability counts, not final matches or
+independent events. The full target universe remains explicit. Archived the
+complete readback and documented limits on generalizing future matched effects.
+
+The coordinate producer remains live; an independent full raw-CIF readback is
+now queued for all 148,104 additional models. Known corruption checks passed.
+See [support results and coordinate audit](terminal-sister-backgrounds-20260927.md#matching-support-counts-independently-verified).
+The prior turn completed measurement joins and started coordinates; this turn
+verifies statistical support diagnostics and completes the coordinate-audit
+handoff. The full objective remains active; GPU prediction remains paused.

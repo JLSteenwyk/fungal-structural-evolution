@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-coordinate-readback-20260927.service",
+  "pid": 952285,
+  "created": 1790499798.48,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_coordinates.py",
+    "--plan",
+    "metadata/background_coordinate_readback_plan_20260927.json"
+  ],
+  "plan": "metadata/background_coordinate_readback_plan_20260927.json",
+  "plan_sha256": "6495c50944390713d274d17ec6aef6c5db2f54ddcf173414ab4fa87e5e92e8ee",
+  "fixture_status": "passed_exact_raw_CIF_readback_six_export_corruptions_and_changed_raw_bytes"
+}

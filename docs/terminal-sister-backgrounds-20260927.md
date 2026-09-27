@@ -299,3 +299,48 @@ show 31,435 targets with no same-family background under the local-guide set;
 only 53,184 have any background within the factor-1.5 distance range. These
 preliminary support counts motivate retaining unsupported targets and reporting
 the eventual matched estimand separately from the full target universe.
+
+## Matching-support counts independently verified
+
+Full independent readback passed all 218,473 target records and all 655,419
+qualification-set rows. The checker reconstructs original target identities and
+qualified background pools, then uses unsorted vector masks rather than the
+producer's sorted binary interval counts. Every family, focal/nonfocal and
+sequence-window count, the complete target/set grid and all summaries matched.
+Evidence: [full support readback](../metadata/background_matching_support_completed_readback_20260927.json).
+
+| Target/support category | Profile guide | MAFFT guide |
+| --- | ---: | ---: |
+| All reviewed duplicate targets | 109,245 | 109,228 |
+| No same-family background, local-guide qualification | 31,435 | 31,414 |
+| At least one background within factor 1.5, local-guide qualification | 53,184 | 53,188 |
+| Within factor 1.5, both guides and unreported parents | 48,571 | 48,566 |
+| Same as preceding row, with focal taxon represented in background pair | 5,103 | 5,100 |
+
+Thus even sequence-distance/family support covers only part of the original
+target universe, and focal-taxon representation is much more limited. These
+are available-pool counts before length, domain, confidence and alignment
+filters, not final match counts. Unsupported targets must remain in the
+coverage report; an effect estimated in a selected matched subset cannot be
+silently generalized to every duplicated gene or fungal lineage. Both guide
+columns describe dependent sensitivity analyses, not independent replication.
+The factor-1.25 and factor-2 alternatives and exact-zero cases remain in the
+complete table and receipt.
+
+## Complete background-coordinate readback queued
+
+`readback_background_coordinates.py` waits for the exact coordinate producer,
+requires its complete receipt and exact model/shard mapping, then uses the
+pinned independent raw-CIF checker for every exported record. Accepted sequence,
+C-alpha positions, pLDDT values and summary counts are reconstructed from atom
+rows. Rejection identities and reasons are retained, but rejection causes are
+not independently adjudicated by this checker. All raw/shard hashes are checked.
+The wrapper adapts the existing full-coordinate checker to the background
+producer status without changing any scripts pinned by existing jobs.
+
+Plan: `metadata/background_coordinate_readback_plan_20260927.json`; output:
+`results/structural_comparisons/background-coordinate-readback-20260927-v1`.
+Four CPUs, 16 GiB RAM, no swap and 0.1 GiB output are budgeted, with an
+uncalibrated 0.5–24 hour interval excluding producer wait. The fixture accepted
+exact raw reconstruction and rejected six altered exports plus changed raw
+bytes. Production coordinate validation is running; its full readback is queued.
