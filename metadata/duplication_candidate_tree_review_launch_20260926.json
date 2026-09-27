@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-candidate-tree-review-20260926.service",
+  "pid": 3257280,
+  "created": 1790468526.91,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/validate_duplication_structure_candidates.py",
+    "--plan",
+    "metadata/duplication_candidate_tree_review_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_candidate_tree_review_plan_20260926.json",
+  "plan_sha256": "6d5dae62c88c26d58cff3751bb80ea6f8e8d421eea02241aaf3d64f550dd5cf5",
+  "fixtures": "Six tree-node checks passed: reversed pair ordering, extra descendants, missing node, unary branches, repeated labels and unnamed node."
+}

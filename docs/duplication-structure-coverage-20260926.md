@@ -57,3 +57,44 @@ from 20,492 families; MAFFT contains 109,228 from 20,474 families. Each covers
 are guide-specific candidate counts, not independent or validated duplication
 effects. Independent source-to-output readback, candidate overlap and
 gene-tree membership validation remain pending.
+
+
+## Independent candidate reconstruction and reported-node review
+
+A full review of all 109,245 profile and 109,228 MAFFT candidates is now
+running. `scripts/validate_duplication_structure_candidates.py` does not
+import the coverage producer. It independently enumerates eligible terminal
+singleton-side events from both complete native tables and the frozen model
+database, checking every candidate field and rejecting omitted or extra
+eligible candidates. This validates the candidate export, not every row of
+the separate full event-coverage inventory.
+
+For each candidate-bearing family, the review parses the previously audited
+resolved gene tree and looks up the exact reported gene-node name. It records
+whether that node has exactly the two expected protein descendants, and
+separately whether they are its two direct tip children. Missing nodes,
+missing families and descendant mismatches remain explicit output statuses;
+a completed review is not automatically a passing result. Guide overlap uses
+canonical pairs of full protein labels, without assuming that guide-specific
+family names identify the same membership.
+
+This establishes correspondence between reported candidate events and the
+saved resolved trees. It does not independently infer duplication, validate
+rooting/support, date events or establish structural divergence. Identical
+sequence/model flags remain in output. Larger events remain in the full
+inventory for later work.
+
+Six tree-node fixtures passed, including swapped expected pair order, extra
+descendants, absent nodes, unary branches, duplicate labels and missing node
+names. Reproduce with `python scripts/check_duplication_candidate_tree_nodes.py`.
+Run the full review with `python scripts/validate_duplication_structure_candidates.py
+--plan metadata/duplication_candidate_tree_review_plan_20260926.json`.
+The plan pins source event tables, model database, coverage receipt/export,
+resolved trees and their successful full-membership readbacks. All pins are
+checked before and after execution.
+
+Service: `fungal-duplication-candidate-tree-review-20260926.service`.
+Launch identity: `metadata/duplication_candidate_tree_review_launch_20260926.json`.
+Output: `results/orthology/duplication-candidate-tree-review-20260926-v1/`.
+Resources: one CPU, 8 GiB RAM, no swap and 1 GiB output allowance. The
+0.1–6-hour planning interval is uncalibrated. Results remain pending.

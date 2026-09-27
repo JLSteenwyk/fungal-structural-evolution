@@ -5048,3 +5048,13 @@ from 20,492 families; MAFFT contains 109,228 from 20,474 families. Each covers
 are guide-specific candidate counts, not independent or validated duplication
 effects. Independent source-to-output readback, candidate overlap and
 gene-tree membership validation remain pending.
+
+
+### September 26: duplication candidate reconstruction and tree review started
+
+A full independent reconstruction now checks the 218,473 candidate rows
+across both guides against native duplication tables and frozen model links.
+It then checks each reported event node's descendant pair and compares exact
+protein-pair membership between guides. Six tree-node fixtures passed. The
+CPU-only production review is running; candidate eligibility and structural
+comparisons remain pending. See [duplication coverage](duplication-structure-coverage-20260926.md).
