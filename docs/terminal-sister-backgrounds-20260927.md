@@ -954,3 +954,17 @@ and 3,456 balance summaries. See the [completed balance report](duplication-cont
 for illustrative strict-background results, control reuse and the substantial
 shift toward more confidently modeled targets. Earlier pending entries above
 are stage history. Matched structural effects remain pending.
+
+## Additional coordinate production complete
+
+The additional-background coordinate producer completed all 148,104 models in
+149 shards, with every model validated and no content rejections. Its systemd
+unit exited successfully. Checked all 149 compressed artifact hashes and their
+individual receipts against the final producer receipt; archived the result in
+`metadata/background_coordinate_production_completed_20260927.json`.
+
+The independent raw-CIF verifier is now running under its previously queued
+process (PID 952285, creation time 1790499798.48). Its final proof remains
+pending. Whole-chain input preparation and domain extraction retain their
+existing dependency gates; coordinate production alone does not qualify these
+structures for evolutionary inference. GPU prediction remains paused.

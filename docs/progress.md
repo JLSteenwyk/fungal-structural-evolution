@@ -6701,3 +6701,15 @@ The preceding status turn was a verified wait: live systemd job handles were
 checked, with comparison counts advancing. This turn completes a reproducible
 scientific reporting artifact. All eight aims remain open; GPU prediction stays
 paused and CPU structural analyses continue.
+
+## September 27 additional background coordinate production complete
+
+All 148,104 additional background models passed coordinate production checks,
+with no content rejections. Verified successful producer exit, all 149 shard
+hashes and their receipts. Independent raw-CIF verification is live; downstream
+input preparation remains gated on its proof. See
+[coordinate milestone](terminal-sister-backgrounds-20260927.md#additional-coordinate-production-complete).
+
+The previous goal turn completed the balance figure; this turn archives a newly
+completed structural-data stage. All eight aims remain open. GPU prediction
+stays paused.

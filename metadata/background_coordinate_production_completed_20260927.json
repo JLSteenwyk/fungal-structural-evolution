@@ -1,0 +1,28 @@
+{
+  "status": "completed_background_coordinate_production_pending_independent_readback",
+  "checked_at": "2026-09-27T10:19:41.867968+00:00",
+  "producer_receipt": "results/structural_comparisons/background-coordinate-validation-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "f335eebcfbac1ea1e3e628280c41b8ce76a043733cfc1e03dcd711f2c24a620d",
+  "plan_sha256": "ccf7ef853b85595aac0a8c2d74a854581555eb8c612717db101063a06c50218d",
+  "models": 148104,
+  "counts": {
+    "validated": 148104
+  },
+  "verified_shard_hashes": 149,
+  "producer_terminal_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "live_readback": {
+    "pid": 952285,
+    "created": 1790499798.48,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_coordinates.py",
+      "--plan",
+      "metadata/background_coordinate_readback_plan_20260927.json"
+    ]
+  },
+  "scope": "All producer shard artifact hashes and shard receipts checked; successful terminal process verified. Full independent raw-CIF coordinate verification is running and is not claimed complete. No new predictions or structural-effect inference."
+}
