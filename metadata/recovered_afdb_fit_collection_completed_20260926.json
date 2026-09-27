@@ -1,0 +1,87 @@
+{
+  "status": "complete_verified_recovered_afdb_fit_collection",
+  "controller_receipt": {
+    "status": "complete_recovered_afdb_fit_collection_and_readback",
+    "plan_sha256": "a28c6201bdd38069cb4886ee6fcb28134ba7683ac7669018d946d4f95ed4007e",
+    "markers": 125,
+    "collection_receipt_sha256": "e9208b6b22ecdbed642a26d3ba370eb4fbd9103eec4ded21da698b3460dfb1fd",
+    "readback_sha256": "cff4b15e21587569842429e3dd6ae9404efebba518464d5edd32f1e16c071678",
+    "scope": "Source-preserving audited point-estimate collection and independent full-table readback. Branch uncertainty and biological acceleration tests remain separate."
+  },
+  "collection_receipt": {
+    "status": "complete_source_preserving_paired_fit_table_collection",
+    "markers": 125,
+    "fits": 500,
+    "paired_branches": 61893,
+    "warning_rows": 986,
+    "source_sha256": {
+      "results/phylogeny/paired-inputs-gdm-current-20260923-v2/receipt.json": "a7c08334cbfd7196fa1e45523d537dd21edc9e02baf92fd53edaf511e1353dcb",
+      "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+      "results/phylogeny/paired-inputs-afdb-recovered-changed-20260925-v1/receipt.json": "4e3a3f582615513145f4a1aa724b7a31928e4c130302a00f55c16682d56d4ee9",
+      "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+      "results/phylogeny/paired-marker-fits-gdm-current-20260923-v2/config.json": "f9050acf529b2b61bf75374812532f769320e45fea735e83bdc71799201bbbd2",
+      "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1/config.json": "04ecb3e6d47476c4f2cd683d5b7a8a163ffa4b5c5c87b8fb5c28775bf52a4ea1",
+      "metadata/recovered_afdb_fit_source_inventory_20260926.json": "8c243b36dbdbade5e24e50d6bcaab9920f215cb47a51f15707cbf6b004b366c1",
+      "results/phylogeny/paired-marker-fit-audit-gdm-current-20260923-v2/receipt.json": "c288c68c311ee4134e4a4c2787a97d7109519811043f38b9dd0db57dbc9079cb",
+      "results/phylogeny/paired-marker-fits-gdm-current-20260923-v2/receipt.json": "b82f78b200d45276a091bfabcffb54bb51b8d293a3fdf0c4a669e6c457bea67c",
+      "results/phylogeny/paired-fit-audit-afdb-recovered-changed-20260926-v1/receipt.json": "995b833a7f5b02376a8267bb4c7acebca527231b3084c20fa732a9e626d4dc67",
+      "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1/receipt.json": "fd03cd519fa8ba51d91d8ee9ac52cd8b4ee2c93efc9a136593368dc9eb5557ca"
+    },
+    "script_sha256": "5c49ab6adc55ee97743df7eed606315213b499dcbbca7076db05f4e8da7e4261",
+    "artifacts": {
+      "warnings.tsv": "865e272f875cdce46fa7c3d822b9b3d273d0049374b157372b3b364446d7edaa",
+      "paired_branches.tsv": "a8bcd5ec4ad3855990f867f6e44456d85757dc5c56a2be6e5630ce8b1dfcbf8f",
+      "fit_summary.tsv": "13344b5632a01db4507cfaa0edf2a9c3507936633d3dfeaa8f7a3357b10c73ff"
+    },
+    "scope": "Union of audited point-estimate tables for the expanded inputs, preserving original source runs. Not a native single-run fit output, uncertainty analysis, or test of biological acceleration. Source fits and audits remain required for reproduction."
+  },
+  "independent_readback": {
+    "status": "passed_complete_combined_paired_fit_source_readback",
+    "producer_receipt_sha256": "e9208b6b22ecdbed642a26d3ba370eb4fbd9103eec4ded21da698b3460dfb1fd",
+    "markers": 125,
+    "tables": {
+      "fit_summary.tsv": {
+        "rows": 500,
+        "sha256": "13344b5632a01db4507cfaa0edf2a9c3507936633d3dfeaa8f7a3357b10c73ff"
+      },
+      "paired_branches.tsv": {
+        "rows": 61893,
+        "sha256": "a8bcd5ec4ad3855990f867f6e44456d85757dc5c56a2be6e5630ce8b1dfcbf8f"
+      },
+      "warnings.tsv": {
+        "rows": 986,
+        "sha256": "865e272f875cdce46fa7c3d822b9b3d273d0049374b157372b3b364446d7edaa"
+      }
+    },
+    "scope": "Every combined table field and row multiplicity independently compared with the correct selected source-audit rows and provenance. Source receipts/artifacts and exact marker source choices checked. Does not rerun native fits or replace their numeric audits; no uncertainty or biological acceleration inference."
+  },
+  "original_fit_audit": {
+    "status": "complete_paired_fit_audit",
+    "markers": 125,
+    "fits": 500,
+    "paired_branches": 61833,
+    "fits_with_warnings": 495,
+    "fits_with_near_zero_branches": 494,
+    "fits_with_branches_ge_10": 0,
+    "fit_receipt_sha256": "b82f78b200d45276a091bfabcffb54bb51b8d293a3fdf0c4a669e6c457bea67c",
+    "script_sha256": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "interpretation": "Verified model identity, provenance, paired masks/topologies and branch tables. Point estimates are not confidence intervals or acceleration tests. Likelihoods must not be compared across AA and 3Di data; model comparisons within the same 3Di data require parameter penalties. Near-zero lengths warrant uncertainty analysis, not division into branch-length ratios.",
+    "artifacts": {
+      "warnings.tsv": "5a4a3873da71bcdd0ff005f508b6094bcfb63d75f32b3cfceed614f119eaaa68",
+      "paired_branches.tsv": "7b7026ba737592559a13199869394c2638a1af42060df53498d04285e14e0848",
+      "fit_summary.tsv": "016686996ca53de3b3ebe8db37447ffcfb31d2b16cb9443253dd9d335a9baf35"
+    }
+  },
+  "fits_by_source": {
+    "unchanged": 380,
+    "refitted": 120
+  },
+  "verification": "Successful service exit observed. All controller plan pins, source receipts, original audit tables, combined artifacts and readback bindings rechecked. Native optimization not rerun.",
+  "archive_sha256": {
+    "metadata/recovered_afdb_fit_collection_plan_20260926.json": "a28c6201bdd38069cb4886ee6fcb28134ba7683ac7669018d946d4f95ed4007e",
+    "results/recovery-20260926/afdb-fit-collection/receipt.json": "4b7fdbd87fb638786327c77fe322831d8e81f8d25bad3672aca8dff35a924c58",
+    "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1/receipt.json": "e9208b6b22ecdbed642a26d3ba370eb4fbd9103eec4ded21da698b3460dfb1fd",
+    "results/recovery-20260926/afdb-fit-collection/table_readback.json": "cff4b15e21587569842429e3dd6ae9404efebba518464d5edd32f1e16c071678",
+    "results/phylogeny/paired-marker-fit-audit-gdm-current-20260923-v2/receipt.json": "c288c68c311ee4134e4a4c2787a97d7109519811043f38b9dd0db57dbc9079cb"
+  }
+}

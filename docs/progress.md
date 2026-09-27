@@ -5413,3 +5413,14 @@ class between policies. Missing annotations, architecture differences and
 identical models remain explicit, along with all pair-level fields. These
 are strata for upcoming structural comparisons, not an evolutionary test.
 See [triad controls](duplication-domain-controls-20260926.md#complete-duplicatereference-architecture-controls).
+
+
+### September 26: full recovered AlphaFold fit collection completed
+
+The original 500-fit AlphaFold run and audit completed. Its source-preserving
+merge with the 30 changed-marker refits also completed and passed independent
+full-table readback: 125 markers, 500 fits (380 unchanged/120 refitted), 61,893
+paired branch rows and 986 warning rows. All source/artifact hashes and receipt
+bindings were rechecked after successful service exit. These are point estimates,
+not uncertainty intervals or acceleration tests; near-zero branch warnings remain.
+See [completion and limitations](recovery-20260926.md#completed-expanded-alphafold-fit-collection).

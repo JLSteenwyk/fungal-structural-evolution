@@ -527,3 +527,18 @@ reference sets were compared between reconciliation guides. These are
 provisional extant references; unreported duplication is not evidence of
 speciation, and rooting, hidden paralogy, structural quality and reference
 sensitivity require additional assessment before asymmetry inference.
+
+
+### Expanded AlphaFold paired-fit provenance (September 26)
+
+Following structure recovery, paired-input comparisons identified 95 markers
+with unchanged amino-acid/structural-state alignments and 30 requiring refitting.
+The expanded 125-marker point-estimate collection uses the 380 audited fits
+from unchanged markers and 120 audited updated fits, retaining four fit settings
+per marker and all source-run identifiers. Complete table readback verified
+500 selected fits and 61,893 paired branch records against the original native-run
+audits. No likelihoods from different observed alphabets are directly compared.
+Warnings, including near-zero branches, are retained; these point estimates
+alone do not establish structural acceleration or positive selection. Separate
+uncertainty analysis is required for this cohort. Reproduction and provenance
+are described in [the recovery record](recovery-20260926.md#completed-expanded-alphafold-fit-collection).
