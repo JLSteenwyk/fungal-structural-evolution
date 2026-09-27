@@ -306,3 +306,33 @@ Results: `results/ancestral/case-domain-alignment-readback-20260927-v1/`.
 Closure: `metadata/ancestral_domain_alignments_completed_20260927.json`.
 Whole-protein alignments, cross-boundary comparison, topology/node eligibility
 and ancestral sequence ensembles remain incomplete.
+
+## Local full-protein and domain tree inputs completed
+
+Prepared 52 local trees: 13 cases × two reconciliation guides × full/domain
+tip sets. Every tree retains its original level-three local root and the exact
+focal duplicate MRCA. All 208 candidate ancestral mappings are unique, and no
+two of the four examined ancestral levels collapse to the same output node.
+All 4,100 original tip dispositions are explicit.
+
+Every retained rooted descendant set and edge length was checked against the
+source tree after serialization. Pruned paths sum their constituent source
+lengths; all 7,420 exported edge records match, with maximum difference
+5.55e-17. The local root stem is zero because it lies
+outside all within-clade paths.
+
+Across guides, 26 of 26 corresponding full/domain tree pairs have identical
+rooted edge sets. Maximum shared-edge length difference is 0. These
+are sensitivity comparisons of reconciliations sharing original gene trees,
+not independent estimates or replication. Full pairwise results are retained
+in the completion record.
+
+The trees provide candidate topologies and node identities, not finished ASR
+models. Inherited source branch lengths must be re-estimated against the
+corresponding full-protein or domain alignment. Model choice, alignment and
+topology uncertainty, informative-site coverage, indel treatment, and additional
+sampling/root sensitivity remain required before interpreting ancestors.
+
+Reproduce: `python scripts/prepare_ancestral_case_trees.py`. Local artifacts:
+`results/ancestral/case-local-trees-20260927-v1/`. Completion record:
+`metadata/ancestral_case_local_trees_completed_20260927.json`.

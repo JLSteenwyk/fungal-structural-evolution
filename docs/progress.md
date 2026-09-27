@@ -8820,3 +8820,11 @@ of 26 family/boundary sets have identical focal pair maps across aligners; five
 differ. Full-clade correspondence can vary even when focal pairs agree, so both
 alignments remain retained. Full comparison table and limitations are in
 `docs/ancestral-case-inputs.md`; ancestral inference remains pending.
+
+### 2026-09-27: matched local ancestral tree inputs verified
+
+Prepared all 52 guide/case/full-domain trees. All 208 node mappings remain
+unique and distinct across examined levels; local roots are unchanged. Full
+readback verified 7,420 induced edge lengths and rooted descendant sets, plus
+4,100 tip dispositions. Branch lengths remain inherited inputs requiring
+alignment-specific refitting. No ancestral state or posterior inference yet.
