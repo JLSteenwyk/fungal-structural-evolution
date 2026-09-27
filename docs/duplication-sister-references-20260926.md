@@ -452,3 +452,23 @@ examines all 193,642 pair/mask comparisons having two usable input orders, with
 Source-bound closure records:
 `metadata/primary_diagnostic_geometry_completed_20260927.json` and
 `metadata/primary_order_summary_completed_20260927.json`.
+
+## Whole-protein common-residue stage launched
+
+The full 17,619 oriented A/B/reference model triads now expand to 281,904 records
+(two masks × eight independent edge-order choices), preserving all 36,944
+associated event/reference links. For each combination, the mapper stores the
+original-position triples shared through the reference, and separately the
+subset consistent with the direct A–B correspondence. This prevents different
+pairwise residue subsets from being silently treated as a common structural core.
+All missing and numerically excluded edge states remain explicit.
+
+There are 15,713 three-model, 1,904 two-model and two one-model triads. Repeated
+model identities use explicit identity correspondences; they are not new native
+alignments or independent structural observations. Order combinations remain
+explicit even when an identity edge makes some computations repeat. Coordinate
+fits and their geometry/coverage qualification are later stages.
+
+Producer and independent full readback use
+`metadata/whole_protein_common_residues_plan_20260927.json`. Full serialized
+verification remains pending; no asymmetry result is claimed.

@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-whole-protein-common-residues-20260927.service",
+  "pid": 354414,
+  "created": 1790535092.21,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_whole_protein_common_residues.py",
+    "--plan",
+    "metadata/whole_protein_common_residues_plan_20260927.json"
+  ],
+  "plan_sha256": "34fea1b1074ac74ce1a7a65309258c8fca0df90c7382ee9edb42c650fa91e855",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 8,
+    "planning_hours": [
+      0.25,
+      6
+    ]
+  }
+}

@@ -8292,3 +8292,26 @@ sensitivity, not a tested biological effect. See
 [figure and interpretation](whole-protein-order-sensitivity-20260927.md).
 Full corrected readback and figure completion records are versioned in metadata;
 large pair tables remain outside Git. The original failed checker remains intact.
+
+### September 27: full whole-protein triad residue mapping launched
+
+After full primary/reference numerical qualification, the complete oriented triad
+inventory is now being mapped: 17,619 model triads, 36,944 event/reference links,
+two masks and eight native-order combinations (281,904 dispositions). No tied
+reference is selected away. Native mappings are reconstructed in original residue
+positions; reference-common triples and the subset also consistent with direct
+A–B alignment are retained separately. Identity-model edges use explicit identity
+correspondence and are labeled as such, never invented native fits. Missing-input
+and numerical exclusion reasons propagate to every record.
+
+A separate full checker is queued behind exact producer identity and successful
+terminal status. It reconstructs native positions with iterators and intersects
+relations independently, then compares every serialized field, complete key
+coverage, copied event links and all residue totals. Fixtures covered consistent,
+inconsistent, identity and empty maps in both implementations. Each stage uses
+one CPU, 16 GiB, no swap; output allowance 8 GiB and planning allowance 0.25–6
+hours per stage. Scripts: `prepare_whole_protein_common_residues.py` and
+`readback_whole_protein_common_residues.py`; plan/identities:
+`metadata/whole_protein_common_residues_*_20260927.json`.
+These residue correspondences do not yet constitute common-coordinate fits,
+validated homology, structural asymmetry or biological duplication effects.

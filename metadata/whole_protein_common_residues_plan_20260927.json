@@ -1,0 +1,50 @@
+{
+  "triads": "results/structural_comparisons/whole-protein-reference-triads-20260927-v1",
+  "triad_audit": "metadata/whole_protein_reference_triads_readback_20260927.json",
+  "inputs": [
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1"
+  ],
+  "sources": {
+    "primary": {
+      "orders": "results/structural_comparisons/primary-usable-orders-20260927-v1",
+      "audit": "metadata/primary_usable_orders_readback_20260927.json",
+      "native": "results/structural_comparisons/duplication-alignments-20260926-v1"
+    },
+    "reference": {
+      "orders": "results/structural_comparisons/duplication-reference-usable-orders-20260927-v1",
+      "audit": "metadata/duplication_reference_usable_orders_readback_20260927.json",
+      "native": "results/structural_comparisons/duplication-reference-alignments-20260926-v1"
+    }
+  },
+  "output": "results/structural_comparisons/whole-protein-common-residues-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 8,
+    "planning_hours": [
+      0.25,
+      6
+    ]
+  },
+  "scope": "All 17619 oriented triads, 36944 event/reference links, 281904 mask/order dispositions; common-reference and direct-AB consistency distinguished; identity models and all missing/numeric exclusions explicit. No coordinate fits or biological effects.",
+  "pins": {
+    "metadata/whole_protein_reference_triads_readback_20260927.json": "553d663ef34101df4560990382360cbefc94ef2be73c90b8f01b0a14237a2cb6",
+    "results/structural_comparisons/whole-protein-reference-triads-20260927-v1/receipt.json": "6fd0e32bc72afb52d964436a2b6abde52777be6b99b75327e9e67efb8e1965ba",
+    "scripts/prepare_whole_protein_common_residues.py": "54414a3b30b237017802518f2e998826a79347af2a73b43916c3d9287ccd7655",
+    "scripts/readback_whole_protein_common_residues.py": "9106904ab4cc49d600a6c9736ac95cfae26fb3082431d0752044f9bea832ec3e",
+    "scripts/prepare_domain_triad_common_residues.py": "bb9a3e5bc5f480b033a216eadac92059f1d3fc24941bcb877b32a0f22d5881a1",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "metadata/primary_usable_orders_readback_20260927.json": "3cdd7ba94784a89d8e34139055af6cf5ab030ec07d2a529dd59ae818ee929eb5",
+    "results/structural_comparisons/primary-usable-orders-20260927-v1/receipt.json": "e755922a32ff137b0041787a839098f097f4c0da19f5191d52f9e0d3dc0ef74c",
+    "results/structural_comparisons/duplication-alignments-20260926-v1/receipt.json": "263f672755f58d1ae8d8ba52a65dac826caea14b7167d911b1b087cb9347d4a3",
+    "metadata/duplication_reference_usable_orders_readback_20260927.json": "790cfe28297a0f03ee2c54ca595e7a9900693667e95c6a57416e821ac49e7173",
+    "results/structural_comparisons/duplication-reference-usable-orders-20260927-v1/receipt.json": "f732f44fe818e9a151935015480c2fcd89e32daf7c631999bf316dd300f777ac",
+    "results/structural_comparisons/duplication-reference-alignments-20260926-v1/receipt.json": "e8b24d4abb47870c2307f60b99f7866ec19b50e9f38e227d7f98c66eed8ecf41"
+  }
+}
