@@ -53,3 +53,36 @@ outputs. Local source trees, descendant lists and tables are in
 `results/ancestral/case-neighborhoods-20260927-v1/`; source and artifact checksums
 are in its receipt. Verified closure:
 `metadata/case_ancestral_neighborhoods_completed_20260927.json`.
+
+## Exact extant sequences recovered
+
+Recovered all 1,025 candidate-clade proteins across 417 taxa and 13 families
+(482,007 residues). Each exact string matched both the checksum-bound staged
+reconciliation FASTA and its independently identified QC proteome record. A
+separate export readback checked all expected family/gene identities and every
+sequence hash and length. Duplicate sequences and all copies are retained.
+
+| Family | Proteins | Minimum length | Maximum length | Unique sequences | Noncanonical proteins |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| OG0000054 | 11 | 218 | 248 | 11 | 0 |
+| OG0000095 | 83 | 213 | 749 | 82 | 0 |
+| OG0000107 | 9 | 942 | 975 | 9 | 0 |
+| OG0000152 | 7 | 159 | 496 | 7 | 0 |
+| OG0000230 | 24 | 220 | 762 | 19 | 0 |
+| OG0000294 | 9 | 460 | 1091 | 9 | 0 |
+| OG0000336 | 10 | 245 | 433 | 10 | 0 |
+| OG0000972 | 622 | 50 | 1009 | 616 | 1 |
+| OG0001082 | 111 | 205 | 921 | 111 | 0 |
+| OG0001200 | 29 | 148 | 595 | 28 | 0 |
+| OG0001203 | 21 | 110 | 308 | 21 | 0 |
+| OG0002650 | 77 | 55 | 483 | 77 | 0 |
+| OG0002812 | 12 | 770 | 817 | 12 | 0 |
+
+Noncanonical record: `F157183_CAD6936802.1` in OG0000972, symbols/counts `{"X": 3}`. The original sequence is preserved; its alignment and ancestral-state treatment must be explicit.
+
+Inputs are in `results/ancestral/case-sequences-20260927-v1/`. Reproduce with
+`python scripts/recover_ancestral_case_sequences.py`; it refuses to overwrite
+existing outputs. Closure: `metadata/case_ancestral_sequences_completed_20260927.json`.
+This recovery used one CPU, streamed existing local FASTAs, and required no GPU
+or network access. Alignment, outside-clade context and ancestral ensembles
+remain pending.

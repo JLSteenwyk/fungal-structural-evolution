@@ -8754,3 +8754,11 @@ cross-guide descendant-set comparisons agree, with shared input-tree dependence
 explicit. Full source-tree and parent-path readback passed. Exact extant sequence
 recovery, alignment assessment and ancestral ensembles remain pending; no ASR
 or ancestral structure result is claimed. See `docs/ancestral-case-inputs.md`.
+
+### 2026-09-27: exact extant sequences recovered for ancestral case inputs
+
+Recovered and cross-matched 1,025 proteins across 417 taxa and all 13 candidate
+families (482,007 residues). All exact strings agree between staged native
+reconciliation inputs and QC proteomes. Full exported identifier/hash/length
+readback passed. One protein contains noncanonical residues, explicitly retained.
+No alignment, ancestral sequence or structure inference is claimed.

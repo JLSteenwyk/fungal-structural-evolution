@@ -1,0 +1,24 @@
+{
+  "status": "complete_case_extant_sequence_recovery_and_export_readback",
+  "source_receipt_path": "results/ancestral/case-sequences-20260927-v1/receipt.json",
+  "source_receipt_sha256": "e26ed0c74c3b8c33b093ce9da7986219fe3e8e7a1bd83caf891cb065ae132966",
+  "unique_genes": 1025,
+  "taxa": 417,
+  "families": 13,
+  "residues": 482007,
+  "noncanonical_records": [
+    {
+      "family": "OG0000972",
+      "gene": "F157183_CAD6936802.1",
+      "native_id": "181_5207",
+      "taxon_id": "F157183",
+      "length": "554",
+      "sequence_sha256": "fb8bed9fee0884053e3e3d62fab2d8d63e5dd52fc8a086c5ad11e39bb31d9117",
+      "noncanonical_symbols": "{\"X\": 3}",
+      "noncanonical_residues": "3",
+      "internal_stops": "0",
+      "terminal_stop": "0"
+    }
+  ],
+  "scope": "Recovery compared each sequence exactly against staged numerical-ID input and QC proteome. Separate output readback checked full expected family/gene set, every FASTA sequence hash/length and total residues. No alignment or ancestral inference result."
+}
