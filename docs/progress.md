@@ -8845,3 +8845,11 @@ using actual branch counts for unresolved trees. Retained 135 near-zero internal
 branch warnings, 45 high-gap warnings and 12 rare-state warnings; likelihood
 recomputation, convergence/model adequacy and ancestral reconstruction remain
 open. Detailed limitations are in `docs/ancestral-case-inputs.md`.
+
+### 2026-09-27: independent likelihood replay passed all 156 domain models
+
+A separately implemented scaled-pruning evaluator reproduced all saved
+likelihoods, maximum absolute difference 1.25591e-5 log units (tolerance 0.001).
+Analytic two-tip mixture check passed; producer terminated successfully.
+Empirical matrices/source definitions are shared, likelihood engine is separate.
+Convergence/model adequacy and ancestral states remain unresolved.

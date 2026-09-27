@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-ancestral-domain-likelihood-replay-20260927.service",
+  "plan_sha256": "95cb451c2602db1f3ce5c4e9ca6dd0c92300a20ade8324499f0c98c507c034e0",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "state": {
+    "MainPID": "489740",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 489740,
+  "created": 1790545665.98,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/replay_ancestral_domain_likelihoods.py"
+  ],
+  "status": "verified_live_likelihood_replay"
+}

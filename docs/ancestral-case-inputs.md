@@ -412,3 +412,33 @@ ancestral sequences. Likelihood replay, boundary/optimization sensitivity and
 node-specific information assessment remain before interpreting ancestors.
 Reproduce: `python scripts/audit_ancestral_domain_model_fits.py`. Closure:
 `metadata/ancestral_domain_model_reports_completed_20260927.json`.
+
+## Independent likelihood calculation passed all 156 domain fits
+
+A separately implemented scaled-pruning calculation reproduced every saved
+IQ-TREE domain likelihood. Maximum absolute difference was 1.25591e-5 log
+likelihood units, below the declared 0.001 tolerance for finite checkpoint
+parameter/branch serialization. All 156 signed differences remain retained.
+The service terminated inactive/success/exit-zero.
+
+The implementation constructs reversible rate matrices from the versioned
+[LG, WAG and JTT exchangeabilities](https://github.com/iqtree/iqtree3/blob/v3.0.1/model/modelprotein.cpp),
+recreates version-specific empirical frequencies and gamma category means,
+and computes transition matrices using SciPy. Partial likelihoods are scaled
+through each child contribution to avoid underflow; rate categories are mixed
+with log-sum-exp. Very short branch/rate products use direct matrix exponentials
+to avoid eigendecomposition cancellation. An analytic two-tip mixture identity
+with an unknown/gap state passed before the full calculation.
+
+This implementation shares input alignments, empirical rate tables, serialized
+trees and parameter definitions with IQ-TREE, but not its likelihood engine.
+Gaps are marginalized as unknown states; no ancestral deletion state is inferred.
+Numerical agreement validates evaluation at the saved parameters, not optimum
+convergence, model adequacy, topology certainty or biological ancestral states.
+
+Reproduce with `python scripts/replay_ancestral_domain_likelihoods.py` after
+materializing the sources in `metadata/ancestral_domain_likelihood_replay_plan_20260927.json`.
+The run used one CPU and at most 4 GiB RAM, no swap or GPU, against a 0.1–4 hour
+planning envelope. Output:
+`results/ancestral/case-domain-likelihood-replay-20260927-v1/`. Closure:
+`metadata/ancestral_domain_likelihood_replay_completed_20260927.json`.
