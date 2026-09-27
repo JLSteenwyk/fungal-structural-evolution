@@ -1,0 +1,91 @@
+{
+  "status": "complete_exact_gene_pair_cross_guide_sensitivity",
+  "source_hashes": {
+    "results/structural_comparisons/whole-protein-reference-sensitivity-20260927-v2/receipt.json": "00b9ea4f59bf9b4135f4e93ba0c54859136c30f84f1ff304c906b7a939f8f000",
+    "results/structural_comparisons/whole-protein-reference-sensitivity-20260927-v2/event_sensitivity.tsv": "e1ad20d22ac067c4a11e1a379f5fc7636f891fc5332abd7216113342fdd83c09"
+  },
+  "script_sha256": "528c38d104829e1a4192adfa28f92cdc2a01e2897973b603cd60552dd06c1f32",
+  "source_event_screen_rows": 209454,
+  "cross_guide_pair_screen_rows": 121068,
+  "summaries": [
+    {
+      "screen": "n30_c50",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 5631,
+      "same_structural_direction_both": 3825,
+      "same_sequence_and_structural_direction_both": 2239,
+      "robust_families": 1711,
+      "robust_taxa": 119
+    },
+    {
+      "screen": "n30_c70",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 3436,
+      "same_structural_direction_both": 2358,
+      "same_sequence_and_structural_direction_both": 1412,
+      "robust_families": 1108,
+      "robust_taxa": 113
+    },
+    {
+      "screen": "n30_c90",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 930,
+      "same_structural_direction_both": 684,
+      "same_sequence_and_structural_direction_both": 407,
+      "robust_families": 389,
+      "robust_taxa": 81
+    },
+    {
+      "screen": "n50_c50",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 5608,
+      "same_structural_direction_both": 3805,
+      "same_sequence_and_structural_direction_both": 2229,
+      "robust_families": 1699,
+      "robust_taxa": 119
+    },
+    {
+      "screen": "n50_c70",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 3434,
+      "same_structural_direction_both": 2356,
+      "same_sequence_and_structural_direction_both": 1411,
+      "robust_families": 1106,
+      "robust_taxa": 113
+    },
+    {
+      "screen": "n50_c90",
+      "pair_union": 20178,
+      "pairs_in_both": 14731,
+      "mafft_only": 2717,
+      "profile_only": 2730,
+      "all_references_eligible_both": 930,
+      "same_structural_direction_both": 684,
+      "same_sequence_and_structural_direction_both": 407,
+      "robust_families": 389,
+      "robust_taxa": 81
+    }
+  ],
+  "artifacts": {
+    "all_pair_comparisons.tsv": "2e14718318ba0be628c220983b8bcf055c135880fda71d4bcc6fe41a94228299",
+    "summary.tsv": "393c0118f00589bd35a7b18398d98d3e3a4727f9a6b2b24fa90cfed6e094ed04"
+  },
+  "scope": "Exact family and lexical gene-pair matching; guide-specific nodes and missing pairs retained. Independent full dictionary outer join checked. Same gene pairs across guides are not independent events. Sign robustness uses numerical tolerance and is not significant structural asymmetry, selection or excess structure given sequence.",
+  "receipt_path": "results/structural_comparisons/whole-protein-cross-guide-sensitivity-20260927-v1/receipt.json",
+  "receipt_sha256": "16b058daf4602fc75c6140b041f960a5b384aa892de7fd72e8bec8a00786194d"
+}

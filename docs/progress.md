@@ -8421,3 +8421,13 @@ across all settings/references and 1,107 are sign sensitive. This numerical
 robustness is descriptive, not biological significance. A first export checker
 failed on numeric/string parsing; the corrected v2 full run passed numeric and
 blank-preservation checks. See [reference sensitivity](whole-protein-reference-sensitivity-20260927.md).
+
+### 2026-09-27: exact whole-protein duplicate pairs compared across guides
+
+Completed the full outer join of 209,454 event/screen rows into 121,068 exact
+family/gene-pair/screen comparisons. Independent dictionary reconstruction and
+serialized readback passed. The modeled-reference inventories share 14,731 of
+20,178 gene pairs. At n50/c70, 3,434 pairs have all references eligible in both
+guides; 2,356 retain one structural sign across both guides and all settings,
+spanning 1,106 families and 113 taxa. Equal per-guide totals therefore did not
+imply identical membership. See [cross-guide comparisons](whole-protein-cross-guide-sensitivity-20260927.md).
