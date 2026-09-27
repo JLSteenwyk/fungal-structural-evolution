@@ -63,3 +63,9 @@ terminated successfully; completion proof is
 These diagnostics do not provide a fitted phylogenetic effect, confidence
 interval, selection test or causal duplication inference. Phylogenetic and
 shared-control covariance assumptions still require inferential validation.
+
+A [full joint-support analysis](joint-covariate-support-20260927.md) is now
+running for every exact production input. It tests whether the zero-difference
+reference lies in the convex hull of the four observed covariates jointly,
+retaining numerical certificates and unresolved cases. This extends the
+completed marginal-range check; joint-support results remain pending.

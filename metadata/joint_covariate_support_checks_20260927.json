@@ -1,0 +1,53 @@
+{
+  "status": "passed_joint_covariate_support_analytic_fixtures",
+  "cases": [
+    {
+      "case": "interior",
+      "classification": "zero_supported_to_numeric_tolerance",
+      "primal_distance": 0.0,
+      "separating_lower_bound": 0.0
+    },
+    {
+      "case": "boundary",
+      "classification": "zero_supported_to_numeric_tolerance",
+      "primal_distance": 0.0,
+      "separating_lower_bound": 0.0
+    },
+    {
+      "case": "marginal_only",
+      "classification": "zero_outside_joint_convex_hull",
+      "primal_distance": 0.45,
+      "separating_lower_bound": 0.45
+    },
+    {
+      "case": "constant_nonzero",
+      "classification": "zero_outside_joint_convex_hull",
+      "primal_distance": 1.0,
+      "separating_lower_bound": 1.0
+    },
+    {
+      "case": "all_zero",
+      "classification": "zero_supported_to_numeric_tolerance",
+      "primal_distance": 0.0,
+      "separating_lower_bound": 0.0
+    }
+  ],
+  "positive_scaling_checks": 10,
+  "runtime_examples": [
+    {
+      "records": 148,
+      "seconds": 0.0024900849966797978
+    },
+    {
+      "records": 2320,
+      "seconds": 0.017060370999388397
+    },
+    {
+      "records": 10963,
+      "seconds": 0.07655342301586643
+    }
+  ],
+  "scipy_version": "1.15.3",
+  "script_sha256": "d5e950b86c8c0e9bb561ee1417bd63463b341bbea7588fa65781a8c3c1675f39",
+  "scope": "Known interior, boundary, marginal-only counterexample, constant nonzero and zero fixtures. Synthetic timings are not full-run ETA."
+}
