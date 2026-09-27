@@ -1,0 +1,36 @@
+{
+  "plan": "metadata/terminal_sister_guide_comparison_plan_20260927.json",
+  "dependency": {
+    "service": "fungal-terminal-sister-guides-20260927.service",
+    "pid": 8919,
+    "created": 1790498513.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_terminal_sister_guides.py",
+      "--plan",
+      "metadata/terminal_sister_guide_comparison_plan_20260927.json"
+    ],
+    "plan": "metadata/terminal_sister_guide_comparison_plan_20260927.json",
+    "plan_sha256": "65cb4b83627fd704b7a01061b0345102d135178fec8444f97972b981acf3703f",
+    "fixture_status": "passed_known_guide_comparison_cases"
+  },
+  "pins": {
+    "metadata/terminal_sister_guide_comparison_launch_20260927.json": "42567f00649d1270fab9ed3baa962f2dd8fcc18984d3b25d14c30146e0a81cd1",
+    "metadata/terminal_sister_guide_comparison_plan_20260927.json": "65cb4b83627fd704b7a01061b0345102d135178fec8444f97972b981acf3703f",
+    "scripts/readback_terminal_sister_guides.py": "6edce69e750b9b89be8b2ac365ff5435e1a459944ac95040b655402c2669fb1d",
+    "scripts/check_terminal_guide_readback_cases.py": "6421919000e98628f986c94d7a2cf0ae7e7c7507a1cf72611e563a44f2571eba",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "output": "metadata/terminal_sister_guide_comparison_completed_readback_20260927.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "Verify every approximately 3.15 million source row against indexed stored records, then independent sorted-cursor merge of full union and selected subset. Read-only SQLite with 64 MiB cache, bounded streaming. No GPUs or paid resources; excludes dependency wait."
+  }
+}

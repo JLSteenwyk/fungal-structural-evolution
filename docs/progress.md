@@ -6249,3 +6249,19 @@ native orthology check needed before background matching. Full join and
 membership readbacks, matching and evolutionary tests remain open. See
 [native membership methods](terminal-sister-backgrounds-20260927.md#native-orthology-membership-queued).
 The full goal remains active and GPU prediction remains paused.
+
+## September 27 full guide-union readback queued
+
+Added and launched the complete independent checker for the terminal-pair guide
+comparison. It verifies all original rows against the indexed source store,
+reconstructs the union with an independent sorted-cursor merge, checks every
+exported field and the exact modeled subset, and recomputes all counts. Known
+merge/flag cases passed. The service waits for the recorded comparison process
+and complete, bound upstream receipts. Inventory reconstruction remains live
+and has reached the MAFFT guide.
+
+The previous turn added native ortholog membership queries; this turn supplies
+the full guide-join verification required before downstream control eligibility.
+See [readback methods](terminal-sister-backgrounds-20260927.md#complete-guide-union-readback-queued).
+Full readbacks, background matching and evolutionary tests remain unfinished;
+the complete objective is active and GPU prediction remains paused.

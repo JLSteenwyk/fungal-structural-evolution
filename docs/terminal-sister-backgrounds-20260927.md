@@ -134,3 +134,24 @@ corrupted stream/query cases. The queued production scan is not yet complete.
 One CPU, 4 GiB RAM, no swap and 1 GiB output are budgeted; each roughly 15.7 GiB
 input stream receives a complete scan and before/after checksums. The 0.1–4 hour
 planning range excludes dependency wait. No predictions or paid resources run.
+
+## Complete guide-union readback queued
+
+`scripts/readback_terminal_sister_guides.py` waits for the exact guide-comparison
+process to finish and requires complete, mutually bound producer and inventory
+readback receipts. It checks every original inventory row against its stored
+SQLite JSON record and verifies table counts and database integrity. It then
+merges two sorted source cursors independently of the producer's SQL union,
+reconstructing every exported field and the exact modeled-candidate subset.
+Missing, extra, repeated or altered rows fail exact comparison. Presence counts,
+classification cross-tabs and candidate counts are recomputed from all rows.
+Source and output hashes are checked before and after the full pass.
+
+The independent merge fixtures passed shared, left-only, right-only and empty
+cases, changed family/class labels and identical-model candidate flags. The
+production readback is queued, not complete. Its pinned config is
+`metadata/terminal_sister_guide_readback_plan_20260927.json`; successful completion
+will produce `metadata/terminal_sister_guide_comparison_completed_readback_20260927.json`.
+One CPU, 4 GiB RAM and no swap are enforced, with a 0.1–4 hour planning range
+excluding the upstream wait. This verifies joins and classifications; it does
+not establish matched comparability or a biological duplication effect.
