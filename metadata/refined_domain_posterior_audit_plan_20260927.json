@@ -1,0 +1,38 @@
+{
+  "source": "results/ancestral/refined-domain-ancestors-20260927-v1",
+  "producer_plan": "metadata/refined_domain_ancestor_plan_20260927.json",
+  "producer": {
+    "unit": "fungal-refined-domain-ancestors-20260927.service",
+    "pid": 533923,
+    "created": 1790548277.95,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/infer_refined_domain_ancestors.py"
+    ]
+  },
+  "output": "results/ancestral/refined-domain-posterior-audit-20260927-v1",
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-08,
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      4
+    ]
+  },
+  "pins": {
+    "metadata/refined_domain_ancestor_plan_20260927.json": "9bcb131287743a5010d02fdc6dcf70eb9c52701404660667c1d6a35af0aee31c",
+    "metadata/refined_domain_ancestor_launch_20260927.json": "331e41b6d5edb1666f31f4887e6e7ae142c8a79615a8d523d4962b51fd1a6e60",
+    "scripts/audit_refined_domain_posteriors.py": "5a438a98d8ef80bd33b5130041404aff96d0f85eff466e9c9f6ab3ce1d53daaa",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv": "d0580980a65c5cf2e3ea1736afd72c951a037068f5cfcfbd984684fc34423245",
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "results/ancestral/domain-refinement-readback-20260927-v1/receipt.json": "4ebbc20e3373d59c5cf6d8bc8640887efe3213a68d5b4aa46e654b305e35ce65",
+    "results/ancestral/domain-refinement-readback-20260927-v1/parameters.json": "b203852a85036eeb5ac602a65b86f6a1538337c027eb9abd3c70e68c84eb9edc"
+  }
+}

@@ -880,3 +880,26 @@ no swap/GPU; estimate0.1–4 hours,2GiB output. The complete audit receipt and
 parameter file are frozen before launch. Full probability verification,
 model/aligner/bound sensitivity, indel handling and sequence ensembles remain
 incomplete.
+
+## Alternate-start probabilities completed; refined verification queued
+
+All936 alternate-start/bound probability calculations finished:2,808 mapped
+fit/nodes and504,846 node/site distributions, retaining10,096,920 amino-acid
+probabilities. Analytic and within-fit likelihood checks passed (maximum
+likelihood difference1.23417e-5); full artifact hashes and terminal success
+confirmed. Independent fixed-root posterior verification is running. Closure
+for production only: `metadata/refitted_domain_ancestors_completed_20260927.json`.
+
+Separately queued independent verification of all312 refined fits'936 node
+marginals, expected168,282 node/sites and3,365,640 probabilities. It uses
+direct matrix exponentials and fixed-root inside/outside messages, requires
+the frozen completed fit audit, and compares every probability and site
+likelihood at1e-8 tolerance after successful production. All model/aligner/
+boundary/bound settings remain represented. No ancestral sequence selection
+is made by either calculation.
+
+Run `python scripts/audit_refined_domain_posteriors.py`; plan/launch metadata
+use `refined_domain_posterior_audit_`, date `20260927`. Output:
+`results/ancestral/refined-domain-posterior-audit-20260927-v1/`. One CPU,4GiB
+RAM,no swap/GPU; estimate0.1–4 hours after production,0.2GiB output.
+Refined probabilities and their verification remain pending.

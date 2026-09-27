@@ -9004,3 +9004,12 @@ Stable under this restart test, not proof of global optimality. Started
 conditional probabilities for936 refined fit/nodes, retaining both bounds and
 all model/alignment settings. One CPU,4GiB RAM,noGPU. Verification and
 ancestral sequence/structure uncertainty propagation remain pending.
+
+### 2026-09-27: alternate-start probabilities produced; refined audit queued
+
+All2,808 alternate-start fit/node marginals completed, covering504,846
+node/sites; likelihood consistency and artifact checks passed. Independent
+posterior verification running. Queued the separate complete3,365,640-value
+audit of refined probabilities. Both collections retain their distinct
+optimization-diagnostic versus best-refinement roles; final sequences and
+ancestral structures remain pending.
