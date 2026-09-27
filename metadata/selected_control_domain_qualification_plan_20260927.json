@@ -1,0 +1,40 @@
+{
+  "inventory": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1",
+  "inventory_audit": "metadata/selected_control_domain_inventory_readback_20260927.json",
+  "inventory_audit_status": "passed_full_selected_control_domain_inventory_readback",
+  "qualification": "results/structural_comparisons/domain-coverage-geometry-20260927-v1",
+  "qualification_audit": "metadata/domain_coverage_geometry_readback_20260927.json",
+  "qualification_audit_status": "passed_full_domain_coverage_geometry_readback",
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "output": "results/structural_comparisons/selected-control-domain-qualification-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "104918 configurations, 150080 shared boundary-domain matches, 3777048 configuration/boundary/mask/screen rows. No outcome-based choice, predictions or charges.",
+  "pins": {
+    "scripts/qualify_selected_control_domains.py": "9164fdbadeaf2a787809ff6b9e760a472a8067919119687712add53d02ad9161",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/selected_control_domain_inventory_readback_20260927.json": "9f96f1eb74a72c187441db189463d3101a1d7dcc72c163712a9bd04e99ed8699",
+    "metadata/domain_coverage_geometry_readback_20260927.json": "0de58b8ea740b7c5c0944957e3ef3321ccbef430320f9743d3d245e478c49db1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/receipt.json": "6f1b912cbac6e637747752febc6ad08b2cc3d3de677283161ae1423b4f7f24db",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/domain_configurations.jsonl": "bb9b4f5463a4209b6054ec17cfa5636b0283008cce19e0469139512ac8a914f1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/receipt.json": "301a5177bf12536f0106f3685b8e5f1239fc74021c5f2c4b4d5a23e3d58e1e14",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/background.tsv": "e14a2c925633f860ba2533f90c6c5e325c5d26a821117c40725ea64337d4cb8c",
+    "results/structural_comparisons/domain-coverage-geometry-20260927-v1/target.tsv": "37e7358a900e9c6ce4864cf8ddcbce3b92917288417d81d85e18a559c5ce0c7e"
+  }
+}

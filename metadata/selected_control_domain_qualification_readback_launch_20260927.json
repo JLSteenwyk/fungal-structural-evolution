@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-selected-control-domain-qualification-readback-20260927.service",
+  "pid": 3066865,
+  "created": 1790517451.57,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_selected_control_domain_qualification.py",
+    "--plan",
+    "metadata/selected_control_domain_qualification_plan_20260927.json",
+    "--launch",
+    "metadata/selected_control_domain_qualification_launch_20260927.json",
+    "--output",
+    "metadata/selected_control_domain_qualification_readback_20260927.json"
+  ],
+  "script_sha256": "9198201ab2e4c78d7f928e89505a4b0d444fc0a2482cfb7457d2106bc021653c",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  }
+}
