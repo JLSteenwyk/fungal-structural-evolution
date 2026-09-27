@@ -1,0 +1,39 @@
+{
+  "producer": {
+    "status": "verified_live_full_reference_rmsd_diagnostic",
+    "unit": "fungal-reference-rmsd-diagnostic-20260927.service",
+    "pid": 2926185,
+    "created": 1790514338.56,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_reference_alignment_rmsds.py",
+      "--plan",
+      "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json"
+    ],
+    "plan_sha256": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04"
+  },
+  "diagnostic": "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1",
+  "diagnostic_plan": "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json",
+  "output": "results/structural_comparisons/duplication-reference-geometry-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.2,
+      8
+    ]
+  },
+  "scope": "All 125836 successful directed reference alignments; recompute coordinate rank and proper-rotation curvature. Strict RMSD failure and quarantine retained. No predictions or charges.",
+  "pins": {
+    "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json": "96f88fc3bbeeb08e663a55b8221ddc237fa55156db31d90be1e946fd6db71ef3",
+    "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04",
+    "metadata/duplication_reference_alignment_plan_20260926.json": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+    "scripts/assess_reference_alignment_geometry.py": "179748e994c21a2d7cefc141252e6edac4ab184fd96900ce3f46dd97b044d0b5",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/duplication_alignment_numeric_diagnostic.py": "eef5e96762c2870031f247b6d01d7389aa2bd6a7de059e4af45a6bc4c0426515",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "producer": {
+    "status": "verified_live_reference_geometry_handoff",
+    "unit": "fungal-reference-geometry-20260927.service",
+    "pid": 2934070,
+    "created": 1790514466.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/assess_reference_alignment_geometry.py",
+      "--plan",
+      "metadata/duplication_reference_geometry_plan_20260927.json"
+    ],
+    "plan_sha256": "0f3f30094539badd4af0413548b40cf51b269abf2ff94ba552aff5015b32f6e0"
+  },
+  "source_plan": "metadata/duplication_reference_geometry_plan_20260927.json",
+  "output": "results/structural_comparisons/duplication-reference-geometry-readback-20260927-v1.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.2,
+      8
+    ]
+  },
+  "pins": {
+    "metadata/duplication_reference_geometry_plan_20260927.json": "0f3f30094539badd4af0413548b40cf51b269abf2ff94ba552aff5015b32f6e0",
+    "metadata/duplication_reference_geometry_launch_20260927.json": "ee11550874f59aabf892be8f23af88258f752532c9a4e7c9848978bbaa5bbb72",
+    "scripts/readback_reference_alignment_geometry.py": "a86fa55f5f367073a935f3acaea055a6e54e89d086796ac0f7b93da5c490ccd7",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}

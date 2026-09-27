@@ -7439,3 +7439,16 @@ The one-CPU/16-GiB/no-swap diagnostic process is verified live. Full enumeration
 independent follow-up and downstream exclusion decisions remain pending; the
 existing reference order-summary stage cannot proceed through its strict gate.
 All eight aims remain open, and GPU prediction remains paused.
+
+## September 27 complete reference geometry and independent checks queued
+
+The preceding turn localized a strict reference RMSD failure and launched the
+full diagnostic (progress). Revalidated that producer and observed 90,000 of
+130,164 dispositions checked. Added full geometry assessment for all 125,836
+successful mappings, followed by separate quaternion/gesvd verification. Both
+new one-CPU/16-GiB/no-swap waiting processes are verified live, with exact
+producer identities and pinned scripts/plans. Original failed strict results
+and tolerance remain unchanged; no partial or diagnostically flagged batch is
+accepted scientifically. See `docs/duplication-reference-geometry-20260927.md`.
+Full geometry and independent results remain pending. All eight aims remain
+open; GPU prediction remains paused.
