@@ -9178,3 +9178,20 @@ extremes. This validates likelihood arithmetic at those parameters, not
 optimization. Stable-objective refits and subsequent posterior propagation
 remain required. Scripts: `stable_indel_likelihood.py` and
 `validate_stable_indel_likelihood.py`; no pinned running script was changed.
+
+### 2026-09-27: all stable-objective indel refinements launched
+
+Launched all312 input dispositions,306 nonempty models and918 prior solutions
+with the validated direct-event denominator. Each start is re-evaluated,
+refined with bounded Powell, then polished using three-point L-BFGS-B. The
+initial, Powell and polished candidates are all retained; selection cannot
+silently replace a better initial likelihood with a worse optimizer return.
+Both ascertainment policies, all terminal treatments and empty cases remain.
+
+Unchanged parameter bounds and feasible coordinate perturbations at two
+step sizes are recorded, alongside signed improvements and optimizer flags.
+These diagnostics do not establish global convergence. Input/receipt hashes
+bind this run to the completed initial fits and numerical validation. Two
+CPUs,8GiB RAM,noGPU; planning estimate1–96h and3GiB output. Producer PID,
+creation time and command recorded. Independent refined-fit validation,
+boundary sensitivity and ancestral probability propagation remain pending.

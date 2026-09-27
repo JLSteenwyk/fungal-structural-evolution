@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-stable-indel-refinements-20260927.service",
+  "state": {
+    "MainPID": "563344",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 563344,
+  "created": 1790550866.9,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/refine_stable_indel_models.py"
+  ],
+  "plan_sha256": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      1,
+      96
+    ],
+    "paid_cost": 0
+  }
+}
