@@ -59,3 +59,41 @@ This verifies transcription and linkage, not the truth of ecological labels.
 Previously computed parsimony and coverage results retain their frozen 32-taxon
 inputs. Extending those diagnostics and reviewing independent transitions are
 next steps; no new ecological association result is claimed.
+
+## Primary wood-decay evidence added
+
+[Figure 1 of Riley et al. (2014)](https://doi.org/10.1073/pnas.1400592111)
+was visually reviewed and transcribed as a separate trait table: 12 white-rot,
+seven brown-rot and three uncertain classifications. Seven source names match
+selected ingroup names exactly: four white-rot, one brown-rot and two uncertain.
+All 15 unmatched names remain visible; no synonym transfer was inferred.
+In particular, Jaapia argillacea and Botryobasidium botryosum retain the figure's
+uncertain decay-mode category. The study cautions against a simple decay-mode
+dichotomy. These states are not binary ECM assignments or validated origins.
+
+The reviewed source PDF is stored outside Git at
+`data/traits/riley2014-primary.pdf`, with its URL/hash and 22 source statements in
+`config/wood_decay_primary_species_20260927.json`. Reproduce the exact-name join
+with `scripts/import_primary_wood_decay_species.py` using fresh output paths.
+Every exported identity and accession was checked against a separate scalar
+manifest lookup. Outputs are `metadata/wood_decay_primary_species_20260927.tsv`
+and its adjacent receipt. An initial import used the wrong manifest field name;
+it was corrected to `study_role` before any table was written.
+
+### Punctularia source discrepancy
+
+An independent [primary culture study](https://doi.org/10.1371/journal.pone.0130381)
+also describes Punctularia strigosozonata as white rot and identifies strain
+HHB-11173 SS-5. Deposited assembly metadata use HHB-11173 SS5; these strain
+strings agree after punctuation normalization, but complete experimental-isolate
+provenance is not established. The primary classification is now recorded
+alongside the earlier supplementary pathogen label. These roles are not assumed
+mutually exclusive, so the new evidence does not justify declaring the earlier
+label erroneous. Neither source changes the frozen ecological reconstructions.
+
+The publisher HTML snapshot is stored outside Git, with source location, hash,
+strain fields and review decision in
+`metadata/punctularia_primary_ecology_review_20260927.json`. This replaces the
+previous reliance on a search-result-only lead with directly inspected primary
+literature. It does not establish absence of pathogenicity or validate a binary
+trait coding for ecological effect tests.
