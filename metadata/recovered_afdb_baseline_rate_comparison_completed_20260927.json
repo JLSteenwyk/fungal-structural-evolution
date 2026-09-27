@@ -1,0 +1,56 @@
+{
+  "status": "passed_baseline_rate_comparison_and_full_readback",
+  "plan_sha256": "081e82f6b1e6478d6b54217eae7d730e1a7da4647897de616e57e35981c893ef",
+  "producer_receipt_sha256": "8fc2984bf22b38c2c460732826dc83c117883a634afdceceb6fc1758e8a43102",
+  "readback_receipt_sha256": "83b25bd94315d9e49c1d6c79a40eaea98ecf38e7f7c9a99f9ed7c2f739552bca",
+  "readback": {
+    "status": "passed_full_rate_comparison_readback",
+    "fits": 500,
+    "sites": 190116,
+    "branches": 247572,
+    "optimized_fits_selected": 0,
+    "comparison_receipt_sha256": "8fc2984bf22b38c2c460732826dc83c117883a634afdceceb6fc1758e8a43102",
+    "script_sha256": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+    "scope": "All raw rate values, tree edges, likelihoods, grid identities and summary statistics recomputed. When optimization is present, all four raw diagnostic likelihoods determine selection independently. Tree parsing uses Bio.Phylo with separate postorder edge collection; Spearman uses scipy.stats.spearmanr. No independent likelihood optimization, model adequacy or biological inference."
+  },
+  "summary_by_fit": {
+    "3di_af": {
+      "fits": 125,
+      "freerate_ll_lower_by_more_than_point_one": 0,
+      "median_site_spearman": 0.9899551081401985,
+      "minimum_ll_delta": 4.572999999996682
+    },
+    "3di_af_empirical": {
+      "fits": 125,
+      "freerate_ll_lower_by_more_than_point_one": 2,
+      "median_site_spearman": 0.9923626587094603,
+      "minimum_ll_delta": -12.299200000001292
+    },
+    "3di_llm": {
+      "fits": 125,
+      "freerate_ll_lower_by_more_than_point_one": 0,
+      "median_site_spearman": 0.9916644306962628,
+      "minimum_ll_delta": 8.210399999999936
+    },
+    "aa": {
+      "fits": 125,
+      "freerate_ll_lower_by_more_than_point_one": 3,
+      "median_site_spearman": 0.997361403091483,
+      "minimum_ll_delta": -37.52799999999843
+    }
+  },
+  "warning_record_counts": {
+    "gamma": {
+      "near_zero_internal_branches": 492,
+      "rare_states": 207,
+      "gaps_ambiguity": 272,
+      "long_branches": 1
+    },
+    "freerate": {
+      "near_zero_internal_branches": 492,
+      "rare_states": 207,
+      "gaps_ambiguity": 272
+    }
+  },
+  "limits": "Baseline original fits only. Warnings are not independent observations; multiple warning types can occur in a fit. Rank agreement is descriptive, not biological model adequacy. All-fit optimization sensitivity is now running."
+}

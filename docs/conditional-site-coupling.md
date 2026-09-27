@@ -594,3 +594,45 @@ The existing native numerical audits remain the evidence for likelihood/model
 checks; posterior rates were not independently reestimated. Each model retains
 warnings in 495/500 fits. Optimization sensitivity and model comparison must be
 reviewed before interpreting the downstream exposure/coupling analyses.
+
+
+### Recovered AlphaFold baseline sensitivity and optimization (September 27)
+
+The matched original Gamma4/FreeRate4 comparison is complete: 500 fits,
+190,116 site comparisons and 247,572 branch comparisons. Independent readback
+recomputed every native rate, tree edge, likelihood and summary statistic.
+Median within-fit site-rate rank correlations are 0.99736 (AA), 0.98996
+(3Di AF), 0.99236 (3Di AF empirical frequencies) and 0.99166 (3Di LLM).
+These summarize conditional ranking sensitivity, not model adequacy.
+
+Five original FreeRate fits have likelihood more than 0.1 below Gamma: three
+AA and two AF empirical-frequency fits. The largest deficits are 37.528 and
+12.2992 log units, respectively. The warning inventories contain 492 near-zero
+internal-branch warnings, 207 rare-state warnings and 272 gap/ambiguity warnings
+per model; Gamma also has one long-branch warning. These are warning records,
+with overlapping fit membership, not independent observations or automatic
+reasons to discard a family.
+
+Full-cohort optimization sensitivity is now running, using the same four refits
+for all 500 fits (2,000 native fits): Gamma and FreeRate starting parameters,
+each optimized by EM and 2-BFGS. The subsequent audit checks every native fit;
+the comparison retains the original or diagnostic FreeRate estimate with the
+highest observed likelihood, followed by independent full comparison readback.
+This does not guarantee global optimality or solve prediction/phylogenetic bias.
+
+The resource allowance is four single-thread workers, 16 GiB RAM, no swap,
+32 GiB output, with 32 GiB available-memory and 100 GiB free-disk gates. The
+1–168 hour planning range is uncalibrated, not an ETA. GPU prediction remains
+paused. Inputs and scripts are pinned in
+`metadata/recovered_afdb_rate_optimization_plan_20260927.json`; process identity
+and resource limits are recorded in
+`metadata/recovered_afdb_rate_optimization_launch_20260927.json`.
+
+Baseline reproduction commands and resource estimates are in
+`metadata/recovered_afdb_baseline_rate_comparison_plan_20260927.json`; verified
+results are in
+`metadata/recovered_afdb_baseline_rate_comparison_completed_20260927.json`.
+The new controller is `scripts/advance_recovered_rate_optimization.py --config
+metadata/recovered_afdb_rate_optimization_plan_20260927.json`. It uses exclusive
+stage outputs and verified checkpoints. Exposure integration and coupling remain
+separate downstream stages.

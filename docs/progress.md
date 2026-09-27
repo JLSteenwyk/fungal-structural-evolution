@@ -6000,3 +6000,22 @@ in 495 fits; output validity does not establish optimization or model adequacy.
 See [completion evidence](../metadata/recovered_afdb_site_rates_completed_20260927.json).
 Model comparison, exposure integration and controlled coupling remain downstream.
 GPU prediction remains paused; this checkpoint did not change running jobs.
+
+
+## September 27 recovered AlphaFold model sensitivity verified; refits launched
+
+Completed and independently checked the baseline Gamma4/FreeRate4 comparison
+for all 500 fits, 190,116 site values and 247,572 branch values. Five FreeRate
+fits have lower likelihood than Gamma by more than 0.1; warning categories and
+rank-sensitivity summaries are recorded in the
+[methods update](conditional-site-coupling.md). These are diagnostics, not
+biological conclusions or a completed coupling analysis.
+
+Launched all 2,000 optimization diagnostics under
+`fungal-recovered-afdb-rate-optimization-20260927.service` (four CPU workers,
+16 GiB, no swap). The pinned controller runs full native-output auditing,
+selected-fit comparison and independent readback after optimization completes.
+The launch record confirms PID, creation time, command and resource limits.
+All GPU prediction remains paused. The prior goal turn made progress by
+committing the sampling analysis and verified rate-export checkpoint; this turn
+adds the complete baseline sensitivity result and executing downstream work.

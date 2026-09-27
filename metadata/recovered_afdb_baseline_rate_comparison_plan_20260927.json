@@ -1,0 +1,51 @@
+{
+  "scope": "All 500 original matched Gamma4/FreeRate4 fits; baseline diagnostics before optimization refits. No biological model selection.",
+  "commands": [
+    [
+      "scripts/compare_site_rate_heterogeneity.py",
+      "--gamma",
+      "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1",
+      "--gamma-audit",
+      "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1",
+      "--free",
+      "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1",
+      "--free-audit",
+      "results/phylogeny/site-rate-audit-afdb-recovered-freerate-20260926-v1",
+      "--inputs",
+      "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+      "--output",
+      "results/phylogeny/rate-comparison-afdb-recovered-baseline-20260927-v1"
+    ],
+    [
+      "scripts/readback_rate_heterogeneity.py",
+      "--comparison",
+      "results/phylogeny/rate-comparison-afdb-recovered-baseline-20260927-v1",
+      "--gamma",
+      "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1",
+      "--free",
+      "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1",
+      "--output",
+      "results/phylogeny/rate-comparison-readback-afdb-recovered-baseline-20260927-v1"
+    ]
+  ],
+  "pins": {
+    "scripts/compare_site_rate_heterogeneity.py": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+    "scripts/readback_rate_heterogeneity.py": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+    "metadata/recovered_afdb_site_rates_completed_20260927.json": "c61f783bd96fa22ccdfb0ac366c7fa9b782d11c3d4fe6078b90c5a143c16ce45",
+    "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1/receipt.json": "1fdc5301166f3cd47bb9cdd0e0b0dc8db88098ed4bc8e8bcee8e90f547fd85ef",
+    "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1/receipt.json": "e9a8e9993293a2c825159826753acb0d9e5b2bce781116057455b0b5a09daba3",
+    "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1/receipt.json": "36bbd91e20493fbb4cb881e75a2db01873f9f5c2c441616cfb8ccd916078f91f",
+    "results/phylogeny/site-rate-audit-afdb-recovered-freerate-20260926-v1/receipt.json": "652977e8e7f9d0392556c2a373282f50c5a67a251e49cc70fa4b62ef693c9fe0",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "Existing tables and 1000 native tree/rate files only; no native fits, GPUs or paid resources."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-recovered-afdb-rate-optimization-20260927.service",
+  "pid": 3325184,
+  "create_time": 1790495150.75,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_recovered_rate_optimization.py",
+    "--config",
+    "metadata/recovered_afdb_rate_optimization_plan_20260927.json"
+  ],
+  "plan_sha256": "c55d906759d21e247111bc337e0237a2ad17e5bf4f6eea7e4341c465e61e82df",
+  "controller_sha256": "23160504a2965438d3dd13b2c34a67d0a2942a4e257ac73fedb4a597c7984a56",
+  "state_at_record": "sleeping",
+  "systemd_properties": [
+    "CPUQuotaPerSecUSec=4s",
+    "MemoryMax=17179869184",
+    "MemorySwapMax=0",
+    "Nice=10"
+  ]
+}
