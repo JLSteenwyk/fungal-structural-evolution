@@ -7793,3 +7793,17 @@ criteria remain unchanged. Full-grid analytic assessment and residual case
 review are required before any status revision or inference.
 [Diagnostic evidence](working-model-gradient-diagnostic-20260927.md).
 Full production fitting continues. All eight aims remain open. GPU paused.
+
+## September 27 complete analytic stationarity assessment queued
+
+The preceding turn diagnosed every fit in the frozen 320-fit prefix using
+independently validated analytic derivatives (progress). Queued a separate
+assessment of all 144,040 production dispositions behind successful completion
+of the full output-integrity audit. It reconstructs and rechecks every input,
+compares saved and analytic objectives, and applies the unchanged gradient
+threshold and boundary rules. Original errors, analytic unresolved cases and
+other optimizer failures remain explicit; original statuses are never edited.
+[Full-grid assessment specification](full-working-model-analytic-stationarity-20260927.md).
+The waiting process identity is verified and recorded. One CPU, 16 GiB memory,
+no swap; planning allowance 2–48 hours after the audit. Full production fitting
+continues. All eight aims remain open. GPU prediction remains paused.
