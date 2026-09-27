@@ -1,5 +1,19 @@
 # Progress and evidence
 
+## September 27 recovered-marker accessibility completed
+
+The recovered AlphaFold collection now has audited accessibility for 30,618
+models (15,960,692 residues), with 9,453,757 observations projected and normalized
+across 125 markers. Site summaries and independent checks cover all 47,529 sites,
+95,058 AA/3Di parsimony scores and 285,174 exposure quantiles. All three controller
+services exited successfully; nine stages and 74 pinned/source/artifact files
+passed the completion provenance check. See
+[results, limitations and reproduction](recovered-afdb-accessibility-20260927.md#september-27-completion-evidence).
+Rate/exposure integration remains gated on rate optimization and its audit.
+This completes an input/diagnostic milestone, not the core/surface evolutionary
+aim or the full project. GPU structure prediction remains paused.
+
+
 ## September 26 checkpoint
 
 The [September 26 completion record](recovery-20260926.md) supersedes older

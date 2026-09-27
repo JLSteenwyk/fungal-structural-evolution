@@ -20,7 +20,7 @@ contains the new-model provenance manifest, complete disposition ledger and
 hash-bound receipt. It is an accessibility input subset, not a paired marker map.
 See [inventory verification](../metadata/recovered_afdb_accessibility_inventory_completed_20260927.json).
 
-## Execution and remaining integration
+## Calculation and audit (completed)
 
 New calculations use the existing `annotate_predicted_accessibility.py` with
 960 sphere points per atom and a 1.4 Å probe, matching the previous cohort.
@@ -40,24 +40,24 @@ neither is a guaranteed ETA. GPU prediction remains paused.
 Launch identity and enforced resource limits are recorded in
 `metadata/recovered_afdb_accessibility_launch_20260927.json`. New ASA output is
 `results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1`,
-with an adjacent `-audit` directory after completion. Running calculations are
-not completed exposure measurements. The audit verifies source identity,
+with an adjacent `-audit` directory. Both the calculation and raw-source audit
+completed successfully on September 27. The audit verifies source identity,
 residue/atom accounting, confidence and totals; it does not independently
 recompute the geometric ASA algorithm.
 
-After completion, the reusable and new outputs still need an exact full-cohort
-union, projection to the recovered paired masks, normalization, and independent
-readback. The exposure/tree integration must resolve each marker through the
-recovered fit collection's source inventory. Older 124-marker exposure tables
+The reusable and new outputs now have an exact full-cohort union, projection
+to the recovered paired masks, normalization, and independent readback.
+Exposure/tree integration resolves each marker through the recovered fit
+collection's source inventory. Older 124-marker exposure tables
 cannot substitute for the current 125-marker collection. Core/surface coupling
 and functional interpretations remain downstream; extant accessibility is not
 an ancestral estimate, pocket annotation or experimentally established function.
 
-## Automatic integration queued
+## Completed projection and normalization
 
-A separate pinned controller now waits on the calculation/audit controller's
-PID, creation time and exact command. It proceeds only after the completed
-producer and full raw-source audit receipts pass. It will:
+The separate pinned controller waited on the calculation/audit controller's
+PID, creation time and exact command and completed these stages after the
+producer and full raw-source audit receipts passed:
 
 1. Merge exactly 30,618 selected models (15,960,692 residues), using unchanged
    source entries through relative symlinks and explicitly excluding the 26
@@ -77,7 +77,7 @@ selection and rejected missing/duplicate cohorts, undeclared exclusions, altered
 residue tables, changed source identifiers/sequences and incomplete audits.
 These fixtures test provenance and file handling, not ASA geometry.
 
-The queued plan is
+The completed plan is
 `metadata/recovered_afdb_accessibility_projection_plan_20260927.json`; the cohort
 manifest, fixture receipt and process launch record are adjacent. The controller
 uses one CPU, 48 GiB RAM, no swap and an 8 GiB output allowance, with 64 GiB
@@ -85,16 +85,16 @@ available-memory and 100 GiB free-disk gates. The 0.5–24 hour downstream plann
 range is broad and does not include waiting for accessibility calculations.
 The allowance accounts for the 11,202,520-row source mapping retained in memory.
 
-The union, paired projection and normalized tables will use the
+The union, paired projection and normalized tables use the
 `accessibility-union-afdb-recovered-20260927-v1`,
 `paired-accessibility-afdb-recovered-20260927-v1`, and
 `normalized-accessibility-afdb-recovered-20260927-v1` directories under
 `results/structural_annotations/`. Full readbacks are written beneath
 `results/recovery-20260927/afdb-accessibility-projection/`.
-These are queued outputs, not completed results. No tree/exposure integration or
-sequence–structure coupling completion is implied by the integration launch.
+All five integration stages and their declared artifacts passed the completion
+provenance check. Sequence–structure coupling remains downstream.
 
-## Verified gene-tree sources and queued site summaries
+## Verified gene-tree sources and completed site summaries
 
 The recovered collection combines 95 unchanged native marker fits with 30
 refitted marker fits. `prepare_collection_topologies.py` resolved all 125 through
@@ -113,11 +113,11 @@ Reproduce with `scripts/prepare_collection_topologies.py` and arguments:
 - `--inventory metadata/recovered_afdb_fit_source_inventory_20260926.json`
 - `--output results/phylogeny/collection-topologies-afdb-recovered-20260927-v1`
 
-A separate controller now waits for accessibility projection, normalization and
-both readbacks. It will apply the established minimum-change recurrence to AA
-and 3Di states on each verified topology and summarize extant accessibility
-quantiles. The independent set-based recurrence will check all 95,058 character
-scores; a separate quantile implementation will check all 285,174 exposure
+A separate controller completed after accessibility projection, normalization
+and both readbacks. It applied the established minimum-change recurrence to AA
+and 3Di states on each verified topology and summarized extant accessibility
+quantiles. The independent set-based recurrence checked all 95,058 character
+scores; a separate quantile implementation checked all 285,174 exposure
 quantiles, including unavailable values. All observed identities, states and
 model counts are checked as well.
 
@@ -126,11 +126,49 @@ Scripts `summarize_collection_site_exposure.py` and
 the numerical algorithms match the existing single-run implementations. The
 plan `metadata/recovered_afdb_site_exposure_plan_20260927.json` pins scripts,
 inputs and the completed topology readback. The launch record identifies the
-live waiting controller. Resources are one CPU, 48 GiB RAM, no swap and 2 GiB
+successfully completed controller. Resources are one CPU, 48 GiB RAM, no swap and 2 GiB
 output, with 64 GiB available-memory and 100 GiB disk gates; the 0.25–12 hour
 planning allowance excludes predecessor wait time.
 
-These summaries remain pending. Parsimony counts are alphabet-dependent minimum
+These summaries and their full independent readback are complete. Parsimony
+counts are alphabet-dependent minimum
 changes, not rates or branch assignments. Exposure quantiles summarize extant
 observations, not ancestral exposure or a phylogenetically adjusted effect.
 The subsequent rate/exposure join and controlled coupling inference remain open.
+
+## September 27 completion evidence
+
+The calculation, projection/normalization and site-summary services are all
+terminal with exit status zero. The completion verifier checked nine stages,
+74 unique pinned/source/artifact files, all declared stage counts, and the
+controller prerequisite hashes. Evidence is
+[the completion record](../metadata/recovered_afdb_accessibility_completed_20260927.json).
+Recheck from the repository root with a fresh output path:
+
+```bash
+python scripts/verify_recovered_accessibility_completion.py --output /tmp/recovered-accessibility-completion.json
+```
+
+The union has **30,618 models and 15,960,692 residues**. The paired projection
+actually uses **30,342 models**, supplying **9,453,757 observations** across
+**125 markers and 47,529 alignment sites**. The difference in model counts
+reflects the paired projection, not additional failed accessibility calculations.
+Every projected row passed raw-source readback; every normalized row passed
+value and summary readback. There were no terminal-residue normalization exclusions.
+
+Normalization retains values above one without clipping. The theoretical Tien
+scale produces three such observations; the Miller scale produces 27,402.
+At a relative-accessibility threshold of 0.25, 5,226,483 observations fall below
+threshold using Tien and 4,827,457 using Miller; **399,026 observations (4.22%)**
+change classification between reference scales. These are repeated taxon/site
+observations, not independent evolutionary replicates or biological truth labels.
+The downstream analysis should retain both normalization scales and continuous
+accessibility, alongside confidence and domain-orientation sensitivities.
+
+This verifies source accounting and numerical readbacks, not an independent
+recalculation of the ASA geometry or equivalence to DSSP. Isolated predicted
+chains omit partners; predicted domain placement can change accessibility.
+Extant accessibility does not establish ancestral burial, interfaces or pockets.
+The rate/exposure frame controller remains gated on the full rate optimization
+and its audit; no acceleration, coupling significance or selection claim follows
+from this milestone.

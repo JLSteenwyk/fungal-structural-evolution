@@ -1,0 +1,178 @@
+{
+  "status": "passed_recovered_accessibility_completion_provenance_check",
+  "checked_at": "2026-09-27T15:53:45.517111+00:00",
+  "script_sha256": "2608f07fac321cabcf3e82f43a9c84c512200e287d151c3c8dccf32c5b464bc8",
+  "terminal_units": {
+    "fungal-recovered-afdb-accessibility-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-recovered-afdb-accessibility-projection-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-recovered-afdb-site-exposure-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    }
+  },
+  "stages": [
+    {
+      "receipt": "results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1/receipt.json",
+      "status": "complete_snapshot_predicted_accessibility",
+      "expected_counts_verified": {
+        "models": 17491,
+        "residues": 9061916
+      }
+    },
+    {
+      "receipt": "results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1-audit/receipt.json",
+      "status": "passed_full_accessibility_snapshot",
+      "expected_counts_verified": {
+        "models_audited": 17491,
+        "residues_audited": 9061916
+      }
+    },
+    {
+      "receipt": "results/structural_annotations/accessibility-union-afdb-recovered-20260927-v1/receipt.json",
+      "status": "complete_disjoint_audited_accessibility_union",
+      "expected_counts_verified": {
+        "models": 30618,
+        "residues": 15960692
+      }
+    },
+    {
+      "receipt": "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1/receipt.json",
+      "status": "complete_audited_accessibility_projection",
+      "expected_counts_verified": {
+        "markers": 125,
+        "observed_sites_linked": 9453757
+      }
+    },
+    {
+      "receipt": "results/recovery-20260927/afdb-accessibility-projection/projection-readback/receipt.json",
+      "status": "passed_full_raw_accessibility_projection_readback",
+      "expected_counts_verified": {
+        "markers": 125,
+        "rows": 9453757
+      }
+    },
+    {
+      "receipt": "results/structural_annotations/normalized-accessibility-afdb-recovered-20260927-v1/receipt.json",
+      "status": "complete_reference_normalization",
+      "expected_counts_verified": {
+        "rows": 9453757
+      }
+    },
+    {
+      "receipt": "results/recovery-20260927/afdb-accessibility-projection/normalization-readback/receipt.json",
+      "status": "passed_full_accessibility_normalization_readback",
+      "expected_counts_verified": {
+        "rows": 9453757
+      }
+    },
+    {
+      "receipt": "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1/receipt.json",
+      "status": "complete_site_parsimony_exposure_diagnostic",
+      "expected_counts_verified": {
+        "markers": 125,
+        "sites": 47529,
+        "taxon_site_observations": 9453757
+      }
+    },
+    {
+      "receipt": "results/recovery-20260927/afdb-site-exposure/readback/receipt.json",
+      "status": "passed_full_site_parsimony_exposure_readback",
+      "expected_counts_verified": {
+        "markers": 125,
+        "sites": 47529,
+        "taxon_site_observations": 9453757,
+        "independent_character_scores": 95058,
+        "exposure_quantiles_checked": 285174
+      }
+    }
+  ],
+  "checked_sha256": {
+    "metadata/recovered_afdb_accessibility_plan_20260927.json": "ab37fa3a64d5f34995e19c899fa91d3e17d321ca745f691e11eef5f2b8490254",
+    "metadata/recovered_afdb_accessibility_launch_20260927.json": "d6785ef8b1e25cbfea761e449050f38314a055d484e853b2cbb684bef8a555f3",
+    "scripts/advance_recovered_accessibility.py": "0f8582dab68f9d836fc931c48bc1aa093b3083d6f3bf87bf1d0d4fecac1ca1d9",
+    "scripts/annotate_predicted_accessibility.py": "5711ac5e670760fab8d0630aff60f7003cd41216b0df3098b82f18eee53d3ecb",
+    "scripts/audit_predicted_accessibility.py": "c6853f1db318bef16bb4756ce0254fbc0a53dfe44d0da3aad5116af70365a825",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/structural_annotations/accessibility-gap-afdb-recovered-20260927-v1/receipt.json": "84e40bd6992170ebdd63189c68c90633314937e7f14f5708e869d811b619fa2d",
+    "results/structural_annotations/accessibility-gap-afdb-recovered-20260927-v1/model_provenance.json": "47687c7617ab6647d0c477c83450d537e74e1b986848c6001646ebca7a0b54a6",
+    "metadata/recovered_afdb_accessibility_inventory_completed_20260927.json": "358ccd3816ea18aebfb84b9731b8ac302c564e882b1cf148dfa010d2915a5203",
+    "results/recovery-20260927/afdb-accessibility/receipt.json": "de2812fcf0f73f3a1f318bffa22e48a5e5b9c098387b4c9a5882ab6485ee493f",
+    "results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1/receipt.json": "20f1aef51f14d196ea39e38d3e70e857ff44dc7932beabb2e2b8c67a3b264de8",
+    "results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1-audit/receipt.json": "35a41b74934c7909b1d9b0fd82762abd3537c82b622930136f2d5aa6e109e0de",
+    "results/structural_annotations/accessibility-afdb-recovered-gap-20260927-v1-audit/audited_models.tsv": "27e18124ab75d72b4f0b48c7a863f1668ad34ecf8b111ba6fecfddea90b9db85",
+    "metadata/recovered_afdb_accessibility_projection_plan_20260927.json": "3a07eb8f9b738a93b2fd7ff64038989023bae369d79af52a79ad41d0b11bc99f",
+    "metadata/recovered_afdb_accessibility_projection_launch_20260927.json": "fc6a71543cc8f749e9e4fdcf23d02a481340e57fd3011c497471c5ec86a8fc92",
+    "scripts/advance_recovered_accessibility_projection.py": "ac47584f693f2354448436f4d6bf3d9331b62ec111d3f2e07546d29321965318",
+    "metadata/recovered_afdb_accessibility_merge_manifest_20260927.json": "04a8479e49f0eefd239a8a4115c84d77a167fc819ddef048e3700d05e91a2980",
+    "scripts/check_recovered_accessibility_merge.py": "d720ed0e6ce80e2294c9344f2b77fe55f9796b93c3c7f11f8ef102b0f9ba7bd6",
+    "metadata/recovered_afdb_accessibility_merge_fixture_checks_20260927.json": "322701bf2c067a101ad7f52973dfc4030b5b684e4f7b619aec28972571782d5c",
+    "config/accessibility_normalization.json": "15730c285a8f5c5641e2e6a992b384cbf8d7ed619d46b9c4ac3b3dfd2f07983f",
+    "scripts/merge_recovered_accessibility.py": "ce2ea6c889915db00b80e43966d9d2a2be5a77cad162fc95b07cc6cd1d8fe9f5",
+    "scripts/link_paired_sites_accessibility.py": "3f049f42de1a3833ec6e511e995a147534cc466c79330c59efc85fc6231845d6",
+    "scripts/readback_paired_accessibility_projection.py": "108d5a72f9e5deedd79a0ea07361aca8869dcc3941bb84bb4f90b2a8a05af9a8",
+    "scripts/normalize_paired_accessibility.py": "1c353d678507ec72d9cea5b158461d85a98d20ee7c547c6637914bd7a0efe1cf",
+    "scripts/readback_accessibility_normalization.py": "835176ea7dbba69cc20f17038350bc46da37ec6016743c756bce29618fdda37b",
+    "data/literature/tien-2013/article.xml": "150ed9c7defe2ed3990e16ffaf633078131f2a90dd56e6a48d99a0d62ea066f8",
+    "scripts/advance_accessibility_projection.py": "5c167d4baa753698ecf2f02d5b639c3d4527c9502dbef96db4660852cfbb2a26",
+    "scripts/advance_prediction_snapshot.py": "00b08a1213c9deff64e48ebd696742942862b6fe8267362ae24c1c85118600c5",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/receipt.json": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+    "results/structural_markers/gdm-expanded-v1/receipt.json": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "results/structural_annotations/accessibility-gdm-v1/receipt.json": "e73eb7c7fcf4eb8f552e7113a2ca98becc8bc43f2230dddf5147980e618af32e",
+    "results/structural_annotations/accessibility-gdm-full-audit-v1/receipt.json": "6b8757498ce20f1ae4640f9769a206ab038d0d00b0c2a07ad5ebd4102688e4b7",
+    "results/recovery-20260927/afdb-accessibility-projection/receipt.json": "592adef963060038c92b08261119fe6b274d9f2ddd6a6311d9ba0b9bc4fc4228",
+    "results/structural_annotations/accessibility-union-afdb-recovered-20260927-v1/receipt.json": "1d7934bb5605785f0c1113c003f85e0d6c4b18d184f313cfe9f404436b33eb52",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1/receipt.json": "373437be9965550831df96a9d3310f5a0e25ce6e99f3fe886bc73e0348946986",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1/marker_summary.tsv": "e95e3a6c85e0fd8f01867fe053f65ec219dac62c3f3e8d7be4933ea73cacfb05",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1/paired_site_accessibility.tsv.gz": "f37491f6d51452422429242365b1d24ec705b357f81327d0404dd1400930b461",
+    "results/recovery-20260927/afdb-accessibility-projection/projection-readback/receipt.json": "a107bffbc6007485b0e14bfe26f1895a61804aaa5a92ab0d33217e0764da5d94",
+    "results/structural_annotations/normalized-accessibility-afdb-recovered-20260927-v1/receipt.json": "5bd0a464dca07d7988b8d685f0e513b33af5d44f606fe29e541fc942734ee937",
+    "results/structural_annotations/normalized-accessibility-afdb-recovered-20260927-v1/threshold_sensitivity.tsv": "16ccae75b03ceac79643858edb21a8183533ccc90bb17f21b924edc0f3edbdc6",
+    "results/structural_annotations/normalized-accessibility-afdb-recovered-20260927-v1/normalized_paired_sites.tsv.gz": "d34cce163ebe0f55b0589e5976fa9f6a858463b981451d90818a1d9e4b5ab10e",
+    "results/structural_annotations/normalized-accessibility-afdb-recovered-20260927-v1/scale_summary.tsv": "1e0f9901aa1bf87fd78100465e8e81b3c089a98bed431a736d7c221fa58efdf5",
+    "results/recovery-20260927/afdb-accessibility-projection/normalization-readback/receipt.json": "42f70c8b009edc9973a8b9db1e02f6e3232ae1d60a3c228453074f2a2741c172",
+    "metadata/recovered_afdb_site_exposure_plan_20260927.json": "ccfa70a7fe70ea2b1bf7459e95ecd5d5a0124059e34fdad6bbfde5c2cd95ad45",
+    "metadata/recovered_afdb_site_exposure_launch_20260927.json": "507c2c4a644c6fe0c54044008ddb36b0f767ac474707141d6d196a1dcc097d8d",
+    "scripts/advance_collection_site_exposure.py": "8b0f309e7bb7f263d7b63e793016ab1c84c68767481033e9ad6ac0ce72624883",
+    "scripts/summarize_collection_site_exposure.py": "a5e618606a50495577b9f36b7cb27232e1185aeeae2ab992b6b4c6ae3f36fc35",
+    "scripts/readback_collection_site_exposure.py": "f81915382f1e3912490fed5f6cae1525a420aa986571f635b9bfb83f4c26e7bf",
+    "scripts/prepare_collection_topologies.py": "b95da40b96ba92ff5d4c764ed89fee98e7b91067667f24b353e06f32f1ab4f0c",
+    "config/marker_orthology_review.json": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+    "metadata/recovered_afdb_collection_topologies_completed_20260927.json": "cf922b4ffb72859c3157ae2c7e52b38ffc3ba724ea71ccee62b9379891a53518",
+    "results/phylogeny/collection-topologies-afdb-recovered-20260927-v1/receipt.json": "41fe2ae39dd9b7c9787ebdcc4372b7158bda686b82f4937eab8827a9784ae8f1",
+    "results/phylogeny/collection-topologies-afdb-recovered-20260927-v1/tree_sources.json": "aebc89ae487131c649a3e7beb8dfa9c059d80ff8291b616c854cfaaf5a0513a1",
+    "scripts/advance_complete_paired_fits.py": "78e0226fbddfe60a06f5088bc9f875cf86e4a182fcb25940a3a148d62aab0d70",
+    "scripts/advance_completed_site_exposure.py": "14c2fe038be2b4bab574b1a3171132c36c82b903d4d3f26f353d371f87dfabff",
+    "scripts/advance_completed_site_rate_exports.py": "5c49a1ed38e692bf95b0ba7d0fa38e5ac276118285d2dad566f09ff13a3b3def",
+    "scripts/audit_joint_path_uncertainty.py": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9",
+    "scripts/audit_site_parsimony_topologies.py": "60f74cecc8649900bd6758ebaaeb16970ea26cf3d7f86cb6720588d28b8e03c4",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "scripts/readback_site_parsimony_exposure.py": "fd36f2cefce1edcc41ef0ee152760a2b85adad04c2fa3081a8134c746506aeb6",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/summarize_site_parsimony_exposure.py": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+    "results/recovery-20260927/afdb-site-exposure/receipt.json": "3964a0d2aef84649e8c83fdf53e85086e0346f925af9ff485d2669c79418293a",
+    "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1/receipt.json": "c34920930596308da4113e261333ff1cd45c87a6ecf11dd5a17c4d0df9c0991b",
+    "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1/site_parsimony_exposure.tsv": "e251f8cff4b96ce8f66d2a252ec39fb376003179b52ae9e5ab15e7c27ea1e3dc",
+    "results/recovery-20260927/afdb-site-exposure/readback/receipt.json": "7d863d4ab883c14bbe6cffb7a0b3893c332068917b1715e4290f34729d56d83b"
+  },
+  "scope": "Terminal success, launch-bound plans, all plan pins, controller prerequisites, stage receipts/counts and declared stage artifacts. Row-level numeric checks are supplied by the separate completed full readbacks. ASA geometry was not independently recalculated; no ancestral exposure, rate effect, or biological core/surface validation is claimed."
+}
