@@ -1,0 +1,17 @@
+{
+  "status": "passed_recovered_accessibility_union_cli_fixtures",
+  "models_selected": 2,
+  "models_explicitly_excluded": 1,
+  "rejected_cases": [
+    "missing_cohort",
+    "duplicate_cohort",
+    "undeclared_exclusion",
+    "changed_residue_table",
+    "changed_source_record_id",
+    "changed_sequence_sha256",
+    "incomplete_audit"
+  ],
+  "merger_sha256": "ce2ea6c889915db00b80e43966d9d2a2be5a77cad162fc95b07cc6cd1d8fe9f5",
+  "checker_sha256": "d720ed0e6ce80e2294c9344f2b77fe55f9796b93c3c7f11f8ef102b0f9ba7bd6",
+  "scope": "Synthetic provenance, subset, symlink and rejection behavior only; not production ASA or coordinate validation."
+}

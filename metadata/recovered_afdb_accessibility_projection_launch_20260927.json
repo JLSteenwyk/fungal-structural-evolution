@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-recovered-afdb-accessibility-projection-20260927.service",
+  "pid": 3449899,
+  "create_time": 1790495668.69,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_recovered_accessibility_projection.py",
+    "--config",
+    "metadata/recovered_afdb_accessibility_projection_plan_20260927.json"
+  ],
+  "plan_sha256": "3a07eb8f9b738a93b2fd7ff64038989023bae369d79af52a79ad41d0b11bc99f",
+  "controller_sha256": "ac47584f693f2354448436f4d6bf3d9331b62ec111d3f2e07546d29321965318",
+  "state_at_record": "sleeping",
+  "systemd_properties": [
+    "CPUQuotaPerSecUSec=1s",
+    "MemoryMax=51539607552",
+    "MemorySwapMax=0",
+    "Nice=10"
+  ]
+}

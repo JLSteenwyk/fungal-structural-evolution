@@ -52,3 +52,44 @@ recovered fit collection's source inventory. Older 124-marker exposure tables
 cannot substitute for the current 125-marker collection. Core/surface coupling
 and functional interpretations remain downstream; extant accessibility is not
 an ancestral estimate, pocket annotation or experimentally established function.
+
+## Automatic integration queued
+
+A separate pinned controller now waits on the calculation/audit controller's
+PID, creation time and exact command. It proceeds only after the completed
+producer and full raw-source audit receipts pass. It will:
+
+1. Merge exactly 30,618 selected models (15,960,692 residues), using unchanged
+   source entries through relative symlinks and explicitly excluding the 26
+   earlier-only models.
+2. Project accessibility onto all observed cells of the 125-marker paired input
+   cohort: **9,453,757 residue observations**, counted directly from the paired
+   amino-acid FASTAs. Masked cells remain missing.
+3. Independently check every projected row against raw accessibility tables,
+   mapping records and both paired alphabets.
+4. Normalize using both existing reference scales, retain terminal exclusions,
+   and independently check all row values and normalization summaries.
+
+`merge_recovered_accessibility.py` accepts only the documented additional source
+identifier; every other shared model field must agree. It checks all selected
+coordinate, entry and residue-table hashes. CLI fixtures passed valid subset
+selection and rejected missing/duplicate cohorts, undeclared exclusions, altered
+residue tables, changed source identifiers/sequences and incomplete audits.
+These fixtures test provenance and file handling, not ASA geometry.
+
+The queued plan is
+`metadata/recovered_afdb_accessibility_projection_plan_20260927.json`; the cohort
+manifest, fixture receipt and process launch record are adjacent. The controller
+uses one CPU, 48 GiB RAM, no swap and an 8 GiB output allowance, with 64 GiB
+available-memory and 100 GiB free-disk gates. The 0.5–24 hour downstream planning
+range is broad and does not include waiting for accessibility calculations.
+The allowance accounts for the 11,202,520-row source mapping retained in memory.
+
+The union, paired projection and normalized tables will use the
+`accessibility-union-afdb-recovered-20260927-v1`,
+`paired-accessibility-afdb-recovered-20260927-v1`, and
+`normalized-accessibility-afdb-recovered-20260927-v1` directories under
+`results/structural_annotations/`. Full readbacks are written beneath
+`results/recovery-20260927/afdb-accessibility-projection/`.
+These are queued outputs, not completed results. No tree/exposure integration or
+sequence–structure coupling completion is implied by the integration launch.

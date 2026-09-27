@@ -6035,3 +6035,20 @@ was resumed. See [methods, resources and remaining integration](recovered-afdb-a
 The previous goal turn made progress by completing the baseline rate-model
 comparison and launching all-fit optimization; this turn addresses the missing
 structural-exposure inputs needed for the recovered cohort's coupling analysis.
+
+## September 27 recovered accessibility integration tested and queued
+
+Implemented exact audited ASA subset merging, with declared exclusions and only
+the documented added provider identifier allowed to differ. Synthetic CLI tests
+passed the selected union and seven rejection cases. A pinned controller is now
+waiting on the verified live missing-model calculation/audit controller; after
+successful completion it will merge 30,618 models, project all 9,453,757 observed
+paired residue cells, normalize accessibility and run full independent projection
+and normalization readbacks. Output scope and resource gates are documented in
+[the accessibility methods](recovered-afdb-accessibility-20260927.md).
+
+Both native optimization and missing-model accessibility controllers were
+revalidated by PID, creation time and command; neither was restarted. The prior
+goal turn made progress by inventorying and launching missing calculations; this
+turn adds tested integration code and an executing, completion-gated handoff.
+GPU prediction remains paused and the broader scientific aims remain open.
