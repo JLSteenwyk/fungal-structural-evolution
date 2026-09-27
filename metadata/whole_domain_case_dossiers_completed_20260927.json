@@ -1,0 +1,34 @@
+{
+  "status": "complete_descriptive_whole_domain_case_dossiers",
+  "script_sha256": "a75a0cf2e2eca50ed694a7804a758c29a10e837a4ae5d87b8ab57827e9dd265b",
+  "source_hashes": {
+    "results/structural_comparisons/whole-domain-contrast-integration-20260927-v1/receipt.json": "61553a8c247f67eab0f316f7c8bde471692525a11d9496039756ee8ff7d8b55e",
+    "results/structural_comparisons/whole-domain-contrast-integration-20260927-v1/domain_comparisons.tsv": "f508f219e91eeeef5904b348feccc6a9c7c2b4ceec0d156a4f0b0d4926983286",
+    "data/pfam/38.2/Pfam-A.hmm.dat": "ead9a40cdb871e1e6ceb151ea15c7aeaff083add2558031b4811afb9d7496b2d",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/event_reference_triads.tsv": "4eecddbc391cf479e1650230d236c479230f224d4d4cc167318369da139c0a03",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/receipt.json": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/event_domain_links.tsv": "4bd600c42de35b6ac8f408a9e08a119bd0a158ebbbd740455cda67e3c43d4fe2",
+    "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1/receipt.json": "8965c0c83adccc6175753ecd7200c32243410ab3c2078a433f8ce0ea708ac281",
+    "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1/common_residue_fits.tsv": "f6db2d2fdb99e5c853d1c31914a0821a7cf38958ce4ce7c5fc42dbd582114110",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/receipt.json": "a069b61db1b380d377d7c5c6d060bdb14ef734b496f36a193ecd61e632ab795e",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/common_residue_fits.tsv": "276044477863c58de6142b65783938beec5f28cd9fadd649fded8ff48f804396"
+  },
+  "cases": 13,
+  "sensitivity_rows": 234,
+  "whole_unique_triads": 13,
+  "domain_unique_triads": 26,
+  "whole_fit_rows": 416,
+  "domain_fit_rows": 832,
+  "artifacts": {
+    "case_dossiers.tsv": "3948e0657d8b330da911416210a3ea856ac30702ca21b2a7f6b777eac4434ff2",
+    "all_sensitivity_settings.tsv": "24c2e5e02d5309f84e035e51bb8179ca7afbe672a5f9e87fb614a184ce876b00",
+    "whole_reference_links.tsv": "94713f722d9106652c4cf7c3e10e91b7a6ee0414f80e89ac5f37d211016eeb96",
+    "whole_fit_alternatives.tsv": "2ab8fa7c47da8c4ace45e1a288dff094bc5467ea6685afe551ba80b2f3e92151",
+    "domain_reference_links.tsv": "7e4fbfbc8d36983786c73d6d3cbee33893fb8525968da9d8b6359d0a7b8ab7d6",
+    "domain_fit_alternatives.tsv": "d0761e2a7073589c2ef18df647cbcebc5e589507a693f857d6360eb95c95c745"
+  },
+  "scope": "All opposing-scale cases at 0.1 A in any of six coverage screens; all 18 settings retained. Pfam labels are annotation hypotheses, not experimentally established function. Extrema retain all linked references and fit alternatives; no uncertainty calibration, statistical selection, domain-orientation mechanism or significance claim.",
+  "receipt_path": "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json",
+  "receipt_sha256": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2"
+}

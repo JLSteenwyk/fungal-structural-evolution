@@ -8452,3 +8452,12 @@ comparisons agree with whole-protein direction and six oppose it; these are
 inspection candidates, not proof of domain-orientation effects. All unresolved
 and reference-mismatched cases remain explicit, as do 100,014 whole pair/screen
 rows lacking domain-comparison rows. See [integration](whole-domain-contrast-integration-20260927.md).
+
+### 2026-09-27: all opposing whole/domain cases packaged for inspection
+
+Prepared all 13 opposing-scale cases at a descriptive 0.1 Å margin in any screen,
+retaining 234 sensitivity rows, 416 whole-protein and 832 domain fit alternatives,
+all references and Pfam annotations. Every output cell passed serialized
+readback. The sole 90%-coverage case is Phycomyces OG0002812, with small opposing
+contrasts requiring prediction-error checks. Conditional mechanistic follow-up
+and annotation caveats are documented in [inspection cases](whole-domain-inspection-cases-20260927.md).
