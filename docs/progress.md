@@ -8390,3 +8390,14 @@ terminal states and producer/checker totals; evidence is in
 `metadata/whole_protein_common_mapping_completed_20260927.json`. Common-coordinate
 fit production started automatically and is advancing. These mapping counts do
 not establish homology, independent events or asymmetric structural evolution.
+
+### 2026-09-27: whole-protein common-core coverage summary queued
+
+All 563,808 common-residue fit records have been produced; the full independent
+quaternion readback is still running. A terminal-success-gated summary now
+retains all eight alignment orders and six coverage screens, separates shared
+model strata and independently aggregates the entire serialized table twice.
+See [common-core comparisons](whole-protein-common-core-comparisons-20260927.md).
+The launch is recorded in
+`metadata/whole_protein_common_fit_summary_launch_20260927.json`.
+No biological result or overall project completion is claimed.

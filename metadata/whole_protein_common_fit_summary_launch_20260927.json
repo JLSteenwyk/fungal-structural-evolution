@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-whole-protein-common-fit-summary-20260927.service",
+  "pid": 368773,
+  "created": 1790536373.49,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_verified_whole_protein_common_fits.py"
+  ],
+  "script_sha256": "0b4f63ae3b4144d0a1e30cc1fa1d7df65d6ab9b6412c2cfaaf30569a350d427b",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours_after_prerequisite": [
+      0.01,
+      0.5
+    ]
+  },
+  "scope": "Full audited common-core fit closure and 72-row order-robust coverage summary; two independent complete aggregations; no biological inference."
+}
