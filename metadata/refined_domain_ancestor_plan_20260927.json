@@ -1,0 +1,43 @@
+{
+  "exchangeabilities": "data/software_audits/iqtree-3.0.1/modelprotein.cpp",
+  "fits": "results/ancestral/domain-refinements-20260927-v1",
+  "parameters": "results/ancestral/domain-refinement-readback-20260927-v1/parameters.json",
+  "nodes": "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv",
+  "source_nodes": "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv",
+  "output": "results/ancestral/refined-domain-ancestors-20260927-v1",
+  "auditor": {
+    "unit": "fungal-ancestral-domain-refinement-audit-20260927.service",
+    "pid": 531404,
+    "created": 1790548140.07,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_ancestral_domain_refinements.py"
+    ]
+  },
+  "audit_receipt": "results/ancestral/domain-refinement-readback-20260927-v1/receipt.json",
+  "audit_plan": "metadata/ancestral_domain_refinement_audit_plan_20260927.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "pins": {
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv": "d0580980a65c5cf2e3ea1736afd72c951a037068f5cfcfbd984684fc34423245",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "results/ancestral/domain-refinement-readback-20260927-v1/receipt.json": "4ebbc20e3373d59c5cf6d8bc8640887efe3213a68d5b4aa46e654b305e35ce65",
+    "results/ancestral/domain-refinement-readback-20260927-v1/parameters.json": "b203852a85036eeb5ac602a65b86f6a1538337c027eb9abd3c70e68c84eb9edc",
+    "metadata/ancestral_domain_refinement_audit_plan_20260927.json": "b5034556fa2f37d18b9e49b74760b2280cdb539e4e1d1b36da285efa3b9a9718",
+    "metadata/ancestral_domain_refinement_plan_20260927.json": "7dd3e83c40e4f3971d7d0d930918970dbdc0bbed14c869afdc6e4a5bb63590fe",
+    "scripts/infer_refined_domain_ancestors.py": "1bf49a52fe81fe608f0600b79903ba34d35b946367527d8d472225b15965aa08",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910"
+  },
+  "scope": "312 audited refinements x3 signature-matched ancestral vertices. Both gamma bounds and all models/alignments retained. Conditional amino-acid probabilities, not indel inference or final sequences."
+}

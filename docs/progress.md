@@ -8995,3 +8995,12 @@ Best-start refinement production finished. Launched full report/checkpoint
 and independent-likelihood validation, retaining signed changes from the
 verified selected starting likelihoods plus gamma/branch changes. One CPU,
 4GiB RAM,noGPU. Audit results and stability conclusions remain pending.
+
+### 2026-09-27: refinement stability checked; refined ancestors launched
+
+All312 refinement audits and likelihood replays passed (max error1.21704e-5).
+No selected starting likelihood changed by>0.001; largest increase0.0002558.
+Stable under this restart test, not proof of global optimality. Started
+conditional probabilities for936 refined fit/nodes, retaining both bounds and
+all model/alignment settings. One CPU,4GiB RAM,noGPU. Verification and
+ancestral sequence/structure uncertainty propagation remain pending.

@@ -856,3 +856,27 @@ metadata use `ancestral_domain_refinement_audit_`, date `20260927`. Output:
 `results/ancestral/domain-refinement-readback-20260927-v1/`. One CPU,4GiB
 memory,no swap/GPU; estimate0.1–6 hours after production,0.2GiB output.
 Full audit results and refined ancestral probabilities remain pending.
+
+## Refinement audit passed; refined ancestral probabilities launched
+
+All312 refined fits passed full report/checkpoint checks and independent
+likelihood replay, maximum error1.21704e-5 log units. None changed its selected
+starting likelihood by more than0.001 in either direction: signed range
+-3.00006e-8 to+0.0002558. Complete serialized differences and artifact hashes
+were checked. This supports stability under the specified best-start restart
+and tighter epsilon; it does not establish global optimality or model adequacy.
+Closure: `metadata/ancestral_domain_refinement_audit_completed_20260927.json`.
+
+Launched conditional amino-acid probabilities for all312 refined fits at three
+signature-matched internal vertices each (936 fit/node combinations). Both
+gamma bounds and every alignment/model combination are retained. Prior
+936 alternate-start posteriors remain separate diagnostics, including poorer
+solutions, rather than equally weighted biological alternatives.
+
+Run `python scripts/infer_refined_domain_ancestors.py`; plan/launch metadata
+use `refined_domain_ancestor_`, date `20260927`; output:
+`results/ancestral/refined-domain-ancestors-20260927-v1/`. One CPU,4GiB RAM,
+no swap/GPU; estimate0.1–4 hours,2GiB output. The complete audit receipt and
+parameter file are frozen before launch. Full probability verification,
+model/aligner/bound sensitivity, indel handling and sequence ensembles remain
+incomplete.

@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-refined-domain-ancestors-20260927.service",
+  "state": {
+    "MainPID": "533923",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 533923,
+  "created": 1790548277.95,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/infer_refined_domain_ancestors.py"
+  ],
+  "plan_sha256": "9bcb131287743a5010d02fdc6dcf70eb9c52701404660667c1d6a35af0aee31c",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  }
+}
