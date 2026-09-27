@@ -1,0 +1,53 @@
+{
+  "input_receipt": "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json",
+  "output": "results/ancestral/historian-capacity-20260927-v1",
+  "binary": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/historian-20260927/source/bin/historian",
+  "workers": 2,
+  "timeout_seconds": 1800,
+  "per_job_memory_bytes": 12884901888,
+  "options": [
+    "-preset",
+    "lg",
+    "-gamma",
+    "4",
+    "-shape",
+    "1",
+    "-gaprate",
+    "0.01",
+    "-gaplen",
+    "3",
+    "-band",
+    "20",
+    "-profsamples",
+    "100",
+    "-profmaxstates",
+    "20000",
+    "-seed",
+    "20260927",
+    "-norefine",
+    "-ancseq",
+    "-output",
+    "json",
+    "-v3",
+    "-nocolor"
+  ],
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_gib": 10,
+    "planning_hours": [
+      1,
+      82
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All78 original alignments, all proteins, both explicit branch floors and all15 binary resolutions of the identical four-tip star:324 diagnostic runs. Fixed LG+G4 shape1, gaprate.01/gaplen3 are declared test parameters, not family-fitted estimates. Original rooted topologies retained as assumptions. Measures capacity and input preservation, not qualified ancestors, integrated indel posterior uncertainty, supported new branches or final inference. No GPU use.",
+  "pins": {
+    "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json": "149585b3bf326ce471b2619f5fa0e4075395a39f09669f683089d6a07d967430",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/historian-20260927/source/bin/historian": "5ad9c9736e32dc267b330678abb74cd230244c5ade96f6384fecf35c119c6a6b",
+    "scripts/run_historian_capacity_grid.py": "77fe177963748a472401dac846815d9111c854e64d569b3ff11d2b8ee10086f2",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/historian_tests_completed_20260927.json": "c964de74ddea7d691d1301ea4ce061306a14f0f577ba25bf3e2c2fa43cfcc451"
+  }
+}

@@ -9399,3 +9399,21 @@ Source inspection also identifies adaptive guide-band relaxation and
 conditional, thresholded ancestral residue probabilities, which cannot be
 reported as complete indel-history uncertainty. Detailed evidence and remaining
 requirements: [Historian assessment](historian-method-assessment-20260927.md).
+
+### 2026-09-27: full Historian sensitivity grid launched with every copy retained
+
+The four-way node joins four identical sequences on zero-length edges in all
+six affected alignments. Enumerated all 15 rooted resolutions, independently
+checked the enumeration by both possible four-leaf shapes, and generated both
+1e-9 and 1e-7 edge-floor variants for every local tree. All 108 derived trees
+were read back for tips, original nodes, contraction, lengths and root-to-tip
+path changes. Original files remain unchanged; inserted nodes are artificial.
+
+The complete 324-run diagnostic grid covers all 78 alignments and up to 622
+proteins each. Its two-worker CPU service was verified live by process identity;
+the first four jobs passed output sequence/tree preservation checks. Runtime,
+RSS, guide relaxation, unknown-residue imputation and failures are recorded.
+Fixed diagnostic rates are not fitted ancestors; full completion and output
+auditing remain pending. Launch and resource limits are in
+`metadata/historian_capacity_launch_20260927.json` and
+`metadata/historian_capacity_plan_20260927.json`. GPUs remain paused.

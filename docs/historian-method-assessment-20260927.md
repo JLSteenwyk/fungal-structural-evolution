@@ -71,3 +71,44 @@ Before full reconstruction, evaluate a justified treatment of the polytomy
 branch floor, root placement, full-family memory/runtime and guide/profile
 approximations. Model fitting and complete uncertainty propagation remain
 required. Passing software tests alone does not establish ancestral reliability.
+
+## Full sensitivity grid launched
+
+Further inspection shows that the four children of n1790 are terminal proteins
+with identical aligned sequences in all six affected inputs, and all four edges
+have length zero. We retain every copy and enumerate all 15 rooted binary
+resolutions. A separate enumeration by the balanced and caterpillar four-leaf
+shapes verifies that the resolution set is exhaustive and duplicate-free.
+The inserted internal nodes are explicitly artificial and are not biological
+ancestor candidates.
+
+`prepare_historian_sensitivity_inputs.py` generates derived trees at minimum
+edge lengths 1e-9 and 1e-7. It retains source roots and checks all original nodes,
+all tips, contraction of artificial nodes, every edge length and every change
+to root-to-tip distance after serialization. The 108 tree files support 324
+runs covering all 78 original alignments. Original files remain unchanged.
+Derived trees and their complete checksummed mapping are stored under
+`results/ancestral/historian-sensitivity-inputs-20260927-v1`.
+
+`run_historian_capacity_grid.py` executes the full grid using fixed diagnostic
+parameters: LG, four gamma categories with shape 1, insertion/deletion rate
+0.01, expected gap length 3, guide band 20, 100 profile samples, maximum
+20,000 profile states, seed 20260927 and no iterative refinement. These are
+computational checks, not family-fitted evolutionary estimates. JSON outputs
+contain reconstructed sequences, not a claimed posterior ensemble. Unknown
+extant X positions are explicitly recorded if imputed; every known residue
+and every tip length must be preserved. Output topology, root and branch
+serialization are checked. Guide-band relaxation messages are retained.
+
+Plan: `metadata/historian_capacity_plan_20260927.json`. Limits: two CPU workers,
+32 GiB aggregate memory and no swap, with 12 GiB sampled RSS and 30 minutes
+per process. A process that exceeds a per-job limit is terminated as a process
+group and retained as an unresolved capacity result, not dropped or scored as
+successful. Planning allowance is 1–82 hours and 10 GiB, with no paid resources
+or GPUs. Per-job receipts make successful and unsuccessful dispositions
+reviewable; overall numerical and biological validation remain downstream.
+
+Root placement, model fitting, approximation sensitivity and joint history
+uncertainty remain necessary even if every capacity check passes. Comparing
+these equally enumerated resolutions is a sensitivity assessment, not a
+posterior weighting of tree histories.
