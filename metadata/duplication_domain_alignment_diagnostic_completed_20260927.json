@@ -1,0 +1,39 @@
+{
+  "status": "verified_completed_domain_rmsd_diagnostic_not_scientific_acceptance",
+  "receipt": "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1/receipt.json",
+  "receipt_sha256": "baefebd99f32daac913ca4074a88bd6c1e81a14905901bd7ccb99b7148cd49e1",
+  "plan_sha256": "a2581b0928c3a17039f8798a8fcb5c7a243f00b07f5316b8fccc9169b2c1f333",
+  "numeric_rows": 280824,
+  "explicit_unavailable": 756,
+  "rmsd_status_counts": {
+    "within_printed_rounding": 280823,
+    "outside_printed_rounding": 1
+  },
+  "aligned_length_counts": {
+    "at_least_3": 280808,
+    "2": 16
+  },
+  "maximum_rmsd_discrepancy": 0.006495888310062148,
+  "discrepancies": [
+    {
+      "checkpoint": "results/structural_comparisons/duplication-domain-alignments-20260926-v1/pairs/f3/f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641-plddt70-1.json",
+      "checkpoint_sha256": "667e8b154555efc17fa5e04c7d437ac4d309147c90f6f613bd2c59dddcdd7d4a",
+      "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+      "mask": "plddt70",
+      "order": 1,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.26649588831006216,
+      "rmsd_native": 0.26,
+      "rmsd_rounding_error": 0.006495888310062148,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.31151,
+      "tm_right_native": 0.05272,
+      "coverage_left": 0.4,
+      "coverage_right": 0.05405405405405406,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    }
+  ],
+  "verification": "All plan pins, producer binding, artifact hashes, exact successful checkpoint key set, table counts and error classification checked. No independent recomputation of all coordinates in this completion check; full diagnostic performs that reconstruction. Downstream eligibility remains false."
+}

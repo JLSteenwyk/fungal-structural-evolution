@@ -5675,3 +5675,29 @@ while retaining the strict provenance, residue mapping, identity and stored
 metric checks. Its output is diagnostic only and cannot authorize downstream
 biological analysis. The scripts pinned by other running/waiting jobs remain
 unchanged. A deliberately altered TM-score was rejected by the diagnostic.
+
+
+## September 27 full domain RMSD diagnostic complete
+
+The complete diagnostic verified all 281,580 dispositions: 280,824 successful
+alignments and 756 explicit unavailable-input skips. Exactly one alignment
+exceeds the unchanged 0.00501 Å RMSD rounding tolerance: the previously
+identified two-residue pLDDT70 reverse-order case. The remaining 280,823
+successful alignments satisfy that tolerance. There are 16 alignments with
+two matched residues and 280,808 with at least three; none has only one.
+
+The [completion record](../metadata/duplication_domain_alignment_diagnostic_completed_20260927.json)
+records independently checked plan pins, producer/artifact hashes, exact
+successful-checkpoint keys, counts and discrepancy classifications. The full
+diagnostic reconstructed mappings, identities and least-squares RMSDs from
+hashed PDBs. The completion checker does not repeat every coordinate calculation.
+Fixtures verified both input orders, explicit masks, retention of false RMSDs
+as discrepancies, and rejection of corrupt metrics and omitted dispositions.
+
+The original strict audit remains failed; this diagnostic has no downstream
+eligibility and does not silently replace it. The implementation cause of the
+single native RMSD discrepancy remains unresolved. Next, define and apply
+explicit geometry/length/coverage eligibility while retaining all exclusions;
+two matched residues cannot establish a unique three-dimensional orientation.
+Even numerically consistent alignments require those scientific controls before
+comparison of duplication-associated structural divergence.
