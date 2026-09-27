@@ -5803,3 +5803,24 @@ not independently recompute spectra or curvature. The full quaternion-based
 readback started automatically and has checked more than 20,000 records;
 its completion and downstream integration remain pending. Numerical uniqueness
 is not a statement of prediction accuracy or biological significance.
+
+
+## September 27 full domain geometry independently verified
+
+The quaternion-based readback completed successfully for all 280,824 directed
+domain alignments. It confirmed 280,808 numerically unique proper-rotation fits
+and 16 degenerate fits, all containing only two matched residues. The independent
+quaternion calculation's largest scaled curvature difference was
+2.2162 × 10⁻¹⁵; exactly 16 quaternion gaps were near zero.
+
+Verified the final audit-plan pins, producer receipt binding, geometry artifact
+hash, exact table key uniqueness/count, category counts and complete degenerate
+record set. The full readback reconstructed every native correspondence from
+hashed PDBs and checked spectra and rotation geometry; the completion checkpoint
+does not rerun those coordinate calculations. See the
+[completed readback record](../metadata/duplication_domain_geometry_readback_completed_20260927.json).
+
+This validates the geometric measurements at their stated numerical precision.
+It does not resolve the known native RMSD reporting discrepancy or establish
+prediction accuracy or biological asymmetry. Geometry-aware integration and
+comparisons on consistent residue correspondences remain the next steps.

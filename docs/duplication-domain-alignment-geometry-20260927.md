@@ -77,3 +77,18 @@ USalign or use GPUs. Its output remains pending until the full scan completes.
 OPENBLAS_NUM_THREADS=1 python scripts/check_domain_geometry_readback_cases.py
 OPENBLAS_NUM_THREADS=1 python scripts/readback_domain_alignment_geometry.py --plan metadata/duplication_domain_geometry_readback_plan_20260927.json
 ```
+
+## Completed and independently verified
+
+The full readback passed all 280,824 successful directed alignments. It confirmed
+140,790 full-mask and 140,018 pLDDT70 fits with unique rotations at the numerical
+tolerance, and 16 pLDDT70 degenerate fits, each containing two matched residues.
+The maximum scaled curvature difference between the independent formulations
+was 2.216204526407301 × 10⁻¹⁵. Exactly 16 quaternion eigenvalue gaps were near
+zero. The original native RMSD discrepancy remains separately quarantined.
+
+The [completion checkpoint](../metadata/duplication_domain_geometry_readback_completed_20260927.json)
+records the full audit and independent checks of all source pins, artifact
+hashes, table counts and the complete degenerate-record set. It supersedes
+"pending" status for this geometry readback only; scientific inference and
+other analyses remain unfinished.

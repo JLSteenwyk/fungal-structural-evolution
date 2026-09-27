@@ -1,0 +1,136 @@
+{
+  "status": "verified_completed_full_domain_geometry_readback",
+  "readback_path": "results/structural_comparisons/duplication-domain-geometry-readback-20260927-v1.json",
+  "readback_sha256": "485ebf634ba32434ced9d4c269e4affe5f73418c9eb3a6195824b449c18a7ae1",
+  "readback": {
+    "status": "passed_full_domain_geometry_readback",
+    "plan_sha256": "f3eb8ff14a9a800807ff8ed729b18938223abf38f2188774a72f0bba8143e0e0",
+    "producer_receipt_sha256": "5b901cd8b53d970a518cc40121525efa80970f43f8f82d9318b1c44402ba0354",
+    "alignments_checked": 280824,
+    "counts": {
+      "full:unique_at_numeric_tolerance": 140790,
+      "plddt70:unique_at_numeric_tolerance": 140018,
+      "plddt70:degenerate_at_numeric_tolerance": 16
+    },
+    "maximum_scaled_quaternion_curvature_error": 2.216204526407301e-15,
+    "near_zero_quaternion_gaps": 16,
+    "degenerate_alignments": [
+      {
+        "pair_key": "02a7253a1dce4bd718fc1bde174f94a307a0cef35350acc8059af51d2d3dd81a",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "0631b35e9c0fb185e6fca8ff085d1d22a2a20a9d5983a15cd9e20bc84d0314e3",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "0631b35e9c0fb185e6fca8ff085d1d22a2a20a9d5983a15cd9e20bc84d0314e3",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "068ac6df41c80597dc4627af7067f4d40036726aa3f21122db33abe4d0af0769",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "4850867c7f7ed7695dd2b478e26df258fde5e68ea57ab098f02a8bfdd3ff0808",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "4850867c7f7ed7695dd2b478e26df258fde5e68ea57ab098f02a8bfdd3ff0808",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "4ea28c0220c7cacb4512a3fa21e6bc8c2e1f2465684d8e63d9e4dcd3ff23bbd1",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "4ea28c0220c7cacb4512a3fa21e6bc8c2e1f2465684d8e63d9e4dcd3ff23bbd1",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "7fd6b51249b8d831b1e6b1e908054371b87a1923eab94c81727a1d83fef123c6",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "7fd6b51249b8d831b1e6b1e908054371b87a1923eab94c81727a1d83fef123c6",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "d6836037563ee34bac26b9655d95f9fd9138d4d8eb07684422184e4ddf70629d",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "d6836037563ee34bac26b9655d95f9fd9138d4d8eb07684422184e4ddf70629d",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "ee826e95324f399bc82882b47316d2dd361ae5e656a7c82b422b6f019e153447",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "ee826e95324f399bc82882b47316d2dd361ae5e656a7c82b422b6f019e153447",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+        "mask": "plddt70",
+        "order": 0,
+        "aligned_length": 2,
+        "rmsd_status": "within_printed_rounding"
+      },
+      {
+        "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+        "mask": "plddt70",
+        "order": 1,
+        "aligned_length": 2,
+        "rmsd_status": "outside_printed_rounding"
+      }
+    ],
+    "scope": "Every geometry row checked from hashed native mapping/PDBs. Coordinate and cross spectra checked using LAPACK gesvd; curvature/optimum checked using independent 4x4 quaternion eigensystem. Status verified under original numeric tolerance; near-zero gaps recorded, not treated as cross-method proof of machine-precision rank. No prediction-uncertainty or biological inference claim."
+  },
+  "producer_receipt_sha256": "5b901cd8b53d970a518cc40121525efa80970f43f8f82d9318b1c44402ba0354",
+  "plan_sha256": "f3eb8ff14a9a800807ff8ed729b18938223abf38f2188774a72f0bba8143e0e0",
+  "verification": "All readback plan pins, producer binding, geometry artifact hash, exact table key uniqueness/count, category counts and complete degenerate-record set checked. Full coordinate/spectrum/quaternion reconstruction was performed by the completed readback, not repeated by this completion checkpoint."
+}
