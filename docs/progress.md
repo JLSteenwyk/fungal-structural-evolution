@@ -8563,3 +8563,11 @@ archive checks followed by all-entity/all-chain/all-model CA mapping, retaining
 missing, alternate and partial-occupancy observations. Mapping requires successful
 archive readback. GPU prediction remains paused. Coordinate coverage and geometry
 are not yet validated. See [methods and resource bounds](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: all case experimental archives verified
+
+All 706 coordinate archives completed retrieval and independent full archive
+readback successfully: 962 MB compressed, 4.39 GB decompressed. Every identity,
+hash, size and gzip-integrity check passed. Residue mapping has started and is
+producing per-entry tables; observed coverage and geometry remain unvalidated.
+Completion evidence: `metadata/case_experimental_coordinates_completed_20260927.json`.

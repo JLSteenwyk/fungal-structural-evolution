@@ -1,0 +1,28 @@
+{
+  "status": "complete_all_case_coordinate_archive_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "checker_sha256": "6215228ed7d0de31e3e688ad4e1bee1e6390be0610eee320b52081144a4500a7",
+  "entries": 706,
+  "excluded_entries": {
+    "9A9S": "integrative"
+  },
+  "scope": "All archive identities, compressed hashes, sizes and gzip CRCs verified; independent decompressed hashes recorded. Experimental methodology selection reconstructed from metadata. Atom-level residue correspondence and quality are not assessed.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-coordinate-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "33187413a33ce2cf242a51ff533e8c18328aff20e6f2e0606ff23a3daa3c024a",
+  "terminal_states": {
+    "fungal-case-experimental-coordinates-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-case-experimental-coordinate-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

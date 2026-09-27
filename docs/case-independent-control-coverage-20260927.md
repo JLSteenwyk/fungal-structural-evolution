@@ -166,3 +166,14 @@ rows are in
 `results/experimental_structures/whole-domain-case-domain-coverage-20260927-v1`.
 Serialized readback and source hashes are recorded in
 `metadata/case_experimental_domain_coverage_completed_20260927.json`.
+
+## Archive retrieval and full readback completed
+
+All 706 experimental archives downloaded successfully (962,111,990 compressed
+bytes; 4,392,908,993 uncompressed bytes). Retrieval and independent archive
+readback both terminated successfully. Every archive passed identity, hash,
+size and complete decompression/CRC checks; all plaintext hashes are retained.
+The closure is `metadata/case_experimental_coordinates_completed_20260927.json`.
+The residue-mapping service has now passed its prerequisite gate and is writing
+per-entry residue tables. Those tables are not yet a completed or independently
+validated coordinate-coverage analysis.
