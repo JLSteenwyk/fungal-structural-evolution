@@ -8727,3 +8727,12 @@ table and interpretation limits are in
 `metadata/case_experimental_reference_robustness_completed_20260927.json`.
 This completes a descriptive reference-sensitivity stage, not experimental
 validation or the overall evolutionary analyses. GPU prediction remains paused.
+
+### 2026-09-27: reference sensitivity figures completed
+
+Created a four-panel overview retaining all 13 cases and an 18-page supplement
+covering every screen/margin setting. All 2,808 plotted counts/fractions were
+checked against the verified source summary; overview visually inspected.
+Figures retain missing-coverage cases and explicit dependent-unit denominators.
+Reproduction script: `scripts/plot_case_reference_sensitivity.py`. Closure:
+`metadata/case_reference_sensitivity_figure_completed_20260927.json`.

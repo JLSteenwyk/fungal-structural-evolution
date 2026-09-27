@@ -614,3 +614,21 @@ directories and preserve existing results. Local results are under
 `results/experimental_structures/whole-domain-case-reference-robustness-20260927-v1/`.
 Closure: `metadata/case_experimental_reference_robustness_completed_20260927.json`.
 Biological interpretation and the broader evolutionary aims remain incomplete.
+
+## Reference sensitivity figure
+
+![Reference sensitivity at n50/c70 and a 0.1 Å margin](figures/case_reference_sensitivity_20260927.png)
+
+Bars show the proportion of qualifying reference units with the same direction,
+opposite direction, or variation/contrasts within the margin. Denominator labels
+report units/entities/dependence components. Blank cases explicitly lack
+qualifying units; they do not demonstrate absence of structural change.
+
+[All 18 screen/margin settings](figures/case_reference_sensitivity_all_settings_20260927.pdf)
+retain the complete sensitivity grid. The overview is also available as
+[PDF](figures/case_reference_sensitivity_20260927.pdf) and
+[SVG](figures/case_reference_sensitivity_20260927.svg).
+`python scripts/plot_case_reference_sensitivity.py` reproduces the figures and
+the 2,808-row plotted-count table from verified source artifacts. Every plotted
+count and fraction was checked against the source table; the overview passed
+visual inspection. These dependent proportions have no inferential error bars.
