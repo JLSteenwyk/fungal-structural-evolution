@@ -5651,3 +5651,27 @@ AA marker topologies. They do not cover all topology, model, prediction, or
 spatial-dependence uncertainty. Sampling covariance is estimation error,
 not biological coupling; acceleration rankings and selection claims remain
 unsupported by this checkpoint alone.
+
+
+## September 27 domain numerical validation discrepancy
+
+The strict domain readback stopped on an RMSD discrepancy after more than
+260,000 dispositions; it did not produce a passing receipt. The affected
+pLDDT70 comparison has only two aligned residues. Direct calculation from
+the two inter-residue distances gives an optimal RMSD of 0.2664958883 Å,
+agreeing with the independent SVD calculation in both input orders. The
+pinned USalign executable reports 0.27 Å in one order and 0.26 Å in the
+other; both summaries were reproduced by rerunning the exact commands.
+The second value differs beyond the original 0.00501 Å tolerance.
+
+The [failure diagnosis](../metadata/duplication_domain_rmsd_failure_diagnosis_20260927.json)
+records the checkpoint hashes, both calculations and native reruns. The
+underlying implementation cause remains unresolved. No tolerance was widened,
+no original checkpoint was modified, and no discrepancy was certified as valid.
+
+A separate [full-cohort diagnostic](../metadata/duplication_domain_alignment_diagnostic_plan_20260927.json)
+now checks all 281,580 dispositions, preserving RMSD deviations explicitly
+while retaining the strict provenance, residue mapping, identity and stored
+metric checks. Its output is diagnostic only and cannot authorize downstream
+biological analysis. The scripts pinned by other running/waiting jobs remain
+unchanged. A deliberately altered TM-score was rejected by the diagnostic.

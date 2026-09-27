@@ -1,0 +1,58 @@
+{
+  "status": "reproduced_two_residue_rmsd_discrepancy",
+  "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+  "results": [
+    {
+      "order": 0,
+      "checkpoint": "results/structural_comparisons/duplication-domain-alignments-20260926-v1/pairs/f3/f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641-plddt70-0.json",
+      "sha256": "0910519c8629cccf1a4d768fa9921b8fff2cbdc55d6fba6c77521c8ef6dddfea",
+      "strict_result": "passed",
+      "analytic_two_point_rmsd": 0.2664958883100623,
+      "paired_segment_lengths": [
+        6.487878929203287,
+        5.954887152583162
+      ],
+      "rmsd_status": "within_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.266495888310063,
+      "rmsd_native": 0.27,
+      "rmsd_rounding_error": 0.0035041116899370284,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.05272,
+      "tm_right_native": 0.31151,
+      "coverage_left": 0.05405405405405406,
+      "coverage_right": 0.4,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0,
+      "native_rerun_summary": "Aligned length= 2, RMSD=   0.27, Seq_ID=n_identical/n_aligned= 0.000",
+      "native_rerun_reproduces_summary": true
+    },
+    {
+      "order": 1,
+      "checkpoint": "results/structural_comparisons/duplication-domain-alignments-20260926-v1/pairs/f3/f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641-plddt70-1.json",
+      "sha256": "667e8b154555efc17fa5e04c7d437ac4d309147c90f6f613bd2c59dddcdd7d4a",
+      "strict_result": "RMSD exceeds printed rounding",
+      "analytic_two_point_rmsd": 0.2664958883100623,
+      "paired_segment_lengths": [
+        5.954887152583162,
+        6.487878929203287
+      ],
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.26649588831006216,
+      "rmsd_native": 0.26,
+      "rmsd_rounding_error": 0.006495888310062148,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.31151,
+      "tm_right_native": 0.05272,
+      "coverage_left": 0.4,
+      "coverage_right": 0.05405405405405406,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0,
+      "native_rerun_summary": "Aligned length= 2, RMSD=   0.26, Seq_ID=n_identical/n_aligned= 0.000",
+      "native_rerun_reproduces_summary": true
+    }
+  ],
+  "scope": "Two-point closed-form optimum agrees with SVD in both orders. Native reverse-order RMSD outside printed rounding; underlying cause not yet established. No tolerance changes or data corrections.",
+  "tampered_tm_score_rejected": true
+}
