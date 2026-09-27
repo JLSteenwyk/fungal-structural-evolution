@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-matched-domain-design-readback-20260927.service",
+  "pid": 3429828,
+  "created": 1790520348.06,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_matched_domain_designs.py",
+    "--plan",
+    "metadata/matched_domain_design_plan_20260927.json",
+    "--launch",
+    "metadata/matched_domain_design_launch_20260927.json",
+    "--output",
+    "metadata/matched_domain_design_readback_20260927.json"
+  ],
+  "script_sha256": "5f38b2eb45671941e6648939f548d3dd8d2fd6f50647a0f8908c35c72135783b",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Waits for exact producer process to exit and requires successful authoritative systemd terminal state before reading full outputs."
+}

@@ -7584,3 +7584,22 @@ See [taxon input methods](selected-taxon-inputs-20260927.md) and
 inputs without fitting a covariance or effect. Whole-protein comparison workers
 continue; adjusted inference, ancestral work and other goal requirements remain
 incomplete. All eight aims remain open. GPU prediction remains paused.
+
+## September 27 full matched covariate design checks launched
+
+The previous goal turn completed and independently checked the full selected
+taxon inventory (progress). Launched all 192 matched settings by 432 strata
+for covariate rank, conditioning, marginal equal-covariate support and
+post-qualification target/background reuse. All observed record denominators
+must equal the independently verified summaries. No response-based subset
+selection or model fitting is performed. Fixtures cover redundant, constant
+and full-rank designs.
+
+The producer is confirmed live by PID, creation time, exact command and
+advancing journal checkpoints. A separately recorded verifier waits for
+authoritative successful completion, then reconstructs every field using SQL
+moments and covariance eigenvalues rather than producer SVD. Scripts and plans
+are frozen for these jobs. Both have one CPU, 12 GiB memory and no swap.
+[Design methods and limitations](matched-domain-design-diagnostics-20260927.md).
+Full numerical results and independent readback remain pending. All eight aims
+remain open; GPU prediction remains paused.
