@@ -1,0 +1,54 @@
+{
+  "robustness": "results/structural_comparisons/duplication-domain-common-core-robustness-20260927-v1",
+  "robustness_readback": "metadata/duplication_domain_common_core_robustness_completed_20260927.json",
+  "integration": "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1",
+  "integration_readback": "metadata/duplication_domain_triad_integration_completed_20260927.json",
+  "mappings": "results/structural_comparisons/duplication-domain-common-residues-20260927-v1",
+  "output": "results/structural_comparisons/duplication-domain-event-robustness-20260927-v1",
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "margins": [
+    {
+      "id": "direction_margin_0",
+      "angstrom": 0.0
+    },
+    {
+      "id": "direction_margin_0_01",
+      "angstrom": 0.01
+    },
+    {
+      "id": "direction_margin_0_1",
+      "angstrom": 0.1
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      5
+    ],
+    "basis": "Join 72336 event/domain links to 47916 interval-level joint summaries and complete 34909 guide/event universe; no new fitting or GPU/charges."
+  },
+  "pins": {
+    "scripts/summarize_domain_event_robustness.py": "8fc31655e123d27a36b8a9c334804d29385f51e399179ee642c57f568b3b4300",
+    "scripts/summarize_common_core_robustness.py": "5c047abf7a24063b175e0a1b959ef615703a3f20cd5a8cb41b79341ef375127f",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/duplication_domain_common_core_robustness_plan_20260927.json": "2358e600810db1367c0b27c77d6c7aabc98e2442573e1e2a4d086567d652b8d1",
+    "metadata/duplication_domain_common_core_robustness_completed_20260927.json": "744d12fc694031b5e424b8d0bad5b9aa7bde628e644bdeca3da94e22c55faee4",
+    "metadata/duplication_domain_triad_integration_completed_20260927.json": "51619e00dedbc6de86dcf8b23bad08550d60d1c0f74e45347ba26468fc7551e3",
+    "results/structural_comparisons/duplication-domain-common-core-robustness-20260927-v1/receipt.json": "2c9edb1f52b3bac1c5f756b6e36b11a6467ab7a0458616b0dfe8d77a15430957",
+    "results/structural_comparisons/duplication-domain-common-core-robustness-20260927-v1/robustness.tsv": "0f56970155927ae5c40ed1c4c4c990cb8f9a7683ea83702db21b74ee493222c3",
+    "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1/receipt.json": "01b788e5880d45894ae7382c452e31a0469b8921f655283b825b594fc98933d8",
+    "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1/domain_triads.sqlite": "34143d2a92b0662922d66365799bce93f07abae475e901a0099936079585181f",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/receipt.json": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/event_domain_links.tsv": "4bd600c42de35b6ac8f408a9e08a119bd0a158ebbbd740455cda67e3c43d4fe2"
+  }
+}

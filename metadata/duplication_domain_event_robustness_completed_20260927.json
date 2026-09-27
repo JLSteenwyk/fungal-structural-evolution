@@ -1,0 +1,181 @@
+{
+  "status": "passed_full_domain_event_robustness_readback",
+  "producer_receipt_sha256": "29482acc878dcbde1eb731d8fda3527694817a9762fa54b55b62ff519c48e3bb",
+  "plan_sha256": "5d8f38b33320a5893a0594ba1c5a6874d078adf91bbc0065ae196adc20609c8d",
+  "checker_sha256": "e3bc116307a7c12ff05807a02b1347b7f6167a32d5715e84a592d1b049e8e422",
+  "events_checked": 34909,
+  "event_domain_screen_rows_checked": 50778,
+  "event_domain_combinations": 8463,
+  "events_with_domain_candidates": 6851,
+  "n30_c70_classifications": [
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 1459
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 1396
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 783
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0",
+      "classification": "incomplete",
+      "event_domain_combinations": 592
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 1460
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 1396
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 783
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0",
+      "classification": "incomplete",
+      "event_domain_combinations": 594
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_01",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 1226
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_01",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 1175
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_01",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 569
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_01",
+      "classification": "incomplete",
+      "event_domain_combinations": 592
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_01",
+      "classification": "touches_or_within_margin_band",
+      "event_domain_combinations": 668
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_01",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 1227
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_01",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 1175
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_01",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 569
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_01",
+      "classification": "incomplete",
+      "event_domain_combinations": 594
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_01",
+      "classification": "touches_or_within_margin_band",
+      "event_domain_combinations": 668
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_1",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 487
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_1",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 481
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_1",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 97
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_1",
+      "classification": "incomplete",
+      "event_domain_combinations": 592
+    },
+    {
+      "guide": "mafft",
+      "margin": "direction_margin_0_1",
+      "classification": "touches_or_within_margin_band",
+      "event_domain_combinations": 2573
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_1",
+      "classification": "a_farther_from_reference",
+      "event_domain_combinations": 487
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_1",
+      "classification": "b_farther_from_reference",
+      "event_domain_combinations": 481
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_1",
+      "classification": "changes_direction_across_alternatives",
+      "event_domain_combinations": 97
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_1",
+      "classification": "incomplete",
+      "event_domain_combinations": 594
+    },
+    {
+      "guide": "profile",
+      "margin": "direction_margin_0_1",
+      "classification": "touches_or_within_margin_band",
+      "event_domain_combinations": 2574
+    }
+  ],
+  "scope": "All event availability rows, original sequence covariates, complete tied-reference/policy/boundary grids, interval-summary joins, extrema, completeness and direction labels independently reconstructed. Event-domain rows and guides remain dependent; no biological significance or ancestral-direction inference."
+}

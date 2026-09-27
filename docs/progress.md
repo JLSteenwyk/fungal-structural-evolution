@@ -5936,3 +5936,26 @@ and the [completion record](../metadata/duplication_domain_common_core_robustnes
 Interval triads are dependent alternatives, not independent events. Reference,
 annotation policy/boundary and guide sensitivity, and controlled evolutionary
 inference remain outstanding.
+
+
+## September 27 event/domain robustness across references and annotations verified
+
+Completed and independently checked the event-level robustness join. All 34,909
+provisionally referenced guide/events remain in an availability ledger; 6,851
+have common-domain candidates. The 8,463 event–Pfam combinations produce 50,778
+screen rows. A complete label requires every tied reference, all four annotation
+policies, both boundaries and all 32 fitting alternatives to pass. Pfams remain
+separate and original gene-oriented sequence covariates are preserved exactly.
+
+At 30 residues/70% coverage and the descriptive 0.1 Å margin, 968 event/domain
+combinations per guide retain one direction, 97 span both directions, and the
+remaining rows are within/touch the margin band or incomplete. Equal aggregate
+counts do not establish cross-guide identity agreement. These are similarity-to-
+reference summaries, not ancestral change or significant duplication effects.
+
+The independent checker reconstructed every source join, expected unit count,
+missing/complete status, sequence field, extremum and classification. See
+[methods and results](duplication-domain-event-robustness-20260927.md) and the
+[completion record](../metadata/duplication_domain_event_robustness_completed_20260927.json).
+Cross-guide identities and sequence-divergence relationships are next, with
+phylogenetic/statistical controls still outstanding.
