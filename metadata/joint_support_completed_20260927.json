@@ -1,0 +1,69 @@
+{
+  "status": "complete_verified_joint_support_and_constructive_followup",
+  "stages": [
+    {
+      "unit": "fungal-full-joint-covariate-support-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/full-joint-covariate-support-20260927-v1/receipt.json",
+      "receipt_sha256": "66b1d0058d1e18e555d56b1c3e9f2fce1b0af84cd5bff05cb6c2b79bd2721c1b",
+      "artifacts_checked": 1
+    },
+    {
+      "unit": "fungal-full-joint-support-readback-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/full-joint-support-readback-20260927-v1/receipt.json",
+      "receipt_sha256": "e75fc57cc460ecbab525555d674f753b53c2e649977e78993f4cca757a820f25",
+      "artifacts_checked": 2
+    },
+    {
+      "unit": "fungal-joint-support-failure-summary-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/joint-support-failure-summary-20260927-v1/receipt.json",
+      "receipt_sha256": "3be226998f89ea844653fe4d89df0c35cba4beabe133bedfa297bf006cf2e630",
+      "artifacts_checked": 1
+    },
+    {
+      "unit": "fungal-joint-support-projection-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/joint-support-projection-20260927-v1/receipt.json",
+      "receipt_sha256": "db7bad57523ba93fc74a0591f03303047df8a0c787d6a1ea54f865aa401d67c4",
+      "artifacts_checked": 2
+    }
+  ],
+  "original_classification_counts": {
+    "zero_supported_to_numeric_tolerance": 28784,
+    "unresolved_certificate": 24
+  },
+  "original_setting_counts": {
+    "zero_supported_to_numeric_tolerance": 82920,
+    "unresolved_certificate": 24
+  },
+  "failure_reason_counts": {
+    "negative_weight": 24
+  },
+  "projection_classification_counts": {
+    "supported_by_projected_nonnegative_weights": 24
+  },
+  "projection_setting_counts": {
+    "original_certificate_retained": 82920,
+    "supported_by_projected_nonnegative_weights": 24
+  },
+  "script_sha256": "d50e79956fe0afa2c948f6a992da632fc1e5575422d199e85fc2be75f2ae7010",
+  "scope": "Full original certificate readback, all-settings mapping, failure diagnosis and original-matrix constructive follow-up completed. Original classifications retained. Numerical hull support does not establish interior overlap, dense sampling, valid uncertainty, adequate covariance or a biological effect."
+}

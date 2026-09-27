@@ -7894,3 +7894,14 @@ successful completion, retaining all starts and between-start discrepancies.
 Producer: four CPUs, 8 GiB, no swap, 1–48 hours planned; audit: one CPU/8 GiB.
 No result yet supports global optimality, calibrated intervals or selection.
 All eight aims remain open. GPU prediction remains paused.
+
+### September 27: full joint-covariate support completed
+
+All 28,808 exact comparative-model inputs and 82,944 original settings now have
+numerical joint support for the zero-covariate reference. Full independent
+readback accepted 28,784 original certificates; all 24 remaining cases had tiny
+negative optimizer weights and passed a separate nonnegative construction checked
+against their original matrices. All four services ended successfully and all
+artifacts were verified in `metadata/joint_support_completed_20260927.json`.
+Original classifications remain preserved. This does not complete model fitting,
+uncertainty calibration, duplication inference or any of the eight scientific aims.

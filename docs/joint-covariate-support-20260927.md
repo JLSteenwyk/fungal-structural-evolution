@@ -108,3 +108,26 @@ Execution uses one CPU, 16 GiB RAM, no swap, at most 1 GiB output, and a plannin
 allowance of 0.1–12 hours after full readback. Only unresolved inputs require
 matrix reconstruction; every original setting remains represented. Completion
 is pending and no additional supported input is claimed yet.
+
+## Completed full support check
+
+All four services finished successfully, with complete artifact checks and
+source-linked receipts recorded in `metadata/joint_support_completed_20260927.json`.
+Independent original-matrix readback verified 28,784 valid original support
+certificates and 24 unresolved certificates across all 28,808 unique inputs.
+The full mapping contains 82,920 originally supported settings and 24 unresolved
+settings (82,944 total). All 24 failures were due solely to negative weights;
+the largest total negative mass was 8.0488e-10.
+
+The constructive follow-up successfully produced nonnegative certificates for
+all 24 cases. Its maximum scaled absolute barycenter coordinate was
+1.99813e-10, below the unchanged 1e-8 support tolerance. Thus all unique inputs
+and all original settings now have numerical joint support, while their
+original solver classifications remain preserved. No separating or unresolved
+case remains after this explicitly recorded follow-up.
+
+This establishes only proximity to zero within the empirical covariate convex
+hull at the stated scaled tolerance. Boundary support and highly sparse support
+are allowed. Dense local overlap, effective sample size, covariance adequacy,
+nonlinear adjustment, calibrated uncertainty and biological inference remain
+separate requirements. Original fitted model flags were not changed.

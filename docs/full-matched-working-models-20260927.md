@@ -82,3 +82,10 @@ Launch: `metadata/full_matched_working_model_output_audit_launch_20260927.json`.
 Expected proof: `metadata/full_matched_working_model_output_audit_20260927.json`.
 This audit uses one CPU, 8 GiB memory and no swap, with 0.1–12 hours allowed after
 production finishes. Error and review dispositions remain explicit.
+
+The complete [joint-covariate support check](joint-covariate-support-20260927.md)
+has passed for all 28,808 unique inputs and all 82,944 settings. Independent
+readback accepted 28,784 original certificates; a separately documented
+nonnegative-weight construction supported the remaining 24 within the unchanged
+1e-8 scaled tolerance. This clears the numerical reference-support diagnostic,
+not the pending covariance, optimization, uncertainty or biological gates.
