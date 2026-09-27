@@ -1,0 +1,59 @@
+{
+  "producer": {
+    "pid": 2424201,
+    "created": 1790507641.35,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_local_codon_trees.py",
+      "--inputs",
+      "results/cds/full-group-codon-realignment-projection-20260927-v1",
+      "--readback",
+      "metadata/full_codon_realignment_projection_readback_20260927.json",
+      "--information",
+      "metadata/local_codon_tree_information_20260927.tsv",
+      "--resources",
+      "metadata/local_codon_tree_resource_plan_20260927.json",
+      "--output",
+      "results/phylogeny/local-codon-trees-20260927-v1"
+    ]
+  },
+  "trees": "results/phylogeny/local-codon-trees-20260927-v1",
+  "inputs": "results/cds/full-group-codon-realignment-projection-20260927-v1",
+  "audit_output": "results/phylogeny/local-codon-tree-audit-20260927-v1",
+  "controller_output": "results/cds/local-codon-tree-audit-handoff-20260927-v1",
+  "expected_cases": 1632,
+  "pins": {
+    "results/cds/full-group-alignment-readiness-20260927-v1/receipt.json": "882a17f3e05e0f1b11a09ae993647f0997a826717d34b99e72f6ba9e364316a5",
+    "results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv": "c07f3ff318d83f974e168a581f48e0dd8bf8badc8d3698ba9d5deb236f3d1c2f",
+    "metadata/full_codon_alignment_integration_readback_20260927.json": "2e5d359b5a47f64b1b44788022fe67bd069a73f88923ab0360bcdc65fe5e68df",
+    "metadata/fcs_codon_omission_disposition.tsv": "a13ebaf0837cf69f6a121a0baf4f82bb9f2b5671d544f8a22d016cdf54c109cb",
+    "results/qc/fcs-cds-overlap-v1/marker_overlap_review.tsv": "c2ccd3623a581445954faa85b6b50ff442904c81b2cc4ad0a8d45a77094eb173",
+    "results/qc/fcs-cds-overlap-v1/receipt.json": "3dd6a57ebf5d48bee32e776a0854b514fa68b16e17da2f223c65cb98b13c2e70",
+    "metadata/fcs_cds_overlap_audit_receipt.json": "1718caa7d38c24b79d7ef7a158b1e967af32898f7852ba88bf2a1062d364f708",
+    "metadata/codon_analysis_readiness_receipt.json": "4392bf709d537e86713f899185ae6aae5534f163b05b21ace25fba82133bd48a",
+    "scripts/run_local_codon_trees.py": "23e2db4ef1d80d5d91e03b64ca1e08b4bf78b21058ead67bc16987b504b8a137",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_local_codon_tree_plan.py": "03b4326d88d1dfa3f442e8ace775a4198777adee077aa12f1507b55a7e3adbeb",
+    "metadata/local_codon_tree_resource_plan_20260927.json": "7220905be39de1250e548bbd5501d3b63b8ad5db6a5ea26de9b86e6e1ee2a5c6",
+    "metadata/local_codon_tree_plan_readback_20260927.json": "1069eda5e311a6b3ac7cfb3fd2f3b0d9abc49aaee57640e9c1fd9bc1de3c342c",
+    "metadata/local_codon_tree_information_20260927.tsv": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4",
+    "metadata/full_codon_realignment_projection_readback_20260927.json": "b78152cac3d6db5c40eed0cb6761f566b2868c952a00a85c178a1876afe48f07",
+    "scripts/advance_local_codon_tree_audit.py": "d3f6a4597ab9a811e49aa72c37fabef0dd4abe0e0f36804b136b1ee8698fe305",
+    "results/phylogeny/local-codon-trees-20260927-v1/config.json": "9b80c28f72c0a9bdf4d9cbd8e285ac9df7647227cf279c1e8dde4ba131f9b473"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gb": 1,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "cost": "Existing local CPU host, no new charges"
+  },
+  "scope": "Complete tree/model/report audit and independent recounting of 1632000 bootstrap trees after exact producer identity terminates with complete receipt; no partial-mode acceptance."
+}

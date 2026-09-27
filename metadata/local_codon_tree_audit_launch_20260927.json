@@ -1,0 +1,17 @@
+{
+  "service": "fungal-local-codon-tree-audit-20260927.service",
+  "pid": 2427893,
+  "created": 1790507787.0,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_local_codon_tree_audit.py",
+    "--plan",
+    "metadata/local_codon_tree_audit_plan_20260927.json"
+  ],
+  "plan_sha256": "e8f73663d8f571f4863c94764b0a0d3d4a52997787c2353a2ac1b0e0d831f4a4",
+  "status": "verified_live_waiting_for_identified_tree_producer",
+  "gate_checks": [
+    "incomplete_producer_status_rejected",
+    "incomplete_case_count_rejected"
+  ]
+}

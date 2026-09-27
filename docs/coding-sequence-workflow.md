@@ -1256,3 +1256,25 @@ full tree audit must subsequently verify reports, splits and support counts
 before tree comparisons or downstream codon fits are interpreted. Execution,
 full output audit and alignment-dependent topology/parameter comparisons are
 not yet complete.
+## Full local-tree audit queued
+
+`scripts/advance_local_codon_tree_audit.py` is running behind the identified
+1,632-case producer. It waits for the recorded PID/creation-time/command to
+terminate, checks a complete execution receipt and the exact expected count,
+then invokes the unchanged `audit_genus_codon_trees.py` without incomplete-case
+mode. All scripts, configuration, input proof and disposition hashes are pinned.
+An incomplete producer status and an incomplete case count were each tested
+and rejected before the audit could launch.
+
+The audit will independently parse and check all 1,632,000 saved bootstrap trees,
+exact tip/split grids, reports and rounded UFB frequencies. SH-aLRT support
+ranges are checked but the likelihood tests are not independently rerun.
+Topology/alignment sensitivity comparisons and codon adequacy remain downstream.
+The controller is limited to one CPU, 8 GiB RAM and no swap; its planning
+allowance is 1 GB output and 0.1–12 hours after production, on existing resources.
+Plan and live identity are recorded in
+`metadata/local_codon_tree_audit_plan_20260927.json` and
+`metadata/local_codon_tree_audit_launch_20260927.json`. Expected output is
+`results/phylogeny/local-codon-tree-audit-20260927-v1`, with a separate controller
+receipt under `results/cds/local-codon-tree-audit-handoff-20260927-v1`.
+Queuing the audit does not establish that production or verification is complete.

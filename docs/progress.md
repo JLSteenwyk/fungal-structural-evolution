@@ -6929,3 +6929,18 @@ creation time and command; its checkpoint had reached 990/2,000 trees. No live
 pinned script was modified. Full tree audits, topology sensitivity and codon
 model adequacy remain downstream. All eight aims remain open; GPU structure
 prediction remains paused.
+## September 27 full local-tree audit queued
+
+The previous goal turn launched the full 1,632-case local-alignment tree fits.
+This turn verified the exact producer process identity, implemented and launched
+the full downstream audit controller, and tested rejection of incomplete status
+and case counts. The existing audit will check every saved bootstrap tree,
+model report and rounded support frequency after successful production. No
+partial result is accepted as full completion. CPU/RAM limits and all script
+and input hashes are recorded; no pinned running script was changed.
+
+Background-coordinate and ecology-bootstrap validators were also confirmed live
+by PID, creation time and command. Their completion receipts were not yet
+present; they were neither restarted nor reported complete. The tree audit is
+queued, not complete. All eight scientific aims remain open, and GPU prediction
+remains paused.
