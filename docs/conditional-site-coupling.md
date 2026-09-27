@@ -636,3 +636,39 @@ The new controller is `scripts/advance_recovered_rate_optimization.py --config
 metadata/recovered_afdb_rate_optimization_plan_20260927.json`. It uses exclusive
 stage outputs and verified checkpoints. Exposure integration and coupling remain
 separate downstream stages.
+
+### Full joined-frame readback and recovered AlphaFold handoff (September 27)
+
+Added `readback_site_rate_exposure_frame.py`, which checks every joined exposure
+field, all eight rate values per site, the full unique site/fit grid, copied fit
+diagnostics, alignment composition, coverage and independently calculated entropy.
+It requires matching complete rate and exposure readbacks before accepting the
+join. Its full run on the completed ESMFold frame passed: 122 markers, 44,198
+sites, 353,584 rate values and 6,758,598 observed residue cells. The archived
+record is `metadata/esmfold_site_rate_frame_full_readback_20260927.json`.
+This adds verification of the existing ESMFold join, not a new biological result.
+
+Tests on temporary copies with recomputed artifact hashes rejected altered rate
+values, altered entropy and a missing site. Evidence is
+`metadata/site_rate_frame_rejection_checks_20260927.json`; reproduce with
+`scripts/check_site_rate_frame_rejections.py`. An initial test-record write failed
+because the hash helper required Path arguments; that fixture-only error was
+corrected and the complete rejection test rerun successfully. Production inputs
+were unchanged.
+
+The recovered AlphaFold frame controller now waits for both the all-fit rate
+optimization/comparison/readback controller and the site exposure/readback
+controller. Their process identities and completion receipts gate the join.
+It will produce and independently check all 47,529 sites with 380,232 rate values
+and 9,453,757 observed residue cells. The frame retains extant exposure summaries,
+composition, coverage, copy-review flags and diagnostic warnings.
+
+The pinned plan is `metadata/recovered_afdb_site_rate_frame_plan_20260927.json`,
+with launch identity in the adjacent launch record. Execution uses one CPU,
+8 GiB RAM, no swap, 2 GiB output allowance and 16 GiB available-memory/20 GiB
+disk gates. The 1–30 minute planning estimate excludes all predecessor wait time.
+Outputs are `results/phylogeny/site-rate-exposure-frame-afdb-recovered-20260927-v1`
+and `results/recovery-20260927/afdb-site-rate-frame/readback/receipt.json`.
+These outputs are queued, not completed coupling analyses. The conditional
+models, copy-omission sensitivity and marker resampling remain downstream;
+shared ancestry, rate uncertainty and prediction circularity remain limitations.

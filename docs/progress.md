@@ -6069,3 +6069,18 @@ without treating it as one native fit directory. See
 The previous turn made progress by implementing and queuing the full projection;
 this turn completes verified topology preparation and its downstream handoff.
 The scientific aims and GPU prediction pause remain unchanged.
+
+## September 27 rate/exposure frame readback verified and AlphaFold join queued
+
+Implemented full independent readback of every rate/exposure join field and
+alignment covariate. The complete existing ESMFold frame passed across 44,198
+sites and 353,584 rate values. Tests rejected rehashed altered rates, entropy and
+missing rows. No source estimates or biological conclusions changed.
+
+Queued the 125-marker recovered AlphaFold frame producer and full readback behind
+the verified live optimization and exposure controllers. Expected scope is
+47,529 sites and 380,232 rate values; neither the frame nor coupling is complete.
+See [methods and completion evidence](conditional-site-coupling.md). The preceding
+goal turn made progress through verified topology preparation and its queued
+handoff; this turn adds tested join verification and the next executing handoff.
+GPU prediction remains paused, with the full scientific objective still active.
