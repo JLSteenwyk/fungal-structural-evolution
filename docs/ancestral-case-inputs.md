@@ -772,3 +772,44 @@ limit,no swap/GPU; estimate0.2–8 hours after audit and up to4GiB output.
 These are conditional residue probabilities, not final ancestral sequences
 or evidence for ancestral deletion states. Model adequacy, indel uncertainty
 and structural prediction remain open.
+
+## Independent verification of all-refit probabilities queued
+
+Queued the fixed-root inside/outside checker for every refitted domain
+probability array. The expected scope is936 fits,2,808 mapped nodes,504,846
+node/sites and10,096,920 probabilities. It waits for verified terminal success
+of the refitted-probability producer, then checks its receipt against the
+fit audit and fitted parameters before evaluating any array. Every node is
+matched by complete incident-tip partitions, independently of node labels.
+The second evaluator uses direct matrix exponentials and uncompressed
+alignment columns; its analytic two-internal-node enumeration precedes
+production. Prespecified absolute tolerances are1e-8 for both probabilities
+and site log likelihoods. Every fit remains in scope.
+
+Run `python scripts/audit_refitted_domain_posteriors.py`; plan/launch metadata
+use `refitted_domain_posterior_audit_`, date `20260927`. Output:
+`results/ancestral/refitted-domain-posterior-audit-20260927-v1/`. One CPU,4GiB
+RAM,no swap/GPU; estimate0.2–8 hours after probability production,0.2GiB output.
+Results remain pending. Numerical agreement does not establish model adequacy,
+convergence, indel history or biological support for ancestral sequences.
+
+## Alternate-start audit completed: optimization differences remain
+
+All936 report/checkpoint checks and independent likelihood replays passed,
+maximum absolute error1.23417e-5 log units. Complete saved group extrema and
+all artifact hashes were checked; producer and auditor terminated successfully.
+At each gamma bound,48 of156 model/alignment groups have across-start
+likelihood range above0.001; maximum range14.2882. Best refits improve49 of156
+baseline fits by more than0.001, maximum gain0.383662, at either bound.
+No lower-bound best fit improves over the original-bound best fit by0.001
+(maximum difference1.98e-5). These results do not establish global convergence.
+
+Thus the earlier finite gamma/uniform-branch grid missed optimization
+differences involving individual branches or other optimization paths.
+Poorer local solutions must not be interpreted as equally plausible biological
+uncertainty. All-refit posterior calculations remain useful diagnostics, but
+selection or weighting for ancestral sequence ensembles requires convergence
+assessment and comparison to the best qualified solutions. Short edges remain
+common (840 of936 fits); warning exports also include informational zero-failure
+lines and are not counts of failed jobs. Completion:
+`metadata/ancestral_domain_multistart_audit_completed_20260927.json`.

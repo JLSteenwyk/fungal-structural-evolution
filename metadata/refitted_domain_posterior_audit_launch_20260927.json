@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-refitted-domain-posterior-audit-20260927.service",
+  "state": {
+    "MainPID": "526298",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 526298,
+  "created": 1790547855.75,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_refitted_domain_posteriors.py"
+  ],
+  "plan_sha256": "92689d648dbfa64bfa8a844f9723240a59d2b94a090a7a47640d588fbc852074",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.2,
+      8
+    ]
+  }
+}

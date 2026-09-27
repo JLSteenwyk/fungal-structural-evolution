@@ -1,0 +1,36 @@
+{
+  "source": "results/ancestral/refitted-domain-ancestors-20260927-v1",
+  "producer_plan": "metadata/refitted_domain_ancestor_plan_20260927.json",
+  "producer": {
+    "unit": "fungal-refitted-domain-ancestors-20260927.service",
+    "pid": 523333,
+    "created": 1790547747.6,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/infer_refitted_domain_ancestors.py"
+    ]
+  },
+  "output": "results/ancestral/refitted-domain-posterior-audit-20260927-v1",
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-08,
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.2,
+      8
+    ]
+  },
+  "pins": {
+    "metadata/refitted_domain_ancestor_plan_20260927.json": "0336e51e53604d4dea5e048b16930cac67ed2cd29527bc7f88bf0d8076511eea",
+    "metadata/refitted_domain_ancestor_launch_20260927.json": "088facfdfffb8b3e138c8e63f6fe92b1d7101a804373ba8e57e2eee361155bd8",
+    "scripts/audit_refitted_domain_posteriors.py": "29f4f1754eaf2346eabb34b62a6c0159f884699cfc4e775abdf621010587e08e",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv": "d0580980a65c5cf2e3ea1736afd72c951a037068f5cfcfbd984684fc34423245",
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb"
+  }
+}

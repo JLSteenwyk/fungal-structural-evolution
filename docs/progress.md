@@ -8962,3 +8962,21 @@ likelihoods. Queued probability propagation across all2,808 mapped fit/nodes,
 gated on complete successful audit and hash-bound parameters. Allsix settings
 per baseline fit retained; node identities matched by incident-tip partitions.
 One CPU,4GiB RAM,noGPU. Posterior results and independent verification pending.
+
+### 2026-09-27: complete refitted-probability verification queued
+
+Queued independent inside/outside evaluation of all936 refits and2,808
+internal-node marginals behind the verified live probability producer.
+Expected10,096,920 amino-acid probability comparisons; no settings excluded.
+One CPU,4GiB RAM,noGPU. Numerical verification and optimization-sensitivity
+interpretation remain pending.
+
+### 2026-09-27: all936 domain refits independently verified
+
+All reports/checkpoints and likelihood replays passed; maximum error1.23417e-5.
+At each bound,48/156 groups vary across starts by>0.001 (maximum14.2882).
+Best refits improve49 baseline fits by>0.001 (maximum0.383662); lower gamma
+bound provides no gain>0.001. Optimization sensitivity remains real despite
+the earlier finite-grid result. Poorer local solutions are diagnostic, not
+equally supported biological uncertainty. All-refit posterior propagation
+and its independent verification remain downstream.
