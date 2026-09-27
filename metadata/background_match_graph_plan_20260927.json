@@ -1,0 +1,40 @@
+{
+  "architecture_plan": "metadata/architecture_matching_support_plan_20260927.json",
+  "architecture_receipt": "results/orthology/architecture-matched-background-support-20260927-v1/receipt.json",
+  "architecture_readback": "metadata/architecture_matching_support_completed_readback_20260927.json",
+  "architecture_table": "results/orthology/architecture-matched-background-support-20260927-v1/architecture_support.tsv",
+  "model_tables": [
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl"
+  ],
+  "output": "results/orthology/background-match-graph-20260927-v1",
+  "pins": {
+    "metadata/architecture_matching_support_plan_20260927.json": "898f73db7278e554eda984a0cd78386cb7d1793a687e7a26f6b4249e3e0101cc",
+    "results/orthology/architecture-matched-background-support-20260927-v1/receipt.json": "6cccaf1a544b0065e3441f6d93b8e5aec3cc3fb0e237bc7b124428166bf8114c",
+    "metadata/architecture_matching_support_completed_readback_20260927.json": "51831285140ad43e97a9465b37f9261188753e89193d2f5a92757fe5679415d5",
+    "results/orthology/architecture-matched-background-support-20260927-v1/architecture_support.tsv": "bdc8d504ef1565c96b4184860dc85cb0e4b87d1a78630b13a4d1e9e2631514dd",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/candidate_measurement_links.tsv": "5077fe8023549368376d57ecbd6586da3d8fafe7f60cf7a95f9b9d3843bc9ca6",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl": "7423c03ac2abf93f659b538f76de8358133f135fe75c82c5bd1dccdec4d48e22",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/model_annotations.jsonl": "64e7dee0ffec1dcfd75865c380eff62e9cd28a5e9a4602ba261cce4ab44b5e76",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl": "4f59e546e6010015ce5d18da7ca7823c79cc96a8d3a45ec46fdbac5514bd415e",
+    "scripts/prepare_background_match_graph.py": "b8c02933fabd225770bc05ea2f08b06166fa519e0b35b3c21c62f6d5da43be97",
+    "scripts/assess_architecture_matched_support.py": "109f6d536968520776a0010de5d8ce2caf939a4f307a44b085d1fca7159dbbfb",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 4,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "expected_edges": 1661948,
+    "target_nodes": 218473,
+    "target_policy_dispositions": 873892,
+    "basis": "Full metadata enumeration of same-family, conservative shared-architecture candidates within factor2 sequence distance, with tighter range/qualification flags and original endpoint covariates. Edge count obtained by summing every verified guide-native within_factor_2_0 support row. No response-dependent selection, native comparison or GPU. Existing resources, no charges."
+  }
+}

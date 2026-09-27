@@ -6553,3 +6553,18 @@ availability diagnostics, not biological effects. See the
 The previous turn completed the queued domain verification chain. This turn
 adds a verified, reproducible research figure documenting sampling limitations.
 All eight aims remain active; GPU prediction remains paused.
+
+## September 27 complete candidate matching graph launched
+
+Started enumeration of all 1,661,948 conserved-architecture candidate edges
+implied by the verified full support table, retaining all 218,473 targets and
+four-policy unsupported dispositions. Node records preserve endpoint length,
+confidence and identity covariates; tighter distance, focal and background
+qualification flags preserve the full sensitivity design. Range fixtures passed;
+production and full independent graph reconstruction are pending. No selected
+matches or matched biological effects are claimed. See
+[candidate graph scope](terminal-sister-backgrounds-20260927.md#full-candidate-matching-graph-launched).
+
+The preceding turn produced the verified coverage figure; this turn advances
+actual candidate-control construction. All eight aims remain active and GPU
+prediction stays paused.

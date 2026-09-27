@@ -719,3 +719,34 @@ reconstructed from verified source rows, including denominators, ranks and
 cumulative counts. The rendered PNG was visually inspected. Reproduction
 commands and script/export hashes are recorded in
 `metadata/background_support_figure_reproduction_20260927.json`.
+
+## Full candidate matching graph launched
+
+Started `fungal-background-match-graph-20260927.service` to enumerate actual
+candidate controls, extending the verified support counts. All same-family,
+conservative shared-architecture target/background pairs within a factor of two
+of sequence distance are included for both guides and all four annotation
+policies. Exact zero distances match only zero; tighter 1.25/1.5 distance flags
+and focal-taxon membership are retained. Background nodes preserve both-guide
+native-orthology and unreported-parent flags, so all three qualification sets
+can be reconstructed without duplicating graph edges.
+
+The full verified support table predicts 1,661,948 edges. All 218,473 target
+records and 873,892 target/policy dispositions remain, including unsupported
+ones. Target and background nodes retain gene/taxon/model/version identities,
+raw and sequence hashes, endpoint lengths, mean CA pLDDT and low-confidence
+fractions. These covariates are preserved for balancing, not yet used to claim
+that a control is well matched. Structural responses do not enter construction.
+
+The indexed distance search passed 1,000 direct-enumeration fixtures, exact-zero
+and boundary cases, empty pools and invalid distances. Production cross-checks
+every emitted target/policy's distance and focal counts against the independently
+verified support table. Full independent graph reconstruction remains pending.
+Reused controls and shared genes, taxa, families or guide alternatives must not
+be treated as independent observations. Final control selection, covariate
+balance, outcome eligibility, phylogenetic adjustment and effect estimation
+remain outstanding.
+
+Resource plan: one CPU, 16 GiB RAM, no swap, 4 GiB output allowance and
+uncalibrated 0.1–4 hours. This is metadata processing only; no GPU prediction,
+native structural comparisons or paid infrastructure was started.
