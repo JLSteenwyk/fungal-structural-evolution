@@ -1,0 +1,60 @@
+{
+  "producer": {
+    "pid": 3951003,
+    "created": 1790469675.49,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/materialize_duplication_alignment_inputs.py",
+      "--plan",
+      "metadata/duplication_alignment_input_plan_20260926.json"
+    ]
+  },
+  "inputs": "results/structural_comparisons/duplication-alignment-inputs-20260926-v1",
+  "input_plan": "metadata/duplication_alignment_input_plan_20260926.json",
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1",
+  "output": "results/structural_comparisons/duplication-alignments-20260926-v1",
+  "usalign": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+  "options": [
+    "-mol",
+    "prot",
+    "-mm",
+    "0",
+    "-outfmt",
+    "0",
+    "-ter",
+    "2"
+  ],
+  "workers": 4,
+  "per_pair_timeout_seconds": 600,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "metadata/duplication_alignment_input_plan_20260926.json": "96a935b2038b0ddbaafa12b26cff73b59cd58be0b8f4734353176ff9d88a5b11",
+    "metadata/duplication_alignment_input_launch_20260926.json": "5faec6e9723431688de00d8407fbc5b1c5f5799469dd49c3cd1331333ff31537",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_runner.py": "cd39661a8c27ced6705527388094f692cc4fc449004a85c46f6956a657f77a3c",
+    "scripts/check_duplication_alignment_handoff.py": "abd0387e5107c4ae69a5cdd4128537e4ac021761c34e200659e50f157bce3921"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "planning_hours": [
+      12,
+      720
+    ],
+    "distinct_model_pairs": 103200,
+    "masks": [
+      "full",
+      "plddt70"
+    ],
+    "maximum_native_calls": 412800,
+    "basis": "Both orders and masks; unavailable inputs become explicit dispositions. Four single-thread native workers; at most 64 pending futures; 600-second per-call timeout. Planning interval uncalibrated and not a guaranteed bound; per-call times retained for throughput estimates. Existing local CPU only, no GPUs or charges."
+  }
+}

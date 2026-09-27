@@ -296,3 +296,52 @@ is 0.1–8 hours after the audit completes. At most 425,098 model/mask records
 will be prepared. Production materialization and pair alignments have not
 started; the coordinate producer had validated its first 20,000 models when
 this dependent stage was queued.
+
+
+## Full pair-alignment workload queued
+
+`scripts/run_duplication_alignments.py` is queued behind the exact input
+materializer identity. It requires the completed input receipt bound to its
+plan and queue, the exact full model/mask universe, and canonical unique pair
+keys. It uses the pinned US-align executable and the established monomer
+options (`-mol prot -mm 0 -outfmt 0 -ter 2`).
+
+Every one of 103,200 distinct model pairs receives both input orders under
+`full` and `plddt70`: 412,800 planned directed dispositions. Native calls are
+skipped only when a source input is explicitly unavailable/too short. Each
+job checks input bytes, saves the complete native output and command, parses
+lengths/scores/alignment sequences against the expected inputs, and saves
+wall time. Exclusions, native errors, parser errors and 600-second timeouts
+remain separate terminal records without silent retries or substitution.
+These records must be reviewed before any inference.
+
+Checkpoint reuse verifies plan, input-manifest, model/version, mask/order and
+command bindings, source hashes and parsed metrics for completed alignments.
+A bounded queue holds at most 64 pending futures. Checkpoint files retain
+results, while a final manifest binds every disposition to its file hash.
+Completion means every planned disposition is accounted for, not that all
+alignments succeeded or passed independent geometric readback.
+
+The runner passed a native identity-alignment fixture, cached reuse without a
+native rerun, short-input exclusion, simulated native/parse/timeout failures,
+and rejection of altered metrics and source coordinates. An end-to-end
+completed-input fixture aligned both full-model orders and retained both
+short-mask exclusions, checking all four checkpoint hashes. Reproduce with
+`python scripts/check_duplication_alignment_runner.py` and
+`python scripts/check_duplication_alignment_handoff.py`.
+
+Plan: `metadata/duplication_alignment_plan_20260926.json`.
+Launch: `metadata/duplication_alignment_launch_20260926.json`.
+Service: `fungal-duplication-alignments-20260926.service`.
+Output: `results/structural_comparisons/duplication-alignments-20260926-v1/`.
+Four CPU workers run with a 16-GiB memory cap and no swap; planning allows
+64 GiB output and requires a 100-GiB free-disk reserve. The uncalibrated
+12–720-hour interval starts after inputs are ready and is not a guaranteed
+completion bound. Per-job timings will support a measured estimate. No GPU
+work or paid infrastructure is requested.
+
+The service is waiting; production pair alignments have not begun. Native
+scores and input-order differences remain descriptive pending independent
+numeric readback, confidence/coverage assessment, interdomain-orientation
+controls, matched ortholog/nonduplication comparisons, family/phylogenetic
+modeling and ancestral/outgroup references for asymmetry.

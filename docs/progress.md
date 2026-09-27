@@ -5112,3 +5112,14 @@ queued behind the exact independent-readback process and requires passing
 checksums/proofs. All model/mask dispositions, including short masks and
 rejected sources, will be preserved. No pair alignment has started. See
 [duplication workflow](duplication-structure-coverage-20260926.md).
+
+
+### September 26: full duplication alignment runner queued
+
+The tested native alignment runner is queued behind completed, audited input
+preparation. Its full scope is 103,200 distinct model pairs × two input orders
+× two confidence masks (412,800 explicit dispositions). Successful results,
+short/unavailable inputs, native/parse failures and timeouts are preserved
+with provenance and checkpoints. Four CPU workers and 16 GiB RAM are planned;
+production native alignments have not started. See the resource estimates,
+fixtures and limitations in [duplication workflow](duplication-structure-coverage-20260926.md).

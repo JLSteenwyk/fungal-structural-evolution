@@ -1,0 +1,15 @@
+{
+  "service": "fungal-duplication-alignments-20260926.service",
+  "pid": 123720,
+  "created": 1790470009.11,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_duplication_alignments.py",
+    "--plan",
+    "metadata/duplication_alignment_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_alignment_plan_20260926.json",
+  "plan_sha256": "c1be1963e07bbe2edb41a153fabf0f305a318c0f3f6921f2172d2615c82e7537",
+  "initial_state": "waiting_for_exact_materialization_process_and_complete_receipt",
+  "fixture_checks": "Native alignment and both-order/mask handoff passed; cached reuse avoids native rerun; short-input exclusions, native/parse/timeout failures retained; altered metrics and source bytes rejected."
+}
