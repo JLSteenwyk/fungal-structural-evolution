@@ -7418,3 +7418,24 @@ outgroups: 250 conditions, 116,039 internal splits. Cross-method inference and
 its full audit remain pending; comparison is prepared, not yet run or queued.
 See `docs/marker-alignment-topology-comparison-20260927.md`. All eight aims remain
 open; GPU prediction remains paused.
+
+## September 27 reference alignments complete; strict RMSD failure investigated
+
+The preceding turn verified the full marker topology projection machinery
+(progress). The reference alignment producer now exited successfully with all
+130,164 dispositions, but the independent strict numeric validator failed at
+an RMSD rounding discrepancy. The first failing reverse pLDDT70 comparison has
+two aligned residues, recomputed RMSD 0.215449024570517 Å versus printed 0.21 Å,
+error 0.005449024570517 Å > 0.00501 Å. Both coordinate sets have rank one and
+rotation curvature is degenerate at numerical tolerance. This identifies one
+problematic mapping; it does not adjudicate the native algorithm or prove all
+other rows sound. Evidence: `metadata/duplication_reference_first_rmsd_failure_20260927.json`.
+
+Launched a separate full 130,164-disposition diagnostic, preserving all original
+provenance/mapping/identity checks and recording RMSD discrepancies explicitly.
+It neither raises the tolerance nor marks the batch scientifically eligible.
+New script/plan/output leave the failed strict audit and pinned helpers intact.
+The one-CPU/16-GiB/no-swap diagnostic process is verified live. Full enumeration,
+independent follow-up and downstream exclusion decisions remain pending; the
+existing reference order-summary stage cannot proceed through its strict gate.
+All eight aims remain open, and GPU prediction remains paused.

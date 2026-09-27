@@ -1,0 +1,41 @@
+{
+  "status": "localized_first_reference_rmsd_failure",
+  "checkpoint": "results/structural_comparisons/duplication-reference-alignments-20260926-v1/pairs/08/089ae45941d2b33ecf30d6ab5d6bfbc8e7a36bab245b4b7c875669bc91efaeae-plddt70-1.json",
+  "checkpoint_sha256": "a9d99a94cec46f765c4acc6482ecc3c318583318215421dbc80449538291cc3d",
+  "numeric": {
+    "rmsd_status": "outside_printed_rounding",
+    "aligned_length": 2,
+    "rmsd_recomputed": 0.21544902457051726,
+    "rmsd_native": 0.21,
+    "rmsd_rounding_error": 0.005449024570517269,
+    "sequence_identity_exact": 0.0,
+    "tm_left_native": 0.56227,
+    "tm_right_native": 0.00839,
+    "coverage_left": 0.6666666666666666,
+    "coverage_right": 0.008403361344537815,
+    "joint_plddt70_pairs": 2,
+    "joint_plddt70_fraction": 1.0
+  },
+  "geometry": {
+    "aligned_length": 2,
+    "rank_left": 1,
+    "rank_right": 1,
+    "rms_width1_left": 4.831161273441407,
+    "rms_width2_left": 6.548959619209261e-16,
+    "rms_width3_left": 0.0,
+    "rms_width1_right": 5.046610298011924,
+    "rms_width2_right": 3.937162135635858e-16,
+    "rms_width3_right": 0.0,
+    "width2_to_width1_left": 1.3555663428607106e-16,
+    "width2_to_width1_right": 7.801597316097253e-17,
+    "cross_s1": 48.76197646781161,
+    "cross_s2": 3.696762860369325e-15,
+    "cross_s3": 3.5533789035001705e-16,
+    "determinant_correction": -1,
+    "minimum_rotation_curvature": 3.341424970019308e-15,
+    "relative_rotation_curvature": 6.852521599949962e-17,
+    "relative_numeric_tolerance": 6.661338147750939e-16,
+    "geometry_status": "degenerate_at_numeric_tolerance"
+  },
+  "scope": "One failure localized; full-cohort diagnostic pending. Degenerate two-residue fitting is not scientific acceptance or evidence that no other failures exist."
+}
