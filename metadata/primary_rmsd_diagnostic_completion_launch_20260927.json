@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-primary-rmsd-diagnostic-completion-20260927.service",
+  "pid": 317672,
+  "created": 1790532085.34,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_completed_primary_rmsd_diagnostic.py",
+    "--wait-for",
+    "metadata/primary_alignment_rmsd_diagnostic_launch_20260927.json"
+  ],
+  "pins": {
+    "scripts/check_completed_primary_rmsd_diagnostic.py": "55d334a6b2a0a6628220ab02ab80798165cb14aa3dfde98df2c032fbfcc2a110",
+    "metadata/primary_alignment_rmsd_diagnostic_plan_20260927.json": "e9d881fe581a2d61cd98d482a014066de82c1497319fcd27723b231e13288f82",
+    "metadata/primary_alignment_rmsd_diagnostic_launch_20260927.json": "4883dc27125c7ac65d6e1fdec415ddac83760d830dced50a52596e7850663296"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_minutes_after_producer": [
+      1,
+      10
+    ]
+  },
+  "scope": "Full diagnostic-table accounting, not independent coordinate reconstruction or scientific acceptance."
+}

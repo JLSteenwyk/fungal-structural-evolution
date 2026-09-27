@@ -8032,3 +8032,14 @@ The stage waits on the exact diagnostic process and terminal success; its resour
 plan is one CPU, 8 GiB, no swap, 1–30 minutes after the prerequisite. Metadata:
 `primary_short_geometry_{plan,launch}_20260927.json`. This does not clear the
 strict primary audit failure or qualify the full cohort for scientific inference.
+
+### September 27: complete primary diagnostic report verification queued
+
+A terminal-success-gated check will verify the final primary discrepancy census:
+all input/output hashes, producer binding, exact successful alignment key set,
+all disposition totals, error classifications, and every field in each reported
+discrepancy. It cannot turn the diagnostic into scientific acceptance. Coordinate
+reconstruction belongs to the full diagnostic and separate geometry checks.
+The checker uses one CPU, 8 GiB, no swap; allowance 1–10 minutes after completion.
+Script: `check_completed_primary_rmsd_diagnostic.py`; identity recorded in
+`metadata/primary_rmsd_diagnostic_completion_launch_20260927.json`.
