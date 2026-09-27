@@ -5401,3 +5401,15 @@ sequence direction and 1,743 have unresolved direction in at least one guide.
 The complete sensitivity table is retained for the future structural-asymmetry
 analysis; no structural effect or significance is established by these
 covariates. See [methods and results](duplication-sister-references-20260926.md#sequence-covariates-for-the-asymmetry-analysis).
+
+
+### September 26: duplicate/reference architecture controls completed
+
+All 36,944 event/reference combinations have four-policy architecture controls
+for their three model pairs (147,776 rows). Independent full-grid joins passed.
+Conservative matching-architecture counts are 5,156–5,169 for profile and
+5,151–5,164 for MAFFT depending on policy; 332 combinations change summary
+class between policies. Missing annotations, architecture differences and
+identical models remain explicit, along with all pair-level fields. These
+are strata for upcoming structural comparisons, not an evolutionary test.
+See [triad controls](duplication-domain-controls-20260926.md#complete-duplicatereference-architecture-controls).

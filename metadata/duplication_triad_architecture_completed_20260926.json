@@ -1,0 +1,85 @@
+{
+  "status": "complete_verified_duplication_triad_architecture_controls",
+  "producer_receipt": "results/structural_comparisons/duplication-triad-architecture-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "9ec488e3416266c419be820285a18d3152e1009b9a599e1d5631668aa2025703",
+  "readback": "results/structural_comparisons/duplication-triad-architecture-readback-20260926-v1.json",
+  "readback_sha256": "aa57e0ad26d80f3f4822556cccdcd16937b2d8a80a45a2f06a9f1f603822e4cb",
+  "producer": {
+    "status": "complete_duplication_triad_architecture_controls",
+    "source_sha256": {
+      "results/structural_comparisons/duplication-domain-controls-20260926-v1/receipt.json": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+      "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+      "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json": "0dd82c0359ced0669b450eb35f9c3921a22877ea7d0db1dea5a2b4388e994a6c",
+      "results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+      "results/structural_comparisons/duplication-domain-controls-20260926-v1/pair_architecture_controls.tsv": "21c846692e952fa632fcbe6cd8a242b24a584d5adc2174fba4143d0a4a326916",
+      "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/event_reference_comparisons.tsv": "692dc046eb280c1f129c05b2a47a674a3e56ff2c836b34fca9176d2afd6f2731",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd"
+    },
+    "script_sha256": "a3c0320a00de460921e9b263e477a7ecc928830d913a4e9b8e8102de9e03cb77",
+    "triads": 36944,
+    "policy_rows": 147776,
+    "counts": {
+      "mafft:alignment_evalue:conservative_same_ordered": 5164,
+      "mafft:alignment_bitscore:conservative_same_ordered": 5161,
+      "mafft:envelope_evalue:conservative_same_ordered": 5154,
+      "mafft:envelope_bitscore:conservative_same_ordered": 5151,
+      "mafft:alignment_evalue:incomplete_annotation": 6436,
+      "mafft:alignment_bitscore:incomplete_annotation": 6436,
+      "mafft:envelope_evalue:incomplete_annotation": 6436,
+      "mafft:envelope_bitscore:incomplete_annotation": 6436,
+      "mafft:alignment_evalue:same_ordered_not_conservative": 1847,
+      "mafft:alignment_bitscore:same_ordered_not_conservative": 1855,
+      "mafft:envelope_evalue:same_ordered_not_conservative": 1955,
+      "mafft:envelope_bitscore:same_ordered_not_conservative": 1963,
+      "mafft:alignment_evalue:annotation_difference": 2746,
+      "mafft:alignment_bitscore:annotation_difference": 2741,
+      "mafft:envelope_evalue:annotation_difference": 2648,
+      "mafft:envelope_bitscore:annotation_difference": 2643,
+      "mafft:alignment_evalue:identical_model_in_triad": 2273,
+      "mafft:alignment_bitscore:identical_model_in_triad": 2273,
+      "mafft:envelope_evalue:identical_model_in_triad": 2273,
+      "mafft:envelope_bitscore:identical_model_in_triad": 2273,
+      "profile:alignment_evalue:conservative_same_ordered": 5169,
+      "profile:alignment_bitscore:conservative_same_ordered": 5166,
+      "profile:envelope_evalue:conservative_same_ordered": 5159,
+      "profile:envelope_bitscore:conservative_same_ordered": 5156,
+      "profile:alignment_evalue:incomplete_annotation": 6433,
+      "profile:alignment_bitscore:incomplete_annotation": 6433,
+      "profile:envelope_evalue:incomplete_annotation": 6433,
+      "profile:envelope_bitscore:incomplete_annotation": 6433,
+      "profile:alignment_evalue:same_ordered_not_conservative": 1848,
+      "profile:alignment_bitscore:same_ordered_not_conservative": 1856,
+      "profile:envelope_evalue:same_ordered_not_conservative": 1956,
+      "profile:envelope_bitscore:same_ordered_not_conservative": 1964,
+      "profile:alignment_evalue:annotation_difference": 2752,
+      "profile:alignment_bitscore:annotation_difference": 2747,
+      "profile:envelope_evalue:annotation_difference": 2654,
+      "profile:envelope_bitscore:annotation_difference": 2649,
+      "profile:alignment_evalue:identical_model_in_triad": 2276,
+      "profile:alignment_bitscore:identical_model_in_triad": 2276,
+      "profile:envelope_evalue:identical_model_in_triad": 2276,
+      "profile:envelope_bitscore:identical_model_in_triad": 2276
+    },
+    "policy_stability": {
+      "same_class_all_policies": 36612,
+      "policy_sensitive_class": 332
+    },
+    "artifacts": {
+      "triad_architecture.tsv": "2356e1b544c2eceff72a426f1959cfb3e7710e2dd04072f4c057d1b09b7f24c0"
+    },
+    "scope": "All provisional event/reference ties retained. Ordered Pfam annotation compatibility, not validated domain homology, gain/loss, PAE/orientation, structure divergence or biological orthology. Identical-model triads explicit; priority classes retain all individual pair fields. Policies/guides/ties are dependent sensitivity analyses."
+  },
+  "verification": {
+    "status": "passed_full_duplication_triad_architecture_readback",
+    "producer_receipt_sha256": "9ec488e3416266c419be820285a18d3152e1009b9a599e1d5631668aa2025703",
+    "triads": 36944,
+    "policy_rows": 147776,
+    "policy_stability": {
+      "same_class_all_policies": 36612,
+      "policy_sensitive_class": 332
+    },
+    "script_sha256": "0f096d52b544f6ee8cee11d453634f99a7582faa714e941df8decbc0d0ccf3a6",
+    "scope": "Independent complete-grid dataframe joins to source event/reference ledgers and audited pair controls, identity dispositions, classification and totals. Does not rerun Pfam annotation or infer biological events."
+  }
+}

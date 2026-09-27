@@ -306,3 +306,61 @@ Resources are one CPU, 16 GiB RAM, no swap, single-thread BLAS, a 256-input PDB
 cache and 1 GiB estimated output. Uncalibrated runtime planning is 0.5–24 hours
 after the producer. No GPUs or paid resources are used. The readback is queued,
 not completed; policy/boundary sensitivity and biological tests remain pending.
+
+
+## Complete duplicate/reference architecture controls
+
+The complete provisional-reference ledger now has triad-level architecture
+controls: 36,944 event/reference combinations across both guides, retaining
+all nearest-reference ties. Each has four annotation-policy alternatives,
+for 147,776 rows. Pairwise controls are joined for duplicate A/B, A/reference
+and B/reference, preserving pair keys, model versions, ordered-annotation
+classes and conservative flags. Original source ledgers and successful
+independent readbacks are hash-bound before the join.
+
+A triad's summary class follows this explicit priority: any identical-model
+pair; otherwise any incomplete annotation; otherwise any content/order
+difference; otherwise identical ordered annotations with at least one
+nonconservative pair; otherwise conservative identical ordered annotations.
+Every pair's underlying fields remain available even when a higher-priority
+class determines the summary. Identity is not classified as missing annotation;
+its conservative flag is blank because no distinct-pair control is consulted.
+
+| Class, alignment/e-value policy | Profile | MAFFT |
+| --- | ---: | ---: |
+| Conservative matching ordered annotations | 5,169 | 5,164 |
+| Matching ordered annotations, not conservative | 1,848 | 1,847 |
+| Annotation content/order difference | 2,752 | 2,746 |
+| Incomplete annotation | 6,433 | 6,436 |
+| Identical model in triad | 2,276 | 2,273 |
+| Total event/reference combinations | 18,478 | 18,466 |
+
+Across all four policies, conservative matching counts range from 5,156–5,169
+for profile and 5,151–5,164 for MAFFT. Of the 36,944 combinations, 332 change
+summary class between policies and 36,612 retain the same class. These counts
+include dependent guides and reference ties: they are not independent events
+or a sample size for inference. Conservative matching Pfam annotations do not
+establish domain homology, stable domain orientation, structural similarity,
+reference orthology or an evolutionary gain/loss. Missing annotation is not
+biological absence. These controls will stratify subsequent structural
+comparisons; they are not tests of duplication-associated structural change.
+
+Output: `results/structural_comparisons/duplication-triad-architecture-20260926-v1/`.
+Independent dataframe joins checked the entire triad/policy grid, source
+model and pair identities, all pair fields, identity dispositions, categories
+and totals. Both receipts are archived in
+`metadata/duplication_triad_architecture_completed_20260926.json`.
+This table transformation uses one CPU, no new annotation search or GPU.
+Reproduce in fresh output paths:
+
+```bash
+python scripts/prepare_duplication_triad_architecture.py \
+  --controls results/structural_comparisons/duplication-domain-controls-20260926-v1 \
+  --control-readback results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json \
+  --references results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1 \
+  --reference-readback results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json \
+  --queue results/structural_comparisons/duplication-model-pair-queue-20260926-v1 \
+  --output <fresh-output-directory>
+python scripts/readback_duplication_triad_architecture.py \
+  --source <fresh-output-directory> --output <fresh-readback.json>
+```
