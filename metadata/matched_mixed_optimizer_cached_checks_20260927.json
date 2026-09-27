@@ -1,0 +1,63 @@
+{
+  "status": "passed_cached_optimizer_dense_and_original_solution_checks",
+  "cases": [
+    {
+      "label": "residual_only",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        0.035691150597228855,
+        0.0,
+        0.0
+      ],
+      "objective_difference": 2.042946789515554e-08,
+      "attempts": 22,
+      "wall_seconds": 0.06421243399381638,
+      "evaluation_methods": {
+        "cached_cross_products": 398
+      }
+    },
+    {
+      "label": "mixed",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        0.6306334113892218,
+        1.5514327806859594,
+        1.7951060506114678
+      ],
+      "objective_difference": 3.126388037344441e-13,
+      "attempts": 22,
+      "wall_seconds": 0.13373860801220872,
+      "evaluation_methods": {
+        "cached_cross_products": 766
+      }
+    },
+    {
+      "label": "strong_background",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        7.110125471344749,
+        2.542828508836883,
+        0.02364872210158135
+      ],
+      "objective_difference": 9.379164112033322e-13,
+      "attempts": 22,
+      "wall_seconds": 0.13837368501117453,
+      "evaluation_methods": {
+        "cached_cross_products": 818
+      }
+    }
+  ],
+  "source_pins": {
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/fit_matched_mixed_model_cached.py": "1a03748d17b9cd2366a6dad99f5aaaf39a270d9a5ec97d3524846e036c86963a",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "results/model_validation/matched-mixed-optimizer-20260927-v1/receipt.json": "767b26bbdd52023c1ecde90649a1b68a0dd46415f71b4644990b977d78ce5826",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_mixed_optimizer_cached.py": "43de7a40eca17db71e333b819547c036123f35dcae48fce94027420a0ce954ff"
+  },
+  "artifacts": {
+    "mixed.json": "1128f6e73617e7e070961a2015c2d7bcf050beaef42e4cf7222e80af2a62701d",
+    "strong_background.json": "6419cc998bce73db4da0f60b92a71ea88dc5046ed41fbd6c9723ef3016f514ca",
+    "residual_only.json": "8ec7cbbb86dd33dfa227294ce4e206ab91b450a1c522c6e04aa031a85ecde814"
+  },
+  "scope": "All 22 boundary/start candidate likelihoods per synthetic case checked by dense algebra; best objective independently compared with three dense Powell starts. Cached solutions also checked against original direct optimizer objectives, coefficients, boundaries, statuses and complete start/face enumeration. Checks computational optimization only, not recovery of generating parameters, interval coverage, biological adequacy or a project-data pilot."
+}

@@ -7721,3 +7721,19 @@ was rechecked. All designs are full rank after explicit constant removal;
 producer has also completed, reporting 28,808 unique record inputs and 144,040
 five-tree fits; its independent SQL readback remains active, so exact reuse is
 not yet promoted for production. All eight aims remain open. GPU paused.
+
+## September 27 cached optimizer integration verified
+
+The preceding turn completed cached likelihood equivalence and the full
+covariate design audit (progress). Integrated the cache in a separate optimizer
+version while leaving the original pinned optimizer unchanged. All 66
+boundary/start candidate likelihoods pass independent dense recalculation;
+best solutions agree with three dense Powell starts per case and the original
+optimizer's coefficients, objectives, zero-boundary flags, statuses and complete
+face/start enumeration. [Cached optimizer checks](matched-mixed-optimizer-cached-20260927.md).
+
+All three numerical fixtures pass, with largest best-objective difference
+2.05e-8 from the dense reference. Production fits, real-design optimizer
+diagnostics and inferential calibration remain outstanding. The exact-input
+inventory readback remains live with advancing checkpoints and must pass before
+production reuse. All eight aims remain open. GPU prediction remains paused.
