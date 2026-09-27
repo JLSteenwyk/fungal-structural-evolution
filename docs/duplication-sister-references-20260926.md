@@ -472,3 +472,12 @@ fits and their geometry/coverage qualification are later stages.
 Producer and independent full readback use
 `metadata/whole_protein_common_residues_plan_20260927.json`. Full serialized
 verification remains pending; no asymmetry result is claimed.
+
+The common-coordinate fitting and independent quaternion readback are queued
+behind the full map audit. Both reference-common and cycle-consistent definitions
+are retained (563,808 fit rows). Coverage uses each original full-protein length;
+30/50-residue minima crossed with 0.5/0.7/0.9 coverage preserve the existing six
+screen settings. These screening outputs remain conditional measurements, with
+shared-model identity and all source exclusions explicit. Signed differences
+compare distances on identical residue triples; they are not reconstructed
+ancestral changes or tests of asymmetric evolution.

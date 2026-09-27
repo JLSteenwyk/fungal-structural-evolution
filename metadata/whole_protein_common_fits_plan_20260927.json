@@ -1,0 +1,100 @@
+{
+  "producer": {
+    "unit": "fungal-whole-protein-common-residues-readback-20260927.service",
+    "pid": 354417,
+    "created": 1790535092.24,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_whole_protein_common_residues.py",
+      "--plan",
+      "metadata/whole_protein_common_residues_plan_20260927.json",
+      "--launch",
+      "metadata/whole_protein_common_residues_launch_20260927.json",
+      "--output",
+      "metadata/whole_protein_common_residues_readback_20260927.json"
+    ],
+    "plan_sha256": "34fea1b1074ac74ce1a7a65309258c8fca0df90c7382ee9edb42c650fa91e855",
+    "resources": {
+      "cpus": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_gib": 8,
+      "planning_hours": [
+        0.25,
+        6
+      ]
+    }
+  },
+  "mapping_plan": "metadata/whole_protein_common_residues_plan_20260927.json",
+  "mapping_readback": "metadata/whole_protein_common_residues_readback_20260927.json",
+  "output": "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_prerequisite": [
+      0.5,
+      12
+    ]
+  },
+  "scope": "All 563808 triad/mask/order/mapping-definition fit rows, retaining source exclusions, distinct model counts and six common-core length/original-protein coverage screens. No ancestral-state, asymmetry significance or independent-event claim.",
+  "pins": {
+    "metadata/whole_protein_reference_triads_readback_20260927.json": "553d663ef34101df4560990382360cbefc94ef2be73c90b8f01b0a14237a2cb6",
+    "results/structural_comparisons/whole-protein-reference-triads-20260927-v1/receipt.json": "6fd0e32bc72afb52d964436a2b6abde52777be6b99b75327e9e67efb8e1965ba",
+    "scripts/prepare_whole_protein_common_residues.py": "54414a3b30b237017802518f2e998826a79347af2a73b43916c3d9287ccd7655",
+    "scripts/readback_whole_protein_common_residues.py": "9106904ab4cc49d600a6c9736ac95cfae26fb3082431d0752044f9bea832ec3e",
+    "scripts/prepare_domain_triad_common_residues.py": "bb9a3e5bc5f480b033a216eadac92059f1d3fc24941bcb877b32a0f22d5881a1",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "metadata/primary_usable_orders_readback_20260927.json": "3cdd7ba94784a89d8e34139055af6cf5ab030ec07d2a529dd59ae818ee929eb5",
+    "results/structural_comparisons/primary-usable-orders-20260927-v1/receipt.json": "e755922a32ff137b0041787a839098f097f4c0da19f5191d52f9e0d3dc0ef74c",
+    "results/structural_comparisons/duplication-alignments-20260926-v1/receipt.json": "263f672755f58d1ae8d8ba52a65dac826caea14b7167d911b1b087cb9347d4a3",
+    "metadata/duplication_reference_usable_orders_readback_20260927.json": "790cfe28297a0f03ee2c54ca595e7a9900693667e95c6a57416e821ac49e7173",
+    "results/structural_comparisons/duplication-reference-usable-orders-20260927-v1/receipt.json": "f732f44fe818e9a151935015480c2fcd89e32daf7c631999bf316dd300f777ac",
+    "results/structural_comparisons/duplication-reference-alignments-20260926-v1/receipt.json": "e8b24d4abb47870c2307f60b99f7866ec19b50e9f38e227d7f98c66eed8ecf41",
+    "metadata/whole_protein_common_residues_plan_20260927.json": "34fea1b1074ac74ce1a7a65309258c8fca0df90c7382ee9edb42c650fa91e855",
+    "metadata/whole_protein_common_residues_readback_launch_20260927.json": "25ab545cde4ef43c3a7bc7f8e452a90ef0b92095656ec9650ae3e7f55d760a10",
+    "metadata/whole_protein_common_fit_fixture_20260927.json": "0ad0b42d8f973a9c3175a95cf5b4c2e37cc1ca2d48a32b5c8f819247970209da",
+    "scripts/fit_whole_protein_common_residues.py": "076a817ca27328783a97b218710456531e8a2f7917161fd82b2d2f4b9969ce45",
+    "scripts/readback_whole_protein_common_fits.py": "5710b7513314edb34801122928e8b200722dc4a6c5fb88d373beffa776b07413",
+    "scripts/assess_domain_alignment_geometry.py": "b99336d078fcfd2a5df6e8df0f0d9d54a416278d03a55282189a39dc6dc01cab",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9"
+  }
+}

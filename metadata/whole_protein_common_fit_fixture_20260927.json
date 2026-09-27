@@ -1,0 +1,12 @@
+{
+  "status": "passed_whole_protein_common_fit_kernel_checks",
+  "cases": 8,
+  "maximum_numeric_difference": 1.1102230246251565e-15,
+  "checks": [
+    "SVD versus independent quaternion",
+    "shared-model identity",
+    "A/B signed-contrast reversal",
+    "common-core metric bound"
+  ],
+  "scope": "Synthetic numerical kernel checks only; full source mapping and serialized fit audit remain required."
+}

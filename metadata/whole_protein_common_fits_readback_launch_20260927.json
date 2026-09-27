@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-whole-protein-common-fits-readback-20260927.service",
+  "pid": 356619,
+  "created": 1790535292.76,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_whole_protein_common_fits.py",
+    "--plan",
+    "metadata/whole_protein_common_fits_plan_20260927.json",
+    "--launch",
+    "metadata/whole_protein_common_fits_launch_20260927.json",
+    "--output",
+    "metadata/whole_protein_common_fits_readback_20260927.json"
+  ],
+  "plan_sha256": "a9510b9c977f57179c94e16feed14ce54ec2189748d5b3855667430ad9bc4f76",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_prerequisite": [
+      0.5,
+      12
+    ]
+  }
+}

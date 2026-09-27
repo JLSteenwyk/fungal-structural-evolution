@@ -8315,3 +8315,28 @@ hours per stage. Scripts: `prepare_whole_protein_common_residues.py` and
 `metadata/whole_protein_common_residues_*_20260927.json`.
 These residue correspondences do not yet constitute common-coordinate fits,
 validated homology, structural asymmetry or biological duplication effects.
+
+### September 27: whole-protein common-coordinate fits queued
+
+The whole-triad mapping producer is actively advancing. Its downstream fitting
+stage now waits for successful complete mapping readback and will retain 563,808
+rows: every triad/mask/order combination under both reference-common and
+cycle-consistent residue definitions. All three RMSDs and sequence identities use
+identical residue triples. Original full-protein lengths provide coverage
+denominators; six predefined length/coverage screens (30 or 50 residues; 0.5,
+0.7 or 0.9 original coverage) retain explicit reasons. Shared-model triads keep
+their distinct-model count, and source exclusions remain uncomputed fit rows.
+
+A separate full checker is queued behind successful fit production. It rebuilds
+all coordinate subsets and uses quaternion rotations to verify SVD distances,
+signed A-reference minus B-reference contrasts, geometry, confidence, identity,
+blank exclusions and exact rational coverage decisions. Eight synthetic cases
+passed across four lengths and shared/distinct-model cases, including signed
+A/B reversal and the common-core metric bound; maximum numerical disagreement
+was 1.11e-15. This is kernel validation, not production completion.
+
+Each stage uses one CPU, 16 GiB, no swap, estimated 2 GiB output and 0.5–12 hours
+after its prerequisite. Scripts: `fit_whole_protein_common_residues.py` and
+`readback_whole_protein_common_fits.py`; plans/process identities use
+`metadata/whole_protein_common_fits_*_20260927.json`. No evolutionary asymmetry,
+ancestral state or biological significance is inferred at this stage.
