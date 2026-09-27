@@ -1,0 +1,16 @@
+{
+  "status": "passed_full_matched_record_sensitivity_readback",
+  "weighting_rows": 62208,
+  "numeric_range_values_checked": 933120,
+  "rmsd_sign_counts": {
+    "record:positive_all_orders": 20736,
+    "family_equal:positive_all_orders": 20624,
+    "family_equal:negative_all_orders": 112,
+    "taxon_equal:positive_all_orders": 20672,
+    "taxon_equal:negative_all_orders": 64
+  },
+  "groups_with_weighting_sign_flip_within_order": 176,
+  "source_receipt_sha256": "e3c735ab172a97c28ab6526989e045c45bd9db99ffd22629c500b7a4734cd14c",
+  "script_sha256": "a85cf4311bfbb445fe7d87668209aabf5655b2d8fad54d283e72daf4d5494f0a",
+  "scope": "All range endpoints/widths, source cohort counts, weighting-flip flags and sign categories rebuilt by dataframe reductions; no preferred order or biological inference."
+}

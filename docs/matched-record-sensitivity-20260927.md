@@ -30,5 +30,23 @@ Script: `scripts/summarize_matched_record_sensitivity.py`.
 Output: `results/structural_comparisons/matched-record-sensitivity-20260927-v1`.
 Exact process and resources: `metadata/matched_record_sensitivity_launch_20260927.json`.
 The stage uses one CPU, 8 GiB RAM and no swap, with a 1 GiB output allowance and
-1–15 minute planning range after verification. Production remains pending.
+1–15 minute planning range after verification. Production and full independent dataframe verification are complete.
 No GPU predictions, new fits or paid infrastructure are used.
+
+
+## Completed sensitivity results
+
+All 62,208 weighting rows passed independent verification, including 933,120
+numeric range values, every source cohort count, sign category and within-order
+weighting-flip flag. Proof:
+`metadata/matched_record_sensitivity_readback_20260927.json`.
+
+The unadjusted record-weighted RMSD difference is positive in all four orders
+for all 20,736 analysis groups. Equal-family weighting is negative in all four
+orders for 112 groups; equal-taxon weighting is negative for 64 groups. In
+176 groups the sign changes with weighting within at least one fixed order.
+No group has an order-driven sign reversal under a fixed weighting at the
+stated numerical tolerance. These counts span dependent sensitivity settings,
+not independent tests or repeated confirmations of a biological hypothesis.
+The observed raw differences still require sequence/coverage adjustment,
+phylogenetic/family/control-dependence modeling and prediction-error sensitivity.
