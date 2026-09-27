@@ -1,0 +1,13 @@
+{
+  "status": "passed_full_marker_alignment_coverage_readback",
+  "marker_taxon_cells": 65750,
+  "markers": 125,
+  "dispositions": {
+    "neither": 5911,
+    "both": 59690,
+    "mafft_only": 149
+  },
+  "source_receipt_sha256": "0f360b6d6b0d4ca77c5b4214242ca0a159e030a9e34944d2b7332340f1bfde5b",
+  "script_sha256": "8ed63089fd132b48935a5b3fdc7c6b9ff48530b7cd8a31114c6646984927bd56",
+  "scope": "Independent FASTA parser and NumPy indexed residue counts reconstruct all 65750 coverage cells, membership dispositions, exact common/differential taxon sets and marker totals. Does not validate unfinished MAFFT inference outputs."
+}

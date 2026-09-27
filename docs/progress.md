@@ -7314,3 +7314,15 @@ controller was verified live under one CPU/8 GiB/no swap; hashes and launch
 identity are archived. Actual inference and validation remain pending, and
 no marker subset is substituted for the full batch. All eight aims remain open;
 GPU prediction stays paused.
+
+## September 27 full marker coverage comparison verified
+
+The preceding turn queued the MAFFT input/split audit. This turn reconstructs
+all 65,750 marker–taxon cells across both alignments and independently checks
+them with a separate FASTA parser and NumPy counts. There are 59,690 shared
+retained cells, 149 MAFFT-only, no profile-only and 5,911 retained by neither.
+Thirty markers differ in taxon membership; exact common sets span 418–504 taxa.
+The planned sets will be checked against completed MAFFT inputs before tree
+comparisons. This does not claim unfinished trees are verified or that pruning
+undoes taxon effects on inference. All eight aims remain open; GPU prediction
+stays paused.

@@ -216,3 +216,29 @@ The audit uses one CPU, 8 GiB RAM, no swap and a 1-GiB output allowance, with a
 `results/phylogeny/mafft-marker-support-readback-20260927-v1`. No pending output
 is claimed verified; biological adequacy and common-taxon comparisons remain
 separate downstream requirements.
+
+## Exact marker coverage comparison across alignments
+
+All 65,750 marker–taxon cells (125 markers × 526 taxa) were reconstructed from
+both full matrices under the same coverage rule. Both alignments retain 59,690
+cells; MAFFT alone retains 149; profile alone retains zero; neither retains
+5,911. Taxon membership differs for 30 markers. Thus all profile-marker input
+taxa are contained in the planned MAFFT input set for the corresponding marker.
+Common sets contain 418–504 taxa, and exact common/additional lists are retained
+for every marker. The 149 additions are marker–taxon combinations, not 149
+newly sampled species.
+
+`scripts/compare_marker_alignment_coverage.py` constructs the complete ledger
+and checks profile membership against finished inference inputs and MAFFT
+membership against its complete planning grid. A separate FASTA parser and
+NumPy residue counter in `scripts/readback_marker_alignment_coverage.py`
+reconstruct every coverage cell and exact membership list. Full results are
+in `results/phylogeny/marker-alignment-coverage-20260927-v1`; summary, receipt
+and independent proof are archived under
+`metadata/marker_alignment_coverage_*_20260927.*`.
+
+These sets prepare common-taxon topology comparisons after the MAFFT batch
+passes its output audit. Actual MAFFT emitted inputs and tree tips still must
+match the planned sets. Pruning outputs to shared taxa will control the
+comparison's taxon universe, but cannot undo how additional taxa influenced
+inference. A matched-input refit would address that separate sensitivity.

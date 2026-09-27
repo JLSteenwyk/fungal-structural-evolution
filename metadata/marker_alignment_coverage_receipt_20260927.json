@@ -1,0 +1,25 @@
+{
+  "status": "complete_full_marker_alignment_coverage_comparison_pending_readback",
+  "markers": 125,
+  "taxa": 526,
+  "marker_taxon_rows": 65750,
+  "dispositions": {
+    "neither": 5911,
+    "both": 59690,
+    "mafft_only": 149
+  },
+  "markers_with_different_taxon_sets": 30,
+  "common_taxa_min": 418,
+  "common_taxa_max": 504,
+  "sources": {
+    "results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "results/phylogeny/marker-tree-support-complete-readback-v1/receipt.json": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab"
+  },
+  "script_sha256": "eab5380984158cca47b7a6b255210555ff4370f60a19578ebb39f8adedb8c3a8",
+  "artifacts": {
+    "marker_taxa.tsv": "36807e0e514809432524d0a98ef10b52a4bc3148c9d286ce1379f795a72eb8f9",
+    "marker_summary.tsv": "3499da32065856051eb5392769a163e68be4896281403496ac0555eb4bd12627"
+  },
+  "scope": "All matrix-derived coverage cells and exact common-taxon sets. Profile sets checked against completed inputs; MAFFT sets checked against full planning grid, not unfinished inferred trees. Eligibility uses the same absolute/relative rule but column sets differ. Future tree comparisons must verify emitted MAFFT sets; pruning to common taxa is not refitting."
+}
