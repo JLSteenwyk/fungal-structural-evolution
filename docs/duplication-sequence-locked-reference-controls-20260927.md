@@ -70,3 +70,34 @@ One CPU, 4 GiB memory and 2 GiB output were budgeted; no new predictions or
 native alignment searches were required. The ongoing AlphaFold optimization and
 accessibility workers were revalidated live without restarting them. GPU prediction
 remains paused.
+
+## Figure and underlying data
+
+![Original and sequence-locked contrast ranges for all 48 eligible candidates](figures/sequence_locked_reference_controls_20260927.png)
+
+The two panels use the same horizontal scale and include every eligible
+candidate. The four changed classifications appear first; remaining rows are
+ordered by family, gene identifiers and Pfam accession. Each segment spans
+the minimum and maximum signed RMSD contrast across the applicable alternative
+fits. The shaded ±0.1 Å band is a descriptive threshold, not a calibrated
+biological effect threshold. These segments are not confidence intervals.
+Positive values place duplicate A farther from the reference; negative values
+place duplicate B farther away. Neither direction establishes ancestral change.
+
+Download the [PDF](figures/sequence_locked_reference_controls_20260927.pdf),
+[SVG](figures/sequence_locked_reference_controls_20260927.svg), or
+[complete plot table](figures/sequence_locked_reference_controls_20260927.tsv).
+The table retains full gene identifiers and versioned Pfam accessions for every
+numbered row; repeated domain labels do not indicate duplicate records.
+
+The producer is `scripts/plot_sequence_locked_reference_controls.py`, invoked
+with `--plan metadata/sequence_locked_reference_figure_plan_20260927.json`.
+Use a new output prefix and receipt path when regenerating existing artifacts;
+the producer refuses to overwrite them. The independent checker
+`scripts/check_sequence_locked_reference_figure.py` takes the same `--plan`
+and a new `--output` JSON path. It verified every candidate identity, copied
+field, all 192 endpoints, the classification thresholds, and artifact hashes.
+See [readback evidence](../metadata/sequence_locked_reference_figure_readback_20260927.json).
+Visual inspection of the exported PNG on September 27 confirmed readable labels,
+shared scales, all 48 rows, and unclipped legends and caption. The underlying
+4,928 fits retain their separate independent numerical verification above.

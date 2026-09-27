@@ -1,0 +1,20 @@
+{
+  "source": "results/structural_comparisons/duplication-sequence-locked-reference-cores-20260927-v1",
+  "readback": "metadata/duplication_sequence_locked_reference_completed_20260927.json",
+  "output_prefix": "docs/figures/sequence_locked_reference_controls_20260927",
+  "receipt": "metadata/sequence_locked_reference_figure_completed_20260927.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_gib": 0.1,
+    "planning_minutes": [
+      1,
+      5
+    ]
+  },
+  "pins": {
+    "results/structural_comparisons/duplication-sequence-locked-reference-cores-20260927-v1/receipt.json": "cf8e8796e9acd0004b2c364dc2047d4a41708c89724cc9acdd14c2d1810d18b8",
+    "metadata/duplication_sequence_locked_reference_completed_20260927.json": "c1e822bab9016a091d46b3c91ada7b61dfd8532167ef97f028891ea1eb553c13",
+    "scripts/plot_sequence_locked_reference_controls.py": "6cff3ea00281eb9a3e1a489aa1f2718c1028c963717c6ca4291a099278bc04eb"
+  }
+}

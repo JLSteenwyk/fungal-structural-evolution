@@ -6169,3 +6169,20 @@ as robust under the expanded controls. See [results and qualifications](duplicat
 The prior turn completed direct pair controls; this turn completes the relevant
 three-protein directional sensitivity and changes candidate interpretation.
 The full scientific objective remains active and GPU prediction remains paused.
+
+## September 27 candidate correspondence figure completed
+
+Completed the two-panel figure comparing original and sequence-constrained
+reference contrasts for all 48 eligible candidates. PNG, PDF, SVG and a complete
+48-row plot table are included with a pinned producer and independent checker.
+Readback verified every identity and copied field, all 192 range endpoints,
+classification thresholds and artifact hashes. Visual inspection confirmed
+readable labels and an unclipped layout. The figure preserves all four changed
+classifications and explicitly identifies the ranges as alternative-fit extrema,
+not confidence intervals. See [figure and reproduction instructions](duplication-sequence-locked-reference-controls-20260927.md#figure-and-underlying-data).
+
+The preceding status turn was a verified wait: live project services and native
+alignment/resampling processes were observed. This turn completes a reproducible
+figure deliverable and its verification. The complete objective, including
+matched backgrounds and phylogenetic tests, remains unfinished; GPU prediction
+remains paused.
