@@ -242,3 +242,11 @@ passes its output audit. Actual MAFFT emitted inputs and tree tips still must
 match the planned sets. Pruning outputs to shared taxa will control the
 comparison's taxon universe, but cannot undo how additional taxa influenced
 inference. A matched-input refit would address that separate sensitivity.
+
+The two hybrid-excluded LG+F+G4 guide runs now have an automatic full validation
+handoff (`scripts/advance_hybrid_excluded_guide_audits.py`). It runs the separate
+`scripts/audit_hybrid_excluded_species_guides.py` after both execution receipts
+exist and the identified producer terminates. Checks cover all 524 taxa, source
+and output hashes, ML/consensus reports, 2,000 total bootstrap trees and empirical
+split support. SH-aLRT and likelihood values are read back, not recomputed.
+The audit is queued, not completed; mixture-model sensitivity remains required.

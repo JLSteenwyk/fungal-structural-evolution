@@ -1,0 +1,71 @@
+{
+  "producer": {
+    "service": "fungal-hybrid-excluded-guides-20260927.service",
+    "pid": 2683449,
+    "created": 1790512421.6,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_hybrid_excluded_species_guides.py",
+      "--plan",
+      "metadata/hybrid_excluded_species_guide_plan_20260927.json"
+    ],
+    "children": [
+      {
+        "pid": 2683462,
+        "created": 1790512421.87,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+          "-s",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/matrix.faa",
+          "-st",
+          "AA",
+          "-m",
+          "LG+F+G4",
+          "-T",
+          "4",
+          "--mem",
+          "32G",
+          "--seed",
+          "20260927",
+          "--keep-ident",
+          "--alrt",
+          "1000",
+          "-B",
+          "1000",
+          "--bnni",
+          "--boot-trees",
+          "--prefix",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1/profile/guide"
+        ]
+      }
+    ],
+    "plan_sha256": "021d9dfdab7ec299d418689d97a91b54fce79d548c1ed91d1a77fea7248c82a4",
+    "status": "verified_live_full_hybrid_excluded_profile_guide"
+  },
+  "producer_plan": "metadata/hybrid_excluded_species_guide_plan_20260927.json",
+  "runs": "results/phylogeny/hybrid-excluded-guides-20260927-v1",
+  "audit_outputs": {
+    "profile": "results/phylogeny/hybrid-excluded-profile-guide-audit-20260927-v1",
+    "mafft": "results/phylogeny/hybrid-excluded-mafft-guide-audit-20260927-v1"
+  },
+  "controller_output": "results/phylogeny/hybrid-excluded-guide-audit-handoff-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "scope": "Validate both full 524-tip guide runs, 2000 bootstrap trees and all internal support rows. GPU not used.",
+  "pins": {
+    "metadata/hybrid_excluded_species_guide_launch_20260927.json": "5f5e9dd19c93858b0e5b21cd46926b427e4315883740e86c34ba229dc739caec",
+    "metadata/hybrid_excluded_species_guide_plan_20260927.json": "021d9dfdab7ec299d418689d97a91b54fce79d548c1ed91d1a77fea7248c82a4",
+    "scripts/audit_hybrid_excluded_species_guides.py": "90514bf1c327ec603aeb2255e266b14c56cfa74dabda1f0c754a75b8d9a43c74",
+    "scripts/advance_hybrid_excluded_guide_audits.py": "dc3bdd97ffd09542f7b7df43e81b8c2b97a137455cb3f433500d178e919aea54",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5"
+  }
+}

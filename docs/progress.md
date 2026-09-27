@@ -7386,3 +7386,22 @@ live under one CPU/8 GiB/no swap. Plan and launch identity are archived in
 `metadata/local_branch_profile_audit_{plan,launch}_20260927.json`. No profile
 validation result is claimed before this completes. All eight aims remain open;
 GPU prediction remains paused.
+
+## September 27 hybrid-excluded guide audits queued
+
+The preceding goal turn queued full local branch-profile validation (progress).
+The structural reference batch remains live at 128,640/130,164 dispositions;
+its existing validator remains live, so no inference was restarted. Prepared
+separate full hybrid-excluded guide validation while both inference outputs
+remain pending. The new auditor checks hashed source matrices and output files,
+exact 524-tip membership, report/tree agreement, every bootstrap tree and all
+empirical internal supports for both alignment methods. It adapts the existing
+PMSF tree/bootstrap readback to homogeneous LG+F+G4 guides; site-frequency and
+NEXUS-split-file requirements specific to the PMSF runs are not imported.
+
+The pinned controller waits for the exact live producer identity and requires
+both complete execution receipts before auditing. Its one-CPU/8-GiB/no-swap
+waiting process is verified live. CLI parsing succeeded; complete output audit
+execution awaits inference and is not claimed finished. Plans and identities:
+`metadata/hybrid_excluded_guide_audit_{plan,launch}_20260927.json`. Full mixture
+model sensitivity remains downstream. All eight aims remain open; GPU paused.
