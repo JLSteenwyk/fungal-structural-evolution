@@ -1,0 +1,20 @@
+{
+  "status": "verified_completed_full_matched_domain_record_summaries",
+  "summary_rows": 82944,
+  "settings": 192,
+  "configuration_values_checked": 99830400,
+  "source_receipt_sha256": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0",
+  "readback_sha256": "96d27e8f5efcc13c161cfadf73a1eae9604736045d1910e8dc565126edbe6d73",
+  "partition_hashes_rechecked": 192,
+  "terminal_states": {
+    "fungal-matched-domain-record-summaries-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-matched-domain-record-summary-readback-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Every source pin, summary/manifest and configuration-partition hash rechecked after full pandas reconstruction. All record/family/taxon weighting summaries complete; no uncertainty or phylogenetic-effect inference."
+}

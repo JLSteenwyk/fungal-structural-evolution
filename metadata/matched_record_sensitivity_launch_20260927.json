@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-matched-record-sensitivity-20260927.service",
+  "pid": 3113089,
+  "created": 1790519373.94,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_matched_record_sensitivity.py"
+  ],
+  "script_sha256": "752d656e011bb34eaaaedf8f05633c6fbdf38ab9c7f47fc133f40a62a738194a",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      15
+    ]
+  },
+  "scope": "All 82944 audited summaries; four-order ranges for all 20736 strata and three weightings, no inferential tests."
+}

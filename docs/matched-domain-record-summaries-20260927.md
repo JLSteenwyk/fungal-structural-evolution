@@ -1,8 +1,8 @@
 # Record-level structural contrasts and weighting sensitivity
 
-The full summary stage is running across 192 boundary/mask/cohort/threshold/
+The full summary stage and independent verification completed across 192 boundary/mask/cohort/threshold/
 input-order combinations, each with all 432 guide/policy/matching-scenario
-strata: 82,944 expected summary rows. No input order or sensitivity setting is
+strata: 82,944 summary rows. No input order or sensitivity setting is
 averaged with another. All 2,786,912 metadata-selected records remain represented
 in denominators; unsupported strata have zero counts and blank means.
 
@@ -35,7 +35,11 @@ Output: `results/structural_comparisons/matched-domain-record-summaries-20260927
 Producer: `scripts/summarize_matched_domain_records.py`.
 Verifier: `scripts/readback_matched_domain_record_summaries.py`.
 Final proof: `metadata/matched_domain_record_summary_readback_20260927.json`.
-Production and verification remain pending.
+Production and verification passed in full: 99,830,400 configuration values
+were independently reconstructed across all 192 settings, and all 82,944
+record/family/taxon summaries matched. Every configuration-partition hash was
+rechecked after both services terminated successfully. Completion is archived in
+`metadata/matched_domain_record_summary_completed_20260927.json`.
 
 Each stage reserves one CPU, 16 GiB RAM, no swap, and 1–8 hours after dependencies.
 The producer limits DuckDB to 12 GiB memory and 20 GiB temporary disk and budgets
@@ -47,3 +51,16 @@ sensitivity before fitting family- and phylogeny-aware models. Shared controls,
 shared ancestry, prediction uncertainty, conditional cohort selection and the
 fact that separate alignments can map different residues remain unresolved by
 these descriptive means.
+
+
+For a traceable illustrative cell (profile guide, alignment-evalue policy,
+alignment boundaries, pLDDT70 measurements restricted to the both-mask cohort,
+n50/c70, input orders 0/0), S45 has 6,301 matched records. Its raw target-minus-
+background RMSD mean is 0.040944 Å with record weighting, 0.018241 Å with equal
+family weighting and 0.092330 Å with equal taxon weighting. Its mean sequence
+identity difference is -0.005873 and original-coverage difference -0.008670.
+The corresponding focal-only S46 cell has 495 records and RMSD means 0.063658,
+0.033379 and 0.042936 Å; identity difference is -0.011501 and coverage difference
+-0.007302. These rounded examples are descriptive and unadjusted, not evidence
+of statistical significance or a causal duplication effect. The remaining
+orders and complete grid are retained in the source and sensitivity report.
