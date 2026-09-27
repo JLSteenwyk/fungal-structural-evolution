@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-conditional-indel-models-20260927.service",
+  "state": {
+    "MainPID": "556819",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 556819,
+  "created": 1790550233.92,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/fit_conditional_indel_models.py"
+  ],
+  "plan_sha256": "a4c8205dd8476312eeac62641af881e91f593668627f14cc7b46a6534ae52316",
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      1,
+      72
+    ],
+    "paid_cost": 0
+  }
+}

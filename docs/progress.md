@@ -9091,3 +9091,21 @@ Recorded the evidence and unresolved dispositions in
 `docs/fastml-indel-likelihood-discrepancy-20260927.md`. These fits are not
 likelihood-validated. Full producer verified live; corrected inference and
 unknown-mask sensitivity remain pending. GPU prediction remains paused.
+
+### 2026-09-27: corrected indel working-model fits launched
+
+Implemented binary CTMC likelihood with freshly computed ascertainment
+denominators at every parameter evaluation. Independent matrix-exponential
+pruning checks cover both all-taxa and observed-mask conditioning, changed
+parameters and gamma-shape extremes. All81 prior case replays agree within
+4.55e-13; synthetic checks and state enumeration pass. These establish
+likelihood arithmetic, not model adequacy or fitted-model convergence.
+
+Launched312 model inputs:156 encodings x2 corrections, including six explicit
+empty-data dispositions, leaving306 nonempty fits x3 starts=918 optimizations.
+Fixed LG amino-acid tree shapes, fitted gain/loss scale and gamma4 shape;
+all bounds, start results, gradients and optimizer statuses retained. Two
+CPUs,8GiB RAM,noGPU; planning estimate1–72h and2GiB output. All production
+fits still require independent replay, optimization assessment and node
+probability propagation. This is a working-model sensitivity because SIC
+unknown masks remain coding-dependent. Original FastML output is preserved.
