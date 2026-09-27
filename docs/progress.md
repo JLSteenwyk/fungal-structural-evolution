@@ -7212,3 +7212,15 @@ remain live; checkpoint counts were 233,152/412,800 primary, 118,336/130,164
 reference, 5,312/285,800 background whole-chain and 81,856/267,716 background
 domain dispositions. These include documented skips and remain unfinished.
 All eight scientific aims remain open and GPU prediction remains paused.
+
+## September 27 full local fit warning content audited
+
+The preceding goal turn produced and checked the alignment-sensitivity figure.
+This turn examined every completed local fit log and reconstructed identical
+sequence counts from all 1,632 checksum-bound input alignments. All 96 warning
+blocks are identical-aligned-sequence advisories, corresponding to 100 redundant
+copies in 96 groups (196 taxon memberships); no warning was left unclassified.
+This clarifies warning content without treating it as evidence of optimality,
+removing taxa, or clearing existing review flags. The larger recovered AFDB
+analysis services remain active. All eight aims remain open and GPU prediction
+stays paused.

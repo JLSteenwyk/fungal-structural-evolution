@@ -1,0 +1,18 @@
+{
+  "status": "complete_full_local_duplicate_warning_audit",
+  "cases": 1632,
+  "warning_cases": 96,
+  "warning_blocks": 96,
+  "redundant_aligned_sequences": 100,
+  "identical_sequence_groups": 96,
+  "taxon_memberships_in_identical_groups": 196,
+  "unclassified_warnings": 0,
+  "source_fit_receipt_sha256": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+  "source_audit_receipt_sha256": "cc272632d553d9ac7be625edcecfc42530b3470939e9d00e9a2ccaf34f43a2aa",
+  "script_sha256": "590b1e5fb63b810dcf15d881e2172b24cf5d406948c5f5a7899d095c3f8d450b",
+  "artifacts": {
+    "identical_sequence_groups.tsv": "7739476058ccf626ad50de77804d4025940066ca350a53dca2b881b81e1d3c57",
+    "cases.tsv": "a32ca1fbdd92741c663dddb234aeef7c56705bfd29a0680a998862bba662d282"
+  },
+  "scope": "Every fit warning matched to the identical-sequence advisory and its count independently reconstructed from checksum-bound aligned FASTA strings. Identical alignment strings can include missing characters and need not imply identical full proteins or genomes. Species are retained; this does not clear near-zero branches, independence concerns, optimization, or selection eligibility."
+}

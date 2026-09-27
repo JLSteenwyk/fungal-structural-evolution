@@ -1706,3 +1706,24 @@ the raw audited comparison and checks all case identities, flags and topology
 labels. The PNG was visually inspected for full ranges, axis and legend labels,
 counts and caveats. The figure does not establish either alignment as correct,
 selection, or independent replication across gene groups.
+
+## September 27 local fit warning content resolved
+
+All 96 warning blocks from the 1,632 local MG94 fit logs are HyPhy advisories
+about identical aligned sequences. The full audit in
+`scripts/audit_local_codon_duplicate_warnings.py` checks each fit log and input
+alignment against its recorded hashes, matches every warning to this advisory,
+and independently reconstructs the reported redundant-sequence count from
+aligned FASTA strings. It found 96 identical-sequence groups, containing 196
+taxon memberships and 100 redundant aligned sequence copies. The complete
+1,632-case table is under
+`results/cds/local-codon-duplicate-warning-audit-20260927-v1`; the summary and
+identical-group inventory are archived in metadata.
+
+These advisories are not optimizer-failure messages. This content classification
+does not establish optimization success or remove historical optimization
+concerns. Identical strings are relative to the retained alignment, which can
+include missing characters; they do not prove full protein or genome identity.
+All species remain in the diagnostic analysis and no near-zero-edge, copy,
+independence or selection-eligibility concern is cleared. The earlier generic
+fit-warning flags remain traceable in the review ledger.
