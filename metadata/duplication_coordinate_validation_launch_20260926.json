@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-coordinate-validation-20260926.service",
+  "pid": 3500195,
+  "created": 1790469087.22,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/validate_duplication_coordinates.py",
+    "--plan",
+    "metadata/duplication_coordinate_validation_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_coordinate_validation_plan_20260926.json",
+  "plan_sha256": "7cc948f6d80f102d64d6555af081aeabf67b0187c8b92749edf4933586bdfae8",
+  "fixture": "Isolated copy of one catalog coordinate: source sequence/coordinates/confidence passed, output dimensions matched, checkpoint reuse passed, altered confidence summary retained as rejection, changed bytes rejected for reused and new checkpoints."
+}

@@ -5080,3 +5080,14 @@ the exact complete eligible pair set. The queue, source hashes, confidence
 metadata and reproduction command are documented in
 [duplication coverage](duplication-structure-coverage-20260926.md). Coordinate
 validation and direct structural alignment have not yet run for this queue.
+
+
+### September 26: full duplication-coordinate validation launched
+
+All 212,549 frozen candidate models are now scheduled for strict raw CIF,
+sequence, atom, coordinate and confidence-summary checks. The job retains
+C-alpha coordinates and residue-level confidence in 213 restartable shards,
+with explicit rejected-model dispositions. Isolated source/checkpoint checks
+passed before launch. Four CPU workers, 16 GiB RAM and no swap are allocated;
+no GPUs are used. Results and independent readback remain pending. See
+[duplication workflow](duplication-structure-coverage-20260926.md).

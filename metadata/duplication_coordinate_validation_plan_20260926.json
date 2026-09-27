@@ -1,0 +1,30 @@
+{
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1",
+  "output": "results/structural_comparisons/duplication-coordinate-validation-20260926-v1",
+  "workers": 4,
+  "models_per_shard": 1000,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "source_models": 212549,
+    "source_coordinate_bytes": 76394885497,
+    "maximum_sequence_length": 1280,
+    "basis": "Full frozen model set, including identical-model cases. Parse raw CIFs and retain compressed C-alpha coordinates and per-residue confidence; four workers, checkpoint every 1000 models. Runtime interval uncalibrated. No GPU, paid service or alignments in this stage."
+  }
+}

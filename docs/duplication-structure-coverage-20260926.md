@@ -164,3 +164,51 @@ Current output is
 `results/structural_comparisons/duplication-model-pair-queue-20260926-v1/`.
 The full protein-pair ledger and candidate guide sensitivities remain
 available for downstream family- and phylogeny-aware comparisons.
+
+
+## Full coordinate validation launched
+
+The full queue model set contains 212,549 models and 76,394,885,497 bytes
+(71.1 GiB) of raw CIF coordinates, including identical-model event cases.
+The maximum sequence length in this frozen candidate set is 1,280 residues.
+Coverage and length limits must remain explicit in subsequent comparisons.
+
+`scripts/validate_duplication_coordinates.py` reuses the existing strict
+`extract_domain_coordinates.load_atoms` reader. It verifies source hashes,
+full canonical polymer sequence, atom/residue identities, duplicate atoms,
+single-chain/model/alternate-location constraints, complete C-alpha coverage,
+and finite coordinates, occupancy and confidence. It independently recomputes
+mean C-alpha confidence and the fraction below 50 against catalog summaries.
+Validated compressed records retain the full sequence, C-alpha coordinates
+and per-residue confidence, plus residue counts at pLDDT >=70 and >=90.
+Those counts do not yet impose an alignment eligibility threshold.
+
+Content rejections are recorded with reasons. Missing/changed inputs detected
+before validation stop a shard. Completed shards are bound to exact model
+metadata and output hashes, and raw source hashes are rechecked when resuming.
+An unreceipted output/partial shard requires explicit review rather than
+automatic replacement. All 212,549 models must have an explicit disposition
+for stage completion; completion alone is not a claim that all models passed.
+
+Code checks use an isolated copy of a source CIF, without altering production
+data. Source sequence/coordinate/confidence validation and output dimensions
+passed; checkpoint reuse passed; altered confidence metadata produced an
+explicit content rejection; changed raw bytes were rejected for both new
+and reused checkpoints. Reproduce with:
+
+```bash
+python scripts/check_duplication_coordinate_validation.py \
+  --models results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl
+```
+
+The full stage uses `metadata/duplication_coordinate_validation_plan_20260926.json`
+and service `fungal-duplication-coordinate-validation-20260926.service`.
+Launch identity is recorded in
+`metadata/duplication_coordinate_validation_launch_20260926.json`. Four CPU
+workers run with a 16-GiB memory cap and no swap. Checkpoints contain 1,000
+models each (213 shards). Planning allows 32 GiB output, a 100-GiB free-disk
+reserve, and an uncalibrated 0.5–24 hours. Output is
+`results/structural_comparisons/duplication-coordinate-validation-20260926-v1/`.
+The stage is running. Independent coordinate-output readback, confidence/PAE
+sensitivity, direct alignments and biological duplication tests remain
+pending. GPUs remain paused.
