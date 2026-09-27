@@ -8185,3 +8185,22 @@ allowance after production. Source plans and identities are recorded in
 `metadata/full_polynomial_ml_*_20260927.json`; fixture proof is
 `metadata/polynomial_ml_runner_checks_20260927.json`. Production convergence,
 model adequacy and inferential calibration are not established by these checks.
+
+### September 27: complete ordinary-ML likelihood comparison export queued
+
+The preceding turn launched full polynomial ML production; current fits are
+advancing. The next export waits for successful terminal output audit and consumes
+all 432,120 hashed fits through the verified same-observation triplets. It emits
+144,040 unique triplet/tree rows and maps them to all 414,720 setting/tree rows.
+Each row preserves statuses and likelihoods for all degrees and all three nested
+contrasts. Negative gains remain numeric; a decrease beyond 1e-7 plus 1e-9 times
+the larger absolute objective triggers a nesting-review flag. Missing/error fits
+remain visible, and available contrasts between the other degrees are retained.
+
+Fixtures passed monotonic, violated, failed-fit, optimizer-review and tiny-negative
+cases. Every emitted scalar and full setting mapping will be read back. This is
+an output comparison, not a new likelihood fit or calibrated significance test.
+No p-values, chi-square reference or model preference is claimed. Resource plan:
+one CPU, 8 GiB, no swap, 2 GiB output and 0.1–3 hours after audit. Script:
+`export_polynomial_ml_comparisons.py`; plan/process identity:
+`metadata/polynomial_ml_comparison_{plan,launch}_20260927.json`.

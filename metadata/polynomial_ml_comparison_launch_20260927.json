@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-polynomial-ml-comparisons-20260927.service",
+  "pid": 341048,
+  "created": 1790533909.85,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/export_polynomial_ml_comparisons.py",
+    "--plan",
+    "metadata/polynomial_ml_comparison_plan_20260927.json"
+  ],
+  "plan_sha256": "d160389617742d681dacac24fb7925add3b7acf019885847ee86350785d6d6f5",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours_after_audit": [
+      0.1,
+      3
+    ]
+  }
+}
