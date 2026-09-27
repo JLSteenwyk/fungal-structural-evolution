@@ -24,18 +24,36 @@ Chronological receipts and process records remain in [progress](progress.md).
   attempts, 73,167 estimable draws and 33 explicitly unestimable draws. These
   fixed-topology conditional intervals cannot substitute for AlphaFold intervals.
 - Recovered AlphaFold Gamma4 and FreeRate4 site-rate exports and output audits
-  completed: 1,000 fits total. Optimization/model review, exposure integration
+  completed: 1,000 fits total. Rate optimization/model review remains running. Accessibility, site summaries
+  and functional annotation integration are complete; rate/exposure integration
   and conditional coupling remain downstream; see [coupling](conditional-site-coupling.md).
-- Whole-protein duplicate/reference alignments are running with numerical
-  auditors and order summaries queued behind them.
+- Primary and background whole-protein alignments are running with numerical
+  auditors queued behind them. Reference whole-protein geometry and usable-order
+  summaries have completed separate checks; the earlier failed strict reference
+  audits remain preserved. Primary geometry is queued behind successful strict
+  validation. Whole-protein triad comparisons remain outstanding.
 - Domain comparisons, common-core numerical verification, alternative-setting
   robustness, cross-guide comparisons and candidate sampling summaries completed.
   See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).
   Metadata-matched backgrounds, balance, selection shifts and taxon/family
   concentration are now independently verified across all 54 sensitivity
   scenarios; see [matching diagnostics](duplication-control-balance-20260927.md).
-  Background structural outcomes and phylogenetic association tests remain outstanding;
+  Background domain measurements and all 82,944 descriptive summary settings are
+  complete. The full 144,040-fit phylogenetic working-model grid is running;
+  numerical refinement, uncertainty and biological association tests remain outstanding;
   none of these computational stages establishes a duplication effect.
+- Recovered AlphaFold accessibility and full site-summary readbacks are complete:
+  30,618 models, 9,453,757 paired observations and 47,529 retained sites. Functional
+  annotation integration preserves every site; 6,444 annotation rows map to 50
+  paired sites, with conserved candidates at 18. The predictor comparison covers
+  all 150 jointly observed exact protein coordinates and all 600 specified local
+  coordinate comparisons. These inputs do not complete the functional aim.
+- Local codon branch-profile checks cover all 1,632 cases. All eight saved starts
+  per case (13,056 starts) are being reoptimized without the profile constraint,
+  followed by full audit. Optimizer behavior is not a test of selection.
+- The September 27 cache refresh leaves 3,626 unique marker proteins without
+  cached models. GPU prediction remains paused; this is a marker-gap count,
+  not whole-proteome coverage or proof of database absence.
 - Species-tree sensitivity and database retrieval continue independently.
   GPU prediction remains paused under the user's current authorization.
 

@@ -21,34 +21,40 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Component | Verified scope | Remaining work |
 |---|---|---|
 | Completed local predictions | 25,322 ESMFold models across five cohorts, preserving seven prediction configurations | Remaining marker gaps and broader proteome coverage |
-| Combined marker availability | September 25 cache refresh leaves 3,639 unmodeled marker/protein records representing 3,626 unique sequences; 30 previously missing sequences recovered | Availability precedes confidence filtering and is not proteome-wide coverage |
+| Combined marker availability | September 27 frozen-cache refresh and full reverse-log check leave 3,639 marker/protein records without cached models, representing 3,626 unique sequences; unchanged from September 25 | Availability precedes confidence filtering and is not proteome-wide coverage |
 | Whole-proteome AlphaFold catalog | 1,290,278 models linked to 1,319,513 of 5,815,847 representative proteins (22.69%) | Source-specific coverage excludes local ESMFold; confidence qualification and comparative atlas analyses remain incomplete |
 | Complete ESMFold paired inputs | Full input readback passed for 122 markers, 294 taxa and 6,758,598 observed paired AA/3Di cells; all 488 fits and their audit completed | Resampling and evolutionary integration |
 | Refreshed AlphaFold marker fits | Verified 125-marker collection: 500 fits from 95 unchanged and 30 refitted markers; 61,893 paired branch rows | Full 75,000-draw paired resampling and subsequent audit running; calibrated evolutionary tests remain |
 | Direct geometry and fitted tree paths | 2,527,033 pairs across 122 markers; all 10,108,132 tree-path values and 1,464 descriptive rank rows checked | Geometry numerically sampled one pair per marker; phylogenetic dependence, uncertainty and biological acceleration tests remain |
 | Candidate domains | All 1,078,592 intervals extracted and atom-audited; database sequence/coordinate readback and 70,537-cluster partition verified; all 594,797 boundary pairs compared; complete family/taxon source joins audited | Confidence and clustering-parameter sensitivity, phylogenetic integration and evolutionary tests |
-| Functional correspondences | Every field of 17,105 rows checked; 5,576 observed rows across 283 taxa and 21 markers | Branch/site tests, matched backgrounds and biological interpretation; rows are not independent events |
-| Accessibility and site coupling | All 25,322 models merged; paired projection verified for 6,758,598 observations. Conditional coupling completed for 122 markers/44,198 sites, including marker resampling and copy-omission sensitivity | Phylogenetic, prediction, alignment and model uncertainty; accessibility does not establish binding interfaces |
+| Functional correspondences | All 17,105 annotation rows checked separately for both sources: 6,444 observed AlphaFold rows (314 taxa/23 markers) and 5,576 ESMFold rows (283 taxa/21 markers). Recovered AlphaFold accessibility/annotation join verified across all 47,529 sites | Branch/site tests, matched backgrounds and biological interpretation; annotation rows are not independent events |
+| Functional-site predictor sensitivity | 150 exact protein coordinates observed in both sources; all partner contexts and 600 comparisons on identical coordinate subsets checked | Native descriptors, side-chain/pocket evidence and broader controls; agreeing predictions are not experimental validation |
+| ESMFold accessibility and site coupling | All 25,322 models merged; paired projection verified for 6,758,598 observations. Conditional coupling completed for 122 markers/44,198 sites, including marker resampling and copy-omission sensitivity | Phylogenetic, prediction, alignment and model uncertainty; accessibility does not establish binding interfaces |
+| Recovered AlphaFold accessibility | 30,618 models/15,960,692 residues; 9,453,757 paired observations projected and normalized. Full site-summary readback covers 125 markers/47,529 sites | Rate optimization and its audits precede rate/exposure integration and conditional coupling |
 | Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | Whole-protein comparisons and audits continue; phylogenetically adjusted effects, uncertainty and biological interpretation remain |
 
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.
 [Taxon and reuse inputs](docs/selected-taxon-inputs-20260927.md) preserve the
-dependence information needed for the next modeling stage; adjusted effects
-have not yet been fitted.
+dependence information used by the [full comparative-model run](docs/full-matched-working-models-20260927.md).
+Its verified inventory contains 28,808 unique record inputs and 144,040 tree
+fits. Production is running; numerical output checks, full analytic convergence
+assessment, unresolved-fit refinement and inferential calibration remain pending.
+Partial fits are not final adjusted effects.
 
 Coverage sources and exact limitations:
 [completed prediction inventory](docs/completed-prediction-inventory-20260922.md),
 [remaining marker gaps](docs/remaining-marker-model-gaps-20260922.md),
-[September 25 residual inventory](metadata/current_marker_residual_gap_summary_20260925.json),
+[September 27 residual inventory](metadata/current_marker_residual_gap_summary_20260927.json),
 [September 26 completion evidence](docs/recovery-20260926.md),
 [whole-proteome catalog](docs/whole-proteome-structure-catalog-20260922.md),
 [domain registry and clustering](docs/whole-proteome-structure-domain-registry-20260923.md),
 [functional sites](docs/functional-site-workflow.md), and
-[accessibility](docs/residue-accessibility.md).
+[ESMFold accessibility](docs/residue-accessibility.md), and
+[recovered AlphaFold accessibility](docs/recovered-afdb-accessibility-20260927.md).
 
 Supported species-tree comparisons and branch resampling remain active.
-Full-cohort conditional site-rate coupling supports a positive sequence-rate
+Completed ESMFold conditional site-rate coupling supports a positive sequence-rate
 association, including after omission of one copy-flagged marker. This is a
 conditional association, with model-dependent interaction evidence, not a causal
 effect or a physical displacement estimate. See the
@@ -70,7 +76,7 @@ completion records before advancing.
 | Duplication-associated divergence | Complete protein/domain comparisons, model/reference quality sensitivity, matched controls and phylogenetically controlled divergence/asymmetry tests |
 | Ecological transitions | Establish usable replicated contrasts, propagate trait uncertainty and test phylogenetically controlled associations |
 | Functional locations | Integrate surface/core and functional-site inputs with branch/site changes; assess supported pockets and interfaces where evidence permits |
-| Selection | Resolve codon eligibility, saturation, copy and optimization concerns before appropriate tests; 1,655 fitted cases alone do not establish eligibility |
+| Selection | Resolve codon eligibility, saturation, copy and optimization concerns before appropriate tests; the current 1,632 local codon cases have all-case optimization checks running and do not yet establish eligibility |
 | Ancestral and mechanistic cases | Select supported exploratory cases, propagate ancestral uncertainty, obtain authorized predictions and formulate testable functional hypotheses |
 
 The [original objective](docs/objective.txt) and [research plan](docs/research-plan.md)
