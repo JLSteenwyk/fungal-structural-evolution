@@ -7339,3 +7339,26 @@ producer was verified live; exact source hashes and identity are archived.
 This is not an optimized profile or selection result. Full verification and
 nuisance reoptimization remain downstream. All eight aims remain open; GPU
 prediction stays paused.
+
+## September 27 full local branch-profile optimization
+
+Verified all 1,632 completed local longest-branch slices, including all
+11,424 raw likelihood points, longest-normalized-dS target choices, parameter
+scaling, source hashes and restored baselines. Maximum conditional likelihood
+improvement is 7.28e-12 (numerical rounding). Proof:
+`metadata/local_mg94_longest_branch_slice_readback_20260927.json`.
+
+Launched all 1,632 cases for eight independent optimizations each: one
+unconstrained refit and seven fixed branch-t values, with remaining branch
+parameters, exchangeabilities and omega reoptimized. Each of the 13,056 fits
+gets a fresh saved-model likelihood readback. Four workers, four CPUs, 8 GiB
+and no swap; planning allowance 1–24 hours and 20 GiB output. Verified the
+corrected service and its worker children live; the first launch failed before
+output creation on an incorrect installation path, and its journal is retained.
+Plan and identity are in `metadata/local_mg94_branch_parameter_profile_{plan,launch}_20260927.json`.
+
+The finite, single-start t grid is not a normalized-dS confidence interval or
+a selection result. Full profile audit remains pending; the historical auditor
+has a hardcoded old-cohort FCS exposure source and must be adapted with verified
+local case provenance before use. All eight aims remain open; GPU predictions
+remain paused.

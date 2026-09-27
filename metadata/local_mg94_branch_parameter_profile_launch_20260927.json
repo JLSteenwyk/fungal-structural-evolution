@@ -1,0 +1,66 @@
+{
+  "status": "verified_live_full_local_branch_parameter_profiles",
+  "unit": "fungal-local-mg94-branch-profiles-20260927-v2.service",
+  "pid": 2874144,
+  "create_time": 1790513604.88,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/profile_genus_longest_branch_parameter.py",
+    "--fits",
+    "results/cds/local-mg94-diagnostics-20260927-v1",
+    "--slices",
+    "results/cds/local-mg94-longest-branch-slices-20260927-v1",
+    "--plan",
+    "metadata/local_mg94_branch_parameter_profile_plan_20260927.json",
+    "--install",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+    "--output",
+    "results/cds/local-mg94-branch-parameter-profiles-20260927-v1"
+  ],
+  "checked_at": "2026-09-27T12:53:51.769022+00:00",
+  "service": {
+    "MainPID": "2874144",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "plan_sha256": "ce93d0eea517564c0ce7ccd41967a7ca56947b7e95c59e0a8192b51e4bb0ca5a",
+  "children": [
+    {
+      "pid": 2875678,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+        "CPU=1",
+        "ENV=RANDOM_SEED=123;",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Suillus__5000152at2759__code1/factor_0p1/optimize.bf"
+      ]
+    },
+    {
+      "pid": 2875821,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+        "CPU=1",
+        "ENV=RANDOM_SEED=123;",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Wallemia__4970538at2759__code1/factor_0p1/optimize.bf"
+      ]
+    },
+    {
+      "pid": 2875829,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+        "CPU=1",
+        "ENV=RANDOM_SEED=123;",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Aspergillus__4986044at2759__code1/factor_10/optimize.bf"
+      ]
+    },
+    {
+      "pid": 2875913,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+        "CPU=1",
+        "ENV=RANDOM_SEED=123;",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Saccharomyces__4986044at2759__code1/unconstrained/optimize.bf"
+      ]
+    }
+  ],
+  "prior_launch": "First service exited 1 before output creation because install path included the workspace directory. Corrected to the prior verified slice executable location; failed service journal retained."
+}
