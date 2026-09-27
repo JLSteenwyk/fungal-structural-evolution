@@ -35,7 +35,20 @@ python scripts/summarize_duplication_sampling_coverage.py \
   --plan metadata/duplication_sampling_coverage_plan_20260926.json
 ```
 
-The job is running. Resources are one CPU, 8 GiB RAM, no swap and an estimated
+The job completed. Resources were one CPU, 8 GiB RAM, no swap and an estimated
 1 GiB output. The 0.1–4 hour planning range is uncalibrated. No GPU or paid
-resources are used. Completed results and independent aggregate readback remain
-pending.
+resources are used. Independent aggregate readback remains pending. Producer results:
+
+| Guide | Terminal singleton-side events | Neither model | One model | Both models | Taxa with both models |
+|---|---:|---:|---:|---:|---:|
+| Profile | 467,663 | 345,890 | 12,528 | 109,245 | 153 |
+| MAFFT | 467,690 | 345,933 | 12,529 | 109,228 | 153 |
+
+All 526 taxa have reported events in this restricted class, but only 153
+contribute two-model events. Two-model coverage is approximately 23.4% in
+each guide. Both include 6,354 same-model events. Profile and MAFFT respectively
+have 48,661 and 48,711 families with events; only 20,492 and 20,474 have
+two-model events. This substantial ascertainment limits generalization across
+lineages and families. Counts are archived in
+`metadata/duplication_sampling_coverage_completed_20260926.json`; all source
+and output hashes were rechecked after completion.

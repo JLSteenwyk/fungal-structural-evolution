@@ -1,0 +1,49 @@
+{
+  "status": "complete_duplication_sampling_coverage_pending_aggregate_readback",
+  "receipt_path": "results/orthology/duplication-sampling-coverage-20260926-v1/receipt.json",
+  "receipt_sha256": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+  "receipt": {
+    "status": "complete_terminal_duplication_sampling_coverage",
+    "plan_sha256": "85b46cc0e4bfa43c95435f494af12c4320acaacb79902dac6c678c6b2b7c6884",
+    "guides": [
+      {
+        "guide": "profile",
+        "all_source_events": 1204638,
+        "counts": {
+          "terminal_singleton_events": 467663,
+          "neither_model": 345890,
+          "one_model": 12528,
+          "both_models": 109245,
+          "both_same_model": 6354
+        },
+        "taxa_with_terminal_singletons": 526,
+        "taxa_with_both_models": 153,
+        "families_with_terminal_singletons": 48661,
+        "families_with_both_models": 20492
+      },
+      {
+        "guide": "mafft",
+        "all_source_events": 1204919,
+        "counts": {
+          "terminal_singleton_events": 467690,
+          "neither_model": 345933,
+          "one_model": 12529,
+          "both_models": 109228,
+          "both_same_model": 6354
+        },
+        "taxa_with_terminal_singletons": 526,
+        "taxa_with_both_models": 153,
+        "families_with_terminal_singletons": 48711,
+        "families_with_both_models": 20474
+      }
+    ],
+    "sampled_taxa": 527,
+    "artifacts": {
+      "terminal_event_coverage.tsv.gz": "2a3a6f963610d85941abb827a988fe4cf2d0d4ab02f69a745658726d872526e8",
+      "taxon_coverage.tsv": "d3e02cd3210f4ecd6409ce6571d9416db93ebb50b4bca227ccb92c73e1500c64",
+      "family_coverage.tsv": "7cfe82a29c0a9d07b2c276bcf5412ae21b2e82f39194dd0aa5f1b025516f8736"
+    },
+    "scope": "All native reported terminal singleton-side events independently classified and joined to the frozen structural bridge, with existing export identities and singleton counts checked row by row. Taxon/family denominators include zero-model events; all sampled taxa retained. Not a complete duplication-event universe, biological event validation, missing-at-random assumption, causal effect or corrected evolutionary test. Frozen coverage excludes subsequent retrievals and ESMFold structures."
+  },
+  "verification": "Full native terminal classification/bridge join completed with row-wise existing coverage checks; all source/output pins checked after completion. Independent exported aggregate readback pending."
+}

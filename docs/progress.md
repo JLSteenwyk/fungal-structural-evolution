@@ -5347,3 +5347,13 @@ sampled taxa and distinguish zero denominators from zero coverage. This
 quantifies frozen model ascertainment; it does not correct sampling bias or
 establish biological duplication history. See
 [coverage analysis](duplication-sampling-coverage-20260926.md).
+
+
+### September 26: terminal candidate coverage reconstruction completed
+
+Profile and MAFFT contain 467,663 and 467,690 reported terminal singleton-side
+events. Only 109,245 and 109,228 respectively have models for both copies
+(about 23.4%), from 153 of 526 taxa; every taxon has events in this class.
+The substantial modeled-subset ascertainment must constrain downstream
+interpretation. Source/output hashes were checked; independent aggregate
+readback remains pending. See [coverage results](duplication-sampling-coverage-20260926.md).
