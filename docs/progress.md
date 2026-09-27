@@ -5261,3 +5261,13 @@ is running. The independent classification/matching code passed known cases
 and 1,000 varied fixtures. Full production proof remains pending; biological
 domain events are not inferred by this check. See
 [domain controls](duplication-domain-controls-20260926.md).
+
+
+### September 26: complete domain-control readback passed
+
+All 227,089 model exports, 135,741 unique pairs, 542,964 pair/policy rows and
+150,690 overlapping policy-specific domain matches passed independent full
+reconstruction. All source/output pins were checked again and the readback
+receipt archived. Domain-level coordinate comparisons and biological
+interpretation remain pending; the inventory does not establish evolutionary
+gains, losses or rearrangements.

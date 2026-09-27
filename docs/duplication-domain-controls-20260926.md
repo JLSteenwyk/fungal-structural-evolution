@@ -55,17 +55,17 @@ categories, preservation of repeated/versioned annotations, exclusion of
 non-Domain and ineligible hits, and prevention of false single-copy matching
 when an ineligible additional domain copy is retained.
 
-Production completed successfully. The receipt explicitly says
-`pending_readback`; independent full output verification remains required.
+Production completed successfully. Its immutable receipt says
+`pending_readback`; the separate full independent readback below now passed.
 There are 542,964 pair/policy rows, with 37,755, 37,750, 37,595 and 37,590
 candidate single-copy Domain matches under alignment E-value, alignment
 bit-score, envelope E-value and envelope bit-score policies respectively.
 These overlapping policy counts are not additive. Among the 227,089 models,
 96,051 have no qualifying annotation and 1,944 have policy disagreement.
-These are producer counts pending independent readback; all source pins and
-output hashes were checked after successful completion.
+These producer counts now have a complete independent readback; all source
+and output pins were checked again after readback completion.
 
-## Independent complete output readback running
+## Independent complete output readback passed
 
 `scripts/readback_duplication_domain_controls.py` now reconstructs every model
 annotation export from separate registry segment and policy-membership queries,
@@ -90,6 +90,10 @@ python scripts/readback_duplication_domain_controls.py \
 
 The output is
 `results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json`.
-The readback is running, not yet passed. It checks interpretation of the same
+The readback passed all 227,089 models, 135,741 pairs, 542,964 policy rows
+and all 150,690 domain-match policy records (overlapping across policies).
+Its receipt is archived in
+`metadata/duplication_domain_control_readback_completed_20260926.json`.
+It checks interpretation of the same
 frozen annotations, not an independent Pfam search or structural validation of
 domain boundaries.

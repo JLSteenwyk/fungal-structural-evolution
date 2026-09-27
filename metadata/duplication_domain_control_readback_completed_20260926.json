@@ -1,0 +1,21 @@
+{
+  "status": "passed_full_duplication_domain_controls_archived",
+  "receipt_path": "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json",
+  "receipt_sha256": "0dd82c0359ced0669b450eb35f9c3921a22877ea7d0db1dea5a2b4388e994a6c",
+  "receipt": {
+    "status": "passed_full_duplication_domain_control_readback",
+    "plan_sha256": "0209fb2c3ecc71ba98843b814a507bf548975bbf57d97d6f0d8cd4eda54733f5",
+    "producer_receipt_sha256": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+    "models": 227089,
+    "unique_model_pairs": 135741,
+    "pair_policy_rows": 542964,
+    "single_copy_domain_matches_by_policy": {
+      "alignment_evalue": 37755,
+      "alignment_bitscore": 37750,
+      "envelope_evalue": 37595,
+      "envelope_bitscore": 37590
+    },
+    "scope": "Every model export independently rejoined from registry segments and policy membership; full primary/reference pair union, all architecture categories/counts and every single-copy domain match independently reconstructed. Same frozen Pfam source, not independent annotation searches or structural domain validation. No biological gain/loss/rearrangement or duplication-effect inference."
+  },
+  "verification": "Full successful readback receipt, exact plan binding and all source/output pins checked again."
+}
