@@ -1,0 +1,63 @@
+{
+  "status": "complete_matched_species_covariance_factors_pending_tree_readback",
+  "patterns": 4568,
+  "species_columns": 526,
+  "rank": 242,
+  "svd_rank_tolerance": 1.1881104574053014e-11,
+  "trees": {
+    "mafft_guide": {
+      "covariance_entries_checked": 20866624,
+      "maximum_absolute_error": 1.6431300764452317e-14,
+      "minimum_core_eigenvalue": 0.0004857685388961384
+    },
+    "pmsf_mafft_profile": {
+      "covariance_entries_checked": 20866624,
+      "maximum_absolute_error": 2.1316282072803006e-14,
+      "minimum_core_eigenvalue": 0.000509991953950338
+    },
+    "pmsf_profile_mafft": {
+      "covariance_entries_checked": 20866624,
+      "maximum_absolute_error": 2.3092638912203256e-14,
+      "minimum_core_eigenvalue": 0.0006417203261323804
+    },
+    "pmsf_profile_profile": {
+      "covariance_entries_checked": 20866624,
+      "maximum_absolute_error": 2.220446049250313e-14,
+      "minimum_core_eigenvalue": 0.0006387525886308237
+    },
+    "profile_guide": {
+      "covariance_entries_checked": 20866624,
+      "maximum_absolute_error": 1.9539925233402755e-14,
+      "minimum_core_eigenvalue": 0.000550449911778532
+    }
+  },
+  "pins": {
+    "results/phylogeny/matched-species-contrasts-20260927-v1/receipt.json": "cb1c7cc3cf1a0a97debf7ea62251766796a1fa8accea27efd36269d8fd8b1e31",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/kernel_quadratic_forms.tsv": "a8dbf5a95337e8b3d3592c65c8825fe61de78e87f3f6ca490464fe4780184e7b",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/species_contrast_design.npz": "abf4a13cfcbc90072d694c1c64cfaed58b1aded3644149919e7cde039b1c64ee",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/selected_pair_patterns.tsv.gz": "b8e3bae3faad9a88109b21f49c167dab7620e71494a19f0680828acc920e033e",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/patterns.tsv": "08ce9f329bc5d138a6f5edde4c6ea86df1491d027d40271de7b0052630b914e5",
+    "results/phylogeny/species-distance-kernels-20260927-v1/receipt.json": "a4a0828e49c642b5096908a716d1e1f6d6ad70705b7c0e1c3d27049e260f14a2",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_profile.npz": "68aa4f9691c8838ed3160a5d0f4310eb49f3ddddb5796f8b31c055868df1da6c",
+    "results/phylogeny/species-distance-kernels-20260927-v1/taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_mafft.npz": "4797faed6d053bd9b1cdf36320dfa5a3caceae0e95e7154eabd534353919c47b",
+    "results/phylogeny/species-distance-kernels-20260927-v1/profile_guide.npz": "3cb8f49eb3ef381d28847105c6895ac4c2fe95cd6e032124dee578906bf7f504",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_mafft_profile.npz": "fe9d11cd175762e00f437c2bd6c2a79571ae7bbdf551bba2b641ac68e61bbe5e",
+    "results/phylogeny/species-distance-kernels-20260927-v1/mafft_guide.npz": "d1fdf4388ec2f596d60822f2daa1cdf789c8b69580e9dfdc00c7b30c28f601bf",
+    "metadata/matched_species_contrast_readback_20260927.json": "b1278e4390fd67fdf78b13d2bbde3079b79742b4d46863aee465b92cdd3f6549"
+  },
+  "artifacts": {
+    "pmsf_profile_profile.npz": "03bff3e7120bef6ba53b397071220fc0dcd4d19b0795269c234cf4e991750007",
+    "taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "pmsf_profile_mafft.npz": "317680ad882986776f6be49adb445a77d2f1a7bd599e9c0ed0d72aa3522fc17b",
+    "species_projection.npy": "fdb67f15b8f78dc49b67e6177375217ce7209e963f921fd6ee833c2a05834511",
+    "profile_guide.npz": "2f89ee747c312612f0a5882012b81b4b6194cc54fc9d748e3d15f414b2566868",
+    "pattern_basis.npy": "5a4fb112d23dc0cabff7ec68d44c714ceba59ca431077f5af9a73e35b41f5d11",
+    "pmsf_mafft_profile.npz": "0cef79bda8310a769e21985eeb9799e49a26923e8ec461f2f52374dcef3def03",
+    "mafft_guide.npz": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd",
+    "patterns.tsv": "08ce9f329bc5d138a6f5edde4c6ea86df1491d027d40271de7b0052630b914e5"
+  },
+  "script_sha256": "b99b8e30059cc81509d97b5f28e45ed5801f4cded00834c19407e0f61c42cdcb",
+  "scope": "Working W C W-transpose represented as F F-transpose on the measured design row space. All pattern-pair covariance entries checked. No full species inverse, eigenvalue clipping, diagonal jitter, fitted variance, or biological inference. Same pre-qualification design and five tree alternatives; per-setting row selection remains necessary."
+}

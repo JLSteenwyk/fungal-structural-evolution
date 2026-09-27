@@ -7618,3 +7618,21 @@ fitted effect was exported. The 17-dimensional active-species null space must
 be handled explicitly when fitting and reassessed after structural filtering.
 [Methods and model limitations](matched-species-contrasts-20260927.md).
 All eight aims remain open. GPU prediction remains paused.
+
+## September 27 full species covariance factors verified
+
+The preceding turn completed the full species-contrast design and independent
+readback (progress). Built rank-242 factors for all five tree covariances over
+all 4,568 species patterns. No full species inverse, eigenvalue clipping or
+diagonal jitter was used. Every entry of W was recovered from its retained
+design basis, and every pattern-pair covariance was checked. Independent
+DendroPy edge-path reconstruction checked all 104,333,120 covariance entries;
+maximum absolute discrepancy was 2.49e-14. The reduced covariance matrices all
+admit Cholesky decomposition.
+
+[Factor methods and limitations](matched-species-covariance-factors-20260927.md).
+This enables compact phylogenetic model computation without changing the
+working additive endpoint assumption. Shared-control/family components, fitted
+variance multipliers, model adequacy and evolutionary inference remain open.
+The covariate-design producer remains live with advancing checkpoints.
+All eight aims remain open. GPU prediction remains paused.

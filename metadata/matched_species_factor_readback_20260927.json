@@ -1,0 +1,29 @@
+{
+  "status": "passed_full_matched_species_factor_tree_readback",
+  "trees": {
+    "profile_guide": {
+      "covariance_entries_checked": 20866624,
+      "maximum_tree_edge_error": 2.1316282072803006e-14
+    },
+    "mafft_guide": {
+      "covariance_entries_checked": 20866624,
+      "maximum_tree_edge_error": 1.8207657603852567e-14
+    },
+    "pmsf_profile_profile": {
+      "covariance_entries_checked": 20866624,
+      "maximum_tree_edge_error": 2.398081733190338e-14
+    },
+    "pmsf_profile_mafft": {
+      "covariance_entries_checked": 20866624,
+      "maximum_tree_edge_error": 2.4868995751603507e-14
+    },
+    "pmsf_mafft_profile": {
+      "covariance_entries_checked": 20866624,
+      "maximum_tree_edge_error": 2.220446049250313e-14
+    }
+  },
+  "covariance_entries_checked": 104333120,
+  "source_receipt_sha256": "10fac74ba12e204df190067ade4fe4de55bfbc5062cf449589763b0fcf3c6936",
+  "script_sha256": "e0ffc8c71cad05fb0a1f62d14155bf905ab25908fbbf1b40202c4678d2f8a136",
+  "scope": "Every ordered pattern-pair covariance reconstructed from independently parsed DendroPy tree edge paths. Complete basis, species projection, Cholesky and core covariance checked. No fitted variance multiplier, inverse, regularization or evolutionary effect."
+}
