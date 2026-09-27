@@ -5749,3 +5749,22 @@ See [methods and verified integration results](duplication-domain-triad-integrat
 and the [completion record](../metadata/duplication_domain_triad_integration_completed_20260927.json).
 Numerical quarantine, geometry checks, scientific controls and phylogenetic
 inference remain separate requirements. GPU prediction was not resumed.
+
+
+## September 27 full domain alignment geometry assessment launched
+
+Launched a one-CPU assessment of all 280,824 successful directed domain
+alignments. It rechecks hashed PDB mappings and existing diagnostic metrics,
+then records coordinate ranks, shape widths and the curvature of the optimal
+proper-rotation fit. Continuous ratios distinguish near-collinearity from
+numerical degeneracy without introducing an unvalidated biological cutoff.
+The original RMSD quarantine remains unchanged.
+
+Fixtures passed collinear/planar/reflected examples, swapped orders and rigid
+coordinate transformations. An independent finite-difference Hessian agreed
+with the analytic rotation-curvature calculation. See
+[geometry methods](duplication-domain-alignment-geometry-20260927.md) and the
+[launch record](../metadata/duplication_domain_alignment_geometry_launch_20260927.json).
+The full output and its independent readback are pending. Existing CPU
+alignment, AlphaFold rate and resampling services remain active; GPU prediction
+has not been resumed.
