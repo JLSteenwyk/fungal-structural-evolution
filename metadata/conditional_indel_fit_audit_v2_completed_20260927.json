@@ -1,0 +1,35 @@
+{
+  "status": "complete_replay_with_unresolved_likelihood_discrepancies",
+  "starts_outside_tolerance": 1,
+  "high_precision_starts": 24,
+  "input_dispositions": 312,
+  "nonempty_models": 306,
+  "starts_checked": 918,
+  "maximum_likelihood_error": 1.4617793153703929e-06,
+  "best_optimizer_failures": 5,
+  "best_bound_models": 169,
+  "models_with_start_spread_above_001": 43,
+  "producer_terminal_state": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "producer_receipt_sha256": "773f476a6f36ef3897fd175844ff3b5cf0681561cf459df9f267cc67d2b59596",
+  "audit_plan_sha256": "ca12a7623f888c7562b700680f24e2013a114f2bd16a0491a26e80efd5389671",
+  "scope": "Independent arithmetic verification at all fitted parameters. Bounds, optimizer flags and start sensitivity retained; not proof of convergence, model adequacy or final ancestral sequence validity.",
+  "receipt_path": "results/ancestral/conditional-indel-fit-audit-20260927-v2/receipt.json",
+  "receipt_sha256": "6a973fdc643e369e1c90e32666987496f19a59c3d05cf912a9727371424992e3",
+  "terminal_states": {
+    "fungal-conditional-indel-models-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-conditional-indel-fit-audit-20260927-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

@@ -9157,3 +9157,24 @@ OG0000152 envelope/MAFFT terminal-gap observed-mask start0:70-digit error
 1.46178e-6, optimizer unsuccessful. It remains explicitly unverified.
 Full audit and optimization qualification remain pending; no tolerance was
 relaxed and no difficult fit was removed.
+
+### 2026-09-27: initial indel fits/audit finished; stable denominator validated
+
+Producer and v2 auditor both terminated inactive/success/exit0. All312 input
+dispositions and918 start results checked. Exactly one start remains outside
+the1e-6 likelihood tolerance (error1.46178e-6);24 needed high precision.
+Among306 selected fits,five report optimizer failure,169 reach a bound and43
+models have start spread>0.001. Terminal success is execution completion,
+not scientific qualification; these issues remain explicit.
+
+Implemented a direct observed-one event probability by propagating disjoint
+no-event/event probabilities up the tree. This avoids subtracting a nearly
+unity exclusion probability and refreshes the denominator on every call.
+Both ascertainment policies and all character patterns remain represented.
+Validation covers all918 existing fits: maximum difference from independent
+replay7.07e-7 (double-expm references), and2.85e-14 across all24 high-precision
+references. Synthetic high-precision checks include rare events and gamma
+extremes. This validates likelihood arithmetic at those parameters, not
+optimization. Stable-objective refits and subsequent posterior propagation
+remain required. Scripts: `stable_indel_likelihood.py` and
+`validate_stable_indel_likelihood.py`; no pinned running script was changed.
