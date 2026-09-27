@@ -109,3 +109,46 @@ Exact process identities are recorded in
 `metadata/case_experimental_subject_readback_launch_20260927.json`.
 Canonical sequence agreement will not establish observed coordinate coverage,
 construct equivalence or independence from prediction training data.
+
+## Domain and outside-region alignment coverage
+
+`scripts/screen_case_experimental_domain_coverage.py` reconstructed paired query
+residue positions in every one of the 3,091 search alignments. Query residues
+aligned to a subject gap do not contribute. Each case/domain boundary is screened
+against its original interval length and, separately, original protein length
+minus that interval. A shared experimental entity must pass the screen for every
+A/B/reference interval and boundary. Separate alignment contexts are not combined
+to manufacture residue coverage. All six screens and all thirteen cases, including
+zero-candidate cases, are retained.
+
+At n50/c70, shared entity counts are:
+
+| Case | Domain coverage | Domain and outside coverage |
+| --- | ---: | ---: |
+| Heliocybe OG0000054 | 31 | 19 |
+| Rhodonia OG0000095 | 0 | 0 |
+| Cryoendolithus OG0000107 | 97 | 97 |
+| Scedosporium OG0000152 | 23 | 0 |
+| Furculomyces OG0000230 | 10 | 6 |
+| Jaapia OG0000294 | 102 | 102 |
+| Synchytrium OG0000336 | 0 | 0 |
+| Neolecta OG0000972 | 3 | 0 |
+| Leucosporidium OG0001082 | 0 | 0 |
+| Smittium OG0001200 | 0 | 0 |
+| Leucosporidium OG0001203 | 0 | 0 |
+| Piloderma OG0002650 | 0 | 0 |
+| Phycomyces OG0002812 | 26 | 26 |
+
+These are candidate entity counts, not independent experiments or observed
+coordinate coverage. Multiple entities may belong to the same PDB entry; entries
+may share constructs or experimental context. Both the fungal prediction coverage
+and experimental alignment coverage are needed: Cryoendolithus and Furculomyces
+passing this search screen does not override their earlier predicted-coordinate
+coverage limitations. The metadata retrieval and subject-sequence check remain
+running/queued as of this update.
+
+Full alignment/interval decisions, shared-entity decisions and all 78 case/screen
+rows are in
+`results/experimental_structures/whole-domain-case-domain-coverage-20260927-v1`.
+Serialized readback and source hashes are recorded in
+`metadata/case_experimental_domain_coverage_completed_20260927.json`.

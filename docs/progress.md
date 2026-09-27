@@ -8534,3 +8534,13 @@ entries, preserving all search hits. Queued full response and subject-sequence
 readback behind exact-process/terminal-success gates. Retrieval uses two HTTP
 workers and one CPU; GPUs remain paused. Subject sequence, construct and
 coordinate validation are not yet complete. See [retrieval scope](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: experimental domain/outside alignment coverage completed
+
+Reconstructed all 3,091 query alignments and screened paired residues against
+original domain and outside lengths for all six settings. Shared entities must
+cover every A/B/reference interval boundary. At n50/c70, five cases have such
+candidates for both regions; Heliocybe, Jaapia and Phycomyces have 19, 102 and 26,
+respectively. All 13 cases and zero-candidate outcomes remain explicit. These
+counts do not establish observed coordinate coverage. Metadata retrieval is
+advancing (900/1,912 verified at the latest check). See [coverage tables](case-independent-control-coverage-20260927.md).
