@@ -6743,3 +6743,17 @@ The prior turn completed control-concentration diagnostics; this turn advances
 a separate ecological coverage requirement across the full curated cohort.
 Transitions and controlled ecological tests remain outstanding. All eight aims
 remain open; GPU prediction stays paused.
+
+## September 27 species-source ecological review completed
+
+Reviewed all 15 imported species absent from the curated evidence, retained 13
+published ecological classifications in a new 45-species table, separated yeast
+growth form and withheld Punctularia coding pending source review. All original
+32 rows, all 13 source/identity joins and all 15 dispositions passed readback.
+Isolate equivalence, nonexclusive traits and transition uncertainty remain
+explicit. See [review](ecology-source-review-20260927.md).
+
+The previous turn completed AlphaFold ecological coverage for the frozen
+32-species cohort; this turn expands the evidence available for the ecological
+aim. Updated coverage and transition diagnostics remain downstream. All eight
+aims remain open; GPU prediction stays paused.

@@ -156,3 +156,12 @@ checks all 32 curated taxa, 496 pairs and nine provisional groups using actual
 shared observation masks. Independent verification passed; 23 taxa have
 eligible markers and 246 pairs share a ≥50-column marker. Prediction sources
 remain separate, and independent ecological transitions remain unestablished.
+
+## September 27 species-source review
+
+The [new review](ecology-source-review-20260927.md) preserves the original 32
+statements and adds 13 source-classified ecological records, for 45 species.
+All 15 previously uncurated import records have explicit dispositions; yeast
+growth form stays separate and Punctularia ecological coding remains withheld.
+No new ECM-negative states or independent transitions are inferred. Existing
+coverage and parsimony outputs still use their frozen 32-species evidence.

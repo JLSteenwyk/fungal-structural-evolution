@@ -1,0 +1,109 @@
+{
+  "previous": "metadata/species_ecology_evidence_sample_linked_20260922.tsv",
+  "previous_receipt": "metadata/ecology_sample_linked_curation_receipt.json",
+  "source": "metadata/miyauchi_species_ecology_matches.tsv",
+  "source_readback": "metadata/miyauchi_species_ecology_import_readback.json",
+  "identity": "metadata/miyauchi_ecology_sample_identity.tsv",
+  "output": "metadata/species_ecology_evidence_reviewed_20260927.tsv",
+  "dispositions": "metadata/ecology_species_source_review_dispositions_20260927.tsv",
+  "receipt": "metadata/ecology_species_source_review_receipt_20260927.json",
+  "decisions": {
+    "Neolentinus lepideus": {
+      "source_label": "Wood decayer",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "wood_decayer"
+    },
+    "Jaapia argillacea": {
+      "source_label": "Wood decayer",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "wood_decayer"
+    },
+    "Punctularia strigosozonata": {
+      "source_label": "Pathogen",
+      "disposition": "withhold_ecological_coding_pending_source_review",
+      "note": "Pathogen label in Dataset 2 is retained in source import; a wood-decay classification is reported by the JGI genome project. Classification discrepancy remains unresolved; no automatic overwrite or binary coding."
+    },
+    "Auricularia subglabra": {
+      "source_label": "Wood decayer",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "wood_decayer"
+    },
+    "Rhizoctonia solani": {
+      "source_label": "Pathogen",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "pathogen"
+    },
+    "Dacryopinax primogenitus": {
+      "source_label": "Wood decayer",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "wood_decayer"
+    },
+    "Amorphotheca resinae": {
+      "source_label": "Saprotroph",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "saprotrophic"
+    },
+    "Botrytis cinerea": {
+      "source_label": "Pathogen",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "pathogen"
+    },
+    "Aureobasidium pullulans": {
+      "source_label": "Saprotroph",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "saprotrophic"
+    },
+    "Aspergillus flavus": {
+      "source_label": "Pathogen",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "pathogen"
+    },
+    "Xylona heveae": {
+      "source_label": "Endophyte",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "endophyte"
+    },
+    "Morchella importuna": {
+      "source_label": "Saprotroph",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "saprotrophic"
+    },
+    "Saccharomyces cerevisiae": {
+      "source_label": "Yeast",
+      "disposition": "retain_growth_form_separately_not_ecological_guild",
+      "note": "Yeast is a growth-form label, not an ecological guild or absence-of-mycorrhiza observation. Source M3837 identity is not equated to the selected assembly."
+    },
+    "Taphrina deformans": {
+      "source_label": "Pathogen",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "pathogen"
+    },
+    "Rhizophagus irregularis": {
+      "source_label": "Arbuscular mycorrhizae",
+      "disposition": "retain_published_species_classification",
+      "note": "Retain source label without inferring exclusive lifestyle, host range, decay mechanism or absent mycorrhizal capability.",
+      "state": "arbuscular_mycorrhizal"
+    }
+  },
+  "pins": {
+    "metadata/species_ecology_evidence_sample_linked_20260922.tsv": "c03f124defcb8fba162daf53bddc28f4a7c661e69e5459982621ea89c7102911",
+    "metadata/ecology_sample_linked_curation_receipt.json": "e1c75356bbb5bc8cc752e00cf3f30cc668355553a64e7d6a24e246683beafa7d",
+    "metadata/miyauchi_species_ecology_matches.tsv": "d45ad521abdb637c52fce067971d71d8e3f568175856a4f6e8163e30e3aee90b",
+    "metadata/miyauchi_species_ecology_import_readback.json": "b61c08d1ad32711ce76ee6399d4be67f4436cf913e405f467faf45d125c85ec0",
+    "metadata/miyauchi_ecology_sample_identity.tsv": "6684f82d1d11a86a388073f1c5d1b943f92e9838717f9dbbbc2d08ed39668add",
+    "metadata/miyauchi_ecology_sample_identity_receipt.json": "1adc1489aedd35547b209528647d3128528b277b4de42120cb7608de22aafefd",
+    "scripts/extend_reviewed_species_ecology.py": "268a50114d51ef47735994af6ac1a96be388f0958256e0554bea7dab5f1aa935"
+  }
+}
