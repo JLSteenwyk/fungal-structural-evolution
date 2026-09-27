@@ -109,3 +109,58 @@ python scripts/compare_duplication_sister_references.py \
 
 Current comparison output is
 `results/orthology/duplication-reference-guide-comparison-20260926-v1/`.
+
+
+## Complete tied-reference structural workload
+
+`prepare_duplication_reference_comparisons.py` expands every provisionally
+eligible event to both duplicate copies against every tied nearest reference.
+The 17,461 profile events contribute 18,478 event/reference links; 17,448
+MAFFT events contribute 18,466. Expanding both duplicate copies yields
+73,888 guide-specific event/reference/copy records. Lexical representatives
+are flagged but do not exclude other tied references.
+
+The ledger contains 649 identical-model records, 641 records referring to
+model pairs already in the running duplicate-pair queue, and 72,598 records
+requiring additional pair computations. After model/version deduplication,
+there are 32,862 distinct reference-comparison pairs: 321 already covered by
+the frozen queue and 32,541 additional pairs. Full and pLDDT>=70 comparisons
+in both input orders would add 130,164 directed dispositions. These are
+computational counts, not independent biological observations.
+
+The reference-comparison set uses 49,334 unique models. Of these, 14,540 are
+outside the current coordinate queue, requiring validation of an additional
+5,784,554,689 bytes (5.4 GiB) of raw coordinates. The existing running queue
+and its pins remain unchanged. These extra models have only catalog-level
+provenance checks so far; raw coordinates, reference orthology and biological
+asymmetry are not validated by this inventory.
+
+`readback_duplication_reference_comparisons.py` independently reconstructed
+the complete event × tied-reference × duplicate-copy ledger from the source
+reference tables and verified all 73,888 records. It also checked pair keys,
+the exact model/pair sets, existing-versus-additional work partitions and
+artifact hashes. The producer checked each focal/reference model/version,
+sequence hash and path against the frozen bridge/catalog. The independent
+readback does not redo that source gene-to-model join or the sister-reference
+selection itself. Both receipts are archived in
+`metadata/duplication_reference_comparison_completed_20260926.json`.
+
+Output is
+`results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/`,
+including `event_reference_comparisons.tsv`, `model_pairs.tsv`, `models.jsonl`
+and `additional_models.jsonl`. Reproduce the inventory with:
+
+```bash
+python scripts/prepare_duplication_reference_comparisons.py \
+  --inventory results/orthology/duplication-sister-reference-inventory-20260926-v1 \
+  --inventory-plan metadata/duplication_sister_reference_plan_20260926.json \
+  --base-queue results/structural_comparisons/duplication-model-pair-queue-20260926-v1 \
+  --catalog results/structures/whole-proteome-afdb-catalog-20260922-v1 \
+  --output <fresh-output-directory>
+```
+
+Run the readback with `scripts/readback_duplication_reference_comparisons.py`,
+passing `--inventory` as the new comparison inventory, `--references` as the
+sister-reference inventory, `--base-queue` as the unchanged duplicate-pair
+queue, and `--output` as a fresh JSON proof path. Additional coordinate
+validation and reference alignments have not yet been launched.

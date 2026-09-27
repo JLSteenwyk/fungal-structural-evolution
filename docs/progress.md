@@ -5146,3 +5146,13 @@ sisters account for most other dispositions. All original candidate fields,
 pair-universe identities, output hashes and count identities were checked;
 reference selection/path-distance reconstruction remains a separate validation
 requirement. See [reference results and limitations](duplication-sister-references-20260926.md).
+
+
+### September 26: all tied reference comparisons inventoried and checked
+
+The provisional-reference expansion preserves 73,888 guide/event/reference/
+copy records, including every nearest tie. Independent full-ledger readback
+and exact model/pair partition checks passed. The workload adds 14,540 models
+(5.4 GiB coordinates) and 32,541 model pairs; 321 distinct pairs can reuse the
+existing frozen comparison queue. Additional validation and alignments are
+not yet running. See [reference workflow](duplication-sister-references-20260926.md).

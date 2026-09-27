@@ -1,0 +1,62 @@
+{
+  "producer_receipt_path": "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+  "producer_receipt": {
+    "status": "complete_provisional_reference_comparison_inventory",
+    "source_pins": {
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/receipt.json": "7d6250412686cddd62a71111f92b624183d42dd84addbada095ef4c30b2d7e43",
+      "metadata/duplication_sister_reference_plan_20260926.json": "aef846e641d7c3ebdc8aab765660e3bc786539b0f17fba9e7722300ff6e85469",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+      "results/structures/whole-proteome-afdb-catalog-20260922-v1/receipt.json": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+      "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+      "results/structures/whole-proteome-family-coverage-20260922-v1/receipt.json": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378",
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/profile_sister_references.tsv": "cab7e8f9a23da56dd0051abe995612d9b029e0c830bb0c509679b824486cb918",
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/mafft_sister_references.tsv": "adfe5ec37a5a9077f1ef4ad1baf623047bd857974a7e9e2c55bfb7ece377c9f4",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+      "results/structures/whole-proteome-afdb-catalog-20260922-v1/models.jsonl": "7361c7de4c851f3d4a20dbe077269d738968035c425fe2f72908b120b5078dd2"
+    },
+    "counts": {
+      "profile_eligible_events": 17461,
+      "profile_event_reference_links": 18478,
+      "mafft_eligible_events": 17448,
+      "mafft_event_reference_links": 18466,
+      "additional_pair_event_links": 72598,
+      "identical_model_event_links": 649,
+      "existing_duplicate_pair_event_links": 641
+    },
+    "all_reference_comparison_models": 49334,
+    "additional_models": 14540,
+    "additional_coordinate_bytes": 5784554689,
+    "unique_distinct_model_pairs": 32862,
+    "additional_model_pairs": 32541,
+    "existing_duplicate_model_pairs": 321,
+    "additional_directed_mask_dispositions": 130164,
+    "script_sha256": "254ee9f6204a458e35e3bc34c55ae1075dd2323e56e42bb2f633c4d160a5e9a2",
+    "artifacts": {
+      "model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+      "models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+      "event_reference_comparisons.tsv": "692dc046eb280c1f129c05b2a47a674a3e56ff2c836b34fca9176d2afd6f2731",
+      "additional_models.jsonl": "1d6289a600251cfb431e13d57343685def9fb5de61375e8a72ca56756210eab3"
+    },
+    "scope": "Both duplicate copies compared with every tied nearest provisional reference under each guide; all event links retained, model computations deduplicated. Existing frozen queue unchanged. Model/sequence/version/path provenance bound; extra coordinate bytes measured by stat, not validated. Reference orthology, complete sister-choice/path readback, additional coordinate validation, alignments and asymmetry tests remain pending."
+  },
+  "readback_path": "results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json",
+  "readback_sha256": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+  "readback": {
+    "status": "passed_full_reference_comparison_ledger_readback",
+    "producer_receipt_sha256": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "event_reference_comparisons": 73888,
+    "unique_models": 49334,
+    "additional_models": 14540,
+    "distinct_model_pairs": 32862,
+    "additional_model_pairs": 32541,
+    "work_dispositions": {
+      "additional_pair": 72598,
+      "identical_model": 649,
+      "existing_duplicate_pair": 641
+    },
+    "script_sha256": "6acdb20080a8edfadd6c2b5b0bbd88a53c941cc048a160a35b43f65e3efe2c06",
+    "scope": "All eligible event x tied-reference x duplicate-side links independently enumerated from source tables. Exact model/pair work partitions, hashes and output scope checked. Does not independently redo source gene-to-model mapping, reference selection or raw coordinates."
+  }
+}
