@@ -371,3 +371,57 @@ The complete 150-row table and provenance receipt are versioned as
 `metadata/functional_prediction_context_receipt_20260927.json`. Both source
 models, six-position contexts, contextual amino acids and confidence summaries
 are retained for every row. No new predictions or GPU work were performed.
+
+## Direct coordinate comparisons at shared functional sites
+
+All 150 jointly observed coordinates now have four sequence-locked comparisons:
+the focal three-residue neighborhood, the AlphaFold-selected context, the
+ESMFold-selected context, and the union of both contexts. Each definition uses
+exactly the same unique sequence positions in both predictions, with equal
+weight per position. Repeated context roles do not duplicate a coordinate's
+weight. All definitions are retained regardless of state agreement.
+
+Raw mmCIF C-alpha coordinates were checked against the pinned model bytes,
+complete residue grids and full-sequence hashes for 186 model/source entries.
+The 600 least-squares superpositions have unique rotations at the specified
+numerical tolerance. Coordinate spectra and curvature passed the existing
+alternate-SVD/quaternion check, and SVD squared RMSD agrees with the quaternion
+optimum to at most 5.49e-14 Å². All intracontext pair distances were also compared
+without a superposition, with scalar/vector calculations checked against each
+other. Exported RMSD and mean absolute distance differences were read back.
+
+For the context union, the observed C-alpha RMSDs are:
+
+| State agreement | Partner agreement | Residues | Median RMSD (Å) | Range (Å) |
+|---|---|---:|---:|---:|
+| Same | Same | 118 | 0.111 | 0.029–0.450 |
+| Same | Different | 9 | 0.201 | 0.141–0.278 |
+| Different | Same | 11 | 0.140 | 0.068–0.435 |
+| Different | Different | 12 | 0.162 | 0.096–0.264 |
+
+These small-subset RMSDs overlap across the categorical state comparisons;
+a state mismatch cannot be read as a fixed amount of physical displacement.
+Ranges are observed ranges, not confidence intervals. Small locally fitted
+C-alpha differences do not establish catalytic equivalence, side-chain accuracy,
+whole-protein agreement or accuracy relative to an experiment. Each predictor's
+own context had passed its confidence screen; confidence for every cross-source
+coordinate subset remains reported without additional outcome-based exclusion.
+PAE for the union itself has not been recalculated.
+
+Reproduce the full coordinate comparison and its summary with:
+
+```bash
+python scripts/compare_functional_context_geometry.py \
+  --output results/functional_sites/prediction-context-geometry-NEW
+python scripts/summarize_functional_context_geometry.py
+```
+
+The summary script targets the completed immutable
+`results/functional_sites/prediction-context-geometry-20260927-v1` directory;
+choose fresh source/output paths for a rerun. Its 16 context/state/partner
+strata cover every comparison. All counts, minima, medians and maxima were
+independently checked by scalar sorting. The summary table, its readback and
+full provenance receipt are `metadata/functional_context_geometry_*_20260927.*`.
+No new predictions, structural-alphabet encodings or biological inference were
+performed. The next mechanistic distinction would require native descriptor
+and side-chain/pocket analysis alongside broader homologous-site controls.
