@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-wood-decay-bootstrap-summary-20260927.service",
+  "pid": 292478,
+  "created": 1790530690.64,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_wood_decay_bootstrap_uncertainty.py",
+    "--output",
+    "results/ecology/wood-decay-bootstrap-summary-20260927-v1",
+    "--wait-for",
+    "metadata/wood_decay_bootstrap_readback_launch_20260927.json"
+  ],
+  "pins": {
+    "scripts/summarize_wood_decay_bootstrap_uncertainty.py": "6db0d894b3acdf04f5e5ccd4bea3bc7e08874a64cb43e3e983c63935967a2ee5",
+    "metadata/wood_decay_bootstrap_readback_launch_20260927.json": "51462a34b45b57ff059a5d315b1537d6a080a076549cddff8ef2f6f7716900e8",
+    "metadata/wood_decay_bootstrap_plan_20260927.json": "0adff607ee91a1c1702d9ce85bbd0293ff3994cfaf1fd126b0bc01d708bc5131"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_minutes_after_audit": [
+      1,
+      15
+    ]
+  },
+  "scope": "All 2000 trees and five trait codings; 8000 paired within-tree metric sensitivity rows. Requires successful terminal full edge audit."
+}

@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-wood-decay-bootstrap-summary-readback-20260927.service",
+  "pid": 292481,
+  "created": 1790530690.75,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_wood_decay_bootstrap_summary.py",
+    "--input",
+    "results/ecology/wood-decay-bootstrap-summary-20260927-v1",
+    "--output",
+    "metadata/wood_decay_bootstrap_summary_readback_20260927.json",
+    "--wait-for",
+    "metadata/wood_decay_bootstrap_summary_launch_20260927.json"
+  ],
+  "pins": {
+    "scripts/readback_wood_decay_bootstrap_summary.py": "82066dd11263a321cad351adb1728cedd097882cf5f424fd0daa52c30cff5e33",
+    "metadata/wood_decay_bootstrap_summary_launch_20260927.json": "68bdeb7921c4a6ed10e5ff9fcca4d9595f5c17442d5876aa7cc03e1300a165e6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_minutes_after_summary": [
+      1,
+      15
+    ]
+  },
+  "scope": "Full independent pandas joins and grouped counts for every split, tree metric distribution and paired coding range. Terminal summary success required."
+}

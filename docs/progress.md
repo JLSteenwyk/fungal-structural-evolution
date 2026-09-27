@@ -7931,3 +7931,11 @@ process and successful terminal service. Independent SQL moments and eigenvalues
 will check all 165,888 design rows; polynomial and redundant-column fixtures passed.
 The producer remains active. Both stages use one CPU each, serialized by the gate.
 No nonlinear fit or biological conclusion is claimed.
+
+### September 27: wood-decay topology/coding summaries queued
+
+After the live full edge audit succeeds, two serialized one-CPU stages will
+summarize and independently verify all bootstrap split frequencies and metric
+distributions. An additional 8,000 within-tree metric rows separate uncertain
+trait-coding sensitivity from tree changes. Exact-process and terminal-success
+gates preserve prerequisite verification. [Scope](wood-decay-phylogenetic-diagnostic-20260927.md).

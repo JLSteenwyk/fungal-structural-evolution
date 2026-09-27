@@ -82,3 +82,24 @@ output allowance and a 1–24 hour planning range after production. These are
 resource allowances, not completion forecasts. GPU inference remains paused.
 Bootstrap frequencies remain conditional topology sensitivity, not posterior
 transition probabilities, independent origin counts or structural-effect tests.
+
+## Bootstrap uncertainty summaries queued
+
+The full 2,000-tree, five-coding network-flow audit remains active. After its
+successful terminal state, `summarize_wood_decay_bootstrap_uncertainty.py` will
+produce split-level presence and change frequencies with explicit all-tree and
+present-only denominators, plus tree-level metric distributions. It also computes
+8,000 paired tree/metric rows contrasting the primary unknown coding with the
+minimum and maximum over the four uncertain-taxon assignments on the same tree.
+These are coding sensitivity bounds, not confidence intervals.
+
+`readback_wood_decay_bootstrap_summary.py` waits for successful summary completion
+and independently reconstructs every field using pandas outer joins and grouped
+counts. Both stages use one CPU, 4 GiB, no swap, with 1–15 minutes estimated per
+stage after its prerequisite. Launch identities and source/script hashes are in
+`metadata/wood_decay_bootstrap_summary_launch_20260927.json` and
+`metadata/wood_decay_bootstrap_summary_readback_launch_20260927.json`.
+
+No bootstrap summary is yet accepted. The frozen primary trait assignments remain
+unchanged; changes in optimal mappings do not establish rooted origins, independent
+replication, transition probabilities, or effects on protein structure.
