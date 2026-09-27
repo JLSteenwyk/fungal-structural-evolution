@@ -7083,3 +7083,17 @@ were verified live. Their counters reached 448/285,800 and 9,344/267,716 directe
 dispositions at the checkpoint. The local codon tree producer was also verified
 live with 1,502 case receipts. No unfinished comparison or scientific aim is
 claimed complete. GPU prediction remains paused.
+## September 27 full local-alignment tree execution verified
+
+The previous turn verified structural-background input production and domain
+serialization. This turn verified completion of all 1,632 local-alignment tree
+fits and their 1,632,000 saved bootstrap trees: all 6,528 recorded artifacts,
+case/configuration bindings, disposition grid and pinned inputs were checked
+after the producer exited successfully. Code metadata comprises 1,533 code-1
+and 99 code-12 cases. The completion receipt is archived.
+
+The independent full tree audit is verified live and remains unfinished.
+Topology comparison and codon refits are still gated on that audit. Primary and
+reference structural-comparison production also remain unfinished; no duplicate
+jobs were started. All eight scientific aims remain open and GPU prediction
+remains paused.

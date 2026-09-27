@@ -1,0 +1,37 @@
+{
+  "status": "completed_full_local_codon_tree_execution_verified_pending_audit",
+  "checked_at": "2026-09-27T11:49:14.021503+00:00",
+  "producer_receipt_path": "results/phylogeny/local-codon-trees-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "f1a5ba9c56653fdd08061252fc83243302125c13ce9c5ddacc0d1230a8d42949",
+  "config_sha256": "9b80c28f72c0a9bdf4d9cbd8e285ac9df7647227cf279c1e8dde4ba131f9b473",
+  "cases": 1632,
+  "bootstrap_trees": 1632000,
+  "verified_tree_artifacts": 6528,
+  "translation_table_counts": {
+    "1": 1533,
+    "12": 99
+  },
+  "summed_case_seconds": 8069.54692284108,
+  "case_dispositions": {
+    "ready_for_supported_tree_diagnostic": 1632,
+    "insufficient_sequence_information_for_this_tree_workflow": 51,
+    "fcs_omission_below_four_taxa": 29
+  },
+  "terminal_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "verified_live_audit": {
+    "service": "fungal-local-codon-tree-audit-20260927.service",
+    "pid": 2427893,
+    "created": 1790507787.0,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_local_codon_tree_audit.py",
+      "--plan",
+      "metadata/local_codon_tree_audit_plan_20260927.json"
+    ]
+  },
+  "scope": "Exact full diagnostic grid, all 6528 tree artifact hashes, case/config bindings and pinned inputs checked after successful producer exit. Full independent report/split/support audit is live, not yet complete. No topology sensitivity or selection result."
+}

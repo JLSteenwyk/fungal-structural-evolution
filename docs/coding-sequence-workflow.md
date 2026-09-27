@@ -1437,3 +1437,24 @@ CPUs/4 GiB RAM, no swap, 1 GB planned output and 0.1–4 hours after auditing.
 Expected results are under `results/cds/local-mg94-normalized-branches-20260927-v1`.
 Normalization and original-versus-local divergence comparisons remain pending;
 no GPU, paid resources, new likelihood optimization or selection test is used.
+## Full local-tree execution complete; independent audit running
+
+All 1,632 local-alignment tree fits completed, comprising 1,533 code-1 and 99
+code-12 cases and 1,632,000 saved bootstrap trees. Genetic code labels remain
+case provenance here; the tree fits themselves use the shared nucleotide
+GTR+F+G4 model. The original 1,712-case disposition grid remains intact:
+51 information-limited and 29 FCS-omission cases were not fitted.
+
+After successful producer termination, verified the exact case grid, all 6,528
+recorded tree/log/report/bootstrap artifact hashes, per-case configuration
+bindings, information-table hash and pinned inputs. The completion archive is
+`metadata/local_codon_tree_execution_completed_20260927.json` (producer receipt
+SHA256 `f1a5ba9c56653fdd08061252fc83243302125c13ce9c5ddacc0d1230a8d42949`).
+Summed recorded case execution time was 8,069.55 seconds; this is not wall time
+for the whole pipeline.
+
+The existing independent audit controller automatically advanced and was
+verified live by PID, creation time and command. Its full report, split and
+support reconstruction is not yet complete. The queued tree comparison and
+codon refits retain their audit dependency; this production checkpoint does
+not establish topology stability, model adequacy or selection eligibility.
