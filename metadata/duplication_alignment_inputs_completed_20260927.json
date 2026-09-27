@@ -1,0 +1,49 @@
+{
+  "status": "complete_duplication_whole_protein_input_materialization",
+  "recorded_utc": "2026-09-27T05:15:11.138507+00:00",
+  "producer_receipt": {
+    "status": "complete_duplication_alignment_input_materialization",
+    "plan_sha256": "96a935b2038b0ddbaafa12b26cff73b59cd58be0b8f4734353176ff9d88a5b11",
+    "readback_receipt_sha256": "a23a640c1d2773348ae2d34269a2194d203feba683c70e95c4a096f7c49f4be2",
+    "coordinate_receipt_sha256": "11a7d60a92aff0f68ca2d0acf64a432a8e3ba86dcdbfe9b250fd9f98b4c44cd6",
+    "queue_receipt_sha256": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "models": 212549,
+    "input_dispositions": 425098,
+    "counts": {
+      "full:ready": 212549,
+      "plddt70:ready": 194715,
+      "plddt70:too_few_retained_residues": 17834
+    },
+    "pdb_bytes": 10408718668,
+    "artifacts": {
+      "inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497"
+    },
+    "script_sha256": "935ae216fe400a631fed88a8fd4e64308e721321cb71fd18cb0474652bb04e96",
+    "scope": "Full and pLDDT>=70 C-alpha inputs for every frozen candidate model. Original residue positions and masked sequence retained; short masks and source rejections explicit. PDB coordinates rounded to 0.001 A with bounds checked, confidence to 0.01. No PAE qualification; masked TM scores normalize to retained length and cannot be interpreted interchangeably with full-model scores. Pair alignments, domain/orientation controls and biological effects pending."
+  },
+  "producer_receipt_sha256": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+  "verification": "All plan pins, source receipt bindings, manifest checksum, full model/mask grid, source identities, residue-position bounds/uniqueness and disposition counts verified. This checkpoint does not independently reparse all serialized PDB coordinates.",
+  "alignment_processes_observed": [
+    {
+      "pid": 123720,
+      "created": 1790470009.11,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_duplication_alignments.py",
+        "--plan",
+        "metadata/duplication_alignment_plan_20260926.json"
+      ]
+    },
+    {
+      "pid": 147498,
+      "created": 1790472032.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_duplication_reference_alignments.py",
+        "--plan",
+        "metadata/duplication_reference_alignment_plan_20260926.json"
+      ]
+    }
+  ],
+  "limitations": "Alignment completion, numerical output readback and biological tests remain pending."
+}

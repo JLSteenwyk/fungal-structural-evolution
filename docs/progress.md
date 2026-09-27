@@ -5596,3 +5596,18 @@ workers started automatically for the domain comparisons. Alignment validation
 and biological inference remain pending; this serialization check does not
 validate domain boundaries or inter-residue prediction confidence. See the
 [domain-input checkpoint](../metadata/duplication_domain_inputs_completed_20260927.json).
+
+### September 27: whole-protein inputs complete; pair comparisons running
+
+Completed 425,098 full/pLDDT70 input dispositions for all 212,549 primary
+duplication models. All full inputs and 194,715 confidence-masked inputs are
+ready; 17,834 masks retain fewer than three residues and remain explicit.
+Verified the entire model/mask manifest grid, source identities, original
+lengths, residue-position bounds and uniqueness, disposition counts, manifest
+checksum and pinned provenance. This checkpoint does not independently reparse
+every serialized PDB coordinate.
+
+Both primary and supplementary-reference alignment controllers are active
+with native workers. Their completion and numerical readbacks, followed by
+controlled biological comparisons, remain pending. See the
+[whole-protein input checkpoint](../metadata/duplication_alignment_inputs_completed_20260927.json).
