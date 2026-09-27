@@ -1,0 +1,43 @@
+{
+  "receipt_path": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json",
+  "receipt_sha256": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+  "receipt": {
+    "status": "complete_reviewed_duplication_model_pair_queue",
+    "source_hashes": {
+      "results/orthology/duplication-candidate-tree-review-20260926-v1/receipt.json": "958812c1b7591ec8bf0d9840a600529f5d8b40b1b4a7fb0ce898716f5bb709df",
+      "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+      "results/structures/whole-proteome-afdb-catalog-20260922-v1/receipt.json": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+      "metadata/duplication_candidate_tree_review_plan_20260926.json": "6d5dae62c88c26d58cff3751bb80ea6f8e8d421eea02241aaf3d64f550dd5cf5",
+      "results/structures/whole-proteome-family-coverage-20260922-v1/receipt.json": "8b6b3589e9751112ac0ac409693d23e17c1ede48ac8d4012d635d27731158378",
+      "results/orthology/duplication-candidate-tree-review-20260926-v1/profile_candidate_tree_checks.tsv": "ee328fd4c7e7d8a5861197237aec0c67c65cbdf1e4adad663cf9182eb28a037f",
+      "results/orthology/duplication-candidate-tree-review-20260926-v1/mafft_candidate_tree_checks.tsv": "0187c1b75bcd735dc3df73992465f0ef8799fe724ff8b74abc8770d39d3b5d27",
+      "results/structures/whole-proteome-afdb-catalog-20260922-v1/models.jsonl": "7361c7de4c851f3d4a20dbe077269d738968035c425fe2f72908b120b5078dd2"
+    },
+    "script_sha256": "0d5a8330c088d9c5e6c1fd81eb86ccff84de8751a25091cc96ed33ad8939a3fa",
+    "counts": {
+      "event_links": 218473,
+      "same_model_links": 12708,
+      "unresolved_tree_links": 0,
+      "eligible_event_links": 205765
+    },
+    "unique_models": 212549,
+    "active_models": 206200,
+    "unique_distinct_model_pairs": 103200,
+    "directed_alignments_both_orders": 206400,
+    "active_coordinate_bytes": 74521115802,
+    "artifacts": {
+      "model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+      "models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+      "event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd"
+    },
+    "scope": "Exact model/version and sequence join to frozen catalog with every gene/event link retained. Identical models explicitly excluded from redundant compute, not erased from event universe. Native catalog confidence retained without an eligibility threshold. Coordinate bytes are a size estimate; raw-coordinate validation, alignments, matched controls and duplication/asymmetry inference remain pending."
+  },
+  "independent_readback": {
+    "all_event_link_columns_exactly_match_reviewed_sources": true,
+    "model_pair_set_exactly_matches_eligible_event_links": true,
+    "same_model_rows_preserved": 12708,
+    "event_links_checked": 218473,
+    "distinct_pairs_checked": 103200,
+    "scope": "Output artifacts, complete original event columns, model membership, stable pair keys, exact deduplicated pair set and same-model exclusions checked. Raw coordinate bytes and confidence not revalidated here."
+  }
+}

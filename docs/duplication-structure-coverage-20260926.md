@@ -98,3 +98,69 @@ Launch identity: `metadata/duplication_candidate_tree_review_launch_20260926.jso
 Output: `results/orthology/duplication-candidate-tree-review-20260926-v1/`.
 Resources: one CPU, 8 GiB RAM, no swap and 1 GiB output allowance. The
 0.1–6-hour planning interval is uncalibrated. Results remain pending.
+
+
+## Completed candidate reconstruction and tree correspondence
+
+The full candidate review completed successfully. Independent reconstruction
+from native event tables and frozen models matched all 109,245 profile and
+109,228 MAFFT candidate rows. Every reported node had exactly the two
+expected proteins as its two direct tip children: no missing nodes, missing
+family trees or descendant mismatches were found in this candidate set.
+
+The guides share 108,918 exact protein pairs; 327 pairs are profile-only and
+310 MAFFT-only. All shared pairs pass the node check in both guides. This
+comparison uses protein identities, not family-name matching. Receipt,
+source-plan binding and all output hashes were checked after service exit
+zero and archived in
+`metadata/duplication_candidate_tree_review_completed_20260926.json`.
+
+These checks validate export eligibility and correspondence to saved trees,
+not independent evidence for duplication biology, calibrated node support,
+rooting, timing, structure quality or a structural effect. The complete
+event-coverage inventory still needs separate full-row readback; only its
+candidate export was independently reconstructed here.
+
+
+## Direct structural-comparison queue
+
+The complete reviewed candidate set has been joined to frozen model/version
+records. The queue retains all 218,473 guide-specific event links; 12,708
+rows reference the same model on both sides and remain explicitly flagged.
+The remaining 205,765 event links map to 103,200 unique distinct model pairs,
+requiring 206,400 alignments to evaluate both input orders. Shared model
+comparisons can be computed once while retaining every gene, taxon, family
+and guide association. This computational reuse does not make event links
+independent observations.
+
+There are 206,200 active models with 74,521,115,802 bytes (69.4 GiB) of
+coordinate files, measured by filesystem size. All 212,549 models associated
+with candidate events, including same-model cases, remain in the exported
+model catalog. Original mean C-alpha confidence, fraction below pLDDT 50,
+sequence hashes, versions and provenance are retained; no confidence cutoff
+was silently applied. Size measurement is not raw-coordinate validation.
+
+`metadata/duplication_model_pair_queue_completed_20260926.json` archives the
+producer receipt and independent export readback. Every original event-link
+column exactly matches the reviewed source tables. The readback independently
+verified the complete eligible pair set, model membership, stable pair keys
+and retained identical-model rows. Raw CIF byte/content validation, confidence
+qualification, structural alignments, direct distance readback, domain
+controls, matched nonduplication contrasts and asymmetry references remain
+pending. No duplication effect is inferred from this queue.
+
+Reproduce with:
+
+```bash
+python scripts/prepare_duplication_structure_pairs.py \
+  --review results/orthology/duplication-candidate-tree-review-20260926-v1 \
+  --review-plan metadata/duplication_candidate_tree_review_plan_20260926.json \
+  --bridge results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite \
+  --catalog results/structures/whole-proteome-afdb-catalog-20260922-v1 \
+  --output <fresh-output-directory>
+```
+
+Current output is
+`results/structural_comparisons/duplication-model-pair-queue-20260926-v1/`.
+The full protein-pair ledger and candidate guide sensitivities remain
+available for downstream family- and phylogeny-aware comparisons.

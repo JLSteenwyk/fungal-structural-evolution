@@ -1,0 +1,44 @@
+{
+  "receipt_path": "results/orthology/duplication-candidate-tree-review-20260926-v1/receipt.json",
+  "receipt_sha256": "958812c1b7591ec8bf0d9840a600529f5d8b40b1b4a7fb0ce898716f5bb709df",
+  "receipt": {
+    "status": "complete_duplication_candidate_join_and_tree_review",
+    "plan_sha256": "6d5dae62c88c26d58cff3751bb80ea6f8e8d421eea02241aaf3d64f550dd5cf5",
+    "script_sha256": "e0e2d37af7534ec5d675a3b6811b7f6b880b504f59a9d393b21029945294c2e4",
+    "guides": [
+      {
+        "guide": "profile",
+        "candidates": 109245,
+        "independent_candidate_join": "passed_all_eligible_native_events",
+        "tree_families_checked": 20492,
+        "counts": {
+          "exact_reported_pair": 109245,
+          "two_direct_tip_children": 109245
+        }
+      },
+      {
+        "guide": "mafft",
+        "candidates": 109228,
+        "independent_candidate_join": "passed_all_eligible_native_events",
+        "tree_families_checked": 20474,
+        "counts": {
+          "exact_reported_pair": 109228,
+          "two_direct_tip_children": 109228
+        }
+      }
+    ],
+    "overlap": {
+      "shared_pairs": 108918,
+      "profile_only": 327,
+      "mafft_only": 310,
+      "shared_exact_tree_pairs": 108918
+    },
+    "artifacts": {
+      "guide_pair_membership.tsv": "2994cd1e73bb1484fd3a5f0ebf0bd903a040726a39b36eb55caf6e25c762901f",
+      "profile_candidate_tree_checks.tsv": "ee328fd4c7e7d8a5861197237aec0c67c65cbdf1e4adad663cf9182eb28a037f",
+      "mafft_candidate_tree_checks.tsv": "0187c1b75bcd735dc3df73992465f0ef8799fe724ff8b74abc8770d39d3b5d27"
+    },
+    "scope": "Every eligible terminal singleton-side candidate independently rebuilt from native events and frozen models. Reported node descendant pairs checked, with discrepancies retained. Does not independently validate full event-coverage inventory, duplication inference/support, structure quality, rooting, timing or asymmetry; noncandidate and larger events remain outside this candidate review."
+  },
+  "verification": "Service exit zero, plan binding and every output artifact hash checked. All candidates are exact reported descendant pairs and direct tip children."
+}

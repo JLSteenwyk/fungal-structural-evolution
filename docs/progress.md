@@ -5058,3 +5058,25 @@ It then checks each reported event node's descendant pair and compares exact
 protein-pair membership between guides. Six tree-node fixtures passed. The
 CPU-only production review is running; candidate eligibility and structural
 comparisons remain pending. See [duplication coverage](duplication-structure-coverage-20260926.md).
+
+
+### September 26: all modeled terminal candidate nodes matched
+
+Independent source reconstruction and gene-tree checks passed for all 218,473
+candidate rows. Both guides report 108,918 shared protein pairs, with 327
+profile-only and 310 MAFFT-only pairs. All candidate nodes have exactly the
+expected two proteins as direct tip children. Checks and limitations are in
+[duplication coverage](duplication-structure-coverage-20260926.md). Preparation
+of the direct structural-comparison queue is underway.
+
+
+### September 26: duplication structural-comparison queue checked
+
+The full reviewed candidate set now maps to 103,200 distinct model pairs
+(206,400 directed alignments). All 218,473 event links are retained, including
+12,708 same-model rows. Active coordinates total 69.4 GiB. Independent
+readback checked every original event field, model membership, pair keys and
+the exact complete eligible pair set. The queue, source hashes, confidence
+metadata and reproduction command are documented in
+[duplication coverage](duplication-structure-coverage-20260926.md). Coordinate
+validation and direct structural alignment have not yet run for this queue.
