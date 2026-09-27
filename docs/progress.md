@@ -5959,3 +5959,24 @@ missing/complete status, sequence field, extremum and classification. See
 [completion record](../metadata/duplication_domain_event_robustness_completed_20260927.json).
 Cross-guide identities and sequence-divergence relationships are next, with
 phylogenetic/statistical controls still outstanding.
+
+
+## September 27 cross-guide identities and directional concordance verified
+
+Completed and independently checked all 77,760 exact gene-pair/Pfam/screen/margin
+comparison rows from 50,778 event/domain/screen records. Guide-specific node
+names were retained rather than used as identity keys; guide-only cases remain
+explicit. At 30 residues/70% coverage and a descriptive 0.1 Å margin, 4,143
+event/domain identities are shared, 90 profile-only and 87 MAFFT-only.
+
+947 shared event/domain combinations (894 distinct family/gene pairs) have the
+same stable structural reference-distance direction in both guides. Among them,
+739 agree with the whole-protein sequence-divergence direction in both guides,
+202 disagree in both, and six have unresolved sequence direction. These are
+descriptive counts with family/taxon/domain dependence and sequence-derived
+prediction circularity, not a significant coupling or decoupling result.
+
+The independent outer-merge checker verified every key, copied source field,
+classification and count. See [methods/results](duplication-domain-guide-comparison-20260927.md)
+and the [completion record](../metadata/duplication_domain_guide_comparison_completed_20260927.json).
+Candidate review and phylogenetic/sampling/prediction controls remain outstanding.

@@ -1,0 +1,26 @@
+{
+  "status": "passed_full_domain_guide_comparison_readback",
+  "producer_receipt_sha256": "1964a62246a44ad24cd9e485ed9d9192d33fcfd47a49ff9355b8385167c9797a",
+  "plan_sha256": "764c90cf4089938734d3c5eb10ece621cfbdf7a0783e3fec2697250ebb72e292",
+  "checker_sha256": "cf47f9caeb6dcdf0a9e7b6ab34b3a7c92003ccc1acbd57ceeef04b461e461dbc",
+  "rows_checked": 77760,
+  "source_rows_checked": 50778,
+  "n30_c70_margin_0_1_presence": {
+    "both_guides": 4143,
+    "profile_only": 90,
+    "mafft_only": 87
+  },
+  "n30_c70_margin_0_1_structure_agreement": {
+    "unresolved_in_one_or_both": 3196,
+    "same_stable_direction": 947,
+    "missing_guide": 177
+  },
+  "stable_structure_sequence_relations": {
+    "concordant_in_both_guides": 739,
+    "discordant_in_both_guides": 202,
+    "unresolved_or_missing": 6
+  },
+  "stable_structural_event_domains": 947,
+  "distinct_stable_gene_pairs": 894,
+  "scope": "Independent outer merge verified all exact gene-pair/Pfam keys, every copied source field and all classification cells/counts across all screens/margins. Directional concordance is descriptive; multiple domains/families/taxa are dependent and no phylogenetic association test was performed."
+}

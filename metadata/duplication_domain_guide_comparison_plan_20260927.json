@@ -1,0 +1,27 @@
+{
+  "source": "results/structural_comparisons/duplication-domain-event-robustness-20260927-v1",
+  "readback": "metadata/duplication_domain_event_robustness_completed_20260927.json",
+  "margins": [
+    "direction_margin_0",
+    "direction_margin_0_01",
+    "direction_margin_0_1"
+  ],
+  "output": "results/structural_comparisons/duplication-domain-guide-comparison-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      5
+    ],
+    "basis": "Exact gene-pair/Pfam outer join of 50778 audited event/domain/screen rows; no fitting, GPU or charges."
+  },
+  "pins": {
+    "scripts/compare_domain_robustness_guides.py": "ea200715561b6c6808bd74c9d1164fc81fe425015b93a1f36c18da409535b060",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/duplication_domain_event_robustness_completed_20260927.json": "640d92acd01184c39065e313623ab847dcd86d4be5674c48d9c69ddc4b557695",
+    "results/structural_comparisons/duplication-domain-event-robustness-20260927-v1/receipt.json": "29482acc878dcbde1eb731d8fda3527694817a9762fa54b55b62ff519c48e3bb",
+    "results/structural_comparisons/duplication-domain-event-robustness-20260927-v1/event_domain_robustness.tsv": "a5576c84f0a7afe98d0e0be22c0f4b582e9a7c8012eac7bf31bf28be22d7b6e2"
+  }
+}
