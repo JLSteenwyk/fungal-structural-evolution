@@ -1,0 +1,36 @@
+{
+  "status": "verified_complete_third_pmsf_full_readback",
+  "audit": {
+    "status": "passed_pmsf_profile_tree_and_bootstrap_readback",
+    "taxa": 526,
+    "sites": 63750,
+    "bootstrap_trees": 1000,
+    "empirical_splits": 1230,
+    "internal_support_rows": 1046,
+    "nexus_support_rounding_tolerance_max": 0.5,
+    "max_profile_sum_rounding_error": 2.0099999999967366e-06,
+    "ml_consensus_rf": 4,
+    "reported_ml_log_likelihood": -22125207.6585,
+    "reported_consensus_log_likelihood": -22125207.391446,
+    "consensus_likelihood_improvement": 0.2670539990067482,
+    "warnings": [
+      "WARNING: 31 sequences contain more than 50% gaps/ambiguity",
+      "WARNING: 31 sequences contain more than 50% gaps/ambiguity",
+      "WARNING: 31 sequences contain more than 50% gaps/ambiguity"
+    ],
+    "source_receipt_sha256": "3eaab8eb80db419d44f094c6595c4958488622794bfdd959b5ddd9654c5b7137",
+    "script_sha256": "909d8d5b82f6e97c98e46604e2e5dbcb22b0ee21033be02a49a884d49d867cf5",
+    "artifacts": {
+      "branch_support.tsv": "424444a06fdf76b09186222041d56433cbe67f880ebe83496059102061233acb"
+    },
+    "scope": "All saved profiles, report trees, 1000 bootstrap tip/branch grids and empirical split supports checked. SH-aLRT labels validated but not independently recomputed; likelihoods read back, not recomputed. Guide dependence, model adequacy, rooting and discordance remain separate. Not the final species phylogeny."
+  },
+  "audit_receipt_sha256": "f29ae5791d1f09c55e2e988cb183423d972a147e83842c3b71b28bb0f890f107",
+  "high_support_internal_ml_branches": 464,
+  "terminal_service": {
+    "MainPID": "0",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "Rehashed every saved inference/audit artifact after successful audit termination. High support label uses existing SH-aLRT >=80 and empirical UFBoot >=95; neither threshold establishes correctness. Fourth crossed run and species-framework sensitivities remain pending."
+}

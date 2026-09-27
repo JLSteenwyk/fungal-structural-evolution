@@ -1,0 +1,18 @@
+{
+  "run": "results/phylogeny/pmsf-mafft-profile-v1",
+  "output": "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_mb": 100,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "basis": "Read existing 63750x20 profiles and 1000 526-tip trees; no inference or paid resources."
+  },
+  "source_receipt_sha256": "3eaab8eb80db419d44f094c6595c4958488622794bfdd959b5ddd9654c5b7137",
+  "script_sha256": "909d8d5b82f6e97c98e46604e2e5dbcb22b0ee21033be02a49a884d49d867cf5",
+  "status": "ready_full_completed_third_pmsf_audit"
+}

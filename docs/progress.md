@@ -7224,3 +7224,16 @@ This clarifies warning content without treating it as evidence of optimality,
 removing taxa, or clearing existing review flags. The larger recovered AFDB
 analysis services remain active. All eight aims remain open and GPU prediction
 stays paused.
+
+## September 27 third crossed species-tree run audited
+
+The preceding goal turn resolved codon-fit warning content. This turn found
+the third crossed PMSF run completed and the fourth already started by its
+existing controller. Launched and completed full saved-profile/tree/bootstrap
+readback of the third run: all 526 taxa, 63,750 profiles and 1,000 bootstrap
+trees passed. Rehashed every inference and audit artifact after exit zero.
+There are 464/523 internal ML branches meeting the existing SH-aLRT80/UFB95
+label. ML and reoptimized consensus differ by RF four, so both remain in the
+framework sensitivity analysis. The fourth run and other framework checks
+remain pending; no final species tree is declared. See the new MAFFT/profile
+readback report. All eight scientific aims remain open; GPU prediction is paused.

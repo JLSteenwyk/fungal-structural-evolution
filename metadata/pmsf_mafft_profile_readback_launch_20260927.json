@@ -1,0 +1,15 @@
+{
+  "service": "fungal-pmsf-mafft-profile-readback-20260927.service",
+  "pid": 2641318,
+  "created": 1790511763.15,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_species_pmsf.py",
+    "--run",
+    "results/phylogeny/pmsf-mafft-profile-v1",
+    "--output",
+    "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1"
+  ],
+  "plan_sha256": "02b61f18292e4893f426efcba89c0877ae812c0181d60eef146508e140bd4dff",
+  "status": "verified_live_full_third_pmsf_readback"
+}
