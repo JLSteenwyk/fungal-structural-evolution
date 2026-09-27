@@ -1,5 +1,11 @@
 # Nonlinear sequence-identity contrasts
 
+Current status (September 27): input construction, expanded design checks and
+exact-observation linking are independently verified. Joint-support checking is
+active, and the full [ordinary-ML comparison](matched-ordinary-likelihood-20260927.md)
+has launched. The stage descriptions below retain earlier launch checkpoints;
+statements about fitting being pending describe those earlier checkpoints.
+
 The running matched models adjust linearly for target-minus-background sequence
 identity. Quadratic and cubic terms will allow sensitivity analysis of that
 assumption using the same measurements and all 192 comparison settings.

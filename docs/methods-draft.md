@@ -704,3 +704,69 @@ displacement, ancestral changes or independent evolutionary events. Annotation
 correspondences remain hypotheses about functional positions. Source records,
 reproduction scripts and limitations are described in the
 [functional-site workflow](functional-site-workflow.md).
+
+## Nonlinear identity adjustment and ordinary-ML comparisons (September 27)
+
+To assess sensitivity to linear sequence adjustment, we constructed quadratic
+and cubic identity contrasts on the same eligible domains as the original
+matched measurements. For matched record i, eligible domains D_i and power
+p ∈ {1,2,3}, the covariate is
+
+\[
+ c_{ip}=|D_i|^{-1}\sum_{d\in D_i}
+ \left(I_{id,\mathrm{target}}^p-I_{id,\mathrm{background}}^p\right).
+\]
+
+The transform precedes averaging. Squaring the mean identity difference, or
+subtracting squared mean identities, would define different covariates. The
+response remains target-minus-background structural RMSD; original coverage,
+log aligned-length ratio and confidence-fraction contrasts remain in the design.
+Each higher degree adds one identity term to the preceding design. Constant-zero
+columns are removed explicitly; a nonzero constant stops the fit for review
+because it changes the interpretation of the zero-covariate intercept. Active
+covariates are divided by their population standard deviations without centering.
+Saved coefficients and their conditional covariance are transformed back to
+original covariate units.
+
+Separate parsers verified all 9,983,040 configuration rows across 192 settings.
+The expanded designs passed full independent rank and conditioning readback for
+165,888 setting/degree combinations. Exact numeric bytes and ordered observation
+identities define reusable inputs. All 82,944 setting labels link to 28,808
+unique linear/quadratic/cubic triplets, preserving response, observations,
+background reuse, family components and species patterns. Sensitivity settings
+are repeated analyses, not independent biological observations.
+
+For fixed-effect comparisons we fit all three designs under ordinary Gaussian
+maximum likelihood with the same working covariance R described above. At fixed
+variance ratios, generalized least squares gives residual quadratic q; the
+profiled variance is q/n and the negative log likelihood is
+
+\[
+ -\ell=\tfrac12\{\log|R|+n[1+\log(2\pi q/n)]\}.
+\]
+
+This objective uses n, rather than n minus the number of fixed coefficients,
+and excludes the restricted-likelihood fixed-design determinant. The earlier
+REML fits remain separate and are not used as linear-reference likelihoods.
+Ordinary-ML optimization uses analytic scores, the same eight component-boundary
+faces and 22 total attempts, retaining failed attempts and bound contacts.
+Every candidate objective is checked through a direct residual calculation.
+Synthetic dense checks validate implementation but do not establish global
+optimization or the biological adequacy of this covariance model.
+
+The full ordinary-ML run covers 86,424 inputs across five tree choices, totaling
+432,120 fit dispositions. Production and full output audit are in progress.
+A downstream export will report unrounded differences in fitted log likelihood
+for linear-to-quadratic, quadratic-to-cubic and linear-to-cubic comparisons.
+A worse more-flexible fit beyond 1e-7 plus 1e-9 times the larger absolute objective
+is flagged for numerical review; all negative gains remain recorded. Failed
+fits and optimization-review flags remain visible in every setting/tree row.
+No chi-square calibration, p-value or biological model preference follows from
+this export. Joint support of the expanded zero-covariate reference is assessed
+separately, retaining unresolved cases and any separately verified nonnegative
+weight certificates. Predictive adequacy, uncertainty and multiplicity treatment
+remain required before interpretation.
+
+Implementation and source bindings are documented in
+[nonlinear inputs](nonlinear-identity-contrasts-20260927.md) and
+[ordinary likelihood](matched-ordinary-likelihood-20260927.md).

@@ -8204,3 +8204,15 @@ No p-values, chi-square reference or model preference is claimed. Resource plan:
 one CPU, 8 GiB, no swap, 2 GiB output and 0.1–3 hours after audit. Script:
 `export_polynomial_ml_comparisons.py`; plan/process identity:
 `metadata/polynomial_ml_comparison_{plan,launch}_20260927.json`.
+
+### September 27: methods and scientific milestones reconciled with execution
+
+The preceding turn verified live worker CPU progression without restarting jobs.
+The methods draft now documents the nonlinear domain-level identity transform,
+exact-observation linking, ordinary-ML n-denominator and objective, unchanged
+covariance structure, coefficient scaling, boundary/start preservation and raw
+likelihood-gain review rules. The milestone tracker replaces its obsolete strict
+primary-audit dependency with the completed diagnostic and active full geometry
+readback. README and nonlinear workflow status now include the running full ML
+grid. All eight scientific aims remain open; production numerical checks and
+likelihood comparisons are not substitutes for inferential calibration.

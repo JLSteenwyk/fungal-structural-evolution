@@ -27,11 +27,14 @@ Chronological receipts and process records remain in [progress](progress.md).
   completed: 1,000 fits total. Rate optimization/model review remains running. Accessibility, site summaries
   and functional annotation integration are complete; rate/exposure integration
   and conditional coupling remain downstream; see [coupling](conditional-site-coupling.md).
-- Primary and background whole-protein alignments are running with numerical
-  auditors queued behind them. Reference whole-protein geometry and usable-order
-  summaries have completed separate checks; the earlier failed strict reference
-  audits remain preserved. Primary geometry is queued behind successful strict
-  validation. Whole-protein triad comparisons remain outstanding.
+- Primary whole-protein production finished all 412,800 dispositions. The strict
+  audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
+  to two-residue mappings. All 327 short mappings passed separate analytic checks
+  and remain excluded from unique-rotation interpretation. Geometry production
+  finished 387,646 successful alignments; its full independent readback is active.
+  Usable-order and residue-correspondence summaries wait on that readback. The
+  failed strict audit remains preserved. Reference geometry/order sensitivity is
+  verified; background alignments and whole-protein triad comparisons remain open.
 - Domain comparisons, common-core numerical verification, alternative-setting
   robustness, cross-guide comparisons and candidate sampling summaries completed.
   See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).
@@ -40,7 +43,11 @@ Chronological receipts and process records remain in [progress](progress.md).
   scenarios; see [matching diagnostics](duplication-control-balance-20260927.md).
   Background domain measurements and all 82,944 descriptive summary settings are
   complete. The full 144,040-fit phylogenetic working-model grid is running;
-  numerical refinement, uncertainty and biological association tests remain outstanding;
+  a separate 432,120-fit ordinary-ML linear/quadratic/cubic grid is also running
+  on verified identical observations across five trees. The expanded designs and
+  input inventory passed full readback; nonlinear joint support is still being
+  checked. Full likelihood comparison exports retain all settings and fit flags.
+  Numerical refinement, uncertainty and biological association tests remain outstanding;
   none of these computational stages establishes a duplication effect.
 - Recovered AlphaFold accessibility and full site-summary readbacks are complete:
   30,618 models, 9,453,757 paired observations and 47,529 retained sites. Functional

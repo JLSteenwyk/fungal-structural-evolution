@@ -42,6 +42,12 @@ fits. Production is running; numerical output checks, full analytic convergence
 assessment, unresolved-fit refinement and inferential calibration remain pending.
 Partial fits are not final adjusted effects.
 
+The [ordinary-ML nonlinear comparison](docs/matched-ordinary-likelihood-20260927.md)
+is now running across 432,120 fits: linear, quadratic and cubic identity terms
+on the same observations under five trees. Full output audit and linked
+likelihood comparison are queued. These sensitivity fits do not yet establish
+model preference, significance or calibrated uncertainty.
+
 The completed [joint-covariate support check](docs/joint-covariate-support-20260927.md)
 now covers all 28,808 unique inputs and 82,944 original settings. Twenty-four
 tiny negative-weight cases passed a separately recorded nonnegative construction;
