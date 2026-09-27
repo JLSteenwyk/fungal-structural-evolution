@@ -270,3 +270,39 @@ Production alignments are waiting for verified input preparation. The future
 completion status explicitly retains `pending_readback`; independent alignment
 numeric readback, boundary/annotation-policy sensitivity and biological tests
 remain separate requirements.
+
+## Full domain-alignment numeric readback queued
+
+`scripts/readback_duplication_domain_alignments.py` waits for the exact domain
+alignment process and its matching completed receipt. It reconstructs the
+complete 281,580 interval-pair/order/mask grid from the frozen pair table,
+checks interval/model/bound identities, checkpoint paths/hashes, native commands
+and the complete audited-input bundle. No missing or repeated disposition is
+allowed. Failed/excluded outcomes are checked for internal consistency rather
+than rerun or independently adjudicated.
+
+Every successful alignment is independently parsed and mapped to hashed PDB
+residues; sequence identity, coverage and least-squares RMSD are reconstructed
+with the numeric helper used by the whole-protein readbacks. TM-scores are
+checked against native text only, not independently reoptimized. Original
+protein residue numbering remains explicit. Confidence summaries use rounded
+PDB values; no PAE or biological interpretation is supplied by the audit.
+
+The native full-handoff fixture passed both orders and excluded masks; dropping
+one excluded result was rejected despite an updated checkpoint-manifest hash:
+
+```bash
+python scripts/check_duplication_domain_alignment_readback.py
+```
+
+Plan and exact launch identity are in
+`metadata/duplication_domain_alignment_readback_plan_20260926.json` and the
+corresponding launch record. Output will be
+`results/structural_comparisons/duplication-domain-alignment-readback-20260926-v1/`.
+Run with `python scripts/readback_duplication_domain_alignments.py --plan
+metadata/duplication_domain_alignment_readback_plan_20260926.json`.
+
+Resources are one CPU, 16 GiB RAM, no swap, single-thread BLAS, a 256-input PDB
+cache and 1 GiB estimated output. Uncalibrated runtime planning is 0.5–24 hours
+after the producer. No GPUs or paid resources are used. The readback is queued,
+not completed; policy/boundary sensitivity and biological tests remain pending.

@@ -5325,3 +5325,14 @@ The native completed-handoff, checkpoint reuse and altered-proof fixtures
 passed. Four CPU workers and 16 GiB RAM are allocated; production is waiting.
 Independent result readback and biological interpretation remain pending.
 See [domain workflow](duplication-domain-controls-20260926.md).
+
+
+### September 26: full domain-alignment result readback queued
+
+All 281,580 domain alignment dispositions now have an independent result
+readback queued behind the exact producer. Complete interval/order/mask scope,
+provenance and hashes will be checked; all successful residue mappings,
+identity, coverage and least-squares RMSD will be reconstructed. Native fixture
+and missing-disposition rejection passed. TM-scores are checked against native
+text only. Production readback is waiting. See
+[domain workflow](duplication-domain-controls-20260926.md).

@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-domain-alignment-readback-20260926.service",
+  "pid": 176023,
+  "created": 1790474123.1,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_domain_alignments.py",
+    "--plan",
+    "metadata/duplication_domain_alignment_readback_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_domain_alignment_readback_plan_20260926.json",
+  "plan_sha256": "ad0e46c78635d65d4551f89596b786f44afbf182fb2e5be3c3eba33b1b20e97c",
+  "fixture": "Complete native domain alignment/readback fixture passed both orders and mask exclusions; missing disposition rejected despite updated checkpoint-manifest hash."
+}
