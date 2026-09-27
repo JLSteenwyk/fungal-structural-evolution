@@ -1606,3 +1606,25 @@ producer. The terminal-producer path was exercised on the full baseline identity
 dataset and passed. Actual results will be written under
 `results/cds/codon-divergence-readback-handoff-20260927-v1`; the controller fails
 if any required source or the expected full disposition grid is missing.
+
+## September 27 full local MG94 execution and numerical audit completed
+
+All 1,632 local-alignment MG94 fits completed (1,533 genetic-code-1 and 99
+code-12 groups). The full independent saved-likelihood audit passed across
+18,302 branches with zero numerical consistency flags. Maximum absolute
+reported-versus-replayed log-likelihood difference is 7.275957614183426e-12;
+maximum branch-component additivity error is 2e-10. Summed per-case fitting
+time was 3,783.35 seconds, distinct from wall time under four workers.
+
+After both execution and audit services exited successfully, rechecked the
+complete case/configuration grid, all 6,528 fit-artifact hashes, all 3,264
+likelihood-replay script/log hashes, both audit tables, genetic-code counts,
+and explicit `not_established` selection eligibility for every case. Completion
+proof is `metadata/local_mg94_completed_audit_20260927.json`.
+
+Fit receipt: `07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439`.
+Audit receipt: `cc272632d553d9ac7be625edcecfc42530b3470939e9d00e9a2ccaf34f43a2aa`.
+These results establish saved-fit numerical consistency only. They do not prove
+optimality, calibrated profile intervals, model adequacy, absence of saturation,
+or suitability for selection testing. Corrected opportunity normalization and
+the full original/local comparison remain downstream.

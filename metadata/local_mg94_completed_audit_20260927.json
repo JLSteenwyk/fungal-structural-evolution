@@ -1,0 +1,34 @@
+{
+  "status": "verified_complete_local_mg94_execution_and_full_numerical_audit",
+  "cases": 1632,
+  "branches": 18302,
+  "fit_artifacts_rehashed": 6528,
+  "likelihood_replay_artifacts_rehashed": 3264,
+  "numerical_review_cases": 0,
+  "maximum_absolute_likelihood_difference": 7.275957614183426e-12,
+  "maximum_component_additivity_error": 2e-10,
+  "translation_table_counts": {
+    "1": 1533,
+    "12": 99
+  },
+  "summed_case_execution_seconds": 3783.3493802289595,
+  "fit_receipt_sha256": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+  "audit_receipt_sha256": "cc272632d553d9ac7be625edcecfc42530b3470939e9d00e9a2ccaf34f43a2aa",
+  "audit_artifacts": {
+    "case_audit.tsv": "376063d739955766e4f55da67f3776af1c33fe5a23f822a03d0aaad88ea8a694",
+    "branch_components.tsv": "2c6ea423db033e71a698e674b26dd913109c308c37db0bf06a828e7635033ca1"
+  },
+  "terminal_services": {
+    "fungal-local-mg94-diagnostics-20260927.service": {
+      "MainPID": "0",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-local-mg94-audit-20260927.service": {
+      "MainPID": "0",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "All case receipts, fit artifacts, configs, replay artifacts and full audit tables verified after successful process termination. Saved fit consistency is established, not optimum uniqueness, normalized divergence, biological adequacy or selection eligibility."
+}

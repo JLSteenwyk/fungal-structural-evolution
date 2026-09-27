@@ -7164,3 +7164,15 @@ controller and checker are checksum-pinned; limits are one CPU/8 GiB/no swap.
 Its PID, creation time and command were verified live after launch. The actual
 comparison and independent audit remain pending, rather than being represented
 as completed. All eight scientific aims remain open; GPU prediction is paused.
+
+## September 27 full local codon-fit audit verified
+
+The preceding goal turn made progress by queuing the full divergence comparison
+readback and observing finished fits. This turn verified successful termination
+of both fitting and full numerical audit, rehashed all 6,528 fit artifacts and
+3,264 likelihood-replay artifacts, and checked exact case/configuration grids
+and audit tables. All 1,632 cases/18,302 branches passed numerical consistency;
+maximum likelihood discrepancy is 7.275957614183426e-12. No case is established
+as selection-eligible. Completion evidence is archived separately from the
+still-pending normalized divergence comparison. All eight scientific aims
+remain open and GPU prediction remains paused.
