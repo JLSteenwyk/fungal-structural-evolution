@@ -1,0 +1,26 @@
+{
+  "status": "passed_full_reference_order_sensitivity_readback",
+  "pair_mask_rows": 62887,
+  "native_mappings_checked": 125774,
+  "quantile_rows": 27,
+  "mapping_counts": {
+    "full_all": {
+      "identical": 32518,
+      "different_count": 20,
+      "different_same_count": 3
+    },
+    "full_common": {
+      "identical": 30331,
+      "different_count": 13,
+      "different_same_count": 2
+    },
+    "plddt70_common": {
+      "identical": 30287,
+      "different_same_count": 32,
+      "different_count": 27
+    }
+  },
+  "source_receipt_sha256": "21fed26cc2acdef2c8516f0fa8258755634c601e672663af186393d99ee544d1",
+  "script_sha256": "981805ae96572c22cbf1dbab731b47b84e0c0dc0271df9a80fb701bde7e77714",
+  "scope": "All correspondence sets independently reconstructed with cumulative-index arrays; all intersection/union/status/metric fields and common cohorts checked; quantiles verified by sorted interpolation. No alignment rerun or biological qualification."
+}

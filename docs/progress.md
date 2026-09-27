@@ -7516,3 +7516,16 @@ statuses/exclusions remain explicit. Three successful terminal services and
 source/artifact bindings verified. Numerical qualification does not establish
 coverage, prediction accuracy or biological effects. All eight aims remain
 open; GPU prediction remains paused.
+
+## September 27 full reference input-order sensitivity verified
+
+The preceding turn completed reference geometry and order-summary verification
+(progress). Compared every two-usable-direction pair, reconstructing all 125,774
+native mappings. Of 32,541 full-mask pairs, 23 change correspondence by input
+order; of 30,346 pLDDT70 pairs, 59 change. On the identical 30,346-pair cohort,
+full inputs have 15 changes. Equal pair counts can conceal changed residues.
+Maximum RMSD order differences are 1.0165 Å/full and 2.6080 Å/pLDDT70, descriptive
+of potentially different cores rather than uncertainty or biological effects.
+Independent cumulative-index mapping and sorted-quantile readback passed all
+62,887 rows and 27 quantile summaries. Both orders retained. All eight aims
+remain open; GPU prediction paused.

@@ -1,0 +1,31 @@
+{
+  "status": "complete_full_reference_order_sensitivity_pending_independent_readback",
+  "pair_mask_rows": 62887,
+  "common_mask_pairs": 30346,
+  "mapping_counts": {
+    "full_all": {
+      "identical": 32518,
+      "different_count": 20,
+      "different_same_count": 3
+    },
+    "full_common": {
+      "identical": 30331,
+      "different_count": 13,
+      "different_same_count": 2
+    },
+    "plddt70_common": {
+      "identical": 30287,
+      "different_same_count": 32,
+      "different_count": 27
+    }
+  },
+  "source_receipt_sha256": "f732f44fe818e9a151935015480c2fcd89e32daf7c631999bf316dd300f777ac",
+  "source_readback_sha256": "790cfe28297a0f03ee2c54ca595e7a9900693667e95c6a57416e821ac49e7173",
+  "native_receipt_sha256": "e8b24d4abb47870c2307f60b99f7866ec19b50e9f38e227d7f98c66eed8ecf41",
+  "script_sha256": "c615ee169937293a756ca158ef9ccf832fcd23aa8fa772581957c35ded9c2fd8",
+  "artifacts": {
+    "pair_mask_sensitivity.tsv": "4de444c96dfeecbc2b431f4c9d76010c6af65470f129d3b7fea2dce28e118552",
+    "quantiles.tsv": "47866d845fc23489a68f1bf519046c15f4991c73d7ac6c52894f2dbe495a3eda"
+  },
+  "scope": "All numerically usable two-order comparisons; residue correspondences checked from hashed checkpoints and endpoint-normalized metric differences retained. Full-all and identical common pair cohorts separated. Differences can reflect different aligned residues, not uncertainty bounds or biological changes. No favorable order selected; no coverage/confidence qualification."
+}
