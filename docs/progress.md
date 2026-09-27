@@ -7326,3 +7326,16 @@ The planned sets will be checked against completed MAFFT inputs before tree
 comparisons. This does not claim unfinished trees are verified or that pruning
 undoes taxon effects on inference. All eight aims remain open; GPU prediction
 stays paused.
+
+## September 27 local longest-branch slice diagnostics launched
+
+The preceding turn verified all cross-alignment coverage cells. This turn
+reviewed old failed structural services and found later completed geometry and
+tree-path recovery receipts, avoiding redundant inference. Current structural
+comparisons remain unfinished. Started the next codon identifiability stage on
+all 1,632 realigned fits: seven longest-branch parameter multipliers with fixed
+nuisance parameters, plus restored-baseline checks. The four-CPU/8-GiB/no-swap
+producer was verified live; exact source hashes and identity are archived.
+This is not an optimized profile or selection result. Full verification and
+nuisance reoptimization remain downstream. All eight aims remain open; GPU
+prediction stays paused.

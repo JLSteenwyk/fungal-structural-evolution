@@ -1,0 +1,32 @@
+{
+  "status": "prelaunch_full_local_branch_slices",
+  "cases": 1632,
+  "branch_length_multipliers": [
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    10
+  ],
+  "workers": 4,
+  "fit_receipt_sha256": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+  "normalization_receipt_sha256": "fb5c57c87b51b1b99a2e570a139749328d6ec3f41eccec0154a6e513aa7f95b7",
+  "tree_review_sha256": "962e5bc91f33dfbd99ed56a1dd7e39d4db9c8a68a31913ccbde238cea3841e68",
+  "script_sha256": "9c9f22fa9e40177ce3eaaca49b66bdd2e0336c1b54dc87c4aa9adbb5e75bc7f4",
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "Seven fixed-nuisance likelihood evaluations and restored baseline per completed fit; no optimization at this stage.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "interpretation": "Full realigned cohort: evaluate seven multipliers of the saved longest-normalized-dS branch t parameter with all nuisance parameters fixed. Baseline likelihood restored per case. Not an optimized profile or dS confidence interval; nuisance reoptimization, identifiability, saturation and selection eligibility remain unresolved."
+}

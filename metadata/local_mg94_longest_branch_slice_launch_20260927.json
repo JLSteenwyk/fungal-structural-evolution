@@ -1,0 +1,23 @@
+{
+  "service": "fungal-local-mg94-branch-slices-20260927.service",
+  "pid": 2733078,
+  "created": 1790513139.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/slice_local_mg94_longest_branches.py",
+    "--fits",
+    "results/cds/local-mg94-diagnostics-20260927-v1",
+    "--normalized",
+    "results/cds/local-mg94-normalized-branches-20260927-v1",
+    "--tree-review",
+    "results/phylogeny/local-codon-tree-audit-20260927-v1/case_audit.tsv",
+    "--plan",
+    "metadata/local_mg94_longest_branch_slice_plan_20260927.json",
+    "--install",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+    "--output",
+    "results/cds/local-mg94-longest-branch-slices-20260927-v1"
+  ],
+  "plan_sha256": "cb0cdf8c0bbdf12e2f9acf7f51d852e123140ff74f869e6c5234a7dbc2f490e5",
+  "status": "verified_live_full_local_longest_branch_slice_batch"
+}

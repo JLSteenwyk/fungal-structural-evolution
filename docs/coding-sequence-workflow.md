@@ -1727,3 +1727,29 @@ include missing characters; they do not prove full protein or genome identity.
 All species remain in the diagnostic analysis and no near-zero-edge, copy,
 independence or selection-eligibility concern is cleared. The earlier generic
 fit-warning flags remain traceable in the review ledger.
+
+## Local longest-branch identifiability diagnostics started
+
+The realigned fits now undergo the same longest-branch diagnostic sequence as
+the original fits. The first stage evaluates the saved branch-time parameter
+at multipliers 0.1, 0.25, 0.5, 1, 2, 4 and 10 for every one of the 1,632 fitted
+cases, selecting the branch with greatest normalized dS in each case. All
+nuisance parameters remain fixed at this stage. This gives 11,424 conditional
+likelihood evaluations plus 1,632 restored-baseline checks. The branch identity,
+codon coverage, genetic code, copy caveat and local tree warning count remain
+recorded. No cases are selected by an arbitrary dS cutoff.
+
+A separate script, `scripts/slice_local_mg94_longest_branches.py`, reuses the
+original slice procedure while retaining the local audit's raw warning count
+instead of historical warning categories. Original scripts/results remain
+unchanged. Source fit, normalization and tree-review hashes are bound in
+`metadata/local_mg94_longest_branch_slice_plan_20260927.json`; verified process
+identity is archived in the matching launch record. Output is
+`results/cds/local-mg94-longest-branch-slices-20260927-v1`. Limits are four CPUs,
+8 GiB RAM and no swap, with 2 GiB output and a 0.1–4-hour planning allowance.
+Existing CPU resources incur no new charges.
+
+These fixed-nuisance slices are a prerequisite for optimized nuisance-parameter
+profiles. They do not establish an optimum, provide calibrated dS confidence
+intervals, clear saturation, or establish selection eligibility. Full slice
+verification and optimized profile follow-up remain required.
