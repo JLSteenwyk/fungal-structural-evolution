@@ -23,11 +23,27 @@ Resources: one CPU, 8 GiB memory, no swap; planning allowance 5–60 minutes and
 2 GiB output. Process identity is recorded in
 `metadata/nonlinear_identity_contrasts_launch_20260927.json`.
 
-Status: launched; completion requires terminal service success and the full
-receipt in `results/model_validation/nonlinear-identity-contrasts-20260927-v1`.
+Status: completed with successful terminal service status and all artifact hashes
+verified. The 192 settings contain 9,983,040 configuration rows, all checked by
+both implementations. Completion: `metadata/nonlinear_identity_contrasts_completed_20260927.json`.
+Of 1,664,432 multi-domain configuration occurrences, 1,610,736 differ by more
+than 1e-10 from the quadratic shortcut using already averaged identities; the
+maximum absolute discrepancy is 0.1160578783. These counts repeat configurations
+across sensitivity settings and are not independent biological observations.
 Existing linear fits and pinned inputs remain unchanged. Before nonlinear fitting,
 expanded designs need rank/conditioning checks, renewed joint support checks,
 a specified model comparison and uncertainty procedure, and compute estimates.
 Restricted-likelihood objectives with different fixed-effect spaces must not
 be treated as directly comparable likelihood-ratio evidence. These inputs alone
 establish no biological effect.
+
+## Expanded model design checks
+
+`assess_nonlinear_matched_designs.py` is running under the pinned plan
+`metadata/nonlinear_matched_design_plan_20260927.json`. It covers both polynomial
+degrees across all 82,944 settings (165,888 design rows), reports explicit constant
+columns and scaled conditioning, and compares direct SVD with pivoted QR followed
+by SVD. Constant, redundant-column and full-rank fixtures passed. The producer
+receipt will still require independent source/output readback before acceptance.
+Resources: one CPU, 12 GiB memory, no swap, 1 GiB output allowance; estimated
+0.25–4 hours. Joint nonlinear support and fitting remain pending.

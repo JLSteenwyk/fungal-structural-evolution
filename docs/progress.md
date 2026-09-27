@@ -7914,3 +7914,12 @@ against independent pandas arithmetic, original linear contrasts and saved files
 The first 42 settings passed during launch verification; full completion is pending.
 Existing linear models remain unchanged. [Methods and next gates](nonlinear-identity-contrasts-20260927.md).
 GPU prediction remains paused; all eight aims remain open.
+
+### September 27: nonlinear inputs completed; expanded designs running
+
+All 192 polynomial-input settings and 9,983,040 configuration rows passed full
+independent arithmetic checks and serialized readback. Service terminated successfully;
+all artifacts were rehashed. Averaging after the transformation matters: 1,610,736
+configuration occurrences differ from the quadratic shortcut, maximum 0.11606.
+The full quadratic/cubic design diagnostic (165,888 rows) is now running on one CPU;
+no nonlinear effects have been fitted. See [details](nonlinear-identity-contrasts-20260927.md).

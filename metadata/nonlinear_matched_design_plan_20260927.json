@@ -1,0 +1,28 @@
+{
+  "summaries": "results/structural_comparisons/matched-domain-record-summaries-20260927-v1",
+  "selections": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz",
+  "nodes": "results/orthology/selected-taxon-inputs-20260927-v1/selected_node_taxa.tsv",
+  "nonlinear": "results/model_validation/nonlinear-identity-contrasts-20260927-v1",
+  "output": "results/model_validation/nonlinear-matched-designs-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.25,
+      4
+    ]
+  },
+  "pins": {
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "results/orthology/selected-taxon-inputs-20260927-v1/selected_node_taxa.tsv": "4ff4ab0c1c0bc06ddeb81be5bd0659b7fd434fa94ce491df5028bffac29a611d",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/receipt.json": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/partition_manifest.json": "5ddd0a7150ac6804ff2beea90906e08ec4b1df4bef370d45ed02dd5efdacb1cd",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/record_summary.tsv": "d15946ba0f9b9cbf6a5b83de3979e23413051a812beb911fb4b2f106ed636ba1",
+    "results/model_validation/nonlinear-identity-contrasts-20260927-v1/receipt.json": "1e86563b1708b969a35f604d875e060a87a87922eb2e373d503852e6092b99ac",
+    "metadata/nonlinear_identity_contrasts_completed_20260927.json": "d5ad2481223de5b619f395c7789fd7b2f40fce9ea93bd80eb9cd19764cbc87ed",
+    "scripts/assess_nonlinear_matched_designs.py": "eb141f095e74051bc865f51b8353f50de8356073b6210d7f4f1a90c325783f90",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}
