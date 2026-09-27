@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-fastml-indel-build-20260927.service",
+  "state": {
+    "MainPID": "540014",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 540014,
+  "created": 1790548769.71,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_fastml_indel_tools.py"
+  ],
+  "plan_sha256": "622f481480cc5bafad5ccb8fa685168f98058da8a28b9fce3bcbde623866748d",
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  }
+}

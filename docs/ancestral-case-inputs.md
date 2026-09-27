@@ -937,3 +937,32 @@ date `20260927`. Output:
 `results/ancestral/optimization-probability-comparisons-20260927-v1/`.
 One CPU,4GiB memory limit,noGPU. Both independent audits were required before
 comparison; their receipt hashes are recorded with the output.
+
+## Indel reconstruction implementation started
+
+Amino-acid posteriors treat gaps as unknown observations and cannot establish
+whether an ancestral residue existed. Moving toward sequence ensembles
+therefore requires explicit gap/indel inference and uncertainty. Retrieved
+the published FastML3.11 source archive from the authors and started a local
+build of its `indelCoder` and `gainLoss` components. Archive SHA256:
+`2d1ec87116eae1163177631ad39083db01cdd78ffb8d119bebbdbb6a43e99451`.
+A full source-file checksum manifest, compiler version and build log are
+recorded under `results/software/fastml-indel-build-20260927-v1/`.
+
+The wrapper selects simple indel coding (`SIC`) and by default includes
+leading/trailing gaps. Its coder also supports treating terminal gaps as
+unknown; that distinction matters for incomplete proteins and extracted
+domain boundaries. The source treats X as unknown for gap coding, distinct
+from a known residue identity; this behavior must be checked against our
+three whole-protein X positions before interpreting any indel call. We will
+retain rather than silently convert ambiguity. Overlapping/nested gap
+semantics, encoded coordinate mapping, and the advertised200-sequence limit
+must be validated before full project inference. No indel result is claimed
+from downloading or compiling software.
+
+Build: `python scripts/build_fastml_indel_tools.py`; frozen plan/launch:
+`metadata/fastml_indel_build_{plan,launch}_20260927.json`. Uses four CPUs,8GiB
+RAM,no swap/GPU; estimate0.1–2 hours,2GiB output. GNU++11 mode is passed to
+the legacy source build without modifying source. No remote sequence upload,
+paid infrastructure, ancestral FASTA selection or GPU prediction occurs.
+See `docs/bibliography.md` for primary methods/source references.

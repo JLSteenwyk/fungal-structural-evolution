@@ -9023,3 +9023,11 @@ selected best starts and gamma-bound contrasts give none. Full probability
 shifts retained; no conflicting pair has both probabilities>=0.90. Dependent
 comparison counts are not biological replicates. Alignment/model adequacy,
 indel uncertainty and ancestral sequence/structure ensembles remain open.
+
+### 2026-09-27: ancestral indel reconstruction software preparation
+
+Retrieved checksum-bound FastML3.11 source and launched local builds of
+indelCoder/gainLoss (four CPUs,8GiB RAM,noGPU). Primary methods/source
+references recorded. Terminal-gap and unknown-state handling, overlapping
+gap coding and local capacity beyond the advertised200-sequence limit must
+be checked before inference. No indel result or final ancestral sequence yet.

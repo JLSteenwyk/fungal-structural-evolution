@@ -69,3 +69,21 @@ Relevant to the proposed shared-control, family and phylogenetic mixed model;
 it does not validate our particular covariance assumptions. Our specialized
 evaluator is checked separately against direct dense calculations; optimization
 and inferential calibration remain outstanding.
+
+## Ancestral insertion/deletion reconstruction
+
+Ashkenazy H et al. (2012). FastML: a web server for probabilistic reconstruction
+of ancestral sequences. *Nucleic Acids Research*40:W580–W584.
+[Primary article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3394241/)
+([DOI](https://doi.org/10.1093/nar/gks498)). Describes separate binary coding
+and reconstruction of multi-position gap characters alongside amino-acid
+reconstruction, with ancestral uncertainty outputs. Relevant to avoiding an
+implicit residue at every ancestral alignment column. It does not establish
+that our alignments or inferred gap histories are correct. Local source
+FastML3.11 was retrieved from the authors'
+[source archive](https://fastml.evolseq.net/source/FastML.v3.11.tgz);
+checksum and build plan are in `metadata/fastml_indel_build_plan_20260927.json`.
+The public source page states a200-sequence limit, so local-tool capacity for
+our622-protein family must be checked before scientific use. The wrapper's
+default inclusion of terminal gaps requires explicit sensitivity analysis,
+especially for extracted domains and incomplete annotations.

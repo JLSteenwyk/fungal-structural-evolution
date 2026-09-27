@@ -1,0 +1,24 @@
+{
+  "source": "data/software_audits/fastml-3.11/source/FastML.v3.11",
+  "output": "results/software/fastml-indel-build-20260927-v1",
+  "source_retrieval": {
+    "url": "https://fastml.evolseq.net/source/FastML.v3.11.tgz",
+    "archive": "data/software_audits/fastml-3.11/FastML.v3.11.tgz",
+    "sha256": "2d1ec87116eae1163177631ad39083db01cdd78ffb8d119bebbdbb6a43e99451"
+  },
+  "pins": {
+    "data/software_audits/fastml-3.11/FastML.v3.11.tgz": "2d1ec87116eae1163177631ad39083db01cdd78ffb8d119bebbdbb6a43e99451",
+    "scripts/build_fastml_indel_tools.py": "09fc1d13f0a4a63805285366104b75242766fd071de681ca223385d00ee6271a"
+  },
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Local build of published FastML3.11 indelCoder and gainLoss. No inference or claim of support beyond advertised200-sequence limit; inspect and validate local capacity before full runs."
+}
