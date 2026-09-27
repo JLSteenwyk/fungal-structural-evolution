@@ -69,3 +69,13 @@ threshold. Contrasts describe similarity to a reference, not ancestral change
 or additive branch distances. Case review, prediction-source controls,
 nonduplication backgrounds and phylogenetically controlled tests remain necessary
 before mechanistic or duplication-associated conclusions.
+
+## Subsequent correspondence sensitivity
+
+The [sequence-locked shared-reference control](duplication-sequence-locked-reference-controls-20260927.md)
+now tests all 48 candidates with identical complete domain intervals. Four no
+longer maintain the original direction beyond the descriptive margin across
+all alternatives: three span both signs and one enters the margin band. The
+947 candidates above remain the historical original-control set, not a claim
+that all pass every subsequent control. Original fields are preserved alongside
+new-control status in the subsequent candidate summary.

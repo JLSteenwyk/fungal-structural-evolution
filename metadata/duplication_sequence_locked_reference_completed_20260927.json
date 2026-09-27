@@ -1,0 +1,69 @@
+{
+  "status": "passed_full_sequence_locked_reference_core_readback",
+  "candidates": 48,
+  "triads": 77,
+  "fits": 4928,
+  "maximum_rmsd_difference": 3.108624468950438e-14,
+  "candidate_directions": {
+    "a_farther_from_reference": 20,
+    "b_farther_from_reference": 24,
+    "direction_flip_beyond_margin": 3,
+    "touches_or_enters_margin_band": 1
+  },
+  "retains_original_direction": 44,
+  "changed_candidates": [
+    {
+      "family": "OG0000247",
+      "gene_a": "F133377_PVZ98051.1",
+      "gene_b": "F133377_PVZ98171.1",
+      "pfam_accession": "PF00155.28",
+      "pfam_name": "Aminotran_1_2",
+      "candidate_class": "stable_structure_sequence_unresolved",
+      "all_aligned_cores_identical": "0",
+      "control_direction_margin_0_1": "direction_flip_beyond_margin",
+      "control_contrast_min": "-0.9901461825955598",
+      "control_contrast_max": "2.664531264802828"
+    },
+    {
+      "family": "OG0000710",
+      "gene_a": "F61424_PVU85993.1",
+      "gene_b": "F61424_PVU91394.1",
+      "pfam_accession": "PF02729.27",
+      "pfam_name": "OTCace_N",
+      "candidate_class": "stable_concordant",
+      "all_aligned_cores_identical": "0",
+      "control_direction_margin_0_1": "direction_flip_beyond_margin",
+      "control_contrast_min": "-0.215161374574385",
+      "control_contrast_max": "1.5454847341755897"
+    },
+    {
+      "family": "OG0000736",
+      "gene_a": "F5486_RCK55378.1",
+      "gene_b": "F5486_RCK67541.1",
+      "pfam_accession": "PF22615.2",
+      "pfam_name": "IPMS_D2",
+      "candidate_class": "stable_concordant",
+      "all_aligned_cores_identical": "0",
+      "control_direction_margin_0_1": "direction_flip_beyond_margin",
+      "control_contrast_min": "-0.5770202661447348",
+      "control_contrast_max": "1.8230756448948364"
+    },
+    {
+      "family": "OG0001427",
+      "gene_a": "F1213189_OMH78599.1",
+      "gene_b": "F1213189_OMH83048.1",
+      "pfam_accession": "PF13847.13",
+      "pfam_name": "Methyltransf_31",
+      "candidate_class": "stable_discordant",
+      "all_aligned_cores_identical": "0",
+      "control_direction_margin_0_1": "touches_or_enters_margin_band",
+      "control_contrast_min": "0.0756376358011881",
+      "control_contrast_max": "0.2705138863678086"
+    }
+  ],
+  "plan_sha256": "8293038e5110fc00c3e53f4195a2c2d480a6b4e875fd3e27820f9cf9178ae5f6",
+  "producer_receipt_sha256": "cf8e8796e9acd0004b2c364dc2047d4a41708c89724cc9acdd14c2d1810d18b8",
+  "checker_sha256": "27b61e1d39bf2a9fdcdf1d520a686e762f282269b9a4a8c8defdbd3210886dfd",
+  "quaternion_helper_sha256": "185e8caa873928ed6e76aa2d6c40e0a028d5ec0cd52c5d30c4ff24145b48135f",
+  "scope": "All reference triples independently reconstructed by relative-coordinate arrays; every mask/count/metric checked with quaternion fits, full alternative grid and candidate classifications verified. Conditional correspondence sensitivity only; no prediction accuracy or evolutionary causality claim."
+}

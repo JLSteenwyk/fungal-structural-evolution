@@ -6152,3 +6152,20 @@ with duplicate sequence positions constrained remains next. See
 The prior goal turn identified correspondence sensitivity; this turn completes
 a direct numerical control across every eligible case. The full objective
 remains active, and GPU prediction remains paused.
+
+## September 27 shared-reference sequence correspondence control completed
+
+Completed and independently verified 4,928 constrained fits across 77 interval
+triads for all 48 identical-domain candidates. Both duplicate/reference anchors,
+two masks, two mapping definitions and eight input orders are retained. All fits
+pass n30/c70 and numerical geometry checks. Quaternion readback matched every
+RMSD/contrast within 3.11e-14 Å and independently reconstructed all residue triples.
+
+Forty-four candidates retain their original direction throughout. Three now span
+both signs beyond 0.1 Å; one previously discordant candidate enters that margin
+band. All four belong to the eight correspondence-sensitive cases identified
+earlier. They remain explicit in the new summary and should not be described
+as robust under the expanded controls. See [results and qualifications](duplication-sequence-locked-reference-controls-20260927.md).
+The prior turn completed direct pair controls; this turn completes the relevant
+three-protein directional sensitivity and changes candidate interpretation.
+The full scientific objective remains active and GPU prediction remains paused.

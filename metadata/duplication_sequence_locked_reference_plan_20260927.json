@@ -1,0 +1,29 @@
+{
+  "candidates": "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/candidate_sequence_context.tsv",
+  "triads": "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/triads.jsonl",
+  "maps": "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/common_residue_maps.jsonl.gz",
+  "inputs": "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl",
+  "output": "results/structural_comparisons/duplication-sequence-locked-reference-cores-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 2,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "basis": "48 candidates; 64 constrained alternatives per existing interval triad. Existing maps/PDBs, no predictions or native searches."
+  },
+  "pins": {
+    "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/candidate_sequence_context.tsv": "181a948f63fe6e6a1ac0896787d465040446ca33abb488ad5abe0454f8619dfb",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/triads.jsonl": "aa3f3a3268e7e584bb6bca8dba9020b48fc4abe9156a3832e4db589b1053f37a",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/common_residue_maps.jsonl.gz": "b5019c3f652e9a3e736da50a621d6d78607420691ecf407adfeb005eecf132f6",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355",
+    "scripts/fit_sequence_locked_reference_cores.py": "734dfa88be90c63714ceed2bd324427f63627f9e8fc326efac643b888070877e",
+    "scripts/fit_domain_triad_common_residues.py": "62d83078b1238b7107766209b2c6499c5b60bbe1c54bed6373856c05cd450c38",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/assess_domain_alignment_geometry.py": "b99336d078fcfd2a5df6e8df0f0d9d54a416278d03a55282189a39dc6dc01cab",
+    "metadata/duplication_candidate_sequence_context_completed_20260927.json": "e1a24770325d4699f4a0381e18e62809f47a43273227b02f654b9490465f7c93"
+  }
+}
