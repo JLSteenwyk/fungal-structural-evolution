@@ -1,0 +1,63 @@
+{
+  "trees": {
+    "profile_guide": {
+      "tree": "results/phylogeny/profile-guide-audit-v1/guide.treefile",
+      "receipt": "results/phylogeny/profile-guide-audit-v1/receipt.json",
+      "audit": "results/phylogeny/profile-guide-audit-v1/receipt.json",
+      "audit_status": "passed_full_species_guide_readback"
+    },
+    "mafft_guide": {
+      "tree": "results/phylogeny/mafft-guide-audit-v1/guide.treefile",
+      "receipt": "results/phylogeny/mafft-guide-audit-v1/receipt.json",
+      "audit": "results/phylogeny/mafft-guide-audit-v1/receipt.json",
+      "audit_status": "passed_full_species_guide_readback"
+    },
+    "pmsf_profile_profile": {
+      "tree": "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.treefile",
+      "receipt": "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json",
+      "audit": "metadata/pmsf_profile_profile_readback.json",
+      "audit_status": "passed_pmsf_profile_tree_and_bootstrap_readback"
+    },
+    "pmsf_profile_mafft": {
+      "tree": "results/phylogeny/pmsf-profile-mafft-v1/pmsf.treefile",
+      "receipt": "results/phylogeny/pmsf-profile-mafft-v1/receipt.json",
+      "audit": "metadata/pmsf_profile_mafft_readback.json",
+      "audit_status": "passed_pmsf_profile_tree_and_bootstrap_readback"
+    },
+    "pmsf_mafft_profile": {
+      "tree": "results/phylogeny/pmsf-mafft-profile-v1/pmsf.treefile",
+      "receipt": "results/phylogeny/pmsf-mafft-profile-v1/receipt.json",
+      "audit": "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1/receipt.json",
+      "audit_status": "passed_pmsf_profile_tree_and_bootstrap_readback"
+    }
+  },
+  "output": "results/phylogeny/species-distance-kernels-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      30
+    ]
+  },
+  "scope": "Full 526-tip distance matrices across five completed tree alternatives. Future nuisance covariance sensitivity only; no empirical covariance claim, dating, prediction or charges.",
+  "pins": {
+    "scripts/prepare_species_distance_kernels.py": "8eb3d3190cab30bb1017bac61500833aa19ba6fdc20f8d7c213008e307f37ef3",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/phylogeny/profile-guide-audit-v1/guide.treefile": "32345236e2a33123c68ddb2a7013c19feae7ec0d888306d09927382aa7ff5c45",
+    "results/phylogeny/profile-guide-audit-v1/receipt.json": "0619cdfa1a5cf91d684603c61c9af03f7092715cd5c882ec42cfd8209991fca1",
+    "results/phylogeny/mafft-guide-audit-v1/guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "results/phylogeny/mafft-guide-audit-v1/receipt.json": "2fa8fff788911b835fed6699457d0b3865a39c0facbdcf4e546469cadcdd7d24",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.treefile": "9eae8e7b581f86aa3b817aea9afb7e05541e47beb956a731e8cd3ffd0cae25d2",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json": "b2642f338eb34116f1046c75c2d58ded71ad610482ec38cdfd5243e5a3ee2591",
+    "metadata/pmsf_profile_profile_readback.json": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+    "results/phylogeny/pmsf-profile-mafft-v1/pmsf.treefile": "de6b3467d255abb15089827e65b1747d766b3d40c1e0772569e197412be9bece",
+    "results/phylogeny/pmsf-profile-mafft-v1/receipt.json": "1a40206961cb0caa110551398ec30a74e4c3e385295506a8a580960eac27c41e",
+    "metadata/pmsf_profile_mafft_readback.json": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+    "results/phylogeny/pmsf-mafft-profile-v1/pmsf.treefile": "730ca7ea2a212214e66335ed6dcafc9dab5bef4a8aa95b827497fcaf0dfcbb0a",
+    "results/phylogeny/pmsf-mafft-profile-v1/receipt.json": "3eaab8eb80db419d44f094c6595c4958488622794bfdd959b5ddd9654c5b7137",
+    "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1/receipt.json": "f29ae5791d1f09c55e2e988cb183423d972a147e83842c3b71b28bb0f890f107"
+  }
+}

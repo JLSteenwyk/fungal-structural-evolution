@@ -1,0 +1,50 @@
+{
+  "status": "passed_full_species_distance_kernel_readback",
+  "taxa": 526,
+  "trees": {
+    "profile_guide": {
+      "unordered_tip_pairs": 138075,
+      "maximum_distance_error": 2.6645352591003757e-15,
+      "maximum_kernel_error": 7.188694084447889e-15,
+      "maximum_reroot_distance_error": 1.7763568394002505e-15,
+      "minimum_kernel_eigenvalue": -6.0507154842357104e-15,
+      "reroot_tip": "OFS5426506"
+    },
+    "mafft_guide": {
+      "unordered_tip_pairs": 138075,
+      "maximum_distance_error": 2.6645352591003757e-15,
+      "maximum_kernel_error": 5.9674487573602164e-15,
+      "maximum_reroot_distance_error": 1.3322676295501878e-15,
+      "minimum_kernel_eigenvalue": -4.402048889488773e-15,
+      "reroot_tip": "OFS5426506"
+    },
+    "pmsf_profile_profile": {
+      "unordered_tip_pairs": 138075,
+      "maximum_distance_error": 3.552713678800501e-15,
+      "maximum_kernel_error": 1.071365218763276e-14,
+      "maximum_reroot_distance_error": 1.7763568394002505e-15,
+      "minimum_kernel_eigenvalue": -1.7555401576885288e-15,
+      "reroot_tip": "OFS5426506"
+    },
+    "pmsf_profile_mafft": {
+      "unordered_tip_pairs": 138075,
+      "maximum_distance_error": 4.440892098500626e-15,
+      "maximum_kernel_error": 7.882583474838611e-15,
+      "maximum_reroot_distance_error": 1.7763568394002505e-15,
+      "minimum_kernel_eigenvalue": 4.490941515139389e-15,
+      "reroot_tip": "OFS5426506"
+    },
+    "pmsf_mafft_profile": {
+      "unordered_tip_pairs": 138075,
+      "maximum_distance_error": 4.440892098500626e-15,
+      "maximum_kernel_error": 1.04638520070921e-14,
+      "maximum_reroot_distance_error": 2.6645352591003757e-15,
+      "minimum_kernel_eigenvalue": -7.342081586800275e-15,
+      "reroot_tip": "OFS5426506"
+    }
+  },
+  "tip_pairs_checked": 690375,
+  "source_receipt_sha256": "a4a0828e49c642b5096908a716d1e1f6d6ad70705b7c0e1c3d27049e260f14a2",
+  "script_sha256": "7ce7a9993a46db6ddf746d41798d7b9e19641ccba5cdce3954b20d7f60049808",
+  "scope": "Every unordered tip-pair distance independently reconstructed with DendroPy and again after explicit terminal-edge rerooting. All centered-kernel entries, recovered distances and eigenvalues checked with alternative linear algebra. Mathematical geometry only, not estimated evolutionary covariance, time calibration or phylogenetic model adequacy."
+}
