@@ -1,0 +1,17 @@
+{
+  "service": "fungal-background-control-selection-readback-20260927.service",
+  "pid": 2091632,
+  "created": 1790503146.35,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_control_selection.py",
+    "--plan",
+    "metadata/background_control_selection_readback_plan_20260927.json"
+  ],
+  "plan": "metadata/background_control_selection_readback_plan_20260927.json",
+  "plan_sha256": "127248d25f0f331324cfbf76a60e686d5a401e6986c8dbad9564339f43fed2db",
+  "fixture_status": "corrected_fixture_passed_5400_random_scenarios_zero_exclusions_and54_exact_ties",
+  "fixture": "scripts/check_background_control_selection_readback_cases.py",
+  "fixture_sha256": "4570d9b9483fed15483daae8bc7dc4cf60d40f0745e55effe614366b7695acb6",
+  "note": "Original fixture wrote True/False instead of numeric0/1 shared flags and failed before comparisons. Shell continued to launch checker; source code and plan then left unchanged. Corrected separate fixture passed; no production job restarted."
+}

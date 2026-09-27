@@ -868,3 +868,28 @@ counterexample. Resources: one CPU, 16 GiB RAM, no swap, 8 GiB output allowance,
 uncalibrated 0.25–8-hour planning range. Production, full independent selection
 readback, measured covariate balance and phylogenetically informed effect tests
 remain pending. No GPU or paid resources were enabled.
+
+## Selection produced; full independent reconstruction running
+
+Production completed 2,786,912 selected target/control records across 54
+scenarios, with all 873,892 target/policy records and their unmatched scenarios
+retained. These are sensitivity-grid records, not independent pairs to pool.
+Started an independent checker that enumerates eligible backgrounds and both
+endpoint mappings directly for every one of the 47,190,168 scenario decisions.
+It reconstructs chosen identity/order/score, eligible and tied-candidate counts,
+runner-up score gaps, unmatched lists, all summaries and per-scenario reuse.
+It imports no selection or candidate-ranking helpers from the producer.
+
+The initial randomized fixture mistakenly serialized a shared-identity Boolean
+as `True`/`False` instead of numeric `0`/`1`, so it failed before checking choices.
+The shell continued to launch the production checker. Its pinned code/plan were
+left unchanged; a separate corrected fixture passed 5,400 randomized scenario
+comparisons plus all 54 exact-tie cases, including zero distances and exclusion
+settings. No production process was restarted. Use
+`scripts/check_background_control_selection_readback_cases.py` for the corrected
+fixture; the initial fixture is preserved because the live checker pins it.
+
+Resource plan: one CPU, 16 GiB RAM, no swap, negligible proof output and an
+uncalibrated 0.5–12-hour range. Full production verification, actual match
+balance, structural outcome qualification and evolutionary effect estimates
+remain pending. No GPU or paid infrastructure is used.

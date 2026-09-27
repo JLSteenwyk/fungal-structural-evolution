@@ -6626,3 +6626,19 @@ balance remain pending. See [selection design](terminal-sister-backgrounds-20260
 The previous goal turn verified all candidate covariates; this turn advances
 actual control selection. All eight aims remain active, and GPU prediction
 remains paused.
+
+## September 27 control selection produced; full verification running
+
+Selection completed 2,786,912 records across the complete 54-scenario grid,
+retaining all target/policy unmatched statuses. Started independent enumeration
+of every candidate and endpoint mapping for all 47,190,168 scenario decisions,
+including nearest choice, tie counts, score gaps and control reuse. Corrected a
+fixture-only Boolean serialization error in a separate file after launch;
+5,400 randomized scenario comparisons and 54 exact-tie cases passed without
+changing or restarting the live checker. Full production verification and
+balance assessment remain pending. See
+[selection verification](terminal-sister-backgrounds-20260927.md#selection-produced-full-independent-reconstruction-running).
+
+The previous goal turn launched selection; this turn confirms its completion and
+advances independent validation. All eight aims remain active. GPU prediction
+remains paused.

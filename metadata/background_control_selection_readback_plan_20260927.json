@@ -1,0 +1,35 @@
+{
+  "source_plan": "metadata/background_control_selection_plan_20260927.json",
+  "output": "metadata/background_control_selection_completed_readback_20260927.json",
+  "pins": {
+    "metadata/background_match_covariate_completed_readback_20260927.json": "68113f66d00a4099f2133a573c1172e7f07e43ee24c94555e5e588800183b17f",
+    "results/orthology/background-match-covariates-20260927-v1/receipt.json": "767b0bc057d7aa831f29759251161c31d930474c1bbf4ed44fd850909d4c7a35",
+    "results/orthology/background-match-covariates-20260927-v1/edge_covariates.tsv": "0f67a09e64105ba6a9c6ab2aa52a712c6d38a8a21350d6957310faae86966d0a",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "scripts/select_background_controls.py": "f65fb2622674e575dab0b9639cdb6951413c5b6ee6e9124027a70162e97ea9b4",
+    "scripts/check_background_control_selection.py": "ea6de59fac7a047d2d218ed014f20e8ecb6745cd21e5327ab62bacc4dd150ce9",
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d",
+    "results/orthology/background-match-graph-20260927-v1/edges.tsv": "8a73995e18e23b59d38916c5f022e6a15a4d153023b847da096e92668249d2c9",
+    "results/orthology/background-match-graph-20260927-v1/target_policy_dispositions.tsv": "2fec0c91e78f77aa44700a5827214d97172ea1754c58cd08281c13c68bf109e2",
+    "metadata/background_control_selection_plan_20260927.json": "429789e39ba3e2f50cd251a13b6fdf5d809df392c33905b061e524d457e8a9eb",
+    "metadata/background_control_selection_launch_20260927.json": "8fe085af7220fc1005ad172c0c4efa2b9890df32041d3de8a6c2c8f6cb2d993c",
+    "scripts/readback_background_control_selection.py": "d16dc76bb57312973e70b0803c1e9f506647136fa1ac9812351861c42662b3d1",
+    "scripts/check_background_control_selection_readback.py": "eb6a3f6ea7e1ca0bb7e0250341c9e70a6bd72bee89f2f9934e0dd645c48aca2a",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "scenario_decisions": 47190168,
+    "basis": "Independent direct enumeration of all54 scenarios for every target/policy, checking nearest choice, endpoint order, exact tie/eligible counts and score gap, full unmatched lists and control reuse. One CPU, no structural outcomes or GPU; uncalibrated planning excludes dependency wait."
+  }
+}
