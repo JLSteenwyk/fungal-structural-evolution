@@ -5230,3 +5230,24 @@ completion of that job and its audit. An independent full-field/source-row
 readback follows the merge; provenance and duplicate-row corruption fixtures
 passed. This preserves the source runs and does not yet establish uncertainty
 or acceleration. See [recovery integration](recovery-20260926.md).
+
+
+### September 26: domain controls for all duplication/reference pairs running
+
+A full inventory now joins 227,089 models and 135,741 pairs to the audited
+policy-preserving Pfam registry. It separates ordered/content annotation
+contrasts from unannotated cases and identifies conservative single-copy
+Domain interval matches without silently collapsing repeats. Four policies
+remain separate. Category/repeat/version fixtures passed; production and
+independent readback remain pending. This does not infer domain evolutionary
+events. See [domain controls](duplication-domain-controls-20260926.md).
+
+
+### September 26: domain-control inventory completed, readback pending
+
+The full producer completed 542,964 pair/policy rows across 135,741 unique
+pairs. Candidate single-copy Domain matches range from 37,590 to 37,755 per
+policy; policy counts overlap. The model set contains 96,051 unannotated
+models and 1,944 with policy disagreement. Terminal success and all pinned
+source/output hashes were checked. These counts remain provisional until
+independent output readback; no domain evolutionary events are established.
