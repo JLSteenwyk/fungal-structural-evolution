@@ -1,0 +1,69 @@
+{
+  "collections": {
+    "baseline": {
+      "root": "results/ancestral/conditional-domain-ancestors-20260927-v1",
+      "audit_receipt": "results/ancestral/conditional-domain-posterior-audit-20260927-v1/receipt.json",
+      "fits_receipt": "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json",
+      "fit_readback": "results/ancestral/case-domain-model-readback-20260927-v1/fit_readback.tsv",
+      "expected_status": "passed_all_conditional_domain_posteriors"
+    },
+    "alternate": {
+      "root": "results/ancestral/refitted-domain-ancestors-20260927-v1",
+      "audit_receipt": "results/ancestral/refitted-domain-posterior-audit-20260927-v1/receipt.json",
+      "fits_receipt": "results/ancestral/domain-multistarts-20260927-v1/receipt.json",
+      "fit_readback": "results/ancestral/domain-multistart-readback-20260927-v1/fit_readback.tsv",
+      "expected_status": "passed_all_refitted_domain_posteriors",
+      "auditor": {
+        "unit": "fungal-refitted-domain-posterior-audit-20260927.service",
+        "pid": 526298,
+        "created": 1790547855.75,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_refitted_domain_posteriors.py"
+        ]
+      }
+    },
+    "refined": {
+      "root": "results/ancestral/refined-domain-ancestors-20260927-v1",
+      "audit_receipt": "results/ancestral/refined-domain-posterior-audit-20260927-v1/receipt.json",
+      "fits_receipt": "results/ancestral/domain-refinements-20260927-v1/receipt.json",
+      "fit_readback": "results/ancestral/domain-refinement-readback-20260927-v1/fit_readback.tsv",
+      "expected_status": "passed_all_refined_domain_posteriors",
+      "auditor": {
+        "unit": "fungal-refined-domain-posterior-audit-20260927.service",
+        "pid": 535078,
+        "created": 1790548364.59,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_refined_domain_posteriors.py"
+        ]
+      }
+    }
+  },
+  "output": "results/ancestral/optimization-probability-comparisons-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_audits": [
+      0.1,
+      3
+    ]
+  },
+  "pins": {
+    "scripts/compare_ancestral_optimization_probabilities.py": "233a009b392a5afec28d3b84a5cac7d41040bbf31eb878cd2d0e8b5c6b247db8",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/conditional-domain-ancestors-20260927-v1/receipt.json": "504e0f65659f0ff60d8a092138f2b13f4c2dc9602d616e3cd0899f15bc3dde3a",
+    "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json": "178fd4ad19dcda616e266994dafc4f65e3b30d158ce6b135e2358dcc19cea6d5",
+    "results/ancestral/case-domain-model-readback-20260927-v1/fit_readback.tsv": "2a08defd0b549e48557dc693726e946b0d951e9c9b95b4bee9ce8d6a1e9fefae",
+    "metadata/refitted_domain_posterior_audit_launch_20260927.json": "6a3f30b75e15a8feaf57aa87b14bad00f074b35664c7deca06f6ecbaa4217b4b",
+    "results/ancestral/refitted-domain-ancestors-20260927-v1/receipt.json": "ffe8c17a5f381fceab95346b1f066be84878667ac142d53669c163af9e6da9e6",
+    "results/ancestral/domain-multistarts-20260927-v1/receipt.json": "8fa6f2eeed4f28a2d3fec828da8bc5a899c33842b1a1dbd5df0e6b5356f9ce66",
+    "results/ancestral/domain-multistart-readback-20260927-v1/fit_readback.tsv": "c4a8efd86ff2bdfdf256354c2c60f81241f9516c6bab566bb66d5716cbe89b6b",
+    "metadata/refined_domain_posterior_audit_launch_20260927.json": "a40c555315f7a48b3b7b303db560d4bf304d1d2b648abb7b703eed2b34377b29",
+    "results/ancestral/refined-domain-ancestors-20260927-v1/receipt.json": "66ec5785a7991d06508fd21e656670cd225b281df9de8b28182e499b775ffc2b",
+    "results/ancestral/domain-refinements-20260927-v1/receipt.json": "4b653b5244f0f91bfb74c99518a1069f52f27f86f9ea49607e565cdeaaa93f9c",
+    "results/ancestral/domain-refinement-readback-20260927-v1/fit_readback.tsv": "b79dd070bfb5fa2fdb8094e1c9b3f0adaca4f60ec89e20ee887d4375a7e4aed7"
+  }
+}

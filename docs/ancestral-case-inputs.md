@@ -903,3 +903,37 @@ use `refined_domain_posterior_audit_`, date `20260927`. Output:
 `results/ancestral/refined-domain-posterior-audit-20260927-v1/`. One CPU,4GiB
 RAM,no swap/GPU; estimate0.1–4 hours after production,0.2GiB output.
 Refined probabilities and their verification remain pending.
+
+## All posterior audits and optimization comparisons completed
+
+The independent evaluator checked all10,096,920 alternate-start probabilities
+and all3,365,640 refined probabilities. Maximum absolute probability errors
+were4.40484e-12 and4.40528e-12, respectively; site-likelihood errors were below
+2.47e-10. Both auditors terminated successfully and full artifact hashes
+were checked. Completion records use prefixes `refitted_domain_posterior_audit`,
+`refined_domain_ancestors` and `refined_domain_posterior_audit`, date `20260927`.
+
+Compared the optimization stages at identical aligned sites and mapped nodes,
+retaining925,551 site comparisons across1,716 fit pairs. Saved site records
+independently reproduce the aggregate counts and probability distances.
+
+| Comparison | Node/site comparisons | Different MAP residues | Maximum total variation |
+| --- | ---: | ---: | ---: |
+| Alternate starts versus baseline | 504,846 | 220 | 0.83055 |
+| Refined versus baseline | 168,282 | 38 | 0.23188 |
+| Refined versus selected start | 168,282 | 0 | 0.01113 |
+| Refined lower versus original gamma bound | 84,141 | 0 | 0.00017584 |
+
+No conflicting MAP pair in these comparisons has both probabilities>=0.90.
+These are dependent comparison counts, not unique evolutionary events.
+Unchanged MAP residues can still have different probability distributions.
+Poorer alternate-start fits are retained as diagnostics, not assigned equal
+biological weight. Refinement and bound stability do not resolve model
+adequacy, alignment correspondence, ancestral node support or indel history.
+
+Reproduce `python scripts/compare_ancestral_optimization_probabilities.py`;
+plan/launch/completion metadata use `ancestral_optimization_probability_comparison`,
+date `20260927`. Output:
+`results/ancestral/optimization-probability-comparisons-20260927-v1/`.
+One CPU,4GiB memory limit,noGPU. Both independent audits were required before
+comparison; their receipt hashes are recorded with the output.

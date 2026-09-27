@@ -1,0 +1,50 @@
+{
+  "status": "complete_ancestral_optimization_probability_comparisons",
+  "fit_pairs": 1716,
+  "node_comparisons": 5148,
+  "site_comparisons": 925551,
+  "descriptive_aggregates": {
+    "alternate_versus_baseline": {
+      "sites": 504846,
+      "map_disagreements": 220,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.8305492031516325,
+      "mean_total_variation": 0.0006508633860791222
+    },
+    "refined_versus_baseline": {
+      "sites": 168282,
+      "map_disagreements": 38,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.23188293224294212,
+      "mean_total_variation": 0.00024650105137760686
+    },
+    "refined_versus_selected_start": {
+      "sites": 168282,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.011125235796820477,
+      "mean_total_variation": 1.7279094498487711e-06
+    },
+    "refined_lower_versus_original_bound": {
+      "sites": 84141,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.00017583898416663447,
+      "mean_total_variation": 1.966422521514513e-07
+    }
+  },
+  "plan_sha256": "dc7fde06fd62b3e9304fa7b5cb3b1d3280ed147fb45930aa914bbe7a4238d8ba",
+  "input_posterior_audit_hashes": {
+    "baseline": "b349dbf2cf054935d410193be9f00a94a0d457487b0ef6ba84d45ad96553a81d",
+    "alternate": "da5468ebdf760d0b234103847fbb5c285927d004a46d5bab93ce6c507ad1b967",
+    "refined": "11b03fcc383b0b97d9efd12e5ff663d99fff57b6c9a9ea449889a6ddb91247ed"
+  },
+  "scope": "Same-alignment coordinate comparisons across audited optimization stages. All sites and poorer alternate starts retained; these are dependent diagnostics, not biological replicates or ensemble weights. Historical state support, indel uncertainty and model adequacy remain separate.",
+  "source_receipt_path": "results/ancestral/optimization-probability-comparisons-20260927-v1/receipt.json",
+  "source_receipt_sha256": "caf95caf2b4020a5d1c324ffd3208644075a12ac925cefe8a276930895eae0e2",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}

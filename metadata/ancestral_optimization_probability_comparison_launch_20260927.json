@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-optimization-probability-comparison-20260927.service",
+  "state": {
+    "MainPID": "537129",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 537129,
+  "created": 1790548531.85,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_ancestral_optimization_probabilities.py"
+  ],
+  "plan_sha256": "dc7fde06fd62b3e9304fa7b5cb3b1d3280ed147fb45930aa914bbe7a4238d8ba",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_audits": [
+      0.1,
+      3
+    ]
+  }
+}

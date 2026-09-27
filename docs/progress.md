@@ -9013,3 +9013,13 @@ posterior verification running. Queued the separate complete3,365,640-value
 audit of refined probabilities. Both collections retain their distinct
 optimization-diagnostic versus best-refinement roles; final sequences and
 ancestral structures remain pending.
+
+### 2026-09-27: posterior audits and optimization effects fully compared
+
+Independent verification passed all10.10million alternate-start and3.37million
+refined probabilities (max error<4.41e-12). Across925,551 comparisons, refined
+versus baseline gives38 MAP switches in168,282 node/sites; refinement versus
+selected best starts and gamma-bound contrasts give none. Full probability
+shifts retained; no conflicting pair has both probabilities>=0.90. Dependent
+comparison counts are not biological replicates. Alignment/model adequacy,
+indel uncertainty and ancestral sequence/structure ensembles remain open.
