@@ -1,0 +1,26 @@
+{
+  "status": "verified_completed_collection_site_rate_exports_and_audits",
+  "plan_sha256": "bc844e6cc01bf5b0a7aba2c7f2603e284568fd7e07ff03d92e30b8ad333e2835",
+  "controller_receipt_sha256": "7b8b5812cf618953a91422fc41590821070b1b0282cc842cdcae5a142a542a93",
+  "models": {
+    "gamma": {
+      "producer_receipt_sha256": "1fdc5301166f3cd47bb9cdd0e0b0dc8db88098ed4bc8e8bcee8e90f547fd85ef",
+      "audit_receipt_sha256": "e9a8e9993293a2c825159826753acb0d9e5b2bce781116057455b0b5a09daba3",
+      "fits": 500,
+      "markers": 125,
+      "site_rate_rows": 190116,
+      "fits_with_warnings": 495,
+      "audit_scope": "All fit provenance, model/topology identities, rate grids, four-category rate/weight bounds and site-likelihood sums checked at exported precision. Posterior site rates themselves were not independently recomputed; these are conditional empirical-Bayes estimates, not calibrated confidence or selection tests."
+    },
+    "freerate": {
+      "producer_receipt_sha256": "36bbd91e20493fbb4cb881e75a2db01873f9f5c2c441616cfb8ccd916078f91f",
+      "audit_receipt_sha256": "652977e8e7f9d0392556c2a373282f50c5a67a251e49cc70fa4b62ef693c9fe0",
+      "fits": 500,
+      "markers": 125,
+      "site_rate_rows": 190116,
+      "fits_with_warnings": 495,
+      "audit_scope": "All fit provenance, model/topology identities, rate grids, four-category rate/weight bounds and site-likelihood sums checked at exported precision. Posterior site rates themselves were not independently recomputed; these are conditional empirical-Bayes estimates, not calibrated confidence or selection tests."
+    }
+  },
+  "checkpoint_scope": "Plan pins, controller/audit/producer/config bindings, all audit artifact hashes, unique fit keys and complete per-fit site grids checked. Native numerical checks are provided by the existing full output audits, not independently repeated here. Model adequacy and coupling remain outstanding."
+}

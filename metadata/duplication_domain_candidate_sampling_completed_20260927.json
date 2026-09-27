@@ -1,0 +1,316 @@
+{
+  "status": "passed_full_domain_candidate_sampling_readback",
+  "producer_receipt_sha256": "8bb083d2e1b28d01dc47100c113dc99ce8367fd6482ad72ac77222677af96a4f",
+  "plan_sha256": "7343acefd851d892a4138e75e02fb485511285d46ac5879d3bcc1951d38c7cf8",
+  "checker_sha256": "8ea2303cc036c4ab7aae850ef31f8f97bf376d2d5f22c06991901e0a767a5237",
+  "annotated_rows_checked": 77760,
+  "lineage_rows_checked": 2916,
+  "family_rows_checked": 36941,
+  "overview": [
+    {
+      "candidate_class": "stable_discordant",
+      "event_domain_combinations": 202,
+      "distinct_gene_pairs": 199,
+      "families": 159,
+      "pfams": 152,
+      "taxa": 67,
+      "manifest_lineage_groups": 14,
+      "study_roles": {
+        "ingroup": 194,
+        "outgroup": 8
+      }
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "event_domain_combinations": 739,
+      "distinct_gene_pairs": 698,
+      "families": 433,
+      "pfams": 412,
+      "taxa": 97,
+      "manifest_lineage_groups": 17,
+      "study_roles": {
+        "ingroup": 715,
+        "outgroup": 24
+      }
+    },
+    {
+      "candidate_class": "stable_structure_sequence_unresolved",
+      "event_domain_combinations": 6,
+      "distinct_gene_pairs": 6,
+      "families": 6,
+      "pfams": 6,
+      "taxa": 4,
+      "manifest_lineage_groups": 2,
+      "study_roles": {
+        "ingroup": 6
+      }
+    }
+  ],
+  "selected_lineages": [
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Basidiomycota",
+      "event_domain_combinations": 375,
+      "gene_pairs": 356,
+      "taxa": 39
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Ascomycota",
+      "event_domain_combinations": 163,
+      "gene_pairs": 150,
+      "taxa": 29
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Kickxellomycota",
+      "event_domain_combinations": 59,
+      "gene_pairs": 57,
+      "taxa": 5
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Mucoromycota",
+      "event_domain_combinations": 41,
+      "gene_pairs": 38,
+      "taxa": 4
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Glomeromycota",
+      "event_domain_combinations": 31,
+      "gene_pairs": 30,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Neocallimastigomycota",
+      "event_domain_combinations": 14,
+      "gene_pairs": 12,
+      "taxa": 2
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "outgroup",
+      "lineage_group": "Apusomonadida",
+      "event_domain_combinations": 12,
+      "gene_pairs": 11,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "outgroup",
+      "lineage_group": "Amoebozoa",
+      "event_domain_combinations": 9,
+      "gene_pairs": 9,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Chytridiomycota",
+      "event_domain_combinations": 9,
+      "gene_pairs": 9,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Zoopagomycota",
+      "event_domain_combinations": 9,
+      "gene_pairs": 9,
+      "taxa": 2
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Entomophthoromycota",
+      "event_domain_combinations": 5,
+      "gene_pairs": 5,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Rozellomycota",
+      "event_domain_combinations": 4,
+      "gene_pairs": 4,
+      "taxa": 2
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Blastocladiomycota",
+      "event_domain_combinations": 2,
+      "gene_pairs": 2,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Monoblepharomycota",
+      "event_domain_combinations": 2,
+      "gene_pairs": 2,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "outgroup",
+      "lineage_group": "Nucleariida",
+      "event_domain_combinations": 2,
+      "gene_pairs": 2,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "ingroup",
+      "lineage_group": "Basidiobolomycota",
+      "event_domain_combinations": 1,
+      "gene_pairs": 1,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_concordant",
+      "study_role": "outgroup",
+      "lineage_group": "Metazoa",
+      "event_domain_combinations": 1,
+      "gene_pairs": 1,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Basidiomycota",
+      "event_domain_combinations": 84,
+      "gene_pairs": 84,
+      "taxa": 28
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Ascomycota",
+      "event_domain_combinations": 51,
+      "gene_pairs": 50,
+      "taxa": 16
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Kickxellomycota",
+      "event_domain_combinations": 22,
+      "gene_pairs": 22,
+      "taxa": 4
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Mucoromycota",
+      "event_domain_combinations": 11,
+      "gene_pairs": 11,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Glomeromycota",
+      "event_domain_combinations": 7,
+      "gene_pairs": 6,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Chytridiomycota",
+      "event_domain_combinations": 6,
+      "gene_pairs": 6,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Neocallimastigomycota",
+      "event_domain_combinations": 5,
+      "gene_pairs": 4,
+      "taxa": 2
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "outgroup",
+      "lineage_group": "Apusomonadida",
+      "event_domain_combinations": 4,
+      "gene_pairs": 4,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Basidiobolomycota",
+      "event_domain_combinations": 3,
+      "gene_pairs": 3,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Rozellomycota",
+      "event_domain_combinations": 3,
+      "gene_pairs": 3,
+      "taxa": 2
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "outgroup",
+      "lineage_group": "Amoebozoa",
+      "event_domain_combinations": 2,
+      "gene_pairs": 2,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "ingroup",
+      "lineage_group": "Zoopagomycota",
+      "event_domain_combinations": 2,
+      "gene_pairs": 2,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "outgroup",
+      "lineage_group": "Filasterea",
+      "event_domain_combinations": 1,
+      "gene_pairs": 1,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_discordant",
+      "study_role": "outgroup",
+      "lineage_group": "Nucleariida",
+      "event_domain_combinations": 1,
+      "gene_pairs": 1,
+      "taxa": 1
+    },
+    {
+      "candidate_class": "stable_structure_sequence_unresolved",
+      "study_role": "ingroup",
+      "lineage_group": "Kickxellomycota",
+      "event_domain_combinations": 5,
+      "gene_pairs": 5,
+      "taxa": 3
+    },
+    {
+      "candidate_class": "stable_structure_sequence_unresolved",
+      "study_role": "ingroup",
+      "lineage_group": "Ascomycota",
+      "event_domain_combinations": 1,
+      "gene_pairs": 1,
+      "taxa": 1
+    }
+  ],
+  "scope": "Every copied source field and taxonomy assignment checked; exact event-domain/gene-pair/family/Pfam/taxon sets and all zero lineage rows independently reconstructed. Descriptive concentration only; no enrichment or phylogenetic correction."
+}

@@ -5980,3 +5980,23 @@ The independent outer-merge checker verified every key, copied source field,
 classification and count. See [methods/results](duplication-domain-guide-comparison-20260927.md)
 and the [completion record](../metadata/duplication_domain_guide_comparison_completed_20260927.json).
 Candidate review and phylogenetic/sampling/prediction controls remain outstanding.
+
+
+## September 27 domain candidate sampling and recovered site rates recorded
+
+Completed and independently checked all 77,760 annotated domain comparison rows,
+2,916 lineage summary rows and 36,941 observed family summary rows. At n30/c70
+and the descriptive 0.1 Å margin, 202 discordant event/domain combinations
+represent 199 gene pairs, 159 families and 67 taxa (194 fungal combinations,
+eight outgroup combinations). Explicit zero lineage groups and separate
+multiplicity counts prevent interpreting domains or repeated family members as
+independent lineage evidence. See [sampling](duplication-domain-candidate-sampling-20260927.md).
+
+The recovered AlphaFold Gamma4 and FreeRate4 exports and full output audits have
+both completed: 125 markers, 500 fits and 190,116 site-rate rows per model.
+The completion checkpoint verified plan pins, receipt/config bindings, all audit
+artifact hashes and complete unique fit/site grids. Each model retains warnings
+in 495 fits; output validity does not establish optimization or model adequacy.
+See [completion evidence](../metadata/recovered_afdb_site_rates_completed_20260927.json).
+Model comparison, exposure integration and controlled coupling remain downstream.
+GPU prediction remains paused; this checkpoint did not change running jobs.

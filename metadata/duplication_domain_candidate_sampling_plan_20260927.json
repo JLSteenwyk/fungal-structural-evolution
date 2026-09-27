@@ -1,0 +1,24 @@
+{
+  "comparison": "results/structural_comparisons/duplication-domain-guide-comparison-20260927-v1",
+  "readback": "metadata/duplication_domain_guide_comparison_completed_20260927.json",
+  "membership": "results/orthology/duplication-coverage-membership-20260926-v1",
+  "output": "results/structural_comparisons/duplication-domain-candidate-sampling-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      5
+    ],
+    "basis": "Annotate and aggregate all 77760 comparison rows against frozen membership; no models or fits/GPU/charges."
+  },
+  "pins": {
+    "scripts/summarize_domain_candidate_sampling.py": "2f4cfd1669cebfeeb5fa499f1b956fc4c0bfaef16a180cd82f7182cf07d2999b",
+    "metadata/duplication_domain_guide_comparison_completed_20260927.json": "eacc8e085a22691893d295d6887bd34aaa2933a3e81f25c2f9e8a04a42df3409",
+    "results/structural_comparisons/duplication-domain-guide-comparison-20260927-v1/receipt.json": "1964a62246a44ad24cd9e485ed9d9192d33fcfd47a49ff9355b8385167c9797a",
+    "results/structural_comparisons/duplication-domain-guide-comparison-20260927-v1/guide_comparison.tsv": "48ab65a870b60d029397adfdd711c4b68cfc6aacb83e21289e252a2f7d73b8eb",
+    "results/orthology/duplication-coverage-membership-20260926-v1/receipt.json": "231aa0f068d0109324e46d49c833416df00efd3895aefebd709fb3b4c15ab544",
+    "results/orthology/duplication-coverage-membership-20260926-v1/taxon_coverage_with_membership.tsv": "a380def855261560273f79bd6b705ddbe61b381b2edb82737897374d7b2b03bb"
+  }
+}

@@ -581,3 +581,16 @@ Warnings are retained for 495 of 500 fits; successful auditing does not establis
 model or optimization adequacy. Posterior rates were not independently
 reestimated. FreeRate fitting has started automatically, while model comparison,
 exposure integration and coupling remain downstream.
+
+
+### Both recovered AlphaFold rate models completed (September 27)
+
+Gamma4 and FreeRate4 now each have 125 markers, 500 fits and 190,116 exported
+site-rate rows with passed full output audits. The controller exited successfully.
+A completion checkpoint checked all plan pins, receipt/config bindings, audit
+artifact hashes, unique fit identities and complete per-fit site grids; see
+[the archived record](../metadata/recovered_afdb_site_rates_completed_20260927.json).
+The existing native numerical audits remain the evidence for likelihood/model
+checks; posterior rates were not independently reestimated. Each model retains
+warnings in 495/500 fits. Optimization sensitivity and model comparison must be
+reviewed before interpreting the downstream exposure/coupling analyses.

@@ -16,21 +16,23 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
 | 8. Ancestral/mechanistic cases | Exploratory families and functional candidates identified | Select cases supported by the preceding analyses, reconstruct ancestral amino-acid distributions and topology sensitivity, then predict authorized ancestral alternatives and formulate experimentally testable hypotheses. No completed ancestral reconstruction is claimed. |
 
-## Current execution dependencies
+## Current execution dependencies (updated September 27)
 
-- Expanded AlphaFold resampling: all 125 markers, 75,000 paired draws, then
-  automatic native-output/interval audit. Uses the verified collection of
-  95 unchanged and 30 refitted marker sources.
-- ESMFold resampling: separate 122-marker cohort, 73,200 paired draws, with
-  its own automatic audit. It cannot provide intervals for AlphaFold fits.
-- Recovered AlphaFold site-rate exports: 125 markers, Gamma4 and FreeRate4,
-  1,000 total fits with separate complete output audits. Exposure integration
+- Expanded AlphaFold resampling remains running across all 125 markers and
+  75,000 paired draws, followed by automatic native-output/interval audit.
+- ESMFold resampling and its full audit completed: 122 markers, 73,200 draw
+  attempts, 73,167 estimable draws and 33 explicitly unestimable draws. These
+  fixed-topology conditional intervals cannot substitute for AlphaFold intervals.
+- Recovered AlphaFold Gamma4 and FreeRate4 site-rate exports and output audits
+  completed: 1,000 fits total. Optimization/model review, exposure integration
   and conditional coupling remain downstream; see [coupling](conditional-site-coupling.md).
-- Primary duplication coordinates: 212,549 initial validations completed;
-  independent source-to-export verification runs before input materialization.
-- Whole-protein duplicate/reference alignments and domain alignments wait for
-  their required input checks. Numeric result audits are queued separately.
-  The three comparison workloads are not completed structural results.
+- Whole-protein duplicate/reference alignments are running with numerical
+  auditors and order summaries queued behind them.
+- Domain comparisons, common-core numerical verification, alternative-setting
+  robustness, cross-guide comparisons and candidate sampling summaries completed.
+  See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).
+  Matched backgrounds and phylogenetic association tests remain outstanding;
+  none of these computational stages establishes a duplication effect.
 - Species-tree sensitivity and database retrieval continue independently.
   GPU prediction remains paused under the user's current authorization.
 
