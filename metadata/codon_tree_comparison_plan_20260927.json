@@ -1,0 +1,49 @@
+{
+  "audit_controller": {
+    "pid": 2427893,
+    "created": 1790507787.0,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_local_codon_tree_audit.py",
+      "--plan",
+      "metadata/local_codon_tree_audit_plan_20260927.json"
+    ]
+  },
+  "audit_handoff_receipt": "results/cds/local-codon-tree-audit-handoff-20260927-v1/receipt.json",
+  "arguments": {
+    "original-trees": "results/phylogeny/genus-codon-trees-v1",
+    "original-audit": "results/phylogeny/genus-codon-tree-audit-full-v1",
+    "local-trees": "results/phylogeny/local-codon-trees-20260927-v1",
+    "local-audit": "results/phylogeny/local-codon-tree-audit-20260927-v1",
+    "ledger": "results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv",
+    "output": "results/cds/codon-alignment-tree-comparison-20260927-v1"
+  },
+  "controller_output": "results/cds/codon-tree-comparison-handoff-20260927-v1",
+  "expected_dispositions": {
+    "matched": 1625,
+    "original_only": 30,
+    "local_only": 7,
+    "neither_fitted": 50
+  },
+  "pins": {
+    "scripts/compare_codon_alignment_trees.py": "901fe36f46ad0d76823bfc344422635dd82dac19b11ea28ceba679cd7ad7dbe9",
+    "scripts/advance_codon_tree_comparison.py": "2d0430ef932071b91cf5d437793059355faf382f9f7aeb6f0daaa7e4e44eb901",
+    "metadata/local_codon_tree_audit_plan_20260927.json": "e8f73663d8f571f4863c94764b0a0d3d4a52997787c2353a2ac1b0e0d831f4a4",
+    "metadata/local_codon_tree_information_20260927.tsv": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4",
+    "metadata/codon_tree_comparison_identity_check_20260927.json": "4d453151fb09f9ef6cd04fb3745669217a9991961a00b67810cd58aad7855198",
+    "results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv": "c07f3ff318d83f974e168a581f48e0dd8bf8badc8d3698ba9d5deb236f3d1c2f",
+    "results/phylogeny/genus-codon-trees-v1/receipt.json": "c4dd749d4e7ae02dbbebf0f4a92890e1ca59bf1e1a3c9b47658af7eebdc26eda",
+    "results/phylogeny/genus-codon-tree-audit-full-v1/receipt.json": "fe8587e1644dbd2c34eaee886481c54f16b7fa0199e41e1346894a61c8e1ea38"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gb": 1,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "cost": "Existing local CPU host; no GPU or paid resources"
+  }
+}

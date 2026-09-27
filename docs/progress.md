@@ -6944,3 +6944,17 @@ by PID, creation time and command. Their completion receipts were not yet
 present; they were neither restarted nor reported complete. The tree audit is
 queued, not complete. All eight scientific aims remain open, and GPU prediction
 remains paused.
+## September 27 full alignment/tree sensitivity comparison queued
+
+The previous turn queued the full local-tree audit. This turn implemented
+case-, split- and taxon-pair comparisons that require both complete audits,
+preserve every case disposition, and compare exactly matched taxa. Synthetic
+checks passed, and a full original-versus-itself execution returned zero
+differences for all 1,655 fitted cases, 40,935 pair distances and 18,407 branches.
+The comparison controller was launched behind the verified live audit process;
+the tree producer was also verified live and had 213 completed case receipts
+at the check. No actual local-versus-original result is claimed yet.
+
+Next steps remain independent comparison readback and alignment-dependent
+codon model adequacy. All eight scientific aims remain open. GPU prediction
+remains paused; current work uses existing CPU resources.

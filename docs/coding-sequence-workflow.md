@@ -1278,3 +1278,41 @@ Plan and live identity are recorded in
 `results/phylogeny/local-codon-tree-audit-20260927-v1`, with a separate controller
 receipt under `results/cds/local-codon-tree-audit-handoff-20260927-v1`.
 Queuing the audit does not establish that production or verification is complete.
+## Alignment-dependent tree comparison prepared and queued
+
+`scripts/compare_codon_alignment_trees.py` compares the original and local
+supported nucleotide trees only after both complete tree audits pass. It
+preserves the full 1,712-case ledger, with expected dispositions of 1,625
+matched cases, 30 original-only cases (29 FCS exclusions and one information
+failure), seven local-only cases, and 50 cases fitted under neither alignment.
+Matched comparisons require exactly identical taxon sets.
+
+For each matched case it records unrooted internal split overlap, RF distance
+and RF divided by `2 * (taxa - 3)`, nucleotide tree-length changes, and all
+taxon-pair path-length changes. A split-level table retains terminal and
+internal edges, branch lengths, and SH-aLRT/UFB labels. Support and edge-length
+deltas are computed only for shared splits; missing splits are not assigned
+zero length. Inferred zero-length edges remain explicit resolutions rather
+than being silently collapsed. Historical flags, copy caveats and alignment
+retention accompany case summaries. Likelihoods from different alignment
+columns are not compared, and these descriptive differences are not
+independent samples, homology validation, or selection evidence.
+
+`scripts/check_codon_alignment_tree_comparison.py` checks alternate orientations
+of the same unrooted tree, a conflicting quartet, zero-length edges, branch
+path sums against Bio.Phylo's direct distances, and invalid tip/root/length
+inputs. A full original-versus-itself execution additionally checked all
+1,655 audited original fits: 40,935 pair rows and 18,407 edge rows had exact zero
+differences, with all splits shared. Evidence is recorded in
+`metadata/codon_tree_comparison_identity_check_20260927.json`; the self-check
+output is `results/cds/codon-tree-comparison-identity-check-20260927-v1`.
+This validates the identity behavior, not the pending local comparison.
+
+`scripts/advance_codon_tree_comparison.py` now waits for the identified local
+audit controller and its successful full receipt before producing
+`results/cds/codon-alignment-tree-comparison-20260927-v1`. The pinned plan and
+live identity are `metadata/codon_tree_comparison_plan_20260927.json` and
+`metadata/codon_tree_comparison_launch_20260927.json`. The controller has one
+CPU/8 GiB RAM, no swap, 1 GB planned output and a 0.01–2 hour planning allowance
+after auditing. No GPU or paid resources are used. The actual comparison and
+its independent full output readback remain pending.
