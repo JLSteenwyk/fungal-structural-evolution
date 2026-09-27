@@ -1,0 +1,48 @@
+{
+  "status": "complete_verified_whole_protein_order_sensitivity_figure",
+  "terminal_states": {
+    "fungal-primary-order-sensitivity-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-order-sensitivity-readback-20260927-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-order-figure-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_receipt_sha256": "e72815b73d55b2f64c0647e5be927452830f9eb887ab8a5e85057b5a69a1ce7d",
+  "plan_sha256": "7d49f91838c089fcc083ce23538be935e11842f78d9fe956a544eb4001cb5cbb",
+  "source_hashes": {
+    "results/structural_comparisons/primary-order-sensitivity-20260927-v1/receipt.json": "20ba8aa69847360159425b7525974b04368e9047ea4d2c9e676f09cd12c25c8f",
+    "metadata/primary_order_sensitivity_readback_20260927_v2.json": "2d6b1487fb9f00acc702fdc8467f7c6d1c5e63b0f5e206e044a71878e8b8f462",
+    "results/structural_comparisons/duplication-reference-order-sensitivity-20260927-v1/receipt.json": "21fed26cc2acdef2c8516f0fa8258755634c601e672663af186393d99ee544d1",
+    "metadata/duplication_reference_order_sensitivity_readback_20260927.json": "a3fbf54878d40a51e002f69a9d8de6c91d358ca43952d73c07449a12eacadd07"
+  },
+  "artifacts": {
+    "all_metric_quantiles.tsv": "dd8b8d42c4a9d59e6b86f27bb3f077f03c666b0437596a0fee87bb4e8cb58035",
+    "order_sensitivity.pdf": "aa96644b4a0bfb3f6103725d9939331e7cb7a3a554a5b088937b98f0e52e28ff",
+    "order_sensitivity.png": "c9e28478c7221bb5e720d93196bf29f9309da6452d98fd2eae46465af6d8681f",
+    "mapping_summary.tsv": "5cc44773a001d2ed39de421cf5fe1af77432ec2c29474665913cc0827bc7df0b",
+    "order_sensitivity.svg": "bd439893cd103a3a7e6407937df99b5f4b4372914c4e4438076f8a84255a00af"
+  },
+  "published_copies": {
+    "docs/figures/whole_protein_order_sensitivity_20260927.png": "c9e28478c7221bb5e720d93196bf29f9309da6452d98fd2eae46465af6d8681f",
+    "docs/figures/whole_protein_order_sensitivity_20260927.pdf": "aa96644b4a0bfb3f6103725d9939331e7cb7a3a554a5b088937b98f0e52e28ff",
+    "docs/figures/whole_protein_order_sensitivity_20260927.svg": "bd439893cd103a3a7e6407937df99b5f4b4372914c4e4438076f8a84255a00af"
+  },
+  "visual_review": {
+    "png_sha256": "c9e28478c7221bb5e720d93196bf29f9309da6452d98fd2eae46465af6d8681f",
+    "review": "PNG viewed: axes, legends, denominators, conditional ECDF labels and scope caption readable; no overlap or clipping observed."
+  },
+  "primary_pair_mask_comparisons": 193642,
+  "primary_native_mappings_checked": 387284,
+  "reference_pair_mask_comparisons": 62887,
+  "scope": "Descriptive primary/reference comparison. Same pairs across masks within each group; groups are not matched to each other. Panel A retains all common-mask pairs; B/C explicitly condition on changed mappings. Repeated/phylogenetically dependent pairs are not independent observations. No confidence interval, test or biological effect estimated."
+}

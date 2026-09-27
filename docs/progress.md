@@ -8275,3 +8275,20 @@ It uses one CPU, 4 GiB, no swap, under 0.1 GiB output and 1–10 minutes after a
 Script: `plot_whole_protein_order_sensitivity.py`; plan/process identity:
 `metadata/whole_protein_order_figure_{plan,launch}_20260927.json`. Full execution
 and visual review remain pending.
+
+### September 27: full mapping sensitivity verified and figure reviewed
+
+The corrected primary checker terminated successfully after all 193,642 pair/mask
+comparisons, 387,284 native mappings and 27 quantile rows passed. The figure job
+then completed with source hashes, exact cohort membership and every table value
+checked. Visual review found readable labels, denominators and conditional ECDF
+captions without overlap/clipping; PNG/PDF/SVG copies in docs match source hashes.
+
+Within the common pair cohorts, primary mapping changes occur in 45/90,442 full
+and 231/90,442 masked comparisons; reference counts are 15/30,346 and 59/30,346.
+Ninety-ninth-percentile RMSD differences are below 9e-15 Å, while rare maxima range
+from 1.0165 to 2.6080 Å. Both orders remain preserved. These describe alignment
+sensitivity, not a tested biological effect. See
+[figure and interpretation](whole-protein-order-sensitivity-20260927.md).
+Full corrected readback and figure completion records are versioned in metadata;
+large pair tables remain outside Git. The original failed checker remains intact.
