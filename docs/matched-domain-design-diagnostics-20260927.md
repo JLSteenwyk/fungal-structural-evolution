@@ -51,7 +51,15 @@ Expected proof: `metadata/matched_domain_design_readback_20260927.json`.
 Both jobs use one CPU, 12 GiB memory, no swap and no GPU. Planning allowance is
 0.1–2 hours per compute stage, with at most 1 GiB output each.
 
-At launch the full diagnostics and independent readback are pending. They do
-not provide a fitted phylogenetic effect, confidence interval, selection test
-or causal duplication inference. Phylogenetic covariance and shared-control
-dependence must still be specified and validated in the inferential model.
+The full diagnostics and independent readback have now completed successfully.
+All 82,944 designs are full rank after constant-column removal. The confidence
+difference is constant in 41,472 designs; the other three covariates vary in
+every design. Zero lies within each marginal range in every design, which does
+not establish joint support. The independent singular values agree within
+5.33e-15. Every source pin and output hash was rechecked after both services
+terminated successfully; completion proof is
+`metadata/matched_domain_design_completed_20260927.json`.
+
+These diagnostics do not provide a fitted phylogenetic effect, confidence
+interval, selection test or causal duplication inference. Phylogenetic and
+shared-control covariance assumptions still require inferential validation.

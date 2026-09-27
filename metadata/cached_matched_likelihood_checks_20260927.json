@@ -1,0 +1,78 @@
+{
+  "status": "passed_cached_matched_likelihood_reference_checks",
+  "boundary_factor_cases": 81,
+  "cancellation_fallback_cases": 1,
+  "maximum_objective_error": 8.728306966077071e-11,
+  "maximum_coefficient_error": 1.1286499512763726e-11,
+  "full_size_timing": [
+    {
+      "records": 148,
+      "backgrounds": 120,
+      "families": 44,
+      "preparation_seconds": 0.005286959989462048,
+      "cached_seconds": [
+        0.0025361519947182387,
+        0.0021564129856415093,
+        0.002136172988684848,
+        0.0021655669843312353,
+        0.0021467780170496553
+      ],
+      "direct_seconds": [
+        0.003833987982943654,
+        0.0036446989979594946,
+        0.0036771890008822083,
+        0.0036321300140116364,
+        0.0036021150008309633
+      ],
+      "median_speedup": 1.6901674318545417
+    },
+    {
+      "records": 2320,
+      "backgrounds": 1500,
+      "families": 400,
+      "preparation_seconds": 0.032119102019350976,
+      "cached_seconds": [
+        0.004148135980358347,
+        0.006055078993085772,
+        0.00609661199268885,
+        0.006067638023523614,
+        0.0061609100084751844
+      ],
+      "direct_seconds": [
+        0.034774225001456216,
+        0.03565827099373564,
+        0.038710338005330414,
+        0.035445957008050755,
+        0.0369922719837632
+      ],
+      "median_speedup": 5.876796021036878
+    },
+    {
+      "records": 10963,
+      "backgrounds": 6478,
+      "families": 1634,
+      "preparation_seconds": 0.12015279699699022,
+      "cached_seconds": [
+        0.014200150006217882,
+        0.013653558009536937,
+        0.014509161002933979,
+        0.014074770006118342,
+        0.013546375004807487
+      ],
+      "direct_seconds": [
+        0.15615887701278552,
+        0.15905074999318458,
+        0.15528121101669967,
+        0.15490366599988192,
+        0.15321038899128325
+      ],
+      "median_speedup": 11.032593140008576
+    }
+  ],
+  "pins": {
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_cached_matched_likelihood.py": "5414778374a80a6da5e5b2d249c3b88e05af456285276093164cb8b3d9ac9185"
+  },
+  "scope": "Full zero/high-ratio component grid and empty/duplicated species factors compared with checked direct evaluator; cancellation fixture must use direct residual fallback. Full-size synthetic timings include five paired repeats and separate setup. No model fit, optimizer equivalence, biological subsampling or full-grid ETA."
+}

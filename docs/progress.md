@@ -7701,3 +7701,23 @@ are not convergence bounds or an ETA for real data. Evidence now supports
 caching invariant grouped sufficient statistics before full fitting, with
 exact-equivalence checks against the existing evaluator. The full covariate
 design readback also remains active. All eight aims remain open; GPU paused.
+
+## September 27 cached likelihood and full design verification completed
+
+The previous goal turn completed the full-size runtime measurements (progress).
+Implemented a separate cached sufficient-statistic evaluator without changing
+the existing pinned optimizer. Eighty-one zero/moderate/extreme variance and
+factor cases agree with the direct evaluator; maximum likelihood discrepancy
+is below 9e-11. A cancellation-sensitive case uses the direct residual fallback
+and reproduces it exactly. Five paired full-size comparisons per size show
+substantial evaluation speedups at the larger sizes; setup is recorded
+separately. [Cached computation](cached-matched-likelihood-20260927.md).
+Optimizer integration/equivalence, full data fitting and adequacy remain open.
+
+Full independent design readback passed all 82,944 strata, and both services
+are authoritatively inactive with exit zero. Every source pin and output hash
+was rechecked. All designs are full rank after explicit constant removal;
+41,472 confidence-difference columns are constant. The fitting-input inventory
+producer has also completed, reporting 28,808 unique record inputs and 144,040
+five-tree fits; its independent SQL readback remains active, so exact reuse is
+not yet promoted for production. All eight aims remain open. GPU paused.
