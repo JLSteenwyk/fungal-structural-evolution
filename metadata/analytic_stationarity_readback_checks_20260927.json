@@ -1,0 +1,19 @@
+{
+  "status": "passed_analytic_stationarity_readback_boundary_and_rejection_checks",
+  "valid_cases": 5,
+  "rejected_corruptions": [
+    "wrong_boundary_projection",
+    "lost_upper_bound_flag",
+    "false_clearance",
+    "changed_original_flag",
+    "threshold_mismatch",
+    "nonfinite_derivative",
+    "missing_dimension",
+    "changed_original_status",
+    "unknown_assessment",
+    "lost_original_fit_error"
+  ],
+  "checker_sha256": "308acdbe2148a66ddcd4b5f87bf1cfd27f2120ab69819fe1693fae2bdf31a271",
+  "script_sha256": "59d9d70aaea4b1a95e75f16ae86a6bfe73c415fda3243dac0d5b889a81ae00d2",
+  "scope": "Scalar row checks only; full-grid accounting remains pending the production and analytic assessment."
+}

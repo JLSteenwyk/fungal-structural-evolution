@@ -1,0 +1,23 @@
+{
+  "assessment_plan": "metadata/full_working_model_analytic_stationarity_plan_20260927.json",
+  "launch": "metadata/full_working_model_analytic_stationarity_launch_20260927.json",
+  "output": "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_assessment": [
+      0.1,
+      6
+    ]
+  },
+  "pins": {
+    "scripts/readback_full_analytic_stationarity.py": "308acdbe2148a66ddcd4b5f87bf1cfd27f2120ab69819fe1693fae2bdf31a271",
+    "scripts/check_analytic_stationarity_readback.py": "59d9d70aaea4b1a95e75f16ae86a6bfe73c415fda3243dac0d5b889a81ae00d2",
+    "metadata/analytic_stationarity_readback_checks_20260927.json": "5d9b3ed4fb03f94f131223689aa8dfc36b1f39a4695107253d0c483854531fb2",
+    "metadata/full_working_model_analytic_stationarity_plan_20260927.json": "d6ae934b69eb2846b08785b41550742519ec21850cbd2aae8bb7af1c5de611d3",
+    "metadata/full_working_model_analytic_stationarity_launch_20260927.json": "fae895d3d3298982a23f7b4d6a6dffae3683938e081089cc3148bb3fa1388a69"
+  },
+  "scope": "All 144040 expected dispositions; checksum/source checks and independent scalar boundary/flag arithmetic; preserve every remaining error/review case. Does not recalculate the likelihood gradient or establish biological inference."
+}
