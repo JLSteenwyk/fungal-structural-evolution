@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-indel-coding-20260927.service",
+  "state": {
+    "MainPID": "543075",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 543075,
+  "created": 1790548992.12,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/encode_ancestral_indels.py"
+  ],
+  "plan_sha256": "13b11521cc9b88cbfbdc2734193fbde30b47cbdcbcff49b21c04b59439ea67b8",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  }
+}

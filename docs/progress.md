@@ -9035,3 +9035,18 @@ be checked before inference. No indel result or final ancestral sequence yet.
 The FastML indel-tool build subsequently terminated successfully; both binary
 hashes verified. Closure: `metadata/fastml_indel_build_completed_20260927.json`.
 Functional/capacity validation and indel inference remain pending.
+
+### 2026-09-27: whole-protein model audit passed; full indel coding running
+
+All78 whole-protein fits independently checked; likelihood replay maximum
+error3.46471e-5, with X handling verified. Started156 SIC gap encodings across
+all78 alignments and two terminal policies. The622-protein case passes full
+cell/coordinate verification under both policies, establishing local coding
+capacity without taxon reduction. Complete encoding and ancestral indel
+inference remain pending.
+
+All156 indel encodings subsequently completed:12,957 character records and
+4,042,247 coded cells independently verified, maximum622 proteins. All156
+job receipts and artifacts checked after successful termination. Closure:
+`metadata/ancestral_indel_coding_completed_20260927.json`. These are encoded
+gap characters, not inferred historical indel events or ancestral sequences.

@@ -1,0 +1,33 @@
+{
+  "status": "complete_78_whole_protein_reports_and_independent_likelihoods",
+  "maximum_likelihood_replay_error": 3.464706242084503e-05,
+  "audit_plan_sha256": "f96df513f9741b8e77ca654259375b1e44003b34375a14143375f1efa8ae002f",
+  "fits": 78,
+  "warning_lines": 750,
+  "fits_with_warning_lines": 78,
+  "fits_with_edges_below_1e_5": 63,
+  "source_receipt_path": "results/ancestral/whole-protein-model-fits-20260927-v1/receipt.json",
+  "source_receipt_sha256": "e3c7a124c609826bede0417ecfa917e45059d7535a65d56751f8b6ae23eb8b81",
+  "plan_sha256": "784f070559198f686ec137d75995167d7572ea668fcc486e1c95bae19e008b14",
+  "script_sha256": "467b98a92d33234928debdbb0c2b7be96684887a8ba0cddc806fb98d89ebcd18",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "All 78 whole-protein model labels, tip sets, unrooted edge sets, checkpoint/report likelihood agreement, checkpoint/tree branch lengths, version-specific eight-iteration empirical frequencies, gamma-category means and AIC/BIC arithmetic checked. Warnings and short edges retained. Independent scaled-pruning likelihood replay checked for all78, with X and gaps treated as unknown evidence and included in frequency iteration. Agreement is not a proof of global convergence or model adequacy; whole-protein ancestral probabilities remain pending.",
+  "completed_receipt_path": "results/ancestral/whole-protein-model-readback-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "1b89f6caa5093b9c80976d1d9f676a5d6f6b4a266b5b74797d3d1f05cb3c4ac1",
+  "terminal_states": {
+    "fungal-ancestral-whole-model-fits-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-ancestral-whole-model-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

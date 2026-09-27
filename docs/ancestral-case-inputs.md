@@ -970,3 +970,46 @@ See `docs/bibliography.md` for primary methods/source references.
 The FastML indel-tool build subsequently terminated successfully; both binary
 hashes verified. Closure: `metadata/fastml_indel_build_completed_20260927.json`.
 Functional/capacity validation and indel inference remain pending.
+
+## Whole-protein models independently checked
+
+All78 whole-protein fits and their full report/checkpoint audit terminated
+successfully. Independent likelihood replay passed throughout, maximum
+absolute error3.46471e-5 log units, including correct X/unknown-state handling.
+All artifact hashes were checked. Sixty-three fits have edges shorter than
+1e-5; warnings remain recorded and are not synonymous with failed fits.
+Completion: `metadata/ancestral_whole_model_audit_completed_20260927.json`.
+Whole-protein alternate-start stability, ancestral node mapping and
+probabilities remain unfinished.
+
+## Complete indel coding underway
+
+Started SIC coding of all78 whole/domain alignments under both explicit
+terminal-gap policies (156 encodings). Synthetic tests cover exact, nested,
+partially overlapping, terminal and unknown-flanked gap characters before
+production. A separate Python implementation independently reconstructs every
+character interval and every0/1/? matrix cell from the source alignment.
+Coordinates are exported as1-based inclusive start/end with original
+0-based half-open tool output verified.
+
+The622-protein whole MAFFT alignment has completed both policies with every
+cell verified (1,516 characters with terminal gaps included;1,354 with terminal
+gaps unknown). This demonstrates local indelCoder capacity for that full case;
+it does not establish gainLoss inference capacity or accuracy. The complete
+156-encoding run remains active. Here1 means an exact coded gap,0 means the
+absence of that exact gap under SIC, and? denotes a containing gap or qualifying
+unknown span/flank. A partial overlap may be0; this is not a direct binary
+residue-presence matrix. Dependent overlapping characters cannot simply be
+counted as independent insertion/deletion events.
+
+Run `python scripts/encode_ancestral_indels.py`; plan/launch metadata use
+`ancestral_indel_coding_`, date `20260927`. Output:
+`results/ancestral/indel-coding-20260927-v1/`. One CPU,4GiB RAM,no swap/GPU;
+estimate0.1–4 hours,2GiB output. Ancestral gap histories and final sequences
+remain pending.
+
+All156 indel encodings subsequently completed:12,957 character records and
+4,042,247 coded cells independently verified, maximum622 proteins. All156
+job receipts and artifacts checked after successful termination. Closure:
+`metadata/ancestral_indel_coding_completed_20260927.json`. These are encoded
+gap characters, not inferred historical indel events or ancestral sequences.

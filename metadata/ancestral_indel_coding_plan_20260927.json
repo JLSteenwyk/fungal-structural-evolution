@@ -1,0 +1,805 @@
+{
+  "binary": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-3.11/source/FastML.v3.11/programs/indelCoder/indelCoder",
+  "jobs": [
+    {
+      "input_id": "OG0000054-whole-mafft",
+      "family": "OG0000054",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000054-mafft/alignment.faa",
+      "alignment_sha256": "d4cb794089f1b8bcc51275cea442d6f458eb047d135a33a9b5b8599d150d6e3d",
+      "proteins": 11,
+      "columns": 255
+    },
+    {
+      "input_id": "OG0000054-whole-famsa",
+      "family": "OG0000054",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000054-famsa/alignment.faa",
+      "alignment_sha256": "a91d84af92571e27adee7655f80b4714094a61337a77780999d5cd2db46c323c",
+      "proteins": 11,
+      "columns": 255
+    },
+    {
+      "input_id": "OG0000095-whole-mafft",
+      "family": "OG0000095",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000095-mafft/alignment.faa",
+      "alignment_sha256": "a3aa4a570f13d56d264a8ca647f0f5bec142b6530ba6867a22435a4b86c898bf",
+      "proteins": 83,
+      "columns": 1009
+    },
+    {
+      "input_id": "OG0000095-whole-famsa",
+      "family": "OG0000095",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000095-famsa/alignment.faa",
+      "alignment_sha256": "f50fa1577e546d739d7c80860c36c483e629184198a6d89a245b4c1e8dce4ab0",
+      "proteins": 83,
+      "columns": 1077
+    },
+    {
+      "input_id": "OG0000107-whole-mafft",
+      "family": "OG0000107",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000107-mafft/alignment.faa",
+      "alignment_sha256": "ecf74c5ca8a50d645c909262f96932af4a37d7065377b8b622aebc9874dadefb",
+      "proteins": 9,
+      "columns": 1018
+    },
+    {
+      "input_id": "OG0000107-whole-famsa",
+      "family": "OG0000107",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000107-famsa/alignment.faa",
+      "alignment_sha256": "527a9d730a3f7c3d416a138eaaf0b09d41f2843603aecc806dd29d3bfc90deed",
+      "proteins": 9,
+      "columns": 1008
+    },
+    {
+      "input_id": "OG0000152-whole-mafft",
+      "family": "OG0000152",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000152-mafft/alignment.faa",
+      "alignment_sha256": "3c622de332ae8f0db8cfec135c8b61706d801b55e588fd2f55b3c721206f252c",
+      "proteins": 7,
+      "columns": 508
+    },
+    {
+      "input_id": "OG0000152-whole-famsa",
+      "family": "OG0000152",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000152-famsa/alignment.faa",
+      "alignment_sha256": "0341e75bbeeb34efa02403cef70dacbb831e34b4465bf2c5e9f00f1fb61c9e05",
+      "proteins": 7,
+      "columns": 509
+    },
+    {
+      "input_id": "OG0000230-whole-mafft",
+      "family": "OG0000230",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000230-mafft/alignment.faa",
+      "alignment_sha256": "2c5af62ddfb394914503ad4c04672a0456e2c31120f5f88002b639fc5b9446cd",
+      "proteins": 24,
+      "columns": 791
+    },
+    {
+      "input_id": "OG0000230-whole-famsa",
+      "family": "OG0000230",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000230-famsa/alignment.faa",
+      "alignment_sha256": "83c973b1c4a57fba92dca6974ac3374f68c24c8c321316f05b125bb41279fbc6",
+      "proteins": 24,
+      "columns": 789
+    },
+    {
+      "input_id": "OG0000294-whole-mafft",
+      "family": "OG0000294",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000294-mafft/alignment.faa",
+      "alignment_sha256": "2b96c643a375d5d3db464dd3b0e25dca4ffab75b80578c86e8b2b9ad2e131343",
+      "proteins": 9,
+      "columns": 1091
+    },
+    {
+      "input_id": "OG0000294-whole-famsa",
+      "family": "OG0000294",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000294-famsa/alignment.faa",
+      "alignment_sha256": "3ede2692329c559b4b7448bff17b09d131cbf255899915d037ed798eb6decfb2",
+      "proteins": 9,
+      "columns": 1091
+    },
+    {
+      "input_id": "OG0000336-whole-mafft",
+      "family": "OG0000336",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000336-mafft/alignment.faa",
+      "alignment_sha256": "02429f7b7a15f963f8744e4e70a90638b09907de58e685ec5742d52347aa3be0",
+      "proteins": 10,
+      "columns": 559
+    },
+    {
+      "input_id": "OG0000336-whole-famsa",
+      "family": "OG0000336",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000336-famsa/alignment.faa",
+      "alignment_sha256": "60e9e46750bdfad5bcc79085a88dd56f13c4dc246c6b62988e7e884be50e7c8f",
+      "proteins": 10,
+      "columns": 545
+    },
+    {
+      "input_id": "OG0000972-whole-mafft",
+      "family": "OG0000972",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000972-mafft/alignment.faa",
+      "alignment_sha256": "89ddf73911e7b58c96aeca976240d2a5dfb723a86cd875e13d35104cc06e86e9",
+      "proteins": 622,
+      "columns": 2818
+    },
+    {
+      "input_id": "OG0000972-whole-famsa",
+      "family": "OG0000972",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000972-famsa/alignment.faa",
+      "alignment_sha256": "d861afe082bac82d918b951273922c87a2975bb9b8cecad6a8541d2799f5cf1f",
+      "proteins": 622,
+      "columns": 2212
+    },
+    {
+      "input_id": "OG0001082-whole-mafft",
+      "family": "OG0001082",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001082-mafft/alignment.faa",
+      "alignment_sha256": "c49255e07d53e5c921f36ef9ac8a76ddba7be9df6081f30b540f6a0653aa7b1d",
+      "proteins": 111,
+      "columns": 1752
+    },
+    {
+      "input_id": "OG0001082-whole-famsa",
+      "family": "OG0001082",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001082-famsa/alignment.faa",
+      "alignment_sha256": "de5748285aa90d9955512ad685ceb1942d3c2d343b05b555ffffb8f8e51b8bef",
+      "proteins": 111,
+      "columns": 1851
+    },
+    {
+      "input_id": "OG0001200-whole-mafft",
+      "family": "OG0001200",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001200-mafft/alignment.faa",
+      "alignment_sha256": "be2a958f09acb181b54484cae27b415ef9867ff8065ef458436efcbd01698660",
+      "proteins": 29,
+      "columns": 651
+    },
+    {
+      "input_id": "OG0001200-whole-famsa",
+      "family": "OG0001200",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001200-famsa/alignment.faa",
+      "alignment_sha256": "a02bb7ba19b1fc567ef93e28001fa61757ae1920f024b6eaa67e4d2abf08757a",
+      "proteins": 29,
+      "columns": 644
+    },
+    {
+      "input_id": "OG0001203-whole-mafft",
+      "family": "OG0001203",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001203-mafft/alignment.faa",
+      "alignment_sha256": "fbe389476006cb60402aeced60d634c362a77af981644217d7ec50d56521ff39",
+      "proteins": 21,
+      "columns": 396
+    },
+    {
+      "input_id": "OG0001203-whole-famsa",
+      "family": "OG0001203",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0001203-famsa/alignment.faa",
+      "alignment_sha256": "d52e2e98410cadacbc2b4cf6594c9f639070b8da5111524f31831b781861a35d",
+      "proteins": 21,
+      "columns": 381
+    },
+    {
+      "input_id": "OG0002650-whole-mafft",
+      "family": "OG0002650",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0002650-mafft/alignment.faa",
+      "alignment_sha256": "f5dbdbe7e6929f07680a2f1248876c1af26804bf9e64f8d0fc6e8a9acb38715f",
+      "proteins": 77,
+      "columns": 686
+    },
+    {
+      "input_id": "OG0002650-whole-famsa",
+      "family": "OG0002650",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0002650-famsa/alignment.faa",
+      "alignment_sha256": "3d7c17a61eff654c340dfda6e5614c6023212ce3eb193a7cfab28bc83b496fbc",
+      "proteins": 77,
+      "columns": 634
+    },
+    {
+      "input_id": "OG0002812-whole-mafft",
+      "family": "OG0002812",
+      "boundary": "whole",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0002812-mafft/alignment.faa",
+      "alignment_sha256": "887167cc2e0a5d4de7e5455baed70070fdee2ee5690e1b30cc66dfcd4c90239b",
+      "proteins": 12,
+      "columns": 830
+    },
+    {
+      "input_id": "OG0002812-whole-famsa",
+      "family": "OG0002812",
+      "boundary": "whole",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0002812-famsa/alignment.faa",
+      "alignment_sha256": "794c676570e360212ff10733402db987f7d73afd8959ce0b20960535705fce38",
+      "proteins": 12,
+      "columns": 831
+    },
+    {
+      "input_id": "OG0000054-alignment-mafft",
+      "family": "OG0000054",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000054-alignment-mafft/alignment.faa",
+      "alignment_sha256": "5e0e14a540a39d9de8211a3c3d4f5ae701b997807f6fe83be3067083ec01c70f",
+      "proteins": 11,
+      "columns": 90
+    },
+    {
+      "input_id": "OG0000054-alignment-famsa",
+      "family": "OG0000054",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000054-alignment-famsa/alignment.faa",
+      "alignment_sha256": "c9b35e8b7a0cbb055ebf9b279cb0813dab58494a63c2499d746f4e651e02f3ec",
+      "proteins": 11,
+      "columns": 90
+    },
+    {
+      "input_id": "OG0000054-envelope-mafft",
+      "family": "OG0000054",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000054-envelope-mafft/alignment.faa",
+      "alignment_sha256": "d76543ea1a4e5055ef9297c8f97a9c69c78ffbe8b7619435078bcc1d2909b874",
+      "proteins": 11,
+      "columns": 95
+    },
+    {
+      "input_id": "OG0000054-envelope-famsa",
+      "family": "OG0000054",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000054-envelope-famsa/alignment.faa",
+      "alignment_sha256": "a4a7d3863f1ccefc111b95ba8bc3792abe2015125de22454b0765cd2c42a3f44",
+      "proteins": 11,
+      "columns": 95
+    },
+    {
+      "input_id": "OG0000095-alignment-mafft",
+      "family": "OG0000095",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000095-alignment-mafft/alignment.faa",
+      "alignment_sha256": "cf479eefb69770bec7c75e3b3c2346ed15a1060550feccde41c2bfd84a5ae953",
+      "proteins": 83,
+      "columns": 147
+    },
+    {
+      "input_id": "OG0000095-alignment-famsa",
+      "family": "OG0000095",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000095-alignment-famsa/alignment.faa",
+      "alignment_sha256": "9f065e5ff04fe5582d8bc73214c9ea0c69ede4b6acd7425518e761bdb14d4089",
+      "proteins": 83,
+      "columns": 160
+    },
+    {
+      "input_id": "OG0000095-envelope-mafft",
+      "family": "OG0000095",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000095-envelope-mafft/alignment.faa",
+      "alignment_sha256": "40a83b41dedd3efb97490d4516475a39a39c30487c11572ab17564afd2b22fa4",
+      "proteins": 83,
+      "columns": 151
+    },
+    {
+      "input_id": "OG0000095-envelope-famsa",
+      "family": "OG0000095",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000095-envelope-famsa/alignment.faa",
+      "alignment_sha256": "d65436e1b64c8071218915cf596421c30ff64b04874678f6825557524d01e220",
+      "proteins": 83,
+      "columns": 161
+    },
+    {
+      "input_id": "OG0000107-alignment-mafft",
+      "family": "OG0000107",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000107-alignment-mafft/alignment.faa",
+      "alignment_sha256": "d2f4fdedf04cb3fe256477756ac4fea181d30f153549332c04595d6eb19e6047",
+      "proteins": 9,
+      "columns": 112
+    },
+    {
+      "input_id": "OG0000107-alignment-famsa",
+      "family": "OG0000107",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000107-alignment-famsa/alignment.faa",
+      "alignment_sha256": "01a1fb14170d2f8c5858d06ec5db75e1907a2ccd1ed69d70c9d19098a34cbf52",
+      "proteins": 9,
+      "columns": 112
+    },
+    {
+      "input_id": "OG0000107-envelope-mafft",
+      "family": "OG0000107",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000107-envelope-mafft/alignment.faa",
+      "alignment_sha256": "e332ff1143b058dab8b97ea5e819d40cf259cc37db13095e99fc207f61060598",
+      "proteins": 9,
+      "columns": 112
+    },
+    {
+      "input_id": "OG0000107-envelope-famsa",
+      "family": "OG0000107",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000107-envelope-famsa/alignment.faa",
+      "alignment_sha256": "6b0bd940123eeb35468b816a7645de19da3c67fee6a9c61751577e506ae81459",
+      "proteins": 9,
+      "columns": 112
+    },
+    {
+      "input_id": "OG0000152-alignment-mafft",
+      "family": "OG0000152",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000152-alignment-mafft/alignment.faa",
+      "alignment_sha256": "b240e005d92f0d0ee824653cedd0b400fa70ce3f5d7c93837d622c08cf631072",
+      "proteins": 6,
+      "columns": 130
+    },
+    {
+      "input_id": "OG0000152-alignment-famsa",
+      "family": "OG0000152",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000152-alignment-famsa/alignment.faa",
+      "alignment_sha256": "b240e005d92f0d0ee824653cedd0b400fa70ce3f5d7c93837d622c08cf631072",
+      "proteins": 6,
+      "columns": 130
+    },
+    {
+      "input_id": "OG0000152-envelope-mafft",
+      "family": "OG0000152",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000152-envelope-mafft/alignment.faa",
+      "alignment_sha256": "d717b93ba4bb5ed994bb30132d9be1d71f2e01a7802c1bf16d54c92df476b877",
+      "proteins": 6,
+      "columns": 133
+    },
+    {
+      "input_id": "OG0000152-envelope-famsa",
+      "family": "OG0000152",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000152-envelope-famsa/alignment.faa",
+      "alignment_sha256": "d717b93ba4bb5ed994bb30132d9be1d71f2e01a7802c1bf16d54c92df476b877",
+      "proteins": 6,
+      "columns": 133
+    },
+    {
+      "input_id": "OG0000230-alignment-mafft",
+      "family": "OG0000230",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000230-alignment-mafft/alignment.faa",
+      "alignment_sha256": "447840239b9c3161ba210ffbd836a4058cf40c30d4333814dfc364c63ef134ee",
+      "proteins": 24,
+      "columns": 125
+    },
+    {
+      "input_id": "OG0000230-alignment-famsa",
+      "family": "OG0000230",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000230-alignment-famsa/alignment.faa",
+      "alignment_sha256": "f89d27403ed646d7396d0412b38b4c2cc85bf2e4f9211a85b99d8293ccfb9d9b",
+      "proteins": 24,
+      "columns": 124
+    },
+    {
+      "input_id": "OG0000230-envelope-mafft",
+      "family": "OG0000230",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000230-envelope-mafft/alignment.faa",
+      "alignment_sha256": "de8e305653ac782dfca5d1795b28a0942d5956c72d09c9bd1ee9ad61d31e11c3",
+      "proteins": 24,
+      "columns": 125
+    },
+    {
+      "input_id": "OG0000230-envelope-famsa",
+      "family": "OG0000230",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000230-envelope-famsa/alignment.faa",
+      "alignment_sha256": "bde263903b77f04e5e16d3e5a2f35c336c3ae904e5dcb6e39040d025f15b7723",
+      "proteins": 24,
+      "columns": 124
+    },
+    {
+      "input_id": "OG0000294-alignment-mafft",
+      "family": "OG0000294",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000294-alignment-mafft/alignment.faa",
+      "alignment_sha256": "664ac340585d007facba2e9bc2423b8af6e6d0c9b3b878e99ce75f417c9e8fd2",
+      "proteins": 9,
+      "columns": 231
+    },
+    {
+      "input_id": "OG0000294-alignment-famsa",
+      "family": "OG0000294",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000294-alignment-famsa/alignment.faa",
+      "alignment_sha256": "664ac340585d007facba2e9bc2423b8af6e6d0c9b3b878e99ce75f417c9e8fd2",
+      "proteins": 9,
+      "columns": 231
+    },
+    {
+      "input_id": "OG0000294-envelope-mafft",
+      "family": "OG0000294",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000294-envelope-mafft/alignment.faa",
+      "alignment_sha256": "33c7b82e3921fdaaf593bab11289de1df7cd89cb1f6aef7b53dcc83563b3b1f8",
+      "proteins": 9,
+      "columns": 232
+    },
+    {
+      "input_id": "OG0000294-envelope-famsa",
+      "family": "OG0000294",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000294-envelope-famsa/alignment.faa",
+      "alignment_sha256": "fb36f87458f9d53a67c33e62fbf5c8db26feced772e60688aa2671be807c7aa7",
+      "proteins": 9,
+      "columns": 232
+    },
+    {
+      "input_id": "OG0000336-alignment-mafft",
+      "family": "OG0000336",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000336-alignment-mafft/alignment.faa",
+      "alignment_sha256": "214467162025e7d35257a7b7a2cb72c64679d773b71dafe49899b9ebd79cb438",
+      "proteins": 10,
+      "columns": 147
+    },
+    {
+      "input_id": "OG0000336-alignment-famsa",
+      "family": "OG0000336",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000336-alignment-famsa/alignment.faa",
+      "alignment_sha256": "d102a5d0c8b584ed20e71a19e27e7cef458cdf6480684158e56a4e6f7dbd1b91",
+      "proteins": 10,
+      "columns": 147
+    },
+    {
+      "input_id": "OG0000336-envelope-mafft",
+      "family": "OG0000336",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000336-envelope-mafft/alignment.faa",
+      "alignment_sha256": "773785a75d09ad959251a824304bef30ae997b296c7a7882b65242a562b33b8f",
+      "proteins": 10,
+      "columns": 148
+    },
+    {
+      "input_id": "OG0000336-envelope-famsa",
+      "family": "OG0000336",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000336-envelope-famsa/alignment.faa",
+      "alignment_sha256": "b10ddebe8ffd05be3defaa708064007d4ddb8f7f5d52f82fefce5cb63c95bd55",
+      "proteins": 10,
+      "columns": 148
+    },
+    {
+      "input_id": "OG0000972-alignment-mafft",
+      "family": "OG0000972",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000972-alignment-mafft/alignment.faa",
+      "alignment_sha256": "de1f1ef9eb4ce7a25f1ae3bcdb860708fe4e08ff6de23df767eaeab79c50ceb0",
+      "proteins": 563,
+      "columns": 397
+    },
+    {
+      "input_id": "OG0000972-alignment-famsa",
+      "family": "OG0000972",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000972-alignment-famsa/alignment.faa",
+      "alignment_sha256": "fec2c2164041d2226b758b66682aae1e0686d87f2a16dc9b696082b44acf0bcc",
+      "proteins": 563,
+      "columns": 392
+    },
+    {
+      "input_id": "OG0000972-envelope-mafft",
+      "family": "OG0000972",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000972-envelope-mafft/alignment.faa",
+      "alignment_sha256": "b131d4fa115e707815c0499f4f120b9334576a242b9f6a7b800dcbb928361d18",
+      "proteins": 563,
+      "columns": 453
+    },
+    {
+      "input_id": "OG0000972-envelope-famsa",
+      "family": "OG0000972",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0000972-envelope-famsa/alignment.faa",
+      "alignment_sha256": "8ce92701457b440cf27291f530be22cbcaf7b7e8504c81f4c307194554ab15b8",
+      "proteins": 563,
+      "columns": 443
+    },
+    {
+      "input_id": "OG0001082-alignment-mafft",
+      "family": "OG0001082",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001082-alignment-mafft/alignment.faa",
+      "alignment_sha256": "dd21fd3b0967eb0839d5a56ad92d4cf794f88955d1a1b94266df8997695ae08b",
+      "proteins": 85,
+      "columns": 105
+    },
+    {
+      "input_id": "OG0001082-alignment-famsa",
+      "family": "OG0001082",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001082-alignment-famsa/alignment.faa",
+      "alignment_sha256": "7e69f8619d907587124ea8f9602e9a79b439f055c257991033243521be0edf4a",
+      "proteins": 85,
+      "columns": 106
+    },
+    {
+      "input_id": "OG0001082-envelope-mafft",
+      "family": "OG0001082",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001082-envelope-mafft/alignment.faa",
+      "alignment_sha256": "9f10990eee9aa1bff50ca6fe0e94294eaa026a0ded640531bb83752ed84f5507",
+      "proteins": 85,
+      "columns": 114
+    },
+    {
+      "input_id": "OG0001082-envelope-famsa",
+      "family": "OG0001082",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001082-envelope-famsa/alignment.faa",
+      "alignment_sha256": "ba3b48739e85d5ea18747f924dbcc952390a4e22c823330749f61bb8800f5078",
+      "proteins": 85,
+      "columns": 117
+    },
+    {
+      "input_id": "OG0001200-alignment-mafft",
+      "family": "OG0001200",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001200-alignment-mafft/alignment.faa",
+      "alignment_sha256": "b3b3b99e786df4b8f88f58624ac4c94ea4e0f41f696403ba56d3f7514fcfdd7b",
+      "proteins": 13,
+      "columns": 168
+    },
+    {
+      "input_id": "OG0001200-alignment-famsa",
+      "family": "OG0001200",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001200-alignment-famsa/alignment.faa",
+      "alignment_sha256": "83b611460b9e4cacac7fe8de4df2959f6290438c2c499c82a58cf8f8eef46d70",
+      "proteins": 13,
+      "columns": 167
+    },
+    {
+      "input_id": "OG0001200-envelope-mafft",
+      "family": "OG0001200",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001200-envelope-mafft/alignment.faa",
+      "alignment_sha256": "e42ee7dd80ca7036f02ca8cc9e451971e8e59d597c8e995b17e969160f592826",
+      "proteins": 13,
+      "columns": 200
+    },
+    {
+      "input_id": "OG0001200-envelope-famsa",
+      "family": "OG0001200",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001200-envelope-famsa/alignment.faa",
+      "alignment_sha256": "36eb4f1330eab08430eb9b4d3d2663f191c8b54b5a54bdad9394cfe92167d3a1",
+      "proteins": 13,
+      "columns": 204
+    },
+    {
+      "input_id": "OG0001203-alignment-mafft",
+      "family": "OG0001203",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001203-alignment-mafft/alignment.faa",
+      "alignment_sha256": "32ef1ab4fbb5aaf761640604a90ed3bdcca6543dee5ce3cc8a07630cd1f6d386",
+      "proteins": 14,
+      "columns": 89
+    },
+    {
+      "input_id": "OG0001203-alignment-famsa",
+      "family": "OG0001203",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001203-alignment-famsa/alignment.faa",
+      "alignment_sha256": "cf669fe5a6b8a9494fb595845612e416a74adee9c37bff0c24a3abd29b18ae54",
+      "proteins": 14,
+      "columns": 90
+    },
+    {
+      "input_id": "OG0001203-envelope-mafft",
+      "family": "OG0001203",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001203-envelope-mafft/alignment.faa",
+      "alignment_sha256": "7bb805527bed74bc675f54d2b9d6dad063dabe8365d3867e92f0241af989fd4f",
+      "proteins": 14,
+      "columns": 94
+    },
+    {
+      "input_id": "OG0001203-envelope-famsa",
+      "family": "OG0001203",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0001203-envelope-famsa/alignment.faa",
+      "alignment_sha256": "171870f203a5f996b5626d9adf50c5e29d8fb82867683644b1596b9c616abbac",
+      "proteins": 14,
+      "columns": 95
+    },
+    {
+      "input_id": "OG0002650-alignment-mafft",
+      "family": "OG0002650",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002650-alignment-mafft/alignment.faa",
+      "alignment_sha256": "a0640893c3eb64cf02c4bc550cff5a5cacc3b8e986a8cc491ea228ea226cf2b1",
+      "proteins": 19,
+      "columns": 194
+    },
+    {
+      "input_id": "OG0002650-alignment-famsa",
+      "family": "OG0002650",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002650-alignment-famsa/alignment.faa",
+      "alignment_sha256": "9fc7f8b22169f93ba9e68b458556da7f29412dd663b5dbcdb33502cae19b33db",
+      "proteins": 19,
+      "columns": 192
+    },
+    {
+      "input_id": "OG0002650-envelope-mafft",
+      "family": "OG0002650",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002650-envelope-mafft/alignment.faa",
+      "alignment_sha256": "f052712e98d15f9ba3897ad9b950d8b5252a872b479dd99dd5ba0de736b07708",
+      "proteins": 19,
+      "columns": 218
+    },
+    {
+      "input_id": "OG0002650-envelope-famsa",
+      "family": "OG0002650",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002650-envelope-famsa/alignment.faa",
+      "alignment_sha256": "ac3aca8bdd7251f6660b8be7a22dfc11aa66e551ac592e169bc7b8bc8ddff21f",
+      "proteins": 19,
+      "columns": 216
+    },
+    {
+      "input_id": "OG0002812-alignment-mafft",
+      "family": "OG0002812",
+      "boundary": "alignment",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002812-alignment-mafft/alignment.faa",
+      "alignment_sha256": "90d09b41b875cf22927873ed9202b6ba7c6b70e557561c70a4fd07787bf4243c",
+      "proteins": 12,
+      "columns": 327
+    },
+    {
+      "input_id": "OG0002812-alignment-famsa",
+      "family": "OG0002812",
+      "boundary": "alignment",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002812-alignment-famsa/alignment.faa",
+      "alignment_sha256": "5059f8068e1eb44fa568832e6f4be6d21dc9feed9654f1747f26f4390522de8b",
+      "proteins": 12,
+      "columns": 328
+    },
+    {
+      "input_id": "OG0002812-envelope-mafft",
+      "family": "OG0002812",
+      "boundary": "envelope",
+      "method": "mafft",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002812-envelope-mafft/alignment.faa",
+      "alignment_sha256": "33837e34058f2c445a5724d8765ad2340f12189dfb287343b6881eec3b77329f",
+      "proteins": 12,
+      "columns": 331
+    },
+    {
+      "input_id": "OG0002812-envelope-famsa",
+      "family": "OG0002812",
+      "boundary": "envelope",
+      "method": "famsa",
+      "alignment": "results/ancestral/case-domain-alignments-20260927-v1/OG0002812-envelope-famsa/alignment.faa",
+      "alignment_sha256": "37345e526a0e10278bc6dd72f3e42b95947416c1538093cac1761ce1a4abb405",
+      "proteins": 12,
+      "columns": 332
+    }
+  ],
+  "pins": {
+    "results/software/fastml-indel-build-20260927-v1/receipt.json": "af6c7d7144763576f36606e649bb75a1a3626cbcb7390d8001fce23c2dea1c43",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-3.11/source/FastML.v3.11/programs/indelCoder/indelCoder": "4133b4f8cf96e03a9e74de1bf452f17515f53d1a52796d7c555bf5a1308353c4",
+    "scripts/encode_ancestral_indels.py": "f59e4adf864635bb1205c39d9eef92d189a0036fc37d53966e1511053a033154",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/case-alignments-20260927-v1/receipt.json": "21129091f9184e1c48f89ac601dcd61cf5fcbd4b2c65d7650a0c4e1d8576fec8",
+    "results/ancestral/case-domain-alignments-20260927-v1/receipt.json": "5e50f09dac4ac9ef2532d41e5df62f69f228b8901f9edfda86b0be057e216ad7"
+  },
+  "output": "results/ancestral/indel-coding-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "scope": "All78 full/domain alignments x2 terminal policies; integrated synthetic semantic checks followed by full matrix/coordinate comparison. Largest622seq; no data reduction or remote upload."
+}
