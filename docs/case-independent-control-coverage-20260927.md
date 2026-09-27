@@ -484,3 +484,41 @@ Output is `results/experimental_structures/whole-domain-case-quartet-contrasts-2
 launch identity and script hash are in
 `metadata/case_experimental_quartet_contrasts_launch_20260927.json`.
 Full output verification remains required after production completes.
+
+## Full coordinate and observed-coverage validation completed
+
+Both the CA mapping and independent full raw-coordinate readback terminated
+successfully. All 706 entries, 2,136 chain/model grids, 1,280,073 canonical
+positions and 1,038,177 exported CA atom records passed full source checks.
+The earlier production category counts are now independently verified. Producer
+and checker share the Biopython mmCIF parser; no parser independence is claimed.
+Closure: `metadata/case_experimental_ca_mapping_completed_20260927.json`.
+
+Observed coverage production and its independent verifier also terminated
+successfully. Every one of 65,556 interval/screen rows, 12,816 shared-chain/model
+screen rows and 78 case/screen summaries passed reconstruction, completeness and
+exact-threshold checks. The integrative entry's three alignment contexts remain
+explicitly excluded. Closure:
+`metadata/case_experimental_observed_coverage_completed_20260927.json`.
+
+At n50/c70, both-region shared candidate counts are:
+
+| Case | Experimental entities passing sequence coverage | Entities passing observed CA coverage | Qualifying chain/models |
+| --- | ---: | ---: | ---: |
+| Heliocybe | 19 | 18 | 50 |
+| Cryoendolithus | 97 | 3 | 5 |
+| Furculomyces | 6 | 3 | 6 |
+| Jaapia | 101 | 91 | 123 |
+| Phycomyces | 26 | 26 | 34 |
+
+The other eight cases retain zero both-region candidates at this setting. These
+counts require one deposited chain/model to pass every A/B/reference domain
+boundary. They do not require identical four-way residue sets; that stricter
+condition is applied in the quartet geometry pipeline. Nor do these counts
+remove fungal-prediction coverage limitations or demonstrate experimental
+independence, functional equivalence or mechanism. All candidate records and
+missing/ambiguous-coordinate categories remain retained.
+
+The successful raw-coordinate gate released the direct quartet fit service,
+which is now writing fits. Its full numerical readback and coverage/contrast
+exports remain downstream and are not yet complete.

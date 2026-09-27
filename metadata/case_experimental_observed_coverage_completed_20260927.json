@@ -1,0 +1,27 @@
+{
+  "status": "complete_full_observed_case_coverage_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "script_sha256": "d7aaf7f18d56e0a022d89a237fa57214f41a9ee5fecce88f9ab29a4e5f71460b",
+  "interval_screen_rows": 65556,
+  "chain_model_screen_rows": 12816,
+  "case_screen_rows": 78,
+  "scope": "Every expected alignment/interval/screen expanded across deposited chain/models; all counts independently reconstructed from frozen residue pairs and audited CA positions. Exact rational thresholds, complete shared-role qualification, and all zero-inclusive case summaries verified. No geometry or experimental independence claim.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-observed-coverage-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "b977fdcfd654a7d339f5968b1c88480bacb58c6c841472b03f8f09ab5c247c86",
+  "terminal_states": {
+    "fungal-case-experimental-observed-coverage-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-case-experimental-observed-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

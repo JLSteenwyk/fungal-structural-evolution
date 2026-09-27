@@ -8697,3 +8697,13 @@ input commands verified. A startup-only PATH error was corrected in a new unit,
 with the failed unit preserved and no tree output overwritten. Planning envelope
 36–336 hours, 16 CPUs and 72 GiB aggregate RAM; no GPU use. Tree validation and
 comparisons remain pending.
+
+### 2026-09-27: full experimental coordinate and observed coverage checks passed
+
+All four mapping/coverage services terminated successfully. Full raw checks
+cover 706 entries, 1,280,073 residue positions and 1,038,177 CA atom records.
+Independent coverage checks cover 65,556 interval rows, 12,816 chain/model
+qualification rows and all 78 summaries. Observed n50/c70 both-region entity
+counts are Heliocybe 18, Cryoendolithus 3, Furculomyces 3, Jaapia 91 and
+Phycomyces 26; the other cases remain zero. Direct quartet fitting is now active.
+These are coverage results, not independent experimental confirmation of effects.

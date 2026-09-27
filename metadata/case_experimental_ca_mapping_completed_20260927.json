@@ -1,0 +1,39 @@
+{
+  "status": "complete_full_case_CA_raw_atom_and_grid_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "checker_sha256": "de18278ea4761a2f0c72a628c712a46b08530a86eb17ceb2209157fd9ced9132",
+  "entries": 706,
+  "chain_models": 2136,
+  "positions": 1280073,
+  "CA_atoms": 1038177,
+  "status_counts": {
+    "no_CA_observation": 244982,
+    "unambiguous_full_occupancy_CA": 1027254,
+    "invalid_coordinates_or_occupancy": 776,
+    "multiple_CA_records": 3072,
+    "nonstandard_or_mismatching_monomer": 801,
+    "alternate_or_partial_occupancy": 3188
+  },
+  "artifacts": {
+    "chain_model_coverage.tsv": "6488bd1fe474dab43c8e02684014d3cb2675ed37400677f16e755951f58a135d"
+  },
+  "scope": "Every selected entity, chain, model, canonical sequence position, exported CA atom field and status checked against raw mmCIF and metadata. Producer and checker share the Biopython mmCIF parser; mapping and status logic are separate. Entity coverage is not fungal query/domain coverage. No geometry, experimental quality or training-independence validation.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-ca-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "1fbb54e2c0056d9deb4b0faa72b903f69bb2253017072ae08bf036d1c330084b",
+  "terminal_states": {
+    "fungal-case-experimental-ca-mapping-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-case-experimental-ca-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

@@ -114,3 +114,18 @@ The final dataset/atlas, phylogenies, uncertainty estimates, evolutionary tests,
 figures, methods and mechanistic case studies must all retain their actual
 sampling and validation scope. No completion date or overall percentage follows
 from the fraction of computational jobs finished.
+
+## September 27 experimental case-control update
+
+All 706 nominated experimental coordinate entries passed full CA mapping/readback;
+all 65,556 observed-coverage interval rows and 78 case summaries passed independent
+checks. Candidate count reductions are substantial for some cases. Direct
+four-protein geometric fits are running behind the completed coordinate gate;
+full fit readback, confidence/coverage sensitivity, dependence-aware summaries
+and mechanistic interpretation remain pending. See
+[experimental case controls](case-independent-control-coverage-20260927.md).
+
+A literature-supported potential Neocallimastix species complex also motivates
+six new representative-sensitivity guide searches, now running. This does not
+establish a revised unique-species count or resolve the other uncertain labels.
+See [taxon identity](taxon-identity-sensitivities.md).
