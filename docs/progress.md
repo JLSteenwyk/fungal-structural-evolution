@@ -7265,3 +7265,17 @@ remain explicit. Hybrid-tip projection does not eliminate conflict and is not
 fresh re-inference. The source markers use the profile alignment, and these
 correlated counts do not establish a preferred species tree or discordance
 cause. All eight scientific aims remain open and GPU prediction is paused.
+
+## September 27 fresh hybrid-excluded species inference launched
+
+The preceding turn verified marker-level conflict and saved-tree hybrid-tip
+projection. This turn advances to fresh inference: prepared both full matrices
+with exactly two hybrid entries omitted, retaining 524 taxa and all original
+49,027/63,750 columns. Independently checked every retained sequence character
+(59,095,148 total), exact taxon difference and unchanged site/partition maps.
+Launched supported LG+F+G4 guide inference, serial over both matrices, under
+four CPU threads/40 GiB service RAM/no swap. Controller and IQ-TREE child were
+verified live; plan, input hashes and identities are archived. Original runs
+remain intact. This is fresh full-sampling sensitivity, not a final mixture
+analysis or tree result. Full audits and mixture follow-up remain required.
+All eight scientific aims remain open and GPU prediction stays paused.

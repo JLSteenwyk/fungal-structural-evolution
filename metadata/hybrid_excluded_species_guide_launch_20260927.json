@@ -1,0 +1,43 @@
+{
+  "service": "fungal-hybrid-excluded-guides-20260927.service",
+  "pid": 2683449,
+  "created": 1790512421.6,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_hybrid_excluded_species_guides.py",
+    "--plan",
+    "metadata/hybrid_excluded_species_guide_plan_20260927.json"
+  ],
+  "children": [
+    {
+      "pid": 2683462,
+      "created": 1790512421.87,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/matrix.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+F+G4",
+        "-T",
+        "4",
+        "--mem",
+        "32G",
+        "--seed",
+        "20260927",
+        "--keep-ident",
+        "--alrt",
+        "1000",
+        "-B",
+        "1000",
+        "--bnni",
+        "--boot-trees",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1/profile/guide"
+      ]
+    }
+  ],
+  "plan_sha256": "021d9dfdab7ec299d418689d97a91b54fce79d548c1ed91d1a77fea7248c82a4",
+  "status": "verified_live_full_hybrid_excluded_profile_guide"
+}

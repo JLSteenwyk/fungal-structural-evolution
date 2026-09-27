@@ -1,0 +1,41 @@
+{
+  "status": "complete_hybrid_excluded_full_matrices_pending_readback",
+  "omitted_taxa": {
+    "F27292": "Saccharomyces pastorianus",
+    "F332112": "Saccharomyces cerevisiae x Saccharomyces kudriavzevii"
+  },
+  "retained_taxa": 524,
+  "runs": [
+    {
+      "label": "profile",
+      "taxa": 524,
+      "columns": 49027,
+      "source_matrix": "results/phylogeny/profile-matrix-50-v1/matrix.faa",
+      "source_matrix_sha256": "1934ea4e2d0687d644a65d3fc550dc6eee25e42d85deeeec6a3e529bd1ddb045",
+      "source_receipt_sha256": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+      "output_matrix_sha256": "36559cd551d1b452e070a45ec2471d6d90082fc25a040622841265ed25f7c03e",
+      "artifacts": {
+        "matrix.faa": "36559cd551d1b452e070a45ec2471d6d90082fc25a040622841265ed25f7c03e",
+        "site_mapping.tsv": "a3f02805eaa8eacbbf60d6dfa2e995798b0a9ef8d75339031863591fd939d1be",
+        "partitions.nex": "5cfbfe5d267cb3901cc4632ccc5ebdb1cf54525feff0e4a7429ce4df10ce11d9"
+      }
+    },
+    {
+      "label": "mafft",
+      "taxa": 524,
+      "columns": 63750,
+      "source_matrix": "results/phylogeny/mafft-matrix-50-v1/matrix.faa",
+      "source_matrix_sha256": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+      "source_receipt_sha256": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+      "output_matrix_sha256": "e617fb82854b51e9e8a41a5a11bb673d7e44b4695482dc0b815bc9b05f2b77b5",
+      "artifacts": {
+        "matrix.faa": "e617fb82854b51e9e8a41a5a11bb673d7e44b4695482dc0b815bc9b05f2b77b5",
+        "site_mapping.tsv": "3a6645b397965034419c525e71b3ac24f72f92ec42408ac4cedc8ad4b78bdf4a",
+        "partitions.nex": "6efefab7f13acb4104cd781cfc32d1e83fcc5d659450b995a9ef4ea05ab73725"
+      }
+    }
+  ],
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "script_sha256": "62aa707e602ba7f74397d3fe0b27d57f0a9b5df175586101864617df4ca8278c",
+  "scope": "Only two hybrid entries removed; all retained sequence strings, column order, partition/site mapping and outgroups unchanged. No realignment or new tree inference yet. Other taxon-identity/contamination sensitivities remain separate."
+}

@@ -1,0 +1,83 @@
+{
+  "output": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1",
+  "commands": {
+    "profile": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+      "-s",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/matrix.faa",
+      "-st",
+      "AA",
+      "-m",
+      "LG+F+G4",
+      "-T",
+      "4",
+      "--mem",
+      "32G",
+      "--seed",
+      "20260927",
+      "--keep-ident",
+      "--alrt",
+      "1000",
+      "-B",
+      "1000",
+      "--bnni",
+      "--boot-trees",
+      "--prefix",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1/profile/guide"
+    ],
+    "mafft": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+      "-s",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/mafft/matrix.faa",
+      "-st",
+      "AA",
+      "-m",
+      "LG+F+G4",
+      "-T",
+      "4",
+      "--mem",
+      "32G",
+      "--seed",
+      "20260927",
+      "--keep-ident",
+      "--alrt",
+      "1000",
+      "-B",
+      "1000",
+      "--bnni",
+      "--boot-trees",
+      "--prefix",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1/mafft/guide"
+    ]
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "scripts/run_hybrid_excluded_species_guides.py": "d2c747dabed500fc4e10704f64c0b7aeb1abf9def8112c6cf9319249a6ae3e43",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/receipt.json": "daedd1ec6155f066b1eb76d1ec44fe7c953ab413dedb9f4d61c68fa080ebdb69",
+    "metadata/hybrid_excluded_matrix_readback_20260927.json": "c7d7aa4bec7f00030b34e6789ca6f77e166343fd8e27238100241726bfc1d9a2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/matrix.faa": "36559cd551d1b452e070a45ec2471d6d90082fc25a040622841265ed25f7c03e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/partitions.nex": "5cfbfe5d267cb3901cc4632ccc5ebdb1cf54525feff0e4a7429ce4df10ce11d9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/site_mapping.tsv": "a3f02805eaa8eacbbf60d6dfa2e995798b0a9ef8d75339031863591fd939d1be",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/mafft/matrix.faa": "e617fb82854b51e9e8a41a5a11bb673d7e44b4695482dc0b815bc9b05f2b77b5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/mafft/partitions.nex": "6efefab7f13acb4104cd781cfc32d1e83fcc5d659450b995a9ef4ea05ab73725",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/mafft/site_mapping.tsv": "3a6645b397965034419c525e71b3ac24f72f92ec42408ac4cedc8ad4b78bdf4a"
+  },
+  "resources": {
+    "concurrent_runs": 1,
+    "threads": 4,
+    "memory_limit_gib": 40,
+    "iqtree_memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_available_memory_gib": 64,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 10,
+    "planning_wall_hours_per_matrix": [
+      4,
+      168
+    ],
+    "basis": "Full 524-tip, 49027/63750-site homogeneous-model inference with support. Conservative envelope; existing guide runs lacked support and are not calibrated runtimes for this stage.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Fresh hybrid-exclusion sensitivity under the same homogeneous guide model on both existing column sets. Not a pilot or substitute for mixture-model inference. Full bootstrap audit, guide-dependent mixture sensitivity, other taxon/marker controls and biological interpretation remain required."
+}

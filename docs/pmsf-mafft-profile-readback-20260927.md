@@ -112,3 +112,40 @@ compatibility. Scripts are `assess_saccharomyces_marker_conflict.py` and
 `results/phylogeny/saccharomyces-marker-conflict-20260927-v1`; metadata archives
 include receipt, independent proof and summary under
 `saccharomyces_marker_conflict_*_20260927.*`.
+
+## Fresh full-matrix hybrid-excluded inference started
+
+Prepared both complete species matrices with only F27292 and F332112 removed:
+524 taxa remain, including all 25 outgroups. The profile and MAFFT matrices
+retain all 49,027 and 63,750 original columns, respectively. An independent
+FASTA parser checked every one of 59,095,148 retained characters and the exact
+taxon difference; partition and site-mapping files are byte-identical to their
+sources. Input preparation is reproducible with
+`scripts/prepare_hybrid_excluded_species_matrices.py`; receipt and readback are
+archived under `metadata/hybrid_excluded_matrix_*_20260927.json`.
+
+Fresh full-matrix guide inference is now running under LG+F+G4, the same
+homogeneous model used for the original guides. Both matrices run serially with
+four threads, IQ-TREE memory 32 GiB, service memory 40 GiB and no swap. Each has
+1,000 SH-aLRT and 1,000 UFB replicates with bootstrap NNI and saved bootstrap
+trees. Identical sequences are retained. The seed is 20260927. No original
+matrix or inference is overwritten. The controller can continue an identical
+interrupted stage using IQ-TREE's checkpoint; it checks all pinned inputs before
+and after execution.
+
+Resource planning reserves 10 GiB output and requires 100 GiB free disk and
+64 GiB available RAM before each stage. The broad allowance is 4–168 hours per
+matrix, not a measured ETA. For context, original 16-thread guides without
+support took approximately 15.6–15.8 wall hours and 226–230 CPU hours; these
+four-thread supported runs can take substantially longer. They use existing
+CPU resources and incur no new charges. The existing fourth full-taxon PMSF
+run continues separately.
+
+Plan and live identity: `metadata/hybrid_excluded_species_guide_plan_20260927.json`
+and `metadata/hybrid_excluded_species_guide_launch_20260927.json`.
+Runner: `scripts/run_hybrid_excluded_species_guides.py`.
+Output: `results/phylogeny/hybrid-excluded-guides-20260927-v1`.
+These are full-sampling homogeneous-model sensitivities and fresh guide inputs,
+not completed results or substitutes for subsequent mixture-model analyses.
+Full result/support audits, mixture-model guide sensitivity, and the other
+identity, contamination and marker-sampling checks remain required.
