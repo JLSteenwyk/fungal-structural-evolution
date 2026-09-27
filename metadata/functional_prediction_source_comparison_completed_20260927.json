@@ -1,0 +1,29 @@
+{
+  "status": "verified_complete_functional_prediction_source_comparison",
+  "source_receipt_sha256": "ac26f841c0487fe046ffeeaa1c65830a5b6fe01575f839004dfb7abad151cb0b",
+  "jointly_observed_residues": 150,
+  "jointly_observed_taxa": 14,
+  "jointly_observed_markers": 14,
+  "jointly_observed_taxon_proteins": 95,
+  "joint_state_counts": {
+    "same": 127,
+    "different": 23
+  },
+  "conserved_candidate_joint_state_counts": {
+    "('False', 'different')": 9,
+    "('False', 'same')": 82,
+    "('True', 'different')": 14,
+    "('True', 'same')": 45
+  },
+  "discordant_counts_by_marker": {
+    "5005892at2759": 14,
+    "5000743at2759": 3,
+    "707076at2759": 2,
+    "5001413at2759": 1,
+    "4969018at2759": 1,
+    "538952at2759": 1,
+    "540946at2759": 1
+  },
+  "discordant_residue_export_sha256": "bcd4544a7ab105f3490f6929a10f3e2d74ea2e00d5c7836866c436af0cad67d5",
+  "scope": "Exact-coordinate overlap of qualified paired observations. Discordant-residue list is exhaustive for this cohort, not an ancestral-change shortlist or independent predictor-error calibration. No-source coverage and annotation gaps retained in full outputs."
+}

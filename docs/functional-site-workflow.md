@@ -284,3 +284,54 @@ were rechecked after completion. Archived receipts and terminal-state evidence
 are in `metadata/recovered_afdb_functional_exposure_completed_20260927.json`;
 the source results remain outside Git. This supersedes any running status for
 these two joins, not the outstanding functional evolutionary analyses.
+
+## Complete predictor comparison at annotated residues
+
+The recovered AlphaFold and completed ESMFold functional joins were compared
+across the identical full 17,105-row annotation universe. Shared protein,
+reference-pattern and residue fields must agree. Predictor-specific availability,
+models, confidence, matrix/paired columns and native states remain separate.
+A complete dataframe join independently checked every exported source field;
+all coverage/state classifications and exact-coordinate aggregation were also
+read back. Reproduce with:
+
+```bash
+python scripts/compare_functional_prediction_sources.py \
+  --output results/functional_sites/prediction-source-comparison-NEW
+```
+
+The completed output is `results/functional_sites/prediction-source-comparison-20260927-v1`.
+The full annotation table retains gapped positions. The separate residue table
+collapses repeated profile correspondences at the same marker/taxon/protein/
+coordinate, retaining whether any annotation is a conserved candidate and
+whether any is another correspondence; these flags can overlap.
+
+| Paired observation coverage | Annotation rows | Distinct protein coordinates |
+|---|---:|---:|
+| Both predictors | 158 | 150 |
+| AlphaFold only | 6,286 | 6,040 |
+| ESMFold only | 5,418 | 5,199 |
+| Neither | 5,243 | 1,874 |
+
+The coordinate table contains 13,263 rows; annotations without a protein
+coordinate remain in the full table rather than being assigned artificial
+residue identities. The 150 jointly observed coordinates span 14 taxa,
+14 markers and 95 taxon/protein identities. Their structural-alphabet states
+agree at 127 coordinates and differ at 23. Of 59 jointly observed coordinates
+with any conserved-candidate annotation, 45 agree and 14 differ. These are
+conditional counts, not independent observations or an enrichment test.
+
+Fourteen of the 23 differing coordinates belong to marker `5005892at2759`,
+whose differing annotation rows map to Pfam `PF01163.29` (RIO1). This concentration
+is a predictor-sensitivity follow-up, not evidence of a lineage-specific change.
+The exhaustive 23-coordinate review list is archived as
+`metadata/functional_prediction_discordant_residues_20260927.tsv`; denominator
+and source proofs are in
+`metadata/functional_prediction_source_comparison_completed_20260927.json`.
+
+Missing paired coverage is never treated as a state difference. Structural-
+alphabet states depend on nonlocal residue context; agreement does not establish
+accuracy and disagreement does not identify which predictor is correct.
+Prediction circularity, correlated homologous sites and sparse overlap prevent
+these counts from providing broad independent functional validation. Direct
+coordinate/context comparisons and experimental evidence remain needed.

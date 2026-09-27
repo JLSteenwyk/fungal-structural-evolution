@@ -1,0 +1,41 @@
+{
+  "status": "complete_full_functional_prediction_source_comparison_with_readback",
+  "annotation_rows": 17105,
+  "coordinate_residues": 13263,
+  "annotation_coverage_counts": {
+    "neither": 5243,
+    "afdb_only": 6286,
+    "esmfold_only": 5418,
+    "both": 158
+  },
+  "residue_coverage_counts": {
+    "neither": 1874,
+    "afdb_only": 6040,
+    "esmfold_only": 5199,
+    "both": 150
+  },
+  "annotation_state_comparison_counts": {
+    "not_comparable": 16947,
+    "same": 133,
+    "different": 25
+  },
+  "residue_state_comparison_counts": {
+    "not_comparable": 13113,
+    "same": 127,
+    "different": 23
+  },
+  "source_sha256": {
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/receipt.json": "5ba30293e8a621e7efc0534230e4c3db5558eaaeb34630fe14784b045134d69b",
+    "metadata/recovered_afdb_functional_site_join_readback_20260927.json": "c819ab12116ec9d9df7df013fdff3df56e6b7a9f49fde30bee1ebc9abc4065cd",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/site_structure_links.tsv": "ff50cb15a59990055891880d70258cf878e28ef47ae61b02bca245c87d4a810e",
+    "results/functional_sites/esmfold-all-completed-linked-20260923-v1/receipt.json": "854f24a8ef592cd4edae6fbd1be6d1ebf737bb8f4275abdb9971ea4d60f07d5c",
+    "metadata/completed_esmfold_functional_site_join_readback.json": "331eeaad04bb7636cf32e4ed80fef826326655b28155932f57e4645a9e297029",
+    "results/functional_sites/esmfold-all-completed-linked-20260923-v1/site_structure_links.tsv": "ad93f985b660081760311179ddec493c7bbbde1e91c1d2096c779d307935771e"
+  },
+  "script_sha256": "11f8dec7b9280faf5a3ffc5b385999a5b5781f11fbdcf29962923af6e6f86847",
+  "artifacts": {
+    "annotation_source_comparison.tsv": "74e4bcd4cef13bcbf825c493968074d8281f52c5f9e2f767ebeff919c180192d",
+    "residue_source_comparison.tsv": "abee081df6c0ed361b0cb0cd4a807a469901f3001c6e68dfde512db81643e4cf"
+  },
+  "scope": "Complete annotation universe and exact-coordinate deduplication. Both predictor columns preserved and exported rows independently joined/read back. Conditional observed-state agreement is not accuracy, independent validation, evolutionary change, catalytic function or a calibrated predictor-error rate. Structural-alphabet states depend on nonlocal context; missing coverage is not a state difference."
+}
