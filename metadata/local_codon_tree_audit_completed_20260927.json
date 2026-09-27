@@ -1,0 +1,26 @@
+{
+  "status": "passed_full_genus_tree_audit",
+  "audited_cases": 1632,
+  "planned_cases": 1632,
+  "pending_cases": [],
+  "bootstrap_trees_read": 1632000,
+  "internal_edges": 6703,
+  "warning_lines": 478126,
+  "source_config_sha256": "9b80c28f72c0a9bdf4d9cbd8e285ac9df7647227cf279c1e8dde4ba131f9b473",
+  "script_sha256": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+  "artifacts": {
+    "warnings.tsv": "ed5118d767fb19b674088567b5635286b55a806b72b4af86a4da8b427493ec5b",
+    "branch_support.tsv": "cceaea3b75ded9fa215521c6fa6de6dc8f0e72918db3f9d0fc8d6dd48c343443",
+    "case_audit.tsv": "962e5bc91f33dfbd99ed56a1dd7e39d4db9c8a68a31913ccbde238cea3841e68"
+  },
+  "interpretation": "All audited trees, bootstrap tip/edge/split grids, model reports and rounded UFB frequencies checked. SH-aLRT ranges checked, not independently recomputed. Numerical convergence, model adequacy, orthology, recombination, synonymous saturation and selection eligibility remain separate requirements.",
+  "full_receipt_path": "results/phylogeny/local-codon-tree-audit-20260927-v1/receipt.json",
+  "full_receipt_sha256": "60f204dad24af49f2169d354738353b353ff3e67b0dbb848f8ee6273f769545b",
+  "handoff_receipt_sha256": "e05c5024da16fbb3979d2505dc48496ba47ba7f30079f72b103cfade1ad5aa49",
+  "checked_at": "2026-09-27T11:54:16.039515+00:00",
+  "terminal_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ]
+}

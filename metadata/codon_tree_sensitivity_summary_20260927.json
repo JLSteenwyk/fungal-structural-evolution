@@ -1,0 +1,52 @@
+{
+  "status": "complete_verified_codon_tree_sensitivity_summary",
+  "comparison_receipt_sha256": "2d13928cfb8c8b9200b96f03a81ae395ee756b80f5ebfc7d3339aec37b56d812",
+  "comparison_readback_sha256": "1de69039acc7cd9b9bb357140fe326972b8d6e6f4d58825a34dde2e74da66dbc",
+  "script_sha256": "4e36361111220a068e93d29589c40002fc9b96998f60ce77e25383e508fc34cb",
+  "ledger_cases": 1712,
+  "matched_cases": 1625,
+  "changed_cases": 315,
+  "changed_fraction": 0.19384615384615383,
+  "changed_with_historical_flags": 149,
+  "changed_normalized_rf_quantiles": {
+    "0.0": 0.14285714285714285,
+    "0.25": 0.14285714285714285,
+    "0.5": 0.25,
+    "0.75": 0.38095238095238093,
+    "1.0": 1.0
+  },
+  "changed_split_support": [
+    {
+      "split_status": "original_only",
+      "branches": 448,
+      "ufb_quantiles": {
+        "0.0": 2.0,
+        "0.25": 41.0,
+        "0.5": 49.0,
+        "0.75": 58.0,
+        "1.0": 99.0
+      }
+    },
+    {
+      "split_status": "local_only",
+      "branches": 448,
+      "ufb_quantiles": {
+        "0.0": 10.0,
+        "0.25": 44.0,
+        "0.5": 53.0,
+        "0.75": 65.0,
+        "1.0": 100.0
+      }
+    }
+  ],
+  "case_median_retention_by_topology_change": {
+    "False": 1.0,
+    "True": 0.9975728155339806
+  },
+  "artifacts": {
+    "changed_cases.tsv": "6c4b3d17018252c14f7fbaf39257db38d9f74777627860575ef4f9e41bd4b6a7",
+    "changed_split_support_distribution.tsv": "03dadff24ed1c9df08eeb23b178d94cb7ba0eae9a2559db2de6ec10903790fca",
+    "topology_by_historical_flags.tsv": "22f527e4f8f9258d8bcec1106f20dff04c5e6106f1de3827f04857b2d043b678"
+  },
+  "scope": "Descriptive full matched-case sensitivity; all original 1712 ledger dispositions retained in source. Zero-length resolutions retained. Support quantiles are not significance tests; changed cases and branches are correlated. High support on some lost/new splits does not alone establish strongly supported incompatible splits. Historical flags are review triggers, not eligibility decisions."
+}

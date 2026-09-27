@@ -7110,3 +7110,17 @@ Independent reconstruction of the actual comparison remains pending, as do
 biological adequacy and selection testing. Historical optimization flags are
 preserved; baseline fits are not claimed optimal. All eight aims remain open,
 and GPU prediction remains paused.
+## September 27 full alignment-dependent topology sensitivity verified
+
+The previous turn queued normalized divergence comparison. This turn verifies
+completion of the full local-tree audit and independent original/local
+comparison, covering 1,632,000 bootstrap trees and all 1,712 case dispositions.
+Among 1,625 matched groups, 315 (19.38%) change topology; 448 internal splits
+are lost and 448 gained. Changed-split UFB medians are 49% original and 53%
+local, but ranges extend to 99% and 100%. Marginal support distributions do not
+establish strongly supported incompatible split pairs.
+
+Reproducible summary tables and independent count/quantile checks are archived.
+Historical flags occur in 149 changed groups and remain explicit; no case is
+cleared for selection. The local MG94 controller is verified live and has
+advanced into fitting. All eight aims remain open; GPU prediction is paused.

@@ -1490,3 +1490,48 @@ No GPU or paid resources are used. Original baseline fits are not substituted
 with later multistart optima; historical warnings remain attached explicitly.
 These are descriptive, correlated sensitivity measurements, not cross-alignment
 likelihood tests, branch omega estimates or evidence of positive selection.
+## Local-tree audit and alignment sensitivity completed
+
+The full independent local-tree audit passed all 1,632 fits, 1,632,000 saved
+bootstrap trees and 6,703 internal edges. Model reports, exact tip/split grids
+and rounded UFB frequencies were checked; SH-aLRT ranges were checked without
+rerunning the tests. The completed receipt is archived in
+`metadata/local_codon_tree_audit_completed_20260927.json`. Numerous warning log
+lines remain in the audit output and are not equivalent to that many unique
+problematic cases or a declaration of model adequacy.
+
+The original-versus-local comparison also completed and passed full independent
+DendroPy reconstruction: 1,712 ledger cases, 18,705 union split rows and 40,755
+taxon-pair rows. There are 1,625 matched cases, 30 original-only, seven local-only
+and 50 fitted under neither alignment. Completion is recorded in
+`metadata/codon_tree_comparison_completed_20260927.json` and
+`metadata/codon_tree_comparison_completed_readback_20260927.json`.
+
+**315/1,625 matched groups (19.38%) change inferred unrooted topology.** Among
+changed groups, normalized RF has median 0.25 (range 0.142857–1). There are
+448 original-only and 448 local-only internal splits; 6,243 internal splits and
+all 11,566 terminal splits are shared. Inferred zero-length resolutions remain
+in these counts.
+
+Original-only internal splits have median UFB 49% (quartiles 41–58%, range
+2–99%); local-only splits have median 53% (quartiles 44–65%, range 10–100%).
+Most changed splits therefore have modest support, but support is not uniformly
+low. These marginal distributions do not by themselves identify strongly
+supported incompatible split pairs; that requires explicit incompatibility
+checks. No statistical significance is inferred from these correlated branches.
+
+Of the changed groups, 149 have historical review flags and 166 do not. Median
+case-level residue-pair retention is 0.997573 among changed cases and 1.0 among
+unchanged cases. High alignment retention therefore does not guarantee identical
+inferred topology, and absence of a historical flag does not establish
+robustness or eligibility. This comparison also changes retained alignment
+columns, so it is not a controlled equal-column likelihood comparison.
+
+`scripts/summarize_codon_tree_sensitivity.py` produces the full changed-case
+table, support-frequency table and historical-flag cross-tabulation under
+`results/cds/codon-tree-sensitivity-summary-20260927-v1`. Receipt and independent
+count/quantile checks are archived as
+`metadata/codon_tree_sensitivity_summary_20260927.json` and
+`metadata/codon_tree_sensitivity_summary_readback_20260927.json`.
+The local MG94 controller advanced automatically and had 70 completed fits at
+the checkpoint. Divergence sensitivity and selection eligibility remain open.

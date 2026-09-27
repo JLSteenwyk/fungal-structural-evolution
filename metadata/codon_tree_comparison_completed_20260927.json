@@ -1,0 +1,17 @@
+{
+  "status": "completed_full_codon_tree_comparison_verified",
+  "producer_receipt_path": "results/cds/codon-alignment-tree-comparison-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "2d13928cfb8c8b9200b96f03a81ae395ee756b80f5ebfc7d3339aec37b56d812",
+  "readback_sha256": "1de69039acc7cd9b9bb357140fe326972b8d6e6f4d58825a34dde2e74da66dbc",
+  "cases": 1712,
+  "dispositions": {
+    "matched": 1625,
+    "original_only": 30,
+    "neither_fitted": 50,
+    "local_only": 7
+  },
+  "changed_topology_cases": 315,
+  "split_rows": 18705,
+  "pair_rows": 40755,
+  "scope": "Independent DendroPy parser and direct phylogenetic distance matrix reconstruct every split, support/length delta and taxon-pair distance. Exact case, flag, missing-field and full row grids checked; numerical tolerance 1e-10 absolute/relative. Does not rerun phylogenetic inference or establish model adequacy."
+}
