@@ -893,3 +893,35 @@ Resource plan: one CPU, 16 GiB RAM, no swap, negligible proof output and an
 uncalibrated 0.5–12-hour range. Full production verification, actual match
 balance, structural outcome qualification and evolutionary effect estimates
 remain pending. No GPU or paid infrastructure is used.
+
+## Full selected-control balance assessment queued
+
+Queued balance assessment behind the verified live full-selection auditor.
+All 432 guide/policy/scenario combinations remain, including empty strata.
+Eight permutation-invariant pair features are assessed: raw sequence distance,
+log positive sequence distance, mean log length, absolute log length ratio,
+mean/minimum pLDDT and mean/maximum low-confidence fraction. Positive-log rows
+exclude zero-distance pairs without adding an epsilon; raw distances, zero
+counts and the per-feature pair denominator remain explicit.
+
+For each feature, report selected target/control means and sample SDs,
+pooled-SD standardized mean differences, mean/95th-percentile/maximum paired
+absolute differences, and the selected-target mean shift relative to all
+modeled target records in that guide, scaled by the original-target SD where
+estimable. Missing/one-pair/zero-variance cases receive explicit statuses, not
+fabricated standardized values. No automatic balance-pass cutoff is imposed.
+Coverage summaries retain matched/unmatched targets, taxa, families, distinct
+background nodes, maximum reuse, top-five background concentration and
+identical-model target/control counts.
+
+These are event-weighted descriptive diagnostics, not independent-sample tests.
+Neither small aggregate differences nor matching itself corrects phylogenetic
+or family dependence, structural outcome missingness or prediction uncertainty.
+Selection shifts are relative to the observed modeled target universe, not all
+526 project taxa. Taxon-balanced and family-aware sensitivity remains necessary.
+
+Known moments/SMDs and selection shifts, empty/single/zero-variance samples,
+positive-log exclusions and endpoint swaps passed fixtures. Resources: one CPU,
+16 GiB RAM, no swap, 1 GiB output allowance and an uncalibrated 0.1–4 hours after
+selection verification. Production balance and independent readback remain
+pending. No GPU or paid resources were enabled.

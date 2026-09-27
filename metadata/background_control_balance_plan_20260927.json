@@ -1,0 +1,53 @@
+{
+  "selection": "results/orthology/background-control-selection-20260927-v1",
+  "graph": "results/orthology/background-match-graph-20260927-v1",
+  "readback": "metadata/background_control_selection_completed_readback_20260927.json",
+  "output": "results/orthology/background-control-balance-20260927-v1",
+  "pins": {
+    "metadata/background_control_selection_plan_20260927.json": "429789e39ba3e2f50cd251a13b6fdf5d809df392c33905b061e524d457e8a9eb",
+    "metadata/background_control_selection_readback_launch_20260927.json": "560bf551cf411492544e0a41e1073f5f03159a9e03ccd85c6a146bf47714ac8a",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "scripts/background_control_balance.py": "b5072545be80146350ecfb1a38abc3f61b3750b584bf77181a3d390204863606",
+    "scripts/check_background_control_balance.py": "ee35c8c439a4a30d83e72fafc6033cbee2c2e8231b9a06f768f811a83f19d2da",
+    "scripts/assess_background_control_balance.py": "706c1a023a02b42bb3c0a281f7a1a6403ae6f93336b68af6b58292a0a265da7b",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/background-control-selection-20260927-v1/target_policy_selection_status.tsv": "c6b851af81727c013cd43a9c07ea7649732ceea662908304cecdb725bf8df2b1",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-control-selection-20260927-v1/background_reuse.tsv": "8dbb5f8dd10dab387adb246487fb4392f5704736d10c9916bb636efb1d8e1cff",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "selected_records": 2786912,
+    "strata": 432,
+    "balance_rows": 3456,
+    "basis": "Eight pair-level metadata features for all selected controls, plus original-target selection shifts and full control reuse/coverage. Chunked50000 reads, feature arrays under0.4GB before metadata/sets/copies. Descriptive estimates only; no structural responses or GPU; existing resources. Range excludes selection audit wait."
+  },
+  "producer": {
+    "service": "fungal-background-control-selection-readback-20260927.service",
+    "pid": 2091632,
+    "created": 1790503146.35,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_control_selection.py",
+      "--plan",
+      "metadata/background_control_selection_readback_plan_20260927.json"
+    ],
+    "plan": "metadata/background_control_selection_readback_plan_20260927.json",
+    "plan_sha256": "127248d25f0f331324cfbf76a60e686d5a401e6986c8dbad9564339f43fed2db",
+    "fixture_status": "corrected_fixture_passed_5400_random_scenarios_zero_exclusions_and54_exact_ties",
+    "fixture": "scripts/check_background_control_selection_readback_cases.py",
+    "fixture_sha256": "4570d9b9483fed15483daae8bc7dc4cf60d40f0745e55effe614366b7695acb6",
+    "note": "Original fixture wrote True/False instead of numeric0/1 shared flags and failed before comparisons. Shell continued to launch checker; source code and plan then left unchanged. Corrected separate fixture passed; no production job restarted."
+  }
+}

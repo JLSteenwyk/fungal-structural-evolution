@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-control-balance-20260927.service",
+  "pid": 2097550,
+  "created": 1790503392.43,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_background_control_balance.py",
+    "--plan",
+    "metadata/background_control_balance_plan_20260927.json"
+  ],
+  "plan": "metadata/background_control_balance_plan_20260927.json",
+  "plan_sha256": "f35a5c531846b6ea4ce120449ac63f9e3e8d2f4ef41dc6afd1a8ccd5a6d82f12",
+  "fixture_status": "passed_known_moments_SMD_selection_shift_empty_single_zero_variance_positive_log_exclusion_endpoint_swap"
+}

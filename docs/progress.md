@@ -6642,3 +6642,17 @@ balance assessment remain pending. See
 The previous goal turn launched selection; this turn confirms its completion and
 advances independent validation. All eight aims remain active. GPU prediction
 remains paused.
+
+## September 27 full control-balance assessment queued
+
+Prepared and queued descriptive balance assessment for all 432 guide/policy/
+scenario combinations, covering eight sequence/length/confidence features,
+selection shifts, unmatched coverage and control reuse. It waits for the live
+full-selection auditor. Known moments, nonestimable cases, zero-distance
+handling and endpoint invariance passed tests. Production balance and its
+independent readback remain pending; no matched effect is yet claimed. See
+[balance definitions](terminal-sister-backgrounds-20260927.md#full-selected-control-balance-assessment-queued).
+
+The previous goal turn started independent selection verification; this turn
+advances the next required matching diagnostic. All eight aims remain active.
+GPU prediction remains paused.
