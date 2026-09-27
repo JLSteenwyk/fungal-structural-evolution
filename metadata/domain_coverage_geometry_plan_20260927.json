@@ -1,0 +1,63 @@
+{
+  "producer": {
+    "unit": "fungal-background-domain-geometry-readback-20260927.service",
+    "pid": 3043773,
+    "created": 1790516476.07,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_domain_geometry.py",
+      "--plan",
+      "metadata/background_domain_geometry_readback_plan_20260927.json"
+    ],
+    "plan_sha256": "6a5892b683136a9e06e09ce4b091f8800926758c9438a973977efb62546b7534"
+  },
+  "cohorts": {
+    "target": {
+      "coverage": "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1",
+      "geometry": "results/structural_comparisons/duplication-domain-alignment-geometry-20260927-v1",
+      "coverage_audit": "metadata/duplication_domain_coverage_screen_completed_20260927.json",
+      "geometry_audit": "results/structural_comparisons/duplication-domain-geometry-readback-20260927-v1.json",
+      "coverage_audit_status": "passed_complete_domain_coverage_screen_readback",
+      "geometry_audit_status": "passed_full_domain_geometry_readback"
+    },
+    "background": {
+      "coverage": "results/structural_comparisons/background-domain-coverage-screen-20260927-v1",
+      "geometry": "results/structural_comparisons/background-domain-geometry-20260927-v1",
+      "coverage_audit": "metadata/background_domain_coverage_screen_completed_20260927.json",
+      "geometry_audit": "results/structural_comparisons/background-domain-geometry-readback-20260927-v1.json",
+      "coverage_audit_status": "passed_complete_background_domain_coverage_screen_readback",
+      "geometry_audit_status": "passed_full_background_domain_geometry_readback"
+    }
+  },
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "output": "results/structural_comparisons/domain-coverage-geometry-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_minutes": [
+      1,
+      15
+    ]
+  },
+  "pins": {
+    "metadata/background_domain_geometry_readback_launch_20260927.json": "8340bf2e61ff78dba70afb69866ad3f343dc0cc8cee2bb1833ad350dd6e40266",
+    "scripts/join_domain_coverage_geometry.py": "53182a675d404595bdf5a466c8011028e122caaecde6e0e1627a6dde028fb96a",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/receipt.json": "e65b4375f983232c6c0160a30212f5aa95eb452af72eca3a43f6af8e6a3eb290",
+    "results/structural_comparisons/duplication-domain-alignment-geometry-20260927-v1/receipt.json": "5b901cd8b53d970a518cc40121525efa80970f43f8f82d9318b1c44402ba0354",
+    "metadata/duplication_domain_coverage_screen_completed_20260927.json": "5797479bccadf24ca3f1a5b4149286c20ea5bda3c07a034a5d8475338dcc988f",
+    "results/structural_comparisons/background-domain-coverage-screen-20260927-v1/receipt.json": "0046e5ae2259877729e08598ad6dc9985da651dcfe58c8aca538f2a482e4fb72",
+    "results/structural_comparisons/background-domain-geometry-20260927-v1/receipt.json": "d54d3ed989ad3c78a2d1b8f3f6214e0964187e067217a61f5b0fce7b1322b0a7",
+    "metadata/background_domain_coverage_screen_completed_20260927.json": "e04912b19a6f71b1a85b8bb06d3e0850c00ece5ffde61b516f8946560ae17741",
+    "scripts/readback_domain_coverage_geometry.py": "69c3f89eba64348edf362cddb2d2f744fd01279535869dc7d29983d2e7fbf64e"
+  }
+}
