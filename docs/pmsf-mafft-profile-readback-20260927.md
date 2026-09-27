@@ -168,3 +168,32 @@ verified live identity are archived as
 pending under `results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1`, with a
 separate handoff receipt directory. All-four comparison and remaining framework
 sensitivities still require completion after the audit.
+
+## Full MAFFT marker-tree counterpart started
+
+All 125 marker trees are now being inferred from the complete MAFFT species
+matrix. The existing profile-marker coverage rule is retained: at least 50
+unambiguous amino acids and at least 30% of a marker's columns per taxon.
+The full planning grid independently reconstructed from matrix characters has
+418–504 retained taxa per marker and covers all 63,750 columns. This is the
+complete marker batch, not a selected Saccharomyces subset. Both hybrid entries
+remain available here; this is alignment-method sensitivity, separate from the
+hybrid-excluded species runs.
+
+A separate runner preserves the original profile jobs and uses the same
+marker-hash seeds, model search (LG/WAG/JTT with +F and gamma), and 1,000 SH-aLRT
+replicates. Four concurrent jobs each use two CPU threads and at most 4 GiB
+IQ-TREE memory. The service has 24 GiB RAM, no swap, and checks 64 GiB available
+RAM and 100 GiB free disk before beginning. Output allowance is 10 GiB. The
+12–168-hour batch planning envelope is not a guaranteed ETA; original profile
+marker fits summed to about 250 case-hours with a 76-minute median, and MAFFT
+markers have more columns. Existing CPU resources incur no new charges.
+
+Runner: `scripts/run_mafft_marker_gene_trees.py`.
+Output: `results/phylogeny/mafft-marker-gene-trees-20260927-v1`.
+Plan, independent planning-grid readback and verified controller/four-worker
+identities are archived under `metadata/mafft_marker_tree_*_20260927.*`.
+Actual emitted input reconstruction, full support readback, copy/coverage
+review and common-taxon comparisons remain required. SH-aLRT values are not
+bootstrap proportions or posterior probabilities, and no gene-tree result is
+claimed complete at launch.

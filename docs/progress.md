@@ -7290,3 +7290,15 @@ its live identity was recorded after launch. It will reuse the unchanged full
 auditor after successful producer termination, under one CPU/8 GiB/no swap.
 No additional inference was started and no unfinished tree is reported as
 validated. All eight scientific aims remain open; GPU prediction stays paused.
+
+## September 27 full MAFFT marker-tree inference started
+
+The preceding goal turn queued the fourth PMSF readback. This turn starts the
+missing alignment-method counterpart for gene-tree discordance: all 125 MAFFT
+markers, with the same coverage rule, model search, marker seeds and 1,000
+SH-aLRT settings as the profile batch. Independently reconstructed all planned
+marker dimensions and coverage counts from matrix characters; 418–504 taxa
+remain per marker. Four two-thread IQ-TREE workers were verified live under
+a 24-GiB/no-swap service. A separate pinned runner leaves existing work intact.
+Full emitted-input/support audits and cross-alignment comparisons remain
+pending. All eight scientific aims remain open; GPU prediction stays paused.

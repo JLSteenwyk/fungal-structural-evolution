@@ -1,0 +1,38 @@
+{
+  "matrix": "results/phylogeny/mafft-matrix-50-v1",
+  "output": "results/phylogeny/mafft-marker-gene-trees-20260927-v1",
+  "markers": 125,
+  "executable": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "scripts/run_mafft_marker_gene_trees.py": "a9997734b1ff15cf4549a76b8f6d35489a21c2166301041a812c7f910cc356f5",
+    "metadata/mafft_marker_tree_input_plan_20260927.tsv": "2cb47b93eb22cb03c5a586a687cbf8f883b8106a81907db18278b7594c1700fb",
+    "results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "results/phylogeny/mafft-matrix-50-v1/matrix.faa": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+    "results/phylogeny/mafft-matrix-50-v1/partitions.nex": "6efefab7f13acb4104cd781cfc32d1e83fcc5d659450b995a9ef4ea05ab73725",
+    "results/phylogeny/mafft-matrix-50-v1/site_mapping.tsv": "3a6645b397965034419c525e71b3ac24f72f92ec42408ac4cedc8ad4b78bdf4a",
+    "results/phylogeny/mafft-matrix-50-v1/taxon_coverage.tsv": "2ea622d865c02981da14b8d3b5272260a54d74c33bb62b6a8924da2cf3caaa73",
+    "metadata/mafft_marker_tree_input_plan_readback_20260927.json": "343ca15a0c57457a69092f6a32a140e5cae112208df98f0a0b260bf61c0090c9"
+  },
+  "resources": {
+    "workers": 4,
+    "threads_per_worker": 2,
+    "total_cpu_threads": 8,
+    "iqtree_memory_gib_per_worker": 4,
+    "service_memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 10,
+    "planning_wall_hours": [
+      12,
+      168
+    ],
+    "original_profile_sum_case_seconds": 900754.3711472407,
+    "original_profile_median_case_seconds": 4579.08665802679,
+    "basis": "Full 125-marker MAFFT counterpart, more alignment columns than profile markers; original timing is reference only, not guaranteed ETA.",
+    "gpu": false,
+    "paid_resources": false,
+    "minimum_available_memory_gib": 64,
+    "minimum_free_disk_gib": 100
+  },
+  "scope": "Full marker batch; same per-marker coverage rule, hash seeds, MFP LG/WAG/JTT +F+G and 1000 SH-aLRT settings as completed profile markers. Taxon coverage differences retained for downstream common-taxon comparisons. No final species-tree or discordance-cause claim."
+}
