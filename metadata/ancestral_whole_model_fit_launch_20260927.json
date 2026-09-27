@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-ancestral-whole-model-fits-20260927.service",
+  "state": {
+    "MainPID": "515204",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 515204,
+  "created": 1790547364.73,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ancestral_whole_model_fits.py",
+    "--plan",
+    "metadata/ancestral_whole_model_fit_plan_20260927.json"
+  ],
+  "plan_sha256": "784f070559198f686ec137d75995167d7572ea668fcc486e1c95bae19e008b14",
+  "resources": {
+    "concurrent_fits": 2,
+    "threads_per_fit": 4,
+    "aggregate_cpus": 8,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours": [
+      1,
+      48
+    ]
+  }
+}

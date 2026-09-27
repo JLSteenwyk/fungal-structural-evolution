@@ -8928,3 +8928,12 @@ Full grid and serialized readback passed. No fit improved above the 0.001
 log-unit tolerance in the tested directions; maximum change 2.14938e-6.
 This finite result does not establish convergence. Full alternate-start
 branch/gamma refits and their queued audit remain active.
+
+### 2026-09-27: complete whole-protein ancestral model grid launched
+
+Started 78 fits across all26 full-protein alignments and LG/WAG/JTT models.
+All1025 original proteins retained, including three unknown X residues.
+Two concurrent four-thread fits,12GiB aggregate memory,noGPU; verified live
+and initial outputs passed tip/topology checks. Full parameter/likelihood
+audit and whole-protein ancestral probabilities remain pending. Comparisons
+to domains must account for the167 additional no-focal-domain proteins.

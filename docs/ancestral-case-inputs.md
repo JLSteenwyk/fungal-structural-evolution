@@ -665,3 +665,30 @@ at the specified grid points (maximum increase 2.14938e-6). This result only
 concerns the tested gamma/uniform-branch directions; the full alternate-start
 branch refits remain active and may find improvements outside those directions.
 Closure: `metadata/ancestral_domain_fit_neighborhood_completed_20260927.json`.
+
+## Whole-protein model fitting launched
+
+All 26 independently checked whole-protein alignments are now fitted under
+LG+F+G4, WAG+F+G4 and JTT+F+G4 (78 fits), with branch lengths and gamma shape
+optimized at epsilon 1e-6 on the complete local whole-protein topologies.
+The two guide aliases have identical tree bytes for every family and are
+fitted once. All 1,025 original proteins remain represented. The three X
+residues in one OG0000972 protein are retained as unknown amino-acid evidence;
+no sequence was discarded or silently changed. The downstream frequency and
+likelihood audit must explicitly handle X as well as alignment gaps.
+
+These whole-protein fits include 167 proteins without a retained focal domain
+annotation, unlike the domain-only fits. Therefore whole/domain comparisons
+must account for both sequence context and taxon/copy membership differences;
+we cannot attribute every contrast to domain boundaries alone. Alignment
+correspondence sensitivity and insertion/deletion uncertainty remain relevant.
+
+Prepare with `python scripts/prepare_ancestral_whole_model_fits.py`; execute
+`python scripts/run_ancestral_whole_model_fits.py --plan
+metadata/ancestral_whole_model_fit_plan_20260927.json`. Output:
+`results/ancestral/whole-protein-model-fits-20260927-v1/`. Plan and launch
+metadata freeze all inputs and record the live process. Two concurrent
+four-thread fits, aggregate eight CPUs and 12 GiB memory, no swap/GPU;
+planning estimate 1–48 hours and up to 4 GiB output. All final model reports,
+likelihoods, ancestor mappings and probabilities remain to be audited or
+inferred before any ancestral sequence is selected.
