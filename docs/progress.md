@@ -5134,3 +5134,15 @@ ties remain explicit. Known-tree fixtures passed. This CPU-only inventory
 supports future asymmetry comparisons but does not establish outgroup
 orthology, ancestral structure or a duplication effect. See
 [sister-reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: sister-reference inventory and guide comparison completed
+
+The full inventory found 17,461 profile and 17,448 MAFFT candidate rows with
+provisional immediate sister-clade references. Among shared duplicate pairs,
+17,392 are eligible in both guides: 17,365 have identical nearest-reference
+sets and 27 have disjoint sets. Parent duplication calls and absent modeled
+sisters account for most other dispositions. All original candidate fields,
+pair-universe identities, output hashes and count identities were checked;
+reference selection/path-distance reconstruction remains a separate validation
+requirement. See [reference results and limitations](duplication-sister-references-20260926.md).

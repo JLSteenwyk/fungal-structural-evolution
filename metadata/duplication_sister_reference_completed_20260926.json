@@ -1,0 +1,75 @@
+{
+  "records": [
+    {
+      "receipt_path": "results/orthology/duplication-sister-reference-inventory-20260926-v1/receipt.json",
+      "receipt_sha256": "7d6250412686cddd62a71111f92b624183d42dd84addbada095ef4c30b2d7e43",
+      "receipt": {
+        "status": "complete_duplication_sister_reference_inventory",
+        "plan_sha256": "aef846e641d7c3ebdc8aab765660e3bc786539b0f17fba9e7722300ff6e85469",
+        "guides": [
+          {
+            "guide": "profile",
+            "candidates": 109245,
+            "families": 20492,
+            "counts": {
+              "no_modeled_nonfocal_sister": 36817,
+              "parent_reported_duplication": 54891,
+              "provisional_reference_available": 17461,
+              "parent_not_bifurcating": 76
+            }
+          },
+          {
+            "guide": "mafft",
+            "candidates": 109228,
+            "families": 20474,
+            "counts": {
+              "no_modeled_nonfocal_sister": 36820,
+              "parent_reported_duplication": 54884,
+              "provisional_reference_available": 17448,
+              "parent_not_bifurcating": 76
+            }
+          }
+        ],
+        "artifacts": {
+          "mafft_sister_references.tsv": "adfe5ec37a5a9077f1ef4ad1baf623047bd857974a7e9e2c55bfb7ece377c9f4",
+          "profile_sister_references.tsv": "cab7e8f9a23da56dd0051abe995612d9b029e0c830bb0c509679b824486cb918"
+        },
+        "scope": "Immediate sister-clade availability for every reviewed terminal duplicate pair. Provisional references require a bifurcating parent not reported as duplication and no focal-taxon genes in the sister clade. Nearest modeled nonfocal tip selected by fixed sequence-tree path length, ties within 1e-12 retained with lexical representative. These are extant reference candidates, not validated orthologous outgroups or ancestral states. Parent not reported as duplication does not establish speciation. Distances are model-relative sequence divergence, not time or structural asymmetry. Reference coordinate validation, domain/functional checks and guide/reference sensitivity remain pending."
+      }
+    },
+    {
+      "receipt_path": "results/orthology/duplication-reference-guide-comparison-20260926-v1/receipt.json",
+      "receipt_sha256": "8b0d7aa808f30a9893948c521ad2b52b7157ac1748c2cd1ab5836a39e4a7127e",
+      "receipt": {
+        "status": "complete_duplication_reference_guide_comparison",
+        "source_pins": {
+          "results/orthology/duplication-sister-reference-inventory-20260926-v1/receipt.json": "7d6250412686cddd62a71111f92b624183d42dd84addbada095ef4c30b2d7e43",
+          "metadata/duplication_sister_reference_plan_20260926.json": "aef846e641d7c3ebdc8aab765660e3bc786539b0f17fba9e7722300ff6e85469",
+          "results/orthology/duplication-candidate-tree-review-20260926-v1/receipt.json": "958812c1b7591ec8bf0d9840a600529f5d8b40b1b4a7fb0ce898716f5bb709df",
+          "results/orthology/duplication-sister-reference-inventory-20260926-v1/profile_sister_references.tsv": "cab7e8f9a23da56dd0051abe995612d9b029e0c830bb0c509679b824486cb918",
+          "results/orthology/duplication-candidate-tree-review-20260926-v1/profile_candidate_tree_checks.tsv": "ee328fd4c7e7d8a5861197237aec0c67c65cbdf1e4adad663cf9182eb28a037f",
+          "results/orthology/duplication-sister-reference-inventory-20260926-v1/mafft_sister_references.tsv": "adfe5ec37a5a9077f1ef4ad1baf623047bd857974a7e9e2c55bfb7ece377c9f4",
+          "results/orthology/duplication-candidate-tree-review-20260926-v1/mafft_candidate_tree_checks.tsv": "0187c1b75bcd735dc3df73992465f0ef8799fe724ff8b74abc8770d39d3b5d27"
+        },
+        "shared_duplicate_pairs": 108918,
+        "provisional_in_both": 17392,
+        "same_chosen_reference_gene": 17365,
+        "same_chosen_reference_model": 17365,
+        "relations": {
+          "same_nearest_reference_set": 17365,
+          "not_provisional_in_both": 91526,
+          "profile_only_candidate": 327,
+          "mafft_only_candidate": 310,
+          "disjoint_nearest_reference_sets": 27
+        },
+        "script_sha256": "008c1d062d8d9819d7d46be623e42f60f480e29a0bce5b8d57a35fd4cc1b5f11",
+        "artifacts": {
+          "eligibility_matrix.tsv": "3adf1bb4d983929eafe7437a877d86bc676745f8f9648239584d893f7884c554",
+          "pair_reference_comparison.tsv": "3bfdbec44ec74513cb42cf35ac4de60a625585d9fc5dece9d1aa8e69a32ec9f0"
+        },
+        "scope": "Every original candidate field and full pair universe rechecked; eligibility and nearest-reference sets compared by protein identities, preserving ties. Does not independently reconstruct sister-clade selection or path distances. Agreement is a guide sensitivity result, not validation of reference orthology, ancestral state, structure quality or an asymmetry effect."
+      }
+    }
+  ],
+  "verification": "Inventory service exit zero; source plan/pins, all output artifacts and count identities rechecked. Comparison independently verifies all original candidate columns and pair universe; sister-clade selection/path distances not independently reconstructed."
+}

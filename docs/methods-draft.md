@@ -511,3 +511,19 @@ or topology estimation uncertainty, fully resolve phylogenetic dependence
 across markers, or remove circularity from sequence-derived predictions.
 See [conditional site coupling](conditional-site-coupling.md) for provenance,
 reproduction, numerical diagnostics, results and the full sensitivity figure.
+
+
+## Provisional extant references for terminal duplicate pairs
+
+For each structurally covered terminal duplicate tip pair, we inventoried
+modeled nonfocal proteins in its immediate resolved-tree sister clade.
+Provisional eligibility required a bifurcating parent absent from the native
+duplication table and no focal-taxon genes in the sister clade. Missing models,
+reported parent duplications and multifurcations were retained explicitly.
+The nearest modeled reference was defined using sequence-tree path length;
+all ties within 1e-12 were retained, with a lexical representative for
+deterministic bookkeeping. Pair identities, eligibility and complete tied
+reference sets were compared between reconciliation guides. These are
+provisional extant references; unreported duplication is not evidence of
+speciation, and rooting, hidden paralogy, structural quality and reference
+sensitivity require additional assessment before asymmetry inference.

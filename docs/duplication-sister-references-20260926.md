@@ -49,3 +49,63 @@ The inventory is running. Independent readback, cross-guide reference
 agreement, reference model quality and domain checks, structural comparisons
 to references, alternative-reference sensitivity and asymmetry tests remain
 pending. This step does not establish any duplication-associated effect.
+
+
+## Completed inventory and guide comparison
+
+Both full scans completed and the service exited successfully. Every candidate
+received a disposition:
+
+| Immediate-reference disposition | Profile | MAFFT |
+| --- | ---: | ---: |
+| Provisional reference available | 17,461 | 17,448 |
+| Parent reported as a duplication | 54,891 | 54,884 |
+| No modeled nonfocal sister protein | 36,817 | 36,820 |
+| Parent not bifurcating | 76 | 76 |
+| Total candidate rows | 109,245 | 109,228 |
+
+The categories follow the documented priority order; for example, an event
+with a reported parent duplication may also lack a modeled reference. They
+are not mutually exclusive biological explanations. The table reports the
+single output disposition for each candidate.
+
+`scripts/compare_duplication_sister_references.py` independently checked all
+original candidate columns and the complete protein-pair universe against
+the prior reviewed exports. Among 108,918 shared duplicate pairs, 17,392 are
+provisionally eligible under both guides. For 17,365, the complete nearest
+reference sets agree and the chosen reference gene/model also agrees. The
+remaining 27 have disjoint nearest-reference sets; none have partially
+overlapping sets. These cases remain explicit for later reference sensitivity.
+
+Among shared pairs, 28 are provisionally eligible only in profile (13 lack a
+modeled reference in MAFFT; 15 have a reported parent duplication there).
+Nineteen are provisionally eligible only in MAFFT (one lacks a modeled
+reference in profile; 18 have a reported parent duplication there). Separately,
+41 profile-only and 37 MAFFT-only duplicate candidates have provisional
+references. The complete eligibility matrix is
+[`metadata/duplication_reference_guide_eligibility_matrix_20260926.tsv`](../metadata/duplication_reference_guide_eligibility_matrix_20260926.tsv).
+
+Source-plan pins, receipts, all output artifact hashes and count identities
+were rechecked and archived in
+`metadata/duplication_sister_reference_completed_20260926.json`. This comparison
+does not independently reconstruct sister-clade selection or path distances.
+High cross-guide agreement is not proof of orthologous reference assignment
+or a structural-asymmetry effect. Most candidate pairs still need deeper
+gene-tree/context review or additional reference coverage; they remain in
+the broader duplication project.
+
+Reference-set fixtures passed shared/guide-only, unavailable, identical,
+overlapping and disjoint cases; an empty provisional set was rejected.
+Reproduce with `python scripts/check_duplication_reference_comparison.py`.
+Reproduce the full comparison with:
+
+```bash
+python scripts/compare_duplication_sister_references.py \
+  --inventory results/orthology/duplication-sister-reference-inventory-20260926-v1 \
+  --plan metadata/duplication_sister_reference_plan_20260926.json \
+  --review results/orthology/duplication-candidate-tree-review-20260926-v1 \
+  --output <fresh-output-directory>
+```
+
+Current comparison output is
+`results/orthology/duplication-reference-guide-comparison-20260926-v1/`.
