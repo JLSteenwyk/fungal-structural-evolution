@@ -592,3 +592,30 @@ coordinate readback, both-mask/order comparisons and independent numeric
 verification. Within-domain results will help separate fold changes from
 whole-chain orientation differences. They do not alone establish domain
 homology, biological orthology, inherited change, or functional effects.
+
+## Domain overlap checked and coordinate extraction queued
+
+Exact inventory comparison found 737 shared interval descriptors but **zero
+shared domain pairs** between the background inventory and the existing target/
+reference domain inventory. All shared descriptors, including raw-source hashes,
+sequence identities and bounds, agree. Thus all 66,929 background domain pairs
+require new measurements; no earlier pair result is being reused. The overlap
+record does not certify existing coordinate serialization or native results.
+Reproduce it with `scripts/check_background_domain_overlap.py --background
+results/structural_comparisons/background-domain-pairs-20260927-v1 --existing
+results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1
+--output metadata/background_domain_overlap_20260927.json`.
+
+Queued `fungal-background-domain-inputs-20260927.service` behind the verified
+live background coordinate-audit identity. It streams the three disjoint audited
+coordinate collections and extracts all 131,986 domain intervals across 54,004
+source models, producing 263,972 full/pLDDT70 dispositions. Every shard proof,
+source identity and complete interval universe is checked. Original residue
+positions are retained, with rejected sources and short masks explicit.
+
+The three-source six-disposition fixture passed independent PDB coordinate,
+confidence and original-position parsing, invalid-bound checks and altered-proof
+rejection. One CPU, 8 GiB RAM, no swap, 8 GiB estimated output and a 100 GiB disk
+reserve are configured. Planning is 0.5–24 hours after the audit wait; this is
+uncalibrated. No GPU or paid resources are used. Production extraction,
+independent serialization readback and domain comparisons remain pending.

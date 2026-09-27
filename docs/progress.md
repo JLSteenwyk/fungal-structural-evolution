@@ -6487,3 +6487,16 @@ remain pending. See [domain inventory](terminal-sister-backgrounds-20260927.md#b
 The preceding turn completed the taxon support diagnostic; this turn completes
 and verifies the full domain workload inventory. All eight scientific aims
 remain in scope. The goal stays active and GPU prediction remains paused.
+
+## September 27 background domain extraction queued
+
+Checked exact overlap with the existing target/reference domain inventory:
+737 shared intervals, zero shared pairs, so all 66,929 background domain pairs
+need new measurements. Prepared and tested three-source extraction, then queued
+all 131,986 intervals (263,972 masked dispositions) after the live background
+coordinate audit. Independent serialization readback and native comparisons
+remain pending. See [overlap and extraction](terminal-sister-backgrounds-20260927.md#domain-overlap-checked-and-coordinate-extraction-queued).
+
+The previous goal turn completed domain inventory verification; this turn
+advances its complete coordinate-input stage. The original eight aims remain
+active and GPU prediction remains paused.

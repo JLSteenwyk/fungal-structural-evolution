@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-domain-inputs-20260927.service",
+  "pid": 2052536,
+  "created": 1790501654.61,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_background_domain_inputs.py",
+    "--plan",
+    "metadata/background_domain_input_plan_20260927.json"
+  ],
+  "plan": "metadata/background_domain_input_plan_20260927.json",
+  "plan_sha256": "b5c0789c7ab888c4c63fa16ecf99c46d4fe707cd9209727d92e27f827db66732",
+  "fixture_status": "passed_three_source_six_disposition_handoff_original_positions_coordinate_confidence_bounds_short_mask_source_rejection_and_altered_proof"
+}
