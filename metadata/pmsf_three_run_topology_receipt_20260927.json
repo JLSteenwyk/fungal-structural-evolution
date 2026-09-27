@@ -1,0 +1,69 @@
+{
+  "status": "complete_three_run_pmsf_topology_comparison_pending_readback",
+  "taxa": 526,
+  "runs": {
+    "profile_profile": [
+      "pmsf-profile-profile-recovery-v2",
+      "pmsf-profile-profile-readback-v1"
+    ],
+    "profile_mafft": [
+      "pmsf-profile-mafft-v1",
+      "pmsf-profile-mafft-readback-v1"
+    ],
+    "mafft_profile": [
+      "pmsf-mafft-profile-v1",
+      "pmsf-mafft-profile-readback-20260927-v1"
+    ]
+  },
+  "comparisons": [
+    {
+      "run_a": "profile_profile",
+      "run_b": "profile_mafft",
+      "shared_internal_splits": 516,
+      "unique_internal_splits_a": 7,
+      "unique_internal_splits_b": 7,
+      "rf_distance": 14,
+      "normalized_rf": 0.01338432122370937,
+      "incompatible_split_pairs": 17,
+      "both_supported_incompatible_pairs": 0
+    },
+    {
+      "run_a": "profile_profile",
+      "run_b": "mafft_profile",
+      "shared_internal_splits": 493,
+      "unique_internal_splits_a": 30,
+      "unique_internal_splits_b": 30,
+      "rf_distance": 60,
+      "normalized_rf": 0.05736137667304015,
+      "incompatible_split_pairs": 72,
+      "both_supported_incompatible_pairs": 1
+    },
+    {
+      "run_a": "profile_mafft",
+      "run_b": "mafft_profile",
+      "shared_internal_splits": 499,
+      "unique_internal_splits_a": 24,
+      "unique_internal_splits_b": 24,
+      "rf_distance": 48,
+      "normalized_rf": 0.045889101338432124,
+      "incompatible_split_pairs": 43,
+      "both_supported_incompatible_pairs": 1
+    }
+  ],
+  "shared_all_three": 493,
+  "sources": {
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json": "b2642f338eb34116f1046c75c2d58ded71ad610482ec38cdfd5243e5a3ee2591",
+    "results/phylogeny/pmsf-profile-profile-readback-v1/receipt.json": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+    "results/phylogeny/pmsf-profile-mafft-v1/receipt.json": "1a40206961cb0caa110551398ec30a74e4c3e385295506a8a580960eac27c41e",
+    "results/phylogeny/pmsf-profile-mafft-readback-v1/receipt.json": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+    "results/phylogeny/pmsf-mafft-profile-v1/receipt.json": "3eaab8eb80db419d44f094c6595c4958488622794bfdd959b5ddd9654c5b7137",
+    "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1/receipt.json": "f29ae5791d1f09c55e2e988cb183423d972a147e83842c3b71b28bb0f890f107"
+  },
+  "script_sha256": "a4122c3b618e544dbdcb888ea0a797c9794e347e316d328a8911007c05520219",
+  "artifacts": {
+    "split_presence.tsv": "4a343dcecba62dd6d87fe1a85d56305b7e21e6467150b55212809d610dc34dfb",
+    "comparisons.tsv": "73f5d04dbf27a6ed700db9d46faa97c22224de7c5054cd3773452c250d82c1c0",
+    "conflicts.tsv": "a4575a14af0e638ed3f7130e8542c85974a95e3bb8424e3a481ca39ff3132c58"
+  },
+  "scope": "All ML splits and incompatible unique-split pairs retained. Existing high-support label means SH-aLRT >=80 and empirical UFBoot >=95 on both splits; not correctness or significance. Different alignments have different site universes; neither raw likelihood nor site-profile comparisons are used. Fourth crossed run, consensus sensitivity, rooting, adequacy and discordance remain pending."
+}

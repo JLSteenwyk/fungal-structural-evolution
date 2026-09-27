@@ -7237,3 +7237,17 @@ label. ML and reoptimized consensus differ by RF four, so both remain in the
 framework sensitivity analysis. The fourth run and other framework checks
 remain pending; no final species tree is declared. See the new MAFFT/profile
 readback report. All eight scientific aims remain open; GPU prediction is paused.
+
+## September 27 three-run species-tree sensitivity verified
+
+The preceding turn completed the third PMSF audit. This turn compares all
+three validated ML trees and independently reconstructs their full split grids
+and incompatibility records using DendroPy. All three share 493/523 internal
+splits. Profile-guide sensitivity on one alignment has RF14; comparisons to
+the MAFFT alignment have RF60 and RF48. One distinct supported conflict is
+repeated in the two cross-alignment comparisons within Saccharomyces, involving
+a region that includes both hybrid entries. This is a sensitivity concern, not
+a demonstrated biological explanation or two independent conflicts. All 132
+incompatible pair records remain available without filtering by support.
+The fourth run and remaining framework sensitivities are still required.
+All eight scientific aims remain open and GPU prediction stays paused.
