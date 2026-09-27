@@ -148,3 +148,24 @@ was inspected in the browser, but its separate local download returned HTTP
 403; no local snapshot is claimed. Existing classification and coverage tables
 remain frozen. Incorporating the new independent Dacryopinax statement into a
 versioned expanded analysis is the next step.
+
+## Eight-taxon coverage update
+
+A versioned expansion now adds the independently sourced Dacryopinax primogenitus
+brown-rot statement. The original seven evidence rows are preserved exactly.
+The new species has 116 eligible AlphaFold markers and no eligible ESMFold
+markers. Across all eight taxa, AlphaFold supplies at least one 50-column marker
+for 26 of 28 pairs; ESMFold still supplies three pairs, all among white-rot taxa.
+The table now has four white-rot, two brown-rot and two uncertain classifications.
+Two brown-rot labels are not themselves evidence of two independent origins.
+
+Both full matrix readbacks passed. A separate comparison verified exact
+preservation of all original taxon, pair and pair-marker rows. Category-level
+summaries were recalculated because the brown-rot category gained a member.
+The frozen seven-taxon outputs remain intact. Preparation is reproducible with
+`scripts/extend_wood_decay_coverage.py`; use the
+`metadata/qualified_{afdb,esmfold}_wood_decay_v2_plan_20260927.json` plans for
+coverage and readback, with fresh paths when rerunning. Completion evidence is
+`metadata/wood_decay_coverage_v2_completed_20260927.json`.
+Full outputs are under `results/ecology/qualified-{afdb,esmfold}-wood-decay-overlap-20260927-v2`.
+As before, the one-CPU, 4-GiB, 1–10-minute per-stage allowance used no GPU.

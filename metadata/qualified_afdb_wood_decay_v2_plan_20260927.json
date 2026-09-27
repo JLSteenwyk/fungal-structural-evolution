@@ -1,0 +1,37 @@
+{
+  "evidence": "metadata/wood_decay_coverage_evidence_v2_20260927.tsv",
+  "evidence_receipt": "metadata/wood_decay_coverage_evidence_v2_receipt_20260927.json",
+  "inputs": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+  "input_readback": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json",
+  "output": "results/ecology/qualified-afdb-wood-decay-overlap-20260927-v2",
+  "minimum_shared_columns": 50,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 0.02,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/wood_decay_coverage_evidence_20260927.tsv": "ba4a4ff1a7dc660a265f4164ee0bbff5f3ebc9f9fcc06dc4ca2dfd9acc6bc4a1",
+    "metadata/wood_decay_coverage_evidence_receipt_20260927.json": "531c00dba09b7e199fa96589db47c360dde432c0ca07414c9abd995d938fbab1",
+    "metadata/wood_decay_primary_species_receipt_20260927.json": "70e57cfb73d4cee8feed14d258f0b882adfe422c93722da617ccd64e3231e361",
+    "metadata/wood_decay_primary_species_20260927.tsv": "d9de8893719725314e216e7ccbfcabe13be98b7ba404c3fab346c9e35c95c0d6",
+    "config/wood_decay_primary_species_20260927.json": "479dae0d8562403f4f5c824bd6257c16c22dc87c40fa78f40af96d3a465c7ebd",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json": "26010266e2ab3aa59c7fee6ff766f458a75e38df4a2368e4bf5d3553daeed565",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "scripts/readback_qualified_ecology_overlap.py": "b6dc57186b1cab36ca71be34a8f666b30da481e5e3e206c7eb57e95db87156d8",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "scripts/prepare_wood_decay_coverage.py": "42094d5f7d742a80bd4b89db1a84a05d01d65af4869950b8b71a84de38af7739",
+    "scripts/assess_qualified_afdb_ecology_overlap.py": "4e179af164535e29dbcb352ac43072db4f7df35fcefeb047b5a3b9d9aa2c6b71",
+    "metadata/wood_decay_coverage_evidence_v2_20260927.tsv": "2b495b9151d2efdb82288dbb3f3a8d8954bffa3a6d50cddd20fc5762e2188c8b",
+    "metadata/wood_decay_coverage_evidence_v2_receipt_20260927.json": "2f22774cc7efa9df204e6706398c7f922cf47a830fa0d6f545a572facb043409",
+    "metadata/qualified_afdb_wood_decay_plan_20260927.json": "5f51516c7f8cfc3834e17a9893f4e05ee4332d2879429474afdc9f56b0f03e6f",
+    "metadata/wood_decay_name_review_20260927.json": "423e8cf522e82360533cff3d7cb8ce8c2463471ac9078e6ec0b88c6e5202600d",
+    "scripts/extend_wood_decay_coverage.py": "b07f28418bc6bd8273ec777d9245fe1b339c622d584e6c40f224816cef114228"
+  }
+}
