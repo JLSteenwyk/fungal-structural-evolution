@@ -5785,3 +5785,21 @@ altered curvature, rank, status and ratio fields. The producer had processed
 [readback launch](../metadata/duplication_domain_geometry_readback_launch_20260927.json)
 and [updated geometry methods](duplication-domain-alignment-geometry-20260927.md).
 Full output and independent verification remain pending.
+
+
+## September 27 full domain geometry execution complete
+
+The geometry producer completed all 280,824 successful directed alignments:
+140,790 full-mask and 140,018 pLDDT70 alignments have unique proper-rotation
+fits at the stated numerical tolerance. The remaining 16 pLDDT70 alignments
+are numerically degenerate; every one has only two matched residues. The
+known native RMSD mismatch remains explicitly flagged.
+
+Verified all plan pins, artifact hashes, the exact diagnostic key/length/status
+grid, finite table values and aggregate counts. The
+[execution checkpoint](../metadata/duplication_domain_geometry_execution_completed_20260927.json)
+records those checks and the exact live independent-readback process. It does
+not independently recompute spectra or curvature. The full quaternion-based
+readback started automatically and has checked more than 20,000 records;
+its completion and downstream integration remain pending. Numerical uniqueness
+is not a statement of prediction accuracy or biological significance.

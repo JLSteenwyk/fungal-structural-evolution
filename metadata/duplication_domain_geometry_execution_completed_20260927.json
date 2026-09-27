@@ -1,0 +1,149 @@
+{
+  "status": "verified_domain_geometry_execution_pending_full_independent_readback",
+  "producer_receipt_sha256": "5b901cd8b53d970a518cc40121525efa80970f43f8f82d9318b1c44402ba0354",
+  "receipt": {
+    "status": "complete_domain_alignment_geometry_pending_independent_readback",
+    "plan_sha256": "71c4ef200f649a4424b765781d0e225a1e65e831c86768f7e57cd00bd1eb8c9c",
+    "diagnostic_receipt_sha256": "baefebd99f32daac913ca4074a88bd6c1e81a14905901bd7ccb99b7148cd49e1",
+    "alignments": 280824,
+    "counts": {
+      "full:unique_at_numeric_tolerance": 140790,
+      "plddt70:unique_at_numeric_tolerance": 140018,
+      "plddt70:degenerate_at_numeric_tolerance": 16
+    },
+    "maximum_rmsd_discrepancy": 0.006495888310062148,
+    "artifacts": {
+      "alignment_geometry.tsv": "56094fb6589b3cea3cf1e558409e9742dc9129db2befc434a2de89bedf0a45c3"
+    },
+    "scope": "All successful directed domain alignments; native mappings and numeric diagnostic rechecked from hashed PDBs, coordinate singular spectra and optimal proper-rotation curvature recorded. Numerical identifiability, not prediction accuracy or stability to coordinate/model uncertainty. Existing RMSD quarantine unchanged; no biological inference."
+  },
+  "plan_sha256": "71c4ef200f649a4424b765781d0e225a1e65e831c86768f7e57cd00bd1eb8c9c",
+  "exact_numeric_key_grid_checked": true,
+  "finite_table_values_checked": true,
+  "degenerate_alignments": [
+    {
+      "pair_key": "02a7253a1dce4bd718fc1bde174f94a307a0cef35350acc8059af51d2d3dd81a",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "0631b35e9c0fb185e6fca8ff085d1d22a2a20a9d5983a15cd9e20bc84d0314e3",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "0631b35e9c0fb185e6fca8ff085d1d22a2a20a9d5983a15cd9e20bc84d0314e3",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "068ac6df41c80597dc4627af7067f4d40036726aa3f21122db33abe4d0af0769",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4850867c7f7ed7695dd2b478e26df258fde5e68ea57ab098f02a8bfdd3ff0808",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4850867c7f7ed7695dd2b478e26df258fde5e68ea57ab098f02a8bfdd3ff0808",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4ea28c0220c7cacb4512a3fa21e6bc8c2e1f2465684d8e63d9e4dcd3ff23bbd1",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4ea28c0220c7cacb4512a3fa21e6bc8c2e1f2465684d8e63d9e4dcd3ff23bbd1",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "7fd6b51249b8d831b1e6b1e908054371b87a1923eab94c81727a1d83fef123c6",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "7fd6b51249b8d831b1e6b1e908054371b87a1923eab94c81727a1d83fef123c6",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d6836037563ee34bac26b9655d95f9fd9138d4d8eb07684422184e4ddf70629d",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d6836037563ee34bac26b9655d95f9fd9138d4d8eb07684422184e4ddf70629d",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "ee826e95324f399bc82882b47316d2dd361ae5e656a7c82b422b6f019e153447",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "ee826e95324f399bc82882b47316d2dd361ae5e656a7c82b422b6f019e153447",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+      "mask": "plddt70",
+      "order": "0",
+      "aligned_length": "2",
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "f359ce6a0b94269285fedc050f6b9aa3e82ded87b37821fd07d21f4ee9fcd641",
+      "mask": "plddt70",
+      "order": "1",
+      "aligned_length": "2",
+      "rmsd_status": "outside_printed_rounding"
+    }
+  ],
+  "readback_process": {
+    "pid": 2983122,
+    "created": 1790492006.81,
+    "status": "running",
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_domain_alignment_geometry.py",
+      "--plan",
+      "metadata/duplication_domain_geometry_readback_plan_20260927.json"
+    ]
+  },
+  "scope": "Execution checkpoint checks all pins, artifact hashes, exact diagnostic key/length/status correspondence, finite values and counts. This checkpoint does not independently recalculate coordinate spectra or rotation curvature; that full readback is running."
+}
