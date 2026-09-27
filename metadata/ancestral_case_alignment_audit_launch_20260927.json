@@ -1,0 +1,23 @@
+{
+  "unit": "fungal-ancestral-case-alignment-audit-20260927.service",
+  "pid": 464979,
+  "created": 1790544103.68,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ancestral_case_alignments.py",
+    "--plan",
+    "metadata/ancestral_case_alignment_audit_plan_20260927.json"
+  ],
+  "plan_sha256": "94cf657a10d00821bf3ad9ec1d05ca2957f690696f8e371407bf52fc7709e3f1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_hours_after_alignments": [
+      0.1,
+      2
+    ]
+  },
+  "status": "verified_live_waiting_for_all_alignments"
+}

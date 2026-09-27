@@ -8770,3 +8770,11 @@ FAMSA. Four CPUs, 8 GiB RAM, no swap or GPU; plan 0.25–24 hours. Both first-fa
 outputs passed exact sequence/copy preservation checks. Full output audit and
 residue-correspondence sensitivity remain pending; ancestral inference has not
 started. See `docs/ancestral-case-inputs.md` for the frozen plan and provenance.
+
+### 2026-09-27: full ancestral alignment readback and comparison queued
+
+Launched a one-CPU downstream checker for all 26 alignments after successful
+terminal production. Checks cover every sequence, occupancy count and residue
+coordinate; outputs compare full-clade columns and focal duplicate pair maps
+separately. No alignment or ancestral biological result is claimed while the
+producer and checker are still running.

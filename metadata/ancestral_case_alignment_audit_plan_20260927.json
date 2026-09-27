@@ -1,0 +1,123 @@
+{
+  "producer": {
+    "unit": "fungal-ancestral-case-alignments-20260927.service",
+    "pid": 462126,
+    "created": 1790543949.26,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_ancestral_case_alignments.py",
+      "--plan",
+      "metadata/ancestral_case_alignment_plan_20260927.json"
+    ],
+    "plan_sha256": "d2890d4553b76728cb7176f7d45e4190469780e79fdd61fc276ca5ddcdb17738",
+    "resources": {
+      "cpus": 4,
+      "workers": 1,
+      "memory_gib": 8,
+      "swap_gib": 0,
+      "output_gib": 1,
+      "planning_hours": [
+        0.25,
+        24
+      ],
+      "basis": "26 sequential alignments; largest clade 622 proteins, maximum protein length 1091. Existing host only, no GPU or paid resources."
+    },
+    "status": "verified_live_alignment_producer",
+    "children": [
+      {
+        "pid": 463410,
+        "created": 1790543976.41,
+        "cmdline": [
+          "/bin/bash",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft",
+          "--amino",
+          "--localpair",
+          "--maxiterate",
+          "1000",
+          "--thread",
+          "4",
+          "--threadit",
+          "0",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-sequences-20260927-v1/OG0000972.faa"
+        ]
+      },
+      {
+        "pid": 463523,
+        "created": 1790543976.59,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions//libexec/mafft/tbfast",
+          "_",
+          "-u",
+          "0.0",
+          "-l",
+          "2.7",
+          "-C",
+          "4",
+          "-P",
+          "-b",
+          "62",
+          "-g",
+          "-0.100",
+          "-f",
+          "-2.00",
+          "-Q",
+          "100.0",
+          "-h",
+          "0.1",
+          "-L",
+          "_",
+          "-+",
+          "16",
+          "-W",
+          "0.00001",
+          "-V",
+          "-1.53",
+          "-s",
+          "0.0",
+          "-O",
+          "-C",
+          "4",
+          "-P",
+          "-b",
+          "62",
+          "-f",
+          "-1.53",
+          "-Q",
+          "100.0",
+          "-h",
+          "0",
+          "-F",
+          "-l",
+          "2.7",
+          "-X",
+          "0.1"
+        ]
+      }
+    ]
+  },
+  "producer_plan": "metadata/ancestral_case_alignment_plan_20260927.json",
+  "runs": "results/ancestral/case-alignments-20260927-v1",
+  "inputs": "results/ancestral/case-sequences-20260927-v1",
+  "cases": "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/case_dossiers.tsv",
+  "output": "results/ancestral/case-alignment-readback-20260927-v1",
+  "pins": {
+    "metadata/ancestral_case_alignment_launch_20260927.json": "30f75e73c05ba02b2994066f4ad0a49d1a63940950ca7e0d313bfe88c3dcb5e2",
+    "metadata/ancestral_case_alignment_plan_20260927.json": "d2890d4553b76728cb7176f7d45e4190469780e79fdd61fc276ca5ddcdb17738",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/case_dossiers.tsv": "3948e0657d8b330da911416210a3ea856ac30702ca21b2a7f6b777eac4434ff2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2",
+    "scripts/audit_ancestral_case_alignments.py": "1d92c215d4359583e642f292ec78b52cc72f8018552f40604be81116b21d13ae",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/case-sequences-20260927-v1/receipt.json": "e26ed0c74c3b8c33b093ce9da7986219fe3e8e7a1bd83caf891cb065ae132966"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_hours_after_alignments": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Complete 26-output preservation/occupancy checks, full-column position-vector comparison and all focal duplicate residue-pair comparisons. No extra alignments or GPU jobs."
+}

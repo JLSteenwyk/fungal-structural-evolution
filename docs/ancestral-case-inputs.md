@@ -109,3 +109,27 @@ can be reused only with matching settings and checksums. An unfinished run
 directory is preserved and requires explicit recovery rather than silent
 overwriting. Full independent output audit, residue-correspondence comparison,
 domain/fragment assessment and reconstruction sampling decisions remain pending.
+
+## Full alignment readback and correspondence comparison queued
+
+The downstream checker waits for successful terminal completion of all 26
+alignments, validating the producer identity while it runs. It will independently
+reconstruct every original sequence and residue position, every coverage column
+and all threshold counts. All IDs, source receipts and artifact checksums must
+match the frozen input and execution records.
+
+For each family, exact full-column correspondence between MAFFT and FAMSA uses
+the complete vector of residue positions (or gaps) across all proteins. This
+criterion is deliberately stringent: one changed protein can break a full-column
+match. All columns, occupancies and matched alternative column numbers are
+retained. Focal duplicate residue-pair correspondences are compared separately
+so that full-clade and focal-pair sensitivity can be distinguished. Neither
+agreement fraction is a probability that a column is homologous. No trimming
+is applied based on these diagnostics.
+
+The checker uses one CPU and 4 GiB RAM, no swap, with a 0.5 GiB output allowance
+and a planned 0.1–2 hours after alignment completion. Script:
+`scripts/audit_ancestral_case_alignments.py`. Plan and exact live identity:
+`metadata/ancestral_case_alignment_audit_plan_20260927.json` and
+`metadata/ancestral_case_alignment_audit_launch_20260927.json`.
+Full validation and alignment-sensitivity results remain pending.
