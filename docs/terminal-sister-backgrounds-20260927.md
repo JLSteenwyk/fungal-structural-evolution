@@ -391,3 +391,32 @@ and a new `fungal-background-domain-readback-20260927-v2` service launched.
 The failed launch and replacement are recorded in
 `metadata/background_domain_control_produced_20260927.json`; no producer data
 were rerun or overwritten.
+
+## Conserved-architecture support assessment running
+
+`assess_architecture_matched_support.py` extends the verified family/sequence
+support diagnostic to all four domain policies. Every one of the 218,473 target
+records is retained under all three native-orthology qualification sets and all
+four policies, producing 2,621,676 target/set/policy records. A qualified pool
+requires the two background proteins and both target proteins to have the same
+nonempty ordered signature of versioned Pfam accessions and types, with every
+retained hit marked conservative under that policy. Repeats, order and versions
+remain part of identity. This defines a within-conserved-architecture analysis;
+it does not replace the separate aim of studying architecture-changing events.
+
+Targets with neither model annotated, one model unannotated, different ordered
+annotations, or a shared but nonconservative signature retain explicit status
+and zero support under this particular comparison rule. Missing annotations are
+not coded as a matching empty architecture. Identical-model targets/backgrounds
+remain represented. Focal/nonfocal counts and all three sequence-distance ranges
+are recomputed within each family/signature pool and must not exceed the prior
+unrestricted support counts. The analysis uses no structural response variable.
+
+Plan: `metadata/architecture_matching_support_plan_20260927.json`; output:
+`results/orthology/architecture-matched-background-support-20260927-v1`.
+One CPU, 8 GiB RAM, no swap and 4 GiB output are budgeted with a 0.1–4 hour
+planning range. Known shared/missing/nonconservative/content/repeat/order cases
+passed (`scripts/check_architecture_support_cases.py`). Production is running;
+full independent output validation remains required. Length, prediction
+confidence, coordinate coverage and phylogenetic dependence are still outside
+this support diagnostic and remain necessary for final matching/inference.

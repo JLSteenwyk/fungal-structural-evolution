@@ -6376,3 +6376,21 @@ producer was restarted. Coordinate validation continues independently.
 The previous turn verified matching support and queued coordinate readback;
 this turn adds the domain/architecture information required for comparable
 backgrounds. The full objective remains active and GPU prediction remains paused.
+
+## September 27 conserved-architecture matching support launched
+
+Started the full 2,621,676-row target/set/policy support assessment using both
+verified domain inventories and verified family/sequence support. It requires
+all four proteins in a potential target/background contrast to share one
+nonempty conservative ordered annotation signature. All targets remain explicit,
+including missing, different and nonconservative architectures; none are
+silently removed or matched through empty annotations. Three distance ranges,
+focal/nonfocal pools, both guide alternatives and all four policies are retained.
+Known architecture cases passed. Production and full readback remain pending.
+See [design and scope](terminal-sister-backgrounds-20260927.md#conserved-architecture-support-assessment-running).
+
+The preceding turn completed and verified background domain controls. This turn
+uses those controls to advance the matching design while existing coordinate
+validation continues. Whole-architecture change remains a separate scientific
+question; this diagnostic does not narrow the project to conserved architectures.
+The full goal remains active and GPU prediction remains paused.

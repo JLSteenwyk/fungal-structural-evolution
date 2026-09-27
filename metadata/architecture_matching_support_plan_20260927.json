@@ -1,0 +1,62 @@
+{
+  "verified_sources": [
+    {
+      "receipt": "results/structural_comparisons/duplication-domain-controls-20260926-v1/receipt.json",
+      "readback": "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json",
+      "readback_status": "passed_full_duplication_domain_control_readback"
+    },
+    {
+      "receipt": "results/structural_comparisons/background-domain-controls-20260927-v1/receipt.json",
+      "readback": "metadata/background_domain_control_completed_readback_20260927.json",
+      "readback_status": "passed_full_background_domain_control_readback"
+    },
+    {
+      "receipt": "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json",
+      "readback": "metadata/background_measurement_inventory_completed_readback_20260927.json",
+      "readback_status": "passed_full_background_measurement_inventory_readback"
+    },
+    {
+      "receipt": "results/orthology/background-matching-support-20260927-v1/receipt.json",
+      "readback": "metadata/background_matching_support_completed_readback_20260927.json",
+      "readback_status": "passed_full_background_matching_support_readback"
+    }
+  ],
+  "annotation_tables": [
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/model_annotations.jsonl"
+  ],
+  "background_links": "results/structural_comparisons/background-measurement-inventory-20260927-v1/candidate_measurement_links.tsv",
+  "target_links": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv",
+  "support_table": "results/orthology/background-matching-support-20260927-v1/target_support.tsv",
+  "output": "results/orthology/architecture-matched-background-support-20260927-v1",
+  "pins": {
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/receipt.json": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+    "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json": "0dd82c0359ced0669b450eb35f9c3921a22877ea7d0db1dea5a2b4388e994a6c",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl": "7423c03ac2abf93f659b538f76de8358133f135fe75c82c5bd1dccdec4d48e22",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/receipt.json": "d5db88ffa7a194eb7589fb1d16de16b40be9d58986c871ac20421d08f8bc6773",
+    "metadata/background_domain_control_completed_readback_20260927.json": "a56c9bc8999a2d7f84a8006a0ae065c1e5a59c71a33edc21d27cc4d70a20bb98",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/model_annotations.jsonl": "64e7dee0ffec1dcfd75865c380eff62e9cd28a5e9a4602ba261cce4ab44b5e76",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "metadata/background_measurement_inventory_completed_readback_20260927.json": "4b5e4076a05ca87b8d1c07a7fb574ae6d5c152dd1304a2d469f217dd80af489c",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/candidate_measurement_links.tsv": "5077fe8023549368376d57ecbd6586da3d8fafe7f60cf7a95f9b9d3843bc9ca6",
+    "results/orthology/background-matching-support-20260927-v1/receipt.json": "67cc244a00a76bf5101de8b4ac6689116d1c46d9bed40d768a100d94e4b3522e",
+    "metadata/background_matching_support_completed_readback_20260927.json": "95c2dd33c96595da7a334c494894988a6cc05e130a51fa9a89aef9cb736219ae",
+    "results/orthology/background-matching-support-20260927-v1/target_support.tsv": "c7e4a4c6914bd7dfbc19e47c1ca38effa375988c0bad5ff1766417bb5e4e24a2",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd",
+    "scripts/assess_architecture_matched_support.py": "109f6d536968520776a0010de5d8ce2caf939a4f307a44b085d1fca7159dbbfb",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 4,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "expected_rows": 2621676,
+    "basis": "218473 targets x three background qualification sets x four annotation policies. Reduced signature cache and sorted family/signature distance pools; no Cartesian expansion or structural outcome selection. Existing CPU only."
+  }
+}
