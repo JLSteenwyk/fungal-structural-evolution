@@ -7981,3 +7981,19 @@ its independent readback is active. Full joint support and certificate readback
 are queued behind successful prerequisite verification. Both polynomial degrees
 retain exact matrix/row identities and unresolved cases. No nonlinear fit launched.
 [Scope and resources](nonlinear-identity-contrasts-20260927.md).
+
+### September 27: primary whole-protein alignment production finished
+
+The primary alignment service terminated successfully at 13:54 EDT after
+processing all 412,800 directed tasks across 103,200 model pairs. Outcomes were
+206,400 full alignments, 181,246 confidence-filtered alignments and 25,154
+unavailable confidence-filtered inputs. No native-error, parse-error or timeout
+dispositions were reported. Complete pair/mask/order coverage and manifest
+bindings were independently checked by `record_primary_alignment_production.py`;
+receipt: `metadata/primary_alignment_production_closed_20260927.json`.
+
+The exact existing numerical auditor is live and has begun its post-production
+work. Individual checkpoint hashes, alignment/PDB mappings and RMSD/identity
+values are not certified by this production-closure check. Geometry remains
+gated on successful full numeric readback. Background comparisons and inferential
+analyses remain outstanding; no biological duplication effect is claimed.
