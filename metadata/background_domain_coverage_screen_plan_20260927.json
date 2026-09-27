@@ -1,0 +1,63 @@
+{
+  "diagnostic": "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1",
+  "diagnostic_plan": "metadata/background_domain_rmsd_diagnostic_plan_20260927.json",
+  "inventory": "results/structural_comparisons/background-domain-pairs-20260927-v1",
+  "inputs": "results/structural_comparisons/background-domain-inputs-20260927-v1",
+  "output": "results/structural_comparisons/background-domain-coverage-screen-20260927-v1",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "Reads existing audited numeric TSV and manifests only; no structure inference or native realignment; no cost."
+  },
+  "scope": "Same six exploratory original-interval coverage screens as targets; both orders required; every discrepant pair/mask retained and excluded. Geometry qualification remains separate.",
+  "pins": {
+    "metadata/background_domain_rmsd_diagnostic_plan_20260927.json": "6828ae744d1abaf9f581e33922fdd5ad71cb9f11c3606563d4f029d4eb5176f3",
+    "scripts/screen_background_domain_coverage.py": "cc93e7d361e61fb9d21580257530709c2570e80f8e6c418c661d4ccdb21530d1",
+    "scripts/check_background_domain_coverage_screen.py": "b5ed2e6d62bbfb2bfce22b4f318b78d1e7dcdb72a412761d8b0a18a0572ef19b",
+    "metadata/background_domain_rmsd_diagnostic_completed_20260927.json": "6083158cd382395be6cfcca8ada13d2b9129671f425c14abeec44a7883258adb",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/receipt.json": "0ad891a51ca4e8dfe31dc0ea8fcbd9148a5f0e51f5c045a29a071f9d63206992",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/numeric_readback.tsv": "b34b4289423c7c0a0379939f20ac610c0431da00851c323ea0be73a6b2ad944e",
+    "results/structural_comparisons/background-domain-pairs-20260927-v1/receipt.json": "c33885061eca439bbeb7c76549853de4982a8388fd0c66d35e1b509c5192388d",
+    "results/structural_comparisons/background-domain-pairs-20260927-v1/domain_pairs.tsv": "dccb227e4055e01065bae68b49dfd219ff244d57d06eccbd31b863ecdaaadc7c",
+    "results/structural_comparisons/background-domain-pairs-20260927-v1/intervals.jsonl": "1e107a2bd36d064d0998f4cfe6767478482ae8eca1e762ef2542d06e9ac6e039",
+    "results/structural_comparisons/background-domain-inputs-20260927-v1/receipt.json": "cf739db141486df40059e8ce46c39596f6e59509a9a2a5f644930adc352e2ba5",
+    "results/structural_comparisons/background-domain-inputs-20260927-v1/inputs.jsonl": "49c69d349745be5bc745e69af02989be5b20983f414bef767d767b508b76d98a"
+  }
+}
