@@ -8359,3 +8359,19 @@ from the recorded command as well as the immutable original source plan. Exact
 identity/resources: `metadata/nonlinear_support_failure_summary_launch_20260927.json`.
 Producer classifications are not yet treated as accepted certificates or
 biological inference.
+
+### September 27: full nonlinear support and nonnegative certificates verified
+
+All four services ended successfully. Full independent readback covered 57,616
+inputs and 165,888 setting/degree rows. The 112 original unresolved cases (64
+quadratic, 48 cubic) all involved negative weights, maximum total negative mass
+9.881e-10. Each passed the separate explicit nonnegative construction against its
+original matrix, maximum scaled barycenter distance 5.995e-10. The 180 affected
+setting rows retain original flags and separate constructive classifications.
+
+`record_nonlinear_support_completion.py` verified all receipt/artifact bindings,
+terminal states and exact failure/follow-up identities. Completion record:
+`metadata/nonlinear_joint_support_completed_20260927.json`. Numerical hull support
+now exists for every expanded input under the 1e-8 criterion; it does not establish
+dense overlap, adequate covariance, calibrated uncertainty or biological effects.
+Full ML production and downstream inference remain unfinished.

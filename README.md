@@ -45,7 +45,9 @@ Partial fits are not final adjusted effects.
 The [ordinary-ML nonlinear comparison](docs/matched-ordinary-likelihood-20260927.md)
 is now running across 432,120 fits: linear, quadratic and cubic identity terms
 on the same observations under five trees. Full output audit and linked
-likelihood comparison are queued. These sensitivity fits do not yet establish
+likelihood comparison are queued. Expanded joint support is verified for all
+57,616 inputs, including separate nonnegative certificates for 112 numerical
+edge cases. These sensitivity fits do not yet establish
 model preference, significance or calibrated uncertainty.
 
 The completed [joint-covariate support check](docs/joint-covariate-support-20260927.md)

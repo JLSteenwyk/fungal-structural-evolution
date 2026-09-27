@@ -1,0 +1,79 @@
+{
+  "status": "complete_verified_nonlinear_joint_support_and_constructive_followup",
+  "stages": [
+    {
+      "unit": "fungal-nonlinear-joint-support-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/nonlinear-joint-support-20260927-v1/receipt.json",
+      "receipt_sha256": "fd8413191520ca2fef5cec29ab8ba2c421ba8f9eab1d68930b3060f86da6b0b2",
+      "artifacts_checked": 1
+    },
+    {
+      "unit": "fungal-nonlinear-joint-support-readback-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/nonlinear-joint-support-readback-20260927-v1/receipt.json",
+      "receipt_sha256": "0f94a9e24a5316d063bd2f338e690b03edabfa5f552152ae98b22594bcc0135d",
+      "artifacts_checked": 2
+    },
+    {
+      "unit": "fungal-nonlinear-joint-support-failure-summary-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/nonlinear-joint-support-failure-summary-20260927-v1/receipt.json",
+      "receipt_sha256": "400e592b9da6811afc231e133ec480424ad10267b9fb267724f4a059a44eca06",
+      "artifacts_checked": 1
+    },
+    {
+      "unit": "fungal-nonlinear-joint-support-projection-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "receipt": "results/model_validation/nonlinear-joint-support-projection-20260927-v1/receipt.json",
+      "receipt_sha256": "3bc8618e6452d88364b13c24eb48c82b8f16d15b0f1e7eeb0b01e902131ddbc5",
+      "artifacts_checked": 2
+    }
+  ],
+  "unique_inputs": 57616,
+  "full_settings": 165888,
+  "original_classification_counts": {
+    "zero_supported_to_numeric_tolerance": 57504,
+    "unresolved_certificate": 112
+  },
+  "original_setting_counts": {
+    "zero_supported_to_numeric_tolerance": 165708,
+    "unresolved_certificate": 180
+  },
+  "degree_classification_counts": {
+    "2:zero_supported_to_numeric_tolerance": 28744,
+    "3:zero_supported_to_numeric_tolerance": 28760,
+    "3:unresolved_certificate": 48,
+    "2:unresolved_certificate": 64
+  },
+  "failure_reason_counts": {
+    "negative_weight": 112
+  },
+  "maximum_original_negative_weight_mass": 9.88097799580097e-10,
+  "projection_classification_counts": {
+    "supported_by_projected_nonnegative_weights": 112
+  },
+  "projection_setting_counts": {
+    "original_certificate_retained": 165708,
+    "supported_by_projected_nonnegative_weights": 180
+  },
+  "maximum_supported_projected_distance": 5.994864665125122e-10,
+  "script_sha256": "535c0c2833f627ec0617d7c8ab7609cc6b186ba32d3c91f8aa3f389121d51126",
+  "scope": "Full nonlinear certificate readback, complete setting mapping, failure diagnosis and original-matrix constructive follow-up verified. Original solver classifications retained. Nonnegative projected certificates establish numerical hull support only; no interior-overlap, dense-sampling, covariance-adequacy, calibrated-uncertainty or biological-effect claim."
+}

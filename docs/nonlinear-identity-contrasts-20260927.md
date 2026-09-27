@@ -1,8 +1,8 @@
 # Nonlinear sequence-identity contrasts
 
 Current status (September 27): input construction, expanded design checks and
-exact-observation linking are independently verified. Joint-support checking is
-active, and the full [ordinary-ML comparison](matched-ordinary-likelihood-20260927.md)
+exact-observation linking are independently verified. Full joint support and
+constructive follow-up are also verified, and the full [ordinary-ML comparison](matched-ordinary-likelihood-20260927.md)
 has launched. The stage descriptions below retain earlier launch checkpoints;
 statements about fitting being pending describe those earlier checkpoints.
 
@@ -155,3 +155,33 @@ polynomial degree is biologically preferred. Repeated sensitivity settings are
 not independent samples. Cubic terms remain in the planned sensitivity analysis;
 model comparisons and uncertainty must assess their contribution. Joint support
 verification is still running and is not implied by marginal range coverage.
+
+## Full joint support and constructive follow-up verified
+
+All four stages terminated successfully: full support production, independent
+matrix/certificate readback, failure census and constructive follow-up. Original
+classifications are preserved for every input and all 165,888 settings.
+
+| Degree | Original valid support | Original unresolved | Separate nonnegative certificates verified |
+|---|---:|---:|---:|
+| Quadratic | 28,744 | 64 | 64 |
+| Cubic | 28,760 | 48 | 48 |
+
+All 112 original failures involved negative candidate weights, with maximum total
+negative mass 9.881e-10. The follow-up removed negative candidate weights,
+renormalized the positive weights and recomputed the barycenter against the
+original fingerprinted matrix. Every projected certificate passed explicit
+nonnegativity, normalization, scalar/vector barycenter and serialized-output
+checks; maximum scaled zero-reference residual was 5.995e-10, below 1e-8.
+These 112 inputs map to 180 setting/degree rows. Original classifications remain
+visible alongside the separate constructive-certificate field.
+
+Thus all 57,616 expanded inputs have numerical zero-reference support from either
+the original or a separately constructed nonnegative certificate. This does not
+prove an LP optimum, interior overlap, dense local sampling, causal comparability,
+adequate covariance or valid confidence intervals. Ordinary-ML fitting, review,
+model adequacy and inferential calibration remain open.
+
+`record_nonlinear_support_completion.py` verifies terminal states, every declared
+artifact, receipt bindings, complete counts and exact failure/projected input
+identity. Completion evidence: `metadata/nonlinear_joint_support_completed_20260927.json`.

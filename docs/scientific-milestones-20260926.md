@@ -48,8 +48,8 @@ Chronological receipts and process records remain in [progress](progress.md).
   complete. The full 144,040-fit phylogenetic working-model grid is running;
   a separate 432,120-fit ordinary-ML linear/quadratic/cubic grid is also running
   on verified identical observations across five trees. The expanded designs and
-  input inventory passed full readback; nonlinear joint support is still being
-  checked. Full likelihood comparison exports retain all settings and fit flags.
+  input inventory passed full readback; nonlinear joint support is verified for
+  all 57,616 inputs, including separate nonnegative certificates for 112 edge cases. Full likelihood comparison exports retain all settings and fit flags.
   Numerical refinement, uncertainty and biological association tests remain outstanding;
   none of these computational stages establishes a duplication effect.
 - Recovered AlphaFold accessibility and full site-summary readbacks are complete:
