@@ -1,0 +1,56 @@
+{
+  "inventory": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1",
+  "inventory_audit": "metadata/selected_control_domain_inventory_readback_20260927.json",
+  "inventory_audit_status": "passed_full_selected_control_domain_inventory_readback",
+  "target_nodes": "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl",
+  "scenarios": "results/orthology/background-control-selection-20260927-v1/scenarios.json",
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "measurements": "results/structural_comparisons/matched-domain-measurements-20260927-v1",
+  "measurements_audit": "metadata/matched_domain_measurements_readback_20260927.json",
+  "measurements_audit_status": "passed_full_matched_domain_measurement_readback",
+  "coverage": "results/structural_comparisons/selected-domain-coverage-projection-20260927-v2",
+  "coverage_audit": "metadata/selected_domain_coverage_projection_readback_20260927_v2.json",
+  "coverage_audit_status": "passed_full_selected_domain_coverage_projection_readback",
+  "output": "results/structural_comparisons/matched-domain-record-summaries-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 16,
+    "temporary_disk_gib": 20,
+    "planning_hours": [
+      1,
+      8
+    ]
+  },
+  "scope": "Full 192 order/mask/boundary/threshold settings, 432 guide/policy/scenario strata each, 82944 summaries. Descriptive record/family/taxon means, no effect tests or new predictions.",
+  "pins": {
+    "scripts/summarize_matched_domain_records.py": "2c24a84344e60d638b669723342d22783a6e27c2b02873b61a4bf8c233a87f80",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "metadata/matched_domain_measurements_readback_20260927.json": "afd54fc2d63364c818f6b803727a32442d4fad5d450d93ce8566ebf71efe9575",
+    "results/structural_comparisons/matched-domain-measurements-20260927-v1/receipt.json": "58ca4c69d5457e5af830dc034738fe86b11fd795fcf5ecb861cea2269949fdb1",
+    "results/structural_comparisons/matched-domain-measurements-20260927-v1/matched_domain_contrasts.tsv.gz": "1fcfe3da9ef1b61fb97f5ad78e5627b86cd63523e47ace4b7526a37c6f07dd59",
+    "metadata/selected_control_domain_inventory_readback_20260927.json": "9f96f1eb74a72c187441db189463d3101a1d7dcc72c163712a9bd04e99ed8699",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/receipt.json": "6f1b912cbac6e637747752febc6ad08b2cc3d3de677283161ae1423b4f7f24db",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/domain_configurations.jsonl": "bb9b4f5463a4209b6054ec17cfa5636b0283008cce19e0469139512ac8a914f1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/selection_domain_links.tsv.gz": "6b1dd578f102104584c302a8018f9db1a54155b4c02cd32b716563ec2fe0e93b",
+    "metadata/selected_domain_coverage_projection_readback_20260927_v2.json": "2789c2444fd8280df5a398da09ee5efb79287cef8da73a441bec70b64df2ea77",
+    "results/structural_comparisons/selected-domain-coverage-projection-20260927-v2/receipt.json": "6a80a6b434eec0a8c54e17ff274b23ad509fafeb43d594dc5ba718aa87cebfe0",
+    "results/structural_comparisons/selected-domain-coverage-projection-20260927-v2/selected_domain_coverage.tsv": "7acad9ad3e34f78eb600ff95e1f4ac5f90e8a6856877621e53bdcbd1dc229997"
+  }
+}
