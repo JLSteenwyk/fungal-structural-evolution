@@ -1,0 +1,26 @@
+{
+  "full": "results/structural_markers/afdb-recovered-union-20260925-v1/mapping",
+  "previous": "results/structural_markers/gdm-expanded-v1",
+  "assessment": "results/structural_annotations/accessibility-gdm-v1",
+  "audit": "results/structural_annotations/accessibility-gdm-full-audit-v1",
+  "output": "results/structural_annotations/accessibility-gap-afdb-recovered-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ]
+  },
+  "pins": {
+    "scripts/prepare_recovered_accessibility_inventory.py": "73e52ad3488142bf9e0fb684f677d0345417854dcf83ca3e65bbb3e55f6c6169",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/receipt.json": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+    "results/structural_markers/gdm-expanded-v1/receipt.json": "cf79248f1fb941e8535e36d8b01520c2151a846f9256a1eefd80eab5f639ff2d",
+    "results/structural_annotations/accessibility-gdm-v1/receipt.json": "e73eb7c7fcf4eb8f552e7113a2ca98becc8bc43f2230dddf5147980e618af32e",
+    "results/structural_annotations/accessibility-gdm-full-audit-v1/receipt.json": "6b8757498ce20f1ae4640f9769a206ab038d0d00b0c2a07ad5ebd4102688e4b7",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/model_provenance.json": "8eea8f81cd956b0dada89dad8eb729a420107b65a86ff5a6b3f197dd861061cc",
+    "results/structural_markers/gdm-expanded-v1/model_provenance.json": "c44d05504eaf61f6abc2a68e21f6a990bf7ae9abf439d8c0d8c105c8a5880a36"
+  }
+}

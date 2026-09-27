@@ -6019,3 +6019,19 @@ The launch record confirms PID, creation time, command and resource limits.
 All GPU prediction remains paused. The prior goal turn made progress by
 committing the sampling analysis and verified rate-export checkpoint; this turn
 adds the complete baseline sensitivity result and executing downstream work.
+
+## September 27 recovered AlphaFold accessibility extension launched
+
+Completed the exact inventory and independent partition readback for 30,618
+recovered models: 13,127 reusable audited outputs, 17,491 new calculations and
+26 earlier-only models kept explicitly outside the recovered set. Every shared
+model differs only by an added source identifier equal to its UniProt accession;
+coordinate and sequence identities remain unchanged. Reused entry and residue
+table hashes were verified.
+
+Launched the missing 9,061,916-residue accessibility calculation with four CPU
+workers, 16 GiB RAM and an automatic full source/output audit. No GPU prediction
+was resumed. See [methods, resources and remaining integration](recovered-afdb-accessibility-20260927.md).
+The previous goal turn made progress by completing the baseline rate-model
+comparison and launching all-fit optimization; this turn addresses the missing
+structural-exposure inputs needed for the recovered cohort's coupling analysis.
