@@ -1032,3 +1032,36 @@ was one CPU, 4 GiB RAM, 1 GiB output and 1–15 minutes; it completed locally in
 seconds without GPU prediction. Whole-group alignments, codon projection and
 correspondence/coverage sensitivity remain the next stages. No flagged or
 information-limited case was silently excluded from the 1,712-case input set.
+
+### All-group full-protein realignment running
+
+Started MAFFT 7.525 `--auto --thread 1 --inputorder` for every verified group,
+with four concurrent cases. This extends alignment sensitivity to the full
+1,712-case set, including previously information-limited and flagged cases.
+Exact input taxa/order, ungapped residues and absence of all-gap columns are
+checked before case completion. Fixtures passed valid ambiguous-residue/gap
+preservation and rejected duplicate/reordered taxa, substitutions, all-gap
+columns and ragged outputs. Ambiguous source characters are not replaced.
+
+The plan pins the input receipt/readback, implementation and MAFFT installation
+files (59 pins including analysis inputs/scripts). Systemd enforces four CPUs,
+16 GiB RAM and no swap. Pre-run planning allows 0.5–24 hours, 10 GiB output and
+a 100-GiB free-disk reserve. Each subprocess has a four-hour timeout that fails
+explicitly rather than silently dropping a case. This is a broad planning bound,
+not a measured full-cohort ETA. Per-case commands, elapsed time, input/output
+hashes and MAFFT logs are retained; completed cases are reusable only with the
+same plan and verified artifacts. Unreceipted final outputs require review.
+
+```bash
+python scripts/check_full_codon_group_alignment_validation.py
+python scripts/run_full_codon_group_realignments.py --plan metadata/full_codon_group_realignments_plan_20260927.json
+```
+
+The live PID/creation time and frozen plan are recorded in
+`metadata/full_codon_group_realignments_{plan,launch}_20260927.json`.
+Outputs are under `results/cds/full-group-protein-realignments-20260927-v1`.
+Do not launch a second instance while active. These are raw alternative protein
+alignments; production completion, independent readback, codon projection and
+correspondence/coverage sensitivity remain pending. A change after realignment
+can reflect taxon sampling, the auto-selected algorithm or site retention; it
+is not evidence that either alignment is correct or a selection test is valid.

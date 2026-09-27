@@ -1,0 +1,14 @@
+{
+  "service": "fungal-full-codon-group-realignments-20260927.service",
+  "pid": 2181680,
+  "created": 1790506205.46,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_full_codon_group_realignments.py",
+    "--plan",
+    "metadata/full_codon_group_realignments_plan_20260927.json"
+  ],
+  "plan_sha256": "953e7a01f22b8a11eacbbca9b166ee534db4599bcd5463018b2c90ff5d4b4710",
+  "fixture_status": "passed_exact_sequence_order_and_malformed_alignment_rejections",
+  "status": "verified_live_full_codon_group_realignments"
+}

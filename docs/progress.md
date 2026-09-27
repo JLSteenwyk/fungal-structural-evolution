@@ -6842,3 +6842,16 @@ The previous turn was a verified wait on identified live comparison/audit jobs.
 This turn completes a full-cohort input stage for alignment sensitivity under
 aim 7. Realignment and downstream adequacy checks remain pending; all eight aims
 remain open. GPU prediction stays paused.
+
+## September 27 all-group protein realignment launched
+
+Started all 1,712 verified codon groups with four one-thread MAFFT workers.
+Sequence/order preservation fixtures passed, installation/input hashes are
+pinned, per-case receipts support checked reuse, and systemd limits the run to
+four CPUs/16 GiB with no swap. The live controller identity was recorded. Full
+production and independent codon/correspondence checks remain pending. See
+[full realignment](coding-sequence-workflow.md#all-group-full-protein-realignment-running).
+
+The previous turn verified full source inputs; this turn advances alignment
+sensitivity across the complete prepared set under aim 7. No selection-ready
+cases are claimed. All eight aims remain open; GPU prediction stays paused.
