@@ -1,0 +1,48 @@
+{
+  "mode": "primary",
+  "source_plan": "metadata/duplication_alignment_plan_20260926.json",
+  "producer": {
+    "pid": 123720,
+    "created": 1790470009.11,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_duplication_alignments.py",
+      "--plan",
+      "metadata/duplication_alignment_plan_20260926.json"
+    ]
+  },
+  "output": "results/structural_comparisons/duplication-alignment-readback-20260926-v1",
+  "pins": {
+    "metadata/duplication_alignment_input_plan_20260926.json": "96a935b2038b0ddbaafa12b26cff73b59cd58be0b8f4734353176ff9d88a5b11",
+    "metadata/duplication_alignment_input_launch_20260926.json": "5faec6e9723431688de00d8407fbc5b1c5f5799469dd49c3cd1331333ff31537",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_runner.py": "cd39661a8c27ced6705527388094f692cc4fc449004a85c46f6956a657f77a3c",
+    "scripts/check_duplication_alignment_handoff.py": "abd0387e5107c4ae69a5cdd4128537e4ac021761c34e200659e50f157bce3921",
+    "metadata/duplication_alignment_plan_20260926.json": "c1be1963e07bbe2edb41a153fabf0f305a318c0f3f6921f2172d2615c82e7537",
+    "metadata/duplication_alignment_launch_20260926.json": "442f7b7c98ed75146b706d6a75ef1da478d292c257c6ebc6c54a78e87a966137",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/readback_duplication_alignments.py": "cf962100a4b97c91802d8407c71bdbc78c8439bb3e4d08f4d8c294dc02c9453a",
+    "scripts/check_duplication_alignment_numeric_readback.py": "4c3e4d0394ca2a81b41e085e9c99ba80d9a89e4ed389b13e0c55978891a33450",
+    "scripts/check_duplication_alignment_full_readback.py": "00293963c2b3f789165e113dab4dca9ce1ff2cc9a9c599c2e9c207a8bc8684ee",
+    "scripts/check_duplication_primary_alignment_readback.py": "1e16d2092c05d114d177d1bf52edb051adf06de85e826a3d7482deb63301248f"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "directed_dispositions": 412800,
+    "basis": "Full checkpoint/manifest grid and PDB mapping readback; independent identity, coverage and least-squares RMSD for every successful alignment. One CPU with single-thread BLAS; bounded coordinate cache. TM-scores compared to raw text, not reoptimized. Uncalibrated planning interval, no GPU or charges."
+  }
+}

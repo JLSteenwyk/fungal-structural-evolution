@@ -5209,3 +5209,14 @@ two-source handoff and corruption fixture passed. Two CPU workers and 8 GiB
 RAM are allocated; production alignments remain waiting. Numeric result
 verification and biological asymmetry tests are still pending. See
 [reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: full structural-alignment numeric readbacks queued
+
+Both primary and supplementary alignment runs now have independent full-grid
+readbacks queued behind exact producer identities. Successful results will be
+checked for residue mapping, sequence identity, coverage and independently
+recomputed least-squares RMSD; TM-scores will be compared to native text only.
+Native deformed/full/masked fixtures, both handoff modes and corruption/grid
+rejection tests passed. Production readbacks are waiting. See
+[alignment readback](duplication-alignment-readback-20260926.md).
