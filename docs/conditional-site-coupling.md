@@ -483,3 +483,54 @@ one CPU, 32 GiB memory and no swap; original failed outputs are preserved.
 The launch record includes process identity and candidate receipt/checks in
 `metadata/completed_site_coupling_reviewed_qr_launch_20260926.json`. Production
 fits, marker resampling and the retained/omission comparison remain pending.
+
+
+### September 26: full ESMFold coupling and copy-review sensitivity completed
+
+The QR recovery completed 24 models on 122 markers and 44,198 sites, followed
+by 48,000 whole-marker bootstrap fits and 2,928 leave-one-marker-out fits.
+The service exited successfully. The 121-marker/43,891-site omission analysis
+had already completed its corresponding 24 models, 48,000 bootstrap fits and
+2,904 leave-one-marker-out fits. Both runs report zero singular bootstrap
+fits. Generated plans, receipts and all output artifacts were rechecked; the
+production coefficients, standard errors and p values exactly matched the
+saved diagnostic QR candidate.
+
+`compare_copy_review_coupling.py` verified that omission removes exactly the
+307 flagged sites, with all remaining covariates identical. All 72 focal
+omission coefficients agree with independently absorbed leave-one-marker-out
+estimates from the full run (maximum discrepancy 9.50e-15). The archived
+readback is `metadata/completed_site_coupling_reviewed_qr_readback_20260926.json`.
+
+Across both analyses, all 24 specifications have positive sequence-rate
+coefficients at RSA=0.25 and negative RSA coefficients at log(1+AA rate)=0;
+all of these coefficients have BH q<0.05 within their respective 72-test
+families. Their unadjusted marker-bootstrap intervals exclude zero in the
+same directions, also when evaluated at the respective observed-mean
+reference covariates. Interaction coefficients are negative in all 24
+specifications, but only 7/24 have BH q<0.05 in each analysis. Unadjusted
+interaction bootstrap intervals exclude zero for 8/24 full and 7/24 omission
+specifications. These are correlated specifications, not independent
+replications or a significance vote.
+
+Full-cohort sequence coefficients range from 0.131 to 0.269; RSA coefficients
+from -0.303 to -0.122; interaction coefficients from -0.111 to -0.016. Maximum
+absolute coefficient changes after omission are 0.00103, 0.00187 and 0.00304,
+respectively. Coefficients use model-relative log-transformed site rates;
+they are not physical structural displacement. The supported conclusion is
+a conditional association robust to this particular marker omission, with
+model-dependent interaction evidence. Shared ancestry across markers, fixed
+estimated rates/trees, prediction circularity, nonlocal alphabet features,
+missingness and unresolved gene-copy assignments still limit inference.
+
+The figure includes all 24 specifications and both cohorts. Its 432 plotted
+values were checked against source tables, and the rendered PNG was visually
+inspected. Reproduce the comparison with `scripts/compare_copy_review_coupling.py`
+using the full and omission fit/resampling paths recorded in the readback.
+Reproduce the figure with `scripts/plot_expanded_copy_review_coupling.py`,
+`--expected-full-markers 122 --expected-omission-markers 121
+--cohort-label 'Full-cohort ESMFold'`, and the corresponding comparison and
+resampling directories. Default figure arguments still support the earlier
+89/88-marker analysis.
+
+![Full ESMFold coupling and copy-review sensitivity](figures/completed_esmfold_copy_review_coupling_20260926.png)

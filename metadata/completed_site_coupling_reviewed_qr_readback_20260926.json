@@ -1,0 +1,172 @@
+{
+  "status": "completed_full_coupling_and_copy_review_comparison",
+  "controller_state": {
+    "status": "complete_coupling_and_marker_resampling",
+    "pid": 3180380,
+    "created": 1790467530.17,
+    "config_sha256": "199419d94abc63d61aee64963b19ef71cfbca93042801beb2e560c62a1377cdd",
+    "started_at": 1790467531.5429251,
+    "producer_receipt_sha256": "0c1f9d22d93a4cb0df8b9c8594a06e75b1fa986efd4db14f168b9063726633f6",
+    "fit_receipt_sha256": "b0564717cdf4f90c8bbd4ff81e91cd8153c243c979c8c6ae14b8bf591dfbd1f4",
+    "resampling_receipt_sha256": "7a7bed01498099adb05c0bb695ce7c475e8033ec70e5af748bd8390659357889",
+    "resampling_status": "complete_conditional_marker_resampling",
+    "updated_at": 1790467645.4924054
+  },
+  "controller_state_sha256": "c858f70d3fecb7dff9c520238e6e7a9ab48c560b8c7b613849a4e33e52b9f4e3",
+  "config": "metadata/completed_site_coupling_reviewed_qr_plan_20260926.json",
+  "records": [
+    {
+      "stage": "fit",
+      "receipt": "results/phylogeny/site-coupling-esmfold-all-reviewed-qr-20260926-v1/receipt.json",
+      "sha256": "b0564717cdf4f90c8bbd4ff81e91cd8153c243c979c8c6ae14b8bf591dfbd1f4",
+      "content": {
+        "status": "complete_exploratory_conditional_site_coupling_fits",
+        "sites": 44198,
+        "markers": 122,
+        "fits": 24,
+        "focal_tests": 72,
+        "confidence_taxon_site_rows": 6758598,
+        "plan_sha256": "4dba2c53ff8ecffe5c5ca40e7dc19c4f329aaa2f5045f74f9c89dae598c822cb",
+        "source_frame_sha256": "f2847988874cfa33d2cbea18093c7999b055a3be630a00ab707558f60b4a7c43",
+        "source_accessibility_sha256": "49c5094d54b6343002c37abe5210c5b7fd372c12ffba62536ec4828eb95819ee",
+        "script_sha256": "39e20a0f5d931c429528f4b1c57603e1a2a8cd63ac6610bcaa0f3db8d2ccd5f5",
+        "least_squares_solver": "statsmodels QR; independent NumPy SVD least squares and pseudoinverse covariance checks unchanged",
+        "versions": {
+          "numpy": "2.2.6",
+          "pandas": "2.3.3",
+          "scipy": "1.15.3",
+          "statsmodels": "0.14.6"
+        },
+        "artifacts": {
+          "site_covariates.tsv": "0f6fa0e35156fece0b6c7dc00f6c7e0e145a2333a95c9f83175ecf43a3a9f80a",
+          "focal_coefficients.tsv": "b358f02c8a72d75a35e063b8a3fd0c662dba9ab367998782189eb9665e8d974f",
+          "all_coefficients.tsv": "72ede5960073f45713d6b358f7dc2fcc5e7defc140d6b2d5714d3bd3e56b61d1",
+          "fit_summary.tsv": "b994d01ccd8150378ce7756edb4102375eeaf0b8458932aea41db8f92937d457"
+        },
+        "interpretation": "Exploratory conditional site association in the full completed ESMFold cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: retain_flagged_exploratory. Interpret with the paired full-cohort/omission sensitivity; not confirmatory single-ortholog evidence.",
+        "marker_review_policy": {
+          "mode": "retain_flagged_exploratory",
+          "expected_flagged_markers": [
+            {
+              "marker": "4986044at2759",
+              "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+              "sites": 307
+            }
+          ],
+          "reason": "Existing evidence of inconsistent TFIIB/BRF1 copy sampling; pair full-cohort exploratory retention with explicit omission sensitivity. Neither resolves gene-copy reconciliation."
+        },
+        "source_frame_sites": 44198,
+        "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+      }
+    },
+    {
+      "stage": "resampling",
+      "receipt": "results/phylogeny/site-coupling-resampling-esmfold-all-reviewed-qr-20260926-v1/receipt.json",
+      "sha256": "7a7bed01498099adb05c0bb695ce7c475e8033ec70e5af748bd8390659357889",
+      "content": {
+        "status": "complete_conditional_marker_resampling",
+        "models": 24,
+        "markers": 122,
+        "bootstrap_fits": 48000,
+        "singular_bootstrap_fits": 0,
+        "leave_one_marker_out_fits": 2928,
+        "contrasts": 120,
+        "plan_sha256": "6feacdac8c23c2259749e849e4dfb4eba6eae9e424010614a271b8534563157f",
+        "source_fit_receipt_sha256": "b0564717cdf4f90c8bbd4ff81e91cd8153c243c979c8c6ae14b8bf591dfbd1f4",
+        "script_sha256": "9ac79200d600726322db41dafccd22573b8f3a28c20c621eec8e256a231a52bf",
+        "artifacts": {
+          "3di_llm__freerate__tien2013__coverage_confidence.npz": "4c814f1fd707cd8ec6dbc1ae38dd118e004ad8d5ba74105e0e2de5467752ca62",
+          "3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "8b40e2ea8b7068414814bf0640fdecf2fe163ab3c74773cae882db888c874abd",
+          "3di_af__gamma__miller1987__composition_adjusted.npz": "a5d6b55c73763a65804a26cbf872350942da5fd15f6b151eb202719c982d4609",
+          "marker_influence.tsv": "00fe7f10d60650e4ab619219fd4de36bd9e744d3e7a8b74ea7f2dbb0d3af61ff",
+          "3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "8a405bbcfab0811ad3b937faa1ef1cf8aaf5dc2187eed5a29bee7316061c203e",
+          "3di_llm__gamma__miller1987__coverage_confidence.npz": "2da89d0d2f27fa798c4a44e03bd8ae69110a85e30834af66666934f2134265d9",
+          "3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "773ef49d0f9b2bf7f59820e29d304273a079e7d48fb67ea483d4171d73cf2a1a",
+          "3di_llm__gamma__tien2013__coverage_confidence.npz": "713290dedc90407e6b2880160fcd6c1630df11cc92dd2ba8d40dccd55e2fd788",
+          "3di_llm__gamma__miller1987__composition_adjusted.npz": "e98ebb1efa8f879fb98b2492cdb1be2489dd7423ad3753a6e219d2fab85f0ccc",
+          "3di_af__freerate__miller1987__coverage_confidence.npz": "5b79668b386f9e7a6bfb7ae562ba991dbb33f792238a720cd62339a80d62d496",
+          "3di_llm__freerate__miller1987__coverage_confidence.npz": "353079af07125ed52d1f6716a2478261c7993e96eb2e518b6099feabf1af681a",
+          "3di_af__freerate__tien2013__composition_adjusted.npz": "7f50c8072a20fbe0cb42575b310cc6ee8790c769406667c707b2af5ceb94d2f3",
+          "3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "10e581a5c817292531b49fc8a87545c933cde784be7825fc09a28350ec16b0cd",
+          "3di_af__gamma__tien2013__composition_adjusted.npz": "2ce1030645fa54238c5826c866fc53f711d4e3923780176d05cb2fecb5b8006f",
+          "3di_af__freerate__miller1987__composition_adjusted.npz": "31ec57778c8bf20282a6347d1db531aed4e4345f6c31e12647fecf02fcc9ef04",
+          "3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "e88395de2c2e6daf65832c7495211f57cd0d7ddf7fd69c4b1b129e695597f77e",
+          "3di_llm__gamma__tien2013__composition_adjusted.npz": "0f852f1b29163a7a1cc102e9d216a53464d8a617fcb1bd8345b9ea12785004f7",
+          "3di_af__gamma__tien2013__coverage_confidence.npz": "f5a9df40f7db8251cc093d3b72d22a00fbd659322019aa6f1e79c4e55cc452b0",
+          "3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "4e1c65979300c45eae3b0b66089158e7593dbec6ef59e99715e1a205f5a74508",
+          "3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "8454cc139e8efb94162c6d4d0ccbb93d7674bef3cdcb9a0080e8422d6760bb45",
+          "3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "c6e2b47958d6d64e820b94451a1cce0112a5c76d4f7a3556ab9653e6b2a9e1a3",
+          "3di_llm__freerate__tien2013__composition_adjusted.npz": "de4ec850efdd1aec418374b88534615823917a641862f6bcc9edb7cdc969a1d6",
+          "contrast_summary.tsv": "61a575975e3a6fba093399c2eece4ae4d9a380309dd55e6710e82c6ba367abe8",
+          "numerical_checks.tsv": "48be0dcec3aa3c71327d910dc8fba8d09154d0f12273989f2b7e302d5a429458",
+          "3di_af__gamma__miller1987__coverage_confidence.npz": "d124117bae02c918d2252ff785f9c0c8b3c9713b8124c44d595b1e91b31c8a81",
+          "marker_resampling_counts.npz": "43fec4a104dd6be8afac1df053c80d387f39407a13d13ab9786d4c7846ae7340",
+          "3di_llm__freerate__miller1987__composition_adjusted.npz": "99966fc5abd511b3b2959beb51955e7865c53825ea8e27b085e402b3a875fe35",
+          "3di_af__freerate__tien2013__coverage_confidence.npz": "aa6a3a49333aa4146f792b8663379fe58518fca42b103623ce4a12da73aec5de"
+        },
+        "interpretation": "Sensitivity to marker sampling/influence conditional on fixed rates, gene trees and observed covariates. Does not propagate phylogenetic/rate estimation uncertainty or resolve cross-marker dependence, nonlocal alphabet artifacts, prediction circularity or causal exposure effects.",
+        "interval_interpretation": "Unadjusted percentile 95% marker-bootstrap intervals, not new multiplicity-adjusted significance tests. Singular draws retained explicitly.",
+        "verification": "All point coefficients match full marker-intercept fits. One deterministic omission and one deterministic resample per model independently match expanded-row least squares. Counts and every bootstrap solve retained, with singularity flags."
+      }
+    },
+    {
+      "stage": "comparison",
+      "receipt": "results/phylogeny/site-coupling-copy-review-comparison-esmfold-all-20260926-v1/receipt.json",
+      "sha256": "91099d18994dcdf61120f136d2b443ff4599006354f6fa3b07c9f36e9a3683bb",
+      "content": {
+        "status": "passed_copy_review_coupling_comparison",
+        "source_receipts": {
+          "results/phylogeny/site-coupling-esmfold-all-reviewed-qr-20260926-v1": "b0564717cdf4f90c8bbd4ff81e91cd8153c243c979c8c6ae14b8bf591dfbd1f4",
+          "results/phylogeny/site-coupling-esmfold-all-copy-omission-20260926-v1": "6e1944a7c47b31455be592a1fb6908867208e749cf107b64f1746ee24d1769a9",
+          "results/phylogeny/site-coupling-resampling-esmfold-all-reviewed-qr-20260926-v1": "7a7bed01498099adb05c0bb695ce7c475e8033ec70e5af748bd8390659357889",
+          "results/phylogeny/site-coupling-resampling-esmfold-all-copy-omission-20260926-v1": "34064878babf0bb05b3f9040c349f9913ed5cd18a328ba5f68f12b553601dc47"
+        },
+        "omitted_marker": "4986044at2759",
+        "full_markers": 122,
+        "omission_markers": 121,
+        "full_sites": 44198,
+        "omission_sites": 43891,
+        "matched_focal_coefficients": 72,
+        "full_loo_vs_separate_omission_max_difference": 9.499345754448996e-15,
+        "script_sha256": "7634a44bb03e22d72cdf5b0b8368b6d759eef3e793da86ec2466927915e6f7fb",
+        "artifacts": {
+          "term_summary.tsv": "9cb76f2883177faf6fabcaaaee63326f45144e9e5e30b687c5a98187721db139",
+          "bootstrap_summary.tsv": "2c8c70119ce98e5f04bee698dca7f4902fce6cda16095dad7522a98a7e74d98b",
+          "matched_focal_coefficients.tsv": "52246a6a0b797fbddb6b9339b0dd77628ca375a57e930a779e86d9df20db089c"
+        },
+        "interpretation": "Exact covariate subset and all 72 focal omission coefficients checked against independently absorbed full-cohort leave-one-marker-out estimates. BH families remain separate per analysis; bootstrap intervals are unadjusted sensitivity intervals. Results remain conditional on estimated rates, fixed gene trees and predicted structures; copy review is unresolved and no causal or confirmatory single-ortholog conclusion follows."
+      }
+    },
+    {
+      "stage": "figure",
+      "receipt": "results/phylogeny/site-coupling-copy-review-figure-esmfold-all-20260926-v1/receipt.json",
+      "sha256": "7490b4ef34681194bdf6973d3abb61813c2c2f7fb04a71bd2afa3b01b5c817cf",
+      "content": {
+        "status": "complete_expanded_copy_review_coupling_figure",
+        "plotted_rows": 144,
+        "cohort_label": "Full-cohort ESMFold",
+        "full_markers": 122,
+        "omission_markers": 121,
+        "plotted_numeric_values_checked": 432,
+        "model_specifications": 24,
+        "source_pins": {
+          "results/phylogeny/site-coupling-copy-review-comparison-esmfold-all-20260926-v1/receipt.json": "91099d18994dcdf61120f136d2b443ff4599006354f6fa3b07c9f36e9a3683bb",
+          "results/phylogeny/site-coupling-resampling-esmfold-all-reviewed-qr-20260926-v1/contrast_summary.tsv": "61a575975e3a6fba093399c2eece4ae4d9a380309dd55e6710e82c6ba367abe8",
+          "results/phylogeny/site-coupling-resampling-esmfold-all-copy-omission-20260926-v1/contrast_summary.tsv": "2478c61cb3ce364b4180522a2ca77e4fe20d7f7dbd41a49d065c8a3307848a56"
+        },
+        "script_sha256": "6a27098c55c161048df2cc9ec6d9d5ca316eb461a14d04557e39c697cafb1308",
+        "artifacts": {
+          "plotted_intervals.tsv": "2ccfad99d45617527e4dd7757afd6dcd8e8257764c43230a95f0e8a237bbdb79",
+          "expanded_copy_review_coupling.svg": "8182f1567d13525c5a32fd4987ee9ee8399c468b0dc1848929c77a5e7023933b",
+          "expanded_copy_review_coupling.png": "ca80017a3cbe33837567dd41f22fc14a7d48f3705fac4394c57041bb7b1d3b49"
+        },
+        "interpretation": "Every specification and both reviewed cohorts shown with unadjusted marker-bootstrap intervals at explicit fixed reference values. Visual inspection remains separate. Not a test of differences between cohorts."
+      }
+    }
+  ],
+  "candidate_vs_production_coefficient_se_p_max_difference": 0.0,
+  "figure_visual_review": "PNG inspected: all 24 specifications, both cohorts, axes, labels, intervals and limitations visible without clipping.",
+  "published_figure": "docs/figures/completed_esmfold_copy_review_coupling_20260926.png",
+  "published_figure_sha256": "ca80017a3cbe33837567dd41f22fc14a7d48f3705fac4394c57041bb7b1d3b49",
+  "scope": "Source/plan/receipt/artifact bindings, numerical replicate consistency, exact omission covariates and all 72 omission coefficients checked. Does not establish model adequacy or causal effects."
+}

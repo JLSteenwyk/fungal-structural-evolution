@@ -21,13 +21,16 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     for name in ['comparison', 'full', 'omission', 'output']:
         ap.add_argument('--' + name, type=Path, required=True)
+    ap.add_argument('--expected-full-markers', type=int, default=89)
+    ap.add_argument('--expected-omission-markers', type=int, default=88)
+    ap.add_argument('--cohort-label', default='Expanded ESMFold')
     a = ap.parse_args()
     if a.output.exists():
         raise FileExistsError(a.output)
     comparison = json.loads((a.comparison / 'receipt.json').read_text())
     if comparison['status'] != 'passed_copy_review_coupling_comparison':
         raise ValueError('Audited full/omission comparison required')
-    if (comparison['full_markers'], comparison['omission_markers']) != (89, 88):
+    if (comparison['full_markers'], comparison['omission_markers']) != (a.expected_full_markers, a.expected_omission_markers):
         raise ValueError('Unexpected figure cohorts')
     source = {}
     pins = {str(a.comparison / 'receipt.json'): sha(a.comparison / 'receipt.json')}
@@ -74,9 +77,9 @@ def main():
         ax.tick_params(axis='x', labelsize=9)
     axes[0].set_yticks(range(24), [' | '.join(labels[x] for x in spec) for spec in grid], fontsize=8)
     axes[0].set_ylim(23.7, -.7)
-    fig.suptitle('Expanded ESMFold coupling: full cohort and copy-review omission', fontsize=15, y=.975)
-    handles = [Line2D([0], [0], color=colors['full'], marker='o', markersize=5, label='Full: 89 markers, 22,205 sites'),
-               Line2D([0], [0], color=colors['omission'], marker='s', markersize=5, label='Omission: 88 markers, 21,904 sites')]
+    fig.suptitle(a.cohort_label + ' coupling: full cohort and copy-review omission', fontsize=15, y=.975)
+    handles = [Line2D([0], [0], color=colors['full'], marker='o', markersize=5, label=f"Full: {comparison['full_markers']} markers, {comparison['full_sites']:,} sites"),
+               Line2D([0], [0], color=colors['omission'], marker='s', markersize=5, label=f"Omission: {comparison['omission_markers']} markers, {comparison['omission_sites']:,} sites")]
     fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(.60, .936), ncol=2, frameon=False, fontsize=10)
     fig.text(.025, .077, 'Lines: unadjusted 95% intervals from 2,000 whole-marker bootstrap draws per specification. All 24 specifications shown.', fontsize=9)
     fig.text(.025, .056, 'Base: coverage and confidence controls; +Comp: additional amino-acid composition controls. All fits include marker intercepts.', fontsize=9)
@@ -97,7 +100,8 @@ def main():
         fig.savefig(a.output / ('expanded_copy_review_coupling.' + suffix), dpi=150)
     plt.close(fig)
     assert all(sha(Path(p)) == h for p, h in pins.items())
-    receipt = dict(status='complete_expanded_copy_review_coupling_figure', plotted_rows=144,
+    receipt = dict(status='complete_expanded_copy_review_coupling_figure', plotted_rows=144, cohort_label=a.cohort_label,
+                   full_markers=comparison['full_markers'], omission_markers=comparison['omission_markers'],
                    plotted_numeric_values_checked=432, model_specifications=24,
                    source_pins=pins, script_sha256=sha(Path(__file__)),
                    artifacts={p.name: sha(p) for p in a.output.iterdir()},

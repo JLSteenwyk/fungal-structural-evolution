@@ -4994,3 +4994,19 @@ one CPU, 32 GiB memory and no swap; original failed outputs are preserved.
 The launch record includes process identity and candidate receipt/checks in
 `metadata/completed_site_coupling_reviewed_qr_launch_20260926.json`. Production
 fits, marker resampling and the retained/omission comparison remain pending.
+
+
+### September 26: full coupling and marker-omission comparison verified
+
+The QR recovery completed all 24 full-cohort fits, 48,000 bootstrap fits and
+2,928 marker omissions. The full/omission comparison verifies identical
+remaining covariates and agreement of all 72 omission coefficients with the
+full run's independently absorbed omission estimates (maximum 9.50e-15).
+The original pseudoinverse inconsistency remains documented; the QR output
+passes unchanged independent coefficient/covariance checks.
+
+Sequence-rate associations are positive and RSA associations negative across
+all specifications at tested reference values; interaction evidence depends
+on specification. The inspected figure, source checks and limitations are in
+[the coupling workflow](conditional-site-coupling.md). This completes this
+conditional site analysis, not the broader evolutionary project.

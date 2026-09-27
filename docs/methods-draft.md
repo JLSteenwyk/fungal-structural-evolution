@@ -480,3 +480,34 @@ correspondence, gene-tree support and ancestral interpretation remain pending.
 
 Commands, complete hit records, evidence and limitations are documented in
 [the focal case record](cross-clan-family-mapping-20260923.md#focal-profile-sensitivity--september-26).
+
+
+## Full-cohort conditional site coupling and copy-review sensitivity
+
+For the completed ESMFold marker cohort, we analyzed 44,198 aligned sites
+from 122 markers. Each of 24 specifications regressed log(1+structural-alphabet
+site rate) on log(1+amino-acid site rate), median relative solvent accessibility
+(RSA, centered at 0.25), their interaction, coverage and lower-quartile
+C-alpha prediction confidence, with marker intercepts. The grid crossed
+three structural-alphabet models, Gamma versus FreeRate site-rate estimates,
+two RSA normalizations, and inclusion versus exclusion of amino-acid entropy
+and composition controls. QR least squares was independently checked against
+SVD least squares and manually assembled finite-sample-corrected
+marker-cluster covariance. A pseudoinverse-based precursor failed its
+coefficient consistency check and was preserved as a failed run; no
+tolerances were relaxed for recovery.
+
+Inference used marker-cluster t references and BH correction across 72 focal
+coefficient tests per analysis. We additionally used 2,000 whole-marker
+bootstrap draws per specification and omitted every marker in turn.
+Bootstrap percentile intervals are unadjusted sensitivity intervals. An
+explicit paired analysis excluded marker 4986044at2759 (307 sites) because
+of unresolved TFIIB/BRF1 copy assignments. Remaining covariates were identical,
+and all focal omission coefficients were verified against independently
+absorbed leave-one-marker-out estimates from the retained cohort. Both
+analyses and all model specifications are reported; they do not constitute
+independent replications. These conditional analyses do not propagate rate
+or topology estimation uncertainty, fully resolve phylogenetic dependence
+across markers, or remove circularity from sequence-derived predictions.
+See [conditional site coupling](conditional-site-coupling.md) for provenance,
+reproduction, numerical diagnostics, results and the full sensitivity figure.
