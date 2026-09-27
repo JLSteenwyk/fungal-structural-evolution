@@ -345,3 +345,43 @@ python scripts/compare_paired_source_states.py \
 This one-CPU table/sequence comparison uses existing qualified inputs; it does
 not run predictions or alter source alignments. Full protein/model provenance
 matching is the next requirement before predictor-specific interpretation.
+
+
+### Complete-sequence model matching completed
+
+All 673 overlap cells now resolve to selected model links and full native
+encoding sequences from both sources. **Every cell has identical complete
+encoded protein sequences** (exact string equality and sequence hashes/lengths),
+representing **643 distinct AlphaFold/ESMFold model pairs**. Thus all 134,586
+jointly observed positions and 19,908 structural-state mismatches belong to
+complete-sequence-matched comparisons. The original concern about differing
+unobserved amino-acid sequence is resolved for this overlap set.
+
+The producer verifies source snapshot/encoding receipt bindings, selected
+model/sequence/version provenance, native encoding hashes and coordinate file
+hashes. The context table preserves all original comparison fields and adds
+both protein identifiers, full sequence hashes/lengths, model IDs/versions,
+provider/tool names, coordinate paths/hashes and encoding paths/hashes.
+Independent readback rejoined every source field and reloaded all complete
+encoding sequences, checking the exact cell set, sequence equality and counts.
+It does not reparse raw-coordinate sequences; those are bound through the
+previously audited mappings. Evidence is archived in
+`metadata/paired_source_model_context_completed_20260926.json`.
+
+The 14.792% pooled fraction is now supported as disagreement between the
+selected source models of the same complete sequences. It is still not an
+experimental error rate, evidence of evolutionary change or a clean attribution
+to software architecture alone: inference settings, model context, nonlocal 3Di
+partner choice and confidence selection require separate assessment. The 673
+cells reuse 643 model pairs and are not independent biological replicates.
+
+Output: `results/phylogeny/paired-source-model-context-20260926-v1/`.
+Reproduce with a fresh output directory:
+
+```bash
+python scripts/match_paired_source_model_context.py \
+  --comparison results/phylogeny/paired-source-state-comparison-20260926-v1 \
+  --reference results/phylogeny/paired-inputs-afdb-recovered-20260925-v1 \
+  --local results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1 \
+  --output <fresh-output-directory>
+```

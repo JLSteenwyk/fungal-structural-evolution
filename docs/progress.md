@@ -5467,3 +5467,15 @@ state. Independent array joins verified all cell counts and the full confusion
 table. This is source-associated disagreement, not a matched complete-protein
 predictor experiment or error calibration; full model-context matching remains.
 See [source diagnostic](prediction-source-controls.md#qualified-full-cohort-overlap-diagnostic-september-26).
+
+
+### September 26: source-overlap complete protein identity verified
+
+All 673 qualified source-overlap cells contain identical complete encoded protein
+sequences across AlphaFold and ESMFold, representing 643 distinct model pairs.
+Every original comparison/model-link field and full sequence was independently
+checked; coordinate/encoding hashes are bound to audited source mappings.
+The 14.792% structural-state disagreement therefore persists for these matched
+complete sequences. Inference settings, partner/context differences and confidence
+selection remain unresolved; this is not a calibrated error or evolutionary rate.
+See [model-context result](prediction-source-controls.md#complete-sequence-model-matching-completed).

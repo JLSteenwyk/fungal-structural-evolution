@@ -1,0 +1,11 @@
+{
+  "status": "passed_paired_source_model_context_readback",
+  "producer_receipt": "results/phylogeny/paired-source-model-context-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "a7d1255c7495ac9db52dd3eaf2698c1e10be3435b65cacf8ae8f3e7876fee43d",
+  "cells": 673,
+  "distinct_model_pairs": 643,
+  "complete_sequence_equal_cells": 673,
+  "positions": 134586,
+  "state_mismatches": 19908,
+  "verification": "Every source comparison field and model-link field rejoined independently; every encoded complete sequence reloaded and checked for equality, hash and length. Exact cell set, model-pair count and aggregate counters checked. Does not reparse coordinate sequences or audit inference settings; coordinate hashes are checked by producer against upstream audited mappings."
+}
