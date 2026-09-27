@@ -7603,3 +7603,18 @@ are frozen for these jobs. Both have one CPU, 12 GiB memory and no swap.
 [Design methods and limitations](matched-domain-design-diagnostics-20260927.md).
 Full numerical results and independent readback remain pending. All eight aims
 remain open; GPU prediction remains paused.
+
+## September 27 complete matched species-contrast design verified
+
+The previous goal turn launched the full covariate diagnostics and independent
+readback (progress); the producer remains live with advancing checkpoints.
+Prepared the complete prospective additive endpoint species term for all
+2,786,912 selected records: 52,675 unique node pairs, 4,568 weight patterns,
+259 active taxa and design rank 242. Shared species cancel exactly. This is an
+explicit nuisance-covariance assumption, not structural-distance additivity.
+Every source-record multiplicity, sparse row, pair mapping and all 22,840
+pattern/tree quadratic forms passed an independent full check. No inverse or
+fitted effect was exported. The 17-dimensional active-species null space must
+be handled explicitly when fitting and reassessed after structural filtering.
+[Methods and model limitations](matched-species-contrasts-20260927.md).
+All eight aims remain open. GPU prediction remains paused.

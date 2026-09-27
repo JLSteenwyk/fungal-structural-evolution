@@ -1,0 +1,33 @@
+{
+  "status": "complete_matched_species_contrast_design_with_full_pair_readback",
+  "selected_records": 2786912,
+  "unique_selected_pairs": 52675,
+  "patterns": 4568,
+  "zero_patterns": 0,
+  "trees": 5,
+  "pair_tree_quadratic_forms_checked": 263375,
+  "maximum_quadratic_form_error": 6.439293542825908e-15,
+  "pins": {
+    "results/orthology/selected-taxon-inputs-20260927-v1/receipt.json": "657728b5ef5776017d39bc1acccde8c33fed229fdd58d678d28b9e1ccec0c058",
+    "results/orthology/selected-taxon-inputs-20260927-v1/selected_node_taxa.tsv": "4ff4ab0c1c0bc06ddeb81be5bd0659b7fd434fa94ce491df5028bffac29a611d",
+    "results/phylogeny/species-distance-kernels-20260927-v1/receipt.json": "a4a0828e49c642b5096908a716d1e1f6d6ad70705b7c0e1c3d27049e260f14a2",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_profile.npz": "68aa4f9691c8838ed3160a5d0f4310eb49f3ddddb5796f8b31c055868df1da6c",
+    "results/phylogeny/species-distance-kernels-20260927-v1/taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_profile_mafft.npz": "4797faed6d053bd9b1cdf36320dfa5a3caceae0e95e7154eabd534353919c47b",
+    "results/phylogeny/species-distance-kernels-20260927-v1/profile_guide.npz": "3cb8f49eb3ef381d28847105c6895ac4c2fe95cd6e032124dee578906bf7f504",
+    "results/phylogeny/species-distance-kernels-20260927-v1/pmsf_mafft_profile.npz": "fe9d11cd175762e00f437c2bd6c2a79571ae7bbdf551bba2b641ac68e61bbe5e",
+    "results/phylogeny/species-distance-kernels-20260927-v1/mafft_guide.npz": "d1fdf4388ec2f596d60822f2daa1cdf789c8b69580e9dfdc00c7b30c28f601bf",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "metadata/selected_taxon_inputs_readback_20260927.json": "38e20436e42d3bf759ef967e6b8968bbce595bffdd07799ba344c31428c58446",
+    "metadata/species_distance_kernel_readback_20260927.json": "ecbcdb3c5f699b246966ca181b5864f418dadcefbeaa9d041d91466a1f9212f4"
+  },
+  "script_sha256": "10bf8a05e085e022f103678e03efb74d1f9120d8c9665a966add0ba0e2fcb446",
+  "artifacts": {
+    "kernel_quadratic_forms.tsv": "a8dbf5a95337e8b3d3592c65c8825fe61de78e87f3f6ca490464fe4780184e7b",
+    "species_contrast_design.npz": "abf4a13cfcbc90072d694c1c64cfaed58b1aded3644149919e7cde039b1c64ee",
+    "taxa.json": "8189ecc8f3a142b8e60c3b4bd63206d36d742e5e11ab04e97ffa4114b590dfd4",
+    "selected_pair_patterns.tsv.gz": "b8e3bae3faad9a88109b21f49c167dab7620e71494a19f0680828acc920e033e",
+    "patterns.tsv": "08ce9f329bc5d138a6f5edde4c6ea86df1491d027d40271de7b0052630b914e5"
+  },
+  "scope": "Working additive endpoint contrast W: focal species minus the mean of background endpoint species, with exact cancellation for shared taxa. Retains every selected pair and source record multiplicity before structural qualification. W C W-transpose is a prospective nuisance covariance, not an estimated structural process, effect or dated rate. Quadratic forms are unscaled kernel quantities, not fitted variances. No model fitting or GPU inference."
+}
