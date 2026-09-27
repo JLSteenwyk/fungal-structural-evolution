@@ -1,0 +1,20 @@
+{
+  "status": "complete_full_local_mg94_unconstrained_start_inventory",
+  "cases": 1632,
+  "starts": 13056,
+  "saved_parameter_values": 224752,
+  "repeated_seed_rows_retained": 0,
+  "cases_grid_better_than_unconstrained": 10,
+  "maximum_grid_likelihood_advantage": 6.928313777840231,
+  "source_profile_receipt_sha256": "72e158820f3490f1e4ac9f8ddaa32f2bbb450db58aee4574f8677fcff117859d",
+  "source_audit_sha256": "7b1924e332c2161f2a9095e3b1cb990bbf1dc973dc7f2cd9a7936430a12ae943",
+  "source_fit_receipt_sha256": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+  "script_sha256": "f1d8c250300da48589c5493eb7adde907ac4d5bc4215bda875606516523fe1ff",
+  "artifacts": {
+    "start_manifest.tsv": "caf4df66fd67b88ed308bf9cdf5375e34e87c88f2d7d800b8f10dee76433637c",
+    "case_start_counts.tsv": "b715650dc367ddb6fd3456f1dad3a51296589e53709df8abc046df0f9ae694b4",
+    "grid_better_than_unconstrained.tsv": "08fdbe5a3fb3954b0d097a45e44b746333a99757f42575e4aa980fa6a2dd9c78",
+    "parameter_seeds.jsonl": "347a68fb049b93512f8c0a5d97b89c7c1ffeea5355a4d09bef12aa0627f75b68"
+  },
+  "scope": "All eight audited seeds for every case; all parameter values and unchanged model content checked. Future fits must load original unconstrained model then assign these values, verify starting likelihood, and optimize every free parameter. No optimization performed here; ten concerns are not the only cases scheduled. No intervals, saturation certificate or selection conclusion."
+}

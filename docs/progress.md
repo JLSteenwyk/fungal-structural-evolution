@@ -7807,3 +7807,22 @@ other optimizer failures remain explicit; original statuses are never edited.
 The waiting process identity is verified and recorded. One CPU, 16 GiB memory,
 no swap; planning allowance 2–48 hours after the audit. Full production fitting
 continues. All eight aims remain open. GPU prediction remains paused.
+
+## September 27 local codon branch profiles complete; full restart inputs prepared
+
+The preceding turn queued full-grid analytic stationarity assessment (progress).
+Checked other live analyses and found the complete local MG94 profile batch and
+its audit finished successfully: 1,632 cases, 13,056 optimized fits and fresh
+saved-fit likelihood readbacks; 65,280 artifact hashes and 224,752 parameters
+checked. All source/summary bindings and authoritative terminal states verified.
+Ten Malassezia cases have grid likelihoods above the unconstrained solution,
+with maximum advantage 6.9283 log-likelihood units. These are optimization
+concerns, not selection findings.
+
+Prepared all eight audited parameter vectors for every case as explicit
+unconstrained restart inputs: 13,056 starts, no duplicates dropped, all values
+and model identities read back after serialization. Follow-up optimization has
+not yet run. [Results and restart requirements](local-branch-profile-completion-20260927.md).
+The AlphaFold accessibility calculation also finished; its existing downstream
+projection service remains active. Full structural working-model fitting
+continues. All eight aims remain open; GPU prediction remains paused.

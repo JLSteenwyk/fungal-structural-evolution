@@ -1,0 +1,64 @@
+{
+  "status": "verified_completed_local_branch_profiles_and_full_start_inventory",
+  "cases": 1632,
+  "profile_fits": 13056,
+  "unconstrained_start_seeds": 13056,
+  "saved_parameters": 224752,
+  "profile_receipt_sha256": "72e158820f3490f1e4ac9f8ddaa32f2bbb450db58aee4574f8677fcff117859d",
+  "audit_receipt_sha256": "7b1924e332c2161f2a9095e3b1cb990bbf1dc973dc7f2cd9a7936430a12ae943",
+  "handoff_receipt_sha256": "8ffc24d03f13aa674f00dc38058a092ded52c989c564910f0574450cbf272cf3",
+  "start_inventory_receipt_sha256": "9a2fcb44a60dbd549c9d12d9e4f54e3c779616ee1e8e90ab0267aa103d56aa5a",
+  "terminal_states": {
+    "fungal-local-mg94-branch-profiles-20260927-v2.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-local-branch-profile-audit-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "optimization_concerns": [
+    {
+      "case_id": "Malassezia__5001413at2759__code1",
+      "grid_likelihood_advantage": 6.928313777840231
+    },
+    {
+      "case_id": "Malassezia__4940884at2759__code1",
+      "grid_likelihood_advantage": 6.38945030994546
+    },
+    {
+      "case_id": "Malassezia__730114at2759__code1",
+      "grid_likelihood_advantage": 2.434170915204959
+    },
+    {
+      "case_id": "Malassezia__5000452at2759__code1",
+      "grid_likelihood_advantage": 1.5257085885314154
+    },
+    {
+      "case_id": "Malassezia__776280at2759__code1",
+      "grid_likelihood_advantage": 1.2158699662832078
+    },
+    {
+      "case_id": "Malassezia__4976279at2759__code1",
+      "grid_likelihood_advantage": 0.5706445253658785
+    },
+    {
+      "case_id": "Malassezia__5001473at2759__code1",
+      "grid_likelihood_advantage": 0.47425463520062294
+    },
+    {
+      "case_id": "Malassezia__5005217at2759__code1",
+      "grid_likelihood_advantage": 0.43395253052858607
+    },
+    {
+      "case_id": "Malassezia__4843824at2759__code1",
+      "grid_likelihood_advantage": 0.042009680708360975
+    },
+    {
+      "case_id": "Malassezia__727964at2759__code1",
+      "grid_likelihood_advantage": 0.02916024186743016
+    }
+  ],
+  "scope": "Full profile numerical audit and all-case eight-start inventory complete. Unconstrained multistart optimization has not run. Source branch t profiles are not dS confidence intervals or selection evidence."
+}
