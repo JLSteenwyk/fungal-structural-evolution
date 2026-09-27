@@ -364,3 +364,26 @@ The service uses one CPU, single-threaded BLAS, 8 GiB RAM and no swap, with a
 `results/experimental_structures/whole-domain-case-quartet-fits-20260927-v1`;
 launch identity is `metadata/case_experimental_quartet_fits_launch_20260927.json`.
 The stage is queued, not completed.
+
+## Residue mapping production completed; full raw readback active
+
+The mapping service terminated successfully after all 706 entries. Its output
+contains 2,136 chain/model grids and 1,280,073 canonical-position rows. All
+per-entry receipts and compressed table hashes passed verification, and all
+reported category partitions sum to the aggregate totals:
+
+| Production classification | Position rows |
+| --- | ---: |
+| Unambiguous full-occupancy CA | 1,027,254 |
+| No CA observation | 244,982 |
+| Multiple CA records | 3,072 |
+| Alternate or partial occupancy | 3,188 |
+| Nonstandard or mismatching monomer | 801 |
+| Invalid coordinates or occupancy | 776 |
+
+These are production classifications pending full independent raw-coordinate
+readback. Counts include multiple chains and models and are not independent
+residues or experiments. The readback has started processing the original files;
+coverage and geometry services remain gated on its successful completion.
+Production closure is
+`metadata/case_experimental_ca_mapping_production_completed_20260927.json`.

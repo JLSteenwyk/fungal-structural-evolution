@@ -8634,3 +8634,13 @@ CA readback. Every chain/model/context remains explicit, including insufficient
 and degenerate fits. Domain transforms will also measure outside residuals.
 Four geometry fixtures passed. Production geometry and independent validation
 remain pending; GPU work stays paused.
+
+### 2026-09-27: experimental CA mapping production finished
+
+All 706 entries completed successfully: 2,136 chain/model grids and 1,280,073
+position rows. Verified every entry receipt and table hash and all category
+count partitions. Production reports 1,027,254 unambiguous full-occupancy CA
+positions and 244,982 positions without CA observations; other ambiguity classes
+remain explicit. Full raw-coordinate readback is now active. Coverage and
+geometry remain gated; these totals are not yet independently validated against
+all original atoms.
