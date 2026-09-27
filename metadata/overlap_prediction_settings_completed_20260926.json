@@ -1,0 +1,30 @@
+{
+  "status": "verified_overlap_prediction_settings_summary",
+  "receipt": "results/phylogeny/overlap-prediction-settings-20260926-v1/receipt.json",
+  "receipt_sha256": "e5b88390c40077da0004fd1035f3ec89e2af748880eab20f141fc999a73b442f",
+  "model_pairs": 643,
+  "local_configuration_counts": {
+    "results/predictions/esmfold-ecology-v1/config.json": 635,
+    "results/predictions/esmfold-marker-v1/config.json": 5,
+    "results/predictions/esmfold-markers-513-768-gpu0-v1/config.json": 3
+  },
+  "identical_recorded_settings": {
+    "dtype": "ESM stem float16, folding trunk and heads float32; no autocast; TF32 disabled",
+    "attention_chunk_size": 64,
+    "num_recycles_argument": null,
+    "expected_trunk_passes": 4,
+    "seed": 20260913,
+    "batch_size": 1,
+    "mode": "eval; torch.inference_mode; full single-chain sequence; no MSA; no template; no relaxation",
+    "checkpoint_receipt_sha256": "be571429e37e14bf0203434e87b8492547742d60c470049a33821560c116523b",
+    "modeling_source_sha256": "c1cfa33062b69827c0317d50d89a5144882f0e4c5ff24337bcf4e71011c49bc2",
+    "packages": {
+      "torch": "2.6.0+cu126",
+      "transformers": "4.57.6",
+      "numpy": "2.4.6",
+      "safetensors": "0.7.0"
+    }
+  },
+  "differing_reviewed_settings": {},
+  "verification": "Model-pair table counts and artifact hashes independently checked; recorded settings compared across all three source configs. Producer verifies prediction/coordinate provenance bindings. No rerun or complete AFDB configuration validation."
+}

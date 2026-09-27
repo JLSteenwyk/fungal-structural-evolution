@@ -5500,3 +5500,13 @@ Every plotted value was checked against audited summaries and the rendered PNG
 inspected. The figure makes threshold-dependent cohort changes explicit; no
 causal confidence effect or calibrated error rate is implied. See
 [figure and reproduction](prediction-source-controls.md#confidencecoverage-figure).
+
+
+### September 26: matched-source prediction settings and acquisition reviewed
+
+All 643 matched model pairs are bound to prediction provenance. The local
+configuration distribution is 635 ecology-batch, five original-marker and
+three longer-marker predictions. Ten reviewed inference/checkpoint/software
+settings match across the three configurations; batch membership does not
+isolate a setting effect. The highly concentrated acquisition is explicitly
+retained as a limitation. See [settings and ascertainment](prediction-source-controls.md#prediction-settings-and-batch-ascertainment).

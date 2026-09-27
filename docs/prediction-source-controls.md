@@ -456,3 +456,43 @@ python scripts/plot_overlap_model_features.py \
   --readback metadata/overlap_model_feature_comparison_completed_20260926.json \
   --output <fresh-output-directory> --figure-prefix <fresh-figure-prefix>
 ```
+
+
+### Prediction settings and batch ascertainment
+
+The 643 matched model pairs now have explicit configuration provenance. Each
+local prediction receipt and configuration hash was checked against the audited
+model provenance, with model identity, sequence and coordinate hashes matched
+to the context table. All reference models report GDM, AlphaFold Monomer v2.0
+pipeline and AFDB representation version 6; those labels do not provide complete
+native AlphaFold inference configurations.
+
+| Local source configuration | Matched model pairs |
+| --- | ---: |
+| `esmfold-ecology-v1` | 635 |
+| `esmfold-marker-v1` | 5 |
+| `esmfold-markers-513-768-gpu0-v1` | 3 |
+
+All three saved configurations have identical recorded precision, attention
+chunk size (64), recycle argument (null/default), expected trunk passes (4),
+seed (20260913), batch size (1), inference mode, checkpoint receipt hash,
+modeling-source hash and package versions. Acquisition inputs and maximum
+admitted length differ (512 versus 768). Thus the three batch labels do not
+provide a controlled contrast of those common settings. The dominance of the
+ecological batch (635/643 pairs) is a substantial acquisition/selection limitation
+for generalizing this overlap comparison across fungi.
+
+Output: `results/phylogeny/overlap-prediction-settings-20260926-v1/`, containing
+a per-pair provenance table and exact saved configurations. Counts and output
+hashes were independently checked and all ten reviewed settings compared across
+configurations; evidence is archived in
+`metadata/overlap_prediction_settings_completed_20260926.json`. No inference
+was rerun, and complete AFDB configuration equivalence is not established.
+
+```bash
+python scripts/inventory_overlap_prediction_settings.py \
+  --context results/phylogeny/paired-source-model-context-20260926-v1 \
+  --reference-provenance results/structural_markers/afdb-recovered-union-20260925-v1/mapping/model_provenance.json \
+  --local-provenance results/structural_markers/esmfold-all-completed-20260922-v1/model_provenance.json \
+  --output <fresh-output-directory>
+```
