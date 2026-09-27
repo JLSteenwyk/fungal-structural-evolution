@@ -9260,3 +9260,21 @@ selected fitted parameters, original node order/labels and serialized
 dimensions checked. OneCPU,8GiB RAM,noGPU; planning0.1–12h plus verified
 producer wait,1GiB output. Full numerical verification is pending and will
 not resolve optimization bounds, model adequacy or gap compatibility.
+
+### 2026-09-27: all gap-model candidate ancestors mapped
+
+Mapped all312 model inputs across four intended ancestral levels and both
+guide aliases:2,496 rows. Incident tip partitions identify1,872 guide/node
+rows (936 unique model/level combinations). The remaining624 rows are
+degree-two local-root positions not identified by the unrooted fitted trees;
+no arbitrary replacement root was assigned. All whole-protein/domain cases
+and empty-gap matrices remain represented.
+
+Mapping uses source-tree topology and exact tip sets rather than internal
+node label equality. It produces deterministic posterior-node identifiers
+and incident-partition hashes; available production node files were checked
+against these hashes, with snapshot counts in
+`metadata/indel_candidate_node_mapping_completed_20260927.json`. Complete
+production readback remains pending as downstream outputs arrive. This
+mapping enables subsequent combination with amino-acid marginals; it does
+not establish gap compatibility or complete ancestral sequence ensembles.
