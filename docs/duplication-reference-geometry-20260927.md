@@ -64,3 +64,22 @@ and `metadata/duplication_reference_short_geometry_readback_20260927.json`.
 The strict failure and three discrepancy flags remain preserved. Rotation-
 dependent downstream analyses must exclude all 58 short mappings; broader
 coverage/confidence/geometry eligibility is still to be determined.
+
+## Geometry production complete; independent verifier corrected
+
+The geometry producer exited successfully after all 125,836 mappings. Its
+reported grid contains 65,082 unique full-mask rotations, 60,696 unique pLDDT70
+rotations and 58 degenerate pLDDT70 rotations. These are producer results pending
+complete independent verification.
+
+The first verifier exited before checking geometry with `NameError: inputs is
+not defined`: its reference-specific input-bundle adaptation omitted the empty
+dictionary initialization. The corrected immutable variant
+`scripts/readback_reference_alignment_geometry_v2.py` adds only `inputs={}`
+before loading the bundles. A literal source comparison verifies that the
+numerical checking routines are unchanged. The original failed script, plan
+and service journal are preserved. Corrected plan/launch files use the suffix
+`_20260927_v2.json`; output is
+`results/structural_comparisons/duplication-reference-geometry-readback-20260927-v2.json`.
+The corrected full verifier was confirmed live; scientific acceptance remains
+pending its completion and subsequent coverage/confidence review.

@@ -7478,3 +7478,16 @@ receipt, then runs the cross-method comparison and independent verification.
 The one-CPU/8-GiB/no-swap waiting process is verified live. Cross-method results
 remain pending; no subset substituted. Reference geometry separately reached
 110,000/125,836 alignments. All eight aims remain open; GPU prediction paused.
+
+## September 27 reference geometry complete; verifier setup repaired
+
+The preceding turn completed marker-verifier checks and queued the full
+cross-alignment comparison (progress). Reference geometry production completed
+all 125,836 successful alignments, reporting 125,778 unique rotations and the
+58 previously identified short degenerate mappings. Its independent verifier
+failed before numeric checking because the new multi-bundle reader omitted an
+input dictionary initialization. Preserved that failed run and launched a new
+version adding only the initialization; exact source comparison confirms no
+numerical check or tolerance changed. The corrected full verifier is confirmed
+live. Results remain pending independent acceptance; all eight aims remain
+open and GPU prediction remains paused.
