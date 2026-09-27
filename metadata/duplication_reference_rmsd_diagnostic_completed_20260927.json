@@ -1,0 +1,72 @@
+{
+  "status": "verified_completed_reference_rmsd_diagnostic_not_scientific_acceptance",
+  "receipt": "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1/receipt.json",
+  "receipt_sha256": "cfed0fca5a67be9c16e0571bb26305c96cd89e623b3b5f97224bc3b161db5e20",
+  "plan_sha256": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04",
+  "numeric_rows": 125836,
+  "explicit_unavailable": 4328,
+  "rmsd_status_counts": {
+    "within_printed_rounding": 125833,
+    "outside_printed_rounding": 3
+  },
+  "aligned_length_counts": {
+    "at_least_3": 125778,
+    "2": 49,
+    "1": 9
+  },
+  "maximum_rmsd_discrepancy": 0.01568966468462968,
+  "discrepancies": [
+    {
+      "pair_key": "089ae45941d2b33ecf30d6ab5d6bfbc8e7a36bab245b4b7c875669bc91efaeae",
+      "mask": "plddt70",
+      "order": 1,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.21544902457051726,
+      "rmsd_native": 0.21,
+      "rmsd_rounding_error": 0.005449024570517269,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.56227,
+      "tm_right_native": 0.00839,
+      "coverage_left": 0.6666666666666666,
+      "coverage_right": 0.008403361344537815,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "33b4ced3cdb7fe079d1cfb58f45db90b01dd9e00f40f57b93f560fdb59876872",
+      "mask": "plddt70",
+      "order": 1,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.43568966468462966,
+      "rmsd_native": 0.42,
+      "rmsd_rounding_error": 0.01568966468462968,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.0543,
+      "tm_right_native": 0.37894,
+      "coverage_left": 0.058823529411764705,
+      "coverage_right": 0.6666666666666666,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "6dfc9799cb9fb112448a70377ae53f2ad2e2be0884fdf172c7caf0e5fa3d4f32",
+      "mask": "plddt70",
+      "order": 0,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.007621177758447046,
+      "rmsd_native": 0.0,
+      "rmsd_rounding_error": 0.007621177758447046,
+      "sequence_identity_exact": 0.5,
+      "tm_left_native": 0.66651,
+      "tm_right_native": 0.66651,
+      "coverage_left": 0.6666666666666666,
+      "coverage_right": 0.6666666666666666,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    }
+  ],
+  "verification": "All plan pins, producer binding, artifact hashes, exact successful checkpoint key set, table counts and error classification checked. No independent recomputation of all coordinates in this completion check; full diagnostic performs that reconstruction. Downstream eligibility remains false."
+}

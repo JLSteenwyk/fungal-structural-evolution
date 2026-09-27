@@ -7452,3 +7452,17 @@ and tolerance remain unchanged; no partial or diagnostically flagged batch is
 accepted scientifically. See `docs/duplication-reference-geometry-20260927.md`.
 Full geometry and independent results remain pending. All eight aims remain
 open; GPU prediction remains paused.
+
+## September 27 reference diagnostic and all short fits verified
+
+The preceding turn queued full reference geometry and independent readback
+(progress). The full RMSD diagnostic now completed: 125,833 of 125,836 successful
+alignments within printed tolerance, three outside, all with two paired residues.
+The independent table/completion check verifies all keys, counts and flags
+against 130,164 dispositions, including 4,328 unavailable inputs. Direct analytic
+one/two-point formulas then verified all 58 short mappings (nine one-residue,
+49 two-residue), maximum discrepancy from the reconstructed RMSD 3.0e-15 Å.
+All 58 have nonunique rotations, even when the native RMSD passes tolerance.
+These checks do not establish scientific eligibility for the remaining 125,778
+mappings. Full geometry assessment and independent readback remain pending.
+Original strict failure remains; all eight aims open and GPU prediction paused.

@@ -38,3 +38,29 @@ The first failure is archived in
 `metadata/duplication_reference_first_rmsd_failure_20260927.json`.
 Downstream scientific eligibility and handling of short/degenerate mappings
 remain unresolved. The original strict order-summary gate remains unsatisfied.
+
+## Completed full RMSD diagnostic and analytic short-fit check
+
+The complete diagnostic and its table/disposition readback finished. All
+125,836 successful mappings were reconstructed; 125,833 RMSDs are within the
+unchanged printed-value tolerance and three are outside. All three exceptions
+are pLDDT70 mappings of two residues. Their discrepancies are 0.0054490,
+0.0156897 and 0.0076212 Å. There are 49 two-residue and nine one-residue mappings
+overall, leaving 125,778 mappings with at least three paired residues. Counts
+refer to directed comparisons, not independent model pairs or events.
+
+`scripts/check_reference_short_alignment_geometry.py` verifies every one/two-
+residue mapping using an independent analytic formula: the one-point minimum
+is zero; the two-point minimum is half the absolute difference between the two
+interpoint distances. All 58 minima agree with the SVD diagnostic to at most
+3.0e-15 Å. All 58 lack a unique rotation, including short mappings whose native
+RMSD is within tolerance. These formulas verify the recorded coordinate
+minimum; they do not explain the native discrepancies or validate biological
+interpretations. The complete geometry assessment of longer mappings remains
+running and its independent readback remains pending.
+
+Receipts: `metadata/duplication_reference_rmsd_diagnostic_completed_20260927.json`
+and `metadata/duplication_reference_short_geometry_readback_20260927.json`.
+The strict failure and three discrepancy flags remain preserved. Rotation-
+dependent downstream analyses must exclude all 58 short mappings; broader
+coverage/confidence/geometry eligibility is still to be determined.
