@@ -6426,3 +6426,19 @@ started. See [verification and input workflow](terminal-sister-backgrounds-20260
 The prior turn launched full architecture readback; this turn completes that
 milestone and advances the structural measurement pipeline. The full goal
 remains active and GPU prediction remains paused.
+
+## September 27 background structural comparisons queued
+
+Completed and tested the three-source structural-input handoff, then launched a
+controller that waits for background materialization before measuring every one
+of the 71,450 new background model pairs in both orders and two masks. Existing
+reference pairs are reused only through a later audited join. Eight native
+fixture dispositions and altered-proof/provenance/missing-mask checks passed.
+Resource estimates and the live controller identity are versioned; production
+measurements and numerical readback remain pending. See the
+[background comparison workflow](terminal-sister-backgrounds-20260927.md#background-structural-comparisons-queued).
+
+The preceding status turn verified specific services were live but did not
+advance scientific outputs. This turn makes progress by implementing, testing
+and queuing the full background comparison stage. All eight original scientific
+aims remain in scope; the goal is active and GPU prediction remains paused.

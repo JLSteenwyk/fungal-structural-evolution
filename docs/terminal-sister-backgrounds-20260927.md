@@ -481,3 +481,31 @@ six fixture dispositions, sparse residue mapping, written hashes and changed
 proof rejection. Four native rigid-transform alignments and full/noncontiguous
 mask serialization checks also passed. Full production input readback and
 background comparisons remain downstream.
+
+## Background structural comparisons queued
+
+Queued `fungal-background-alignments-20260927.service` with versioned plan and
+launch identity. It waits for background input materialization, then checks the
+complete, disjoint primary/reference/background input partitions, coordinate
+readback bindings, exact raw-model provenance, both-mask disposition grids and
+background inventory proof. All 71,450 new model pairs receive full and pLDDT70
+comparisons in both input orders (285,800 maximum native calls/dispositions).
+The 11 existing reference pairs are excluded from computation and must later be
+joined from independently checked reference results. Identical-model and
+ineligible candidates remain explicitly recorded in the original inventory.
+
+Two CPU workers, 8 GiB RAM, no swap, 600-second per-call timeout and a 100 GiB
+free-disk reserve are enforced. The output estimate is 48 GiB; the uncalibrated
+12–1,050-hour planning interval scales the reference workload and excludes
+waiting. This is not an ETA or a guaranteed bound. No GPU prediction or paid
+resources were enabled. Ready input bytes are hash-checked before and after
+each native comparison; excluded inputs, errors and timeouts remain explicit,
+with no automatic substitution or retry.
+
+The three-source fixture passed four native alignments and four short-mask
+exclusions, existing-pair reuse, all checkpoint hashes, and rejection of altered
+coordinate proofs, raw provenance and missing masks. Production measurements
+remain pending. Independent numerical readback must precede scientific use;
+matched effect estimation, domain/orientation controls and shared-ancestry
+modeling remain outstanding. This stage measures whole-chain background
+comparisons and does not establish biological orthology or duplication effects.
