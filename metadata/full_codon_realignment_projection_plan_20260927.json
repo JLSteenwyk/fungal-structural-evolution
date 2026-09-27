@@ -1,0 +1,24 @@
+{
+  "inputs": "results/cds/full-group-realignment-inputs-20260927-v1",
+  "alignments": "results/cds/full-group-protein-realignments-20260927-v1",
+  "alignment_readback": "results/cds/full-group-protein-realignment-readback-20260927-v1/receipt.json",
+  "output": "results/cds/full-group-codon-realignment-projection-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 2,
+    "planning_minutes": [
+      1,
+      20
+    ],
+    "basis": "Project 11963 full coding sequences for all 1712 groups and enumerate their taxon-pair correspondences; CPU only, no fits or GPU."
+  },
+  "pins": {
+    "results/cds/full-group-realignment-inputs-20260927-v1/receipt.json": "185423b4cf0b5bc6e4fb552104b727877f655cf205853b67bcd0ab5ff5267b1c",
+    "results/cds/full-group-protein-realignments-20260927-v1/receipt.json": "a5a6450e5b1551e4770a35116a31575512c48c5bbd8c062bb8da5b4a6c4af781",
+    "results/cds/full-group-protein-realignment-readback-20260927-v1/receipt.json": "2292180da17105a31e363e0d38e900d56d50f8b0dabcbc4267551a68cab8b60d",
+    "scripts/codon_realignment_projection.py": "3fb3da62b112cc285e51b07d87f6368589860a5c651b5727a3103e3fca794c15",
+    "scripts/project_full_codon_realignments.py": "f9e76a931aef0d2265eff10e77a5a75315560395f1f42c2e278831abada1d714",
+    "scripts/check_codon_realignment_projection.py": "7ead1ed72ab4b4b948083bf41a854254745fc4c5ce2203ce72ec8ed4f68d7f5d"
+  }
+}

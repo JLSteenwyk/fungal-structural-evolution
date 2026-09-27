@@ -1093,3 +1093,41 @@ The raw alignment run and full readback remain pending. Codon projection,
 occupancy and correspondence comparisons require the completed audit; sequence
 preservation alone does not establish homologous alignment columns or selection
 eligibility.
+
+### Full realignment verified; codon projection produced
+
+All 1,712 realignments and their independent full readback completed successfully.
+The audit covers 11,963 sequences and 6,770,822 source amino acids. MAFFT reported
+L-INS-i for 1,706 cases and FFT-NS-i for six; algorithm provenance remains explicit.
+Both services exited successfully, and all case/artifact hashes were rechecked.
+Completed evidence is `metadata/full_codon_group_realignments_completed_20260927.json`
+and its separate completed-readback file.
+
+Projected exact source codons into every verified local alignment with recorded
+code 1/code 12 assignments. Canonical translated codons count toward an integer
+80% taxon-occupancy rule; ambiguous/gapped observations become whole `???`
+triplets and matching `?` amino-acid states. Retained columns and full source
+residue indices are exported. Fixtures cover nonstandard translation, gaps,
+ambiguous codons, exact occupancy boundaries, empty masks, stops/short inputs
+and a partition of correspondence losses.
+
+The producer emitted all 1,712 cases, 41,473 taxon-pair comparisons and 6,432,298
+observed taxon–codon cells. It reports all groups passing the inherited coverage
+gate; this is **pending independent projection verification**, not selection
+eligibility. Every original residue pair is partitioned into preserved in the
+filtered local alignment, absent from the raw local alignment, or present there
+but removed by local filtering. Newly retained local pairs can reflect original
+site masking as well as changed correspondence; lower divergence or more columns
+would not establish a better biological alignment.
+
+```bash
+python scripts/check_codon_realignment_projection.py
+python scripts/project_full_codon_realignments.py --plan metadata/full_codon_realignment_projection_plan_20260927.json
+```
+
+The immutable output is
+`results/cds/full-group-codon-realignment-projection-20260927-v1`. The plan and
+producer summary are `metadata/full_codon_realignment_projection_*_20260927.json`.
+Projection used local CPU with a pre-run one-CPU/4-GiB/2-GiB-output/1–20-minute
+allowance; no model refits or GPU predictions were launched. All output hashes
+passed, but the independent codon/correspondence reconstruction remains next.

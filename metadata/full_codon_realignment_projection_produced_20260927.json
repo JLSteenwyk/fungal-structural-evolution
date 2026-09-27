@@ -1,0 +1,16 @@
+{
+  "status": "complete_full_codon_realignment_projection_pending_readback",
+  "plan_sha256": "5414663b3c882b8604ce07ec9d448a7c8d2e6db11701f198283f510d489e3f73",
+  "cases": 1712,
+  "pairs": 41473,
+  "observed_taxon_codons": 6432298,
+  "dispositions": {
+    "passes_existing_coverage_gate": 1712
+  },
+  "source_alignment_receipt_sha256": "a5a6450e5b1551e4770a35116a31575512c48c5bbd8c062bb8da5b4a6c4af781",
+  "source_alignment_readback_sha256": "2292180da17105a31e363e0d38e900d56d50f8b0dabcbc4267551a68cab8b60d",
+  "scope": "Exact source codons projected into every local alignment using recorded genetic code; only canonical translated codons count toward integer 80-percent occupancy. Unknowns are whole ??? triplets. All cases retained including coverage losses. Original residue-pair losses partitioned into absent from raw local alignment versus preserved there but filtered; new retained pairs may reflect original masking as well as homology shifts. Independent projection readback remains pending. No selection eligibility or alignment correctness claim.",
+  "producer_receipt": "results/cds/full-group-codon-realignment-projection-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+  "verified_artifact_hashes": 6850
+}

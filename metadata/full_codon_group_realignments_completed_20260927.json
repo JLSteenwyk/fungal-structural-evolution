@@ -1,0 +1,26 @@
+{
+  "status": "completed_and_independently_verified_full_codon_group_realignments",
+  "producer_receipt": "results/cds/full-group-protein-realignments-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "a5a6450e5b1551e4770a35116a31575512c48c5bbd8c062bb8da5b4a6c4af781",
+  "readback_receipt_sha256": "2292180da17105a31e363e0d38e900d56d50f8b0dabcbc4267551a68cab8b60d",
+  "cases": 1712,
+  "case_taxon_sequences": 11963,
+  "full_amino_acids": 6770822,
+  "strategy_counts": {
+    "L-INS-i (Probably most accurate, very slow)": 1706,
+    "FFT-NS-i (Standard)": 6
+  },
+  "terminal_processes": {
+    "fungal-full-codon-group-realignments-20260927.service": [
+      "MainPID=0",
+      "ExecMainStatus=0",
+      "ActiveState=inactive"
+    ],
+    "fungal-full-codon-group-realignment-readback-20260927.service": [
+      "MainPID=0",
+      "ExecMainStatus=0",
+      "ActiveState=inactive"
+    ]
+  },
+  "scope": "Independent manual FASTA parser verifies every source taxon/order and ungapped sequence, rectangular alignment, no all-gap column, exact receipt/command/code/copy fields and all log/output hashes. Strategy text recorded without asserting algorithmic optimality. No codon projection, homology correctness, selection eligibility or biological effect claim."
+}

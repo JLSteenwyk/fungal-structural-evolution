@@ -6869,3 +6869,16 @@ The previous turn launched all-group realignment; this turn implements, tests
 and queues full independent verification. Codon projection and sensitivity
 analysis remain downstream. All eight aims remain open; GPU prediction stays
 paused.
+
+## September 27 full realignment verified and codon projection produced
+
+Confirmed successful completion and full audit of all 1,712 realignments,
+11,963 sequences and 6,770,822 source amino acids. Archived terminal states and
+rechecked all artifacts. Implemented/tested and ran source-codon projection with
+integer 80% occupancy plus original/raw/filtered residue-pair accounting for all
+41,473 taxon pairs. Projection outputs cover every group; independent projection
+verification is pending. See [stage evidence](coding-sequence-workflow.md#full-realignment-verified-codon-projection-produced).
+
+The prior turn queued alignment verification; this turn completes that stage
+and advances the full-cohort alignment-sensitivity analysis. No group is cleared
+for selection inference. All eight aims remain open; GPU prediction stays paused.

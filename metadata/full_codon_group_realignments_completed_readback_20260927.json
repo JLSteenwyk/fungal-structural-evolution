@@ -1,0 +1,16 @@
+{
+  "status": "passed_full_codon_group_protein_alignment_readback",
+  "plan_sha256": "38e920020e1da9ae937666fe2e122c2f2c86226236924a5ccacfe7c50e540c21",
+  "producer_receipt_sha256": "a5a6450e5b1551e4770a35116a31575512c48c5bbd8c062bb8da5b4a6c4af781",
+  "cases": 1712,
+  "case_taxon_sequences": 11963,
+  "full_amino_acids": 6770822,
+  "strategy_counts": {
+    "L-INS-i (Probably most accurate, very slow)": 1706,
+    "FFT-NS-i (Standard)": 6
+  },
+  "artifacts": {
+    "cases.tsv": "5b8b14a592003edb6da759a4ac674eec6061db59462eeb87e0d998ad1b61224e"
+  },
+  "scope": "Independent manual FASTA parser verifies every source taxon/order and ungapped sequence, rectangular alignment, no all-gap column, exact receipt/command/code/copy fields and all log/output hashes. Strategy text recorded without asserting algorithmic optimality. No codon projection, homology correctness, selection eligibility or biological effect claim."
+}
