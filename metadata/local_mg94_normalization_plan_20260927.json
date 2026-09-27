@@ -1,0 +1,49 @@
+{
+  "producer": {
+    "pid": 2458687,
+    "created": 1790508634.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_local_mg94_audit.py",
+      "--plan",
+      "metadata/local_mg94_audit_plan_20260927.json"
+    ]
+  },
+  "audit_handoff": "results/cds/local-mg94-audit-handoff-20260927-v1/receipt.json",
+  "fits": "results/cds/local-mg94-diagnostics-20260927-v1",
+  "audit": "results/cds/local-mg94-audit-20260927-v1",
+  "trees": "results/phylogeny/local-codon-trees-20260927-v1",
+  "tree_audit": "results/phylogeny/local-codon-tree-audit-20260927-v1",
+  "information": "metadata/local_codon_tree_information_20260927.tsv",
+  "source": "metadata/hyphy_mg94_normalization_source.json",
+  "install": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+  "helper": "results/environments/hyphy-corrected-opportunities-20260927-v1/genetic_code_corrected.bf",
+  "output": "results/cds/local-mg94-normalized-branches-20260927-v1",
+  "controller_output": "results/cds/local-mg94-normalization-handoff-20260927-v1",
+  "cases": 1632,
+  "branches": 18302,
+  "pins": {
+    "scripts/advance_local_mg94_normalization.py": "7e8287d8074c8ea71121ca652dfb73d86d7f72b93cf2021010466cb41823244d",
+    "scripts/normalize_genus_mg94_branches.py": "5066aad360e8eceeb8f4fe77bf58d353aa97eb400cedd0c81428c0822aecf9fe",
+    "scripts/verify_genus_mg94_tree_bindings.py": "8d9644746317dd8f44000710fb52c8f95c1855cc3800404b8ca0d0202373cf34",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "metadata/hyphy_mg94_normalization_source.json": "fd179f390510152554a8a58ffa7537d99d04c6e20822dd8a10773f0795f4c1f9",
+    "metadata/hyphy_opportunity_compaction_verification.json": "2bf649b74ba6a91ba303d8fcf0e476baa9a302c99c90862b451f5aff5968aefa",
+    "metadata/local_mg94_audit_plan_20260927.json": "69aa941333798623caab7e280820dd9bc26723de1a360c6f529a9bd5c2adc874",
+    "metadata/local_codon_tree_information_20260927.tsv": "61a4628aefece29d51411b0805c80e38e52d39c0fb1835d065a49c68e37e07f4",
+    "results/environments/hyphy-corrected-opportunities-20260927-v1/genetic_code_corrected.bf": "ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5",
+    "results/environments/hyphy-corrected-opportunities-20260927-v1/receipt.json": "9c984c7487b01a2fe8e6ac8c1cc99f2d97d2a2c6bb4840ae7e8c639dafca389d"
+  },
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gb": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "cost": "Existing local CPU host; no GPU or new charges"
+  },
+  "interpretation": "All numerically verified local fits normalized using the same explicit equal-alternative opportunity convention as the original fits. Full audited-tree bindings, 244 genetic-code opportunity checks and per-fit Python/HyPhy opportunity agreement required. No likelihood refitting, selection test, saturation certificate or optimality claim. Normalized dN/dS is not a separately estimated branch omega and need not equal global fitted omega."
+}

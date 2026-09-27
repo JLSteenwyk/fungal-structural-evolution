@@ -1402,3 +1402,38 @@ Plan and live identity are recorded in
 CPU/8 GiB RAM, no swap, 2 GB planned output and a 0.1–8 hour planning range after
 the fits finish. It uses existing CPU resources. Execution and numerical
 validation remain pending.
+## Corrected full local-MG94 normalization queued
+
+The corrected opportunity helper formerly referenced under `/tmp` was absent.
+The recorded patch was reapplied with zero fuzz to the unchanged installed
+original, producing a durable isolated helper at
+`results/environments/hyphy-corrected-opportunities-20260927-v1/genetic_code_corrected.bf`.
+Its SHA256 exactly matches the previously verified correction
+`ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5`.
+Reproduction provenance is archived in
+`metadata/local_mg94_corrected_helper_20260927.json`; no installed library changed.
+
+`scripts/advance_local_mg94_normalization.py` now waits for the identified full
+local fit audit. It requires a clean numerical audit, binds every fit to its
+audited nucleotide tree with the existing full binding checker, then invokes
+the unchanged normalization workflow on all 1,632 cases and 18,302 branches.
+The execution plan is written only after these dependencies complete and
+records their exact receipt hashes. The normalizer checks all 244 genetic-code
+opportunity values and independently compares Python and corrected HyPhy
+frequency-weighted opportunities for every fit. Final artifact and per-fit
+check hashes are verified before the controller reports completion.
+
+A fixture confirmed that unresolved numerical flags stop normalization before
+tree binding and produce an explicit review-required record. This does not
+exclude flagged cases silently or clear them for inference. The normalization
+uses the same equal-alternative convention as the original fits; its derived
+dN/dS ratio is not an independently fitted branch omega and may differ from
+the global fitted omega.
+
+The plan and live process are recorded in
+`metadata/local_mg94_normalization_plan_20260927.json` and
+`metadata/local_mg94_normalization_launch_20260927.json`. Resources are two
+CPUs/4 GiB RAM, no swap, 1 GB planned output and 0.1–4 hours after auditing.
+Expected results are under `results/cds/local-mg94-normalized-branches-20260927-v1`.
+Normalization and original-versus-local divergence comparisons remain pending;
+no GPU, paid resources, new likelihood optimization or selection test is used.

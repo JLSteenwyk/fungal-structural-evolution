@@ -1,0 +1,18 @@
+{
+  "status": "reproduced_verified_corrected_opportunity_helper",
+  "command": [
+    "patch",
+    "--batch",
+    "--fuzz=0",
+    "-o",
+    "results/environments/hyphy-corrected-opportunities-20260927-v1/genetic_code_corrected.bf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/share/hyphy/TemplateBatchFiles/libv3/tasks/genetic_code.bf",
+    "patches/hyphy-2.5.101-opportunity-compaction.patch"
+  ],
+  "original_helper_sha256": "fbdf7f36e5e8aa68d51bd1645ba8f26ab1b535fbc6d2e42e2530579fbdc22e83",
+  "corrected_helper_sha256": "ed0c3cb35c4e7361f751e5ccf6203bd9df098250e99354d42fce95e41f9a0aa5",
+  "patch_sha256": "c9f1772a8ab72b6ba27c354f4e3bffcc81dffa1c2676de174bdee192771a47a6",
+  "prior_verification_sha256": "2bf649b74ba6a91ba303d8fcf0e476baa9a302c99c90862b451f5aff5968aefa",
+  "stdout": "patching file results/environments/hyphy-corrected-opportunities-20260927-v1/genetic_code_corrected.bf (read from /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/share/hyphy/TemplateBatchFiles/libv3/tasks/genetic_code.bf)\n",
+  "scope": "Durable isolated helper reproduced from pinned patch with zero fuzz; installed original unchanged. Exact bytes match the previous 244-assertion runtime-verified helper."
+}

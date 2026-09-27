@@ -7015,3 +7015,16 @@ confirmed live with exact identities. Logs showed 20/149 whole-chain shards and
 remain pending. This is completed validation, not a biological effect estimate.
 Codon normalization requirements were reviewed; its new run is not yet queued.
 All eight scientific aims remain open and GPU prediction remains paused.
+## September 27 corrected local codon normalization queued
+
+The prior turn verified the full structural-background coordinate stage.
+This turn completes the downstream codon normalization setup: reproduced the
+verified corrected helper in a durable path, checked unchanged installed bytes,
+and queued all 1,632 cases/18,302 branches behind the full numerical fit audit.
+Exact tree binding and the existing per-fit Python/HyPhy opportunity checks
+remain mandatory. A fixture verified that numerical flags prevent normalization
+and remain recorded explicitly. The two-CPU/4-GiB controller is verified live.
+
+No normalized local results or biological conclusions are claimed yet.
+Original-versus-local divergence comparison remains downstream. All eight aims
+remain open and GPU structure prediction remains paused.
