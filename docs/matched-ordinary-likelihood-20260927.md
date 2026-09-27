@@ -69,3 +69,20 @@ empty-factor cases can return arbitrary species ratios on a flat likelihood;
 `component_identifiability_assessed` remains false. Such a ratio is not evidence
 for phylogenetic variance. Production-size timing, expanded joint support, full
 input verification and statistical calibration remain before production ML fitting.
+
+## Complete-fit size benchmark
+
+The synthetic size benchmark finished successfully on one CPU with 138.2 MiB
+peak service memory. Every case used seven fixed-effect columns, a 242-column
+species factor and all 22 optimizer attempts. Complete fitting took 2.03 seconds
+for 148 records, 3.66 seconds for 2,320 records, and 12.45 seconds for 10,963 records.
+All three passed numerical optimization checks. Every one of the 66 candidate
+objectives was separately checked using direct residual evaluation; maximum
+absolute objective error was 7.28e-12. Validation took an additional 0.04, 0.47
+and 2.11 seconds respectively. Source/output hashes and terminal success were
+verified in `metadata/matched_ml_size_benchmark_completed_20260927.json`.
+
+These are three synthetic timing observations, not a representative convergence
+distribution or full-grid ETA. Full workload sizing still needs the completed
+expanded inventory, observed record-size distribution, shared machine load and
+allowance for difficult or flagged fits. The existing REML run remains unchanged.

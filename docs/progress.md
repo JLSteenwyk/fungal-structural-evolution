@@ -7964,3 +7964,12 @@ zero-boundary and upper-bound checks, and forced iteration-failure retention.
 Empty species kernels are explicitly flagged; numerical passing does not establish
 variance-component identifiability. No production ML fits launched.
 [Details](matched-ordinary-likelihood-20260927.md).
+
+### September 27: ML size benchmark completed
+
+Three full synthetic 22-attempt ML fits at 148, 2,320 and 10,963 records completed
+in 2.03, 3.66 and 12.45 seconds on one CPU. All 66 candidate objectives agreed
+with direct residual evaluation; all fits passed numerical checks. Terminal
+success and artifact hashes verified. These timings are not a whole-project ETA.
+The nonlinear design producer completed all 165,888 rows; its independent
+readback is now processing the complete output.

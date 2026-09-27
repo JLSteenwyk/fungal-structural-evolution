@@ -1,0 +1,55 @@
+{
+  "status": "complete_verified_synthetic_ml_size_benchmark",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "unit": "fungal-matched-ml-size-benchmark-20260927.service",
+  "receipt_sha256": "6133f2e47b0e3f0647e71e601d2429612e8ea875cde91fb532194e340b9d105e",
+  "runs": [
+    {
+      "records": 148,
+      "backgrounds": 120,
+      "family_components": 44,
+      "species_factor_columns": 242,
+      "fixed_columns": 7,
+      "fit_seconds": 2.025851384998532,
+      "candidate_readback_seconds": 0.038360591017408296,
+      "candidate_checks": 22,
+      "maximum_direct_objective_error": 2.2737367544323206e-13,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "evaluations": 313,
+      "maximum_projected_gradient": 1.2946677474737698e-07
+    },
+    {
+      "records": 2320,
+      "backgrounds": 1500,
+      "family_components": 400,
+      "species_factor_columns": 242,
+      "fixed_columns": 7,
+      "fit_seconds": 3.661877890001051,
+      "candidate_readback_seconds": 0.4674816510232631,
+      "candidate_checks": 22,
+      "maximum_direct_objective_error": 1.8189894035458565e-12,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "evaluations": 283,
+      "maximum_projected_gradient": 2.2660513000408377e-06
+    },
+    {
+      "records": 10963,
+      "backgrounds": 6478,
+      "family_components": 1634,
+      "species_factor_columns": 242,
+      "fixed_columns": 7,
+      "fit_seconds": 12.45394622097956,
+      "candidate_readback_seconds": 2.1085329840134364,
+      "candidate_checks": 22,
+      "maximum_direct_objective_error": 7.275957614183426e-12,
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "evaluations": 277,
+      "maximum_projected_gradient": 1.083126212311028e-06
+    }
+  ],
+  "scope": "Three synthetic timing cases at observed dimensions; all 66 candidate objectives checked using direct residual evaluation. Optimization flags preserved. Timings are not biological results, a representative convergence distribution, a full-grid ETA or a substitute for full-data fitting. Existing production fits unchanged."
+}

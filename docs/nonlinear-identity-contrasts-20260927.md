@@ -78,3 +78,8 @@ Ordinary ML objective and analytic-score evaluators now pass independent dense
 checks; see [likelihood methods](matched-ordinary-likelihood-20260927.md). All
 candidate fixed-effect spaces, including the linear reference, will require ML
 fitting before likelihood comparisons. No nonlinear fit has been launched.
+
+The design producer has now completed all 165,888 rows with no rank deficiencies
+after constant removal and no zero reference outside any marginal range. These
+are producer results pending the active full independent readback, and do not
+establish joint nonlinear support.
