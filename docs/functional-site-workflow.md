@@ -335,3 +335,39 @@ accuracy and disagreement does not identify which predictor is correct.
 Prediction circularity, correlated homologous sites and sparse overlap prevent
 these counts from providing broad independent functional validation. Direct
 coordinate/context comparisons and experimental evidence remain needed.
+
+## Full comparison of native residue contexts
+
+All 150 jointly observed functional coordinates were examined in both
+predictors' qualified arrays, including the agreeing states. The comparison
+loaded 186 distinct qualified model/source entries. Exact full-sequence identity,
+focal residue/state, native partner index and the six role positions
+`i−1, i, i+1, j−1, j, j+1` were checked. Every position stays in bounds;
+minimum context pLDDT was recomputed from the C-alpha confidence array and
+checked against both the qualified encoding and the functional join. Every
+context retains pLDDT ≥70 and audited context PAE ≤10. PAE maxima were read from
+previously qualified arrays, not independently recomputed in this comparison.
+
+| State comparison | Same partner position | Different partner position |
+|---|---:|---:|
+| Same state | 118 | 9 |
+| Different state | 11 | 12 |
+
+Thus 12 of the 23 state differences accompany a partner change, while 11 do not.
+The nine same-state/different-partner observations remain in the analysis.
+A changed partner is not proof that partner selection caused a state change;
+the same partner does not mean that coordinates or descriptors agree. These
+are conditional observations in a small, correlated subset, not error rates.
+Direct coordinate/descriptor comparisons remain necessary before interpreting
+the affected residues as evolutionary or functional changes.
+
+Reproduce with `python scripts/compare_functional_structural_contexts.py --output
+results/functional_sites/prediction-context-comparison-NEW`. Completed output is
+`results/functional_sites/prediction-context-comparison-20260927-v1`. All exported
+contexts were reloaded and compared with their qualified arrays; this is a
+serialization/source check, not fresh native encoding or coordinate validation.
+The complete 150-row table and provenance receipt are versioned as
+`metadata/functional_prediction_contexts_20260927.tsv` and
+`metadata/functional_prediction_context_receipt_20260927.json`. Both source
+models, six-position contexts, contextual amino acids and confidence summaries
+are retained for every row. No new predictions or GPU work were performed.
