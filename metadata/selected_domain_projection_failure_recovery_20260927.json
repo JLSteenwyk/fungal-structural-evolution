@@ -1,0 +1,19 @@
+{
+  "status": "verified_terminal_projection_temporary_disk_limit_failure",
+  "terminal_states": {
+    "fungal-selected-domain-coverage-projection-20260927.service": {
+      "ExecMainStatus": "1",
+      "ActiveState": "failed"
+    },
+    "fungal-selected-domain-coverage-readback-20260927.service": {
+      "ExecMainStatus": "1",
+      "ActiveState": "failed"
+    }
+  },
+  "original_plan_sha256": "2f5356ab3a3239b1a45fa191bf32d59da7415d04b58a37806fc5553f0a6a526f",
+  "original_output": "results/structural_comparisons/selected-domain-coverage-projection-20260927-v1",
+  "failure": "DuckDB failed to offload data block: 18.6 GiB/18.6 GiB used, explicit max_temp_directory_size=20GB.",
+  "original_receipt_exists": false,
+  "recovery_plan_sha256": "e17258bfb838a598206b78b28e5fbd921346ae87cfa8880287a7f09ae0c894dd",
+  "recovery": "Partition aggregation by all 36 boundary/mask/screen settings; all source records and 15552 strata retained, independent checker unchanged. Old scripts, output and failed services preserved."
+}

@@ -21,11 +21,11 @@ and reuse maxima with pandas/NumPy without using the producer database or helper
 It requires exact producer identity and successful termination, complete bound
 source proofs, all input hashes, and an exact full-stratum match.
 
-Plan: `metadata/selected_domain_coverage_projection_plan_20260927.json`.
-Output: `results/structural_comparisons/selected-domain-coverage-projection-20260927-v1`.
-Producer: `scripts/project_selected_domain_coverage.py`.
+Current plan: `metadata/selected_domain_coverage_projection_plan_20260927_v2.json`.
+Current output: `results/structural_comparisons/selected-domain-coverage-projection-20260927-v2`.
+Current producer: `scripts/project_selected_domain_coverage_v2.py`.
 Verifier: `scripts/readback_selected_domain_coverage.py`.
-Final proof: `metadata/selected_domain_coverage_projection_readback_20260927.json`.
+Final proof: `metadata/selected_domain_coverage_projection_readback_20260927_v2.json`.
 The DuckDB working database is a derived intermediate, not a substitute for
 checksum-bound exported TSV and source manifests.
 
@@ -39,3 +39,21 @@ scenario, boundary and mask alternatives are dependent sensitivity analyses.
 Usable counts do not establish independent replicates, calibrated prediction
 uncertainty, selection neutrality or a causal effect of duplication. Structural
 outcomes and biological effect models remain downstream.
+
+
+## Full-scope resource recovery
+
+The first producer terminated with exit code 1 after its full-grid grouped
+join reached DuckDB's explicit 20 GB temporary-disk allowance. Its checker
+also terminated with exit code 1 at the unsuccessful-producer gate. No
+completed receipt was produced; original scripts, plan, output database and
+failed services are retained. The failure and terminal states are archived in
+`metadata/selected_domain_projection_failure_recovery_20260927.json`.
+
+The v2 producer uses identical aggregate expressions but processes one
+boundary/mask/screen setting at a time. All 36 settings, 100,328,832 selected
+record cells and 15,552 summary strata remain in scope. Resource limits are
+unchanged. The unchanged independent verifier is queued with the new plan,
+exact process identity and a new output path. Fourteen settings completed at
+the live checkpoint, with cgroup memory near 0.8 GiB. This is evidence of
+progress, not completion or a full-memory benchmark.

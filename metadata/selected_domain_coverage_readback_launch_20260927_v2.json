@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-selected-domain-coverage-readback-20260927-v2.service",
+  "pid": 3076828,
+  "created": 1790517872.86,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_selected_domain_coverage.py",
+    "--plan",
+    "metadata/selected_domain_coverage_projection_plan_20260927_v2.json",
+    "--launch",
+    "metadata/selected_domain_coverage_projection_launch_20260927_v2.json",
+    "--output",
+    "metadata/selected_domain_coverage_projection_readback_20260927_v2.json"
+  ],
+  "script_sha256": "5ce882cf5fe9d4118d024112443ac63ed12dce965b7159a6ea4beee89b8d306c"
+}

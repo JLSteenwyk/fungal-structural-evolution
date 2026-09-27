@@ -1,0 +1,79 @@
+{
+  "producer": {
+    "unit": "fungal-selected-control-domain-qualification-readback-20260927.service",
+    "pid": 3066865,
+    "created": 1790517451.57,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_selected_control_domain_qualification.py",
+      "--plan",
+      "metadata/selected_control_domain_qualification_plan_20260927.json",
+      "--launch",
+      "metadata/selected_control_domain_qualification_launch_20260927.json",
+      "--output",
+      "metadata/selected_control_domain_qualification_readback_20260927.json"
+    ],
+    "script_sha256": "9198201ab2e4c78d7f928e89505a4b0d444fc0a2482cfb7457d2106bc021653c",
+    "resources": {
+      "cpus": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_gib": 1,
+      "planning_hours": [
+        0.1,
+        2
+      ]
+    }
+  },
+  "inventory": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1",
+  "inventory_audit": "metadata/selected_control_domain_inventory_readback_20260927.json",
+  "inventory_audit_status": "passed_full_selected_control_domain_inventory_readback",
+  "qualification": "results/structural_comparisons/selected-control-domain-qualification-20260927-v1",
+  "qualification_audit": "metadata/selected_control_domain_qualification_readback_20260927.json",
+  "qualification_audit_status": "passed_full_selected_control_domain_qualification_readback",
+  "target_nodes": "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl",
+  "scenarios": "results/orthology/background-control-selection-20260927-v1/scenarios.json",
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "output": "results/structural_comparisons/selected-domain-coverage-projection-20260927-v2",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 8,
+    "temporary_disk_gib": 20,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "scope": "Full 100328832 selected-record sensitivity cells summarized into 15552 strata, with diversity and background reuse. Existing CPU resources only.",
+  "pins": {
+    "metadata/selected_control_domain_qualification_readback_launch_20260927.json": "859c1d5e63ea80e1431926ec123ada57a38baf8aa44852a3ad721473d635cc29",
+    "scripts/project_selected_domain_coverage.py": "f2a0c839adf34388c58d49259969ed7493157acbc6d6e29584e140a9ecda0ece",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/selected_control_domain_inventory_readback_20260927.json": "9f96f1eb74a72c187441db189463d3101a1d7dcc72c163712a9bd04e99ed8699",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "metadata/selected_control_domain_qualification_plan_20260927.json": "6a8f25255478071baf413cc0c6c8c4a56cb43b4970482acf4b735c6b431f0c6c",
+    "metadata/background_match_graph_completed_readback_20260927.json": "711e3445c954795a2ceb58fd8c82ef16e26bb4e862e1d75129a9dd5d430e64d1",
+    "results/structural_comparisons/selected-control-domain-inventory-20260927-v1/receipt.json": "6f1b912cbac6e637747752febc6ad08b2cc3d3de677283161ae1423b4f7f24db",
+    "results/structural_comparisons/selected-control-domain-qualification-20260927-v1/receipt.json": "a4923f548cb50a46f09c0afab676afe2f8027110e5d1e8c2e8c234c9e8c37229",
+    "scripts/project_selected_domain_coverage_v2.py": "0b8032cc2183b07c63cab6ae9c40ad8d21b41088739608f1a3a741dc14fb4d97",
+    "scripts/readback_selected_domain_coverage.py": "5ce882cf5fe9d4118d024112443ac63ed12dce965b7159a6ea4beee89b8d306c",
+    "metadata/selected_control_domain_qualification_readback_20260927.json": "85b217353461cfcf0e6cde76c0f9ed79197c211819ab3e1e3d40674f82bd1f50"
+  },
+  "recovery": "Original full-grid aggregation reached explicit 20 GB temporary disk limit and exited 1. Both original services terminal failed. V2 executes identical aggregate expressions one boundary/mask/screen at a time, preserving all 36 settings, all 100328832 record cells, original sources and independent checker."
+}
