@@ -5010,3 +5010,14 @@ all specifications at tested reference values; interaction evidence depends
 on specification. The inspected figure, source checks and limitations are in
 [the coupling workflow](conditional-site-coupling.md). This completes this
 conditional site analysis, not the broader evolutionary project.
+
+
+### September 26: direct ortholog-pair guide sensitivity launched
+
+Both guides use identical protein ordinals and taxon mappings. A bounded-memory
+merge now compares the actual native pair identities to count shared and
+guide-specific orthology assignments. The implementation passed 105 independent
+set-based fixtures and rejected seven malformed streams. The service uses one
+CPU and 2 GiB RAM; results remain pending. This measures reconciliation-guide
+sensitivity and does not itself test duplication-associated structural change.
+See [ortholog identity workflow](grouped-ortholog-identities-20260926.md).

@@ -1,0 +1,15 @@
+{
+  "service": "fungal-ortholog-pair-guide-overlap-20260926.service",
+  "pid": 3188062,
+  "created": 1790468017.48,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ortholog_pair_guide_comparison.py",
+    "--plan",
+    "metadata/ortholog_pair_guide_overlap_plan_20260926.json"
+  ],
+  "plan": "metadata/ortholog_pair_guide_overlap_plan_20260926.json",
+  "plan_sha256": "9538b1ac053164fbc00033f4bd1c46ce439ae9508965f55a3f4b18ddd658cbfb",
+  "validation": "105 independent Python-set fixtures and seven malformed-input rejection cases passed. Includes empty inputs, disjoint/identical sets, maximum 24-bit ID and crossing the 65,536-pair read-buffer boundary.",
+  "scope": "Full native pair identity overlap; no GPU work."
+}

@@ -298,3 +298,43 @@ native pair tables. Their difference of 122,257 in total unordered pair count
 is a net count difference, not the number of discordant pairs: pair identities
 must be compared to establish overlap and guide sensitivity. Neither audit
 includes small-family supplements or establishes biological orthology.
+
+
+## Full pair-identity guide comparison
+
+On September 26, a direct identity comparison was launched between the two
+validated native pair streams. SequenceIDs.txt and SpeciesIDs.txt have
+identical hashes between guides, establishing identical zero-based protein
+ordinals and taxon labels. The runner binds these mappings back through the
+original pair-audit plans, identity audits and source snapshots. It hashes
+both 15.7-GB streams before and after a linear merge and rechecks all pins.
+
+`scripts/compare_ortholog_pair_streams.cpp` streams fixed-size reciprocal
+records, verifies canonical lowercase IDs, exactly one record in each
+direction, strict pair ordering and uniqueness, then counts shared pairs,
+profile-only pairs, MAFFT-only pairs, union and symmetric difference. These
+identity counts measure guide sensitivity, unlike the difference of total
+pair counts. No pair list is expanded in memory.
+
+The implementation passed 105 independently calculated Python-set fixtures,
+including randomized subsets, empty/disjoint/identical sets, maximum 24-bit
+IDs and the read-buffer boundary. Seven invalid streams were rejected,
+including duplicate/unsorted pairs, bad directions, truncation, invalid IDs
+and mismatched reverse records. Reproduce these checks with
+`python scripts/check_ortholog_pair_guide_comparison.py`.
+
+Reproduce production with `python scripts/run_ortholog_pair_guide_comparison.py
+--plan metadata/ortholog_pair_guide_overlap_plan_20260926.json` after choosing
+a fresh output directory in a new plan. The current service is
+`fungal-ortholog-pair-guide-overlap-20260926.service`, with process identity
+archived in `metadata/ortholog_pair_guide_overlap_launch_20260926.json`. It
+uses one CPU, 2 GiB RAM and no swap, with a 1-GiB output allowance and an
+uncalibrated 0.1–4-hour planning interval. Inputs total about 29.3 GiB per
+scan. The production comparison is running; no overlap result is claimed yet.
+
+Outputs will be under
+`results/orthology/ortholog-pair-guide-overlap-20260926-v1/`. Counts exclude
+the separate small-family supplements. Guide-specific assignments are not
+validated errors or inferred duplication events. Even a high overlap would
+not establish biological orthology, resolve gene-copy uncertainty or replace
+the planned duplication/structural-divergence tests.

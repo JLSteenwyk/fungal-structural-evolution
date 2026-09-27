@@ -1,0 +1,53 @@
+{
+  "output": "results/orthology/ortholog-pair-guide-overlap-20260926-v1",
+  "compiler": "/usr/bin/g++",
+  "source": "scripts/compare_ortholog_pair_streams.cpp",
+  "pins": {
+    "metadata/ortholog_pair_reciprocity_profile_plan_20260926.json": "a924a688db58f9628a25b150e733122f7eb2559701b12dc97f6ce3220267b4bc",
+    "metadata/grouped_ortholog_identity_profile_large_fields_plan_20260926.json": "61f894043998a06a74694a9f2b85996b0a3c4134800a9f50a9984206baffcb7f",
+    "metadata/expanded_small_family_profile_completed_receipt_20260923.json": "f2e9c30af442f45198a3008aca130d6548ef02b8d8efe2950f2c132b266e0321",
+    "results/orthology/grouped-ortholog-identities-profile-20260926-v2/receipt.json": "e02e4b15d6625e902f244e6069c7836a1ec39c296cc86487f1f48036d4c9cb7d",
+    "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json": "1676148b2998d42d65c024091c0d7f391c88f7d1490416b9a06319d460944ecf",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json": "c1ec84a16baa301147b669260da3700f2ea6142fc6b593b29ab1de92fba2c5ac",
+    "metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json": "a1d641f0496eccdfd4906af6d667dd8ea4207da762d1e3f22ecdf8901b1ecc11",
+    "metadata/expanded_small_family_mafft_completed_receipt_20260923.json": "dc493b906663152ba9d477bcae97d3457a43341e95d4e7a4afa80479198b26b5",
+    "results/orthology/grouped-ortholog-identities-mafft-20260926-v2/receipt.json": "d92080547a9df43a7e763938ab50dd3755a8636baf668ba48ca51af7474af1cb",
+    "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json": "dc994c82a4f889f1c1b54bb813d4a12493369251694c85456b679f28805d196b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "/usr/bin/g++": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+    "scripts/compare_ortholog_pair_streams.cpp": "dacbcc1df80871166fd316cfe0c08cf7346f4d0dcb17d02c6a5437e028f9854a",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_ortholog_pair_guide_comparison.py": "9d33bb5c1f667cb2922b1761c30dd067dcb346e32d9ecab052baeeef7d29ea70"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "input_scan_gib_per_pass": 29.29,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "Two 15.7 GB streams, checksum passes before and after one linear merge; bounded 1.84 MB input buffer per stream. Uncalibrated wall-time allowance, existing local resources only."
+  },
+  "left": {
+    "guide": "profile",
+    "receipt": "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json",
+    "stream": "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/sorted_pairs.hex",
+    "audit_plan": "metadata/ortholog_pair_reciprocity_profile_plan_20260926.json",
+    "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt",
+    "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt"
+  },
+  "right": {
+    "guide": "mafft",
+    "receipt": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json",
+    "stream": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/sorted_pairs.hex",
+    "audit_plan": "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json",
+    "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt",
+    "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt"
+  }
+}
