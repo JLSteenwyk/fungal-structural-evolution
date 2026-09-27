@@ -1,0 +1,16 @@
+{
+  "status": "completed_and_independently_verified_full_codon_realignment_inputs",
+  "plan_sha256": "ea7854430752f84d0062cdf2782d3cd98f9a9d0585c9a2d7321ddf35ddbfbd57",
+  "cases": 1712,
+  "case_taxon_sequences": 11963,
+  "scope": "All 1712 existing prepared cases, exact retained taxon membership and translation codes. Full source CDS translates exactly to original unaligned source protein, one terminal stop removed explicitly. Every original emitted codon and AA is reconstructed through source-MAFFT columns and full-sequence residue positions. No new alignment, selection test, copy validation or saturation claim.",
+  "producer_receipt": "results/cds/full-group-realignment-inputs-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "185423b4cf0b5bc6e4fb552104b727877f655cf205853b67bcd0ab5ff5267b1c",
+  "readback_sha256": "08a0fc30568586f9eb4707794da4ce4a755849acc0c036d8b53136ca4ced6abc",
+  "verified_output_artifacts": 5137,
+  "source_artifact_recheck": "All original codon input, source-index and full protein alignment artifact hashes checked again after verification.",
+  "commands": [
+    "python scripts/prepare_full_codon_realignment_inputs.py --plan metadata/full_codon_realignment_input_plan_20260927.json",
+    "python scripts/readback_full_codon_realignment_inputs.py --plan metadata/full_codon_realignment_input_plan_20260927.json --output metadata/full_codon_realignment_input_readback_20260927.json"
+  ]
+}

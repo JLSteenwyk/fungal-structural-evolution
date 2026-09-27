@@ -6828,3 +6828,17 @@ The prior turn queued independent verification; this turn archives completed
 production and verifies the transition to active computation. All eight aims
 remain open; no partial audit is presented as a final scientific result.
 GPU prediction stays paused.
+
+## September 27 full codon realignment inputs verified
+
+Advanced the selection-analysis preparation by recovering full proteins/CDS
+for all 1,712 prepared diagnostic groups rather than only the earlier 20
+outliers. All 11,963 case–taxon exports and original residue maps passed
+independent readback, reproducing 5,728,643 observed diagnostic codons. Membership,
+translation codes and copy caveats are preserved; no case is declared selection
+eligible. See [input evidence](coding-sequence-workflow.md#full-group-realignment-inputs-verified--september-27).
+
+The previous turn was a verified wait on identified live comparison/audit jobs.
+This turn completes a full-cohort input stage for alignment sensitivity under
+aim 7. Realignment and downstream adequacy checks remain pending; all eight aims
+remain open. GPU prediction stays paused.

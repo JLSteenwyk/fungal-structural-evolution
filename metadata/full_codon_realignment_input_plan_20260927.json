@@ -1,0 +1,28 @@
+{
+  "inputs": "results/cds/genus-codon-diagnostic-inputs-v1",
+  "readback": "metadata/genus_codon_diagnostic_readback.json",
+  "case_summary": "metadata/genus_codon_diagnostic_case_summary.tsv",
+  "source_index": "results/cds/marker-source-index-v1",
+  "alignment_audit": "results/phylogeny/mafft-audit-full-v1/receipt.json",
+  "global_alignments": "results/phylogeny/alignments-full-v1",
+  "output": "results/cds/full-group-realignment-inputs-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "gpu": false,
+    "basis": "Source recovery and codon/residue projection checks for all 1712 cases; no model fitting or alignment execution yet."
+  },
+  "pins": {
+    "results/cds/genus-codon-diagnostic-inputs-v1/receipt.json": "e513c9ab7a4e3b422d5721e72b7927d01a3473736e2b8724c7c8a7da00678eb5",
+    "metadata/genus_codon_diagnostic_readback.json": "f15242bdcd443990fb5e2a3bfbc7310c4786e3e88e989158618cf855ba1f434c",
+    "metadata/genus_codon_diagnostic_case_summary.tsv": "0c18d0566339d09941d635a1bc02b8b14f1592c5e68e83465851d91f011820ab",
+    "results/cds/marker-source-index-v1/receipt.json": "bf23c653305d5e702c9bf1581bd79f4ff301424454753b7d4d5270d701ce2060",
+    "results/phylogeny/mafft-audit-full-v1/receipt.json": "de72d5d99e20ef647dd2074f7654e2194551f490f86b20f301780e95a0d619a3",
+    "scripts/prepare_full_codon_realignment_inputs.py": "62e8f09388c89667a4004b7759577bc7d19fb085dfc188d7ddf0cc96feaf6ecb"
+  }
+}

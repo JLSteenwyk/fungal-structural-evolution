@@ -1000,3 +1000,35 @@ output directory required). Outputs are archived in
 and Boolean reconstruction reproduced the exact full case grid and flagged
 case union, recorded in `metadata/codon_analysis_readiness_readback.json`.
 The local summary completed in under one second without GPUs or model refits.
+
+### Full-group realignment inputs verified — September 27
+
+Prepared exact full source proteins and CDS for **all 1,712 existing diagnostic
+groups**, covering **11,963 case–taxon sequences**. Membership, code 1/code 12
+assignments, hybrid exclusions and recorded copy caveats are preserved from the
+verified diagnostic inputs. The source CDS translates exactly to the original
+ungapped full protein under the case's genetic code; a single terminal stop is
+removed explicitly where present. Ambiguous source characters are preserved.
+
+Every original diagnostic column is linked back to a full-protein residue index
+through its recorded global MAFFT column. Independent FASTA parsing, codon-table
+lookups and cumulative residue-index reconstruction passed all exports and maps,
+reproducing all **5,728,643 observed original taxon–codon cells**. Original input,
+source-CDS and global alignment artifact hashes were also rechecked. This
+provides full-cohort inputs for alignment sensitivity beyond the earlier
+20-outlier review; it does not yet perform realignment or establish selection
+eligibility, correct orthology, genus monophyly or absence of saturation.
+
+```bash
+python scripts/prepare_full_codon_realignment_inputs.py --plan metadata/full_codon_realignment_input_plan_20260927.json
+python scripts/readback_full_codon_realignment_inputs.py --plan metadata/full_codon_realignment_input_plan_20260927.json --output metadata/full_codon_realignment_input_readback_20260927.json
+```
+
+Use fresh output paths for reruns. Full FASTA files, original-position maps and
+case summaries are under `results/cds/full-group-realignment-inputs-20260927-v1`.
+The plan and completed independent proofs are archived in
+`metadata/full_codon_realignment_*_20260927.json`. The input preparation allowance
+was one CPU, 4 GiB RAM, 1 GiB output and 1–15 minutes; it completed locally in
+seconds without GPU prediction. Whole-group alignments, codon projection and
+correspondence/coverage sensitivity remain the next stages. No flagged or
+information-limited case was silently excluded from the 1,712-case input set.
