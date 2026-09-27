@@ -8678,3 +8678,13 @@ retaining all below-threshold and unavailable comparisons. Fungal-reference and
 experimental-reference contrasts use identical residues and stay descriptive.
 Threshold/sign fixtures passed. The service waits on full quartet validation;
 production summaries and biological interpretation remain incomplete.
+
+### 2026-09-27: literature-linked Neocallimastix sampling sensitivity prepared
+
+Identified a potential conspecific group among three selected Neocallimastix
+entries using primary phylogenetic/genome studies. Exact BioProject/WGS linkage
+connects the constans genome paper to its selected assembly. Prepared and fully
+checked all six alignment subsets retaining each representative in turn, with
+all 25 outgroups. This is taxonomic sensitivity, not a formal synonymy decision
+or a validated species count. Original data/analyses remain unchanged.
+See [evidence and membership](taxon-identity-sensitivities.md).

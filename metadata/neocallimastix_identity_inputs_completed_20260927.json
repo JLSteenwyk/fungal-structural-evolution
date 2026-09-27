@@ -1,0 +1,99 @@
+{
+  "status": "complete_neocallimastix_identity_sensitivity_inputs",
+  "script_sha256": "23f4abe4b4995ecc0c4c0b62ef16fb9d767b3987d383ebbf86e9e88412eaa24b",
+  "created_utc": "2026-09-27T20:46:22.794414+00:00",
+  "group_taxa": [
+    "F1754190",
+    "F2767002",
+    "F3108450"
+  ],
+  "matrices": [
+    {
+      "alignment": "profile",
+      "representative": "F1754190",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 49027,
+      "path": "profile-retain_F1754190.faa",
+      "sha256": "5bfc571086040f01c5e5b7f6c764b2d351310ba0775720fcbf51543470e76156"
+    },
+    {
+      "alignment": "profile",
+      "representative": "F2767002",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 49027,
+      "path": "profile-retain_F2767002.faa",
+      "sha256": "7340ba5c3eb2421906568f72b57c3e132ca7ed7f105794fb668258595d48aa1e"
+    },
+    {
+      "alignment": "profile",
+      "representative": "F3108450",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 49027,
+      "path": "profile-retain_F3108450.faa",
+      "sha256": "21a587f6a88fe6be17ebc8c79719167ad30de67fb23188f0fae8b9e4b0e341db"
+    },
+    {
+      "alignment": "mafft",
+      "representative": "F1754190",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 63750,
+      "path": "mafft-retain_F1754190.faa",
+      "sha256": "fe5b3f1b849e30b6c51e3772c29862de88f00f50912aa51fb1f0979bca8417f4"
+    },
+    {
+      "alignment": "mafft",
+      "representative": "F2767002",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 63750,
+      "path": "mafft-retain_F2767002.faa",
+      "sha256": "f0d5453814b9b2fc5f2b2c14591a67befb88027f75e2e29f919fb2e690565dd7"
+    },
+    {
+      "alignment": "mafft",
+      "representative": "F3108450",
+      "taxa": 524,
+      "fungal_entries": 499,
+      "outgroups": 25,
+      "columns": 63750,
+      "path": "mafft-retain_F3108450.faa",
+      "sha256": "e71ab812a77a86d5ce282666a80a991a55877d202fff22da67c2fdcd0e0d0fe9"
+    }
+  ],
+  "articles": [
+    {
+      "pmc": "PMC12341934",
+      "doi": "10.1093/g3journal/jkaf137",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12341934/fullTextXML",
+      "path": "data/taxonomy/neocallimastix-review-20260927-v1/article.xml"
+    },
+    {
+      "pmc": "PMC8399178",
+      "doi": "10.3390/microorganisms9081655",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8399178/fullTextXML",
+      "path": "data/taxonomy/neocallimastix-review-20260927-v1/phylogeny_article.xml"
+    }
+  ],
+  "scope": "Six exact aligned-sequence subsets retain each of three potential conspecific representatives in turn. All 25 outgroups and all other taxa retained; original data and active analyses unchanged. Names and taxids do not prove unique species. Literature motivates sensitivity, not automatic synonymy; genome-wide delimitation and phylogenetic comparisons remain pending. Other uncertain labels and hybrids remain unresolved.",
+  "artifacts": {
+    "profile-retain_F1754190.faa": "5bfc571086040f01c5e5b7f6c764b2d351310ba0775720fcbf51543470e76156",
+    "membership.tsv": "62e73794e6be3ae657dab0c27fa0ff827bc11439a3692028a580f7914b665d12",
+    "assembly_evidence.json": "58bf34e5b198bdd5778236302cc0a0bdd173038c7922869e083a928029845c4b",
+    "profile-retain_F2767002.faa": "7340ba5c3eb2421906568f72b57c3e132ca7ed7f105794fb668258595d48aa1e",
+    "profile-retain_F3108450.faa": "21a587f6a88fe6be17ebc8c79719167ad30de67fb23188f0fae8b9e4b0e341db",
+    "mafft-retain_F1754190.faa": "fe5b3f1b849e30b6c51e3772c29862de88f00f50912aa51fb1f0979bca8417f4",
+    "mafft-retain_F3108450.faa": "e71ab812a77a86d5ce282666a80a991a55877d202fff22da67c2fdcd0e0d0fe9",
+    "mafft-retain_F2767002.faa": "f0d5453814b9b2fc5f2b2c14591a67befb88027f75e2e29f919fb2e690565dd7"
+  },
+  "source_receipt_path": "results/phylogeny/neocallimastix-identity-inputs-20260927-v1/receipt.json",
+  "source_receipt_sha256": "431893004efa750e228e9ba204f69ad988ebb458cd1b11b368f4000080726deb"
+}

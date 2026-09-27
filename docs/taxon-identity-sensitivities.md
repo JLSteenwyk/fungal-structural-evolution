@@ -106,3 +106,39 @@ Outputs include marker-level and role/lineage-level counts, preserving groups
 with zero coverage. The full-panel baseline reproduces the earlier source
 coverage counts. Exclusion policies cannot make a previously ineligible marker
 eligible, and no new confidence values are imputed.
+
+## September 27: Neocallimastix species-complex sensitivity
+
+A primary phylogenetic study supports potential conspecificity of
+*N. californiae*, *N. lanati* and *N. cameroonii*, while emphasizing the need for
+stronger phylogenetic resolution ([Stabel et al., 2021](https://doi.org/10.3390/microorganisms9081655)).
+The genome study for the selected `Neocon1` assembly identifies its isolate as
+*N. cameroonii* var. *constans* and places it in the cameroonii/californiae
+species complex ([genome study, 2025](https://doi.org/10.1093/g3journal/jkaf137)).
+Its BioProject PRJNA1052201 and WGS project JBODTK000000000 exactly match the
+frozen assembly catalogue for GCA_050613775.1. This supplies an assembly-linked
+literature name, but does not by itself establish formal synonymy or delimit
+all selected genomes as one biological species.
+
+The selected records are:
+
+| Taxon ID | Frozen label | Assembly | Strain |
+| --- | --- | --- | --- |
+| F1754190 | Neocallimastix californiae | GCA_002104975.1 | G1 |
+| F2767002 | Neocallimastix lanati (nom. inval.) | GCA_016946835.1 | sp3 |
+| F3108450 | Neocallimastix sp. 'constans' | GCA_050613775.1 | G3 |
+
+`prepare_neocallimastix_identity_sensitivity.py` prepared all three possible
+single-representative policies for both profile and MAFFT alignments: six exact
+sequence subsets. Every subset contains 499 fungal entries plus all 25 outgroups;
+retained sequences and columns are unchanged and fully checked. These are entry
+counts, not validated unique-species counts. Other uncertain labels and the two
+curated hybrids remain in these particular subsets. Original manifests and
+running analyses are unchanged.
+
+The two primary articles are cached as XML with identifiers, source URLs and
+hashes. All six matrix hashes, membership and assembly evidence are in
+`results/phylogeny/neocallimastix-identity-inputs-20260927-v1`; the versioned
+closure is `metadata/neocallimastix_identity_inputs_completed_20260927.json`.
+No new sensitivity tree has been inferred yet. Final species counting still
+requires broader taxonomic review and genome-wide assessment of this complex.
