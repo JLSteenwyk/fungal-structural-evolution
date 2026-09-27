@@ -83,3 +83,28 @@ The inspected partial output contained tiny negative optimizer weights; this
 is a numerical certificate issue and does not establish lack of joint support.
 Eight diagnostic checks passed. Resources: one CPU, 2 GiB RAM, no swap,
 1–10 minutes after readback, under 0.1 GiB output.
+
+## Constructive follow-up for unresolved inputs
+
+A separate queued stage reconstructs every unresolved input after successful
+full certificate readback. It sets negative saved weights to zero, normalizes
+the remaining positive weights, and recomputes the scaled barycenter from the
+original fingerprinted covariate matrix. Scalar summation and a separate vector
+product must agree. A nonnegative combination within the original 1e-8 zero
+support tolerance is an explicit numerical support certificate; a larger
+residual or missing positive weights remains unresolved. This procedure makes
+no claim to optimize the hull-distance objective or establish interior support.
+
+All original classifications remain in the full 82,944-setting export, with a
+separate projected-certificate disposition. No fitted response model or original
+solver flag is changed. Four fixtures include successful near-feasible weights,
+an outside-hull case that stays unresolved, all-zero covariates, and absence of
+positive weights. The source-bound plan and launch are
+`metadata/joint_support_projection_{plan,launch}_20260927.json`; scripts are
+`scripts/project_joint_support_weights.py` and
+`scripts/refine_unresolved_joint_support.py`.
+
+Execution uses one CPU, 16 GiB RAM, no swap, at most 1 GiB output, and a planning
+allowance of 0.1–12 hours after full readback. Only unresolved inputs require
+matrix reconstruction; every original setting remains represented. Completion
+is pending and no additional supported input is claimed yet.
