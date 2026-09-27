@@ -1,0 +1,33 @@
+{
+  "source_plan": "metadata/background_match_covariate_plan_20260927.json",
+  "output": "metadata/background_match_covariate_completed_readback_20260927.json",
+  "pins": {
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "metadata/background_match_graph_completed_readback_20260927.json": "711e3445c954795a2ceb58fd8c82ef16e26bb4e862e1d75129a9dd5d430e64d1",
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/check_background_match_covariates.py": "93488190a3469cdb9c0c6ac66e18a8d5c2b8bec5c1f37aad5222682d545c5b0e",
+    "scripts/characterize_background_match_covariates.py": "c16f4e3fd211966858c3519d5b352d06f9bb42a86bd70802af79d7fb9e7f3dd4",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d",
+    "results/orthology/background-match-graph-20260927-v1/edges.tsv": "8a73995e18e23b59d38916c5f022e6a15a4d153023b847da096e92668249d2c9",
+    "results/orthology/background-match-graph-20260927-v1/target_policy_dispositions.tsv": "2fec0c91e78f77aa44700a5827214d97172ea1754c58cd08281c13c68bf109e2",
+    "metadata/background_match_covariate_plan_20260927.json": "e9f8009d9dfb6818a2bf604cde2b6c79e32085b2cef6e5f4aeeeefba09b7838f",
+    "metadata/background_match_covariate_launch_20260927.json": "69ca712a011a61e9a5319efb4e6c4feb78423a866deabc90bc0da48b6e0e4091",
+    "scripts/readback_background_match_covariates.py": "1c77285150cc3c0e614837e0b9277128c22de8304e973e650ca3517845cd5dd1",
+    "scripts/check_background_match_covariate_readback.py": "5daff0b2fab423927efcf7cd17b4bf25ff2870bb1ed9e4429c957727695898cf",
+    "results/orthology/background-match-covariates-20260927-v1/receipt.json": "767b0bc057d7aa831f29759251161c31d930474c1bbf4ed44fd850909d4c7a35"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "edges": 1661948,
+    "basis": "Independent vector-array reconstruction of every two-endpoint mapping and joint caliper; all original graph fields/order, dependency overlap counts and grouped totals checked. 50000-edge chunks. No GPU or charges; planning excludes dependency wait."
+  }
+}

@@ -6598,3 +6598,17 @@ readback and final matching remain pending. See
 The previous turn launched graph verification; this turn completes that
 milestone and advances matching quality assessment. All eight scientific aims
 remain active. GPU prediction stays paused.
+
+## September 27 covariates independently verified
+
+Full endpoint covariate production completed all 1,661,948 candidate edges.
+Launched independent vector reconstruction of every mapping-specific difference,
+joint tolerance, shared-identity count, original edge field and summary. A
+1,000-case scalar/array comparison and endpoint-swap invariance passed. Full
+readback passed all 1,661,948 edges; control selection and balance assessment
+remain pending. See
+[covariate verification](terminal-sister-backgrounds-20260927.md#covariates-independently-verified).
+
+The prior goal turn launched covariate characterization; this turn confirms its
+completion and completes full verification. All eight aims remain active and GPU
+prediction remains paused.

@@ -801,3 +801,31 @@ case where lengths match only under one orientation and confidence only under
 the other (correctly failing joint calipers). Resource plan: one CPU, 8 GiB RAM,
 no swap, 2 GiB output, uncalibrated 0.1–4 hours. Production and full independent
 covariate verification remain pending; no structural responses or GPUs are used.
+
+## Covariates independently verified
+
+Completed metadata differences and dependence flags for every one of the
+1,661,948 graph edges. Started independent reconstruction using vector arrays
+in 50,000-edge chunks rather than the producer's scalar endpoint loop. It checks
+every original graph field and row order, both sets of numeric differences,
+all joint tolerance flags, distinct shared gene/model/sequence counts and every
+guide/policy summary. Exact node floats are loaded through JSON parsing; TSV
+floats use round-trip parsing to avoid introducing precision loss in the audit.
+
+One thousand independent scalar/array fixtures passed, along with invariance of
+eligibility under endpoint swapping. Source proof and all completed artifacts
+are bound by hash. Full production readback passed all 1,661,948 edges. One CPU, 8 GiB RAM,
+no swap and negligible receipt output are allocated; the uncalibrated planning
+range is 0.1–4 hours. No structural outcomes enter this check and no matches or
+biological effects have been selected or estimated.
+
+The checker completed before its live PID could be captured; its completed proof
+and inactive/dead service with exit status zero were verified. It was not
+restarted. The proof and complete verified production summary are archived in
+`metadata/background_match_covariate_completed_readback_20260927.json` and
+`metadata/background_match_covariates_completed_20260927.json`.
+
+For profile/alignment-E-value, 55,785 of 207,950 candidate edges meet the tight
+band, 127,538 the moderate band and 173,094 the wide band. No edge in this subset
+shares a gene, model or sequence with its target. These are dependent edge
+counts, not unique supported targets, selected matches or effective sample sizes.
