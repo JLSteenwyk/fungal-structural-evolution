@@ -7669,3 +7669,18 @@ This validates computational optimization, not biological model adequacy or
 interval coverage. Project-data fits and full-grid resource planning remain.
 The full covariate-design readback is still live with advancing checkpoints.
 All eight aims remain open. GPU prediction remains paused.
+
+## September 27 full matched fitting workload inventory launched
+
+The preceding turn completed the boundary/start optimizer and dense-reference
+checks (progress). The full five-tree grid implies 414,720 fits and 9,123,840
+optimizer attempts before exact input reuse. Launched a complete 82,944-setting
+inventory retaining every setting and numerical observation while identifying
+byte-identical ordered node/family/species and response/covariate inputs. There
+is no tolerance-based or favorable-result merging. A separately recorded SQL
+checker waits for successful producer completion and rebuilds every setting
+fingerprint and source recipe. Both processes have verified live identities;
+producer checkpoints advance. One CPU and 12 GiB memory per stage, no swap.
+[Workload scope and methods](full-matched-fit-inventory-20260927.md).
+Full inventory/readback and runtime planning remain pending. All eight aims
+remain open. GPU prediction remains paused.

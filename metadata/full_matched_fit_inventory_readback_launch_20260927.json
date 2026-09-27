@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-full-matched-fit-inventory-readback-20260927.service",
+  "pid": 78358,
+  "created": 1790521472.53,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_matched_fit_inventory.py",
+    "--plan",
+    "metadata/full_matched_fit_inventory_plan_20260927.json",
+    "--launch",
+    "metadata/full_matched_fit_inventory_launch_20260927.json",
+    "--output",
+    "metadata/full_matched_fit_inventory_readback_20260927.json"
+  ],
+  "script_sha256": "00331342581925c97d6cc90300fbea5f7382c25f331f657e275b2a2979e1f8d0",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "planning_hours_after_producer": [
+      0.1,
+      2
+    ]
+  }
+}
