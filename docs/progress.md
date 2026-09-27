@@ -8716,3 +8716,14 @@ contrasts. Maximum RMSD readback difference is 1.35e-13 Å; maximum Decimal
 subtraction difference is 1.074e-14 Å. Unavailable fits and every screen remain
 explicit. Case-level sensitivity and interpretation are still pending; none of
 these numerical checks establishes a biological mechanism or independent support.
+
+### 2026-09-27: complete selected-case experimental reference sensitivity
+
+Verified all 115,200 sensitivity records and 936 summaries across every case,
+metric, coverage screen and margin. Both direction agreement and reversal are
+retained, with explicit zero-coverage cases and dependence counts. The detailed
+table and interpretation limits are in
+`docs/case-independent-control-coverage-20260927.md`. Closure:
+`metadata/case_experimental_reference_robustness_completed_20260927.json`.
+This completes a descriptive reference-sensitivity stage, not experimental
+validation or the overall evolutionary analyses. GPU prediction remains paused.

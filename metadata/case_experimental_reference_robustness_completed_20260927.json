@@ -1,0 +1,11 @@
+{
+  "status": "complete_full_case_reference_robustness_readback",
+  "unit_rows": 115200,
+  "case_summary_rows": 936,
+  "producer_receipt_path": "results/experimental_structures/whole-domain-case-reference-robustness-20260927-v1/receipt.json",
+  "producer_receipt_sha256": "92a67749726589ddbfa82f2973cb75ae469d81c76590f18c62959da81692248c",
+  "readback_receipt_path": "results/experimental_structures/whole-domain-case-reference-robustness-readback-20260927-v1/receipt.json",
+  "readback_receipt_sha256": "59031e69614da64b2730fc925998ce458d758cdcaf95eaf489bc709f6989dff9",
+  "scope": "Every range/numeric count recomputed with pandas grouping from source contrasts; every coverage decision independently joined from source screens. All margins/directions and complete unit grid verified. All zero-inclusive case summaries recomputed; no inferential validation implied.",
+  "limitations": "All case/metric/screen/margin combinations, including zero cases. Each unit fixes fungal triplet, experimental entity/model/chain and alignment contexts; qualification requires every domain-boundary/full-plddt70 variant. Direction requires all signed contrasts beyond margin plus 1e-8 numeric tolerance. Units and entity-level categories are not independent; entity categories may overlap across chains. Descriptive, selected-case reference sensitivity, not mechanism, ancestral polarity, experimental validation or significance."
+}

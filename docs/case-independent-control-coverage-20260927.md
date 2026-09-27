@@ -551,3 +551,66 @@ and 0.25–2 hours planned. Its launch identity is retained in
 `metadata/case_experimental_contrast_readback_launch_20260927.json`. Full source
 bindings are in the local readback receipt. Case-level confidence/boundary/reference
 sensitivity, experimental dependence and biological interpretation remain open.
+
+## Experimental reference sensitivity completed
+
+All 115,200 reference-unit sensitivity records and 936 case summaries passed
+full readback. The summary retains all 13 cases, four metrics, six coverage
+screens and three margins (0, 0.01 and 0.1 Å), including zero-coverage cases.
+A unit fixes the fungal triad, experimental entity/model/chain and alignment
+contexts. Qualification requires numeric fits and coverage for all four
+variants: two domain boundaries crossed with full and pLDDT >=70 masks.
+A stable direction must exceed the margin plus 1e-8 Å in every variant.
+
+At n50/c70 and a 0.1 Å margin, the following combinations have qualifying units.
+All other case/metric combinations at this setting have zero qualified units;
+they are retained in the machine-readable summary. Counts describe reference
+sensitivity, not independent biological replicates.
+
+| Case | Metric | Units | Entities | Exact sequences | Dependence components | Same direction | Opposite direction | Variable or within margin |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Heliocybe sulcata | whole | 78 | 28 | 17 | 14 | 20 | 29 | 29 |
+| Heliocybe sulcata | domain | 85 | 29 | 17 | 14 | 18 | 32 | 35 |
+| Heliocybe sulcata | outside_independent | 19 | 6 | 3 | 1 | 12 | 0 | 7 |
+| Heliocybe sulcata | outside_domain_anchored | 19 | 6 | 3 | 1 | 13 | 2 | 4 |
+| Scedosporium apiospermum | domain | 108 | 22 | 14 | 11 | 90 | 8 | 10 |
+| Furculomyces boomerangus | domain | 34 | 10 | 7 | 5 | 32 | 0 | 2 |
+| Jaapia argillacea | whole | 89 | 72 | 33 | 27 | 46 | 33 | 10 |
+| Jaapia argillacea | domain | 67 | 56 | 23 | 19 | 5 | 33 | 29 |
+| Jaapia argillacea | outside_independent | 132 | 92 | 44 | 35 | 13 | 50 | 69 |
+| Jaapia argillacea | outside_domain_anchored | 61 | 52 | 20 | 16 | 39 | 20 | 2 |
+| Neolecta irregularis | domain | 5 | 3 | 2 | 2 | 0 | 0 | 5 |
+| Smittium simulii | outside_independent | 6 | 4 | 3 | 3 | 6 | 0 | 0 |
+| Phycomyces blakesleeanus | whole | 34 | 26 | 10 | 6 | 3 | 1 | 30 |
+| Phycomyces blakesleeanus | domain | 34 | 26 | 10 | 6 | 0 | 4 | 30 |
+| Phycomyces blakesleeanus | outside_independent | 34 | 26 | 10 | 6 | 9 | 12 | 13 |
+| Phycomyces blakesleeanus | outside_domain_anchored | 34 | 26 | 10 | 6 | 33 | 1 | 0 |
+
+“Same” and “opposite” compare A-minus-B RMSD contrasts using the fungal and
+experimental references under the same quartet correspondence. These
+sequence-anchored correspondences differ from the original structure-alignment
+case-selection maps; this table does not reproduce that original contrast.
+“Variable or within margin” includes either reference failing to retain a
+direction beyond the margin across all variants.
+
+Heliocybe and Jaapia contain both agreeing and reversing references for multiple
+metrics. Phycomyces outside displacement under domain anchoring has 33 agreeing
+units and one reversing unit; its independently fitted outside metric has nine
+agreeing, 12 reversing and 13 variable units. This difference makes the fitting
+definition a material part of interpretation. Neither pattern establishes a
+mechanism, ancestral polarity or experimentally validated divergence.
+
+Dependence components connect shared entries, exact sequences and publication
+identifiers and must not be interpreted as independent evolutionary origins.
+Entry-level starting-model annotations and reported mutation counts remain in
+the unit export; experimental independence and target-chain attribution remain
+unresolved. Reference homolog choice, domain orientation uncertainty, sparse
+coverage and selection of these 13 cases limit generalization.
+
+Reproduction: run `scripts/summarize_case_experimental_robustness.py`, then
+`scripts/readback_case_experimental_robustness.py` from the repository root after
+materializing the checksum-bound source artifacts. Both use exclusive output
+directories and preserve existing results. Local results are under
+`results/experimental_structures/whole-domain-case-reference-robustness-20260927-v1/`.
+Closure: `metadata/case_experimental_reference_robustness_completed_20260927.json`.
+Biological interpretation and the broader evolutionary aims remain incomplete.
