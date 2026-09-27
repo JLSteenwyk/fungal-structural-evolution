@@ -5251,3 +5251,13 @@ policy; policy counts overlap. The model set contains 96,051 unannotated
 models and 1,944 with policy disagreement. Terminal success and all pinned
 source/output hashes were checked. These counts remain provisional until
 independent output readback; no domain evolutionary events are established.
+
+
+### September 26: independent domain-control readback running
+
+Full reconstruction of all model annotation fields, the primary/reference
+pair union, all 542,964 pair/policy records and every candidate domain match
+is running. The independent classification/matching code passed known cases
+and 1,000 varied fixtures. Full production proof remains pending; biological
+domain events are not inferred by this check. See
+[domain controls](duplication-domain-controls-20260926.md).

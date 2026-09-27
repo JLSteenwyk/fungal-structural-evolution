@@ -1,0 +1,44 @@
+{
+  "source_plan": "metadata/duplication_domain_control_plan_20260926.json",
+  "output": "results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json",
+  "pins": {
+    "results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260923-v1/receipt.json": "b2b0e593abd2a67f42f48a6e89bdcbe4e858a79886de7883113ac75650f899e8",
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/receipt.json": "77632f91db393bc489cb7c1134db1a6e6f773e6bf7a0afbe7ddc9879585bb713",
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/structure_domains.sqlite": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/check_duplication_domain_controls.py": "9268d1048be3cfd11d8dcaa33f108eaf1b86f4ed19fe144cc6403a8511d2a374",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/event_reference_comparisons.tsv": "692dc046eb280c1f129c05b2a47a674a3e56ff2c836b34fca9176d2afd6f2731",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/additional_models.jsonl": "1d6289a600251cfb431e13d57343685def9fb5de61375e8a72ca56756210eab3",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd",
+    "metadata/duplication_domain_control_plan_20260926.json": "610f9a6ddb162fb4c2d099de79e066a3b369e08c8f1b1a7d52238d3f0c8fbc4e",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/receipt.json": "fccc1183b559076f657a59d710341d252f2a3da4363ea882881f9e331ff25549",
+    "scripts/readback_duplication_domain_controls.py": "317afc8f96f03cd9960a4cd106239eae624418144457a64cd9f99651f46ad250",
+    "scripts/check_duplication_domain_control_readback.py": "1aa7fd30716db5321dd89603dec53f0415e189cef21f1ab0b7a662c86afdbef1",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl": "7423c03ac2abf93f659b538f76de8358133f135fe75c82c5bd1dccdec4d48e22",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/single_copy_domain_pairs.tsv": "59ffd07f049d7963bb5bb55011817ab4a1351f394bb347ec5231bbf84ea6f7b7",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/pair_architecture_controls.tsv": "21c846692e952fa632fcbe6cd8a242b24a584d5adc2174fba4143d0a4a326916"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "All 227089 models, 542964 pair/policy rows and all domain matches independently reconstructed from frozen registry and pair tables. One CPU, no GPU or paid resources. Uncalibrated runtime."
+  }
+}

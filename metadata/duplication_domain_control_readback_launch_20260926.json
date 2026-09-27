@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-domain-control-readback-20260926.service",
+  "pid": 160948,
+  "created": 1790472971.45,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_domain_controls.py",
+    "--plan",
+    "metadata/duplication_domain_control_readback_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_domain_control_readback_plan_20260926.json",
+  "plan_sha256": "0209fb2c3ecc71ba98843b814a507bf548975bbf57d97d6f0d8cd4eda54733f5",
+  "fixtures": "Known empty/single-copy/repeated-domain cases and 1000 varied producer-versus-independent category/match fixtures passed."
+}

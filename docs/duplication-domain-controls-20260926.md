@@ -64,3 +64,32 @@ These overlapping policy counts are not additive. Among the 227,089 models,
 96,051 have no qualifying annotation and 1,944 have policy disagreement.
 These are producer counts pending independent readback; all source pins and
 output hashes were checked after successful completion.
+
+## Independent complete output readback running
+
+`scripts/readback_duplication_domain_controls.py` now reconstructs every model
+annotation export from separate registry segment and policy-membership queries,
+then reconstructs the full primary/reference pair union, each architecture
+category and every candidate single-copy domain pair. It does not import the
+producer's classification or matching functions. The independent matcher uses
+retained Domain occurrence counts and pairwise candidate matching, preserving
+ineligible repeats when assessing copy uniqueness. All output fields, source
+identities, complete model/pair/policy universes and aggregate counts must agree.
+
+Known empty/single-copy/repeated-domain cases and 1,000 varied agreement cases
+passed with `python scripts/check_duplication_domain_control_readback.py`.
+The full run uses one CPU, 16 GiB RAM and no swap, GPUs or paid resources;
+0.1–6 hours is an uncalibrated planning interval. Its plan and exact process
+identity are in `metadata/duplication_domain_control_readback_plan_20260926.json`
+and the corresponding launch record. Run with:
+
+```bash
+python scripts/readback_duplication_domain_controls.py \
+  --plan metadata/duplication_domain_control_readback_plan_20260926.json
+```
+
+The output is
+`results/structural_comparisons/duplication-domain-control-readback-20260926-v1.json`.
+The readback is running, not yet passed. It checks interpretation of the same
+frozen annotations, not an independent Pfam search or structural validation of
+domain boundaries.
