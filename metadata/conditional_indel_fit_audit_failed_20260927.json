@@ -1,0 +1,11 @@
+{
+  "unit": "fungal-conditional-indel-fit-audit-20260927.service",
+  "terminal_state": {
+    "MainPID": "0",
+    "Result": "exit-code",
+    "ExecMainStatus": "1",
+    "ActiveState": "failed"
+  },
+  "plan_sha256": "26172a9b0dd14e7159ae502749ec7bc909ad697ae8fde018f5e97eb0e572e82a",
+  "reason": "Independent double precision expm replay differs by0.00036958882 at extreme rates; 70-digit diagnostic agrees with fitting likelihood to9.09e-8 for that start. Numerical audit needs stable high-precision fallback; original failure retained."
+}

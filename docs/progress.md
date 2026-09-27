@@ -9109,3 +9109,33 @@ CPUs,8GiB RAM,noGPU; planning estimate1–72h and2GiB output. All production
 fits still require independent replay, optimization assessment and node
 probability propagation. This is a working-model sensitivity because SIC
 unknown masks remain coding-dependent. Original FastML output is preserved.
+
+### 2026-09-27: complete corrected-fit audit launched
+
+Verified corrected-fit producer live by PID/create-time/command. Among its
+first43 model receipts,23 best fits reach a parameter bound and seven have
+start-to-start likelihood spread>0.001; these are optimization/identifiability
+diagnostics, not resolved ancestral uncertainty. No best optimizer failure
+was reported in this early snapshot.
+
+Launched independent matrix-exponential likelihood replay for all312 input
+dispositions and918 fitted starting-point results. The auditor checks all
+characters, both exclusion corrections, every retained start, best-solution
+selection and input hashes; it requires producer terminal success before
+declaring full verification. One CPU,8GiB RAM,noGPU; planning estimate0.5–24h
+compute plus producer wait. Bound/start diagnostics remain explicit even
+when numerical replay passes. Full audit, optimization qualification and
+ancestral node-probability propagation remain pending.
+
+The first audit subsequently terminated with an explicit likelihood mismatch
+at OG0000152 alignment/FAMSA terminal-unknown observed-mask, start0:
+double-precision expm replay differs by0.00036958882. The failed unit and
+partial verified results are preserved. Independent70-digit recursive pruning
+agrees with the fitting likelihood within9.09e-8 for this start, and within
+2.60e-8/6.16e-9 for the other two starts. This identifies a numerical limitation
+of the expm audit at extreme rate imbalance, not a demonstrated fit-likelihood
+error above the audit tolerance. Reproducible diagnostic:
+`scripts/diagnose_indel_extreme_rates.py`. A stable fallback is required before
+the full audit resumes; no tolerance was relaxed. Large reported gradients
+and boundary fits still require optimization qualification. Producer remains
+separate from this terminated auditor; no inference restart was requested.

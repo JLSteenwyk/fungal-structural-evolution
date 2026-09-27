@@ -1,0 +1,24 @@
+{
+  "producer_plan": "metadata/conditional_indel_model_plan_20260927.json",
+  "producer_launch": "metadata/conditional_indel_model_launch_20260927.json",
+  "output": "results/ancestral/conditional-indel-fit-audit-20260927-v1",
+  "pins": {
+    "metadata/conditional_indel_model_plan_20260927.json": "a4c8205dd8476312eeac62641af881e91f593668627f14cc7b46a6534ae52316",
+    "metadata/conditional_indel_model_launch_20260927.json": "878b5b0d758a8a94cc842afb7baa370818144336400915c656da385d9d353731",
+    "scripts/audit_conditional_indel_fits.py": "28b33050cc959fae1a3e99c903d4535cc393d55dcc6a7fc2b55cdd88a7f228ea",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All312 input dispositions and918 fit likelihoods; waits for verified producer and requires terminal success. Independent expm inside/outside replay, allstarts, allcharacters, uncertainty flags preserved."
+}

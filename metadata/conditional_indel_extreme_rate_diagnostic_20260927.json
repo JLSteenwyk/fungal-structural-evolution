@@ -1,0 +1,39 @@
+{
+  "job_id": "OG0000152-alignment-famsa-terminal_unknown-observed_mask",
+  "decimal_precision": 70,
+  "starts": [
+    {
+      "parameters": [
+        0.0001984642344061986,
+        162754.79020955056,
+        100.00000000000004
+      ],
+      "high_precision_log_likelihood": "-3.40119738714948421979587749593366723846724448271082496569166135763849",
+      "reported": -3.4011972963170756,
+      "difference": -9.083240870566556e-08
+    },
+    {
+      "parameters": [
+        1.5308067838605738e-05,
+        2831.4141878933033,
+        4.765296449447782
+      ],
+      "high_precision_log_likelihood": "-3.40119740599144834339917449246202590822974238066533580614796084816877",
+      "reported": -3.401197380050089,
+      "difference": -2.5941359282910526e-08
+    },
+    {
+      "parameters": [
+        0.0004066107153976769,
+        13484.61014166144,
+        0.005000000000000002
+      ],
+      "high_precision_log_likelihood": "-4.276666302450985148478449808223191829955459473988095197511386308188762",
+      "reported": -4.276666296299091,
+      "difference": -6.151894105244082e-09
+    }
+  ],
+  "source_receipt_sha256": "0ac6c5e839bc693d52ac4de18690013fbad100b95e172349dfc53655bde47f3c",
+  "script_sha256": "5d283155de3f1b44cdc8a21d08e67eb38fb7940cf8b132dfafbfffa914613e74",
+  "scope": "Recursive high-precision binary pruning using the same float gamma category rates. One flagged case, all three fitted starts; no global validation or convergence claim."
+}
