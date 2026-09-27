@@ -171,3 +171,9 @@ checks all 990 pairs separately in AlphaFold and ESMFold. Both full readbacks
 passed; all older 32-species outputs are exactly preserved. All 45 taxa have
 some eligible coverage, but 144 pairs lack a qualified shared marker within
 either source. Ecological transitions and association tests remain pending.
+
+The [optimal-edge diagnostic](ecology-optimal-edge-states-20260927.md) now
+identifies required and optional change locations under the original binary
+coding on both completed ML trees, with a Ramaria-unknown sensitivity. All
+16,784 endpoint-constrained costs passed independent network-flow verification.
+These conditional undirected locations do not establish biological origins.

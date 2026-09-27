@@ -1,0 +1,63 @@
+{
+  "status": "complete_ecology_optimal_edge_diagnostic_pending_readback",
+  "plan_sha256": "3fed608f930b48ce7a86c57083bdf8f99a991641c2da4b6f63784b17825537f3",
+  "rows": 4196,
+  "summaries": [
+    {
+      "tree_source": "profile_profile",
+      "coding": "original32_coding",
+      "minimum_changes": 7,
+      "coded_tips": 31,
+      "unknown_tips": 495,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1027,
+        "optional_change": 19,
+        "required_change": 3
+      }
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "ramaria_unknown",
+      "minimum_changes": 6,
+      "coded_tips": 30,
+      "unknown_tips": 496,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1028,
+        "optional_change": 19,
+        "required_change": 2
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "original32_coding",
+      "minimum_changes": 7,
+      "coded_tips": 31,
+      "unknown_tips": 495,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1027,
+        "optional_change": 19,
+        "required_change": 3
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "ramaria_unknown",
+      "minimum_changes": 6,
+      "coded_tips": 30,
+      "unknown_tips": 496,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1028,
+        "optional_change": 19,
+        "required_change": 2
+      }
+    }
+  ],
+  "artifacts": {
+    "edge_states.tsv": "1a71feefd80bd45fff023f2a1cda5bc8ef0e25b41b91088d8bda34320459d83e"
+  },
+  "scope": "All edges on two completed ML trees, original 32-species conditional binary coding and Ramaria omission. No new 45-species labels coded as ECM absence. Root-free equal-cost optimum; endpoint order follows stored Newick traversal and is NOT ancestral gain/loss direction. Possible assignments are jointly constrained across edges, not independent changes or probabilities. No bootstrap branch support, ecological replication or association effect established; infeasible endpoint costs blank."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "completed_and_independently_verified_ecology_edge_diagnostic",
+  "script_sha256": {
+    "scripts/ecology_optimal_edge_states.py": "4f24e29a0b17ea0183fb9802f67be58d9bfc64e0ef2f254ed6ac58c28e7fce3a",
+    "scripts/check_ecology_optimal_edge_states.py": "395c33e21e5a640957f2b2ed8d5f8e3a61358ac880e44af2c76a5bbcdc1ce6c9",
+    "scripts/map_ecology_optimal_edges.py": "8b88c6b4f94acd926ba9e0d7ff7218f3294c2cf2e5c3cbfbf3bce245b1c6f4a3",
+    "scripts/readback_ecology_optimal_edges.py": "9fe7b35ecd953de6971a855f3c9551bbfa9fd2b56538f3dd5848ddcb72eb1397"
+  },
+  "scipy": "1.15.3",
+  "biopython": "1.86",
+  "fixture_cases": 243,
+  "constrained_costs": 16784,
+  "commands": [
+    "python scripts/check_ecology_optimal_edge_states.py",
+    "python scripts/map_ecology_optimal_edges.py --plan metadata/ecology_optimal_edges_plan_20260927.json",
+    "python scripts/readback_ecology_optimal_edges.py --plan metadata/ecology_optimal_edges_plan_20260927.json --output metadata/ecology_optimal_edges_readback_20260927.json"
+  ],
+  "producer_receipt_sha256": "70850a6df33345a8a4818e84ab403fa62287998bca2667a5a47b506e775501fb",
+  "readback_sha256": "2b67abaa9eabb07f0a363e719f30c6df38c47924b86c8fea7f21b802be5524c8",
+  "scope": "Full four-condition ML edge diagnostic; no bootstrap edge mapping, directed origins or ecological association result."
+}

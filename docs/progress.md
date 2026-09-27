@@ -6771,3 +6771,19 @@ The previous goal turn expanded the evidence table; this turn completes its
 structural coverage checks. Source mixing, ecological-state uncertainty and
 independent transition replication remain unresolved. All eight aims remain
 open and GPU prediction stays paused.
+
+## September 27 ecological optimal-edge locations verified
+
+Mapped all optimal endpoint assignments on every edge of both completed ML
+trees under original ecological coding and Ramaria omission. All 243 exhaustive
+small-tree patterns passed; an independent network-flow reconstruction verified
+all 16,784 costs across 4,196 edge rows. The original minimum seven changes
+require three specific terminal edges, falling to two when Ramaria is unknown;
+19 edges allow optional changes in each scenario. These are conditional
+undirected constraints, not independent origins. See
+[edge interpretation](ecology-optimal-edge-states-20260927.md).
+
+The prior turn completed full ecological coverage; this turn advances mapping
+of phylogenetic uncertainty in transition locations. Tree-ensemble edge review
+and controlled ecological tests remain outstanding. All eight aims remain open;
+GPU prediction stays paused.
