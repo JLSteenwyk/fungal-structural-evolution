@@ -266,3 +266,34 @@ coverage using scalar records. Full pair-marker rows remain outside Git under
 The 24-condition table and source-bound receipt are archived in
 `metadata/ecology_required_edge_structure_coverage_20260927.tsv` and
 `metadata/ecology_required_edge_structure_coverage_receipt_20260927.json`.
+
+### Exact cross-predictor residue overlap
+
+A follow-up maps the paired input columns back to original marker-alignment
+positions and requires matching amino acids within each taxon across prediction
+sources. It retains the entire grid of three focal taxa × 44 comparison taxa ×
+125 union markers (16,500 rows), including missing observations. Source-specific
+pair counts exactly recover the independently verified coverage ledgers.
+
+**No focal taxon has a marker eligible in both source cohorts.** In particular,
+Sphaerobolus's 54 AlphaFold and 39 ESMFold markers are disjoint. Consequently,
+all 16,500 rows have zero four-way observed columns; no candidate ecological
+edge currently supports an exact paired predictor comparison. A separate FASTA
+identifier census checked the complete focal marker sets and this zero-overlap
+consequence. This updates the interpretation of taxon-level source coverage:
+presence in both cohorts does not imply matched biological measurements.
+
+This is an acquisition/qualification limitation, not evidence of no ecological
+structural effect or absence of models in public databases. Reciprocal source
+coverage would be needed before predictor agreement can be assessed for these
+focal taxa. GPU prediction remains paused. The current ecological analysis must
+preserve source-specific marker sets and cannot use these cohorts as matched
+predictor replication.
+
+Reproduce with `scripts/compare_ecology_edge_source_columns.py` using a fresh
+output path. Full tables are in
+`results/ecology/required-edge-source-columns-20260927-v1`; archived summary,
+receipt and independent focal marker sets are
+`metadata/ecology_edge_source_columns_summary_20260927.tsv`,
+`metadata/ecology_edge_source_columns_receipt_20260927.json` and
+`metadata/ecology_edge_source_marker_disjointness_20260927.json`.
