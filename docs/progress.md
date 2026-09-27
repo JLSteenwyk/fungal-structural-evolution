@@ -7374,3 +7374,15 @@ certify contamination absence. A separate profile auditor accepts and validates
 this local exposure source; its complete execution awaits the running batch.
 Verified the profile producer identity and four live children. All eight aims
 remain open; GPU predictions remain paused.
+
+## September 27 full local branch-profile validation queued
+
+The preceding turn completed the full fitted-alignment FCS join (progress).
+The profile producer remains live with four workers; this turn adds a pinned
+handoff that waits for that exact PID/creation-time/command, requires successful
+service termination and all 1,632 case receipts/13,056 fits, then runs the full
+local artifact, parameter and numeric audit. The waiting service is verified
+live under one CPU/8 GiB/no swap. Plan and launch identity are archived in
+`metadata/local_branch_profile_audit_{plan,launch}_20260927.json`. No profile
+validation result is claimed before this completes. All eight aims remain open;
+GPU prediction remains paused.

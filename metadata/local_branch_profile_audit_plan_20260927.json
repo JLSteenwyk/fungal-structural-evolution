@@ -1,0 +1,98 @@
+{
+  "producer": {
+    "status": "verified_live_full_local_branch_parameter_profiles",
+    "unit": "fungal-local-mg94-branch-profiles-20260927-v2.service",
+    "pid": 2874144,
+    "create_time": 1790513604.88,
+    "command": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/profile_genus_longest_branch_parameter.py",
+      "--fits",
+      "results/cds/local-mg94-diagnostics-20260927-v1",
+      "--slices",
+      "results/cds/local-mg94-longest-branch-slices-20260927-v1",
+      "--plan",
+      "metadata/local_mg94_branch_parameter_profile_plan_20260927.json",
+      "--install",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install",
+      "--output",
+      "results/cds/local-mg94-branch-parameter-profiles-20260927-v1"
+    ],
+    "checked_at": "2026-09-27T12:53:51.769022+00:00",
+    "service": {
+      "MainPID": "2874144",
+      "ExecMainStatus": "0",
+      "ActiveState": "active"
+    },
+    "plan_sha256": "ce93d0eea517564c0ce7ccd41967a7ca56947b7e95c59e0a8192b51e4bb0ca5a",
+    "children": [
+      {
+        "pid": 2875678,
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+          "CPU=1",
+          "ENV=RANDOM_SEED=123;",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Suillus__5000152at2759__code1/factor_0p1/optimize.bf"
+        ]
+      },
+      {
+        "pid": 2875821,
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+          "CPU=1",
+          "ENV=RANDOM_SEED=123;",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Wallemia__4970538at2759__code1/factor_0p1/optimize.bf"
+        ]
+      },
+      {
+        "pid": 2875829,
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+          "CPU=1",
+          "ENV=RANDOM_SEED=123;",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Aspergillus__4986044at2759__code1/factor_10/optimize.bf"
+        ]
+      },
+      {
+        "pid": 2875913,
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+          "CPU=1",
+          "ENV=RANDOM_SEED=123;",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-branch-parameter-profiles-20260927-v1/Saccharomyces__4986044at2759__code1/unconstrained/optimize.bf"
+        ]
+      }
+    ],
+    "prior_launch": "First service exited 1 before output creation because install path included the workspace directory. Corrected to the prior verified slice executable location; failed service journal retained."
+  },
+  "producer_plan": "metadata/local_mg94_branch_parameter_profile_plan_20260927.json",
+  "profiles": "results/cds/local-mg94-branch-parameter-profiles-20260927-v1",
+  "fits": "results/cds/local-mg94-diagnostics-20260927-v1",
+  "slices": "results/cds/local-mg94-longest-branch-slices-20260927-v1",
+  "exposure": "results/qc/local-codon-fcs-exposure-20260927-v1",
+  "audit_output": "results/cds/local-mg94-branch-profile-audit-20260927-v1",
+  "controller_output": "results/cds/local-mg94-profile-audit-handoff-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "scope": "Await all 1632 cases and 13056 fits; no partial batch substituted.",
+  "pins": {
+    "metadata/local_mg94_branch_parameter_profile_launch_20260927.json": "213a66eb37ed48ea4220228f7d2e0bc33632c2ead12b3090ed08761fd6654343",
+    "metadata/local_mg94_branch_parameter_profile_plan_20260927.json": "ce93d0eea517564c0ce7ccd41967a7ca56947b7e95c59e0a8192b51e4bb0ca5a",
+    "scripts/advance_local_branch_profile_audit.py": "f29eb3cafd9413447423d07f7f542c6f75750a1c1cbd66fc039eba98cdd8d5d2",
+    "scripts/audit_local_branch_parameter_profiles.py": "b009676af1960964c83dd149feaecb7125616acf5d5c4562a6f091b84792198e",
+    "scripts/profile_genus_longest_branch_parameter.py": "af3fd408f5e5008704d26f548d187d2299cab4535e6c502a5788292287c0a080",
+    "results/cds/local-mg94-diagnostics-20260927-v1/receipt.json": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+    "results/cds/local-mg94-longest-branch-slices-20260927-v1/receipt.json": "cc1b970b984b9f67ad5ade9fc5fd7d97f364266ea60c0f840307d4aeaa41dffe",
+    "results/qc/local-codon-fcs-exposure-20260927-v1/receipt.json": "3a320551e1e5fffb9558d02cfba1bd45994e1a669902371ad872c51aec9998a4",
+    "results/qc/local-codon-fcs-exposure-20260927-v1/codon_case_exposure.tsv": "add3125be445436cc4d7d29c901405a48999316560e36fad31cd280231b77e7d",
+    "results/qc/local-codon-fcs-exposure-20260927-v1/all_case_taxon_exposure.tsv": "f5fbf7073120f6def22ea74001b9dfbd727001a1b1e7ae87aa53cdc49a3d545f"
+  }
+}

@@ -1794,3 +1794,11 @@ subset. It preserves the historical profile auditor and running producer.
 The new audit has passed CLI parsing but awaits the complete profile batch;
 its full numeric/artifact validation is not yet run or queued. The producer
 was revalidated by PID, creation time and command with four worker children.
+
+The local profile validation is now automatically queued via
+`scripts/advance_local_branch_profile_audit.py`, with pinned scripts, source
+receipts, exposure tables and producer identity. It requires successful terminal
+service state and the entire 13,056-fit batch before auditing. Outputs will be
+`results/cds/local-mg94-branch-profile-audit-20260927-v1` and the corresponding
+`local-mg94-profile-audit-handoff-20260927-v1` controller record. At launch the
+service was verified waiting; completed profile validation remains pending.
