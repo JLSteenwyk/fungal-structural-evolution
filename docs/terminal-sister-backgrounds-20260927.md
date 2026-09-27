@@ -639,3 +639,26 @@ Resources: one CPU, 8 GiB RAM, no swap, negligible receipt output and an
 uncalibrated 0.5–24 hours after extraction. At most 42.45 million atom visits
 precede the effect of confidence masks. Production serialization verification
 and all background domain alignments remain pending; no GPU was enabled.
+
+## Full background domain alignments queued
+
+Queued `fungal-background-domain-alignments-20260927.service` behind the verified
+live domain serialization checker. The handoff requires the complete independent
+input proof, exact inventory, complete two-mask grid and consistent interval
+identities. All 66,929 interval pairs receive both input orders and full/pLDDT70
+masks, for up to 267,716 native calls/dispositions. Native output and timing,
+input hashes, excluded inputs, errors and timeouts are checkpointed explicitly.
+Independent numerical reconstruction remains required before scientific use.
+
+Native handoff fixtures passed both orders, short-mask exclusions, checkpoint
+reuse/hashes and altered-proof rejection. The immutable native worker used by
+prior domain runs is reused. No GPU prediction is enabled.
+
+Resources: two CPU workers, 8 GiB RAM, no swap, 24 GiB output allowance,
+100 GiB free-disk reserve and 600 seconds per native call. Sampling every 1,000th
+prior target-domain checkpoint gave 282 full/order-zero dispositions with mean
+0.06168005 seconds and median 0.02650365 seconds. A mechanical two-worker
+extrapolation is 2.29 hours but omits hashing, I/O, audit, contention and shifts
+in domain composition, and does not sample other masks/orders. The broader
+4–72-hour planning range excludes dependencies and is not a guaranteed bound.
+All production alignments and numeric verification remain pending.

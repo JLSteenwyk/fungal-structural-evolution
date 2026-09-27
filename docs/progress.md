@@ -6512,3 +6512,16 @@ results are claimed. See [serialization checker](terminal-sister-backgrounds-202
 The prior turn queued coordinate extraction; this turn supplies its complete
 independent output check. All eight aims remain active; GPU prediction stays
 paused.
+
+## September 27 full background domain alignments queued
+
+Connected the verified domain-input handoff to both-order/full-pLDDT70 native
+comparisons for all 66,929 background interval pairs. The fixture passed native
+alignment, explicit short-mask exclusions, checkpoint reuse/hashes and corrupt
+proof rejection. Queued the two-worker controller after independent input
+verification; numerical result audit remains outstanding. See
+[domain alignment scope and resource estimate](terminal-sister-backgrounds-20260927.md#full-background-domain-alignments-queued).
+
+The previous goal turn queued full input verification; this turn supplies the
+complete downstream measurement stage. All eight original aims remain open and
+active; GPU prediction remains paused.
