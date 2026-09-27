@@ -1,0 +1,39 @@
+{
+  "status": "verified_completed_frozen_prefix_gradient_diagnostic",
+  "fits": 320,
+  "remaining_above_threshold": [
+    {
+      "fit_input_id": "5b43eccd8350d0d3a32d27e8f3a436d2f802425ee8af9a2e41f8fea591b98322",
+      "tree": "pmsf_profile_profile",
+      "analytic_projected_gradient": [
+        -4.101360686700984e-05,
+        -4.079747559407988e-05,
+        -0.0010910805023042682
+      ]
+    }
+  ],
+  "step_error_summaries": {
+    "0.001": {
+      "median_max_component_error": 0.8076507664798291,
+      "maximum_component_error": 4.97949031639923
+    },
+    "0.0001": {
+      "median_max_component_error": 0.020497725081085605,
+      "maximum_component_error": 0.21074598197776595
+    },
+    "1e-05": {
+      "median_max_component_error": 0.0003206779278739671,
+      "maximum_component_error": 0.021202713643672766
+    },
+    "1e-06": {
+      "median_max_component_error": 1.3094485563203395e-05,
+      "maximum_component_error": 0.002121810386256584
+    }
+  },
+  "source_receipt_sha256": "0ac7c8c11a053257d7647313f35c7d7d47dba90a2a692e6d021a4b63b18e979c",
+  "terminal_state": {
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "All saved rows and source pins rechecked, analytic threshold flags recomputed, step-size errors summarized. Original production statuses remain unchanged; full-grid analytic validation still required."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed_analytic_matched_reml_gradient_dense_score_checks",
+  "cases": 81,
+  "ratio_derivatives_checked": 243,
+  "maximum_absolute_ratio_gradient_error": 7.023146508799982e-10,
+  "pins": {
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_reml_gradient.py": "8c193b58d2247b2726749b397836f2eb0001f2a9c9d6d9ff016ad5289f522812"
+  },
+  "scope": "Independent dense residual-projector trace/score identity checks every component derivative across zero/moderate/large ratios and empty/duplicated species factors. Diagnostic implementation only; running optimizer and flags unchanged."
+}

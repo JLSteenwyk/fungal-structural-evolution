@@ -7774,3 +7774,22 @@ It explicitly does not claim to repeat all producer numerical readbacks or
 establish inference. One CPU, 8 GiB memory, no swap after production completion.
 [Full run and early diagnostics](full-matched-working-models-20260927.md).
 All eight aims remain open. GPU prediction remains paused.
+
+## September 27 early gradient flags diagnosed analytically
+
+The preceding turn verified full input reuse, confirmed production fitting and
+queued output integrity checks (progress). Added a separate analytic profile-
+REML derivative evaluator; all 243 derivatives across 81 component/factor cases
+agree with an independent dense projector-score identity (maximum error
+7.03e-10). Applied it to all 320 fits in the preexisting frozen prefix, alongside
+four finite-difference step sizes and original objective/gradient readback.
+The diagnostic terminated successfully; all output rows and source pins checked.
+
+All 140 original gradient passes remain below the same analytic threshold.
+Of 180 flags, 179 fall below it analytically and one remains above at 0.00109108.
+Finite-difference errors decrease with step size, supporting a numerical
+explanation for most early flags. Original production statuses and pinned
+criteria remain unchanged. Full-grid analytic assessment and residual case
+review are required before any status revision or inference.
+[Diagnostic evidence](working-model-gradient-diagnostic-20260927.md).
+Full production fitting continues. All eight aims remain open. GPU paused.

@@ -1,0 +1,18 @@
+{
+  "status": "complete_frozen_prefix_gradient_diagnostic",
+  "fits": 320,
+  "comparisons": {
+    "original_gradient_pass=True,analytic_below_same_threshold=True": 140,
+    "original_gradient_pass=False,analytic_below_same_threshold=True": 179,
+    "original_gradient_pass=False,analytic_below_same_threshold=False": 1
+  },
+  "maximum_objective_error": 1.8189894035458565e-12,
+  "snapshot_sha256": "a410a6da138cc7f3bc11876bea3db67f0e54b88fa6f2b1ab79d7cb3d0dada1b3",
+  "plan_sha256": "f0f0268dfe2479f6d0515209ff9dd38f8f11b3baccd1883ed9447ca6f8421d4b",
+  "gradient_proof_sha256": "f5f56bee4c0b2eb078598501df8ff406b24bce641745d7d53ff58e1811262598",
+  "script_sha256": "b6ecefd1fdbeecab88aade6cc96dc3077d488bd8bbaa26167b3c4f027c0ab6ae",
+  "artifacts": {
+    "gradient_comparisons.jsonl": "c3cbbb8c1dabce695b2925ce72c4fcc703492dda876f35d7f7fee73651d4604f"
+  },
+  "scope": "All 320 fits in the preexisting frozen prefix; no favorable subset. Analytic score independently validated on dense fixtures, compared with four finite-difference steps and original saved objective/gradient. Original statuses remain unchanged. Not a full-grid reclassification, global-optimum proof or biological inference."
+}

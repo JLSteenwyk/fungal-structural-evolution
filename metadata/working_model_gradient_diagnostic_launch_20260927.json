@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-working-model-gradient-diagnostic-20260927.service",
+  "pid": 123445,
+  "created": 1790523005.52,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_working_model_gradients.py"
+  ],
+  "pins": {
+    "scripts/diagnose_working_model_gradients.py": "b6ecefd1fdbeecab88aade6cc96dc3077d488bd8bbaa26167b3c4f027c0ab6ae",
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "metadata/matched_reml_gradient_checks_20260927.json": "f5f56bee4c0b2eb078598501df8ff406b24bce641745d7d53ff58e1811262598",
+    "metadata/full_working_model_early_diagnostics_20260927.json": "a410a6da138cc7f3bc11876bea3db67f0e54b88fa6f2b1ab79d7cb3d0dada1b3",
+    "metadata/full_matched_working_model_plan_20260927.json": "f0f0268dfe2479f6d0515209ff9dd38f8f11b3baccd1883ed9447ca6f8421d4b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Complete preexisting 320-fit frozen prefix, analytic derivatives and four finite-difference step sizes. Running fits and acceptance criteria remain unchanged."
+}
