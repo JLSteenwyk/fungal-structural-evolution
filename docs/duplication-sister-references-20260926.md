@@ -481,3 +481,20 @@ screen settings. These screening outputs remain conditional measurements, with
 shared-model identity and all source exclusions explicit. Signed differences
 compare distances on identical residue triples; they are not reconstructed
 ancestral changes or tests of asymmetric evolution.
+
+## Complete whole-triad mapping independently verified
+
+Both mapping services terminated successfully and all 281,904 records passed
+independent reconstruction. They contain 58,204,472 reference-common residue
+occurrences and 53,654,022 cycle-consistent occurrences. These repeat across
+masks, orders and linked events; they are not independent residue observations.
+
+There are nonempty reference intersections in 262,912 records and nonempty
+cycle-consistent subsets in 228,566. The two definitions differ in 175,720
+records, underscoring the need to retain both rather than assume three pairwise
+alignments are transitive. Missing and numerically excluded edges remain explicit.
+Full coordinate fitting has started after successful readback; its geometry,
+coverage screens and independent numerical verification remain pending.
+
+Closure evidence: `metadata/whole_protein_common_mapping_completed_20260927.json`;
+full checker output: `metadata/whole_protein_common_residues_readback_20260927.json`.

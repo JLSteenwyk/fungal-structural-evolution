@@ -1,0 +1,35 @@
+{
+  "status": "passed_full_whole_protein_common_residue_readback",
+  "producer_receipt_sha256": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+  "plan_sha256": "34fea1b1074ac74ce1a7a65309258c8fca0df90c7382ee9edb42c650fa91e855",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "distinct_oriented_model_triads": 17619,
+  "event_reference_links": 36944,
+  "mask_order_dispositions": 281904,
+  "common_reference_residue_occurrences": 58204472,
+  "cycle_consistent_residue_occurrences": 53654022,
+  "dispositions_with_nonempty_reference_intersection": 262912,
+  "dispositions_with_nonempty_consistent_mapping": 228566,
+  "dispositions_with_any_mapping_disagreement": 175720,
+  "counts": {
+    "full:recorded_without_edge_exclusions": 117084,
+    "plddt70:recorded_without_edge_exclusions": 111482,
+    "plddt70:no_cycle_consistent_residues": 13074,
+    "full:no_cycle_consistent_residues": 21124,
+    "plddt70:no_common_reference_residues": 4326,
+    "plddt70:input_unavailable;no_common_reference_residues": 11768,
+    "full:no_common_reference_residues": 2744,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;no_common_reference_residues": 96,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 8,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 8,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_cycle_consistent_residues": 134,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_common_reference_residues": 42,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_cycle_consistent_residues": 14
+  },
+  "script_sha256": "9106904ab4cc49d600a6c9736ac95cfae26fb3082431d0752044f9bea832ec3e",
+  "scope": "Every saved triad/mask/order record reconstructed with iterator-based native position mapping and relation intersections. Exact identities, all residue triples, explicit identity maps, exclusion reasons, complete key universe, and event-link hashes checked. No fit or biological inference."
+}

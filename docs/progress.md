@@ -8375,3 +8375,18 @@ terminal states and exact failure/follow-up identities. Completion record:
 now exists for every expanded input under the 1e-8 criterion; it does not establish
 dense overlap, adequate covariance, calibrated uncertainty or biological effects.
 Full ML production and downstream inference remain unfinished.
+
+### September 27: full whole-protein triad mapping verified
+
+Producer and independent checker both ended successfully. All 17,619 triads,
+36,944 event/reference links and 281,904 mask/order dispositions passed exact
+source reconstruction. All 58,204,472 reference-common and 53,654,022
+cycle-consistent residue occurrences are accounted for; the two definitions
+differ in 175,720 repeated dispositions. Nonempty reference and cycle subsets
+occur in 262,912 and 228,566 records respectively. Every exclusion remains explicit.
+
+`record_whole_protein_common_mapping_completion.py` verified final hashes,
+terminal states and producer/checker totals; evidence is in
+`metadata/whole_protein_common_mapping_completed_20260927.json`. Common-coordinate
+fit production started automatically and is advancing. These mapping counts do
+not establish homology, independent events or asymmetric structural evolution.

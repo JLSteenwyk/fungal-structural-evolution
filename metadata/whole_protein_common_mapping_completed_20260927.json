@@ -1,0 +1,50 @@
+{
+  "status": "complete_verified_whole_protein_common_residue_mapping",
+  "terminal_states": {
+    "fungal-whole-protein-common-residues-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-common-residues-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_common_residues_plan_20260927.json": "34fea1b1074ac74ce1a7a65309258c8fca0df90c7382ee9edb42c650fa91e855",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "metadata/whole_protein_common_residues_readback_20260927.json": "b7d2ae22216addac27739bf93c90ddc5564d7e044e2c3ee60a42a4674124745b"
+  },
+  "artifacts": {
+    "model_triads.tsv": "9fdde272039d19fad472ead3e5fd12bcb32c67e9db936ea0ad71274895b85ecf",
+    "common_residue_maps.jsonl.gz": "ff75afb9f5ad4fc18a85c0518579045dcc06f535145bf48b2e450bd120e1891a",
+    "event_reference_triads.tsv": "4eecddbc391cf479e1650230d236c479230f224d4d4cc167318369da139c0a03"
+  },
+  "distinct_oriented_model_triads": 17619,
+  "event_reference_links": 36944,
+  "mask_order_dispositions": 281904,
+  "common_reference_residue_occurrences": 58204472,
+  "cycle_consistent_residue_occurrences": 53654022,
+  "counts": {
+    "full:recorded_without_edge_exclusions": 117084,
+    "plddt70:recorded_without_edge_exclusions": 111482,
+    "plddt70:no_cycle_consistent_residues": 13074,
+    "full:no_cycle_consistent_residues": 21124,
+    "plddt70:no_common_reference_residues": 4326,
+    "plddt70:input_unavailable;no_common_reference_residues": 11768,
+    "full:no_common_reference_residues": 2744,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;no_common_reference_residues": 96,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 8,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 8,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_cycle_consistent_residues": 134,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_common_reference_residues": 42,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_cycle_consistent_residues": 14
+  },
+  "dispositions_with_nonempty_reference_intersection": 262912,
+  "dispositions_with_nonempty_consistent_mapping": 228566,
+  "dispositions_with_any_mapping_disagreement": 175720,
+  "script_sha256": "87e543b26e1928ecf91c9ca0ca0cf643af1aca418c0e61cecb00379aa8979c95",
+  "scope": "Complete original-position mapping and independent full record reconstruction verified, including all missing/numerical exclusions and shared-model identities. Residue occurrences repeat across masks/orders/events. Common-core fitting, coverage/geometry qualification and biological inference remain separate stages."
+}
