@@ -1,0 +1,49 @@
+{
+  "status": "passed_dense_reference_matched_mixed_optimizer_checks",
+  "cases": [
+    {
+      "label": "residual_only",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        0.03569114942719664,
+        0.0,
+        0.0
+      ],
+      "objective_difference": 2.042946789515554e-08,
+      "attempts": 22
+    },
+    {
+      "label": "mixed",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        0.6306331990894606,
+        1.551432407463112,
+        1.795106481169932
+      ],
+      "objective_difference": 2.842170943040401e-14,
+      "attempts": 22
+    },
+    {
+      "label": "strong_background",
+      "status": "candidate_passed_numerical_optimization_checks",
+      "ratios": [
+        7.110126297633619,
+        2.542826030697777,
+        0.023648759058525606
+      ],
+      "objective_difference": 1.4210854715202004e-13,
+      "attempts": 22
+    }
+  ],
+  "source_pins": {
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/fit_matched_mixed_model.py": "de51d9c8dc4ad33ff90f5c2e5c4d87ca827f524af2fd97fea4aaf84ab96a0a1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_mixed_optimizer.py": "a599cd66a19c182feab43dd61e1157b39fcc86a8fd2de61dc65e355c681dfd12"
+  },
+  "artifacts": {
+    "mixed.json": "d0ab5349614942d0fdc81dbe76121c37fbed24f08a2e566dbd7506a8856178a0",
+    "strong_background.json": "8acae4aed8e4280e752f06c78dae3d266efda5bbfb1ccddcc1eacfbbe49d2252",
+    "residual_only.json": "0236038feb3424e5547241844bad4ec5e84534694e1ec30d9d0948fea730958a"
+  },
+  "scope": "All 22 boundary/start candidate likelihoods per synthetic case checked by dense algebra; best objective independently compared with three dense Powell starts. Checks computational optimization only, not recovery of generating parameters, interval coverage, biological adequacy or a project-data pilot."
+}

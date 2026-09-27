@@ -7653,3 +7653,19 @@ exit status zero. Its preliminary output reports no rank deficiency after
 constant removal and 41,472 constant confidence-difference columns. Independent
 full readback remains live; these design results are not yet promoted to fully
 verified. All eight aims remain open. GPU prediction remains paused.
+
+## September 27 variance-ratio optimizer checked against dense references
+
+The previous goal turn completed the numerical mixed-covariance evaluator and
+dense checks (progress). Added profile-REML variance-ratio optimization across
+all eight zero-component faces and three starts per nonempty face. All 22
+attempts are preserved, including failures; independent boundary-gradient,
+upper-bound and full-face start agreement checks determine review status.
+Three numerical fixtures passed all candidate likelihood/GLS/scale readbacks
+and comparisons with three independent dense Powell starts each. Maximum best
+objective difference is 2.05e-8.
+[Optimizer methods and remaining validation](matched-mixed-optimizer-20260927.md).
+This validates computational optimization, not biological model adequacy or
+interval coverage. Project-data fits and full-grid resource planning remain.
+The full covariate-design readback is still live with advancing checkpoints.
+All eight aims remain open. GPU prediction remains paused.
