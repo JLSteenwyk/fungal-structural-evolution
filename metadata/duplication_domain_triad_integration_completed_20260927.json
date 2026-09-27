@@ -1,0 +1,168 @@
+{
+  "status": "passed_full_domain_triad_integration_readback",
+  "producer_receipt_sha256": "01b788e5880d45894ae7382c452e31a0469b8921f655283b825b594fc98933d8",
+  "plan_sha256": "61163025c5d7896e35332e51c635cbaee2edc2e1665ac7697b1e62a63e27c183",
+  "checker_sha256": "a7895c2246df4e79ece6fb061392f7c18ffbc7cd2459c846a7d000dcaa165d11",
+  "raw_rows_checked": {
+    "triads": 147776,
+    "domain_links": 301380,
+    "coverage": 140790,
+    "sequence_covariates": 34909
+  },
+  "matched_domain_rows": 72336,
+  "availability_rows": 295552,
+  "domain_mask_rows": 144672,
+  "guide_event_keys_with_matched_domains": 6851,
+  "reference_status_counts": {
+    "exact_reference": 134720,
+    "different_tied_reference": 9952
+  },
+  "screen_event_counts": [
+    {
+      "screen": "n30_c50",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 3419
+    },
+    {
+      "screen": "n30_c50",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 3324
+    },
+    {
+      "screen": "n30_c50",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 3422
+    },
+    {
+      "screen": "n30_c50",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 3326
+    },
+    {
+      "screen": "n30_c70",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 3363
+    },
+    {
+      "screen": "n30_c70",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 3127
+    },
+    {
+      "screen": "n30_c70",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 3366
+    },
+    {
+      "screen": "n30_c70",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 3129
+    },
+    {
+      "screen": "n30_c90",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 2863
+    },
+    {
+      "screen": "n30_c90",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 2128
+    },
+    {
+      "screen": "n30_c90",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 2864
+    },
+    {
+      "screen": "n30_c90",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 2129
+    },
+    {
+      "screen": "n50_c50",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 3246
+    },
+    {
+      "screen": "n50_c50",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 3124
+    },
+    {
+      "screen": "n50_c50",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 3249
+    },
+    {
+      "screen": "n50_c50",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 3127
+    },
+    {
+      "screen": "n50_c70",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 3196
+    },
+    {
+      "screen": "n50_c70",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 2945
+    },
+    {
+      "screen": "n50_c70",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 3199
+    },
+    {
+      "screen": "n50_c70",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 2947
+    },
+    {
+      "screen": "n50_c90",
+      "guide": "mafft",
+      "mask": "full",
+      "distinct_guide_events": 2717
+    },
+    {
+      "screen": "n50_c90",
+      "guide": "mafft",
+      "mask": "plddt70",
+      "distinct_guide_events": 2008
+    },
+    {
+      "screen": "n50_c90",
+      "guide": "profile",
+      "mask": "full",
+      "distinct_guide_events": 2718
+    },
+    {
+      "screen": "n50_c90",
+      "guide": "profile",
+      "mask": "plddt70",
+      "distinct_guide_events": 2009
+    }
+  ],
+  "biological_inference_eligible": false,
+  "scope": "All imported CSV values checked. All three-way Pfam intersections and interval identities reconstructed independently in Python, exact availability and matched sets verified, every sequence field/reference identity/coverage decision checked. Guide events are not independent cross-guide observations; no significance or effect inference."
+}

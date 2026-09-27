@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "receipt": "results/structural_comparisons/duplication-triad-architecture-20260926-v1/receipt.json",
+      "status": "complete_duplication_triad_architecture_controls",
+      "files": [
+        "results/structural_comparisons/duplication-triad-architecture-20260926-v1/triad_architecture.tsv"
+      ]
+    },
+    {
+      "receipt": "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/receipt.json",
+      "status": "complete_duplication_domain_pair_inventory_pending_readback",
+      "files": [
+        "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/domain_pair_links.tsv"
+      ]
+    },
+    {
+      "receipt": "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/receipt.json",
+      "status": "complete_domain_coverage_screen_pending_independent_readback",
+      "files": [
+        "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/pair_mask_coverage.tsv"
+      ]
+    },
+    {
+      "receipt": "results/orthology/duplication-sequence-covariates-20260926-v1/receipt.json",
+      "status": "complete_duplication_sequence_covariates",
+      "files": [
+        "results/orthology/duplication-sequence-covariates-20260926-v1/profile_sequence_covariates.tsv",
+        "results/orthology/duplication-sequence-covariates-20260926-v1/mafft_sequence_covariates.tsv"
+      ]
+    }
+  ],
+  "coverage_readback": "metadata/duplication_domain_coverage_screen_completed_20260927.json",
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "output": "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "output_allowance_gib": 4,
+    "planning_minutes": [
+      1,
+      20
+    ],
+    "basis": "SQLite import and indexed joins of approximately 0.7 million existing source rows. No structure prediction or native alignment; no charge."
+  },
+  "scope": "All provisional reference triads and ties, both guides, four policies, two boundaries, both masks; shared domain interval consistency at all three vertices; no independent-observation or biological inference claim.",
+  "pins": {
+    "scripts/integrate_duplication_domain_triads.py": "9c358a68a2059c90f97bccecf70d744811f965fcfccf90edf6897c144cdc35ab",
+    "metadata/duplication_domain_coverage_screen_completed_20260927.json": "5797479bccadf24ca3f1a5b4149286c20ea5bda3c07a034a5d8475338dcc988f",
+    "metadata/duplication_triad_architecture_completed_20260926.json": "eb62b3e2305f886da5643ef9c794fcd7f5ddd64ae3a087e2b556f1a58cb2a050",
+    "metadata/duplication_sequence_covariates_completed_20260926.json": "405db58de319bf4fb5a49d549f20c6281e7eb9740b1f01945d8f665267e65532",
+    "results/structural_comparisons/duplication-domain-pair-readback-20260926-v1.json": "ec14f28e139959e9577824a1898084786c04f5006eed996369ce0c6e8b805053",
+    "results/structural_comparisons/duplication-triad-architecture-20260926-v1/receipt.json": "9ec488e3416266c419be820285a18d3152e1009b9a599e1d5631668aa2025703",
+    "results/structural_comparisons/duplication-triad-architecture-20260926-v1/triad_architecture.tsv": "2356e1b544c2eceff72a426f1959cfb3e7710e2dd04072f4c057d1b09b7f24c0",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/receipt.json": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/domain_pair_links.tsv": "7936be904534fcec82233fdf67d06043929ac07dcf5f6f15476072f6a5210dbb",
+    "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/receipt.json": "e65b4375f983232c6c0160a30212f5aa95eb452af72eca3a43f6af8e6a3eb290",
+    "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1/pair_mask_coverage.tsv": "987b155efb87349abff04a4638564739e487b74c4f83beb69a1c4de5c5f3bbed",
+    "results/orthology/duplication-sequence-covariates-20260926-v1/receipt.json": "55d1a6fa0b60245487735a27d9035e392e70711d5d0c3992989624aab4f93201",
+    "results/orthology/duplication-sequence-covariates-20260926-v1/profile_sequence_covariates.tsv": "bb67b9f8bffd87c91a3a7c5100e4eec3c652760794ad68d86e0613bc14fe4c65",
+    "results/orthology/duplication-sequence-covariates-20260926-v1/mafft_sequence_covariates.tsv": "f2d0e2d2b86140043d4c178d62c12d44251a583a08ca779eef5081bf71c8b980"
+  }
+}

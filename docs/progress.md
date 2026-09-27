@@ -5724,3 +5724,28 @@ confidence-fragment inflation and quarantine of numerical mismatches.
 This is descriptive coverage screening, not a replacement passing native
 alignment audit or a test of duplication effects. Geometric-rank assessment,
 event/reference integration and controlled evolutionary inference remain pending.
+
+
+## September 27 domain comparisons integrated with sequence-aware reference triads
+
+Built and independently checked the normalized domain-triad dataset from all
+36,944 event/reference combinations, four annotation policies, two interval
+boundaries and both masks. The integration preserves all 295,552
+triad/policy/boundary availability rows; matched candidates yield 72,336
+domain-triad rows and 144,672 domain/mask rows. Every shared protein uses the
+same interval in both of its structural comparisons. All imported source
+values, set intersections, interval identities, coverage flags, sequence fields
+and reference matches passed a separate Python readback of the SQLite dataset.
+
+At 30 residues and 70% coverage under pLDDT70, at least one complete domain
+comparison triad is available for 3,127 MAFFT-guide and 3,129 profile-guide
+events. These counts allow any retained reference/policy/boundary alternative;
+they are not agreement counts, independent observations or duplication-effect
+results. Reference-specific sequence distances remain NULL for the 9,952
+domain/mask rows involving a different tied reference. The whole-protein tip
+covariates retain their original chosen-reference provenance.
+
+See [methods and verified integration results](duplication-domain-triad-integration-20260927.md)
+and the [completion record](../metadata/duplication_domain_triad_integration_completed_20260927.json).
+Numerical quarantine, geometry checks, scientific controls and phylogenetic
+inference remain separate requirements. GPU prediction was not resumed.
