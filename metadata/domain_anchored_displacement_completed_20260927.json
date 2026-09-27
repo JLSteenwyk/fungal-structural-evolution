@@ -1,0 +1,42 @@
+{
+  "status": "complete_domain_anchored_displacement_with_quaternion_checks",
+  "source_hashes": {
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/domain_reference_links.tsv": "7e4fbfbc8d36983786c73d6d3cbee33893fb8525968da9d8b6359d0a7b8ab7d6",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/whole_reference_links.tsv": "94713f722d9106652c4cf7c3e10e91b7a6ee0414f80e89ac5f37d211016eeb96",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/model_triads.tsv": "9fdde272039d19fad472ead3e5fd12bcb32c67e9db936ea0ad71274895b85ecf",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/receipt.json": "fbf3529c00c3e38b0cfe34494dc5582ba9c50d4624b1c3660c67a2a08e96375d",
+    "results/structural_comparisons/duplication-domain-common-residues-20260927-v1/triads.jsonl": "aa3f3a3268e7e584bb6bca8dba9020b48fc4abe9156a3832e4db589b1053f37a",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/receipt.json": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/common_residue_maps.jsonl.gz": "ff75afb9f5ad4fc18a85c0518579045dcc06f535145bf48b2e450bd120e1891a"
+  },
+  "script_sha256": "d955025a122b4ef773138dcda014eae2b92c8be8820affaaa598344c6a50bf32",
+  "fixtures": {
+    "rigid_and_outside_translation_cases": 4,
+    "status": "passed"
+  },
+  "partitions": 832,
+  "pair_rows": 2496,
+  "statuses": {
+    "computed": 2496
+  },
+  "maximum_quaternion_rmsd_difference": 1.3500311979441904e-13,
+  "artifacts": {
+    "residue_partitions.jsonl": "9a94357af8807a49bfb063ac33c98b4acaf41f9a79829adb2584c6c48dffa039",
+    "pair_displacements.tsv": "f9a413fe97ca43ed9dd532de1b83dcf6fd255f04c295171dd4e9af69704743db"
+  },
+  "scope": "Whole-protein residue correspondences partitioned by domain intervals: all three inside, all three outside, or mixed (retained but not fitted). Anchor fits require unique numerical geometry. Same domain transform applied to outside coordinates. Outside residuals include flexible regions and within/outside-domain changes; not proof of rigid interdomain rotation or biological significance. Native domain mappings are not substituted into whole-protein correspondence sets.",
+  "receipt_path": "results/structural_comparisons/domain-anchored-displacement-20260927-v1/receipt.json",
+  "receipt_sha256": "241ab5ae8b291a6cd5c2eaf2fd934f9abc24905f516d5cdd2ab856a595670d99",
+  "helper_script_hashes": {
+    "scripts/assess_domain_alignment_geometry.py": "b99336d078fcfd2a5df6e8df0f0d9d54a416278d03a55282189a39dc6dc01cab",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}

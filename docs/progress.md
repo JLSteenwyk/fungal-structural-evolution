@@ -8461,3 +8461,12 @@ all references and Pfam annotations. Every output cell passed serialized
 readback. The sole 90%-coverage case is Phycomyces OG0002812, with small opposing
 contrasts requiring prediction-error checks. Conditional mechanistic follow-up
 and annotation caveats are documented in [inspection cases](whole-domain-inspection-cases-20260927.md).
+
+### 2026-09-27: direct domain-anchored coordinate measurements completed
+
+Computed all 832 residue partitions and 2,496 pair measurements for the 13
+opposing-scale cases. Quaternion and SVD anchor/outside residuals agreed within
+1.36e-13 Å, synthetic fixtures passed, and every serialized record was checked.
+Whole-protein mappings produce anchors as short as 24 residues, so anchor-specific
+coverage screens remain necessary even though native domain fits passed the
+previous baseline. See [coordinate measurements](domain-anchored-displacement-20260927.md).

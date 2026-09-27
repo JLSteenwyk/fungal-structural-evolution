@@ -1,0 +1,57 @@
+# Domain-anchored coordinate displacement
+
+For the 13 opposing whole-protein/domain cases, the coordinate analysis uses
+whole-protein residue correspondences and partitions each common triple by the
+three annotated domain intervals. Triples whose three residues are inside form
+the anchor; triples whose three residues are outside form the evaluation set.
+Mixed triples are exported separately and excluded from these two fits. This
+preserves one correspondence definition throughout each measurement.
+
+The analysis retains 26 interval triads, both confidence masks, eight alignment
+order combinations and two mapping definitions: 832 partitions. Each partition
+is assessed for A–B, A–reference and B–reference, producing 2,496 pair records.
+Domain anchors require at least three residues and unique numerical rotation
+geometry. Anchor counts and curvature are retained; this numerical requirement
+is not a scientific confidence or length screen.
+
+For each usable anchor, a proper rigid transformation is fitted to the inside
+residues and applied unchanged to outside residues. The outside residual is also
+compared with an independent fit to the same outside coordinates when at least
+three outside residues exist. This latter optimum cannot exceed the residual
+under the domain transform; the inequality is checked. Small or missing outside
+sets and degenerate anchors are retained explicitly.
+
+A separate quaternion fit reproduces both anchor and outside residuals. Synthetic
+fixtures test a pure rigid transform and translation of the outside region while
+the domain core stays fixed. Partition membership is checked independently with
+Boolean arrays; complete residue partitions and pair measurements are exported
+and read back.
+
+These measurements do not identify rigid interdomain rotation by themselves.
+Outside residues can include multiple domains, flexible linkers, termini and
+regions with uncertain correspondence. Domain orientation claims require a
+second confidently matched domain, appropriate uncertainty checks and independent
+prediction evidence. The analysis also uses whole-protein mappings rather than
+native domain-alignment mappings; disagreement between those mappings remains a
+separate sensitivity question.
+
+Run `scripts/measure_domain_anchored_displacement.py` with one CPU and one BLAS
+thread. Outputs are in
+`results/structural_comparisons/domain-anchored-displacement-20260927-v1`.
+The [case dataset](whole-domain-inspection-cases-20260927.md) supplies all chosen
+references and cases. No new structure prediction is required.
+
+The run completed all 832 partitions and 2,496 pair records with usable numerical
+anchor geometry and outside residues. Independent quaternion residuals agreed
+within 1.36e-13 Å; synthetic fixtures and full serialization checks passed.
+Anchor sizes range from 24 to 320 residues; outside sets contain 82–781 residues,
+and mixed sets contain 0–16 triples. Thus, numerical fit completion must not be
+reported as passing the original domain coverage screens: whole-protein mappings
+can yield different anchor sets, including anchors below 30 residues. Original
+interval coverage and anchor-size screens must be reapplied to these new sets
+before selecting scientifically interpretable comparisons.
+
+The completion receipt is
+`metadata/domain_anchored_displacement_completed_20260927.json`. Biological
+localization, confidence qualification and prediction-error calibration remain
+separate stages.
