@@ -8980,3 +8980,11 @@ bound provides no gain>0.001. Optimization sensitivity remains real despite
 the earlier finite-grid result. Poorer local solutions are diagnostic, not
 equally supported biological uncertainty. All-refit posterior propagation
 and its independent verification remain downstream.
+
+### 2026-09-27: best-solution domain refinements launched
+
+Started312 free branch/gamma refinements from the best audited feasible
+solution for each model/bound pair, including original baselines (selected
+in20 cases). Epsilon tightened to1e-8; all prior solutions retained.
+Two concurrent four-thread fits,12GiB memory,noGPU. Verification and signed
+likelihood changes remain pending; no convergence claim.

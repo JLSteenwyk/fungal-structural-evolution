@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-ancestral-domain-refinements-20260927.service",
+  "state": {
+    "MainPID": "529209",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 529209,
+  "created": 1790548039.08,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ancestral_domain_refinements.py",
+    "--plan",
+    "metadata/ancestral_domain_refinement_plan_20260927.json"
+  ],
+  "plan_sha256": "7dd3e83c40e4f3971d7d0d930918970dbdc0bbed14c869afdc6e4a5bb63590fe",
+  "resources": {
+    "concurrent_fits": 2,
+    "threads_per_fit": 4,
+    "aggregate_cpus": 8,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours": [
+      0.5,
+      24
+    ]
+  }
+}

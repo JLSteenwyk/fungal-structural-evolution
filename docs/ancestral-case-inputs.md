@@ -813,3 +813,29 @@ assessment and comparison to the best qualified solutions. Short edges remain
 common (840 of936 fits); warning exports also include informational zero-failure
 lines and are not counts of failed jobs. Completion:
 `metadata/ancestral_domain_multistart_audit_completed_20260927.json`.
+
+## Best-solution refinement launched
+
+The alternate-start audit found remaining optimization differences. For each
+of156 baseline models under each of two gamma lower bounds, selected the
+highest checkpoint likelihood among the three audited same-bound refits and
+the original audited baseline when feasible. This produces312 starts. Twenty
+selected starts are original baselines; small likelihood differences are not
+treated as evidence of biological preference. Selection is deterministic and
+all source job IDs, input-tree hashes, starting alphas and likelihoods remain
+recorded. Every prior solution is retained.
+
+Each selected tree/gamma is now freely refitted with IQ-TREE epsilon1e-8,
+compared with1e-6 for the alternate starts. Topology, frequencies, gamma lower
+bound and alignment stay fixed. This is a stability test of the best available
+solutions, not a proof of global optimization. Full report/likelihood audits
+and signed changes from selected starts are still required before qualifying
+refined estimates. Ancestor probabilities currently running from the earlier
+936 fits remain diagnostics of optimization sensitivity.
+
+Prepare: `python scripts/prepare_ancestral_domain_refinements.py`.
+Run: `python scripts/run_ancestral_domain_refinements.py --plan
+metadata/ancestral_domain_refinement_plan_20260927.json`. Output:
+`results/ancestral/domain-refinements-20260927-v1/`. Two concurrent four-thread
+fits,8CPUs aggregate,12GiB memory,no swap/GPU; planning0.5–24 hours,4GiB output.
+Plan/launch metadata freeze all selected starts and verified live identity.
