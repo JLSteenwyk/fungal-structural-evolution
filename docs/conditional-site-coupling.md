@@ -534,3 +534,36 @@ resampling directories. Default figure arguments still support the earlier
 89/88-marker analysis.
 
 ![Full ESMFold coupling and copy-review sensitivity](figures/completed_esmfold_copy_review_coupling_20260926.png)
+
+## Recovered AlphaFold collection: site-rate exports launched (September 26)
+
+The complete 125-marker collection combines 95 unchanged marker sources and
+30 refitted sources. It is not a native single-run fit directory. The new
+`estimate_collection_site_rates.py` and `audit_collection_site_rates.py`
+resolve each marker through the verified source inventory; all four source
+model configurations, paired alignment hashes, native receipts and fixed AA
+topologies are checked. The existing site-rate fitting and numeric-audit
+algorithms are retained. Full preflight passed 125 markers / 500 source fits /
+190,116 expected site-rate rows per heterogeneity model, and an ESMFold cohort
+substitution was rejected before output creation.
+
+`metadata/recovered_afdb_site_rate_plan_20260926.json` specifies sequential
+Gamma4 export/audit and FreeRate4 export/audit, totaling 1,000 native fits.
+`advance_collection_site_rates.py` executes that pinned plan. The live service
+is `fungal-recovered-afdb-site-rates-20260926.service`; its identity and exact
+launch arguments are in `metadata/recovered_afdb_site_rate_launch_20260926.json`.
+The controller writes under `results/recovery-20260926/afdb-site-rates`, and
+outputs use `site-rates-afdb-recovered-{gamma,freerate}-20260926-v1` and matching
+`site-rate-audit-...` directories under `results/phylogeny/`.
+
+The resource allowance is four CPU workers, 16 GiB RAM, no swap and 32 GiB
+output, with 100 GiB disk / 32 GiB available-memory preflight gates. The
+4–168 hour planning range is deliberately broad and uncalibrated; it is not
+an ETA. This uses the existing host, with no GPU predictions or paid resources.
+
+These exports are running, not completed coupling results. Audits must cover
+all 500 fits and 190,116 rows for each model. Optimization sensitivity,
+rate-model comparison, exposure integration, reviewed QR conditional models,
+copy-omission sensitivity and whole-marker uncertainty remain downstream.
+Fixed-topology posterior site rates do not establish causal sequence–structure
+coupling, physical displacement, absolute evolutionary rates or selection.

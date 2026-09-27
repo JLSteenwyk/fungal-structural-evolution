@@ -5530,3 +5530,14 @@ analysis, exact complete-sequence checks, full-model confidence/partner controls
 and 119-pair fixed-cohort sensitivity. Denominator changes, acquisition-batch
 concentration, dependence and limits of interpretation are explicit. Supporting
 completion receipts were rechecked before incorporating the methods.
+
+### September 26: recovered AlphaFold full-cohort site-rate exports launched
+
+Prepared and preflight-checked source-preserving rate export/audit variants
+for all 125 recovered AlphaFold markers. All 500 native source fits passed;
+an incorrect ESMFold cohort was rejected. Launched Gamma4 and FreeRate4 exports
+with automatic full-output audits (1,000 planned fits, 190,116 site-rate rows
+per model), four CPU workers and a 16 GiB memory limit. This advances the
+expanded sequence–structure coupling workflow independently of ongoing branch
+resampling. No rate-export or coupling completion is claimed. See
+[execution details](conditional-site-coupling.md#recovered-alphafold-collection-site-rate-exports-launched-september-26).

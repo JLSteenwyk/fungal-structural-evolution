@@ -23,6 +23,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   95 unchanged and 30 refitted marker sources.
 - ESMFold resampling: separate 122-marker cohort, 73,200 paired draws, with
   its own automatic audit. It cannot provide intervals for AlphaFold fits.
+- Recovered AlphaFold site-rate exports: 125 markers, Gamma4 and FreeRate4,
+  1,000 total fits with separate complete output audits. Exposure integration
+  and conditional coupling remain downstream; see [coupling](conditional-site-coupling.md).
 - Primary duplication coordinates: 212,549 initial validations completed;
   independent source-to-export verification runs before input materialization.
 - Whole-protein duplicate/reference alignments and domain alignments wait for

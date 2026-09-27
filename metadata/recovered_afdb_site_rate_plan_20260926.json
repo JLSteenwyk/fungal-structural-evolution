@@ -1,0 +1,156 @@
+{
+  "control": "results/recovery-20260926/afdb-site-rates",
+  "pins": {
+    "scripts/advance_collection_paired_resampling.py": "1a6ec9ffcf84852b0cdd89d7fa997bbcb4363b9326579600241d9b89db5a608c",
+    "scripts/run_collection_paired_resampling.py": "895de02bee9c73c3678256c75d7dfb75be8e56c870830a3aab8070b7a9535f7e",
+    "scripts/summarize_collection_paired_resampling.py": "20329ee76ddba1b439b3b2c6e8030d1437e771c60b4f694ab1bed597eb79e8a8",
+    "scripts/paired_collection_resampling_sources.py": "259daf197fa20242e5926414e808bea7674b9873dd47dc9e97f53bd7d85a855a",
+    "scripts/readback_combined_paired_fit_sources.py": "4f8e90f048350efb5b1e25af3488d223e4e0c3ea74e34e396f61e143ba220fa0",
+    "scripts/combine_audited_paired_fit_sources.py": "5c49ab6adc55ee97743df7eed606315213b499dcbbca7076db05f4e8da7e4261",
+    "scripts/run_paired_branch_resampling.py": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/prepare_paired_fit_source_inventory.py": "8befd9e54325baa1096c8e9ccc00fc8c6573348629da0f22ccd0841dfdc1a19c",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "results/phylogeny/paired-inputs-gdm-current-20260923-v2/receipt.json": "a7c08334cbfd7196fa1e45523d537dd21edc9e02baf92fd53edaf511e1353dcb",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "results/phylogeny/paired-inputs-afdb-recovered-changed-20260925-v1/receipt.json": "4e3a3f582615513145f4a1aa724b7a31928e4c130302a00f55c16682d56d4ee9",
+    "data/structural_models/garg-hochberg-v3/receipt.json": "2ad223b4c0e9fe23dc5efc3cdf9ce4b303a21a46305f4c876e5c5e72d37aacb5",
+    "results/phylogeny/paired-marker-fits-gdm-current-20260923-v2/config.json": "f9050acf529b2b61bf75374812532f769320e45fea735e83bdc71799201bbbd2",
+    "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1/config.json": "04ecb3e6d47476c4f2cd683d5b7a8a163ffa4b5c5c87b8fb5c28775bf52a4ea1",
+    "metadata/recovered_afdb_fit_source_inventory_20260926.json": "8c243b36dbdbade5e24e50d6bcaab9920f215cb47a51f15707cbf6b004b366c1",
+    "results/phylogeny/paired-marker-fit-audit-gdm-current-20260923-v2/receipt.json": "c288c68c311ee4134e4a4c2787a97d7109519811043f38b9dd0db57dbc9079cb",
+    "results/phylogeny/paired-marker-fits-gdm-current-20260923-v2/receipt.json": "b82f78b200d45276a091bfabcffb54bb51b8d293a3fdf0c4a669e6c457bea67c",
+    "results/phylogeny/paired-fit-audit-afdb-recovered-changed-20260926-v1/receipt.json": "995b833a7f5b02376a8267bb4c7acebca527231b3084c20fa732a9e626d4dc67",
+    "results/phylogeny/paired-fits-afdb-recovered-changed-20260925-v1/receipt.json": "fd03cd519fa8ba51d91d8ee9ac52cd8b4ee2c93efc9a136593368dc9eb5557ca",
+    "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1/receipt.json": "e9208b6b22ecdbed642a26d3ba370eb4fbd9103eec4ded21da698b3460dfb1fd",
+    "results/recovery-20260926/afdb-fit-collection/table_readback.json": "cff4b15e21587569842429e3dd6ae9404efebba518464d5edd32f1e16c071678",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "scripts/estimate_collection_site_rates.py": "b0c22554ba1f46502fa0210df3a5fc4b8b8fd341c86f9ca54a373bb71e76eea7",
+    "scripts/audit_collection_site_rates.py": "183e72ccf9dce879f376c40492e8732c30716c9f5e3482bbd2dd47779e031e27",
+    "scripts/advance_collection_site_rates.py": "7eea17a068cb61f290f11a70195c9d57325e607ad6362daf0fdc2f896f4afc94",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4"
+  },
+  "stages": [
+    {
+      "name": "gamma_export",
+      "arguments": [
+        "scripts/estimate_collection_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--collection",
+        "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1",
+        "--inventory",
+        "metadata/recovered_afdb_fit_source_inventory_20260926.json",
+        "--output",
+        "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1",
+        "--heterogeneity",
+        "G4"
+      ]
+    },
+    {
+      "name": "gamma_audit",
+      "arguments": [
+        "scripts/audit_collection_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--collection",
+        "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1",
+        "--inventory",
+        "metadata/recovered_afdb_fit_source_inventory_20260926.json",
+        "--rates",
+        "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1",
+        "--output",
+        "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1"
+      ]
+    },
+    {
+      "name": "freerate_export",
+      "arguments": [
+        "scripts/estimate_collection_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--collection",
+        "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1",
+        "--inventory",
+        "metadata/recovered_afdb_fit_source_inventory_20260926.json",
+        "--output",
+        "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1",
+        "--heterogeneity",
+        "R4"
+      ]
+    },
+    {
+      "name": "freerate_audit",
+      "arguments": [
+        "scripts/audit_collection_site_rates.py",
+        "--inputs",
+        "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+        "--models",
+        "data/structural_models/garg-hochberg-v3",
+        "--collection",
+        "results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1",
+        "--inventory",
+        "metadata/recovered_afdb_fit_source_inventory_20260926.json",
+        "--rates",
+        "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1",
+        "--output",
+        "results/phylogeny/site-rate-audit-afdb-recovered-freerate-20260926-v1"
+      ]
+    }
+  ],
+  "audits": [
+    {
+      "path": "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1",
+      "counts": {
+        "status": "passed_full_site_rate_output_audit",
+        "markers": 125,
+        "fits": 500,
+        "site_rate_rows": 190116
+      }
+    },
+    {
+      "path": "results/phylogeny/site-rate-audit-afdb-recovered-freerate-20260926-v1",
+      "counts": {
+        "status": "passed_full_site_rate_output_audit",
+        "markers": 125,
+        "fits": 500,
+        "site_rate_rows": 190116
+      }
+    }
+  ],
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 100,
+    "minimum_available_memory_gib": 32,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      4,
+      168
+    ],
+    "runtime_is_uncalibrated": true,
+    "native_fits": 1000,
+    "basis": "125 markers times four alphabets/frequency specifications times two heterogeneity models. Four one-thread workers at 2 GiB requested per native fit. Broad uncalibrated runtime range; existing host, no GPU or charges.",
+    "observed_free_disk_bytes": 12209290018816,
+    "observed_available_memory_bytes": 1033006198784
+  },
+  "validation": {
+    "preflight_status": "passed_collection_site_rate_preflight",
+    "markers": 125,
+    "source_fits": 500,
+    "site_rows_per_heterogeneity": 190116,
+    "algorithm": "Existing exporter and full-output auditor unchanged except verified per-marker native-source lookup and collection provenance. All four native source models checked.",
+    "limitations": "Rates conditional on fixed trees and fitted models; optimization sensitivity, exposure joins, QR coupling and marker resampling are downstream."
+  }
+}
