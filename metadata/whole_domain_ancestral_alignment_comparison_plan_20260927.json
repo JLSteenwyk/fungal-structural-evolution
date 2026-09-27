@@ -1,0 +1,29 @@
+{
+  "whole": "results/ancestral/case-alignments-20260927-v1",
+  "domain": "results/ancestral/case-domain-alignments-20260927-v1",
+  "sequences": "results/ancestral/case-domain-sequences-20260927-v1",
+  "coordinates": "results/ancestral/case-domain-alignment-readback-20260927-v1/protein_position_maps.tsv.gz",
+  "output": "results/ancestral/whole-domain-alignment-correspondence-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_hours": [
+      0.05,
+      2
+    ]
+  },
+  "pins": {
+    "results/ancestral/case-alignments-20260927-v1/receipt.json": "21129091f9184e1c48f89ac601dcd61cf5fcbd4b2c65d7650a0c4e1d8576fec8",
+    "results/ancestral/case-domain-alignments-20260927-v1/receipt.json": "5e50f09dac4ac9ef2532d41e5df62f69f228b8901f9edfda86b0be057e216ad7",
+    "results/ancestral/case-domain-sequences-20260927-v1/receipt.json": "72ab21453bd996303d1559a94527f30f9a6d6a71de8c83738fcf128c4bef7c21",
+    "results/ancestral/case-domain-alignment-readback-20260927-v1/protein_position_maps.tsv.gz": "a425fda2b85af1315a3f25ee14c89155a6d93111c362b1f122354eaefbe447e8",
+    "metadata/ancestral_case_alignments_completed_20260927.json": "1a5b73d00a81ec9a81ae94149ce715a847847c08818d4bec59e1332ca9d76676",
+    "metadata/ancestral_domain_alignments_completed_20260927.json": "7af6a41914d701f6a5a14b7fbaa6df087f6ed3b3fdfda7c356488952537f643e",
+    "scripts/compare_whole_domain_ancestral_alignments.py": "7cc5d7674d5b716eba29017690eec2d5c6e2387a026cfda75f1883c21a81b041",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/case-domain-sequences-20260927-v1/protein_dispositions.tsv": "0f4ea681384844a062f38c45f0bcd282e9487834fdd06ffc6e8ed11c20f912d8",
+    "results/ancestral/case-domain-alignment-readback-20260927-v1/receipt.json": "465325b5615d33a775d759d8f701aca7b8a02289131a2ee3e4104e02c1627c7e"
+  }
+}

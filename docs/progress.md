@@ -8945,3 +8945,12 @@ behind the verified live producer. Unknown X residues explicitly contribute
 unknown-state evidence and frequency iteration, with source inputs preserved.
 One CPU,4GiB RAM,noGPU. Domain multistarts and whole-protein production remain
 active; full audits and updated ancestral inference remain pending.
+
+### 2026-09-27: whole/domain ancestral alignment correspondence completed
+
+All104 comparisons completed after exact projection to common domain
+membership and original residue intervals. Saved-record readback verified
+23,037 column-union records;26 comparisons have identical column sets.
+Unmatched columns remain explicit. Projection does not isolate alignment
+context from the influence of extra proteins on original whole alignments.
+Whole-protein fits and domain multistarts continue independently.

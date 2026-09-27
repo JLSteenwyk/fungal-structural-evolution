@@ -717,3 +717,34 @@ metadata use prefix `ancestral_whole_model_audit_` and date `20260927`. Output:
 no swap/GPU; planning0.1–6 hours after production and0.2GiB output. Full results
 remain pending. Passing numerical checks will not establish optimization
 convergence, model adequacy or ancestral states.
+
+## Whole-protein/domain alignment correspondence completed
+
+Projected each whole-protein alignment onto the exact annotated domain
+intervals and protein membership of each domain input. All original domain
+residues were recovered with exact identity and coordinate checks. Every
+retained column is a full-clade vector of original residue positions or gaps;
+columns without any retained domain residue are counted separately. Compared
+all13 families ×2 boundaries ×2 whole aligners ×2 domain aligners =104
+combinations, retaining23,037 matched/unmatched column-union records.
+
+Only26 of104 comparisons have identical projected column sets. OG0000152
+is identical in all eight settings. For OG0000972, the fraction of domain
+columns with an exact projected whole-protein match ranges from0.339 to0.615;
+for OG0000095 it ranges from0.497 to0.687. These are coordinate-correspondence
+fractions, not homology probabilities, and comparisons reuse data. All
+settings remain retained, including low-correspondence cases.
+
+Projection controls the members and residue intervals being compared; it
+does not remove the influence of extra proteins or flanking sequences on the
+original whole-protein alignment. Consequently it does not isolate sequence
+context effects from membership effects. Matched ancestral-column comparisons
+must retain that limitation, and unmatched positions require separate
+alignment/indel uncertainty handling.
+
+Reproduce: `python scripts/compare_whole_domain_ancestral_alignments.py`.
+Plan and completion metadata use `whole_domain_ancestral_alignment_comparison_`
+and date `20260927`. Outputs:
+`results/ancestral/whole-domain-alignment-correspondence-20260927-v1/`.
+One CPU,4GiB memory limit,noGPU; terminal success and complete saved-record
+identity/count readback confirmed.
