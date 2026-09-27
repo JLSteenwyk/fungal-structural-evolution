@@ -1,0 +1,26 @@
+{
+  "candidates": "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/candidate_sequence_context.tsv",
+  "context": "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/interval_pair_context.tsv",
+  "inputs": "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl",
+  "output": "results/structural_comparisons/duplication-identical-domain-position-fits-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "48 candidates; existing full-mask PDB coordinates, two exact sequence-index fits per distinct interval pair. No native search, GPUs or charges."
+  },
+  "pins": {
+    "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/candidate_sequence_context.tsv": "181a948f63fe6e6a1ac0896787d465040446ca33abb488ad5abe0454f8619dfb",
+    "results/structural_comparisons/duplication-candidate-sequence-context-20260927-v1/interval_pair_context.tsv": "2c41f0375e61f29ce3f5e65b81e5b90b636cbb29d57b851fa63013d3f5c31440",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355",
+    "scripts/fit_identical_domain_positions.py": "450f31806232b9022500ee5ffd1b67774e6bf54524b3c92b67c5ac75cd6d6d9d",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/assess_domain_alignment_geometry.py": "b99336d078fcfd2a5df6e8df0f0d9d54a416278d03a55282189a39dc6dc01cab",
+    "metadata/duplication_candidate_sequence_context_completed_20260927.json": "e1a24770325d4699f4a0381e18e62809f47a43273227b02f654b9490465f7c93"
+  }
+}

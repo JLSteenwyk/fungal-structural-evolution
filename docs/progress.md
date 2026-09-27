@@ -6135,3 +6135,20 @@ sequence/structure decoupling. See [methods and counts](duplication-candidate-se
 The previous turn completed domain/quality annotations; this turn adds direct
 sequence evidence that changes the next case-review step. The full project
 remains active and GPU prediction remains paused.
+
+## September 27 identical-domain position controls completed
+
+Fit all 75 distinct identical-sequence interval pairs from the complete set of
+48 eligible candidates using exact sequence positions. Both full and joint
+pLDDT≥70 masks produced 150 successful fits, all passing n30/c70 and numerical
+rotation-uniqueness checks. Independent raw-PDB/quaternion readback verified every
+fit and mask; maximum RMSD discrepancy was 2.18e-14 Å.
+
+Median pair RMSDs were 0.512 Å (full) and 0.375 Å (joint confidence), with all
+boundary alternatives retained. These coordinate differences do not validate
+three-protein asymmetry or biological divergence. A shared-reference control
+with duplicate sequence positions constrained remains next. See
+[methods and full results](duplication-identical-domain-position-controls-20260927.md).
+The prior goal turn identified correspondence sensitivity; this turn completes
+a direct numerical control across every eligible case. The full objective
+remains active, and GPU prediction remains paused.

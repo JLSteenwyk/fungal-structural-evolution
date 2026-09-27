@@ -1,0 +1,31 @@
+{
+  "status": "passed_full_identical_domain_position_fit_readback",
+  "candidates": 48,
+  "interval_pairs": 75,
+  "fits": 150,
+  "pdbs_checked": 150,
+  "maximum_rmsd_difference": 2.1760371282653068e-14,
+  "mask_summaries": {
+    "full": {
+      "fits": 75,
+      "computed": 75,
+      "n30_c70_passing": 75,
+      "rmsd_min": 0.15330935396600498,
+      "rmsd_median": 0.5120657841883179,
+      "rmsd_max": 4.210821941528537
+    },
+    "joint_plddt70": {
+      "fits": 75,
+      "computed": 75,
+      "n30_c70_passing": 75,
+      "rmsd_min": 0.15330935396600498,
+      "rmsd_median": 0.3748025225686558,
+      "rmsd_max": 3.421136168571547
+    }
+  },
+  "plan_sha256": "8833b91dd89f833f5f067de7556421b2ae3f3bcc47aa7865df55fa1599dcac08",
+  "producer_receipt_sha256": "b891ed87fb583dd1f4435a33f09ce19df4d79045c6a98f95b50356ac6f32e0bc",
+  "checker_sha256": "c19d726b3e896c2d17f08417bf4a953f93bf9ef0bfa51fdf0b2f8827a5f52655",
+  "quaternion_helper_sha256": "185e8caa873928ed6e76aa2d6c40e0a028d5ec0cd52c5d30c4ff24145b48135f",
+  "scope": "Exact pair/link universe, every sequence offset/mask, raw PDB hash/sequence/coordinates, RMSD/geometry/confidence and screen decisions checked. Quaternion rotation independent of producer SVD. Pair distances do not verify three-protein directional asymmetry or prediction accuracy."
+}
