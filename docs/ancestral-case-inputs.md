@@ -222,3 +222,31 @@ At launch verification, 28 alignments had passed initial preservation checks.
 Production is not complete; independent readback, comparison of residue
 correspondence across both boundaries/methods, and comparison with whole-protein
 alignments remain pending. No ancestral sequence or structure has been inferred.
+
+## Full domain alignment verification and protein-coordinate maps queued
+
+A separate checker waits for successful terminal completion of all 52 domain
+alignments, checking the producer PID, creation time and command while it runs.
+It then checks all input identifiers, original sequence strings, residue
+positions, column occupancies, threshold counts and output hashes. Both methods
+must preserve every domain copy and input residue.
+
+The checker reconstructs cumulative domain positions and independently enumerates
+nongap sequence positions. Every domain position is then translated through its
+recorded boundary offset to an original protein position, with the residue
+checked against the full-protein sequence. All protein-position maps are
+exported, providing common coordinates for downstream comparisons.
+
+Within each of the 26 family/boundary sets, full-column position vectors and
+focal duplicate residue pairs are compared between MAFFT and FAMSA. The current
+comparison exports identify sets as `family-boundary`; residue-pair coordinates
+are absolute protein coordinates. A whole-column match requires agreement for
+every protein and is not a probability of alignment correctness. Comparisons
+across boundary definitions or against whole-protein alignments remain separate
+downstream work.
+
+Checker: `scripts/audit_ancestral_domain_alignments.py`. Frozen plan and exact
+launch identity: `metadata/ancestral_domain_alignment_audit_plan_20260927.json`
+and `metadata/ancestral_domain_alignment_audit_launch_20260927.json`. Resources:
+one CPU, 4 GiB RAM, no swap, 0.5 GiB output allowance, planned 0.1–2 hours after
+production finishes. No completed readback or ancestral inference is claimed yet.

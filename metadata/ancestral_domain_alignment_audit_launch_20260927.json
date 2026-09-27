@@ -1,0 +1,23 @@
+{
+  "unit": "fungal-ancestral-domain-alignment-audit-20260927.service",
+  "pid": 475044,
+  "created": 1790544677.08,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ancestral_domain_alignments.py",
+    "--plan",
+    "metadata/ancestral_domain_alignment_audit_plan_20260927.json"
+  ],
+  "plan_sha256": "50664d2a80359231547301e332951b58c3b1f70e6bf910a1052211e6764737b9",
+  "status": "verified_live_waiting_for_all_52_domain_alignments",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_hours_after_alignments": [
+      0.1,
+      2
+    ]
+  }
+}

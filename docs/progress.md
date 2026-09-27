@@ -8803,3 +8803,11 @@ no swap or GPU. Twenty-eight outputs passed initial exact-sequence checks at
 launch verification; the largest case is running. Full independent audit and
 comparison to whole-protein correspondences remain pending. This stage does not
 constitute ancestral reconstruction.
+
+### 2026-09-27: domain alignment readback and protein-coordinate export queued
+
+Launched the complete 52-alignment checker, waiting on verified live production.
+It will independently check all sequences/occupancies, map each aligned residue
+back to full-protein coordinates, and compare alignment methods within each
+boundary. One CPU, 4 GiB RAM; no GPU. Results remain pending, as do cross-boundary
+and whole-protein comparisons and ancestral inference.
