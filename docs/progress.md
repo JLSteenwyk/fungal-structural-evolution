@@ -6656,3 +6656,16 @@ independent readback remain pending; no matched effect is yet claimed. See
 The previous goal turn started independent selection verification; this turn
 advances the next required matching diagnostic. All eight aims remain active.
 GPU prediction remains paused.
+
+## September 27 full control-balance verification queued
+
+Added and tested independent reconstruction of all 3,456 balance summaries and
+432 coverage summaries, then queued it behind the verified live balance
+controller. All 253 random/nonestimable fixtures passed. The checker rebuilds
+features and coverage directly from selected identities and source nodes, and
+checks every output field rather than trusting aggregate receipts. Production
+results remain pending. See [balance verification](terminal-sister-backgrounds-20260927.md#full-balance-verification-queued).
+
+The previous goal turn queued balance assessment; this turn completes its queued
+independent validation stage. All eight scientific aims remain active, with GPU
+prediction paused.

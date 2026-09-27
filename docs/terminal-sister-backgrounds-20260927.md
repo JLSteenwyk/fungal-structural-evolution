@@ -925,3 +925,23 @@ positive-log exclusions and endpoint swaps passed fixtures. Resources: one CPU,
 16 GiB RAM, no swap, 1 GiB output allowance and an uncalibrated 0.1–4 hours after
 selection verification. Production balance and independent readback remain
 pending. No GPU or paid resources were enabled.
+
+## Full balance verification queued
+
+Queued `fungal-background-control-balance-readback-20260927.service` after
+confirming the balance controller's live identity. The independent checker
+rejoins all selected target/control identities to frozen node records, rebuilds
+all eight feature definitions without importing producer helpers, and uses
+separate per-stratum pandas statistics to check every mean, SD, standardized
+difference, absolute-difference quantile, baseline shift and nonestimable status.
+All 432 coverage cells, 3,456 balance cells, original-target denominators,
+selected taxa/families, zero distances, identical models and background reuse
+counts are in scope. Empty strata must also be present.
+
+253 independent reconstruction fixtures passed, including empty, single-pair,
+constant and missing-value cases. Floating summaries use fixed tight numerical
+tolerances; statuses/counts/identities require exact agreement. Resources: one
+CPU, 24 GiB RAM, no swap, negligible proof output and an uncalibrated 0.1–4 hours
+after the producer. Production balance and verification remain pending; no
+biological effect or independent-sample test is claimed. No GPU or paid
+infrastructure was enabled.
