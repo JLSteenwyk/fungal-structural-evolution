@@ -750,3 +750,25 @@ remain outstanding.
 Resource plan: one CPU, 16 GiB RAM, no swap, 4 GiB output allowance and
 uncalibrated 0.1–4 hours. This is metadata processing only; no GPU prediction,
 native structural comparisons or paid infrastructure was started.
+
+## Full candidate graph produced; independent verification running
+
+Production completed all 1,661,948 expected edges, 218,473 target nodes,
+155,616 guide-specific background nodes and 873,892 target/policy dispositions.
+The producer exited successfully. Started an independent full-data checker that
+rejoins every node field to source genes, model descriptors and guide distances;
+it does not import graph construction or annotation-classification helpers.
+
+Every unique edge must satisfy the exact guide, family, conservative architecture
+and sequence-distance requirements, with correct focal and tighter-range flags.
+The checker reconstructs counts for all three background sets and all three
+distance ranges and compares every one of 2,621,676 independently audited support
+rows. Valid unique edges plus equal eligible counts establish completeness of
+the graph; all unsupported target/policy dispositions are checked too. Source
+annotation-status cases passed before launch. Production verification remains
+pending, so the graph is not yet qualified for selecting controls.
+
+Resources: one CPU, 24 GiB RAM, no swap, negligible receipt output, uncalibrated
+0.1–4-hour planning range; no native structural comparisons, GPU or new charges.
+The full objective, including architecture-changing events and phylogenetic
+adjustment, is unchanged by this conserved-architecture candidate graph.

@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/background_match_graph_plan_20260927.json",
+  "output": "metadata/background_match_graph_completed_readback_20260927.json",
+  "pins": {
+    "metadata/architecture_matching_support_plan_20260927.json": "898f73db7278e554eda984a0cd78386cb7d1793a687e7a26f6b4249e3e0101cc",
+    "results/orthology/architecture-matched-background-support-20260927-v1/receipt.json": "6cccaf1a544b0065e3441f6d93b8e5aec3cc3fb0e237bc7b124428166bf8114c",
+    "metadata/architecture_matching_support_completed_readback_20260927.json": "51831285140ad43e97a9465b37f9261188753e89193d2f5a92757fe5679415d5",
+    "results/orthology/architecture-matched-background-support-20260927-v1/architecture_support.tsv": "bdc8d504ef1565c96b4184860dc85cb0e4b87d1a78630b13a4d1e9e2631514dd",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/event_model_pair_links.tsv": "d811b5aa47d5084556fae4bde7ae909b313bfa18fd48c6346fa035720ebad8fd",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/candidate_measurement_links.tsv": "5077fe8023549368376d57ecbd6586da3d8fafe7f60cf7a95f9b9d3843bc9ca6",
+    "results/structural_comparisons/duplication-domain-controls-20260926-v1/model_annotations.jsonl": "7423c03ac2abf93f659b538f76de8358133f135fe75c82c5bd1dccdec4d48e22",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/model_annotations.jsonl": "64e7dee0ffec1dcfd75865c380eff62e9cd28a5e9a4602ba261cce4ab44b5e76",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl": "4f59e546e6010015ce5d18da7ca7823c79cc96a8d3a45ec46fdbac5514bd415e",
+    "scripts/prepare_background_match_graph.py": "b8c02933fabd225770bc05ea2f08b06166fa519e0b35b3c21c62f6d5da43be97",
+    "scripts/assess_architecture_matched_support.py": "109f6d536968520776a0010de5d8ce2caf939a4f307a44b085d1fca7159dbbfb",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/background_match_graph_plan_20260927.json": "d52510cc528dbde1e484b85af62832af5d73957e50bfbb32d21032060483d791",
+    "results/orthology/background-matching-support-20260927-v1/target_support.tsv": "c7e4a4c6914bd7dfbc19e47c1ca38effa375988c0bad5ff1766417bb5e4e24a2",
+    "scripts/readback_background_match_graph.py": "41ce50f33bc818224028c4b02c32a22300fac3755f4bb1de3ae4fe6fe0ac876e",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "edges": 1661948,
+    "support_rows": 2621676,
+    "basis": "Full source-node joins, independent annotation classification and direct validation of every unique edge, reconciling every support row to prove completeness. One CPU, no GPU or native comparisons. Uncalibrated planning range."
+  }
+}

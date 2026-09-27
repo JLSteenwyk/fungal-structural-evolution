@@ -6568,3 +6568,17 @@ matches or matched biological effects are claimed. See
 The preceding turn produced the verified coverage figure; this turn advances
 actual candidate-control construction. All eight aims remain active and GPU
 prediction stays paused.
+
+## September 27 candidate graph produced and full verification launched
+
+Graph construction completed 1,661,948 edges, 218,473 target nodes, 155,616
+background nodes and all 873,892 target/policy dispositions. Started independent
+full source-node/edge verification, including exact reconciliation against all
+2,621,676 audited support rows across qualification sets and distance ranges.
+Known annotation-classification cases passed. Full production verification and
+control selection remain pending. See
+[graph verification](terminal-sister-backgrounds-20260927.md#full-candidate-graph-produced-independent-verification-running).
+
+The prior goal turn launched graph construction; this turn confirms successful
+production and advances its full independent check. All eight aims remain open
+and active. GPU prediction remains paused.
