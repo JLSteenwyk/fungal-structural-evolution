@@ -8745,3 +8745,12 @@ and compare all 15 pairs on common taxa, checking split restriction by explicit
 pruning. Known-topology pruning checks passed before launch. No result or
 completion is claimed while the trees are still running. See
 `docs/taxon-identity-sensitivities.md` for resources, scope and pending work.
+
+### 2026-09-27: ancestral candidate neighborhoods extracted and verified
+
+Recovered 26 resolved trees for all 13 whole/domain cases and checked 104
+focal/ancestral neighborhoods containing 3,722 descendant records. All 52
+cross-guide descendant-set comparisons agree, with shared input-tree dependence
+explicit. Full source-tree and parent-path readback passed. Exact extant sequence
+recovery, alignment assessment and ancestral ensembles remain pending; no ASR
+or ancestral structure result is claimed. See `docs/ancestral-case-inputs.md`.
