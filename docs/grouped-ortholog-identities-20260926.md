@@ -338,3 +338,22 @@ the separate small-family supplements. Guide-specific assignments are not
 validated errors or inferred duplication events. Even a high overlap would
 not establish biological orthology, resolve gene-copy uncertainty or replace
 the planned duplication/structural-divergence tests.
+
+
+## Completed pair-identity guide sensitivity
+
+The full comparison exited successfully. It found 557,815,636 shared unordered
+pairs, 3,824,306 profile-only pairs and 3,702,049 MAFFT-only pairs. The union
+contains 565,341,991 pairs, and the symmetric difference contains 7,526,355
+pairs. Jaccard overlap (intersection/union) is 0.9866871, or 98.67%. The
+122,257 net count difference therefore substantially understates assignment
+disagreement and must not be used as a discordant-pair count.
+
+The producer verified stream hashes before and after merging, strict ordering,
+canonical pair IDs and reciprocal multiplicity. After successful exit, plan
+pins, compiled executable hash and count identities were rechecked; the full
+streams were not independently rescanned during this archival readback.
+`metadata/ortholog_pair_guide_overlap_completed_20260926.json` archives the
+receipt and hash. The 105 set-based fixtures provide separate implementation
+evidence. Guide-sensitive pairs are not necessarily incorrect, and agreement
+does not validate duplication biology or unresolved gene-copy assignments.

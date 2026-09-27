@@ -1,0 +1,56 @@
+{
+  "receipt": {
+    "left_pairs": 561639942,
+    "right_pairs": 561517685,
+    "shared_pairs": 557815636,
+    "left_only_pairs": 3824306,
+    "right_only_pairs": 3702049,
+    "union_pairs": 565341991,
+    "symmetric_difference_pairs": 7526355,
+    "status": "complete_native_ortholog_pair_guide_overlap",
+    "jaccard": 0.9866870759295854,
+    "plan_sha256": "9538b1ac053164fbc00033f4bd1c46ce439ae9508965f55a3f4b18ddd658cbfb",
+    "script_sha256": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "compile_command": [
+      "/usr/bin/g++",
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "scripts/compare_ortholog_pair_streams.cpp",
+      "-o",
+      "results/orthology/ortholog-pair-guide-overlap-20260926-v1/compare_pair_streams"
+    ],
+    "command": [
+      "results/orthology/ortholog-pair-guide-overlap-20260926-v1/compare_pair_streams",
+      "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/sorted_pairs.hex",
+      "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/sorted_pairs.hex"
+    ],
+    "binary_sha256": "d138e7679e7f54914a695fb0b6720303cae79ebb17a59b902b409a3769d7e1af",
+    "source_pins": {
+      "metadata/ortholog_pair_reciprocity_profile_plan_20260926.json": "a924a688db58f9628a25b150e733122f7eb2559701b12dc97f6ce3220267b4bc",
+      "metadata/grouped_ortholog_identity_profile_large_fields_plan_20260926.json": "61f894043998a06a74694a9f2b85996b0a3c4134800a9f50a9984206baffcb7f",
+      "metadata/expanded_small_family_profile_completed_receipt_20260923.json": "f2e9c30af442f45198a3008aca130d6548ef02b8d8efe2950f2c132b266e0321",
+      "results/orthology/grouped-ortholog-identities-profile-20260926-v2/receipt.json": "e02e4b15d6625e902f244e6069c7836a1ec39c296cc86487f1f48036d4c9cb7d",
+      "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json": "1676148b2998d42d65c024091c0d7f391c88f7d1490416b9a06319d460944ecf",
+      "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+      "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+      "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json": "c1ec84a16baa301147b669260da3700f2ea6142fc6b593b29ab1de92fba2c5ac",
+      "metadata/grouped_ortholog_identity_mafft_large_fields_plan_20260926.json": "a1d641f0496eccdfd4906af6d667dd8ea4207da762d1e3f22ecdf8901b1ecc11",
+      "metadata/expanded_small_family_mafft_completed_receipt_20260923.json": "dc493b906663152ba9d477bcae97d3457a43341e95d4e7a4afa80479198b26b5",
+      "results/orthology/grouped-ortholog-identities-mafft-20260926-v2/receipt.json": "d92080547a9df43a7e763938ab50dd3755a8636baf668ba48ca51af7474af1cb",
+      "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json": "dc994c82a4f889f1c1b54bb813d4a12493369251694c85456b679f28805d196b",
+      "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+      "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+      "/usr/bin/g++": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+      "scripts/compare_ortholog_pair_streams.cpp": "dacbcc1df80871166fd316cfe0c08cf7346f4d0dcb17d02c6a5437e028f9854a",
+      "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+      "scripts/check_ortholog_pair_guide_comparison.py": "9d33bb5c1f667cb2922b1761c30dd067dcb346e32d9ecab052baeeef7d29ea70"
+    },
+    "scope": "Exact unordered pair overlap in native tables for identical protein ordinals. Reciprocal multiplicity and sorted uniqueness rechecked during merge. Excludes small-family supplements. Guide-sensitive assignments are not validated errors, duplication events or biological orthology."
+  },
+  "receipt_path": "results/orthology/ortholog-pair-guide-overlap-20260926-v1/receipt.json",
+  "receipt_sha256": "f7b74bcef9f63c291068c3704a1575d6783ae02f1e4f575699bc48008bbf9a56",
+  "readback": "Plan pins and binary rechecked; count identities verified after service exit zero. Full streams hashed before/after producer merge; not independently rescanned here."
+}

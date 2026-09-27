@@ -5021,3 +5021,17 @@ set-based fixtures and rejected seven malformed streams. The service uses one
 CPU and 2 GiB RAM; results remain pending. This measures reconciliation-guide
 sensitivity and does not itself test duplication-associated structural change.
 See [ortholog identity workflow](grouped-ortholog-identities-20260926.md).
+
+
+### September 26: orthology-guide overlap completed; duplication coverage started
+
+The direct pair merge found 557,815,636 shared pairs and 7,526,355 pairs unique
+to one guide, for 98.67% intersection/union overlap. Successful exit, source
+pins, executable hash and arithmetic identities were rechecked and archived.
+See [pair comparison](grouped-ortholog-identities-20260926.md).
+
+A full inventory now joins both guides' reported duplication events to the
+frozen AlphaFold bridge. It preserves all events and missing coverage, with
+a separate explicitly limited table of simple terminal two-model candidates
+for later structural comparisons. Production and independent readback remain
+pending. See [duplication coverage](duplication-structure-coverage-20260926.md).
