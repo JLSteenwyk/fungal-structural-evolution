@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-local-mg94-unconstrained-multistart-audit-20260927.service",
+  "pid": 141132,
+  "created": 1790523876.54,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_local_mg94_multistarts.py",
+    "--plan",
+    "metadata/local_mg94_unconstrained_multistart_plan_20260927.json",
+    "--launch",
+    "metadata/local_mg94_unconstrained_multistart_launch_20260927.json",
+    "--output",
+    "results/cds/local-mg94-unconstrained-multistart-audit-20260927-v1"
+  ],
+  "script_sha256": "7f8fbf73cbe02bd64f7b6d67c6f00d6d67a8033accaa785beac54368749de9ac",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.1,
+      4
+    ]
+  }
+}

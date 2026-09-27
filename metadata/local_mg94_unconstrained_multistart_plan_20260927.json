@@ -1,0 +1,35 @@
+{
+  "starts": "results/cds/local-mg94-unconstrained-starts-20260927-v1",
+  "executable": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+  "output": "results/cds/local-mg94-unconstrained-multistarts-20260927-v1",
+  "workers": 4,
+  "optimization_precision": 1e-07,
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 20,
+    "planning_hours": [
+      1,
+      48
+    ]
+  },
+  "scope": "All 1632 cases from all eight audited profile parameter vectors, all free. Starting likelihood, optimized likelihood and fresh saved fit readback required. No biological pilot, selection inference or replacement of original artifacts.",
+  "runtime_basis": "Previous full profile batch used 10h9m CPU; 13056 new unconstrained optimizations with tighter precision and fresh readbacks. Planning range is not measured production ETA.",
+  "pins": {
+    "scripts/run_local_mg94_multistarts.py": "39f5eccf0663a23bad2c494410003c63d97cfd4eca019d2016c5d092b5259cbe",
+    "scripts/audit_local_branch_parameter_profiles.py": "b009676af1960964c83dd149feaecb7125616acf5d5c4562a6f091b84792198e",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy": "a773f2de6bf5aa18a15e58078ee9c938de9ad877a17db8ba017db16a9e5df6a9",
+    "metadata/local_branch_profiles_completed_20260927.json": "619a06af2652b829cf179fd98383311f84498695153950ed7c86e4dce31cfbba",
+    "metadata/local_mg94_multistart_inventory_completed_20260927.json": "9a2fcb44a60dbd549c9d12d9e4f54e3c779616ee1e8e90ab0267aa103d56aa5a",
+    "results/cds/local-mg94-unconstrained-starts-20260927-v1/receipt.json": "9a2fcb44a60dbd549c9d12d9e4f54e3c779616ee1e8e90ab0267aa103d56aa5a",
+    "results/cds/local-mg94-branch-profile-audit-20260927-v1/receipt.json": "7b1924e332c2161f2a9095e3b1cb990bbf1dc973dc7f2cd9a7936430a12ae943",
+    "results/cds/local-mg94-branch-parameter-profiles-20260927-v1/receipt.json": "72e158820f3490f1e4ac9f8ddaa32f2bbb450db58aee4574f8677fcff117859d",
+    "results/cds/local-mg94-diagnostics-20260927-v1/receipt.json": "07b5fd7405ab6d7e9a7e602f118273cd3f9ef0097e59053eb5a1cbff570ea439",
+    "results/cds/local-mg94-unconstrained-starts-20260927-v1/start_manifest.tsv": "caf4df66fd67b88ed308bf9cdf5375e34e87c88f2d7d800b8f10dee76433637c",
+    "results/cds/local-mg94-unconstrained-starts-20260927-v1/case_start_counts.tsv": "b715650dc367ddb6fd3456f1dad3a51296589e53709df8abc046df0f9ae694b4",
+    "results/cds/local-mg94-unconstrained-starts-20260927-v1/grid_better_than_unconstrained.tsv": "08fdbe5a3fb3954b0d097a45e44b746333a99757f42575e4aa980fa6a2dd9c78",
+    "results/cds/local-mg94-unconstrained-starts-20260927-v1/parameter_seeds.jsonl": "347a68fb049b93512f8c0a5d97b89c7c1ffeea5355a4d09bef12aa0627f75b68"
+  }
+}

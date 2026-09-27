@@ -7826,3 +7826,20 @@ not yet run. [Results and restart requirements](local-branch-profile-completion-
 The AlphaFold accessibility calculation also finished; its existing downstream
 projection service remains active. Full structural working-model fitting
 continues. All eight aims remain open; GPU prediction remains paused.
+
+## September 27 all-case unconstrained codon multistarts running
+
+The preceding goal turn verified the completed profile batch and prepared all
+13,056 parameter seeds (progress). Implemented and launched unconstrained
+refits for all 1,632 cases from all eight saved profile solutions. Every start
+loads the original free model, assigns the complete seed, reproduces its
+starting likelihood, optimizes at precision 1e-7, exports free parameters and
+reloads the result in a fresh process. Four native HyPhy workers are verified
+live; completed-case checkpoints advance. All earlier artifacts are preserved.
+
+Queued a separate full artifact/parameter/likelihood audit after authoritative
+successful completion, retaining all starts and between-start discrepancies.
+[Full run requirements](local-mg94-unconstrained-multistarts-20260927.md).
+Producer: four CPUs, 8 GiB, no swap, 1–48 hours planned; audit: one CPU/8 GiB.
+No result yet supports global optimality, calibrated intervals or selection.
+All eight aims remain open. GPU prediction remains paused.
