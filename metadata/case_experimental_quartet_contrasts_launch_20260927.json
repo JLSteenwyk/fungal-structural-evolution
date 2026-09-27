@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-case-experimental-quartet-contrasts-20260927.service",
+  "pid": 435983,
+  "created": 1790541763.67,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/screen_case_experimental_quartet_contrasts.py"
+  ],
+  "script_sha256": "771c0405a1e680405372782f5b7d788c82bd01b927ddb461cabfc590b5262203",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.25,
+      4
+    ]
+  },
+  "validation": "Four exact coverage-boundary/zero-length and two contrast-sign fixtures passed. Full production outputs await successful exact quartet readback.",
+  "scope": "All six screens and four same-residue paired contrasts; no hypothesis-test or biological-effect claim. No GPU use."
+}

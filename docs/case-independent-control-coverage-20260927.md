@@ -458,3 +458,29 @@ planned. Output will be
 launch and fixture evidence are in
 `metadata/case_experimental_quartet_readback_launch_20260927.json` and
 `metadata/case_experimental_quartet_readback_fixtures_20260927.json`.
+
+## Coverage-screened paired contrast export queued
+
+`screen_case_experimental_quartet_contrasts.py` waits for the exact full quartet
+readback and successful terminal state. For every partition it exports all six
+n30/n50 × c50/c70/c90 screens against each original fungal protein/domain/outside
+length. Both integer and rational threshold calculations must agree. A separate
+contrast table preserves whole-protein, domain, independently fitted outside and
+domain-anchored outside measurements; coverage and numeric availability remain
+separate fields and below-threshold observations are not discarded.
+
+The signed contrasts are distance(A,R) − distance(B,R) and distance(A,E) −
+distance(B,E), where R is the fungal reference and E the experimental homolog.
+Both use identical four-way residue sets. Their difference is also exported
+when both are available. Decimal arithmetic checks subtraction, and unavailable
+fits retain their original statuses. These reference-dependent descriptions do
+not establish ancestral polarity, prediction accuracy, mechanistic validation,
+selection or independent replication. The thirteen cases were selected using
+prior whole/domain contrasts; this stage does not assign confirmatory p-values.
+
+Four coverage-boundary/zero-length and two sign fixtures passed. The queued
+service uses one CPU, 4 GiB RAM, no swap, 2 GiB output and 0.25–4 hours planned.
+Output is `results/experimental_structures/whole-domain-case-quartet-contrasts-20260927-v1`;
+launch identity and script hash are in
+`metadata/case_experimental_quartet_contrasts_launch_20260927.json`.
+Full output verification remains required after production completes.

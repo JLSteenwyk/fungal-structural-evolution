@@ -8670,3 +8670,11 @@ six pairs in three regions, and independently recomputes proper-rotation and
 domain-anchored residuals. Thirteen numerical fixtures passed; the production
 check waits on exact producer completion. Scientific coverage and interpretation
 remain downstream.
+
+### 2026-09-27: all quartet coverage screens and paired contrasts queued
+
+Prepared the six-screen coverage export and four paired contrast definitions,
+retaining all below-threshold and unavailable comparisons. Fungal-reference and
+experimental-reference contrasts use identical residues and stay descriptive.
+Threshold/sign fixtures passed. The service waits on full quartet validation;
+production summaries and biological interpretation remain incomplete.
