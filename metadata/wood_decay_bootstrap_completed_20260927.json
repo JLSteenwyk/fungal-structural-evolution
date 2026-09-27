@@ -1,0 +1,125 @@
+{
+  "status": "complete_verified_wood_decay_bootstrap_uncertainty",
+  "terminal_states": {
+    "fungal-wood-decay-bootstrap-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-wood-decay-bootstrap-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-wood-decay-bootstrap-summary-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-wood-decay-bootstrap-summary-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "results/ecology/wood-decay-bootstrap-summary-20260927-v1/receipt.json": "f482d9d46932c2fb8caace2c36d57d1223968d6b06d3c4bf41b59b06d042f6b4",
+    "metadata/wood_decay_bootstrap_summary_readback_20260927.json": "7aeecfb6c2c716cb24f024ae18e2191759dce06bd5c8542be29cd9d1886d48d5",
+    "results/ecology/wood-decay-bootstrap-readback-20260927-v1/receipt.json": "cfaa3990af956065703b89689e025bd3927270b5b85d7a895c59d318691bb0b3"
+  },
+  "script_sha256": "edd5f9e50058dd60dac82a4c93a452de0cd3b25059bdc249a84a886fde20906e",
+  "trees": 2000,
+  "coding_tree_combinations": 10000,
+  "independently_checked_edges": 10490000,
+  "independently_checked_endpoint_costs": 41960000,
+  "summary_artifacts": {
+    "tree_metric_distributions.tsv": "05ffffae7e96bcad465ee34ec53a35e5e7e199b127334e749b3dab3d7f7600c5",
+    "paired_coding_sensitivity.tsv": "a4c17e686d0a74a574b1ea17bd6c221db49db7b70ffef77a7005cbd97c6c1d20",
+    "split_uncertainty.tsv": "f2f50886f58556c46c5ac8701625ddb978fabf08cd5e4168e17a6c265f1345ae"
+  },
+  "primary_required_changes_per_tree": 0,
+  "primary_minimum_changes_per_tree": 2,
+  "required_split_under_jaapia_brown": [
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_1_botryobasidium_0",
+      "split_id": "9ba66f89f2f21177feadbb2ce3b12a880eb17ddc3b7c6476722a8f542cb252bd",
+      "canonical_side": "F104355;F202697;F38799;F5364",
+      "ml_status": "required_change",
+      "ensemble_trees": 1000,
+      "absent_trees": 0,
+      "present": 1000,
+      "required_change": 996,
+      "optional_change": 4,
+      "no_change_in_any_optimum": 0,
+      "presence_fraction": 1.0,
+      "required_change_fraction_all_trees": 0.996,
+      "required_change_fraction_when_present": 0.996,
+      "optional_change_fraction_all_trees": 0.004,
+      "optional_change_fraction_when_present": 0.004,
+      "no_change_in_any_optimum_fraction_all_trees": 0.0,
+      "no_change_in_any_optimum_fraction_when_present": 0.0
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_1_botryobasidium_1",
+      "split_id": "9ba66f89f2f21177feadbb2ce3b12a880eb17ddc3b7c6476722a8f542cb252bd",
+      "canonical_side": "F104355;F202697;F38799;F5364",
+      "ml_status": "required_change",
+      "ensemble_trees": 1000,
+      "absent_trees": 0,
+      "present": 1000,
+      "required_change": 996,
+      "optional_change": 4,
+      "no_change_in_any_optimum": 0,
+      "presence_fraction": 1.0,
+      "required_change_fraction_all_trees": 0.996,
+      "required_change_fraction_when_present": 0.996,
+      "optional_change_fraction_all_trees": 0.004,
+      "optional_change_fraction_when_present": 0.004,
+      "no_change_in_any_optimum_fraction_all_trees": 0.0,
+      "no_change_in_any_optimum_fraction_when_present": 0.0
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_1_botryobasidium_0",
+      "split_id": "9ba66f89f2f21177feadbb2ce3b12a880eb17ddc3b7c6476722a8f542cb252bd",
+      "canonical_side": "F104355;F202697;F38799;F5364",
+      "ml_status": "required_change",
+      "ensemble_trees": 1000,
+      "absent_trees": 0,
+      "present": 1000,
+      "required_change": 996,
+      "optional_change": 4,
+      "no_change_in_any_optimum": 0,
+      "presence_fraction": 1.0,
+      "required_change_fraction_all_trees": 0.996,
+      "required_change_fraction_when_present": 0.996,
+      "optional_change_fraction_all_trees": 0.004,
+      "optional_change_fraction_when_present": 0.004,
+      "no_change_in_any_optimum_fraction_all_trees": 0.0,
+      "no_change_in_any_optimum_fraction_when_present": 0.0
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_1_botryobasidium_1",
+      "split_id": "9ba66f89f2f21177feadbb2ce3b12a880eb17ddc3b7c6476722a8f542cb252bd",
+      "canonical_side": "F104355;F202697;F38799;F5364",
+      "ml_status": "required_change",
+      "ensemble_trees": 1000,
+      "absent_trees": 0,
+      "present": 1000,
+      "required_change": 996,
+      "optional_change": 4,
+      "no_change_in_any_optimum": 0,
+      "presence_fraction": 1.0,
+      "required_change_fraction_all_trees": 0.996,
+      "required_change_fraction_when_present": 0.996,
+      "optional_change_fraction_all_trees": 0.004,
+      "optional_change_fraction_when_present": 0.004,
+      "no_change_in_any_optimum_fraction_all_trees": 0.0,
+      "no_change_in_any_optimum_fraction_when_present": 0.0
+    }
+  ],
+  "scope": "Primary uncertain labels remain unknown: no edge is required to change in any primary bootstrap optimum set. A required split appears in 996/1000 trees per ensemble only when Jaapia is forced brown. Frequencies are topology/coding sensitivity, not posterior origins, independent ecological transitions or structural effects."
+}

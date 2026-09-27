@@ -8544,3 +8544,12 @@ candidates for both regions; Heliocybe, Jaapia and Phycomyces have 19, 102 and 2
 respectively. All 13 cases and zero-candidate outcomes remain explicit. These
 counts do not establish observed coordinate coverage. Metadata retrieval is
 advancing (900/1,912 verified at the latest check). See [coverage tables](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: wood-decay bootstrap diagnostic fully verified
+
+Closed all four successful stages: 2,000 trees × five codings, 10,490,000 edge
+rows and 41,960,000 independently checked costs, plus complete summary readback.
+Every primary-coding tree has minimum change count two but no edge required in
+all optimal mappings. A specific split becomes required in 996/1,000 trees per
+ensemble only when uncertain Jaapia is forced brown; this cannot establish a
+primary ecological transition. See [verified diagnostic](wood-decay-phylogenetic-diagnostic-20260927.md).

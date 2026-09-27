@@ -87,7 +87,9 @@ analyses; do not silently shrink the scientific scope to successful cases.
 - Eight taxa now have separately reviewed decay classifications and fully checked
   structural coverage. The primary two-tree mapping requires two undirected
   changes but no particular edge; uncertain coding changes localization. The
-  full bootstrap mapping and independent check are running/queued. See
+  full bootstrap mapping and independent checks completed across 2,000 trees and
+  five codings. Primary unknown coding has no required-change edge on any tree;
+  apparent localization depends on assigning Jaapia brown. See
   [decay uncertainty](wood-decay-phylogenetic-diagnostic-20260927.md).
 - A [predictor geometry figure](figures/functional_predictor_geometry_20260927.pdf)
   retains all 600 local comparisons at 150 shared functional positions. It is

@@ -83,23 +83,44 @@ resource allowances, not completion forecasts. GPU inference remains paused.
 Bootstrap frequencies remain conditional topology sensitivity, not posterior
 transition probabilities, independent origin counts or structural-effect tests.
 
-## Bootstrap uncertainty summaries queued
+## Bootstrap uncertainty summaries verified
 
-The full 2,000-tree, five-coding network-flow audit remains active. After its
-successful terminal state, `summarize_wood_decay_bootstrap_uncertainty.py` will
-produce split-level presence and change frequencies with explicit all-tree and
-present-only denominators, plus tree-level metric distributions. It also computes
-8,000 paired tree/metric rows contrasting the primary unknown coding with the
-minimum and maximum over the four uncertain-taxon assignments on the same tree.
-These are coding sensitivity bounds, not confidence intervals.
+The full independent network-flow audit completed all 2,000 trees and five
+codings: 10,490,000 edge rows and 41,960,000 endpoint-constrained costs. All 2,000
+per-tree proof hashes were checked. Summary production and independent full
+readback also completed: 12,515 split rows, 74 metric-distribution rows and
+8,000 paired coding-sensitivity rows. All four services terminated successfully.
 
-`readback_wood_decay_bootstrap_summary.py` waits for successful summary completion
-and independently reconstructs every field using pandas outer joins and grouped
-counts. Both stages use one CPU, 4 GiB, no swap, with 1–15 minutes estimated per
-stage after its prerequisite. Launch identities and source/script hashes are in
-`metadata/wood_decay_bootstrap_summary_launch_20260927.json` and
-`metadata/wood_decay_bootstrap_summary_readback_launch_20260927.json`.
+For the primary coding, both 1,000-tree ensembles have minimum change count two
+on every tree. However, every tree has **zero edges required to change in all
+optimal mappings**. This does not mean no changes occurred: the minimum changes
+can be assigned to different edges in alternative optima. Primary optional-edge
+counts range from nine to eleven.
 
-No bootstrap summary is yet accepted. The frozen primary trait assignments remain
-unchanged; changes in optimal mappings do not establish rooted origins, independent
-replication, transition probabilities, or effects on protein structure.
+Only the scenarios forcing Jaapia to brown produce a required-change edge. In
+each ensemble, 996 of 1,000 trees require the split whose canonical side is
+`F104355;F202697;F38799;F5364`; that split is present in all 1,000 trees. The four
+remaining trees have no required edge. Assigning Botryobasidium either white or
+brown does not alter that 996/1,000 result. The 99.6% frequency is conditional on
+an uncertain trait assignment; it does not establish a brown-rot origin or an
+independent ecological transition. The primary labels remain unchanged.
+
+This diagnostic therefore does not supply confidently localized transitions for
+the primary wood-decay/structural-change association test. Sparse trait coverage,
+alternative optimal mappings and uncertain assignments remain substantive
+limitations. The broader ecological aim remains open.
+
+`summarize_wood_decay_bootstrap_uncertainty.py` preserves split-presence and
+change frequencies with explicit all-tree and present-only denominators. Paired
+sensitivity ranges compare alternative codings on the same tree and are not
+confidence intervals. `readback_wood_decay_bootstrap_summary.py` independently
+reconstructed every summary field with full joins and grouped counts.
+
+Output: `results/ecology/wood-decay-bootstrap-summary-20260927-v1`.
+Completion: `metadata/wood_decay_bootstrap_completed_20260927.json`.
+Independent summary readback:
+`metadata/wood_decay_bootstrap_summary_readback_20260927.json`.
+Reproduce the completion binding with
+`scripts/record_wood_decay_bootstrap_completion.py` after the recorded full jobs
+have terminated successfully. This completion covers the diagnostic computation,
+not a test of structural effects or completion of the ecological project aim.
