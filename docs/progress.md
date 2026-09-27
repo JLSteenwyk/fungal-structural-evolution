@@ -5701,3 +5701,26 @@ explicit geometry/length/coverage eligibility while retaining all exclusions;
 two matched residues cannot establish a unique three-dimensional orientation.
 Even numerically consistent alignments require those scientific controls before
 comparison of duplication-associated structural divergence.
+
+
+## September 27 domain coverage sensitivity screen checked
+
+Completed and independently checked all 140,790 pair/mask rows, preserving
+280,824 numeric input-order records. The six analyst-defined screens require
+both orders to meet 30/50 aligned residues and 50/70/90% coverage of each
+original domain interval. Confidence masking never reduces the coverage
+denominator. All exclusions and original native metrics remain visible;
+378 unavailable pair/masks and one numerical-discrepancy pair/mask are retained.
+
+At 30 residues and 70% original-interval coverage, 69,374 full-mask pairs and
+64,036 pLDDT70 pairs pass; 64,036 pass both masks. All six combinations,
+including fixed-cohort intersections, are reported in the
+[coverage-screen methods and results](duplication-domain-coverage-screen-20260927.md).
+The independent checker verified every exported metric, source mapping,
+length, denominator, threshold decision, exclusion and aggregate. Fixtures
+covered boundary conditions, order symmetry, incomplete comparisons,
+confidence-fragment inflation and quarantine of numerical mismatches.
+
+This is descriptive coverage screening, not a replacement passing native
+alignment audit or a test of duplication effects. Geometric-rank assessment,
+event/reference integration and controlled evolutionary inference remain pending.

@@ -1,0 +1,62 @@
+{
+  "diagnostic": "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1",
+  "diagnostic_plan": "metadata/duplication_domain_alignment_diagnostic_plan_20260927.json",
+  "inventory": "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1",
+  "inputs": "results/structural_comparisons/duplication-domain-inputs-20260926-v1",
+  "output": "results/structural_comparisons/duplication-domain-coverage-screen-20260927-v1",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 6,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "basis": "Reads existing audited numeric TSV and manifests only; no structure inference or native realignment; no cost."
+  },
+  "scope": "Analyst-defined length/coverage sensitivity grid, not validated biological cutoffs or a replacement for strict numeric audit. All six screens reported; both orders must pass; one mismatched pair-mask quarantined.",
+  "pins": {
+    "metadata/duplication_domain_alignment_diagnostic_plan_20260927.json": "a2581b0928c3a17039f8798a8fcb5c7a243f00b07f5316b8fccc9169b2c1f333",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/duplication_domain_alignment_diagnostic_completed_20260927.json": "cb56ca2932377762c5358f5567204578c228bfcd9f1994bb51c217cdb1de982f",
+    "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1/receipt.json": "baefebd99f32daac913ca4074a88bd6c1e81a14905901bd7ccb99b7148cd49e1",
+    "results/structural_comparisons/duplication-domain-alignment-diagnostic-20260927-v1/numeric_readback.tsv": "e4076474fe7aedb4b6100288987089f2bff7db386705b1aba16bf2e9a7e565ae",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/receipt.json": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/domain_pairs.tsv": "07f2e554859c43bca0f1bf3c9269d1434742803d6e65e64151ac45e972cdfcf6",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/intervals.jsonl": "948f8b22ae31c7239705d7726ac6d679fdc7844cda540cacf38209835373da5f",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/receipt.json": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+    "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355"
+  }
+}

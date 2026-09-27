@@ -1,0 +1,34 @@
+{
+  "status": "passed_complete_domain_coverage_screen_readback",
+  "producer_receipt_sha256": "e65b4375f983232c6c0160a30212f5aa95eb452af72eca3a43f6af8e6a3eb290",
+  "plan_sha256": "cb53f12604082e1c629b5977cc1e01535df34870587367165289e31fecd82161",
+  "checker_sha256": "bd9c0ed8687971fb07bddd2e2be25d9cdb9387febbd27841139503769054e4d7",
+  "rows_checked": 140790,
+  "numeric_rows_checked": 280824,
+  "unavailable_pair_masks": 378,
+  "quarantined_pair_masks": 1,
+  "pass_counts": {
+    "full:n30_c50": 70224,
+    "full:n30_c70": 69374,
+    "full:n30_c90": 61286,
+    "full:n50_c50": 65278,
+    "full:n50_c70": 64522,
+    "full:n50_c90": 56993,
+    "plddt70:n30_c50": 68270,
+    "plddt70:n30_c70": 64036,
+    "plddt70:n30_c90": 43390,
+    "plddt70:n50_c50": 62747,
+    "plddt70:n50_c70": 59059,
+    "plddt70:n50_c90": 40144
+  },
+  "both_masks_pass_counts": {
+    "n30_c50": 68270,
+    "n30_c70": 64036,
+    "n30_c90": 43388,
+    "n50_c50": 62747,
+    "n50_c70": 59059,
+    "n50_c90": 40142
+  },
+  "biological_inference_eligible": false,
+  "scope": "Every pair/mask/order, copied numeric field, original interval denominator, mask count, rational threshold decision, exclusion reason and summary checked independently. Does not recalculate native structures or confer scientific eligibility."
+}
