@@ -8853,3 +8853,11 @@ likelihoods, maximum absolute difference 1.25591e-5 log units (tolerance 0.001).
 Analytic two-tip mixture check passed; producer terminated successfully.
 Empirical matrices/source definitions are shared, likelihood engine is separate.
 Convergence/model adequacy and ancestral states remain unresolved.
+
+### 2026-09-27: ancestral candidate vertices mapped across all domain fits
+
+Full incident-tip partitions identify all 468 internal fit/node candidates
+(focal MRCA plus two ancestor levels across 156 fits). Both guide aliases agree.
+The 156 local root positions remain explicitly unidentified under unrooted
+reversible fitting; no substitute root was assigned. Complete 1,248-row mapping
+and branch-length context retained. Ancestral states have not yet been inferred.

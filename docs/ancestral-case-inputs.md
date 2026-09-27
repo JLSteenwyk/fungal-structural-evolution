@@ -442,3 +442,31 @@ The run used one CPU and at most 4 GiB RAM, no swap or GPU, against a 0.1–4 ho
 planning envelope. Output:
 `results/ancestral/case-domain-likelihood-replay-20260927-v1/`. Closure:
 `metadata/ancestral_domain_likelihood_replay_completed_20260927.json`.
+
+## Candidate nodes mapped into fitted unrooted trees
+
+All candidate node identities were checked using the complete partition of tip
+identities around each incident branch, independently of node labels. Across
+156 model/alignment fits, the focal duplicate MRCA and its next two ancestral
+levels map uniquely: 468 distinct fit/node combinations. Both reconciliation
+guides give the same partitions and mappings; the 936 matched guide/node rows
+are aliases, not independent reconstructions.
+
+The source local root has two incident branches. Its position is suppressed in
+the fitted unrooted tree and is not identifiable under these reversible models.
+All 156 such fit/root candidates (312 guide rows) are explicitly marked
+`degree_two_root_position_not_identified`. No arbitrary branch midpoint or
+nearby vertex substitutes for that root. This limits which nodes can receive
+conditional ancestral-state calculations with the current inputs.
+
+The complete 1,248-row mapping retains branch-partition signatures, source/fitted
+labels, original levels and incident branch lengths. Short adjacent branches
+remain flagged by their numeric lengths, without collapsing nodes or treating
+small distances as support for a historical ancestor.
+
+Reproduce: `python scripts/map_ancestral_fitted_nodes.py`. Local output:
+`results/ancestral/case-fitted-node-mapping-20260927-v1/`. Closure:
+`metadata/ancestral_fitted_node_mapping_completed_20260927.json`.
+This stage establishes correspondences only. Conditional ancestral states,
+optimization and model sensitivity, indel uncertainty and predicted ancestral
+structures remain incomplete.
