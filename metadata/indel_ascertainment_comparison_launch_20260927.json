@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-indel-ascertainment-comparison-20260927.service",
+  "state": {
+    "MainPID": "575150",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 575150,
+  "created": 1790551864.74,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_indel_ascertainment_posteriors.py"
+  ],
+  "plan_sha256": "610d19ff5cdf4566f4f6eda3a73f5d091cee3931a9544a9982f4031001b8cda9",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "paid_cost": 0
+  }
+}

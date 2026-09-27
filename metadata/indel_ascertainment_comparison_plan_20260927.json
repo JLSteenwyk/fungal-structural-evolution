@@ -1,0 +1,27 @@
+{
+  "auditor_launch": "metadata/stable_indel_posterior_audit_launch_20260927.json",
+  "audit_output": "results/ancestral/stable-indel-posterior-audit-20260927-v1",
+  "posterior_output": "results/ancestral/stable-indel-ancestors-20260927-v1",
+  "mapping": "results/ancestral/indel-candidate-node-mapping-20260927-v1/candidate_nodes.tsv",
+  "fit_plan": "metadata/stable_indel_refinement_plan_20260927.json",
+  "output": "results/ancestral/indel-ascertainment-comparison-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All156 paired encodings, three signature-matched candidate vertices, all characters. Three empty encodings retained. Changes between all-taxa and observed-mask ascertainment at fitted parameters; no LRT/model ranking across differently conditioned data, no independent-event counts or final sequence validity claim.",
+  "pins": {
+    "metadata/stable_indel_posterior_audit_launch_20260927.json": "44acbff482dd5c6e1fbc68214f847ea92273b29a9ed22213e8c4f865ebc50285",
+    "results/ancestral/indel-candidate-node-mapping-20260927-v1/candidate_nodes.tsv": "8d55744d3285698cb8bb5bf7cb42c6e4364c0732649bc63f850b5ba05f0871cf",
+    "metadata/stable_indel_refinement_plan_20260927.json": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+    "scripts/compare_indel_ascertainment_posteriors.py": "52b42cf5492090db86003c9dfce4f635df274d7f99dc71f5a0b645ca3a580f01",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

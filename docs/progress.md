@@ -9306,3 +9306,18 @@ node analytic enumeration check precedes the full comparison. OneCPU,8GiB
 RAM,noGPU; planning0.5–12h plus producer wait and1GiB output. Numerical
 verification, optimization sensitivity and final sequence assembly remain
 pending; expected dimensions are not completed-output counts.
+
+### 2026-09-27: full ascertainment sensitivity comparison queued
+
+Queued all156 paired gap encodings behind the verified live full posterior
+auditor. Compare every coded character at each of three partition-matched
+candidate ancestors between all-taxa and observed-mask conditioning. Preserve
+continuous probability changes,MAP switches and opposing states supported
+at>=0.90, plus all three empty encodings. Source trees, matrices, node mappings
+and audit/output hashes must match before comparison.
+
+OneCPU,4GiB RAM,noGPU; planning0.1–2h plus producer wait,1GiB output.
+These are sensitivity comparisons among dependent characters, not counts of
+independent events or likelihood-ratio tests between differently conditioned
+datasets. Completion, resulting differences and final ancestral sequence
+compatibility remain pending.
