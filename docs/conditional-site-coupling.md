@@ -567,3 +567,17 @@ rate-model comparison, exposure integration, reviewed QR conditional models,
 copy-omission sensitivity and whole-marker uncertainty remain downstream.
 Fixed-topology posterior site rates do not establish causal sequence–structure
 coupling, physical displacement, absolute evolutionary rates or selection.
+
+### Recovered AlphaFold Gamma export and audit completed
+
+All 125 markers / 500 Gamma4 fits / 190,116 site-rate rows are now exported
+and passed the full output audit. An additional independent table readback
+matched every exported rate, modal category and categorized rate to native
+`.rate` records, with exact full-grid equality. All native fit artifacts,
+audit artifacts, configuration and plan pins were checked. Completion evidence
+is `metadata/recovered_afdb_gamma_site_rates_completed_20260926.json`.
+
+Warnings are retained for 495 of 500 fits; successful auditing does not establish
+model or optimization adequacy. Posterior rates were not independently
+reestimated. FreeRate fitting has started automatically, while model comparison,
+exposure integration and coupling remain downstream.

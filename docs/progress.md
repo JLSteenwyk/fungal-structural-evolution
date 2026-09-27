@@ -5541,3 +5541,13 @@ per model), four CPU workers and a 16 GiB memory limit. This advances the
 expanded sequence–structure coupling workflow independently of ongoing branch
 resampling. No rate-export or coupling completion is claimed. See
 [execution details](conditional-site-coupling.md#recovered-alphafold-collection-site-rate-exports-launched-september-26).
+
+### September 26: recovered AlphaFold Gamma site rates verified
+
+Completed all 500 Gamma4 fits across 125 markers and passed the output audit.
+Independent readback verified all 190,116 rate-table rows against native files,
+including exact marker/model/site scope, values and categories; source and
+artifact hashes passed. Warnings remain for 495 fits and are not silently
+excluded. FreeRate fitting is now live. No optimization adequacy or coupling
+conclusion follows from export completion. See
+[Gamma checkpoint](conditional-site-coupling.md#recovered-alphafold-gamma-export-and-audit-completed).

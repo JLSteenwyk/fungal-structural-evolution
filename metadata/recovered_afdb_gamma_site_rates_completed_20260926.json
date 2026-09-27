@@ -1,0 +1,40 @@
+{
+  "status": "complete_recovered_afdb_gamma_export_and_output_audit",
+  "producer_receipt": {
+    "status": "complete_paired_site_rate_exports",
+    "config_sha256": "24e7b6d2ac4f8e3d810ba742381bff6cee6a68e10a68a727ac42cde22df2c3a9",
+    "markers": 125,
+    "fits": 500,
+    "site_rate_rows": 190116,
+    "interpretation": "Existing AA LG+F+G4 and three 3Di G4 specifications, refitted on fixed original AA topologies with original paired masks. Branch lengths and model parameters reestimated; not an exact replay of previous parameter values. Empirical-Bayes posterior mean site-rate multipliers are conditional on these models and trees, not rates/year, physical displacement, selection or calibrated uncertainty. Model adequacy and Gamma-versus-other heterogeneity sensitivity remain pending."
+  },
+  "audit_receipt": {
+    "status": "passed_full_site_rate_output_audit",
+    "rate_receipt_sha256": "1fdc5301166f3cd47bb9cdd0e0b0dc8db88098ed4bc8e8bcee8e90f547fd85ef",
+    "script_sha256": "183e72ccf9dce879f376c40492e8732c30716c9f5e3482bbd2dd47779e031e27",
+    "markers": 125,
+    "fits": 500,
+    "site_rate_rows": 190116,
+    "fits_with_warnings": 495,
+    "scope": "All fit provenance, model/topology identities, rate grids, four-category rate/weight bounds and site-likelihood sums checked at exported precision. Posterior site rates themselves were not independently recomputed; these are conditional empirical-Bayes estimates, not calibrated confidence or selection tests.",
+    "artifacts": {
+      "warnings.tsv": "fb63c84985b22f83c71e1b7a4349e3d8372724963cf23c24febd0bbd229f42ba",
+      "site_rates.tsv": "420c60a0943c0340bb7ace4bd33c44874a20d399237b4b3be8ca7a1e590fbffb",
+      "fit_summary.tsv": "fcb2b85d47d36c33475131e0b2543c3e4a2716e52de4c8b957ca92351e923eef"
+    }
+  },
+  "independent_readback": {
+    "status": "passed_full_site_rate_table_native_readback",
+    "markers": 125,
+    "fits": 500,
+    "site_rate_rows": 190116,
+    "verification": "Every audited site-rate value/category matched to native .rate rows with exact full-grid equality; all fit receipts/artifacts, audit artifacts, configuration and plan pins checked. Numerical likelihood/model/topology validation remains documented by the full output audit. Posterior rates were not independently reestimated."
+  },
+  "source_sha256": {
+    "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1/receipt.json": "1fdc5301166f3cd47bb9cdd0e0b0dc8db88098ed4bc8e8bcee8e90f547fd85ef",
+    "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1/config.json": "24e7b6d2ac4f8e3d810ba742381bff6cee6a68e10a68a727ac42cde22df2c3a9",
+    "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1/receipt.json": "e9a8e9993293a2c825159826753acb0d9e5b2bce781116057455b0b5a09daba3",
+    "metadata/recovered_afdb_site_rate_plan_20260926.json": "bc844e6cc01bf5b0a7aba2c7f2603e284568fd7e07ff03d92e30b8ad333e2835"
+  },
+  "limits": "495 fits retain warnings. Successful export/audit does not establish optimization adequacy, calibrated uncertainty, selection or coupling. FreeRate and downstream model/exposure/coupling stages remain incomplete."
+}
