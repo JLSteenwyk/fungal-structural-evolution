@@ -176,3 +176,29 @@ prior full readback, protein-sequence hashes and output hashes are recorded.
 Closure: `metadata/ancestral_case_domain_context_completed_20260927.json`.
 These results motivate domain-aware alignment assessment before ancestral
 reconstruction, alongside the ongoing two-method full-sequence comparison.
+
+## Domain-specific sequence inputs completed
+
+Prepared 26 FASTAs: all 13 cases under both Pfam alignment-span and envelope
+boundaries. The 858 proteins with exactly one retained focal hit contribute
+1,716 domain records and 318,670 residues across the two definitions. Both focal
+duplicates are present in every set. All 46 proteins with partial focal HMM
+coverage remain included and flagged, and identical sequences are not collapsed.
+
+Every exported residue maps to the corresponding original protein position.
+Serialized coordinate readback reconstructed every domain string, and a separate
+check verified all FASTA identities, lengths and sequence hashes. The complete
+2,050-row protein/boundary disposition grid includes the 167 proteins without a
+retained focal hit under each boundary. No multiple-hit ambiguity occurred in
+this input set; the script would retain that disposition without silently
+choosing a domain copy.
+
+These are domain-sensitivity inputs. They are not a claim that missing annotations
+represent true losses, nor a replacement for whole-protein context or ancestral
+indel uncertainty. Domain alignment, gene-tree context after restricting tips,
+and ancestral reconstruction eligibility remain pending.
+
+Reproduce: `python scripts/prepare_ancestral_domain_sequences.py`. Artifacts:
+`results/ancestral/case-domain-sequences-20260927-v1/`, including full source
+coordinates and checksums. Closure:
+`metadata/ancestral_domain_sequences_completed_20260927.json`.

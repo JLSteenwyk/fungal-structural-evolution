@@ -8787,3 +8787,11 @@ focal Pfam hit and 46 have partial focal HMM coverage. Two focal duplicate pairs
 have different ordered annotations. All records remain retained; these are
 diagnostic annotation differences, not inferred domain losses or ASR eligibility.
 See `docs/ancestral-case-inputs.md` and the completed domain-context receipt.
+
+### 2026-09-27: domain-specific ancestral candidate inputs completed
+
+Prepared 26 domain FASTAs for all 13 cases under both Pfam boundary definitions.
+All 858 single-hit proteins retained, including partial HMM hits; all 167 no-hit
+proteins explicitly recorded. Full residue-coordinate readback covers 318,670
+residues. Both focal duplicates are present in every set. Domain alignments and
+ancestral inference remain pending; whole-protein alignments continue running.

@@ -1,0 +1,13 @@
+{
+  "status": "complete_case_domain_sequence_inputs_with_residue_readback",
+  "source_receipt_path": "results/ancestral/case-domain-sequences-20260927-v1/receipt.json",
+  "source_receipt_sha256": "72ab21453bd996303d1559a94527f30f9a6d6a71de8c83738fcf128c4bef7c21",
+  "families": 13,
+  "input_fastas": 26,
+  "proteins_with_single_target_hit": 858,
+  "proteins_without_retained_target_hit": 167,
+  "protein_boundary_dispositions": 2050,
+  "domain_residue_records": 318670,
+  "scope": "All 13 cases and both Pfam alignment/envelope boundaries. All single hits including partial HMM matches retained, no deduplication or residue replacement. Every excluded/no-hit protein explicit. Coordinates checked against original proteins. Inputs for domain sensitivity only, not domain gain/loss, homology certainty or ancestral inference.",
+  "export_readback": "Complete expected 1025-protein by two-boundary grid and every FASTA ID, length and sequence hash verified separately; producer readback checked every residue against original protein coordinates."
+}
