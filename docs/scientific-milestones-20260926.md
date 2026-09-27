@@ -62,6 +62,24 @@ full intended output scope and relevant artifact/numeric checks must pass.
 Retain failed/unestimable comparisons and denominator changes in downstream
 analyses; do not silently shrink the scientific scope to successful cases.
 
+## Additional September 27 evidence
+
+- Full joint-covariate support is verified for all 28,808 unique comparative
+  inputs and 82,944 settings, including explicit nonnegative certificates for
+  24 numerical edge cases. Conditional model fitting and inferential validation
+  remain pending. See [joint support](joint-covariate-support-20260927.md).
+- Exact marker/column checks found no cross-predictor overlap at the three
+  currently mapped focal ecological taxa. Taxon-level coverage in both sources
+  did not imply comparable marker membership. See [ecological edge coverage](ecology-optimal-edge-states-20260927.md).
+- Eight taxa now have separately reviewed decay classifications and fully checked
+  structural coverage. The primary two-tree mapping requires two undirected
+  changes but no particular edge; uncertain coding changes localization. The
+  full bootstrap mapping and independent check are running/queued. See
+  [decay uncertainty](wood-decay-phylogenetic-diagnostic-20260927.md).
+- A [predictor geometry figure](figures/functional_predictor_geometry_20260927.pdf)
+  retains all 600 local comparisons at 150 shared functional positions. It is
+  a prediction-source control, not a map of evolutionary changes.
+
 ## Cross-cutting requirements
 
 Uneven model coverage is substantial: only about 23.4% of the examined terminal

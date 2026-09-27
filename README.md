@@ -42,6 +42,21 @@ fits. Production is running; numerical output checks, full analytic convergence
 assessment, unresolved-fit refinement and inferential calibration remain pending.
 Partial fits are not final adjusted effects.
 
+The completed [joint-covariate support check](docs/joint-covariate-support-20260927.md)
+now covers all 28,808 unique inputs and 82,944 original settings. Twenty-four
+tiny negative-weight cases passed a separately recorded nonnegative construction;
+original solver flags remain preserved. Numerical overlap does not establish
+model adequacy or calibrated uncertainty. A complete reporting export is queued
+after analytic validation, retaining all 414,720 setting/tree dispositions.
+
+[Ecological edge/coverage integration](docs/ecology-optimal-edge-states-20260927.md)
+finds no matched predictor marker coverage for the three currently mapped focal
+taxa. The separate [wood-decay diagnostic](docs/wood-decay-phylogenetic-diagnostic-20260927.md)
+retains eight reviewed taxa and uncertain classes; minimum-change locations
+depend on coding. Mapping across all 2,000 bootstrap trees is running, followed
+by full independent verification. These diagnostics do not establish replicated
+origins or ecological structural effects.
+
 Coverage sources and exact limitations:
 [completed prediction inventory](docs/completed-prediction-inventory-20260922.md),
 [remaining marker gaps](docs/remaining-marker-model-gaps-20260922.md),
