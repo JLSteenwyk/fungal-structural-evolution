@@ -7923,3 +7923,11 @@ all artifacts were rehashed. Averaging after the transformation matters: 1,610,7
 configuration occurrences differ from the quadratic shortcut, maximum 0.11606.
 The full quadratic/cubic design diagnostic (165,888 rows) is now running on one CPU;
 no nonlinear effects have been fitted. See [details](nonlinear-identity-contrasts-20260927.md).
+
+### September 27: independent nonlinear design verification queued
+
+The full quadratic/cubic design readback now waits on the exact live producer
+process and successful terminal service. Independent SQL moments and eigenvalues
+will check all 165,888 design rows; polynomial and redundant-column fixtures passed.
+The producer remains active. Both stages use one CPU each, serialized by the gate.
+No nonlinear fit or biological conclusion is claimed.

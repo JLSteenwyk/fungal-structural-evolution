@@ -47,3 +47,12 @@ by SVD. Constant, redundant-column and full-rank fixtures passed. The producer
 receipt will still require independent source/output readback before acceptance.
 Resources: one CPU, 12 GiB memory, no swap, 1 GiB output allowance; estimated
 0.25–4 hours. Joint nonlinear support and fitting remain pending.
+
+The independent readback is queued as
+`fungal-nonlinear-matched-design-readback-20260927.service`, using one CPU and
+12 GiB, with a 0.25–4 hour estimate after producer completion. It checks the exact
+producer identity and terminal success before rebuilding all 165,888 rows using
+SQL joins, covariance moments and eigenvalues. Full counts, reuse maxima, ranges,
+means, spectra, ranks, conditions and marginal support are compared. Polynomial
+and redundant-column numerical fixtures passed. Near-threshold spectral
+disagreement will stop verification; it will not silently approve a design.

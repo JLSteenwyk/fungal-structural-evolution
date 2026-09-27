@@ -1,0 +1,34 @@
+{
+  "unit": "fungal-nonlinear-matched-design-readback-20260927.service",
+  "pid": 289648,
+  "create_time": 1790530537.71,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_nonlinear_matched_designs.py",
+    "--plan",
+    "metadata/nonlinear_matched_design_plan_20260927.json",
+    "--launch",
+    "metadata/nonlinear_matched_design_launch_20260927.json",
+    "--output",
+    "metadata/nonlinear_matched_design_readback_20260927.json"
+  ],
+  "checked_at": "2026-09-27T17:36:04.896624+00:00",
+  "pins": {
+    "scripts/readback_nonlinear_matched_designs.py": "82d306ea33e3d33d747603d61f2f80a1851363772031e64c1b540f75eae9fb51",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/nonlinear_matched_design_plan_20260927.json": "2ef8ed67148a8f854ab1bf430561aaef1cc872011dd9fd0e4ac285f799d4b7e0",
+    "metadata/nonlinear_matched_design_launch_20260927.json": "cab8cbcf25a545b6a2814df883f1ca5fc8febbd3b52b269930fc945ec97ce7df"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.25,
+      4
+    ]
+  },
+  "numerical_fixtures": "passed_polynomial_full_rank_and_duplicate_column_SQL_covariance_checks",
+  "scope": "Waits for exact producer process and successful terminal unit; all 165888 rows, not a sample. No nonlinear model fitting."
+}
