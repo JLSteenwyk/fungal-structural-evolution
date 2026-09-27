@@ -1,0 +1,14 @@
+{
+  "service": "fungal-full-codon-group-realignment-readback-20260927.service",
+  "pid": 2371452,
+  "created": 1790506350.37,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_codon_group_realignments.py",
+    "--plan",
+    "metadata/full_codon_group_realignments_readback_plan_20260927.json"
+  ],
+  "plan_sha256": "38e920020e1da9ae937666fe2e122c2f2c86226236924a5ccacfe7c50e540c21",
+  "fixture_status": "passed_independent_alignment_preservation_and_seven_corruption_cases",
+  "status": "verified_live_readback_controller"
+}

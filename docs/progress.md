@@ -6855,3 +6855,17 @@ production and independent codon/correspondence checks remain pending. See
 The previous turn verified full source inputs; this turn advances alignment
 sensitivity across the complete prepared set under aim 7. No selection-ready
 cases are claimed. All eight aims remain open; GPU prediction stays paused.
+
+## September 27 independent full-group realignment audit queued
+
+Implemented a separate FASTA parser and complete case/sequence/hash audit for
+all 1,712 realignments, including reported MAFFT strategy provenance. Valid
+alignment preservation and seven corruption fixtures passed. Queued the
+one-CPU/4-GiB controller behind the verified live alignment process; no duplicate
+run or modification of pinned producer code was needed. See
+[audit](coding-sequence-workflow.md#full-realignment-readback-queued).
+
+The previous turn launched all-group realignment; this turn implements, tests
+and queues full independent verification. Codon projection and sensitivity
+analysis remain downstream. All eight aims remain open; GPU prediction stays
+paused.

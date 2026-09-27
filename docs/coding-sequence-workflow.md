@@ -1065,3 +1065,31 @@ alignments; production completion, independent readback, codon projection and
 correspondence/coverage sensitivity remain pending. A change after realignment
 can reflect taxon sampling, the auto-selected algorithm or site retention; it
 is not evidence that either alignment is correct or a selection test is valid.
+
+### Full realignment readback queued
+
+Added an independent manual-FASTA audit for all 1,712 groups. It checks the
+complete case universe, every source taxon/order and ungapped sequence,
+rectangularity and all-gap columns, alignment dimensions, recorded code/copy
+fields and commands, and all output/log hashes. The MAFFT strategy text is
+recorded per case to preserve auto-selected algorithm provenance. No producer
+FASTA or validation helper is imported. Valid sequence preservation and seven
+malformed/corrupted cases passed fixtures.
+
+The queued verifier checks the exact producer PID, creation time and command,
+then requires its final source-bound receipt. Its allowance is one CPU, 4 GiB
+RAM, no swap, 0.05 GiB output and 1–15 minutes after producer completion; systemd
+enforces the resource limits. Plan and live controller records are
+`metadata/full_codon_group_realignments_readback_{plan,launch}_20260927.json`.
+Outputs will be under
+`results/cds/full-group-protein-realignment-readback-20260927-v1`.
+
+```bash
+python scripts/check_full_codon_alignment_readback.py
+python scripts/readback_full_codon_group_realignments.py --plan metadata/full_codon_group_realignments_readback_plan_20260927.json
+```
+
+The raw alignment run and full readback remain pending. Codon projection,
+occupancy and correspondence comparisons require the completed audit; sequence
+preservation alone does not establish homologous alignment columns or selection
+eligibility.
