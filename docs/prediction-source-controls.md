@@ -385,3 +385,52 @@ python scripts/match_paired_source_model_context.py \
   --local results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1 \
   --output <fresh-output-directory>
 ```
+
+
+### Full-model confidence and partner-context sensitivity
+
+All 643 distinct matched model pairs were compared over their full native
+encoded sequences, retaining 12 joint confidence alternatives: feature-minimum
+pLDDT 0/70/90 crossed with maximum directional context PAE unfiltered/5/10/15.
+The existing `compare_states` implementation is reused with source hashes.
+Every pair receives a row at every threshold (7,716 rows); summaries require
+at least 50 and half of the full protein's residues retained. Pairs below this
+coverage remain explicit, and summary cohorts change across thresholds.
+
+| Joint feature confidence | Eligible model pairs | Residues | Pooled state disagreement | Median pair disagreement |
+| --- | ---: | ---: | ---: | ---: |
+| Valid features, no confidence cutoff | 643 | 204,619 | 25.40% | 23.77% |
+| pLDDT >=70, PAE <=10 | 545 | 130,790 | 14.81% | 14.53% |
+| pLDDT >=90, PAE <=10 | 119 | 22,881 | 11.42% | 11.64% |
+
+At pLDDT>=70/PAE<=10, partner identity differs at 24,869 retained residues.
+State disagreement is 12,016/24,869 (48.32%) for changed partners, versus
+7,351/105,921 (6.94%) for unchanged partners. This is an association: selection
+of another spatial neighbor and altered local geometry can accompany one
+another, and neither is isolated as a causal explanation here. Changing
+threshold cohorts also prevent interpreting the table as a controlled effect
+of increasing confidence. The full-protein scope and coverage requirements
+make these denominators different from the earlier projected marker comparison.
+
+All 7,716 rows were independently reconstructed using per-residue scalar
+selection, including confidence masks, coverage disposition, state/partner counts
+and fractions. All 12 summary rows and the pLDDT70/PAE10 confusion table matched;
+source/artifact hashes were rechecked. This is a readback from the same native
+encodings, not a second extraction of raw 3Di geometry or an experimental accuracy
+benchmark. No inference settings were changed and no structures were predicted.
+
+Output: `results/phylogeny/overlap-model-feature-comparison-20260926-v1/`.
+Evidence: `metadata/overlap_model_feature_comparison_completed_20260926.json`.
+Reproduce with a fresh output path:
+
+```bash
+python scripts/compare_overlap_model_features.py \
+  --context results/phylogeny/paired-source-model-context-20260926-v1 \
+  --context-readback metadata/paired_source_model_context_completed_20260926.json \
+  --output <fresh-output-directory>
+```
+
+Source acquisition and cohort overlap remain highly selective. Neither these
+model pairs nor their residues are independent samples of fungal evolutionary
+change. Full prediction-configuration stratification and connection to leading
+branch/site results remain unfinished.

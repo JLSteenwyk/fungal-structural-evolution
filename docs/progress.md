@@ -5479,3 +5479,14 @@ The 14.792% structural-state disagreement therefore persists for these matched
 complete sequences. Inference settings, partner/context differences and confidence
 selection remain unresolved; this is not a calibrated error or evolutionary rate.
 See [model-context result](prediction-source-controls.md#complete-sequence-model-matching-completed).
+
+
+### September 26: matched-model feature confidence/context sensitivity completed
+
+All 643 distinct overlapping same-sequence model pairs were compared across
+12 joint confidence alternatives; independent scalar reconstruction passed all
+7,716 records and 12 summaries. At pLDDT70/PAE10, 545 pairs pass full-protein
+coverage criteria, with 14.81% pooled state disagreement. Disagreement is 48.32%
+with a changed spatial partner versus 6.94% with the same partner; this is
+association, not causation or experimental error calibration. Threshold cohorts
+change substantially. See [full-model controls](prediction-source-controls.md#full-model-confidence-and-partner-context-sensitivity).
