@@ -9345,3 +9345,21 @@ No marginal projection, independent gap sampling or final ancestral FASTA
 was performed. A justified joint/compatibility treatment and its uncertainty
 must precede sequence assembly. Reproducible scripts:
 `build_indel_compatibility_constraints.py`, `check_indel_posterior_compatibility.py`.
+
+### 2026-09-27: whole-protein audit and ascertainment comparison completed
+
+Whole-protein production,independent posterior audit and indel ascertainment
+comparison all terminated inactive/success/exit0; full receipt artifacts
+checked. All4,354,380 whole-protein amino-acid probabilities now independently
+verified. Across38,871 candidate-node/gap comparisons,596 MAP states switch
+between ascertainment assumptions; zero opposing states both have>=0.90
+support. Maximum probability shift0.786381. These dependent comparisons are
+not biological event counts or evidence selecting an ascertainment model.
+
+Implemented an explicit product-Bernoulli working distribution conditioned
+on compatible exact gap runs. Exact dynamic programming handles partition
+mass,changed marginals,MAP configurations and backward draws, including
+deterministic/infeasible inputs. Exhaustive84-case checks pass. This is not a
+fitted joint indel evolutionary model; no production marginals were replaced.
+Full application,distortion assessment and joint-model qualification remain
+pending. Assumptions: `docs/compatible-gap-working-distribution.md`.

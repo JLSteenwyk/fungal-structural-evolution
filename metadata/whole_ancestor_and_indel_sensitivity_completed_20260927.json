@@ -1,0 +1,74 @@
+{
+  "status": "whole_ancestor_production_audit_and_indel_sensitivity_terminal_success",
+  "stages": [
+    {
+      "receipt_path": "results/ancestral/whole-protein-ancestors-20260927-v1/receipt.json",
+      "receipt_sha256": "25fe6e7439fb07d1116f0f3fb3614b64f7b9bf892d04830e9598e2cc531292e1",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "all_78_whole_protein_marginals_produced_pending_independent_audit",
+        "fits": 78,
+        "nodes": 234,
+        "node_sites": 217719,
+        "probabilities": 4354380,
+        "plan_sha256": "d04f097d39b58068eb9c4ac0c0eb4de01a4a18f1390e4edc4418566a3542ad24",
+        "audit_receipt_sha256": "1b89f6caa5093b9c80976d1d9f676a5d6f6b4a266b5b74797d3d1f05cb3c4ac1",
+        "maximum_likelihood_difference": 3.464706242084503e-05,
+        "scope": "All78 whole-protein LG/WAG/JTT fits across13 families and2 aligners; all20 amino-acid probabilities at three topology-matched candidate vertices, fourth degree-two root unidentifiable. Preserve all full proteins, gaps/X treated as unknown evidence and never deleted from original alignments; audited version-specific empirical frequencies retained. Conditional on fitted parameters, not indel histories or final ancestral sequences. Whole-protein optimization sensitivity, independent posterior replay and gap/AA compatibility remain pending."
+      }
+    },
+    {
+      "receipt_path": "results/ancestral/whole-protein-posterior-audit-20260927-v1/receipt.json",
+      "receipt_sha256": "a8a6125e0c079d77dcec8177f8ce3623537fbc6b8a8b430ad9a1aa927148782a",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "passed_all_78_whole_protein_posteriors",
+        "fits": 78,
+        "nodes": 234,
+        "sites": 217719,
+        "probabilities": 4354380,
+        "maximum_probability_difference": 1.6719459150493776e-11,
+        "maximum_site_log_likelihood_difference": 3.6545344528349233e-10,
+        "plan_sha256": "5cb53e14bb9e9fe7a09eaecefa616b7320ef7b8e873f76c9f1b37d5f403b69ea",
+        "source_receipt_sha256": "25fe6e7439fb07d1116f0f3fb3614b64f7b9bf892d04830e9598e2cc531292e1",
+        "analytic_two_internal_node_enumeration": "passed",
+        "scope": "Separate fixed-root inside/outside algorithm, full columns and direct matrix exponential. Shared empirical matrices, saved parameters, alignment and tree inputs. Tests numerical implementation, not optimization convergence, model adequacy, indels or historical node support."
+      }
+    },
+    {
+      "receipt_path": "results/ancestral/indel-ascertainment-comparison-20260927-v1/receipt.json",
+      "receipt_sha256": "fa8eca8aec9400ef46a84f0314c9314256661b81f8603abfaa481f9282abb99f",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "summary": {
+        "status": "complete_156_ascertainment_probability_comparisons",
+        "encodings": 156,
+        "node_characters": 38871,
+        "map_switches": 596,
+        "strong_conflicts": 0,
+        "maximum_probability_difference": 0.7863814227522774,
+        "plan_sha256": "610d19ff5cdf4566f4f6eda3a73f5d091cee3931a9544a9982f4031001b8cda9",
+        "audit_receipt_sha256": "e8bbe2dd9b2d8577c3462f05e299b15617105733f7aebda1142e25adbd37dedf",
+        "auditor_terminal_state": {
+          "MainPID": "0",
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "scope": "All156 paired encodings, three signature-matched candidate vertices, all characters. Three empty encodings retained. Changes between all-taxa and observed-mask ascertainment at fitted parameters; no LRT/model ranking across differently conditioned data, no independent-event counts or final sequence validity claim."
+      }
+    }
+  ],
+  "scope": "Numerical stages complete; full project, joint gap modeling, parameter uncertainty and final ancestor ensembles remain incomplete."
+}
