@@ -6409,3 +6409,20 @@ The previous turn started the full architecture diagnostic. This turn adds its
 independent full-data verification while coordinate validation continues. No
 matched effect or biological event inference is claimed. The original eight-aim
 objective remains active and GPU prediction remains paused.
+
+## September 27 architecture support verified and background inputs queued
+
+Independent reconstruction passed every one of the 2,621,676 architecture-support
+rows. Archived the full readback and promoted the previously provisional support
+counts to verified availability results, retaining all qualifications about
+unmatched targets and nonindependent guide alternatives.
+
+Prepared and launched a gated full/pLDDT70 input-materialization stage for all
+148,104 additional models. It requires the complete coordinate readback and
+shard proofs, preserves original residue mapping and retains rejected/short
+inputs explicitly. Complete handoff/corruption fixtures and four native
+rigid-transform checks passed. No production alignment or prediction was
+started. See [verification and input workflow](terminal-sister-backgrounds-20260927.md#architecture-support-verified-alignment-inputs-queued).
+The prior turn launched full architecture readback; this turn completes that
+milestone and advances the structural measurement pipeline. The full goal
+remains active and GPU prediction remains paused.

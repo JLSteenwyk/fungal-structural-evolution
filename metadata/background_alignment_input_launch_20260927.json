@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-alignment-inputs-20260927.service",
+  "pid": 2023804,
+  "created": 1790500548.27,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_background_inputs.py",
+    "--plan",
+    "metadata/background_alignment_input_plan_20260927.json"
+  ],
+  "plan": "metadata/background_alignment_input_plan_20260927.json",
+  "plan_sha256": "1b2a0f85aa3aa351faae26b341e01d636b6afbaa8dcc3db7ea09cdad1b893997",
+  "fixture_status": "passed_complete_handoff_six_dispositions_sparse_positions_hashes_changed_proof_and_four_native_transform_checks"
+}

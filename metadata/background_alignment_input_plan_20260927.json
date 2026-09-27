@@ -1,0 +1,57 @@
+{
+  "producer": {
+    "service": "fungal-background-coordinate-readback-20260927.service",
+    "pid": 952285,
+    "created": 1790499798.48,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_coordinates.py",
+      "--plan",
+      "metadata/background_coordinate_readback_plan_20260927.json"
+    ],
+    "plan": "metadata/background_coordinate_readback_plan_20260927.json",
+    "plan_sha256": "6495c50944390713d274d17ec6aef6c5db2f54ddcf173414ab4fa87e5e92e8ee",
+    "fixture_status": "passed_exact_raw_CIF_readback_six_export_corruptions_and_changed_raw_bytes"
+  },
+  "readback": "results/structural_comparisons/background-coordinate-readback-20260927-v1",
+  "readback_plan": "metadata/background_coordinate_readback_plan_20260927.json",
+  "coordinates": "results/structural_comparisons/background-coordinate-validation-20260927-v1",
+  "coordinate_plan": "metadata/background_coordinate_validation_plan_20260927.json",
+  "output": "results/structural_comparisons/background-alignment-inputs-20260927-v1",
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "metadata/background_measurement_readback_launch_20260927.json": "d1d2b86757293dbbcb34eb5655af499e843b7707b3876282f0bb0a1049d833d0",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "scripts/validate_background_coordinates.py": "4a563170021ad0b7a0b5c590f583de7c6e47e9c1563901bb6971e351cc71239e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/additional_models.jsonl": "8693d749ddcca553d9dafb0736b63e6a44ab25a7f2a0804e61cff67792517247",
+    "metadata/background_coordinate_validation_plan_20260927.json": "ccf7ef853b85595aac0a8c2d74a854581555eb8c612717db101063a06c50218d",
+    "metadata/background_coordinate_validation_launch_20260927.json": "6eb1d8fd123fe1de4b1ca5c52af64008ea051a76731b0bc23af27d1a2a4f7969",
+    "scripts/readback_background_coordinates.py": "4bcb762590d46d87147e8950bef3ba351d12a2a7aeeaa8b7c0dea8a886b8cb55",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "metadata/background_coordinate_readback_plan_20260927.json": "6495c50944390713d274d17ec6aef6c5db2f54ddcf173414ab4fa87e5e92e8ee",
+    "metadata/background_coordinate_readback_launch_20260927.json": "f2e82bac8fadad88feaafb134c25010e4d846000e003da3763e020208cc9cafd",
+    "scripts/materialize_background_inputs.py": "c1a3c72cd4532239b1cb487f8453be2f94fa46b28e9a07f5046e88afb9d63db9",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/check_background_materialization.py": "2f9631b90e2e8495063cd3aaa7e1b9e37982e39efe62aef965900933c3082706",
+    "scripts/check_duplication_alignment_inputs.py": "5dee250b495f50c2b96dee569824622588cba9d6b2bf4b91e51ff1e8aee6ccda"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "models": 148104,
+    "input_dispositions": 296208,
+    "basis": "Wait for full independent background coordinate readback; serialize both full and pLDDT70 masks with original residue positions and explicit short/rejected dispositions. 66.5 million residues implies at most about 10.8 GB PDB atom text before metadata/filesystem overhead. Existing CPU only; no predictions/alignments. Planning excludes dependency wait."
+  }
+}

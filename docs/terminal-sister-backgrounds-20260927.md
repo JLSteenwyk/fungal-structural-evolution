@@ -445,3 +445,39 @@ with one model unannotated and 42,543 with neither annotated. The full readback
 must pass before treating these counts as verified. These distinctions preserve
 architecture-changing and annotation-uncertain targets for separate analysis;
 this conserved-architecture subset cannot stand for the entire project.
+
+## Architecture support verified; alignment inputs queued
+
+The full independent architecture-support readback passed all 218,473 targets
+and 2,621,676 target/set/policy records. The previously provisional counts above
+are now verified, including 18,454 targets per guide with strict-set,
+alignment/E-value, factor-1.5 architecture-compatible support and 1,322 with
+focal-taxon representation. Evidence:
+[complete architecture-support readback](../metadata/architecture_matching_support_completed_readback_20260927.json).
+This does not establish final matches or extend inference to unsupported targets.
+
+`materialize_background_inputs.py` is queued behind the exact background
+coordinate-readback process. It requires a complete bound coordinate audit,
+validated model/shard identities, unchanged source and proof hashes, and the
+verified additional-model partition. All 148,104 additional models receive
+full and pLDDT≥70 dispositions (296,208 expected records). Original sequence
+positions are retained; rejected content and masks with fewer than three
+residues remain explicit. Existing primary/reference inputs for the other
+background models will be joined separately with their existing proofs.
+
+Serialization uses the existing pinned C-alpha writer. PDB coordinates are
+rounded to 0.001 Å, confidence to 0.01, with overflow and rounding checks.
+Masked comparisons normalize to retained length and must not be conflated with
+full-model scores. This stage does not apply PAE screening, infer structures,
+or run alignments. A fresh output directory prevents overwriting prior work.
+
+Plan: `metadata/background_alignment_input_plan_20260927.json`; output:
+`results/structural_comparisons/background-alignment-inputs-20260927-v1`.
+One CPU, 8 GiB RAM, no swap, 32 GiB output and a 100 GiB free-disk reserve are
+specified; 0.5–24 hours is an uncalibrated planning range excluding the wait.
+The residue count gives an upper estimate near 10.8 GB of PDB atom text before
+metadata and filesystem overhead. The complete synthetic handoff passed all
+six fixture dispositions, sparse residue mapping, written hashes and changed
+proof rejection. Four native rigid-transform alignments and full/noncontiguous
+mask serialization checks also passed. Full production input readback and
+background comparisons remain downstream.
