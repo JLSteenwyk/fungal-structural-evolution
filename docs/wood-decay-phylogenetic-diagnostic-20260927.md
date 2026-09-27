@@ -51,3 +51,34 @@ summary is `metadata/wood_decay_optimal_edges_summary_20260927.tsv`.
 Planning allowance: one CPU, 4 GiB RAM, 1–10 minutes per stage, no GPU.
 The [coverage and source review](ecology-source-review-20260927.md) retains the
 predictor imbalance and uncertain classifications needed to interpret this result.
+
+## Complete bootstrap mapping launched
+
+The same five coding scenarios are now running across all 2,000 saved bootstrap
+trees, yielding 10,000 tree/scenario combinations. Every edge's four conditional
+endpoint costs are retained in hashed compressed per-tree files. Per-split
+summaries distinguish presence from required, optional and excluded changes;
+absence from a tree is not treated as no change. The new scripts leave the
+existing mycorrhizal-state bootstrap outputs intact.
+
+Before queuing the full readback, the independent network-flow kernel checked
+all 20,980 endpoint costs of one complete native bootstrap tree across the five
+scenarios in 17.16 seconds. This validates the new scenario wiring, not the full
+ensemble. The queued checker requires terminal producer success and then
+recomputes every cost across all 2,000 trees; full verification is pending.
+Expected full scope is 10,490,000 edge rows and 41,960,000 constrained costs.
+
+Producer: `scripts/map_wood_decay_bootstrap_edges.py`, plan/launch
+`metadata/wood_decay_bootstrap_{plan,launch}_20260927.json`.
+Readback: `scripts/readback_wood_decay_bootstrap_edges.py` with independent kernel
+`scripts/wood_decay_bootstrap_flow_readback.py`, plan/launch
+`metadata/wood_decay_bootstrap_readback_{plan,launch}_20260927.json`.
+Native check: `metadata/wood_decay_bootstrap_native_checks_20260927.json`.
+Outputs: `results/ecology/wood-decay-bootstrap-{edges,readback}-20260927-v1`.
+
+The producer has one CPU, 8 GiB RAM, no swap, a 5 GiB output allowance and a
+5–120 minute planning range. Readback has four CPUs, 8 GiB RAM, no swap, a 5 GiB
+output allowance and a 1–24 hour planning range after production. These are
+resource allowances, not completion forecasts. GPU inference remains paused.
+Bootstrap frequencies remain conditional topology sensitivity, not posterior
+transition probabilities, independent origin counts or structural-effect tests.
