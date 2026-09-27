@@ -8411,3 +8411,13 @@ retain eligibility for all six screens and all 32 configurations. At 50 residues
 and 70% coverage, 3,534 events per guide have at least one passing three-model
 reference. This is descriptive eligibility, not evidence of structural asymmetry.
 See [results and denominators](whole-protein-common-core-comparisons-20260927.md).
+
+### 2026-09-27: signed whole-protein contrasts across settings and references
+
+Completed full triad ranges and 209,454 event/screen sensitivity rows, retaining
+all tied references and shared-model exclusions. At n50/c70, 3,530 events per
+guide have all references eligible: 2,423 retain one structural-contrast sign
+across all settings/references and 1,107 are sign sensitive. This numerical
+robustness is descriptive, not biological significance. A first export checker
+failed on numeric/string parsing; the corrected v2 full run passed numeric and
+blank-preservation checks. See [reference sensitivity](whole-protein-reference-sensitivity-20260927.md).

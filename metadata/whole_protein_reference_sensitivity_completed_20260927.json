@@ -1,0 +1,58 @@
+{
+  "status": "complete_descriptive_whole_protein_reference_sensitivity",
+  "source_hashes": {
+    "results/structural_comparisons/whole-protein-common-fit-event-links-20260927-v1/receipt.json": "9be84238b32869ca1535508901315c2a0aab1bc5591405489bcdbe97ff08e0a9",
+    "results/structural_comparisons/whole-protein-common-core-fits-20260927-v1/receipt.json": "8965c0c83adccc6175753ecd7200c32243410ab3c2078a433f8ce0ea708ac281"
+  },
+  "script_sha256": "58d2ec527b12c69e75d75cc6d1d4b365c3ff1e2ab781dc939fd108478b11036d",
+  "numeric_zero_tolerance": 1e-08,
+  "triads": 17619,
+  "event_reference_links": 36944,
+  "event_screen_rows": 209454,
+  "artifacts": {
+    "triad_ranges.tsv": "9a9dd176265efac78303431c3ba2ffd1b04e1ba8803b8d95af485f5f3a8e5bea",
+    "event_reference_ranges.tsv": "bb988b2842c03ce8d3c52bc1fad43cb0ef8e75539d30f2def933bae175b0d45e",
+    "event_sensitivity.tsv": "e1ad20d22ac067c4a11e1a379f5fc7636f891fc5332abd7216113342fdd83c09",
+    "summary.tsv": "585ed53ad19891e29956c57a198cca71940682b386954188c5fdbcf41d1cda14"
+  },
+  "scope": "Ranges cover all 32 configurations within eligible references. All reference links retained; all_references_eligible separates partial coverage. Structural contrast is RMSD(A,R)-RMSD(B,R); sequence contrast is identity(B,R)-identity(A,R). Numerical sign robustness is descriptive, not biological significance, prediction uncertainty, an evolutionary rate or evidence of selection. Ranges are not confidence intervals.",
+  "receipt_path": "results/structural_comparisons/whole-protein-reference-sensitivity-20260927-v2/receipt.json",
+  "receipt_sha256": "00b9ea4f59bf9b4135f4e93ba0c54859136c30f84f1ff304c906b7a939f8f000",
+  "numerical_sign_boundary_cases": [
+    {
+      "minimum": 2e-08,
+      "maximum": 1,
+      "expected": "a_farther"
+    },
+    {
+      "minimum": -1,
+      "maximum": -2e-08,
+      "expected": "b_farther"
+    },
+    {
+      "minimum": -1e-08,
+      "maximum": 1e-08,
+      "expected": "numerically_zero"
+    },
+    {
+      "minimum": -1,
+      "maximum": 1,
+      "expected": "setting_or_reference_sensitive"
+    },
+    {
+      "minimum": 0,
+      "maximum": 1,
+      "expected": "setting_or_reference_sensitive"
+    },
+    {
+      "minimum": -1,
+      "maximum": 0,
+      "expected": "setting_or_reference_sensitive"
+    }
+  ],
+  "previous_attempt": {
+    "output": "results/structural_comparisons/whole-protein-reference-sensitivity-20260927-v1",
+    "status": "failed_serialized_numeric_string_type_comparison_no_receipt",
+    "script_sha256": "9f2dc998e56cebb828b06cf5d45035cde08c64301b5acb0bf86dba8f9b4c3fd8"
+  }
+}
