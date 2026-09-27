@@ -368,3 +368,47 @@ Script: `scripts/run_ancestral_domain_model_fits.py`. Frozen plan and exact
 launch identity: `metadata/ancestral_domain_model_fit_plan_20260927.json` and
 `metadata/ancestral_domain_model_fit_launch_20260927.json`. No ancestral
 sequences, ancestral structures or indel states have been inferred.
+
+## All 156 model fits and report/checkpoint readback completed
+
+The producer terminated successfully. The full checker verified all 156 model
+labels, input/output tips and unrooted edge sets; checkpoint/report likelihood
+agreement; checkpoint/tree branch lengths; empirical frequencies; gamma category
+means; and AIC/BIC arithmetic. Model parameters and all flagged diagnostic lines
+are retained under `results/ancestral/case-domain-model-readback-20260927-v1/`.
+
+The frequency check initially assumed normalized nongap counts. Inspection of
+the [tagged IQ-TREE 3.0.1 source](https://github.com/iqtree/iqtree3/blob/v3.0.1/alignment/alignment.cpp)
+shows eight ambiguity-allocation iterations from uniform frequencies. Recreating
+that calculation, including gaps, matches all reported frequencies to rounding
+precision. The default `keep_zero_freq=true` is documented in the tagged
+[parameter initialization](https://github.com/iqtree/iqtree3/blob/v3.0.1/utils/tools.cpp).
+Fetched sources and hashes are retained locally; this is version-specific
+numerical agreement, not proof of the executable's full build provenance.
+Raw nongap count frequencies and reconstructed IQ-TREE frequencies are exported
+separately. The original fitted outputs were not changed.
+
+Twelve fits have unresolved input topologies, so parameter counts were checked
+using the actual retained branch count plus 19 frequencies and one gamma shape
+parameter, rather than assuming a fully bifurcating tree. All parameter-count
+and information-criterion checks passed.
+
+Important remaining diagnostics:
+
+- 135 fits report near-zero internal branches; 140 contain an edge below 1e-5.
+- 45 fits report sequences with more than 50% gaps/ambiguity.
+- 12 report rare amino-acid states.
+- Gamma shape estimates range from 0.0200255 to 1.89305, including estimates near
+  the lower search boundary that need further assessment.
+
+The diagnostic export also retains composition-test lines containing “failed,”
+including summaries reporting zero failures. Its 624 lines and 156 fits with
+matching diagnostic text must not be read as 156 failed fits. Composition-test
+failures and warning types require their own interpretation.
+
+This closes report/serialization checks only. It does not independently recompute
+the phylogenetic likelihood, establish convergence or model adequacy, or provide
+ancestral sequences. Likelihood replay, boundary/optimization sensitivity and
+node-specific information assessment remain before interpreting ancestors.
+Reproduce: `python scripts/audit_ancestral_domain_model_fits.py`. Closure:
+`metadata/ancestral_domain_model_reports_completed_20260927.json`.

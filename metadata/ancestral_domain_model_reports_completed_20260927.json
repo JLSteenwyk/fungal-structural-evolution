@@ -1,0 +1,29 @@
+{
+  "status": "complete_domain_model_report_and_checkpoint_readback",
+  "source_receipt_path": "results/ancestral/case-domain-model-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "8f220f22036e40e93b982c04ca5cf12b9555a327dffd0f038afb824cf130c361",
+  "fits": 156,
+  "diagnostic_lines": 624,
+  "fits_with_explicit_WARNING": 148,
+  "warning_fit_counts": {
+    "near_zero_internal_branch_warning": 135,
+    "high_gap_sequence_warning": 45,
+    "rare_state_warning": 12,
+    "thread_efficiency_warning": 12
+  },
+  "fits_with_edges_below_1e_5": 140,
+  "unresolved_topology_fits": 12,
+  "gamma_shape_range": [
+    0.02002546648,
+    1.89305177
+  ],
+  "scope": "All 156 model labels, tip sets, unrooted edge sets, checkpoint/report likelihood agreement, checkpoint/tree branch lengths, version-specific eight-iteration empirical frequencies, gamma-category means and AIC/BIC arithmetic checked. Warnings and short edges retained. Not an independent likelihood recomputation, convergence proof, model-adequacy test or ancestral reconstruction.",
+  "diagnostic_export_note": "warnings.tsv deliberately retains lines matching failed, including summaries reporting zero composition failures. The original fits_with_warning_lines count is a diagnostic-line count, not evidence every fit has an actual warning or failed.",
+  "frequency_source_files": {
+    "data/software_audits/iqtree-3.0.1/tools.h": "a9b6051e655a8ba61c4e909691b7c62e4c586d85fb344ef7abba22ca59665ae6",
+    "data/software_audits/iqtree-3.0.1/tools.cpp": "0c5ec730a3a6fa9b7bb69d35702d5eddd8a7cc04154b6e9cf34e445a58733974",
+    "data/software_audits/iqtree-3.0.1/substitution.cpp": "a5bec04c1b648817413173b0f4af4748996ef24f5ac918323dc3138511b6d807",
+    "data/software_audits/iqtree-3.0.1/alignment.h": "c5632e94e88174d784b26127026d41ecbd05b9795c3bf1a60f6d70cc46f15804",
+    "data/software_audits/iqtree-3.0.1/alignment.cpp": "bede370114744d607f2a46509d12347d93480ca5c99957bb63d8f40e507a75f0"
+  }
+}

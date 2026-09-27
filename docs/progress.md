@@ -8836,3 +8836,12 @@ topologies, refitting branch lengths. Two four-thread fits run concurrently,
 12 GiB service memory limit, no swap/GPU. Identical guide topologies are fitted
 once with both provenance links retained. Initial production checks passed;
 full parameter/likelihood audit and ancestral inference remain pending.
+
+### 2026-09-27: all 156 domain model reports and checkpoints checked
+
+All fixed-topology fits terminated successfully. Full report/checkpoint audit
+passed after reproducing IQ-TREE's version-specific frequency iteration and
+using actual branch counts for unresolved trees. Retained 135 near-zero internal
+branch warnings, 45 high-gap warnings and 12 rare-state warnings; likelihood
+recomputation, convergence/model adequacy and ancestral reconstruction remain
+open. Detailed limitations are in `docs/ancestral-case-inputs.md`.
