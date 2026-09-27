@@ -4937,3 +4937,35 @@ fitter with exact marker/status/count checks. Fresh plans and outputs preserve
 the failed original handoff. Both configuration pin checks passed; each job
 is capped at one CPU and 32 GiB RAM with no swap. Fits and marker-resampling
 remain pending. See [coupling workflow](conditional-site-coupling.md).
+
+
+### September 26: copy-omission coupling completed; full-cohort numerical review
+
+The 121-marker, 43,891-site omission analysis completed all 24 model fits,
+48,000 marker-bootstrap fits (zero singular fits), and 2,904 leave-one-marker-out
+fits. Receipt bindings, generated plan hashes and every output artifact hash
+were rechecked and archived in
+`metadata/completed_site_coupling_copy_omission_readback_20260926.json`. This
+readback verifies saved artifacts, not independent statistical adequacy.
+
+The 122-marker retained analysis stopped at its independent coefficient check
+for the empirical AF alphabet/Gamma/Miller/composition-adjusted specification.
+The saved 44,198 by 147 design has condition number about 405. Three independent
+SciPy least-squares drivers agree to approximately 1.2e-14, while the saved
+statsmodels coefficients differ by 1.60e-5. Isolated fresh statsmodels fits
+using both C- and Fortran-contiguous designs agree with least squares to
+approximately 1e-14. The discrepancy's cause remains unresolved; the
+production fitter and numerical tolerances have not been changed. Diagnostic
+data and logs are preserved under
+`results/recovery-20260926/coupling-numerical-review`. The full retained analysis
+and paired interpretation remain incomplete.
+
+A second full-workflow diagnostic failed earlier, at the AF alphabet/FreeRate/
+Tien/composition-adjusted model (maximum coefficient difference 1.50e-5).
+The original cached pseudoinverse reproduces the disagreement; fresh fits of
+the same unchanged design agree with independent least squares to 4.7e-15.
+Cached design and response exactly match their inputs. This localizes the
+discrepancy to pseudoinverse construction/use, without establishing a library
+or hardware cause. Evidence and artifact checksums are archived in
+`metadata/completed_site_coupling_numerical_review_20260926.json`. A diagnostic
+QR-factorization candidate is being evaluated with unchanged cross-checks.

@@ -1,0 +1,149 @@
+{
+  "status": "completed_omission_artifact_readback",
+  "controller_state": {
+    "status": "complete_coupling_and_marker_resampling",
+    "pid": 3156857,
+    "created": 1790466868.97,
+    "config_sha256": "3cb50b32ffd98fd0b8ae21fa91c8ab6d94b460678866cc2f1b63d6657a97bfa4",
+    "started_at": 1790466870.4216964,
+    "producer_receipt_sha256": "0c1f9d22d93a4cb0df8b9c8594a06e75b1fa986efd4db14f168b9063726633f6",
+    "fit_receipt_sha256": "6e1944a7c47b31455be592a1fb6908867208e749cf107b64f1746ee24d1769a9",
+    "resampling_receipt_sha256": "34064878babf0bb05b3f9040c349f9913ed5cd18a328ba5f68f12b553601dc47",
+    "resampling_status": "complete_conditional_marker_resampling",
+    "updated_at": 1790466969.3748994
+  },
+  "controller_state_sha256": "609e0280144a711608aceb0e3482d53d24c73e15051578efa27c9f223f264de0",
+  "config": "metadata/completed_site_coupling_copy-omission_plan_20260926.json",
+  "stages": [
+    {
+      "stage": "fit",
+      "receipt": "results/phylogeny/site-coupling-esmfold-all-copy-omission-20260926-v1/receipt.json",
+      "sha256": "6e1944a7c47b31455be592a1fb6908867208e749cf107b64f1746ee24d1769a9",
+      "receipt_content": {
+        "status": "complete_exploratory_conditional_site_coupling_fits",
+        "sites": 43891,
+        "markers": 121,
+        "fits": 24,
+        "focal_tests": 72,
+        "confidence_taxon_site_rows": 6758598,
+        "plan_sha256": "04f978adc0c6278cf36258c8a3f7047da6e6eb147cfb624d98abc536ed575115",
+        "source_frame_sha256": "f2847988874cfa33d2cbea18093c7999b055a3be630a00ab707558f60b4a7c43",
+        "source_accessibility_sha256": "49c5094d54b6343002c37abe5210c5b7fd372c12ffba62536ec4828eb95819ee",
+        "script_sha256": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+        "versions": {
+          "numpy": "2.2.6",
+          "pandas": "2.3.3",
+          "scipy": "1.15.3",
+          "statsmodels": "0.14.6"
+        },
+        "artifacts": {
+          "site_covariates.tsv": "5955d5e6696d80f9ec737a4a6e90b4798e76f193398b429a8fb43230adc21297",
+          "focal_coefficients.tsv": "979559e55951d12d4a5e98bda5f8fbf740b372afc28565e953c84b004a34d6ab",
+          "all_coefficients.tsv": "ad266fe247d9afb6b9d198b02df2e5233a554a694cb9935a4a6134a90ae832e8",
+          "fit_summary.tsv": "1f65ed696647ffd05cad72110b840e9018675e86c5ad8501b60bfeaa38d7c005"
+        },
+        "interpretation": "Exploratory conditional site association in the full completed ESMFold cohort. Marker intercepts and CR1 marker clusters do not fully account for cross-marker phylogenetic dependence; fixed estimated rates and topologies, extant RSA, missingness, prediction circularity and nonlocal structural-alphabet dependence remain limitations. Not causal exposure, physical movement, ecology or selection inference. Explicit copy-review policy: exclude_reviewed_markers. Interpret with the paired full-cohort/omission sensitivity; not confirmatory single-ortholog evidence.",
+        "marker_review_policy": {
+          "mode": "exclude_reviewed_markers",
+          "expected_flagged_markers": [
+            {
+              "marker": "4986044at2759",
+              "status": "requires_gene_copy_reconciliation_before_confirmatory_single_ortholog_analysis",
+              "sites": 307
+            }
+          ],
+          "reason": "Existing evidence of inconsistent TFIIB/BRF1 copy sampling; pair full-cohort exploratory retention with explicit omission sensitivity. Neither resolves gene-copy reconciliation."
+        },
+        "source_frame_sites": 44198,
+        "verification": "Full taxon/site confidence join and both RSA medians checked; every fit cross-checked by independent NumPy least squares and manually assembled finite-sample-corrected marker-cluster covariance. These numerical checks do not validate the statistical assumptions."
+      },
+      "verified_artifacts": {
+        "site_covariates.tsv": "5955d5e6696d80f9ec737a4a6e90b4798e76f193398b429a8fb43230adc21297",
+        "focal_coefficients.tsv": "979559e55951d12d4a5e98bda5f8fbf740b372afc28565e953c84b004a34d6ab",
+        "all_coefficients.tsv": "ad266fe247d9afb6b9d198b02df2e5233a554a694cb9935a4a6134a90ae832e8",
+        "fit_summary.tsv": "1f65ed696647ffd05cad72110b840e9018675e86c5ad8501b60bfeaa38d7c005"
+      }
+    },
+    {
+      "stage": "resampling",
+      "receipt": "results/phylogeny/site-coupling-resampling-esmfold-all-copy-omission-20260926-v1/receipt.json",
+      "sha256": "34064878babf0bb05b3f9040c349f9913ed5cd18a328ba5f68f12b553601dc47",
+      "receipt_content": {
+        "status": "complete_conditional_marker_resampling",
+        "models": 24,
+        "markers": 121,
+        "bootstrap_fits": 48000,
+        "singular_bootstrap_fits": 0,
+        "leave_one_marker_out_fits": 2904,
+        "contrasts": 120,
+        "plan_sha256": "b6f84465c8323d5a7fb13fa263808b518d46266cb1979c247ee627e76f545679",
+        "source_fit_receipt_sha256": "6e1944a7c47b31455be592a1fb6908867208e749cf107b64f1746ee24d1769a9",
+        "script_sha256": "9ac79200d600726322db41dafccd22573b8f3a28c20c621eec8e256a231a52bf",
+        "artifacts": {
+          "3di_llm__freerate__tien2013__coverage_confidence.npz": "82783da5ed580c09afcc4b59d251c2b752ce8daff7a24928fdbb0ea99b59a38b",
+          "3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "abc4eee97027c467da6d298af3b462bbac2a361e96d23f1c76664362b897189e",
+          "3di_af__gamma__miller1987__composition_adjusted.npz": "4f6d00e814c54256db2b85e4b35656d49f245f0f6953e5c72ff8fe6f009b8d13",
+          "marker_influence.tsv": "a845865c41f9e95d436994df4cc276abfa63369eda9fefa9f523acad0b641fe7",
+          "3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "4674e0676cf0a785a88e4f41a33dc65adf85643b7f31b7f302d0b73233571ed6",
+          "3di_llm__gamma__miller1987__coverage_confidence.npz": "03841eab3fe738bb3959fcebbaaa5f7e60188585e9c8daacdf83b414866117cb",
+          "3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "9951421768bbde2e971faaa29e5c1ed1babf5fbd61997282427a6db4a58f91a2",
+          "3di_llm__gamma__tien2013__coverage_confidence.npz": "4baf2476ea3f85e46885ff73ead36f2b2bbd91f257c1f32f47f23260dd086af3",
+          "3di_llm__gamma__miller1987__composition_adjusted.npz": "7807b1664eb45f1da74f24d2bda3cc8e324965d622a713a277317c05c3ac4b8b",
+          "3di_af__freerate__miller1987__coverage_confidence.npz": "4ef76556e7f5a5adccfbe1e0cc836d4dde7a4b1d8efa608d94049216a0dbe862",
+          "3di_llm__freerate__miller1987__coverage_confidence.npz": "cd926c91194b477102380d65975000e24fe7f4e012868f3899b8864a2599dd74",
+          "3di_af__freerate__tien2013__composition_adjusted.npz": "5a457fc08c7b983c3a52923a1e1a97598b0ceaace10bca859a346d72700d55af",
+          "3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "c7d5c7c23376a852e3b55a2ba34bf655f19b528b8e6222e6025523bab1338d2a",
+          "3di_af__gamma__tien2013__composition_adjusted.npz": "aad4e9432d3db070f0430a3a9aecf67eff7e30879504467552a58e1fa3457c9e",
+          "3di_af__freerate__miller1987__composition_adjusted.npz": "01e515a26de556be545e05b31660a07a18e2a84e51475c1fb3157de27908a94d",
+          "3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "b81b68fb317b7a6331c5a45fd1be4d1394b0ac8862d5b6be6f1ace12baa6b1bd",
+          "3di_llm__gamma__tien2013__composition_adjusted.npz": "fd14c7e27188c7f0ab1836c64a6229a71a571e9811807504b565fe6c08fd21aa",
+          "3di_af__gamma__tien2013__coverage_confidence.npz": "55359d95736e869576b95bdbf997ef8a720a6d28bc28c863190eb5a6773898f8",
+          "3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "0e7ed2988ac1d7c8ffa421b74f5ce95cae173751437e492a5345d043ad351cf9",
+          "3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "c95a68b3b827f67bbd82a1d03556c48dacd51b272be6c68ddf3372b80e8364c8",
+          "3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "1353b344e51da746af0af7ef428f10a97c3e4973f8881471c272591ef91bc0be",
+          "3di_llm__freerate__tien2013__composition_adjusted.npz": "70c1e6c61dea70e3c032cf3d231ba0c231c3a7d99f8b40fcd04e7ab394b2e24b",
+          "contrast_summary.tsv": "2478c61cb3ce364b4180522a2ca77e4fe20d7f7dbd41a49d065c8a3307848a56",
+          "numerical_checks.tsv": "1e44582a797e3b4ffe570699ac046e3cd8d1c8463fe87fe0d4e797abb5b6fed8",
+          "3di_af__gamma__miller1987__coverage_confidence.npz": "26168790f9d41787ef5d6e78cef24ad8ffae45407e4e8505358f945972429323",
+          "marker_resampling_counts.npz": "52bc5b6e82edfc1f482d135a57f29bc8c947a1c1bd0fdddf5b16f8338191fc3b",
+          "3di_llm__freerate__miller1987__composition_adjusted.npz": "197af281635d9aca2204b7e9a40d344a08fd2d28a50a916c3091e747501495c8",
+          "3di_af__freerate__tien2013__coverage_confidence.npz": "406beba386845cd9c0b2005660d467e1496eca9f705e4b4b5c26a15c3df19219"
+        },
+        "interpretation": "Sensitivity to marker sampling/influence conditional on fixed rates, gene trees and observed covariates. Does not propagate phylogenetic/rate estimation uncertainty or resolve cross-marker dependence, nonlocal alphabet artifacts, prediction circularity or causal exposure effects.",
+        "interval_interpretation": "Unadjusted percentile 95% marker-bootstrap intervals, not new multiplicity-adjusted significance tests. Singular draws retained explicitly.",
+        "verification": "All point coefficients match full marker-intercept fits. One deterministic omission and one deterministic resample per model independently match expanded-row least squares. Counts and every bootstrap solve retained, with singularity flags."
+      },
+      "verified_artifacts": {
+        "3di_llm__freerate__tien2013__coverage_confidence.npz": "82783da5ed580c09afcc4b59d251c2b752ce8daff7a24928fdbb0ea99b59a38b",
+        "3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "abc4eee97027c467da6d298af3b462bbac2a361e96d23f1c76664362b897189e",
+        "3di_af__gamma__miller1987__composition_adjusted.npz": "4f6d00e814c54256db2b85e4b35656d49f245f0f6953e5c72ff8fe6f009b8d13",
+        "marker_influence.tsv": "a845865c41f9e95d436994df4cc276abfa63369eda9fefa9f523acad0b641fe7",
+        "3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "4674e0676cf0a785a88e4f41a33dc65adf85643b7f31b7f302d0b73233571ed6",
+        "3di_llm__gamma__miller1987__coverage_confidence.npz": "03841eab3fe738bb3959fcebbaaa5f7e60188585e9c8daacdf83b414866117cb",
+        "3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "9951421768bbde2e971faaa29e5c1ed1babf5fbd61997282427a6db4a58f91a2",
+        "3di_llm__gamma__tien2013__coverage_confidence.npz": "4baf2476ea3f85e46885ff73ead36f2b2bbd91f257c1f32f47f23260dd086af3",
+        "3di_llm__gamma__miller1987__composition_adjusted.npz": "7807b1664eb45f1da74f24d2bda3cc8e324965d622a713a277317c05c3ac4b8b",
+        "3di_af__freerate__miller1987__coverage_confidence.npz": "4ef76556e7f5a5adccfbe1e0cc836d4dde7a4b1d8efa608d94049216a0dbe862",
+        "3di_llm__freerate__miller1987__coverage_confidence.npz": "cd926c91194b477102380d65975000e24fe7f4e012868f3899b8864a2599dd74",
+        "3di_af__freerate__tien2013__composition_adjusted.npz": "5a457fc08c7b983c3a52923a1e1a97598b0ceaace10bca859a346d72700d55af",
+        "3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "c7d5c7c23376a852e3b55a2ba34bf655f19b528b8e6222e6025523bab1338d2a",
+        "3di_af__gamma__tien2013__composition_adjusted.npz": "aad4e9432d3db070f0430a3a9aecf67eff7e30879504467552a58e1fa3457c9e",
+        "3di_af__freerate__miller1987__composition_adjusted.npz": "01e515a26de556be545e05b31660a07a18e2a84e51475c1fb3157de27908a94d",
+        "3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "b81b68fb317b7a6331c5a45fd1be4d1394b0ac8862d5b6be6f1ace12baa6b1bd",
+        "3di_llm__gamma__tien2013__composition_adjusted.npz": "fd14c7e27188c7f0ab1836c64a6229a71a571e9811807504b565fe6c08fd21aa",
+        "3di_af__gamma__tien2013__coverage_confidence.npz": "55359d95736e869576b95bdbf997ef8a720a6d28bc28c863190eb5a6773898f8",
+        "3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "0e7ed2988ac1d7c8ffa421b74f5ce95cae173751437e492a5345d043ad351cf9",
+        "3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "c95a68b3b827f67bbd82a1d03556c48dacd51b272be6c68ddf3372b80e8364c8",
+        "3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "1353b344e51da746af0af7ef428f10a97c3e4973f8881471c272591ef91bc0be",
+        "3di_llm__freerate__tien2013__composition_adjusted.npz": "70c1e6c61dea70e3c032cf3d231ba0c231c3a7d99f8b40fcd04e7ab394b2e24b",
+        "contrast_summary.tsv": "2478c61cb3ce364b4180522a2ca77e4fe20d7f7dbd41a49d065c8a3307848a56",
+        "numerical_checks.tsv": "1e44582a797e3b4ffe570699ac046e3cd8d1c8463fe87fe0d4e797abb5b6fed8",
+        "3di_af__gamma__miller1987__coverage_confidence.npz": "26168790f9d41787ef5d6e78cef24ad8ffae45407e4e8505358f945972429323",
+        "marker_resampling_counts.npz": "52bc5b6e82edfc1f482d135a57f29bc8c947a1c1bd0fdddf5b16f8338191fc3b",
+        "3di_llm__freerate__miller1987__composition_adjusted.npz": "197af281635d9aca2204b7e9a40d344a08fd2d28a50a916c3091e747501495c8",
+        "3di_af__freerate__tien2013__coverage_confidence.npz": "406beba386845cd9c0b2005660d467e1496eca9f705e4b4b5c26a15c3df19219"
+      }
+    }
+  ],
+  "scope": "Receipt, plan and full output artifact hashes verified. Does not independently reproduce coefficients or establish statistical adequacy."
+}

@@ -1,0 +1,290 @@
+{
+  "status": "coefficient_discrepancy_diagnosed_not_resolved",
+  "artifacts": {
+    "results/recovery-20260926/coupling-numerical-review/diagnostic_fit.py": "ddacb07a1f65b5dd77e06a96ac799fe486a74fa0d29b66608ccdaacf3ac309c1",
+    "results/recovery-20260926/coupling-numerical-review/diagnostic.log": "08b483930745f03a0f9d27ca09b75bad5f0736bf3307d1f943be8f84f93f4d72",
+    "results/recovery-20260926/coupling-numerical-review/failing_design.npz": "83c22f90a865e97ba7c08bbfbce1d0569ad0e1f87bc61886c437cb2605d25f78",
+    "results/recovery-20260926/coupling-numerical-review/solver_comparison.json": "edc6f1fe9bcbcda7a612f67d68461ea3a276ec0e2c26c6596cd4f32404d30d64",
+    "results/recovery-20260926/coupling-numerical-review/layout_comparison.json": "31694e12279dc0f4436c84335c96292022fda82db69ab89cec28a257fe721473",
+    "results/recovery-20260926/coupling-numerical-review/diagnostic_repeat.py": "57099403650688727827e437a9ae3ad2f720994049e0dae2b0c97d7bd9a3bbbb",
+    "results/recovery-20260926/coupling-numerical-review/repeat.log": "23a64d9280bffec223fbe596afbbf2cfcd8064a392532123705c9191c093b5c6",
+    "results/recovery-20260926/coupling-numerical-review/failing_design_repeat.npz": "654d9677a126195a2df13aa379ee02ff45f202b179766edcf04e48ce2831b6dd"
+  },
+  "solver_comparison": {
+    "shape": [
+      44198,
+      147
+    ],
+    "range_y": [
+      0.009187663858993824,
+      1.530509417128689
+    ],
+    "solvers": {
+      "gelsd": {
+        "max_difference_from_gelsy": 1.199040866595169e-14,
+        "rss": 6715.022555808614,
+        "normal_residual_max": 3.2563896024129235e-11
+      },
+      "gelss": {
+        "max_difference_from_gelsy": 9.298117831235686e-15,
+        "rss": 6715.022555808614,
+        "normal_residual_max": 3.600711395712608e-11
+      },
+      "gelsy": {
+        "max_difference_from_gelsy": 0.0,
+        "rss": 6715.022555808613,
+        "normal_residual_max": 1.456157416868109e-11
+      },
+      "beta": {
+        "max_difference_from_gelsy": 1.3988810110276972e-14,
+        "rss": 6715.022555808614,
+        "normal_residual_max": 4.2350678519653684e-11
+      },
+      "fitted_params": {
+        "max_difference_from_gelsy": 1.601290989738935e-05,
+        "rss": 6715.022555942037,
+        "normal_residual_max": 0.004214882512957985
+      },
+      "numpy_new": {
+        "max_difference_from_gelsy": 1.3988810110276972e-14,
+        "rss": 6715.022555808614,
+        "normal_residual_max": 4.2350678519653684e-11
+      },
+      "statsmodels_new": {
+        "max_difference_from_gelsy": 9.846290449644357e-15,
+        "rss": 6715.022555808614,
+        "normal_residual_max": 3.3698488444144914e-11
+      }
+    }
+  },
+  "layout_comparison": [
+    {
+      "order": "C",
+      "repeat": 0,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.371825041398324e-11
+    },
+    {
+      "order": "C",
+      "repeat": 1,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.371825041398324e-11
+    },
+    {
+      "order": "C",
+      "repeat": 2,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.371825041398324e-11
+    },
+    {
+      "order": "C",
+      "repeat": 3,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.371825041398324e-11
+    },
+    {
+      "order": "F",
+      "repeat": 0,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.3698488444144914e-11
+    },
+    {
+      "order": "F",
+      "repeat": 1,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.3698488444144914e-11
+    },
+    {
+      "order": "F",
+      "repeat": 2,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.3698488444144914e-11
+    },
+    {
+      "order": "F",
+      "repeat": 3,
+      "delta": 8.881784197001252e-15,
+      "normal_residual": 3.3698488444144914e-11
+    }
+  ],
+  "repeat_evidence": [
+    {
+      "model_id": "3di_af__freerate__tien2013__composition_adjusted",
+      "condition_number": 405.9928949804935,
+      "max_coefficient_difference": 1.5006363203173834e-05,
+      "failed_terms": [
+        "aa_log1p_rate",
+        "aa_by_rsa",
+        "observed_fraction",
+        "ca_plddt_q25_fraction",
+        "aa_entropy_nats",
+        "aa_fraction_C",
+        "aa_fraction_E",
+        "aa_fraction_F",
+        "aa_fraction_G",
+        "aa_fraction_H",
+        "aa_fraction_I",
+        "aa_fraction_K",
+        "aa_fraction_L",
+        "aa_fraction_M",
+        "aa_fraction_N",
+        "aa_fraction_P",
+        "aa_fraction_Q",
+        "aa_fraction_R",
+        "aa_fraction_S",
+        "aa_fraction_T",
+        "aa_fraction_V",
+        "aa_fraction_W",
+        "aa_fraction_Y",
+        "marker_115730at2759",
+        "marker_129234at2759",
+        "marker_160487at2759",
+        "marker_201273at2759",
+        "marker_207567at2759",
+        "marker_260326at2759",
+        "marker_2852757at2759",
+        "marker_288615at2759",
+        "marker_319730at2759",
+        "marker_340246at2759",
+        "marker_345792at2759",
+        "marker_352891at2759",
+        "marker_3643464at2759",
+        "marker_4695236at2759",
+        "marker_4764044at2759",
+        "marker_4810093at2759",
+        "marker_4813267at2759",
+        "marker_4823929at2759",
+        "marker_4837017at2759",
+        "marker_4838864at2759",
+        "marker_4843240at2759",
+        "marker_4843824at2759",
+        "marker_4867008at2759",
+        "marker_4888252at2759",
+        "marker_4896098at2759",
+        "marker_4900375at2759",
+        "marker_4908955at2759",
+        "marker_4911644at2759",
+        "marker_4940884at2759",
+        "marker_4969018at2759",
+        "marker_4969636at2759",
+        "marker_4969990at2759",
+        "marker_4970387at2759",
+        "marker_4970538at2759",
+        "marker_4971272at2759",
+        "marker_4975094at2759",
+        "marker_4976279at2759",
+        "marker_4977163at2759",
+        "marker_4977863at2759",
+        "marker_4983000at2759",
+        "marker_4985971at2759",
+        "marker_4986044at2759",
+        "marker_4987397at2759",
+        "marker_4988239at2759",
+        "marker_5000045at2759",
+        "marker_5000152at2759",
+        "marker_5000362at2759",
+        "marker_5000371at2759",
+        "marker_5000452at2759",
+        "marker_5000476at2759",
+        "marker_5000743at2759",
+        "marker_5000823at2759",
+        "marker_5000870at2759",
+        "marker_5000986at2759",
+        "marker_5001156at2759",
+        "marker_5001273at2759",
+        "marker_5001280at2759",
+        "marker_5001318at2759",
+        "marker_5001413at2759",
+        "marker_5001660at2759",
+        "marker_5001734at2759",
+        "marker_5001941at2759",
+        "marker_5002334at2759",
+        "marker_5002573at2759",
+        "marker_5003022at2759",
+        "marker_5003192at2759",
+        "marker_5003205at2759",
+        "marker_5003856at2759",
+        "marker_5003972at2759",
+        "marker_5004265at2759",
+        "marker_5004327at2759",
+        "marker_5004391at2759",
+        "marker_5004478at2759",
+        "marker_5004599at2759",
+        "marker_5005174at2759",
+        "marker_5005196at2759",
+        "marker_5005215at2759",
+        "marker_5005217at2759",
+        "marker_5005274at2759",
+        "marker_5005697at2759",
+        "marker_5005892at2759",
+        "marker_5006326at2759",
+        "marker_5011777at2759",
+        "marker_5013042at2759",
+        "marker_5013067at2759",
+        "marker_5013259at2759",
+        "marker_5013539at2759",
+        "marker_5013726at2759",
+        "marker_5013738at2759",
+        "marker_5013992at2759",
+        "marker_5014007at2759",
+        "marker_5015403at2759",
+        "marker_5015647at2759",
+        "marker_5015712at2759",
+        "marker_5015742at2759",
+        "marker_5015876at2759",
+        "marker_5017019at2759",
+        "marker_5018803at2759",
+        "marker_529759at2759",
+        "marker_530014at2759",
+        "marker_530740at2759",
+        "marker_538952at2759",
+        "marker_539632at2759",
+        "marker_540946at2759",
+        "marker_541070at2759",
+        "marker_554735at2759",
+        "marker_649304at2759",
+        "marker_707076at2759",
+        "marker_707202at2759",
+        "marker_727964at2759",
+        "marker_730114at2759",
+        "marker_760428at2759",
+        "marker_776280at2759",
+        "marker_801816at2759"
+      ]
+    },
+    {
+      "retry": "same",
+      "delta": 4.6629367034256575e-15,
+      "original_pinv_reproduct_delta": 1.5006363203173834e-05,
+      "cached_response_delta": 0.0,
+      "cached_design_delta": 0.0,
+      "design_strides": [
+        8,
+        353584
+      ]
+    },
+    {
+      "retry": "copyC",
+      "delta": 4.6629367034256575e-15,
+      "original_pinv_reproduct_delta": 1.5006363203173834e-05,
+      "cached_response_delta": 0.0,
+      "cached_design_delta": 0.0,
+      "design_strides": [
+        1176,
+        8
+      ]
+    },
+    {
+      "retry": "copyF",
+      "delta": 4.6629367034256575e-15,
+      "original_pinv_reproduct_delta": 1.5006363203173834e-05,
+      "cached_response_delta": 0.0,
+      "cached_design_delta": 0.0,
+      "design_strides": [
+        8,
+        353584
+      ]
+    }
+  ],
+  "interpretation": "Full-workflow repeat fails at a different model. Cached pinv reproduces failed coefficients; fresh same-design, C-copy and F-copy statsmodels fits agree with independent least squares. Cached design and response exactly match inputs. This localizes discrepancy to cached pseudoinverse construction/use; library or hardware cause not established. No tolerances relaxed."
+}
