@@ -8653,3 +8653,11 @@ checked by graph traversal. All 156 case/screen/region summaries retain zero
 counts and all structures. Cryoendolithus has 97 entities but only five exact
 sequences at the n50/c70 both-region alignment screen. These are dependence
 annotations, not independent experiment counts or effective sample sizes.
+
+### 2026-09-27: complete observed-coverage verification queued
+
+Added a separate full-grid checker for resolved experimental domain/outside
+coverage. It reconstructs every count from frozen residue pairs and audited
+CA positions, checks exact rational thresholds and all chain/model decisions,
+and retains zero-candidate summaries. It waits for the exact coverage producer
+and successful termination; full raw-coordinate validation remains active.

@@ -418,3 +418,21 @@ Geometry-based selection was not used.
 Entity assignments, explicit linkage edges and all 156 case/screen/region rows
 are in `results/experimental_structures/whole-domain-case-experimental-dependence-20260927-v1`.
 The completion record is `metadata/case_experimental_dependence_completed_20260927.json`.
+
+## Full observed-coverage readback queued
+
+`readback_case_experimental_observed_coverage.py` waits on the exact coverage
+producer and requires successful terminal state. It derives the complete expected
+row set by expanding the prior alignment/interval/screen inventory over every
+audited experimental chain/model. Every observed count is independently rebuilt
+from the separately frozen residue-pair maps and audited CA positions, using
+original domain/outside lengths. Exact rational arithmetic checks all thresholds.
+It recomputes all role/interval qualifications and all 78 case/screen summaries,
+including zero-candidate cases, and verifies distinct entity and entry counts.
+
+The checker is queued with one CPU, 8 GiB RAM, no swap, 0.1 GiB output and a
+0.25–4 hour planning allowance. Its output will be
+`results/experimental_structures/whole-domain-case-observed-coverage-readback-20260927-v1`.
+The launch identity is recorded in
+`metadata/case_experimental_observed_readback_launch_20260927.json`.
+This check is not yet completed and does not validate geometry or independence.
