@@ -6669,3 +6669,20 @@ results remain pending. See [balance verification](terminal-sister-backgrounds-2
 The previous goal turn queued balance assessment; this turn completes its queued
 independent validation stage. All eight scientific aims remain active, with GPU
 prediction paused.
+
+## September 27 full control selection and balance verified
+
+Independent verification completed all 47,190,168 scenario decisions and all
+432 coverage/3,456 feature summaries. Archived both completed stages and checked
+every output artifact hash. The strict-background, moderate-tolerance,
+1.5-distance example matches 11,917 targets across 143 taxa and 2,038 families;
+requiring the focal taxon leaves 792 targets across 69 taxa. Aggregate covariate
+balance is close in the first example, but selected targets have much higher
+prediction confidence than the original modeled target pool. This limits the
+population to which later contrasts can apply. See
+[verified results and limitations](duplication-control-balance-20260927.md).
+
+The prior turn queued balance verification; this turn completes and archives
+the matching milestone with an explicit interpretation of selection effects.
+Structural outcome qualification and evolutionary tests remain pending; all
+eight scientific aims remain active. GPU prediction stays paused.

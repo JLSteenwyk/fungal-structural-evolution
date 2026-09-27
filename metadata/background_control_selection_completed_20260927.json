@@ -1,0 +1,21 @@
+{
+  "status": "completed_with_full_independent_readback",
+  "source_receipt": "results/orthology/background-control-selection-20260927-v1/receipt.json",
+  "source_receipt_sha256": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+  "readback": "metadata/background_control_selection_completed_readback_20260927.json",
+  "readback_sha256": "0004a74ec8de9bb219979f592a0254ac25600f69b89b34f9f41a2c8d12a2714e",
+  "verified_counts": {
+    "target_policy_records": 873892,
+    "scenarios": 54,
+    "scenario_decisions": 47190168,
+    "selected_records": 2786912,
+    "source_edges": 1661948
+  },
+  "artifacts": {
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/background-control-selection-20260927-v1/target_policy_selection_status.tsv": "c6b851af81727c013cd43a9c07ea7649732ceea662908304cecdb725bf8df2b1",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-control-selection-20260927-v1/background_reuse.tsv": "8dbb5f8dd10dab387adb246487fb4392f5704736d10c9916bb636efb1d8e1cff"
+  },
+  "scope": "Every scenario candidate independently enumerated; selected identity/order/score, eligible/tied count and runner-up gap reconstructed. All unmatched statuses, full target universe, guide/policy/scenario summaries and background reuse counts verified. Same frozen covariates and design, not independent biological evidence. Balance and outcome eligibility remain pending."
+}

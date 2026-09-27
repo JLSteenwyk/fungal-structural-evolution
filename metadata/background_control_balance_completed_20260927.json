@@ -1,0 +1,17 @@
+{
+  "status": "completed_with_full_independent_readback",
+  "source_receipt": "results/orthology/background-control-balance-20260927-v1/receipt.json",
+  "source_receipt_sha256": "9fd0aea3f91b2ad9d6d0e641b8b1184d6963c5b12e44da1430ca28010c1127c3",
+  "readback": "metadata/background_control_balance_completed_readback_20260927.json",
+  "readback_sha256": "42262669c1b2b5a76753bc301bc935fdb818d55c1722f3327f36f8b6db6f006d",
+  "verified_counts": {
+    "selected_records": 2786912,
+    "strata": 432,
+    "balance_rows": 3456
+  },
+  "artifacts": {
+    "results/orthology/background-control-balance-20260927-v1/selection_coverage.tsv": "46c7228ca8a7581fce86a4fe59684f1652a8b82767eac4d56d1c35aa24433ffc",
+    "results/orthology/background-control-balance-20260927-v1/covariate_balance.tsv": "f6149507e1fce302ec58a768588a75c17b08af15ace7adaaa0e03c575943067d"
+  },
+  "scope": "All selected identities directly rejoined; feature definitions independently reconstructed, all moments/quantiles/standardized differences/nonestimable statuses and baseline shifts checked, every coverage/taxon/family/reuse/zero/identical-model count verified. No producer feature or balance helpers imported. Descriptive balance, not independent-sample tests or biological effects."
+}

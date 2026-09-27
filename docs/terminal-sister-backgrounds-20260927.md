@@ -945,3 +945,12 @@ CPU, 24 GiB RAM, no swap, negligible proof output and an uncalibrated 0.1–4 ho
 after the producer. Production balance and verification remain pending; no
 biological effect or independent-sample test is claimed. No GPU or paid
 infrastructure was enabled.
+
+## Selection and balance completed
+
+Both full independent checks passed. Archived final proofs and artifact hashes
+for all 2,786,912 selections, 47,190,168 scenario decisions, 432 coverage summaries
+and 3,456 balance summaries. See the [completed balance report](duplication-control-balance-20260927.md)
+for illustrative strict-background results, control reuse and the substantial
+shift toward more confidently modeled targets. Earlier pending entries above
+are stage history. Matched structural effects remain pending.
