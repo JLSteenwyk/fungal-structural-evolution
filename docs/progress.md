@@ -6217,3 +6217,20 @@ The previous turn made progress by launching the complete inventory; this turn
 adds and launches the full verification needed before guide agreement,
 orthology membership and matched-background selection. The project remains
 active, all scientific aims remain open, and GPU prediction remains paused.
+
+## September 27 full terminal-pair guide comparison queued
+
+The terminal sister inventory completed across both tree sets: 1,577,204 profile
+pairs and 1,577,169 MAFFT pairs. Its full independent readback is active and has
+begun reconstructing the profile tree set. Producer counts include 71,858/71,822
+cross-taxon unreported pairs with distinct models, plus 6,446/6,448 identical-
+model pairs. These counts are not validated matched-control counts.
+
+Implemented and launched a source-bound full gene-pair union after that audit.
+It preserves guide-specific families/nodes, class disagreements, single-guide
+pairs, model coverage and sequence distances, with a separate modeled-candidate
+union for later orthology/matching checks. Known-guide fixtures passed. See
+[methods and stage limits](terminal-sister-backgrounds-20260927.md#inventory-output-and-guide-comparison-stage).
+The prior turn added full inventory verification; this turn adds the complete
+guide-sensitivity join. Production join/readback, orthology checks and matching
+remain unfinished. The full objective is active and GPU prediction remains paused.

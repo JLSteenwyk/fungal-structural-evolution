@@ -72,3 +72,34 @@ Known-tree reconstruction and deliberate corruption of five exported fields
 passed in `scripts/check_terminal_sister_readback_cases.py`. These are fixture
 results; the full production readback is still pending. The checker rejects
 changed source or producer hashes and rechecks them after traversing all rows.
+
+## Inventory output and guide-comparison stage
+
+The inventory completed with 1,577,204 profile-guide and 1,577,169 MAFFT-guide
+terminal pairs. Cross-taxon unreported pairs with two distinct frozen models
+number 71,858 and 71,822, respectively; a further 6,446 and 6,448 map to identical
+models. These are producer counts pending the running full independent readback,
+not counts of eligible matched controls. The inventory includes 70,307/70,412
+source trees and retains all missing-model categories.
+
+The queued `scripts/compare_terminal_sister_guides.py` requires that full
+readback to pass before proceeding. It joins the complete pair universe by
+lexically ordered gene identifiers, retaining changed family/node labels,
+one-guide pairs, candidate-class disagreements, parent duplication flags,
+sequence distances and frozen model identities. Shared model/taxon assignments
+must be identical across guides. An indexed SQLite file preserves every source
+row, `guide_comparison.tsv` contains the full union, and
+`modeled_candidate_union.tsv` contains pairs labeled cross-taxon unreported in
+at least one guide with two available models. Identical-model pairs are retained
+and distinguished from distinct-model pairs. Selection uses no structural
+outcome. Shared candidate labels and unreported parents are separate flags,
+not proof of orthology or independent speciation events.
+
+The comparison plan is
+`metadata/terminal_sister_guide_comparison_plan_20260927.json`; outputs will be
+in `results/orthology/terminal-sister-guide-comparison-20260927-v1`. One CPU,
+4 GiB RAM, no swap, and an 8 GiB disk allowance cover the disk-backed join;
+0.1–4 hours is an uncalibrated planning range excluding its dependency wait.
+Known-guide fixtures passed label changes, candidate disagreements, one-guide
+pairs, missing/identical models, and rejection of inconsistent identities.
+Production comparison and independent output checking remain pending.

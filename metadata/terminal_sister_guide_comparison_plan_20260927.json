@@ -1,0 +1,38 @@
+{
+  "source": "results/orthology/terminal-sister-background-inventory-20260927-v1",
+  "readback": "metadata/terminal_sister_background_completed_readback_20260927.json",
+  "dependency": {
+    "service": "fungal-terminal-sister-readback-20260927.service",
+    "pid": 4108810,
+    "created": 1790498317.43,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_terminal_sister_backgrounds.py",
+      "--config",
+      "metadata/terminal_sister_background_readback_plan_20260927.json"
+    ],
+    "config": "metadata/terminal_sister_background_readback_plan_20260927.json",
+    "config_sha256": "9e5a46e18c26b479c5282149bf747f0b604c9215ae64572c190c53435d6bd8c6",
+    "fixtures": "Known tree and five field-corruption rejection cases passed; full production validation pending."
+  },
+  "output": "results/orthology/terminal-sister-guide-comparison-20260927-v1",
+  "pins": {
+    "metadata/terminal_sister_background_readback_launch_20260927.json": "b2dada6350260e48e8c18771d5ac70a5494867c16c9efe8fd54db631c70e9961",
+    "results/orthology/terminal-sister-background-inventory-20260927-v1/receipt.json": "71888195630cdef33bfb9ad6a3618e9a9b3ef09257747eee7bf8fdad2511ce27",
+    "scripts/compare_terminal_sister_guides.py": "167bd199b66699b27cd78d445a05e44f5cc41a92829a1dade82906423452d119",
+    "scripts/check_terminal_sister_guide_cases.py": "328e17ba580d9e4c551fc19a1b0c1a3ee4d6ddbd3eeb9efde3c539b94a1cade0",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "minimum_free_disk_bytes": 107374182400,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "3.15 million input rows across guides; disk-backed exact join, at most 3.15 million union rows. 64 MiB SQLite cache and 10000-row insertion batches. Includes original JSON rows in SQLite and full/selected TSVs; no structural outcome filtering. Excludes dependency wait; local CPU only."
+  }
+}
