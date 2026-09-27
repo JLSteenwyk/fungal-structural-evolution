@@ -1,0 +1,28 @@
+{
+  "summaries": "results/structural_comparisons/matched-domain-record-summaries-20260927-v1",
+  "summary_audit": "metadata/matched_domain_record_summary_readback_20260927.json",
+  "measurements": "results/structural_comparisons/matched-domain-measurements-20260927-v1/matched_domain_contrasts.tsv.gz",
+  "measurement_audit": "metadata/matched_domain_measurements_readback_20260927.json",
+  "measurement_audit_status": "passed_full_matched_domain_measurement_readback",
+  "output": "results/model_validation/nonlinear-identity-contrasts-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_minutes": [
+      5,
+      60
+    ]
+  },
+  "pins": {
+    "scripts/build_nonlinear_identity_contrasts.py": "38f86fd51b7f6b12d5c2e7defb7a6147c250f74a2ec14b325190c479d482e03c",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/matched_domain_record_summary_readback_20260927.json": "96d27e8f5efcc13c161cfadf73a1eae9604736045d1910e8dc565126edbe6d73",
+    "metadata/matched_domain_measurements_readback_20260927.json": "afd54fc2d63364c818f6b803727a32442d4fad5d450d93ce8566ebf71efe9575",
+    "results/structural_comparisons/matched-domain-measurements-20260927-v1/matched_domain_contrasts.tsv.gz": "1fcfe3da9ef1b61fb97f5ad78e5627b86cd63523e47ace4b7526a37c6f07dd59",
+    "results/structural_comparisons/matched-domain-measurements-20260927-v1/receipt.json": "58ca4c69d5457e5af830dc034738fe86b11fd795fcf5ecb861cea2269949fdb1",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/receipt.json": "9cfbe74bb1ba0a6bd18eb7c321942b5d306b9c42e74bae69c9c1513995cb65d0",
+    "results/structural_comparisons/matched-domain-record-summaries-20260927-v1/partition_manifest.json": "5ddd0a7150ac6804ff2beea90906e08ec4b1df4bef370d45ed02dd5efdacb1cd"
+  }
+}

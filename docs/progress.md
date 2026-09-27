@@ -7905,3 +7905,12 @@ against their original matrices. All four services ended successfully and all
 artifacts were verified in `metadata/joint_support_completed_20260927.json`.
 Original classifications remain preserved. This does not complete model fitting,
 uncertainty calibration, duplication inference or any of the eight scientific aims.
+
+### September 27: nonlinear sequence-adjustment inputs launched
+
+The full 192-setting polynomial identity contrast build is running on one CPU.
+It calculates domain-level powers before averaging and checks every configuration
+against independent pandas arithmetic, original linear contrasts and saved files.
+The first 42 settings passed during launch verification; full completion is pending.
+Existing linear models remain unchanged. [Methods and next gates](nonlinear-identity-contrasts-20260927.md).
+GPU prediction remains paused; all eight aims remain open.
