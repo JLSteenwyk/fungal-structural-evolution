@@ -1,0 +1,139 @@
+{
+  "status": "passed_duplication_sequence_covariate_numeric_readback",
+  "producer_receipt": "results/orthology/duplication-sequence-covariates-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "55d1a6fa0b60245487735a27d9035e392e70711d5d0c3992989624aab4f93201",
+  "receipt": {
+    "status": "complete_duplication_sequence_covariates",
+    "source_sha256": {
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/receipt.json": "7d6250412686cddd62a71111f92b624183d42dd84addbada095ef4c30b2d7e43",
+      "results/orthology/duplication-sister-reference-readback-20260926-v1/receipt.json": "31ec8ce00b6f986574030c1266249874af0ea06e465712e23921f862fccee760",
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/mafft_sister_references.tsv": "adfe5ec37a5a9077f1ef4ad1baf623047bd857974a7e9e2c55bfb7ece377c9f4",
+      "results/orthology/duplication-sister-reference-inventory-20260926-v1/profile_sister_references.tsv": "cab7e8f9a23da56dd0051abe995612d9b029e0c830bb0c509679b824486cb918",
+      "results/orthology/duplication-sister-reference-readback-20260926-v1/mafft.json": "4113bbba21cd94d9c6e2528819b3a8d103fa46f857c99e55b8e59f15bc3f7e5a",
+      "results/orthology/duplication-sister-reference-readback-20260926-v1/profile.json": "98afe3ae9f0ba9f15fac8c956af7e59498370d9b7fc013ed69249f46fd6925db"
+    },
+    "script_sha256": "e5bf6f5f0b90349aef857cf7f552d3af419ad7bfb903e3417e55938387261585",
+    "guides": {
+      "profile": {
+        "rows": 17461,
+        "counts": {
+          "resolved_pair_distance": 15868,
+          "b_longer": 7508,
+          "unresolved_near_zero_pair_distance": 1593,
+          "unresolved": 1750,
+          "a_longer": 8203
+        }
+      },
+      "mafft": {
+        "rows": 17448,
+        "counts": {
+          "resolved_pair_distance": 15858,
+          "b_longer": 7503,
+          "unresolved_near_zero_pair_distance": 1590,
+          "unresolved": 1747,
+          "a_longer": 8198
+        }
+      }
+    },
+    "shared_pair_comparison": {
+      "same_direction": 15643,
+      "unresolved_in_one_or_both_guides": 1743,
+      "opposite_direction": 6
+    },
+    "artifacts": {
+      "guide_sequence_covariate_comparison.tsv": "9e2d33fcd92ef3f31668b9d6901c469119400eb32b4315db34d3709d0f0f57ea",
+      "mafft_sequence_covariates.tsv": "f2d0e2d2b86140043d4c178d62c12d44251a583a08ca779eef5081bf71c8b980",
+      "profile_sequence_covariates.tsv": "bb67b9f8bffd87c91a3a7c5100e4eec3c652760794ad68d86e0613bc14fe4c65"
+    },
+    "scope": "Fixed sequence-tree relative divergence covariates for all provisionally referenced pairs. Lexical gene orientation, no calendar-time rate, ancestral state, structural asymmetry, significance test or biological orthology validation. Near-zero values remain unresolved; guide outputs are sensitivity analyses, not independent observations."
+  },
+  "verified_covariate_rows": 34909,
+  "verified_guide_comparisons": 17392,
+  "opposite_direction_pairs": [
+    {
+      "gene_a": "F269621_SCV72842.1",
+      "gene_b": "F269621_SCV73054.1",
+      "profile_family": "OG0052708",
+      "mafft_family": "OG0623216",
+      "reference_sets_equal": "0",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "b_longer",
+      "mafft_direction": "a_longer",
+      "profile_normalized_contrast": "-0.098630671472632",
+      "mafft_normalized_contrast": "0.388743078514492",
+      "comparison": "opposite_direction"
+    },
+    {
+      "gene_a": "F269621_SCV74722.1",
+      "gene_b": "F269621_SCV74727.1",
+      "profile_family": "OG0052730",
+      "mafft_family": "OG0623215",
+      "reference_sets_equal": "1",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "b_longer",
+      "mafft_direction": "a_longer",
+      "profile_normalized_contrast": "-0.15184984303864038",
+      "mafft_normalized_contrast": "0.06814332680237765",
+      "comparison": "opposite_direction"
+    },
+    {
+      "gene_a": "F4837_XP_018286541.1",
+      "gene_b": "F4837_XP_018291264.1",
+      "profile_family": "OG0554085",
+      "mafft_family": "OG0319750",
+      "reference_sets_equal": "1",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "a_longer",
+      "mafft_direction": "b_longer",
+      "profile_normalized_contrast": "0.015393349199764188",
+      "mafft_normalized_contrast": "-0.2185164223961279",
+      "comparison": "opposite_direction"
+    },
+    {
+      "gene_a": "F563466_XP_016639652.1",
+      "gene_b": "F563466_XP_016645609.1",
+      "profile_family": "OG0088482",
+      "mafft_family": "OG0506166",
+      "reference_sets_equal": "1",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "a_longer",
+      "mafft_direction": "b_longer",
+      "profile_normalized_contrast": "0.006656288582317695",
+      "mafft_normalized_contrast": "-0.012869506575250165",
+      "comparison": "opposite_direction"
+    },
+    {
+      "gene_a": "F58291_XP_023461437.1",
+      "gene_b": "F58291_XP_023468950.1",
+      "profile_family": "OG0554083",
+      "mafft_family": "OG0319748",
+      "reference_sets_equal": "0",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "a_longer",
+      "mafft_direction": "b_longer",
+      "profile_normalized_contrast": "0.10705184301883897",
+      "mafft_normalized_contrast": "-0.07848391850551299",
+      "comparison": "opposite_direction"
+    },
+    {
+      "gene_a": "F796604_SGY12821.1",
+      "gene_b": "F796604_SGY55522.1",
+      "profile_family": "OG0052708",
+      "mafft_family": "OG0623216",
+      "reference_sets_equal": "0",
+      "profile_status": "resolved_pair_distance",
+      "mafft_status": "resolved_pair_distance",
+      "profile_direction": "a_longer",
+      "mafft_direction": "b_longer",
+      "profile_normalized_contrast": "0.9901768172888005",
+      "mafft_normalized_contrast": "-0.3464610811814983",
+      "comparison": "opposite_direction"
+    }
+  ],
+  "verification": "All original source fields and complete pair sets checked. Independent decimal three-tip algebra checks recovered tip edges, signed and normalized contrasts; directions and entire shared-guide table reconstructed. Shares already audited fixed-tree source distances; does not refit trees or establish statistical significance."
+}

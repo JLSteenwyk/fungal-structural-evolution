@@ -5389,3 +5389,15 @@ hashes were checked and archived in
 `metadata/duplication_coordinate_validation_completed_20260926.json`.
 The independent source-to-export coordinate readback is still running; downstream
 materialization and comparisons remain gated on its successful completion.
+
+
+### September 26: duplicate sequence-divergence covariates completed
+
+All 34,909 provisionally referenced event records now include fixed-tree tip
+sequence divergence and signed/normalized copy contrasts, with unresolved
+near-zero cases retained. Independent decimal algebra and complete source-field
+checks passed. Of 17,392 pairs shared between guides, six switch resolved
+sequence direction and 1,743 have unresolved direction in at least one guide.
+The complete sensitivity table is retained for the future structural-asymmetry
+analysis; no structural effect or significance is established by these
+covariates. See [methods and results](duplication-sister-references-20260926.md#sequence-covariates-for-the-asymmetry-analysis).

@@ -361,3 +361,57 @@ source pins and upstream receipt bindings were checked and archived in
 That check is a manifest/hash readback, not an independent numeric validation
 of every serialized PDB; the queued alignment readback handles the latter for
 successful comparisons. Reference alignments still wait for primary inputs.
+
+
+## Sequence covariates for the asymmetry analysis
+
+The complete provisionally referenced cohort now has fixed sequence-tree
+covariates in `results/orthology/duplication-sequence-covariates-20260926-v1/`.
+These preserve every source field and add terminal sequence lengths for each
+copy, their signed difference, and the difference divided by duplicate-pair
+sequence distance. Gene A/B orientation is lexical and fixed between guides;
+its sign has no intrinsic biological meaning. Tip lengths are obtained by
+subtracting the common duplicate-node-to-reference path from each tip-to-reference
+path. The pair sum is checked against the independently exported duplicate path.
+
+Numerical tolerance is 1e-12 times the larger of one and the source path lengths.
+Negative residuals only within tolerance are clamped and counted; incompatible
+paths are rejected. Pair distances at most four tolerances have blank normalized
+contrasts, and directional differences at most two tolerances are unresolved.
+This is a floating-point resolution rule, not an uncertainty interval or a
+biological effect-size threshold. Sequence lengths are relative divergence,
+not change per calendar time. Reference eligibility and gene-tree uncertainty
+remain as documented above.
+
+| Sequence covariate status | Profile | MAFFT |
+| --- | ---: | ---: |
+| Provisionally referenced events | 17,461 | 17,448 |
+| Resolved pair-distance denominator | 15,868 | 15,858 |
+| Near-zero pair-distance denominator | 1,593 | 1,590 |
+| Unresolved direction (including near-zero pairs) | 1,750 | 1,747 |
+
+Of 17,392 shared pairs, 15,643 have the same resolved direction across guides,
+six have opposite resolved directions, and 1,743 are unresolved in one or both.
+The full comparison also retains reference-set agreement. These are covariates
+for future structure comparisons, not independent replicates, structural
+asymmetry results, significance tests or evidence of positive selection.
+
+All 34,909 output records retained exact original source fields. Independent
+decimal three-tip algebra reconstructed terminal lengths and contrasts, and
+all 17,392 cross-guide comparisons were checked. Artifact hashes and the six
+direction-changing cases are archived in
+`metadata/duplication_sequence_covariates_completed_20260926.json`.
+Known-distance tests cover sign reversal, scaling, equal/zero/near-zero paths
+and incompatible/nonfinite inputs. Reproduce with:
+
+```bash
+python scripts/check_duplication_sequence_covariates.py
+python scripts/prepare_duplication_sequence_covariates.py \
+  --inventory results/orthology/duplication-sister-reference-inventory-20260926-v1 \
+  --readback results/orthology/duplication-sister-reference-readback-20260926-v1 \
+  --output <fresh-output-directory>
+```
+
+This small table transformation uses one CPU and no GPU, with no new native
+phylogenetic fitting. Structural-response joins, sequence-conditioned tests,
+family/phylogenetic dependence and nonduplication controls remain unfinished.
