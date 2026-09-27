@@ -6473,3 +6473,17 @@ The prior goal turn queued numerical verification; this turn completes a new
 full-data sampling diagnostic. Rate optimization and accessibility services were
 confirmed running; their downstream stages remain pending. The full eight-aim
 goal remains active, and GPU prediction remains paused.
+
+## September 27 background domain comparison inventory verified
+
+Completed all background single-copy domain matches across four annotation
+policies and two boundary definitions: 293,058 links, 131,986 intervals and
+66,929 distinct interval pairs across 54,004 models. Independent full-data
+readback passed every link, boundary/provenance field and pair-set membership.
+This advances the within-domain controls needed to interpret whole-chain
+structural divergence; coordinates, reuse partitioning and domain alignments
+remain pending. See [domain inventory](terminal-sister-backgrounds-20260927.md#background-domain-interval-inventory-verified).
+
+The preceding turn completed the taxon support diagnostic; this turn completes
+and verifies the full domain workload inventory. All eight scientific aims
+remain in scope. The goal stays active and GPU prediction remains paused.

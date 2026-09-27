@@ -566,3 +566,29 @@ when structural responses are ready. Equal taxon weighting alone does not
 correct phylogenetic dependence, missing structural coverage or assembly and
 gene-copy uncertainty. Domain-architecture-changing events remain a separate
 analysis, rather than being generalized from these conserved controls.
+
+## Background domain interval inventory verified
+
+Expanded all 146,529 single-copy Domain match records across the four annotation
+policies into both alignment and envelope boundaries, preserving every original
+model-pair, policy, accession and hit link. The resulting 293,058 links refer to
+131,986 distinct intervals and 66,929 interval pairs across 54,004 models.
+Intervals contain 21,223,719 residues in total, with a maximum length of 1,046.
+This defines at most 267,716 directed full/pLDDT70 comparison dispositions
+before checking for reusable target-domain computations or short masks.
+
+Independent full reconstruction passed every source field, interval identity,
+bound, sequence/raw-model provenance and exact deduplicated interval/pair set.
+The interval helper also rejected invalid bounds and distinguished model
+versions. Reproducible commands, source hashes and completion/readback records
+are in `metadata/background_domain_pair*20260927.json`; large tables remain in
+`results/structural_comparisons/background-domain-pairs-20260927-v1`.
+The metadata expansion and readback were planned for one CPU, 8 GiB RAM and
+2 GiB output (producer), with an uncalibrated 0.02–2-hour range per stage.
+
+No new domain alignment is claimed. Next steps are reuse partitioning against
+existing domain computations, coordinate input materialization after full raw
+coordinate readback, both-mask/order comparisons and independent numeric
+verification. Within-domain results will help separate fold changes from
+whole-chain orientation differences. They do not alone establish domain
+homology, biological orthology, inherited change, or functional effects.

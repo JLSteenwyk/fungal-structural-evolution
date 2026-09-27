@@ -1,0 +1,30 @@
+{
+  "controls": "results/structural_comparisons/background-domain-controls-20260927-v1",
+  "readback": "metadata/background_domain_control_completed_readback_20260927.json",
+  "control_plan": "metadata/background_domain_control_plan_20260927.json",
+  "output": "results/structural_comparisons/background-domain-pairs-20260927-v1",
+  "pins": {
+    "metadata/background_domain_control_plan_20260927.json": "db29ea539aef90e17da5be9517103019c77242d7e48ce5f6d9b815a208822db9",
+    "metadata/background_domain_control_completed_readback_20260927.json": "a56c9bc8999a2d7f84a8006a0ae065c1e5a59c71a33edc21d27cc4d70a20bb98",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/receipt.json": "d5db88ffa7a194eb7589fb1d16de16b40be9d58986c871ac20421d08f8bc6773",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl": "4f59e546e6010015ce5d18da7ca7823c79cc96a8d3a45ec46fdbac5514bd415e",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "scripts/prepare_background_domain_pairs.py": "e190246f65966305db5f08c8e50ac103a45e2547c9f65bdb702895c205b277d8",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/model_annotations.jsonl": "64e7dee0ffec1dcfd75865c380eff62e9cd28a5e9a4602ba261cce4ab44b5e76",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/single_copy_domain_pairs.tsv": "317fcd126bf581086c0b0e51d8acf0377f797f46f15cdb58d7cd7fa7f59a240c",
+    "results/structural_comparisons/background-domain-controls-20260927-v1/pair_architecture_controls.tsv": "669b6aaaf61fcc9e0fcab1f1151d86c81f7fb605a30ad89efd588c08a0d8bb2a"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.02,
+      2
+    ],
+    "source_matches": 146529,
+    "basis": "Linear metadata expansion across all four annotation policies and both alignment/envelope boundaries, deduplicating identical coordinate intervals. No coordinate extraction or alignment yet. Existing CPU only, no paid resources."
+  }
+}

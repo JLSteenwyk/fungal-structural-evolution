@@ -1,0 +1,46 @@
+{
+  "status": "complete_background_domain_pair_inventory_pending_readback",
+  "plan_sha256": "a919b1fc164f2f0f6b9f01844c691c2f4e87cec4e16dfabd8e6fdb927594f9ef",
+  "source_control_receipt_sha256": "d5db88ffa7a194eb7589fb1d16de16b40be9d58986c871ac20421d08f8bc6773",
+  "source_domain_match_rows": 146529,
+  "policy_boundary_links": 293058,
+  "link_counts": {
+    "alignment_evalue:alignment": 36717,
+    "alignment_evalue:envelope": 36717,
+    "alignment_bitscore:alignment": 36683,
+    "alignment_bitscore:envelope": 36683,
+    "envelope_evalue:alignment": 36580,
+    "envelope_evalue:envelope": 36580,
+    "envelope_bitscore:alignment": 36549,
+    "envelope_bitscore:envelope": 36549
+  },
+  "unique_intervals": 131986,
+  "unique_interval_pairs": 66929,
+  "unique_models": 54004,
+  "interval_residues": 21223719,
+  "maximum_interval_length": 1046,
+  "planned_directed_mask_dispositions": 267716,
+  "artifacts": {
+    "intervals.jsonl": "1e107a2bd36d064d0998f4cfe6767478482ae8eca1e762ef2542d06e9ac6e039",
+    "domain_pairs.tsv": "dccb227e4055e01065bae68b49dfd219ff244d57d06eccbd31b863ecdaaadc7c",
+    "domain_pair_links.tsv": "3689aeb224a4cc4b8955a3928fe00699d32d5fdd638b1cbfb21d02c317b6c747"
+  },
+  "scope": "Every verified single-copy candidate Domain match expanded to alignment and envelope boundaries. All policy, source protein pair, scope, accession and hit links retained; only identical coordinate-interval computations deduplicated. No domain coordinates extracted or compared yet; residue confidence, PAE, independent output readback and biological interpretation remain pending.",
+  "readback": "metadata/background_domain_pair_completed_readback_20260927.json",
+  "readback_sha256": "8e073f41d7773f356fa45ccaf439d20b1d2ededbc8f163611e1dc971cae74d70",
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_background_domain_pairs.py",
+      "--plan",
+      "metadata/background_domain_pair_plan_20260927.json"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_domain_pairs.py",
+      "--plan",
+      "metadata/background_domain_pair_readback_plan_20260927.json"
+    ]
+  ],
+  "verification": "Full independent source-link, interval provenance/boundary and pair-set reconstruction passed. Boundary helper also checked for full-span length, version identity and three invalid ranges."
+}

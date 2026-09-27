@@ -1,0 +1,24 @@
+{
+  "status": "passed_full_background_domain_pair_inventory_readback",
+  "plan_sha256": "5bd4ebd792f79638563e37633047159e130a3b0001db39638267cfaee69906f7",
+  "producer_receipt_sha256": "c33885061eca439bbeb7c76549853de4982a8388fd0c66d35e1b509c5192388d",
+  "source_domain_match_rows": 146529,
+  "policy_boundary_links": 293058,
+  "link_counts": {
+    "alignment_evalue:alignment": 36717,
+    "alignment_evalue:envelope": 36717,
+    "alignment_bitscore:alignment": 36683,
+    "alignment_bitscore:envelope": 36683,
+    "envelope_evalue:alignment": 36580,
+    "envelope_evalue:envelope": 36580,
+    "envelope_bitscore:alignment": 36549,
+    "envelope_bitscore:envelope": 36549
+  },
+  "unique_intervals": 131986,
+  "unique_interval_pairs": 66929,
+  "unique_models": 54004,
+  "interval_residues": 21223719,
+  "maximum_interval_length": 1046,
+  "planned_directed_mask_dispositions": 267716,
+  "scope": "All source Domain-match fields and both boundary expansions reconstructed; every interval bounds/identity/provenance field and exact deduplicated interval/pair sets checked. No domain coordinate extraction, structural alignment, PAE qualification or biological inference."
+}
