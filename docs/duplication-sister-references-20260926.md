@@ -214,3 +214,41 @@ python scripts/check_duplication_reference_coordinates.py \
 
 Reference alignments, independent sister-choice/path validation and biological
 asymmetry tests remain pending.
+
+## Independent reference-choice and path readback launched
+
+`scripts/readback_duplication_sister_references.py` reconstructs every output
+field for all 218,473 candidates using leaf-interval subtraction for sister
+membership and upward edge sums for reference distances. This is separate
+from the producer's downward sister traversal. It shares the Bio.Phylo
+Newick parser, source trees and native duplication calls. It independently
+joins reference model/version identities from the frozen bridge using taxon
+and protein names, rather than the bridge's numeric native gene identifiers.
+
+Checks include the exact candidate universe and original candidate fields,
+parent identity and duplication flag, parent degree, sister gene/taxon counts,
+modeled nonfocal coverage, eligibility priority, every nearest tie, lexical
+representative and all four sequence distances. Tie membership must match
+exactly under the original absolute 1e-12 rule. Numeric distances allow 1e-12
+absolute/relative rounding differences between downward summation and upward
+`math.fsum`; maximum observed differences are reported. This validates the
+selection algorithm on fixed trees, not orthology, rooting or event timing.
+
+The full run is active under
+`metadata/duplication_sister_reference_readback_plan_20260926.json`, with its
+process identity in the corresponding launch record. All inherited source
+pins were checked equal to the original inventory plan. Resources are one
+CPU, 8 GiB RAM, no swap and negligible output. The 0.1–8 hour planning range
+is uncalibrated. Run with:
+
+```bash
+python scripts/readback_duplication_sister_references.py \
+  --plan metadata/duplication_sister_reference_readback_plan_20260926.json
+```
+
+Output is `results/orthology/duplication-sister-reference-readback-20260926-v1/`.
+A successful final receipt is required; launch alone is not a passed audit.
+Known-tree tests passed all six statuses, ties, four known distances,
+isolation from a very long ancestral edge, six deliberately corrupted export
+fields and malformed-tree rejection. Reproduce these with
+`python scripts/check_duplication_sister_reference_readback.py`.

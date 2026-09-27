@@ -1,0 +1,15 @@
+{
+  "service": "fungal-duplication-sister-reference-readback-20260926.service",
+  "pid": 142292,
+  "created": 1790471623.32,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_sister_references.py",
+    "--plan",
+    "metadata/duplication_sister_reference_readback_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_sister_reference_readback_plan_20260926.json",
+  "plan_sha256": "a60ed4b6961c40c6aee881d36d6e4eaf11a1e6b1c32e4b22091acb2a95ae2b6b",
+  "fixture": "Known paths, ties, all six eligibility statuses, large-ancestor isolation, six altered export fields and malformed-tree rejection passed.",
+  "source_pin_equality": "All inherited pins equal original inventory plan pins."
+}

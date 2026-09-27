@@ -5167,3 +5167,13 @@ actual-coordinate handoff, corruption rejection and checkpoint reuse fixtures
 passed. Independent source-CIF readback is queued behind the exact producer.
 Main duplication jobs continue unchanged. Reference alignments and biological
 tests remain pending. See [reference workflow](duplication-sister-references-20260926.md).
+
+
+### September 26: independent sister-reference reconstruction running
+
+A separate algorithm now checks all 218,473 reference-inventory rows against
+the fixed gene trees, native duplication calls and frozen model bridge. Leaf
+intervals and upward edge sums reconstruct sister membership, eligibility,
+nearest ties and sequence distances. Known-tree and corruption tests passed;
+the full one-CPU readback is running, not yet passed. This does not establish
+biological reference orthology. See [reference workflow](duplication-sister-references-20260926.md).
