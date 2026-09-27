@@ -8017,3 +8017,18 @@ output allowance, and 0.5–8 hours planned. Script:
 Only the first failure is characterized so far. It does not establish that every
 other discrepancy, if any, is short or numerically harmless. Full census, separate
 geometry validation and usable-cohort qualification remain required.
+
+### September 27: full short-mapping analytic validation queued
+
+Following successful completion of the full primary discrepancy census,
+`check_primary_short_alignment_geometry.py` will check every one/two-residue
+alignment, including native values that fall within rounding tolerance. One-pair
+minimum RMSD is zero; two-pair minimum RMSD is half the absolute difference of
+the two inter-residue distances. This provides an independent analytic comparison
+without SVD or quaternion fitting; none of these mappings defines a unique rigid
+rotation. Exact source hashes, mappings and all short-case counts are checked.
+
+The stage waits on the exact diagnostic process and terminal success; its resource
+plan is one CPU, 8 GiB, no swap, 1–30 minutes after the prerequisite. Metadata:
+`primary_short_geometry_{plan,launch}_20260927.json`. This does not clear the
+strict primary audit failure or qualify the full cohort for scientific inference.
