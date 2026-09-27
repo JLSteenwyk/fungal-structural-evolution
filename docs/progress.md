@@ -5435,3 +5435,13 @@ The source resolver passed complete native provenance checks and retains the
 each; no GPU or paid resources. This estimates conditional sampling sensitivity,
 not total uncertainty or calibrated acceleration. See
 [execution and limitations](recovery-20260926.md#expanded-alphafold-uncertainty-analysis-launched).
+
+
+### September 26: repository checkpoint aligned with completed analyses
+
+The README now distinguishes the 527-entry candidate manifest from the
+526-taxon analyzed cohort and reflects the completed expanded AlphaFold fit
+collection, full ESMFold conditional coupling and current duplication controls.
+A linked scientific milestone tracker retains all eight original aims and their
+remaining evidence requirements; no aim is marked complete. Current compute
+dependencies, source-specific uncertainty and coverage limitations are explicit.
