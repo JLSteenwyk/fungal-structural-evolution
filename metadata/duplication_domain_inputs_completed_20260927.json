@@ -1,0 +1,48 @@
+{
+  "status": "complete_duplication_domain_inputs_and_full_readback",
+  "recorded_utc": "2026-09-27T05:09:24.354011+00:00",
+  "producer_receipt": {
+    "status": "complete_duplication_domain_input_materialization_pending_readback",
+    "plan_sha256": "79a79833199bf2cb74555378b45b78a656ad627d260436fc33bb1e5807dae61b",
+    "inventory_receipt_sha256": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+    "coordinate_bindings": {
+      "results/structural_comparisons/duplication-coordinate-readback-20260926-v1/receipt.json": "a23a640c1d2773348ae2d34269a2194d203feba683c70e95c4a096f7c49f4be2",
+      "results/structural_comparisons/duplication-coordinate-validation-20260926-v1/receipt.json": "11a7d60a92aff0f68ca2d0acf64a432a8e3ba86dcdbfe9b250fd9f98b4c44cd6",
+      "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/receipt.json": "bac5673fecd69c1515b1d30b28845604dabe082d54576bbf25e0818bfab9846a",
+      "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/receipt.json": "84952d0b62d81aa4a89ae941471e1337b73ea68e00d373bdebeb5f92e8125fa5"
+    },
+    "intervals": 114590,
+    "source_models": 50204,
+    "input_dispositions": 229180,
+    "counts": {
+      "full:ready": 114590,
+      "plddt70:ready": 114131,
+      "plddt70:too_few_retained_residues": 459
+    },
+    "pdb_bytes": 3112003130,
+    "artifacts": {
+      "inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355"
+    },
+    "scope": "All verified alignment/envelope domain intervals extracted from independently audited full-model coordinates. Full and pLDDT70 masks preserve original protein residue positions; short masks and rejected source models explicit. PDB rounding 0.001 A and confidence 0.01. Independent domain serialization readback and alignments pending; no PAE or biological inference."
+  },
+  "audit_receipt": {
+    "status": "passed_full_duplication_domain_input_readback",
+    "plan_sha256": "c1b1287c2a4b944da4c7b1160bf5d7f68f804149e8f54dcfd81df0b5c1ed825b",
+    "producer_receipt_sha256": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+    "intervals": 114590,
+    "source_models": 50204,
+    "input_dispositions": 229180,
+    "counts": {
+      "full:ready": 114590,
+      "plddt70:ready": 114131,
+      "plddt70:too_few_retained_residues": 459
+    },
+    "verified_pdb_ca_atoms": 38397202,
+    "pdb_bytes": 3112003130,
+    "scope": "All domain/mask dispositions independently reconstructed from audited full-model arrays. Every ready PDB atom identity, original position, XYZ, confidence and occupancy checked to fixed rounding tolerances. Source rejections and short masks preserved. Does not repeat raw-CIF audit, validate physical domain boundaries or establish PAE reliability or biological effects."
+  },
+  "producer_receipt_sha256": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+  "audit_receipt_sha256": "ad905e38a1920f398810d7f2db9d42cb36a09ccc434afae448b6d7dc7a59ea69",
+  "verification": "Audit plan pins, producer binding, coordinate receipt bindings and manifest checksum verified; producer/auditor counts agree. Full PDB numerical verification performed by completed pinned auditor.",
+  "next_stage": "Domain alignment process confirmed active; alignment output validation and biological inference remain pending."
+}

@@ -5580,3 +5580,19 @@ Whole-protein and domain alignment input preparation started automatically
 after the successful readback. Structural comparisons and biological tests
 of duplication-associated divergence remain pending. See the
 [completion checkpoint](../metadata/duplication_coordinate_readback_completed_20260927.json).
+
+### September 27: duplication domain inputs verified; alignments running
+
+Prepared and independently checked all 229,180 full/pLDDT70 input dispositions
+for 114,590 domain intervals from 50,204 source models. All 114,590 full-domain
+inputs and 114,131 confidence-masked inputs are ready; 459 masks retain too
+few residues and remain explicit. The readback verified 38,397,202 PDB C-alpha
+atoms, including original residue positions, sequence, coordinates, confidence
+and occupancy at the specified serialization tolerances.
+
+Verified audit-plan pins, producer and coordinate receipt bindings, the input
+manifest checksum, and agreement of producer/auditor counts. Four USalign
+workers started automatically for the domain comparisons. Alignment validation
+and biological inference remain pending; this serialization check does not
+validate domain boundaries or inter-residue prediction confidence. See the
+[domain-input checkpoint](../metadata/duplication_domain_inputs_completed_20260927.json).
