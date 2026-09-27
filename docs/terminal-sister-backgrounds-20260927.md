@@ -662,3 +662,28 @@ extrapolation is 2.29 hours but omits hashing, I/O, audit, contention and shifts
 in domain composition, and does not sample other masks/orders. The broader
 4–72-hour planning range excludes dependencies and is not a guaranteed bound.
 All production alignments and numeric verification remain pending.
+
+## Full background domain numerical verification queued
+
+Queued `fungal-background-domain-alignment-readback-20260927.service` behind
+the verified live domain alignment controller. It checks the complete 267,716
+pair/mask/order disposition grid, checkpoint hashes, source identities and
+commands; every successful residue correspondence, exact sequence identity and
+least-squares RMSD is independently reconstructed from hashed PDBs. Native
+TM-scores are checked against the native text, not independently optimized.
+Excluded/error/timeout cases are checked for consistency, not rerun.
+
+The native fixture passed both input orders and excluded masks; deliberately
+omitting a disposition was rejected despite an updated manifest hash. The
+strict 0.00501 Å RMSD printed-rounding tolerance is unchanged. A discrepancy
+stops this audit with the precise pair/mask/order and checkpoint path in the
+error, preserving failures for review rather than qualifying them as passed.
+This matters given the previously recorded small-core discrepancy in the target
+domain audit; that earlier failure is neither erased nor waived here.
+
+Resources: one CPU, 8 GiB RAM, no swap, estimated 1 GiB output and uncalibrated
+1–48 hours after alignments finish. The checker performs no native reruns and
+uses no GPU or paid infrastructure. Production measurements, numerical
+verification, boundary/confidence sensitivity and biological effects remain
+pending. The complete background domain pipeline is now queued through its
+numerical verification stage.

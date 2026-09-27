@@ -6525,3 +6525,16 @@ verification; numerical result audit remains outstanding. See
 The previous goal turn queued full input verification; this turn supplies the
 complete downstream measurement stage. All eight original aims remain open and
 active; GPU prediction remains paused.
+
+## September 27 background domain numerical verification queued
+
+Added, tested and queued independent verification for all 267,716 background
+domain comparison dispositions. The native fixture passed both-order numeric
+reconstruction and explicit mask exclusions, and rejected a rehashed missing
+disposition. Strict RMSD tolerance remains unchanged, with exact checkpoint
+context added to numerical failures. Production verification remains pending.
+See [numerical verification scope](terminal-sister-backgrounds-20260927.md#full-background-domain-numerical-verification-queued).
+
+The previous goal turn queued domain measurements; this turn completes their
+queued verification chain. All eight scientific aims remain active and require
+further work. GPU prediction remains paused.
