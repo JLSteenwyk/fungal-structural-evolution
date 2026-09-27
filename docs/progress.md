@@ -8517,3 +8517,12 @@ experimental-only RCSB query for all 39 accessions returned zero entities, with
 full query/result readback. Homologous experimental sequences remain unsearched.
 Prepared all 39 exact sequences (19,561 residues) for future independent
 prediction without launching GPUs. See [coverage and limitations](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: experimental sequence search completed for every case model
+
+All 39 case sequences searched at RCSB with identity >=0.30 and E-value <=1e-5,
+experimental-only content and all hits retained. Twenty-seven sequences yielded
+3,091 sequence/entity matches spanning 1,205 entities. Full query/count readback
+and exact reconstruction of all 3,091 query alignments passed; twelve no-hit
+queries remain explicit. Subject metadata and experimental coordinate validation
+remain outstanding. See [sequence-search evidence](case-independent-control-coverage-20260927.md).

@@ -43,3 +43,40 @@ RCSB results are in
 Versioned provenance and readback are in
 `metadata/case_independent_control_coverage_completed_20260927.json`.
 The accession query used one HTTP worker, with no paid resource or GPU use.
+
+## Experimental sequence-similarity search
+
+The subsequent search completed all 39 full sequences using RCSB's protein
+sequence service, an identity cutoff of 0.30 and E-value cutoff of 1e-5, restricted
+to experimental entities. Every hit was retained, without representative
+selection or a coverage filter. The method follows the
+[RCSB Search API](https://search.rcsb.org/) query schema; these thresholds nominate
+comparators and do not establish functional equivalence.
+
+Twenty-seven sequences had hits and twelve had none at these settings. The
+results comprise 3,091 sequence/entity alignments and 1,205 unique experimental
+polymer entities. Raw verbose responses preserve reported alignments and scores.
+Every query and response count passed readback. Each query alignment was
+reconstructed against its exact original sequence; aligned-column and paired-
+residue counts, identity denominators, and query/subject span coverage are
+exported explicitly. Subject spans have valid lengths, but independent subject
+sequence and coordinate verification remain outstanding. Query alignment
+coverage must not be reported as experimentally observed residue coverage.
+
+Run `scripts/search_case_experimental_homologs.py` for the fixed restartable
+search and `scripts/readback_case_experimental_search.py` for the full readback.
+The former caches each request/response under a fixed configuration and preserves
+all 39 query dispositions, including no-hit queries. The latter waits on the
+recorded process identity and requires successful termination. Both services
+completed successfully without GPU or paid-resource use.
+
+Raw search results are in
+`results/experimental_structures/whole-domain-case-sequence-search-20260927-v1`;
+validated alignment-context rows are in
+`results/experimental_structures/whole-domain-case-sequence-readback-20260927-v1`.
+Versioned hashes and counts are in
+`metadata/case_experimental_sequence_search_completed_20260927.json`.
+Next, entity sequences, constructs, domain coverage, experimental quality,
+observed residues and model-training overlap must be checked before selecting
+structural controls. Results from related proteins are not exact-sequence
+validation of the fungal cases.

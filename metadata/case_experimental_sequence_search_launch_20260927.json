@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-case-experimental-sequence-search-20260927.service",
+  "pid": 397301,
+  "created": 1790538632.35,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/search_case_experimental_homologs.py"
+  ],
+  "script_sha256": "64ae2b6c4c880888a88be1c0912599d55b8c412d02f3f91e338b58b80d64c0e0",
+  "resources": {
+    "cpus": 1,
+    "http_workers": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_minutes": [
+      2,
+      30
+    ]
+  }
+}
