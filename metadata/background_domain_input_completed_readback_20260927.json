@@ -1,0 +1,16 @@
+{
+  "status": "passed_full_background_domain_input_readback",
+  "plan_sha256": "180b7535a57a6f93858a3d8c7a4bae0609a0fcefd254b952f6b4bbe404346ef3",
+  "producer_receipt_sha256": "cf739db141486df40059e8ce46c39596f6e59509a9a2a5f644930adc352e2ba5",
+  "intervals": 131986,
+  "source_models": 54004,
+  "input_dispositions": 263972,
+  "counts": {
+    "full:ready": 131986,
+    "plddt70:ready": 131639,
+    "plddt70:too_few_retained_residues": 347
+  },
+  "verified_pdb_ca_atoms": 40907133,
+  "pdb_bytes": 3315586773,
+  "scope": "All domain/mask dispositions independently reconstructed from audited full-model arrays. Every ready PDB atom identity, original position, XYZ, confidence and occupancy checked to fixed rounding tolerances. Source rejections and short masks preserved. Does not repeat raw-CIF audit, validate physical domain boundaries or establish PAE reliability or biological effects."
+}

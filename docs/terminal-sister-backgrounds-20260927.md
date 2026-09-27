@@ -995,3 +995,37 @@ duplicate jobs or new structure predictions were launched.
 This completes coordinate validation, not structural-distance estimation or
 the duplication-effect analysis. Whole-chain and domain comparisons and their
 numerical checks remain downstream. GPU prediction remains paused.
+## Background comparison inputs complete; alignments running
+
+Whole-chain input production completed all 148,104 additional models under both
+masks (296,208 dispositions): 148,104 full inputs and 145,522 pLDDT70 inputs are
+ready; 2,582 confidence masks retain too few residues and remain explicit.
+The exported PDBs occupy 8,926,165,745 bytes. Verified the complete two-mask
+manifest grid, unique identities, sequence/position lengths, all disposition
+counts, manifest hash, plan binding and successful producer termination.
+This checkpoint does not independently reread every whole-chain PDB; upstream
+raw-CIF validation and downstream alignment checks have separate scopes.
+
+Domain input production completed 131,986 intervals from 54,004 models under
+both masks (263,972 dispositions). All full intervals and 131,639 pLDDT70
+intervals are ready; 347 masked intervals retain too few residues. The domain
+PDBs occupy 3,315,586,773 bytes. The independent full domain serialization audit
+also passed: every accepted atom identity, original residue position, XYZ,
+confidence and occupancy was checked, covering **40,907,133 C-alpha atoms**
+across the full and filtered exports. This atom count includes repeated
+observations across masks and overlapping intervals, not unique residues.
+
+Completion evidence is archived in
+`metadata/background_input_stages_completed_20260927.json` and
+`metadata/background_domain_input_completed_readback_20260927.json`.
+Producer and domain-auditor units terminated successfully. Both previously
+queued comparison controllers advanced automatically and were verified live
+by PID, creation time and command. Whole-chain comparisons had processed
+448/285,800 directed mask dispositions and domain comparisons 9,344/267,716
+at the checkpoint. These counters include explicit unavailable inputs and
+are not counts of independently validated evolutionary effects.
+
+Structural-distance execution and numerical readback remain unfinished.
+Confidence filtering does not establish PAE reliability or physical domain
+boundaries, and full versus masked scores use different length denominators.
+No structure predictions or duplicate comparison jobs were started.

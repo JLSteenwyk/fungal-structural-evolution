@@ -1,0 +1,75 @@
+{
+  "status": "completed_background_input_production_and_domain_readback_verified",
+  "checked_at": "2026-09-27T11:47:29.359376+00:00",
+  "input_stages": [
+    {
+      "kind": "whole_chain",
+      "receipt_path": "results/structural_comparisons/background-alignment-inputs-20260927-v1/receipt.json",
+      "receipt_sha256": "fee9796b3072b6701eaa020e51387620b8e90a7f1ea114e0fc1bd2c613edae0c",
+      "identities": 148104,
+      "input_dispositions": 296208,
+      "counts": {
+        "full:ready": 148104,
+        "plddt70:ready": 145522,
+        "plddt70:too_few_retained_residues": 2582
+      },
+      "pdb_bytes": 8926165745,
+      "terminal_state": [
+        "MainPID=0",
+        "ExecMainStatus=0",
+        "ActiveState=inactive"
+      ]
+    },
+    {
+      "kind": "domain",
+      "receipt_path": "results/structural_comparisons/background-domain-inputs-20260927-v1/receipt.json",
+      "receipt_sha256": "cf739db141486df40059e8ce46c39596f6e59509a9a2a5f644930adc352e2ba5",
+      "identities": 131986,
+      "input_dispositions": 263972,
+      "counts": {
+        "full:ready": 131986,
+        "plddt70:ready": 131639,
+        "plddt70:too_few_retained_residues": 347
+      },
+      "pdb_bytes": 3315586773,
+      "terminal_state": [
+        "MainPID=0",
+        "ExecMainStatus=0",
+        "ActiveState=inactive"
+      ]
+    }
+  ],
+  "domain_readback_path": "results/structural_comparisons/background-domain-input-readback-20260927-v1.json",
+  "domain_readback_sha256": "c0f6f36ad186a23f9210c0c4a5c6e35699be748db99d4940169c49003c801b66",
+  "domain_verified_pdb_ca_atoms": 40907133,
+  "domain_readback_terminal_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "verified_live_alignment_controllers": [
+    {
+      "service": "fungal-background-alignments-20260927.service",
+      "pid": 2038561,
+      "created": 1790501114.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_background_alignments.py",
+        "--plan",
+        "metadata/background_alignment_plan_20260927.json"
+      ]
+    },
+    {
+      "service": "fungal-background-domain-alignments-20260927.service",
+      "pid": 2057145,
+      "created": 1790501839.45,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_background_domain_alignments.py",
+        "--plan",
+        "metadata/background_domain_alignment_plan_20260927.json"
+      ]
+    }
+  ],
+  "scope": "Complete two-mask manifest grids, all summary counts, manifest hashes and successful producer exits verified. Full independent domain PDB readback passed. Whole-chain exported coordinate serialization is not separately re-read here; its upstream raw-CIF audit and alignment-stage checks remain recorded separately. No completed structural-distance or biological-effect claim."
+}

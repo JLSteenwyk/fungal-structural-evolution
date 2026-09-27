@@ -7068,3 +7068,18 @@ bootstrap tables and visually inspected the PNG. All guide/coding conditions
 and zero-probability bins remain explicit, without treating conditional mapping
 frequencies as independent biological origins. Source hashes and review evidence
 are archived. All eight scientific aims remain open; GPU prediction is paused.
+## September 27 background structural comparisons advanced
+
+The previous turn completed the ecological uncertainty figure. This turn
+verified completed whole-chain and domain background input production across
+296,208 and 263,972 mask dispositions, respectively. Recounted every manifest
+row, checked complete two-mask grids and source/plan hashes, and confirmed
+successful producer termination. The full domain serialization audit also
+passed for 40,907,133 exported C-alpha atoms; this includes repeated mask and
+interval observations. Its proof is archived separately.
+
+Both whole-chain and domain alignment controllers automatically advanced and
+were verified live. Their counters reached 448/285,800 and 9,344/267,716 directed
+dispositions at the checkpoint. The local codon tree producer was also verified
+live with 1,502 case receipts. No unfinished comparison or scientific aim is
+claimed complete. GPU prediction remains paused.
