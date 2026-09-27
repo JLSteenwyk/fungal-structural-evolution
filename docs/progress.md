@@ -6186,3 +6186,19 @@ alignment/resampling processes were observed. This turn completes a reproducible
 figure deliverable and its verification. The complete objective, including
 matched backgrounds and phylogenetic tests, remains unfinished; GPU prediction
 remains paused.
+
+## September 27 terminal sister background inventory launched
+
+Launched an exhaustive terminal sister-pair inventory across both complete
+resolved-tree sets (140,719 trees total). It retains reported duplication and
+parent flags, sequence divergence, model availability and excluded categories
+to support a future matched comparison pool. Cross-taxon unreported nodes are
+explicitly provisional, not established speciations or matched controls.
+Known-tree fixtures passed; production identity was verified live and recorded.
+Full production reconstruction, guide/orthology checks and matching remain next.
+See [scope and resource plan](terminal-sister-backgrounds-20260927.md).
+
+The preceding goal turn made progress by completing and publishing the
+candidate-control figure. This turn starts the missing background-analysis
+stage without waiting for whole-protein alignments. All eight scientific aims
+remain open and GPU prediction remains paused.

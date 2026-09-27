@@ -1,0 +1,15 @@
+{
+  "service": "fungal-terminal-sister-background-20260927.service",
+  "pid": 4046903,
+  "created": 1790498121.6,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/inventory_terminal_sister_backgrounds.py",
+    "--plan",
+    "metadata/terminal_sister_background_plan_20260927.json"
+  ],
+  "plan": "metadata/terminal_sister_background_plan_20260927.json",
+  "plan_sha256": "080662777e65e0bc50aeddd719d073048f3fd05ceb25bca81a5df0e1844eeb80",
+  "fixture_status": "passed_known_tree_cases",
+  "scope": "Production inventory running, not yet independently verified or eligible as matched controls."
+}

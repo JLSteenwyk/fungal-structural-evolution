@@ -1,0 +1,49 @@
+{
+  "bridge": "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite",
+  "guides": [
+    {
+      "guide": "profile",
+      "events": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv",
+      "trees": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+      "tree_readback": "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json",
+      "species": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt",
+      "expected_trees": 70307
+    },
+    {
+      "guide": "mafft",
+      "events": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv",
+      "trees": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+      "tree_readback": "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json",
+      "species": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt",
+      "expected_trees": 70412
+    }
+  ],
+  "output": "results/orthology/terminal-sister-background-inventory-20260927-v1",
+  "pins": {
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/structures/whole-proteome-family-coverage-20260922-v1/structure_family_bridge.sqlite": "0aedd40aab07dcafb9626440c0eb5659ad6a254c4574a11350d06bb9eead75a8",
+    "scripts/inventory_terminal_sister_backgrounds.py": "0a3fa3e3e98fbb4f65387a1e8030fe12f15b32bb1b90a3291da1eb447ade6e88",
+    "scripts/check_terminal_sister_background_cases.py": "890fda7ae1198c3fa0b38d72316d2a2e741db5356a6a64d19799dedcc540d6b3",
+    "scripts/inventory_duplication_sister_references.py": "d95f31c9916500d92577dcbe359e3888cec40c946688c88e84e3e9a6e53b668d",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "minimum_free_disk_bytes": 107374182400,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "140719 resolved trees, approximately 10.2 million total gene tips; at most half as many terminal sister pairs. Stream trees and output; retain model lookup and reported duplication node sets in memory. Existing CPU only, no predictions, paid resources or pairwise Cartesian expansion. Runtime is an uncalibrated planning range."
+  }
+}
