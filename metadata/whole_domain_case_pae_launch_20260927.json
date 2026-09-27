@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-case-pae-retrieval-20260927.service",
+  "pid": 390322,
+  "created": 1790538100.74,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retrieve_marker_pae.py",
+    "--snapshot",
+    "results/structural_comparisons/whole-domain-case-pae-inputs-20260927-v1",
+    "--output",
+    "results/structural_comparisons/whole-domain-case-pae-20260927-v1"
+  ],
+  "script_sha256": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+  "snapshot_receipt_sha256": "40125a13568bb5a9777d60a118617cfd8d1f05cc9ddb120fc2bfb82cdc4aebb6",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "http_workers": 2,
+    "swap_gib": 0,
+    "output_gib": 0.5,
+    "planning_minutes": [
+      1,
+      30
+    ]
+  }
+}

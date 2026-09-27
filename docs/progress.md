@@ -8489,3 +8489,12 @@ Jaapia's outside contrast spans zero after independent outside fitting but is
 consistently negative under the domain transform; this motivates an arrangement
 hypothesis, not a mechanism claim. Heliocybe and Phycomyces retain outside direction
 under both fits. See [paired contrasts](domain-anchored-displacement-20260927.md).
+
+### 2026-09-27: exact case-model PAE retrieved and independently verified
+
+Retrieved all 39 PAE matrices for the 13 whole/domain cases, with exact model
+versions and full-sequence provenance. Independent full readback checked every
+one of 11,389,053 matrix entries, compressed/raw hashes and all manifest records;
+zero models failed. Both services terminated successfully. Regional confidence
+qualification remains downstream. No new structure predictions were run.
+See [case PAE](whole-domain-case-pae-20260927.md).
