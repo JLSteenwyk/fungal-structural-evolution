@@ -5490,3 +5490,13 @@ coverage criteria, with 14.81% pooled state disagreement. Disagreement is 48.32%
 with a changed spatial partner versus 6.94% with the same partner; this is
 association, not causation or experimental error calibration. Threshold cohorts
 change substantially. See [full-model controls](prediction-source-controls.md#full-model-confidence-and-partner-context-sensitivity).
+
+
+### September 26: matched-model confidence/coverage figure completed
+
+A reproducible three-panel figure shows structural-state disagreement, eligible
+model-pair counts and retained residues across all 12 confidence settings.
+Every plotted value was checked against audited summaries and the rendered PNG
+inspected. The figure makes threshold-dependent cohort changes explicit; no
+causal confidence effect or calibrated error rate is implied. See
+[figure and reproduction](prediction-source-controls.md#confidencecoverage-figure).

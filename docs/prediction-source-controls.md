@@ -434,3 +434,25 @@ Source acquisition and cohort overlap remain highly selective. Neither these
 model pairs nor their residues are independent samples of fungal evolutionary
 change. Full prediction-configuration stratification and connection to leading
 branch/site results remain unfinished.
+
+
+### Confidence/coverage figure
+
+![Full-model disagreement and retained coverage](figures/overlap_model_feature_confidence_20260926.png)
+
+[Download PDF](figures/overlap_model_feature_confidence_20260926.pdf).
+All 36 plotted values were checked against the independently verified threshold
+summary, all artifact hashes checked, and the PNG visually inspected. The plot
+shows disagreement alongside the changing model-pair and residue denominators;
+its connecting lines identify sensitivity settings, not a calibrated response
+to confidence. Evidence is in
+`metadata/overlap_model_feature_figure_completed_20260926.json`.
+
+Reproduce using fresh output paths:
+
+```bash
+python scripts/plot_overlap_model_features.py \
+  --comparison results/phylogeny/overlap-model-feature-comparison-20260926-v1 \
+  --readback metadata/overlap_model_feature_comparison_completed_20260926.json \
+  --output <fresh-output-directory> --figure-prefix <fresh-figure-prefix>
+```

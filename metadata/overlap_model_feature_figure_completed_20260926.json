@@ -1,0 +1,21 @@
+{
+  "status": "passed_overlap_model_feature_figure_readback",
+  "producer_receipt": "results/phylogeny/overlap-model-feature-figure-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "5df8221ddea1c24497c22dcbabeba8fc7a2d44b8af7abfa35ca074048384f53a",
+  "receipt": {
+    "status": "complete_overlap_model_feature_figure",
+    "producer_receipt_sha256": "b1a1d196208526976f8054293b7d05fdadb2ed8b12cae48ef73a14a1f7243139",
+    "readback_sha256": "84adc2a2308f08d86a6a7710286dc608c7729f50dec4777c3ce89ce2b88a812f",
+    "source_table_sha256": "0882b68f32ec051bc3394a874833428a267ee9949a5c47181bf57d1e994455b1",
+    "script_sha256": "b19fad57d485f809a34b6462ad1018b8c1883e70ef64b88fa02d2a924e9553e9",
+    "plotted_values": 36,
+    "artifacts": {
+      "docs/figures/overlap_model_feature_confidence_20260926.png": "86d76b62d7454458c09209e565e1e5e6c01cabef89d694cedccb5657be30ff16",
+      "docs/figures/overlap_model_feature_confidence_20260926.pdf": "2e5d4859ca3be39f4eac4f800067a8374ee47c35901b114e6e54b44abab60836",
+      "results/phylogeny/overlap-model-feature-figure-20260926-v1/plotted_values.tsv": "d45d9fc8317b904b1a1966d6faa591b801e7fd1762f13eb2ff7f047f800c260c"
+    },
+    "scope": "All twelve verified confidence alternatives with explicit pair/residue denominators. Lines connect sensitivity settings, not a calibrated response to confidence; no causal or accuracy claim."
+  },
+  "verified_plotted_values": 36,
+  "verification": "Every plotted value checked against audited threshold summary; all artifact hashes checked. PNG visually inspected."
+}
