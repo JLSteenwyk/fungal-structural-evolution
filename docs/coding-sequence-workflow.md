@@ -1221,3 +1221,38 @@ source-contamination and copy caveats, including the 29 FCS-omission groups
 that fall below four taxa. Passing this information screen does not override
 those requirements or establish homology correctness, identifiability, or
 selection-test eligibility.
+## Full local-alignment nucleotide trees running
+
+The complete local-alignment sensitivity analysis now runs 1,632 supported
+nucleotide-tree diagnostics. Of the full 1,712-case ledger, 51 cases fail the
+existing information screen and 29 have fewer than four taxa after the declared
+FCS EXCLUDE/FIX/TRIM omission policy. All cases remain in
+`metadata/local_codon_tree_information_20260927.tsv`. Copy caveats and historical
+fit warnings remain attached to eligible diagnostic cases; these fits do not
+establish selection eligibility.
+
+The historical FCS-disposition table covered only the 1,655 original fitted
+cases. Preparation therefore checks all local FASTA taxon sets directly against
+the independently audited, full marker/CDS FCS overlap table, reproduces the
+original dispositions where available, and checks the 57 formerly unfitted
+cases explicitly. An independent pandas/action-filter and manual FASTA join
+verified all 1,712 new dispositions. Absence of a recorded overlap does not
+certify a sequence as contamination-free.
+
+`scripts/prepare_local_codon_tree_plan.py` records input, proof, executable-helper
+and script hashes in `metadata/local_codon_tree_resource_plan_20260927.json`.
+`scripts/run_local_codon_trees.py` is a separate variant of the existing runner;
+the original remains unchanged. It uses the same deterministic per-case seeds,
+GTR+F+G4 nucleotide model, retained identical sequences, 1,000 SH-aLRT replicates
+and 1,000 UFB replicates with bootstrap NNI and saved trees. Four single-thread
+jobs run under a four-CPU/16-GiB systemd limit with no swap. The planning allowance
+is 10 GB output and 1–96 hours, not a measured completion estimate; no GPU or paid
+resources are used.
+
+Live identity is recorded in `metadata/local_codon_tree_launch_20260927.json`;
+output is `results/phylogeny/local-codon-trees-20260927-v1`. Per-case receipts
+verify inputs, tree tips, finite edges and bootstrap tip grids. The existing
+full tree audit must subsequently verify reports, splits and support counts
+before tree comparisons or downstream codon fits are interpreted. Execution,
+full output audit and alignment-dependent topology/parameter comparisons are
+not yet complete.

@@ -6912,3 +6912,20 @@ advance an analysis. This continuation completes the full integration rather
 than treating the status report as scientific progress. Local phylogenetic and
 model sensitivity remains next; no selection eligibility is established. All
 eight scientific aims remain open. GPU prediction remains paused.
+## September 27 full local-alignment tree diagnostics launched
+
+The previous goal turn completed the full alignment/readiness integration.
+This turn uses it to launch 1,632 supported nucleotide-tree fits, matching the
+original model, deterministic seeds and 1,000-replicate support design. All
+1,712 groups remain accounted for: 29 are below four taxa after FCS omission,
+and 51 fail the information screen. The source-overlap join was extended to
+the 57 previously unfitted cases and independently checked across every case.
+Copy and historical model warnings remain explicit. Resource limits are four
+CPUs/16 GiB, no swap, and 10 GB planned output on existing local resources.
+
+The live controller identity and child IQ-TREE processes were verified. The
+ecology bootstrap audit was separately verified live at PID 2165039 with exact
+creation time and command; its checkpoint had reached 990/2,000 trees. No live
+pinned script was modified. Full tree audits, topology sensitivity and codon
+model adequacy remain downstream. All eight aims remain open; GPU structure
+prediction remains paused.
