@@ -6052,3 +6052,20 @@ revalidated by PID, creation time and command; neither was restarted. The prior
 goal turn made progress by inventorying and launching missing calculations; this
 turn adds tested integration code and an executing, completion-gated handoff.
 GPU prediction remains paused and the broader scientific aims remain open.
+
+## September 27 recovered gene-tree exposure integration prepared and queued
+
+Exported and independently checked all 125 selected native AA topologies (95
+unchanged, 30 refitted), including exact native paths, receipt/tree hashes,
+alignment hashes and tip sets. The matched grid has 47,529 sites and 9,453,757
+observed residue cells. No new tree inference is claimed.
+
+Queued explicit collection-aware site exposure summaries and independent
+character-score/quantile readback behind the verified live accessibility
+integration controller. The numerical algorithms are unchanged from the
+existing workflow; the source resolution now handles the recovered collection
+without treating it as one native fit directory. See
+[methods and limitations](recovered-afdb-accessibility-20260927.md).
+The previous turn made progress by implementing and queuing the full projection;
+this turn completes verified topology preparation and its downstream handoff.
+The scientific aims and GPU prediction pause remain unchanged.

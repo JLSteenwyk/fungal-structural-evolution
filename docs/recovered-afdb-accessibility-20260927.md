@@ -93,3 +93,44 @@ The union, paired projection and normalized tables will use the
 `results/recovery-20260927/afdb-accessibility-projection/`.
 These are queued outputs, not completed results. No tree/exposure integration or
 sequence–structure coupling completion is implied by the integration launch.
+
+## Verified gene-tree sources and queued site summaries
+
+The recovered collection combines 95 unchanged native marker fits with 30
+refitted marker fits. `prepare_collection_topologies.py` resolved all 125 through
+that collection's audited source inventory and exported relative symlinks to the
+exact native AA trees. Every tree was independently checked against its native
+receipt, selected source path, expanded alignment hashes and exact tip set.
+The full grid contains 47,529 sites and 9,453,757 observed residue cells.
+Evidence is `metadata/recovered_afdb_collection_topologies_completed_20260927.json`.
+This exports existing topologies; it does not infer new trees or uncertainty.
+
+Reproduce with `scripts/prepare_collection_topologies.py` and arguments:
+
+- `--inputs results/phylogeny/paired-inputs-afdb-recovered-20260925-v1`
+- `--models data/structural_models/garg-hochberg-v3`
+- `--collection results/phylogeny/paired-fit-tables-afdb-recovered-20260926-v1`
+- `--inventory metadata/recovered_afdb_fit_source_inventory_20260926.json`
+- `--output results/phylogeny/collection-topologies-afdb-recovered-20260927-v1`
+
+A separate controller now waits for accessibility projection, normalization and
+both readbacks. It will apply the established minimum-change recurrence to AA
+and 3Di states on each verified topology and summarize extant accessibility
+quantiles. The independent set-based recurrence will check all 95,058 character
+scores; a separate quantile implementation will check all 285,174 exposure
+quantiles, including unavailable values. All observed identities, states and
+model counts are checked as well.
+
+Scripts `summarize_collection_site_exposure.py` and
+`readback_collection_site_exposure.py` use the explicit topology collection;
+the numerical algorithms match the existing single-run implementations. The
+plan `metadata/recovered_afdb_site_exposure_plan_20260927.json` pins scripts,
+inputs and the completed topology readback. The launch record identifies the
+live waiting controller. Resources are one CPU, 48 GiB RAM, no swap and 2 GiB
+output, with 64 GiB available-memory and 100 GiB disk gates; the 0.25–12 hour
+planning allowance excludes predecessor wait time.
+
+These summaries remain pending. Parsimony counts are alphabet-dependent minimum
+changes, not rates or branch assignments. Exposure quantiles summarize extant
+observations, not ancestral exposure or a phylogenetically adjusted effect.
+The subsequent rate/exposure join and controlled coupling inference remain open.
