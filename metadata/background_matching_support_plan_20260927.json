@@ -1,0 +1,46 @@
+{
+  "source": "results/orthology/terminal-background-orthology-20260927-v1",
+  "readback": "metadata/terminal_background_orthology_completed_readback_20260927.json",
+  "dependency": {
+    "service": "fungal-terminal-background-orthology-readback-20260927.service",
+    "pid": 234675,
+    "created": 1790498976.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_orthology.py",
+      "--config",
+      "metadata/terminal_background_orthology_readback_plan_20260927.json"
+    ],
+    "config": "metadata/terminal_background_orthology_readback_plan_20260927.json",
+    "config_sha256": "6cbc8cad1a8b9a7112e105193d8b794a566e7d0ed3411a1da149bf7e9b8bd254",
+    "fixture_status": "passed_91_known_membership_queries_empty_and_corrupt_cases"
+  },
+  "inventory": "results/orthology/terminal-sister-background-inventory-20260927-v1",
+  "inventory_readback": "metadata/terminal_sister_background_completed_readback_20260927.json",
+  "targets": "results/orthology/duplication-candidate-tree-review-20260926-v1",
+  "output": "results/orthology/background-matching-support-20260927-v1",
+  "pins": {
+    "metadata/terminal_background_orthology_readback_launch_20260927.json": "7815289ecab862d22e43167ef0978c0a1acf425c77189f7551eece26a164ede0",
+    "metadata/terminal_sister_background_completed_readback_20260927.json": "c595eca1b5814980dbdb3b09c1050954fafe226b58344fc31c22f0310162db49",
+    "results/orthology/terminal-sister-background-inventory-20260927-v1/receipt.json": "71888195630cdef33bfb9ad6a3618e9a9b3ef09257747eee7bf8fdad2511ce27",
+    "results/orthology/duplication-candidate-tree-review-20260926-v1/receipt.json": "958812c1b7591ec8bf0d9840a600529f5d8b40b1b4a7fb0ce898716f5bb709df",
+    "scripts/assess_background_matching_support.py": "90c8cbfc559f862cd5c14365ec250a700966850cc0d403c532d9821e0fe28c15",
+    "scripts/check_background_support_cases.py": "8645a022b0d880fb66b57adf78c70a141aa4396ccb4d94d84a1ac6bc99a1ea18",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/terminal-sister-background-inventory-20260927-v1/profile_terminal_sisters.tsv": "c88f6085e3741aee60fca509c061d09454f4f84e3c67bfd7b5658542491ce74c",
+    "results/orthology/terminal-sister-background-inventory-20260927-v1/mafft_terminal_sisters.tsv": "64e5875f0f3cef97038b0fa4b0f7cf1d39ea890a04d078b65e2ed2acc05a3b11",
+    "results/orthology/duplication-candidate-tree-review-20260926-v1/profile_candidate_tree_checks.tsv": "ee328fd4c7e7d8a5861197237aec0c67c65cbdf1e4adad663cf9182eb28a037f",
+    "results/orthology/duplication-candidate-tree-review-20260926-v1/mafft_candidate_tree_checks.tsv": "0187c1b75bcd735dc3df73992465f0ef8799fe724ff8b74abc8770d39d3b5d27"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "basis": "All 218473 reviewed guide-specific targets, three background sets (655419 expected rows), three multiplicative sequence-distance windows with focal/nonfocal partitions. Sorted per-family/taxon distance arrays and binary counts avoid Cartesian pair expansion. No structural outcomes, GPU or paid resources; excludes dependency wait."
+  }
+}

@@ -219,3 +219,40 @@ One CPU, 4 GiB RAM, no swap, 2 GiB output and a 0.1–2 hour planning range excl
 waits are budgeted. This stage parses no coordinates and launches no predictions
 or alignments. Full output readback, additional-coordinate validation,
 domain/coverage comparisons and matching remain necessary.
+
+## Guide union verified and pre-matching support queued
+
+The full independent guide-union check passed all 3,154,373 source records,
+1,582,382 union rows and the exact 78,372-row modeled subset. See
+[readback evidence](../metadata/terminal_sister_guide_comparison_completed_readback_20260927.json).
+Native membership production also completed: 77,863 present/509 absent in the
+profile stream and 77,857 present/515 absent in MAFFT. Independent membership
+validation is still running; absence is not itself proof of paralogy.
+
+`assess_background_matching_support.py` is queued after successful membership
+readback. It retains all 218,473 reviewed guide-specific two-model duplicate
+targets, including identical-model targets. The target pair, family, taxon and
+node must match the independently audited terminal inventory. For each guide,
+three background sets are considered: that guide's cross-taxon candidates with
+native orthology, candidates qualified in both guides, and the latter with
+unreported parents in both guides. All available models, including identical
+models, remain in these feasibility pools.
+
+For each target and set, count same-family backgrounds, those involving the
+focal taxon, and those involving neither focal taxon. Also count each category
+within multiplicative sequence-distance ranges of 1.25, 1.5 and 2.0 around the
+target. These are descriptive sensitivity ranges, not calibrated matching
+criteria. A zero target distance matches only exactly zero background distances;
+no pseudocount is introduced. Pool counts are not numbers of independent events
+or guarantees of usable structural comparisons. Targets with no support remain
+in the 655,419-row output. No outcome-dependent target selection is performed.
+
+Plan: `metadata/background_matching_support_plan_20260927.json`; output:
+`results/orthology/background-matching-support-20260927-v1`. One CPU, 4 GiB RAM,
+no swap, 1 GiB output and 0.1–2 hours excluding wait are budgeted. Per-family
+sorted arrays and binary interval counts avoid Cartesian pair expansion.
+Eighteen enumerated interval fixtures, zero/empty cases and nested qualification
+sets passed. Production support counts and full independent validation remain
+pending. This diagnoses possible support only: domain architecture, length,
+confidence, coverage, taxonomic balance and shared ancestry still require
+assessment before any matched effect test.

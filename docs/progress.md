@@ -6304,3 +6304,20 @@ coordinate parsing, alignment or prediction was launched. See
 The prior turn archived the full inventory audit and added membership readback;
 this turn advances the pool toward measured controls. Matching and scientific
 tests remain unfinished. The full objective remains active; GPU prediction is paused.
+
+## September 27 guide union verified and matching-support assessment queued
+
+Full guide-union readback passed every source row, all 1,582,382 union rows and
+the exact 78,372 modeled candidate subset; archived its receipt. Native ortholog
+membership production completed with 509 profile and 515 MAFFT absences;
+independent membership checking is active.
+
+Launched a gated support assessment for all 218,473 reviewed duplicate target
+records and three qualification sets. It counts same-family backgrounds,
+focal/nonfocal taxon representation and three relative sequence-distance ranges,
+retaining exact-zero and unsupported targets. No matches or structural outcomes
+are selected. Eighteen interval fixtures and eligibility/zero/empty cases passed.
+See [design and limits](terminal-sister-backgrounds-20260927.md#guide-union-verified-and-pre-matching-support-queued).
+The prior turn prepared measurement work partitions; this turn verifies the
+full guide union and adds a pre-matching support diagnostic. Full project aims
+remain open and GPU prediction remains paused.
