@@ -1,0 +1,15 @@
+{
+  "service": "fungal-codon-divergence-comparison-20260927.service",
+  "pid": 2519444,
+  "created": 1790510002.67,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_codon_alignment_divergence.py",
+    "--plan",
+    "metadata/codon_alignment_divergence_comparison_plan_20260927.json",
+    "--wait-for",
+    "metadata/local_mg94_normalization_launch_20260927.json"
+  ],
+  "plan_sha256": "f4e8438c93c91bd469ecfd090dbcb3f4057204ce06886aeac72db89fd64d96c1",
+  "status": "verified_live_waiting_for_complete_local_normalization"
+}

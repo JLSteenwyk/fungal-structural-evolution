@@ -1,0 +1,27 @@
+{
+  "original": {
+    "fits": "results/cds/genus-mg94-diagnostics-v3",
+    "normalization": "results/cds/genus-mg94-normalized-branches-v2",
+    "audit": "results/cds/genus-mg94-audit-full-v3"
+  },
+  "local": {
+    "fits": "results/cds/local-mg94-diagnostics-20260927-v1",
+    "normalization": "results/cds/local-mg94-normalized-branches-20260927-v1",
+    "audit": "results/cds/local-mg94-audit-20260927-v1"
+  },
+  "ledger": "results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv",
+  "output": "results/cds/codon-alignment-divergence-comparison-20260927-v1",
+  "scope": "Full original-baseline versus local normalized divergence sensitivity; all 1712 cases retained.",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gb": 1,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "cost": "Existing local CPU host; no new charges"
+  },
+  "script_sha256": "bf36817b51793b6879b0823f966fc5e7428e99ed5ffa52e4f955af0334696edf"
+}

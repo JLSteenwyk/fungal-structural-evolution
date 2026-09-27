@@ -7097,3 +7097,16 @@ Topology comparison and codon refits are still gated on that audit. Primary and
 reference structural-comparison production also remain unfinished; no duplicate
 jobs were started. All eight scientific aims remain open and GPU prediction
 remains paused.
+## September 27 normalized codon divergence comparison queued
+
+The previous turn verified full local-tree production. This turn implements
+the downstream normalized original-versus-local comparison using exact taxon
+sets and unrooted splits rather than node labels. The full original identity
+check passed for 1,655 fitted cases, 18,407 branches and 40,935 pairs. All
+1,712 ledger cases remain accounted for. The comparison is queued behind local
+normalization under one CPU/8 GiB RAM, and its exact live identity is recorded.
+
+Independent reconstruction of the actual comparison remains pending, as do
+biological adequacy and selection testing. Historical optimization flags are
+preserved; baseline fits are not claimed optimal. All eight aims remain open,
+and GPU prediction remains paused.

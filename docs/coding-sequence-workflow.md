@@ -1458,3 +1458,35 @@ verified live by PID, creation time and command. Its full report, split and
 support reconstruction is not yet complete. The queued tree comparison and
 codon refits retain their audit dependency; this production checkpoint does
 not establish topology stability, model adequacy or selection eligibility.
+## Full normalized-divergence sensitivity comparison queued
+
+`scripts/compare_codon_alignment_divergence.py` now waits for completed local
+normalization, then compares the audited original baseline and local fits under
+the same equal-alternative site-opportunity convention. It verifies full clean
+fit audits, exact fit/normalization case bindings, artifact hashes, code labels
+and tree-node grids. Matched cases must have identical taxon sets and genetic
+codes. All 1,712 ledger cases remain visible, including unmatched/unfitted cases.
+
+The output records case-level global omega and total normalized dS/dN tree
+distances, shared-branch distance differences using canonical unrooted splits,
+and all taxon-pair path-distance differences. Internal node labels are never
+used to match branches across fits. Absent splits remain missing rather than
+receiving zero length, and their differences are not computed. Path distances
+can be compared across topology changes on the exact same taxon pairs.
+
+A complete original-versus-itself check passed for all 1,655 fitted cases,
+18,407 branch rows and 40,935 pair rows, with every difference exactly zero.
+The plan and evidence are `metadata/codon_divergence_identity_plan_20260927.json`
+and `metadata/codon_divergence_identity_readback_20260927.json`. This checks
+identity behavior, not the pending realignment results; independent full
+comparison reconstruction remains required.
+
+The actual comparison plan and live identity are
+`metadata/codon_alignment_divergence_comparison_plan_20260927.json` and
+`metadata/codon_alignment_divergence_comparison_launch_20260927.json`.
+Output is planned under `results/cds/codon-alignment-divergence-comparison-20260927-v1`,
+using one CPU/8 GiB RAM, no swap, 1 GB output and 0.01–2 hours after normalization.
+No GPU or paid resources are used. Original baseline fits are not substituted
+with later multistart optima; historical warnings remain attached explicitly.
+These are descriptive, correlated sensitivity measurements, not cross-alignment
+likelihood tests, branch omega estimates or evidence of positive selection.
