@@ -73,3 +73,13 @@ were rejected (`metadata/joint_support_certificate_checks_20260927.json`).
 Unresolved certificates remain unresolved; numerical hull support does not
 establish dense overlap or model adequacy. Planned resources are one CPU,
 16 GiB RAM, no swap, and 0.25–12 hours after the producer finishes.
+
+A separate failure summary is queued after successful independent readback
+(`metadata/joint_support_failure_summary_launch_20260927.json`). It classifies
+every saved certificate by negative weights, weight sum, primal objective,
+direction norm, inconsistent bounds, solver failure, or an unresolved boundary.
+It retains original classifications and makes no certificate corrections.
+The inspected partial output contained tiny negative optimizer weights; this
+is a numerical certificate issue and does not establish lack of joint support.
+Eight diagnostic checks passed. Resources: one CPU, 2 GiB RAM, no swap,
+1–10 minutes after readback, under 0.1 GiB output.

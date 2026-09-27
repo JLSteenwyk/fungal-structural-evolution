@@ -1,0 +1,31 @@
+{
+  "unit": "fungal-joint-support-failure-summary-20260927.service",
+  "pid": 221484,
+  "created": 1790527461.67,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_joint_support_failures.py",
+    "--launch",
+    "metadata/full_joint_support_readback_launch_20260927.json",
+    "--source",
+    "results/model_validation/full-joint-support-readback-20260927-v1",
+    "--output",
+    "results/model_validation/joint-support-failure-summary-20260927-v1"
+  ],
+  "observed_at": "2026-09-27T16:44:22.445208+00:00",
+  "pins": {
+    "scripts/summarize_joint_support_failures.py": "e9add6845ca42da38f13c0026ef5fbcaaa476b1ee9a7ae12a8347f739320e2af",
+    "metadata/joint_support_failure_summary_checks_20260927.json": "1a476aa9be93816999244425cefc2f3e40190234559a8c8b347020bf7240a877",
+    "metadata/full_joint_support_readback_launch_20260927.json": "74091eb122d7441d91a4bec1b069e680078b1ad7f3b67f9fc7288ff020b20cc1"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_minutes_after_readback": [
+      1,
+      10
+    ]
+  }
+}
