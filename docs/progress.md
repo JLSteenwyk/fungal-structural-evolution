@@ -6986,3 +6986,17 @@ Measured original fit times inform a 0.5–8 hour planning allowance after the
 tree audit. Full fit replay, corrected opportunity normalization and numerical
 comparison remain downstream. These are divergence diagnostics, not selection
 tests. All eight scientific aims remain open; GPU prediction stays paused.
+## September 27 full local-MG94 saved-likelihood audit queued
+
+The previous turn queued all local codon refits. This turn adds the full
+downstream likelihood replay with exact case/receipt binding and separate
+handling of numerical review flags. The one-CPU/8-GiB audit controller was
+launched and its PID, creation time and command verified. It waits for all
+1,632 fits before invoking the existing complete-output auditor. No running
+pinned producer or auditor was modified.
+
+The background-coordinate and ecological-bootstrap audit processes were also
+confirmed live with exact identities, and their final receipts were still
+absent. No completed stage is claimed from these checks. Corrected normalization
+and alignment-dependent parameter comparisons remain downstream; all eight
+scientific aims remain open. GPU prediction remains paused.

@@ -1378,3 +1378,27 @@ must use the isolated corrected helper; it does not alter the pinned MG94
 fitting model. Component branch lengths must not be called conventional dS/dN
 before that normalization. Source/copy, recombination, saturation and
 identifiability reviews also remain open.
+## Full local-MG94 likelihood replay queued
+
+`scripts/advance_local_mg94_audit.py` waits for the identified full local-MG94
+controller, verifies the exact 1,632-case completion grid and all case receipt
+hashes, then runs the unchanged `audit_genus_mg94_fits.py` without incomplete
+mode. The auditor reloads every saved likelihood without optimization and checks
+the model/code settings, codon coverage, topology, branch identities, branch
+component additivity, omega and profile interval consistency. The controller
+also verifies every replay script/log hash and the exact audit-to-fit case join.
+
+The audit preserves `complete_saved_fit_readback_with_review_flags` separately
+from `passed_saved_fit_readback`; a completed controller is not an assertion
+that numerical flags are absent. Neither result establishes optimality,
+profile-interval calibration, biological adequacy or selection eligibility.
+Corrected site-opportunity normalization remains downstream.
+
+Plan and live identity are recorded in
+`metadata/local_mg94_audit_plan_20260927.json` and
+`metadata/local_mg94_audit_launch_20260927.json`. Expected output is
+`results/cds/local-mg94-audit-20260927-v1`, with controller records under
+`results/cds/local-mg94-audit-handoff-20260927-v1`. The queued process has one
+CPU/8 GiB RAM, no swap, 2 GB planned output and a 0.1–8 hour planning range after
+the fits finish. It uses existing CPU resources. Execution and numerical
+validation remain pending.
