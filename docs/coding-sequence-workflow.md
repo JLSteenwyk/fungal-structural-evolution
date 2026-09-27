@@ -1566,3 +1566,30 @@ python scripts/readback_codon_split_conflicts.py
 The producer requires a new output directory. Detailed split pairs are in that
 results directory. Provenance, complete support curve and independent readback
 are archived in `metadata/codon_split_conflicts_*_20260927.*`.
+
+## Independent normalized-divergence comparison readback
+
+`scripts/readback_codon_alignment_divergence.py` reconstructs branch identities
+with DendroPy, replaces tree edge lengths with each audited normalized dS/dN
+metric, and calculates direct phylogenetic distance matrices. It checks every
+case, split and taxon-pair row, global omega, tree totals, missing cells,
+historical flags, translation code, and exact fit/audit/normalization grids.
+Source and output checksums are checked before and after reconstruction.
+Numerical comparisons use absolute and relative tolerances of 1e-10.
+
+The complete baseline identity comparison passed independently: 1,712 ledger
+rows, 1,655 fitted groups, 18,407 splits and 40,935 taxon pairs. The proof is
+`metadata/codon_divergence_identity_independent_readback_20260927.json`.
+The corruption checks in `scripts/check_codon_divergence_readback.py` alter
+pair distance, pair completeness, and global-omega difference while updating
+artifact/plan hashes, ensuring semantic checking rather than hash-only rejection.
+
+Once the actual comparison producer finishes, run:
+
+```bash
+python scripts/readback_codon_alignment_divergence.py --plan metadata/codon_alignment_divergence_comparison_plan_20260927.json --proof metadata/codon_alignment_divergence_completed_readback_20260927.json
+```
+
+The actual local/original comparison remains pending. This checker validates
+comparison arithmetic against audited fitted values, not optimization quality,
+model adequacy, saturation clearance or selection eligibility.

@@ -7138,3 +7138,18 @@ trees. The full empirical support curve and provenance are retained without
 selection thresholds. Historical flags remain; this is alignment sensitivity,
 not a correctness or selection certificate. All eight scientific aims remain
 open and GPU prediction stays paused.
+
+## September 27 independent normalized-divergence checker validated
+
+The preceding goal turn made progress by verifying direct split conflicts.
+This turn implemented an independent DendroPy reconstruction of normalized
+codon branch and pair distances. The entire baseline identity dataset passed:
+1,712 ledger cases, 18,407 splits and 40,935 pairs. Exact fit/audit/source grids,
+flags, missing fields, genetic code and numerical values are checked. Rehashed
+corruption fixtures exercise distance, completeness and omega checks.
+
+The local refit, audit, normalization and comparison services were confirmed
+active; 1,333 local fit receipts existed at the checkpoint. The actual
+local/original comparison and its independent readback remain pending. No
+inference jobs were duplicated, and live pinned scripts were not changed.
+All eight scientific aims remain open and GPU prediction remains paused.
