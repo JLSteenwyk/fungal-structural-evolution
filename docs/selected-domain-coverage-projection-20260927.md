@@ -76,3 +76,15 @@ backgrounds; maximum reuse remains 22. These are illustrative settings already
 examined in the metadata-balance analysis, not selections based on structural
 effects. All 15,552 settings remain in the complete output. They quantify
 conditional availability and repeated observations, not independent replicates.
+
+
+## Coverage figure
+
+[Coverage sensitivity figure](figures/matched_domain_coverage_20260927.png)
+shows every S45/S46 both-mask combination of guide, annotation policy, boundary
+and threshold (192 rows), without averaging alternatives or drawing uncertainty
+intervals. The PNG was visually inspected; all exported identities/counts and
+fraction calculations were independently checked against the complete verified
+source table. PDF, SVG and the full plotted TSV accompany it. Reproduce using
+`scripts/plot_matched_domain_coverage.py`; hashes and scope are in
+`docs/figures/matched_domain_coverage_20260927.receipt.json`.

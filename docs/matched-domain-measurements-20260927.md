@@ -1,8 +1,8 @@
 # Matched domain measurements before effect inference
 
-Production is running for all 150,080 shared boundary-domain matches across
+Production and full independent verification completed for all 150,080 shared boundary-domain matches across
 both masks and all four target/background alignment-order combinations:
-1,200,640 expected rows. No preferred order is selected or averaged. All
+1,200,640 rows. No preferred order is selected or averaged. All
 configuration links remain traceable to the audited selected-control inventory;
 configurations without shared domains remain in upstream coverage accounting.
 
@@ -25,10 +25,14 @@ Plan: `metadata/matched_domain_measurements_plan_20260927.json`.
 Output: `results/structural_comparisons/matched-domain-measurements-20260927-v1`.
 Producer: `scripts/prepare_matched_domain_contrasts.py`.
 Endpoint-orientation fixtures passed unequal lengths, both orders, distinct
-original/retained coverage and missing inputs. Full production and independent
-readback remain pending; no effect inference is authorized by fixture success.
+original/retained coverage and missing inputs. Full independent verification passed all 1,200,640 rows, 27,604,480 numeric
+values and 14,407,680 qualification flags. All eight mask/order combinations
+per match were present exactly once. There are 600,320 full-mask and 599,680
+pLDDT70 numerically computable rows, with 640 pLDDT70 rows excluded.
+Proof: `metadata/matched_domain_measurements_readback_20260927.json`.
+Completion: `metadata/matched_domain_measurements_completed_20260927.json`.
+Numerical computability alone is not scientific qualification.
 
 Resources are one CPU, 16 GiB, no swap, 4 GiB output and 0.1–2 hours planned.
-No GPU prediction or paid resources. Next steps are full independent metric
-readback, selected-event projection, sequence/coverage balance checks and
+No GPU prediction or paid resources. Next steps are selected-event projection, sequence/coverage balance checks and
 family/phylogeny-aware effect estimation with control reuse accounted for.

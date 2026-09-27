@@ -1,0 +1,20 @@
+{
+  "status": "verified_completed_matched_domain_measurement_audit",
+  "producer_receipt_sha256": "58ca4c69d5457e5af830dc034738fe86b11fd795fcf5ecb861cea2269949fdb1",
+  "readback_sha256": "afd54fc2d63364c818f6b803727a32442d4fad5d450d93ce8566ebf71efe9575",
+  "rows": 1200640,
+  "numeric_values_checked": 27604480,
+  "qualification_flags_checked": 14407680,
+  "terminal_states": {
+    "fungal-matched-domain-measurements-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-matched-domain-measurement-readback-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "execution": "Independent verifier completed before live process identity capture; journal records PID 3085306, successful output and 72.004 CPU seconds. No creation time inferred.",
+  "scope": "Full proof binding, all source pins, output hash, counts and terminal success rechecked. Full per-field verification performed by the independent checker; no effect inference."
+}
