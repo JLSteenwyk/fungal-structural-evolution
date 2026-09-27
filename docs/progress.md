@@ -5768,3 +5768,20 @@ with the analytic rotation-curvature calculation. See
 The full output and its independent readback are pending. Existing CPU
 alignment, AlphaFold rate and resampling services remain active; GPU prediction
 has not been resumed.
+
+
+## September 27 independent quaternion geometry readback queued
+
+Added and launched the full geometry readback, waiting for the exact live
+geometry producer and its completion receipt. It independently reconstructs
+all successful domain mappings and coordinates, checks spectra with LAPACK
+`gesvd`, and checks the proper-rotation optimum and curvature through a
+4×4 quaternion eigensystem. Near-zero eigenvalue gaps remain explicit; numerical
+agreement does not certify robustness to prediction error.
+
+Fixtures passed point/two-point/planar/reflected/random examples and rejected
+altered curvature, rank, status and ratio fields. The producer had processed
+200,000 of 280,824 alignments when this readback was queued. See the
+[readback launch](../metadata/duplication_domain_geometry_readback_launch_20260927.json)
+and [updated geometry methods](duplication-domain-alignment-geometry-20260927.md).
+Full output and independent verification remain pending.

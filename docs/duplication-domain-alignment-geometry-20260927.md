@@ -49,3 +49,31 @@ requires independent readback before these measurements are incorporated into
 the domain-triad dataset. Numerical identifiability is a technical property,
 not a substitute for confidence, domain-boundary, sequence-evolution or
 phylogenetic controls.
+
+## Independent full-cohort readback
+
+The [readback plan](../metadata/duplication_domain_geometry_readback_plan_20260927.json)
+waits for the exact producer PID/creation time/command to finish and requires a
+completed, hash-bound geometry receipt. It checks the exact successful-alignment
+key set and reconstructs every matched coordinate pair from hashed PDBs and
+native alignment strings. Original scripts and artifacts remain unchanged.
+
+Coordinate and cross spectra are recomputed using LAPACK `gesvd`, rather than
+the producer's NumPy SVD implementation. A separate 4×4 symmetric quaternion
+matrix supplies the optimal rotation objective and curvature: half the gap
+between its largest two eigenvalues equals the producer's minimum curvature.
+This uses a different formulation from the determinant-corrected 3×3 SVD.
+The scaled cross-method agreement tolerance is 1e-10; it does not certify
+machine-precision rank. Near-zero quaternion gaps are counted separately.
+Numerical rank, recorded algebra, ratios and original tolerance classifications
+are also checked explicitly. No tolerance in the native RMSD diagnostic changes.
+
+Tests cover point, two-point, planar, reflected and random coordinates. Altered
+curvature, rank, status and relative-curvature fields must fail the checker.
+The readback uses one CPU and at most 16 GiB RAM with no swap; it does not rerun
+USalign or use GPUs. Its output remains pending until the full scan completes.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/check_domain_geometry_readback_cases.py
+OPENBLAS_NUM_THREADS=1 python scripts/readback_domain_alignment_geometry.py --plan metadata/duplication_domain_geometry_readback_plan_20260927.json
+```
