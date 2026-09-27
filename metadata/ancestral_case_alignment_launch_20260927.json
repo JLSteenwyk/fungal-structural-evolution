@@ -1,0 +1,96 @@
+{
+  "unit": "fungal-ancestral-case-alignments-20260927.service",
+  "pid": 462126,
+  "created": 1790543949.26,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_ancestral_case_alignments.py",
+    "--plan",
+    "metadata/ancestral_case_alignment_plan_20260927.json"
+  ],
+  "plan_sha256": "d2890d4553b76728cb7176f7d45e4190469780e79fdd61fc276ca5ddcdb17738",
+  "resources": {
+    "cpus": 4,
+    "workers": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.25,
+      24
+    ],
+    "basis": "26 sequential alignments; largest clade 622 proteins, maximum protein length 1091. Existing host only, no GPU or paid resources."
+  },
+  "status": "verified_live_alignment_producer",
+  "children": [
+    {
+      "pid": 463410,
+      "created": 1790543976.41,
+      "cmdline": [
+        "/bin/bash",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft",
+        "--amino",
+        "--localpair",
+        "--maxiterate",
+        "1000",
+        "--thread",
+        "4",
+        "--threadit",
+        "0",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-sequences-20260927-v1/OG0000972.faa"
+      ]
+    },
+    {
+      "pid": 463523,
+      "created": 1790543976.59,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions//libexec/mafft/tbfast",
+        "_",
+        "-u",
+        "0.0",
+        "-l",
+        "2.7",
+        "-C",
+        "4",
+        "-P",
+        "-b",
+        "62",
+        "-g",
+        "-0.100",
+        "-f",
+        "-2.00",
+        "-Q",
+        "100.0",
+        "-h",
+        "0.1",
+        "-L",
+        "_",
+        "-+",
+        "16",
+        "-W",
+        "0.00001",
+        "-V",
+        "-1.53",
+        "-s",
+        "0.0",
+        "-O",
+        "-C",
+        "4",
+        "-P",
+        "-b",
+        "62",
+        "-f",
+        "-1.53",
+        "-Q",
+        "100.0",
+        "-h",
+        "0",
+        "-F",
+        "-l",
+        "2.7",
+        "-X",
+        "0.1"
+      ]
+    }
+  ]
+}

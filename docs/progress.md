@@ -8762,3 +8762,11 @@ families (482,007 residues). All exact strings agree between staged native
 reconciliation inputs and QC proteomes. Full exported identifier/hash/length
 readback passed. One protein contains noncanonical residues, explicitly retained.
 No alignment, ancestral sequence or structure inference is claimed.
+
+### 2026-09-27: two-method ancestral candidate alignments launched
+
+Launched all 26 alignments across the 13 candidate clades with MAFFT L-INS-i and
+FAMSA. Four CPUs, 8 GiB RAM, no swap or GPU; plan 0.25–24 hours. Both first-family
+outputs passed exact sequence/copy preservation checks. Full output audit and
+residue-correspondence sensitivity remain pending; ancestral inference has not
+started. See `docs/ancestral-case-inputs.md` for the frozen plan and provenance.

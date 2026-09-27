@@ -1,0 +1,37 @@
+{
+  "inputs": "results/ancestral/case-sequences-20260927-v1",
+  "input_proof": "metadata/case_ancestral_sequences_completed_20260927.json",
+  "output": "results/ancestral/case-alignments-20260927-v1",
+  "mafft": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft",
+  "famsa": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa",
+  "versions": {
+    "mafft": "v7.525 (2024/Mar/13)",
+    "famsa": "FAMSA (Fast and Accurate Multiple Sequence Alignment) \n  version 2.2.3-1669fc1 (2024-09-17)\n  S. Deorowicz, A. Debudaj-Grabysz, A. Gudys\n\nUsage:\n  famsa [options] <input_file> [<input_file_2>] <output_file>\n\nPositional parameters:\n  input_file, input_file_2 - input files in FASTA format; action depe"
+  },
+  "pins": {
+    "results/ancestral/case-sequences-20260927-v1/receipt.json": "e26ed0c74c3b8c33b093ce9da7986219fe3e8e7a1bd83caf891cb065ae132966",
+    "results/ancestral/case-sequences-20260927-v1/family_summary.tsv": "bd77ae4e80bba892c11214dfb163cec59b38001d8da7716fd007a115a5788ca7",
+    "metadata/case_ancestral_sequences_completed_20260927.json": "b350cf26780e6d34877de2171c81887b5c2895352c39bb6f2ec078dedf5df9f0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mafft-7.525-with-extensions/bin/mafft": "49ed001a2598e43c2ea37f24f01696b84ffaf7d49b68151a32713dee0cc05326",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/lib/python3.12/site-packages/orthofinder/bin/famsa": "20b52ee56519facaae159b61a40f424835ff6f0e6b7492bf632628b8c06f7ed3",
+    "scripts/run_ancestral_case_alignments.py": "09235b5ebbbb21938ec865f4ca163c6f5924329bf9cf2e46beb04f16435866b0",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 4,
+    "workers": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.25,
+      24
+    ],
+    "basis": "26 sequential alignments; largest clade 622 proteins, maximum protein length 1091. Existing host only, no GPU or paid resources."
+  },
+  "methods": {
+    "mafft": "L-INS-i: amino, localpair, maxiterate1000, thread4, threadit0",
+    "famsa": "four threads, keep-duplicates"
+  },
+  "scope": "All 13 candidate clades; no trimming, removal or unknown-residue replacement. Alignment sensitivity and preservation stage, not final ancestral reconstruction."
+}

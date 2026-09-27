@@ -86,3 +86,26 @@ existing outputs. Closure: `metadata/case_ancestral_sequences_completed_20260927
 This recovery used one CPU, streamed existing local FASTAs, and required no GPU
 or network access. Alignment, outside-clade context and ancestral ensembles
 remain pending.
+
+## Two-method alignment run started
+
+All 13 candidate sets are queued through MAFFT 7.525 L-INS-i (`--amino
+--localpair --maxiterate 1000 --thread 4 --threadit 0`) and FAMSA 2.2.3
+(`-t 4 -keep-duplicates`). Runs are sequential with four threads each, an 8 GiB
+service memory limit and no swap. The 26-alignment planning envelope is
+0.25–24 hours and 1 GiB output; no GPU or paid resources are used.
+
+Every output must contain exactly the input identifiers and reproduce every
+original sequence after gap removal, including the three X residues. No copies
+are removed, including identical sequences. Column occupancies at 50%, 70% and
+90% are descriptive exports; no trimming is applied and occupancy is not a
+measure of alignment homology correctness. The first family passed preservation
+checks under both methods at launch verification; remaining runs are pending.
+
+`scripts/run_ancestral_case_alignments.py` uses the frozen
+`metadata/ancestral_case_alignment_plan_20260927.json`; exact process identity
+is in `metadata/ancestral_case_alignment_launch_20260927.json`. Completed runs
+can be reused only with matching settings and checksums. An unfinished run
+directory is preserved and requires explicit recovery rather than silent
+overwriting. Full independent output audit, residue-correspondence comparison,
+domain/fragment assessment and reconstruction sampling decisions remain pending.
