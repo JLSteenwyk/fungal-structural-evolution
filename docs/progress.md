@@ -7554,3 +7554,15 @@ one; none silently dropped. The future full two-mask/eight-order grid has
 281,904 dispositions, but mapping/fitting awaits primary alignment validation.
 No partial fitted subset or biological claim substituted. All eight aims remain
 open; GPU prediction paused.
+
+## September 27 background-domain batch complete; strict error diagnosed
+
+The preceding turn verified the full whole-protein triad inventory (progress).
+Background domains now completed all 267,716 dispositions: 267,246 aligned and
+470 unavailable. Strict validation failed on a two-residue pLDDT70 RMSD:
+0.147182554481412 Å recomputed versus 0.14 Å printed. Direct analytic two-point
+calculation independently confirms the recomputed value and nonunique rotation.
+Preserved the strict failed audit and launched a separate full discrepancy
+inventory with unchanged tolerance and scientific eligibility false. Its
+one-CPU/16-GiB/no-swap process is confirmed live; full enumeration remains
+pending. All eight aims remain open and GPU prediction remains paused.
