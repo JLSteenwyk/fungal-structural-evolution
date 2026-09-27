@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-whole-model-audit-20260927.service",
+  "state": {
+    "MainPID": "517426",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 517426,
+  "created": 1790547476.64,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_ancestral_whole_model_fits.py"
+  ],
+  "plan_sha256": "f96df513f9741b8e77ca654259375b1e44003b34375a14143375f1efa8ae002f",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      6
+    ]
+  }
+}

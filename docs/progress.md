@@ -8937,3 +8937,11 @@ Two concurrent four-thread fits,12GiB aggregate memory,noGPU; verified live
 and initial outputs passed tip/topology checks. Full parameter/likelihood
 audit and whole-protein ancestral probabilities remain pending. Comparisons
 to domains must account for the167 additional no-focal-domain proteins.
+
+### 2026-09-27: all78 whole-protein model audits queued
+
+Launched the complete report/checkpoint and independent-likelihood checker
+behind the verified live producer. Unknown X residues explicitly contribute
+unknown-state evidence and frequency iteration, with source inputs preserved.
+One CPU,4GiB RAM,noGPU. Domain multistarts and whole-protein production remain
+active; full audits and updated ancestral inference remain pending.

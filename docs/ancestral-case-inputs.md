@@ -692,3 +692,28 @@ four-thread fits, aggregate eight CPUs and 12 GiB memory, no swap/GPU;
 planning estimate 1–48 hours and up to 4 GiB output. All final model reports,
 likelihoods, ancestor mappings and probabilities remain to be audited or
 inferred before any ancestral sequence is selected.
+
+## Whole-protein report and likelihood audit queued
+
+The all78-fit checker is now waiting on the exact live whole-protein producer,
+requiring successful terminal exit before reading its complete receipt. Every
+model label, tip identity, unrooted edge, checkpoint/report likelihood, branch
+length, gamma category, empirical frequency and AIC/BIC calculation is checked.
+It then independently recomputes every likelihood with the scaled-pruning
+engine, requiring absolute agreement within 0.001 log units. Warnings and
+short branches are retained.
+
+Protein X and alignment gaps are both unknown evidence in IQ-TREE3.0.1
+(`alignment.cpp`, protein-state conversion at lines1712–1728 and gap handling
+at1656–1657). Both enter the eight-iteration frequency reconstruction as
+unknown cells. For likelihood replay only, X is mapped to the helper's unknown
+marker; source FASTAs and residue coordinates are unchanged. Every fit's X
+count must match its frozen input job. Other ambiguity symbols are rejected
+because they are absent from this input set and need different evidence masks.
+
+Run `python scripts/audit_ancestral_whole_model_fits.py`; plan and launch
+metadata use prefix `ancestral_whole_model_audit_` and date `20260927`. Output:
+`results/ancestral/whole-protein-model-readback-20260927-v1/`. One CPU,4GiB RAM,
+no swap/GPU; planning0.1–6 hours after production and0.2GiB output. Full results
+remain pending. Passing numerical checks will not establish optimization
+convergence, model adequacy or ancestral states.
