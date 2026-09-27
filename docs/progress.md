@@ -6787,3 +6787,17 @@ The prior turn completed full ecological coverage; this turn advances mapping
 of phylogenetic uncertainty in transition locations. Tree-ensemble edge review
 and controlled ecological tests remain outstanding. All eight aims remain open;
 GPU prediction stays paused.
+
+## September 27 complete bootstrap ecological edge mapping launched
+
+Started all 2,000 saved bootstrap trees with both ecological coding scenarios,
+retaining every edge's constrained costs and separate split-presence/change
+counts. Verified the live PID, creation time and command; 125 trees had completed
+at observation. Resources are limited to one CPU and 4 GiB with no swap. Output
+checkpoints bind plan/source hashes. Production and independent bootstrap audit
+remain pending; see [mapping](ecology-optimal-edge-states-20260927.md#full-bootstrap-edge-mapping-running).
+
+The previous turn verified all ML edge constraints; this turn extends the
+calculation to the full saved topology ensemble. Existing coordinate verification
+and whole-chain alignments were confirmed live; no restart was needed. All eight
+aims remain open, with GPU prediction paused.

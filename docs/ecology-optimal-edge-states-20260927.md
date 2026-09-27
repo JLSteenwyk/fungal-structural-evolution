@@ -59,3 +59,31 @@ Further work must evaluate edge-location uncertainty across the relevant tree
 ensemble, review biological rooting and explicit trait models, and establish
 usable replicated transitions with matched structural coverage. This diagnostic
 advances phylogenetic integration but does not complete ecological testing.
+
+## Full bootstrap edge mapping running
+
+Started the same optimal-edge calculation across all 2,000 saved ultrafast
+bootstrap trees (1,000 per guide) under both frozen coding scenarios. All 526
+tip identities are checked per tree. Compressed per-tree checkpoints retain
+every split, endpoint identity, status and four conditional costs. Summaries
+separate the number of trees containing a split from counts of required,
+optional and excluded changes, so an absent split is not treated as an observed
+unchanged edge. The canonical split side is root-independent; state ordering
+remains a traversal convention.
+
+The pre-run allowance is one CPU, 4 GiB RAM, no swap, 2 GiB output and 2–30
+minutes. The launched systemd unit enforces the CPU and memory allowances.
+PID, creation time, exact command and plan hash are recorded in
+`metadata/ecology_bootstrap_edges_launch_20260927.json`; the frozen plan is
+`metadata/ecology_bootstrap_edges_plan_20260927.json`. Outputs are under
+`results/ecology/bootstrap-optimal-edge-states-20260927-v1`. Resume reuses only
+shards with matching plan/source hashes and verified compressed artifact hashes.
+
+```bash
+python scripts/map_ecology_bootstrap_edges.py --plan metadata/ecology_bootstrap_edges_plan_20260927.json
+```
+
+The validated recurrence is unchanged. Production completion and independent
+bootstrap verification remain pending. These frequencies assess sampled tree
+topology sensitivity conditional on one sequence alignment and fixed trait
+coding; they are not posterior transition probabilities or independent origins.
