@@ -9062,3 +9062,19 @@ pattern, not each character's unknown mask. Recorded the distinction and
 working-model sensitivity requirements in
 `docs/ancestral-indel-ascertainment-20260927.md`. No ancestral indel posterior
 or final ancestral sequence is claimed. GPU prediction remains paused.
+
+### 2026-09-27: full FastML indel sensitivity launched
+
+Launched all156 encodings, retaining three empty-data cases, under FastML's
+all-taxa ascertainment correction. LG-fitted amino-acid tree shapes, stationary
+root, gamma4 and the authors' initial global-scale behavior are explicit in
+the plan. One CPU,16GiB RAM,noGPU; planning estimate1–48h and10GiB output.
+Unknown-mask conditional sensitivity and independent likelihood/posterior
+validation remain required.
+
+Initial producer output checks fail because FastML stores its root label as
+a Newick comment (`[N1]`). A separate readback script handles this format;
+all first21 completed outputs passed node coverage, probability bounds and
+observed-tip checks after this normalization. Original failed checks remain
+preserved, and the pinned running producer is unchanged. These checks do not
+independently verify internal-node probabilities. The full run is ongoing.
