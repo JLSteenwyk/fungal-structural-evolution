@@ -2,8 +2,9 @@
 
 The full producer completed 3,777,048 configuration/boundary/mask/screen cells
 for all 104,918 distinct matched protein-pair/policy configurations. Independent
-full verification is running; the output remains pending acceptance until its
-proof is complete. Source inventories contain 150,080 shared boundary-domain
+full verification has passed every cell, exact eligible/ineligible Pfam set,
+status and aggregate. The proof is
+`metadata/selected_control_domain_qualification_readback_20260927.json`. Source inventories contain 150,080 shared boundary-domain
 matches, including repeated policies and pair configurations.
 
 For each shared Pfam accession, require both the target and background domain
@@ -27,7 +28,7 @@ Verifier: `scripts/readback_selected_control_domain_qualification.py`.
 The verifier independently intersects target/background pass sets and checks
 all cells, exact accession lists, missingness categories and aggregate counts.
 It waits for the exact producer identity and successful service termination.
-Final proof will be `metadata/selected_control_domain_qualification_readback_20260927.json`.
+Final proof is `metadata/selected_control_domain_qualification_readback_20260927.json`.
 
 Both stages use one CPU, 16 GiB RAM and no swap, with 0.1–2 hours budgeted per
 stage. Output budgets are 4 GiB and 1 GiB. No GPU prediction or paid resources.
