@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-conditional-domain-ancestors-20260927.service",
+  "plan_sha256": "261de21bef75051dd3618ad92b2c05266bb99acc1a66ce28537ed0d507b9c563",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  },
+  "state": {
+    "MainPID": "498688",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 498688,
+  "created": 1790546337.68,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/infer_conditional_domain_ancestors.py"
+  ],
+  "status": "verified_live_conditional_ancestral_marginals"
+}

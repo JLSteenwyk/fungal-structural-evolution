@@ -8861,3 +8861,13 @@ Full incident-tip partitions identify all 468 internal fit/node candidates
 The 156 local root positions remain explicitly unidentified under unrooted
 reversible fitting; no substitute root was assigned. Complete 1,248-row mapping
 and branch-length context retained. Ancestral states have not yet been inferred.
+
+### 2026-09-27: conditional ancestral marginals completed for all 468 nodes
+
+Calculated 84,141 node/site distributions across all 156 domain fits and three
+internal nodes per fit. All probabilities retained; analytic checks and
+likelihood consistency passed (maximum log-likelihood difference 1.25591e-5).
+Producer terminated successfully; complete output hashes, probability arrays
+and serialized site/MAP correspondence checked. These are conditional
+probabilities, not finalized ancestral sequences. Independent posterior
+validation, model sensitivity and ancestral structures remain pending.

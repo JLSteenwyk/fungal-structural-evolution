@@ -470,3 +470,38 @@ Reproduce: `python scripts/map_ancestral_fitted_nodes.py`. Local output:
 This stage establishes correspondences only. Conditional ancestral states,
 optimization and model sensitivity, indel uncertainty and predicted ancestral
 structures remain incomplete.
+
+## Conditional ancestral amino-acid marginals
+
+The complete 156-fit grid now has a CPU calculation for the three mapped
+internal vertices per fit (468 fit/node combinations). The calculation retains
+all 20 amino-acid probabilities at every alignment column, including columns
+with incomplete descendant coverage. Gaps supply unknown-state evidence, not
+evidence of an ancestral deletion. Descendant and outside-clade observed
+residue counts accompany every site. No final ancestral sequence or structure
+is selected at this stage.
+
+The implementation reroots the likelihood traversal at each requested vertex,
+uses scaled pruning, and integrates four gamma rate categories jointly with
+amino-acid states. Analytic three-tip and all-unknown checks precede production.
+Every node calculation must reproduce the saved fit likelihood within 0.001
+log units, and site likelihoods must agree across the three traversals within
+1e-8. These checks establish internal consistency, not independent verification
+of every posterior or adequacy/convergence of the fitted evolutionary models.
+
+Run `python scripts/infer_conditional_domain_ancestors.py` using the pinned
+`metadata/conditional_domain_ancestor_plan_20260927.json`. Outputs are in
+`results/ancestral/conditional-domain-ancestors-20260927-v1/`: one compressed
+probability array per fit, a complete site summary, and a node summary. The
+resource plan is one CPU, 4 GiB RAM, no swap/GPU, up to 2 GiB output and
+0.1–4 hours. Launch identity is recorded in the corresponding launch metadata.
+Independent posterior verification, optimization sensitivity, cross-alignment
+site comparisons, indel uncertainty and ancestral structure prediction remain
+required downstream work.
+
+The producer terminated successfully: all 468 nodes and 84,141 node/site
+distributions completed. Maximum saved-likelihood difference was 1.25591e-5
+log units. Complete artifact hashes, probability normalization/bounds, and every
+serialized site/MAP correspondence passed readback. Completion record:
+`metadata/conditional_domain_ancestors_completed_20260927.json`. This does not
+close the independent posterior-validation or model-sensitivity requirements.

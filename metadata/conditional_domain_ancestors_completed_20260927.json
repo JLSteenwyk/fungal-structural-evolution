@@ -1,0 +1,16 @@
+{
+  "status": "complete_conditional_marginals_independent_posterior_validation_pending",
+  "source_receipt_path": "results/ancestral/conditional-domain-ancestors-20260927-v1/receipt.json",
+  "source_receipt_sha256": "504e0f65659f0ff60d8a092138f2b13f4c2dc9602d616e3cd0899f15bc3dde3a",
+  "fits": 156,
+  "nodes": 468,
+  "site_rows": 84141,
+  "maximum_likelihood_difference": 1.2559088645502925e-05,
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "checks": "All artifact hashes; full probability arrays finite, normalized, bounded; all site identities, MAP residues and maximum probabilities agree with saved arrays; complete unique site coverage.",
+  "scope": "All 20 amino-acid marginals at three mapped internal vertices for every fitted model/alignment. Conditional on saved parameters/topology; gaps unknown, not ancestral deletions. Complete node/site uncertainty retained. No final ancestral FASTA, ensemble, GPU prediction, model adequacy or optimization convergence claim."
+}
