@@ -5357,3 +5357,14 @@ events. Only 109,245 and 109,228 respectively have models for both copies
 The substantial modeled-subset ascertainment must constrain downstream
 interpretation. Source/output hashes were checked; independent aggregate
 readback remains pending. See [coverage results](duplication-sampling-coverage-20260926.md).
+
+
+### September 26: coverage aggregates verified and excluded taxon distinguished
+
+Independent grouped-event readback passed 935,353 event rows, 1,054 taxon/guide
+rows and 97,372 family/guide rows. The raw candidate manifest has 527 entries,
+including excluded Saccharomyces jurei; both actual reconciliations have 526.
+An explicit membership table now distinguishes that excluded blank-denominator
+entry from biological zero-event observations. All 526 reconciled taxa have
+reported terminal singleton-side events, with two-model candidates in 153.
+See [verified coverage and membership](duplication-sampling-coverage-20260926.md).

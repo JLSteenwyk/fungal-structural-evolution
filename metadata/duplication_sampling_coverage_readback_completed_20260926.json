@@ -1,0 +1,81 @@
+{
+  "status": "passed_sampling_coverage_aggregates_with_explicit_reconciliation_membership",
+  "records": [
+    {
+      "path": "results/orthology/duplication-sampling-aggregate-readback-20260926-v1.json",
+      "sha256": "12a659c07193c373932364e4bf1cb0959d7b4b7b4fa51db30569c9be5227526d",
+      "receipt": {
+        "status": "passed_complete_duplication_sampling_aggregate_readback",
+        "producer_receipt_sha256": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+        "event_rows": 935353,
+        "summary_rows": {
+          "taxon": 1054,
+          "family": 97372
+        },
+        "guides": [
+          {
+            "guide": "mafft",
+            "counts": {
+              "terminal_singleton_events": 467690,
+              "neither_model": 345933,
+              "one_model": 12529,
+              "both_models": 109228,
+              "both_same_model": 6354
+            },
+            "taxa_with_terminal_singletons": 526,
+            "taxa_with_both_models": 153,
+            "families_with_terminal_singletons": 48711,
+            "families_with_both_models": 20474
+          },
+          {
+            "guide": "profile",
+            "counts": {
+              "terminal_singleton_events": 467663,
+              "neither_model": 345890,
+              "one_model": 12528,
+              "both_models": 109245,
+              "both_same_model": 6354
+            },
+            "taxa_with_terminal_singletons": 526,
+            "taxa_with_both_models": 153,
+            "families_with_terminal_singletons": 48661,
+            "families_with_both_models": 20492
+          }
+        ],
+        "scope": "Every exported model-presence/same-model disposition reclassified and all taxon/family counts, fractions, metadata and summary universes independently recomputed using grouped event data. Native event selection and original bridge join were checked by the producer, not independently repeated here. No missingness correction, phylogenetic model or biological duplication validation."
+      }
+    },
+    {
+      "path": "results/orthology/duplication-coverage-membership-20260926-v1/receipt.json",
+      "sha256": "231aa0f068d0109324e46d49c833416df00efd3895aefebd709fb3b4c15ab544",
+      "receipt": {
+        "status": "complete_duplication_coverage_reconciliation_membership",
+        "source_sha256": {
+          "results/orthology/duplication-sampling-coverage-20260926-v1/receipt.json": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+          "results/orthology/duplication-sampling-coverage-20260926-v1/taxon_coverage.tsv": "d3e02cd3210f4ecd6409ce6571d9416db93ebb50b4bca227ccb92c73e1500c64",
+          "results/orthology/duplication-sampling-aggregate-readback-20260926-v1.json": "12a659c07193c373932364e4bf1cb0959d7b4b7b4fa51db30569c9be5227526d",
+          "metadata/sampling_exclusions.json": "da889c7274e44087d2f69048d95cafd389429114ed9e8c8595cfc866e73e0435",
+          "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+          "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+          "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+          "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b"
+        },
+        "rows": 1054,
+        "counts": {
+          "mafft:events_observed": 526,
+          "mafft:not_in_reconciliation": 1,
+          "profile:events_observed": 526,
+          "profile:not_in_reconciliation": 1
+        },
+        "artifacts": {
+          "taxon_coverage_with_membership.tsv": "a380def855261560273f79bd6b705ddbe61b381b2edb82737897374d7b2b03bb"
+        },
+        "scope": "Coverage rows explicitly labeled by actual audited reconciliation species lists; excluded candidate-manifest entries distinguished from observed zero-event species. Original counts retained. No biological absence or missingness correction."
+      }
+    }
+  ],
+  "scripts": {
+    "scripts/readback_duplication_sampling_coverage.py": "6b7abaaf10a0e8cdefd40d860daa47ab4e2896b5747f4200332bfc082c2b470b",
+    "scripts/annotate_duplication_coverage_membership.py": "e2f9d9959b00183136c6c93a7c90f13f03cd5b1b411aeef50264386713b65534"
+  }
+}

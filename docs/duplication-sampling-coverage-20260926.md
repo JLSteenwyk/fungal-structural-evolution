@@ -9,7 +9,7 @@ the original coverage exports. This includes events with no models or only one
 model, which do not enter the current structural pair queue.
 
 The output contains an event-disposition table and summaries by taxon and
-family. Every sampled taxon is retained, including zero qualifying events.
+family. Every candidate-manifest taxon is retained, including zero qualifying events.
 Zero denominators produce blank fractions, not zero structural coverage.
 Counts distinguish neither/one/both genes modeled and identical-model cases.
 Species names, study roles and lineage strings come from the pinned sampling
@@ -37,14 +37,14 @@ python scripts/summarize_duplication_sampling_coverage.py \
 
 The job completed. Resources were one CPU, 8 GiB RAM, no swap and an estimated
 1 GiB output. The 0.1–4 hour planning range is uncalibrated. No GPU or paid
-resources are used. Independent aggregate readback remains pending. Producer results:
+resources are used. Independent aggregate readback passed. Verified results:
 
 | Guide | Terminal singleton-side events | Neither model | One model | Both models | Taxa with both models |
 |---|---:|---:|---:|---:|---:|
 | Profile | 467,663 | 345,890 | 12,528 | 109,245 | 153 |
 | MAFFT | 467,690 | 345,933 | 12,529 | 109,228 | 153 |
 
-All 526 taxa have reported events in this restricted class, but only 153
+All 526 reconciled taxa have reported events in this restricted class, but only 153
 contribute two-model events. Two-model coverage is approximately 23.4% in
 each guide. Both include 6,354 same-model events. Profile and MAFFT respectively
 have 48,661 and 48,711 families with events; only 20,492 and 20,474 have
@@ -52,3 +52,39 @@ two-model events. This substantial ascertainment limits generalization across
 lineages and families. Counts are archived in
 `metadata/duplication_sampling_coverage_completed_20260926.json`; all source
 and output hashes were rechecked after completion.
+
+
+## Aggregate readback and manifest-versus-analysis membership
+
+The independent grouped-event readback passed all 935,353 event records,
+1,054 taxon/guide rows and 97,372 family/guide rows. Every model-presence class,
+same-model flag, group count, fraction and taxon metadata field matched.
+It uses exported event data rather than the producer's streaming counters;
+it does not repeat the producer's native-event/bridge joins.
+
+The raw candidate manifest contains **527 entries**, while both audited
+reconciliation species lists contain **526 taxa**. The extra entry is
+*Saccharomyces jurei* (F1987369), explicitly excluded because no usable annotated
+proteome was acquired. It remains in the candidate manifest for possible
+recovery. Thus the original coverage table has one blank-denominator row per
+guide that means outside the analysis, not a reconciled species with biological
+absence of duplications. The producer receipt's `sampled_taxa=527` refers to
+candidate-manifest rows, not the analyzed reconciliation cohort.
+
+A separate immutable table now adds `in_reconciliation`, `denominator_status`
+and `exclusion_reason`, preserving every original field:
+`results/orthology/duplication-coverage-membership-20260926-v1/taxon_coverage_with_membership.tsv`.
+Both guides have 526 `events_observed` rows and one `not_in_reconciliation`
+row. Membership was checked against each audited native SpeciesIDs file and
+`metadata/sampling_exclusions.json`. Use this explicit membership table for
+future plots and downstream ascertainment summaries.
+
+Reproduce with:
+
+```bash
+python scripts/readback_duplication_sampling_coverage.py --source-plan metadata/duplication_sampling_coverage_plan_20260926.json --output <fresh-readback.json>
+python scripts/annotate_duplication_coverage_membership.py --coverage results/orthology/duplication-sampling-coverage-20260926-v1 --aggregate-readback <fresh-readback.json> --exclusions metadata/sampling_exclusions.json --profile-tree-audit metadata/expanded_resolved_tree_profile_completed_readback_20260923.json --mafft-tree-audit metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json --output <fresh-membership-directory>
+```
+
+Completed readback and membership receipts are archived in
+`metadata/duplication_sampling_coverage_readback_completed_20260926.json`.
