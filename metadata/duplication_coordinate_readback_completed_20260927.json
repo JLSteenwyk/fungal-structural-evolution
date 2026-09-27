@@ -1,0 +1,15 @@
+{
+  "status": "complete_duplication_coordinate_readback",
+  "recorded_utc": "2026-09-27T04:58:50.760705+00:00",
+  "output": "results/structural_comparisons/duplication-coordinate-readback-20260926-v1",
+  "receipt_sha256": "a23a640c1d2773348ae2d34269a2194d203feba683c70e95c4a096f7c49f4be2",
+  "models": 212549,
+  "validated_residues": 79322447,
+  "counts": {
+    "validated": 212549
+  },
+  "shards": 213,
+  "verification": "All plan pins, producer receipt binding, exact shard proof grid, every proof hash and source-shard binding, and aggregate model/residue/disposition counts checked. Full numeric readback performed by the completed pinned auditor.",
+  "scope": "Every exported accepted C-alpha sequence, coordinate and confidence value independently reconstructed from frozen CIF atom rows; full model/disposition grid and summaries checked. Shares CIF lexical parser, not producer extraction function. Rejection identities/reasons retained but rejection causes not independently adjudicated. No PAE or biological inference.",
+  "next_stages": "Whole-protein and domain alignment input preparation started automatically; structural alignments and duplication inference remain pending."
+}

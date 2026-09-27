@@ -5566,3 +5566,17 @@ interval validation remains pending. Execution completion does not establish
 structural acceleration or biological coupling, and these conditional sampling
 intervals do not include topology, prediction or model uncertainty. See the
 [execution checkpoint](../metadata/completed_esmfold_resampling_execution_20260927.json).
+
+### September 27: duplication coordinate readback complete
+
+The independent raw-CIF readback passed for all 212,549 primary duplication
+models, covering 79,322,447 C-alpha residues across 213 shards. Sequence,
+coordinates, confidence values and confidence summaries matched the frozen
+source records. Verified all pinned dependencies, the producer receipt,
+every shard proof and its source binding, and aggregate disposition and
+residue counts. No models were rejected in this cohort.
+
+Whole-protein and domain alignment input preparation started automatically
+after the successful readback. Structural comparisons and biological tests
+of duplication-associated divergence remain pending. See the
+[completion checkpoint](../metadata/duplication_coordinate_readback_completed_20260927.json).
