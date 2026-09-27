@@ -8736,3 +8736,12 @@ checked against the verified source summary; overview visually inspected.
 Figures retain missing-coverage cases and explicit dependent-unit denominators.
 Reproduction script: `scripts/plot_case_reference_sensitivity.py`. Closure:
 `metadata/case_reference_sensitivity_figure_completed_20260927.json`.
+
+### 2026-09-27: six-tree identity sensitivity audit queued
+
+Verified the Neocallimastix producer is live and launched a one-CPU checker that
+waits for successful terminal completion. It will audit all six exact-tip trees
+and compare all 15 pairs on common taxa, checking split restriction by explicit
+pruning. Known-topology pruning checks passed before launch. No result or
+completion is claimed while the trees are still running. See
+`docs/taxon-identity-sensitivities.md` for resources, scope and pending work.

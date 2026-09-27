@@ -165,3 +165,28 @@ requires identical configuration and input hashes; successful outputs must have
 exact expected tips and finite, nonnegative branch lengths. Full tree readback
 and topology comparisons remain downstream. No bootstrap support or species
 boundary conclusion is claimed by this stage.
+
+## Neocallimastix tree verification queued (2026-09-27)
+
+`scripts/audit_neocallimastix_guides.py` now waits for the six-tree producer to
+reach inactive/success/exit-zero. The waiting service checks the live producer's
+PID, creation time and command; pinned scripts and inputs must remain unchanged.
+After completion it will verify every saved artifact, exact matrix and tree
+identities, 524 tips including all 25 outgroups, matrix lengths, model/seed and
+finite nonnegative branch lengths.
+
+All 15 guide pairs will be compared using unrooted nontrivial splits restricted
+to common tips. Projected splits are checked against explicit tree pruning.
+Comparisons retaining different representatives have 523 shared tips and omit
+all three disputed taxa; comparisons retaining the same representative have
+524. RF distance is reported with both split counts and RF divided by their
+sum, without treating guide differences as branch support or species delimitation.
+The pruning check passed known six-tip examples before launch.
+
+The checker uses at most one CPU and 2 GiB RAM, no swap, and a 0.1 GiB output
+allowance; planned runtime after tree completion is 0.1–2 hours. No GPU or new
+phylogenetic inference is launched. Plan and exact launch identity:
+`metadata/neocallimastix_guide_audit_plan_20260927.json` and
+`metadata/neocallimastix_guide_audit_launch_20260927.json`.
+Full tree verification and topology results remain pending. Comparisons with
+full-data guides and downstream structural analyses remain additional work.

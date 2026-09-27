@@ -1,0 +1,23 @@
+{
+  "unit": "fungal-neocallimastix-guide-audit-20260927.service",
+  "pid": 455550,
+  "created": 1790543405.36,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_neocallimastix_guides.py",
+    "--plan",
+    "metadata/neocallimastix_guide_audit_plan_20260927.json"
+  ],
+  "plan_sha256": "e8b0b536ca6e3f1aa0105a1f0635a27de45c7391cd80c3b4c11947550fb9930b",
+  "status": "verified_live_waiting_for_six_trees",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours_after_trees": [
+      0.1,
+      2
+    ]
+  }
+}

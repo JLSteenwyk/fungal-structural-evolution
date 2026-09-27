@@ -1,0 +1,53 @@
+{
+  "producer": {
+    "unit": "fungal-neocallimastix-guides-20260927-v2.service",
+    "pid": 440407,
+    "created": 1790542102.67,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_neocallimastix_sensitivity_trees.py",
+      "--inputs",
+      "results/phylogeny/neocallimastix-identity-inputs-20260927-v1",
+      "--output",
+      "results/phylogeny/neocallimastix-identity-guides-20260927-v1"
+    ],
+    "script_sha256": "2eca4fe85c4bcdc32e048968b4028d7b338f5bb5b2c1ce492dfb0bfc84424a96",
+    "resources": {
+      "cpu": 16,
+      "workers": 2,
+      "threads_per_tree": 8,
+      "memory_per_tree_gib": 32,
+      "cgroup_memory_gib": 72,
+      "swap_gib": 0,
+      "output_gib": 5,
+      "planning_hours": [
+        36,
+        336
+      ]
+    },
+    "startup_correction": "First unit terminated before creating tree outputs because its explicit PATH omitted the installed IQ-TREE directory. Failed unit preserved; v2 unit includes that directory. No inference was restarted.",
+    "scope": "All six single-representative sensitivity guides; same LG+F+G4 model and seed20260913 as prior guides. No support or species-delimitation claim."
+  },
+  "inputs": "results/phylogeny/neocallimastix-identity-inputs-20260927-v1",
+  "runs": "results/phylogeny/neocallimastix-identity-guides-20260927-v1",
+  "output": "results/phylogeny/neocallimastix-identity-guide-audit-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours_after_trees": [
+      0.1,
+      2
+    ]
+  },
+  "pins": {
+    "metadata/neocallimastix_guide_launch_20260927.json": "b63a8ce4051c046e849b1d90324b9cca1095aa5d48fdd960957e56b31f7ab789",
+    "scripts/audit_neocallimastix_guides.py": "bfeedf9da70d73aa4f974adde09d2134056baf51f90f8480d82442e8ddf22e8d",
+    "scripts/run_neocallimastix_sensitivity_trees.py": "2eca4fe85c4bcdc32e048968b4028d7b338f5bb5b2c1ce492dfb0bfc84424a96",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/phylogeny/neocallimastix-identity-inputs-20260927-v1/receipt.json": "431893004efa750e228e9ba204f69ad988ebb458cd1b11b368f4000080726deb",
+    "results/phylogeny/neocallimastix-identity-guides-20260927-v1/config.json": "8c583f332b9dc7457e808355581df181b5d823a6bf2aa86b6511fdf8613ddf63"
+  },
+  "scope": "Wait for successful terminal producer; verify all six trees and compare all 15 pairs on common tips. No GPU or new tree inference."
+}
