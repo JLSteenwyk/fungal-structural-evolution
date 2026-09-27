@@ -1,0 +1,13 @@
+{
+  "service": "fungal-codon-divergence-readback-20260927.service",
+  "pid": 2586701,
+  "created": 1790510982.03,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_codon_divergence_readback.py",
+    "--plan",
+    "metadata/codon_divergence_readback_handoff_plan_20260927.json"
+  ],
+  "plan_sha256": "b989e556403ae676a0be5c898420c407d98364c926f5cbe102f7f6b31ffe93aa",
+  "status": "verified_live_waiting_for_complete_divergence_comparison"
+}

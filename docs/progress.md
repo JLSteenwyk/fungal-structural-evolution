@@ -7153,3 +7153,14 @@ active; 1,333 local fit receipts existed at the checkpoint. The actual
 local/original comparison and its independent readback remain pending. No
 inference jobs were duplicated, and live pinned scripts were not changed.
 All eight scientific aims remain open and GPU prediction remains paused.
+
+## September 27 full divergence readback queued
+
+The preceding goal turn made progress by independently checking the baseline
+normalized comparison. This turn implemented and exercised the automatic
+producer-to-readback handoff on all 1,712 baseline ledger rows, then queued the
+full realignment comparison audit behind its identified live producer. The
+controller and checker are checksum-pinned; limits are one CPU/8 GiB/no swap.
+Its PID, creation time and command were verified live after launch. The actual
+comparison and independent audit remain pending, rather than being represented
+as completed. All eight scientific aims remain open; GPU prediction is paused.

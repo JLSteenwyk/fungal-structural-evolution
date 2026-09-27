@@ -1593,3 +1593,16 @@ python scripts/readback_codon_alignment_divergence.py --plan metadata/codon_alig
 The actual local/original comparison remains pending. This checker validates
 comparison arithmetic against audited fitted values, not optimization quality,
 model adequacy, saturation clearance or selection eligibility.
+
+The full independent comparison readback is now queued automatically through
+`scripts/advance_codon_divergence_readback.py`. The controller follows the
+recorded producer PID, creation time and command, waits for termination, then
+requires a complete checksum-bound comparison receipt before running the
+checker. Its pinned plan is
+`metadata/codon_divergence_readback_handoff_plan_20260927.json`; its live launch
+identity is recorded separately. Limits are one CPU, 8 GiB RAM, no swap, and
+10 MB expected output, with a planning allowance of 0.01–2 hours after the
+producer. The terminal-producer path was exercised on the full baseline identity
+dataset and passed. Actual results will be written under
+`results/cds/codon-divergence-readback-handoff-20260927-v1`; the controller fails
+if any required source or the expected full disposition grid is missing.

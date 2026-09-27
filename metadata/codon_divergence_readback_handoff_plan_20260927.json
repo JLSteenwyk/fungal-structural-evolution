@@ -1,0 +1,44 @@
+{
+  "producer": {
+    "service": "fungal-codon-divergence-comparison-20260927.service",
+    "pid": 2519444,
+    "created": 1790510002.67,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_codon_alignment_divergence.py",
+      "--plan",
+      "metadata/codon_alignment_divergence_comparison_plan_20260927.json",
+      "--wait-for",
+      "metadata/local_mg94_normalization_launch_20260927.json"
+    ],
+    "plan_sha256": "f4e8438c93c91bd469ecfd090dbcb3f4057204ce06886aeac72db89fd64d96c1",
+    "status": "verified_live_waiting_for_complete_local_normalization"
+  },
+  "comparison_plan": "metadata/codon_alignment_divergence_comparison_plan_20260927.json",
+  "controller_output": "results/cds/codon-divergence-readback-handoff-20260927-v1",
+  "expected_cases": 1712,
+  "expected_dispositions": {
+    "matched": 1625,
+    "original_only": 30,
+    "local_only": 7,
+    "neither_fitted": 50
+  },
+  "pins": {
+    "metadata/codon_alignment_divergence_comparison_plan_20260927.json": "f4e8438c93c91bd469ecfd090dbcb3f4057204ce06886aeac72db89fd64d96c1",
+    "metadata/codon_alignment_divergence_comparison_launch_20260927.json": "d06f8bae37e57b368fde6175f24f432aa04618194227eba4e408528a9193d84f",
+    "scripts/readback_codon_alignment_divergence.py": "68f80011ff7c547688bd29ed3fb5a45b7b91f8e40e2190de8be085299ce61f95",
+    "scripts/advance_codon_divergence_readback.py": "0ce01ada4ec5b735234fc804603a8429e0a346c56c21010ca9923e674959beb7",
+    "metadata/codon_divergence_identity_independent_readback_20260927.json": "6cd7271c68d50f648f8290013608e7823991203c22273d3e24ae9483d456343e"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_mb": 10,
+    "planning_hours_after_producer": [
+      0.01,
+      2
+    ],
+    "cost": "Existing local CPU resources; no charges"
+  }
+}
