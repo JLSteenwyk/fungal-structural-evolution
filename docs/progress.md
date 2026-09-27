@@ -5197,3 +5197,15 @@ Maximum sequence-distance difference was 3.55e-15. Successful service exit,
 all source pins and output hashes were verified; receipt archived in
 `metadata/duplication_sister_reference_readback_completed_20260926.json`.
 Biological orthology/rooting and structural asymmetry remain unestablished.
+
+
+### September 26: complete additional reference alignment workload queued
+
+The supplementary runner now waits for both audited input collections before
+processing all 32,541 additional reference pairs in both orders and masks
+(130,164 dispositions). It excludes 321 pairs assigned to the primary run
+while preserving their inventory links for later result joining. The native
+two-source handoff and corruption fixture passed. Two CPU workers and 8 GiB
+RAM are allocated; production alignments remain waiting. Numeric result
+verification and biological asymmetry tests are still pending. See
+[reference workflow](duplication-sister-references-20260926.md).

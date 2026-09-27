@@ -294,3 +294,50 @@ alignment orchestration still needs to combine these additional inputs with
 the relevant audited primary inputs. Full and masked scores normalize to
 different retained lengths; no PAE or domain-orientation qualification is
 implied by serialization.
+
+## Complete additional reference alignment run queued
+
+`scripts/run_duplication_reference_alignments.py` now waits for both exact
+input-preparation processes. The handoff helper checks successful plan-bound
+receipts, exact model/mask universes for both collections, source hashes,
+manifest hashes and all disposition counts. It rechecks the reference
+inventory's independent ledger binding and exact additional-model partition.
+Canonical pair hashes and membership in the frozen primary pair table decide
+which pairs require additional computation. All 321 already-covered primary
+pairs remain in the inventory for later result joining; they are not treated
+as completed here or rerun by the supplementary job.
+
+The full workload is 32,541 additional pairs × two input orders × two masks,
+or 130,164 explicit dispositions. The job reuses the unchanged primary
+per-pair runner, preserving raw native outputs, timings, command/input hashes,
+checkpoint bindings and explicit unavailable/error/timeout outcomes. A digest
+of both materialization manifests and receipts binds every checkpoint.
+
+Resources are two CPU workers, 8 GiB RAM, no swap, a 24 GiB output planning
+allowance, 100 GiB free-disk reserve and 600-second timeout per native call.
+The 8–480 hour planning interval is scaled from the primary uncalibrated
+range, not a measured ETA or guaranteed bound. No GPUs or paid services are
+used. At most 64 jobs are pending in the worker pool. Configuration and exact
+process identity are recorded in
+`metadata/duplication_reference_alignment_plan_20260926.json` and the
+corresponding launch record. Reproduce with:
+
+```bash
+python scripts/run_duplication_reference_alignments.py \
+  --plan metadata/duplication_reference_alignment_plan_20260926.json
+```
+
+Output will be
+`results/structural_comparisons/duplication-reference-alignments-20260926-v1/`.
+The successful completion status will explicitly retain `pending_readback`:
+this is not independent numeric verification or evidence of biological
+asymmetry. Joining reused primary pairs, numeric verification, confidence and
+coverage interpretation, domain/orientation controls and statistical tests
+remain pending.
+
+`python scripts/check_duplication_reference_alignment_handoff.py` passed a
+native two-source completed-handoff fixture: the primary pair was excluded,
+the additional pair aligned in both directions, short-mask outcomes were
+preserved in both directions, all checkpoint hashes matched, and altered
+source provenance was rejected even after updating the manifest hash.
+Production alignments are queued, not yet started.

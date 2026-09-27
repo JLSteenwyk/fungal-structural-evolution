@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-reference-alignments-20260926.service",
+  "pid": 147498,
+  "created": 1790472032.79,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_duplication_reference_alignments.py",
+    "--plan",
+    "metadata/duplication_reference_alignment_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_reference_alignment_plan_20260926.json",
+  "plan_sha256": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+  "fixture": "Two-source native completed handoff: primary pair excluded, additional pair aligned both orders, short masks retained, all checkpoint hashes checked and altered source provenance rejected despite updated manifest hash."
+}
