@@ -5877,3 +5877,21 @@ handling. See [methods](duplication-domain-common-core-fits-20260927.md) and the
 [launch record](../metadata/duplication_domain_common_core_fits_launch_20260927.json).
 Full fitting and independent numeric validation remain pending; no biological
 asymmetry or duplication-effect claim is made.
+
+
+## September 27 common-core fitting finished; full numerical readback running
+
+The producer completed all 255,552 common-residue fit rows: 254,464 computed
+with unique rotations for all three comparisons, 704 source-excluded rows and
+384 rows with fewer than three common residues. These are mapping/mask/order
+alternatives, not independent duplication observations. Producer runtime was
+about 112 CPU seconds with 1.6 GiB peak memory.
+
+Launched full independent reconstruction using quaternion-derived rotations
+and direct coordinate residuals. Every distance/contrast, geometry flag,
+sequence identity, confidence value, blank, exclusion and coverage decision
+will be checked. Fixtures passed noisy/reflected/small/large examples and
+rejected intentionally corrupted numeric fields. See the
+[readback launch record](../metadata/duplication_domain_common_fit_readback_launch_20260927.json)
+and [updated fitting methods](duplication-domain-common-core-fits-20260927.md).
+Full numeric verification and controlled biological analysis remain pending.

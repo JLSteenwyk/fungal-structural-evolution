@@ -62,3 +62,33 @@ Phylogenetic/family dependence, reference choice, order/mask robustness,
 confidence and alignment uncertainty still need to be carried into subsequent
 analyses. A signed distance contrast alone does not establish a duplication
 effect or identify which copy changed after duplication.
+
+## Execution complete; independent quaternion audit running
+
+The producer completed all 255,552 records. It computed 254,464 common-core
+fits with numerically unique rotations for all three pairs, retained 704 rows
+excluded by upstream input/geometry flags, and retained 384 rows with fewer
+than three common residues. Each computed row contains three pairwise fits;
+these are alternative computation records, not independent events.
+
+The independent checker reconstructs every core from hashed PDBs and source
+maps. It obtains each proper rotation from the leading eigenvector of a 4×4
+quaternion matrix and evaluates coordinate residuals directly, avoiding
+subtraction of nearly equal energies near zero RMSD. It checks every RMSD,
+signed difference, geometry status, identity, confidence summary, blank field,
+source exclusion and rational coverage decision. Numeric comparisons use 1e-9
+absolute/relative tolerance. This tolerance does not change native RMSD
+quarantine or resolve biological differences at that scale.
+
+Tests compare SVD and quaternion fits on small/large, noisy and reflected
+cores. Deliberate changes to RMSD, signed contrast, sequence identity and
+confidence must be rejected. The full readback is bound to the producer's
+completed receipt in its [launch record](../metadata/duplication_domain_common_fit_readback_launch_20260927.json).
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/check_common_core_quaternion_readback.py
+OPENBLAS_NUM_THREADS=1 python scripts/readback_domain_triad_common_fits.py --plan metadata/duplication_domain_common_core_fits_plan_20260927.json --output results/structural_comparisons/duplication-domain-common-fit-readback-20260927-v1.json
+```
+
+The independent audit is pending; execution counts alone do not validate the
+fitted values or justify biological interpretation.

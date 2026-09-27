@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-duplication-domain-common-fit-readback-20260927.service",
+  "pid": 3019565,
+  "created": 1790493361.37,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_domain_triad_common_fits.py",
+    "--plan",
+    "metadata/duplication_domain_common_core_fits_plan_20260927.json",
+    "--output",
+    "results/structural_comparisons/duplication-domain-common-fit-readback-20260927-v1.json"
+  ],
+  "pins": {
+    "metadata/duplication_domain_common_core_fits_plan_20260927.json": "a815328b4c99589f35202cf523f68902a9ac2ec9e3260414b9c583e022516d54",
+    "scripts/readback_domain_triad_common_fits.py": "185e8caa873928ed6e76aa2d6c40e0a028d5ec0cd52c5d30c4ff24145b48135f",
+    "scripts/check_common_core_quaternion_readback.py": "a447ff39eabdc115df4503e4eea7e146bc65988d1ff953e90d01d9600d76aa65",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/receipt.json": "a069b61db1b380d377d7c5c6d060bdb14ef734b496f36a193ecd61e632ab795e"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      2,
+      30
+    ],
+    "basis": "Independent quaternion fits and complete table reconstruction for 255552 rows; original producer used 112 CPU seconds and 1.6 GiB peak. No GPU, native alignment or charges."
+  }
+}
