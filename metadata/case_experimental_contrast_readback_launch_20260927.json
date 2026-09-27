@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-case-experimental-contrast-readback-20260927.service",
+  "pid": 444697,
+  "created": 1790542458.06,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_case_experimental_quartet_contrasts.py"
+  ],
+  "script_sha256": "703503065d8abc002ac5673438c98ed5e31422c2d58d8d382790abd83c3c5d2c",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.25,
+      2
+    ]
+  },
+  "scope": "All partition/screen/metric rows, unavailable dispositions, original-length rational thresholds and Decimal signed contrasts; exact exporter wait and terminal-success requirement. No GPU use."
+}

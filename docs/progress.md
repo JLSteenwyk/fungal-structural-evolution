@@ -8707,3 +8707,12 @@ qualification rows and all 78 summaries. Observed n50/c70 both-region entity
 counts are Heliocybe 18, Cryoendolithus 3, Furculomyces 3, Jaapia 91 and
 Phycomyces 26; the other cases remain zero. Direct quartet fitting is now active.
 These are coverage results, not independent experimental confirmation of effects.
+
+### 2026-09-27: complete experimental quartet fits and contrasts verified
+
+All four geometry/export/readback services terminated successfully. Full checks
+cover 6,400 partitions, 115,200 fit records, 38,400 coverage rows and 25,600 paired
+contrasts. Maximum RMSD readback difference is 1.35e-13 Å; maximum Decimal
+subtraction difference is 1.074e-14 Å. Unavailable fits and every screen remain
+explicit. Case-level sensitivity and interpretation are still pending; none of
+these numerical checks establishes a biological mechanism or independent support.

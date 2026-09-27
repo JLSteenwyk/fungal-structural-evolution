@@ -522,3 +522,32 @@ missing/ambiguous-coordinate categories remain retained.
 The successful raw-coordinate gate released the direct quartet fit service,
 which is now writing fits. Its full numerical readback and coverage/contrast
 exports remain downstream and are not yet complete.
+
+## Full quartet geometry and contrast validation completed
+
+The fit producer and its full independent checker both terminated successfully.
+All 6,400 partitions and 115,200 pair-fit records passed expected-combination,
+coordinate-availability, domain-partition, denominator and numerical readback.
+Maximum RMSD disagreement was 1.3500312e-13 Å. Records for insufficient or
+degenerate fits remain explicit; the record count is not a count of usable fits.
+Closure: `metadata/case_experimental_quartet_fits_completed_20260927.json`.
+
+The coverage/contrast exporter and its separate checker also completed
+successfully. `readback_case_experimental_quartet_contrasts.py` reconstructed all
+38,400 coverage rows with exact rational thresholds and all 25,600 contrast rows
+using Decimal subtraction against source pair fits. All expected combinations,
+missing-fit statuses and original-length denominators matched. Maximum numeric
+subtraction difference was 1.074e-14 Å.
+
+Of 6,400 partitions, both reference contrasts are numerically available for
+6,360 whole-protein comparisons, 2,228 domain comparisons, 6,052 independently
+fitted outside comparisons and 1,920 domain-anchored outside comparisons. These
+counts precede coverage qualification and include repeated models/entries; they
+are not independent biological observations. Closure:
+`metadata/case_experimental_quartet_contrasts_completed_20260927.json`.
+
+The contrast checker used one CPU, 4 GiB RAM, no swap, a 0.1 GiB output allowance
+and 0.25–2 hours planned. Its launch identity is retained in
+`metadata/case_experimental_contrast_readback_launch_20260927.json`. Full source
+bindings are in the local readback receipt. Case-level confidence/boundary/reference
+sensitivity, experimental dependence and biological interpretation remain open.

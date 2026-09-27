@@ -1,0 +1,38 @@
+{
+  "status": "complete_full_case_quartet_contrast_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "script_sha256": "703503065d8abc002ac5673438c98ed5e31422c2d58d8d382790abd83c3c5d2c",
+  "partition_maps": 6400,
+  "coverage_rows": 38400,
+  "contrast_rows": 25600,
+  "availability_counts": {
+    "whole:both_available": 6360,
+    "domain:unavailable": 4172,
+    "outside_independent:both_available": 6052,
+    "outside_domain_anchored:unavailable": 4480,
+    "domain:both_available": 2228,
+    "outside_domain_anchored:both_available": 1920,
+    "outside_independent:unavailable": 348,
+    "whole:unavailable": 40
+  },
+  "maximum_decimal_subtraction_error": 1.074e-14,
+  "scope": "All six screens and all four metrics verified for every partition. Counts reconstructed from source positions, rational coverage thresholds and original denominators; signed contrasts and all unavailable statuses rechecked against source pair fits using Decimal arithmetic. Descriptive selected-case outputs only; no inference of biological effect or independence.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-quartet-contrast-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "6680c415289e655914628602053e7d9f7668c682c9cb43381a4b213a681f4e95",
+  "terminal_states": {
+    "fungal-case-experimental-quartet-contrasts-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-case-experimental-contrast-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}
