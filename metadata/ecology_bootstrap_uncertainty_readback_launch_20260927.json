@@ -1,0 +1,17 @@
+{
+  "service": "fungal-ecology-bootstrap-summary-readback-20260927.service",
+  "pid": 2474297,
+  "created": 1790509233.56,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_ecology_bootstrap_summary.py",
+    "--input",
+    "results/ecology/bootstrap-uncertainty-summary-20260927-v1",
+    "--wait-for",
+    "metadata/ecology_bootstrap_uncertainty_summary_launch_20260927.json",
+    "--output",
+    "metadata/ecology_bootstrap_uncertainty_summary_readback_20260927.json"
+  ],
+  "plan_sha256": "a385095ebd9b70e442d5c3e8bedfc818685f903e4b9590dafdb2e9f5130c06d6",
+  "status": "verified_live_waiting_for_complete_summary"
+}

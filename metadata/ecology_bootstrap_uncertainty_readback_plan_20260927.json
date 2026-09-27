@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_ecology_bootstrap_summary.py",
+  "input": "results/ecology/bootstrap-uncertainty-summary-20260927-v1",
+  "wait_for": "metadata/ecology_bootstrap_uncertainty_summary_launch_20260927.json",
+  "output": "metadata/ecology_bootstrap_uncertainty_summary_readback_20260927.json",
+  "script_sha256": "fe210a01a929edeec579099a31e556214bac8c1760e9a6407854d047a9e31088",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_allowance_gb": 0.1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "cost": "Existing local CPU host"
+  },
+  "scope": "Full independent outer-join and grouped-distribution summary readback after producer completion."
+}

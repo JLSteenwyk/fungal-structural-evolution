@@ -164,3 +164,48 @@ Expected output is `results/ecology/bootstrap-uncertainty-summary-20260927-v1`.
 Resources are one CPU/4 GiB RAM, no swap, 0.1 GB output and 1–10 minutes after
 the audit, on the existing host. The summary and its independent aggregation
 readback remain pending.
+## Full bootstrap audit and uncertainty summary completed
+
+All 2,000 saved bootstrap trees passed independent network-flow reconstruction:
+4,000 tree/coding combinations, 4,196,000 edge rows and 16,784,000 constrained
+endpoint costs. Rechecked all 2,000 proof and compressed-shard hashes, the source
+summary artifacts, exact tree-index grid and successful terminal process state.
+The completion record is
+`metadata/ecology_bootstrap_edges_readback_completed_20260927.json`.
+
+The full uncertainty summary then completed and passed independent pandas
+outer-join and distribution reconstruction: all 5,006 split/condition rows,
+68 distribution rows, ML annotations, counts, conditional fractions and absence
+denominators were checked. Receipts are
+`metadata/ecology_bootstrap_uncertainty_summary_completed_20260927.json` and
+`metadata/ecology_bootstrap_uncertainty_summary_readback_20260927.json`.
+
+Across every bootstrap tree in both guide ensembles, the original coding
+requires a minimum of seven state changes; treating Ramaria F113071 as unknown
+reduces that minimum to six in every tree. These are root-free parsimony scores,
+not counts of independent biological origins or directed gains/losses.
+
+| Guide ensemble | Coding | Required-change edge count | Optional-change edge count |
+|---|---|---|---|
+| Profile/profile | Original | 3 in 865 trees; 2 in 135 | 17–24 |
+| Profile/MAFFT | Original | 3 in 867 trees; 2 in 133 | 17–23 |
+| Profile/profile | Ramaria unknown | 2 in 865 trees; 1 in 135 | 17–24 |
+| Profile/MAFFT | Ramaria unknown | 2 in 867 trees; 1 in 133 | 17–23 |
+
+The Botryobasidium F264124 terminal edge is required in every optimal mapping
+on every bootstrap tree under both codings. The Ramaria F113071 terminal edge
+is always required only under the original coding. The Sphaerobolus F68786
+terminal edge is required in 86.5% and 86.7% of the two ensembles, respectively,
+and optional in the remaining trees; its split is present throughout. No other
+split is required in any bootstrap tree. There are 32 profile/profile and 31
+profile/MAFFT splits that are optional in at least one tree, under either coding.
+These optional edges are jointly constrained, not independent candidate events.
+
+The full distributions are archived in
+`metadata/ecology_bootstrap_tree_metric_distributions_20260927.tsv`, with all
+ever-required edge/condition rows in
+`metadata/ecology_bootstrap_required_edge_sensitivity_20260927.tsv`. Stable
+minimum scores therefore coexist with uncertain transition placement. Rooting,
+broader ecological coding and evidence for replicated independent transitions
+remain necessary before an ecological structural-effect test. This stage does
+not establish that seven contrasts are available.

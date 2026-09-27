@@ -1,0 +1,25 @@
+{
+  "status": "complete_audited_ecology_bootstrap_uncertainty_summary_pending_readback",
+  "sources": {
+    "results/ecology/bootstrap-optimal-edge-readback-20260927-v1/receipt.json": "5dd6843d66d328d69293a84e0cc25ed756a1d9f2d3ae73c1301a631685c721c2",
+    "results/ecology/bootstrap-optimal-edge-states-20260927-v1/receipt.json": "7804912cdbc82f7e87effd6b530b88338c04ea09d2ffbd32dffe065b18e5d364",
+    "metadata/ecology_optimal_edges_readback_20260927.json": "2b67abaa9eabb07f0a363e719f30c6df38c47924b86c8fea7f21b802be5524c8",
+    "results/ecology/optimal-edge-states-20260927-v1/receipt.json": "70850a6df33345a8a4818e84ab403fa62287998bca2667a5a47b506e775501fb",
+    "results/ecology/bootstrap-optimal-edge-states-20260927-v1/split_frequencies.tsv": "6429e9ba21206e9a4d5b30426c298946c04bbf7442f489cf4a04675392a08afa",
+    "results/ecology/bootstrap-optimal-edge-states-20260927-v1/tree_summaries.tsv": "860e9623f52ccb468c86795aa59e30d5e14bf13941db33b13516d947f1efdfd2",
+    "results/ecology/optimal-edge-states-20260927-v1/edge_states.tsv": "1a71feefd80bd45fff023f2a1cda5bc8ef0e25b41b91088d8bda34320459d83e"
+  },
+  "script_sha256": "2bc2e140ea9e20f1b119e48b931520e4fd752721918fb99c062bae694a9b368b",
+  "split_rows": 5006,
+  "distribution_rows": 68,
+  "trees": 2000,
+  "coding_tree_combinations": 4000,
+  "artifacts": {
+    "tree_metric_distributions.tsv": "30cc8525e51c51e6105bff44f38352300af224090f09ff07488c5876ddac5ea2",
+    "split_uncertainty.tsv": "d29019acba2ae52cf49bd1960e7948ff72973ef56edf58179029afa2c4ed2364"
+  },
+  "scope": "Descriptive root-free equal-cost state-mapping sensitivity. Split absence is separate from unchanged states; conditional and whole-ensemble denominators are explicit. Required/optional statuses concern optimal mappings, not identified biological origins, independent contrasts, posterior probabilities or ecological effects. Source-label and Ramaria-coding uncertainty remain.",
+  "full_receipt_path": "results/ecology/bootstrap-uncertainty-summary-20260927-v1/receipt.json",
+  "full_receipt_sha256": "e2298c8b6b437f917d7ee05ec44ec6bd62924a8365f24e764f246adc17a70a39",
+  "full_readback_sha256": "5dea1bfe9859d67bc31d0f619c054290603ac2ac63a626f0222a62710dc4f127"
+}

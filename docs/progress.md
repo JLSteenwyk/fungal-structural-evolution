@@ -7042,3 +7042,19 @@ The summary controller is verified live under one CPU/4 GiB RAM. The local tree
 producer and both background input preparation processes were also verified
 live. No actual bootstrap summary is claimed complete; independent aggregation
 readback remains next. All eight aims remain open; GPU prediction is paused.
+## September 27 full ecological bootstrap uncertainty verified
+
+The preceding turn queued the bootstrap summary. This turn implemented its
+independent full aggregation check and verified successful completion of both
+the 2,000-tree network-flow audit and the summary/readback. Rechecked 2,000
+proof/shard hashes and exact source bindings. All 16,784,000 constrained costs,
+5,006 split summaries and 68 distribution rows are verified.
+
+The minimum score remains seven under original coding and six with Ramaria
+unknown in every bootstrap tree, but required/optional locations vary.
+Sphaerobolus F68786 is required in 86.5%/86.7% of guide-specific trees and optional
+otherwise; Botryobasidium F264124 remains required throughout. These are
+conditional mapping results, not seven independent origins or an ecological
+effect. Detailed distributions, caveats and receipts are recorded in the
+ecological edge-state report. All eight aims remain open; GPU prediction stays
+paused.
