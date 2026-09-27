@@ -61,3 +61,15 @@ source tables. The launch record pins its exact process identity. Output is
 The full results, serialized-certificate readback and mapping of classifications
 back to all sensitivity settings remain pending. No outcome or covariate setting
 was selected because its contrast was favorable. GPU prediction remains paused.
+
+Independent certificate readback is queued in
+`fungal-full-joint-support-readback-20260927.service`, with launch identity and
+script hashes in `metadata/full_joint_support_readback_launch_20260927.json`.
+It waits for terminal producer success, reconstructs every original covariate
+matrix, checks all saved sparse barycenters and separating vectors without
+calling the optimizer, and exports classifications for all 82,944 settings.
+Five known geometric cases passed and nine deliberately corrupted certificates
+were rejected (`metadata/joint_support_certificate_checks_20260927.json`).
+Unresolved certificates remain unresolved; numerical hull support does not
+establish dense overlap or model adequacy. Planned resources are one CPU,
+16 GiB RAM, no swap, and 0.25–12 hours after the producer finishes.

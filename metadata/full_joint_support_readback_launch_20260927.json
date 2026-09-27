@@ -1,0 +1,34 @@
+{
+  "unit": "fungal-full-joint-support-readback-20260927.service",
+  "pid": 218957,
+  "created": 1790527344.3,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_joint_covariate_support.py",
+    "--plan",
+    "metadata/full_joint_covariate_support_plan_20260927.json",
+    "--launch",
+    "metadata/full_joint_covariate_support_launch_20260927.json",
+    "--output",
+    "results/model_validation/full-joint-support-readback-20260927-v1"
+  ],
+  "observed_at": "2026-09-27T16:42:44.961039+00:00",
+  "pins": {
+    "scripts/readback_full_joint_covariate_support.py": "dcc7e713b05464176db6b3a5420517180cc7c5f9c995f8c2ea1968a406b3bd07",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85",
+    "scripts/test_joint_support_certificate.py": "be7496c5cbe630a12bd90259693ace7a076279e4baa919e75c94aac2a9ecace9",
+    "metadata/joint_support_certificate_checks_20260927.json": "e15988d38c6c4aa57e8667c3c64f75fc4c6174a4ca10c3e0574ee5a053e1b14b",
+    "metadata/full_joint_covariate_support_plan_20260927.json": "457161036f8a44d5df50fececbb733b454833b29473902214795790ef425eb39",
+    "metadata/full_joint_covariate_support_launch_20260927.json": "b9c505de1c6ee991d9a3f5e75de1bd6dff1bf7a555ef24d04d4c1fe33c824412"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.25,
+      12
+    ]
+  }
+}
