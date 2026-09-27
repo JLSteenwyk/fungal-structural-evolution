@@ -5895,3 +5895,21 @@ rejected intentionally corrupted numeric fields. See the
 [readback launch record](../metadata/duplication_domain_common_fit_readback_launch_20260927.json)
 and [updated fitting methods](duplication-domain-common-core-fits-20260927.md).
 Full numeric verification and controlled biological analysis remain pending.
+
+
+## September 27 common-core structural fits independently verified
+
+The full quaternion readback passed all 255,552 fit records, reconstructing
+common cores from hashed PDBs and source residue maps. Every RMSD and signed
+contrast, confidence/identity/geometry value, blank, exclusion and rational
+coverage decision matched the independently calculated result. Maximum absolute
+RMSD/contrast disagreement was 2.1483 × 10⁻¹⁴ Å.
+
+The completion checkpoint checked all plan pins and checker identity, receipt
+bindings, artifact hashes, the complete unique table key/count grid, screen
+totals, finite/nonnegative distances, common-core metric bounds and excluded
+blank values. See the [completion record](../metadata/duplication_domain_common_core_fits_completed_20260927.json).
+The 254,464 computed rows and 1,088 explicitly excluded/short-core rows remain
+alternative records, not independent biological observations. Order/mask/mapping
+robustness and controlled phylogenetic inference remain next; this numerical
+milestone does not establish asymmetric evolution or a duplication effect.

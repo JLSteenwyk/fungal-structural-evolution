@@ -92,3 +92,20 @@ OPENBLAS_NUM_THREADS=1 python scripts/readback_domain_triad_common_fits.py --pla
 
 The independent audit is pending; execution counts alone do not validate the
 fitted values or justify biological interpretation.
+
+## Full independent numeric readback passed
+
+The quaternion-based readback completed all 255,552 rows from 127,776
+mapping dispositions. Every distance, signed contrast, geometry flag, identity,
+confidence value, exclusion and screen decision passed. The largest absolute
+RMSD or signed-contrast difference between independent quaternion and SVD
+calculations was 2.148281552649678 × 10⁻¹⁴ Å.
+
+A separate completion check verified source/checker hashes, artifact binding,
+all table keys and counts, screen totals, finite/nonnegative fitted distances,
+common-core RMSD metric bounds and blank values for excluded cases. The
+[completion record](../metadata/duplication_domain_common_core_fits_completed_20260927.json)
+contains the audit receipt and provenance. Numerical agreement is not accuracy
+relative to experimental structures and does not make a tiny signed contrast
+biologically meaningful. Input-order, mask, mapping-definition, reference and
+annotation-policy robustness remain to be assessed before biological inference.
