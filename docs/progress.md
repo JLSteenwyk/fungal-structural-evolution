@@ -6265,3 +6265,22 @@ the full guide-join verification required before downstream control eligibility.
 See [readback methods](terminal-sister-backgrounds-20260927.md#complete-guide-union-readback-queued).
 Full readbacks, background matching and evolutionary tests remain unfinished;
 the complete objective is active and GPU prediction remains paused.
+
+## September 27 complete terminal sister inventory independently verified
+
+Full readback passed all 140,719 native trees and 3,154,373 guide-specific pair
+records, including exact pair sets, every exported field, model assignments,
+branch lengths and summary counts. Archived the completed receipt. These are
+verified inventory counts, not validated matched controls.
+
+Added and launched independent membership validation behind both membership
+production and full guide-union readback. It reconstructs candidate identities
+and protein ordinals, checks copied fields and every membership flag by binary
+search rather than the producer's sequential merge, with complete stream hash
+bindings. All 91 fixture queries plus empty/corrupt cases passed. Production
+membership validation remains pending. See [methods](terminal-sister-backgrounds-20260927.md#full-inventory-verified-membership-readback-queued).
+
+The prior turn added guide-union verification; this turn archives a completed
+full-data milestone and supplies the remaining native-membership validation
+stage. Background matching and biological tests remain open. The full objective
+remains active and GPU prediction remains paused.

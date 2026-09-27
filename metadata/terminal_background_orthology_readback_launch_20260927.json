@@ -1,0 +1,14 @@
+{
+  "service": "fungal-terminal-background-orthology-readback-20260927.service",
+  "pid": 234675,
+  "created": 1790498976.39,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_orthology.py",
+    "--config",
+    "metadata/terminal_background_orthology_readback_plan_20260927.json"
+  ],
+  "config": "metadata/terminal_background_orthology_readback_plan_20260927.json",
+  "config_sha256": "6cbc8cad1a8b9a7112e105193d8b794a566e7d0ed3411a1da149bf7e9b8bd254",
+  "fixture_status": "passed_91_known_membership_queries_empty_and_corrupt_cases"
+}

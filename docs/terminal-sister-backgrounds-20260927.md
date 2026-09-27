@@ -3,7 +3,9 @@
 The duplication analysis needs comparison groups before testing an association
 between duplication and structural divergence. This inventory begins that work
 across all 70,307 profile-guide and 70,412 MAFFT-guide resolved gene trees.
-It is running; no completed background or duplication-effect test is claimed.
+The full inventory and independent reconstruction are complete. Guide comparison,
+orthology membership and matching remain downstream; no completed matched
+background or duplication-effect test is claimed.
 
 For every internal node with exactly two terminal children, retain both genes,
 their taxa, family, node and parent identifiers, reported duplication flags for
@@ -78,8 +80,8 @@ changed source or producer hashes and rechecks them after traversing all rows.
 The inventory completed with 1,577,204 profile-guide and 1,577,169 MAFFT-guide
 terminal pairs. Cross-taxon unreported pairs with two distinct frozen models
 number 71,858 and 71,822, respectively; a further 6,446 and 6,448 map to identical
-models. These are producer counts pending the running full independent readback,
-not counts of eligible matched controls. The inventory includes 70,307/70,412
+models. These counts passed full independent reconstruction; they are not counts of
+eligible matched controls. The inventory includes 70,307/70,412
 source trees and retains all missing-model categories.
 
 The queued `scripts/compare_terminal_sister_guides.py` requires that full
@@ -155,3 +157,29 @@ will produce `metadata/terminal_sister_guide_comparison_completed_readback_20260
 One CPU, 4 GiB RAM and no swap are enforced, with a 0.1–4 hour planning range
 excluding the upstream wait. This verifies joins and classifications; it does
 not establish matched comparability or a biological duplication effect.
+
+## Full inventory verified; membership readback queued
+
+The independent inventory reconstruction completed successfully for all
+140,719 source trees and all 3,154,373 guide-specific terminal pair records.
+Every pair identity, exported field, model join, sequence branch length and
+summary count passed. Evidence is recorded in
+[the full readback receipt](../metadata/terminal_sister_background_completed_readback_20260927.json).
+The inventory and guide alternatives remain conditional on the reconciled trees.
+
+The independent membership checker `scripts/readback_background_orthology.py`
+waits for both the membership producer and full guide-union checker. It requires
+both complete, bound receipts, independently rebuilds protein ordinals and all
+copied candidate fields, then uses fixed-record binary searches for every
+candidate in each native stream. This differs from the producer's sequential
+merge. Search records must contain reciprocal entries; absent queries require
+appropriate bracketing. The prior full stream audit and before/after hashes
+establish global ordering and multiplicity outside the accessed records.
+
+Known-set checks passed all 91 possible pairs in a 14-ID universe, plus empty
+stream and corrupt-record cases. The queued production check uses one CPU,
+4 GiB RAM, no swap and a 0.1–4 hour planning range excluding its waits. Config:
+`metadata/terminal_background_orthology_readback_plan_20260927.json`; success
+output: `metadata/terminal_background_orthology_completed_readback_20260927.json`.
+This validates native output membership, not independent biological orthology,
+matched comparability or a causal effect of duplication.
