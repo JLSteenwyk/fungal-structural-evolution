@@ -5521,3 +5521,12 @@ all 643 membership records, 12 summaries and 119 paired changes. Protein
 membership is fixed, but residue sets remain threshold-dependent; this is not
 a causal confidence effect or representative fungal sample. See
 [fixed-cohort sensitivity](prediction-source-controls.md#fixed-model-pair-cohort-sensitivity).
+
+
+### September 26: expanded source-control methods incorporated
+
+The methods draft now documents the executed 673-cell/643-model-pair overlap
+analysis, exact complete-sequence checks, full-model confidence/partner controls
+and 119-pair fixed-cohort sensitivity. Denominator changes, acquisition-batch
+concentration, dependence and limits of interpretation are explicit. Supporting
+completion receipts were rechecked before incorporating the methods.

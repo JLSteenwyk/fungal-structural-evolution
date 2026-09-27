@@ -542,3 +542,50 @@ Warnings, including near-zero branches, are retained; these point estimates
 alone do not establish structural acceleration or positive selection. Separate
 uncertainty analysis is required for this cohort. Reproduction and provenance
 are described in [the recovery record](recovery-20260926.md#completed-expanded-alphafold-fit-collection).
+
+
+## Matched prediction-source sensitivity in the expanded cohorts
+
+We identified all taxon–marker combinations eligible in both the recovered
+AlphaFold and completed ESMFold paired-input datasets. Each independently
+filtered alignment was mapped back to the original marker-alignment columns;
+comparisons required observed, matching amino acids under both source-specific
+confidence masks. The shared set contained 673 taxon–marker combinations across
+21 taxa and 78 markers. Complete native-encoding sequences were then compared
+by exact strings, lengths and sequence hashes. All shared combinations had
+identical complete sequences, resolving to 643 distinct source model pairs.
+Model versions, coordinate and encoding checksums, and available prediction
+provenance were retained. Multiple taxon–marker links to one model pair were
+collapsed for full-model sensitivity summaries, with the source links preserved.
+
+For each distinct pair, we compared valid native structural-alphabet features
+across the full encoded proteins. Joint masks used minimum feature-context
+pLDDT cutoffs of 0, 70 and 90 and maximum directional feature-context PAE cutoffs
+of unfiltered, 5, 10 and 15. This produced 12 alternatives for every pair.
+A pair qualified for a threshold summary if at least 50 residues and half of
+the full sequence were jointly retained. All failed coverage dispositions were
+kept. We reported pooled residue disagreement, pair-level summaries and the
+retained pair/residue denominators. Structural-state disagreement was also
+partitioned by whether the native partner-residue index agreed between models.
+This partition describes association with partner context, not a causal
+attribution of disagreement.
+
+To distinguish changes in protein membership from within-protein filtering,
+we repeated all threshold summaries on the intersection of pairs qualifying
+under every alternative (119 pairs). Protein membership was thus fixed, but
+residue membership remained threshold-dependent. We retained all pair-specific
+threshold differences; no significance test or calibrated error estimate was
+constructed from these descriptive controls. Independent reconstruction checked
+all source-overlap joins, complete sequences, full-model confidence selections,
+partner/state counts, summaries and fixed-cohort membership.
+
+Local model provenance was concentrated in the ecology acquisition batch
+(635 of 643 pairs), with five original-marker and three longer-marker models.
+The three saved configurations shared the reviewed checkpoint/software,
+precision, recycle, seed, chunk-size and inference-mode settings. This does not
+make the overlap representative or establish complete configuration equivalence
+with AlphaFold. Confidence selection, nonlocal structural features, shared
+proteins and acquisition ascertainment limit inference. These comparisons assess
+source sensitivity on matched sequences; they do not measure experimental
+accuracy or evolutionary substitutions. Reproduction, receipts and the
+confidence/coverage figure are in [prediction-source controls](prediction-source-controls.md#qualified-full-cohort-overlap-diagnostic-september-26).
