@@ -8084,3 +8084,19 @@ independent quaternion calculation, and preserves RMSD flags. Serialized readbac
 and usable-cohort qualification remain pending. Producer: one CPU, 16 GiB, no
 swap, 2 GiB output, 0.5–12 hours; plan/launch use the
 `metadata/primary_diagnostic_geometry_*_20260927.json` prefix.
+
+### September 27: full primary diagnostic geometry readback queued
+
+`readback_primary_diagnostic_geometry.py` now waits for the exact geometry
+producer and successful terminal state. It will reconstruct every saved geometry
+row from hashed native mappings and PDB coordinates, checking all coordinate
+widths/ranks, cross spectra, proper-rotation curvature, statuses, counts and exact
+record coverage. The coordinate-index reconstruction differs from the producer,
+and numerical checks use the existing independent LAPACK/quaternion verifier.
+Near-zero gaps and degenerate mappings remain explicit, as do all RMSD flags.
+
+The full 387,646-row readback uses one CPU, 16 GiB, no swap; planning allowance
+0.5–12 hours after producer completion. Source/script hashes and process identity
+are recorded in `metadata/primary_diagnostic_geometry_readback_{plan,launch}_20260927.json`.
+This new diagnostic qualification path preserves the original strict audit
+failure and does not infer biological duplication effects.
