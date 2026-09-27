@@ -1,0 +1,46 @@
+{
+  "fits": "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1",
+  "fit_readback": "results/structural_comparisons/duplication-domain-common-fit-readback-20260927-v1.json",
+  "screens": [
+    "n30_c50",
+    "n30_c70",
+    "n30_c90",
+    "n50_c50",
+    "n50_c70",
+    "n50_c90"
+  ],
+  "margins": [
+    {
+      "id": "direction_margin_0",
+      "angstrom": 0.0
+    },
+    {
+      "id": "direction_margin_0_01",
+      "angstrom": 0.01
+    },
+    {
+      "id": "direction_margin_0_1",
+      "angstrom": 0.1
+    }
+  ],
+  "output": "results/structural_comparisons/duplication-domain-common-core-robustness-20260927-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 2,
+    "output_allowance_gib": 1,
+    "planning_minutes": [
+      1,
+      5
+    ],
+    "basis": "Streaming ranges/counts from 255552 audited fit rows, no coordinate inference or fit, GPU or charges."
+  },
+  "pins": {
+    "scripts/summarize_common_core_robustness.py": "5c047abf7a24063b175e0a1b959ef615703a3f20cd5a8cb41b79341ef375127f",
+    "scripts/check_common_core_robustness_cases.py": "e5febc357c80caa266d4a29210dac77ebabaaaaa77332032a74592c4fd814976",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/structural_comparisons/duplication-domain-common-fit-readback-20260927-v1.json": "5912209f745e7b149573341a0b2cb8d5b508169dcc6472144ad80ab36cf6a748",
+    "metadata/duplication_domain_common_core_fits_completed_20260927.json": "7d8d36e96ab28841feb204f2bbcc705ac5f2b3eda591ced9f51cb82d3a7f8e7c",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/receipt.json": "a069b61db1b380d377d7c5c6d060bdb14ef734b496f36a193ecd61e632ab795e",
+    "results/structural_comparisons/duplication-domain-common-core-fits-20260927-v1/common_residue_fits.tsv": "276044477863c58de6142b65783938beec5f28cd9fadd649fded8ff48f804396"
+  }
+}

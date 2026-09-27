@@ -5913,3 +5913,26 @@ The 254,464 computed rows and 1,088 explicitly excluded/short-core rows remain
 alternative records, not independent biological observations. Order/mask/mapping
 robustness and controlled phylogenetic inference remain next; this numerical
 milestone does not establish asymmetric evolution or a duplication effect.
+
+
+## September 27 common-core order/mask/mapping robustness verified
+
+Completed and independently checked all 239,580 range/completeness summaries
+from 255,552 verified fit records. Each oriented interval triad is summarized
+across eight input orders within each mask/mapping choice and all 32 alternatives
+jointly, under every one of the six length/coverage screens. Direction labels
+require every expected alternative to pass; incomplete groups remain explicit.
+
+At 30 residues and 70% original-interval coverage, 7,025 of 7,986 interval triads
+pass all 32 alternatives, and 1,223 change the raw signed contrast direction.
+At the descriptive 0.1 Å margin, 2,027 keep one direction beyond that margin
+throughout, while 132 extend beyond both signs and 4,866 touch or enter the
+margin band. All three margins (0/0.01/0.1 Å) and all six coverage screens are
+reported; margins are not biological significance or prediction-error thresholds.
+
+The independent dataframe readback reproduced every grid, key, count, extremum,
+range and classification. See [methods and results](duplication-domain-common-core-robustness-20260927.md)
+and the [completion record](../metadata/duplication_domain_common_core_robustness_completed_20260927.json).
+Interval triads are dependent alternatives, not independent events. Reference,
+annotation policy/boundary and guide sensitivity, and controlled evolutionary
+inference remain outstanding.

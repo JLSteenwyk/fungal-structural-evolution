@@ -1,0 +1,32 @@
+{
+  "status": "passed_full_common_core_robustness_readback",
+  "producer_receipt_sha256": "2c9edb1f52b3bac1c5f756b6e36b11a6467ab7a0458616b0dfe8d77a15430957",
+  "plan_sha256": "2358e600810db1367c0b27c77d6c7aabc98e2442573e1e2a4d086567d652b8d1",
+  "checker_sha256": "d7cca4bba25c27ab84fa520724a1d02001338750a4f7c64ccae60f41f4f9e3b1",
+  "summary_rows_checked": 239580,
+  "source_rows_checked": 255552,
+  "triads": 7986,
+  "n30_c70_all_alternatives_classifications": {
+    "direction_margin_0": {
+      "a_farther_from_reference": 2933,
+      "b_farther_from_reference": 2869,
+      "changes_direction_across_alternatives": 1223,
+      "incomplete": 961
+    },
+    "direction_margin_0_01": {
+      "a_farther_from_reference": 2474,
+      "b_farther_from_reference": 2412,
+      "touches_or_within_margin_band": 1243,
+      "incomplete": 961,
+      "changes_direction_across_alternatives": 896
+    },
+    "direction_margin_0_1": {
+      "touches_or_within_margin_band": 4866,
+      "a_farther_from_reference": 1022,
+      "b_farther_from_reference": 1005,
+      "incomplete": 961,
+      "changes_direction_across_alternatives": 132
+    }
+  },
+  "scope": "Every source alternative grid and all summary keys, counts, extrema, ranges, completeness flags and direction classifications independently recomputed using dataframe group operations. Margins descriptive only; triads are not independent events and no biological significance is inferred."
+}
