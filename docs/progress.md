@@ -8871,3 +8871,18 @@ Producer terminated successfully; complete output hashes, probability arrays
 and serialized site/MAP correspondence checked. These are conditional
 probabilities, not finalized ancestral sequences. Independent posterior
 validation, model sensitivity and ancestral structures remain pending.
+
+### 2026-09-27: every conditional ancestral probability independently checked
+
+A fixed-root inside/outside implementation with direct matrix exponentials
+checked all 1,682,820 saved probabilities. Maximum difference 4.39669e-12;
+all 156 fits passed. Shared model/input assumptions remain; optimization,
+model adequacy, indel uncertainty and ancestral structures remain open.
+
+### 2026-09-27: whole-protein ancestral candidate alignments completed
+
+All 26 alignments and complete readback terminated successfully, checking
+24,191 columns and 6,287 focal-pair union records. Four of 13 families have
+identical focal-pair maps across aligners; nine differ. Both methods retained.
+Whole-protein model fits and whole/domain correspondence comparisons remain
+pending. See `docs/ancestral-case-inputs.md` for outputs and limitations.

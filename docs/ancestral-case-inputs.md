@@ -505,3 +505,39 @@ log units. Complete artifact hashes, probability normalization/bounds, and every
 serialized site/MAP correspondence passed readback. Completion record:
 `metadata/conditional_domain_ancestors_completed_20260927.json`. This does not
 close the independent posterior-validation or model-sensitivity requirements.
+
+## Independent posterior calculation completed
+
+All 1,682,820 amino-acid probabilities across 84,141 node/sites and 468 mapped
+vertices passed a separate fixed-root inside/outside calculation. It evaluates
+full columns without pattern compression and uses direct matrix exponentials
+rather than the producer's eigendecomposition and traversal rerooting. The
+largest probability difference was 4.39669e-12; the largest per-site
+log-likelihood difference was 2.44825e-10, both below the prespecified 1e-8
+tolerances. A two-internal-node analytic enumeration with missing observations
+also passed. All 156 fits were checked without exclusions.
+
+Both implementations share input alignments, trees, saved parameters and
+empirical exchangeabilities. The audit therefore checks numerical calculation,
+not model convergence, adequacy, ancestral polarity or indel history.
+Reproduce with `python scripts/audit_conditional_domain_posteriors.py`; pinned
+plan, launch and completion metadata use the prefix
+`conditional_domain_posterior_audit_` and date `20260927`. The terminal run used
+one CPU, 4 GiB memory limit and no swap/GPU.
+
+## Whole-protein alignment comparison completed
+
+All 26 whole-protein alignments and their independent readback terminated
+successfully. The audit checked every sequence/copy and residue coordinate,
+24,191 alignment columns and 6,287 focal-pair union records. Only four families
+have identical focal-pair mappings between MAFFT and FAMSA: OG0000054,
+OG0000230, OG0001200 and OG0002812. All nine remaining families retain
+alignment-dependent mappings. Both alignments remain available for downstream
+sensitivity analysis; matching focal pairs does not establish full-clade
+column equivalence.
+
+The largest family, OG0000972, has 2,818 MAFFT versus 2,212 FAMSA columns, with
+474 exact shared full-clade columns. These stringent identity counts are not
+probabilities of homology. Whole-protein ancestral fitting and comparisons
+between whole-protein and extracted-domain correspondences remain pending.
+Completion: `metadata/ancestral_case_alignments_completed_20260927.json`.

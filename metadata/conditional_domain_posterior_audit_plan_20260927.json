@@ -1,0 +1,38 @@
+{
+  "source": "results/ancestral/conditional-domain-ancestors-20260927-v1",
+  "producer_plan": "metadata/conditional_domain_ancestor_plan_20260927.json",
+  "output": "results/ancestral/conditional-domain-posterior-audit-20260927-v1",
+  "pins": {
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "results/ancestral/case-domain-model-readback-20260927-v1/parameters.json": "0dcd085807874311a352c66b20dc1655e8a295ba0dc9422ec3101f88d134cecd",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv": "d0580980a65c5cf2e3ea1736afd72c951a037068f5cfcfbd984684fc34423245",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json": "178fd4ad19dcda616e266994dafc4f65e3b30d158ce6b135e2358dcc19cea6d5",
+    "results/ancestral/case-domain-model-readback-20260927-v1/receipt.json": "8f220f22036e40e93b982c04ca5cf12b9555a327dffd0f038afb824cf130c361",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/receipt.json": "f2e84798a168cc2a72026ceae07d10d0644071f5579066d12b950c52fd40976d",
+    "results/ancestral/case-local-trees-20260927-v1/receipt.json": "f4bff198dab0294ca15168f03ca83e46a6852caf2096022fd122e93f51501810",
+    "scripts/infer_conditional_domain_ancestors.py": "cfd70df94f81ca9a314e55219928d9af62306d1195659922325d30564e5618f7",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "metadata/ancestral_domain_likelihood_replay_completed_20260927.json": "a38b5e642e108ca6ee73cab48c39a97e2f7a8341722b785c0603b62ec2034fca",
+    "metadata/ancestral_fitted_node_mapping_completed_20260927.json": "98067c950e6dabf7418fc9a87e282e6f82de45a8717e7d9766ad0091ed5c2803",
+    "metadata/ancestral_domain_model_reports_completed_20260927.json": "23000d4b4805864b467d21470b18fc9e1dd4889cd6b51bf8584a300dc4cb9ace",
+    "metadata/conditional_domain_ancestor_plan_20260927.json": "261de21bef75051dd3618ad92b2c05266bb99acc1a66ce28537ed0d507b9c563",
+    "scripts/audit_conditional_domain_posteriors.py": "4396481238816e3438c84ec29d25f7b50196295602c3dd55c82dfa725ad27547",
+    "results/ancestral/conditional-domain-ancestors-20260927-v1/receipt.json": "504e0f65659f0ff60d8a092138f2b13f4c2dc9602d616e3cd0899f15bc3dde3a",
+    "metadata/conditional_domain_ancestors_completed_20260927.json": "7c0df54cfb8520d38f2cbb1c128892ae272bf949d3752bd92da008a13c693b7d"
+  },
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-08,
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  }
+}

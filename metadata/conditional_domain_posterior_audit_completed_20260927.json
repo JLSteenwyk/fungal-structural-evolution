@@ -1,0 +1,20 @@
+{
+  "status": "passed_all_conditional_domain_posteriors",
+  "fits": 156,
+  "nodes": 468,
+  "sites": 84141,
+  "probabilities": 1682820,
+  "maximum_probability_difference": 4.396684405438833e-12,
+  "maximum_site_log_likelihood_difference": 2.448246050335001e-10,
+  "plan_sha256": "d458abf840cdfb7928970196188c61a04d6acee02aae7decf5fa203c13498567",
+  "source_receipt_sha256": "504e0f65659f0ff60d8a092138f2b13f4c2dc9602d616e3cd0899f15bc3dde3a",
+  "analytic_two_internal_node_enumeration": "passed",
+  "scope": "Separate fixed-root inside/outside algorithm, full columns and direct matrix exponential. Shared empirical matrices, saved parameters, alignment and tree inputs. Tests numerical implementation, not optimization convergence, model adequacy, indels or historical node support.",
+  "source_receipt_path": "results/ancestral/conditional-domain-posterior-audit-20260927-v1/receipt.json",
+  "audit_receipt_sha256": "b349dbf2cf054935d410193be9f00a94a0d457487b0ef6ba84d45ad96553a81d",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}

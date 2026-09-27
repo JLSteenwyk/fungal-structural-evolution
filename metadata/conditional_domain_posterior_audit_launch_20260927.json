@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-conditional-domain-posterior-audit-20260927.service",
+  "state": {
+    "MainPID": "501593",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 501593,
+  "created": 1790546546.46,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_conditional_domain_posteriors.py"
+  ],
+  "plan_sha256": "d458abf840cdfb7928970196188c61a04d6acee02aae7decf5fa203c13498567",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      4
+    ]
+  }
+}

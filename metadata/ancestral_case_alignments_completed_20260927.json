@@ -1,0 +1,26 @@
+{
+  "status": "complete_26_ancestral_alignment_readbacks_and_correspondence_comparisons",
+  "source_receipt_path": "results/ancestral/case-alignment-readback-20260927-v1/receipt.json",
+  "source_receipt_sha256": "6a8eda1a2540942ffd24e05507f416169ab516d7badc158aa003916080f2b1cd",
+  "alignments": 26,
+  "families": 13,
+  "column_records": 24191,
+  "focal_pair_records": 6287,
+  "identical_focal_maps": [
+    "OG0000054",
+    "OG0000230",
+    "OG0001200",
+    "OG0002812"
+  ],
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "audit_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "Every input residue/copy, occupancy column and coordinate mapping checked. Exact full-column matching requires the same sequence-position-or-gap vector across all genes; it is stringent and not a probability of homology. Focal pair maps reported separately. No trimming, ancestral sequence or selection claim."
+}
