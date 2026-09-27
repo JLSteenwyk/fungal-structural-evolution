@@ -1,0 +1,17 @@
+{
+  "status": "passed_matched_profiled_ml_dense_checks",
+  "cases": 243,
+  "ratio_derivatives_checked": 729,
+  "fixed_design_reparameterizations": 243,
+  "fixed_covariance_nested_comparisons": 162,
+  "cancellation_fallback_cases": 1,
+  "maximum_objective_error": 2.4846258384059183e-10,
+  "maximum_ratio_gradient_error": 6.991101031417202e-10,
+  "pins": {
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_ml.py": "541a740e0a1d03af0d00f33f14f7e7f605470780c06aaf38702e110b4ee316ca"
+  },
+  "scope": "Synthetic full boundary grid, empty/duplicated species factors and nested polynomial designs. Dense Gaussian objective and trace score checks, parameterization invariance and direct-residual fallback. No optimizer, fitted biological effects, calibrated likelihood-ratio null or nonlinear joint-support claim."
+}

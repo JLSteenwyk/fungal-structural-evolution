@@ -7946,3 +7946,12 @@ The expanded quadratic/cubic input inventory now rebuilds exact values and order
 node/family/species identities across all 165,888 settings. Existing linear reuse
 groups are not assumed valid for expanded designs. A full independent SQL audit
 is queued behind successful producer completion. No nonlinear fits are launched.
+
+### September 27: ordinary likelihood evaluator verified
+
+Separate cached ML and analytic-score modules passed 243 dense Gaussian cases,
+729 component derivative checks, 243 fixed-design reparameterizations and 162
+nested-design comparisons at fixed covariance. Cancellation fallback and rank
+rejection were checked. This enables later fixed-effect comparisons without
+misusing current REML objectives; optimizer and inferential calibration remain.
+[Methods](matched-ordinary-likelihood-20260927.md). Existing fits unchanged.

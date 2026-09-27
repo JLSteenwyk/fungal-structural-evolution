@@ -73,3 +73,8 @@ record counts and representative recipes. Plans/launches use the
 and 12 GiB, no swap, with 0.1–2 hours estimated; inventory output allowance is
 2 GiB. Candidate tree-fit counts will estimate workload only: nonlinear model
 fitting, joint support checks and inferential comparisons are not launched.
+
+Ordinary ML objective and analytic-score evaluators now pass independent dense
+checks; see [likelihood methods](matched-ordinary-likelihood-20260927.md). All
+candidate fixed-effect spaces, including the linear reference, will require ML
+fitting before likelihood comparisons. No nonlinear fit has been launched.

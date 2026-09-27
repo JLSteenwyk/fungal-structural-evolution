@@ -1,0 +1,45 @@
+# Ordinary likelihood for fixed-effect comparisons
+
+The running matched models use REML. Their objective values must not be compared
+across different fixed-effect spaces to select a sequence-identity polynomial.
+New, separate modules implement ordinary profiled Gaussian maximum likelihood
+without changing any running script or pinned input.
+
+For covariance `V = s² R`, where `R = I + b ZZᵀ + f GGᵀ + p FFᵀ`, the coefficients
+at fixed ratios minimize `q = (y-X beta)ᵀ R⁻¹ (y-X beta)`. The ordinary ML variance
+estimate is `q/n`, and the negative profiled log likelihood is
+
+`0.5 [log|R| + n (1 + log(2 pi q/n))]`.
+
+It has no fixed-design determinant term. For a ratio with derivative matrix `K`,
+its score is `0.5 [tr(R⁻¹ K) - n uᵀ K u/q]`, with `u = R⁻¹ (y-X beta)`.
+The analytic implementation differentiates cached cross-products; validation
+instead constructs dense covariance matrices and uses this trace identity.
+Coefficients at fixed ratios are shared with REML, so the cancellation fallback
+reuses the existing direct residual calculation and explicitly changes the scale
+denominator and objective. Returned fields distinguish `negative_profiled_ml`
+from REML and record the variance-profile denominator separately from residual
+degrees of freedom.
+
+Implementation:
+
+- `scripts/cached_matched_ml.py`: cached likelihood and direct residual fallback.
+- `scripts/matched_ml_gradient.py`: analytic ratio and log1p-ratio derivatives.
+- `scripts/check_matched_ml.py`: independent dense Gaussian tests.
+
+Validation passed 243 cases across linear/quadratic/cubic designs, zero/moderate/
+large covariance ratios and empty/duplicated species factors. All 729 component
+derivatives agreed with dense scores; maximum absolute errors were 2.49e-10 for
+likelihood and 7.00e-10 for derivatives. Another 243 checks verified invariance
+to invertible fixed-design reparameterization, and 162 verified that adding fixed
+effects cannot worsen ordinary likelihood at the same covariance. A large-mean
+cancellation case used the direct residual fallback; a rank-deficient design was
+rejected. Evidence: `metadata/matched_ml_checks_20260927.json`.
+
+These are numerical evaluators, not completed biological fits. Later comparisons
+must fit **all** candidate fixed-effect spaces, including the linear reference,
+under ordinary ML on identical observations with the same covariance options.
+The existing REML estimate cannot substitute for the ML optimum. Boundary and
+multistart optimizer checks, nonlinear joint support, model adequacy, uncertainty
+and multiplicity calibration remain required. No automatic chi-square calibration,
+selected polynomial degree or causal duplication effect is established here.
