@@ -1,0 +1,31 @@
+{
+  "status": "complete_functionally_annotated_site_parsimony_exposure_frame",
+  "markers": 125,
+  "sites": 47529,
+  "observed_functional_rows": 6444,
+  "sites_with_correspondence": 50,
+  "sites_with_conserved_candidate": 18,
+  "source_site_status_counts": {
+    "model_site_outside_marker_matrix": 356,
+    "no_model_in_snapshot": 6723,
+    "mapped_to_marker_matrix": 6754,
+    "gap_in_functional_profile_alignment": 3272
+  },
+  "source_receipts": {
+    "frame": "c34920930596308da4113e261333ff1cd45c87a6ecf11dd5a17c4d0df9c0991b",
+    "functional": "5ba30293e8a621e7efc0534230e4c3db5558eaaeb34630fe14784b045134d69b",
+    "projection": "373437be9965550831df96a9d3310f5a0e25ce6e99f3fe886bc73e0348946986",
+    "inputs": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95"
+  },
+  "source_readback_sha256": {
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/readback.json": "c819ab12116ec9d9df7df013fdff3df56e6b7a9f49fde30bee1ebc9abc4065cd",
+    "results/recovery-20260927/afdb-site-exposure/readback/receipt.json": "7d863d4ab883c14bbe6cffb7a0b3893c332068917b1715e4290f34729d56d83b"
+  },
+  "script_sha256": "60e8a4f9979bada94a64eaf25913ed46992709de7da831f2152a07668537ce58",
+  "interpretation": "All original site-parsimony/exposure summary rows retained. Minimum-change counts are not rates or branch assignments. Counts describe observed projected Pfam correspondences, with conserved candidates distinguished from other correspondences; neither is experimental functional validation. No observed correspondence is unknown annotation status, not evidence of nonfunction. Taxon counts use sets; candidate and other correspondence sets may overlap. Fractions use all observed taxa, not annotation sensitivity. No functional enrichment, independent transition, branch effect or selection test.",
+  "artifacts": {
+    "site_parsimony_exposure_functions.tsv": "c8231f361a706bf695c3f22959c669d5a278dafc61d77e23884e3e051f0eb1b4",
+    "marker_summary.tsv": "9d27c2a53db942b290656e8379ca65744f06ed59b24025d0f44dc340bb30dd5f",
+    "observed_functional_links.tsv": "286e8337fe8b08b7c7bd2853193b8f07b5331603259de4967432c58a10a9cf90"
+  }
+}

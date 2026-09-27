@@ -1,0 +1,43 @@
+{
+  "status": "verified_complete_recovered_afdb_functional_and_exposure_joins",
+  "checked_at": "2026-09-27T16:16:46.891188+00:00",
+  "terminal_units": {
+    "fungal-recovered-afdb-functional-sites-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-recovered-afdb-functional-site-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-recovered-afdb-functional-exposure-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "fungal-recovered-afdb-functional-exposure-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    }
+  },
+  "archived_receipt_sha256": {
+    "metadata/recovered_afdb_functional_site_join_receipt_20260927.json": "5ba30293e8a621e7efc0534230e4c3db5558eaaeb34630fe14784b045134d69b",
+    "metadata/recovered_afdb_functional_site_join_readback_20260927.json": "c819ab12116ec9d9df7df013fdff3df56e6b7a9f49fde30bee1ebc9abc4065cd",
+    "metadata/recovered_afdb_functional_exposure_receipt_20260927.json": "cc035832a59911bb5bee5247550b5e8c23c092bbbff3fa323f37259f971b2b04",
+    "metadata/recovered_afdb_functional_exposure_readback_20260927.json": "3e9c3a510776ffb39ca0641bbb0d361b80d6a3206d4fad2c4c1f43dd327508b4"
+  },
+  "retained_annotation_rows": 17105,
+  "paired_observed_annotation_rows": 6444,
+  "distinct_annotated_taxon_site_observations": 6190,
+  "retained_frame_sites": 47529,
+  "sites_with_correspondence": 50,
+  "sites_with_conserved_candidate": 18,
+  "scope": "Complete annotation and accessibility joins with full independent readbacks; not functional validation, enrichment, branch localization or rate inference."
+}

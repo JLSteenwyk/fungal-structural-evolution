@@ -1,5 +1,18 @@
 # Progress and evidence
 
+## September 27 recovered functional-site integration completed
+
+All 17,105 prior functional correspondence rows have been joined to the current
+AlphaFold cohort and independently checked. The paired data contain 6,444
+observed annotation rows across 314 taxa and 23 markers. Their accessibility
+join preserves all 47,529 site summaries and maps these annotations to 6,190
+distinct taxon–site observations at 50 sites, with conserved candidates at 18.
+Both full readbacks passed and all four services exited successfully. See
+[the functional-site results and limits](functional-site-workflow.md#recovered-alphafold-functional-correspondences--september-27).
+Annotation coverage remains sparse; this is not functional enrichment or a
+validated catalytic effect. GPU prediction remains paused.
+
+
 ## September 27 missing-marker structure refresh
 
 A new immutable cache snapshot and full reverse-log readback checked all

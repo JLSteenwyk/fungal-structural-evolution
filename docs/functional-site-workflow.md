@@ -214,3 +214,73 @@ python scripts/readback_completed_functional_sites.py \
 This supersedes the running/readback-pending status immediately above.
 Functional-site evolutionary effects, matched background tests, ancestral
 uncertainty and experimental interpretation remain unfinished.
+
+## Recovered AlphaFold functional correspondences — September 27
+
+The updated join retains the same complete universe of 17,105 annotation rows
+and 16,849 unique profile-site identities. It uses the recovered AlphaFold
+mapping/encoding union and current 125-marker paired inputs, with the completed
+paired-array readback required. All projected protein/model identities,
+coordinates, native states, confidence fields, and presence or absence in the
+paired matrices passed the independent row-by-row checker.
+
+There are **6,444 observed correspondence rows across 314 taxa and 23 markers**,
+including 2,555 conserved-candidate and 3,889 other correspondence rows. This
+supersedes the earlier 2,713-row AlphaFold snapshot for coverage reporting.
+The full table retains 6,723 rows without a model, 356 modeled rows outside the
+marker matrix, 6,754 mapped rows, and 3,272 gaps in the functional profile
+alignment. None of these categories establishes functional loss.
+
+The producer is `scripts/link_recovered_afdb_functional_sites.py`, a separate
+version of the completed-cohort join requiring the recovered AlphaFold encoding
+receipt. The original ESMFold script and results remain unchanged. Arguments,
+source pins and resource estimates are in
+`metadata/recovered_afdb_functional_site_join_plan_20260927.json`; exact process
+identities are in the adjacent join and readback launch records. Output is
+`results/functional_sites/afdb-recovered-linked-20260927-v1`. Recheck with:
+
+```bash
+python scripts/readback_completed_functional_sites.py \
+  --result results/functional_sites/afdb-recovered-linked-20260927-v1
+```
+
+## Functional correspondence and accessibility integration
+
+`scripts/annotate_recovered_site_functions.py` joins the observed annotation
+rows to the audited raw accessibility projection and site parsimony/exposure
+summaries. Both full source readbacks are mandatory. The output retains all
+47,529 sites across 125 markers and all original fields, adding annotation
+counts, distinct taxon counts, explicit missing-annotation status and Pfam IDs.
+The annotation ledger adds each observed residue's isolated-chain ASA and
+confidence. Candidate and other-correspondence taxon sets can overlap; they
+are not added together as distinct observations.
+
+Output is
+`results/functional_sites/site-parsimony-exposure-functions-afdb-recovered-20260927-v1`.
+The complete CLI and pinned inputs are in
+`metadata/recovered_afdb_functional_exposure_plan_20260927.json`. The production
+join has completed: correspondences occur at 50 paired sites, including 18
+sites with conserved candidates. Full independent verification passed
+using `scripts/readback_recovered_functional_exposure.py --plan
+metadata/recovered_afdb_functional_exposure_plan_20260927.json`.
+
+The readback independently compares every inherited site value, reconstructs
+all observed annotation rows and coordinate joins, and checks every added
+per-site count/fraction and marker summary. These stages each use one CPU,
+8–16 GiB memory, no swap and at most 1 GiB planned output; 0.05–2 hours are
+reserved per join/readback, with no GPU work or paid infrastructure.
+
+These are sparse projected functional correspondences, not validated catalytic
+sites or binding pockets. The 6,444 rows are not independent evolutionary
+events. Sites without observed annotations remain unknown, not nonfunctional.
+Parsimony counts are minimum changes, not rates, branch assignments or selection.
+Matched-background tests, rate integration, ancestral uncertainty, functional
+enrichment and experimental interpretation remain open.
+
+The complete integration readback passed for all 47,529 sites and 6,444 ledger
+rows (6,190 distinct annotated taxon–site observations). All four producer/audit
+services are terminal with exit status zero. Source pins and declared artifacts
+were rechecked after completion. Archived receipts and terminal-state evidence
+are in `metadata/recovered_afdb_functional_exposure_completed_20260927.json`;
+the source results remain outside Git. This supersedes any running status for
+these two joins, not the outstanding functional evolutionary analyses.

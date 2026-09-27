@@ -1,0 +1,50 @@
+{
+  "arguments": {
+    "frame": "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1",
+    "functional": "results/functional_sites/afdb-recovered-linked-20260927-v1",
+    "projection": "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1",
+    "inputs": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+    "output": "results/functional_sites/site-parsimony-exposure-functions-afdb-recovered-20260927-v1",
+    "functional_readback": "results/functional_sites/afdb-recovered-linked-20260927-v1/readback.json",
+    "frame_readback": "results/recovery-20260927/afdb-site-exposure/readback/receipt.json"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/annotate_recovered_site_functions.py",
+    "--frame",
+    "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1",
+    "--functional",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1",
+    "--projection",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1",
+    "--inputs",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+    "--output",
+    "results/functional_sites/site-parsimony-exposure-functions-afdb-recovered-20260927-v1",
+    "--functional-readback",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/readback.json",
+    "--frame-readback",
+    "results/recovery-20260927/afdb-site-exposure/readback/receipt.json"
+  ],
+  "pins": {
+    "scripts/annotate_recovered_site_functions.py": "60e8a4f9979bada94a64eaf25913ed46992709de7da831f2152a07668537ce58",
+    "scripts/annotate_site_evolution_functions.py": "b98b4e51adf2e2030cc12b038687207bb3cb8f2a1db40b920b31a89a6f150313",
+    "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1/receipt.json": "c34920930596308da4113e261333ff1cd45c87a6ecf11dd5a17c4d0df9c0991b",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/receipt.json": "5ba30293e8a621e7efc0534230e4c3db5558eaaeb34630fe14784b045134d69b",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1/receipt.json": "373437be9965550831df96a9d3310f5a0e25ce6e99f3fe886bc73e0348946986",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/readback.json": "c819ab12116ec9d9df7df013fdff3df56e6b7a9f49fde30bee1ebc9abc4065cd",
+    "results/recovery-20260927/afdb-site-exposure/readback/receipt.json": "7d863d4ab883c14bbe6cffb7a0b3893c332068917b1715e4290f34729d56d83b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.05,
+      2
+    ]
+  },
+  "scope": "Retain all 47529 sites; exact observed functional row/coordinate join, not enrichment or evolutionary-rate inference."
+}

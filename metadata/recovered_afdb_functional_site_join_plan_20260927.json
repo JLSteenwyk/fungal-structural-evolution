@@ -1,0 +1,44 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/link_recovered_afdb_functional_sites.py",
+    "--functional-sites",
+    "results/functional_sites/pfam-marker-v1",
+    "--snapshot",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping",
+    "--encodings",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings",
+    "--paired",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+    "--paired-readback",
+    "metadata/recovered_afdb_paired_inputs_readback_20260925.json",
+    "--source-label",
+    "AlphaFold",
+    "--output",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1"
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "pins": {
+    "scripts/link_recovered_afdb_functional_sites.py": "9586fd726edb1d2843deaeb8b49bf6d83a1ae0464ae6b3c07345b4f776f0a08b",
+    "scripts/link_completed_esmfold_functional_sites.py": "17285a4cb5d90052f252fb465281af8b5c0699fe6d9808408c3159ac3f089d2f",
+    "scripts/readback_completed_functional_sites.py": "6dbc26842c3df00ab4720a67597b215e0af087924a0558643322e25baf40b413",
+    "metadata/recovered_afdb_paired_inputs_readback_20260925.json": "26010266e2ab3aa59c7fee6ff766f458a75e38df4a2368e4bf5d3553daeed565",
+    "results/functional_sites/pfam-marker-v1/receipt.json": "36912aa788496fe3b328884cbaa634df35e87876b1fe84b4b9ad89de0d10ba9f",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping/receipt.json": "50f4af44697f3b0e18dcab4d6bfa7fefce3ee753926f3539d3f58b26b47eaeb5",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings/receipt.json": "aba587f9024a5469561a6d668f66388379c5cd0953668d4893bd3fd00db675f1",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1"
+  },
+  "scope": "Full prior functional annotation universe joined to recovered AlphaFold masks with exact model and residue identity; no GPU inference, new annotation transfer, catalytic validation or evolutionary effect claim."
+}

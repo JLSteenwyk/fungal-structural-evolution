@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-recovered-afdb-functional-exposure-20260927.service",
+  "pid": 180260,
+  "created": 1790525603.02,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/annotate_recovered_site_functions.py",
+    "--frame",
+    "results/phylogeny/site-parsimony-exposure-afdb-recovered-20260927-v1",
+    "--functional",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1",
+    "--projection",
+    "results/structural_annotations/paired-accessibility-afdb-recovered-20260927-v1",
+    "--inputs",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+    "--output",
+    "results/functional_sites/site-parsimony-exposure-functions-afdb-recovered-20260927-v1",
+    "--functional-readback",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1/readback.json",
+    "--frame-readback",
+    "results/recovery-20260927/afdb-site-exposure/readback/receipt.json"
+  ],
+  "plan_sha256": "8c1a2d82b1a1c0621eaab55b5a8598aebfeb8c5f62c415744cb215e6052247cb",
+  "observed_at": "2026-09-27T16:13:23.755157+00:00"
+}

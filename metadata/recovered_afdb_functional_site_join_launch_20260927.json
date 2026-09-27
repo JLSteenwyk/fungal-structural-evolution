@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-recovered-afdb-functional-sites-20260927.service",
+  "pid": 177178,
+  "created": 1790525468.31,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/link_recovered_afdb_functional_sites.py",
+    "--functional-sites",
+    "results/functional_sites/pfam-marker-v1",
+    "--snapshot",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/mapping",
+    "--encodings",
+    "results/structural_markers/afdb-recovered-union-20260925-v1/encodings",
+    "--paired",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+    "--paired-readback",
+    "metadata/recovered_afdb_paired_inputs_readback_20260925.json",
+    "--source-label",
+    "AlphaFold",
+    "--output",
+    "results/functional_sites/afdb-recovered-linked-20260927-v1"
+  ],
+  "plan_sha256": "6b07c187b8d25493a23075c831c702de27e0a0b41faa8ef6702d6a2f7f46e9b5",
+  "observed_at": "2026-09-27T16:11:09.168029+00:00"
+}

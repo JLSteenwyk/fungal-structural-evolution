@@ -1,0 +1,23 @@
+{
+  "unit": "fungal-recovered-afdb-functional-exposure-readback-20260927.service",
+  "pid": 181964,
+  "created": 1790525696.6,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_recovered_functional_exposure.py",
+    "--plan",
+    "metadata/recovered_afdb_functional_exposure_plan_20260927.json"
+  ],
+  "script_sha256": "13b43d3164b7d8df6b1be173569e716d3e4de97cbf291e8b3e6094455c19679e",
+  "observed_at": "2026-09-27T16:14:57.329640+00:00",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.05,
+      2
+    ]
+  }
+}
