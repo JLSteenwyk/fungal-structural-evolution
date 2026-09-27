@@ -5220,3 +5220,13 @@ recomputed least-squares RMSD; TM-scores will be compared to native text only.
 Native deformed/full/masked fixtures, both handoff modes and corruption/grid
 rejection tests passed. Production readbacks are waiting. See
 [alignment readback](duplication-alignment-readback-20260926.md).
+
+
+### September 26: recovered AlphaFold fit integration queued
+
+Original fitting reached 492/500 fits. The complete 125-marker table merge
+(95 unchanged and 30 refitted markers) is now queued behind successful
+completion of that job and its audit. An independent full-field/source-row
+readback follows the merge; provenance and duplicate-row corruption fixtures
+passed. This preserves the source runs and does not yet establish uncertainty
+or acceleration. See [recovery integration](recovery-20260926.md).

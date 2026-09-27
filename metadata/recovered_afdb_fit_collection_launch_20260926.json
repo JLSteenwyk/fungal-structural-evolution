@@ -1,0 +1,14 @@
+{
+  "service": "fungal-recovered-afdb-fit-collection-20260926.service",
+  "pid": 155662,
+  "created": 1790472543.37,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_recovered_afdb_fit_collection.py",
+    "--plan",
+    "metadata/recovered_afdb_fit_collection_plan_20260926.json"
+  ],
+  "plan": "metadata/recovered_afdb_fit_collection_plan_20260926.json",
+  "plan_sha256": "a28c6201bdd38069cb4886ee6fcb28134ba7683ac7669018d946d4f95ed4007e",
+  "fixture": "Two-source field/multiplicity readback passed; altered provenance and duplicate row rejected despite updated output hashes. Existing combiner validations documented in recovery-20260926.md."
+}
