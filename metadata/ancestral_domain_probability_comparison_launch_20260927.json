@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-ancestral-domain-probability-comparison-20260927.service",
+  "state": {
+    "MainPID": "504075",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 504075,
+  "created": 1790546739.16,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_ancestral_domain_probabilities.py"
+  ],
+  "plan_sha256": "861cd156f4f424b5116eb3bdf7debfa0b5a371e2fae45c8311510ac2cb9c268d",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  }
+}

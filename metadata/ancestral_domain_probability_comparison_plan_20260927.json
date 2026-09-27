@@ -1,0 +1,29 @@
+{
+  "probabilities": "results/ancestral/conditional-domain-ancestors-20260927-v1",
+  "fits_receipt": "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json",
+  "positions": "results/ancestral/case-domain-alignment-readback-20260927-v1/protein_position_maps.tsv.gz",
+  "nodes": "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv",
+  "output": "results/ancestral/ancestral-domain-probability-comparison-20260927-v1",
+  "pins": {
+    "results/ancestral/case-domain-model-fits-20260927-v1/receipt.json": "178fd4ad19dcda616e266994dafc4f65e3b30d158ce6b135e2358dcc19cea6d5",
+    "results/ancestral/case-domain-alignment-readback-20260927-v1/protein_position_maps.tsv.gz": "a425fda2b85af1315a3f25ee14c89155a6d93111c362b1f122354eaefbe447e8",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/node_mapping.tsv": "d0580980a65c5cf2e3ea1736afd72c951a037068f5cfcfbd984684fc34423245",
+    "results/ancestral/conditional-domain-ancestors-20260927-v1/receipt.json": "504e0f65659f0ff60d8a092138f2b13f4c2dc9602d616e3cd0899f15bc3dde3a",
+    "scripts/compare_ancestral_domain_probabilities.py": "b5d5869c80d84dfc98a2b19e62a6af9ea5b1dd588e3e3ad023e6d13b84959b3a",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/conditional_domain_posterior_audit_completed_20260927.json": "ecff23becd43ff0935c40a7ce02723a9efb1981f1d82cd4d01ff65fc5c4c90b0",
+    "results/ancestral/case-domain-alignment-readback-20260927-v1/receipt.json": "465325b5615d33a775d759d8f701aca7b8a02289131a2ee3e4104e02c1627c7e",
+    "results/ancestral/case-fitted-node-mapping-20260927-v1/receipt.json": "f2e84798a168cc2a72026ceae07d10d0644071f5579066d12b950c52fd40976d"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "All 66 pairs of 12 fitted contexts per family, three mapped nodes each. All unmatched columns retained. No optimization or model adequacy claim."
+}

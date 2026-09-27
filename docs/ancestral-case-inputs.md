@@ -541,3 +541,39 @@ The largest family, OG0000972, has 2,818 MAFFT versus 2,212 FAMSA columns, with
 probabilities of homology. Whole-protein ancestral fitting and comparisons
 between whole-protein and extracted-domain correspondences remain pending.
 Completion: `metadata/ancestral_case_alignments_completed_20260927.json`.
+
+## Sensitivity of conditional ancestral probabilities
+
+Compared all 66 pairs of the 12 model/boundary/aligner settings per family:
+858 context pairs, 2,574 node comparisons and 551,997 site-union records.
+Matching requires the exact same original protein coordinate (or gap) for
+every member of the common clade. The complete signature map is retained.
+There are 373,554 matched site comparisons; unmatched records are explicit,
+not counted as agreement and not assigned a posterior distance.
+
+For comparisons changing one factor only:
+
+| Changed factor | Matched node/site comparisons | Different MAP residues | Unmatched column records |
+| --- | ---: | ---: | ---: |
+| Substitution model | 84,141 | 1,578 | 0 |
+| Aligner | 33,732 | 146 | 16,677 |
+| Domain boundary | 32,724 | 278 | 18,693 |
+
+No comparison in the complete grid assigns at least 0.90 probability to both
+of two different MAP residues. This threshold is descriptive, not a validation
+criterion. Posterior differences can nevertheless be substantial: maximum
+total-variation distance reaches 0.6493 for model-only comparisons. Full
+sitewise values and summaries are retained, including all combinations of
+changed factors. Comparisons reuse nodes/sites and are not independent
+replicates or counts of unique evolutionary changes. MAP switches near ties
+also need not imply a meaningful biological difference.
+
+Full saved-table readback reproduces all summary counts and distances.
+Reproduce: `python scripts/compare_ancestral_domain_probabilities.py`; plan,
+launch and completion metadata use `ancestral_domain_probability_comparison_`
+and date `20260927`. Local output:
+`results/ancestral/ancestral-domain-probability-comparison-20260927-v1/`.
+One CPU, 4 GiB memory limit, no swap/GPU. These comparisons remain conditional
+on the current fixed trees and optimized parameters. Optimization sensitivity,
+whole-protein context, indel uncertainty and ancestral structural ensembles
+remain unfinished.

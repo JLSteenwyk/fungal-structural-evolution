@@ -1,0 +1,61 @@
+{
+  "status": "complete_full_context_ancestral_probability_comparison",
+  "families": 13,
+  "context_pairs": 858,
+  "node_comparisons": 2574,
+  "site_union_rows": 551997,
+  "matched_site_comparisons": 373554,
+  "plan_sha256": "861cd156f4f424b5116eb3bdf7debfa0b5a371e2fae45c8311510ac2cb9c268d",
+  "scope": "Descriptive sensitivity conditional on fitted models. Exact full-clade original-protein residue signatures; unmatched columns explicitly retained. MAP ties use fixed AA order, so near ties can switch. Context pairs and sites are dependent, not replicates. No model averaging, convergence, indel inference or validated historical sequence claim.",
+  "source_receipt_path": "results/ancestral/ancestral-domain-probability-comparison-20260927-v1/receipt.json",
+  "source_receipt_sha256": "a8ae87810470bd3edf8db84f65f90badd8b03080d4d663a920e6ea44fdb109e6",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "descriptive_counts_by_changed_factors": {
+    "model": {
+      "matched_site_comparisons": 84141,
+      "map_disagreements": 1578,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 0
+    },
+    "aligner": {
+      "matched_site_comparisons": 33732,
+      "map_disagreements": 146,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 16677
+    },
+    "aligner,model": {
+      "matched_site_comparisons": 67464,
+      "map_disagreements": 933,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 33354
+    },
+    "boundary": {
+      "matched_site_comparisons": 32724,
+      "map_disagreements": 278,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 18693
+    },
+    "boundary,model": {
+      "matched_site_comparisons": 65448,
+      "map_disagreements": 996,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 37386
+    },
+    "boundary,aligner": {
+      "matched_site_comparisons": 30015,
+      "map_disagreements": 226,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 24111
+    },
+    "boundary,aligner,model": {
+      "matched_site_comparisons": 60030,
+      "map_disagreements": 798,
+      "both_at_least_090_disagreements": 0,
+      "unmatched_column_records": 48222
+    }
+  }
+}

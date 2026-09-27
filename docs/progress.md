@@ -8886,3 +8886,13 @@ All 26 alignments and complete readback terminated successfully, checking
 identical focal-pair maps across aligners; nine differ. Both methods retained.
 Whole-protein model fits and whole/domain correspondence comparisons remain
 pending. See `docs/ancestral-case-inputs.md` for outputs and limitations.
+
+### 2026-09-27: complete ancestral probability sensitivity grid compared
+
+All 858 pairs of model/boundary/aligner contexts across 13 families compared
+at three mapped nodes, retaining 551,997 site-union records. Of 373,554 exact
+full-clade coordinate matches, model-only comparisons contain 1,578 MAP switches
+in 84,141 comparisons. No conflicting MAP pair has both probabilities >=0.90.
+Unmatched alignment columns remain explicitly unresolved; dependent comparison
+counts are not biological replicates. Full output readback passed. See
+`docs/ancestral-case-inputs.md`; convergence, indels and structures remain open.
