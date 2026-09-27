@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-alignment-readback-20260927.service",
+  "pid": 2041110,
+  "created": 1790501220.74,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_alignments.py",
+    "--plan",
+    "metadata/background_alignment_readback_plan_20260927.json"
+  ],
+  "plan": "metadata/background_alignment_readback_plan_20260927.json",
+  "plan_sha256": "0dce456df0434937a9d2d931b9355042ad4e82b72c05eb1675cba7a5548808b4",
+  "fixture_status": "passed_eight_dispositions_four_native_numeric_reconstructions_and_rehashed_corrupt_metric_rejection"
+}

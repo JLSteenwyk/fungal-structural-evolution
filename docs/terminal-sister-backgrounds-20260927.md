@@ -509,3 +509,26 @@ remain pending. Independent numerical readback must precede scientific use;
 matched effect estimation, domain/orientation controls and shared-ancestry
 modeling remain outstanding. This stage measures whole-chain background
 comparisons and does not establish biological orthology or duplication effects.
+
+## Full background numerical readback queued
+
+Queued an independent checker behind the background alignment controller. It
+reconstructs the exact new-pair/two-mask/two-order grid from the frozen inventory,
+checks every checkpoint and all source bindings, then independently parses PDB
+residue positions, native alignment text, sequence identities and least-squares
+RMSDs for every successful comparison. It does not invoke the producer handoff
+or parser. The existing numerical helper remains unchanged because primary and
+reference audits also pin it. TM-scores are checked against native text, not
+independently reoptimized; errors/exclusions are checked for consistency rather
+than independently rerun. All production numerical results remain pending.
+
+The complete fixture passed eight dispositions including four native numeric
+reconstructions. Deliberately altered RMSD metrics, with all enclosing file
+hashes updated, were rejected. Production retains the strict 0.00501 Å printed
+RMSD tolerance. The earlier domain audit's small-core discrepancy is not waived:
+if a similar discrepancy appears here, this audit stops for explicit review.
+
+Resources: one CPU, 16 GiB RAM, no swap, estimated 1 GiB output and uncalibrated
+1–48 hours after producer completion. All 285,800 possible dispositions are in
+scope. No GPU or paid infrastructure is used. Plan, script hashes, dependency
+identity and checker launch are versioned in metadata.

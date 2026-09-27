@@ -6442,3 +6442,17 @@ The preceding status turn verified specific services were live but did not
 advance scientific outputs. This turn makes progress by implementing, testing
 and queuing the full background comparison stage. All eight original scientific
 aims remain in scope; the goal is active and GPU prediction remains paused.
+
+## September 27 background alignment numerical readback queued
+
+Added and tested the independent full background alignment checker, preserving
+the existing strict RMSD tolerance and immutable helpers used by other live
+jobs. Queued it behind the background producer with a verified process identity.
+The full fixture reconstructed four native alignments and checked four explicit
+short-mask exclusions; rehashed corrupt stored metrics were rejected. Production
+readback is pending and does not yet qualify any background effect estimate.
+See [checker scope and resources](terminal-sister-backgrounds-20260927.md#full-background-numerical-readback-queued).
+
+The previous goal turn made progress by queuing all new background comparisons;
+this turn adds their independent full-result verification stage. All eight aims
+remain open and in scope. GPU prediction remains paused; the goal remains active.
