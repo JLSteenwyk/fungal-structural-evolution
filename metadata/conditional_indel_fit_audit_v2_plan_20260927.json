@@ -1,0 +1,26 @@
+{
+  "producer_plan": "metadata/conditional_indel_model_plan_20260927.json",
+  "producer_launch": "metadata/conditional_indel_model_launch_20260927.json",
+  "output": "results/ancestral/conditional-indel-fit-audit-20260927-v2",
+  "pins": {
+    "metadata/conditional_indel_model_plan_20260927.json": "a4c8205dd8476312eeac62641af881e91f593668627f14cc7b46a6534ae52316",
+    "metadata/conditional_indel_model_launch_20260927.json": "878b5b0d758a8a94cc842afb7baa370818144336400915c656da385d9d353731",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "scripts/audit_conditional_indel_fits_v2.py": "19cef1f8b93093877a899a3df9a42a3f4534612dd40d0e39a0956304837eb378",
+    "scripts/diagnose_indel_extreme_rates.py": "5d283155de3f1b44cdc8a21d08e67eb38fb7940cf8b132dfafbfffa914613e74",
+    "metadata/conditional_indel_fit_audit_v2_regression_20260927.json": "3c0afed96c9fb512342e5feab73f35234566e3c817217d32f480e1df5bbfca1f"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      48
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All312 input dispositions and918 fitted likelihoods; independent double-expm replay with70-digit recursive fallback above1e-6 error. Same tolerance retained. Genuine discrepancies retained for allstarts, not hidden or automatically treated as failure of the auditor. Full terminal receipt distinguishes verified from unresolved. Optimization status/bounds retained."
+}

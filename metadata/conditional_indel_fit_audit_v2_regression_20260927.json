@@ -1,0 +1,74 @@
+{
+  "job_id": "OG0000152-alignment-famsa-terminal_unknown-observed_mask",
+  "status": "all_three_fitted_likelihoods_independently_verified",
+  "starts": [
+    {
+      "start": 0,
+      "independent_log_likelihood": -3.4011973871494843,
+      "absolute_error": 9.083240870566556e-08,
+      "precision": "70_digit_recursive_pruning",
+      "double_expm_error": 0.0003695888200034858,
+      "within_tolerance": true,
+      "optimizer_success": true,
+      "near_bound": [
+        false,
+        true,
+        true
+      ],
+      "improvement_over_start": 3.136133214405907,
+      "reported_gradient": [
+        14.388312283506528,
+        -14.388312283506528,
+        -0.0
+      ]
+    },
+    {
+      "start": 1,
+      "independent_log_likelihood": -3.4011974059914483,
+      "absolute_error": 2.5941359282910526e-08,
+      "precision": "70_digit_recursive_pruning",
+      "double_expm_error": 2.8310805966214048e-06,
+      "within_tolerance": true,
+      "optimizer_success": true,
+      "near_bound": [
+        false,
+        false,
+        false
+      ],
+      "improvement_over_start": 4.0155309051813965,
+      "reported_gradient": [
+        3.2021820765609736,
+        2.000000177635685,
+        0.0
+      ]
+    },
+    {
+      "start": 2,
+      "independent_log_likelihood": -4.276666302450985,
+      "absolute_error": 6.151894105244082e-09,
+      "precision": "70_digit_recursive_pruning",
+      "double_expm_error": 2.8375061127405843e-06,
+      "within_tolerance": true,
+      "optimizer_success": true,
+      "near_bound": [
+        false,
+        false,
+        true
+      ],
+      "improvement_over_start": 0.5446868910512901,
+      "reported_gradient": [
+        0.7818666650561031,
+        0.2817887911892708,
+        0.0
+      ]
+    }
+  ],
+  "best_optimizer_success": true,
+  "best_near_bound": [
+    false,
+    true,
+    true
+  ],
+  "start_likelihood_spread": 0.8754689999820151,
+  "source_receipt_sha256": "0ac6c5e839bc693d52ac4de18690013fbad100b95e172349dfc53655bde47f3c"
+}

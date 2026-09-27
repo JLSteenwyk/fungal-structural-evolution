@@ -9139,3 +9139,21 @@ error above the audit tolerance. Reproducible diagnostic:
 the full audit resumes; no tolerance was relaxed. Large reported gradients
 and boundary fits still require optimization qualification. Producer remains
 separate from this terminated auditor; no inference restart was requested.
+
+### 2026-09-27: full fit audit resumed with high-precision fallback
+
+Created a separate v2 auditor, leaving the failed original and its plan
+unchanged. All three previously flagged OG0000152 starts pass the unchanged
+1e-6 likelihood tolerance with70-digit recursive pruning. The v2 auditor
+uses that fallback whenever double-expm replay exceeds tolerance, retains
+both errors, and records genuine remaining discrepancies while completing
+the full scope. Its final status will distinguish complete verification from
+a completed replay with unresolved errors.
+
+Launched and verified v2 live: oneCPU,8GiB RAM,noGPU,planning0.5–48h plus
+producer wait. Early snapshot:173 input dispositions,501 fitted starts,
+24 high-precision fallbacks,one remaining discrepancy. The latter is
+OG0000152 envelope/MAFFT terminal-gap observed-mask start0:70-digit error
+1.46178e-6, optimizer unsuccessful. It remains explicitly unverified.
+Full audit and optimization qualification remain pending; no tolerance was
+relaxed and no difficult fit was removed.

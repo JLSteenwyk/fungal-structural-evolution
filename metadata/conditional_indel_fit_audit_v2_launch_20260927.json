@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-conditional-indel-fit-audit-20260927-v2.service",
+  "state": {
+    "MainPID": "560398",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 560398,
+  "created": 1790550569.92,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_conditional_indel_fits_v2.py"
+  ],
+  "plan_sha256": "ca12a7623f888c7562b700680f24e2013a114f2bd16a0491a26e80efd5389671",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      48
+    ],
+    "paid_cost": 0
+  }
+}
