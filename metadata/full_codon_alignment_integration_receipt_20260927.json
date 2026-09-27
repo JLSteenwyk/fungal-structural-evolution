@@ -1,0 +1,27 @@
+{
+  "status": "complete_codon_alignment_information_and_flag_integration",
+  "cases": 1712,
+  "information_screen_transitions": {
+    "pass_to_pass": 1654,
+    "pass_to_fail": 1,
+    "fail_to_fail": 50,
+    "fail_to_pass": 7
+  },
+  "cases_with_preserved_historical_flags": 549,
+  "selection_eligible_cases": 0,
+  "sources": {
+    "results/cds/genus-codon-diagnostic-inputs-v1/receipt.json": "e513c9ab7a4e3b422d5721e72b7927d01a3473736e2b8724c7c8a7da00678eb5",
+    "results/cds/full-group-codon-realignment-projection-20260927-v1/receipt.json": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+    "results/cds/full-group-alignment-sensitivity-summary-20260927-v1/receipt.json": "7af44ec8ef2959ce7292a77b8624c08d3a4317009669837449ba3d57b0b85f04",
+    "metadata/full_codon_realignment_projection_readback_20260927.json": "b78152cac3d6db5c40eed0cb6761f566b2868c952a00a85c178a1876afe48f07",
+    "metadata/codon_analysis_readiness_receipt.json": "4392bf709d537e86713f899185ae6aae5534f163b05b21ace25fba82133bd48a",
+    "metadata/codon_analysis_readiness.tsv": "b463f54e764d2f8813180d874b8c8d60553891947e3f0b61ea237d1079e50792",
+    "metadata/genus_codon_tree_information.tsv": "d2c74c96b2ed08febce6a7306cb3fa60295fabf38af7d9ff2b904dc1efd07970",
+    "results/cds/full-group-alignment-sensitivity-summary-20260927-v1/cases.tsv": "b7df04f1dabec9848bcdf13257e1935e8486f1647f46242d0c03cd10204728ec"
+  },
+  "script_sha256": "ef1b975e6c2f7415bb4a8af8edefc7cd87ebe34cf8907cf309edaecf26fb9ea0",
+  "artifacts": {
+    "cases.tsv": "c07f3ff318d83f974e168a581f48e0dd8bf8badc8d3698ba9d5deb236f3d1c2f"
+  },
+  "scope": "All original flags and fields preserved. Canonical ACGT column counts; distinct aligned strings include missing symbols. Four distinct strings and at least one informative column define the existing information screen, not selection eligibility. No retention cutoff or historical-flag clearance. Local tree/model diagnostics remain required."
+}

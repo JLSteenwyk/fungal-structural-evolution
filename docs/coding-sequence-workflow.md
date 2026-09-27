@@ -1181,3 +1181,43 @@ case summary is outside Git at
 Independent pandas grouped sums checked every case count and pooled total;
 grouped medians reproduced the reported median-of-case-medians. The full codon
 readback used local CPU only. No selection model was fitted in this stage.
+## Full realignment information screen and historical flags integrated
+
+All 1,712 cases now have a joined ledger at
+`results/cds/full-group-alignment-readiness-20260927-v1/cases.tsv`.
+`scripts/integrate_codon_alignment_sensitivity.py` verifies input hashes,
+reproduces every original nucleotide-information count from the original
+codon FASTAs, recomputes the same screen on the local alignments, and preserves
+every original readiness field alongside the full alignment-sensitivity fields.
+The screen requires four distinct aligned nucleotide strings and at least one
+parsimony-informative column; column counts use canonical ACGT, while distinct
+strings retain missing symbols, exactly as in the original workflow.
+
+| Original screen | Local screen | Groups |
+|---|---|---:|
+| Pass | Pass | 1,654 |
+| Pass | Fail | 1 |
+| Fail | Pass | 7 |
+| Fail | Fail | 50 |
+
+Thus 1,661 local alignments pass the information screen, versus 1,655 original
+alignments. Seven changes are three-to-four distinct strings (two Microbotryum
+and five Tilletia cases); Microbotryum marker 345792 changes from four to three.
+All eight retain informative columns. Their full joined rows are archived in
+`metadata/full_codon_alignment_information_changes_20260927.tsv`.
+
+`scripts/readback_codon_alignment_integration.py` independently parses the
+local FASTAs, recomputes all metrics with NumPy base counts, and checks every
+historical and sensitivity field using exact pandas joins. The full readback
+passed; receipt and proof are archived as
+`metadata/full_codon_alignment_integration_receipt_20260927.json` and
+`metadata/full_codon_alignment_integration_readback_20260927.json`.
+
+All 549 historically flagged cases retain their flags. These describe the
+original diagnostic fits, not newly measured problems in the local alignments.
+No retention threshold was imposed and no case was cleared for selection.
+Next, local tree/model sensitivity must be evaluated with explicit handling of
+source-contamination and copy caveats, including the 29 FCS-omission groups
+that fall below four taxa. Passing this information screen does not override
+those requirements or establish homology correctness, identifiability, or
+selection-test eligibility.

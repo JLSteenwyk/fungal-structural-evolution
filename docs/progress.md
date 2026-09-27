@@ -6896,3 +6896,19 @@ The prior turn produced projections; this turn completes their full independent
 audit and identifies substantial case-specific sensitivity despite high pooled
 retention. Integration with existing copy/source/identifiability flags remains
 next. All eight aims remain open; GPU prediction stays paused.
+## September 27 full alignment sensitivity integrated with codon readiness
+
+Joined all 1,712 realignment cases to the original readiness ledger and
+recomputed nucleotide information from both sets of codon alignments. All
+original metrics were reproduced. Independent manual-FASTA/NumPy readback
+verified all local metrics and exact pandas joins verified all retained flags
+and alignment-sensitivity fields. Seven groups change from failing to passing
+the existing information screen and one changes from passing to failing:
+1,661 local groups pass, 51 fail. All 549 historically flagged groups retain
+their flags, explicitly labeled as original-alignment diagnostics.
+
+The preceding user-facing status turn inspected live services but did not
+advance an analysis. This continuation completes the full integration rather
+than treating the status report as scientific progress. Local phylogenetic and
+model sensitivity remains next; no selection eligibility is established. All
+eight scientific aims remain open. GPU prediction remains paused.

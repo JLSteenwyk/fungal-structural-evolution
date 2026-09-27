@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_codon_alignment_integration_readback",
+  "cases": 1712,
+  "source_receipt_sha256": "882a17f3e05e0f1b11a09ae993647f0997a826717d34b99e72f6ba9e364316a5",
+  "script_sha256": "3d5d3ccb8d4b845f74315b82013e41ce2f90778152cc254e13d42d70c010d4bc",
+  "information_screen_transitions": {
+    "pass_to_pass": 1654,
+    "pass_to_fail": 1,
+    "fail_to_fail": 50,
+    "fail_to_pass": 7
+  },
+  "preserved_flagged_cases": 549,
+  "scope": "Every original ledger field and sensitivity field checked by exact pandas joins. Manual FASTA parser and NumPy base counts independently reproduce all local information metrics and transitions. Does not establish homology correctness or selection eligibility."
+}
