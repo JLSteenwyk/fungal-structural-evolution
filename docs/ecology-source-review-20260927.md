@@ -125,3 +125,26 @@ All 21 pairs, per-marker counts and three descriptive source-category groups
 were checked independently. Category grouping is bookkeeping for coverage,
 not a grouping of inferred evolutionary origins. Each stage had a one-CPU,
 4-GiB, 1–10-minute planning allowance and completed in seconds; no GPU was used.
+
+## Targeted name review
+
+A three-taxon review is recorded in
+`metadata/wood_decay_name_review_20260927.json`:
+
+- The [Auricularia BioProject](https://www.ncbi.nlm.nih.gov/bioproject/60553)
+  binds selected assembly GCA_000265015.1 and strain TFB-10046 SS5 to the old
+  delicata label and current subglabra label. The precise Riley study-sample
+  link remains pending; no species-wide synonym transfer was made.
+- The [Dacryopinax genome project](https://mycocosm.jgi.doe.gov/Dacsp1/Dacsp1.home.html)
+  directly describes named D. primogenitus as brown rot. This supplies independent
+  species evidence without equating every unnamed Dacryopinax to that species.
+- The [Heterobasidion strain record](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=747525)
+  places TC 32-1 in H. irregulare within the H. annosum species complex. Complex
+  membership alone is insufficient to transfer the older source classification.
+
+All three selected names and assemblies were checked against the manifest.
+The two Auricularia pages have hashed local snapshots. JGI's full description
+was inspected in the browser, but its separate local download returned HTTP
+403; no local snapshot is claimed. Existing classification and coverage tables
+remain frozen. Incorporating the new independent Dacryopinax statement into a
+versioned expanded analysis is the next step.

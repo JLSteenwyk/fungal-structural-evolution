@@ -1,0 +1,68 @@
+{
+  "status": "complete_targeted_wood_decay_name_review",
+  "sources": {
+    "auricularia_ncbi_taxonomy": {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=717982",
+      "path": "data/traits/auricularia_ncbi_taxonomy_20260927.html",
+      "sha256": "e123a8f4d502e71a5f43fa828dea565b220b7382dd9940d9e720cc9cfc8eda0a"
+    },
+    "auricularia_ncbi_bioproject": {
+      "url": "https://www.ncbi.nlm.nih.gov/bioproject/60553",
+      "path": "data/traits/auricularia_ncbi_bioproject_20260927.html",
+      "sha256": "61d81d7b73d8ce17cc3c9aed67371524999f33ce9cc3838c747be562a93f8ab4"
+    },
+    "dacryopinax_jgi": {
+      "url": "https://mycocosm.jgi.doe.gov/Dacsp1/Dacsp1.home.html",
+      "access": "Full page inspected through browser tool; direct local download returned HTTP 403, no local snapshot claimed.",
+      "locator": "Genome description, third paragraph",
+      "short_quote": "produces a uniform brown-rot effectively removing the carbohydrates from the substrate"
+    },
+    "heterobasidion_ncbi_taxonomy": {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=747525",
+      "access": "Full page inspected through browser tool",
+      "locator": "Current name and lineage"
+    }
+  },
+  "decisions": [
+    {
+      "taxon_id": "F1331295",
+      "selected_species": "Auricularia subglabra",
+      "selected_assembly": "GCA_000265015.1",
+      "source_name": "Auricularia delicata",
+      "decision": "strain_name_equivalence_verified_primary_study_sample_link_pending",
+      "supported_statement": "BioProject links this assembly and TFB-10046 SS5 to both names. Confirm the Riley study sample before transferring its species label.",
+      "state": "unassigned_pending_sample_link",
+      "sources": [
+        "auricularia_ncbi_taxonomy",
+        "auricularia_ncbi_bioproject"
+      ]
+    },
+    {
+      "taxon_id": "F1858805",
+      "selected_species": "Dacryopinax primogenitus",
+      "selected_assembly": "GCF_000292625.1",
+      "source_name": "Dacryopinax sp.",
+      "decision": "independent_named_species_primary_genome_description_available",
+      "supported_statement": "JGI directly describes D. primogenitus as brown rot, providing named-species evidence independently of the unidentified source label.",
+      "state": "brown_rot",
+      "sources": [
+        "dacryopinax_jgi"
+      ]
+    },
+    {
+      "taxon_id": "F984962",
+      "selected_species": "Heterobasidion irregulare",
+      "selected_assembly": "GCF_000320585.1",
+      "source_name": "Heterobasidion annosum",
+      "decision": "withhold_transfer_species_complex_is_not_synonymy",
+      "supported_statement": "The selected strain belongs to H. irregulare in the H. annosum species complex. This alone does not identify the older study sample.",
+      "state": "unassigned_pending_sample_link",
+      "sources": [
+        "heterobasidion_ncbi_taxonomy"
+      ]
+    }
+  ],
+  "manifest_sha256": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+  "original_source_table_sha256": "d9de8893719725314e216e7ccbfcabe13be98b7ba404c3fab346c9e35c95c0d6",
+  "scope": "Original source table and frozen coverage unchanged. One independent named-species classification identified; two study-sample links pending. No broad synonym propagation or ecological event inference."
+}
