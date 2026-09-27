@@ -1,0 +1,44 @@
+{
+  "producer": {
+    "unit": "fungal-primary-order-sensitivity-readback-20260927-v2.service",
+    "pid": 348488,
+    "created": 1790534542.8,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_primary_order_sensitivity_v2.py",
+      "--plan",
+      "metadata/primary_order_sensitivity_readback_plan_20260927_v2.json"
+    ],
+    "plan_sha256": "3764ee7967b547b5abc80a78b09ffc1f859d1a2d80b02c006b3d8acf75b50882",
+    "correction": "Rename parsed arguments to args so residue-set variables a/b cannot shadow final provenance validation; all original numerical checks unchanged."
+  },
+  "sources": {
+    "primary": {
+      "root": "results/structural_comparisons/primary-order-sensitivity-20260927-v1",
+      "audit": "metadata/primary_order_sensitivity_readback_20260927_v2.json"
+    },
+    "reference": {
+      "root": "results/structural_comparisons/duplication-reference-order-sensitivity-20260927-v1",
+      "audit": "metadata/duplication_reference_order_sensitivity_readback_20260927.json"
+    }
+  },
+  "output": "results/structural_comparisons/whole-protein-order-sensitivity-figure-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_minutes_after_audit": [
+      1,
+      10
+    ]
+  },
+  "pins": {
+    "metadata/primary_order_sensitivity_readback_launch_20260927_v2.json": "6ca4ef6b5c6a242107193464a25f6844bff36a376624781debc66cb55852b71f",
+    "metadata/primary_order_sensitivity_readback_plan_20260927_v2.json": "3764ee7967b547b5abc80a78b09ffc1f859d1a2d80b02c006b3d8acf75b50882",
+    "metadata/duplication_reference_order_sensitivity_readback_20260927.json": "a3fbf54878d40a51e002f69a9d8de6c91d358ca43952d73c07449a12eacadd07",
+    "results/structural_comparisons/duplication-reference-order-sensitivity-20260927-v1/receipt.json": "21fed26cc2acdef2c8516f0fa8258755634c601e672663af186393d99ee544d1",
+    "scripts/plot_whole_protein_order_sensitivity.py": "cc173b9cbb1ca7dab5bc75f41c4a85c5ac4a3bfc47fb9f6cef913dfe9959c7f0",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e"
+  }
+}

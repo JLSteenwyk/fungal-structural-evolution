@@ -8252,3 +8252,26 @@ closure records: `metadata/primary_usable_orders_readback_20260927.json` and
 sensitivity started automatically after successful verification and is actively
 processing 193,642 two-order pair/mask comparisons. These counts remain numerical
 qualification, not biological duplication evidence.
+
+### September 27: mapping-check naming collision corrected; diagnostic figure queued
+
+Primary mapping sensitivity production completed 193,642 pair/mask comparisons.
+The independent checker reached its final provenance verification but failed:
+its parsed-argument variable `a` had been overwritten by the residue-set pair
+`a,b`. No readback receipt was produced. The failed script/run remains intact.
+`readback_primary_order_sensitivity_v2.py` only renames parsed arguments to `args`;
+all original correspondence, count, metric and quantile checks remain unchanged.
+The full check is rerunning under a new pinned plan/unit and distinct output,
+using the existing one-CPU/12-GiB budget. The correction is recorded in
+`metadata/primary_order_sensitivity_readback_{plan,launch}_20260927_v2.json`.
+
+A source-gated figure/table job waits for that corrected full check. It will
+compare primary/reference mapping-change fractions in identical within-group
+pair cohorts across masks, plus RMSD order-difference ECDFs explicitly conditional
+on changed mappings. Groups are not matched to each other. Every original
+quantile and disposition is retained in the associated tables; this descriptive
+figure estimates no independent-event effect, significance or confidence bound.
+It uses one CPU, 4 GiB, no swap, under 0.1 GiB output and 1–10 minutes after audit.
+Script: `plot_whole_protein_order_sensitivity.py`; plan/process identity:
+`metadata/whole_protein_order_figure_{plan,launch}_20260927.json`. Full execution
+and visual review remain pending.
