@@ -1,0 +1,41 @@
+{
+  "source": "results/structural_comparisons/duplication-coordinate-validation-20260926-v1",
+  "source_plan": "metadata/duplication_coordinate_validation_plan_20260926.json",
+  "models": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl",
+  "output": "results/structural_comparisons/duplication-coordinate-readback-20260926-v1",
+  "producer": {
+    "pid": 3500195,
+    "created": 1790469087.22,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/validate_duplication_coordinates.py",
+      "--plan",
+      "metadata/duplication_coordinate_validation_plan_20260926.json"
+    ]
+  },
+  "workers": 2,
+  "pins": {
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "metadata/duplication_coordinate_validation_plan_20260926.json": "7cc948f6d80f102d64d6555af081aeabf67b0187c8b92749edf4933586bdfae8",
+    "metadata/duplication_coordinate_validation_launch_20260926.json": "fab76a6ccb54772b7764cb721c671605f0d363a89c59214d79cda1c583aa3879",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d"
+  },
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "basis": "Wait for exact producer identity to exit, require completed checksum-bound source receipt; reconstruct every exported accepted C-alpha row from all 71.1 GiB raw CIF inputs. Two workers, small shard proofs. No paid resources or GPUs."
+  }
+}

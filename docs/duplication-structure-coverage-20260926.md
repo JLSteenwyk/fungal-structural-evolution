@@ -212,3 +212,42 @@ reserve, and an uncalibrated 0.5–24 hours. Output is
 The stage is running. Independent coordinate-output readback, confidence/PAE
 sensitivity, direct alignments and biological duplication tests remain
 pending. GPUs remain paused.
+
+
+## Independent coordinate readback queued
+
+The coordinate producer completed its first eight shards (8,000 accepted
+models, no content rejections in those shards) before the full readback was
+queued. This partial result does not establish full model-set completion.
+
+`scripts/readback_duplication_coordinates.py` waits for the producer's exact
+PID, creation time and command, then requires the completed coordinate
+receipt bound to the pinned producer plan. It checks the full model-to-shard
+grid and reconstructs every exported accepted C-alpha residue, sequence,
+coordinate and confidence value from the raw CIF atom rows without importing
+the producer extraction function. It verifies confidence summary and threshold
+counts, raw/source identities, output hashes and complete disposition totals.
+It shares the CIF lexical parser and residue-name dictionary with the producer;
+this independence does not extend to those dependencies. Rejection identities
+and reasons are checked, but rejection causes are not independently adjudicated.
+
+The fixture matched an intact model and rejected changed coordinates,
+per-residue confidence, sequence, threshold count, model identity, summary
+confidence, and raw bytes. Reproduce with:
+
+```bash
+python scripts/check_duplication_coordinate_readback.py \
+  --models results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl
+```
+
+The audit is queued under
+`fungal-duplication-coordinate-readback-20260926.service`, using
+`metadata/duplication_coordinate_readback_plan_20260926.json`. Launch identity
+is in `metadata/duplication_coordinate_readback_launch_20260926.json`. Once
+the producer finishes, the audit uses two CPU workers, 8 GiB RAM, no swap and
+small per-shard proofs (0.1 GiB output allowance). The uncalibrated planning
+range is 0.5–24 hours after the dependency completes. Output will be
+`results/structural_comparisons/duplication-coordinate-readback-20260926-v1/`.
+No source job is automatically restarted, and no GPU work is scheduled.
+Passing readback remains a dependency for downstream coordinate use; full
+structural comparisons and biological tests remain unfinished.

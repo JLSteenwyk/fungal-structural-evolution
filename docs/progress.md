@@ -5091,3 +5091,13 @@ with explicit rejected-model dispositions. Isolated source/checkpoint checks
 passed before launch. Four CPU workers, 16 GiB RAM and no swap are allocated;
 no GPUs are used. Results and independent readback remain pending. See
 [duplication workflow](duplication-structure-coverage-20260926.md).
+
+
+### September 26: independent duplication-coordinate readback queued
+
+The producer's first 8,000 models passed coordinate validation. A separate
+readback is now queued behind the exact producer identity and a successful
+completion receipt. It reconstructs every accepted C-alpha record from raw
+CIF atom rows and checks the full disposition grid. An intact fixture passed,
+and six altered exports plus altered source bytes were rejected. The full
+audit has not started yet. See [duplication workflow](duplication-structure-coverage-20260926.md).

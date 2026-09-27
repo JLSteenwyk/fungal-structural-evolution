@@ -1,0 +1,15 @@
+{
+  "service": "fungal-duplication-coordinate-readback-20260926.service",
+  "pid": 3653918,
+  "created": 1790469355.82,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_coordinates.py",
+    "--plan",
+    "metadata/duplication_coordinate_readback_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_coordinate_readback_plan_20260926.json",
+  "plan_sha256": "94b1dd56af2031bf501174c6f4315c648d82779970bd714a5e5928e4e82ee891",
+  "initial_state": "Waiting for checksum-bound producer PID/creation time/command to terminate; requires completed receipt before readback.",
+  "fixture_checks": "Exact accepted source readback passed; six altered export cases and changed raw source bytes rejected."
+}
