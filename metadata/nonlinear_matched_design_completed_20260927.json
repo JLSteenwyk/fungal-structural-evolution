@@ -1,0 +1,46 @@
+{
+  "status": "complete_verified_nonlinear_design_diagnostics",
+  "terminal_states": {
+    "fungal-nonlinear-matched-designs-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-nonlinear-matched-design-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_receipt_sha256": "6e585cceda705b0502afa32ee55a82e49ff2782f848df525c070aac35f371ec7",
+  "audit_sha256": "4e8f47f0ade32b3502126bbc908014e1115aa5ca37af42769b7331cfb3b0051e",
+  "plan_sha256": "2ef8ed67148a8f854ab1bf430561aaef1cc872011dd9fd0e4ac285f799d4b7e0",
+  "script_sha256": "74c0e5585068488ce3c77630e29f76087cc5c8f33a6f7555b4f10957bc2b221a",
+  "summaries": [
+    {
+      "polynomial_degree": 2,
+      "settings": 82944,
+      "rank_deficient": 0,
+      "scaled_condition_min": 9.363565276840706,
+      "scaled_condition_median": 11.557559230792233,
+      "scaled_condition_p95": 13.804443967374148,
+      "scaled_condition_max": 15.598072617529564,
+      "minimum_scaled_singular_value": 0.09081171677131006,
+      "outside_some_marginal_range": 0
+    },
+    {
+      "polynomial_degree": 3,
+      "settings": 82944,
+      "rank_deficient": 0,
+      "scaled_condition_min": 75.51335694882542,
+      "scaled_condition_median": 110.73607909130178,
+      "scaled_condition_p95": 176.54319274027873,
+      "scaled_condition_max": 218.9519390721809,
+      "minimum_scaled_singular_value": 0.007922410584336773,
+      "outside_some_marginal_range": 0
+    }
+  ],
+  "cubic_to_quadratic_condition_ratio_median": 9.641788347341953,
+  "cubic_to_quadratic_condition_ratio_maximum": 14.45251590623423,
+  "scope": "All 165888 design rows passed independent SQL-moment readback. Condition numbers describe centered population-SD-scaled covariates before covariance weighting; repeated sensitivity settings are not independent samples. Full rank does not establish effect precision, nonlinear reference support, fitted model adequacy or calibrated inference."
+}

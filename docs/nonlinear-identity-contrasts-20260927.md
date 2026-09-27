@@ -127,3 +127,25 @@ contains the full setting map and unique comparison sets. Completion and source
 hashes: `metadata/polynomial_model_input_links_completed_20260927.json`. The
 nonlinear support producer is now able to proceed through its verified dependency.
 This does not authorize comparing existing REML objectives with future ML fits.
+
+## Expanded design verification completed
+
+Both producer and independent readback terminated successfully. All 165,888
+design rows were verified, with no rank deficiencies after constant removal.
+`record_nonlinear_design_completion.py` records source/terminal bindings and
+full-table numerical summaries in
+`metadata/nonlinear_matched_design_completed_20260927.json`.
+
+| Identity degree | Settings | Median scaled condition | 95th percentile | Maximum | Minimum scaled singular value |
+|---|---:|---:|---:|---:|---:|
+| Quadratic | 82,944 | 11.56 | 13.80 | 15.60 | 0.09081 |
+| Cubic | 82,944 | 110.74 | 176.54 | 218.95 | 0.007922 |
+
+The cubic-to-quadratic condition ratio has median 9.64 across paired settings.
+Adding the cubic term preserves full rank but increases predictor dependence.
+These are centered, population-SD-scaled fixed-design diagnostics before
+covariance weighting, not fitted coefficient uncertainty or evidence that a
+polynomial degree is biologically preferred. Repeated sensitivity settings are
+not independent samples. Cubic terms remain in the planned sensitivity analysis;
+model comparisons and uncertainty must assess their contribution. Joint support
+verification is still running and is not implied by marginal range coverage.

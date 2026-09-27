@@ -8053,3 +8053,13 @@ inventory produced 28,808 unique three-model comparison sets and retained all
 Both exported maps passed readback; source/terminal bindings are recorded in
 `metadata/polynomial_model_input_links_completed_20260927.json`. Nonlinear
 joint-support production is live after its prerequisite passed.
+
+### September 27: full nonlinear designs independently verified
+
+All 165,888 quadratic/cubic design rows passed independent SQL-moment readback;
+both services ended successfully. No design was rank deficient after constant
+removal. Median scaled condition was 11.56 for quadratic and 110.74 for cubic
+(maxima 15.60 and 218.95), indicating greater predictor dependence for cubic
+terms without establishing their fitted uncertainty or biological utility.
+Completion: `metadata/nonlinear_matched_design_completed_20260927.json`.
+Joint support remains a separate running stage.
