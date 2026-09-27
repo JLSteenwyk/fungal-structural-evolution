@@ -1,0 +1,13 @@
+{
+  "unit": "fungal-background-domain-usable-orders-20260927.service",
+  "pid": 3046201,
+  "created": 1790516588.28,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_background_domain_usable_orders.py",
+    "--plan",
+    "metadata/background_domain_usable_orders_plan_20260927.json"
+  ],
+  "plan_sha256": "680407c92b68258badf23dab27b6954b284a2ca10d720fdbca75086bbe914517",
+  "verification": "Producer exclusion and summary functions AST-identical to independently verified reference implementation; full background readback runs automatically after summary."
+}

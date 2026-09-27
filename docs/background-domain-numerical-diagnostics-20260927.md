@@ -45,3 +45,22 @@ These stages assess numerical identifiability, not prediction uncertainty.
 
 Matched-control inference remains downstream. Both target and background
 comparisons must undergo compatible numerical and coverage criteria.
+
+
+All 13 two-residue mappings were independently checked using half the absolute
+difference of their two inter-residue distances. This verifies the minimum
+RMSD without matrix fitting; maximum disagreement with the diagnostic is
+1.027e-15 Å. All 13 lack a unique rotation, including all five RMSD discrepancies.
+Full results and hashes are retained in
+`metadata/background_domain_short_geometry_readback_20260927.json`.
+
+The numerical order summary is queued under
+`metadata/background_domain_usable_orders_plan_20260927.json`. After full
+geometry verification, it will retain all 66,929 pairs and both masks/orders,
+blanking metrics for RMSD discrepancies, fewer than three paired residues,
+or numerically nonunique rotations. An independent full table readback runs
+automatically afterward. The exclusion and summary functions are unchanged
+from the previously verified reference implementation. This preserves
+comparability without declaring coverage or prediction-confidence eligibility.
+The summary and verification use one CPU, 16 GiB, no swap, up to 2 GiB output,
+and an estimated 0.1–2 hours after dependencies finish. No GPU predictions.

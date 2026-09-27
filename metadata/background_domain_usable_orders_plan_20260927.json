@@ -1,0 +1,42 @@
+{
+  "producer": {
+    "unit": "fungal-background-domain-geometry-readback-20260927.service",
+    "pid": 3043773,
+    "created": 1790516476.07,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_domain_geometry.py",
+      "--plan",
+      "metadata/background_domain_geometry_readback_plan_20260927.json"
+    ],
+    "plan_sha256": "6a5892b683136a9e06e09ce4b091f8800926758c9438a973977efb62546b7534"
+  },
+  "native": "results/structural_comparisons/background-domain-alignments-20260927-v1",
+  "diagnostic": "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1",
+  "geometry": "results/structural_comparisons/background-domain-geometry-20260927-v1",
+  "geometry_audit": "results/structural_comparisons/background-domain-geometry-readback-20260927-v1.json",
+  "geometry_audit_plan": "metadata/background_domain_geometry_readback_plan_20260927.json",
+  "output": "results/structural_comparisons/background-domain-usable-orders-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "All 66929 interval pairs, both masks and orders. Numerical exclusions explicit; full independent summary readback runs after producer. Confidence and coverage qualification remain downstream.",
+  "pins": {
+    "metadata/background_domain_geometry_readback_launch_20260927.json": "8340bf2e61ff78dba70afb69866ad3f343dc0cc8cee2bb1833ad350dd6e40266",
+    "metadata/background_domain_geometry_readback_plan_20260927.json": "6a5892b683136a9e06e09ce4b091f8800926758c9438a973977efb62546b7534",
+    "metadata/background_domain_geometry_plan_20260927.json": "aeb885428e9bd19505b57979dec1e4e4c30af4476cc4dc8f03e911683617cddd",
+    "scripts/summarize_background_domain_usable_orders.py": "ea8f86d6fb0be9c9a7037c5fc312b4d638c3f8917655c308187f588cb1fd0772",
+    "scripts/readback_background_domain_usable_orders.py": "43a0c99e0be500a22b1a9fa7865a93d1bb773481084292637f59d781a796f76f",
+    "scripts/summarize_duplication_alignment_orders.py": "9b4448ca0dcc53143752c2ce06f5c2c8192c7e7ffb21472f1f91d3455927fd3a",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/background-domain-alignments-20260927-v1/receipt.json": "743b568857bc79fd90018a1f4577673b8315c106783abd8d207de0cdc9df0a51",
+    "results/structural_comparisons/background-domain-rmsd-diagnostic-20260927-v1/receipt.json": "0ad891a51ca4e8dfe31dc0ea8fcbd9148a5f0e51f5c045a29a071f9d63206992"
+  }
+}
