@@ -44,6 +44,12 @@ terminal state, then reconstructs every fingerprint using independent SQL
 joins and identity construction. Every setting label, source recipe and record
 denominator must agree. Both stages use one CPU, 12 GiB memory and no swap, with
 0.1–2 hours planned per stage and at most 1 GiB producer output. At launch the
-full inventory and readback are pending. Full-grid fitting, runtime estimates,
-model adequacy and inferential calibration remain outstanding. GPU prediction
-remains paused.
+full inventory and readback were pending. Both have now completed successfully:
+28,808 unique record inputs map to every one of the 82,944 settings, giving
+144,040 distinct tree fits. All fingerprints and recipes passed independent
+SQL reconstruction; source pins and output hashes were rechecked after both
+services exited successfully. Completion proof is
+`metadata/full_matched_fit_inventory_completed_20260927.json`.
+The complete fitting controller has passed this gate and is running. Production
+runtime estimates, model adequacy and inferential calibration remain outstanding.
+GPU prediction remains paused.

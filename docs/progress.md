@@ -7755,3 +7755,22 @@ remain explicit. Eight CPU workers, 48 GiB memory, no swap; planning allowance
 12 hours to two weeks, not a measured ETA.
 [Complete run specification](full-matched-working-models-20260927.md).
 All eight aims remain open. GPU prediction remains paused.
+
+## September 27 full input audit passed; production models running
+
+The preceding turn queued the complete production controller and verified
+worker/restart behavior (progress). The independent inventory audit has now
+passed all 82,944 settings and 28,808 recipes; both inventory services are
+authoritatively inactive with exit zero. All pins and artifacts were rechecked.
+The complete five-tree fit controller passed its gate and has eight live worker
+processes. A frozen prefix of 320 completed fits contains 140 numerical passes
+and 180 projected-gradient review flags, with no execution errors, upper-bound
+contacts or start-disagreement flags. The ordered prefix is not representative
+of the final grid. All flags remain intact; gradient accuracy needs investigation.
+
+Queued a full post-run output-integrity audit behind the exact live controller,
+checking all expected cases, checksums, starts, statuses and unit transformations.
+It explicitly does not claim to repeat all producer numerical readbacks or
+establish inference. One CPU, 8 GiB memory, no swap after production completion.
+[Full run and early diagnostics](full-matched-working-models-20260927.md).
+All eight aims remain open. GPU prediction remains paused.

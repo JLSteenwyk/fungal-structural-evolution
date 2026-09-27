@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-full-matched-working-model-output-audit-20260927.service",
+  "pid": 115551,
+  "created": 1790522685.01,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_full_matched_model_outputs.py",
+    "--plan",
+    "metadata/full_matched_working_model_plan_20260927.json",
+    "--launch",
+    "metadata/full_matched_working_model_launch_20260927.json",
+    "--output",
+    "metadata/full_matched_working_model_output_audit_20260927.json"
+  ],
+  "script_sha256": "b942bec5ecfb02974cf2bac670fac8070df3139772c3ca53c037fdc92609c921",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_hours_after_producer": [
+      0.1,
+      12
+    ]
+  },
+  "scope": "Waits on exact production controller and requires successful authoritative terminal state. Full disposition/file/parameter bookkeeping audit; does not repeat the numerical fits or establish biological adequacy."
+}

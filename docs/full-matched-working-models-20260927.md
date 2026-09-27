@@ -1,6 +1,6 @@
 # Complete matched working-model fitting run
 
-The restartable production controller is queued for all 28,808 exact unique
+The restartable production controller is running all 28,808 exact unique
 record inputs and all five species-tree alternatives: 144,040 tree-fit
 dispositions. The complete source map retains all 82,944 original settings
 (414,720 setting/tree results). Reuse must pass the full independent inventory
@@ -61,3 +61,24 @@ All output initially remains a working-model result pending full run audit,
 optimizer-case review, covariance adequacy, nonlinear sequence sensitivity,
 prediction uncertainty, resampling/calibration and multiplicity handling.
 Completing this run does not complete the project or its duplication aim.
+
+The source audit has passed and production fitting has begun. A frozen
+complete-line prefix of the manifest records 320 dispositions: 140 passing
+numerical optimizer checks and 180 requiring review, with no execution errors.
+Every review flag in that prefix is a projected-gradient failure; all full-face
+starts agreed, optimizer statuses were successful, and no upper variance bound
+was reached. `metadata/full_working_model_early_diagnostics_20260927.json` binds
+the exact prefix and includes examples. This ordered early subset is not
+representative evidence for the final review rate or biological effects. The
+flags remain unchanged pending a separate gradient-accuracy investigation.
+
+`scripts/audit_full_matched_model_outputs.py` is queued behind the exact live
+controller. After successful terminal completion, it checks all expected
+dispositions, file/payload/source checksums, the complete face/start enumeration,
+parameter bounds, review classification, scale/degrees of freedom and raw-unit
+coefficient transformations. It verifies the accounting of producer numerical
+readbacks without claiming to repeat those numerical fits independently.
+Launch: `metadata/full_matched_working_model_output_audit_launch_20260927.json`.
+Expected proof: `metadata/full_matched_working_model_output_audit_20260927.json`.
+This audit uses one CPU, 8 GiB memory and no swap, with 0.1–12 hours allowed after
+production finishes. Error and review dispositions remain explicit.

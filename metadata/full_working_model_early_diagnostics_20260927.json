@@ -1,0 +1,77 @@
+{
+  "status": "partial_live_working_model_diagnostic_snapshot",
+  "manifest_prefix_sha256": "0aabd1fba95bba5f7f828ce7bbbf6536853f00e3c1fc1326e2209eac615ae174",
+  "manifest_prefix_bytes": 135520,
+  "completed": 320,
+  "status_counts": {
+    "candidate_passed_numerical_optimization_checks": 140,
+    "candidate_requires_optimization_review": 180
+  },
+  "failed_checks": {
+    "projected_gradient_pass": 180
+  },
+  "upper_bound_components": {},
+  "examples": [
+    {
+      "fit_input_id": "36228b9902fad997b2aeb68b53dca569ee05972bbad84579925f6fb2819cad1d",
+      "tree": "mafft_guide",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "ratios": [
+        1.088143447266085,
+        0.006294580801204082,
+        0.012274139453673123
+      ],
+      "projected_gradient": [
+        -5.570257144427773e-05,
+        -0.0003457000730122663,
+        -0.004767236418956628
+      ]
+    },
+    {
+      "fit_input_id": "36228b9902fad997b2aeb68b53dca569ee05972bbad84579925f6fb2819cad1d",
+      "tree": "pmsf_mafft_profile",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "ratios": [
+        1.0881193848893604,
+        0.0063777749915044,
+        0.009880187340168937
+      ],
+      "projected_gradient": [
+        2.3679262994849404e-05,
+        -0.00026184352464042533,
+        -0.009041065140991178
+      ]
+    },
+    {
+      "fit_input_id": "36228b9902fad997b2aeb68b53dca569ee05972bbad84579925f6fb2819cad1d",
+      "tree": "pmsf_profile_mafft",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "ratios": [
+        1.0871029566464225,
+        0.0064457400341883025,
+        0.009690722367994228
+      ],
+      "projected_gradient": [
+        1.3245085028758334e-05,
+        -0.0003342637455716604,
+        -0.009198387829201293
+      ]
+    }
+  ],
+  "scope": "Immutable outputs from a complete-line prefix of the live manifest. Early ordered subset, not representative of the full grid; no extrapolation or biological conclusion."
+}
