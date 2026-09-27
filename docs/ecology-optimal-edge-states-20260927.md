@@ -87,3 +87,36 @@ The validated recurrence is unchanged. Production completion and independent
 bootstrap verification remain pending. These frequencies assess sampled tree
 topology sensitivity conditional on one sequence alignment and fixed trait
 coding; they are not posterior transition probabilities or independent origins.
+
+## Full bootstrap network-flow verification queued
+
+Queued independent reconstruction of all four conditional endpoint costs for
+every edge, every tree and both coding scenarios. The verifier uses integer
+network maximum flow rather than the producer's inside/outside recurrence.
+It also reconstructs every split identity, tree score, status, per-tree count
+and split-frequency denominator directly from source trees and classifications.
+No producer edge-mapping helper is imported. The final proof requires all 2,000
+trees; per-tree checkpoints alone do not establish completion.
+
+A complete real bootstrap shard passed 8,392 constrained-cost checks in 6.92
+seconds. Deliberately altered cost and duplicate-edge records were rejected
+even with updated artifact hashes. The full run has a pre-launch 1–6-hour
+allowance, four CPU workers, 8 GiB RAM, no swap and 0.1 GiB proof output. The
+rough timing extrapolation is about one hour before workload variability and
+summary checks. No GPU or paid service is used.
+
+The verifier checks the producer PID plus creation time and command while
+waiting, then requires its final source-bound receipt. It is recorded in
+`metadata/ecology_bootstrap_edges_readback_{plan,launch}_20260927.json`;
+fixture evidence is `metadata/ecology_bootstrap_flow_fixture_20260927.json`.
+Full readback output is
+`results/ecology/bootstrap-optimal-edge-readback-20260927-v1`.
+
+```bash
+python scripts/check_ecology_bootstrap_flow_readback.py
+python scripts/readback_ecology_bootstrap_edges.py --plan metadata/ecology_bootstrap_edges_readback_plan_20260927.json
+```
+
+Production and the full independent audit remain pending. A verification rerun
+recomputes the network flows; partial proof files are not silently accepted as
+completed verification.

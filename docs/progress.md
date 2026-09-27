@@ -6801,3 +6801,17 @@ The previous turn verified all ML edge constraints; this turn extends the
 calculation to the full saved topology ensemble. Existing coordinate verification
 and whole-chain alignments were confirmed live; no restart was needed. All eight
 aims remain open, with GPU prediction paused.
+
+## September 27 full bootstrap ecological readback queued
+
+Added independent network-flow reconstruction of every bootstrap endpoint cost
+and all summaries, then queued it behind the verified live producer. A complete
+real tree passed 8,392 cost checks; wrong-cost and duplicate-edge corruptions
+were rejected with updated hashes. Four CPU workers and 8 GiB RAM are reserved
+within the existing machine, with a measured 1–6-hour planning allowance. All
+2,000 trees and both coding scenarios are required for the final proof. See
+[verification](ecology-optimal-edge-states-20260927.md#full-bootstrap-network-flow-verification-queued).
+
+The previous turn launched bootstrap production; this turn implements, tests
+and queues its full independent audit. Neither pending stage is reported as
+complete. All eight scientific aims remain open; GPU prediction stays paused.
