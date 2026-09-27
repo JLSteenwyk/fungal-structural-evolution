@@ -1,0 +1,14 @@
+{
+  "status": "complete_case_experimental_metadata_links",
+  "script_sha256": "7c71886523e2c35ba1f0b0e5491e7bb3394686118799d696958aea6066641225",
+  "candidate_rows": 7230,
+  "case_screen_region_rows": 156,
+  "artifacts": {
+    "annotated_candidate_entities.tsv": "027868d1d5786131c4ba1a0a4c9a27f1db35a20d21a3e3695b4441877ba0db9b",
+    "case_metadata_summary.tsv": "1553a76fcfb4e07b632377cec12b3bc3d9297784ce2736b4a20e627673db64e2"
+  },
+  "scope": "All candidates joined by exact entity and entry IDs. Counts stratify alignment coverage only, not resolved-coordinate coverage or quality. Entry-level starting-model flags are not target-chain assignments. Multiple entities, entries and cases may share experiments; no independence or accuracy claim. Zero-candidate case/screens retained. Mutation flags are reported metadata, not inferred effects.",
+  "source_receipt_path": "results/experimental_structures/whole-domain-case-metadata-links-20260927-v1/receipt.json",
+  "source_receipt_sha256": "4040c090c61a1fdcffaae21d8c0f5d73c903c4d9beb14d162ffdf75342509cd1",
+  "independent_readback": "All 156 case/screen/region summary rows recomputed with pandas many-to-one joins directly from original coverage and entity/entry tables; all counts and flagged entry lists matched."
+}

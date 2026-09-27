@@ -254,3 +254,35 @@ Outputs are `entries.tsv`, `entities.tsv` and
 `results/experimental_structures/whole-domain-case-metadata-review-20260927-v1`.
 Hashes, counts and explicit flagged entry IDs are recorded in
 `metadata/case_experimental_metadata_review_completed_20260927.json`.
+
+## Case-specific metadata linkage completed
+
+`link_case_experimental_metadata.py` joined all 7,230 candidate entity/screen
+rows to the exact entity and entry annotations. It retained all 156 combinations
+of thirteen cases, six screens and two coverage regions, including zeros. An
+independent pandas join recomputed every summary count and flagged-entry list
+from the original tables; all matched.
+
+At n50/c70 for **alignment** coverage of both domain and outside regions:
+
+| Case | Experimental entities | PDB entries | Entries with AlphaFold starting annotation | Entities reporting mutations |
+| --- | ---: | ---: | ---: | ---: |
+| Heliocybe OG0000054 | 19 | 19 | 0 | 1 |
+| Cryoendolithus OG0000107 | 97 | 97 | 3 | 0 |
+| Furculomyces OG0000230 | 6 | 6 | 0 | 2 |
+| Jaapia OG0000294 | 101 | 100 | 0 | 3 |
+| Phycomyces OG0002812 | 26 | 26 | 0 | 17 |
+
+The other eight cases have zero candidates for both regions at this setting.
+The earlier Jaapia count of 102 includes the integrative entry; methodology
+stratification now distinguishes 101 experimental entities and one integrative
+entity. No candidate was discarded because of mutation or starting-model flags.
+These annotations require target-chain and construct review, and absence of a
+flag is not independence. The table does not establish resolved-coordinate
+coverage, nor does it override fungal-prediction coverage requirements.
+
+Artifacts are `annotated_candidate_entities.tsv` and
+`case_metadata_summary.tsv` under
+`results/experimental_structures/whole-domain-case-metadata-links-20260927-v1`.
+Full source bindings and the independent readback are recorded in
+`metadata/case_experimental_metadata_links_completed_20260927.json`.

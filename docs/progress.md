@@ -8598,3 +8598,12 @@ Retained all method-specific fields, source/host and construct annotations,
 release dates and unknowns. Entry-level starting models are not assigned to the
 matched chain, and none is claimed training-independent. Full metadata readback
 passed. See [review details](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: case-specific experimental metadata linked and verified
+
+Joined 7,230 candidate rows and independently recomputed all 156 case/screen/
+region summaries. Jaapia's n50/c70 both-region count separates 101 experimental
+entities (100 entries) from one integrative entity. Phycomyces has mutations
+reported for 17 of its 26 alignment-qualified entities. All annotations remain
+explicit without quality-based selection; actual coordinate coverage is pending.
+See [case table](case-independent-control-coverage-20260927.md).
