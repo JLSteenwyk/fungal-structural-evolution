@@ -1,0 +1,568 @@
+{
+  "status": "complete_descriptive_whole_domain_contrast_integration",
+  "source_hashes": {
+    "results/structural_comparisons/whole-protein-cross-guide-sensitivity-20260927-v1/receipt.json": "16b058daf4602fc75c6140b041f960a5b384aa892de7fd72e8bec8a00786194d",
+    "results/structural_comparisons/duplication-domain-candidate-sampling-20260927-v1/receipt.json": "8bb083d2e1b28d01dc47100c113dc99ce8367fd6482ad72ac77222677af96a4f",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1/receipt.json": "01b788e5880d45894ae7382c452e31a0469b8921f655283b825b594fc98933d8",
+    "metadata/duplication_domain_candidate_sampling_completed_20260927.json": "43d7ec78f362153ac18abd9090dff26ef4f73820c6ca82707bb08cae559b240a",
+    "results/structural_comparisons/whole-protein-cross-guide-sensitivity-20260927-v1/all_pair_comparisons.tsv": "2e14718318ba0be628c220983b8bcf055c135880fda71d4bcc6fe41a94228299",
+    "results/structural_comparisons/duplication-domain-candidate-sampling-20260927-v1/annotated_comparisons.tsv": "8aa16812dacc76379cea631f27ff03855f14d419083cd48c577c2863710fafa5",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/event_reference_triads.tsv": "4eecddbc391cf479e1650230d236c479230f224d4d4cc167318369da139c0a03",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/model_triads.tsv": "9fdde272039d19fad472ead3e5fd12bcb32c67e9db936ea0ad71274895b85ecf",
+    "results/structural_comparisons/duplication-domain-triad-integration-20260927-v1/domain_triads.sqlite": "34143d2a92b0662922d66365799bce93f07abae475e901a0099936079585181f"
+  },
+  "script_sha256": "72ef100a9f2552fe84bcd4b46bd13e12228485aabbef4619673c346ad842c60a",
+  "domain_comparison_rows": 77760,
+  "whole_pair_screen_rows_without_domain": 100014,
+  "summaries": [
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 336
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 301
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 1375
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2132
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 467
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 190
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 1182
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2305
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 474
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 13
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 497
+    },
+    {
+      "screen": "n30_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3160
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 239
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 216
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 999
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2690
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 336
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 131
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 847
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2830
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 293
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 6
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 329
+    },
+    {
+      "screen": "n30_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3516
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 108
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 98
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 347
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3591
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 141
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 53
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 282
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3668
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 99
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 1
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 82
+    },
+    {
+      "screen": "n30_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3962
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 395
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 283
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 1334
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2132
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 512
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 182
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 1145
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2305
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 489
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 13
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 482
+    },
+    {
+      "screen": "n50_c50",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3160
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 280
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 202
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 972
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2690
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 365
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 126
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 823
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 2830
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 302
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 6
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 320
+    },
+    {
+      "screen": "n50_c70",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3516
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 119
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 91
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 343
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3591
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 144
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 53
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 279
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_01",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3668
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "domain_direction_incomplete_or_unresolved",
+      "domain_comparisons": 100
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "opposite_direction_between_scales",
+      "domain_comparisons": 1
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "reference_or_model_set_mismatch",
+      "domain_comparisons": 176
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "same_direction_both_scales",
+      "domain_comparisons": 81
+    },
+    {
+      "screen": "n50_c90",
+      "margin": "direction_margin_0_1",
+      "relationship": "whole_direction_incomplete_or_unresolved",
+      "domain_comparisons": 3962
+    }
+  ],
+  "artifacts": {
+    "domain_comparisons.tsv": "f508f219e91eeeef5904b348feccc6a9c7c2b4ceec0d156a4f0b0d4926983286",
+    "whole_pair_screens_without_domain_rows.tsv": "e1afed51fa03c96f5c2db6f4756b4ec0d9707192450c0d01e2acd44b979366ce",
+    "summary.tsv": "1ff16b79d0e9f4c1dc5d59841f0c9e21bce72685d0e5fb8dfc30171b3f073a31"
+  },
+  "scope": "All six screens and three matched descriptive margins. Exact reference-gene and A/B/reference model/version sets checked per guide. Whole coverage uses original protein lengths; domain coverage uses domain lengths. Same/opposite contrast directions are descriptive, not proof of orientation change, coupling or biological significance; no subtraction of RMSDs across scales.",
+  "receipt_path": "results/structural_comparisons/whole-domain-contrast-integration-20260927-v1/receipt.json",
+  "receipt_sha256": "61553a8c247f67eab0f316f7c8bde471692525a11d9496039756ee8ff7d8b55e"
+}

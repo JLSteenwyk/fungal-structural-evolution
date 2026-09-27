@@ -8441,3 +8441,14 @@ pairs use 7,005 models, 68 reused across pairs; the largest family contributes
 62 pairs and the largest taxon 251. Component and sampling tables preserve
 these dependencies for statistical modeling; they are not independent-sample
 counts. See [candidate dependence](whole-protein-candidate-dependence-20260927.md).
+
+### 2026-09-27: whole-protein/domain contrasts integrated
+
+Joined all 77,760 domain-comparison rows to whole-protein comparisons at exact
+family/gene-pair/screen identity, with matching descriptive margins and exact
+reference-gene/model-version set checks under both guides. Full serialization
+and independent whole-direction checks passed. At n50/c70 and 0.1 Å, 320 domain
+comparisons agree with whole-protein direction and six oppose it; these are
+inspection candidates, not proof of domain-orientation effects. All unresolved
+and reference-mismatched cases remain explicit, as do 100,014 whole pair/screen
+rows lacking domain-comparison rows. See [integration](whole-domain-contrast-integration-20260927.md).
