@@ -9078,3 +9078,16 @@ all first21 completed outputs passed node coverage, probability bounds and
 observed-tip checks after this normalization. Original failed checks remain
 preserved, and the pinned running producer is unchanged. These checks do not
 independently verify internal-node probabilities. The full run is ongoing.
+
+### 2026-09-27: independent binary-model replay exposes likelihood issue
+
+Implemented independently enumerated/checked binary CTMC inside/outside
+replay. First81 nonempty outputs show maximum probability difference~6.19e-5
+from rounded FastML serialization. Three one-character OG0000294 fits have
+~0.47 log-likelihood discrepancies; using the original-tree ascertainment
+denominator reproduces reported likelihoods within~2.2e-6. Source inspection
+is consistent with a cached denominator not refreshed after MP tree scaling.
+Recorded the evidence and unresolved dispositions in
+`docs/fastml-indel-likelihood-discrepancy-20260927.md`. These fits are not
+likelihood-validated. Full producer verified live; corrected inference and
+unknown-mask sensitivity remain pending. GPU prediction remains paused.
