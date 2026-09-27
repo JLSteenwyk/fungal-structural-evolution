@@ -9380,3 +9380,22 @@ FASTA or GPU prediction launched. Full output artifact hashes checked and
 closure recorded in `metadata/compatible_gap_application_completed_20260927.json`.
 A justified joint indel treatment,validation and final sequence ensembles
 remain required.
+
+### 2026-09-27: Historian built and tested; full input compatibility audited
+
+Pinned author revision 359be7ef8e71a04c90aaffe44b0ddf6901a12ff0 builds
+successfully with locally unpacked GSL. The original link failure is retained;
+v2 adds a linker flag without changing upstream source. The upstream test
+suite exited zero, with terminal service status and receipt artifacts checked.
+
+All 78 selected alignments (13 families, maximum 622 proteins) were checked
+against implementation requirements. Six OG0000230 alignments contain a
+four-way node rejected by Historian; 24 inputs have edges affected by its
+1e-9 parser floor. All inputs remain in scope and unchanged. These findings
+must be addressed before claiming full-family feasibility. No project Historian
+inference or GPU prediction launched.
+
+Source inspection also identifies adaptive guide-band relaxation and
+conditional, thresholded ancestral residue probabilities, which cannot be
+reported as complete indel-history uncertainty. Detailed evidence and remaining
+requirements: [Historian assessment](historian-method-assessment-20260927.md).

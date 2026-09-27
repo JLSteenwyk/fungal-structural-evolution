@@ -87,3 +87,6 @@ The public source page states a200-sequence limit, so local-tool capacity for
 our622-protein family must be checked before scientific use. The wrapper's
 default inclusion of terminal gaps requires explicit sensitivity analysis,
 especially for extracted domains and incomplete annotations.
+
+- Holmes 2017. [Historian: accurate reconstruction of ancestral sequences and evolutionary rates](https://doi.org/10.1093/bioinformatics/btw791). Candidate explicit indel/substitution framework. Pinned author implementation built and upstream tests passed; root, profile approximation and full input compatibility remain unqualified. See the [implementation assessment](historian-method-assessment-20260927.md).
+- Westesson, Lunter, Paten and Holmes 2012. [Accurate reconstruction of insertion-deletion histories by statistical phylogenetics](https://doi.org/10.1371/journal.pone.0034572). Methodological predecessor cited by Historian. The implementation's nonoverlapping within-branch indel approximation must remain explicit; software validation is not replication of published benchmarks.

@@ -1,0 +1,24 @@
+{
+  "source": "data/software_audits/historian-20260927/source",
+  "build": "results/software/historian-build-20260927-v2",
+  "output": "results/software/historian-tests-20260927-v1",
+  "timeout_seconds": 3600,
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      0.1,
+      1
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/test_historian_local.py": "9c546658f4e420a68091fd2d0a5ccc4dc8d23ab1cb3c0c03dcb4bb5a8bb44504",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/software/historian-build-20260927-v2/receipt.json": "81b1ddee0a35bb8229226ff2937e510cac50c475c29283851f309d304f22f939",
+    "results/software/historian-build-20260927-v2/command.json": "25fcccdf8740164353158728e2ef37d2082122ad8976394cbcbc9147663ceb7b",
+    "data/software_audits/historian-20260927/source/Makefile": "cbddf087afbc567721d8c8818cedc14788dc39b673c00059c0aa6ac8bdee15f9"
+  }
+}
