@@ -8625,3 +8625,12 @@ with explicit zero-candidate dispositions for the other five. Every intersection
 passed a separate ordered membership check. These are sequence correspondences,
 not observed-coordinate coverage or geometric fits; all four coordinates and
 confidence/domain restrictions must be applied downstream.
+
+### 2026-09-27: direct experimental quartet geometry queued
+
+Prepared and launched full four-way coordinate filtering and all six pairwise
+fits across full/pLDDT70 masks and domain boundaries, behind successful full
+CA readback. Every chain/model/context remains explicit, including insufficient
+and degenerate fits. Domain transforms will also measure outside residuals.
+Four geometry fixtures passed. Production geometry and independent validation
+remain pending; GPU work stays paused.

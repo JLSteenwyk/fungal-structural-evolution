@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-case-experimental-quartet-fits-20260927.service",
+  "pid": 425156,
+  "created": 1790540825.29,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/fit_case_experimental_quartets.py"
+  ],
+  "script_sha256": "7d446e8c71cfc74bc952e048dc700568f0767b02bfd8a0b0c2d9b6d2e6b11aa0",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 5,
+    "planning_hours": [
+      1,
+      12
+    ]
+  },
+  "scope": "Waits on exact full CA readback. All quartet contexts, chains/models, masks, domain boundaries and six pairwise fits. Four rigid/outside translation fixtures passed. No GPU use."
+}

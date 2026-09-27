@@ -333,3 +333,34 @@ remain excluded from rotation interpretation.
 Outputs are in
 `results/experimental_structures/whole-domain-case-sequence-quartets-20260927-v1`;
 closure is `metadata/case_experimental_sequence_quartets_completed_20260927.json`.
+
+## Observed quartet filtering and direct geometry queued
+
+`fit_case_experimental_quartets.py` is queued behind the exact full experimental
+CA readback and successful terminal state. It binds the 923 sequence quartet
+maps to the exact fungal model versions and checked coordinate files. Every
+experimental chain/model is retained, with full and pLDDT70 fungal masks.
+Only positions observed in all four proteins contribute. The integrative entry
+is explicitly excluded and all five no-shared-candidate triplets remain recorded.
+
+For each of the 26 domain-boundary triplets, common quartets are partitioned into
+inside all three fungal domains, outside all three, and mixed membership. Mixed
+positions remain in the whole-protein comparison but are excluded from domain
+and outside fits. All six protein pairs (AB, AR, BR, AE, BE, RE; E denotes the
+experimental homolog) use identical four-way residue sets for each region.
+Proper rotations are fitted separately to whole, domain and outside regions;
+the domain transform is additionally evaluated on outside residues without
+refitting. Insufficient or degenerate fits remain explicit. Original lengths
+and common position sets are exported for subsequent coverage checks.
+
+Four rigid-motion/outside-translation fixtures passed. Each computed production
+fit will compare SVD and quaternion RMSDs, including outside residuals under the
+domain transform. These inline checks do not replace a full independent readback.
+Coverage qualification, construct/dependence review and interpretation remain
+outstanding; these homolog comparisons are not exact fungal prediction controls.
+
+The service uses one CPU, single-threaded BLAS, 8 GiB RAM and no swap, with a
+5 GiB output and 1–12 hour planning allowance. No GPU use is involved. Output is
+`results/experimental_structures/whole-domain-case-quartet-fits-20260927-v1`;
+launch identity is `metadata/case_experimental_quartet_fits_launch_20260927.json`.
+The stage is queued, not completed.
