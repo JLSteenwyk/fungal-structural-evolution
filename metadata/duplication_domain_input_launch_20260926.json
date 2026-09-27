@@ -1,0 +1,14 @@
+{
+  "service": "fungal-duplication-domain-inputs-20260926.service",
+  "pid": 169876,
+  "created": 1790473664.82,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_duplication_domain_inputs.py",
+    "--plan",
+    "metadata/duplication_domain_input_plan_20260926.json"
+  ],
+  "plan": "metadata/duplication_domain_input_plan_20260926.json",
+  "plan_sha256": "79a79833199bf2cb74555378b45b78a656ad627d260436fc33bb1e5807dae61b",
+  "fixture": "Independent PDBParser original positions/XYZ/confidence, full and sparse/empty masks, invalid ranges, two-source completed handoff, rejected source and corrupted-proof rejection passed."
+}

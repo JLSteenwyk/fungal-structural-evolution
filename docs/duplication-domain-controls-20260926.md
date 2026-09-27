@@ -160,3 +160,39 @@ Its receipt and post-completion pin verification are archived in
 `metadata/duplication_domain_pair_readback_completed_20260926.json`. This verifies
 interval bookkeeping against the same annotations, not physical domain
 boundaries or biological evolutionary events.
+
+## Full domain coordinate preparation queued
+
+`scripts/materialize_duplication_domain_inputs.py` waits for both exact
+full-model coordinate-readback processes and requires their successful bound
+receipts. Every source shard must match its hash and independent proof. It
+then extracts all 114,590 verified intervals from 50,204 models, producing
+229,180 full/pLDDT>=70 dispositions. Source path, hash, sequence hash and model
+length are checked for every interval. Short masks and source rejections remain
+explicit. All expected intervals must appear exactly once per mask.
+
+The renderer in `scripts/duplication_domain_inputs.py` preserves original
+full-protein residue numbers through interval slicing and masking. It uses
+the same checked C-alpha serializer as the whole-protein pipeline, with XYZ
+rounded to 0.001 Å and confidence to 0.01. Independent Bio.PDB parsing fixtures
+checked original numbering, coordinates and confidence for full and sparse
+masks; empty masks and invalid bounds were checked separately. A completed
+handoff fixture covered both source collections, rejected models, written
+hashes and altered-proof rejection. Reproduce these checks with:
+
+```bash
+python scripts/check_duplication_domain_inputs.py
+```
+
+Plan: `metadata/duplication_domain_input_plan_20260926.json`.
+Exact launch identity: `metadata/duplication_domain_input_launch_20260926.json`.
+Output: `results/structural_comparisons/duplication-domain-inputs-20260926-v1/`.
+Run with `python scripts/materialize_duplication_domain_inputs.py --plan
+metadata/duplication_domain_input_plan_20260926.json`.
+
+The queued job uses one CPU, 8 GiB RAM, no swap, an 8 GiB output planning
+allowance and 100 GiB free-disk reserve. Its uncalibrated planning interval is
+0.1–8 hours after dependencies finish. No GPU or paid resources are used.
+Production extraction is waiting, not completed. Independent full domain
+serialization readback and domain alignments remain to be prepared. No PAE,
+biological boundary or evolutionary-event validation is implied.

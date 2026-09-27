@@ -5293,3 +5293,13 @@ interval endpoint, model/source identity and deduplicated pair/set count
 matched; source and output pins were checked again. This verifies the full
 workload for coordinate preparation, not domain structures or evolutionary
 interpretation. See [domain controls](duplication-domain-controls-20260926.md).
+
+
+### September 26: complete domain coordinate preparation queued
+
+All 114,590 verified intervals are queued for full/pLDDT70 C-alpha extraction
+(229,180 dispositions) after both complete full-model coordinate readbacks.
+Original protein residue numbering is preserved. Independent parsing and
+two-source handoff/corruption fixtures passed. Production is waiting;
+independent domain serialization readback and alignments remain pending.
+See [domain workflow](duplication-domain-controls-20260926.md).
