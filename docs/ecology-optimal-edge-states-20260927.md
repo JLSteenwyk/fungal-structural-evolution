@@ -235,3 +235,34 @@ audited bootstrap tables, with exact condition/taxon/bin coverage; all output
 hashes were checked and the PNG visually reviewed. Evidence is archived in
 `metadata/ecology_bootstrap_figure_readback_20260927.json`. The figure remains a
 conditional mapping diagnostic, not a test of ecological structural effects.
+
+## Structural coverage at every ever-required terminal edge
+
+The complete edge-to-coverage join retains all three splits required in any
+bootstrap reconstruction, all four tree/coding conditions for each split, and
+both prediction sources (24 rows). Conditions with zero required changes,
+including Ramaria under unknown coding, remain present. All 44 other reviewed
+taxa are retained as potential comparison partners without binary recoding or
+claims that they form valid independent ecological contrasts.
+
+| Focal taxon | AlphaFold eligible markers | ESMFold eligible markers | Other reviewed taxa sharing ≥50 columns in at least one marker (AF / ESM) |
+| --- | ---: | ---: | ---: |
+| Ramaria rubella (F113071) | 0 | 104 | 0 / 31 |
+| Botryobasidium botryosum (F264124) | 121 | 0 | 33 / 0 |
+| Sphaerobolus stellatus (F68786) | 54 | 39 | 31 / 31 |
+
+The source asymmetry matters for downstream ecological modeling: the Ramaria
+and Botryobasidium candidate edges cannot be assessed within both current source
+cohorts. Sphaerobolus has coverage in both, but source-specific marker membership
+and shared residue columns remain distinct. Availability does not establish
+transition polarity, replicate origins, statistical power or a structural effect.
+Ramaria's ecological coding uncertainty also remains unresolved.
+
+`scripts/link_ecology_edge_structure_coverage.py` verifies both full coverage
+readbacks and the full bootstrap-summary readback, reconstructs every pair's
+qualifying-marker count, and independently recounts exported source/focal
+coverage using scalar records. Full pair-marker rows remain outside Git under
+`results/ecology/required-edge-structure-coverage-20260927-v1`.
+The 24-condition table and source-bound receipt are archived in
+`metadata/ecology_required_edge_structure_coverage_20260927.tsv` and
+`metadata/ecology_required_edge_structure_coverage_receipt_20260927.json`.
