@@ -6357,3 +6357,22 @@ See [support results and coordinate audit](terminal-sister-backgrounds-20260927.
 The prior turn completed measurement joins and started coordinates; this turn
 verifies statistical support diagnostics and completes the coordinate-audit
 handoff. The full objective remains active; GPU prediction remains paused.
+
+## September 27 background domain controls produced
+
+Completed the domain-control inventory for all 150,280 background candidate
+models and 71,461 qualified distinct pairs under all four target-matched Pfam
+policies (285,844 pair/policy records). Versioned annotations, repeats,
+unannotated categories and conservative single-copy domain intervals remain
+explicit. Full independent reconstruction passed every model, all 285,844 pair/policy
+records and every matched domain interval; known cases and 1,000 independent
+pair fixtures also passed. See [domain control scope](terminal-sister-backgrounds-20260927.md#background-domain-controls).
+
+The first readback launch failed before reading data because a producer that
+had already completed could no longer supply a live PID for plan creation.
+Confirmed terminal states and completed producer hashes, then launched the
+readback with a receipt-bound plan under a new service name. No data or live
+producer was restarted. Coordinate validation continues independently.
+The previous turn verified matching support and queued coordinate readback;
+this turn adds the domain/architecture information required for comparable
+backgrounds. The full objective remains active and GPU prediction remains paused.

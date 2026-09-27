@@ -1,0 +1,15 @@
+{
+  "status": "passed_full_background_domain_control_readback",
+  "plan_sha256": "5ae0371321d6bbbe8f2c07ce5f98b8959de00b4c84ca7a4ef7fd6bd18179b84d",
+  "producer_receipt_sha256": "d5db88ffa7a194eb7589fb1d16de16b40be9d58986c871ac20421d08f8bc6773",
+  "models": 150280,
+  "unique_model_pairs": 71461,
+  "pair_policy_rows": 285844,
+  "single_copy_domain_matches_by_policy": {
+    "alignment_evalue": 36717,
+    "alignment_bitscore": 36683,
+    "envelope_evalue": 36580,
+    "envelope_bitscore": 36549
+  },
+  "scope": "Every model export independently rejoined from registry segments and policy membership; full verified background pair universe, all architecture categories/counts and every single-copy domain match independently reconstructed. Same frozen Pfam source, not independent annotation searches or structural domain validation. No biological gain/loss/rearrangement or duplication-effect inference."
+}

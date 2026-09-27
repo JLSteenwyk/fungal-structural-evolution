@@ -1,0 +1,41 @@
+{
+  "inventory": "results/structural_comparisons/background-measurement-inventory-20260927-v1",
+  "inventory_readback": "metadata/background_measurement_inventory_completed_readback_20260927.json",
+  "registry": "results/domains/whole-proteome-structure-domain-registry-20260923-v1",
+  "registry_readback": "results/domains/whole-proteome-structure-domain-registry-readback-20260923-v1/receipt.json",
+  "output": "results/structural_comparisons/background-domain-controls-20260927-v1",
+  "pins": {
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260923-v1/receipt.json": "b2b0e593abd2a67f42f48a6e89bdcbe4e858a79886de7883113ac75650f899e8",
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/receipt.json": "77632f91db393bc489cb7c1134db1a6e6f773e6bf7a0afbe7ddc9879585bb713",
+    "results/domains/whole-proteome-structure-domain-registry-20260923-v1/structure_domains.sqlite": "90a2c795d2a0286fad037dad79a881757f365baaad50815ca6fb9fa4a4d0373e",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/check_duplication_domain_controls.py": "9268d1048be3cfd11d8dcaa33f108eaf1b86f4ed19fe144cc6403a8511d2a374",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/background_measurement_inventory_completed_readback_20260927.json": "4b5e4076a05ca87b8d1c07a7fb574ae6d5c152dd1304a2d469f217dd80af489c",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "scripts/inventory_background_domain_controls.py": "687bdffdac6352ff352ee63bec1e4b6a031d561360bc9ab758a9c6b895cb395c",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/model_pairs.tsv": "3d32e77d180730ee660631507a9fab8a08fbccb92e5904685b6c3cf360053347",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/candidate_measurement_links.tsv": "5077fe8023549368376d57ecbd6586da3d8fafe7f60cf7a95f9b9d3843bc9ca6",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl": "4f59e546e6010015ce5d18da7ca7823c79cc96a8d3a45ec46fdbac5514bd415e",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/additional_models.jsonl": "8693d749ddcca553d9dafb0736b63e6a44ab25a7f2a0804e61cff67792517247",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/active_models.jsonl": "d33cf5f442f500a40de0f8d9dc76ac81a7afd4d13b2365bafb2b6aeee2592b57"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "models": 150280,
+    "model_pairs": 71461,
+    "policies": 4,
+    "basis": "Indexed exact model/sequence joins for all background candidate models, all four annotation alternatives and every qualified distinct pair. Uses the same repeat-aware domain matching semantics as duplicate targets. No coordinate inference or alignment; existing CPU only. Broad uncalibrated planning range."
+  }
+}

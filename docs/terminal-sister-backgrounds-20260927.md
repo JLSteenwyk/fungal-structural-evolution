@@ -344,3 +344,50 @@ Four CPUs, 16 GiB RAM, no swap and 0.1 GiB output are budgeted, with an
 uncalibrated 0.5–24 hour interval excluding producer wait. The fixture accepted
 exact raw reconstruction and rejected six altered exports plus changed raw
 bytes. Production coordinate validation is running; its full readback is queued.
+
+## Background domain controls
+
+The background models and pairs now have the same four-policy domain annotation
+inventory as the duplicate targets. `inventory_background_domain_controls.py`
+requires the independently verified measurement inventory and frozen Pfam
+registry. It joins all 150,280 candidate models by exact sequence, model version,
+length and path, then compares every one of the 71,461 qualified distinct-model
+pairs under alignment/envelope and E-value/bitscore policy alternatives.
+
+Ordered annotation signatures retain all Pfam types and repeated occurrences.
+The five categories distinguish same ordered annotations, same content in a
+different order, different content, one unannotated model, and neither annotated.
+Single-copy Domain matches require one occurrence of that versioned accession
+in each model and conservative interval eligibility on both sides. A second
+ineligible copy still blocks single-copy classification. Missing annotations
+are not biological absence, and annotation differences are not inferred gains,
+losses or rearrangements. Residue-level confidence/coverage and domain-coordinate
+comparison remain downstream.
+
+Producer output contains all model annotations, 285,844 pair/policy records and
+every matched single-copy domain interval pair. Under alignment/E-value policy,
+50,539 pairs have the same ordered annotations, 5,867 differ in content, 11
+share content in a different order, 2,833 have only one annotated model and
+12,211 have neither annotated. There are 36,717 matched domain pairs under that
+policy; the other three policies yield 36,683, 36,580 and 36,549. All counts passed full independent readback and are not independent
+evolutionary events or matched-target counts. See the
+[complete domain readback](../metadata/background_domain_control_completed_readback_20260927.json).
+
+Plans are `metadata/background_domain_control_plan_20260927.json` and
+`metadata/background_domain_control_readback_plan_20260927.json`; data are under
+`results/structural_comparisons/background-domain-controls-20260927-v1`.
+Both stages use one CPU, 16 GiB RAM and no swap; output allowances are 2 GiB and
+0.01 GiB, respectively, with uncalibrated 0.1–6 hour planning ranges. No new
+predictions or native structural alignments are launched. The readback joins
+segments and policy membership separately and independently reconstructs every
+exported annotation, architecture record and domain-pair match. Known cases and
+1,000 independent pair fixtures passed.
+
+The producer completed before its live PID could be captured. That prevented
+creation of the first readback plan, and the initial readback service exited
+with a missing-plan error before reading data. After verifying the completed
+producer receipt and artifact hashes, a receipt-bound readback plan was created
+and a new `fungal-background-domain-readback-20260927-v2` service launched.
+The failed launch and replacement are recorded in
+`metadata/background_domain_control_produced_20260927.json`; no producer data
+were rerun or overwritten.

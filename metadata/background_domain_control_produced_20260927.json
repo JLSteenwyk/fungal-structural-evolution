@@ -1,0 +1,14 @@
+{
+  "status": "producer_completed_before_live_identity_capture",
+  "service": "fungal-background-domain-controls-20260927.service",
+  "plan_sha256": "db29ea539aef90e17da5be9517103019c77242d7e48ce5f6d9b815a208822db9",
+  "producer_receipt_sha256": "d5db88ffa7a194eb7589fb1d16de16b40be9d58986c871ac20421d08f8bc6773",
+  "models": {
+    "models": 150280,
+    "models_without_hits": 28506,
+    "policy_disagreement_models": 1370
+  },
+  "unique_model_pairs": 71461,
+  "pair_policy_rows": 285844,
+  "initial_readback_launch_disposition": "Failed before reading any source data: producer ended before PID capture, so readback plan was not created. Missing-plan failure confirmed terminal; a receipt-bound plan and new readback service replace that failed launch."
+}
