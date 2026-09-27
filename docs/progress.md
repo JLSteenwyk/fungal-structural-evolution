@@ -5368,3 +5368,24 @@ An explicit membership table now distinguishes that excluded blank-denominator
 entry from biological zero-event observations. All 526 reconciled taxa have
 reported terminal singleton-side events, with two-model candidates in 153.
 See [verified coverage and membership](duplication-sampling-coverage-20260926.md).
+
+
+### September 26: lineage structural-coverage figure completed
+
+The verified terminal-event coverage table now has a reproducible figure for
+27 broad lineage groups under both guides. Separate event and taxon denominators
+show uneven coverage within lineages; Blastocladiomycota has about 57% event
+coverage but only two of nine taxa contribute modeled pairs. All 54 aggregate
+rows and 108 percentages were independently reconstructed and the rendering
+inspected. This describes ascertainment, not biological absence or corrected
+evolutionary effects. See [figure and reproduction](duplication-sampling-coverage-20260926.md#lineage-coverage-figure).
+
+
+### September 26: primary duplication coordinate validation completed
+
+All 212,549 queued models passed the producer's coordinate checks, with zero
+rejections. Completion scope, source/script pins and all 213 compressed shard
+hashes were checked and archived in
+`metadata/duplication_coordinate_validation_completed_20260926.json`.
+The independent source-to-export coordinate readback is still running; downstream
+materialization and comparisons remain gated on its successful completion.

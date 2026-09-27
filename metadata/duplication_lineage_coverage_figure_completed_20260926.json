@@ -1,0 +1,24 @@
+{
+  "status": "passed_lineage_coverage_numeric_readback",
+  "receipt": {
+    "status": "complete_verified_duplication_lineage_coverage_figure",
+    "membership_receipt_sha256": "231aa0f068d0109324e46d49c833416df00efd3895aefebd709fb3b4c15ab544",
+    "source_table_sha256": "a380def855261560273f79bd6b705ddbe61b381b2edb82737897374d7b2b03bb",
+    "lineage_rows": 54,
+    "reconciled_taxa_per_guide": 526,
+    "excluded_candidate_taxa": [
+      "F1987369"
+    ],
+    "artifacts": {
+      "results/orthology/duplication-lineage-coverage-figure-20260926-v1/lineage_coverage.tsv": "232435197873ef03c37dbd59d514205d7735b4d74287c96ae91bfc12659c7b51",
+      "docs/figures/duplication_lineage_coverage_20260926.png": "052414a674b48823f0872df82fb6dbded65d2ba7d8ba3b648a64994ddb71e3d4",
+      "docs/figures/duplication_lineage_coverage_20260926.pdf": "5883b005ce932710ebf393bb86f4a6dd278455a45213fba0c4955909be285edb",
+      "docs/figures/duplication_lineage_coverage_20260926.svg": "a6968c73be5ad8a37b63ed67cd804adc989b0204b34390b9daf47f9a6abed776"
+    },
+    "scope": "Descriptive broad-lineage aggregation of independently checked terminal-event coverage. Separate event-weighted and taxon-level availability denominators; no phylogenetic correction, biological absence, missingness adjustment or independent-replicate claim."
+  },
+  "receipt_sha256": "ac6c29eafb42a6937e740752ffaa165c0b5a9b8ea91eb11e448db43292701252",
+  "script_sha256": "6168d566fd0db759f2f6dd4e9e1b98a35526d0599716cda1c1535af90e68bbc6",
+  "verified_lineage_rows": 54,
+  "verification": "Independent CSV counter aggregation checked every lineage count and plotted percentage against 1054 source taxon/guide rows, excluding non-reconciled entries. All output hashes checked."
+}

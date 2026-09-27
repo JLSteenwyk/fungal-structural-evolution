@@ -88,3 +88,35 @@ python scripts/annotate_duplication_coverage_membership.py --coverage results/or
 
 Completed readback and membership receipts are archived in
 `metadata/duplication_sampling_coverage_readback_completed_20260926.json`.
+
+
+## Lineage coverage figure
+
+[Coverage figure](figures/duplication_lineage_coverage_20260926.png)
+([PDF](figures/duplication_lineage_coverage_20260926.pdf),
+[SVG](figures/duplication_lineage_coverage_20260926.svg)) summarizes 27 broad
+manifest lineage groups separately for both guides. The left panel uses events
+as the denominator; the right uses reconciled taxa. The excluded candidate
+*S. jurei* is omitted. All 54 rows and 108 percentages were independently
+reconstructed from the membership table and output hashes checked; the final
+render was visually inspected. Verification is recorded in
+`metadata/duplication_lineage_coverage_figure_completed_20260926.json`.
+
+The different denominators matter: Blastocladiomycota has approximately 57%
+event coverage but only two of nine taxa contribute modeled pairs. Coverage
+within large lineages is also uneven: only 56 of 234 Ascomycota contribute
+pairs. Four ingroup lineages have no two-model events in this frozen candidate
+set. These observations describe structural ascertainment of a restricted
+event class, not biological absence or current total model availability.
+
+Reproduce in fresh output locations:
+
+```bash
+python scripts/plot_duplication_sampling_coverage.py \
+  --membership results/orthology/duplication-coverage-membership-20260926-v1 \
+  --output <fresh-output-directory> \
+  --figure-prefix <fresh-figure-prefix>
+```
+
+The figure script produces a numeric `lineage_coverage.tsv`, provenance receipt,
+and PNG/PDF/SVG figures. No new prediction or phylogenetic correction is performed.
