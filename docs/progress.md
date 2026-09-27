@@ -8479,3 +8479,13 @@ threshold decision; full readback passed. At n50/c70, 11 cases pass all anchor
 alternatives but only three also pass all outside-region alternatives
 (Heliocybe, Jaapia, Phycomyces). All failures and separate eligibility flags are
 retained. See [coverage results](domain-anchored-displacement-20260927.md).
+
+### 2026-09-27: paired domain-anchor contrasts and descriptive figure
+
+Verified all 832 matched A-reference/B-reference differences before aggregating
+39 case/measurement ranges and 234 case/screen/measurement rows. Published a
+visually inspected three-panel figure retaining all 13 cases and coverage flags.
+Jaapia's outside contrast spans zero after independent outside fitting but is
+consistently negative under the domain transform; this motivates an arrangement
+hypothesis, not a mechanism claim. Heliocybe and Phycomyces retain outside direction
+under both fits. See [paired contrasts](domain-anchored-displacement-20260927.md).

@@ -87,3 +87,36 @@ Full tables are in
 `results/structural_comparisons/domain-anchored-coverage-20260927-v1`;
 versioned completion evidence is in
 `metadata/domain_anchored_coverage_completed_20260927.json`.
+
+## Paired duplicate-to-reference contrasts
+
+The [three-panel figure](figures/domain_anchored_contrasts_20260927.pdf) shows all
+13 cases, with n50/c70 coverage qualification indicated by color. Axes have
+separate scales. The intervals cover every mapping/mask/boundary alternative,
+not statistical uncertainty. All 832 A-reference/B-reference pairs were joined
+by their exact configuration **before** subtraction; an independent full CSV
+reconstruction checked each contrast. All 234 case/screen/measurement rows and
+all alternatives remain available.
+
+For the three cases with both anchor and outside coverage passing n50/c70,
+signed A-reference minus B-reference residual ranges (Å) are:
+
+| Case | Domain core | Outside under domain transform | Outside fitted independently |
+| --- | ---: | ---: | ---: |
+| Heliocybe OG0000054 | +0.162 to +0.165 | −0.876 to −0.542 | −0.643 to −0.194 |
+| Jaapia OG0000294 | +0.162 to +0.187 | −1.069 to −0.880 | −0.183 to +0.159 |
+| Phycomyces OG0002812 | −0.130 to −0.129 | +0.577 to +0.603 | +0.109 to +0.122 |
+
+The Jaapia contrast loses a stable direction when the outside coordinates are
+fitted independently. This motivates testing whether relative arrangement
+contributes to the apparent asymmetry; it does not identify a particular
+interdomain rotation or establish its biological reality. The outside sets can
+include flexible linkers and multiple domains, and prediction uncertainty remains
+unquantified. Heliocybe and Phycomyces retain outside direction under either fit,
+so the contrast cannot be attributed solely to fixing the domain transformation.
+
+Run `scripts/summarize_domain_anchored_contrasts.py` to recreate tables and figures.
+Outputs are in
+`results/structural_comparisons/domain-anchored-contrast-summary-20260927-v1`;
+completion and visual inspection evidence is in
+`metadata/domain_anchored_contrast_summary_completed_20260927.json`.

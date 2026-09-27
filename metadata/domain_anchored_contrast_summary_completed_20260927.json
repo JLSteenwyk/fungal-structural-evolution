@@ -1,0 +1,31 @@
+{
+  "status": "complete_domain_anchored_paired_contrast_summary_and_figure",
+  "source_hashes": {
+    "results/structural_comparisons/domain-anchored-displacement-20260927-v1/receipt.json": "241ab5ae8b291a6cd5c2eaf2fd934f9abc24905f516d5cdd2ab856a595670d99",
+    "results/structural_comparisons/domain-anchored-displacement-20260927-v1/pair_displacements.tsv": "f9a413fe97ca43ed9dd532de1b83dcf6fd255f04c295171dd4e9af69704743db",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/domain_reference_links.tsv": "7e4fbfbc8d36983786c73d6d3cbee33893fb8525968da9d8b6359d0a7b8ab7d6",
+    "results/structural_comparisons/domain-anchored-coverage-20260927-v1/receipt.json": "cb3b740c263f66646489e10894ee44841376bff851bc6572f00a5ee46007f911",
+    "results/structural_comparisons/domain-anchored-coverage-20260927-v1/case_screens.tsv": "451065aeafd5c054e86cff41f48d33352957a56e94a5abb9da8b6865ab89862e"
+  },
+  "script_sha256": "d30928cd481229feea6e4c936c4fdaba0f266ba1b089e1829ceeff88e24a0177",
+  "paired_configurations": 832,
+  "case_measurement_ranges": 39,
+  "case_screen_measurement_rows": 234,
+  "artifacts": {
+    "paired_contrasts.tsv": "4210723591683cd8e5723e4e3d6b12ec8dfffc44417214bee055a001be4f851f",
+    "case_contrast_ranges.tsv": "7cbd6c2970d9f6dc91639f14a260bb04c959f6be8d4e8e7a7cb8a50c4f33df2f",
+    "domain_anchored_contrasts.png": "c99fcd93ea034dabf5a52ec3c2a8648b5021d170c2583112d43c629eb968c4dd",
+    "domain_anchored_contrasts.pdf": "1cd97a6edf907be5b79dd6153c0dfc880af458aa34e60ea203407c3afa0e2068",
+    "domain_anchored_contrasts.svg": "feeaf30f92139691f81906521de65924265a95a8915b4a353fcbe3264674d7e6"
+  },
+  "scope": "A-reference minus B-reference residuals paired by the identical anchor/map configuration before range aggregation. All cases and settings retained; n50/c70 used only for figure coverage coloring. Ranges are alternatives, not uncertainty intervals; outside anchored residuals are not independently superposed RMSDs.",
+  "receipt_path": "results/structural_comparisons/domain-anchored-contrast-summary-20260927-v1/receipt.json",
+  "receipt_sha256": "93f7bdec7273794daaa9f67dc417f7d558c083768ed370520c4ad878f4d2033b",
+  "published_figures": {
+    "docs/figures/domain_anchored_contrasts_20260927.png": "c99fcd93ea034dabf5a52ec3c2a8648b5021d170c2583112d43c629eb968c4dd",
+    "docs/figures/domain_anchored_contrasts_20260927.pdf": "1cd97a6edf907be5b79dd6153c0dfc880af458aa34e60ea203407c3afa0e2068",
+    "docs/figures/domain_anchored_contrasts_20260927.svg": "feeaf30f92139691f81906521de65924265a95a8915b4a353fcbe3264674d7e6"
+  },
+  "visual_review": "PNG inspected: all 13 labels and three panels readable; coverage coloring and descriptive-margin shading explicit; alternative ranges not presented as confidence intervals."
+}
