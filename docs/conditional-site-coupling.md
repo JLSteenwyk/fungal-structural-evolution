@@ -458,3 +458,28 @@ zero swap and low priority; stage planning allowances are 16 GiB memory,
 are used. Both analyses are running, not completed. Neither omission nor
 exploratory retention resolves orthology or permits confirmatory single-copy
 claims. Previous failure, source labels and original fits remain intact.
+
+
+### September 26: QR recovery of full retained-marker coupling
+
+A diagnostic QR run completed all 24 specifications on the full 122-marker,
+44,198-site cohort. Its largest coefficient discrepancy from independent
+NumPy least squares was 1.51e-14; the largest discrepancy from manually
+assembled CR1 covariance was 7.30e-15. All original coefficient and covariance
+tolerances passed unchanged. This supports the alternative numerical solver
+for these data; it does not establish the cause of the original cached
+pseudoinverse inconsistency or validate biological assumptions.
+
+The versioned `scripts/fit_reviewed_qr_conditional_site_coupling.py` differs
+from the preserved reviewed fitter only in the explicit QR solver, its
+docstring and solver provenance in the receipt. The companion controller
+changes only the invoked fitter. The same covariates, marker policy, cluster
+correction, multiple-testing procedure and resampling workflow are retained.
+
+A fresh CPU-only service,
+`fungal-completed-coupling-reviewed-qr-20260926.service`, now runs the pinned
+plan `metadata/completed_site_coupling_reviewed_qr_plan_20260926.json`. It has
+one CPU, 32 GiB memory and no swap; original failed outputs are preserved.
+The launch record includes process identity and candidate receipt/checks in
+`metadata/completed_site_coupling_reviewed_qr_launch_20260926.json`. Production
+fits, marker resampling and the retained/omission comparison remain pending.
