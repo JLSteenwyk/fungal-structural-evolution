@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-selected-control-domain-readback-20260927.service",
+  "pid": 3061006,
+  "created": 1790517196.29,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_selected_control_domains.py",
+    "--plan",
+    "metadata/selected_control_domain_inventory_plan_20260927.json",
+    "--launch",
+    "metadata/selected_control_domain_inventory_launch_20260927.json",
+    "--output",
+    "metadata/selected_control_domain_inventory_readback_20260927.json"
+  ],
+  "script_sha256": "a92683f7d353359f2db938bced943268b2e4d92c1954eb339d6f32465e4a00e8"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "passed_full_domain_coverage_geometry_readback",
+  "source_receipt_sha256": "301a5177bf12536f0106f3685b8e5f1239fc74021c5f2c4b4d5a23e3d58e1e14",
+  "script_sha256": "69c3f89eba64348edf362cddb2d2f744fd01279535869dc7d29983d2e7fbf64e",
+  "cohorts": {
+    "target": {
+      "rows": 140790,
+      "geometry_rows": 280824,
+      "pass_counts": {
+        "full:n30_c50": 70224,
+        "plddt70:n30_c50": 68270,
+        "full:n30_c70": 69374,
+        "plddt70:n30_c70": 64036,
+        "full:n30_c90": 61286,
+        "plddt70:n30_c90": 43390,
+        "full:n50_c50": 65278,
+        "plddt70:n50_c50": 62747,
+        "full:n50_c70": 64522,
+        "plddt70:n50_c70": 59059,
+        "full:n50_c90": 56993,
+        "plddt70:n50_c90": 40144
+      },
+      "both_masks_pass_counts": {
+        "n30_c50": 68270,
+        "n30_c70": 64036,
+        "n30_c90": 43388,
+        "n50_c50": 62747,
+        "n50_c70": 59059,
+        "n50_c90": 40142
+      }
+    },
+    "background": {
+      "rows": 133858,
+      "geometry_rows": 267246,
+      "pass_counts": {
+        "full:n30_c50": 66746,
+        "plddt70:n30_c50": 64983,
+        "full:n30_c70": 66078,
+        "plddt70:n30_c70": 61353,
+        "full:n30_c90": 60675,
+        "plddt70:n30_c90": 43749,
+        "full:n50_c50": 61815,
+        "plddt70:n50_c50": 59586,
+        "full:n50_c70": 61265,
+        "plddt70:n50_c70": 56506,
+        "full:n50_c90": 56262,
+        "plddt70:n50_c90": 40375
+      },
+      "both_masks_pass_counts": {
+        "n30_c50": 64983,
+        "n30_c70": 61353,
+        "n30_c90": 43749,
+        "n50_c50": 59585,
+        "n50_c70": 56505,
+        "n50_c90": 40374
+      }
+    }
+  },
+  "scope": "Every joined field, missing disposition, numerical-status binding, six screen flags, exclusion list and aggregate independently rebuilt by dataframe joins. No new coordinate fits or biological inference."
+}

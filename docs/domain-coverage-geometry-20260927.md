@@ -20,7 +20,11 @@ The producer waits for the exact background geometry verifier. Independent
 verification is queued separately and waits for successful producer termination.
 It reconstructs every exported field using dataframe joins, compares complete
 key sets, and checks all flags, exclusion strings and mask-specific/common
-cohort counts. Production and full verification remain pending.
+cohort counts. Production and full verification are complete: all 274,648 pair/mask rows
+and 548,070 geometry records passed. Final proof:
+`metadata/domain_coverage_geometry_readback_20260927.json`.
+Geometry qualification removes no additional coverage-passing rows under
+these six screens; the short degenerate fits already failed minimum length.
 
 Each stage uses one CPU, 16 GiB RAM, no swap, and at most 2 GiB output; the
 planning estimate is 1–15 minutes per stage after dependencies finish.

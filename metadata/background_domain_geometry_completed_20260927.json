@@ -1,0 +1,33 @@
+{
+  "status": "verified_completed_full_background_domain_geometry",
+  "alignments": 267246,
+  "degenerate_alignments": 13,
+  "counts": {
+    "full:unique_at_numeric_tolerance": 133858,
+    "plddt70:unique_at_numeric_tolerance": 133375,
+    "plddt70:degenerate_at_numeric_tolerance": 13
+  },
+  "maximum_scaled_quaternion_curvature_error": 2.524692350956565e-15,
+  "readback_sha256": "d9a4c8660b5dafe7ef438ef2601be88c17aba0e66d9ed0e52d794d176be3417c",
+  "geometry_receipt_sha256": "d54d3ed989ad3c78a2d1b8f3f6214e0964187e067217a61f5b0fce7b1322b0a7",
+  "script_sha256": "6f285153236d087885d82da9b07804b709407081f421a53b1ff4229f1e18b9f3",
+  "terminal_states": {
+    "fungal-background-domain-geometry-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-background-domain-geometry-readback-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-background-domain-usable-orders-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-domain-coverage-geometry-readback-20260927.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Complete key counts, spectra-category totals, source pins and exact agreement with all independently solved short fits checked. Full coordinate reconstruction performed by completed geometry verifier. No biological qualification."
+}

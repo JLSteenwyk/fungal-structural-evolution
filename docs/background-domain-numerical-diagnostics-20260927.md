@@ -64,3 +64,22 @@ from the previously verified reference implementation. This preserves
 comparability without declaring coverage or prediction-confidence eligibility.
 The summary and verification use one CPU, 16 GiB, no swap, up to 2 GiB output,
 and an estimated 0.1–2 hours after dependencies finish. No GPU predictions.
+
+
+## Completed geometry and numerical order verification
+
+The independent geometry verifier passed all 267,246 directed alignments.
+Exactly 13 fits are degenerate, identical to the complete analytic two-residue
+set; maximum scaled quaternion-curvature disagreement is 2.525e-15. Both
+producer and verifier terminated successfully. Completion is archived in
+`metadata/background_domain_geometry_completed_20260927.json`.
+
+The order summary also passed full independent verification: all 133,858
+pair/mask rows and 3,206,784 numeric values were checked. There are 267,233
+numerically usable directions and 13 excluded directions; 66,929 full-mask
+pairs and 66,686 pLDDT70 pairs have both orders usable. Three pLDDT70 pairs
+have only one usable direction, and 240 have neither. Proof:
+`metadata/background_domain_usable_orders_readback_20260927.json`.
+Coverage and geometry qualification for both target and background cohorts
+has also completed; see `docs/domain-coverage-geometry-20260927.md`.
+These numerical checks do not establish prediction accuracy or a duplication effect.

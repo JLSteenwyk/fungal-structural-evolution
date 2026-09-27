@@ -1,0 +1,45 @@
+{
+  "selection": "results/orthology/background-control-selection-20260927-v1",
+  "selection_audit": "metadata/background_control_selection_completed_readback_20260927.json",
+  "graph": "results/orthology/background-match-graph-20260927-v1",
+  "graph_audit": "metadata/background_match_graph_completed_readback_20260927.json",
+  "domains": {
+    "target": {
+      "root": "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1",
+      "audit": "results/structural_comparisons/duplication-domain-pair-readback-20260926-v1.json"
+    },
+    "background": {
+      "root": "results/structural_comparisons/background-domain-pairs-20260927-v1",
+      "audit": "metadata/background_domain_pair_completed_readback_20260927.json"
+    }
+  },
+  "output": "results/structural_comparisons/selected-control-domain-inventory-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "All 2786912 selected controls and all shared Pfam candidates; no structural outcome selection, no GPU or charges.",
+  "pins": {
+    "scripts/inventory_selected_control_domains.py": "6e6aa78443b419971dd58442555506107f28b68ac8525a70572576f21fb96e79",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/background_control_selection_completed_readback_20260927.json": "0004a74ec8de9bb219979f592a0254ac25600f69b89b34f9f41a2c8d12a2714e",
+    "metadata/background_match_graph_completed_readback_20260927.json": "711e3445c954795a2ceb58fd8c82ef16e26bb4e862e1d75129a9dd5d430e64d1",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4",
+    "results/orthology/background-match-graph-20260927-v1/target_nodes.jsonl": "1ba246317496599a583cdedc12ac70cae6820e61574107614fb83cd00dca4bd5",
+    "results/orthology/background-match-graph-20260927-v1/background_nodes.jsonl": "2ce1a9f01a550f8c1a155219086249f9730dd69a8377e469a9ab6b019e44c90d",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/receipt.json": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+    "results/structural_comparisons/duplication-domain-pair-inventory-20260926-v1/domain_pair_links.tsv": "7936be904534fcec82233fdf67d06043929ac07dcf5f6f15476072f6a5210dbb",
+    "results/structural_comparisons/duplication-domain-pair-readback-20260926-v1.json": "ec14f28e139959e9577824a1898084786c04f5006eed996369ce0c6e8b805053",
+    "results/structural_comparisons/background-domain-pairs-20260927-v1/receipt.json": "c33885061eca439bbeb7c76549853de4982a8388fd0c66d35e1b509c5192388d",
+    "results/structural_comparisons/background-domain-pairs-20260927-v1/domain_pair_links.tsv": "3689aeb224a4cc4b8955a3928fe00699d32d5fdd638b1cbfb21d02c317b6c747",
+    "metadata/background_domain_pair_completed_readback_20260927.json": "8e073f41d7773f356fa45ccaf439d20b1d2ededbc8f163611e1dc971cae74d70"
+  }
+}
