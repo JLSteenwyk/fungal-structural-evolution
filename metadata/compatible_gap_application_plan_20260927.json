@@ -1,0 +1,30 @@
+{
+  "posterior_output": "results/ancestral/stable-indel-ancestors-20260927-v1",
+  "posterior_audit": "results/ancestral/stable-indel-posterior-audit-20260927-v1/receipt.json",
+  "coordinates": "results/ancestral/indel-coding-20260927-v1/character_coordinates.tsv",
+  "mapping": "results/ancestral/indel-candidate-node-mapping-20260927-v1/candidate_nodes.tsv",
+  "fit_plan": "metadata/stable_indel_refinement_plan_20260927.json",
+  "output": "results/ancestral/compatible-gap-application-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "output_gib": 2,
+    "planning_hours": [
+      0.01,
+      0.5
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All936 candidate dispositions: 918 nonempty node/models plus18 empty cases. Product-Bernoulli weights conditioned on exact-run compatibility, explicitly changing marginals; no fitted joint evolutionary process or qualified ancestral sequence claim. Float excursions <=1e-12 outside[0,1] snapped to boundary and counted; deterministic incompatible support retained unresolved, no epsilon regularization. Marginal shifts, retained mass and MAP configurations reported, no ancestor FASTA or GPU prediction.",
+  "pins": {
+    "results/ancestral/stable-indel-posterior-audit-20260927-v1/receipt.json": "e8bbe2dd9b2d8577c3462f05e299b15617105733f7aebda1142e25adbd37dedf",
+    "results/ancestral/indel-coding-20260927-v1/character_coordinates.tsv": "0b2f4673879fd132f447d8235ab1c6c21653302564adb682766fb84b9aadfc6c",
+    "results/ancestral/indel-candidate-node-mapping-20260927-v1/candidate_nodes.tsv": "8d55744d3285698cb8bb5bf7cb42c6e4364c0732649bc63f850b5ba05f0871cf",
+    "metadata/stable_indel_refinement_plan_20260927.json": "b7360228725b1e73178569a7e8c3b2d64417514579f81c168649c9e42b2d660c",
+    "results/ancestral/stable-indel-ancestors-20260927-v1/receipt.json": "14b64a0771db0023b3291af280a3c346d2ccb89ec2b7fcdfd0c94570800e5658",
+    "scripts/apply_compatible_gap_distribution.py": "4bfe775687bd7c8b58626976360320a172e427a0d680d83db8e1449f2cf56a01",
+    "scripts/compatible_gap_distribution.py": "7ef541cd782a837654fe4082ad0516c9887fad1433bcb357b43de0309c5365c4",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/compatible_gap_distribution_validation_20260927.json": "c2c76031eb740007128ac6b525065800c4d7968d0fd2deaa91fae3c0961b04c8"
+  }
+}

@@ -9363,3 +9363,20 @@ deterministic/infeasible inputs. Exhaustive84-case checks pass. This is not a
 fitted joint indel evolutionary model; no production marginals were replaced.
 Full application,distortion assessment and joint-model qualification remain
 pending. Assumptions: `docs/compatible-gap-working-distribution.md`.
+
+### 2026-09-27: complete compatibility conditioning shows large distortion
+
+Applied the declared compatible-gap surrogate to all936 candidate dispositions:
+918 nonempty distributions and18 empty cases. Every nonempty case is feasible.
+All resulting exclusion-probability sums and MAP configurations checked.
+Across77,742 marginals,4,714 MAP states switch; maximum shift0.999921 and
+minimum log retained mass-250.6935.65 audited roundoff excursions just above1
+were explicitly snapped to1 and counted; no interior epsilon regularization.
+
+These results rule out describing conditioning as a small probability repair.
+The surrogate remains a sensitivity calculation,not a qualified joint indel
+evolutionary reconstruction. Original probabilities are retained; no ancestral
+FASTA or GPU prediction launched. Full output artifact hashes checked and
+closure recorded in `metadata/compatible_gap_application_completed_20260927.json`.
+A justified joint indel treatment,validation and final sequence ensembles
+remain required.

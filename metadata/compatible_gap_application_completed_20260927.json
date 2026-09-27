@@ -1,0 +1,17 @@
+{
+  "status": "complete_936_candidate_dispositions_under_compatible_surrogate",
+  "candidate_nodes": 936,
+  "status_counts": {
+    "compatible_surrogate_computed": 918,
+    "empty_no_gap_model": 18
+  },
+  "character_marginals": 77742,
+  "roundoff_bounds_adjusted": 65,
+  "minimum_log_retained_mass": -250.69349539945324,
+  "maximum_marginal_change": 0.9999213284654265,
+  "map_state_switches": 4714,
+  "plan_sha256": "53c64ea118a4ecacb5f464e5586335c57bb93bfff59e64a4bd5a8d1dd081ca3c",
+  "scope": "All936 candidate dispositions: 918 nonempty node/models plus18 empty cases. Product-Bernoulli weights conditioned on exact-run compatibility, explicitly changing marginals; no fitted joint evolutionary process or qualified ancestral sequence claim. Float excursions <=1e-12 outside[0,1] snapped to boundary and counted; deterministic incompatible support retained unresolved, no epsilon regularization. Marginal shifts, retained mass and MAP configurations reported, no ancestor FASTA or GPU prediction.",
+  "receipt_path": "results/ancestral/compatible-gap-application-20260927-v1/receipt.json",
+  "receipt_sha256": "326f816d2b55c13345e221d31dc7d5c2c7688a7d02be18961ed0eaba4dea7f76"
+}
