@@ -1,0 +1,47 @@
+{
+  "status": "complete_verified_ecology_source_coverage_comparison",
+  "source_bindings": {
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/taxa.tsv": "94cc80387bceae71a53a50d33c96505f5e148f0e53e2ddb5ea4b6b75bf6224c8",
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/pairs.tsv": "0049071ec61872ddcc1c8d931486ac21b5fe38acd27f93513b2159458d3b6086",
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/pair_marker_columns.tsv": "a5f72d7cc81181b08285ed169344ec33830e5747631249653c6a2ab66973b48c",
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/groups.tsv": "9b678a6fd83493c541b9ae622f6c6babc965a730aedb684a1ee45c3550b6b67e",
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/receipt.json": "e5cefac85ce276420d1c3d96cf4a37805bf89cd8b5bc0f9a1210fd881c9c94f0",
+    "metadata/qualified_afdb_reviewed45_ecology_readback_20260927.json": "9d59d618f4e411c82dff269d09aee832754e9117b51abf75679b65d8f2eb0d47",
+    "results/ecology/qualified-afdb-recovered-overlap-20260927-v1/receipt.json": "238eca44a61fdf456aef7428c1d81dc1e651945f34e8dc8dbecee5ae332e417f",
+    "results/ecology/qualified-afdb-recovered-overlap-20260927-v1/taxa.tsv": "aca6b0b9d7f2ecce548dc78d102f3261fd43f30e58267203d260c996b4eda526",
+    "results/ecology/qualified-afdb-recovered-overlap-20260927-v1/pairs.tsv": "fec5cf6e6683bc1979efdd5c199d326c04b18d90a4c97a43caa870ef1f8953e0",
+    "results/ecology/qualified-afdb-recovered-overlap-20260927-v1/groups.tsv": "e62643b1920846f412e11f0641dc8359fca907738938b0cd6b93d8a6cfbc5bae",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/taxa.tsv": "9ea06416eb47e3d08c8cd6490e49d623e3c7099150d2ac29f58de73617a2140f",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/pairs.tsv": "5757febc0cc168b6c419f07b7683af2dce8472ef6366673eb66180fc6d5382b7",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/pair_marker_columns.tsv": "3f5950f96cc6373aaa1a638bdb6b28568f0d90287e42fb460de903d7d60bdbe1",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/groups.tsv": "fe2e46197cf933a20471f80f805dbb4f5f3fbed4760c294b3bdd83a75573c2e3",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/receipt.json": "430f2d44f658aa6964e78f172540e216160b358cf82b748f110b1e53a0cab167",
+    "metadata/qualified_esmfold_reviewed45_ecology_readback_20260927.json": "5f2a802cc64813da9fed9f75ba0697c409a057dc7b66e74a6d5b802003290681",
+    "results/ecology/qualified-esmfold-overlap-20260922-v1/receipt.json": "4340ad6aef928673a8f5597647f1746a3212cc1940f73f1afd82bbaed6824d97",
+    "results/ecology/qualified-esmfold-overlap-20260922-v1/taxa.tsv": "fb072d055215fc11c230b55a8867d42fed1d0047c023fbb52de45e4da395c419",
+    "results/ecology/qualified-esmfold-overlap-20260922-v1/pairs.tsv": "306e37318360c8e28f82b4eb81bc0a7bf3c442319c5d4a606ab62728d25a1a71",
+    "results/ecology/qualified-esmfold-overlap-20260922-v1/groups.tsv": "f46ec472d8d33d5154c4e82bada2784c301ef487fb065f8f7c60b3322b278951"
+  },
+  "script_sha256": "02c3cc8d9c549d699bdf4eca3853e5dcbcb3d313df9a1fc866277ed9f5a6d377",
+  "preserved_original_rows": {
+    "afdb_taxa": 32,
+    "afdb_pairs": 496,
+    "afdb_groups": 9,
+    "esmfold_taxa": 32,
+    "esmfold_pairs": 496,
+    "esmfold_groups": 9
+  },
+  "taxon_coverage": {
+    "esmfold_only": 11,
+    "both_sources": 21,
+    "afdb_only": 13
+  },
+  "pair_coverage_at_least_one_50_column_marker": {
+    "esmfold_only": 301,
+    "neither_source": 144,
+    "both_sources": 195,
+    "afdb_only": 350
+  },
+  "table_sha256": "81c5add656020407b0f2613d3ae4b83102fd6896e1bc38b8d807a23edc88da4d",
+  "scope": "All original 32-taxon, 496-pair and nine-group outputs preserved exactly within each source. Coverage categories only: both_sources does not mean the same marker or homologous retained columns across sources. No merged prediction-source structural analysis, independent transitions or ecological effects."
+}

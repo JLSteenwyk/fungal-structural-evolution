@@ -165,3 +165,9 @@ All 15 previously uncurated import records have explicit dispositions; yeast
 growth form stays separate and Punctularia ecological coding remains withheld.
 No new ECM-negative states or independent transitions are inferred. Existing
 coverage and parsimony outputs still use their frozen 32-species evidence.
+
+The [45-species coverage update](reviewed45-ecology-coverage-20260927.md) now
+checks all 990 pairs separately in AlphaFold and ESMFold. Both full readbacks
+passed; all older 32-species outputs are exactly preserved. All 45 taxa have
+some eligible coverage, but 144 pairs lack a qualified shared marker within
+either source. Ecological transitions and association tests remain pending.

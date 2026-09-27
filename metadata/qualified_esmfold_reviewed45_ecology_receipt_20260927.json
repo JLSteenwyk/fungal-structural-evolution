@@ -1,0 +1,17 @@
+{
+  "status": "complete_qualified_esmfold_ecology_overlap",
+  "taxa": 45,
+  "taxa_with_eligible_markers": 32,
+  "markers": 122,
+  "pairs": 990,
+  "provisional_groups": 22,
+  "pairs_with_at_least_one_50_column_marker": 496,
+  "plan_sha256": "5ad515d5eec01a1e44de88215d528e83e242da7e7e96c1f7c8681fd801e316d4",
+  "artifacts": {
+    "taxa.tsv": "9ea06416eb47e3d08c8cd6490e49d623e3c7099150d2ac29f58de73617a2140f",
+    "pairs.tsv": "5757febc0cc168b6c419f07b7683af2dce8472ef6366673eb66180fc6d5382b7",
+    "pair_marker_columns.tsv": "3f5950f96cc6373aaa1a638bdb6b28568f0d90287e42fb460de903d7d60bdbe1",
+    "groups.tsv": "fe2e46197cf933a20471f80f805dbb4f5f3fbed4760c294b3bdd83a75573c2e3"
+  },
+  "scope": "Shared identical alignment columns under existing AA/3Di confidence and eligibility masks. ESMFold only, minimum 50 common columns is descriptive, not a power criterion. Taxon pairs and provisional groups are not independent transitions; no ecological effect or orthology claim."
+}

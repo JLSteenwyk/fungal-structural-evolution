@@ -6757,3 +6757,17 @@ The previous turn completed AlphaFold ecological coverage for the frozen
 32-species cohort; this turn expands the evidence available for the ecological
 aim. Updated coverage and transition diagnostics remain downstream. All eight
 aims remain open; GPU prediction stays paused.
+
+## September 27 full reviewed-species ecological coverage verified
+
+Updated AlphaFold and ESMFold overlap across all 45 curated species and 990
+pairs per source. Both independent full readbacks passed; all prior 32-taxon,
+496-pair and nine-group outputs are preserved exactly. All 45 taxa have some
+eligible marker coverage, but 144 pairs lack a shared ≥50-column marker within
+either source. Source-specific tables and the comparison are reproducible. See
+[results](reviewed45-ecology-coverage-20260927.md).
+
+The previous goal turn expanded the evidence table; this turn completes its
+structural coverage checks. Source mixing, ecological-state uncertainty and
+independent transition replication remain unresolved. All eight aims remain
+open and GPU prediction stays paused.
