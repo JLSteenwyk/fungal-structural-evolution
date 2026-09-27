@@ -5283,3 +5283,13 @@ contains 70,395 distinct interval pairs while retaining 301,380 policy/boundary
 links. Domain inventory full readback and coordinate extraction remain pending.
 See [reference completion](duplication-sister-references-20260926.md) and
 [domain workload](duplication-domain-controls-20260926.md).
+
+
+### September 26: full domain-boundary interval workload verified
+
+Independent reconstruction passed all 301,380 source-policy/boundary links,
+114,590 exact interval descriptors and 70,395 distinct interval pairs. Every
+interval endpoint, model/source identity and deduplicated pair/set count
+matched; source and output pins were checked again. This verifies the full
+workload for coordinate preparation, not domain structures or evolutionary
+interpretation. See [domain controls](duplication-domain-controls-20260926.md).

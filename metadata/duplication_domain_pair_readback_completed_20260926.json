@@ -1,0 +1,31 @@
+{
+  "status": "passed_complete_domain_interval_pair_inventory_archived",
+  "receipt_path": "results/structural_comparisons/duplication-domain-pair-readback-20260926-v1.json",
+  "receipt_sha256": "ec14f28e139959e9577824a1898084786c04f5006eed996369ce0c6e8b805053",
+  "receipt": {
+    "status": "passed_full_duplication_domain_pair_inventory_readback",
+    "plan_sha256": "ca8557db181947e9b004d30d5391e6aae5e06ee156f6bde964102a04376f020c",
+    "producer_receipt_sha256": "1d170be25428f6b34577626db3005c6af3dffdf75dad8e3d4f49dd63081c1a3e",
+    "source_domain_match_rows": 150690,
+    "policy_boundary_links": 301380,
+    "link_counts": {
+      "alignment_evalue:alignment": 37755,
+      "alignment_evalue:envelope": 37755,
+      "alignment_bitscore:alignment": 37750,
+      "alignment_bitscore:envelope": 37750,
+      "envelope_evalue:alignment": 37595,
+      "envelope_evalue:envelope": 37595,
+      "envelope_bitscore:alignment": 37590,
+      "envelope_bitscore:envelope": 37590
+    },
+    "unique_intervals": 114590,
+    "unique_interval_pairs": 70395,
+    "unique_models": 50204,
+    "interval_residues": 19891530,
+    "maximum_interval_length": 1066,
+    "planned_directed_mask_dispositions": 281580,
+    "scope": "All source Domain-match fields and both boundary expansions reconstructed; every interval bounds/identity/provenance field and exact deduplicated interval/pair sets checked. No domain coordinate extraction, structural alignment, PAE qualification or biological inference."
+  },
+  "execution": "Systemd journal records producer PID 165964 and completion after 19.639 CPU seconds. Completed before live process creation-time capture.",
+  "verification": "Exact plan binding and all pinned input/output hashes checked again after full reconstruction."
+}
