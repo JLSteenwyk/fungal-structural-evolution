@@ -1,0 +1,54 @@
+{
+  "status": "completed_full_background_coordinate_readback_verified",
+  "checked_at": "2026-09-27T11:32:27.568002+00:00",
+  "readback_receipt_path": "results/structural_comparisons/background-coordinate-readback-20260927-v1/receipt.json",
+  "readback_receipt_sha256": "9589e8aaedd41a5ef39629301b719041617b561f0cc30c0301dd25055c8b9a7e",
+  "producer_receipt_sha256": "f335eebcfbac1ea1e3e628280c41b8ce76a043733cfc1e03dcd711f2c24a620d",
+  "models": 148104,
+  "validated_residues": 66498349,
+  "counts": {
+    "validated": 148104
+  },
+  "verified_shards_and_proofs": 149,
+  "terminal_service_state": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "verified_live_downstream": [
+    {
+      "service": "fungal-background-alignment-inputs-20260927.service",
+      "pid": 2023804,
+      "created": 1790500548.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/materialize_background_inputs.py",
+        "--plan",
+        "metadata/background_alignment_input_plan_20260927.json"
+      ]
+    },
+    {
+      "service": "fungal-background-alignments-20260927.service",
+      "pid": 2038561,
+      "created": 1790501114.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_background_alignments.py",
+        "--plan",
+        "metadata/background_alignment_plan_20260927.json"
+      ]
+    },
+    {
+      "service": "fungal-background-domain-inputs-20260927.service",
+      "pid": 2052536,
+      "created": 1790501654.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/materialize_background_domain_inputs.py",
+        "--plan",
+        "metadata/background_domain_input_plan_20260927.json"
+      ]
+    }
+  ],
+  "scope": "All 149 independent proof hashes, raw coordinate shard hashes, source bindings, pinned inputs and aggregate model/residue counts verified after successful audit termination. Full independent raw-CIF coordinate readback passed. Downstream materialization/comparisons remain separate; no biological structural-effect claim."
+}

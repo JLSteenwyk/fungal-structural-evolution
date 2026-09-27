@@ -968,3 +968,30 @@ process (PID 952285, creation time 1790499798.48). Its final proof remains
 pending. Whole-chain input preparation and domain extraction retain their
 existing dependency gates; coordinate production alone does not qualify these
 structures for evolutionary inference. GPU prediction remains paused.
+## Full additional-background coordinate readback passed
+
+The independent coordinate audit completed successfully for all **148,104
+additional models and 66,498,349 residues**. Every accepted exported C-alpha
+sequence, coordinate and confidence value was reconstructed from the frozen
+raw CIF atom rows. The verifier shares the CIF lexical parser with production
+but uses a separate extraction/checking implementation. There were no rejected
+models in this cohort.
+
+After the audit unit terminated with exit status zero, all 149 individual proof
+hashes and compressed coordinate-shard hashes were rechecked, along with pinned
+inputs, source bindings and summed model/residue/disposition counts. Completion
+is archived in `metadata/background_coordinate_readback_completed_20260927.json`;
+the full proof is
+`results/structural_comparisons/background-coordinate-readback-20260927-v1/receipt.json`
+(SHA256 `9589e8aaedd41a5ef39629301b719041617b561f0cc30c0301dd25055c8b9a7e`).
+
+The existing whole-chain materializer and domain extractor automatically
+advanced past their dependency gates. Their exact live process identities were
+verified; logs showed 20/149 whole-chain shards prepared and 16,561/131,986
+domain intervals processed at the checkpoint. The queued whole-chain alignment
+controller also remained live, waiting for its complete input stage. No
+duplicate jobs or new structure predictions were launched.
+
+This completes coordinate validation, not structural-distance estimation or
+the duplication-effect analysis. Whole-chain and domain comparisons and their
+numerical checks remain downstream. GPU prediction remains paused.

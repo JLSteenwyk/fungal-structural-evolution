@@ -7000,3 +7000,18 @@ confirmed live with exact identities, and their final receipts were still
 absent. No completed stage is claimed from these checks. Corrected normalization
 and alignment-dependent parameter comparisons remain downstream; all eight
 scientific aims remain open. GPU prediction remains paused.
+## September 27 additional-background coordinates independently verified
+
+The previous goal turn queued full codon saved-likelihood replay. This turn
+verified a newly completed structural stage: all 148,104 additional-background
+models and 66,498,349 residues passed full raw-CIF coordinate readback. All 149
+proof/shard hashes, source bindings, pinned inputs and aggregate counts were
+rechecked after successful process termination. The archived completion is
+`metadata/background_coordinate_readback_completed_20260927.json`.
+
+The existing whole-chain and domain input jobs advanced automatically and were
+confirmed live with exact identities. Logs showed 20/149 whole-chain shards and
+16,561/131,986 domain intervals prepared. Their dependent structural comparisons
+remain pending. This is completed validation, not a biological effect estimate.
+Codon normalization requirements were reviewed; its new run is not yet queued.
+All eight scientific aims remain open and GPU prediction remains paused.
