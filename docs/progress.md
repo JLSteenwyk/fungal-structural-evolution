@@ -5611,3 +5611,20 @@ Both primary and supplementary-reference alignment controllers are active
 with native workers. Their completion and numerical readbacks, followed by
 controlled biological comparisons, remain pending. See the
 [whole-protein input checkpoint](../metadata/duplication_alignment_inputs_completed_20260927.json).
+
+
+## September 27 domain-comparison execution complete
+
+All 70,395 domain interval pairs have finished both input orders under the
+full-residue and pLDDT70 masks: 281,580 recorded dispositions. There are
+140,790 successful full-residue alignments, 140,034 successful pLDDT70
+alignments, and 756 explicit pLDDT70 skips for too few retained residues.
+No native-error, parse-error, or timeout dispositions were recorded.
+
+The [execution checkpoint](../metadata/duplication_domain_alignment_execution_completed_20260927.json)
+records independent verification of every checkpoint hash, the exact
+inventory pair × mask × order grid, status totals, input bindings, and
+pinned source files. The separate full numerical readback started
+automatically and remains pending. This execution milestone does not yet
+validate the alignment metrics or establish structural divergence,
+duplication effects, or domain-boundary robustness.

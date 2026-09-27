@@ -1,0 +1,49 @@
+{
+  "status": "domain_alignment_execution_complete_numeric_readback_pending",
+  "recorded_utc": "2026-09-27T06:19:23.432535+00:00",
+  "producer_receipt_path": "results/structural_comparisons/duplication-domain-alignments-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "81e5b33a0340a309e82ee20a5aa97d165f94e2b1427a68a4b637c9e9529e01a9",
+  "producer_receipt": {
+    "status": "complete_domain_alignment_dispositions_pending_readback",
+    "plan_sha256": "2d6c95e525d5b7d0331bb5b5fdb7aa066dfed7a1a2e201d0a1c817ae611ccc29",
+    "input_bindings": {
+      "results/structural_comparisons/duplication-domain-inputs-20260926-v1/receipt.json": "7047076f7c1ce2b89e6b21463999cf9ccc2ffc9808a8e5851724d86edac0bea6",
+      "results/structural_comparisons/duplication-domain-inputs-20260926-v1/inputs.jsonl": "aa0dbbc1467697366f768c43dbbd1e7bb7fb369294fc8e9030c8b59f65a00355",
+      "results/structural_comparisons/duplication-domain-input-readback-20260926-v1.json": "ad905e38a1920f398810d7f2db9d42cb36a09ccc434afae448b6d7dc7a59ea69"
+    },
+    "input_bundle_sha256": "2842c3c16b0fb919a6a06195d218efcc8ed19f605a9e57d305a142af81cd0ffb",
+    "distinct_interval_pairs": 70395,
+    "directed_dispositions": 281580,
+    "counts": {
+      "full:aligned": 140790,
+      "plddt70:aligned": 140034,
+      "plddt70:input_unavailable": 756
+    },
+    "artifacts": {
+      "checkpoint_manifest.tsv": "fad8957aeee3bd464bef539e1fe61eafbabd212f3960ccce4c8ea6675d01f87e"
+    },
+    "scope": "All verified domain interval pairs in both input orders and full/pLDDT70 masks. Alignment/envelope and policy links remain in the interval inventory. Native output, timings, provenance and all excluded/error/timeout dispositions retained. Independent numeric readback, boundary sensitivity and biological interpretation pending."
+  },
+  "independent_checkpoint_verification": {
+    "plan_pins_verified": 44,
+    "input_bindings_verified": 3,
+    "checkpoint_hashes_verified": 281580,
+    "exact_pair_mask_order_grid_verified": true,
+    "counts": {
+      "full:aligned": 140790,
+      "plddt70:aligned": 140034,
+      "plddt70:input_unavailable": 756
+    },
+    "scope": "All checkpoint hashes, statuses, plan and input-bundle bindings, exact inventory pair x mask x order grid, and short-mask skip reasons checked. Native alignment numerics remain under the separate full readback; no biological inference."
+  },
+  "numeric_readback_process": {
+    "pid": 176023,
+    "created": 1790474123.1,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_duplication_domain_alignments.py",
+      "--plan",
+      "metadata/duplication_domain_alignment_readback_plan_20260926.json"
+    ]
+  }
+}
