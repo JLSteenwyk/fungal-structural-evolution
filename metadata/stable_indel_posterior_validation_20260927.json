@@ -1,0 +1,39 @@
+{
+  "status": "all_synthetic_node_probabilities_pass_70_digit_enumeration",
+  "checks": [
+    {
+      "gain": 0.4,
+      "loss": 0.9,
+      "alpha": 0.5,
+      "sites": 4,
+      "nodes": 5,
+      "maximum_log_likelihood_error": 4.440892098500626e-16,
+      "maximum_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "gain": 1e-05,
+      "loss": 160000.0,
+      "alpha": 100.0,
+      "sites": 4,
+      "nodes": 5,
+      "maximum_log_likelihood_error": 3.552713678800501e-15,
+      "maximum_probability_error": 2.220446049250313e-16
+    },
+    {
+      "gain": 0.2,
+      "loss": 3.0,
+      "alpha": 0.005,
+      "sites": 4,
+      "nodes": 5,
+      "maximum_log_likelihood_error": 8.881784197001252e-16,
+      "maximum_probability_error": 5.551115123125783e-17
+    }
+  ],
+  "probabilities_checked": 60,
+  "decimal_precision": 70,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/validate_stable_indel_posteriors.py": "1bd2e5bd7646a42fab2ec33636a2f7767f8ceaa2cdcfffe6273107e6c78cce59",
+    "scripts/stable_indel_posteriors.py": "6c5f11e5baee24be27cc5f6a83d9b6992d8b4f0ce1cf4c682cdde1c718e7d82f"
+  },
+  "scope": "Analytic transition inside/outside marginals versus exhaustive high-precision state enumeration with unknown tips, rare events and gamma extremes. Not production posterior validation, ancestral sequence assembly or model adequacy."
+}

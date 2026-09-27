@@ -9209,3 +9209,21 @@ with maximum error7.11e-15. One CPU,8GiB RAM,noGPU; planning1–72h plus
 producer wait. Numerical verification is distinct from convergence and
 biological adequacy. Full audit, optimization qualification and posterior
 propagation remain pending.
+
+### 2026-09-27: stable ancestral gap-probability engine checked
+
+Refinement producer and auditor remain active. At the first111 input
+receipts,zero selected optimizer failures,15 retained initial solutions,six
+models with start spread>0.001,and no selected-solution feasible-coordinate
+improvement>0.001 were observed. This is an interim diagnostic, not full
+completion, a bound-sensitivity check or global-convergence evidence.
+
+Implemented stable analytic binary transitions for inside/outside node
+probabilities, avoiding the extreme-rate matrix-exponential precision issue.
+Independent exhaustive70-digit enumeration verifies all60 synthetic node/site
+probabilities across ordinary, rare-event and gamma-extreme settings, with
+maximum difference2.23e-16. Unknown tip states are included. Scripts:
+`stable_indel_posteriors.py`, `validate_stable_indel_posteriors.py`.
+Production propagation over audited fits and independent production-posterior
+verification remain pending; these conditional SIC probabilities will not
+alone establish residue presence or compatible ancestral sequences.
