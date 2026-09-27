@@ -1,0 +1,54 @@
+{
+  "receipt_path": "results/orthology/duplication-structure-coverage-20260926-v1/receipt.json",
+  "receipt_sha256": "33dab86cd0c2ac339054abdf350e24f8e8a3a5f675062c1c9a10e4a4894ef263",
+  "receipt": {
+    "status": "complete_duplication_frozen_structure_coverage",
+    "plan_sha256": "cc688b381764539be37abf4fe25640463d138f1acce852aeb3e3748324e1b997",
+    "script_sha256": "9b867d6953acdcdb5217e75897216ce5c0601252776906820511de81954230bd",
+    "model_protein_links": 1319513,
+    "guides": [
+      {
+        "guide": "profile",
+        "counts": {
+          "events": 1204638,
+          "genes_across_events": 39699193,
+          "covered_genes_across_events": 7777940,
+          "both_sides_covered": 330480,
+          "empty_second_side": 2540,
+          "terminal_singleton_sides": 467663,
+          "events_with_any_model": 417973,
+          "terminal_two_model_candidates": 109245,
+          "candidate_same_sequence": 6354,
+          "candidate_same_model": 6354
+        },
+        "candidate_families": 20492,
+        "candidate_taxa": 153
+      },
+      {
+        "guide": "mafft",
+        "counts": {
+          "events": 1204919,
+          "genes_across_events": 39699509,
+          "covered_genes_across_events": 7779373,
+          "both_sides_covered": 330650,
+          "empty_second_side": 2539,
+          "terminal_singleton_sides": 467690,
+          "events_with_any_model": 418167,
+          "terminal_two_model_candidates": 109228,
+          "candidate_same_sequence": 6354,
+          "candidate_same_model": 6354
+        },
+        "candidate_families": 20474,
+        "candidate_taxa": 153
+      }
+    ],
+    "artifacts": {
+      "mafft_terminal_two_model_candidates.tsv": "15522cdb476de60953319d17ca8aed2fd900e80d57a05e7fa6e71f0fda91d864",
+      "profile_terminal_two_model_candidates.tsv": "42cff2a57b5ebc8b850b5354e12233407319ed96215b452155d3c2050c960764",
+      "profile_event_coverage.tsv.gz": "5a646ea00c0076f86798a3c1e23c1305cda533b7547bb423fdedc84043eb2a84",
+      "mafft_event_coverage.tsv.gz": "28f7c3599e2bb83155f1bd6245e4bce738da35d2d2cf7113c99434c400665bda"
+    },
+    "scope": "All reported events in both audited guides; frozen AlphaFold bridge coverage only. Nested gene/event counts are not independent observations. Terminal singleton-side candidates require gene-tree membership validation, model quality and alignment checks, and phylogenetic controls before duplication effects or asymmetry tests. Missing models are not biological absences; identical sequences/models remain explicitly flagged."
+  },
+  "verification": "Service exit zero, source plan binding and all output artifact hashes checked. Independent source-to-output reconstruction and candidate gene-tree validation pending."
+}

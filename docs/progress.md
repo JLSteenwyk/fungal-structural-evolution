@@ -5035,3 +5035,16 @@ frozen AlphaFold bridge. It preserves all events and missing coverage, with
 a separate explicitly limited table of simple terminal two-model candidates
 for later structural comparisons. Production and independent readback remain
 pending. See [duplication coverage](duplication-structure-coverage-20260926.md).
+
+
+### September 26: coverage production completed
+
+The service exited successfully and produced the full inventory for both
+guides. Source-plan binding and all artifact hashes were rechecked; receipt
+archived in `metadata/duplication_structure_coverage_completed_20260926.json`.
+The profile inventory contains 109,245 simple terminal two-model candidates
+from 20,492 families; MAFFT contains 109,228 from 20,474 families. Each covers
+153 taxa and flags 6,354 candidates with identical sequences/models. These
+are guide-specific candidate counts, not independent or validated duplication
+effects. Independent source-to-output readback, candidate overlap and
+gene-tree membership validation remain pending.
