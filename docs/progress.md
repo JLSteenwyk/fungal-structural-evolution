@@ -7503,3 +7503,16 @@ endpoint reversal, exclusions and unavailable-input checks passed. The waiting
 summary process is verified live. Full summary and independent readback remain
 pending; numerical usability is separate from scientific eligibility. All eight
 aims remain open, and GPU prediction remains paused.
+
+## September 27 reference geometry and complete order summary verified
+
+The preceding turn queued the full explicit-exclusion summary (progress).
+Independent geometry verification now passed all 125,836 alignments; the exact
+58 degenerate identities match the analytic short-fit check. Full summary
+readback independently checked 65,082 pair/mask rows and 1,509,320 numeric values.
+Both orders are numerically usable for all 32,541 full-mask pairs; pLDDT70 has
+30,346 both-usable, four one-usable and 2,191 neither-usable pairs. All original
+statuses/exclusions remain explicit. Three successful terminal services and
+source/artifact bindings verified. Numerical qualification does not establish
+coverage, prediction accuracy or biological effects. All eight aims remain
+open; GPU prediction remains paused.

@@ -1,0 +1,21 @@
+{
+  "status": "passed_full_reference_usable_order_summary_readback",
+  "pair_mask_rows": 65082,
+  "numerically_usable_directions": 125778,
+  "excluded_directions": 58,
+  "numeric_values_checked": 1509320,
+  "counts": {
+    "full:both_orders_numerically_usable": 32541,
+    "plddt70:both_orders_numerically_usable": 30346,
+    "plddt70:neither_order_numerically_usable": 2191,
+    "plddt70:one_order_numerically_usable": 4
+  },
+  "exclusions": {
+    "fewer_than_three_pairs;nonunique_rotation": 55,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 3
+  },
+  "source_receipt_sha256": "f732f44fe818e9a151935015480c2fcd89e32daf7c631999bf316dd300f777ac",
+  "geometry_audit_sha256": "cf291441c1aa078e1a6ce1bd75e33e6d1f5783983a8347316bdec182c8edb8d9",
+  "script_sha256": "1324fe99b3e36b79ec0200268822b543732e723b6388e071a8c73fa92e681f06",
+  "scope": "All pair/mask/order identities, native statuses, numerical exclusions, blank excluded metrics, endpoint-normalized values and order differences independently reconstructed from audited source tables. No new coordinate fits, coverage qualification or scientific acceptance."
+}

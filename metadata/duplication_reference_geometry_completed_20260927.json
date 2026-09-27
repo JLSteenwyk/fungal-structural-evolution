@@ -1,0 +1,38 @@
+{
+  "status": "verified_complete_reference_geometry_and_usable_order_summary",
+  "geometry_readback_sha256": "cf291441c1aa078e1a6ce1bd75e33e6d1f5783983a8347316bdec182c8edb8d9",
+  "geometry_audit": {
+    "status": "passed_full_reference_geometry_readback",
+    "plan_sha256": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+    "producer_receipt_sha256": "1a18a36cad5e4ccd7fd20b4ca56ce4b848cb17d9d40537ac1c3a652711842e5e",
+    "alignments_checked": 125836,
+    "counts": {
+      "full:unique_at_numeric_tolerance": 65082,
+      "plddt70:unique_at_numeric_tolerance": 60696,
+      "plddt70:degenerate_at_numeric_tolerance": 58
+    },
+    "maximum_scaled_quaternion_curvature_error": 2.0542531746131415e-15,
+    "near_zero_quaternion_gaps": 58,
+    "scope": "Every geometry row checked from hashed native mapping/PDBs. Coordinate and cross spectra checked using LAPACK gesvd; curvature/optimum checked using independent 4x4 quaternion eigensystem. Status verified under original numeric tolerance; near-zero gaps recorded, not treated as cross-method proof of machine-precision rank. No prediction-uncertainty or biological inference claim."
+  },
+  "short_degenerate_set_exact_match": true,
+  "order_readback_sha256": "790cfe28297a0f03ee2c54ca595e7a9900693667e95c6a57416e821ac49e7173",
+  "terminal_services": {
+    "fungal-reference-geometry-20260927.service": {
+      "MainPID": "0",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-reference-geometry-readback-20260927-v2.service": {
+      "MainPID": "0",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-reference-usable-orders-20260927.service": {
+      "MainPID": "0",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Full geometry independently checked; all degenerate identities match analytic short-fit audit. All 65082 order-summary rows independently verified. Numerical usability only, not scientific qualification; strict historical RMSD failure preserved."
+}

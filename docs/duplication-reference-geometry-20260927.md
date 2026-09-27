@@ -105,3 +105,34 @@ eligibility. This separate summary does not alter the historical strict failed
 audit or its downstream gate. Plan/launch:
 `metadata/duplication_reference_usable_orders_{plan,launch}_20260927.json`.
 One CPU, 8 GiB/no swap, 0.1–2 hours after dependency and 1 GiB output budgeted.
+
+## Completed independent geometry and order-summary verification
+
+The corrected full geometry verifier passed every one of 125,836 mappings.
+Its 58 degenerate identities exactly match the separately checked analytic
+one/two-point set. Geometry production, independent verification and order
+summary services all exited successfully. Original strict RMSD failures remain
+preserved, including the three native-value discrepancies.
+
+Independent summary verification reconstructed every pair/mask/order identity,
+exclusion reason, endpoint-normalized metric and order difference, checking
+1,509,320 numeric values over 65,082 pair/mask rows:
+
+| Mask | Both directions numerically usable | One direction | Neither direction |
+| --- | ---: | ---: | ---: |
+| Full | 32,541 | 0 | 0 |
+| pLDDT70 | 30,346 | 4 | 2,191 |
+
+There are 125,778 usable directed mappings and 58 excluded directed mappings;
+4,328 input-unavailable directions remain separately recorded. Fifty-five
+excluded mappings have short/nonunique geometry alone; three also have an RMSD
+discrepancy. These are overlapping reasons, not additive exclusion counts.
+
+Run `scripts/readback_reference_usable_orders.py` to reproduce the summary check
+(with a new proof path if preserving an existing output). Completion evidence:
+`metadata/duplication_reference_geometry_completed_20260927.json` and
+`metadata/duplication_reference_usable_orders_readback_20260927.json`.
+The checked summary remains at
+`results/structural_comparisons/duplication-reference-usable-orders-20260927-v1`.
+Scientific coverage/confidence qualification and integration with duplication
+and background comparisons remain downstream.
