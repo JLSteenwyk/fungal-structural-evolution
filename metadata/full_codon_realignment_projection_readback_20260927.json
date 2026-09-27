@@ -1,0 +1,13 @@
+{
+  "status": "passed_full_codon_projection_and_correspondence_readback",
+  "plan_sha256": "7a5333f031654989b06255ef2dfc5dec83707261fd5b0fb2f1a71cdc5f1f98b8",
+  "producer_receipt_sha256": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+  "cases": 1712,
+  "case_taxon_sequences": 11963,
+  "taxon_pairs": 41473,
+  "observed_taxon_codons": 6432298,
+  "dispositions": {
+    "passes_existing_coverage_gate": 1712
+  },
+  "scope": "Independent FASTA parser, cumulative residue ranks, genetic-code lookup and NumPy encoded-pair intersections reconstruct every codon, amino acid, mask, position map, summary and pair statistic. No producer projection/pair helper imported. Checks numerical provenance, not homology correctness or selection eligibility."
+}

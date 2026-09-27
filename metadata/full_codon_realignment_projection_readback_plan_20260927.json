@@ -1,0 +1,26 @@
+{
+  "projection_plan": "metadata/full_codon_realignment_projection_plan_20260927.json",
+  "output": "metadata/full_codon_realignment_projection_readback_20260927.json",
+  "pins": {
+    "results/cds/full-group-realignment-inputs-20260927-v1/receipt.json": "185423b4cf0b5bc6e4fb552104b727877f655cf205853b67bcd0ab5ff5267b1c",
+    "results/cds/full-group-protein-realignments-20260927-v1/receipt.json": "a5a6450e5b1551e4770a35116a31575512c48c5bbd8c062bb8da5b4a6c4af781",
+    "results/cds/full-group-protein-realignment-readback-20260927-v1/receipt.json": "2292180da17105a31e363e0d38e900d56d50f8b0dabcbc4267551a68cab8b60d",
+    "scripts/codon_realignment_projection.py": "3fb3da62b112cc285e51b07d87f6368589860a5c651b5727a3103e3fca794c15",
+    "scripts/project_full_codon_realignments.py": "f9e76a931aef0d2265eff10e77a5a75315560395f1f42c2e278831abada1d714",
+    "scripts/check_codon_realignment_projection.py": "7ead1ed72ab4b4b948083bf41a854254745fc4c5ce2203ce72ec8ed4f68d7f5d",
+    "metadata/full_codon_realignment_projection_plan_20260927.json": "5414663b3c882b8604ce07ec9d448a7c8d2e6db11701f198283f510d489e3f73",
+    "results/cds/full-group-codon-realignment-projection-20260927-v1/receipt.json": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+    "scripts/readback_full_codon_projection.py": "4adc7d426ea70835d184efd72bc5c89aa6bed18c6280ff17f6d774fb36f46629",
+    "scripts/check_codon_projection_readback.py": "bc94da2df50d38694f5553c4e066e5e2c4e8424bf7419b481320603e605bf63b"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 0.01,
+    "planning_minutes": [
+      1,
+      20
+    ],
+    "basis": "All 1712 projections, 11963 sequences and 41473 pair records; manual FASTA parsing and NumPy integer-array reconstruction, no model refit or GPU."
+  }
+}

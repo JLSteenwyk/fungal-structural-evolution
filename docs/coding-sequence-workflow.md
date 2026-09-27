@@ -1131,3 +1131,53 @@ producer summary are `metadata/full_codon_realignment_projection_*_20260927.json
 Projection used local CPU with a pre-run one-CPU/4-GiB/2-GiB-output/1–20-minute
 allowance; no model refits or GPU predictions were launched. All output hashes
 passed, but the independent codon/correspondence reconstruction remains next.
+
+### Full projected-codon and correspondence audit passed
+
+Independent reconstruction passed every output codon, amino acid, occupancy
+mask, residue-coordinate map, case summary and pair statistic: **1,712 cases,
+11,963 sequences, 41,473 taxon pairs and 6,432,298 observed taxon–codon cells**.
+The checker uses separate FASTA parsing, cumulative residue ranks and encoded
+integer pair intersections; it does not import the producer projection helpers.
+Three hundred randomized comparisons against direct sets passed before the
+full audit. All cases retain the existing coverage gate, which is not selection
+eligibility or a guarantee of alignment quality.
+
+The verified tables yield these descriptive correspondence totals:
+
+| Original residue-pair observation outcome | Count | Fraction |
+|---|---:|---:|
+| Preserved after local alignment and filtering | 19,791,982 | 99.0351% |
+| Absent from the raw local alignment | 177,960 | 0.8905% |
+| Preserved in the raw local alignment but filtered out | 14,867 | 0.0744% |
+| Total original observations | 19,984,809 | 100% |
+
+These pair observations share taxa, residues and ancestry; they are not
+independent samples. Case-weighted median-of-median pair retention is 99.889%,
+but the minimum case median is 36.686% (Naganishia__5013992at2759__code1).
+Other low-retention cases include Tilletia__776280at2759__code1 (50.820%) and
+Wallemia__5013992at2759__code1 (55.861%). At least one original correspondence
+is absent from the raw local alignment in 1,155 cases; 690 have some loss due
+only to local filtering. These overlapping counts are descriptive review
+signals, not calibrated exclusion thresholds.
+
+Retained columns total 917,328 locally versus 813,518 originally. Extra columns
+and high pooled retention do not establish correct homology or resolve the
+case-specific source-quality, copy, saturation and identifiability flags.
+Low-retention cases must be joined to those existing flags rather than accepted
+or rejected using a new arbitrary retention cutoff.
+
+```bash
+python scripts/check_codon_projection_readback.py
+python scripts/readback_full_codon_projection.py --plan metadata/full_codon_realignment_projection_readback_plan_20260927.json
+python scripts/summarize_full_codon_alignment_sensitivity.py
+```
+
+Plans, full proof, completion and descriptive summary receipts are archived in
+`metadata/full_codon_realignment_projection_*_20260927.json` and
+`metadata/full_codon_alignment_sensitivity_summary*_20260927.json`. The complete
+case summary is outside Git at
+`results/cds/full-group-alignment-sensitivity-summary-20260927-v1/cases.tsv`.
+Independent pandas grouped sums checked every case count and pooled total;
+grouped medians reproduced the reported median-of-case-medians. The full codon
+readback used local CPU only. No selection model was fitted in this stage.

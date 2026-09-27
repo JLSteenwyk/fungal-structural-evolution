@@ -1,0 +1,30 @@
+{
+  "status": "complete_verified_codon_alignment_sensitivity_summary",
+  "source_receipt_sha256": "606e9c3d1446a0c34252956e8611f7ae8d9f7b2dff17c251bfa450220eed9a5f",
+  "source_readback_sha256": "b78152cac3d6db5c40eed0cb6761f566b2868c952a00a85c178a1876afe48f07",
+  "script_sha256": "a754288873a700fb0f5e7344c516bbb1a32582a1ddb482da6196a8c02300cb53",
+  "cases": 1712,
+  "taxon_pairs": 41473,
+  "original_columns": 813518,
+  "local_retained_columns": 917328,
+  "median_of_case_median_pair_retention": 0.998890120719389,
+  "minimum_case_median_pair_retention": 0.36685823754789276,
+  "cases_with_any_original_pair_absent_from_raw": 1155,
+  "cases_with_any_original_pair_lost_only_to_filter": 690,
+  "pair_observation_totals": {
+    "original_pairs": 19984809,
+    "original_preserved_retained": 19791982,
+    "original_absent_from_raw": 177960,
+    "original_preserved_but_filtered": 14867,
+    "local_retained_not_original": 2549861
+  },
+  "original_pair_observation_fractions": {
+    "original_preserved_retained": 0.9903513213461285,
+    "original_absent_from_raw": 0.008904763613202409,
+    "original_preserved_but_filtered": 0.0007439150406691402
+  },
+  "artifacts": {
+    "cases.tsv": "b7df04f1dabec9848bcdf13257e1935e8486f1647f46242d0c03cd10204728ec"
+  },
+  "scope": "Descriptive all-case summary. Pair observations repeat residues/taxa/families and are not independent samples; fractions are explicitly pair-observation weighted, while median-of-case-medians is case weighted. Local group alignment and masking differ from global alignment; neither extra columns nor retained correspondence establishes correct homology, statistical power or selection eligibility."
+}

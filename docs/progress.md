@@ -6882,3 +6882,17 @@ verification is pending. See [stage evidence](coding-sequence-workflow.md#full-r
 The prior turn queued alignment verification; this turn completes that stage
 and advances the full-cohort alignment-sensitivity analysis. No group is cleared
 for selection inference. All eight aims remain open; GPU prediction stays paused.
+
+## September 27 full codon projection and correspondence verified
+
+Independent reconstruction passed all 1,712 cases and 41,473 pair comparisons,
+including every projected codon, mask and source-residue map. Descriptive
+summaries retain the full cohort: 99.035% of original pair observations survive
+local alignment/filtering, but case median retention falls as low as 36.686%.
+Verified grouped sums and the reported median with an independent pandas check.
+See [results and limits](coding-sequence-workflow.md#full-projected-codon-and-correspondence-audit-passed).
+
+The prior turn produced projections; this turn completes their full independent
+audit and identifies substantial case-specific sensitivity despite high pooled
+retention. Integration with existing copy/source/identifiability flags remains
+next. All eight aims remain open; GPU prediction stays paused.
