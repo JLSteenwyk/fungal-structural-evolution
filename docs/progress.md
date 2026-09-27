@@ -8340,3 +8340,22 @@ after its prerequisite. Scripts: `fit_whole_protein_common_residues.py` and
 `readback_whole_protein_common_fits.py`; plans/process identities use
 `metadata/whole_protein_common_fits_*_20260927.json`. No evolutionary asymmetry,
 ancestral state or biological significance is inferred at this stage.
+
+### September 27: nonlinear certificate failure census queued
+
+The previous turn was a verified wait: both auditors and four codon workers
+showed live CPU progression. The nonlinear support producer completed all 57,616
+inputs, reporting 57,504 supported and 112 unresolved certificates; full independent
+matrix readback is still active. A source-gated failure census now waits for that
+successful readback, then checks every saved certificate's weight positivity,
+normalization, primal/objective agreement, separating-vector norm and bounds.
+It preserves every unresolved input and reports quadratic/cubic counts separately.
+The existing projection follow-up remains distinct and cannot alter original
+classifications.
+
+The census uses one CPU, 4 GiB, no swap, under 1 GiB output and 0.05–1 hour after
+readback. `summarize_nonlinear_support_failures.py` verifies its own script hash
+from the recorded command as well as the immutable original source plan. Exact
+identity/resources: `metadata/nonlinear_support_failure_summary_launch_20260927.json`.
+Producer classifications are not yet treated as accepted certificates or
+biological inference.
