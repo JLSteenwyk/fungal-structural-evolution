@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-case-experimental-observed-coverage-20260927.service",
+  "pid": 415320,
+  "created": 1790540082.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/screen_case_experimental_observed_coverage.py"
+  ],
+  "script_sha256": "d7da044d23ed7948b1332a9e0534b75b01aafb1bb9a0e5b80b9e1e6d9f56ca2f",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.5,
+      6
+    ]
+  },
+  "scope": "All case domains and outside regions; all six screens; single chain/model across every required role/interval. Waits for exact CA readback and successful terminal state. No GPU use."
+}

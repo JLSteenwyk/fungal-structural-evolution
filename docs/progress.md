@@ -8580,3 +8580,12 @@ chain/model grid and observation status. Eight classification fixtures passed.
 The verifier will retain all chain/model coverage results and does not substitute
 entity sequence coverage for observed query/domain coverage. Full validation is
 pending. See [validation scope](case-independent-control-coverage-20260927.md).
+
+### 2026-09-27: observed experimental domain coverage queued
+
+Prepared and launched the coverage stage behind the full residue readback.
+It projects resolved experimental CA positions through all search alignments,
+retains all six screens and requires a single chain/model across every required
+case role and interval. Original fungal domain/outside lengths remain the
+denominators. Gap/offset/projection fixtures passed; production results await
+upstream validation. No GPU work started.

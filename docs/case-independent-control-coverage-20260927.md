@@ -197,3 +197,29 @@ projection through all recorded search alignments remains required. The launch
 record is `metadata/case_experimental_ca_readback_launch_20260927.json`.
 Resources are one CPU, 4 GiB RAM, no swap, 0.2 GiB output and a 1–12 hour planning
 allowance. The checker is queued; its validation has not yet completed.
+
+## Observed domain/outside coverage queued
+
+`scripts/screen_case_experimental_observed_coverage.py` is queued behind the
+exact full-CA-readback process and successful terminal state. It reconstructs
+both query and subject positions in every search alignment, then projects only
+unambiguous, standard-monomer, full-occupancy CA positions onto the fungal query.
+Alignment offsets, insertion/deletion gaps, observed-position projection and
+invalid double-gap rejection passed fixtures recorded in
+`metadata/case_experimental_observed_coverage_fixture_checks_20260927.json`.
+
+Every case, role, interval boundary and all six coverage screens are retained.
+A single experimental chain/model must qualify for every required role/interval;
+residues from different chains, models or alignment contexts are not combined.
+The integrative entry is excluded explicitly. Denominators remain the original
+fungal domain and outside lengths, not the number of resolved experimental
+residues. Summary counts distinguish chain/models, entities and PDB entries;
+none is asserted to represent independent experiments.
+
+The output is planned under
+`results/experimental_structures/whole-domain-case-observed-coverage-20260927-v1`.
+One CPU, 8 GiB RAM, no swap and 2 GiB output are allocated, with a 0.5–6 hour
+planning allowance. `metadata/case_experimental_observed_coverage_launch_20260927.json`
+records the exact process and script hash. The service is queued, not a completed
+coverage result. Geometry, construct quality and prediction-training overlap
+remain separate checks.

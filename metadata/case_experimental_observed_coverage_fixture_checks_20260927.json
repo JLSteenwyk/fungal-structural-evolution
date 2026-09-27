@@ -1,0 +1,63 @@
+{
+  "status": "passed_gap_and_observed_projection_fixtures",
+  "script_sha256": "d7da044d23ed7948b1332a9e0534b75b01aafb1bb9a0e5b80b9e1e6d9f56ca2f",
+  "fixtures": [
+    [
+      {
+        "query_beg": 3,
+        "query_end": 6,
+        "subject_beg": 7,
+        "subject_end": 10,
+        "query_aligned_seq": "AB-CD",
+        "subject_aligned_seq": "A-BCD"
+      },
+      [
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          10
+        ]
+      ]
+    ],
+    [
+      {
+        "query_beg": 1,
+        "query_end": 3,
+        "subject_beg": 5,
+        "subject_end": 7,
+        "query_aligned_seq": "ABC",
+        "subject_aligned_seq": "DEF"
+      },
+      [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    ]
+  ],
+  "observed_subject_positions": [
+    7,
+    10
+  ],
+  "expected_projected_query_positions": [
+    3,
+    6
+  ],
+  "double_gap_rejected": true
+}
