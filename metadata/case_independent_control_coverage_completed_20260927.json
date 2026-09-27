@@ -1,0 +1,76 @@
+{
+  "status": "complete_case_independent_coverage_and_accession_readback",
+  "local_audit": {
+    "status": "complete_existing_independent_case_coverage_audit",
+    "source_hashes": {
+      "results/structural_comparisons/whole-domain-case-pae-inputs-20260927-v1/receipt.json": "40125a13568bb5a9777d60a118617cfd8d1f05cc9ddb120fc2bfb82cdc4aebb6",
+      "results/structural_comparisons/whole-domain-case-pae-inputs-20260927-v1/model_provenance.json": "381ee9d685a04014c50adce5a7833db7e1ce8f8365caff86f618289acd107a18",
+      "results/structures/esmfold-all-completed-20260922-v1/receipt.json": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+      "results/structures/esmfold-all-completed-20260922-v1/inventory.jsonl": "0c44c08ce1cc8fabbecf867e4ca4164e6ba37f0f6390acd7df04bf5cceac9681",
+      "results/structures/esmfold-experimental-controls-1153-1536-v1/receipt.json": "3714812adbaf57444197a124e1568347c6c8eaecc687a443f1b3600e026ae2ad",
+      "results/structures/esmfold-experimental-controls-1153-1536-v1/inventory.jsonl": "5d06f46345b234853d0f87b48b0362eb97fb1f0e4e9c5d72bddf444dbb53b2c1",
+      "results/structures/esmfold-experimental-controls-513-768-v1/receipt.json": "548f00289cd9395dd842fdaa6ceb818037ac1e9026d42b625eb92f01a01b0044",
+      "results/structures/esmfold-experimental-controls-513-768-v1/inventory.jsonl": "68579315273d02d213188ca87a977d1abadbf98ba86dbec33da036902bf213b2",
+      "results/structures/esmfold-experimental-controls-769-1152-v1/receipt.json": "10d01f5de062367ef4294392c3575d47bc9afc333f01d682d929e7b3db1c6072",
+      "results/structures/esmfold-experimental-controls-769-1152-v1/inventory.jsonl": "cabbf6a4ab1ea80d38dc76e34114a82501fd141502217fa5e61698fb0c33c767",
+      "results/structures/esmfold-experimental-controls-v1/receipt.json": "b8dc3927540a18fea082d95a23f12661e51fc872a729889503419bd25b54895b",
+      "results/structures/esmfold-experimental-controls-v1/inventory.jsonl": "298d6682ecf654860d924bce18d73f807c8c3901df7e9016f41b8595209c3a9c",
+      "results/experimental_structures/sequence-screen-full-v1/receipt.json": "bca4bf8399af0b774a60341d1bb0e1c4481b2362292ce3df269b45fa144213d0",
+      "results/experimental_structures/sequence-screen-full-v1/sequence_correspondence.tsv": "ad8bfdd854b25df30e98761ce6eafa16bd324d52fa792c067ce9d629f23205bc",
+      "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+      "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+      "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+      "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef"
+    },
+    "script_sha256": "0854da22578a2c4ca5b8ba21c1b84c703dd90497e08f2d4ceab3c8018f1d75d1",
+    "models": 39,
+    "inventory_census": [
+      {
+        "inventory": "results/structures/esmfold-all-completed-20260922-v1",
+        "models": 25322
+      },
+      {
+        "inventory": "results/structures/esmfold-experimental-controls-1153-1536-v1",
+        "models": 2
+      },
+      {
+        "inventory": "results/structures/esmfold-experimental-controls-513-768-v1",
+        "models": 12
+      },
+      {
+        "inventory": "results/structures/esmfold-experimental-controls-769-1152-v1",
+        "models": 20
+      },
+      {
+        "inventory": "results/structures/esmfold-experimental-controls-v1",
+        "models": 45
+      }
+    ],
+    "case_sequences_with_esm": 0,
+    "case_sequences_in_existing_experimental_screen": 0,
+    "missing_independent_sequences": 39,
+    "missing_sequence_residues": 19561,
+    "artifacts": {
+      "missing_independent_sequences.faa": "3456f3e75f1492d6abb622104b3305d91a8ce1828c696daef8d85820ae409be0",
+      "model_provenance.json": "2088ba2cdad76185a6a29d7a4957614a023d221fbdb02222f8f8cd9905dc9a88",
+      "coverage.tsv": "19807fd794a7970567d38e6bbd090a18e3e130595102a119c45026d86f742c8b"
+    },
+    "resources": {
+      "rcsb_http_workers": 1,
+      "rcsb_requests": 1,
+      "planning_minutes": [
+        1,
+        5
+      ],
+      "memory_gib": 2,
+      "output_gib": 0.1,
+      "paid_resources": false
+    },
+    "scope": "Exact sequence hash audit of declared frozen local inventories only; absence here is not absence of experimental homologs. FASTA prepares future independent predictions but does not authorize or start paused GPUs. RCSB accession candidate nomination remains separate from sequence and coordinate validation."
+  },
+  "local_receipt_sha256": "eb0e6248e6eb139f18597f4241eeb816a02d9a2df21853e79ca081b657ade2de",
+  "accession_receipt_sha256": "5b3f62d5916a5e9a3baf9097113056d1933e34cba8e98e03e5394b3726c2a211",
+  "rcsb_query_sha256": "ed970032005360dc4c9c76ac154e2a1b2f0091afb88e6c75e4a27cdaa3d2da01",
+  "experimental_entities_for_exact_accessions": 0,
+  "scope": "Frozen local exact-sequence inventories and experimental-filtered accession query only; sequence-similar experimental homologs were not searched. Independent prediction FASTA is prepared but GPU inference stays paused."
+}

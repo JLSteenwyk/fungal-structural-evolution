@@ -8508,3 +8508,12 @@ range 13–20 Å, weakening confidence in the arrangement hypothesis suggested b
 its coordinate contrasts. Heliocybe is 5–8 Å and Phycomyces 9–10 Å; these are
 confidence summaries, not contrast error bars or independent validation.
 See [regional PAE](whole-domain-case-pae-20260927.md).
+
+### 2026-09-27: independent-control coverage checked for all case sequences
+
+No exact case sequence matched 25,322 production ESMFold models, 79 control
+predictions or the existing experimental sequence-screen inventory. A new
+experimental-only RCSB query for all 39 accessions returned zero entities, with
+full query/result readback. Homologous experimental sequences remain unsearched.
+Prepared all 39 exact sequences (19,561 residues) for future independent
+prediction without launching GPUs. See [coverage and limitations](case-independent-control-coverage-20260927.md).
