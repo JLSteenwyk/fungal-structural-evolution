@@ -197,3 +197,22 @@ Actual emitted input reconstruction, full support readback, copy/coverage
 review and common-taxon comparisons remain required. SH-aLRT values are not
 bootstrap proportions or posterior probabilities, and no gene-tree result is
 claimed complete at launch.
+
+The full MAFFT marker batch now has an automatic two-stage audit queued behind
+its identified producer. First, a separate matrix-parameterized copy of the
+existing support auditor records every internal split and its reported support.
+Second, the unchanged independent input/graph checker reconstructs every marker
+alignment from the full source matrix and verifies the split identities by
+undirected graph-edge removal. The original profile-audit script remains intact.
+The controller requires all 125 successful fits and rejects incomplete batches.
+
+Scripts: `audit_mafft_marker_tree_support.py` and
+`advance_mafft_marker_tree_audit.py`; independent checker:
+`readback_marker_tree_snapshot.py`. The pinned plan and verified waiting-process
+identity are archived in `metadata/mafft_marker_tree_audit_{plan,launch}_20260927.json`.
+The audit uses one CPU, 8 GiB RAM, no swap and a 1-GiB output allowance, with a
+0.1–4-hour planning envelope after inference. Outputs will be
+`results/phylogeny/mafft-marker-support-complete-20260927-v1` and
+`results/phylogeny/mafft-marker-support-readback-20260927-v1`. No pending output
+is claimed verified; biological adequacy and common-taxon comparisons remain
+separate downstream requirements.

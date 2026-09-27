@@ -7302,3 +7302,15 @@ remain per marker. Four two-thread IQ-TREE workers were verified live under
 a 24-GiB/no-swap service. A separate pinned runner leaves existing work intact.
 Full emitted-input/support audits and cross-alignment comparisons remain
 pending. All eight scientific aims remain open; GPU prediction stays paused.
+
+## September 27 full MAFFT marker validation queued
+
+The preceding goal turn launched all 125 MAFFT marker trees. This turn connects
+the complete batch to support-table production and the existing independent
+input/graph-split readback, using a new matrix-parameterized support auditor and
+an exact-identity waiting controller. The original profile scripts remain
+unchanged. All 125 fits must succeed before either stage proceeds. The audit
+controller was verified live under one CPU/8 GiB/no swap; hashes and launch
+identity are archived. Actual inference and validation remain pending, and
+no marker subset is substituted for the full batch. All eight aims remain open;
+GPU prediction stays paused.
