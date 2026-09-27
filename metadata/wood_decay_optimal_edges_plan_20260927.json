@@ -1,0 +1,86 @@
+{
+  "evidence": "metadata/wood_decay_coverage_evidence_v2_20260927.tsv",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "output": "results/ecology/wood-decay-optimal-edge-states-20260927-v1",
+  "trees": [
+    {
+      "label": "profile_profile",
+      "tree": "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.treefile",
+      "bootstrap": "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.ufboot",
+      "receipt": "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json",
+      "readback": "metadata/pmsf_profile_profile_readback.json"
+    },
+    {
+      "label": "profile_mafft",
+      "tree": "results/phylogeny/pmsf-profile-mafft-v1/pmsf.treefile",
+      "bootstrap": "results/phylogeny/pmsf-profile-mafft-v1/pmsf.ufboot",
+      "receipt": "results/phylogeny/pmsf-profile-mafft-v1/receipt.json",
+      "readback": "metadata/pmsf_profile_mafft_readback.json"
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_gib": 0.01,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false
+  },
+  "pins": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "scripts/map_ecology_parsimony_sensitivity.py": "4165588c3b65308720fbc26a5895e00750c21288ecfe43085083738fc4f96916",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.treefile": "9eae8e7b581f86aa3b817aea9afb7e05541e47beb956a731e8cd3ffd0cae25d2",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/pmsf.ufboot": "6744f542f740eaf8125b1468c25409c7f81f5b669aba2af06b3189130809afc5",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json": "b2642f338eb34116f1046c75c2d58ded71ad610482ec38cdfd5243e5a3ee2591",
+    "metadata/pmsf_profile_profile_readback.json": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+    "results/phylogeny/pmsf-profile-mafft-v1/pmsf.treefile": "de6b3467d255abb15089827e65b1747d766b3d40c1e0772569e197412be9bece",
+    "results/phylogeny/pmsf-profile-mafft-v1/pmsf.ufboot": "4604a5933b59e105fae125b589087066916acf54e85dd818cc1446d6493a182e",
+    "results/phylogeny/pmsf-profile-mafft-v1/receipt.json": "1a40206961cb0caa110551398ec30a74e4c3e385295506a8a580960eac27c41e",
+    "metadata/pmsf_profile_mafft_readback.json": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+    "metadata/species_ecology_evidence_sample_linked_20260922.tsv": "c03f124defcb8fba162daf53bddc28f4a7c661e69e5459982621ea89c7102911",
+    "scripts/ecology_optimal_edge_states.py": "4f24e29a0b17ea0183fb9802f67be58d9bfc64e0ef2f254ed6ac58c28e7fce3a",
+    "scripts/check_ecology_optimal_edge_states.py": "395c33e21e5a640957f2b2ed8d5f8e3a61358ac880e44af2c76a5bbcdc1ce6c9",
+    "scripts/map_ecology_optimal_edges.py": "8b88c6b4f94acd926ba9e0d7ff7218f3294c2cf2e5c3cbfbf3bce245b1c6f4a3",
+    "metadata/wood_decay_coverage_evidence_v2_20260927.tsv": "2b495b9151d2efdb82288dbb3f3a8d8954bffa3a6d50cddd20fc5762e2188c8b",
+    "metadata/wood_decay_coverage_evidence_v2_receipt_20260927.json": "2f22774cc7efa9df204e6706398c7f922cf47a830fa0d6f545a572facb043409",
+    "scripts/map_wood_decay_optimal_edges.py": "a5522dd11c882f5c86d519f64b1ef0ef73a4bd08a1bc6ff74c94717cf715e364",
+    "scripts/readback_wood_decay_optimal_edges.py": "c8e06c69880ac9e67b00ee76afd55614055d9a63a49e33442ab96dd2458595f6"
+  },
+  "coding_scope": "Primary six observed tip labels with uncertain and other tips unknown; all four binary completions of two uncertain tips separately retained. Conditional mapping sensitivity, not validated binary decay model.",
+  "scenarios": [
+    {
+      "label": "uncertain_unknown",
+      "uncertain_assignments": {}
+    },
+    {
+      "label": "jaapia_0_botryobasidium_0",
+      "uncertain_assignments": {
+        "F202697": 0,
+        "F264124": 0
+      }
+    },
+    {
+      "label": "jaapia_0_botryobasidium_1",
+      "uncertain_assignments": {
+        "F202697": 0,
+        "F264124": 1
+      }
+    },
+    {
+      "label": "jaapia_1_botryobasidium_0",
+      "uncertain_assignments": {
+        "F202697": 1,
+        "F264124": 0
+      }
+    },
+    {
+      "label": "jaapia_1_botryobasidium_1",
+      "uncertain_assignments": {
+        "F202697": 1,
+        "F264124": 1
+      }
+    }
+  ]
+}

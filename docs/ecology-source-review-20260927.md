@@ -169,3 +169,10 @@ coverage and readback, with fresh paths when rerunning. Completion evidence is
 `metadata/wood_decay_coverage_v2_completed_20260927.json`.
 Full outputs are under `results/ecology/qualified-{afdb,esmfold}-wood-decay-overlap-20260927-v2`.
 As before, the one-CPU, 4-GiB, 1–10-minute per-stage allowance used no GPU.
+
+The [complete edge-placement diagnostic](wood-decay-phylogenetic-diagnostic-20260927.md)
+now maps these labels onto both completed tree alternatives, including all four
+binary sensitivity assignments of the two uncertain taxa. Full independent
+network-flow verification passed. The primary coding requires two changes but
+no particular edge; a required edge appears only under a forced Jaapia coding.
+This does not establish independently replicated ecological origins.

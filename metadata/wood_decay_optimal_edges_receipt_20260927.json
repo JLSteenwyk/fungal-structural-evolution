@@ -1,0 +1,135 @@
+{
+  "status": "complete_wood_decay_optimal_edges_pending_readback",
+  "plan_sha256": "bba9eab9d0fbd32d724ed18d94540bda8aa021200da14c0d984a28c7b79bf235",
+  "rows": 10490,
+  "summaries": [
+    {
+      "tree_source": "profile_profile",
+      "coding": "uncertain_unknown",
+      "minimum_changes": 2,
+      "coded_tips": 6,
+      "unknown_tips": 520,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1039,
+        "optional_change": 10
+      }
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_0_botryobasidium_0",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1044,
+        "optional_change": 5
+      }
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_0_botryobasidium_1",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1043,
+        "optional_change": 6
+      }
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_1_botryobasidium_0",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1045,
+        "optional_change": 3,
+        "required_change": 1
+      }
+    },
+    {
+      "tree_source": "profile_profile",
+      "coding": "jaapia_1_botryobasidium_1",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1044,
+        "optional_change": 4,
+        "required_change": 1
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "uncertain_unknown",
+      "minimum_changes": 2,
+      "coded_tips": 6,
+      "unknown_tips": 520,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1039,
+        "optional_change": 10
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_0_botryobasidium_0",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1044,
+        "optional_change": 5
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_0_botryobasidium_1",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1043,
+        "optional_change": 6
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_1_botryobasidium_0",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1045,
+        "optional_change": 3,
+        "required_change": 1
+      }
+    },
+    {
+      "tree_source": "profile_mafft",
+      "coding": "jaapia_1_botryobasidium_1",
+      "minimum_changes": 2,
+      "coded_tips": 8,
+      "unknown_tips": 518,
+      "edges": 1049,
+      "counts": {
+        "no_change_in_any_optimum": 1044,
+        "optional_change": 4,
+        "required_change": 1
+      }
+    }
+  ],
+  "artifacts": {
+    "edge_states.tsv": "24b78348735a033abf701c055ae21c18bd88b8599e1e844ae43b549854376f4c"
+  },
+  "scope": "All edges and five explicit decay-coding scenarios on two completed trees. White=0, brown=1; uncertain taxa unknown in primary scenario and all four binary assignments explored separately. Other tips unknown. Equal-cost undirected minimum changes are not independent origins, probabilities or ecological effects. No binary model adequacy claimed."
+}
