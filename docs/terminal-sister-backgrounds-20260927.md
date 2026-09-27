@@ -50,3 +50,25 @@ the planning range is 0.1–4 hours, not a calibrated ETA. Free disk was about
 and memory limits. No GPU predictions or paid resources are used. Process
 identity and the source-bound plan are recorded in
 `metadata/terminal_sister_background_launch_20260927.json`.
+
+## Full independent readback queued
+
+`readback_terminal_sister_backgrounds.py` waits for the recorded producer
+PID/creation time/command to exit, then requires its complete checksum-bound
+receipt. It traverses every source tree in postorder, independently reconstructs
+parent relationships and terminal pair sets, and compares every output field
+against native trees, duplication tables and the frozen model bridge. Output
+order within a family is not assumed. Missing, extra or repeated pairs and
+changed fields fail the check. Model coverage and candidate-status totals must
+also match the producer receipt. Both readers use Bio.Phylo's Newick parser;
+the checker does not invoke the producer's tree-index or pair-generation code.
+
+The checker has its own one-CPU/8-GiB/no-swap service and a 0.1–4 hour planning
+range excluding the producer wait. Its pinned config is
+`metadata/terminal_sister_background_readback_plan_20260927.json`; the final
+output, only on success, is
+`metadata/terminal_sister_background_completed_readback_20260927.json`.
+Known-tree reconstruction and deliberate corruption of five exported fields
+passed in `scripts/check_terminal_sister_readback_cases.py`. These are fixture
+results; the full production readback is still pending. The checker rejects
+changed source or producer hashes and rechecks them after traversing all rows.

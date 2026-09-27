@@ -6202,3 +6202,18 @@ The preceding goal turn made progress by completing and publishing the
 candidate-control figure. This turn starts the missing background-analysis
 stage without waiting for whole-protein alignments. All eight scientific aims
 remain open and GPU prediction remains paused.
+
+## September 27 full background-inventory readback queued
+
+Implemented and launched an independent native-tree reconstruction for all
+terminal sister-pair inventory rows in both guides. The checker waits for the
+exact producer process and a complete source-bound receipt, reconstructs every
+pair and copied field, and verifies all output/summary counts. Known-tree and
+five field-corruption fixtures passed. Both services were revalidated live;
+the inventory has progressed into the MAFFT guide. Full production validation
+has not yet completed. See [background methods](terminal-sister-backgrounds-20260927.md#full-independent-readback-queued).
+
+The previous turn made progress by launching the complete inventory; this turn
+adds and launches the full verification needed before guide agreement,
+orthology membership and matched-background selection. The project remains
+active, all scientific aims remain open, and GPU prediction remains paused.
