@@ -8661,3 +8661,12 @@ coverage. It reconstructs every count from frozen residue pairs and audited
 CA positions, checks exact rational thresholds and all chain/model decisions,
 and retains zero-candidate summaries. It waits for the exact coverage producer
 and successful termination; full raw-coordinate validation remains active.
+
+### 2026-09-27: full quartet geometric verification queued
+
+Added a full expected-grid and numerical checker for every experimental quartet
+fit. It rebuilds common observed residue sets and domain partitions, verifies all
+six pairs in three regions, and independently recomputes proper-rotation and
+domain-anchored residuals. Thirteen numerical fixtures passed; the production
+check waits on exact producer completion. Scientific coverage and interpretation
+remain downstream.

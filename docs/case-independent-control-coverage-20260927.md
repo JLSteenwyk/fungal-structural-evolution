@@ -436,3 +436,25 @@ The checker is queued with one CPU, 8 GiB RAM, no swap, 0.1 GiB output and a
 The launch identity is recorded in
 `metadata/case_experimental_observed_readback_launch_20260927.json`.
 This check is not yet completed and does not validate geometry or independence.
+
+## Full quartet geometry readback queued
+
+`readback_case_experimental_quartets.py` waits on the exact geometry producer and
+successful terminal state. It reconstructs the complete chain/model/mask/domain/
+context combination set, checks observed four-way positions against source
+coordinate files, and rebuilds domain/outside/mixed partitions and denominators.
+All eighteen fit rows per partition (six pairs × three regions) must be present.
+Every RMSD and outside-under-domain-transform residual is recomputed using
+separately written quaternion-matrix formulas; degenerate and insufficient fits
+must have the correct status and blank metrics. The same numerical linear-algebra
+library remains a shared dependency.
+
+Twelve rigid/noisy fixtures and one collinear degeneracy fixture passed. Maximum
+RMSD disagreement with direct SVD in those fixtures was 9.26e-16 Å. This is a
+software check, not production validation. Production readback is queued with
+one CPU, single-threaded BLAS, 8 GiB RAM, no swap, 0.1 GiB output and 1–12 hours
+planned. Output will be
+`results/experimental_structures/whole-domain-case-quartet-readback-20260927-v1`;
+launch and fixture evidence are in
+`metadata/case_experimental_quartet_readback_launch_20260927.json` and
+`metadata/case_experimental_quartet_readback_fixtures_20260927.json`.
