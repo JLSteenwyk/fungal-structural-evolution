@@ -1535,3 +1535,34 @@ count/quantile checks are archived as
 `metadata/codon_tree_sensitivity_summary_readback_20260927.json`.
 The local MG94 controller advanced automatically and had 70 completed fits at
 the checkpoint. Divergence sensitivity and selection eligibility remain open.
+
+## September 27 paired split incompatibility
+
+The completed original/local comparison was checked for direct incompatibility
+rather than comparing marginal support maxima. All 804 old-only/new-only split
+pairs across the 315 topology-changing cases were examined. Exactly 589 pairs
+are incompatible, spanning all 315 cases; none of these pairs contains a
+zero-length branch. Four nonempty intersections define incompatibility for
+unrooted splits. A separate checker independently enumerated resolved quartets
+for every candidate pair and verified the entire output grid, quartet witnesses,
+branch supports and lengths, historical flags, alignment retention, and support
+curve.
+
+The maximum, across incompatible pairs, of the smaller of the two ultrafast
+bootstrap supports is **85%**. Thus the earlier 99%/100% marginal maxima do not
+represent a conflict supported at those levels on both trees. This does not
+establish that either alignment or topology is correct, nor remove optimization,
+recombination, model-adequacy or selection-eligibility concerns. Multiple pairs
+within a case are correlated. The entire empirical support curve is retained;
+no threshold was used to select the analyzed cases.
+
+Reproduce from the checksum-bound comparison with:
+
+```bash
+python scripts/summarize_codon_split_conflicts.py --output results/cds/codon-split-conflicts-20260927-v1
+python scripts/readback_codon_split_conflicts.py
+```
+
+The producer requires a new output directory. Detailed split pairs are in that
+results directory. Provenance, complete support curve and independent readback
+are archived in `metadata/codon_split_conflicts_*_20260927.*`.

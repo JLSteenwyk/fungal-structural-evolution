@@ -1,0 +1,16 @@
+{
+  "status": "complete_codon_split_conflict_enumeration_pending_readback",
+  "source_receipt_sha256": "2d13928cfb8c8b9200b96f03a81ae395ee756b80f5ebfc7d3339aec37b56d812",
+  "source_readback_sha256": "1de69039acc7cd9b9bb357140fe326972b8d6e6f4d58825a34dde2e74da66dbc",
+  "script_sha256": "71da3c9965cb9dc97f45c6df82af36be5dcd532c9fe741c7030dc7514ef3a265",
+  "candidate_pairs": 804,
+  "incompatible_pairs": 589,
+  "cases": 315,
+  "zero_length_pairs": 0,
+  "maximum_joint_ufb": 85.0,
+  "artifacts": {
+    "incompatible_splits.tsv": "4d8fb228f08e2b8d3dc8b04b82cb8e9592522df600d63daf3f6424dbd09bbfa3",
+    "support_curve.tsv": "c46b2f45e037c4b60c0306ee16d094479b46855c101389a42b17f26ec3190629"
+  },
+  "scope": "Four nonempty split intersections prove unrooted incompatibility. Every old-only/new-only pair is considered. Support curves are descriptive, not significance, independence, biological validity, or selection eligibility. Zero-length splits and historical flags retained."
+}

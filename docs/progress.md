@@ -7124,3 +7124,17 @@ Reproducible summary tables and independent count/quantile checks are archived.
 Historical flags occur in 149 changed groups and remain explicit; no case is
 cleared for selection. The local MG94 controller is verified live and has
 advanced into fitting. All eight aims remain open; GPU prediction is paused.
+
+## September 27 direct old/new split conflicts verified
+
+The preceding status turn was a verified wait: live analysis services were
+polled and ongoing counts checked. This turn completed paired incompatibility
+analysis for all 804 old-only/new-only split pairs. Independent resolved-quartet
+enumeration verified 589 incompatible pairs across all 315 changed cases, with
+no zero-length branch in those pairs. The largest minimum of the two paired
+ultrafast-bootstrap supports is 85%; the previously reported marginal maxima
+of 99% and 100% therefore do not describe a pair supported that highly in both
+trees. The full empirical support curve and provenance are retained without
+selection thresholds. Historical flags remain; this is alignment sensitivity,
+not a correctness or selection certificate. All eight scientific aims remain
+open and GPU prediction stays paused.
