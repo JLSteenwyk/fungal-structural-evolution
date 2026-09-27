@@ -8954,3 +8954,11 @@ membership and original residue intervals. Saved-record readback verified
 Unmatched columns remain explicit. Projection does not isolate alignment
 context from the influence of extra proteins on original whole alignments.
 Whole-protein fits and domain multistarts continue independently.
+
+### 2026-09-27: domain refits finished; all-refit ancestral propagation queued
+
+All936 fits finished production and full audit is actively recomputing
+likelihoods. Queued probability propagation across all2,808 mapped fit/nodes,
+gated on complete successful audit and hash-bound parameters. Allsix settings
+per baseline fit retained; node identities matched by incident-tip partitions.
+One CPU,4GiB RAM,noGPU. Posterior results and independent verification pending.

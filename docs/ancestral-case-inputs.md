@@ -748,3 +748,27 @@ and date `20260927`. Outputs:
 `results/ancestral/whole-domain-alignment-correspondence-20260927-v1/`.
 One CPU,4GiB memory limit,noGPU; terminal success and complete saved-record
 identity/count readback confirmed.
+
+## All-refit ancestral probability propagation queued
+
+All936 domain alternate-start/bound fits have finished production; their
+independent audit is actively checking reports and recomputing likelihoods.
+A downstream CPU calculation now waits on the exact audit process and
+requires terminal success, the expected936-fit audit receipt, its frozen
+plan hash and all artifact hashes before using fitted parameters.
+
+It will compute probabilities at the three mapped internal vertices for all
+six refits per baseline model/alignment, totaling2,808 fit/node combinations.
+Every setting remains retained; no only-best-fit selection hides differences
+between starts or bounds. Target identities are recovered from complete
+incident-tip partition signatures, independently of changed internal labels.
+Every traversal must reproduce its fitted likelihood; independent posterior
+validation and comparisons to baseline remain downstream requirements.
+
+Run `python scripts/infer_refitted_domain_ancestors.py`. Frozen plan/launch
+metadata use `refitted_domain_ancestor_`, date `20260927`; output:
+`results/ancestral/refitted-domain-ancestors-20260927-v1/`. One CPU,4GiB memory
+limit,no swap/GPU; estimate0.2–8 hours after audit and up to4GiB output.
+These are conditional residue probabilities, not final ancestral sequences
+or evidence for ancestral deletion states. Model adequacy, indel uncertainty
+and structural prediction remain open.

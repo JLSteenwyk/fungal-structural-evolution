@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-refitted-domain-ancestors-20260927.service",
+  "state": {
+    "MainPID": "523333",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "pid": 523333,
+  "created": 1790547747.6,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/infer_refitted_domain_ancestors.py"
+  ],
+  "plan_sha256": "0336e51e53604d4dea5e048b16930cac67ed2cd29527bc7f88bf0d8076511eea",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours_after_audit": [
+      0.2,
+      8
+    ]
+  }
+}
