@@ -1,0 +1,103 @@
+{
+  "status": "verified_cross_family_shared_model_endpoints",
+  "dependency_readback_sha256": "d6074daa41757d082fbec665e6f81b5ddbd0e83c3f3e9324ad9e76fd860af6f4",
+  "rows": [
+    {
+      "guide": "profile",
+      "role": "target",
+      "node_id": "53c69ffe7ad91675b9fa356841a02aac4e204dff52f04e059624274d2c47fc3c",
+      "family": "OG0000004",
+      "endpoint": "a",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1IYQ5-F1\",6]",
+      "gene_id": "F61424_PVU89359.1",
+      "taxon_id": "F61424",
+      "sequence_sha256": "d11817cb263c74e68b47a076656d04739b0a10129a8921a072d36a902790f8eb"
+    },
+    {
+      "guide": "profile",
+      "role": "target",
+      "node_id": "53c69ffe7ad91675b9fa356841a02aac4e204dff52f04e059624274d2c47fc3c",
+      "family": "OG0000004",
+      "endpoint": "b",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1J4X4-F1\",6]",
+      "gene_id": "F61424_PVU93954.1",
+      "taxon_id": "F61424",
+      "sequence_sha256": "ee81e03ae94e826445d054f3edb6164811156cbe01e25a5e2e28f2d0ba7992a6"
+    },
+    {
+      "guide": "profile",
+      "role": "target",
+      "node_id": "8ba4f91210526798533506cf0687554773e2085b886bc9d93a26b91e534ad36a",
+      "family": "OG0002812",
+      "endpoint": "a",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1IYQ5-F1\",6]",
+      "gene_id": "F133377_PVZ97944.1",
+      "taxon_id": "F133377",
+      "sequence_sha256": "d11817cb263c74e68b47a076656d04739b0a10129a8921a072d36a902790f8eb"
+    },
+    {
+      "guide": "profile",
+      "role": "target",
+      "node_id": "8ba4f91210526798533506cf0687554773e2085b886bc9d93a26b91e534ad36a",
+      "family": "OG0002812",
+      "endpoint": "b",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1J4X4-F1\",6]",
+      "gene_id": "F133377_PWA00111.1",
+      "taxon_id": "F133377",
+      "sequence_sha256": "ee81e03ae94e826445d054f3edb6164811156cbe01e25a5e2e28f2d0ba7992a6"
+    },
+    {
+      "guide": "mafft",
+      "role": "target",
+      "node_id": "d7e8337679d0737cf504feb088555aeef881c7e31645dfa85820e23b91079aa0",
+      "family": "OG0000004",
+      "endpoint": "a",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1IYQ5-F1\",6]",
+      "gene_id": "F61424_PVU89359.1",
+      "taxon_id": "F61424",
+      "sequence_sha256": "d11817cb263c74e68b47a076656d04739b0a10129a8921a072d36a902790f8eb"
+    },
+    {
+      "guide": "mafft",
+      "role": "target",
+      "node_id": "d7e8337679d0737cf504feb088555aeef881c7e31645dfa85820e23b91079aa0",
+      "family": "OG0000004",
+      "endpoint": "b",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1J4X4-F1\",6]",
+      "gene_id": "F61424_PVU93954.1",
+      "taxon_id": "F61424",
+      "sequence_sha256": "ee81e03ae94e826445d054f3edb6164811156cbe01e25a5e2e28f2d0ba7992a6"
+    },
+    {
+      "guide": "mafft",
+      "role": "target",
+      "node_id": "eb1f93db96b1643dccb91a23ef89b90185a2b8acc73d94591c362cc1fadffcac",
+      "family": "OG0002812",
+      "endpoint": "a",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1IYQ5-F1\",6]",
+      "gene_id": "F133377_PVZ97944.1",
+      "taxon_id": "F133377",
+      "sequence_sha256": "d11817cb263c74e68b47a076656d04739b0a10129a8921a072d36a902790f8eb"
+    },
+    {
+      "guide": "mafft",
+      "role": "target",
+      "node_id": "eb1f93db96b1643dccb91a23ef89b90185a2b8acc73d94591c362cc1fadffcac",
+      "family": "OG0002812",
+      "endpoint": "b",
+      "entity_kind": "model_version",
+      "entity_id": "[\"AF-A0A2U1J4X4-F1\",6]",
+      "gene_id": "F133377_PWA00111.1",
+      "taxon_id": "F133377",
+      "sequence_sha256": "ee81e03ae94e826445d054f3edb6164811156cbe01e25a5e2e28f2d0ba7992a6"
+    }
+  ],
+  "interpretation": "Distinct gene identifiers in OG0000004 and OG0002812 map to the same two model/version and sequence identities in both guides. Retain shared-measurement dependence; this does not establish family equivalence or an annotation error."
+}

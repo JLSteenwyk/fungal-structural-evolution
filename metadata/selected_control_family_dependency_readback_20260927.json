@@ -1,0 +1,67 @@
+{
+  "status": "passed_full_selected_control_family_dependency_readback",
+  "selected_records": 2786912,
+  "endpoint_entity_rows": 391722,
+  "component_rows": 21568,
+  "component_summaries": {
+    "profile:gene": {
+      "families": 2696,
+      "components": 2696,
+      "multi_family_components": 0,
+      "maximum_component_families": 1,
+      "cross_family_entities": 0
+    },
+    "profile:model_version": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 2
+    },
+    "profile:sequence_sha256": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 2
+    },
+    "profile:combined": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 4
+    },
+    "mafft:gene": {
+      "families": 2696,
+      "components": 2696,
+      "multi_family_components": 0,
+      "maximum_component_families": 1,
+      "cross_family_entities": 0
+    },
+    "mafft:model_version": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 2
+    },
+    "mafft:sequence_sha256": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 2
+    },
+    "mafft:combined": {
+      "families": 2696,
+      "components": 2695,
+      "multi_family_components": 1,
+      "maximum_component_families": 2,
+      "cross_family_entities": 4
+    }
+  },
+  "source_receipt_sha256": "85064df35557fdd6f41ca64124b1bc754dd76e53e4a3f30ed68d5f4d9c0c1c45",
+  "script_sha256": "c9d9f4c167eda0bb45453d89b96e6844e13b1a36644d9357a9a027d548bc1f24",
+  "scope": "Every endpoint entity rederived from full selected-node sources; exact cross-family membership verified and every family component independently reconstructed by SciPy sparse connected-components traversal, not producer union-find. No phylogenetic independence or biological family equivalence claimed."
+}
