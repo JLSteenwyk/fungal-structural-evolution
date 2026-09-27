@@ -5860,3 +5860,20 @@ artifact hashes and aggregate agreement. See the
 [completion record](../metadata/duplication_domain_common_residues_completed_20260927.json)
 and [mapping methods/results](duplication-domain-common-residues-20260927.md).
 Common-residue structural fits and controlled biological contrasts remain next.
+
+
+## September 27 common-residue domain structural fits launched
+
+Launched 255,552 planned fit rows: 7,986 oriented triads × two masks × eight
+input-order combinations × two mapping definitions. All three pairwise RMSDs
+are refitted on identical residue triples; signed A-reference minus B-reference
+RMSD preserves copy orientation without assigning ancestral direction. Core
+geometry and original-interval coverage are re-evaluated after intersection.
+Source exclusions remain explicit, with blank values where fits are excluded.
+
+Fixtures passed metric bounds, duplicate-label reversal, rigid-motion
+invariance, sequence-identity and confidence checks, and short/degenerate-core
+handling. See [methods](duplication-domain-common-core-fits-20260927.md) and the
+[launch record](../metadata/duplication_domain_common_core_fits_launch_20260927.json).
+Full fitting and independent numeric validation remain pending; no biological
+asymmetry or duplication-effect claim is made.
