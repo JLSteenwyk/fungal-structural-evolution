@@ -1,0 +1,15 @@
+{
+  "status": "complete_saccharomyces_marker_split_assessment_pending_readback",
+  "markers": 125,
+  "rows": 1000,
+  "collapsed_split_records": 7,
+  "source_support_receipt_sha256": "8cea1fb03ad03bb3fac1b61c59e073ad171490ca9965e7897edff15c26e49def",
+  "source_support_readback_sha256": "4fcb6047cee4a990374b4d62b095209407423dbbf2be6bee2c4c57f4e1dcbaab",
+  "source_conflict_receipt_sha256": "1cf20eebf1cfae376d6876134e2c144b5dc0b4d510556a9ccac882c54e5e4bf3",
+  "script_sha256": "c1423f921f046e8ca9ab312d09151aee2c0c92d3e25f3f311580d258adbcbd0a",
+  "artifacts": {
+    "marker_assessments.tsv": "745d50bc2617b69d535be39938031d79de267555368669a51c87fafd88f31f3a",
+    "summary.tsv": "720d20e4f41de16b1d33eabbc04e7ca88019f5693b2defb3d77f4c44bfb08cdf"
+  },
+  "scope": "Full 125-marker saved-tree diagnostic. Hybrid-tip removal only projects existing unrooted splits; it does not refit alignments, profiles, trees or support. A collapsed path qualifies only if every source edge has support and its minimum passes the descriptive SH-aLRT cutoff. SH-aLRT is not bootstrap probability; rows are correlated and missing support remains unresolved. No cause of discordance or preferred species tree established."
+}

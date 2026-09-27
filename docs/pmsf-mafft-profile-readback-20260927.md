@@ -75,3 +75,40 @@ Reproduction scripts: `compare_completed_species_pmsf.py` and
 independent proof and compact comparisons are archived in
 `metadata/pmsf_three_run_topology_*_20260927.*`. The fourth run and consensus,
 rooting, taxon/marker and model-adequacy sensitivities remain unfinished.
+
+## Marker-level assessment of the Saccharomyces conflict
+
+All 125 audited profile-alignment marker trees were compared with both
+conflicting full species-tree splits, restricted to each marker's observed
+taxa. The saved trees were also projected after removing hybrid tips F27292
+and F332112. This is not a fresh hybrid-excluded alignment, inference or support
+analysis. Where tip removal collapses several edges to one split, the diagnostic
+uses the minimum source SH-aLRT only when every source support is available.
+Missing support remains unresolved.
+
+| Saved-tree condition | Alternative split | SH-aLRT cutoff | Concordant | Conflicting | Unresolved | Uninformative coverage |
+|---|---|---:|---:|---:|---:|---:|
+| All available taxa | Profile | 80 | 18 | 58 | 46 | 3 |
+| All available taxa | MAFFT | 80 | 24 | 59 | 39 | 3 |
+| All available taxa | Profile | 95 | 5 | 14 | 103 | 3 |
+| All available taxa | MAFFT | 95 | 19 | 15 | 88 | 3 |
+| Hybrid tips removed | Profile | 80 | 17 | 53 | 52 | 3 |
+| Hybrid tips removed | MAFFT | 80 | 23 | 59 | 40 | 3 |
+| Hybrid tips removed | Profile | 95 | 4 | 10 | 108 | 3 |
+| Hybrid tips removed | MAFFT | 95 | 18 | 13 | 91 | 3 |
+
+These counts demonstrate disagreement and limited resolution among the saved
+marker trees. Conflict with one candidate need not imply support for the other;
+other arrangements are possible. Counts are not independent votes, gene
+concordance factors, probabilities or a causal explanation. The same markers,
+including their missing-data and copy caveats, recur across conditions. All
+marker trees here use the profile alignment, so this does not replace a matched
+MAFFT-marker comparison or fresh hybrid-excluded inference.
+
+The complete 1,000 assessment rows and eight summaries were independently
+reconstructed directly from gene-tree files using DendroPy and bitmask split
+compatibility. Scripts are `assess_saccharomyces_marker_conflict.py` and
+`readback_saccharomyces_marker_conflict.py`. Full results are in
+`results/phylogeny/saccharomyces-marker-conflict-20260927-v1`; metadata archives
+include receipt, independent proof and summary under
+`saccharomyces_marker_conflict_*_20260927.*`.

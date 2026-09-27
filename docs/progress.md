@@ -7251,3 +7251,17 @@ a demonstrated biological explanation or two independent conflicts. All 132
 incompatible pair records remain available without filtering by support.
 The fourth run and remaining framework sensitivities are still required.
 All eight scientific aims remain open and GPU prediction stays paused.
+
+## September 27 full marker assessment of species-tree conflict verified
+
+The preceding goal turn verified the three-run species-tree comparison. This
+turn assessed both Saccharomyces alternative splits against all 125 audited
+marker trees, including a clearly separated saved-tree projection without two
+hybrid tips. Independently reconstructed all 1,000 rows and eight summaries
+using DendroPy gene trees and bitmask compatibility. At SH-aLRT80, original
+saved trees have 18 concordant/58 conflicting markers for the profile split and
+24/59 for the MAFFT split; missing resolution and three uninformative markers
+remain explicit. Hybrid-tip projection does not eliminate conflict and is not
+fresh re-inference. The source markers use the profile alignment, and these
+correlated counts do not establish a preferred species tree or discordance
+cause. All eight scientific aims remain open and GPU prediction is paused.
