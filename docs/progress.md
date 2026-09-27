@@ -5510,3 +5510,14 @@ three longer-marker predictions. Ten reviewed inference/checkpoint/software
 settings match across the three configurations; batch membership does not
 isolate a setting effect. The highly concentrated acquisition is explicitly
 retained as a limitation. See [settings and ascertainment](prediction-source-controls.md#prediction-settings-and-batch-ascertainment).
+
+
+### September 26: fixed-pair confidence sensitivity verified
+
+All 119 model pairs passing every confidence setting were retained across all
+12 summaries. Pooled disagreement is 19.09% for valid-only features, 14.74%
+at pLDDT70/PAE10 and 11.42% at pLDDT90/PAE10. Independent grouping verified
+all 643 membership records, 12 summaries and 119 paired changes. Protein
+membership is fixed, but residue sets remain threshold-dependent; this is not
+a causal confidence effect or representative fungal sample. See
+[fixed-cohort sensitivity](prediction-source-controls.md#fixed-model-pair-cohort-sensitivity).

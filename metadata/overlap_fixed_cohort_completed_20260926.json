@@ -1,0 +1,22 @@
+{
+  "status": "passed_complete_fixed_cohort_overlap_readback",
+  "producer_receipt": "results/phylogeny/overlap-fixed-cohort-sensitivity-20260926-v1/receipt.json",
+  "producer_receipt_sha256": "8ad2f6989a6aee1bb930e81c1cc2ef6e09b45d755d2e725a8b37f9838ec2b6f5",
+  "receipt": {
+    "status": "complete_fixed_cohort_overlap_sensitivity",
+    "source_receipt_sha256": "b1a1d196208526976f8054293b7d05fdadb2ed8b12cae48ef73a14a1f7243139",
+    "readback_sha256": "84adc2a2308f08d86a6a7710286dc608c7729f50dec4777c3ce89ce2b88a812f",
+    "source_table_sha256": "1956df1baec2803410e1c0b7f58374f06ec84598643b0c4b41caf6a5e34b954f",
+    "script_sha256": "952b9560d533bcb21542942f8c161152696dde33ca4b0c2b29e5e72f94205f5a",
+    "original_model_pairs": 643,
+    "fixed_model_pairs": 119,
+    "excluded_from_fixed_cohort": 524,
+    "artifacts": {
+      "model_pair_membership.tsv": "45395f18c8920c5301376abee320104a41b785e4c6bb4cda51712c43b58b1ae5",
+      "fixed_cohort_threshold_summary.tsv": "eda70fd4e0f8c98245191c8b4c6534f3c38e8e3ffd0385dc25403a9bf3cbeb36",
+      "paired_threshold_changes.tsv": "1df09e50aa0f3517040bd083c226bfd69edf41d5621150a64dfbf40858ecea8d"
+    },
+    "scope": "Same model pairs across twelve confidence alternatives; residue sets still change. Highly selected intersection cohort, not a representative sample or causal confidence intervention. Pair-specific changes descriptive; no independence, error calibration or significance claim."
+  },
+  "verification": "Independent grouped dataframe selection checked all 643 memberships, 12 fixed-cohort summaries and 119 paired changes against the audited input table; all output hashes verified."
+}

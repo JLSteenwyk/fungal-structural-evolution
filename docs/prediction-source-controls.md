@@ -496,3 +496,38 @@ python scripts/inventory_overlap_prediction_settings.py \
   --local-provenance results/structural_markers/esmfold-all-completed-20260922-v1/model_provenance.json \
   --output <fresh-output-directory>
 ```
+
+
+### Fixed model-pair cohort sensitivity
+
+A separate summary holds model-pair membership fixed to the **119 pairs**
+that satisfy the coverage criterion at all 12 confidence alternatives. All
+643 original pairs retain explicit membership and eligible-threshold counts;
+524 are outside this selected intersection cohort. The exact same 119 pairs
+contribute to every row below, but retained residue sets still differ.
+
+| Joint confidence | Retained residues | State mismatches | Pooled disagreement |
+| --- | ---: | ---: | ---: |
+| Valid features, no confidence cutoff | 36,953 | 7,054 | 19.09% |
+| pLDDT >=70, PAE <=10 | 32,547 | 4,797 | 14.74% |
+| pLDDT >=90, PAE <=10 | 22,881 | 2,612 | 11.42% |
+
+Lower disagreement at stricter thresholds therefore is not solely a consequence
+of dropping entire model pairs. This does not establish causation: confidence
+selects different residues within each protein, and the all-threshold cohort is
+highly selected. No population calibration or significance test is implied.
+All 12 summaries retain pooled, mean-pair and median-pair values, and all 119
+pair-specific changes are exported rather than reduced to a favorable subset.
+
+Independent grouped-dataframe reconstruction checked every membership, summary
+and paired change against the audited feature table, plus output hashes.
+Evidence: `metadata/overlap_fixed_cohort_completed_20260926.json`.
+Output: `results/phylogeny/overlap-fixed-cohort-sensitivity-20260926-v1/`.
+Reproduce with a fresh output directory:
+
+```bash
+python scripts/summarize_overlap_fixed_cohort.py \
+  --comparison results/phylogeny/overlap-model-feature-comparison-20260926-v1 \
+  --readback metadata/overlap_model_feature_comparison_completed_20260926.json \
+  --output <fresh-output-directory>
+```
