@@ -83,3 +83,25 @@ and service journal are preserved. Corrected plan/launch files use the suffix
 `results/structural_comparisons/duplication-reference-geometry-readback-20260927-v2.json`.
 The corrected full verifier was confirmed live; scientific acceptance remains
 pending its completion and subsequent coverage/confidence review.
+
+## Explicit numerical exclusions in input-order summaries
+
+`scripts/summarize_reference_usable_orders.py` is now queued after the complete
+corrected geometry audit. It requires that audit's successful receipt before
+writing the full 32,541-pair × two-mask summary. Both input directions and
+original native statuses remain present. A direction is numerically usable only
+when RMSD remains within the unchanged tolerance, it has at least three paired
+residues and its rotation is unique under the independently checked criterion.
+Multiple exclusion reasons are retained together; excluded metrics are blank,
+and order differences are reported only when both directions are usable.
+No best-order selection or averaging occurs. Original raw metrics stay in the
+immutable native/diagnostic tables.
+
+Known-value checks passed for endpoint reversal, combined exclusion reasons,
+blank excluded metrics, preserved native aligned status and missing inputs.
+The full summary and its independent readback remain pending. Numerical usability
+is not adequate coverage, calibrated prediction confidence or biological
+eligibility. This separate summary does not alter the historical strict failed
+audit or its downstream gate. Plan/launch:
+`metadata/duplication_reference_usable_orders_{plan,launch}_20260927.json`.
+One CPU, 8 GiB/no swap, 0.1–2 hours after dependency and 1 GiB output budgeted.

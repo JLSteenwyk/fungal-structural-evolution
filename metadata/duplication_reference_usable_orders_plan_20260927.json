@@ -1,0 +1,43 @@
+{
+  "producer": {
+    "status": "verified_live_corrected_full_reference_geometry_readback",
+    "unit": "fungal-reference-geometry-readback-20260927-v2.service",
+    "pid": 2963630,
+    "created": 1790514911.1,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_reference_alignment_geometry_v2.py",
+      "--plan",
+      "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json"
+    ],
+    "plan_sha256": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+    "correction": "Only initializes input dictionary before bundle loading; original numerical checks unchanged."
+  },
+  "native": "results/structural_comparisons/duplication-reference-alignments-20260926-v1",
+  "diagnostic": "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1",
+  "geometry": "results/structural_comparisons/duplication-reference-geometry-20260927-v1",
+  "geometry_audit": "results/structural_comparisons/duplication-reference-geometry-readback-20260927-v2.json",
+  "geometry_audit_plan": "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json",
+  "output": "results/structural_comparisons/duplication-reference-usable-orders-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ]
+  },
+  "scope": "Full 32541 reference pairs and both masks/orders, explicit numerical exclusions, no coverage/confidence threshold substituted for later scientific review.",
+  "pins": {
+    "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json": "32fa0999794edfaba7d16cac2619c538029e6a7c6a334d26950683ca39150109",
+    "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+    "scripts/summarize_reference_usable_orders.py": "407e5038e646f3dd34b3fcf43b1bfa1bdc0e1049629a1ec5c11772dce39a63d2",
+    "scripts/summarize_duplication_alignment_orders.py": "9b4448ca0dcc53143752c2ce06f5c2c8192c7e7ffb21472f1f91d3455927fd3a",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/duplication-reference-alignments-20260926-v1/receipt.json": "e8b24d4abb47870c2307f60b99f7866ec19b50e9f38e227d7f98c66eed8ecf41",
+    "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1/receipt.json": "cfed0fca5a67be9c16e0571bb26305c96cd89e623b3b5f97224bc3b161db5e20",
+    "results/structural_comparisons/duplication-reference-geometry-20260927-v1/receipt.json": "1a18a36cad5e4ccd7fd20b4ca56ce4b848cb17d9d40537ac1c3a652711842e5e"
+  }
+}

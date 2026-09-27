@@ -7491,3 +7491,15 @@ version adding only the initialization; exact source comparison confirms no
 numerical check or tolerance changed. The corrected full verifier is confirmed
 live. Results remain pending independent acceptance; all eight aims remain
 open and GPU prediction remains paused.
+
+## September 27 reference input-order summary with explicit exclusions queued
+
+The preceding turn repaired and relaunched the independent geometry verifier
+(progress). Revalidated that verifier live and queued a separate complete
+32,541-pair/two-mask summary gated on its successful receipt. Every native order
+is preserved alongside explicit RMSD/short-fit/nonunique-rotation exclusions;
+excluded metrics remain blank, with no favorable-order choice. Known-value
+endpoint reversal, exclusions and unavailable-input checks passed. The waiting
+summary process is verified live. Full summary and independent readback remain
+pending; numerical usability is separate from scientific eligibility. All eight
+aims remain open, and GPU prediction remains paused.
