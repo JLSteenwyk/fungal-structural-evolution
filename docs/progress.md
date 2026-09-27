@@ -9031,3 +9031,7 @@ indelCoder/gainLoss (four CPUs,8GiB RAM,noGPU). Primary methods/source
 references recorded. Terminal-gap and unknown-state handling, overlapping
 gap coding and local capacity beyond the advertised200-sequence limit must
 be checked before inference. No indel result or final ancestral sequence yet.
+
+The FastML indel-tool build subsequently terminated successfully; both binary
+hashes verified. Closure: `metadata/fastml_indel_build_completed_20260927.json`.
+Functional/capacity validation and indel inference remain pending.

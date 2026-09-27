@@ -966,3 +966,7 @@ RAM,no swap/GPU; estimate0.1–2 hours,2GiB output. GNU++11 mode is passed to
 the legacy source build without modifying source. No remote sequence upload,
 paid infrastructure, ancestral FASTA selection or GPU prediction occurs.
 See `docs/bibliography.md` for primary methods/source references.
+
+The FastML indel-tool build subsequently terminated successfully; both binary
+hashes verified. Closure: `metadata/fastml_indel_build_completed_20260927.json`.
+Functional/capacity validation and indel inference remain pending.
