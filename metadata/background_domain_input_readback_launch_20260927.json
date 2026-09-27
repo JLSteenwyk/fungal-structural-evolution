@@ -1,0 +1,14 @@
+{
+  "service": "fungal-background-domain-input-readback-20260927.service",
+  "pid": 2054830,
+  "created": 1790501743.13,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_domain_inputs.py",
+    "--plan",
+    "metadata/background_domain_input_readback_plan_20260927.json"
+  ],
+  "plan": "metadata/background_domain_input_readback_plan_20260927.json",
+  "plan_sha256": "180b7535a57a6f93858a3d8c7a4bae0609a0fcefd254b952f6b4bbe404346ef3",
+  "fixture_status": "passed_three_source_six_dispositions_sixteen_atoms_and_rehashed_coordinate_corruption_rejection"
+}

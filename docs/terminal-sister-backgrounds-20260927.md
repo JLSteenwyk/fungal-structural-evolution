@@ -619,3 +619,23 @@ rejection. One CPU, 8 GiB RAM, no swap, 8 GiB estimated output and a 100 GiB dis
 reserve are configured. Planning is 0.5–24 hours after the audit wait; this is
 uncalibrated. No GPU or paid resources are used. Production extraction,
 independent serialization readback and domain comparisons remain pending.
+
+## Full domain serialization readback queued
+
+Queued `fungal-background-domain-input-readback-20260927.service` behind the
+verified live extraction controller. The checker reconstructs every interval's
+full/pLDDT70 residue selection independently, then parses every ready PDB atom
+for original residue number, amino acid, XYZ, confidence and occupancy. It checks
+the exact 131,986-interval/two-mask grid, all source identities and shard proofs,
+rejected and short-mask dispositions, counts and output bytes. Coordinate
+receipt bindings are checked again after the complete readback.
+
+The three-source fixture passed six dispositions and all 16 emitted CA atoms.
+A deliberately changed coordinate failed numerical reconstruction despite an
+updated PDB hash. Source helpers pinned by other jobs remain unchanged. The
+checker does not repeat the raw-CIF audit or validate biological domain bounds.
+
+Resources: one CPU, 8 GiB RAM, no swap, negligible receipt output and an
+uncalibrated 0.5–24 hours after extraction. At most 42.45 million atom visits
+precede the effect of confidence masks. Production serialization verification
+and all background domain alignments remain pending; no GPU was enabled.

@@ -6500,3 +6500,15 @@ remain pending. See [overlap and extraction](terminal-sister-backgrounds-2026092
 The previous goal turn completed domain inventory verification; this turn
 advances its complete coordinate-input stage. The original eight aims remain
 active and GPU prediction remains paused.
+
+## September 27 background domain serialization readback queued
+
+Prepared, tested and queued independent full verification of all 263,972
+background domain/mask records behind extraction. The three-source fixture
+checked six dispositions and 16 atoms, and rejected a rehashed coordinate
+corruption. Production verification remains pending; no domain structural
+results are claimed. See [serialization checker](terminal-sister-backgrounds-20260927.md#full-domain-serialization-readback-queued).
+
+The prior turn queued coordinate extraction; this turn supplies its complete
+independent output check. All eight aims remain active; GPU prediction stays
+paused.
