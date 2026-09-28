@@ -1,0 +1,28 @@
+{
+  "launch": "metadata/baliphy_prior_initialization_launch_20260927.json",
+  "producer_plan": "metadata/baliphy_prior_initialization_plan_20260927.json",
+  "audit_script": "scripts/audit_baliphy_prior_initializations.py",
+  "expected_audit_status": "all_initialization_dispositions_audited",
+  "expected_jobs": 405,
+  "python": "/home/bizon/anaconda3/bin/python",
+  "output": "results/ancestral/baliphy-prior-initialization-final-readback-20260927-v1",
+  "completion_metadata": "metadata/baliphy_prior_initialization_final_readback_completed_20260927.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.1,
+      2
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/baliphy_prior_initialization_launch_20260927.json": "0c5582d4e1e8bce426ff77b271f1ca057ea192697101979309d1f92fdbdbf77d",
+    "metadata/baliphy_prior_initialization_plan_20260927.json": "30b1ac6ee86957ed02644f1552f8a124cdf85fc36d6df5e3d77f6d9f96cda013",
+    "scripts/audit_baliphy_prior_initializations.py": "8a890d2cac80d308762cbad996d67794a55f2667b68d0fb044fe7bed41c4a9c2",
+    "scripts/advance_baliphy_prior_final_readback.py": "0e0005dd91e9fdde5a05c4d7f894530a5731ad43c88adfe5de4c29a4bd83bdbc",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

@@ -258,3 +258,16 @@ passes four completed initializations, including all three prior settings for
 one input, and retains 401 pending. It does not independently replay the
 likelihood or establish convergence. Evidence:
 `metadata/baliphy_prior_initialization_partial_readback_20260927.json`.
+
+
+The complete prior-grid auditor is now queued behind the verified producer
+PID and creation time. It requires terminal service success and exit code 0,
+then verifies the producer plan and all 405 receipt hashes before auditing.
+All failed job dispositions remain explicit; a finished batch does not imply
+all model settings passed. The handoff rechecks its pinned files while
+waiting and records the final disposition counts only after verifying all
+audited artifacts. It is capped at one CPU and 8 GiB, with no GPU use.
+Plan and launch: `metadata/baliphy_prior_initialization_final_readback_{plan,launch}_20260927.json`.
+The eventual completion record is
+`metadata/baliphy_prior_initialization_final_readback_completed_20260927.json`;
+its absence means this final audit is not yet complete.
