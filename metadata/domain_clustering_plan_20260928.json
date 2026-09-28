@@ -1,0 +1,63 @@
+{
+  "database": "results/structural_clusters/full-domain-database-20260928-v1",
+  "database_plan": "metadata/full_domain_search_database_plan_20260928.json",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "output": "results/structural_clusters/full-domain-clusters-20260928-v1",
+  "predecessor": {
+    "pid": 2225653,
+    "create_time": 1790626591.36
+  },
+  "cluster_arguments": [
+    "--threads",
+    "8",
+    "--split-memory-limit",
+    "64G",
+    "--alignment-type",
+    "2",
+    "--cov-mode",
+    "0",
+    "-c",
+    "0.8",
+    "-e",
+    "0.001",
+    "-s",
+    "7.5",
+    "--max-seqs",
+    "1000",
+    "--cluster-mode",
+    "0",
+    "--cluster-reassign",
+    "1",
+    "--remove-tmp-files",
+    "0"
+  ],
+  "resources": {
+    "cpu": 8,
+    "memory_gib": 128,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "minimum_available_memory_gib": 192,
+    "output_planning_gib": 1000,
+    "runtime_planning_hours": [
+      12,
+      336
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+    "scripts/advance_domain_clustering.py": "873cb24880309409f87fc1d4da4e4d43ceeb69cc97a99ed9f2795667b9767f4c",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_clustering_fixture_checks.json": "a7f272ce5e9c6113327098b891f4a178578d9a5c17a5baf87e858461c836e058",
+    "metadata/full_domain_search_database_plan_20260928.json": "7fd01d6e3a1225e1eabae45bd9fbaf3fb4dd2f4092cd94d0d03c95165263cd30",
+    "metadata/full_domain_search_database_launch_20260928.json": "ee865e98eff8db3b91db98e3989e36126bd42e8208c22c3b2e19ce2d9d7913ef",
+    "scripts/advance_refreshed_domain_clustering.py": "22adbd14d3d788f8c594c43ba6dda88c068ee04342d47ead87eb8422c7bbcbe2",
+    "scripts/readback_whole_proteome_catalog.py": "1e4fc2bd8764204b01d8a1c6251b27437a79a5d93dc842a92d8cb9e73fa3549c",
+    "metadata/domain_clustering_cli_fixture_checks.json": "9e8d704d9f9d389ef33a7dd0397c9a3e5566bbff6f115f38e2c0b43489a45402"
+  },
+  "scope": "All successfully exported candidate intervals from the full domain manifest, preserving both boundary alternatives. Rejections stay explicitly excluded; confidence and homology confirmation remain separate.",
+  "basis": "Up to 1575294 refreshed intervals versus 1078592 in the old partition. Nonlinear search cost prevents reliable linear ETA; allow 12\u2013336 active hours and 1000GiB temporary/output space. Keep original full clustering parameters including coverage0.8, E-value0.001, sensitivity7.5 and max-seqs1000 for comparable baseline. CPU only, same host, no paid resources. Require terminal success plus full database artifact and receipt checks before clustering."
+}

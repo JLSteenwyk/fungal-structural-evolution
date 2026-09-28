@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-full-domain-clustering-20260928.service",
+  "pid": 2238572,
+  "created": 1790627300.89,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_domain_clustering.py",
+    "--plan",
+    "metadata/domain_clustering_plan_20260928.json",
+    "--launch",
+    "metadata/full_domain_search_database_launch_20260928.json"
+  ],
+  "plan_sha256": "a38bda50c1a7ab454c04b8f263d8d0708f5a96dfbf20fe5ad624c9b3f787ac57",
+  "observed_state": {
+    "MainPID": "2238572",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "8s",
+    "MemoryMax": "137438953472",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

@@ -686,3 +686,28 @@ measured ETA. The new residue scope is about 1.475 times the previous database.
 Conversion requires at least 500 GiB free disk and 128 GiB available RAM;
 planning observed more than 11,000 GiB disk and 669 GiB RAM available. The
 controller is waiting; no refreshed database or clustering is complete yet.
+
+### Expanded domain clustering queued (September 28)
+
+`fungal-full-domain-clustering-20260928.service` waits for the identified
+refreshed database controller to finish successfully. Its PID, creation time,
+command and terminal unit state are checked before the unchanged clustering
+implementation verifies the database receipt and every artifact hash. The plan
+and launch record are `metadata/domain_clustering_{plan,launch}_20260928.json`;
+outputs will be in `results/structural_clusters/full-domain-clusters-20260928-v1`.
+
+The full exported interval scope is retained, including both boundary choices.
+Settings match the old baseline: alignment type 2, bidirectional coverage 0.8,
+E-value 0.001, sensitivity 7.5, prefilter cap 1,000, cluster mode 0 and native
+reassignment. All lookup identities must occur exactly once in the exported
+partition, and every representative must include itself. These membership
+checks do not independently validate alignment thresholds or establish
+homology, orthology, confidence qualification or evolutionary events.
+Boundary and parameter sensitivity remain necessary downstream analyses.
+
+The queued service has eight CPU threads, 128 GiB memory and no swap or GPU.
+Allow 1,000 GiB temporary/output space and 12–336 active hours; the expanded
+search cost is nonlinear and this is not a measured ETA. Before starting it
+requires 2 TiB free disk and 192 GiB available RAM, with a 1 TiB emergency disk
+reserve during native execution. No new infrastructure or charges are used.
+The controller is live but waiting; expanded clustering is not yet complete.
