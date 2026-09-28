@@ -116,3 +116,7 @@ the independently checked first-run arrays. Attempt exit codes and result
 hashes passed verification. This handoff check is recorded in
 `metadata/baliphy_full_anchored_states_first_handoffs_20260928.json`; the
 full-grid worker remains active, waiting for subsequent audited chains.
+
+A [tested categorical diagnostic primitive](ancestral-categorical-diagnostics-20260928.md)
+is now available for subsequent four-chain integration. Eight fixtures passed;
+production quartet application and full accounting remain outstanding.

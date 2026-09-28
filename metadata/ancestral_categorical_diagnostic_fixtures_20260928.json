@@ -1,0 +1,16 @@
+{
+  "status": "eight_categorical_diagnostic_tests_passed",
+  "tests": 8,
+  "pins": {
+    "scripts/ancestral_categorical_diagnostics.py": "52ab9326030033d88d98c867b61cb8d2e5f98a19ac680f0e21506a5e29f6d6f6",
+    "scripts/test_ancestral_categorical_diagnostics.py": "facbdf2c040c8da0b940a3836289c0226c4ed893c55a0f5f4abbd52c756e5a66",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f"
+  },
+  "python": "SOFTWARE/ancestral-diagnostics-20260927/bin/python",
+  "scope": "Synthetic diagnostic fixtures only; no production quartet assessment or posterior qualification.",
+  "sources": [
+    "https://arxiv.org/abs/1903.08008",
+    "https://mc-stan.org/rstan/reference/Rhat.html"
+  ]
+}
