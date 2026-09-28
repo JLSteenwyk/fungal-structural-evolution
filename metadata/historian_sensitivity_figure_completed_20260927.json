@@ -1,0 +1,27 @@
+{
+  "status": "complete_full_grid_and_retry_sensitivity_figure",
+  "pins": {
+    "results/ancestral/historian-capacity-audit-20260927-final-v1/receipt.json": "2dcab0ef69fcb9775354ab26d633b93065656aa1b0912724c178e0d149e67228",
+    "results/ancestral/historian-largest-family-comparison-20260927-v1/receipt.json": "7700a192c7ba06fa0e1468fd2fe1c7beafb1e2449bab602297d1e2bcbd2227ff"
+  },
+  "script_sha256": "6c8eacd9d7ef70ede70be37f1940b546e487293af417be1b9f5f30e2bcccf025",
+  "original_comparisons": {
+    "branch_floor": 640,
+    "star_resolution": 5040
+  },
+  "retry_comparisons": 16,
+  "artifacts": {
+    "historian_sensitivity.png": "9a4e8fa8d778f6824abf96b86c92c840d43bf883f13c4d592ffb2e2f28041512",
+    "historian_sensitivity.pdf": "e9fbacd542dabfe11cc700f3597d2895283b824515faccb379a8b1078523fd73",
+    "historian_sensitivity.svg": "64bdedce4684a9df62c5931c2bec50a40ed6d4a41fb717d8ef923bbe9e68b52a"
+  },
+  "scope": "All original-grid paired comparisons and all four-alternative retry contrasts shown separately; no posterior reliability or biological event claim.",
+  "completed_receipt_path": "results/ancestral/historian-sensitivity-figure-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "92795d6ad78578819717cbb6569c9c60110aaa06b2de6d9f8c0391def931965b",
+  "published_artifacts": {
+    "docs/figures/historian_sensitivity_20260927.png": "9a4e8fa8d778f6824abf96b86c92c840d43bf883f13c4d592ffb2e2f28041512",
+    "docs/figures/historian_sensitivity_20260927.pdf": "e9fbacd542dabfe11cc700f3597d2895283b824515faccb379a8b1078523fd73",
+    "docs/figures/historian_sensitivity_20260927.svg": "64bdedce4684a9df62c5931c2bec50a40ed6d4a41fb717d8ef923bbe9e68b52a"
+  },
+  "visual_review": "PNG reviewed: all 16 matrix values and both original-grid comparison counts legible; assumed root marked separately."
+}
