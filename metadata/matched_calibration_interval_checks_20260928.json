@@ -1,0 +1,23 @@
+{
+  "status": "passed_fixed_sample_exact_binomial_interval_checks",
+  "enumerated_probability_cases": 412,
+  "minimum_enumerated_coverage": 0.9542558153895982,
+  "unresolved_envelopes_checked": true,
+  "replicate_summary_checked": true,
+  "invalid_cases_rejected": 6,
+  "illustrative_counts_only": {
+    "attempted": 999,
+    "covered": 940,
+    "unresolved": 10,
+    "alpha": 0.05,
+    "lower": 0.9244760661868051,
+    "upper": 0.963496216509542,
+    "observed_fraction_lower": 0.9409409409409409,
+    "observed_fraction_upper": 0.950950950950951
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_calibration_intervals.py": "8c191b1018269228e920242897ed48d2c8f469ad680626a20425fe3128f9996f",
+    "scripts/matched_calibration_intervals.py": "ffd2e30a5cf25817bc70f434c18ed88dd78bbd0772b0121e73c8d42ea9bf3ec3"
+  },
+  "scope": "Finite enumeration checks of interval implementation, not project coverage. Requires fixed sample size and iid simulation under a single model; no optional stopping or joint multiplicity claim."
+}

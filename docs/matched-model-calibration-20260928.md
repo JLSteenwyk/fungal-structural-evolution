@@ -221,3 +221,32 @@ allowance, with 1–24 active hours budgeted after the dependency wait. Plan and
 launch identity use the `metadata/matched_simulation_cache_replay_` prefix.
 The full replay has not yet passed, and no calibrated uncertainty claim follows
 from this limited helper check.
+
+## Monte Carlo interval accounting implemented
+
+`scripts/matched_calibration_intervals.py` adds fixed-sample exact binomial
+(Clopper–Pearson) intervals to replicate accounting. If k refits demonstrably
+cover the generating coefficient and u remain unresolved among n attempts,
+the lower endpoint uses k successes and the upper endpoint uses k+u successes.
+This contains the exact interval for every possible resolution of the unknown
+outcomes. Failed refits are not removed from n. An entirely unresolved batch
+returns [0,1]. These bounds describe uncertainty about a putative resolved
+procedure; they do not turn a procedure with numerical failures into a qualified
+estimator. The operational rule for failures must also be reported.
+
+`summarize_replicates` connects this calculation to the refit dispositions,
+retaining duplicate-replicate rejection and separate coefficient accounting.
+Fixed-sample independent simulation under one generating model is required.
+The intervals are marginal Monte Carlo intervals, not coefficient confidence
+intervals, not simultaneous grid-wide statements, and not valid under arbitrary
+optional stopping. Production must fix the sample count or implement a separately
+justified sequential method and address any intended multiplicity claims.
+
+The checker enumerated binomial coverage at 412 sample-size/probability settings;
+the minimum enumerated coverage for nominal95% intervals was95.43%. It also
+checked unresolved-outcome interval containment, boundary counts, very small
+alpha, six invalid-input cases and the refit-summary connection. This finite
+enumeration is a numerical check, not a proof over every probability or project
+coverage evidence. Reproduce with
+`scripts/check_matched_calibration_intervals.py`; evidence is in
+`metadata/matched_calibration_interval_checks_20260928.json`.
