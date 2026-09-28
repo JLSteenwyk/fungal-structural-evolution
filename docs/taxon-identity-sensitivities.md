@@ -254,3 +254,28 @@ Exact disjoint partition coverage, independent full-string counts and agreement
 with the original pairwise table passed. Reproduction:
 `scripts/assess_serendipita_shared_marker_sites.py`. Evidence:
 `metadata/serendipita_shared_marker_sites_completed_20260927.json`.
+
+
+### Marker concentration and selected-protein provenance
+
+All 5,000 comparison rows now include selected protein IDs, exact extracted
+sequence hashes/lengths, and raw BUSCO copy status for both taxa. Available
+sequences match the extraction mapping and audited raw protein calls. All
+markers, including missing selections and zero-data rows, remain represented.
+The complete table and 40 concentration summaries are in
+`results/phylogeny/serendipita-marker-provenance-20260927-v1`.
+
+For strains 405 and 411 on shared sites, the ten markers contributing most
+differences account for 95.74% of profile differences and 94.72% of MAFFT
+differences. Of 69 markers with shared sites, 34 profile and 24 MAFFT markers
+have no observed difference. Marker 5004391at2759 contributes 187/830 differing
+shared profile columns but 9/826 shared MAFFT columns. The shared column sets
+differ between methods; this is alignment-context sensitivity, not evidence
+that the biological sequence changed.
+
+These observations motivate locus-level correspondence/annotation review;
+they do not diagnose contamination, justify deleting high-difference markers,
+or delimit species. Every concentration total and top-1/3/5/10 fraction was
+independently reproduced with pandas grouping. Reproduction:
+`scripts/trace_serendipita_marker_differences.py`. Evidence:
+`metadata/serendipita_marker_provenance_completed_20260927.json`.
