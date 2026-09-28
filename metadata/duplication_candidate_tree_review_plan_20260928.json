@@ -1,0 +1,60 @@
+{
+  "coverage": "results/orthology/duplication-structure-coverage-20260928-v1",
+  "bridge": "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite",
+  "output": "results/orthology/duplication-candidate-tree-review-20260928-v1",
+  "pins": {
+    "metadata/duplication_event_identity_audit_plan_v2.json": "16383f74199b5d549efc50caacd80f926275e4aa66b4623159216b87ba097a49",
+    "metadata/duplication_event_identity_completed_receipt_20260923.json": "4bc7d31566d5a55e515d03287d552b04883e1feaceee88feacec17dda3928b4d",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "scripts/inventory_duplication_structure_coverage.py": "9b867d6953acdcdb5217e75897216ce5c0601252776906820511de81954230bd",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_structure_coverage.py": "a1db95b0775d002765ee1ce381314a6eb4411320421109b8a70a7ca23034959d",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "scripts/validate_duplication_structure_candidates.py": "e0e2d37af7534ec5d675a3b6811b7f6b880b504f59a9d393b21029945294c2e4",
+    "scripts/check_duplication_candidate_tree_nodes.py": "3db84ba3b04fce03460d019af0fd55a677d2ceb1fd05979b53bcca76ed9e750e",
+    "metadata/duplication_structure_coverage_plan_20260928.json": "de20d35bd9c07d824aa8bfb7d8969ff87c0ec07fd46932e3d949aa0568a3cf0f",
+    "results/orthology/duplication-structure-coverage-20260928-v1/receipt.json": "af3077d7c13f7a04035878ad1caf8b5ae5a0d815e677a332d09be6896de08da6",
+    "results/orthology/duplication-expanded-candidate-export-readback-20260928-v1.json": "9d0f9e21ed429ca7ac6f5ce1a72e040dce5614bb30bce91fa44322af3f51cc22",
+    "scripts/check_expanded_duplication_candidate_export.py": "516f28d0e015c9d5bb7f8293cbe48257165d48794236bcc8546dc44184a2b2ab",
+    "scripts/estimate_expanded_duplication_pairs.py": "cfe48bfb2ab504f8234fc9a1b58fd37630797d126f500dc2e1eb82631c525d92",
+    "scripts/check_duplication_candidate_export_identity.py": "89e18fbdb82ae0ce1cad4dc39a9f8a32a9fda6a4b22aa51adeab8d030f6a11f7",
+    "results/orthology/duplication-structure-coverage-20260928-v1/mafft_terminal_two_model_candidates.tsv": "96cad0e2db4068800411428832c497861bb4d1869a81e90ea291ba33629553f0",
+    "results/orthology/duplication-structure-coverage-20260928-v1/profile_terminal_two_model_candidates.tsv": "58bb8da500f850b9b376931ed6d15b1464042cc8b59164d3c8767f44298bb7a1",
+    "results/orthology/duplication-structure-coverage-20260928-v1/profile_event_coverage.tsv.gz": "ffc5670745b4c15777aeb38256f2162c78e91981accd524463054fba71add653",
+    "results/orthology/duplication-structure-coverage-20260928-v1/mafft_event_coverage.tsv.gz": "b532d87e969444be9b769a3167747499592a2cfbf0b0c83ff4ad0a5b34a074ef"
+  },
+  "guides": [
+    {
+      "guide": "profile",
+      "events": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv",
+      "trees": "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+      "tree_readback": "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json"
+    },
+    {
+      "guide": "mafft",
+      "events": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv",
+      "trees": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt",
+      "tree_readback": "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json"
+    }
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Reconstruct all 283409 candidate rows from complete native events and expanded model bridge, then parse 50063 guide-specific candidate-bearing family trees. Unchanged reviewer; no structural alignments or GPU predictions."
+  }
+}

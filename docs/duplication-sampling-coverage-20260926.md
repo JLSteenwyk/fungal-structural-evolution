@@ -223,3 +223,47 @@ This inventory is not an executable comparison queue. Expanded candidate
 tree-node correspondence, coordinate/confidence checks and masking eligibility
 remain prerequisites. Source event associations remain intact, and deduplicating
 model pairs for computation does not create independent biological observations.
+
+### Expanded native-event inventory and tree review
+
+The unchanged `inventory_duplication_structure_coverage.py` has completed a
+new full native-event inventory using the audited September 28 family bridge.
+The output at `results/orthology/duplication-structure-coverage-20260928-v1/`
+retains all 1,204,638 profile and 1,204,919 MAFFT events, including complex and
+uncovered events. Its terminal two-model exports contain 141,724 and 141,685
+candidates, respectively, each spanning 210 taxa. Source-plan binding, artifact
+hashes and successful service termination are archived in
+`metadata/duplication_structure_coverage_completed_20260928.json`.
+
+Every candidate identity, taxon, gene/model assignment and same-model flag was
+compared against the independent expanded catalog join, scanning all 935,353
+terminal singleton-side records. The initial comparison exposed a formatting
+difference: native gene order versus sorted gene order. The corrected checker
+sorts paired gene/model assignments together, preserving the mapping. Fixtures
+verify order invariance and rejection of changed assignments, genes, taxa and
+flags. All 283,409 candidates passed. This does not check every noncandidate
+coverage field or establish structural eligibility.
+
+Reproduce the inventory with `scripts/inventory_duplication_structure_coverage.py
+--plan metadata/duplication_structure_coverage_plan_20260928.json` in a fresh
+output location. The plan allows one CPU, 8 GiB RAM, zero swap, 2 GiB output and
+0.1–4 hours; the run completed in 86 CPU seconds with an 804-MB peak. Reproduce
+the candidate comparison with `scripts/check_expanded_duplication_candidate_export.py
+--coverage results/orthology/duplication-structure-coverage-20260928-v1
+--expanded-readback results/orthology/duplication-expanded-coverage-readback-20260928-v1.json
+--output <fresh-json-path>`; run its focused identity fixtures with
+`scripts/check_duplication_candidate_export_identity.py`.
+
+The full tree review is now running as
+`fungal-duplication-candidate-tree-review-20260928.service`, using unchanged
+`validate_duplication_structure_candidates.py` with
+`metadata/duplication_candidate_tree_review_plan_20260928.json`.
+It independently rebuilds eligibility from native events and the frozen model
+bridge, then checks reported nodes in 50,063 guide-specific candidate-bearing
+family trees. Both descendant identity and direct-tip-child status are retained;
+missing or mismatching nodes remain explicit. The plan caps one CPU and 8 GiB
+RAM with zero swap, allows 1 GiB output and an uncalibrated 0.1–6-hour runtime.
+Launch identity is in `metadata/duplication_candidate_tree_review_launch_20260928.json`.
+Completion and results remain pending. No GPU work or structural alignment was
+launched; rooting, support, duplication biology and structural effects remain
+separate requirements.

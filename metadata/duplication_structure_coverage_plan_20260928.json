@@ -1,0 +1,33 @@
+{
+  "output": "results/orthology/duplication-structure-coverage-20260928-v1",
+  "event_plan": "metadata/duplication_event_identity_audit_plan_v2.json",
+  "event_audit": "metadata/duplication_event_identity_completed_receipt_20260923.json",
+  "bridge": "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite",
+  "bridge_receipt": "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json",
+  "bridge_readback": "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json",
+  "pins": {
+    "metadata/duplication_event_identity_audit_plan_v2.json": "16383f74199b5d549efc50caacd80f926275e4aa66b4623159216b87ba097a49",
+    "metadata/duplication_event_identity_completed_receipt_20260923.json": "4bc7d31566d5a55e515d03287d552b04883e1feaceee88feacec17dda3928b4d",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "scripts/inventory_duplication_structure_coverage.py": "9b867d6953acdcdb5217e75897216ce5c0601252776906820511de81954230bd",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_structure_coverage.py": "a1db95b0775d002765ee1ce381314a6eb4411320421109b8a70a7ca23034959d",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Same complete native event universe: 2.41 million events and 79.4 million repeated descendant assignments. Refreshed bridge has 1,955,694 links. Reuse unchanged streaming inventory to prepare exact candidate tables required by the existing full gene-tree reviewer. Runtime range is a planning allowance, not a measured ETA."
+  }
+}
