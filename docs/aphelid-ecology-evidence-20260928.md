@@ -150,3 +150,23 @@ Outputs are in `results/ecology/aphelid-copy-tree-placements-20260928-v2`;
 The v1 exploratory output is preserved; v2 adds explicit catalog-receipt
 checksum enforcement and reproduces identical output-table hashes. Every
 serialized table was read back and compared with its computed records.
+
+### Exact-sequence structure availability across all copies
+
+`assess_aphelid_copy_structure_coverage.py` screened all1,910,138 models in
+the validated September28 AFDB catalog and all25,322 models in the frozen
+September22 ESMFold union. Among241 proteins (235 distinct sequences), only
+the previously identified single-copy marker has an ESMFold model. The other
+240 proteins (234 distinct sequences) have no match in either frozen catalog.
+This separates the single-copy marker-selection limitation from a real gap in
+our current cached models for duplicated copies. It does not establish absence
+from all public databases. No new predictions were launched.
+
+The script validates inventory/catalog hashes, exact sequence hashes and
+lengths, and coordinate hashes for matching models. It retains every protein
+identity and full source model records in
+`results/ecology/aphelid-copy-structure-coverage-20260928-v1/all_copy_model_availability.tsv`.
+Serialized records were read back exactly. The receipt is tracked in
+`metadata/aphelid_copy_structure_coverage_20260928.json`. Model availability
+remains distinct from qualified structural alignment coverage; the one model
+still fails the unchanged53-versus54 qualified-column requirement.

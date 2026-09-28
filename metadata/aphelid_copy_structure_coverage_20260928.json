@@ -1,0 +1,28 @@
+{
+  "status": "complete_exact_sequence_aphelid_copy_model_availability",
+  "proteins": 241,
+  "distinct_sequences": 235,
+  "scanned_models": {
+    "afdb": 1910138,
+    "esmfold": 25322
+  },
+  "protein_availability_counts": {
+    "absent_from_both_frozen_catalogs": 240,
+    "esmfold": 1
+  },
+  "distinct_sequences_with_any_model": 1,
+  "sources": {
+    "results/ecology/aphelid-marker-copy-inventory-20260928-v1/receipt.json": "beda29f7b911f52c4c775156f3e8d0626650c53b46274b0506004436c96d2d49",
+    "results/ecology/aphelid-marker-copy-inventory-20260928-v1/marker_protein_copies.tsv": "aa245bcc45e91b94920aba988824202665923092091ba0001a75dfb4f03d0b20",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/esmfold-all-completed-20260922-v1/inventory.jsonl": "0c44c08ce1cc8fabbecf867e4ca4164e6ba37f0f6390acd7df04bf5cceac9681",
+    "results/structures/esmfold-all-completed-20260922-v1/receipt.json": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363"
+  },
+  "script_sha256": "3f5b2224afd55b39af3dfb961550645404901617bcf80c10add2cac0c81a5786",
+  "artifacts": {
+    "all_copy_model_availability.tsv": "77b95a39601309472417b5dc1c0c5729750127d1a60f0e579ee99fec1b2911b0"
+  },
+  "scope": "All marker copy identities retained; exact sequence and length matching, selected coordinate hashes checked. Frozen-catalog absence is not public absence. Availability is not confidence-qualified coverage, and no new inference is launched."
+}

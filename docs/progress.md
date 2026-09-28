@@ -9831,3 +9831,20 @@ does not establish universal coverage or complete the biological project.
   Coordinate hashes were verified by the producer; the independent readback
   reconstructs every protein/model link and all taxon coverage rows. Comparison
   with the previous catalog remains active; GPU prediction remains paused.
+
+- September28: screened all241 aphelid marker-copy proteins against the frozen
+  validated1,910,138-model AFDB catalog and25,322-model ESMFold union. Only the
+  previously known single-copy marker has a model;240 proteins representing234
+  distinct sequences remain absent from these catalogs. All identities and
+  source records were retained, with exact-sequence/length and matching-file
+  hash checks. This documents a copy-aware coverage gap without treating it as
+  public-database absence or launching new GPU inference.
+
+- September28: full old/new atlas comparison and independent source replay
+  completed. The fixed protein universe gains636,181 links, replaces6,939
+  selected models, preserves1,312,574 selections and loses zero links;
+  3,860,153 proteins remain unlinked in both catalogs. Every source link field,
+  output disposition and all526 taxon summaries were checked. README now
+  reports33.63% current AFDB catalog coverage. Existing downstream analyses
+  remain bound to their original frozen inputs; expanded atlas integration
+  and confidence qualification are still required.

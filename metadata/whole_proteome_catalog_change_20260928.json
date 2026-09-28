@@ -1,0 +1,24 @@
+{
+  "status": "complete_validated_catalog_comparison",
+  "plan_sha256": "689e4288324406112b5ad963c67f256fb6010cb833c9ac5fb81ebb9023695032",
+  "old_links": 1319513,
+  "new_links": 1955694,
+  "net_link_change": 636181,
+  "dispositions": {
+    "unchanged_model": 1312574,
+    "new_catalog_link": 636181,
+    "changed_selected_model": 6939
+  },
+  "unlinked_in_both": 3860153,
+  "sources": {
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/receipt.json": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd"
+  },
+  "artifacts": {
+    "protein_link_dispositions.tsv": "69b33f8312d7f5902f1cd99888c1d68b59a2be545bfca963e7434fbd45d51126",
+    "taxon_coverage_change.tsv": "4d69bf87440286f60b137c86c01fa285a102bfd7a7112118804f4e008b1e3718"
+  },
+  "scope": "Exact-sequence catalog coverage change in a fixed representative-protein universe. Lost links and model replacements retained. Newly covered proteins are not necessarily newly inferred structures; no new confidence qualification or evolutionary inference."
+}

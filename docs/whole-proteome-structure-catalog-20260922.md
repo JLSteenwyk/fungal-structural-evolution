@@ -245,3 +245,39 @@ allowances, not a benchmark or ETA. Launch gates require 2 TiB free disk and
 process group if free disk drops below 1 TiB. Temporary files are retained.
 No GPUs, external service or paid infrastructure are used. At this checkpoint
 the controller is live and waiting; no clustering result is claimed.
+
+## September28 catalog refresh and full comparison
+
+The new frozen inventory contains1,947,145 retrieval records. The refreshed
+catalog at `results/structures/whole-proteome-afdb-catalog-20260928-v1` contains
+1,910,138 selected models linked to1,955,694 of5,815,847 representative proteins
+(33.63%), with at least one match in500 of526 taxa. Production coordinate-hash
+checks and independent full sequence/model-selection readback completed with
+terminal success. Catalog absence does not establish public-database absence.
+
+The fixed-universe comparison against the September22 catalog yields:
+
+| Protein-link disposition | Count |
+|---|---:|
+| Newly linked | 636,181 |
+| Changed selected model | 6,939 |
+| Unchanged selected model | 1,312,574 |
+| Lost link | 0 |
+| Unlinked in both catalogs | 3,860,153 |
+
+`compare_whole_proteome_catalogs.py` generated the full protein disposition
+and526-taxon coverage tables under
+`results/structures/whole-proteome-catalog-change-20260928-v1`.
+`readback_whole_proteome_catalog_comparison.py` independently uses CSV parsing
+and keyed source-record comparisons to verify every old and new link field,
+unique union membership, dispositions, and all taxon counts and coverage
+fractions. This readback completed successfully; its result and the comparison
+receipt are tracked as
+`metadata/whole_proteome_catalog_comparison_readback_20260928.json` and
+`metadata/whole_proteome_catalog_change_20260928.json`.
+
+These are existing-model retrieval and selection gains, not new local
+predictions. Source-specific confidence qualification and downstream atlas
+analyses remain incomplete. Existing domain/cluster analyses retain their
+frozen older catalog inputs; they have not been silently expanded to the new
+catalog, and their coverage must not be reported as covering all new models.
