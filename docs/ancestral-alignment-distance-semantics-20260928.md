@@ -97,3 +97,29 @@ Completion evidence is in
 `metadata/ancestral_extant_geometry_fixture_completed_20260928.json`.
 This finishes full frozen-input geometry qualification; production quartet
 mixing, autocorrelation and ancestral-state diagnostics remain outstanding.
+
+## First terminal production chains
+
+At the September 28 04:56 UTC checkpoint, seven independently seeded
+production chains had reached the initial 1,000-iteration horizon. Their
+saved-sample audits cover 707 alignments (iterations 0–1,000 every ten steps)
+and 2,828 candidate-node sequence records. The checkpoint rechecked 89
+source/output files, configuration bindings, terminal process identities,
+exit codes, scalar-log hashes and four candidate records at every saved step.
+The seven chains belong to seven different input/prior models: **no model
+has a complete four-chain quartet in this frozen subset**. Samples include
+burn-in and are not a qualified stationary posterior.
+
+Evidence: `metadata/baliphy_first_completed_chains_20260928.json`.
+To take another frozen checkpoint without editing active outputs:
+
+```bash
+python scripts/snapshot_completed_independent_chains.py \
+  --root results/ancestral/baliphy-independent-chains-20260927-v1 \
+  --output metadata/baliphy_terminal_chain_snapshot_NEW.json
+```
+
+The controller remained live with 16 active workers after these completions.
+A 45-second process-identity check observed CPU progress from all 16 workers;
+completed slots had advanced to subsequent inputs. The initial horizon is
+an execution checkpoint, not a convergence stopping rule.
