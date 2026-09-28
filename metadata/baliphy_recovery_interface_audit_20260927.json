@@ -1,0 +1,29 @@
+{
+  "status": "completed_bounded_installed_interface_search",
+  "searched_modules": 10,
+  "search_pattern": "checkpoint|restart|resume|serializ|restore",
+  "matches": [],
+  "pins": {
+    "metadata/baliphy_prior_initialization_plan_20260927.json": "30b1ac6ee86957ed02644f1552f8a124cdf85fc36d6df5e3d77f6d9f96cda013",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_recovery_interface.py": "b8fb8a1e3cb12876e0781a5398d5d0d626870274593a982d27bc545b70e5dd7d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC.hs": "9bf1038e329e57f7048062752323e65a84824d7460576cfe19439fa3ac359814",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Loggers.hs": "9013d26ee7e8d3595231f577a09a080e6eee34a10c123f6b36ffb0e17a6b51b6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/Alignment.hs": "333a1e61a20edbb1445457ef119a97cf87315b9cf5148ce1d73a2cfac332a09f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/Context.hs": "98d02e03a69c722a5e163a1e7bedc0e9ca176a437db4bfab032c4319539de99e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/Integer.hs": "073d7efe30ad0eb5b74e9537e77445c101824639eed6fb0c74704d39929c7a8d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/MH.hs": "8c244702fe708ced1da91b60c7827246eb82a54606598db0aa21bd5588ad255c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/Real.hs": "fb4197af3f3c0342d5b72975f3c901ded1ca66c03e7b2e0854f68a3f2e5c1542",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves/Tree.hs": "6196dcc1836775c6a9cbd42ae55b5f7f1c4c037c4ede043cfce8e487e8cb202b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Moves.hs": "1fc1e7b9b05ac8cb04a539b26cc46624adabc195cb5614e92f1c495c49a6e0c7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/MCMC/Types.hs": "699cec6046fcb8e57e4257e10d32d3a91935c3de06b6629ef322cc8832073c7b"
+  },
+  "artifacts": {
+    "expert.txt": "62b19760551cd777ca9352da26c8f9e64116f4117b6cb4701b59b31b1cf80dd9",
+    "developer.txt": "afaf43985b571f747e5e11a207340facead906b8ba1c6f9bf84ea4aeee75f4ae",
+    "advanced.txt": "58c5d8fe63171192efb0c092bd4f19ca1710ef6ad657f8181e57a65d468cda23"
+  },
+  "scope": "Help levels and installed MCMC Haskell modules only. No proof that native code or other interfaces lack checkpoint support. No restart or interrupted-chain recovery was executed.",
+  "receipt_path": "data/software_audits/baliphy-recovery-interface-20260927-v1/receipt.json",
+  "receipt_sha256": "d826536586d8bc9b1a2577afca3c7016432d0d9e5de40bde83384f80c173d4e6"
+}

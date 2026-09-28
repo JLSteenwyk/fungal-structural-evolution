@@ -320,3 +320,38 @@ convergence evidence or direct runtime forecasts for longer free-parameter
 chains. Full-grid sampling and the queued final audits remain active.
 Records: `metadata/baliphy_sample_mapping_partial_readback_v7_20260927.json`
 and `metadata/baliphy_resource_partial_v3_completed_20260927.json`.
+
+
+### Recovery interface review and longer-chain requirements
+
+The installed advanced, expert and developer help and ten installed MCMC
+Haskell modules contain no matches for checkpoint, restart, resume,
+serialization or restore. This bounded search is reproducible with
+`scripts/audit_baliphy_recovery_interface.py`; its receipt is tracked in
+`metadata/baliphy_recovery_interface_audit_20260927.json`. It does not
+establish that the native implementation or every other interface lacks
+checkpoint support. No interrupted-chain continuation has been validated.
+
+The inspected generated program calls `makeMCMCState` before `runMCMC`.
+Relaunching that program is therefore not a demonstrated continuation of its
+previous chain. The current short-run controller reuses completed,
+hash-verified receipts, but an incomplete existing job directory prevents
+its `mkdir(exist_ok=False)` path from proceeding. It is not a complete
+interrupted-job recovery implementation. Do not modify this pinned controller
+while its batch or final audit is active.
+
+The longer-chain controller must use separate immutable attempt directories,
+record seed and process identity, and retain every interrupted attempt.
+Reuse a successful attempt only after checking its configuration and output
+hashes. A rerun starts a new chain with its own burn-in and diagnostics;
+never concatenate its samples with an interrupted chain or count reused
+seed/input aliases as independent chains. Before replacing any attempt,
+verify that its original process and descendants have terminated. Interrupted
+attempts remain excluded from posterior qualification unless explicitly
+reviewed. Runtime-tree export and iteration-matched alignment readback remain
+required for every chain. Native checkpoint continuation would require a
+separate interrupted/uninterrupted equivalence check, including random state,
+model parameters and saved-sample identities, before use.
+
+These are implementation requirements for the next controller, not a claim
+that longer chains, recovery tests or posterior convergence are complete.
