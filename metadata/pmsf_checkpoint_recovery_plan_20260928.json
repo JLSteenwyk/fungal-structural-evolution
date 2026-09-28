@@ -1,0 +1,36 @@
+{
+  "original_output": "results/phylogeny/pmsf-mafft-mafft-v1",
+  "control": "results/recovery-20260928/pmsf-mafft-mafft",
+  "recovery_boot_id": "ac228d23-948f-4cab-b48a-8267581781a7",
+  "checkpoint_sha256": "b60d6d75a8b1d57577f6947a74b8a4fd74804c332861f229adedd97b4937e9b6",
+  "resources": {
+    "cpu": 16,
+    "memory_max_gib": 650,
+    "minimum_available_memory_gib": 750,
+    "minimum_free_disk_gib": 100,
+    "swap_gib": 0,
+    "runtime_remaining_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "results/phylogeny/pmsf-mafft-mafft-v1/config.json": "b5b0c9bf64dea3f50415368be2c35c1dda07e92c9192519a2876d86705f4d4b3",
+    "scripts/recover_species_pmsf_checkpoint.py": "cf7a456ad33027f58d08ac13b634e6bd8403e77d872875e30f9c0eb84f7805ab",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de"
+  },
+  "recovery_reason": "SIGTERM interruption at 2026-09-28 12:28 EDT, not a reboot; old controller and native PIDs absent and no command-matching replacement active.",
+  "snapshot": {
+    "results/recovery-20260928/pmsf-before-resume/pmsf.ckp.gz": "b60d6d75a8b1d57577f6947a74b8a4fd74804c332861f229adedd97b4937e9b6",
+    "results/recovery-20260928/pmsf-before-resume/config.json": "b5b0c9bf64dea3f50415368be2c35c1dda07e92c9192519a2876d86705f4d4b3",
+    "results/recovery-20260928/pmsf-before-resume/stdout.log": "75ac4de50d3df92621bfb185b651d0cd92265f62d31d188247ad7a1ed4892f9c",
+    "results/recovery-20260928/pmsf-before-resume/pmsf.log": "75ac4de50d3df92621bfb185b651d0cd92265f62d31d188247ad7a1ed4892f9c"
+  },
+  "status": "prepared_not_launched_memory_below_750_GiB",
+  "available_memory_gib_at_preparation": 690.0594940185547,
+  "planning_remaining_hours": [
+    1,
+    336
+  ],
+  "runtime_basis": "Native log reported about17h remaining before interruption; broad planning allowance, not calibrated ETA."
+}
