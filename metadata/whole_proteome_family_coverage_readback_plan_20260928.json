@@ -1,0 +1,32 @@
+{
+  "producer_plan": "metadata/whole_proteome_family_coverage_plan_20260928.json",
+  "output": "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.1,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/bridge_whole_proteome_structures_to_families.py": "4b4c520a51c4f3811f69bd2ad6116cc5bacb55a7ec3da8aa695ea7299eee88a2",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/whole_proteome_structure_catalog_readback_plan_20260928.json": "753b7075512cbcd8bdcc22e2e76028d11f0b9aaf3e87462a64870f340cb7c62e",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "results/domains/family-domain-bridge-v1/receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "scripts/check_whole_proteome_family_readback.py": "71305c91157b7e9ba44bc2033de429022600425e28fc7cb4dd85d374b477bda7",
+    "metadata/whole_proteome_family_coverage_plan_20260928.json": "1481dc59f078e05bd3a9c7e03536711ac67938d36622b57dd868fed4992ab8e6",
+    "scripts/advance_refreshed_family_coverage_readback.py": "818417fdf97a8e1a6df734ffad355431bbc0a36af27e1e3e3af52527086f0904",
+    "metadata/whole_proteome_family_coverage_launch_20260928.json": "b06f21b367f3fa5f691dff7040963d027804fa9ba71a758dc4d066d599775821"
+  }
+}

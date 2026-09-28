@@ -1,0 +1,26 @@
+{
+  "unit": "fungal-whole-proteome-family-coverage-20260928-v2.service",
+  "pid": 2166720,
+  "created": 1790623392.58,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/bridge_whole_proteome_structures_to_families.py",
+    "--plan",
+    "metadata/whole_proteome_family_coverage_plan_20260928.json"
+  ],
+  "plan_sha256": "1481dc59f078e05bd3a9c7e03536711ac67938d36622b57dd868fed4992ab8e6",
+  "observed_state": {
+    "MainPID": "2166720",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "34359738368",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  },
+  "previous_attempt": {
+    "unit": "fungal-whole-proteome-family-coverage-20260928.service",
+    "terminal_state": "failed",
+    "exit_status": 1,
+    "cause": "Plan preparation used Python3.11 hashlib.file_digest in Python3.10, so no plan was written; initial launch exited before outputs. Corrected preparation uses existing project sha helper."
+  }
+}

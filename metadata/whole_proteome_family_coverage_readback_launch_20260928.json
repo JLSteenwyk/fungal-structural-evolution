@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-whole-proteome-family-readback-20260928.service",
+  "pid": 2167388,
+  "created": 1790623442.75,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_family_coverage_readback.py",
+    "--plan",
+    "metadata/whole_proteome_family_coverage_readback_plan_20260928.json",
+    "--launch",
+    "metadata/whole_proteome_family_coverage_launch_20260928.json"
+  ],
+  "plan_sha256": "056bc8f816c9280454cea54d8e13ebaacccd5ea2a3d79cd649929b21f6d74db4",
+  "observed_state": {
+    "MainPID": "2167388",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "34359738368",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

@@ -306,3 +306,27 @@ legend outside the data panels while preserving identical tables. The figure
 receipt and visual/readback record are tracked under
 `metadata/refreshed_atlas_lineage_coverage_figure_20260928.json` and
 `metadata/refreshed_atlas_lineage_coverage_figure_visual_check_20260928.json`.
+
+### Refreshed family-coverage integration in progress
+
+The unchanged `bridge_whole_proteome_structures_to_families.py` is now applying
+both complete family partitions to the refreshed catalog, preserving all
+families including those without structures. Its new plan/output are
+`metadata/whole_proteome_family_coverage_plan_20260928.json` and
+`results/structures/whole-proteome-family-coverage-20260928-v1`. One CPU,
+32GiB RAM, no swap and a20GiB output allowance are configured; the conservative
+0.5–24h runtime allowance is uncalibrated. More than11TiB free storage was
+available at launch. No GPU prediction or paid resource is involved.
+
+The independently implemented set-based readback is queued with its own
+one-CPU/32GiB limits. `advance_refreshed_family_coverage_readback.py` checks the
+producer PID, creation time and command, requires terminal systemd success
+with exit0, then invokes the existing full readback. The readback checks every
+model identity and family-coverage row. Launch metadata and pinned plans are
+tracked; active jobs do not establish completion or biological qualification.
+
+An initial plan-generation command used a hashing API unavailable in Python3.10.
+No plan was produced, and its initial service exited before creating outputs.
+Preparation was corrected to use the existing project hash helper; the separate
+v2 service is the live replacement. The failed unit and cause are retained in
+launch metadata. No active script or original catalog was modified.

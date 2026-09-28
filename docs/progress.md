@@ -9856,3 +9856,11 @@ does not establish universal coverage or complete the biological project.
   have zero matches in the frozen AFDB catalog. This documents uneven sampling
   for downstream evolutionary interpretation rather than treating aggregate
   coverage as representative of every lineage or taxon.
+
+- September28: launched refreshed full family/structure integration for all
+  1,955,694 protein links and both complete family partitions, using the existing
+  checked implementation. Its independent full readback is queued behind
+  verified terminal producer success. Each job is limited to one CPU and32GiB;
+  GPU inference remains paused. An initial pre-output launch failure caused by
+  a plan-generation Python API mismatch was corrected and preserved in the
+  launch record. Results remain pending.
