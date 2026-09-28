@@ -42,8 +42,9 @@ and joint insertion/deletion uncertainty remain active. The
 [Historian assessment](docs/historian-method-assessment-20260927.md) and
 [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguish
 software checks and short diagnostic chains from qualified posterior ensembles.
-Two Historian jobs for the largest, 622-protein family reached the initial
-memory cap; retries preserve all sequences and settings with a higher cap.
+Four Historian jobs for the largest, 622-protein family reached the initial
+memory cap (two MAFFT and two FAMSA alignments); separate retry batches preserve
+all sequences and scientific settings with a higher cap.
 
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.

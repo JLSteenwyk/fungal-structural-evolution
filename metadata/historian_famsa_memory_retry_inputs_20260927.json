@@ -1,0 +1,35 @@
+{
+  "jobs": [
+    {
+      "job_id": "OG0000972-whole-famsa-floor1e-09-resolution0",
+      "input_id": "OG0000972-whole-famsa",
+      "family": "OG0000972",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000972-famsa/alignment.faa",
+      "alignment_sha256": "d861afe082bac82d918b951273922c87a2975bb9b8cecad6a8541d2799f5cf1f",
+      "proteins": 622,
+      "tree": "results/ancestral/historian-sensitivity-inputs-20260927-v1/profile-OG0000972-whole-floor1e-09-resolution0.nwk",
+      "tree_sha256": "5824e2cf3f8329c81a6547c8a24927406d62f2e5c2cffaf869a49e025de8bf7b",
+      "root": "n573",
+      "artificial_nodes": []
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-floor1e-07-resolution0",
+      "input_id": "OG0000972-whole-famsa",
+      "family": "OG0000972",
+      "alignment": "results/ancestral/case-alignments-20260927-v1/OG0000972-famsa/alignment.faa",
+      "alignment_sha256": "d861afe082bac82d918b951273922c87a2975bb9b8cecad6a8541d2799f5cf1f",
+      "proteins": 622,
+      "tree": "results/ancestral/historian-sensitivity-inputs-20260927-v1/profile-OG0000972-whole-floor1e-07-resolution0.nwk",
+      "tree_sha256": "f366938806d23b70953c2e7f6d5da43998f5f993fd4c8f4d3a827c44f1965718",
+      "root": "n573",
+      "artificial_nodes": []
+    }
+  ],
+  "source_receipt": "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json",
+  "source_receipt_sha256": "149585b3bf326ce471b2619f5fa0e4075395a39f09669f683089d6a07d967430",
+  "original_failure_receipts": {
+    "results/ancestral/historian-capacity-20260927-v1/OG0000972-whole-famsa-floor1e-09-resolution0/receipt.json": "50bfd0ce53501aa3837318fd759ae1aa3c20e8ab1384d9e4aac02fcc4815de9d",
+    "results/ancestral/historian-capacity-20260927-v1/OG0000972-whole-famsa-floor1e-07-resolution0/receipt.json": "35db94b4615958cc1dbf1d5fa5409369b4fe92c8d01551af905e4f6929bea4d2"
+  },
+  "scope": "Frozen two observed FAMSA memory failures; preserves original grid and separate MAFFT retries."
+}

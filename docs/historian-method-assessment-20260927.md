@@ -144,3 +144,14 @@ unchanged. The retry manifest pins the original failure receipts. Other initial
 grid jobs continue; later failures require their own explicit disposition.
 `audit_historian_memory_retries.py` provides the same independent output checks
 for this separate retry collection. No retry completion has yet been claimed.
+
+The paired whole-FAMSA runs subsequently also exceeded the 12 GiB cap, after
+12.9 and 13.2 minutes (recorded peaks 12.05 and 12.03 GiB). Their original
+failed receipts and input hashes are pinned in a separate FAMSA retry plan.
+`run_historian_famsa_memory_retries.py` now runs both jobs sequentially with
+the same 64 GiB RSS/two-hour limits and 80 GiB/no-swap service ceiling.
+Planning allowance is 0.5–4 hours, 5 GiB output, and no paid resources. The
+622 proteins, trees and scientific options match the original jobs exactly.
+The existing MAFFT retry batch and original capacity grid are unchanged.
+`audit_historian_famsa_memory_retries.py` is prepared for independent readback;
+completion and successful reconstruction remain unproven until outputs pass.
