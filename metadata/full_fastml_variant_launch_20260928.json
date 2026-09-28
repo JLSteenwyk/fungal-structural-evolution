@@ -1,0 +1,19 @@
+{
+  "unit": "fungal-full-fastml-variants-20260928.service",
+  "pid": 813269,
+  "created": 1790569625.91,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_full_fastml_variants.py",
+    "--plan",
+    "metadata/full_fastml_variant_plan_20260928.json"
+  ],
+  "plan_sha256": "8a7f89f2f02f1b5e3f7d7932ec9fbc35d470801f8986dc48b33eef7b2d5a6fe1",
+  "systemd_properties": {
+    "MainPID": "813269",
+    "CPUQuotaPerSecUSec": "4s",
+    "MemoryMax": "25769803776",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}
