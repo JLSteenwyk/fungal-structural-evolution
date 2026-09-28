@@ -291,3 +291,19 @@ largest-input checks are recorded in
 `metadata/baliphy_prior_initialization_partial_readback_v3_20260927.json`.
 Initialization capacity does not establish longer-chain memory, runtime or
 convergence. Other configurations and final readback remain outstanding.
+
+
+### Completed explicit-prior initialization batch
+
+All 405 configurations (135 effective inputs under each of three alpha
+priors) completed with exit code zero. The producer and final auditor both
+reached inactive/success with exit code zero. All 405 generated-model,
+initial-score arithmetic, parameter-support, frequency-normalization and
+tree-length checks passed. Final receipt, source pins and output hashes were
+rechecked after service completion. The completion record is
+`metadata/baliphy_prior_initialization_final_readback_completed_20260927.json`.
+
+This completes initialization validation across the full effective-input
+grid. It does not establish posterior convergence, independent likelihood
+validation, or the resource requirements of longer sampling chains. The
+separate short-sampling grid and its final resource audit remain pending.
