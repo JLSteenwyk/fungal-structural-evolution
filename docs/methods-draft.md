@@ -863,3 +863,76 @@ supported at least 0.9 in both fits, and total variation were computed on
 matched columns and independently read back against saved arrays. These
 comparisons confound sequence context, membership and parameter estimation;
 they are descriptive sensitivity analyses, not tests isolating context effects.
+
+## Joint alignment and ancestral sampling: running analysis
+
+We initiated BAli-Phy 4.3 sampling for the same 13 exploratory families to
+address alignment and insertion/deletion uncertainty that is absent from
+fixed-alignment amino-acid marginals. Runtime input checks reduced 324 labeled
+configurations to 135 distinct combinations of ordered ungapped sequences and
+fixed input trees. Every original configuration remains linked to its effective
+input. Labels with identical effective inputs share computations and are not
+treated as independent chains or evidence for agreement between aligners.
+
+The substitution model uses LG exchangeabilities, amino-acid frequencies with
+the installed symmetric Dirichlet prior of concentration one per amino acid,
+and four gamma rate categories. Three explicit priors on gamma shape are
+analyzed separately: `LogLaplace(6,2)`, `LogLaplace(0,1)` and
+`LogLaplace(0,2)`. Under the audited installed implementation these have
+medians approximately 403.43, 1 and 1, respectively; the first is the installed
+default. The RS07 insertion/deletion model uses the installed priors
+`LogLaplace(-4,0.707)` for rate and `ShiftedExponential(10,1)` for mean length.
+The generated model programs make these priors explicit. Frequencies, gamma
+shape and indel parameters are sampled; tree topology, branch lengths and
+the scale of one remain fixed. Indel rates use the constant-rate configuration.
+Consequently these chains do not propagate root, topology or branch-length
+uncertainty, and their results must retain the input-tree sensitivity labels.
+Prior settings are not pooled using arbitrary ensemble weights.
+
+All 405 input/prior initializations passed generated-model and initial-score
+checks. A separate fixed-parameter, 20-iteration grid passed saved-alignment
+and node-identity checks for all 324 original configurations. Those short
+runs supplied capacity and integrity evidence, not posterior samples for
+biological interpretation. The subsequent full sampling grid comprises four
+unique seeds for each of the 405 input/prior combinations, or 1,620 chains.
+Its first horizon is 1,000 iterations; reaching that horizon is not a
+convergence criterion. Chain identities, seeds, model sources, input hashes,
+commands and resource estimates are stored in versioned manifests.
+
+Each chain exports its labeled runtime tree from the same process immediately
+before creating its MCMC state. On successful exit, readback compares clades
+and branch lengths with the input tree, checks that observed tip sequences
+are preserved, and maps candidate ancestors by descendant sets. Every saved
+alignment is checked; process-local internal names are not matched directly
+between independent chains. Scalar logs include iterations 0 through 1,000;
+ancestral alignments are saved every ten iterations. Interrupted attempts
+are preserved, and recovery starts a fresh attempt rather than appending
+samples to a previous chain. This process-recovery path was tested with the
+installed binary; native MCMC checkpoint continuation was not established.
+
+Queued diagnostics evaluate complete four-chain groups at both 25% and 50%
+burn-in cutoffs, retaining both results. Scalar screening uses ArviZ 0.22.0
+rank-normalized split/folded R-hat, bulk and tail effective sample sizes, and
+mean Monte Carlo error. Initial screening thresholds are R-hat below 1.01 and
+bulk and tail effective sample sizes of at least 400 across the four chains.
+Nonfinite, insufficient and constant stochastic traces receive explicit review
+flags. Separate candidate-length screens preserve the saved iteration schedule
+and stable source-node identities; they retain 75 or 50 observations per chain
+at these cutoffs and do not inherit scalar-log effective sample sizes.
+
+The sampling and diagnostic stages remain in progress. Scalar and length
+screens alone will not qualify ancestral sequences: positional amino-acid
+states, homology/alignment mixing, prior/root sensitivity and model adequacy
+remain additional requirements. Failed or capped chains remain in the
+denominator, with further sampling or methodological review required where
+checks fail. No ancestral structural ensemble or functional conclusion has
+yet been accepted from this joint-sampling analysis.
+
+Exact implementation and evidence are linked in the
+[BAli-Phy assessment](baliphy-method-assessment-20260927.md). The
+[run plan](../metadata/baliphy_independent_chain_plan_20260927.json),
+[scalar diagnostic plan](../metadata/baliphy_independent_chain_diagnostic_plan_20260927.json)
+and [length diagnostic plan](../metadata/baliphy_candidate_length_diagnostic_plan_20260927.json)
+define the current execution, while the
+[prior audit](../metadata/baliphy_prior_definition_audit_20260927.json) binds
+the distribution definitions to installed source files.
