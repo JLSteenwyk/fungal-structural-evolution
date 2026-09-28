@@ -168,3 +168,22 @@ alternatives share data and are not independent convergence chains.
 Evidence: `metadata/baliphy_sample_mapping_partial_readback_v4_20260927.json`
 and `metadata/baliphy_resource_partial_v2_completed_20260927.json`. The queued
 full audit and all-configuration resource summary remain unchanged.
+
+
+## Both largest-family alignment labels checked at both floors
+
+The v5 audit passes 88 configurations and all 1,056 saved candidate-node/sample
+mappings, retaining 236 pending. All four OG0000972 whole-protein configurations
+now pass, including both FAMSA runs. The FAMSA runs completed in 1,230.9 and
+1,243.4 seconds. Neither required a memory or time-limit retry.
+
+At each minimum-edge floor, the MAFFT and FAMSA labels have byte-identical
+saved alignment samples and byte-identical exported runtime trees. Their
+hashes and paths are preserved in
+`metadata/baliphy_sample_mapping_partial_readback_v5_20260927.json`. This is
+consistent with BAli-Phy's stripping of input gaps and the earlier effective-
+input equivalence audit. It is not agreement between independent chains or
+support for a particular alignment: the runs share effective data and seed.
+All four original dispositions are retained. The complete grid and its final
+audits continue; convergence, model/root sensitivity and qualified posterior
+samples remain outstanding.

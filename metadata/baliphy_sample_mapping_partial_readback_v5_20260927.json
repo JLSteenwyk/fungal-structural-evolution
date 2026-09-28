@@ -1,0 +1,81 @@
+{
+  "status": "partial_mapping_snapshot",
+  "dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 88,
+    "pending_receipt": 236
+  },
+  "expected_jobs": 324,
+  "candidate_samples": 1056,
+  "artifacts": {
+    "candidate_samples.tsv": "c4cadddece0b01e12c77660450e8c61857349aad0a835dd1ac4cbfb197b28318",
+    "dispositions.json": "de9f27eace27c59bbaeede409005864257c932f8f8a1aa74e3477f64ffef108f"
+  },
+  "scope": "Each saved sample paired with same-process fixed runtime tree; all tips/known residues, rooted clades, branch lengths and candidate identities checked. Initial and early samples retained for integrity testing only, not converged posterior ensembles. Root remains an assumption; no independent likelihood replay.",
+  "completed_receipt_path": "results/ancestral/baliphy-sample-mapping-readback-20260927-v5/receipt.json",
+  "completed_receipt_sha256": "378aced02a5e203e78c164cf6cb73d4d2a6734063737ae57f1e85a485911c434",
+  "largest_family_resources": [
+    {
+      "job_id": "OG0000972-whole-mafft-floor1e-09-resolution0",
+      "elapsed_seconds": 1236.8237703759805,
+      "peak_sampled_rss_bytes": 2716311552
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-floor1e-07-resolution0",
+      "elapsed_seconds": 1244.6872874039982,
+      "peak_sampled_rss_bytes": 2627244032
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-floor1e-09-resolution0",
+      "elapsed_seconds": 1230.9346943430137,
+      "peak_sampled_rss_bytes": 2609496064
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-floor1e-07-resolution0",
+      "elapsed_seconds": 1243.3946860819997,
+      "peak_sampled_rss_bytes": 2617143296
+    }
+  ],
+  "largest_family_alignment_alias_checks": [
+    {
+      "floor": "1e-09",
+      "exact_sample_and_runtime_tree_bytes_equal": true,
+      "artifacts": [
+        {
+          "job_id": "OG0000972-whole-mafft-floor1e-09-resolution0",
+          "samples_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-mafft-floor1e-09-resolution0/mapping-check-1/C1.P1.fastas",
+          "samples_sha256": "c102fc21cf842477c458da6474b2a88fc16b021a4e02be89c76c835444ca68f6",
+          "runtime_tree_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-mafft-floor1e-09-resolution0/runtime-tree.nwk",
+          "runtime_tree_sha256": "36480e55cbb233f69736ef8efdbd56a960a8653f3111a9fac77dba9d9ecfb09f"
+        },
+        {
+          "job_id": "OG0000972-whole-famsa-floor1e-09-resolution0",
+          "samples_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-famsa-floor1e-09-resolution0/mapping-check-1/C1.P1.fastas",
+          "samples_sha256": "c102fc21cf842477c458da6474b2a88fc16b021a4e02be89c76c835444ca68f6",
+          "runtime_tree_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-famsa-floor1e-09-resolution0/runtime-tree.nwk",
+          "runtime_tree_sha256": "36480e55cbb233f69736ef8efdbd56a960a8653f3111a9fac77dba9d9ecfb09f"
+        }
+      ]
+    },
+    {
+      "floor": "1e-07",
+      "exact_sample_and_runtime_tree_bytes_equal": true,
+      "artifacts": [
+        {
+          "job_id": "OG0000972-whole-mafft-floor1e-07-resolution0",
+          "samples_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-mafft-floor1e-07-resolution0/mapping-check-1/C1.P1.fastas",
+          "samples_sha256": "c102fc21cf842477c458da6474b2a88fc16b021a4e02be89c76c835444ca68f6",
+          "runtime_tree_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-mafft-floor1e-07-resolution0/runtime-tree.nwk",
+          "runtime_tree_sha256": "f60720ab126a886cb656e00da3d0b52e925a6982c01fd14cacc5af8baa1d6d2d"
+        },
+        {
+          "job_id": "OG0000972-whole-famsa-floor1e-07-resolution0",
+          "samples_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-famsa-floor1e-07-resolution0/mapping-check-1/C1.P1.fastas",
+          "samples_sha256": "c102fc21cf842477c458da6474b2a88fc16b021a4e02be89c76c835444ca68f6",
+          "runtime_tree_path": "results/ancestral/baliphy-sample-mapping-20260927-v1/OG0000972-whole-famsa-floor1e-07-resolution0/runtime-tree.nwk",
+          "runtime_tree_sha256": "f60720ab126a886cb656e00da3d0b52e925a6982c01fd14cacc5af8baa1d6d2d"
+        }
+      ]
+    }
+  ],
+  "alias_scope": "Same seed and effective ungapped input at each fixed tree produce identical three saved samples and runtime tree. Aliases are not independent chains; agreement does not establish convergence."
+}
