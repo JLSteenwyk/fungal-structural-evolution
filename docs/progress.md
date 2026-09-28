@@ -9488,3 +9488,20 @@ project MCMC has been launched. Input capacity, exact model settings, priors,
 chain convergence and sample-to-node mapping remain open. See
 [method assessment](baliphy-method-assessment-20260927.md). All selected families
 remain in scope; no ancestors or structures are declared final. GPUs paused.
+
+### 2026-09-27: BAli-Phy full-grid initialization running
+
+Launched all 324 initialization checks for the complete 78-alignment grid,
+including every copy, both edge floors and all star resolutions. Process
+identity verified; two CPU workers and16GiB aggregate/no-swap limits apply.
+This is `--test` initialization, not posterior MCMC. All fixed rate/model
+arguments and runtime limits are in the pinned plan.
+
+The first18 jobs pass generated-model and finite-score checks, with306 pending
+in the saved snapshot. Generated code exposes a symmetric Dirichlet(1)
+frequency prior and removal of internal tree labels. Neither published LG
+frequencies nor preservation of candidate node names can be assumed.
+The audit checks initial score arithmetic, normalized frequencies and total
+tree length, but makes no likelihood-replay or converged-sample claim.
+All candidate mapping, capacity, prior sensitivity, full-chain convergence
+and ancestral uncertainty requirements remain open. GPUs remain paused.

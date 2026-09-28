@@ -1,0 +1,38 @@
+{
+  "binary": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+  "input_receipt": "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json",
+  "output": "results/ancestral/baliphy-initialization-20260927-v1",
+  "options": [
+    "--test",
+    "--seed",
+    "20260927",
+    "--smodel",
+    "LG +> ASRV.Gamma(4,alpha=1)",
+    "--imodel",
+    "RS07(rate=0.01,meanLength=3)",
+    "--indel-rates",
+    "constant"
+  ],
+  "timeout_seconds": 600,
+  "memory_limit_bytes": 6442450944,
+  "resources": {
+    "workers": 2,
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 5,
+    "planning_hours": [
+      0.1,
+      28
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Initialization only of all324 derived-tree configurations covering all78 original alignments,13 families and up to622 proteins. Fixed diagnostic tree and rates, not posterior MCMC, fitted family parameters, root validation or converged ancestors. Both branch floors and all15 four-tip resolutions retained. No GPU.",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+    "data/software_audits/baliphy-4.3-20260927/receipt.json": "05eb20e659065839b3d09126802a342cd1fc249da128d61dc76e534990e2f23c",
+    "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json": "149585b3bf326ce471b2619f5fa0e4075395a39f09669f683089d6a07d967430",
+    "scripts/run_baliphy_initialization_grid.py": "f7379337d3982284354461039d29e8c8fb50a8b83d26f6eaba64c53039feebee",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}
