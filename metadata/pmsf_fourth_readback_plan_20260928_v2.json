@@ -1,0 +1,48 @@
+{
+  "producer": {
+    "unit": "fungal-pmsf-memory-recovery-20260928.service",
+    "pid": 1277989,
+    "created": 1790613974.93,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/wait_for_pmsf_recovery_memory.py",
+      "--plan",
+      "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json"
+    ],
+    "plan_sha256": "2d4ad65a1b7e91be150b4839df51acdf53082cba1ab1e8039bb52ee37fbaf2f0"
+  },
+  "run": "results/phylogeny/pmsf-mafft-mafft-v1",
+  "audit_output": "results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1",
+  "controller_output": "results/phylogeny/pmsf-fourth-readback-handoff-20260928-v2",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/matrix.faa": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-guide-audit-v1/receipt.json": "2fa8fff788911b835fed6699457d0b3865a39c0facbdcf4e546469cadcdd7d24",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-guide-audit-v1/guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/species-mixture-resources-v2/receipt.json": "2c20cd54819d288d5322ad64d9081657a686c71bf8d90eed8d1c1db06b7d0bf4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-mafft-v1/input_guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "scripts/audit_species_pmsf.py": "909d8d5b82f6e97c98e46604e2e5dbcb22b0ee21033be02a49a884d49d867cf5",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/advance_fourth_pmsf_readback.py": "7cb0da8f8209b873c60cd9b3db637a266b990020e10f54f65eaa5ffbac22c439",
+    "metadata/recovery_20260925_crossed_pmsf_config.json": "3ded8619d1ec9489024f520851ee2190c997fa66eefea5a7aefd53ddbe2effe4",
+    "results/phylogeny/pmsf-mafft-mafft-v1/config.json": "b5b0c9bf64dea3f50415368be2c35c1dda07e92c9192519a2876d86705f4d4b3",
+    "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json": "2d4ad65a1b7e91be150b4839df51acdf53082cba1ab1e8039bb52ee37fbaf2f0",
+    "metadata/pmsf_memory_recovery_launch_20260928.json": "3b9e432cccb6ca13cd6eff3c13d1a34182ec67a2e9646231078422a8118d4f32",
+    "scripts/wait_for_pmsf_recovery_memory.py": "9fc1edf57bd9ad03dbb7561efd1d2cf339a1af839d4fa6ebb5ff069798ee7cc6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_mb": 100,
+    "planning_hours_after_producer": [
+      0.01,
+      2
+    ],
+    "basis": "Same dimensions as completed third-run readback: 16.6 CPU seconds and 98.3 MB peak; broad allowance for host contention.",
+    "paid_resources": false
+  }
+}

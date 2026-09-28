@@ -43,3 +43,20 @@ the old crossed controller directly: it rejects the unfinished output directory.
 
 The project remains incomplete. Neither missing receipts nor inactive old
 processes imply successful scientific results.
+
+## Memory-gated recovery queued
+
+The v2 recovery plan and `scripts/wait_for_pmsf_recovery_memory.py` now queue
+the restart automatically. The wrapper checks available memory every 30 seconds,
+verifies the pinned recovery dependencies, and refuses a duplicate native run
+or an already produced receipt. The existing recovery runner then repeats its
+checkpoint/input, memory, disk and global-lock checks immediately before launch.
+The 750 GiB prerequisite is unchanged. The wrapper was verified live and waiting
+at 687.20 GiB available; it has not started native inference at that observation.
+
+`fungal-pmsf-memory-recovery-20260928.service` retains the 16 CPU, 650 GiB memory
+and no-swap limits. Its new process identity is pinned in
+`metadata/pmsf_memory_recovery_launch_20260928.json`. The full profile/tree/1,000
+bootstrap readback is queued against that identity with the new
+`metadata/pmsf_fourth_readback_plan_20260928_v2.json`. The old recovery and
+failed readback records remain intact. No GPU jobs are launched by this queue.
