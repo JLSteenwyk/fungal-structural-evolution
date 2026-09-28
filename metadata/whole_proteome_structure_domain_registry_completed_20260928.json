@@ -1,0 +1,32 @@
+{
+  "status": "completed_refreshed_domain_registry_and_independent_readback",
+  "producer_receipt_sha256": "a688f65d59a7c08265831e7446ed652d7bcc9d2b0d691c994757d70158652807",
+  "readback_sha256": "6e90bc2ffeadb334063467afa1ce217bee308e097e5d4a72b1064ab1ddee3e26",
+  "database_sha256": "3e4be904bc2a0eb358f2d6d3b1744ff0f6ebfa95decc1e241647300adb8e3a2f",
+  "counts": {
+    "models": 1910138,
+    "models_without_hits": 683755,
+    "segments": 1917742,
+    "policy_hits": 7633452,
+    "protein_links": 1955694
+  },
+  "candidate_domain_intervals_by_policy": {
+    "alignment_bitscore": 867368,
+    "envelope_evalue": 865188,
+    "alignment_evalue": 867819,
+    "envelope_bitscore": 864732
+  },
+  "terminal_states": {
+    "fungal-structure-domain-registry-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-structure-domain-registry-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Every model, retained interval, policy membership, candidate flag and protein link reconstructed from source data without importing producer interval logic. Overlap and partial-hit exclusions recomputed from intervals and HMM coverage. Shared SQLite sources and SHA helper; does not repeat annotation searches, coordinate validation or establish structural boundaries."
+}

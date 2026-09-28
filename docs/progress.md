@@ -9887,3 +9887,10 @@ does not establish universal coverage or complete the biological project.
   artifacts remain preserved. Both alignment and envelope boundaries and
   every model/hit association will be retained. One CPU/32GiB limits apply;
   actual coordinate extraction and confidence qualification remain pending.
+
+- September28: full expanded domain registry passed independent reconstruction
+  and terminal-success verification. It contains1,917,742 retained annotation
+  segments across1,910,138 models, preserving7,633,452 policy/hit memberships
+  and1,955,694 protein links. All checksum and receipt bindings passed. Domain
+  interval preparation has started automatically; its union/readback and
+  subsequent coordinate/confidence analyses remain incomplete.

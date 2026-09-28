@@ -606,3 +606,23 @@ Output is `results/domains/domain-extraction-manifest-20260928-v1`; full readbac
 will be `metadata/domain_extraction_manifest_readback_20260928.json`.
 This stage prepares coordinates for later extraction only; it does not extract
 structures or qualify confidence, homology or evolutionary changes.
+
+### September28 registry independently verified
+
+The refreshed registry and its independent full reconstruction both finished
+successfully. Receipt bindings, current database checksum and both terminal
+exit0 states were checked and recorded in
+`metadata/whole_proteome_structure_domain_registry_completed_20260928.json`.
+Verified totals are1,910,138 models,1,955,694 protein links,1,917,742 retained
+annotation segments and7,633,452 policy/hit memberships. The683,755 models
+without retained hits remain explicit. Segments include multiple Pfam feature
+types; policy memberships repeat features and must not be added as independent
+domains.
+
+Candidate Domain-hit counts are867,368 for alignment/bitscore,867,819 for
+alignment/E-value,864,732 for envelope/bitscore and865,188 for envelope/E-value.
+The forthcoming union manifest deduplicates exact sequence intervals while
+preserving every source association and both boundary definitions. These
+annotation-based candidates still require coordinate extraction, confidence
+qualification and structural assessment. Successful registry validation does
+not establish biological domain boundaries or evolutionary changes.
