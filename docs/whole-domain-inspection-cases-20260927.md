@@ -73,3 +73,22 @@ and full whole/domain fit alternatives. Hashes and provenance are recorded in
 `metadata/whole_domain_case_dossiers_completed_20260927.json`. GPU inference
 remains paused; independent prediction experiments have not been run for these
 cases. See [full integration](whole-domain-contrast-integration-20260927.md).
+
+
+## Integrated ancestral uncertainty for every structural case
+
+The [updated 13-case table](tables/case_ancestral_uncertainty_20260927.tsv)
+preserves all 60 original structural and annotation fields and appends 15
+ancestral uncertainty fields. These cover optimization sensitivity, whole/domain
+state disagreement with its denominator, opposing high-confidence calls with
+and without local domain coverage, and the number of exact coordinate and
+source-node groups underlying repeated calls. Every original field was checked
+against the serialized joined table; no case was removed or reordered.
+
+The table supports case review, not a biological ranking. All cases retain an
+explicit statement that their current amino-acid diagnostics are conditional
+and joint indel/convergence requirements are unresolved. Zero high-confidence
+conflict does not qualify a case for ancestral structure prediction. The
+reproducible join is `scripts/integrate_case_ancestral_uncertainty.py`; input and
+output hashes are recorded in
+`metadata/case_ancestral_uncertainty_integration_completed_20260927.json`.
