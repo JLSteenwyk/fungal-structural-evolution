@@ -99,7 +99,7 @@ shows that weighting can reverse the descriptive difference in some settings.
 dependence information used by the [full comparative-model run](docs/full-matched-working-models-20260927.md).
 Its verified inventory contains 28,808 unique record inputs and 144,040 tree
 fits. Production, output checks and analytic-gradient readback completed;
-658 unique fits remain flagged for review. The full export retains all
+658 unique fits remain flagged for review. A separate [analytic refinement](docs/matched-reml-analytic-refinement-20260928.md) is running across all 658 fits. The full export retains all
 414,720 setting/tree rows. Unresolved-fit refinement and inferential calibration
 remain pending; these estimates are not final adjusted effects. See the
 [restored-access checkpoint](docs/restored-access-checkpoint-20260928.md).

@@ -1,0 +1,33 @@
+{
+  "production_plan": "metadata/full_matched_working_model_plan_20260927.json",
+  "review_root": "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1",
+  "output": "results/structural_comparisons/matched-reml-analytic-refinement-20260928-v1",
+  "expected_cases": 658,
+  "maxiter": 1000,
+  "resources": {
+    "cpu_quota": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      1,
+      8
+    ],
+    "paid_cost": 0,
+    "gpu": false
+  },
+  "planning_basis": "658 selected original fits used 2219.84 summed wall seconds (542 inputs; at most 10930 records). New analytic optimizer uses 24 candidates, up to 1000 iterations versus original 300, plus repeated partition joins. 1\u20138 hours is a conservative planning allowance, not a measured ETA; synthetic fixture timings are not used to predict production runtime.",
+  "pins": {
+    "metadata/full_matched_working_model_plan_20260927.json": "f0f0268dfe2479f6d0515209ff9dd38f8f11b3baccd1883ed9447ca6f8421d4b",
+    "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1/receipt.json": "ac17cc75c54617156243dc86460f0aebb14575e94dff7d4386bba57bf31fa4f9",
+    "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1/remaining_review_cases.jsonl": "c1e662502485f7098da8e5902d59c5fbbef8459a99ef92f65e323418df498096",
+    "scripts/run_matched_reml_analytic_refinement.py": "7753a7d5daa758a3846bb0618c69df72475b33969abd0554c041fa601f9db31a",
+    "scripts/refine_matched_reml_analytic.py": "f063e2dffa13d01e74597e6ed1022ae1a7ab10ef167a7e37d1998b32df317149",
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "results/model_validation/matched-reml-analytic-refinement-fixtures-20260928-v1/receipt.json": "c150c9cb5ce22b62133a7d122d9600f7539600299830f8326311fa939086d5de",
+    "metadata/matched_reml_analytic_refinement_checks_20260928.json": "c150c9cb5ce22b62133a7d122d9600f7539600299830f8326311fa939086d5de"
+  }
+}

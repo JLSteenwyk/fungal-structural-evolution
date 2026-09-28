@@ -193,3 +193,8 @@ See [taxon identity](taxon-identity-sensitivities.md).
 
 See the [restored-access checkpoint](restored-access-checkpoint-20260928.md)
 for terminal-state and artifact verification of the newly completed stages.
+
+September 28: [analytic refinement](matched-reml-analytic-refinement-20260928.md)
+is active for all 658 remaining flagged working-model fits. Dense-likelihood
+and derivative-free synthetic checks passed; production qualification remains
+pending output readback and review.

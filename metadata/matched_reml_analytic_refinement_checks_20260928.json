@@ -1,0 +1,42 @@
+{
+  "status": "passed_dense_and_derivative_free_refinement_checks",
+  "cases": [
+    {
+      "label": "residual_only",
+      "status": "refinement_passed_numerical_checks",
+      "wall_seconds": 0.08856844299589284,
+      "objective_difference": 2.042946789515554e-08,
+      "improvement": 2.842170943040401e-14
+    },
+    {
+      "label": "mixed",
+      "status": "refinement_passed_numerical_checks",
+      "wall_seconds": 0.1306505459942855,
+      "objective_difference": 2.842170943040401e-14,
+      "improvement": 3.126388037344441e-13
+    },
+    {
+      "label": "strong_background",
+      "status": "refinement_passed_numerical_checks",
+      "wall_seconds": 0.12570224498631433,
+      "objective_difference": 2.842170943040401e-14,
+      "improvement": 9.379164112033322e-13
+    }
+  ],
+  "candidate_likelihoods_checked": 72,
+  "invalid_inputs_rejected": 4,
+  "pins": {
+    "scripts/refine_matched_reml_analytic.py": "f063e2dffa13d01e74597e6ed1022ae1a7ab10ef167a7e37d1998b32df317149",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_reml_analytic_refinement.py": "947f4819984db5c8182fe2c8ca4dbc4fb5f5c5d321417f8d35c46505433dd52a",
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "results/model_validation/matched-mixed-optimizer-cached-20260927-v1/receipt.json": "bdcb9287b246ee9b393f9bc1b8567244b0457799a7d2f8e9bd09d82f1ac68d09"
+  },
+  "artifacts": {
+    "mixed.json": "9f0e89b6333cc50e0e62fcc7c90aa66fc1a2671966bbc9384d220b8456ef299d",
+    "strong_background.json": "671d8b743602b6218687285a476b233a5ac4e419142400e431af2185c4fa0889",
+    "residual_only.json": "6063c307fc414fec208c20ceb0d65c8591dac5f961d2708c827f00bcc19cb2ae"
+  },
+  "scope": "Synthetic numerical fixtures; production review fits have not been refined by this check."
+}
