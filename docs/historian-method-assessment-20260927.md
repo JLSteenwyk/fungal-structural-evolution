@@ -167,3 +167,25 @@ service state, all expected job receipts and artifact hashes. Unsuccessful
 job outcomes remain explicit even if the batch driver exits successfully.
 The first partial readback is recorded in
 `metadata/historian_memory_retry_partial_readback_20260927.json`.
+
+## Completed MAFFT retries reveal branch-floor sensitivity
+
+Both 622-protein MAFFT retries and their independent readback are terminal
+with successful exit status. Runs took 1,000 and 920 seconds and peaked at
+16.82 and 16.61 GiB sampled RSS. All tree, extant-sequence and candidate
+mapping checks pass. Original 12 GiB capacity failures remain recorded.
+
+Changing the minimum branch length from 1e-9 to 1e-7 changes every candidate
+output. Non-root levels 0, 1 and 2 have ungapped edit distances 10, 15 and 15;
+lengths change 467→467, 461→467 and 460→467 respectively. The assumed-root
+candidate changes 460→467 with edit distance 15. These are computational
+sensitivity measurements, not inferred biological event counts. Same-length
+edit distance does not by itself establish substitution counts.
+
+This differs from the earlier small-family snapshots with no observed edits.
+The approximate profile/traceback reconstruction is not robust to this
+numerical floor choice for the largest family. Both alternatives must remain
+visible; neither is selected as a qualified ancestor on these results. The
+FAMSA retry collection and joint-history sampling diagnostics remain separate.
+Evidence: `metadata/historian_memory_retry_audit_completed_20260927.json` and
+`metadata/historian_largest_family_floor_sensitivity_20260927.json`.
