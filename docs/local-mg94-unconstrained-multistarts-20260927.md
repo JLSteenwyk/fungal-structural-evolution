@@ -48,3 +48,31 @@ The full results and audit are pending. Multiple starts do not establish a
 global optimum, synonymous-distance confidence intervals, absence of saturation
 or eligibility for selection inference. Biological interpretation and selection
 tests remain separate stages. GPU prediction remains paused.
+
+
+## Partial completed-case disagreement review
+
+The frozen September 27 snapshot retains all 1,632 cases: 777 complete and
+855 pending. All eight starts for each completed case were retained, their
+saved artifact hashes checked, and starting/optimized/fresh-readback score
+arithmetic verified. This does not replace the queued full model-constraint,
+parameter and source-identity audit.
+
+Among completed cases, between-start log-likelihood spread exceeds 0.00001
+in 90 cases, 0.01 in 75, 1 in 22, and 10 in 14. The largest spread is
+162.658494 for `Malassezia__5000823at2759__code1`: seven starts agree within
+0.00001 of the best likelihood (omega approximately 0.079975), while the
+factor-10 start remains much poorer (omega approximately 0.004166).
+The next largest spreads are 120.768979 for marker 4813267at2759 and
+77.145974 for marker 4987397at2759, also in Malassezia/code1 and with seven
+near-best starts. These examples show optimizer sensitivity rather than
+biological evidence for selection. They do not establish global optima.
+
+No completed case has a near-best-start omega range greater than 0.1 under
+the stated 0.00001 likelihood tolerance. This coarse descriptive threshold
+is not a confidence interval or proof of identifiability. Partial completion
+can be biased toward faster cases, so these counts are not full-grid rates.
+Summary counts and maxima were independently recomputed from the frozen case
+table. Evidence: `metadata/local_mg94_multistart_partial_review_20260927.json`;
+full case dispositions remain outside Git in
+`results/cds/local-mg94-multistart-partial-review-20260927-v1`.
