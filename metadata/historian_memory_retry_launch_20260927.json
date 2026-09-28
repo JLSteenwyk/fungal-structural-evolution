@@ -1,0 +1,49 @@
+{
+  "unit": "fungal-historian-memory-retries-20260927.service",
+  "pid": 612800,
+  "created": 1790554810.29,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_historian_memory_retries.py"
+  ],
+  "children": [
+    {
+      "pid": 612872,
+      "created": 1790554811.16,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/historian-20260927/source/bin/historian",
+        "recon",
+        "-guide",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-alignments-20260927-v1/OG0000972-mafft/alignment.faa",
+        "-tree",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/historian-sensitivity-inputs-20260927-v1/profile-OG0000972-whole-floor1e-09-resolution0.nwk",
+        "-preset",
+        "lg",
+        "-gamma",
+        "4",
+        "-shape",
+        "1",
+        "-gaprate",
+        "0.01",
+        "-gaplen",
+        "3",
+        "-band",
+        "20",
+        "-profsamples",
+        "100",
+        "-profmaxstates",
+        "20000",
+        "-seed",
+        "20260927",
+        "-norefine",
+        "-ancseq",
+        "-output",
+        "json",
+        "-v3",
+        "-nocolor",
+        "-savemodel",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/historian-memory-retries-20260927-v1/OG0000972-whole-mafft-floor1e-09-resolution0/fixed-model.json"
+      ]
+    }
+  ]
+}

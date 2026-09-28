@@ -9541,3 +9541,21 @@ Two four-thread workers,12GiB aggregate RAM,zero swap,4GiB output and0.5–24h
 after the prerequisite audit are budgeted. Refinement likelihood readback and
 ancestral posterior propagation remain downstream; neither global convergence
 nor final ancestral sequences is claimed. Other analyses continue independently.
+
+### 2026-09-27: broad-run check and full-family memory recovery
+
+The main sequence–structure batches remain active:66,570 linear mixed-model
+manifest entries and14,335 polynomial-ML entries at observation. These are
+production counts, not final validated effects. Neocallimastix guide inference
+also remains active. Updated the README to reflect the13 selected ancestral
+families and distinguish numerical posterior checks from final ancestors.
+
+New capacity evidence changes the next action: two Historian whole-MAFFT jobs
+for OG0000972 (622 proteins, both floors) exceeded the declared12GiB RSS cap.
+Their recorded failures are retained. Launched a separate frozen two-job retry
+at64GiB per-process RSS,80GiB aggregate/no swap,one CPU and2h per job. All
+scientific settings and sequences are identical to the failed jobs; no family
+reduction or profile relaxation was used. Retry process identity and child
+command were verified. Independent retry output checks are prepared, not yet
+passed. Additional failures from the original active grid remain separately
+accountable. Full project and GPU-dependent deliverables remain incomplete.

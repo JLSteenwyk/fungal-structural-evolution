@@ -1,0 +1,55 @@
+{
+  "input_receipt": "metadata/historian_memory_retry_inputs_20260927.json",
+  "output": "results/ancestral/historian-memory-retries-20260927-v1",
+  "binary": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/historian-20260927/source/bin/historian",
+  "workers": 1,
+  "timeout_seconds": 7200,
+  "per_job_memory_bytes": 68719476736,
+  "options": [
+    "-preset",
+    "lg",
+    "-gamma",
+    "4",
+    "-shape",
+    "1",
+    "-gaprate",
+    "0.01",
+    "-gaplen",
+    "3",
+    "-band",
+    "20",
+    "-profsamples",
+    "100",
+    "-profmaxstates",
+    "20000",
+    "-seed",
+    "20260927",
+    "-norefine",
+    "-ancseq",
+    "-output",
+    "json",
+    "-v3",
+    "-nocolor"
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 80,
+    "swap_gib": 0,
+    "output_gib": 5,
+    "planning_hours": [
+      0.5,
+      4
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Retry only the two recorded12GiB memory failures for OG0000972 whole MAFFT, preserving all622 proteins, exact trees, seed, rates, band,100 profile samples and20000-state limit. Raise process RSS cap to64GiB, runtime to2h; original failures preserved. Other original jobs remain active and future failures are not silently covered. No final ancestor or convergence claim.",
+  "pins": {
+    "results/ancestral/historian-capacity-20260927-v1/OG0000972-whole-mafft-floor1e-09-resolution0/receipt.json": "8a3f0651eb77d9f3db4e25ceeebf066679b4050020df0afc3ed82f97dcfc0e5f",
+    "results/ancestral/historian-capacity-20260927-v1/OG0000972-whole-mafft-floor1e-07-resolution0/receipt.json": "44e0036cdd179b552d76239845bb6644daf31218fad4ea1f07c38cdfce828280",
+    "metadata/historian_capacity_plan_20260927.json": "e32aac50df15686266bdcbd3292b2f423214dedae7fdc5f2dcc107d175c3b10a",
+    "metadata/historian_memory_retry_inputs_20260927.json": "cb212d69d808a71901df2ce9232cf68b818df147cfe625528000d935e47acc6b",
+    "scripts/run_historian_memory_retries.py": "dc48d412c8b43b447af1818f7b57370882de4e2148604b380a5b00b22c6b4687",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/historian-20260927/source/bin/historian": "5ad9c9736e32dc267b330678abb74cd230244c5ade96f6384fecf35c119c6a6b",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

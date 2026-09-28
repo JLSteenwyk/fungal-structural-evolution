@@ -128,3 +128,19 @@ A second independent output snapshot checks 70 finished runs, leaving 254
 pending. All available checks pass; all 1,532 one-factor candidate comparisons
 have zero ungapped edit distance. This includes available star resolutions,
 but is neither completion of the grid nor validation of posterior uncertainty.
+
+## Observed memory failures and unchanged-model retries
+
+The two OG0000972 whole-MAFFT runs (622 proteins; both edge floors) exceeded
+the 12 GiB sampled RSS cap after approximately 12.6 and 11.9 minutes, with
+recorded peaks of 12.02 and 12.29 GiB. They were killed by the declared resource
+policy and remain failed capacity dispositions in the original grid.
+
+`run_historian_memory_retries.py` retries these two frozen jobs sequentially at
+64 GiB per-process sampled RSS and a two-hour timeout, inside an 80 GiB/no-swap
+service with one CPU. Planning allowance: 0.5–4 hours and5 GiB, no paid resources.
+Every sequence, tree, seed, rate, band, sample count and profile-state limit is
+unchanged. The retry manifest pins the original failure receipts. Other initial
+grid jobs continue; later failures require their own explicit disposition.
+`audit_historian_memory_retries.py` provides the same independent output checks
+for this separate retry collection. No retry completion has yet been claimed.

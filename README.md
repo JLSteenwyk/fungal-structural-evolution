@@ -33,6 +33,18 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Recovered AlphaFold accessibility | 30,618 models/15,960,692 residues; 9,453,757 paired observations projected and normalized. Full site-summary readback covers 125 markers/47,529 sites | Rate optimization and its audits precede rate/exposure integration and conditional coupling |
 | Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | All 412,800 primary whole-protein tasks processed; strict audit stopped on a two-residue RMSD discrepancy. Full diagnosis confirmed 27 two-residue discrepancies; full geometry readback passed, retaining 327 degenerate short mappings. Full order-summary and residue-mapping sensitivity readbacks passed; background comparisons continue. Phylogenetically adjusted effects, uncertainty and biological interpretation remain |
 
+
+For **13 exploratory ancestral case families**, whole-protein amino-acid
+probabilities (4,354,380 values) and refined domain probabilities (3,365,640
+values) have passed independent numerical checks. These are conditional
+estimates, not final ancestral sequences. Whole-protein optimization sensitivity
+and joint insertion/deletion uncertainty remain active. The
+[Historian assessment](docs/historian-method-assessment-20260927.md) and
+[BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguish
+software checks and short diagnostic chains from qualified posterior ensembles.
+Two Historian jobs for the largest, 622-protein family reached the initial
+memory cap; retries preserve all sequences and settings with a higher cap.
+
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.
 [Taxon and reuse inputs](docs/selected-taxon-inputs-20260927.md) preserve the
@@ -100,7 +112,7 @@ completion records before advancing.
 | Ecological transitions | Establish usable replicated contrasts, propagate trait uncertainty and test phylogenetically controlled associations |
 | Functional locations | Integrate surface/core and functional-site inputs with branch/site changes; assess supported pockets and interfaces where evidence permits |
 | Selection | Resolve codon eligibility, saturation, copy and optimization concerns before appropriate tests; the current 1,632 local codon cases have all-case optimization checks running and do not yet establish eligibility |
-| Ancestral and mechanistic cases | Select supported exploratory cases, propagate ancestral uncertainty, obtain authorized predictions and formulate testable functional hypotheses |
+| Ancestral and mechanistic cases | Complete joint sequence/indel uncertainty for the 13 selected exploratory families, assess convergence and model sensitivity, obtain authorized predictions and formulate testable functional hypotheses |
 
 The [original objective](docs/objective.txt) and [research plan](docs/research-plan.md)
 retain the full scope. Earlier subset analyses provide intermediate evidence;
