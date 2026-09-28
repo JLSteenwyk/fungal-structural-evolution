@@ -453,3 +453,22 @@ than selecting the cutoff that passes. Longer horizons or revised sampling
 are required where results disagree; no finite iteration count establishes
 convergence. These policies have not yet been applied to a production
 independent-chain batch.
+
+
+### Full short-sampling audit and resource summary complete
+
+All 324 configurations completed successfully and passed the final saved-sample
+and candidate-node identity audit: 3,888 candidate-node samples, including all
+135 effective-input groups and their aliases. The producer, final auditor and
+resource-summary services each terminated inactive/success with exit code zero.
+All audit/resource pins and output hashes, all group membership counts, total
+worker time and maximum sampled RSS were independently rechecked.
+
+Total measured time across the 324 short runs was 22,901.970 worker-seconds
+(6.36 worker-hours); maximum sampled RSS was 2,716,311,552 bytes (2.53 GiB).
+These 20-iteration timings include startup and fixed-parameter models; longer
+free-parameter chains may differ substantially. Aliases are not independent
+chains. Completed integrity checks do not establish convergence or qualify
+ancestral structures. Evidence:
+`metadata/baliphy_sample_mapping_final_readback_completed_20260927.json` and
+`metadata/baliphy_resource_final_completed_20260927.json`.

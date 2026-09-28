@@ -1,0 +1,37 @@
+{
+  "status": "complete_resource_summary_of_frozen_audit",
+  "configurations": 324,
+  "effective_input_groups": 135,
+  "audit_dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 324
+  },
+  "measured_attempts": 324,
+  "total_measured_worker_seconds": 22901.96980504191,
+  "maximum_sampled_rss_bytes": 2716311552,
+  "script_sha256": "e8a65a6004d17ace344ec188d3a88bb1d888c94486e3001a2aa66545ec9c539d",
+  "artifacts": {
+    "effective_group_resources.tsv": "485abadf1d9baf0486885dbc896082129285134e1ef4e9e863b92f89e769cf7d",
+    "configuration_resources.tsv": "d1f512d9e76dd293a69a99c8ab86075085a8626ad4066f6772b7aaf556944e91"
+  },
+  "scope": "Elapsed time includes startup and only 20 iterations; sampled RSS can miss peaks. Capped attempts are censored, not successful runtime estimates. Alias groups retain all labels and do not represent independent chains. No production runtime, convergence, or posterior adequacy is inferred.",
+  "receipt_path": "results/ancestral/baliphy-resources-20260927-final-v1/receipt.json",
+  "receipt_sha256": "6782308f06a4355fc7dc5ca0148a2fb23973d2d4a041f1809d8e3ed5a273f245",
+  "terminal_states": {
+    "fungal-baliphy-sample-mapping-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-baliphy-sample-mapping-final-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-baliphy-resource-summary-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "candidate_samples": 3888
+}
