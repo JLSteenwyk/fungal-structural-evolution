@@ -136,3 +136,38 @@ Reproduce with `OPENBLAS_NUM_THREADS=1 /home/bizon/anaconda3/bin/python
 scripts/check_batched_matched_reml.py`. Checksums and measurements are in
 `metadata/batched_matched_reml_checks_20260928.json`. Existing production
 scripts and running jobs were not modified.
+
+## Independent simulation refits implemented
+
+`scripts/refit_matched_simulation.py` connects one simulated response to the
+existing analytic-gradient optimizer. Each response gets its own variance-ratio
+fit, all 24 candidate records and direct candidate-likelihood checks. The
+generating ratios provide an additional start and retained reference; they are
+not fixed during optimization. Generating ratios must lie within the stated
+optimization bounds. Random streams depend on the master seed, source-fit
+identifier and replicate index, so scheduling order does not define the stream.
+Each disposition records its seed entropy and response checksum.
+
+Numerically qualified refits retain coefficient errors, fitted standard errors,
+studentized errors and whether a nominal 95% t interval covers the known
+generating coefficient. Those intervals are a target of calibration, not an
+assumption of valid coverage. Refits needing numerical review and exceptions
+remain explicit outcomes. The accounting reports lower/upper coverage fractions
+obtained by treating every unresolved fit as uncovered/covered; these bounds
+are not Monte Carlo confidence intervals. They prevent a success-only
+denominator from hiding failures.
+
+The end-to-end checker passed six synthetic refits spanning all-zero and
+positive generating variance components, with all 144 candidate evaluations
+retained and all six refits passing numerical checks. An injected optimizer
+failure remained in the attempted denominator; duplicate replicate accounting
+was rejected and seed/fit identifiers produced distinct streams. These are
+implementation fixtures, too few to estimate coverage, and are not a biological
+pilot or replacement for the full data analysis.
+
+Reproduce with `OPENBLAS_NUM_THREADS=1 /home/bizon/anaconda3/bin/python
+scripts/check_matched_simulation_refitting.py`. Outputs and hashes are recorded
+in `metadata/matched_simulation_refit_checks_20260928.json`. Production input
+reconstruction, restartable full-grid scheduling, replicate-count selection,
+Monte Carlo intervals and runtime reduction still remain. No full-grid
+simulation has been launched by these checks.

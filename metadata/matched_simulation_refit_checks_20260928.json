@@ -1,0 +1,40 @@
+{
+  "status": "passed_synthetic_end_to_end_refit_checks",
+  "simulated_refits": 6,
+  "candidates_checked": 144,
+  "qualified": 6,
+  "review": 0,
+  "failure_accounting": {
+    "attempted": 4,
+    "qualified": 3,
+    "unresolved": 1,
+    "covered_qualified": [
+      3,
+      2
+    ],
+    "coverage_lower_if_all_unresolved_fail": [
+      0.75,
+      0.5
+    ],
+    "coverage_upper_if_all_unresolved_cover": [
+      1.0,
+      0.75
+    ],
+    "scope": "Bounds from unresolved refits only, not Monte Carlo confidence intervals. Nominal t intervals are being evaluated, not asserted to have 95% coverage."
+  },
+  "artifacts": {
+    "case_0_replicate_0.json": "1d6cbb2f24528d1854dbd6604fe57a4b9044d4a0340a1413169c764f1edea9de",
+    "case_1_replicate_0.json": "4732a3f5f531bf90fdd0f2d17d780d9478973f24777427367cdc5d2c7d5a394d",
+    "case_0_replicate_2.json": "eed2b39b94c188324c4c741d3a6a30f252bdebcf09fc0089728837eaa3b830f2",
+    "case_1_replicate_2.json": "63f9db17f291e1292f1565ea0c8529dd49b45f639b13c64ffa3b7ccc52f757d0",
+    "case_1_replicate_1.json": "99f7f892537e08ce68032a861b37ac415edbee0f025a8a91db8188d926b7b296",
+    "case_0_replicate_1.json": "43ff1427615a8210565eee7770cd564253ccbaedc71581c613fbf65f0b055ad7"
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_simulation_refitting.py": "4f5af29cb803e67badd95c23bb1f6c3ad758ad79b0123ddd114669a872592bfa",
+    "scripts/refit_matched_simulation.py": "50e7992531f6be3551083a51e1baaeae62be0becf2752ddc4b99cde6e5f2f4f8",
+    "scripts/simulate_matched_working_model.py": "c82cc7cfca63e2e1c7306faae66d1de4064750d422441fbd373800133a89375a",
+    "scripts/refine_matched_reml_analytic.py": "f063e2dffa13d01e74597e6ed1022ae1a7ab10ef167a7e37d1998b32df317149"
+  },
+  "scope": "Six synthetic implementation fixtures, not a biological pilot or coverage estimate. Full-grid production remains unlaunched."
+}
