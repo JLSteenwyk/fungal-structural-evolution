@@ -1,0 +1,13 @@
+{
+  "status": "initial_refinement_intentionally_stopped",
+  "service_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_plan_sha256": "8bc853554537f412b443e33ad93f96019bb7160c6135cb672a5b8ec5357478af",
+  "dispositions": {
+    "native_refinement_failed": 23
+  },
+  "reason": "Native parser rejects exported TheTree.INodes.ph format including root comment. Preserve failed/incomplete v1 attempts. v2 removes only internal N labels and root annotation, with exact split/branch-value comparison for all153 trees; new output root and controller."
+}

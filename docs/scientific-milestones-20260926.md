@@ -215,5 +215,7 @@ still require optimization review.
 September 28 optimizer audit: all 306 nonempty FastML variant fits used an
 effective one-model-iteration limit and emitted the corresponding limit
 message. Full five-start refinement inputs are prepared for all156 designs
-(765 nonempty fits, 15 empty dispositions); execution is not yet launched.
+(765 nonempty fits, 15 empty dispositions). Execution is active in version 3,
+with explicit protection against native tree annotation and branch-floor
+behavior. Earlier failed handoffs are preserved.
 See the [optimizer evidence](fastml-paired-comparison-20260928.md).

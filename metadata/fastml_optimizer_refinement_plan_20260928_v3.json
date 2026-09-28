@@ -1,0 +1,37 @@
+{
+  "preparation": "results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3",
+  "output": "results/ancestral/full-fastml-optimizer-refinement-20260928-v3",
+  "workers": 8,
+  "rate_exporter": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/model_validation/fastml-native-gamma-rates-20260928-v2/export_rates",
+  "minimum_free_disk_bytes": 274877906944,
+  "resources": {
+    "proposed_workers": 8,
+    "cpus": 8,
+    "memory_gib": 48,
+    "swap_gib": 0,
+    "per_fit_address_space_gib": 4,
+    "storage_allowance_gib": 128,
+    "planning_hours": [
+      12,
+      336
+    ],
+    "per_fit_timeout_hours": 12,
+    "gpu": false,
+    "paid_cost": 0,
+    "basis": "Original153 fits used approximately5.2 CPU-hours at one model iteration. Five starts and up to100 outer/model iterations can substantially increase work; broad planning range is not a reliable ETA or convergence bound."
+  },
+  "pins": {
+    "scripts/test_fastml_refinement_contract.py": "558bd71b4c33ac83cd653d3950f8ad4e0b2f1b8c534a392063f4641f08331ef5",
+    "scripts/readback_fastml_variant_roundoff.py": "e1e9fc2ea72ebd28ad3a46637a23f46f72435cf93c0ce7817801025abf70fa4d",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/model_validation/fastml-native-gamma-rates-20260928-v2/export_rates": "efe7d271fb5aeb906f73c51f79a9f16aadee4c08a5e9307f00549c693ee9873d",
+    "results/model_validation/fastml-native-gamma-rates-20260928-v2/receipt.json": "d1a0d6faf94eaa26a7834a309fc1d70035171262518f4494f3479475710d99b9",
+    "metadata/fastml_refinement_contract_checks_20260928.json": "c17e217db8d83b081589999fcff7925af9819e937bb03b5752cc81bab0ca9c50",
+    "scripts/run_fastml_optimizer_refinement_v2.py": "a72832477034ed3c0e3310cc24d8c47100bc630d8dbddcb58b73c15bc1fe113d",
+    "scripts/prepare_fastml_optimizer_refinement_v3.py": "84da9c18b3ec2abe112983035e2602d132d47b2db7493604815eaef51a8daee5",
+    "results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/receipt.json": "bc44fd40570c63b6bde006cfe676fdff39575f7bf95babb62945eeb078b6a9ad",
+    "results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/jobs.json": "13a0881b85ecd160855a9913bdac52c3e852f6df7437b157fe73d057606a258b"
+  }
+}

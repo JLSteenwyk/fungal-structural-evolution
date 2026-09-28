@@ -1,0 +1,18 @@
+{
+  "status": "fixed_tree_guard_stopped_controller",
+  "service_state": {
+    "Result": "exit-code",
+    "ExecMainStatus": "1",
+    "ActiveState": "failed"
+  },
+  "dispositions": {
+    "refined_native_settings_and_replay_checked_requires_optimization_review": 65,
+    "refinement_validation_failed_requires_review": 3
+  },
+  "reason": "Native default minBranchLength=1e-7 changes already fitted positive branches on rereading. v3 explicitly sets minBranchLength=0 and verifies every input nonroot branch is positive; exact split/branch checks remain unchanged.",
+  "failed_ids": [
+    "OG0000095-alignment-famsa-terminal_unknown__low_ratio",
+    "OG0000095-alignment-famsa-terminal_unknown__precision_parameters",
+    "OG0000095-alignment-famsa-terminal_unknown__refreshed_parameters"
+  ]
+}

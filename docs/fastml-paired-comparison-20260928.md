@@ -100,8 +100,7 @@ termination messages, candidate likelihoods and agreement across starts.
 Two previous parameter starts can coincide; they are retained with provenance
 and are not described as independent starts when identical.
 
-The preparation is **not launched** at this checkpoint. Its resource plan
-proposes eight CPU workers, 48 GiB RAM, no swap, 4 GiB per native process,
+The full refinement is now running with eight CPU workers, 48 GiB RAM, no swap, 4 GiB per native process,
 128 GiB output allowance and 12-hour per-fit timeouts. The broad 12–336 hour
 processing allowance is uncalibrated because previous runs had only one model
 iteration. No GPU or paid resources are planned.
@@ -114,6 +113,42 @@ Evidence:
 - `metadata/fastml_optimizer_refinement_preparation_20260928.json`
 - `results/ancestral/fastml-optimizer-refinement-inputs-20260928-v1/jobs.json`
 
-The next step is a restartable full-grid runner with native effective-option
-checks, independent numerical replay and explicit failed/unfinished outcomes.
-No ancestral estimate is promoted by this preparation.
+The active runner preserves all starts and failed/unfinished outcomes.
+Independent output audit, between-start comparisons and stationarity checks
+remain required. No ancestral estimate is promoted by launch.
+
+## Production handoff and fixed-tree checks
+
+The active service is `fungal-fastml-optimizer-refinement-20260928-v3`, using
+`metadata/fastml_optimizer_refinement_plan_20260928_v3.json` and
+`scripts/run_fastml_optimizer_refinement_v2.py`. Outputs are in
+`results/ancestral/full-fastml-optimizer-refinement-20260928-v3`.
+Each result checks native effective options, the printed initial parameter
+vector, complete fixed-tree branch/split identity, and independent likelihood
+and marginal calculations with both SciPy and native rate discretization.
+Raw probability excursions retain the explicit prior roundoff reporting.
+A validation or native execution failure stops further submissions; already
+running attempts finish and remain preserved.
+
+Two native input behaviors were detected and corrected during the full-grid
+handoff, without relaxing the tree check:
+
+1. The native parser rejected its exported annotated tree. Version 2 removes
+   internal N labels and the root annotation only, preserving all numerical
+   branch strings and verifying every descendant split and branch value.
+2. Native tree loading applied its default 1e-7 minimum branch length to
+   already fitted positive branches. The guard stopped version 2. Version 3
+   explicitly sets `_minBranchLength 0`, verifies all nonroot inputs are
+   positive, and checks that the effective option and final tree are unchanged.
+
+Version 1 was intentionally stopped; version 2 terminated on its tree guard.
+Their attempts and failure records remain available. The new input and output
+roots prevent adoption of altered-tree attempts. Relevant evidence is in
+`metadata/fastml_optimizer_refinement_input_failure_20260928.json`,
+`metadata/fastml_optimizer_refinement_floor_failure_20260928.json`,
+`metadata/fastml_optimizer_refinement_launch_20260928_v3.json` and the complete
+version 3 preparation receipt. The three setting-contract tests cover silent
+iteration overrides, changed starts and branch-optimization enablement.
+
+Execution is ongoing; stricter settings and numerical replay do not themselves
+prove a converged optimum or a biologically adequate indel model.
