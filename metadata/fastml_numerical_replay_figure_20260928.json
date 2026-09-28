@@ -1,0 +1,12 @@
+{
+  "status": "numerical_replay_figure_generated",
+  "source_audit_sha256": "0a69684086374753a9a15523f15ae36317095b7b711eeabfaeae6d95afae5a57",
+  "script_sha256": "e48d06e7b308796bc523210881c7bf0c01aa7c13aeb815faac32405d7d33d277",
+  "points_per_panel": 306,
+  "plot_floor": 1e-16,
+  "artifacts": {
+    "numerical_replay.png": "65e224f5ed254edeb907e73c14644a2a92a920545922108f9efd5d7429f85fc3",
+    "numerical_replay.pdf": "2e790b0ce3f9ad50c9c6e6f323244816239790062bb81fb4cc599cfef20ea9b4"
+  },
+  "caption": "Absolute reported-minus-replayed discrepancies at fixed fitted parameters. Each point is one fit; dots can overlap. Values below 1e-16 are displayed at 1e-16 only. Dotted line is equality. Native rates isolate gamma-discretization effects; three uncorrected stale-cache likelihood discrepancies persist. Agreement is numerical reproduction, not optimization or biological qualification."
+}

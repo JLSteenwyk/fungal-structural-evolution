@@ -30,11 +30,31 @@ remain one within 2.23e-16. Native gamma discretization is therefore a candidate
 explanation for some remaining replay discrepancies; rate comparison alone
 does not prove that explanation.
 
-An independent pruning replay using those exact native rates is now active for
-all 306 fits. It retains the earlier SciPy-rate comparisons. The replay uses
-one CPU core, at most 8 GiB RAM, no GPU or paid resources, and a 0.1–4 hour
-planning allowance inherited from the equivalent completed replay stage.
-This is fixed-parameter likelihood validation, not a new optimizer run.
+The native-rate pruning replay has now completed all 306 fits. Its separate
+audit verified 10,526 source, input, configuration and output files, the exact
+fit set, exported rate identities and scalar arithmetic. For the 153 cache-
+refreshed fits, the maximum likelihood discrepancy drops from 0.00345169 to
+1.81917e-8, and the maximum marginal probability discrepancy drops from
+6.80132e-5 to 1.78239e-9. Thus gamma discretization accounts for the previously
+remaining discrepancies to this observed numerical precision.
+
+The precision-only variant still has exactly three likelihood discrepancies
+larger than the descriptive 1e-7 threshold: the previously identified OG0000294
+envelope inputs, with errors of 0.469813–0.473949. This separates the stale-cache
+problem from differences in rate calculation. Independent replay with native
+rates reproduces the implemented model; it does not show that its gamma
+approximation is mathematically exact or biologically preferable.
+
+The two worse alignment optima remain worse under native-rate replay by
+0.1868566884 log-likelihood units. Numerical reproduction therefore leaves an
+optimization problem to resolve. No fit is automatically adopted from this audit.
+
+The replay completed with one CPU core, about 106.5 CPU seconds and a 644 MiB
+memory peak, without GPU or paid resources. A reproducible two-panel figure
+shows likelihood and marginal-probability errors before and after matching
+rate discretization. Its PDF and PNG are in
+`results/figures/fastml-numerical-replay-20260928-v1`. Plot values below 1e-16
+are displayed at that floor only; analytical values remain unmodified.
 
 Reproducibility records:
 
@@ -46,6 +66,10 @@ Reproducibility records:
 - `metadata/fastml_native_gamma_rate_checks_20260928.json`
 - `metadata/fastml_native_rate_replay_plan_20260928.json`
 - `metadata/fastml_native_rate_replay_launch_20260928.json`
+- `scripts/audit_fastml_native_rate_replay.py`
+- `metadata/fastml_native_rate_replay_audit_20260928.json`
+- `scripts/plot_fastml_numerical_replay.py`
+- `metadata/fastml_numerical_replay_figure_20260928.json`
 
 Optimization, missing-data ascertainment and joint sequence/indel uncertainty
 remain unresolved. None of these numerical comparisons qualifies an ancestral

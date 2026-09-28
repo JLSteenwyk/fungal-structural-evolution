@@ -207,5 +207,7 @@ pending output readback and review.
 September 28: the [full paired FastML comparison](fastml-paired-comparison-20260928.md)
 checked all 8,058,340 paired marginal entries. Cache refresh changes eight
 OG0000294 fits and can worsen the attained likelihood. Native gamma rates
-differ from SciPy rates at all 306 fitted shapes; a full replay using exact
-native rates is active to isolate this numerical contribution.
+differ from SciPy rates at all 306 fitted shapes. The full native-rate replay
+and source audit completed: maximum likelihood error in refreshed fits is
+1.82e-8; the three uncorrected stale-cache errors remain. The two worse optima
+still require optimization review.

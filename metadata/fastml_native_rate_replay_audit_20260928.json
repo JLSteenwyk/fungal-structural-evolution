@@ -1,0 +1,62 @@
+{
+  "status": "complete_native_rate_replay_provenance_and_scalar_readback",
+  "source_receipt_sha256": "e361d51f76c481585ec95536ad2836f14f2f73ea4f8d1485856a91fd0443f285",
+  "variants": {
+    "precision-cache-refresh": {
+      "fits": 153,
+      "probability_rows": 8058340,
+      "scipy_rate_maximum_absolute_likelihood_difference": 0.0034516902519499126,
+      "native_rate_maximum_absolute_likelihood_difference": 1.819171302486211e-08,
+      "scipy_rate_maximum_probability_difference": 6.801317918470051e-05,
+      "native_rate_maximum_probability_difference": 1.7823894166157928e-09,
+      "native_likelihood_difference_over_1e_minus7": 0
+    },
+    "precision-only": {
+      "fits": 153,
+      "probability_rows": 8058340,
+      "scipy_rate_maximum_absolute_likelihood_difference": 0.4739479748134938,
+      "native_rate_maximum_absolute_likelihood_difference": 0.473948925414327,
+      "scipy_rate_maximum_probability_difference": 6.801317918470051e-05,
+      "native_rate_maximum_probability_difference": 1.7823894166157928e-09,
+      "native_likelihood_difference_over_1e_minus7": 3
+    }
+  },
+  "checked_files": 10526,
+  "cache_refresh_worse_than_precision_only": [
+    {
+      "job_id": "OG0000294-alignment-famsa-terminal_gap",
+      "native_replay_likelihood_change": -0.186856688397123,
+      "precision_only_report_error": -3.552713678800501e-15,
+      "cache_refresh_report_error": 3.552713678800501e-15
+    },
+    {
+      "job_id": "OG0000294-alignment-mafft-terminal_gap",
+      "native_replay_likelihood_change": -0.186856688397123,
+      "precision_only_report_error": -3.552713678800501e-15,
+      "cache_refresh_report_error": 3.552713678800501e-15
+    }
+  ],
+  "remaining_precision_only_report_discrepancies": [
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_gap",
+      "native_rate_likelihood_difference": -0.473948925414327
+    },
+    {
+      "job_id": "OG0000294-envelope-famsa-terminal_gap",
+      "native_rate_likelihood_difference": -0.46981295824617564
+    },
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_unknown",
+      "native_rate_likelihood_difference": -0.473948925414327
+    }
+  ],
+  "pins": {
+    "metadata/fastml_native_rate_replay_plan_20260928.json": "77b6242777a7498d53c581cb389f66d572b24d7b1a30f0ff6ff5d657d7ec26d7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_fastml_native_rate_replay.py": "2415ae39a16d01142c19c6adff9f058b1639dea56c31e00f43b1f8285fc2d90e"
+  },
+  "artifacts": {
+    "paired_native_likelihoods.tsv": "fbc5858779d4a12491d85ef1584cc7245fec695babf08ed93d465201e3330f27",
+    "replay_comparison.tsv": "e94596b33809dbfcca6cd71169385f213e99506943401fdba8c52e908a6bfe43"
+  },
+  "scope": "Verified full expected fit set, original input/configuration pins, native attempt artifacts, rate identity and scalar arithmetic. Uses completed independent-pruning replay rather than another inference implementation. 1e-7 is descriptive discrepancy reporting, not proof of global optimization or biological adequacy."
+}
