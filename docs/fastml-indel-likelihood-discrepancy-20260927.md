@@ -106,3 +106,35 @@ The scripts `replay_completed_fastml_indels.py` and
 the pinned plan `metadata/fastml_complete_replay_plan_20260928.json` and new
 output directories. No source predictions or failed producer receipts were
 replaced. These results do not establish a qualified ancestral ensemble.
+
+## Paired source regression, September 28
+
+Two isolated binaries were built from the frozen source: one exports model
+parameters, probabilities and tree lengths with 17-digit precision; the other
+additionally refreshes the exclusion-probability cache and optimizer baseline
+immediately after initial maximum-parsimony branch scaling. The original
+source and binary were preserved. Patches and build recipes are tracked under
+`patches/fastml-precision-cache-20260928/` and
+`scripts/prepare_fastml_precision_cache_builds.py`.
+
+Six regression runs cover the three diagnosed OG0000294 inputs under both
+variants. The precision-only version retains likelihood discrepancies of
+0.469812–0.473948. With the cache refresh, the largest absolute discrepancy
+is 1.232e-7, below the predeclared 1e-6 regression threshold. The largest
+probability discrepancy is 1.592e-8 across both variants. Increasing print
+precision alone therefore does not resolve the diagnosed likelihood error;
+the targeted cache refresh resolves it to the specified tolerance in these
+three cases.
+
+These checks include independent pruning/inside-outside replay and the small
+enumeration check. They do not certify other cache or optimizer routes.
+Full-grid paired inference and replay remain required before accepting these
+variants for scientific use. The six runs are preserved in
+`results/ancestral/fastml-cache-regression-20260928-v1`, with hash-checked
+evidence in `metadata/fastml_cache_regression_completed_20260928.json`.
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+  python scripts/qualify_fastml_cache_regression.py \
+  --output results/ancestral/fastml-cache-regression-20260928-v1
+```
