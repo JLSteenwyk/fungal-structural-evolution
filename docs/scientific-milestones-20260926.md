@@ -42,7 +42,10 @@ Chronological receipts and process records remain in [progress](progress.md).
   The full BAli-Phy chain grid remains running. Scalar and length screens are
   queued; cross-chain ancestral-state and alignment mixing still require
   assessment. [Coordinate extraction](ancestral-residue-anchors-20260928.md)
-  does not qualify posterior samples.
+  does not qualify posterior samples. The first seven production chains reached
+  1,000 iterations; their 707 saved alignments now have verified geometry and
+  [ancestral-state traces](ancestral-state-traces-20260928.md). No four-chain
+  quartet is complete in that frozen subset, so convergence remains unproven.
 - Primary whole-protein production finished all 412,800 dispositions. The strict
   audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
   to two-residue mappings. All 327 short mappings passed separate analytic checks

@@ -1,0 +1,27 @@
+{
+  "pins": {
+    "scripts/prepare_ancestral_state_traces.py": "084cf24b384c3066ee292c87e763142239fb27dcbdb53986a2d1e861b52ec34a",
+    "scripts/ancestral_residue_anchors.py": "cc8c41b12fe946563c0e07b0ef78db65b8978ffbf0919e7afe05011ea615faee",
+    "metadata/baliphy_first_completed_chains_20260928.json": "d250fc71005cb487c3193b3986cec58c933cc1d94992d3d2742dc38c81e0e711",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json": "49de3f8ae01174f300c9ca2f136fbe23a0f6078fb384cc935a7c2ca37ea164d8"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "runtime_planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 1,
+    "chains": 7,
+    "saved_alignments": 707,
+    "largest_trace_bytes": 9297252
+  },
+  "cutoffs": [
+    250,
+    500
+  ],
+  "output": "results/ancestral/first-anchored-state-traces-20260928-v1",
+  "scope": "Full frozen completed-chain subset; exact projection and independent direct-index readback. No convergence claim."
+}

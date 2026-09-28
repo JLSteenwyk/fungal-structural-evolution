@@ -1,0 +1,19 @@
+{
+  "status": "terminal_anchored_state_trace_completion_verified",
+  "unit": "fungal-first-anchored-states-20260928.service",
+  "state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt": "results/ancestral/first-anchored-state-traces-20260928-v1/receipt.json",
+  "receipt_sha256": "97c26fc6095ac635f4385eff5461ae0a166e1d59017c89796cef92bb02ee9cca",
+  "plan": "metadata/baliphy_first_anchored_states_plan_20260928.json",
+  "plan_sha256": "1ec5171f1deb5de1acee2c188c1fd5dbcc798d7bf7bca4b34b76f2b239409dd9",
+  "chains": 7,
+  "state_observations": 47654628,
+  "elapsed_seconds": 46.63843017999898,
+  "test_script_sha256": "42db7ef2ba6b3d636390607124bf81d2090246b01a6a476f20eac73056dacf4c",
+  "tests_passed": 3,
+  "scope": "Trace of candidate state at each extant residue anchor, including gap and X, with both burn-in count summaries. Anchors can duplicate the same ancestral residue and are not independent sites. Unanchored residues have counts only, no cross-sample identity; full original alignments remain authoritative. No convergence or posterior qualification."
+}
