@@ -1,0 +1,32 @@
+{
+  "status": "partial_mapping_snapshot",
+  "dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 86,
+    "pending_receipt": 238
+  },
+  "expected_jobs": 324,
+  "candidate_samples": 1032,
+  "artifacts": {
+    "candidate_samples.tsv": "ff422c7cbf8b26906ee7199d003c0e5330a209d43d0ebe28e366f721a3f20641",
+    "dispositions.json": "8d0d4dc3899850c3eab9028e80ef6560cfaf225e9da014ea44f964384085db86"
+  },
+  "scope": "Each saved sample paired with same-process fixed runtime tree; all tips/known residues, rooted clades, branch lengths and candidate identities checked. Initial and early samples retained for integrity testing only, not converged posterior ensembles. Root remains an assumption; no independent likelihood replay.",
+  "completed_receipt_path": "results/ancestral/baliphy-sample-mapping-readback-20260927-v4/receipt.json",
+  "completed_receipt_sha256": "12a9e6443541a973834da940a04f506e4fc2919e5ef3e6c3b4bba3fd623fe431",
+  "largest_family_verified_jobs": [
+    "OG0000972-whole-mafft-floor1e-09-resolution0",
+    "OG0000972-whole-mafft-floor1e-07-resolution0"
+  ],
+  "largest_family_resources": [
+    {
+      "job_id": "OG0000972-whole-mafft-floor1e-09-resolution0",
+      "elapsed_seconds": 1236.8237703759805,
+      "peak_sampled_rss_bytes": 2716311552
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-floor1e-07-resolution0",
+      "elapsed_seconds": 1244.6872874039982,
+      "peak_sampled_rss_bytes": 2627244032
+    }
+  ]
+}

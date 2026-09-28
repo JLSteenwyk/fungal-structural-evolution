@@ -147,3 +147,24 @@ identity are versioned. This is a read-only stage capped at one CPU and 2 GiB,
 with no GPU use or paid resources. Measured initialization plus 20-iteration
 costs do not estimate iterations required for convergence or production-chain
 runtime. Those assessments remain required before qualified posterior use.
+
+
+## First largest-family short chains independently verified
+
+The v4 sample-mapping audit checks 86 completed configurations and preserves
+238 pending dispositions. All 1,032 saved candidate-node/sample mappings pass
+the declared integrity checks. This now includes both 622-protein OG0000972
+whole-MAFFT configurations, at minimum-edge floors 10⁻⁹ and 10⁻⁷. All known
+extant residues, full runtime-tree clades and branches, and candidate identities
+were checked across their three saved alignment samples.
+
+The two runs took 1,236.8 and 1,244.7 seconds, with sampled peak RSS of 2.53 and
+2.45 GiB, respectively. They therefore fit within the current diagnostic
+resource limits; this does not establish the time or memory needed for a
+converged chain. Only 20 iterations were run. The corresponding FAMSA and
+domain configurations and the remaining full grid continue. Both floor
+alternatives share data and are not independent convergence chains.
+
+Evidence: `metadata/baliphy_sample_mapping_partial_readback_v4_20260927.json`
+and `metadata/baliphy_resource_partial_v2_completed_20260927.json`. The queued
+full audit and all-configuration resource summary remain unchanged.
