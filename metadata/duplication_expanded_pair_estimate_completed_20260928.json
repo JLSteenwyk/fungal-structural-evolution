@@ -1,0 +1,56 @@
+{
+  "receipt_path": "results/orthology/duplication-expanded-pair-estimate-20260928-v1/receipt.json",
+  "receipt_sha256": "347e83054648ab6ebe444027c4f66ea73c0973d22a8e41581edf306c9e654957",
+  "receipt": {
+    "status": "complete_model_version_pair_resource_inventory",
+    "source_sha256": {
+      "results/orthology/duplication-sampling-coverage-20260926-v1/terminal_event_coverage.tsv.gz": "2a3a6f963610d85941abb827a988fe4cf2d0d4ab02f69a745658726d872526e8",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/protein_model_links.tsv": "a3ca5564d25f31cc701e9959f4ed39682231c59cbe61d8b16809cf1938ff2e78",
+      "results/orthology/duplication-sampling-coverage-20260926-v1/receipt.json": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+      "metadata/duplication_sampling_coverage_readback_completed_20260926.json": "f9494fa60e9120eacd68a9563fd67854491c25bde59280aba4841d71eb8d7d0a",
+      "scripts/refresh_duplication_model_coverage.py": "78b93913cccb1531131e67302b58089658fa0c687b1b9b199728c6d7b827615e",
+      "metadata/duplication_expanded_coverage_plan_20260928.json": "e5f3737f0bb108b08ee78e621fb285d5b81701cee6e48b88ac19f4c75faa9404",
+      "results/orthology/duplication-expanded-coverage-20260928-v1/receipt.json": "21c432958e310e7c61b52e563e2d2aa447225d3e41f629488f10713a97ea292a",
+      "results/orthology/duplication-expanded-coverage-20260928-v1/event_coverage.tsv.gz": "166732c77f1f9d15e3cbbbcb7e9493065b8ad8d2ba3d50bb4bb097063afe27b1",
+      "results/orthology/duplication-expanded-coverage-readback-20260928-v1.json": "f9e49b8bc404a9afd76dcde7467625123f4adc4b6704fc442c27328aab33d82d",
+      "metadata/duplication_model_pair_queue_completed_20260926.json": "2cc71b41914f5ddf2bc8a723dc44da6c5f34dc4d34e3476a360bcf7eb4af8570",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+      "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f"
+    },
+    "script_sha256": "cfe48bfb2ab504f8234fc9a1b58fd37630797d126f500dc2e1eb82631c525d92",
+    "event_rows": 935353,
+    "distinct_pair_event_links": 268821,
+    "same_model_event_links": 14588,
+    "old_distinct_pairs": 103200,
+    "expanded_distinct_pairs": 134812,
+    "model_version_pairs_shared_with_old_queue": 103199,
+    "new_model_version_pairs": 31613,
+    "old_pairs_not_in_expanded_set": 1,
+    "new_directed_comparisons_one_mask": 63226,
+    "new_directed_comparisons_two_masks": 126452,
+    "artifacts": {
+      "model_version_pairs.tsv": "8732bfb5c2ce93bea029c5c5c35dbcfc23c4c59902311e6320a34955e99848cc"
+    },
+    "validation": "Every pair multiplicity checked against SQL GROUP BY and every serialized row checked.",
+    "scope": "Resource planning only. Expanded tree-node correspondence, coordinate/confidence validation, masks and alignment eligibility remain required. Matching model IDs/versions do not establish identical coordinate bytes or permit automatic reuse of old alignments. All event associations remain in the source table; pair reuse does not imply independent events. No new structural comparisons launched."
+  },
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "replaced_pair_review": {
+    "taxon": "F13290",
+    "gene_a": "F13290_CAD7067269.1",
+    "gene_b": "F13290_CAD7067533.1",
+    "old_model_b": "AF-A0A177T084-F1",
+    "new_model_b": "AF-A0A9N8M122-F1",
+    "guides": [
+      "profile",
+      "mafft"
+    ],
+    "coverage_remains": "both_models"
+  }
+}

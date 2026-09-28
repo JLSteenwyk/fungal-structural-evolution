@@ -1,0 +1,33 @@
+{
+  "unit": "fungal-expanded-duplication-pair-estimate-20260928.service",
+  "pid": 2422937,
+  "created": 1790638240.12,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/estimate_expanded_duplication_pairs.py",
+    "--readback",
+    "results/orthology/duplication-expanded-coverage-readback-20260928-v1.json",
+    "--old-queue-evidence",
+    "metadata/duplication_model_pair_queue_completed_20260926.json",
+    "--output",
+    "results/orthology/duplication-expanded-pair-estimate-20260928-v1"
+  ],
+  "observed_state": {
+    "MainPID": "2422937",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "active"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "gpu": false,
+    "output_planning_mib": 100,
+    "runtime_planning_hours": [
+      0.01,
+      1
+    ],
+    "paid_resources": false
+  }
+}

@@ -190,3 +190,36 @@ Olpidiomycota now has nearly complete event coverage, but represents one taxon.
 Aphelidiomycota, Sanchytriomycota and Calcarisporiellomycota still have no
 two-model candidates in this frozen event class; that is not evidence of
 biological absence or a survey of every available structure.
+
+### Expanded comparison resource inventory
+
+The September 28 inventory contains 134,812 distinct model/version pairs
+across 268,821 event links, plus 14,588 same-model event links retained in
+the source table. Of these distinct pairs, 103,199 also occur in the old
+103,200-pair queue and 31,613 are new. Comparing all new pairs in both input
+orders would require 63,226 alignments per mask, or 126,452 with two masks,
+before eligibility filtering. These are counts, not a measured runtime ETA.
+
+The one old pair absent from the expanded set involves F13290 proteins
+CAD7067269.1 and CAD7067533.1 in both guides. The latter's selected model
+changed from AF-A0A177T084-F1 to AF-A0A9N8M122-F1; two-model event coverage
+was retained. Matching model IDs and versions alone does not justify reusing
+old alignment results: coordinate bytes, masking and settings must also match.
+
+Reproduce with `scripts/estimate_expanded_duplication_pairs.py --readback
+results/orthology/duplication-expanded-coverage-readback-20260928-v1.json
+--old-queue-evidence metadata/duplication_model_pair_queue_completed_20260926.json
+--output <fresh-directory>`. All 935,353 event rows were scanned; every
+distinct-pair multiplicity was checked against SQL aggregation and every
+serialized pair row was checked. Source hashes were verified before and
+after execution. The one-CPU, 4-GiB, zero-swap job finished successfully in
+18 CPU seconds, with a 566-MB peak. Its planning allowance was 100 MiB output
+and 0.01–1 hour; no GPU, paid resource or new alignment job was used.
+Evidence is in `metadata/duplication_expanded_pair_estimate_completed_20260928.json`;
+the pair table and receipt are in
+`results/orthology/duplication-expanded-pair-estimate-20260928-v1/`.
+
+This inventory is not an executable comparison queue. Expanded candidate
+tree-node correspondence, coordinate/confidence checks and masking eligibility
+remain prerequisites. Source event associations remain intact, and deduplicating
+model pairs for computation does not create independent biological observations.
