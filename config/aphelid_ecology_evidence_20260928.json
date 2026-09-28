@@ -1,0 +1,63 @@
+{
+  "records": [
+    {
+      "taxon_id": "F1498855",
+      "species_name": "Amoeboaphelidium occidentale",
+      "assembly_accession": "GCA_023515795.1",
+      "strain": "FD01",
+      "biosample": "SAMN26806364",
+      "bioproject": "PRJNA817714",
+      "host": "Scenedesmus dimorphus",
+      "paths": {
+        "assembly.txt": "data/traits/aphelid-ecology-20260928/occidentale-assembly.txt",
+        "biosample.html": "data/traits/aphelid-ecology-20260928/occidentale-biosample.html",
+        "bioproject.html": "data/traits/aphelid-ecology-20260928/occidentale-bioproject.html"
+      }
+    },
+    {
+      "taxon_id": "F1243177",
+      "species_name": "Amoeboaphelidium protococcarum",
+      "assembly_accession": "GCA_023515745.1",
+      "strain": "FD95",
+      "biosample": "SAMN26794594",
+      "bioproject": "PRJNA817550",
+      "host": "Scenedesmus dimorphus",
+      "paths": {
+        "assembly.txt": "data/traits/aphelid-ecology-20260928/protococcarum-assembly.txt",
+        "biosample.html": "data/traits/aphelid-ecology-20260928/protococcarum-biosample.html",
+        "bioproject.html": "data/traits/aphelid-ecology-20260928/protococcarum-bioproject.html"
+      }
+    }
+  ],
+  "sources": {
+    "data/traits/aphelid-ecology-20260928/occidentale-assembly.txt": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/515/795/GCA_023515795.1_ASM2351579v1/GCA_023515795.1_ASM2351579v1_assembly_report.txt",
+      "sha256": "cb8b15f26384247d9b6e63d01de93309c9df29901dee7d32fc2ddebfec480857"
+    },
+    "data/traits/aphelid-ecology-20260928/occidentale-biosample.html": {
+      "url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN26806364",
+      "sha256": "cce171e5864b5dd8e05cc5be524a8d2692c407d9d31ceb5a158d6347fd02247a"
+    },
+    "data/traits/aphelid-ecology-20260928/occidentale-bioproject.html": {
+      "url": "https://www.ncbi.nlm.nih.gov/bioproject/817714",
+      "sha256": "9e1e633f412ab378acaf01f2cab071fc8521079f9314b2ea62c896a54363a6c3"
+    },
+    "data/traits/aphelid-ecology-20260928/protococcarum-assembly.txt": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/515/745/GCA_023515745.1_ASM2351574v1/GCA_023515745.1_ASM2351574v1_assembly_report.txt",
+      "sha256": "61dade51c076ec84bf7bf9320b43465e1abce17b6196161250556e992d103245"
+    },
+    "data/traits/aphelid-ecology-20260928/protococcarum-biosample.html": {
+      "url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN26794594",
+      "sha256": "b331042b7145f0585ee856742634d0e89a428375f1ef10c4e6d630a9610a6846"
+    },
+    "data/traits/aphelid-ecology-20260928/protococcarum-bioproject.html": {
+      "url": "https://www.ncbi.nlm.nih.gov/bioproject/817550",
+      "sha256": "25ded7e6f6dd6c9b762325777f84fa4bb54fad6619e8589fce7f23f3c4350209"
+    }
+  },
+  "pins": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/species_ecology_evidence_reviewed_20260927.tsv": "160f333ceada630e2322642acd2a0ca236a7e8361769cc584dd0ba66efcda96f"
+  },
+  "scope": "Submitter-reported strain ecology tied to selected assemblies through assembly reports; no independent experimental or transition validation."
+}

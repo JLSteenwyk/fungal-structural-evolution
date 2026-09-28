@@ -9783,3 +9783,12 @@ does not establish universal coverage or complete the biological project.
   including every stored covariate bin and quantile. Source/checkpoint binding
   and full disposition accounting are required. This reproducibility audit
   remains distinct from the outstanding scientific model-adequacy assessment.
+
+- September 28: expanded the ecological evidence table from45 to47 taxa by
+  adding Amoeboaphelidium occidentale FD01 and A. protococcarum FD95. Downloaded
+  assembly reports bind each selected genome to a BioSample and BioProject;
+  inspected submitter descriptions report algal parasitism on Scenedesmus
+  dimorphus. Source URLs, snapshots and hashes are retained. All45 original rows
+  are preserved. These are sample-linked annotations, not independently
+  verified experiments or two established transitions. Expanded structural
+  coverage and phylogenetic trait coding remain pending.

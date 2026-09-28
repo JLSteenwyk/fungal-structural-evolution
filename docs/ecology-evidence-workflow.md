@@ -177,3 +177,10 @@ identifies required and optional change locations under the original binary
 coding on both completed ML trees, with a Ramaria-unknown sensitivity. All
 16,784 endpoint-constrained costs passed independent network-flow verification.
 These conditional undirected locations do not establish biological origins.
+
+## September 28 sample-linked aphelid additions
+
+The [47-taxon evidence version](aphelid-ecology-evidence-20260928.md) preserves
+all 45 reviewed species rows and adds two assembly-linked BioSample annotations
+of algal parasitism. Submitter evidence, experimental validation and inferred
+origins remain distinct. The new table has not replaced frozen analysis inputs.
