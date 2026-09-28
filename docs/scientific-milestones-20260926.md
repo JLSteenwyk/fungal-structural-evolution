@@ -144,9 +144,13 @@ from the fraction of computational jobs finished.
 All 706 nominated experimental coordinate entries passed full CA mapping/readback;
 all 65,556 observed-coverage interval rows and 78 case summaries passed independent
 checks. Candidate count reductions are substantial for some cases. Direct
-four-protein geometric fits are running behind the completed coordinate gate;
-full fit readback, confidence/coverage sensitivity, dependence-aware summaries
-and mechanistic interpretation remain pending. See
+four-protein fits, contrast readback and experimental-reference sensitivity
+are now complete: 115,200 reference-unit records and 936 zero-inclusive case
+summaries were checked. All 13 cases, four metrics, six coverage screens and
+three margins are retained. The combined experimental/ancestral case table
+preserves all 936 settings, including 648 with no qualifying reference units.
+These are dependent descriptive comparisons; mechanistic interpretation and
+the broader evolutionary aims remain pending. See
 [experimental case controls](case-independent-control-coverage-20260927.md).
 
 A literature-supported potential Neocallimastix species complex also motivates

@@ -92,3 +92,20 @@ conflict does not qualify a case for ancestral structure prediction. The
 reproducible join is `scripts/integrate_case_ancestral_uncertainty.py`; input and
 output hashes are recorded in
 `metadata/case_ancestral_uncertainty_integration_completed_20260927.json`.
+# Combined experimental and ancestral evidence
+
+The [complete case-evidence table](tables/case_evidence_all_settings_20260927.tsv)
+joins each original case dossier and its ancestral-uncertainty fields to all
+experimental-reference sensitivity settings. It retains 13 cases × 72 settings
+(four metrics, six coverage screens, three margins), with 90 fields per row.
+All 936 rows passed a separate relational-merge check of every field; 648
+settings have no qualifying experimental reference units and remain explicit.
+
+Case and ancestral fields repeat across settings and must not be summed.
+Reference units share structures, sequences and publication/dependence groups;
+their counts are not independent evolutionary replicates. This table supports
+case review without selecting a favorable screen. It supplies no ranking,
+significance test, ancestral polarity or qualified ancestral structural ensemble.
+Reproduce with `scripts/integrate_case_experimental_ancestral_evidence.py`;
+source checksums and validation scope are recorded in
+`metadata/case_experimental_ancestral_integration_completed_20260927.json`.

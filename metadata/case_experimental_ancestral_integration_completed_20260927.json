@@ -1,0 +1,23 @@
+{
+  "status": "complete_all_case_experimental_ancestral_integration",
+  "cases": 13,
+  "settings_per_case": 72,
+  "rows": 936,
+  "fields": 90,
+  "zero_qualified_rows": 648,
+  "pins": {
+    "results/structural_comparisons/case-ancestral-uncertainty-integration-20260927-v1/receipt.json": "ff3063c84f19f228c2099123ff5d15d722ca55a074147fb46c9e5782c648a273",
+    "results/structural_comparisons/case-ancestral-uncertainty-integration-20260927-v1/case_dossiers_with_ancestral_uncertainty.tsv": "942d47f55c9c3b149b1e132fd963ba5ef6339984c1895a18a33783f80a59408a",
+    "metadata/case_experimental_reference_robustness_completed_20260927.json": "c45136d9bd24f2c4c13779cbc65828b3c7cc883ecf8d722daaa27310212178c6",
+    "results/experimental_structures/whole-domain-case-reference-robustness-20260927-v1/receipt.json": "92a67749726589ddbfa82f2973cb75ae469d81c76590f18c62959da81692248c",
+    "results/experimental_structures/whole-domain-case-reference-robustness-20260927-v1/case_summary.tsv": "295c8705ef5cf2d498b22a9849c5c569f85bad6585c7db2e44d61becc50d0e4a"
+  },
+  "script_sha256": "634abd8b4443094e3360258f7dc332c17dca13a53c0b7b4fd5b501e05a8b9aad",
+  "artifacts": {
+    "case_evidence_all_settings.tsv": "606830c0373fb2e11cdac95000ae5dec293161f355bb2e6f997a320c6fd870ce"
+  },
+  "verification": "Every emitted field checked against an independent pandas many-to-one merge; all 13 by 72 strata preserved.",
+  "scope": "Descriptive integration only. Reference units are dependent, ancestral counts repeat fits and nodes. No pooling across settings, case ranking, significance, mechanism, ancestral polarity or qualified ancestral ensemble is implied.",
+  "completed_receipt_path": "results/structural_comparisons/case-experimental-ancestral-evidence-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "f75253ea0770c75585a13f87db35b63fdcd30aecdeb08443ec1c493fb456856c"
+}
