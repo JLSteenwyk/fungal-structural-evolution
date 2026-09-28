@@ -9800,3 +9800,11 @@ does not establish universal coverage or complete the biological project.
   collection. Across the expanded set,46 taxa and878 pairs have coverage in
   at least one source;195 pairs qualify in both and203 in neither. No cross-source
   observations or inferred ecological transitions were pooled.
+
+- September28: traced A. protococcarum's absence from qualified marker analyses.
+  Of125 BUSCO markers,119 are duplicated across multiple annotated genes, one
+  is single-copy and five are missing. The sole selected marker already has an
+  ESMFold model but53 qualified columns against54 required. This identifies a
+  copy-selection limitation plus a confidence threshold failure, not simply an
+  unfilled prediction queue. All thresholds remain unchanged; copy-aware
+  family analysis is needed to use the duplicated marker information.

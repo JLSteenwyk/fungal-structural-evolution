@@ -1,0 +1,42 @@
+{
+  "status": "complete_aphelid_marker_coverage_cause_trace",
+  "taxon_id": "F1243177",
+  "raw_busco_marker_counts": {
+    "Duplicated": 119,
+    "Missing": 5,
+    "Complete": 1
+  },
+  "duplicated_markers_with_multiple_resolved_gene_ids": 119,
+  "single_copy_mapping": {
+    "marker": "5001734at2759",
+    "taxon_id": "F1243177",
+    "protein_id": "KAI3647604.1",
+    "sequence_sha256": "9499b50982e335bb47ec79c4eaf57b527e86b2aa491e0dba135333940b10dba6",
+    "source_fasta_sha256": "8f06ef47ec3d5cbb5aae0320e6c04f51902914140feba05dd899dacd0d3b1ba4"
+  },
+  "sole_selected_marker_qualification": {
+    "marker": "5001734at2759",
+    "taxon_id": "F1243177",
+    "model_name": "ESM-S9499b50982e335bb47ec79c4eaf57b527e86b2aa491e0dba135333940b10dba6-d662a12b8ced-v1",
+    "original_marker_columns": "177",
+    "required_observed_columns": "54",
+    "observed": "53",
+    "noncanonical_or_missing_sequence": "13",
+    "no_structural_mapping": "0",
+    "invalid_native_feature": "1",
+    "low_feature_plddt": "110",
+    "high_feature_pae": "0",
+    "taxon_eligible": "False"
+  },
+  "sources": {
+    "results/busco/F1243177/run_eukaryota_odb12.2/full_table.tsv": "4a35b2f9bb9dce966dfd2d9b0d1bd9e2e529880488a5c6d44db261aeeb11899d",
+    "results/qc/busco-gene-copies-v1/receipt.json": "e8d7dff8d2b4a0d097a00cb7471aec3fc3c7fcc08d9f0fe67b4d295432d1f7a7",
+    "results/qc/busco-gene-copies-v1/marker_gene_copies.tsv": "1750e3b9dc52479c7cb827d7d3fdcea2683ed7c1b2b4f44e11ca348e2aa50059",
+    "results/phylogeny/markers-full-v1/protein_mapping.tsv": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/receipt.json": "f0135debb290a1b7a710df8f2f9748e611842a710abbd50e9f432c4e6df14180",
+    "results/phylogeny/paired-inputs-esmfold-all-completed-20260922-v1/taxon_coverage.tsv": "0f2d21b76a16caafbf38349394b3d404b3b574f1f2e2cba7e475b27b48801d49"
+  },
+  "script_sha256": "f0587b8d4f1d8b4f1f7884f4549af9e30c05bd905fa89a8fe532593ea91fc2be",
+  "next_required_work": "Assess all copies using existing gene identities and copy-aware phylogenetic/structural analyses; do not select an arbitrary paralog or lower confidence eligibility to include this taxon.",
+  "scope": "Trace through frozen single-copy marker and qualification pipelines. Duplicated hits are not proof of biological gene duplication, hybrid origin or assembly artifacts. Missing selected markers are not missing whole-proteome sequences. No thresholds or production selections changed."
+}

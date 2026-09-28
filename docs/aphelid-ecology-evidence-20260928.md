@@ -71,3 +71,33 @@ existing assessment/readback scripts using
 The completion receipt is `metadata/aphelids47_ecology_coverage_completed_20260928.json`.
 Each source retained the one-CPU, 4-GiB, 1–10-minute planning allowance and
 finished in seconds without GPU inference.
+
+## Why A. protococcarum lacks qualified single-copy markers
+
+A source-bound trace identifies an upstream copy-selection limitation. Its
+125-marker raw BUSCO table contains one Complete marker, 119 Duplicated markers
+and five Missing markers. All 119 duplicated markers map to multiple annotated
+gene identifiers in the completed annotation audit. The frozen single-copy
+marker mapping therefore contains only marker 5001734at2759, protein
+KAI3647604.1. This is not evidence that the other119 marker families lack
+protein sequences, and duplicated hits alone do not distinguish biological
+duplication, hybrid ancestry or assembly redundancy.
+
+The selected protein already has an ESMFold model. In the frozen paired
+alignment,53 of177 columns are qualified; the existing eligibility rule requires
+max(50,ceil(0.3*177))=54. The other columns comprise13 noncanonical/missing
+sequence positions, one invalid native feature and110 low-feature-confidence
+positions. There is no missing structural mapping or high-PAE exclusion in
+this particular row. No confidence or eligibility thresholds were changed.
+
+Thus another round of prediction on the current single-copy list would not
+address the main119-marker exclusion. The next step is to inventory all of
+those copies, retain annotated gene identities and assess them through
+copy-aware family phylogenies and structural comparisons. Selecting an
+arbitrary best-scoring paralog would erase the uncertainty that caused the
+exclusion. The existing whole-proteome family analyses are the appropriate
+place to connect this information.
+
+Reproduce the trace with `scripts/diagnose_aphelid_marker_coverage.py`; raw-table,
+annotation and qualified-mask source hashes and exact counts are recorded in
+`metadata/aphelid_marker_coverage_cause_20260928.json`.
