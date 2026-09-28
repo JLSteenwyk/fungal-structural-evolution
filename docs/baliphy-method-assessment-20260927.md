@@ -532,3 +532,29 @@ The watcher currently writes to a fresh output directory. After an interrupted
 watcher, use a new versioned output/plan and preserve earlier diagnostic files;
 this does not require restarting or changing the sampling batch. Scalar
 screens remain separate from alignment and candidate-state mixing checks.
+
+
+### Candidate ancestral-length diagnostics prepared
+
+`scripts/prepare_ancestral_length_diagnostics.py` converts a fully checked
+four-chain group's candidate samples into four source-node length traces.
+It requires the same source-node identity at each level across all saved
+iterations and chains, regardless of process-local node labels. Missing,
+duplicate, negative and nonintegral observations are rejected. Saved iteration
+numbers remain 0, 10, …, 1000; burn-in uses iteration values, not row offsets.
+
+Four tests passed, and all 3,888 candidate samples across the completed
+324-configuration short grid were transformed and compared back to their
+original node identities, lengths and iteration labels. Evidence:
+`metadata/ancestral_length_trace_checks_20260927.json`.
+
+The command requires `--producer-plan`, `--group` (the input/prior identity),
+`--output` and `--python` (the isolated diagnostic environment interpreter).
+For a ready group it verifies quartet provenance, writes checksum-bound
+length logs and runs both burn-in screens. At the current 1,000-iteration
+horizon, those cutoffs retain only 75 or 50 saved alignments per chain.
+Length diagnostics therefore use fewer observations than scalar logs and
+cannot inherit their effective sample sizes. Constant lengths remain review
+flags; neither stable lengths nor passing scalar diagnostics establish
+site-state or homology/alignment convergence. No independent quartet is yet
+complete, so no production length-convergence result is available.
