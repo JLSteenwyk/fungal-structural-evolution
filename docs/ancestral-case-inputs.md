@@ -1048,3 +1048,21 @@ its artifact hashes; the full-data comparison has not yet run. Resource
 allowance is one CPU, 8 GiB RAM, no swap, 1 GiB output and 0.5–12 hours after
 the producer. See `scripts/audit_refined_whole_posteriors.py` and its
 `metadata/refined_whole_posterior_audit_*_20260927.json` records.
+
+All 468 whole-protein multistart fits and their independent likelihood audit
+are now complete. Maximum replay error was 3.63e-5 log-likelihood units.
+Among 156 model/bound groups, 48 had across-start differences above 0.001
+(maximum 0.138223); 36 improved over the baseline by more than 0.001
+(maximum 0.014044). Best-start refinements are running; these numerical
+results do not establish global convergence or biological significance.
+
+A pre-execution mapping check found that selected fitted trees suppress the
+original degree-two root. The v1 probability producer and auditor were stopped
+while still waiting, before probability output began. Separate v2 scripts,
+plans and launch records supersede those two waiting stages. The v2 producer
+uses the pinned original labeled trees to identify candidate signatures and
+then maps them to the fitted tree. All 156 refined job inputs were checked:
+all three identifiable signatures are retained and the root remains absent,
+as required. Existing refinement jobs and earlier result collections are
+unchanged. The v2 probability producer and independent auditor are verified
+live and waiting for their required predecessors.

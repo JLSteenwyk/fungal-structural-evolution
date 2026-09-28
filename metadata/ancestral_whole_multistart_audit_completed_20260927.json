@@ -1,0 +1,40 @@
+{
+  "status": "complete_468_multistart_reports_and_independent_likelihoods",
+  "maximum_likelihood_replay_error": 3.628578269854188e-05,
+  "across_start_groups_exceeding_001": 48,
+  "audit_plan_sha256": "48351e80a6496fb1fac399525db0d29332ac85041bb8eb03065a8041a84c9525",
+  "fits": 468,
+  "warning_lines": 4500,
+  "fits_with_warning_lines": 468,
+  "fits_with_edges_below_1e_5": 378,
+  "source_receipt_path": "results/ancestral/whole-multistarts-20260927-v1/receipt.json",
+  "source_receipt_sha256": "63c6d8b9d68272f772aebd7ef467d8adb8aaa7042ad43ba599a091b755c6f6b5",
+  "plan_sha256": "498bb5355d9fc21fc4743e4379c9688d6ab276daefd0a4293e570274c22c628c",
+  "frequency_implementation_source": {
+    "url": "https://github.com/iqtree/iqtree3/blob/v3.0.1/alignment/alignment.cpp",
+    "local_path": "data/software_audits/iqtree-3.0.1/alignment.cpp",
+    "sha256": "bede370114744d607f2a46509d12347d93480ca5c99957bb63d8f40e507a75f0"
+  },
+  "script_sha256": "39a59c554653763174fd9d74b932f821b72f2f960999efc3808594ce84435878",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "artifacts": {
+    "bound_comparisons.tsv": "45096ba37d5fce6979036e35a0bc9718edcf9a889433612d3b574bbed215523a",
+    "fit_readback.tsv": "72393361cb2bd5ae80097f5ad4ead1bfd95d6c60796ce0caafcba910de2344a2",
+    "warnings.tsv": "f426a22bc1ee4ee7249b49ff762d8e16e636c1fe7b08644493b58cd7fa5a2700",
+    "start_comparisons.tsv": "4b9276d0395a4d6ad30bae5518ac1d96e5bdf1b629d1e755f0208b6cd000bc6e",
+    "parameters.json": "1ea9ce71f7ccf9158b65b7910b78e11793ccf65bcfd622787c2a7dca1a3b5fd4"
+  },
+  "scope": "All 468 model labels, tip sets, unrooted edge sets, checkpoint/report likelihood agreement, checkpoint/tree branch lengths, version-specific eight-iteration empirical frequencies, gamma-category means and AIC/BIC arithmetic checked. Warnings and short edges retained. Independent scaled-pruning likelihood replay checked for all468; across-start and bound comparisons retained. Agreement is not a proof of global convergence or model adequacy; ancestral probabilities remain from the original fits until separately propagated.",
+  "completed_receipt_path": "results/ancestral/whole-multistart-readback-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "84993a80216a6ac7e855ae2d84b4037ee272dc97f7156eaa11d2af4f97526f33",
+  "verified_audit_terminal_state": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}
