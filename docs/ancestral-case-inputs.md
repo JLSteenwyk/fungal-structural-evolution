@@ -1124,3 +1124,20 @@ live and waiting. Its allowance is one CPU, 8 GiB RAM, no swap, 4 GiB output
 and 0.1–4 hours after the audits. All comparison categories retain full
 coordinates; they do not supply independent replicates or ensemble weights.
 Earlier comparison outputs remain separate.
+
+All 8,708,760 refined whole-protein probabilities passed independent
+fixed-root/direct-exponential readback (maximum absolute difference
+1.672e-11; site log-likelihood difference 3.656e-10). Both producer and audit
+are terminal with successful status and all artifacts verified.
+
+The initial refined/baseline and bound comparison also completed: 14 changes
+in the most probable amino acid among 435,438 refined-versus-baseline node/site
+comparisons, with zero opposing calls having at least 0.9 support in both
+fits. Maximum total variation was 0.003031. Across 217,719 bound comparisons,
+there were zero most-probable-state changes (maximum total variation 0.0002595).
+A separate readback of all underlying probability arrays reproduced the
+site, state-change and high-support-disagreement counts. These results support
+stability for these specific optimization contrasts; alternate-start comparisons,
+model adequacy and insertion/deletion uncertainty remain separate. Evidence is
+in `metadata/refined_whole_posterior_audit_completed_20260927.json` and
+`metadata/whole_optimization_probability_comparison_completed_20260927.json`.

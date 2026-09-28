@@ -1,0 +1,30 @@
+{
+  "status": "passed_all_156_refined_whole_protein_posteriors",
+  "fits": 156,
+  "nodes": 468,
+  "sites": 435438,
+  "probabilities": 8708760,
+  "maximum_probability_difference": 1.6716350526024826e-11,
+  "maximum_site_log_likelihood_difference": 3.6554581583914114e-10,
+  "plan_sha256": "265683c21833bb64c10c29bf184db4496060bab7034f6faedcf15af4011486c8",
+  "source_receipt_sha256": "6deea920586a38429099bb60094704715c8960e1688ee35fd341df22dc6029a8",
+  "analytic_two_internal_node_enumeration": "passed",
+  "artifacts": {
+    "posterior_readback.tsv": "4589022deacca7060091c55573ae3be2cce9050f7aa58b68d5ea8d2abddd19bd"
+  },
+  "scope": "Separate fixed-root inside/outside algorithm, full columns and direct matrix exponential. Shared empirical matrices, saved parameters, alignment and tree inputs. Tests numerical implementation, not optimization convergence, model adequacy, indels or historical node support.",
+  "completed_receipt_path": "results/ancestral/refined-whole-posterior-audit-20260927-v2/receipt.json",
+  "completed_receipt_sha256": "5b516a14b8bc5a4a4f2d13e535fbaba596d5d70f5a4776e6b083246c0bf1cc92",
+  "verified_terminal_states": {
+    "fungal-refined-whole-ancestors-20260927-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-refined-whole-posterior-audit-20260927-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}
