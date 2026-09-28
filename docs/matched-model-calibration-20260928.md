@@ -1009,3 +1009,20 @@ allowance, with a broad uncalibrated 1–24 active-hour estimate. It uses the sa
 numerical evaluator as the producer: this establishes replay consistency, not
 independent model validation or calibrated adequacy. All output bins and
 quantiles are recomputed, rather than checking only scalar summary arithmetic.
+
+### Complete cache replay and downstream handoff
+
+The cache replay completed successfully on September 28 at 16:22 EDT. All
+28,808 inputs and 144,040 original fits were checked. A full serialized-result
+readback verified every replay artifact hash, unique input/tree identity,
+cache binding and original-fit binding. The largest recorded absolute
+objective difference was 1.55e-11 and coefficient difference was 3.14e-15.
+The completion evidence and terminal success/exit-zero state are recorded in
+`metadata/matched_simulation_cache_replay_completed_20260928.json`.
+This verifies reproduction from the cache; it does not establish model
+adequacy, independent implementation agreement or calibrated fungal tests.
+
+The existing selected-fit interval and descriptive residual controllers
+subsequently started their calculations with 16 and eight workers,
+respectively. Residual processing reached 600 of 28,808 inputs at 16:23 EDT;
+those outputs and the interval outputs still require their queued full audits.
