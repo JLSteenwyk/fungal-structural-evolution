@@ -959,3 +959,27 @@ coefficient replay, restart and retained-failure checks. The complete
 no swap, a 16 GiB output allowance and 100 GiB free-space reserve. The broad
 0.1–24 active-hour estimate is uncalibrated; record actual throughput. Full
 output readback and model-adequacy interpretation remain pending.
+
+### Existing simulation residual references completed
+
+`summarize_simulated_matched_residuals.py` reused all 15,984 frozen Gaussian
+responses and their selected fits, preserving the 184 continuation-qualified
+histories. Response seed/hash replay passed. It evaluated each response using
+both generating covariance and fitted covariance: 31,968 diagnostic records,
+zero unresolved outcomes. The job ended inactive/success/exit0. Readback checked
+all replicate denominators and all 256 empirical summary rows. No new response
+or optimization was added.
+
+Fitting covariance affects these descriptive distributions. For the n=240
+all-positive-component design, the residual fourth raw moment's mean was 2.923
+using fitted covariance versus 3.055 using generating covariance; empirical
+2.5%–97.5% ranges were 2.251–3.707 and 1.514–5.439, respectively. These summaries
+use correlated residuals with estimated fixed effects in both modes. The
+ranges are empirical summaries of 999 responses, not confidence limits or
+transferable rejection thresholds. They illustrate why fitted-model simulation
+references are needed before interpreting fungal residual patterns. Only the
+two synthetic designs and eight generating variance configurations are covered.
+
+Artifacts are in `results/model_validation/matched-simulation-residual-reference-20260928-v1`;
+completion and readback hashes are recorded in
+`metadata/matched_simulation_residual_reference_completed_20260928.json`.

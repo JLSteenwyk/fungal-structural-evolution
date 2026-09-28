@@ -1,0 +1,29 @@
+{
+  "simulation_plan": "metadata/matched_kr_simulations_plan_20260928.json",
+  "overlay": "results/model_validation/matched-kr-continuation-overlay-20260928-v1",
+  "qualification_audit": "metadata/matched_kr_continuation_audit_20260928.json",
+  "output": "results/model_validation/matched-simulation-residual-reference-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "storage_gib": 0.1,
+    "planning_active_hours": [
+      0.02,
+      1
+    ],
+    "gpu": false,
+    "paid_cost": 0,
+    "basis": "31968 fixed covariance diagnostics on48/240-row designs, reused responses and fitted parameters. No refitting."
+  },
+  "pins": {
+    "metadata/matched_kr_simulations_plan_20260928.json": "f27dbdc3468c2a5e9ff74d4fb3afb4bae7bb1f765d63dc6589d03fd5b7b56987",
+    "metadata/matched_kr_continuation_audit_20260928.json": "b4e108d5c30eccd8484e0175100325790aec305b3175411c84c14e566c05b11f",
+    "results/model_validation/matched-kr-continuation-overlay-20260928-v1/receipt.json": "3acc7814a4768509cdc41b0d16629245ece3f570951230b5bdc76ea252e05891",
+    "scripts/summarize_simulated_matched_residuals.py": "1f2ae9984fe00221a3a8e4fafdb516bce12925191802f79a4bf0e60d3bd5dfb2",
+    "scripts/matched_marginal_residual_diagnostics.py": "1ea08d9902347277114ed555dc24125afd86155de7329b9fb6ac4cda05d79223",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_marginal_residual_checks_20260928.json": "8a32afe8edca0ed04758f52cddfd7afa7c4003cd2d6b34e568b3420e64de9d05"
+  }
+}

@@ -9755,3 +9755,10 @@ does not establish universal coverage or complete the biological project.
   and spread; correlated residuals and fitted variances prevent treating these
   as independent normality tests. The CPU run waits for complete cache replay.
   Output validation and simulation-based reference distributions remain required.
+
+- September 28: completed descriptive residual reference analysis for all
+  15,984 existing Gaussian simulations, comparing generating and fitted
+  covariance. All 31,968 diagnostic records and 256 summary rows passed
+  count/arithmetic readback, with zero unresolved cases. Fitted covariance
+  changes the distribution of residual summaries; these synthetic references
+  do not yet qualify fungal model adequacy or supply transferable thresholds.
