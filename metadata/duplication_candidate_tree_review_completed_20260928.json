@@ -1,0 +1,57 @@
+{
+  "receipt_path": "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json",
+  "receipt_sha256": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+  "receipt": {
+    "status": "complete_duplication_candidate_join_and_tree_review",
+    "plan_sha256": "ecce453618452161478bbadef787ea2c33757e369a9a5354ae576d0a4759066d",
+    "script_sha256": "e0e2d37af7534ec5d675a3b6811b7f6b880b504f59a9d393b21029945294c2e4",
+    "guides": [
+      {
+        "guide": "profile",
+        "candidates": 141724,
+        "independent_candidate_join": "passed_all_eligible_native_events",
+        "tree_families_checked": 25039,
+        "counts": {
+          "exact_reported_pair": 141724,
+          "two_direct_tip_children": 141724
+        }
+      },
+      {
+        "guide": "mafft",
+        "candidates": 141685,
+        "independent_candidate_join": "passed_all_eligible_native_events",
+        "tree_families_checked": 25024,
+        "counts": {
+          "exact_reported_pair": 141685,
+          "two_direct_tip_children": 141685
+        }
+      }
+    ],
+    "overlap": {
+      "shared_pairs": 141302,
+      "profile_only": 422,
+      "mafft_only": 383,
+      "shared_exact_tree_pairs": 141302
+    },
+    "artifacts": {
+      "guide_pair_membership.tsv": "735d4efbbfd01d7da76c8c672bf3bd9bd5ecfdd5002303c3a72c9c081c050661",
+      "profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+      "mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510"
+    },
+    "scope": "Every eligible terminal singleton-side candidate independently rebuilt from native events and frozen models. Reported node descendant pairs checked, with discrepancies retained. Does not independently validate full event-coverage inventory, duplication inference/support, structure quality, rooting, timing or asymmetry; noncandidate and larger events remain outside this candidate review."
+  },
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "independent_export_readback": {
+    "candidate_rows_checked": {
+      "profile": 141724,
+      "mafft": 141685
+    },
+    "all_source_candidate_fields_exact": true,
+    "all_summary_counts_and_guide_membership_recomputed": true,
+    "scope": "Full export correspondence and summary checks; native event reconstruction and tree parsing performed by pinned reviewer, not repeated by this export readback."
+  }
+}

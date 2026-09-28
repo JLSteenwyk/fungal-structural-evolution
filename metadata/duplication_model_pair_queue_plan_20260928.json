@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_duplication_structure_pairs.py",
+    "--review",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1",
+    "--review-plan",
+    "metadata/duplication_candidate_tree_review_plan_20260928.json",
+    "--bridge",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite",
+    "--catalog",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+    "--output",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1"
+  ],
+  "pins": {
+    "scripts/prepare_duplication_structure_pairs.py": "0d5a8330c088d9c5e6c1fd81eb86ccff84de8751a25091cc96ed33ad8939a3fa",
+    "metadata/duplication_candidate_tree_review_completed_20260928.json": "14accbb145ef085a00ac7cea889798be3c1f62e6342a6b763008f1b237a831b7",
+    "metadata/duplication_expanded_pair_estimate_completed_20260928.json": "225175dca61a5170c89e9d1f84b698f43567a47a5571017cd1934319180e3fc0"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "runtime_planning_hours": [
+      0.02,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full 283409 reviewed event links and 134812 distinct model/version pairs expected. Catalog and source checks inherited from unchanged producer. Size inventory only, not coordinate-byte validation; no new alignments launched."
+}

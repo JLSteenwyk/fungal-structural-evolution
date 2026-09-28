@@ -254,7 +254,7 @@ the candidate comparison with `scripts/check_expanded_duplication_candidate_expo
 --output <fresh-json-path>`; run its focused identity fixtures with
 `scripts/check_duplication_candidate_export_identity.py`.
 
-The full tree review is now running as
+The full tree review completed successfully as
 `fungal-duplication-candidate-tree-review-20260928.service`, using unchanged
 `validate_duplication_structure_candidates.py` with
 `metadata/duplication_candidate_tree_review_plan_20260928.json`.
@@ -264,6 +264,24 @@ family trees. Both descendant identity and direct-tip-child status are retained;
 missing or mismatching nodes remain explicit. The plan caps one CPU and 8 GiB
 RAM with zero swap, allows 1 GiB output and an uncalibrated 0.1–6-hour runtime.
 Launch identity is in `metadata/duplication_candidate_tree_review_launch_20260928.json`.
-Completion and results remain pending. No GPU work or structural alignment was
-launched; rooting, support, duplication biology and structural effects remain
-separate requirements.
+All 141,724 profile and 141,685 MAFFT candidates match their exact reported
+nodes and have the expected two direct tip children. Both guides share 141,302
+protein pairs, with 422 profile-only and 383 MAFFT-only pairs. Every exported
+source candidate field was checked, and all summary counts and guide-pair
+membership rows were recomputed after successful termination. Evidence is in
+`metadata/duplication_candidate_tree_review_completed_20260928.json`.
+No GPU work or structural alignment was launched; rooting, support, duplication
+biology and structural effects remain separate requirements.
+
+The unchanged `prepare_duplication_structure_pairs.py` is now preparing the
+expanded model/version queue at
+`results/structural_comparisons/duplication-model-pair-queue-20260928-v1/`.
+Its complete command, source pins and resource allowance are recorded in
+`metadata/duplication_model_pair_queue_plan_20260928.json`; launch identity is
+in `metadata/duplication_model_pair_queue_launch_20260928.json`.
+This CPU-only job retains every reviewed event association and explicitly
+flags same-model rows. It is limited to one CPU, 8 GiB RAM, zero swap, with
+1 GiB output and an uncalibrated 0.02–2-hour planning allowance. Queue completion,
+export readback, raw-coordinate validation and structural comparisons remain
+pending. Matching model IDs/versions alone still does not authorize reuse of
+previous coordinate-derived results.

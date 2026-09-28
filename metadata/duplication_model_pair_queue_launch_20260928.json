@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-duplication-model-pair-queue-20260928.service",
+  "pid": 2445598,
+  "created": 1790638976.3,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_duplication_structure_pairs.py",
+    "--review",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1",
+    "--review-plan",
+    "metadata/duplication_candidate_tree_review_plan_20260928.json",
+    "--bridge",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite",
+    "--catalog",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+    "--output",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1"
+  ],
+  "plan_sha256": "162db5233efe511e87f879f32b6b981e09566c1fd863df1561ce18eee5730b1c",
+  "observed_state": {
+    "MainPID": "2445598",
+    "Result": "success",
+    "ActiveState": "active"
+  }
+}
