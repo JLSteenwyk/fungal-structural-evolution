@@ -280,3 +280,14 @@ The per-prior counts and observed initial alpha range are recorded in
 `metadata/baliphy_prior_initialization_partial_readback_v2_20260927.json`.
 These are initial prior draws, not posterior estimates or independent
 convergence chains. The full batch and its final auditor continue.
+
+
+The v3 prior-initialization readback passes 332 configurations and retains
+73 pending. This includes one 622-sequence input under all three explicit
+alpha priors, with free RS07 rate/meanLength and frequencies. Each generated
+prior expression, initial probability arithmetic, parameter support and
+fixed-tree length passes. Per-job runtime and sampled peak RSS for these
+largest-input checks are recorded in
+`metadata/baliphy_prior_initialization_partial_readback_v3_20260927.json`.
+Initialization capacity does not establish longer-chain memory, runtime or
+convergence. Other configurations and final readback remain outstanding.

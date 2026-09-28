@@ -1,0 +1,45 @@
+{
+  "status": "partial_initialization_snapshot",
+  "expected_jobs": 405,
+  "dispositions": {
+    "initial_model_semantics_and_finite_scores_checked": 332,
+    "pending_receipt": 73
+  },
+  "artifacts": {
+    "dispositions.json": "5c74aa22bff4270b9ebe2e4451fb80960aeaf0dd48faa994ea62d19de8659f9b"
+  },
+  "scope": "Generated model code, fixed input paths, initial score arithmetic, frequency normalization and total tree length checked. No independent likelihood replay, runtime tip/node reconstruction readback, MCMC mixing, effective sample size or posterior qualification. All405 prior/input outcomes retained, with all324 original configuration aliases.",
+  "completed_receipt_path": "results/ancestral/baliphy-prior-initialization-readback-20260927-v3/receipt.json",
+  "completed_receipt_sha256": "23bf15014d9e1b8bfcbfd9dea1bf0912061362a2c5fcdea791b8e1de88935c59",
+  "checked_by_prior": {
+    "package": 111,
+    "centered": 111,
+    "broad": 110
+  },
+  "largest_input_checked": [
+    {
+      "job_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package",
+      "family": "OG0000972",
+      "proteins": 622,
+      "prior_label": "package",
+      "elapsed_seconds": 26.238767756003654,
+      "peak_sampled_rss_bytes": 1122488320
+    },
+    {
+      "job_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered",
+      "family": "OG0000972",
+      "proteins": 622,
+      "prior_label": "centered",
+      "elapsed_seconds": 27.27368210401619,
+      "peak_sampled_rss_bytes": 1118470144
+    },
+    {
+      "job_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad",
+      "family": "OG0000972",
+      "proteins": 622,
+      "prior_label": "broad",
+      "elapsed_seconds": 23.739669342990965,
+      "peak_sampled_rss_bytes": 1122738176
+    }
+  ]
+}
