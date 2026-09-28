@@ -9848,3 +9848,11 @@ does not establish universal coverage or complete the biological project.
   reports33.63% current AFDB catalog coverage. Existing downstream analyses
   remain bound to their original frozen inputs; expanded atlas integration
   and confidence qualification are still required.
+
+- September28: generated full526-taxon/27-lineage atlas coverage tables and
+  PDF/PNG figures, with independently recalculated summaries and visual
+  inspection. Ascomycota and Basidiomycota each reach about34% protein-weighted
+  coverage, while their median taxon coverage remains1.64% and1.75%;26 taxa
+  have zero matches in the frozen AFDB catalog. This documents uneven sampling
+  for downstream evolutionary interpretation rather than treating aggregate
+  coverage as representative of every lineage or taxon.

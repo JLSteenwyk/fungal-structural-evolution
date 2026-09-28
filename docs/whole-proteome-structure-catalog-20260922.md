@@ -281,3 +281,28 @@ predictions. Source-specific confidence qualification and downstream atlas
 analyses remain incomplete. Existing domain/cluster analyses retain their
 frozen older catalog inputs; they have not been silently expanded to the new
 catalog, and their coverage must not be reported as covering all new models.
+
+### Coverage by lineage and individual taxon
+
+`plot_refreshed_atlas_lineage_coverage.py` joins all526 catalog taxon rows to
+the pinned manifest, retaining27 role/lineage groups. It exports full taxon
+and lineage tables plus PDF/PNG figures in
+`results/figures/refreshed-atlas-lineage-coverage-20260928-v2`. The left panel
+compares protein-weighted coverage in the two catalogs; the right panel plots
+every taxon and the taxon median. Twenty-six taxa have no model in this frozen
+AFDB catalog. Local ESMFold availability is excluded from these counts.
+
+Ascomycota gains376,159 links and Basidiomycota122,593. Their current
+protein-weighted coverage is34.23% and34.47%, respectively, but their median
+taxon coverage is only1.64% and1.75%. Glomeromycota gains74,368 links and
+Mortierellomycota35,976. These differences expose uneven coverage that must
+remain explicit in phylogenetic comparisons; the aggregate percentage does not
+represent a typical sampled taxon. Lineage categories follow the manifest and
+are not independent transitions or verified unique-species counts.
+
+All summary denominators, fractions, medians, ranges and zero counts were
+independently recalculated. The PNG was inspected; v2 moves an overlapping
+legend outside the data panels while preserving identical tables. The figure
+receipt and visual/readback record are tracked under
+`metadata/refreshed_atlas_lineage_coverage_figure_20260928.json` and
+`metadata/refreshed_atlas_lineage_coverage_figure_visual_check_20260928.json`.
