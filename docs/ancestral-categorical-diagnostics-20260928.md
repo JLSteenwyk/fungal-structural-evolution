@@ -87,3 +87,29 @@ python scripts/inventory_ancestral_state_patterns.py \
   --completion metadata/baliphy_first_anchored_states_completed_20260928.json \
   --output metadata/ancestral_state_pattern_inventory_NEW.json
 ```
+
+## Verified four-chain array reader
+
+`scripts/read_ancestral_state_quartet.py` binds categorical arrays to the
+existing inference quartet verification. It checks distinct chain identifiers
+and seeds, one model identity, source configuration/command and artifact
+bindings, extraction dispositions and successful attempts, source-audit identity,
+biological input alignment, source nodes, tip order and ungapped lengths.
+Coordinate metadata must match exactly across chains. The caller must also
+verify the producer and extractor plans and their pinned code/input files.
+
+Every array is checked for the expected saved schedule, valid categorical
+codes, dimensions and nonnegative unanchored counts. Both burn-in count arrays
+are independently recalculated from the full temporal trace. Missing or failed
+members return not-ready; no three-chain or mixed-model substitute is made.
+
+Eight handoff tests passed, including the inherited inference provenance tests
+and the new full extraction fixture, missing extraction, altered state file,
+and invalid counts/schedules/node identities. A complete synthetic quartet
+was checked end to end, but these fixtures are not biological posterior samples.
+
+The subsequent readiness check verified the pinned production/extraction plans
+and all **405 groups / 1,620 chains**. **Zero groups were ready** in that snapshot.
+Evidence: `metadata/ancestral_state_quartet_readiness_20260928.json`.
+Production chains continue; the next integration step is the full categorical
+report runner, resource accounting and queued application to completed groups.
