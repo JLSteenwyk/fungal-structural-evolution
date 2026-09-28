@@ -1,0 +1,35 @@
+{
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "output": "results/structural_comparisons/duplication-coordinate-validation-20260928-v1",
+  "workers": 4,
+  "models_per_shard": 1000,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "metadata/duplication_model_pair_queue_completed_20260928.json": "95ff0499e928778fc1208dcd73556629059b94aa74398fa01e46eaa8449d8bf0",
+    "scripts/readback_duplication_model_pair_queue.py": "4a6759a42373cb56a8eee0be2748bf2127f78d4dc2056676c8a03bbce6616673"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "source_models": 276682,
+    "source_coordinate_bytes": 96596573260,
+    "maximum_sequence_length": 1567,
+    "basis": "Full expanded candidate model set including same-model cases, with raw byte hashes, atom/sequence identity and per-residue C-alpha/confidence output. Unchanged four-worker checker; 1000 models per restartable shard. 0.5\u201324 hours is an uncalibrated allowance, not measured ETA. No structural alignments.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

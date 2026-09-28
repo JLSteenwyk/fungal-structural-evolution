@@ -273,7 +273,7 @@ membership rows were recomputed after successful termination. Evidence is in
 No GPU work or structural alignment was launched; rooting, support, duplication
 biology and structural effects remain separate requirements.
 
-The unchanged `prepare_duplication_structure_pairs.py` is now preparing the
+The unchanged `prepare_duplication_structure_pairs.py` completed the
 expanded model/version queue at
 `results/structural_comparisons/duplication-model-pair-queue-20260928-v1/`.
 Its complete command, source pins and resource allowance are recorded in
@@ -281,7 +281,33 @@ Its complete command, source pins and resource allowance are recorded in
 in `metadata/duplication_model_pair_queue_launch_20260928.json`.
 This CPU-only job retains every reviewed event association and explicitly
 flags same-model rows. It is limited to one CPU, 8 GiB RAM, zero swap, with
-1 GiB output and an uncalibrated 0.02–2-hour planning allowance. Queue completion,
-export readback, raw-coordinate validation and structural comparisons remain
-pending. Matching model IDs/versions alone still does not authorize reuse of
-previous coordinate-derived results.
+1 GiB output and an uncalibrated 0.02–2-hour planning allowance. It finished in
+54 CPU seconds. The queue contains 283,409 event links, 14,588 same-model links,
+276,682 total models and 134,812 distinct model/version pairs. The 269,393
+models used in distinct pairs occupy 94,489,735,215 coordinate bytes by file
+size. This is a storage measurement, not raw-content validation.
+
+The separate `readback_duplication_model_pair_queue.py` completed successfully
+in 47 CPU seconds with a 1.4-GiB peak. It checked every original reviewed
+event field, pair key/status and membership, every complete frozen catalog
+record and all corresponding counts. Sources were hashed before and after;
+all output rows were checked. It does not independently repeat the original
+protein-to-model join or raw coordinate parsing. Reproduce with `--queue`,
+`--review`, `--catalog` pointing to the above September 28 outputs and a fresh
+`--output` JSON path. Completion evidence is in
+`metadata/duplication_model_pair_queue_completed_20260928.json`.
+
+Raw-coordinate validation is now running for all 276,682 models, including
+same-model cases, through unchanged `validate_duplication_coordinates.py` and
+`metadata/duplication_coordinate_validation_plan_20260928.json`. The source
+files total 96,596,573,260 bytes; maximum sequence length is 1,567 residues.
+The job checks raw byte hashes, sequence/atom identity, C-alpha coordinates and
+per-residue confidence, retaining content rejections explicitly. It uses four
+CPU workers, 16 GiB RAM and zero swap, with 1,000-model checkpoints, 32 GiB
+output allowance and a 100-GiB free-disk reserve. The 0.5–24-hour planning range
+is uncalibrated. Launch identity is in
+`metadata/duplication_coordinate_validation_launch_20260928.json`; output is
+`results/structural_comparisons/duplication-coordinate-validation-20260928-v1/`.
+Coordinate validation, independent numeric readback and structural comparisons
+remain pending. No GPUs or paid resources are used. Matching model IDs/versions
+alone still does not justify reuse of previous coordinate-derived results.

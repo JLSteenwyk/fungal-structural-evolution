@@ -1,0 +1,76 @@
+{
+  "receipt_path": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json",
+  "receipt_sha256": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+  "receipt": {
+    "status": "complete_reviewed_duplication_model_pair_queue",
+    "source_hashes": {
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+      "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+      "metadata/duplication_candidate_tree_review_plan_20260928.json": "ecce453618452161478bbadef787ea2c33757e369a9a5354ae576d0a4759066d",
+      "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1"
+    },
+    "script_sha256": "0d5a8330c088d9c5e6c1fd81eb86ccff84de8751a25091cc96ed33ad8939a3fa",
+    "counts": {
+      "event_links": 283409,
+      "same_model_links": 14588,
+      "unresolved_tree_links": 0,
+      "eligible_event_links": 268821
+    },
+    "unique_models": 276682,
+    "active_models": 269393,
+    "unique_distinct_model_pairs": 134812,
+    "directed_alignments_both_orders": 269624,
+    "active_coordinate_bytes": 94489735215,
+    "artifacts": {
+      "model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+      "models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+      "event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88"
+    },
+    "scope": "Exact model/version and sequence join to frozen catalog with every gene/event link retained. Identical models explicitly excluded from redundant compute, not erased from event universe. Native catalog confidence retained without an eligibility threshold. Coordinate bytes are a size estimate; raw-coordinate validation, alignments, matched controls and duplication/asymmetry inference remain pending."
+  },
+  "readback_path": "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json",
+  "readback_sha256": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+  "readback": {
+    "status": "passed_full_duplication_model_pair_queue_export_readback",
+    "source_sha256": {
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+      "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+      "metadata/duplication_candidate_tree_review_plan_20260928.json": "ecce453618452161478bbadef787ea2c33757e369a9a5354ae576d0a4759066d",
+      "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+      "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+      "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+      "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+      "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+      "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+      "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88"
+    },
+    "script_sha256": "4a6759a42373cb56a8eee0be2748bf2127f78d4dc2056676c8a03bbce6616673",
+    "counts": {
+      "event_links": 283409,
+      "same_model_links": 14588,
+      "unresolved_tree_links": 0,
+      "eligible_event_links": 268821
+    },
+    "models_checked": 276682,
+    "distinct_pairs_checked": 134812,
+    "scope": "Every original reviewed event field, pair key/status/set, model membership and complete frozen catalog record checked. File sizes rechecked; raw coordinate bytes, protein-to-model source join, confidence qualification and alignment reuse eligibility are not independently reconstructed here."
+  },
+  "terminal_states": {
+    "fungal-duplication-model-pair-queue-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-duplication-model-pair-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

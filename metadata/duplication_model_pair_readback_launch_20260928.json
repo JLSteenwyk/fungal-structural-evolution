@@ -1,0 +1,35 @@
+{
+  "unit": "fungal-duplication-model-pair-readback-20260928.service",
+  "pid": 2449316,
+  "created": 1790639093.82,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_model_pair_queue.py",
+    "--queue",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+    "--review",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1",
+    "--catalog",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+    "--output",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json"
+  ],
+  "script_sha256": "4a6759a42373cb56a8eee0be2748bf2127f78d4dc2056676c8a03bbce6616673",
+  "observed_state": {
+    "MainPID": "2449316",
+    "Result": "success",
+    "ActiveState": "active"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_mib": 10,
+    "runtime_planning_hours": [
+      0.02,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  }
+}
