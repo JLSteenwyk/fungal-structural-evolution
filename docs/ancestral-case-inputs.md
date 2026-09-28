@@ -1110,3 +1110,17 @@ records. Producer allowance: one CPU, 8 GiB RAM, no swap, 6 GiB output and
 Production has started and the auditor is waiting; full completion and
 optimization comparisons incorporating these alternate probabilities remain
 pending. The existing refined comparison runs unchanged.
+
+The expanded comparison is queued in a separate output collection. It covers
+468 alternate-versus-baseline pairs, 156 refined-versus-baseline pairs, 156
+refined-versus-selected-start pairs and 78 bound pairs: 858 fit pairs, 2,574
+node comparisons and 2,394,909 node/site comparisons. Selected-start identities,
+alignment hashes and expected site counts were checked across the complete
+input plans before launch. Runtime checks also require identical ancestor
+signatures and completed independent posterior audits for all collections.
+
+The `compare_whole_optimization_probabilities_full.py` process is verified
+live and waiting. Its allowance is one CPU, 8 GiB RAM, no swap, 4 GiB output
+and 0.1–4 hours after the audits. All comparison categories retain full
+coordinates; they do not supply independent replicates or ensemble weights.
+Earlier comparison outputs remain separate.
