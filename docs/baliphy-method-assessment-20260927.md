@@ -558,3 +558,22 @@ cannot inherit their effective sample sizes. Constant lengths remain review
 flags; neither stable lengths nor passing scalar diagnostics establish
 site-state or homology/alignment convergence. No independent quartet is yet
 complete, so no production length-convergence result is available.
+
+
+The candidate-length diagnostics are now queued automatically for all 405
+quartets. `fungal-baliphy-candidate-length-diagnostics-20260927.service`
+follows the verified scalar-watcher identity and waits for each group's
+completed receipt. Scalar screening need not pass to trigger length checks;
+failed scalar screens must remain available for comparison. Before invoking
+the length program, it rechecks scalar output and source-evidence hashes.
+It verifies both resulting reports and their 75/50 retained samples per chain,
+and records every unavailable group explicitly when its source service ends.
+
+The length watcher is confirmed live with one CPU, 8 GiB RAM and zero swap.
+Its plan budgets 1 GiB of output and 0.5–4 active CPU hours; wall time depends
+on upstream sampling. Plan/launch records are
+`metadata/baliphy_candidate_length_diagnostic_{plan,launch}_20260927.json`.
+It creates a fresh versioned output directory; an interrupted watcher can be
+rerun under a new output version while retaining earlier results. No group
+has yet produced a production length-convergence result, and positional
+amino-acid/homology mixing remains a separate outstanding requirement.

@@ -1,0 +1,34 @@
+{
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "scalar_plan": "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json",
+  "scalar_launch": "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json",
+  "runner_python": "/home/bizon/anaconda3/bin/python",
+  "diagnostic_python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/SOFTWARE/ancestral-diagnostics-20260927/bin/python",
+  "script": "scripts/prepare_ancestral_length_diagnostics.py",
+  "output": "results/ancestral/baliphy-candidate-length-diagnostics-20260927-v1",
+  "pins": {
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json": "3e2b8e8e957c4b4a79da506636b766b38887a2d3ea356585d2e815a7f91593b8",
+    "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json": "4d6b52f79aacd8005f2c854535c2c1d7c51cf4e06139c3d32c57d619a7aea479",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/initial_horizon_jobs.json": "f0c38ebfd985907f55d2ba5bb8cc12d75c47ca10dfa851492ad57eebcf5c835a",
+    "scripts/advance_ancestral_length_diagnostics.py": "abad7fbecf9c8a8636f8fc30d4cb663df26e3ae3898e44607f11f2a050a83771",
+    "scripts/prepare_ancestral_length_diagnostics.py": "4b59339fd35e7ddc477cac30623b1f4dcd28ede7e100562ee26cf16e96545450",
+    "scripts/advance_independent_chain_diagnostics.py": "3791d3b4bf5a3fe995b9318c966352399bd1d1af9f59f2f17e998e60a8834bc9",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "metadata/ancestral_length_trace_checks_20260927.json": "947ca837e27536e550e7373407a59f9200829377aa5009d088901953dca77e7d",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_active_hours": [
+      0.5,
+      4
+    ],
+    "paid_cost": 0
+  },
+  "scope": "All405 quartets at both burn-in cutoffs; retain unresolved groups, no posterior qualification."
+}
