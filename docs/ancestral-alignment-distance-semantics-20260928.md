@@ -50,3 +50,39 @@ anchors. Account for autocorrelation and compare both prespecified burn-in
 cutoffs. Alignment distances, scalar diagnostics and length diagnostics are
 complementary evidence; agreement in one does not establish convergence in
 all. No running chain, pinned script, or production plan was modified.
+
+## Full frozen-input geometry check
+
+`scripts/ancestral_extant_alignment_geometry.py` validates sampled extant
+sequences against observed inputs, retaining an input X as one residue
+position even when its sampled amino acid changes. It exports A/gap strings
+solely as a positional encoding for alignment comparisons. Internal-only
+columns are removed. These strings must never become sequence-inference or
+structure-prediction inputs.
+
+An independent signature records, for each extant residue and target tip,
+the aligned target residue position or zero for a gap. Twice the number of
+changed entries equals the weighted symmetric feature difference above.
+Rows follow sorted tip identifiers and ungapped input positions. Comparisons
+require the same observed inputs; equal array dimensions alone do not
+establish compatible identities. Four tests cover all 733 original fixture
+comparisons, input-X resampling, internal-only columns and invalid inputs.
+
+The full check uses all 135 frozen effective input groups and samples at
+iterations 0, 10 and 20, with up to 622 extant tips. Resource inventory found
+676,652,745 residue-by-tip cells summed across groups; three simultaneous
+largest signatures would occupy 2.13 GB. The implementation retains only two
+such signatures and is limited to one CPU and 8 GiB memory, without swap.
+Runtime planning is 5–60 minutes and output allowance 10 MiB. Launch evidence
+is in `metadata/ancestral_extant_geometry_fixture_launch_20260928.json`.
+
+The first attempt failed an exact integer comparison: native output printed
+128,405,000 for an independently calculated 128,405,186. Its terminal log and
+script are preserved under `results/ancestral/extant-geometry-fixtures-20260928-v1`.
+The subsequent check explicitly compares six-significant-digit representations,
+retaining exact independently calculated integers, rounded expectations and
+raw native stdout. Agreement therefore establishes agreement at the printed
+precision, not native bit-exact integer equality. This sensitivity must remain
+visible in reporting. Output is under
+`results/ancestral/extant-geometry-fixtures-20260928-v2`; require a successful
+terminal service and a complete checked receipt before claiming all inputs pass.

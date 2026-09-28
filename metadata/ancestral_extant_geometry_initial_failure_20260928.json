@@ -1,0 +1,9 @@
+{
+  "status": "terminal_failure_preserved",
+  "unit": "fungal-extant-geometry-fixtures-20260928.service",
+  "exit_status": 1,
+  "script_copy": "results/ancestral/extant-geometry-fixtures-20260928-v1/failed-script.py",
+  "script_sha256": "e604e117b1b063b143be1d706a2d80e96f56b5dada337db7a25ec5cded93fbc7",
+  "log": "results/ancestral/extant-geometry-fixtures-20260928-v1/terminal.log",
+  "reason": "Exact integer comparison fails because native printed distances have limited precision. Output 128405000 versus independent 128405186. Follow-up compares six-significant-digit representations explicitly; not bit-exact native integer proof."
+}

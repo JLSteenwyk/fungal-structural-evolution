@@ -1,0 +1,38 @@
+{
+  "unit": "fungal-extant-geometry-fixtures-20260928-v2.service",
+  "pid": 828981,
+  "created": 1790571004.46,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_ancestral_alignment_geometry_fixtures.py",
+    "--output",
+    "results/ancestral/extant-geometry-fixtures-20260928-v2"
+  ],
+  "state": {
+    "MainPID": "828981",
+    "Result": "success",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "output": "results/ancestral/extant-geometry-fixtures-20260928-v2",
+  "scripts": {
+    "scripts/ancestral_extant_alignment_geometry.py": "70d2eaf85e69ce7c5b0ead7d48d44a3d0a2fe76f9ab7779f3804d97feff24631",
+    "scripts/check_ancestral_alignment_geometry_fixtures.py": "4d80ebbf737562d1c6db7f7dcb40d3d5a99dfab66d0fdff106e363ad605d0c8b"
+  },
+  "resources": {
+    "cpu_quota_cores": 1,
+    "memory_limit_gib": 8,
+    "swap_bytes": 0,
+    "groups": 135,
+    "max_tips": 622,
+    "max_residues": 284992,
+    "conservative_three_signature_bytes": 2127180288,
+    "total_relation_cells": 676652745,
+    "runtime_planning_minutes": [
+      5,
+      60
+    ],
+    "output_planning_mib": 10
+  },
+  "scope": "Frozen full-input validation at printed precision, no production-chain modifications or convergence claim."
+}
