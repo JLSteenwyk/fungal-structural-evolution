@@ -1,0 +1,23 @@
+{
+  "unit": "fungal-domain-interval-manifest-20260928.service",
+  "pid": 2180542,
+  "created": 1790624231.52,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_domain_interval_manifest.py",
+    "--plan",
+    "metadata/domain_interval_manifest_handoff_plan_20260928.json",
+    "--launch",
+    "metadata/whole_proteome_structure_domain_registry_readback_launch_20260928.json"
+  ],
+  "plan_sha256": "67a39cae7b900222e6a5d9106e5b288faf8705e783180fb08856f632d3f7ce34",
+  "observed_state": {
+    "MainPID": "2180542",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "34359738368",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  },
+  "implementation_check": "Diff against completed original producer/readback changes only explicit CLI paths and imports; all interval and SQL-union algorithms preserved. Both CLI help checks passed."
+}

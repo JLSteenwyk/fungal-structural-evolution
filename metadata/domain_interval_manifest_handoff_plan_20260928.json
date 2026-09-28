@@ -1,0 +1,29 @@
+{
+  "producer_plan": "metadata/whole_proteome_structure_domain_registry_readback_plan_20260928.json",
+  "registry": "results/domains/whole-proteome-structure-domain-registry-20260928-v1",
+  "registry_audit": "results/domains/whole-proteome-structure-domain-registry-readback-20260928-v1/receipt.json",
+  "output": "results/domains/domain-extraction-manifest-20260928-v1",
+  "readback_output": "metadata/domain_extraction_manifest_readback_20260928.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 2,
+    "runtime_planning_hours": [
+      0.1,
+      4
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Existing full manifest/SQL-union algorithms with explicit input paths, expected approximately 1.5 times prior interval count; conservative resource allowance."
+  },
+  "pins": {
+    "metadata/whole_proteome_structure_domain_registry_readback_plan_20260928.json": "d7b4eb4a528c0211ac21a1b517375d1d05acb190de5c80ecc050f52afd555e3a",
+    "metadata/whole_proteome_structure_domain_registry_readback_launch_20260928.json": "08b5e238e537855afafd0fd6ebc9ea94faae03e3b429df43b3cddc6d2ee0d7b6",
+    "scripts/prepare_domain_extraction_manifest_v2.py": "f9ab5639ee81b8c1bde7d52249890b07562ebbd901783a6729488fed79b4ccb5",
+    "scripts/readback_domain_extraction_manifest_v2.py": "0354196f220fa7a2455494401550a8fa1e2f1e421aae50a8b12462861a0203bb",
+    "scripts/advance_refreshed_domain_interval_manifest.py": "38d7b960b974f8cfb45ab0d2b5fac92ea37ac281727ba665610a4c015cf4c4fb",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441"
+  }
+}

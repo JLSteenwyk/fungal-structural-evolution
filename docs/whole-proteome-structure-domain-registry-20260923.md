@@ -587,3 +587,22 @@ Launch records bind process IDs, creation times, commands and plan hashes.
 Both stages are active/pending at this checkpoint; no expanded domain counts,
 new coordinate extraction, confidence qualification or evolutionary events
 are claimed. Existing domain clusters still describe the older frozen input.
+
+### Expanded interval manifest queued
+
+After successful full registry validation, a queued handoff will prepare all
+candidate intervals and independently compare every emitted interval against
+an SQL union of source alignment/envelope spans. Both boundaries and reversible
+model/hit associations remain explicit. The v2 manifest producer/readback add
+explicit input/output arguments to the previously completed algorithms;
+reviewed diffs change only argument parsing and paths. CLI checks passed.
+
+Plan `metadata/domain_interval_manifest_handoff_plan_20260928.json` and launch
+record `metadata/domain_interval_manifest_handoff_launch_20260928.json` bind
+the validator's PID, creation time, command and plan hash. The handoff requires
+terminal success/exit0 before starting. Resources are one CPU,32GiB RAM, no
+swap,2GiB output planning and0.1–4 active hours (uncalibrated, excluding waits).
+Output is `results/domains/domain-extraction-manifest-20260928-v1`; full readback
+will be `metadata/domain_extraction_manifest_readback_20260928.json`.
+This stage prepares coordinates for later extraction only; it does not extract
+structures or qualify confidence, homology or evolutionary changes.

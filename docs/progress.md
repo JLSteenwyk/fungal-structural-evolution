@@ -9880,3 +9880,10 @@ does not establish universal coverage or complete the biological project.
   reconstruction each have one CPU/24GiB limits and no GPU use. This advances
   new model coverage toward domain-level comparisons while preserving older
   registries and analyses. Expanded registry results remain pending.
+
+- September28: queued complete expanded domain-interval preparation and
+  independent SQL-union readback behind successful registry validation. The
+  existing algorithms now accept explicit paths in separate v2 scripts; old
+  artifacts remain preserved. Both alignment and envelope boundaries and
+  every model/hit association will be retained. One CPU/32GiB limits apply;
+  actual coordinate extraction and confidence qualification remain pending.
