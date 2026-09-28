@@ -203,3 +203,9 @@ September 28: [analytic refinement](matched-reml-analytic-refinement-20260928.md
 is active for all 658 remaining flagged working-model fits. Dense-likelihood
 and derivative-free synthetic checks passed; production qualification remains
 pending output readback and review.
+
+September 28: the [full paired FastML comparison](fastml-paired-comparison-20260928.md)
+checked all 8,058,340 paired marginal entries. Cache refresh changes eight
+OG0000294 fits and can worsen the attained likelihood. Native gamma rates
+differ from SciPy rates at all 306 fitted shapes; a full replay using exact
+native rates is active to isolate this numerical contribution.

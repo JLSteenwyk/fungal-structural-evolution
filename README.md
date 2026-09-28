@@ -89,7 +89,7 @@ their likelihood discrepancy from approximately 0.47 to below 1.24e-7 with a
 targeted cache refresh. Full paired inference and separate replay completed
 for 306 nonempty fits across both variants, retaining six empty inputs and
 tiny probability-boundary excursions without clipping raw values. Remaining
-likelihood/probability discrepancies still require review. Original outputs and strict validator failures are retained.
+likelihood/probability discrepancies still require review. Original outputs and strict validator failures are retained. The [full paired comparison](docs/fastml-paired-comparison-20260928.md) identifies eight changed OG0000294 fits; a replay with exact native gamma rates is active to assess the remaining numerical differences.
 These fits are not qualified ancestral ensembles; see the
 [FastML discrepancy and correction evidence](docs/fastml-indel-likelihood-discrepancy-20260927.md).
 

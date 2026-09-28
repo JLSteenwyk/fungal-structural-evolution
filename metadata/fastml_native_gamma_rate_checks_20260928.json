@@ -1,0 +1,32 @@
+{
+  "status": "full_fitted_alpha_native_rate_comparison_complete",
+  "fits": 306,
+  "maximum_absolute_category_rate_difference": 6.918400757260912e-05,
+  "maximum_absolute_native_mean_rate_error": 2.220446049250313e-16,
+  "fits_rate_difference_over_1e_minus8": 306,
+  "build_command": [
+    "g++",
+    "-O3",
+    "-DLOG",
+    "-I",
+    "data/software_audits/fastml-3.11/source/FastML.v3.11/libs/phylogeny",
+    "scripts/export_fastml_gamma_rates.cpp",
+    "data/software_audits/fastml-3.11/source/FastML.v3.11/libs/phylogeny/libEvolTree.a",
+    "-o",
+    "results/model_validation/fastml-native-gamma-rates-20260928-v2/export_rates"
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "pins": {
+    "data/software_audits/fastml-3.11/source/FastML.v3.11/libs/phylogeny/libEvolTree.a": "5052c19e72fc2d30353afb397180c9c604aa2407b48e1c0644296c04bbcf4372",
+    "scripts/export_fastml_gamma_rates.cpp": "23952d5ab17626ea6df3adb69fd8789cda8724ed34839e5bd3f0084de2283f07",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_fastml_native_gamma_rates.py": "6a5842bb0fb10f06b4635d71cd256844453535a77d212bc1745a8e7e8b4128ac",
+    "results/ancestral/full-fastml-roundoff-readback-20260928-v1/receipt.json": "1cbba8bfd228b1cb9a82121b634e31d5813d9ac4579a703b8a72d33c536f5bf6"
+  },
+  "artifacts": {
+    "export_rates": "efe7d271fb5aeb906f73c51f79a9f16aadee4c08a5e9307f00549c693ee9873d",
+    "requests.tsv": "493e80368fdcbbe0a512b259932757787d6e174af665c683f7973eae96f60daa",
+    "native_rates.tsv": "12e19849b309abbecf943b185f9d0b1ba054ab34e4b6c1998d13496c6467f8db",
+    "rate_comparison.jsonl": "2ee8c10d683e810c8cf501c5eb2416fcec50fdb694abf380511467855ebe2e4c"
+  },
+  "scope": "Uses the identical frozen FastML static library shared by both variants. Measures category discretization differences at every reported fitted alpha. Does not itself show how much of the likelihood or marginal discrepancy these rates explain; native-rate replay remains required."
+}

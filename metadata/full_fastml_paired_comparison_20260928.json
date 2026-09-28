@@ -1,0 +1,30 @@
+{
+  "status": "complete_full_paired_native_probability_comparison",
+  "paired_inputs": 156,
+  "nonempty_pairs": 153,
+  "empty_inputs": [
+    "OG0000294-alignment-famsa-terminal_unknown",
+    "OG0000294-alignment-mafft-terminal_unknown",
+    "OG0000294-envelope-famsa-terminal_unknown"
+  ],
+  "paired_probability_rows": 8058340,
+  "native_rows_changed": 294,
+  "maximum_native_probability_difference": 0.11350516080612097,
+  "presence_threshold_crossings": 0,
+  "fits_with_native_probability_change": 8,
+  "fits_with_parameter_change": 8,
+  "precision_only_maximum_absolute_replay_likelihood_difference": 0.4739479748134938,
+  "cache_refresh_maximum_absolute_replay_likelihood_difference": 0.0034516902519499126,
+  "fits_cache_refresh_absolute_likelihood_difference_over_1e_minus5": 74,
+  "artifact_hashes_checked": 9492,
+  "source_readback_receipt_sha256": "1cbba8bfd228b1cb9a82121b634e31d5813d9ac4579a703b8a72d33c536f5bf6",
+  "pins": {
+    "metadata/full_fastml_roundoff_readback_plan_20260928.json": "fc7fbdaf8c529d2fc9370a881f22e91524fce0c95f267dbe2468342a97755755",
+    "metadata/full_fastml_variant_plan_20260928.json": "8a7f89f2f02f1b5e3f7d7932ec9fbc35d470801f8986dc48b33eef7b2d5a6fe1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/compare_full_fastml_variants.py": "38fb09d03c8f813baa41a0909840e9afbb2c95aeb79f9db8179c366f020bdf3d"
+  },
+  "artifacts": {
+    "paired_fit_comparison.tsv": "1fdf234316b132e8ab902f2be0a09c5bc8f1b77ed0f29715fa55ca1abd5dd51a"
+  },
+  "scope": "All paired native marginals compared at matching node-descendant identities and character positions. Thresholds are descriptive, not fit-acceptance gates. No raw clipping. Cache refresh sensitivity does not establish optimizer convergence, correct ascertainment or joint indel/sequence posterior adequacy."
+}

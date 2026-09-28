@@ -1,0 +1,27 @@
+{
+  "producer_plan": "metadata/full_fastml_variant_plan_20260928.json",
+  "readback": "results/ancestral/full-fastml-roundoff-readback-20260928-v1",
+  "rates": "results/model_validation/fastml-native-gamma-rates-20260928-v2",
+  "output": "results/ancestral/full-fastml-native-rate-replay-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "storage_gib": 1,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "basis": "Same 306 fixed-parameter pruning replays as completed roundoff readback, now using exported native rates; no native optimization rerun.",
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/full_fastml_variant_plan_20260928.json": "8a7f89f2f02f1b5e3f7d7932ec9fbc35d470801f8986dc48b33eef7b2d5a6fe1",
+    "results/ancestral/full-fastml-roundoff-readback-20260928-v1/receipt.json": "1cbba8bfd228b1cb9a82121b634e31d5813d9ac4579a703b8a72d33c536f5bf6",
+    "results/model_validation/fastml-native-gamma-rates-20260928-v2/receipt.json": "d1a0d6faf94eaa26a7834a309fc1d70035171262518f4494f3479475710d99b9",
+    "scripts/replay_fastml_with_native_rates.py": "89ac482448b2dc6a4e4c539bf7c15d670a86f9705b7fad43f14330121bf543ae",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461"
+  }
+}
