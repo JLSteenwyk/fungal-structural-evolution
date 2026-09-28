@@ -1,0 +1,42 @@
+{
+  "status": "complete_conflict_experimental_coverage_mapping",
+  "annotation_rows": 24,
+  "unique_query_positions": 9,
+  "unique_query_entity_position_correspondences": 2,
+  "no_hit_annotation_rows": 20,
+  "pins": {
+    "results/ancestral/ancestral-conflict-case-models-20260927-v1/receipt.json": "00f1f8bc291b43073933090e872084722b5f17e326bc53562b5a8d29cc22ca0d",
+    "results/ancestral/ancestral-conflict-case-models-20260927-v1/extant_model_annotations.json": "37295dce91ac7a90a2379a9ab84f047359c40ca453488719c2cbc711862b8dca",
+    "results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1/receipt.json": "6fa80439bd6d2a2db945db6e7ffe3c4efb95cff77c05d18164f84ab4da01e299",
+    "results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1/sequence_dispositions.json": "a2e5a69e2934fd1670b9ce0641e62181a14c2df65a465e2aa40f3a2437b302ed",
+    "results/experimental_structures/whole-domain-case-residue-pairs-20260927-v1/residue_correspondences.jsonl.gz": "a5e20189b4359688d181793dae7ee11112d05fb73b5b1464c9a4f1b63e4b055e",
+    "results/structural_comparisons/case-independent-control-inputs-20260927-v1/missing_independent_sequences.faa": "3456f3e75f1492d6abb622104b3305d91a8ce1828c696daef8d85820ae409be0",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1/receipt.json": "48422852a83ea6f19787642dc96dc2c770c7661856025d446056905bc4b96068",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1/4F03.receipt.json": "b1155f326d73b25b514f0b8571d59056423ca3471bcf8dd6379118acce3bcf0e",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1/4F03.residues.tsv.gz": "7cb31fbd3473b317c6bdcd480084c39b793b76a6249bf4656b6fdb40fc6c896b",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1/4G19.receipt.json": "3a0dd65cda6a46b59e674696a0428f4964b94e2efe23c6e2162cccf307fa42bf",
+    "results/experimental_structures/whole-domain-case-ca-mapping-20260927-v1/4G19.residues.tsv.gz": "9cf56f76f5d4148419c81daf25062aa0da5031c846671eee1b566a92c466f929"
+  },
+  "script_sha256": "87785be6ce7a8f9114df9648f4e2887586712fbaf6a157c9aaa6b069b20dbd39",
+  "artifacts": {
+    "conflict_experimental_coverage.json": "3cbc8ba1a0879effaeab366f6d112543343e28e1f54cced0897240e5a008572e"
+  },
+  "scope": "All extant conflict annotations retained. Search-context correspondence and observed coordinate dispositions only; absent search hits do not prove database absence. Repeated boundary/alignment contexts and experimental chains are dependent. No ancestral state, site function, homology beyond the recorded alignment, or mechanism is validated.",
+  "completed_receipt_path": "results/ancestral/ancestral-conflict-experimental-coverage-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "990290b53d72fefc0193d8bf5665e57ea21b40592585567c58de7cb73ca1d28f",
+  "separate_raw_alignment_readback": {
+    "source_path": "results/experimental_structures/whole-domain-case-sequence-search-20260927-v1/Se10e1e6f71cfb4ce5c0a77b11ebb56fa84f2c69cce200b6512be86359a74eef3.json",
+    "source_sha256": "12ea3c92ee0c055ba11bbc2cd94558f7dc55fd3b0f1f0a003f2023fd44937fe1",
+    "checked_contexts": 2,
+    "query_position": 32,
+    "query_residue": "Q",
+    "entity_position": 34,
+    "entity_residue": "Y",
+    "observed_CA_records": 8,
+    "entries": [
+      "4F03",
+      "4G19"
+    ],
+    "method": "Independent counters over original RCSB aligned strings reproduced both query/entity positions; all four chains per entry retain unambiguous full-occupancy CA status."
+  }
+}

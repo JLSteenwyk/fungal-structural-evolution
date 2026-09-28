@@ -1379,3 +1379,25 @@ high-confidence conflicts. No confidence intervals or statistical tests are
 implied by these dependent descriptive counts. The source table, PNG/PDF/SVG
 exports and plotting script are recorded in
 `metadata/ancestral_context_sensitivity_figure_completed_20260927.json`.
+
+
+## Experimental coverage at context-sensitive case positions
+
+The complete 24-row extant conflict annotation set (nine distinct positions in
+six sequences) was joined to the frozen experimental-search residue maps and
+observed CA dispositions. Twenty annotation rows have no hits in that search;
+this is not evidence of database absence. Four repeated contexts for
+OG0001203 gene F106004_ORY61939.1 Q32 have two correspondences: position Y34
+of entities 4F03_1 and 4G19_1. Both entries have an unambiguous full-occupancy
+CA at that position in chains A–D (eight dependent coordinate records).
+
+Independent traversal of the original query/subject alignment strings
+reproduced both Q32-to-Y34 correspondences. This is an extant sequence-based
+site map, not validation of the conflicting ancestral H/T states, ancestral
+presence, a functional site, or evolutionary polarity. The remaining observed
+conflict positions lack corresponding search hits in this frozen input set.
+All original domain-coordinate categories and repeated contexts are retained.
+
+Reproduction: `scripts/map_ancestral_conflicts_to_experimental_coverage.py`.
+Evidence: `metadata/ancestral_conflict_experimental_coverage_completed_20260927.json`;
+full annotations: `results/ancestral/ancestral-conflict-experimental-coverage-20260927-v1/`.
