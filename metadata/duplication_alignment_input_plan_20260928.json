@@ -1,0 +1,57 @@
+{
+  "readback": "results/structural_comparisons/duplication-coordinate-readback-20260928-v1",
+  "readback_plan": "metadata/duplication_coordinate_readback_plan_20260928.json",
+  "coordinates": "results/structural_comparisons/duplication-coordinate-validation-20260928-v1",
+  "coordinate_plan": "metadata/duplication_coordinate_validation_plan_20260928.json",
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "output": "results/structural_comparisons/duplication-alignment-inputs-20260928-v1",
+  "producer": {
+    "pid": 2456493,
+    "created": 1790639328.14,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_duplication_coordinates.py",
+      "--plan",
+      "metadata/duplication_coordinate_readback_plan_20260928.json"
+    ]
+  },
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "metadata/duplication_model_pair_queue_completed_20260928.json": "95ff0499e928778fc1208dcd73556629059b94aa74398fa01e46eaa8449d8bf0",
+    "scripts/readback_duplication_model_pair_queue.py": "4a6759a42373cb56a8eee0be2748bf2127f78d4dc2056676c8a03bbce6616673",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "metadata/duplication_coordinate_validation_plan_20260928.json": "af3647a1a4dfb360523e348be443c589f28c5e87f073d87f886a30288bf7dfac",
+    "metadata/duplication_coordinate_validation_launch_20260928.json": "2966d6c3d8578fc8e160cad9f44e0073a0ecc8b365dbfd1a29512b96e97c6237",
+    "scripts/materialize_duplication_alignment_inputs.py": "935ae216fe400a631fed88a8fd4e64308e721321cb71fd18cb0474652bb04e96",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/check_duplication_alignment_inputs.py": "5dee250b495f50c2b96dee569824622588cba9d6b2bf4b91e51ff1e8aee6ccda",
+    "scripts/check_duplication_materialization.py": "ee2417dc17e83d2d71f3ed596af561440b6c37ffdb2b7e06d948766578cc6dc9",
+    "metadata/duplication_coordinate_readback_plan_20260928.json": "115f636765094432857c824272127d990b62d6ed204bfeff8f14c9e646a37183",
+    "metadata/duplication_coordinate_readback_launch_20260928.json": "07a7cc989a1fc6dc7ed0e3c4bcb1b63f16685dbd824c1c0c92a48c044badfe39"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "models": 276682,
+    "maximum_input_dispositions": 553364,
+    "source_residues": 100073779,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "After complete independent coordinate readback, materialize full and pLDDT>=70 C-alpha inputs for all models. Preserve residue numbers, source rejections and short masks. Up to 553364 input dispositions/files. No alignments, PAE inference or result reuse; output allowance and runtime are planning estimates."
+  }
+}

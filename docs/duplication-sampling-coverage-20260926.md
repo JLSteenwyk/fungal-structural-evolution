@@ -326,3 +326,23 @@ adjudicate rejection causes. Its allowance is two CPUs, 8 GiB RAM, zero swap,
 `metadata/duplication_coordinate_readback_launch_20260928.json`. Final completion
 still requires successful service terminal states and validated artifacts;
 the queued process is not a completed audit.
+
+Full and pLDDT>=70 C-alpha input preparation is also queued, using unchanged
+`materialize_duplication_alignment_inputs.py` with
+`metadata/duplication_alignment_input_plan_20260928.json`. The controller waits
+for the identified independent readback process and requires its complete
+receipt, matching source receipt and every shard proof before writing inputs.
+The source models contain 100,073,779 residues. Up to 553,364 input dispositions
+will preserve model identity, original residue positions, masked sequence,
+rejections and masks with fewer than three retained residues. PDB coordinates
+are rounded to 0.001 Angstrom; full and masked scores will have different
+normalization lengths and must remain distinguishable.
+
+The service `fungal-duplication-alignment-inputs-20260928.service` is limited to
+one CPU, 8 GiB RAM and zero swap, with a 64-GiB output allowance, 100-GiB free-disk
+reserve and uncalibrated 0.1–12-hour planning range. Launch identity is in
+`metadata/duplication_alignment_input_launch_20260928.json`; output will be
+`results/structural_comparisons/duplication-alignment-inputs-20260928-v1/`.
+It is currently waiting. No new alignments or reuse of earlier alignment results
+has been launched. Exact input bytes and settings must be compared before
+reusing completed comparisons from the original queue.
