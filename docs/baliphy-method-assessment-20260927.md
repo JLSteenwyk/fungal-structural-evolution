@@ -355,3 +355,27 @@ model parameters and saved-sample identities, before use.
 
 These are implementation requirements for the next controller, not a claim
 that longer chains, recovery tests or posterior convergence are complete.
+
+
+### Attempt recovery helper implemented; sampler integration pending
+
+`scripts/ancestral_chain_attempt.py` now implements separate attempt
+folders, a nonblocking exclusive lock inherited by the launched process,
+configuration/executable/input hash binding, atomic process and completion
+records, timeout handling, and process-group checks before reusing output or
+starting another attempt. It retains failed and interrupted attempts and
+refuses automatic recovery if process identity is missing. Successful exit
+is labeled pending scientific validation. Existing completed artifacts are
+hash-checked on reuse; altered inputs/configuration or outputs stop reuse.
+No samples are concatenated and no native checkpoint is claimed.
+
+Five disposable-process tests pass: reuse and tamper detection, retained
+failed attempts, timeout/configuration binding, missing-identity refusal,
+and forced parent crash with a live child followed by a separate recovery
+attempt. The helper relies on a child retaining its inherited lock descriptor
+and remaining in its recorded process group. Actual BAli-Phy behavior must
+be qualified before deployment. The surrounding controller must provide
+resource limits (including memory), scientific sample audits, stable chain
+identifiers and independent seed scheduling. This helper is not yet wired
+into a longer-chain batch and does not change the active pinned controller.
+Test evidence: `metadata/ancestral_chain_attempt_tests_20260927.json`.
