@@ -1,0 +1,286 @@
+{
+  "checked_at": "2026-09-28T04:01:36.190505+00:00",
+  "status": "passed_terminal_state_plan_stage_receipt_and_artifact_integrity_checks",
+  "scope": "Checks current terminal service states, plan pins, stage receipt hashes, recorded stage counts and listed artifact hashes. Does not independently rerun fits, validate model assumptions, or establish biological conclusions. Coupling numerical readback and scientific synthesis remain to be reviewed.",
+  "analyses": [
+    {
+      "analysis": "rate_optimization",
+      "service": "fungal-recovered-afdb-rate-optimization-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "stages": [
+        {
+          "path": "results/phylogeny/freerate-optimization-afdb-recovered-20260927-v1/receipt.json",
+          "status": "complete_flagged_freerate_diagnostic_execution",
+          "counts": {
+            "source_fits": 500,
+            "diagnostic_fits": 2000
+          }
+        },
+        {
+          "path": "results/phylogeny/freerate-optimization-audit-afdb-recovered-20260927-v1/receipt.json",
+          "status": "passed_full_freerate_optimization_diagnostics",
+          "counts": {
+            "source_fits": 500,
+            "diagnostic_fits": 2000
+          }
+        },
+        {
+          "path": "results/phylogeny/rate-comparison-optimized-afdb-recovered-20260927-v1/receipt.json",
+          "status": "complete_matched_rate_heterogeneity_comparison",
+          "counts": {
+            "fits": 500,
+            "site_comparisons": 190116
+          }
+        },
+        {
+          "path": "results/phylogeny/rate-comparison-optimized-readback-afdb-recovered-20260927-v1/receipt.json",
+          "status": "passed_full_rate_comparison_readback",
+          "counts": {
+            "fits": 500,
+            "sites": 190116
+          }
+        }
+      ]
+    },
+    {
+      "analysis": "site_rate_frame",
+      "service": "fungal-recovered-afdb-site-rate-frame-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "stages": [
+        {
+          "path": "results/phylogeny/site-rate-exposure-frame-afdb-recovered-20260927-v1/receipt.json",
+          "status": "complete_site_rate_exposure_analysis_frame",
+          "counts": {
+            "markers": 125,
+            "sites": 47529,
+            "site_rate_values": 380232,
+            "taxon_site_observations": 9453757
+          }
+        },
+        {
+          "path": "results/recovery-20260927/afdb-site-rate-frame/readback/receipt.json",
+          "status": "passed_full_site_rate_exposure_frame_readback",
+          "counts": {
+            "markers": 125,
+            "sites": 47529,
+            "rate_values": 380232,
+            "taxon_site_observations": 9453757
+          }
+        }
+      ]
+    },
+    {
+      "analysis": "site_coupling_full",
+      "service": "fungal-recovered-afdb-coupling-full-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "stages": [
+        {
+          "path": "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/receipt.json",
+          "status": "complete_exploratory_conditional_site_coupling_fits",
+          "counts": {
+            "sites": 47529,
+            "markers": 125,
+            "fits": 24
+          }
+        },
+        {
+          "path": "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/receipt.json",
+          "status": "complete_conditional_marker_resampling",
+          "counts": {
+            "markers": 125,
+            "models": 24,
+            "bootstrap_fits": 48000,
+            "leave_one_marker_out_fits": 3000,
+            "singular_bootstrap_fits": 0
+          }
+        }
+      ]
+    },
+    {
+      "analysis": "site_coupling_copy-omission",
+      "service": "fungal-recovered-afdb-coupling-copy-omission-20260927.service",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "stages": [
+        {
+          "path": "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/receipt.json",
+          "status": "complete_exploratory_conditional_site_coupling_fits",
+          "counts": {
+            "sites": 47216,
+            "markers": 124,
+            "fits": 24
+          }
+        },
+        {
+          "path": "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/receipt.json",
+          "status": "complete_conditional_marker_resampling",
+          "counts": {
+            "markers": 124,
+            "models": 24,
+            "bootstrap_fits": 48000,
+            "leave_one_marker_out_fits": 2976,
+            "singular_bootstrap_fits": 0
+          }
+        }
+      ]
+    }
+  ],
+  "checked_hashes": {
+    "metadata/recovered_afdb_rate_optimization_plan_20260927.json": "c55d906759d21e247111bc337e0237a2ad17e5bf4f6eea7e4341c465e61e82df",
+    "scripts/advance_complete_paired_fits.py": "78e0226fbddfe60a06f5088bc9f875cf86e4a182fcb25940a3a148d62aab0d70",
+    "scripts/advance_completed_rate_comparison.py": "844fe5f75a83070f248488e72d298ee1dbc9489ac96dce8422618a42d64538a7",
+    "scripts/advance_completed_site_exposure.py": "14c2fe038be2b4bab574b1a3171132c36c82b903d4d3f26f353d371f87dfabff",
+    "scripts/advance_completed_site_rate_exports.py": "5c49a1ed38e692bf95b0ba7d0fa38e5ac276118285d2dad566f09ff13a3b3def",
+    "scripts/assess_pae_sensitivity.py": "5e3807b2c724e16d4b28c1328d40404b648fe8c2a5eaf0a31fa75fe3d39513a1",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/audit_freerate_optimization.py": "13bf4ec833ddec954b912d5270920bea2be97816e906e505a488c73113adcbbc",
+    "scripts/audit_joint_path_uncertainty.py": "226aaf627a3c5642fcfa08eb8e497912fb2de4738c156a1b4f75ec3fc1053522",
+    "scripts/audit_paired_site_rates.py": "c07de063767e93340b68e9198c3894b4055e673eec9ecac75e3c9a2ceb2d9cf9",
+    "scripts/audit_site_parsimony_topologies.py": "60f74cecc8649900bd6758ebaaeb16970ea26cf3d7f86cb6720588d28b8e03c4",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/compare_site_rate_heterogeneity.py": "60dc2f0c0c3379e83e3cc75065dac4a98bce75e12949e7a742102af0db92cce3",
+    "scripts/estimate_paired_site_rates.py": "295514ffa190536d8e62f207cf05e01c48f97112fa67c8aba4958917ad5d446a",
+    "scripts/prepare_paired_phylogenetic_inputs.py": "608338688a8ae52c3dacf6da9c3756a688b0523c2ad3b7b1c800c14c6cfe7bf1",
+    "scripts/prepare_site_rate_exposure_frame.py": "6cd7e19c2578f614598bc999b450d5415ba86584de8c7c4a835ef405370b2991",
+    "scripts/readback_rate_heterogeneity.py": "3aae858b484fa80d3f83636926f41c5c7fe6132c26225713fbb647b984172d06",
+    "scripts/readback_site_parsimony_exposure.py": "fd36f2cefce1edcc41ef0ee152760a2b85adad04c2fa3081a8134c746506aeb6",
+    "scripts/refit_flagged_freerate_models.py": "cca4f577b97091883ce91a09eff044b32c67b2cf7830b83b418421eed81cb296",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/run_paired_marker_fits.py": "b10705a990a76454eed72f4965b3c92c54e7791c68ee199b49d8e605c0efc999",
+    "scripts/summarize_paired_marker_fits.py": "b310b73745944df256cf2799a7a635d891516f686b9841520d7296832060ad6b",
+    "scripts/summarize_site_parsimony_exposure.py": "48ac95cbe87ee28cc4d50ddf6cc309ec8571afeb20f46513985943e2f97fd90d",
+    "scripts/advance_recovered_rate_optimization.py": "23160504a2965438d3dd13b2c34a67d0a2942a4e257ac73fedb4a597c7984a56",
+    "metadata/recovered_afdb_site_rates_completed_20260927.json": "c61f783bd96fa22ccdfb0ac366c7fa9b782d11c3d4fe6078b90c5a143c16ce45",
+    "results/phylogeny/site-rates-afdb-recovered-gamma-20260926-v1/receipt.json": "1fdc5301166f3cd47bb9cdd0e0b0dc8db88098ed4bc8e8bcee8e90f547fd85ef",
+    "results/phylogeny/site-rate-audit-afdb-recovered-gamma-20260926-v1/receipt.json": "e9a8e9993293a2c825159826753acb0d9e5b2bce781116057455b0b5a09daba3",
+    "results/phylogeny/site-rates-afdb-recovered-freerate-20260926-v1/receipt.json": "36bbd91e20493fbb4cb881e75a2db01873f9f5c2c441616cfb8ccd916078f91f",
+    "results/phylogeny/site-rate-audit-afdb-recovered-freerate-20260926-v1/receipt.json": "652977e8e7f9d0392556c2a373282f50c5a67a251e49cc70fa4b62ef693c9fe0",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "results/phylogeny/rate-comparison-afdb-recovered-baseline-20260927-v1/receipt.json": "8fc2984bf22b38c2c460732826dc83c117883a634afdceceb6fc1758e8a43102",
+    "results/phylogeny/rate-comparison-readback-afdb-recovered-baseline-20260927-v1/receipt.json": "83b25bd94315d9e49c1d6c79a40eaea98ecf38e7f7c9a99f9ed7c2f739552bca",
+    "results/phylogeny/freerate-optimization-afdb-recovered-20260927-v1/receipt.json": "326acbd04fa57f2a8255c4b258513c98364dbc7ccb7d50e063a988381411f2ee",
+    "results/phylogeny/freerate-optimization-afdb-recovered-20260927-v1/fit_summary.tsv": "2334149f13ff3f324cdc56370981abbf76c689271e536a53912053be7b6cc4d2",
+    "results/phylogeny/freerate-optimization-audit-afdb-recovered-20260927-v1/receipt.json": "6e46827a0230a85125985836a7808c684ac09591577c472ef307f07ddf20701f",
+    "results/phylogeny/freerate-optimization-audit-afdb-recovered-20260927-v1/best_diagnostics.tsv": "455aae359efcf9a1b008271a6cf99323ba2a956c1f735f0e78c0b44c9d163c76",
+    "results/phylogeny/freerate-optimization-audit-afdb-recovered-20260927-v1/all_fits.tsv": "ec0c085faccd5467d81af0886697d02bd783dd7cfa4e79018be1d185f4f66b09",
+    "results/phylogeny/rate-comparison-optimized-afdb-recovered-20260927-v1/receipt.json": "a5f967637a6830382a34cf69a3f5632d2ec58360a496207ba5cc246c9e54b53d",
+    "results/phylogeny/rate-comparison-optimized-afdb-recovered-20260927-v1/branches.tsv": "13cab13afa499e4d28f97e6dc7f8c1b5718d2a94b67def7e825a8b5668d61d73",
+    "results/phylogeny/rate-comparison-optimized-afdb-recovered-20260927-v1/fit_summary.tsv": "84d3165179d0618a92729997b707e330017a67819b23b27463a41d95855e445f",
+    "results/phylogeny/rate-comparison-optimized-afdb-recovered-20260927-v1/sites.tsv": "b40732bb3b9c15f30652af1eedab65bf30e458f246b1c63077ed30e41cfc4737",
+    "results/phylogeny/rate-comparison-optimized-readback-afdb-recovered-20260927-v1/receipt.json": "fcde0b625226e8f9313c9a5090e1865e3de07ee9332033ba94b42ee96d7a6d70",
+    "results/recovery-20260927/afdb-rate-optimization/receipt.json": "1a23f3ff7950a6c5afc4cfa71233cd0bf27cdcc0ea160a2667a13b08c05a43da",
+    "metadata/recovered_afdb_site_rate_frame_plan_20260927.json": "47b49d4db61d08c8b02d03beac74f9771be7b490d7ca6c92219004ea9cafba51",
+    "scripts/advance_recovered_site_rate_frame.py": "c9fd3a91423843d5612025b5cdc80beaaa938e99654da66921f43c818c535e70",
+    "scripts/readback_site_rate_exposure_frame.py": "0ae5c9e28d8ec7834a5c8dd808b9b749dc6a5ec438f4f1d71961c733d10844a5",
+    "metadata/esmfold_site_rate_frame_full_readback_20260927.json": "61a83b2d0cfe4cfe9e4117d76acfbba435fa4537417d69b3b202818057d78c54",
+    "scripts/check_site_rate_frame_rejections.py": "66b5ee3f8b5886e22b4f3b230ed61cfba257a4d59b73d12a5dbd732ce79d735f",
+    "metadata/site_rate_frame_rejection_checks_20260927.json": "6f6c660447214f74243403c6574a8d7a84a7fb29e4a01f07982716f2dce97c79",
+    "results/phylogeny/site-rate-exposure-frame-afdb-recovered-20260927-v1/receipt.json": "b749b48791aa325ea8b385cfe04d49f5e0f720cc40b409b141d345842d2d1e55",
+    "results/phylogeny/site-rate-exposure-frame-afdb-recovered-20260927-v1/fit_diagnostics.tsv": "84d3165179d0618a92729997b707e330017a67819b23b27463a41d95855e445f",
+    "results/phylogeny/site-rate-exposure-frame-afdb-recovered-20260927-v1/site_rate_exposure.tsv": "6a33388e6198a22d9506a6bf073115a6882df83df7e69ee03493119eac10c5ab",
+    "results/recovery-20260927/afdb-site-rate-frame/readback/receipt.json": "bd3848d7641ab07a480795583236f673ae1528b7e7a8c530355b522a55847bac",
+    "results/recovery-20260927/afdb-site-rate-frame/receipt.json": "a1890c087bd97c27a2c33b8654452099030caf5d054d3b85675eec435f3c1018",
+    "metadata/recovered_afdb_site_coupling_full_plan_20260927.json": "f7ed027f1fe3f60352c35078eea8fd06b501ba964743232e2c89b0b673c2bba0",
+    "config/marker_orthology_review.json": "c50009a8a1551608f6e69803327dc698ec2f0777e66fdeef09a3eac8dac9a7d7",
+    "metadata/site_coupling_conditional_resource_plan.json": "7ab8b02aa54eef7a4619ddf8bea9ee9d857f2234d032f98504e0048be781de66",
+    "metadata/site_coupling_marker_resampling_plan.json": "9853da2ec93902702965fedae3555971a0d38ff00cfad6d569e3ba2752a612d4",
+    "scripts/advance_completed_site_coupling.py": "53dd15c884519731ff904e5133df5bc1f5c1bcf6c8fd805b8577997dd8270082",
+    "scripts/audit_genus_codon_trees.py": "4bb365146f4af3c5f5ff582d5a8ae46eda8d70326aec21bbb357f6b96eb217fc",
+    "scripts/fit_conditional_site_coupling.py": "2e103155afff2f06e06063162cd66ec0b88998d54d858072f257725b4e49ac44",
+    "scripts/resample_conditional_site_coupling.py": "9ac79200d600726322db41dafccd22573b8f3a28c20c621eec8e256a231a52bf",
+    "scripts/advance_reviewed_completed_site_coupling.py": "d1e598e22db3c815bbddc85f64b9f7d9482ef84ed20b8acda6ce23f3b55300fb",
+    "scripts/fit_reviewed_conditional_site_coupling.py": "15d56068457fb2dec91818abfece75894083c240d37ea4e9e0d943d8e0fb3e52",
+    "docs/tfiib-tree-annotations.md": "b3f213463538522198e41c54f6ef699bc926995f14fb45578fe19a56055e3c86",
+    "scripts/fit_reviewed_qr_conditional_site_coupling.py": "39e20a0f5d931c429528f4b1c57603e1a2a8cd63ac6610bcaa0f3db8d2ccd5f5",
+    "scripts/advance_reviewed_qr_completed_site_coupling.py": "f429f25c220a2b32984949a070da82a07c70a9b69c26b7ca75e11b270704833b",
+    "scripts/advance_recovered_site_coupling.py": "c0d7bcf4ceb293f5cc30ed576adad6c7b341f37d9a55a1438e0f1fea05c59182",
+    "metadata/recovered_afdb_collection_topologies_completed_20260927.json": "cf922b4ffb72859c3157ae2c7e52b38ffc3ba724ea71ccee62b9379891a53518",
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/receipt.json": "70b89e3ae11d70cdfc6b9dfd39a102741645da6b8102f2edc840c512410f15ac",
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/site_covariates.tsv": "0e703e82425024942052cb49998b48d6e61edae38d2812cefb40f47d14578d98",
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/focal_coefficients.tsv": "6b85718c64256357e3a7b8e7d5441382a5c4ee88cc618ce5808729ec5df649bf",
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/all_coefficients.tsv": "1fc36fc154ae294bfc27fa58d912d259f84d6eb4071856961273e53606458463",
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1/fit_summary.tsv": "bd43c9bb51d04e4cfdcd563e4c5017400f2c26b0c3753be5b9d4e6d943e4ed24",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/receipt.json": "81a6fed9de303ac7845db174752684b889a09617b8e11d5e0450024d88c50584",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__freerate__tien2013__coverage_confidence.npz": "ec0466b8d1c85fc45ad32260c141f1b79ba718b0255f72e977b3a78ada2878f1",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "233ddfa2967379bdf09c3b0bc50c4ff2816fc79268684a842cdb6908740743dc",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__gamma__miller1987__composition_adjusted.npz": "e9f169fe8977293c97a3052eb31a2209ea94b52b39980a9a33ba2861725216b7",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/marker_influence.tsv": "fc81181a1d1bd0a4e81132a3732c76a8aeb01e48c95381c5ffca0bf25e6b70fc",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "109d347bb946177980301a005e3d88921b4da19ee084c28936200744f0313682",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__gamma__miller1987__coverage_confidence.npz": "83017233b0b6af83fa5424e4049d990722572b2afa666e0b64cd0b0b8ab45776",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "6c1f8f37ac78cad9ee0dfa81656b1c977126e82abe9063f3062a64241e567052",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__gamma__tien2013__coverage_confidence.npz": "d05dd6f7408151f79563bff8a167e7ab86ac8e2d6b8a9ccd69b5d9d43eff3078",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__gamma__miller1987__composition_adjusted.npz": "a1202e0f62437fb8284686d4cde38c9c75e8cc8eba54a0817086bf9d1f21047f",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__freerate__miller1987__coverage_confidence.npz": "50d9967c84741c75c0f66f98b6d78d756008edaaa784a07472cc6a6a8c678048",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__freerate__miller1987__coverage_confidence.npz": "7498314ae28b8bbfd91987bb1d5eb78b63bf18eea972338a7e2b4373a73b6d3f",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__freerate__tien2013__composition_adjusted.npz": "d4f28a8f8bc5a32b6491b69d3f2a215a2bc0a97354ff3f60a62fa242298ea103",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "4233acdce4702fce387d7854575b669abb2383fe534ec0d6e872e2b3f0b6b3a8",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__gamma__tien2013__composition_adjusted.npz": "f030e06df71b5ff6c20d1de0decea19bf998f21cb0cc7655ec550c13ddef91c5",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__freerate__miller1987__composition_adjusted.npz": "c6271c9e19240473bf70b7f4b511c34418b3c57444b22141c49e2df66c82382f",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "1622150dfbf3ba33258fe71efd79a51f0ecf0be503107757e16714aae183d523",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__gamma__tien2013__composition_adjusted.npz": "fb3305b58cbad6b6b9843e491303a126508b5e3d9141fd7d327482140757e802",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__gamma__tien2013__coverage_confidence.npz": "215bc1a3d479448228417b1d8afac62e72e9a99e0764f0974b953ec60243257c",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "6b2645f0c27b2083d17467697d86c5e1ed1359563fdbf8954179add8ad06aa71",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "01b3921fe4eab8d5b42b6ff7ce01b5bd25fa09e186a0c93495f8d7ea9d7c609b",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "783323ec691621d28583411c5300360d207acacccbf3c996b91fe5e6d01643f7",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__freerate__tien2013__composition_adjusted.npz": "fa3d0c8fb7c96105d1b96109e2141512c9697497ba3867efc4e2358364c837f6",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/contrast_summary.tsv": "2538aefd8e27c4f1b596b3e3839e7340cd1de4cbcfc15fea37521f9146b6a818",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/numerical_checks.tsv": "2fc01aa3c2b2114d046cb79510da4e4c54911e44325534621538e0468b119cb4",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__gamma__miller1987__coverage_confidence.npz": "1cc17755b0165865d4fab256d4f14b684ec37d168317678c70cc5a4e626bb847",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/marker_resampling_counts.npz": "4966863fda07a9281dcb7b10cf9b875acb63a9a03995af8597d2ffce5877021a",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_llm__freerate__miller1987__composition_adjusted.npz": "9a01fc03e0faabce933574f7e78c471336b506b6c5a8320f780828c2b19fdbeb",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/3di_af__freerate__tien2013__coverage_confidence.npz": "bc9e27f60220f36cdb4c2c244fae8dfbeba478303c00833444ac548d65991d3a",
+    "results/recovery-20260927/afdb-site-coupling-full/state.json": "2fb1cfdeb97c5c453d26bedef8cf07de8dfc7ece3b78b0f463c0b4bbe6f50636",
+    "metadata/recovered_afdb_site_coupling_copy-omission_plan_20260927.json": "ee70e9c8208d0e996e8078949b4289c8c0c6c532c90bb4d02d937891e42cd6a4",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/receipt.json": "fdcc2ae4dd4c9c81bc19fc76cbe3abcd0a2c61ec943b09f1e8cb3a25cc2cabec",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/site_covariates.tsv": "e15dc2c405e0930197f8406ae19c04227e5b7a3522fb6704b309186c1e66516a",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/focal_coefficients.tsv": "c9738fae4f7df070acf49218d71005ecf78c9f3e61d0c4c7fa12413c6cede8bf",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/all_coefficients.tsv": "19b66dd7a81adc3cd950eeb09be232ba6b0480364003aeafe351f5228eb1f94d",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1/fit_summary.tsv": "d4a6b149612ed68edf38c15b0f3ea0ec139746ae56da3cfe1436f61bc041dcb6",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/receipt.json": "560639093dc991cc61ebcb947043d25c2a215f455243f543ba1d9fbd007e97cf",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__freerate__tien2013__coverage_confidence.npz": "517e65f7b9d9641b4e4778391efe2295448ddef7f3fbcbd14a75d5a72181c89c",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__freerate__tien2013__coverage_confidence.npz": "cd9d9679cf9fc625c69aefc0875af93bee71f80ceef142b7d6999692ee64449e",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__gamma__miller1987__composition_adjusted.npz": "0de83004cffbc0f3ffb8bd8a2b019ee2b66c0938644f91acdd4235c772b167a2",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/marker_influence.tsv": "329189c4e3c6efb3874456bc878fe86eb925f0565f4b47d093310d8370d7410c",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__gamma__miller1987__coverage_confidence.npz": "67f4a8a46fb66668495dd1eb3a634cefc131749023584a66691edf97eac2b209",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__gamma__miller1987__coverage_confidence.npz": "fbbaac469e31199a71db1b959b1603932aeef07f76074c58270bf80b46865baa",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__freerate__miller1987__composition_adjusted.npz": "ec6abd6acbde3b074a73246b2da3c08f50f19be40a6c5f2c526e2ce32567d8e5",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__gamma__tien2013__coverage_confidence.npz": "88a33fe1411e651e555376bb4efe29d4b9df51ba919f439d67bb8db4cc82785d",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__gamma__miller1987__composition_adjusted.npz": "3436361670ea33de3db9e5917e08b95d8b6452b196e7b8058adbfd98db1f0252",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__freerate__miller1987__coverage_confidence.npz": "e244aaa30a93a53087db379478a27c0a4dec93f188e241a93acefd20a66a6da3",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__freerate__miller1987__coverage_confidence.npz": "8ff08fc7edbce2d935cf7ed9a5c0cc4444239586160ce240c314cabad110e55e",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__freerate__tien2013__composition_adjusted.npz": "a29ac3b7fb75c55c5b2c8afb450a6e9da231d2e1a4b089482938f9791f4cda3d",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__gamma__miller1987__composition_adjusted.npz": "0ffbe310555956cc870474b7fe9646aab18c5c27f2ebde8e2ec26778fd6de5b8",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__gamma__tien2013__composition_adjusted.npz": "7a701b8122856caca582d0a77d6822ca8b4f0c97ead5b80496d05a272a2bf54a",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__freerate__miller1987__composition_adjusted.npz": "ded40c0143bc8991759da2fd4e6b8b85305011ea04547c0afa9161f19ceb49d2",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__gamma__tien2013__composition_adjusted.npz": "ea7ca86acc90a2554488a120392d100e3d8980fba5129cad5215928368416c6a",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__gamma__tien2013__composition_adjusted.npz": "94fd8fcd7d69e10999462f9f40bb6703f6a3f9fa0f5bb2e2f4bf01cfd0b1959a",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__gamma__tien2013__coverage_confidence.npz": "8335394ab15baf1ed18ecee4168160c2d4455c688e40f099dfc2781ad52669b7",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__freerate__tien2013__composition_adjusted.npz": "156cc63621e8967191eb9cfa6671c7c3d29bdc2ec64002e50af6780b62a056c3",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__freerate__miller1987__coverage_confidence.npz": "e941ef001ec9977aa79a0195773a2772127d6afd77f317db4282b742fd98a5a3",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af_empirical__gamma__tien2013__coverage_confidence.npz": "bf44321d290acc1400d4ca3aa6260cc31c03a282638ee14d1b8dd4c35c20abb3",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__freerate__tien2013__composition_adjusted.npz": "3951284e89b6333b8b3c0bd9e1c38ccb25e93c71b14e84a38ecf356b6e232cc8",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/contrast_summary.tsv": "950811b2309fa1368538f80e1032d73d40f69fd2a726860e1029a057aded9295",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/numerical_checks.tsv": "c8ba1abe541acf86f52d8ce4c335deea46f085bf6de15cf0f1eb3864ed591342",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__gamma__miller1987__coverage_confidence.npz": "b3d9159b0e195b27cb1dca54aede382b3399734806dc2cf1bb83a1adb9766b8d",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/marker_resampling_counts.npz": "a4b1e8f3d44d9da100b39b8d98c3a0297d318a96d09d4074ece8268afcc519d0",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_llm__freerate__miller1987__composition_adjusted.npz": "73bb79a60fe79b95396a116a2201eb54a8124a7a3f48d410f5ca8faf1b6376a0",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/3di_af__freerate__tien2013__coverage_confidence.npz": "ba042e1afb04a1597c934dbc9259912fef4049e1a336da1597dc0dcae7eafc89",
+    "results/recovery-20260927/afdb-site-coupling-copy-omission/state.json": "2077217f3dc2fb5d558cec8df9da119a46414ff5f24121ceba399157aa1860c5"
+  }
+}
