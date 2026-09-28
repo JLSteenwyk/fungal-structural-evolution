@@ -9598,3 +9598,19 @@ The waiting auditor's PID, creation time and command were verified. No audit
 has yet passed and no ancestral probabilities were replaced. Whole-protein
 posterior propagation, joint indel uncertainty and other project objectives
 remain open; GPUs remain paused.
+
+### 2026-09-27: exact BAli-Phy input equivalence across the full grid
+
+Audited all324 configuration inputs against the pinned gap-stripping loader.
+Exact ordered ungapped sequences, full tree bytes, model/seed options and binary
+identify135 distinct effective inputs (27 groups of4 and108 groups of2). All
+324 original labels and every protein remain mapped. This is computational
+reuse potential, not reduced sampling or a subset of families.
+
+Across85 groups with multiple finished initializations, normalized generated
+programs and initial numerical states match exactly. All source receipts and
+output artifacts were checked. Runtime comparisons of remaining groups and
+posterior qualification remain pending. Existing diagnostic batches were not
+cancelled or replaced. Future distinct priors/models/seeds/chains cannot be
+merged, and repeated labels cannot count as independent evidence. Verified
+receipt: `metadata/baliphy_input_equivalence_completed_20260927.json`.

@@ -74,3 +74,27 @@ node names. The first four complete chains pass all checks, providing 48
 verified candidate-node/sample mappings, with 320 jobs pending in the snapshot.
 The degree-two root is retained only conditional on the specified root position.
 No early sample is a qualified posterior draw for biological conclusions.
+
+## Effective-input equivalence for future computation reuse
+
+The pinned loader calls `stripGaps` in `mkUnalignedCharacterData`. An audit of
+all324 configurations therefore preserves the exact ordered ungapped sequences,
+full tree bytes, binary digest and all model/seed options as the computational
+input key. It does not sort sequence records or equate different tree files by
+approximate distance. FASTA descriptions were checked to equal their identifiers;
+only canonical residues,X and gap characters occur. No proteins are removed.
+
+This yields135 distinct input groups:27 groups of four labels and108 groups of
+two. The complete324-row mapping retains every alignment, family, tree floor and
+resolution label. In85 groups with multiple finished initializations, replacing
+only literal input paths gives identical generated program text and exactly
+matching initial numerical state lines. Remaining groups still need completed
+runtime comparisons; initial agreement is not a mixing or convergence test.
+
+`audit_baliphy_input_equivalence.py` and
+`results/ancestral/baliphy-input-equivalence-20260927-v1` preserve the evidence.
+Existing diagnostic jobs continue unchanged. Future reuse may map identical
+inputs to one computational result per seed, with explicit provenance for every
+original label. Different models, priors, trees, seeds and independent chains
+must remain separate. A reused result is never an additional independent
+replicate. This reduces redundant calculations without reducing family sampling.
