@@ -747,3 +747,36 @@ approximation on actual design conditions and model departures. Candidate
 real-grid intervals remain unqualified for biological claims. No additional
 replicates were added in response to these observed coverage results, and the
 full fungal cohort and all evolutionary aims remain unchanged.
+
+## Optimization disagreement diagnosed and endpoint continuations checked
+
+`scripts/diagnose_matched_kr_start_disagreements.py` regenerated every response
+in the184 review refits and recomputed the analytic projected score at all736
+full-face endpoints. Of these,551 agree with the selected likelihood and185
+have higher objectives with projected gradient above1e-3. Every one of the185
+reported optimizer success despite this nonstationarity. Direct likelihoods
+agree with saved objectives to2.85e-13, so this evidence identifies premature
+termination rather than inconsistent likelihood evaluation or a demonstrated
+stationary competing optimum.
+
+The separate `scripts/retry_matched_kr_nonstationary_starts.py` continues all185
+endpoints with fresh L-BFGS-B state, unchanged variance bounds and tolerances,
+and at most three rounds. The retry plan was written before evaluation; its
+stricter diagnostic gradient target is1e-6. Every attempt and original endpoint
+is retained and directly checked. The experiment took1.79seconds on one CPU.
+All185 final objectives agree with the original selected solution within1e-5;
+none improves it beyond that threshold.184 meet the stricter gradient target;
+one ends at2.38e-6 after three rounds. Thus all meet the original1e-3 projected
+gradient threshold, but the stricter experiment's one unresolved flag remains.
+
+All185 retry files, source bindings, plan pins, round counts and summary
+arithmetic were read back. Evidence is in
+`metadata/matched_kr_start_diagnostics_20260928.json`,
+`metadata/matched_kr_start_retries_20260928.json` and
+`metadata/matched_kr_start_retry_readback_20260928.json`.
+
+This continuation evidence supports further numerical qualification of the
+selected fits. Original statuses, candidate histories, failed-outcome bounds
+and coverage summaries remain unchanged. A versioned qualification overlay and
+recomputed coverage audit are required before declaring the184 reviews resolved.
+The experiment is not proof of global optimality or universal coverage.
