@@ -60,8 +60,9 @@ probability zero or one. Evidence is in
 `metadata/fastml_indel_terminal_readback_20260928.json`.
 
 This resolves the output-identity parsing failure, not the likelihood
-discrepancy above. Independent replay of the entire batch, resolution of
-ascertainment-cache behavior, and optimization validation remain pending.
+discrepancy above. At this readback checkpoint, independent replay of the
+entire batch remained pending; its subsequent results are below. Resolution
+of ascertainment-cache behavior and optimization validation remain pending.
 These outputs are not a qualified ancestral ensemble.
 
 ```bash
@@ -71,3 +72,37 @@ python scripts/audit_completed_fastml_indel_outputs.py \
 
 Use a fresh output path for a repeated audit. The command verifies the
 preserved failed producer state as well as the output artifacts.
+
+## Completed independent replay, September 28
+
+The separate replay service completed successfully (inactive, exit zero).
+All 153 nonempty inputs and 8,058,340 probabilities were recomputed from
+serialized parameters and branch lengths; the three empty inputs remain
+explicit. The analytic enumeration check also passed. Source, plan, and
+per-case output hashes were verified after completion.
+
+The largest absolute node-probability difference is 0.0001005571, in
+`OG0000972-alignment-famsa-terminal_gap`. Six likelihood differences exceed
+the diagnostic trigger of 0.01. Three are the OG0000294 cases tabulated
+above; their discrepancies remain about 0.47, and substituting the original
+tree's exclusion denominator reproduces the printed likelihood within
+2.19e-6. The other three are whole-protein OG0000972 cases, with differences
+0.01055–0.04759 and reported likelihoods rounded to one decimal place.
+The stale-denominator diagnostic does not explain those three cases.
+
+Across all 153 cases, 21 differences exceed half the final printed digit of
+the reported likelihood. That count considers only likelihood display
+precision. It does not account for rounded fitted parameters or tree edges,
+so it is neither a count of confirmed software defects nor a validation
+threshold. Full-precision exports or independent corrected fits are needed
+to resolve these numerical differences and qualify parameter estimates.
+
+The [complete discrepancy table](tables/fastml_complete_replay_discrepancies_20260928.tsv)
+retains every case, its printed likelihood precision, probability discrepancy,
+and available initial-tree-denominator comparison. Completion evidence is
+`metadata/fastml_complete_replay_completed_20260928.json`.
+The scripts `replay_completed_fastml_indels.py` and
+`summarize_complete_fastml_replay.py` reproduce the replay and summary using
+the pinned plan `metadata/fastml_complete_replay_plan_20260928.json` and new
+output directories. No source predictions or failed producer receipts were
+replaced. These results do not establish a qualified ancestral ensemble.
