@@ -1,0 +1,19 @@
+{
+  "receipt": "results/ancestral/baliphy-sample-mapping-readback-20260927-v3/receipt.json",
+  "receipt_sha256": "1f891f6316fddec92668e8f1c5524953e4225bbc146318e9a246e2aec38576da",
+  "dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 36,
+    "pending_receipt": 288
+  },
+  "expected_jobs": 324,
+  "candidate_samples": 432,
+  "families": [
+    "OG0000054",
+    "OG0000095",
+    "OG0000107",
+    "OG0000152",
+    "OG0000230"
+  ],
+  "maximum_family_proteins": 83,
+  "scope": "Each saved sample paired with same-process fixed runtime tree; all tips/known residues, rooted clades, branch lengths and candidate identities checked. Initial and early samples retained for integrity testing only, not converged posterior ensembles. Root remains an assumption; no independent likelihood replay."
+}

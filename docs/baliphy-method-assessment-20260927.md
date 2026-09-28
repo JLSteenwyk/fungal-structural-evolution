@@ -117,3 +117,13 @@ Evidence: `metadata/baliphy_initialization_final_readback_completed_20260927.jso
 and `metadata/baliphy_input_equivalence_v2_completed_20260927.json`.
 Short-chain runtime/sample integrity checks continue separately. No initialization
 result or equivalent-input reuse establishes a qualified posterior ensemble.
+
+A third independent sample-mapping snapshot checks all 36 completed diagnostic
+chains, with 288 pending. Every saved alignment, runtime tree, extant sequence
+and candidate-node association passes the declared checks, covering 432
+candidate-node/sample mappings across 5 families (largest completed
+family: 83 proteins). The complete 324-configuration run remains active.
+Evidence is recorded in
+`metadata/baliphy_sample_mapping_partial_readback_v3_20260927.json`.
+These are still 20-step output-integrity diagnostics; the snapshot does not
+qualify posterior draws, establish convergence, or cover the unfinished families.
