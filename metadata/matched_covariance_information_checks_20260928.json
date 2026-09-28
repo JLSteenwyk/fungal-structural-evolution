@@ -1,0 +1,14 @@
+{
+  "status": "passed_blocked_covariance_information_dense_checks",
+  "dense_cases": 48,
+  "maximum_absolute_disagreement": 3.725290298461914e-09,
+  "exact_confounding_rank": 3,
+  "invalid_inputs_rejected": 7,
+  "block_partition_equivalence": true,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_covariance_information.py": "e74eced1e180f05d0370fc6e1d3d9db6f59d04a45fc8acaac162855e2b8cb459",
+    "scripts/matched_covariance_information.py": "474e0ae5d27a1a4be53981931f88b0bd9d0a8cf14d912dd2660c2dda84319469",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "scope": "Synthetic numerical validation of four absolute-variance kernels. No information inverse, KR intervals or coverage claims. Blocked exact reference has quadratic work and is not approved for full-grid execution."
+}

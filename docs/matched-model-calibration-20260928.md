@@ -380,3 +380,37 @@ covariance contractions against independent dense calculations, including
 rank-deficient and boundary cases, then compare approximation behavior with
 refitted simulations. No full calibration replicate count or analytic method
 has yet been selected; the entire original analysis grid remains in scope.
+
+## Exact information reference implemented
+
+`scripts/matched_covariance_information.py` now computes the four-component
+expected REML information and fixed-effect covariance contractions in absolute
+variance coordinates. With T=V^-1 X, Phi=(X' V^-1 X)^-1 and
+P=V^-1-T Phi T', the information is Iij=tr(P Gi P Gj)/2.
+For Gi=Ui Ui', its entries are accumulated as
+tr((P Ui)' Gj (P Ui))/2 over blocks of columns of Ui. Identity, group-incidence
+and species-factor kernels are applied without storing observation-sized dense
+covariance matrices. The residual identity contribution still requires
+quadratic work; this is a memory-bounded exact reference, not yet a scalable
+production implementation for144,040 fits.
+
+The same routine returns -T' Gi T and T' Gi V^-1 Gj T, together with Phi,
+for future covariance-adjustment calculations. All derivative kernels remain
+present when their fitted variances are zero. It reports numerical rank from
+diagonally normalized information and its eigenvalues, with an explicit
+floating-point tolerance. It does not invert information, remove confounded
+components, calculate degrees of freedom or issue intervals.
+
+`scripts/check_matched_covariance_information.py` passed48 independent dense
+comparisons spanning all eight zero/nonzero random-component combinations,
+two overall scales, ordinary/duplicated/empty species factors. Maximum absolute
+disagreement across all returned contractions was3.73e-9 under the recorded
+relative/absolute checks. A species kernel identical to the family kernel
+correctly gives numerical information rank3. Changing block partitions gave
+equivalent information, and seven invalid inputs were rejected. Evidence is
+in `metadata/matched_covariance_information_checks_20260928.json`.
+
+These are numerical checks of the formulas, not coverage evidence. Boundary
+sampling behavior, conditioning on real inputs, an efficient full-grid path,
+covariance adjustment, reference-distribution calculations and simulation
+validation remain pending. Active production scripts remain unchanged.
