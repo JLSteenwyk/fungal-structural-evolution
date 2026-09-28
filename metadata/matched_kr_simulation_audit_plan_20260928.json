@@ -1,0 +1,39 @@
+{
+  "producer_plan": "metadata/matched_kr_simulations_plan_20260928.json",
+  "producer_launch": "metadata/matched_kr_simulations_launch_20260928.json",
+  "output": "results/model_validation/matched-kr-simulation-audit-20260928-v1",
+  "pins": {
+    "results/model_validation/matched-kr-simulation-inputs-20260928-v1/design-48.npz": "c364bc5f7e8c1dfee8b34e176710d5c67242c380b248e7cefb8a068f3e9ecdd1",
+    "results/model_validation/matched-kr-simulation-inputs-20260928-v1/design-240.npz": "a68d283fe1ac80b158ab85c1323a13d01c99d9ad7a85317a5e948341cbeed291",
+    "scripts/prepare_matched_kr_simulations.py": "5d4ee08c559a498c23823acf1fb6b80298e9ffa6df5531ed2ae24585c25a88fe",
+    "scripts/run_matched_kr_simulations.py": "89e3144ebd465ec9a504fae7757fdf61567dda001ebf65a98ff7f75d33f5cc32",
+    "scripts/calibrate_matched_kr.py": "d3467bf404b3880e9116d632c22643aba415b21f624ec0e540fa3af91f1c3cef",
+    "scripts/refit_matched_simulation.py": "50e7992531f6be3551083a51e1baaeae62be0becf2752ddc4b99cde6e5f2f4f8",
+    "scripts/simulate_matched_working_model.py": "c82cc7cfca63e2e1c7306faae66d1de4064750d422441fbd373800133a89375a",
+    "scripts/refine_matched_reml_analytic.py": "f063e2dffa13d01e74597e6ed1022ae1a7ab10ef167a7e37d1998b32df317149",
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_covariance_information.py": "474e0ae5d27a1a4be53981931f88b0bd9d0a8cf14d912dd2660c2dda84319469",
+    "scripts/matched_covariance_information_fast.py": "77fc9a45884b633988d44621a046b5f6ee40675ce5c38339a9a2ade4d95af325",
+    "scripts/matched_kr_covariance.py": "994b68c901ddb1e23405c3bf23ef369db38a4af3a0fb89a6f89f266162ca000d",
+    "scripts/matched_kr_scalar.py": "2d875d8a72acb850f93484ae0a88018fb03b6320fc1193f616ff4bf5048effa1",
+    "scripts/matched_calibration_intervals.py": "ffd2e30a5cf25817bc70f434c18ed88dd78bbd0772b0121e73c8d42ea9bf3ec3",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_kr_simulations_plan_20260928.json": "f27dbdc3468c2a5e9ff74d4fb3afb4bae7bb1f765d63dc6589d03fd5b7b56987",
+    "metadata/matched_kr_simulations_launch_20260928.json": "95012024de3f29a5dc4237b0fde9fb3509390c01dbecb5e438bee657a23b6713",
+    "scripts/audit_matched_kr_simulations.py": "f4b3480d273a733fbc1a60af1267554871bb10bcd140ddd50a7e174bdf801d9d"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_active_hours": [
+      0.1,
+      4
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_cost": 0
+  }
+}

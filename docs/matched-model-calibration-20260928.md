@@ -633,3 +633,28 @@ dispositions were observed at the first inspection. No interim coverage-based
 decision was made. Plans and launch records have the prefix
 `metadata/matched_kr_simulations_`; results are under
 `results/model_validation/matched-kr-simulations-20260928-v1`.
+
+## Full simulation replay audit queued
+
+`scripts/audit_matched_kr_simulations.py` waits for the identified simulation
+producer to reach inactive/success/exit0, revalidating PID, creation time and
+command while it runs. It then requires exactly the16×999 planned keys and
+checks source/plan/payload hashes. Every response is regenerated from its
+declared seed and generating model. For non-error fits it verifies24 candidate
+records, selected-best identity and the selected fit's direct likelihood,
+coefficients, scale and covariance. Every candidate interval is recomputed;
+failed outcomes stay in the summaries. This does not independently reoptimize
+every candidate or establish model adequacy.
+
+The audit also recomputes the original conditional-t coverage indicators and
+their fixed-size Monte Carlo envelopes. Both methods' summaries will be saved
+for descriptive comparison after all draws finish. Coverage superiority is
+not assumed. Four frozen saved replicates passed helper checks, and an altered
+response hash was rejected; evidence is in
+`metadata/matched_kr_simulation_auditor_checks_20260928.json`.
+
+The verified waiting service is
+`fungal-matched-kr-simulation-audit-20260928.service`, with one CPU,8GiB memory,
+no swap,0.1GiB output allowance and0.1–4active hours planned after the wait.
+Plan and launch records use `metadata/matched_kr_simulation_audit_`.
+No audit-completion or coverage result is claimed while production is active.
