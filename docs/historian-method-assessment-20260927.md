@@ -222,3 +222,30 @@ ancestor by these diagnostic results. Original memory failures remain in the
 capacity-grid record. Completed evidence is in
 `metadata/historian_largest_family_comparison_completed_20260927.json` and
 `metadata/historian_famsa_memory_retry_audit_completed_20260927.json`.
+
+
+### Complete polytomy-resolution diagnostic within the continuing full grid
+
+A new independent readback snapshot checked 292 successful original-grid
+runs, retained four memory-limit outcomes, and left 28 jobs pending. The
+snapshot is immutable; final all-job audit remains queued separately.
+The four largest-family failures already have successful independently
+checked higher-memory retries, which are intentionally preserved separately.
+
+All 180 OG0000230 configurations are now independently checked: six alignment
+inputs, two minimum-edge floors and all 15 rooted binary resolutions of the
+four-way branch. Candidate sequences are identical across the 5,040 paired
+node comparisons changing resolution alone and the 360 changing floor alone.
+These totals include the explicitly assumed root and repeated comparisons of
+shared inputs. They are not counts of independent evolutionary observations.
+A family/dataset/factor/root summary is produced by
+`scripts/summarize_historian_sensitivity_readback.py`; provenance is recorded in
+`metadata/historian_capacity_sensitivity_partial_v3_20260927.json`.
+
+Across the entire original-grid snapshot, all 5,624 available paired candidate
+comparisons have zero edits. This must not be reported as general robustness:
+the separate OG0000972 higher-memory retries show non-root differences of
+8–19 edits across floors and 8–22 across input alignments. Neither result
+establishes convergence or posterior concentration; Historian's approximate
+profile and traceback limitations still apply. No final ancestral ensemble
+has been qualified by this diagnostic.
