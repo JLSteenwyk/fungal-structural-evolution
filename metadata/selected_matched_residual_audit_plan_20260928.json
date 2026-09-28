@@ -1,0 +1,29 @@
+{
+  "producer_plan": "metadata/selected_matched_residuals_plan_20260928.json",
+  "producer_launch": "metadata/selected_matched_residuals_launch_20260928.json",
+  "output": "results/model_validation/selected-matched-residual-replay-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "storage_gib": 1,
+    "planning_active_hours": [
+      1,
+      24
+    ],
+    "gpu": false,
+    "paid_cost": 0,
+    "basis": "Replay144040 fixed-covariance residual calculations from28808 cache files, including all bins/quantiles; broad uncalibrated allowance for serial file reads and linear algebra. Waiting excluded."
+  },
+  "pins": {
+    "metadata/selected_matched_residuals_plan_20260928.json": "a50be7e9ebf21a3d8828a9cc65edd368837027b53828ef30eeb68ca6091e2c64",
+    "metadata/selected_matched_residuals_launch_20260928.json": "4e09dd7ce48d86ba523d6d5d198c97667ac97b1bb947ed8e50c4515967caa1c7",
+    "scripts/audit_selected_matched_residuals.py": "020e3055b9f7a75cb9230d08ac01a3382215b2f4f502af01d998751a0f1476ae",
+    "scripts/run_selected_matched_residuals.py": "84dc6f46f7ae331cfa50313ae48a923b8d97a9d5304f1ffb130b1c17e9bac416",
+    "scripts/evaluate_selected_matched_residuals.py": "cad310824f56da6011d6dc91d9410ddadf15a7da3fa17222d967fb2ac640237d",
+    "scripts/matched_marginal_residual_diagnostics.py": "1ea08d9902347277114ed555dc24125afd86155de7329b9fb6ac4cda05d79223",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/selected_matched_residual_audit_checks_20260928.json": "ad6702a36406323bf717d421b34d21f8bb6b5525161f54be25d365a98d3b5299"
+  }
+}

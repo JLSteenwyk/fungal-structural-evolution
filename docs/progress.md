@@ -9778,3 +9778,8 @@ does not establish universal coverage or complete the biological project.
   figures spanning all 16 synthetic conditions and both covariance treatments.
   The complete 256-row summary table accompanies the figure. All artifact
   checksums passed; empirical simulation ranges are labeled explicitly.
+
+- September 28: queued complete residual output replay for all 144,040 fits,
+  including every stored covariate bin and quantile. Source/checkpoint binding
+  and full disposition accounting are required. This reproducibility audit
+  remains distinct from the outstanding scientific model-adequacy assessment.

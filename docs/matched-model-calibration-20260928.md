@@ -992,3 +992,20 @@ of three is a reference line, not a rejection criterion. All 256 source summary
 rows are copied alongside the figure with checksum binding. The figure's
 caption identifies the ranges as empirical simulation summaries and explicitly
 excludes confidence-interval or fungal-data threshold interpretations.
+
+### Complete residual replay audit queued
+
+`audit_selected_matched_residuals.py` waits for terminal success of the residual
+producer and then replays all 144,040 fit dispositions from the 28,808
+checksum-bound cache inputs. It compares every saved summary, quantile and
+covariate-bin value, preserves typed failures and verifies selected source
+payloads and complete tree/input coverage. A compact per-fit summary table is
+emitted only after the full replay. Nested comparison fixtures reject changed
+moments, quantiles, lost bins and changed statuses while retaining a failed-fit
+disposition. Dense projection and real selected-fit checks remain separate.
+
+The serial audit uses one CPU, an 8 GiB memory cap, no swap and a 1 GiB output
+allowance, with a broad uncalibrated 1–24 active-hour estimate. It uses the same
+numerical evaluator as the producer: this establishes replay consistency, not
+independent model validation or calibrated adequacy. All output bins and
+quantiles are recomputed, rather than checking only scalar summary arithmetic.
