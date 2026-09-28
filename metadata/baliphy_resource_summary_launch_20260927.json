@@ -1,0 +1,14 @@
+{
+  "unit": "fungal-baliphy-resource-summary-20260927.service",
+  "pid": 673724,
+  "created": 1790559164.72,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_baliphy_resources.py",
+    "--audit",
+    "results/ancestral/baliphy-sample-mapping-final-readback-20260927-v1",
+    "--output",
+    "results/ancestral/baliphy-resources-20260927-final-v1",
+    "--wait-for-final"
+  ]
+}

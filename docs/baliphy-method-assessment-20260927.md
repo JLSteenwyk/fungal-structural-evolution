@@ -127,3 +127,23 @@ Evidence is recorded in
 `metadata/baliphy_sample_mapping_partial_readback_v3_20260927.json`.
 These are still 20-step output-integrity diagnostics; the snapshot does not
 qualify posterior draws, establish convergence, or cover the unfinished families.
+
+
+## Measured resource summary for the next sampling stage
+
+`scripts/summarize_baliphy_resources.py` preserves all 324 configurations and
+all 135 effective-input groups, joins completed runs to checksum-bound sample
+audits, and reports elapsed time, sampled peak RSS and retained artifact sizes.
+Failed and pending attempts remain explicit; capped runtimes are censored.
+Group tables retain the number of original labels and successful sample audits,
+so equivalent inputs cannot be counted as independent chains.
+
+The script was exercised against the frozen 36-chain audit and its total
+worker time and pending count were checked separately against the emitted
+table. A separate service is queued behind the verified final sample auditor;
+it will summarize all 324 dispositions in
+`results/ancestral/baliphy-resources-20260927-final-v1`. Its plan and launch
+identity are versioned. This is a read-only stage capped at one CPU and 2 GiB,
+with no GPU use or paid resources. Measured initialization plus 20-iteration
+costs do not estimate iterations required for convergence or production-chain
+runtime. Those assessments remain required before qualified posterior use.
