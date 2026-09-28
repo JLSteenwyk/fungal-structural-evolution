@@ -1,0 +1,10 @@
+{
+  "status": "verified_terminal_interruption_before_resume",
+  "snapshot_receipt": "results/ancestral/fastml-refinement-pre-resume-20260928-v1/receipt.json",
+  "snapshot_receipt_sha256": "ca909744f14feac999767cdfd38aecf8f21828d45439432d9b07b736373060ad",
+  "failed_ids": [
+    "OG0000095-whole-mafft-terminal_unknown__balanced",
+    "OG0000095-whole-mafft-terminal_unknown__high_ratio"
+  ],
+  "reason": "Two native child processes exited with SIGTERM while optimizing; sender unknown. Producer failed, no live old worker identities. Preserve all original readbacks and failed attempts; resume exact same immutable plan, reuse verified success, create new attempts for failed starts."
+}

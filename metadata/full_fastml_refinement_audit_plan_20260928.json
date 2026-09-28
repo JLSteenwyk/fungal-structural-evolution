@@ -1,0 +1,26 @@
+{
+  "producer_plan": "metadata/fastml_optimizer_refinement_plan_20260928_v3.json",
+  "producer_launch": "metadata/fastml_optimizer_refinement_launch_20260928_v3.json",
+  "baseline": "results/ancestral/full-fastml-native-rate-replay-20260928-v1",
+  "output": "results/ancestral/full-fastml-refinement-audit-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_active_hours": [
+      0.05,
+      1
+    ],
+    "storage_gib": 0.1,
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/fastml_optimizer_refinement_plan_20260928_v3.json": "4dae9b2a27da563da731b873dd8a15ede5c125c83fa1ba96a89225f90fa92420",
+    "metadata/fastml_optimizer_refinement_launch_20260928_v3.json": "42f127bc34551f5b724b7e6603a7e3664acad74fd163d89a92c737795d33675f",
+    "scripts/audit_full_fastml_refinement.py": "1c29478968d82f60594ee7b828ab201c4bddd0b8e0079decb609e834949c191d",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/fastml_full_refinement_audit_checks_20260928.json": "27e89c1abb67536c3e5ef8a7ebe280fd469ebfe643ec862103e2203d6f10a4b4",
+    "results/ancestral/full-fastml-native-rate-replay-20260928-v1/receipt.json": "e361d51f76c481585ec95536ad2836f14f2f73ea4f8d1485856a91fd0443f285"
+  }
+}

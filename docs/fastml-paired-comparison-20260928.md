@@ -152,3 +152,38 @@ iteration overrides, changed starts and branch-optimization enablement.
 
 Execution is ongoing; stricter settings and numerical replay do not themselves
 prove a converged optimum or a biologically adequate indel model.
+
+## Full start-comparison audit and interrupted-attempt recovery
+
+The full audit is queued as
+`fungal-full-fastml-refinement-audit-20260928-v2.service`, using
+`metadata/full_fastml_refinement_audit_plan_20260928_v2.json`. It verifies
+all 780 expected records, source attempts and native artifacts, effective
+settings, fixed trees, fitted parameters and likelihood arithmetic. It reports
+each five-start range, iteration-limit messages and improvement over the best
+previous native-rate replay. Agreement within a descriptive tolerance does
+not certify a global optimum. Its checks passed 273 frozen records (including
+explicit failed records), 54 complete groups, and four kinds of altered or
+missing information. It does not recompute the entire pruning algorithm.
+
+Within that scheduling-biased frozen subset, all 54 complete nonempty groups
+improve on their earlier best likelihood by more than 1e-5. The largest gain is
+4.073779 log-likelihood units. Twenty-three groups still have a five-start
+likelihood range greater than 1e-5. These are optimization diagnostics, not
+biological evidence or a complete-grid conclusion. See
+`metadata/fastml_refinement_early_start_summary_20260928.json`.
+
+At 12:29 EDT, two native children received SIGTERM while optimizing, causing
+the controller to terminate and its first audit to reject the failed producer.
+The signal sender is unknown. Both old process identities were confirmed dead;
+all 273 existing readbacks were copied to the immutable
+`results/ancestral/fastml-refinement-pre-resume-20260928-v1` snapshot before
+resumption. The exact same production plan was resumed: successful attempts
+are hash-verified and reused, while interrupted starts receive separate new
+attempts. No native checkpoint is concatenated or silently adopted.
+
+The resumed producer identity is recorded in
+`metadata/fastml_optimizer_refinement_resumed_launch_20260928_v3.json`.
+The audit's new plan binds that identity. The recovery record is
+`metadata/fastml_refinement_sigterm_recovery_20260928.json`.
+The full-grid audit and optimizer qualification remain pending.

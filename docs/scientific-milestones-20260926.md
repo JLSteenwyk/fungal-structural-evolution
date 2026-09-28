@@ -224,3 +224,10 @@ September 28: full658 matched-model refinement readback is queued after
 producer completion. The checker passed a frozen152 completed records plus
 three tamper cases. Whole-grid qualification and setting-map integration
 remain pending.
+
+September 28: full FastML five-start readback is queued against the resumed
+producer. A frozen54 complete-group subset shows all54 likelihoods improved
+over earlier fits, but23 groups still disagree across starts. Two SIGTERM
+interruptions were preserved and retried as separate attempts after verified
+termination; all successful native attempts are reused. These partial
+diagnostics do not qualify the complete ancestral analysis.
