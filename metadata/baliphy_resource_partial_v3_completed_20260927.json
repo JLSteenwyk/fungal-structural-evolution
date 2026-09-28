@@ -1,0 +1,20 @@
+{
+  "status": "complete_resource_summary_of_frozen_audit",
+  "configurations": 324,
+  "effective_input_groups": 135,
+  "audit_dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 278,
+    "pending_receipt": 46
+  },
+  "measured_attempts": 278,
+  "total_measured_worker_seconds": 19856.492752979015,
+  "maximum_sampled_rss_bytes": 2716311552,
+  "script_sha256": "e8a65a6004d17ace344ec188d3a88bb1d888c94486e3001a2aa66545ec9c539d",
+  "artifacts": {
+    "effective_group_resources.tsv": "ac520229d9f3575722021799f81faa8a8c693927091c383e427b551a5ada7c95",
+    "configuration_resources.tsv": "aa05aec1b27c63c820bd2549f17ce64a26ecd681cf7cbde8b1f60877fb3f7e58"
+  },
+  "scope": "Elapsed time includes startup and only 20 iterations; sampled RSS can miss peaks. Capped attempts are censored, not successful runtime estimates. Alias groups retain all labels and do not represent independent chains. No production runtime, convergence, or posterior adequacy is inferred.",
+  "completed_receipt_path": "results/ancestral/baliphy-resources-20260927-partial-v3/receipt.json",
+  "completed_receipt_sha256": "1fba3e90b1f4780e88f4297ac062bbcb889a391cf722987817cd4d2a01b7538f"
+}

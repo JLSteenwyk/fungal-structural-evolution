@@ -307,3 +307,16 @@ This completes initialization validation across the full effective-input
 grid. It does not establish posterior convergence, independent likelihood
 validation, or the resource requirements of longer sampling chains. The
 separate short-sampling grid and its final resource audit remain pending.
+
+
+The v7 short-sampling audit verifies all saved samples and candidate-node
+identities for 278 of 324 configurations (3,336 candidate-node samples),
+retaining 46 pending dispositions. No completed configuration failed these
+checks. The v3 resource summary accounts for 19,856.493 worker-seconds
+across these 278 runs; the maximum sampled RSS is 2,716,311,552 bytes.
+Source and output hashes and resource-table totals were independently
+rechecked. These 20-iteration runs include startup overhead and are not
+convergence evidence or direct runtime forecasts for longer free-parameter
+chains. Full-grid sampling and the queued final audits remain active.
+Records: `metadata/baliphy_sample_mapping_partial_readback_v7_20260927.json`
+and `metadata/baliphy_resource_partial_v3_completed_20260927.json`.
