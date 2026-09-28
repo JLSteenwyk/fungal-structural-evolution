@@ -1,0 +1,27 @@
+{
+  "audit_launch": "metadata/ancestral_whole_multistart_audit_launch_20260927.json",
+  "audit_receipt": "results/ancestral/whole-multistart-readback-20260927-v1/receipt.json",
+  "python": "/home/bizon/anaconda3/bin/python",
+  "resources": {
+    "cpus": 8,
+    "memory_gib": 12,
+    "swap_gib": 0,
+    "output_gib": 4,
+    "planning_hours_after_audit": [
+      0.5,
+      24
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Wait for verified independent audit of all468 starts. Select best feasible among baseline and same-bound audited starts for every78 model/alignment and2 bounds;156 refinements at epsilon1e-8. No automatic posterior replacement or convergence claim. Independent refinement likelihood replay and posterior propagation remain downstream.",
+  "pins": {
+    "metadata/ancestral_whole_multistart_audit_launch_20260927.json": "19ab63f2405d4ba283e171f282fe36373feb11e0cf7f08fcb1036c940fe95473",
+    "metadata/ancestral_whole_multistart_audit_plan_20260927.json": "48351e80a6496fb1fac399525db0d29332ac85041bb8eb03065a8041a84c9525",
+    "metadata/ancestral_whole_multistart_plan_20260927.json": "498bb5355d9fc21fc4743e4379c9688d6ab276daefd0a4293e570274c22c628c",
+    "metadata/ancestral_whole_model_audit_completed_20260927.json": "d8bee0b1fcb109d90ded4eaf9f4a3d70cc27b45c1bce4e083f8059c105a57f2a",
+    "scripts/advance_ancestral_whole_refinements.py": "aabf4f1c49716761801d627ee89726380ac4b15b6f2eb015a3e1e5dad3b114c0",
+    "scripts/prepare_ancestral_whole_refinements.py": "2c7aa763bc7b65900364456dc88d1471824d6f5512fd55e8d44a34c557d6e87b",
+    "scripts/run_ancestral_whole_refinements.py": "f7f9bb2980d8dd62adea75c56c20a451361539aaa15980cfce65cdaa16c4e5ff",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

@@ -9521,3 +9521,23 @@ lengths, and 48 candidate-node/sample identities. All320 pending dispositions
 remain recorded. Source changes, process identity, resource limits and snapshot
 receipt hashes are versioned. Full sampling, prior/approximation sensitivity,
 convergence, biological interpretation and GPU structure prediction remain open.
+
+### 2026-09-27: whole-protein refinement handoff queued
+
+Verified the active producers and inspected completed-job dispositions:
+270 whole-protein fits,84 Historian reconstructions,83 BAli-Phy initializations
+and4 short chains had recorded completion, with no recorded unsuccessful jobs
+at this observation. These counts are not independent-audit completion claims.
+
+Queued tighter optimization for all156 whole-protein model/bound combinations.
+The handoff waits on the independent468-fit audit's process identity and
+requires inactive/success/exit0, matching source receipt and all artifact hashes.
+Only then does it choose the best feasible audited baseline or same-bound
+alternate start and refit branches/gamma with epsilon1e-8. The original results
+remain intact. Preparation, execution and handoff scripts and resource plan
+are pinned; the waiting process was verified by PID/create time/command.
+
+Two four-thread workers,12GiB aggregate RAM,zero swap,4GiB output and0.5–24h
+after the prerequisite audit are budgeted. Refinement likelihood readback and
+ancestral posterior propagation remain downstream; neither global convergence
+nor final ancestral sequences is claimed. Other analyses continue independently.
