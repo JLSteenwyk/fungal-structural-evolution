@@ -1093,3 +1093,20 @@ proving a global optimum or model adequacy. The v2 ancestral probability
 producer has begun writing results; complete posterior validation and
 site-by-site comparisons remain pending. The completed audit is recorded in
 `metadata/ancestral_whole_refinement_audit_completed_20260927.json`.
+
+Full alternate-start probability propagation is now running for all 468
+audited whole-protein fits, including poorer starts. It retains 1,404
+identifiable ancestor/model combinations and all 20 amino-acid probabilities.
+This permits assessment of probability sensitivity across optimizer outcomes
+beyond the original-versus-refined comparison. It preserves all proteins,
+alignment columns, models, starts and bounds; optimizer outcomes are not
+independent biological replicates or weights for ancestral ensembles.
+
+The producer and independent full-column posterior auditor use separate
+`alternate_whole_ancestor` and `alternate_whole_posterior_audit` plan/launch
+records. Producer allowance: one CPU, 8 GiB RAM, no swap, 6 GiB output and
+1–24 hours. Audit allowance: one CPU, 8 GiB RAM, no swap, 1 GiB output and
+1–24 hours after production. No paid resources or GPU predictions are used.
+Production has started and the auditor is waiting; full completion and
+optimization comparisons incorporating these alternate probabilities remain
+pending. The existing refined comparison runs unchanged.

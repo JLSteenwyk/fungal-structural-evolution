@@ -1,0 +1,37 @@
+{
+  "producer": {
+    "unit": "fungal-alternate-whole-ancestors-20260927.service",
+    "pid": 641700,
+    "created": 1790556772.55,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/infer_alternate_whole_ancestors.py"
+    ]
+  },
+  "producer_plan": "metadata/alternate_whole_ancestor_plan_20260927.json",
+  "source": "results/ancestral/alternate-whole-ancestors-20260927-v1",
+  "output": "results/ancestral/alternate-whole-posterior-audit-20260927-v1",
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-07,
+  "pins": {
+    "metadata/alternate_whole_ancestor_plan_20260927.json": "cf19d1c22b034176e88f63671d27fc85f6e4a5b8a5adaed79f92b6a5763503e4",
+    "metadata/alternate_whole_ancestor_launch_20260927.json": "244e2ae821a0ad044e09197cb10d0d96cf3ba3bcd5329534510e4ba4f0f35869",
+    "scripts/audit_alternate_whole_posteriors.py": "53d16d637d2682665770beb7f4cbb9bdf7b96bbfe00abc21eb70cd7d1147eee3",
+    "scripts/infer_alternate_whole_ancestors.py": "02d8b63d711a78945db64a5fe221bad768f51749ac1d6fdcb85a6bd50a2fdec6",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      1,
+      24
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Full independent probability and site-likelihood readback of all468 alternate fits and1404 ancestor vertices. Numerical validation only; not convergence or biological qualification."
+}
