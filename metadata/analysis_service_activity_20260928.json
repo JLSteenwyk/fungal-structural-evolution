@@ -1,0 +1,1336 @@
+{
+  "status": "live_process_identity_and_activity_snapshot",
+  "observed_at_utc": "2026-09-28T16:48:00Z",
+  "interval_seconds": 30.252691984176636,
+  "services": [
+    {
+      "unit": "fungal-background-alignment-readback-20260927.service",
+      "current_state": {
+        "MainPID": "2041110",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 2041110,
+          "created": 1790501220.74,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_alignments.py",
+            "--plan",
+            "metadata/background_alignment_readback_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-background-alignments-20260927.service",
+      "current_state": {
+        "MainPID": "2038561",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 2038561,
+          "created": 1790501114.26,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_background_alignments.py",
+            "--plan",
+            "metadata/background_alignment_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.08000000000004093
+        }
+      ],
+      "previous_processes_no_longer_matching": [
+        1279453,
+        1279455
+      ],
+      "cpu_delta_seconds_for_surviving_processes": 0.08000000000004093
+    },
+    {
+      "unit": "fungal-baliphy-candidate-length-diagnostics-20260927.service",
+      "current_state": {
+        "MainPID": "783288",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 783288,
+          "created": 1790567318.4,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_ancestral_length_diagnostics.py",
+            "--plan",
+            "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.00999999999999801
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.00999999999999801
+    },
+    {
+      "unit": "fungal-baliphy-independent-chains-20260927.service",
+      "current_state": {
+        "MainPID": "771240",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 771240,
+          "created": 1790566377.27,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_independent_baliphy_chains.py",
+            "--plan",
+            "metadata/baliphy_independent_chain_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.7800000000002001
+        },
+        {
+          "pid": 771279,
+          "created": 1790566377.76,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262597",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000001455
+        },
+        {
+          "pid": 771280,
+          "created": 1790566377.76,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262069",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.660000000003492
+        },
+        {
+          "pid": 1006300,
+          "created": 1790589695.21,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262073",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.67000000000189
+        },
+        {
+          "pid": 1006320,
+          "created": 1790589699.62,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262601",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000001455
+        },
+        {
+          "pid": 1269091,
+          "created": 1790613443.93,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261029",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/0164982d073e0b1f16d3d0714e9ce74f91fee5bd77bf4a3dae016e0042eed169-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.65000000000009
+        },
+        {
+          "pid": 1270703,
+          "created": 1790613550.3,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262421",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/e350b566a9c0c9bcb6e81785d2994a59f4de291eb47b77ce575b6a8d659802f3-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.64999999999992
+        },
+        {
+          "pid": 1272425,
+          "created": 1790613673.28,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261953",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/9b92fbbb126a2db7b15e7c72df7eb6447db40116420a41c9b2197294eac105e0-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.659999999999968
+        },
+        {
+          "pid": 1272892,
+          "created": 1790613697.34,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261293",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/2c1005bd7e13d6ce2cb4b0429ac1ae47856c3153b120052d98b537113689ded9-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.660000000000025
+        },
+        {
+          "pid": 1273347,
+          "created": 1790613714.48,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262253",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/c653794f534e750fa56c91b8f025916402a8bbbefd347468659437cf2c7493e8-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.659999999999968
+        },
+        {
+          "pid": 1274002,
+          "created": 1790613743.63,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261053",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/04c2aacbb49767976d967570af07cb2ee295698c4842a3871e9fa2b43c1c423e-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000000034
+        },
+        {
+          "pid": 1276225,
+          "created": 1790613863.02,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262325",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/ce6ca2c146f608cafe589bc9a297c77ed7948caac1b006eb031ede7975ee1401-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000000006
+        },
+        {
+          "pid": 1276424,
+          "created": 1790613878.39,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261125",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/0ef770b4b439d83efd7e0aaa89c47699096b9c338c35538f89a59e49bc670a07-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.649999999999977
+        },
+        {
+          "pid": 1278089,
+          "created": 1790613977.15,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261533",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/50f9950a28cb22ce4c5d15cd5a1e0e1230fb66df0ea3969184ab6a7f591f4509-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000000006
+        },
+        {
+          "pid": 1278104,
+          "created": 1790613978.45,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261593",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/5f2cff54944534f753c85f2b8b0fdc85ba08428ca525eb0bdba8445af2ff0484-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.650000000000006
+        },
+        {
+          "pid": 1279145,
+          "created": 1790614037.2,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262013",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/a9265d8d645657726b597a21b1547ede89489a482ef1171723f846e8321c6469-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.64
+        },
+        {
+          "pid": 1279148,
+          "created": 1790614037.5,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261269",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/2814b59e28fc6c7f26d3af5cab0feb476157c7f8c844b68ff1d7be61cfcba4c9-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "cpu_delta_seconds": 31.64
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 507.22000000000844
+    },
+    {
+      "unit": "fungal-baliphy-independent-diagnostics-20260927.service",
+      "current_state": {
+        "MainPID": "775320",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 775320,
+          "created": 1790566705.09,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_independent_chain_diagnostics.py",
+            "--plan",
+            "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.2300000000000182
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.2300000000000182
+    },
+    {
+      "unit": "fungal-fastml-optimizer-refinement-20260928-v3.service",
+      "current_state": {
+        "MainPID": "1264857",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1264857,
+          "created": 1790613198.71,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_fastml_optimizer_refinement_v2.py",
+            "--plan",
+            "metadata/fastml_optimizer_refinement_plan_20260928_v3.json"
+          ],
+          "cpu_delta_seconds": 0.3100000000000023
+        },
+        {
+          "pid": 1266997,
+          "created": 1790613295.12,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_gap__precision_parameters.txt"
+          ],
+          "cpu_delta_seconds": 31.559999999999945
+        },
+        {
+          "pid": 1267002,
+          "created": 1790613295.35,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_gap__refreshed_parameters.txt"
+          ],
+          "cpu_delta_seconds": 31.550000000000068
+        },
+        {
+          "pid": 1267006,
+          "created": 1790613295.39,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_gap__low_ratio.txt"
+          ],
+          "cpu_delta_seconds": 31.529999999999973
+        },
+        {
+          "pid": 1267010,
+          "created": 1790613295.45,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_gap__balanced.txt"
+          ],
+          "cpu_delta_seconds": 31.550000000000068
+        },
+        {
+          "pid": 1267014,
+          "created": 1790613295.48,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_gap__high_ratio.txt"
+          ],
+          "cpu_delta_seconds": 31.549999999999955
+        },
+        {
+          "pid": 1267843,
+          "created": 1790613351.56,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_unknown__low_ratio.txt"
+          ],
+          "cpu_delta_seconds": 31.559999999999945
+        },
+        {
+          "pid": 1271962,
+          "created": 1790613644.15,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_unknown__balanced.txt"
+          ],
+          "cpu_delta_seconds": 31.55000000000001
+        },
+        {
+          "pid": 1272353,
+          "created": 1790613670.76,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/fastml-precision-cache-20260928-v1/precision-cache-refresh/programs/gainLoss/gainLoss",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/fastml-optimizer-refinement-inputs-20260928-v3/OG0000972-alignment-famsa-terminal_unknown__high_ratio.txt"
+          ],
+          "cpu_delta_seconds": 31.549999999999955
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 252.70999999999992
+    },
+    {
+      "unit": "fungal-full-anchored-states-20260928-v2.service",
+      "current_state": {
+        "MainPID": "841463",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 841463,
+          "created": 1790572064.21,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_ancestral_state_traces_v2.py",
+            "--plan",
+            "metadata/baliphy_full_anchored_states_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.18000000000000682
+        }
+      ],
+      "previous_processes_no_longer_matching": [
+        1279327
+      ],
+      "cpu_delta_seconds_for_surviving_processes": 0.18000000000000682
+    },
+    {
+      "unit": "fungal-full-categorical-diagnostics-20260928.service",
+      "current_state": {
+        "MainPID": "1210229",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1210229,
+          "created": 1790611279.29,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_ancestral_categorical_diagnostics.py",
+            "--plan",
+            "metadata/ancestral_categorical_queue_plan_20260928.json"
+          ],
+          "cpu_delta_seconds": 0.08000000000000007
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.08000000000000007
+    },
+    {
+      "unit": "fungal-full-fastml-refinement-audit-20260928-v2.service",
+      "current_state": {
+        "MainPID": "1265415",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1265415,
+          "created": 1790613222.24,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/audit_full_fastml_refinement.py",
+            "--plan",
+            "metadata/full_fastml_refinement_audit_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-full-polynomial-ml-20260927.service",
+      "current_state": {
+        "MainPID": "338483",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 338483,
+          "created": 1790533714.57,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_full_polynomial_ml.py",
+            "--plan",
+            "metadata/full_polynomial_ml_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.04999999999998295
+        },
+        {
+          "pid": 338685,
+          "created": 1790533729.74,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.resource_tracker import main;main(9)"
+          ],
+          "cpu_delta_seconds": 0.0
+        },
+        {
+          "pid": 338696,
+          "created": 1790533731.91,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=14)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.339999999996508
+        },
+        {
+          "pid": 338699,
+          "created": 1790533731.92,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=16)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.34000000001106
+        },
+        {
+          "pid": 338700,
+          "created": 1790533731.93,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=18)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.35000000000582
+        },
+        {
+          "pid": 338701,
+          "created": 1790533731.93,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=20)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.34000000001106
+        },
+        {
+          "pid": 338702,
+          "created": 1790533731.93,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=22)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.339999999981956
+        },
+        {
+          "pid": 338703,
+          "created": 1790533731.93,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=24)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.35000000000582
+        },
+        {
+          "pid": 338704,
+          "created": 1790533731.94,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=26)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.360000000000582
+        },
+        {
+          "pid": 338705,
+          "created": 1790533731.95,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=28)",
+            "--multiprocessing-fork"
+          ],
+          "cpu_delta_seconds": 31.34999999999127
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 250.82000000000406
+    },
+    {
+      "unit": "fungal-full-polynomial-ml-output-audit-20260927.service",
+      "current_state": {
+        "MainPID": "338486",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 338486,
+          "created": 1790533714.62,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/audit_full_polynomial_ml_outputs.py",
+            "--plan",
+            "metadata/full_polynomial_ml_plan_20260927.json",
+            "--launch",
+            "metadata/full_polynomial_ml_launch_20260927.json",
+            "--output",
+            "metadata/full_polynomial_ml_output_audit_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-hybrid-excluded-guide-audits-20260927.service",
+      "current_state": {
+        "MainPID": "2903220",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 2903220,
+          "created": 1790514001.58,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_hybrid_excluded_guide_audits.py",
+            "--plan",
+            "metadata/hybrid_excluded_guide_audit_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-hybrid-excluded-guides-20260927.service",
+      "current_state": {
+        "MainPID": "2683449",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 2683449,
+          "created": 1790512421.6,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_hybrid_excluded_species_guides.py",
+            "--plan",
+            "metadata/hybrid_excluded_species_guide_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        },
+        {
+          "pid": 2683462,
+          "created": 1790512421.87,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-matrices-20260927-v1/profile/matrix.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "4",
+            "--mem",
+            "32G",
+            "--seed",
+            "20260927",
+            "--keep-ident",
+            "--alrt",
+            "1000",
+            "-B",
+            "1000",
+            "--bnni",
+            "--boot-trees",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/hybrid-excluded-guides-20260927-v1/profile/guide"
+          ],
+          "cpu_delta_seconds": 124.63999999995576
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 124.63999999995576
+    },
+    {
+      "unit": "fungal-local-mg94-unconstrained-multistart-audit-20260927.service",
+      "current_state": {
+        "MainPID": "141132",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 141132,
+          "created": 1790523876.54,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/audit_local_mg94_multistarts.py",
+            "--plan",
+            "metadata/local_mg94_unconstrained_multistart_plan_20260927.json",
+            "--launch",
+            "metadata/local_mg94_unconstrained_multistart_launch_20260927.json",
+            "--output",
+            "results/cds/local-mg94-unconstrained-multistart-audit-20260927-v1"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-local-mg94-unconstrained-multistarts-20260927.service",
+      "current_state": {
+        "MainPID": "138614",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 138614,
+          "created": 1790523756.39,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_local_mg94_multistarts.py",
+            "--plan",
+            "metadata/local_mg94_unconstrained_multistart_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.46999999999999886
+        },
+        {
+          "pid": 1166505,
+          "created": 1790607805.51,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+            "CPU=1",
+            "ENV=RANDOM_SEED=123;",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-unconstrained-multistarts-20260927-v1/Malassezia__649304at2759__code1/factor_0p25/optimize.bf"
+          ],
+          "cpu_delta_seconds": 31.06999999999971
+        },
+        {
+          "pid": 1234229,
+          "created": 1790612009.02,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+            "CPU=1",
+            "ENV=RANDOM_SEED=123;",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-unconstrained-multistarts-20260927-v1/Malassezia__730114at2759__code1/factor_10/optimize.bf"
+          ],
+          "cpu_delta_seconds": 31.0799999999997
+        },
+        {
+          "pid": 1273365,
+          "created": 1790613715.57,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/hyphy-2.5.101-install/bin/hyphy",
+            "CPU=1",
+            "ENV=RANDOM_SEED=123;",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/cds/local-mg94-unconstrained-multistarts-20260927-v1/Malassezia__776280at2759__code1/factor_10/optimize.bf"
+          ],
+          "cpu_delta_seconds": 31.060000000000002
+        }
+      ],
+      "previous_processes_no_longer_matching": [
+        1279550
+      ],
+      "cpu_delta_seconds_for_surviving_processes": 93.67999999999941
+    },
+    {
+      "unit": "fungal-mafft-marker-audit-resumed-20260928.service",
+      "current_state": {
+        "MainPID": "1276142",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1276142,
+          "created": 1790613858.92,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_mafft_marker_tree_audit.py",
+            "--plan",
+            "metadata/mafft_marker_tree_audit_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-mafft-marker-trees-resumed-20260928.service",
+      "current_state": {
+        "MainPID": "1275495",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1275495,
+          "created": 1790613821.9,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_mafft_marker_gene_trees.py",
+            "--plan",
+            "metadata/mafft_marker_tree_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        },
+        {
+          "pid": 1275654,
+          "created": 1790613823.95,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/4999134at2759/input.faa",
+            "-st",
+            "AA",
+            "-m",
+            "MFP",
+            "-mset",
+            "LG,WAG,JTT",
+            "-mfreq",
+            "F",
+            "-mrate",
+            "G",
+            "--alrt",
+            "1000",
+            "-T",
+            "2",
+            "--mem",
+            "4G",
+            "--seed",
+            "271981652",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/4999134at2759/tree"
+          ],
+          "cpu_delta_seconds": 61.99000000000001
+        },
+        {
+          "pid": 1275658,
+          "created": 1790613824.06,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000362at2759/input.faa",
+            "-st",
+            "AA",
+            "-m",
+            "MFP",
+            "-mset",
+            "LG,WAG,JTT",
+            "-mfreq",
+            "F",
+            "-mrate",
+            "G",
+            "--alrt",
+            "1000",
+            "-T",
+            "2",
+            "--mem",
+            "4G",
+            "--seed",
+            "1682298232",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000362at2759/tree"
+          ],
+          "cpu_delta_seconds": 61.95999999999998
+        },
+        {
+          "pid": 1275659,
+          "created": 1790613824.06,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000152at2759/input.faa",
+            "-st",
+            "AA",
+            "-m",
+            "MFP",
+            "-mset",
+            "LG,WAG,JTT",
+            "-mfreq",
+            "F",
+            "-mrate",
+            "G",
+            "--alrt",
+            "1000",
+            "-T",
+            "2",
+            "--mem",
+            "4G",
+            "--seed",
+            "773278066",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000152at2759/tree"
+          ],
+          "cpu_delta_seconds": 61.94999999999999
+        },
+        {
+          "pid": 1275662,
+          "created": 1790613824.24,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000476at2759/input.faa",
+            "-st",
+            "AA",
+            "-m",
+            "MFP",
+            "-mset",
+            "LG,WAG,JTT",
+            "-mfreq",
+            "F",
+            "-mrate",
+            "G",
+            "--alrt",
+            "1000",
+            "-T",
+            "2",
+            "--mem",
+            "4G",
+            "--seed",
+            "790271168",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-marker-gene-trees-20260927-v1/5000476at2759/tree"
+          ],
+          "cpu_delta_seconds": 61.95999999999992
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 247.8599999999999
+    },
+    {
+      "unit": "fungal-marker-topology-resumed-20260928.service",
+      "current_state": {
+        "MainPID": "1276146",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1276146,
+          "created": 1790613859.05,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_marker_alignment_topology_comparison.py",
+            "--plan",
+            "metadata/marker_alignment_topology_handoff_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-matched-refinement-readback-20260928.service",
+      "current_state": {
+        "MainPID": "1258289",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1258289,
+          "created": 1790612826.49,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/audit_matched_reml_analytic_refinement.py",
+            "--plan",
+            "metadata/matched_refinement_readback_plan_20260928.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-matched-reml-analytic-refinement-20260928.service",
+      "current_state": {
+        "MainPID": "1199550",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1199550,
+          "created": 1790610564.84,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_matched_reml_analytic_refinement.py",
+            "--plan",
+            "metadata/matched_reml_analytic_refinement_plan_20260928.json"
+          ],
+          "cpu_delta_seconds": 30.860000000000127
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 30.860000000000127
+    },
+    {
+      "unit": "fungal-neocallimastix-guide-audit-20260927.service",
+      "current_state": {
+        "MainPID": "455550",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 455550,
+          "created": 1790543405.36,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/audit_neocallimastix_guides.py",
+            "--plan",
+            "metadata/neocallimastix_guide_audit_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-neocallimastix-guides-20260927-v2.service",
+      "current_state": {
+        "MainPID": "440407",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 440407,
+          "created": 1790542102.67,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_neocallimastix_sensitivity_trees.py",
+            "--inputs",
+            "results/phylogeny/neocallimastix-identity-inputs-20260927-v1",
+            "--output",
+            "results/phylogeny/neocallimastix-identity-guides-20260927-v1"
+          ],
+          "cpu_delta_seconds": 0.0
+        },
+        {
+          "pid": 440479,
+          "created": 1790542103.35,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/neocallimastix-identity-inputs-20260927-v1/profile-retain_F2767002.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "8",
+            "--mem",
+            "32G",
+            "--seed",
+            "20260913",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/neocallimastix-identity-guides-20260927-v1/profile-retain_F2767002/guide"
+          ],
+          "cpu_delta_seconds": 245.9200000000419
+        },
+        {
+          "pid": 1162494,
+          "created": 1790607375.49,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+            "-s",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/neocallimastix-identity-inputs-20260927-v1/profile-retain_F3108450.faa",
+            "-st",
+            "AA",
+            "-m",
+            "LG+F+G4",
+            "-T",
+            "8",
+            "--mem",
+            "32G",
+            "--seed",
+            "20260913",
+            "--prefix",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/neocallimastix-identity-guides-20260927-v1/profile-retain_F3108450/guide"
+          ],
+          "cpu_delta_seconds": 243.9399999999987
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 489.8600000000406
+    },
+    {
+      "unit": "fungal-pmsf-fourth-readback-20260928-v2.service",
+      "current_state": {
+        "MainPID": "1278239",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1278239,
+          "created": 1790613994.63,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/advance_fourth_pmsf_readback.py",
+            "--plan",
+            "metadata/pmsf_fourth_readback_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-pmsf-memory-recovery-20260928.service",
+      "current_state": {
+        "MainPID": "1277989",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 1277989,
+          "created": 1790613974.93,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/wait_for_pmsf_recovery_memory.py",
+            "--plan",
+            "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json"
+          ],
+          "cpu_delta_seconds": 0.10000000000000003
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.10000000000000003
+    },
+    {
+      "unit": "fungal-polynomial-ml-comparisons-20260927.service",
+      "current_state": {
+        "MainPID": "341048",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 341048,
+          "created": 1790533909.85,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/export_polynomial_ml_comparisons.py",
+            "--plan",
+            "metadata/polynomial_ml_comparison_plan_20260927.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 0.0
+    },
+    {
+      "unit": "fungal-recovery-20260925-structure-retrieval.service",
+      "current_state": {
+        "MainPID": "863281",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active",
+        "SubState": "running"
+      },
+      "verified_same_processes": [
+        {
+          "pid": 863281,
+          "created": 1790353565.67,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/recover_structure_retrieval.py",
+            "--plan",
+            "metadata/recovery_20260925_structure_retrieval_plan.json"
+          ],
+          "cpu_delta_seconds": 0.0
+        },
+        {
+          "pid": 866035,
+          "created": 1790353567.31,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/retrieve_matched_models.py"
+          ],
+          "cpu_delta_seconds": 9.919999999983702
+        }
+      ],
+      "previous_processes_no_longer_matching": [],
+      "cpu_delta_seconds_for_surviving_processes": 9.919999999983702
+    }
+  ],
+  "scope": "Runtime evidence only. Zero CPU can mean an expected dependency wait; process turnover is not automatic failure or restart authorization. Completion requires final artifacts and audits."
+}

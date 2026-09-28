@@ -9614,3 +9614,43 @@ posterior qualification remain pending. Existing diagnostic batches were not
 cancelled or replaced. Future distinct priors/models/seeds/chains cannot be
 merged, and repeated labels cannot count as independent evidence. Verified
 receipt: `metadata/baliphy_input_equivalence_completed_20260927.json`.
+
+
+### 2026-09-28 12:48 EDT: runtime recovery and analysis checkpoint
+
+Previous goal turns made concrete progress: the indel sensitivity figure and
+methods were checked and committed; interrupted marker inference was resumed;
+the fourth PMSF recovery was queued behind its existing memory prerequisite.
+
+A 30.25-second activity observation verified process PID, creation time and
+command across 26 running services. The snapshot is recorded in
+`metadata/analysis_service_activity_20260928.json`. Surviving native workers
+accumulated CPU time in the ancestral chains, FastML refinement, polynomial ML,
+MG94 fits, marker trees, hybrid-excluded guides and Neocallimastix guides.
+Background alignments and anchored-state extraction had child turnover, with
+controllers remaining live; fresh background completion logs confirm progress.
+No restart was triggered merely by a child finishing or a quiet waiting auditor.
+
+Latest observed execution counters (not final audited completion):
+
+| Stage | Observed accounting | Remaining requirement |
+|---|---:|---|
+| Background directed alignments | 223,424 / 285,800 | Finish grid, full output readback and downstream matched comparisons |
+| Polynomial ML | 51,365 / 432,120 | Complete all specifications; 430 current dispositions require optimization review |
+| Matched REML analytic refinement | 256 / 658 | Finish targeted refinements, readback and full setting-map integration |
+| FastML five-start refinement | 422 / 780 | Finish all starts and compare fitted solutions; live workers were CPU-active despite no recent completion line |
+| MG94 unconstrained multistart jobs | 880 / 1,632 | Complete fits and audit before selection interpretation |
+| Independent ancestral chains | 177 / 1,620 | Complete independent-chain sets; scalar, length and categorical mixing qualification |
+
+The ancestral counters indicate saved-output checks, not converged posterior
+ensembles. No final ancestral structures follow from these counts. The
+species-tree recovery waiter remains resource-gated, with a 750 GiB available
+memory prerequisite and its full downstream audit queued. See
+`docs/phylogeny-interruption-recovery-20260928.md` for preserved checkpoints,
+new identities and recovery plans. GPU inference remains paused.
+
+The eight evolutionary aims remain open. Numerical agreement alone does not
+establish model adequacy, inferential calibration, independent ecological
+replication or biological mechanisms. Final sampling identity/QC resolution,
+missing structural coverage, cross-predictor controls and complete deliverables
+remain part of the original project scope.
