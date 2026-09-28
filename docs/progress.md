@@ -9724,3 +9724,12 @@ does not establish universal coverage or complete the biological project.
   catalog remain required. Download counts are not validated atlas coverage;
   neither this refresh nor the old catalog establishes confidence-qualified
   structural comparisons or complete structure inference.
+
+- September 28: queued the full refreshed-catalog readback. The independent
+  FASTA parser and independently sorted model selection will reconstruct every
+  protein/model link and taxon coverage row. The v2 readback preserves the
+  previous validation logic while requiring the producer's matching process
+  identity during execution and terminal success before reading its receipt.
+  Both catalog and readback jobs are active; readback is waiting. It uses one
+  CPU, 32 GiB maximum memory, no swap and low I/O priority. Record comparison
+  with the September22 catalog remains downstream of this validation.

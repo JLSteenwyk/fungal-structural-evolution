@@ -1,0 +1,24 @@
+{
+  "producer_plan": "metadata/whole_proteome_structure_catalog_plan_20260928.json",
+  "producer_launch": "metadata/whole_proteome_structure_catalog_launch_20260928.json",
+  "output": "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 0.01,
+    "runtime_planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Full 5,815,847 protein rescan, independent model ranking and link comparison; waiting excluded."
+  },
+  "pins": {
+    "metadata/whole_proteome_structure_catalog_plan_20260928.json": "5d088d91cd7a691c0ab2a9ae6b8491bc0046af8bbd511af702d9007d7dd604b6",
+    "metadata/whole_proteome_structure_catalog_launch_20260928.json": "e61b51892a083f63fae95f396c5aad22b70e300a4a9c5146f9ecb0d9e02a9d9a",
+    "scripts/readback_whole_proteome_catalog_v2.py": "eb98638bb4f17d93fdaf8502befb51b9024a81e577a6215b48b2af67a6485368"
+  }
+}
