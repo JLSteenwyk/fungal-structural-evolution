@@ -658,3 +658,30 @@ The verified waiting service is
 no swap,0.1GiB output allowance and0.1–4active hours planned after the wait.
 Plan and launch records use `metadata/matched_kr_simulation_audit_`.
 No audit-completion or coverage result is claimed while production is active.
+
+## Selected full-grid estimate interface checked
+
+`scripts/evaluate_selected_matched_intervals.py` connects cached model inputs
+to the selected-estimate columns produced by the refinement overlay. It uses
+the selected variance ratios and scale, directly replays the selected
+likelihood/coefficient estimates, and checks the selected conditional intercept
+variance. Original estimates are not substituted for refined ones. The caller
+must bind the cache, export and selected source hashes before invoking it.
+
+The evaluator preserves selected-review flags without issuing intervals for
+unresolved fits. Other failures raise for the future controller to retain as
+explicit dispositions. Active coefficients receive marginal candidate intervals
+in original units via scaled contrasts; omitted constant covariates remain
+null with their own status. Numerical results retain the source hash, selection
+label, information rank/eigenvalues and evaluation method. They remain marked
+as pending coverage and inferential validation.
+
+`scripts/check_selected_matched_intervals.py` passed five existing148-record
+tree cases against previously saved information matrices, checking transformed
+estimates, both interval endpoints and invariant degrees of freedom. A changed
+selected coefficient was rejected. An unresolved-fit flag was retained, and a
+separate fixture verified two omitted coefficients remain null. Results and
+source bindings are in `metadata/selected_matched_interval_checks_20260928.json`.
+These checks exercise the selected-row schema using original numerical fits;
+the complete refined overlay and cache replay remain prerequisites for a
+full-grid launch. No full-grid candidate interval job has been launched yet.

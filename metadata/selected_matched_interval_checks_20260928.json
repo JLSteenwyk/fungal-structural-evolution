@@ -1,0 +1,36 @@
+{
+  "status": "passed_selected_estimate_interval_mapping_checks",
+  "real_tree_cases": 5,
+  "original_unit_checks": true,
+  "review_flag_retained": true,
+  "changed_selected_coefficient_rejected": true,
+  "omitted_covariates_retained_as_null": 2,
+  "source_files": {
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/inputs/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd.npz": "99fa4c153f61f796c70ebdcd9e7ab09a0aed45b1e02a20320747c930aba857aa",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/mafft_guide.npz": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fits/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd/mafft_guide.json": "39e44663e54a0d3fbc4b513bd3e75c3976e40bb4c13b64f48bd2b806e8e3d580",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_mafft_profile.npz": "0cef79bda8310a769e21985eeb9799e49a26923e8ec461f2f52374dcef3def03",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fits/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd/pmsf_mafft_profile.json": "138eb3974b2ec87c613a453262bd7a85c5850f10720871a7de8b7636b8183fb6",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_profile_mafft.npz": "317680ad882986776f6be49adb445a77d2f1a7bd599e9c0ed0d72aa3522fc17b",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fits/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd/pmsf_profile_mafft.json": "6f09526fdf6cb801d63d28a4543ffd049046435b19c118c693389fa87fe52df2",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_profile_profile.npz": "03bff3e7120bef6ba53b397071220fc0dcd4d19b0795269c234cf4e991750007",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fits/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd/pmsf_profile_profile.json": "a740c230ba9fa24b8537221a3cff5365054bbdce595fa1288bf9025892555d8b",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/profile_guide.npz": "2f89ee747c312612f0a5882012b81b4b6194cc54fc9d748e3d15f414b2566868",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fits/12/125e3b989f0a76edc65e3ea5527a321a9b0c49af3355c17e31ffb7e5903982cd/profile_guide.json": "3bd565a83d32e1b15b0f3c6290fb63f3bb4de490f092b5f1bce4c7a228e193f3"
+  },
+  "source_export_sha256": "003cedd2aa401be60bf9704c210f169ec4f385b3552c1022bbf24d32a9c5ce05",
+  "reference_receipt_sha256": "f093ff9f44bd4029a8588661972114f7e72cda640048cf9e2cb6ce1c3478b98b",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_selected_matched_intervals.py": "47e4e0bc065784181fb471fab758179b51a092db25826b969f33e6649fb6b4be",
+    "scripts/evaluate_selected_matched_intervals.py": "5fa05f19b3d8f2f93c50933b556dddf54b2c058c522741e03a5310a8b316ea82",
+    "scripts/integrate_matched_refinements.py": "84e6747df6d1a23ad166951f79893b0ca3a3873fe783ed759c21ffe69e0d6973",
+    "scripts/matched_kr_scalar.py": "2d875d8a72acb850f93484ae0a88018fb03b6320fc1193f616ff4bf5048effa1",
+    "scripts/matched_covariance_information_fast.py": "77fc9a45884b633988d44621a046b5f6ee40675ce5c38339a9a2ade4d95af325",
+    "scripts/matched_kr_covariance.py": "994b68c901ddb1e23405c3bf23ef369db38a4af3a0fb89a6f89f266162ca000d"
+  },
+  "artifacts": {
+    "omission_fixture.json": "6f859af93c6c162d907ee95a9ce5ec25f951a34507de4b3c108fa09192e6c033",
+    "real_input_results.json": "33a68c81da1d9fa1e4cfe8685ba7410e3c33b36cc620fd8dfa254e643d837183"
+  },
+  "scope": "Selected-row interface checked on original numerical fits plus omitted-column fixture. Refined full-grid overlay not yet complete; no full-grid interval launch or calibrated inference."
+}
