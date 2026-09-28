@@ -279,3 +279,35 @@ or delimit species. Every concentration total and top-1/3/5/10 fraction was
 independently reproduced with pandas grouping. Reproduction:
 `scripts/trace_serendipita_marker_differences.py`. Evidence:
 `metadata/serendipita_marker_provenance_completed_20260927.json`.
+
+
+### Exact residue-pair correspondence across alignment methods
+
+For all 125 markers and ten Serendipita pairs, full Stockholm sequences were
+traced through profile match states and matrix masks, and MAFFT positions were
+traced through its matrix mask. Ungapped sequences match the extracted inputs;
+every retained five-taxon tuple maps back to the original protein residues.
+All 49,330 tuples are retained. The 3,750 marker/pair/category summaries exactly
+reproduce prior comparable-site and difference totals when shared and
+method-specific categories are added.
+
+For marker 5004391at2759, strains 405/411 have 615 identical residue-pair
+correspondences across methods, with one amino-acid difference. The other
+215 profile pairs contain 186 differences; the other 211 MAFFT pairs contain
+eight. This locates the discrepancy in method-specific correspondences rather
+than different input proteins. It does not establish which alignment is correct.
+
+A full 2,500-row endpoint review further separates different pairing from
+endpoint coverage. Of the 215 profile-specific pairs, 52 have both original
+residues retained by MAFFT but paired differently; 88 retain only the first
+endpoint, 45 only the second and 30 neither. Of the 211 MAFFT-specific pairs,
+91 retain both endpoints in the profile policy but pair them differently,
+49 retain only the first, six only the second and 65 neither. Endpoint absence
+can arise from masking, profile-state selection or another taxon's coverage;
+it is not by itself an insertion/deletion or alignment-error diagnosis.
+
+Reproduction: `scripts/compare_serendipita_residue_correspondence.py` and
+`scripts/classify_serendipita_pairing_changes.py`. Closures:
+`metadata/serendipita_residue_correspondence_completed_20260927.json` and
+`metadata/serendipita_pairing_changes_completed_20260927.json`.
+Original matrices, markers and active inference remain unchanged.
