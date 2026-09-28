@@ -156,3 +156,21 @@ Two-model coverage is 30.30% for profile and 30.29% for MAFFT. Both contain
 does not imply two independent structural predictions. Readback relies on
 the earlier audited native-event selection and sequence catalog and does not
 repeat coordinate or biological-event validation.
+
+All 1,054 taxon/guide membership rows have also been updated in
+`results/orthology/duplication-expanded-membership-20260928-v1/`.
+Every original event denominator and cohort label is preserved; the excluded
+*S. jurei* row retains its blank coverage fraction. Streaming event counts were
+checked against SQL aggregation, and every serialized output row was read back.
+Both guides gain 57 taxa with at least one two-model event: 32 Ascomycota,
+12 Basidiomycota, five Mortierellomycota, five Glomeromycota, one Olpidiomycota,
+one Mucoromycota and one Amoebozoa outgroup. These counts describe newly
+available candidates, not independent ecological transitions or qualified
+structural-divergence evidence.
+
+Reproduce with `scripts/summarize_expanded_duplication_taxa.py --readback
+results/orthology/duplication-expanded-coverage-readback-20260928-v1.json
+--membership results/orthology/duplication-coverage-membership-20260926-v1
+--output <fresh-directory>`. The bounded job used one CPU, 2 GiB RAM and no
+swap or GPU, finishing successfully in about 10 CPU seconds. Source/output
+checksums are recorded in `metadata/duplication_expanded_taxa_completed_20260928.json`.

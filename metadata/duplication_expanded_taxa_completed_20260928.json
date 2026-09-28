@@ -1,0 +1,35 @@
+{
+  "status": "complete_duplication_coverage_reconciliation_membership",
+  "source_sha256": {
+    "results/orthology/duplication-sampling-coverage-20260926-v1/terminal_event_coverage.tsv.gz": "2a3a6f963610d85941abb827a988fe4cf2d0d4ab02f69a745658726d872526e8",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/protein_model_links.tsv": "a3ca5564d25f31cc701e9959f4ed39682231c59cbe61d8b16809cf1938ff2e78",
+    "results/orthology/duplication-sampling-coverage-20260926-v1/receipt.json": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "metadata/duplication_sampling_coverage_readback_completed_20260926.json": "f9494fa60e9120eacd68a9563fd67854491c25bde59280aba4841d71eb8d7d0a",
+    "scripts/refresh_duplication_model_coverage.py": "78b93913cccb1531131e67302b58089658fa0c687b1b9b199728c6d7b827615e",
+    "metadata/duplication_expanded_coverage_plan_20260928.json": "e5f3737f0bb108b08ee78e621fb285d5b81701cee6e48b88ac19f4c75faa9404",
+    "results/orthology/duplication-expanded-coverage-20260928-v1/receipt.json": "21c432958e310e7c61b52e563e2d2aa447225d3e41f629488f10713a97ea292a",
+    "results/orthology/duplication-expanded-coverage-20260928-v1/event_coverage.tsv.gz": "166732c77f1f9d15e3cbbbcb7e9493065b8ad8d2ba3d50bb4bb097063afe27b1",
+    "results/orthology/duplication-sampling-coverage-20260926-v1/taxon_coverage.tsv": "d3e02cd3210f4ecd6409ce6571d9416db93ebb50b4bca227ccb92c73e1500c64",
+    "results/orthology/duplication-sampling-aggregate-readback-20260926-v1.json": "12a659c07193c373932364e4bf1cb0959d7b4b7b4fa51db30569c9be5227526d",
+    "metadata/sampling_exclusions.json": "da889c7274e44087d2f69048d95cafd389429114ed9e8c8595cfc866e73e0435",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/duplication-expanded-coverage-readback-20260928-v1.json": "f9e49b8bc404a9afd76dcde7467625123f4adc4b6704fc442c27328aab33d82d",
+    "results/orthology/duplication-coverage-membership-20260926-v1/receipt.json": "231aa0f068d0109324e46d49c833416df00efd3895aefebd709fb3b4c15ab544",
+    "results/orthology/duplication-coverage-membership-20260926-v1/taxon_coverage_with_membership.tsv": "a380def855261560273f79bd6b705ddbe61b381b2edb82737897374d7b2b03bb"
+  },
+  "script_sha256": "6471df792d6daaa0287ced0ee691b1b29dd9112a8fb66fe9e0c6e8165d3cd377",
+  "event_rows": 935353,
+  "rows": 1054,
+  "artifacts": {
+    "taxon_coverage_change.tsv": "3d4256535a3428f62f349388e6e50fe0e9eaa10ea8e435b8eb3d9a0775bfb989",
+    "taxon_coverage_with_membership.tsv": "378208323b0bdb8cbb753f92251e7b1be86292f4f6f2f937658222805398f010"
+  },
+  "scope": "Expanded catalog coverage with original cohort, metadata and denominators preserved. All group counts checked by SQL against streaming counters; serialized rows read back exactly. Uses audited event/model joins; availability only, no confidence qualification or evolutionary test.",
+  "receipt_path": "results/orthology/duplication-expanded-membership-20260928-v1/receipt.json",
+  "receipt_sha256": "7a1850e5a53a9e329d3341653a59ec5b1eb9f7b68bdea59216c740d11e2d07d6"
+}
