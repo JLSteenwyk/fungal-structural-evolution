@@ -1,0 +1,31 @@
+{
+  "status": "passed_exact_zero_species_gradient_shortcut_checks",
+  "cases": 81,
+  "derivatives": 243,
+  "maximum_dense_gradient_error": 7.5748829431177e-10,
+  "implementation_timings": [
+    {
+      "species_ratio": 0.0,
+      "twenty_evaluations_seconds": {
+        "original": 0.12948301201686263,
+        "shortcut": 0.02103668899508193
+      },
+      "speed_ratio": 6.155104163356404
+    },
+    {
+      "species_ratio": 0.3,
+      "twenty_evaluations_seconds": {
+        "original": 0.1284514120197855,
+        "shortcut": 0.12902460398618132
+      },
+      "speed_ratio": 0.995557498735224
+    }
+  ],
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_reml_zero_shortcut.py": "9a12ab0f7c499674bd139f64deb08e8b19a61a4aedf6cd3f99de1197a156539b",
+    "scripts/matched_reml_gradient_fast.py": "1847370552b792cce7bc12ad5eb8d5217e2009d99d8a1f62a8805e428cb06bce",
+    "scripts/matched_reml_gradient.py": "a1376c49fffb7db626c53f23069d62bef68f981dd294c9ebc04d5d6846fc7b2e",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d"
+  },
+  "scope": "Exact p=0 algebra; no near-zero cutoff, changed parameter bounds or omitted candidates. Fixed-point benchmark only; full optimization equivalence and timing remain pending. Running fits unchanged."
+}

@@ -274,3 +274,26 @@ planning range is1–120minutes. Plan and launch metadata have the prefix
 `matched_simulation_refit_timing_20260928`; the script is
 `scripts/benchmark_matched_simulation_refits.py`. Review all timing dispositions
 and failures after terminal completion before revising any full-grid estimate.
+
+## Exact zero-species-gradient shortcut checked
+
+Inspection of the full analytic gradient identified redundant factorization
+of `I + p K` when the species variance ratio p is exactly zero. The separate
+`scripts/matched_reml_gradient_fast.py` uses the identity inverse in that case,
+retaining the derivative with respect to p through the cross-product and trace
+terms. It also omits products multiplied by exactly zero. Positive p follows
+the original calculation; there is no near-zero threshold or boundary change.
+The original module remains unchanged for every active job.
+
+`scripts/check_matched_reml_zero_shortcut.py` compares the new calculation
+against the original and an independent dense residual-projector score over
+81 zero/moderate/large-variance cases, including empty and duplicated species
+factors. All243 derivatives passed; maximum dense-score disagreement was
+7.57e-10. With600 observations and species rank250,20 fixed-point evaluations
+took0.0210 seconds with the shortcut versus0.1295 seconds originally when p=0
+(6.16-fold). At p=0.3 the timings were essentially unchanged.
+
+This identifies an exact computational saving, not a6-fold full-refit speedup.
+Full optimizer equivalence, boundary diagnostics and end-to-end timings still
+need checking before adoption. The result is recorded in
+`metadata/matched_reml_zero_shortcut_checks_20260928.json`.
