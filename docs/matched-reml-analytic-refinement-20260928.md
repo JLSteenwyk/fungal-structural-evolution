@@ -49,3 +49,25 @@ are terminal-state verification, independent output readback, review of any
 remaining flags and explicit integration with the original setting map.
 Numerical success does not establish component identifiability, calibrated
 uncertainty, biological model adequacy or causal duplication effects.
+
+
+The full output-readback service is now queued behind the refinement producer:
+`fungal-matched-refinement-readback-20260928.service`. It revalidates the
+producer's PID, creation time and command while waiting, then requires terminal
+success before checking all 658 source-bound dispositions. It independently
+checks all 24-candidate enumerations, fixed bounds, best-candidate selection,
+projected-gradient arithmetic, status flags, coefficient-unit conversion and
+explicit remaining-review records. This is not another derivative calculation
+or model refit.
+
+Before launch, the readback passed all 152 currently completed production
+records and rejected altered candidate counts, gradient flags and raw-unit
+coefficients. That frozen subset is documented in
+`metadata/matched_refinement_readback_checks_20260928.json`; it is not a claim
+about the remaining cases. The complete readback uses
+`metadata/matched_refinement_readback_plan_20260928.json` and will write to
+`results/model_validation/matched-reml-refinement-readback-20260928-v1`.
+It allows one CPU core and 8 GiB RAM, with no GPU or paid resources.
+
+Integrating qualified refinements with the complete original setting map,
+model adequacy and inferential calibration remain subsequent requirements.

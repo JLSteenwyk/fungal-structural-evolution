@@ -219,3 +219,8 @@ message. Full five-start refinement inputs are prepared for all156 designs
 with explicit protection against native tree annotation and branch-floor
 behavior. Earlier failed handoffs are preserved.
 See the [optimizer evidence](fastml-paired-comparison-20260928.md).
+
+September 28: full658 matched-model refinement readback is queued after
+producer completion. The checker passed a frozen152 completed records plus
+three tamper cases. Whole-grid qualification and setting-map integration
+remain pending.
