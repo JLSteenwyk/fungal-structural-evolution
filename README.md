@@ -42,6 +42,9 @@ and joint insertion/deletion uncertainty remain active. The
 [Historian assessment](docs/historian-method-assessment-20260927.md) and
 [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguish
 software checks and short diagnostic chains from qualified posterior ensembles.
+All 324 BAli-Phy initializations passed model-code and initial-score checks;
+full runtime input-equivalence checks identify 135 distinct effective inputs.
+Short-chain sample validation and posterior convergence remain separate requirements.
 Four Historian jobs for the largest, 622-protein family reached the initial
 memory cap (two MAFFT and two FAMSA alignments); separate retry batches preserve
 all sequences and scientific settings with a higher cap.

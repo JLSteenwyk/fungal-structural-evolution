@@ -98,3 +98,22 @@ inputs to one computational result per seed, with explicit provenance for every
 original label. Different models, priors, trees, seeds and independent chains
 must remain separate. A reused result is never an additional independent
 replicate. This reduces redundant calculations without reducing family sampling.
+
+## Complete initialization and input-equivalence readback
+
+Both the 324-job initialization producer and its final audit are terminal with
+successful exit status. All 324 generated models and finite initial-score
+checks pass. The bound artifact hashes were rechecked against the final
+completion record. Maximum initialization time was 31.8 seconds and maximum
+sampled RSS was 1.05 GiB; these initialization costs do not estimate long-chain
+runtime or posterior mixing.
+
+The complete v2 equivalence audit now compares every member of all 135 input
+groups. All groups have identical normalized generated programs and initial
+numerical-state lines. All 324 labels remain in the configuration mapping;
+27 groups contain four labels and 108 contain two. The new script asserts
+complete runtime evidence, preserving the earlier partial snapshot separately.
+Evidence: `metadata/baliphy_initialization_final_readback_completed_20260927.json`
+and `metadata/baliphy_input_equivalence_v2_completed_20260927.json`.
+Short-chain runtime/sample integrity checks continue separately. No initialization
+result or equivalent-input reuse establishes a qualified posterior ensemble.
