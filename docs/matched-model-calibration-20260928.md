@@ -914,3 +914,23 @@ coefficient remained an explicit review disposition alongside the other four
 fits. These are runner checks, not evidence of calibrated interval coverage.
 The queued job requires a full output readback after completion, followed by
 the remaining model adequacy, calibration and multiplicity work.
+
+### Full serialized interval audit queued
+
+`audit_selected_matched_intervals.py` waits for terminal successful completion
+of the interval producer, checking its PID, creation time and command while
+active. It verifies all task bindings, checkpoint hashes, selected source
+payload hashes and the complete 144,040-fit universe. It emits all 720,200
+coefficient dispositions, including five explicit unresolved entries for any
+failed fit. Finite candidate intervals are checked against original-unit
+selected estimates, variance, rank-one degrees-of-freedom arithmetic, independent
+Student-t quantiles and exact-zero variance-component flags. Null omitted
+coefficients and typed numerical review outcomes remain explicit.
+
+Five existing real-fit records passed; changed endpoints, changed estimates,
+missing coefficients and changed source hashes were rejected. Failed-fit and
+omitted-coefficient fixtures preserved their dispositions. The audit is queued
+with one CPU, 8 GiB memory, no swap and a 2 GiB output allowance; planned active
+time is 0.1–4 hours. It does not recompute covariance contractions and cannot
+qualify model adequacy, interval coverage or multiple testing. Those remain
+separate scientific requirements after output integrity is established.

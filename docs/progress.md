@@ -9742,3 +9742,9 @@ does not establish universal coverage or complete the biological project.
   sequences. Full results are pending. Resources: one CPU, 16 GiB memory cap,
   no swap, 2 GiB output allowance and 0.1–2 active hours planned. The comparison
   measures catalog coverage, not newly inferred structures or biological change.
+
+- September 28: queued complete selected-interval output validation covering
+  144,040 fits and 720,200 coefficient dispositions. Real-record and tampering
+  checks passed. It will verify source bindings, completeness, coefficient units
+  and scalar interval arithmetic, retaining all unresolved outcomes. Covariance
+  contraction recomputation and scientific calibration are outside this audit.

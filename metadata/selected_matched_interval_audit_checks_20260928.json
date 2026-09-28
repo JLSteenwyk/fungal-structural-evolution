@@ -1,0 +1,16 @@
+{
+  "status": "passed_real_intervals_and_audit_rejection_fixtures",
+  "real_fits": 5,
+  "rejected": [
+    "changed_endpoint",
+    "changed_estimate",
+    "missing_coefficient",
+    "changed_source"
+  ],
+  "failed_fit_retains_five_dispositions": true,
+  "omission_retained": true,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_selected_matched_interval_audit.py": "31d2df05562b65833d1b881389e2e20031f8408d5477999046d17da86bf26304",
+    "scripts/audit_selected_matched_intervals.py": "582f7ae058608c638029a28f6adf2a0048cd1c56ae36c19fee45b75c692c6e9d"
+  }
+}
