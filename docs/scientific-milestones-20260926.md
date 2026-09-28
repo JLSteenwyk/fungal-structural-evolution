@@ -18,6 +18,17 @@ Chronological receipts and process records remain in [progress](progress.md).
 
 ## Current execution dependencies (updated September 28)
 
+- The September28 atlas refresh passed full catalog and old/new link checks:
+  1,910,138 models cover1,955,694 of5,815,847 representative proteins (33.63%).
+  Both full family partitions passed independent reconstruction. The expanded
+  annotation registry and1,575,294-interval manifest also passed full readback;
+  coordinate extraction is running and its atom-level audit is queued.
+  The existing1,078,592-domain/70,537-cluster results retain the September22
+  catalog. Expanded coverage must not be attributed to those older clusters or
+  comparisons. These additions support aims1–6 without completing them.
+  See [catalog versions](whole-proteome-structure-catalog-20260922.md) and
+  [domain workflow](whole-proteome-structure-domain-registry-20260923.md).
+
 - Expanded AlphaFold resampling and native-output audit completed across all
   125 markers and 75,000 paired draws (23 unestimable). A separate
   [warning census and interval-table review](afdb-paired-resampling-review-20260928.md)
