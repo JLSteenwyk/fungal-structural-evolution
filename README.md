@@ -34,20 +34,29 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | All 412,800 primary whole-protein tasks processed; strict audit stopped on a two-residue RMSD discrepancy. Full diagnosis confirmed 27 two-residue discrepancies; full geometry readback passed, retaining 327 degenerate short mappings. Full order-summary and residue-mapping sensitivity readbacks passed; background comparisons continue. Phylogenetically adjusted effects, uncertainty and biological interpretation remain |
 
 
-For **13 exploratory ancestral case families**, whole-protein amino-acid
-probabilities (4,354,380 values) and refined domain probabilities (3,365,640
-values) have passed independent numerical checks. These are conditional
-estimates, not final ancestral sequences. Whole-protein optimization sensitivity
-and joint insertion/deletion uncertainty remain active. The
-[Historian assessment](docs/historian-method-assessment-20260927.md) and
-[BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguish
-software checks and short diagnostic chains from qualified posterior ensembles.
+For **13 exploratory ancestral case families**, all 156 refined whole-protein
+fits and **8,708,760 amino-acid probabilities** passed independent numerical
+checks. Refined domain probabilities (3,365,640 values) also passed. Compared
+with the original whole-protein fits, 14 of 435,438 ancestor/site comparisons
+change their most probable amino acid; none have opposing calls with at least
+90% support in both fits. The two parameter bounds yield no state changes.
+See the [refinement sensitivity figure](docs/figures/whole_refinement_sensitivity_20260927.pdf)
+and [ancestral methods and evidence](docs/ancestral-case-inputs.md).
+These are conditional estimates; full alternate-start sensitivity, model
+adequacy and joint insertion/deletion uncertainty remain unresolved.
+
+The [Historian assessment](docs/historian-method-assessment-20260927.md) records
+an important limitation: both higher-memory MAFFT retries for the 622-protein
+family pass output checks, but changing the minimum branch length changes the
+three non-root candidate ancestors by 10–15 ungapped edits. These are numerical
+sensitivity measurements, not biological events. FAMSA retries remain in
+progress; all original capacity failures and alternative outputs are retained.
+
 All 324 BAli-Phy initializations passed model-code and initial-score checks;
 full runtime input-equivalence checks identify 135 distinct effective inputs.
-Short-chain sample validation and posterior convergence remain separate requirements.
-Four Historian jobs for the largest, 622-protein family reached the initial
-memory cap (two MAFFT and two FAMSA alignments); separate retry batches preserve
-all sequences and scientific settings with a higher cap.
+The [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguishes
+these checks and short diagnostic chains from converged posterior ensembles.
+Final ancestral sequences and structures have not been qualified.
 
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.
