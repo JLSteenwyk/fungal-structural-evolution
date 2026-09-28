@@ -506,3 +506,29 @@ hashes were independently checked. Plan, launch, prelaunch and startup checks
 are tracked under `metadata/baliphy_independent_chain_*_20260927.json`.
 The controller and readback code are separate from the completed short-run
 scripts; completed short-run evidence is preserved.
+
+
+### Automatic quartet diagnostics queued
+
+`fungal-baliphy-independent-diagnostics-20260927.service` now watches the
+verified producer identity and all 405 input/prior groups. It waits for four
+completed sample audits, verifies attempt/configuration hashes, commands,
+seed identities and log hashes, then runs both discard-through-250 and
+through-500 scalar screens. It inspects all logged fields except iteration
+and the explicitly fixed tree/scale fields, retaining constant stochastic
+traces as review flags. It does not repeatedly hash incomplete quartets.
+
+Four handoff tests passed, including missing-chain waiting and rejection of
+changed artifacts or configuration. The isolated diagnostic environment's
+installed package list matches its frozen lock file. The watcher uses one
+CPU, 8 GiB RAM and zero swap, with a 1-GiB output allowance and approximately
+0.5–4 active CPU hours planned across the 810 screens; waiting time depends
+on sampling. It retains all unresolved quartets and the producer's actual
+terminal state if sampling fails. No diagnostic has passed merely because
+the watcher started. Plan and launch are in
+`metadata/baliphy_independent_chain_diagnostic_{plan,launch}_20260927.json`.
+
+The watcher currently writes to a fresh output directory. After an interrupted
+watcher, use a new versioned output/plan and preserve earlier diagnostic files;
+this does not require restarting or changing the sampling batch. Scalar
+screens remain separate from alignment and candidate-state mixing checks.

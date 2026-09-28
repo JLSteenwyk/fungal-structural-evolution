@@ -1,0 +1,34 @@
+{
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "producer_launch": "metadata/baliphy_independent_chain_launch_20260927.json",
+  "python": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/SOFTWARE/ancestral-diagnostics-20260927/bin/python",
+  "diagnostic_script": "scripts/ancestral_chain_diagnostics.py",
+  "output": "results/ancestral/baliphy-independent-chain-diagnostics-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_active_hours": [
+      0.5,
+      4
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_independent_chain_launch_20260927.json": "f4b10d315edd95df5f28f5c8f19372a3c4bf81790c60b544c849b6dbc587dbe4",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/initial_horizon_jobs.json": "f0c38ebfd985907f55d2ba5bb8cc12d75c47ca10dfa851492ad57eebcf5c835a",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "scripts/advance_independent_chain_diagnostics.py": "3791d3b4bf5a3fe995b9318c966352399bd1d1af9f59f2f17e998e60a8834bc9",
+    "scripts/test_independent_chain_diagnostic_handoff.py": "87bc9f9fad85ea057848c9f5e015f7f957458a8b144f0c5abade6c5ad6dac62c",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f"
+  },
+  "scope": "All405 input/prior quartets, both250/500 burn-in cutoffs; 810 scalar screens when complete. No posterior qualification.",
+  "verification": {
+    "handoff_tests_passed": 4,
+    "installed_package_freeze_matches_lock": true
+  }
+}
