@@ -1,0 +1,31 @@
+{
+  "unit": "fungal-duplication-expanded-readback-20260928.service",
+  "pid": 2361566,
+  "created": 1790634647.89,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_expanded_duplication_coverage.py",
+    "--plan",
+    "metadata/duplication_expanded_coverage_plan_20260928.json",
+    "--output",
+    "results/orthology/duplication-expanded-coverage-readback-20260928-v1.json"
+  ],
+  "observed_state": {
+    "MainPID": "2361566",
+    "Result": "success",
+    "ActiveState": "active"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "storage_gib": 0.01,
+    "planning_active_hours": [
+      0.02,
+      1
+    ],
+    "gpu": false,
+    "paid_cost": 0,
+    "basis": "In-memory SQL joins of 1.96 million links and 935353 events; no inference."
+  }
+}

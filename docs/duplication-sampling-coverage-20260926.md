@@ -127,9 +127,11 @@ The fixed 935,353 terminal singleton-side event records have now been joined
 to the September 28 catalog of 1,955,694 protein/model links. This separate
 output preserves the original event identities and old model assignments:
 `results/orthology/duplication-expanded-coverage-20260928-v1/`.
-The producer finished successfully; independent readback remains pending.
+The producer and independent SQL readback both finished successfully. Every
+original event field, new model assignment, coverage class and aggregate count
+was checked across all 935,353 rows.
 
-Preliminary producer counts are 141,724 two-model events for the profile guide
+Verified counts are 141,724 two-model events for the profile guide
 and 141,685 for MAFFT, versus 109,245 and 109,228 previously. Both guides now
 have two-model candidates in 210 taxa, versus 153 previously. No previously
 two-model event lost that coverage. These are source-availability counts, not
@@ -142,5 +144,15 @@ metadata/duplication_expanded_coverage_plan_20260928.json`.
 The plan pins source tables, receipts and script; the launch record is
 `metadata/duplication_expanded_coverage_launch_20260928.json`. The bounded job
 used one CPU, 4 GiB RAM, no swap, no GPU and no paid resources, with a 1 GiB
-output allowance and an uncalibrated 0.02–1 hour planning range. Full event
-identity, catalog joins and summary readback are the next acceptance step.
+output allowance and an uncalibrated 0.02–1 hour planning range.
+
+The independent verifier is `scripts/readback_expanded_duplication_coverage.py`;
+run it with the same `--plan` and a fresh `--output` JSON path. It reconstructs
+both protein/model joins in SQLite instead of using the producer's lookup and
+recomputes every summary with SQL. Completion evidence and source hashes are
+in `metadata/duplication_expanded_coverage_completed_20260928.json`.
+Two-model coverage is 30.30% for profile and 30.29% for MAFFT. Both contain
+7,294 events whose two proteins map to the same model; model availability
+does not imply two independent structural predictions. Readback relies on
+the earlier audited native-event selection and sequence catalog and does not
+repeat coordinate or biological-event validation.

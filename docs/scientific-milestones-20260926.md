@@ -170,9 +170,11 @@ analyses; do not silently shrink the scientific scope to successful cases.
 
 ## Cross-cutting requirements
 
-Uneven model coverage is substantial: only about 23.4% of the examined terminal
-singleton-side duplication events have both models in the frozen AlphaFold
-inventory, from 153 of 526 reconciled taxa. The 527-entry candidate manifest
+Uneven model coverage is substantial: the original comparison inventory covers
+both proteins for about 23.4% of examined terminal singleton-side duplication
+events, from 153 of 526 reconciled taxa. The audited September 28 expanded
+catalog join raises availability to about 30.3% and 210 taxa, but the earlier
+structural comparisons retain their original frozen scope. The 527-entry candidate manifest
 includes excluded *S. jurei*. Use analyzed membership, source-specific model
 availability and uncertainty explicitly; do not interpret missing models as
 biological absence. See [coverage](duplication-sampling-coverage-20260926.md).

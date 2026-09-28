@@ -1,0 +1,62 @@
+{
+  "status": "passed_full_expanded_duplication_event_and_sql_join_readback",
+  "event_rows": 935353,
+  "guides": {
+    "profile": {
+      "events": 467663,
+      "old_neither_model": 345890,
+      "old_one_model": 12528,
+      "old_both_models": 109245,
+      "new_neither_model": 309496,
+      "new_one_model": 16443,
+      "new_both_models": 141724,
+      "new_same_model": 7294,
+      "newly_both": 32479,
+      "lost_both": 0,
+      "taxa_with_both": 210,
+      "families_with_both": 25039
+    },
+    "mafft": {
+      "events": 467690,
+      "old_neither_model": 345933,
+      "old_one_model": 12529,
+      "old_both_models": 109228,
+      "new_neither_model": 309579,
+      "new_one_model": 16426,
+      "new_both_models": 141685,
+      "new_same_model": 7294,
+      "newly_both": 32457,
+      "lost_both": 0,
+      "taxa_with_both": 210,
+      "families_with_both": 25024
+    }
+  },
+  "sources": {
+    "results/orthology/duplication-sampling-coverage-20260926-v1/terminal_event_coverage.tsv.gz": "2a3a6f963610d85941abb827a988fe4cf2d0d4ab02f69a745658726d872526e8",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/protein_model_links.tsv": "a3ca5564d25f31cc701e9959f4ed39682231c59cbe61d8b16809cf1938ff2e78",
+    "results/orthology/duplication-sampling-coverage-20260926-v1/receipt.json": "bb535ed0e078ce82951794c08ee40c07845da3d6d27104ccbe3a253595c1def3",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "metadata/duplication_sampling_coverage_readback_completed_20260926.json": "f9494fa60e9120eacd68a9563fd67854491c25bde59280aba4841d71eb8d7d0a",
+    "scripts/refresh_duplication_model_coverage.py": "78b93913cccb1531131e67302b58089658fa0c687b1b9b199728c6d7b827615e",
+    "metadata/duplication_expanded_coverage_plan_20260928.json": "e5f3737f0bb108b08ee78e621fb285d5b81701cee6e48b88ac19f4c75faa9404",
+    "results/orthology/duplication-expanded-coverage-20260928-v1/receipt.json": "21c432958e310e7c61b52e563e2d2aa447225d3e41f629488f10713a97ea292a",
+    "results/orthology/duplication-expanded-coverage-20260928-v1/event_coverage.tsv.gz": "166732c77f1f9d15e3cbbbcb7e9493065b8ad8d2ba3d50bb4bb097063afe27b1"
+  },
+  "auditor_sha256": "2ed169dfaed650886db2d755555b3db572e2c9b549d14f9355439ee276183a21",
+  "scope": "All event fields preserved; all model assignments and coverage classes independently joined with SQL; every aggregate recomputed. Uses previously audited event selection and catalog identity, does not repeat native event extraction or coordinate validation. No new confidence qualification or evolutionary inference.",
+  "readback_path": "results/orthology/duplication-expanded-coverage-readback-20260928-v1.json",
+  "readback_sha256": "f9e49b8bc404a9afd76dcde7467625123f4adc4b6704fc442c27328aab33d82d",
+  "terminal_states": {
+    "fungal-duplication-expanded-coverage-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-duplication-expanded-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}
