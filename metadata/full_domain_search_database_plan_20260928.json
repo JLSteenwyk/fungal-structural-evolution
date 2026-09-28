@@ -1,0 +1,41 @@
+{
+  "audit": "results/domains/domain-coordinate-readback-20260928-v1",
+  "audit_plan": "metadata/domain_coordinate_archive_readback_plan_20260928.json",
+  "extraction": "results/domains/domain-coordinates-20260928-v1",
+  "extraction_plan": "metadata/domain_coordinate_extraction_plan_20260928.json",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "output": "results/structural_clusters/full-domain-database-20260928-v1",
+  "predecessor": {
+    "pid": 2193748,
+    "create_time": 1790625000.85
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 500,
+    "minimum_available_memory_gib": 128,
+    "output_planning_gib": 100,
+    "runtime_planning_hours": [
+      3,
+      72
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+    "scripts/advance_domain_search_database.py": "4ce90fb8c416873b67c77762ec130565b88daa6d5170ece0ab393bca816be65a",
+    "scripts/build_whole_proteome_foldseek_database.py": "612452b9ba6b35142a80039cfc342162485b02245436b5106b37ae74c27f13db",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_foldseek_archive_fixture_checks.json": "73c6d86ffc568144318661b38caa8dc45b39df9bcf49fbcd3be8b84c70cd9b14",
+    "metadata/domain_coordinate_archive_readback_plan_20260928.json": "81be47679508074d1e25a6f7f1d8af05e153875b2bb0acd2f4a9b546b24ba1c1",
+    "metadata/domain_coordinate_extraction_plan_20260928.json": "91a7b0d1ec4db5fd7e080edc30a483e9ac308e48463879d08033434209a4e6b6",
+    "scripts/advance_refreshed_domain_search_database.py": "3bc17941604317869d2bebecfb030838d8dcd953889e900dfa161a181115a227",
+    "metadata/domain_coordinate_archive_readback_launch_20260928.json": "affb685cc525a41cfcdd4b1fa7b3b57dc724f3e3d8bcd1e9c02452d8a3062e66",
+    "metadata/full_domain_database_completed_receipt_20260923.json": "b24273a5aa678b7db14cf7204aef353650ed0dd40eb4a3600fa1d374947dc841",
+    "scripts/readback_whole_proteome_catalog.py": "1e4fc2bd8764204b01d8a1c6251b27437a79a5d93dc842a92d8cb9e73fa3549c"
+  },
+  "basis": "Full refreshed scope: up to 1575294 intervals and 248418990 residues (1.475 times the old database residue count). Four CPU threads, 64GiB memory limit, no GPU or paid resources. Planning allowance 3\u201372 hours, not a measured ETA. Require terminal audit success and full producer/audit receipt agreement before conversion; independently compare every encoded AA sequence and C-alpha coordinate with audited PDB intervals."
+}

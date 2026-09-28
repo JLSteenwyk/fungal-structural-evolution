@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-full-domain-database-20260928.service",
+  "pid": 2225653,
+  "created": 1790626591.36,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_domain_search_database.py",
+    "--plan",
+    "metadata/full_domain_search_database_plan_20260928.json",
+    "--launch",
+    "metadata/domain_coordinate_archive_readback_launch_20260928.json"
+  ],
+  "plan_sha256": "7fd01d6e3a1225e1eabae45bd9fbaf3fb4dd2f4092cd94d0d03c95165263cd30",
+  "observed_state": {
+    "MainPID": "2225653",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "4s",
+    "MemoryMax": "68719476736",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

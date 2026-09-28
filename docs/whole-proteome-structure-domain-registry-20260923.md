@@ -661,3 +661,28 @@ The wrapper requires matching PID/creation time/command and terminal
 success/exit0. Coordinates are not qualified until that audit completes;
 residue confidence, PAE, clustering and evolutionary integration remain
 separate downstream work.
+
+### Expanded structural search database queued (September 28)
+
+The refreshed database controller is queued as
+`fungal-full-domain-database-20260928.service`, with plan and launch identity in
+`metadata/full_domain_search_database_{plan,launch}_20260928.json`.
+It requires the identified full atom audit to reach terminal success with exit
+code zero. The new wrapper checks PID, creation time, command and unit state;
+the unchanged conversion implementation then checks matching extraction/audit
+receipts and hashes before building
+`results/structural_clusters/full-domain-database-20260928-v1`.
+
+The scope is every successfully exported interval from the refreshed manifest
+(up to 1,575,294 intervals and 248,418,990 residues). Conversion checks every
+AA sequence, structural-alphabet length/alphabet and C-alpha coordinate against
+the audited PDB spans. This is not independent reconstruction of 3Di states or
+confidence qualification. Rejected intervals remain explicit. Both domain
+boundary definitions remain available for downstream sensitivity analyses.
+
+Resources are four CPU threads, 64 GiB RAM and no swap, GPU or paid resources.
+The planning allowance is 100 GiB output and 3–72 active hours; this is not a
+measured ETA. The new residue scope is about 1.475 times the previous database.
+Conversion requires at least 500 GiB free disk and 128 GiB available RAM;
+planning observed more than 11,000 GiB disk and 669 GiB RAM available. The
+controller is waiting; no refreshed database or clustering is complete yet.
