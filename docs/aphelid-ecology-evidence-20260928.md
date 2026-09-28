@@ -101,3 +101,28 @@ place to connect this information.
 Reproduce the trace with `scripts/diagnose_aphelid_marker_coverage.py`; raw-table,
 annotation and qualified-mask source hashes and exact counts are recorded in
 `metadata/aphelid_marker_coverage_cause_20260928.json`.
+
+## All-copy inventory completed
+
+The source-bound inventory retains all241 BUSCO hit proteins from120 detected
+marker families, including all119 duplicated markers. There are235 distinct
+amino-acid sequences; the241 protein identities remain separate even where
+sequences are identical. Every hit has an assignment in each of the two
+existing family partitions:482 assignment rows, zero missing assignments,
+and117 distinct family labels per guide. BUSCO marker labels and these family
+labels are different classifications and their counts should not be equated.
+
+`inventory_aphelid_marker_copies.py` verifies the raw BUSCO hit universe,
+annotation decisions, source sequences, full family-database hash and completed
+family-database readback. It exports all sequences plus per-protein gene IDs
+and both family assignments under
+`results/ecology/aphelid-marker-copy-inventory-20260928-v1`. FASTA readback
+preserved every source sequence and protein identity. No arbitrary best-copy
+selection or new prediction was performed. Structure availability, family-tree
+placement and explanation of the multiple copies remain downstream work.
+
+During implementation, a receipt-field mismatch was corrected before output
+creation. An initial unindexed per-protein database lookup was stopped before
+outputs and replaced by queries using the existing guide/gene index. No source
+database was modified. The final inventory completed successfully; its hashes
+and counts are in `metadata/aphelid_marker_copy_inventory_20260928.json`.

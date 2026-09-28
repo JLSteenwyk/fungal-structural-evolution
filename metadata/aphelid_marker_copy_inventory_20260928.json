@@ -1,0 +1,35 @@
+{
+  "status": "complete_all_aphelid_marker_copy_family_inventory",
+  "taxon_id": "F1243177",
+  "marker_universe": 125,
+  "markers_with_hits": 120,
+  "marker_protein_rows": 241,
+  "unique_hit_proteins": 241,
+  "sequence_unique_count": 235,
+  "guides": [
+    "mafft",
+    "profile"
+  ],
+  "family_assignment_rows": 482,
+  "missing_assignment_rows": 0,
+  "families_by_guide": {
+    "profile": 117,
+    "mafft": 117
+  },
+  "sources": {
+    "results/qc/busco-gene-copies-v1/marker_gene_copies.tsv": "1750e3b9dc52479c7cb827d7d3fdcea2683ed7c1b2b4f44e11ca348e2aa50059",
+    "results/busco/F1243177/run_eukaryota_odb12.2/full_table.tsv": "4a35b2f9bb9dce966dfd2d9b0d1bd9e2e529880488a5c6d44db261aeeb11899d",
+    "results/gene_representatives/full-v2/F1243177.decisions.tsv": "14f1447a5c817c8dd4732986ee3894ca08601a3734178acfa57b2eed17993a31",
+    "data/qc_proteomes/F1243177.faa": "d98a4942eb5466fe41eb24aa93c3173d111504374a8785d20da55c4a788df49e",
+    "results/domains/family-domain-bridge-v1/family_domain_bridge.sqlite": "51a766d8f40301a7a9c7477ca8d45abd818ba844af5af974e9b1a14a40b33758",
+    "results/domains/family-domain-bridge-v1/receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b"
+  },
+  "script_sha256": "544519368a240fe5bf625d1a85c3225cb4903235f1905a6fb6a45d3e25eca755",
+  "artifacts": {
+    "marker_protein_copies.tsv": "aa245bcc45e91b94920aba988824202665923092091ba0001a75dfb4f03d0b20",
+    "all_hit_proteins.faa": "5f386649d94f82f1823e3335e868a3d9edb05a2c1220a2222f03d37ec9ee7732",
+    "family_assignments.tsv": "5ca5d4af6b686decd97ff9ed87d698c7980a4f845b318dad1ef0b21e2c6d45fc"
+  },
+  "scope": "Every BUSCO hit retained with annotation gene identities and both existing family assignments; no best-copy selection, new structure prediction, biological duplication classification or orthology claim."
+}

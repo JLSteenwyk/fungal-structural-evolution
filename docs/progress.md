@@ -9808,3 +9808,11 @@ does not establish universal coverage or complete the biological project.
   copy-selection limitation plus a confidence threshold failure, not simply an
   unfilled prediction queue. All thresholds remain unchanged; copy-aware
   family analysis is needed to use the duplicated marker information.
+
+- September28: inventoried all241 A. protococcarum BUSCO hit proteins from120
+  detected markers, retaining235 distinct sequences without collapsing protein
+  identities. All241 proteins map to both existing family partitions (482
+  assignments, zero missing;117 distinct family labels per guide). Full source
+  database and annotation hashes passed, and exported sequences were read back.
+  This prepares copy-aware analysis; structural coverage and tree placements
+  of these copies remain to be assessed.
