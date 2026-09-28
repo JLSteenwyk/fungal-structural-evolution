@@ -74,3 +74,46 @@ Reproducibility records:
 Optimization, missing-data ascertainment and joint sequence/indel uncertainty
 remain unresolved. None of these numerical comparisons qualifies an ancestral
 structural ensemble or establishes a biological event.
+
+## Effective optimizer limits and refinement preparation
+
+A full audit of both native variants found that **all 306 nonempty fits** used
+optimization level `low`, with effective limits of one outer cycle and one
+model iteration. All 306 logs contain the model iteration-limit message.
+Source inspection confirms that `updateOptimizationLevel(low)` overrides
+both limits to one. Thus the optimization concern extends beyond the two
+fits whose attained likelihood worsened. Successful numerical replay verifies
+calculation at the returned parameters; it does not verify adequate fitting.
+
+All 153 paired fitted trees are byte-identical across variants. A complete
+refinement input set now preserves all 156 designs and supplies five starts
+per input: both previous fitted parameter vectors and three fixed
+shape/gain–loss-ratio settings. This yields 765 nonempty fits and 15 explicit
+empty dispositions. Existing fitted trees are copied without rounding;
+initial branch rescaling and empirical overwriting of the parameter starts
+are disabled. Stationary mean-rate normalization is preserved.
+
+Prepared controls use `mid` (which leaves explicit settings intact), 100
+outer/model iterations and 1e-6 model/cycle tolerances. Effective native settings
+must be checked at execution, alongside tree identity, starting values,
+termination messages, candidate likelihoods and agreement across starts.
+Two previous parameter starts can coincide; they are retained with provenance
+and are not described as independent starts when identical.
+
+The preparation is **not launched** at this checkpoint. Its resource plan
+proposes eight CPU workers, 48 GiB RAM, no swap, 4 GiB per native process,
+128 GiB output allowance and 12-hour per-fit timeouts. The broad 12–336 hour
+processing allowance is uncalibrated because previous runs had only one model
+iteration. No GPU or paid resources are planned.
+
+Evidence:
+
+- `scripts/audit_fastml_optimizer_settings.py`
+- `metadata/fastml_optimizer_settings_audit_20260928.json`
+- `scripts/prepare_fastml_optimizer_refinement.py`
+- `metadata/fastml_optimizer_refinement_preparation_20260928.json`
+- `results/ancestral/fastml-optimizer-refinement-inputs-20260928-v1/jobs.json`
+
+The next step is a restartable full-grid runner with native effective-option
+checks, independent numerical replay and explicit failed/unfinished outcomes.
+No ancestral estimate is promoted by this preparation.

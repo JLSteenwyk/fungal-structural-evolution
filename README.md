@@ -89,7 +89,7 @@ their likelihood discrepancy from approximately 0.47 to below 1.24e-7 with a
 targeted cache refresh. Full paired inference and separate replay completed
 for 306 nonempty fits across both variants, retaining six empty inputs and
 tiny probability-boundary excursions without clipping raw values. Remaining
-likelihood/probability discrepancies still require review. Original outputs and strict validator failures are retained. The [full paired comparison](docs/fastml-paired-comparison-20260928.md) identifies eight changed OG0000294 fits; the completed native-rate replay reduces the cache-refreshed maximum likelihood discrepancy to 1.82e-8. Optimizer and biological-model qualification remain unresolved.
+likelihood/probability discrepancies still require review. Original outputs and strict validator failures are retained. The [full paired comparison](docs/fastml-paired-comparison-20260928.md) identifies eight changed OG0000294 fits; the completed native-rate replay reduces the cache-refreshed maximum likelihood discrepancy to 1.82e-8. Optimizer and biological-model qualification remain unresolved. The full log audit found a one-model-iteration cap in all 306 fits; full refinement inputs are prepared, with execution pending.
 These fits are not qualified ancestral ensembles; see the
 [FastML discrepancy and correction evidence](docs/fastml-indel-likelihood-discrepancy-20260927.md).
 

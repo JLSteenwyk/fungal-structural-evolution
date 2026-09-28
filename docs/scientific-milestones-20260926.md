@@ -211,3 +211,9 @@ differ from SciPy rates at all 306 fitted shapes. The full native-rate replay
 and source audit completed: maximum likelihood error in refreshed fits is
 1.82e-8; the three uncorrected stale-cache errors remain. The two worse optima
 still require optimization review.
+
+September 28 optimizer audit: all 306 nonempty FastML variant fits used an
+effective one-model-iteration limit and emitted the corresponding limit
+message. Full five-start refinement inputs are prepared for all156 designs
+(765 nonempty fits, 15 empty dispositions); execution is not yet launched.
+See the [optimizer evidence](fastml-paired-comparison-20260928.md).
