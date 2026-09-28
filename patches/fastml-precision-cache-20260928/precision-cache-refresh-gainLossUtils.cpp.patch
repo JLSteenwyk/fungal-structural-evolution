@@ -1,0 +1,16 @@
+--- original/programs/gainLoss/gainLossUtils.cpp
++++ precision-cache-refresh/programs/gainLoss/gainLossUtils.cpp
+@@ -46,11 +46,13 @@
+ 	//string tree_st = gainLossOptions::_outDir + "//" + "TheTree.ph"; 
+ 	//ofstream treeStream(tree_st.c_str());
+ 	ofstream treeStream(gainLossOptions::_treeOutFile.c_str());
++	treeStream.precision(17);
+ 	tr.output(treeStream);
+ 	treeStream.close();
+ }
+ 
+ void printTree (tree &tr,ostream &out){
++	out.precision(17);
+ 	vector<tree::nodeP> vAllNodes;
+ 	tr.getAllNodes(vAllNodes,tr.getRoot());
+ 	Vstring Vnames(vAllNodes.size());

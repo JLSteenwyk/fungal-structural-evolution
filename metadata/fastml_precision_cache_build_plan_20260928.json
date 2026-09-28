@@ -1,0 +1,21 @@
+{
+  "preparation": "data/software_audits/fastml-precision-cache-20260928-v1/preparation.json",
+  "output": "results/software/fastml-precision-cache-build-20260928-v1",
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 8,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "basis": "Two gainLoss rebuilds from frozen source; retain and bind the existing phylogeny static library.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "data/software_audits/fastml-precision-cache-20260928-v1/preparation.json": "7d8d2a8e29136c3910ad4cc76ac9f2aec70d00fddf7b2504c50708afe8655e56",
+    "scripts/build_fastml_precision_cache_variants.py": "489abc35ae70a7775a9155f2cf621b1dd5b50fc8c6c6b312e20f8f74b921665e",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461"
+  }
+}

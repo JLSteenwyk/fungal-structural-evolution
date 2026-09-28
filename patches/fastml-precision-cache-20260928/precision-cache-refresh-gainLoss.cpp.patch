@@ -1,0 +1,37 @@
+--- original/programs/gainLoss/gainLoss.cpp
++++ precision-cache-refresh/programs/gainLoss/gainLoss.cpp
+@@ -1398,7 +1398,8 @@
+ {
+ 
+ 	string modelParams = gainLossOptions::_outDir + "//" + "EstimatedParameters.txt"; 
+-	ofstream modelParamsStream(modelParams.c_str());	
++	ofstream modelParamsStream(modelParams.c_str());
++	modelParamsStream.precision(17);	
+ 	modelParamsStream<<"# Log-likelihood= "<<_logL<<endl;
+ 
+ 	if(gainLossOptions::_gainLossDist){
+@@ -3026,7 +3027,7 @@
+ 	if(gainLossOptions::_printAncestralReconstructPosterior){
+ 		string AncestralReonstructPosterior = gainLossOptions::_outDir + "//" + "AncestralReconstructPosterior.txt"; 
+ 		ofstream AncestralReonstructPosteriorStream(AncestralReonstructPosterior.c_str());
+-		AncestralReonstructPosteriorStream.precision(PRECISION);		
++		AncestralReonstructPosteriorStream.precision(17);		
+ 
+ 		AncestralReonstructPosteriorStream<<"POS"<<"\t"<<"Node"<<"\t"<<"State"<<"\t"<<"Prob"<<endl;
+ 		for (int pos = 0; pos <_sc.seqLen(); ++pos)	{
+@@ -4333,6 +4334,15 @@
+ 	MDOUBLE requiredBranchLengthSumByMaxParsimonyCost = (double)costOfTreeMP/_sc.seqLen();
+ 	MDOUBLE factorBL = requiredBranchLengthSumByMaxParsimonyCost / branchLengthSum;
+ 	_tr.multipleAllBranchesByFactor(factorBL);
++	// Project sensitivity: refresh ascertainment after MP branch scaling.
++	if(_unObservableData_p){
++		if(gainLossOptions::_gainLossDist)
++			_unObservableData_p->setLforMissingData(_tr,_spVVec,_gainDist,_lossDist);
++		else
++			_unObservableData_p->setLforMissingData(_tr,_sp);
++	}
++	printTreeLikelihoodAllPosAlphTheSame(); // refresh optimizer baseline
++
+ 	MDOUBLE updatedBranchLengthSum = _tr.getAllBranchesLengthSum();
+ 	LOGnOUT(4,<<"  multipleAllBranchesByFactorAtStartByMaxParsimonyCost Total branch lengths: "<<updatedBranchLengthSum <<" with respect to costOfTreeMP "<<costOfTreeMP<<endl);
+ }
