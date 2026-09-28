@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-domain-coordinate-readback-20260928.service",
+  "pid": 2193748,
+  "created": 1790625000.85,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_domain_coordinate_readback.py",
+    "--plan",
+    "metadata/domain_coordinate_archive_readback_plan_20260928.json",
+    "--launch",
+    "metadata/domain_coordinate_extraction_launch_20260928.json"
+  ],
+  "plan_sha256": "81be47679508074d1e25a6f7f1d8af05e153875b2bb0acd2f4a9b546b24ba1c1",
+  "observed_state": {
+    "MainPID": "2193748",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "4s",
+    "MemoryMax": "34359738368",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

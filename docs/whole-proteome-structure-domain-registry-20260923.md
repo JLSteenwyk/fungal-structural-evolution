@@ -626,3 +626,38 @@ preserving every source association and both boundary definitions. These
 annotation-based candidates still require coordinate extraction, confidence
 qualification and structural assessment. Successful registry validation does
 not establish biological domain boundaries or evolutionary changes.
+
+### Expanded manifest verified; full coordinate extraction running
+
+The new manifest and independent SQL-union readback completed successfully:
+1,575,294 unique intervals from627,567 models,248,418,990 interval residues,
+868,338 candidate model/hit pairs and1,736,676 reversible boundary links.
+The maximum interval length is1,103 residues. All source identities, inclusive
+bounds and interval hashes were checked. Completion is recorded in
+`metadata/domain_extraction_manifest_completed_20260928.json` and
+`metadata/domain_extraction_manifest_readback_20260928.json`.
+
+The unchanged full extraction implementation is now running under
+`metadata/domain_coordinate_extraction_plan_20260928.json`, output
+`results/domains/domain-coordinates-20260928-v1`. It attempts every verified
+interval in1,000-model shards; exact source hashes and full polymer/atom residue
+identity are checked. All atoms are retained, with explicit rejection reasons
+and missing-backbone flags. This is extraction from existing coordinates,
+not new prediction. The old outputs remain reproducible separately.
+
+Four CPU workers,32GiB RAM and no swap are configured. The previous full run
+processed1,078,592 intervals from427,255 models in15,201.92 seconds, producing
+107.82GB of tar archives. Simple interval/model scaling gives6.17–6.20 hours
+for this extraction, not a guaranteed ETA; current load and lengths differ.
+The conservative6–96h and500GiB output allowances remain, with2TiB starting
+and1TiB emergency free-disk gates. More than11TiB was available at planning.
+No GPU or paid infrastructure is used.
+
+The complete atom-level archive readback is queued after verified terminal
+producer success, using the unchanged independent implementation with its own
+four-CPU/32GiB limits. Plans and launch identities are tracked under
+`metadata/domain_coordinate_archive_readback_{plan,launch}_20260928.json`.
+The wrapper requires matching PID/creation time/command and terminal
+success/exit0. Coordinates are not qualified until that audit completes;
+residue confidence, PAE, clustering and evolutionary integration remain
+separate downstream work.

@@ -9894,3 +9894,11 @@ does not establish universal coverage or complete the biological project.
   and1,955,694 protein links. All checksum and receipt bindings passed. Domain
   interval preparation has started automatically; its union/readback and
   subsequent coordinate/confidence analyses remain incomplete.
+
+- September28: full expanded interval manifest and independent SQL-union
+  readback passed for1,575,294 intervals from627,567 models. Launched complete
+  all-atom coordinate extraction with four CPUs/32GiB and queued independent
+  atom-level archive readback. Prior-run proportional scaling suggests about
+  6.2 extraction hours, with conservative load/storage allowances retained.
+  This uses existing models only; GPU inference remains paused. Extraction,
+  archive validation and downstream confidence/clustering work remain pending.

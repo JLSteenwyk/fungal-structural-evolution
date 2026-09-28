@@ -1,0 +1,46 @@
+{
+  "intervals": "results/domains/domain-extraction-manifest-20260928-v1/intervals.tsv",
+  "catalog_models": "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl",
+  "output": "results/domains/domain-coordinates-20260928-v1",
+  "models_per_shard": 1000,
+  "expected_models": 627567,
+  "expected_intervals": 1575294,
+  "environment": {
+    "python": "3.10.13",
+    "biopython": "1.86"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "output_planning_gib": 500,
+    "runtime_planning_hours": [
+      6,
+      96
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "observed_free_disk_bytes": 11916859236352,
+    "prior_elapsed_seconds": 15201.920474805,
+    "prior_models": 427255,
+    "prior_intervals": 1078592,
+    "model_scaled_runtime_hours": 6.202530382332141,
+    "interval_scaled_runtime_hours": 6.167375335529371,
+    "prior_tar_bytes": 107822858240,
+    "basis": "Full unchanged extraction over verified refreshed manifest. Approximately6.2h proportional benchmark estimate at four CPUs; 6\u201396h planning allowance retained for load and model-size variation.500GiB output allowance vs approximately158GB interval-scaled tar estimate."
+  },
+  "pins": {
+    "results/domains/domain-extraction-manifest-20260928-v1/intervals.tsv": "044221cbcf9585600f66a894caa9115d7a2dfe72ebf221ce1a94afb79513540a",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+    "results/domains/domain-extraction-manifest-20260928-v1/receipt.json": "84081d30a4d2fbc4ee0c9261c0a33295119007f3fab36db17fc2decd75893c94",
+    "metadata/domain_extraction_manifest_readback_20260928.json": "4bd0b3a11a780ac30f53c826ab9e079e32f275dc07793c03f77ebd819db454af",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/check_domain_coordinate_extraction.py": "93370d0cde737e42cbffa13a421339bb40b961f2121351fa3a5613407ec2495b",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/domains/domain-coordinates-20260923-v1/state.json": "3a2ab5d4288d3fdc3b7f820abc32b1ad3e3a7995ca59087efdbab8d8a3e2d166",
+    "metadata/whole_proteome_structure_domain_registry_completed_20260928.json": "e17fe9d026c9a5374d196e4aa531cb897ced0b8902058ba174beb15015a8cbb4"
+  }
+}
