@@ -9773,3 +9773,8 @@ does not establish universal coverage or complete the biological project.
   Maximum length is 5,502 aa. These are marker gaps, not a whole-proteome
   prediction count or proof that public models do not exist. GPU inference
   remains paused; increased overall download coverage has not closed these gaps.
+
+- September 28: generated and visually inspected PDF/PNG residual-reference
+  figures spanning all 16 synthetic conditions and both covariance treatments.
+  The complete 256-row summary table accompanies the figure. All artifact
+  checksums passed; empirical simulation ranges are labeled explicitly.

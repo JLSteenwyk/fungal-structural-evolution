@@ -983,3 +983,12 @@ two synthetic designs and eight generating variance configurations are covered.
 Artifacts are in `results/model_validation/matched-simulation-residual-reference-20260928-v1`;
 completion and readback hashes are recorded in
 `metadata/matched_simulation_residual_reference_completed_20260928.json`.
+
+The inspected figure `results/figures/matched-residual-reference-20260928-v1/residual_fourth_moment.pdf`
+(and PNG) shows all 16 design/variance conditions in two panels, comparing
+empirical medians and 2.5%–97.5% ranges for generating versus fitted covariance.
+Axes include every plotted range and begin at zero. The normal fourth moment
+of three is a reference line, not a rejection criterion. All 256 source summary
+rows are copied alongside the figure with checksum binding. The figure's
+caption identifies the ranges as empirical simulation summaries and explicitly
+excludes confidence-interval or fungal-data threshold interpretations.
