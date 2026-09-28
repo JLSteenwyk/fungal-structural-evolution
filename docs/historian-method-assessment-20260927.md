@@ -200,3 +200,25 @@ Implementation: `scripts/compare_historian_largest_family.py`, with matching
 plan and launch metadata. One CPU, 4 GiB RAM, no swap, 0.1 GiB output and
 0.01–0.5 hours after the audits are allowed. No new inference or GPU work
 is launched by this comparison. The process is verified live and waiting.
+
+## Complete four-alternative largest-family comparison
+
+Both FAMSA retries and their independent audit completed successfully. Their
+non-root branch-floor edit distances are 8, 14 and 19 at levels 0–2; the
+assumed-root distance is 16. Combined with the completed MAFFT retries, all
+16 one-factor candidate comparisons change sequence. Across the six non-root
+alignment comparisons, edit distances range from 8 to 22; across the six
+non-root floor comparisons, they range from 8 to 19. Four additional
+comparisons concern the assumed root and remain marked separately.
+
+All source and output hashes were checked, and a separate rolling dynamic
+program reproduced all 16 edit distances from the retained sequences. Both
+alignments contain the same 622 ungapped extant proteins; candidate descendants
+and same-floor tree hashes are identical. The differences therefore concern
+reconstruction sensitivity, not differences in the input protein sampling.
+Approximate profile histories, selected traceback and fixed model settings
+still limit interpretation. No alternative is qualified as a historical
+ancestor by these diagnostic results. Original memory failures remain in the
+capacity-grid record. Completed evidence is in
+`metadata/historian_largest_family_comparison_completed_20260927.json` and
+`metadata/historian_famsa_memory_retry_audit_completed_20260927.json`.

@@ -49,8 +49,10 @@ The [Historian assessment](docs/historian-method-assessment-20260927.md) records
 an important limitation: both higher-memory MAFFT retries for the 622-protein
 family pass output checks, but changing the minimum branch length changes the
 three non-root candidate ancestors by 10–15 ungapped edits. These are numerical
-sensitivity measurements, not biological events. FAMSA retries remain in
-progress; all original capacity failures and alternative outputs are retained.
+sensitivity measurements, not biological events. Both FAMSA retries also passed
+output checks. The complete four-alternative comparison finds 8–22 ungapped
+edits between non-root candidates across alignments and 8–19 across branch
+floors. All original capacity failures and alternative outputs are retained.
 
 All 324 BAli-Phy initializations passed model-code and initial-score checks;
 full runtime input-equivalence checks identify 135 distinct effective inputs.

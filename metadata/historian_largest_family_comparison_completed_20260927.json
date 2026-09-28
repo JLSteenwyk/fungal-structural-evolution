@@ -1,0 +1,52 @@
+{
+  "status": "complete_four_alternative_diagnostic_comparison",
+  "comparisons": 16,
+  "changed": 16,
+  "maximum_edit_distance": 22,
+  "pins": {
+    "metadata/historian_largest_family_comparison_plan_20260927.json": "1582d7a3da498c95845976959a3581438b8393b1b8632f78ae942876fef3e63f",
+    "results/ancestral/historian-memory-retry-final-readback-20260927-v1/receipt.json": "1321a02f2b22f5bcf62a51876a6e70b6af9ffa6a4ffe47473e63825402ad6cf1",
+    "results/ancestral/historian-memory-retries-20260927-v1/OG0000972-whole-mafft-floor1e-09-resolution0/receipt.json": "1096cebf3dcdbb9f83d2bf19fef19a8435310eb5e9bbadcf46cf2f13d1315aff",
+    "results/ancestral/historian-memory-retries-20260927-v1/OG0000972-whole-mafft-floor1e-07-resolution0/receipt.json": "b6eff8df52d80dea57b2d0e56f9a50e7446624f2329e933face81b8e8f077d79",
+    "results/ancestral/historian-famsa-memory-retry-final-readback-20260927-v1/receipt.json": "874845a0012dc27f60705e13138b6e8254bddd6794e25dbcf74f4f7fee3e7084",
+    "results/ancestral/historian-famsa-memory-retries-20260927-v1/OG0000972-whole-famsa-floor1e-09-resolution0/receipt.json": "5c86022356a78ef75108902426b0716efd40095a87dc0fdb5262731fbeb060ea",
+    "results/ancestral/historian-famsa-memory-retries-20260927-v1/OG0000972-whole-famsa-floor1e-07-resolution0/receipt.json": "3899b324530b3e4c07fe1e8c41b66560d3dd3ee7b1937a0acc94fc891c73ca92"
+  },
+  "artifacts": {
+    "diagnostic_sequences.json": "f88f775d7b8bc0122593ffd6b119e4f5df7a852760835af8e1b0c9a40f017e63",
+    "comparisons.tsv": "a4aa47e83eaab28a80e8f9a0556a2ae5fe057186ba1c96c5fd41e9d3548eec99"
+  },
+  "scope": "Four complete622-protein alternatives, both alignments and minimum-edge floors. Same ungapped extant inputs and matched candidate descendant sets required.16 one-factor comparisons including four assumed-root comparisons; edit distance is numerical sensitivity, not biological event counts or posterior uncertainty. No qualified ancestral FASTA.",
+  "completed_receipt_path": "results/ancestral/historian-largest-family-comparison-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "7700a192c7ba06fa0e1468fd2fe1c7beafb1e2449bab602297d1e2bcbd2227ff",
+  "independent_rolling_edit_distance_checks": 16,
+  "nonroot_summary": {
+    "alignment": {
+      "nonroot_comparisons": 6,
+      "minimum_edit_distance": 8,
+      "maximum_edit_distance": 22
+    },
+    "branch_floor": {
+      "nonroot_comparisons": 6,
+      "minimum_edit_distance": 8,
+      "maximum_edit_distance": 19
+    }
+  },
+  "verified_terminal_states": {
+    "fungal-historian-famsa-memory-retries-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-historian-famsa-memory-retry-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-historian-largest-family-comparison-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}
