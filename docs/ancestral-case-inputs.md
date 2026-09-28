@@ -1238,3 +1238,38 @@ Reproducibility: `scripts/compare_refined_whole_domain_probabilities.py` and
 and provenance are recorded in
 `metadata/refined_whole_domain_probability_comparison_completed_20260927.json`
 and `metadata/refined_whole_domain_probability_readback_completed_20260927.json`.
+
+
+### Localization and dependence of opposing context calls
+
+The 104 opposing high-support comparisons reduce to **three exact extant
+residue-coordinate signatures across five source-tree nodes**, not 104
+independent sites. The grouped results retain every available comparison at
+each signature, including those without opposing high support:
+
+| Family | Source node | Whole → domain state | Opposing / available comparisons |
+| --- | --- | --- | --- |
+| OG0001203 | n36 | H → T | 8 / 48 |
+| OG0001203 | n37 | H → T | 28 / 48 |
+| OG0002650 | n619 | Y → M | 20 / 24 |
+| OG0002650 | n620 | A → V | 24 / 24 |
+| OG0002650 | n622 | A → V | 24 / 24 |
+
+Arrows indicate a change in the estimate between analysis contexts, not an
+evolutionary substitution. The two H/T nodes share one coordinate signature;
+the two A/V nodes share another. All seven observed residues in the retained
+A/V coordinate set are valine, but the whole-protein analysis also includes
+other proteins and sequence context. This does not establish the cause of
+the conflicting alanine estimate. The H/T and Y/M signatures contain 14 and
+13 observed residues, respectively. Missing/gapped proteins are not represented
+by those coordinate counts.
+
+`scripts/localize_ancestral_context_conflicts.py` verifies each signature
+against original protein positions, stores every gene/position/residue, and
+retains all model/bound/method comparisons for these groups. The output
+`results/ancestral/ancestral-context-conflict-localization-20260927-v1/conflict_dossiers.json`
+is checksum-bound by
+`metadata/ancestral_context_conflict_localization_completed_20260927.json`.
+Grouping removes duplicate settings from descriptive site counts, but shared
+nodes, data and parameters still preclude treating the groups as independent.
+These sites require contextual review before mechanistic interpretation.
