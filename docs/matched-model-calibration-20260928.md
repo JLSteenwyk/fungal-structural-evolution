@@ -320,3 +320,20 @@ with one CPU,8GiB memory,no swap,0.1GiB output and1–120active minutes budgeted
 Plan and launch metadata use `matched_refit_shortcut_comparison_`. Results are
 pending and these size-selected cases cannot establish global equivalence or
 a representative whole-project speedup.
+
+## Paired optimizer comparison completed
+
+The comparison reached inactive/success/exit0, and all15 paired output hashes,
+candidate counts, estimate comparisons, diagnostic flags and timing arithmetic
+were read back. All checked agreements passed. The largest absolute fitted
+objective difference was1.82e-12. Original total measured time was210.94seconds
+versus196.03seconds with the shortcut, a7.07% reduction over these cases.
+Individual speed ratios ranged from0.99 to2.52. There is only one timing per
+response, so host-load variation remains and no statistical runtime claim is
+made. Evidence is in
+`metadata/matched_refit_shortcut_comparison_completed_20260928.json`.
+
+The shortcut is a modest implementation improvement on this selected set. It
+does not justify applying the earlier6-fold fixed-point improvement to the
+full calibration estimate, and it does not resolve the very large refit count.
+Existing active production fits were not replaced or restarted.
