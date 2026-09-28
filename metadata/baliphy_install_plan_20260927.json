@@ -1,0 +1,23 @@
+{
+  "version": "4.3",
+  "release_url": "https://github.com/bredelings/BAli-Phy/releases/tag/4.3",
+  "release_published_at": "2026-09-12T22:18:56Z",
+  "archive_url": "https://github.com/bredelings/BAli-Phy/releases/download/4.3/bali-phy-4.3-ubuntu-24.04.tar.gz",
+  "archive_sha256": "cbd362d0cc35ab9a498c80d306707a627545427f74842bc42f74e5cf00808ec6",
+  "archive_bytes": 42402075,
+  "output": "data/software_audits/baliphy-4.3-20260927",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "output_gib": 1,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/install_baliphy_local.py": "d78bf8384504a484e7530811b09299d7e110b5b021aa44498318ee6aba764cf7",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

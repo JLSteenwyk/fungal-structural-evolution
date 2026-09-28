@@ -9469,3 +9469,22 @@ This closes a missing *execution stage*, not a validation milestone. Best-fit
 refinement, posterior propagation and comparison remain downstream. Historian
 capacity and indel-history qualification proceed independently; ancestral
 structures and the other project aims remain incomplete.
+
+### 2026-09-27: expanded Historian readback and joint-sampler installation
+
+Independent readback now covers 70/324 capacity jobs and 1,532 candidate-node
+comparisons, all with zero observed ungapped sequence edits. The snapshot is
+partial, with all254 pending dispositions retained. Artifact hashes checked.
+Whole-protein alternate-start fitting and both queued audits remain active.
+
+Source inspection establishes that Historian's collapsed transitions retain
+representative alignments while summing path weights; root-only random
+traceback would not restore full descendant-history sampling. This limits
+its role in propagating ancestral uncertainty; no custom sampler was added.
+
+Installed the official BAli-Phy4.3 Ubuntu24.04 release locally, verified against
+the publisher's archive digest, and captured version/help information. No
+project MCMC has been launched. Input capacity, exact model settings, priors,
+chain convergence and sample-to-node mapping remain open. See
+[method assessment](baliphy-method-assessment-20260927.md). All selected families
+remain in scope; no ancestors or structures are declared final. GPUs paused.

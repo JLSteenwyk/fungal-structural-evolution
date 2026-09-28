@@ -112,3 +112,19 @@ Root placement, model fitting, approximation sensitivity and joint history
 uncertainty remain necessary even if every capacity check passes. Comparing
 these equally enumerated resolutions is a sensitivity assessment, not a
 posterior weighting of tree histories.
+
+## Additional uncertainty limitation from source inspection
+
+`ForwardMatrix::bestTrace` explicitly describes its traceback as not quite
+Viterbi (`src/forward.h`). It selects predecessors using forward sums. In
+`makeProfile`, an effective transition sums probabilities over eliminated
+paths but retains one representative `bestAlignPath` for sequence output
+(`src/forward.cpp`). Consequently, changing only the root traceback to random
+sampling would not recover all eliminated descendant alignment histories.
+Calling such a modification a joint-history posterior sampler would be
+unjustified. No source modification or new sampler was made.
+
+A second independent output snapshot checks 70 finished runs, leaving 254
+pending. All available checks pass; all 1,532 one-factor candidate comparisons
+have zero ungapped edit distance. This includes available star resolutions,
+but is neither completion of the grid nor validation of posterior uncertainty.
