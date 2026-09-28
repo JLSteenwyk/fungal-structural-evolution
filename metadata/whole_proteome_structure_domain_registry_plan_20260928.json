@@ -1,0 +1,34 @@
+{
+  "models": "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl",
+  "protein_links": "results/structures/whole-proteome-afdb-catalog-20260928-v1/protein_model_links.tsv",
+  "architectures": "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite",
+  "output": "results/domains/whole-proteome-structure-domain-registry-20260928-v1",
+  "expected_models": 1910138,
+  "expected_protein_links": 1955694,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 100,
+    "output_planning_gib": 20,
+    "runtime_planning_hours": [
+      0.5,
+      24
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Unchanged full registry algorithm over 1.48 times the prior model count; conservative resource allowances, no new structure inference."
+  },
+  "pins": {
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/protein_model_links.tsv": "a3ca5564d25f31cc701e9959f4ed39682231c59cbe61d8b16809cf1938ff2e78",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "scripts/build_structure_domain_registry.py": "f5806dea8e4a8a0a0561c7c04c5b882a3a1bcca99523c02dbdd98053ff092160",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "metadata/family_domain_bridge_completed_receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47"
+  }
+}

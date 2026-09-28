@@ -561,3 +561,29 @@ with their respective `scripts/annotate_domain_cluster_composition.py` and
 `metadata/domain_cluster_composition_readback_plan.json` via `--plan`.
 Existing outputs are protected; new runs require fresh output paths and
 updated pinned plans/process identities.
+
+## September28 expanded-catalog registry refresh
+
+The independently validated1,910,138-model/1,955,694-protein-link catalog is
+now entering the unchanged full domain-registry workflow. All four policies,
+Pfam types, alignment/envelope boundaries and conservative-candidate flags
+remain explicit. The11GiB annotation database and original script hashes were
+verified against the previous plan before preparing new immutable inputs.
+The original registry and all downstream analyses remain preserved.
+
+New production plan:
+`metadata/whole_proteome_structure_domain_registry_plan_20260928.json`;
+output `results/domains/whole-proteome-structure-domain-registry-20260928-v1`.
+Resources are one CPU,24GiB RAM, no swap,20GiB planned output and a100GiB
+minimum free-disk gate. The0.5–24h allowance is conservative and uncalibrated,
+reflecting approximately1.48 times as many models as the prior registry.
+No GPU, paid infrastructure or new structure inference is used.
+
+Independent row reconstruction is queued under
+`metadata/whole_proteome_structure_domain_registry_readback_plan_20260928.json`.
+The new waiting wrapper verifies process identity and requires terminal
+systemd success/exit0 before invoking the unchanged full registry readback.
+Launch records bind process IDs, creation times, commands and plan hashes.
+Both stages are active/pending at this checkpoint; no expanded domain counts,
+new coordinate extraction, confidence qualification or evolutionary events
+are claimed. Existing domain clusters still describe the older frozen input.

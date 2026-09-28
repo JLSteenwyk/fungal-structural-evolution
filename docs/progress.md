@@ -9873,3 +9873,10 @@ does not establish universal coverage or complete the biological project.
   differences and transition flags are preserved and read back; overlapping
   guide counts are not pooled. Confidence qualification and evolutionary
   inference remain downstream requirements.
+
+- September28: launched full domain-registry refresh over the validated
+  1,910,138-model atlas using the unchanged four-policy annotation workflow.
+  Original source/script hashes passed; producer and queued independent
+  reconstruction each have one CPU/24GiB limits and no GPU use. This advances
+  new model coverage toward domain-level comparisons while preserving older
+  registries and analyses. Expanded registry results remain pending.

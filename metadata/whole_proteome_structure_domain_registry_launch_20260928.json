@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-structure-domain-registry-20260928.service",
+  "pid": 2176235,
+  "created": 1790623993.24,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_structure_domain_registry.py",
+    "--plan",
+    "metadata/whole_proteome_structure_domain_registry_plan_20260928.json"
+  ],
+  "plan_sha256": "e7a9790c28c21febc77351108d8a7c3b0d0afb03ef7f486aaa5e95094cb0d48d",
+  "observed_state": {
+    "MainPID": "2176235",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "25769803776",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-structure-domain-registry-readback-20260928.service",
+  "pid": 2176982,
+  "created": 1790624022.93,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/advance_refreshed_domain_registry_readback.py",
+    "--plan",
+    "metadata/whole_proteome_structure_domain_registry_readback_plan_20260928.json",
+    "--launch",
+    "metadata/whole_proteome_structure_domain_registry_launch_20260928.json"
+  ],
+  "plan_sha256": "d7b4eb4a528c0211ac21a1b517375d1d05acb190de5c80ecc050f52afd555e3a",
+  "observed_state": {
+    "MainPID": "2176982",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "25769803776",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}
