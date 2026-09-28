@@ -1,0 +1,10 @@
+{
+  "status": "eleven_queue_and_inherited_handoff_tests_passed",
+  "tests": 11,
+  "command": "OPENBLAS_NUM_THREADS=1 /home/bizon/anaconda3/bin/python -m unittest discover -s scripts -p test_ancestral_categorical_queue.py -v",
+  "pins": {
+    "scripts/advance_ancestral_categorical_diagnostics.py": "03393393d86922cf8405c1798e5b5e816886a51e9776835f4396cb85de5efd8e",
+    "scripts/test_ancestral_categorical_queue.py": "e96d55dcd7b0df8ca87516f061fba0074c032994ccff5b14488e3138ca334a2e"
+  },
+  "scope": "Includes real isolated worker through both cutoff reports and successful attempt reuse; missing extraction and duplicate seeds rejected. Synthetic tests do not qualify production posteriors."
+}

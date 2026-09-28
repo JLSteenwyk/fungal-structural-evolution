@@ -154,5 +154,44 @@ python scripts/prepare_ancestral_state_quartet_report.py \
   --python SOFTWARE/ancestral-diagnostics-20260927/bin/python
 ```
 
-No production group has been diagnosed by these fixture runs. Full-grid
-resource planning and automated scheduling remain outstanding.
+The full 405-model categorical queue is now active. At launch, 163 chains had
+verified state extractions but no group had all four chains ready. Therefore
+no production quartet is yet diagnosed. The controller checks both producer
+and extraction process identities and waits for four successful handoffs;
+full source verification then precedes each report. Failed or unavailable
+groups remain explicit. It never restarts either producer.
+
+The complete input inventory has 24,497,076 node/anchor coordinates per cutoff
+(maximum 1,139,968 in one model). Treating every coordinate as a distinct
+trajectory at both cutoffs gives 48,994,152 patterns. Applying the largest
+measured synthetic per-pattern times gives a planning scenario of 424 CPU-hours
+and about 329 GiB of uncompressed report text. These are not hard bounds or
+convergence forecasts; quartet compression and data complexity remain unknown.
+Single-chain compression was not used to forecast quartet compression.
+
+The queue allows four concurrent reports, four CPU cores, 64 GiB RAM, no swap,
+16 GiB address space per process, a 48-hour limit per report, a 512 GiB storage
+allowance and at least 768 GiB free disk before launching a report. The active
+processing allowance is 12–336 hours, excluding waits for inference chains.
+No GPU or paid resources are used.
+
+Eleven queue/handoff tests passed, including an isolated synthetic worker
+through both complete reports and verified reuse of its successful attempt,
+as well as duplicate-seed rejection and waiting on failed/missing extraction.
+Fixtures do not qualify any production posterior.
+
+Reproduce the scheduler with:
+
+```bash
+/home/bizon/anaconda3/bin/python scripts/advance_ancestral_categorical_diagnostics.py \
+  --plan metadata/ancestral_categorical_queue_plan_20260928.json
+```
+
+The immutable plan, launch identity, complete coordinate inventory and tests
+are recorded in `metadata/ancestral_categorical_queue_plan_20260928.json`,
+`metadata/ancestral_categorical_queue_launch_20260928.json`,
+`metadata/ancestral_categorical_full_resources_20260928.json` and
+`metadata/ancestral_categorical_queue_checks_20260928.json`.
+Outputs go to `results/ancestral/full-categorical-diagnostics-20260928-v1`.
+Joint homology/alignment mixing, longer horizons where indicated, root/prior
+sensitivity and posterior qualification remain required.

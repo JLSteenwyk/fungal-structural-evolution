@@ -80,7 +80,7 @@ estimates, recovery tests, launch records and completion requirements.
 An [extant residue-anchor projection](docs/ancestral-residue-anchors-20260928.md)
 passed checks on all 405 saved short-run alignments and 1,620 candidate
 sequence reconstructions. It provides coordinates for cross-chain assessment;
-ancestral-state and homology mixing diagnostics remain unfinished.
+ancestral-state and homology mixing diagnostics remain unfinished. The [full categorical diagnostic queue](docs/ancestral-categorical-diagnostics-20260928.md) is active for all 405 models and waits for four verified chains per model.
 
 Independent FastML replay now covers all 153 nonempty inputs and 8,058,340
 probabilities. Three one-character cases exposed a stale ascertainment cache

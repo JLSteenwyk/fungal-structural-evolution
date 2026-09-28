@@ -50,6 +50,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   quartet is complete in that frozen subset, so convergence remains unproven.
   Automatic state extraction now covers the full 1,620-chain design; the first
   seven corrected handoffs exactly match the independently verified arrays.
+  The [full categorical diagnostic queue](ancestral-categorical-diagnostics-20260928.md)
+  is now active across all 405 four-chain models. At launch, 163 extracted
+  chains were available but no quartet was complete; no convergence claim.
 - Primary whole-protein production finished all 412,800 dispositions. The strict
   audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
   to two-residue mappings. All 327 short mappings passed separate analytic checks
