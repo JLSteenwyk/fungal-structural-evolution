@@ -1401,3 +1401,28 @@ All original domain-coordinate categories and repeated contexts are retained.
 Reproduction: `scripts/map_ancestral_conflicts_to_experimental_coverage.py`.
 Evidence: `metadata/ancestral_conflict_experimental_coverage_completed_20260927.json`;
 full annotations: `results/ancestral/ancestral-conflict-experimental-coverage-20260927-v1/`.
+
+
+### Deposited-coordinate neighborhoods of the mapped experimental Y34
+
+All eight Y34 instances (chains A–D of 4F03 and 4G19) have 12 distinct
+heavy-atom names. Their focal CA coordinates exactly reproduce the prior
+mapping. The closest water is 2.44–2.95 Å away; the nearest non-water,
+non-polymer/branched molecule is 10.38–21.23 Å away. Thus none of those
+non-water molecules lies within the declared 5-Å neighborhood in these
+deposited coordinates. This does not exclude binding in another conformation,
+a biological assembly, or an unobserved state.
+
+One instance, 4F03 chain D, has another polymer chain within 5 Å (3.70 Å);
+the other seven do not. Assembly and crystallographic symmetry were not
+expanded, so this is not evidence of a biological interface. All same-chain
+nonadjacent-residue and water contacts within 5 Å are retained in the output,
+along with the nearest record in each category and atom/occupancy/alternate
+identifiers. All positive-occupancy heavy-atom alternatives were retained;
+minimum distances need not correspond to one jointly occupied conformation.
+
+Every vectorized atom minimum was checked with a separate scalar distance
+calculation. The analysis describes experimental homolog Y34; it does not
+transfer that side-chain geometry to fungal Q32 or the uncertain ancestral
+H/T states. Reproduction: `scripts/describe_conflict_experimental_neighborhoods.py`.
+Evidence: `metadata/ancestral_conflict_experimental_neighborhoods_completed_20260927.json`.
