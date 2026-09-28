@@ -48,7 +48,11 @@ probable amino acid, with no opposing calls supported at least 90% in both
 fits. One site has a large support shift despite a slightly worse likelihood;
 the selected refined fit agrees closely with the baseline there. These are
 conditional estimates; model adequacy and joint insertion/deletion uncertainty
-remain unresolved.
+remain unresolved. Whole-protein versus domain fits additionally yield 104
+opposing high-confidence calls across three exact coordinate sets and five
+ancestral nodes. Of these dependent comparisons, 48 lack observed descendant
+residues at the domain position; residue confidence does not establish
+ancestral residue presence. See the [coverage audit](docs/ancestral-case-inputs.md).
 
 The full 324-configuration Historian diagnostic grid has checked outputs:
 320 original runs and four successful higher-memory retries. Original failures

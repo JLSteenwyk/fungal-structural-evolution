@@ -1,0 +1,45 @@
+{
+  "status": "complete_all_matched_site_descendant_coverage",
+  "comparisons": 269154,
+  "coverage_classes": {
+    "both_have_known_descendants": {
+      "comparisons": 249882,
+      "map_disagreements": 7536,
+      "opposing_at_least_090": 56
+    },
+    "whole_only_has_known_descendants": {
+      "comparisons": 3678,
+      "map_disagreements": 1894,
+      "opposing_at_least_090": 48
+    },
+    "neither_has_known_descendants": {
+      "comparisons": 15594,
+      "map_disagreements": 890,
+      "opposing_at_least_090": 0
+    }
+  },
+  "pins": {
+    "results/ancestral/refined-whole-domain-probability-comparison-20260927-v1/receipt.json": "1b288ccf99e796b9c0f5ae5d2885ebee058e83c12a19c88bafdc2a6f9eb6c514",
+    "metadata/refined_whole_domain_probability_readback_completed_20260927.json": "5cba6a6c00d4300265754eaf32f85042e03228c022e81fff07c752e2c336adb1",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "results/ancestral/case-alignments-20260927-v1/receipt.json": "21129091f9184e1c48f89ac601dcd61cf5fcbd4b2c65d7650a0c4e1d8576fec8",
+    "results/ancestral/case-domain-alignments-20260927-v1/receipt.json": "5e50f09dac4ac9ef2532d41e5df62f69f228b8901f9edfda86b0be057e216ad7"
+  },
+  "script_sha256": "547e1945917747a5d1d2f877d0ebde26f634d1fafbb30a4f12b527d4f6ace9bb",
+  "artifacts": {
+    "coverage_summary.tsv": "10af68d0180ce56e96c9d5f6d1fad2e1ead8d3d3a5ed38b59b4095c33b4b4f2d",
+    "site_coverage.tsv.gz": "2652e02a119582da1f629af2a245294abd1ebf4c9848bc4f1f6844bbaf8bee45"
+  },
+  "scope": "All existing exact-matched comparisons retained. Known canonical residues counted separately from X and gaps among mapped descendants. This is observed coverage, not ancestral presence probability, phylogenetic effective sample size, or a correctness filter; outside-descendant tips also inform ancestral marginals. Counts repeat models, bounds, methods and nodes.",
+  "completed_receipt_path": "results/ancestral/ancestral-context-coverage-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "a0de254b86f8b0d0fb844cec32b5e70fee060c5cd62cf892351dadef2dd174ff",
+  "separate_full_string_readback": {
+    "records_checked": 269154,
+    "coverage_classes": {
+      "both_have_known_descendants": 249882,
+      "whole_only_has_known_descendants": 3678,
+      "neither_has_known_descendants": 15594
+    },
+    "method": "Direct per-character counts from original FASTA strings at every emitted coordinate; no NumPy coverage matrices reused."
+  }
+}

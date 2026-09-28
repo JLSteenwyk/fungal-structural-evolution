@@ -1306,3 +1306,31 @@ Reproducibility: `scripts/inspect_ancestral_conflict_observations.py`, with
 complete observations under
 `results/ancestral/ancestral-conflict-observations-20260927-v1` and checksums in
 `metadata/ancestral_conflict_observations_completed_20260927.json`.
+
+
+### Full matched-site descendant coverage stratification
+
+The local-coverage check now covers all 269,154 matched whole/domain
+ancestor-site comparisons, retaining every comparison. Canonical amino acids,
+unknown X characters and gaps are counted separately among each candidate's
+mapped descendants. Counts were reproduced for every emitted record using
+direct character inspection of the original FASTA strings, independently of
+the vectorized coverage matrices.
+
+| Known descendant residues at the matched position | Comparisons | Most-probable state disagreements | Opposing calls ≥0.9 |
+| --- | ---: | ---: | ---: |
+| Present in both contexts | 249,882 | 7,536 | 56 |
+| Present only in whole-protein context | 3,678 | 1,894 | 48 |
+| Absent in both contexts | 15,594 | 890 | 0 |
+
+The 48 opposing calls without local domain residues correspond to the two
+A/V nodes already localized. The other 56 opposing calls have at least one
+known descendant residue in both contexts; observed presence alone does not
+resolve those conflicts. None of these categories establishes ancestral
+residue presence, effective sample size, alignment correctness or model
+adequacy. Tips outside the descendant set also inform marginals. Repeated
+model, bound, method and ancestor comparisons remain dependent.
+
+Reproducibility: `scripts/stratify_ancestral_context_coverage.py`, output
+`results/ancestral/ancestral-context-coverage-20260927-v1`, and full-string
+readback evidence in `metadata/ancestral_context_coverage_completed_20260927.json`.
