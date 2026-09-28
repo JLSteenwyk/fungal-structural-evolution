@@ -9864,3 +9864,12 @@ does not establish universal coverage or complete the biological project.
   GPU inference remains paused. An initial pre-output launch failure caused by
   a plan-generation Python API mismatch was corrected and preserved in the
   launch record. Results remain pending.
+
+- September28: refreshed family integration passed complete independent
+  reconstruction of1,955,694 protein links and every family in both partitions.
+  Full old/new comparison then identified11,437 newly multi-taxon families in
+  profile and11,456 in MAFFT, with no losses of multi-taxon coverage. Both now
+  contain9,045 families with models in at least10 taxa. All per-family rows,
+  differences and transition flags are preserved and read back; overlapping
+  guide counts are not pooled. Confidence qualification and evolutionary
+  inference remain downstream requirements.

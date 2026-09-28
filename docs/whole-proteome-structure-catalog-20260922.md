@@ -330,3 +330,33 @@ No plan was produced, and its initial service exited before creating outputs.
 Preparation was corrected to use the existing project hash helper; the separate
 v2 service is the live replacement. The failed unit and cause are retained in
 launch metadata. No active script or original catalog was modified.
+
+### Refreshed family integration and comparison completed
+
+Both the producer and full independent readback finished with terminal success.
+Every1,955,694 protein/model link and all658,183 profile/658,522 MAFFT family
+rows were reconstructed, including zero-coverage families. The completed
+binding is in `metadata/whole_proteome_family_coverage_completed_readback_20260928.json`.
+
+`compare_refreshed_family_coverage.py` compares every old/new family row while
+requiring unchanged family IDs and protein/taxon denominators. It preserves
+all per-family old/new counts and differences, then reads back all serialized
+arithmetic and multi-taxon transitions. Outputs are in
+`results/structures/whole-proteome-family-coverage-change-20260928-v1` with
+tracked receipt `metadata/whole_proteome_family_coverage_change_20260928.json`.
+
+| Coverage measure | Profile old → new | MAFFT old → new |
+|---|---:|---:|
+| Families with models in at least2 taxa | 30,959 → 42,396 | 30,934 → 42,390 |
+| At least4 taxa | 13,662 → 18,335 | 13,655 → 18,340 |
+| At least10 taxa | 7,333 → 9,045 | 7,333 → 9,045 |
+| At least25 taxa | 4,487 → 5,455 | 4,487 → 5,455 |
+| At least50 taxa | 3,289 → 4,104 | 3,289 → 4,104 |
+| At least100 taxa | 2,239 → 2,947 | 2,239 → 2,947 |
+
+The two partitions respectively gain11,437 and11,456 families with multi-taxon
+coverage;79,934 and79,994 families gain their first model. No family loses all
+models or multi-taxon coverage. These guide counts overlap and must not be
+summed. Sequence/model totals summed across families may repeat entities and
+are not unique atlas counts. Availability thresholds describe sampling, not
+confidence qualification, statistical power or independent transitions.

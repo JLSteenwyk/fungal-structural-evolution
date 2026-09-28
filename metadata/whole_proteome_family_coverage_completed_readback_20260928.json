@@ -1,0 +1,52 @@
+{
+  "status": "completed_refreshed_family_coverage_with_full_independent_readback",
+  "producer_receipt_sha256": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+  "readback_sha256": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+  "terminal_states": {
+    "fungal-whole-proteome-family-coverage-20260928-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-proteome-family-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "protein_links": 1955694,
+  "guides": [
+    {
+      "guide": "profile",
+      "families": 658183,
+      "proteins": 5815847,
+      "structure_proteins": 1955694,
+      "families_with_models_in_multiple_taxa": 42396,
+      "families_with_all_proteins_modeled": 210070,
+      "families_at_minimum_modeled_taxa": {
+        "2": 42396,
+        "4": 18335,
+        "10": 9045,
+        "25": 5455,
+        "50": 4104,
+        "100": 2947
+      }
+    },
+    {
+      "guide": "mafft",
+      "families": 658522,
+      "proteins": 5815847,
+      "structure_proteins": 1955694,
+      "families_with_models_in_multiple_taxa": 42390,
+      "families_with_all_proteins_modeled": 210324,
+      "families_at_minimum_modeled_taxa": {
+        "2": 42390,
+        "4": 18340,
+        "10": 9045,
+        "25": 5455,
+        "50": 4104,
+        "100": 2947
+      }
+    }
+  ]
+}
