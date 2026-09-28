@@ -1,0 +1,36 @@
+{
+  "status": "passed_batched_scalar_and_dense_reml_checks",
+  "dense_response_comparisons": 112,
+  "invalid_input_cases": 4,
+  "zero_response_retained_as_invalid": true,
+  "maximum_dense_objective_error": 7.105427357601002e-15,
+  "benchmark": {
+    "observations": 600,
+    "responses": 64,
+    "design_columns": 5,
+    "species_rank": 20,
+    "trials": [
+      {
+        "batched_seconds": 0.0041585369617678225,
+        "scalar_seconds": 0.027267504017800093,
+        "speed_ratio": 6.556994507560777
+      },
+      {
+        "batched_seconds": 0.0037824749597348273,
+        "scalar_seconds": 0.027406965964473784,
+        "speed_ratio": 7.245775915564862
+      },
+      {
+        "batched_seconds": 0.003880603995639831,
+        "scalar_seconds": 0.02735768200363964,
+        "speed_ratio": 7.049851526818553
+      }
+    ]
+  },
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_batched_matched_reml.py": "d9e94208ef52ac52f5c00ce31680c354f78982de731ae33ab19bfc034567c946",
+    "scripts/batched_matched_reml.py": "31dac96b26a26ca6c9ece00c04e796b94f891b4814c3696d6162a76de5f7c76f",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "scope": "Fixed common covariance only. Timing excludes covariance construction and per-response ratio optimization; cannot extrapolate to full refit speed or calibrated uncertainty."
+}

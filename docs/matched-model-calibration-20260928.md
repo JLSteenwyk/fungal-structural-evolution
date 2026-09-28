@@ -104,3 +104,35 @@ alone cannot replace per-response optimization for fitted-parameter calibration.
 Evaluate any batched implementation against direct likelihood and refit results
 before using its timing for production estimates. The full grid remains in scope;
 no smaller subset is being substituted or declared calibrated.
+
+## Shared-covariance evaluation
+
+`scripts/batched_matched_reml.py` evaluates multiple response columns at one
+fixed variance-ratio vector, reusing the covariance solver and fixed-effect
+information factorization. Each response retains its own fitted coefficients,
+residual quadratic, profiled scale, conditional coefficient covariance and
+REML objective. Residuals are evaluated directly rather than subtracting two
+large cross-products. Invalid residual quadratics receive an explicit invalid
+mask and unavailable objective/scale, without dropping other responses.
+
+The checker compared 112 valid response evaluations against both the original
+scalar evaluator and independently assembled dense covariance calculations,
+covering every zero/nonzero component combination with rank-zero and rank-four
+species factors. Maximum absolute objective disagreement was 7.11e-15. A zero
+response stayed explicitly invalid in each batch, and four malformed input
+cases were rejected.
+
+In three single-thread implementation timings with 600 observations, 64
+responses, five design columns and species rank 20, batch evaluation took
+0.0038–0.0042 seconds versus 0.0273–0.0274 seconds for separate evaluations,
+a 6.56–7.25-fold ratio. Both timings reuse an already constructed covariance.
+They do not benchmark the existing cached optimizer, factor construction,
+large-rank inputs or per-response variance optimization. Consequently they
+do not revise the full-grid refitting estimate. The implementation provides
+reuse at common starts/grid points and conditional-calculation checks; an
+independent optimizer for each response is still necessary for refit calibration.
+
+Reproduce with `OPENBLAS_NUM_THREADS=1 /home/bizon/anaconda3/bin/python
+scripts/check_batched_matched_reml.py`. Checksums and measurements are in
+`metadata/batched_matched_reml_checks_20260928.json`. Existing production
+scripts and running jobs were not modified.
