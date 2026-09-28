@@ -9762,3 +9762,14 @@ does not establish universal coverage or complete the biological project.
   count/arithmetic readback, with zero unresolved cases. Fitted covariance
   changes the distribution of residual summaries; these synthetic references
   do not yet qualify fungal model adequacy or supply transferable thresholds.
+
+- September 28: refreshed every previously cataloged marker gap against the
+  new frozen 1,947,145-record retrieval inventory and independently replayed
+  the complete log in reverse. The 30 cached candidates are unchanged from
+  September27. Residual marker coverage remains 3,626 unique sequences / 3,639
+  taxon-marker records across 508 taxa and 118 markers. Categories remain 3,512
+  canonical sequences above 1,024 aa, 21 longer noncanonical sequences, four
+  canonical sequences at most 1,024 aa, and 89 shorter noncanonical sequences.
+  Maximum length is 5,502 aa. These are marker gaps, not a whole-proteome
+  prediction count or proof that public models do not exist. GPU inference
+  remains paused; increased overall download coverage has not closed these gaps.
