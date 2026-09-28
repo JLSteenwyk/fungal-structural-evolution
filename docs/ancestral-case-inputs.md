@@ -1082,3 +1082,14 @@ plan/launch records use `whole_optimization_probability_comparison`. It has
 one CPU, 4 GiB RAM, no swap, 2 GiB output allowance and a 0.1–2 hour estimate
 after its required audit finishes. The live process is waiting; no comparison
 result is claimed yet.
+
+All 156 best-start whole-protein refinements and their independent likelihood
+audit are now terminal with successful exit status. Every bound output
+artifact was rechecked. Maximum independent likelihood replay error is
+3.5902e-5. Relative to selected starts, the largest gain is 7.7e-6 and the
+smallest change is approximately -1.0e-8; no absolute change exceeds 0.001.
+These results support stability of this additional refinement step, without
+proving a global optimum or model adequacy. The v2 ancestral probability
+producer has begun writing results; complete posterior validation and
+site-by-site comparisons remain pending. The completed audit is recorded in
+`metadata/ancestral_whole_refinement_audit_completed_20260927.json`.

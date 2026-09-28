@@ -1,0 +1,47 @@
+{
+  "status": "complete_156_refinement_reports_and_independent_likelihoods",
+  "maximum_likelihood_replay_error": 3.590184496715665e-05,
+  "fits_with_likelihood_change_above_001": 0,
+  "fits_with_likelihood_change_below_minus001": 0,
+  "maximum_likelihood_change": 7.700000423938036e-06,
+  "minimum_likelihood_change": -9.998984751291573e-09,
+  "audit_plan_sha256": "d1b7d7849db706502d0a1387955640cc6f9b9d5ebda77f5a60e16db9deda4c12",
+  "fits": 156,
+  "warning_lines": 1500,
+  "fits_with_warning_lines": 156,
+  "fits_with_edges_below_1e_5": 126,
+  "source_receipt_path": "results/ancestral/whole-refinements-20260927-v1/receipt.json",
+  "source_receipt_sha256": "2433ac4a0777109ff46471560a20d841cc77760f6dd2d3527c9b091a9b29df56",
+  "plan_sha256": "9f03906c878630924e5b1fb826964e49b85e4d265e6308c338e97bd2823610bd",
+  "frequency_implementation_source": {
+    "url": "https://github.com/iqtree/iqtree3/blob/v3.0.1/alignment/alignment.cpp",
+    "local_path": "data/software_audits/iqtree-3.0.1/alignment.cpp",
+    "sha256": "bede370114744d607f2a46509d12347d93480ca5c99957bb63d8f40e507a75f0"
+  },
+  "script_sha256": "0e950b20c57c17de735ece9a6be2691efd2ad4cd13274a396dbae4307e55e953",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "artifacts": {
+    "fit_readback.tsv": "5c476d925ce28be1e85b8605fe68d19dfa0dee2cb470957b57a9734529bbda56",
+    "warnings.tsv": "20262890c4b6368467d1a6d503c240c48c605669abc6ad8e63f20a9b7ad8dae9",
+    "parameters.json": "b5910ceac1e391b83dc4fe0e9169f5a2df710f7c49e124e48227d030c2c2b0b0"
+  },
+  "scope": "All 156 refinement model labels, tip sets, unrooted edge sets, checkpoint/report likelihood agreement, checkpoint/tree branch lengths, version-specific eight-iteration empirical frequencies, gamma-category means and AIC/BIC arithmetic checked. Warnings and short edges retained. Independent scaled-pruning likelihood replay checked for all156; signed likelihood, gamma and branch changes from selected starts retained. Agreement is not a proof of global convergence or model adequacy; ancestral probabilities remain from the original fits until separately propagated.",
+  "completed_receipt_path": "results/ancestral/whole-refinement-readback-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "7a801a6d5ad847dd91db1de63a453fbea2dc2064b065da77c5ba2a9a08bc9fb3",
+  "verified_terminal_states": {
+    "fungal-ancestral-whole-refinements-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-ancestral-whole-refinement-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}
