@@ -39,4 +39,35 @@ probability agreement alone cannot validate fitted model parameters.
 
 The named snapshot in `metadata/fastml_indel_probability_replay_snapshot_20260927.json`
 contains exact discrepancies and source receipt hashes. The full producer
-remains unchanged and was verified live by PID, creation time and command.
+was unchanged and verified live by PID, creation time and command at that
+snapshot. Its later terminal state is recorded below.
+
+## Full batch terminal readback, September 28
+
+The producer has now attempted all 156 inputs and exited with status 1:
+153 nonempty inputs failed its output validator, and three inputs contained
+no coded characters. All 153 inference subprocesses themselves exited zero.
+The exported Newick represents the root label as comment `[N1]`; the original
+validator required a node name and rejected these trees before checking the
+probability rows. No producer receipts or original outputs were changed.
+
+`scripts/audit_completed_fastml_indel_outputs.py` explicitly reads that root
+comment as the root identity and checks all input/output hashes, node names,
+complete position-by-node grids, probability bounds, and probabilities at
+known observed tip states. This passed across all 153 nonempty inputs and
+8,058,340 probability rows. Unknown tip characters are not required to have
+probability zero or one. Evidence is in
+`metadata/fastml_indel_terminal_readback_20260928.json`.
+
+This resolves the output-identity parsing failure, not the likelihood
+discrepancy above. Independent replay of the entire batch, resolution of
+ascertainment-cache behavior, and optimization validation remain pending.
+These outputs are not a qualified ancestral ensemble.
+
+```bash
+python scripts/audit_completed_fastml_indel_outputs.py \
+  --output metadata/fastml_indel_terminal_readback_20260928.json
+```
+
+Use a fresh output path for a repeated audit. The command verifies the
+preserved failed producer state as well as the output artifacts.

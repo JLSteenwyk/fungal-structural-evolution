@@ -1,0 +1,1565 @@
+{
+  "status": "completed_output_readback_not_likelihood_validation",
+  "producer_terminal_state": {
+    "MainPID": "0",
+    "Result": "exit-code",
+    "ExecMainStatus": "1",
+    "ActiveState": "failed"
+  },
+  "plan_sha256": "948aa9500ddeb7444ad92f24084433c2e1e0664dd023a77720755700eaeb2668",
+  "terminal_receipt_sha256": "e65197c04faa223b2b4f6b528264c26b146ab076b73ce762b0119394f646a27f",
+  "script_sha256": "76d892fe60c6fb7f63d979ee2d70ddd4182104210b6b510ee769b981a3849de3",
+  "jobs": [
+    {
+      "job_id": "OG0000054-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b137fc5de47b1751c56486d89dd705b95b030440cf4d31aec26b2b0de12f6f17",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 160,
+      "known_tip_probabilities": 63,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "672c508363831e9331e87bd3f6b91034f8f44f5db725f08d6a9f0833b215464f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "efe9ff725f6f80995dad57f7bc6de2322247fba5ab25c421febb021751e08548",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 160,
+      "known_tip_probabilities": 63,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "82e77952969195a90fc8fecac7bf766f22997f5fdc5f0d885a0bdb7059da0395",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "143fcf4e8c1b23f456b56aef77e74e59c9e79654da01e5d0054d008082684f5c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 100,
+      "known_tip_probabilities": 44,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "221c8726ca595204194238f537d00f68e6c276cd3480a08ac8e3affe5210afbf",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ac5783c5faf9c7c8daef8a478dd357c08499ac5fad314a818496b18dda93b7a1",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 100,
+      "known_tip_probabilities": 44,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "6d10c5ab52edb9f4d07ae5bada949698e6a8a2bd511f0e022f392362d23a7362",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b112ae34c4aff86fc01981ed85aec210d71f968ae55b275529b754164425dc2f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 240,
+      "known_tip_probabilities": 108,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "26dbcf124f052b5d2c336169716cacf83c860c5a7fe64c0daa0647a1ecc4e194",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 120,
+      "known_tip_probabilities": 64,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b30e1360217f631c7f9238ca4728b5d6bdf8be8970b016cd722d959a9adb4964",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 240,
+      "known_tip_probabilities": 107,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000054-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "08858d7cc57de49581e32cb54764b1c80a65deb90e54da9c30793621db39a55a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 120,
+      "known_tip_probabilities": 63,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "f0490bc1b7000d9679af0581814d76e935eada8d2b16ed4536ef6edc69911c4f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 10004,
+      "known_tip_probabilities": 2214,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "4d459b041da12d83ee21d2b04740abd3670725a723368c92378e7aaa408d56aa",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 7708,
+      "known_tip_probabilities": 1359,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "cc30d219906bc0f774c01da9698fa2aa29d01a2319c0bd210fe5308ad09b602a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 7544,
+      "known_tip_probabilities": 1826,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ca8710611754820a1856d7847906069672b2f392954e5b692a16464b5ef3f6b4",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 5248,
+      "known_tip_probabilities": 971,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "236286c0b3193ca19b43edf5ae70e4f4e0c5cfaed209e179a536842c478bc255",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 10496,
+      "known_tip_probabilities": 2871,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b4e35d3bb25c9340c7e9ba62d74e041ea3395a6c725865c65e960784c6d3a585",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 7544,
+      "known_tip_probabilities": 1701,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e264c7983a7972bd42986d44851a2d49864118ae1bdc96fc3115ace520f1ff3b",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 8036,
+      "known_tip_probabilities": 2438,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b6d7b003a2530636e8c90b48ca2552a8ce987b58d52928ac71589e3696dadf4c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 5248,
+      "known_tip_probabilities": 1307,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "16e110ec8b7a04dbb6d168125faaf316c8429a141b42e9625ed47e86fb03f86e",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 72652,
+      "known_tip_probabilities": 20521,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "6d635aca758dbe767ed1fc599f35fc19cc833fcae333c87843e49ae98712933d",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 68388,
+      "known_tip_probabilities": 19449,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c4fca3ee814c9ee4442059c771bdbaa14b1096b67ae045ddab0eca08ff209a93",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 47560,
+      "known_tip_probabilities": 16091,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "3860b7b060b797a098612cd96f98131d3bc66b086120d100b9dbaac3119e9316",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 46740,
+      "known_tip_probabilities": 15694,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "86c5be517b158cbed43b38f453322799ff4f5b16f2fb09b885cdb4a6cf10d710",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 112,
+      "known_tip_probabilities": 54,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "da94dee1b4f404a65a1a4e352d1815a01bf9ebf24e69c0d42a5ec72904c142c1",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 64,
+      "known_tip_probabilities": 28,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ad2e6b5ac5fb52fcfe5acd6be14630f7ee2e94248899c7243a32b67be2ccf58c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 112,
+      "known_tip_probabilities": 61,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "688b7d88e6165efbdd817dde05ea776fa4831b77278e780c9334a6e6de43ecf9",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 64,
+      "known_tip_probabilities": 35,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "cba39d4a36e1dee1ca7ec769cfc7e1495b3c85edf965f478b3ce0e28e0df1923",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 80,
+      "known_tip_probabilities": 38,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9694f140cf649311f1a30413d368a553928ebc44f104cd26b79ddab1bf59c89e",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 64,
+      "known_tip_probabilities": 29,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9cc869dbe932188a89f0c09c67cfbe54b48d08b1e19509cfbb22ccb34239136b",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 80,
+      "known_tip_probabilities": 40,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "19b13bb9a47981326a629a4b2c56f6fc549324f515defba4f33b439ef79fc7e3",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 64,
+      "known_tip_probabilities": 31,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c6086ed89969ae9ed4ead3094e73516b17d3554ef82b76bc505ff072e84bf3b6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 816,
+      "known_tip_probabilities": 338,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "7636d8ccfa759f73945e4100b9167693ed8616e3aab9fcff9803d76b5fd60648",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 736,
+      "known_tip_probabilities": 312,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9a85ff923e9e41e8aaf123c9726c3c6a0dae1a48af01baa8876a9934b94a1496",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 912,
+      "known_tip_probabilities": 431,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000107-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "cb2b3d5e7e35d30b9383cf872ef022c8de0bc7002f51f9afa01f3f1ce1fa5c59",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 832,
+      "known_tip_probabilities": 405,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "d44da0a87caf6d4f5cb7c69c1e2b09b1b3dfa55d10ae7e312154072ca07ef29e",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 60,
+      "known_tip_probabilities": 31,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c98f64a9970a1961b92568db6c2cdcccdbeec61490bb0645e0428d998e1b67c0",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ddd8fe1dccf5b435fa02829c32bcdefe9ae2fb453e58d7f9fac0617b52d0508a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 60,
+      "known_tip_probabilities": 31,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "de38c99d3b3b563a06cd29f465586084d220dadb9dafef2cb2a4ff6d6c652084",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ea0e010328739386329f3d6a6f2a5541fe25b652075dbfb696139de351a7adc5",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 40,
+      "known_tip_probabilities": 23,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "34c3204a77cdf2b3aabe509d2dfb94ae2ce8f4e8b88faf3beb637a779235e59c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9d4776acbcea0c74651d126a0b760375040836c07055ffdc97032a708821baf2",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 40,
+      "known_tip_probabilities": 23,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "90970e45665b224d5a1173147b972db15bb531e10ac2cf443e30ad04fd5155c3",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 20,
+      "known_tip_probabilities": 11,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "435b37295a88be73944fe7e0b9c57961c9b67aaf4b56165815636413b83ae130",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 120,
+      "known_tip_probabilities": 59,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "38cc9ac5a8fa10ab9e70e519b36e4e3411e4da011946c165f8c1cf8e455cb570",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 60,
+      "known_tip_probabilities": 28,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "d94c136135e8c89bebfd547d0f7ed9b1eac4f30c803921a1eb39f089c91691af",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 132,
+      "known_tip_probabilities": 65,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000152-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "7d7c40d452c5e813aa1e6d3f291ef9acb9f0732225a6c33548acf51d9e69b22c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 96,
+      "known_tip_probabilities": 45,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c7c543e38be10d26f23aa39728621d9ee47dd0e081f5e6318e45d00902509b60",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 352,
+      "known_tip_probabilities": 177,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "777aeabd87043ddec6468f8cb84bcc132556f6b5bdec26d5b6e62aed2042ca49",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 88,
+      "known_tip_probabilities": 48,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "450648fc9036afaae6af22337272282114c60b98ddf9f9678614334b792451a8",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 396,
+      "known_tip_probabilities": 201,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "d08928d86c6a8cd2c4658b0ff2d0a8558940a06f7226188e0bac87f42191fd9a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 132,
+      "known_tip_probabilities": 72,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "73570942d23170cab4d9504ec24220d708d78ed20d8ce3727c1dc809e9282d29",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 176,
+      "known_tip_probabilities": 95,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b5da06a73ce001425c07075cfdfa1d20bc6c8de32526fae0f5c7c3fd7a809529",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 88,
+      "known_tip_probabilities": 48,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "89d58378ecf4327439e1950490bb0d6fa67deccce7a33366937c8ba1ba667fa6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 220,
+      "known_tip_probabilities": 119,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "6c196324ad7f305b435a2a06ec3c841d87f0fc43a0c3f64df50b24045e8c6017",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 132,
+      "known_tip_probabilities": 72,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "0892286a0b886dd59cdb5ce70eb447dc491de0d962d19953d3d0bdf0eb86ef8e",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1056,
+      "known_tip_probabilities": 472,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "57a312b248720d18f524007f357b816ea7777a20c5036d07aba3f7a9588efdba",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 616,
+      "known_tip_probabilities": 281,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9303a097d0d46ffd687a291531f4cefcd6a1afd203fad4b9e5c22466bb4400b2",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1100,
+      "known_tip_probabilities": 530,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000230-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "cb5e93c8ee0afa88fd64ee5b611e65976090d8a22426801c9f7a8954c18ab96f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 924,
+      "known_tip_probabilities": 436,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "95d7d9e7a4faf91a3211d3a352faa6b55109fe7d9736a591233af6a1629829cb",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 48,
+      "known_tip_probabilities": 26,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-alignment-famsa-terminal_unknown",
+      "producer_status": "no_coded_characters_no_indel_inference",
+      "source_receipt_sha256": "8cc83f4b0df6547ebd3e53f9235a0e9caba55406ed7cbfbd7282ff3e414d11b4",
+      "readback_status": "no_coded_characters"
+    },
+    {
+      "job_id": "OG0000294-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b0226bbe647d7b4dfaa7495dbe76389210367d51cffbcbc40b3eeff9d06e8b65",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 48,
+      "known_tip_probabilities": 26,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-alignment-mafft-terminal_unknown",
+      "producer_status": "no_coded_characters_no_indel_inference",
+      "source_receipt_sha256": "f85bdcda39cdc627eb795b71a7dfc09a687e4d5b7cfbe006a9df70bda9925bea",
+      "readback_status": "no_coded_characters"
+    },
+    {
+      "job_id": "OG0000294-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "523862beac8516c0429c1b376dffe69d8d98b6b36182981f9f7d41049063492a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 16,
+      "known_tip_probabilities": 9,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-envelope-famsa-terminal_unknown",
+      "producer_status": "no_coded_characters_no_indel_inference",
+      "source_receipt_sha256": "e8249382697c7c84ebb9e791747d8f64a439154b968e40fa76846e801e6608d4",
+      "readback_status": "no_coded_characters"
+    },
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e7b6100f62493f1c7d4655f2b45f4251896fb9440a36d1786a548af5ebe1989d",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 16,
+      "known_tip_probabilities": 9,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "75995eb7881b661ec64e1e9dab6bc642c6dbc6425abaf2357df363068a3768df",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 16,
+      "known_tip_probabilities": 9,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "7a8d21056b1131a24a85282c526e2dc14e62bfb0a60c6e3ef4fd407f0d593c7c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 64,
+      "known_tip_probabilities": 22,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "7d58f5e383b7ace2f27459a1fabbf76841ad4d5d324dad8a031c6697d1ab60c6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 16,
+      "known_tip_probabilities": 2,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "24f73ba943625525f11d39405a3b83ccf1c75c0b4a18c3021030181c2aec86a4",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 112,
+      "known_tip_probabilities": 28,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000294-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ad7910a58263d1ea8c3ec4d0caa9fe4ad71b6803e94a8156c04480e3911f2c5a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 96,
+      "known_tip_probabilities": 19,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b078d485c824c12cb9c3673cef559f7bb1a099a8703792fa964034e1d2411aa5",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 90,
+      "known_tip_probabilities": 50,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "fe54da076b5618ccbddb7a03541a59781cc5b217a2c615b47e5248a43df6227f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 72,
+      "known_tip_probabilities": 40,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b0860a14e72ccec5d49364d0f43cb7a4476f5615a3fad6c42aad0bdd13c2b81f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 72,
+      "known_tip_probabilities": 40,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "72ccb013e3782436ca7c3500de5572a5003db0ae3c82d36a685a6e53872b5b9a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 54,
+      "known_tip_probabilities": 30,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "405cd4c654b047af304777a833f1164dfbd4722b5829414ba7867047ec50abf3",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 72,
+      "known_tip_probabilities": 40,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a33ab1b52d9dd9070b5e426588b8d8eab244aeb03fc07271348bc28ab8517005",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 72,
+      "known_tip_probabilities": 40,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "eba5d69bab4759c8fe8ec56a07e04e696d297e098b00307633877a0730a10357",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 54,
+      "known_tip_probabilities": 30,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "803c95678d378007b547aa46bbf407fad837bc9c3647985d823ce4b187e20283",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 54,
+      "known_tip_probabilities": 30,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ed28f7aa6399d2f0fe3a5cded4683142c5a7a123977bb9ed256edb7c1f4eabbd",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 882,
+      "known_tip_probabilities": 291,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "178afba57797a1e1057581c7e468f7266eeded4ace63e42e2cfdfa25521da92d",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 558,
+      "known_tip_probabilities": 183,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "5ad8c16137b9e910800a415df315e8595656b491e13e70a77adb445e17720784",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1008,
+      "known_tip_probabilities": 364,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000336-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2165cf4f5f2c00a4d2e0224ed1c77a4c3b57bb248e3be65657ed4f4c10408991",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 846,
+      "known_tip_probabilities": 298,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "37999027964b23c751198749268bf39ec4905b6ff118cb22c62d16d8f3538c96",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 131508,
+      "known_tip_probabilities": 36501,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9a59d3a978fa8d23c3d83f0d283449ba7e3785f23cd0298544bae5b00264eb69",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 73060,
+      "known_tip_probabilities": 17308,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a086c6daa7e3328d322abae9d8f50f13b996b1e1f811b0dcb69a3f50f79cb18b",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 127012,
+      "known_tip_probabilities": 40967,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "f53b743d5940b826e33392d1be1a3882c23f9fe7daef88d16ab9982c06a982d6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 68564,
+      "known_tip_probabilities": 22076,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "52d58f4c41472cf71c0c3ebb2e1a72b6516a3b190c5f8f8af8c364dce08f916d",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 168600,
+      "known_tip_probabilities": 46223,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "109f89531718a1ff6f7ce5bb89d91a27d4bf7acb76422daa4bbfae193a6f62b8",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 96664,
+      "known_tip_probabilities": 25145,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "1b028deb732409fb17ebad1cc9879cae51b980ad8e87166a53ad56f038095a8a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 157360,
+      "known_tip_probabilities": 50333,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "3ada523b9d7bdead0313c38ae9f7ca4eb45fff1328964e1ed424355f38f43001",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 91044,
+      "known_tip_probabilities": 30840,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "3bad140aca0ddfa3feef7865cb2a642f01bfe295d6d530cad366f0f9436c6232",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1377378,
+      "known_tip_probabilities": 320022,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "083e1033c0a6259a6a1b8b06a687e329c77d3f5935c6461d9be78c03cb268343",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1078056,
+      "known_tip_probabilities": 231593,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "ae225a39485d3c63d8eb8a7035ea210651affb1b79a24690f3eb67371cec3175",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1882872,
+      "known_tip_probabilities": 464950,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "224ef31f2c0665ba88f2c1d1d460fd754ebeb8403592bce064b95a1d0466c547",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 1681668,
+      "known_tip_probabilities": 391884,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "fadcd250dfadc3fd0b16909b292c42ef646ae73de27d3a68c34f0a919a49761c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 5040,
+      "known_tip_probabilities": 1979,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "57756afee0eba4573e15bddd7b9a9f6d98996476e95958db0e9a39114392fa29",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3024,
+      "known_tip_probabilities": 1020,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "334a9ea59226d47d24ca66b032a4ff06f7e963032a769e510f85032c8157f4e1",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 4200,
+      "known_tip_probabilities": 1783,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e9bd3192cfe923ff7380d85a292d57f60463083697f3c4c6b5bca6ba3563bc85",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2352,
+      "known_tip_probabilities": 904,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "400d4f9f12bb5f6aa41ccb03e6961cdd58d8965ccf2150ad36772e65ea768304",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 4704,
+      "known_tip_probabilities": 1574,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e95af8f836e505eb1d3e333352b7f1f324f5c8440ac5e6a5672755c4ade3f6b1",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3696,
+      "known_tip_probabilities": 1073,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "be014883cf64f31b51e3deb5ac8c9aa32ad7d18b636204ef34a7a4acaf5082f0",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 4536,
+      "known_tip_probabilities": 1792,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "dbd482b8af9ca0b01615ff29eb3e4cf5403ee0b2bb4317a00f13de769f2a31fa",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3528,
+      "known_tip_probabilities": 1290,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "dc466116101f929ca80043c8e1e897e72686715c6d24a0292bb30d5d81ce384f",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 174680,
+      "known_tip_probabilities": 39691,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "8e17055d22dcea797783c95cb41e94eb4c807064ed29ff61cbe72bd6546dae0c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 162800,
+      "known_tip_probabilities": 35658,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2c37334d121c2e71ad776895ece51b52aeabb72d9f43d88a8f7454c688d97f90",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 143000,
+      "known_tip_probabilities": 35893,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c3299804b590976ea4ab7a1213a28e93439eac82c1de9321e71853a41af10fcf",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 138380,
+      "known_tip_probabilities": 33881,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2aa8aa699a2e4a49387346bc0aaf8ede06bd1c2c0f3ca73b47f1102437fd1acc",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 528,
+      "known_tip_probabilities": 169,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e171b4815e86a524559b22dcfe756419f0bd695cc7af1e9c9d02abc5e920ebae",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 312,
+      "known_tip_probabilities": 82,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "5a36894b8b1dfaf0111638e918aac1f0510b2c9105ef841cd64b19facb57b6b0",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 480,
+      "known_tip_probabilities": 188,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "17a300de1af5322e427483413bedd212d55203d279a1138439f2b06dc9fd90c6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 264,
+      "known_tip_probabilities": 101,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2de8569dd933ece2c3bd1f84a53e84f0acb813c32c821963a5a7b0ecc3f00acd",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 576,
+      "known_tip_probabilities": 206,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "0e004f064ba212ce1b72837f45b742b46f5ddf66d1cfeae541929f5d42edc0d5",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 456,
+      "known_tip_probabilities": 147,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c658e4795461ceee52543e1946c26e35676a8fcd517cb9c36d97116ef66f96cd",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 504,
+      "known_tip_probabilities": 214,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "eb48b36dd544b143a204a3207d09a4ce435ea70841a3bce9da0133ac0f9febeb",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 408,
+      "known_tip_probabilities": 165,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "b7e8c710e76fc08e46333f7159cf8dabcc288d82a72f9004da2aea6911daac3c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3024,
+      "known_tip_probabilities": 810,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "84b6b547671d9ee4c2c8122141b4fdb70f1b35c3ca640ab86878d8a77d94bd05",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2016,
+      "known_tip_probabilities": 478,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a9746806287b3bba18177d74364634d73cd3f701c3c2d8b4e27747dfe4b9a9e2",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2744,
+      "known_tip_probabilities": 807,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001200-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "00eb3c6f8e943f662be4bff62ecc9648ff2e133da2b02cbafdb6898680ae4af9",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2184,
+      "known_tip_probabilities": 584,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "d0d479142e723b903af9440e7bc37523f9fb28c8f9e5a394ecaeaf3f54109d83",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 312,
+      "known_tip_probabilities": 123,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "648f4012fcb2d0ab12963d81036de7c8cd36604501fec5ede1461a3a985abc5c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 182,
+      "known_tip_probabilities": 63,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2572bf109e3746eb0de93982742bf42c8375cafe0258f650e6f9ad64effd0c69",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 208,
+      "known_tip_probabilities": 102,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "dee72c547ed92b7e9378c6e3f08f36bd7898fa61b843a085ee0845801f72c912",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 78,
+      "known_tip_probabilities": 42,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "6bf4961bb5798b66922ffb4974e2663889dd60d0fb23f85ad38d47ceb2459fd9",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 312,
+      "known_tip_probabilities": 108,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "38ea5daafa2a9c74b3e9cbe6056fcc0eda6231f39def25818c2626d5a504cd5b",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 182,
+      "known_tip_probabilities": 63,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e4c9fa7969f6a8a13bbafc3e0bad81166392d220eec07fcfdafec1a72e3e0775",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 208,
+      "known_tip_probabilities": 87,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "af5026a5138ce85e6f31941b034c9f8284261d2fe0d0a9d3996a5051dc502bb2",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 78,
+      "known_tip_probabilities": 42,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "d5747de9f3b9241f22161222fcc126428d70fe0ee6cf30dd3c8592d1dc225d33",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3680,
+      "known_tip_probabilities": 1082,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "f4393ea41fded33a5712268a9177f5222303e4b5ab271a1dcaf57187a7ccf4f6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 3080,
+      "known_tip_probabilities": 893,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "40c176501d5ee806ed233cd190fc282b4130cf12fc71296a447ffb77d4a98151",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2720,
+      "known_tip_probabilities": 950,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0001203-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "203970ef0a4dea0361d6d337f9403cdba413d39c03ea6e108276f3b1679e4aca",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 2200,
+      "known_tip_probabilities": 767,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "5c8cdb0c83a6d74d35db20fad87ece071d4a3c276b634b27b27322f73547bb05",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 576,
+      "known_tip_probabilities": 224,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "2ea17f85c5428080aa50a7c368cacde648ba82f1f212dc3e23c79f4ea167ec80",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 324,
+      "known_tip_probabilities": 116,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "9fe35327eb59fe878e5c7a72abb7c331dd0515b3002151b8b21ff24c251e2f9a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 504,
+      "known_tip_probabilities": 233,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "1194320bed694bba431425da4a11b122abad2552bdc93d07881afe96de25ca3a",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 252,
+      "known_tip_probabilities": 125,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "f3d3c9edfdf3c1b718fe2909daf741e7ef84c047a17558af7afba81069b4cd3b",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 936,
+      "known_tip_probabilities": 322,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c74e587d27007e9c98bfe9e0c0e76d94804cb478cb129301da1b1b45881ca149",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 324,
+      "known_tip_probabilities": 116,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a1c857844b7eaac60dcce4d5ecb26bbcb06be734fbc5381623573897c63316c8",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 864,
+      "known_tip_probabilities": 331,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "016c4e6b5b48000e523ae3c3c9350bbbcd632befdb9ff0dd30b2235d2b5c5516",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 252,
+      "known_tip_probabilities": 125,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "6a985eb67631cdc1897320f18a9ebd24c0f2c0f832ddba3ede590c62b9a6c608",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 34504,
+      "known_tip_probabilities": 10497,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "e28380fb99d1319594f3c1ca3989bb9806f142c83c9205a1424177e75d64cc2e",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 23864,
+      "known_tip_probabilities": 7185,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a4acdf27a645381b7528f70765f81971b9018caa2fa776430743bea2f5129626",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 38608,
+      "known_tip_probabilities": 12052,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "816c08713c64a916af75144b3900b58ea0f5e2b3bd840f8d9471bf9a0c41282c",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 31616,
+      "known_tip_probabilities": 9312,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-alignment-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "a643065bdeed2f59b53872d56680b68b2eed3c2cf7efb9476f3bd05f82b27136",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 286,
+      "known_tip_probabilities": 127,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-alignment-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "5582d7306c9186281edaa7297a04d0c946ad686b6675ffd83c488b4e79fc05fa",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 198,
+      "known_tip_probabilities": 87,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-alignment-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c9890733335a550547445d46f58c9611c8f233c73530ada47ebc28abe9fe8742",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 242,
+      "known_tip_probabilities": 123,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-alignment-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c841f343bdf95bb357ba0744fff2395eacd53ed75d1631db3d7fb5878c398fb6",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 154,
+      "known_tip_probabilities": 83,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-envelope-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "298399bfc412b2332f64c4598267d98a067b78df10d808c7b22d3146f1674d85",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 220,
+      "known_tip_probabilities": 99,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-envelope-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "c1be7b67925ad56f127e0f7f77c7cab1527e53745ed12819a226493694b8a5e0",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 198,
+      "known_tip_probabilities": 87,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-envelope-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "60601546197f787fd0af514b73e26cdd213cf1e97867f605ecbf6de5e5aaca03",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 176,
+      "known_tip_probabilities": 95,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-envelope-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "40380a3f4b4818089c07fa53d7a1acf52a8d9ff7c90a875db00ed7102d677bd1",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 154,
+      "known_tip_probabilities": 83,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-whole-famsa-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "aa5fad0823efca09ef90ac9bf5d43151c1a0d0797555e4884184c93f415d7432",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 330,
+      "known_tip_probabilities": 132,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-whole-famsa-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "db3bfe4e94356bbeab6338e5995c4327a67a43293175c74999052b76dc680d55",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 198,
+      "known_tip_probabilities": 87,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-whole-mafft-terminal_gap",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "be3b2fb8bdaf84ab71e9ea4e7df85f3bc29d5f91027c265d20708bdfc9ab1c29",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 286,
+      "known_tip_probabilities": 128,
+      "maximum_known_tip_error": 0.0
+    },
+    {
+      "job_id": "OG0002812-whole-mafft-terminal_unknown",
+      "producer_status": "failed_output_validation",
+      "source_receipt_sha256": "5b63a9a580a6635a522d20680bdbd25ba5b808874ff540e0e2ab02747c610268",
+      "readback_status": "passed_output_identity_bounds_grid_and_known_tip_checks",
+      "root_label_source": "Newick root comment N1",
+      "probability_rows": 154,
+      "known_tip_probabilities": 83,
+      "maximum_known_tip_error": 0.0
+    }
+  ],
+  "probability_rows": 8058340,
+  "known_tip_probabilities": 1977835,
+  "scope": "Original 153 validator failures retained. Root comment N1 explicitly restored only in readback; identity, probability bounds, complete grids and known tips checked. No independent likelihood or internal probability replay, optimization qualification, ascertainment correction resolution, or posterior ensemble qualification."
+}
