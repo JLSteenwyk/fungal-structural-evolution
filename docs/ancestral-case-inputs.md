@@ -1157,3 +1157,22 @@ array shapes, finite values, ranges and normalization were rechecked after
 successful producer termination. This is recorded in
 `metadata/alternate_whole_probabilities_produced_20260927.json`. The independent
 probability replay is verified live; it and the full comparison remain pending.
+
+All 26,126,280 alternate-start probabilities passed independent readback
+(maximum absolute difference 1.674e-11). The full comparison finished all
+858 fit pairs, 2,574 node comparisons and 2,394,909 node/site comparisons.
+A separate readback of the underlying arrays reproduced every aggregate
+count and total-variation summary. Alternate-versus-baseline comparisons
+have 128 most-probable-state changes across 1,306,314 dependent node/sites,
+with no opposing calls supported at least 0.9 in both fits. Refined versus
+selected-start comparisons have zero state changes across 435,438 node/sites;
+maximum total variation is 0.0002352.
+
+The maximum alternate-versus-baseline total variation is 0.298073, at
+OG0000972 whole-FAMSA WAG, start 2, alpha minimum 0.02, candidate level 2,
+alignment column 1650. Thus low state-change counts do not establish uniformly
+small probability differences. Largest site shifts are retained for follow-up.
+These comparisons assess optimizer sensitivity conditional on the models and
+alignments; they do not resolve joint indel histories or qualify final sequences.
+Evidence: `metadata/alternate_whole_posterior_audit_completed_20260927.json`
+and `metadata/whole_optimization_probability_comparison_full_completed_20260927.json`.

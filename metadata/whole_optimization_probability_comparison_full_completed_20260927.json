@@ -1,0 +1,156 @@
+{
+  "status": "complete_full_whole_optimization_probability_comparisons",
+  "fit_pairs": 858,
+  "node_comparisons": 2574,
+  "site_comparisons": 2394909,
+  "descriptive_aggregates": {
+    "refined_versus_baseline": {
+      "sites": 435438,
+      "map_disagreements": 14,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.003030299976459172,
+      "mean_total_variation": 1.8217172075378708e-05
+    },
+    "alternate_versus_baseline": {
+      "sites": 1306314,
+      "map_disagreements": 128,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.29807259677123876,
+      "mean_total_variation": 0.00010924210439532264
+    },
+    "refined_versus_selected_start": {
+      "sites": 435438,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.00023510354089321955,
+      "mean_total_variation": 2.2227101804346373e-07
+    },
+    "refined_lower_versus_original_bound": {
+      "sites": 217719,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.0002594518430776566,
+      "mean_total_variation": 1.8977115260169059e-06
+    }
+  },
+  "plan_sha256": "60214e86864528d2aa17ee640087bc3438a5e9eada940f6d55a5c229fb23618b",
+  "input_posterior_audit_hashes": {
+    "baseline": "a8a6125e0c079d77dcec8177f8ce3623537fbc6b8a8b430ad9a1aa927148782a",
+    "refined": "5b516a14b8bc5a4a4f2d13e535fbaba596d5d70f5a4776e6b083246c0bf1cc92",
+    "alternate": "5b0702bc62ba248446bed56b5a7154bcf5d6e278b8736ee4abcc0efc2bd6234d"
+  },
+  "artifacts": {
+    "comparison_summary.tsv": "e0878d0afcff6dd05d8a55584113f3015c7346656ed45c79cd1f56d622285afe",
+    "site_comparisons.tsv.gz": "2884194be9c21a383417b385b2ffdf5e3bba42fd931fb0222609041749bfa6b4"
+  },
+  "scope": "Same-alignment coordinate comparisons across audited optimization stages. All sites from alternate/baseline, refined/baseline, refined/selected-start and bound comparisons retained; these are dependent diagnostics, not biological replicates or ensemble weights. Historical state support, indel uncertainty and model adequacy remain separate.",
+  "completed_receipt_path": "results/ancestral/whole-optimization-probability-comparison-full-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "6af4dfeca2e3d7bd4510e0e76287e52126617f97412bbaad88089d7add859b44",
+  "verified_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "separate_full_array_aggregate_readback": {
+    "alternate_versus_baseline": {
+      "sites": 1306314,
+      "map_disagreements": 128,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.29807259677123876,
+      "mean_total_variation": 0.00010924210439532669
+    },
+    "refined_versus_baseline": {
+      "sites": 435438,
+      "map_disagreements": 14,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.003030299976459172,
+      "mean_total_variation": 1.8217172075379582e-05
+    },
+    "refined_versus_selected_start": {
+      "sites": 435438,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.00023510354089321955,
+      "mean_total_variation": 2.2227101804346775e-07
+    },
+    "refined_lower_versus_original_bound": {
+      "sites": 217719,
+      "map_disagreements": 0,
+      "both_at_least_090_disagreements": 0,
+      "maximum_total_variation": 0.0002594518430776566,
+      "mean_total_variation": 1.897711526016881e-06
+    }
+  },
+  "largest_alternate_site_shifts": [
+    {
+      "alternate_job": "OG0000972-whole-famsa-WAG-s2-amin0.02",
+      "baseline_job": "OG0000972-whole-famsa-WAG",
+      "level": 2,
+      "column": 1650,
+      "total_variation": 0.29807259677123876
+    },
+    {
+      "alternate_job": "OG0000972-whole-famsa-WAG-s2-amin0.005",
+      "baseline_job": "OG0000972-whole-famsa-WAG",
+      "level": 2,
+      "column": 1650,
+      "total_variation": 0.2980725148236208
+    },
+    {
+      "alternate_job": "OG0001082-whole-famsa-WAG-s0-amin0.005",
+      "baseline_job": "OG0001082-whole-famsa-WAG",
+      "level": 2,
+      "column": 698,
+      "total_variation": 0.003048026461686314
+    },
+    {
+      "alternate_job": "OG0001082-whole-famsa-WAG-s0-amin0.02",
+      "baseline_job": "OG0001082-whole-famsa-WAG",
+      "level": 2,
+      "column": 698,
+      "total_variation": 0.00304456394688532
+    },
+    {
+      "alternate_job": "OG0000972-whole-famsa-LG-s2-amin0.02",
+      "baseline_job": "OG0000972-whole-famsa-LG",
+      "level": 1,
+      "column": 1865,
+      "total_variation": 0.0016526537717272618
+    },
+    {
+      "alternate_job": "OG0001082-whole-mafft-LG-s0-amin0.005",
+      "baseline_job": "OG0001082-whole-mafft-LG",
+      "level": 2,
+      "column": 545,
+      "total_variation": 0.0016341823222386542
+    },
+    {
+      "alternate_job": "OG0001082-whole-mafft-LG-s0-amin0.02",
+      "baseline_job": "OG0001082-whole-mafft-LG",
+      "level": 2,
+      "column": 545,
+      "total_variation": 0.001630746049891016
+    },
+    {
+      "alternate_job": "OG0000972-whole-mafft-LG-s2-amin0.005",
+      "baseline_job": "OG0000972-whole-mafft-LG",
+      "level": 2,
+      "column": 2227,
+      "total_variation": 0.0014801488188858375
+    },
+    {
+      "alternate_job": "OG0000972-whole-mafft-LG-s1-amin0.02",
+      "baseline_job": "OG0000972-whole-mafft-LG",
+      "level": 2,
+      "column": 2227,
+      "total_variation": 0.0014279656013228264
+    },
+    {
+      "alternate_job": "OG0000972-whole-mafft-LG-s1-amin0.005",
+      "baseline_job": "OG0000972-whole-mafft-LG",
+      "level": 2,
+      "column": 2227,
+      "total_variation": 0.0014279656013228264
+    }
+  ]
+}
