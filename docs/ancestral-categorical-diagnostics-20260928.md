@@ -53,3 +53,37 @@ still requires provenance-checked four-chain arrays, both cutoffs, preserved
 node/anchor denominators, computational planning, and all unresolved states.
 No scientific chain quartet was replaced by synthetic replicates, and no
 production posterior was assessed or qualified by these fixture results.
+
+## Exact trace reuse
+
+`scripts/ancestral_state_patterns.py` groups only byte-identical complete
+chain-by-draw state traces, retaining a pattern identifier for every original
+node/anchor coordinate. Chain order, temporal order, state labels and all
+coordinates are preserved. Equal frequencies with different draw order remain
+different patterns. Identical traces at different anchors do not establish
+homology or biological independence: this is computation reuse only.
+
+Five tests passed: full array reconstruction with duplicates; equal frequencies
+but different temporal sequences; preserved chain order and state labels;
+identity of reused and separately calculated categorical reports at every
+fixture coordinate; and rejected malformed inputs. Coordinate multiplicity
+must be retained in downstream reporting, even when computation is shared.
+
+The seven completed production chains were each inventoried independently
+at both cutoffs. Across those 14 chain/cutoff records, 943,656 node/anchor
+records map to 22,129 distinct single-chain temporal patterns. Every input
+state reconstructed exactly; no anchor, state, or draw was dropped. The
+inventory completed in 1.50 seconds (about 70 MiB measured peak RSS).
+Cutoffs overlap, so these totals are not independent biological counts.
+Four-chain pattern cardinality can be larger; single-chain compression cannot
+be used as a direct estimate of full-grid diagnostic cost. No artificial
+quartet was assembled from the seven different input models.
+
+Inventory evidence: `metadata/ancestral_state_pattern_inventory_20260928.json`.
+Reproduce with a new receipt path:
+
+```bash
+python scripts/inventory_ancestral_state_patterns.py \
+  --completion metadata/baliphy_first_anchored_states_completed_20260928.json \
+  --output metadata/ancestral_state_pattern_inventory_NEW.json
+```
