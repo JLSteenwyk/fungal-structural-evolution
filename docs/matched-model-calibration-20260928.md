@@ -853,3 +853,23 @@ on nonstationary optimizer termination rather than desired coverage outcomes.
 The boundary conservatism remains and requires statistical investigation;
 neither the updated simulations nor the real-data numerical refinements close
 the project's uncertainty or model-adequacy requirements.
+
+## Updated coverage figure and table
+
+`scripts/plot_resolved_matched_kr_coverage.py` generated the current PNG/PDF
+figure from the audited continuation table. It rechecks all112 coefficient
+rows against exact binomial counts and displays the32 intercept/method points
+in two sample-size panels. The coverage axis explicitly starts at80%; every
+plotted Monte Carlo interval lies within its limits. The complete coefficient
+table is copied byte-for-byte alongside the figure. The original unresolved
+figure remains a historical result.
+
+Current artifacts:
+`results/figures/matched-kr-coverage-resolved-20260928-v1/intercept_coverage.png`,
+the corresponding PDF, and `all_coefficient_coverage.tsv` in that directory.
+All artifact hashes were checked and the PNG visually inspected for labels,
+intervals, legend and caveats. Evidence is in
+`metadata/matched_kr_resolved_figure_20260928.json` and
+`metadata/matched_kr_resolved_figure_visual_check_20260928.json`.
+The figure documents the observed calibration limitations; it does not qualify
+the method for universal or fungal-data95% coverage.

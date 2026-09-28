@@ -9682,3 +9682,19 @@ remaining selected numerical-review flags and all original columns preserved.
 Current output: `results/structural_comparisons/refined-working-model-grid-export-20260928-v2`.
 Evidence: `metadata/matched_refinement_integration_completed_20260928_v2.json`.
 Calibrated uncertainty, model adequacy and biological interpretation remain open.
+
+### 2026-09-28: synthetic optimization reviews resolved; figure updated
+
+The184 synthetic refit reviews were traced to185 prematurely stopped optimizer
+endpoints. Verified continuations match the originally selected solutions.
+A separate audited qualification overlay applies the original numerical
+thresholds, retains the stricter retry diagnostic, and accounts for all15,984
+original responses without changing selected parameters. All112 coefficient/
+method coverage rows now have zero unresolved outcomes.
+
+The current inspected figure and complete table are in
+`results/figures/matched-kr-coverage-resolved-20260928-v1`.
+Evidence: `metadata/matched_kr_continuation_audit_20260928.json` and
+`metadata/matched_kr_resolved_figure_visual_check_20260928.json`.
+KR remains conservative in several boundary configurations; numerical resolution
+does not establish universal coverage or complete the biological project.
