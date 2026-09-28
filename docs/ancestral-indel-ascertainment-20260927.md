@@ -51,4 +51,45 @@ containing gaps, or conflate absence of an exact SIC gap with residue presence.
 Compare fitted parameters and node probabilities under these assumptions,
 independently check likelihoods and posteriors, and resolve overlapping-gap
 compatibility before assembling ancestral sequence ensembles. No indel
-model has been fitted by this audit.
+model was fitted by that initial audit. Subsequent production is summarized below.
+
+## Completed conditional-model sensitivity (September 28)
+
+The stable-likelihood implementation subsequently produced 306 nonempty fits
+across both ascertainment assumptions, retaining six empty dispositions. All
+2,754 candidate likelihoods and 16,116,680 selected-fit node/character
+probabilities underwent numerical replay; execution receipts are recorded in
+`metadata/stable_indel_inference_execution_completed_20260927.json`.
+Numerical agreement does not establish optimization convergence: 177 selected
+fits contacted parameter bounds, and 12 models had start spreads above 0.01.
+
+The completed comparison covers 156 encodings and three matched ancestral
+vertices, totaling 38,871 node/character comparisons. At the separately fitted
+parameters, 596 comparisons (1.53%) cross the 0.5 gap-probability threshold.
+The maximum absolute difference is 0.7863814, but none has opposite states
+supported by probabilities of at least 0.9 under both assumptions. These are
+dependent comparisons across nodes, aligners, regions and terminal policies,
+not 596 independent evolutionary events. Differently conditioned likelihoods
+are not ranked against one another.
+
+Reproduce the descriptive figure and family-level table with:
+
+```bash
+/home/bizon/anaconda3/bin/python scripts/plot_indel_ascertainment_sensitivity.py
+```
+
+Outputs are PNG, PDF, TSV and a checksum receipt in
+`results/figures/indel-ascertainment-sensitivity-20260928-v1`.
+The script verifies both source artifact hashes, every comparison's probability
+difference and threshold classifications, unique comparison keys, all 156
+encoding totals, and global receipt totals before plotting. All raw values are
+retained: 65 probabilities exceed one by floating-point roundoff, with the
+largest value 1.0000000000000013; the explicit tolerance is 64 binary64 epsilons.
+The figure has been visually reviewed.
+
+This analysis uses the stable conditional-model implementation, not the active
+five-start native FastML refinement. Those fit parameterizations and numerical
+implementations must remain distinguishable. Neither sensitivity result yields
+valid complete ancestral sequences by itself. Overlapping exact-gap characters,
+parameter uncertainty, alignment uncertainty and adequate joint posterior
+sampling remain unresolved before ancestral structure prediction.
