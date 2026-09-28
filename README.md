@@ -5,7 +5,7 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 27 September 2026
+## Current checkpoint — 28 September 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -30,7 +30,7 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Functional correspondences | All 17,105 annotation rows checked separately for both sources: 6,444 observed AlphaFold rows (314 taxa/23 markers) and 5,576 ESMFold rows (283 taxa/21 markers). Recovered AlphaFold accessibility/annotation join verified across all 47,529 sites | Branch/site tests, matched backgrounds and biological interpretation; annotation rows are not independent events |
 | Functional-site predictor sensitivity | 150 exact protein coordinates observed in both sources; all partner contexts and 600 comparisons on identical coordinate subsets checked | Native descriptors, side-chain/pocket evidence and broader controls; agreeing predictions are not experimental validation |
 | ESMFold accessibility and site coupling | All 25,322 models merged; paired projection verified for 6,758,598 observations. Conditional coupling completed for 122 markers/44,198 sites, including marker resampling and copy-omission sensitivity | Phylogenetic, prediction, alignment and model uncertainty; accessibility does not establish binding interfaces |
-| Recovered AlphaFold accessibility | 30,618 models/15,960,692 residues; 9,453,757 paired observations projected and normalized. Full site-summary readback covers 125 markers/47,529 sites | Rate optimization and its audits precede rate/exposure integration and conditional coupling |
+| Recovered AlphaFold accessibility and site coupling | 30,618 models/15,960,692 residues; 9,453,757 paired observations projected and normalized. Rate optimization and rate/exposure integration completed. Conditional coupling covers 125 markers/47,529 sites, with 24 specifications per full/124-marker omission cohort and 96,000 total bootstrap fits | Phylogenetic, alignment, rate and prediction uncertainty; conditional associations do not establish causal or evolutionary effects |
 | Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | All 412,800 primary whole-protein tasks processed; strict audit stopped on a two-residue RMSD discrepancy. Full diagnosis confirmed 27 two-residue discrepancies; full geometry readback passed, retaining 327 degenerate short mappings. Full order-summary and residue-mapping sensitivity readbacks passed; background comparisons continue. Phylogenetically adjusted effects, uncertainty and biological interpretation remain |
 
 
@@ -77,6 +77,20 @@ root/model sensitivity remain unresolved. Final ancestral sequences and
 structures have not been qualified. See the
 [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) for resource
 estimates, recovery tests, launch records and completion requirements.
+An [extant residue-anchor projection](docs/ancestral-residue-anchors-20260928.md)
+passed checks on all 405 saved short-run alignments and 1,620 candidate
+sequence reconstructions. It provides coordinates for cross-chain assessment;
+ancestral-state and homology mixing diagnostics remain unfinished.
+
+Independent FastML replay now covers all 153 nonempty inputs and 8,058,340
+probabilities. Three one-character cases exposed a stale ascertainment cache
+after initial branch scaling. A paired precision-controlled regression reduces
+their likelihood discrepancy from approximately 0.47 to below 1.24e-7 with a
+targeted cache refresh. Full paired inference is running across both variants,
+with separate replay that reports tiny probability-boundary excursions without
+clipping raw values. Original outputs and strict validator failures are retained.
+These fits are not qualified ancestral ensembles; see the
+[FastML discrepancy and correction evidence](docs/fastml-indel-likelihood-discrepancy-20260927.md).
 
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.
@@ -106,8 +120,8 @@ after analytic validation, retaining all 414,720 setting/tree dispositions.
 finds no matched predictor marker coverage for the three currently mapped focal
 taxa. The separate [wood-decay diagnostic](docs/wood-decay-phylogenetic-diagnostic-20260927.md)
 retains eight reviewed taxa and uncertain classes; minimum-change locations
-depend on coding. Mapping across all 2,000 bootstrap trees is running, followed
-by full independent verification. These diagnostics do not establish replicated
+depend on coding. Mapping and independent verification completed across all
+2,000 bootstrap trees and five codings. These diagnostics do not establish replicated
 origins or ecological structural effects.
 
 Coverage sources and exact limitations:
@@ -127,6 +141,13 @@ association, including after omission of one copy-flagged marker. This is a
 conditional association, with model-dependent interaction evidence, not a causal
 effect or a physical displacement estimate. See the
 [full-cohort coupling results](docs/conditional-site-coupling.md).
+The [recovered AlphaFold coupling comparison](docs/recovered-afdb-coupling-20260928.md)
+also retains a positive sequence-rate association across all 24 specifications
+before and after omission of the marker with uncertain gene-copy identity.
+Its negative exposure interaction persists across these specifications. The
+full figure shows all estimates and unadjusted marker-bootstrap intervals;
+these dependent sensitivity results do not resolve prediction circularity or
+shared ancestry across markers.
 The full path and rank benchmark is descriptive, with shared ancestry and
 prediction uncertainty still requiring treatment. See the
 [September 26 checkpoint](docs/recovery-20260926.md) for completed stages and
@@ -139,7 +160,7 @@ completion records before advancing.
 | Objective | Work still required before completion |
 |---|---|
 | Branches and clades with elevated structural change | Complete branch uncertainty, direct-coordinate benchmarking, calibrated tests and multiple-testing control |
-| Sequence–structure coupling | Extend full ESMFold conditional results to the AlphaFold cohort; propagate topology, alignment and prediction uncertainty |
+| Sequence–structure coupling | Integrate completed conditional results from both prediction sources; propagate topology, alignment, rate and prediction uncertainty and calibrate evolutionary tests |
 | Domain evolution | Complete structural comparisons and reconcile gains, losses, fusions and rearrangements separately from family turnover |
 | Duplication-associated divergence | Complete protein/domain comparisons, model/reference quality sensitivity, matched controls and phylogenetically controlled divergence/asymmetry tests |
 | Ecological transitions | Establish usable replicated contrasts, propagate trait uncertainty and test phylogenetically controlled associations |

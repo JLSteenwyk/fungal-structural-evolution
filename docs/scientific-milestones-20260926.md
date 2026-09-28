@@ -1,4 +1,4 @@
-# Open scientific milestones — September 26, 2026
+# Open scientific milestones — updated September 28, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
@@ -8,7 +8,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | Aim | Current evidence | Next required result and completion evidence |
 | --- | --- | --- |
 | 1. Branch/clade structural change | Audited paired branch point estimates for 122 ESMFold and 125 expanded AlphaFold markers; direct-geometry/tree-path benchmark | Finish cohort-specific resampling and audits; integrate direct-coordinate and structural-alphabet evidence, model/coverage controls and shared ancestry; report calibrated branch/clade tests with multiple-testing treatment and uncertainty. See [recovery](recovery-20260926.md) and [geometry](tree-path-geometry.md). |
-| 2. Sequence–structure coupling | Full ESMFold conditional site-rate models, whole-marker resampling and copy-omission sensitivity completed | Extend the qualified AlphaFold analysis; assess phylogenetic, model, alignment and prediction dependence; identify excess/reduced structural change conditional on sequence divergence. Fixed-rate conditional associations alone do not finish this aim. See [coupling](conditional-site-coupling.md). |
+| 2. Sequence–structure coupling | ESMFold and recovered AlphaFold conditional site-rate models, whole-marker resampling and copy-omission sensitivity completed | Integrate source-specific results; assess phylogenetic, model, alignment and prediction dependence; identify excess/reduced structural change conditional on sequence divergence. Fixed-rate conditional associations alone do not finish this aim. See [ESMFold](conditional-site-coupling.md) and [AlphaFold coupling](recovered-afdb-coupling-20260928.md). |
 | 3. Domain evolution | Whole-proteome annotation/structural registry, clusters and family joins; duplicate/reference architecture controls | Complete within-domain comparisons; reconcile supported gains, losses, fusions, duplications and rearrangements separately from family turnover; propagate annotation and guide uncertainty. Annotation differences alone are not events. See [registry](whole-proteome-structure-domain-registry-20260923.md) and [controls](duplication-domain-controls-20260926.md). |
 | 4. Duplication-associated change | Full terminal candidate/reference ledgers, guide sensitivity, sequence covariates and domain controls | Complete coordinate checks and all planned comparisons; join successful comparisons with explicit exclusions, examine reference/domain/confidence sensitivity, construct nonduplication backgrounds and account for family/phylogenetic dependence. Test divergence/asymmetry and functional-site changes. See [duplication](duplication-sister-references-20260926.md). |
 | 5. Ecological/morphological transitions | Evidence-curated traits and independently verified ESMFold/expanded AlphaFold shared-site coverage | Establish independently replicated usable transitions, preserve ambiguous assignments, and test controlled associations with structural change. A trait's number of labeled tips is not its number of independent origins. See [ecology](ecology-evidence-workflow.md). |
@@ -16,7 +16,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
 | 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and full alternate-start comparisons completed; 26,126,280 alternate probabilities independently checked. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
 
-## Current execution dependencies (updated September 27)
+## Current execution dependencies (updated September 28)
 
 - Expanded AlphaFold resampling remains running across all 125 markers and
   75,000 paired draws, followed by automatic native-output/interval audit.
@@ -24,9 +24,25 @@ Chronological receipts and process records remain in [progress](progress.md).
   attempts, 73,167 estimable draws and 33 explicitly unestimable draws. These
   fixed-topology conditional intervals cannot substitute for AlphaFold intervals.
 - Recovered AlphaFold Gamma4 and FreeRate4 site-rate exports and output audits
-  completed: 1,000 fits total. Rate optimization/model review remains running. Accessibility, site summaries
-  and functional annotation integration are complete; rate/exposure integration
-  and conditional coupling remain downstream; see [coupling](conditional-site-coupling.md).
+  completed: 1,000 fits total. All 2,000 optimization diagnostics, selected
+  rate-model comparison and full readback completed. The rate/exposure frame
+  covers 125 markers and 47,529 sites. Full and copy-omission coupling fits
+  and resampling completed, with exact subset and all 72 focal omission
+  coefficients checked against leave-one-marker-out estimates. All 24
+  specifications and both cohorts appear in the verified
+  [coupling figure and interpretation](recovered-afdb-coupling-20260928.md).
+- FastML independent replay covers all 153 nonempty inputs and 8,058,340
+  probabilities. The targeted branch-scaling cache correction passed six
+  paired regression runs; the full two-variant grid and separate numerical
+  boundary-aware replay are running. Three empty inputs per variant remain
+  explicit. Optimization and model qualification remain unresolved; see the
+  [discrepancy record](fastml-indel-likelihood-discrepancy-20260927.md).
+- Extant residue-anchor projection passed all 135 effective-input fixtures,
+  covering 405 saved alignments and 1,620 reconstructed candidate sequences.
+  The full BAli-Phy chain grid remains running. Scalar and length screens are
+  queued; cross-chain ancestral-state and alignment mixing still require
+  assessment. [Coordinate extraction](ancestral-residue-anchors-20260928.md)
+  does not qualify posterior samples.
 - Primary whole-protein production finished all 412,800 dispositions. The strict
   audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
   to two-residue mappings. All 327 short mappings passed separate analytic checks
