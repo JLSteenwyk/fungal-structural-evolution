@@ -1,0 +1,25 @@
+{
+  "production_plan": "metadata/full_matched_working_model_plan_20260927.json",
+  "output": "results/model_validation/matched-simulation-input-cache-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "storage_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "raw_array_bytes_estimate": 16756571136,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "basis": "All 28808 unique inputs and130910712 record instances; 128 bytes/row before compression plus factors and file overhead. Reuses exact source reconstruction, no model fits.",
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/full_matched_working_model_plan_20260927.json": "f0f0268dfe2479f6d0515209ff9dd38f8f11b3baccd1883ed9447ca6f8421d4b",
+    "scripts/cache_matched_simulation_inputs.py": "621821c3d665f7bac3b1fd91b2993ddce4a1cf7727d51b3ff0bca2b1ca2a310b",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/full_matched_fit_inventory_readback_20260927.json": "bd2dc8692725c89d20f1d6eaba186cb5a38729e8c1f1cb5f0da50215bb8d3e28"
+  }
+}

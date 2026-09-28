@@ -171,3 +171,29 @@ in `metadata/matched_simulation_refit_checks_20260928.json`. Production input
 reconstruction, restartable full-grid scheduling, replicate-count selection,
 Monte Carlo intervals and runtime reduction still remain. No full-grid
 simulation has been launched by these checks.
+
+## Complete simulation-input cache running
+
+The input reconstruction stage is now running under
+`fungal-matched-simulation-input-cache-20260928.service`. Its plan and verified
+launch identity are in `metadata/matched_simulation_input_cache_plan_20260928.json`
+and `metadata/matched_simulation_input_cache_launch_20260928.json`.
+
+The source inventory contains 28,808 distinct inputs and 130,910,712 record
+instances. Each cache entry preserves the five numeric columns, ordered record
+identity hashes, nested background/family indices, species-pattern row indices,
+active covariates and scale factors. Numeric and ordered identity bytes must
+match the original recipe hashes. All five original phylogenetic factors are
+copied once with their source hash bindings. Each serialized array is compared
+exactly to its reconstructed input, including when reusing an existing cache
+entry. Completed input files survive interruption without overwriting.
+
+The resource allowance is one CPU, 16 GiB RAM, no swap and 32 GiB storage with
+a 100 GiB free-disk reserve. Raw per-record arrays total about 15.61 GiB before
+compression; the broader storage allowance includes files and factors. The
+0.1–12-hour duration is a planning range, not a measured ETA. This stage does
+not fit any models or launch simulated refits.
+
+Complete-cache accounting and an independent likelihood replay from cached
+inputs remain required before production simulation. The running cache job
+is not itself evidence that those checks have passed.
