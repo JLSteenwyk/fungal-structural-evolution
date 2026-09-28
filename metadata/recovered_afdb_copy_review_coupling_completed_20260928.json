@@ -1,0 +1,25 @@
+{
+  "output": "results/phylogeny/site-coupling-copy-review-comparison-afdb-recovered-20260928-v1",
+  "receipt_sha256": "4265ccb46b53c9003c3ad7eabe3fec795639c78c87a02d890f3220dda4dfd75c",
+  "status": "passed_copy_review_coupling_comparison",
+  "source_receipts": {
+    "results/phylogeny/site-coupling-afdb-recovered-full-20260927-v1": "70b89e3ae11d70cdfc6b9dfd39a102741645da6b8102f2edc840c512410f15ac",
+    "results/phylogeny/site-coupling-afdb-recovered-copy-omission-20260927-v1": "fdcc2ae4dd4c9c81bc19fc76cbe3abcd0a2c61ec943b09f1e8cb3a25cc2cabec",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1": "81a6fed9de303ac7845db174752684b889a09617b8e11d5e0450024d88c50584",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1": "560639093dc991cc61ebcb947043d25c2a215f455243f543ba1d9fbd007e97cf"
+  },
+  "omitted_marker": "4986044at2759",
+  "full_markers": 125,
+  "omission_markers": 124,
+  "full_sites": 47529,
+  "omission_sites": 47216,
+  "matched_focal_coefficients": 72,
+  "full_loo_vs_separate_omission_max_difference": 6.38378239159465e-15,
+  "script_sha256": "7634a44bb03e22d72cdf5b0b8368b6d759eef3e793da86ec2466927915e6f7fb",
+  "artifacts": {
+    "term_summary.tsv": "79ffd8a2bd85fcf45f82898ecd0cc08254a8bab5257e4ed9858aad596eca0002",
+    "bootstrap_summary.tsv": "2efa90a8b139518b0f94bb2f204d3219827d72dc88e2fb47b4eee3d893bdfdc2",
+    "matched_focal_coefficients.tsv": "e848b617e6c217b784df4b4bd897fc63e2eb8155a6f833efbb7044636b5be714"
+  },
+  "interpretation": "Exact covariate subset and all 72 focal omission coefficients checked against independently absorbed full-cohort leave-one-marker-out estimates. BH families remain separate per analysis; bootstrap intervals are unadjusted sensitivity intervals. Results remain conditional on estimated rates, fixed gene trees and predicted structures; copy review is unresolved and no causal or confirmatory single-ortholog conclusion follows."
+}
