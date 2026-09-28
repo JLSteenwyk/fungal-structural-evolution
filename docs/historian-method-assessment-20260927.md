@@ -155,3 +155,15 @@ Planning allowance is 0.5–4 hours, 5 GiB output, and no paid resources. The
 The existing MAFFT retry batch and original capacity grid are unchanged.
 `audit_historian_famsa_memory_retries.py` is prepared for independent readback;
 completion and successful reconstruction remain unproven until outputs pass.
+
+The first whole-MAFFT retry (floor 1e-9) finished in 1,000 seconds with a
+16.82 GiB peak sampled RSS. Independent readback passed for all 622 tips,
+the output tree and all four candidate descendant sets. The paired MAFFT
+retry remains pending, so no paired sensitivity comparison is yet available.
+This is computational feasibility and output integrity, not a fitted or
+converged ancestral posterior. Both frozen retry collections now have queued
+final audits that require the exact producer identity, successful terminal
+service state, all expected job receipts and artifact hashes. Unsuccessful
+job outcomes remain explicit even if the batch driver exits successfully.
+The first partial readback is recorded in
+`metadata/historian_memory_retry_partial_readback_20260927.json`.

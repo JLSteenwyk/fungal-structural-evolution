@@ -1,0 +1,27 @@
+{
+  "launch": "metadata/historian_memory_retry_launch_20260927.json",
+  "capacity_plan": "metadata/historian_memory_retry_plan_20260927.json",
+  "python": "/home/bizon/anaconda3/bin/python",
+  "audit_script": "scripts/audit_historian_memory_retries.py",
+  "output": "results/ancestral/historian-memory-retry-final-readback-20260927-v1",
+  "completion_metadata": "metadata/historian_memory_retry_audit_completed_20260927.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/historian_memory_retry_launch_20260927.json": "ab764a50801c8729743e904107c69f469f02024770663e7afdadfc02c63cc651",
+    "metadata/historian_memory_retry_plan_20260927.json": "09349474a133436b0467a924fd84e5e6f90366d66ca1e93044157fa6e1e08e08",
+    "scripts/audit_historian_memory_retries.py": "7cd890e57c142f95bdf9b342db42393035c7b501ca87db7e2c03f81f1ed6fdf2",
+    "scripts/advance_historian_retry_audit.py": "d2fda721bd07a79ca73801dac3c9c6322173797aaee13ede582aecfc430dce35",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e"
+  }
+}
