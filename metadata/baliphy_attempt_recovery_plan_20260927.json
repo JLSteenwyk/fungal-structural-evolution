@@ -1,0 +1,44 @@
+{
+  "config": {
+    "command": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+      "--seed",
+      "20260930",
+      "run",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-prior-initialization-20260927-v1/89598f9a3da57179dfc83940a1026306836060ca86bf3387f1c3bbb6989fac86-centered/BAliPhy.Main.hs",
+      "--iterations",
+      "20",
+      "--name",
+      "recovery-check"
+    ],
+    "seed": 20260930,
+    "timeout_seconds": 300,
+    "pins": {
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-prior-initialization-20260927-v1/89598f9a3da57179dfc83940a1026306836060ca86bf3387f1c3bbb6989fac86-centered/BAliPhy.Main.hs": "b9622adc6cccede9b7b35bad0abb4f088e2d041ece1f0d494163719f50110a74",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/case-alignments-20260927-v1/OG0002650-mafft/alignment.faa": "f5dbdbe7e6929f07680a2f1248876c1af26804bf9e64f8d0fc6e8a9acb38715f",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/historian-sensitivity-inputs-20260927-v1/profile-OG0002650-whole-floor1e-09-resolution0.nwk": "a3ff8af7390dcf635a646b93cc246c0ce3fbc9b9c23db20d979062f1ac685018"
+    }
+  },
+  "pins": {
+    "metadata/baliphy_prior_initialization_plan_20260927.json": "30b1ac6ee86957ed02644f1552f8a124cdf85fc36d6df5e3d77f6d9f96cda013",
+    "results/ancestral/baliphy-prior-initialization-20260927-v1/89598f9a3da57179dfc83940a1026306836060ca86bf3387f1c3bbb6989fac86-centered/receipt.json": "f33b67af3c3a3e631439aef717369021892ddf1ff26914d4d4a56007a3e91c7e",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/qualify_baliphy_attempt_recovery.py": "dba3bc4f71d67b6bf59ddd275bee6da24096e7bbafb5cbd203c579cd6e867087"
+  },
+  "job_id": "89598f9a3da57179dfc83940a1026306836060ca86bf3387f1c3bbb6989fac86-centered",
+  "output": "results/ancestral/baliphy-attempt-recovery-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "maximum_unit_seconds": 900,
+    "expected_minutes": [
+      1,
+      10
+    ],
+    "output_gib": 1,
+    "paid_cost": 0
+  },
+  "scope": "Isolated software recovery test using one already initialized input; no inference-scope reduction or production sample use."
+}

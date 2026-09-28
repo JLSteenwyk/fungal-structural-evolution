@@ -379,3 +379,21 @@ resource limits (including memory), scientific sample audits, stable chain
 identifiers and independent seed scheduling. This helper is not yet wired
 into a longer-chain batch and does not change the active pinned controller.
 Test evidence: `metadata/ancestral_chain_attempt_tests_20260927.json`.
+
+
+The installed BAli-Phy recovery qualification has now passed using a separate
+77-tip OG0002650 input with free parameters and the centered alpha prior.
+After its log appeared, the sampler retained inherited lock descriptor 3;
+killing its test controller did not permit a duplicate launch. Once that
+sampler was terminated, a fresh attempt completed 20 iterations, preserved
+all interrupted files, and passed hash-verified reuse without another launch.
+All 21 logged states had finite scores and consistent prior/likelihood sums.
+The service terminated successfully and all source/output hashes were checked
+again independently. Plan, launch and completion records are
+`metadata/baliphy_attempt_recovery_{plan,launch,completed}_20260927.json`.
+
+This qualifies that process-recovery path for the installed binary and tested
+configuration. It does not resume native MCMC state or qualify ancestral
+samples. Memory/resource limits, runtime-tree mapping, independent-chain
+seeds and convergence assessment still belong in the longer-chain controller.
+No active scientific batch was interrupted by this isolated test.

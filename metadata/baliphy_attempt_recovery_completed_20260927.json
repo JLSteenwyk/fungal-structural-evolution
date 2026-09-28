@@ -1,0 +1,18 @@
+{
+  "status": "passed_isolated_baliphy_attempt_recovery",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt": "results/ancestral/baliphy-attempt-recovery-20260927-v1/receipt.json",
+  "receipt_sha256": "de2476ec5f66adeac62cf061bf0cc558418734640272b6f7e5e6750e71108d9f",
+  "recovered_elapsed_seconds": 72.37273157198797,
+  "checks": [
+    "all_source_and_output_hashes",
+    "retained_interrupted_artifacts",
+    "iterations_0_through_20",
+    "initial_and_sample_score_arithmetic"
+  ],
+  "scope": "Installed BAli-Phy, one 77-tip input, controller crash and fresh whole-chain rerun. Not native checkpoint continuation, representative resource estimate, posterior convergence, or scientific qualification of ancestral samples."
+}
