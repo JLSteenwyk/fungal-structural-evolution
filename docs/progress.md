@@ -9671,3 +9671,14 @@ See `docs/matched-model-calibration-20260928.md` and
 interval integration has been implemented and checked at the per-fit interface;
 full-grid execution and inferential qualification remain pending. Existing
 phylogeny, ancestral-chain, retrieval and model-fitting jobs continue separately.
+
+### 2026-09-28: full matched-model refinement integrated
+
+All658 targeted real-data refinements passed their recorded numerical criteria.
+A list/array formatting error in the summary auditor was corrected in a separate
+version, and the complete audit and integration passed. The selected grid now
+contains144,040 unique fits mapped to414,720 analysis-setting rows, with zero
+remaining selected numerical-review flags and all original columns preserved.
+Current output: `results/structural_comparisons/refined-working-model-grid-export-20260928-v2`.
+Evidence: `metadata/matched_refinement_integration_completed_20260928_v2.json`.
+Calibrated uncertainty, model adequacy and biological interpretation remain open.

@@ -1,0 +1,26 @@
+{
+  "producer_plan": "metadata/matched_reml_analytic_refinement_plan_20260928.json",
+  "producer_launch": "metadata/matched_reml_analytic_refinement_launch_20260928.json",
+  "output": "results/model_validation/matched-reml-refinement-readback-20260928-v2",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_active_hours": [
+      0.05,
+      1
+    ],
+    "storage_gib": 0.1,
+    "gpu": false,
+    "paid_cost": 0,
+    "scope": "Wait for full658 terminal success, then check source bindings, candidate enumeration, diagnostics and coefficient units. Waiting time excluded."
+  },
+  "pins": {
+    "metadata/matched_reml_analytic_refinement_plan_20260928.json": "2fac404bccb63b5f149fc7d623336ae09c77f013dadc6d249a34b42c72d28abc",
+    "metadata/matched_reml_analytic_refinement_launch_20260928.json": "e43889fa1776960828d9a236263162416f02f5dbd7c6a3ad6a1a02d565c332e3",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_refinement_readback_checks_20260928.json": "390d5c5853caabd40aaac34dbd5bd38b258fa49cbd05c27fdea69ccf5c5412c7",
+    "scripts/audit_matched_reml_analytic_refinement_v2.py": "dee78ab6f1217862dcba9ca7bdd4a4e7240f1271f255640d684ff5e08f046965"
+  },
+  "recovery_reason": "Original auditor failed at summary serialization: abs(list). Full producer658 fits completed; no refitting or criteria changed."
+}

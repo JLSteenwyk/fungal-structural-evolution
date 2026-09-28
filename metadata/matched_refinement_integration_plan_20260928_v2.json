@@ -1,0 +1,31 @@
+{
+  "audit_launch": "metadata/matched_refinement_readback_launch_20260928_v2.json",
+  "original": "results/structural_comparisons/full-working-model-grid-export-20260927-v1",
+  "refinement": "results/structural_comparisons/matched-reml-analytic-refinement-20260928-v1",
+  "audit": "results/model_validation/matched-reml-refinement-readback-20260928-v2",
+  "output": "results/structural_comparisons/refined-working-model-grid-export-20260928-v2",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "storage_gib": 1,
+    "planning_active_hours": [
+      0.02,
+      1
+    ],
+    "basis": "144040 unique rows, 414720 expanded rows and 658 refinement payloads; no refitting. Waiting time excluded.",
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/integrate_matched_refinements.py": "84e6747df6d1a23ad166951f79893b0ca3a3873fe783ed759c21ffe69e0d6973",
+    "scripts/export_matched_model_grid.py": "dc524d9c8979cd35357e4ed4cdab71a4fed73c08345acc628a5d2a2d3fbe1927",
+    "scripts/readback_full_analytic_stationarity.py": "308acdbe2148a66ddcd4b5f87bf1cfd27f2120ab69819fe1693fae2bdf31a271",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_refinement_overlay_checks_20260928.json": "071833c0555579a5015e8f082fd9c3079bf931dbcd9ae08564fc6554314ed779",
+    "results/structural_comparisons/full-working-model-grid-export-20260927-v1/receipt.json": "ad4e54c22d06aad67ad54f91076450c5d8ef5eaf1d42ec86188ff3fd3cd9fcc9",
+    "metadata/matched_refinement_readback_launch_20260928_v2.json": "61adb5b70b334c338762c18c1fc2fc01470741fdac4cba2c88dbc91d22363829",
+    "metadata/matched_refinement_readback_plan_20260928_v2.json": "c27f6e90019b269cbd50628caafd741dbbcaececfbe67800e168cc2730577381"
+  }
+}

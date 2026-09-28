@@ -780,3 +780,34 @@ selected fits. Original statuses, candidate histories, failed-outcome bounds
 and coverage summaries remain unchanged. A versioned qualification overlay and
 recomputed coverage audit are required before declaring the184 reviews resolved.
 The experiment is not proof of global optimality or universal coverage.
+
+## Real-data refinement audit recovered; full grid integrated
+
+The658 targeted real-data refinements finished with numerical-pass dispositions
+for every fit. Their original auditor then failed while formatting its summary:
+Python `abs()` received the JSON list `projected_gradient`. The dependent
+integration correctly stopped because its prerequisite audit failed. No fitted
+values were lost, and neither failed controller produced its final output.
+
+The separate `scripts/audit_matched_reml_analytic_refinement_v2.py` converts that
+list to a floating NumPy array before taking absolute values. This is the only
+calculation change; fit criteria and original sources remain unchanged. New v2
+audit/integration plans and launch records preserve the failed run history.
+Both replacement services reached inactive/success/exit0.
+
+The full audit checked all658 dispositions and24-candidate records per fit.
+Integration then added selected estimates to all144,040 unique fits and414,720
+expanded analysis settings. All original columns were independently compared
+with their source tables and preserved exactly.658 unique rows and2,099
+expanded rows select refined candidates; all other rows retain their original
+selection. Source/artifact hashes and terminal states were checked, and no
+selected numerical-review flags remain. Completion evidence is in
+`metadata/matched_refinement_integration_completed_20260928_v2.json`.
+
+The current selected-grid output is
+`results/structural_comparisons/refined-working-model-grid-export-20260928-v2`.
+The numerical audit is
+`results/model_validation/matched-reml-refinement-readback-20260928-v2`.
+This advances the real-data model stage, not uncertainty calibration or global
+optimality proof. The separate synthetic184-review qualification overlay still
+needs completion; its original coverage results remain intact.

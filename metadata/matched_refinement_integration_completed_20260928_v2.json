@@ -1,0 +1,35 @@
+{
+  "status": "completed_refinement_audit_recovery_and_full_grid_integration_readback",
+  "audit_receipt_sha256": "8ef8b01c9ffb4761586722830781a112bfac827873983075d919f712f3cf28c0",
+  "integration_receipt_sha256": "672e7e8f75a86589c1ae53a8b63e25a99b596e7c077f8be7914bab9cfcc8912c",
+  "terminal_states": {
+    "fungal-matched-refinement-readback-20260928-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-matched-refinement-integration-20260928-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "tables": {
+    "unique_fits.parquet": {
+      "rows": 144040,
+      "selections": {
+        "original_not_targeted": 143382,
+        "refined_candidate": 658
+      }
+    },
+    "full_settings.parquet": {
+      "rows": 414720,
+      "selections": {
+        "original_not_targeted": 412621,
+        "refined_candidate": 2099
+      }
+    }
+  },
+  "selected_numerical_review_remaining": 0,
+  "scope": "Full original columns preserved and selected estimates integrated. All658 targeted refinements pass recorded numerical criteria. No global-optimum proof, calibrated uncertainty or biological effect claimed. Original failed auditor and integration records preserved."
+}
