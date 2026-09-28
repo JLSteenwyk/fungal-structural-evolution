@@ -1,0 +1,25 @@
+{
+  "audit_plan": "metadata/matched_kr_simulation_audit_plan_20260928.json",
+  "audit_launch": "metadata/matched_kr_simulation_audit_launch_20260928.json",
+  "output": "results/figures/matched-kr-coverage-20260928-v1",
+  "pins": {
+    "scripts/plot_matched_kr_simulations.py": "3e48ad8b1eb98cee51464b7f1a3dab3aad10822654998ee8067e7624ed6ba15a",
+    "scripts/matched_calibration_intervals.py": "ffd2e30a5cf25817bc70f434c18ed88dd78bbd0772b0121e73c8d42ea9bf3ec3",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_kr_simulation_audit_plan_20260928.json": "0b66545d075a6b42d81a60ee4811c86a03065ff798aaeba828d0d7daef83e68d",
+    "metadata/matched_kr_simulation_audit_launch_20260928.json": "5abac7f486ec491f346f9e863f39e307f192edfcd18d52d8c9aeb56deb658402",
+    "metadata/matched_kr_simulations_plan_20260928.json": "f27dbdc3468c2a5e9ff74d4fb3afb4bae7bb1f765d63dc6589d03fd5b7b56987"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_active_minutes": [
+      1,
+      10
+    ],
+    "gpu": false,
+    "paid_cost": 0
+  }
+}

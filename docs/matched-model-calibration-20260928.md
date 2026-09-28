@@ -685,3 +685,22 @@ source bindings are in `metadata/selected_matched_interval_checks_20260928.json`
 These checks exercise the selected-row schema using original numerical fits;
 the complete refined overlay and cache replay remain prerequisites for a
 full-grid launch. No full-grid candidate interval job has been launched yet.
+
+## Audited coverage report queued
+
+`scripts/plot_matched_kr_simulations.py` waits for the full simulation replay
+audit's verified terminal success. It then binds the audit and producer
+receipts and reconstructs every marginal Monte Carlo envelope from counts.
+The output table contains112 rows: all56 coefficient/configuration combinations
+for each of the two interval methods. A separate PNG/PDF figure shows the16
+intercept configurations with both methods. Thin segments show marginal95%
+Monte Carlo envelopes and thick segments retain uncertainty from unresolved
+attempts. The nominal95% target is marked without asserting attained coverage.
+
+A112-row reporting fixture passed and an altered interval endpoint was rejected;
+`metadata/matched_kr_coverage_report_checks_20260928.json` records these checks.
+The report service `fungal-matched-kr-coverage-report-20260928.service` was
+verified waiting, with one CPU,4GiB memory,no swap,0.1GiB output and1–10active
+minutes planned. Plans and launch records use the `matched_kr_coverage_report`
+prefix. Production tables, rendered-figure inspection and interpretation remain
+pending the full audit.
