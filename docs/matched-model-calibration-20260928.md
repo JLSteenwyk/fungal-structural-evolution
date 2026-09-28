@@ -250,3 +250,27 @@ enumeration is a numerical check, not a proof over every probability or project
 coverage evidence. Reproduce with
 `scripts/check_matched_calibration_intervals.py`; evidence is in
 `metadata/matched_calibration_interval_checks_20260928.json`.
+
+## Complete-refit timing running
+
+The full simulation-to-refit path is being timed on pinned existing designs,
+using minimum, median-ranked and maximum record counts among the 9,748 inputs
+already cached at selection time: 148, 4,909 and 10,960 records. Each is evaluated
+under all five trees, for 15 timing cases. Selection is based on availability
+and size, so this is not a representative runtime sample or biological pilot.
+One simulated response per case cannot estimate coverage.
+
+Every case first reproduces the original fixed-parameter likelihood from the
+cached input. It then generates a new response from the original fitted model
+and independently optimizes its variance components, retaining all24 candidates
+and source hashes. Original loading/replay time and simulation/refit time are
+recorded separately. A first completed case took25.12 seconds and passed
+numerical checks; this already demonstrates why a fast fixed-covariance
+evaluation is insufficient evidence of a fast full refit.
+
+`fungal-matched-simulation-refit-timing-20260928.service` uses one CPU,8GiB
+memory,no swap,0.1GiB storage and a two-hour service runtime limit. The active
+planning range is1–120minutes. Plan and launch metadata have the prefix
+`matched_simulation_refit_timing_20260928`; the script is
+`scripts/benchmark_matched_simulation_refits.py`. Review all timing dispositions
+and failures after terminal completion before revising any full-grid estimate.
