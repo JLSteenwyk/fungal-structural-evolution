@@ -63,7 +63,11 @@ Chronological receipts and process records remain in [progress](progress.md).
   coordinate comparisons. These inputs do not complete the functional aim.
 - Local codon branch-profile checks cover all 1,632 cases. All eight saved starts
   per case (13,056 starts) are being reoptimized without the profile constraint,
-  followed by full audit. Optimizer behavior is not a test of selection.
+  followed by full audit. A frozen partial review checks 777 completed cases:
+  14 have between-start log-likelihood spreads greater than 10. The full source-
+  model/parameter audit and 855 cases remain pending in that snapshot. Optimizer
+  behavior is not a test of selection; see the
+  [multiple-start review](local-mg94-unconstrained-multistarts-20260927.md).
 - The September 27 cache refresh leaves 3,626 unique marker proteins without
   cached models. GPU prediction remains paused; this is a marker-gap count,
   not whole-proteome coverage or proof of database absence.
@@ -112,10 +116,17 @@ analyses; do not silently shrink the scientific scope to successful cases.
   Historian's completed largest-family MAFFT retries also show minimum-edge
   sensitivity (10–15 ungapped edits at non-root candidates). Retain these
   limitations when evaluating candidate sequences.
-- BAli-Phy initialization checks are complete for all 324 configurations.
-  Short-chain output checks continue; production posterior mixing, model
-  sensitivity and qualified ancestral samples are still required. Exact-input
-  aliases may share computations but never count as independent chains.
+- BAli-Phy short-chain output checks are complete for all 324 configurations
+  and 3,888 candidate-node samples. All 405 explicit-prior initializations also
+  passed. The full 1,620-chain grid (135 effective inputs × three priors × four
+  seeds) is running with 16 CPU workers and a 1,000-iteration first horizon.
+  All 405 quartet scalar checks are queued at both burn-in cutoffs. The complete
+  short-run resource audit and isolated crash-recovery tests passed; initial
+  long-chain workers and enforced limits were verified. Posterior mixing,
+  alignment/ancestral-state diagnostics, model/root sensitivity and qualified
+  ancestral samples are still required. Exact-input aliases retain their
+  labels but never count as independent chains. See the
+  [BAli-Phy assessment](baliphy-method-assessment-20260927.md).
 - GPU prediction remains paused. No qualified ancestral structural ensemble
   has been produced, and aim 8 remains open alongside the other seven aims.
 

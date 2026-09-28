@@ -65,11 +65,18 @@ output checks. The complete four-alternative comparison finds 8–22 ungapped
 edits between non-root candidates across alignments and 8–19 across branch
 floors. All original capacity failures and alternative outputs are retained.
 
-All 324 BAli-Phy initializations passed model-code and initial-score checks;
-full runtime input-equivalence checks identify 135 distinct effective inputs.
-The [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) distinguishes
-these checks and short diagnostic chains from converged posterior ensembles.
-Final ancestral sequences and structures have not been qualified.
+All 324 BAli-Phy short sampling runs passed saved-alignment and node-identity
+checks, covering 3,888 candidate-node samples. Input-equivalence checks identify
+135 distinct effective inputs; all 405 initializations across three explicit
+priors also passed. The full **1,620 independent-chain grid** (135 inputs ×
+three priors × four seeds) is now running with 16 CPU workers and an initial
+1,000-iteration horizon. Provenance-checked scalar diagnostics are queued for
+all 405 quartets at both 25% and 50% burn-in cutoffs. These are computational
+checkpoints: posterior convergence, alignment/ancestral-state mixing and
+root/model sensitivity remain unresolved. Final ancestral sequences and
+structures have not been qualified. See the
+[BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) for resource
+estimates, recovery tests, launch records and completion requirements.
 
 The latest [matched contrast sensitivity](docs/matched-record-sensitivity-20260927.md)
 shows that weighting can reverse the descriptive difference in some settings.
