@@ -9440,3 +9440,32 @@ command and systemd state. It will verify all 324 receipts before the final
 readback; producer inactivity alone cannot trigger success. Both producer and
 audit process identities were checked. All inference qualification, rate
 fitting and remaining project aims stay open; GPUs remain paused.
+
+### 2026-09-27: complete whole-protein optimization sensitivity grid running
+
+Launched all 468 alternate-start fits: 26 untrimmed alignments × three empirical
+models (LG/WAG/JTT+F+G4) × three paired gamma/branch starts × two gamma lower
+bounds. All 1,025 original proteins remain represented across the families.
+The starts use alpha/branch-scale pairs (0.05,0.5), (0.5,1), (2,2), with alpha
+lower bounds 0.02 and 0.005. Derived starting trees were serialized and read
+back at 17-digit precision; original topologies are fixed. Original fit
+provenance is bound to the completed independent whole-protein likelihood audit.
+
+The producer uses two four-thread fits, 12 GiB aggregate memory, zero swap,
+an 8 GiB output allowance and a planning range of 1–72 hours, with no paid
+resources or GPUs. Its PID, creation time and command were verified live.
+First jobs are finishing; their likelihoods remain pending full independent
+readback, not evidence of global convergence.
+
+A pinned downstream audit checks every checkpoint/report, tip and edge set,
+model label, empirical frequency, gamma rate and information-criterion value,
+then independently replays each likelihood and compares starts/bounds. X is
+retained in original alignments and treated as unknown in likelihood replay
+and the version-specific eight-iteration frequency calculation. The audit
+waits on the verified producer and requires inactive/success/exit0 before
+reading the final batch. Both launch records and plans are versioned.
+
+This closes a missing *execution stage*, not a validation milestone. Best-fit
+refinement, posterior propagation and comparison remain downstream. Historian
+capacity and indel-history qualification proceed independently; ancestral
+structures and the other project aims remain incomplete.

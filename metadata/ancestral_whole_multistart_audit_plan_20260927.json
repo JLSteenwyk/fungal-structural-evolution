@@ -1,0 +1,36 @@
+{
+  "producer": {
+    "unit": "fungal-ancestral-whole-multistarts-20260927.service",
+    "pid": 596484,
+    "created": 1790553665.34,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_ancestral_whole_multistarts.py",
+      "--plan",
+      "metadata/ancestral_whole_multistart_plan_20260927.json"
+    ]
+  },
+  "exchangeabilities": "data/software_audits/iqtree-3.0.1/modelprotein.cpp",
+  "baseline": "results/ancestral/whole-protein-model-readback-20260927-v1/fit_readback.tsv",
+  "output": "results/ancestral/whole-multistart-readback-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      12
+    ]
+  },
+  "pins": {
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "results/ancestral/whole-protein-model-readback-20260927-v1/fit_readback.tsv": "151863216f8e4c3efab07f9a6e69ea3cb3fadb9369b37e3f9363e2788a57dc17",
+    "metadata/ancestral_whole_multistart_plan_20260927.json": "498bb5355d9fc21fc4743e4379c9688d6ab276daefd0a4293e570274c22c628c",
+    "metadata/ancestral_whole_multistart_launch_20260927.json": "1e15827f43b24101c27f6a1a018315b518c579e00bb0be17d0797dae22e0c2b1",
+    "scripts/audit_ancestral_whole_multistarts.py": "39a59c554653763174fd9d74b932f821b72f2f960999efc3808594ce84435878",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "data/software_audits/iqtree-3.0.1/alignment.cpp": "bede370114744d607f2a46509d12347d93480ca5c99957bb63d8f40e507a75f0"
+  }
+}
