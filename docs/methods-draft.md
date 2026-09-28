@@ -649,8 +649,12 @@ faces: the exact all-zero face and three starts (ratios 0.05, 1 and 20) for
 each other face, totaling 22 attempts. Saved candidates include failures,
 objectives, convergence messages and boundary flags. A separate direct evaluator
 checks candidate likelihoods and conditional coefficient calculations. An
-analytic-gradient follow-up is queued to assess stationarity where coarse
-finite-difference diagnostics are inconclusive. Original flags remain preserved.
+analytic-gradient follow-up assessed stationarity where coarse finite-difference
+diagnostics were inconclusive. All 658 targeted fits passed the recorded
+numerical criteria after refinement and full output readback. Selected estimates
+were integrated into 144,040 unique-fit rows and 414,720 setting rows; original
+estimates and flags remain preserved. The completed integration and its scope
+are recorded in `metadata/matched_refinement_integration_completed_20260928_v2.json`.
 Passing numerical checks does not prove a global optimum; conditional covariance
 matrices are not final calibrated uncertainty estimates.
 

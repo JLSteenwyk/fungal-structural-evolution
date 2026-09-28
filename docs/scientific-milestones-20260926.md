@@ -211,9 +211,11 @@ See the [restored-access checkpoint](restored-access-checkpoint-20260928.md)
 for terminal-state and artifact verification of the newly completed stages.
 
 September 28: [analytic refinement](matched-reml-analytic-refinement-20260928.md)
-is active for all 658 remaining flagged working-model fits. Dense-likelihood
-and derivative-free synthetic checks passed; production qualification remains
-pending output readback and review.
+and the complete output readback finished for all 658 flagged working-model
+fits. The audited estimates were integrated into all 144,040 unique-fit and
+414,720 setting rows, with zero remaining selected numerical-review flags.
+Original estimates and flags remain preserved. This establishes the recorded
+numerical criteria, not global optimality, model adequacy or calibrated inference.
 
 September 28: the [full paired FastML comparison](fastml-paired-comparison-20260928.md)
 checked all 8,058,340 paired marginal entries. Cache refresh changes eight
@@ -231,10 +233,15 @@ with explicit protection against native tree annotation and branch-floor
 behavior. Earlier failed handoffs are preserved.
 See the [optimizer evidence](fastml-paired-comparison-20260928.md).
 
-September 28: full658 matched-model refinement readback is queued after
-producer completion. The checker passed a frozen152 completed records plus
-three tamper cases. Whole-grid qualification and setting-map integration
-remain pending.
+September 28: the corrected refinement auditor and full setting-map integration
+both reached terminal success; their earlier failed attempts remain recorded.
+Evidence is in `metadata/matched_refinement_integration_completed_20260928_v2.json`.
+Cache replay subsequently covered all 28,808 inputs and 144,040 original fits.
+Selected-fit residual diagnostics have been produced for the complete grid,
+but their numerical replay remains active; candidate interval production and
+its downstream audit also remain incomplete. Inferential calibration and
+scientific interpretation are still required. See
+[matched-model calibration](matched-model-calibration-20260928.md).
 
 September 28: full FastML five-start readback is queued against the resumed
 producer. A frozen54 complete-group subset shows all54 likelihoods improved

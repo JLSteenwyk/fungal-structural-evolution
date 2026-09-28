@@ -99,6 +99,27 @@ The queued integration has one CPU, 8 GiB memory, no swap and a 1 GiB storage
 allowance; estimated active work is 0.02–1 hour after the upstream wait.
 Plan and live launch identity are in
 `metadata/matched_refinement_integration_plan_20260928.json` and
-`metadata/matched_refinement_integration_launch_20260928.json`. Production
-integration is not yet complete. Conditional covariance is not calibrated
+`metadata/matched_refinement_integration_launch_20260928.json`. These describe
+the original queued attempt; the completed recovery is recorded below.
+Conditional covariance is not calibrated
 uncertainty, and numerical refinement does not qualify a biological effect.
+
+## Completed refinement and integration
+
+The version 2 output auditor and integration jobs both reached
+inactive/success/exit0. The completed export is
+`results/structural_comparisons/refined-working-model-grid-export-20260928-v2`.
+All 658 targeted fits use audited refinement candidates; the other 143,382
+unique fits retain their original estimates. These map to 2,099 refined and
+412,621 unchanged setting rows, respectively. No selected numerical-review
+flags remain. Original estimates and flags are preserved in the export.
+
+`metadata/matched_refinement_integration_completed_20260928_v2.json` records
+the full integration readback and receipt hashes. The export receipt and both
+Parquet artifact hashes were rechecked against those records when updating
+this document. Earlier failed attempts remain available in the job history.
+The queued-stage descriptions above are historical, not current completion
+claims. Numerical acceptance does not establish global optimality, calibrated
+uncertainty, covariance adequacy or a biological effect. Residual replay and
+candidate interval analyses are tracked in
+[matched-model calibration](matched-model-calibration-20260928.md).
