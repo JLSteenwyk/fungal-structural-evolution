@@ -1,0 +1,27 @@
+{
+  "old": "results/structures/whole-proteome-afdb-catalog-20260922-v1",
+  "new": "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+  "old_audit": "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json",
+  "new_audit": "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json",
+  "output": "results/structures/whole-proteome-catalog-change-20260928-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_planning_gib": 2,
+    "runtime_planning_hours": [
+      0.1,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Outer join of both full protein-link tables, artifact hash verification and 526-taxon reconciliation; waiting excluded."
+  },
+  "pins": {
+    "scripts/compare_whole_proteome_catalogs.py": "5e2cf189e24814fae37b6cd92e6ef583a59d734c0906c7a03f15980cf6d50c00",
+    "scripts/readback_whole_proteome_catalog.py": "1e4fc2bd8764204b01d8a1c6251b27437a79a5d93dc842a92d8cb9e73fa3549c",
+    "metadata/whole_proteome_catalog_comparison_checks_20260928.json": "8f6d725f07762647162b7928b660bf5e1cfe69829ab4e134c1f5485f4c40b856",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1-readback.json": "d4645003ef064ff7c7c9cda618efc5e7827d32cd5e40610a48729a41b9004826",
+    "results/structures/whole-proteome-afdb-catalog-20260922-v1/receipt.json": "529f9a7618d9a1db9402e43af17ca6ba856a42cb083b1bd0aa4f61bb9edfcc99"
+  }
+}

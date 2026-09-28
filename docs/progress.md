@@ -9733,3 +9733,12 @@ does not establish universal coverage or complete the biological project.
   Both catalog and readback jobs are active; readback is waiting. It uses one
   CPU, 32 GiB maximum memory, no swap and low I/O priority. Record comparison
   with the September22 catalog remains downstream of this validation.
+
+- September 28: queued a complete old/new catalog comparison behind terminal
+  successful refreshed-catalog readback. It retains new links, lost links,
+  changed selected models and unchanged models, reconciles all 526 taxon rows,
+  and counts proteins absent from both catalogs. Fixtures checked all four
+  dispositions plus rejection of duplicate identities and changed protein
+  sequences. Full results are pending. Resources: one CPU, 16 GiB memory cap,
+  no swap, 2 GiB output allowance and 0.1–2 active hours planned. The comparison
+  measures catalog coverage, not newly inferred structures or biological change.
