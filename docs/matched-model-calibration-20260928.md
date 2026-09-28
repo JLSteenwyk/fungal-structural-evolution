@@ -1026,3 +1026,19 @@ The existing selected-fit interval and descriptive residual controllers
 subsequently started their calculations with 16 and eight workers,
 respectively. Residual processing reached 600 of 28,808 inputs at 16:23 EDT;
 those outputs and the interval outputs still require their queued full audits.
+
+### Residual producer complete; full numerical replay active
+
+The descriptive residual producer finished successfully at 16:50 EDT on
+September 28. Every one of the 28,808 input files and 144,040 selected-fit
+records passed the serialized artifact hash, input/tree scope and
+selected-source binding checks. All 144,040 records have the
+`descriptive_marginal_residual_diagnostics` disposition; none has a recorded
+computation-failure disposition. Completion evidence is in
+`metadata/selected_matched_residual_producer_completed_20260928.json`.
+
+The full numerical audit has started and replayed its first 100 inputs at
+16:51 EDT. It remains incomplete. Successful computation and serialization
+checks are not evidence that residual distributions fit the model or that
+fungal hypothesis tests are calibrated. Model adequacy and uncertainty
+calibration remain open.
