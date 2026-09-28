@@ -1,0 +1,28 @@
+{
+  "launch": "metadata/baliphy_sample_mapping_launch_20260927.json",
+  "producer_plan": "metadata/baliphy_sample_mapping_plan_20260927.json",
+  "audit_script": "scripts/audit_baliphy_sample_mapping.py",
+  "expected_audit_status": "all_mapping_dispositions_checked",
+  "python": "/home/bizon/anaconda3/bin/python",
+  "output": "results/ancestral/baliphy-sample-mapping-final-readback-20260927-v1",
+  "completion_metadata": "metadata/baliphy_sample_mapping_final_readback_completed_20260927.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours_after_producer": [
+      0.1,
+      2
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "metadata/baliphy_sample_mapping_launch_20260927.json": "6701a5bbe67bd431b4680091f276c2c105ef565cc9aede3936d6c987171ea363",
+    "metadata/baliphy_sample_mapping_plan_20260927.json": "4846a3d97dd7351144f8438bcd8321c0bb7686e60023b6d8a37c2e16ed06e7ae",
+    "scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "scripts/advance_baliphy_final_readback.py": "bd7b46b9fcd9d708d618aa6880c774b5d4c441649ddc1b9be26e5b8ff86fc8c8",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e"
+  }
+}

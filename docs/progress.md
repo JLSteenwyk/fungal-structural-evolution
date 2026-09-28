@@ -9559,3 +9559,21 @@ reduction or profile relaxation was used. Retry process identity and child
 command were verified. Independent retry output checks are prepared, not yet
 passed. Additional failures from the original active grid remain separately
 accountable. Full project and GPU-dependent deliverables remain incomplete.
+
+### 2026-09-27: BAli-Phy expanded readback and complete-batch audit handoffs
+
+Initialization readback now verifies148 configurations, including the largest
+622-protein whole alignment;176 remain pending in this snapshot. Six diagnostic
+chains pass all saved-sample checks, covering72 candidate-node/sample mappings;
+318 remain pending. These are initialization/output-integrity results, not
+convergence or final ancestral ensembles. Snapshot artifact hashes verified.
+
+Both complete-batch auditors are now queued using one pinned handoff script.
+Each checks producer PID, creation time and command while waiting, requires
+inactive/success/exit0, verifies the full324-job receipt set, then runs its
+respective independent readback. Every unsuccessful job remains an explicit
+outcome; complete accounting is not a claim that every diagnostic succeeded.
+Launch identities for both waiting auditors were verified. Each audit has
+one CPU,8GiB RAM,zero swap and1GiB output allowance. Historian's higher-memory
+retry and whole-protein optimization continue independently. All full-project
+requirements remain active; GPUs remain paused.
