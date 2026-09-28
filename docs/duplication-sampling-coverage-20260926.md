@@ -120,3 +120,27 @@ python scripts/plot_duplication_sampling_coverage.py \
 
 The figure script produces a numeric `lineage_coverage.tsv`, provenance receipt,
 and PNG/PDF/SVG figures. No new prediction or phylogenetic correction is performed.
+
+## September 28 expanded-catalog join
+
+The fixed 935,353 terminal singleton-side event records have now been joined
+to the September 28 catalog of 1,955,694 protein/model links. This separate
+output preserves the original event identities and old model assignments:
+`results/orthology/duplication-expanded-coverage-20260928-v1/`.
+The producer finished successfully; independent readback remains pending.
+
+Preliminary producer counts are 141,724 two-model events for the profile guide
+and 141,685 for MAFFT, versus 109,245 and 109,228 previously. Both guides now
+have two-model candidates in 210 taxa, versus 153 previously. No previously
+two-model event lost that coverage. These are source-availability counts, not
+confidence-qualified comparisons or evidence of structural divergence.
+The old figures and comparison queues retain their original frozen scope.
+
+Reproduce in a fresh output directory using
+`scripts/refresh_duplication_model_coverage.py --plan
+metadata/duplication_expanded_coverage_plan_20260928.json`.
+The plan pins source tables, receipts and script; the launch record is
+`metadata/duplication_expanded_coverage_launch_20260928.json`. The bounded job
+used one CPU, 4 GiB RAM, no swap, no GPU and no paid resources, with a 1 GiB
+output allowance and an uncalibrated 0.02–1 hour planning range. Full event
+identity, catalog joins and summary readback are the next acceptance step.
