@@ -1,0 +1,101 @@
+{
+  "status": "new_terminal_stages_verified_after_access_restoration",
+  "services": {
+    "fungal-full-matched-working-models-20260927": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-matched-working-model-output-audit-20260927": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-working-model-analytic-stationarity-20260927": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-analytic-stationarity-readback-20260927": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-model-grid-export-20260927": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-fastml-variants-20260928": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-fastml-roundoff-readback-20260928": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_roots": {
+    "metadata/full_matched_working_model_output_audit_20260927.json": "f36f522f4433caf85e005869c269aa7676bea855e59badb79eb47984bcf56548",
+    "results/ancestral/full-fastml-roundoff-readback-20260928-v1/receipt.json": "1cbba8bfd228b1cb9a82121b634e31d5813d9ac4579a703b8a72d33c536f5bf6",
+    "metadata/ancestral_categorical_runtime_benchmark_20260928.json": "b05d30366f6a03ef408b7e756a882c4d8743cb398528eb2c7c77c0fb4729bb0b",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/receipt.json": "0eed35da1e8786476fdf8bb3852326e767d713aae8c26f3b39e6d6bbf0fb1a48",
+    "results/model_validation/full-working-model-analytic-stationarity-20260927-v1/receipt.json": "978206cf9ad2659c6d62b737f275c713765d6c1afb1777ca935e8d34257e6636",
+    "results/model_validation/full-working-model-analytic-stationarity-readback-20260927-v1/receipt.json": "ac17cc75c54617156243dc86460f0aebb14575e94dff7d4386bba57bf31fa4f9",
+    "results/structural_comparisons/full-working-model-grid-export-20260927-v1/receipt.json": "ad4e54c22d06aad67ad54f91076450c5d8ef5eaf1d42ec86188ff3fd3cd9fcc9"
+  },
+  "checked_artifact_files": 9819,
+  "matched_models": {
+    "fits": 144040,
+    "original_status_counts": {
+      "candidate_passed_numerical_optimization_checks": 41065,
+      "candidate_requires_optimization_review": 102975
+    },
+    "analytic_gradient_transitions": {
+      "False->True": 102447,
+      "True->True": 41336,
+      "False->False": 257
+    },
+    "remaining_review_fits": 658,
+    "review_reasons": {
+      "analytic_gradient_threshold": 257,
+      "optimizer_termination": 395,
+      "full_face_start_disagreement": 6
+    },
+    "expanded_setting_rows": 414720
+  },
+  "fastml": {
+    "status_counts": {
+      "integrity_and_independent_replay_complete_not_fit_qualification": 306,
+      "no_coded_characters": 6
+    },
+    "variants": {
+      "precision-only": {
+        "fits": 153,
+        "probability_rows": 8058340,
+        "maximum_absolute_likelihood_difference": 0.4739479748134938,
+        "likelihood_difference_exceeds_1e_minus5": 77,
+        "maximum_probability_difference": 6.801317918470051e-05,
+        "raw_boundary_excursions": 137547,
+        "maximum_raw_boundary_error": 2.6645352591003757e-15
+      },
+      "precision-cache-refresh": {
+        "fits": 153,
+        "probability_rows": 8058340,
+        "maximum_absolute_likelihood_difference": 0.0034516902519499126,
+        "likelihood_difference_exceeds_1e_minus5": 74,
+        "maximum_probability_difference": 6.801317918470051e-05,
+        "raw_boundary_excursions": 137553,
+        "maximum_raw_boundary_error": 2.6645352591003757e-15
+      }
+    }
+  },
+  "benchmark": {
+    "patterns": 120,
+    "elapsed_seconds": 0.8830927690141834
+  },
+  "script_sha256": "77fbec0391db312cd769f8cca86eda93c9ac02904615060f0e128ceba5651783",
+  "scope": "Terminal states and bound artifacts checked; no independent refitting or derivative recomputation. Optimization review, FastML numerical/model qualification, uncertainty and all eight scientific aims remain open."
+}

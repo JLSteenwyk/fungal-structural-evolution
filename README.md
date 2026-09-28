@@ -86,9 +86,10 @@ Independent FastML replay now covers all 153 nonempty inputs and 8,058,340
 probabilities. Three one-character cases exposed a stale ascertainment cache
 after initial branch scaling. A paired precision-controlled regression reduces
 their likelihood discrepancy from approximately 0.47 to below 1.24e-7 with a
-targeted cache refresh. Full paired inference is running across both variants,
-with separate replay that reports tiny probability-boundary excursions without
-clipping raw values. Original outputs and strict validator failures are retained.
+targeted cache refresh. Full paired inference and separate replay completed
+for 306 nonempty fits across both variants, retaining six empty inputs and
+tiny probability-boundary excursions without clipping raw values. Remaining
+likelihood/probability discrepancies still require review. Original outputs and strict validator failures are retained.
 These fits are not qualified ancestral ensembles; see the
 [FastML discrepancy and correction evidence](docs/fastml-indel-likelihood-discrepancy-20260927.md).
 
@@ -97,9 +98,11 @@ shows that weighting can reverse the descriptive difference in some settings.
 [Taxon and reuse inputs](docs/selected-taxon-inputs-20260927.md) preserve the
 dependence information used by the [full comparative-model run](docs/full-matched-working-models-20260927.md).
 Its verified inventory contains 28,808 unique record inputs and 144,040 tree
-fits. Production is running; numerical output checks, full analytic convergence
-assessment, unresolved-fit refinement and inferential calibration remain pending.
-Partial fits are not final adjusted effects.
+fits. Production, output checks and analytic-gradient readback completed;
+658 unique fits remain flagged for review. The full export retains all
+414,720 setting/tree rows. Unresolved-fit refinement and inferential calibration
+remain pending; these estimates are not final adjusted effects. See the
+[restored-access checkpoint](docs/restored-access-checkpoint-20260928.md).
 
 The [ordinary-ML nonlinear comparison](docs/matched-ordinary-likelihood-20260927.md)
 is now running across 432,120 fits: linear, quadratic and cubic identity terms
@@ -113,8 +116,8 @@ The completed [joint-covariate support check](docs/joint-covariate-support-20260
 now covers all 28,808 unique inputs and 82,944 original settings. Twenty-four
 tiny negative-weight cases passed a separately recorded nonnegative construction;
 original solver flags remain preserved. Numerical overlap does not establish
-model adequacy or calibrated uncertainty. A complete reporting export is queued
-after analytic validation, retaining all 414,720 setting/tree dispositions.
+model adequacy or calibrated uncertainty. The completed reporting export
+retains all 414,720 setting/tree dispositions and unresolved-fit flags.
 
 [Ecological edge/coverage integration](docs/ecology-optimal-edge-states-20260927.md)
 finds no matched predictor marker coverage for the three currently mapped focal

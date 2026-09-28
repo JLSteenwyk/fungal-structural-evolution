@@ -34,7 +34,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 - FastML independent replay covers all 153 nonempty inputs and 8,058,340
   probabilities. The targeted branch-scaling cache correction passed six
   paired regression runs; the full two-variant grid and separate numerical
-  boundary-aware replay are running. Three empty inputs per variant remain
+  boundary-aware replay completed for 306 nonempty fits. Three empty inputs per variant remain
   explicit. Optimization and model qualification remain unresolved; see the
   [discrepancy record](fastml-indel-likelihood-discrepancy-20260927.md).
 - Extant residue-anchor projection passed all 135 effective-input fixtures,
@@ -69,8 +69,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   concentration are now independently verified across all 54 sensitivity
   scenarios; see [matching diagnostics](duplication-control-balance-20260927.md).
   Background domain measurements and all 82,944 descriptive summary settings are
-  complete. The full 144,040-fit phylogenetic working-model grid is running;
-  a separate 432,120-fit ordinary-ML linear/quadratic/cubic grid is also running
+  complete. The full 144,040-fit phylogenetic working-model grid, analytic-gradient
+  checks and export completed; 658 unique fits remain for numerical review.
+  A separate 432,120-fit ordinary-ML linear/quadratic/cubic grid is running
   on verified identical observations across five trees. The expanded designs and
   input inventory passed full readback; nonlinear joint support is verified for
   all 57,616 inputs, including separate nonnegative certificates for 112 edge cases. Full likelihood comparison exports retain all settings and fit flags.
@@ -189,3 +190,6 @@ A literature-supported potential Neocallimastix species complex also motivates
 six new representative-sensitivity guide searches, now running. This does not
 establish a revised unique-species count or resolve the other uncertain labels.
 See [taxon identity](taxon-identity-sensitivities.md).
+
+See the [restored-access checkpoint](restored-access-checkpoint-20260928.md)
+for terminal-state and artifact verification of the newly completed stages.
