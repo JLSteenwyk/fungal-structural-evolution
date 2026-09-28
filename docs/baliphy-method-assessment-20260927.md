@@ -271,3 +271,12 @@ Plan and launch: `metadata/baliphy_prior_initialization_final_readback_{plan,lau
 The eventual completion record is
 `metadata/baliphy_prior_initialization_final_readback_completed_20260927.json`;
 its absence means this final audit is not yet complete.
+
+
+The second independent prior-initialization snapshot checks 140 completed
+configurations and retains 265 pending. All completed generated models,
+initial score arithmetic, parameter-support and tree-length checks pass.
+The per-prior counts and observed initial alpha range are recorded in
+`metadata/baliphy_prior_initialization_partial_readback_v2_20260927.json`.
+These are initial prior draws, not posterior estimates or independent
+convergence chains. The full batch and its final auditor continue.

@@ -1,0 +1,23 @@
+{
+  "status": "partial_initialization_snapshot",
+  "expected_jobs": 405,
+  "dispositions": {
+    "initial_model_semantics_and_finite_scores_checked": 140,
+    "pending_receipt": 265
+  },
+  "artifacts": {
+    "dispositions.json": "e731e4df74bdb2748c8281dd3d4377baa20d8936c117a56ca2ae17241ce5e41a"
+  },
+  "scope": "Generated model code, fixed input paths, initial score arithmetic, frequency normalization and total tree length checked. No independent likelihood replay, runtime tip/node reconstruction readback, MCMC mixing, effective sample size or posterior qualification. All405 prior/input outcomes retained, with all324 original configuration aliases.",
+  "completed_receipt_path": "results/ancestral/baliphy-prior-initialization-readback-20260927-v2/receipt.json",
+  "completed_receipt_sha256": "fc6a97f4f2d6f79bdfd03f1ffe2a91e1c4eb8de14aa931d96933b202c6f4518f",
+  "checked_by_prior": {
+    "package": 47,
+    "centered": 47,
+    "broad": 46
+  },
+  "checked_alpha_range": [
+    2.866864455292339,
+    3315.745673321868
+  ]
+}
