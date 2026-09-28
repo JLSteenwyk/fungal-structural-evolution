@@ -1,0 +1,27 @@
+{
+  "producer_plan": "metadata/full_fastml_variant_plan_20260928.json",
+  "producer_launch": "metadata/full_fastml_variant_launch_20260928.json",
+  "output": "results/ancestral/full-fastml-roundoff-readback-20260928-v1",
+  "pins": {
+    "metadata/full_fastml_variant_plan_20260928.json": "8a7f89f2f02f1b5e3f7d7932ec9fbc35d470801f8986dc48b33eef7b2d5a6fe1",
+    "metadata/full_fastml_variant_launch_20260928.json": "116f2019ccaa3849c598fe2ba32cc54d8f18e014672ad5e18d22279b94634419",
+    "scripts/advance_fastml_roundoff_readback.py": "52c7d42263f6e1b8341c40aea3f47ec81c271336e836a4e4ac3ddef4cab6c737",
+    "scripts/readback_fastml_variant_roundoff.py": "e1e9fc2ea72ebd28ad3a46637a23f46f72435cf93c0ce7817801025abf70fa4d",
+    "scripts/replay_fastml_indel_probabilities.py": "71a23efe0978b4c126ba7219aebe0fcf18758e7a3ddd9623ad7af5e9445d2679",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/test_fastml_probability_boundaries.py": "6fbc0bfa5037e8620d8d1cc73898db057ff7f3d8aeeda6367cd3dd5a6df83dc4"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_active_hours": [
+      0.1,
+      4
+    ],
+    "basis": "306 serialized-parameter replays; excludes producer wait.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}
