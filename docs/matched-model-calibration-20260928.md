@@ -70,3 +70,37 @@ under that model. It does not validate Gaussian residuals, constant variance,
 the selected covariance form, phylogenetic assumptions or the conditioning on
 observed structural data. Residual/model-adequacy diagnostics, missingness,
 prediction uncertainty and biological controls remain separate requirements.
+
+## Full-grid resource inventory
+
+`scripts/estimate_matched_calibration_resources.py` verified all 144,040 saved
+fit hashes against their manifest, checked input/tree identities and the
+completed output-audit binding, and extracted per-fit elapsed times and serialized
+sizes. Their summed elapsed time is 461,195 seconds (128.11 hours), with a
+3.29-second median and 12.18-second maximum. These are individual elapsed
+measurements under the original scheduling, not measured CPU consumption.
+
+The scenarios below preserve all unique fits and assume unchanged fit cost,
+ideal 32-worker parallelism and one generating-model condition per fit:
+
+| Simulations per fit | Total refits | Ideal parallel days | Same-format outputs, GiB | MC standard error for 95% coverage |
+|---:|---:|---:|---:|---:|
+| 199 | 28,663,960 | 33.2 | 336.5 | 1.55 percentage points |
+| 999 | 143,895,960 | 166.6 | 1,689.4 | 0.69 percentage points |
+| 1,999 | 287,935,960 | 333.5 | 3,380.4 | 0.49 percentage points |
+
+These are arithmetic planning scenarios, not ETAs or a selected production
+design. They exclude simulation, repeated data reconstruction, audits, failed
+replicate retries, extra null/alternative conditions and changed optimizer cost.
+Storage scales the existing serialized fit size, not simulated alignments or
+all possible auxiliary outputs. The complete scenarios include 8- and 16-worker
+alternatives in `metadata/matched_calibration_resources_20260928.json`.
+
+The original likelihood already caches invariant cross-products within a fit.
+Further savings require demonstrated reuse across responses or faster equivalent
+refitting, not an assumption that the original code was uncached. Simulation
+responses have different fitted variance ratios, so a shared fixed covariance
+alone cannot replace per-response optimization for fitted-parameter calibration.
+Evaluate any batched implementation against direct likelihood and refit results
+before using its timing for production estimates. The full grid remains in scope;
+no smaller subset is being substituted or declared calibrated.

@@ -1,0 +1,114 @@
+{
+  "status": "full_original_fit_cost_inventory_and_conditional_scenarios",
+  "unique_tree_fits": 144040,
+  "unique_inputs": 28808,
+  "recorded_fit_wall_seconds_sum": 461195.0961564017,
+  "serialized_bytes_sum": 1815749419,
+  "fit_seconds_quantiles": {
+    "0": 0.18144419099553488,
+    "0.5": 3.2940463475097204,
+    "0.9": 5.905767688312335,
+    "0.99": 7.812022263074751,
+    "1": 12.175141171988798
+  },
+  "source_receipt_sha256": "0eed35da1e8786476fdf8bb3852326e767d713aae8c26f3b39e6d6bbf0fb1a48",
+  "audit_sha256": "f36f522f4433caf85e005869c269aa7676bea855e59badb79eb47984bcf56548",
+  "script_sha256": "3e09478dd296ea9dd9e8558e66c0bb36eee18a21083e709893b2319b70a23d24",
+  "artifacts": {
+    "resource_scenarios.tsv": "333ba63bfd257b0d05f8cc654cbde5819b161e0d4405139c3ab7f10735c7c7a4",
+    "full_fit_costs.parquet": "cd5d90ef4199e93333ad5f4ed632c3bfaeb4f948439cee07a3ace40add9cf6ed"
+  },
+  "scenarios": [
+    {
+      "replicates_per_unique_fit": 199,
+      "workers": 8,
+      "total_refits": 28663960,
+      "same_cost_serial_fit_hours": 25493.840037534428,
+      "ideal_parallel_days": 132.7804168621585,
+      "same_format_fit_gib": 336.5186363281682,
+      "coverage_mc_standard_error_at_095": 0.015449707678033376,
+      "smallest_plus_one_tail_fraction": 0.005
+    },
+    {
+      "replicates_per_unique_fit": 199,
+      "workers": 16,
+      "total_refits": 28663960,
+      "same_cost_serial_fit_hours": 25493.840037534428,
+      "ideal_parallel_days": 66.39020843107924,
+      "same_format_fit_gib": 336.5186363281682,
+      "coverage_mc_standard_error_at_095": 0.015449707678033376,
+      "smallest_plus_one_tail_fraction": 0.005
+    },
+    {
+      "replicates_per_unique_fit": 199,
+      "workers": 32,
+      "total_refits": 28663960,
+      "same_cost_serial_fit_hours": 25493.840037534428,
+      "ideal_parallel_days": 33.19510421553962,
+      "same_format_fit_gib": 336.5186363281682,
+      "coverage_mc_standard_error_at_095": 0.015449707678033376,
+      "smallest_plus_one_tail_fraction": 0.005
+    },
+    {
+      "replicates_per_unique_fit": 999,
+      "workers": 8,
+      "total_refits": 143895960,
+      "same_cost_serial_fit_hours": 127981.63918340146,
+      "ideal_parallel_days": 666.5710374135493,
+      "same_format_fit_gib": 1689.3573753358796,
+      "coverage_mc_standard_error_at_095": 0.006895472974897918,
+      "smallest_plus_one_tail_fraction": 0.001
+    },
+    {
+      "replicates_per_unique_fit": 999,
+      "workers": 16,
+      "total_refits": 143895960,
+      "same_cost_serial_fit_hours": 127981.63918340146,
+      "ideal_parallel_days": 333.28551870677467,
+      "same_format_fit_gib": 1689.3573753358796,
+      "coverage_mc_standard_error_at_095": 0.006895472974897918,
+      "smallest_plus_one_tail_fraction": 0.001
+    },
+    {
+      "replicates_per_unique_fit": 999,
+      "workers": 32,
+      "total_refits": 143895960,
+      "same_cost_serial_fit_hours": 127981.63918340146,
+      "ideal_parallel_days": 166.64275935338733,
+      "same_format_fit_gib": 1689.3573753358796,
+      "coverage_mc_standard_error_at_095": 0.006895472974897918,
+      "smallest_plus_one_tail_fraction": 0.001
+    },
+    {
+      "replicates_per_unique_fit": 1999,
+      "workers": 8,
+      "total_refits": 287935960,
+      "same_cost_serial_fit_hours": 256091.38811573526,
+      "ideal_parallel_days": 1333.8093131027879,
+      "same_format_fit_gib": 3380.405799095519,
+      "coverage_mc_standard_error_at_095": 0.004874615978769019,
+      "smallest_plus_one_tail_fraction": 0.0005
+    },
+    {
+      "replicates_per_unique_fit": 1999,
+      "workers": 16,
+      "total_refits": 287935960,
+      "same_cost_serial_fit_hours": 256091.38811573526,
+      "ideal_parallel_days": 666.9046565513939,
+      "same_format_fit_gib": 3380.405799095519,
+      "coverage_mc_standard_error_at_095": 0.004874615978769019,
+      "smallest_plus_one_tail_fraction": 0.0005
+    },
+    {
+      "replicates_per_unique_fit": 1999,
+      "workers": 32,
+      "total_refits": 287935960,
+      "same_cost_serial_fit_hours": 256091.38811573526,
+      "ideal_parallel_days": 333.45232827569697,
+      "same_format_fit_gib": 3380.405799095519,
+      "coverage_mc_standard_error_at_095": 0.004874615978769019,
+      "smallest_plus_one_tail_fraction": 0.0005
+    }
+  ],
+  "scope": "Full 144040 fit inventory. Recorded times are per-fit elapsed time, not CPU time. Linear scenarios assume identical refit cost and ideal parallelism; exclude simulation, input reconstruction, changed optimizer, retries, audits and contention. No production launch or calibrated inference."
+}
