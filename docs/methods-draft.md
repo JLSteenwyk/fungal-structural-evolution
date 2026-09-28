@@ -770,3 +770,76 @@ remain required before interpretation.
 Implementation and source bindings are documented in
 [nonlinear inputs](nonlinear-identity-contrasts-20260927.md) and
 [ordinary likelihood](matched-ordinary-likelihood-20260927.md).
+
+## Conditional ancestral amino-acid inference in exploratory families
+
+We analyzed 13 exploratory families using 26 whole-protein alignments (MAFFT
+and FAMSA for each family). The input union contained 1,025 proteins from 417
+taxon entries and 482,007 ungapped residues; the largest family contained 622
+proteins. All proteins and alignment columns were retained. These families
+are mechanistic candidates, not a random sample of the fungal proteome, and
+selection of a family does not establish an evolutionary effect.
+
+For each alignment, IQ-TREE 3.0.1 fitted LG, WAG and JTT exchangeabilities with
+empirical amino-acid frequencies and four gamma rate categories, holding the
+unrooted topology fixed while optimizing branch lengths and gamma shape.
+The initial design comprised 78 fits. We assessed optimization sensitivity
+using three paired gamma-shape/branch-scale starts, (0.05, 0.5), (0.5, 1) and
+(2, 2), at each of two lower bounds on gamma shape (0.02 and 0.005). These
+468 alternate fits used an optimization epsilon of 1e-6. For each of the 156
+alignment/model/bound groups, the best eligible audited baseline or alternate
+fit initialized an additional refinement at epsilon 1e-8. All warnings,
+short branches and alternative optimizer outcomes were retained.
+
+Independent readback checked every fitted report and checkpoint, tip and edge
+sets, empirical frequencies, gamma-category rates and likelihood. Frequency
+reconstruction followed the version-specific eight-iteration allocation of
+unknown observations. Likelihoods were recomputed by scaled pruning, with an
+absolute agreement threshold of 0.001. Passing this check establishes numerical
+agreement for a saved fit; it does not establish a global optimum or model
+adequacy.
+
+We computed all 20 conditional amino-acid probabilities at three identifiable
+candidate internal vertices, using original labeled trees to derive partitions
+of retained tips around each vertex and matching those partitions to the fitted
+tree. The original degree-two root was suppressed by the unrooted model and
+was recorded as having an unidentifiable position, rather than assigned to a
+nearby fitted vertex. Gaps and X were treated as unknown residue observations;
+this calculation did not infer deletions or an ancestral ungapped sequence.
+Source alignments remained unchanged.
+
+The probability implementation used rerooted pruning, repeated-column
+compression, and spectral transition matrices, with direct matrix
+exponentials for very short transitions. A separate fixed-root inside/outside
+implementation used full columns and direct matrix exponentials, independently
+constructing the rate matrix from the same empirical exchangeabilities and
+saved parameters. An analytically enumerated two-internal-node example checked
+the independent implementation. Full readback required absolute agreement
+within 1e-8 for probabilities and 1e-7 for site log likelihoods. All 8,708,760
+probabilities in the 156 refined fits passed this readback.
+
+Same-coordinate sensitivity summaries compare the most probable amino acid,
+its support, and total variation between the complete 20-state probability
+distributions. Opposing most-probable states with at least 0.9 probability in
+both fits are counted explicitly. Comparisons require matching alignment
+hashes and candidate-vertex partitions. Model, bound and node comparisons are
+dependent diagnostics and are not counted as independent evolutionary changes
+or used as posterior ensemble weights. The refined/baseline and bound
+comparisons are complete; probability propagation and comparisons for all
+alternate starts remain in progress at this checkpoint.
+
+Joint insertion/deletion uncertainty is unresolved. Independent gap-character
+marginals can violate mutual-exclusion constraints, and imposing compatibility
+after fitting does not supply a fitted joint evolutionary model. Historian
+checks revealed sensitivity of the largest-family candidate outputs to minimum
+branch length. BAli-Phy initialization and short-chain diagnostics assess model
+execution and sample identity, not posterior convergence. Final ancestral
+sequences, ancestral structure ensembles and functional conclusions have not
+been qualified by these conditional calculations.
+
+Inputs, commands, numeric checks and completion records are linked in
+[ancestral case evidence](ancestral-case-inputs.md), with separate
+[Historian](historian-method-assessment-20260927.md) and
+[BAli-Phy](baliphy-method-assessment-20260927.md) assessments. The
+[refinement sensitivity figure](figures/whole_refinement_sensitivity_20260927.pdf)
+is generated from the complete audited comparison table.
