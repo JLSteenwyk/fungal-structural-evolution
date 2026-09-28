@@ -1,0 +1,22 @@
+{
+  "status": "passed_residual_trace_shortcut_checks",
+  "cancellation_fallback_checked": true,
+  "dense_cases": 162,
+  "maximum_absolute_disagreement": 1.1935073416680098e-05,
+  "maximum_scaled_disagreement": 2.3348784750383318e-07,
+  "maximum_blocked_information_disagreement": 3.3130618248833343e-09,
+  "synthetic_600_record_timing_seconds": {
+    "blocked": 0.10166662599658594,
+    "shortcut": 0.06525536603294313
+  },
+  "exact_confounding_rank": 3,
+  "invalid_inputs_rejected": 7,
+  "block_partition_equivalence": true,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_covariance_information_fast.py": "2e734da98880735cccb3272a06b1839cace169bc1871034360062e7c3b73f186",
+    "scripts/matched_covariance_information.py": "474e0ae5d27a1a4be53981931f88b0bd9d0a8cf14d912dd2660c2dda84319469",
+    "scripts/matched_covariance_information_fast.py": "77fc9a45884b633988d44621a046b5f6ee40675ce5c38339a9a2ade4d95af325",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "scope": "Synthetic shortcut, blocked and dense comparisons including large and zero variances. No information inverse, KR intervals or coverage claims. Blocked exact reference has quadratic work and is not approved for full-grid execution."
+}

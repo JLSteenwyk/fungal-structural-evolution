@@ -438,3 +438,37 @@ launch metadata use `matched_information_timing_20260928`; outputs are in
 Completion and artifact auditing remain pending. These original estimates do
 not incorporate the separate658-fit refinement overlay. A full-rank result
 will not by itself establish regularity or valid uncertainty at a boundary.
+
+## Residual information trace shortcut checked
+
+The separate `scripts/matched_covariance_information_fast.py` avoids the
+observation-identity block pass. It computes tr(P squared) using the nested
+base inverse and the species/fixed-effect low-rank downdates. Cross-information
+with the residual component is accumulated as squared norms of P Ui during
+the existing group/factor passes. All four components and derivative kernels
+remain present. This changes computation, not model specification.
+
+For a downdate A-H M H', the squared trace is evaluated as
+tr(A squared)-2 tr(M H' A H)+tr((M H' H) squared). The nested base contribution
+uses background counts and family sums. If the final residual trace is
+nonfinite or no larger than1e-8 times the sum of absolute trace terms, the
+routine falls back to the original blocked reference for the entire result.
+This conservative cancellation trigger is a numerical safeguard, not a
+statistical threshold or a guarantee against every conditioning problem.
+
+`scripts/check_matched_covariance_information_fast.py` compared162 synthetic
+cases against both the original blocked information and dense calculations,
+covering zero,moderate and10,000-fold variance ratios. Maximum information
+disagreement with the blocked reference was3.32e-9. Across all contractions,
+maximum dense absolute disagreement was1.20e-5 and maximum error scaled by
+1+absolute reference value was2.34e-7; the large-ratio checks use explicit
+rtol/atol1e-6. An adversarial full-rank species factor triggered cancellation
+fallback and exactly reproduced the reference. Confounding, block-partition
+equivalence and invalid-input checks also passed.
+
+One600-record,242-factor synthetic timing took0.102seconds for the reference
+and0.065seconds for the shortcut. This single timing is not a representative
+full-grid speed estimate. Evidence is in
+`metadata/matched_covariance_information_fast_checks_20260928.json`. Group
+passes still require substantial work; real-input equivalence and timing are
+pending. The active original15-case benchmark and its pinned code are unchanged.
