@@ -1,0 +1,58 @@
+{
+  "status": "curated_four_strain_linked_taxonomic_cautions",
+  "records": [
+    {
+      "taxon_id": "F2600213",
+      "frozen_name": "Serendipita sp. 400",
+      "assembly": "GCA_019627735.1",
+      "strain": "strain=400",
+      "bioproject": "PRJNA557761",
+      "evidence_type": "strain_label_link_not_sequence_verified_assembly_equivalence",
+      "source_url": "https://doi.org/10.1101/862763",
+      "source_status": "primary_preprint",
+      "review_status": "species_identity_unresolved"
+    },
+    {
+      "taxon_id": "F2600215",
+      "frozen_name": "Serendipita sp. 405",
+      "assembly": "GCA_019627745.1",
+      "strain": "strain=405",
+      "bioproject": "PRJNA557763",
+      "evidence_type": "strain_label_link_not_sequence_verified_assembly_equivalence",
+      "source_url": "https://doi.org/10.1101/862763",
+      "source_status": "primary_preprint",
+      "review_status": "species_identity_unresolved"
+    },
+    {
+      "taxon_id": "F2600216",
+      "frozen_name": "Serendipita sp. 411",
+      "assembly": "GCA_019627755.1",
+      "strain": "strain=411",
+      "bioproject": "PRJNA557734",
+      "evidence_type": "strain_label_link_not_sequence_verified_assembly_equivalence",
+      "source_url": "https://doi.org/10.1101/862763",
+      "source_status": "primary_preprint",
+      "review_status": "species_identity_unresolved"
+    },
+    {
+      "taxon_id": "F2829486",
+      "frozen_name": "Auriculariales sp. MPI-PUGE-AT-0066",
+      "assembly": "GCA_020744175.1",
+      "strain": "strain=MPI-PUGE-AT-0066",
+      "bioproject": "PRJNA347192",
+      "evidence_type": "strain_label_link_not_sequence_verified_assembly_equivalence",
+      "source_url": "https://myco-lb.jgi.doe.gov/Olipa1/Olipa1.home.html",
+      "source_status": "indexed_primary_portal_text",
+      "review_status": "species_identity_unresolved"
+    }
+  ],
+  "pins": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/species_assembly_candidates.tsv": "11b03013197060a77002e0ee6cd525eefe891fef04522d5c7b5af4bf09db5fe6",
+    "data/taxonomy/serendipita-oliveonia-evidence-20260927-v1/browser_source_response.json": "7779785a7510889ad9d7785d33fe575fe4d0ef98b94aa1145338517498343934",
+    "data/taxonomy/serendipita-oliveonia-evidence-20260927-v1/jgi_indexed_source_response.json": "37eaffef6e3718ab78b12df3c4d4969b9855547ce3b05a8aabc14ddc68970899",
+    "data/taxonomy/serendipita-oliveonia-evidence-20260927-v1/retrieval_attempts.json": "4acfa58de24c744ef7cae2379f2fe9000145cb9e99b68ed792404bbfbc8781b3"
+  },
+  "source_access": "Browser-extracted preprint passages and indexed JGI primary page retained. Direct PDF/HTML requests failed; no valid full-source archive is claimed.",
+  "scope": "No relabeling, species merging or count revision. Serendipita conspecificity is a hypothesis in a preprint; assembly-specific equivalence to its shallow sequences is unverified. JGI explicitly leaves the Oliveonia isolate taxonomic assignment uncertain. All original inputs and active jobs unchanged."
+}

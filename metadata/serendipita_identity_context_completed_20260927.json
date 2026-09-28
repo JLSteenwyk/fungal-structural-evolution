@@ -1,0 +1,19 @@
+{
+  "status": "complete_selected_serendipita_pairwise_context",
+  "taxa": 5,
+  "comparisons": 20,
+  "pins": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/phylogeny/profile-matrix-50-v1/receipt.json": "d86f5fc33a6db9f6a9510385f93c5621be5565e4b83c5321e506be5ec4d62f57",
+    "results/phylogeny/profile-matrix-50-v1/matrix.faa": "1934ea4e2d0687d644a65d3fc550dc6eee25e42d85deeeec6a3e529bd1ddb045",
+    "results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "results/phylogeny/mafft-matrix-50-v1/matrix.faa": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e"
+  },
+  "script_sha256": "c8827b9afd9fe736d7754576104803dc05d2359fd0ef851b164003a6a41883f5",
+  "artifacts": {
+    "all_pair_observed_differences.tsv": "d293171f5597fced1b85a5ed65fbb98e64d9ad55863b84d8ac3563a1c59016c7"
+  },
+  "scope": "All pairs among the five selected Serendipita entries, both frozen marker matrices. Canonical residues only; gaps and unknowns excluded explicitly. Raw observed amino-acid differences, not corrected evolutionary distance, independent sites, species delimitation, contamination assessment or evidence that three unnamed isolates are distinct species.",
+  "completed_receipt_path": "results/phylogeny/serendipita-identity-context-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "c1b3ccbcc70a37065de4252a1d70aea810dd682624675d24eeb64f919e379a67"
+}

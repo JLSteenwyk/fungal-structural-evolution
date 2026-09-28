@@ -190,3 +190,40 @@ phylogenetic inference is launched. Plan and exact launch identity:
 `metadata/neocallimastix_guide_audit_launch_20260927.json`.
 Full tree verification and topology results remain pending. Comparisons with
 full-data guides and downstream structural analyses remain additional work.
+
+
+## Additional strain-linked review: Serendipita and MPI-PUGE-AT-0066
+
+The primary [Unruh et al. preprint](https://doi.org/10.1101/862763) includes
+Serendipita isolates 400, 405 and 411. It discusses potentially shared species
+or population membership among the non-399 isolates, without delimiting them.
+The selected assemblies match these strain labels, but equivalence to the
+preprint's shallow assemblies has not been sequence-verified. These three
+entries therefore remain unresolved; no merger or accepted name is assigned.
+
+All ten pairs among our five Serendipita entries were checked in both frozen
+marker matrices. Among unnamed isolates, observed amino-acid differences are:
+
+| Strains | Profile: differing / comparable columns | MAFFT: differing / comparable columns |
+| --- | --- | --- |
+| 400 / 405 | 2306 / 26735 (8.63%) | 2563 / 33829 (7.58%) |
+| 400 / 411 | 1954 / 25778 (7.58%) | 3162 / 33453 (9.45%) |
+| 405 / 411 | 1532 / 29605 (5.17%) | 1906 / 37215 (5.12%) |
+
+These are uncorrected descriptive differences with explicit gap/unknown
+exclusion, not a species threshold. Different alignment columns and coverage
+prevent interpreting between-method differences as biological change. The full
+20-comparison table and independent position-set count checks are recorded in
+`metadata/serendipita_identity_context_completed_20260927.json`.
+
+For F2829486, the exact strain label MPI-PUGE-AT-0066 links to a JGI page using
+*Oliveonia pauxilla*, but that page explicitly leaves its taxonomic assignment
+uncertain. It is therefore inappropriate to replace the frozen *Auriculariales
+sp.* label with that binomial as a resolved identification.
+[JGI primary portal](https://myco-lb.jgi.doe.gov/Olipa1/Olipa1.home.html).
+
+Four strain-linked evidence records, source-access limitations and hashes are
+in `metadata/serendipita_oliveonia_taxonomic_review_20260927.json`. Browser
+extractions were retained locally; direct source downloads failed and are not
+represented as valid full-source archives. Original manifests and running
+analyses remain unchanged. The 21 uncertain labels are still unresolved.
