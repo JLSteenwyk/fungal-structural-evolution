@@ -1334,3 +1334,37 @@ model, bound, method and ancestor comparisons remain dependent.
 Reproducibility: `scripts/stratify_ancestral_context_coverage.py`, output
 `results/ancestral/ancestral-context-coverage-20260927-v1`, and full-string
 readback evidence in `metadata/ancestral_context_coverage_completed_20260927.json`.
+
+
+### Mapping conflict contexts to existing extant structures
+
+All six case-study AlphaFold models for OG0001203 and OG0002650 match their
+complete input protein sequences exactly. The conflict contexts map to nine
+distinct extant model positions (24 rows retaining alignment-method and boundary
+labels). Every position has a CA coordinate and pLDDT above 90. A separate
+Bio.PDB parser reproduced all residue identities, confidence values and XYZ
+coordinates from the retained PDB files.
+
+| Family | Case role | Protein position | Observed residue | pLDDT | Domain-coordinate status |
+| --- | --- | ---: | --- | ---: | --- |
+| OG0001203 | a (F106004_ORY58660.1) | 31 | T | 98.50 | retained_domain_coordinate |
+| OG0001203 | b (F106004_ORY61939.1) | 32 | Q | 95.69 | retained_domain_coordinate |
+| OG0001203 | reference (F269621_SCV69143.1) | 30 | S | 94.69 | retained_domain_coordinate |
+| OG0002650 | a (F80663_KIM74314.1) | 351 | Y | 96.94 | outside_focal_domain_interval |
+| OG0002650 | b (F80663_KIM89976.1) | 349 | F | 94.62 | outside_focal_domain_interval |
+| OG0002650 | reference (F1759441_KZP06766.1) | 339 | Y | 97.69 | retained_domain_coordinate |
+| OG0002650 | a (F80663_KIM74314.1) | 161 | A | 92.94 | outside_focal_domain_interval |
+| OG0002650 | b (F80663_KIM89976.1) | 156 | A | 90.06 | outside_focal_domain_interval |
+| OG0002650 | reference (F1759441_KZP06766.1) | 149 | S | 93.44 | outside_focal_domain_interval |
+
+These are extant prediction annotations, not ancestral structures or experimental
+validation. In particular, both alanines supporting the whole-protein A/V
+conflict and the corresponding reference serine lie outside the focal domain
+interval. High pLDDT does not establish correspondence inside that domain.
+CA-only coordinate files do not support claims about catalytic residues,
+side-chain interactions, surface accessibility or binding-pocket membership.
+
+Reproducibility: `scripts/map_ancestral_conflicts_to_case_models.py`, complete
+model/version/sequence identities and coordinates in
+`results/ancestral/ancestral-conflict-case-models-20260927-v1`, and completion
+metadata `metadata/ancestral_conflict_case_models_completed_20260927.json`.

@@ -1,0 +1,39 @@
+{
+  "status": "complete_extant_case_model_conflict_annotations",
+  "models": 6,
+  "annotation_rows": 24,
+  "mapped_residue_rows": 24,
+  "retained_domain_rows": 14,
+  "pins": {
+    "results/ancestral/ancestral-conflict-observations-20260927-v1/receipt.json": "6721fdd7e109ed84de515a4d96bc00b84f2287a96f1e56e4061e9a341111f1d9",
+    "results/ancestral/ancestral-conflict-observations-20260927-v1/observed_contexts.json": "2af3824c28ccd8513a4f3cbd9c19968a409be4af99ec544152937023c79fb4ae",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/receipt.json": "2747f5227824abf9444d8c6dbdbff327617ce7bec6cc59d91742de80b7dd61c2",
+    "results/structural_comparisons/whole-domain-case-dossiers-20260927-v1/whole_reference_links.tsv": "94713f722d9106652c4cf7c3e10e91b7a6ee0414f80e89ac5f37d211016eeb96",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/receipt.json": "7a840476d801cb67738368e8d2bbfc9a5c020ba7b1f15e2537ae95201e88cb9a",
+    "results/structural_comparisons/whole-protein-common-residues-20260927-v1/model_triads.tsv": "9fdde272039d19fad472ead3e5fd12bcb32c67e9db936ea0ad71274895b85ecf",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/pdb/4a/4a323f013c89edb120862683afae66cd31f6bfd8af4dbdc0b718382adc042507-full.pdb": "b80f3f1c9e781262e668dfb698759ee2b4a57c0f2c47a858f76710f71ca0b53d",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/pdb/ec/ecdba2dc960174109d61ee9d37b7a2cd399ee7407bb2a0d539e81489dfbfb49e-full.pdb": "5500d7f51bdea4f0e8abc258411a57b89b7c562a5206093f5edbab81e6c6e4ae",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/pdb/cd/cd07880e861ac7a1e66a00d55a9ece6df8cfa497b4b76f17dd0997136be7d9ba-full.pdb": "a2c85c197bb3af0b823e651fee8aac135e7fe46bed6919f477d756192c4eef44",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/pdb/95/951257ffe4af4ed4e956b584340544a069781f351b599484c44f18a3da34d12f-full.pdb": "33ac012f4fd4438d574319a9d4d3a3fb106872dda48aaed13ea0b3af4a2edad0",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/pdb/fc/fcbc3a1a424b1325ecc2ae5411638b7a51f4b3f46fddea979fc015604559f14a-full.pdb": "059d5100a3cf7051a9cdeab49988bf4210b8fe903e98b013c85b3c1b20671eeb",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3c/3cf71ecb5189f89706bfd19a0aeb369a4c67086fefa548117cfd3d9bd35f171c-full.pdb": "c133e5547b63bcf4f789124833c78387848ef9950eb6888b4b02cd7299b89994",
+    "results/ancestral/case-alignments-20260927-v1/OG0001203-mafft/alignment.faa": "fbe389476006cb60402aeced60d634c362a77af981644217d7ec50d56521ff39",
+    "results/ancestral/case-alignments-20260927-v1/OG0002650-mafft/alignment.faa": "f5dbdbe7e6929f07680a2f1248876c1af26804bf9e64f8d0fc6e8a9acb38715f"
+  },
+  "script_sha256": "c5cf0e36f6d6d5d3a014ea656fe8cf40bb709dbc9f060a75fc092bc6bd1ea2a2",
+  "artifacts": {
+    "extant_model_annotations.json": "37295dce91ac7a90a2379a9ab84f047359c40ca453488719c2cbc711862b8dca"
+  },
+  "scope": "Exact full-sequence equality and CA identity checked for six existing extant AlphaFold models. pLDDT is local prediction confidence, not validation of homology, ancestral state or function. Outside-domain residues remain flagged and must not be represented as matching focal-domain positions. CA-only coordinates do not establish surface, pocket or catalytic roles. No ancestral structures predicted.",
+  "completed_receipt_path": "results/ancestral/ancestral-conflict-case-models-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "00f1f8bc291b43073933090e872084722b5f17e326bc53562b5a8d29cc22ca0d",
+  "separate_biopython_coordinate_readback": {
+    "annotation_rows": 24,
+    "unique_model_positions": 9,
+    "status": "passed_sequence_residue_confidence_and_xyz_checks"
+  }
+}
