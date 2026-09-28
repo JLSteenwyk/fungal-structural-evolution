@@ -1,0 +1,65 @@
+{
+  "status": "completed_coverage_report_readback_and_review_inventory",
+  "attempted": 15984,
+  "numerically_qualified_refits": 15800,
+  "review_refits": 184,
+  "review_causes": {
+    "all_full_face_starts_agree": 184
+  },
+  "method_descriptive_counts": {
+    "Conditional t": {
+      "rows": 56,
+      "marginal_upper_below_095": 9,
+      "marginal_lower_above_095": 1,
+      "unresolved_per_coefficient_range": [
+        0,
+        61
+      ]
+    },
+    "KR candidate": {
+      "rows": 56,
+      "marginal_upper_below_095": 1,
+      "marginal_lower_above_095": 10,
+      "unresolved_per_coefficient_range": [
+        0,
+        61
+      ]
+    }
+  },
+  "full_face_objective_spread_quantiles": {
+    "0": 0.0003230011879225003,
+    "0.5": 2.3573424760201718,
+    "0.9": 5.5293397087761935,
+    "1": 18.291606671990394
+  },
+  "terminal_states": {
+    "fungal-matched-kr-simulation-audit-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-matched-kr-coverage-report-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_bindings": {
+    "results/model_validation/matched-kr-simulations-20260928-v1/receipt.json": "8c70e61816a74bc08ac7238159499dbd9928eb01dd97b3c6ba323e113f52bab7",
+    "results/model_validation/matched-kr-simulations-20260928-v1/run_plan.json": "f27dbdc3468c2a5e9ff74d4fb3afb4bae7bb1f765d63dc6589d03fd5b7b56987",
+    "results/model_validation/matched-kr-simulations-20260928-v1/manifest.json": "7ccc8f9d54f36fdfe18871cf55e62e57b39d2ca9ee6fe65b2d08c85028c36818",
+    "results/model_validation/matched-kr-simulations-20260928-v1/coverage_summaries.json": "473f40c91eb411362383beab1c8f64095bcb097d1c374179e51569dbe1014c25",
+    "results/model_validation/matched-kr-simulation-audit-20260928-v1/receipt.json": "38c66008a806d829d340d4ef173fd9c71689cbf42f47a0082ed0d0ae48fe179b",
+    "results/model_validation/matched-kr-simulation-audit-20260928-v1/kr_coverage.json": "473f40c91eb411362383beab1c8f64095bcb097d1c374179e51569dbe1014c25",
+    "results/model_validation/matched-kr-simulation-audit-20260928-v1/conditional_t_coverage.json": "df9f87391e0ff226a88220d20ae592d04aabce0cd58053acf2f0529bb4f24de1",
+    "results/figures/matched-kr-coverage-20260928-v1/receipt.json": "9eb86fc1fb2d224400defdc834a1eff084cab73854fba0a7baed1aa588fd1fb5",
+    "results/figures/matched-kr-coverage-20260928-v1/intercept_coverage.png": "ed5ad1f4ba465fce4b7257b16f976488069b0e7ac700932ce3a695ae271f99e8",
+    "results/figures/matched-kr-coverage-20260928-v1/intercept_coverage.pdf": "69ef4a12aee55faace2885f6eebc4af85683fccbf0a76a99f8bac836690d76f5",
+    "results/figures/matched-kr-coverage-20260928-v1/all_coefficient_coverage.tsv": "a6158111a10987d333cecd2cfe5d4aff0703da041a2358978b04ff8d9f1761c1"
+  },
+  "script_sha256": "e07c2cf2695b6a1f1584f49daadacb1153d323d57ce792b58b36764d20c97731",
+  "artifacts": {
+    "optimization_review_cases.tsv": "9e00a12932c0bbf9518251c8098044ca9b85ca256c436c401dd8c9a18d017301"
+  },
+  "scope": "All published coverage rows and184 source-bound review cases inventoried. Marginal interval exclusions are descriptive across56 dependent coefficient/design comparisons; not multiplicity-adjusted rejections. No global coverage certification or optimizer repair claimed. Full response/fit replay is bound through the completed audit."
+}

@@ -704,3 +704,46 @@ verified waiting, with one CPU,4GiB memory,no swap,0.1GiB output and1–10active
 minutes planned. Plans and launch records use the `matched_kr_coverage_report`
 prefix. Production tables, rendered-figure inspection and interpretation remain
 pending the full audit.
+
+## Synthetic study complete: useful adjustment, not universal calibration
+
+The simulation producer, full replay audit and report finished successfully.
+All15,984 responses and selected fits were replayed;15,800 refits passed the
+numerical criteria and184 remained unresolved. All112 coefficient/method rows,
+source/artifact hashes and review-case bindings were checked by
+`scripts/readback_matched_kr_coverage.py`. Completion evidence is in
+`metadata/matched_kr_coverage_completed_20260928.json`. The PNG was visually
+inspected: all16 scenario labels, two methods, nominal reference and uncertainty
+segments are visible without overlap. The figure and complete table are in
+`results/figures/matched-kr-coverage-20260928-v1`.
+
+For the48-record, family-only variance configuration, observed intercept
+coverage bounds including unresolved draws are95.10–95.60% for KR versus
+86.89–87.39% for conditional t. Conversely, when all three random-component
+generating variances are zero, KR intercept coverage is99.10–99.70% for the
+48-record design and97.70% for the240-record design. These results show both
+improved coverage in some configurations and conservative behavior in others.
+They do not support labeling the method uniformly calibrated at95%.
+
+Across56 coefficient/configuration rows per method, the marginal Monte Carlo
+upper endpoint is below95% in one KR row and nine conditional-t rows; the lower
+endpoint exceeds95% in ten KR rows and one conditional-t row. These are
+descriptive counts across dependent comparisons, not multiplicity-adjusted
+rejections. The one KR upper endpoint below95% is the240-record family-only
+intercept:934/999 coverage, with marginal interval91.78–94.94%. Monte Carlo
+variation and multiple comparisons preclude treating that single result as
+proof of general undercoverage.
+
+All184 numerical-review cases fail only the full-face start-agreement check.
+The selected candidates pass the other stored numerical checks, but the
+different-start objective spreads range0.000323–18.29 (median2.36). These are
+not uniformly rounding-level differences. Every case remains in the denominator
+with unresolved bounds; no fit was discarded or silently requalified. Their
+exact saved paths/hashes and diagnostic spreads are in
+`results/model_validation/matched-kr-coverage-readback-20260928-v1/optimization_review_cases.tsv`.
+
+Next work must investigate these optimization disagreements and assess the
+approximation on actual design conditions and model departures. Candidate
+real-grid intervals remain unqualified for biological claims. No additional
+replicates were added in response to these observed coverage results, and the
+full fungal cohort and all evolutionary aims remain unchanged.

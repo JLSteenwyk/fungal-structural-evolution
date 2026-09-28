@@ -9654,3 +9654,20 @@ establish model adequacy, inferential calibration, independent ecological
 replication or biological mechanisms. Final sampling identity/QC resolution,
 missing structural coverage, cross-predictor controls and complete deliverables
 remain part of the original project scope.
+
+### 2026-09-28: completed synthetic uncertainty validation
+
+Completed and audited15,984 Gaussian simulation/refits across16 fixed designs
+and variance configurations, with999 replicates each. The candidate KR
+adjustment improved coverage in some small-sample configurations but was
+conservative in several boundary configurations. This is method validation,
+not universal calibration for the fungal data. All184 optimization-review
+outcomes remain in coverage denominators; their failure is disagreement among
+full-face optimization starts and requires follow-up.
+
+The112-row coverage table and intercept figure are reproducible and inspected.
+See `docs/matched-model-calibration-20260928.md` and
+`metadata/matched_kr_coverage_completed_20260928.json`. Candidate full-grid
+interval integration has been implemented and checked at the per-fit interface;
+full-grid execution and inferential qualification remain pending. Existing
+phylogeny, ancestral-chain, retrieval and model-fitting jobs continue separately.
