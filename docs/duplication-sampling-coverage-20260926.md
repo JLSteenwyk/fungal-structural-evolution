@@ -311,3 +311,18 @@ is uncalibrated. Launch identity is in
 Coordinate validation, independent numeric readback and structural comparisons
 remain pending. No GPUs or paid resources are used. Matching model IDs/versions
 alone still does not justify reuse of previous coordinate-derived results.
+
+The independent coordinate readback is queued as
+`fungal-duplication-coordinate-readback-20260928.service`, using unchanged
+`readback_duplication_coordinates.py` and
+`metadata/duplication_coordinate_readback_plan_20260928.json`. It waits for
+the exact producer process to exit and requires a complete, hash-bound
+producer receipt before reconstructing every accepted exported C-alpha
+sequence, coordinate and confidence value from raw CIF atom rows. It shares
+the CIF lexical parser, but not the producer's extraction function. Rejected
+records retain their identities and reasons; the readback does not independently
+adjudicate rejection causes. Its allowance is two CPUs, 8 GiB RAM, zero swap,
+0.1 GiB output and an uncalibrated 0.5–24 hours. Launch identity is recorded in
+`metadata/duplication_coordinate_readback_launch_20260928.json`. Final completion
+still requires successful service terminal states and validated artifacts;
+the queued process is not a completed audit.
