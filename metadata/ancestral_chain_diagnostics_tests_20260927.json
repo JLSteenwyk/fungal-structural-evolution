@@ -1,0 +1,15 @@
+{
+  "status": "implemented_scalar_diagnostics_six_tests_passed",
+  "tests": 6,
+  "environment": "SOFTWARE/ancestral-diagnostics-20260927",
+  "command": [
+    "SOFTWARE/ancestral-diagnostics-20260927/bin/python",
+    "scripts/test_ancestral_chain_diagnostics.py"
+  ],
+  "pins": {
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "scripts/test_ancestral_chain_diagnostics.py": "8527497bfd214972b1a412ec18d65925e910c0c1c1c1142fa4f207e3aefeb812",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f"
+  },
+  "scope": "Synthetic diagnostic and log-manifest tests only. No production convergence or ancestral posterior qualification."
+}

@@ -416,3 +416,40 @@ The complete short-run resource audit, costed iteration horizon, controller
 integration, output validation and convergence/extension policy remain required
 before launching this grid. Distinct seeds alone do not prove independent
 stationary samples or adequate exploration.
+
+
+### Scalar independent-chain diagnostics implemented
+
+`scripts/ancestral_chain_diagnostics.py` reads four distinct, checksum-bound
+logs for one declared model/input identity. It requires unique seed and chain
+identifiers and exactly matching iteration schedules; it neither silently
+truncates chains nor concatenates attempts. Burn-in is an explicit inclusive
+iteration cutoff, applied identically to every chain. Variables must be listed
+explicitly in the input manifest. Identity/seed declarations still require
+independent provenance checks against the launch and source receipts.
+
+The isolated environment `SOFTWARE/ancestral-diagnostics-20260927` uses
+ArviZ 0.22.0; installed versions are frozen in
+`environments/ancestral-diagnostics-20260927.lock.txt`. Recreate with a Python
+3.10 virtual environment and `pip install -r` that lock file.
+The screen reports rank-normalized split/folded R-hat, bulk ESS, tail ESS and
+mean Monte Carlo standard error. Initial thresholds are R-hat <1.01 and bulk
+and tail ESS >=400 for four chains, following
+[Stan diagnostic guidance](https://mc-stan.org/rstan/reference/Rhat.html).
+Implementations use the versioned ArviZ
+[R-hat](https://python.arviz.org/en/v0.22.0/api/generated/arviz.rhat.html) and
+[ESS](https://python.arviz.org/en/v0.22.0/api/generated/arviz.ess.html) APIs.
+Any constant chain is explicitly flagged rather than treated as convergence;
+truly fixed parameters must be identified from the model and excluded from
+monitored stochastic variables deliberately. Nonfinite and very short traces
+cannot pass. A passing scalar screen is necessary but not sufficient.
+
+The next controller must include all stochastic model parameters and log
+scores, alignment length and indel/substitution summaries. Candidate-node
+lengths, positional state probabilities and homology/alignment uncertainty
+need separate diagnostics tied to each runtime tree. Compare prespecified
+burn-in cutoffs (25% and 50% of each proposed horizon) and report both, rather
+than selecting the cutoff that passes. Longer horizons or revised sampling
+are required where results disagree; no finite iteration count establishes
+convergence. These policies have not yet been applied to a production
+independent-chain batch.
