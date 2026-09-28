@@ -1,0 +1,26 @@
+{
+  "status": "passed_expanded_duplication_lineage_numeric_and_visual_check",
+  "receipt_path": "results/figures/duplication-lineage-coverage-20260928-v1/receipt.json",
+  "receipt_sha256": "d0072e1ca7bb9b79a93e9100d112513b5f29b2367133103e8721e3de77cb43ea",
+  "figure_receipt": {
+    "status": "complete_verified_duplication_lineage_coverage_figure",
+    "membership_receipt_sha256": "7a1850e5a53a9e329d3341653a59ec5b1eb9f7b68bdea59216c740d11e2d07d6",
+    "source_table_sha256": "378208323b0bdb8cbb753f92251e7b1be86292f4f6f2f937658222805398f010",
+    "lineage_rows": 54,
+    "reconciled_taxa_per_guide": 526,
+    "excluded_candidate_taxa": [
+      "F1987369"
+    ],
+    "artifacts": {
+      "results/figures/duplication-lineage-coverage-20260928-v1/lineage_coverage.tsv": "9dfd8e865e47482e15823835ce9a3ecb1523c66dec24b8e41e8dfffb74b6b84c",
+      "docs/figures/duplication_lineage_coverage_20260928.png": "524944a4a832fe643e946fcac49c7e181b2ba0ebdb30b79ac789fe9070c434ac",
+      "docs/figures/duplication_lineage_coverage_20260928.pdf": "9cdbdc0f486247619fdac3b83a1914c186f8df8fcfa89600ce4d36204eba7b49",
+      "docs/figures/duplication_lineage_coverage_20260928.svg": "270e7d7eaf28f3baa62c4a397dd63ffceb21934792b21ab4ae2bf336248aefa7"
+    },
+    "scope": "Descriptive broad-lineage aggregation of independently checked terminal-event coverage. Separate event-weighted and taxon-level availability denominators; no phylogenetic correction, biological absence, missingness adjustment or independent-replicate claim."
+  },
+  "checked_rows": 54,
+  "checked_percentages": 108,
+  "visual_check": "PNG inspected: both denominator panels, all 27 lineage labels, guide symbols, outgroup markers and scope footnotes visible and legible.",
+  "scope": "Descriptive availability in a restricted event class; no phylogenetic correction or biological absence claim."
+}

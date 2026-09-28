@@ -174,3 +174,19 @@ results/orthology/duplication-expanded-coverage-readback-20260928-v1.json
 --output <fresh-directory>`. The bounded job used one CPU, 2 GiB RAM and no
 swap or GPU, finishing successfully in about 10 CPU seconds. Source/output
 checksums are recorded in `metadata/duplication_expanded_taxa_completed_20260928.json`.
+
+The updated [lineage figure](figures/duplication_lineage_coverage_20260928.png)
+([PDF](figures/duplication_lineage_coverage_20260928.pdf),
+[SVG](figures/duplication_lineage_coverage_20260928.svg)) uses this expanded
+membership table. All 54 guide/lineage rows and 108 percentages were checked
+with a separate counter-based aggregation, and the PNG was visually inspected.
+Evidence is in `metadata/duplication_expanded_lineage_figure_completed_20260928.json`.
+Reproduce with the existing `scripts/plot_duplication_sampling_coverage.py`,
+passing the expanded membership directory and fresh output/figure paths.
+
+The two denominators remain different: about 42.1% of Ascomycota candidate
+events have both models, but only 88 of its 234 taxa contribute covered pairs.
+Olpidiomycota now has nearly complete event coverage, but represents one taxon.
+Aphelidiomycota, Sanchytriomycota and Calcarisporiellomycota still have no
+two-model candidates in this frozen event class; that is not evidence of
+biological absence or a survey of every available structure.
