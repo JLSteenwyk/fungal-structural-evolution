@@ -566,3 +566,34 @@ The v2 output is `results/model_validation/matched-kr-scalar-checks-20260928-v2`
 Formula agreement does not demonstrate nominal coverage. Actual refitted
 simulation, boundary behavior, full-grid qualification and multiplicity remain
 required before biological inference.
+
+## Refitted-simulation interval path connected
+
+`scripts/calibrate_matched_kr.py` evaluates candidate intervals at each
+simulation's newly fitted variance components and scale. It first checks the
+recomputed conditional covariance against the refit. The generating coefficients
+are used only to assess whether each candidate interval contains its known
+target. Failed or numerically unresolved refits are retained without intervals;
+information/interval failures remain unresolved by coefficient. Evaluation
+exceptions retain the attempt and record the error rather than reducing the
+denominator.
+
+The summary requires distinct replicates of one fit identifier with the same
+coefficient truth and interval level. It reports the existing fixed-size exact
+binomial interval envelope with unresolved outcomes retained. The calling
+simulation plan must additionally bind the generating covariance/design and
+prespecify the replicate count; identifiers alone cannot prove a shared
+generating model. These summaries are marginal, not multiplicity adjustments,
+and are not valid under optional stopping.
+
+`scripts/check_matched_kr_refit_accounting.py` replayed all six saved synthetic
+responses by seed and SHA256, then independently reproduced their fitted
+likelihood, coefficients, scale and covariance. All12 candidate intervals were
+computed at refitted variances. Injected calculation errors, both upstream
+review statuses, coefficient-specific failures and three invalid pooling cases
+were checked. All attempts remained accounted for. Evidence is in
+`metadata/matched_kr_refit_accounting_checks_20260928.json`.
+
+This completes the implementation connection, not coverage calibration. The
+six fixtures are insufficient for a coverage claim; prespecified simulation
+experiments, full-grid numerical qualification and model adequacy still remain.

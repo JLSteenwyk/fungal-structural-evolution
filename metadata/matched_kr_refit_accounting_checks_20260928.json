@@ -1,0 +1,79 @@
+{
+  "status": "passed_six_refit_kr_interval_and_failure_accounting_checks",
+  "replayed_responses": 6,
+  "candidate_intervals": 12,
+  "failure_summary": {
+    "attempted": 4,
+    "marginal_coverage_intervals": [
+      {
+        "attempted": 4,
+        "covered": 3,
+        "unresolved": 1,
+        "alpha": 0.05,
+        "lower": 0.19412044968324338,
+        "upper": 1.0,
+        "observed_fraction_lower": 0.75,
+        "observed_fraction_upper": 1.0
+      },
+      {
+        "attempted": 4,
+        "covered": 3,
+        "unresolved": 1,
+        "alpha": 0.05,
+        "lower": 0.19412044968324338,
+        "upper": 1.0,
+        "observed_fraction_lower": 0.75,
+        "observed_fraction_upper": 1.0
+      }
+    ],
+    "scope": "All attempted draws retained. Fixed-size independent replicates of one generating model required; no optional-stopping validity or simultaneous coverage claimed."
+  },
+  "partial_coefficient_failure_summary": {
+    "attempted": 4,
+    "marginal_coverage_intervals": [
+      {
+        "attempted": 4,
+        "covered": 3,
+        "unresolved": 1,
+        "alpha": 0.05,
+        "lower": 0.19412044968324338,
+        "upper": 1.0,
+        "observed_fraction_lower": 0.75,
+        "observed_fraction_upper": 1.0
+      },
+      {
+        "attempted": 4,
+        "covered": 4,
+        "unresolved": 0,
+        "alpha": 0.05,
+        "lower": 0.3976353643835253,
+        "upper": 1.0,
+        "observed_fraction_lower": 1.0,
+        "observed_fraction_upper": 1.0
+      }
+    ],
+    "scope": "All attempted draws retained. Fixed-size independent replicates of one generating model required; no optional-stopping validity or simultaneous coverage claimed."
+  },
+  "invalid_pooling_rejected": 3,
+  "source_receipt_sha256": "1aaa51ec213b3b0ecf545eba72100d2e26ba371a7995acfb4c4aea4425c88b37",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_kr_refit_accounting.py": "9bcf7f42c29606f478ca438a8050e291dc9453e67aff79a6c0a8d1fc40fc7a5f",
+    "scripts/calibrate_matched_kr.py": "d3467bf404b3880e9116d632c22643aba415b21f624ec0e540fa3af91f1c3cef",
+    "scripts/matched_kr_scalar.py": "2d875d8a72acb850f93484ae0a88018fb03b6320fc1193f616ff4bf5048effa1",
+    "scripts/matched_kr_covariance.py": "994b68c901ddb1e23405c3bf23ef369db38a4af3a0fb89a6f89f266162ca000d",
+    "scripts/matched_covariance_information_fast.py": "77fc9a45884b633988d44621a046b5f6ee40675ce5c38339a9a2ade4d95af325",
+    "scripts/matched_covariance_information.py": "474e0ae5d27a1a4be53981931f88b0bd9d0a8cf14d912dd2660c2dda84319469",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_calibration_intervals.py": "ffd2e30a5cf25817bc70f434c18ed88dd78bbd0772b0121e73c8d42ea9bf3ec3",
+    "scripts/simulate_matched_working_model.py": "c82cc7cfca63e2e1c7306faae66d1de4064750d422441fbd373800133a89375a"
+  },
+  "artifacts": {
+    "case_0_replicate_0.json": "b2dc806c4ff7ce282ab02474c55a6715eccf793c0b976780f2175f4bed5b606a",
+    "case_1_replicate_0.json": "53917102507466c7e993f0d64621801e76f3a93bae6c1b0f882728640895dd4f",
+    "case_0_replicate_2.json": "ef3969738333301a57d56a3c2a924f19923b1a758b682a52bc7ef3235140dfcf",
+    "case_1_replicate_2.json": "e6d4832ac1bcc0b656774a5223cadf40976ad2525f9b1652bd5b6b82b77ac44b",
+    "case_1_replicate_1.json": "4c2f5f613bd515371572e7fef38ba2f48594782c6acaa16c520dcf1e414efe04",
+    "case_0_replicate_1.json": "a37c44aeb53a06f4b4b9279d014772781a44cdfd35a300bf616fdce5c40509d7"
+  },
+  "scope": "Six saved synthetic refits replayed. Intervals use each refitted covariance, not generating variances. Plumbing check only; no fitted-data coverage claim or full-grid calibration launch. Unresolved attempts remain in denominators."
+}
