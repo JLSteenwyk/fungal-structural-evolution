@@ -9816,3 +9816,18 @@ does not establish universal coverage or complete the biological project.
   database and annotation hashes passed, and exported sequences were read back.
   This prepares copy-aware analysis; structural coverage and tree placements
   of these copies remain to be assessed.
+
+- September28: completed the retained-tree placement screen for all241 aphelid
+  marker copies in117 hash-verified gene trees. Both guide partitions agree on
+  all28,920 target-protein pair memberships. Per guide,117 multi-copy
+  marker/family groups form exclusive unrooted splits and two do not; one
+  three-copy marker spans two families. Placements retain every copy and do
+  not establish duplication timing, hybrid origin or structural divergence.
+
+- September28: refreshed whole-proteome structural catalog and independent
+  sequence/model-selection readback finished successfully. Across526 taxa and
+  5,815,847 screened proteins, the catalog contains1,910,138 selected models
+  linked to1,955,694 proteins (approximately33.63% of screened proteins).
+  Coordinate hashes were verified by the producer; the independent readback
+  reconstructs every protein/model link and all taxon coverage rows. Comparison
+  with the previous catalog remains active; GPU prediction remains paused.

@@ -126,3 +126,27 @@ creation. An initial unindexed per-protein database lookup was stopped before
 outputs and replaced by queries using the existing guide/gene index. No source
 database was modified. The final inventory completed successfully; its hashes
 and counts are in `metadata/aphelid_marker_copy_inventory_20260928.json`.
+
+### Copy placements in retained gene trees
+
+`assess_aphelid_copy_tree_placements.py` verifies inventory artifact hashes,
+the retained-tree catalog checksum, and every used tree checksum. All241
+proteins occur in117 validated trees, covering121 marker/family groups per
+guide. The two partitions agree for all28,920 unordered pairs of target
+proteins; that comparison concerns this target subset, not all family members.
+The two guide rows use the same retained trees and are not independent evidence.
+
+Per guide,117 multi-copy marker/family groups form an exclusive unrooted split,
+and two do not:5003022at2759 inOG0001748 and5013067at2759 inOG0000653.
+Marker530740at2759 has three copies split betweenOG0000510 (two copies,
+exclusive split) andOG0001807 (one copy). The other singleton group is the
+previously identified single-copy marker5001734at2759. All copies are retained.
+These are descriptive placements without bootstrap qualification, duplication
+age, hybrid-origin inference or arbitrary ortholog selection. Within-family
+patristic distances use source-tree branch units, not structural displacement.
+
+Outputs are in `results/ecology/aphelid-copy-tree-placements-20260928-v2`;
+`metadata/aphelid_copy_tree_placements_20260928.json` records counts and hashes.
+The v1 exploratory output is preserved; v2 adds explicit catalog-receipt
+checksum enforcement and reproduces identical output-table hashes. Every
+serialized table was read back and compared with its computed records.

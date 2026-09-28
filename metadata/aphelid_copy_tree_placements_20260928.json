@@ -1,0 +1,26 @@
+{
+  "status": "complete_retained_tree_copy_placement_screen",
+  "source_inventory_receipt_sha256": "beda29f7b911f52c4c775156f3e8d0626650c53b46274b0506004436c96d2d49",
+  "source_catalog_sha256": "b8ec99d7b37fd5a34fd2000200284f4e7faa6a8a9d72870c7e13a56d96968ae9",
+  "source_catalog_receipt_sha256": "76b822be0105fcf8c11da378d102941a99f1e90c7c9c241ff728851b25b6871e",
+  "script_sha256": "5fdaaa26fa2d5737c10666da8917db4d1c036664b5910f721d4e1e1b1c9ad7e2",
+  "target_proteins": 241,
+  "target_pair_partition_comparisons": 28920,
+  "target_pair_partition_disagreements": 0,
+  "unique_trees_checked": 117,
+  "marker_guide_family_rows": 242,
+  "dispositions": {
+    "all_copies_found_in_hash_validated_tree": 242
+  },
+  "within_family_pair_rows": 242,
+  "exclusive_split_counts": {
+    "True": 234,
+    "not_applicable_single_copy": 4,
+    "False": 4
+  },
+  "artifacts": {
+    "within_family_copy_distances.tsv": "53957fb57d247d13647b277100895c0e4425ce16d477f24262a170bf700d56a9",
+    "marker_family_placements.tsv": "5da36f56962b383bf74e0f46a263a0f2766129b8f0f2602da7298d3280c30c63"
+  },
+  "limitations": "Retained trees only. Target-subset partition agreement does not establish full-family agreement. Split exclusivity is unrooted and descriptive; branch distances use source-tree units. No duplication timing, orthology, hybrid origin or structural divergence inference."
+}
