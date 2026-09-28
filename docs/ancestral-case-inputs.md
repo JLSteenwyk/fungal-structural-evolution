@@ -1150,3 +1150,10 @@ PDF and editable SVG copies are provided. The plot script verifies its
 complete 702-row input table and aggregate totals. Its final rendering was
 visually checked; artifact hashes and scope are recorded in
 `metadata/whole_refinement_sensitivity_figure_completed_20260927.json`.
+
+The alternate-start producer has now finished all 468 fits, writing 1,404
+candidate-node arrays with 26,126,280 probabilities. Complete artifact hashes,
+array shapes, finite values, ranges and normalization were rechecked after
+successful producer termination. This is recorded in
+`metadata/alternate_whole_probabilities_produced_20260927.json`. The independent
+probability replay is verified live; it and the full comparison remain pending.
