@@ -9705,3 +9705,10 @@ does not establish universal coverage or complete the biological project.
   recorded in `metadata/selected_matched_interval_grid_preparation_20260928.json`.
   Interval execution remains pending the full cache replay and runner validation;
   these candidate intervals will still require scientific calibration.
+
+- September 28: the complete candidate-interval runner passed real-input and
+  checkpoint/error-accounting checks and is queued behind the active full cache
+  replay. It will use 16 CPU workers and a 32 GiB memory cap; GPU inference remains
+  paused. Launch identity and pinned plan are recorded in
+  `metadata/selected_matched_intervals_launch_20260928.json`. Candidate intervals
+  remain exploratory and require full output readback and scientific validation.

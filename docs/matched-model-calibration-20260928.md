@@ -893,3 +893,24 @@ The 1–120 active-hour planning range is deliberately broad and is not a bound.
 No paid resources are needed. Launch still requires a runner with checked resume
 semantics and the terminal successful full cache replay. Preparation does not
 compute intervals or establish coverage, model adequacy or multiplicity control.
+
+### Full candidate interval job queued
+
+The full runner `run_selected_matched_intervals.py` is now launched as
+`fungal-selected-matched-intervals-20260928.service`, with the resource limits
+above and frozen plan `metadata/selected_matched_intervals_plan_20260928.json`.
+It verifies the cache replay's process identity while waiting and requires
+terminal success plus the complete replay receipt before starting any tasks.
+It checks cache, selected-source and factor hashes, retains numerical failures
+as explicit dispositions, and maintains per-input payload/checksum pairs.
+Resumption rejects changed plans, altered payloads and incomplete checkpoint
+pairs. Unexpected infrastructure or provenance errors stop execution.
+
+`check_selected_matched_interval_runner.py` exercised all five trees for two
+real inputs (148 and 178 records, including a refined estimate), repeated the
+checkpoints without rewriting them, and verified rejection of changed plans,
+changed payloads and incomplete checkpoints. An injected inconsistent selected
+coefficient remained an explicit review disposition alongside the other four
+fits. These are runner checks, not evidence of calibrated interval coverage.
+The queued job requires a full output readback after completion, followed by
+the remaining model adequacy, calibration and multiplicity work.

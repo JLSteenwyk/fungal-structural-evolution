@@ -1,0 +1,40 @@
+{
+  "inputs": "results/model_validation/selected-matched-interval-grid-inputs-20260928-v1",
+  "cache": "results/model_validation/matched-simulation-input-cache-20260928-v1",
+  "selected": "results/structural_comparisons/refined-working-model-grid-export-20260928-v2/unique_fits.parquet",
+  "original_receipt": "results/structural_comparisons/full-matched-working-models-20260927-v1/receipt.json",
+  "replay_plan": "metadata/matched_simulation_cache_replay_plan_20260928.json",
+  "output": "results/structural_comparisons/selected-matched-candidate-intervals-20260928-v1",
+  "resources": {
+    "cpus": 16,
+    "workers": 16,
+    "maximum_inflight_tasks": 32,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "free_disk_reserve_gib": 100,
+    "planning_active_hours": [
+      1,
+      120
+    ],
+    "paid_cost": 0,
+    "gpu": false,
+    "basis": "15 existing real-design timings: approximately .02\u201315.6 seconds per fit; heterogeneous sizes. 144040 fits all at 15.6 seconds would take 39 ideal hours on16 workers. Planning range is not a guaranteed bound; record measured throughput during full run."
+  },
+  "pins": {
+    "scripts/run_selected_matched_intervals.py": "1e61d558633e3b8a123cd4bc6b3a0f57b528aa9298986855bfaca9f8333c68af",
+    "scripts/evaluate_selected_matched_intervals.py": "5fa05f19b3d8f2f93c50933b556dddf54b2c058c522741e03a5310a8b316ea82",
+    "scripts/matched_covariance_information_fast.py": "77fc9a45884b633988d44621a046b5f6ee40675ce5c38339a9a2ade4d95af325",
+    "scripts/matched_covariance_information.py": "474e0ae5d27a1a4be53981931f88b0bd9d0a8cf14d912dd2660c2dda84319469",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_kr_scalar.py": "2d875d8a72acb850f93484ae0a88018fb03b6320fc1193f616ff4bf5048effa1",
+    "scripts/matched_kr_covariance.py": "994b68c901ddb1e23405c3bf23ef369db38a4af3a0fb89a6f89f266162ca000d",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "results/model_validation/selected-matched-interval-grid-inputs-20260928-v1/receipt.json": "fd5deb3a262a374da262185862841089562856ab11300ec668d913a3f8c38cb2",
+    "metadata/selected_matched_interval_grid_readback_20260928.json": "a9b5cea5b9b115a857bc1b39562c04efe9a54371198e989dd722db5e8f767187",
+    "metadata/selected_matched_interval_runner_checks_20260928.json": "76e5193cf075960d961a634405159bc210b66f4bf91d40ffe2fc6e2a2aaf0814",
+    "metadata/matched_simulation_cache_replay_plan_20260928.json": "16b1a426580e79ab7a0e4e5ed22b2438a393990b9ec73424f7cb40ecf2e09620",
+    "metadata/matched_simulation_cache_replay_launch_20260928.json": "76b2cb6653a7db5edf6487e79ec6bdda029f632b919563dc5ab7b76bc7f8b093",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b"
+  }
+}
