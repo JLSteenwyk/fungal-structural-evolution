@@ -46,3 +46,31 @@ replay likelihoods, verify runtime ancestral identities, establish sample
 preservation, measure MCMC mixing or show convergence. Before posterior use,
 samples must be linked to the software's internal tree identities and validated
 against exact extant sequence identities and candidate descendant sets.
+
+## Same-process sample mapping
+
+The installed Haskell library constructs ancestral names with
+`Graph.addAncestralLabel`; its node IDs arise from a process-local ID supply.
+A separately loaded tree therefore cannot establish sample identity merely
+by matching numerical names. The generated fixed-tree model also omits a tree
+logger. For the diagnostic chains, we insert one tree export immediately
+before `makeMCMCState`, using `addInternalLabels` and `writeNewick_rooted` on
+the actual model tree. No model expressions are changed. The exact original
+and modified programs and their hashes are retained for every job.
+
+`run_baliphy_sample_mapping_grid.py` runs 20 iterations for all 324 configurations,
+waiting for each verified initialization receipt. Unsuccessful initializations
+remain explicit dispositions. This uses two CPU workers, 32 GiB aggregate RAM,
+zero swap, 12 GiB sampled RSS and 30 minutes per process, with 20 GiB storage
+and a 1–82 hour planning allowance. These are short output-integrity checks,
+not final posterior chains, and do not establish MCMC capacity at convergence.
+
+`audit_baliphy_sample_mapping.py` checks the sole tree-export modification,
+rooted clades and branch lengths against each specified input tree, all leaf
+identities and known residues, and all sample/node associations. The 21 logged
+states (iterations 0–20) and three saved alignments (0,10,20) are retained.
+Candidate ancestors are identified by exact descendant sets, not numerical
+node names. The first four complete chains pass all checks, providing 48
+verified candidate-node/sample mappings, with 320 jobs pending in the snapshot.
+The degree-two root is retained only conditional on the specified root position.
+No early sample is a qualified posterior draw for biological conclusions.

@@ -1,0 +1,30 @@
+{
+  "binary": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+  "input_receipt": "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json",
+  "initialization_output": "results/ancestral/baliphy-initialization-20260927-v1",
+  "initialization_launch": "metadata/baliphy_initialization_launch_20260927.json",
+  "output": "results/ancestral/baliphy-sample-mapping-20260927-v1",
+  "timeout_seconds": 1800,
+  "memory_limit_bytes": 12884901888,
+  "resources": {
+    "workers": 2,
+    "cpus": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_gib": 20,
+    "planning_hours": [
+      1,
+      82
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Twenty-iteration diagnostic chains, all324 configurations/all78 original alignments. Export labeled tree in same process before MCMC state creation; preserve all model expressions from initialization. Paired sample/tip/node readback remains required. These chains are too short to claim convergence or use as final ancestral ensembles. Failed initialization dispositions retained; no GPUs.",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+    "results/ancestral/historian-sensitivity-inputs-20260927-v1/receipt.json": "149585b3bf326ce471b2619f5fa0e4075395a39f09669f683089d6a07d967430",
+    "metadata/baliphy_initialization_launch_20260927.json": "1d37878f8bb686421175c60bce4ba5b8e0d5b39ff381b4922ca719db62f330e6",
+    "metadata/baliphy_initialization_plan_20260927.json": "860540e63d2399bbdf0ba03d9d7a55d7a210c3374792713ac1c5fe3eef99f2cc",
+    "scripts/run_baliphy_sample_mapping_grid.py": "f67c4aef93ead423f71d24b166f609750bbef198a85969de3a2f0a0f1c52b175",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  }
+}

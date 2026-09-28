@@ -9505,3 +9505,19 @@ The audit checks initial score arithmetic, normalized frequencies and total
 tree length, but makes no likelihood-replay or converged-sample claim.
 All candidate mapping, capacity, prior sensitivity, full-chain convergence
 and ancestral uncertainty requirements remain open. GPUs remain paused.
+
+### 2026-09-27: BAli-Phy sample-to-ancestor mapping verified in initial chains
+
+The complete 324-configuration diagnostic chain grid is running after per-job
+initialization. A single, retained program insertion exports the labeled model
+tree in the same process immediately before MCMC state construction. Source
+inspection showed that separate-process numerical node labels are insufficient.
+All model expressions remain unchanged; 20 iterations per run are explicitly
+output-integrity diagnostics, not convergence or posterior qualification.
+
+Independent readback of the first four completed chains verifies all three
+saved samples per chain, every leaf and known residue, rooted clades, branch
+lengths, and 48 candidate-node/sample identities. All320 pending dispositions
+remain recorded. Source changes, process identity, resource limits and snapshot
+receipt hashes are versioned. Full sampling, prior/approximation sensitivity,
+convergence, biological interpretation and GPU structure prediction remain open.
