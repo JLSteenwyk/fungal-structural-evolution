@@ -1,0 +1,23 @@
+{
+  "pins": {
+    "scripts/summarize_production_alignment_traces.py": "0ec2b1efe197c611fec0f9ee963e8896ee047b2f58134011edf2c8aa4127bf92",
+    "scripts/ancestral_extant_alignment_geometry.py": "70d2eaf85e69ce7c5b0ead7d48d44a3d0a2fe76f9ab7779f3804d97feff24631",
+    "metadata/baliphy_first_completed_chains_20260928.json": "d250fc71005cb487c3193b3986cec58c933cc1d94992d3d2742dc38c81e0e711",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json": "49de3f8ae01174f300c9ca2f136fbe23a0f6078fb384cc935a7c2ca37ea164d8"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "swap_gib": 0,
+    "runtime_planning_minutes": [
+      1,
+      15
+    ],
+    "output_mib": 10,
+    "largest_signature_bytes": 7088004,
+    "chains": 7,
+    "samples": 707
+  },
+  "output": "results/ancestral/first-production-alignment-traces-20260928-v1",
+  "scope": "Seven terminal chains from frozen snapshot; no convergence qualification."
+}

@@ -123,3 +123,40 @@ The controller remained live with 16 active workers after these completions.
 A 45-second process-identity check observed CPU progress from all 16 workers;
 completed slots had advanced to subsequent inputs. The initial horizon is
 an execution checkpoint, not a convergence stopping rule.
+
+## Production alignment trajectories
+
+The seven terminal chains now have exact integer geometry traces for all
+707 saved alignments. Distances are measured to each chain's fixed observed
+input alignment and to its previous saved alignment (ten iterations apart).
+The calculation uses the validated residue-position signature and validates
+all sampled extant sequences before projecting them. It retains iteration
+zero and burn-in rather than presenting them as posterior draws.
+
+All 700 successive saved-alignment pairs have nonzero geometry distance.
+Six chains belong to different input configurations of OG0000230 (24 tips)
+and one to OG0002650 (77 tips); the six are not replicates of one model.
+OG0000230 distances from the observed input fall from 449,138 at iteration
+zero to 18,552–27,970 at iteration 1,000. OG0002650 falls from 2,878,602 to
+475,486. The sampler's iteration-zero alignment therefore differs from the
+observed input alignment. These are weighted alignment-feature counts,
+not physical structural displacements or estimates of alignment accuracy.
+The trend demonstrates movement away from initialization, not stationarity;
+nonzero movement between samples does not demonstrate good mixing.
+
+The service terminated successfully and all output traces and pinned inputs
+were checked. Results are in
+`results/ancestral/first-production-alignment-traces-20260928-v1`, with
+completion evidence in `metadata/baliphy_first_alignment_traces_completed_20260928.json`.
+The reproducible command is:
+
+```bash
+python scripts/summarize_production_alignment_traces.py \
+  --snapshot metadata/baliphy_first_completed_chains_20260928.json \
+  --inputs results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json \
+  --output results/ancestral/first-production-alignment-traces-NEW
+```
+
+These traces are inputs to subsequent diagnostics, not a replacement for
+within/between-chain alignment comparisons and ancestral-state uncertainty.
+A single distance-to-reference projection can hide distinct alignment modes.
