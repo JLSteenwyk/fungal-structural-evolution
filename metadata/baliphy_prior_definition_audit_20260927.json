@@ -1,0 +1,71 @@
+{
+  "status": "complete_installed_prior_semantics_and_quantiles",
+  "source_hashes": {
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/models/RS07.json": "bbba35239be8ba0dc493e6847a1e1b04013a350d5a714699f6249d34e4925630",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/models/ASRV/Gamma.json": "daf54ae4dbae2163dc0f5e6e76fec8c2ff381ae727416201162725f3aa4a7d32",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/models/F.json": "c33b36d1a6d908b5ed51388e4c74fc9259c5898ce9602b2a3d92b3d613701a82",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/models/LG.json": "954649ae032238f4b6f4e9d3bd5406969aaf9b9dcc0f06c925f1e590c0ecc3c8",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/distributions/LogLaplace.json": "9f07f5a36973cd54002d310495cdfd28981374c80275a798863f5df9a43d0a3e",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/bindings/distributions/ShiftedExponential.json": "20e43b174b5c391c906e9afa9a0abfb650612cb21f2ec0ab8966c0e07164234c",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Probability/Distribution/Transform.hs": "dffa62768846fa16e84eba8fdc74f660c63736964e6260766938465a5dcb67c0",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Probability/Distribution/Laplace.hs": "1cdbb17772e4b237a8ace27b668fba069c78769d15414290ae74b1ce16556697",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Probability/Distribution/Exponential.hs": "5b5dc0b92f0cd83487a05b7df1612a2a9989e9427e1dca43464dc02c0f4c5961"
+  },
+  "installed_defaults": {
+    "RS07.json": {
+      "rate": "~LogLaplace(-4,0.707)",
+      "meanLength": "~ShiftedExponential(10,1)",
+      "topology": "get_state(topology)"
+    },
+    "ASRV/Gamma.json": {
+      "n": "4",
+      "alpha": "~LogLaplace(6,2)"
+    },
+    "F.json": {
+      "pi": "~SymmetricDirichletOn(letters(@a),1)",
+      "a": "get_state(alphabet)"
+    }
+  },
+  "default_gamma_shape": {
+    "distribution": "LogLaplace(6,2)",
+    "quantiles": {
+      "0.025": 1.008571983731838,
+      "0.5": 403.4287934927351,
+      "0.975": 161371.51739709385
+    },
+    "probability_below_one": 0.024893534183931972
+  },
+  "default_indel_rate": {
+    "distribution": "LogLaplace(-4,0.707)",
+    "quantiles": {
+      "0.025": 0.0022028953462375207,
+      "0.5": 0.01831563888873418,
+      "0.975": 0.15228259866065427
+    }
+  },
+  "current_diagnostic_fixed_values": {
+    "gamma_shape": 1,
+    "indel_rate": 0.01,
+    "mean_indel_length": 3
+  },
+  "candidate_gamma_prior_sensitivities": [
+    {
+      "distribution": "LogLaplace(0,1)",
+      "quantiles": {
+        "0.025": 0.05000000000000001,
+        "0.5": 1.0,
+        "0.975": 19.99999999999998
+      }
+    },
+    {
+      "distribution": "LogLaplace(0,2)",
+      "quantiles": {
+        "0.025": 0.0025000000000000005,
+        "0.5": 1.0,
+        "0.975": 399.9999999999992
+      }
+    }
+  ],
+  "script_sha256": "eac5074fd6537ee239296770723525da25e4957a0114e5c1b52ef4ed685cf902",
+  "scope": "Installed 4.3 source audit and mathematical prior summaries, not generated-model verification or fitted posterior evidence. Candidate priors are prospective sensitivity options; no production chain or prior selection is implied. Changing models/priors requires new initialization, input binding and convergence assessment."
+}

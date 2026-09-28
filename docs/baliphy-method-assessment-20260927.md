@@ -187,3 +187,34 @@ support for a particular alignment: the runs share effective data and seed.
 All four original dispositions are retained. The complete grid and its final
 audits continue; convergence, model/root sensitivity and qualified posterior
 samples remain outstanding.
+
+## Installed prior definitions audited before longer sampling
+
+`scripts/audit_baliphy_prior_definitions.py` binds nine installed BAli-Phy 4.3
+model/distribution source files by SHA256 and verifies the default expressions.
+The Haskell implementation defines LogLaplace as the exponential of a Laplace
+variable, with the second parameter its scale. Closed-form quantiles were
+checked against SciPy's inverse CDF and by CDF inversion. Results and source
+hashes are in `metadata/baliphy_prior_definition_audit_20260927.json`.
+
+| Parameter | Installed default | Median | Central 95% prior interval |
+| --- | --- | ---: | ---: |
+| Gamma shape alpha | LogLaplace(6,2) | 403.429 | 1.00857–161371.517 |
+| RS07 indel rate | LogLaplace(-4,0.707) | 0.0183156 | 0.00220290–0.152283 |
+
+Only 2.489% of the default alpha prior lies below 1. For the unit-mean Gamma
+rates, large alpha concentrates rates near 1; this default therefore needs
+explicit consideration when assessing among-site rate variation. It must not
+be silently substituted for the current diagnostic setting alpha=1. The
+diagnostics also fixed indel rate=0.01 and mean indel length=3. Installed RS07
+instead defaults to `~ShiftedExponential(10,1)` for meanLength. Installed +F
+uses `~SymmetricDirichletOn(letters(@a),1)`; LG supplies exchangeabilities,
+while `+> F(LG_freq)` explicitly fixes the published LG frequencies.
+
+Two prospective alpha sensitivity options are recorded: LogLaplace(0,1)
+(median 1, central 95% interval 0.05–20) and LogLaplace(0,2) (median 1,
+interval 0.0025–400). Neither is selected or launched by this audit. Longer
+sampling must explicitly declare all priors, verify the generated model,
+rebind the effective-input groups to those settings, and assess independent
+chains for mixing and convergence. Source-level defaults and short-chain
+capacity checks alone do not qualify ancestral posterior samples.
