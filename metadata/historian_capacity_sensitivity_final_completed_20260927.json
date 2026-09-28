@@ -1,0 +1,28 @@
+{
+  "status": "completed_summary_of_full_audit",
+  "input_receipt": "results/ancestral/historian-capacity-audit-20260927-final-v1/receipt.json",
+  "input_receipt_sha256": "2dcab0ef69fcb9775354ab26d633b93065656aa1b0912724c178e0d149e67228",
+  "script_sha256": "bd0fc60c5538ff72a44dfa59dadd08d5758e48e55820d164eedc9132dce38a2a",
+  "dispositions": {
+    "independent_tip_tree_and_candidate_readback_passed": 320,
+    "recorded_unsuccessful_execution": 4
+  },
+  "dependent_node_comparisons": 5680,
+  "changed_node_comparisons": 0,
+  "complete_polytomy_family": {
+    "family": "OG0000230",
+    "audited_jobs": 180,
+    "resolutions_per_input_and_floor": 15,
+    "comparisons_by_factor": {
+      "star_resolution": 5040,
+      "branch_floor": 360
+    },
+    "changed": 0
+  },
+  "artifacts": {
+    "family_sensitivity.tsv": "93220ef7f7df9b831637975c8fac074183a38b4a4e274e8ba768676a5a0da093"
+  },
+  "scope": "Original capacity-grid audit only. Higher-memory retries and cross-alignment comparisons are separate and must be reported alongside this summary. Zero edits in these fixed-parameter profile diagnostics do not imply posterior concentration, biological invariance, convergence, or a uniquely identified root. Pairwise alternatives share data and are not independent replicates.",
+  "completed_receipt_path": "results/ancestral/historian-capacity-sensitivity-summary-20260927-final-v1/receipt.json",
+  "completed_receipt_sha256": "51a81c2774d7c30464fbddc44856832252c35655ebb56fb6994b558cfeffbb7d"
+}

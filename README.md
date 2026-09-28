@@ -50,8 +50,10 @@ the selected refined fit agrees closely with the baseline there. These are
 conditional estimates; model adequacy and joint insertion/deletion uncertainty
 remain unresolved.
 
-The [Historian assessment](docs/historian-method-assessment-20260927.md) records
-an important limitation: both higher-memory MAFFT retries for the 622-protein
+The full 324-configuration Historian diagnostic grid has checked outputs:
+320 original runs and four successful higher-memory retries. Original failures
+remain recorded. The [Historian assessment](docs/historian-method-assessment-20260927.md)
+records an important limitation: both higher-memory MAFFT retries for the 622-protein
 family pass output checks, but changing the minimum branch length changes the
 three non-root candidate ancestors by 10–15 ungapped edits. These are numerical
 sensitivity measurements, not biological events. Both FAMSA retries also passed

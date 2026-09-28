@@ -249,3 +249,25 @@ the separate OG0000972 higher-memory retries show non-root differences of
 establishes convergence or posterior concentration; Historian's approximate
 profile and traceback limitations still apply. No final ancestral ensemble
 has been qualified by this diagnostic.
+
+
+### Full diagnostic grid completed and reconciled with retries
+
+Both the original producer and its queued independent auditor terminated
+successfully. All 324 original dispositions are accounted for: 320 passed
+output readback and four retained memory-limit failures were matched to their
+successful higher-memory retries. The integration verifies exact equality of
+the original and retry job inputs and preserves both receipt paths for every
+retried configuration. The resulting 324-row table is
+`results/ancestral/historian-integrated-capacity-20260927-v1/configuration_dispositions.tsv`;
+its hashes and dependencies are tracked in
+`metadata/historian_integrated_capacity_completed_20260927.json`.
+
+The final original-grid comparison contains 5,680 dependent candidate
+comparisons with zero edits. This excludes the four failed original attempts:
+the separately audited retries continue to show 8–19 non-root edits across
+minimum-edge floors and 8–22 across input alignments. All 78 input alignments
+are now represented by checked diagnostic outputs, including every polytomy
+resolution and both edge floors. Execution and output integrity are complete
+for this grid; ancestral model adequacy, uncertainty propagation and a
+qualified ancestral structural ensemble remain incomplete.

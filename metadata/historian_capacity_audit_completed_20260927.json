@@ -1,0 +1,17 @@
+{
+  "status": "full_capacity_disposition_audit_complete_review_outcomes",
+  "producer_terminal_state": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "producer_receipt_sha256": "d4f7a2a302f02237cd41dc4123924a912d5daa48a171ed2c9da611c3719e621f",
+  "audit_receipt_sha256": "2dcab0ef69fcb9775354ab26d633b93065656aa1b0912724c178e0d149e67228",
+  "audit_dispositions": {
+    "independent_tip_tree_and_candidate_readback_passed": 320,
+    "recorded_unsuccessful_execution": 4
+  },
+  "plan_sha256": "379c7cc6502b531dfe979e5b3e4516fbf32ec595d6b49ce8a907b9fbc641449b",
+  "scope": "All expected outcomes accounted for. Failed capacity outcomes remain unresolved; passing readback does not establish fitted ancestral reliability."
+}
