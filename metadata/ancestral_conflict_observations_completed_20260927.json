@@ -1,0 +1,24 @@
+{
+  "status": "complete_observed_context_partition",
+  "contexts": 14,
+  "node_coordinate_groups": 5,
+  "observed_character_records": 630,
+  "pins": {
+    "results/ancestral/ancestral-context-conflict-localization-20260927-v1/receipt.json": "8e7b591a5228e35640b5d8f566d1a739fec4668c8486bdc0d2a467219a446115",
+    "results/ancestral/ancestral-context-conflict-localization-20260927-v1/conflict_dossiers.json": "cddad9ef96b0546762a7be9d00e9def4a7b8c147d9ec8be643e2a608467f4ef6",
+    "results/ancestral/case-domain-sequences-20260927-v1/protein_dispositions.tsv": "0f4ea681384844a062f38c45f0bcd282e9487834fdd06ffc6e8ed11c20f912d8",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "results/ancestral/case-alignments-20260927-v1/receipt.json": "21129091f9184e1c48f89ac601dcd61cf5fcbd4b2c65d7650a0c4e1d8576fec8",
+    "results/ancestral/case-alignments-20260927-v1/OG0001203-famsa/alignment.faa": "d52e2e98410cadacbc2b4cf6594c9f639070b8da5111524f31831b781861a35d",
+    "results/ancestral/case-alignments-20260927-v1/OG0001203-mafft/alignment.faa": "fbe389476006cb60402aeced60d634c362a77af981644217d7ec50d56521ff39",
+    "results/ancestral/case-alignments-20260927-v1/OG0002650-famsa/alignment.faa": "3d7c17a61eff654c340dfda6e5614c6023212ce3eb193a7cfab28bc83b496fbc",
+    "results/ancestral/case-alignments-20260927-v1/OG0002650-mafft/alignment.faa": "f5dbdbe7e6929f07680a2f1248876c1af26804bf9e64f8d0fc6e8a9acb38715f"
+  },
+  "script_sha256": "bccefb8ea53c05fba5bf656600779273e192d9c2a3b91fb9976e211a520186d5",
+  "artifacts": {
+    "observed_contexts.json": "2af3824c28ccd8513a4f3cbd9c19968a409be4af99ec544152937023c79fb4ae"
+  },
+  "scope": "Observed full-column characters partitioned by domain retention and candidate descendants. Exact retained coordinates reproduce conflict signatures. Counts do not weight phylogeny or identify causes of ancestral probability differences; excluded does not mean erroneous annotation.",
+  "completed_receipt_path": "results/ancestral/ancestral-conflict-observations-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "6721fdd7e109ed84de515a4d96bc00b84f2287a96f1e56e4061e9a341111f1d9"
+}

@@ -1273,3 +1273,36 @@ is checksum-bound by
 Grouping removes duplicate settings from descriptive site counts, but shared
 nodes, data and parameters still preclude treating the groups as independent.
 These sites require contextual review before mechanistic interpretation.
+
+
+### Observed column context and missing local domain support
+
+A full-column partition now accounts for every tip character in all 14
+boundary/method/node contexts underlying the five conflicting node-coordinate
+groups (630 character records). Each record retains its original protein
+position, domain-extraction disposition, candidate-descendant membership and
+whether the residue lies inside the focal interval. Exact retained coordinates
+reproduce the previously verified signatures. Gaps remain explicit.
+
+For the OG0002650 A/V conflict at n620 and n622, **no candidate descendant has
+a retained residue at the matched domain coordinate** in either alignment
+method. The seven retained domain residues are valines elsewhere in the tree.
+In the whole-protein alignment, n622 has two descendant alanines at this
+column, both outside their focal domain intervals. The broader n620 descendant
+set adds a serine outside the interval and a serine in a protein excluded from
+the domain analysis. Thus the high-confidence domain valine estimate lacks
+local observed residue support at these ancestors. This is a conditional
+amino-acid estimate, not evidence that the ancestral domain possessed a
+residue there. Independent gap treatment cannot resolve that distinction.
+
+At OG0001203 n37, two descendant histidines are in proteins excluded from the
+domain analysis; retained descendants contribute two threonines, one glutamine
+and four serines. The Y/M conflict also combines retained, excluded and
+outside-interval descendant residues. These observations identify differences
+in the input evidence, not a causal decomposition of fitted probabilities.
+No sequences or alternatives have been discarded.
+
+Reproducibility: `scripts/inspect_ancestral_conflict_observations.py`, with
+complete observations under
+`results/ancestral/ancestral-conflict-observations-20260927-v1` and checksums in
+`metadata/ancestral_conflict_observations_completed_20260927.json`.
