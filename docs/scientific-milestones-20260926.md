@@ -14,7 +14,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 5. Ecological/morphological transitions | Evidence-curated traits and independently verified ESMFold/expanded AlphaFold shared-site coverage | Establish independently replicated usable transitions, preserve ambiguous assignments, and test controlled associations with structural change. A trait's number of labeled tips is not its number of independent origins. See [ecology](ecology-evidence-workflow.md). |
 | 6. Functional locations | Audited residue accessibility and functional correspondences | Join changes to supported core/surface and catalytic/binding annotations; evaluate matched backgrounds and supported interfaces/pockets where evidence permits. Annotation correspondence does not establish activity. See [functional workflow](functional-site-workflow.md). |
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
-| 8. Ancestral/mechanistic cases | Exploratory families and functional candidates identified | Select cases supported by the preceding analyses, reconstruct ancestral amino-acid distributions and topology sensitivity, then predict authorized ancestral alternatives and formulate experimentally testable hypotheses. No completed ancestral reconstruction is claimed. |
+| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline and bound comparisons completed; full alternate-start comparison remains pending. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
 
 ## Current execution dependencies (updated September 27)
 
@@ -94,6 +94,28 @@ analyses; do not silently shrink the scientific scope to successful cases.
 - A [predictor geometry figure](figures/functional_predictor_geometry_20260927.pdf)
   retains all 600 local comparisons at 150 shared functional positions. It is
   a prediction-source control, not a map of evolutionary changes.
+
+## Ancestral completion requirements (updated September 27)
+
+- Whole-protein refinements and independent posterior readback are complete.
+  The completed baseline/refined comparison changes the most probable amino
+  acid in 14 of 435,438 dependent node/site comparisons, with no opposing
+  calls supported at least 0.9 in both fits. Bound comparisons have no state
+  changes. See the [figure](figures/whole_refinement_sensitivity_20260927.pdf).
+- All 468 alternate-start whole-protein fits passed likelihood checks; their
+  complete probability propagation, independent audit and full comparison
+  remain in execution. Do not substitute the best-fit comparison for this grid.
+- Independent gap-character estimates violated mutual-exclusion constraints;
+  conditioning them on compatibility is not a fitted joint evolutionary model.
+  Historian's completed largest-family MAFFT retries also show minimum-edge
+  sensitivity (10–15 ungapped edits at non-root candidates). Retain these
+  limitations when evaluating candidate sequences.
+- BAli-Phy initialization checks are complete for all 324 configurations.
+  Short-chain output checks continue; production posterior mixing, model
+  sensitivity and qualified ancestral samples are still required. Exact-input
+  aliases may share computations but never count as independent chains.
+- GPU prediction remains paused. No qualified ancestral structural ensemble
+  has been produced, and aim 8 remains open alongside the other seven aims.
 
 ## Cross-cutting requirements
 

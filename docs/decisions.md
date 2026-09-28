@@ -51,3 +51,23 @@ coordinate, PAE and qualification receipts; the integration receipt explicitly
 describes a derived union, not a new native audit. Reassess marker eligibility
 using the combined full-design grid. Matching settings do not establish absence
 of batch effects, ecological replication, or sequence-independent evidence.
+
+## Ancestral uncertainty and numerical checks — September 27
+
+Retain the complete family inputs, alternative fits and failed capacity
+outcomes when advancing ancestral work. Independent amino-acid probability
+agreement verifies numerical implementation conditional on the specified
+model; it does not qualify insertion/deletion histories or final sequences.
+The observed incompatibility of separate gap characters and largest-family
+Historian branch-floor sensitivity require joint-history uncertainty to remain
+an explicit unfinished component. Neither compatibility conditioning nor the
+highest-scoring selected reconstruction substitutes for that component.
+
+Exact BAli-Phy input equivalences retain every original label, model and tree
+choice. Computation reuse is allowed only for identical effective inputs and
+seed/settings; aliases are not independent posterior chains. Completed
+initialization and short diagnostic chains do not establish mixing. Future
+ancestral structure predictions must use qualified alternatives and the
+current GPU authorization. See [ancestral evidence](ancestral-case-inputs.md),
+[Historian](historian-method-assessment-20260927.md) and
+[BAli-Phy](baliphy-method-assessment-20260927.md).
