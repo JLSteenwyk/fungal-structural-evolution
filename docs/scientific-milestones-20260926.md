@@ -46,6 +46,8 @@ Chronological receipts and process records remain in [progress](progress.md).
   1,000 iterations; their 707 saved alignments now have verified geometry and
   [ancestral-state traces](ancestral-state-traces-20260928.md). No four-chain
   quartet is complete in that frozen subset, so convergence remains unproven.
+  Automatic state extraction now covers the full 1,620-chain design; the first
+  seven corrected handoffs exactly match the independently verified arrays.
 - Primary whole-protein production finished all 412,800 dispositions. The strict
   audit failed on short alignments; a full diagnostic isolated 27 RMSD discrepancies
   to two-residue mappings. All 327 short mappings passed separate analytic checks

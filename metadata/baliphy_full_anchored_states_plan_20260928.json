@@ -1,0 +1,43 @@
+{
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "producer_launch": "metadata/baliphy_independent_chain_launch_20260927.json",
+  "inputs": "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json",
+  "python": "/home/bizon/anaconda3/bin/python",
+  "script": "scripts/prepare_ancestral_state_traces.py",
+  "output": "results/ancestral/full-anchored-state-traces-20260928-v1",
+  "per_chain_timeout_seconds": 14400,
+  "minimum_free_disk_bytes": 137438953472,
+  "pins": {
+    "scripts/advance_ancestral_state_traces.py": "3b959fbf720568506d31f0bbf656e378161c32e23a9effac170c966d0010af9e",
+    "scripts/prepare_ancestral_state_traces.py": "084cf24b384c3066ee292c87e763142239fb27dcbdb53986a2d1e861b52ec34a",
+    "scripts/ancestral_residue_anchors.py": "cc8c41b12fe946563c0e07b0ef78db65b8978ffbf0919e7afe05011ea615faee",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/test_ancestral_state_traces.py": "42db7ef2ba6b3d636390607124bf81d2090246b01a6a476f20eac73056dacf4c",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_independent_chain_launch_20260927.json": "f4b10d315edd95df5f28f5c8f19372a3c4bf81790c60b544c849b6dbc587dbe4",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json": "49de3f8ae01174f300c9ca2f136fbe23a0f6078fb384cc935a7c2ca37ea164d8",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/initial_horizon_jobs.json": "f0c38ebfd985907f55d2ba5bb8cc12d75c47ca10dfa851492ad57eebcf5c835a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "storage_allowance_gib": 64,
+    "chains": 1620,
+    "raw_trace_bytes": 9896818704,
+    "raw_count_bytes": 8622970752,
+    "linear_projection_active_hours": 2.6904935429392083,
+    "planning_active_hours": [
+      5.380987085878417,
+      16.14296125763525
+    ],
+    "scope": "Planning extrapolation from seven completed chains; input size and alignment complexity differ. Waiting for producer excluded. No paid resources."
+  },
+  "verification": {
+    "completed_chain_handoffs_checked": 7,
+    "tampered_seed_rejected": true,
+    "wrong_horizon_rejected": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "stopped_downstream_after_working_directory_failures",
+  "unit": "fungal-full-anchored-states-20260928.service",
+  "terminal_state": "Result=success\nExecMainStatus=0\nActiveState=inactive\n",
+  "failed_dispositions": {
+    "results/ancestral/full-anchored-state-traces-20260928-v1/390c70a50ec3c01d565f1225c76b74d51ed3ce66266a173cedc72a32b1ea62f9-broad-chain1/disposition.json": "f736eb11096f7833b74f19a1c4ffa1bf88a87ad60fe186793cff542e93b1d8c5",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/167553e50c88fa8073648d96bb681a0e20c7d6fab69c7d3463cd649009c87cfd-broad-chain1/disposition.json": "659eecb4eebbefa95aa138afe3b44f350b05ca73ae9f9a989dd1349d9c4e6685",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/1df91dedc8c4d35c513c62f5d0c6bdf58fcd89cfb4c861a7e1d60ac8b9b97bc5-broad-chain1/disposition.json": "6e7c8045b9c444d91d982f1b68655a1c76a06ded014df3d814ac1fc85dcc3288",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/e9eb9a5b66c55828b5b34c7bf2d45a6e1162a2918ec6e6ca328d7ece95eb2233-broad-chain1/disposition.json": "3d2838651c6d7759573c71dce9a641fde6db7fcc32f3bfdcfbda36a11f6e4c9b",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/a369c0f3a60a607823b483297183a49c9a59ffe21389f656ca3a656ea71115ff-broad-chain1/disposition.json": "6f47a7c0821cb12c13031cb8b7bbf7f04b0dc029f62308d1589e10336c9fee92",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/89598f9a3da57179dfc83940a1026306836060ca86bf3387f1c3bbb6989fac86-broad-chain1/disposition.json": "ec9780c33547d6b941e3d9dc591e0f579d6e83cb2e382dcf4d4d8653660d5bf7",
+    "results/ancestral/full-anchored-state-traces-20260928-v1/0c37c31b6f016a2f9012543375db4664a4afd263e0bb68f1b32191eaa9f366fc-broad-chain1/disposition.json": "7a61929fd2cf5ba9ee09d29e76504c69730e0be812c0652d11acc000a04d1788"
+  },
+  "reason": "Isolated attempt cwd prevented repository-relative source resolution; all seven extraction subprocesses failed before any state trace was produced.",
+  "replacement": "metadata/baliphy_full_anchored_states_plan_20260928_v2.json",
+  "scope": "Inference producer and its inputs/scripts were not modified. Original attempts and launcher retained."
+}
