@@ -42,8 +42,13 @@ change their most probable amino acid; none have opposing calls with at least
 90% support in both fits. The two parameter bounds yield no state changes.
 See the [refinement sensitivity figure](docs/figures/whole_refinement_sensitivity_20260927.pdf)
 and [ancestral methods and evidence](docs/ancestral-case-inputs.md).
-These are conditional estimates; full alternate-start sensitivity, model
-adequacy and joint insertion/deletion uncertainty remain unresolved.
+The full 468-fit alternate-start probability audit and comparison are also
+complete: 128 of 1,306,314 dependent node/site comparisons change the most
+probable amino acid, with no opposing calls supported at least 90% in both
+fits. One site has a large support shift despite a slightly worse likelihood;
+the selected refined fit agrees closely with the baseline there. These are
+conditional estimates; model adequacy and joint insertion/deletion uncertainty
+remain unresolved.
 
 The [Historian assessment](docs/historian-method-assessment-20260927.md) records
 an important limitation: both higher-memory MAFFT retries for the 622-protein

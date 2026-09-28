@@ -1176,3 +1176,31 @@ These comparisons assess optimizer sensitivity conditional on the models and
 alignments; they do not resolve joint indel histories or qualify final sequences.
 Evidence: `metadata/alternate_whole_posterior_audit_completed_20260927.json`
 and `metadata/whole_optimization_probability_comparison_full_completed_20260927.json`.
+
+
+### Descriptive investigation of extreme whole-protein support shifts
+
+The reproducible `scripts/diagnose_whole_ancestral_extremes.py` joins the ten
+retained per-fit maxima to the original alignment, mapped descendant sets,
+audited likelihoods and baseline/alternate/refined probability arrays. All
+arrays are checksum-checked against producer receipts; the full probability
+audits remain the numerical validation. Output and input hashes are recorded
+in `metadata/whole_ancestral_extreme_diagnostics_completed_20260927.json`.
+These ten records are not the ten largest individual sites globally.
+
+The largest shift is OG0000972, FAMSA/WAG, candidate level 2, alignment column
+1650 (one-based). Of 622 tips, 595 contain canonical amino acids and 27 have
+gaps at this column; there are no unknown X characters there. The candidate
+has 621 descendants; its one outside tip carries proline. This documents
+coverage and phylogenetic context, not alignment correctness or reliable
+root placement.
+
+Both baseline and alternate fits favor asparagine. Its conditional probability
+changes from 0.602051 to 0.900123, while the alternate fit has a lower log
+likelihood by 0.126265. The selected refined fit has probability 0.602082 and
+is only 0.00003576 total variation from the baseline at this site. Gamma
+shape and counts of near-zero edges also differ, but these observations do
+not isolate the cause of the probability shift. Higher apparent confidence
+in the poorer fit is not stronger historical evidence. All alternative
+results remain retained; no likelihood-based ensemble weights or biological
+substitution counts are inferred from these diagnostics.

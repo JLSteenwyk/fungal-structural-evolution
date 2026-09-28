@@ -825,8 +825,14 @@ both fits are counted explicitly. Comparisons require matching alignment
 hashes and candidate-vertex partitions. Model, bound and node comparisons are
 dependent diagnostics and are not counted as independent evolutionary changes
 or used as posterior ensemble weights. The refined/baseline and bound
-comparisons are complete; probability propagation and comparisons for all
-alternate starts remain in progress at this checkpoint.
+comparisons and all alternate-start comparisons are complete. The independent
+audit checked 26,126,280 alternate-start probability values. Across 1,306,314
+alternate/baseline node-site comparisons, 128 most-probable states changed;
+none had opposing calls supported at least 0.9 in both fits. The largest total
+variation was 0.298073. A separate descriptive diagnostic joined the ten
+retained per-fit maxima to observed alignment characters, descendant sets,
+fit likelihoods and refined probabilities. These are not the ten largest
+individual sites globally and do not establish a cause for sensitivity.
 
 Joint insertion/deletion uncertainty is unresolved. Independent gap-character
 marginals can violate mutual-exclusion constraints, and imposing compatibility

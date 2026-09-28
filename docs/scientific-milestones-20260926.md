@@ -14,7 +14,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 5. Ecological/morphological transitions | Evidence-curated traits and independently verified ESMFold/expanded AlphaFold shared-site coverage | Establish independently replicated usable transitions, preserve ambiguous assignments, and test controlled associations with structural change. A trait's number of labeled tips is not its number of independent origins. See [ecology](ecology-evidence-workflow.md). |
 | 6. Functional locations | Audited residue accessibility and functional correspondences | Join changes to supported core/surface and catalytic/binding annotations; evaluate matched backgrounds and supported interfaces/pockets where evidence permits. Annotation correspondence does not establish activity. See [functional workflow](functional-site-workflow.md). |
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
-| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline and bound comparisons completed; full alternate-start comparison remains pending. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
+| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and full alternate-start comparisons completed; 26,126,280 alternate probabilities independently checked. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
 
 ## Current execution dependencies (updated September 27)
 
@@ -102,9 +102,11 @@ analyses; do not silently shrink the scientific scope to successful cases.
   acid in 14 of 435,438 dependent node/site comparisons, with no opposing
   calls supported at least 0.9 in both fits. Bound comparisons have no state
   changes. See the [figure](figures/whole_refinement_sensitivity_20260927.pdf).
-- All 468 alternate-start whole-protein fits passed likelihood checks; their
-  complete probability propagation, independent audit and full comparison
-  remain in execution. Do not substitute the best-fit comparison for this grid.
+- All 468 alternate-start whole-protein fits passed likelihood and probability
+  checks. Full comparison is complete: 128 most-probable state changes across
+  1,306,314 dependent node/site comparisons, none opposing at 0.9 support in
+  both fits. The largest support shift occurs in a slightly poorer fit and
+  remains documented; best-fit agreement alone does not establish robustness.
 - Independent gap-character estimates violated mutual-exclusion constraints;
   conditioning them on compatibility is not a fitted joint evolutionary model.
   Historian's completed largest-family MAFFT retries also show minimum-edge
