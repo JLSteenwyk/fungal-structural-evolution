@@ -1,0 +1,29 @@
+{
+  "producer_plan": "metadata/matched_simulation_input_cache_plan_20260928.json",
+  "producer_launch": "metadata/matched_simulation_input_cache_launch_20260928.json",
+  "cache": "results/model_validation/matched-simulation-input-cache-20260928-v1",
+  "original": "results/structural_comparisons/full-matched-working-models-20260927-v1",
+  "output": "results/model_validation/matched-simulation-cache-replay-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "storage_gib": 1,
+    "planning_active_hours": [
+      1,
+      24
+    ],
+    "basis": "All28808 cached inputs and144040 original fits; direct fixed-parameter likelihood and coefficient replay, no optimization. Broad allowance for file reads, decompression and factor operations; waiting excluded.",
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/audit_matched_simulation_cache.py": "8d53c801adc7d9d3ff553db394fd0c638ec01789149f652b4c3a81bbccfe82bb",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "metadata/matched_simulation_cache_replay_checks_20260928.json": "29ccfc901477b5a20be190ce24fe1ff748fa4fcc4c79d999d8a22e49939633e4",
+    "metadata/matched_simulation_input_cache_plan_20260928.json": "b6de45bca5eae0af7c866958cab2f23cd40791ba1f31491e1844e6bff70841ea",
+    "metadata/matched_simulation_input_cache_launch_20260928.json": "69f6cfb95fc00a44eeca6e67b852a23eafe6bf5cc450417640728d924934fb90",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/receipt.json": "0eed35da1e8786476fdf8bb3852326e767d713aae8c26f3b39e6d6bbf0fb1a48"
+  }
+}

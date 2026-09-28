@@ -197,3 +197,27 @@ not fit any models or launch simulated refits.
 Complete-cache accounting and an independent likelihood replay from cached
 inputs remain required before production simulation. The running cache job
 is not itself evidence that those checks have passed.
+
+## Full cache likelihood replay queued
+
+`scripts/audit_matched_simulation_cache.py` now waits on the pinned cache
+producer identity and requires inactive/success/exit0 plus complete source
+receipts. It will replay all 144,040 original fixed-parameter fits from the
+28,808 serialized input arrays. Checks include active covariates/scales,
+phylogenetic factor indices, likelihood, coefficients, residual scale and
+quadratic, conditional covariance, and conversion back to raw covariate units.
+Every cached numeric and ordered-identity hash must match its source recipe.
+The direct likelihood evaluator is shared with the earlier fit validation;
+this is a separate input-route replay, not an independent statistical model.
+
+Before launch, 12 available input caches across all five trees reproduced 60
+original fits, with maximum objective disagreement 4.55e-12. Changing a response
+value caused rejection. The exact source-bound fixture set can be reproduced
+with `scripts/recheck_matched_cache_replay_fixtures.py`; evidence is recorded in
+`metadata/matched_simulation_cache_replay_checks_20260928.json`.
+
+The queued full replay uses one CPU, 8 GiB memory, no swap and 1 GiB output
+allowance, with 1–24 active hours budgeted after the dependency wait. Plan and
+launch identity use the `metadata/matched_simulation_cache_replay_` prefix.
+The full replay has not yet passed, and no calibrated uncertainty claim follows
+from this limited helper check.
