@@ -9577,3 +9577,24 @@ Launch identities for both waiting auditors were verified. Each audit has
 one CPU,8GiB RAM,zero swap and1GiB output allowance. Historian's higher-memory
 retry and whole-protein optimization continue independently. All full-project
 requirements remain active; GPUs remain paused.
+
+### 2026-09-27: independent whole-protein refinement audit queued
+
+Completed the verification handoff for all156 forthcoming whole-protein
+refinements. The independent auditor waits on the verified refinement wrapper
+and requires inactive/success/exit0 before opening its completed output. The
+future generated fit plan is bound to the source receipt and every pinned
+input; the preparation/runner/handoff code and launch record are pinned now.
+
+The audit will check every report, checkpoint, model label, tip and unrooted
+edge set, estimated frequency, gamma rate and information criterion; it then
+recomputes each likelihood independently and retains signed changes from the
+selected starting fit. Unknown X and gaps are handled in both the exact
+version-specific frequency iteration and replay evidence, while originals
+remain intact. Empty warning tables retain their schema. Resource allowance:
+one CPU,8GiB RAM,zero swap,0.2GiB output and0.1–12h after production.
+
+The waiting auditor's PID, creation time and command were verified. No audit
+has yet passed and no ancestral probabilities were replaced. Whole-protein
+posterior propagation, joint indel uncertainty and other project objectives
+remain open; GPUs remain paused.

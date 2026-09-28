@@ -1,0 +1,37 @@
+{
+  "producer": {
+    "unit": "fungal-ancestral-whole-refinements-20260927.service",
+    "pid": 610030,
+    "created": 1790554618.12,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/advance_ancestral_whole_refinements.py"
+    ]
+  },
+  "exchangeabilities": "data/software_audits/iqtree-3.0.1/modelprotein.cpp",
+  "output": "results/ancestral/whole-refinement-readback-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.2,
+    "planning_hours_after_producer": [
+      0.1,
+      12
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Read all156 whole-protein refinements only after verified wrapper completion; future generated fit plan is bound through source receipt and all its pins. Replay every likelihood with X/gaps as unknown and compare against the selected audited start. Does not establish global convergence or update ancestral probabilities.",
+  "pins": {
+    "data/software_audits/iqtree-3.0.1/modelprotein.cpp": "9b57268cdac18489b3b1d1fcce159065dc24f92995061020691fb3801a4c5fbb",
+    "metadata/ancestral_whole_refinement_handoff_launch_20260927.json": "403ea9fee38d4fb824c3c345d8e0c6512a7cb8806c79dea3f51ebf99f8c16324",
+    "metadata/ancestral_whole_refinement_handoff_plan_20260927.json": "e906e6c3f8b08f93df3c7a20e0f5c42f4384f30195e2459ded956822785c8642",
+    "scripts/advance_ancestral_whole_refinements.py": "aabf4f1c49716761801d627ee89726380ac4b15b6f2eb015a3e1e5dad3b114c0",
+    "scripts/prepare_ancestral_whole_refinements.py": "2c7aa763bc7b65900364456dc88d1471824d6f5512fd55e8d44a34c557d6e87b",
+    "scripts/run_ancestral_whole_refinements.py": "f7f9bb2980d8dd62adea75c56c20a451361539aaa15980cfce65cdaa16c4e5ff",
+    "scripts/audit_ancestral_whole_refinements.py": "0e950b20c57c17de735ece9a6be2691efd2ad4cd13274a396dbae4307e55e953",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "data/software_audits/iqtree-3.0.1/alignment.cpp": "bede370114744d607f2a46509d12347d93480ca5c99957bb63d8f40e507a75f0"
+  }
+}
