@@ -1,0 +1,54 @@
+{
+  "unit": "fungal-matched-kr-simulations-20260928.service",
+  "pid": 1801995,
+  "created": 1790617850.08,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_matched_kr_simulations.py",
+    "--plan",
+    "metadata/matched_kr_simulations_plan_20260928.json"
+  ],
+  "plan_sha256": "f27dbdc3468c2a5e9ff74d4fb3afb4bae7bb1f765d63dc6589d03fd5b7b56987",
+  "workers": [
+    {
+      "pid": 1802012,
+      "created": 1790617850.7,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_matched_kr_simulations.py",
+        "--plan",
+        "metadata/matched_kr_simulations_plan_20260928.json"
+      ]
+    },
+    {
+      "pid": 1802015,
+      "created": 1790617850.7,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_matched_kr_simulations.py",
+        "--plan",
+        "metadata/matched_kr_simulations_plan_20260928.json"
+      ]
+    },
+    {
+      "pid": 1802016,
+      "created": 1790617850.71,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_matched_kr_simulations.py",
+        "--plan",
+        "metadata/matched_kr_simulations_plan_20260928.json"
+      ]
+    },
+    {
+      "pid": 1802017,
+      "created": 1790617850.71,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_matched_kr_simulations.py",
+        "--plan",
+        "metadata/matched_kr_simulations_plan_20260928.json"
+      ]
+    }
+  ]
+}

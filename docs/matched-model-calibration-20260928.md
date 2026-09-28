@@ -597,3 +597,39 @@ were checked. All attempts remained accounted for. Evidence is in
 This completes the implementation connection, not coverage calibration. The
 six fixtures are insufficient for a coverage claim; prespecified simulation
 experiments, full-grid numerical qualification and model adequacy still remain.
+
+## Prespecified synthetic coverage experiment running
+
+`scripts/prepare_matched_kr_simulations.py` freezes two Gaussian designs
+(48records,16backgrounds,4families,4species-factor columns,2fixed coefficients;
+240records,60backgrounds,12families,16factor columns,5coefficients). Each has
+all eight combinations of zero or0.7 background/family/species variance ratios
+at residual scale1.3. There are999 seeded independent responses per configuration,
+for15,984 full24-candidate refits. This is method validation, not a biological
+pilot or a replacement for the full fungal sampling and analysis grid.
+
+Replicate count and designs were fixed before launch. At coverage0.95,999
+replicates give binomial Monte Carlo standard error about0.00690. All attempted
+refits and interval dispositions remain in the fixed denominator. End-of-run
+summaries use marginal exact binomial interval envelopes, including unresolved
+outcomes. Cross-configuration comparisons are descriptive; no optional stopping,
+joint significance claim or universal real-input coverage follows from this run.
+
+`scripts/run_matched_kr_simulations.py` verifies source/design hashes, locks the
+output, binds every replicate to the plan and stores the entire refit plus
+interval result. Resume requires matching plan, payload checksum and replicate
+identity; incomplete payload/checksum pairs require review. The controller
+checks disk reserve and observed output size every100 dispositions. A completion
+receipt requires all planned draws and summaries, with a separate final audit
+still necessary.
+
+The service `fungal-matched-kr-simulations-20260928.service` was launched with
+four CPU workers,8GiB memory,no swap and a24-hour service ceiling; no GPUs or
+paid resources. Prelaunch planning allowed1–24hours and4GiB output with100GiB
+free reserve. The estimate deliberately spans0.5–20seconds per refit; initial
+small-design processing is faster, but does not establish later-case throughput.
+Controller and four worker identities were verified live, and598 saved
+dispositions were observed at the first inspection. No interim coverage-based
+decision was made. Plans and launch records have the prefix
+`metadata/matched_kr_simulations_`; results are under
+`results/model_validation/matched-kr-simulations-20260928-v1`.
