@@ -472,3 +472,37 @@ chains. Completed integrity checks do not establish convergence or qualify
 ancestral structures. Evidence:
 `metadata/baliphy_sample_mapping_final_readback_completed_20260927.json` and
 `metadata/baliphy_resource_final_completed_20260927.json`.
+
+
+### Full independent-chain grid launched
+
+The full 1,620-chain grid is now running under
+`fungal-baliphy-independent-chains-20260927.service`: 135 effective inputs,
+three free-parameter prior settings and four distinct seeds, retaining all
+324 original aliases. The first horizon is 1,000 iterations per chain.
+It is a sampling checkpoint, not a convergence criterion. The controller
+checks every saved alignment and candidate-node identity on successful exit;
+capped/failed attempts remain explicit. Scalar and ancestral/alignment mixing
+diagnostics and longer horizons remain necessary before sample qualification.
+
+Resource planning uses 10,452.210 seconds summed across effective-input median
+20-iteration runtimes. Linear scaling gives 1,742 worker-hours, or 4.54 days
+on 16 workers, for this horizon. Startup costs and free-parameter moves make
+that an uncertain scheduling baseline, not an ETA or convergence forecast.
+The plan records 0.5–4-fold timing sensitivity and per-chain timeouts of at
+least one hour (four times the corresponding linear projection where larger).
+
+The batch is limited to 16 CPU equivalents, 192 GiB RAM and zero swap; each
+process has a 12-GiB address-space limit and each file a 2-GiB limit. Output
+planning allowance is 256 GiB, with at least 3 TiB disk headroom required
+before each new attempt. No GPUs or paid resources are used. All 16 initial
+workers were verified live with the expected commands, inherited attempt
+locks and kernel limits. Initial memory observations do not establish peaks.
+
+The new readback implementation passed fixtures covering all 135 effective
+inputs and 1,620 candidate-node samples from the completed short-run batch.
+All 1,620 launch configurations, unique seeds and 536 distinct input-file
+hashes were independently checked. Plan, launch, prelaunch and startup checks
+are tracked under `metadata/baliphy_independent_chain_*_20260927.json`.
+The controller and readback code are separate from the completed short-run
+scripts; completed short-run evidence is preserved.
