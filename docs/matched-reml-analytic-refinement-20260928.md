@@ -71,3 +71,34 @@ It allows one CPU core and 8 GiB RAM, with no GPU or paid resources.
 
 Integrating qualified refinements with the complete original setting map,
 model adequacy and inferential calibration remain subsequent requirements.
+
+
+## Full estimate integration queued
+
+`scripts/integrate_matched_refinements.py` waits for the identified refinement
+readback service to reach inactive/success/exit0, then checks its receipt and
+all bound artifacts before integrating all 658 targeted dispositions. The
+new export preserves every original column in the 144,040 unique-fit and
+414,720 full-setting rows. Separate `selected_*` columns carry the refined
+coefficients, conditional intercept variance, variance ratios and objective;
+source hashes, selection labels and review flags remain explicit. All 2,099
+expanded rows linked to targeted fits are accounted for. An unsuccessful
+refinement retains its original estimates and a review flag. Omitted
+covariates stay null rather than becoming zero.
+
+The mapping checks passed on 282 frozen completed refinements, including
+unchanged original columns across the full setting table. Duplicate fits,
+changed source hashes and worsened objectives were rejected; explicit
+refinement-error fallback was checked. Frozen checks live under
+`results/model_validation/matched-refinement-overlay-checks-20260928-v2`.
+The first check invocation completed its assertions but failed when writing
+metadata with a string instead of a Path; its v1 artifacts are preserved,
+and the corrected v2 run is the recorded test result.
+
+The queued integration has one CPU, 8 GiB memory, no swap and a 1 GiB storage
+allowance; estimated active work is 0.02–1 hour after the upstream wait.
+Plan and live launch identity are in
+`metadata/matched_refinement_integration_plan_20260928.json` and
+`metadata/matched_refinement_integration_launch_20260928.json`. Production
+integration is not yet complete. Conditional covariance is not calibrated
+uncertainty, and numerical refinement does not qualify a biological effect.
