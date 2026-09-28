@@ -811,3 +811,45 @@ The numerical audit is
 This advances the real-data model stage, not uncertainty calibration or global
 optimality proof. The separate synthetic184-review qualification overlay still
 needs completion; its original coverage results remain intact.
+
+## Synthetic continuation qualification and coverage update audited
+
+`scripts/qualify_matched_kr_continuations.py` now records a separate qualification
+overlay for all184 originally unresolved synthetic refits. It checks the
+original successful-selected-fit criteria, completed full-face agreement within
+1e-5, and successful continued endpoints with projected gradient at most1e-3.
+Each selected solution is directly replayed and its analytic gradient recomputed.
+The selected coefficients, variance components and original fit files remain
+unchanged. The stricter1e-6 retry diagnostic is retained separately, including
+its one unmet case; it does not replace the original acceptance threshold.
+
+Both interval methods were recomputed for these184 existing responses and
+combined with the15,800 originally qualified responses. No draws were added,
+removed or substituted. `scripts/audit_matched_kr_continuation_overlay.py`
+checked every qualification/source/retry binding, recomputed the184 KR intervals
+and conditional-t coverage indicators, rebuilt all112 summary rows, and rejected
+three deliberately invalid retry-evidence fixtures. Every configuration retains
+999 attempts. There are no unresolved coefficient outcomes, and every revised
+point estimate and Monte Carlo interval lies inside its original unresolved
+envelope. The initial checker invocation exposed a stale local variable in its
+negative fixture; that checker-only issue was fixed before the successful audit.
+
+Evidence is in `metadata/matched_kr_continuation_audit_20260928.json`; the current
+table is
+`results/model_validation/matched-kr-continuation-audit-20260928-v1/all_coefficient_coverage.tsv`.
+The earlier figure still represents the original unresolved analysis and has
+not yet been replaced by a revised figure.
+
+Updated intercept examples: for the48-record family-only configuration, KR
+covers955/999 (95.60%) versus873/999 (87.39%) for conditional t. For the48-record
+zero-random-variance configuration, KR covers996/999 (99.70%), versus971/999
+(97.20%) for conditional t. Across56 dependent coefficient/configuration rows,
+one KR marginal upper endpoint is below95% and13 lower endpoints exceed95%;
+the corresponding conditional-t counts are11 and4. These remain descriptive,
+not multiplicity-adjusted tests or universal coverage certification.
+
+This is a documented numerical-protocol update after the initial study, based
+on nonstationary optimizer termination rather than desired coverage outcomes.
+The boundary conservatism remains and requires statistical investigation;
+neither the updated simulations nor the real-data numerical refinements close
+the project's uncertainty or model-adequacy requirements.
