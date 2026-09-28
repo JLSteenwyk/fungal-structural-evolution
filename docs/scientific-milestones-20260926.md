@@ -18,8 +18,10 @@ Chronological receipts and process records remain in [progress](progress.md).
 
 ## Current execution dependencies (updated September 28)
 
-- Expanded AlphaFold resampling remains running across all 125 markers and
-  75,000 paired draws, followed by automatic native-output/interval audit.
+- Expanded AlphaFold resampling and native-output audit completed across all
+  125 markers and 75,000 paired draws (23 unestimable). A separate
+  [warning census and interval-table review](afdb-paired-resampling-review-20260928.md)
+  completed; conditional intervals do not establish evolutionary significance.
 - ESMFold resampling and its full audit completed: 122 markers, 73,200 draw
   attempts, 73,167 estimable draws and 33 explicitly unestimable draws. These
   fixed-topology conditional intervals cannot substitute for AlphaFold intervals.

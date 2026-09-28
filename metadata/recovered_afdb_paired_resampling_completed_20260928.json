@@ -1,0 +1,27 @@
+{
+  "status": "terminal_native_audit_receipt_and_tables_verified",
+  "audit": {
+    "status": "complete_paired_resampling_audit",
+    "markers": 125,
+    "batches": 375,
+    "attempted_paired_draws": 75000,
+    "unestimable_draws": 23,
+    "validated_fits": 149954,
+    "fits_with_warnings": 148752,
+    "branch_interval_rows": 371358,
+    "resampling_receipt_sha256": "4d8272eb8a2c5c47830bdfb267f2e4b9c39a11a0dc634d6621b663f1782360f1",
+    "script_sha256": "20329ee76ddba1b439b3b2c6e8030d1437e771c60b4f694ab1bed597eb79e8a8",
+    "resampling_helper_sha256": "318cb739033b679e5c306c5978a2a6171236b34bfd8333d5eff38642e4f81ac0",
+    "numpy_version": "2.2.6",
+    "quantile_method": "linear; 2.5 and 97.5 percentiles, at least 90% draws estimable",
+    "interpretation": "Conditional site/circular-block sampling sensitivity on fixed sequence marker topologies. Intervals are not calibrated for topology/model/prediction error or all spatial feature dependence. Paired sampling covariance describes estimation error, not evolutionary coupling. No branch ratios, p-values or acceleration rankings.",
+    "artifacts": {
+      "batch_summary.tsv": "100664493fcb077d4c5e2108527babdff56a930da4bb9aab16acfd8ef183139a",
+      "conditional_intervals.tsv": "78193cc8812512a136f89b22f93b4407b940479182d7a98c4ec6fd9e87c9b057"
+    }
+  },
+  "source_receipt": "results/phylogeny/paired-resampling-audit-afdb-recovered-20260926-v1/receipt.json",
+  "source_receipt_sha256": "54583b16e0e1b5b7a2af54c3231a97bbe129fe0df3f4829899e7460d77cfc457",
+  "controller_receipt_sha256": "188e9bb7733a607cc52ad01faf63d5e6c38578cedc525b18e6509f60c1be0156",
+  "scope": "Verified terminal success and recorded native audit and table hashes. Further independent native warning census is active; no evolutionary significance claim."
+}

@@ -1,0 +1,185 @@
+{
+  "status": "completed_interval_readback_and_native_warning_census",
+  "source_plan_sha256": "dec3b38d971ea67449207133c115baec8bff6d077f9f16da3031fa4cbc0b2bc3",
+  "source_audit_receipt_sha256": "54583b16e0e1b5b7a2af54c3231a97bbe129fe0df3f4829899e7460d77cfc457",
+  "fits": 149954,
+  "fits_with_warnings": 148752,
+  "unestimable_draw_reasons": {
+    "all_missing_taxon": 23
+  },
+  "warning_categories": {
+    "near_zero_internal_branches": 148324,
+    "rare_alignment_states": 47505,
+    "other_warning_requires_review": 90768
+  },
+  "warnings_by_fit": {
+    "aa|near_zero_internal_branches": 73948,
+    "3di|rare_alignment_states": 44967,
+    "3di|near_zero_internal_branches": 74376,
+    "aa|rare_alignment_states": 2538,
+    "aa|other_warning_requires_review": 45392,
+    "3di|other_warning_requires_review": 45376
+  },
+  "warning_examples": {
+    "near_zero_internal_branches": "WARNING: 56 near-zero internal branches (<0.0043) should be treated with caution",
+    "rare_alignment_states": "WARNING: States(s) E, T, Y rarely appear in alignment and may cause numerical problems",
+    "other_warning_requires_review": "WARNING: 2 sequences contain more than 50% gaps/ambiguity"
+  },
+  "interval_summaries": [
+    {
+      "block_length": 1,
+      "fit": "3di",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 9099,
+      "median_conditional_interval_width": 0.0768660943025
+    },
+    {
+      "block_length": 1,
+      "fit": "aa",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 5050,
+      "median_conditional_interval_width": 0.0862017757075
+    },
+    {
+      "block_length": 10,
+      "fit": "3di",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 9080,
+      "median_conditional_interval_width": 0.0780999410075
+    },
+    {
+      "block_length": 10,
+      "fit": "aa",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 5044,
+      "median_conditional_interval_width": 0.0887668638625
+    },
+    {
+      "block_length": 30,
+      "fit": "3di",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 8930,
+      "median_conditional_interval_width": 0.0743222753225
+    },
+    {
+      "block_length": 30,
+      "fit": "aa",
+      "rows": 61893,
+      "rows_with_at_least_half_draws_near_zero": 5023,
+      "median_conditional_interval_width": 0.0858053926375
+    }
+  ],
+  "minimum_valid_draws": 197,
+  "batches_with_unestimable_draws": [
+    {
+      "marker": "129234at2759",
+      "block_length": 10,
+      "draws": 200,
+      "valid_draws": 199,
+      "unestimable_draws": 1,
+      "branches": 503
+    },
+    {
+      "marker": "129234at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 197,
+      "unestimable_draws": 3,
+      "branches": 503
+    },
+    {
+      "marker": "260326at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 199,
+      "unestimable_draws": 1,
+      "branches": 571
+    },
+    {
+      "marker": "4900375at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 535
+    },
+    {
+      "marker": "4970387at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 199,
+      "unestimable_draws": 1,
+      "branches": 505
+    },
+    {
+      "marker": "4977163at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 197,
+      "unestimable_draws": 3,
+      "branches": 491
+    },
+    {
+      "marker": "5000452at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 505
+    },
+    {
+      "marker": "5001156at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 199,
+      "unestimable_draws": 1,
+      "branches": 503
+    },
+    {
+      "marker": "5004118at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 517
+    },
+    {
+      "marker": "5005697at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 525
+    },
+    {
+      "marker": "707076at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 199,
+      "unestimable_draws": 1,
+      "branches": 543
+    },
+    {
+      "marker": "727964at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 505
+    },
+    {
+      "marker": "776280at2759",
+      "block_length": 30,
+      "draws": 200,
+      "valid_draws": 198,
+      "unestimable_draws": 2,
+      "branches": 519
+    }
+  ],
+  "wall_seconds": 111.48717800999293,
+  "script_sha256": "43ce7867578308738cbd672c6c4c72a4dc91c87cb77e20ec90b17f67de20765f",
+  "artifacts": {
+    "fit_warning_inventory.jsonl.gz": "5d48e9e7042b832d869846ad7521b8b78b59bbdd26d24ba5e3b02704c8a0a370"
+  },
+  "scope": "Complete interval-table consistency checks and receipt-bound native warning census. Does not rerun phylogenetic fits or independent quantile reconstruction. Percentile intervals condition on fitted sequence topology and model; near-zero and rare-state warnings remain substantive limitations."
+}
