@@ -1,0 +1,39 @@
+{
+  "collections": [
+    {
+      "alignment": "mafft",
+      "launch": "metadata/historian_memory_retry_audit_launch_20260927.json",
+      "audit": "results/ancestral/historian-memory-retry-final-readback-20260927-v1/receipt.json",
+      "producer_plan": "metadata/historian_memory_retry_plan_20260927.json"
+    },
+    {
+      "alignment": "famsa",
+      "launch": "metadata/historian_famsa_memory_retry_audit_launch_20260927.json",
+      "audit": "results/ancestral/historian-famsa-memory-retry-final-readback-20260927-v1/receipt.json",
+      "producer_plan": "metadata/historian_famsa_memory_retry_plan_20260927.json"
+    }
+  ],
+  "nodes": "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv",
+  "output": "results/ancestral/historian-largest-family-comparison-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours_after_audits": [
+      0.01,
+      0.5
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/compare_historian_largest_family.py": "938244a9ec89f16b2dd4b601d7fc4cd2d79d54ace38baafe6bea58ad15747dc9",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/historian_memory_retry_audit_launch_20260927.json": "fae3a7f1f04f140ff0c4a001d3474381c205d244a8c5b8686c66bc8f4e0753ce",
+    "metadata/historian_memory_retry_plan_20260927.json": "09349474a133436b0467a924fd84e5e6f90366d66ca1e93044157fa6e1e08e08",
+    "metadata/historian_famsa_memory_retry_audit_launch_20260927.json": "54bc5debb3d4dab1210e797c3683c43394b736fd5a1c51f4ab47fbeb45b4cdf4",
+    "metadata/historian_famsa_memory_retry_plan_20260927.json": "67aad21b61e17ce2abee34799fa10bb7efcaa686be2cd963c276fc3225a71ae5"
+  },
+  "scope": "Four complete622-protein alternatives, both alignments and minimum-edge floors. Same ungapped extant inputs and matched candidate descendant sets required.16 one-factor comparisons including four assumed-root comparisons; edit distance is numerical sensitivity, not biological event counts or posterior uncertainty. No qualified ancestral FASTA."
+}

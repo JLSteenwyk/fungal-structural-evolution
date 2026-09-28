@@ -189,3 +189,14 @@ visible; neither is selected as a qualified ancestor on these results. The
 FAMSA retry collection and joint-history sampling diagnostics remain separate.
 Evidence: `metadata/historian_memory_retry_audit_completed_20260927.json` and
 `metadata/historian_largest_family_floor_sensitivity_20260927.json`.
+
+A combined largest-family comparison is queued behind both complete retry
+audits. It retains the four combinations of MAFFT/FAMSA and minimum edge
+length 1e-9/1e-7, requires identical ungapped inputs for all 622 extant proteins,
+and checks candidate descendant sets. Sixteen candidate comparisons change
+only one factor at a time; four involve the assumed root. The output retains
+all diagnostic sequences but does not qualify an ancestral FASTA.
+Implementation: `scripts/compare_historian_largest_family.py`, with matching
+plan and launch metadata. One CPU, 4 GiB RAM, no swap, 0.1 GiB output and
+0.01–0.5 hours after the audits are allowed. No new inference or GPU work
+is launched by this comparison. The process is verified live and waiting.
