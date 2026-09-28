@@ -1,0 +1,23 @@
+{
+  "status": "full_original_fit_boundary_census",
+  "fits": 144040,
+  "finite_variance_fits": 144040,
+  "unavailable_variance_fits": 0,
+  "any_exact_zero_fits": 61932,
+  "all_positive_fits": 82108,
+  "component_exact_zero_counts": {
+    "background": 0,
+    "family_component": 58220,
+    "species": 24312
+  },
+  "numerical_review_fits": 658,
+  "largest_single_dense_matrix_gib": 0.8954656794667244,
+  "source_receipt_sha256": "ad4e54c22d06aad67ad54f91076450c5d8ef5eaf1d42ec86188ff3fd3cd9fcc9",
+  "source_export_sha256": "003cedd2aa401be60bf9704c210f169ec4f385b3552c1022bbf24d32a9c5ce05",
+  "script_sha256": "74ebd25944249fbaaa9fffe946a59093934eb0d39022c4d5a2171f85f89cbfec",
+  "artifacts": {
+    "boundary_counts.tsv": "75b9f430a6b5c7e499f2e8d860b75dfef76bd5c5dde9b3926b3f068d8c98ecf1",
+    "fit_inventory.parquet": "5369f9ed4b0fa3268178c12285f90d298f3b2a40b7240fd3a66a87c1b57f1079"
+  },
+  "scope": "All original unique tree fits, including numerical-review cases. Exact zeros only, no near-zero threshold. Refinement overlay is not included. Boundary estimates are not automatically invalid; this census does not determine identifiability, information rank, interval coverage or biological effects. Dense memory is one float64 n-by-n matrix, not peak memory or runtime."
+}

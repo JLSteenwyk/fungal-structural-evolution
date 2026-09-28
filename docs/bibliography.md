@@ -70,6 +70,11 @@ it does not validate our particular covariance assumptions. Our specialized
 evaluator is checked separately against direct dense calculations; optimization
 and inferential calibration remain outstanding.
 
+## Small-sample fixed-effect uncertainty
+
+- Kenward & Roger (1997). [Small sample inference for fixed effects from restricted maximum likelihood](https://pubmed.ncbi.nlm.nih.gov/9333350/). Abstract reviewed; the original full text has not been reviewed here. Proposes adjusted fixed-effect covariance and an approximate F reference distribution. This is a candidate method, not evidence of coverage for the fungal matched model.
+- Halekoh & Højsgaard (2014). [A Kenward-Roger Approximation and Parametric Bootstrap Methods for Tests in Linear Mixed Models – The R Package pbkrtest](https://www.jstatsoft.org/article/view/v059i09). Full author article downloaded and Appendix A inspected. Gives covariance adjustment and moment matching for Gaussian mixed models with independent, constant-variance residuals. Its known-kernel representation is relevant to our covariance model. Download provenance is in `metadata/mixed_model_uncertainty_literature_20260928.json`; project-specific feasibility and unresolved validation are in `matched-model-calibration-20260928.md`. This method has not been adopted for reported intervals.
+
 ## Ancestral insertion/deletion reconstruction
 
 Ashkenazy H et al. (2012). FastML: a web server for probabilistic reconstruction

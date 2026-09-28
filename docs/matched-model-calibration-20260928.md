@@ -337,3 +337,46 @@ The shortcut is a modest implementation improvement on this selected set. It
 does not justify applying the earlier6-fold fixed-point improvement to the
 full calibration estimate, and it does not resolve the very large refit count.
 Existing active production fits were not replaced or restarted.
+
+## Analytic uncertainty feasibility and full boundary census
+
+The downloaded [Halekoh & Højsgaard (2014) article](https://www.jstatsoft.org/article/view/v059i09),
+Appendix A, expresses marginal covariance as a linear combination of known
+matrices and supplies information, fixed-effect covariance adjustment and
+F-moment calculations. This suggests a possible analytic alternative to many
+simulation refits, subject to independent validation. It does not establish
+valid coverage for this project.
+
+Our model can be written in absolute variance coordinates as
+V = v0 I + vb Zb Zb' + vf Zf Zf' + vs F F', where v0 is the profiled scale
+and each other variance is that scale times its fitted ratio. Thus there are
+four known covariance kernels. Any information calculation must include the
+residual variance; the three-ratio profiled optimizer Hessian alone is not the
+four-parameter covariance required for this approach. This is our algebraic
+mapping, not a claim that the existing software directly supports our fitter.
+
+Before choosing a method, `scripts/inventory_matched_variance_boundaries.py`
+checked all144,040 original unique tree fits against the hashed export. There
+are61,932 fits (43.00%) with at least one exactly zero variance component:
+58,220 have zero family variance,24,312 zero species variance, and20,600 both.
+Background variance is positive in every fit. All658 numerical-review fits are
+retained; the ongoing refinement overlay is not part of this census. No
+near-zero threshold was applied. Evidence and per-tree accounting are in
+`metadata/matched_variance_boundaries_20260928.json` and the bound output files.
+
+These counts make boundary handling a central validation requirement. Zero
+estimates do not automatically invalidate a fit or prove that an approximation
+fails. Conversely, the82,108 fits with positive components are not automatically
+identifiable or calibrated. Information rank, conditioning, fixed-effect
+estimability and coverage remain to be checked. Do not silently drop boundary
+components, exclude these fits from denominators, or report an approximation
+as calibrated because it returns finite numbers.
+
+One dense float64 observation covariance at the largest input would occupy
+0.8955GiB, before temporary matrices. A full-grid implementation should exploit
+the nested groups and low-rank species factor rather than repeatedly construct
+dense kernels. Next implementation work should validate exact information and
+covariance contractions against independent dense calculations, including
+rank-deficient and boundary cases, then compare approximation behavior with
+refitted simulations. No full calibration replicate count or analytic method
+has yet been selected; the entire original analysis grid remains in scope.
