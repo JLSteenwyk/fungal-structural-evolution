@@ -1,0 +1,32 @@
+{
+  "output": "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+  "inventory": "results/structures/afdb-inventory-20260928-v1/inventory.jsonl",
+  "representatives": "metadata/gene_representatives_receipt.json",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "expected_taxa": 526,
+  "expected_proteins": 5815847,
+  "provider": "GDM",
+  "tool": "AlphaFold Monomer v2.0 pipeline",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_planning_gib": 5,
+    "runtime_planning_hours": [
+      0.5,
+      24
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Full frozen September28 log (1,947,145 records); rescan all 5,815,847 representative proteins and hash every selected coordinate. Prior complete catalog has 1,290,278 models. Broader time allowance for increased model count and concurrent disk activity.",
+    "observed_free_disk_bytes": 11940870082560
+  },
+  "pins": {
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/gene_representatives_receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/structures/afdb-inventory-20260928-v1/inventory.jsonl": "a32994335df0f5c5a00286ebf0df40eb395cc00b92c1503a317d35b468857686",
+    "results/structures/afdb-inventory-20260928-v1/receipt.json": "b84b8c736dbbb3da7a3293900cfb1a77311ef3715c2026e39dea81f88d782681"
+  }
+}

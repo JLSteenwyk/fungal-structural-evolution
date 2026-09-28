@@ -9712,3 +9712,15 @@ does not establish universal coverage or complete the biological project.
   paused. Launch identity and pinned plan are recorded in
   `metadata/selected_matched_intervals_launch_20260928.json`. Candidate intervals
   remain exploratory and require full output readback and scientific validation.
+
+- September 28: froze a new, verified complete-line prefix of the live AFDB
+  inventory (1,947,145 log records; records are not unique structures). Launched
+  `fungal-whole-proteome-structure-catalog-20260928.service` to screen all
+  5,815,847 representative proteins across the 526-entry analysis manifest and
+  verify the selected coordinate hashes. The earlier September22 catalog is
+  preserved. The new catalog uses one CPU, a 32 GiB cap, no swap and low I/O
+  priority; planning time is 0.5–24 hours, with 5 GiB catalog output allowance.
+  Full sequence/model-selection readback and comparison with the earlier
+  catalog remain required. Download counts are not validated atlas coverage;
+  neither this refresh nor the old catalog establishes confidence-qualified
+  structural comparisons or complete structure inference.

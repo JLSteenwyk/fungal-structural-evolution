@@ -1,0 +1,12 @@
+{
+  "status": "complete_verified_append_only_inventory_prefix",
+  "source": "data/raw/afdb_models.jsonl",
+  "source_initial_bytes": 2288159931,
+  "source_observed_final_bytes": 2288178857,
+  "frozen_bytes": 2288159931,
+  "complete_lines": 1947145,
+  "incomplete_tail_bytes_excluded": 0,
+  "inventory_sha256": "a32994335df0f5c5a00286ebf0df40eb395cc00b92c1503a317d35b468857686",
+  "script_sha256": "7ea72d31915ff52a798b82c6887c9d84991d62e6e01ef220d786698ad4f598f4",
+  "scope": "Exact complete-line prefix at observed initial byte length, verified by rereading the source prefix. JSON content and model validity require downstream checks. Concurrent later appends are excluded."
+}
