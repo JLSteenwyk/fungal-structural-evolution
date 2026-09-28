@@ -1,0 +1,18 @@
+{
+  "status": "prepared_and_independently_checked_not_launched",
+  "receipt_path": "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/receipt.json",
+  "receipt_sha256": "63ef704f57cf24e2aac547282f0f8853142d085768475ffb01d2ac0610dff0e1",
+  "chains": 1620,
+  "models_checked": 405,
+  "unique_seeds": 1620,
+  "effective_inputs": 135,
+  "original_aliases": 324,
+  "checks": [
+    "all source and output hashes",
+    "all input tree and alignment hashes",
+    "source code unchanged except output-relative runtime-tree export",
+    "four seeds per input-prior group",
+    "all alias memberships preserved"
+  ],
+  "scope": "Prepared model sources and unique seeds only. All aliases retained; no posterior samples, convergence, root sensitivity or project completion claim."
+}

@@ -397,3 +397,22 @@ configuration. It does not resume native MCMC state or qualify ancestral
 samples. Memory/resource limits, runtime-tree mapping, independent-chain
 seeds and convergence assessment still belong in the longer-chain controller.
 No active scientific batch was interrupted by this isolated test.
+
+
+### Full independent-chain inputs prepared
+
+Prepared 1,620 chain identities: 135 distinct effective inputs × three
+explicit alpha priors × four unique seeds. All 324 original configuration
+aliases remain attached; aliases never count as separate chains. Each of the
+405 generated model programs differs from its audited initialization source
+only by an output-relative runtime-tree export immediately before MCMC state
+creation. An independent comparison checked every program, input tree and
+alignment hash, seed uniqueness and alias membership. No sampling was launched.
+
+Inputs are in `results/ancestral/baliphy-independent-chain-inputs-20260927-v1`;
+preparation and check evidence is in
+`metadata/baliphy_independent_chain_inputs_completed_20260927.json`.
+The complete short-run resource audit, costed iteration horizon, controller
+integration, output validation and convergence/extension policy remain required
+before launching this grid. Distinct seeds alone do not prove independent
+stationary samples or adequate exploration.
