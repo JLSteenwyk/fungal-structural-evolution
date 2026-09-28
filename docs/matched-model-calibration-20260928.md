@@ -934,3 +934,28 @@ with one CPU, 8 GiB memory, no swap and a 2 GiB output allowance; planned active
 time is 0.1–4 hours. It does not recompute covariance contractions and cannot
 qualify model adequacy, interval coverage or multiple testing. Those remain
 separate scientific requirements after output integrity is established.
+
+### Full-grid descriptive marginal residual diagnostics queued
+
+For fixed covariance V and design X, the GLS estimate has covariance
+Phi=(X'V^-1X)^-1. Expanding the residual projection gives
+Cov(y-X beta_hat)=V-X Phi X'. The new diagnostic evaluates only this diagonal
+and scales each marginal residual by its square root. It avoids dense n-by-n
+matrices. Residuals remain correlated, and substituting fitted variance
+components does not provide an independent standard-normal sample.
+
+`matched_marginal_residual_diagnostics.py` reports raw moments, quantiles,
+counts beyond absolute values 2 and 3, the largest fitted-mean variance fraction,
+and equal-count covariate-bin residual means and second moments. These are
+screens for tails, nonlinear patterns and unequal spread, not calibrated
+adequacy tests. Tied covariates retain deterministic row order. Simulation-based
+reference distributions, boundary effects and dependence remain to be addressed.
+
+Twelve dense projection fixtures spanning zero/nonzero components and three
+scales matched coefficients, residual moments, quantiles and tail counts. Two
+real input groups (ten tree fits, including a refined estimate) passed selected
+coefficient replay, restart and retained-failure checks. The complete
+144,040-fit run is queued behind cache replay with eight workers, 16 GiB memory,
+no swap, a 16 GiB output allowance and 100 GiB free-space reserve. The broad
+0.1–24 active-hour estimate is uncalibrated; record actual throughput. Full
+output readback and model-adequacy interpretation remain pending.

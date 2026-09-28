@@ -1,0 +1,38 @@
+{
+  "status": "passed_real_input_resume_and_failure_accounting_checks",
+  "cases": [
+    {
+      "fit_input_id": "ef77f8e09ea560eca113219bae5eb1040869f286c66998682d6166396fd1918a",
+      "records": 148,
+      "selections": {
+        "mafft_guide": "original_not_targeted",
+        "pmsf_mafft_profile": "original_not_targeted",
+        "pmsf_profile_mafft": "original_not_targeted",
+        "pmsf_profile_profile": "original_not_targeted",
+        "profile_guide": "original_not_targeted"
+      },
+      "result_sha256": "3cdaa8b7e0256a602ed27bfe7a0e1c18afc137ed46cf6b0c534b0174a371e87b"
+    },
+    {
+      "fit_input_id": "5dede58076d2b365f6b948065fa5391dc2b7d2f84eab8ac841c2a6c9ece5cf06",
+      "records": 178,
+      "selections": {
+        "mafft_guide": "original_not_targeted",
+        "pmsf_mafft_profile": "refined_candidate",
+        "pmsf_profile_mafft": "original_not_targeted",
+        "pmsf_profile_profile": "original_not_targeted",
+        "profile_guide": "original_not_targeted"
+      },
+      "result_sha256": "6bf66bffa67bf746bbd4bf5a784d6e3ef958159a0ff78d06ae84359927942e52"
+    }
+  ],
+  "changed_plan_rejected": true,
+  "changed_payload_rejected": true,
+  "incomplete_checkpoint_rejected": true,
+  "numerical_failure_retained": true,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_selected_matched_residual_runner.py": "bf603c12ace733df4e1b9c1ef0cf26b7f0811674195cfa825f7d13d2e13fecce",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_selected_matched_residuals.py": "84dc6f46f7ae331cfa50313ae48a923b8d97a9d5304f1ffb130b1c17e9bac416"
+  },
+  "scope": "Two real input groups including refined estimates; full residual output audit and simulation-based reference distributions remain required."
+}

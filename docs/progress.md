@@ -9748,3 +9748,10 @@ does not establish universal coverage or complete the biological project.
   checks passed. It will verify source bindings, completeness, coefficient units
   and scalar interval arithmetic, retaining all unresolved outcomes. Covariance
   contraction recomputation and scientific calibration are outside this audit.
+
+- September 28: implemented and queued descriptive marginal residual diagnostics
+  for all 144,040 selected fits. Dense projection and real selected-estimate
+  checks passed. Diagnostics cover tails and covariate-dependent residual means
+  and spread; correlated residuals and fitted variances prevent treating these
+  as independent normality tests. The CPU run waits for complete cache replay.
+  Output validation and simulation-based reference distributions remain required.
