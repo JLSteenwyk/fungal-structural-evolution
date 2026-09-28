@@ -228,3 +228,33 @@ Every saved sample passes the declared extant-residue, runtime-tree and
 candidate-identity checks. Evidence is recorded in
 `metadata/baliphy_sample_mapping_partial_readback_v6_20260927.json`. These
 remain 20-iteration integrity diagnostics, not converged posterior ensembles.
+
+
+## Explicit-prior initialization across the full effective-input grid
+
+The next initialization batch covers all 135 distinct ordered-sequence/tree
+inputs under each of the three alpha priors above (405 executions). Every
+original configuration ID is retained in the representative mapping; aliases
+are not counted as independent chains. The preparation script checks input
+and mapping hashes against the completed equivalence audit. No inputs are
+selected by diagnostic success or biological result.
+
+All three settings explicitly use LG +F, four Gamma categories, the audited
+RS07 rate and meanLength priors, fixed input trees, scale 1, and constant
+branch indel-rate multipliers. The seed is 20260929. This is `--test`
+initialization, not posterior sampling. The package, centered and broad prior
+labels describe sensitivity alternatives; no preferred posterior is selected.
+
+The plan reserves two CPU workers, 16 GiB aggregate memory, zero swap and
+5 GiB output. Each job has a 600-second and 6-GiB limit; the conservative
+runtime envelope is 34 hours including modest overhead, not a convergence
+estimate. No GPU or paid infrastructure is used. Plan and launch identity:
+`metadata/baliphy_prior_initialization_{plan,launch}_20260927.json`.
+
+The separate auditor checks generated prior expressions and sampled parameter
+support, finite initial scores and their arithmetic, normalized frequencies,
+fixed input paths, scale and total tree length. Its first frozen snapshot
+passes four completed initializations, including all three prior settings for
+one input, and retains 401 pending. It does not independently replay the
+likelihood or establish convergence. Evidence:
+`metadata/baliphy_prior_initialization_partial_readback_20260927.json`.
