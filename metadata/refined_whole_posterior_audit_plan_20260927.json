@@ -1,0 +1,38 @@
+{
+  "producer": {
+    "unit": "fungal-refined-whole-ancestors-20260927.service",
+    "pid": 631934,
+    "created": 1790556123.98,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/infer_refined_whole_ancestors.py"
+    ],
+    "status": "waiting_for_verified_complete_refinement_audit"
+  },
+  "producer_plan": "metadata/refined_whole_ancestor_plan_20260927.json",
+  "source": "results/ancestral/refined-whole-ancestors-20260927-v1",
+  "output": "results/ancestral/refined-whole-posterior-audit-20260927-v1",
+  "posterior_absolute_tolerance": 1e-08,
+  "site_log_likelihood_tolerance": 1e-07,
+  "pins": {
+    "metadata/refined_whole_ancestor_plan_20260927.json": "eaff40e775fb1fa020b783e9e06fd11b2a2b21d1218e06d1b6aeef8851c78e0b",
+    "metadata/refined_whole_ancestor_launch_20260927.json": "96f14ae451f31a42e52138e1ac40fcf05540ebb972e47c24cf6e5482f571db9b",
+    "scripts/audit_refined_whole_posteriors.py": "5af88c79d70ffd5e6431216199161592a2accba67b80f7c2a4761398bec592db",
+    "scripts/infer_refined_whole_ancestors.py": "c3cd70c8944831eb364b8d60bef9eca2d23a0f3f7783ae3939c2bb97f548537a",
+    "scripts/map_ancestral_fitted_nodes.py": "f07bda29affa70e54a18f0d6ccc4faba36ce8b85b4f6d2e85a3aaae35499e910",
+    "scripts/replay_ancestral_domain_likelihoods.py": "ab3b4e09f85b0f5cbb2651b5ba47ab6166cb9c699750ed0458dc3d36904f8546",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "paid_cost": 0
+  },
+  "scope": "Independent full-column direct-expm inside/outside readback for all156 refined fits,468 candidate vertices and all20 states. X/gaps unknown. Successful producer termination and hashes required. Numerical agreement is not convergence, indel inference or qualified final ancestors."
+}

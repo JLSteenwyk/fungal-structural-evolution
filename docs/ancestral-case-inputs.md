@@ -1035,3 +1035,16 @@ Reproducibility: `scripts/infer_refined_whole_ancestors.py`,
 `metadata/refined_whole_ancestor_plan_20260927.json` and the matching launch
 record. Resource allowance: one CPU, 8 GiB RAM, no swap, 4 GiB output and
 0.5–12 hours after the refinement audit; no paid infrastructure or GPU work.
+
+The matching independent posterior auditor is also queued. It checks every
+probability for all 156 fits and 468 candidate vertices using fixed-root
+inside/outside messages and direct matrix exponentials, rather than the
+producer's rerooted, pattern-compressed spectral calculation. The analytic
+two-internal-node enumeration check passed before launch. Complete array
+shapes, finite values, normalization and saved site likelihoods are checked.
+Tolerances remain 1e-8 for probabilities and 1e-7 for site log likelihoods.
+The auditor waits for verified successful producer termination and checks
+its artifact hashes; the full-data comparison has not yet run. Resource
+allowance is one CPU, 8 GiB RAM, no swap, 1 GiB output and 0.5–12 hours after
+the producer. See `scripts/audit_refined_whole_posteriors.py` and its
+`metadata/refined_whole_posterior_audit_*_20260927.json` records.
