@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-mg94-parameter-ranges-20260928.service",
+  "pid": 2209957,
+  "created": 1790625398.25,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_mg94_multistart_parameters.py",
+    "--plan",
+    "metadata/mg94_parameter_range_plan_20260928.json"
+  ],
+  "plan_sha256": "0666018c208e1392e6ccef2d90212cb4989945c67b9b2b12dcd1ed076f0c51cf",
+  "observed_state": {
+    "MainPID": "2209957",
+    "Result": "success",
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "8589934592",
+    "MemorySwapMax": "0",
+    "ActiveState": "active"
+  }
+}

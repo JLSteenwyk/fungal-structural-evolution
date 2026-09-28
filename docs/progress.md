@@ -9902,3 +9902,10 @@ does not establish universal coverage or complete the biological project.
   6.2 extraction hours, with conservative load/storage allowances retained.
   This uses existing models only; GPU inference remains paused. Extraction,
   archive validation and downstream confidence/clustering work remain pending.
+
+- September28: queued full codon multistart parameter-range summary after the
+  complete source audit. It retains every free parameter across all eight
+  starts and the existing1e-5 near-best likelihood set, without claiming
+  confidence intervals or selection. Numerical fixtures passed and all
+  source/fit hashes and serialized range arithmetic will be checked. This
+  adds no optimization runs; one CPU/8GiB limits apply.

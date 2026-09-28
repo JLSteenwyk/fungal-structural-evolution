@@ -76,3 +76,29 @@ Summary counts and maxima were independently recomputed from the frozen case
 table. Evidence: `metadata/local_mg94_multistart_partial_review_20260927.json`;
 full case dispositions remain outside Git in
 `results/cds/local-mg94-multistart-partial-review-20260927-v1`.
+
+## Full parameter-range summary queued September28
+
+After the complete1,632-case/13,056-fit audit reaches terminal success,
+`summarize_mg94_multistart_parameters.py` will retain the minimum and maximum
+of every saved free parameter across all eight starts and across starts
+within1e-5 log-likelihood of the best observed start. This uses the audit's
+existing near-best tolerance; it does not choose a new biological eligibility
+threshold. Branch and nuisance parameters remain explicit alongside omega.
+Near-best parameter spread is descriptive, not a confidence interval or proof
+of identifiability, saturation, a global optimum or selection.
+
+Every case/fit checksum and source-audit binding is checked. Counts of near-best
+starts and best likelihoods must agree with the complete audit. All emitted
+range arithmetic and enclosing bounds are read back. The reproducible fixture
+`check_mg94_parameter_ranges.py` retains parameter variation at near-equal
+likelihood, preserves all-start extrema, excludes poorer fits only from the
+near-best range, handles one best start and rejects nonfinite values.
+
+Plan `metadata/mg94_parameter_range_plan_20260928.json` and launch record
+`metadata/mg94_parameter_range_launch_20260928.json` bind the inputs and live
+service. Resources are one CPU,8GiB RAM, no swap,1GiB output allowance and
+0.1–4 active hours excluding wait. No new optimization or GPU prediction is
+launched. Output will be
+`results/cds/local-mg94-multistart-parameter-ranges-20260928-v1`.
+The source audit and this summary remain pending at launch.

@@ -1,0 +1,29 @@
+{
+  "producer": "results/cds/local-mg94-unconstrained-multistarts-20260927-v1",
+  "audit": "results/cds/local-mg94-unconstrained-multistart-audit-20260927-v1",
+  "audit_launch": "metadata/local_mg94_unconstrained_multistart_audit_launch_20260927.json",
+  "output": "results/cds/local-mg94-multistart-parameter-ranges-20260928-v1",
+  "likelihood_tolerance": 1e-05,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_planning_gib": 1,
+    "runtime_planning_hours": [
+      0.1,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Read all13,056 hash-validated saved fits after complete audit; no new optimization."
+  },
+  "pins": {
+    "metadata/local_mg94_unconstrained_multistart_audit_launch_20260927.json": "29c7a051c7bdd7c9c33274ccb067cdc7e77953f6be759dad9e2209234c2a3b58",
+    "metadata/local_mg94_unconstrained_multistart_plan_20260927.json": "cd74ce8bcb115be21ce378b9b2cb58eb3634972e9d2b98ddc70d24381b4c3621",
+    "scripts/summarize_mg94_multistart_parameters.py": "40b361941c7eea20951625012ae1d5791b0301799d1ca72c5c6308f36abf8fa3",
+    "scripts/check_mg94_parameter_ranges.py": "b8fd304c7a6c1ea9b61e349eda286f4d3fc38366bae671daf75cedd5e1bc21d5",
+    "scripts/audit_local_branch_parameter_profiles.py": "b009676af1960964c83dd149feaecb7125616acf5d5c4562a6f091b84792198e",
+    "scripts/readback_whole_proteome_catalog.py": "1e4fc2bd8764204b01d8a1c6251b27437a79a5d93dc842a92d8cb9e73fa3549c",
+    "metadata/mg94_parameter_range_checks_20260928.json": "7765ec73f01ed43048538868e7a7b6c5d2e4804593e4c1d1db0ae4cbe4787123"
+  }
+}
