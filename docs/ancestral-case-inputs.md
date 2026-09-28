@@ -1368,3 +1368,14 @@ Reproducibility: `scripts/map_ancestral_conflicts_to_case_models.py`, complete
 model/version/sequence identities and coordinates in
 `results/ancestral/ancestral-conflict-case-models-20260927-v1`, and completion
 metadata `metadata/ancestral_conflict_case_models_completed_20260927.json`.
+
+
+The [all-family context sensitivity figure](figures/ancestral_context_sensitivity_20260927.pdf)
+shows the fraction of matched comparisons changing their most-probable residue
+for each family, with the full changed/compared denominator printed beside each
+bar. Its second panel separates opposing high-confidence calls by observed
+local coverage. All 13 families are retained, including those with zero
+high-confidence conflicts. No confidence intervals or statistical tests are
+implied by these dependent descriptive counts. The source table, PNG/PDF/SVG
+exports and plotting script are recorded in
+`metadata/ancestral_context_sensitivity_figure_completed_20260927.json`.
