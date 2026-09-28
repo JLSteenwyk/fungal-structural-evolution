@@ -1013,3 +1013,25 @@ All156 indel encodings subsequently completed:12,957 character records and
 job receipts and artifacts checked after successful termination. Closure:
 `metadata/ancestral_indel_coding_completed_20260927.json`. These are encoded
 gap characters, not inferred historical indel events or ancestral sequences.
+
+## Refined whole-protein probability propagation (September 27)
+
+The 156 whole-protein refinements retain all 26 alignments, three substitution
+models and two gamma-shape bounds. A queued propagation stage waits for the
+independent refinement auditor to finish successfully, verifies its exact
+process identity while waiting, and checks the final fit/parameter artifacts.
+It then computes all 20 amino-acid probabilities at the three identifiable
+candidate vertices for every fit (468 node/model combinations), preserving
+all input proteins. X and gaps remain unknown observations; the degree-two
+root position remains unidentifiable under these unrooted fitted models.
+
+The stage uses the previously independently checked pruning implementation,
+replays each fitted likelihood while computing probabilities, and retains full
+probability arrays. Its outputs will still require an independent posterior
+readback before downstream interpretation. No refined probability result is
+claimed while the producer is waiting. The original estimates remain separate.
+
+Reproducibility: `scripts/infer_refined_whole_ancestors.py`,
+`metadata/refined_whole_ancestor_plan_20260927.json` and the matching launch
+record. Resource allowance: one CPU, 8 GiB RAM, no swap, 4 GiB output and
+0.5–12 hours after the refinement audit; no paid infrastructure or GPU work.
