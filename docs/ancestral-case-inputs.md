@@ -1141,3 +1141,12 @@ stability for these specific optimization contrasts; alternate-start comparisons
 model adequacy and insertion/deletion uncertainty remain separate. Evidence is
 in `metadata/refined_whole_posterior_audit_completed_20260927.json` and
 `metadata/whole_optimization_probability_comparison_completed_20260927.json`.
+
+The [refinement sensitivity figure](figures/whole_refinement_sensitivity_20260927.pdf)
+summarizes all 13 families. The 14 most-probable-state differences are
+concentrated in OG0000336 (2), OG0001082 (8) and OG0002650 (4), counting
+dependent model/bound/node comparisons rather than independent events. PNG,
+PDF and editable SVG copies are provided. The plot script verifies its
+complete 702-row input table and aggregate totals. Its final rendering was
+visually checked; artifact hashes and scope are recorded in
+`metadata/whole_refinement_sensitivity_figure_completed_20260927.json`.
