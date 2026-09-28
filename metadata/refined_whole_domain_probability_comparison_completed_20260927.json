@@ -1,0 +1,96 @@
+{
+  "status": "complete_refined_whole_domain_conditional_comparison",
+  "alignment_comparisons": 104,
+  "fit_pairs": 624,
+  "node_comparisons": 1872,
+  "matched_node_sites": 269154,
+  "map_disagreements": 10320,
+  "opposing_at_least_090": 104,
+  "maximum_total_variation": 0.9990694060268335,
+  "pins": {
+    "results/ancestral/whole-domain-alignment-correspondence-20260927-v1/receipt.json": "0b50ab3f0084e838c7e51818f0ad799fa1f3e2b0845d7f95f58fe7f1a2760a6f",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "results/ancestral/refined-whole-ancestors-20260927-v2/receipt.json": "6deea920586a38429099bb60094704715c8960e1688ee35fd341df22dc6029a8",
+    "results/ancestral/refined-domain-ancestors-20260927-v1/receipt.json": "66ec5785a7991d06508fd21e656670cd225b281df9de8b28182e499b775ffc2b",
+    "metadata/refined_whole_posterior_audit_completed_20260927.json": "1d13db731512a0509a0ed4b2103e3ad37bb13a59054332cdb031fabca9ab2d41",
+    "results/ancestral/refined-whole-posterior-audit-20260927-v2/receipt.json": "5b516a14b8bc5a4a4f2d13e535fbaba596d5d70f5a4776e6b083246c0bf1cc92",
+    "metadata/refined_domain_posterior_audit_completed_20260927.json": "b16d5a7576091504cc8a50ff9b3bc206aa978ae92a0e01dd4ef64a03e02b417c",
+    "results/ancestral/refined-domain-posterior-audit-20260927-v1/receipt.json": "11b03fcc383b0b97d9efd12e5ff663d99fff57b6c9a9ea449889a6ddb91247ed"
+  },
+  "script_sha256": "b60e04b6ec3c5787489da1017252c9ae67264fa3a59b268cf749de205d24d20b",
+  "artifacts": {
+    "matched_site_comparisons.tsv.gz": "22a16b535863658100746a5fe4557f08d898a18cf7be344d07899f19fede290f",
+    "node_summary.tsv": "4685dd33721127d2ce67ccd6399e2f39bc3f3ed2367d7ae1ffe528fc969067ed"
+  },
+  "scope": "Exact shared coordinate signatures only; unmatched counts retained per node and full coordinate union retained in source. Source-node identity and restriction of descendants checked. Differences combine protein membership, flanking context, alignment and parameter estimation; they do not isolate a causal context effect. Dependent comparisons are not evolutionary events or posterior mixture weights. Conditional on residue existence and assumed local tree; indel uncertainty unresolved.",
+  "completed_receipt_path": "results/ancestral/refined-whole-domain-probability-comparison-20260927-v1/receipt.json",
+  "completed_receipt_sha256": "1b288ccf99e796b9c0f5ae5d2885ebee058e83c12a19c88bafdc2a6f9eb6c514",
+  "family_descriptive_counts": {
+    "OG0000054": [
+      13176,
+      586,
+      0
+    ],
+    "OG0000095": [
+      12654,
+      770,
+      0
+    ],
+    "OG0000107": [
+      15210,
+      630,
+      0
+    ],
+    "OG0000152": [
+      18936,
+      212,
+      0
+    ],
+    "OG0000230": [
+      17676,
+      456,
+      0
+    ],
+    "OG0000294": [
+      33120,
+      16,
+      0
+    ],
+    "OG0000336": [
+      20592,
+      564,
+      0
+    ],
+    "OG0000972": [
+      25902,
+      1660,
+      0
+    ],
+    "OG0001082": [
+      10638,
+      1314,
+      0
+    ],
+    "OG0001200": [
+      15696,
+      1042,
+      0
+    ],
+    "OG0001203": [
+      12006,
+      1130,
+      36
+    ],
+    "OG0002650": [
+      27468,
+      1332,
+      68
+    ],
+    "OG0002812": [
+      46080,
+      608,
+      0
+    ]
+  },
+  "readback_metadata": "metadata/refined_whole_domain_probability_readback_completed_20260927.json"
+}

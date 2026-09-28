@@ -1204,3 +1204,37 @@ not isolate the cause of the probability shift. Higher apparent confidence
 in the poorer fit is not stronger historical evidence. All alternative
 results remain retained; no likelihood-based ensemble weights or biological
 substitution counts are inferred from these diagnostics.
+
+
+### Refined whole-protein versus domain conditional probabilities
+
+All 104 alignment-coordinate comparisons now connect to the audited refined
+probability arrays: 624 fit pairs across three substitution models and two
+parameter bounds, with 1,872 non-root candidate comparisons. Source-node
+identity is checked and whole-tree descendant sets must restrict exactly to
+the domain-tree sets. Only exact projected residue-coordinate signatures are
+compared; all unmatched counts remain in each node summary and the complete
+coordinate union remains in the source artifact. This includes both matching
+and differing alignment methods and both Pfam boundary definitions.
+
+Of 269,154 matched node/site comparisons, 10,320 change their most probable
+amino acid. In 104 comparisons, different residues each receive at least 0.9
+support in the corresponding fit. The same-alignment-method subset contains
+137,988 comparisons, 5,528 state disagreements and 52 opposing high-support
+calls; cross-method comparisons contain 131,166, 4,792 and 52, respectively.
+A separate full serialized-table readback reproduces every site probability,
+state call, total variation and all 1,872 node summaries from saved arrays.
+
+These are dependent comparisons, not unique substitutions or independent
+replicates. Differences jointly reflect membership, flanking sequence,
+alignment and fitted model parameters; they do not isolate a causal effect of
+protein context. Even with the same alignment method, separate alignments and
+different protein sets remain. The results are conditional on residue presence
+and assumed local trees. They expose uncertainty beyond optimizer sensitivity
+and must accompany any future ancestral structural interpretation.
+
+Reproducibility: `scripts/compare_refined_whole_domain_probabilities.py` and
+`scripts/readback_refined_whole_domain_probabilities.py`; completed results
+and provenance are recorded in
+`metadata/refined_whole_domain_probability_comparison_completed_20260927.json`
+and `metadata/refined_whole_domain_probability_readback_completed_20260927.json`.

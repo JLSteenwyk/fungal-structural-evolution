@@ -849,3 +849,17 @@ Inputs, commands, numeric checks and completion records are linked in
 [BAli-Phy](baliphy-method-assessment-20260927.md) assessments. The
 [refinement sensitivity figure](figures/whole_refinement_sensitivity_20260927.pdf)
 is generated from the complete audited comparison table.
+
+
+Refined whole-protein and domain ancestral marginals were compared at exact
+shared projected residue-coordinate signatures across all alignment-method
+pairs and both domain boundary definitions. We matched original candidate
+nodes and required whole-tree descendant sets, restricted to domain-bearing
+proteins, to equal domain-tree candidate sets. The three substitution models
+and two parameter bounds yielded 624 fit pairs and 1,872 non-root comparisons.
+Unmatched alignment columns were retained as explicit counts and in the full
+source coordinate union. Most-probable residue agreement, opposing calls
+supported at least 0.9 in both fits, and total variation were computed on
+matched columns and independently read back against saved arrays. These
+comparisons confound sequence context, membership and parameter estimation;
+they are descriptive sensitivity analyses, not tests isolating context effects.
