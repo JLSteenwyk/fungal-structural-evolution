@@ -1,0 +1,11 @@
+{
+  "status": "passed_exact_latent_basis_covariance_and_seed_checks",
+  "covariance_cases": 16,
+  "maximum_covariance_error": 3.552713678800501e-15,
+  "invalid_cases_rejected": 7,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_working_model_simulator.py": "54026afd72f9cb207f74f17c6756285588195864744f4877005c0ac859307551",
+    "scripts/simulate_matched_working_model.py": "c82cc7cfca63e2e1c7306faae66d1de4064750d422441fbd373800133a89375a"
+  },
+  "scope": "Implementation checks only. Basis draws are deterministic quadrature fixtures, not Gaussian samples. Full fitted-data simulations, refitting, interval coverage and model adequacy are not yet evaluated."
+}
