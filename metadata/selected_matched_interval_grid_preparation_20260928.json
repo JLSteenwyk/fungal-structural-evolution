@@ -1,0 +1,72 @@
+{
+  "status": "prepared_complete_selected_interval_task_grid_pending_cache_replay_and_runner",
+  "inputs": 28808,
+  "unique_fits": 144040,
+  "settings": 414720,
+  "factors": {
+    "mafft_guide": {
+      "path": "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/mafft_guide.npz",
+      "sha256": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd"
+    },
+    "pmsf_mafft_profile": {
+      "path": "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_mafft_profile.npz",
+      "sha256": "0cef79bda8310a769e21985eeb9799e49a26923e8ec461f2f52374dcef3def03"
+    },
+    "pmsf_profile_mafft": {
+      "path": "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_profile_mafft.npz",
+      "sha256": "317680ad882986776f6be49adb445a77d2f1a7bd599e9c0ed0d72aa3522fc17b"
+    },
+    "pmsf_profile_profile": {
+      "path": "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/pmsf_profile_profile.npz",
+      "sha256": "03bff3e7120bef6ba53b397071220fc0dcd4d19b0795269c234cf4e991750007"
+    },
+    "profile_guide": {
+      "path": "results/model_validation/matched-simulation-input-cache-20260928-v1/factors/profile_guide.npz",
+      "sha256": "2f89ee747c312612f0a5882012b81b4b6194cc54fc9d748e3d15f414b2566868"
+    }
+  },
+  "selected_review_fits": 0,
+  "selections": {
+    "original_not_targeted": 143382,
+    "refined_candidate": 658
+  },
+  "source_bindings": {
+    "results/structural_comparisons/refined-working-model-grid-export-20260928-v2/receipt.json": "672e7e8f75a86589c1ae53a8b63e25a99b596e7c077f8be7914bab9cfcc8912c",
+    "results/structural_comparisons/refined-working-model-grid-export-20260928-v2/unique_fits.parquet": "ade299dc0f542e04335646127fcf73268c20015d0e8f4f84f3e99c262b838271",
+    "results/structural_comparisons/refined-working-model-grid-export-20260928-v2/full_settings.parquet": "388a1282a18cb1cc82940710f98b8a84402359f9e048b7d8f236a0c0e431e0e1",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/receipt.json": "390c19fecaf67107d3d191915f116f697bc2e6f291fe40dd31986c580c6a59c0",
+    "results/model_validation/matched-simulation-input-cache-20260928-v1/manifest.jsonl": "1dbffd896d47920caa57ddc218c843ce855ea138ea8ce0e3e08047f8ce1b3866",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/receipt.json": "0eed35da1e8786476fdf8bb3852326e767d713aae8c26f3b39e6d6bbf0fb1a48",
+    "results/structural_comparisons/full-matched-working-models-20260927-v1/fit_manifest.jsonl": "f1e4ab59220c27f6a2c6bc70c6bbf3744ae398068d7b431c57027ff5c9009934",
+    "results/structural_comparisons/matched-reml-analytic-refinement-20260928-v1/manifest.jsonl": "23bfb3ea43329fee0cc8a52c2361970f7f79d3f7fa6ed3139ff960248d579138"
+  },
+  "artifacts": {
+    "tasks.jsonl": "a9f0c7360c1eec1ef071771c562265fb1d0487bb06d8eb6f0be2e4ab0dcd8202"
+  },
+  "script_sha256": "6bf9f9f74ad7804359fce76fff81c8fa1f0911c1a2d181561408bdca7d2fe100",
+  "required_prerequisite": {
+    "launch": "metadata/matched_simulation_cache_replay_launch_20260928.json",
+    "receipt": "results/model_validation/matched-simulation-cache-replay-20260928-v1/receipt.json",
+    "status": "all_144040_original_fits_replayed_from_simulation_cache",
+    "terminal_state": "inactive",
+    "result": "success",
+    "exit_status": 0
+  },
+  "proposed_resources": {
+    "cpus": 16,
+    "workers": 16,
+    "maximum_inflight_tasks": 32,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "free_disk_reserve_gib": 100,
+    "planning_active_hours": [
+      1,
+      120
+    ],
+    "paid_cost": 0,
+    "gpu": false,
+    "basis": "15 existing real-design timings: approximately .02\u201315.6 seconds per fit; heterogeneous sizes. 144040 fits all at 15.6 seconds would take 39 ideal hours on16 workers. Planning range is not a guaranteed bound; record measured throughput during full run."
+  },
+  "scope": "All selected estimates and full-setting mappings bound. Source payload and cache content hashes must be rechecked by the runner, with all numerical failures retained as explicit review outcomes. No intervals computed here. Marginal candidate intervals require coverage, model adequacy and multiplicity work."
+}

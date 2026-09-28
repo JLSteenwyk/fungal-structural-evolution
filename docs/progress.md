@@ -9698,3 +9698,10 @@ Evidence: `metadata/matched_kr_continuation_audit_20260928.json` and
 `metadata/matched_kr_resolved_figure_visual_check_20260928.json`.
 KR remains conservative in several boundary configurations; numerical resolution
 does not establish universal coverage or complete the biological project.
+
+- September 28: prepared the complete candidate-interval task grid covering
+  28,808 inputs, 144,040 selected fits and all 414,720 settings. All 658 refined
+  fits have explicit source bindings. Resource estimates and prerequisites are
+  recorded in `metadata/selected_matched_interval_grid_preparation_20260928.json`.
+  Interval execution remains pending the full cache replay and runner validation;
+  these candidate intervals will still require scientific calibration.

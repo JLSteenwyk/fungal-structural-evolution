@@ -873,3 +873,23 @@ intervals, legend and caveats. Evidence is in
 `metadata/matched_kr_resolved_figure_visual_check_20260928.json`.
 The figure documents the observed calibration limitations; it does not qualify
 the method for universal or fungal-data95% coverage.
+
+### Full selected interval task grid prepared
+
+`prepare_selected_matched_interval_grid.py` freezes all 28,808 cached inputs,
+144,040 selected fits and five tree factors for candidate interval evaluation.
+It verifies every selected column against the full 414,720-row settings
+expansion, checks the original/refinement source manifests, and binds each
+selected payload explicitly. The prepared grid includes all 658 refined fits.
+`readback_selected_matched_interval_grid.py` checks every serialized task against
+the selected export. Large task files remain outside Git; metadata records their
+checksums and source locations.
+
+The proposed full run uses 16 CPU workers, at most 32 in-flight inputs, a 32 GiB
+memory cap, no swap and no GPU, with a 64 GiB output allowance and 100 GiB free
+storage reserve. Existing real-design timings span about .02–15.6 seconds per
+fit; at the largest observed timing, ideal 16-worker time would be 39 hours.
+The 1–120 active-hour planning range is deliberately broad and is not a bound.
+No paid resources are needed. Launch still requires a runner with checked resume
+semantics and the terminal successful full cache replay. Preparation does not
+compute intervals or establish coverage, model adequacy or multiplicity control.
