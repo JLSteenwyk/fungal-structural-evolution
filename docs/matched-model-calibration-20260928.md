@@ -414,3 +414,27 @@ These are numerical checks of the formulas, not coverage evidence. Boundary
 sampling behavior, conditioning on real inputs, an efficient full-grid path,
 covariance adjustment, reference-distribution calculations and simulation
 validation remain pending. Active production scripts remain unchanged.
+
+## Real-input information timing running
+
+The exact reference is now running on all15 existing size/tree timing designs
+(148,4,909,10,960 records, each under five trees). These are the previously
+selected performance cases, not a new biological subset or a coverage sample.
+Every case replays the original fitted likelihood and coefficients from the
+serialized simulation input, then evaluates information at the original
+absolute variance estimates. Its conditional coefficient covariance must also
+match the original fit. Full matrices, normalized information eigenvalues,
+numerical rank, zero-component indicators, timings and source hashes are saved.
+Serialized arrays are read back exactly before each case is recorded.
+
+The service `fungal-matched-information-timing-20260928.service` has one CPU,
+8GiB memory,no swap and a two-hour runtime limit. Planning allows1–120minutes
+and0.1GiB outputs; one n-by-64 work buffer at the largest input is5.35MiB,
+with additional factor and solve workspaces. Launch PID, creation time and
+command were verified, and CPU accounting confirmed active work. Plan and
+launch metadata use `matched_information_timing_20260928`; outputs are in
+`results/model_validation/matched-information-timing-20260928-v1`.
+
+Completion and artifact auditing remain pending. These original estimates do
+not incorporate the separate658-fit refinement overlay. A full-rank result
+will not by itself establish regularity or valid uncertainty at a boundary.
