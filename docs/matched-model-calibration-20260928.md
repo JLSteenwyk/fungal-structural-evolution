@@ -538,3 +538,31 @@ positive definite. These are numerical eligibility checks only. Every returned
 adjustment remains a candidate pending statistical validation, and exact-zero
 variance flags are retained. Degrees of freedom, reference-distribution
 validation, simulation coverage, multiplicity and model adequacy are unresolved.
+
+## Scalar moment calculation checked
+
+`scripts/matched_kr_scalar.py` adds rank-one contrasts, including the matched
+intercept, to the candidate covariance adjustment. In the rank-one moment
+formulas A1=A2, so denominator degrees of freedom simplify to2/A2 and the
+F scaling factor is1. The implementation uses this algebraic simplification
+and the adjusted contrast variance to compute candidate t limits. Nonpositive
+or nonfinite moments and inherited covariance-review dispositions remain
+explicit. Joint, higher-rank tests are not implemented by this scalar routine.
+
+`scripts/check_matched_kr_scalar.py` compares two contrasts on each of the16
+existing synthetic covariance designs with the unmodified author `.KR_adjust`
+function at the previously pinned commit. All32 comparisons of denominator
+degrees of freedom, F scaling, adjusted variance and candidate interval limits
+passed; maximum absolute disagreement was5.26e-13. Four invalid contrasts or
+levels were rejected. Source provenance is in
+`metadata/pbkrtest_scalar_reference_source_20260928.json`, with check results
+in `metadata/matched_kr_scalar_checks_20260928.json`.
+
+The retained v1 fixture run checked the same numerical formulas but incorrectly
+filled its boundary-flag metadata with false values. The v2 fixture corrects
+the flags from the original generating variance grid and verifies they survive
+into candidate results; no model parameters or numeric intervals changed.
+The v2 output is `results/model_validation/matched-kr-scalar-checks-20260928-v2`.
+Formula agreement does not demonstrate nominal coverage. Actual refitted
+simulation, boundary behavior, full-grid qualification and multiplicity remain
+required before biological inference.

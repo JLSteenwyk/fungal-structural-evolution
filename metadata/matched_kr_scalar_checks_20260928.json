@@ -1,0 +1,19 @@
+{
+  "status": "passed_32_scalar_author_code_comparisons",
+  "cases": 32,
+  "maximum_absolute_disagreement": 5.258016244624741e-13,
+  "invalid_inputs_rejected": 4,
+  "source_receipt_sha256": "a11263397b9b86d76f4a031ef9c5c0740f2263e356491b250af001b9fdf140c2",
+  "covariance_fixture_receipt_sha256": "3005f53b132f5ec3e80ada317c6d8b97e1353e50d55e6ed01d3ac4db22ab5a7c",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_kr_scalar.py": "0013fa0dd1b38093ce0766f05f27ce9322fe7547ca09f2e887987c04e67629a2",
+    "scripts/matched_kr_scalar.py": "2d875d8a72acb850f93484ae0a88018fb03b6320fc1193f616ff4bf5048effa1",
+    "scripts/matched_kr_covariance.py": "994b68c901ddb1e23405c3bf23ef369db38a4af3a0fb89a6f89f266162ca000d"
+  },
+  "artifacts": {
+    "candidates.json": "15c771c9f747ea3a595ea6b32fdc874985a748b681e5f85dc653f82920903e49",
+    "reference.R": "bfebad73598c9cf06b3dec9cb57653c3b5177e0171c2a64cecf441ec3daea93d",
+    "reference.csv": "002837cf3f0e14022a2c1cbd9e7bcaa2a9b57c320332cddf621b7d9d7e1c3a55"
+  },
+  "scope": "Scalar contrasts only; same synthetic variances/designs as covariance checks, including boundary models. Dense Python contractions compared with author R moments and t limits. No refitting, coverage, joint-test or multiplicity claim."
+}
