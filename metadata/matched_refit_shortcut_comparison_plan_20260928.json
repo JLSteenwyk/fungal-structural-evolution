@@ -1,0 +1,30 @@
+{
+  "producer_plan": "metadata/matched_simulation_refit_timing_plan_20260928.json",
+  "producer_launch": "metadata/matched_simulation_refit_timing_launch_20260928.json",
+  "output": "results/model_validation/matched-refit-shortcut-comparison-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "storage_gib": 0.1,
+    "planning_active_minutes": [
+      1,
+      120
+    ],
+    "basis": "Same15 pinned design/tree responses as original full-refit timing; no new scientific sampling. Waiting excluded.",
+    "gpu": false,
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/compare_matched_refit_shortcut.py": "a0d90ac19ff5f9296bb11f6db0cad5f475c2b1abe599b7f6bb66bf022896e6a6",
+    "scripts/refine_matched_reml_analytic_fast.py": "033836c9744dd9cdca2c57b9cabf30033cbcaee310d0ba898127896d6240993e",
+    "scripts/matched_reml_gradient_fast.py": "1847370552b792cce7bc12ad5eb8d5217e2009d99d8a1f62a8805e428cb06bce",
+    "scripts/simulate_matched_working_model.py": "c82cc7cfca63e2e1c7306faae66d1de4064750d422441fbd373800133a89375a",
+    "scripts/cached_matched_likelihood.py": "36eb554a29cba129485e879dc5e3ce4ea95b265b804e38288e8567f2d6154c4d",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "metadata/matched_reml_zero_shortcut_checks_20260928.json": "b28a142e4cdb1f10fc3268785345a26ce3044240434dc02d81af8abc9639973d",
+    "metadata/matched_simulation_refit_timing_plan_20260928.json": "2c93c91fc6fb900c0900e7d2d46eea96841006647bc6d9d8c75fb8d896225822",
+    "metadata/matched_simulation_refit_timing_launch_20260928.json": "9078aa6d0c7ab3922597d842a3c3b7b1c6bb07c9ff4b9d02e7eb1197b18e7d70"
+  }
+}

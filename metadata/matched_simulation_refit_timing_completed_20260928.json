@@ -1,0 +1,31 @@
+{
+  "status": "all_15_timing_dispositions_read_back",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_receipt_sha256": "700a4ac17dbfe6b4af1ce99c2f003bc1af21bc78c38cc324d55aa05526bd7357",
+  "plan_sha256": "2c93c91fc6fb900c0900e7d2d46eea96841006647bc6d9d8c75fb8d896225822",
+  "by_record_count": {
+    "10960": {
+      "fits": 5,
+      "minimum_seconds": 25.08051543001784,
+      "maximum_seconds": 28.355151485011447,
+      "sum_seconds": 130.88770354405278
+    },
+    "148": {
+      "fits": 5,
+      "minimum_seconds": 1.4112133960006759,
+      "maximum_seconds": 1.8343608239665627,
+      "sum_seconds": 8.283767946937587
+    },
+    "4909": {
+      "fits": 5,
+      "minimum_seconds": 12.041404460032936,
+      "maximum_seconds": 16.119947120023426,
+      "sum_seconds": 71.76699742907658
+    }
+  },
+  "scope": "Runtime fixture/output accounting only, not representative full-grid speed or calibrated uncertainty. Each fit retains24 candidates and direct numerical checks."
+}

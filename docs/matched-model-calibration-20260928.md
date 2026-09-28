@@ -297,3 +297,26 @@ This identifies an exact computational saving, not a6-fold full-refit speedup.
 Full optimizer equivalence, boundary diagnostics and end-to-end timings still
 need checking before adoption. The result is recorded in
 `metadata/matched_reml_zero_shortcut_checks_20260928.json`.
+
+## Original timing complete; paired optimizer comparison running
+
+The original full-refit timing service reached inactive/success/exit0. All15
+source-bound dispositions,24-candidate records, statuses and timing fields were
+read back; every simulated fit passed its numerical checks. Timings by input
+size were1.41–1.83seconds (148records),12.04–16.12seconds (4,909records), and
+25.08–28.36seconds (10,960records). Completion evidence is in
+`metadata/matched_simulation_refit_timing_completed_20260928.json`.
+
+The separate `scripts/refine_matched_reml_analytic_fast.py` preserves the same
+optimizer,24 candidates,bounds,tolerances and direct candidate checks, changing
+only the imported gradient implementation. The queued paired comparison now
+recreates each of the15 exact response hashes, reruns this optimizer and records
+likelihood, coefficient, conditional covariance, status and diagnostic-flag
+agreement alongside runtime. Discrepancies remain explicit; they do not silently
+qualify the shortcut. No live production optimizer was replaced.
+
+The comparison service is `fungal-matched-refit-shortcut-comparison-20260928`,
+with one CPU,8GiB memory,no swap,0.1GiB output and1–120active minutes budgeted.
+Plan and launch metadata use `matched_refit_shortcut_comparison_`. Results are
+pending and these size-selected cases cannot establish global equivalence or
+a representative whole-project speedup.
