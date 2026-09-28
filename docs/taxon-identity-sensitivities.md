@@ -227,3 +227,30 @@ in `metadata/serendipita_oliveonia_taxonomic_review_20260927.json`. Browser
 extractions were retained locally; direct source downloads failed and are not
 represented as valid full-source archives. Original manifests and running
 analyses remain unchanged. The 21 uncertain labels are still unresolved.
+
+
+### Serendipita comparisons on the same sites
+
+A second analysis retains only positions containing canonical amino acids in
+all five selected Serendipita entries. Within each alignment this gives the
+same denominator to every pair: 21,666 profile columns or 27,664 MAFFT columns,
+from 69 of 125 markers. All 56 markers without a shared position remain
+explicit in the marker table. The two methods still use different positions.
+
+| Strains | Profile shared-site differences | MAFFT shared-site differences |
+| --- | --- | --- |
+| 400 / 405 | 2063 (9.52%) | 2250 (8.13%) |
+| 400 / 411 | 1798 (8.30%) | 2533 (9.16%) |
+| 405 / 411 | 1408 (6.50%) | 1628 (5.88%) |
+
+Across these three pairs, differences occur in 26–35 shared profile markers
+and 38–45 shared MAFFT markers. They are therefore not confined to one marker,
+but neither their distribution nor aggregate magnitude resolves species limits.
+Shared-site restriction also changes the sampled residues and cannot validate
+orthology, alignment accuracy or absence of contamination.
+
+All 5,000 marker/pair/policy records and 40 aggregate comparisons are retained.
+Exact disjoint partition coverage, independent full-string counts and agreement
+with the original pairwise table passed. Reproduction:
+`scripts/assess_serendipita_shared_marker_sites.py`. Evidence:
+`metadata/serendipita_shared_marker_sites_completed_20260927.json`.
