@@ -505,3 +505,36 @@ Separately, the full input-cache service reached inactive/success/exit0 and
 produced its28,808-input completion receipt. The independent five-tree
 likelihood replay is active (1,200 inputs observed at13:38 EDT); its full
 qualification remains pending. No production input/model scope was reduced.
+
+## Candidate covariance adjustment checked against author code
+
+`scripts/matched_kr_covariance.py` implements the linear-kernel covariance
+adjustment from the stored information and contractions. The information
+matrix here is Iij=tr(P Gi P Gj)/2, so the variance-parameter covariance is
+I^-1, not twice that inverse. This convention was checked against the
+[authors' implementation](https://github.com/hojsgaard/pbkrtest/blob/bb7c4f9a91068b090aa9cce3c3e1d6e2de67399e/R/KR_vcovAdj.R),
+which inverts twice-information and applies the corresponding factor of two.
+
+The local comparison executes the unmodified author covariance routine and
+index helper at pinned commit `bb7c4f9a91068b090aa9cce3c3e1d6e2de67399e`,
+using R4.3.3,Matrix1.6.5 and MASS7.3.60.0.1. It does not install pbkrtest or
+claim an independent parameter fit. Source files, retrieval URLs and hashes
+are bound by `metadata/pbkrtest_covariance_reference_source_20260928.json`.
+
+All16 synthetic comparisons (eight zero/nonzero component combinations at two
+scales) passed for both adjusted fixed-effect covariance and variance-parameter
+covariance, with maximum absolute difference7.99e-15. The comparison uses the
+same designs and absolute variances in both implementations, with independently
+constructed dense covariance kernels for the R routine. Reproduce using
+`scripts/check_matched_kr_covariance.py`; full input/output hashes and R versions
+are retained under `results/model_validation/matched-kr-covariance-checks-20260928-v1`.
+
+The project implementation returns an explicit review status when information
+has nonpositive diagonal entries or its normalized minimum eigenvalue is no
+greater than1e-10 times its maximum. It does not use a generalized inverse;
+this differs deliberately from the upstream fallback. A confounded-kernel
+test verifies this behavior. Adjusted covariance must also be finite and
+positive definite. These are numerical eligibility checks only. Every returned
+adjustment remains a candidate pending statistical validation, and exact-zero
+variance flags are retained. Degrees of freedom, reference-distribution
+validation, simulation coverage, multiplicity and model adequacy are unresolved.
