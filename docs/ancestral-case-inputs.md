@@ -1066,3 +1066,19 @@ all three identifiable signatures are retained and the root remains absent,
 as required. Existing refinement jobs and earlier result collections are
 unchanged. The v2 probability producer and independent auditor are verified
 live and waiting for their required predecessors.
+
+A full-coordinate comparison is queued behind the independent refined
+posterior audit. It compares all 156 refined fits against their original
+baselines and all 78 pairs of gamma-shape bounds, retaining 702 node
+comparisons and 653,157 node/site comparisons. Each pair must share the
+alignment hash and ancestor partition signature. It reports changes in
+most probable amino acids, opposing calls supported at least 0.9 in both
+fits, and total variation across all 20 amino-acid probabilities. These are
+dependent optimization diagnostics, not biological replicates. Intermediate
+alternate-start probabilities are not part of this comparison.
+
+The script is `scripts/compare_whole_optimization_probabilities.py`; matching
+plan/launch records use `whole_optimization_probability_comparison`. It has
+one CPU, 4 GiB RAM, no swap, 2 GiB output allowance and a 0.1–2 hour estimate
+after its required audit finishes. The live process is waiting; no comparison
+result is claimed yet.

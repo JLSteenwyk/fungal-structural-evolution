@@ -1,0 +1,53 @@
+{
+  "collections": {
+    "baseline": {
+      "root": "results/ancestral/whole-protein-ancestors-20260927-v1",
+      "fits_receipt": "results/ancestral/whole-protein-model-fits-20260927-v1/receipt.json",
+      "audit_receipt": "results/ancestral/whole-protein-posterior-audit-20260927-v1/receipt.json",
+      "expected_status": "passed_all_78_whole_protein_posteriors",
+      "expected_fits": 78,
+      "fit_readback": "results/ancestral/whole-protein-model-readback-20260927-v1/fit_readback.tsv",
+      "fit_audit": "results/ancestral/whole-protein-model-readback-20260927-v1/receipt.json"
+    },
+    "refined": {
+      "root": "results/ancestral/refined-whole-ancestors-20260927-v2",
+      "fits_receipt": "results/ancestral/whole-refinements-20260927-v1/receipt.json",
+      "audit_receipt": "results/ancestral/refined-whole-posterior-audit-20260927-v2/receipt.json",
+      "expected_status": "passed_all_156_refined_whole_protein_posteriors",
+      "expected_fits": 156,
+      "fit_readback": "results/ancestral/whole-refinement-readback-20260927-v1/fit_readback.tsv",
+      "fit_audit": "results/ancestral/whole-refinement-readback-20260927-v1/receipt.json",
+      "auditor": {
+        "unit": "fungal-refined-whole-posterior-audit-20260927-v2.service",
+        "pid": 636065,
+        "created": 1790556364.08,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_refined_whole_posteriors_v2.py"
+        ]
+      }
+    }
+  },
+  "output": "results/ancestral/whole-optimization-probability-comparison-20260927-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "paid_cost": 0
+  },
+  "pins": {
+    "scripts/compare_whole_optimization_probabilities.py": "19e62f2fd359169e21e90d981a737801647e4a56471e1051117401224b528ed1",
+    "scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "metadata/refined_whole_posterior_audit_plan_v2_20260927.json": "265683c21833bb64c10c29bf184db4496060bab7034f6faedcf15af4011486c8",
+    "metadata/refined_whole_posterior_audit_launch_v2_20260927.json": "6dabead87cca511eee1103eac141e9c4db9f251f0aee1923ca5f36c5c3ce694b",
+    "results/ancestral/whole-protein-posterior-audit-20260927-v1/receipt.json": "a8a6125e0c079d77dcec8177f8ce3623537fbc6b8a8b430ad9a1aa927148782a",
+    "results/ancestral/whole-protein-model-readback-20260927-v1/receipt.json": "1b89f6caa5093b9c80976d1d9f676a5d6f6b4a266b5b74797d3d1f05cb3c4ac1",
+    "results/ancestral/whole-protein-model-fits-20260927-v1/receipt.json": "e3c7a124c609826bede0417ecfa917e45059d7535a65d56751f8b6ae23eb8b81"
+  },
+  "scope": "All156 refined-versus-baseline pairs and78 gamma-bound pairs;702 node comparisons,653157 node-site comparisons. No alternate-start posterior comparison or final ancestor qualification."
+}
