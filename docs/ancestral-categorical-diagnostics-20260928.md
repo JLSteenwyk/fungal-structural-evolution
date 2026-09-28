@@ -113,3 +113,46 @@ and all **405 groups / 1,620 chains**. **Zero groups were ready** in that snapsh
 Evidence: `metadata/ancestral_state_quartet_readiness_20260928.json`.
 Production chains continue; the next integration step is the full categorical
 report runner, resource accounting and queued application to completed groups.
+
+## Both-cutoff report runner
+
+The report runner now applies the indicator screens to every unique trace at
+both cutoffs and retains a pattern-id map for every node/anchor coordinate.
+Gzip JSONL records preserve every declared state's per-chain counts,
+frequencies and diagnostic status, including unobserved states. Summaries
+separately report pattern counts and coordinate-weighted counts, preventing
+computational reuse from changing the reported denominator. Neither count
+is a count of independent biological sites.
+
+The same report also screens unanchored ancestral residue counts for each
+candidate node. This does not assign homology or state identities to those
+residues across samples. Full report readback reconstructs every retained
+state, verifies all pattern ids/multiplicities and recalculates every saved
+per-state count/frequency. The mathematical diagnostic primitive has its
+separate tests; report readback is not an independent R-hat implementation.
+
+Three end-to-end tests passed: the provenance-checked synthetic quartet
+through both reports with exact coordinate reconstruction; rejection of
+duplicate seeds before creating output; and rejection of altered arrays
+before creating output. The initial test exposed an unnecessary `psutil`
+import from a process helper. The reporter now uses only the already locked
+diagnostic dependencies; no environment or running script was changed.
+
+The preparer `scripts/prepare_ancestral_state_quartet_report.py` verifies
+producer/extractor plan pins, calls the four-chain reader and writes the bound
+array/manifest before invoking `scripts/report_ancestral_state_quartet.py`
+under the locked diagnostic Python. Biopython-dependent input checking stays
+in the existing analysis environment. Run only after the group has four
+verified extracted chains and an appropriate resource plan:
+
+```bash
+python scripts/prepare_ancestral_state_quartet_report.py \
+  --producer-plan metadata/baliphy_independent_chain_plan_20260927.json \
+  --extraction-plan metadata/baliphy_full_anchored_states_plan_20260928_v2.json \
+  --group MODEL_INPUT_ID \
+  --output results/ancestral/categorical-report-NEW \
+  --python SOFTWARE/ancestral-diagnostics-20260927/bin/python
+```
+
+No production group has been diagnosed by these fixture runs. Full-grid
+resource planning and automated scheduling remain outstanding.

@@ -1,0 +1,20 @@
+{
+  "status": "three_reader_to_report_tests_passed",
+  "tests": 3,
+  "pins": {
+    "scripts/report_ancestral_state_quartet.py": "1adca6baca6a2245a6cd293cbac0b9f171dd1c4255dbf360cb2f69d812a5f742",
+    "scripts/prepare_ancestral_state_quartet_report.py": "d13f09660a476ffe3b18e7472272d7f380708e3b0d747c03c05c3d005412014b",
+    "scripts/test_ancestral_state_quartet_report.py": "16a9bbe0a2f9de68e834f2d0c6f10be8ba83bcaf94982f0d7ad313a3c9244ee2",
+    "scripts/read_ancestral_state_quartet.py": "f4700173d4a53643b7ceeab9336f291f58b5c688e4e5d21bfcbfe88569a31e95",
+    "scripts/ancestral_categorical_diagnostics.py": "52ab9326030033d88d98c867b61cb8d2e5f98a19ac680f0e21506a5e29f6d6f6",
+    "scripts/ancestral_state_patterns.py": "bb626a3b1bccf857ec13ae1fce6637603204273cac8104d91df1bd1745358571",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f"
+  },
+  "cutoffs": {
+    "250": 75,
+    "500": 50
+  },
+  "synthetic_coordinates_per_cutoff": 16,
+  "scope": "Synthetic source-bound reader to locked-environment report; coordinate reconstruction, denominators, absence handling and tamper/seed rejection. No production posterior diagnosis."
+}
