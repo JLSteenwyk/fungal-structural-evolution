@@ -472,3 +472,36 @@ full-grid speed estimate. Evidence is in
 `metadata/matched_covariance_information_fast_checks_20260928.json`. Group
 passes still require substantial work; real-input equivalence and timing are
 pending. The active original15-case benchmark and its pinned code are unchanged.
+
+## All real-input information comparisons passed
+
+The original benchmark reached inactive/success/exit0. Its15 source-bound
+outputs and artifact hashes were read back before running the shortcut on the
+same designs and variance estimates. `scripts/compare_matched_information_shortcut.py`
+completed with exit0; `scripts/audit_matched_information_comparison.py` then
+checked every saved paired array, information eigenvalue/rank and timing sum.
+All15 comparisons passed at rtol1e-7/atol1e-8. Maximum absolute information
+disagreement was2.91e-10. Evidence is in
+`metadata/matched_information_shortcut_comparison_20260928.json` and
+`metadata/matched_information_shortcut_readback_20260928.json`.
+
+Measured total time fell from212.02 to92.69seconds (56.28% reduction). Large
+cases took14.50–15.56seconds with the shortcut versus33.92–35.77seconds for
+the reference; medium cases took3.34–3.75seconds. Small cases were slightly
+slower with the shortcut. Each method was timed once per case under current
+host load; these selected designs do not provide a full-grid runtime estimate.
+This remains an information calculation at fitted parameters, not a refit or
+coverage simulation.
+
+All15 information matrices have numerical rank4. Ten cases have at least one
+zero fitted variance component. Their smallest diagonally normalized
+information eigenvalue is at least0.2417. Thus boundary estimates and a
+full-rank information matrix coexist in these inputs; rank alone does not
+qualify the boundary sampling approximation. The next statistical work remains
+covariance adjustment/reference-distribution validation and simulation-based
+assessment, with all original analysis settings retained.
+
+Separately, the full input-cache service reached inactive/success/exit0 and
+produced its28,808-input completion receipt. The independent five-tree
+likelihood replay is active (1,200 inputs observed at13:38 EDT); its full
+qualification remains pending. No production input/model scope was reduced.
