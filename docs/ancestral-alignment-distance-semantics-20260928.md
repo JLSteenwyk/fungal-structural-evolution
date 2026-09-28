@@ -86,3 +86,14 @@ precision, not native bit-exact integer equality. This sensitivity must remain
 visible in reporting. Output is under
 `results/ancestral/extant-geometry-fixtures-20260928-v2`; require a successful
 terminal service and a complete checked receipt before claiming all inputs pass.
+
+The full check subsequently finished successfully: **135 groups, 405 sampled
+alignments and 1,215 distance-matrix entries** agreed at printed precision.
+The inputs included six X residues, observed across three saved samples
+(18 residue observations). Runtime was 184.4 seconds; systemd reported a
+1.4 GB memory peak and no swap. The service was inactive with success/exit 0,
+and all 135 output hashes plus input/script/binary pins were rechecked.
+Completion evidence is in
+`metadata/ancestral_extant_geometry_fixture_completed_20260928.json`.
+This finishes full frozen-input geometry qualification; production quartet
+mixing, autocorrelation and ancestral-state diagnostics remain outstanding.
