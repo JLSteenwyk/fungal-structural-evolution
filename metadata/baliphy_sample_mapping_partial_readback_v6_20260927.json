@@ -1,0 +1,16 @@
+{
+  "status": "partial_mapping_snapshot",
+  "dispositions": {
+    "all_saved_samples_and_candidate_nodes_verified": 90,
+    "pending_receipt": 234
+  },
+  "expected_jobs": 324,
+  "candidate_samples": 1080,
+  "artifacts": {
+    "candidate_samples.tsv": "56d39550b4c9b2e68a5f46e58cbd3405f93f69cf6999aa9d2628fc37de83a430",
+    "dispositions.json": "8c110692e738c0d5645abedb48508dcb15bb7c33579cdeec48ec4d874d0e5354"
+  },
+  "scope": "Each saved sample paired with same-process fixed runtime tree; all tips/known residues, rooted clades, branch lengths and candidate identities checked. Initial and early samples retained for integrity testing only, not converged posterior ensembles. Root remains an assumption; no independent likelihood replay.",
+  "completed_receipt_path": "results/ancestral/baliphy-sample-mapping-readback-20260927-v6/receipt.json",
+  "completed_receipt_sha256": "e57ca2f511ca1dea8059401daae579d30c4636c90f9039db77da7b57b9759e15"
+}

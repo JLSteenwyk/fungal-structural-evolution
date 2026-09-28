@@ -218,3 +218,13 @@ sampling must explicitly declare all priors, verify the generated model,
 rebind the effective-input groups to those settings, and assess independent
 chains for mixing and convergence. Source-level defaults and short-chain
 capacity checks alone do not qualify ancestral posterior samples.
+
+
+## Subsequent short-chain snapshot
+
+The v6 independent readback verifies 90 completed configurations and 1,080
+saved candidate-node/sample mappings, retaining all 234 pending dispositions.
+Every saved sample passes the declared extant-residue, runtime-tree and
+candidate-identity checks. Evidence is recorded in
+`metadata/baliphy_sample_mapping_partial_readback_v6_20260927.json`. These
+remain 20-iteration integrity diagnostics, not converged posterior ensembles.
