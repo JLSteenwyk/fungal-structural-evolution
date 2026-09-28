@@ -1,0 +1,28 @@
+{
+  "output": "results/figures/recovered-afdb-coupling-20260928-v1",
+  "receipt_sha256": "d6206b9b408c1772bccbb5f010677c5fb80768b58312cb3c5b0ef9577a992bee",
+  "visual_inspection": "PNG inspected: all 24 rows, three panels, paired cohorts, axis labels, legend and uncertainty limitations visible without clipping.",
+  "published_copies": {
+    "docs/figures/recovered_afdb_copy_review_coupling_20260928.svg": "954df37b59dd59bdd25cf3fa95488d1c4a1d05b965c9f8aa9e08480909b84a02",
+    "docs/figures/recovered_afdb_copy_review_coupling_20260928.png": "f03063d6963c9278e59dc5f9498e300995c8805c3b07be8a9de37969b0a366f0"
+  },
+  "status": "complete_expanded_copy_review_coupling_figure",
+  "plotted_rows": 144,
+  "cohort_label": "Recovered AlphaFold",
+  "full_markers": 125,
+  "omission_markers": 124,
+  "plotted_numeric_values_checked": 432,
+  "model_specifications": 24,
+  "source_pins": {
+    "results/phylogeny/site-coupling-copy-review-comparison-afdb-recovered-20260928-v1/receipt.json": "4265ccb46b53c9003c3ad7eabe3fec795639c78c87a02d890f3220dda4dfd75c",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1/contrast_summary.tsv": "2538aefd8e27c4f1b596b3e3839e7340cd1de4cbcfc15fea37521f9146b6a818",
+    "results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1/contrast_summary.tsv": "950811b2309fa1368538f80e1032d73d40f69fd2a726860e1029a057aded9295"
+  },
+  "script_sha256": "6a27098c55c161048df2cc9ec6d9d5ca316eb461a14d04557e39c697cafb1308",
+  "artifacts": {
+    "plotted_intervals.tsv": "f9452d39b1145f6900f0378d2325ca069812c507a81fbe0f7363c9c1e241ad53",
+    "expanded_copy_review_coupling.svg": "954df37b59dd59bdd25cf3fa95488d1c4a1d05b965c9f8aa9e08480909b84a02",
+    "expanded_copy_review_coupling.png": "f03063d6963c9278e59dc5f9498e300995c8805c3b07be8a9de37969b0a366f0"
+  },
+  "interpretation": "Every specification and both reviewed cohorts shown with unadjusted marker-bootstrap intervals at explicit fixed reference values. Visual inspection remains separate. Not a test of differences between cohorts."
+}

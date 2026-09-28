@@ -1,5 +1,13 @@
 # Recovered AlphaFold site coupling: copy-review sensitivity
 
+![All 24 model specifications with full and omission cohorts and marker-bootstrap intervals](figures/recovered_afdb_copy_review_coupling_20260928.png)
+
+[Download the vector figure](figures/recovered_afdb_copy_review_coupling_20260928.svg).
+The three panels show sequence-rate association at RSA 0.25, RSA association
+at zero log1p amino-acid rate, and their interaction. All 144 plotted
+intervals (432 numeric values) were checked against the source tables; the
+rendered figure was inspected for clipping and legibility.
+
 The completed exploratory analysis contains 47,529 sites from 125 markers.
 Omitting marker `4986044at2759`, whose TFIIB/BRF1 gene-copy assignment remains
 unresolved, removes 313 sites and leaves 124 markers. The retained covariate
@@ -51,4 +59,16 @@ python scripts/compare_copy_review_coupling.py \
   --full-resampling results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1 \
   --omission-resampling results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1 \
   --output results/phylogeny/site-coupling-copy-review-comparison-afdb-recovered-20260928-v1
+```
+
+Generate the figure from the audited comparison:
+
+```bash
+python scripts/plot_expanded_copy_review_coupling.py \
+  --comparison results/phylogeny/site-coupling-copy-review-comparison-afdb-recovered-20260928-v1 \
+  --full results/phylogeny/site-coupling-resampling-afdb-recovered-full-20260927-v1 \
+  --omission results/phylogeny/site-coupling-resampling-afdb-recovered-copy-omission-20260927-v1 \
+  --expected-full-markers 125 --expected-omission-markers 124 \
+  --cohort-label 'Recovered AlphaFold' \
+  --output results/figures/recovered-afdb-coupling-20260928-v1
 ```
