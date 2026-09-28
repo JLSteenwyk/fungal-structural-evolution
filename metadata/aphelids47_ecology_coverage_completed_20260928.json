@@ -1,0 +1,61 @@
+{
+  "status": "complete47_taxon_ecology_coverage_and_preservation_readback",
+  "taxa": 47,
+  "pairs": 1081,
+  "sources": {
+    "results/ecology/qualified-afdb-aphelids47-overlap-20260928-v1/receipt.json": "b648446f77d96544ed62c152571d7b2ce2b105f877f9bb96ef1ff9f4c3e41463",
+    "results/ecology/qualified-afdb-reviewed45-overlap-20260927-v1/receipt.json": "e5cefac85ce276420d1c3d96cf4a37805bf89cd8b5bc0f9a1210fd881c9c94f0",
+    "metadata/qualified_afdb_aphelids47_ecology_readback_20260928.json": "f5d3ecae21b3a8429e449d25861ec0e615e43cfad355ed9b4197632a8d4655a9",
+    "results/ecology/qualified-esmfold-aphelids47-overlap-20260928-v1/receipt.json": "a8c9e77d8848f34592e96848ac06556643a7433a2924c361820146fd6bf3b223",
+    "results/ecology/qualified-esmfold-reviewed45-overlap-20260927-v1/receipt.json": "430f2d44f658aa6964e78f172540e216160b358cf82b748f110b1e53a0cab167",
+    "metadata/qualified_esmfold_aphelids47_ecology_readback_20260928.json": "ddd95464e33504372313c13bec7f703fd2bc50d3aef61efa3ade527e27a77e08"
+  },
+  "methods": {
+    "afdb": {
+      "taxa_with_markers": 34,
+      "qualified_pairs": 545,
+      "new_taxa": [
+        {
+          "taxon_id": "F1498855",
+          "species_name": "Amoeboaphelidium occidentale",
+          "state": "algal_parasitoid",
+          "eligible_markers": "0",
+          "qualified_observations": "0"
+        },
+        {
+          "taxon_id": "F1243177",
+          "species_name": "Amoeboaphelidium protococcarum",
+          "state": "algal_parasitoid",
+          "eligible_markers": "0",
+          "qualified_observations": "0"
+        }
+      ]
+    },
+    "esmfold": {
+      "taxa_with_markers": 33,
+      "qualified_pairs": 528,
+      "new_taxa": [
+        {
+          "taxon_id": "F1498855",
+          "species_name": "Amoeboaphelidium occidentale",
+          "state": "algal_parasitoid",
+          "eligible_markers": "109",
+          "qualified_observations": "31841"
+        },
+        {
+          "taxon_id": "F1243177",
+          "species_name": "Amoeboaphelidium protococcarum",
+          "state": "algal_parasitoid",
+          "eligible_markers": "0",
+          "qualified_observations": "0"
+        }
+      ]
+    }
+  },
+  "taxa_with_either_source": 46,
+  "pairs_with_either_source": 878,
+  "pairs_with_both_sources": 195,
+  "pairs_with_neither_source": 203,
+  "script_sha256": "3af63d7b9c68b19ef0d87e3c6ce724c8f963277c3e4993d96b10f9513529bd1a",
+  "scope": "All prior45-taxon outputs preserved. Source-specific qualified coverage only, not independent contrasts, power or ecological effects. Source union is bookkeeping; no cross-source observations pooled."
+}

@@ -1,0 +1,31 @@
+{
+  "evidence": "metadata/species_ecology_evidence_aphelids_20260928.tsv",
+  "evidence_receipt": "metadata/aphelid_ecology_coverage_evidence_binding_20260928.json",
+  "inputs": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1",
+  "input_readback": "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json",
+  "output": "results/ecology/qualified-afdb-aphelids47-overlap-20260928-v1",
+  "minimum_shared_columns": 50,
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 4,
+    "output_planning_gib": 0.02,
+    "runtime_planning_minutes": [
+      1,
+      10
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "All47 taxa and1081 unordered pairs, full source-specific qualified AA/3Di masks; no prediction or cross-source pooling."
+  },
+  "pins": {
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1-readback.json": "26010266e2ab3aa59c7fee6ff766f458a75e38df4a2368e4bf5d3553daeed565",
+    "results/phylogeny/paired-inputs-afdb-recovered-20260925-v1/receipt.json": "8873ad95fb9b8cf1d0637aa2c1963a2168a2fe6e14f04dce73897ac965c3ca95",
+    "scripts/assess_qualified_afdb_ecology_overlap.py": "4e179af164535e29dbcb352ac43072db4f7df35fcefeb047b5a3b9d9aa2c6b71",
+    "scripts/readback_qualified_ecology_overlap.py": "b6dc57186b1cab36ca71be34a8f666b30da481e5e3e206c7eb57e95db87156d8",
+    "scripts/readback_whole_proteome_family_coverage.py": "da720a9d5a63b971d2198628858dda8f4a20833ed65672c18f8d27543f3784fb",
+    "metadata/ecology_species_source_review_readback_20260927.json": "774be607c767aa1a123a1452983803b84df5261478ae3b82f5fa0e3b18ee10ec",
+    "metadata/species_ecology_evidence_aphelids_20260928.tsv": "ec51e704f0b96348d0ea6923cfc934227a5962fedf93cdb6dc1dfe0f02f80ee0",
+    "metadata/aphelid_ecology_coverage_evidence_binding_20260928.json": "c9750ba90f7f067c3799b6f9ab5ea44170f747080755dd88b81832452c719db4",
+    "metadata/aphelid_ecology_evidence_receipt_20260928.json": "9bae4c74b9bb8552229670b6c2c78cb5c0bf88adbb7eaef5d3a43fc07ae2760a"
+  }
+}

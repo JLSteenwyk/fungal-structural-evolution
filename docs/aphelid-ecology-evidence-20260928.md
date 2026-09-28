@@ -42,3 +42,32 @@ Existing 32- and 45-taxon phylogenetic and structural-coverage analyses remain
 bound to their original inputs. Coverage assessment and explicit trait coding
 for this expanded set remain to be performed; this addition does not complete
 the ecological association aim.
+
+## Full expanded structural coverage completed
+
+Both source-specific assessments now cover all 47 taxa and all 1,081 unordered
+pairs. Independent FASTA parsing and dense mask multiplication verified every
+taxon, pair, pair-marker and provisional-group count. Every original 45-taxon
+row was recovered exactly in the expanded tables.
+
+A. occidentale has 109 eligible ESMFold markers with 31,841 qualified paired
+AA/3Di observations; A. protococcarum has none in either qualified source
+collection. Neither aphelid has eligible AlphaFold markers in these frozen
+inputs. These are alignment-eligibility findings, not claims that public
+predictions or recovered protein sequences do not exist.
+
+Across all 47 taxa, AlphaFold covers 34 taxa and 545 pairs with a marker sharing
+at least 50 qualified columns; ESMFold covers 33 taxa and 528 pairs. In the
+bookkeeping union, 46 taxa have some qualified coverage and 878 pairs meet the
+within-source criterion; 195 pairs qualify in both and 203 in neither. No
+cross-source observations were pooled. The extra 32 eligible ESMFold pairs do
+not represent independent parasitism transitions or an ecological effect.
+
+Reproduce preparation with `scripts/prepare_aphelid_ecology_coverage.py`, run the
+existing assessment/readback scripts using
+`metadata/qualified_{afdb,esmfold}_aphelids47_ecology_plan_20260928.json`, then run
+`scripts/summarize_aphelid_ecology_coverage.py`. Full tables remain under
+`results/ecology/qualified-{afdb,esmfold}-aphelids47-overlap-20260928-v1`.
+The completion receipt is `metadata/aphelids47_ecology_coverage_completed_20260928.json`.
+Each source retained the one-CPU, 4-GiB, 1–10-minute planning allowance and
+finished in seconds without GPU inference.

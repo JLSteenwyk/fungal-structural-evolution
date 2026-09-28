@@ -9792,3 +9792,11 @@ does not establish universal coverage or complete the biological project.
   are preserved. These are sample-linked annotations, not independently
   verified experiments or two established transitions. Expanded structural
   coverage and phylogenetic trait coding remain pending.
+
+- September 28: completed full47-taxon ecological structural coverage and
+  independent matrix readback for both prediction sources (1,081 pairs each).
+  All previous45-taxon result rows were preserved exactly. A. occidentale has
+  109 eligible ESMFold markers; A. protococcarum has none in either qualified
+  collection. Across the expanded set,46 taxa and878 pairs have coverage in
+  at least one source;195 pairs qualify in both and203 in neither. No cross-source
+  observations or inferred ecological transitions were pooled.
