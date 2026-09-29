@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_matched_whole_protein_records.py",
+  "script_sha256": "9104b2fd891d59c854f9f9b3bc66fce4d71ea20cd21f6c6dbded31d0d91a19a2",
+  "producer_launch_sha256": "e45659801b2b03b934a09354058016fa385bf37ee136399de6ce7fa4862408b4",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All96 source-filtered partitions and41472 weighted summaries independently recomputed with pandas after exact producer terminal success",
+  "fixtures": "Unequal family sizes, missing-log counts and empty hierarchical groups passed"
+}

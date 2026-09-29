@@ -480,3 +480,22 @@ Resources: one CPU, 16 GiB memory cap (12 GiB database limit), no swap/GPU/charg
 estimated 0.1–4 hours and up to 30 GiB including database/scratch. Plan and launch:
 `metadata/matched_whole_protein_records_plan_20260928.json` and
 `metadata/matched_whole_protein_records_launch_20260928.json`.
+
+### Full whole-protein record reconstruction queued
+
+`scripts/readback_matched_whole_protein_records.py` waits for the exact producer
+process and successful terminal state, then independently rebuilds every one of
+the 96 Parquet partitions by filtering the original contrast rows. It compares
+all pair identities, model-input values and membership before rejoining the
+original selection records. Pandas aggregation, separate from the producer's
+DuckDB SQL, reconstructs all 41,472 summaries: retained/metadata counts, family,
+taxon and background diversity, positive-log denominators, all twelve metrics
+under three weighting schemes, and blank means in empty groups. Source and
+partition hashes are checked again at the end.
+
+Checks for unequal family sizes, missing positive-log observations and empty
+hierarchical groups passed before launch. Resources: one CPU, 24 GiB RAM,
+no swap/GPU/paid resources; estimated 0.1–8 hours after production and under
+0.01 GiB new output. Plan and exact live identity are recorded in
+`metadata/matched_whole_protein_record_readback_plan_20260928.json` and
+`metadata/matched_whole_protein_record_readback_launch_20260928.json`.
