@@ -277,6 +277,29 @@ September 28 background alignment update: full RMSD discrepancy census completed
 and its entire table/counters/provenance checked. Five of 282,120 successful
 alignments fail original rounding tolerance; all five are two-residue mappings
 confirmed analytically from CA segment lengths. The remaining 282,115 pass
-rounding. Full geometry assessment/readback is still required, and these
+rounding. Full geometry assessment and independent readback subsequently passed for all
+282,120 successful alignments. All 77 degenerate short mappings, including the
+five RMSD discrepancies, are excluded from numerical summaries. These
 computational checks do not complete the duplication or other evolutionary aims.
 See `docs/terminal-sister-backgrounds-20260927.md` for evidence and limitations.
+
+
+September 28 late checkpoint: the complete background measurement union now
+covers 71,461 distinct model/version pairs, including 11 previously measured
+pairs whose 44 checkpoint/input/settings bindings were verified. All 78,372
+background candidates retain their measurement or explicit exclusion disposition.
+The six original-protein coverage screens were fully reconstructed for targets
+and controls. Independent validation checked all 2,786,912 original fixed matches,
+16,721,472 endpoint eligibility bitsets and 7,776 attrition cells; no controls
+were reselected after structural screening. Post-screen balance production
+completed all 62,208 feature summaries, with full independent readback running.
+See [matching and screening evidence](duplication-control-balance-20260927.md).
+These comparisons retain their frozen older atlas: they do not yet cover the
+expanded September 28 duplication universe.
+
+Expanded duplication raw-coordinate production completed all 276,682 models
+without reported rejections; all 277 output shards and exact source partitions
+were checked. Independent coordinate/sequence/confidence reconstruction is
+running against the raw structures, and input materialization remains gated on
+its completion. Expanded alignments and evolutionary inference remain pending.
+Evidence: `metadata/duplication_coordinate_validation_producer_completed_20260928.json`.
