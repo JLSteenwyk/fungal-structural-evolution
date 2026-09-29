@@ -776,8 +776,9 @@ changes, but domain length, family composition and clustering parameters can
 also vary across bins. The table does not establish a causal boundary effect or
 biological structural divergence. Boundary alternatives must remain explicit in
 downstream family and architecture analyses. Serialization, count and fraction
-arithmetic passed; a second implementation has not independently repeated the
-full joined analysis. The reproducible join command is recorded in
+arithmetic passed. A separate endpoint reconstruction subsequently reproduced
+all six pair counts, assignment-change counts and fractions exactly, as recorded
+below; per-bin distinct-model counts were not repeated by that check. The reproducible join command is recorded in
 [its plan](../metadata/expanded_boundary_cluster_extension_plan_20260929.json).
 
 
@@ -790,3 +791,14 @@ and output hashes. The [rendering review](../metadata/boundary_cluster_extension
 records the reproducible command and visual inspection. Both panels use linear
 axes. There are no inferential error bars because these descriptive model/hit
 counts are not independent evolutionary replicates.
+
+
+The [endpoint reconstruction check](../metadata/expanded_boundary_cluster_extension_endpoint_check_20260929.json)
+now independently recalculates each extension from the original interval endpoints,
+checks envelope containment and model identity, and compares assignments from the
+fully audited cluster-disposition rows. Across all 868,338 pairs and 1,575,294
+intervals, all six bin totals, changed-assignment counts and fractions exactly
+match the separate derived-length join. It uses the existing endpoint-summary
+implementation, preserving its original interface. This strengthens arithmetic
+and provenance evidence for the figure; it is not independent reclustering or
+biological validation, and it does not repeat per-bin distinct-model counts.

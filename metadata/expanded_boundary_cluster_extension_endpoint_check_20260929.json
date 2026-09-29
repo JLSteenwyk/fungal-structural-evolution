@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_endpoint_reconstruction_of_boundary_extension_bin_counts",
+  "candidate_pairs": 868338,
+  "intervals": 1575294,
+  "bins": 6,
+  "checks": [
+    "Added residues reconstructed from original interval endpoints for every model/hit",
+    "All pair counts, changed-assignment counts and fractions match the separate derived-length join exactly",
+    "Complete cohort, interval containment and saved cluster/disposition consistency checked"
+  ],
+  "source_hashes": {
+    "results/domains/boundary-cluster-change-by-extension-20260929-v1/receipt.json": "5f4df48c968e96021c16bf8efabd5d30eca4645fcbced6e4f69e39d1f04205c7",
+    "results/domains/boundary-cluster-change-by-extension-20260929-v1/cluster_change_by_extension.tsv": "2d569693b5f0218baf47f6323fca7841610b2a1306e4dfab09dd562c4f471d71",
+    "results/domains/boundary-cluster-extension-endpoint-reconstruction-20260929-v1/receipt.json": "bed52d63b22dcf551efda95d0a2842f51dc128ab55b463ffbf9d6541b6e4b91c",
+    "results/domains/boundary-cluster-extension-endpoint-reconstruction-20260929-v1/extension_cluster_disagreement.tsv": "2b87878adfbe2d3d5f320f8d5556aa713be879f91d7f9bc890f810b8c0ded30e",
+    "scripts/summarize_boundary_cluster_extension.py": "8c12ad7a51c7f574a38be5be663fa84197698794352c039d4935e117a21a54bd",
+    "results/structural_clusters/domain-boundary-dispositions-readback-20260929-v1/receipt.json": "d5780cd946ddc8db769194f4c88b6f7473df09fcf7ebe8c8ff6744dfc88b0f5b"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/bizon/anaconda3/bin/python scripts/summarize_boundary_cluster_extension.py --audit results/structural_clusters/domain-boundary-dispositions-readback-20260929-v1/receipt.json --output results/domains/boundary-cluster-extension-endpoint-reconstruction-20260929-v1",
+  "exit_code": 0,
+  "scope": "Independent endpoint/bin arithmetic and paired counts using previously fully audited cluster-disposition rows. Does not independently rerun clustering, recheck per-bin distinct-model counts, validate biological boundaries or establish evolutionary effects."
+}
