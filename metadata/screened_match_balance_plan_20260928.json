@@ -1,0 +1,23 @@
+{
+  "script": "scripts/assess_screened_match_balance.py",
+  "script_sha256": "581dc430f2f9723f7d9433dcd113adf522ade683c2103e8a1065dd05a64ddb16",
+  "pins": {
+    "scripts/background_control_balance.py": "b5072545be80146350ecfb1a38abc3f61b3750b584bf77181a3d390204863606",
+    "scripts/check_background_control_balance.py": "ee35c8c439a4a30d83e72fafc6033cbee2c2e8231b9a06f768f811a83f19d2da",
+    "metadata/fixed_match_structural_attrition_completed_20260928.json": "fd0ebf3fbd63a10a669382230985f751f08b200724c8f4b31408f6f0a166879a",
+    "metadata/fixed_match_structural_attrition_completed_readback_20260928.json": "18903f1a1c9469d821fcad8081eaa4e784f4b0dbfc2f94c1c414c8983a8f24cb"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_gib": 1,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All7776 retained coverage/reuse strata and62208 feature rows; both original-target and pre-screen matched-target baselines; full independent readback required."
+}

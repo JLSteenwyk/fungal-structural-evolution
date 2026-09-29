@@ -211,3 +211,20 @@ guide; metadata-unmatched records remain explicit. No replacement control was
 selected after screening. Surviving matches need fresh balance/representation
 assessment and phylogenetic/family-aware effect estimation; these counts alone
 do not establish a duplication effect or represent all sampled taxa.
+
+## Balance after structural screening running
+
+A full assessment now covers all 7,776 retained scenario/mask/screen cells,
+including empty cells, with 62,208 rows across the same eight covariates.
+Besides target/control balance and shifts from the original modeled-target
+pool, it records the additional shift relative to the pre-screen metadata-matched
+target pool. Retained taxa/families, distinct controls, maximum reuse, top-five
+reuse share and zero sequence distances are retained. No control is reselected.
+
+The established balance helper passed known moments/SMD/selection-shift fixtures,
+empty/single/zero-variance cases, positive-log exclusions and endpoint swaps.
+Full production and independent output readback remain pending. Resources: one
+CPU, 24 GiB RAM, no swap/GPU/charges, up to 1 GiB output and a broad 0.1–8-hour
+estimate. The executable stage is `scripts/assess_screened_match_balance.py`;
+plan and exact live identity are in `metadata/screened_match_balance_plan_20260928.json`
+and `metadata/screened_match_balance_launch_20260928.json`.
