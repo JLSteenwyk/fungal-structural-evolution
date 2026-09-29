@@ -1,4 +1,4 @@
-# Open scientific milestones — updated September 28, 2026
+# Open scientific milestones — updated September 29, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
@@ -16,7 +16,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
 | 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and full alternate-start comparisons completed; 26,126,280 alternate probabilities independently checked. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
 
-## Current execution dependencies (updated September 28)
+## Current execution dependencies (updated September 29)
 
 - The September28 atlas refresh passed full catalog and old/new link checks:
   1,910,138 models cover1,955,694 of5,815,847 representative proteins (33.63%).
@@ -38,9 +38,15 @@ Chronological receipts and process records remain in [progress](progress.md).
   1,492,992 weighted-mean cells. A historical audit discrepancy did not recur;
   a separate compensated-sum check passed all 15,552 values in the affected
   setting with maximum absolute difference 5.107e-15. Its original cause remains
-  unresolved and documented. Both checks now gate a versioned assessment of
-  207,360 sequence/structure model designs, followed by independent readback.
-  Pair-level covariance indexing covers all 52,675 unique target/control pairs.
+  unresolved and documented. The versioned assessment and independent numerical
+  readback completed for all 207,360 sequence/structure model designs; every
+  design has full rank and positive residual degrees of freedom. Pair-level
+  covariance indexing covers all 52,675 unique target/control pairs. The input
+  inventory is running across 414,720 design/outcome settings, with its complete
+  audit queued. Workload planning and joint zero-reference support are queued
+  behind that audit; independent support-certificate validation is also queued.
+  No whole-protein effect fitting has started. The design milestone is recorded
+  in `metadata/whole_protein_model_designs_v2_audited_20260929.json`.
   These are validated inputs and design diagnostics, not fitted evolutionary
   effects or calibrated significance tests. See
   [matching and validation](duplication-control-balance-20260927.md).
@@ -95,9 +101,12 @@ Chronological receipts and process records remain in [progress](progress.md).
   across masks, orders and mapping definitions. See [triplet coverage](whole-protein-common-core-comparisons-20260927.md).
   Whole-chain background production finished all 285,800 dispositions on
   September 28. Its strict audit subsequently rejected a two-residue RMSD
-  discrepancy; a separate full discrepancy census is active and the failed
-  audit remains preserved. Geometry qualification and biological
-  duplication tests remain open. See [background execution](terminal-sister-backgrounds-20260927.md).
+  discrepancy. The full geometry audit subsequently completed for all 282,120
+  successful alignments, retaining 77 degenerate directions, including all five
+  RMSD discrepancies. The failed strict audit remains preserved. Numerical
+  geometry qualification does not establish a biological duplication effect.
+  See `metadata/background_alignment_geometry_completed_20260928.json` and
+  [background execution](terminal-sister-backgrounds-20260927.md).
 - Domain comparisons, common-core numerical verification, alternative-setting
   robustness, cross-guide comparisons and candidate sampling summaries completed.
   See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).
@@ -114,20 +123,28 @@ Chronological receipts and process records remain in [progress](progress.md).
   on verified identical observations across five trees. The expanded designs and
   input inventory passed full readback; nonlinear joint support is verified for
   all 57,616 inputs, including separate nonnegative certificates for 112 edge cases. Full likelihood comparison exports retain all settings and fit flags.
-  Numerical refinement, uncertainty and biological association tests remain outstanding;
-  none of these computational stages establishes a duplication effect.
+  A frozen 75,205-fit prefix retains 601 review flags; all 449 distinct flagged
+  inputs were reconstructed and checked. Separate refinement is running, with
+  full candidate-output replay queued. Gradient-only interior and exact-zero
+  boundary proposals, plus their separate full readbacks, are queued behind
+  successful refinement audit. Synthetic and selected real-case checks passed;
+  proposals have not replaced production fits. The original full grid still
+  requires completion and audit, followed by integration and valid uncertainty
+  and multiplicity treatment. None of these stages establishes a duplication effect.
 - Recovered AlphaFold accessibility and full site-summary readbacks are complete:
   30,618 models, 9,453,757 paired observations and 47,529 retained sites. Functional
   annotation integration preserves every site; 6,444 annotation rows map to 50
   paired sites, with conserved candidates at 18. The predictor comparison covers
   all 150 jointly observed exact protein coordinates and all 600 specified local
   coordinate comparisons. These inputs do not complete the functional aim.
-- Local codon branch-profile checks cover all 1,632 cases. All eight saved starts
-  per case (13,056 starts) are being reoptimized without the profile constraint,
-  followed by full audit. A frozen partial review checks 777 completed cases:
-  14 have between-start log-likelihood spreads greater than 10. The full source-
-  model/parameter audit and 855 cases remain pending in that snapshot. Optimizer
-  behavior is not a test of selection; see the
+- Local codon reoptimization completed across all 1,632 cases and eight saved
+  starts per case (13,056 fits). The full audit checked 65,280 artifact hashes and
+  224,752 parameter values; maximum fresh likelihood error was 2.365e-11.
+  A separate parameter-range readback verified all 28,094 rows. Between-start
+  log-likelihood spread exceeds 1e-5 in 204 cases. Numerical completion does
+  not resolve long-branch saturation, parameter identifiability or eligibility
+  for selection tests; near-best parameter ranges are not confidence intervals.
+  See `metadata/mg94_parameter_ranges_completed_readback_20260928.json` and the
   [multiple-start review](local-mg94-unconstrained-multistarts-20260927.md).
 - The September 27 cache refresh leaves 3,626 unique marker proteins without
   cached models. GPU prediction remains paused; this is a marker-gap count,
