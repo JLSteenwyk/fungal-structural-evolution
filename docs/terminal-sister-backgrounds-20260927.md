@@ -1261,3 +1261,30 @@ Output: `results/structural_comparisons/background-candidate-measurements-202609
 Evidence: `metadata/background_candidate_measurements_completed_20260928.json`.
 This preserves sampling denominators; it does not complete coverage/confidence
 qualification, phylogenetic matching or evolutionary inference.
+
+### Whole-protein coverage sensitivity screens complete
+
+All 78,372 candidates were screened under both masks using the existing six
+whole-protein criteria from `metadata/whole_protein_common_fits_plan_20260927.json`:
+30 or 50 aligned residues and 50%, 70% or 90% coverage of both original proteins.
+Both input orders must be numerically usable and meet the thresholds. Coverage
+of confidence-masked inputs uses full original protein lengths, not retained
+lengths. Unmeasured candidates remain explicit failures of measurement eligibility.
+No favorable order is selected and no confidence-calibration claim is made.
+
+For at least 50 residues, both masks pass for 45,330 candidates at 50% coverage,
+29,430 at 70%, and 9,129 at 90%. These are descriptive sensitivity results,
+not independently replicated controls or biological significance. The masks
+need not be nested: one candidate passes the 50% masked screen but not the
+full screen because the aligner can choose a different mapping after masking.
+
+All 940,464 screen decisions across 156,744 candidate/mask rows were independently
+replayed using decimal ceiling cutoffs, including exclusion lists and exact
+both-mask intersections. Boundary, reverse-order failure, numerical exclusion,
+identical-model, and overlapping-exclusion fixtures passed. Reproduce with
+`scripts/screen_background_whole_protein_coverage.py` followed by
+`scripts/readback_background_whole_protein_coverage.py`. Output:
+`results/structural_comparisons/background-whole-protein-coverage-20260928-v1`;
+evidence: `metadata/background_whole_protein_coverage_completed_20260928.json`.
+Domain/orientation checks, confidence calibration, phylogenetic matching and
+inferential comparisons remain outstanding.

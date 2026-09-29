@@ -1,0 +1,30 @@
+{
+  "status": "passed_full_background_original_protein_coverage_readback",
+  "receipt_sha256": "6eea62742ff1671b5cd917d954225babbfbbd26bd92f0467859adfc7f73d8307",
+  "checker_sha256": "7dd1c20164cdc6b3519f4f6fef58867dae8aec38bc56c7390f2547f8ffb502e4",
+  "candidate_mask_rows": 156744,
+  "screen_decisions_checked": 940464,
+  "pass_counts": {
+    "full:n30_c50": 58676,
+    "full:n30_c70": 46681,
+    "full:n30_c90": 26995,
+    "full:n50_c50": 58521,
+    "full:n50_c70": 46656,
+    "full:n50_c90": 26992,
+    "plddt70:n30_c50": 45496,
+    "plddt70:n30_c70": 29462,
+    "plddt70:n30_c90": 9133,
+    "plddt70:n50_c50": 45331,
+    "plddt70:n50_c70": 29430,
+    "plddt70:n50_c90": 9129
+  },
+  "both_masks_pass_counts": {
+    "n30_c50": 45495,
+    "n30_c70": 29462,
+    "n30_c90": 9133,
+    "n50_c50": 45330,
+    "n50_c70": 29430,
+    "n50_c90": 9129
+  },
+  "scope": "Every row, original identity/flags, six screen decisions and overlapping exclusion lists independently replayed with decimal ceiling coverage cutoffs. Exact both-mask intersections checked; no scientific acceptance."
+}
