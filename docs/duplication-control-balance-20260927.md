@@ -935,3 +935,21 @@ were rejected. Evidence:
 `scripts/check_whole_protein_payload_fixtures.py`. This helper is ready for the
 full output-audit runner; production fitting and full output replay remain
 unlaunched. Numerical agreement does not establish calibrated uncertainty.
+
+## Full whole-protein output-audit runner prepared (September 29)
+
+`scripts/audit_whole_protein_ml_outputs.py` waits for the recorded fitting process
+and requires successful termination and complete input/tree coverage. Bounded
+workers load each input once and replay its five tree outputs with the tested
+payload checker. Per-input proofs permit restart after source and plan hash
+checks; an output lock prevents concurrent writers. Error records are retained
+with `numerical_fit_verified=false`, and numerical-review statuses remain
+unresolved. A complete audit is not equivalent to every fit passing optimization.
+
+The spawned-worker fixture replayed five synthetic fits and 110 candidate
+likelihoods, preserved proof modification times on resume, rejected changed
+source fits, and correctly retained an explicit unverified error record.
+Evidence: `metadata/whole_protein_output_audit_fixtures_20260929.json`;
+fixture script: `scripts/check_whole_protein_output_audit.py`.
+Production fitting/audit plans and resource allocation remain pending; neither
+job has been launched. Full fitted-effect inference remains incomplete.

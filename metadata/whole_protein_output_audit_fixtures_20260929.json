@@ -1,0 +1,18 @@
+{
+  "status": "passed_whole_protein_output_audit_worker_fixtures",
+  "valid_tree_fits": 5,
+  "candidate_likelihoods_checked": 110,
+  "checks": [
+    "spawned full payload replay",
+    "unchanged resume",
+    "changed source rejected",
+    "error records explicitly unverified"
+  ],
+  "source_hashes": {
+    "scripts/audit_whole_protein_ml_outputs.py": "eb56564e604c9705c3d4f10882976a90d2e36a6224e82c83072a82874362c037",
+    "scripts/check_whole_protein_output_audit.py": "7611aa6a6163f6346d6da56a053f654bc7d5e310739e031c2b27511352897c29",
+    "scripts/check_whole_protein_fit_payload.py": "27cba88f49160607ee8cb2f67b7d6b6309837342759b5806d69f70d82f12e8df",
+    "scripts/run_whole_protein_ml.py": "8a18107ef7a4a08bd4dd17e37870b4c07b1dd8289b4695e1a33e3200bea62a4d"
+  },
+  "scope": "Synthetic worker and resume checks only; production output audit not launched."
+}
