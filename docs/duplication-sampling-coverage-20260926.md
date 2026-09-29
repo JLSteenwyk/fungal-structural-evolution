@@ -502,5 +502,16 @@ Expanded alignment-input production completed all 277 batches at September 29,
 The PDB files total 13,045,403,371 bytes. The
 [producer completion record](../metadata/duplication_alignment_input_producer_completed_20260929.json)
 binds its terminal success, receipt dependencies and manifest hash. The separate
-full PDB readback started automatically and remains incomplete; expanded native
-alignments and input/result reuse remain pending.
+full PDB readback subsequently passed all 277 batches on September 29, around
+03:44 EDT. It checked all 553,364 dispositions against audited source records,
+including sequences, original residue positions, confidence-mask membership,
+and every written C-alpha coordinate and confidence value at PDB rounding
+tolerances. The 26,949 short confidence masks remain explicit unavailable
+inputs. The [audit completion record](../metadata/duplication_alignment_input_audited_20260929.json)
+binds the successful terminal state, proof, pinned checker and plan, producer
+receipt, and aggregate counts.
+
+The already queued exact old/new input comparison and expanded workload
+estimator are now live after this validation gate. Expanded native alignments
+and input/result reuse remain pending; input validation establishes neither
+biological effects nor suitability of old numerical results for reuse.

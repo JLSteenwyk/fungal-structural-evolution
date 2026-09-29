@@ -1,0 +1,22 @@
+{
+  "status": "full_duplication_alignment_input_audit_verified",
+  "checked_at": "2026-09-29T07:44:40.135180+00:00",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "proof": "metadata/duplication_alignment_inputs_completed_readback_20260929.json",
+  "proof_sha256": "e7d5e449e5e75a0a674f9d08121831e3d0632fa8ab6e02c8878680b4fded2c72",
+  "source_receipt_sha256": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+  "plan_sha256": "53217f72b048cf05a0ad419e4e8c100a9cdba55bc7167929bc3f7b424b97768b",
+  "counts": {
+    "full:ready": 276682,
+    "plddt70:ready": 249733,
+    "plddt70:too_few_retained_residues": 26949
+  },
+  "models": 276682,
+  "input_dispositions": 553364,
+  "pdb_bytes": 13045403371,
+  "scope": "Verified completed full PDB readback, pinned checker and plan, producer receipt and aggregate counts. Expanded native alignments and result reuse remain pending."
+}

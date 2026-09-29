@@ -1,0 +1,20 @@
+{
+  "status": "passed_full_duplication_alignment_input_readback",
+  "models": 276682,
+  "input_dispositions": 553364,
+  "counts": {
+    "full:ready": 276682,
+    "plddt70:ready": 249733,
+    "plddt70:too_few_retained_residues": 26949
+  },
+  "pdb_bytes": 13045403371,
+  "source_receipt_sha256": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+  "plan_sha256": "53217f72b048cf05a0ad419e4e8c100a9cdba55bc7167929bc3f7b424b97768b",
+  "script_sha256": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "Every full and pLDDT70 disposition, original position, sequence and written C-alpha coordinate checked against the fully audited source records. PDB rounding tolerances retained. No pair alignment, PAE qualification or biological effect inference."
+}
