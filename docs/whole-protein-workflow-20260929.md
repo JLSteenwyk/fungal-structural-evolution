@@ -86,3 +86,29 @@ fits outside observed record-count ranges and 94,400 fits with missing size
 strata. Covered-only idealized scenarios must not be reported as full-run ETAs.
 Array materialization and joint-support evaluation have started; production
 ordinary-ML fits still await validated arrays and a complete resource assessment.
+
+
+A [full-grid resource assessment](../metadata/whole_protein_fit_resource_assessment_20260929.json)
+now specifies 16 single-thread workers, a 128 GiB memory cap, no swap and a 64 GiB
+fit-output allowance. These are local CPU resources; no GPU or paid infrastructure
+is involved. All 75,070 inputs and 375,350 tree fits remain in scope, including
+the 187,700 fits outside historical timing coverage; there is no pilot subset.
+
+The inspected solver uses nested background/family operations and a species
+factor of rank at most 242. At the maximum 16,697 observations and seven
+coefficients, an n-by-250 float64 array occupies 33,394,000 bytes. At most 182
+distinct positive background sizes are possible because their minimum sum is
+k(k+1)/2; the corresponding cached group-Gram stack is at most 91,000,000 bytes.
+A planning allowance for multiple simultaneous arrays/stacks and interpreter
+storage is about 1.04 GiB per worker, below the aggregate cap. This is a code-based
+planning calculation, not measured peak RSS or a proved allocator bound.
+
+Six complete-grid sensitivity scenarios assign the unmeasured fits the observed
+covered mean cost multiplied by 1, 4 or 16, and vary covered costs by 1 or 4.
+Their idealized durations span roughly 83–826 hours at 16 workers. This span is
+not an ETA, uncertainty interval or upper bound: timing transfer and parallel
+scaling are uncalibrated, and preparation, full audit and refinement are excluded.
+The scenarios expose uncertainty rather than excluding expensive inputs. Actual
+full-run timing records will inform revisions. Production remains unlaunched;
+validated arrays, final provenance pins and a fresh host-capacity check are
+required before applying this allocation.

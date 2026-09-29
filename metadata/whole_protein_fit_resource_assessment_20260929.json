@@ -1,0 +1,122 @@
+{
+  "status": "whole_protein_fit_resources_assessed",
+  "workers": 16,
+  "memory_gib": 128,
+  "swap_gib": 0,
+  "output_gib": 64,
+  "gpu": false,
+  "paid_resources": false,
+  "unique_inputs": 75070,
+  "tree_fits": 375350,
+  "factor_shapes": {
+    "mafft_guide.npz": [
+      4568,
+      242
+    ],
+    "pmsf_mafft_profile.npz": [
+      4568,
+      242
+    ],
+    "pmsf_profile_mafft.npz": [
+      4568,
+      242
+    ],
+    "pmsf_profile_profile.npz": [
+      4568,
+      242
+    ],
+    "profile_guide.npz": [
+      4568,
+      242
+    ]
+  },
+  "memory_estimate": {
+    "max_records": 16697,
+    "max_coefficients": 7,
+    "max_factor_rank": 242,
+    "combined_cross_product_width": 250,
+    "max_distinct_background_counts": 182,
+    "one_n_by_width_array_bytes": 33394000,
+    "group_gram_stack_bytes": 91000000,
+    "planning_per_worker_bytes": 1118315456,
+    "method": "Twenty simultaneous n-by-width arrays, two maximum group-Gram stacks and 256 MiB interpreter/factor allowance. Distinct positive group sizes obey k(k+1)/2 <= n. Counts derived from checked inventory and actual factors. Conservative planning model, not measured RSS or a proven allocator peak. No n-by-n covariance is constructed in the inspected production path."
+  },
+  "runtime_scenarios": [
+    {
+      "workers": 16,
+      "covered_multiplier": 1,
+      "uncovered_mean_multiplier": 1,
+      "assumed_total_task_hours": 1321.3928557240963,
+      "idealized_elapsed_hours": 82.58705348275602
+    },
+    {
+      "workers": 16,
+      "covered_multiplier": 1,
+      "uncovered_mean_multiplier": 4,
+      "assumed_total_task_hours": 3303.746171451387,
+      "idealized_elapsed_hours": 206.4841357157117
+    },
+    {
+      "workers": 16,
+      "covered_multiplier": 1,
+      "uncovered_mean_multiplier": 16,
+      "assumed_total_task_hours": 11233.159434360552,
+      "idealized_elapsed_hours": 702.0724646475345
+    },
+    {
+      "workers": 16,
+      "covered_multiplier": 4,
+      "uncovered_mean_multiplier": 1,
+      "assumed_total_task_hours": 3303.2181071690948,
+      "idealized_elapsed_hours": 206.45113169806842
+    },
+    {
+      "workers": 16,
+      "covered_multiplier": 4,
+      "uncovered_mean_multiplier": 4,
+      "assumed_total_task_hours": 5285.571422896385,
+      "idealized_elapsed_hours": 330.3482139310241
+    },
+    {
+      "workers": 16,
+      "covered_multiplier": 4,
+      "uncovered_mean_multiplier": 16,
+      "assumed_total_task_hours": 13214.984685805548,
+      "idealized_elapsed_hours": 825.9365428628467
+    }
+  ],
+  "runtime_scenario_basis": {
+    "covered_fits": 187650,
+    "uncovered_fits": 187700,
+    "covered_mean_seconds_per_fit": 12.673542775027965,
+    "interpretation": "Sensitivity calculations only, not ETAs, empirical bounds or confidence intervals. Uncovered fits assigned the covered mean multiplied by 1,4,16; these assumptions may understate or overstate actual cost. Ideal parallel scaling; excludes input preparation, output audit, retries, optimization refinement and biological inference."
+  },
+  "uncovered_workload_handling": "Include all 187700 uncovered fits in the same complete production grid, with no pilot or omitted strata. Preserve per-fit timing, errors and optimization flags. Use accumulating full-run timings to revise planning by observed strata; no full ETA until adequate coverage. Resource exhaustion or excessive numerical errors stop the run with existing checkpoints preserved for reviewed continuation.",
+  "storage_estimate": "64 GiB allowance for fit JSON/checkpoint/manifest output; excludes separately budgeted ~58.35 GiB numeric input cache and subsequent audit outputs. Historical covered JSON estimate ~2.38 GiB is not a full-grid storage bound.",
+  "launch_requirements": [
+    "Complete independent materialized-array audit with successful terminal exit",
+    "Pin final materialization receipt, manifest, input proof, resource assessment, code and factor sources in the production plan",
+    "Recheck available memory and disk before launch; apply CPUQuota=1600%, MemoryMax=128G, MemorySwapMax=0 and BLAS thread limits=1",
+    "Use existing complete-grid checkpoint runner and queue full-output audit; retain all numerical review flags"
+  ],
+  "observed_host": {
+    "available_memory_gib": 659.8461112976074,
+    "free_disk_gib": 10876.29345703125
+  },
+  "source_hashes": {
+    "results/model_validation/whole-protein-fit-workload-20260929-v1/workload.json": "55b7ea04c106922e5e4e2a577b934d0a90bf254aa0330387e38e92ce6d542473",
+    "metadata/whole_protein_fit_workload_completed_readback_20260929.json": "de7ef383406993a128a0f6d0e26c9886f59211c68ec1fcf93e6b36ad62255914",
+    "metadata/whole_protein_input_inventory_completed_readback_20260928.json": "69062410441847890aa0d7dd8164fb5ba7be5ad28b43cc0ecfbcad7e71693a9d",
+    "scripts/run_whole_protein_ml.py": "8a18107ef7a4a08bd4dd17e37870b4c07b1dd8289b4695e1a33e3200bea62a4d",
+    "scripts/fit_whole_protein_ml.py": "0fe8d60328c17138cf9ae4d693b6a7dfe5ee6cf5282812fa2519e3ed0601477f",
+    "scripts/fit_matched_ml.py": "aee83a0255bbdc3a60604510a25d7c21c1f938d762443a14df895b53667a2518",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/receipt.json": "10fac74ba12e204df190067ade4fe4de55bfbc5062cf449589763b0fcf3c6936",
+    "metadata/matched_species_factor_readback_20260927.json": "d6d61f2872bf738a73c4ee6e1c55fc48a7681a428d7191baa31ff2f812cbef20",
+    "metadata/whole_protein_ml_adapter_fixtures_20260929.json": "cb6e4c733d705b1a67125c5a39806d886192c6bcb3a25c09492feff175a6a850",
+    "metadata/whole_protein_ml_runner_fixtures_20260929.json": "c01f4d848bb1a3faf84af847d98795805fcec57c7b6f187cfad05162c2802686"
+  },
+  "scope": "Resource assessment for future complete ordinary-ML production only. Does not launch fits, certify calibrated inference, or remove any input. Local CPU allocation; no GPU, cloud infrastructure or new charges."
+}
