@@ -1196,3 +1196,16 @@ exclusion/blank fixtures passed. Resources: one CPU, 16 GiB RAM, no swap/GPU,
 up to 2 GiB output, estimated 0.1–2 hours after prerequisites. The full summary
 and its readback have not yet completed. Exact launch identity is saved in
 `metadata/background_alignment_usable_orders_launch_20260928.json`.
+
+### Full independent whole-protein geometry audit passed
+
+The independent quaternion/SVD audit completed successfully for all 282,120
+background alignments. The final completion recorder passed complete membership,
+source binding, geometry category, unchanged RMSD flag, and degenerate-record
+checks. Both producer and audit exited successfully. The result confirms
+282,043 numerically unique rotations and 77 nonunique rotations, with all five
+original RMSD discrepancies preserved. Evidence:
+`metadata/background_alignment_geometry_completed_20260928.json` and
+`results/structural_comparisons/background-alignment-geometry-readback-20260928-v1.json`.
+The queued order-summary stage has started. Coverage, confidence, domain
+orientation and biological interpretation still require downstream analyses.
