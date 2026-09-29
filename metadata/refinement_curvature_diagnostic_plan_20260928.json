@@ -1,0 +1,22 @@
+{
+  "script": "scripts/diagnose_refinement_curvature.py",
+  "source_plan": "metadata/refinement_gradient_diagnostic_plan_20260928.json",
+  "pins": {
+    "scripts/diagnose_refinement_curvature.py": "5ecfb7d88a9695dc8ba4df4dc636d79a412929aa56d6850f08aa739493077948",
+    "metadata/refinement_gradient_diagnostic_plan_20260928.json": "94b2342c82ce76ed18b5f8985256bc456ae177521ab1130741fdfad49f42f881"
+  },
+  "output": "results/model_validation/refinement-curvature-diagnostic-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Two local Hessian step sizes;8bounded proposals; no production updates or acceptance changes."
+}

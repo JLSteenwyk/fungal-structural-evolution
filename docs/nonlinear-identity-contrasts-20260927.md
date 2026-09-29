@@ -307,3 +307,17 @@ fit. All 25 likelihood evaluations completed successfully. Evidence:
 `metadata/refinement_gradient_diagnostic_completed_20260928.json`; full table:
 `results/model_validation/refinement-gradient-diagnostic-20260928-v1`.
 Further numerical refinement remains necessary for this candidate.
+
+The separate curvature diagnostic `scripts/diagnose_refinement_curvature.py`
+then evaluated two finite-difference Hessians (steps 1e-5 and 1e-6), both
+positive definite, and eight bounded Newton proposals. Both full steps changed
+log1p variance ratios by approximately (4.265e-8, 8.504e-9, -3.620e-8).
+The direct objective decreased by 2.274e-11 and maximum analytic gradient fell
+to 2.836e-9 and 3.616e-9, respectively. This is evidence consistent with
+premature relative-objective stopping near a stationary point; the tiny
+objective improvement has no biological interpretation. Proposals remain
+diagnostic: independent finite-difference confirmation and a reusable audited
+acceptance procedure are needed before replacing any fitted result. All eight
+trials and source hashes are preserved in
+`results/model_validation/refinement-curvature-diagnostic-20260928-v1`;
+completion evidence is `metadata/refinement_curvature_diagnostic_completed_20260928.json`.

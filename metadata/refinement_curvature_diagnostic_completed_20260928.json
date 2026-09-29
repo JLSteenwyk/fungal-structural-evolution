@@ -1,0 +1,72 @@
+{
+  "status": "completed_single_case_curvature_diagnostic_proposals_not_integrated",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt_sha256": "57c5d69850a04dbc92f1fbdb06fd3aa3678500c57eef49a25a224c6b14e2966e",
+  "full_step_proposals": [
+    {
+      "hessian_step": 1e-05,
+      "step_fraction": 1.0,
+      "hessian_eigenvalues": [
+        1284.436681821055,
+        11123.271637281212,
+        31814.909875759215
+      ],
+      "hessian_asymmetry": 0.00020004888312996627,
+      "delta": [
+        4.2645399893250804e-08,
+        8.503622703267506e-09,
+        -3.6200500112179184e-08
+      ],
+      "theta": [
+        0.6623773632852324,
+        0.0005686023839768727,
+        0.014298848264181879
+      ],
+      "objective": 2986.8187322513263,
+      "objective_change": -2.2737367544323206e-11,
+      "gradient": [
+        2.0725493185942516e-11,
+        -1.4014184641075115e-10,
+        -2.8362810677532998e-09
+      ],
+      "maximum_absolute_gradient": 2.8362810677532998e-09,
+      "direct_objective_not_worsened": true,
+      "interior_gradient_below_existing_threshold": true
+    },
+    {
+      "hessian_step": 1e-06,
+      "step_fraction": 1.0,
+      "hessian_eigenvalues": [
+        1284.4366331192368,
+        11123.25903611529,
+        31814.889125791822
+      ],
+      "hessian_asymmetry": 1.3861678326065885e-05,
+      "delta": [
+        4.264538959020656e-08,
+        8.503631831304653e-09,
+        -3.620052366010882e-08
+      ],
+      "theta": [
+        0.6623773632852221,
+        0.0005686023839860008,
+        0.01429884826415833
+      ],
+      "objective": 2986.8187322513263,
+      "objective_change": -2.2737367544323206e-11,
+      "gradient": [
+        1.587484584455155e-11,
+        -4.959565343757148e-11,
+        -3.61564137741723e-09
+      ],
+      "maximum_absolute_gradient": 3.61564137741723e-09,
+      "direct_objective_not_worsened": true,
+      "interior_gradient_below_existing_threshold": true
+    }
+  ],
+  "scope": "One interior case; two finite-difference Hessians and eight bounded Newton proposals. Every direct objective and analytic gradient retained. No production update, global-optimum claim or replacement of all-face/start checks; proposed points need separate finite-difference confirmation."
+}
