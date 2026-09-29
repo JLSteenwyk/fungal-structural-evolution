@@ -611,3 +611,20 @@ were rechecked against the proof. Completion evidence:
 `metadata/whole_protein_record_diagnostic_replay_completed_20260928.json`.
 The historical cause remains unresolved; the separate compensated-sum check
 is still running and the downstream gates have not been changed.
+
+## Versioned design assessment queued behind both checks
+
+A new v2 design assessment and independent readback are queued. The producer
+requires successful terminal states for both the complete diagnostic replay
+and the separate compensated-sum check, verifies their proof/source bindings,
+and writes to `whole-protein-model-designs-20260928-v2`. A mocked failed
+upstream terminal state was rejected before output creation. The original
+failed jobs and historical failure record remain intact. The new jobs assess
+the same 207,360 designs with unchanged numerical methods; they do not fit
+effects or establish calibrated inference. Each is limited to one CPU and
+24 GiB RAM with no swap; planned runtime is 0.1–12 hours per job after its gate.
+
+Scripts: `scripts/assess_whole_protein_model_designs_v2.py` and
+`scripts/readback_whole_protein_model_designs_v2.py`. Resource plans and exact
+process launch records use the metadata stems `whole_protein_model_design_v2`
+and `whole_protein_model_design_readback_v2` dated 20260928.

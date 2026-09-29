@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_whole_protein_model_designs_v2.py",
+  "script_sha256": "78df80785dcebb2b7702fe3c6fec20ea2999d696dc570a4aa5f75c5b76de1396",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All 207360 model designs; unchanged numerical methods; new output and proof paths. Producer gated on full diagnostic replay and compensated check; independent checker gated on producer success.",
+  "historical_failure": "metadata/whole_protein_record_audit_failure_20260928.json",
+  "gate_test": "Mocked failed upstream terminal state rejected before output creation"
+}
