@@ -1,0 +1,27 @@
+{
+  "audit_launch": "metadata/whole_protein_input_inventory_readback_launch_20260928.json",
+  "audit_proof": "metadata/whole_protein_input_inventory_completed_readback_20260928.json",
+  "inventory": "results/structural_comparisons/whole-protein-model-input-inventory-20260928-v1",
+  "cost_strata": "results/model_validation/frozen-ml-fit-costs-20260929-v1/cost_strata.json",
+  "output": "results/model_validation/whole-protein-fit-workload-20260929-v1",
+  "pins": {
+    "scripts/estimate_whole_protein_fit_workload.py": "8b2e8d1b94b3755b0eb30d9d673534b76b662acbafacd669382a0825c672bd63",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_input_inventory_readback_launch_20260928.json": "b47f470840aa4319a4a7dc170ddb45f9346b39a662f1fbc683f3359d1c5c266e",
+    "results/model_validation/frozen-ml-fit-costs-20260929-v1/cost_strata.json": "2ddf564557907f3ecee51e214434c8b7d7e3255e5eed02ccb0f4fde1387c033b",
+    "metadata/frozen_ml_fit_costs_completed_20260929.json": "297e29642790f2acb3b92be6d1ed5886099d1185fe1d0efd55a4eeedd4d33ba2"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_checks": "Covered, outside observed range, missing size bin and missing coefficient strata checked."
+}

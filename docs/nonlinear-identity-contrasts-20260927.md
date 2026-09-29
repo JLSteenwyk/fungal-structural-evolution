@@ -395,3 +395,12 @@ for the 8,201-record gradient-only case. The reproducible harness is
 fresh Hessian and finite-difference reconstruction. This confirms the checker
 on the diagnosed case; the complete queued proposal stage and its full readback
 remain pending, and the original fit still retains its review flag.
+
+At the 361/601 refinement checkpoint, a second case retained only a projected
+gradient flag: `fc3f7097bc4922808dc6dc4637c46f21ba224b98bb77bce5859e593b837a95dc`,
+`pmsf_mafft_profile`, projected norm 0.00110845737. Its family variance parameter
+is exactly zero. The queued interior helper deliberately returns
+`not_applicable_near_boundary`; it cannot clear this case. A boundary-aware
+follow-up must retain the one-sided optimality condition as well as the active
+parameter checks. The first interior case and this boundary case remain flagged;
+these are interim observations, not the final refinement census.

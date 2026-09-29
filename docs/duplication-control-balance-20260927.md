@@ -705,3 +705,16 @@ whole-protein input inventory is still required to calculate the workload and
 identify strata outside this reference. No whole-protein fitting was launched.
 The census used one CPU, 4 GiB memory, no swap/GPU/paid resources; planned
 allowance 0.05–2 hours and 0.1 GiB output.
+
+The resource-reference handoff is queued in
+`scripts/estimate_whole_protein_fit_workload.py`, with pinned plan and exact
+process identity in `metadata/whole_protein_fit_workload_{plan,launch}_20260929.json`.
+It waits for successful independent inventory validation, then counts all unique
+inputs across five trees. Costs transfer only to matching coefficient/tree/size
+strata and only within their observed record ranges; uncovered fits remain
+explicit and excluded from cost totals. Scenarios use 8/16/32 ideal workers and
+1x/4x cost multipliers, reporting covered-work costs separately. These are
+planning scenarios, not ETAs or uncertainty intervals; setup, output audits,
+refinements, cache storage and peak memory still need assessment. Four coverage
+classification fixtures passed. Resources: one CPU, 4 GiB memory, no swap,
+0.01–1 hour planning allowance, no GPU or paid resources. No fitting launched.
