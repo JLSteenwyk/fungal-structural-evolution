@@ -7,6 +7,7 @@
     "Total 868338 pairs and 130084 assignment changes",
     "PNG visually inspected: complete labels, values, axes and descriptive caption; no clipping"
   ],
-  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/bizon/anaconda3/bin/python scripts/plot_boundary_cluster_extension.py --completion metadata/expanded_boundary_cluster_extension_completed_20260929.json --output docs/figures/boundary-cluster-extension-20260929",
-  "scope": "Rendering and source-table arithmetic review only. Does not extend the scientific qualification of the source analysis."
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/bizon/anaconda3/bin/python scripts/plot_expanded_boundary_cluster_extension.py --completion metadata/expanded_boundary_cluster_extension_completed_20260929.json --output docs/figures/boundary-cluster-extension-20260929",
+  "scope": "Rendering and source-table arithmetic review only. Does not extend the scientific qualification of the source analysis.",
+  "implementation_note": "Expanded-schema renderer has a separate filename; original historical plotting script is preserved."
 }
