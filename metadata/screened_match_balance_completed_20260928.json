@@ -1,0 +1,21 @@
+{
+  "status": "completed_screened_balance_with_full_independent_readback",
+  "terminal_states": {
+    "fungal-screened-match-balance-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-screened-match-balance-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "receipt_sha256": "fde020b0e4b99bd94a13640916a248141d15b5871cf1e0cc7001cfd62119854e",
+  "readback_sha256": "3436c47bd4d3245006eacbe380f50e9c864dd3b209e23cfaa9d30ee89ba928c5",
+  "selected_records": 2786912,
+  "coverage_rows": 7776,
+  "balance_rows": 62208,
+  "scope": "All fixed-match identities joined to source nodes; endpoint bits independently decoded; all feature moments, quantiles, nonestimable statuses, shifts against both baselines, taxon/family representation and reuse reconstructed without producer feature/statistics helpers. Descriptive balance only; no evolutionary effect or calibration claim."
+}

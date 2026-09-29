@@ -272,3 +272,34 @@ Resources: one CPU, 4 GiB memory, no swap/GPU/charges, 1–10 minutes after the 
 under 0.1 GiB output. Plan and launch identity are recorded in
 `metadata/screened_match_balance_figure_plan_20260928.json` and
 `metadata/screened_match_balance_figure_launch_20260928.json`.
+
+## Post-screen balance fully verified
+
+Independent reconstruction passed all 432 matching groups, 7,776 coverage rows
+and 62,208 feature rows. Both production and audit exited successfully. Evidence:
+`metadata/screened_match_balance_completed_20260928.json` and the source-bound
+full readback. The figure stage subsequently passed all 576 exported-value
+checks against source rows, followed by inspection of both rendered PNGs.
+
+![S45 screening sensitivity](figures/screened_balance_S45_20260928.png)
+
+![S46 screening sensitivity](figures/screened_balance_S46_20260928.png)
+
+[Source values](figures/screened_balance_plotted_values_20260928.tsv),
+[S45 PDF](figures/screened_balance_S45_20260928.pdf),
+[S46 PDF](figures/screened_balance_S46_20260928.pdf).
+
+For the profile guide, the 50-residue/90%-coverage screen retains 2,550 S45
+matches and 205 S46 matches. In S45, retained mean pLDDT is 1.381 original-target
+SDs above the original modeled pool, and 0.923 pre-screen matched-target SDs
+above the metadata-matched pool. These denominators differ: the values must not
+be added. Target/control mean-pLDDT balance remains close (SMD 0.0094), showing
+that covariate balance within matches can coexist with substantial selection
+of the analyzed target population.
+
+In S46 under that screen, the mean low-confidence-fraction SMD is −0.328.
+Tightening structural coverage therefore does not guarantee better balance on
+every measured covariate. This is a descriptive standardized difference with
+205 retained pairs, not an independent-sample significance test. Guide and screen
+alternatives remain dependent; their agreement is not replication. No outcome
+or screen has been selected as a confirmatory primary analysis from these plots.

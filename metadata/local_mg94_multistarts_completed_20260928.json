@@ -1,0 +1,31 @@
+{
+  "status": "completed_full_mg94_multistarts_and_artifact_numeric_audit",
+  "terminal_states": {
+    "fungal-local-mg94-unconstrained-multistarts-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-local-mg94-unconstrained-multistart-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-mg94-parameter-ranges-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_receipt_sha256": "a00dc1c480f3772d03f1488608b9d8f8ae5f6de3899eb8588ade8d2287dd083d",
+  "audit_receipt_sha256": "6c130ad000f9827b663079f0a9da6dde664d918045e6af551643bbd3df5b5146",
+  "range_receipt_sha256": "19fb40ec8f47a13852c58bf58230b742f4629c32007ac0acaa9b7f6ae6cb35f9",
+  "cases": 1632,
+  "fits": 13056,
+  "artifact_hashes_checked_by_audit": 65280,
+  "parameters_checked_by_audit": 224752,
+  "maximum_fresh_likelihood_error": 2.3646862246096134e-11,
+  "cases_start_spread_gt_1e_5": 204,
+  "parameter_range_rows": 28094,
+  "scope": "Terminal states, source/audit/range receipt bindings, aggregate artifacts and all1632 case receipt hashes verified. Completed audit checked all saved fits and parameters; parameter range source reconstruction still merits independent check. Not global-optimum proof, confidence intervals, saturation qualification or selection inference."
+}

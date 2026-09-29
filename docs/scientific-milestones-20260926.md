@@ -303,3 +303,12 @@ were checked. Independent coordinate/sequence/confidence reconstruction is
 running against the raw structures, and input materialization remains gated on
 its completion. Expanded alignments and evolutionary inference remain pending.
 Evidence: `metadata/duplication_coordinate_validation_producer_completed_20260928.json`.
+
+September 28 completed updates: full post-screen balance readback passed all
+7,776 coverage cells and 62,208 feature summaries. Strict-scenario figures were
+source-checked and visually reviewed; they demonstrate that small within-match
+covariate differences can coexist with large shifts in the retained target pool.
+The codon-model multistart run and full saved-output audit also completed all
+13,056 fits from 1,632 cases. Between-start likelihood spread remains above 1e-5
+in 204 cases. See [codon optimization evidence](local-mg94-unconstrained-multistarts-20260927.md).
+These completions do not establish globally optimal fits or selection evidence.

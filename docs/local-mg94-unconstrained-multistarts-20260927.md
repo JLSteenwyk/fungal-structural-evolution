@@ -102,3 +102,24 @@ service. Resources are one CPU,8GiB RAM, no swap,1GiB output allowance and
 launched. Output will be
 `results/cds/local-mg94-multistart-parameter-ranges-20260928-v1`.
 The source audit and this summary remain pending at launch.
+
+## Full run and audit completed September 28
+
+All 1,632 cases and 13,056 unconstrained fits finished, followed by successful
+full artifact/numerical audit. The audit checked 65,280 artifact hashes and
+224,752 parameter values; the maximum fresh saved-likelihood discrepancy was
+2.365e-11. Completion bindings and all three successful terminal states are in
+`metadata/local_mg94_multistarts_completed_20260928.json`.
+
+Between-start likelihood spread exceeds 1e-5 in 204 cases. The final long-running
+Malassezia case (`Malassezia__649304at2759__code1`) has a spread of 0.033685,
+three starts within 1e-5 of its best observed log likelihood, and an improvement
+of 0.015709 over the prior unconstrained result. This supports retaining
+optimization uncertainty; it does not establish a global optimum.
+
+The full parameter-range stage also finished, retaining 28,094 parameter rows
+across all cases, with ranges over all starts and over starts within 1e-5 of the
+best observed likelihood. Source-file bindings and serialized range arithmetic
+were checked by production. An independent reconstruction of those ranges
+remains outstanding. These numerical ranges are not confidence intervals or
+selection evidence, and do not resolve saturation or parameter identifiability.
