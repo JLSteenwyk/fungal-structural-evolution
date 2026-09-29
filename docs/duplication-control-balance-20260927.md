@@ -171,3 +171,16 @@ one CPU, 16 GiB RAM, no swap/GPU or charges, up to 2 GiB output, 0.1–2 hours.
 Script: `scripts/assess_fixed_match_structural_attrition.py`; execution plan and
 exact process identity are in `metadata/fixed_match_structural_attrition_plan_20260928.json`
 and `metadata/fixed_match_structural_attrition_launch_20260928.json`.
+
+The fixed-match attrition producer completed successfully. A full independent
+readback is now running as `fungal-fixed-match-structural-attrition-readback-20260928.service`.
+It compares every original selection field, reconstructs all six target/control
+bitsets from the original coverage sources and exact matching-node identities,
+and independently accumulates 18 × 4 outcome-category arrays per matching
+stratum. All 7,776 summary cells, including empty strata and metadata-unmatched
+denominators, must agree. The checker imports no producer selection/aggregation
+helpers. Production completion is not yet accepted as a validated attrition result.
+Resources: one CPU, 16 GiB RAM, no swap/GPU/charges, 0.1–2 hours and negligible
+proof output. Script and launch provenance are recorded under
+`readback_fixed_match_structural_attrition.py` and the matching September 28
+readback plan/launch metadata.

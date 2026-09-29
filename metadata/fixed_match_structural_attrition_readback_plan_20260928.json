@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_fixed_match_structural_attrition.py",
+  "script_sha256": "4b0123ed7aa823740a88c972fd37c779578b2be4f3e984070feb67d63b32096d",
+  "producer_receipt": "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1/receipt.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full2786912 original-selected rows,16721472 eligibility bitsets and7776 summary cells; rebuild flags and independent numpy count arrays.",
+  "producer_receipt_sha256": "7aa3e0cc8bbf55975ca664fed6b5787ffec4dc3e315ad6723beef4a51d94eba7"
+}
