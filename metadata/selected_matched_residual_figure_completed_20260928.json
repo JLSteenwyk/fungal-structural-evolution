@@ -1,0 +1,32 @@
+{
+  "status": "complete_descriptive_residual_figure_with_numeric_and_visual_review",
+  "receipt_path": "results/figures/selected-matched-residual-summary-20260928-v1/receipt.json",
+  "receipt_sha256": "3c553e5d5222ed963a54730c240d9f7cf6778b0f101f77a3882c683da9ec1272",
+  "receipt": {
+    "status": "complete_residual_summary_figure_pending_visual_inspection",
+    "source_completion_sha256": "a101f57dffdb50f44f0373d0dc3a54af6a3bb91d6ddf2520b4ac595058a564e4",
+    "source_receipt_sha256": "453f90882fd16fe70d95c9ee7e93b99319ab740625e3bc4273639548e14c0502",
+    "source_table_sha256": "9272356102067ad5e3e4a56a75342b7120a1858d91234d67e3774d4ab1efd8b5",
+    "script_sha256": "043b20f489bcc24280145b7f94390fbf4f6aa1977e7e468d72e564c601049712",
+    "plotted_rows": 15,
+    "full_source_rows": 35,
+    "all_extrema_within_axes": true,
+    "artifacts": {
+      "residual_diagnostics.png": "82173e035342726e5623fe053571441a059e822a8c04d24d8646dcef0776679a",
+      "plotted_ranges.tsv": "352139bec91e21578a076525737407b009311b78766be74c59076d4b72ce77b7",
+      "descriptive_ranges.tsv": "9272356102067ad5e3e4a56a75342b7120a1858d91234d67e3774d4ab1efd8b5",
+      "residual_diagnostics.pdf": "edc0b6a5b36b4f4b8cb8f9e6c291a4bd7e2b0c999668e44d9d19f638e5716952"
+    },
+    "scope": "Descriptive ranges across overlapping fits; no adequacy test or biological inference."
+  },
+  "plotted_rows_checked": 15,
+  "plotted_values_checked": 105,
+  "visual_review": {
+    "png_inspected": true,
+    "labels_and_caption_readable": true,
+    "all_five_trees_present": true,
+    "all_extrema_visible": true,
+    "legend_separate_from_panels": true
+  },
+  "scope": "Descriptive overlapping-fit ranges only; no confidence interval or adequacy-test interpretation."
+}

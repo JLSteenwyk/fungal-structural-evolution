@@ -1098,3 +1098,18 @@ and examination of covariate-dependent spread and tails. Overlapping fits
 are not independent replicates, and the synthetic reference designs do not
 provide transferable fungal-data thresholds. Neither the replay nor these
 summaries qualifies Gaussian adequacy, confidence intervals or biological tests.
+
+The inspected figure
+`results/figures/selected-matched-residual-summary-20260928-v1/residual_diagnostics.pdf`
+(also PNG) displays second and fourth raw moments and the percentage of
+marginal residuals with absolute value above three. Every tree contributes
+28,808 fits. Points mark medians; thick and thin colored lines show empirical
+interquartile and 2.5th–97.5th percentile ranges; gray lines preserve the full
+minimum–maximum extent. The three panels show similar aggregate profiles
+across the five trees, without claiming equivalence of individual fits.
+All 105 plotted values match the source table, whose complete 35 rows are
+copied alongside the figure. The axes include every extremum, and the caption
+explicitly distinguishes descriptive ranges from confidence intervals or
+calibrated adequacy thresholds. Reproduce using
+`scripts/plot_selected_residual_summary.py`; numerical and visual review is
+recorded in `metadata/selected_matched_residual_figure_completed_20260928.json`.
