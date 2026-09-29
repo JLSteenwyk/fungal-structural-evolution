@@ -457,3 +457,23 @@ median durations range from 0.030 seconds for inputs up to 250 residues to 5.960
 seconds for the 1,001–2,000-residue bin. The expanded masked-input length
 distribution is still needed before estimating its workload; simple pair-count
 scaling would ignore this difference.
+
+
+### Expanded alignment workload scenarios queued (September 29)
+
+The [workload estimator](../scripts/estimate_expanded_duplication_alignment_workload.py)
+waits for successful completion of the full expanded PDB input audit, then counts
+all 134,812 pairs in both orders and both masks. Its fresh-alignment scenarios use
+historical mean task wall times within confidence-mask and longer-input length
+bins. Missing historical bins remain uncovered and excluded from estimated hours;
+unavailable masked inputs require no native alignment. Six scenarios combine
+4/8/16 workers with historical costs multiplied by 1 or 4. These are planning
+scenarios, not calibrated ETAs, and do not include queue or I/O overhead. Sequence
+divergence and both input lengths may affect runtime within a bin.
+
+The [plan](../metadata/expanded_duplication_alignment_workload_plan_20260929.json)
+and [launch](../metadata/expanded_duplication_alignment_workload_launch_20260929.json)
+bind source hashes and resources: one CPU, 4 GiB memory, no swap/GPU/paid resources.
+Length boundaries, covered/uncovered/unavailable counts, worker arithmetic and
+zero-coverage fixtures passed. The estimator assumes no result reuse and does not
+launch alignments. Full result review and resource allocation remain pending.

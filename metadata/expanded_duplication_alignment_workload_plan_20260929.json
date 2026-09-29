@@ -1,0 +1,35 @@
+{
+  "audit_launch": "metadata/duplication_alignment_input_readback_launch_20260929.json",
+  "audit_proof": "metadata/duplication_alignment_inputs_completed_readback_20260929.json",
+  "inputs": "results/structural_comparisons/duplication-alignment-inputs-20260928-v1",
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "costs": "results/structural_comparisons/duplication-alignment-cost-census-20260929-v1/receipt.json",
+  "output": "results/structural_comparisons/expanded-duplication-alignment-workload-20260929-v1",
+  "worker_scenarios": [
+    4,
+    8,
+    16
+  ],
+  "pins": {
+    "scripts/estimate_expanded_duplication_alignment_workload.py": "fc64cde9a1d050768be3891d5a09886644a9c2beb28d6e25387d6b926cef29f3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/duplication_alignment_input_readback_launch_20260929.json": "d6ce8bad4c4e505fe107403e347c9d96d960482f1a4acd043b82ca341307c9fb",
+    "results/structural_comparisons/duplication-alignment-cost-census-20260929-v1/receipt.json": "0af65e2542372ed25ebf73ed3215a9e9ac79e2f10af4e9eceb87043555937e83",
+    "metadata/duplication_alignment_cost_census_completed_20260929.json": "0d87a3608201856f1d510fdf14e37ccfc4638ed0793462dbd77bf17901212634",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": "One sequential scan of 553364 input dispositions, compact model table and 134812 pairs. Arithmetic cost scenarios only, no native alignments.",
+  "fixtures": "All length-bin boundaries, covered/uncovered/unavailable accounting, worker arithmetic and zero historical coverage passed."
+}
