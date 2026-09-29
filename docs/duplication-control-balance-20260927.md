@@ -251,3 +251,24 @@ are `metadata/screened_match_balance_readback_plan_20260928.json` and
 Audit resources: one CPU, 24 GiB memory, no swap/GPU/paid resources; estimated
 0.1–8 hours and under 0.01 GiB new output. Full output validation remains pending.
 These are descriptive balance diagnostics, not calibrated duplication effects.
+
+### Screen sensitivity figures queued behind full validation
+
+The figure stage `scripts/plot_screened_match_balance.py` waits for the exact
+independent-audit process to finish successfully and verifies its source receipt
+before using the results. It will export PNG, PDF, SVG and a source-value TSV for
+S45 and S46, both guides, the alignment-E-value policy and all six screens,
+requiring both full and confidence-masked alignments to pass. Three panels per
+guide distinguish matched balance, shifts from the original target pool, and
+additional shifts from the pre-screen matched pool. Each metric has its own
+symmetric color range, fixed across scenarios; cell values and per-screen retained
+counts are shown. The TSV preserves feature-specific denominators, including
+positive-log-distance exclusions. The scenarios remain illustrative sensitivity
+analyses, not designated primary tests.
+
+The stage checks all exported rows against source-derived values and the plotted
+arrays against the same matrices. Visual review remains required after generation.
+Resources: one CPU, 4 GiB memory, no swap/GPU/charges, 1–10 minutes after the audit,
+under 0.1 GiB output. Plan and launch identity are recorded in
+`metadata/screened_match_balance_figure_plan_20260928.json` and
+`metadata/screened_match_balance_figure_launch_20260928.json`.

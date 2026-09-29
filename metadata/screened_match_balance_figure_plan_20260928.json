@@ -1,0 +1,40 @@
+{
+  "pins": {
+    "scripts/plot_screened_match_balance.py": "cc7a26625a22de7054d58acdda8485b6280438e3ef939cb683ae61b1922484dc",
+    "scripts/readback_background_control_balance.py": "7d5da6550e6708ca1311a340427a2c413ae4ef32b4b75607daec9fb4443fdcb1",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/screened_match_balance_readback_plan_20260928.json": "a6aa61a00ccbf2f2ebfd1bfb249311b8cafc898956f1fc85c2aecdd5f3c04bf7",
+    "metadata/screened_match_balance_readback_launch_20260928.json": "158ef61a87bf896a1f902942ae8d9224301f4122fb505d95b85d4803f116d1ae"
+  },
+  "audit": {
+    "unit": "fungal-screened-match-balance-readback-20260928.service",
+    "pid": 2599436,
+    "created": 1790649267.81,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_screened_match_balance.py",
+      "--plan",
+      "metadata/screened_match_balance_readback_plan_20260928.json"
+    ],
+    "plan": "metadata/screened_match_balance_readback_plan_20260928.json",
+    "plan_sha256": "a6aa61a00ccbf2f2ebfd1bfb249311b8cafc898956f1fc85c2aecdd5f3c04bf7",
+    "status": "active_full_screened_balance_readback",
+    "fixtures": "253 independent statistical reconstructions passed"
+  },
+  "source": "results/structural_comparisons/screened-match-balance-20260928-v1",
+  "proof": "metadata/screened_match_balance_completed_readback_20260928.json",
+  "output": "results/figures/screened-match-balance-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      10
+    ],
+    "wait_for_full_audit": true,
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  }
+}
