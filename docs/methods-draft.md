@@ -1002,8 +1002,8 @@ the distribution definitions to installed source files.
 ## Whole-protein sequence–structure contrasts (September 29)
 
 This analysis extends the matched domain workflow to whole-protein structural
-comparisons. Input construction and descriptive summaries are complete; model
-design verification and the exact-input inventory are in progress. Whole-protein
+comparisons. Input construction, descriptive summaries and complete model-design verification
+are complete; the exact-input inventory is in progress. Whole-protein
 effect fitting, uncertainty calibration and biological interpretation have not
 been completed. These inputs use the original matching snapshot and must not
 be presented as comparisons across every model in the expanded September 28
@@ -1061,7 +1061,8 @@ with SVD cross-checked against pivoted QR. This centering belongs to rank
 diagnostics; it does not redefine the zero-difference reference for subsequent
 fitting. Marginal support is not joint convex-hull support. The completed
 producer reported full rank and positive residual degrees of freedom in every
-design; independent numerical readback is still required before acceptance.
+design; independent numerical reconstruction subsequently verified all 207,360
+designs across all 96 settings.
 
 Descriptive summaries give record-weighted means, means with equal weight per
 family, and means with equal weight per focal taxon. Positive-distance record,

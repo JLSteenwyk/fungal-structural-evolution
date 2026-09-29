@@ -718,3 +718,14 @@ planning scenarios, not ETAs or uncertainty intervals; setup, output audits,
 refinements, cache storage and peak memory still need assessment. Four coverage
 classification fixtures passed. Resources: one CPU, 4 GiB memory, no swap,
 0.01–1 hour planning allowance, no GPU or paid resources. No fitting launched.
+
+The whole-protein design audit completed successfully on September 29: all
+207,360 designs in all 96 settings were independently reconstructed, including
+constant/rank/conditioning and marginal-overlap summaries. Every design retained
+full rank and positive residual degrees of freedom. The audit proof is
+`metadata/whole_protein_model_designs_v2_completed_readback_20260928.json`;
+`metadata/whole_protein_model_designs_v2_audited_20260929.json` records successful
+terminal exit, verified source/artifact hashes and the identified live inventory
+handoff. The 414,720-setting input inventory can now run; its audit, workload
+estimate and whole-protein fitting are not yet complete. Numerical design
+validity does not establish covariance adequacy or joint support.

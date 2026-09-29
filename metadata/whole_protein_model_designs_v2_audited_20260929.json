@@ -1,0 +1,25 @@
+{
+  "status": "whole_protein_designs_fully_audited_inventory_handoff_live",
+  "designs": 207360,
+  "counts": {
+    "full_rank_with_positive_residual_df": 207360
+  },
+  "audit_proof_sha256": "dc6f9aa1601eeb7ad5358b4933f868d62fca23431a178cde2c21b6124aceed58",
+  "source_receipt_sha256": "5c64ff3277698acbf26c1d2ef5708e0ced157cef623c29534ec185fb064a3cc4",
+  "audit_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "inventory_process": {
+    "pid": 2657884,
+    "created": 1790652752.47,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/inventory_whole_protein_model_inputs.py",
+      "--plan",
+      "metadata/whole_protein_model_input_inventory_plan_20260928.json"
+    ]
+  },
+  "scope": "All design rows independently reconstructed and all source/artifact bindings rechecked. Inventory process live; inventory completion and fitting not claimed."
+}
