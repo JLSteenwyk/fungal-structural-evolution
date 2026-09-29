@@ -552,3 +552,39 @@ these stages. Resources: one CPU, 24 GiB memory, no swap/GPU/charges, estimated
 0.1–12 hours after production. Plan/launch:
 `metadata/whole_protein_model_design_readback_plan_20260928.json` and
 `metadata/whole_protein_model_design_readback_launch_20260928.json`.
+
+## Summary audit discrepancy under investigation
+
+The original independent record audit stopped after 64 validated settings. At
+pLDDT70/same-mask/n50_c70/orders0,0, MAFFT/envelope-bitscore/S41, it reported an
+RMSD record mean of 0.06397611194705394 versus the stored 0.06394882038337699.
+Fresh queries for the same 7,298 records from both source CSV and Parquet agree
+with the stored mean: pandas, NumPy and compensated `math.fsum` give
+0.06394882038337703; fresh DuckDB gives 0.06394882038337699. The cause of the
+original mismatch is not established. The original failure remains recorded,
+and both dependent design jobs correctly stopped without producing results.
+
+A full 96-setting diagnostic replay is running with unchanged tolerances and
+extra capture of offending records and a separate compensated-sum calculation
+if any mismatch recurs. It writes a separate diagnostic proof and does not
+silently replace the original audit. Evidence/launch:
+`metadata/whole_protein_record_audit_failure_20260928.json`,
+`metadata/whole_protein_record_diagnostic_replay_plan_20260928.json`, and
+`metadata/whole_protein_record_diagnostic_replay_launch_20260928.json`.
+
+## Pair-level covariance index complete
+
+Independently of the summary audit, the fully verified raw matched-pair table
+now has a covariance index for all 52,675 pairs. It binds original target/control
+IDs to shared-entity family components and rows of the five previously audited
+species covariance factors. All 684,775 exported fields were checked after
+serialization; factor diagonals were compared with source quadratic forms for
+all 4,568 patterns and all five trees, and background nesting within components
+was verified. The rank-242 factors retain the existing relative-distance species
+kernels. No variance has been fitted, and this working covariance is not proof
+that every source of dependence has been accounted for.
+
+Script: `scripts/prepare_whole_protein_covariance_index.py`; evidence:
+`metadata/whole_protein_covariance_index_completed_20260928.json`.
+The index is available for later input inventory, but fitting remains gated on
+resolution of the summary audit and completion of design checks.

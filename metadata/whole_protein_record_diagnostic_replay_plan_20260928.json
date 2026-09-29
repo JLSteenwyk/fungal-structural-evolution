@@ -1,0 +1,21 @@
+{
+  "script": "scripts/diagnose_whole_protein_record_readback.py",
+  "script_sha256": "1804dbc3f3d090c3503f262d168e35ac2a43da1367c70f21f9ece9a60a087552",
+  "original_checker_sha256": "9104b2fd891d59c854f9f9b3bc66fce4d71ea20cd21f6c6dbded31d0d91a19a2",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "reason": "Original independent audit failed at setting64,mafft/envelope_bitscore/S41 RMSD record mean. Fresh direct pandas,numpy,math.fsum and DuckDB queries agree with production; preserve failure and capture any full-replay discrepancy without loosening tolerance.",
+  "original_reported_mean": 0.06397611194705394,
+  "source_and_recomputed_mean": 0.06394882038337703,
+  "records": 7298
+}
