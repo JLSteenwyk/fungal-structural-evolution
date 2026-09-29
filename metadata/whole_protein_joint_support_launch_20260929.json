@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-whole-protein-joint-support-20260929.service",
+  "pid": 2734857,
+  "created": 1790658084.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_whole_protein_joint_support.py"
+  ],
+  "plan": "metadata/whole_protein_joint_support_plan_20260929.json",
+  "plan_sha256": "9ff168e49a991a445703094c95b313960c209e26f3ae18eab47093a6713c7ad0",
+  "certificate_fixture_checks": [
+    "supported symmetric points",
+    "outside joint hull despite marginal zero coverage"
+  ]
+}

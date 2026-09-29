@@ -729,3 +729,26 @@ terminal exit, verified source/artifact hashes and the identified live inventory
 handoff. The 414,720-setting input inventory can now run; its audit, workload
 estimate and whole-protein fitting are not yet complete. Numerical design
 validity does not establish covariance adequacy or joint support.
+
+### Whole-protein joint-reference support queued (September 29)
+
+`scripts/assess_whole_protein_joint_support.py` waits for the exact independent
+input-inventory audit, then reconstructs every unique input and checks its full
+signature. It tests the uncentered zero-covariate reference using the existing
+convex-hull linear program, retaining sparse nonnegative-weight or separating-
+vector certificates and all unresolved classifications. Outcome and tree do not
+change this covariate geometry; reuse requires identical numerical covariate
+bytes, column names and ordered record identities. Every unique fit input keeps
+an explicit mapping to its support assessment. Full certificate readback remains
+required before acceptance; neither marginal overlap nor numerical rank is a
+substitute for this check.
+
+The service identity and pinned plan are in
+`metadata/whole_protein_joint_support_{launch,plan}_20260929.json`.
+Resources: one CPU, 24 GiB, no swap, 2 GiB output, no GPU or paid resources.
+Planning allowance is 2–36 hours, based on an uncalibrated 0.05–0.5 seconds per
+geometry before exact reuse. Up to 207,360 geometries are possible; pathological
+30-second solver timeouts could take much longer (1,728 hours for all of them).
+This is a full-design run, with no pilot or subsampling. Supported-point and
+joint-exclusion fixtures passed separate certificate checks. The queued launch
+is not a completed assessment or evidence of adequate biological overlap.
