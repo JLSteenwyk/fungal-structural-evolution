@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-screened-match-balance-readback-20260928.service",
+  "pid": 2599436,
+  "created": 1790649267.81,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_screened_match_balance.py",
+    "--plan",
+    "metadata/screened_match_balance_readback_plan_20260928.json"
+  ],
+  "plan": "metadata/screened_match_balance_readback_plan_20260928.json",
+  "plan_sha256": "a6aa61a00ccbf2f2ebfd1bfb249311b8cafc898956f1fc85c2aecdd5f3c04bf7",
+  "status": "active_full_screened_balance_readback",
+  "fixtures": "253 independent statistical reconstructions passed"
+}

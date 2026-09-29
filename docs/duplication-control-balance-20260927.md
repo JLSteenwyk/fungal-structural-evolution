@@ -228,3 +228,26 @@ CPU, 24 GiB RAM, no swap/GPU/charges, up to 1 GiB output and a broad 0.1–8-hou
 estimate. The executable stage is `scripts/assess_screened_match_balance.py`;
 plan and exact live identity are in `metadata/screened_match_balance_plan_20260928.json`
 and `metadata/screened_match_balance_launch_20260928.json`.
+
+### Producer complete; independent reconstruction running
+
+The producer finished successfully September 28 at 22:34 EDT, with all
+2,786,912 original selections represented in 7,776 coverage cells and 62,208
+feature summaries. Source and output hashes were verified after terminal exit
+zero; the receipt is recorded in
+`metadata/screened_match_balance_producer_completed_20260928.json`.
+
+`scripts/readback_screened_match_balance.py` now independently reconstructs every
+cell from the audited fixed-match membership and original graph nodes. It uses
+separate feature/statistics implementations, decodes each endpoint's eligibility
+before intersection, and checks both target baselines, moments, quantiles,
+nonestimable statuses, retained taxa/families, and control reuse. All 253
+independent statistics fixtures passed before launch. The checker requires the
+producer's exact process identity to finish and its service to report success;
+source/script/plan hashes are pinned and rechecked. Its plan and launch record
+are `metadata/screened_match_balance_readback_plan_20260928.json` and
+`metadata/screened_match_balance_readback_launch_20260928.json`.
+
+Audit resources: one CPU, 24 GiB memory, no swap/GPU/paid resources; estimated
+0.1–8 hours and under 0.01 GiB new output. Full output validation remains pending.
+These are descriptive balance diagnostics, not calibrated duplication effects.

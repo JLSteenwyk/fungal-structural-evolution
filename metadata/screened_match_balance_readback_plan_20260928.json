@@ -1,0 +1,42 @@
+{
+  "pins": {
+    "scripts/readback_screened_match_balance.py": "5398c4929052c61c4cc0b04b2bbfdef3642487c8b5e23fe6d9992038585514d4",
+    "scripts/readback_background_control_balance.py": "7d5da6550e6708ca1311a340427a2c413ae4ef32b4b75607daec9fb4443fdcb1",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/assess_screened_match_balance.py": "581dc430f2f9723f7d9433dcd113adf522ade683c2103e8a1065dd05a64ddb16",
+    "scripts/background_control_balance.py": "b5072545be80146350ecfb1a38abc3f61b3750b584bf77181a3d390204863606",
+    "metadata/screened_match_balance_plan_20260928.json": "1625c2c64c864f7d4ac47a931eb66eda44bd9389c5651cc3c00316405ade3276",
+    "metadata/screened_match_balance_launch_20260928.json": "3543688d3cac0ab02b668c184001733cdd19cd5995d011b7659e7f0a92a8b792",
+    "metadata/fixed_match_structural_attrition_completed_readback_20260928.json": "18903f1a1c9469d821fcad8081eaa4e784f4b0dbfc2f94c1c414c8983a8f24cb",
+    "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1/receipt.json": "7aa3e0cc8bbf55975ca664fed6b5787ffec4dc3e315ad6723beef4a51d94eba7"
+  },
+  "producer": {
+    "unit": "fungal-screened-match-balance-20260928.service",
+    "pid": 2593436,
+    "created": 1790648827.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/assess_screened_match_balance.py"
+    ],
+    "plan": "metadata/screened_match_balance_plan_20260928.json",
+    "status": "active_full_screened_match_balance",
+    "fixtures": "Known moments/SMD/shifts, absent/single/zero-variance cases, positive-log exclusions and endpoint swaps passed"
+  },
+  "source": "results/structural_comparisons/screened-match-balance-20260928-v1",
+  "attrition": "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1",
+  "attrition_readback": "metadata/fixed_match_structural_attrition_completed_readback_20260928.json",
+  "graph": "results/orthology/background-match-graph-20260927-v1",
+  "output": "metadata/screened_match_balance_completed_readback_20260928.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  }
+}
