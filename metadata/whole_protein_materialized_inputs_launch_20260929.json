@@ -1,0 +1,17 @@
+{
+  "unit": "fungal-whole-protein-materialized-inputs-20260929.service",
+  "pid": 2765409,
+  "created": 1790660710.51,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_whole_protein_inputs.py"
+  ],
+  "plan": "metadata/whole_protein_materialized_inputs_plan_20260929.json",
+  "plan_sha256": "1ca05aeca0e9c334cc252757b65ceb6ceab4fe8b24b03bfdd11bb836e2ac47c6",
+  "real_input_check": {
+    "fit_input_id": "0003bbafa499033b487732f320a25962a3913359a72724ee1041f2850aa86511",
+    "records": 8059,
+    "variant": "gene_distance_cubic",
+    "status": "passed_recipe_identity_numeric_and_covariance_group_reconstruction"
+  }
+}

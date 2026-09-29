@@ -1,0 +1,31 @@
+{
+  "inventory_plan": "metadata/whole_protein_model_input_inventory_plan_20260928.json",
+  "audit_launch": "metadata/whole_protein_input_inventory_readback_launch_20260928.json",
+  "audit_proof": "metadata/whole_protein_input_inventory_completed_readback_20260928.json",
+  "patterns": "results/phylogeny/matched-species-covariance-factors-20260927-v1/patterns.tsv",
+  "output": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "pins": {
+    "scripts/materialize_whole_protein_inputs.py": "e5db1b7ae6e0a162612660c39f42cb6d54e3544f7eeeda4c2025f613eda8316c",
+    "scripts/assess_whole_protein_model_designs_v2.py": "3561e25aed077541d88e48a13b4b391b490d0d10ea3288190ecb1d50929f0fd0",
+    "scripts/inventory_whole_protein_model_inputs.py": "3a4f944068ed81458554ead8bc63ac91dc87707336f9ae0a57f577b58e0959b2",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_model_input_inventory_plan_20260928.json": "8883d13cf46e43f5bb94cb08e11a4e560002e7d40382de2f9d89901d731585c9",
+    "metadata/whole_protein_input_inventory_readback_launch_20260928.json": "b47f470840aa4319a4a7dc170ddb45f9346b39a662f1fbc683f3359d1c5c266e",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/patterns.tsv": "08ce9f329bc5d138a6f5edde4c6ea86df1491d027d40271de7b0052630b914e5",
+    "metadata/matched_species_factor_readback_20260927.json": "d6d61f2872bf738a73c4ee6e1c55fc48a7681a428d7191baa31ff2f812cbef20"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_gib": 80,
+    "planning_hours": [
+      1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": "75070 unique recipes contain 453351822 row occurrences; exact array-size sum is 58.35370118916035 GiB before NPZ and manifest overhead. Uncompressed storage avoids repeated compression CPU cost. 80 GiB allocation; 11 TiB free at planning. Reconstruction plus serialization planning allowance 1-8 hours, not a measured ETA.",
+  "prelaunch_checks": "Array/group encoding, signed-zero normalization, NPZ roundtrip, invalid background-family nesting and species-pattern mismatch fixtures passed. Numerical recipe and ordered-identity hashes checked for every output at runtime; no fitting launched."
+}

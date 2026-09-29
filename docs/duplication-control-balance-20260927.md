@@ -798,3 +798,27 @@ Plan and process identity:
 `metadata/whole_protein_fit_workload_readback_{plan,launch}_20260929.json`.
 Resources: one CPU, 4 GiB, no swap, 0.01–1 hour planning allowance, small JSON
 output, no GPU or paid resources. Fitting remains unlaunched.
+
+## Whole-protein numerical input materialization queued (September 29)
+
+`scripts/materialize_whole_protein_inputs.py` waits for successful full inventory
+readback, then exports all 75,070 distinct inputs as uncompressed NPZ files.
+Matrices preserve the audited outcome, intercept and active predictor columns,
+without centering or rescaling. Each file also retains ordered identity hashes,
+background and family-component group indices, and species-pattern row indices.
+The producer verifies exact numeric/identity hashes, background nesting within
+family components, agreement with the covariance index and a complete array
+roundtrip. A separate full reconstruction is required before fitting.
+
+Array encoding fixtures passed, including rejection of inconsistent grouping
+and species mappings. One real 8,059-record cubic input matched its complete
+audited recipe and covariance mappings. These are implementation checks within
+the full workflow; all inputs remain scheduled.
+
+Plan and exact process identity:
+`metadata/whole_protein_materialized_inputs_{plan,launch}_20260929.json`.
+The exact recipe census contains 453,351,822 row occurrences, requiring
+58.354 GiB of raw arrays. Budget: 80 GiB output, one CPU, 24 GiB memory, no swap,
+1–8 hours planning allowance, no GPU or paid resources. Runtime remains an
+estimate. The output directory is
+`results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1`.
