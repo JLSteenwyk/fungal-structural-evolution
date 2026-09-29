@@ -132,3 +132,15 @@ remain unresolved: no data or tolerances have been changed. Any projected or
 reoptimized weights must form a separately verified certificate against validated
 arrays using the original inclusion tolerance; this inspection does not replace
 the full independent source readback.
+
+A separate [weight-repair function](../scripts/repair_joint_support_weights.py)
+now constructs a new witness by clipping negative sparse weights, normalizing
+the remaining positive mass and recomputing the barycenter from supplied arrays.
+It preserves the original certificate and solver fields, uses the existing
+1e−8 inclusion tolerance, and passes the candidate through the independent
+compensated-sum checker. Clipping alone never establishes support. Known exact
+support and strictly outside-hull examples, preservation of the original, and
+corruption rejection passed in the
+[fixture record](../metadata/joint_support_weight_repair_fixtures_20260929.json).
+This function has not been applied to project certificates; completed source
+array validation and the full original-certificate readback remain prerequisites.

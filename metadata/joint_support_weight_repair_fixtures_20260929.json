@@ -1,0 +1,23 @@
+{
+  "status": "passed_joint_support_weight_repair_fixtures",
+  "source_hashes": {
+    "scripts/repair_joint_support_weights.py": "12a5815db2514543175b5a26595f51aec213907246f046451967e644b8798d25",
+    "scripts/check_joint_support_weight_repair.py": "1be449b5000eca3f58b318621f2f603c3f4874dc87cae4accf0563095759fb1f",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85"
+  },
+  "cases": [
+    "exact zero support recovered from tiny negative weight",
+    "strictly positive points remain unresolved",
+    "original certificate unchanged",
+    "corrupt original barycenter rejected",
+    "false candidate support classification rejected"
+  ],
+  "production_status": "not applied; await complete audited source arrays and full original certificate readback",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Synthetic correctness fixtures only; no project certificates reclassified."
+}
