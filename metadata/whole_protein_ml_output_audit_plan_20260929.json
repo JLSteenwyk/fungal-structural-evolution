@@ -1,0 +1,42 @@
+{
+  "fit_launch": "metadata/whole_protein_ml_launch_20260929.json",
+  "pins": {
+    "scripts/audit_whole_protein_ml_outputs.py": "eb56564e604c9705c3d4f10882976a90d2e36a6224e82c83072a82874362c037",
+    "scripts/check_whole_protein_fit_payload.py": "27cba88f49160607ee8cb2f67b7d6b6309837342759b5806d69f70d82f12e8df",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_ml_launch_20260929.json": "20963d8b3a4b3acef465731062b4c87836f969170291f8cdb3385d6ef9d6ed89",
+    "metadata/whole_protein_ml_plan_20260929.json": "027339d4f7e571b82fd3ba79fe0bed7f132677835176d020966d54a8023efd5e",
+    "metadata/whole_protein_payload_replay_fixtures_20260929.json": "cc4ef2ebdbdf45ef2e6c4bf8f08cf7925a6f07218ed72440efd31237d008e24c",
+    "metadata/whole_protein_output_audit_fixtures_20260929.json": "1f9ec30e83bbec575e71946a7deb277bfc13848693fece5ae31bae7a95ad513f"
+  },
+  "workers": 8,
+  "output": "results/model_validation/whole-protein-ml-output-audit-20260929-v1",
+  "resources": {
+    "cpus": 8,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "output_allowance_gib": 32,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "runtime_planning": {
+    "basis": "Replay 22 candidates for each successful fit, without optimizing. Timing not yet measured for this full dataset; errors are accounted for without likelihood replay.",
+    "maximum_candidate_replays": 8257700,
+    "assumed_seconds_per_fit": [
+      1,
+      10,
+      100
+    ],
+    "idealized_elapsed_hours": [
+      13.03298611111111,
+      130.32986111111111,
+      1303.298611111111
+    ],
+    "interpretation": "Sensitivity scenarios, not ETA or upper bound; excludes hashing and IO. Eight workers fit within the completed host capacity assessment; starts only after fit producer exits successfully."
+  },
+  "scope": "Full 375350-disposition audit. Retain errors and numerical review flags; no calibration or biological inference claim."
+}

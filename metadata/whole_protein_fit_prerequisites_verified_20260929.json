@@ -1,0 +1,51 @@
+{
+  "status": "verified_completed_whole_protein_fit_prerequisites",
+  "checked_at": "2026-09-29T15:19:08.650364-04:00",
+  "checks": [
+    {
+      "launch": "metadata/whole_protein_materialized_input_readback_launch_20260929.json",
+      "launch_sha256": "d4520dfe7f38b31541e3df5ccbbcf54018be68fc1dd03d9b67fccb040603f362",
+      "proof": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+      "proof_sha256": "e3fd436421ed713baf36c4c8c66d34df5570330e496eebc14c6c2f4be04d82dd",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      }
+    },
+    {
+      "launch": "metadata/whole_protein_joint_support_readback_launch_20260929.json",
+      "launch_sha256": "57b4766cd3b9e2647a688bc65a8839c07a6a1f2b3ac272d7ee125740d012a65e",
+      "proof": "metadata/whole_protein_joint_support_completed_readback_20260929.json",
+      "proof_sha256": "94333290c3692be380c1dd377dd727778591081016a7cd69c172886304aa350f",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      }
+    },
+    {
+      "launch": "metadata/whole_protein_model_links_readback_launch_20260929.json",
+      "launch_sha256": "7269dcc48b4382c269e930116ac90a015ea5d5adcd20c571a1159d6e90bfbc39",
+      "proof": "metadata/whole_protein_model_links_completed_readback_20260929.json",
+      "proof_sha256": "ef5a111c055a3d3c20be0158138e38ef27213485f24c06fa75bffbb0e0c54b7e",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      }
+    }
+  ],
+  "resource_assessment_sha256": "317e515ab435fb6e400b21593de352d1a83f0dd8ce47b6f9bf1501421cba8cc2",
+  "capacity": {
+    "available_memory_gib": 683.1605033874512,
+    "free_disk_gib": 10761.162574768066,
+    "load": [
+      88.5537109375,
+      87.5205078125,
+      84.6455078125
+    ],
+    "logical_cpus": 192
+  },
+  "scope": "Terminal success and pinned validation artifacts verified; production fit and scientific interpretation remain outstanding."
+}

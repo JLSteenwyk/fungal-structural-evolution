@@ -1,0 +1,42 @@
+{
+  "resource_assessment": "metadata/whole_protein_fit_resource_assessment_20260929.json",
+  "inputs": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "input_audit": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+  "workload": "results/model_validation/whole-protein-fit-workload-20260929-v1/workload.json",
+  "workload_audit": "metadata/whole_protein_fit_workload_completed_readback_20260929.json",
+  "factor_audit": "metadata/matched_species_factor_readback_20260927.json",
+  "input_audit_launch": "metadata/whole_protein_materialized_input_readback_launch_20260929.json",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/structural_comparisons/whole-protein-ml-20260929-v1",
+  "workers": 16,
+  "pins": {
+    "results/model_validation/whole-protein-fit-workload-20260929-v1/workload.json": "55b7ea04c106922e5e4e2a577b934d0a90bf254aa0330387e38e92ce6d542473",
+    "metadata/whole_protein_fit_workload_completed_readback_20260929.json": "de7ef383406993a128a0f6d0e26c9886f59211c68ec1fcf93e6b36ad62255914",
+    "metadata/whole_protein_input_inventory_completed_readback_20260928.json": "69062410441847890aa0d7dd8164fb5ba7be5ad28b43cc0ecfbcad7e71693a9d",
+    "scripts/run_whole_protein_ml.py": "8a18107ef7a4a08bd4dd17e37870b4c07b1dd8289b4695e1a33e3200bea62a4d",
+    "scripts/fit_whole_protein_ml.py": "0fe8d60328c17138cf9ae4d693b6a7dfe5ee6cf5282812fa2519e3ed0601477f",
+    "scripts/fit_matched_ml.py": "aee83a0255bbdc3a60604510a25d7c21c1f938d762443a14df895b53667a2518",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/receipt.json": "10fac74ba12e204df190067ade4fe4de55bfbc5062cf449589763b0fcf3c6936",
+    "metadata/matched_species_factor_readback_20260927.json": "d6d61f2872bf738a73c4ee6e1c55fc48a7681a428d7191baa31ff2f812cbef20",
+    "metadata/whole_protein_ml_adapter_fixtures_20260929.json": "cb6e4c733d705b1a67125c5a39806d886192c6bcb3a25c09492feff175a6a850",
+    "metadata/whole_protein_ml_runner_fixtures_20260929.json": "c01f4d848bb1a3faf84af847d98795805fcec57c7b6f187cfad05162c2802686",
+    "metadata/whole_protein_fit_resource_assessment_20260929.json": "317e515ab435fb6e400b21593de352d1a83f0dd8ce47b6f9bf1501421cba8cc2",
+    "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json": "e3fd436421ed713baf36c4c8c66d34df5570330e496eebc14c6c2f4be04d82dd",
+    "metadata/whole_protein_materialized_input_readback_launch_20260929.json": "d4520dfe7f38b31541e3df5ccbbcf54018be68fc1dd03d9b67fccb040603f362",
+    "metadata/whole_protein_fit_prerequisites_verified_20260929.json": "5d902dda9ab295d3867bee73eeea42a17b3a94b601927f21e09ed08ed89f5715",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "resources": {
+    "cpus": 16,
+    "memory_gib": 128,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All 75070 exact inputs across five tree alternatives, 375350 fits. Retain optimization flags and errors; full audit and calibrated biological inference remain separate."
+}

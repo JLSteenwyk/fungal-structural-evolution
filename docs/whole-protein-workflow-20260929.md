@@ -35,11 +35,11 @@ flowchart TD
 | Five predictor designs | All 207,360 independently checked | [Design proof](../metadata/whole_protein_model_designs_v2_completed_readback_20260928.json) |
 | Exact input inventory | Complete; all 414,720 settings and 75,070 unique recipes independently reconstructed | [Producer checkpoint](../metadata/whole_protein_input_inventory_producer_completed_20260929.json), [checker](../scripts/readback_whole_protein_input_inventory.py) |
 | Compute estimates | Producer and arithmetic checker complete; 187,650 fits covered and 187,700 uncovered | [Plan](../metadata/whole_protein_fit_workload_plan_20260929.json), [check plan](../metadata/whole_protein_fit_workload_readback_plan_20260929.json) |
-| Joint covariate support | Producer complete; independent certificate checker running | [Producer completion](../metadata/whole_protein_joint_support_producer_completed_20260929.json), [check plan](../metadata/whole_protein_joint_support_readback_plan_20260929.json) |
-| Materialized fitting inputs | All 75,070 inputs written; full reconstruction checker running | [Producer completion](../metadata/whole_protein_materialized_inputs_producer_completed_20260929.json), [check plan](../metadata/whole_protein_materialized_input_readback_plan_20260929.json) |
-| Observation-matched model links | Producer and full link checker queued | [Plan](../metadata/whole_protein_model_links_plan_20260929.json), [check plan](../metadata/whole_protein_model_links_readback_plan_20260929.json) |
-| Ordinary-ML fitting | Adapter and runner implemented and fixture-tested; production unlaunched | [Adapter checks](../metadata/whole_protein_ml_adapter_fixtures_20260929.json), [runner checks](../metadata/whole_protein_ml_runner_fixtures_20260929.json), [runner](../scripts/run_whole_protein_ml.py) |
-| Full fit-output audit | Payload checker and restartable runner fixture-tested; production unlaunched | [Payload checks](../metadata/whole_protein_payload_replay_fixtures_20260929.json), [audit checks](../metadata/whole_protein_output_audit_fixtures_20260929.json), [audit runner](../scripts/audit_whole_protein_ml_outputs.py) |
+| Joint covariate support | Full independent check passed; six unresolved certificates retained | [Producer completion](../metadata/whole_protein_joint_support_producer_completed_20260929.json), [check plan](../metadata/whole_protein_joint_support_readback_plan_20260929.json) |
+| Materialized fitting inputs | All 75,070 inputs independently reconstructed and checked | [Producer completion](../metadata/whole_protein_materialized_inputs_producer_completed_20260929.json), [check plan](../metadata/whole_protein_materialized_input_readback_plan_20260929.json) |
+| Observation-matched model links | All 829,440 comparison links independently checked | [Plan](../metadata/whole_protein_model_links_plan_20260929.json), [check plan](../metadata/whole_protein_model_links_readback_plan_20260929.json) |
+| Ordinary-ML fitting | Full 375,350-fit production run launched; 16 CPU workers | [Adapter checks](../metadata/whole_protein_ml_adapter_fixtures_20260929.json), [runner checks](../metadata/whole_protein_ml_runner_fixtures_20260929.json), [runner](../scripts/run_whole_protein_ml.py) |
+| Full fit-output audit | Full output audit queued behind successful production completion | [Payload checks](../metadata/whole_protein_payload_replay_fixtures_20260929.json), [audit checks](../metadata/whole_protein_output_audit_fixtures_20260929.json), [audit runner](../scripts/audit_whole_protein_ml_outputs.py) |
 | Model comparisons, calibrated uncertainty and interpretation | Incomplete | [Methods draft](methods-draft.md#whole-protein-sequencestructure-contrasts-september-29), [scientific milestones](scientific-milestones-20260926.md) |
 
 The model includes residual variance, reused-background effects, family-component
@@ -61,8 +61,10 @@ Plans record checksums, resource allowances and dependencies; corresponding
 launch records identify exact processes. Scripts run from the repository root.
 Queued jobs wait for successful terminal states and matching completion proofs.
 Keep pinned scripts and plans unchanged while those jobs run. The production
-fitting and audit runners accept `--plan`; their concrete production plans and
-worker allocation remain to be issued after validation and workload review.
+fitting and audit runners accept `--plan`; the
+[production plan](../metadata/whole_protein_ml_plan_20260929.json) allocates 16 CPU
+workers, and the [audit plan](../metadata/whole_protein_ml_output_audit_plan_20260929.json)
+allocates eight workers after successful producer completion.
 Large arrays and fit outputs stay outside Git history, with manifests and hashes
 binding their identities.
 
@@ -84,10 +86,10 @@ and [workload completion](../metadata/whole_protein_fit_workload_audited_2026092
 bind their successful terminal states. Historical timing coverage excludes 93,300
 fits outside observed record-count ranges and 94,400 fits with missing size
 strata. Covered-only idealized scenarios must not be reported as full-run ETAs.
-Array materialization and joint-support evaluation have completed; their
-independent full readbacks are running. Production ordinary-ML fits still await
-validated arrays, final provenance pins and a fresh host-capacity check using
-the completed resource assessment below.
+Array materialization, joint-support evaluation and their independent full
+readbacks have completed. The observation-matched link checker also completed.
+Production ordinary-ML fits launched after final provenance pins and a fresh
+host-capacity check using the completed resource assessment below.
 
 
 A [full-grid resource assessment](../metadata/whole_protein_fit_resource_assessment_20260929.json)
@@ -111,16 +113,15 @@ Their idealized durations span roughly 83–826 hours at 16 workers. This span i
 not an ETA, uncertainty interval or upper bound: timing transfer and parallel
 scaling are uncalibrated, and preparation, full audit and refinement are excluded.
 The scenarios expose uncertainty rather than excluding expensive inputs. Actual
-full-run timing records will inform revisions. Production remains unlaunched;
-validated arrays, final provenance pins and a fresh host-capacity check are
-required before applying this allocation.
+full-run timing records will inform revisions. The production run now uses this
+allocation; its launch record identifies the exact process and immutable plan.
 
 The joint-support producer completed all 75,070 unique inputs, mapping them to
 15,270 exact covariate geometries. It reports zero supported to numeric tolerance
 for 15,264 geometries and six unresolved certificates. All unresolved cases remain
 explicit. The completion record verifies terminal success, 157 source hashes and
-both output artifact hashes; the independent full certificate checker is now
-running. Producer classifications remain provisional until that check completes.
+both output artifact hashes. The independent full certificate checker completed
+successfully and retained all six unresolved classifications.
 Hull inclusion alone does not establish interior overlap, dense support, model
 adequacy or causal exchangeability.
 
@@ -144,13 +145,25 @@ compensated-sum checker. Clipping alone never establishes support. Known exact
 support and strictly outside-hull examples, preservation of the original, and
 corruption rejection passed in the
 [fixture record](../metadata/joint_support_weight_repair_fixtures_20260929.json).
-This function has not been applied to project certificates; completed source
-array validation and the full original-certificate readback remain prerequisites.
+This function has not been applied to project certificates. Source-array
+validation and the full original-certificate readback have now completed; any
+new witness still requires separate verification.
 
 Materialization completed 75,070 NPZ inputs representing 453,351,822 record
 occurrences and 375,350 planned tree-specific fits. Output files total
 62,752,448,732 bytes. The producer completion record binds successful terminal
 status, source hashes, the input manifest and receipt, unique input identities,
-file sizes and occurrence totals. It does not substitute for the independent
-reconstruction of all five serialized arrays, which is now running. No
-whole-protein production fits have been launched.
+file sizes and occurrence totals. The independent reconstruction of all five serialized arrays subsequently
+completed successfully for every input. Whole-protein production fits are now
+running, with their full output audit queued.
+
+The [launch handoff](../metadata/whole_protein_fit_prerequisites_verified_20260929.json)
+records successful terminal states, validation-proof hashes and available host
+capacity (683 GiB memory and 10,761 GiB disk at the prelaunch check). The
+[fit launch](../metadata/whole_protein_ml_launch_20260929.json) and
+[audit launch](../metadata/whole_protein_ml_output_audit_launch_20260929.json)
+bind process identities and plans. The producer has a 128 GiB memory cap; the
+queued auditor has a 64 GiB cap, with swap disabled for both. Audit timing remains
+unmeasured: its plan exposes 1/10/100 seconds per disposition sensitivity
+scenarios rather than a finish-date claim. No scientific aim is complete from
+these preparation checks or launches.
