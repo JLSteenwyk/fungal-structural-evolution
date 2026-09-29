@@ -1042,3 +1042,31 @@ The full numerical audit has started and replayed its first 100 inputs at
 checks are not evidence that residual distributions fit the model or that
 fungal hypothesis tests are calibrated. Model adequacy and uncertainty
 calibration remain open.
+
+### Descriptive residual-grid summary prepared
+
+`summarize_selected_matched_residuals.py` requires terminal success of the
+complete residual audit and verifies its plan, source pins, receipt and table
+hashes. It retains every fit disposition and produces per-tree status counts
+and equal-weight per-fit ranges for seven diagnostic measures. Tail fractions
+use each fit's own observation count. These ranges describe overlapping model
+fits; they are not confidence intervals, independent replicate distributions,
+or adequacy-test thresholds. The complete per-fit table is retained for later
+inspection rather than filtering to extreme fits.
+
+`check_selected_residual_summary.py` checks unequal fit sizes, a retained
+failed disposition, duplicate identities, impossible tail counts and nonfinite
+values. The summary stage is prepared, not yet run: the full numerical audit
+must finish first. The planned invocation is:
+
+```bash
+/home/bizon/anaconda3/bin/python scripts/summarize_selected_matched_residuals.py \
+  --audit-plan metadata/selected_matched_residual_audit_plan_20260928.json \
+  --audit-launch metadata/selected_matched_residual_audit_launch_20260928.json \
+  --output results/model_validation/selected-matched-residual-summary-20260928-v1
+```
+
+Resource allowance: one CPU, 4 GiB RAM, no GPU or paid infrastructure,
+1 GiB output, and 0.01–1 active hour for reading 144,040 rows, computing
+35 descriptive range rows and checking complete serialized tables. This stage
+does not refit models or calibrate fungal hypothesis tests.
