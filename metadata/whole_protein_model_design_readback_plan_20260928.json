@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_whole_protein_model_designs.py",
+  "script_sha256": "1fb80da3d2a3cb5236c6601d55097f353664796d96a34bb51d5e7b49749882eb",
+  "producer_launch_sha256": "fa9dcf315f00446d9844145c8ac4c8ccfd4aa4b7991e822d8dcfba39db157f38",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full207360 designs; independent factored polynomial/log-ratio predictor construction and rank/coverage/reuse summaries after exact producer terminal success",
+  "fixtures": "15 independent cross-implementation cases across five variants and empty/single/multiple records passed"
+}

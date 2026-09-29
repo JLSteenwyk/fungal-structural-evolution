@@ -532,3 +532,23 @@ exclusions and polynomial differences. Resources: one CPU, 24 GiB memory,
 no swap/GPU/charges, estimated 0.1–12 hours after the audit and under 2 GiB output.
 Plan and exact launch identity: `metadata/whole_protein_model_design_plan_20260928.json`
 and `metadata/whole_protein_model_design_launch_20260928.json`.
+
+### Independent whole-protein design readback queued
+
+`scripts/readback_whole_protein_model_designs.py` will reconstruct all 207,360
+designs after exact producer completion. It uses factored differences
+`(t-b)(t+b)` and `(t-b)(t²+tb+b²)` for the polynomial terms, a log ratio for the
+positive-distance term, pandas column summaries and SciPy singular values.
+All source membership, five variant matrices, constants, nonzero constants,
+rank, conditioning, residual degrees of freedom, marginal overlap, diversity
+and reuse must agree. A separate condition-number tolerance accounts for
+amplification near numerical singularity; rank/status classifications must agree
+exactly. The checker imports no producer design or assessment helper.
+
+Fifteen cross-implementation fixtures passed across all five variants and
+empty/single/multiple-record groups, including zero-distance exclusion. Full
+production and independent reconstruction remain pending; no model is fitted by
+these stages. Resources: one CPU, 24 GiB memory, no swap/GPU/charges, estimated
+0.1–12 hours after production. Plan/launch:
+`metadata/whole_protein_model_design_readback_plan_20260928.json` and
+`metadata/whole_protein_model_design_readback_launch_20260928.json`.
