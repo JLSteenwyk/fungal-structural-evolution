@@ -1100,3 +1100,16 @@ linked in [whole-protein matching and validation](duplication-control-balance-20
 The [design-producer completion record](../metadata/whole_protein_model_designs_v2_producer_completed_20260929.json)
 and [input-inventory plan](../metadata/whole_protein_model_input_inventory_plan_20260928.json)
 distinguish completed preparation from pending model inference.
+
+
+The expanded September 28 duplication queue contains 134,812 distinct model/version
+pairs involving 276,682 models. Exported C-alpha sequences, coordinates and
+confidence values for all 100,073,779 residues were reconstructed independently
+from the frozen source mmCIF atom rows. The audit shares the lexical CIF parser
+with the producer but uses separate extraction logic. All 277 shard proofs and
+aggregate counts passed; there were no rejected model dispositions. Source and
+proof bindings are recorded in the
+[completed audit](../metadata/duplication_coordinate_readback_completed_20260929.json).
+Full and pLDDT70 C-alpha alignment inputs are being generated with original residue
+positions retained. Input validation and expanded alignments remain pending;
+this coordinate audit provides no PAE qualification or biological effect estimate.

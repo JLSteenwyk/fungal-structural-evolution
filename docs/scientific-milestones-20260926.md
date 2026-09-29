@@ -332,12 +332,13 @@ See [matching and screening evidence](duplication-control-balance-20260927.md).
 These comparisons retain their frozen older atlas: they do not yet cover the
 expanded September 28 duplication universe.
 
-Expanded duplication raw-coordinate production completed all 276,682 models
-without reported rejections; all 277 output shards and exact source partitions
-were checked. Independent coordinate/sequence/confidence reconstruction is
-running against the raw structures, and input materialization remains gated on
-its completion. Expanded alignments and evolutionary inference remain pending.
-Evidence: `metadata/duplication_coordinate_validation_producer_completed_20260928.json`.
+Expanded duplication coordinate production and independent source-CIF
+reconstruction completed all 276,682 models and 100,073,779 residues across
+277 shards, without rejected model dispositions. Full and pLDDT70 C-alpha
+alignment-input materialization started after successful audit completion.
+Complete PDB input readback, expanded alignments and evolutionary inference
+remain pending. Evidence:
+[completed coordinate audit](../metadata/duplication_coordinate_readback_completed_20260929.json).
 
 September 28 completed updates: full post-screen balance readback passed all
 7,776 coverage cells and 62,208 feature summaries. Strict-scenario figures were
