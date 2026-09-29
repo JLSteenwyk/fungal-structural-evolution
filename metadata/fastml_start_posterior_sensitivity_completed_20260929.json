@@ -1,0 +1,33 @@
+{
+  "status": "complete_full_fastml_start_posterior_sensitivity",
+  "groups": 156,
+  "nonempty_groups": 153,
+  "posterior_rows_read": 40291700,
+  "groups_with_likelihood_range_above_tolerance": 74,
+  "groups_with_best_iteration_limit": 0,
+  "near_best_tolerance": 1e-05,
+  "scope": "Full five-start internal-node posterior and parameter ranges, preserving raw values and empty inputs. Near-best is a descriptive likelihood tolerance, not a confidence region. A single near-best start yields zero range without stability evidence. No global optimum, calibrated uncertainty, biological indel model or ancestral-sequence qualification.",
+  "all_groups_with_internal_range_above_0_01": 9,
+  "all_maximum_internal_probability_range": 0.35847881785768243,
+  "near_best_groups_with_internal_range_above_0_01": 0,
+  "near_best_maximum_internal_probability_range": 0.0026001318842379106,
+  "receipt": "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/receipt.json",
+  "receipt_sha256": "84e22580e0796d6a5e3e3f47f53c4914df55951f8f313610cd9a5cde1f84f7a0",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_hashes_checked": 3084,
+  "artifact_hashes": {
+    "start_sensitivity.jsonl": "706fd5c7fe45839afb579543ae599ebebb91994bf24443ff14abc037d12bffb7"
+  },
+  "near_best_start_counts": {
+    "5": 79,
+    "1": 29,
+    "2": 18,
+    "4": 19,
+    "3": 8
+  },
+  "completion_check_scope": "Terminal state, all source/artifact hashes, complete group identities and all likelihood ranges checked against previous audit. Posterior matrix ranges computed by the source-bound producer; not independently recomputed in this completion handoff."
+}

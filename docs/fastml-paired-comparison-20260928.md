@@ -210,4 +210,19 @@ a single near-best start yields zero range without evidence of stability. Raw
 roundoff excursions are retained without clipping. One CPU and an 8 GiB memory
 cap are allocated, no swap/GPU/paid resources, with an uncalibrated 0.01–2 hour
 planning allowance. The [launch record](../metadata/fastml_start_posterior_sensitivity_launch_20260929.json)
-binds the exact process and plan. Full results remain pending.
+binds the exact process and plan. This comparison subsequently completed
+successfully; the results below supersede its running status.
+
+The [completed sensitivity record](../metadata/fastml_start_posterior_sensitivity_completed_20260929.json)
+accounts for every group and all 40,291,700 posterior rows. Nine of 153 nonempty
+groups have at least one internal-node probability range above 0.01 across all
+five starts; the largest range is 0.35848. Among starts within 1e−5 of the best
+likelihood, the largest range is 0.0026002 and none exceeds 0.01. Counts of groups
+by number of near-best starts are 1: 29, 2: 18, 3: 8, 4: 19, 5: 79.
+These distinctions matter: zero spread for a single retained start is automatic.
+No best-start fit reported a model-iteration-limit message, but 74 groups still
+have likelihood spread above tolerance across all starts. The completion handoff
+checked every source hash, group identity and likelihood range against the
+previous audit; posterior ranges have not been independently recomputed by a
+second implementation. These are sensitivity diagnostics, not calibrated
+ancestral uncertainty or qualification of the indel model.

@@ -1,0 +1,23 @@
+{
+  "status": "passed_parameterized_primary_diagnostic_regressions",
+  "source_hashes": {
+    "scripts/check_primary_short_alignment_geometry_v2.py": "c616e83e7b4fac525a3cc4f057dcc461b85356f5b27c97f5829712f97e7763de",
+    "scripts/check_completed_primary_rmsd_diagnostic_v2.py": "d7a9a74b49fd35479341797a0f0647d1f13ac3f398f4f5d325b6fc0a0db399c0"
+  },
+  "comparisons": [
+    {
+      "check": "short",
+      "comparison": "All fields including every row/discrepancy exactly identical except script hash",
+      "original": "metadata/primary_alignment_short_geometry_readback_20260927.json",
+      "original_sha256": "960d181de1f0cc7b54c957fd5f8527c808bb0d830394e66bdd00fc6827aad55e",
+      "parameterized_result_sha256": "2f43e9d9b7b490fd4a282f5991d24b423a71fe6ecc30e7b9f355912ad174c654"
+    },
+    {
+      "check": "accounting",
+      "comparison": "All fields including every row/discrepancy exactly identical except script hash",
+      "original": "metadata/primary_alignment_rmsd_diagnostic_completed_20260927.json",
+      "original_sha256": "6f57c4b12a3d6ef3a5ff26c2bae37bebb8f17e33d42a16f1f9e419e62079dac8",
+      "parameterized_result_sha256": "cedf8ba59a8493070858976202176e883c2757d774da49479dd919b97e75d399"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "unit": "fungal-expanded-duplication-accounting-check-20260929.service",
+  "pid": 467407,
+  "created": 1790710713.15,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_completed_primary_rmsd_diagnostic_v2.py",
+    "--wait-for",
+    "metadata/expanded_duplication_rmsd_diagnostic_launch_20260929.json",
+    "--plan",
+    "metadata/expanded_duplication_rmsd_diagnostic_plan_20260929.json",
+    "--output",
+    "metadata/expanded_duplication_rmsd_diagnostic_completed_20260929.json"
+  ],
+  "plan": "metadata/expanded_duplication_accounting_check_plan_20260929.json",
+  "plan_sha256": "6daf628482631e6b13637a3185f2c74c51a5e384addb1c711ebd63122109e7cb"
+}

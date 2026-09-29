@@ -1,0 +1,17 @@
+{
+  "unit": "fungal-expanded-duplication-short-check-20260929.service",
+  "pid": 467404,
+  "created": 1790710713.09,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_primary_short_alignment_geometry_v2.py",
+    "--wait-for",
+    "metadata/expanded_duplication_rmsd_diagnostic_launch_20260929.json",
+    "--plan",
+    "metadata/expanded_duplication_rmsd_diagnostic_plan_20260929.json",
+    "--output",
+    "metadata/expanded_duplication_short_geometry_readback_20260929.json"
+  ],
+  "plan": "metadata/expanded_duplication_short_check_plan_20260929.json",
+  "plan_sha256": "05d20999992307be06224204174f9ff4f4094026ae282daeaab9984166977755"
+}

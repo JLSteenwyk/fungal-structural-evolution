@@ -562,3 +562,17 @@ checks successful terminal status, source pins, output hashes, complete
 pair/mask membership and aggregate counts. It does not independently repeat
 all signature comparisons or authorize native-result reuse. The expanded
 alignment run continues to compute fresh results for every ready input pair.
+
+
+The expanded diagnostic now has two queued follow-up checks: a
+[complete disposition/RMSD accounting check](../metadata/expanded_duplication_accounting_check_plan_20260929.json)
+and [analytic short-mapping check](../metadata/expanded_duplication_short_check_plan_20260929.json).
+Both require the exact diagnostic process to finish successfully. Versioned
+parameterized copies preserve the earlier numerical logic and leave pinned
+original scripts unchanged. Regression runs exactly reproduced all earlier
+completion fields and all 327 one/two-residue analytic rows, apart from the
+script hash; [regression evidence](../metadata/expanded_duplication_diagnostic_checker_regressions_20260929.json)
+binds both versions. Each queued service has one CPU, an 8 GiB memory cap and no
+swap, with an uncalibrated 0.05–2 active-hour allowance. Expanded results remain
+pending. Coordinate rank/rotation-curvature assessment and its serialized
+readback must follow these checks; no discrepancy is silently accepted.
