@@ -450,3 +450,17 @@ compares both real-case proposals against the previous separate direct-likelihoo
 check. Proofs are `metadata/lower_face_polish_fixtures_20260929.json` and
 `metadata/lower_face_polish_real_case_20260929.json`. Both checks completed
 successfully; broader audited application and integration remain pending.
+
+The lower-face helper is queued for the complete frozen refinement snapshot in
+`scripts/prepare_audited_lower_face_proposals.py`. It uses the same successful
+601-fit audit prerequisite as the separate interior proposal stage, preserves
+all dispositions, and only considers fits whose sole failed check is the
+gradient criterion. Inapplicable face geometries remain explicit. The exact
+service identity and pinned plan are
+`metadata/audited_lower_face_proposals_launch_20260929.json` and
+`metadata/audited_lower_face_proposals_plan_20260929.json`; output will be
+`results/model_validation/audited-lower-face-proposals-20260929-v1`.
+Resources: one CPU, 16 GiB memory, no swap, 0.1–8 hours planning allowance,
+0.1 GiB output, no GPU or paid resources. The service is waiting for the audit;
+this is not completed application. A separate all-proposal readback remains
+required, and no proposed point is selected or substituted into production.

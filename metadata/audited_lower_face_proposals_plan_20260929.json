@@ -1,0 +1,33 @@
+{
+  "audit_launch": "metadata/flagged_polynomial_refinement_readback_launch_20260928.json",
+  "audit_proof": "metadata/flagged_polynomial_refinement_completed_readback_20260928.json",
+  "refinements": "results/model_validation/flagged-polynomial-refinements-20260928-v1",
+  "inputs": "results/model_validation/flagged-polynomial-inputs-20260928-v1",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/model_validation/audited-lower-face-proposals-20260929-v1",
+  "pins": {
+    "scripts/prepare_audited_lower_face_proposals.py": "b46c97f9827fa9e8aacc066431f80b6f7645b08f81417b010c6c6b320736e05d",
+    "scripts/lower_face_gradient_polish.py": "65fd47dbc6af18c2f0409c68a35d48ca01ef0b5a01624c9b90cd3b292739393b",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/lower_face_polish_fixtures_20260929.json": "781a7783bea3cd11c01d2312fa802f3197d9301dfd46834567a15440aac5e423",
+    "metadata/lower_face_polish_real_case_20260929.json": "ead3cd39a3edc97f2ea42721cb2850c6a669f6bbf3e40c0c290060884bb30a0a",
+    "metadata/flagged_polynomial_refinement_readback_launch_20260928.json": "435715e9e8b10e93fba1c843e6bd6d007d8e537e6115ff9a694d44c92f205030",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/receipt.json": "d46bd085b94d728a30d9ecc689c2ca6e6a9fe367bcdd2250e7e0838709224618"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All 601 audited dispositions retained. Gradient-only mixed exact-zero faces may receive guarded proposals. Other cases remain explicit. No replacement; separate proposal readback and full-grid audit required."
+}
