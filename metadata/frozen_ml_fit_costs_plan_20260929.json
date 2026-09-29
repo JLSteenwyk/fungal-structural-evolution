@@ -1,0 +1,21 @@
+{
+  "census": "results/model_validation/polynomial-optimization-flag-census-20260928-v1",
+  "output": "results/model_validation/frozen-ml-fit-costs-20260929-v1",
+  "pins": {
+    "scripts/summarize_frozen_ml_fit_costs.py": "017b6c85dc92f034f8183165d3ebab717e36df5c6b37cd375aa12950d1f272ca",
+    "results/model_validation/polynomial-optimization-flag-census-20260928-v1/receipt.json": "3834f480568a2fb9ab8b90c12af278a6d00de3125581db5826116ec7f071d1b6",
+    "results/model_validation/polynomial-optimization-flag-census-20260928-v1/manifest_prefix.jsonl": "eab0dd3ab03c4283260cceac8893a5bca927c44273d4a54b2896d36166637bd0"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.05,
+      2
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

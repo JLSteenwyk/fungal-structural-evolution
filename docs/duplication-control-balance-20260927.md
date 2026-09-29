@@ -684,3 +684,24 @@ gated on completion of that checker. Evidence:
 `metadata/whole_protein_model_designs_v2_producer_completed_20260929.json`.
 These diagnostics do not establish joint covariate support, model adequacy,
 calibrated uncertainty, or a biological effect.
+
+### Whole-protein fitting resource reference (September 29)
+
+A complete timing census of the previously frozen 75,205 domain-model fits is
+available in `results/model_validation/frozen-ml-fit-costs-20260929-v1`.
+`scripts/summarize_frozen_ml_fit_costs.py` checked every underlying fit hash and
+retained all 74,604 passing and 601 review-flagged fits. The table records model
+size, coefficient count, tree, elapsed fit time and serialized bytes; 90 strata
+summarize these costs. All table aggregates were checked separately with pandas
+and recorded in `metadata/frozen_ml_fit_costs_completed_20260929.json` after
+successful terminal exit. The pinned plan and launch identity are alongside it.
+
+The median recorded fit time is 12.796 seconds, with 241.937 summed fit-wall
+hours across the prefix. These are concurrent elapsed fit times, not CPU-hour
+measurements. The prefix is ordered by completion, not randomly sampled;
+whole-protein outcomes, designs and covariance groups can change the cost.
+This provides a planning reference, not a whole-protein ETA. The exact audited
+whole-protein input inventory is still required to calculate the workload and
+identify strata outside this reference. No whole-protein fitting was launched.
+The census used one CPU, 4 GiB memory, no swap/GPU/paid resources; planned
+allowance 0.05–2 hours and 0.1 GiB output.
