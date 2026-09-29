@@ -1,0 +1,33 @@
+{
+  "script": "scripts/inventory_whole_protein_model_inputs.py",
+  "audit_launch": "metadata/whole_protein_model_design_readback_v2_launch_20260928.json",
+  "audit_proof": "metadata/whole_protein_model_designs_v2_completed_readback_20260928.json",
+  "design_root": "results/structural_comparisons/whole-protein-model-designs-20260928-v2",
+  "records_root": "results/structural_comparisons/matched-whole-protein-records-20260928-v1",
+  "covariance_root": "results/structural_comparisons/whole-protein-covariance-index-20260928-v1",
+  "selections": "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz",
+  "output": "results/structural_comparisons/whole-protein-model-input-inventory-20260928-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/inventory_whole_protein_model_inputs.py": "3a4f944068ed81458554ead8bc63ac91dc87707336f9ae0a57f577b58e0959b2",
+    "scripts/assess_whole_protein_model_designs_v2.py": "3561e25aed077541d88e48a13b4b391b490d0d10ea3288190ecb1d50929f0fd0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_model_design_readback_v2_launch_20260928.json": "1fbeed68561539db01fc230deb40234e9fc83e1bb0e605c9aeaa99e588d06d41",
+    "results/structural_comparisons/whole-protein-covariance-index-20260928-v1/receipt.json": "89ade075ab84e4d78009be8ffbcd5f05876a3a626d94f14d75a504abf8c55522",
+    "metadata/whole_protein_covariance_index_completed_20260928.json": "1c35003d4941e9b4453ce8c5bcf29c8185be4019f433d2028a4fe666e9ca348b",
+    "results/structural_comparisons/matched-whole-protein-records-20260928-v1/receipt.json": "ce013343270a97343faa15cc4df57497dfe9086d023a69c3d04155741224c502"
+  },
+  "scope": "414720 design/outcome settings, all statuses retained; exact deduplication only. No fitting. Requires independent inventory readback and measured runtime estimate before full fit launch.",
+  "fixtures": "Exact duplicate/signed-zero equivalence; row order, nextafter single-ULP value, column name, outcome and covariance hash distinctions passed."
+}

@@ -637,3 +637,23 @@ cause remains unresolved. The v2 design producer and its waiting independent
 checker were verified live by exact process identity. Proofs:
 `metadata/whole_protein_failed_setting_fsum_completed_20260928.json` and
 `metadata/whole_protein_summary_validation_recovery_20260928.json`.
+
+## Whole-protein input inventory queued
+
+`scripts/inventory_whole_protein_model_inputs.py` waits for successful independent
+v2 design readback before inventorying all 414,720 design/outcome settings:
+207,360 designs for each of RMSD difference and mean-endpoint TM divergence
+difference. Empty, rank-deficient, nonzero-constant and insufficient-df settings
+remain explicit. Estimable settings receive recipes keyed by exact ordered
+pair identities, outcome/design columns, numerical input bytes, and the frozen
+covariance receipt. Only signed zero is normalized; no approximate merging or
+record subsampling is used. Five tree alternatives remain separate.
+
+Identity tests passed for exact duplicates and signed zero, and confirmed
+separation for changed row order, a single-ULP value change, different columns,
+outcomes and covariance bindings. The inventory is limited to one CPU, 24 GiB
+RAM, no swap, and a 2 GiB output allowance, with 0.1–12 hours planned after the
+gate. It does not launch fits. Independent inventory readback and a measured
+fit-runtime estimate remain required before full fitting. Plan and launch:
+`metadata/whole_protein_model_input_inventory_plan_20260928.json` and
+`metadata/whole_protein_model_input_inventory_launch_20260928.json`.
