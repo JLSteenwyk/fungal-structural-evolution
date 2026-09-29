@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-background-alignment-geometry-20260928.service",
+  "pid": 2544825,
+  "created": 1790645165.14,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_background_alignment_geometry.py",
+    "--plan",
+    "metadata/background_alignment_geometry_plan_20260928.json"
+  ],
+  "plan": "metadata/background_alignment_geometry_plan_20260928.json",
+  "plan_sha256": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+  "status": "queued_after_full_diagnostic_terminal_success",
+  "fixtures": "Point, two-point, planar, reflected and random cases passed independent quaternion/alternate-SVD checks; corrupt curvature/rank/status/ratio rejected."
+}

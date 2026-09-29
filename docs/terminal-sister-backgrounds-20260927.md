@@ -1070,3 +1070,16 @@ failure passed the analytic two-point check. The new diagnostic uses one CPU,
 Full discrepancy census and subsequent geometry assessment remain pending.
 See `metadata/background_alignment_strict_audit_failure_20260928.json` and
 `metadata/background_alignment_rmsd_diagnostic_launch_20260928.json`.
+
+The full geometry assessment is queued behind terminal success of that
+diagnostic. It covers all 282,120 successful directed background alignments,
+reconstructs their mappings, repeats diagnostic values and measures coordinate
+rank and proper-rotation curvature. The established reference-geometry method
+is reused in a separate background runner; point, two-point, planar, reflected
+and random fixtures passed independent quaternion/alternate-SVD checks, with
+corrupt geometry fields rejected. One CPU, 16 GiB RAM, no swap and a 2 GiB
+output allowance apply; the broad 0.2–8 hour estimate excludes waiting.
+All RMSD flags remain explicit. This assesses numerical identifiability,
+not prediction accuracy, alignment homology or biological effects. Full
+independent geometry readback is still required. Launch provenance is in
+`metadata/background_alignment_geometry_launch_20260928.json`.
