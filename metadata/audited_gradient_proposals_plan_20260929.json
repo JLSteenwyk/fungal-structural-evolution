@@ -1,0 +1,33 @@
+{
+  "audit_launch": "metadata/flagged_polynomial_refinement_readback_launch_20260928.json",
+  "audit_proof": "metadata/flagged_polynomial_refinement_completed_readback_20260928.json",
+  "refinements": "results/model_validation/flagged-polynomial-refinements-20260928-v1",
+  "inputs": "results/model_validation/flagged-polynomial-inputs-20260928-v1",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/model_validation/audited-gradient-proposals-20260929-v1",
+  "pins": {
+    "scripts/prepare_audited_gradient_proposals.py": "e09ee57afc4ecbac062f8443d7452496d9dfccb967fbd9fea130d180c4823fe5",
+    "scripts/interior_gradient_polish.py": "82dcc3bf37fea14ba34ea4a7ffa6b7260c85c70d3d8d19e8595f132da6a5b9cc",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/interior_gradient_polish_fixture_checks_20260929.json": "7ff689d8a21d2b78d09bfe47be26e325b7963147edec50cff0a39ef002708edc",
+    "metadata/interior_gradient_polish_case_checked_20260929.json": "b7e8d6f07fff2fb8259fdad572bb8a434cc9c0d8de4244f49597555cfd53eaff",
+    "metadata/flagged_polynomial_refinement_readback_launch_20260928.json": "435715e9e8b10e93fba1c843e6bd6d007d8e537e6115ff9a694d44c92f205030",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/receipt.json": "d46bd085b94d728a30d9ecc689c2ca6e6a9fe367bcdd2250e7e0838709224618"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Wait for all 601 refinement outputs to pass replay. Preserve every disposition; propose local corrections only for gradient-only cases. No fit replacement or inferential acceptance."
+}

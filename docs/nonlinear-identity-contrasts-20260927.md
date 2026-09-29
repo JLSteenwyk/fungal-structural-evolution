@@ -350,3 +350,25 @@ output and source hashes are recorded in
 other flags and any integration remain gated on the full refinement audit;
 boundary cases and disagreements among starts are not resolved by this local
 routine.
+
+### Audited gradient-only proposals queued (September 29)
+
+`scripts/prepare_audited_gradient_proposals.py` is queued behind successful
+termination of the exact recorded refinement-output audit. It requires the
+complete 601-fit audit proof and matching source receipt before doing numerical
+work. The pinned plan and live process identity are recorded in
+`metadata/audited_gradient_proposals_plan_20260929.json` and
+`metadata/audited_gradient_proposals_launch_20260929.json`.
+
+Every audited fit receives a disposition. Fits already passing are retained;
+other review flags are preserved. Only fits whose sole failing criterion is
+the projected gradient receive proposals from the validated interior correction
+routine. Both Hessian-step proposals must satisfy the unchanged gradient
+threshold and direct finite-difference checks. Source and output hashes are
+checked before and after execution. No proposal is selected or substituted for
+an existing result. A separate proposal-output readback remains required before
+integration, as does completion and audit of the original full model grid.
+
+Resources: one CPU, 16 GiB memory, no swap, no GPU or paid resources; planning
+allowance 0.1–8 hours and 0.1 GiB output. The job is currently waiting on its
+upstream audit; a launch is not evidence of completed proposals.
