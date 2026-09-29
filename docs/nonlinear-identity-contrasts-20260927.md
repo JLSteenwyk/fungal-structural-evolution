@@ -516,3 +516,30 @@ four producer/checker services. These are numerical local candidates, not
 selected replacements: all original fit statuses remain unchanged. Explicit
 selection, coefficient/covariance recomputation and integration still need
 validation, and the original full model grid remains incomplete.
+
+### Selected numerical-candidate snapshot running (September 29)
+
+`scripts/select_audited_refinement_candidates.py` now builds a separate snapshot
+from the fully audited refinement and proposal stages. It requires successful
+terminal states, matching proof/receipt hashes and all source bindings. The 598
+passing refinement parameter choices are retained; each of the three gradient-
+only cases must have exactly one applicable passing proposal stage. Both local
+proposals must pass and agree in objective within 1e-5. The lower objective is
+selected; the smaller Hessian step breaks exact ties only. Other source review
+flags cannot be cleared by this rule.
+
+For all 601 choices, the stage reconstructs the exact active design and scales,
+recomputes direct ML coefficients, residual scale and conditional coefficient
+covariance, converts coefficients/covariance to raw units, and recalculates
+analytic/projected gradients. It checks no objective worsening relative to the
+directly recomputed refinement baseline, the unchanged 1e-3 gradient threshold,
+no upper-bound contact and retained exact-zero boundary signs where applicable.
+Original production/refinement paths, hashes and review flags remain in each
+output. This is a separate candidate snapshot pending complete readback;
+it does not replace any production fit or complete the original full grid.
+
+Plan and exact process identity:
+`metadata/selected_refinement_candidates_{plan,launch}_20260929.json`.
+Output: `results/model_validation/selected-refinement-candidates-20260929-v1`.
+Resources: one CPU, 16 GiB, no swap, 0.1–4 hours planning allowance, 0.1 GiB output,
+no GPU or paid resources. Exact-tie and lower-objective selection fixtures passed.

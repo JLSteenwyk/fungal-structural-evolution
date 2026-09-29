@@ -1,0 +1,53 @@
+{
+  "refinements": "results/model_validation/flagged-polynomial-refinements-20260928-v1",
+  "proposals": [
+    "results/model_validation/audited-gradient-proposals-20260929-v1",
+    "results/model_validation/audited-lower-face-proposals-20260929-v1"
+  ],
+  "inputs": "results/model_validation/flagged-polynomial-inputs-20260928-v1",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/model_validation/selected-refinement-candidates-20260929-v1",
+  "audits": [
+    {
+      "root": "results/model_validation/flagged-polynomial-refinements-20260928-v1",
+      "proof": "metadata/flagged_polynomial_refinement_completed_readback_20260928.json",
+      "unit": "fungal-flagged-polynomial-refinement-readback-20260928.service",
+      "status": "passed_full_flagged_polynomial_refinement_replay"
+    },
+    {
+      "root": "results/model_validation/audited-gradient-proposals-20260929-v1",
+      "proof": "metadata/audited_gradient_proposals_completed_readback_20260929.json",
+      "unit": "fungal-audited-gradient-proposal-readback-20260929.service",
+      "status": "passed_full_audited_gradient_proposal_readback"
+    },
+    {
+      "root": "results/model_validation/audited-lower-face-proposals-20260929-v1",
+      "proof": "metadata/audited_lower_face_proposals_completed_readback_20260929.json",
+      "unit": "fungal-audited-lower-face-readback-20260929.service",
+      "status": "passed_full_audited_lower_face_proposal_readback"
+    }
+  ],
+  "pins": {
+    "scripts/select_audited_refinement_candidates.py": "2af7e68d7f7eef9770fe8df49f8e02e0c55c38bed847fd6efebc9fad8d562247",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/flagged_polynomial_refinement_completed_readback_20260928.json": "55350640374e035df2499b5c9737ed48b0fd42cb8a4542fc1f2ee047702fe56f",
+    "metadata/audited_gradient_proposals_completed_readback_20260929.json": "2e14aae1341dd7acc991cf699e088806428d74bdfdb06f787e9834077106b59a",
+    "metadata/audited_lower_face_proposals_completed_readback_20260929.json": "5b6c47d9b9dd9940f9ec313521286ce50896675b23864727d056d5c543e73aae"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "output_gib": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_checks": "Exact tie and lower objective selection checked; no tolerance-based preference."
+}
