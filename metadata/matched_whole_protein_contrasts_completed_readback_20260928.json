@@ -1,0 +1,19 @@
+{
+  "status": "passed_full_matched_whole_protein_contrast_readback",
+  "source_receipt_sha256": "b6e1ac0ee94fb22d9380661ef8d632a3f741eaf2ae2a19adc2c10d21da5c4982",
+  "checker_sha256": "dd0d311ab6f5fa8d34e075f15dea988d94bd765062923d651e322330866c95fa",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "rows": 421400,
+  "numeric_values_checked": 10987856,
+  "counts": {
+    "full:excluded_or_unmeasured": 15064,
+    "plddt70:excluded_or_unmeasured": 15640,
+    "full:numerically_computable": 195636,
+    "plddt70:numerically_computable": 195060
+  },
+  "scope": "Every identity, status, raw metric, endpoint coverage and derived contrast checked; original protein lengths independently joined by canonical model/version, not producer orientation logic. All masks, four order combinations, screen flags and zero-distance exclusions retained. No effect inference, calibration or independent-replicate claim."
+}

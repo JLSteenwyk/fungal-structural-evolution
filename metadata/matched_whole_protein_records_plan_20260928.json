@@ -1,0 +1,19 @@
+{
+  "script": "scripts/summarize_matched_whole_protein_records.py",
+  "script_sha256": "0a22d6830b031c7c467dcb9bc51719a01e3f272dc0e8dc77028745faa2c56480",
+  "source_readback_sha256": "a712e254272a4b46f51fa7b9d1b26ed9bd0042a8d3b2f40e7f7236215948ae91",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "output_and_scratch_gib": 30,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All96 structural settings x432 matching strata, pair parquet inputs and record/family/taxon descriptive summaries; positive-log denominators explicit; independent readback required",
+  "fixtures": "SQL unequal family sizes, record weighting, missing-positive-log counts and empty means passed"
+}

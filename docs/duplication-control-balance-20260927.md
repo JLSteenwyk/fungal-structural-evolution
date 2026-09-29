@@ -452,3 +452,31 @@ Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
 Plan and launch identity:
 `metadata/matched_whole_protein_contrast_readback_plan_20260928.json` and
 `metadata/matched_whole_protein_contrast_readback_launch_20260928.json`.
+
+## Whole-protein contrasts verified; complete record grid running
+
+Independent contrast reconstruction passed all 421,400 rows and 10,987,856
+numeric values, including canonical endpoint coverage and all explicit blank
+outcomes. Evidence: `metadata/matched_whole_protein_contrasts_completed_readback_20260928.json`;
+the audit exited successfully at 22:58 EDT.
+
+`scripts/summarize_matched_whole_protein_records.py` now exports all 96 structural
+settings (two masks × two same/both-mask cohorts × six screens × four alignment
+order combinations), each with all 432 guide/policy/scenario groups, including
+empty groups: 41,472 summary rows. Every retained-record count is checked against
+the fully audited fixed-match attrition table. Per-setting Parquet files retain
+unique pair identities, family/taxon, species-pattern IDs, outcomes and sequence
+covariates for design checks and later fitting.
+
+Record-equal, family-equal and focal-taxon-equal descriptive means are reported
+separately for twelve metrics. Positive-log sequence contrasts exclude zero
+cases explicitly and report contributing record, family and taxon counts;
+other metrics retain those cases. SQL fixtures covered unequal family sizes,
+record weighting, positive-log missingness and empty means. The full output
+requires independent reconstruction. These are descriptive summaries, not
+phylogenetically corrected effects, significance tests or independent replicates.
+
+Resources: one CPU, 16 GiB memory cap (12 GiB database limit), no swap/GPU/charges,
+estimated 0.1–4 hours and up to 30 GiB including database/scratch. Plan and launch:
+`metadata/matched_whole_protein_records_plan_20260928.json` and
+`metadata/matched_whole_protein_records_launch_20260928.json`.
