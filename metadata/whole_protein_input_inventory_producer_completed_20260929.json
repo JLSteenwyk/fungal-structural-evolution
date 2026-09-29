@@ -1,0 +1,25 @@
+{
+  "status": "producer_complete_inventory_membership_checked_full_numerical_readback_running",
+  "checked_at": "2026-09-29T05:37:21.384648+00:00",
+  "settings": 414720,
+  "unique_inputs": 75070,
+  "tree_fits": 375350,
+  "receipt_sha256": "20f3102bf5e83fe4c01d42853bc1164df762227c9c2b3ac1f0c0ff4b45d6e0eb",
+  "source_hashes_checked": 149,
+  "artifact_hashes_checked": 2,
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "audit_process": {
+    "pid": 2659591,
+    "created": 1790652899.84,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_whole_protein_input_inventory.py"
+    ],
+    "status": "running"
+  },
+  "scope": "Producer hashes, uniqueness, references, and counts checked. Full independent matrix and identity reconstruction remains running; fitting not launched."
+}

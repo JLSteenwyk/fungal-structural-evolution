@@ -765,3 +765,19 @@ unresolved classifications. Plan and launch identity:
 Resources: one CPU, 24 GiB memory, no swap, 0.5–16 hours planning allowance,
 no GPU or paid resources. Full serialized validation is pending successful
 support-producer completion.
+
+## Whole-protein inventory producer completed (September 29)
+
+The producer finished successfully at 01:36:44 EDT. All 414,720 design/outcome
+settings map to 75,070 distinct exact numerical inputs, giving 375,350 fits
+across five tree alternatives. Exact input reuse reduces repeated fitting;
+every setting and outcome remains represented. All settings have full-rank
+designs and positive residual degrees of freedom.
+
+The completion check verified 149 source hashes, both output hashes, unique
+setting identities, unique recipe IDs, complete references and counts. Evidence:
+`metadata/whole_protein_input_inventory_producer_completed_20260929.json`.
+The separate checker is now reconstructing all numerical inputs and identities.
+This producer checkpoint does not replace that full readback. The workload
+planner and joint-support stages remain gated on its successful completion;
+whole-protein effect fitting has not started.
