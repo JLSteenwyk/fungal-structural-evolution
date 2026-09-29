@@ -238,3 +238,16 @@ records use `metadata/flagged_polynomial_input_preparation_*_20260928.json`.
 This prepares a frozen subset for future review, not a replacement full-grid
 audit. It launches no model fits, changes no source outputs, and still requires
 independent input validation before refinement.
+
+Reconstruction completed successfully at 23:43:44 EDT: all 449 original input
+hashes matched, covering 1,081,570 record occurrences and 601 flagged tree fits.
+All exported artifact hashes were verified after successful process termination;
+evidence: `metadata/flagged_polynomial_inputs_producer_completed_20260928.json`.
+The separate checker `scripts/readback_flagged_polynomial_inputs.py` is running.
+It reconstructs source membership and ordered identities, independently codes
+background/family labels, verifies species-factor row mappings, compares every
+numerical array with its audited recipe hash, and retains all original flagged
+fit links. It is limited to one CPU and 16 GiB RAM with no swap, with 0.02–2 hours
+planned. Plan and launch records use
+`metadata/flagged_polynomial_input_readback_*_20260928.json`. Production fits
+remain unchanged and no review flag has been resolved.
