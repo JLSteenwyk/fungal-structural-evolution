@@ -657,3 +657,17 @@ gate. It does not launch fits. Independent inventory readback and a measured
 fit-runtime estimate remain required before full fitting. Plan and launch:
 `metadata/whole_protein_model_input_inventory_plan_20260928.json` and
 `metadata/whole_protein_model_input_inventory_launch_20260928.json`.
+
+The independent inventory checker is also queued:
+`scripts/readback_whole_protein_input_inventory.py`. It reconstructs all
+414,720 entries, rebuilds pair identities from node/family/species fields,
+checks exact numerical bytes, verifies each first representative recipe, and
+requires all recipes to be used with no missing or extra mappings. It does not
+import the producer's matrix or signature helpers. Fifteen populated, empty
+and zero-distance fixture comparisons across the five variants passed.
+Polynomial/log operation order is intentionally preserved for byte checking;
+the preceding design audit checks alternative algebraic expressions. Resource
+allowance is one CPU, 24 GiB RAM, no swap and 0.1–16 hours after producer
+completion. Plan and exact launch records use the metadata stem
+`whole_protein_input_inventory_readback` dated 20260928. No inventory completion
+or full-fit resource estimate is claimed while its dependencies are running.
