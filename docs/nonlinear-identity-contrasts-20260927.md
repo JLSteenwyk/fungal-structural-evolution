@@ -251,3 +251,10 @@ fit links. It is limited to one CPU and 16 GiB RAM with no swap, with 0.02–2 h
 planned. Plan and launch records use
 `metadata/flagged_polynomial_input_readback_*_20260928.json`. Production fits
 remain unchanged and no review flag has been resolved.
+
+The first input checker stopped before mapping validation because it opened
+the gzip-compressed pair table as plain text (`UnicodeDecodeError`). A separate
+v2 checker uses the gzip text reader; all 52,675 pair rows were parsed in its
+prelaunch check. The failed script and launch remain preserved. The replacement
+is `scripts/readback_flagged_polynomial_inputs_v2.py`, with plan and launch
+suffixes `20260928_v2.json`. No data, hashes or validation tolerances changed.

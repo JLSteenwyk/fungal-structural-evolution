@@ -1,0 +1,19 @@
+{
+  "script": "scripts/readback_flagged_polynomial_inputs_v2.py",
+  "script_sha256": "1fa301f49b2f1460fb6dd4345795db5df8cf141b0a6fac91d330897c65cc9f22",
+  "producer_launch_sha256": "294be966250aabf6e3b394a11dc90d68c62d5b51ebccbc6037baa331db48f787",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.02,
+      2
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All449 inputs,1081570 record occurrences and601 tree links; original numerical recipe hashes and independent identity/dependence mapping.",
+  "correction": "v1 failed UnicodeDecodeError before validation: compressed pair TSV opened as plain text. v2 uses gzip text reader; all52675 input rows parsed in prelaunch check. No data or tolerance changes."
+}
