@@ -1048,3 +1048,25 @@ advanced from waiting to computation and is writing its numerical readback
 table. Individual checkpoint provenance, residue mapping, RMSD and sequence
 identity checks remain incomplete; no validated whole-chain background
 contrast or biological duplication effect is claimed yet.
+
+### Strict audit failure and complete discrepancy census
+
+The strict audit terminated with exit code 1 on September 28 at 21:20 EDT,
+after logging 80,000 checked dispositions. It rejected an RMSD difference
+larger than the unchanged 0.00501 Å printed-rounding allowance. The first
+affected pair is AF-A0A015IZU3-F1 versus AF-A0A397SIQ4-F1 (both version 6),
+pLDDT70 mask, order zero. Only two residues align. Native RMSD is 0.00 Å;
+coordinate reconstruction gives 0.013327706 Å. The independent two-point
+segment-length formula gives the same result. A two-point mapping has a
+nonunique rotation; this one case does not characterize all remaining pairs.
+
+The failed unit and partial output are preserved. A separate complete diagnostic
+pass now repeats all provenance, mapping and numerical checks, retains every
+RMSD discrepancy explicitly, and sets scientific eligibility false. It does
+not relax the strict audit or rerun native alignments. Eight-disposition fixtures
+passed, including rejection of rehashed corrupt stored metrics; the real first
+failure passed the analytic two-point check. The new diagnostic uses one CPU,
+16 GiB RAM, no swap, a 1 GiB output allowance and a 0.1–4 hour planning range.
+Full discrepancy census and subsequent geometry assessment remain pending.
+See `metadata/background_alignment_strict_audit_failure_20260928.json` and
+`metadata/background_alignment_rmsd_diagnostic_launch_20260928.json`.

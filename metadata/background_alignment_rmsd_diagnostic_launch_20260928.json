@@ -1,0 +1,16 @@
+{
+  "unit": "fungal-background-rmsd-diagnostic-20260928.service",
+  "pid": 2541564,
+  "created": 1790644946.68,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_background_alignment_rmsds.py",
+    "--plan",
+    "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json"
+  ],
+  "plan": "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json",
+  "plan_sha256": "7e0db1101ffbe0b15376b853635317fdd04aaedf6fed0eda536e37dbea71a1c9",
+  "status": "active_full_discrepancy_census_not_scientific_acceptance",
+  "fixture_status": "eight_dispositions_four_native_reconstructions_and_rehashed_corrupt_metric_rejection_passed",
+  "first_discrepancy_analytic_review": "metadata/background_rmsd_first_failure_review_20260928.json"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "first_discrepancy_is_two_residue_mapping_not_full_census",
+  "checkpoint": "results/structural_comparisons/background-alignments-20260927-v1/pairs/46/46fe5d6fa91d7c78940fc75529f97605f872c2050a8b37558c85e19e8da86b10-plddt70-0.json",
+  "checkpoint_sha256": "b76bbd4c5dbcd023b9569b3aaab844a4ce4e18edecbbf11c30954d95f71245fd",
+  "numeric": {
+    "rmsd_status": "outside_printed_rounding",
+    "aligned_length": 2,
+    "rmsd_recomputed": 0.013327706036000187,
+    "rmsd_native": 0.0,
+    "rmsd_rounding_error": 0.013327706036000187,
+    "sequence_identity_exact": 0.0,
+    "tm_left_native": 0.39972,
+    "tm_right_native": 0.49964,
+    "coverage_left": 0.4,
+    "coverage_right": 0.5,
+    "joint_plddt70_pairs": 2,
+    "joint_plddt70_fraction": 1.0
+  },
+  "analytic_two_point_rmsd": 0.013327706036000198,
+  "strict_checker_rejects": true,
+  "scope": "Two-point segment-length formula confirms least-squares RMSD for this one mapping; rotation is nonunique. All background discrepancies still require full census and geometry assessment."
+}
