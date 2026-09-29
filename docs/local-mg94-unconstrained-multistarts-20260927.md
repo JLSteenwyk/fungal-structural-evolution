@@ -44,7 +44,7 @@ optimization. The audit uses one CPU, 8 GiB memory and 0.1–4 hours after fitti
 These are planning allowances, not measured completion forecasts. Startup is
 confirmed by advancing completed-case checkpoints and four live HyPhy workers.
 
-The full results and audit are pending. Multiple starts do not establish a
+The full results and audit are complete (see the dated completion below). Multiple starts do not establish a
 global optimum, synonymous-distance confidence intervals, absence of saturation
 or eligibility for selection inference. Biological interpretation and selection
 tests remain separate stages. GPU prediction remains paused.
@@ -120,6 +120,30 @@ optimization uncertainty; it does not establish a global optimum.
 The full parameter-range stage also finished, retaining 28,094 parameter rows
 across all cases, with ranges over all starts and over starts within 1e-5 of the
 best observed likelihood. Source-file bindings and serialized range arithmetic
-were checked by production. An independent reconstruction of those ranges
-remains outstanding. These numerical ranges are not confidence intervals or
+were checked by production. Independent reconstruction of all ranges subsequently passed (see below). These numerical ranges are not confidence intervals or
 selection evidence, and do not resolve saturation or parameter identifiability.
+
+
+## Independent parameter-range reconstruction complete
+
+The separate parser and full readback checked all 224,752 free parameter values
+from 13,056 saved fits, reconstructing all 28,094 range rows across 1,632 cases.
+All-start extrema, near-best extrema and spans, selected-start counts, duplicate
+identities and exact membership passed. The service exited successfully.
+Evidence is in `metadata/mg94_parameter_ranges_completed_20260928.json` and
+`metadata/mg94_parameter_ranges_completed_readback_20260928.json`; the executable
+checker is `scripts/readback_mg94_parameter_ranges.py`.
+
+The largest near-best omega range is 0.00006845, in
+`Malassezia__5000743at2759__code1` (seven starts). The largest absolute near-best
+branch-parameter range occurs in `Malassezia__649304at2759__code1`, branch
+`F2020962`: 9,015.232–9,033.152 among three starts within 1e-5 of the best observed
+log likelihood. Across all eight starts, that branch spans 1,069.927–9,033.152.
+These are native branch t parameters, not automatically calibrated synonymous
+substitutions. The large values and persistent start dependence require explicit
+saturation and parameter-identification review before biological use. Agreement
+in omega does not resolve those branch-level concerns.
+
+The full check used one CPU, a 2 GiB memory cap and no GPU or paid resources;
+14.6 CPU seconds were recorded. Fixed branch declarations, duplicate free
+parameters, negative values and nonfinite values were rejected in parser checks.

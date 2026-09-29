@@ -1,0 +1,36 @@
+{
+  "status": "completed_full_mg94_parameter_range_independent_validation",
+  "readback_sha256": "90b8389e78a0393ddc7bad5e24640cd2cb6bed823375cc7e845df5183ed25bd1",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "cases": 1632,
+  "fits": 13056,
+  "parameter_values": 224752,
+  "range_rows": 28094,
+  "largest_near_best_ranges": {
+    "omega": {
+      "case_id": "Malassezia__5000743at2759__code1",
+      "parameter": "zwczUOyV.model_MGREV.omega",
+      "all_start_min": "0.0085834224837239",
+      "all_start_max": "0.0455582201689007",
+      "near_best_min": "0.0454897690954613",
+      "near_best_max": "0.0455582201689007",
+      "near_best_range": "6.845107343940449e-05",
+      "near_best_starts": "7"
+    },
+    "branch_parameter": {
+      "case_id": "Malassezia__649304at2759__code1",
+      "parameter": "JrUUzrnb.tree_0.F2020962.t",
+      "all_start_min": "1069.9269457584574",
+      "all_start_max": "9033.152186053541",
+      "near_best_min": "9015.232002183096",
+      "near_best_max": "9033.152186053541",
+      "near_best_range": "17.920183870444816",
+      "near_best_starts": "3"
+    }
+  },
+  "scope": "Numerical ranges among fitted starts within1e-5 of best likelihood; not confidence intervals, parameter identification or selection evidence. Branch t is the native model parameter, not automatically calibrated dS."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "passed_full_independent_mg94_parameter_range_readback",
+  "cases": 1632,
+  "fits": 13056,
+  "parameter_values": 224752,
+  "range_rows": 28094,
+  "source_receipt_sha256": "a00dc1c480f3772d03f1488608b9d8f8ae5f6de3899eb8588ade8d2287dd083d",
+  "range_receipt_sha256": "19fb40ec8f47a13852c58bf58230b742f4629c32007ac0acaa9b7f6ae6cb35f9",
+  "audit_receipt_sha256": "6c130ad000f9827b663079f0a9da6dde664d918045e6af551643bbd3df5b5146",
+  "checker_sha256": "2cad16b1498842f205723a558f74a5980527d3838684cb5c585d024e3735d9f2",
+  "terminal_states": {
+    "fungal-local-mg94-unconstrained-multistarts-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-local-mg94-unconstrained-multistart-audit-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-mg94-parameter-ranges-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Every saved fit hash and parameter parsed with separate parser; all-start and near-best extrema, spans, counts, identities and full membership independently reconstructed. Descriptive numerical ranges, not confidence intervals, global optima or selection evidence."
+}
