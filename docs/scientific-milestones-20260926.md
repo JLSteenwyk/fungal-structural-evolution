@@ -77,7 +77,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   verified. Whole-protein common-core fits passed independent checks for all
   563,808 records; all 36,944 event/reference links now retain coverage eligibility
   across masks, orders and mapping definitions. See [triplet coverage](whole-protein-common-core-comparisons-20260927.md).
-  Background alignments and biological duplication tests remain open.
+  Whole-chain background production finished all 285,800 dispositions on
+  September 28; its independent numerical audit is now active. Biological
+  duplication tests remain open. See [background execution](terminal-sister-backgrounds-20260927.md).
 - Domain comparisons, common-core numerical verification, alternative-setting
   robustness, cross-guide comparisons and candidate sampling summaries completed.
   See [candidate sampling](duplication-domain-candidate-sampling-20260927.md).

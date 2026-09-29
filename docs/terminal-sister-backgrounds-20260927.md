@@ -1029,3 +1029,22 @@ Structural-distance execution and numerical readback remain unfinished.
 Confidence filtering does not establish PAE reliability or physical domain
 boundaries, and full versus masked scores use different length denominators.
 No structure predictions or duplicate comparison jobs were started.
+
+### September 28: complete whole-chain background production
+
+The whole-chain producer finished successfully at 21:14 EDT, retaining all
+285,800 directed mask/order dispositions for 71,450 new model pairs.
+There are 142,900 full-chain alignments, 139,220 pLDDT70 alignments and
+3,680 explicitly unavailable pLDDT70 inputs. No native-error, parse-error or
+timeout disposition is recorded. These outcomes do not include previously
+computed primary/reference pairs, which retain their separate provenance.
+
+The final manifest was checked against the complete expected pair/mask/order
+universe, with unique paths, exact disposition counts, manifest checksum and
+input-bundle checks. Producer terminal state and receipt are archived in
+`metadata/background_alignment_producer_completed_20260928.json`.
+This is production completion only. The existing independent auditor has
+advanced from waiting to computation and is writing its numerical readback
+table. Individual checkpoint provenance, residue mapping, RMSD and sequence
+identity checks remain incomplete; no validated whole-chain background
+contrast or biological duplication effect is claimed yet.
