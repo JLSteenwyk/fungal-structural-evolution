@@ -1,0 +1,73 @@
+{
+  "status": "checkpoint_recovery_native_inference_active_not_complete",
+  "observed_at": "2026-09-29T01:06:20.201406+00:00",
+  "plan_path": "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json",
+  "plan_sha256": "2d4ad65a1b7e91be150b4839df51acdf53082cba1ab1e8039bb52ee37fbaf2f0",
+  "original_checkpoint_sha256": "b60d6d75a8b1d57577f6947a74b8a4fd74804c332861f229adedd97b4937e9b6",
+  "processes": [
+    {
+      "pid": 1277989,
+      "created": 1790613974.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/wait_for_pmsf_recovery_memory.py",
+        "--plan",
+        "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json"
+      ],
+      "cpu_seconds": 106.64
+    },
+    {
+      "pid": 2472482,
+      "created": 1790640415.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_species_pmsf_checkpoint.py",
+        "--plan",
+        "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json"
+      ],
+      "cpu_seconds": 3.02
+    },
+    {
+      "pid": 2472548,
+      "created": 1790640416.57,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3",
+        "-s",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/matrix.faa",
+        "-st",
+        "AA",
+        "-m",
+        "LG+C20+F+G4",
+        "--tree-freq",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-mafft-v1/input_guide.treefile",
+        "-T",
+        "16",
+        "--mem",
+        "600G",
+        "--seed",
+        "20260913",
+        "--alrt",
+        "1000",
+        "-B",
+        "1000",
+        "--bnni",
+        "--boot-trees",
+        "--prefix",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-mafft-v1/pmsf"
+      ],
+      "cpu_seconds": 54977.7
+    }
+  ],
+  "native_started_at": "2026-09-29T00:06:56.570000+00:00",
+  "resources": {
+    "cpu": 16,
+    "memory_max_gib": 650,
+    "minimum_available_memory_gib": 750,
+    "minimum_free_disk_gib": 100,
+    "swap_gib": 0,
+    "runtime_remaining_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Exact parent/child chain, native command and preserved checkpoint verified. Native log shows resumed optimization. No completion or topology/support qualification."
+}

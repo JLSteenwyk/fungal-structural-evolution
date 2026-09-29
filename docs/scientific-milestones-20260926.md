@@ -113,6 +113,12 @@ Chronological receipts and process records remain in [progress](progress.md).
   cached models. GPU prediction remains paused; this is a marker-gap count,
   not whole-proteome coverage or proof of database absence.
 - Species-tree sensitivity and database retrieval continue independently.
+  The fourth PMSF combination (MAFFT matrix and MAFFT guide) resumed from its
+  preserved checkpoint at 20:06 EDT on September 28 after the 750 GiB available-
+  memory gate cleared. The exact 16-thread native command and parent/child
+  process chain are verified in
+  `metadata/pmsf_checkpoint_recovery_active_20260928.json`. Inference is active;
+  complete topology, profile and support audits remain pending.
   GPU prediction remains paused under the user's current authorization.
 
 Completion of a service is insufficient by itself: its source-bound receipt,

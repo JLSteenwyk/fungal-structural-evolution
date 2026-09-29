@@ -9909,3 +9909,13 @@ does not establish universal coverage or complete the biological project.
   confidence intervals or selection. Numerical fixtures passed and all
   source/fit hashes and serialized range arithmetic will be checked. This
   adds no optimization runs; one CPU/8GiB limits apply.
+
+- September 28: confirmed that the fourth PMSF recovery cleared its unchanged
+  memory prerequisite and resumed native inference at 20:06 EDT. The preserved
+  pre-resume checkpoint matches the planned checksum; the original config,
+  matrix/model dependencies and exact 16-thread command remain unchanged.
+  Native output explicitly reports checkpoint resumption and continuing NNI
+  optimization. PID 2472548 is a child of recovery PID 2472482 under waiter
+  PID 1277989; creation times and command lines are recorded in
+  `metadata/pmsf_checkpoint_recovery_active_20260928.json`. This is an active
+  execution checkpoint, not completed species-tree inference or support audit.
