@@ -184,3 +184,30 @@ Resources: one CPU, 16 GiB RAM, no swap/GPU/charges, 0.1–2 hours and negligibl
 proof output. Script and launch provenance are recorded under
 `readback_fixed_match_structural_attrition.py` and the matching September 28
 readback plan/launch metadata.
+
+## Fixed-match structural attrition independently verified
+
+The producer and full readback both exited successfully. All 2,786,912 original
+selection records, 16,721,472 eligibility bitsets, and 7,776 summary cells passed.
+Completion evidence is in `metadata/fixed_match_structural_attrition_completed_20260928.json`
+and `metadata/fixed_match_structural_attrition_completed_readback_20260928.json`.
+
+For the illustrative alignment-E-value strict-background scenarios above,
+requiring both masks and both orders to align at least 50 residues covering 70%
+of both original proteins gives identical descriptive counts in the two guide
+alternatives (which are not independent replicates):
+
+| Structural eligibility | S45: any background taxon | S46: focal taxon required |
+|---|---:|---:|
+| Original metadata-matched records | 11,917 | 792 |
+| Target and control both pass | 7,914 | 656 |
+| Only target passes | 387 | 21 |
+| Only control passes | 588 | 37 |
+| Neither passes | 3,028 | 78 |
+
+Thus 66.4% of S45 matches and 82.8% of S46 matches survive this particular
+screen. The original modeled-target denominators remain 109,245/109,228 by
+guide; metadata-unmatched records remain explicit. No replacement control was
+selected after screening. Surviving matches need fresh balance/representation
+assessment and phylogenetic/family-aware effect estimation; these counts alone
+do not establish a duplication effect or represent all sampled taxa.

@@ -1,0 +1,82 @@
+{
+  "status": "completed_full_fixed_match_structural_attrition_and_independent_readback",
+  "receipt_sha256": "7aa3e0cc8bbf55975ca664fed6b5787ffec4dc3e315ad6723beef4a51d94eba7",
+  "readback_sha256": "18903f1a1c9469d821fcad8081eaa4e784f4b0dbfc2f94c1c414c8983a8f24cb",
+  "terminal_states": {
+    "fungal-fixed-match-structural-attrition-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-fixed-match-structural-attrition-readback-20260928.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "selected_records": 2786912,
+  "summary_cells": 7776,
+  "illustrative_strict_n50_c70_both_masks": [
+    {
+      "guide": "mafft",
+      "policy": "alignment_evalue",
+      "scenario_id": "S45",
+      "mask": "both_masks",
+      "screen": "n50_c70",
+      "original_targets": "109228",
+      "metadata_matched": "11917",
+      "metadata_unmatched": "97311",
+      "both_pass": "7914",
+      "target_only_pass": "387",
+      "background_only_pass": "588",
+      "neither_pass": "3028"
+    },
+    {
+      "guide": "mafft",
+      "policy": "alignment_evalue",
+      "scenario_id": "S46",
+      "mask": "both_masks",
+      "screen": "n50_c70",
+      "original_targets": "109228",
+      "metadata_matched": "792",
+      "metadata_unmatched": "108436",
+      "both_pass": "656",
+      "target_only_pass": "21",
+      "background_only_pass": "37",
+      "neither_pass": "78"
+    },
+    {
+      "guide": "profile",
+      "policy": "alignment_evalue",
+      "scenario_id": "S45",
+      "mask": "both_masks",
+      "screen": "n50_c70",
+      "original_targets": "109245",
+      "metadata_matched": "11917",
+      "metadata_unmatched": "97328",
+      "both_pass": "7914",
+      "target_only_pass": "387",
+      "background_only_pass": "588",
+      "neither_pass": "3028"
+    },
+    {
+      "guide": "profile",
+      "policy": "alignment_evalue",
+      "scenario_id": "S46",
+      "mask": "both_masks",
+      "screen": "n50_c70",
+      "original_targets": "109245",
+      "metadata_matched": "792",
+      "metadata_unmatched": "108453",
+      "both_pass": "656",
+      "target_only_pass": "21",
+      "background_only_pass": "37",
+      "neither_pass": "78"
+    }
+  ],
+  "artifacts": {
+    "selection_eligibility.tsv.gz": "14ed2b094660ee66c47d6a183350b35c0ffbeb80fbded000a3440609223d5ae2",
+    "attrition_summary.tsv": "6c9db30463a646ec2481cd6df926e6f8d1cc59449cf12c13b30b05225a5b6548"
+  },
+  "scope": "Complete fixed-selection structural-quality attrition verified. Illustrative strict scenarios retain original denominators; no rematching, effect estimates, independence or causal interpretation."
+}
