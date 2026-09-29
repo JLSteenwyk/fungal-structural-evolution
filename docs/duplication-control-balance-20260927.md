@@ -856,3 +856,28 @@ These synthetic implementation checks do not establish empirical model adequacy,
 identifiability, a global optimum or interval calibration. The production fitting
 runner and final resource allocation remain to be completed after input checks
 and workload assessment; no whole-protein data fits have been launched.
+
+## Restartable whole-protein runner prepared (September 29)
+
+`scripts/run_whole_protein_ml.py` implements the full 75,070-input, five-tree
+ordinary-ML grid. Each worker loads one materialized input and evaluates all
+five covariance factors using the checked adapter. Results are written by
+atomic replacement and retain all optimization statuses. Restart verifies plan,
+input, specification and payload bindings before reusing a completed fit.
+An output lock prevents simultaneous writers. Submitted work is bounded to
+twice the worker count. A high numerical-error fraction stops the run while
+preserving its outputs for review.
+
+Launch requires successful full materialized-input validation, a checked workload
+estimate, checked species covariance factors and a pinned resource assessment
+covering workers, memory, storage, runtime scenarios and uncovered timing strata.
+The resource assessment and production plan have not yet been issued. No
+production fits have been launched.
+
+The spawned-worker fixture completed all five synthetic tree fits and verified
+unchanged output bytes and modification times on resume. Changed source hashes
+and corrupted saved payloads were rejected. Script and evidence:
+`scripts/check_whole_protein_ml_runner.py` and
+`metadata/whole_protein_ml_runner_fixtures_20260929.json`.
+These checks cover worker/restart behavior; full-data gates, output audit,
+calibration and biological interpretation remain pending.

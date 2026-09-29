@@ -1,0 +1,17 @@
+{
+  "status": "passed_whole_protein_ml_runner_worker_fixtures",
+  "tree_fits": 5,
+  "checks": [
+    "spawned worker execution",
+    "five tree outputs",
+    "byte-identical and mtime-preserving resume",
+    "source hash mismatch rejected",
+    "resumed payload corruption rejected"
+  ],
+  "source_hashes": {
+    "scripts/run_whole_protein_ml.py": "8a18107ef7a4a08bd4dd17e37870b4c07b1dd8289b4695e1a33e3200bea62a4d",
+    "scripts/fit_whole_protein_ml.py": "0fe8d60328c17138cf9ae4d693b6a7dfe5ee6cf5282812fa2519e3ed0601477f",
+    "scripts/check_whole_protein_ml_runner.py": "56c90530bdc1549eb3a7a52886b7eef5f36ddeef2a935b6856c7862be1b739d3"
+  },
+  "scope": "Worker and restart behavior on synthetic inputs only. Full-data gates and allocation remain pending; no production run launched."
+}
