@@ -781,3 +781,20 @@ The separate checker is now reconstructing all numerical inputs and identities.
 This producer checkpoint does not replace that full readback. The workload
 planner and joint-support stages remain gated on its successful completion;
 whole-protein effect fitting has not started.
+
+## Compute-estimate arithmetic check queued (September 29)
+
+`scripts/readback_whole_protein_fit_workload.py` waits for the exact workload
+planner process and requires successful termination. It independently classifies
+every input/tree against observed record ranges and coefficient counts, then
+checks all workload groups, covered cost totals and six worker/cost scenarios
+using grouped compensated sums. Missing timing strata remain explicit and
+excluded from covered-only totals. Fixtures cover inclusive endpoints, both
+outside-range directions, missing size/coefficient strata, duplicate rejection
+and zero coverage. Arithmetic agreement cannot validate timing transfer between
+domain and whole-protein models or provide a memory bound.
+
+Plan and process identity:
+`metadata/whole_protein_fit_workload_readback_{plan,launch}_20260929.json`.
+Resources: one CPU, 4 GiB, no swap, 0.01–1 hour planning allowance, small JSON
+output, no GPU or paid resources. Fitting remains unlaunched.

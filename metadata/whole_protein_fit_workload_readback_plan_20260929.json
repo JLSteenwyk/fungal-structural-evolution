@@ -1,0 +1,23 @@
+{
+  "launch": "metadata/whole_protein_fit_workload_launch_20260929.json",
+  "proof": "metadata/whole_protein_fit_workload_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_whole_protein_fit_workload.py": "296ec0008cbb5eaa8fe6fc84d5c789335769a5c220e8f71b98a1ac703fc8d4ac",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_fit_workload_launch_20260929.json": "d5d795856177af9a4ff548748a08433ec584283ed8f0dc5edfb6cb1b30f577d9",
+    "metadata/whole_protein_fit_workload_plan_20260929.json": "fbb15b3e5eb7c157f923e4a2eff3fecb6db00f74435fe404f9c1c0b337c19c1e"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_checks": "Inclusive observed endpoints, both outside-range directions, absent size and coefficient strata, duplicate rejection and zero-coverage sums passed."
+}
