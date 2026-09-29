@@ -1,0 +1,26 @@
+{
+  "launch": "metadata/audited_gradient_proposals_launch_20260929.json",
+  "proof": "metadata/audited_gradient_proposals_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_audited_gradient_proposals.py": "54bc5eed6a7d83fbdcd5483359477dd8531d1f047792249991a63e7659818fef",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/audited_gradient_proposals_launch_20260929.json": "b9d79791ce0f3ec0bdfe4baeb19533513da97c020dc6169a13cd07c5293b7658",
+    "metadata/audited_gradient_proposals_plan_20260929.json": "2929e249e325e7e3f89436973193469913167863c748500005c18ac0932ae96f",
+    "metadata/audited_gradient_proposal_readback_fixtures_20260929.json": "0b96875c2c0a256562ff4efebc2a04212393a67bfafb771c2fde2a8c38e3c010"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

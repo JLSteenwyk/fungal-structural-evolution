@@ -372,3 +372,17 @@ integration, as does completion and audit of the original full model grid.
 Resources: one CPU, 16 GiB memory, no swap, no GPU or paid resources; planning
 allowance 0.1–8 hours and 0.1 GiB output. The job is currently waiting on its
 upstream audit; a launch is not evidence of completed proposals.
+
+The proposal-output checker is now queued as
+`fungal-audited-gradient-proposal-readback-20260929.service`, with its own pinned
+plan and exact launch identity in `metadata/audited_gradient_proposals_readback_*_20260929.json`.
+It checks all 601 dispositions and reconstructs active design columns/scales
+from input arrays. For each proposal it recalculates Hessians, eigenvalues,
+Newton steps, likelihoods, analytic gradients, both direct finite-difference
+gradients and every acceptance flag without calling the proposal helper.
+Likelihood/gradient libraries remain shared; this is not an independent
+mathematical implementation. Fixtures cover positive/negative curvature,
+boundaries and stationary points, and reject altered objectives, gradients,
+parameter vectors and pass flags. Resources: one CPU, 16 GiB, no swap,
+0.1–8 hours planning allowance, no GPU or paid resources. Actual proposal
+readback is pending successful upstream completion; no fit has been replaced.
