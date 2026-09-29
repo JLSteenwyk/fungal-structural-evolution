@@ -1,0 +1,18 @@
+{
+  "status": "complete_polynomial_optimization_flag_prefix_census",
+  "receipt_sha256": "3834f480568a2fb9ab8b90c12af278a6d00de3125581db5826116ec7f071d1b6",
+  "root": "results/model_validation/polynomial-optimization-flag-census-20260928-v1",
+  "completed_manifest_prefix_rows": 75205,
+  "flagged_fits": 601,
+  "independently_recounted_reasons": {
+    "best_optimizer_success": 587,
+    "projected_gradient_pass": 6,
+    "all_full_face_starts_agree": 8
+  },
+  "flagged_degrees": {
+    "3": 301,
+    "2": 137,
+    "1": 163
+  },
+  "scope": "Every non-passing fit in the captured completed-manifest prefix is hash- and payload-verified and classified. Passing fit counts are manifest counts only. Near-equal successful candidates do not resolve flags; no fit statuses, tolerances or source results changed. Full-grid audit and optimization review remain required."
+}

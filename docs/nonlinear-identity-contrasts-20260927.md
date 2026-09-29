@@ -185,3 +185,24 @@ model adequacy and inferential calibration remain open.
 `record_nonlinear_support_completion.py` verifies terminal states, every declared
 artifact, receipt bindings, complete counts and exact failure/projected input
 identity. Completion evidence: `metadata/nonlinear_joint_support_completed_20260927.json`.
+# Interim optimization-flag census (September 28)
+
+A fixed prefix of 75,205 completed ordinary-ML dispositions contains 601
+optimization-review flags. Every flagged file and payload hash was verified;
+the source manifest prefix was saved and checked for stability while the live
+run continued. This is an interim census, not a full-grid audit.
+
+The 601 flags comprise 587 unsuccessful selected optimizer results, six failed
+projected-gradient checks, and eight disagreements among full-face starts.
+There were no upper-bound-contact flags in this prefix. Flagged polynomial
+degrees were 163 linear, 137 quadratic and 301 cubic. All 601 had a successful
+alternative candidate within 1e-7 of the lowest objective, but that observation
+does not resolve convergence or start-agreement concerns. Original statuses
+and numerical tolerances remain unchanged. These results motivate targeted
+optimizer follow-up after the full output audit; they are not evidence for a
+biological sequence–structure relationship.
+
+Script: `scripts/census_polynomial_optimization_flags.py`; frozen prefix,
+per-fit reasons and hashes: `results/model_validation/polynomial-optimization-flag-census-20260928-v1`.
+The reason counts were also independently recounted from each flagged payload;
+evidence: `metadata/polynomial_optimization_flag_census_completed_20260928.json`.
