@@ -1,0 +1,25 @@
+{
+  "launch": "metadata/duplication_alignment_input_launch_20260928.json",
+  "producer_plan": "metadata/duplication_alignment_input_plan_20260928.json",
+  "proof": "metadata/duplication_alignment_inputs_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/duplication_alignment_input_launch_20260928.json": "3d6be350c03b733133e97adfce0d2a660b5f2c61121b893c24568bff0ae64759",
+    "metadata/duplication_alignment_input_plan_20260928.json": "61426105e2cc14b587efd9616ffbe7060869dff714d6988c5e29747daa78efa0"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": "Stream all 277 coordinate shards and up to 553364 input dispositions/PDB files. One source record and one PDB retained at a time. Existing materialization output allowance is 64 GiB; checker writes a small JSON proof. Runtime allowance is uncalibrated.",
+  "prelaunch_checks": "Full and noncontiguous confidence masks, exact 70 threshold versus 69.9999, rounding, empty masks and rejected sources passed. Rehashed position, coordinate and confidence corruptions rejected."
+}

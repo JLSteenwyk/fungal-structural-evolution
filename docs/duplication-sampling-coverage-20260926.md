@@ -383,3 +383,27 @@ Producer-only evidence is saved in
 `metadata/duplication_coordinate_validation_producer_completed_20260928.json`.
 These checks do not establish prediction accuracy, PAE qualification, or biological
 structural divergence.
+
+## Full alignment-input readback queued (September 29)
+
+`scripts/readback_duplication_alignment_inputs.py` waits for the exact input
+materialization process and requires successful termination. It then checks all
+276,682 models and 553,364 full/plDDT70 input dispositions against the already
+audited coordinate shards. Every retained sequence and original residue position
+is reconstructed. Each ready PDB is parsed independently for atom identity,
+serial, residue number, chain, occupancy, coordinates and confidence. Coordinate
+and confidence rounding tolerances remain 0.000501 Angstrom and 0.005001,
+respectively. Short masks and rejected source records stay explicit.
+
+Fixtures covered full and noncontiguous masks, the exact 70 cutoff versus
+69.9999, rounding, empty masks and source rejection. Deliberately altered residue
+positions, coordinates and confidence were rejected even after recomputing the
+file hash. This validates the checker implementation; full output validation
+remains pending.
+
+Plan and process identity:
+`metadata/duplication_alignment_input_readback_{plan,launch}_20260929.json`.
+Resources: one CPU, 4 GiB memory, no swap, 0.5–12 hours planning allowance,
+small JSON proof, no GPU or paid resources. The checker streams the 277 source
+shards and generated PDBs. Expanded alignment runs and any reuse of historical
+alignments still require validated inputs and exact settings checks.
