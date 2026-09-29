@@ -1,0 +1,19 @@
+{
+  "script": "scripts/prepare_matched_whole_protein_contrasts.py",
+  "script_sha256": "6da0062ec9f2276ae93d722127c23d3467f3481e3de818d97ab4ad38397a02fb",
+  "source_readback_sha256": "57aba641a07058f98a36edfa965bc7c066fa43e4a7aac19b7782f3aa15f3f639",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All421400 pair/mask/order observations; screened sensitivity membership preserved; gene-tree sequence distances and zero cases explicit; no fit/effect inference.",
+  "fixtures": "Original-length coverage, order choice, zero-distance handling, exclusions and blank outcomes passed"
+}

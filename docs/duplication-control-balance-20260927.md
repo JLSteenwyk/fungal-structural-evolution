@@ -397,3 +397,34 @@ rechecked after reconstruction. Full completion remains pending.
 Plan/launch: `metadata/matched_structural_measurement_readback_plan_20260928.json`
 and `metadata/matched_structural_measurement_readback_launch_20260928.json`.
 Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
+
+## Matched assembly verified; whole-protein contrasts running
+
+The independent matched-assembly readback passed all 105,350 rows, 8,849,400
+source measurement fields and all species contrast assignments, with exact
+membership and original selection-use counts. Evidence is recorded in
+`metadata/matched_structural_measurements_completed_20260928.json`.
+
+`scripts/prepare_matched_whole_protein_contrasts.py` now prepares 421,400 rows:
+every unique pair, both masks and all four target/control alignment-order
+combinations. It retains original statuses, endpoint TM scores, RMSDs, identities,
+aligned lengths and joint confidence fractions; recomputes coverage against
+original full-protein lengths in canonical endpoint order; and exports descriptive
+RMSD, identity, coverage, aligned-length and confidence contrasts. A symmetric
+mean-endpoint TM divergence contrast remains a score difference, not physical
+displacement. RMSD contrasts compare separately aligned cores, not common
+four-protein residue sets.
+
+Gene-tree sequence-distance differences and positive-log differences are
+retained separately, with explicit zero-distance status and no pseudocount.
+All six existing same-mask and both-mask screening flags remain unchanged.
+No alignment order, screen or outcome is chosen as a preferred analysis, and
+no effect fit is launched at this stage. These outputs support subsequent
+rank/overlap checks and phylogenetic/family/reuse-aware modeling. Independent
+contrast reconstruction remains required before model fitting.
+
+Helper checks covered original-length denominators, input-order choice,
+zero-distance handling and excluded/blank outcomes. Resources: one CPU, 4 GiB
+memory, no swap/GPU/charges, estimated 1–30 minutes, under 2 GiB output.
+Plan/launch: `metadata/matched_whole_protein_contrasts_plan_20260928.json` and
+`metadata/matched_whole_protein_contrasts_launch_20260928.json`.
