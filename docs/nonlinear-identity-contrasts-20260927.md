@@ -386,3 +386,12 @@ boundaries and stationary points, and reject altered objectives, gradients,
 parameter vectors and pass flags. Resources: one CPU, 16 GiB, no swap,
 0.1–8 hours planning allowance, no GPU or paid resources. Actual proposal
 readback is pending successful upstream completion; no fit has been replaced.
+
+The separate checker also passed a real-data replay of both saved proposals
+for the 8,201-record gradient-only case. The reproducible harness is
+`scripts/check_proposal_readback_real_case.py`; proof and source hashes are in
+`metadata/proposal_readback_real_case_completed_20260929.json`. This required
+27 direct likelihood evaluations and 15 analytic-gradient evaluations, including
+fresh Hessian and finite-difference reconstruction. This confirms the checker
+on the diagnosed case; the complete queued proposal stage and its full readback
+remain pending, and the original fit still retains its review flag.

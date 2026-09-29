@@ -1,0 +1,23 @@
+{
+  "status": "passed_separate_proposal_readback_real_case",
+  "records": 8201,
+  "proposals": 2,
+  "evaluations": {
+    "objective": 27,
+    "gradient": 15
+  },
+  "source_hashes": {
+    "metadata/refinement_gradient_diagnostic_plan_20260928.json": "94b2342c82ce76ed18b5f8985256bc456ae177521ab1130741fdfad49f42f881",
+    "scripts/diagnose_refinement_gradient.py": "a176e1b46c403922ffc3a4d8f9d96921e89359762ba49472816568787d6cf579",
+    "results/model_validation/flagged-polynomial-refinements-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264__mafft_guide.json": "99cfa051216f61a443adb766fb9f037ba0ad09acd7e6aa16f18975bc6e6a4c79",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264.npz": "213e1b817ec8de1bdf736ef75b6493406e7226a6991b9b54641e0e8fbdf9c1d1",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/mafft_guide.npz": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "metadata/interior_gradient_polish_case_checked_20260929.json": "b7e8d6f07fff2fb8259fdad572bb8a434cc9c0d8de4244f49597555cfd53eaff",
+    "scripts/readback_audited_gradient_proposals.py": "54bc5eed6a7d83fbdcd5483359477dd8531d1f047792249991a63e7659818fef"
+  },
+  "script_sha256": "a2e167ff6507da779c8dc9c7e8b534d27a6ec4964a7954c23b9fac547c228fab",
+  "scope": "Saved real-case proposals replayed without correction helper; shared likelihood and gradient libraries. No replacement or full-grid acceptance."
+}
