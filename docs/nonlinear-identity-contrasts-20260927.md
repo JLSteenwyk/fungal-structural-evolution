@@ -258,3 +258,24 @@ v2 checker uses the gzip text reader; all 52,675 pair rows were parsed in its
 prelaunch check. The failed script and launch remain preserved. The replacement
 is `scripts/readback_flagged_polynomial_inputs_v2.py`, with plan and launch
 suffixes `20260928_v2.json`. No data, hashes or validation tolerances changed.
+
+The corrected audit finished successfully at 23:46:08 EDT, verifying all 449
+inputs, 1,081,570 record occurrences and 601 flagged fit links. Proof:
+`metadata/flagged_polynomial_inputs_completed_readback_20260928_v2.json`.
+
+With the frozen inputs independently validated, separate numerical follow-up
+can proceed before the rest of the production grid finishes. It remains
+ineligible for integration until full production audit and independent
+refinement-output validation. `scripts/refine_flagged_polynomial_snapshot.py`
+now runs the tested refinement on all 601 frozen flagged fits, first replaying
+each original parameter vector and checking its likelihood, coefficient and
+scale against the saved original. All original outputs remain unchanged.
+
+The 601 original fits recorded 3,504.71 solver seconds (0.974 serial hours).
+Refinement has a deliberately broad 1–16 hour planning allowance on one CPU,
+16 GiB RAM, no swap and 1 GiB output. This is not a measured refinement ETA.
+Each of the 24 candidate parameter vectors per fit receives a direct-likelihood
+check; unsuccessful outcomes remain explicit. Output:
+`results/model_validation/flagged-polynomial-refinements-20260928-v1`.
+Plan and exact launch records use
+`metadata/flagged_polynomial_snapshot_refinement_*_20260928.json`.

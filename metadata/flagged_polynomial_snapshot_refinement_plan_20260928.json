@@ -1,0 +1,38 @@
+{
+  "script": "scripts/refine_flagged_polynomial_snapshot.py",
+  "inputs": "results/model_validation/flagged-polynomial-inputs-20260928-v1",
+  "audit_proof": "metadata/flagged_polynomial_inputs_completed_readback_20260928_v2.json",
+  "audit_launch": "metadata/flagged_polynomial_input_readback_launch_20260928_v2.json",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/model_validation/flagged-polynomial-refinements-20260928-v1",
+  "pins": {
+    "scripts/refine_flagged_polynomial_snapshot.py": "808709d6d39102eea5834b124c49741aac31336e320eb0d1ae1d14de11769c15",
+    "scripts/refine_matched_ml_analytic.py": "2fcc02dff2a7f9de67aa0493b805b8b34ad5a4d6eb2ffd9509db36b8afbb0d3a",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "metadata/matched_ml_refinement_checks_20260928.json": "5f07497bb3532e488ff4f8004e610ec2ac5064a26ea183bf3393ca0752087a08",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/receipt.json": "d46bd085b94d728a30d9ecc689c2ca6e6a9fe367bcdd2250e7e0838709224618",
+    "metadata/flagged_polynomial_inputs_completed_readback_20260928_v2.json": "c6f8557e611b13d74909630ada5debb5a7953060989b1a8bd94dec68046431b1",
+    "metadata/flagged_polynomial_input_readback_launch_20260928_v2.json": "08f66b51f5d066dc0a89ce28b46b0ce2951fe7047a38188c4bace54f506af825"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      1,
+      16
+    ],
+    "output_gib": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": {
+    "original_flagged_fit_solver_seconds": 3504.706961494143,
+    "original_serial_hours": 0.9735297115261508,
+    "fourfold_allowance_hours": 3.894118846104603,
+    "planning_range_uncalibrated": true
+  },
+  "scope": "Separate frozen601-fit numerical follow-up after independent snapshot input validation. Does not replace ongoing production fits; full-grid completion/audit and independent refinement readback required before integration."
+}
