@@ -1,0 +1,48 @@
+{
+  "status": "completed_expanded_alignment_workload_bindings_and_arithmetic_checked",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt": "results/structural_comparisons/expanded-duplication-alignment-workload-20260929-v1/receipt.json",
+  "receipt_sha256": "84476213fd172108e3894be8e1f7e5fbed244c0ddedf6144fb3a8d1272c776d7",
+  "pairs": 134812,
+  "directed_dispositions": 539248,
+  "covered_native_calls": 501324,
+  "uncovered_native_calls": 0,
+  "unavailable_dispositions": 37924,
+  "scenarios": [
+    {
+      "workers": 4,
+      "cost_multiplier": 1,
+      "idealized_wall_hours": 14.070939616525036
+    },
+    {
+      "workers": 4,
+      "cost_multiplier": 4,
+      "idealized_wall_hours": 56.283758466100146
+    },
+    {
+      "workers": 8,
+      "cost_multiplier": 1,
+      "idealized_wall_hours": 7.035469808262518
+    },
+    {
+      "workers": 8,
+      "cost_multiplier": 4,
+      "idealized_wall_hours": 28.141879233050073
+    },
+    {
+      "workers": 16,
+      "cost_multiplier": 1,
+      "idealized_wall_hours": 3.517734904131259
+    },
+    {
+      "workers": 16,
+      "cost_multiplier": 4,
+      "idealized_wall_hours": 14.070939616525036
+    }
+  ],
+  "scope": "Source hashes, terminal success and reported-stratum arithmetic checked. Timing transferability remains an assumption; no independent reconstruction of pair-stratum membership in this check."
+}

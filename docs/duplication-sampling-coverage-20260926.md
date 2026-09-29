@@ -515,3 +515,27 @@ The already queued exact old/new input comparison and expanded workload
 estimator are now live after this validation gate. Expanded native alignments
 and input/result reuse remain pending; input validation establishes neither
 biological effects nor suitability of old numerical results for reuse.
+
+### Expanded structural alignments launched (September 29)
+
+The workload estimator completed with 134,812 pairs and 539,248 directed
+dispositions: 501,324 native alignment calls and 37,924 unavailable confidence-mask
+dispositions. All ready inputs fall within historical timing bins. Source hashes,
+terminal success and reported-stratum arithmetic were checked in the
+[workload completion record](../metadata/expanded_duplication_alignment_workload_completed_20260929.json).
+Historical mean costs imply 7.04 hours at eight workers; multiplying those costs
+by four gives 28.14 hours. These are scenarios, not calibrated ETAs or bounds,
+and omit IO and subsequent validation.
+
+The [full expanded run](../metadata/expanded_duplication_alignment_plan_20260929.json)
+is launched with eight CPU workers, a 32 GiB memory cap, zero swap, a 64 GiB
+output allowance and a 100 GiB free-disk reserve. Each native call has a
+600-second timeout; unavailable inputs, native errors, parse failures and
+timeouts remain explicit dispositions. Both input orders and both masks are
+included, with fresh alignments for every ready pair. The native binary,
+scripts, source manifest, queue, input audit and workload evidence are pinned.
+Native/checkpoint fixtures and the complete small handoff fixture passed before
+launch. The [launch record](../metadata/expanded_duplication_alignment_launch_20260929.json)
+preserves the exact process identity and plan hash. Full result readback,
+degenerate-geometry review, alignment-order sensitivity and biological
+duplication tests remain pending. GPU prediction remains paused.

@@ -1,0 +1,78 @@
+{
+  "producer": {
+    "pid": 2461758,
+    "created": 1790639651.45,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/materialize_duplication_alignment_inputs.py",
+      "--plan",
+      "metadata/duplication_alignment_input_plan_20260928.json"
+    ]
+  },
+  "inputs": "results/structural_comparisons/duplication-alignment-inputs-20260928-v1",
+  "input_plan": "metadata/duplication_alignment_input_plan_20260928.json",
+  "queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "output": "results/structural_comparisons/duplication-alignments-20260929-v1",
+  "usalign": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+  "options": [
+    "-mol",
+    "prot",
+    "-mm",
+    "0",
+    "-outfmt",
+    "0",
+    "-ter",
+    "2"
+  ],
+  "workers": 8,
+  "per_pair_timeout_seconds": 600,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_runner.py": "cd39661a8c27ced6705527388094f692cc4fc449004a85c46f6956a657f77a3c",
+    "scripts/check_duplication_alignment_handoff.py": "abd0387e5107c4ae69a5cdd4128537e4ac021761c34e200659e50f157bce3921",
+    "metadata/duplication_alignment_input_plan_20260928.json": "61426105e2cc14b587efd9616ffbe7060869dff714d6988c5e29747daa78efa0",
+    "metadata/duplication_alignment_input_launch_20260928.json": "3d6be350c03b733133e97adfce0d2a660b5f2c61121b893c24568bff0ae64759",
+    "metadata/duplication_alignment_inputs_completed_readback_20260929.json": "e7d5e449e5e75a0a674f9d08121831e3d0632fa8ab6e02c8878680b4fded2c72",
+    "metadata/duplication_alignment_input_audited_20260929.json": "d7b904f7d3789f8dfe0932a357b3498eee07ed44ed064d456e03c830acf3b16a",
+    "results/structural_comparisons/expanded-duplication-alignment-workload-20260929-v1/receipt.json": "84476213fd172108e3894be8e1f7e5fbed244c0ddedf6144fb3a8d1272c776d7",
+    "metadata/expanded_duplication_alignment_workload_completed_20260929.json": "6e7417bb72a6ef3bcd24226238e8967d546e97595dc986bbc51dcbcd64bdb49c",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/receipt.json": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/inputs.jsonl": "df5c21b88a114f9f99bb2df7e758c03495fb38aa1b8e9cbbda48ca94b810e456",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62"
+  },
+  "resources": {
+    "cpu": 8,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 64,
+    "distinct_model_pairs": 134812,
+    "directed_dispositions": 539248,
+    "expected_native_calls": 501324,
+    "expected_unavailable_dispositions": 37924,
+    "historical_timing_scenarios": [
+      {
+        "workers": 8,
+        "cost_multiplier": 1,
+        "idealized_wall_hours": 7.035469808262518
+      },
+      {
+        "workers": 8,
+        "cost_multiplier": 4,
+        "idealized_wall_hours": 28.141879233050073
+      }
+    ],
+    "scope": "All expanded pairs, both orders and masks, fresh native alignment. Historical mean-length-bin scenarios, not calibrated ETA or bounds; excludes IO and audit. No GPU or paid resources.",
+    "memory_basis": "Compact input manifest retains sequence, path, hash and status for 553364 dispositions; eight native workers with input length bins at most 2000, 64 queued tasks. 32 GiB is an operational cap, not a measured peak guarantee.",
+    "storage_basis": "Old 412800 disposition checkpoints occupied 1.9985 GiB; simple count scaling is about 2.61 GiB. 64 GiB allowance includes larger records and overhead, not a strict bound.",
+    "host_available_gib": 662.4023857116699,
+    "free_disk_gib": 10858.727405548096,
+    "assessed_at": "2026-09-29T07:46:33.376797+00:00"
+  },
+  "prelaunch_validation": "Full expanded PDB readback and producer terminal success checked; native runner fixtures and end-to-end handoff fixtures passed. All plans and native binary hashes pinned. Old results are not reused; geometry and order sensitivity remain post-run checks."
+}
