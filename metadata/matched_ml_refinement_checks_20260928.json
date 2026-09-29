@@ -1,0 +1,17 @@
+{
+  "status": "passed_dense_ml_refinement_fixtures",
+  "fits": 6,
+  "dense_candidates_checked": 144,
+  "invalid_initial_vectors_rejected": 4,
+  "maximum_dense_objective_error": 2.842170943040401e-14,
+  "status_counts": {
+    "ml_refinement_passed_numerical_checks": 6
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_matched_ml_refinement.py": "f033b5deebdd3690845b56c5fe28ddc35595706851f4df2dcdf2b5f9fea03ce3",
+    "scripts/refine_matched_ml_analytic.py": "2fcc02dff2a7f9de67aa0493b805b8b34ad5a4d6eb2ffd9509db36b8afbb0d3a",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0"
+  },
+  "scope": "Synthetic numerical validation across linear/quadratic/cubic designs and zero/nonzero species factors; no production flags resolved and no global-optimum or calibration claim."
+}

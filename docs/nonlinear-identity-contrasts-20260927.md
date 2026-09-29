@@ -206,3 +206,22 @@ Script: `scripts/census_polynomial_optimization_flags.py`; frozen prefix,
 per-fit reasons and hashes: `results/model_validation/polynomial-optimization-flag-census-20260928-v1`.
 The reason counts were also independently recounted from each flagged payload;
 evidence: `metadata/polynomial_optimization_flag_census_completed_20260928.json`.
+
+A separate ordinary-ML refinement routine is now available as
+`scripts/refine_matched_ml_analytic.py`. It retains the original unoptimized
+reference, the all-zero face, the existing three starts on every nonempty
+variance-component face, and one additional full-face start from the original
+parameters (24 candidates total). It keeps the same variance bounds and review
+criteria, increases the iteration/line-search allowance, and tightens optimizer
+stopping tolerances. Every candidate is checked against the direct ML evaluator.
+An exactly tied successful candidate takes precedence, but a lower unsuccessful
+candidate remains selected and flagged; no approximate tie tolerance is used.
+
+`scripts/check_matched_ml_refinement.py` passed six synthetic fits across three
+polynomial degrees and zero/nonzero species factors. All 144 candidate
+likelihoods matched a separate dense covariance calculation, with maximum
+absolute error 2.843e-14; four invalid starting vectors were rejected. Evidence:
+`metadata/matched_ml_refinement_checks_20260928.json`. No production refinement
+has been launched. Full-grid audit, exact input reconstruction, resource
+estimation and independent refinement-output checks are still needed; the
+synthetic tests do not resolve any of the 601 observed production flags.
