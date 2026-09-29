@@ -477,3 +477,20 @@ bind source hashes and resources: one CPU, 4 GiB memory, no swap/GPU/paid resour
 Length boundaries, covered/uncovered/unavailable counts, worker arithmetic and
 zero-coverage fixtures passed. The estimator assumes no result reuse and does not
 launch alignments. Full result review and resource allocation remain pending.
+
+
+### Expanded coordinate audit completed (September 29, 03:02 EDT)
+
+All 277 coordinate batches passed the independent source-CIF audit: 276,682
+models and 100,073,779 residues, with no rejected model dispositions. The audit
+reconstructed each accepted C-alpha sequence, coordinate and confidence value.
+The [completion record](../metadata/duplication_coordinate_readback_completed_20260929.json)
+binds successful terminal status, all 277 per-shard proof hashes, their source
+shard bindings, and aggregate model/residue counts. The lexical CIF parser is
+shared with the producer; the extraction logic is separate.
+
+The already queued expanded alignment-input materializer started automatically
+and wrote its first batch at 03:02:32 EDT. It is generating full and pLDDT70 C-alpha
+inputs; the PDB readback, exact old/new input comparison and workload scenarios
+remain downstream. No expanded alignments or biological effects are claimed
+complete by this coordinate audit.

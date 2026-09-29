@@ -1,0 +1,28 @@
+{
+  "status": "verified_complete_duplication_coordinate_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt_sha256": "26ca922eb14699bfd7b4b6a3be78b2e9382f9a58acdd95780b7f8c42247b1b5d",
+  "producer_receipt_sha256": "baa030e7f6d7edc41ab7cc786bf70220837d3e630ecb6672ffa72ef1cb8c694d",
+  "proofs_checked": 277,
+  "models": 276682,
+  "validated_residues": 100073779,
+  "counts": {
+    "validated": 276682
+  },
+  "materialization_handoff": {
+    "pid": 2461758,
+    "created": 1790639651.45,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/materialize_duplication_alignment_inputs.py",
+      "--plan",
+      "metadata/duplication_alignment_input_plan_20260928.json"
+    ],
+    "observed_status": "running"
+  },
+  "scope": "All 277 per-shard proof hashes, source-shard bindings and aggregate counts checked after successful full source-CIF audit. Materialization has started; alignment inputs, expanded comparisons and biological analyses are not yet complete."
+}
