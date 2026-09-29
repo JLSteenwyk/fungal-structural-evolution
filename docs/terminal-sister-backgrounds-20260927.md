@@ -1239,3 +1239,25 @@ Reproduce with `scripts/join_background_alignment_order_sources.py`; output:
 Completion evidence: `metadata/background_combined_orders_completed_20260928.json`.
 Candidate/event linkage, identical-model and neither-guide dispositions,
 coverage/confidence screens and evolutionary tests remain downstream.
+
+### All background candidates linked to audited measurements
+
+`scripts/link_background_candidate_measurements.py` now preserves all 78,372
+background candidates under both masks (156,744 rows), with original gene/taxon
+identities, guide membership, native orthology flags, sequence distances,
+length/confidence covariates and measurement dispositions unchanged. All 71,461
+measured pairs are linked to their audited summaries. The 6,448 identical-model
+and 463 neither-guide-eligible candidates retain blank fit fields; structural
+identity is not converted to an imputed distance.
+
+Structural metrics retain explicitly named canonical endpoints. Candidate
+orientation is recorded as same for 45,704 measured candidates and reversed for
+25,757; this prevents accidental assignment of endpoint-normalized coverage or
+TM-score to the wrong gene. Every serialized source and measurement field was
+checked, followed by independent checks of all 156,744 unique candidate/mask
+identities, pair hashes, orientations, mask assignments and unmeasured blanks.
+
+Output: `results/structural_comparisons/background-candidate-measurements-20260928-v1`.
+Evidence: `metadata/background_candidate_measurements_completed_20260928.json`.
+This preserves sampling denominators; it does not complete coverage/confidence
+qualification, phylogenetic matching or evolutionary inference.

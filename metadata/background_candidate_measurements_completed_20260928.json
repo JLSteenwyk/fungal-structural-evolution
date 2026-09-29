@@ -1,0 +1,24 @@
+{
+  "status": "verified_all_background_candidate_links_and_endpoint_orientations",
+  "receipt_sha256": "ccf019ef87af7081f02f7e2c35eba70e136cf1d7d0fe76f7f2e28d849c2661f7",
+  "candidate_mask_rows": 156744,
+  "counts": {
+    "full:identical_model_no_alignment:not_measured": 6448,
+    "plddt70:identical_model_no_alignment:not_measured": 6448,
+    "full:new_model_pair:both_orders_numerically_usable": 71450,
+    "plddt70:new_model_pair:both_orders_numerically_usable": 69570,
+    "plddt70:new_model_pair:neither_order_numerically_usable": 1877,
+    "full:neither_guide_eligible:not_measured": 463,
+    "plddt70:neither_guide_eligible:not_measured": 463,
+    "full:already_in_reference_queue:both_orders_numerically_usable": 11,
+    "plddt70:already_in_reference_queue:both_orders_numerically_usable": 4,
+    "plddt70:new_model_pair:one_order_numerically_usable": 3,
+    "plddt70:already_in_reference_queue:neither_order_numerically_usable": 7
+  },
+  "orientation_counts": {
+    "not_measured": 13822,
+    "same_as_canonical": 91408,
+    "reversed_from_canonical": 51514
+  },
+  "scope": "Every serialized candidate/mask identity unique; all measured pair hashes, explicit canonical/candidate endpoint orientations, mask assignments, unmeasured blank fields and disposition counters independently checked. All source/fit fields compared in producer readback. No inferential result."
+}
