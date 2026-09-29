@@ -420,3 +420,15 @@ CPU, 16 GiB, 0.01–1 hour, no GPU or paid resources).
 The original review flag remains. Separate proposal readback and the complete
 upstream audit are still required before any integration; a local correction
 is not a global optimum or inferential calibration result.
+
+Separate direct-likelihood checks of both saved boundary proposals passed on
+all 8,071 records, with 27 fresh objective evaluations. The checker
+`scripts/check_boundary_refinement_proposals.py` reconstructs the active design
+and tests two centered-difference scales for free parameters and two forward-
+difference scales for the zero family variance. Both free-gradient norms are
+below 1e-3; both one-sided family gradients remain positive. Proof:
+`metadata/boundary_refinement_proposals_checked_20260929.json`. This check calls
+neither the analytic-gradient helper nor the proposal producer; the likelihood
+library is shared. It validates the proposed points, not independently the
+Hessian construction. Complete upstream audit and an explicit integration stage
+remain pending; the saved production fit is unchanged.
