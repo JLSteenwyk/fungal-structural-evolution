@@ -86,7 +86,10 @@ Chronological receipts and process records remain in [progress](progress.md).
   scenarios; see [matching diagnostics](duplication-control-balance-20260927.md).
   Background domain measurements and all 82,944 descriptive summary settings are
   complete. The full 144,040-fit phylogenetic working-model grid, analytic-gradient
-  checks and export completed; 658 unique fits remain for numerical review.
+  checks and export completed. All 658 targeted refinements passed the recorded
+  numerical criteria and were integrated into the selected grid; original flags
+  remain preserved. Full residual replay and descriptive summaries now cover
+  all 144,040 selected fits. Model adequacy and calibrated inference remain open.
   A separate 432,120-fit ordinary-ML linear/quadratic/cubic grid is running
   on verified identical observations across five trees. The expanded designs and
   input inventory passed full readback; nonlinear joint support is verified for
@@ -239,9 +242,16 @@ September 28: the corrected refinement auditor and full setting-map integration
 both reached terminal success; their earlier failed attempts remain recorded.
 Evidence is in `metadata/matched_refinement_integration_completed_20260928_v2.json`.
 Cache replay subsequently covered all 28,808 inputs and 144,040 original fits.
-Selected-fit residual diagnostics have been produced for the complete grid,
-but their numerical replay remains active; candidate interval production and
-its downstream audit also remain incomplete. Inferential calibration and
+Selected-fit residual diagnostics and their complete numerical replay finished
+successfully for all 28,808 inputs and 144,040 fits. Descriptive tables and the
+five-tree figure passed full table/arithmetic and visual checks. Completion
+evidence is recorded in
+`metadata/selected_matched_residual_audit_completed_20260928.json`,
+`metadata/selected_matched_residual_summary_completed_20260928.json` and
+`metadata/selected_matched_residual_figure_completed_20260928.json`.
+The replay uses the same numerical evaluator as production; it does not
+independently establish model adequacy. Candidate interval production and
+its downstream audit remain incomplete. Inferential calibration and
 scientific interpretation are still required. See
 [matched-model calibration](matched-model-calibration-20260928.md).
 
