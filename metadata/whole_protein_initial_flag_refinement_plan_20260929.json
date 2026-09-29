@@ -1,0 +1,37 @@
+{
+  "original_replay": "results/model_validation/whole-protein-initial-flag-review-20260929-v1/receipt.json",
+  "frozen_manifest": "results/model_validation/whole-protein-initial-flag-review-20260929-v1/frozen_manifest.jsonl",
+  "inputs": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "factors": "results/phylogeny/matched-species-covariance-factors-20260927-v1",
+  "output": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Five source-validated flagged fits, 24 candidates each. Historical production examples took tens of seconds; stricter optimizer and 120 independent likelihood replays may take substantially longer. Planning allowance is not an ETA or timeout."
+  },
+  "scope": "Refinement of all five already replayed flags in frozen prefix 705. Full production continues, later flags remain pending; this is numerical follow-up, not a pilot or substitute for complete-grid analysis.",
+  "pins": {
+    "results/model_validation/whole-protein-initial-flag-review-20260929-v1/receipt.json": "2dd1a2a2fc97d275185f7d33b3420114e173f8d041cd035af7ed7ce01d350b8e",
+    "results/model_validation/whole-protein-initial-flag-review-20260929-v1/frozen_manifest.jsonl": "40f8e10e0d045b01886ee823794571857037ffb079def218299a4a07ed9db910",
+    "metadata/matched_ml_refinement_checks_20260928.json": "5f07497bb3532e488ff4f8004e610ec2ac5064a26ea183bf3393ca0752087a08",
+    "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/receipt.json": "3bb4c5ac636b7b6726778f5ea2516f34ee4e074a01a6d31221d135d60aaba8cd",
+    "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/input_manifest.jsonl": "adf412149284b7957662ef42cb9a4b058751758c6e2ebe80f096ea6c82995d8e",
+    "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json": "e3fd436421ed713baf36c4c8c66d34df5570330e496eebc14c6c2f4be04d82dd",
+    "metadata/whole_protein_initial_flag_review_completed_20260929.json": "3b4aba3a15b98131d3e54ae5930332b668720a2d3e67aff129a8297cf1aea41c",
+    "scripts/refine_whole_protein_flagged_snapshot.py": "09d65bf120cf59fcde94823697c0b44e3cafdc3673b1dc18738295bd649137ee",
+    "scripts/refine_matched_ml_analytic.py": "2fcc02dff2a7f9de67aa0493b805b8b34ad5a4d6eb2ffd9509db36b8afbb0d3a",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  }
+}

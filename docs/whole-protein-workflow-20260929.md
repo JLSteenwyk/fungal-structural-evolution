@@ -187,3 +187,24 @@ retained. Original outputs and review flags remain unchanged. This is an early
 triage check, not the full output audit or an estimate of the final flag rate.
 Targeted refinement must retain original candidates, validate any improved
 solution and meet the existing numerical criteria before downstream use.
+
+
+The [initial flagged-fit refinement](../metadata/whole_protein_initial_flag_refinement_plan_20260929.json)
+is now launched for all five previously replayed flags in the frozen 705-fit
+prefix. It uses the already validated ordinary-ML refinement solver: all eight
+variance-component faces, the original candidate and an additional start at its
+parameters are retained, giving 24 candidates per fit. Optimization uses up to
+1,000 iterations, ftol 1e−14, gtol 1e−8 and maxls 80; acceptance thresholds remain
+unchanged. Every candidate likelihood and the selected coefficients/covariance
+are replayed with separate GLS normal-equation code sharing the covariance
+operator. The adapter preserves the whole-protein intercept and uncentered
+covariate scaling and exports coefficients in original units.
+
+One CPU and a 16 GiB memory cap are allocated, without swap, GPU or new charges.
+The 0.1–4 hour planning allowance covers stricter optimization and 120 candidate
+replays; it is not a completion guarantee. The
+[launch record](../metadata/whole_protein_initial_flag_refinement_launch_20260929.json)
+binds the exact process. All outputs go to a separate versioned directory;
+production fits and their flags remain untouched. The full production grid
+continues. Refinement completion, serialized review, integration and resolution
+of later flags are still required before using corrected results scientifically.
