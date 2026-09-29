@@ -1220,3 +1220,22 @@ alignments pass the numerical screen; 77 aligned directions are excluded (72
 short/nonunique and five additionally failing RMSD rounding). Evidence is in
 `metadata/background_alignment_usable_orders_completed_20260928.json` and
 `metadata/background_alignment_usable_orders_readback_20260928.json`.
+
+### Complete background measurement source union
+
+The audited summaries now cover all 71,461 distinct eligible background pairs:
+71,450 new pairs plus the 11 previously measured reference pairs. All 44 reused
+checkpoints (two masks × two orders × 11 pairs) were checked against their
+original manifest, exact ordered endpoint identities, materialized input files,
+executable checksum and options. Original summary fields, including exclusions
+and blanks, survive unchanged. The serialized combined table has exactly
+142,922 unique pair/mask rows matching the entire inventory; counts and source
+assignments were checked. Both full-mask directions pass the numerical screen
+for all 11 reused pairs; confidence masks have both directions for four and
+neither for seven. Missing directions are preserved without imputation.
+
+Reproduce with `scripts/join_background_alignment_order_sources.py`; output:
+`results/structural_comparisons/background-combined-orders-20260928-v1`.
+Completion evidence: `metadata/background_combined_orders_completed_20260928.json`.
+Candidate/event linkage, identical-model and neither-guide dispositions,
+coverage/confidence screens and evolutionary tests remain downstream.
