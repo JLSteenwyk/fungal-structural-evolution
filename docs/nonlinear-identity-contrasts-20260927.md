@@ -279,3 +279,15 @@ check; unsuccessful outcomes remain explicit. Output:
 `results/model_validation/flagged-polynomial-refinements-20260928-v1`.
 Plan and exact launch records use
 `metadata/flagged_polynomial_snapshot_refinement_*_20260928.json`.
+
+A separate output replay is queued behind successful refinement termination:
+`scripts/audit_flagged_polynomial_refinements.py`. It replays all 14,424 candidate
+likelihoods across 601 fits, checks the complete face/start grid and preserved
+original parameters, recomputes gradients and review classifications, and
+checks fitted coefficients, scales, covariance matrices and raw-unit
+conversions. It uses the already validated direct-likelihood and gradient
+libraries, so this is a separate execution and output audit, not an independent
+mathematical implementation. Resource limits are one CPU, 16 GiB RAM, no swap,
+and 0.1–8 planned hours after the producer. Plan and launch records use
+`metadata/flagged_polynomial_refinement_readback_*_20260928.json`. No refined
+production status is accepted solely from the live progress log.

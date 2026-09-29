@@ -1,0 +1,19 @@
+{
+  "script": "scripts/audit_flagged_polynomial_refinements.py",
+  "script_sha256": "bb1a90110a230e500eb7478051bb976cc0ef870798c2a87431c7e9f2213d6999",
+  "producer_launch_sha256": "9ca3c05a44cb16901b317b8fbd8a226fdd0defd2df3865b209d8726174921d73",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All601 frozen fits and14424 candidate likelihoods replayed; original source links, start/face completeness, bounds, gradients, classifications and raw coefficient units. Validated numerical libraries shared with producer; no independent mathematics or calibration claim.",
+  "prelaunch_check": "24-entry start/face schema checked against a saved production refinement"
+}
