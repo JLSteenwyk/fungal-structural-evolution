@@ -824,8 +824,10 @@ These are local numerical proposals. Original optimizer failures, disagreement
 between starts and other review flags cannot be resolved by this procedure.
 Single-case direct checks and synthetic fixtures have passed. Complete snapshot
 refinement processed all 601 fits, with 598 passing and three gradient-only
-flags retained. Full output audits, proposal application and integration remain
-in progress or queued. No original production fit has been replaced. Completion
+flags retained. Full output replay subsequently passed all 14,424 candidate likelihoods. Both
+proposal stages and their complete readbacks also passed, yielding two checked
+local proposals for each of the three retained gradient cases. Selection and
+integration remain pending. No original production fit has been replaced. Completion
 and validation of the full model grid remain required before using corrected
 values in model comparisons. Numerical stationarity does not establish variance
 component identifiability, a global optimum, interval calibration, prediction

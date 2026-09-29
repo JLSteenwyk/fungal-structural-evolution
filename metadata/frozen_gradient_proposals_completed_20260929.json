@@ -1,0 +1,52 @@
+{
+  "status": "both_frozen_gradient_proposal_stages_fully_checked",
+  "stages": [
+    {
+      "stage": "audited_gradient_proposals",
+      "receipt_sha256": "c23e8ed0e5157648d67e596bb85ccaa0b0f429665915d80f0954af01446e7139",
+      "proof_sha256": "2e14aae1341dd7acc991cf699e088806428d74bdfdb06f787e9834077106b59a",
+      "status": "passed_full_audited_gradient_proposal_readback",
+      "counts": {
+        "already_passed_no_proposal": 598,
+        "two_local_proposals_passed": 1,
+        "not_applicable_near_boundary": 2
+      },
+      "terminal_states": {
+        "fungal-audited-gradient-proposals-20260929.service": {
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "fungal-audited-gradient-proposal-readback-20260929.service": {
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        }
+      }
+    },
+    {
+      "stage": "audited_lower_face_proposals",
+      "receipt_sha256": "a54f5116a442880430d4ba9c6bf7c71e162f1ccdd2fcfdcc8a2b6cfdd9bf72f1",
+      "proof_sha256": "5b6c47d9b9dd9940f9ec313521286ce50896675b23864727d056d5c543e73aae",
+      "status": "passed_full_audited_lower_face_proposal_readback",
+      "counts": {
+        "already_passed_no_proposal": 598,
+        "not_applicable_without_mixed_lower_face": 1,
+        "two_lower_face_proposals_passed": 2
+      },
+      "terminal_states": {
+        "fungal-audited-lower-face-proposals-20260929.service": {
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        },
+        "fungal-audited-lower-face-readback-20260929.service": {
+          "Result": "success",
+          "ExecMainStatus": "0",
+          "ActiveState": "inactive"
+        }
+      }
+    }
+  ],
+  "scope": "All601 dispositions checked in both stages; one interior and two lower-face cases each have two passing local proposals. No fit selected/replaced, no full-grid acceptance or inferential calibration."
+}

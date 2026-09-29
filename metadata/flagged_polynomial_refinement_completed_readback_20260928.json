@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_flagged_polynomial_refinement_replay",
+  "source_receipt_sha256": "22665649e8e099811693b01921a8169a3ed878a17ebe91d44dd6690ab1881375",
+  "checker_sha256": "bb1a90110a230e500eb7478051bb976cc0ef870798c2a87431c7e9f2213d6999",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "fits": 601,
+  "candidate_likelihoods_replayed": 14424,
+  "maximum_objective_error": 6.59383658785373e-11,
+  "counts": {
+    "ml_refinement_passed_numerical_checks": 598,
+    "ml_refinement_requires_review": 3
+  },
+  "scope": "Separate-process replay of every candidate and output classification using the validated direct likelihood and analytic-gradient libraries. Shared mathematical libraries remain; this is not a second mathematical implementation, global-optimum proof, full-grid acceptance or inferential calibration."
+}

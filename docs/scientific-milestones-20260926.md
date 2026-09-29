@@ -126,10 +126,10 @@ Chronological receipts and process records remain in [progress](progress.md).
   A frozen 75,205-fit prefix retains 601 review flags; all 449 distinct flagged
   inputs were reconstructed and checked. Separate refinement completed all 601 fits,
   with 598 passing and three gradient-only flags retained. Full candidate-output
-  replay is running. Gradient-only interior and exact-zero
-  boundary proposals, plus their separate full readbacks, are queued behind
-  successful refinement audit. Synthetic and selected real-case checks passed;
-  proposals have not replaced production fits. The original full grid still
+  replay passed all 14,424 candidate likelihoods. Gradient-only interior and
+  exact-zero boundary proposal stages and their complete readbacks also passed:
+  all three retained cases have two checked local proposals. Selection and
+  integration are pending; proposals have not replaced production fits. The original full grid still
   requires completion and audit, followed by integration and valid uncertainty
   and multiplicity treatment. None of these stages establishes a duplication effect.
 - Recovered AlphaFold accessibility and full site-summary readbacks are complete:

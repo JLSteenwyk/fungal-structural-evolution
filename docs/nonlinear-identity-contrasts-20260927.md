@@ -494,3 +494,25 @@ The exact identified full output auditor has started numerical replay, reaching
 likelihoods before the queued interior/lower-face proposal jobs proceed.
 Production fits remain unchanged; this is a completed refinement computation,
 not full numerical acceptance or completion of the original 432,120-fit grid.
+
+### Full refinement and proposal replay passed (September 29)
+
+The refinement output audit finished successfully for all 601 fits and 14,424
+candidate likelihoods, with maximum objective discrepancy 6.59384e-11.
+Proof: `metadata/flagged_polynomial_refinement_completed_readback_20260928.json`.
+Both queued proposal stages then finished successfully. The interior stage
+retained 598 previously passing fits, produced two passing proposals for the
+one interior case, and explicitly excluded the two boundary cases. The
+lower-face stage retained the same 598 passing fits, excluded the interior case,
+and produced two passing proposals for each of the two boundary cases.
+
+Both full proposal readbacks passed all 601 dispositions, reconstructing each
+eligible input and checking every proposed point and acceptance decision.
+Evidence: `metadata/audited_gradient_proposals_completed_readback_20260929.json`,
+`metadata/audited_lower_face_proposals_completed_readback_20260929.json`, and
+`metadata/frozen_gradient_proposals_completed_20260929.json`. The last record
+checks source/artifact/proof bindings and successful terminal states for all
+four producer/checker services. These are numerical local candidates, not
+selected replacements: all original fit statuses remain unchanged. Explicit
+selection, coefficient/covariance recomputation and integration still need
+validation, and the original full model grid remains incomplete.
