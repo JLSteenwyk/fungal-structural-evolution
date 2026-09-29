@@ -321,3 +321,14 @@ acceptance procedure are needed before replacing any fitted result. All eight
 trials and source hashes are preserved in
 `results/model_validation/refinement-curvature-diagnostic-20260928-v1`;
 completion evidence is `metadata/refinement_curvature_diagnostic_completed_20260928.json`.
+
+Both full-step proposals subsequently passed direct finite-difference checks
+at steps 1e-6 and 1e-7 in all three parameter directions (27 direct objective
+evaluations including the original and proposed points). The largest absolute
+estimated derivative was 1.137e-5, below the unchanged 1e-3 criterion. Both
+replayed objectives were 2986.8187322513263, slightly below the original.
+Checker: `scripts/check_refinement_curvature_proposals.py`; proof:
+`metadata/refinement_curvature_proposals_checked_20260928.json`.
+This verifies the two fixed proposals locally. Incorporation into a reusable,
+audited refinement procedure and full-grid integration remain outstanding;
+the original stored review flag has not been changed.
