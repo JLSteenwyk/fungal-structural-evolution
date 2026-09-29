@@ -370,3 +370,16 @@ results/structural_comparisons/duplication-model-pair-queue-20260928-v1 --output
 `results/structural_comparisons/duplication-alignment-reuse-screen-20260928-v1`;
 its complete-row verification is recorded in
 `metadata/duplication_alignment_reuse_screen_completed_20260928.json`.
+
+### Expanded coordinate producer complete; independent audit active
+
+The September 28 producer completed all 276,682 frozen models with no content
+rejections and exited successfully at 22:23 EDT. All 277 compressed output
+checksums, individual receipts, exact frozen model partitions, model counts and
+plan pins were verified. The independent raw-CIF coordinate/sequence/confidence
+readback started automatically and remains active. Alignment input materialization
+continues to wait for full audit success; no expanded alignments have been launched.
+Producer-only evidence is saved in
+`metadata/duplication_coordinate_validation_producer_completed_20260928.json`.
+These checks do not establish prediction accuracy, PAE qualification, or biological
+structural divergence.
