@@ -822,9 +822,10 @@ explicitly inapplicable.
 
 These are local numerical proposals. Original optimizer failures, disagreement
 between starts and other review flags cannot be resolved by this procedure.
-Single-case direct checks and synthetic fixtures have passed; complete snapshot
-refinement, output audits, proposal application and integration are still in
-progress or queued. No original production fit has been replaced. Completion
+Single-case direct checks and synthetic fixtures have passed. Complete snapshot
+refinement processed all 601 fits, with 598 passing and three gradient-only
+flags retained. Full output audits, proposal application and integration remain
+in progress or queued. No original production fit has been replaced. Completion
 and validation of the full model grid remain required before using corrected
 values in model comparisons. Numerical stationarity does not establish variance
 component identifiability, a global optimum, interval calibration, prediction

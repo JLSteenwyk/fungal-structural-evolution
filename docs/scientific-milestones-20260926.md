@@ -124,8 +124,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   input inventory passed full readback; nonlinear joint support is verified for
   all 57,616 inputs, including separate nonnegative certificates for 112 edge cases. Full likelihood comparison exports retain all settings and fit flags.
   A frozen 75,205-fit prefix retains 601 review flags; all 449 distinct flagged
-  inputs were reconstructed and checked. Separate refinement is running, with
-  full candidate-output replay queued. Gradient-only interior and exact-zero
+  inputs were reconstructed and checked. Separate refinement completed all 601 fits,
+  with 598 passing and three gradient-only flags retained. Full candidate-output
+  replay is running. Gradient-only interior and exact-zero
   boundary proposals, plus their separate full readbacks, are queued behind
   successful refinement audit. Synthetic and selected real-case checks passed;
   proposals have not replaced production fits. The original full grid still

@@ -478,3 +478,19 @@ Plan, exact process identity and fixture proof are recorded under
 `metadata/lower_face_payload_checker_fixtures_20260929.json`.
 Resources: one CPU, 16 GiB, no swap, 0.1–8 hours planning allowance, no GPU or paid
 resources. Full output validation remains pending upstream completion.
+
+### Frozen refinement producer complete (September 29)
+
+All 601 frozen fits finished with successful terminal exit: 598 pass the
+refinement numerical criteria and three retain only the projected-gradient
+flag. The third is `eb437ad34e173c7c01a688afa18c92b4c66c27da360b293e8d0b9d1d53a32f94`
+on `pmsf_profile_mafft`, with zero family variance and projected-gradient norm
+0.00105016253. All source and serialized artifact hashes, unique fit identities
+and final status counts were checked in
+`metadata/flagged_polynomial_refinement_producer_completed_20260929.json`.
+The receipt hash is `22665649e8e099811693b01921a8169a3ed878a17ebe91d44dd6690ab1881375`.
+The exact identified full output auditor has started numerical replay, reaching
+40/601 fits at the recorded handoff. It must check all 14,424 candidate
+likelihoods before the queued interior/lower-face proposal jobs proceed.
+Production fits remain unchanged; this is a completed refinement computation,
+not full numerical acceptance or completion of the original 432,120-fit grid.

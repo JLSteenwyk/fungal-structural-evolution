@@ -124,8 +124,10 @@ model preference, significance or calibrated uncertainty.
 
 A frozen prefix of 75,205 completed ordinary-ML fits contained 601 optimization
 review flags. Their 449 unique inputs passed exact numerical-hash, membership
-and phylogenetic-mapping readback. A separate refinement run is active for all
-601 fits, with complete candidate-likelihood replay queued afterward. Original
+and phylogenetic-mapping readback. The separate refinement run completed all
+601 fits: 598 pass its numerical criteria and three retain gradient-only flags.
+Complete candidate-likelihood replay is now running, with interior and boundary
+correction proposals and their audits queued afterward. Original
 fits and flags remain intact; the subset does not replace full-grid audit or
 establish calibrated model comparisons. See the
 [flag census and numerical follow-up](docs/nonlinear-identity-contrasts-20260927.md).

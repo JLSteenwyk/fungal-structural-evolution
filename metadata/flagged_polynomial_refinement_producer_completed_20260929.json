@@ -1,0 +1,88 @@
+{
+  "status": "complete_frozen_refinement_producer_output_audit_active",
+  "fits": 601,
+  "counts": {
+    "ml_refinement_passed_numerical_checks": 598,
+    "ml_refinement_requires_review": 3
+  },
+  "source_receipt_sha256": "22665649e8e099811693b01921a8169a3ed878a17ebe91d44dd6690ab1881375",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "remaining_warnings": [
+    {
+      "fit_input_id": "2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264",
+      "tree": "mafft_guide",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true,
+        "original_objective_not_worsened": true
+      },
+      "theta": [
+        0.6623773206398326,
+        0.0005685938803541695,
+        0.01429888446468199
+      ],
+      "projected_gradient": [
+        -7.602420841438102e-05,
+        -0.0001577748655169127,
+        0.0011737104679810464
+      ]
+    },
+    {
+      "fit_input_id": "fc3f7097bc4922808dc6dc4637c46f21ba224b98bb77bce5859e593b837a95dc",
+      "tree": "pmsf_mafft_profile",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true,
+        "original_objective_not_worsened": true
+      },
+      "theta": [
+        0.671487865012491,
+        0.0,
+        0.011633752107496132
+      ],
+      "projected_gradient": [
+        -4.584806468800807e-05,
+        0.0,
+        0.0011084573696002371
+      ]
+    },
+    {
+      "fit_input_id": "eb437ad34e173c7c01a688afa18c92b4c66c27da360b293e8d0b9d1d53a32f94",
+      "tree": "pmsf_profile_mafft",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true,
+        "original_objective_not_worsened": true
+      },
+      "theta": [
+        0.6941448092221314,
+        0.0,
+        0.012032693154648767
+      ],
+      "projected_gradient": [
+        9.781638592642751e-05,
+        0.0,
+        -0.0010501625281951297
+      ]
+    }
+  ],
+  "audit_process": {
+    "pid": 2671290,
+    "created": 1790653805.52,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_flagged_polynomial_refinements.py"
+    ]
+  },
+  "scope": "All601 serialized fits, source/artifact bindings and status counts checked. Full14424-candidate likelihood replay active; no production replacement or full-grid acceptance."
+}
