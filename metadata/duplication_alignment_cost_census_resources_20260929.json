@@ -1,0 +1,14 @@
+{
+  "cpus": 1,
+  "memory_gib": 2,
+  "swap_gib": 0,
+  "planning_hours": [
+    0.1,
+    2
+  ],
+  "output_gib": 0.01,
+  "records": 412800,
+  "basis": "Sequential hash and JSON read of completed checkpoints; retain compact identity and timing arrays. No native alignment or GPU work; descriptive timings only.",
+  "script_sha256": "6717e91afc4d3cb95fb1b05a46d55fea4b6ed169f2e2d8cc28e2c507b851a456",
+  "fixtures": "Complete-pair timing aggregation, inclusive length boundary and changed-checkpoint rejection passed."
+}

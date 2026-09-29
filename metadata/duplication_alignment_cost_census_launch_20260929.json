@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-duplication-alignment-cost-census-20260929.service",
+  "pid": 2801798,
+  "created": 1790663893.7,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/census_duplication_alignment_costs.py",
+    "--source",
+    "results/structural_comparisons/duplication-alignments-20260926-v1",
+    "--plan",
+    "metadata/duplication_alignment_plan_20260926.json",
+    "--output",
+    "results/structural_comparisons/duplication-alignment-cost-census-20260929-v1"
+  ]
+}

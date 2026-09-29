@@ -429,3 +429,22 @@ Full screen readback remains required. Even exact ready inputs do not authorize
 reuse by themselves: native executable/options, input order, checkpoint results
 and retained numerical discrepancy flags still need checking. No alignment
 results have been copied or admitted by this stage.
+
+
+### Recorded alignment costs (September 29)
+
+A complete timing census of the 412,800 existing directed alignment dispositions
+is running before resource allocation for the expanded pair set. It verifies every
+checkpoint hash, input binding, pair/mask/order identity and disposition, then
+summarizes recorded elapsed times by confidence mask, status and longer-input
+length bin. Summed task wall time is not measured CPU time or total pipeline time;
+these results alone do not provide an ETA for newly added pairs. Numerical
+alignment checks and exact-input reuse requirements remain separate.
+
+The [census script](../scripts/census_duplication_alignment_costs.py),
+[resource estimate](../metadata/duplication_alignment_cost_census_resources_20260929.json)
+and [launch identity](../metadata/duplication_alignment_cost_census_launch_20260929.json)
+are versioned. The job uses one CPU, at most 2 GiB RAM and no swap or GPUs.
+Complete-pair timing aggregation, the inclusive length-bin boundary and rejection
+of a modified checkpoint passed local fixtures. Output will be written to
+`results/structural_comparisons/duplication-alignment-cost-census-20260929-v1`.
