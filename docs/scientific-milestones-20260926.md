@@ -363,9 +363,13 @@ running across 75,070 exact numerical inputs and five phylogenetic alternatives
 numerical flags in the first frozen 705-fit prefix; later flags and the complete
 production audit remain outstanding. The resolved support registry has been
 compiled for all 15,270 geometries and 414,720 design/outcome settings. Six
-corrected witness choices affect 30 inputs and 112 settings. A separate full
-matrix/identity/certificate readback is running, so downstream registry use is
-still gated. See the [whole-protein workflow](whole-protein-workflow-20260929.md).
+corrected witness choices affect 30 inputs and 112 settings. Full
+matrix/identity/certificate readback has completed successfully, and the actual
+support reader resolved all 75,070 inputs by checksum. The 4,147,200-row
+comparison export and independent saved-output check are queued behind the
+complete production fit audit. Later optimization flags and inferential
+calibration remain outstanding. See the
+[whole-protein workflow](whole-protein-workflow-20260929.md).
 
 The expanded duplication alignment run is also active, with all 539,248
 pair/order/mask dispositions retained. Numerical accounting, analytic checks of

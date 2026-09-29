@@ -1,0 +1,55 @@
+{
+  "status": "verified_live_full_whole_protein_comparison_pipeline_waiting_for_prerequisites",
+  "checked_at": "2026-09-29T20:55:47.610717+00:00",
+  "comparisons": 4147200,
+  "input_comparison_links": 829440,
+  "tree_alternatives": 5,
+  "fit_dispositions": 375350,
+  "observations": [
+    {
+      "unit": "fungal-whole-protein-ml-comparisons-20260929.service",
+      "pid": 547813,
+      "created": 1790715229.97,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/whole_protein_ml_comparison_export_wait_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": 0,
+      "state": {
+        "MainPID": "547813",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "unit": "fungal-whole-protein-ml-comparison-readback-20260929.service",
+      "pid": 547818,
+      "created": 1790715230.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/whole_protein_ml_comparison_readback_wait_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": 0,
+      "state": {
+        "MainPID": "547818",
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "active"
+      }
+    }
+  ],
+  "source_hashes": {
+    "metadata/whole_protein_ml_comparison_export_launch_20260929.json": "1316a02ccb723a266c9db76e5eff204c6716bbfd48cb9f113eb0510b0a8e2c7a",
+    "metadata/whole_protein_ml_comparison_export_wait_plan_20260929.json": "bc57df2b12357caae291b49a6260cb6ccd62d1fe8182121aca3a8b0fdaf117f9",
+    "metadata/whole_protein_ml_comparison_readback_launch_20260929.json": "e740bd6093534b62a2a29f779f9e559389cb795542299084905bee04baca6925",
+    "metadata/whole_protein_ml_comparison_readback_wait_plan_20260929.json": "0ffef8a414b85b2b233337fa46b149878074f7950e30cebd4bd4587e85a66f07"
+  },
+  "scope": "Both wrapper services confirmed live with exact identities and pinned inputs. Full fit audit remains prerequisite; export and its saved-output checker have not produced scientific results."
+}

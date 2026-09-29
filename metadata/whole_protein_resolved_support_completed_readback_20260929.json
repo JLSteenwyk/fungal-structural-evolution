@@ -1,0 +1,34 @@
+{
+  "status": "passed_full_resolved_whole_protein_support_readback",
+  "source_receipt_sha256": "6121e7761106937b402edf6f784a13f20710a159ced737ba47f03b3482b78f31",
+  "source_hashes": {
+    "metadata/whole_protein_resolved_support_readback_plan_20260929.json": "2cea62798e20d7f4c466a4d04fb972853fe42282ad3c88c4b1c70973b8e2d728",
+    "metadata/whole_protein_resolved_support_launch_20260929.json": "db37dbffde7ef743546106758ae83f102c0f7df53b8478d1c44173080bd4eda9",
+    "metadata/whole_protein_resolved_support_plan_20260929.json": "969554fcef674c23f0e19496702c7da65216c2e0b0089950fae129fdf2575a6a",
+    "results/model_validation/whole-protein-resolved-support-20260929-v1/receipt.json": "6121e7761106937b402edf6f784a13f20710a159ced737ba47f03b3482b78f31",
+    "results/model_validation/whole-protein-resolved-support-20260929-v1/resolved_input_support.jsonl": "6605af8e9d3606dc7d158b02b99b9817eca3ea6bf8a2cf2fa680bd1de9c9896b",
+    "results/model_validation/whole-protein-resolved-support-20260929-v1/resolved_setting_support.jsonl": "ec585e7fa606bb7d95582a21b50a7da799a4de7605aa98ef37d2b1eb58439174",
+    "results/model_validation/whole-protein-joint-support-20260929-v1/joint_support.jsonl": "bbe8845e8a24bd4e31d14ca674c92b01ebad350679859153b37303ee0d7fb4aa",
+    "results/model_validation/whole-protein-support-witnesses-20260929-v1/witnesses.jsonl": "dd91faa00ce7553b9e711fbf48a078a7573c27a1c0ee7fe03bde2db391e4a614",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_whole_protein_resolved_support.py": "c67a11102fe0363fb7068962a71f8c75ba5a4230293d0cd35036b27e3a0899fe",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85"
+  },
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "inputs": 75070,
+  "geometries": 15270,
+  "settings": 414720,
+  "changed_inputs": 30,
+  "changed_settings": 112,
+  "certificate_checks": 15294,
+  "input_classification_counts": {
+    "zero_supported_to_numeric_tolerance": 75070
+  },
+  "setting_classification_counts": {
+    "zero_supported_to_numeric_tolerance": 414720
+  },
+  "scope": "Every input matrix, ordered identity, covariate geometry and certificate choice reconstructed, all settings compared field by field. Original certificates checked per exact geometry and repaired witnesses against all associated inputs using compensated sums. No optimizer called. Support registry is verified; numerical hull inclusion is not interior overlap, model adequacy, calibrated uncertainty or biological acceptance."
+}

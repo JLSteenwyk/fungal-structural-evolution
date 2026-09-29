@@ -1,0 +1,42 @@
+{
+  "source_plan": "metadata/whole_protein_ml_comparison_export_plan_20260929.json",
+  "output": "metadata/whole_protein_ml_comparison_completed_readback_20260929.json",
+  "pins": {
+    "metadata/whole_protein_ml_output_audit_launch_20260929.json": "48d3379ab359df6ddf228b34c75be8d7a295810dfa46737d77bf1d5b858fe3f8",
+    "metadata/whole_protein_resolved_support_readback_launch_20260929.json": "d1b3a7095788c2540aae7804884c9afa8ccde864f7581cbe21ad43ec87e71b30",
+    "metadata/whole_protein_ml_plan_20260929.json": "027339d4f7e571b82fd3ba79fe0bed7f132677835176d020966d54a8023efd5e",
+    "metadata/whole_protein_ml_output_audit_plan_20260929.json": "3c51aaf9cfe3b710223c790c8c65a72ee529dcb914ec8dbb1ad0e8a1d046c574",
+    "metadata/whole_protein_model_links_completed_readback_20260929.json": "ef5a111c055a3d3c20be0158138e38ef27213485f24c06fa75bffbb0e0c54b7e",
+    "metadata/whole_protein_initial_five_recovery_candidates_20260929.json": "59715417505bdad049fab9e8bebb0b7dac3dfb6918e1835ca91f2da31f6a347d",
+    "metadata/whole_protein_resolved_support_completed_readback_20260929.json": "baaa573a9568961fec9a8381de468f8cc27fa0e755f318bebf96a08b99217774",
+    "metadata/whole_protein_resolved_support_completed_handoff_20260929.json": "6235040811effbce5ef983b23c221cef868f0013192d1da0d03ddc28e35d4509",
+    "metadata/whole_protein_ml_comparison_fixtures_20260929.json": "2105f48403b117e25fc15d90ef64d5c33f1f00af1268fdcbb74c613b317dcdf7",
+    "metadata/whole_protein_ml_comparison_readback_fixtures_20260929.json": "55ed513821d6a1becc69c39707f182dedbca0f68284a88d6efda95156b963f71",
+    "scripts/export_whole_protein_ml_comparisons.py": "6d71884f9cc18706f16e4768d6789b0e7ad0dc9b085c081ee54c4a609675b159",
+    "scripts/readback_whole_protein_ml_comparisons.py": "2dbd99e1a8490b73fbcb75dd94bd01d790bfd38c3f9ada4b78ec6bb8e40a3891",
+    "scripts/test_whole_protein_ml_comparisons.py": "baeb86204735226b3144fefca499f6bc0a6053ecf15092f0a19372c2eb870efb",
+    "scripts/whole_protein_support_registry.py": "df8c6401a2df2f4de5bd1d3ab8a4e14aef39d10ec4dd439459dc35753cca6dbe",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "results/model_validation/whole-protein-comparison-input-links-20260929-v1/receipt.json": "da6a15c4b6bfc916a39e6ddbf3e4852800ab328e372b4801b0e7a32c784e51c4",
+    "results/model_validation/whole-protein-comparison-input-links-20260929-v1/input_column_hashes.jsonl": "6f31bdf6dd81772b9f7bab710aa1b689d10432caaa13b63e1f0a8d5cd8d56c12",
+    "results/model_validation/whole-protein-comparison-input-links-20260929-v1/comparison_input_map.jsonl": "cf695247819f9336733491f4b7d406062c4b0c80e92ed96260fea7810bb4c853",
+    "metadata/whole_protein_ml_comparison_export_plan_20260929.json": "7423e70fca7c38c7005642e65ac5b99e4e1f004a16fa46dcf870a2d6c34f4670",
+    "metadata/whole_protein_ml_comparison_export_wait_plan_20260929.json": "bc57df2b12357caae291b49a6260cb6ccd62d1fe8182121aca3a8b0fdaf117f9",
+    "metadata/whole_protein_ml_comparison_export_launch_20260929.json": "1316a02ccb723a266c9db76e5eff204c6716bbfd48cb9f113eb0510b0a8e2c7a"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.5,
+      16
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Reconstruct all 375350 fit summaries and inspect each of 4147200 serialized comparisons with separate arithmetic and classification. Rehash all source/outputs before and after; source-summary/support readers shared. Uncalibrated active-time allowance, not ETA or timeout."
+  },
+  "scope": "Every fit/recovery summary and setting/tree link read back. Separate likelihood gain, orientation, nesting and decision implementation; no optimizer rerun or inferential distribution assumption."
+}

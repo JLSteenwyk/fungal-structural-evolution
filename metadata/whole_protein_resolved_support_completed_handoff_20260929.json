@@ -1,0 +1,32 @@
+{
+  "status": "completed_full_resolved_support_and_real_consumer_readback",
+  "inputs": 75070,
+  "geometries": 15270,
+  "settings": 414720,
+  "certificate_checks": 15294,
+  "changed_inputs": 30,
+  "changed_settings": 112,
+  "source_kind_counts": {
+    "original_verified_certificate": 75040,
+    "verified_repaired_witness": 30
+  },
+  "terminal_states": {
+    "fungal-whole-protein-resolved-support-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-resolved-support-readback-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_resolved_support_completed_readback_20260929.json": "baaa573a9568961fec9a8381de468f8cc27fa0e755f318bebf96a08b99217774",
+    "results/model_validation/whole-protein-resolved-support-20260929-v1/receipt.json": "6121e7761106937b402edf6f784a13f20710a159ced737ba47f03b3482b78f31",
+    "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/input_manifest.jsonl": "adf412149284b7957662ef42cb9a4b058751758c6e2ebe80f096ea6c82995d8e",
+    "scripts/whole_protein_support_registry.py": "df8c6401a2df2f4de5bd1d3ab8a4e14aef39d10ec4dd439459dc35753cca6dbe"
+  },
+  "scope": "Full matrix/certificate/setting readback completed, then actual SupportRegistry reader resolved every materialized input with its exact hash. Numerical hull inclusion only; no statistical/scientific eligibility."
+}

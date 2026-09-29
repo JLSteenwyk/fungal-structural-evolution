@@ -1,0 +1,332 @@
+{
+  "status": "passed_independent_whole_protein_comparison_readback_fixtures",
+  "valid_cases": 8,
+  "altered_gain_rejected": true,
+  "cases": [
+    {
+      "relation": "left_named_columns_nested_in_right",
+      "left": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 3,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 3,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": 10,
+        "twice_log_likelihood_gain_right_vs_left": 20,
+        "nested_model_log_likelihood_gain": 10,
+        "nested_added_fixed_coefficients": 1,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "nondecreasing_within_numeric_tolerance",
+        "comparison_status": "numerically_checked_comparison_not_inferential_acceptance"
+      }
+    },
+    {
+      "relation": "right_named_columns_nested_in_left",
+      "left": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 3,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 3,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": -10,
+        "twice_log_likelihood_gain_right_vs_left": -20,
+        "nested_model_log_likelihood_gain": 10,
+        "nested_added_fixed_coefficients": 1,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "nondecreasing_within_numeric_tolerance",
+        "comparison_status": "numerically_checked_comparison_not_inferential_acceptance"
+      }
+    },
+    {
+      "relation": "different_observations_no_direct_comparison",
+      "left": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 10,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 50,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 10,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 50,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": null,
+        "twice_log_likelihood_gain_right_vs_left": null,
+        "nested_model_log_likelihood_gain": null,
+        "nested_added_fixed_coefficients": null,
+        "numerical_likelihood_tolerance": null,
+        "nesting_status": "not_assessed",
+        "comparison_status": "different_observations_no_direct_comparison"
+      }
+    },
+    {
+      "relation": "left_named_columns_nested_in_right",
+      "left": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 3,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 3,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": -10,
+        "twice_log_likelihood_gain_right_vs_left": -20,
+        "nested_model_log_likelihood_gain": -10,
+        "nested_added_fixed_coefficients": 1,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "worse_full_model_requires_review",
+        "comparison_status": "nested_or_identical_likelihood_violation_requires_review"
+      }
+    },
+    {
+      "relation": "left_named_columns_nested_in_right",
+      "left": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_requires_optimization_review",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 3,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_requires_optimization_review",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 3,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": 10,
+        "twice_log_likelihood_gain_right_vs_left": 20,
+        "nested_model_log_likelihood_gain": 10,
+        "nested_added_fixed_coefficients": 1,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "nondecreasing_within_numeric_tolerance",
+        "comparison_status": "optimization_review_required"
+      }
+    },
+    {
+      "relation": "left_named_columns_nested_in_right",
+      "left": {
+        "negative_profiled_ml": null,
+        "fixed_coefficients": 2,
+        "effective_status": "fit_error_requires_review",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 3,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": null,
+          "fixed_coefficients": 2,
+          "effective_status": "fit_error_requires_review",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 3,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": null,
+        "twice_log_likelihood_gain_right_vs_left": null,
+        "nested_model_log_likelihood_gain": null,
+        "nested_added_fixed_coefficients": null,
+        "numerical_likelihood_tolerance": null,
+        "nesting_status": "not_assessed",
+        "comparison_status": "missing_fit_requires_review"
+      }
+    },
+    {
+      "relation": "same_observations_no_named_column_nesting",
+      "left": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": 10,
+        "twice_log_likelihood_gain_right_vs_left": 20,
+        "nested_model_log_likelihood_gain": null,
+        "nested_added_fixed_coefficients": null,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "no_named_column_nesting",
+        "comparison_status": "numerically_checked_comparison_not_inferential_acceptance"
+      }
+    },
+    {
+      "relation": "identical_named_design",
+      "left": {
+        "negative_profiled_ml": 110,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "right": {
+        "negative_profiled_ml": 100,
+        "fixed_coefficients": 2,
+        "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+        "records": 100,
+        "support_classification": "zero_supported_to_numeric_tolerance"
+      },
+      "expected": {
+        "left": {
+          "negative_profiled_ml": 110,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "right": {
+          "negative_profiled_ml": 100,
+          "fixed_coefficients": 2,
+          "effective_status": "ml_candidate_passed_numerical_optimization_checks",
+          "records": 100,
+          "support_classification": "zero_supported_to_numeric_tolerance"
+        },
+        "log_likelihood_gain_right_vs_left": 10,
+        "twice_log_likelihood_gain_right_vs_left": 20,
+        "nested_model_log_likelihood_gain": null,
+        "nested_added_fixed_coefficients": null,
+        "numerical_likelihood_tolerance": 2.1e-07,
+        "nesting_status": "identical_design_likelihood_disagreement",
+        "comparison_status": "nested_or_identical_likelihood_violation_requires_review"
+      }
+    }
+  ],
+  "source_hashes": {
+    "scripts/export_whole_protein_ml_comparisons.py": "6d71884f9cc18706f16e4768d6789b0e7ad0dc9b085c081ee54c4a609675b159",
+    "scripts/readback_whole_protein_ml_comparisons.py": "2dbd99e1a8490b73fbcb75dd94bd01d790bfd38c3f9ada4b78ec6bb8e40a3891"
+  },
+  "scope": "All contrast/exclusion/missing/optimization/nesting branches exercised by the separate arithmetic/decision checker; one changed exported gain rejected. Fixture scope, not full dataset completion."
+}

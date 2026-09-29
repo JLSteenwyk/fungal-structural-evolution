@@ -309,3 +309,57 @@ tables, input-checksum mismatch and inconsistent verification scope. These small
 fixtures test the reader's gate; they do not substitute for the full running
 matrix/certificate check. Full registry validation and use in model comparisons
 remain pending, alongside numerical-fit review and calibrated inference.
+
+The [full resolved-support handoff](../metadata/whole_protein_resolved_support_completed_handoff_20260929.json)
+now records successful completion of both support services. The
+[saved-output proof](../metadata/whole_protein_resolved_support_completed_readback_20260929.json)
+covers every one of the 75,070 matrices and ordered identities, all 15,270
+geometries and every field of all 414,720 setting links. It checked 15,294
+certificates: 15,264 original geometries and all 30 corrected inputs. The checker
+consumed 8 minutes 24 seconds of CPU time and about 1 GiB peak memory.
+The actual registry reader subsequently resolved every materialized input using
+its exact checksum: 75,040 original certificate choices and 30 corrected choices.
+Numerical support integration is verified. Dense/interior covariate overlap,
+model adequacy and calibrated biological inference are still separate questions.
+
+The [full comparison export](../metadata/whole_protein_ml_comparison_export_plan_20260929.json)
+and its [serialized readback](../metadata/whole_protein_ml_comparison_readback_plan_20260929.json)
+are now queued. The [live pipeline record](../metadata/whole_protein_ml_comparison_pipeline_queued_20260929.json)
+binds both wrapper PIDs and commands. The export waits for the entire production
+fit audit and the completed support audit to finish successfully. It covers all
+829,440 prespecified within-setting model pairs across all five trees: 4,147,200
+comparison rows. All 375,350 source fits are accounted for before comparison.
+
+Each fit summary retains the original fit status, likelihood, input checksum
+and source-file checksum. The five audited numerical recovery candidates are
+applied explicitly, with selected-source identity and original review status
+preserved; later flags remain unresolved. Both sides retain support provenance.
+Different-observation links have null direct-comparison gains. Comparable fits
+retain raw likelihood gains, including negative gains. Named nested models have
+explicit added-coefficient counts and a numerical monotonicity flag at
+1e−7 + 1e−9 times the larger absolute objective. This count is not assigned a
+chi-square reference distribution. Identical named designs must agree within
+that tolerance. Missing fits and unresolved numerical statuses remain visible.
+No p-values, AIC selection or scientific eligibility are produced.
+
+The independent saved-output stage reconstructs every source fit summary and
+recovery choice, reads every setting/tree row, and separately checks gain
+orientation, arithmetic, nesting and classification. The selected-summary reader
+and verified support gate are shared; this is not an independent optimizer or
+covariance implementation. Eight manually specified contrast cases and all five
+real audited recovery cases passed the
+[export fixtures](../metadata/whole_protein_ml_comparison_fixtures_20260929.json).
+The [separate checker fixtures](../metadata/whole_protein_ml_comparison_readback_fixtures_20260929.json)
+covered all eight cases and rejected a changed exported gain. Fixtures do not
+substitute for the complete queued export/readback.
+
+Each stage has one CPU, 16 GiB memory, zero swap and an uncalibrated 0.5–16 hour
+active-time allowance. Export reserves 16 GiB output: a 3 KiB/raw-row scenario
+is about 11.9 GiB before level-one gzip, plus fit summaries and receipts.
+Checksummed per-tree checkpoints permit restarting the export under identical
+source pins and plan. Prerequisite fit/audit waiting is excluded; these are
+resource planning allowances, not completion estimates or timeouts. No GPU or
+paid infrastructure is used. Full export completion, saved-output validation,
+resolution of later optimization flags and inferential calibration remain
+outstanding. The older frozen measurement atlas underlying these fits is not
+silently replaced by the expanded duplication atlas.
