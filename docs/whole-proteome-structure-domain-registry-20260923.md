@@ -711,3 +711,35 @@ search cost is nonlinear and this is not a measured ETA. Before starting it
 requires 2 TiB free disk and 192 GiB available RAM, with a 1 TiB emergency disk
 reserve during native execution. No new infrastructure or charges are used.
 The controller is live but waiting; expanded clustering is not yet complete.
+
+
+### Expanded pipeline completion and boundary comparison (September 29)
+
+The September28 queued stages above have now completed with successful terminal
+exit states. The full atom audit checked 1,575,294 exported intervals from 627,567
+models. Database conversion checked 248,418,990 residues. The refreshed structural
+partition contains 95,456 candidate clusters, including 58,816 singleton clusters;
+the largest cluster has 14,934 intervals. All database and cluster output artifact
+hashes were rechecked in the
+[completion handoff](../metadata/expanded_domain_pipeline_completed_20260929.json).
+This supersedes the earlier queued statuses, while preserving their resource and
+method records. Cluster counts include both candidate boundary definitions and
+are not counts of independent domains, homologous families or orthogroups.
+
+The [expanded boundary plan](../metadata/domain_boundary_cluster_plan_20260929.json)
+now compares alignment and envelope membership for every original model/hit pair,
+separating identical intervals from distinct intervals assigned together. The
+[independent output readback](../metadata/domain_boundary_cluster_readback_plan_20260929.json)
+reconstructs every output field from interval identities, boundary links and the
+partition. Both services use one CPU and a 16 GiB memory cap, with no swap, GPU or
+paid infrastructure; each has an uncalibrated planning allowance of 1–120 minutes.
+Their [producer launch](../metadata/domain_boundary_cluster_launch_20260929.json)
+and [checker launch](../metadata/domain_boundary_cluster_readback_launch_20260929.json)
+record exact process identities. The producer completed all 868,338 model/hit
+pairs: 161,382 identical intervals, 576,872 distinct intervals sharing a cluster,
+and 130,084 distinct intervals assigned to different clusters. The producer
+exited successfully; independent full row reconstruction remains running.
+These counts remain provisional until that checker completes.
+Within-partition agreement does not measure stability under independent reclustering;
+alignment thresholds, parameter sensitivity, confidence, homology and evolutionary
+interpretation remain separate requirements.

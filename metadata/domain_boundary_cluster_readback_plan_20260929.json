@@ -1,0 +1,41 @@
+{
+  "producer_plan": "metadata/domain_boundary_cluster_plan_20260929.json",
+  "output": "results/structural_clusters/domain-boundary-dispositions-readback-20260929-v1",
+  "predecessor": {
+    "pid": 450014,
+    "create_time": 1790710110.35
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 50,
+    "output_planning_gib": 0.1,
+    "runtime_planning_minutes": [
+      1,
+      120
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/compare_domain_boundary_clusters.py": "6a05cde8d1d25c08d59a4912236ce41805eda3355b866383568f43a7f2c8bb57",
+    "scripts/check_domain_boundary_clusters.py": "5ef13722dee9cda4aa3c900b497a5a953a1e74fb36a7bc6d84c33cb6558b7cd5",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_boundary_cluster_fixture_checks.json": "593c80562de6405f3bcc76989e239802f04d3c5dc63a7f034d9500c78f511fbe",
+    "metadata/domain_clustering_plan_20260928.json": "a38bda50c1a7ab454c04b8f263d8d0708f5a96dfbf20fe5ad624c9b3f787ac57",
+    "metadata/full_domain_search_database_plan_20260928.json": "7fd01d6e3a1225e1eabae45bd9fbaf3fb4dd2f4092cd94d0d03c95165263cd30",
+    "metadata/expanded_domain_pipeline_completed_20260929.json": "d7c2e2999b266ace9a6c51311c99fbcb1cab25df55e241027dc0308f9e4789df",
+    "results/domains/domain-extraction-manifest-20260928-v1/receipt.json": "84081d30a4d2fbc4ee0c9261c0a33295119007f3fab36db17fc2decd75893c94",
+    "results/domains/domain-extraction-manifest-20260928-v1/intervals.tsv": "044221cbcf9585600f66a894caa9115d7a2dfe72ebf221ce1a94afb79513540a",
+    "results/domains/domain-extraction-manifest-20260928-v1/boundary_links.tsv.gz": "cc0985af3f69bf1e8a8e59a2afa9690284e2c95ac7fff8d83ba90bea7f21ca4b",
+    "results/structural_clusters/full-domain-clusters-20260928-v1/receipt.json": "d4c8a2123d5c7d1c404b55d9b6558fcf208a4b88e24145edd5c7770089162153",
+    "results/structural_clusters/full-domain-database-20260928-v1/receipt.json": "2fc0f9ef8155f322f6adc6d902052bec793ee446ddf14900a40783ba79b7742b",
+    "metadata/domain_boundary_cluster_plan_20260929.json": "1f7fdf02ab587b2b909ce5d4b6bbd62e7c9be3c3e60cbf56ea8805c126246fe3",
+    "metadata/domain_boundary_cluster_launch_20260929.json": "d0de25bcfdb458950fd747e1dee08f7336a9a491fe4c4e455e8042c14da572ed",
+    "scripts/readback_domain_boundary_clusters.py": "b42f8b21592829bd45726d6ee45542c60f866e77b55ba06d957c275870fcc57d",
+    "scripts/check_domain_boundary_cluster_readback.py": "510593d69d18f68b089894999d989a85ce26e82f05279950e9563a9485b197ad",
+    "metadata/domain_boundary_cluster_readback_fixture_checks.json": "6775473a3d268b3da1579f26368fddbbb9758551f7d02686eaeae1bf2a31aee4"
+  }
+}

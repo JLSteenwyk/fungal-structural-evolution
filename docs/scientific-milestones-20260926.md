@@ -24,12 +24,16 @@ Chronological receipts and process records remain in [progress](progress.md).
   annotation registry and1,575,294-interval manifest also passed full readback;
   coordinate extraction finished all 628 shards: 1,575,294 intervals from
   627,567 models, with no reported rejections or missing backbone intervals.
-  Its independent atom-level audit is running; expanded database construction
-  and clustering remain gated on that audit. Producer evidence is recorded in
-  `metadata/domain_coordinate_extraction_producer_completed_20260928.json`.
-  The existing1,078,592-domain/70,537-cluster results retain the September22
-  catalog. Expanded coverage must not be attributed to those older clusters or
-  comparisons. These additions support aims1–6 without completing them.
+  Its independent atom-level audit, expanded database conversion and candidate
+  clustering completed successfully. The new partition contains 95,456 clusters
+  (58,816 singletons) across all 1,575,294 intervals. Database sequence/coordinate
+  checks and cluster membership checks passed; terminal and artifact evidence is
+  recorded in `metadata/expanded_domain_pipeline_completed_20260929.json`.
+  Full alignment-versus-envelope boundary comparison and independent readback
+  are now launched. The older 1,078,592-domain/70,537-cluster results retain their
+  September22 catalog; their downstream results cannot inherit the expanded
+  coverage. Candidate clusters do not establish orthology or domain events.
+  These additions support aims1–6 without completing them.
   See [catalog versions](whole-proteome-structure-catalog-20260922.md) and
   [domain workflow](whole-proteome-structure-domain-registry-20260923.md).
 

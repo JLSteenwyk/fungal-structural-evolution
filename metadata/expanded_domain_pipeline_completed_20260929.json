@@ -1,0 +1,45 @@
+{
+  "status": "verified_expanded_domain_coordinate_database_and_cluster_completions",
+  "checked_at": "2026-09-29T15:28:30.533699-04:00",
+  "stages": [
+    {
+      "launch": "metadata/domain_coordinate_archive_readback_launch_20260928.json",
+      "receipt": "results/domains/domain-coordinate-readback-20260928-v1/receipt.json",
+      "receipt_sha256": "6a885a8516c98bd4a3e4289d9d2e5fbf07e6c058bf92673b86da14665a865c1d",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "artifact_hashes_checked": 0,
+      "status": "passed_all_exported_domain_atoms_and_full_disposition_scope"
+    },
+    {
+      "launch": "metadata/full_domain_search_database_launch_20260928.json",
+      "receipt": "results/structural_clusters/full-domain-database-20260928-v1/receipt.json",
+      "receipt_sha256": "2fc0f9ef8155f322f6adc6d902052bec793ee446ddf14900a40783ba79b7742b",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "artifact_hashes_checked": 16,
+      "status": "complete_domain_foldseek_database_with_full_sequence_and_coordinate_readback"
+    },
+    {
+      "launch": "metadata/domain_clustering_launch_20260928.json",
+      "receipt": "results/structural_clusters/full-domain-clusters-20260928-v1/receipt.json",
+      "receipt_sha256": "d4c8a2123d5c7d1c404b55d9b6558fcf208a4b88e24145edd5c7770089162153",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "artifact_hashes_checked": 7,
+      "status": "complete_domain_candidate_partition_membership_readback"
+    }
+  ],
+  "intervals": 1575294,
+  "clusters": 95456,
+  "scope": "Successful terminal states, receipt/plan bindings and all database/clustering artifact hashes checked. Full coordinate and database scientific scope remains as stated in each receipt; no orthology or domain-event inference."
+}
