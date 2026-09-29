@@ -738,8 +738,10 @@ and [checker launch](../metadata/domain_boundary_cluster_readback_launch_2026092
 record exact process identities. The producer completed all 868,338 model/hit
 pairs: 161,382 identical intervals, 576,872 distinct intervals sharing a cluster,
 and 130,084 distinct intervals assigned to different clusters. The producer
-exited successfully; independent full row reconstruction remains running.
-These counts remain provisional until that checker completes.
+and independent checker both exited successfully. Every output field for all
+868,338 pairs passed reconstruction from the original sources; the
+[completed readback](../metadata/domain_boundary_cluster_completed_readback_20260929.json)
+binds the counts, terminal state and checked source hashes.
 Within-partition agreement does not measure stability under independent reclustering;
 alignment thresholds, parameter sensitivity, confidence, homology and evolutionary
 interpretation remain separate requirements.

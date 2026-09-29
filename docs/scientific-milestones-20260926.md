@@ -30,7 +30,8 @@ Chronological receipts and process records remain in [progress](progress.md).
   checks and cluster membership checks passed; terminal and artifact evidence is
   recorded in `metadata/expanded_domain_pipeline_completed_20260929.json`.
   Full alignment-versus-envelope boundary comparison and independent readback
-  are now launched. The older 1,078,592-domain/70,537-cluster results retain their
+  completed for all 868,338 model/hit pairs; 130,084 distinct-boundary pairs
+  have different cluster assignments within this partition. The older 1,078,592-domain/70,537-cluster results retain their
   September22 catalog; their downstream results cannot inherit the expanded
   coverage. Candidate clusters do not establish orthology or domain events.
   These additions support aims1–6 without completing them.

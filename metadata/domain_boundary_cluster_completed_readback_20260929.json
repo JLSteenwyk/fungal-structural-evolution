@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_domain_boundary_cluster_output_readback",
+  "candidate_pairs": 868338,
+  "intervals": 1575294,
+  "clustered_intervals": 1575294,
+  "unclustered_intervals": 0,
+  "boundary_links": 1736676,
+  "dispositions": {
+    "distinct_intervals_same_cluster": 576872,
+    "identical_interval": 161382,
+    "distinct_intervals_different_clusters": 130084
+  },
+  "plan_sha256": "2a552abbd2a8677916b7d03ab58a95bd0f58acfbb17cd6930c8bf5fcb98bd876",
+  "scope": "Every result field reconstructed from original interval identities, paired boundaries, database lookup and complete partition without producer comparison functions. Checks within-partition assignment sensitivity only; no independent clustering, alignment-threshold, homology, biological boundary or evolutionary validation.",
+  "receipt": "results/structural_clusters/domain-boundary-dispositions-readback-20260929-v1/receipt.json",
+  "receipt_sha256": "d5780cd946ddc8db769194f4c88b6f7473df09fcf7ebe8c8ff6744dfc88b0f5b",
+  "source_hashes_checked": 22,
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}
