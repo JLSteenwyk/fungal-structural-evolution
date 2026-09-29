@@ -433,8 +433,8 @@ results have been copied or admitted by this stage.
 
 ### Recorded alignment costs (September 29)
 
-A complete timing census of the 412,800 existing directed alignment dispositions
-is running before resource allocation for the expanded pair set. It verifies every
+The timing census of all 412,800 existing directed alignment dispositions
+completed successfully before resource allocation for the expanded pair set. It verifies every
 checkpoint hash, input binding, pair/mask/order identity and disposition, then
 summarizes recorded elapsed times by confidence mask, status and longer-input
 length bin. Summed task wall time is not measured CPU time or total pipeline time;
@@ -448,3 +448,12 @@ are versioned. The job uses one CPU, at most 2 GiB RAM and no swap or GPUs.
 Complete-pair timing aggregation, the inclusive length-bin boundary and rejection
 of a modified checkpoint passed local fixtures. Output will be written to
 `results/structural_comparisons/duplication-alignment-cost-census-20260929-v1`.
+
+The [completion record](../metadata/duplication_alignment_cost_census_completed_20260929.json)
+binds the successful terminal state and source hashes. The 103,200 old pairs
+accounted for 45.401 summed task wall hours and 1.998 GiB
+of checkpoints. Longer-input bins show substantial runtime differences: full-mask
+median durations range from 0.030 seconds for inputs up to 250 residues to 5.960
+seconds for the 1,001–2,000-residue bin. The expanded masked-input length
+distribution is still needed before estimating its workload; simple pair-count
+scaling would ignore this difference.
