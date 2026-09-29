@@ -1,0 +1,17 @@
+{
+  "status": "whole_protein_design_producer_complete_independent_readback_live",
+  "source_receipt_sha256": "5c64ff3277698acbf26c1d2ef5708e0ced157cef623c29534ec185fb064a3cc4",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "designs": 207360,
+  "counts": {
+    "full_rank_with_positive_residual_df": 207360
+  },
+  "minimum_records": 130,
+  "audit_pid": 2652515,
+  "audit_cpu_seconds": 49.29,
+  "scope": "All serialized design keys, counts and source/artifact hashes checked after successful producer termination. Independent numerical design readback remains running; full rank is not joint support, model adequacy or effect inference."
+}

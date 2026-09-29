@@ -671,3 +671,16 @@ allowance is one CPU, 24 GiB RAM, no swap and 0.1–16 hours after producer
 completion. Plan and exact launch records use the metadata stem
 `whole_protein_input_inventory_readback` dated 20260928. No inventory completion
 or full-fit resource estimate is claimed while its dependencies are running.
+
+## Whole-protein design producer completed (September 29)
+
+The v2 producer terminated successfully at 00:05:41 EDT after assessing all
+207,360 designs. Every design was classified as full rank with positive
+residual degrees of freedom; the smallest retained design had 130 records.
+All source/artifact hashes, unique serialized design keys and status counts
+were checked after termination. The independent checker started automatically
+and verified its first setting at 00:06:31 EDT. The input inventory remains
+gated on completion of that checker. Evidence:
+`metadata/whole_protein_model_designs_v2_producer_completed_20260929.json`.
+These diagnostics do not establish joint covariate support, model adequacy,
+calibrated uncertainty, or a biological effect.
