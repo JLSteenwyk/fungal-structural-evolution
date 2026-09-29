@@ -428,3 +428,27 @@ zero-distance handling and excluded/blank outcomes. Resources: one CPU, 4 GiB
 memory, no swap/GPU/charges, estimated 1–30 minutes, under 2 GiB output.
 Plan/launch: `metadata/matched_whole_protein_contrasts_plan_20260928.json` and
 `metadata/matched_whole_protein_contrasts_launch_20260928.json`.
+
+### Whole-protein contrast production completed; independent check running
+
+Production completed all 421,400 unique-pair/mask/order rows. There are 195,636
+numerically computable full-mask rows and 195,060 pLDDT70 rows; 15,064 and 15,640,
+respectively, retain excluded/unmeasured dispositions. These counts include four
+order combinations per pair and are not independent sample sizes or final
+coverage-qualified counts.
+
+`scripts/readback_matched_whole_protein_contrasts.py` independently reconstructs
+every row from the untransformed measurement table. Original protein lengths
+are looked up by canonical model/version directly, independently of the producer's
+gene-to-canonical orientation logic. The checker verifies all source identities,
+statuses, metrics, coverage fractions, descriptive differences, log differences,
+zero-distance exclusions, screen flags and the complete four-order membership.
+It computes log differences by subtracting logs and TM divergence differences
+from separate 1-minus-score values, checking arithmetic within explicit tolerance.
+No producer contrast helper is imported. Source hashes are checked before and
+after the full reconstruction. Independent completion is pending.
+
+Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
+Plan and launch identity:
+`metadata/matched_whole_protein_contrast_readback_plan_20260928.json` and
+`metadata/matched_whole_protein_contrast_readback_launch_20260928.json`.

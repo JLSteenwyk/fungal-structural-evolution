@@ -1,0 +1,18 @@
+{
+  "script": "scripts/readback_matched_whole_protein_contrasts.py",
+  "script_sha256": "dd0d311ab6f5fa8d34e075f15dea988d94bd765062923d651e322330866c95fa",
+  "source_receipt_sha256": "b6e1ac0ee94fb22d9380661ef8d632a3f741eaf2ae2a19adc2c10d21da5c4982",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full421400 contrasts; separate model/version lookup of canonical endpoint lengths, subtraction of logs, all source/status/flag identities and membership"
+}
