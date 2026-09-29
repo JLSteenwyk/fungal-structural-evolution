@@ -432,3 +432,21 @@ neither the analytic-gradient helper nor the proposal producer; the likelihood
 library is shared. It validates the proposed points, not independently the
 Hessian construction. Complete upstream audit and an explicit integration stage
 remain pending; the saved production fit is unchanged.
+
+A reusable lower-face routine, `scripts/lower_face_gradient_polish.py`, now
+reproduces both separately checked proposals for the real boundary case.
+It preserves exact-zero components, adjusts only the free face, requires
+positive curvature for both Hessian steps, unchanged 1e-3 free-gradient checks,
+and nonnegative analytic and direct one-sided boundary gradients. Near upper
+bounds, all-zero/no-zero faces, and invalid boundary signs are explicitly
+excluded. Both direct-difference scales must pass. No existing job or pinned
+script was changed, and this helper has not yet been applied across all fits.
+
+Reproducible checks: `scripts/check_lower_face_polish_fixtures.py` tests known
+optima with one and two exact-zero components, boundary exclusions, stationary
+points, four invalid parameter cases, and a deliberately inconsistent analytic
+gradient rejected by direct differences. `scripts/check_lower_face_polish_real_case.py`
+compares both real-case proposals against the previous separate direct-likelihood
+check. Proofs are `metadata/lower_face_polish_fixtures_20260929.json` and
+`metadata/lower_face_polish_real_case_20260929.json`. Both checks completed
+successfully; broader audited application and integration remain pending.
