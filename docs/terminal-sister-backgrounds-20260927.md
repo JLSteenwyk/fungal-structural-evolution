@@ -1127,3 +1127,13 @@ determine a unique rotation. Full geometry assessment and its independent
 readback remain in progress/queued, and scientific eligibility remains false.
 Evidence is recorded in `metadata/background_rmsd_diagnostic_completed_20260928.json`
 and `metadata/background_two_point_discrepancy_review_20260928.json`.
+
+The completion recorder `scripts/check_completed_background_alignment_geometry.py`
+is prepared for the whole-protein geometry audit. It requires terminal success
+for both producer and independent audit, verifies their source hashes and plans,
+checks every serialized alignment key and RMSD flag against the full diagnostic
+table, and checks exact agreement of all degenerate records with the independent
+audit. It also records the cross-tabulation of mask, geometry, and RMSD status.
+The terminal gate was verified to refuse completion while the producer is active.
+No completed geometry record has yet been written; run the recorder only after
+both services finish successfully.
