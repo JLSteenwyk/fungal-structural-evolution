@@ -1,0 +1,26 @@
+{
+  "launch": "metadata/whole_protein_initial_flag_refinement_launch_20260929.json",
+  "output": "metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json",
+  "pins": {
+    "metadata/whole_protein_initial_flag_refinement_launch_20260929.json": "96ff671ccebc8af47306f698f196e659638a4b0c1803b6de0f7b59a100d549e3",
+    "metadata/whole_protein_initial_flag_refinement_plan_20260929.json": "5aafcce77dcbeb6b5ba7766fb223ff302fbac6b2e4d046802b0e870de62346ec",
+    "scripts/readback_whole_protein_flag_refinements.py": "076a2dfc8c5c5653886d1041264526fdb3a901e09cd75d76bc0a0ac571bc9fa7",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.05,
+      1
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All five frozen-prefix refinements, 120 candidate likelihoods, source identities and serialized numerical decisions. Reuses established direct likelihood/gradient checks with whole-protein input layout. Preserve unresolved flags; no full-grid or scientific qualification."
+}

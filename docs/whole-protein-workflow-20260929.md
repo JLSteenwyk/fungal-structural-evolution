@@ -208,3 +208,17 @@ binds the exact process. All outputs go to a separate versioned directory;
 production fits and their flags remain untouched. The full production grid
 continues. Refinement completion, serialized review, integration and resolution
 of later flags are still required before using corrected results scientifically.
+
+
+The [serialized refinement readback](../metadata/whole_protein_initial_flag_refinement_readback_plan_20260929.json)
+is queued behind exact producer identity and successful terminal completion. It
+replays all 120 saved candidate likelihoods, the full face/start grid, original
+references, selected parameters, projected gradients, numerical classifications,
+coefficients and covariance transformations. Its mathematical libraries are shared
+with the existing validated checker; this is a separate-process saved-output
+verification, not an independent mathematical model. One CPU and 16 GiB memory
+are allocated, no swap, with 0.05–1 hour active-time planning. The
+[checker launch](../metadata/whole_protein_initial_flag_refinement_readback_launch_20260929.json)
+records the exact process. At launch, three producer cases had completed: two
+passed numerical checks and one retained full-face start disagreement. Completion
+of a readback will not itself resolve any retained optimization flag.
