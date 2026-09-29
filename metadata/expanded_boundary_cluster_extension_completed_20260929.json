@@ -1,0 +1,62 @@
+{
+  "status": "complete_descriptive_boundary_extension_cluster_change_join",
+  "candidate_hits": 868338,
+  "dispositions": {
+    "distinct_intervals_same_cluster": 576872,
+    "identical_interval": 161382,
+    "distinct_intervals_different_clusters": 130084
+  },
+  "artifacts": {
+    "cluster_change_by_extension.tsv": "2d569693b5f0218baf47f6323fca7841610b2a1306e4dfab09dd562c4f471d71"
+  },
+  "summaries": [
+    {
+      "added_residue_bin": "0",
+      "hits": 161382,
+      "changed_cluster": 0,
+      "models": 144428,
+      "changed_fraction": 0.0
+    },
+    {
+      "added_residue_bin": "1-4",
+      "hits": 433435,
+      "changed_cluster": 48356,
+      "models": 351567,
+      "changed_fraction": 0.11156459446053041
+    },
+    {
+      "added_residue_bin": "5-9",
+      "hits": 126643,
+      "changed_cluster": 25517,
+      "models": 120005,
+      "changed_fraction": 0.20148764637603342
+    },
+    {
+      "added_residue_bin": "10-19",
+      "hits": 85322,
+      "changed_cluster": 24374,
+      "models": 82381,
+      "changed_fraction": 0.2856707531469023
+    },
+    {
+      "added_residue_bin": "20-49",
+      "hits": 53468,
+      "changed_cluster": 25265,
+      "models": 52730,
+      "changed_fraction": 0.4725256228024239
+    },
+    {
+      "added_residue_bin": "50+",
+      "hits": 8088,
+      "changed_cluster": 6572,
+      "models": 8070,
+      "changed_fraction": 0.8125618199802176
+    }
+  ],
+  "scope": "Every checked model/hit matched once between audited boundary lengths and cluster assignments. Descriptive reporting bins, not exclusion thresholds. Models can occur in multiple bins; hits and model links are not independent replicates. Within-partition assignment sensitivity, not direct structural change, causal boundary effect, orthology or evolutionary inference.",
+  "receipt": "results/domains/boundary-cluster-change-by-extension-20260929-v1/receipt.json",
+  "receipt_sha256": "5f4df48c968e96021c16bf8efabd5d30eca4645fcbced6e4f69e39d1f04205c7",
+  "exit_code": 0,
+  "source_hashes_checked": 7,
+  "validation": "Exact full-scope join in producer; serialized table/receipt agreement and integer totals/fractions rechecked on completion. Not an independent replication of the full join."
+}

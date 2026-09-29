@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_boundary_cluster_changes.py",
+    "--lengths",
+    "results/domains/domain-boundary-sensitivity-20260929-v1",
+    "--clusters",
+    "results/structural_clusters/domain-boundary-dispositions-20260929-v1",
+    "--cluster-check",
+    "results/structural_clusters/domain-boundary-dispositions-readback-20260929-v1/receipt.json",
+    "--output",
+    "results/domains/boundary-cluster-change-by-extension-20260929-v1"
+  ],
+  "pins": {
+    "scripts/summarize_boundary_cluster_changes.py": "0ae9eed4cc667cc3f790c74719a24f0121b0cc26e7be44a5a0cfe746cb7f90ff",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/expanded_domain_boundary_sensitivity_completed_20260929.json": "37cd25064de01e94cfe1c7229564bad5459964f72e2487ed4a7191081b68cbd9",
+    "metadata/domain_boundary_cluster_completed_readback_20260929.json": "0b3ad96d235c8af7c8591b92c18f3963284e204dc9ed7c14082a60ef15c29422"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_planning_gib": 4,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.01,
+      0.5
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Exact join of all audited expanded model/hit identities; descriptive counts by added-residue bins, no significance testing or independently replicated evolution claim."
+}

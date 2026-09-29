@@ -1,0 +1,41 @@
+{
+  "commands": [
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_domain_boundary_sensitivity.py",
+      "--manifest",
+      "results/domains/domain-extraction-manifest-20260928-v1",
+      "--output",
+      "results/domains/domain-boundary-sensitivity-20260929-v1"
+    ],
+    [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_domain_boundary_sensitivity.py",
+      "--manifest",
+      "results/domains/domain-extraction-manifest-20260928-v1",
+      "--result",
+      "results/domains/domain-boundary-sensitivity-20260929-v1"
+    ]
+  ],
+  "manifest": "results/domains/domain-extraction-manifest-20260928-v1",
+  "output": "results/domains/domain-boundary-sensitivity-20260929-v1",
+  "pins": {
+    "scripts/summarize_domain_boundary_sensitivity.py": "9989d340e7b445dfd808e15e76c341fd71ff564895678a9fad90aea36367469f",
+    "scripts/readback_domain_boundary_sensitivity.py": "96083b8cf4e05d7c847990166b86f53ace335c913b80e039d0eadb79df7856eb",
+    "results/domains/domain-extraction-manifest-20260928-v1/receipt.json": "84081d30a4d2fbc4ee0c9261c0a33295119007f3fab36db17fc2decd75893c94",
+    "metadata/domain_extraction_manifest_readback_20260928.json": "4bd0b3a11a780ac30f53c826ab9e079e32f275dc07793c03f77ebd819db454af"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.05,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "basis": "All 868338 expanded model/hit pairs; same producer and independent CSV readback used for the older manifest. Increased memory allowance for 1.46 times the prior input scope. Quantiles remain producer summaries; readback verifies all identities, endpoint arithmetic, fractions and threshold counts."
+}

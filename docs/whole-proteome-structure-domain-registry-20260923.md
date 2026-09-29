@@ -745,3 +745,37 @@ binds the counts, terminal state and checked source hashes.
 Within-partition agreement does not measure stability under independent reclustering;
 alignment thresholds, parameter sensitivity, confidence, homology and evolutionary
 interpretation remain separate requirements.
+
+
+### Boundary extension and cluster assignment (September 29)
+
+All 868,338 expanded model/hit pairs now have checked alignment/envelope lengths,
+endpoints, extensions and reporting-threshold counts. The
+[completed length readback](../metadata/expanded_domain_boundary_sensitivity_completed_20260929.json)
+used independent CSV reconstruction; producer quantiles are not independently
+verified. Both commands and their resource allowance are recorded in the
+[execution plan](../metadata/expanded_domain_boundary_sensitivity_plan_20260929.json).
+
+The [full boundary/cluster join](../metadata/expanded_boundary_cluster_extension_completed_20260929.json)
+matched every pair exactly once and retained all 130,084 changed assignments.
+Counts by total residues added at either terminus are:
+
+| Added residues | Model/hit pairs | Different cluster assignments | Fraction |
+|---|---:|---:|---:|
+| 0 | 161,382 | 0 | 0.00% |
+| 1-4 | 433,435 | 48,356 | 11.16% |
+| 5-9 | 126,643 | 25,517 | 20.15% |
+| 10-19 | 85,322 | 24,374 | 28.57% |
+| 20-49 | 53,468 | 25,265 | 47.25% |
+| 50+ | 8,088 | 6,572 | 81.26% |
+
+These are descriptive counts within the single expanded partition. Models can
+contribute multiple hits and bins, and protein links can share structures; counts
+are not independent replicates. Larger extensions coincide with more assignment
+changes, but domain length, family composition and clustering parameters can
+also vary across bins. The table does not establish a causal boundary effect or
+biological structural divergence. Boundary alternatives must remain explicit in
+downstream family and architecture analyses. Serialization, count and fraction
+arithmetic passed; a second implementation has not independently repeated the
+full joined analysis. The reproducible join command is recorded in
+[its plan](../metadata/expanded_boundary_cluster_extension_plan_20260929.json).
