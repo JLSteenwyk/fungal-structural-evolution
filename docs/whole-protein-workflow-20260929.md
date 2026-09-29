@@ -35,7 +35,7 @@ flowchart TD
 | Five predictor designs | All 207,360 independently checked | [Design proof](../metadata/whole_protein_model_designs_v2_completed_readback_20260928.json) |
 | Exact input inventory | Complete; all 414,720 settings and 75,070 unique recipes independently reconstructed | [Producer checkpoint](../metadata/whole_protein_input_inventory_producer_completed_20260929.json), [checker](../scripts/readback_whole_protein_input_inventory.py) |
 | Compute estimates | Producer and arithmetic checker complete; 187,650 fits covered and 187,700 uncovered | [Plan](../metadata/whole_protein_fit_workload_plan_20260929.json), [check plan](../metadata/whole_protein_fit_workload_readback_plan_20260929.json) |
-| Joint covariate support | Producer running; certificate checker waiting | [Plan](../metadata/whole_protein_joint_support_plan_20260929.json), [check plan](../metadata/whole_protein_joint_support_readback_plan_20260929.json) |
+| Joint covariate support | Producer complete; independent certificate checker running | [Producer completion](../metadata/whole_protein_joint_support_producer_completed_20260929.json), [check plan](../metadata/whole_protein_joint_support_readback_plan_20260929.json) |
 | Materialized fitting inputs | Producer running; full reconstruction checker waiting | [Plan](../metadata/whole_protein_materialized_inputs_plan_20260929.json), [check plan](../metadata/whole_protein_materialized_input_readback_plan_20260929.json) |
 | Observation-matched model links | Producer and full link checker queued | [Plan](../metadata/whole_protein_model_links_plan_20260929.json), [check plan](../metadata/whole_protein_model_links_readback_plan_20260929.json) |
 | Ordinary-ML fitting | Adapter and runner implemented and fixture-tested; production unlaunched | [Adapter checks](../metadata/whole_protein_ml_adapter_fixtures_20260929.json), [runner checks](../metadata/whole_protein_ml_runner_fixtures_20260929.json), [runner](../scripts/run_whole_protein_ml.py) |
@@ -84,7 +84,7 @@ and [workload completion](../metadata/whole_protein_fit_workload_audited_2026092
 bind their successful terminal states. Historical timing coverage excludes 93,300
 fits outside observed record-count ranges and 94,400 fits with missing size
 strata. Covered-only idealized scenarios must not be reported as full-run ETAs.
-Array materialization and joint-support evaluation have started; production
+Array materialization is running and joint-support evaluation has completed; production
 ordinary-ML fits still await validated arrays and a complete resource assessment.
 
 
@@ -112,3 +112,12 @@ The scenarios expose uncertainty rather than excluding expensive inputs. Actual
 full-run timing records will inform revisions. Production remains unlaunched;
 validated arrays, final provenance pins and a fresh host-capacity check are
 required before applying this allocation.
+
+The joint-support producer completed all 75,070 unique inputs, mapping them to
+15,270 exact covariate geometries. It reports zero supported to numeric tolerance
+for 15,264 geometries and six unresolved certificates. All unresolved cases remain
+explicit. The completion record verifies terminal success, 157 source hashes and
+both output artifact hashes; the independent full certificate checker is now
+running. Producer classifications remain provisional until that check completes.
+Hull inclusion alone does not establish interior overlap, dense support, model
+adequacy or causal exchangeability.

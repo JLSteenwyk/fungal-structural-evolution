@@ -1,0 +1,22 @@
+{
+  "status": "joint_support_producer_complete_pending_full_certificate_audit",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt": "results/model_validation/whole-protein-joint-support-20260929-v1/receipt.json",
+  "receipt_sha256": "e94576006c7d751c3caed8e92d21f1d02067402a288c5dceaafe878eda6ea6dd",
+  "source_hashes_checked": 157,
+  "artifacts": {
+    "joint_support.jsonl": "bbe8845e8a24bd4e31d14ca674c92b01ebad350679859153b37303ee0d7fb4aa",
+    "input_support_map.jsonl": "6c9345b3c134ff63fcd51d49ccc301c8573e4ca6f9c500a9efca424ceeccd855"
+  },
+  "unique_inputs": 75070,
+  "unique_geometries": 15270,
+  "producer_classification_counts": {
+    "zero_supported_to_numeric_tolerance": 15264,
+    "unresolved_certificate": 6
+  },
+  "scope": "Producer terminal success, source and artifact hashes, and aggregate counts verified. All six unresolved geometries retained. Independent certificate readback remains required; no biological effect or model adequacy conclusion."
+}
