@@ -1,0 +1,91 @@
+{
+  "status": "completed_frozen_prefix_whole_protein_flag_replay",
+  "receipt": "results/model_validation/whole-protein-initial-flag-review-20260929-v1/receipt.json",
+  "receipt_sha256": "2dd1a2a2fc97d275185f7d33b3420114e173f8d041cd035af7ed7ce01d350b8e",
+  "frozen_manifest": "results/model_validation/whole-protein-initial-flag-review-20260929-v1/frozen_manifest.jsonl",
+  "frozen_manifest_sha256": "40f8e10e0d045b01886ee823794571857037ffb079def218299a4a07ed9db910",
+  "frozen_completed_dispositions": 705,
+  "flagged_dispositions": 5,
+  "distinct_flagged_inputs": 5,
+  "candidate_likelihoods_checked": 110,
+  "maximum_independent_objective_error": 4.3655745685100555e-11,
+  "flag_counts": {
+    "projected_gradient_above_threshold": 3,
+    "full_face_start_disagreement": 1,
+    "optimizer_reported_failure": 1
+  },
+  "results": [
+    {
+      "fit_input_id": "048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9",
+      "tree": "pmsf_profile_mafft",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "maximum_absolute_projected_gradient": 0.0013118910486642462,
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 1.8189894035458565e-11,
+      "status": "ml_candidate_requires_optimization_review"
+    },
+    {
+      "fit_input_id": "080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60",
+      "tree": "pmsf_mafft_profile",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "maximum_absolute_projected_gradient": 0.0010983610718035082,
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 2.9103830456733704e-11,
+      "status": "ml_candidate_requires_optimization_review"
+    },
+    {
+      "fit_input_id": "095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc",
+      "tree": "profile_guide",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": true,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": false
+      },
+      "maximum_absolute_projected_gradient": 0.0001662248322823161,
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 3.637978807091713e-12,
+      "status": "ml_candidate_requires_optimization_review"
+    },
+    {
+      "fit_input_id": "09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139",
+      "tree": "pmsf_mafft_profile",
+      "checks": {
+        "best_optimizer_success": true,
+        "projected_gradient_pass": false,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "maximum_absolute_projected_gradient": 0.0010769312083402068,
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 4.3655745685100555e-11,
+      "status": "ml_candidate_requires_optimization_review"
+    },
+    {
+      "fit_input_id": "0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a",
+      "tree": "mafft_guide",
+      "checks": {
+        "best_optimizer_success": false,
+        "projected_gradient_pass": true,
+        "upper_bound_contact": false,
+        "all_full_face_starts_agree": true
+      },
+      "maximum_absolute_projected_gradient": 2.6833569915978235e-06,
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 1.1368683772161603e-12,
+      "status": "ml_candidate_requires_optimization_review"
+    }
+  ],
+  "verification_method": "check_whole_protein_fit_payload.check_payload for every flagged payload in frozen_manifest.jsonl, using its hashed materialized matrix and corresponding species factor; receipt records every source hash.",
+  "scope": "All review-flagged fits in this explicitly frozen early prefix independently replayed; full production continues unchanged. Not an estimate of final failure frequency or a complete fit audit. Original review flags preserved; no numerical refinement or biological inference."
+}

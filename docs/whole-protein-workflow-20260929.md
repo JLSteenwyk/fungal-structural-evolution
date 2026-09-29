@@ -172,3 +172,18 @@ queued auditor has a 64 GiB cap, with swap disabled for both. Audit timing remai
 unmeasured: its plan exposes 1/10/100 seconds per disposition sensitivity
 scenarios rather than a finish-date claim. No scientific aim is complete from
 these preparation checks or launches.
+
+
+An [early frozen-prefix review](../metadata/whole_protein_initial_flag_review_completed_20260929.json)
+checked all five flagged dispositions among the first 705 completed fits. These
+are five distinct numerical inputs: three projected-gradient failures (maximum
+absolute gradients 0.001077–0.001312 against the unchanged 0.001 criterion), one
+full-face start disagreement, and one optimizer-reported failure despite a small
+gradient. No case contacts the upper ratio bound. The existing independent payload
+checker replayed all 110 candidate likelihoods and reconstructed fit parameters,
+covariances, gradients and decision flags; the largest objective difference was
+4.37e−11. Source and input hashes, full frozen prefix and result identities are
+retained. Original outputs and review flags remain unchanged. This is an early
+triage check, not the full output audit or an estimate of the final flag rate.
+Targeted refinement must retain original candidates, validate any improved
+solution and meet the existing numerical criteria before downstream use.
