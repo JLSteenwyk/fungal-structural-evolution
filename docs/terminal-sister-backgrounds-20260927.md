@@ -1209,3 +1209,14 @@ original RMSD discrepancies preserved. Evidence:
 `results/structural_comparisons/background-alignment-geometry-readback-20260928-v1.json`.
 The queued order-summary stage has started. Coverage, confidence, domain
 orientation and biological interpretation still require downstream analyses.
+
+The background order summary and its full independent readback subsequently
+completed successfully at 21:59 EDT. All 142,900 pair/mask rows and 3,384,504
+numeric values were checked. Full masks retain both usable directions for all
+71,450 pairs. Confidence masks retain both directions for 69,570 pairs, one
+for three, and neither for 1,877. The latter includes unavailable inputs and
+numerical exclusions; it is not a count of RMSD errors. In total, 282,043 directed
+alignments pass the numerical screen; 77 aligned directions are excluded (72
+short/nonunique and five additionally failing RMSD rounding). Evidence is in
+`metadata/background_alignment_usable_orders_completed_20260928.json` and
+`metadata/background_alignment_usable_orders_readback_20260928.json`.

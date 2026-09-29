@@ -1,0 +1,57 @@
+{
+  "status": "completed_background_order_summary_and_full_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "plan_sha256": "5994d56937a96df0425944a50d7d868ea84e54be02ab5183272cf25a688653db",
+  "receipt_sha256": "06be2771f7ea228136a5e669b8d27bae95cd249f9f598262d27a304fd37fc6d3",
+  "readback_sha256": "20c7d18e5760a14e8d4b7bc93c4027cf76777d801a150cdc80a3ff009f0e54ab",
+  "receipt": {
+    "status": "complete_background_alignment_numerically_usable_order_summary_pending_independent_readback",
+    "plan_sha256": "5994d56937a96df0425944a50d7d868ea84e54be02ab5183272cf25a688653db",
+    "pairs": 71450,
+    "pair_mask_rows": 142900,
+    "counts": {
+      "full:both_orders_numerically_usable": 71450,
+      "plddt70:both_orders_numerically_usable": 69570,
+      "plddt70:neither_order_numerically_usable": 1877,
+      "plddt70:one_order_numerically_usable": 3
+    },
+    "exclusion_reason_combinations": {
+      "fewer_than_three_pairs;nonunique_rotation": 72,
+      "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 5
+    },
+    "geometry_audit_sha256": "89cd08bd137d4baac01e71484692e62e56e8c0c7727b80392d93a0abfcb5de1a",
+    "native_receipt_sha256": "57e755e448fea149bcfa4c5ed97aaeb4a9fef64c005c281ca034ed428b2121fe",
+    "diagnostic_receipt_sha256": "f50f8833fe9837898212610a254566cc674917bcc04b4dbdc8150de48108eed2",
+    "geometry_receipt_sha256": "5b46db08bc5c64c37eda56829d85b6db4d1a3c494f60333ac7fe09858245dd50",
+    "artifacts": {
+      "pair_mask_order_summary.tsv": "8a3f5c7779408124e5bc98619b259627841f170cec2a8cda65cb65c258daf509"
+    },
+    "scope": "Both input orders and every pair/mask retained. Numerically usable requires unchanged RMSD tolerance, at least three paired residues and unique rotation under the audited numerical criterion. Excluded metrics blank; reasons and native status retained. This is not coverage/confidence qualification, prediction accuracy, pair significance or scientific acceptance."
+  },
+  "readback": {
+    "status": "passed_full_background_alignment_usable_order_summary_readback",
+    "pair_mask_rows": 142900,
+    "numerically_usable_directions": 282043,
+    "excluded_directions": 77,
+    "numeric_values_checked": 3384504,
+    "counts": {
+      "full:both_orders_numerically_usable": 71450,
+      "plddt70:both_orders_numerically_usable": 69570,
+      "plddt70:neither_order_numerically_usable": 1877,
+      "plddt70:one_order_numerically_usable": 3
+    },
+    "exclusions": {
+      "fewer_than_three_pairs;nonunique_rotation": 72,
+      "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 5
+    },
+    "source_receipt_sha256": "06be2771f7ea228136a5e669b8d27bae95cd249f9f598262d27a304fd37fc6d3",
+    "geometry_audit_sha256": "89cd08bd137d4baac01e71484692e62e56e8c0c7727b80392d93a0abfcb5de1a",
+    "script_sha256": "86332306403f404b58ca1c1e29ed660d45641756392c97bd3ff0136fbcf32df9",
+    "scope": "All pair/mask/order identities, native statuses, numerical exclusions, blank excluded metrics, endpoint-normalized values and order differences independently reconstructed from audited source tables. No new coordinate fits, coverage qualification or scientific acceptance."
+  },
+  "scope": "All new background pair/mask/order summaries and full independent table readback complete. Numerically usable does not establish coverage/confidence qualification or evolutionary significance; prior reused pairs still require a separate join."
+}
