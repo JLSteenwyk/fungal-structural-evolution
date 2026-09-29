@@ -539,3 +539,16 @@ launch. The [launch record](../metadata/expanded_duplication_alignment_launch_20
 preserves the exact process identity and plan hash. Full result readback,
 degenerate-geometry review, alignment-order sensitivity and biological
 duplication tests remain pending. GPU prediction remains paused.
+
+The [expanded numerical diagnostic](../metadata/expanded_duplication_rmsd_diagnostic_plan_20260929.json)
+is queued behind the exact alignment process and its successful terminal state.
+It uses the existing primary diagnostic implementation to check the entire
+pair/order/mask universe, checkpoint provenance, residue mappings, sequence
+identity and independently reconstructed least-squares RMSDs. Discrepancies
+remain explicit and quarantined; completion of this diagnostic does not grant
+scientific eligibility. It has one CPU, 32 GiB memory, zero swap and a 3 GiB
+output allowance, with an uncalibrated 1–16 hour planning window. Geometry,
+analytic checks of short mappings and serialized numeric verification remain
+required after this stage. The
+[launch record](../metadata/expanded_duplication_rmsd_diagnostic_launch_20260929.json)
+binds its process identity and plan hash.

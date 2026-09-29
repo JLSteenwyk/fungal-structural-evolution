@@ -1,0 +1,57 @@
+{
+  "mode": "primary",
+  "source_plan": "metadata/expanded_duplication_alignment_plan_20260929.json",
+  "producer": {
+    "pid": 3959338,
+    "created": 1790668010.31,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_duplication_alignments.py",
+      "--plan",
+      "metadata/expanded_duplication_alignment_plan_20260929.json"
+    ]
+  },
+  "producer_unit": "fungal-expanded-duplication-alignments-20260929.service",
+  "output": "results/structural_comparisons/expanded-duplication-rmsd-diagnostic-20260929-v1",
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_runner.py": "cd39661a8c27ced6705527388094f692cc4fc449004a85c46f6956a657f77a3c",
+    "scripts/check_duplication_alignment_handoff.py": "abd0387e5107c4ae69a5cdd4128537e4ac021761c34e200659e50f157bce3921",
+    "metadata/duplication_alignment_input_plan_20260928.json": "61426105e2cc14b587efd9616ffbe7060869dff714d6988c5e29747daa78efa0",
+    "metadata/duplication_alignment_input_launch_20260928.json": "3d6be350c03b733133e97adfce0d2a660b5f2c61121b893c24568bff0ae64759",
+    "metadata/duplication_alignment_inputs_completed_readback_20260929.json": "e7d5e449e5e75a0a674f9d08121831e3d0632fa8ab6e02c8878680b4fded2c72",
+    "metadata/duplication_alignment_input_audited_20260929.json": "d7b904f7d3789f8dfe0932a357b3498eee07ed44ed064d456e03c830acf3b16a",
+    "results/structural_comparisons/expanded-duplication-alignment-workload-20260929-v1/receipt.json": "84476213fd172108e3894be8e1f7e5fbed244c0ddedf6144fb3a8d1272c776d7",
+    "metadata/expanded_duplication_alignment_workload_completed_20260929.json": "6e7417bb72a6ef3bcd24226238e8967d546e97595dc986bbc51dcbcd64bdb49c",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/receipt.json": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/inputs.jsonl": "df5c21b88a114f9f99bb2df7e758c03495fb38aa1b8e9cbbda48ca94b810e456",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/readback_duplication_alignments.py": "cf962100a4b97c91802d8407c71bdbc78c8439bb3e4d08f4d8c294dc02c9453a",
+    "scripts/check_duplication_alignment_numeric_readback.py": "4c3e4d0394ca2a81b41e085e9c99ba80d9a89e4ed389b13e0c55978891a33450",
+    "scripts/check_duplication_alignment_full_readback.py": "00293963c2b3f789165e113dab4dca9ce1ff2cc9a9c599c2e9c207a8bc8684ee",
+    "scripts/check_duplication_primary_alignment_readback.py": "1e16d2092c05d114d177d1bf52edb051adf06de85e826a3d7482deb63301248f",
+    "scripts/diagnose_primary_alignment_rmsds.py": "266c6b9c739188d8cbc57eecc0632cef3f7ab41fd2e2e7d48f2eccafc22fef77",
+    "scripts/duplication_alignment_numeric_diagnostic.py": "eef5e96762c2870031f247b6d01d7389aa2bd6a7de059e4af45a6bc4c0426515",
+    "metadata/expanded_duplication_alignment_launch_20260929.json": "c947f6376f0fc39ba2e47675a17a1ae274f6625c02ffb31b4a2181b860d7ee65",
+    "metadata/expanded_duplication_alignment_plan_20260929.json": "23885f97d240157558d5c43b3b2c6081537f8fba83e4ed1bf9cd9a3c82cd3fa0"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_gib": 3,
+    "planning_hours": [
+      1,
+      16
+    ],
+    "basis": "Full 539248-disposition manifest and up to 501324 numerical reconstructions, one CPU, 256-PDB cache. Memory allowance covers all 553364 input records including original residue positions plus pair bookkeeping; runtime is an uncalibrated planning allowance. No GPU or charges."
+  },
+  "scope": "Full expanded checkpoint provenance, sequence mapping, identity and least-squares RMSD diagnostic after successful producer terminal state. All discrepancies retained and quarantined; scientific eligibility remains false. Geometry, short-alignment analytic checks and serialized numeric verification remain subsequent requirements."
+}
