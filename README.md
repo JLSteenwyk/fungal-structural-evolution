@@ -5,7 +5,7 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 28 September 2026
+## Current checkpoint — 29 September 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -27,7 +27,7 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Refreshed AlphaFold marker fits | Verified 125-marker collection: 500 fits from 95 unchanged and 30 refitted markers; 61,893 paired branch rows | Full 75,000-draw resampling, native audit and [warning census](docs/afdb-paired-resampling-review-20260928.md) completed; branch-information checks and calibrated evolutionary tests remain |
 | Direct geometry and fitted tree paths | 2,527,033 pairs across 122 markers; all 10,108,132 tree-path values and 1,464 descriptive rank rows checked | Geometry numerically sampled one pair per marker; phylogenetic dependence, uncertainty and biological acceleration tests remain |
 | Candidate domains — September 22 catalog | All 1,078,592 intervals extracted and atom-audited; database sequence/coordinate readback and 70,537-cluster partition verified; all 594,797 boundary pairs compared; complete family/taxon source joins audited | These results retain the older catalog; confidence and clustering-parameter sensitivity, phylogenetic integration and evolutionary tests remain |
-| Expanded domains — September 28 catalog | Registry and full interval readbacks passed for 1,575,294 intervals from 627,567 models | Full coordinate extraction is running; atom-level audit is queued. Expanded clustering and comparative results are not yet available |
+| Expanded domains — September 28 catalog | Registry and full interval readbacks passed for 1,575,294 intervals from 627,567 models; coordinate extraction completed all 628 shards with no reported rejections | Independent atom-level audit is running. Expanded database construction and clustering remain gated on that audit; expanded comparative results are not yet available |
 | Expanded family coverage — September 28 catalog | All 1,955,694 protein links independently reconstructed across both full family partitions; 42,396 profile and 42,390 MAFFT families have models in multiple taxa | Overlapping guide counts are not pooled; model availability does not establish confidence-qualified orthology or statistical power |
 | Expanded duplication coverage — September 28 catalog | All 935,353 terminal singleton-side event records rejoined and independently checked; both proteins modeled in 141,724 profile and 141,685 MAFFT events, spanning 210 taxa per guide; [lineage figure](docs/figures/duplication_lineage_coverage_20260928.png) checked | About 30.3% event coverage; completed comparative results retain their older frozen scope. Availability does not establish structural divergence, independent predictions or unbiased sampling |
 | Expanded duplication comparison inputs | All 283,409 candidates match reported gene-tree nodes and their two direct tip children. Queue readback passed for 134,812 distinct model/version pairs and 276,682 models, retaining all event associations and 14,588 same-model links; [evidence and workflow](docs/duplication-sampling-coverage-20260926.md#expanded-native-event-inventory-and-tree-review) | Raw-coordinate production completed for all 276,682 models with no reported rejections; all 277 output shards and source partitions checked. Independent coordinate reconstruction is running; full/pLDDT70 input preparation remains gated on that audit. Expanded alignments, confidence qualification and evolutionary tests remain pending; old alignment results require exact input/settings checks before reuse |
@@ -37,6 +37,7 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Recovered AlphaFold accessibility and site coupling | 30,618 models/15,960,692 residues; 9,453,757 paired observations projected and normalized. Rate optimization and rate/exposure integration completed. Conditional coupling covers 125 markers/47,529 sites, with 24 specifications per full/124-marker omission cohort and 96,000 total bootstrap fits | Phylogenetic, alignment, rate and prediction uncertainty; conditional associations do not establish causal or evolutionary effects |
 | Duplication comparisons | Matched domain measurements and 82,944 record/family/taxon summary rows verified across all 192 settings; full input-order and weighting sensitivity checked | All 412,800 primary whole-protein tasks processed; strict audit stopped on a two-residue RMSD discrepancy. Full diagnosis confirmed 27 two-residue discrepancies; full geometry readback passed, retaining 327 degenerate short mappings. Full order-summary and residue-mapping sensitivity readbacks passed. Background measurements now cover 71,461 distinct pairs; full new-alignment geometry audit passed with 77 degenerate directions excluded, including five RMSD discrepancies. Phylogenetically adjusted effects, uncertainty and biological interpretation remain |
 | Duplication background matching and filtering | All 2,786,912 fixed selections independently checked across 432 matching groups. Full target/control coverage screens and all 7,776 attrition cells verified; no rematching after filtering | All 62,208 post-screen covariate summaries and 7,776 coverage rows passed independent reconstruction. Descriptive balance does not establish representative coverage or a duplication effect; [evidence](docs/duplication-control-balance-20260927.md) |
+| Whole-protein sequence–structure inputs | All 52,675 unique matched pairs linked to measurements and phylogenetic covariance identities; 421,400 contrast rows independently checked. Full 96-setting summary replay passed 1,492,992 weighted-mean cells | All 207,360 design assessments completed, reporting full rank and positive residual degrees of freedom; independent numerical readback is running. Exact-input inventory and its audit are queued for 414,720 design/outcome settings. Whole-protein effect fitting and inferential calibration remain pending; [methods](docs/methods-draft.md#whole-protein-sequencestructure-contrasts-september-29) |
 
 
 For **13 exploratory ancestral case families**, all 156 refined whole-protein
@@ -120,6 +121,14 @@ likelihood comparison are queued. Expanded joint support is verified for all
 57,616 inputs, including separate nonnegative certificates for 112 numerical
 edge cases. These sensitivity fits do not yet establish
 model preference, significance or calibrated uncertainty.
+
+A frozen prefix of 75,205 completed ordinary-ML fits contained 601 optimization
+review flags. Their 449 unique inputs passed exact numerical-hash, membership
+and phylogenetic-mapping readback. A separate refinement run is active for all
+601 fits, with complete candidate-likelihood replay queued afterward. Original
+fits and flags remain intact; the subset does not replace full-grid audit or
+establish calibrated model comparisons. See the
+[flag census and numerical follow-up](docs/nonlinear-identity-contrasts-20260927.md).
 
 The completed [joint-covariate support check](docs/joint-covariate-support-20260927.md)
 now covers all 28,808 unique inputs and 82,944 original settings. Twenty-four
