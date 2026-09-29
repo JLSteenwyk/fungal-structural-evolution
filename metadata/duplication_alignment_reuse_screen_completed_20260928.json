@@ -1,0 +1,11 @@
+{
+  "status": "verified_complete_catalog_source_screen_not_reuse_authorization",
+  "receipt_sha256": "3e8943ea6d36b9cc5be18d71588b538e5f03f362c9c9744990fbce649c47452c",
+  "rows_checked": 134812,
+  "counts": {
+    "new_pair_requires_alignment": 31613,
+    "shared_pair_matching_catalog_source_pending_input_and_result_checks": 103199
+  },
+  "fixtures": "Changed coordinate checksum, sequence checksum, length and new-pair cases passed",
+  "scope": "Every serialized row compared independently to both frozen model catalogs and pair tables. Materialized-input and prior-result checks remain outstanding; no reuse executed."
+}

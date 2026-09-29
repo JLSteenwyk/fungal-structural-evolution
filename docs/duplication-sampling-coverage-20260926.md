@@ -346,3 +346,27 @@ reserve and uncalibrated 0.1–12-hour planning range. Launch identity is in
 It is currently waiting. No new alignments or reuse of earlier alignment results
 has been launched. Exact input bytes and settings must be compared before
 reusing completed comparisons from the original queue.
+
+### Catalog source comparison for alignment reuse (September 28)
+
+A complete source screen of all 134,812 expanded model pairs found 103,199
+shared pairs with identical catalog coordinate checksum, sequence checksum,
+and length at both endpoints. No shared pair had changed source identities;
+31,613 pairs are new and require alignment. The full serialized screen was
+independently compared to both frozen catalogs and pair tables. Changed
+coordinate checksum, sequence checksum, and length fixtures correctly prevent
+classification as a matching source candidate.
+
+This is not permission to reuse results: actual materialized PDB bytes,
+residue mapping, confidence mask, executable/options, order, and audited prior
+checkpoint results still must match. No alignment outputs have been copied.
+Coordinate validation and input materialization remain prerequisite work.
+Original provenance and numeric discrepancy flags must survive any future reuse.
+
+Reproduce with `scripts/screen_duplication_alignment_reuse.py --old
+results/structural_comparisons/duplication-model-pair-queue-20260926-v1 --new
+results/structural_comparisons/duplication-model-pair-queue-20260928-v1 --output
+<fresh-output-directory>`. The completed screen is at
+`results/structural_comparisons/duplication-alignment-reuse-screen-20260928-v1`;
+its complete-row verification is recorded in
+`metadata/duplication_alignment_reuse_screen_completed_20260928.json`.
