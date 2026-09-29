@@ -1177,3 +1177,22 @@ source/harness/binary checksums and all inputs/outputs are saved under
 `results/structural_comparisons/background-kabsch-two-point-probe-20260928-v1`.
 The full 15-case check is recorded in
 `metadata/background_kabsch_two_point_probe_completed_20260928.json`.
+
+### Background order summary queued
+
+`metadata/background_alignment_usable_orders_plan_20260928.json` now queues the
+complete 71,450 newly measured background pairs behind terminal success of the
+independent geometry audit. Both masks and orders are retained (142,900 summary
+rows). Numerical exclusions require original RMSD rounding agreement, at least
+three paired residues, and numerical rotation uniqueness. Excluded metrics stay
+blank; native statuses and every applicable reason remain explicit. This is not
+coverage/confidence qualification or biological acceptance. Earlier reused
+primary/reference pairs still require a separate source-bound join.
+
+The producer normalizes endpoint scores consistently across reversed input order,
+then runs an independent complete summary readback checking every metric,
+exclusion, blank and order difference. Endpoint normalization and combined
+exclusion/blank fixtures passed. Resources: one CPU, 16 GiB RAM, no swap/GPU,
+up to 2 GiB output, estimated 0.1–2 hours after prerequisites. The full summary
+and its readback have not yet completed. Exact launch identity is saved in
+`metadata/background_alignment_usable_orders_launch_20260928.json`.

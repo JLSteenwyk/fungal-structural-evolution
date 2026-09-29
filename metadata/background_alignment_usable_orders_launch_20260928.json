@@ -1,0 +1,15 @@
+{
+  "unit": "fungal-background-alignment-usable-orders-20260928.service",
+  "pid": 2570420,
+  "created": 1790646898.94,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_background_alignment_usable_orders.py",
+    "--plan",
+    "metadata/background_alignment_usable_orders_plan_20260928.json"
+  ],
+  "plan": "metadata/background_alignment_usable_orders_plan_20260928.json",
+  "plan_sha256": "5994d56937a96df0425944a50d7d868ea84e54be02ab5183272cf25a688653db",
+  "status": "queued_behind_exact_live_independent_geometry_audit",
+  "fixtures": "Endpoint-normalization and combined exclusion/blank metrics passed"
+}
