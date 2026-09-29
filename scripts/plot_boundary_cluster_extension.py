@@ -1,77 +1,71 @@
 #!/usr/bin/env python3
-"""Plot audited, descriptive boundary-extension cluster disagreement."""
+"""Plot descriptive assignment sensitivity and its model/hit denominators."""
 import argparse
 import csv
-import hashlib
 import json
 from pathlib import Path
-
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
-
-def sha(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+from matplotlib.ticker import PercentFormatter, FuncFormatter
+from screen_duplication_alignment_reuse import sha
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--table', type=Path, required=True)
-    parser.add_argument('--receipt', type=Path, required=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--completion', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    pins = {str(p): sha(p) for p in (args.table, args.receipt)}
-    receipt = json.loads(args.receipt.read_text())
-    if receipt['status'] != 'complete_boundary_extension_cluster_summary':
-        raise ValueError('Summary incomplete')
-    if sha(args.table) != receipt['artifacts']['extension_cluster_disagreement.tsv']:
-        raise ValueError('Table hash mismatch')
-    with args.table.open() as handle:
-        rows = list(csv.DictReader(handle, delimiter='\t'))
-    if [r['added_residues'] for r in rows] != ['0', '1-4', '5-9', '10-19', '20-49', '50+']:
-        raise ValueError('Unexpected bins')
-    pairs = [int(r['pairs']) for r in rows]
-    different = [int(r['different_clusters']) for r in rows]
-    if sum(pairs) != receipt['candidate_pairs']:
-        raise ValueError('Pair count mismatch')
-    for r, n, k in zip(rows, pairs, different):
-        if n <= 0 or not 0 <= k <= n or abs(float(r['fraction_different']) - k/n) > 1e-14:
-            raise ValueError('Invalid fraction')
-    percentages = [100*k/n for k, n in zip(different, pairs)]
-    plt.rcParams.update({'font.family': 'DejaVu Sans', 'svg.fonttype': 'none', 'pdf.fonttype': 42})
-    fig, ax = plt.subplots(figsize=(10, 6.4))
-    fig.subplots_adjust(left=.12, right=.97, bottom=.25, top=.80)
-    fig.suptitle('Domain clustering is sensitive to boundary choice', y=.96, fontsize=17)
-    fig.text(.12, .88, f'{sum(pairs):,} alignment/envelope pairs in one joint Foldseek partition', fontsize=11)
-    bars = ax.bar(range(6), percentages, color='#346c91', width=.65)
-    ax.set_xticks(range(6), ['0\n(identical)', '1–4', '5–9', '10–19', '20–49', '50+'])
-    ax.set_xlabel('Residues added by the HMM envelope')
-    ax.set_ylabel('Pairs assigned to different clusters (%)')
-    ax.set_ylim(0, 100)
-    ax.spines[['top', 'right']].set_visible(False)
-    ax.set_axisbelow(True)
-    ax.grid(axis='y', alpha=.25)
-    for bar, pct, k, n in zip(bars, percentages, different, pairs):
-        if abs(bar.get_height()-pct) > 1e-12:
-            raise ValueError('Bar height mismatch')
-        ax.text(bar.get_x()+bar.get_width()/2, pct+2, f'{pct:.1f}%\n{k:,}/{n:,}', ha='center', va='bottom', fontsize=9)
-    fig.text(.12, .11, 'Labels: different-cluster pairs / all pairs in each bin. Identical intervals share one database entry.', fontsize=9)
-    fig.text(.12, .065, 'Descriptive census: shared proteins, families and ancestry; no causal or evolutionary-event inference.', fontsize=9)
+    completion = json.loads(args.completion.read_text())
+    receipt = Path(completion['receipt'])
+    assert sha(receipt) == completion['receipt_sha256']
+    source = receipt.parent / 'cluster_change_by_extension.tsv'
+    assert sha(source) == completion['artifacts'][source.name]
+    with source.open() as f:
+        rows = list(csv.DictReader(f, delimiter='\t'))
+    assert len(rows) == len(completion['summaries']) == 6
+    for row, expected in zip(rows, completion['summaries']):
+        assert all(type(value)(row[key]) == value for key, value in expected.items())
+    labels = [r['added_residue_bin'] for r in rows]
+    n = [int(r['hits']) for r in rows]
+    changed = [int(r['changed_cluster']) for r in rows]
+    fractions = [k / total for k, total in zip(changed, n)]
+    assert sum(n) == 868338 and sum(changed) == 130084
+    assert all(f == float(r['changed_fraction']) for f, r in zip(fractions, rows))
     args.output.mkdir(parents=True, exist_ok=False)
-    for ext in ('svg', 'pdf', 'png'):
-        fig.savefig(args.output / f'boundary_cluster_extension.{ext}', dpi=170, facecolor='white')
+    plt.rcParams.update({'font.size': 10, 'axes.spines.top': False,
+                         'axes.spines.right': False, 'pdf.fonttype': 42})
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4.7))
+    fig.subplots_adjust(left=.09, right=.98, bottom=.23, top=.79, wspace=.35)
+    fig.suptitle('Domain boundary choice and structural cluster assignment', y=.97, fontsize=15)
+    fig.text(.5, .89, '868,338 model/hit pairs · expanded September 28 catalog', ha='center', color='#555555')
+    bars = axes[0].bar(labels, fractions, color='#287C8E', width=.7)
+    axes[0].set(ylabel='Different cluster assignments', ylim=(0, 1),
+                xlabel='Added residues: envelope − alignment', title='A   Fraction of pairs')
+    axes[0].yaxis.set_major_formatter(PercentFormatter(1))
+    axes[0].bar_label(bars, labels=[f'{100*f:.1f}%' for f in fractions], padding=4, fontsize=9)
+    bars = axes[1].bar(labels, n, color='#8697A7', width=.7)
+    axes[1].set(ylabel='Model/hit pairs', ylim=(0, max(n)*1.2),
+                xlabel='Added residues: envelope − alignment', title='B   Denominators')
+    axes[1].yaxis.set_major_formatter(FuncFormatter(lambda value, _: f'{value/1000:.0f}k'))
+    axes[1].bar_label(bars, labels=[f'{value:,}' for value in n], padding=4, fontsize=8)
+    for ax in axes:
+        ax.set_axisbelow(True)
+        ax.grid(axis='y', color='#E6E6E6', linewidth=.6)
+    fig.text(.09, .07, 'Descriptive comparison within one partition; hits are not independent evolutionary replicates.\n'
+             'Boundary bins are reporting categories. Assignment changes do not establish biological divergence.',
+             fontsize=9, color='#555555', va='center')
+    artifacts = {}
+    for extension in ['png', 'pdf']:
+        path = args.output / ('boundary_cluster_extension.'+extension)
+        fig.savefig(path, dpi=200)
+        artifacts[path.name] = sha(path)
     plt.close(fig)
-    svg = args.output / 'boundary_cluster_extension.svg'
-    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
-    for p, digest in pins.items():
-        if sha(p) != digest:
-            raise ValueError('Source changed')
-    result = dict(status='complete_boundary_cluster_extension_figure_pending_visual_review',
-                  candidate_pairs=sum(pairs), different_cluster_pairs=sum(different), bars_checked=6,
-                  source_hashes=pins, script_sha256=sha(__file__),
-                  artifacts={p.name: sha(p) for p in args.output.iterdir()},
-                  scope='Descriptive proportions within a single joint partition; not independent observations, separate-run stability, causal effects or evolutionary events.')
+    result = dict(status='rendered_boundary_cluster_extension_figure',
+                  source_hashes={str(p): sha(p) for p in [args.completion, receipt, source]},
+                  script_sha256=sha(__file__), artifacts=artifacts,
+                  pairs=sum(n), changed_assignments=sum(changed), plotted_rows=rows,
+                  scope='All six bins checked against completed table; ratios recomputed from integers. Rendering and arithmetic only, not an independent source join or inferential test.')
     (args.output / 'receipt.json').write_text(json.dumps(result, indent=2)+'\n')
 
 

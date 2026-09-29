@@ -779,3 +779,14 @@ downstream family and architecture analyses. Serialization, count and fraction
 arithmetic passed; a second implementation has not independently repeated the
 full joined analysis. The reproducible join command is recorded in
 [its plan](../metadata/expanded_boundary_cluster_extension_plan_20260929.json).
+
+
+![Boundary extension and cluster assignment fractions with denominators](figures/boundary-cluster-extension-20260929/boundary_cluster_extension.png)
+
+[Download the vector PDF](figures/boundary-cluster-extension-20260929/boundary_cluster_extension.pdf).
+The [plot script](../scripts/plot_boundary_cluster_extension.py) validates all six
+source-table rows, recomputes each fraction from integer counts and records source
+and output hashes. The [rendering review](../metadata/boundary_cluster_extension_figure_review_20260929.json)
+records the reproducible command and visual inspection. Both panels use linear
+axes. There are no inferential error bars because these descriptive model/hit
+counts are not independent evolutionary replicates.

@@ -1,0 +1,12 @@
+{
+  "status": "reviewed_rendered_boundary_cluster_extension_figure",
+  "receipt_sha256": "c8d2d452ec035bcb899be787e45106d725ce77c214e826ccefc507f242073646",
+  "checks": [
+    "All six plotted rows equal completed source table",
+    "Fractions recalculated from integer numerators and denominators",
+    "Total 868338 pairs and 130084 assignment changes",
+    "PNG visually inspected: complete labels, values, axes and descriptive caption; no clipping"
+  ],
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/bizon/anaconda3/bin/python scripts/plot_boundary_cluster_extension.py --completion metadata/expanded_boundary_cluster_extension_completed_20260929.json --output docs/figures/boundary-cluster-extension-20260929",
+  "scope": "Rendering and source-table arithmetic review only. Does not extend the scientific qualification of the source analysis."
+}
