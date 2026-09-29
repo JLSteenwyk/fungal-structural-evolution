@@ -128,3 +128,25 @@ Report contrasts with control-reuse, taxon and family dependence accounted for;
 assess guide, annotation, caliper and focal-background sensitivity. Comparisons
 within conserved architectures do not replace the separate domain gain/loss,
 fusion/rearrangement and family-turnover analyses in the full project.
+
+## Structural coverage for the original matching targets
+
+All 218,473 modeled target nodes (109,245 profile-guide and 109,228 MAFFT-guide)
+now have the same six original-protein coverage screens applied to their audited
+structural measurements as the background candidates. All 436,946 target/mask
+rows and 2,621,676 decisions were independently replayed with decimal ceiling
+cutoffs. Both native orders must pass; confidence-mask coverage uses the original
+protein length. The 6,354 identical-model targets per guide remain explicitly
+unmeasured rather than being assigned zero structural divergence.
+
+Requiring 50 residues and both masks retains 43,515/43,517 profile/MAFFT targets
+at 50% coverage, 26,192/26,196 at 70%, and 7,771/7,772 at 90%. These counts refer
+to all original modeled targets, not only the selected matches; guides are
+sensitivity alternatives rather than independent replicates. The original
+control choices remain unchanged. The next step is to measure joint target/control
+attrition within every fixed guide/policy/scenario before estimating effects.
+
+Reproduce with `scripts/screen_matched_duplication_target_coverage.py` then
+`scripts/readback_matched_duplication_target_coverage.py`. Output:
+`results/structural_comparisons/matched-target-coverage-20260928-v1`.
+Evidence: `metadata/matched_target_coverage_completed_20260928.json`.
