@@ -128,7 +128,8 @@ and phylogenetic-mapping readback. The separate refinement run completed all
 601 fits: 598 pass its numerical criteria and three retain gradient-only flags.
 Complete replay passed all 14,424 candidate likelihoods. Interior and boundary
 proposal stages and their full readbacks also passed: each of the three flagged
-cases has two validated local proposals, pending selection and integration. Original
+cases has two validated local proposals. Selection and coefficient/covariance
+readback now pass for all 601 candidates; production integration is pending. Original
 fits and flags remain intact; the subset does not replace full-grid audit or
 establish calibrated model comparisons. See the
 [flag census and numerical follow-up](docs/nonlinear-identity-contrasts-20260927.md).

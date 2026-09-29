@@ -1,0 +1,25 @@
+{
+  "launch": "metadata/selected_refinement_candidates_launch_20260929.json",
+  "proof": "metadata/selected_refinement_candidates_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/selected_refinement_candidates_launch_20260929.json": "5f3d7906b587faa9f0f44a62d8d9037e6ab7ed5a009a6a5d60ad111f6f2008d1"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_check": "Separate normal-equation ML implementation matches validated direct likelihood on synthetic nested-group, nonzero-species fixture."
+}

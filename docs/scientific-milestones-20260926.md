@@ -128,8 +128,9 @@ Chronological receipts and process records remain in [progress](progress.md).
   with 598 passing and three gradient-only flags retained. Full candidate-output
   replay passed all 14,424 candidate likelihoods. Gradient-only interior and
   exact-zero boundary proposal stages and their complete readbacks also passed:
-  all three retained cases have two checked local proposals. Selection and
-  integration are pending; proposals have not replaced production fits. The original full grid still
+  all three retained cases have two checked local proposals. Selection and full
+  coefficient/covariance readback pass for all 601 candidates. Integration is
+  pending; candidates have not replaced production fits. The original full grid still
   requires completion and audit, followed by integration and valid uncertainty
   and multiplicity treatment. None of these stages establishes a duplication effect.
 - Recovered AlphaFold accessibility and full site-summary readbacks are complete:

@@ -543,3 +543,21 @@ Plan and exact process identity:
 Output: `results/model_validation/selected-refinement-candidates-20260929-v1`.
 Resources: one CPU, 16 GiB, no swap, 0.1–4 hours planning allowance, 0.1 GiB output,
 no GPU or paid resources. Exact-tie and lower-objective selection fixtures passed.
+
+### Selected candidate snapshot fully checked (September 29)
+
+Both selection and readback services finished successfully with exit status zero.
+The checker reconstructed all 601 choices: 598 retained refinements, one interior
+proposal and two lower-face proposals. A separate normal-equation solve and inverse
+recomputed coefficients, residual scale and conditional coefficient covariance,
+including conversion back to raw units. Maximum likelihood discrepancy was
+1.81899e-12. This implementation shares the covariance solver and gradient library;
+it is not an independent implementation of the entire model.
+
+The completed handoff rechecked 1,907 source hashes and 602 artifact hashes.
+Evidence: `metadata/selected_refinement_candidates_completed_readback_20260929.json`
+and `metadata/selected_refinement_candidates_audited_20260929.json`.
+Checker: `scripts/readback_selected_refinement_candidates.py`; resource plan:
+`metadata/selected_refinement_candidates_readback_plan_20260929.json`.
+Production integration, completion of the full grid, review of later flags and
+calibrated uncertainty remain outstanding. Original fit files remain unchanged.

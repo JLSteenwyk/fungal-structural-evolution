@@ -826,8 +826,12 @@ Single-case direct checks and synthetic fixtures have passed. Complete snapshot
 refinement processed all 601 fits, with 598 passing and three gradient-only
 flags retained. Full output replay subsequently passed all 14,424 candidate likelihoods. Both
 proposal stages and their complete readbacks also passed, yielding two checked
-local proposals for each of the three retained gradient cases. Selection and
-integration remain pending. No original production fit has been replaced. Completion
+local proposals for each of the three retained gradient cases. A separate selected
+snapshot now passes readback for all 601 choices, including coefficients, residual
+scale and conditional coefficient covariance recomputed by a separate normal-equation
+implementation. Maximum likelihood discrepancy was 1.82e-12; the covariance solver
+and analytic-gradient library are shared. Production integration remains pending.
+No original production fit has been replaced. Completion
 and validation of the full model grid remain required before using corrected
 values in model comparisons. Numerical stationarity does not establish variance
 component identifiability, a global optimum, interval calibration, prediction

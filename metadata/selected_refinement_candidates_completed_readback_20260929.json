@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_selected_refinement_candidate_readback",
+  "fits": 601,
+  "selection_counts": {
+    "audited_refinement": 598,
+    "interior_local_proposal": 1,
+    "lower_face_local_proposal": 2
+  },
+  "maximum_likelihood_error": 1.8189894035458565e-12,
+  "source_receipt_sha256": "dfea0c77731406a1935ea440803a0744c9d20ecc1cf0cfb126cc05519016116d",
+  "checker_sha256": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "scope": "All selections and GLS/ML summaries reconstructed. Separate normal-equation solve/inverse implementation shares covariance solver and analytic-gradient library. No original fit overwrite, full-grid acceptance, calibrated uncertainty or biological inference."
+}

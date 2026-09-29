@@ -1,0 +1,27 @@
+{
+  "status": "selected_refinement_candidates_fully_checked",
+  "checked_at": "2026-09-29T05:35:16.195846+00:00",
+  "fits": 601,
+  "selection_counts": {
+    "audited_refinement": 598,
+    "interior_local_proposal": 1,
+    "lower_face_local_proposal": 2
+  },
+  "source_hashes_checked": 1907,
+  "artifact_hashes_checked": 602,
+  "receipt_sha256": "dfea0c77731406a1935ea440803a0744c9d20ecc1cf0cfb126cc05519016116d",
+  "readback_proof_sha256": "b96d70b0b6646c60f0ed4c5fb3a976122d80eca8807ba60ca7048db293e40da9",
+  "terminal_states": {
+    "fungal-selected-refinement-candidates-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-selected-refinement-candidate-readback-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Separate frozen numerical-candidate snapshot. Lowest direct proposal objective wins; smaller Hessian step breaks exact ties only. Original fits and flags retained. No production integration, full-grid acceptance, calibrated intervals or biological inference."
+}
