@@ -1083,3 +1083,23 @@ All RMSD flags remain explicit. This assesses numerical identifiability,
 not prediction accuracy, alignment homology or biological effects. Full
 independent geometry readback is still required. Launch provenance is in
 `metadata/background_alignment_geometry_launch_20260928.json`.
+
+
+### Independent background geometry readback queued (September 28)
+
+The full background geometry output now has a queued independent readback,
+`metadata/background_alignment_geometry_readback_plan_20260928.json`.
+It waits for the exact geometry producer and requires terminal success before
+reading its complete, source-bound output. Every successful alignment is checked
+against hashed original coordinates and native mappings. An independent 4x4
+quaternion eigensystem checks proper-rotation curvature and optimum; LAPACK
+`gesvd` checks coordinate and cross spectra. Complete row membership and counts
+are required. Near-zero quaternion gaps are recorded rather than interpreted as
+proof of rank at machine precision. RMSD flags remain unchanged.
+
+The new checker passed single-point, two-point, planar, reflected, and general
+3D fixtures and rejected altered rank, curvature, classification, and ratio.
+The full readback is queued, not completed. Resources are one CPU, 16 GiB RAM,
+no swap or GPU, with an estimated 0.2–8 hours after prerequisites finish and up
+to 1 GiB output. Launch identity and checksums are recorded in
+`metadata/background_alignment_geometry_readback_launch_20260928.json`.
