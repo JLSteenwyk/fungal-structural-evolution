@@ -881,3 +881,26 @@ and corrupted saved payloads were rejected. Script and evidence:
 `metadata/whole_protein_ml_runner_fixtures_20260929.json`.
 These checks cover worker/restart behavior; full-data gates, output audit,
 calibration and biological interpretation remain pending.
+
+## Whole-protein observation-matched model links queued (September 29)
+
+`scripts/link_whole_protein_model_inputs.py` waits for full materialized-input
+readback, hashes response and design columns for every distinct input, and links
+all ten predictor pairs within each setting/outcome group. There are 82,944
+groups and 829,440 pair mappings. Identical ordered row identities, response
+values, covariance provenance and shared predictor values are required for a
+same-observation link. Different-observation pairs, including positive-log
+exclusions where present, remain explicitly ineligible for direct likelihood
+comparison. No outcomes or tree alternatives are combined.
+
+Named-column subset relations identify sufficient nesting; absence of such a
+relation does not prove that general column spaces are non-nested. The map does
+not select a preferred model or establish a test distribution. Fixtures covered
+all relation classes, mismatched row counts/order, and rejection of corrupted
+responses or common predictors. Full output readback remains required.
+
+Plan/process identity: `metadata/whole_protein_model_links_{plan,launch}_20260929.json`.
+Resources: one CPU, 8 GiB memory, no swap, 2 GiB output and 0.5–4 hours planning
+allowance, reading approximately 58.4 GiB of arrays plus source hash scans.
+No GPU or paid resources. Output:
+`results/model_validation/whole-protein-comparison-input-links-20260929-v1`.

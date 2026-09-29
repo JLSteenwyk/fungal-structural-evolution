@@ -1,0 +1,27 @@
+{
+  "audit_launch": "metadata/whole_protein_materialized_input_readback_launch_20260929.json",
+  "audit_proof": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+  "inputs": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "inventory": "results/structural_comparisons/whole-protein-model-input-inventory-20260928-v1",
+  "output": "results/model_validation/whole-protein-comparison-input-links-20260929-v1",
+  "pins": {
+    "scripts/link_whole_protein_model_inputs.py": "b3f57a64579c1887b087e959a440be9a90451486f8df7c98e19dbe96b504e3a8",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_materialized_input_readback_launch_20260929.json": "d4520dfe7f38b31541e3df5ccbbcf54018be68fc1dd03d9b67fccb040603f362",
+    "results/structural_comparisons/whole-protein-model-input-inventory-20260928-v1/receipt.json": "20f3102bf5e83fe4c01d42853bc1164df762227c9c2b3ac1f0c0ff4b45d6e0eb"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.5,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": "Read 58.4 GiB of arrays once for per-column hashes plus before/after source hash scans; 829440 pair mappings, planning allowance only.",
+  "prelaunch_checks": "Identical and nested designs in both directions, non-nested names, row-count/order mismatch, response corruption and common-column corruption checked."
+}
