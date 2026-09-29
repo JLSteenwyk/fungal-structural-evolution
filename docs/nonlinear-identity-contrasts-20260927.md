@@ -464,3 +464,17 @@ Resources: one CPU, 16 GiB memory, no swap, 0.1–8 hours planning allowance,
 0.1 GiB output, no GPU or paid resources. The service is waiting for the audit;
 this is not completed application. A separate all-proposal readback remains
 required, and no proposed point is selected or substituted into production.
+
+The complete lower-face proposal readback is queued as
+`fungal-audited-lower-face-readback-20260929.service` using
+`scripts/readback_audited_lower_face_proposals.py`. It checks every disposition
+and source link, reconstructs model designs, and calls the separate
+`scripts/check_lower_face_proposal_payload.py` to replay Hessians, Newton points,
+likelihoods, gradients, both finite-difference scales, boundary signs and status
+flags. The proposal helper is not called; likelihood and gradient libraries
+remain shared. Five valid fixtures and four deliberate corruption cases passed.
+Plan, exact process identity and fixture proof are recorded under
+`metadata/audited_lower_face_proposals_readback_*_20260929.json` and
+`metadata/lower_face_payload_checker_fixtures_20260929.json`.
+Resources: one CPU, 16 GiB, no swap, 0.1–8 hours planning allowance, no GPU or paid
+resources. Full output validation remains pending upstream completion.
