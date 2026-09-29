@@ -1,0 +1,37 @@
+{
+  "dependencies": [
+    "metadata/expanded_duplication_geometry_launch_20260929.json",
+    "metadata/expanded_duplication_geometry_readback_launch_20260929.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_primary_diagnostic_geometry_completion_v2.py",
+    "--plan",
+    "metadata/expanded_duplication_geometry_completion_plan_20260929.json"
+  ],
+  "pins": {
+    "metadata/expanded_duplication_geometry_plan_20260929.json": "f0b1b8cf2d873c422f08eefa7a63486dce32f15993c6ef4f14a20e5d4736a7d8",
+    "metadata/expanded_duplication_geometry_readback_plan_20260929.json": "d88494aa83943e49e97fa6f96616f8d67f0abe3e24a0e11b30baa4bd9015b3b3",
+    "metadata/expanded_duplication_geometry_launch_20260929.json": "f59fbfbd8d53aba7125528c0f78ee6e66f663c288998ada637e6921a94296d13",
+    "metadata/expanded_duplication_geometry_readback_launch_20260929.json": "d0ed0040827c26d4bf07fa34b286ae13461b1eeaf099f2d763b1a042700836d5",
+    "scripts/record_primary_diagnostic_geometry_completion_v2.py": "ca3f3a18d264caaaf788a8fc4ab1a6f1051ae7fd5eb6a7895cf47daa278803f0",
+    "scripts/test_geometry_completion_reconciliation.py": "b638329bffa151fe84737b281ca129854f79c3c19fd7b73b75cff1df2a336c8c",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/geometry_completion_reconciliation_validation_20260929.json": "1775edb0f6c9dc69ced06d7547a4fb70fa2ee70435c690444dd4543cb4402d1b",
+    "metadata/expanded_duplication_geometry_completion_plan_20260929.json": "c7478149f1af343dce25c71dec3dd0b110b4bc4152b5f81c2579c8ccade4c80b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours_after_dependencies": [
+      0.01,
+      1
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Rehash all pinned sources and completed receipts/tables; reconcile up to 501324 geometry and diagnostic identities from 539248 dispositions. Runtime planning allowance excludes preceding jobs and is not ETA or timeout. No geometry fitting or predictions repeated."
+  }
+}

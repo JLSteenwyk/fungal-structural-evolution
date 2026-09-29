@@ -1,0 +1,80 @@
+{
+  "alignments": 387646,
+  "counts": {
+    "full:unique_at_numeric_tolerance": 206400,
+    "plddt70:unique_at_numeric_tolerance": 180919,
+    "plddt70:degenerate_at_numeric_tolerance": 327
+  },
+  "rmsd_classification_counts": {
+    "within_printed_rounding": 387619,
+    "outside_printed_rounding": 27
+  },
+  "numerically_unique_rotations": 387319,
+  "degenerate_short_alignments": 327,
+  "degenerate_long_alignments": 0,
+  "longer_degenerate_mappings": [],
+  "status": "complete_verified_primary_diagnostic_geometry",
+  "scientific_eligibility": false,
+  "maximum_scaled_quaternion_curvature_error": 2.357004709793344e-15,
+  "near_zero_quaternion_gaps": 327,
+  "terminal_states": {
+    "fungal-primary-diagnostic-geometry-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-primary-diagnostic-geometry-readback-20260927.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/geometry_completion_full_regression_plan_20260929_v2.json": "3002624548750bf7b41eb3e2c507b47f8d965b484f5ff7fdd815e15c6be479f7",
+    "metadata/primary_diagnostic_geometry_plan_20260927.json": "02dcf102322745d9c32a89f4f709e455bf67e458ba87483d6e85b7a9779555f3",
+    "metadata/primary_diagnostic_geometry_readback_plan_20260927.json": "6ba1af6fd1d362cde56f299e289358fcb21d1dcf6af06b93fdf7223cdb0bac28",
+    "metadata/primary_diagnostic_geometry_launch_20260927.json": "37a805e923089c2230b2d701177a976b4553b22a925c51cf5502409de8afbc68",
+    "metadata/primary_diagnostic_geometry_readback_launch_20260927.json": "1b6209cae3635fff664474dac7031a040745bb1e3870940a38e202ade15e22f4",
+    "metadata/primary_alignment_short_geometry_readback_20260927.json": "960d181de1f0cc7b54c957fd5f8527c808bb0d830394e66bdd00fc6827aad55e",
+    "metadata/primary_rmsd_diagnostic_and_short_completed_20260927.json": "7760bfc5ab86a9a38c2b771f5c983d65120f68e3ae4a461e439433cb94bd3d00",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/receipt.json": "81ad9b63a3288ba74d26e1c75da83e6e46547b7105e1c7a6e8eb982af367ee98",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/alignment_geometry.tsv": "65c72fee0e84b9c5889ee948b140bc666dae071ba57de5191ba329064c85d9fb",
+    "metadata/primary_diagnostic_geometry_readback_20260927.json": "5e101dab890b72c779ccd7c0f4c72d484149ad5d4048f44b64491f945e0a3740",
+    "scripts/record_primary_diagnostic_geometry_completion_v2.py": "ca3f3a18d264caaaf788a8fc4ab1a6f1051ae7fd5eb6a7895cf47daa278803f0",
+    "scripts/test_geometry_completion_reconciliation.py": "b638329bffa151fe84737b281ca129854f79c3c19fd7b73b75cff1df2a336c8c",
+    "metadata/duplication_alignment_input_plan_20260926.json": "96a935b2038b0ddbaafa12b26cff73b59cd58be0b8f4734353176ff9d88a5b11",
+    "metadata/duplication_alignment_input_launch_20260926.json": "5faec6e9723431688de00d8407fbc5b1c5f5799469dd49c3cd1331333ff31537",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_alignment_runner.py": "cd39661a8c27ced6705527388094f692cc4fc449004a85c46f6956a657f77a3c",
+    "scripts/check_duplication_alignment_handoff.py": "abd0387e5107c4ae69a5cdd4128537e4ac021761c34e200659e50f157bce3921",
+    "metadata/duplication_alignment_plan_20260926.json": "c1be1963e07bbe2edb41a153fabf0f305a318c0f3f6921f2172d2615c82e7537",
+    "metadata/duplication_alignment_launch_20260926.json": "442f7b7c98ed75146b706d6a75ef1da478d292c257c6ebc6c54a78e87a966137",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/readback_duplication_alignments.py": "cf962100a4b97c91802d8407c71bdbc78c8439bb3e4d08f4d8c294dc02c9453a",
+    "scripts/check_duplication_alignment_numeric_readback.py": "4c3e4d0394ca2a81b41e085e9c99ba80d9a89e4ed389b13e0c55978891a33450",
+    "scripts/check_duplication_alignment_full_readback.py": "00293963c2b3f789165e113dab4dca9ce1ff2cc9a9c599c2e9c207a8bc8684ee",
+    "scripts/check_duplication_primary_alignment_readback.py": "1e16d2092c05d114d177d1bf52edb051adf06de85e826a3d7482deb63301248f",
+    "scripts/diagnose_primary_alignment_rmsds.py": "266c6b9c739188d8cbc57eecc0632cef3f7ab41fd2e2e7d48f2eccafc22fef77",
+    "scripts/duplication_alignment_numeric_diagnostic.py": "eef5e96762c2870031f247b6d01d7389aa2bd6a7de059e4af45a6bc4c0426515",
+    "metadata/primary_alignment_first_rmsd_failure_20260927.json": "d3f3aff20b86b0cf72f8d834ca844198b5ebf57b21f2afc68f85c41b212eaa92",
+    "metadata/primary_alignment_production_closed_20260927.json": "6d9a360361374a80d209ff953fce354dc025481f279a65ecbc7aabc1c163772e",
+    "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1/receipt.json": "2edca4a1f89170edd855ad702f0498a1c2a7ee3bfd4bb5a8a61ab689105a283f",
+    "metadata/primary_alignment_rmsd_diagnostic_completed_20260927.json": "6f57c4b12a3d6ef3a5ff26c2bae37bebb8f17e33d42a16f1f9e419e62079dac8",
+    "scripts/assess_primary_diagnostic_geometry.py": "f9b0b4a277891884225a2276f6fdb70188c6a6772420e0b88dae193888d114ca",
+    "scripts/assess_reference_alignment_geometry.py": "179748e994c21a2d7cefc141252e6edac4ab184fd96900ce3f46dd97b044d0b5",
+    "scripts/readback_reference_alignment_geometry_v2.py": "ed4aa1e50cc3b77ba3fa64e82c937eb3ae137dde90cb54970f6be4629b13e360",
+    "metadata/primary_alignment_rmsd_diagnostic_plan_20260927.json": "e9d881fe581a2d61cd98d482a014066de82c1497319fcd27723b231e13288f82",
+    "metadata/primary_alignment_rmsd_diagnostic_launch_20260927.json": "4883dc27125c7ac65d6e1fdec415ddac83760d830dced50a52596e7850663296",
+    "scripts/readback_primary_diagnostic_geometry.py": "b3ca38c31d6ceadb6f2ecfee18395c8492d234c22ccc6baa7f180bc57e9709e0",
+    "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1/numeric_readback.tsv": "89caaa4efb12049c89add4f7710fc0ac7222b7f2894b7bd67928ec6ad83df09f"
+  },
+  "script_sha256": "ca3f3a18d264caaaf788a8fc4ab1a6f1051ae7fd5eb6a7895cf47daa278803f0",
+  "scope": "Every full-cohort geometry identity/length/RMSD classification reconciled with the complete diagnostic table and independent geometry readback. All one/two-residue mappings match the analytic census. Longer numerical degeneracies are retained explicitly rather than excluded by assumption. All original RMSD exclusions remain; no prediction-accuracy, biological effect or inferential acceptance established."
+}

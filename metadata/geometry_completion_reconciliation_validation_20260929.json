@@ -1,0 +1,28 @@
+{
+  "status": "passed_full_historical_geometry_regression_and_nine_reconciliation_fixtures",
+  "full_regression_alignments": 387646,
+  "compared_fields": [
+    "alignments",
+    "numerically_unique_rotations",
+    "degenerate_short_alignments",
+    "rmsd_classification_counts",
+    "counts",
+    "maximum_scaled_quaternion_curvature_error",
+    "near_zero_quaternion_gaps"
+  ],
+  "fixtures": 9,
+  "longer_degeneracy_retained": true,
+  "missing_duplicate_changed_and_short_unique_mappings_rejected": true,
+  "source_hashes": {
+    "metadata/primary_diagnostic_geometry_completed_20260927.json": "d40c9adcaab3a96ffad7a94ad9bb8df8b0313ae1974d956e0758c658454b8154",
+    "metadata/geometry_completion_full_regression_v2_completed_20260929.json": "89158983e2fb94cc58f07bccd425df1bf3f18ecd1a14aab2077394dff1145666",
+    "metadata/geometry_completion_full_regression_plan_20260929_v2.json": "3002624548750bf7b41eb3e2c507b47f8d965b484f5ff7fdd815e15c6be479f7",
+    "scripts/record_primary_diagnostic_geometry_completion_v2.py": "ca3f3a18d264caaaf788a8fc4ab1a6f1051ae7fd5eb6a7895cf47daa278803f0",
+    "scripts/test_geometry_completion_reconciliation.py": "b638329bffa151fe84737b281ca129854f79c3c19fd7b73b75cff1df2a336c8c"
+  },
+  "superseded_attempt": {
+    "plan": "metadata/geometry_completion_full_regression_plan_20260929.json",
+    "reason": "First historical launch records lacked an explicit plan field; revised collector checks the unique recorded --plan argv and digest, rejecting conflicting explicit fields. First plan preserved and superseded by v2."
+  },
+  "scope": "Full historical scope regression, plus synthetic longer numerical degeneracy and rejection fixtures. Does not establish completion of the expanded cohort."
+}

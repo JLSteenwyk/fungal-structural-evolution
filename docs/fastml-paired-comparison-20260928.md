@@ -223,6 +223,22 @@ These distinctions matter: zero spread for a single retained start is automatic.
 No best-start fit reported a model-iteration-limit message, but 74 groups still
 have likelihood spread above tolerance across all starts. The completion handoff
 checked every source hash, group identity and likelihood range against the
-previous audit; posterior ranges have not been independently recomputed by a
-second implementation. These are sensitivity diagnostics, not calibrated
-ancestral uncertainty or qualification of the indel model.
+previous audit. A subsequent [separate full readback](../metadata/fastml_start_posterior_sensitivity_completed_readback_20260929.json)
+recomputed every saved posterior range, count, parameter range and start choice
+using scalar keyed minima/maxima instead of the producer's stacked arrays.
+It checked all 40,291,700 rows from 765 files, including exact position/node/state
+grids, raw probability bounds under the source tolerance, and tree identities.
+The checker exited successfully; its [completion handoff](../metadata/fastml_start_posterior_sensitivity_readback_handoff_20260929.json)
+binds all four successful terminal units and unchanged source hashes. This does
+not rerun optimization or pruning; tree parsing and native source files are shared.
+These are sensitivity diagnostics, not calibrated ancestral uncertainty or
+qualification of the indel model.
+
+![Optimizer-start posterior sensitivity across all 153 nonempty inputs](figures/fastml-start-sensitivity-20260929/fastml_start_sensitivity.png)
+
+The figure distinguishes the 29 inputs with only one near-best start, for which
+zero spread is automatic, from the 124 with two to five retained starts. Both
+axes in the right panel use percentage points. The [PDF](figures/fastml-start-sensitivity-20260929/fastml_start_sensitivity.pdf)
+and [figure review](../metadata/fastml_start_sensitivity_figure_review_20260929.json)
+preserve source and artifact hashes. All 153 plotted rows match the source table;
+the PNG was visually inspected for labels, clipping and the uncertainty caption.

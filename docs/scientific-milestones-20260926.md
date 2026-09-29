@@ -379,3 +379,21 @@ launch identities and complete scope are recorded in the
 [expanded duplication workflow](duplication-sampling-coverage-20260926.md).
 These are computation and validation checkpoints; none of the eight required
 evolutionary aims has reached scientific completion.
+
+September 29 ancestral checkpoint: a separate scalar implementation checked
+all 40,291,700 posterior rows across 765 fitted starts and reproduced every
+summary for the 153 nonempty inputs. The producer, optimizer refinement,
+first audit and separate posterior checker all exited successfully. A source-
+checked figure distinguishes single-start zero ranges from comparisons among
+multiple near-best starts. See the [completed ancestral diagnostic](fastml-paired-comparison-20260928.md).
+This verifies saved sensitivity arithmetic, without rerunning pruning or
+optimization or qualifying ancestral uncertainty. Ancestral structure prediction
+and uncertainty propagation remain outstanding.
+
+The final expanded duplication geometry completion check is now also queued.
+It waits for successful full geometry production and serialized readback,
+then reconciles every successful mapping against the diagnostic table and
+analytic short census, retaining longer numerical degeneracy and all RMSD
+discrepancies. Full historical regression passed all 387,646 rows; nine
+reconciliation fixtures passed. These validation results do not establish
+completion or scientific acceptance of the expanded dataset.

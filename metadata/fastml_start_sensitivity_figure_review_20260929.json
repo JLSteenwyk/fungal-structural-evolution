@@ -1,0 +1,15 @@
+{
+  "status": "passed_full_source_and_visual_review_fastml_start_sensitivity_figure",
+  "groups_checked": 153,
+  "receipt_sha256": "69251797c61237989dd19942d9a4319873558d3e46a42cf24e43a92da8a41d5c",
+  "source_hashes": {
+    "metadata/fastml_start_posterior_sensitivity_completed_readback_20260929.json": "dd48b4f4705b89d4ed6f4c3f6dc8143c72fb538c4a031e9faf4966e003f9babd",
+    "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/start_sensitivity.jsonl": "706fd5c7fe45839afb579543ae599ebebb91994bf24443ff14abc037d12bffb7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_fastml_start_sensitivity.py": "416ad53f4e340cf2b18d4bfd6daa8188c2916d23aeeb2d6ce89ea221e4bea00e",
+    "docs/figures/fastml-start-sensitivity-20260929/receipt.json": "69251797c61237989dd19942d9a4319873558d3e46a42cf24e43a92da8a41d5c",
+    "docs/figures/fastml-start-sensitivity-20260929/fastml_start_sensitivity.png": "0a0f6d8cd7c9e3cb4edf2d5cdd6aa54db240ab603b2b95a1df42659571a8bf92",
+    "docs/figures/fastml-start-sensitivity-20260929/fastml_start_sensitivity.pdf": "39170c102416fdd4a2eeb433d67c2ada7133d34244bb003d6e8175707d1673c7"
+  },
+  "visual_review": "PNG inspected at full readable resolution: two panels, axis units, counts, legend and explanatory footer legible and unclipped; all 153 plotted rows match saved source scalars. PDF artifact checksum verified; PDF not separately rasterized.",
+  "scope": "All 153 nonempty inputs; raw probability spreads converted to percentage points. Single retained starts distinguished. No independence, confidence interval, globally converged optimizer or biologically qualified ancestral estimate inferred."
+}

@@ -593,6 +593,8 @@ flowchart LR
   S --> H
   H --> G[All aligned coordinate geometry]
   G --> R[Serialized quaternion and spectral readback]
+  R --> F[Full verified geometry completion]
+  G --> F
 ```
 
 The [completion plan](../metadata/expanded_duplication_diagnostic_completion_plan_20260929.json)
@@ -636,3 +638,30 @@ timeouts. Before launch, available memory was about 657 GiB and disk space
 about 10,755 GiB. Full source records and launch identities are versioned;
 geometry completion, independent serialized validation and scientific
 qualification remain pending.
+
+The final [geometry completion plan](../metadata/expanded_duplication_geometry_completion_plan_20260929.json)
+is now queued behind both full geometry stages. Its
+[launch](../metadata/expanded_duplication_geometry_completion_launch_20260929.json)
+and [queue check](../metadata/expanded_duplication_geometry_completion_queued_20260929.json)
+bind the exact live controller and predecessor identities. No completion result
+exists yet. After successful terminal states, it will compare every geometry
+identity, alignment length and RMSD classification with the complete diagnostic
+table and independent readback. Every one/two-residue mapping must match the
+analytic short census; longer numerical degeneracies are recorded explicitly.
+Original RMSD discrepancies remain excluded from scientific acceptance.
+
+The new collector reproduced all historical 387,646 rows, 387,319 numerically
+unique rotations, 327 short degeneracies and 27 RMSD discrepancies. Nine
+[reconciliation tests](../scripts/test_geometry_completion_reconciliation.py)
+passed, covering legitimate longer degeneracy, missing and duplicate mappings,
+altered RMSD exclusions, inconsistent short or independent-audit censuses, and
+older launch records whose plan is bound through recorded arguments. The
+[validation record](../metadata/geometry_completion_reconciliation_validation_20260929.json)
+distinguishes this completed regression from the pending expanded cohort.
+
+The final controller has one CPU, 8 GiB memory, zero swap, and a 0.01 GiB output
+allowance. Its 0.01–1 hour planning allowance applies after dependencies finish;
+it does not repeat coordinate fitting or predictions. No GPU or paid resources
+are used. Full geometry verification remains a prerequisite for input-order,
+confidence and coverage sensitivity, and biologically interpretable duplication
+tests.

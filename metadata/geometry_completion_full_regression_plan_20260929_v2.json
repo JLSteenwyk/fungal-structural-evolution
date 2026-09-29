@@ -1,0 +1,36 @@
+{
+  "geometry_plan": "metadata/primary_diagnostic_geometry_plan_20260927.json",
+  "readback_plan": "metadata/primary_diagnostic_geometry_readback_plan_20260927.json",
+  "launches": [
+    "metadata/primary_diagnostic_geometry_launch_20260927.json",
+    "metadata/primary_diagnostic_geometry_readback_launch_20260927.json"
+  ],
+  "short": "metadata/primary_alignment_short_geometry_readback_20260927.json",
+  "output": "metadata/geometry_completion_full_regression_v2_completed_20260929.json",
+  "pins": {
+    "metadata/primary_diagnostic_geometry_plan_20260927.json": "02dcf102322745d9c32a89f4f709e455bf67e458ba87483d6e85b7a9779555f3",
+    "metadata/primary_diagnostic_geometry_readback_plan_20260927.json": "6ba1af6fd1d362cde56f299e289358fcb21d1dcf6af06b93fdf7223cdb0bac28",
+    "metadata/primary_diagnostic_geometry_launch_20260927.json": "37a805e923089c2230b2d701177a976b4553b22a925c51cf5502409de8afbc68",
+    "metadata/primary_diagnostic_geometry_readback_launch_20260927.json": "1b6209cae3635fff664474dac7031a040745bb1e3870940a38e202ade15e22f4",
+    "metadata/primary_alignment_short_geometry_readback_20260927.json": "960d181de1f0cc7b54c957fd5f8527c808bb0d830394e66bdd00fc6827aad55e",
+    "metadata/primary_rmsd_diagnostic_and_short_completed_20260927.json": "7760bfc5ab86a9a38c2b771f5c983d65120f68e3ae4a461e439433cb94bd3d00",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/receipt.json": "81ad9b63a3288ba74d26e1c75da83e6e46547b7105e1c7a6e8eb982af367ee98",
+    "results/structural_comparisons/primary-diagnostic-geometry-20260927-v2/alignment_geometry.tsv": "65c72fee0e84b9c5889ee948b140bc666dae071ba57de5191ba329064c85d9fb",
+    "metadata/primary_diagnostic_geometry_readback_20260927.json": "5e101dab890b72c779ccd7c0f4c72d484149ad5d4048f44b64491f945e0a3740",
+    "scripts/record_primary_diagnostic_geometry_completion_v2.py": "ca3f3a18d264caaaf788a8fc4ab1a6f1051ae7fd5eb6a7895cf47daa278803f0",
+    "scripts/test_geometry_completion_reconciliation.py": "b638329bffa151fe84737b281ca129854f79c3c19fd7b73b75cff1df2a336c8c"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Rehash completed sources and reconcile all 387646 historical geometry and diagnostic rows; synthetic tests additionally cover legitimate longer degeneracy and altered/missing records."
+  }
+}

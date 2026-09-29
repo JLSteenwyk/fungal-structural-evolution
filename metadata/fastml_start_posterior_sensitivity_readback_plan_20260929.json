@@ -1,0 +1,27 @@
+{
+  "source_plan": "metadata/fastml_start_posterior_sensitivity_plan_20260929.json",
+  "source_launch": "metadata/fastml_start_posterior_sensitivity_launch_20260929.json",
+  "pins": {
+    "scripts/readback_fastml_start_posteriors.py": "13773cb888e9f9094371da20049027a2903576d471027e791725f5de40c7cf7d",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/fastml_start_posterior_sensitivity_plan_20260929.json": "46b8e3d087fd5bbbbb4c281ff5f96323c3d9366bdaefa589b6b789206f4c8e19",
+    "metadata/fastml_start_posterior_sensitivity_launch_20260929.json": "7abdd3eadd12dfdbe52025f3dcd76c082ae7122ba56d6ca6e3472a324c9a5d63",
+    "metadata/fastml_start_posterior_sensitivity_completed_20260929.json": "ffa054001427f499ef6cb73badbb7997124b85576caaf44d73ee4976871565a6",
+    "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/receipt.json": "84e22580e0796d6a5e3e3f47f53c4914df55951f8f313610cd9a5cde1f84f7a0"
+  },
+  "output": "metadata/fastml_start_posterior_sensitivity_completed_readback_20260929.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.05,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Re-read all 40291700 posterior rows in 765 native tables (1.45 GB), verifying source hashes before/after, node-position completeness, five-start scalar ranges and all 156 saved group summaries. Producer consumed about 4.3 CPU minutes; separate scalar accumulation can be slower. Uncalibrated planning allowance, not ETA or timeout."
+  },
+  "scope": "Full source-row and saved-summary comparison using keyed scalar extrema instead of producer array stacking. Tree parser shared; no clipping, optimizer/pruning rerun, model qualification or confidence-region interpretation."
+}

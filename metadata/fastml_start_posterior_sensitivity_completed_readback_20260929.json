@@ -1,0 +1,42 @@
+{
+  "status": "passed_full_fastml_start_posterior_sensitivity_readback",
+  "groups": 156,
+  "nonempty_groups": 153,
+  "posterior_files": 765,
+  "posterior_rows_checked": 40291700,
+  "near_best_start_counts": {
+    "5": 79,
+    "1": 29,
+    "2": 18,
+    "4": 19,
+    "3": 8
+  },
+  "raw_probability_excursions_retained": 682814,
+  "source_receipt_sha256": "84e22580e0796d6a5e3e3f47f53c4914df55951f8f313610cd9a5cde1f84f7a0",
+  "source_hashes": {
+    "metadata/fastml_start_posterior_sensitivity_readback_plan_20260929.json": "ae60cb2f46a3f71d05754f31e96ce9da1fee7b95df7a4707c19c05cfe1adef12",
+    "metadata/fastml_start_posterior_sensitivity_plan_20260929.json": "46b8e3d087fd5bbbbb4c281ff5f96323c3d9366bdaefa589b6b789206f4c8e19",
+    "metadata/fastml_start_posterior_sensitivity_launch_20260929.json": "7abdd3eadd12dfdbe52025f3dcd76c082ae7122ba56d6ca6e3472a324c9a5d63",
+    "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/receipt.json": "84e22580e0796d6a5e3e3f47f53c4914df55951f8f313610cd9a5cde1f84f7a0",
+    "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/start_sensitivity.jsonl": "706fd5c7fe45839afb579543ae599ebebb91994bf24443ff14abc037d12bffb7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_fastml_start_posteriors.py": "13773cb888e9f9094371da20049027a2903576d471027e791725f5de40c7cf7d"
+  },
+  "terminal_states": {
+    "fungal-fastml-start-posteriors-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-fastml-optimizer-refinement-20260928-v3.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-fastml-refinement-audit-20260928-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "scope": "Every raw posterior row and exact position/node grid checked. Every saved group range/count, parameter range, start choice, likelihood range and aggregate independently recomputed with scalar keyed min/max rather than array stacking/reductions. Tree parser and source files shared; no optimizer or pruning rerun. Singleton near-best spread is automatic. No global-optimum, calibrated indel model or ancestral-ensemble qualification."
+}

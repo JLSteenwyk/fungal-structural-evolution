@@ -1,0 +1,941 @@
+{
+  "status": "complete_source_checked_fastml_start_sensitivity_figure_pending_visual_review",
+  "source_hashes": {
+    "metadata/fastml_start_posterior_sensitivity_completed_readback_20260929.json": "dd48b4f4705b89d4ed6f4c3f6dc8143c72fb538c4a031e9faf4966e003f9babd",
+    "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1/start_sensitivity.jsonl": "706fd5c7fe45839afb579543ae599ebebb91994bf24443ff14abc037d12bffb7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_fastml_start_sensitivity.py": "416ad53f4e340cf2b18d4bfd6daa8188c2916d23aeeb2d6ce89ea221e4bea00e"
+  },
+  "groups": 153,
+  "near_best_start_counts": {
+    "5": 79,
+    "1": 29,
+    "2": 18,
+    "4": 19,
+    "3": 8
+  },
+  "plotted_rows": [
+    {
+      "job_id": "OG0000054-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.985134166857197e-07,
+      "near_best_maximum_internal_probability_range": 4.985134166857197e-07
+    },
+    {
+      "job_id": "OG0000054-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 8.642308420552663e-08,
+      "near_best_maximum_internal_probability_range": 8.642308420552663e-08
+    },
+    {
+      "job_id": "OG0000054-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.467019619509461e-07,
+      "near_best_maximum_internal_probability_range": 5.467019619509461e-07
+    },
+    {
+      "job_id": "OG0000054-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.7225056126927456e-08,
+      "near_best_maximum_internal_probability_range": 4.7225056126927456e-08
+    },
+    {
+      "job_id": "OG0000054-envelope-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.12550543395760724,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.326124870840774e-08,
+      "near_best_maximum_internal_probability_range": 3.326124870840774e-08
+    },
+    {
+      "job_id": "OG0000054-envelope-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.00039548359456226256,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000054-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.1686464570739444e-08,
+      "near_best_maximum_internal_probability_range": 2.1686464570739444e-08
+    },
+    {
+      "job_id": "OG0000054-whole-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.813920465891353e-07,
+      "near_best_maximum_internal_probability_range": 5.813920465891353e-07
+    },
+    {
+      "job_id": "OG0000054-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.101306221888535e-08,
+      "near_best_maximum_internal_probability_range": 5.101306221888535e-08
+    },
+    {
+      "job_id": "OG0000054-whole-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 7.312971361667087e-07,
+      "near_best_maximum_internal_probability_range": 7.312971361667087e-07
+    },
+    {
+      "job_id": "OG0000054-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.1457935401165686e-07,
+      "near_best_maximum_internal_probability_range": 1.1457935401165686e-07
+    },
+    {
+      "job_id": "OG0000095-alignment-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0017397766419364191,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.00037792730813532294,
+      "near_best_maximum_internal_probability_range": 0.00037792730813532294
+    },
+    {
+      "job_id": "OG0000095-alignment-mafft-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.002984170683366205,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-alignment-mafft-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0009115496231568709,
+      "near_best_maximum_internal_probability_range": 0.0005686761347100111
+    },
+    {
+      "job_id": "OG0000095-envelope-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.010905436527629153,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-famsa-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0004739957516682325,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0022736452080840963,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-envelope-mafft-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.001066089954118582,
+      "near_best_maximum_internal_probability_range": 4.872288458995788e-05
+    },
+    {
+      "job_id": "OG0000095-whole-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0057733984496270985,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-famsa-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.0014108970905521434,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0022783693391079662,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000095-whole-mafft-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0014595939545044012,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000107-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.00018972749049256388,
+      "near_best_maximum_internal_probability_range": 0.00018972749049256388
+    },
+    {
+      "job_id": "OG0000107-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.0010750455624408684,
+      "near_best_maximum_internal_probability_range": 0.0010750455624408684
+    },
+    {
+      "job_id": "OG0000107-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.812829459353239e-07,
+      "near_best_maximum_internal_probability_range": 2.812829459353239e-07
+    },
+    {
+      "job_id": "OG0000107-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.5134723957996883e-07,
+      "near_best_maximum_internal_probability_range": 3.5134723957996883e-07
+    },
+    {
+      "job_id": "OG0000107-envelope-famsa-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0010456577196258365,
+      "near_best_maximum_internal_probability_range": 0.00039111784951695316
+    },
+    {
+      "job_id": "OG0000107-envelope-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0007917259648678177,
+      "near_best_maximum_internal_probability_range": 0.0007917259648678177
+    },
+    {
+      "job_id": "OG0000107-envelope-mafft-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0037720003945479474,
+      "near_best_maximum_internal_probability_range": 0.0026001318842379106
+    },
+    {
+      "job_id": "OG0000107-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 9.026027025516026e-07,
+      "near_best_maximum_internal_probability_range": 9.026027025516026e-07
+    },
+    {
+      "job_id": "OG0000107-whole-famsa-terminal_gap",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.0003345860843658732,
+      "near_best_maximum_internal_probability_range": 0.00015737531480231048
+    },
+    {
+      "job_id": "OG0000107-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.9250918575908216e-07,
+      "near_best_maximum_internal_probability_range": 1.9250918575908216e-07
+    },
+    {
+      "job_id": "OG0000107-whole-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0031653404230053417,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000107-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 7.273703379606644e-07,
+      "near_best_maximum_internal_probability_range": 7.273703379606644e-07
+    },
+    {
+      "job_id": "OG0000152-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.2582251235349062e-06,
+      "near_best_maximum_internal_probability_range": 1.2582251235349062e-06
+    },
+    {
+      "job_id": "OG0000152-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.466441832224165e-07,
+      "near_best_maximum_internal_probability_range": 3.466441832224165e-07
+    },
+    {
+      "job_id": "OG0000152-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.2582251235349062e-06,
+      "near_best_maximum_internal_probability_range": 1.2582251235349062e-06
+    },
+    {
+      "job_id": "OG0000152-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.466441832224165e-07,
+      "near_best_maximum_internal_probability_range": 3.466441832224165e-07
+    },
+    {
+      "job_id": "OG0000152-envelope-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.21276440160001e-07,
+      "near_best_maximum_internal_probability_range": 3.21276440160001e-07
+    },
+    {
+      "job_id": "OG0000152-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.7293786084590117e-07,
+      "near_best_maximum_internal_probability_range": 4.7293786084590117e-07
+    },
+    {
+      "job_id": "OG0000152-envelope-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.7054883180533413e-07,
+      "near_best_maximum_internal_probability_range": 4.7054883180533413e-07
+    },
+    {
+      "job_id": "OG0000152-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.6444051237292654e-07,
+      "near_best_maximum_internal_probability_range": 2.6444051237292654e-07
+    },
+    {
+      "job_id": "OG0000152-whole-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 6.840792559914544e-07,
+      "near_best_maximum_internal_probability_range": 6.840792559914544e-07
+    },
+    {
+      "job_id": "OG0000152-whole-famsa-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.16393778411577306,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000152-whole-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.4790924939694916e-07,
+      "near_best_maximum_internal_probability_range": 1.4790924939694916e-07
+    },
+    {
+      "job_id": "OG0000152-whole-mafft-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 2.628853383035423e-07,
+      "near_best_maximum_internal_probability_range": 1.4053253261092635e-07
+    },
+    {
+      "job_id": "OG0000230-alignment-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.2043466384241182,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000230-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.4047334029321235e-07,
+      "near_best_maximum_internal_probability_range": 1.4047334029321235e-07
+    },
+    {
+      "job_id": "OG0000230-alignment-mafft-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 1.5307304941786226e-06,
+      "near_best_maximum_internal_probability_range": 1.1158499536589872e-06
+    },
+    {
+      "job_id": "OG0000230-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.6072884890270274e-07,
+      "near_best_maximum_internal_probability_range": 3.6072884890270274e-07
+    },
+    {
+      "job_id": "OG0000230-envelope-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.3375050637889637,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000230-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.641533139418172e-07,
+      "near_best_maximum_internal_probability_range": 1.641533139418172e-07
+    },
+    {
+      "job_id": "OG0000230-envelope-mafft-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.35847881785768243,
+      "near_best_maximum_internal_probability_range": 6.137798999050759e-07
+    },
+    {
+      "job_id": "OG0000230-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.394006578005815e-07,
+      "near_best_maximum_internal_probability_range": 3.394006578005815e-07
+    },
+    {
+      "job_id": "OG0000230-whole-famsa-terminal_gap",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 1.0567498652802598e-06,
+      "near_best_maximum_internal_probability_range": 4.625867923158111e-07
+    },
+    {
+      "job_id": "OG0000230-whole-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 8.421216091680783e-07,
+      "near_best_maximum_internal_probability_range": 4.56567500584093e-07
+    },
+    {
+      "job_id": "OG0000230-whole-mafft-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 6.460010668063454e-07,
+      "near_best_maximum_internal_probability_range": 4.848147591163254e-07
+    },
+    {
+      "job_id": "OG0000230-whole-mafft-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 4.242129416909268e-07,
+      "near_best_maximum_internal_probability_range": 3.7161892985082545e-07
+    },
+    {
+      "job_id": "OG0000294-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.6512556122796895e-07,
+      "near_best_maximum_internal_probability_range": 1.6512556122796895e-07
+    },
+    {
+      "job_id": "OG0000294-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.6512556122796895e-07,
+      "near_best_maximum_internal_probability_range": 1.6512556122796895e-07
+    },
+    {
+      "job_id": "OG0000294-envelope-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.550186556338988e-09,
+      "near_best_maximum_internal_probability_range": 2.550186556338988e-09
+    },
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.321497139651501e-09,
+      "near_best_maximum_internal_probability_range": 2.321497139651501e-09
+    },
+    {
+      "job_id": "OG0000294-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.321497139651501e-09,
+      "near_best_maximum_internal_probability_range": 2.321497139651501e-09
+    },
+    {
+      "job_id": "OG0000294-whole-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 9.968191649889491e-08,
+      "near_best_maximum_internal_probability_range": 9.968191649889491e-08
+    },
+    {
+      "job_id": "OG0000294-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 6.021703258252131e-08,
+      "near_best_maximum_internal_probability_range": 6.021703258252131e-08
+    },
+    {
+      "job_id": "OG0000294-whole-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 7.079550273791924e-08,
+      "near_best_maximum_internal_probability_range": 7.079550273791924e-08
+    },
+    {
+      "job_id": "OG0000294-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.3500718015757585e-08,
+      "near_best_maximum_internal_probability_range": 1.3500718015757585e-08
+    },
+    {
+      "job_id": "OG0000336-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.5341525600592876e-07,
+      "near_best_maximum_internal_probability_range": 1.5341525600592876e-07
+    },
+    {
+      "job_id": "OG0000336-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.5938724501628485e-09,
+      "near_best_maximum_internal_probability_range": 2.5938724501628485e-09
+    },
+    {
+      "job_id": "OG0000336-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.3228432893124262e-07,
+      "near_best_maximum_internal_probability_range": 2.3228432893124262e-07
+    },
+    {
+      "job_id": "OG0000336-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.0607881684165932e-08,
+      "near_best_maximum_internal_probability_range": 1.0607881684165932e-08
+    },
+    {
+      "job_id": "OG0000336-envelope-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.7456806050984994e-08,
+      "near_best_maximum_internal_probability_range": 2.7456806050984994e-08
+    },
+    {
+      "job_id": "OG0000336-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.7456806050984994e-08,
+      "near_best_maximum_internal_probability_range": 2.7456806050984994e-08
+    },
+    {
+      "job_id": "OG0000336-envelope-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.1752461337444231e-08,
+      "near_best_maximum_internal_probability_range": 1.1752461337444231e-08
+    },
+    {
+      "job_id": "OG0000336-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.1752461337444231e-08,
+      "near_best_maximum_internal_probability_range": 1.1752461337444231e-08
+    },
+    {
+      "job_id": "OG0000336-whole-famsa-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.001149719775208724,
+      "near_best_maximum_internal_probability_range": 0.0008361920910830434
+    },
+    {
+      "job_id": "OG0000336-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 6.551240194219154e-07,
+      "near_best_maximum_internal_probability_range": 6.551240194219154e-07
+    },
+    {
+      "job_id": "OG0000336-whole-mafft-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.0003963178702168779,
+      "near_best_maximum_internal_probability_range": 1.3220334716734783e-05
+    },
+    {
+      "job_id": "OG0000336-whole-mafft-terminal_unknown",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.002407214013147363,
+      "near_best_maximum_internal_probability_range": 2.9449475143716874e-05
+    },
+    {
+      "job_id": "OG0000972-alignment-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0015396690798482049,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-famsa-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0018289986748200038,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0017565880552134205,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-alignment-mafft-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.007180626630445164,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-famsa-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.003140330761333854,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-famsa-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.0018652351793920774,
+      "near_best_maximum_internal_probability_range": 0.0015885140784081542
+    },
+    {
+      "job_id": "OG0000972-envelope-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.008042178806304812,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-envelope-mafft-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.006728672296217819,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.004248620894432675,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-famsa-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0014311961119147232,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.003345975331848078,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0000972-whole-mafft-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.002796668825959192,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0010751873804966672,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-famsa-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0005745242947300389,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-mafft-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.008321167153773512,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.0003890621504625269,
+      "near_best_maximum_internal_probability_range": 0.0003890621504625269
+    },
+    {
+      "job_id": "OG0001082-envelope-famsa-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.0009180154086776693,
+      "near_best_maximum_internal_probability_range": 0.00024333228002790253
+    },
+    {
+      "job_id": "OG0001082-envelope-famsa-terminal_unknown",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.0006821351219799543,
+      "near_best_maximum_internal_probability_range": 3.4872458441359555e-05
+    },
+    {
+      "job_id": "OG0001082-envelope-mafft-terminal_gap",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.0007392259966830794,
+      "near_best_maximum_internal_probability_range": 0.00040786814197313337
+    },
+    {
+      "job_id": "OG0001082-envelope-mafft-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.000366943250250662,
+      "near_best_maximum_internal_probability_range": 0.000366943250250662
+    },
+    {
+      "job_id": "OG0001082-whole-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0008266940305774462,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-famsa-terminal_unknown",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.00111356741052826,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0057390233265747215,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001082-whole-mafft-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.000516941440555474,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001200-alignment-famsa-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0011914153469296807,
+      "near_best_maximum_internal_probability_range": 0.0004210374076922818
+    },
+    {
+      "job_id": "OG0001200-alignment-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0020607100751764973,
+      "near_best_maximum_internal_probability_range": 7.277041158831876e-05
+    },
+    {
+      "job_id": "OG0001200-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.1029653185223864e-06,
+      "near_best_maximum_internal_probability_range": 1.1029653185223864e-06
+    },
+    {
+      "job_id": "OG0001200-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.2931752413922766e-07,
+      "near_best_maximum_internal_probability_range": 3.2931752413922766e-07
+    },
+    {
+      "job_id": "OG0001200-envelope-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.0005354265804347058,
+      "near_best_maximum_internal_probability_range": 0.0005354265804347058
+    },
+    {
+      "job_id": "OG0001200-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 7.759579779831327e-07,
+      "near_best_maximum_internal_probability_range": 7.759579779831327e-07
+    },
+    {
+      "job_id": "OG0001200-envelope-mafft-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.003020532729096581,
+      "near_best_maximum_internal_probability_range": 0.00029912335707599214
+    },
+    {
+      "job_id": "OG0001200-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.663854591633541e-06,
+      "near_best_maximum_internal_probability_range": 2.663854591633541e-06
+    },
+    {
+      "job_id": "OG0001200-whole-famsa-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.00095430748586256,
+      "near_best_maximum_internal_probability_range": 0.00019677925358230208
+    },
+    {
+      "job_id": "OG0001200-whole-famsa-terminal_unknown",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0010693972176322175,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0001200-whole-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 0.00108986158326152,
+      "near_best_maximum_internal_probability_range": 0.00108986158326152
+    },
+    {
+      "job_id": "OG0001200-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.2387206515549494e-06,
+      "near_best_maximum_internal_probability_range": 3.2387206515549494e-06
+    },
+    {
+      "job_id": "OG0001203-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.690891761693905e-07,
+      "near_best_maximum_internal_probability_range": 4.690891761693905e-07
+    },
+    {
+      "job_id": "OG0001203-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.3149205080906796e-07,
+      "near_best_maximum_internal_probability_range": 3.3149205080906796e-07
+    },
+    {
+      "job_id": "OG0001203-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.8756941656004074e-07,
+      "near_best_maximum_internal_probability_range": 3.8756941656004074e-07
+    },
+    {
+      "job_id": "OG0001203-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.794195330668714e-08,
+      "near_best_maximum_internal_probability_range": 2.794195330668714e-08
+    },
+    {
+      "job_id": "OG0001203-envelope-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.1282747714724817e-06,
+      "near_best_maximum_internal_probability_range": 1.1282747714724817e-06
+    },
+    {
+      "job_id": "OG0001203-envelope-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 3.7299922162059573e-07,
+      "near_best_maximum_internal_probability_range": 3.7299922162059573e-07
+    },
+    {
+      "job_id": "OG0001203-envelope-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 4.219007820605025e-07,
+      "near_best_maximum_internal_probability_range": 4.219007820605025e-07
+    },
+    {
+      "job_id": "OG0001203-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.546288528446297e-08,
+      "near_best_maximum_internal_probability_range": 5.546288528446297e-08
+    },
+    {
+      "job_id": "OG0001203-whole-famsa-terminal_gap",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.0002036057041541195,
+      "near_best_maximum_internal_probability_range": 0.0002036057041541195
+    },
+    {
+      "job_id": "OG0001203-whole-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 0.0005698810089008743,
+      "near_best_maximum_internal_probability_range": 0.0005698810089008743
+    },
+    {
+      "job_id": "OG0001203-whole-mafft-terminal_gap",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 0.0029041966802164088,
+      "near_best_maximum_internal_probability_range": 0.0009093832032590621
+    },
+    {
+      "job_id": "OG0001203-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.8902600141812442e-06,
+      "near_best_maximum_internal_probability_range": 1.8902600141812442e-06
+    },
+    {
+      "job_id": "OG0002650-alignment-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.0007142459990484573,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.653767370938922e-07,
+      "near_best_maximum_internal_probability_range": 5.653767370938922e-07
+    },
+    {
+      "job_id": "OG0002650-alignment-mafft-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.019403040716695463,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0002650-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 5.0998693323922595e-08,
+      "near_best_maximum_internal_probability_range": 5.0998693323922595e-08
+    },
+    {
+      "job_id": "OG0002650-envelope-famsa-terminal_gap",
+      "near_best_starts": 2,
+      "all_maximum_internal_probability_range": 0.005441592383344851,
+      "near_best_maximum_internal_probability_range": 0.00048127835558631205
+    },
+    {
+      "job_id": "OG0002650-envelope-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 5.86762036514088e-07,
+      "near_best_maximum_internal_probability_range": 4.7234784794625284e-07
+    },
+    {
+      "job_id": "OG0002650-envelope-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.013769480160377434,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0002650-envelope-mafft-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 6.549812874706573e-08,
+      "near_best_maximum_internal_probability_range": 2.7569299527324675e-08
+    },
+    {
+      "job_id": "OG0002650-whole-famsa-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.005483468980958195,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.978154616222305e-06,
+      "near_best_maximum_internal_probability_range": 1.978154616222305e-06
+    },
+    {
+      "job_id": "OG0002650-whole-mafft-terminal_gap",
+      "near_best_starts": 1,
+      "all_maximum_internal_probability_range": 0.35311209423664863,
+      "near_best_maximum_internal_probability_range": 0.0
+    },
+    {
+      "job_id": "OG0002650-whole-mafft-terminal_unknown",
+      "near_best_starts": 3,
+      "all_maximum_internal_probability_range": 1.2177779339206385e-05,
+      "near_best_maximum_internal_probability_range": 4.083016509892623e-06
+    },
+    {
+      "job_id": "OG0002812-alignment-famsa-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.530800981919267e-06,
+      "near_best_maximum_internal_probability_range": 1.530800981919267e-06
+    },
+    {
+      "job_id": "OG0002812-alignment-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 7.268818724703863e-08,
+      "near_best_maximum_internal_probability_range": 7.268818724703863e-08
+    },
+    {
+      "job_id": "OG0002812-alignment-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 9.323261659921478e-07,
+      "near_best_maximum_internal_probability_range": 9.323261659921478e-07
+    },
+    {
+      "job_id": "OG0002812-alignment-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.4238277140931075e-07,
+      "near_best_maximum_internal_probability_range": 2.4238277140931075e-07
+    },
+    {
+      "job_id": "OG0002812-envelope-famsa-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 1.9954619090434278e-07,
+      "near_best_maximum_internal_probability_range": 1.8193585138437385e-07
+    },
+    {
+      "job_id": "OG0002812-envelope-famsa-terminal_unknown",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 2.4090650130315083e-07,
+      "near_best_maximum_internal_probability_range": 7.05365670317093e-08
+    },
+    {
+      "job_id": "OG0002812-envelope-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.588996052515057e-07,
+      "near_best_maximum_internal_probability_range": 1.588996052515057e-07
+    },
+    {
+      "job_id": "OG0002812-envelope-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.7891045040195905e-07,
+      "near_best_maximum_internal_probability_range": 2.7891045040195905e-07
+    },
+    {
+      "job_id": "OG0002812-whole-famsa-terminal_gap",
+      "near_best_starts": 4,
+      "all_maximum_internal_probability_range": 1.0911495261500814e-06,
+      "near_best_maximum_internal_probability_range": 2.523926751207828e-07
+    },
+    {
+      "job_id": "OG0002812-whole-famsa-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.5237631167952514e-07,
+      "near_best_maximum_internal_probability_range": 1.5237631167952514e-07
+    },
+    {
+      "job_id": "OG0002812-whole-mafft-terminal_gap",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 1.171929804422156e-06,
+      "near_best_maximum_internal_probability_range": 1.171929804422156e-06
+    },
+    {
+      "job_id": "OG0002812-whole-mafft-terminal_unknown",
+      "near_best_starts": 5,
+      "all_maximum_internal_probability_range": 2.2030135971018439e-07,
+      "near_best_maximum_internal_probability_range": 2.2030135971018439e-07
+    }
+  ],
+  "artifacts": {
+    "fastml_start_sensitivity.png": "0a0f6d8cd7c9e3cb4edf2d5cdd6aa54db240ab603b2b95a1df42659571a8bf92",
+    "fastml_start_sensitivity.pdf": "39170c102416fdd4a2eeb433d67c2ada7133d34244bb003d6e8175707d1673c7"
+  },
+  "scope": "All 153 nonempty inputs; raw probability spreads converted to percentage points. Single retained starts distinguished. No independence, confidence interval, globally converged optimizer or biologically qualified ancestral estimate inferred."
+}
