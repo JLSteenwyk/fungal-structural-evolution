@@ -187,3 +187,27 @@ The resumed producer identity is recorded in
 The audit's new plan binds that identity. The recovery record is
 `metadata/fastml_refinement_sigterm_recovery_20260928.json`.
 The full-grid audit and optimizer qualification remain pending.
+
+
+### Full refinement completion and posterior sensitivity (September 29)
+
+The v3 refinement and v2 full-output audit above both exited successfully. All
+780 dispositions are accounted for: 765 nonempty fits and 15 empty cases, across
+156 input groups. The 153 nonempty groups each have five completed starts. Best
+likelihoods are no worse than the previous best within the checked tolerance;
+79 groups have all five likelihoods within 1e−5 and 74 do not. These counts are
+bound by the [completed audit](../metadata/full_fastml_refinement_audit_completed_20260929.json).
+They do not qualify optimization, calibrated ancestral uncertainty or the indel
+model. The audit retained native-rate replay scalars without recomputing them.
+
+A [full posterior sensitivity run](../metadata/fastml_start_posterior_sensitivity_plan_20260929.json)
+is now reading all 40,291,700 native posterior rows (about 1.45 GB) across the
+765 completed fits. It checks exact position/node/state identities and separately
+summarizes internal-node probability ranges across all starts and across starts
+within 1e−5 of the best likelihood. Parameter ranges and iteration-limit flags
+remain explicit. The near-best tolerance is descriptive, not a confidence region;
+a single near-best start yields zero range without evidence of stability. Raw
+roundoff excursions are retained without clipping. One CPU and an 8 GiB memory
+cap are allocated, no swap/GPU/paid resources, with an uncalibrated 0.01–2 hour
+planning allowance. The [launch record](../metadata/fastml_start_posterior_sensitivity_launch_20260929.json)
+binds the exact process and plan. Full results remain pending.

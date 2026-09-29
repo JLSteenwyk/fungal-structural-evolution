@@ -1,0 +1,35 @@
+{
+  "status": "full_refinement_output_readback_and_start_comparison_complete",
+  "plan_sha256": "9b99155fb4cba26779bf5f43193f8a998f144f65040115192b817e9b03de830b",
+  "source_receipt_sha256": "caef4fa79759fdd4e5993476210be1c18afeb6d6f68e5ae24f4a1822d955e1b8",
+  "dispositions": 780,
+  "input_groups": 156,
+  "status_counts": {
+    "refined_native_settings_and_replay_checked_requires_optimization_review": 765,
+    "no_coded_characters": 15
+  },
+  "group_status_counts": {
+    "all_starts_accounted_requires_scientific_review": 153,
+    "no_coded_characters": 3
+  },
+  "all_start_objectives_within_descriptive_tolerance": 79,
+  "best_worse_than_previous": 0,
+  "scope": "All780 expected starts/empty cases, source attempts, effective controls, fixed trees and reported parameters checked; native-rate replay scalars retained, not recomputed here. Between-start agreement is descriptive, not a global optimum or posterior/model-adequacy certificate.",
+  "receipt": "results/ancestral/full-fastml-refinement-audit-20260928-v2/receipt.json",
+  "receipt_sha256": "f99e5346c71b5c0337ed0956e2e0d2a3fd87f85955db3a70f14dc9c538a62bbc",
+  "artifact_hashes": {
+    "five_start_comparison.tsv": "176051778a00f1c5aea4c6ce3a2cc95581a2052206462de7d5b08e3ab9d627ed"
+  },
+  "terminal_states": {
+    "fungal-fastml-optimizer-refinement-20260928-v3.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-full-fastml-refinement-audit-20260928-v2.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  }
+}

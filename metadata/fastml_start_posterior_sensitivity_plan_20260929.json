@@ -1,0 +1,34 @@
+{
+  "producer": "results/ancestral/full-fastml-optimizer-refinement-20260928-v3",
+  "audit": "results/ancestral/full-fastml-refinement-audit-20260928-v2",
+  "completed_launches": [
+    "metadata/fastml_optimizer_refinement_resumed_launch_20260928_v3.json",
+    "metadata/full_fastml_refinement_audit_launch_20260928_v2.json"
+  ],
+  "near_best_log_likelihood_tolerance": 1e-05,
+  "output": "results/ancestral/fastml-start-posterior-sensitivity-20260929-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "posterior_rows_to_read": 40291700,
+    "posterior_source_bytes": 1451769414,
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Read each completed posterior table once and compare five starts by exact position/node/state identity; no fitting or native optimization. Planning duration is uncalibrated."
+  },
+  "pins": {
+    "metadata/fastml_optimizer_refinement_resumed_launch_20260928_v3.json": "986eb4afa8d9d14693abcea062714ec0035d82245adaf0a11b4af00bd31e55b9",
+    "metadata/full_fastml_refinement_audit_launch_20260928_v2.json": "19af9a7c30f475e9e1255efecd86817ebb39864a1af55868b639249c2fe0ad59",
+    "results/ancestral/full-fastml-optimizer-refinement-20260928-v3/receipt.json": "caef4fa79759fdd4e5993476210be1c18afeb6d6f68e5ae24f4a1822d955e1b8",
+    "results/ancestral/full-fastml-refinement-audit-20260928-v2/receipt.json": "f99e5346c71b5c0337ed0956e2e0d2a3fd87f85955db3a70f14dc9c538a62bbc",
+    "scripts/summarize_fastml_start_posteriors.py": "017ab4216637d8d03ad3f0fd016cbfad04d09e5bde928d2dd222af53141d22f8",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/full_fastml_refinement_audit_plan_20260928_v2.json": "9b99155fb4cba26779bf5f43193f8a998f144f65040115192b817e9b03de830b"
+  }
+}
