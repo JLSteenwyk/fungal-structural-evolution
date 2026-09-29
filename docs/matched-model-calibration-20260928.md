@@ -1070,3 +1070,31 @@ Resource allowance: one CPU, 4 GiB RAM, no GPU or paid infrastructure,
 1 GiB output, and 0.01–1 active hour for reading 144,040 rows, computing
 35 descriptive range rows and checking complete serialized tables. This stage
 does not refit models or calibrate fungal hypothesis tests.
+
+### Full residual audit and descriptive summary completed
+
+The numerical replay finished successfully at 20:40 EDT on September 28,
+covering all 28,808 inputs and 144,040 selected fits. All fits retain the
+descriptive-diagnostic disposition. Terminal success, the receipt and its
+checksum are recorded in
+`metadata/selected_matched_residual_audit_completed_20260928.json`.
+This supersedes the pending status above. The replay uses the same evaluator
+as production; separate dense fixtures remain the independent numerical check.
+
+The prepared summary then completed successfully in approximately two seconds.
+All original diagnostic fields were checked after serialization, all 144,040
+identities, selections and record counts matched the selected-fit export,
+all 288,080 tail fractions were checked, and all 245 quantiles in the 35
+range rows were independently recomputed using sorted linear interpolation.
+Evidence is in `metadata/selected_matched_residual_summary_completed_20260928.json`;
+tables are under
+`results/model_validation/selected-matched-residual-summary-20260928-v1`.
+
+Across the five trees, median fourth raw moments range from 5.8283 to 5.8295,
+while median second raw moments range from 1.0069 to 1.0071. The median
+fraction with absolute standardized residual greater than three is about
+1.33%. These descriptive patterns motivate fitted-model reference simulations
+and examination of covariate-dependent spread and tails. Overlapping fits
+are not independent replicates, and the synthetic reference designs do not
+provide transferable fungal-data thresholds. Neither the replay nor these
+summaries qualifies Gaussian adequacy, confidence intervals or biological tests.

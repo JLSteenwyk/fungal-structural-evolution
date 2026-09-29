@@ -1,0 +1,52 @@
+{
+  "status": "complete_descriptive_summary_with_full_table_readback",
+  "receipt_path": "results/model_validation/selected-matched-residual-summary-20260928-v1/receipt.json",
+  "receipt_sha256": "453f90882fd16fe70d95c9ee7e93b99319ab740625e3bc4273639548e14c0502",
+  "receipt": {
+    "status": "complete_descriptive_audited_residual_grid_summary",
+    "fits": 144040,
+    "inputs": 28808,
+    "trees": 5,
+    "summary_rows": 35,
+    "source_bindings": {
+      "metadata/selected_matched_residual_audit_plan_20260928.json": "ba4994409dcafd5495b3c35a1bdf5c74e9c3e9370cd5f2ecec057463bd4429b8",
+      "metadata/selected_matched_residual_audit_launch_20260928.json": "9ff8657ec27d60c042b3bc6ca5c63aa3cfc4ddb0ce290cb1c7969c24fffc0150",
+      "results/model_validation/selected-matched-residual-replay-20260928-v1/receipt.json": "9a503a8ef3a17d4533b9bde892580bbdcdf0c4757fface64294d88ecfc3ae5df",
+      "metadata/selected_matched_residuals_plan_20260928.json": "a50be7e9ebf21a3d8828a9cc65edd368837027b53828ef30eeb68ca6091e2c64",
+      "metadata/selected_matched_residuals_launch_20260928.json": "4e09dd7ce48d86ba523d6d5d198c97667ac97b1bb947ed8e50c4515967caa1c7",
+      "scripts/audit_selected_matched_residuals.py": "020e3055b9f7a75cb9230d08ac01a3382215b2f4f502af01d998751a0f1476ae",
+      "scripts/run_selected_matched_residuals.py": "84dc6f46f7ae331cfa50313ae48a923b8d97a9d5304f1ffb130b1c17e9bac416",
+      "scripts/evaluate_selected_matched_residuals.py": "cad310824f56da6011d6dc91d9410ddadf15a7da3fa17222d967fb2ac640237d",
+      "scripts/matched_marginal_residual_diagnostics.py": "1ea08d9902347277114ed555dc24125afd86155de7329b9fb6ac4cda05d79223",
+      "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+      "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+      "metadata/selected_matched_residual_audit_checks_20260928.json": "ad6702a36406323bf717d421b34d21f8bb6b5525161f54be25d365a98d3b5299",
+      "results/model_validation/selected-matched-residual-replay-20260928-v1/residual_fit_summaries.parquet": "98d9be29eb409f9a13add2112ae5fbb5f49432117b0cbfbe053efb594a22d4d3"
+    },
+    "script_sha256": "b41325322f4d874737e6ecf14e7f74e181dd0d76419c377dd6047886288ae1a0",
+    "audit_terminal_state": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "artifacts": {
+      "status_counts.tsv": "6ff43f74929b6d6ad4f96a3f5853c3e88fc8bc15d7d6bc510a8e6676021ff6d9",
+      "all_fit_diagnostics.parquet": "63872c97156ec5a23063016552b8fdc66dce8aad62c5a445810c81ade9a423a1",
+      "descriptive_ranges.tsv": "9272356102067ad5e3e4a56a75342b7120a1858d91234d67e3774d4ab1efd8b5"
+    },
+    "scope": "Equal-weight per-fit descriptive ranges, with all dispositions retained. Overlapping fits are not independent replicates. Ranges are not confidence intervals, calibrated adequacy thresholds, or evidence of biological effects."
+  },
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "readback": {
+    "all_original_fit_fields_retained": 144040,
+    "selected_identity_records_selection_checked": 144040,
+    "tail_fractions_checked": 288080,
+    "range_rows_checked": 35,
+    "quantiles_checked_by_sorted_linear_interpolation": 245
+  },
+  "scope": "Descriptive overlapping-fit summaries; no calibrated adequacy or biological inference."
+}

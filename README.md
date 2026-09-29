@@ -102,10 +102,14 @@ shows that weighting can reverse the descriptive difference in some settings.
 [Taxon and reuse inputs](docs/selected-taxon-inputs-20260927.md) preserve the
 dependence information used by the [full comparative-model run](docs/full-matched-working-models-20260927.md).
 Its verified inventory contains 28,808 unique record inputs and 144,040 tree
-fits. Production, output checks and analytic-gradient readback completed;
-658 unique fits remain flagged for review. A separate [analytic refinement](docs/matched-reml-analytic-refinement-20260928.md) is running across all 658 fits. The full export retains all
-414,720 setting/tree rows. Unresolved-fit refinement and inferential calibration
-remain pending; these estimates are not final adjusted effects. See the
+fits. Production, output checks and analytic-gradient readback completed.
+The [analytic refinement](docs/matched-reml-analytic-refinement-20260928.md)
+resolved the recorded numerical flags for all 658 targeted fits; the audited
+selected export retains all 414,720 setting/tree rows. Complete residual replay
+also passed for all 144,040 selected fits, and descriptive summaries are
+available in the [calibration record](docs/matched-model-calibration-20260928.md).
+Model adequacy and inferential calibration remain pending; these estimates
+are not final adjusted effects. Numerical checks do not prove global optimality. See the
 [restored-access checkpoint](docs/restored-access-checkpoint-20260928.md).
 
 The [ordinary-ML nonlinear comparison](docs/matched-ordinary-likelihood-20260927.md)

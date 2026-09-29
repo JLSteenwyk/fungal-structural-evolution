@@ -1,0 +1,24 @@
+{
+  "status": "complete_full_residual_diagnostic_replay",
+  "receipt_path": "results/model_validation/selected-matched-residual-replay-20260928-v1/receipt.json",
+  "receipt_sha256": "9a503a8ef3a17d4533b9bde892580bbdcdf0c4757fface64294d88ecfc3ae5df",
+  "receipt": {
+    "status": "complete_all_selected_residual_diagnostic_replays",
+    "plan_sha256": "ba4994409dcafd5495b3c35a1bdf5c74e9c3e9370cd5f2ecec057463bd4429b8",
+    "producer_receipt_sha256": "e291e1f39d9a7837fb2d016c74b0a12d236cfa9b5c4fd35cb9af854953c52c73",
+    "inputs": 28808,
+    "fits": 144040,
+    "status_counts": {
+      "descriptive_marginal_residual_diagnostics": 144040
+    },
+    "artifacts": {
+      "residual_fit_summaries.parquet": "98d9be29eb409f9a13add2112ae5fbb5f49432117b0cbfbe053efb594a22d4d3"
+    },
+    "scope": "All serialized residual summaries, quantiles and bins recomputed with the same numerical evaluator; all dispositions retained. Dense fixtures provide a separate numerical oracle. This is not independent statistical model validation or a calibrated adequacy test."
+  },
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  }
+}
