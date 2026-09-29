@@ -1,0 +1,18 @@
+{
+  "status": "completed_exact_input_comparison_artifacts_and_universe_checked",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt": "results/structural_comparisons/duplication-exact-input-comparison-20260929-v1/receipt.json",
+  "receipt_sha256": "71870d1c9c6f33c3af8aa9ce46b307ac5f40f14b4b574b00739eb9d2a3016748",
+  "plan_sha256": "fa1155bfb27fa16413fd372df80c819afac4cce7925575d3d96c1e4323366375",
+  "pair_masks": 269624,
+  "counts": {
+    "new_pair_requires_alignment_or_input_disposition": 63226,
+    "exact_ready_inputs_pending_native_settings_and_result_checks": 193821,
+    "exact_unavailable_inputs_pending_prior_disposition_check": 12577
+  },
+  "scope": "Verified terminal success, source pins, receipt and table hashes, full pair/mask universe and reported counts. This does not independently repeat every input-signature comparison or qualify old native results for reuse. Expanded production computes fresh results."
+}

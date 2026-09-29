@@ -552,3 +552,13 @@ analytic checks of short mappings and serialized numeric verification remain
 required after this stage. The
 [launch record](../metadata/expanded_duplication_rmsd_diagnostic_launch_20260929.json)
 binds its process identity and plan hash.
+
+The old/new input comparison subsequently completed all 269,624 pair/mask
+combinations and rehashed 933,679 ready PDB files across the two inventories.
+It reports 63,226 new combinations, 193,821 combinations with exactly matching
+ready inputs and 12,577 with exactly matching unavailable inputs. The
+[completion record](../metadata/duplication_exact_input_comparison_completed_20260929.json)
+checks successful terminal status, source pins, output hashes, complete
+pair/mask membership and aggregate counts. It does not independently repeat
+all signature comparisons or authorize native-result reuse. The expanded
+alignment run continues to compute fresh results for every ready input pair.
