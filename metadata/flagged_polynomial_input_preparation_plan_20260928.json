@@ -1,0 +1,21 @@
+{
+  "script": "scripts/prepare_flagged_polynomial_inputs.py",
+  "script_sha256": "4de01f3012939975db6a375c6ee4996168b7c69214cc387f17f1c9636de4ef1a",
+  "census_receipt_sha256": "3834f480568a2fb9ab8b90c12af278a6d00de3125581db5826116ec7f071d1b6",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.02,
+      2
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "expected_inputs": 449,
+  "expected_tree_fits": 601,
+  "expected_record_occurrences": 1081570,
+  "scope": "Reconstruct original byte-identical inputs from audited source partitions; no new model fitting."
+}

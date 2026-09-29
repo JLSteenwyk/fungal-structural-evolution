@@ -225,3 +225,16 @@ absolute error 2.843e-14; four invalid starting vectors were rejected. Evidence:
 has been launched. Full-grid audit, exact input reconstruction, resource
 estimation and independent refinement-output checks are still needed; the
 synthetic tests do not resolve any of the 601 observed production flags.
+
+Exact input reconstruction for that frozen snapshot is now running separately:
+`scripts/prepare_flagged_polynomial_inputs.py`. The 601 tree fits correspond
+to 449 unique inputs across 25 partitions and 1,081,570 record occurrences.
+Each reconstruction must match the original audited recipe's numerical-byte
+and ordered-identity hashes. Exported NPZ arrays contain the response/design
+matrix, background/family codes, species-factor rows and row identities, and
+are read back in full. Resource limits are one CPU, 16 GiB RAM, no swap and a
+2 GiB output allowance; planned runtime is 0.02–2 hours. Plan and exact launch
+records use `metadata/flagged_polynomial_input_preparation_*_20260928.json`.
+This prepares a frozen subset for future review, not a replacement full-grid
+audit. It launches no model fits, changes no source outputs, and still requires
+independent input validation before refinement.
