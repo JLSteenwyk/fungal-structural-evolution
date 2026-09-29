@@ -588,3 +588,26 @@ Script: `scripts/prepare_whole_protein_covariance_index.py`; evidence:
 `metadata/whole_protein_covariance_index_completed_20260928.json`.
 The index is available for later input inventory, but fitting remains gated on
 resolution of the summary audit and completion of design checks.
+
+## Additional compensated-sum check of the failed setting
+
+The diagnostic replay passed the original failure point and reached 90/96
+settings without recurrence. A separate checker now evaluates all 432 strata,
+12 metrics, and three weighting schemes in the historically discrepant setting
+using explicit `math.fsum` at each aggregation level. It checks the existing
+tolerances without modifying source data or replacing the original failure.
+This check avoids both pandas and SQL mean implementations; completion must be
+established from its terminal state and output receipt. It cannot explain the
+historical mismatch by itself. Dependent design jobs remain stopped.
+
+Script: `scripts/check_whole_protein_failed_setting_fsum.py`; resource plan and
+launch: `metadata/whole_protein_failed_setting_fsum_plan_20260928.json` and
+`metadata/whole_protein_failed_setting_fsum_launch_20260928.json`.
+
+At 23:24:59 EDT the full diagnostic replay terminated successfully (exit 0).
+All 96 settings, 41,472 summary rows, 2,816,680 partition rows, and 1,492,992
+weighted-mean cells passed unchanged checks. Source receipt and checker hashes
+were rechecked against the proof. Completion evidence:
+`metadata/whole_protein_record_diagnostic_replay_completed_20260928.json`.
+The historical cause remains unresolved; the separate compensated-sum check
+is still running and the downstream gates have not been changed.

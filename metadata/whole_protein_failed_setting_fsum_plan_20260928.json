@@ -1,0 +1,17 @@
+{
+  "script": "scripts/check_whole_protein_failed_setting_fsum.py",
+  "script_sha256": "3d09672f52dffe5f2d435b5ba1d9db398b81fbcb62c5b0c3694beb9541163000",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Independent compensated sums for all summaries in original failed setting; preserve historical failure and unchanged tolerance."
+}

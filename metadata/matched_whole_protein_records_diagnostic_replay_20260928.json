@@ -1,0 +1,15 @@
+{
+  "status": "passed_full_matched_whole_protein_record_diagnostic_replay",
+  "source_receipt_sha256": "ce013343270a97343faa15cc4df57497dfe9086d023a69c3d04155741224c502",
+  "checker_sha256": "1804dbc3f3d090c3503f262d168e35ac2a43da1367c70f21f9ece9a60a087552",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "settings": 96,
+  "summary_rows": 41472,
+  "partition_rows_checked": 2816680,
+  "weighted_mean_cells_checked": 1492992,
+  "scope": "All96 pair partitions reconstructed from source contrasts and flags; all41472 strata rejoined to original selections; all counts, positive-log record/family/taxon denominators, three weighting schemes, means and empty cells independently recomputed with pandas rather than producer SQL. Descriptive diagnostics and model inputs only; no effect inference."
+}
