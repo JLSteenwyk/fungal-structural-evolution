@@ -940,3 +940,97 @@ and [length diagnostic plan](../metadata/baliphy_candidate_length_diagnostic_pla
 define the current execution, while the
 [prior audit](../metadata/baliphy_prior_definition_audit_20260927.json) binds
 the distribution definitions to installed source files.
+
+## Whole-protein sequence–structure contrasts (September 29)
+
+This analysis extends the matched domain workflow to whole-protein structural
+comparisons. Input construction and descriptive summaries are complete; model
+design verification and the exact-input inventory are in progress. Whole-protein
+effect fitting, uncertainty calibration and biological interpretation have not
+been completed. These inputs use the original matching snapshot and must not
+be presented as comparisons across every model in the expanded September 28
+atlas.
+
+We retained the original 2,786,912 target/control selections across 432
+guide, annotation-policy and matching-scenario strata. Their 52,675 distinct
+target/control pairs were linked to canonical model/version identities and
+audited structural measurements. We carried full-protein and pLDDT≥70 masks
+and both alignment input orders for each member of the contrast, yielding
+421,400 pair/mask/order rows. Input-order alternatives and repeated selections
+are sensitivity settings, not independent biological replicates. Identical-model
+cases remained explicitly unmeasured rather than receiving an assumed zero
+structural distance. Missing measurements and degenerate superpositions
+remained explicit exclusions.
+
+Structural eligibility was evaluated at minimum aligned lengths of 30 or 50
+residues and minimum coverage of 0.5, 0.7 or 0.9 in both original proteins.
+Coverage denominators were the full, original protein lengths, including for
+confidence-masked comparisons. The screen required usable measurements in both
+alignment orders. We retained both mask-specific cohorts and the intersection
+passing both masks, without rematching after filtering. The resulting grid
+comprised 96 settings: two masks, two cohort definitions, six screens, and four
+target/background order combinations. All screens were retained rather than
+choosing one from observed structural outcomes. Attrition and post-screen
+balance were evaluated relative to the original matching records; stricter
+coverage did not automatically imply better covariate balance.
+
+For each retained record, the RMSD response is target RMSD minus background
+RMSD. The second response is the difference in divergence defined as one minus
+the mean of the two endpoint-normalized native TM scores. Equivalently, it is
+the background mean TM score minus the target mean TM score. These responses
+compare separately fitted structural cores; they do not guarantee identical
+homologous residue subsets. TM-score divergence is a structural-similarity
+summary, not physical displacement. Whole-protein changes can also reflect
+domain arrangement and therefore require comparison with the domain analyses.
+
+Sequence adjustment uses the separately retained target and background
+gene-tree distances, t and b. The five working fixed-effect designs contain
+linear, quadratic or cubic differences of powers (t^k − b^k for k=1,…,d),
+the log-distance difference log(t) − log(b), or the aligned exact
+sequence-identity difference. The polynomial designs do not use powers of
+(t−b). Log-distance designs require both distances to be positive; zero-distance
+records are excluded with explicit denominators and no pseudocount. Gene-tree
+distances are relative sequence divergence, not dated rates. Each design also
+includes target-minus-background minimum original-protein coverage, the log
+aligned-length ratio, and the difference in jointly high-confidence residue
+fractions.
+
+Before fitting, each of the 207,360 design/stratum combinations is assessed for
+constant columns, nonzero constants, numerical rank, residual degrees of freedom,
+conditioning, marginal support for zero differences, and reuse of backgrounds.
+Rank diagnostics use centered and population-standardized varying columns,
+with SVD cross-checked against pivoted QR. This centering belongs to rank
+diagnostics; it does not redefine the zero-difference reference for subsequent
+fitting. Marginal support is not joint convex-hull support. The completed
+producer reported full rank and positive residual degrees of freedom in every
+design; independent numerical readback is still required before acceptance.
+
+Descriptive summaries give record-weighted means, means with equal weight per
+family, and means with equal weight per focal taxon. Positive-distance record,
+family and taxon denominators are recorded separately for log contrasts. These
+three weighting schemes are descriptive summaries and must not be conflated
+with a fitted mixed-model weighting rule. Independent reconstruction passed
+all 96 settings and 1,492,992 weighted-mean cells. A historical audit mismatch
+did not recur in the full replay; a separate compensated-sum check passed all
+15,552 cells in the affected setting. The original failure and unresolved cause
+remain documented; neither input data nor acceptance tolerances were changed.
+
+For planned working models, all 52,675 pairs are bound to the shared-entity
+family components and five species-contrast covariance factors defined above.
+The focal-minus-background-endpoint contrast uses the same W construction,
+including combined weights when taxa coincide. These are nuisance covariance
+assumptions, not estimates of a structural evolutionary process. The input
+inventory retains all 414,720 design/outcome settings and permits reuse only
+when ordered pair identities and numerical input bytes agree exactly, retaining
+column/outcome and covariance definitions. Signed zero is normalized; no
+approximate merging or record subsampling is used. Five tree alternatives
+remain separate. Completed fitting, covariance adequacy, joint support,
+prediction-source controls, uncertainty calibration and multiplicity treatment
+are still needed before interpreting excess structural change conditional on
+sequence divergence.
+
+Scripts, source bindings, numerical definitions and validation receipts are
+linked in [whole-protein matching and validation](duplication-control-balance-20260927.md).
+The [design-producer completion record](../metadata/whole_protein_model_designs_v2_producer_completed_20260929.json)
+and [input-inventory plan](../metadata/whole_protein_model_input_inventory_plan_20260928.json)
+distinguish completed preparation from pending model inference.
