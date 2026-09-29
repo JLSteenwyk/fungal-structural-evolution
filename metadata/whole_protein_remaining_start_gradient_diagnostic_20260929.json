@@ -1,0 +1,107 @@
+{
+  "status": "completed_unresolved_whole_protein_start_stationarity_diagnostic",
+  "fit_input_id": "095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc",
+  "tree": "profile_guide",
+  "source_hashes": {
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc-profile_guide.json": "015920abca29ca43edabce6186ebd9210f7edbd58a890c42a6eaf4c8c1d7d008",
+    "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/09/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc.npz": "e0838a8e3e1468ccab11a11ec9bd286a4be1d436869a56d7d8de463621dda61a",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/profile_guide.npz": "2f89ee747c312612f0a5882012b81b4b6194cc54fc9d748e3d15f414b2566868",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5"
+  },
+  "starts": [
+    {
+      "start": "0.05",
+      "theta": [
+        0.7168607143843717,
+        0.011877735366214537,
+        0.010937733121352914
+      ],
+      "objective": 10505.612193145877,
+      "objective_above_best": -1.8189894035458565e-12,
+      "analytic_gradient": [
+        -9.293547026127319e-08,
+        -2.157650302932637e-07,
+        6.495198885369904e-07
+      ],
+      "projected_gradient": [
+        -9.293547026127319e-08,
+        -2.157650302932637e-07,
+        6.495198885369904e-07
+      ],
+      "maximum_absolute_projected_gradient": 6.495198885369904e-07,
+      "reported_success": true,
+      "reported_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "start": "1.0",
+      "theta": [
+        0.7180760274404634,
+        0.0,
+        0.08536913104578937
+      ],
+      "objective": 10523.0247795033,
+      "objective_above_best": 17.412586357420878,
+      "analytic_gradient": [
+        -26.08352608973562,
+        -221.6410414255381,
+        219.39968876818065
+      ],
+      "projected_gradient": [
+        -26.08352608973562,
+        -221.6410414255381,
+        219.39968876818065
+      ],
+      "maximum_absolute_projected_gradient": 221.6410414255381,
+      "reported_success": true,
+      "reported_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "start": "20.0",
+      "theta": [
+        0.7168607151204065,
+        0.01187773485125782,
+        0.010937732996161388
+      ],
+      "objective": 10505.612193145877,
+      "objective_above_best": -1.8189894035458565e-12,
+      "analytic_gradient": [
+        9.062426057766376e-07,
+        -5.401056539461337e-06,
+        -5.3261964583929475e-06
+      ],
+      "projected_gradient": [
+        9.062426057766376e-07,
+        -5.401056539461337e-06,
+        -5.3261964583929475e-06
+      ],
+      "maximum_absolute_projected_gradient": 5.401056539461337e-06,
+      "reported_success": true,
+      "reported_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "start": "original_parameters",
+      "theta": [
+        0.7168607281892597,
+        0.011877726528961461,
+        0.010937730667140268
+      ],
+      "objective": 10505.612193145873,
+      "objective_above_best": -5.4569682106375694e-12,
+      "analytic_gradient": [
+        1.9175714965201262e-05,
+        -8.853708396457425e-05,
+        -0.0001161226555890416
+      ],
+      "projected_gradient": [
+        1.9175714965201262e-05,
+        -8.853708396457425e-05,
+        -0.0001161226555890416
+      ],
+      "maximum_absolute_projected_gradient": 0.0001161226555890416,
+      "reported_success": true,
+      "reported_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    }
+  ],
+  "scope": "Analytic gradient replay at every full-face optimized endpoint for the sole remaining frozen-prefix disagreement. No reoptimization, tolerance change or scientific eligibility; original records preserved."
+}

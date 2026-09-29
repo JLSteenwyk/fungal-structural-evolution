@@ -1,0 +1,26 @@
+{
+  "status": "completed_frozen_five_fit_refinement_and_serialized_readback",
+  "fits": 5,
+  "counts": {
+    "ml_refinement_passed_numerical_checks": 4,
+    "ml_refinement_requires_review": 1
+  },
+  "candidate_likelihoods_replayed": 120,
+  "maximum_objective_error": 4.3655745685100555e-11,
+  "terminal_states": {
+    "fungal-whole-protein-initial-flag-refinement-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-initial-refinement-readback-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json": "45ccdf1fbfc3b7ba79eff224be319c5f06c016b7fb7877ba21555d562b700875"
+  },
+  "scope": "Four numerical refinements pass; one full-face start disagreement retained. All original production flags preserved. No full-grid acceptance, downstream overlay or calibrated inference."
+}

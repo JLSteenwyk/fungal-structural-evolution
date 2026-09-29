@@ -1,0 +1,33 @@
+{
+  "readback": "metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json",
+  "source": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc-profile_guide.json",
+  "input": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/09/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc.npz",
+  "factor": "results/phylogeny/matched-species-covariance-factors-20260927-v1/profile_guide.npz",
+  "output": "results/model_validation/whole-protein-full-face-start-recovery-20260929-v1",
+  "pins": {
+    "metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json": "45ccdf1fbfc3b7ba79eff224be319c5f06c016b7fb7877ba21555d562b700875",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc-profile_guide.json": "015920abca29ca43edabce6186ebd9210f7edbd58a890c42a6eaf4c8c1d7d008",
+    "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/09/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc.npz": "e0838a8e3e1468ccab11a11ec9bd286a4be1d436869a56d7d8de463621dda61a",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/profile_guide.npz": "2f89ee747c312612f0a5882012b81b4b6194cc54fc9d748e3d15f414b2566868",
+    "metadata/whole_protein_remaining_start_gradient_diagnostic_20260929.json": "0c1f6843d3b3675a3e645c19ca19370cec63c8634ad7abd7b9d93e26dda90bfc",
+    "scripts/recover_whole_protein_full_face_starts.py": "2865439b45c70be7882e75f648fb812f0cd7a2c05b303a4903df591b9a5c5f20",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.05,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Five bounded three-parameter SLSQP runs with direct residual likelihoods; one original fit. Planning allowance, not ETA or timeout."
+  },
+  "scope": "Recover all original full-face endpoints of the sole retained flag and independently restart ratio one. Keep all original candidates and acceptance thresholds; separate saved-output verification required."
+}

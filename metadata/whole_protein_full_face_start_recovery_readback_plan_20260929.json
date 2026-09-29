@@ -1,0 +1,27 @@
+{
+  "launch": "metadata/whole_protein_full_face_start_recovery_launch_20260929.json",
+  "pins": {
+    "metadata/whole_protein_full_face_start_recovery_launch_20260929.json": "999cd0272962140d1620587470b9c597541ff90ea513adac75251cd4f42e41bb",
+    "metadata/whole_protein_full_face_start_recovery_plan_20260929.json": "a89a128b77998cd4589658749bf7167c69fb33e413d2e2fd5aac3f88f4910ce0",
+    "scripts/readback_whole_protein_start_recovery.py": "701dd76b69f989ec304f50600d9f99f9e33074b0eb799da3de41880b572647bd",
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "output": "metadata/whole_protein_full_face_start_recovery_completed_readback_20260929.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.05,
+      1
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "24 retained likelihoods, five initial/endpoints and selected GLS quantities, two finite-difference step sizes at selected and nonstationary initial points. Planning allowance, not ETA or timeout."
+  }
+}

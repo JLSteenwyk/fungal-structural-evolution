@@ -222,3 +222,48 @@ are allocated, no swap, with 0.05–1 hour active-time planning. The
 records the exact process. At launch, three producer cases had completed: two
 passed numerical checks and one retained full-face start disagreement. Completion
 of a readback will not itself resolve any retained optimization flag.
+
+The refinement and its saved-output checker have now both completed successfully.
+The [completion handoff](../metadata/whole_protein_initial_flag_refinement_handoff_20260929.json)
+binds both terminal states and the [full readback](../metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json).
+All 120 candidate likelihoods, coefficients, covariance transforms, gradients and
+classification decisions were replayed; the largest objective difference was
+4.37e−11. Four of five refinements met the unchanged numerical criteria. The
+remaining full-face start disagreement was retained for further review.
+
+An [endpoint gradient diagnostic](../metadata/whole_protein_remaining_start_gradient_diagnostic_20260929.json)
+showed that the ratio-one start had stopped 17.4126 negative-log-likelihood units
+above the other starts, with maximum projected gradient 221.641, despite reported
+optimizer success. This endpoint fails stationarity; it is not evidence of a
+second stationary optimum. The other three full-face endpoints had gradients
+below 0.001.
+
+The [separate recovery plan](../metadata/whole_protein_full_face_start_recovery_plan_20260929.json)
+uses bounded SLSQP with direct residual likelihoods and the validated analytic
+gradient, ftol 1e−12 and up to 1,000 iterations. It restarted all four full-face
+endpoints and separately reran the original ratio-one initialization. All five
+runs succeeded, had projected gradients below 0.001, and agreed in likelihood
+within 1e−5. All original 24 candidates remain recorded and eligible for
+selection, including the prematurely stopped endpoint; none was overwritten or
+silently removed. One CPU, 16 GiB memory, no swap and no GPU were allocated;
+0.05–2 hours was a planning allowance, not an ETA. The actual recovery consumed
+47 seconds of CPU time.
+
+The [recovery readback](../metadata/whole_protein_full_face_start_recovery_completed_readback_20260929.json)
+reconstructed every retained likelihood, restart identity, initial point,
+endpoint, selected parameters, GLS coefficient and covariance transform. It also
+compared the analytic gradients with finite differences of the separate
+normal-equation likelihood at two step sizes, including a one-sided derivative
+at the failed endpoint's zero variance component. All checks passed. At the
+smaller step, the largest gradient discrepancy was 3.86e−6; selected-point
+discrepancy was 2.11e−6. The likelihood readback difference was at most 1.82e−12.
+Both producer and checker finished with success and exit status zero. The
+covariance operator is shared between these likelihood implementations.
+
+The [five-fit candidate registry](../metadata/whole_protein_initial_five_recovery_candidates_20260929.json)
+now records four audited refinements and one audited start recovery, with original
+production paths, hashes, input identities and original review statuses. It
+resolves numerical follow-up for this frozen prefix only. It has not yet been
+applied to production model comparisons. Later flagged fits, full-grid readback,
+integration, model adequacy and calibrated uncertainty remain outstanding; none
+of the eight evolutionary aims is complete.

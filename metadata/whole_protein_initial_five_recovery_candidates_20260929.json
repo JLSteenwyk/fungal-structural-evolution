@@ -1,0 +1,214 @@
+{
+  "status": "completed_frozen_five_fit_numerical_recovery_candidates",
+  "fits": 5,
+  "original_prefix_dispositions": 705,
+  "candidate_kinds": {
+    "audited_all_face_refinement": 4,
+    "audited_full_face_start_recovery": 1
+  },
+  "candidates": [
+    {
+      "fit_input_id": "048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9",
+      "tree": "pmsf_profile_mafft",
+      "original_production_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/04/048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9/pmsf_profile_mafft.json",
+      "original_production_sha256": "37aeb06a19eb25bd41541fe1f33f2fd596fd28aa32648e961f781ee19b3ca26b",
+      "original_status": "ml_candidate_requires_optimization_review",
+      "input_sha256": "def52b27816bd8f54836bb4e0998b53c87b9a3df306d0c506420fcddb1e78965",
+      "candidate": {
+        "kind": "audited_all_face_refinement",
+        "path": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9-pmsf_profile_mafft.json",
+        "sha256": "60d74a668af7486956b7591dc0da245fe1791ddadafb51e9f6a8da9116c8c3d1",
+        "theta": [
+          0.7079646175090576,
+          0.009192829015528417,
+          0.005727077870189869
+        ]
+      }
+    },
+    {
+      "fit_input_id": "080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60",
+      "tree": "pmsf_mafft_profile",
+      "original_production_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/08/080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60/pmsf_mafft_profile.json",
+      "original_production_sha256": "d117c9499d745757bb6362f69985028e03049f840ffb0d3f3b5d75de287e1abc",
+      "original_status": "ml_candidate_requires_optimization_review",
+      "input_sha256": "86463c2b591a388b7414e2f61d398404f153b02758880b4c4e01d33fee358495",
+      "candidate": {
+        "kind": "audited_all_face_refinement",
+        "path": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60-pmsf_mafft_profile.json",
+        "sha256": "c40158efd7e5f32da3e1bd4609efcca6c5a1532597eebcf3b33b382be03dbb4f",
+        "theta": [
+          0.60712621390294,
+          0.021537296288231846,
+          0.007028672069894316
+        ]
+      }
+    },
+    {
+      "fit_input_id": "095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc",
+      "tree": "profile_guide",
+      "original_production_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/09/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc/profile_guide.json",
+      "original_production_sha256": "f36a9e7ce1c924af5bca9332395f004a81d8b2f45e3bc46c46f105d050966369",
+      "original_status": "ml_candidate_requires_optimization_review",
+      "input_sha256": "e0838a8e3e1468ccab11a11ec9bd286a4be1d436869a56d7d8de463621dda61a",
+      "candidate": {
+        "kind": "audited_full_face_start_recovery",
+        "path": "results/model_validation/whole-protein-full-face-start-recovery-20260929-v1/receipt.json",
+        "sha256": "b7d8ab9ffa1a3f02ff2ae816d931de47cc00be4373168e98371314529c1135cf",
+        "theta": [
+          0.7168607281892597,
+          0.011877726528961461,
+          0.010937730667140268
+        ],
+        "selection": {
+          "kind": "original_candidate",
+          "index": 23,
+          "theta": [
+            0.7168607281892597,
+            0.011877726528961461,
+            0.010937730667140268
+          ],
+          "objective": 10505.612193145878,
+          "gradient": [
+            1.9175714965201262e-05,
+            -8.853708396457425e-05,
+            -0.0001161226555890416
+          ],
+          "projected_gradient": [
+            1.9175714965201262e-05,
+            -8.853708396457425e-05,
+            -0.0001161226555890416
+          ],
+          "maximum_absolute_projected_gradient": 0.0001161226555890416
+        }
+      }
+    },
+    {
+      "fit_input_id": "09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139",
+      "tree": "pmsf_mafft_profile",
+      "original_production_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/09/09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139/pmsf_mafft_profile.json",
+      "original_production_sha256": "4569f2a357d478b2dfc9e04820112aed44a17a717dfc3a7db020b674a6deddf3",
+      "original_status": "ml_candidate_requires_optimization_review",
+      "input_sha256": "db3b8a82e2b4a4ea2d9187a0932600db317e1feeba62e69892a9915a93231882",
+      "candidate": {
+        "kind": "audited_all_face_refinement",
+        "path": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139-pmsf_mafft_profile.json",
+        "sha256": "f9a6c2e5476375e4b6be2b2f7a6b686264d6a63c3cbf3bed43502c38215b3054",
+        "theta": [
+          0.7208094453613559,
+          0.008385088485714053,
+          0.010736823602274013
+        ]
+      }
+    },
+    {
+      "fit_input_id": "0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a",
+      "tree": "mafft_guide",
+      "original_production_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/0e/0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a/mafft_guide.json",
+      "original_production_sha256": "db9ca3c6b97c4422f045a0608defb61a18102a4b654a0134bb37d8dca88a5c42",
+      "original_status": "ml_candidate_requires_optimization_review",
+      "input_sha256": "8359ce64540533a09cd28cf1bd77a63ffe65bf551c50f3242c7a762ce6479ef5",
+      "candidate": {
+        "kind": "audited_all_face_refinement",
+        "path": "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a-mafft_guide.json",
+        "sha256": "c6bf7ff516ef984a966853705dd02aafb0c2ee598e739e24fcc6d21fe38d63d3",
+        "theta": [
+          0.6842489653063306,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "terminal_states": {
+    "fungal-whole-protein-full-face-start-recovery-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-start-recovery-readback-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_full_face_start_recovery_completed_readback_20260929.json": "d7d431a355de9e1e09223ef46e059a26684342fac45a67324e21caf3c1d5ae00",
+    "results/model_validation/whole-protein-full-face-start-recovery-20260929-v1/receipt.json": "b7d8ab9ffa1a3f02ff2ae816d931de47cc00be4373168e98371314529c1135cf",
+    "metadata/whole_protein_initial_flag_refinement_handoff_20260929.json": "3b8d04a8ef91ce7cdb79d83cd3a1d5051a2403310b9e3fc4b5ab7772ea9d76a2",
+    "metadata/whole_protein_initial_flag_refinement_completed_readback_20260929.json": "45ccdf1fbfc3b7ba79eff224be319c5f06c016b7fb7877ba21555d562b700875",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9-pmsf_profile_mafft.json": "60d74a668af7486956b7591dc0da245fe1791ddadafb51e9f6a8da9116c8c3d1",
+    "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/04/048fac1ce7a1035034356d2fb0f73a191bc5bedb252de67b8d6a23066a3e45f9/pmsf_profile_mafft.json": "37aeb06a19eb25bd41541fe1f33f2fd596fd28aa32648e961f781ee19b3ca26b",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60-pmsf_mafft_profile.json": "c40158efd7e5f32da3e1bd4609efcca6c5a1532597eebcf3b33b382be03dbb4f",
+    "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/08/080f89071146dfbc3358a1ce3563ab92d16ad54e338b84a2dd5f618495261d60/pmsf_mafft_profile.json": "d117c9499d745757bb6362f69985028e03049f840ffb0d3f3b5d75de287e1abc",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc-profile_guide.json": "015920abca29ca43edabce6186ebd9210f7edbd58a890c42a6eaf4c8c1d7d008",
+    "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/09/095a6b34aefd08fd629a902eceded9fef9ef651ca2a355594f18cdd9f8b495dc/profile_guide.json": "f36a9e7ce1c924af5bca9332395f004a81d8b2f45e3bc46c46f105d050966369",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139-pmsf_mafft_profile.json": "f9a6c2e5476375e4b6be2b2f7a6b686264d6a63c3cbf3bed43502c38215b3054",
+    "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/09/09a9adbd5899c5b7cfaf55aacbdce9c5e951b9db8f7de3028a5b31eedc557139/pmsf_mafft_profile.json": "4569f2a357d478b2dfc9e04820112aed44a17a717dfc3a7db020b674a6deddf3",
+    "results/model_validation/whole-protein-initial-flag-refinement-20260929-v1/0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a-mafft_guide.json": "c6bf7ff516ef984a966853705dd02aafb0c2ee598e739e24fcc6d21fe38d63d3",
+    "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/0e/0ef6374ba20f4bdfe49be920a787ca96391b4f3c80c830fb6eb3f7c63473105a/mafft_guide.json": "db9ca3c6b97c4422f045a0608defb61a18102a4b654a0134bb37d8dca88a5c42"
+  },
+  "maximum_recovery_likelihood_readback_error": 1.8189894035458565e-12,
+  "finite_difference_checks": [
+    {
+      "point": "selected",
+      "step": 1e-05,
+      "gradient": [
+        1.9190338207408786e-05,
+        -0.00010231815394945441,
+        -0.00028067006496712565
+      ],
+      "maximum_absolute_error": 0.00016454740937808405
+    },
+    {
+      "point": "selected",
+      "step": 1e-06,
+      "gradient": [
+        1.9099388737231493e-05,
+        -8.913048077374697e-05,
+        -0.00011823431123048067
+      ],
+      "maximum_absolute_error": 2.1116556414390697e-06
+    },
+    {
+      "point": "1.0",
+      "step": 1e-05,
+      "gradient": [
+        -26.083526154252464,
+        -221.64090778460374,
+        219.3996888308902
+      ],
+      "maximum_absolute_error": 0.00013364093436507574
+    },
+    {
+      "point": "1.0",
+      "step": 1e-06,
+      "gradient": [
+        -26.08352679089876,
+        -221.6410375694977,
+        219.39968974038493
+      ],
+      "maximum_absolute_error": 3.8560403936571674e-06
+    },
+    {
+      "point": "1.0_original_initialization",
+      "step": 1e-05,
+      "gradient": [
+        -125.14875907072563,
+        444.02758639989764,
+        91.95473085128468
+      ],
+      "maximum_absolute_error": 1.0809573325332167e-07
+    },
+    {
+      "point": "1.0_original_initialization",
+      "step": 1e-06,
+      "gradient": [
+        -125.14876016211929,
+        444.0275861270493,
+        91.95473103318363
+      ],
+      "maximum_absolute_error": 9.83297923085047e-07
+    }
+  ],
+  "scope": "All five original frozen-prefix numerical flags have separately verified candidates. Original production statuses retained. This candidate registry has not been applied to production model comparisons; later flags, complete-grid audit, global-optimum uncertainty and calibrated scientific inference remain outstanding."
+}
