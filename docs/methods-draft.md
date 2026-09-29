@@ -775,6 +775,64 @@ Implementation and source bindings are documented in
 [nonlinear inputs](nonlinear-identity-contrasts-20260927.md) and
 [ordinary likelihood](matched-ordinary-likelihood-20260927.md).
 
+### Numerical refinement and local gradient checks (September 29)
+
+A frozen prefix of 75,205 completed ordinary-ML fits contained 601 numerical
+review flags. This prefix is an interim execution snapshot, not a random sample
+or a final failure-rate estimate. All 601 source fits, including their original
+failed attempts, remain preserved. Their 449 distinct numerical inputs were
+reconstructed and independently checked against the original ordered records,
+exact matrix signatures and covariance indices before separate refinement.
+The original full model run continues independently.
+
+Refinement retains 24 candidate records: the original unoptimized point, the
+22 original face/start combinations, and an additional full-face optimization
+initialized at the original parameters. Variance ratios are parameterized as
+log(1+ratio), with the original maximum ratio of 10,000 retained. L-BFGS-B uses
+analytic gradients, at most 1,000 iterations, objective tolerance 1e-14,
+gradient tolerance 1e-8 and at most 80 line-search steps. Selection minimizes
+the recorded objective; successful termination breaks only exact objective ties.
+A lower objective from a failed attempt is never silently discarded.
+
+Each candidate objective is recalculated with the direct residual likelihood.
+The selected candidate must have successful optimizer termination, projected
+infinity-norm gradient at most 1e-3, no upper-bound contact, full-face starting
+objectives agreeing within 1e-5, and an objective no worse than the original
+point. Every check is saved separately. At a lower bound the projected gradient
+retains only negative derivatives; at an upper bound it retains only positive
+derivatives, using the implementation's 1e-7 boundary neighborhood. Upper-bound
+contact within 1e-6 remains a separate flag. A queued output audit replays every
+candidate and classification; it shares the validated numerical libraries and
+is not an independent mathematical implementation.
+
+Two interim cases retained only a gradient flag despite relative-objective
+convergence. Direct likelihood differences confirmed their gradients above
+1e-3. Local correction diagnostics use symmetrized Hessians obtained by
+differencing analytic gradients at steps 1e-5 and 1e-6. Both Hessians must be
+positive definite on the adjusted coordinates. Each Newton proposal must
+preserve or improve the direct objective and pass analytic and direct gradient
+checks. Direct checks use steps 1e-6 and 1e-7. Interior proposals use centered
+differences for all parameters. Lower-face proposals keep exact-zero variance
+components fixed, use centered differences for free parameters, and second-order
+forward differences for fixed components. Their analytic and direct one-sided
+derivatives must be nonnegative, while free-gradient norms must be at most
+1e-3. Both Hessian-step proposals must pass; checks are not chosen by which
+step gives the preferred answer. Upper-bound cases and unsupported faces remain
+explicitly inapplicable.
+
+These are local numerical proposals. Original optimizer failures, disagreement
+between starts and other review flags cannot be resolved by this procedure.
+Single-case direct checks and synthetic fixtures have passed; complete snapshot
+refinement, output audits, proposal application and integration are still in
+progress or queued. No original production fit has been replaced. Completion
+and validation of the full model grid remain required before using corrected
+values in model comparisons. Numerical stationarity does not establish variance
+component identifiability, a global optimum, interval calibration, prediction
+source independence or a biological effect.
+
+Implementations, pinned inputs, separate checks and current stage status are
+linked in [numerical refinement records](nonlinear-identity-contrasts-20260927.md).
+
 ## Conditional ancestral amino-acid inference in exploratory families
 
 We analyzed 13 exploratory families using 26 whole-protein alignments (MAFFT
