@@ -1,0 +1,88 @@
+{
+  "status": "domain_coordinate_producer_complete_atom_readback_running",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_receipt_sha256": "6c8a1d175dfc5eaa5d771d9673a9bcf8241732084281ffc345a13069b7039029",
+  "plan_sha256": "91a7b0d1ec4db5fd7e080edc30a483e9ac308e48463879d08033434209a4e6b6",
+  "shards": 628,
+  "counts": {
+    "models": 627567,
+    "intervals": 1575294,
+    "exported": 1575294,
+    "rejected": 0,
+    "missing_backbone_intervals": 0
+  },
+  "archive_bytes": 159030394880,
+  "audit_pid": 2193748,
+  "audit_children": [
+    {
+      "pid": 2645340,
+      "created": 1790651917.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_domain_coordinate_archives.py",
+        "--plan",
+        "metadata/domain_coordinate_archive_readback_plan_20260928.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "pid": 2646342,
+      "created": 1790651974.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "-c",
+        "from multiprocessing.resource_tracker import main;main(7)"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "pid": 2646343,
+      "created": 1790651974.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+        "--multiprocessing-fork"
+      ],
+      "status": "running"
+    },
+    {
+      "pid": 2646346,
+      "created": 1790651974.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+        "--multiprocessing-fork"
+      ],
+      "status": "running"
+    },
+    {
+      "pid": 2646347,
+      "created": 1790651974.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+        "--multiprocessing-fork"
+      ],
+      "status": "running"
+    },
+    {
+      "pid": 2646348,
+      "created": 1790651974.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18)",
+        "--multiprocessing-fork"
+      ],
+      "status": "running"
+    }
+  ],
+  "scope": "All shard job hashes, serialized shard receipts, JSONL manifest hashes, aggregate counts and archive presence checked. Archive bytes and atoms are being independently checked by the existing full readback; no duplicate archive scan or biological validation claim."
+}

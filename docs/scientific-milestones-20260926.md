@@ -22,12 +22,28 @@ Chronological receipts and process records remain in [progress](progress.md).
   1,910,138 models cover1,955,694 of5,815,847 representative proteins (33.63%).
   Both full family partitions passed independent reconstruction. The expanded
   annotation registry and1,575,294-interval manifest also passed full readback;
-  coordinate extraction is running and its atom-level audit is queued.
+  coordinate extraction finished all 628 shards: 1,575,294 intervals from
+  627,567 models, with no reported rejections or missing backbone intervals.
+  Its independent atom-level audit is running; expanded database construction
+  and clustering remain gated on that audit. Producer evidence is recorded in
+  `metadata/domain_coordinate_extraction_producer_completed_20260928.json`.
   The existing1,078,592-domain/70,537-cluster results retain the September22
   catalog. Expanded coverage must not be attributed to those older clusters or
   comparisons. These additions support aims1–6 without completing them.
   See [catalog versions](whole-proteome-structure-catalog-20260922.md) and
   [domain workflow](whole-proteome-structure-domain-registry-20260923.md).
+
+- Whole-protein target/control measurements and contrasts passed independent
+  checks. The 96-setting summary replay passed all 41,472 summary rows and
+  1,492,992 weighted-mean cells. A historical audit discrepancy did not recur;
+  a separate compensated-sum check passed all 15,552 values in the affected
+  setting with maximum absolute difference 5.107e-15. Its original cause remains
+  unresolved and documented. Both checks now gate a versioned assessment of
+  207,360 sequence/structure model designs, followed by independent readback.
+  Pair-level covariance indexing covers all 52,675 unique target/control pairs.
+  These are validated inputs and design diagnostics, not fitted evolutionary
+  effects or calibrated significance tests. See
+  [matching and validation](duplication-control-balance-20260927.md).
 
 - Expanded AlphaFold resampling and native-output audit completed across all
   125 markers and 75,000 paired draws (23 unestimable). A separate
