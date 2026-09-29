@@ -407,3 +407,25 @@ Resources: one CPU, 4 GiB memory, no swap, 0.5–12 hours planning allowance,
 small JSON proof, no GPU or paid resources. The checker streams the 277 source
 shards and generated PDBs. Expanded alignment runs and any reuse of historical
 alignments still require validated inputs and exact settings checks.
+
+## Exact old/new alignment-input comparison queued (September 29)
+
+`scripts/compare_duplication_alignment_inputs.py` waits for the full expanded
+input readback, then checks both old and expanded manifests against their
+respective model queues and rehashes every ready PDB. Compact input signatures
+retain model/version, source checksum, mask, disposition, sequence, original
+positions, lengths and PDB checksum. Paths and source-shard boundaries may change
+without altering the signature. All 269,624 expanded pair/mask entries are
+classified, including new pairs, changed inputs, matching ready inputs and
+matching unavailable-input dispositions.
+
+Fixtures verified relocation invariance and detection of changes to each of ten
+identity/content fields. Plan/process identity:
+`metadata/duplication_exact_input_comparison_{plan,launch}_20260929.json`.
+Resources: one CPU, 4 GiB, no swap, 0.5–12 hours planning allowance, 0.2 GiB
+output, no GPU or paid resources. The output is
+`results/structural_comparisons/duplication-exact-input-comparison-20260929-v1`.
+Full screen readback remains required. Even exact ready inputs do not authorize
+reuse by themselves: native executable/options, input order, checkpoint results
+and retained numerical discrepancy flags still need checking. No alignment
+results have been copied or admitted by this stage.

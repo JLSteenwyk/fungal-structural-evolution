@@ -1,0 +1,32 @@
+{
+  "audit_launch": "metadata/duplication_alignment_input_readback_launch_20260929.json",
+  "audit_proof": "metadata/duplication_alignment_inputs_completed_readback_20260929.json",
+  "old_inputs": "results/structural_comparisons/duplication-alignment-inputs-20260926-v1",
+  "new_inputs": "results/structural_comparisons/duplication-alignment-inputs-20260928-v1",
+  "old_queue": "results/structural_comparisons/duplication-model-pair-queue-20260926-v1",
+  "new_queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "output": "results/structural_comparisons/duplication-exact-input-comparison-20260929-v1",
+  "pins": {
+    "scripts/compare_duplication_alignment_inputs.py": "3df8858261796b3c83d11294127adfa328f75ee84644fd76a1f5380ce5ea727f",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/duplication_alignment_input_readback_launch_20260929.json": "d6ce8bad4c4e505fe107403e347c9d96d960482f1a4acd043b82ca341307c9fb",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/receipt.json": "90e2f32da8ff036167aad6607bf964f1f6c2e5af84d1f15c9317feac508114fd",
+    "results/structural_comparisons/duplication-alignment-inputs-20260926-v1/inputs.jsonl": "2c31986eb8f32f1a5ea2288576afb24b80cd5e23309bc17b05bde58dcc03a497",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "output_gib": 0.2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "estimate_basis": "Read both complete input manifests and all ready PDB files, comparing 269624 pair/mask entries. Old PDBs total 9.7 GiB; new materialization allowance 64 GiB. Store compact signatures rather than full sequence/position arrays; time and memory allowances are planning estimates.",
+  "prelaunch_checks": "Path/shard relocation preserves identity; changes in each of ten model, source, mask, sequence, residue-map, length, status and PDB fields change the signature."
+}
