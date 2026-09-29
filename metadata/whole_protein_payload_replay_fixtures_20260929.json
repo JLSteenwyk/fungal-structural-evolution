@@ -1,0 +1,30 @@
+{
+  "status": "passed_whole_protein_payload_replay_fixtures",
+  "valid_cases": [
+    {
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 1.4210854715202004e-14,
+      "status": "ml_candidate_passed_numerical_optimization_checks"
+    },
+    {
+      "candidates_checked": 22,
+      "maximum_independent_objective_error": 1.4210854715202004e-14,
+      "status": "ml_candidate_passed_numerical_optimization_checks"
+    }
+  ],
+  "rejected_corruptions": [
+    "objective",
+    "coefficient",
+    "covariance",
+    "gradient",
+    "status",
+    "candidate_omission"
+  ],
+  "source_hashes": {
+    "scripts/check_whole_protein_fit_payload.py": "27cba88f49160607ee8cb2f67b7d6b6309837342759b5806d69f70d82f12e8df",
+    "scripts/check_whole_protein_payload_fixtures.py": "fcd015c9669e7fc7be4fcdaeb5809bfa6efa7e73dfdbb0237c9bf0de674ad7a9",
+    "scripts/fit_whole_protein_ml.py": "0fe8d60328c17138cf9ae4d693b6a7dfe5ee6cf5282812fa2519e3ed0601477f",
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34"
+  },
+  "scope": "Synthetic payload checks. Separate normal-equation likelihood implementation shares covariance solver and analytic-gradient library. No production audit, global-optimum proof, calibrated uncertainty or biological inference."
+}

@@ -916,3 +916,22 @@ and corrupted common predictors were rejected. Plan/process identity:
 Resources: one CPU, 8 GiB, no swap, 0.5–6 hours planning allowance, small proof
 output, no GPU or paid resources. Full-data validation remains pending; these
 links do not establish a preferred model or calibrated inference.
+
+## Whole-protein fit-payload checker prepared (September 29)
+
+`scripts/check_whole_protein_fit_payload.py` replays all 22 optimizer candidates
+with a separate normal-equation GLS/ML implementation, checks candidate coverage
+over every face/start, reconstructs the selected point, coefficients, residual
+scale and conditional covariance, and validates raw-unit conversion. It also
+recomputes projected gradients, boundary flags, start disagreement and the final
+numerical-review status. The covariance solver and analytic-gradient library
+are shared; this is not an independent implementation of the entire model.
+
+Fixtures with zero and nonzero species covariance passed all 44 candidate
+likelihood checks, maximum discrepancy 1.42109e-14. Deliberate changes to an
+objective, coefficient, covariance, gradient, review flag and candidate count
+were rejected. Evidence:
+`metadata/whole_protein_payload_replay_fixtures_20260929.json`; fixture script:
+`scripts/check_whole_protein_payload_fixtures.py`. This helper is ready for the
+full output-audit runner; production fitting and full output replay remain
+unlaunched. Numerical agreement does not establish calibrated uncertainty.
