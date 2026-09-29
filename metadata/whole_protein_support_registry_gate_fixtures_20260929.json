@@ -1,0 +1,16 @@
+{
+  "status": "passed_support_registry_consumer_gate_fixtures",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/test_whole_protein_support_registry.py"
+  ],
+  "exit_code": 0,
+  "tests": 6,
+  "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n",
+  "source_hashes": {
+    "scripts/test_whole_protein_support_registry.py": "3b6c57a0b5bee0062c71817d56a3f3cda2f00d53300539e848622612d59a1948",
+    "scripts/whole_protein_support_registry.py": "df8c6401a2df2f4de5bd1d3ab8a4e14aef39d10ec4dd439459dc35753cca6dbe",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "scope": "Synthetic small bundles test consumer gating, not full-cohort certificate validation. Positive provenance retention and rejection of pending checks, changed certificates/tables, wrong input hashes and mismatched verification scope."
+}

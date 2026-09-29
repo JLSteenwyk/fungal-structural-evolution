@@ -1,0 +1,38 @@
+{
+  "status": "completed_full_resolved_support_build_pending_matrix_readback",
+  "checked_at": "2026-09-29T20:37:25.234462+00:00",
+  "receipt": "results/model_validation/whole-protein-resolved-support-20260929-v1/receipt.json",
+  "receipt_sha256": "6121e7761106937b402edf6f784a13f20710a159ced737ba47f03b3482b78f31",
+  "artifacts": {
+    "resolved_input_support.jsonl": "6605af8e9d3606dc7d158b02b99b9817eca3ea6bf8a2cf2fa680bd1de9c9896b",
+    "resolved_setting_support.jsonl": "ec585e7fa606bb7d95582a21b50a7da799a4de7605aa98ef37d2b1eb58439174"
+  },
+  "inputs": 75070,
+  "geometries": 15270,
+  "settings": 414720,
+  "changed_inputs": 30,
+  "changed_settings": 112,
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "readback_observation": {
+    "pid": 525465,
+    "created": 1790714041.66,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_whole_protein_resolved_support.py",
+      "--plan",
+      "metadata/whole_protein_resolved_support_readback_plan_20260929.json"
+    ],
+    "status": "running",
+    "cpu_seconds": 202.82
+  },
+  "source_hashes": {
+    "metadata/whole_protein_resolved_support_launch_20260929.json": "db37dbffde7ef743546106758ae83f102c0f7df53b8478d1c44173080bd4eda9",
+    "metadata/whole_protein_resolved_support_plan_20260929.json": "969554fcef674c23f0e19496702c7da65216c2e0b0089950fae129fdf2575a6a",
+    "metadata/whole_protein_resolved_support_readback_launch_20260929.json": "d1b3a7095788c2540aae7804884c9afa8ccde864f7581cbe21ad43ec87e71b30"
+  },
+  "scope": "Full support input/setting registry compiled with preserved original statuses and explicit repaired-witness provenance. Matrix/identity/certificate checker confirmed live, not complete. Registry consumption remains gated on full saved-output readback; no model adequacy or scientific acceptance."
+}

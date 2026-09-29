@@ -1,0 +1,33 @@
+{
+  "support": "results/model_validation/whole-protein-joint-support-20260929-v1",
+  "witnesses": "results/model_validation/whole-protein-support-witnesses-20260929-v1",
+  "inputs": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "inventory": "results/structural_comparisons/whole-protein-model-input-inventory-20260928-v1",
+  "support_proof": "metadata/whole_protein_joint_support_completed_readback_20260929.json",
+  "witness_proof": "metadata/whole_protein_support_witness_completed_20260929.json",
+  "input_proof": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+  "inventory_proof": "metadata/whole_protein_input_inventory_completed_readback_20260928.json",
+  "output": "results/model_validation/whole-protein-resolved-support-20260929-v1",
+  "pins": {
+    "scripts/integrate_whole_protein_support_witnesses.py": "8c6692712b7aa91144bd748399bc1876e06faedec527a953e6dfd1305e8f944e",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_joint_support_completed_readback_20260929.json": "94333290c3692be380c1dd377dd727778591081016a7cd69c172886304aa350f",
+    "metadata/whole_protein_support_witness_completed_20260929.json": "81b74b44b881689734a49cff6b6607759d43cd248312309892092701226a0da3",
+    "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json": "e3fd436421ed713baf36c4c8c66d34df5570330e496eebc14c6c2f4be04d82dd",
+    "metadata/whole_protein_input_inventory_completed_readback_20260928.json": "69062410441847890aa0d7dd8164fb5ba7be5ad28b43cc0ecfbcad7e71693a9d"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Complete 75070-input and 414720-setting join with provenance; all source artifacts including approximately 62.75 GB of NPZ inputs rehashed before and after. Active-time allowance, not ETA or timeout."
+  },
+  "scope": "Full support registry integration; source certificates and active fit jobs untouched. Consumption requires subsequent independent serialized matrix and certificate audit."
+}

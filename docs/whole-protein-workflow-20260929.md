@@ -267,3 +267,45 @@ resolves numerical follow-up for this frozen prefix only. It has not yet been
 applied to production model comparisons. Later flagged fits, full-grid readback,
 integration, model adequacy and calibrated uncertainty remain outstanding; none
 of the eight evolutionary aims is complete.
+
+The [resolved covariate-support registry](../metadata/whole_protein_resolved_support_built_20260929.json)
+has now been built for all 75,070 exact inputs, 15,270 covariate geometries and
+414,720 design/outcome settings. It uses the earlier verified original
+certificates for 15,264 geometries and the separately verified nonnegative
+witnesses for the remaining six. These corrections affect 30 inputs and 112
+settings. Each input retains its original support classification, input checksum,
+geometry identity, chosen certificate source and certificate-file checksum;
+every setting retains its original full specification and links to that choice.
+Original certificates and active production-fit scripts remain unchanged.
+
+The [integration plan](../metadata/whole_protein_resolved_support_plan_20260929.json)
+allocates one CPU, 16 GiB memory, zero swap and 2 GiB output, with a 0.1–4 hour
+active-time allowance. It verifies all original source artifacts, including the
+62.75 GB input collection, before and after constructing the full registry. The
+producer completed successfully with exit status zero. The new counts classify
+every geometry as zero supported to the original numerical tolerance; this is a
+certificate result, not a demonstration of dense or interior covariate overlap.
+
+The [independent saved-output check](../metadata/whole_protein_resolved_support_readback_plan_20260929.json)
+is running. It reconstructs each of the 75,070 stored matrices and ordered row
+identities, checks the original exact input signature, rebuilds the covariate
+geometry hash, and verifies every saved certificate choice. Compensated-sum
+certificate checks run for each of the 15,264 original geometries and every one
+of the 30 corrected inputs. All 414,720 setting rows are compared field by field
+against the source inventory and independently reconstructed input registry.
+No optimizer or altered tolerance is used. One CPU and 16 GiB memory are
+allocated, no swap, with a 0.2–8 hour uncalibrated active-time allowance. These
+resource estimates are planning allowances, not ETAs or timeouts. No GPU or
+paid infrastructure is used.
+
+The [support-registry reader](../scripts/whole_protein_support_registry.py)
+requires the completed full-readback proof and matching receipt/artifact/source
+hashes before exposing an input. Every lookup requires its exact input checksum
+and preserves the original classification and certificate provenance. It returns
+zero-reference support, without assigning model or scientific eligibility. Six
+[consumer-gate fixtures](../metadata/whole_protein_support_registry_gate_fixtures_20260929.json)
+passed, including rejection of pending verification, changed certificates and
+tables, input-checksum mismatch and inconsistent verification scope. These small
+fixtures test the reader's gate; they do not substitute for the full running
+matrix/certificate check. Full registry validation and use in model comparisons
+remain pending, alongside numerical-fit review and calibrated inference.

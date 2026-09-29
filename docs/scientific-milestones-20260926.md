@@ -356,3 +356,22 @@ The codon-model multistart run and full saved-output audit also completed all
 13,056 fits from 1,632 cases. Between-start likelihood spread remains above 1e-5
 in 204 cases. See [codon optimization evidence](local-mg94-unconstrained-multistarts-20260927.md).
 These completions do not establish globally optimal fits or selection evidence.
+
+September 29 workflow checkpoint: the full whole-protein production grid is
+running across 75,070 exact numerical inputs and five phylogenetic alternatives
+(375,350 fits). Separately checked candidates are available for all five
+numerical flags in the first frozen 705-fit prefix; later flags and the complete
+production audit remain outstanding. The resolved support registry has been
+compiled for all 15,270 geometries and 414,720 design/outcome settings. Six
+corrected witness choices affect 30 inputs and 112 settings. A separate full
+matrix/identity/certificate readback is running, so downstream registry use is
+still gated. See the [whole-protein workflow](whole-protein-workflow-20260929.md).
+
+The expanded duplication alignment run is also active, with all 539,248
+pair/order/mask dispositions retained. Numerical accounting, analytic checks of
+one/two-residue mappings, full coordinate geometry and serialized independent
+geometry readback are queued behind successful predecessor completion. Their
+launch identities and complete scope are recorded in the
+[expanded duplication workflow](duplication-sampling-coverage-20260926.md).
+These are computation and validation checkpoints; none of the eight required
+evolutionary aims has reached scientific completion.

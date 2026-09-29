@@ -1,0 +1,26 @@
+{
+  "launch": "metadata/whole_protein_resolved_support_launch_20260929.json",
+  "pins": {
+    "metadata/whole_protein_resolved_support_launch_20260929.json": "db37dbffde7ef743546106758ae83f102c0f7df53b8478d1c44173080bd4eda9",
+    "metadata/whole_protein_resolved_support_plan_20260929.json": "969554fcef674c23f0e19496702c7da65216c2e0b0089950fae129fdf2575a6a",
+    "scripts/readback_whole_protein_resolved_support.py": "c67a11102fe0363fb7068962a71f8c75ba5a4230293d0cd35036b27e3a0899fe",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "output": "metadata/whole_protein_resolved_support_completed_readback_20260929.json",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 0.01,
+    "planning_hours": [
+      0.2,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "Every one of 75070 NPZ matrices/ordered identities reconstructed, 15264 original geometry certificates and all 30 repaired input certificates checked; all 414720 setting links compared. Approximately 62.75 GB of inputs read plus before/after source hashes. Single CPU, active-time planning allowance, not ETA or timeout."
+  },
+  "scope": "Full resolved-registry independent serialized readback; no optimizer, subsampling or tolerance change. Full matrix/identity/certificate provenance rather than count-only confirmation."
+}
