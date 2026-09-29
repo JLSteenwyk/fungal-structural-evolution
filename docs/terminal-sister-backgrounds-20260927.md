@@ -1154,3 +1154,26 @@ computing. Numerical uniqueness is not stability under coordinate uncertainty
 or biological eligibility. The production-only evidence is recorded in
 `metadata/background_alignment_geometry_producer_completed_20260928.json`.
 The final completion recorder must wait for the independent audit to finish.
+
+### Isolated local Kabsch source probe
+
+The locally installed aligner directory includes a monolithic `USalign.cpp`.
+Its Kabsch routine derives singular values through an analytic eigensystem of
+coordinate products and calculates the residual sum of squares from those values.
+`scripts/probe_background_kabsch_two_points.py` extracts that exact routine into
+a separate C++ harness, leaving the production executable untouched. All five
+flagged mappings were tested using original, centered, and translated (+1000 Å)
+coordinates, for 15 total cases. The two-point analytic formula was independently
+checked for every serialized input/output row. Maximum absolute errors relative
+to that formula were 0.0134824 Å (original), 0.0119144 Å (centered), and
+0.0133277 Å (translated). Translation-dependent output despite invariant exact
+RMSD supports numerical sensitivity in this local routine for rank-deficient fits.
+
+This does not prove the installed executable was built from that source, and
+the native pipeline passes already transformed coordinates to its final Kabsch
+call. The probe is therefore evidence for a mechanism, not an exact reproduction
+or a clearance of the original discrepancies. Compiler version, command,
+source/harness/binary checksums and all inputs/outputs are saved under
+`results/structural_comparisons/background-kabsch-two-point-probe-20260928-v1`.
+The full 15-case check is recorded in
+`metadata/background_kabsch_two_point_probe_completed_20260928.json`.

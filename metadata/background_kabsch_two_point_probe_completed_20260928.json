@@ -1,0 +1,33 @@
+{
+  "status": "verified_all_15_serialized_local_kabsch_probe_cases",
+  "receipt_sha256": "611f701af5d90aa9133edd198d5836cd7fc4c796e64f710a1b98de098d19891b",
+  "receipt": {
+    "status": "complete_isolated_local_source_kabsch_probe",
+    "source_sha256": "d182c5b9deec816057ee195af61ba774ac78e3c2089d3664edece062acaa6064",
+    "review_sha256": "cca5728d2dd02e9db673d2c57100e4ef79bc561824a31aa1636dda1171b62c24",
+    "script_sha256": "9b8b2111ba1570f3a16561d1454556ef9897d3cd5d4c7269e9600a2bbfae4206",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-o",
+      "results/structural_comparisons/background-kabsch-two-point-probe-20260928-v1/probe",
+      "results/structural_comparisons/background-kabsch-two-point-probe-20260928-v1/probe.cpp"
+    ],
+    "cases": 15,
+    "artifacts": {
+      "probe.cpp": "6449bbfe8738cff71178110885255a2b3b5a71ec7571cdaccc45af2508a01e4a",
+      "probe": "374e0732761eff4d15b9815fb689906e68af3319fddea2f33bffe4a217e15e7e",
+      "coordinates.txt": "09e0efc19894379b53780a4b03bf2f072e2fcf66f80dc0a3250b530682507c85",
+      "stdout.txt": "0e05a88f3a8fb463d96ed255d714ab20fa576625ba1622afeec74c70b2339969",
+      "probe_results.tsv": "dc2765d5a672e659eeaf04df347f5627b369e51a163d19b10a55b71b67da0c29"
+    },
+    "maximum_error_by_variant": {
+      "original": 0.013482422983902204,
+      "centered": 0.011914353079017299,
+      "translated_1000": 0.013327706036000198
+    },
+    "scope": "Exact local Kabsch function extracted and compiled separately at O2; original, centered and translated two-point coordinates tested. Translation preserves analytic RMSD mathematically. This is not a reproduction of the full native alignment pipeline, which calls Kabsch on transformed coordinates; source-to-installed-binary build identity is unproven. No production executable or results modified. RMSD discrepancy flags remain."
+  },
+  "scope": "Every input coordinate set independently checked using analytic segment lengths; probe output values and table errors verified. Isolated source behavior supports rank-deficient numerical sensitivity, not a proven source-to-binary explanation for the installed executable."
+}
