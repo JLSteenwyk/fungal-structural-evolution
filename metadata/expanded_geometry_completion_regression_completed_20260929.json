@@ -1,0 +1,14 @@
+{
+  "status": "passed_full_historical_diagnostic_completion_regression",
+  "scope": "All scientific/count/status/terminal-state fields of the completed historical 412800-disposition diagnostic handoff matched exactly. New plan/source/script bindings differ intentionally. No expanded-cohort completion claim.",
+  "dispositions": 412800,
+  "numeric_alignments": 387646,
+  "short_alignments": 327,
+  "rmsd_discrepancies": 27,
+  "source_hashes": {
+    "metadata/expanded_geometry_completion_regression_plan_20260929.json": "37c6711cd4ac5b0ced5a780475dd8f5694baa72c316b7f911044bdd3fb6225d5",
+    "metadata/primary_rmsd_diagnostic_and_short_completed_20260927.json": "7760bfc5ab86a9a38c2b771f5c983d65120f68e3ae4a461e439433cb94bd3d00",
+    "results/model_validation/expanded-geometry-completion-regression-20260929-v1/completed.json": "9e9eb6c69b86827a4be0a5e2610552848af51f1aa3746f709df0c9109bba17ed",
+    "scripts/record_primary_rmsd_diagnostic_completion_v2.py": "d47ce73ec41c65ad8864813ca86cb9f68dd55853f329285b384712cb862065db"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "diagnostic": "results/structural_comparisons/primary-alignment-rmsd-diagnostic-20260927-v1",
+  "diagnostic_plan": "metadata/primary_alignment_rmsd_diagnostic_plan_20260927.json",
+  "accounting": "metadata/primary_alignment_rmsd_diagnostic_completed_20260927.json",
+  "short": "metadata/primary_alignment_short_geometry_readback_20260927.json",
+  "launches": [
+    "metadata/primary_alignment_rmsd_diagnostic_launch_20260927.json",
+    "metadata/primary_rmsd_diagnostic_completion_launch_20260927.json",
+    "metadata/primary_short_geometry_launch_20260927.json"
+  ],
+  "pins": {
+    "metadata/primary_alignment_rmsd_diagnostic_launch_20260927.json": "4883dc27125c7ac65d6e1fdec415ddac83760d830dced50a52596e7850663296",
+    "metadata/primary_rmsd_diagnostic_completion_launch_20260927.json": "b63e7388f502c2a6473ed8f0c368c4700867a763d78a94f1e975fffa48275d6f",
+    "metadata/primary_short_geometry_launch_20260927.json": "06bcba29d847681644d6f205d13cf42c6f4c421c6384a96fb07c9fb2827427d7",
+    "scripts/record_primary_rmsd_diagnostic_completion_v2.py": "d47ce73ec41c65ad8864813ca86cb9f68dd55853f329285b384712cb862065db",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "metadata/primary_alignment_rmsd_diagnostic_plan_20260927.json": "e9d881fe581a2d61cd98d482a014066de82c1497319fcd27723b231e13288f82"
+  },
+  "output": "results/model_validation/expanded-geometry-completion-regression-20260929-v1/completed.json"
+}

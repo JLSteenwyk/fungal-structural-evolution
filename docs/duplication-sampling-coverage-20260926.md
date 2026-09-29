@@ -576,3 +576,63 @@ binds both versions. Each queued service has one CPU, an 8 GiB memory cap and no
 swap, with an uncalibrated 0.05–2 active-hour allowance. Expanded results remain
 pending. Coordinate rank/rotation-curvature assessment and its serialized
 readback must follow these checks; no discrepancy is silently accepted.
+
+The remaining geometry stages are now queued for the complete expanded dataset.
+The [live pipeline record](../metadata/expanded_duplication_geometry_pipeline_queued_20260929.json)
+verified all three new service PIDs, creation times, commands and pinned plans.
+At that check, each service was waiting for its predecessor, with no child
+computation or completion artifact yet. Active service status is not evidence
+that the analysis has finished.
+
+```mermaid
+flowchart LR
+  A[Full expanded native alignments] --> D[Mapping and RMSD diagnostic]
+  D --> C[Full disposition accounting]
+  D --> S[One and two residue analytic checks]
+  C --> H[Verified completion handoff]
+  S --> H
+  H --> G[All aligned coordinate geometry]
+  G --> R[Serialized quaternion and spectral readback]
+```
+
+The [completion plan](../metadata/expanded_duplication_diagnostic_completion_plan_20260929.json)
+binds successful terminal states for all three predecessor services, their
+receipt identities, artifact hashes, full counts and every short-mapping
+discrepancy. Its parameterized implementation reproduces all earlier
+completion fields on the entire historical 412,800-disposition dataset;
+[regression evidence](../metadata/expanded_geometry_completion_regression_completed_20260929.json)
+records 387,646 numeric alignments, 327 short mappings and 27 retained RMSD
+discrepancies. This verifies compatibility with that completed dataset; expanded
+results have not yet been produced.
+
+The [geometry plan](../metadata/expanded_duplication_geometry_plan_20260929.json)
+covers every successful alignment among the full 539,248 dispositions, up to
+501,324 rows. It rechecks hashed native mappings and PDB coordinates, records
+coordinate and cross-covariance singular spectra, and measures curvature at
+the best proper rotation. The existing numerical implementation is unchanged.
+The [serialized readback plan](../metadata/expanded_duplication_geometry_readback_plan_20260929.json)
+reconstructs every saved row with a separate quaternion eigensystem and LAPACK
+gesvd spectral checks. Parsing and source-coordinate libraries are shared.
+Degenerate and discrepant comparisons stay explicit; a numerically unique
+rotation does not establish prediction accuracy or stability to coordinate
+uncertainty. Confidence, coverage, input-order sensitivity and downstream
+duplication tests remain required.
+
+The dependency runner checks exact process identity, requires successful
+terminal unit states, and verifies pinned inputs before running a child command.
+It preserves its own PID and command while the child runs, so the subsequent
+checker can track one stable identity. Five
+[gate tests](../scripts/test_verified_dependency_gate.py) passed: successful
+handoff, failed-job rejection, process-exit/unit-state transition polling,
+changed-plan rejection and live-command mismatch rejection. A failure does not
+start a downstream analysis or restart its predecessor.
+
+The completion service has one CPU and 8 GiB memory; geometry and readback each
+have one CPU and 32 GiB memory. All have zero swap and use no GPU or paid
+infrastructure. Completion has a 0.01–1 hour active-time planning allowance;
+each full geometry stage has an uncalibrated 0.5–16 hour allowance and a 2 GiB
+output allowance. These exclude prerequisite waiting and are not ETAs or
+timeouts. Before launch, available memory was about 657 GiB and disk space
+about 10,755 GiB. Full source records and launch identities are versioned;
+geometry completion, independent serialized validation and scientific
+qualification remain pending.
