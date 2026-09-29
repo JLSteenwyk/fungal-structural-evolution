@@ -904,3 +904,15 @@ Resources: one CPU, 8 GiB memory, no swap, 2 GiB output and 0.5–4 hours planni
 allowance, reading approximately 58.4 GiB of arrays plus source hash scans.
 No GPU or paid resources. Output:
 `results/model_validation/whole-protein-comparison-input-links-20260929-v1`.
+
+Full link readback is queued in
+`scripts/readback_whole_protein_model_links.py`. It independently recomputes all
+column hashes from the materialized arrays and checks every unique within-setting
+predictor pair, including shared response/predictor equality, observation
+exclusions, mapped IDs, complete pair coverage and category totals. All five
+relation classes passed fixtures; incorrect relation labels, corrupted responses
+and corrupted common predictors were rejected. Plan/process identity:
+`metadata/whole_protein_model_links_readback_{plan,launch}_20260929.json`.
+Resources: one CPU, 8 GiB, no swap, 0.5–6 hours planning allowance, small proof
+output, no GPU or paid resources. Full-data validation remains pending; these
+links do not establish a preferred model or calibrated inference.

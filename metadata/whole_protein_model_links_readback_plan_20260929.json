@@ -1,0 +1,23 @@
+{
+  "launch": "metadata/whole_protein_model_links_launch_20260929.json",
+  "proof": "metadata/whole_protein_model_links_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_whole_protein_model_links.py": "f46326e91cf83169188d997762e69611340e0a94c63d6a8a187f6ff4ff54abe0",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_model_links_launch_20260929.json": "99a84246c2f4ab88526e5b5bd76ff2a93c49adc8b4ceffdf5dc51ab0850ff90f",
+    "metadata/whole_protein_model_links_plan_20260929.json": "7d7322409cd913c3fee671d2acf9f9481c0f00ee351e5d3ac1be0f50b706e1c5"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.5,
+      6
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_checks": "All five relation classes accepted on known fixtures; false nesting/identity, response corruption and shared-column corruption rejected."
+}
