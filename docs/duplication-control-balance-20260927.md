@@ -836,3 +836,23 @@ rejected. Plan and process identity are in
 `metadata/whole_protein_materialized_input_readback_{plan,launch}_20260929.json`.
 Resources: one CPU, 24 GiB, no swap, 1–12 hours planning allowance, small proof
 output, no GPU or paid resources. Full-data validation remains pending.
+
+## Whole-protein ML fitting adapter checked (September 29)
+
+`scripts/fit_whole_protein_ml.py` adapts the existing ordinary-ML variance-ratio
+optimizer to materialized whole-protein inputs. It preserves the audited active
+columns, scales without centering, keeps the explicit intercept, and converts
+coefficients and conditional covariance back to original units. All 22
+boundary/start candidates and optimization flags remain visible. Every candidate
+objective is recomputed using the direct covariance solver; inactive columns
+are rejected rather than silently changing the inventoried design.
+
+`scripts/check_whole_protein_ml_adapter.py` tested the five predictor forms at
+two response scales against explicit dense Gaussian calculations, including
+raw-unit coefficients and covariance. All 220 candidate likelihoods matched,
+with maximum error 2.13163e-14. Evidence:
+`metadata/whole_protein_ml_adapter_fixtures_20260929.json`.
+These synthetic implementation checks do not establish empirical model adequacy,
+identifiability, a global optimum or interval calibration. The production fitting
+runner and final resource allocation remain to be completed after input checks
+and workload assessment; no whole-protein data fits have been launched.

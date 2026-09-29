@@ -1,0 +1,74 @@
+{
+  "status": "passed_whole_protein_ml_adapter_dense_fixtures",
+  "cases": [
+    {
+      "variant": "linear",
+      "outcome": "rmsd",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "linear",
+      "outcome": "tm",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "quadratic",
+      "outcome": "rmsd",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "quadratic",
+      "outcome": "tm",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "cubic",
+      "outcome": "rmsd",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "cubic",
+      "outcome": "tm",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "positive_log",
+      "outcome": "rmsd",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "positive_log",
+      "outcome": "tm",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "identity",
+      "outcome": "rmsd",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    },
+    {
+      "variant": "identity",
+      "outcome": "tm",
+      "status": "ml_candidate_passed_numerical_optimization_checks",
+      "candidates": 22
+    }
+  ],
+  "candidate_likelihoods_checked": 220,
+  "maximum_objective_error": 2.1316282072803006e-14,
+  "source_hashes": {
+    "scripts/fit_whole_protein_ml.py": "0fe8d60328c17138cf9ae4d693b6a7dfe5ee6cf5282812fa2519e3ed0601477f",
+    "scripts/fit_matched_ml.py": "aee83a0255bbdc3a60604510a25d7c21c1f938d762443a14df895b53667a2518",
+    "scripts/check_matched_ml.py": "541a740e0a1d03af0d00f33f14f7e7f605470780c06aaf38702e110b4ee316ca",
+    "scripts/check_whole_protein_ml_adapter.py": "ad66ad7449b1ce49aec326e9dc71c6db8c2f31bc329163431331f271cea064e4"
+  },
+  "scope": "Synthetic implementation validation for all five design forms and both response scales. Dense references check raw coefficients, conditional covariance and every candidate likelihood. Not empirical calibration, full-data fitting or global-optimum proof."
+}
