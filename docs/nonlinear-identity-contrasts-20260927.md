@@ -404,3 +404,19 @@ is exactly zero. The queued interior helper deliberately returns
 follow-up must retain the one-sided optimality condition as well as the active
 parameter checks. The first interior case and this boundary case remain flagged;
 these are interim observations, not the final refinement census.
+
+The second boundary case has now received a fixed-face diagnostic in
+`scripts/diagnose_boundary_refinement_case.py`, with pinned inputs and output in
+`metadata/boundary_refinement_diagnostic_{plan,completed}_20260929.json`.
+Its analytic derivative in the family-variance direction is positive
+(13.742364), consistent with the lower-bound optimality condition. Two local
+Newton proposals adjust only the background and species parameters, keeping
+family variance exactly zero. Both proposals improve or preserve the objective
+and pass the unchanged 1e-3 projected-gradient criterion, including direct
+finite differences at 1e-6 and 1e-7. Boundary derivatives use second-order
+forward differences; free parameters use centered differences. This diagnostic
+completed with exit zero, using one numerical thread (planning allowance one
+CPU, 16 GiB, 0.01–1 hour, no GPU or paid resources).
+The original review flag remains. Separate proposal readback and the complete
+upstream audit are still required before any integration; a local correction
+is not a global optimum or inferential calibration result.

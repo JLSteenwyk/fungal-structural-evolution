@@ -1,0 +1,171 @@
+{
+  "status": "complete_boundary_case_local_diagnostic",
+  "records": 8071,
+  "original_theta": [
+    0.671487865012491,
+    0.0,
+    0.011633752107496132
+  ],
+  "original_objective": 2927.636141597224,
+  "original_gradient": [
+    -4.584806468800807e-05,
+    13.742364177396894,
+    0.0011084573696002371
+  ],
+  "original_direct_checks": [
+    {
+      "step": 1e-06,
+      "gradient": [
+        -4.501998773775995e-05,
+        13.742368537350558,
+        0.0011073097994085401
+      ],
+      "projected_norm": 0.0011073097994085401,
+      "passes": false
+    },
+    {
+      "step": 1e-07,
+      "gradient": [
+        -5.2295945351943374e-05,
+        13.742362625634996,
+        0.0011095835361629725
+      ],
+      "projected_norm": 0.0011095835361629725,
+      "passes": false
+    }
+  ],
+  "proposals": [
+    {
+      "hessian_step": 1e-05,
+      "hessian": [
+        [
+          1314.7496807767318,
+          -488.9666499526976
+        ],
+        [
+          -488.9666499526976,
+          50325.44828563503
+        ]
+      ],
+      "eigenvalues": [
+        1309.871876570766,
+        50330.32608984099
+      ],
+      "theta": [
+        0.6714878917897604,
+        0.0,
+        0.011633730341884196
+      ],
+      "objective": 2927.6361415972124,
+      "gradient": [
+        3.6045303536817874e-11,
+        13.742406365351826,
+        -1.4223022383252165e-09
+      ],
+      "projected_gradient": [
+        3.6045303536817874e-11,
+        0.0,
+        -1.4223022383252165e-09
+      ],
+      "finite_differences": [
+        {
+          "step": 1e-06,
+          "gradient": [
+            6.821210263296962e-07,
+            13.74240582663333,
+            -1.3642420526593924e-06
+          ],
+          "projected_norm": 1.3642420526593924e-06,
+          "passes": true
+        },
+        {
+          "step": 1e-07,
+          "gradient": [
+            -4.547473508864641e-06,
+            13.742460396315437,
+            -4.547473508864641e-06
+          ],
+          "projected_norm": 4.547473508864641e-06,
+          "passes": true
+        }
+      ],
+      "checks": {
+        "objective_not_worsened": true,
+        "analytic_projected_gradient_pass": true,
+        "both_direct_projected_gradients_pass": true
+      }
+    },
+    {
+      "hessian_step": 1e-06,
+      "hessian": [
+        [
+          1314.7496856381865,
+          -488.9666243901636
+        ],
+        [
+          -488.9666243901636,
+          50325.39809468877
+        ]
+      ],
+      "eigenvalues": [
+        1309.8718769474176,
+        50330.27590337954
+      ],
+      "theta": [
+        0.6714878917897525,
+        0.0,
+        0.0116337303418624
+      ],
+      "objective": 2927.6361415972156,
+      "gradient": [
+        2.6255221094718987e-11,
+        13.742406365402985,
+        -2.4997830218146192e-09
+      ],
+      "projected_gradient": [
+        2.6255221094718987e-11,
+        0.0,
+        -2.4997830218146192e-09
+      ],
+      "finite_differences": [
+        {
+          "step": 1e-06,
+          "gradient": [
+            -9.094947017729282e-07,
+            13.742406281380681,
+            -1.5916157281026244e-06
+          ],
+          "projected_norm": 1.5916157281026244e-06,
+          "passes": true
+        },
+        {
+          "step": 1e-07,
+          "gradient": [
+            9.094947017729282e-06,
+            13.74236489937175,
+            -6.821210263296962e-06
+          ],
+          "projected_norm": 9.094947017729282e-06,
+          "passes": true
+        }
+      ],
+      "checks": {
+        "objective_not_worsened": true,
+        "analytic_projected_gradient_pass": true,
+        "both_direct_projected_gradients_pass": true
+      }
+    }
+  ],
+  "source_hashes": {
+    "scripts/diagnose_boundary_refinement_case.py": "f61d1273aec82c142223c4dbb91a9b700af7d28750bf415e1333ec5a0b0f9336",
+    "results/model_validation/flagged-polynomial-refinements-20260928-v1/fc3f7097bc4922808dc6dc4637c46f21ba224b98bb77bce5859e593b837a95dc__pmsf_mafft_profile.json": "5b5620de182bba8289e4bf7cbf177eb48172293a219816bbe41e1ddc4d050a35",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/fc3f7097bc4922808dc6dc4637c46f21ba224b98bb77bce5859e593b837a95dc.npz": "2594d790df8fb39d62358893a0c1376445e5b7f56641010bbb3918de96e68391",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/pmsf_mafft_profile.npz": "0cef79bda8310a769e21985eeb9799e49a26923e8ec461f2f52374dcef3def03",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0"
+  },
+  "plan_sha256": "32c231ba02ea670d45e626b1b2461ff95a45a51a7a07af05d0bbfcbb5790d6e4",
+  "script_sha256": "f61d1273aec82c142223c4dbb91a9b700af7d28750bf415e1333ec5a0b0f9336",
+  "scope": "Single fixed-face diagnostic; family variance remains exactly zero. Second-order forward differences check its one-sided gradient. No production replacement; separate readback and upstream full audit required. No global optimum or inferential claim."
+}
