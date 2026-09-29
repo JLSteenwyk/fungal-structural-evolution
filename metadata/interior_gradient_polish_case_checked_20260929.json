@@ -1,0 +1,155 @@
+{
+  "status": "passed_guarded_interior_polish_real_case_replay",
+  "source_hashes": {
+    "metadata/refinement_gradient_diagnostic_plan_20260928.json": "94b2342c82ce76ed18b5f8985256bc456ae177521ab1130741fdfad49f42f881",
+    "scripts/diagnose_refinement_gradient.py": "a176e1b46c403922ffc3a4d8f9d96921e89359762ba49472816568787d6cf579",
+    "results/model_validation/flagged-polynomial-refinements-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264__mafft_guide.json": "99cfa051216f61a443adb766fb9f037ba0ad09acd7e6aa16f18975bc6e6a4c79",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264.npz": "213e1b817ec8de1bdf736ef75b6493406e7226a6991b9b54641e0e8fbdf9c1d1",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/mafft_guide.npz": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "checker_sha256": "6379fa487b37963e10ffc883aa8d4ee41c9581b372c6f01e379ab488221dec22",
+  "implementation_sha256": "82dcc3bf37fea14ba34ea4a7ffa6b7260c85c70d3d8d19e8595f132da6a5b9cc",
+  "separate_proposal_check_sha256": "17bc6b4ffc5697a03b0bb14e0a83576ba8ed6b3a5b6bcfe192085eda1b36df34",
+  "result": {
+    "status": "two_local_proposals_passed",
+    "original_theta": [
+      0.6623773206398326,
+      0.0005685938803541695,
+      0.01429888446468199
+    ],
+    "original_objective": 2986.818732251349,
+    "original_gradient": [
+      -7.602420841438102e-05,
+      -0.0001577748655169127,
+      0.0011737104679810464
+    ],
+    "upper": 9.210440366976517,
+    "proposals": [
+      {
+        "hessian_step": 1e-05,
+        "hessian": [
+          [
+            1334.4331507053525,
+            679.7729177025942,
+            -368.39934847230654
+          ],
+          [
+            679.7729177025942,
+            11121.673359934952,
+            -945.0467097692268
+          ],
+          [
+            -368.39934847230654,
+            -945.0467097692268,
+            31766.511684221176
+          ]
+        ],
+        "eigenvalues": [
+          1284.436681821055,
+          11123.271637281212,
+          31814.909875759215
+        ],
+        "passed": true,
+        "theta": [
+          0.6623773632852324,
+          0.0005686023839768727,
+          0.014298848264181879
+        ],
+        "objective": 2986.8187322513263,
+        "gradient": [
+          2.0725493185942516e-11,
+          -1.4014184641075115e-10,
+          -2.8362810677532998e-09
+        ],
+        "finite_differences": [
+          {
+            "step": 1e-06,
+            "gradient": [
+              6.821210263296962e-07,
+              2.2737367544323206e-07,
+              -6.821210263296962e-07
+            ]
+          },
+          {
+            "step": 1e-07,
+            "gradient": [
+              -2.2737367544323206e-06,
+              2.2737367544323206e-06,
+              1.1368683772161603e-05
+            ]
+          }
+        ],
+        "checks": {
+          "objective_not_worsened": true,
+          "analytic_gradient_pass": true,
+          "both_direct_gradient_checks_pass": true
+        }
+      },
+      {
+        "hessian_step": 1e-06,
+        "hessian": [
+          [
+            1334.4331489997153,
+            679.7728178581582,
+            -368.39934268419427
+          ],
+          [
+            679.7728178581582,
+            11121.660719513198,
+            -945.0465710471199
+          ],
+          [
+            -368.39934268419427,
+            -945.0465710471199,
+            31766.490926513423
+          ]
+        ],
+        "eigenvalues": [
+          1284.4366331192368,
+          11123.25903611529,
+          31814.889125791822
+        ],
+        "passed": true,
+        "theta": [
+          0.6623773632852221,
+          0.0005686023839860008,
+          0.01429884826415833
+        ],
+        "objective": 2986.8187322513263,
+        "gradient": [
+          1.587484584455155e-11,
+          -4.959565343757148e-11,
+          -3.61564137741723e-09
+        ],
+        "finite_differences": [
+          {
+            "step": 1e-06,
+            "gradient": [
+              0.0,
+              4.547473508864641e-07,
+              -1.3642420526593924e-06
+            ]
+          },
+          {
+            "step": 1e-07,
+            "gradient": [
+              -4.547473508864641e-06,
+              -1.1368683772161603e-05,
+              1.1368683772161603e-05
+            ]
+          }
+        ],
+        "checks": {
+          "objective_not_worsened": true,
+          "analytic_gradient_pass": true,
+          "both_direct_gradient_checks_pass": true
+        }
+      }
+    ],
+    "scope": "Local proposals only. Existing1e-3 criterion unchanged; both Hessian-step proposals must pass. Original all-face/start diagnostics and full output audit remain required. No fit replacement."
+  },
+  "scope": "One previously diagnosed case reproduced by guarded reusable routine; no stored fit or review flag changed. Wider applicability and integration require completed refinement audit."
+}

@@ -332,3 +332,21 @@ Checker: `scripts/check_refinement_curvature_proposals.py`; proof:
 This verifies the two fixed proposals locally. Incorporation into a reusable,
 audited refinement procedure and full-grid integration remain outstanding;
 the original stored review flag has not been changed.
+
+The diagnostic is now implemented in `scripts/interior_gradient_polish.py`.
+It explicitly declines points near fixed bounds, rejects nonpositive curvature,
+retains both Hessian-step proposals, and requires each to avoid worsening the
+direct objective and pass analytic and both direct finite-difference checks
+under the existing 1e-3 criterion. It does not select or replace a production
+fit. Mathematical fixtures checked a known quadratic minimum, a stationary
+no-op, boundary handling, invalid parameters, negative curvature, and an
+intentionally inconsistent gradient rejected by direct differences. Evidence:
+`metadata/interior_gradient_polish_fixture_checks_20260929.json`.
+
+`scripts/check_interior_polish_case.py` reproduced both previously checked
+real-case proposals through this guarded implementation. Its complete inputs,
+output and source hashes are recorded in
+`metadata/interior_gradient_polish_case_checked_20260929.json`. Application to
+other flags and any integration remain gated on the full refinement audit;
+boundary cases and disagreements among starts are not resolved by this local
+routine.
