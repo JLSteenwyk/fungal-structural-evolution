@@ -350,3 +350,30 @@ Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
 Plan/launch: `metadata/matching_target_measurement_readback_plan_20260928.json`
 and `metadata/matching_target_measurement_readback_launch_20260928.json`.
 Independent validation remains pending; no effects have been estimated here.
+
+## Target join verified; matched measurement assembly running
+
+The full independent target readback passed all 436,946 rows and 16,167,002
+structural fields. It checked original alignment-queue endpoint identities,
+source model metadata and all explicit exclusions. Producer and checker both
+exited successfully; completion evidence is
+`metadata/matching_target_measurements_completed_20260928.json`.
+
+`scripts/assemble_matched_structural_measurements.py` now assembles all 52,675
+unique selected target/background pairs under both masks (105,350 rows), linking
+unaltered structural fields to the existing species-contrast pattern IDs. It
+also preserves family, gene-tree node, taxa, sequence distances and all six
+endpoint/mask eligibility bitsets. Every pair's original selection multiplicity
+is checked against the 2,786,912 fixed selections. Multiplicity records repeated
+use across scenarios; it is not a statistical weight or independent replication.
+The original selection table continues to identify each policy/scenario.
+
+All input-order and endpoint-specific structural fields remain separate: no
+outcome average or effect model is chosen at this stage. The five existing
+species kernels remain prospective nuisance covariance alternatives, not fitted
+structural processes. Source receipts and tables are checked before and after
+assembly. Independent row reconstruction is required before modeling.
+Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes and
+under 2 GiB output. Plan and exact launch identity:
+`metadata/matched_structural_measurements_plan_20260928.json` and
+`metadata/matched_structural_measurements_launch_20260928.json`.

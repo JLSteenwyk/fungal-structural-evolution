@@ -1,0 +1,23 @@
+{
+  "script": "scripts/assemble_matched_structural_measurements.py",
+  "script_sha256": "5f68114b9bdc207858d364809fbf2e13b748b3aea5f21b37384fbb4e2570743b",
+  "pins": {
+    "metadata/matching_target_measurements_completed_readback_20260928.json": "2251196a8ea6a65635aad68165fc5475a56ddb5bf8f2818c03650a0a35da79bc",
+    "metadata/background_candidate_measurements_completed_20260928.json": "5aaa514bd253618efec676f4b21cddd24f0a4c9e019ecd8b29cd8e0c260c9ee3",
+    "metadata/fixed_match_structural_attrition_completed_readback_20260928.json": "18903f1a1c9469d821fcad8081eaa4e784f4b0dbfc2f94c1c414c8983a8f24cb",
+    "results/phylogeny/matched-species-contrasts-20260927-v1/receipt.json": "cb1c7cc3cf1a0a97debf7ea62251766796a1fa8accea27efd36269d8fd8b1e31"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All52675 unique matched pairs x2 masks; unchanged outcomes, endpoint eligibility and species pattern identity. Independent readback required before modeling."
+}
