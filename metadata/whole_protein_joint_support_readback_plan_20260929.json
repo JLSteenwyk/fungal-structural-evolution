@@ -1,0 +1,25 @@
+{
+  "launch": "metadata/whole_protein_joint_support_launch_20260929.json",
+  "proof": "metadata/whole_protein_joint_support_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_whole_protein_joint_support.py": "26fc2a4c2085f34c67de6f8522621c4ffb5fecfec928b5c7c7bd4d47355c66f7",
+    "scripts/readback_whole_protein_input_inventory.py": "ebf2bd47870fbc145d7c214e7982918f7cd00d230c0ed229ec4b064cca691a6a",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_joint_support_launch_20260929.json": "1835c1cfa668143eabd6fcee1580966e9ec521f6fd4d5dfee682e0fd69a106f7",
+    "metadata/whole_protein_joint_support_plan_20260929.json": "9ff168e49a991a445703094c95b313960c209e26f3ae18eab47093a6713c7ad0"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.5,
+      16
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All unique geometry certificates and all414720 setting/outcome links; independent matrix and row identity reconstruction; optimizer never called."
+}

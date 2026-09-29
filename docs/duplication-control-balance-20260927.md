@@ -752,3 +752,16 @@ geometry before exact reuse. Up to 207,360 geometries are possible; pathological
 This is a full-design run, with no pilot or subsampling. Supported-point and
 joint-exclusion fixtures passed separate certificate checks. The queued launch
 is not a completed assessment or evidence of adequate biological overlap.
+
+The complete joint-support checker is queued as
+`fungal-whole-protein-joint-support-readback-20260929.service` using
+`scripts/readback_whole_protein_joint_support.py`. It reconstructs covariates
+through the separate inventory-checker implementation, rebuilds row identities
+from pair/family/species-pattern components, checks every input's numeric hash,
+and validates each unique support certificate without an optimizer. All unique
+input mappings and all 414,720 setting/outcome links are included, with explicit
+unresolved classifications. Plan and launch identity:
+`metadata/whole_protein_joint_support_readback_{plan,launch}_20260929.json`.
+Resources: one CPU, 24 GiB memory, no swap, 0.5–16 hours planning allowance,
+no GPU or paid resources. Full serialized validation is pending successful
+support-producer completion.
