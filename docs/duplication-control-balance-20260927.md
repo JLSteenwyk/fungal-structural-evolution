@@ -499,3 +499,36 @@ no swap/GPU/paid resources; estimated 0.1–8 hours after production and under
 0.01 GiB new output. Plan and exact live identity are recorded in
 `metadata/matched_whole_protein_record_readback_plan_20260928.json` and
 `metadata/matched_whole_protein_record_readback_launch_20260928.json`.
+
+## Whole-protein record production complete; design assessment queued
+
+All 96 settings and 41,472 summaries have been produced successfully; all
+aggregate and partition hashes were verified after terminal exit zero.
+Independent reconstruction is running. Producer completion evidence:
+`metadata/matched_whole_protein_records_producer_completed_20260928.json`.
+
+After the full record audit succeeds, `scripts/assess_whole_protein_model_designs.py`
+will assess all 207,360 stratum/design combinations. Five working designs were
+specified before fitting: linear, quadratic and cubic differences in gene-tree
+sequence distance; positive-log sequence-distance difference; and linear
+alignment-identity difference. Polynomial predictors are differences of powers
+of the two distances, not powers of their difference. Each design also includes
+original-coverage difference, log aligned-length ratio and joint-confidence
+fraction difference. Log-distance designs retain only both-positive pairs,
+explicitly recording the changed population; no cross-population likelihood
+comparison is justified by this preparation.
+
+Every group, including empty groups, retains constant and nonzero-constant
+columns, numerical rank, singular values, residual degrees of freedom, marginal
+zero overlap, family/taxon/pattern counts and control reuse. Pivoted QR provides
+a second check on SVD rank. Marginal zero overlap is not joint overlap; numerical
+rank is not adequacy or calibration. Nonzero constants flag a changed intercept
+interpretation instead of being silently removed. Gene-tree distances remain
+relative divergence, not time-calibrated rates. No effect estimates are produced
+by this assessment, and independent output reconstruction remains required.
+
+Fixtures passed for empty, collinear and constant designs, zero-distance
+exclusions and polynomial differences. Resources: one CPU, 24 GiB memory,
+no swap/GPU/charges, estimated 0.1–12 hours after the audit and under 2 GiB output.
+Plan and exact launch identity: `metadata/whole_protein_model_design_plan_20260928.json`
+and `metadata/whole_protein_model_design_launch_20260928.json`.

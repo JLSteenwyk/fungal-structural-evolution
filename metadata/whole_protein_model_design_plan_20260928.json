@@ -1,0 +1,26 @@
+{
+  "script": "scripts/assess_whole_protein_model_designs.py",
+  "script_sha256": "f808b16b8c18bcf320f4989711dd86f2700501233141ae8ddc38db65b08746dd",
+  "producer_audit_launch_sha256": "cf6a55a824eec9d6b473c482fe19d4dad899c8ada4eaae3212e660970461e3d7",
+  "variants": [
+    "gene_distance_linear",
+    "gene_distance_quadratic",
+    "gene_distance_cubic",
+    "positive_log_gene_distance_linear",
+    "alignment_identity_linear"
+  ],
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All207360 designs, no outcome fitting; check constants/rank/support/reuse/zero-distance membership after full input audit; independent output readback required",
+  "fixtures": "Empty, collinear, zero/nonzero constant, zero-distance exclusion and difference-of-powers checks passed"
+}
