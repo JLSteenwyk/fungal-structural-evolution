@@ -1,0 +1,29 @@
+{
+  "script": "scripts/diagnose_refinement_gradient.py",
+  "fit": "results/model_validation/flagged-polynomial-refinements-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264__mafft_guide.json",
+  "inputs": "results/model_validation/flagged-polynomial-inputs-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264.npz",
+  "factor": "results/phylogeny/matched-species-covariance-factors-20260927-v1/mafft_guide.npz",
+  "output": "results/model_validation/refinement-gradient-diagnostic-20260928-v1",
+  "pins": {
+    "scripts/diagnose_refinement_gradient.py": "a176e1b46c403922ffc3a4d8f9d96921e89359762ba49472816568787d6cf579",
+    "results/model_validation/flagged-polynomial-refinements-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264__mafft_guide.json": "99cfa051216f61a443adb766fb9f037ba0ad09acd7e6aa16f18975bc6e6a4c79",
+    "results/model_validation/flagged-polynomial-inputs-20260928-v1/2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264.npz": "213e1b817ec8de1bdf736ef75b6493406e7226a6991b9b54641e0e8fbdf9c1d1",
+    "results/phylogeny/matched-species-covariance-factors-20260927-v1/mafft_guide.npz": "fc66c4fc67e318000bb47ca5a13e2180b9c6be5657e36f9162e3b7ccf758a2bd",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "25 direct likelihood evaluations at fixed candidate; no fitting or acceptance changes."
+}

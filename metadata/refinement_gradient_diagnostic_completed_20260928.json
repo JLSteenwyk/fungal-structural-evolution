@@ -1,0 +1,20 @@
+{
+  "status": "completed_direct_gradient_diagnostic_flag_supported",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt_sha256": "360e3e535874c3d40a5a4e93e5bc6adaca9b6ab943aff5933ee33c881f3ee540",
+  "rows": 12,
+  "species_step_1e_minus_6": {
+    "component": "species",
+    "log1p_step": "1e-06",
+    "objective_plus": "2986.8187322684057",
+    "objective_minus": "2986.818732266059",
+    "analytic_gradient": "0.0011737104679810464",
+    "central_difference": "0.0011732481652870774",
+    "difference_from_analytic": "-4.6230269396896687e-07"
+  },
+  "interpretation": "Direct finite difference supports analytic gradient exceeding fixed1e-3 acceptance criterion; other step sizes show truncation/cancellation sensitivity. Keep original review status. No optimization or tolerance changes."
+}

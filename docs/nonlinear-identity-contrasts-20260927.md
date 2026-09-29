@@ -291,3 +291,19 @@ mathematical implementation. Resource limits are one CPU, 16 GiB RAM, no swap,
 and 0.1–8 planned hours after the producer. Plan and launch records use
 `metadata/flagged_polynomial_refinement_readback_*_20260928.json`. No refined
 production status is accepted solely from the live progress log.
+
+## Direct gradient diagnostic for an unresolved refinement
+
+For input `2212faa1575538e761e1aa1e1a9ff90ad892c05f1b0b75b40c623efba7f99264`
+under `mafft_guide` (8,201 records), refinement still failed the projected
+gradient threshold. The optimizer reported relative-objective convergence, but
+the species derivative was 0.00117371047, above the fixed 0.001 criterion.
+`scripts/diagnose_refinement_gradient.py` evaluated the direct likelihood at
+four central-difference steps per component, preserving every estimate. At
+step 1e-6 the species derivative was 0.00117324817, supporting the analytic
+flag. Larger steps show truncation effects and the smallest step shows
+cancellation sensitivity; none is used to relax acceptance or replace the
+fit. All 25 likelihood evaluations completed successfully. Evidence:
+`metadata/refinement_gradient_diagnostic_completed_20260928.json`; full table:
+`results/model_validation/refinement-gradient-diagnostic-20260928-v1`.
+Further numerical refinement remains necessary for this candidate.
