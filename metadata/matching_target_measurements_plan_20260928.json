@@ -1,0 +1,22 @@
+{
+  "script": "scripts/link_matching_target_measurements.py",
+  "script_sha256": "7d70663330ba4d86a9d54c09e6cd95955e49c5a611d02561d1ad71202f929154",
+  "pins": {
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/primary_order_summary_completed_20260927.json": "7514453fb6cd610e8e72787d701d584998691cdaa68299b86f7d1cb7358b2002",
+    "results/orthology/background-match-graph-20260927-v1/receipt.json": "e7cdea40baebef4ddf6365667253e2d7d23d418986312281248ac8ed55a723a4"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 2,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All218473 target nodes, both masks, original gene-tree and model identity, canonical endpoint orientation, explicit numerical exclusions; serialized full field readback and subsequent independent audit required"
+}

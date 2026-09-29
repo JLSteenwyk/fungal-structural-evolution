@@ -303,3 +303,28 @@ every measured covariate. This is a descriptive standardized difference with
 205 retained pairs, not an independent-sample significance test. Guide and screen
 alternatives remain dependent; their agreement is not replication. No outcome
 or screen has been selected as a confirmatory primary analysis from these plots.
+
+## Target structural-measurement join running
+
+`scripts/link_matching_target_measurements.py` joins every original matching
+target to the audited primary pair/mask/order summaries. The output keeps all
+218,473 graph nodes under both masks (436,946 rows), preserving guide, family,
+gene-tree node, gene and model identities, sequence distances, coordinate/source
+checksums and confidence covariates. Fit columns explicitly retain canonical
+model endpoints and both input orders; target endpoint orientation is recorded.
+Same-model targets receive blank measurements, while excluded or unavailable
+fits retain their source dispositions. No zero outcome is imputed.
+
+This table complements the completed background-candidate measurement join and
+will support outcome/design assembly against the already frozen fixed matches
+and species-contrast kernels. It does not refit models or estimate duplication
+effects. All original fields and structural-summary fields will be compared
+again after serialization; a separate independent readback remains required.
+The output retains the older matching atlas, not the newly expanded targets.
+
+Plan and exact launch identity:
+`metadata/matching_target_measurements_plan_20260928.json` and
+`metadata/matching_target_measurements_launch_20260928.json`.
+Resources: one CPU, 8 GiB memory, no swap/GPU/paid resources; estimated 1–30 minutes
+and under 2 GiB output. Output root:
+`results/structural_comparisons/matching-target-measurements-20260928-v1`.
