@@ -822,3 +822,17 @@ The exact recipe census contains 453,351,822 row occurrences, requiring
 1–8 hours planning allowance, no GPU or paid resources. Runtime remains an
 estimate. The output directory is
 `results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1`.
+
+The full materialized-input checker is also queued:
+`scripts/readback_whole_protein_materialized_inputs.py`. It waits for the exact
+producer process and successful terminal state, verifies source/output hashes,
+and reconstructs every matrix with the separate inventory-checker predictor
+implementation. Row identities are rebuilt from target/control, family-component
+and species-pattern fields; group codes use a separate sorted-label mapping.
+Every stored background/family code and species-pattern index is compared.
+All recipe IDs, row occurrences and serialized byte totals must agree.
+Fixtures passed and deliberate corruptions in each of the five array types were
+rejected. Plan and process identity are in
+`metadata/whole_protein_materialized_input_readback_{plan,launch}_20260929.json`.
+Resources: one CPU, 24 GiB, no swap, 1–12 hours planning allowance, small proof
+output, no GPU or paid resources. Full-data validation remains pending.

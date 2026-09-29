@@ -1,0 +1,25 @@
+{
+  "launch": "metadata/whole_protein_materialized_inputs_launch_20260929.json",
+  "proof": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+  "pins": {
+    "scripts/readback_whole_protein_materialized_inputs.py": "481bfdc7f43fce463fd7a23dffea0c89cbfc48c69ad05a1f3748b9d20e1740e0",
+    "scripts/readback_whole_protein_input_inventory.py": "ebf2bd47870fbc145d7c214e7982918f7cd00d230c0ed229ec4b064cca691a6a",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_protein_materialized_inputs_launch_20260929.json": "3cecaf99de5c2a8d4b4468b3d22ddcec3e47b01f3cdc3aee862ffb75ad622280",
+    "metadata/whole_protein_materialized_inputs_plan_20260929.json": "1ca05aeca0e9c334cc252757b65ceb6ceab4fe8b24b03bfdd11bb836e2ac47c6"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "planning_hours": [
+      1,
+      12
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "prelaunch_checks": "Known matrix/group/identity/pattern fixture passes; one corruption in each of the five serialized arrays rejected.",
+  "scope": "All 75070 materialized inputs; every array compared to independent source reconstruction. Shared source formats and independent inventory-checker predictor reconstruction, no producer materialization helpers."
+}
