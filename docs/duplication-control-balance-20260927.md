@@ -628,3 +628,12 @@ Scripts: `scripts/assess_whole_protein_model_designs_v2.py` and
 `scripts/readback_whole_protein_model_designs_v2.py`. Resource plans and exact
 process launch records use the metadata stems `whole_protein_model_design_v2`
 and `whole_protein_model_design_readback_v2` dated 20260928.
+
+The compensated-sum checker completed successfully at 23:26:57 EDT. All 15,552
+values passed, with maximum absolute difference 5.107e-15. The original group's
+7,298 records gave 0.06394882038337703, agreeing with the stored value. Both
+checks now support continuing with the unchanged data, while the historical
+cause remains unresolved. The v2 design producer and its waiting independent
+checker were verified live by exact process identity. Proofs:
+`metadata/whole_protein_failed_setting_fsum_completed_20260928.json` and
+`metadata/whole_protein_summary_validation_recovery_20260928.json`.

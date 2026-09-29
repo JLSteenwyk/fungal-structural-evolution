@@ -1,0 +1,23 @@
+{
+  "status": "both_summary_checks_passed_versioned_design_jobs_live",
+  "compensated_check_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "compensated_proof_sha256": "3b712f44e24cd00e0bf2831266ab01310886260ea6ad584dc8d90eb09a8bed1d",
+  "full_replay_proof_sha256": "f12e78686f939f9d0a270a4763730f1ee139eefb88743256e5e3870a3481e291",
+  "active_processes": {
+    "whole_protein_model_design_v2": {
+      "pid": 2652511,
+      "status": "running",
+      "cpu_seconds": 62.059999999999995
+    },
+    "whole_protein_model_design_readback_v2": {
+      "pid": 2652515,
+      "status": "sleeping",
+      "cpu_seconds": 0.7000000000000001
+    }
+  },
+  "historical_cause": "unresolved; historical failure preserved; no data edits or tolerance changes"
+}

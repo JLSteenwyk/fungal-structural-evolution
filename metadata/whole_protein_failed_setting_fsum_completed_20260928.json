@@ -1,0 +1,38 @@
+{
+  "status": "passed_compensated_sum_check_of_all_failed_setting_summaries",
+  "setting": [
+    "plddt70",
+    "same_mask",
+    "n50_c70",
+    "0",
+    "0"
+  ],
+  "groups": 432,
+  "cells_checked": 15552,
+  "maximum_absolute_error": 5.10702591327572e-15,
+  "original_failure_group": {
+    "records": 7298,
+    "stored": 0.06394882038337699,
+    "fsum_mean": 0.06394882038337703
+  },
+  "source_hashes": {
+    "results/structural_comparisons/matched-whole-protein-records-20260928-v1/receipt.json": "ce013343270a97343faa15cc4df57497dfe9086d023a69c3d04155741224c502",
+    "results/structural_comparisons/matched-whole-protein-contrasts-20260928-v1/receipt.json": "b6e1ac0ee94fb22d9380661ef8d632a3f741eaf2ae2a19adc2c10d21da5c4982",
+    "results/structural_comparisons/matched-whole-protein-contrasts-20260928-v1/whole_protein_contrasts.tsv.gz": "fa4ecc3dc72b07ee849fbecdd6974c88cef13dbdf11ba692ce6a7da3cde2f52d",
+    "metadata/matched_whole_protein_contrasts_completed_readback_20260928.json": "a712e254272a4b46f51fa7b9d1b26ed9bd0042a8d3b2f40e7f7236215948ae91",
+    "results/orthology/background-control-selection-20260927-v1/receipt.json": "240016892e007832d3816f855918f12978afbafdb4ebbc492a2d8d2b126c4744",
+    "results/orthology/background-control-selection-20260927-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/background-control-selection-20260927-v1/target_policy_selection_status.tsv": "c6b851af81727c013cd43a9c07ea7649732ceea662908304cecdb725bf8df2b1",
+    "results/orthology/background-control-selection-20260927-v1/selections.tsv.gz": "b4229ffdefb9312ae0421e1e4fae15ba5d83cd75e003ea2a901a634834360501",
+    "results/orthology/background-control-selection-20260927-v1/background_reuse.tsv": "8dbb5f8dd10dab387adb246487fb4392f5704736d10c9916bb636efb1d8e1cff",
+    "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1/receipt.json": "7aa3e0cc8bbf55975ca664fed6b5787ffec4dc3e315ad6723beef4a51d94eba7",
+    "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1/selection_eligibility.tsv.gz": "14ed2b094660ee66c47d6a183350b35c0ffbeb80fbded000a3440609223d5ae2",
+    "results/structural_comparisons/fixed-match-structural-attrition-20260928-v1/attrition_summary.tsv": "6c9db30463a646ec2481cd6df926e6f8d1cc59449cf12c13b30b05225a5b6548",
+    "metadata/fixed_match_structural_attrition_completed_readback_20260928.json": "18903f1a1c9469d821fcad8081eaa4e784f4b0dbfc2f94c1c414c8983a8f24cb",
+    "results/structural_comparisons/matched-whole-protein-records-20260928-v1/record_summary.tsv": "ad8823f564817dbe73abf79404e6cb1ad7b0914df111a53bfd4e02b0892880b7",
+    "results/structural_comparisons/matched-whole-protein-records-20260928-v1/partition_manifest.json": "6a300fb8be884c3bd550a547f3a8d418fea624ccef886162ede404c10f3240e1",
+    "results/structural_comparisons/matched-whole-protein-records-20260928-v1/pair_values/064.parquet": "6e0c27b507833810f3b415fc398d3b87fba7306b5aec19003ea098821d107b15"
+  },
+  "script_sha256": "3d09672f52dffe5f2d435b5ba1d9db398b81fbcb62c5b0c3694beb9541163000",
+  "scope": "All 432 strata and 12 metrics under three weighting schemes in the historically discrepant setting. Explicit math.fsum within each record/family/taxon group; no pandas or SQL mean. This does not identify the cause of the historical failure or validate other settings."
+}
