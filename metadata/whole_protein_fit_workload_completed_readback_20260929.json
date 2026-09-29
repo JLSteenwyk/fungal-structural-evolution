@@ -1,0 +1,18 @@
+{
+  "status": "passed_whole_protein_workload_arithmetic_readback",
+  "unique_inputs": 75070,
+  "tree_fits": 375350,
+  "coverage_counts": {
+    "covered_size_stratum": 187650,
+    "outside_observed_record_range": 93300,
+    "missing_size_stratum": 94400
+  },
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_result_sha256": "55b7ea04c106922e5e4e2a577b934d0a90bf254aa0330387e38e92ce6d542473",
+  "checker_sha256": "296ec0008cbb5eaa8fe6fc84d5c789335769a5c220e8f71b98a1ac703fc8d4ac",
+  "scope": "Grouped compensated sums independently check coverage and arithmetic. Empirical timing transfer and ideal parallel scaling remain uncalibrated; no full ETA for uncovered inputs, memory bound or fit launch."
+}

@@ -494,3 +494,13 @@ and wrote its first batch at 03:02:32 EDT. It is generating full and pLDDT70 C-a
 inputs; the PDB readback, exact old/new input comparison and workload scenarios
 remain downstream. No expanded alignments or biological effects are claimed
 complete by this coordinate audit.
+
+
+Expanded alignment-input production completed all 277 batches at September 29,
+03:26 EDT. Its 553,364 dispositions comprise 276,682 ready full-model inputs,
+249,733 ready pLDDT70 inputs and 26,949 masks with too few retained residues.
+The PDB files total 13,045,403,371 bytes. The
+[producer completion record](../metadata/duplication_alignment_input_producer_completed_20260929.json)
+binds its terminal success, receipt dependencies and manifest hash. The separate
+full PDB readback started automatically and remains incomplete; expanded native
+alignments and input/result reuse remain pending.

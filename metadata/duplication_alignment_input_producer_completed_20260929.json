@@ -1,0 +1,20 @@
+{
+  "status": "verified_complete_duplication_input_producer_pending_full_pdb_readback",
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "receipt_sha256": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+  "input_manifest_sha256": "df5c21b88a114f9f99bb2df7e758c03495fb38aa1b8e9cbbda48ca94b810e456",
+  "models": 276682,
+  "input_dispositions": 553364,
+  "counts": {
+    "full:ready": 276682,
+    "plddt70:ready": 249733,
+    "plddt70:too_few_retained_residues": 26949
+  },
+  "pdb_bytes": 13045403371,
+  "full_checker_pid": 2791504,
+  "scope": "Producer terminal success, receipt dependencies, input-manifest hash and disposition totals verified. Full PDB numerical/sequence/residue-map audit is now running; no expanded alignment or result reuse claim."
+}

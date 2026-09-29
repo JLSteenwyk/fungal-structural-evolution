@@ -1,0 +1,23 @@
+{
+  "status": "verified_complete_partial_workload_scenarios",
+  "terminal_states": {
+    "fungal-whole-protein-fit-workload-20260929": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-whole-protein-workload-readback-20260929": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "proof_sha256": "de7ef383406993a128a0f6d0e26c9886f59211c68ec1fcf93e6b36ad62255914",
+  "result_sha256": "55b7ea04c106922e5e4e2a577b934d0a90bf254aa0330387e38e92ce6d542473",
+  "coverage_counts": {
+    "covered_size_stratum": 187650,
+    "outside_observed_record_range": 93300,
+    "missing_size_stratum": 94400
+  },
+  "scope": "Arithmetic passed. 187700 fits remain outside historical timing coverage; no full-workload ETA or production fit launch."
+}
