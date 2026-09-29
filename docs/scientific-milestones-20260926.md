@@ -271,3 +271,12 @@ over earlier fits, but23 groups still disagree across starts. Two SIGTERM
 interruptions were preserved and retried as separate attempts after verified
 termination; all successful native attempts are reused. These partial
 diagnostics do not qualify the complete ancestral analysis.
+
+
+September 28 background alignment update: full RMSD discrepancy census completed
+and its entire table/counters/provenance checked. Five of 282,120 successful
+alignments fail original rounding tolerance; all five are two-residue mappings
+confirmed analytically from CA segment lengths. The remaining 282,115 pass
+rounding. Full geometry assessment/readback is still required, and these
+computational checks do not complete the duplication or other evolutionary aims.
+See `docs/terminal-sister-backgrounds-20260927.md` for evidence and limitations.

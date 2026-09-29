@@ -1103,3 +1103,27 @@ The full readback is queued, not completed. Resources are one CPU, 16 GiB RAM,
 no swap or GPU, with an estimated 0.2–8 hours after prerequisites finish and up
 to 1 GiB output. Launch identity and checksums are recorded in
 `metadata/background_alignment_geometry_readback_launch_20260928.json`.
+
+
+### Full background RMSD census completed and checked (September 28)
+
+The diagnostic service finished successfully at 21:34 EDT. Complete table
+membership, plan pins, artifact hashes, counters, all discrepancy fields, and
+terminal success were checked by `scripts/check_completed_background_rmsd_diagnostic.py`.
+The 285,800 dispositions comprise 282,120 successful alignments and 3,680
+explicit unavailable-input dispositions. Of the successful alignments, 282,115
+pass the unchanged 0.00501 Å rounding tolerance and five fail. All five are
+confidence-masked two-residue mappings across three distinct model pairs.
+Maximum RMSD discrepancy is 0.013327706036000187 Å. Across the full table,
+19 mappings contain one aligned residue, 58 contain two, and 282,043 contain
+at least three.
+
+`scripts/check_background_two_point_discrepancies.py` independently confirmed
+all five flagged RMSDs using half the absolute difference between the two CA
+segment lengths. This exact two-point formula agrees with the reconstructed
+least-squares RMSDs within 1e-10 Å. The native discrepancies remain flagged;
+this does not establish their software-level cause. Two-point mappings do not
+determine a unique rotation. Full geometry assessment and its independent
+readback remain in progress/queued, and scientific eligibility remains false.
+Evidence is recorded in `metadata/background_rmsd_diagnostic_completed_20260928.json`
+and `metadata/background_two_point_discrepancy_review_20260928.json`.

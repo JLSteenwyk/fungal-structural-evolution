@@ -1,0 +1,74 @@
+{
+  "status": "verified_all_background_discrepancies_by_two_point_distance_formula",
+  "checker_sha256": "3afc721827cb562233d1ab2bf3440d667fd876b77736818eca3c5c4c6587b387",
+  "diagnostic_completion_sha256": "b5e7bd30033da3138aaa9f970be5e602753b5c4b3bbe99cb9ee58006a05e6db3",
+  "diagnostic_receipt_sha256": "f50f8833fe9837898212610a254566cc674917bcc04b4dbdc8150de48108eed2",
+  "checked": [
+    {
+      "pair_key": "46fe5d6fa91d7c78940fc75529f97605f872c2050a8b37558c85e19e8da86b10",
+      "mask": "plddt70",
+      "order": 0,
+      "checkpoint_sha256": "b76bbd4c5dbcd023b9569b3aaab844a4ce4e18edecbbf11c30954d95f71245fd",
+      "segment_lengths": [
+        3.8138125281665327,
+        3.840467940238533
+      ],
+      "analytic_rmsd": 0.013327706036000198,
+      "reconstructed_rmsd": 0.013327706036000187,
+      "native_rmsd": 0.0
+    },
+    {
+      "pair_key": "a3ba5a8515306ecdf4b029a72289c5706d2b88762a2b2b58863d7ed7be46eb88",
+      "mask": "plddt70",
+      "order": 0,
+      "checkpoint_sha256": "0fd5783e13fa20aa6aa920bff98bbc23268d6a0318f554b1924a8fe31a55e6e5",
+      "segment_lengths": [
+        5.510883141566332,
+        5.593974883747693
+      ],
+      "analytic_rmsd": 0.04154587109068064,
+      "reconstructed_rmsd": 0.04154587109068065,
+      "native_rmsd": 0.03
+    },
+    {
+      "pair_key": "a3ba5a8515306ecdf4b029a72289c5706d2b88762a2b2b58863d7ed7be46eb88",
+      "mask": "plddt70",
+      "order": 1,
+      "checkpoint_sha256": "20bc39004dc2204822c3d7d99cee9c14798a2a44347513621df16f51a2ddd3b2",
+      "segment_lengths": [
+        5.593974883747693,
+        5.510883141566332
+      ],
+      "analytic_rmsd": 0.04154587109068064,
+      "reconstructed_rmsd": 0.04154587109067965,
+      "native_rmsd": 0.03
+    },
+    {
+      "pair_key": "d08ed45cba8f82d4e1199796c0147009ae6e1b807590d31c7478bb162c2de490",
+      "mask": "plddt70",
+      "order": 0,
+      "checkpoint_sha256": "bb04ca9e6fdc9453a31bc7a2c96496d202fe4ee54d72801d043c157ae84cbdd9",
+      "segment_lengths": [
+        6.497610791667965,
+        6.203245682705143
+      ],
+      "analytic_rmsd": 0.14718255448141093,
+      "reconstructed_rmsd": 0.14718255448141196,
+      "native_rmsd": 0.14
+    },
+    {
+      "pair_key": "d08ed45cba8f82d4e1199796c0147009ae6e1b807590d31c7478bb162c2de490",
+      "mask": "plddt70",
+      "order": 1,
+      "checkpoint_sha256": "c97dddf2dbfd9330879fbd6c241e9c588f364588f3affe5665d06c6e52d4c15c",
+      "segment_lengths": [
+        6.203245682705143,
+        6.497610791667965
+      ],
+      "analytic_rmsd": 0.14718255448141093,
+      "reconstructed_rmsd": 0.1471825544814118,
+      "native_rmsd": 0.14
+    }
+  ],
+  "scope": "Every flagged background mapping contains exactly two paired CA atoms. Optimal proper-rotation RMSD is half the absolute difference in segment lengths, independently confirming the reconstructed RMSD. Rotation is nonunique. Native rounding discrepancies remain flagged; no cause within native software or biological eligibility is inferred."
+}

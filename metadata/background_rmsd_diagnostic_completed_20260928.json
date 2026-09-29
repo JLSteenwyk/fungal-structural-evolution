@@ -1,0 +1,115 @@
+{
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "checker_sha256": "6b338a1fff247573bae8df4ca81bf90d6717a92ed8812cd9212bb0463dde840c",
+  "discrepancy_aligned_lengths": {
+    "2": 5
+  },
+  "status": "verified_completed_background_rmsd_diagnostic_not_scientific_acceptance",
+  "receipt": "results/structural_comparisons/background-alignment-rmsd-diagnostic-20260928-v1/receipt.json",
+  "receipt_sha256": "f50f8833fe9837898212610a254566cc674917bcc04b4dbdc8150de48108eed2",
+  "plan_sha256": "7e0db1101ffbe0b15376b853635317fdd04aaedf6fed0eda536e37dbea71a1c9",
+  "numeric_rows": 282120,
+  "explicit_unavailable": 3680,
+  "rmsd_status_counts": {
+    "within_printed_rounding": 282115,
+    "outside_printed_rounding": 5
+  },
+  "aligned_length_counts": {
+    "at_least_3": 282043,
+    "1": 19,
+    "2": 58
+  },
+  "maximum_rmsd_discrepancy": 0.013327706036000187,
+  "discrepancies": [
+    {
+      "pair_key": "46fe5d6fa91d7c78940fc75529f97605f872c2050a8b37558c85e19e8da86b10",
+      "mask": "plddt70",
+      "order": 0,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.013327706036000187,
+      "rmsd_native": 0.0,
+      "rmsd_rounding_error": 0.013327706036000187,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.39972,
+      "tm_right_native": 0.49964,
+      "coverage_left": 0.4,
+      "coverage_right": 0.5,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "a3ba5a8515306ecdf4b029a72289c5706d2b88762a2b2b58863d7ed7be46eb88",
+      "mask": "plddt70",
+      "order": 0,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.04154587109068065,
+      "rmsd_native": 0.03,
+      "rmsd_rounding_error": 0.01154587109068065,
+      "sequence_identity_exact": 0.5,
+      "tm_left_native": 0.39726,
+      "tm_right_native": 0.6621,
+      "coverage_left": 0.4,
+      "coverage_right": 0.6666666666666666,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "a3ba5a8515306ecdf4b029a72289c5706d2b88762a2b2b58863d7ed7be46eb88",
+      "mask": "plddt70",
+      "order": 1,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.04154587109067965,
+      "rmsd_native": 0.03,
+      "rmsd_rounding_error": 0.01154587109067965,
+      "sequence_identity_exact": 0.5,
+      "tm_left_native": 0.6621,
+      "tm_right_native": 0.39726,
+      "coverage_left": 0.6666666666666666,
+      "coverage_right": 0.4,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "d08ed45cba8f82d4e1199796c0147009ae6e1b807590d31c7478bb162c2de490",
+      "mask": "plddt70",
+      "order": 0,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.14718255448141196,
+      "rmsd_native": 0.14,
+      "rmsd_rounding_error": 0.007182554481411946,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.61351,
+      "tm_right_native": 0.23006,
+      "coverage_left": 0.6666666666666666,
+      "coverage_right": 0.25,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    },
+    {
+      "pair_key": "d08ed45cba8f82d4e1199796c0147009ae6e1b807590d31c7478bb162c2de490",
+      "mask": "plddt70",
+      "order": 1,
+      "rmsd_status": "outside_printed_rounding",
+      "aligned_length": 2,
+      "rmsd_recomputed": 0.1471825544814118,
+      "rmsd_native": 0.14,
+      "rmsd_rounding_error": 0.007182554481411779,
+      "sequence_identity_exact": 0.0,
+      "tm_left_native": 0.23006,
+      "tm_right_native": 0.61351,
+      "coverage_left": 0.25,
+      "coverage_right": 0.6666666666666666,
+      "joint_plddt70_pairs": 2,
+      "joint_plddt70_fraction": 1.0
+    }
+  ],
+  "verification": "All plan pins, producer binding, artifact hashes, exact successful checkpoint key set, table counts and error classification checked. No independent recomputation of all coordinates in this completion check; full diagnostic performs that reconstruction. Downstream eligibility remains false."
+}
