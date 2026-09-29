@@ -377,3 +377,23 @@ Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes 
 under 2 GiB output. Plan and exact launch identity:
 `metadata/matched_structural_measurements_plan_20260928.json` and
 `metadata/matched_structural_measurements_launch_20260928.json`.
+
+### Matched measurement assembly complete; full readback running
+
+Assembly finished successfully at 22:51 EDT with 105,350 rows representing all
+52,675 unique fixed pairs and both masks. Per mask, 48,909 pairs have measured
+models on both sides; 3,606 have identical-model dispositions on both sides,
+96 only on the control side, and 64 only on the target side. Measured here means
+an alignment disposition is available, not that a coverage screen is passed.
+Blank outcomes remain explicit. The 2,786,912 original scenario-specific uses
+are preserved through the original selection table and checked multiplicities.
+
+The independent stage `scripts/readback_matched_structural_measurements.py`
+checks every source outcome field, matching-node identity, screen bitset and
+selection multiplicity, plus exact full pair/mask membership. It reconstructs
+all species index assignments and contrast hashes directly from focal and
+background taxa, including shared-taxon cancellation. All source checksums are
+rechecked after reconstruction. Full completion remains pending.
+Plan/launch: `metadata/matched_structural_measurement_readback_plan_20260928.json`
+and `metadata/matched_structural_measurement_readback_launch_20260928.json`.
+Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
