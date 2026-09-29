@@ -1137,3 +1137,20 @@ audit. It also records the cross-tabulation of mask, geometry, and RMSD status.
 The terminal gate was verified to refuse completion while the producer is active.
 No completed geometry record has yet been written; run the recorder only after
 both services finish successfully.
+
+### Whole-protein geometry production complete; independent audit running
+
+The producer completed successfully with all 282,120 alignment geometries.
+Complete output membership, counters, hashes, and unchanged numeric diagnostic
+flags have been checked. It reports 282,043 unique rotations at the numerical
+tolerance (142,900 full and 139,143 confidence-masked), and 77 nonunique
+confidence-masked rotations. The latter are exactly the 19 one-residue and
+58 two-residue mappings. All five RMSD discrepancies belong to this group;
+72 other nonunique mappings pass rounding. Rounding agreement alone therefore
+does not establish an identifiable rotation.
+
+The independent quaternion audit started automatically and is actively
+computing. Numerical uniqueness is not stability under coordinate uncertainty
+or biological eligibility. The production-only evidence is recorded in
+`metadata/background_alignment_geometry_producer_completed_20260928.json`.
+The final completion recorder must wait for the independent audit to finish.

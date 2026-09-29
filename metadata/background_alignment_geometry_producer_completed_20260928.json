@@ -1,0 +1,36 @@
+{
+  "status": "complete_geometry_production_table_verified_independent_audit_running",
+  "plan_sha256": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+  "receipt_sha256": "5b46db08bc5c64c37eda56829d85b6db4d1a3c494f60333ac7fe09858245dd50",
+  "receipt": {
+    "status": "complete_background_alignment_geometry_pending_independent_readback",
+    "plan_sha256": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+    "diagnostic_receipt_sha256": "f50f8833fe9837898212610a254566cc674917bcc04b4dbdc8150de48108eed2",
+    "alignments": 282120,
+    "counts": {
+      "full:unique_at_numeric_tolerance": 142900,
+      "plddt70:unique_at_numeric_tolerance": 139143,
+      "plddt70:degenerate_at_numeric_tolerance": 77
+    },
+    "maximum_rmsd_discrepancy": 0.013327706036000187,
+    "artifacts": {
+      "alignment_geometry.tsv": "bcf3e539f3b32f0f247c1c666633d685dc8694619fe6fc335afa757a1a7816aa"
+    },
+    "scope": "All successful directed whole-protein background alignments; native mappings and numeric diagnostic rechecked from hashed PDBs, coordinate singular spectra and optimal proper-rotation curvature recorded. Numerical identifiability, not prediction accuracy or stability to coordinate/model uncertainty. Existing RMSD quarantine unchanged; no biological inference."
+  },
+  "terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "degenerate_alignment_lengths": {
+    "1": 19,
+    "2": 58
+  },
+  "geometry_by_rmsd_status": {
+    "unique_at_numeric_tolerance:within_printed_rounding": 282043,
+    "degenerate_at_numeric_tolerance:within_printed_rounding": 72,
+    "degenerate_at_numeric_tolerance:outside_printed_rounding": 5
+  },
+  "scope": "Complete table keys, counts and unchanged RMSD flags checked against completed diagnostic. All 77 reported degenerate rows have one or two aligned residues. Full independent quaternion audit remains running; no biological eligibility claim."
+}
