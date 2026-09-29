@@ -121,3 +121,14 @@ both output artifact hashes; the independent full certificate checker is now
 running. Producer classifications remain provisional until that check completes.
 Hull inclusion alone does not establish interior overlap, dense support, model
 adequacy or causal exchangeability.
+
+Inspection of the six unresolved certificates found successful solver statuses
+but negative sparse weights of approximately −4.46e−11 to −7.51e−10. The strict
+nonnegative-weight requirement is the only failed certificate condition in the
+saved values. These geometries map to 30 unique inputs and 112 setting/outcome
+rows. The [diagnostic record](../metadata/whole_protein_unresolved_support_diagnostic_20260929.json)
+preserves the source hashes, negative masses and per-case checks. Classifications
+remain unresolved: no data or tolerances have been changed. Any projected or
+reoptimized weights must form a separately verified certificate against validated
+arrays using the original inclusion tolerance; this inspection does not replace
+the full independent source readback.
