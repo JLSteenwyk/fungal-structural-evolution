@@ -328,3 +328,25 @@ Plan and exact launch identity:
 Resources: one CPU, 8 GiB memory, no swap/GPU/paid resources; estimated 1–30 minutes
 and under 2 GiB output. Output root:
 `results/structural_comparisons/matching-target-measurements-20260928-v1`.
+
+### Target join produced; complete source reconstruction running
+
+The target join finished successfully at 22:47 EDT with all 436,946 rows and
+103,200 distinct measured model pairs represented. Identical-model targets remain
+explicit: 6,354 per guide under each mask. Production checked every original-node
+and fit field after serialization. Full native-order usability is retained for
+102,891 profile and 102,874 MAFFT target records; under pLDDT70 masking, the
+corresponding counts are 90,300 and 90,290. These are overlapping guide records,
+not independent samples or counts after the six coverage screens.
+
+`scripts/readback_matching_target_measurements.py` now reconstructs all rows
+against source nodes, the original native model-pair queue and source summaries.
+It checks model versions, coordinate and sequence hashes, lengths, confidence
+covariates, gene-to-canonical orientation, all original and fit fields, blank
+same-model fits, complete mask membership and counters. Native receipt and queue
+bindings connect endpoint order to the actual alignment run. The checker waits
+for the exact producer identity and requires successful terminal exit before use.
+Resources: one CPU, 8 GiB memory, no swap/GPU/charges, estimated 1–30 minutes.
+Plan/launch: `metadata/matching_target_measurement_readback_plan_20260928.json`
+and `metadata/matching_target_measurement_readback_launch_20260928.json`.
+Independent validation remains pending; no effects have been estimated here.

@@ -1,0 +1,18 @@
+{
+  "script": "scripts/readback_matching_target_measurements.py",
+  "script_sha256": "b4e4a779ba369afd2b61043f76f1afcbe5e8763a0e8b4c5bb676083c84cf8751",
+  "producer_launch_sha256": "ce541948aed6542a079fd67492e6d6f86f28169dc4284a8760892d9ad37e37db",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "planning_minutes": [
+      1,
+      30
+    ],
+    "output_gib": 0.01,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full436946 row independent join verification including original native queue/model bindings, all original and fit fields, masks, explicit blank fits and endpoint orientation"
+}
