@@ -145,9 +145,14 @@ compensated-sum checker. Clipping alone never establishes support. Known exact
 support and strictly outside-hull examples, preservation of the original, and
 corruption rejection passed in the
 [fixture record](../metadata/joint_support_weight_repair_fixtures_20260929.json).
-This function has not been applied to project certificates. Source-array
-validation and the full original-certificate readback have now completed; any
-new witness still requires separate verification.
+The function has now been applied to all six unresolved project certificates
+after source-array validation and full original-certificate readback completed.
+The serialized candidates passed the independent compensated-sum checker against
+all 30 associated exact inputs. The largest scaled barycenter distance was
+5.19e−10, below the unchanged 1e−8 inclusion tolerance. Original certificates and
+classifications remain preserved; downstream support overlay integration is still
+required. The [completion record](../metadata/whole_protein_support_witness_completed_20260929.json)
+binds the reproducible command, successful exit, receipt and output hashes.
 
 Materialization completed 75,070 NPZ inputs representing 453,351,822 record
 occurrences and 375,350 planned tree-specific fits. Output files total

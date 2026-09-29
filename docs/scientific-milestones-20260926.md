@@ -42,14 +42,17 @@ Chronological receipts and process records remain in [progress](progress.md).
   readback completed for all 207,360 sequence/structure model designs; every
   design has full rank and positive residual degrees of freedom. Pair-level
   covariance indexing covers all 52,675 unique target/control pairs. The input
-  inventory is running across 414,720 design/outcome settings, with its complete
-  audit queued. Workload planning and joint zero-reference support are queued
-  behind that audit; independent support-certificate validation is also queued.
-  No whole-protein effect fitting has started. The design milestone is recorded
-  in `metadata/whole_protein_model_designs_v2_audited_20260929.json`.
-  These are validated inputs and design diagnostics, not fitted evolutionary
-  effects or calibrated significance tests. See
-  [matching and validation](duplication-control-balance-20260927.md).
+  inventory and full materialized-array audit completed across 414,720
+  design/outcome settings and 75,070 unique inputs. Workload arithmetic,
+  joint-support certificates and all 829,440 comparison links passed their
+  independent checks. Six original support certificates retain unresolved status;
+  separate corrected witnesses passed independent checks against all 30 affected
+  inputs at the original tolerance, with downstream integration still pending.
+  The full 375,350-fit whole-protein ML run is active with 16 CPU workers and
+  a 128 GiB memory cap. Its complete output audit is queued. Numerical checks,
+  optimization review, comparable-model analysis and calibrated inference remain
+  distinct requirements. See the [current workflow and launch records](whole-protein-workflow-20260929.md)
+  and [matching and validation](duplication-control-balance-20260927.md).
 
 - Expanded AlphaFold resampling and native-output audit completed across all
   125 markers and 75,000 paired draws (23 unestimable). A separate

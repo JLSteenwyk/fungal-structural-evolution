@@ -1,0 +1,18 @@
+{
+  "status": "completed_serialized_whole_protein_support_witness_checks",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/bizon/anaconda3/bin/python scripts/repair_whole_protein_support.py --plan metadata/whole_protein_support_witness_plan_20260929.json",
+  "exit_code": 0,
+  "receipt": "results/model_validation/whole-protein-support-witnesses-20260929-v1/receipt.json",
+  "receipt_sha256": "d866587b4a58cd7f2f671f77ece8cf08a54063b9cbc07656bfc05c598a354f21",
+  "artifacts": {
+    "witnesses.jsonl": "dd91faa00ce7553b9e711fbf48a078a7573c27a1c0ee7fe03bde2db391e4a614"
+  },
+  "geometries": 6,
+  "accepted_geometries": 6,
+  "associated_inputs_checked": 30,
+  "accepted_inputs": 30,
+  "maximum_scaled_barycenter_distance": 5.187366612782263e-10,
+  "inclusion_tolerance": 1e-08,
+  "source_hash_count": 75085,
+  "scope": "Separate witnesses checked with independent compensated summation against every associated audited input. Original certificates unchanged. No interior overlap, calibrated inference or model adequacy established. Downstream support overlay integration remains separate."
+}

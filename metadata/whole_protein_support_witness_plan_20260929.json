@@ -1,0 +1,30 @@
+{
+  "support": "results/model_validation/whole-protein-joint-support-20260929-v1",
+  "inputs": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1",
+  "support_proof": "metadata/whole_protein_joint_support_completed_readback_20260929.json",
+  "input_proof": "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json",
+  "support_check_launch": "metadata/whole_protein_joint_support_readback_launch_20260929.json",
+  "input_check_launch": "metadata/whole_protein_materialized_input_readback_launch_20260929.json",
+  "expected_geometries": 6,
+  "expected_inputs": 30,
+  "output": "results/model_validation/whole-protein-support-witnesses-20260929-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_planning_gib": 4,
+    "output_gib": 0.01,
+    "planning_hours": 0.1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "metadata/whole_protein_joint_support_completed_readback_20260929.json": "94333290c3692be380c1dd377dd727778591081016a7cd69c172886304aa350f",
+    "metadata/whole_protein_materialized_inputs_completed_readback_20260929.json": "e3fd436421ed713baf36c4c8c66d34df5570330e496eebc14c6c2f4be04d82dd",
+    "metadata/whole_protein_joint_support_readback_launch_20260929.json": "57b4766cd3b9e2647a688bc65a8839c07a6a1f2b3ac272d7ee125740d012a65e",
+    "metadata/whole_protein_materialized_input_readback_launch_20260929.json": "d4520dfe7f38b31541e3df5ccbbcf54018be68fc1dd03d9b67fccb040603f362",
+    "scripts/repair_whole_protein_support.py": "4d0786606f6c541498352d5738884926d0481d94581b8c592d62f7a1528e4515",
+    "scripts/repair_joint_support_weights.py": "12a5815db2514543175b5a26595f51aec213907246f046451967e644b8798d25",
+    "scripts/check_joint_support_certificate.py": "90c364dbfc2b90399e8ab523a64fac22b4d398394aed9e74f34fa9ff63e79a85",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/joint_support_weight_repair_fixtures_20260929.json": "e5deb81bc0ab378bf9247ffc0f40f0f9d4b6aeb4ac7bd8e97dd1e2ea205920f1"
+  }
+}
