@@ -150,3 +150,24 @@ Reproduce with `scripts/screen_matched_duplication_target_coverage.py` then
 `scripts/readback_matched_duplication_target_coverage.py`. Output:
 `results/structural_comparisons/matched-target-coverage-20260928-v1`.
 Evidence: `metadata/matched_target_coverage_completed_20260928.json`.
+
+## Full fixed-match structural attrition running
+
+`fungal-fixed-match-structural-attrition-20260928.service` applies the completed
+target and background coverage results to all 2,786,912 frozen selections.
+Original selections are preserved verbatim with added target/background pass
+bitsets; bit positions are bound to the six recorded screen definitions.
+Full, confidence-masked, and both-mask intersection results are retained.
+All 432 guide/policy/scenario strata will have 18 cells (7,776 total), recording
+original targets, metadata matched/unmatched counts, and both-pass,
+target-only-pass, background-only-pass and neither-pass counts. Empty strata
+remain explicit. Background matching-node identities are joined to the exact
+original gene pair and verified against structural pair identities.
+
+No controls are reselected after seeing structural quality. Attrition can change
+the target population; these remain dependent, descriptively matched records.
+Full output and independent readback are still pending. Resource estimate:
+one CPU, 16 GiB RAM, no swap/GPU or charges, up to 2 GiB output, 0.1–2 hours.
+Script: `scripts/assess_fixed_match_structural_attrition.py`; execution plan and
+exact process identity are in `metadata/fixed_match_structural_attrition_plan_20260928.json`
+and `metadata/fixed_match_structural_attrition_launch_20260928.json`.

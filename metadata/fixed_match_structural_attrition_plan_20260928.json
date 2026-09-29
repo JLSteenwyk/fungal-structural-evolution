@@ -1,0 +1,17 @@
+{
+  "script": "scripts/assess_fixed_match_structural_attrition.py",
+  "script_sha256": "55072abc139dd177cf7e87b491564f4d0cdbcd10753456d5fe681106d94051a6",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_gib": 2,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All2786912 frozen matches,432 strata,6 coverage screens and3 mask summaries; complete per-selection bit flags and7776 aggregate cells. Independent readback required."
+}
