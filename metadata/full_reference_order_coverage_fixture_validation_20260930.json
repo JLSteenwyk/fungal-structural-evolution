@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_synthetic_reference_order_and_original_coverage_checks",
+  "pairs": 5,
+  "directed_states": 20,
+  "pair_mask_rows": 10,
+  "screen_decisions": 60,
+  "rejected_rehashed_exports": [
+    "retained_denominator_as_original",
+    "source_order_as_current_direction",
+    "favorable_order_pass",
+    "cleared_quarantine",
+    "changed_version",
+    "deleted_unavailable_row",
+    "changed_row_hash"
+  ],
+  "rejected_rehashed_source": "incorrect_original_length",
+  "scope": "Synthetic metric/source/proof/journal fixture data only, not production qualification or a biological pilot. Both masks/orders, unequal versions, nonlexical current endpoints, reversed old source directions, exact integer/decimal coverage boundaries, retained-denominator trap, all five native statuses, all three numerical exclusions and blank excluded metrics exercised. Producer and independent decimal-ceiling reader both passed."
+}

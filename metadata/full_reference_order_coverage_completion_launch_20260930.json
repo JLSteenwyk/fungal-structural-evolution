@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-reference-order-coverage-completion-20260930.service",
+  "pid": 2963554,
+  "created": 1790805408.32,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json",
+  "plan_sha256": "71836b05ce62a1c07cfeddbf02b200bb2f31a5375e01dcde6ed75ce9357cbcd1",
+  "checked_utc": "2026-09-30T21:56:49.057715+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

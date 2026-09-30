@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-reference-order-coverage-preflight-20260930.service",
+  "pid": 2960917,
+  "created": 1790805271.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/preflight_full_reference_orders_and_coverage.py",
+    "--plan",
+    "metadata/full_reference_order_coverage_input_preflight_plan_20260930.json"
+  ],
+  "plan": "metadata/full_reference_order_coverage_input_preflight_plan_20260930.json",
+  "plan_sha256": "a665e14b9b9d41f55816cba6b9c3dec76b8d936a39163c551d64d8d76048daa5",
+  "checked_utc": "2026-09-30T21:54:45.574188+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

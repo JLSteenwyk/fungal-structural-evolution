@@ -139,3 +139,20 @@ Independent full field reconstruction and both union process journals precede
 downstream qualification. Keep large byte indexes outside Git with versioned
 locators. A numerical union does not qualify biological coverage, residue
 correspondence, prediction uncertainty, orthology or calibrated effects.
+
+### September 30: require both orders and full-protein reference coverage
+
+Apply the existing six 30/50-residue by 50/70/90-percent coverage thresholds
+to the entire closed reference measurement union. Preserve current ledger
+endpoint directions separately from original checkpoint orders. Keep missing,
+failed and numerically excluded states with blank usable metrics and explicit
+raw aligned lengths/flags. Both native orders must pass; do not choose or
+average favorable measurements. Confidence masking never changes the full-
+protein denominator. Label retained-input coverage separately from original
+coverage. Independently reconstruct every source/order/metric/blank/exclusion
+field and exact threshold decision; use decimal ceilings as a check on integer
+fraction screening. Require full input preflight and source/journal-closed
+union before production, and full independent readback plus both original
+process journals before accepting numerical coverage completion. Pair coverage
+does not establish common residue correspondence, biological reference
+orthology, independent events or calibrated duplication asymmetry.

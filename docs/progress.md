@@ -10197,3 +10197,23 @@ does not establish universal coverage or complete the biological project.
   substitution. Full coverage/common-triad/sequence-locked/domain/PAE/prediction,
   biological orthology/phylogenetic and calibration controls remain required.
   GPU predictions remain paused; all eight aims remain incomplete.
+
+- September 30: implemented complete reference order normalization and original-
+  protein coverage for all 55,701 pairs, 222,804 native states, 111,402 pair/mask
+  rows and 668,412 unchanged six-screen decisions. Both native orders must be
+  usable and pass; original full lengths remain denominators under both masks,
+  with retained-input coverage separately labeled. Source orders/checkpoints,
+  excluded raw aligned lengths and missing/error flags remain explicit. Full
+  synthetic metric/source fixtures passed 20 directed states; seven rehashed
+  false exports and an incorrect original-length source were rejected. These
+  are software fixtures, not a pilot or production qualification. Actual input
+  preflight passed all 83,207 reference models and both complete frozen input
+  manifests (602,972 states); closure checked 60 source/artifact hashes and the
+  exact original preflight process journal. Three new dependency-waiting stages
+  are live behind closed full-union completion, with two CPUs/16 GiB/no swap
+  each and resource estimates recorded before launch. No production coverage
+  result is claimed. Native alignment checkpoints reached 63,296/99,788 at the
+  recorded live check. Full 121,490-side-link and 283,409-context/design
+  projection, common triads, sequence-locked/domain/PAE/prediction, biological
+  orthology/phylogenetic and calibrated inference remain outstanding. GPU
+  prediction remains paused; all eight scientific aims remain incomplete.

@@ -1415,3 +1415,35 @@ the live native measurements, not completed production results. Numerical
 union does not establish original-length coverage, common-residue/sequence-
 locked correspondence, domain/PAE/prediction accuracy, biological orthology,
 accepted phylogenetic uncertainty or calibrated asymmetry.
+
+### Complete reference input-order and original-length coverage — September 30
+
+The complete reference design has 55,701 model pairs, two confidence masks
+and two native input orders (222,804 dispositions). Each directed numerical
+record is normalized to the current ledger's endpoint models and versions
+using actual ordered endpoints; its original checkpoint order remains
+unchanged and traceable. Native errors, unavailable masks and numerical
+exclusions retain their original flags and raw aligned lengths, with blank
+usable metrics. Reversed old source orders are not interpreted as reversed
+current endpoint identities. Retained-input coverage and original-protein
+coverage are separately named. Original full-protein lengths are checked
+against frozen model descriptors and both complete written-input manifests,
+including full sequence hashes and retained residue positions.
+
+For each pair/mask, both numerically usable orders must meet each fixed screen:
+30 or 50 aligned residues and at least 50, 70 or 90 percent of both original
+protein lengths. Screens use exact integer fraction comparisons; the
+independent checker reconstructs all source/metric fields and uses decimal
+ceiling thresholds. All 111,402 pair/mask rows and 668,412 screen decisions
+remain in the denominator, including excluded cases. Both-mask intersections
+and absolute differences between usable orders are sensitivity summaries,
+not independent replicates or uncertainty intervals.
+
+Implementation and software fixtures are complete. Actual static input
+preflight passed all 83,207 reference models and 602,972 frozen input states;
+its 60 source/artifact bindings and original process journal are closed. Full
+production, independent readback and journal closure are queued behind the
+closed measurement union. Event/context linkage, residue correspondence and
+common-triad/sequence-locked/domain/PAE/prediction, phylogenetic and calibrated
+inference controls remain outstanding. Coverage qualification alone does not
+accept a reference's biological role or establish structural asymmetry.

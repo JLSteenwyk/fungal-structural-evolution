@@ -44,3 +44,46 @@ and `metadata/duplication_reference_order_sensitivity_quantiles_20260927.tsv`.
 The full cohort still needs scientific coverage/confidence qualification and
 integration with primary duplicate/background comparisons. Input-order stability
 alone does not establish prediction accuracy or evolutionary asymmetry.
+
+## Full expanded reference order and coverage workflow queued — September 30
+
+The earlier results above concern the September 27 cohort. The full expanded
+reference design now contains 55,701 pairs and 222,804 mask/order states. New
+scripts `screen_full_reference_orders_and_coverage.py` and
+`readback_full_reference_orders_and_coverage.py` consume the source/journal-
+closed full measurement union. They normalize usable metrics to current model
+endpoints while retaining original source orders, checkpoint hashes, all
+exclusions, raw aligned lengths and exact union-row hashes. Both usable orders
+are required for each of the six existing original-protein coverage screens;
+confidence masking does not change the denominator. Retained-input coverage
+is separately labeled. Neither a preferred order nor an average is used.
+
+Software fixtures passed 20 states and independently reconstructed all fields
+and 60 decisions, including reversed source directions, unequal versions,
+nonlexical current endpoints, denominator and decimal-boundary cases, all
+native statuses and all numerical exclusions. Seven rehashed false exports
+and one incorrect original-length source were rejected. Fixture source/proof/
+journal records are explicitly synthetic and do not qualify real results.
+
+Actual complete-source preflight passed all 83,207 models and both frozen input
+manifests (602,972 states). Evidence is
+`metadata/full_reference_order_coverage_input_preflight_verified_20260930.json`:
+60 source/artifact bindings and the original process completion journal. Full
+production, independent reconstruction and two-journal closure are queued;
+see `metadata/full_reference_order_coverage_pipeline_queued_20260930.json`.
+Run each stage through its pinned wait plan, using the captured original
+dependency handles; do not rerun an already live stage or overwrite its output.
+Resources are two CPUs/16 GiB/no swap per serial stage, no GPU or charges, an
+8 GiB output allowance and 100 GiB disk reserve. The 0.1–12 hour planning
+range after prerequisites is uncalibrated, not an ETA.
+
+Production outputs will be outside Git at
+`results/structural_comparisons/full-reference-order-coverage-20260930-v1`;
+completion will require full independent field/threshold/count reconstruction
+and both exact original process journals. This is metric/coverage screening;
+it does not yet reconstruct the full native residue mappings for comparison
+of correspondence between orders. The full 121,490 reference-side links and
+283,409 target contexts/designs remain to be projected without dropping missing
+references or parent exclusions. Common triads, sequence-locked/domain/PAE/
+prediction controls, biological orthology/phylogeny and calibrated asymmetry
+remain required. All scientific aims remain incomplete.

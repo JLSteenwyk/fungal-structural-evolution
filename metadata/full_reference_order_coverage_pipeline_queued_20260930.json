@@ -1,0 +1,75 @@
+{
+  "status": "queued_exact_dependency_full_reference_order_and_original_coverage_checks",
+  "checked_utc": "2026-09-30T21:56:49.057964+00:00",
+  "producer": {
+    "unit": "fungal-full-reference-order-coverage-20260930.service",
+    "pid": 2963548,
+    "created": 1790805408.2,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_order_coverage_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_order_coverage_wait_plan_20260930.json",
+    "plan_sha256": "46743f54e705a987e5047fbc4ac16245413dca8686a3320c4e6410f10702ec88",
+    "checked_utc": "2026-09-30T21:56:48.936494+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "readback": {
+    "unit": "fungal-full-reference-order-coverage-readback-20260930.service",
+    "pid": 2963551,
+    "created": 1790805408.26,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_order_coverage_readback_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_order_coverage_readback_wait_plan_20260930.json",
+    "plan_sha256": "195bba3bb10702f7675a7e964dacfae13339cade05159f3ed0878a56029cb1a1",
+    "checked_utc": "2026-09-30T21:56:48.992139+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "completion": {
+    "unit": "fungal-full-reference-order-coverage-completion-20260930.service",
+    "pid": 2963554,
+    "created": 1790805408.32,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json",
+    "plan_sha256": "71836b05ce62a1c07cfeddbf02b200bb2f31a5375e01dcde6ed75ce9357cbcd1",
+    "checked_utc": "2026-09-30T21:56:49.057715+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "full_pairs": 55701,
+  "directed_dispositions": 222804,
+  "pair_mask_rows": 111402,
+  "pair_screen_decisions": 668412,
+  "available_disk_bytes_before_launch": 11435889995776,
+  "input_preflight": "metadata/full_reference_order_coverage_input_preflight_verified_20260930.json",
+  "scientific_eligibility": false,
+  "scope": "Full55701reference pairs,222804native states,111402pair/mask rows and668412fixedscreen decisions. Current endpoint directions normalized independently from original source order. Both native orders must be numerically usable and pass unchanged thresholds; full-protein lengths used under both masks. All excluded/missing/error states, checkpoint/source direction hashes and raw aligned lengths retained. No preference for favorable orders, native rerun or scientific asymmetry acceptance. Full121490reference-side links,283409context/design cohort linkage, common-residue triads, sequence-locked/domain/PAE/prediction controls, supported phylogeny and calibration remain required."
+}

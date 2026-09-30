@@ -1,0 +1,32 @@
+{
+  "output": "metadata/full_reference_order_coverage_input_preflight_verified_20260930.json",
+  "completed_status": "complete_verified_full_reference_original_length_and_written_input_preflight",
+  "evidence": {
+    "preflight": {
+      "path": "metadata/full_reference_order_coverage_input_preflight_completed_20260930.json",
+      "expected": {
+        "status": "passed_full_reference_original_length_and_written_input_preflight",
+        "full_pairs": 55701,
+        "models": 83207,
+        "reference_input_dispositions": 166414,
+        "all_input_dispositions": 602972
+      }
+    }
+  },
+  "links": [],
+  "launches": [
+    "metadata/full_reference_order_coverage_input_preflight_launch_20260930.json"
+  ],
+  "pins": {
+    "metadata/full_reference_order_coverage_input_preflight_completed_20260930.json": "53ab4d7ae4796dfcc950a20ea44736840d8046809877932d00b8f40238a49325",
+    "metadata/full_reference_order_coverage_input_preflight_launch_20260930.json": "621a0e2314de243db7d139cb16c6d7fb004b5a36f4239ad0493239e947260b9c",
+    "metadata/full_reference_order_coverage_input_preflight_plan_20260930.json": "a665e14b9b9d41f55816cba6b9c3dec76b8d936a39163c551d64d8d76048daa5"
+  },
+  "summary": {
+    "full_pairs": 55701,
+    "models": 83207,
+    "reference_input_dispositions": 166414,
+    "all_input_dispositions": 602972
+  },
+  "scope": "Full actual current-source preflight passed all55701reference pairs,83207models and all602972written input states. All complete source/artifact hashes and exact captured original preflight process completion journal checked. Static input qualification only; native closed full union, production order/coverage reader and all scientific controls remain required."
+}

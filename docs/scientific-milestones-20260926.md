@@ -572,3 +572,16 @@ full union, independent union field reader and final two-journal closure.
 Production union outputs remain pending native completion. No scientific aim
 is completed; full coverage/common-triad/sequence-locked/domain/PAE/prediction,
 biological orthology/phylogenetic and calibration controls remain required.
+
+September 30: full-reference input-order normalization and six original-protein
+coverage screens are implemented for all 55,701 pairs/222,804 directed states
+(111,402 pair/mask rows and 668,412 screen decisions). Full synthetic checks
+passed both implementations and rejected seven rehashed false exports plus an
+incorrect original-length source. Actual original-length/written-input
+preflight passed all 83,207 models and 602,972 complete input states, with 60
+hash bindings and the original process completion journal verified. Three
+production/readback/closure stages are queued behind the closed reference
+union; their production outputs are pending. Full event/context linkage,
+common-residue and sequence-locked/domain/PAE/prediction controls, supported
+phylogeny and calibration remain required. All eight scientific aims remain
+incomplete; GPU predictions remain paused.

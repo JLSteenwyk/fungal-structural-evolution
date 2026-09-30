@@ -1,0 +1,23 @@
+{
+  "status": "planned_full_reference_order_and_original_coverage",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 8,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "full_reference_pairs": 55701,
+  "directed_dispositions": 222804,
+  "pair_mask_rows": 111402,
+  "pair_screen_decisions": 668412,
+  "reference_models": 83207,
+  "all_frozen_input_states": 602972,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "basis": "Full closed reference union, both masks and both orders. Static preflight scans both full602972-state manifests and all83207reference model lengths/positions/sequence hashes. Order/coverage producer and independent decimal-ceiling reader retain all flags and full grids; both native orders required. Original full-protein denominators under both masks, separately named retained coverage. Two CPU16GiB/noSwap per serial stage,8GiB output allowance,100GiB free reserve. Native alignments and geometry not rerun. Full-context/event linkage and qualified common-triad/sequence-locked/domain/PAE/prediction/phylogeny/calibration remain required."
+}
