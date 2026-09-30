@@ -497,3 +497,20 @@ input/result and numerical checks before reuse. Full additional-reference
 raw-coordinate validation and independent reconstruction are running for
 24,804 models; these CPU stages do not resume protein prediction or qualify
 asymmetry inference. All eight scientific aims remain incomplete.
+
+September 30 full expanded fixed matching subsequently passed all 61,216,344
+scenario decisions (4,250,692 selections), with unmatched, ranking/tie/order and
+reuse counts independently verified. Matching balance is active. Full two-mask
+supplemental background/reference input preparation and independent written-PDB
+checking are queued behind coordinate readbacks; isolated complete-handoff
+corruption fixtures passed. Production input completion, measurement reuse and
+quality, phylogenetic uncertainty/calibration and biological effect inference
+remain required. None of the eight scientific aims is complete.
+
+Expanded pre-measurement balance subsequently completed: independent full-data
+readback covers all 4,250,692 selections, 432 strata and3,456 feature summaries,
+plus a source-checked illustrative figure. Small within-match differences
+coexist with substantial original-target confidence shifts, preserving the
+sampling/missingness requirement. This does not establish structural effects,
+independent replications, prediction accuracy or post-screen balance. All
+scientific aims remain incomplete.

@@ -1467,3 +1467,108 @@ A full prelaunch partition check passed. Runtime settings for both transient
 services were verified against their planned limits; no GPU setting changed.
 Coordinates, alignments, common-residue triads and biological asymmetry remain
 unqualified. Resource planning predates launch and does not give an ETA.
+
+## Full expanded fixed matching completed September 30
+
+Both selection and independent exhaustive readback have now finished. All
+**61,216,344 target/policy/scenario decisions** passed, including **4,250,692
+selected records** and **56,965,652 unmatched decisions**. The unchanged design
+has 1,133,636 target/policy records and 54 fixed scenarios. Every eligible
+candidate, chosen identity/order/score, tie count and runner-up gap was
+independently reconstructed, with all per-guide/policy/scenario summaries and
+background reuse counts checked. Completion binds 28 source/artifact hashes
+and both exact captured-process journals in
+[the matching evidence](../metadata/expanded_background_fixed_matching_completed_20260930.json).
+
+These are overlapping scenario decisions and with-replacement selections,
+not 4.25 million independent evolutionary events. The design excludes shared
+genes/models/sequences, retains exact zero distances without an epsilon, and
+uses one endpoint mapping that satisfies all joint cutoffs. No structural
+response or later passing screen selected a control. No rematching will occur
+after outcome, confidence or coverage filtering.
+
+Full descriptive pre-measurement balance and separate independent reconstruction
+have launched for **432 guide/policy/scenario strata and 3,456 feature rows**.
+The eight fixed pair-level features cover sequence distance, positive-log
+sequence distance, length, length asymmetry, pLDDT and low-confidence fractions.
+All original modeled target baselines, matched taxa/families, exact reuse,
+zero distances and nonestimable variance outcomes remain explicit. These are
+balance/selection diagnostics, not independent-sample tests or biological
+effects. The producer has one CPU/16 GiB/no swap; the reader has one CPU/24 GiB/
+no swap. Planning ranges are 0.1–8 hours excluding waits, not ETAs. Results are
+pending; post-measurement-screen balance is also still required.
+
+Full supplemental alignment input preparation and independent written-input
+checks are queued behind complete raw-coordinate readback, retaining all
+**303,802 additional background models and 24,804 additional reference models**
+and both full/pLDDT70 masks. All short/rejected states stay in their denominators.
+The resulting grids have **607,604 background and 49,608 reference input
+dispositions**. Overlapping models in the two roles remain separate source
+ledgers until exact byte/mask/position equality is verified; these are not
+disjoint input collections or independent predictions.
+
+The reference materializer v2 changes only its partition-loader import to
+require the stronger native gene/model ledger proof; coordinate/mask serialization
+is unchanged. A new full checker independently parses every ready PDB and
+verifies original residue position, amino acid, model/version, source checksum,
+coordinate/confidence rounding, rejection/short state and all summary counts.
+It also checks exact native model partitions, every shard and full proof/hash
+lineage before and after reading. Isolated end-to-end fixtures cover both roles,
+numeric model versions 6/10 and all six mask/disposition outcomes; rehashed
+wrong residue maps, wrong versions, missing inputs and wrong PDB coordinates
+fail. These fixtures do not establish production completion or independently
+adjudicate raw-CIF rejection causes.
+
+Plans and all four exact queued processes are recorded in
+`metadata/expanded_additional_alignment_inputs_queued_20260930.json`.
+Background preparation/checking has one CPU/16 GiB each; reference stages have
+one CPU/8 GiB each; all have no swap. Resource plans predate launch. Maximal
+PDB bytes are bounded by two 81-byte-per-residue masks plus file terminators,
+with separate manifest/filesystem allowances: 48 GiB background and 4 GiB
+reference producer output allowances. Each stage keeps a 100 GiB disk reserve.
+Uncalibrated 0.1–12-hour planning ranges exclude coordinate prerequisite waits.
+No native alignment, GPU prediction or paid resource was launched. Actual
+native-result reuse/measurement quality, prediction/domain/orientation controls,
+phylogenetic dependence and calibrated duplication/asymmetry inference remain
+required. All eight scientific aims remain incomplete.
+
+## Expanded pre-measurement balance independently verified
+
+Full balance production and independent direct selection/node joins completed
+for **all 4,250,692 selected records, 432 strata and 3,456 eight-feature rows**.
+All moments, quantiles, pooled-SD standardized differences, baseline selection
+shifts, nonestimable states and coverage/taxon/family/reuse/zero-distance counts
+passed. Source/artifact hashes and both exact captured-process completion
+journals are collected in
+[the completion evidence](../metadata/expanded_background_control_balance_completed_20260930.json).
+This is pre-measurement descriptive balance; post-screen balance, predictor and
+phylogenetic uncertainty, calibration and effect inference remain required.
+
+Across the full grid, matched counts range from **531 to 26,502 target records**
+and matched taxa from **93 to 199**. These are dependent sensitivity strata;
+their ranges are not uncertainty intervals or counts of independent events.
+The original target pools have 141,724 profile and 141,685 MAFFT records.
+
+![Expanded metadata balance and target selection](figures/expanded_background_control_balance_20260930.png)
+
+The same illustrative S45/alignment-E-value scenario as the older catalog is
+shown, without choosing it as a confirmatory primary test. It contains **18,503
+matched targets across 198 taxa under each guide**, with 1,935 zero-distance
+pairs excluded from positive-log-distance summaries only. Its matched
+standardized mean differences range approximately **−0.047 to 0.101**. Relative
+to the full modeled target pool, matched targets have mean-pLDDT shifts of
+about **0.843 original-target SD** and minimum-pLDDT shifts of about **0.911 SD**;
+log-length-asymmetry shifts are about **−0.635 SD**. Therefore close matches
+among measured targets do not establish representative sampling of all targets.
+The two panels explicitly use different SD denominators; guides are alternatives,
+not independent replications. Confidence values are prediction metadata, not
+validated accuracy or biological effects.
+
+All 32 figure points and sample counts passed separate source-table readback;
+the rendered PNG was visually reviewed, with matching PDF/SVG and full point
+[table](figures/expanded_background_control_balance_20260930.tsv) exports.
+[Figure evidence](../metadata/expanded_background_control_balance_figure_completed_20260930.json)
+records source hashes and visual review. The complete source table remains
+`results/orthology/expanded-background-control-balance-20260930-v1/covariate_balance.tsv`;
+all strata are retained regardless of illustrative plotting. All eight
+scientific aims remain incomplete.

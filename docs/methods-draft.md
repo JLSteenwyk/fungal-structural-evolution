@@ -1241,7 +1241,7 @@ no passing-screen-only or outcome-selected subset defines the matching pool.
 All 5,059,122 candidate edges and both possible endpoint metadata mappings
 passed independent checks. Fixed selection retains the original 54 scenarios,
 zero-distance rule, deterministic ties and unmatched/reuse dispositions,
-requiring 61,216,344 decisions. Its independent readback remains active.
+requiring 61,216,344 decisions. Full independent readback subsequently passed all decisions, including 4,250,692 selections and 56,965,652 unmatched outcomes.
 Controls will not be rematched after structural or coverage filtering.
 
 Separately, expanded provisional sister references were independently
@@ -1274,3 +1274,25 @@ input/result and numerical checks before reuse. Full additional-reference
 raw-coordinate validation and independent reconstruction are running for
 24,804 models; these CPU stages do not resume protein prediction or qualify
 asymmetry inference. All eight scientific aims remain incomplete.
+
+Full descriptive pre-measurement matching balance passed across all
+432 strata and eight features, preserving original target baselines, reuse and
+nonestimable cases. Supplemental background/reference input preparation and
+independent PDB/residue-map checking are queued behind complete coordinate
+readbacks. They retain 607,604/49,608 two-mask dispositions, including short
+and rejected inputs. Role overlap is explicit; future reuse requires exact
+source, input bytes, mask and position equality. No result reuse or native
+alignment is authorized by catalog signatures alone. Resource plans and
+full handoff/corruption fixtures are versioned in
+`metadata/expanded_additional_alignment_inputs_queued_20260930.json` and
+`metadata/expanded_additional_alignment_input_fixture_validation_20260930.json`.
+
+Expanded pre-measurement balance independently checked all 4,250,692 selected
+records and 3,456 feature summaries; original-target selection shifts remain
+explicit. In the unchanged illustrative S45 policy scenario, mean/minimum
+pLDDT shift by approximately 0.843/0.911 original-target SD despite small
+within-match standardized mean differences. This descriptive ascertainment
+contrast requires sampling/missingness treatment; it is not prediction
+accuracy, a calibrated effect or proof of causality. Complete strata and
+source-checked PNG/PDF/SVG outputs are documented in
+[the expanded balance record](terminal-sister-backgrounds-20260927.md#expanded-pre-measurement-balance-independently-verified).

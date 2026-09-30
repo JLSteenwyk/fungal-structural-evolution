@@ -1,0 +1,21 @@
+{
+  "status": "passed_both_role_full_supplemental_input_handoff_fixtures",
+  "checks": [
+    "background_and_stronger_native_ledger_reference_producers",
+    "numeric_versions6_and10",
+    "full_confidence_masks_and_all6_dispositions",
+    "sparse_original_residue_mapping",
+    "rehashed_wrong_residue_mapping_rejected",
+    "rehashed_wrong_version_rejected",
+    "missing_disposition_rejected",
+    "rehashed_wrong_written_PDB_coordinate_rejected"
+  ],
+  "source_hashes": {
+    "scripts/materialize_background_inputs.py": "c1a3c72cd4532239b1cb487f8453be2f94fa46b28e9a07f5046e88afb9d63db9",
+    "scripts/materialize_duplication_reference_inputs_v2.py": "8ef48a52eb854b14a92e0b5f63891aaf2cffad685e56ad6df67fe0f45d5c7f5d",
+    "scripts/readback_additional_alignment_inputs.py": "5d94bedbd048def2b68309001bb7ae5da23c88dafed90a1ed238a48ad2dfd7ad",
+    "scripts/check_additional_alignment_inputs.py": "4a55b6bde045d060cedfb5ec2ffd70ac4b88ce0c68b6f4ae181fd3781bcc7064",
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3"
+  },
+  "scope": "End-to-end isolated synthetic materialization and full exported-input checking; not production completion, independent CIF validation or biological qualification."
+}

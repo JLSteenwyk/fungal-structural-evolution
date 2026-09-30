@@ -1,0 +1,86 @@
+{
+  "status": "complete_verified_expanded_background_fixed_matching",
+  "checked_utc": "2026-09-30T17:47:31.457775+00:00",
+  "summary": {
+    "target_policy_records": 1133636,
+    "scenarios": 54,
+    "scenario_decisions": 61216344,
+    "selected_records": 4250692,
+    "unmatched_decisions": 56965652,
+    "source_edges": 5059122
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/expanded_background_control_selection_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "693b07589396f3f139b303c4554424aaee40073dc78cc5d7f6b08995f1350cba",
+      "captured_process_messages": 28,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790789095409432",
+          "CPU_USAGE_NSEC": "362295421000",
+          "MEMORY_PEAK": "1691648",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/expanded_background_control_selection_readback_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "a4274b44ad16502ec4c0bfb3c0ca0046c4df22099e05a7aae199b75ffbc6dae8",
+      "captured_process_messages": 41,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790790120001883",
+          "CPU_USAGE_NSEC": "996439965000",
+          "MEMORY_PEAK": "3027959808",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/expanded_background_fixed_matching_completion_plan_20260930.json": "ac95be12cb72201e703d5ba4f27b226a07778232dd19a5ce1ea3b5cc71f7c0d0",
+    "results/orthology/expanded-background-control-selection-20260930-v1/receipt.json": "6266ad51657c378ba5fcdb3d293e496624e3d496b7158823798f4a2776006841",
+    "metadata/expanded_background_control_selection_completed_readback_20260930.json": "5f732be6ef9d146e4c5ae2fcf4095f2f8c45e2c1c35d381fc1332bc36bc87f8d",
+    "scripts/select_background_controls.py": "f65fb2622674e575dab0b9639cdb6951413c5b6ee6e9124027a70162e97ea9b4",
+    "scripts/check_background_control_selection.py": "ea6de59fac7a047d2d218ed014f20e8ecb6745cd21e5327ab62bacc4dd150ce9",
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/expanded_background_match_graph_plan_20260930.json": "37e64e3e5d6887436e22a4d8b50312b5196d166db81acebc176e993d2c7cd03e",
+    "metadata/expanded_background_match_graph_readback_plan_20260930.json": "5f4058859bdf6dd9dc826de87cac5e33a3cb63999ba90327eef3ab937dfbf19f",
+    "metadata/expanded_background_match_covariate_plan_20260930.json": "b5e462f82a3eb947c9fd23190c057e6182cd8832c4a546114993c620f86279bb",
+    "metadata/expanded_background_match_covariate_readback_plan_20260930.json": "103e86e96df281a00d71c561ad413d48cde51c6139436a0cbcfa69433fd364ca",
+    "metadata/expanded_background_match_covariate_readback_launch_20260930.json": "dbf2f824ec9087956e094cf35c3797e1b4a1b9b6bd6be81b8ab6dba98e499705",
+    "metadata/expanded_background_matching_resources_20260930.json": "22c151ce6ee706b2f48e7cac8eb82a6816cc7d3762e0a7bd9c2bb3d08d57a202",
+    "metadata/expanded_background_control_selection_plan_20260930.json": "f3db02eea2d10a971d0ba4f4c45ed14384006ed7c32f6a785e75b14170ba9e93",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/expanded_background_control_selection_wait_plan_20260930.json": "261edde3797f88d98798194a47100db0991586236c96d1d0e998e61cbf0d3e2b",
+    "scripts/readback_background_control_selection.py": "d16dc76bb57312973e70b0803c1e9f506647136fa1ac9812351861c42662b3d1",
+    "scripts/check_background_control_selection_readback.py": "eb6a3f6ea7e1ca0bb7e0250341c9e70a6bd72bee89f2f9934e0dd645c48aca2a",
+    "metadata/expanded_background_control_selection_launch_20260930.json": "64d2d0cf5a61a6d401775222830f0423cdf34de30a100fab9e85faec2a4992de",
+    "metadata/expanded_background_control_selection_readback_plan_20260930.json": "de7ea6d5b7ef54d5de90af1113700917b547a492cf0ea74cc62ba68eda5d2027",
+    "metadata/expanded_background_control_selection_readback_wait_plan_20260930.json": "65006a5ccaeb0bfc0ca695f8c05860e019e1c0fd99ff030d2fd62ec7c4d93933",
+    "metadata/expanded_background_control_selection_readback_launch_20260930.json": "1bf7da37251ee041622324ff36a9505e0a4e1f079746e22dc446dbbb4b3ad62d",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/orthology/expanded-background-control-selection-20260930-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/expanded-background-control-selection-20260930-v1/target_policy_selection_status.tsv": "7f0ddebdaa8bada11091df8dce8a81041755fc088c057be9ff70b336b04e94f4",
+    "results/orthology/expanded-background-control-selection-20260930-v1/selections.tsv.gz": "bea73030cd2af558e32bca99c7a32bc2eaf043a4631417f44b99b8f5ccf1ae51",
+    "results/orthology/expanded-background-control-selection-20260930-v1/background_reuse.tsv": "9c030a2610771488b41d891a0b6e0e8c20fc51831220c0a4fc95fe18fa467ca0"
+  },
+  "scope": "Full fixed response-independent selection, every candidate rank, endpoint order, score/tie/gap, all unmatched target/policy/scenario dispositions and all guide/policy/scenario and background reuse counts independently reconstructed. Complete source/artifact hashes and both exact process completion journals checked. Same frozen design, not independent biological events. Matching balance, measurement reuse/quality, uncertainty/phylogenetic corrections and calibrated duplication effects remain required; no rematching after filtering."
+}

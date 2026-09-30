@@ -1,0 +1,247 @@
+{
+  "status": "verified_expanded_supplemental_inputs_and_completed_balance_checkpoint",
+  "checked_utc": "2026-09-30T18:01:03.579552+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_turn_evidence": "Completed expanded control/reference/source-reuse proofs, started full additional-reference coordinates and pushed97 files as3171cb5.",
+  "services": [
+    {
+      "launch": "metadata/expanded_background_alignment_inputs_launch_20260930.json",
+      "pid": 2674943,
+      "created": 1790790575.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_input_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_alignment_input_readback_launch_20260930.json",
+      "pid": 2674948,
+      "created": 1790790575.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_input_readback_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_alignment_inputs_launch_20260930.json",
+      "pid": 2675014,
+      "created": 1790790577.53,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_alignment_input_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_alignment_input_readback_launch_20260930.json",
+      "pid": 2675017,
+      "created": 1790790577.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_alignment_input_readback_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_coordinate_validation_launch_20260930.json",
+      "pid": 2641891,
+      "created": 1790787610.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/validate_background_coordinates.py",
+        "--plan",
+        "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "4s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 2641977,
+          "created": 1790787619.18,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2641978,
+          "created": 1790787619.24,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2641979,
+          "created": 1790787619.29,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2641980,
+          "created": 1790787619.35,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_coordinate_readback_launch_20260930.json",
+      "pid": 2641894,
+      "created": 1790787610.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_background_coordinates.py",
+        "--plan",
+        "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "4s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json",
+      "pid": 2664081,
+      "created": 1790789648.53,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/validate_duplication_reference_coordinates_v2.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 2664252,
+          "created": 1790789661.95,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_duplication_reference_coordinates_v2.py",
+            "--plan",
+            "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2664253,
+          "created": 1790789661.98,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_duplication_reference_coordinates_v2.py",
+            "--plan",
+            "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json",
+      "pid": 2664084,
+      "created": 1790789648.6,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_duplication_coordinates.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_coordinate_readback_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    }
+  ],
+  "partial_coordinate_states": {
+    "expanded-background-coordinate-validation-20260930-v1": {
+      "stage": "validating_background_coordinates",
+      "completed_shards": 100,
+      "total_shards": 304,
+      "counts": {
+        "validated": 100000
+      }
+    },
+    "expanded-duplication-reference-coordinate-validation-20260930-v1": {
+      "stage": "validating_additional_reference_coordinates",
+      "completed_shards": 24,
+      "total_shards": 25,
+      "counts": {
+        "validated": 24000
+      }
+    }
+  },
+  "completed_proofs": [
+    "metadata/expanded_background_fixed_matching_completed_20260930.json",
+    "metadata/expanded_background_control_balance_completed_20260930.json",
+    "metadata/expanded_background_control_balance_figure_completed_20260930.json"
+  ],
+  "scientific_aims_complete": 0,
+  "scope": "Current exact PID/create time/command and live resource limits checked. Supplemental wait jobs depend on actual coordinate reader handles; complete matching and balance proven separately by all-artifact/source checks and exact journal closure. State counts remain partial progress, not completed inputs or biological inference."
+}

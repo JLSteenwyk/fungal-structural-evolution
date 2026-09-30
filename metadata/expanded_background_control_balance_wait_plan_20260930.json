@@ -1,0 +1,48 @@
+{
+  "dependencies": [],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_background_control_balance.py",
+    "--plan",
+    "metadata/expanded_background_control_balance_plan_20260930.json"
+  ],
+  "pins": {
+    "metadata/expanded_background_control_balance_resources_20260930.json": "f90c40b6c5f53b0efbf1d7e2afb9cba43b8ebd8697ffab57fb891ab0022f77b5",
+    "metadata/expanded_background_control_selection_completed_readback_20260930.json": "5f732be6ef9d146e4c5ae2fcf4095f2f8c45e2c1c35d381fc1332bc36bc87f8d",
+    "metadata/expanded_background_fixed_matching_completed_20260930.json": "4d5ca5de8ec510cb2eede355d5b9a7dadeb7a810152a474fcafb60ccfb2e804b",
+    "metadata/expanded_background_graph_covariates_completed_20260930.json": "3d15680a12e186f56eb111ffd6dcd27f280ee088e9b8e47d174bc8e5bcd7b660",
+    "scripts/assess_background_control_balance.py": "706c1a023a02b42bb3c0a281f7a1a6403ae6f93336b68af6b58292a0a265da7b",
+    "scripts/background_control_balance.py": "b5072545be80146350ecfb1a38abc3f61b3750b584bf77181a3d390204863606",
+    "scripts/readback_background_control_balance.py": "7d5da6550e6708ca1311a340427a2c413ae4ef32b4b75607daec9fb4443fdcb1",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "results/orthology/expanded-background-control-selection-20260930-v1/receipt.json": "6266ad51657c378ba5fcdb3d293e496624e3d496b7158823798f4a2776006841",
+    "results/orthology/expanded-background-control-selection-20260930-v1/scenarios.json": "0d3d999ccdf40b4d85c8368257d48f5aba18be0c469293aacb34f5db253a2d3a",
+    "results/orthology/expanded-background-control-selection-20260930-v1/target_policy_selection_status.tsv": "7f0ddebdaa8bada11091df8dce8a81041755fc088c057be9ff70b336b04e94f4",
+    "results/orthology/expanded-background-control-selection-20260930-v1/selections.tsv.gz": "bea73030cd2af558e32bca99c7a32bc2eaf043a4631417f44b99b8f5ccf1ae51",
+    "results/orthology/expanded-background-control-selection-20260930-v1/background_reuse.tsv": "9c030a2610771488b41d891a0b6e0e8c20fc51831220c0a4fc95fe18fa467ca0",
+    "results/orthology/expanded-background-match-graph-20260930-v1/receipt.json": "0d225f2ed323a21b6dac8d15a316d9f2cc28316cb82a4a8b11bf21d9ae90e1d9",
+    "results/orthology/expanded-background-match-graph-20260930-v1/target_nodes.jsonl": "f1af48d17f5d05ac99898bc4b931fd854031c644488c206d215b67dbab155279",
+    "results/orthology/expanded-background-match-graph-20260930-v1/background_nodes.jsonl": "c03cbcdccc2e2bfe8fc86cae2ca36cc592bde0255d348e1441df7bbd7b156b13",
+    "results/orthology/expanded-background-match-graph-20260930-v1/edges.tsv": "5fbc2b6c01b9d0204f0dca078ad7d08d4d6de4e832778b029f90e6d081c275f4",
+    "results/orthology/expanded-background-match-graph-20260930-v1/target_policy_dispositions.tsv": "1596631bd79ea7d96e52078bf79b21aa33ae2142695f6fc9aff4d4675547c201",
+    "metadata/expanded_background_control_balance_plan_20260930.json": "308a935e219d8260a61cb0fe249ec04e5bd9c78af8804bcb996f75bd81c1597a"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "selected_records": 4250692,
+    "strata": 432,
+    "balance_rows": 3456,
+    "feature_array_bytes": 544088576,
+    "basis": "All selected records from full54 fixed scenarios, eight permutation-invariant metadata features, full original target baselines and all reuse/coverage counts. Chunked arrays about0.51GiB before joins/sets/copies. Descriptive balance only, no response filtering/rematching or native inference; runtime range uncalibrated."
+  }
+}

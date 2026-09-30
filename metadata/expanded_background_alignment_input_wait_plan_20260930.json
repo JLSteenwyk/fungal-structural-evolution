@@ -1,0 +1,63 @@
+{
+  "dependencies": [
+    "metadata/expanded_background_coordinate_readback_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/materialize_background_inputs.py",
+    "--plan",
+    "metadata/expanded_background_alignment_input_plan_20260930.json"
+  ],
+  "pins": {
+    "metadata/expanded_background_coordinate_validation_plan_20260930.json": "a81db6f1e5ce3671fc863e7e7388fac85bbb01996785f37aedb836cfb218ec6b",
+    "metadata/expanded_background_coordinate_readback_plan_20260930.json": "77eff4cab1ab6c401c4d3c8cf525ada4f83effa3a029de04c035213d73d158a2",
+    "metadata/expanded_background_coordinate_readback_launch_20260930.json": "6caa621b008837a4ee3a3f9cb0eee043e932abbd07278f94340ed32a38da9ada",
+    "metadata/expanded_background_alignment_input_resources_20260930.json": "599f98156faa4ca67110f2a1cd4fd26daacc0b9cfdd42c62d2070f099b4a0e8d",
+    "metadata/expanded_additional_alignment_input_fixture_validation_20260930.json": "da785b9dd0f2395c15b05526dc861a455fb1476fe2fd4b69b5fdb9bb12ecfe90",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/additional_models.jsonl": "0737a106a72b8d0930e5d88e1962938adbe8e5aeac04418d4f94d667e24d923d",
+    "scripts/materialize_background_inputs.py": "c1a3c72cd4532239b1cb487f8453be2f94fa46b28e9a07f5046e88afb9d63db9",
+    "scripts/materialize_duplication_reference_inputs_v2.py": "8ef48a52eb854b14a92e0b5f63891aaf2cffad685e56ad6df67fe0f45d5c7f5d",
+    "scripts/validate_duplication_reference_coordinates_v2.py": "6aa464f46d032865fa92839e08384ae76ad900d3be8885eb803db5731102a4f8",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/readback_additional_alignment_inputs.py": "5d94bedbd048def2b68309001bb7ae5da23c88dafed90a1ed238a48ad2dfd7ad",
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/validate_background_coordinates.py": "4a563170021ad0b7a0b5c590f583de7c6e47e9c1563901bb6971e351cc71239e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "metadata/background_measurement_inventory_completed_readback_20260930.json": "3f0ecbb92fe952a2f715b03fecd9296b813a42f340dc14b496facc48b27700ac",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "metadata/background_measurement_readback_launch_20260930.json": "32b3b63d5151e6e60a2755f3fb9c321324650382b1e4176c899df0ccc349e85b",
+    "metadata/expanded_background_coordinate_resources_20260930.json": "75d33b9f7ad4041209ca911432790ca0d02b6e5636ff75a681fcb49e99834fa5",
+    "scripts/readback_background_coordinates.py": "4bcb762590d46d87147e8950bef3ba351d12a2a7aeeaa8b7c0dea8a886b8cb55",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "metadata/expanded_background_coordinate_validation_launch_20260930.json": "f940dc7985bc337c00ecbccdb7e36d42c3fee47349f2e0c3fc0f6a8fe146b3f9",
+    "metadata/expanded_background_alignment_input_plan_20260930.json": "618cecaec213a14fd6bba6c63a3dc387d693cf103a2ab94fe9ed33113680d230"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 48,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "source_models": 303802,
+    "expected_mask_dispositions": 607604,
+    "source_residues": 133998473,
+    "pdb_byte_upper_bound": 21712613458,
+    "estimated_manifest_allowance_gib": 4,
+    "basis": "Full additional-model partition, both original full and pLDDT70 masks, all rejection/short outcomes retained. PDB bound uses81 bytes/residue plusTER/END for two maximally retained masks; JSON manifest/filesystem overhead allowance added. OneCPU; range uncalibrated and excludes prerequisite waits. Overlapping reference/background model partitions stay separate until exact input-byte equality checks for union reuse."
+  },
+  "scope": "Full frozen supplemental materialization only after exact coordinate-reader process terminates and source/readback/hash lineage passes. All future source artifacts verified by producer; no native alignment or prediction."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "planned_complete_supplemental_materialization_and_independent_input_readback",
+  "checked_utc": "2026-09-30T17:49:36.032732+00:00",
+  "cpu": 1,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 48,
+  "planning_hours": [
+    0.1,
+    12
+  ],
+  "gpu": false,
+  "paid_resources": false,
+  "source_models": 303802,
+  "expected_mask_dispositions": 607604,
+  "source_residues": 133998473,
+  "pdb_byte_upper_bound": 21712613458,
+  "estimated_manifest_allowance_gib": 4,
+  "basis": "Full additional-model partition, both original full and pLDDT70 masks, all rejection/short outcomes retained. PDB bound uses81 bytes/residue plusTER/END for two maximally retained masks; JSON manifest/filesystem overhead allowance added. OneCPU; range uncalibrated and excludes prerequisite waits. Overlapping reference/background model partitions stay separate until exact input-byte equality checks for union reuse."
+}

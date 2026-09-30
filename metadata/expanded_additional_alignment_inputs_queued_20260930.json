@@ -1,0 +1,50 @@
+{
+  "status": "queued_full_expanded_background_and_reference_materialization_and_independent_input_checks",
+  "checked_utc": "2026-09-30T17:49:38.333140+00:00",
+  "launches": [
+    "metadata/expanded_background_alignment_inputs_launch_20260930.json",
+    "metadata/expanded_background_alignment_input_readback_launch_20260930.json",
+    "metadata/expanded_duplication_reference_alignment_inputs_launch_20260930.json",
+    "metadata/expanded_duplication_reference_alignment_input_readback_launch_20260930.json"
+  ],
+  "resources": {
+    "background": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 48,
+      "planning_hours": [
+        0.1,
+        12
+      ],
+      "gpu": false,
+      "paid_resources": false,
+      "source_models": 303802,
+      "expected_mask_dispositions": 607604,
+      "source_residues": 133998473,
+      "pdb_byte_upper_bound": 21712613458,
+      "estimated_manifest_allowance_gib": 4,
+      "basis": "Full additional-model partition, both original full and pLDDT70 masks, all rejection/short outcomes retained. PDB bound uses81 bytes/residue plusTER/END for two maximally retained masks; JSON manifest/filesystem overhead allowance added. OneCPU; range uncalibrated and excludes prerequisite waits. Overlapping reference/background model partitions stay separate until exact input-byte equality checks for union reuse."
+    },
+    "reference": {
+      "cpu": 1,
+      "memory_gib": 8,
+      "swap_gib": 0,
+      "output_allowance_gib": 4,
+      "planning_hours": [
+        0.1,
+        12
+      ],
+      "gpu": false,
+      "paid_resources": false,
+      "source_models": 24804,
+      "expected_mask_dispositions": 49608,
+      "source_residues": 9982283,
+      "pdb_byte_upper_bound": 1617526710,
+      "estimated_manifest_allowance_gib": 0.5,
+      "basis": "Full additional-model partition, both original full and pLDDT70 masks, all rejection/short outcomes retained. PDB bound uses81 bytes/residue plusTER/END for two maximally retained masks; JSON manifest/filesystem overhead allowance added. OneCPU; range uncalibrated and excludes prerequisite waits. Overlapping reference/background model partitions stay separate until exact input-byte equality checks for union reuse."
+    }
+  },
+  "scientific_eligibility": false,
+  "scope": "All303802 additional background and24804 additional reference models, both masks, every rejected/short disposition. Future coordinate completion required. Overlapping models retained with separate lineage, not disjoint input collections; union/native result reuse requires exact metadata and byte matching. No alignments, GPU predictions or paid resources launched."
+}

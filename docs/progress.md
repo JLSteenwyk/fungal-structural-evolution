@@ -10073,3 +10073,34 @@ does not establish universal coverage or complete the biological project.
   reconstruction, two CPUs/8 GiB/no swap each. The stronger required ledger
   status is the only validator algorithm adaptation; full partition precheck
   and exact live runtime limits passed. Biological inference remains pending.
+
+- September 30: full expanded fixed matching passed all 61,216,344 decisions,
+  including 4,250,692 selected and 56,965,652 unmatched outcomes, all candidate
+  rankings/ties/orders and all reuse summaries. Both exact process journals and
+  28 source/artifact hashes were verified in
+  `metadata/expanded_background_fixed_matching_completed_20260930.json`.
+  Full descriptive matching-balance production and independent reconstruction
+  are active across all 432 strata/eight features. Biological effects remain
+  unqualified; no control will be rematched after filtering.
+
+- September 30: queued full supplemental alignment-input preparation and
+  independent PDB/residue-map checking after complete background/reference
+  coordinate readbacks, for 303,802/24,804 models and 607,604/49,608 mask
+  dispositions. Original coordinate serialization is preserved; the reference
+  materializer now imports the stronger native-ledger partition loader.
+  Complete two-role synthetic handoff fixtures passed, including rehashed
+  incorrect coordinate, position, version and missing-input rejection. Resource
+  plans predate launch; overlapping model partitions remain explicit. No native
+  alignments, GPU predictions or paid resources launched. All eight scientific
+  aims remain incomplete.
+
+- September 30: full expanded pre-measurement balance passed independent joins
+  and statistics for all 4,250,692 selections, 432 strata and3,456 feature rows.
+  Both exact completion journals and 31 source/artifact hashes passed. Matched
+  strata span 531–26,502 targets and 93–199 taxa. The unchanged illustrative S45
+  scenario has 18,503 targets/198 taxa per guide; mean/minimum prediction confidence
+  shifts of 0.843/0.911 original-target SD despite small within-match differences.
+  Full source tables remain explicit; no representativeness or biological effect
+  claim. All 32 figure points passed source readback and PNG visual review,
+  with PDF/SVG/TSV exports. Post-screen balance, measurement/prediction quality,
+  phylogenetic uncertainty and calibration remain outstanding.

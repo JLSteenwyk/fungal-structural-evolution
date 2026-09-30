@@ -1,0 +1,70 @@
+{
+  "status": "verified_source_checked_visually_reviewed_expanded_control_balance_figure",
+  "checked_utc": "2026-09-30T17:59:45.638128+00:00",
+  "points": 32,
+  "source_hashes": {
+    "results/orthology/expanded-background-control-balance-20260930-v1/receipt.json": "3d5c839240bc83eeaffcd4f3d579078fe14a1d8973e66efb6a2a73694c6411a3",
+    "metadata/expanded_background_control_balance_completed_readback_20260930.json": "7f74bd0f64f124a4ee0a69b9c58b35722173346dbfac6d503829702f33f97eec",
+    "results/orthology/expanded-background-control-balance-20260930-v1/selection_coverage.tsv": "7ffa7d197c321a9f95caae4b87a7d58bf9a098f50921bef762fc1457afd7349d",
+    "results/orthology/expanded-background-control-balance-20260930-v1/covariate_balance.tsv": "e1ddb12ee56321f5f7a7e2e417fb170b9a3bfd9b4a344917bd4ab509e9aa508e",
+    "docs/figures/expanded_background_control_balance_20260930.tsv": "109ed1bf2b4a5b0209d5c2c41d822e82a0a495b3be56751cc54961973ff700e0",
+    "docs/figures/expanded_background_control_balance_20260930.png": "3385746e5d63d9151f79b50e023e39df56ff38ee7a750994ec707422d7e20f91",
+    "docs/figures/expanded_background_control_balance_20260930.pdf": "5f7db345ca53b7af03434bc3f44b7c295b3c9db08beee74a97244f940a156a0a",
+    "docs/figures/expanded_background_control_balance_20260930.svg": "f648045568ce8f7459e8e788c66a8c5dcf4988436f065b9d63d61f79c0e441a8",
+    "metadata/expanded_background_control_balance_figure_producer_20260930.json": "44c3311a14fa958c922ab3c4d8d6a8defc76ebd11ef7ad08aa5f5143ea236748",
+    "metadata/expanded_background_control_balance_figure_readback_20260930.json": "2f75709798c393c095c893481805568e883f1a246789971fa22f1a7a4a6b338b",
+    "scripts/plot_background_control_balance.py": "07d3d0f68148a01c3aaa4e3ac00ba07d8af0631b6ea5643efa7e2f673c8a5a6d",
+    "scripts/check_background_control_balance_figure.py": "68f2ec55072d3908bfdff3c0f9832df33378360c3e7aed5bf9876288c1194cde"
+  },
+  "visual_review": {
+    "png": "docs/figures/expanded_background_control_balance_20260930.png",
+    "result": "All32 points shown without clipping; readable labels, distinct guide markers, zero axes, matched-versus-original SD denominators and complete footer counts. PDF/SVG exports share source plot."
+  },
+  "scenario": "S45",
+  "policy": "alignment_evalue",
+  "coverage": {
+    "profile": {
+      "guide": "profile",
+      "policy": "alignment_evalue",
+      "scenario_id": "S45",
+      "background_set": "both_guides_unreported_parents",
+      "distance_factor": "1.5",
+      "band": "moderate",
+      "focal_only": "False",
+      "all_target_records": "141724",
+      "matched_target_records": "18503",
+      "unmatched_target_records": "123221",
+      "matched_taxa": "198",
+      "matched_families": "2667",
+      "unique_background_nodes": "13157",
+      "maximum_background_reuse": "21",
+      "top_five_background_fraction": "0.005242393125439118",
+      "identical_model_targets": "1884",
+      "identical_model_controls": "1917",
+      "zero_sequence_distance_targets": "1935",
+      "zero_sequence_distance_controls": "1935"
+    },
+    "mafft": {
+      "guide": "mafft",
+      "policy": "alignment_evalue",
+      "scenario_id": "S45",
+      "background_set": "both_guides_unreported_parents",
+      "distance_factor": "1.5",
+      "band": "moderate",
+      "focal_only": "False",
+      "all_target_records": "141685",
+      "matched_target_records": "18503",
+      "unmatched_target_records": "123182",
+      "matched_taxa": "198",
+      "matched_families": "2667",
+      "unique_background_nodes": "13157",
+      "maximum_background_reuse": "21",
+      "top_five_background_fraction": "0.005242393125439118",
+      "identical_model_targets": "1884",
+      "identical_model_controls": "1917",
+      "zero_sequence_distance_targets": "1935",
+      "zero_sequence_distance_controls": "1935"
+    }
+  },
+  "scope": "Same illustrative scenario asprior catalog, fixed before expanded outcomes; complete432-stratum table independently checked and retained. Close within-matchmetadata doesnot establishrepresentative target sampling, independentreplicates, structural effects or predictor accuracy."
+}

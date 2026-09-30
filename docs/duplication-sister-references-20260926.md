@@ -587,3 +587,15 @@ A full prelaunch partition check passed. Runtime settings for both transient
 services were verified against their planned limits; no GPU setting changed.
 Coordinates, alignments, common-residue triads and biological asymmetry remain
 unqualified. Resource planning predates launch and does not give an ETA.
+
+Full expanded reference input preparation and independent written-PDB checking
+are queued after successful raw-coordinate readback for all 24,804 additional
+models and both masks (49,608 dispositions). The v2 materializer preserves the
+serialization algorithm while requiring the stronger native-ledger partition
+loader. Every short/rejected input remains explicit; shared models across
+background/reference inputs require exact mask/position/byte equality before
+union reuse. Full end-to-end fixtures reject rehashed wrong coordinates,
+versions and residue mappings. No supplemental production completion, native
+alignment or structural asymmetry result is claimed. Plans:
+`metadata/expanded_duplication_reference_alignment_input_plan_20260930.json`
+and `metadata/expanded_duplication_reference_alignment_input_readback_plan_20260930.json`.

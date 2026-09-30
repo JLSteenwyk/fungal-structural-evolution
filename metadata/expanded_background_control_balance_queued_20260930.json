@@ -1,0 +1,26 @@
+{
+  "status": "launched_complete_expanded_selected_control_balance_and_independent_readback",
+  "launches": [
+    "metadata/expanded_background_control_balance_launch_20260930.json",
+    "metadata/expanded_background_control_balance_readback_launch_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "selected_records": 4250692,
+    "strata": 432,
+    "balance_rows": 3456,
+    "feature_array_bytes": 544088576,
+    "basis": "All selected records from full54 fixed scenarios, eight permutation-invariant metadata features, full original target baselines and all reuse/coverage counts. Chunked arrays about0.51GiB before joins/sets/copies. Descriptive balance only, no response filtering/rematching or native inference; runtime range uncalibrated."
+  },
+  "scientific_eligibility": false,
+  "scope": "All4250692 selections under54 fixed scenarios and every original target baseline,432 strata and3456 eight-feature summaries. Descriptive balance only; post-outcome-screen balance, numerical/input/prediction controls, phylogenetic effects and calibration remain required."
+}
