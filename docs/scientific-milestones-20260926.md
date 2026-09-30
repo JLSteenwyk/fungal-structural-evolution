@@ -438,3 +438,17 @@ direct concordance/conflict reversals at the 95 cutoff number 404 against the
 profile guide and 402 against MAFFT. These are overlapping descriptive
 marker/guide-edge cells, without calibrated significance, causal explanation
 or accepted species-tree status.
+
+September 30 expanded coverage completion: all six original-protein coverage
+screens passed independent reconstruction of 1,617,744 pair and 11,224,236
+event decisions over the complete frozen 935,353 terminal candidate ledger.
+Every source event field and all 12,624 taxon/guide/mask/screen rows were
+verified. The 50-residue/70%-coverage cohort retains 53,962 full-protein and
+31,274 pLDDT70 pairs, with 31,271 in both masks. Missing/same-model events stay
+in denominators and remain unmeasured. The corrected gene-identity join handles
+66,976 reversed-role modeled event links; the failed positional join and
+original sources remain preserved. Descriptive screening does not provide
+predictor calibration, matched controls, ascertainment correction or biological
+duplication inference. See
+[full coverage evidence](duplication-sampling-coverage-20260926.md#expanded-original-length-screening-completed-september-30).
+All eight scientific aims remain incomplete.

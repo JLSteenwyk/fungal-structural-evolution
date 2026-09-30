@@ -1,0 +1,27 @@
+{
+  "source": "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v2",
+  "audit": "metadata/expanded_duplication_coverage_screens_completed_readback_20260930_v2.json",
+  "output": "results/figures/expanded-duplication-coverage-screen-attrition-20260930-v1",
+  "pins": {
+    "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v2/receipt.json": "bbba984ef361015002ca18bef9707eb28bec7e8b9d446bd48a657eb8982f72a9",
+    "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v2/pair_mask_coverage.tsv": "dc8808e1ba56e163055e35e7ca153a0f7e2edbc7ce6a3b70b3685444cda25f12",
+    "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v2/event_mask_coverage.tsv.gz": "d9255d492c6993cb7863a15d936bb8833ed073816a4f6b0cd7bd39fe0495a6c9",
+    "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v2/taxon_screen_coverage.tsv": "85c59dfe2376e451e542a6c7bec699c18d24f74124316597cf4b1ed5b3a3d8bc",
+    "metadata/expanded_duplication_coverage_screens_completed_readback_20260930_v2.json": "89c3b80fa4921d8fbc722ecca07f1d0f040dcca0374769156496ba7110cf3a56",
+    "scripts/plot_expanded_duplication_coverage_screens.py": "f192766f5bbd0ce1870e9f8bd38b5535a5de50c7a8c1a8863572d4c6f8e877de"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_minutes": [
+      1,
+      15
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "12624 independently verified taxon rows; complete 24 guide/mask/screen summaries and broad-lineage table; no inference or prediction."
+  },
+  "scope": "Descriptive full-denominator event attrition and representation of all526manifest entries; guides remain separate, no selection of an optimal screen or scientific acceptance."
+}

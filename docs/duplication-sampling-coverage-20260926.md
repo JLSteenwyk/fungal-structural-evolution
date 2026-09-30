@@ -760,3 +760,92 @@ Each expanded stage used one CPU, 32 GiB memory and zero swap, with no GPU or
 paid resources. These completed numerical checks still require full original-
 protein coverage/confidence screening, suitable matched backgrounds and
 phylogenetic effect modeling before expanded duplication inference.
+
+## Expanded original-length screening completed (September 30)
+
+All 134,812 distinct pairs were screened under both masks and the existing six
+30/50-residue and 50/70/90%-coverage settings. Both input orders must be
+numerically usable and satisfy the minimum aligned length and coverage of each
+**original full protein**. Confidence-retained input lengths are not coverage
+denominators. Numerical exclusions remain traceable to the completed order
+summary, without filling blank metrics or choosing a favorable order.
+
+| Screen: minimum residues / original coverage | Full-protein pairs passing | pLDDT70 pairs passing | Same pairs passing both masks |
+| --- | ---: | ---: | ---: |
+| 30 / 50% | 79,096 | 53,229 | 53,225 |
+| 30 / 70% | 54,177 | 31,371 | 31,368 |
+| 30 / 90% | 27,474 | 9,004 | 9,004 |
+| 50 / 50% | 77,904 | 52,831 | 52,826 |
+| 50 / 70% | 53,962 | 31,274 | 31,271 |
+| 50 / 90% | 27,451 | 8,989 | 8,989 |
+
+Masked passing cohorts are not assumed to be subsets of full-protein passing
+cohorts: confidence masking can change the aligned residue correspondences.
+All exact intersections remain available rather than being inferred from the
+smaller marginal count. The screen settings are sensitivity choices; these
+results do not select an optimal screen or establish prediction accuracy.
+
+The same decisions were projected onto all 935,353 frozen terminal singleton-
+side candidate event records (467,663 profile and 467,690 MAFFT). Every original
+event field is preserved in both masks. The 283,409 modeled links include
+14,588 same-model links, which stay explicitly unmeasured. Events with no
+models, one model or unresolved tree review receive exclusions; they are not
+removed from the denominator or assigned zero structural change. These are
+the full previously audited terminal candidate ledger, not all 2.41 million
+reconciled duplication records.
+
+The independent [full readback](../metadata/expanded_duplication_coverage_screens_completed_readback_20260930_v2.json)
+reconstructed all 1,617,744 pair-screen decisions using decimal-ceiling
+thresholds and SQL model/length joins, separately from the producer's rational
+fraction helper. It then checked all 11,224,236 event-screen decisions against
+SQL queue joins and independently reconstructed pair decisions, including
+every original event field, disposition, overlapping exclusion and both-mask
+intersection. All 12,624 guide/taxon/mask/screen summary rows also passed,
+including explicit zero-pass entries across all 526 working taxa. The
+[completion handoff](../metadata/expanded_duplication_coverage_screens_completed_20260930_v2.json)
+binds both successful stage completions, source hashes and full counts.
+
+At 50 residues / 70% coverage, the profile guide retains 53,942 full-protein
+and 31,268 pLDDT70 event links: 11.53% and 6.69% of its full terminal ledger.
+These represent 202 and 198 taxa respectively, out of 526 entries. MAFFT
+retains 53,933 and 31,271 event links, with the same taxon counts. At 50 / 90%,
+the masked cohort retains 8,988 profile and 8,989 MAFFT links, about 1.92% of
+the full ledger and 182 taxa under either guide. Guides, events, families,
+proteins and taxa overlap; these counts are not independent replication or an
+ascertainment correction.
+
+![Expanded coverage-screen attrition](figures/expanded_duplication_screen_attrition_20260930.png)
+
+The [PDF](figures/expanded_duplication_screen_attrition_20260930.pdf),
+[24-row aggregate table](../metadata/expanded_duplication_screen_attrition_summary_20260930.tsv)
+and [648-row broad-lineage table](../metadata/expanded_duplication_lineage_screen_attrition_20260930.tsv)
+are bound in the source-checked, visually reviewed
+[figure record](../metadata/expanded_duplication_coverage_screen_figure_completed_20260930.json).
+Panel A uses the entire terminal ledger as denominator, and panel B uses all
+526 manifest entries. At the profile pLDDT70 50 / 70% screen, Ascomycota retains
+9,158 events from 84 of 234 entries and Basidiomycota 13,004 from 61 of 157.
+Several sparsely sampled lineages have no passing comparisons in this frozen
+catalog. Missing predictions and filtered comparisons are not biological
+absence; confidence/source calibration and appropriate missingness sensitivity
+are still required.
+
+The first expanded producer stopped because it assumed the source event ledger
+and reviewed model queue used the same gene positions. The full join diagnosis
+found 66,976 modeled events whose gene order is reversed, while the model
+associated with each gene agrees exactly. Original sources, failed scripts,
+partial output and failed terminal states are preserved in the
+[failure record](../metadata/expanded_duplication_coverage_gene_role_failure_20260930.json).
+New v2 scripts associate model/version by gene identity, retain the original
+event order and leave all numerical thresholds unchanged. Synthetic checks
+cover reversed roles with unequal model versions, rejection of an incorrect
+gene/model association, exact thresholds, excluded-order and missing/same-model
+retention, zero-taxon grids and a rehashed false pass. Evidence:
+[v2 validation](../metadata/expanded_duplication_coverage_fixture_checks_20260930_v2.json).
+
+Production and full readback each used one CPU, 32 GiB memory limits and zero
+swap, with prelaunch 0.1–6 and 0.1–12 active-hour planning allowances and
+5 GiB/0.1 GiB output allowances. These allowances were not measured ETAs or
+timeouts. No GPU, new prediction, alignment, optimization or paid resource was
+used. Expanded matched backgrounds, domain/orientation and predictor controls,
+phylogenetic effect fitting, uncertainty calibration and biological interpretation
+remain necessary before claiming duplication-associated structural evolution.

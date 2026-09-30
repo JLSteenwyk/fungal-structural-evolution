@@ -1170,3 +1170,32 @@ factors. No alignment method was selected as correct, and no biological cause
 or accepted species topology follows from disagreement. Species-tree model,
 root and calibration uncertainty remains required for downstream structural
 branch tests. See the [completed full workflow](marker-alignment-topology-comparison-20260927.md).
+
+## Expanded coverage and confidence-mask attrition (September 30)
+
+We applied the existing six combinations of 30/50 aligned residues and
+50/70/90% coverage to every expanded pair/mask comparison. Both input orders
+must be numerically usable and meet the residue and coverage thresholds.
+Coverage denominators are the original full-protein lengths from the frozen,
+sequence-exact model queue, including for pLDDT70 inputs. The producer uses
+exact integer rational comparisons; separate readback uses decimal ceiling
+cutoffs and SQL model/length joins. All order-specific numerical exclusions,
+screen exclusions and both-mask intersections remain attached. Confidence
+masking can alter correspondence sets, so masked and full passing cohorts
+are not assumed to be nested.
+
+All decisions were projected onto the complete previously audited terminal
+singleton-side candidate event ledger, retaining both guides and every source
+field. Model/version associations follow gene identity even when the source
+ledger and reviewed queue reverse gene positions. Same-model comparisons stay
+unmeasured; missing and unresolved records retain explicit exclusions. No
+event is replaced by zero structural change. Independent SQL event joins and
+recomputed pair decisions verified every event screen and aggregate. Every
+guide/taxon/mask/screen cell for all 526 working entries was retained, including
+zero-pass cells. The full terminal candidate ledger and full manifest remain
+the denominators in descriptive event and taxon summaries; guides and repeated
+events are not treated as independent replicates. This screen does not qualify
+the species sampling as unique taxa, establish confidence calibration or
+domain orientation, correct ascertainment, or test a biological duplication
+effect. Full evidence and figures are in
+[expanded coverage screening](duplication-sampling-coverage-20260926.md#expanded-original-length-screening-completed-september-30).

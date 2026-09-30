@@ -1,0 +1,18 @@
+{
+  "status": "passed_expanded_coverage_screen_validation",
+  "checked_utc": "2026-09-30T15:33:15.584714+00:00",
+  "checks": [
+    "original_not_retained_mask_length_denominator",
+    "exact_minimum_length_and_fraction_boundary",
+    "one_numerically_excluded_order_retained",
+    "missing_and_same_model_events_preserved",
+    "zero_event_taxa_both_guides_and_masks_all_screens",
+    "rehashed_false_event_pass_rejected"
+  ],
+  "script_hashes": {
+    "scripts/check_expanded_duplication_coverage_screens.py": "ea21df789987d2fdd8a1994b04b18da55ba82273d78df44769c79b9807c769ae",
+    "scripts/screen_expanded_duplication_coverage.py": "b84628caa3613ed78fe5b763bdb06b0df196036665c46da6fe67e15423184efa",
+    "scripts/readback_expanded_duplication_coverage_screens.py": "a8578566460b6fc64cb7d1084d24ee76f12383a5ef59f0a1a9623c17303d56e7"
+  },
+  "scope": "Synthetic accounting/threshold validation only, not a biological pilot or full-source completion."
+}

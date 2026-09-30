@@ -1,0 +1,20 @@
+{
+  "status": "passed_expanded_coverage_gene_identity_and_threshold_validation",
+  "checked_utc": "2026-09-30T15:39:41.551656+00:00",
+  "checks": [
+    "reversed_event_queue_gene_roles_with_unequal_model_versions",
+    "incorrect_gene_model_assignment_rejected",
+    "original_not_retained_mask_denominator",
+    "exact_minimum_boundary",
+    "excluded_order_preserved",
+    "missing_same_model_events_preserved",
+    "all_zero_taxon_cells",
+    "rehashed_false_event_pass_rejected"
+  ],
+  "script_hashes": {
+    "scripts/check_expanded_duplication_coverage_screens_v2.py": "895a2b33bddd453b334c757a69dfd3ece352a74df150d541735b4e889185997b",
+    "scripts/screen_expanded_duplication_coverage_v2.py": "d1057d7016a8e4cf80fc09cd836dd1ef22060a90d28bb72bd0c200c0db52d22a",
+    "scripts/readback_expanded_duplication_coverage_screens_v2.py": "c401fdcf28fff09cbebf49f6114871f023c54cfb18322a2ee8e01dfd82676b60"
+  },
+  "scope": "Synthetic machinery and threshold validation; numerical screening policy unchanged. Full-source result remains pending."
+}

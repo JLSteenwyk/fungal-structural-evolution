@@ -9964,3 +9964,31 @@ does not establish universal coverage or complete the biological project.
   replicated biological events or support for a preferred tree. Source,
   artifact and process-journal verification is preserved in
   `metadata/alignment_supported_conflict_completed_20260930.json`.
+
+- September 30: completed full expanded pair/event original-length coverage
+  screening and independent readback. All 1,617,744 pair-screen decisions,
+  11,224,236 event-screen decisions, original event fields and 12,624 taxon
+  summary rows passed. Both masks and six unchanged screens retain the entire
+  935,353 terminal singleton-side candidate ledger and all 526 manifest entries.
+  At 50 residues/70% coverage, 53,962 full-protein and 31,274 pLDDT70 pairs pass,
+  with 31,271 passing both masks. Predictor calibration and expanded matched
+  biological inference remain pending.
+
+- September 30: preserved an initial failed coverage producer and rejected
+  dependent checker. Complete diagnosis found 66,976 modeled event links whose
+  gene positions reverse between source ledger and reviewed queue, with exact
+  gene/model associations preserved. Separate v2 producer and checker map
+  models/versions by gene identity; no source, numerical tolerance or threshold
+  changed. Synthetic validation includes reversed positions with unequal model
+  versions, incorrect gene/model rejection and rehashed false-pass rejection.
+  Full source/receipt/journal completion is bound in
+  `metadata/expanded_duplication_coverage_screens_completed_20260930_v2.json`.
+
+- September 30: generated and source-checked full-denominator event attrition
+  and 526-entry taxon representation figures, exported reviewed PNG/PDF plus
+  all 24 aggregate and 648 broad-lineage rows. At 50/70% pLDDT70, 198 taxa have
+  at least one passing event under either guide. At 50/90%, 182 do. The sources,
+  visual review and exported hashes are recorded in
+  `metadata/expanded_duplication_coverage_screen_figure_completed_20260930.json`.
+  Missing structures are not biological absence and overlapping guide counts
+  are not independent events. All eight scientific aims remain incomplete.

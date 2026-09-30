@@ -1,0 +1,64 @@
+{
+  "status": "diagnosed_positional_gene_join_failure_preserved",
+  "checked_utc": "2026-09-30T15:38:23.417914+00:00",
+  "reversed_modeled_event_gene_roles": 66976,
+  "modeled_events": 283409,
+  "first_example": {
+    "event": {
+      "guide": "profile",
+      "family": "OG0000000",
+      "taxon_id": "F1042133",
+      "gene_node": "n614",
+      "gene_a": "F1042133_XP_044680743.1",
+      "gene_b": "F1042133_XP_044680742.1",
+      "model_a": "",
+      "model_b": "",
+      "coverage_class": "neither_model",
+      "same_model": "0",
+      "new_model_a": "AF-A0A9P8IQR7-F1",
+      "new_model_b": "AF-A0A9P8IQ98-F1",
+      "new_coverage_class": "both_models",
+      "new_same_model": "0"
+    },
+    "queue_link": {
+      "family": "OG0000000",
+      "taxon_id": "F1042133",
+      "gene_node": "n614",
+      "support": "1.0",
+      "gene_a": "F1042133_XP_044680742.1",
+      "gene_b": "F1042133_XP_044680743.1",
+      "model_a": "AF-A0A9P8IQ98-F1",
+      "model_b": "AF-A0A9P8IQR7-F1",
+      "same_sequence": "0",
+      "same_model": "0",
+      "tree_status": "exact_reported_pair",
+      "two_direct_tip_children": "1",
+      "guide": "profile",
+      "version_a": "6",
+      "version_b": "6",
+      "pair_key": "b48e978b9526f7dac5c4229a496c56fe10701f4de4e31e973a143b1dcd268a99",
+      "comparison_status": "queued_distinct_models"
+    }
+  },
+  "failed_services": {
+    "fungal-expanded-duplication-coverage-screens-20260930.service": {
+      "Result": "exit-code",
+      "ExecMainStatus": "1",
+      "ActiveState": "failed"
+    },
+    "fungal-expanded-duplication-coverage-screens-readback-20260930.service": {
+      "Result": "exit-code",
+      "ExecMainStatus": "1",
+      "ActiveState": "failed"
+    }
+  },
+  "preserved_partial_output": "results/structural_comparisons/expanded-duplication-coverage-screens-20260930-v1",
+  "source_hashes": {
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88",
+    "results/orthology/duplication-expanded-coverage-20260928-v1/event_coverage.tsv.gz": "166732c77f1f9d15e3cbbbcb7e9493065b8ad8d2ba3d50bb4bb097063afe27b1",
+    "metadata/expanded_duplication_coverage_screens_plan_20260930.json": "7850d7c8cedd54a78aaffe85f9036e502aa44e583d9f4b97b630e70fb5a22956",
+    "scripts/screen_expanded_duplication_coverage.py": "b84628caa3613ed78fe5b763bdb06b0df196036665c46da6fe67e15423184efa",
+    "scripts/readback_expanded_duplication_coverage_screens.py": "a8578566460b6fc64cb7d1084d24ee76f12383a5ef59f0a1a9623c17303d56e7"
+  },
+  "scope": "Full modeled event join scan: reversed genes retain exact associated models. Source ledgers, native alignments and acceptance thresholds unchanged; failed producer stopped before completion receipt and dependency gate refused downstream analysis. Versioned replacement must join model/version by gene identity while preserving original event positions."
+}
