@@ -562,3 +562,13 @@ coverage/common-triad/sequence-locked/domain/PAE/prediction and phylogenetic/
 calibration controls remain required. Native assignment is not biological
 orthology or accepted duplication asymmetry; all eight scientific aims remain
 incomplete.
+
+September 30: complete-reference measurement union and independent reader are
+implemented for all 55,701 pairs/222,804 mask-order states. Synthetic native
+fixture passed all 16 states and six rehashed false exports were rejected.
+Actual reuse proof scope/schema/flags and target native plan were checked.
+Four exact dependency-waiting stages are live: new-native four-journal closure,
+full union, independent union field reader and final two-journal closure.
+Production union outputs remain pending native completion. No scientific aim
+is completed; full coverage/common-triad/sequence-locked/domain/PAE/prediction,
+biological orthology/phylogenetic and calibration controls remain required.

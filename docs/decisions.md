@@ -127,3 +127,15 @@ orthology. Missing reference genes are unqueried contexts, not negative
 membership. Full independent source/link reconstruction and exact process
 journals precede completion. Preserve failed attempts and use fresh versioned
 scripts/plans/outputs for recovery.
+
+### September 30: complete the whole reference measurement grid before union
+
+Require the complete new-native disposition grid, unchanged numerical/geometry
+proof lineage and all four exact completion journals before joining new
+measurements to qualified old results. Preserve every old/new state and
+original native checkpoint/metric/flag/source order. Map current directions
+by ordered model/version endpoints, without editing original source records.
+Independent full field reconstruction and both union process journals precede
+downstream qualification. Keep large byte indexes outside Git with versioned
+locators. A numerical union does not qualify biological coverage, residue
+correspondence, prediction uncertainty, orthology or calibrated effects.

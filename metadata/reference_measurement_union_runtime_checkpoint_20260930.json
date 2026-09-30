@@ -1,0 +1,177 @@
+{
+  "checked_utc": "2026-09-30T21:35:02.494778+00:00",
+  "previous_goal_turn": "progress: full native reference orthology and whole-context native/model attrition independently completed with source/journal proofs; reproducible outputs/scripts pushed in4106179.",
+  "current_goal_turn": "progress: complete fullscope reference measurement source/union/independent reconstruction/journal closures implemented, actual native16state corruption fixture passed, actual reuse proof scope/schema verified, four new exact dependency-waiting stages launched; no production completion claim.",
+  "native_state": {
+    "stage": "aligning",
+    "completed": 52288,
+    "total": 99788,
+    "counts": {
+      "full:aligned": 26144,
+      "plddt70:aligned": 24136,
+      "plddt70:input_unavailable": 2008
+    }
+  },
+  "verified_live_handles": [
+    {
+      "launch": "metadata/new_reference_measurement_completion_launch_20260930.json",
+      "pid": 2929454,
+      "created": 1790803818.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/reference_measurement_union_launch_20260930.json",
+      "pid": 2929458,
+      "created": 1790803818.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/reference_measurement_union_readback_launch_20260930.json",
+      "pid": 2929464,
+      "created": 1790803818.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/reference_measurement_union_completion_launch_20260930.json",
+      "pid": 2929481,
+      "created": 1790803818.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_completion_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_launch_20260930.json",
+      "pid": 2773729,
+      "created": 1790795916.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "8s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 2773841,
+          "created": 1790795920.72,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_expanded_reference_alignments.py",
+            "--plan",
+            "metadata/expanded_reference_alignment_plan_20260930.json"
+          ],
+          "rss": 5985882112,
+          "cpu_seconds": 221.95
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_diagnostic_launch_20260930.json",
+      "pid": 2773732,
+      "created": 1790795916.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_diagnostic_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_launch_20260930.json",
+      "pid": 2773735,
+      "created": 1790795916.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_readback_launch_20260930.json",
+      "pid": 2773741,
+      "created": 1790795916.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_readback_wait_plan_20260930.json"
+      ],
+      "state": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    }
+  ],
+  "production_union_outputs_complete": false,
+  "gpu_predictions": "paused; no new GPU/paid resource",
+  "remaining": "Live new native alignments/numeric/geometry then fullunion/readback/closure; pair/order/coverage/event/commontriad/sequence-locked/domain/PAE/prediction/native-biological-orthology/accepted phylogenetic uncertainty/calibration and all8scientificaims remain unfinished."
+}

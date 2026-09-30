@@ -856,6 +856,70 @@ and prediction controls, native reference orthology, phylogenetic uncertainty
 and calibrated biological asymmetry remain unfinished. All eight scientific
 aims remain incomplete.
 
+## Full measurement union queued — September 30
+
+The complete reference design has **55,701 pairs**, two masks and two input
+orders, totaling **222,804 dispositions**. The union workflow preserves all
+**123,016 independently qualified old states** and waits for all **99,788 new
+states** rather than exporting an apparently complete table with pending
+measurements silently omitted. Old sources retain the existing preference
+for expanded primary results, otherwise old reference results; numerical
+usability never selects an alternative source or changes a flag.
+
+Four additional stages are now launched with exact captured dependencies:
+
+1. Complete new-native measurement verification binds every checkpoint and
+   checks the complete pair/mask/order grid, numerical and quaternion proof
+   lineage, every disposition and all four original process-completion
+   journals. Its large checkpoint index stays outside Git.
+2. The union exports every current pair/mask/order with actual ordered
+   model/version endpoints, original checkpoint path/hash, native source
+   order, native metrics and complete original numerical/geometry records.
+   Old native source order can differ from current order; ordered endpoints
+   establish the correspondence. Original checkpoints are unchanged.
+3. A separate reader independently reconstructs every union field and all
+   source/status/exclusion counts from the completed source ledgers and
+   actual checkpoint bytes. It shares source I/O/proof loading, not producer
+   projection or exclusion logic.
+4. Final closure requires the full independent proof, all exported/raw source
+   bindings and both union producer/reader completion journals. A small
+   versioned locator records the outside-Git full proof archive/checksum.
+
+No missing, short, timeout, parse/native error or degenerate/RMSD-flagged result
+is replaced by zero. No native optimization or rigid-fit measurement is
+repeated in this union. Numerical usability is a provenance/identifiability
+label and remains distinct from original-length coverage, confidence,
+common-residue/sequence-locked correspondence, domain orientation, PAE,
+prediction-source and biological orthology/phylogenetic/calibration controls.
+Masked native coverage is not silently relabeled as full-protein coverage.
+
+The synthetic handoff passed all **16 states** across four pairs, including
+model versions 6/10, reversed old-primary directions, both masks, unavailable
+inputs, nonunique geometry and explicit synthetic RMSD/error/parse/timeout
+states. Six rehashed false exports were rejected: cleared exclusions, wrong
+source order, reversed endpoints, changed native metric, wrong checkpoint
+hash and deleted unavailable state. Source/numeric/quaternion/journal proof
+stubs are fixture data, not production qualification or a pilot. The actual
+completed reuse proof schema, full scope, numerical counts and target native
+plan were also checked before queueing.
+
+Resources were recorded before launch: two CPU, 16 GiB memory, no swap,
+eight GiB output allowance and an uncalibrated 0.1–12-hour planning range per
+stage, with a 100 GiB disk reserve checked before launch. These stages wait
+behind the existing native pipeline; no GPU or paid resource is used. Exact
+plans and live handles are in
+[the queue record](../metadata/reference_measurement_union_pipeline_queued_20260930.json).
+The existing native measurements remain active. These stages are queued;
+their production outputs and completion proofs are not yet present.
+
+The workflow check is reproducible with
+`python scripts/check_reference_measurement_union.py`. Production plans pin
+all scripts and source plans; their output directories are append-only and
+completed data are never overwritten. Full pair/order summaries, coverage
+and event projection, common-residue triads, sequence-locked/domain/PAE/
+prediction controls and calibrated phylogenetic asymmetry remain downstream.
+All eight scientific aims remain incomplete.
+
 ## Full native reference orthology query — September 30
 
 The new native-membership workflow uses all **283,409** independently checked

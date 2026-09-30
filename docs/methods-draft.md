@@ -1396,3 +1396,22 @@ for availability and 21,169/21,150 for sequence-first designs. These overlapping
 conditional records do not establish independent observations, quality-qualified
 structural sample sizes or biological effects. Summary closure checked all 23
 source/artifact bindings and two additional exact completion journals.
+
+### Full reference measurement union — September 30
+
+The full 55,701-pair/two-mask/two-order design retains 222,804 dispositions.
+The join of 123,016 qualified old states and 99,788 new native states requires
+complete new-native numerical/quaternion verification and all four original
+process journals. Original checkpoint paths/checksums, native order,
+ordered model/version endpoints, native metrics and complete numerical/
+geometry records remain explicit. Different old native directions map by
+actual ordered endpoints; no metric, flag or original checkpoint is changed.
+All missing/error/short/degenerate/RMSD dispositions remain in the union, with
+no zero imputation, optimization retry or outcome-based source substitution.
+An independent reader reconstructs every exported field and source/status/
+exclusion count before full byte/journal closure. Complete byte indexes stay
+outside Git with versioned locations/checksums. These stages are queued behind
+the live native measurements, not completed production results. Numerical
+union does not establish original-length coverage, common-residue/sequence-
+locked correspondence, domain/PAE/prediction accuracy, biological orthology,
+accepted phylogenetic uncertainty or calibrated asymmetry.

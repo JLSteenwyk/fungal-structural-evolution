@@ -10184,3 +10184,16 @@ does not establish universal coverage or complete the biological project.
   was changed. Existing CPU only; no GPU inference or paid resources. Native
   membership does not establish a duplication effect; all eight aims remain
   incomplete.
+
+- September 30: implemented the full 55,701-pair/222,804-disposition reference
+  measurement union, its independent field reader, new-native four-journal
+  completion gate and final two-journal union closure. All 16 synthetic native
+  states passed and six rehashed false exports were rejected. Actual completed
+  reuse scope/flags/schema and target plan agree with the adapter. Four exact
+  dependency-waiting stages are live behind the ongoing native measurements;
+  no production union/completion output is claimed. Original source directions,
+  missing/error/degenerate/RMSD flags and all 123,016 old states are retained;
+  no outcome-based source switch, repeated optimization or missing-as-zero
+  substitution. Full coverage/common-triad/sequence-locked/domain/PAE/prediction,
+  biological orthology/phylogenetic and calibration controls remain required.
+  GPU predictions remain paused; all eight aims remain incomplete.

@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-new-reference-measurement-completion-20260930.service",
+  "pid": 2929454,
+  "created": 1790803818.61,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/new_reference_measurement_completion_wait_plan_20260930.json",
+  "plan_sha256": "752ba3c358061b999d454b85e8c882d9853bae5d1400980d78fab46da9d00325",
+  "checked_utc": "2026-09-30T21:30:19.347061+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

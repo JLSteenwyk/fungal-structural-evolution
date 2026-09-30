@@ -1,0 +1,93 @@
+{
+  "status": "queued_exact_dependency_full_reference_measurement_completion_union_readback_and_journal_closure",
+  "checked_utc": "2026-09-30T21:30:19.538362+00:00",
+  "new_measurement_completion": {
+    "unit": "fungal-new-reference-measurement-completion-20260930.service",
+    "pid": 2929454,
+    "created": 1790803818.61,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/new_reference_measurement_completion_wait_plan_20260930.json",
+    "plan_sha256": "752ba3c358061b999d454b85e8c882d9853bae5d1400980d78fab46da9d00325",
+    "checked_utc": "2026-09-30T21:30:19.347061+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "union": {
+    "unit": "fungal-reference-measurement-union-20260930.service",
+    "pid": 2929458,
+    "created": 1790803818.67,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_measurement_union_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_measurement_union_wait_plan_20260930.json",
+    "plan_sha256": "ce93d2c5daaf02be4ad124b592ae652933563d3e1f0b0f56f4a64d5b50f9ad88",
+    "checked_utc": "2026-09-30T21:30:19.403853+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "independent_reader": {
+    "unit": "fungal-reference-measurement-union-readback-20260930.service",
+    "pid": 2929464,
+    "created": 1790803818.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_measurement_union_readback_wait_plan_20260930.json",
+    "plan_sha256": "dedc5e3890b1a19c2d59961acf780d313b1e0b810ac918690503600488703d57",
+    "checked_utc": "2026-09-30T21:30:19.477271+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "union_completion": {
+    "unit": "fungal-reference-measurement-union-completion-20260930.service",
+    "pid": 2929481,
+    "created": 1790803818.8,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_measurement_union_completion_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_measurement_union_completion_wait_plan_20260930.json",
+    "plan_sha256": "0fd6fdf11aec02e8e6536189feff6540eabda00af7b33ad7ca05b402c435284f",
+    "checked_utc": "2026-09-30T21:30:19.537875+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "available_disk_bytes_before_launch": 11437808705536,
+  "full_reference_pairs": 55701,
+  "directed_dispositions": 222804,
+  "scientific_eligibility": false,
+  "scope": "New fullscope code/synthetic corruption checks complete; four actual dependency-waiting stages launched. Existing native pipeline remains live, so no production union/completion result is yet claimed. Previous goalturn was progress: fullnative orthology and wholecontext attrition independently completed, source/journal proof checked and scripts/results pushed. No native measurements restarted or flags cleared; GPU inference remains paused."
+}

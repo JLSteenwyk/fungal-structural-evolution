@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-reference-measurement-union-readback-20260930.service",
+  "pid": 2929464,
+  "created": 1790803818.72,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/reference_measurement_union_readback_wait_plan_20260930.json",
+  "plan_sha256": "dedc5e3890b1a19c2d59961acf780d313b1e0b810ac918690503600488703d57",
+  "checked_utc": "2026-09-30T21:30:19.477271+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}
