@@ -1,0 +1,35 @@
+{
+  "dependencies": [
+    "metadata/reference_context_measurement_design_producer_launch_20260930.json",
+    "metadata/reference_context_measurement_design_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "scripts/reference_context_measurement_sources.py": "171c6f25c1343986961d8eb781c8bb1de5dca8c612948a289d24496746b96205",
+    "scripts/prepare_reference_context_measurement_design.py": "e0c55e332e829eceef7c71a5c6d46cf73eb25ce2cc8d44677236cdeecedf966e",
+    "scripts/readback_reference_context_measurement_design.py": "9e5c35a976a88a418a508912fc9af8019cf76452a2042d0595d3a6e26793eafd",
+    "scripts/check_reference_context_measurement_design.py": "dbd27f97a89f8c4170fdca5fb33bcc123e1e5d29b998c0d5aaa2a3548026f9a6",
+    "scripts/close_reference_context_measurement_design.py": "2029ee4aa6560fcf70f9854d16840b46025696334ef6dfa4d60c62f7c1e39936",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/reference_context_measurement_design_resources_20260930.json": "c1c50884e196c68b378bdf3ba21d70995c48194fc0bae6b6c5c66ebf41ae4e2c",
+    "metadata/reference_context_measurement_design_fixture_validation_20260930.json": "e28dad836e70372590a55254f6510784ba0c1f7c04fb63db49c710d1be6b6873",
+    "metadata/reference_orthology_completed_20260930_v2.json": "7f63cf7108e435fa959159328789f3f122f37483641f022652d5a74cb1637820",
+    "metadata/reference_orthology_completed_readback_20260930_v2.json": "2461a2675b4fc882b5df9a68a3ba7dc693132f364d88b2ec1d282478f998d05c",
+    "metadata/expanded_duplication_reference_comparison_completed_readback_20260930.json": "a34ca5ef01e3de7df71a682f32914eaf1fe68a397c6536629f17eaea2dbeef60",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "metadata/reference_context_measurement_design_plan_20260930.json": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "metadata/reference_context_measurement_design_producer_launch_20260930.json": "1d7849d14785cc5d80ffddf81028f770bda095b3e2849edfecffc1e864c052ee",
+    "metadata/reference_context_measurement_design_readback_launch_20260930.json": "ee4bd4ab5c4bba6de43ebbab227ec44455335a424c09601bc7af964992bfd5f6",
+    "metadata/reference_context_measurement_design_readback_wait_plan_20260930.json": "0c0f37645965f7fbfb74dfbfa79afa3501c730f1cbcde86e7b9724cf2fb95d73",
+    "metadata/reference_context_measurement_design_completion_plan_20260930.json": "0de61b03c17c70e609e532bee642eedaf453645d1c618a32d4b829afcd4d6b78"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_reference_context_measurement_design.py",
+    "--plan",
+    "metadata/reference_context_measurement_design_completion_plan_20260930.json"
+  ]
+}

@@ -156,3 +156,18 @@ union before production, and full independent readback plus both original
 process journals before accepting numerical coverage completion. Pair coverage
 does not establish common residue correspondence, biological reference
 orthology, independent events or calibrated duplication asymmetry.
+
+### September 30: fix complete phylogenetic context-to-measurement roles
+
+Join every closed native target context to the frozen duplicate gene/model/
+version queue and complete reference pair/availability-side ledger before
+projecting coverage or effects. Match genes by identity rather than positional
+a/b labels. Preserve both designs, every tie and original lexical choice,
+all native source fields and parent exclusions. Classify missing structures,
+identical-model comparisons, pairs in the physical measurement design and
+unmeasured distinct pairs separately. A pair measured for a different event
+does not make an excluded parent context eligible. Require complete independent
+SQL field/role reconstruction, exhaustion of both full context and original
+availability-link universes, source hashes and both original process journals.
+Work-count exports label context counts separately from logical side-link
+counts; do not pool counting units, guides, reference designs or ties.

@@ -585,3 +585,15 @@ union; their production outputs are pending. Full event/context linkage,
 common-residue and sequence-locked/domain/PAE/prediction controls, supported
 phylogeny and calibration remain required. All eight scientific aims remain
 incomplete; GPU predictions remain paused.
+
+September 30: the complete native context-to-measurement-design bridge passed
+independent SQL reconstruction of all 283,409 contexts, both designs, 214,461
+tied-reference records and 428,922 logical sides, including all 121,490
+availability-ledger links. Full native/source fields, parent exclusions,
+missing models, ties and lexical choices remain explicit; gene identity
+determines model/version roles. Forty hashes and both exact original process
+journals passed. Full work counts were exported with explicit counting units.
+This is source design completion, not coverage-qualified cohorts or effects.
+Full context coverage/native-assignment attrition, common-triad/sequence-locked/
+domain/PAE/prediction and phylogenetic/calibration controls remain pending.
+All eight scientific aims remain incomplete.

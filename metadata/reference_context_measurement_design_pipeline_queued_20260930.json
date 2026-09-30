@@ -1,0 +1,77 @@
+{
+  "status": "launched_full_reference_context_model_work_projection_and_queued_sql_readback_journal_closure",
+  "checked_utc": "2026-09-30T22:11:18.562193+00:00",
+  "producer": {
+    "unit": "fungal-reference-context-measurement-design-20260930.service",
+    "pid": 2978045,
+    "created": 1790806277.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_reference_context_measurement_design.py",
+      "--plan",
+      "metadata/reference_context_measurement_design_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_context_measurement_design_plan_20260930.json",
+    "plan_sha256": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "checked_utc": "2026-09-30T22:11:18.471889+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "readback": {
+    "unit": "fungal-reference-context-measurement-design-readback-20260930.service",
+    "pid": 2978048,
+    "created": 1790806277.79,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_context_measurement_design_readback_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_context_measurement_design_readback_wait_plan_20260930.json",
+    "plan_sha256": "0c0f37645965f7fbfb74dfbfa79afa3501c730f1cbcde86e7b9724cf2fb95d73",
+    "checked_utc": "2026-09-30T22:11:18.506171+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "completion": {
+    "unit": "fungal-reference-context-measurement-design-completion-20260930.service",
+    "pid": 2978051,
+    "created": 1790806277.83,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_context_measurement_design_completion_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_context_measurement_design_completion_wait_plan_20260930.json",
+    "plan_sha256": "5f6c293822dce252d1067e3ad4441ea358f3e6968c0213c0d92dc933e35ebfb6",
+    "checked_utc": "2026-09-30T22:11:18.561898+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "model_pairs": 55701
+  },
+  "available_disk_bytes_before_launch": 11434811064320,
+  "scientific_eligibility": false,
+  "scope": "Full283409nativecontexts/566818context-design rows/214461tie records/428922logicalduplicate-reference links. Preserve alloriginal/nativefields/parent exclusions/ties/missing structures; join duplicate gene identities to original model/version and full referencepair/availabilityledger. Exhaust all121490availabilityside links. Independent SQLreconstruction and both exact process completion journals required. Fixed source-only design; no native rematching, favorable source/lexical change, absent-as-zero or biological orthology/coverage/asymmetry acceptance. All8aims remain incomplete; full coverage/commontriad/sequence-locked/domain/PAE/prediction/phylogeny/calibration downstream."
+}

@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-reference-context-measurement-design-readback-20260930.service",
+  "pid": 2978048,
+  "created": 1790806277.79,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/reference_context_measurement_design_readback_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/reference_context_measurement_design_readback_wait_plan_20260930.json",
+  "plan_sha256": "0c0f37645965f7fbfb74dfbfa79afa3501c730f1cbcde86e7b9724cf2fb95d73",
+  "checked_utc": "2026-09-30T22:11:18.506171+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

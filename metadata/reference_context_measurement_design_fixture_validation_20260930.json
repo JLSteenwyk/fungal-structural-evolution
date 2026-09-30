@@ -1,0 +1,19 @@
+{
+  "status": "passed_full_synthetic_reference_context_measurement_design_checks",
+  "target_contexts": 12,
+  "reference_tie_records": 22,
+  "duplicate_reference_links": 44,
+  "availability_side_links": 16,
+  "model_pairs": 3,
+  "rejected_rehashed_exports": [
+    "swapped_duplicate_models",
+    "changed_version",
+    "changed_current_endpoint",
+    "cleared_parent_exclusion",
+    "reselected_modeled_tie",
+    "dropped_empty_context",
+    "deleted_alias_reference",
+    "changed_pair_hash"
+  ],
+  "scope": "Synthetic context/queue/native-proof/journal records only, not production qualification or a pilot. Both guides/designs, reversed queue gene roles, unequal versions, nonlexical model endpoints, unmodeled lexical tie with modeled alternate, excluded parent, no reference, identical duplicate/reference models, shared-model reference aliases, native guide disagreement and all four measurement work states exercised. Independent SQL reconstruction shares only source/proof I/O."
+}

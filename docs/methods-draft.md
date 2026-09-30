@@ -1447,3 +1447,35 @@ closed measurement union. Event/context linkage, residue correspondence and
 common-triad/sequence-locked/domain/PAE/prediction, phylogenetic and calibrated
 inference controls remain outstanding. Coverage qualification alone does not
 accept a reference's biological role or establish structural asymmetry.
+
+### Complete native context-to-measurement design — September 30
+
+Every one of the 283,409 closed native target contexts was joined to the
+frozen duplicate gene/model/version queue. Gene identity, rather than table
+a/b position, determines each model role. All native context/source fields,
+parent eligibility, original reference designs, tied genes, lexical choices
+and both-guide native assignments are retained. For each of the 214,461
+reference ties, both duplicate sides are mapped to exact current reference
+pair endpoints/versions, or retained as missing-reference-model, identical-
+model or outside-design work states. All 121,490 original availability-side
+ledger links are accounted for. Matching physical pairs may be shared among
+events, designs or reference gene aliases, without deleting logical links.
+
+The full 428,922 logical-side export and 566,818 context/design denominator
+were independently reconstructed with uniquely keyed SQL queue/pair/ledger
+joins. Every source/native field, gene/model/version role, pair hash, focal
+endpoint, missing/identical/outside-design state, lexical flag and parent
+exclusion passed; all source ordinals and both full context/availability
+universes were exhausted. Completion verified 40 source/artifact hashes and
+both exact original process journals. Work-state counts use explicit counting
+units: no-reference cells count contexts, while other cells count logical
+duplicate/reference sides. These units are not combined.
+
+This completes the fixed source-only bridge, not structural cohort acceptance.
+Original parent eligibility must still gate every subsequent coverage/native-
+assignment policy, including when an excluded context maps to a physical pair
+measured for another event. No modeled tie replaces an unmodeled lexical
+choice, no missing comparison becomes zero, and an identical model is not an
+independent structural replicate. Coverage, common-residue and sequence-locked
+comparisons, domain/PAE/prediction uncertainty, biological orthology/phylogeny
+and calibrated inference remain required.

@@ -1,0 +1,208 @@
+{
+  "status": "complete_full_reference_context_work_design_with_live_native_union_and_coverage_dependencies",
+  "checked_utc": "2026-09-30T22:15:58.251539+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_goal_turn_evidence": "2d42c04 implemented full reference coverage/order logic and independently checked corrupt-export fixtures, closed actual full602972-state input preflight with60bindings/originaljournal and queued three exact dependency-waiting stages; HEAD=origin/main verified.",
+  "current_goal_turn_classification": "progress",
+  "context_design_completion": "metadata/reference_context_measurement_design_completed_20260930.json",
+  "context_design_hash_bindings_verified": 40,
+  "context_design_original_journals_checked": 2,
+  "context_design_counts": {
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links_checked": 121490,
+    "guide_contexts": {
+      "profile": 141724,
+      "mafft": 141685
+    },
+    "measurement_disposition_counts": {
+      "profile|availability|parent=1|in_full_reference_measurement_design": 60406,
+      "profile|sequence_first|parent=1|in_full_reference_measurement_design": 44668,
+      "profile|availability|parent=1|no_reference_gene": 40700,
+      "profile|sequence_first|parent=1|reference_model_missing": 98906,
+      "profile|availability|parent=0|no_reference_gene": 70109,
+      "profile|sequence_first|parent=0|no_reference_gene": 69376,
+      "profile|sequence_first|parent=0|reference_model_missing": 2950,
+      "profile|availability|parent=0|outside_full_reference_measurement_design": 4030,
+      "profile|sequence_first|parent=0|outside_full_reference_measurement_design": 2286,
+      "profile|availability|parent=1|identical_model_not_independent": 364,
+      "profile|sequence_first|parent=1|identical_model_not_independent": 364,
+      "profile|availability|parent=0|identical_model_not_independent": 265,
+      "profile|sequence_first|parent=0|identical_model_not_independent": 265,
+      "profile|availability|parent=0|in_full_reference_measurement_design": 1,
+      "profile|sequence_first|parent=0|in_full_reference_measurement_design": 1,
+      "mafft|availability|parent=1|in_full_reference_measurement_design": 60354,
+      "mafft|sequence_first|parent=1|in_full_reference_measurement_design": 44608,
+      "mafft|availability|parent=1|no_reference_gene": 40695,
+      "mafft|sequence_first|parent=1|reference_model_missing": 98910,
+      "mafft|availability|parent=0|no_reference_gene": 70100,
+      "mafft|sequence_first|parent=0|no_reference_gene": 69360,
+      "mafft|sequence_first|parent=0|reference_model_missing": 2956,
+      "mafft|availability|parent=0|outside_full_reference_measurement_design": 4031,
+      "mafft|sequence_first|parent=0|outside_full_reference_measurement_design": 2299,
+      "mafft|availability|parent=1|identical_model_not_independent": 366,
+      "mafft|sequence_first|parent=1|identical_model_not_independent": 366,
+      "mafft|availability|parent=0|identical_model_not_independent": 263,
+      "mafft|sequence_first|parent=0|identical_model_not_independent": 263
+    }
+  },
+  "native_state": {
+    "stage": "aligning",
+    "completed": 71104,
+    "total": 99788,
+    "counts": {
+      "full:aligned": 35552,
+      "plddt70:aligned": 32698,
+      "plddt70:input_unavailable": 2854
+    }
+  },
+  "live_handles": [
+    {
+      "launch": "metadata/expanded_reference_alignment_launch_20260930.json",
+      "pid": 2773729,
+      "created": 1790795916.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_diagnostic_launch_20260930.json",
+      "pid": 2773732,
+      "created": 1790795916.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_diagnostic_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_launch_20260930.json",
+      "pid": 2773735,
+      "created": 1790795916.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_readback_launch_20260930.json",
+      "pid": 2773741,
+      "created": 1790795916.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/new_reference_measurement_completion_launch_20260930.json",
+      "pid": 2929454,
+      "created": 1790803818.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/reference_measurement_union_launch_20260930.json",
+      "pid": 2929458,
+      "created": 1790803818.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/reference_measurement_union_readback_launch_20260930.json",
+      "pid": 2929464,
+      "created": 1790803818.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/reference_measurement_union_completion_launch_20260930.json",
+      "pid": 2929481,
+      "created": 1790803818.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_producer_launch_20260930.json",
+      "pid": 2963548,
+      "created": 1790805408.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_readback_launch_20260930.json",
+      "pid": 2963551,
+      "created": 1790805408.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_completion_launch_20260930.json",
+      "pid": 2963554,
+      "created": 1790805408.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping"
+    }
+  ],
+  "native_child": {
+    "pid": 2773841,
+    "created": 1790795920.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_expanded_reference_alignments.py",
+      "--plan",
+      "metadata/expanded_reference_alignment_plan_20260930.json"
+    ]
+  },
+  "scientific_aims_completed": 0,
+  "gpu_inference": "paused; no current authorized prediction run window",
+  "scope": "All8aims/fullsampling remain active. New complete context/duplicate gene/model/version/fullreference physicalwork link bridge retains every native/sourcefield, parent exclusion, missingmodel and tie. No accepted coverage/commontriad/sequence-locked/domain/PAE/prediction/phylogenetic/calibrated effect result. Next fullcontext coverage/own-versus-bothguide/lexical-any-alltie attrition must use both closed input/measurement sources and enforce originalparent eligibility even when a pair is physically measured elsewhere."
+}

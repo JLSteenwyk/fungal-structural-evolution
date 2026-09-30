@@ -1014,3 +1014,59 @@ structural sensitivity, original-length coverage, common-residue and
 sequence-locked comparisons, domain/PAE/prediction controls, phylogenetic
 uncertainty and calibrated inference remain required. All eight scientific
 aims remain incomplete.
+
+## Complete context-to-measurement design — September 30
+
+The full native source now has a verified fixed model/version work assignment
+for all 283,409 target contexts under both reference designs. The complete
+214,461 tied-reference records/428,922 logical duplicate-reference sides are
+retained, including missing reference structures, parent-ineligible contexts
+and identical models. All 121,490 original availability-side ledger links
+were checked. Duplicate gene identity determines each frozen model/version
+role even when queue and reference table positions differ. Model pair hashes
+and current focal endpoints are explicit; reference gene aliases sharing a
+model remain separate logical links.
+
+Completion evidence is
+`metadata/reference_context_measurement_design_completed_20260930.json`: all
+40 source/artifact hashes and both exact original process journals checked.
+`metadata/reference_context_measurement_design_completed_readback_20260930.json`
+independently reconstructs every original source/native field, duplicate gene/
+model/version mapping, reference design/tie/lexical choice, parent exclusion,
+physical pair endpoint and availability link using uniquely keyed SQL joins.
+Both complete context and availability-link universes and all native source
+ordinals were exhausted. The large immutable export remains outside Git in
+`results/orthology/reference-context-measurement-design-20260930-v1`.
+
+[Verified work-disposition counts](tables/reference_context_measurement_work_dispositions_20260930.tsv)
+label counting units explicitly. Empty-reference cells count contexts; other
+cells count duplicate/reference side links. Parent-eligible distinct sides in
+the physical full-reference design number 60,406/60,354 for availability and
+44,668/44,608 for sequence-first designs (profile/MAFFT). These overlap across
+guides, designs and ties and do not count unique predictions, independent
+events or accepted structural cohorts. Missing sequence-first structures remain
+explicit, including an unmodeled lexical gene with a modeled tied alternative.
+
+One parent-excluded profile side is also in the physical measurement design
+under each reference design. Those two design views overlap and remain
+excluded. Presence of a structural comparison for another event never
+overrides the original parent context. Subsequent full-context coverage and
+own-guide/both-guide/lexical/any/all-tie policies must enforce that exclusion.
+
+Reproduction uses `prepare_reference_context_measurement_design.py`, then
+`readback_reference_context_measurement_design.py`, followed by
+`close_reference_context_measurement_design.py` with their recorded pinned
+plans and original launch handles. These three stages completed; do not
+restart them or overwrite their outputs. Exact source counts can be exported
+with `publish_reference_context_measurement_work_counts.py`; table/index paths
+are exclusive outputs. Software fixtures passed 12 contexts/44 logical sides
+and rejected eight rehashed false exports. Fixture native/source/journal
+proofs are synthetic, not production qualification or a pilot. Resource plans
+predated launch: two CPUs/16 GiB/no swap per serial stage, four GiB output
+allowance and 100 GiB disk reserve; no GPU or paid resource.
+
+This source-only bridge prepares the full phylogenetic context projection;
+coverage-qualified cohorts and effects are not yet produced. Full measurement
+union/coverage, common-residue and sequence-locked comparisons, domain/PAE/
+prediction uncertainty, biological orthology/phylogeny and calibrated
+asymmetry remain outstanding. All eight scientific aims remain incomplete.

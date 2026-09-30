@@ -1,0 +1,23 @@
+{
+  "status": "planned_full_reference_context_measurement_design",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "target_contexts": 283409,
+  "context_design_records": 566818,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "availability_side_links": 121490,
+  "model_pairs": 55701,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "basis": "All closednative reference contexts, both designs/guides and all original ties/parents/missingmodels. Exact current model/version endpoints joined from complete frozen primary gene queue and fullreference pair/side ledger. Producer dictionary joins checked independently with uniquely keyed SQL model/gene/side joins; every source/native field retained. Source-only work states, no measurement optimization or GPU; preflight sources already independently/journal-closed.2CPU16GiB/noSwap each serial stage,4GiB output,100GiB diskreserve. Fullcoverage/native structural geometry/commontriad/sequence-locked/domain/PAE/prediction/phylogeny/calibration remain downstream."
+}

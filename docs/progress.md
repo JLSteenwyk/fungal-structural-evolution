@@ -10217,3 +10217,25 @@ does not establish universal coverage or complete the biological project.
   projection, common triads, sequence-locked/domain/PAE/prediction, biological
   orthology/phylogenetic and calibrated inference remain outstanding. GPU
   prediction remains paused; all eight scientific aims remain incomplete.
+
+- September 30: full native-reference context to frozen measurement-design join
+  independently completed all 283,409 targets/566,818 context-design records,
+  214,461 tied-reference records and 428,922 logical duplicate/reference sides.
+  All 121,490 original availability-ledger links were exhausted and checked.
+  Duplicate model/version roles are mapped by actual gene identity; all native
+  source fields, lexical choices, parent exclusions, missing reference models
+  and identical-model states remain explicit. Independent SQL reconstruction
+  passed every exported field and full source/ledger/ordinal grid. Completion
+  checked 40 source/artifact hashes and both exact original process journals.
+  Full fixtures passed 12 contexts/44 logical sides and rejected eight rehashed
+  false exports; proof/journal stubs were fixture-only, not a pilot. Exact work
+  counts were published with explicit context versus side-link units. Among
+  parent-eligible contexts, physical full-reference design links number
+  60,406/60,354 for availability and 44,668/44,608 for sequence-first references;
+  these are overlapping logical sides, not independent events, unique models
+  or coverage-qualified cohorts. One parent-excluded profile side maps to the
+  physical pair design under each reference design; the parent stays excluded.
+  The live native alignment grid reached 71,104/99,788 at the recorded check.
+  Full context coverage/native-assignment attrition, common-triad/sequence-
+  locked/domain/PAE/prediction, supported phylogeny and calibration remain
+  outstanding. GPU prediction stays paused; all eight aims remain incomplete.
