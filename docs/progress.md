@@ -10261,3 +10261,27 @@ does not establish universal coverage or complete the biological project.
   independence and correspondence, sequence-locked/domain/PAE/prediction,
   biological orthology/phylogeny and calibration remain required. GPU
   prediction remains paused; none of the eight scientific aims is complete.
+
+- September 30: the full three-edge duplicate/reference work design completed
+  all 283,409 contexts, 566,818 context/design records, 214,461 ties and
+  428,922 logical sides, preserving all 121,490 availability-side links.
+  Primary AB and reference AR/BR endpoint catalogs were joined without changing
+  source gene orientation, lexical choices, missing models or parent exclusions.
+  Distinct versioned models and distinct model IDs are separately checked;
+  different versions of one model cannot establish independent proteins.
+  Independent SQL field/endpoint/direction reconstruction and full logical/physical
+  occurrence exhaustion passed; closure checked 59 hashes and both exact original
+  process journals. All 16-context fixtures passed; ten rehashed false exports
+  were rejected. Actual source preflight rechecked the prior 40 closed bindings.
+  The 31,235 unique ordered model triples include 27,056 with at least one
+  source-ready link, defining 432,896 future two-mask/eight-order correspondence
+  states. These are source-work counts, not completed maps or accepted contrasts.
+  Parent-eligible lexical source-ready references with both-guide native
+  assignments number 26,283/26,265 (availability) and 19,318/19,300
+  (sequence-first), with overlapping counting units/guides/designs retained.
+  Exact diagnostics were published in 103 unit-labeled table rows. Existing
+  CPU only; two CPUs/16 GiB/no swap per serial stage, with estimates before
+  launch. Native reference alignments remain live. Full measured three-edge
+  coverage/common-core/cycle-consistent/sequence-locked/domain/PAE/prediction,
+  biological orthology/phylogeny and inferential calibration remain required.
+  GPU predictions remain paused; all eight scientific aims remain incomplete.

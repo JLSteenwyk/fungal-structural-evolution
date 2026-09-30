@@ -1,0 +1,26 @@
+{
+  "status": "planned_full_reference_triad_work_design",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "target_contexts": 283409,
+  "context_design_records": 566818,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "availability_side_links": 121490,
+  "primary_pairs": 134812,
+  "reference_pairs": 55701,
+  "maximum_unique_ordered_model_triads": 214461,
+  "maximum_downstream_correspondence_states": 3431376,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "basis": "Full closed context-work source only, all guides/designs/ties/missing models/parent exclusions. Frozen primary and reference endpoint catalogs determine AB/AR/BR work states and current orientation. Source records remain unchanged; deduplicate ordered versioned model triples while retaining every logical occurrence. Distinct model IDs required in addition to distinct versioned models; two versions of one model are not independent proteins. Independent SQL joins/aggregates and both exact process journals required.2CPU16GiB/noSwap each serial stage;4GiB output and100GiB disk reserve; no new native optimization/GPU/paid resources. Exact future full correspondence grid will be16states per unique triad with at least one source-eligible link, measured after actual design closure. Runtime estimate is an uncalibrated planning envelope; no downstream correspondence or fit launched here."
+}

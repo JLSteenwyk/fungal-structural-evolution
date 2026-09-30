@@ -1,0 +1,57 @@
+{
+  "source_plan": "metadata/full_reference_triad_work_design_plan_20260930.json",
+  "readback": "metadata/full_reference_triad_work_design_completed_readback_20260930.json",
+  "output": "metadata/full_reference_triad_work_design_completed_20260930.json",
+  "launches": [
+    "metadata/full_reference_triad_work_design_producer_launch_20260930.json",
+    "metadata/full_reference_triad_work_design_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "scripts/reference_triad_design_sources.py": "b56abee475f3bcaa3abf0712ab64d26cbf17b5ed5dcdc2a24751b0a922206864",
+    "scripts/prepare_full_reference_triad_design.py": "52f2c1029401d2dcb54b54e9a8ea38a1b7ec5e172406209b4815160e70003d67",
+    "scripts/readback_full_reference_triad_design.py": "34ed96de6dfbd24e8c7cee550279aebeb5763d8b4be85219d4d48c4654e9c205",
+    "scripts/check_full_reference_triad_design.py": "2a3dc9e335d8ab54c3ffb9eeebd9654ff237e9ba1bd3e5729cf481597c50ff36",
+    "scripts/close_full_reference_triad_design.py": "b4b181628d2cee0d72593f4c69cef86362ea6c8264a49be69a451aadc019ae94",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/full_reference_triad_work_design_resources_20260930.json": "e904a09c7b95ae3276fc99121008ab0f0d1b9f9ed53d5f7e359870de602a3c63",
+    "metadata/full_reference_triad_work_design_fixture_validation_20260930.json": "a416e494e0b3e2c4227f0414a0d87a1c657f66e56342285154d9bfedf44b8efc",
+    "metadata/reference_context_measurement_design_plan_20260930.json": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "metadata/reference_context_measurement_design_completed_readback_20260930.json": "c34177bedd74debb300b63c13a97ade56e62e8de06450432c43531ea46853d27",
+    "metadata/reference_context_measurement_design_completed_20260930.json": "9c893e098215f401005eeca780da7c487d52b31f4d8d97259a723d60f4772ac5",
+    "metadata/full_reference_triad_work_design_source_preflight_20260930.json": "31ae9d0cf4f03e7695d353760198513026a7ed8793c494984c4e01c0d93158c9",
+    "metadata/full_reference_triad_work_design_plan_20260930.json": "4c146c16f91fac8397f4fdbc42fcadcaf19da3cab19d293cd661632457873292",
+    "metadata/full_reference_triad_work_design_producer_launch_20260930.json": "4a08ec6f397ddf174be90511c4e01c3f5218a77cfa0901fdc3f95bce9c14ffbc",
+    "metadata/full_reference_triad_work_design_readback_launch_20260930.json": "92c6aee30c88a4be28516e9acc4b074649e5d040fd712a71b7f1df677c961b85",
+    "metadata/full_reference_triad_work_design_readback_wait_plan_20260930.json": "438a5a6d8f3135f26efd7f8897d9bf54a9d2da3395974a1d59e5ecb016172d00"
+  },
+  "scope": "Full283409contexts/566818context-designs/214461ties/428922logical duplicate-reference sides and all121490availability ledger links retained, including no references, unmodeled lexical choices, identical models, excluded parents and outside-pool edges. Join primary AB plus reference AR/BR with actual frozen endpoint orientation; all original native fields remain unchanged. Every modeled reference gets an ordered A/B/reference model/version triad, deduplicated physically while preserving logical occurrences. Source-only correspondence work requires original parent eligibility, queued primary comparison, all three edges in their designated complete catalogs, three distinct versioned models and three distinct model IDs. Guide-specific native membership sensitivities recorded without altering ties or lexical choice. Independent SQL reconstruction and both exact original completion journals required. No structural coverage qualification, native residue mapping, phylogenetic/biological orthology or asymmetry acceptance; full all-order/common-residue/domain/PAE/prediction/calibration controls remain downstream. All8aims remain incomplete.",
+  "resources": {
+    "status": "planned_full_reference_triad_work_design",
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 4,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.1,
+      4
+    ],
+    "runtime_uncalibrated": true,
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "primary_pairs": 134812,
+    "reference_pairs": 55701,
+    "maximum_unique_ordered_model_triads": 214461,
+    "maximum_downstream_correspondence_states": 3431376,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "basis": "Full closed context-work source only, all guides/designs/ties/missing models/parent exclusions. Frozen primary and reference endpoint catalogs determine AB/AR/BR work states and current orientation. Source records remain unchanged; deduplicate ordered versioned model triples while retaining every logical occurrence. Distinct model IDs required in addition to distinct versioned models; two versions of one model are not independent proteins. Independent SQL joins/aggregates and both exact process journals required.2CPU16GiB/noSwap each serial stage;4GiB output and100GiB disk reserve; no new native optimization/GPU/paid resources. Exact future full correspondence grid will be16states per unique triad with at least one source-eligible link, measured after actual design closure. Runtime estimate is an uncalibrated planning envelope; no downstream correspondence or fit launched here."
+  }
+}

@@ -1522,3 +1522,37 @@ and both original process journals are queued behind closed coverage, not
 completed results. Primary AB/common-triad/sequence-locked/domain/PAE/
 prediction, biological orthology/phylogenetic and calibration checks remain
 required before effects can be tested or interpreted.
+
+### Full duplicate/reference three-edge work design — September 30
+
+The complete closed context/measurement design was extended without dropping
+any of its 283,409 source contexts, 214,461 reference ties or 428,922 logical
+duplicate/reference sides. Original parent eligibility, gene orientation,
+lexical choices, model availability and both-guide native assignments remain
+unchanged. Primary AB and full-reference AR/BR pair catalogs determine actual
+current endpoint orders and desired A→B, reference→A and reference→B directions.
+Unmeasured/identical endpoint-order fields are null. Modeled references define
+ordered versioned A/B/reference triples; repeated physical triples are
+deduplicated without merging their logical source occurrences.
+
+Source-only correspondence work requires an eligible original parent, queued
+primary AB, all three pair-catalog memberships, three distinct versioned models
+and three distinct model IDs. Version differences alone do not establish
+independent proteins. Own-guide and both-guide native assignment sensitivities
+are separately reported. This source gate does not assess native measurement
+coverage or biological orthology. Independent SQL catalog queries reconstruct
+every exported field/edge/direction and full logical/physical link counts;
+source ordinals, identities, both designs and all empty/missing/excluded states
+are checked. Full independent readback passed and exact two-journal closure
+verified 59 source/artifact hashes.
+
+There are 31,235 unique ordered model triples; 27,056 have at least one
+source-ready context/reference occurrence. These define 432,896 future
+correspondence states under two masks and all eight AB/AR/BR native order
+combinations. No residue-map or common-core fit is claimed here. The next
+stage must use actual native source directions and original residue positions,
+retain all numerical/error exclusions, compare reference-common versus
+AB-cycle-consistent cores, fit identical residue triples and evaluate original
+full-protein coverage. Sequence-locked/domain/PAE/orientation, prediction-error,
+phylogenetic and calibrated inference controls remain required. Exact count
+units and provenance are in [the full workflow](full-reference-triad-work-design-20260930.md).

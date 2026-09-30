@@ -1,0 +1,24 @@
+{
+  "status": "passed_full_synthetic_reference_triad_work_design_checks",
+  "target_contexts": 16,
+  "reference_tie_records": 30,
+  "duplicate_reference_links": 60,
+  "availability_side_links": 24,
+  "primary_pairs": 2,
+  "reference_pairs": 4,
+  "unique_ordered_model_triads": 5,
+  "correspondence_work_triads": 1,
+  "rejected_rehashed_exports": [
+    "promoted_parent",
+    "promoted_duplicate_identity",
+    "dropped_missing_reference",
+    "reselected_modeled_tie",
+    "changed_ab_direction",
+    "swapped_ar_br_roles",
+    "promoted_model_versions",
+    "changed_logical_link_count",
+    "removed_empty_context",
+    "changed_pair_hash"
+  ],
+  "scope": "Synthetic source/proof/journal stubs only; not a production qualification or a sampling pilot. Both guides/designs, original lexical ties and missing reference models, excluded parents with measured physical pairs, empty contexts, identical duplicate/reference models, distinct versions sharing one model ID, unequal model versions, reversed primary/reference endpoints, native guide disagreement and reference aliases exercised. SQL reader shares no producer projection functions."
+}

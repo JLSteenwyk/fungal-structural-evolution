@@ -190,3 +190,26 @@ boolean/count aggregates. Full producer/reader journal closure precedes
 completion. Reference-side coverage does not qualify the primary duplicate
 AB comparison, an independent common-residue triad, prediction accuracy,
 biological orthology, accepted phylogeny or a calibrated asymmetry effect.
+
+### September 30: require all three duplicate/reference edges and explicit identity screens
+
+Carry primary AB work alongside AR/BR for every original context/reference tie.
+Preserve the complete closed source record, gene-based A/B orientation, parent
+exclusions, lexical choices and modeled/unmodeled reference records. Deduplicate
+only ordered physical A/B/reference model/version triples and retain every
+logical occurrence. Require both three distinct versioned models and three
+distinct model IDs for source-only correspondence work; two versions of one
+model do not count as independent proteins. Explicitly retain identical-model
+and outside-design edge states with null endpoint/order fields. Source readiness
+also requires the original eligible parent, queued primary AB and all three
+edges in their designated frozen catalogs. Record native own/both-guide
+assignment sensitivities separately without changing lexical choices or ties.
+
+Require full independent SQL reconstruction, complete physical/logical exhaustion
+and both exact original producer/reader completion journals before publishing
+counts. Label source contexts, logical reference records, ordered physical
+triples and future mask/order states separately. Source readiness does not
+qualify native coverage, common residue correspondence, biological orthology,
+prediction error or asymmetry. The full future mapping design retains both
+masks and all eight edge-order combinations, with reference-common and
+AB-cycle-consistent residue sets assessed separately before physical fitting.

@@ -610,3 +610,17 @@ stages are live behind closed full-reference coverage; production diagnostics
 are pending. Primary AB/common-triad/sequence-locked/domain/PAE/prediction,
 biological orthology/phylogeny and calibration remain required. None of the
 eight scientific aims is completed.
+
+September 30: full primary AB plus reference AR/BR source-work design
+independently completed all 283,409 contexts/214,461 ties/428,922 logical sides,
+retaining all 121,490 availability-side links and unchanged source fields.
+Independent SQL reconstruction checked each endpoint, desired direction, model
+identity, exclusion and flag; physical-triple occurrence counts and full grids
+were exhausted. Closure checked 59 hashes and both exact original journals.
+Full fixtures rejected ten rehashed false exports. There are 31,235 ordered
+physical model triples and 27,056 with source-ready links, defining 432,896
+future full two-mask/eight-order correspondence states. A 103-row count table
+labels distinct counting units. This completes source design only. Measured
+three-edge coverage/common-core/cycle-consistency, sequence-locked/domain/PAE/
+prediction, biological orthology/phylogeny and calibration remain required;
+none of the eight scientific aims is complete. GPU inference remains paused.

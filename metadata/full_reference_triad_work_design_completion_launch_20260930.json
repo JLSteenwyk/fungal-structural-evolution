@@ -1,0 +1,41 @@
+{
+  "unit": "fungal-full-reference-triad-work-design-completion-20260930.service",
+  "pid": 3050014,
+  "created": 1790809519.83,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_reference_triad_work_design_completion_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/full_reference_triad_work_design_completion_wait_plan_20260930.json",
+  "plan_sha256": "8342a7a16fe588fca09b84ca22a775a1c4146767c9d8b839e0addfa34ee6c5ec",
+  "checked_utc": "2026-09-30T23:05:20.566176+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-reference-triad-work-design-completion-20260930.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_reference_triad_work_design_completion_wait_plan_20260930.json"
+  ]
+}

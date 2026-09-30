@@ -1,0 +1,472 @@
+{
+  "status": "verified_full_triad_design_completion_and_ongoing_reference_pipeline",
+  "checked_utc": "2026-09-30T23:12:12.451734+00:00",
+  "completion": "metadata/full_reference_triad_work_design_completed_20260930.json",
+  "completion_sha256": "d70474566e3d618a858652a4f99cc8bab9d34c040f8c92d3663a0fb972a7dea4",
+  "completion_source_hashes": 59,
+  "completion_exact_original_journals": 2,
+  "publication": "metadata/full_reference_triad_work_counts_published_20260930.json",
+  "publication_sha256": "4be1a559e60eaef7c67174d0802c9197c5b226c22b70a0f1a62e710e32e4c235",
+  "triad_summary": {
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links_preserved": 121490,
+    "guide_contexts": {
+      "profile": 141724,
+      "mafft": 141685
+    },
+    "unique_ordered_model_triads": 31235,
+    "correspondence_work_triads": 27056,
+    "potential_correspondence_states": 432896,
+    "triad_model_identity_counts": {
+      "versioned=3|ids=3": 28686,
+      "versioned=2|ids=2": 2547,
+      "versioned=1|ids=1": 2
+    },
+    "duplicate_design_counts": {
+      "profile|queued_distinct_models|in_full_primary_measurement_design": 134430,
+      "profile|identical_model_no_alignment|identical_model_not_independent": 7294,
+      "mafft|queued_distinct_models|in_full_primary_measurement_design": 134391,
+      "mafft|identical_model_no_alignment|identical_model_not_independent": 7294
+    },
+    "reference_link_counts": {
+      "profile|availability|parent=1": {
+        "reference_tie_records": 30385,
+        "modeled_reference_links": 30385,
+        "unmodeled_reference_links": 0,
+        "three_distinct_versioned_models": 27622,
+        "three_distinct_model_ids": 27622,
+        "all_three_pairs_in_measurement_design": 27622,
+        "source_design_ready_for_correspondence": 27622,
+        "source_design_ready_native_own": 27167,
+        "source_design_ready_native_both_guides": 27064,
+        "lexical_reference_links": 29155,
+        "lexical_source_design_ready_native_both_guides": 26283
+      },
+      "profile|sequence_first|parent=1": {
+        "reference_tie_records": 71969,
+        "modeled_reference_links": 22516,
+        "unmodeled_reference_links": 49453,
+        "three_distinct_versioned_models": 20300,
+        "three_distinct_model_ids": 20300,
+        "all_three_pairs_in_measurement_design": 20300,
+        "source_design_ready_for_correspondence": 20300,
+        "source_design_ready_native_own": 19998,
+        "source_design_ready_native_both_guides": 19912,
+        "lexical_reference_links": 69855,
+        "lexical_source_design_ready_native_both_guides": 19318
+      },
+      "profile|sequence_first|parent=0": {
+        "reference_tie_records": 2751,
+        "modeled_reference_links": 1276,
+        "unmodeled_reference_links": 1475,
+        "three_distinct_versioned_models": 927,
+        "three_distinct_model_ids": 927,
+        "all_three_pairs_in_measurement_design": 0,
+        "source_design_ready_for_correspondence": 0,
+        "source_design_ready_native_own": 0,
+        "source_design_ready_native_both_guides": 0,
+        "lexical_reference_links": 2493,
+        "lexical_source_design_ready_native_both_guides": 0
+      },
+      "profile|availability|parent=0": {
+        "reference_tie_records": 2148,
+        "modeled_reference_links": 2148,
+        "unmodeled_reference_links": 0,
+        "three_distinct_versioned_models": 1613,
+        "three_distinct_model_ids": 1613,
+        "all_three_pairs_in_measurement_design": 0,
+        "source_design_ready_for_correspondence": 0,
+        "source_design_ready_native_own": 0,
+        "source_design_ready_native_both_guides": 0,
+        "lexical_reference_links": 1760,
+        "lexical_source_design_ready_native_both_guides": 0
+      },
+      "mafft|availability|parent=1": {
+        "reference_tie_records": 30360,
+        "modeled_reference_links": 30360,
+        "unmodeled_reference_links": 0,
+        "three_distinct_versioned_models": 27596,
+        "three_distinct_model_ids": 27596,
+        "all_three_pairs_in_measurement_design": 27596,
+        "source_design_ready_for_correspondence": 27596,
+        "source_design_ready_native_own": 27155,
+        "source_design_ready_native_both_guides": 27048,
+        "lexical_reference_links": 29130,
+        "lexical_source_design_ready_native_both_guides": 26265
+      },
+      "mafft|sequence_first|parent=1": {
+        "reference_tie_records": 71942,
+        "modeled_reference_links": 22487,
+        "unmodeled_reference_links": 49455,
+        "three_distinct_versioned_models": 20272,
+        "three_distinct_model_ids": 20272,
+        "all_three_pairs_in_measurement_design": 20272,
+        "source_design_ready_for_correspondence": 20272,
+        "source_design_ready_native_own": 19976,
+        "source_design_ready_native_both_guides": 19897,
+        "lexical_reference_links": 69825,
+        "lexical_source_design_ready_native_both_guides": 19300
+      },
+      "mafft|sequence_first|parent=0": {
+        "reference_tie_records": 2759,
+        "modeled_reference_links": 1281,
+        "unmodeled_reference_links": 1478,
+        "three_distinct_versioned_models": 935,
+        "three_distinct_model_ids": 935,
+        "all_three_pairs_in_measurement_design": 0,
+        "source_design_ready_for_correspondence": 0,
+        "source_design_ready_native_own": 0,
+        "source_design_ready_native_both_guides": 0,
+        "lexical_reference_links": 2500,
+        "lexical_source_design_ready_native_both_guides": 0
+      },
+      "mafft|availability|parent=0": {
+        "reference_tie_records": 2147,
+        "modeled_reference_links": 2147,
+        "unmodeled_reference_links": 0,
+        "three_distinct_versioned_models": 1616,
+        "three_distinct_model_ids": 1616,
+        "all_three_pairs_in_measurement_design": 0,
+        "source_design_ready_for_correspondence": 0,
+        "source_design_ready_native_own": 0,
+        "source_design_ready_native_both_guides": 0,
+        "lexical_reference_links": 1760,
+        "lexical_source_design_ready_native_both_guides": 0
+      }
+    },
+    "empty_reference_context_counts": {
+      "profile|availability|parent=1": 40700,
+      "profile|availability|parent=0": 70109,
+      "profile|sequence_first|parent=0": 69376,
+      "mafft|availability|parent=1": 40695,
+      "mafft|availability|parent=0": 70100,
+      "mafft|sequence_first|parent=0": 69360
+    }
+  },
+  "completed_launches": [
+    {
+      "launch": "metadata/full_reference_triad_work_design_producer_launch_20260930.json",
+      "launch_sha256": "4a08ec6f397ddf174be90511c4e01c3f5218a77cfa0901fdc3f95bce9c14ffbc",
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_triad_work_design_readback_launch_20260930.json",
+      "launch_sha256": "92c6aee30c88a4be28516e9acc4b074649e5d040fd712a71b7f1df677c961b85",
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_triad_work_design_completion_launch_20260930.json",
+      "launch_sha256": "04056d09204408a98f06b9d8641ce8e68337712e75b90edc5d69f8d0d607f2fd",
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      }
+    }
+  ],
+  "live_original_dependency_wrappers": [
+    {
+      "launch": "metadata/expanded_reference_alignment_launch_20260930.json",
+      "launch_sha256": "7b9d3a6eb6043b9974fc2d9ffacf4b9a6f1f3a3f3a64bd1237bad3bd2ac749cb",
+      "unit": "fungal-expanded-reference-alignments-20260930.service",
+      "pid": 2773729,
+      "created": 1790795916.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "800000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_diagnostic_launch_20260930.json",
+      "launch_sha256": "8a641b0c0e67cbe8e66fcd50358b3fdbcfe1b622197e3b61e713f8daaa473d9c",
+      "unit": "fungal-expanded-reference-alignment-diagnostic-20260930.service",
+      "pid": 2773732,
+      "created": 1790795916.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_diagnostic_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_launch_20260930.json",
+      "launch_sha256": "fc807c9f8ca087fd1a56435803eec387a5674d1f86ec666a734b50b346d5c2f5",
+      "unit": "fungal-expanded-reference-alignment-geometry-20260930.service",
+      "pid": 2773735,
+      "created": 1790795916.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_readback_launch_20260930.json",
+      "launch_sha256": "555a0c59f8265a9a9dcde4e91ef0dd4dadc79940be2b0978066d6f1a204dd014",
+      "unit": "fungal-expanded-reference-alignment-geometry-readback-20260930.service",
+      "pid": 2773741,
+      "created": 1790795916.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/new_reference_measurement_completion_launch_20260930.json",
+      "launch_sha256": "f32dd0d920735e8ec49129f8ac5b8b4da7f616aaddda881a63b6e9ce3dded037",
+      "unit": "fungal-new-reference-measurement-completion-20260930.service",
+      "pid": 2929454,
+      "created": 1790803818.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_launch_20260930.json",
+      "launch_sha256": "9dbd406a592be5650772239aa458adec13add918cc651ba7d94791905639c745",
+      "unit": "fungal-reference-measurement-union-20260930.service",
+      "pid": 2929458,
+      "created": 1790803818.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_readback_launch_20260930.json",
+      "launch_sha256": "0867d35ee1159c103848e00f314cd2e0a5c9e253996275ef90a9e78fea92771a",
+      "unit": "fungal-reference-measurement-union-readback-20260930.service",
+      "pid": 2929464,
+      "created": 1790803818.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_completion_launch_20260930.json",
+      "launch_sha256": "8541aab32e7b853774eef2aad1a922c1752e1cced085a90048f630e386aa91c3",
+      "unit": "fungal-reference-measurement-union-completion-20260930.service",
+      "pid": 2929481,
+      "created": 1790803818.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_producer_launch_20260930.json",
+      "launch_sha256": "80d61f4cd766b83d5d728ecfb5da1766029a485aad6ca18fd5b27daeb7cc14ca",
+      "unit": "fungal-full-reference-order-coverage-20260930.service",
+      "pid": 2963548,
+      "created": 1790805408.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_readback_launch_20260930.json",
+      "launch_sha256": "906f277bf2a49f3688207ae4877e407366fa7f7a3b9da9a9bb83d082f2014cb9",
+      "unit": "fungal-full-reference-order-coverage-readback-20260930.service",
+      "pid": 2963551,
+      "created": 1790805408.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_completion_launch_20260930.json",
+      "launch_sha256": "9b7f5b41fa6c5115933046bc5a48bf71ab5d44e8e67113815235e3b811c242dd",
+      "unit": "fungal-full-reference-order-coverage-completion-20260930.service",
+      "pid": 2963554,
+      "created": 1790805408.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_producer_launch_20260930.json",
+      "launch_sha256": "7fdccda761ddbaec1517f7e247a1a3cd443daf647fdb6c617ea8f193bb4098ed",
+      "unit": "fungal-full-reference-context-coverage-20260930.service",
+      "pid": 2999739,
+      "created": 1790807620.48,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_readback_launch_20260930.json",
+      "launch_sha256": "eb94011ba64fc1c340dd606e7cdfcdbd74158cf4f8d80ff5da9400b031be0752",
+      "unit": "fungal-full-reference-context-coverage-readback-20260930.service",
+      "pid": 2999742,
+      "created": 1790807620.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_completion_launch_20260930.json",
+      "launch_sha256": "5b288b49eb063eda6c188f0bc7cfcfb9d63bb2e071eb1fc9a61c8f3cc89b957b",
+      "unit": "fungal-full-reference-context-coverage-completion-20260930.service",
+      "pid": 2999745,
+      "created": 1790807620.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_completion_wait_plan_20260930.json"
+      ],
+      "status": "sleeping",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "live_native_child": {
+    "pid": 2773841,
+    "created": 1790795920.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_expanded_reference_alignments.py",
+      "--plan",
+      "metadata/expanded_reference_alignment_plan_20260930.json"
+    ],
+    "cpu_seconds": 341.19
+  },
+  "native_progress": {
+    "stage": "aligning",
+    "completed": 91456,
+    "total": 99788,
+    "counts": {
+      "full:aligned": 45728,
+      "plddt70:aligned": 41552,
+      "plddt70:input_unavailable": 4176
+    }
+  },
+  "scientific_eligibility": false,
+  "scope": "Completed full source-only triad producer/SQL reader and actual59hash/two-journal closure; publication/table digests checked. Exact original14native/diagnostic/union/coverage/context-coverage wrappers and nativechild verified live now with original PID/create/command/plan and actual current cgroups. State counter is progress metadata supported by live exact process identities; no new native completion/coverage/common-residue or biological inference claimed. GPU prediction not launched; all8aims incomplete."
+}

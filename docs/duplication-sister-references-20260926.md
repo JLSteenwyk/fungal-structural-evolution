@@ -1138,3 +1138,24 @@ prerequisites is uncalibrated planning, not an ETA. No GPU or paid resource.
 Full primary AB/common-triad/sequence-locked/domain/PAE/prediction controls,
 biological orthology/phylogeny and calibrated inference remain outstanding.
 All eight scientific aims remain incomplete; GPU predictions stay paused.
+
+### Full three-way source-work design completed — September 30
+
+Primary AB work and model-identity checks now accompany AR/BR for every
+original context/tie. All 283,409 contexts, 214,461 ties, 428,922 logical sides
+and 121,490 original availability-side links remain explicit. Independent
+SQL reconstruction passed all fields, current endpoints, desired directions,
+logical/physical occurrence counts and full source grids. Closure verified
+59 hashes and both exact original producer/reader journals.
+
+The full design has 31,235 ordered physical model triples, including 27,056
+with source-ready logical links. Both masks and all eight AB/AR/BR order
+combinations define 432,896 future correspondence states. Source readiness
+requires original parent eligibility, queued AB, all three designated pair
+catalogs and three distinct versioned models/model IDs; it does not establish
+measured coverage or a duplication effect. Missing lexical references,
+alternative ties, empty contexts and identical/outside-design models remain
+unchanged. The [full workflow and evidence](full-reference-triad-work-design-20260930.md)
+explain identity checks, overlapping units, native-assignment sensitivities and
+remaining three-way correspondence/fitting requirements. All eight scientific
+aims remain incomplete; GPU prediction stays paused.

@@ -1,0 +1,26 @@
+{
+  "status": "started_full_reference_triad_work_design_pipeline_pending_full_production_readback",
+  "checked_utc": "2026-09-30T23:05:20.566769+00:00",
+  "stages": [
+    "metadata/full_reference_triad_work_design_producer_launch_20260930.json",
+    "metadata/full_reference_triad_work_design_readback_launch_20260930.json",
+    "metadata/full_reference_triad_work_design_completion_launch_20260930.json"
+  ],
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "primary_pairs": 134812,
+    "reference_pairs": 55701
+  },
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scientific_eligibility": false,
+  "scope": "Full283409contexts/566818context-designs/214461ties/428922logical duplicate-reference sides and all121490availability ledger links retained, including no references, unmodeled lexical choices, identical models, excluded parents and outside-pool edges. Join primary AB plus reference AR/BR with actual frozen endpoint orientation; all original native fields remain unchanged. Every modeled reference gets an ordered A/B/reference model/version triad, deduplicated physically while preserving logical occurrences. Source-only correspondence work requires original parent eligibility, queued primary comparison, all three edges in their designated complete catalogs, three distinct versioned models and three distinct model IDs. Guide-specific native membership sensitivities recorded without altering ties or lexical choice. Independent SQL reconstruction and both exact original completion journals required. No structural coverage qualification, native residue mapping, phylogenetic/biological orthology or asymmetry acceptance; full all-order/common-residue/domain/PAE/prediction/calibration controls remain downstream. All8aims remain incomplete."
+}
