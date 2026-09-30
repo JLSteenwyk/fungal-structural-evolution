@@ -1,0 +1,28 @@
+{
+  "plan_sha256": "53397ca8bd7ec990f8c1c49cdef8c818b4ce68a81abfaadbc55956c98f0d5a59",
+  "producer_launch_sha256": "73c877b9c1ac41d32648cd30c48d9070c69be8b4fc9d92d51164b966f975a82f",
+  "producer_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "status": "passed_full_primary_usable_order_summary_readback",
+  "pair_mask_rows": 206400,
+  "numerically_usable_directions": 387319,
+  "excluded_directions": 327,
+  "numeric_values_checked": 4647688,
+  "counts": {
+    "full:both_orders_numerically_usable": 103200,
+    "plddt70:both_orders_numerically_usable": 90442,
+    "plddt70:neither_order_numerically_usable": 12723,
+    "plddt70:one_order_numerically_usable": 35
+  },
+  "exclusions": {
+    "fewer_than_three_pairs;nonunique_rotation": 300,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 27
+  },
+  "source_receipt_sha256": "42262616586aea579a54bfa74b260c4d7518355660c9377e7c2be6591ddc5210",
+  "geometry_audit_sha256": "5e101dab890b72c779ccd7c0f4c72d484149ad5d4048f44b64491f945e0a3740",
+  "script_sha256": "b9e2fbf4db2538c917bcd3f05ae36ebf052dce2ce3b8999c48a3fdc3091f8049",
+  "scope": "All pair/mask/order identities, native statuses, numerical exclusions, blank excluded metrics, endpoint-normalized values and order differences independently reconstructed from audited source tables. No new coordinate fits, coverage qualification or scientific acceptance."
+}

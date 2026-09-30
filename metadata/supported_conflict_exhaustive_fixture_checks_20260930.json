@@ -1,0 +1,17 @@
+{
+  "status": "passed_exhaustive_supported_conflict_validation",
+  "checked_utc": "2026-09-30T14:55:42.408662+00:00",
+  "checks": [
+    "all_four_support_coverage_states",
+    "all_independent_maxima",
+    "complete_marker_guide_cutoff_grid",
+    "changed_95_cutoff_maximum_rejected",
+    "rehashed_false_maximum_with_valid_lower_witness_rejected"
+  ],
+  "source_hashes": {
+    "scripts/check_exhaustive_supported_conflict.py": "10e1ef18d71e38d39444b19994157876317bfb0ec9e14554db43faccdb34f5cd",
+    "scripts/readback_supported_marker_conflict_v2.py": "b5f68ac75ff37614991e6f0a7175087626af7b4c66eb0966a6b9c0e65118f521",
+    "scripts/assess_supported_marker_guide_conflict.py": "6164b3c0a6d14f43c716c8b65d2dc2490ef25ff0ce347f2b780996e6e97288bf"
+  },
+  "scope": "Synthetic numerical/accounting validation, not a biological pilot or full-source result."
+}

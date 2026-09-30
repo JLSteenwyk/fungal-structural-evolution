@@ -9919,3 +9919,48 @@ does not establish universal coverage or complete the biological project.
   PID 1277989; creation times and command lines are recorded in
   `metadata/pmsf_checkpoint_recovery_active_20260928.json`. This is an active
   execution checkpoint, not completed species-tree inference or support audit.
+
+- September 30: completed and independently verified the full expanded
+  duplication input-order pipeline: 269,624 pair/mask rows, 500,851 numerically
+  usable directions, 473 explicit exclusions and 500,806 native residue maps.
+  The same 115,591-pair common cohort retains 64 changed full-protein mappings
+  and 319 changed confidence-masked mappings. Source-checked PNG/PDF/SVG
+  figures were visually reviewed; complete evidence is recorded in
+  `metadata/expanded_order_sensitivity_completed_20260930.json` and
+  `docs/duplication-sampling-coverage-20260926.md`. Full original-protein
+  coverage/confidence screening and biological duplication inference remain
+  outstanding.
+
+- September 30: collected completed native, full input/support and
+  cross-alignment topology results for all 125 MAFFT marker trees. Independent
+  checks cover 30,575,628 retained characters, 59,464 internal support splits
+  and 80,512 cross-method split rows. All 125 projected topologies differ;
+  30 markers also differ in original retained taxon membership. Hashes and
+  exact captured-process journals are bound in
+  `metadata/marker_alignment_topology_completed_20260930.json`. These results
+  establish numerical comparison completion, without species-tree acceptance
+  or an explanation of conflict.
+
+- September 30: launched full supported-conflict sensitivity across both
+  alignment methods, 125 markers, two complete homogeneous guides and
+  SH-aLRT cutoffs 80/95. The new independent Python-set checker exhaustively
+  searches all 130,750 marker/guide-edge maxima per method, verifies shared
+  maximum values across cutoff rows, and checks all witnesses and summaries.
+  Synthetic validation covered all four support/coverage states and rejected
+  rehashed false maxima. One CPU/16 GiB/zero swap, no GPU or paid resources;
+  `metadata/alignment_supported_conflict_launch_20260930.json` captures the
+  exact live launch. Full check/paired summary completion remains pending.
+  All eight scientific aims remain incomplete.
+
+- September 30: the complete supported-conflict pipeline finished at 10:58 EDT
+  with 189.554 CPU seconds, 363.5 MiB peak memory and no swap. Exhaustive
+  independent maxima passed all 130,750 marker/guide-edge cells per method;
+  all 261,500 cutoff classifications per method were checked. A separate pandas
+  outer merge reproduced every paired row and all 52 transition counts,
+  producing 2,092 branch summaries and eight original-tip-membership strata.
+  Across the overlapping full grid 50,865 classifications change; direct
+  concordance/conflict reversals at cutoff 95 number 404 against the profile
+  guide and 402 against MAFFT. These are descriptive dependent cells, not
+  replicated biological events or support for a preferred tree. Source,
+  artifact and process-journal verification is preserved in
+  `metadata/alignment_supported_conflict_completed_20260930.json`.

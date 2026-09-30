@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_historical_usable_order_scope_regression",
+  "historical_pair_mask_rows": 206400,
+  "historical_native_dispositions": 412800,
+  "historical_numeric_alignments": 387646,
+  "byte_identical_table_sha256": "d2fd874884395a6d59a11657ef673537ebf87f383f0cccb7128a49f8035b50f6",
+  "independent_readback_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "source_hashes": {
+    "metadata/usable_order_scope_regression_readback_20260930.json": "6d3f3d4625ed5fa0b6e9311a99153daa4902508523441d943680e320de318c8e",
+    "results/structural_comparisons/primary-usable-orders-20260927-v1/pair_mask_order_summary.tsv": "d2fd874884395a6d59a11657ef673537ebf87f383f0cccb7128a49f8035b50f6",
+    "results/model_validation/usable-order-scope-regression-20260930-v1/pair_mask_order_summary.tsv": "d2fd874884395a6d59a11657ef673537ebf87f383f0cccb7128a49f8035b50f6",
+    "metadata/usable_order_scope_regression_plan_20260930.json": "53397ca8bd7ec990f8c1c49cdef8c818b4ce68a81abfaadbc55956c98f0d5a59",
+    "metadata/usable_order_scope_regression_launch_20260930.json": "73c877b9c1ac41d32648cd30c48d9070c69be8b4fc9d92d51164b966f975a82f",
+    "metadata/usable_order_scope_regression_readback_launch_20260930.json": "75e3e51404f891942fc0d6515f342cd6fbe01fac8f9bfd2d69b9c3b518a54f14",
+    "metadata/expanded_order_scope_generalization_20260930.json": "65c756990308781f533aa98a41cdae021968f52d480743d34f02bb96e30df16e"
+  },
+  "startup_recovery": "Producer completed before live identity capture. First two checker startups failed for absent launch metadata; completed producer command/PID/journal/receipt then bound, and v3 checker succeeded. Producer not restarted; live creation time unavailable and explicitly recorded null.",
+  "scope": "Full historical usable-order table reproduced byte for byte and separately reconstructed. Scope-only changes in the sensitivity producer recorded; expanded outputs and full native-mapping sensitivity validation remain pending."
+}

@@ -1,0 +1,22 @@
+{
+  "unit": "fungal-usable-order-scope-regression-20260930.service",
+  "pid": 2494645,
+  "created": null,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_primary_usable_orders_v2.py",
+    "--plan",
+    "metadata/usable_order_scope_regression_plan_20260930.json"
+  ],
+  "plan": "metadata/usable_order_scope_regression_plan_20260930.json",
+  "plan_sha256": "53397ca8bd7ec990f8c1c49cdef8c818b4ce68a81abfaadbc55956c98f0d5a59",
+  "identity_capture": "Completed before live PID/creation-time capture. Start command and completed output PID bound by journal; successful full receipt validated. Transient unit collected; no live creation time or loaded terminal unit claimed.",
+  "observed_terminal_properties": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "LoadState": "not-found",
+    "ActiveState": "inactive"
+  },
+  "journal_sha256": "83cd1861994e6de89d61703d69cb7a4e2ac69b5fa8c11ec7a28160410f4964e9",
+  "receipt_sha256": "42262616586aea579a54bfa74b260c4d7518355660c9377e7c2be6591ddc5210"
+}

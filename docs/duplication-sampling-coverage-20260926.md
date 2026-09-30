@@ -698,3 +698,65 @@ Completed numerical geometry is a prerequisite for the full input-order,
 confidence and coverage sensitivity analyses. It does not establish structural
 prediction accuracy, stable domain orientation or an evolutionary duplication
 effect; those scientific tests and their calibration remain outstanding.
+
+## Expanded input-order sensitivity completed (September 30)
+
+The full [usable-order check](../metadata/expanded_usable_orders_readback_20260930.json)
+reconstructed all 269,624 pair/mask rows and 6,010,032 numeric fields from
+the audited geometry and native results. Of 501,324 successful directions,
+500,851 satisfy the unchanged numerical requirements and 473 remain excluded.
+Those exclusions comprise 472 short nonunique mappings, including 41 RMSD
+discrepancies, and one additional RMSD discrepancy with a unique rotation.
+All excluded metrics remain blank and their reasons remain attached.
+
+| Pair/mask disposition | Full protein | pLDDT ≥70 |
+| --- | ---: | ---: |
+| Both orders numerically usable | 134,812 | 115,591 |
+| One order numerically usable | 0 | 45 |
+| Neither order numerically usable | 0 | 19,176 |
+
+The independent [mapping readback](../metadata/expanded_order_sensitivity_readback_20260930.json)
+then reconstructed all 500,806 native correspondence sets for the 250,403
+usable two-order pair/mask comparisons. It checked every intersection, union,
+mapping classification, metric difference and common-cohort membership, and
+independently reproduced all 27 metric-quantile rows. No favorable order was
+selected and no prediction or alignment was rerun. The
+[completion handoff](../metadata/expanded_order_sensitivity_completed_20260930.json)
+binds all four stage identities, source hashes, receipts and full-scope proofs.
+
+| Cohort | Pairs | Identical mapping | Changed mapping, same count | Changed count |
+| --- | ---: | ---: | ---: | ---: |
+| All full-protein comparisons | 134,812 | 134,723 | 18 | 71 |
+| Full protein, common-mask cohort | 115,591 | 115,527 | 16 | 48 |
+| pLDDT ≥70, same common-mask cohort | 115,591 | 115,272 | 190 | 129 |
+
+The common-cohort mapping-change fractions are 0.0554% for full proteins and
+0.2760% for confidence-masked proteins. Most comparisons have identical
+mappings and RMSD order differences at floating-point precision. The maximum
+absolute RMSD difference is 1.947 Å across all full-protein comparisons,
+1.508 Å in the common full-protein cohort, and 2.936 Å in the masked common
+cohort. These are differences between fits to possibly different residue
+correspondences, rather than uncertainty intervals or biological displacement.
+The larger tail remains relevant for downstream order/coverage sensitivity
+despite its small fraction of the whole dataset.
+
+![Expanded input-order sensitivity](figures/expanded_order_sensitivity_20260930.png)
+
+The [PDF](figures/expanded_order_sensitivity_20260930.pdf) and
+[figure record](../metadata/expanded_order_figure_completed_20260930.json)
+preserve source hashes and visual review. Panel A uses the same 115,591 pairs
+under both masks; panels B–C explicitly condition on changed mappings and retain
+all observations, including zero differences. Pairs are phylogenetically
+dependent and may share proteins and events; neither these fractions nor the
+curves establish an independent-event effect or calibrated significance.
+
+Scope generalization preserved the numerical algorithm in new v2 producer and
+usable-order checker scripts. A full regression reproduced the older 206,400-row
+usable-order table byte for byte and independently reconstructed all fields;
+the [regression record](../metadata/expanded_usable_order_full_regression_completed_20260930.json)
+retains the two failed checker startups and recovered provenance. The subsequent
+expanded mapping check uses the existing separate cumulative-index checker.
+Each expanded stage used one CPU, 32 GiB memory and zero swap, with no GPU or
+paid resources. These completed numerical checks still require full original-
+protein coverage/confidence screening, suitable matched backgrounds and
+phylogenetic effect modeling before expanded duplication inference.

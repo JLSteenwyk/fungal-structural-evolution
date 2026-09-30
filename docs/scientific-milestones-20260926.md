@@ -1,4 +1,4 @@
-# Open scientific milestones — updated September 29, 2026
+# Open scientific milestones — updated September 30, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
@@ -414,3 +414,27 @@ restart checks passed. Future full-grid errors or unresolved checks remain
 explicit; complete comparison integration and calibrated inference are still
 outstanding. See the [full-grid follow-up](whole-protein-workflow-20260929.md).
 None of the eight scientific evolutionary aims is complete.
+
+September 30 input-order completion: all 269,624 expanded duplication pair/mask
+rows and 500,806 usable native correspondence sets passed independent checks.
+The same 115,591-pair cohort has 64 changed mappings under the full-protein mask
+and 319 under pLDDT ≥70; every order and numerical exclusion remains retained.
+The source-checked figure and PDF were visually reviewed. Full coverage/
+confidence sensitivity and calibrated duplication effects remain outstanding.
+See [expanded input-order evidence](duplication-sampling-coverage-20260926.md#expanded-input-order-sensitivity-completed-september-30).
+
+All 125 MAFFT marker trees and their full input/support and cross-alignment
+topology readbacks also completed. All 125 projected topologies differ; the
+comparison retains zero-length edges and does not establish significant
+discordance or an accepted species tree. Full supported-conflict sensitivity
+completed all 130,750 independently reconstructed maxima per method and all
+261,500 paired classifications. Independent merge readback also produced every
+guide-edge sensitivity summary and original-tip-membership stratum. See
+[phylogenetic sensitivity](marker-alignment-topology-comparison-20260927.md).
+None of the eight scientific evolutionary aims is complete.
+
+Full supported-conflict completion retains 50,865 changed classifications;
+direct concordance/conflict reversals at the 95 cutoff number 404 against the
+profile guide and 402 against MAFFT. These are overlapping descriptive
+marker/guide-edge cells, without calibrated significance, causal explanation
+or accepted species-tree status.

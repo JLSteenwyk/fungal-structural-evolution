@@ -1,0 +1,18 @@
+{
+  "status": "complete_source_checked_and_visually_reviewed_expanded_order_figure",
+  "checked_utc": "2026-09-30T14:56:18.773420+00:00",
+  "source_receipt": "results/structural_comparisons/expanded-order-figure-20260930-v1/receipt.json",
+  "source_receipt_sha256": "a28225f281ccbe76c400239dfd96ad06bf4c7231a078e78f423df73eb3ba5c15",
+  "common_pairs": 115591,
+  "conditional_curve_counts": {
+    "full": 64,
+    "plddt70": 319
+  },
+  "exported_artifacts": {
+    "docs/figures/expanded_order_sensitivity_20260930.png": "fc171b82b3a323f6b9fb6722238cfc2aa290798cdf7fe275def99e5888ad96d1",
+    "docs/figures/expanded_order_sensitivity_20260930.pdf": "037c884259e4e3e1c0ff7f1b83afbc03a445869f53d85e324c51f7ab349d8c3a",
+    "docs/figures/expanded_order_sensitivity_20260930.svg": "cc7db4afc5ee7f28d6ea2d2fe60bb3b69e54b9f93e4f5d7244c587cb34a68585"
+  },
+  "visual_review": "Labels, fixed common-cohort denominator, changed-mapping counts, conditional curves, Angstrom units, symlog axes, zero-inclusive domain and explicit dependence caveat legible; no clipping or overlap.",
+  "scope": "Every common-mask mapping count checked against the independent full audit; every changed-mapping RMSD difference plotted, including zeros. No order selection, confidence interval, independence assumption or biological effect estimate."
+}

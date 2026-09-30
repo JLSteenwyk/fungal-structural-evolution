@@ -1,0 +1,25 @@
+{
+  "source": "results/structural_comparisons/expanded-order-sensitivity-20260930-v1",
+  "audit": "metadata/expanded_order_sensitivity_readback_20260930.json",
+  "output": "results/structural_comparisons/expanded-order-figure-20260930-v1",
+  "pins": {
+    "results/structural_comparisons/expanded-order-sensitivity-20260930-v1/receipt.json": "a6e1dba0ca4edb055b5faaddd8b1fdfa22ec3f10862030720b61a002e46c782d",
+    "metadata/expanded_order_sensitivity_readback_20260930.json": "6c741550f2a53f26b2cd05cccf5ccdce4e1f7005286926f967a5e11b8f15d283",
+    "results/structural_comparisons/expanded-order-sensitivity-20260930-v1/pair_mask_sensitivity.tsv": "4537f24a8238151730bc0e3e5879fd9e8d5d6c5de5b3a1a52e08e478d0f0e3f6",
+    "results/structural_comparisons/expanded-order-sensitivity-20260930-v1/quantiles.tsv": "df76e8ff6cd799926a2873079e5b6e78cdcbe698f58ebbce6db34064778a3c88",
+    "scripts/plot_expanded_order_sensitivity.py": "372a05b82f7937a71685a0200acbd9aded58ce2079e596d887ac6881f92bdcc9"
+  },
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "output_gib": 0.1,
+    "planning_hours": [
+      0.01,
+      0.2
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "basis": "One existing 250403-row table, fixed common-mask counts and two conditional curves; no inference."
+  }
+}

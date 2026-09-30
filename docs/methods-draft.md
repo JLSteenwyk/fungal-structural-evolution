@@ -1110,6 +1110,63 @@ with the producer but uses separate extraction logic. All 277 shard proofs and
 aggregate counts passed; there were no rejected model dispositions. Source and
 proof bindings are recorded in the
 [completed audit](../metadata/duplication_coordinate_readback_completed_20260929.json).
-Full and pLDDT70 C-alpha alignment inputs are being generated with original residue
-positions retained. Input validation and expanded alignments remain pending;
-this coordinate audit provides no PAE qualification or biological effect estimate.
+Full and pLDDT70 C-alpha alignment inputs retain original residue positions;
+their full source/PDB readback and expanded alignment/input-order checks have
+completed, as described below. Coordinate auditing provides no PAE
+qualification or biological effect estimate.
+
+## Expanded structural input-order checks (September 30)
+
+The expanded cohort completed 539,248 pair/order/mask dispositions, retaining
+both full-protein and pLDDT70 inputs and both orders for every distinct pair.
+All 501,324 successful alignments underwent independent coordinate geometry
+reconstruction. Numerical usability required at least three matched residues,
+the unchanged RMSD agreement tolerance, and a unique optimal proper rotation
+under the audited numerical criterion. Excluded directions retained their
+native status and overlapping reasons; their numerical metrics remained blank.
+This is a numerical screen, not confidence or coverage qualification.
+
+After endpoint-normalizing both orders, the complete order summary was
+independently reconstructed. Native aligned-residue correspondences for every
+usable two-order pair/mask comparison were then replayed with separate
+cumulative-index arrays and compared as sets. We recorded identical mappings,
+changed mappings of equal size, changed counts, set Jaccard similarity and
+absolute order differences in all eight metrics. Independent sorted linear
+interpolation reproduced every metric quantile. Full comparisons and the
+same-pair common-mask cohort remained separate; no order was favored or
+averaged. RMSD order differences can involve different residue correspondences
+and are not uncertainty bounds or evolutionary displacement. Full evidence and
+descriptive figures are linked in
+[expanded input-order sensitivity](duplication-sampling-coverage-20260926.md#expanded-input-order-sensitivity-completed-september-30).
+
+## Marker topology and supported-conflict sensitivity (September 30)
+
+All 125 MAFFT marker inputs were reconstructed from the frozen source matrix
+and unchanged coverage rule. Independent graph-edge removal recovered every
+internal support split. Profile/MAFFT marker-tree comparisons restricted split
+sets to shared taxa, removed trivial projections and collapsed duplicate
+projected splits, while retaining zero-length internal edges. Independent
+DendroPy pruning checked the complete comparison. Restriction to shared tips
+is not refitting: inference effects of original taxon membership remain.
+
+For every full homogeneous guide-tree edge, each marker split was restricted
+to its retained taxa. We retained exact matching SH-aLRT support and the
+highest support among incompatible marker splits, requiring all four
+bipartition intersections to be nonempty for conflict. Cutoffs 80 and 95
+produced explicit concordant, conflicting, unresolved and uninformative-coverage
+statuses; missing support was never interpreted as zero. Independent Python
+set searches checked every maximum separately from the producer's bit-vector
+implementation, and verified that both cutoff rows shared the same maximum.
+All exact supports, witnesses, complete grids and aggregate counts were checked.
+
+An independent outer one-to-one merge reconstructed all cross-method
+classifications and transitions from the audited source tables. Every guide-edge
+sensitivity summary was retained, together with separate strata for the 95
+markers with identical original tips and the 30 with different memberships.
+SH-aLRT cutoffs are descriptive settings, not bootstrap or posterior
+probabilities. Rows share markers, taxa, guide edges and possibly collapsed
+paths; these counts are neither independent replicates nor gene concordance
+factors. No alignment method was selected as correct, and no biological cause
+or accepted species topology follows from disagreement. Species-tree model,
+root and calibration uncertainty remains required for downstream structural
+branch tests. See the [completed full workflow](marker-alignment-topology-comparison-20260927.md).

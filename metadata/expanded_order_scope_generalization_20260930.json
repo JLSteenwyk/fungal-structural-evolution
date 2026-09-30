@@ -1,0 +1,58 @@
+{
+  "status": "parameterized_scope_versions_prepared_pending_full_regression",
+  "changes": {
+    "summarize_primary_usable_orders.py": [
+      {
+        "before": "audit['alignments_checked']==387646",
+        "after": "audit['alignments_checked']==gr['alignments']==plan['expected']['numeric_alignments']",
+        "replacements": 1
+      },
+      {
+        "before": "nr['distinct_model_pairs']==103200",
+        "after": "nr['distinct_model_pairs']==plan['expected']['pairs']",
+        "replacements": 1
+      },
+      {
+        "before": "len(expected)==387646",
+        "after": "len(expected)==plan['expected']['numeric_alignments']",
+        "replacements": 1
+      }
+    ],
+    "readback_primary_usable_orders.py": [
+      {
+        "before": "387646",
+        "after": "plan['expected']['numeric_alignments']",
+        "replacements": 2
+      },
+      {
+        "before": "412800",
+        "after": "plan['expected']['directed_dispositions']",
+        "replacements": 1
+      },
+      {
+        "before": "103200",
+        "after": "plan['expected']['pairs']",
+        "replacements": 1
+      },
+      {
+        "before": "206400",
+        "after": "plan['expected']['pair_mask_rows']",
+        "replacements": 1
+      }
+    ],
+    "summarize_primary_order_sensitivity.py": [
+      {
+        "before": "206400",
+        "after": "plan['expected']['pair_mask_rows']",
+        "replacements": 1
+      },
+      {
+        "before": "103200",
+        "after": "plan['expected']['pairs']",
+        "replacements": 1
+      }
+    ]
+  },
+  "additional_check": "Usable-order producer also explicitly matches the complete native directed-disposition count to the pinned expected scope.",
+  "scope": "New versions preserve every original numerical, endpoint, exclusion, mapping and quantile operation. Historical scripts and all running plans unchanged."
+}

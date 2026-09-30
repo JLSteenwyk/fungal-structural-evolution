@@ -1,0 +1,32 @@
+{
+  "plan_sha256": "e72db843d6d9e25a0647f85c0e80ae1ce46da1287adf9d65f4d924aa5912bbc1",
+  "prerequisite_terminal_state": {
+    "Result": "success",
+    "ExecMainStatus": "0",
+    "ActiveState": "inactive"
+  },
+  "status": "passed_full_primary_order_sensitivity_readback",
+  "pair_mask_rows": 250403,
+  "native_mappings_checked": 500806,
+  "quantile_rows": 27,
+  "mapping_counts": {
+    "full_all": {
+      "identical": 134723,
+      "different_same_count": 18,
+      "different_count": 71
+    },
+    "full_common": {
+      "identical": 115527,
+      "different_same_count": 16,
+      "different_count": 48
+    },
+    "plddt70_common": {
+      "identical": 115272,
+      "different_count": 129,
+      "different_same_count": 190
+    }
+  },
+  "source_receipt_sha256": "a6e1dba0ca4edb055b5faaddd8b1fdfa22ec3f10862030720b61a002e46c782d",
+  "script_sha256": "26b4e59d1ade1cdecb5d57545549f8aaecf35e57e95cb3676fdffa096edc8c40",
+  "scope": "All correspondence sets independently reconstructed with cumulative-index arrays; all intersection/union/status/metric fields and common cohorts checked; quantiles verified by sorted interpolation. No alignment rerun or biological qualification."
+}
