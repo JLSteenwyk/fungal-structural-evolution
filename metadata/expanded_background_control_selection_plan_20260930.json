@@ -1,0 +1,37 @@
+{
+  "covariates": "results/orthology/expanded-background-match-covariates-20260930-v1",
+  "graph": "results/orthology/expanded-background-match-graph-20260930-v1",
+  "readback": "metadata/expanded_background_match_covariate_completed_readback_20260930.json",
+  "output": "results/orthology/expanded-background-control-selection-20260930-v1",
+  "pins": {
+    "scripts/select_background_controls.py": "f65fb2622674e575dab0b9639cdb6951413c5b6ee6e9124027a70162e97ea9b4",
+    "scripts/check_background_control_selection.py": "ea6de59fac7a047d2d218ed014f20e8ecb6745cd21e5327ab62bacc4dd150ce9",
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/expanded_background_match_graph_plan_20260930.json": "37e64e3e5d6887436e22a4d8b50312b5196d166db81acebc176e993d2c7cd03e",
+    "metadata/expanded_background_match_graph_readback_plan_20260930.json": "5f4058859bdf6dd9dc826de87cac5e33a3cb63999ba90327eef3ab937dfbf19f",
+    "metadata/expanded_background_match_covariate_plan_20260930.json": "b5e462f82a3eb947c9fd23190c057e6182cd8832c4a546114993c620f86279bb",
+    "metadata/expanded_background_match_covariate_readback_plan_20260930.json": "103e86e96df281a00d71c561ad413d48cde51c6139436a0cbcfa69433fd364ca",
+    "metadata/expanded_background_match_covariate_readback_launch_20260930.json": "dbf2f824ec9087956e094cf35c3797e1b4a1b9b6bd6be81b8ab6dba98e499705",
+    "metadata/expanded_background_matching_resources_20260930.json": "22c151ce6ee706b2f48e7cac8eb82a6816cc7d3762e0a7bd9c2bb3d08d57a202"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.25,
+      12
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "expected_edges": 5059122,
+    "expected_targets": 283409,
+    "target_policy_records": 1133636,
+    "basis": "Original all54 fixed qualification/distance/caliper/focal scenarios for every expanded target/policy. Exact zero-distance rule, jointly qualifying endpoint mapping, metadata score, identity exclusions and all unmatched IDs/reuse retained. With replacement; no structural outcomes or rematching after screening.",
+    "source_edges": 5059122,
+    "scenarios_per_target_policy": 54,
+    "total_target_policy_scenario_decisions": 61216344
+  }
+}

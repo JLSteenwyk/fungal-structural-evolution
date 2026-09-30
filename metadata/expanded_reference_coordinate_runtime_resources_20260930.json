@@ -1,0 +1,25 @@
+{
+  "status": "verified_both_reference_coordinate_services_match_planned_two_cpu_limits",
+  "checked_utc": "2026-09-30T17:35:09.700555+00:00",
+  "services": [
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json",
+      "exact_pid_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0"
+      }
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json",
+      "exact_pid_live": true,
+      "properties": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "8589934592",
+        "MemorySwapMax": "0"
+      }
+    }
+  ],
+  "scope": "Transient services only; one-CPU generic launcher defaults were adjusted to the planned two-CPU limit after exact PID/creation/command verification. Eight GiB RAM and zero swap unchanged; no GPU settings changed."
+}

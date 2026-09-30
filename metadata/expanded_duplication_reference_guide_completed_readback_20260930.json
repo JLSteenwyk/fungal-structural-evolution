@@ -1,0 +1,39 @@
+{
+  "status": "passed_full_reference_guide_comparison_readback",
+  "producer_receipt_sha256": "07e77e2d059d08fa0ce83a7c9074079fa563fef1a5bec5af1841edc601b3c7ff",
+  "reference_readback_sha256": "3dea05133a736bb1aa6f25fd4ea7f938c17a2c2de100321607fbf587d4a88475",
+  "source_guides": {
+    "profile": 141724,
+    "mafft": 141685
+  },
+  "union_pairs": 142107,
+  "shared_duplicate_pairs": 141302,
+  "provisional_in_both": 29016,
+  "same_chosen_reference_gene": 28950,
+  "same_chosen_reference_model": 28951,
+  "relations": {
+    "not_provisional_in_both": 112286,
+    "same_nearest_reference_set": 28950,
+    "profile_only_candidate": 422,
+    "mafft_only_candidate": 383,
+    "disjoint_nearest_reference_sets": 66
+  },
+  "source_hashes": {
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/receipt.json": "06967383fc103dd137bb8198810c6d0bde05c561eb0b684684c89dafd13875de",
+    "metadata/expanded_duplication_sister_reference_plan_20260930.json": "b41a163fd033a8c880d080a6751599f4cc6403f7a5c05da6cccd9fc6bc08ec9d",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/profile_sister_references.tsv": "ade96109177466359bb16d90373874e22f5c4b9eb90e623c51b2050eb3fff316",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/mafft_sister_references.tsv": "bef17074915f9ddaf7345c7639dcc33376ab3c8548ed17f7509ba51972647c75",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+    "results/orthology/expanded-duplication-reference-guide-comparison-20260930-v1/receipt.json": "07e77e2d059d08fa0ce83a7c9074079fa563fef1a5bec5af1841edc601b3c7ff",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/receipt.json": "3dea05133a736bb1aa6f25fd4ea7f938c17a2c2de100321607fbf587d4a88475",
+    "results/orthology/expanded-duplication-reference-guide-comparison-20260930-v1/eligibility_matrix.tsv": "73247aa706dc302c6d5a30c88e9ddde1978e39ce9e73a9bbcf2f8f0755012d61",
+    "results/orthology/expanded-duplication-reference-guide-comparison-20260930-v1/pair_reference_comparison.tsv": "f2d172ce9a77b0ac7c73076c4dd7541c03dcdf6d42305e49e8e56128b8d2e5bc",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/guide_pair_membership.tsv": "735d4efbbfd01d7da76c8c672bf3bd9bd5ecfdd5002303c3a72c9c081c050661",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/mafft.json": "c4345c3ebc8cc8de9545ab98371623c54ab46b83b83c6a9c324ef69b67c44867",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/profile.json": "261ab25e2ab6ab8b257fc18bece792df243ce4358eca7dd52d1ba4e7027f097d"
+  },
+  "checker_sha256": "c8b1e068c91632417b7d474bec97c642d72107ac56d9e7b67c3e27d8214da626",
+  "scope": "Independent full dataframe outer join reproduces every saved reference-choice and eligibility-matrix row, original candidate field and summary across both guides. All ties, one-guide targets and unavailable references retained. Requires separate full native-tree choice/path readback; not independent biological orthology, ancestral states, topology acceptance or structural asymmetry inference."
+}

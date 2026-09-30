@@ -1,0 +1,51 @@
+{
+  "status": "passed_full_reference_comparison_ledger_and_native_model_readback",
+  "producer_receipt_sha256": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+  "reference_readback_sha256": "3dea05133a736bb1aa6f25fd4ea7f938c17a2c2de100321607fbf587d4a88475",
+  "primary_queue_readback_sha256": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+  "event_reference_comparisons": 121490,
+  "unique_models": 83207,
+  "additional_models": 24804,
+  "distinct_model_pairs": 55701,
+  "additional_model_pairs": 55336,
+  "work_dispositions": {
+    "additional_pair": 120038,
+    "identical_model": 730,
+    "existing_duplicate_pair": 722
+  },
+  "native_gene_model_mappings_checked": 86440,
+  "counts": {
+    "profile_eligible_events": 29155,
+    "profile_event_reference_links": 30385,
+    "mafft_eligible_events": 29130,
+    "mafft_event_reference_links": 30360,
+    "additional_pair_event_links": 120038,
+    "identical_model_event_links": 730,
+    "existing_duplicate_pair_event_links": 722
+  },
+  "script_sha256": "ff3836b92a36be1c380a42bfdac4c6cfe538b271622e8759953459419e9623b0",
+  "source_hashes": {
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/receipt.json": "06967383fc103dd137bb8198810c6d0bde05c561eb0b684684c89dafd13875de",
+    "metadata/expanded_duplication_sister_reference_plan_20260930.json": "b41a163fd033a8c880d080a6751599f4cc6403f7a5c05da6cccd9fc6bc08ec9d",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/profile_sister_references.tsv": "ade96109177466359bb16d90373874e22f5c4b9eb90e623c51b2050eb3fff316",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/mafft_sister_references.tsv": "bef17074915f9ddaf7345c7639dcc33376ab3c8548ed17f7509ba51972647c75",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/receipt.json": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/receipt.json": "3dea05133a736bb1aa6f25fd4ea7f938c17a2c2de100321607fbf587d4a88475",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/model_pairs.tsv": "88cd2e23f77b4e508ed0537bca1f11141ac94a315260717e60ca945d73801d9c",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/models.jsonl": "261bacc87d2b055507f2391f16e0644685cfbeeb6e12f6bae0d5cd9d8b7a27f3",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/event_reference_comparisons.tsv": "84922e0ba6c4fb4844d0361e065e93bbb9d5dfe49be851199b8029213bd9f0af",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/additional_models.jsonl": "9ad31e01f0ade64d4cad7c4f3b3b61defdcfaa308022f4cc861736209e47cc18",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/mafft.json": "c4345c3ebc8cc8de9545ab98371623c54ab46b83b83c6a9c324ef69b67c44867",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/profile.json": "261ab25e2ab6ab8b257fc18bece792df243ce4358eca7dd52d1ba4e7027f097d",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88"
+  },
+  "scope": "Every event/tied-reference/focal-side identity, native gene/model/version assignment, catalog sequence/path and complete exported model record, distinct pair row and work partition independently reconstructed. Reference choices require separate full native-tree readback. Coordinate byte counts are stat checks, not raw coordinate validation, independent biological orthology, ancestral states or structural asymmetry inference."
+}

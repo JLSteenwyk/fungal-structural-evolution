@@ -1,0 +1,25 @@
+{
+  "status": "passed_native_reference_ledger_and_guide_join_validation",
+  "checked_utc": "2026-09-30T16:54:37.572700+00:00",
+  "checks": [
+    "complete_tied_reference_by_duplicate_side_grid",
+    "numeric_model_versions_6_and_10",
+    "identical_existing_new_work_partitions",
+    "native_gene_model_mapping_rehashed_corruption_rejected",
+    "full_catalog_metadata_rehashed_corruption_rejected",
+    "changed_pair_work_rejected",
+    "missing_tied_reference_side_rejected",
+    "all_six_reference_guide_relations",
+    "ineligible_blanks",
+    "inconsistent_frozen_reference_version_rejected",
+    "duplicate_source_pair_rejected",
+    "complete_saved_rows_and_rehashed_false_relation_rejected"
+  ],
+  "script_hashes": {
+    "scripts/readback_duplication_reference_comparisons_v2.py": "ff3836b92a36be1c380a42bfdac4c6cfe538b271622e8759953459419e9623b0",
+    "scripts/check_reference_ledger_native_model_readback.py": "5a837623a10952f834e7b612c3f2fccfa3d15e89ee349ecae9bf0926cddc5ea1",
+    "scripts/readback_duplication_reference_guide_comparison.py": "c8b1e068c91632417b7d474bec97c642d72107ac56d9e7b67c3e27d8214da626",
+    "scripts/check_reference_guide_readback.py": "cb4218e3bba58848f262ebc8dc1f12fdf3bbf681b0631a024a72446179fa11c7"
+  },
+  "scope": "Synthetic isolated source/ledger fixtures, not full production completion or biological reference validation."
+}

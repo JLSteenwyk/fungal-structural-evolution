@@ -1,0 +1,47 @@
+{
+  "inventory": "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1",
+  "base_queue": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1",
+  "inventory_readback": "metadata/expanded_duplication_reference_comparison_completed_readback_20260930.json",
+  "output": "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1",
+  "workers": 2,
+  "models_per_shard": 1000,
+  "minimum_free_disk_gib": 100,
+  "pins": {
+    "metadata/expanded_duplication_reference_coordinate_resources_20260930.json": "7896e491bd40f3344124757ad2db9daffcd57fcfc6a2521f0479844d169b96fe",
+    "metadata/expanded_reference_coordinate_partition_readback_20260930.json": "69ed03b50b9a72eda3cc9284219be008ddf55ddb960ef300ad3ddec5d32eecc1",
+    "metadata/expanded_duplication_reference_comparison_completed_readback_20260930.json": "a34ca5ef01e3de7df71a682f32914eaf1fe68a397c6536629f17eaea2dbeef60",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/receipt.json": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "scripts/validate_duplication_reference_coordinates_v2.py": "6aa464f46d032865fa92839e08384ae76ad900d3be8885eb803db5731102a4f8",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/model_pairs.tsv": "88cd2e23f77b4e508ed0537bca1f11141ac94a315260717e60ca945d73801d9c",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/models.jsonl": "261bacc87d2b055507f2391f16e0644685cfbeeb6e12f6bae0d5cd9d8b7a27f3",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/event_reference_comparisons.tsv": "84922e0ba6c4fb4844d0361e065e93bbb9d5dfe49be851199b8029213bd9f0af",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/additional_models.jsonl": "9ad31e01f0ade64d4cad7c4f3b3b61defdcfaa308022f4cc861736209e47cc18"
+  },
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "source_models": 24804,
+    "source_coordinate_bytes": 9597401251,
+    "source_residues": 9982283,
+    "maximum_sequence_length": 2271,
+    "shards": 25,
+    "basis": "Exact additional-model partition after full native gene/model ledger readback; full original raw-CIF, canonical sequence, finite atom/coordinate and confidence checks, followed by independent reconstruction. Two CPU workers. Uncalibrated range, not ETA; no native alignment or inference."
+  }
+}

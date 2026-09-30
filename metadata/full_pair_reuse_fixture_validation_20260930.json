@@ -1,0 +1,18 @@
+{
+  "status": "passed_full_union_reuse_candidate_fixture_checks",
+  "checks": [
+    "overlapping_old_new_unions",
+    "numeric_version6_version10_order",
+    "matching_changed_new_sources",
+    "rehashed_false_dispositions_rejected",
+    "missing_duplicate_rows_rejected",
+    "missing_source_membership_rejected",
+    "changed_frozen_sources_rejected"
+  ],
+  "scope": "Synthetic isolated fixtures, not full production verification or alignment reuse authorization.",
+  "source_hashes": {
+    "scripts/inventory_alignment_reuse_candidates.py": "952f013a84e191465f5456c5a7c6aff2ad0a070605f8ae865152af3267066c34",
+    "scripts/readback_alignment_reuse_candidates.py": "5ea4ade4c790a8be81b48d82add048ab890ab9f767788b9df8bb4bd8c81b9df2",
+    "scripts/check_alignment_reuse_candidates.py": "a0b13a8825ef6fe5ecf1dcc877281096a59c38b5f25d361fcf79c223e4f4488c"
+  }
+}

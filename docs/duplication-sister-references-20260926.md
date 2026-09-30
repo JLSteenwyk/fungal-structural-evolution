@@ -498,3 +498,92 @@ coverage screens and independent numerical verification remain pending.
 
 Closure evidence: `metadata/whole_protein_common_mapping_completed_20260927.json`;
 full checker output: `metadata/whole_protein_common_residues_readback_20260927.json`.
+
+## Expanded catalog reference pipeline completed September 30
+
+Full expanded reference choices and their independent native-tree/path
+reconstruction have completed for **283,409 modeled duplicate target links**
+across 50,063 candidate-bearing trees. Every unavailable or ineligible target
+remains explicit:
+
+| Native guide | Targets | Provisional reference | No modeled nonfocal sister | Parent reported duplication | Nonbifurcating parent |
+|---|---:|---:|---:|---:|---:|
+| Profile | 141,724 | 29,155 | 40,700 | 71,765 | 104 |
+| MAFFT | 141,685 | 29,130 | 40,695 | 71,757 | 103 |
+
+The independent check uses native leaf-interval subtraction and upward
+`math.fsum` tree paths; maximum path differences are 3.55e-15 under each guide.
+All nearest modeled tied references remain in the ledger, without selecting
+on structural responses. The full **121,490 event/reference/duplicate-side
+rows** involve 83,207 models and 55,701 distinct model pairs, including 55,336
+pairs additional to the expanded primary queue. This is a queue partition,
+not a count of unmeasured pairs after earlier reference/background reuse.
+The additional model partition has 24,804 models and 9,597,401,251 stat-counted
+raw coordinate bytes; full coordinate parsing is a separate requirement.
+
+A stronger independent reader verifies every gene against the frozen native
+bridge, every model/version/sequence/path assignment, full exported catalog
+records, all tied-reference/side combinations and pair/work partitions.
+It checked **86,440 native gene/model mappings**. Isolated fixtures include
+numeric versions 6 and 10 and reject rehashed but incorrect gene/model
+assignments, full catalog metadata changes, false work partitions and missing
+tied sides. Original producers and earlier readers remain unchanged.
+
+Independent cross-guide outer-join readback covers all **142,107 gene pairs**:
+141,302 shared, 422 profile-only and 383 MAFFT-only. Among 29,016 provisionally
+eligible under both guides, **28,950 have identical nearest-reference gene
+sets** and **66 have disjoint sets**; none partly overlap. Chosen model
+identity agrees for 28,951, one more than chosen gene identity, because distinct
+reference genes can share a model. Model agreement is not gene identity or
+independent prediction agreement.
+
+[Completion evidence](../metadata/expanded_duplication_reference_pipeline_completed_20260930.json)
+binds 82 source/artifact hashes and all six exact captured-process completion
+journals. These are extant, availability-dependent provisional references,
+not ancestral states or demonstrated biological orthologs. Native reference
+orthology, sequence-locked choice sensitivity, coordinate/input reuse and
+quality, confidence/PAE/domain controls, common-residue triads, phylogenetic and
+ancestral uncertainty, and calibrated asymmetry tests remain required. Earlier
+common-triad outputs retain their older frozen scope. None of the eight
+scientific aims is complete.
+
+### Complete pair-union source inventory verified
+
+The old/new source screen and its extended existing-measurement version both
+passed exhaustive independent SQL reconstruction. Completion binds 45
+source/artifact hashes and four exact captured-process journals in
+[the reuse inventory evidence](../metadata/full_pair_reuse_inventory_completed_20260930.json).
+The full current primary/reference/background union contains **336,292
+distinct model pairs**. Relative to original collections plus the completed
+expanded primary queue, **236,650 have matching catalog source signatures**
+and **99,642 are new to those collections**; no source-change-only pairs were
+found. These counts are structural comparison pairs, not proteins lacking
+predictions, and matching catalog signatures do not authorize result reuse.
+
+| Current role | Distinct pairs | Matching catalog sources | New to existing collections |
+|---|---:|---:|---:|
+| Expanded primary | 134,812 | 134,812 | 0 |
+| Expanded references | 55,701 | 30,754 | 24,947 |
+| Expanded backgrounds | 146,172 | 71,460 | 74,712 |
+| Distinct union | 336,292 | 236,650 | 99,642 |
+
+Role rows overlap: 17 new reference/background pairs are shared, and existing
+pair overlaps are also retained. Never add role counts as independent work or
+biological events. Every endpoint source checksum, sequence checksum and length
+was compared in numeric model/version order. Actual reuse still requires
+raw/materialized coordinate and mask/residue-map equality, executable/options,
+input-order/checkpoint bindings, full numerical proofs and preserved exclusions.
+The first old-catalog-only inventory is preserved alongside the extended one.
+
+Full additional-reference coordinate validation and separate independent
+native-CIF reconstruction are now running for **24,804 models**, 9,982,283
+residues and **9,597,401,251 raw bytes**. Each has two CPU workers/8 GiB/no swap;
+25 thousand-model shards retain all rejection dispositions. The exact residue
+count and maximum length are authoritative in
+`metadata/expanded_duplication_reference_coordinate_resources_20260930.json`.
+The v2 validator requires the stronger native gene/model ledger readback;
+its exact additional-partition and original coordinate algorithms are unchanged.
+A full prelaunch partition check passed. Runtime settings for both transient
+services were verified against their planned limits; no GPU setting changed.
+Coordinates, alignments, common-residue triads and biological asymmetry remain
+unqualified. Resource planning predates launch and does not give an ETA.

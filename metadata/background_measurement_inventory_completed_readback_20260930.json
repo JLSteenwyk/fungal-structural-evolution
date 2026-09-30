@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_background_measurement_inventory_readback",
+  "config_sha256": "07c1d0ee7f0cab5ac00b6af7d5932efbb9de4add6a69a7353b8f85792ec33e51",
+  "producer_receipt_sha256": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+  "candidates": 160415,
+  "all_models": 307693,
+  "active_models": 305434,
+  "additional_models": 303802,
+  "distinct_eligible_model_pairs": 146172,
+  "new_model_pairs": 146161,
+  "counts": {
+    "candidate_and_native_ortholog_either": 159284,
+    "candidate_and_native_ortholog_both": 158753,
+    "both_guides_and_parents_unreported": 145910,
+    "identical_model_no_alignment": 13112,
+    "new_model_pair": 146161,
+    "neither_guide_eligible": 1131,
+    "already_in_reference_queue": 11
+  },
+  "checker_sha256": "eb077a2d536d5ddbe34d6f88d00c4a84eca106336a7c377908b3fc46d3154d6c",
+  "scope": "Every candidate field, native eligibility flag, exact bridge/catalog join and metadata value verified; full pair/model output sets and existing/new partitions reconstructed independently. No raw coordinates or alignments validated and no matched controls selected."
+}

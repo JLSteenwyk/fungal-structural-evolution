@@ -10026,3 +10026,50 @@ does not establish universal coverage or complete the biological project.
   and 147,099 MAFFT, with overlap retained. Guide-union checking, native
   orthology, model inventories and fixed matching remain downstream; these
   counts are not biological speciation, independent events or effect tests.
+
+
+- September 30: completed the full expanded background support pipeline.
+  Independent checks and all 16 exact captured-process journals passed with
+  150 bound source/artifact hashes: 140,719 trees, 3,154,373 terminal pairs,
+  160,415 modeled background candidates, 307,693 models and 146,172 eligible
+  model pairs. All 850,227 sequence-support and 3,400,908 architecture-support
+  rows passed. This replaces the earlier pending status; it does not establish
+  biological orthology, independent events or duplication effects.
+
+- September 30: completed expanded provisional-reference native choices/path,
+  full ledger and cross-guide comparison. Six exact process journals and 82
+  source/artifact hashes passed. All 283,409 targets remain explicit;
+  121,490 tied-reference/duplicate-side rows and 86,440 gene/model joins passed
+  stronger independent reconstruction. Of 29,016 provisionally eligible
+  cross-guide targets, 28,950 share nearest-reference sets and 66 are disjoint.
+  Reference orthology, sequence-locked sensitivity, common-residue coordinate
+  qualification and calibrated asymmetry inference remain pending.
+
+- September 30: full expanded candidate graph and metadata covariates passed
+  independent reconstruction of all 5,059,122 edges, 318,037 background nodes
+  and 1,133,636 target/policy dispositions. All four exact process completion
+  journals and 71 source/artifact hashes were checked. Complete 54-scenario
+  selection production finished; full independent selection/unmatched/reuse
+  checking remains active over 61,216,344 decisions. No rematching after
+  response or coverage screening is allowed.
+
+- September 30: launched full additional-background raw-coordinate validation
+  over 303,802 models and 127,840,912,925 bytes with four CPUs/32 GiB/no swap,
+  plus independent readback. Also added full old/new pair-union source screens
+  and independent SQL reconstruction; the extended screen includes the already
+  measured expanded primary queue. Every overlapping source and changed
+  descriptor remains explicit. Isolated fixtures reject rehashed false or
+  incomplete outputs. These screens do not authorize alignment reuse. Resource
+  plans predate launch; no GPU or paid resource launched. All eight scientific
+  aims remain incomplete.
+
+- September 30: full pair-union source reuse inventory and extended existing-primary
+  version passed independent SQL reconstruction and four exact completion
+  journals (45 source/artifact hashes). All 336,292 current distinct pairs were
+  retained: 236,650 match existing catalog sources and 99,642 are new to those
+  collections. Role overlaps remain explicit; these are comparison pairs,
+  not missing protein predictions. Matching sources do not authorize reuse.
+  Launched full 24,804 additional-reference raw-coordinate checks and separate
+  reconstruction, two CPUs/8 GiB/no swap each. The stronger required ledger
+  status is the only validator algorithm adaptation; full partition precheck
+  and exact live runtime limits passed. Biological inference remains pending.

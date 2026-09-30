@@ -1229,3 +1229,48 @@ remain outstanding. The existing completed selections and ongoing fitted models
 retain their older frozen source scope. No rematching after structural/coverage
 filtering is allowed. See
 [the expanded workflow](terminal-sister-backgrounds-20260927.md#expanded-catalog-refresh-september-30).
+
+### Expanded duplication backgrounds and reference choices — September 30
+
+The complete expanded terminal-pair background support workflow retains all
+140,719 native family trees and 3,154,373 pair records across the two guides.
+Full source/readback checks cover 160,415 modeled candidates, 146,172 distinct
+eligible model pairs, four annotation policies and all 3,400,908 architecture
+support rows. The target universe remains all 283,409 modeled duplicate links;
+no passing-screen-only or outcome-selected subset defines the matching pool.
+All 5,059,122 candidate edges and both possible endpoint metadata mappings
+passed independent checks. Fixed selection retains the original 54 scenarios,
+zero-distance rule, deterministic ties and unmatched/reuse dispositions,
+requiring 61,216,344 decisions. Its independent readback remains active.
+Controls will not be rematched after structural or coverage filtering.
+
+Separately, expanded provisional sister references were independently
+reconstructed from each native tree for every target. All nearest modeled
+ties and both duplicate sides yield 121,490 ledger rows; 86,440 native
+gene/model joins and every exported catalog descriptor passed independent
+readback. Cross-guide comparison retains the full 142,107 gene-pair union:
+28,950 eligible targets share the same nearest-reference gene set and 66 have
+disjoint sets. Extant references do not reconstruct ancestral states; their
+availability-dependent selection requires sequence-locked sensitivity and
+biological orthology assessment before asymmetry inference.
+
+A full pair-union catalog source inventory compares old/new primary,
+reference and background inventories and includes the already measured
+expanded primary queue. An independent SQL join checks every pair and source
+membership, including numeric model versions. Matching coordinate/sequence
+checksums and lengths identify planning candidates only. Actual reuse requires
+raw coordinate and materialized input/mask/order equality, executable/options
+and checkpoint bindings, full numerical proofs and preserved exclusion flags.
+Full additional-background raw-coordinate validation is active. Expanded
+measurements, balance, prediction uncertainty, phylogenetic dependence and
+inferential calibration remain incomplete. See the
+[background workflow](terminal-sister-backgrounds-20260927.md#expanded-support-and-candidate-graph-completed-september-30)
+and [reference workflow](duplication-sister-references-20260926.md#expanded-catalog-reference-pipeline-completed-september-30).
+
+Full distinct-pair source inventory subsequently passed independent SQL checking:
+336,292 current pairs, 236,650 matching existing catalog source signatures and
+99,642 new to those collections. Matching-source candidates still require full
+input/result and numerical checks before reuse. Full additional-reference
+raw-coordinate validation and independent reconstruction are running for
+24,804 models; these CPU stages do not resume protein prediction or qualify
+asymmetry inference. All eight scientific aims remain incomplete.

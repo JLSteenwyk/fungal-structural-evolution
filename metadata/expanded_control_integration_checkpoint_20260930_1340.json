@@ -1,0 +1,214 @@
+{
+  "status": "verified_active_full_expanded_control_integration_checkpoint",
+  "checked_utc": "2026-09-30T17:38:48.767445+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_turn_evidence": "The error-check turn verified command execution, corrected full coverage result hashes, newly completed graph readback and active coordinate/covariate logs; this changed the next safe collection action.",
+  "completed_evidence": [
+    "metadata/expanded_background_matching_support_pipeline_completed_20260930.json",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json",
+    "metadata/expanded_background_graph_covariates_completed_20260930.json",
+    "metadata/full_pair_reuse_inventory_completed_20260930.json"
+  ],
+  "observations": [
+    {
+      "launch": "metadata/expanded_background_coordinate_validation_launch_20260930.json",
+      "unit": "fungal-expanded-background-coordinate-validation-20260930.service",
+      "pid": 2641891,
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "exact_identity_live": true,
+      "current_create_time": 1790787610.54,
+      "current_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/validate_background_coordinates.py",
+        "--plan",
+        "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+      ],
+      "children": [
+        {
+          "pid": 2641977,
+          "created": 1790787619.18,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        },
+        {
+          "pid": 2641978,
+          "created": 1790787619.24,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        },
+        {
+          "pid": 2641979,
+          "created": 1790787619.29,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        },
+        {
+          "pid": 2641980,
+          "created": 1790787619.35,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_coordinate_readback_launch_20260930.json",
+      "unit": "fungal-expanded-background-coordinate-readback-20260930.service",
+      "pid": 2641894,
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "exact_identity_live": true,
+      "current_create_time": 1790787610.59,
+      "current_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_background_coordinates.py",
+        "--plan",
+        "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+      ],
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_control_selection_readback_launch_20260930.json",
+      "unit": "fungal-expanded-background-control-selection-readback-20260930.service",
+      "pid": 2644946,
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "exact_identity_live": true,
+      "current_create_time": 1790787921.52,
+      "current_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_control_selection_readback_wait_plan_20260930.json"
+      ],
+      "children": [
+        {
+          "pid": 2659109,
+          "created": 1790789122.73,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_control_selection.py",
+            "--plan",
+            "metadata/expanded_background_control_selection_readback_plan_20260930.json"
+          ],
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json",
+      "unit": "fungal-expanded-duplication-reference-coordinate-validation-20260930.service",
+      "pid": 2664081,
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "exact_identity_live": true,
+      "current_create_time": 1790789648.53,
+      "current_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/validate_duplication_reference_coordinates_v2.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+      ],
+      "children": [
+        {
+          "pid": 2664252,
+          "created": 1790789661.95,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_duplication_reference_coordinates_v2.py",
+            "--plan",
+            "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        },
+        {
+          "pid": 2664253,
+          "created": 1790789661.98,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/validate_duplication_reference_coordinates_v2.py",
+            "--plan",
+            "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json"
+          ],
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json",
+      "unit": "fungal-expanded-duplication-reference-coordinate-readback-20260930.service",
+      "pid": 2664084,
+      "state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "loaded",
+        "ActiveState": "active"
+      },
+      "exact_identity_live": true,
+      "current_create_time": 1790789648.6,
+      "current_command": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_duplication_coordinates.py",
+        "--plan",
+        "metadata/expanded_duplication_reference_coordinate_readback_plan_20260930.json"
+      ],
+      "children": []
+    }
+  ],
+  "noncompletion_progress_states": {
+    "expanded-background-coordinate-validation-20260930-v1": {
+      "stage": "validating_background_coordinates",
+      "completed_shards": 64,
+      "total_shards": 304,
+      "counts": {
+        "validated": 64000
+      }
+    },
+    "expanded-duplication-reference-coordinate-validation-20260930-v1": {
+      "stage": "validating_additional_reference_coordinates",
+      "completed_shards": 2,
+      "total_shards": 25,
+      "counts": {
+        "validated": 2000
+      }
+    }
+  },
+  "scientific_aims_complete": 0,
+  "scope": "Live status requires current exact PID/create time/command verification. State-file counts are partial progress only; collected transient default success alone is not completion. GPU predictions remain paused; all eight scientific aims retain original scope."
+}

@@ -1,0 +1,42 @@
+{
+  "dependencies": [
+    "metadata/expanded_background_match_graph_readback_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/characterize_background_match_covariates.py",
+    "--plan",
+    "metadata/expanded_background_match_covariate_plan_20260930.json"
+  ],
+  "pins": {
+    "scripts/background_match_covariates.py": "237a9f3dcd937926d7e5a0180817906c8481969663d6fd99ddca25d3115740f3",
+    "scripts/check_background_match_covariates.py": "93488190a3469cdb9c0c6ac66e18a8d5c2b8bec5c1f37aad5222682d545c5b0e",
+    "scripts/characterize_background_match_covariates.py": "c16f4e3fd211966858c3519d5b352d06f9bb42a86bd70802af79d7fb9e7f3dd4",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/expanded_background_match_graph_plan_20260930.json": "37e64e3e5d6887436e22a4d8b50312b5196d166db81acebc176e993d2c7cd03e",
+    "metadata/expanded_background_match_graph_readback_plan_20260930.json": "5f4058859bdf6dd9dc826de87cac5e33a3cb63999ba90327eef3ab937dfbf19f",
+    "metadata/expanded_background_match_graph_launch_20260930.json": "e5ae90ae6f16f6e916c054e9bbe3c1477f2b0f23c302dfeeb19f1c729404f45d",
+    "metadata/expanded_background_match_graph_readback_launch_20260930.json": "cc8fa380dfefc09b46242156c7b011f8e7919b70a45d45e8bfddab814b5ea35c",
+    "metadata/expanded_background_matching_resources_20260930.json": "22c151ce6ee706b2f48e7cac8eb82a6816cc7d3762e0a7bd9c2bb3d08d57a202",
+    "metadata/expanded_background_match_covariate_plan_20260930.json": "b5e462f82a3eb947c9fd23190c057e6182cd8832c4a546114993c620f86279bb",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "expected_edges": 5059122,
+    "expected_targets": 283409,
+    "target_policy_records": 1133636,
+    "basis": "All expanded admissible edges, both endpoint correspondences, three unchanged joint length/confidence bands and every shared gene/model/sequence flag. No structural responses or component minima combined across mappings.",
+    "edges": 5059122
+  }
+}

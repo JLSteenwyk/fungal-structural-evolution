@@ -472,3 +472,28 @@ records. Source hashes and both exact process completion journals were checked;
 see `metadata/expanded_terminal_sister_background_inventory_completed_20260930.json`.
 Cross-guide/native-orthology eligibility and all fixed matching remain downstream;
 unreported duplication is not proof of speciation. No scientific aim is complete.
+
+
+September 30 expanded control integration: the entire 16-service background
+support pipeline passed independent full-data checks and terminal journal/hash
+verification. It covers 160,415 modeled backgrounds and 3,400,908 architecture
+support rows. All 5,059,122 candidate edges and both endpoint metadata mappings
+also passed; full 54-scenario selection checking remains active. The complete
+expanded reference pipeline passed native tree/path, gene/model ledger and
+cross-guide checks over all 283,409 targets and 121,490 tied-reference/side
+rows. Raw-coordinate validation and complete pair-union source reuse inventory
+are active. These advance the full sampling design; biological orthology,
+sequence-locked references, valid measurement reuse, matching balance,
+confidence/PAE/orientation quality and phylogenetically calibrated effect tests
+remain required. All eight scientific aims remain incomplete. Evidence:
+`metadata/expanded_background_matching_support_pipeline_completed_20260930.json`,
+`metadata/expanded_background_graph_covariates_completed_20260930.json` and
+`metadata/expanded_duplication_reference_pipeline_completed_20260930.json`.
+
+Full distinct-pair source inventory subsequently passed independent SQL checking:
+336,292 current pairs, 236,650 matching existing catalog source signatures and
+99,642 new to those collections. Matching-source candidates still require full
+input/result and numerical checks before reuse. Full additional-reference
+raw-coordinate validation and independent reconstruction are running for
+24,804 models; these CPU stages do not resume protein prediction or qualify
+asymmetry inference. All eight scientific aims remain incomplete.

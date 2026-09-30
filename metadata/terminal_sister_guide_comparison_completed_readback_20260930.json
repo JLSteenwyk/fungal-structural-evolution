@@ -1,0 +1,25 @@
+{
+  "status": "passed_full_terminal_sister_guide_comparison_readback",
+  "config_sha256": "fdc10ac7ba6acf973366e1e9fc16dc345c92c5a8135dc1bc1d353024c75629f5",
+  "producer_receipt_sha256": "b849ea4a4eea27a6c60fb346cc28f3fecf8c7d82a17803e7eb150bc4097ea31a",
+  "source_rows_checked": {
+    "profile": 1577204,
+    "mafft": 1577169
+  },
+  "union_pairs": 1582382,
+  "modeled_candidate_union": 160415,
+  "presence": {
+    "both": 1571991,
+    "profile_only": 5213,
+    "mafft_only": 5178
+  },
+  "modeled_candidate_counts": {
+    "both": 159984,
+    "both_candidate": 159984,
+    "both_candidate_parents_unreported": 147081,
+    "profile_only": 212,
+    "mafft_only": 219
+  },
+  "checker_sha256": "6edce69e750b9b89be8b2ac365ff5435e1a459944ac95040b655402c2669fb1d",
+  "scope": "Every SQLite source record checked against original audited TSVs; independent sorted-cursor union reconstructs every output field and exact modeled subset, including absent guides and disagreements. No biological orthology or matched-control eligibility established."
+}

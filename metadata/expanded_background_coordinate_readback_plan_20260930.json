@@ -1,0 +1,57 @@
+{
+  "producer": {
+    "unit": "fungal-expanded-background-coordinate-validation-20260930.service",
+    "pid": 2641891,
+    "created": 1790787610.54,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/validate_background_coordinates.py",
+      "--plan",
+      "metadata/expanded_background_coordinate_validation_plan_20260930.json"
+    ],
+    "plan": "metadata/expanded_background_coordinate_validation_plan_20260930.json",
+    "plan_sha256": "a81db6f1e5ce3671fc863e7e7388fac85bbb01996785f37aedb836cfb218ec6b",
+    "checked_utc": "2026-09-30T17:00:11.270442+00:00"
+  },
+  "source": "results/structural_comparisons/expanded-background-coordinate-validation-20260930-v1",
+  "source_plan": "metadata/expanded_background_coordinate_validation_plan_20260930.json",
+  "models": "results/structural_comparisons/background-measurement-inventory-20260930-v1/additional_models.jsonl",
+  "output": "results/structural_comparisons/expanded-background-coordinate-readback-20260930-v1",
+  "workers": 4,
+  "pins": {
+    "scripts/validate_background_coordinates.py": "4a563170021ad0b7a0b5c590f583de7c6e47e9c1563901bb6971e351cc71239e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "scripts/readback_background_coordinates.py": "4bcb762590d46d87147e8950bef3ba351d12a2a7aeeaa8b7c0dea8a886b8cb55",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/additional_models.jsonl": "0737a106a72b8d0930e5d88e1962938adbe8e5aeac04418d4f94d667e24d923d",
+    "metadata/background_measurement_inventory_completed_readback_20260930.json": "3f0ecbb92fe952a2f715b03fecd9296b813a42f340dc14b496facc48b27700ac",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "metadata/background_measurement_readback_launch_20260930.json": "32b3b63d5151e6e60a2755f3fb9c321324650382b1e4176c899df0ccc349e85b",
+    "metadata/expanded_background_coordinate_resources_20260930.json": "75d33b9f7ad4041209ca911432790ca0d02b6e5636ff75a681fcb49e99834fa5",
+    "metadata/expanded_background_coordinate_validation_plan_20260930.json": "a81db6f1e5ce3671fc863e7e7388fac85bbb01996785f37aedb836cfb218ec6b",
+    "metadata/expanded_background_coordinate_validation_launch_20260930.json": "f940dc7985bc337c00ecbccdb7e36d42c3fee47349f2e0c3fc0f6a8fe146b3f9"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.5,
+      24
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "source_models": 303802,
+    "source_residues": 133998473,
+    "source_coordinate_bytes": 127840912925,
+    "maximum_sequence_length": 1519,
+    "basis": "Every accepted exported CA sequence, coordinate and confidence value independently rebuilt from frozen atom rows, full model grid and counts checked. Content rejection identities/reasons retained, not independently adjudicated. Shares lexical parser only; no geometry, PAE or biological inference. Excludes producer wait."
+  }
+}

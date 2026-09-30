@@ -1,0 +1,15 @@
+{
+  "status": "planned_complete_existing_primary_and_old_catalog_pair_reuse_inventory",
+  "cpu": 1,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "output_allowance_gib": 1,
+  "planning_hours": [
+    0.05,
+    4
+  ],
+  "gpu": false,
+  "paid_resources": false,
+  "pair_source_rows": 679020,
+  "basis": "Complete union of all original inventories plus the already measured expanded primary queue; all current primary/reference/background pairs retained. No native computation or source-dependent subset; catalog signature matches still require exact input/result and numeric qualification."
+}

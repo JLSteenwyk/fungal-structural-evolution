@@ -1,0 +1,23 @@
+{
+  "status": "launched_complete_old_new_catalog_pair_union_and_independent_sql_readback",
+  "checked_utc": "2026-09-30T17:25:41.342737+00:00",
+  "launches": [
+    "metadata/full_pair_reuse_candidates_launch_20260930.json",
+    "metadata/full_pair_reuse_readback_launch_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      0.05,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "pair_source_rows": 544208,
+    "basis": "Full old/new primary, reference and background inventories, complete distinct pair union and exact catalog source signatures. Stateless planning screen with independent SQLite joins; raw coordinates and native alignment results not opened. Time range is uncalibrated, not an ETA."
+  },
+  "scientific_eligibility": false
+}

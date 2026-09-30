@@ -1,0 +1,26 @@
+{
+  "status": "launched_full_expanded_reference_coordinate_validation_and_independent_readback",
+  "launches": [
+    "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json",
+    "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json"
+  ],
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "source_models": 24804,
+    "source_coordinate_bytes": 9597401251,
+    "source_residues": 9982283,
+    "maximum_sequence_length": 2271,
+    "shards": 25,
+    "basis": "Exact additional-model partition after full native gene/model ledger readback; full original raw-CIF, canonical sequence, finite atom/coordinate and confidence checks, followed by independent reconstruction. Two CPU workers. Uncalibrated range, not ETA; no native alignment or inference."
+  },
+  "scientific_eligibility": false
+}

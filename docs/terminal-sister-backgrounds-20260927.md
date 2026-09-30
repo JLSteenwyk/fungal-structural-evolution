@@ -1362,3 +1362,108 @@ annotation or architecture-support producer. New directories preserve all old
 and failed runs. The resource plan was recorded before launch in
 `metadata/expanded_background_refresh_resources_20260930.json`; later plans
 contain their own allowances. No GPU predictions or paid resources launched.
+
+## Expanded support and candidate graph completed September 30
+
+The complete expanded native inventory, guide union, native orthology
+membership, model inventories, primary/background annotations and sequence/
+architecture support grids have now passed their independent checks.
+[Completion evidence](../metadata/expanded_background_matching_support_pipeline_completed_20260930.json)
+binds 150 source/artifact hashes and all 16 exact captured-process completion
+journals. It covers 140,719 trees, 3,154,373 terminal-pair rows, 1,582,382 union
+pairs and **160,415 modeled background candidates**, preserving one-guide,
+unreported-parent and native-orthology dispositions. Computational native
+orthology and absence of a reported duplication do not establish biological
+speciation or independent events.
+
+The background model inventory has **307,693 models**, 305,434 active endpoints
+and 303,802 additional models relative to the expanded primary and preserved
+old reference inventories. The 146,172 distinct eligible background model
+pairs include 146,161 labeled new relative to those two queues and 11 already
+in the old reference queue. That label does **not** mean 146,161 native
+alignments must be computed: earlier background measurements and the expanded
+reference inventory must be checked for overlap and valid reuse first.
+All 584,688 background pair/policy annotation records passed separate registry
+reconstruction. Missing annotations remain unknown, not domain absence.
+
+Full sequence support covers 850,227 target/qualification rows, and full
+architecture support covers 3,400,908 target/qualification/policy rows for
+283,409 modeled duplicate target links. From these audited rows the complete
+graph contains **318,037 guide-specific background nodes and 5,059,122 edges**,
+with all 1,133,636 target/policy dispositions retained. Both possible endpoint
+mappings have independently verified length, mean pLDDT and low-confidence
+fraction differences, three joint caliper bands, and shared gene/model/sequence
+flags. Graph/covariate completion binds 71 source/artifact hashes and all four
+captured-process journals in
+[the completion record](../metadata/expanded_background_graph_covariates_completed_20260930.json).
+
+The unchanged 54 fixed scenarios require **61,216,344 target/policy/scenario
+decisions**. Selection production has finished, with its full independent
+ranking, unmatched and reuse-count readback still running at this checkpoint.
+Selection uses sequence distance and endpoint metadata; structural outcomes
+and later passing screens do not choose or replace controls. Matching balance,
+coordinate and numerical quality, confidence/PAE/orientation controls,
+phylogenetic dependence and calibrated biological effects remain outstanding.
+
+Full raw-coordinate validation is running over the 303,802 additional models,
+133,998,473 residues and 127,840,912,925 coordinate bytes. It uses four CPU
+workers, 32 GiB RAM, no swap and 304 thousand-model shards, followed by a
+separate independent reader. Its 0.5–24-hour planning range excludes waiting
+and is not a calibrated ETA. The resource record predates launch:
+`metadata/expanded_background_coordinate_resources_20260930.json`.
+Graph/matching stages have one CPU/32 GiB/no swap each. No GPU prediction or
+paid resource was launched.
+
+A complete old/new pair-union source screen and independent SQLite checker
+have also been added. They compare model/version identity plus both endpoint
+catalog coordinate checksums, sequence checksums and lengths, retain every
+matching/changed prior source and deduplicate overlaps between primary,
+reference and background inventories. The subsequent version additionally
+includes the already measured expanded primary queue. These are planning
+screens: raw input bytes, residue/mask mapping, executable/settings, order,
+checkpoints, numeric exclusions and source proof lineage must pass before any
+result is reused. Sources, output locations and launch identities are in
+`metadata/full_pair_reuse_plan_20260930_v2.json` and
+`metadata/full_pair_reuse_queued_20260930_v2.json`. Neither screen admits or
+copies structural results. All eight scientific aims remain incomplete.
+
+### Complete pair-union source inventory verified
+
+The old/new source screen and its extended existing-measurement version both
+passed exhaustive independent SQL reconstruction. Completion binds 45
+source/artifact hashes and four exact captured-process journals in
+[the reuse inventory evidence](../metadata/full_pair_reuse_inventory_completed_20260930.json).
+The full current primary/reference/background union contains **336,292
+distinct model pairs**. Relative to original collections plus the completed
+expanded primary queue, **236,650 have matching catalog source signatures**
+and **99,642 are new to those collections**; no source-change-only pairs were
+found. These counts are structural comparison pairs, not proteins lacking
+predictions, and matching catalog signatures do not authorize result reuse.
+
+| Current role | Distinct pairs | Matching catalog sources | New to existing collections |
+|---|---:|---:|---:|
+| Expanded primary | 134,812 | 134,812 | 0 |
+| Expanded references | 55,701 | 30,754 | 24,947 |
+| Expanded backgrounds | 146,172 | 71,460 | 74,712 |
+| Distinct union | 336,292 | 236,650 | 99,642 |
+
+Role rows overlap: 17 new reference/background pairs are shared, and existing
+pair overlaps are also retained. Never add role counts as independent work or
+biological events. Every endpoint source checksum, sequence checksum and length
+was compared in numeric model/version order. Actual reuse still requires
+raw/materialized coordinate and mask/residue-map equality, executable/options,
+input-order/checkpoint bindings, full numerical proofs and preserved exclusions.
+The first old-catalog-only inventory is preserved alongside the extended one.
+
+Full additional-reference coordinate validation and separate independent
+native-CIF reconstruction are now running for **24,804 models**, 9,982,283
+residues and **9,597,401,251 raw bytes**. Each has two CPU workers/8 GiB/no swap;
+25 thousand-model shards retain all rejection dispositions. The exact residue
+count and maximum length are authoritative in
+`metadata/expanded_duplication_reference_coordinate_resources_20260930.json`.
+The v2 validator requires the stronger native gene/model ledger readback;
+its exact additional-partition and original coordinate algorithms are unchanged.
+A full prelaunch partition check passed. Runtime settings for both transient
+services were verified against their planned limits; no GPU setting changed.
+Coordinates, alignments, common-residue triads and biological asymmetry remain
+unqualified. Resource planning predates launch and does not give an ETA.

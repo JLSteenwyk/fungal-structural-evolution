@@ -1,0 +1,19 @@
+{
+  "status": "planned_full_expanded_background_coordinate_validation",
+  "checked_utc": "2026-09-30T17:00:10.827799+00:00",
+  "cpu": 4,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "output_allowance_gib": 64,
+  "planning_hours": [
+    0.5,
+    24
+  ],
+  "gpu": false,
+  "paid_resources": false,
+  "source_models": 303802,
+  "source_residues": 133998473,
+  "source_coordinate_bytes": 127840912925,
+  "maximum_sequence_length": 1519,
+  "basis": "Full expanded additional-model partition, relative to the expanded primary queue and preserved reference queue. Every new-scope model validated with original raw-byte/CIF/CA/confidence checker, preserving all content dispositions. Four CPU workers, 1000-model restartable shards. Broad uncalibrated planning range; excludes dependency wait; no alignments or inference launched. Earlier model-coordinate sources remain explicit for later complete endpoint union."
+}

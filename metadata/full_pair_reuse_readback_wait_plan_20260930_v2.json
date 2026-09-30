@@ -1,0 +1,63 @@
+{
+  "dependencies": [
+    "metadata/full_pair_reuse_candidates_v2_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_alignment_reuse_candidates.py",
+    "--plan",
+    "metadata/full_pair_reuse_plan_20260930_v2.json",
+    "--output",
+    "metadata/full_pair_reuse_completed_readback_20260930_v2.json"
+  ],
+  "pins": {
+    "metadata/full_pair_reuse_resources_20260930.json": "0c5dff342817126a8d860747f20abe6db7e3616153472407850067234f6f3e49",
+    "metadata/full_pair_reuse_fixture_validation_20260930.json": "40256baeab825b2e2414145a79c0b3bdb3e6333808876ae5106b050e8778a82e",
+    "scripts/inventory_alignment_reuse_candidates.py": "952f013a84e191465f5456c5a7c6aff2ad0a070605f8ae865152af3267066c34",
+    "scripts/readback_alignment_reuse_candidates.py": "5ea4ade4c790a8be81b48d82add048ab890ab9f767788b9df8bb4bd8c81b9df2",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/expanded_background_matching_support_pipeline_completed_20260930.json": "4c425d65c64eb05d78510762e26e329bc16fe5983350f3241c73d00b72282361",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "metadata/duplication_alignment_reuse_screen_completed_20260928.json": "3069f9c29bb99617780c4fe8a08248074249f9147478cb78ac5b44b6683b631d",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/model_pairs.tsv": "f5b1e6122d55e95f62a343b22a05cee11e4be1613df528dede5a2b5bff0a707f",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/receipt.json": "82fee97edfd42eec2474f917a35cb7952b9e7a3d2d617fa45f57e685300fba89",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/models.jsonl": "4f59e546e6010015ce5d18da7ca7823c79cc96a8d3a45ec46fdbac5514bd415e",
+    "results/structural_comparisons/background-measurement-inventory-20260927-v1/model_pairs.tsv": "3d32e77d180730ee660631507a9fab8a08fbccb92e5904685b6c3cf360053347",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/receipt.json": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/models.jsonl": "261bacc87d2b055507f2391f16e0644685cfbeeb6e12f6bae0d5cd9d8b7a27f3",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/model_pairs.tsv": "88cd2e23f77b4e508ed0537bca1f11141ac94a315260717e60ca945d73801d9c",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/models.jsonl": "b21fbdae5357e5f0b8ae2184f90cfde6fac9a7fa6df7f65d0c834d475e3846dd",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/model_pairs.tsv": "0e5d375984503355dcb9e339bf9c86545be366b9e2879ed4d288d1927b15936f",
+    "metadata/full_pair_reuse_resources_20260930_v2.json": "5638a5a73a410dd2302b78d13cfa5443b7db067cbe1d2aef970d6587b3ba8b8e",
+    "metadata/full_pair_reuse_plan_20260930.json": "c78edda73d66dd0bf551f7399ffd67d02dd32d74bdf8d3cc411b0bf77ea44946",
+    "metadata/full_pair_reuse_completed_readback_20260930.json": "560be52efbd63ed61f9f58d9f11b56bf7b7a4bfb79c5d47a3b6edfa3e84587f2",
+    "metadata/expanded_duplication_geometry_completed_20260929.json": "f5c5424e6766647ff11b76312a0b9183b83597d55c44e03a2be1813f3d669453",
+    "metadata/full_pair_reuse_plan_20260930_v2.json": "c6ade6f3556d0d26c057e5e5a492dfc484ce022b5fae57e9f2aa88fe9dd5da4d",
+    "metadata/full_pair_reuse_candidates_v2_launch_20260930.json": "c9cd7297f863458077a4815e1fee414e72414ef3301793c95c66ba0dbb43029c"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.05,
+    "planning_hours": [
+      0.05,
+      4
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "pair_source_rows": 679020,
+    "basis": "Complete union of all original inventories plus the already measured expanded primary queue; all current primary/reference/background pairs retained. No native computation or source-dependent subset; catalog signature matches still require exact input/result and numeric qualification."
+  },
+  "scope": "Full independent SQL union with already completed expanded primary measurements included; catalog-level screen, not authorization."
+}

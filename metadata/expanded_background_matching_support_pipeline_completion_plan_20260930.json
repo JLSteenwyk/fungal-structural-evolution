@@ -1,0 +1,582 @@
+{
+  "output": "metadata/expanded_background_matching_support_pipeline_completed_20260930.json",
+  "completed_status": "complete_verified_expanded_background_matching_support_pipeline",
+  "evidence": {
+    "terminal_inventory_producer": {
+      "path": "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_terminal_sister_inventory_pending_independent_readback",
+        "guides": [
+          {
+            "guide": "profile",
+            "trees": 70307,
+            "pairs": 1577204,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134430,
+              "cross_taxon_unreported_candidate:one_model": 425287,
+              "reported_duplication:no_models": 309496,
+              "cross_taxon_unreported_candidate:no_models": 524058,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+              "reported_duplication:one_model": 16443,
+              "cross_taxon_unreported_candidate:identical_model": 13037,
+              "reported_duplication:identical_model": 7294
+            }
+          },
+          {
+            "guide": "mafft",
+            "trees": 70412,
+            "pairs": 1577169,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134391,
+              "cross_taxon_unreported_candidate:one_model": 425367,
+              "reported_duplication:no_models": 309579,
+              "cross_taxon_unreported_candidate:no_models": 523909,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+              "reported_duplication:one_model": 16426,
+              "cross_taxon_unreported_candidate:identical_model": 13104,
+              "reported_duplication:identical_model": 7294
+            }
+          }
+        ],
+        "frozen_model_links": 1955694
+      }
+    },
+    "terminal_inventory_reader": {
+      "path": "metadata/terminal_sister_background_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_terminal_sister_inventory_readback",
+        "guides": [
+          {
+            "guide": "profile",
+            "trees": 70307,
+            "pairs": 1577204,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134430,
+              "cross_taxon_unreported_candidate:one_model": 425287,
+              "reported_duplication:no_models": 309496,
+              "cross_taxon_unreported_candidate:no_models": 524058,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+              "reported_duplication:one_model": 16443,
+              "cross_taxon_unreported_candidate:identical_model": 13037,
+              "reported_duplication:identical_model": 7294
+            }
+          },
+          {
+            "guide": "mafft",
+            "trees": 70412,
+            "pairs": 1577169,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134391,
+              "cross_taxon_unreported_candidate:one_model": 425367,
+              "reported_duplication:no_models": 309579,
+              "cross_taxon_unreported_candidate:no_models": 523909,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+              "reported_duplication:one_model": 16426,
+              "cross_taxon_unreported_candidate:identical_model": 13104,
+              "reported_duplication:identical_model": 7294
+            }
+          }
+        ]
+      }
+    },
+    "guide_union_producer": {
+      "path": "results/orthology/terminal-sister-guide-comparison-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_terminal_sister_guide_comparison_pending_readback",
+        "union_pairs": 1582382,
+        "modeled_candidate_union": 160415,
+        "presence": {
+          "both": 1571991,
+          "profile_only": 5213,
+          "mafft_only": 5178
+        },
+        "modeled_candidate_counts": {
+          "both": 159984,
+          "both_candidate": 159984,
+          "both_candidate_parents_unreported": 147081,
+          "profile_only": 212,
+          "mafft_only": 219
+        }
+      }
+    },
+    "guide_union_reader": {
+      "path": "metadata/terminal_sister_guide_comparison_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_terminal_sister_guide_comparison_readback",
+        "union_pairs": 1582382,
+        "modeled_candidate_union": 160415,
+        "presence": {
+          "both": 1571991,
+          "profile_only": 5213,
+          "mafft_only": 5178
+        },
+        "modeled_candidate_counts": {
+          "both": 159984,
+          "both_candidate": 159984,
+          "both_candidate_parents_unreported": 147081,
+          "profile_only": 212,
+          "mafft_only": 219
+        },
+        "source_rows_checked": {
+          "profile": 1577204,
+          "mafft": 1577169
+        }
+      }
+    },
+    "native_membership_producer": {
+      "path": "results/orthology/terminal-background-orthology-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_background_native_ortholog_membership_pending_readback",
+        "candidate_rows": 160415,
+        "guides": {
+          "profile": {
+            "stream_pairs": 561639942,
+            "queries": 160415,
+            "present": 159178,
+            "absent": 1237
+          },
+          "mafft": {
+            "stream_pairs": 561517685,
+            "queries": 160415,
+            "present": 159202,
+            "absent": 1213
+          }
+        }
+      }
+    },
+    "native_membership_reader": {
+      "path": "metadata/terminal_background_orthology_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_background_orthology_membership_readback",
+        "candidate_rows": 160415,
+        "guides": {
+          "profile": {
+            "stream_pairs": 561639942,
+            "queries": 160415,
+            "present": 159178,
+            "absent": 1237
+          },
+          "mafft": {
+            "stream_pairs": 561517685,
+            "queries": 160415,
+            "present": 159202,
+            "absent": 1213
+          }
+        }
+      }
+    },
+    "model_inventory_producer": {
+      "path": "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_background_measurement_inventory_pending_readback",
+        "candidates": 160415,
+        "counts": {
+          "identical_model_no_alignment": 13112,
+          "candidate_and_native_ortholog_either": 159284,
+          "candidate_and_native_ortholog_both": 158753,
+          "both_guides_and_parents_unreported": 145910,
+          "new_model_pair": 146161,
+          "neither_guide_eligible": 1131,
+          "already_in_reference_queue": 11
+        },
+        "all_models": 307693,
+        "active_models": 305434,
+        "additional_models": 303802,
+        "distinct_eligible_model_pairs": 146172,
+        "new_model_pairs": 146161
+      }
+    },
+    "model_inventory_reader": {
+      "path": "metadata/background_measurement_inventory_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_background_measurement_inventory_readback",
+        "candidates": 160415,
+        "counts": {
+          "candidate_and_native_ortholog_either": 159284,
+          "candidate_and_native_ortholog_both": 158753,
+          "both_guides_and_parents_unreported": 145910,
+          "identical_model_no_alignment": 13112,
+          "new_model_pair": 146161,
+          "neither_guide_eligible": 1131,
+          "already_in_reference_queue": 11
+        },
+        "all_models": 307693,
+        "active_models": 305434,
+        "additional_models": 303802,
+        "distinct_eligible_model_pairs": 146172,
+        "new_model_pairs": 146161
+      }
+    },
+    "primary_annotations_producer": {
+      "path": "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_duplication_domain_control_inventory_pending_readback",
+        "models": {
+          "models": 276682,
+          "models_without_hits": 126713,
+          "policy_disagreement_models": 2353
+        },
+        "unique_model_pairs": 134812,
+        "pair_policy_rows": 539248
+      }
+    },
+    "primary_annotations_reader": {
+      "path": "metadata/expanded_duplication_domain_control_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_duplication_domain_control_readback",
+        "models": 276682,
+        "unique_model_pairs": 134812,
+        "pair_policy_rows": 539248
+      }
+    },
+    "background_annotations_producer": {
+      "path": "results/structural_comparisons/expanded-background-domain-controls-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_background_domain_control_inventory_pending_readback",
+        "models": {
+          "models": 307693,
+          "models_without_hits": 60391,
+          "policy_disagreement_models": 2784
+        },
+        "unique_model_pairs": 146172,
+        "pair_policy_rows": 584688
+      }
+    },
+    "background_annotations_reader": {
+      "path": "metadata/expanded_background_domain_control_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_background_domain_control_readback",
+        "models": 307693,
+        "unique_model_pairs": 146172,
+        "pair_policy_rows": 584688
+      }
+    },
+    "sequence_support_producer": {
+      "path": "results/orthology/expanded-background-matching-support-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_background_matching_support_pending_readback",
+        "rows": 850227,
+        "guides": [
+          {
+            "guide": "profile",
+            "targets": 141724,
+            "counts": {
+              "guide_native_ortholog:targets_within_factor_1_25": 69564,
+              "guide_native_ortholog:targets_focal_within_factor_1_25": 9675,
+              "guide_native_ortholog:targets_within_factor_1_5": 78301,
+              "guide_native_ortholog:targets_focal_within_factor_1_5": 13508,
+              "guide_native_ortholog:targets_within_factor_2_0": 85191,
+              "guide_native_ortholog:targets_focal_within_factor_2_0": 17740,
+              "guide_native_ortholog:targets": 141724,
+              "guide_native_ortholog:no_family_background": 36313,
+              "guide_native_ortholog:zero_target_distance": 7491,
+              "both_guides_native_ortholog:targets_within_factor_1_25": 69478,
+              "both_guides_native_ortholog:targets_focal_within_factor_1_25": 9613,
+              "both_guides_native_ortholog:targets_within_factor_1_5": 78193,
+              "both_guides_native_ortholog:targets_focal_within_factor_1_5": 13427,
+              "both_guides_native_ortholog:targets_within_factor_2_0": 85036,
+              "both_guides_native_ortholog:targets_focal_within_factor_2_0": 17608,
+              "both_guides_native_ortholog:targets": 141724,
+              "both_guides_native_ortholog:no_family_background": 36553,
+              "both_guides_native_ortholog:zero_target_distance": 7491,
+              "both_guides_unreported_parents:targets_within_factor_1_25": 64576,
+              "both_guides_unreported_parents:targets_focal_within_factor_1_25": 6995,
+              "both_guides_unreported_parents:targets_within_factor_1_5": 73253,
+              "both_guides_unreported_parents:targets_focal_within_factor_1_5": 10190,
+              "both_guides_unreported_parents:targets_within_factor_2_0": 80128,
+              "both_guides_unreported_parents:targets_focal_within_factor_2_0": 13650,
+              "both_guides_unreported_parents:targets": 141724,
+              "both_guides_unreported_parents:no_family_background": 40847,
+              "both_guides_unreported_parents:zero_target_distance": 7491
+            },
+            "background_model_classes": {
+              "guide_native_ortholog:identical_model": 13026,
+              "both_guides_native_ortholog:identical_model": 13016,
+              "both_guides_unreported_parents:identical_model": 11662,
+              "guide_native_ortholog:two_distinct_models": 145966,
+              "both_guides_native_ortholog:two_distinct_models": 145737,
+              "both_guides_unreported_parents:two_distinct_models": 134248
+            }
+          },
+          {
+            "guide": "mafft",
+            "targets": 141685,
+            "counts": {
+              "guide_native_ortholog:targets_within_factor_1_25": 69552,
+              "guide_native_ortholog:targets_focal_within_factor_1_25": 9663,
+              "guide_native_ortholog:targets_within_factor_1_5": 78298,
+              "guide_native_ortholog:targets_focal_within_factor_1_5": 13504,
+              "guide_native_ortholog:targets_within_factor_2_0": 85144,
+              "guide_native_ortholog:targets_focal_within_factor_2_0": 17699,
+              "guide_native_ortholog:targets": 141685,
+              "guide_native_ortholog:no_family_background": 36294,
+              "guide_native_ortholog:zero_target_distance": 7492,
+              "both_guides_native_ortholog:targets_within_factor_1_25": 69478,
+              "both_guides_native_ortholog:targets_focal_within_factor_1_25": 9616,
+              "both_guides_native_ortholog:targets_within_factor_1_5": 78187,
+              "both_guides_native_ortholog:targets_focal_within_factor_1_5": 13425,
+              "both_guides_native_ortholog:targets_within_factor_2_0": 85020,
+              "both_guides_native_ortholog:targets_focal_within_factor_2_0": 17605,
+              "both_guides_native_ortholog:targets": 141685,
+              "both_guides_native_ortholog:no_family_background": 36530,
+              "both_guides_native_ortholog:zero_target_distance": 7492,
+              "both_guides_unreported_parents:targets_within_factor_1_25": 64573,
+              "both_guides_unreported_parents:targets_focal_within_factor_1_25": 6993,
+              "both_guides_unreported_parents:targets_within_factor_1_5": 73244,
+              "both_guides_unreported_parents:targets_focal_within_factor_1_5": 10185,
+              "both_guides_unreported_parents:targets_within_factor_2_0": 80111,
+              "both_guides_unreported_parents:targets_focal_within_factor_2_0": 13641,
+              "both_guides_unreported_parents:targets": 141685,
+              "both_guides_unreported_parents:no_family_background": 40833,
+              "both_guides_unreported_parents:zero_target_distance": 7492
+            },
+            "background_model_classes": {
+              "guide_native_ortholog:identical_model": 13102,
+              "both_guides_native_ortholog:identical_model": 13016,
+              "both_guides_unreported_parents:identical_model": 11662,
+              "guide_native_ortholog:two_distinct_models": 145943,
+              "both_guides_native_ortholog:two_distinct_models": 145737,
+              "both_guides_unreported_parents:two_distinct_models": 134248
+            }
+          }
+        ]
+      }
+    },
+    "sequence_support_reader": {
+      "path": "metadata/expanded_background_matching_support_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_background_matching_support_readback",
+        "target_records": 283409,
+        "support_rows": 850227
+      }
+    },
+    "architecture_support_producer": {
+      "path": "results/orthology/expanded-architecture-matched-background-support-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_architecture_matched_support_pending_readback",
+        "targets": 283409,
+        "rows": 3400908
+      }
+    },
+    "architecture_support_reader": {
+      "path": "metadata/expanded_architecture_matching_support_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_architecture_matched_support_readback",
+        "targets": 283409,
+        "rows": 3400908
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "terminal_inventory_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json"
+    },
+    {
+      "from": "guide_union_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/terminal-sister-guide-comparison-20260930-v1/receipt.json"
+    },
+    {
+      "from": "native_membership_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/terminal-background-orthology-20260930-v1/receipt.json"
+    },
+    {
+      "from": "model_inventory_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json"
+    },
+    {
+      "from": "primary_annotations_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/receipt.json"
+    },
+    {
+      "from": "background_annotations_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/structural_comparisons/expanded-background-domain-controls-20260930-v1/receipt.json"
+    },
+    {
+      "from": "sequence_support_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/expanded-background-matching-support-20260930-v1/receipt.json"
+    },
+    {
+      "from": "architecture_support_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/expanded-architecture-matched-background-support-20260930-v1/receipt.json"
+    }
+  ],
+  "launches": [
+    "metadata/terminal_sister_background_launch_20260930.json",
+    "metadata/terminal_sister_background_readback_launch_20260930.json",
+    "metadata/terminal_sister_guide_comparison_launch_20260930.json",
+    "metadata/terminal_sister_guide_readback_launch_20260930.json",
+    "metadata/terminal_background_orthology_launch_20260930.json",
+    "metadata/terminal_background_orthology_readback_launch_20260930.json",
+    "metadata/background_measurement_inventory_launch_20260930.json",
+    "metadata/background_measurement_readback_launch_20260930.json",
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json",
+    "metadata/expanded_duplication_domain_control_readback_launch_20260930.json",
+    "metadata/expanded_background_domain_controls_launch_20260930.json",
+    "metadata/expanded_background_domain_control_readback_launch_20260930.json",
+    "metadata/expanded_background_matching_support_launch_20260930.json",
+    "metadata/expanded_background_matching_support_readback_launch_20260930.json",
+    "metadata/expanded_architecture_matching_support_launch_20260930.json",
+    "metadata/expanded_architecture_matching_support_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json": "785345c4850f2badb2056bedaa6ae2169784fef1429964de68476a990d86eef5",
+    "metadata/terminal_sister_background_completed_readback_20260930.json": "9fb3e3ca3bcf46dbef1cb8a31d6445afd712a3f2c161b7d0cffa7479261df7a8",
+    "results/orthology/terminal-sister-guide-comparison-20260930-v1/receipt.json": "b849ea4a4eea27a6c60fb346cc28f3fecf8c7d82a17803e7eb150bc4097ea31a",
+    "metadata/terminal_sister_guide_comparison_completed_readback_20260930.json": "512f985f41ce7d741e9f7ebdf3b309dc7fce2fb2d173f00c56a3ef3f662a59b2",
+    "results/orthology/terminal-background-orthology-20260930-v1/receipt.json": "c12c0c796154453450337b99ad26b8bbb428201334e37185ca3fc52be6e0743b",
+    "metadata/terminal_background_orthology_completed_readback_20260930.json": "34050737e4a17bb4b68741a420002c60c108cbc2def38940012ea752f2a3d002",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+    "metadata/background_measurement_inventory_completed_readback_20260930.json": "3f0ecbb92fe952a2f715b03fecd9296b813a42f340dc14b496facc48b27700ac",
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/receipt.json": "bdc0393b5b0a9d6886f86669f2c629c10858a80e3283db607859bdd23453bcd2",
+    "metadata/expanded_duplication_domain_control_completed_readback_20260930.json": "d215bfece982c16a7306e01dc548327b5c558c0a0a0b4980c4b6255532122565",
+    "results/structural_comparisons/expanded-background-domain-controls-20260930-v1/receipt.json": "45d0830aa28029dbfede716f934cf0bb8a36580591c6b010f2be3d6ac05fba05",
+    "metadata/expanded_background_domain_control_completed_readback_20260930.json": "bc991d98d6086c168dfc87032688ad148a23cf68201e8249597f60b57fd57f07",
+    "results/orthology/expanded-background-matching-support-20260930-v1/receipt.json": "892f71f54087b244c659d5c677be08f13a6c12b09657688c3ae0390d18e9471b",
+    "metadata/expanded_background_matching_support_completed_readback_20260930.json": "efd348525b07067df09130475e5f40d8f7b78ef1a4aed819826d375e735d50db",
+    "results/orthology/expanded-architecture-matched-background-support-20260930-v1/receipt.json": "10c5995cd97a4cb92e0dc69db245589826753fb046c74f0337469334c60e1f74",
+    "metadata/expanded_architecture_matching_support_completed_readback_20260930.json": "61569a0b711c8dc6d2bb93edf51660a47cf25aff1d713b262d131122eeaa4f80",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "scripts/inventory_terminal_sister_backgrounds.py": "0a3fa3e3e98fbb4f65387a1e8030fe12f15b32bb1b90a3291da1eb447ade6e88",
+    "scripts/check_terminal_sister_background_cases.py": "890fda7ae1198c3fa0b38d72316d2a2e741db5356a6a64d19799dedcc540d6b3",
+    "scripts/inventory_duplication_sister_references.py": "d95f31c9916500d92577dcbe359e3888cec40c946688c88e84e3e9a6e53b668d",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+    "metadata/whole_proteome_family_coverage_completed_readback_20260928.json": "81a4b22bceaee22025bb5fcada588aee8ac46223d764a3763370c41f682a5174",
+    "metadata/expanded_background_refresh_resources_20260930.json": "1ed29bfad79860d4d8914515ea361eee9b67bf6aefd7ba562b83ce86fa84403b",
+    "metadata/terminal_sister_background_plan_20260930.json": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "scripts/readback_terminal_sister_backgrounds.py": "dcfcd18d2fd9f96c0fe84f367ac57f5692a631512da3dcbfca909725a0824dcb",
+    "scripts/check_terminal_sister_readback_cases.py": "251c5ce9e402783fe103a36d531772fcaf24e3ab0bc27949c428509fbad12e24",
+    "metadata/terminal_sister_background_launch_20260930.json": "0c693146c6b36f87e74f86624edcf94897fb001737cc159ae9f16d48b1eb3cf4",
+    "metadata/terminal_sister_background_readback_plan_20260930.json": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5",
+    "scripts/compare_terminal_sister_guides.py": "167bd199b66699b27cd78d445a05e44f5cc41a92829a1dade82906423452d119",
+    "scripts/check_terminal_sister_guide_cases.py": "328e17ba580d9e4c551fc19a1b0c1a3ee4d6ddbd3eeb9efde3c539b94a1cade0",
+    "metadata/terminal_sister_background_readback_launch_20260930.json": "7732bbe149c4e57765ce74a8d2493c1a44710f50adf080c9cbcb8676a5617893",
+    "metadata/terminal_sister_guide_comparison_plan_20260930.json": "21f9578d33ceef857fcec0c0a214523bafcf589678c2bb94fcdc18f83dcdcf1d",
+    "scripts/readback_terminal_sister_guides.py": "6edce69e750b9b89be8b2ac365ff5435e1a459944ac95040b655402c2669fb1d",
+    "scripts/check_terminal_guide_readback_cases.py": "6421919000e98628f986c94d7a2cf0ae7e7c7507a1cf72611e563a44f2571eba",
+    "metadata/terminal_sister_guide_comparison_launch_20260930.json": "cc5855fc2e767526212fc6230286074bb5c71fd5c436d8113fcae9f5f3615a08",
+    "metadata/terminal_sister_guide_readback_plan_20260930.json": "fdc10ac7ba6acf973366e1e9fc16dc345c92c5a8135dc1bc1d353024c75629f5",
+    "scripts/query_terminal_background_orthology.py": "627e0389c4377c9620cdee5322ddf3847c3e3190271705bd92c3dd33a0f39c3a",
+    "scripts/query_ortholog_pair_membership.cpp": "e43ba20be993cb9f42b2a14dea6078b31237c4aaeeae06f61117c32658a8db82",
+    "scripts/check_ortholog_membership_cases.py": "769c3bffb0d3c95f8fdf8bcab3964ff9cde6c72f4c6d10ec23584abdf15be841",
+    "/usr/bin/g++": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+    "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json": "1676148b2998d42d65c024091c0d7f391c88f7d1490416b9a06319d460944ecf",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json": "dc994c82a4f889f1c1b54bb813d4a12493369251694c85456b679f28805d196b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "metadata/terminal_sister_guide_readback_launch_20260930.json": "5168c7a362e5a048a695126eaea6e3df4a53ac003b35ebd3b1e419a69f122b15",
+    "metadata/terminal_background_orthology_plan_20260930.json": "3dadc5141b2f40e365b2d68af80dde6957dd5c38aacf37b536e509db72b80a88",
+    "scripts/readback_background_orthology.py": "b5f34c378e43f3eda98a8e6a28f5f3e6e18edcdedd4d03948fa76596b2ace1b0",
+    "scripts/check_background_membership_readback_cases.py": "d2b5811fcf8e21ac0d76815bffd276ee464b90fa0e89a0e51a868384d0c8a1e8",
+    "metadata/terminal_background_orthology_launch_20260930.json": "d0c8fa2d23c2182d9bac4e1635a092c60e2a1d423d9164cba980fdbb1176158a",
+    "metadata/terminal_background_orthology_readback_plan_20260930.json": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29",
+    "scripts/prepare_background_measurements.py": "83191c7b8d9577f56443f52bfca18733f47760b241c3388174062e6bce1c11fa",
+    "scripts/check_background_measurement_cases.py": "9626b80420354d572417ba8e5ac74fb1e0b6093b2b58ac5085d6cb3ad58c41e9",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "metadata/terminal_background_orthology_readback_launch_20260930.json": "868da1ed0e31b8190c6ab7e9d3e890c6179258cc4b3c2c3e959a75ae9a4780fa",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "scripts/readback_background_measurements.py": "eb077a2d536d5ddbe34d6f88d00c4a84eca106336a7c377908b3fc46d3154d6c",
+    "metadata/background_measurement_inventory_launch_20260930.json": "6b20efedecc0137d9557e892997f748a702f6f3e5b7142485b25c7596ed5d388",
+    "metadata/background_measurement_readback_plan_20260930.json": "07c1d0ee7f0cab5ac00b6af7d5932efbb9de4add6a69a7353b8f85792ec33e51",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/receipt.json": "a688f65d59a7c08265831e7446ed652d7bcc9d2b0d691c994757d70158652807",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/structure_domains.sqlite": "3e4be904bc2a0eb358f2d6d3b1744ff0f6ebfa95decc1e241647300adb8e3a2f",
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260928-v1/receipt.json": "6e90bc2ffeadb334063467afa1ce217bee308e097e5d4a72b1064ab1ddee3e26",
+    "metadata/whole_proteome_structure_domain_registry_completed_20260928.json": "e17fe9d026c9a5374d196e4aa531cb897ced0b8902058ba174beb15015a8cbb4",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/readback_duplication_domain_controls.py": "317afc8f96f03cd9960a4cd106239eae624418144457a64cd9f99651f46ad250",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "scripts/inventory_duplication_domain_controls_v2.py": "22cd1d5a3577ae1d1af683c6bc0f937de44a830a8cba11ad6ddd4208c67901fb",
+    "scripts/readback_duplication_domain_controls_v2.py": "43f3c16361b22b33aa5213c0d0068e2cc9bd5cbe2a2eac07a60a863f01318130",
+    "metadata/expanded_duplication_domain_control_plan_20260930.json": "5258e66e58855a50d5ecbd9585466a1408dfb6f56d82799f5553ed8903b21cfe",
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json": "53466da3342a129f4a03a6cdf7803318d937e88cf8ba362f2d80978253e5ef7b",
+    "metadata/expanded_duplication_domain_control_readback_plan_20260930.json": "7d1a77f313b7eefedce7033ff6c5461ba8dbc2488c1175bffae3349e6059031f",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/expanded_duplication_domain_control_readback_wait_plan_20260930.json": "60f6716e0fea159368c942b58005ba5322b6d18a974409c3b071d320f9d3f3b9",
+    "scripts/inventory_background_domain_controls.py": "687bdffdac6352ff352ee63bec1e4b6a031d561360bc9ab758a9c6b895cb395c",
+    "scripts/readback_background_domain_controls.py": "259acde5c6cb486aff68ed7351792f1bac3300cb41a6e0e34628c6bada1d4bb9",
+    "metadata/expanded_background_domain_control_plan_20260930.json": "8dbd70901fcf687db9d7452e803e02359d0e2447d00f81f322ef52a90356f727",
+    "metadata/background_measurement_readback_launch_20260930.json": "32b3b63d5151e6e60a2755f3fb9c321324650382b1e4176c899df0ccc349e85b",
+    "metadata/expanded_background_domain_control_wait_plan_20260930.json": "d10dfc1b765214bbb26e2cc26d3e8ad8163e99330ae05e3d96c91732255e4b42",
+    "metadata/expanded_background_domain_controls_launch_20260930.json": "1f1aae6f3867312b3c4317b5c4e46e79ad5cb448f624b7e46a7e6f9785e0b801",
+    "metadata/expanded_background_domain_control_readback_plan_20260930.json": "d7616f9e2fad9081448d2d47dc764ea31865300e0485e82f1ed671205d36e6fe",
+    "metadata/expanded_background_domain_control_readback_wait_plan_20260930.json": "49b70f0b4cf45eefe3dcec122af08807f6a08dcd9c5607b80225e27f91141017",
+    "scripts/assess_background_matching_support.py": "90c8cbfc559f862cd5c14365ec250a700966850cc0d403c532d9821e0fe28c15",
+    "scripts/check_background_support_cases.py": "8645a022b0d880fb66b57adf78c70a141aa4396ccb4d94d84a1ac6bc99a1ea18",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+    "metadata/duplication_candidate_tree_review_completed_20260928.json": "14accbb145ef085a00ac7cea889798be3c1f62e6342a6b763008f1b237a831b7",
+    "metadata/expanded_background_matching_support_plan_20260930.json": "36d70da4dc5dc90092665b48d6e6c7f0e359424def674aac8f7902b36d39fc3d",
+    "metadata/expanded_background_matching_support_launch_20260930.json": "135bb756de429abd016e9c5d8e1e2b2e894e91fc37b23d7cdb180cc14acf3e85",
+    "scripts/readback_background_matching_support.py": "cdcd07a0870c15bf62dea32ca0a6282d468504422078aae5acbc764e721dddbb",
+    "metadata/expanded_background_matching_support_readback_wait_plan_20260930.json": "893f4f836013aa9837ba106afdd64176d22a9727f7746925808e13a1f4b349cf",
+    "scripts/assess_architecture_matched_support_v2.py": "61c7d9f8b98b0e351082c97dff7e948c8903c03794e389b188959d32362f192e",
+    "scripts/readback_architecture_support_v2.py": "b1953f8ae90d92f733a9fcc70c84e2ef559b330624e59c05f08528427de7e66c",
+    "metadata/expanded_architecture_source_binding_validation_20260930.json": "6f2a983e7667e7837a9e2c2d8c55f01f394ae5f7bdbe12b020a8c7d3dff11ee1",
+    "metadata/expanded_architecture_matching_support_plan_20260930.json": "5e3f62eda893cec60d20d884ada2ed24327dc54dc0a8707c798690a4db859c74",
+    "metadata/expanded_duplication_domain_control_readback_launch_20260930.json": "c2590ae2e087bfc8c4dabe7fceb055920d25bd75e05c66e857408e62cc5b9cf4",
+    "metadata/expanded_background_domain_control_readback_launch_20260930.json": "d76575bf4b61ab2455e86c9a592fb8fda43bc478d27e39e945b44c3a227787b2",
+    "metadata/expanded_background_matching_support_readback_launch_20260930.json": "659fe6ce56a90af37212c4ba6f1a61651ae22d51b8d5e44d6348358e6da044c4",
+    "metadata/expanded_architecture_matching_support_wait_plan_20260930.json": "f75d0750d4663531ea3d2d238fc7da7e34858ddd9bc448ef8b2ef8e9fce3e9db",
+    "metadata/expanded_architecture_matching_support_launch_20260930.json": "41f56b67b5a0b770d7f1e61a2219d3a5dd50ccd2dbdc2bc9afaa2ff33d90bbd7",
+    "metadata/expanded_architecture_matching_support_readback_plan_20260930.json": "5e4c935ff2654b34253c292d535278c584cbbdce682ff5b0ed5d56019f65a159",
+    "metadata/expanded_architecture_matching_support_readback_wait_plan_20260930.json": "e7c1701a9d36af2477691ca100a4b98754ab61e714c995c0ab8d88abaed9ceb5",
+    "metadata/expanded_architecture_matching_support_readback_launch_20260930.json": "514a1a52a5e3079ac5cf703f7a6a472c6ddb87fc02db2954cb8a5dfd918e8bab",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "summary": {
+    "terminal_trees": 140719,
+    "terminal_pair_rows": 3154373,
+    "union_pairs": 1582382,
+    "modeled_background_candidates": 160415,
+    "background_models": 307693,
+    "distinct_eligible_background_model_pairs": 146172,
+    "duplicate_target_links": 283409,
+    "sequence_support_rows": 850227,
+    "architecture_support_rows": 3400908
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.05,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Complete expanded full-tree inventory, guide union, native orthology, model/annotation inventories and all sequence/architecture matching-support grids independently reconstructed. Every complete artifact/source hash and all16 exact captured-process completion journals checked. Computational support only: full fixed matching and all model/measurement quality and calibrated biological inference remain outstanding."
+}
