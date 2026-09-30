@@ -1,0 +1,108 @@
+{
+  "output": "metadata/expanded_duplication_reference_inputs_completed_20260930.json",
+  "completed_status": "complete_verified_expanded_duplication_reference_inputs",
+  "evidence": {
+    "inputs_producer": {
+      "path": "results/structural_comparisons/expanded-duplication-reference-alignment-inputs-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_additional_reference_alignment_input_materialization",
+        "models": 24804,
+        "input_dispositions": 49608,
+        "counts": {
+          "full:ready": 24804,
+          "plddt70:ready": 23781,
+          "plddt70:too_few_retained_residues": 1023
+        },
+        "pdb_bytes": 1348146870
+      }
+    },
+    "inputs_reader": {
+      "path": "metadata/expanded_duplication_reference_alignment_input_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_reference_alignment_input_readback",
+        "models": 24804,
+        "input_dispositions": 49608,
+        "counts": {
+          "full:ready": 24804,
+          "plddt70:ready": 23781,
+          "plddt70:too_few_retained_residues": 1023
+        },
+        "pdb_bytes": 1348146870
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "inputs_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/structural_comparisons/expanded-duplication-reference-alignment-inputs-20260930-v1/receipt.json"
+    }
+  ],
+  "launches": [
+    "metadata/expanded_duplication_reference_alignment_inputs_launch_20260930.json",
+    "metadata/expanded_duplication_reference_alignment_input_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "results/structural_comparisons/expanded-duplication-reference-alignment-inputs-20260930-v1/receipt.json": "6a8ac27ca428e4b8d2cd5c257613a38df040fea3fae76a18572d9565fe7c407b",
+    "metadata/expanded_duplication_reference_alignment_input_completed_readback_20260930.json": "574c1d4f6acb4810609e23ffbb14df69070301befd1e1bc648b3f38b0350f0c4",
+    "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json": "e96f8417e9bbd465105cd81ef41afc9ec1b20f0894cf8eebb4c457b83d0d9101",
+    "metadata/expanded_duplication_reference_coordinate_readback_plan_20260930.json": "7d4b72f14460b25dcc4db7939d0d9a275b4cf690165d0d0533da1345c45343a8",
+    "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json": "8cc1b33b57feb0900e6aba12187e9480c07614b2220ffc876e5dca0b02aec307",
+    "metadata/expanded_duplication_reference_alignment_input_resources_20260930.json": "9c6045e17a906538643432041b311f54cb0bcbaf5688d61452361c2cb2f0195c",
+    "metadata/expanded_additional_alignment_input_fixture_validation_20260930.json": "da785b9dd0f2395c15b05526dc861a455fb1476fe2fd4b69b5fdb9bb12ecfe90",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/receipt.json": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/additional_models.jsonl": "9ad31e01f0ade64d4cad7c4f3b3b61defdcfaa308022f4cc861736209e47cc18",
+    "scripts/materialize_background_inputs.py": "c1a3c72cd4532239b1cb487f8453be2f94fa46b28e9a07f5046e88afb9d63db9",
+    "scripts/materialize_duplication_reference_inputs_v2.py": "8ef48a52eb854b14a92e0b5f63891aaf2cffad685e56ad6df67fe0f45d5c7f5d",
+    "scripts/validate_duplication_reference_coordinates_v2.py": "6aa464f46d032865fa92839e08384ae76ad900d3be8885eb803db5731102a4f8",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/readback_additional_alignment_inputs.py": "5d94bedbd048def2b68309001bb7ae5da23c88dafed90a1ed238a48ad2dfd7ad",
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/expanded_duplication_reference_coordinate_resources_20260930.json": "7896e491bd40f3344124757ad2db9daffcd57fcfc6a2521f0479844d169b96fe",
+    "metadata/expanded_reference_coordinate_partition_readback_20260930.json": "69ed03b50b9a72eda3cc9284219be008ddf55ddb960ef300ad3ddec5d32eecc1",
+    "metadata/expanded_duplication_reference_comparison_completed_readback_20260930.json": "a34ca5ef01e3de7df71a682f32914eaf1fe68a397c6536629f17eaea2dbeef60",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/model_pairs.tsv": "88cd2e23f77b4e508ed0537bca1f11141ac94a315260717e60ca945d73801d9c",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/models.jsonl": "261bacc87d2b055507f2391f16e0644685cfbeeb6e12f6bae0d5cd9d8b7a27f3",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/event_reference_comparisons.tsv": "84922e0ba6c4fb4844d0361e065e93bbb9d5dfe49be851199b8029213bd9f0af",
+    "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json": "b3b4e91824790022ad7bbe48ce4029a2b33fa8cdee45661f91f36828b50465c9",
+    "metadata/expanded_duplication_reference_alignment_input_plan_20260930.json": "3660d9cd2bc3c75600998abe0e4ebde78d0ad7d68c09480fb8d3a27ed28845b8",
+    "metadata/expanded_duplication_reference_alignment_input_wait_plan_20260930.json": "87d9a8f1a48aa87c17432c74b6588fb856efdb0aa576b4adb48dd83a6b696b75",
+    "metadata/expanded_duplication_reference_alignment_inputs_launch_20260930.json": "47b68f189da69f1497247b1ec95d996530a4f1f79c192d6226883eedcac55957",
+    "metadata/expanded_duplication_reference_alignment_input_readback_plan_20260930.json": "6e10c9236fd3d06385f344009739e9638a29c11d4427634b47095aefcaf26ae9",
+    "metadata/expanded_duplication_reference_alignment_input_readback_wait_plan_20260930.json": "76c7d7667ec2d69303d365beb309b351255fa5095a42f31ddb6f07821fd07da9",
+    "metadata/expanded_duplication_reference_alignment_input_readback_launch_20260930.json": "0f606acf29df4778c85e71e9eee1d54c9a13762af75c7720e93307cf192a2285",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "summary": {
+    "models": 24804,
+    "input_dispositions": 49608,
+    "full_ready": 24804,
+    "plddt70_ready": 23781,
+    "plddt70_short": 1023,
+    "pdb_bytes": 1348146870
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.05,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Full additional reference model partition and both masks, every PDB residue/position/sequence/coordinate/confidence and all hash/source/shard/proof lineage independently checked. Full counts and exact captured-process completion journals verified. Short confidence masks retained without substitutions. Inputs only: all full reference pair results, native reuse checks, geometry/coverage/PAE/domain/orthology and biological asymmetry remain required."
+}

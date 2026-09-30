@@ -1,0 +1,19 @@
+{
+  "status": "passed_sequence_first_choice_known_and_handoff_fixtures",
+  "cases": [
+    "ten_known_nearest_modeled_vs_sequence_only_choice_cases",
+    "closer_unmodeled_gene_and_positive_distance_increment",
+    "tied_unmodeled_lexical_and_other_modeled_choice",
+    "numeric_model_versions6_and10",
+    "all_unmodeled_missing_parent_focal_and_multifurcating_contexts",
+    "large_outer_ancestor_path_isolation",
+    "complete_two_guide_handoff",
+    "four_rehashed_false_choice_distance_model_and_status_rejections"
+  ],
+  "source_hashes": {
+    "scripts/inventory_sequence_first_sister_references.py": "439c8b4034137267725d87d438396f7ee24c68518d39d5d2ae50752c17ede1ae",
+    "scripts/readback_sequence_first_sister_references.py": "f0c64bd121a1a9d7600b7cae9c80ea7b90ab3ebf869fff3f44f03761e6c86ef1",
+    "scripts/check_sequence_first_sister_references.py": "d458b0c443a755354836f3629dc39ac5bd9af2a8cc9c29de728f03ad1c8e941e"
+  },
+  "scope": "Isolated synthetic cases/handoff, not complete production source readback or biological reference validation."
+}

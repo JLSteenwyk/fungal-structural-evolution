@@ -599,3 +599,178 @@ versions and residue mappings. No supplemental production completion, native
 alignment or structural asymmetry result is claimed. Plans:
 `metadata/expanded_duplication_reference_alignment_input_plan_20260930.json`
 and `metadata/expanded_duplication_reference_alignment_input_readback_plan_20260930.json`.
+
+## Sequence-first reference choice completed September 30
+
+The complete sensitivity analysis selected nearest nonfocal sister genes from
+sequence-tree path distances **before** looking up structures. It retained
+all **283,409 modeled duplicate targets** across **50,063 native family trees**,
+every original available-reference field, all nearest ties within 1e-12, a
+fixed lexical representative, and missing model/version assignments. Choosing
+a modeled member of a tie does not silently replace an unmodeled lexical
+representative. Every parent-ineligible target stays explicit and is not
+promoted to an acceptable biological reference.
+
+Independent native leaf-interval subtraction and upward `math.fsum` paths
+checked every saved field and the full original-context/choice matrices.
+Maximum path disagreement is **3.55e-15** under each guide. The completion
+record binds **59 source/artifact hashes and two exact captured-process
+journals**:
+[full evidence](../metadata/expanded_sequence_first_references_completed_20260930.json).
+
+| Sequence-first disposition | Profile targets | MAFFT targets |
+|---|---:|---:|
+| Closest lexical gene has a model | 21,581 | 21,549 |
+| Closest ties have no models; available-reference design uses a farther gene | 7,560 | 7,566 |
+| Lexical gene unmodeled but another equally nearest tie has a model | 14 | 15 |
+| No modeled nonfocal sister reference | 40,700 | 40,695 |
+| Original parent context ineligible | 71,869 | 71,860 |
+| All modeled duplicate targets | 141,724 | 141,685 |
+
+Among the **29,155/29,130 provisionally available reference targets**, the
+farther-gene category is **25.93%/25.97%**. These are conditional record
+fractions, not independent event rates, uncertainty intervals or evidence of
+structural asymmetry. The two guide counts overlap. This result demonstrates
+that structure availability changes reference distance in this frozen design;
+it does not establish whether that changes a structural contrast. The full
+per-target distance increments and original/sequence-first model choices are
+retained, including ineligible contexts and unavailable genes.
+
+This sensitivity complements the existing available-reference ledger; it
+neither replaces it nor rematches fixed background controls. Extant nearest
+genes are not ancestors, and a parent not reported as duplication is not proof
+of speciation. Reference orthology and gene-tree/root/model uncertainty remain
+required. Coverage/confidence/PAE/domain controls, common-residue mapping, structural
+measurement reuse and
+calibrated effect tests are still unfinished. Missing sequence-first models
+remain missing until suitable source-qualified structures become available;
+no predictor is silently switched and no GPU inference has launched.
+
+Known-case and full-handoff fixtures cover nearer unmodeled genes, model
+versions 6/10, modeled/unmodeled ties, no modeled references, parent/focal/
+multifurcation exclusions and isolation from very large outer-ancestor branches.
+Four rehashed false choice/distance/model/status exports are rejected.
+Both production and independent reader used one CPU/16 GiB/no swap. Resource
+planning predates launch; 0.1–8-hour ranges were uncalibrated, not ETAs. Scripts,
+plans, input/output provenance and exact launches are versioned in
+`metadata/expanded_sequence_first_references_queued_20260930.json`.
+This gene-choice check is distinct from the older sequence-locked *residue*
+correspondence control. All eight scientific aims remain incomplete.
+
+## Expanded reference coordinates and written inputs independently verified
+
+Full native-CIF readback finished for all **24,804 additional reference models**,
+**9,982,283 residues** and **25 shards**, with no content rejections. It used
+9,597,401,251 raw coordinate bytes and preserved the exact model partition.
+The 77-source/artifact completion closure includes every coordinate shard and
+its full independent proof plus both exact captured-process journals:
+[coordinate evidence](../metadata/expanded_duplication_reference_coordinates_completed_20260930.json).
+
+Full supplemental PDB input preparation and independent checking also finished
+for **49,608 two-mask dispositions**, including **24,804 full-protein ready
+inputs**, **23,781 pLDDT70 ready inputs** and **1,023 confidence masks with fewer
+than three retained residues**. Short masks remain excluded inputs, not zero
+structural distances. Every original residue position, amino acid, model/
+version, source checksum, written coordinate/confidence rounding, PDB hash and
+complete source/shard/proof lineage was checked. Verified PDB bytes total
+**1,348,146,870**; completion evidence is
+`metadata/expanded_duplication_reference_inputs_completed_20260930.json`.
+
+These completed inputs advance the full 55,701 distinct-pair reference ledger;
+they do not establish complete pair measurements or authorize reuse of old
+results. The prior catalog-source screen still requires raw/materialized input,
+mask/position, executable/settings, input-order, checkpoint and numerical proof
+checks before reuse. Full numerical/coverage/confidence/PAE/orientation quality,
+common-residue geometry, reference orthology and biological asymmetry remain
+pending. Background input preparation still waits for its complete coordinate
+readback. GPU inference remains paused; all scientific aims remain incomplete.
+
+
+## Full sequence-first guide comparison completed September 30
+
+Independent dataframe outer merging checked every exported field, matrix and
+summary for the complete **142,107 duplicate gene-pair union**: **141,302 shared
+pairs**, **422 profile-only** and **383 MAFFT-only**. Original gene order is
+canonicalized only for identity; each guide's family, context, nearest ties,
+lexical gene, missing model/version and distance fields remain separate.
+All 283,409 native target rows and their completed sequence-tree proof remain
+bound. Full closure checks **76 source/artifact hashes and two exact process
+completion journals**:
+[completion evidence](../metadata/sequence_first_guide_comparison_completed_20260930.json).
+
+| Comparison within the full pair union | Pairs |
+|---|---:|
+| Eligible sequence-sister context under both guides | 69,683 |
+| Same nearest sequence-gene set and lexical gene | 69,535 |
+| Disjoint nearest sequence-gene sets | 148 |
+| Overlapping but unequal nearest sets | 0 |
+| Parent context ineligible in one or both guides | 71,619 |
+| One-guide candidates | 805 |
+| Both lexical references have frozen models, among eligible shared targets | 21,451 |
+| Same chosen model/version, among those modeled targets | 21,411 |
+
+Sequence eligibility includes eligible parents with no modeled sister, so this
+comparison is not restricted to the older available-reference subset. Two
+missing model assignments never count as agreement between predictions; model
+agreement is evaluated only when both choices have models. Different reference
+genes can share a model, and model agreement does not establish gene orthology.
+No missing lexical gene is silently replaced by an equally near modeled tie.
+The paired guide records overlap and do not represent independent events.
+
+Nine known cases and a complete synthetic two-guide handoff passed, including
+reversed duplicate labels, disjoint/overlapping ties, modeled and unmodeled
+choices, shared models from different genes, parent exclusions and one-guide
+candidates. Five rehashed false exports were rejected. Producer and independent
+reader each used one CPU/8 GiB/no swap; no native alignments or predictions.
+This checks guide-choice sensitivity, not accepted phylogeny, reference
+orthology, ancestral states or structural asymmetry. Sequence-first structural
+contrasts and missing-reference recovery remain outstanding.
+
+## Full new reference measurements launched September 30
+
+The audited inputs now feed native USalign measurements for all **24,947 current
+reference pairs without matching existing catalog sources**, at most **99,788
+mask/order dispositions**. Both input orders use the original full-protein and
+pLDDT70 masks, executable and options. Every successful native output and every
+short/error/timeout disposition is checkpointed; failed calls are not silently
+retried or replaced. This is the complete new-work partition of the full design,
+not a pilot or a selection based on structural responses.
+
+The full **55,701-pair work ledger** also retains **30,754 pairs with matching
+prior catalog sources** as pending actual input/result/numerical reuse checks.
+No old result is imported or numerical flag cleared by this partition. Catalog
+checksums alone do not prove compatible masks, residue positions, native input
+bytes/settings, checkpoints or numerical quality. The final result union must
+cover all 55,701 pairs and preserve all earlier exclusions. Seventeen new
+reference pairs also occur in the expanded background workload; future union
+assembly must check their exact inputs/results before sharing measurements.
+
+A full actual-data handoff preflight checked **602,972 two-mask input
+dispositions**, exact current model partition, written-input proofs and all
+reference/source partitions before launch. A complete synthetic native handoff
+and diagnostic passed both input orders, short masks and rehashed false
+checkpoint, incomplete-partition and wrong-source rejection. Existing scripts
+and datasets remain intact; versioned adapters handle the stronger native
+reference audit and the full source partition.
+
+Resources were estimated before launch: **eight single-thread native workers,
+32 GiB RAM, no swap, 24 GiB output allowance and a 100 GiB free-disk reserve**.
+A deterministic timing sample of the completed reference run has a mean native
+elapsed time of 0.474 seconds; a simple eight-worker throughput projection is
+1.64 hours. New endpoint lengths span 29–1,280 residues (median 319). The
+**2–48-hour planning range is not an ETA**: differing lengths, scheduling,
+batching, failures and tails limit extrapolation. The sample uses existing
+measurements for resource planning and does not run a new protein pilot.
+GPU predictions remain paused; no paid resources are used.
+
+Exact dependency wrappers also queue the full native-text/residue/least-squares
+RMSD diagnostic (retaining all discrepancies), coordinate-rank/rotation-curvature
+assessment and independent quaternion geometry reader. They use two CPU/32 GiB
+for the diagnostic and one CPU/16 GiB per geometry stage, no swap. These stages
+are queued, not complete. Plans, resources and exact process identities:
+`metadata/expanded_reference_alignment_pipeline_queued_20260930.json`.
+
+Full result reuse/union, input-order correspondence, original-length coverage,
+common-residue triads, sequence-locked residue controls, confidence/PAE/domain
+orientation checks, reference orthology and phylogenetic/calibrated asymmetry
+inference remain required. None of the eight scientific aims is complete.

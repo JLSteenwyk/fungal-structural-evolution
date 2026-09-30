@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_current_reference_measurement_handoff_preflight",
+  "plan_sha256": "0ff0685ac641586f25d8370a4f29939772947b370aa360cf676a1e0a7eec1c0f",
+  "input_dispositions": 602972,
+  "new_native_pairs": 24947,
+  "full_reference_pairs": 55701,
+  "pending_result_reuse_pairs": 30754,
+  "input_bundle_sha256": "c07c9c82696493f61e761f40e8f95423b7a1aaddba60f6035676b76bd52edb1d",
+  "upstream_bindings": {
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/receipt.json": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/inputs.jsonl": "df5c21b88a114f9f99bb2df7e758c03495fb38aa1b8e9cbbda48ca94b810e456",
+    "results/structural_comparisons/expanded-duplication-reference-alignment-inputs-20260930-v1/receipt.json": "6a8ac27ca428e4b8d2cd5c257613a38df040fea3fae76a18572d9565fe7c407b",
+    "results/structural_comparisons/expanded-duplication-reference-alignment-inputs-20260930-v1/inputs.jsonl": "5841bf978e40e2a98fea91c6109997e7d5089abbb80541edf7bc9eb205870d2c",
+    "metadata/duplication_alignment_inputs_completed_readback_20260929.json": "e7d5e449e5e75a0a674f9d08121831e3d0632fa8ab6e02c8878680b4fded2c72",
+    "metadata/expanded_duplication_reference_alignment_input_completed_readback_20260930.json": "574c1d4f6acb4810609e23ffbb14df69070301befd1e1bc648b3f38b0350f0c4",
+    "results/structural_comparisons/full-pair-reuse-candidates-20260930-v2/receipt.json": "7583524cab892d726daf8996aca420fc52db4117408f9e8120c04e34b4508e81",
+    "results/structural_comparisons/full-pair-reuse-candidates-20260930-v2/pair_reuse_candidates.tsv": "d483d877e4aeb07a8cc1018b462f1d785a61e1b453c1b0ac729c3dc4188af275",
+    "metadata/full_pair_reuse_completed_readback_20260930_v2.json": "8daca0a8a7efc135ecbc1c8b96cae657d837a6c90c84946dcad579ef0f87f5ed"
+  },
+  "elapsed_seconds": 72.984210997005,
+  "scope": "Complete actual input/readback/source partition preflight. Verifies current model partition, both masks and full reference pair universe; prior-source matches are pending exact result reuse, not authorized. Does not run native alignments or certify biological effects."
+}

@@ -1,0 +1,179 @@
+{
+  "status": "complete_verified_expanded_sequence_first_references",
+  "checked_utc": "2026-09-30T18:32:06.242315+00:00",
+  "summary": {
+    "target_links": 283409,
+    "native_family_trees": 50063,
+    "guides": [
+      {
+        "guide": "profile",
+        "candidates": 141724,
+        "families": 25039,
+        "counts": {
+          "sequence_first_lexical_reference_modeled": 21581,
+          "no_modeled_sister_reference": 40700,
+          "ineligible_parent_context": 71869,
+          "nearest_sequence_ties_unmodeled_farther_reference_used": 7560,
+          "lexical_reference_unmodeled_other_nearest_tie_modeled": 14
+        },
+        "source_context_counts": {
+          "provisional_reference_available": 29155,
+          "no_modeled_nonfocal_sister": 40700,
+          "parent_reported_duplication": 71765,
+          "parent_not_bifurcating": 104
+        },
+        "chosen_gene_agreement": {
+          "1": 22632,
+          "0": 119092
+        },
+        "source_context_by_choice_status": {
+          "provisional_reference_available|sequence_first_lexical_reference_modeled": 21581,
+          "no_modeled_nonfocal_sister|no_modeled_sister_reference": 40700,
+          "parent_reported_duplication|ineligible_parent_context": 71765,
+          "provisional_reference_available|nearest_sequence_ties_unmodeled_farther_reference_used": 7560,
+          "parent_not_bifurcating|ineligible_parent_context": 104,
+          "provisional_reference_available|lexical_reference_unmodeled_other_nearest_tie_modeled": 14
+        },
+        "maximum_path_difference": 3.552713678800501e-15
+      },
+      {
+        "guide": "mafft",
+        "candidates": 141685,
+        "families": 25024,
+        "counts": {
+          "sequence_first_lexical_reference_modeled": 21549,
+          "no_modeled_sister_reference": 40695,
+          "ineligible_parent_context": 71860,
+          "nearest_sequence_ties_unmodeled_farther_reference_used": 7566,
+          "lexical_reference_unmodeled_other_nearest_tie_modeled": 15
+        },
+        "source_context_counts": {
+          "provisional_reference_available": 29130,
+          "no_modeled_nonfocal_sister": 40695,
+          "parent_reported_duplication": 71757,
+          "parent_not_bifurcating": 103
+        },
+        "chosen_gene_agreement": {
+          "1": 22605,
+          "0": 119080
+        },
+        "source_context_by_choice_status": {
+          "provisional_reference_available|sequence_first_lexical_reference_modeled": 21549,
+          "no_modeled_nonfocal_sister|no_modeled_sister_reference": 40695,
+          "parent_reported_duplication|ineligible_parent_context": 71757,
+          "provisional_reference_available|nearest_sequence_ties_unmodeled_farther_reference_used": 7566,
+          "parent_not_bifurcating|ineligible_parent_context": 103,
+          "provisional_reference_available|lexical_reference_unmodeled_other_nearest_tie_modeled": 15
+        },
+        "maximum_path_difference": 3.552713678800501e-15
+      }
+    ],
+    "farther_modeled_reference_fraction_profile": 0.25930372148859543,
+    "farther_modeled_reference_fraction_mafft": 0.25973223480947477
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/expanded_sequence_first_references_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "39e3d1743d038b3f12daa2312bc33311ab9ac8333b4ca5603e6d51ca7e482314",
+      "captured_process_messages": 1,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790792569956273",
+          "CPU_USAGE_NSEC": "236274854000",
+          "MEMORY_PEAK": "2211840",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/expanded_sequence_first_reference_readback_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "2db6d6e915817f433b09828b9e358e0f7ef2d36fc6117ee625f7cd86c62ad489",
+      "captured_process_messages": 9,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790792885684044",
+          "CPU_USAGE_NSEC": "311722594000",
+          "MEMORY_PEAK": "1658880",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/expanded_sequence_first_references_completion_plan_20260930.json": "3c71fd1b9286bd3ba1372da93710bfdd83584e851821bbb8c7d633a782defc02",
+    "results/orthology/expanded-sequence-first-sister-references-20260930-v1/receipt.json": "55a84b6d87b115d4dd271c64b4294b8cde4ae51ea850f98ebff70f714e1f5d38",
+    "metadata/expanded_sequence_first_reference_completed_readback_20260930.json": "4ae92632674616f379e2ea31e211ca4523ea7ab9458edd3126741e7684c285ae",
+    "metadata/duplication_event_identity_audit_plan_v2.json": "16383f74199b5d549efc50caacd80f926275e4aa66b4623159216b87ba097a49",
+    "metadata/duplication_event_identity_completed_receipt_20260923.json": "4bc7d31566d5a55e515d03287d552b04883e1feaceee88feacec17dda3928b4d",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "scripts/inventory_duplication_structure_coverage.py": "9b867d6953acdcdb5217e75897216ce5c0601252776906820511de81954230bd",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_structure_coverage.py": "a1db95b0775d002765ee1ce381314a6eb4411320421109b8a70a7ca23034959d",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "scripts/validate_duplication_structure_candidates.py": "e0e2d37af7534ec5d675a3b6811b7f6b880b504f59a9d393b21029945294c2e4",
+    "scripts/check_duplication_candidate_tree_nodes.py": "3db84ba3b04fce03460d019af0fd55a677d2ceb1fd05979b53bcca76ed9e750e",
+    "metadata/duplication_structure_coverage_plan_20260928.json": "de20d35bd9c07d824aa8bfb7d8969ff87c0ec07fd46932e3d949aa0568a3cf0f",
+    "results/orthology/duplication-structure-coverage-20260928-v1/receipt.json": "af3077d7c13f7a04035878ad1caf8b5ae5a0d815e677a332d09be6896de08da6",
+    "results/orthology/duplication-expanded-candidate-export-readback-20260928-v1.json": "9d0f9e21ed429ca7ac6f5ce1a72e040dce5614bb30bce91fa44322af3f51cc22",
+    "scripts/check_expanded_duplication_candidate_export.py": "516f28d0e015c9d5bb7f8293cbe48257165d48794236bcc8546dc44184a2b2ab",
+    "scripts/estimate_expanded_duplication_pairs.py": "cfe48bfb2ab504f8234fc9a1b58fd37630797d126f500dc2e1eb82631c525d92",
+    "scripts/check_duplication_candidate_export_identity.py": "89e18fbdb82ae0ce1cad4dc39a9f8a32a9fda6a4b22aa51adeab8d030f6a11f7",
+    "results/orthology/duplication-structure-coverage-20260928-v1/mafft_terminal_two_model_candidates.tsv": "96cad0e2db4068800411428832c497861bb4d1869a81e90ea291ba33629553f0",
+    "results/orthology/duplication-structure-coverage-20260928-v1/profile_terminal_two_model_candidates.tsv": "58bb8da500f850b9b376931ed6d15b1464042cc8b59164d3c8767f44298bb7a1",
+    "results/orthology/duplication-structure-coverage-20260928-v1/profile_event_coverage.tsv.gz": "ffc5670745b4c15777aeb38256f2162c78e91981accd524463054fba71add653",
+    "results/orthology/duplication-structure-coverage-20260928-v1/mafft_event_coverage.tsv.gz": "b532d87e969444be9b769a3167747499592a2cfbf0b0c83ff4ad0a5b34a074ef",
+    "metadata/duplication_candidate_tree_review_plan_20260928.json": "ecce453618452161478bbadef787ea2c33757e369a9a5354ae576d0a4759066d",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+    "metadata/duplication_candidate_tree_review_completed_20260928.json": "14accbb145ef085a00ac7cea889798be3c1f62e6342a6b763008f1b237a831b7",
+    "scripts/inventory_duplication_sister_references.py": "d95f31c9916500d92577dcbe359e3888cec40c946688c88e84e3e9a6e53b668d",
+    "scripts/check_duplication_sister_references.py": "209e5b171d0282772326aaf6672663a469feb773d620f0e0972731876d329a6e",
+    "scripts/readback_duplication_sister_references.py": "be1e5b765c12d2cc13d8af07c42b992865a24e2e46069331b4351064aee6af65",
+    "scripts/check_duplication_sister_reference_readback.py": "11f71d352be753f20e192e88a4dbed5b45733303f5fb6e520eba70cd9a98f238",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/whole_proteome_family_coverage_completed_readback_20260928.json": "81a4b22bceaee22025bb5fcada588aee8ac46223d764a3763370c41f682a5174",
+    "metadata/expanded_duplication_sister_reference_plan_20260930.json": "b41a163fd033a8c880d080a6751599f4cc6403f7a5c05da6cccd9fc6bc08ec9d",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/receipt.json": "06967383fc103dd137bb8198810c6d0bde05c561eb0b684684c89dafd13875de",
+    "results/orthology/expanded-duplication-sister-reference-readback-20260930-v1/receipt.json": "3dea05133a736bb1aa6f25fd4ea7f938c17a2c2de100321607fbf587d4a88475",
+    "metadata/expanded_sequence_first_reference_resources_20260930.json": "2f67ba8cc1233aafda11bb683f85d984fbc67d2e9926ef1ec153d4ccf4311203",
+    "metadata/expanded_sequence_first_reference_fixture_validation_20260930.json": "9d3f7978341859220005229420e5b9292e8f629ff4e322a29bbcced4909f14bf",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "scripts/inventory_sequence_first_sister_references.py": "439c8b4034137267725d87d438396f7ee24c68518d39d5d2ae50752c17ede1ae",
+    "scripts/readback_sequence_first_sister_references.py": "f0c64bd121a1a9d7600b7cae9c80ea7b90ab3ebf869fff3f44f03761e6c86ef1",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/mafft_sister_references.tsv": "bef17074915f9ddaf7345c7639dcc33376ab3c8548ed17f7509ba51972647c75",
+    "results/orthology/expanded-duplication-sister-reference-inventory-20260930-v1/profile_sister_references.tsv": "ade96109177466359bb16d90373874e22f5c4b9eb90e623c51b2050eb3fff316",
+    "metadata/expanded_sequence_first_reference_plan_20260930.json": "126b9ecc1aa14de92c5d53ef90179455248f618a4d38836d179eefde77f2d85f",
+    "metadata/expanded_sequence_first_reference_wait_plan_20260930.json": "bfe28cc71c52b22c36e63abb957239fb0d9b7df6b25c95b0caa5d3a2aba21ea6",
+    "metadata/expanded_sequence_first_references_launch_20260930.json": "7ad1596106ef4675932f0fcccac7b981dbd4fff8413102e7ac070552c0c97743",
+    "metadata/expanded_sequence_first_reference_readback_wait_plan_20260930.json": "697bb01e0473deee09df6dea5f41f9bba195a6fdd50698e669cdc3313726b946",
+    "metadata/expanded_sequence_first_reference_readback_launch_20260930.json": "c012dd0413eb337de55f573fbcca108dcbade7f033982fb6e0cb1040041a6825",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/orthology/expanded-sequence-first-sister-references-20260930-v1/mafft_sequence_first_references.tsv": "62ba79d3229fcbc822b8c496e08009265ff2ca21bb9c1f27e43c59f86ab55623",
+    "results/orthology/expanded-sequence-first-sister-references-20260930-v1/profile_sequence_first_references.tsv": "6fdbf78cd9a949ba67eaf02a44db57342faf0638eac8a4d929c52ce71648e40c"
+  },
+  "scope": "Complete283409 modeled duplicate target universe under both native guides, all original fields, sequence-only nearest sister ties/lexical choices, missing gene/model/version states, availability distance increments and full parent-context-by-choice matrices independently reconstructed by leaf intervals/upwardfsum. Complete source/artifact bindings and two exact process completion journals checked. This is conditional availability/reference-choice sensitivity, not ancestor reconstruction, independent orthology, structural responses or a biological asymmetry effect; do not pool overlapping guide counts or silently substitute modeled ties."
+}

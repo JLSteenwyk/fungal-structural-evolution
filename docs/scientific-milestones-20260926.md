@@ -514,3 +514,25 @@ coexist with substantial original-target confidence shifts, preserving the
 sampling/missingness requirement. This does not establish structural effects,
 independent replications, prediction accuracy or post-screen balance. All
 scientific aims remain incomplete.
+
+September 30 sequence-first reference sensitivity passed complete native-tree
+readback for all 283,409 modeled duplicate targets/50,063 family trees. Structure
+availability leads to a farther reference gene in 7,560/7,566 of 29,155/29,130
+provisionally available profile/MAFFT targets (about 25.9%); missing lexical
+representatives and all ties remain explicit. This is a conditional design
+result, not an evolutionary effect. Full additional-reference coordinates and
+written PDB inputs also passed: 24,804 models, 9,982,283 residues and 49,608 mask
+outcomes, including 1,023 short confidence masks. Complete reference measurement
+reuse/geometry/orthology, sequence-first guide/structure sensitivity and calibrated
+asymmetry remain required. All eight scientific aims remain incomplete.
+
+
+September 30: sequence-first reference guide sensitivity now passes the complete
+142,107-pair union (69,683 shared eligible sequence contexts, 69,535 identical
+nearest gene sets, 148 disjoint sets), retaining all missing models and
+parent/one-guide exclusions. The full expanded reference measurement workflow
+is launched for 24,947 new pairs (up to 99,788 masks/orders); 30,754 matched
+catalog pairs remain pending actual result reuse within the full 55,701-pair
+ledger. Numeric and geometry readers are queued, not complete. Coverage,
+common-residue/domain/PAE/orthology, full result union and calibrated duplication
+asymmetry remain required; no scientific aim is complete.

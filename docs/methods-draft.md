@@ -1296,3 +1296,50 @@ contrast requires sampling/missingness treatment; it is not prediction
 accuracy, a calibrated effect or proof of causality. Complete strata and
 source-checked PNG/PDF/SVG outputs are documented in
 [the expanded balance record](terminal-sister-backgrounds-20260927.md#expanded-pre-measurement-balance-independently-verified).
+
+### Sequence-first sister-reference availability sensitivity — September 30
+
+For every modeled duplicate target, closest nonfocal sister genes were chosen
+from the fixed native gene tree before consulting structure availability.
+All tied genes within 1e-12, lexical representatives, missing models and original
+parent exclusions were retained alongside the available-reference design.
+Independent leaf-interval subtraction/upward fsum reconstruction checked all
+283,409 records and context/choice summaries. Among 29,155 profile and 29,130
+MAFFT provisionally available references, 7,560/7,566 use a farther gene because
+the nearest sequence-only ties lack structures (25.93%/25.97%). Another 14/15
+have an unmodeled lexical representative but a modeled equally nearest tie.
+These are dependent conditional design diagnostics, not biological effects
+or evidence of a preferred gene tree. Available-reference and sequence-first
+ledgers remain separate; background controls are not rematched. Reference
+orthology and complete structural measurement/reuse, coverage/confidence/
+common-residue tests remain required.
+
+Full additional-reference raw-CIF checks and written-input checks subsequently
+completed: 24,804 models/9,982,283 residues and 49,608 mask dispositions, with
+1,023 pLDDT70 inputs too short for alignment. All source, coordinate, original
+position and written PDB checks passed, preserving short masks and source
+provenance. Inputs are not pair results; full native result reuse verification
+and numerical/biological qualification remain unfinished. See
+[the reference evidence](duplication-sister-references-20260926.md#sequence-first-reference-choice-completed-september-30).
+
+
+The completed sequence-first cross-guide sensitivity retained the full
+142,107 duplicate gene-pair union, including parent-ineligible and one-guide
+contexts. An independent dataframe outer merge checked every saved field and
+context/choice matrix. Among 69,683 shared targets with eligible sequence-sister
+contexts, 69,535 nearest gene sets agree and 148 are disjoint. Both lexical
+choices have frozen models for 21,451 targets; 21,411 share a model/version.
+Unmodeled/unmodeled is not model agreement, shared models do not establish
+orthology, and overlapping guide records are not independent events.
+
+The expanded reference alignment workload uses the full 55,701-pair ledger.
+All 24,947 pairs without matching existing catalog sources undergo both input
+orders and the original full/pLDDT70 masks (up to 99,788 dispositions); 30,754
+matching-source pairs remain pending actual input/result/numerical reuse
+qualification. The current model/input partition and full source workload
+passed actual-data preflight before launch. Native measurements are active;
+full least-squares/native-text diagnostics and rank/rotation-curvature and
+quaternion checks are queued. Complete result union, original-length coverage,
+common-residue triads, domain/PAE controls and calibrated asymmetry inference
+remain unfinished. This resource partition is unrelated to structural outcomes
+and does not authorize reuse or remove existing numerical flags.

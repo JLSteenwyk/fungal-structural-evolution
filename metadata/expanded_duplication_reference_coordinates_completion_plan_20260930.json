@@ -1,0 +1,136 @@
+{
+  "output": "metadata/expanded_duplication_reference_coordinates_completed_20260930.json",
+  "completed_status": "complete_verified_expanded_duplication_reference_coordinates",
+  "evidence": {
+    "coordinates_producer": {
+      "path": "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_duplication_coordinate_validation_with_dispositions",
+        "models": 24804,
+        "counts": {
+          "validated": 24804
+        }
+      }
+    },
+    "coordinates_reader": {
+      "path": "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/receipt.json",
+      "expected": {
+        "status": "passed_duplication_exported_ca_readback",
+        "models": 24804,
+        "counts": {
+          "validated": 24804
+        },
+        "validated_residues": 9982283
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "coordinates_reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/receipt.json"
+    }
+  ],
+  "launches": [
+    "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json",
+    "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/receipt.json": "b7e8ae1ba669f8b616762d9867792a9f3607250b76ad8f95788a476eed550f84",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/receipt.json": "86441577a2381b6fff230968f4ceafa610312d78687df0988d71976c27a16598",
+    "metadata/expanded_duplication_reference_coordinate_resources_20260930.json": "7896e491bd40f3344124757ad2db9daffcd57fcfc6a2521f0479844d169b96fe",
+    "metadata/expanded_reference_coordinate_partition_readback_20260930.json": "69ed03b50b9a72eda3cc9284219be008ddf55ddb960ef300ad3ddec5d32eecc1",
+    "metadata/expanded_duplication_reference_comparison_completed_readback_20260930.json": "a34ca5ef01e3de7df71a682f32914eaf1fe68a397c6536629f17eaea2dbeef60",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/receipt.json": "d0b434cdf9bd5c9bb23862df40c9b247b95413612151f8d829740361f0f95bd0",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "metadata/expanded_duplication_reference_pipeline_completed_20260930.json": "2248fe99cf8c2b1bdefec543252c58a84a2b6eac347cdeb9bd0e0dd0b61b74d0",
+    "scripts/validate_duplication_reference_coordinates_v2.py": "6aa464f46d032865fa92839e08384ae76ad900d3be8885eb803db5731102a4f8",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/model_pairs.tsv": "88cd2e23f77b4e508ed0537bca1f11141ac94a315260717e60ca945d73801d9c",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/models.jsonl": "261bacc87d2b055507f2391f16e0644685cfbeeb6e12f6bae0d5cd9d8b7a27f3",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/event_reference_comparisons.tsv": "84922e0ba6c4fb4844d0361e065e93bbb9d5dfe49be851199b8029213bd9f0af",
+    "results/structural_comparisons/expanded-duplication-reference-comparison-inventory-20260930-v1/additional_models.jsonl": "9ad31e01f0ade64d4cad7c4f3b3b61defdcfaa308022f4cc861736209e47cc18",
+    "metadata/expanded_duplication_reference_coordinate_validation_plan_20260930.json": "e96f8417e9bbd465105cd81ef41afc9ec1b20f0894cf8eebb4c457b83d0d9101",
+    "metadata/expanded_duplication_reference_coordinate_validation_launch_20260930.json": "b3b4e91824790022ad7bbe48ce4029a2b33fa8cdee45661f91f36828b50465c9",
+    "metadata/expanded_duplication_reference_coordinate_readback_plan_20260930.json": "7d4b72f14460b25dcc4db7939d0d9a275b4cf690165d0d0533da1345c45343a8",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00000.jsonl.gz": "372e67ce6b88a221699c5f245b6e50548a54679361552945430eec99ae611bb2",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00000.jsonl.gz.readback.json": "cf2da9d23b6e06d258f3459eb2d5ffdab46b164a02634d42aa1f98e5e171c584",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00001.jsonl.gz": "fc7ecb443395b91cdec8d592cc74a53ba76a1fb82f9fc7b0f1e85f1a602f6162",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00001.jsonl.gz.readback.json": "9836921d557c490dbf8b6716ca1d60d48ef62969547f2991307cd53de0194028",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00002.jsonl.gz": "3ec5b08870c8c013c78eb1eb45e53a9494a19f1400e93c664b1760f5c14660e2",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00002.jsonl.gz.readback.json": "c7f23cc39b0343d2cc21d90a0045b9654922884cd9fd457323eb45a0f0ca56aa",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00003.jsonl.gz": "03175b30a7570b680c02381ec51270fde63887dc43eb7e1ef38f02fae5799ab7",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00003.jsonl.gz.readback.json": "81a9065fc1134832801dcce9bf43fe8ccd76f9f6ac7ef45f70489fd7dc19b3d3",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00004.jsonl.gz": "e251f1006888318e6c7d1e9bd2197147d715cdeddefabd3bfbf048dcaa2a8ee4",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00004.jsonl.gz.readback.json": "9416646f7542e669255c48cca63de3a41d194e3a73d67bae76af168516f429ac",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00005.jsonl.gz": "961ef133994092887b3e2c4a19235b59bd2b3e39505cbc1f90b44c19b0e03ebb",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00005.jsonl.gz.readback.json": "68cf8918e65a84e32749a078ecbc11c0a03335823b0bd4720b3047c2c0f13852",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00006.jsonl.gz": "6204d2595660092e2d8b81ee5ecc9d387e975cd1ef4eb26a07455dbc91c0d7b3",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00006.jsonl.gz.readback.json": "663dfc4e93a950f6705cc99e074950d12c7321aa19b8f229233c6fcc6edcb72d",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00007.jsonl.gz": "135c0d1728accc365fe14064ff3065bf3428e865ed4732fe1fec89f816a3e94d",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00007.jsonl.gz.readback.json": "da6e6b5b89a9831c1bef0b9fe61e6d4db7df1705f758f4d03146a59b157b7b06",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00008.jsonl.gz": "bcf440ca9128650a023b973796547e1a5a724dcd14d4fa3952ed34761dc6a8b1",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00008.jsonl.gz.readback.json": "e3d31f74322c47e62aa0186571deae9c12724726a9756109f6c7a09f7dc9f8f5",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00009.jsonl.gz": "77b873426f493375df4316e5c4865648e1c7925e0cccc928f90e42fcf41fd1fe",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00009.jsonl.gz.readback.json": "fc3cf52597a46a2d44ef4ef34dd7a7e74fbe0e592e1877b319cf29fbf00a7c0b",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00010.jsonl.gz": "93342112008b1d8266e1c13e02d510336c5336fb17ad4e11064a7bcc6be06e61",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00010.jsonl.gz.readback.json": "46bafcc5b325da6ba035b4205dbb5d6eabeb7b43d1c3759c446c26fe197378e3",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00011.jsonl.gz": "95f617743a409673fa8d9af3f15977581b904806327bf568383a29f72e4a40a2",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00011.jsonl.gz.readback.json": "19978e43d87510c65eb5598ac84c60dff4df215e8579f44ca864507b7fcf1383",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00012.jsonl.gz": "8d48eb8690c4067b7159a01f354c0df85415f37a498be49f2eb026213a4b05e0",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00012.jsonl.gz.readback.json": "0abbd9442e557440f2824d2b9141e7be892f9c3434469ac43c91365bcd8b2568",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00013.jsonl.gz": "a9e4b2e7d9b48f2bcb9861cb63d28da599a3f99438dbcd4e3cefd3e75095012d",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00013.jsonl.gz.readback.json": "131cf8d476ad320a0fb33fed73e5d214440095c5b309f25bb64ce1f56c15a520",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00014.jsonl.gz": "489633f0339486baf1958ddf5343e7aaa94e10269b048ef641c172e4ae5e6699",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00014.jsonl.gz.readback.json": "e496664fd53ef562fda66fe11cb5dc6c33f6ce655a3d2935fc6b465e88025e44",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00015.jsonl.gz": "f05a191623aa9379323569b37e6ffa1725873607cad6c0050c385492f6c730eb",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00015.jsonl.gz.readback.json": "59dbb859a163ecd0798ed301a664007e6fe485d0643dfba13c681204f3e391f8",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00016.jsonl.gz": "3bd7c9c8d1ea026f2f7dde7c3fc6cb0e2d89488d4aca465f66f35d932efc9b79",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00016.jsonl.gz.readback.json": "a5d6ad5fb1b3cbaaa81f59d191db13ff61b431523e7edea1b12b9aa4cd80ca21",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00017.jsonl.gz": "3c558ac56fa6c677ae672fc353c1093838c2f52d7c90abc4db3c22a3b7b7ebc7",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00017.jsonl.gz.readback.json": "e7166c20f8a6005bea03056ddc788a2f4b98806831a691534fae7e26c0585636",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00018.jsonl.gz": "ba77387b102bed179fb815f471bfe85319120e78a3f21decc9d4da35204f191b",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00018.jsonl.gz.readback.json": "42c2de42ef8327c60924d11f2250328487bb4ff12b2bd3da20ea92a755dd6714",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00019.jsonl.gz": "62521ed92a49711019302aad92e3fc5535e4f23fd923e5d03aecaeaf19acf661",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00019.jsonl.gz.readback.json": "e1c5d20752ea88ff4f95c7aa48def7dbc141cb8c1a710684b4a80e08fadf166f",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00020.jsonl.gz": "1bf94477081abd6e6ca4a2e513212f29885da6a296251c991e56201a0cd6cddf",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00020.jsonl.gz.readback.json": "9b465b42fbf00fd17adaa7ca308267ed1848dd6138fc411edab97f6bd65f4b62",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00021.jsonl.gz": "0da79268056f0159905ad3a174047c8d8fbc573d433d6159a277861107f81c6d",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00021.jsonl.gz.readback.json": "99186419dedd6380a6f53d873a1741bd3a5eeccabb80f3ba52221fd3865b2e56",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00022.jsonl.gz": "63015c79961073df84fda0f698d42696ee6911c23deba4feac22cbfce095964a",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00022.jsonl.gz.readback.json": "b131ccc8c7bceeef0588f429ee2272ed38c008f039101aae66dc030a569534eb",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00023.jsonl.gz": "64bd9e7e22c503ba180c7caa01216dbb64c8658306e4bbe6f548b6d3cebc6e2a",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00023.jsonl.gz.readback.json": "ea1d9a99b8fd9029a64ab65682767899baa036f4841075dfbf25f64b10fa1a7d",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-validation-20260930-v1/shard-00024.jsonl.gz": "58f7d2dbd2c90a7d2a2f8bf89b76a847b68d48ff70264501517896e9f036e350",
+    "results/structural_comparisons/expanded-duplication-reference-coordinate-readback-20260930-v1/shard-00024.jsonl.gz.readback.json": "12ff5a26c32656db59a23273ca782070e52e83e4f1e98a1092286a89d0966ec5",
+    "metadata/expanded_reference_coordinate_completed_artifact_plan_20260930.json": "b0c11d877d0f07e868fe7b049de50db47de88d49418ce286c4db8ab8b435f70a",
+    "metadata/expanded_duplication_reference_coordinate_readback_launch_20260930.json": "8cc1b33b57feb0900e6aba12187e9480c07614b2220ffc876e5dca0b02aec307",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "summary": {
+    "models": 24804,
+    "validated_models": 24804,
+    "validated_residues": 9982283,
+    "shards": 25,
+    "raw_coordinate_bytes": 9597401251
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.05,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Every additional expanded reference raw-CIF coordinate/sequence/confidence record independently reconstructed; all25 shards and proofs, complete source bindings and two exact captured-process completion journals checked. Exact native model/version partition preserved. Coordinate availability only: PDB inputs, pair/result reuse, numerical geometry and coverage, PAE/domain/orientation, reference orthology and biological asymmetry remain unqualified."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "planned_full_expanded_reference_measurement_partition",
+  "cpu": 8,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 24,
+  "minimum_free_disk_gib": 100,
+  "full_reference_pairs": 55701,
+  "new_native_pairs": 24947,
+  "existing_catalog_pairs_pending_actual_reuse": 30754,
+  "maximum_directed_dispositions": 99788,
+  "per_native_timeout_seconds": 600,
+  "planning_hours": [
+    2,
+    48
+  ],
+  "existing_checkpoint_timing_basis": "metadata/expanded_reference_alignment_existing_timing_basis_20260930.json",
+  "elapsed_mean_seconds": 0.47380981871218525,
+  "simple_eight_worker_hours": 1.6416852149184562,
+  "new_endpoint_lengths": {
+    "min": 29,
+    "median": 319.0,
+    "p90": 676.0,
+    "p99": 1109.0699999999997,
+    "max": 1280
+  },
+  "basis": "Both orders and full/pLDDT70 masks for every current reference pair with no matching existing catalog source. All55701 pairs retained in full work ledger;30754 matching source candidates remain pending exact input/result/numeric reuse, not accepted or recomputed. Existing timing sample estimates throughput, not a pilot or guaranteed ETA; new-length distribution, queue batching, audit work, scheduling and tails broaden planning range. No outcome-based selection, model substitution, rematching or flag clearance. Native USalign is single-threaded per call;8 workers,64pendingjobs,atomic restartable checkpoints. Independent diagnostic uses2CPU/32GiB/no swap,8GiB output allowance; geometry and quaternion readers each1CPU/16GiB/no swap,4GiB output allowance,0.1\u201312h uncalibrated after prerequisites."
+}

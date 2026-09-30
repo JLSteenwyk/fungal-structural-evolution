@@ -71,3 +71,31 @@ ancestral structure predictions must use qualified alternatives and the
 current GPU authorization. See [ancestral evidence](ancestral-case-inputs.md),
 [Historian](historian-method-assessment-20260927.md) and
 [BAli-Phy](baliphy-method-assessment-20260927.md).
+
+## Sequence-first reference sensitivity — September 30
+
+Preserve the full available-reference design and add a sequence-first choice
+sensitivity for every modeled duplicate target. Choose nearest nonfocal sister
+genes and a fixed lexical representative before checking structural availability;
+retain every tied gene/model assignment and missing lexical representative.
+Do not silently substitute a modeled tie or farther gene, promote ineligible
+parent contexts, switch predictors, or rematch fixed background controls.
+Keep gene-choice availability sensitivity distinct from sequence-locked residue
+correspondence. Test resulting structural contrasts only after complete input/
+result reuse, geometry, coverage/confidence/PAE/domain and orthology checks.
+The completed native check finds a farther modeled reference in approximately
+25.9% of provisionally available targets; this requires missingness/reference-
+choice treatment but does not itself establish structural bias or asymmetry.
+
+
+### September 30: full reference measurement partition preserves pending reuse
+
+Keep the complete expanded reference ledger while measuring every pair without
+matching catalog sources. Existing-source matches are pending actual
+coordinate/input/mask/residue/executable/settings/checkpoint and numerical
+qualification; a catalog match never authorizes importing results or clearing
+flags. No structural outcome selects computation or fixed background matches.
+Check both masks/orders of all new pairs and retain errors and short inputs.
+The final reference/background union must also account for overlapping pairs
+before sharing verified results. CPU native measurements remain authorized;
+GPU predictions stay paused.

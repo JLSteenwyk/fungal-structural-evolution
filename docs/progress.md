@@ -10104,3 +10104,43 @@ does not establish universal coverage or complete the biological project.
   claim. All 32 figure points passed source readback and PNG visual review,
   with PDF/SVG/TSV exports. Post-screen balance, measurement/prediction quality,
   phylogenetic uncertainty and calibration remain outstanding.
+
+- September 30: full sequence-first nearest-sister choice sensitivity passed
+  independent native reconstruction of all 283,409 modeled targets/50,063 trees.
+  Two exact process journals and 59 source/artifact hashes passed. Of 29,155/29,130
+  available-reference targets, 7,560/7,566 use farther modeled genes because all
+  nearest sequence-only ties lack structures (25.93%/25.97%); 14/15 lexical ties
+  have a modeled alternative but remain explicitly missing. Parent-ineligible
+  contexts are retained. This is a conditional design diagnostic; no structural
+  effect, independent-event or reference-orthology claim.
+
+- September 30: full additional-reference coordinates passed native-CIF readback
+  for 24,804 models/9,982,283 residues/25 shards, with no content rejections.
+  Completion verifies 77 source/artifact bindings and two exact process journals.
+  Full written-input preparation/readback also finished all 49,608 mask
+  dispositions: 24,804 full and 23,781 confidence-masked ready inputs, 1,023 short
+  masks, 1,348,146,870 PDB bytes. Short masks remain unavailable, not zero distance.
+  All complete reference pair/reuse/geometry/coverage/PAE/domain/orthology and
+  biological asymmetry tests remain pending. GPU predictions remain paused.
+  All eight scientific aims remain incomplete.
+
+
+- September 30: full sequence-first cross-guide choice comparison passed every
+  export field/matrix/summary over 142,107 unordered duplicate gene pairs,
+  retaining 141,302 shared, 422 profile-only and 383 MAFFT-only candidates.
+  Of 69,683 shared targets with eligible sequence-sister contexts, 69,535 have
+  identical nearest gene sets/lexical genes and 148 have disjoint sets. Both
+  lexical choices have models in 21,451; 21,411 share a model/version. Missing
+  models are not counted as identical predictions. Full closure checked 76
+  source/artifact hashes and two exact completion journals. This is conditional
+  guide sensitivity, not biological orthology/asymmetry or independent events.
+
+- September 30: completed the full actual-data handoff and launched all 24,947
+  new reference pairs for both input orders/full and pLDDT70 masks (up to 99,788
+  dispositions). The full 55,701-pair ledger retains 30,754 previous-source
+  matches pending actual result reuse checks; no result copied or flag cleared.
+  Native measurements use eight CPU/32 GiB/no swap and existing USalign/options;
+  all-disposition numeric diagnostic and two geometry checks queued behind exact
+  producer handles. Resources/timing basis recorded before launch; no pilot,
+  GPU inference, predictor substitution or paid resource. All eight aims remain
+  incomplete. See metadata/expanded_reference_alignment_pipeline_queued_20260930.json.
