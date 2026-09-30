@@ -1199,3 +1199,33 @@ the species sampling as unique taxa, establish confidence calibration or
 domain orientation, correct ascertainment, or test a biological duplication
 effect. Full evidence and figures are in
 [expanded coverage screening](duplication-sampling-coverage-20260926.md#expanded-original-length-screening-completed-september-30).
+
+
+### Expanded duplication/control integration (September 30)
+
+The September 28 primary duplicate queue was annotated in full against the
+independently verified expanded Pfam registry: 276,682 model/version identities,
+134,812 distinct model pairs and four alternatives per pair. Independent segment
+and policy-membership joins reconstructed every annotation and all 539,248 pair
+categories/candidate single-copy domain-match records. Repeated accessions remain
+explicit; a retained ineligible repeat cannot make an eligible occurrence unique.
+Identical-model event endpoints remain in the model inventory. Missing annotation
+is unknown, rather than evidence of a gain or loss. These controls do not establish
+structural domain boundaries, homology, evolutionary architecture events or stable
+interdomain orientation. Expanded sibling-reference comparisons remain separate.
+Completion evidence is `metadata/expanded_duplication_domain_controls_completed_20260930.json`.
+
+The background refresh retains every bifurcating terminal sister pair in the
+unchanged two complete resolved-tree sets and rejoins the frozen expanded structure
+bridge. Independent native-tree, guide-union, native reciprocal orthology,
+model/metadata and raw-registry checks are running or queued. Computational
+qualification preserves all three prior native-orthology/parent sensitivities,
+all four annotation policies and all sequence-distance/focal-taxon ranges over
+the full 283,409 modeled duplicate target links. Future artifacts are checked
+against complete verified source manifests before and after architecture counts,
+not accepted merely because a dependent process exited. Full expanded candidate
+graphs, all 54 response-independent matching scenarios and coordinate measurements
+remain outstanding. The existing completed selections and ongoing fitted models
+retain their older frozen source scope. No rematching after structural/coverage
+filtering is allowed. See
+[the expanded workflow](terminal-sister-backgrounds-20260927.md#expanded-catalog-refresh-september-30).

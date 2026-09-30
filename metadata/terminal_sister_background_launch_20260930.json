@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-terminal-sister-background-20260930.service",
+  "service": "fungal-terminal-sister-background-20260930.service",
+  "pid": 2610642,
+  "created": 1790784934.18,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/inventory_terminal_sister_backgrounds.py",
+    "--plan",
+    "metadata/terminal_sister_background_plan_20260930.json"
+  ],
+  "plan": "metadata/terminal_sister_background_plan_20260930.json",
+  "plan_sha256": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+  "checked_utc": "2026-09-30T16:15:34.915345+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "minimum_free_disk_bytes": 107374182400,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "All 140719 unchanged resolved trees and 3154373 terminal pair rows with new 1955694-protein structure bridge; full missing/identical-model categories. Independent full reconstruction required; excludes no candidate based on structural outcome. Existing CPU only.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+}

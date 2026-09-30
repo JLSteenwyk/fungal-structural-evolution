@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-expanded-architecture-matching-support-readback-20260930.service",
+  "pid": 2619757,
+  "created": 1790785628.75,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/expanded_architecture_matching_support_readback_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/expanded_architecture_matching_support_readback_wait_plan_20260930.json",
+  "plan_sha256": "e7c1701a9d36af2477691ca100a4b98754ab61e714c995c0ab8d88abaed9ceb5",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "target_records": 283409,
+    "expected_rows": 3400908,
+    "basis": "All 283409 expanded targets x three qualification sets x four original annotation policies. Every source artifact checked at both ends; all unknown/different/nonconservative architectures and zero-support targets remain explicit. Full independent grid replay required."
+  },
+  "checked_utc": "2026-09-30T16:27:09.489147+00:00"
+}

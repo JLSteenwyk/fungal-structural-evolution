@@ -1,0 +1,82 @@
+{
+  "source": "results/orthology/terminal-background-orthology-20260930-v1",
+  "readback": "metadata/terminal_background_orthology_completed_readback_20260930.json",
+  "dependency": {
+    "unit": "fungal-terminal-background-orthology-readback-20260930.service",
+    "service": "fungal-terminal-background-orthology-readback-20260930.service",
+    "pid": 2610723,
+    "created": 1790784935.13,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_orthology.py",
+      "--config",
+      "metadata/terminal_background_orthology_readback_plan_20260930.json"
+    ],
+    "plan": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+    "plan_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29",
+    "checked_utc": "2026-09-30T16:15:35.851427+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 0.01,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "Independent fixed-record binary searches for every expanded modeled candidate in both reciprocal streams, every source-field and ordinal checked; complete stream hashes bind prior global ordering audits.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+    "config": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+    "config_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29"
+  },
+  "bridge": "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite",
+  "catalog": "results/structures/whole-proteome-afdb-catalog-20260928-v1",
+  "existing_queues": [
+    {
+      "label": "already_in_primary_queue",
+      "path": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1"
+    },
+    {
+      "label": "already_in_reference_queue",
+      "path": "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1"
+    }
+  ],
+  "output": "results/structural_comparisons/background-measurement-inventory-20260930-v1",
+  "pins": {
+    "scripts/prepare_background_measurements.py": "83191c7b8d9577f56443f52bfca18733f47760b241c3388174062e6bce1c11fa",
+    "scripts/check_background_measurement_cases.py": "9626b80420354d572417ba8e5ac74fb1e0b6093b2b58ac5085d6cb3ad58c41e9",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "metadata/terminal_background_orthology_plan_20260930.json": "3dadc5141b2f40e365b2d68af80dde6957dd5c38aacf37b536e509db72b80a88",
+    "metadata/terminal_background_orthology_launch_20260930.json": "d0c8fa2d23c2182d9bac4e1635a092c60e2a1d423d9164cba980fdbb1176158a",
+    "metadata/terminal_background_orthology_readback_plan_20260930.json": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29",
+    "metadata/terminal_background_orthology_readback_launch_20260930.json": "868da1ed0e31b8190c6ab7e9d3e890c6179258cc4b3c2c3e959a75ae9a4780fa",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/models.jsonl": "4f4b86b2584d9a7b9d4d2e71e599a4e4075e7969cf4e38484b475cb75b6c0cd1"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 4,
+    "minimum_free_disk_bytes": 107374182400,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Stream full frozen 1910138-model catalog; retain every modeled candidate including neither-guide and identical-model dispositions, exact gene/model/version/length/confidence joins and existing/new work partitions. Catalog expansion can add candidates; count not assumed from old 78372.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

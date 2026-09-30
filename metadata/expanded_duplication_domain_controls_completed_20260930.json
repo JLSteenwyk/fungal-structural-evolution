@@ -1,0 +1,91 @@
+{
+  "status": "complete_verified_full_expanded_primary_duplication_domain_controls",
+  "checked_utc": "2026-09-30T16:28:28.016644+00:00",
+  "summary": {
+    "models": 276682,
+    "unique_model_pairs": 134812,
+    "pair_policy_rows": 539248,
+    "single_copy_domain_matches_by_policy": {
+      "alignment_evalue": 32347,
+      "alignment_bitscore": 32329,
+      "envelope_evalue": 32202,
+      "envelope_bitscore": 32184
+    }
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/expanded_duplication_domain_controls_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "be5d65497e61b7d7acb7f36f4630ecb48c72c57568fd1422212a7beb314674a4",
+      "captured_process_messages": 27,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790785283674561",
+          "CPU_USAGE_NSEC": "66892948000",
+          "MEMORY_PEAK": "2129920",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/expanded_duplication_domain_control_readback_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "21b519b807663fcd564e5638d4d7cd4c953b4079396865be5d04ccefb8dc6be3",
+      "captured_process_messages": 4,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790785372213674",
+          "CPU_USAGE_NSEC": "65289800000",
+          "MEMORY_PEAK": "2732032",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/expanded_duplication_domain_control_completion_plan_20260930.json": "dc27945ec71e3aa5ed09cc12e80ba8c99febf19bcb22ba92b0db86d82d1af55a",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/receipt.json": "a688f65d59a7c08265831e7446ed652d7bcc9d2b0d691c994757d70158652807",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/structure_domains.sqlite": "3e4be904bc2a0eb358f2d6d3b1744ff0f6ebfa95decc1e241647300adb8e3a2f",
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260928-v1/receipt.json": "6e90bc2ffeadb334063467afa1ce217bee308e097e5d4a72b1064ab1ddee3e26",
+    "metadata/whole_proteome_structure_domain_registry_completed_20260928.json": "e17fe9d026c9a5374d196e4aa531cb897ced0b8902058ba174beb15015a8cbb4",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/readback_duplication_domain_controls.py": "317afc8f96f03cd9960a4cd106239eae624418144457a64cd9f99651f46ad250",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "scripts/inventory_duplication_domain_controls_v2.py": "22cd1d5a3577ae1d1af683c6bc0f937de44a830a8cba11ad6ddd4208c67901fb",
+    "scripts/readback_duplication_domain_controls_v2.py": "43f3c16361b22b33aa5213c0d0068e2cc9bd5cbe2a2eac07a60a863f01318130",
+    "metadata/expanded_duplication_domain_control_plan_20260930.json": "5258e66e58855a50d5ecbd9585466a1408dfb6f56d82799f5553ed8903b21cfe",
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json": "53466da3342a129f4a03a6cdf7803318d937e88cf8ba362f2d80978253e5ef7b",
+    "metadata/expanded_duplication_domain_control_readback_plan_20260930.json": "7d1a77f313b7eefedce7033ff6c5461ba8dbc2488c1175bffae3349e6059031f",
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/receipt.json": "bdc0393b5b0a9d6886f86669f2c629c10858a80e3283db607859bdd23453bcd2",
+    "metadata/expanded_duplication_domain_control_completed_readback_20260930.json": "d215bfece982c16a7306e01dc548327b5c558c0a0a0b4980c4b6255532122565",
+    "metadata/expanded_duplication_domain_control_readback_launch_20260930.json": "c2590ae2e087bfc8c4dabe7fceb055920d25bd75e05c66e857408e62cc5b9cf4",
+    "metadata/expanded_duplication_domain_control_readback_wait_plan_20260930.json": "60f6716e0fea159368c942b58005ba5322b6d18a974409c3b071d320f9d3f3b9",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/model_annotations.jsonl": "af7594532ce4bd79af396e6c459476b99e9526ba5ce29c5929429b61b0a09cf2",
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/single_copy_domain_pairs.tsv": "3625e355bfd0bb3b951dd76567a56c6159b661f128cff802c4190522295028ef",
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/pair_architecture_controls.tsv": "86567cda8362f958e2f7c20e1656bd52af2735ea67d3f9a890d9cbe43a7917fd"
+  },
+  "scope": "Every expanded primary duplicate model annotation independently rejoined from registry segments and policy memberships; every distinct pair, architecture class and single-copy match reconstructed. All complete hashes and captured-process completion journals checked. Expanded sibling-reference comparisons and background matching remain separate unfinished dependencies; shared Pfam annotations are not independent biological domain boundaries or duplication effects."
+}

@@ -1,0 +1,53 @@
+{
+  "plan": "metadata/background_measurement_inventory_plan_20260930.json",
+  "dependency": {
+    "unit": "fungal-background-measurement-inventory-20260930.service",
+    "service": "fungal-background-measurement-inventory-20260930.service",
+    "pid": 2610759,
+    "created": 1790784940.59,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_background_measurements.py",
+      "--plan",
+      "metadata/background_measurement_inventory_plan_20260930.json"
+    ],
+    "plan": "metadata/background_measurement_inventory_plan_20260930.json",
+    "plan_sha256": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "checked_utc": "2026-09-30T16:15:41.335064+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 4,
+      "minimum_free_disk_bytes": 107374182400,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "Stream full frozen 1910138-model catalog; retain every modeled candidate including neither-guide and identical-model dispositions, exact gene/model/version/length/confidence joins and existing/new work partitions. Catalog expansion can add candidates; count not assumed from old 78372.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+  },
+  "pins": {
+    "scripts/readback_background_measurements.py": "eb077a2d536d5ddbe34d6f88d00c4a84eca106336a7c377908b3fc46d3154d6c",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "metadata/background_measurement_inventory_launch_20260930.json": "6b20efedecc0137d9557e892997f748a702f6f3e5b7142485b25c7596ed5d388"
+  },
+  "output": "metadata/background_measurement_inventory_completed_readback_20260930.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Reconstruct every expanded candidate field, exact model/metadata join, native eligibility, complete model/pair sets and work partitions independently. No coordinates, alignments or matched effects yet.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

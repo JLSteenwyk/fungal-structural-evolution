@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-expanded-duplication-domain-control-readback-20260930.service",
+  "pid": 2614324,
+  "created": 1790785216.09,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/expanded_duplication_domain_control_readback_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/expanded_duplication_domain_control_readback_wait_plan_20260930.json",
+  "plan_sha256": "60f6716e0fea159368c942b58005ba5322b6d18a974409c3b071d320f9d3f3b9",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "models": 276682,
+    "model_pairs": 134812,
+    "policies": 4,
+    "basis": "All model annotations rebuilt from independent raw segment and policy-membership joins; every complete primary pair/category/match reconstructed. Producer wait excluded."
+  },
+  "checked_utc": "2026-09-30T16:20:16.824772+00:00"
+}

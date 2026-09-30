@@ -1,0 +1,48 @@
+{
+  "dependencies": [
+    "metadata/background_measurement_readback_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/inventory_background_domain_controls.py",
+    "--plan",
+    "metadata/expanded_background_domain_control_plan_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 5,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "models": null,
+    "model_pairs": null,
+    "policies": 4,
+    "basis": "Every expanded modeled background candidate and qualified pair, using the same four annotation policies. Actual full-scope counts established only by upstream audited inventory; no old 78372-row subset assumed."
+  },
+  "pins": {
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/receipt.json": "a688f65d59a7c08265831e7446ed652d7bcc9d2b0d691c994757d70158652807",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/structure_domains.sqlite": "3e4be904bc2a0eb358f2d6d3b1744ff0f6ebfa95decc1e241647300adb8e3a2f",
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260928-v1/receipt.json": "6e90bc2ffeadb334063467afa1ce217bee308e097e5d4a72b1064ab1ddee3e26",
+    "metadata/whole_proteome_structure_domain_registry_completed_20260928.json": "e17fe9d026c9a5374d196e4aa531cb897ced0b8902058ba174beb15015a8cbb4",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/readback_duplication_domain_controls.py": "317afc8f96f03cd9960a4cd106239eae624418144457a64cd9f99651f46ad250",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/inventory_background_domain_controls.py": "687bdffdac6352ff352ee63bec1e4b6a031d561360bc9ab758a9c6b895cb395c",
+    "scripts/readback_background_domain_controls.py": "259acde5c6cb486aff68ed7351792f1bac3300cb41a6e0e34628c6bada1d4bb9",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "metadata/background_measurement_readback_plan_20260930.json": "07c1d0ee7f0cab5ac00b6af7d5932efbb9de4add6a69a7353b8f85792ec33e51",
+    "metadata/expanded_background_domain_control_plan_20260930.json": "8dbd70901fcf687db9d7452e803e02359d0e2447d00f81f322ef52a90356f727",
+    "metadata/background_measurement_readback_launch_20260930.json": "32b3b63d5151e6e60a2755f3fb9c321324650382b1e4176c899df0ccc349e85b",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  }
+}

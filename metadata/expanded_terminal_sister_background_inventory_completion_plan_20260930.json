@@ -1,0 +1,172 @@
+{
+  "output": "metadata/expanded_terminal_sister_background_inventory_completed_20260930.json",
+  "completed_status": "complete_verified_full_expanded_terminal_sister_background_inventory",
+  "evidence": {
+    "producer": {
+      "path": "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_terminal_sister_inventory_pending_independent_readback",
+        "guides": [
+          {
+            "guide": "profile",
+            "trees": 70307,
+            "pairs": 1577204,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134430,
+              "cross_taxon_unreported_candidate:one_model": 425287,
+              "reported_duplication:no_models": 309496,
+              "cross_taxon_unreported_candidate:no_models": 524058,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+              "reported_duplication:one_model": 16443,
+              "cross_taxon_unreported_candidate:identical_model": 13037,
+              "reported_duplication:identical_model": 7294
+            }
+          },
+          {
+            "guide": "mafft",
+            "trees": 70412,
+            "pairs": 1577169,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134391,
+              "cross_taxon_unreported_candidate:one_model": 425367,
+              "reported_duplication:no_models": 309579,
+              "cross_taxon_unreported_candidate:no_models": 523909,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+              "reported_duplication:one_model": 16426,
+              "cross_taxon_unreported_candidate:identical_model": 13104,
+              "reported_duplication:identical_model": 7294
+            }
+          }
+        ],
+        "frozen_model_links": 1955694
+      }
+    },
+    "reader": {
+      "path": "metadata/terminal_sister_background_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_terminal_sister_inventory_readback",
+        "guides": [
+          {
+            "guide": "profile",
+            "trees": 70307,
+            "pairs": 1577204,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134430,
+              "cross_taxon_unreported_candidate:one_model": 425287,
+              "reported_duplication:no_models": 309496,
+              "cross_taxon_unreported_candidate:no_models": 524058,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+              "reported_duplication:one_model": 16443,
+              "cross_taxon_unreported_candidate:identical_model": 13037,
+              "reported_duplication:identical_model": 7294
+            }
+          },
+          {
+            "guide": "mafft",
+            "trees": 70412,
+            "pairs": 1577169,
+            "counts": {
+              "reported_duplication:two_distinct_models": 134391,
+              "cross_taxon_unreported_candidate:one_model": 425367,
+              "reported_duplication:no_models": 309579,
+              "cross_taxon_unreported_candidate:no_models": 523909,
+              "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+              "reported_duplication:one_model": 16426,
+              "cross_taxon_unreported_candidate:identical_model": 13104,
+              "reported_duplication:identical_model": 7294
+            }
+          }
+        ]
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json"
+    }
+  ],
+  "launches": [
+    "metadata/terminal_sister_background_launch_20260930.json",
+    "metadata/terminal_sister_background_readback_launch_20260930.json"
+  ],
+  "summary": {
+    "trees": 140719,
+    "terminal_pairs": 3154373,
+    "frozen_model_links": 1955694,
+    "guides": [
+      {
+        "guide": "profile",
+        "trees": 70307,
+        "pairs": 1577204,
+        "counts": {
+          "reported_duplication:two_distinct_models": 134430,
+          "cross_taxon_unreported_candidate:one_model": 425287,
+          "reported_duplication:no_models": 309496,
+          "cross_taxon_unreported_candidate:no_models": 524058,
+          "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+          "reported_duplication:one_model": 16443,
+          "cross_taxon_unreported_candidate:identical_model": 13037,
+          "reported_duplication:identical_model": 7294
+        }
+      },
+      {
+        "guide": "mafft",
+        "trees": 70412,
+        "pairs": 1577169,
+        "counts": {
+          "reported_duplication:two_distinct_models": 134391,
+          "cross_taxon_unreported_candidate:one_model": 425367,
+          "reported_duplication:no_models": 309579,
+          "cross_taxon_unreported_candidate:no_models": 523909,
+          "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+          "reported_duplication:one_model": 16426,
+          "cross_taxon_unreported_candidate:identical_model": 13104,
+          "reported_duplication:identical_model": 7294
+        }
+      }
+    ]
+  },
+  "pins": {
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "c9534378905f8747c83eeabb2b7dac6a12559a81842237cef015a1d92da17236",
+    "results/orthology/expanded-reconciliation-execution-v2/profile/Results_expanded_profile/Gene_Duplication_Events/Duplications.tsv": "fd8abac38425e4e1b009dd4f144baaddcf2470adfa27d5f75e3ebbc6ff8e2d42",
+    "metadata/expanded_resolved_tree_profile_completed_readback_20260923.json": "fd780a1bdfe75f3b19c07bad7c95e8335fcc5e9989b3323b3eddf4f767c46a79",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Results_expanded_mafft/Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "metadata/expanded_resolved_tree_mafft_completed_readback_20260923.json": "5d090a04158bd601b3d5ae445f55c91d16b5427abe7abe371c43a7073a921666",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "scripts/inventory_terminal_sister_backgrounds.py": "0a3fa3e3e98fbb4f65387a1e8030fe12f15b32bb1b90a3291da1eb447ade6e88",
+    "scripts/check_terminal_sister_background_cases.py": "890fda7ae1198c3fa0b38d72316d2a2e741db5356a6a64d19799dedcc540d6b3",
+    "scripts/inventory_duplication_sister_references.py": "d95f31c9916500d92577dcbe359e3888cec40c946688c88e84e3e9a6e53b668d",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/structure_family_bridge.sqlite": "8073811deacf06205817524f4d5f7349f2dcec2adc810c6f4b13bf04cce077fb",
+    "results/structures/whole-proteome-family-coverage-20260928-v1/receipt.json": "80650faa1f5ae9611c123a7b260aca6d894a8748914ff64ad47e64d1209f0c19",
+    "results/structures/whole-proteome-family-coverage-20260928-v1-readback.json": "bf6e545919a5d57fc23002a7033446369adaa2ea246871e95f298df677e1b3cf",
+    "metadata/whole_proteome_family_coverage_completed_readback_20260928.json": "81a4b22bceaee22025bb5fcada588aee8ac46223d764a3763370c41f682a5174",
+    "metadata/expanded_background_refresh_resources_20260930.json": "1ed29bfad79860d4d8914515ea361eee9b67bf6aefd7ba562b83ce86fa84403b",
+    "scripts/readback_terminal_sister_backgrounds.py": "dcfcd18d2fd9f96c0fe84f367ac57f5692a631512da3dcbfca909725a0824dcb",
+    "scripts/check_terminal_sister_readback_cases.py": "251c5ce9e402783fe103a36d531772fcaf24e3ab0bc27949c428509fbad12e24",
+    "metadata/terminal_sister_background_plan_20260930.json": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "metadata/terminal_sister_background_launch_20260930.json": "0c693146c6b36f87e74f86624edcf94897fb001737cc159ae9f16d48b1eb3cf4",
+    "metadata/terminal_sister_background_readback_plan_20260930.json": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5",
+    "results/orthology/terminal-sister-background-inventory-20260930-v1/receipt.json": "785345c4850f2badb2056bedaa6ae2169784fef1429964de68476a990d86eef5",
+    "metadata/terminal_sister_background_completed_readback_20260930.json": "9fb3e3ca3bcf46dbef1cb8a31d6445afd712a3f2c161b7d0cffa7479261df7a8",
+    "metadata/terminal_sister_background_readback_launch_20260930.json": "7732bbe149c4e57765ce74a8d2493c1a44710f50adf080c9cbcb8676a5617893",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All unchanged resolved native trees, duplication flags, terminal pair identities, model joins, branch lengths and complete summaries independently reconstructed for expanded frozen bridge. Complete source hashes and exact captured-process completion journals verified. Missing and identical models retained. Full guide union, native orthology, model/annotation inventories, fixed matching and structural inference remain downstream; cross-taxon unreported is not established speciation."
+}

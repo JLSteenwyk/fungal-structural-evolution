@@ -364,3 +364,35 @@ python scripts/prepare_duplication_triad_architecture.py \
 python scripts/readback_duplication_triad_architecture.py \
   --source <fresh-output-directory> --output <fresh-readback.json>
 ```
+
+
+## Full expanded primary duplication annotations (September 30)
+
+The expanded September 28 queue contains 276,682 model/version identities and
+134,812 distinct model pairs. All models, including endpoints of identical-model
+events, were rejoined to the complete expanded domain registry under all four
+original policies. The independent checker separately joins native segment and
+policy-membership records, then reconstructs every pair category and candidate
+single-copy domain match. All **539,248 pair/policy records** passed. Exact
+source checks and completed producer/checker process journals are bound in
+`metadata/expanded_duplication_domain_controls_completed_20260930.json`.
+
+There are 126,713 models without retained Pfam hits and 2,353 with policy
+disagreement. Under the alignment/e-value policy, 53,390 pairs have the same
+ordered annotations, 13,411 have different annotation content, 20 have the same
+content in a different order, 11,845 have one unannotated endpoint and 56,146
+have neither endpoint annotated. Matching annotation order alone is not the
+conservative-architecture criterion used for background eligibility.
+Single-copy candidate matches number 32,347/32,329/32,202/32,184 under alignment
+E-value/alignment bit score/envelope E-value/envelope bit score, respectively;
+these overlapping policies are not independent observations.
+
+Versioned `inventory_duplication_domain_controls_v2.py` and
+`readback_duplication_domain_controls_v2.py` retain the original ordered,
+repeat-aware annotation logic while reading the complete audited primary queue.
+They require the exact producer/readback binding for all queue files. The older
+producer's reference-specific additional-model partition is not reused against
+a different base queue. This primary inventory does not refresh sibling-reference
+comparisons or ancestral domain events; those still require their own full
+expanded source ledgers. The expanded background/control workflow is documented
+in [the refresh workflow](terminal-sister-backgrounds-20260927.md#expanded-catalog-refresh-september-30).

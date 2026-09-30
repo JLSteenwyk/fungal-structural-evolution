@@ -1,0 +1,54 @@
+{
+  "plan": "metadata/terminal_sister_background_plan_20260930.json",
+  "dependency": {
+    "unit": "fungal-terminal-sister-background-20260930.service",
+    "service": "fungal-terminal-sister-background-20260930.service",
+    "pid": 2610642,
+    "created": 1790784934.18,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/inventory_terminal_sister_backgrounds.py",
+      "--plan",
+      "metadata/terminal_sister_background_plan_20260930.json"
+    ],
+    "plan": "metadata/terminal_sister_background_plan_20260930.json",
+    "plan_sha256": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "checked_utc": "2026-09-30T16:15:34.915345+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 2,
+      "minimum_free_disk_bytes": 107374182400,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "All 140719 unchanged resolved trees and 3154373 terminal pair rows with new 1955694-protein structure bridge; full missing/identical-model categories. Independent full reconstruction required; excludes no candidate based on structural outcome. Existing CPU only.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+  },
+  "output": "metadata/terminal_sister_background_completed_readback_20260930.json",
+  "pins": {
+    "scripts/readback_terminal_sister_backgrounds.py": "dcfcd18d2fd9f96c0fe84f367ac57f5692a631512da3dcbfca909725a0824dcb",
+    "scripts/check_terminal_sister_readback_cases.py": "251c5ce9e402783fe103a36d531772fcaf24e3ab0bc27949c428509fbad12e24",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/terminal_sister_background_plan_20260930.json": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "metadata/terminal_sister_background_launch_20260930.json": "0c693146c6b36f87e74f86624edcf94897fb001737cc159ae9f16d48b1eb3cf4"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Independent postorder traversal of every native tree and every terminal pair, exact model and source-field reconstruction; producer wait excluded.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

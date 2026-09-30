@@ -1,0 +1,15 @@
+{
+  "status": "passed_full_duplication_domain_control_readback",
+  "plan_sha256": "7d1a77f313b7eefedce7033ff6c5461ba8dbc2488c1175bffae3349e6059031f",
+  "producer_receipt_sha256": "bdc0393b5b0a9d6886f86669f2c629c10858a80e3283db607859bdd23453bcd2",
+  "models": 276682,
+  "unique_model_pairs": 134812,
+  "pair_policy_rows": 539248,
+  "single_copy_domain_matches_by_policy": {
+    "alignment_evalue": 32347,
+    "alignment_bitscore": 32329,
+    "envelope_evalue": 32202,
+    "envelope_bitscore": 32184
+  },
+  "scope": "Every model export independently rejoined from registry segments and policy membership; full primary duplication queue, all architecture categories/counts and every single-copy domain match independently reconstructed. Same frozen Pfam source, not independent annotation searches or structural domain validation. No biological gain/loss/rearrangement or duplication-effect inference. Expanded sibling-reference comparisons are outside this primary-queue annotation inventory and remain outstanding."
+}

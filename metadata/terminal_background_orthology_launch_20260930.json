@@ -1,0 +1,29 @@
+{
+  "unit": "fungal-terminal-background-orthology-20260930.service",
+  "service": "fungal-terminal-background-orthology-20260930.service",
+  "pid": 2610720,
+  "created": 1790784935.08,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/query_terminal_background_orthology.py",
+    "--plan",
+    "metadata/terminal_background_orthology_plan_20260930.json"
+  ],
+  "plan": "metadata/terminal_background_orthology_plan_20260930.json",
+  "plan_sha256": "3dadc5141b2f40e365b2d68af80dde6957dd5c38aacf37b536e509db72b80a88",
+  "checked_utc": "2026-09-30T16:15:35.812106+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Complete compiled merge over both audited 15.7-GB reciprocal native streams, before/after hashes, original protein ordinals and all new modeled candidates; guide readback must finish first.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+}

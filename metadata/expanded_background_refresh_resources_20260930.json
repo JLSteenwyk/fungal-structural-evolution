@@ -1,0 +1,28 @@
+{
+  "status": "planned_full_expanded_background_refresh",
+  "checked_utc": "2026-09-30T16:15:30.394181+00:00",
+  "stages": 8,
+  "cpu_per_stage": 1,
+  "memory_gib_per_stage": 16,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "maximum_reserved_cpu": 8,
+  "maximum_reserved_memory_gib": 128,
+  "output_allowance_total_gib": 30,
+  "planning_hours_per_stage": [
+    0.1,
+    6
+  ],
+  "runtime_is_uncalibrated": true,
+  "source_tree_counts": {
+    "profile": 70307,
+    "mafft": 70412
+  },
+  "source_terminal_pair_counts": {
+    "profile": 1577204,
+    "mafft": 1577169
+  },
+  "frozen_model_protein_links": 1955694,
+  "scope": "Complete terminal-pair inventories under both unchanged guides, new frozen bridge, complete union and modeled candidate subset, full native membership scans and independent binary searches, exact model/version/confidence joins and inventory readback. No response-based selection; expanded matched controls and inference remain downstream."
+}

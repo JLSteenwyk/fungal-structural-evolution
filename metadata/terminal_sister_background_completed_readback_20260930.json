@@ -1,0 +1,40 @@
+{
+  "status": "passed_full_terminal_sister_inventory_readback",
+  "producer_receipt_sha256": "785345c4850f2badb2056bedaa6ae2169784fef1429964de68476a990d86eef5",
+  "config_sha256": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5",
+  "plan_sha256": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+  "guides": [
+    {
+      "guide": "profile",
+      "trees": 70307,
+      "pairs": 1577204,
+      "counts": {
+        "reported_duplication:two_distinct_models": 134430,
+        "cross_taxon_unreported_candidate:one_model": 425287,
+        "reported_duplication:no_models": 309496,
+        "cross_taxon_unreported_candidate:no_models": 524058,
+        "cross_taxon_unreported_candidate:two_distinct_models": 147159,
+        "reported_duplication:one_model": 16443,
+        "cross_taxon_unreported_candidate:identical_model": 13037,
+        "reported_duplication:identical_model": 7294
+      }
+    },
+    {
+      "guide": "mafft",
+      "trees": 70412,
+      "pairs": 1577169,
+      "counts": {
+        "reported_duplication:two_distinct_models": 134391,
+        "cross_taxon_unreported_candidate:one_model": 425367,
+        "reported_duplication:no_models": 309579,
+        "cross_taxon_unreported_candidate:no_models": 523909,
+        "cross_taxon_unreported_candidate:two_distinct_models": 147099,
+        "reported_duplication:one_model": 16426,
+        "cross_taxon_unreported_candidate:identical_model": 13104,
+        "reported_duplication:identical_model": 7294
+      }
+    }
+  ],
+  "checker_sha256": "dcfcd18d2fd9f96c0fe84f367ac57f5692a631512da3dcbfca909725a0824dcb",
+  "scope": "All native trees traversed independently in postorder; exact terminal pair sets, every exported field, model joins, branch lengths and all summary counts reconstructed. No inference of speciation, biological orthology, matched comparability or duplication effect."
+}

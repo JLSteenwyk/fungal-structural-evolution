@@ -1,0 +1,42 @@
+{
+  "source_plan": "metadata/expanded_duplication_domain_control_plan_20260930.json",
+  "output": "metadata/expanded_duplication_domain_control_completed_readback_20260930.json",
+  "pins": {
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/receipt.json": "a688f65d59a7c08265831e7446ed652d7bcc9d2b0d691c994757d70158652807",
+    "results/domains/whole-proteome-structure-domain-registry-20260928-v1/structure_domains.sqlite": "3e4be904bc2a0eb358f2d6d3b1744ff0f6ebfa95decc1e241647300adb8e3a2f",
+    "results/domains/whole-proteome-structure-domain-registry-readback-20260928-v1/receipt.json": "6e90bc2ffeadb334063467afa1ce217bee308e097e5d4a72b1064ab1ddee3e26",
+    "metadata/whole_proteome_structure_domain_registry_completed_20260928.json": "e17fe9d026c9a5374d196e4aa531cb897ced0b8902058ba174beb15015a8cbb4",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/inventory_duplication_domain_controls.py": "cd3b56a30885328141314244bd06a4df6e457f353526c87580b7913eaa7331ce",
+    "scripts/readback_duplication_domain_controls.py": "317afc8f96f03cd9960a4cd106239eae624418144457a64cd9f99651f46ad250",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/model_pairs.tsv": "fa36f1a6ea24d82bf55ae5cb0e33213e720d416a94f338026ecab47b95f02c62",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "scripts/inventory_duplication_domain_controls_v2.py": "22cd1d5a3577ae1d1af683c6bc0f937de44a830a8cba11ad6ddd4208c67901fb",
+    "scripts/readback_duplication_domain_controls_v2.py": "43f3c16361b22b33aa5213c0d0068e2cc9bd5cbe2a2eac07a60a863f01318130",
+    "metadata/expanded_duplication_domain_control_plan_20260930.json": "5258e66e58855a50d5ecbd9585466a1408dfb6f56d82799f5553ed8903b21cfe",
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json": "53466da3342a129f4a03a6cdf7803318d937e88cf8ba362f2d80978253e5ef7b"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "models": 276682,
+    "model_pairs": 134812,
+    "policies": 4,
+    "basis": "All model annotations rebuilt from independent raw segment and policy-membership joins; every complete primary pair/category/match reconstructed. Producer wait excluded."
+  }
+}

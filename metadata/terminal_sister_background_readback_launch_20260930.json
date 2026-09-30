@@ -1,0 +1,31 @@
+{
+  "unit": "fungal-terminal-sister-background-readback-20260930.service",
+  "service": "fungal-terminal-sister-background-readback-20260930.service",
+  "pid": 2610647,
+  "created": 1790784934.24,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_terminal_sister_backgrounds.py",
+    "--config",
+    "metadata/terminal_sister_background_readback_plan_20260930.json"
+  ],
+  "plan": "metadata/terminal_sister_background_readback_plan_20260930.json",
+  "plan_sha256": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5",
+  "checked_utc": "2026-09-30T16:15:34.974432+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Independent postorder traversal of every native tree and every terminal pair, exact model and source-field reconstruction; producer wait excluded.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+  "config": "metadata/terminal_sister_background_readback_plan_20260930.json",
+  "config_sha256": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5"
+}

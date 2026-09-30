@@ -1288,3 +1288,77 @@ identical-model, and overlapping-exclusion fixtures passed. Reproduce with
 evidence: `metadata/background_whole_protein_coverage_completed_20260928.json`.
 Domain/orientation checks, confidence calibration, phylogenetic matching and
 inferential comparisons remain outstanding.
+
+
+## Expanded catalog refresh (September 30)
+
+The completed September 27 matching/control results retain their older frozen
+structure catalog. They are not silently relabeled as expanded results. The
+September 30 refresh starts again from **all 140,719 resolved trees and all
+3,154,373 guide-specific terminal sister pairs**, using the independently
+verified September 28 bridge of 1,955,694 protein/model links. No missing-model
+pair is removed from the inventory and no structural response selects a pair.
+All prior trees, duplication flags, branch lengths and annotation policies
+remain unchanged; only the frozen structure catalog and downstream source
+bindings are refreshed.
+
+Eight source-bound stages have launched with captured PID, creation time and
+command: full inventory, independent native-tree reconstruction, complete guide
+union, independent sorted-cursor union checking, full native orthology scans,
+independent reciprocal-record binary searches, model/metadata inventory and its
+complete independent reconstruction. The latter stages wait for their recorded
+prerequisites and require checksum-bound completion/readback receipts. Their
+plans and process identities are listed in
+`metadata/expanded_background_refresh_queued_20260930.json`. Successful future
+completion must be collected from complete artifacts, proofs and process
+journals; an absent transient unit's default success fields alone are insufficient.
+
+The full inventory producer reports 147,159 profile and 147,099 MAFFT cross-taxon
+unreported pairs with two distinct models, compared with 71,858/71,822 in the
+older inventory. It retains 13,037/13,104 identical-model pairs. These are
+**fully independently checked inventory counts**, not ortholog membership,
+matched controls, independent biological events or significance. All native
+source fields and counts passed the full postorder reconstruction, and exact
+producer/checker completion journals and hashes were collected in
+`metadata/expanded_terminal_sister_background_inventory_completed_20260930.json`.
+The unchanged full inventory denominators are 1,577,204/1,577,169; the two guide
+counts overlap and must not be added as independent events.
+
+Full expanded primary duplication annotations already passed independent
+registry reconstruction: **276,682 models, 134,812 distinct pairs and 539,248
+pair/policy rows**. All four original Pfam annotation alternatives and repeat
+occurrences remain explicit. Expanded background annotation production and
+its separate raw-registry readback wait for the refreshed model inventory.
+For both sets, missing annotations mean unknown; they do not establish domain
+absence. Expanded sibling-reference comparisons require a separate refreshed
+reference ledger and are not replaced by the primary annotation inventory.
+See `metadata/expanded_duplication_domain_controls_completed_20260930.json`.
+
+Sequence/focal-taxon matching-support production and independent vector-mask
+readback are queued for all **283,409 modeled duplicate target links** under
+three native-background qualification sets (850,227 support rows). Complete
+four-policy architecture support and independent reconstruction then cover
+3,400,908 target/set/policy rows. Versioned architecture scripts additionally
+check every future input against its verified source artifact manifest before
+and after calculation, even when the source did not exist when the static plan
+was written. A 60-row fixture exercises all five architecture statuses, three
+qualification sets and four policies; changed source artifacts and rehashed
+false support both fail. Validation evidence is
+`metadata/expanded_architecture_source_binding_validation_20260930.json`.
+
+The original 54 fixed matching scenarios, complete unmatched dispositions,
+with-replacement dependence and no-rematching-after-screening policy remain
+required for expanded matching. The candidate graph and selections must wait
+for full architecture support verification; new structural measurements and
+all numerical/coverage/confidence/orientation checks remain downstream. Older
+model-fitting runs continue on their explicitly frozen inputs. Neither this
+refresh nor the older completed matching proves a duplication effect.
+
+Each inventory/union/membership/model stage has a one-CPU/16-GiB/no-swap limit;
+annotation and support stages have one CPU/24 GiB/no swap. Per-stage planning
+ranges of 0.1–6 hours exclude prerequisite waits and are not calibrated ETAs.
+The initial eight-stage output allowance is 30 GiB, with up to 5 GiB for each
+annotation or architecture-support producer. New directories preserve all old
+and failed runs. The resource plan was recorded before launch in
+`metadata/expanded_background_refresh_resources_20260930.json`; later plans
+contain their own allowances. No GPU predictions or paid resources launched.

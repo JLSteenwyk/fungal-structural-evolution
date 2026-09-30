@@ -1,0 +1,66 @@
+{
+  "source": "results/orthology/terminal-background-orthology-20260930-v1",
+  "readback": "metadata/terminal_background_orthology_completed_readback_20260930.json",
+  "dependency": {
+    "unit": "fungal-terminal-background-orthology-readback-20260930.service",
+    "service": "fungal-terminal-background-orthology-readback-20260930.service",
+    "pid": 2610723,
+    "created": 1790784935.13,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_background_orthology.py",
+      "--config",
+      "metadata/terminal_background_orthology_readback_plan_20260930.json"
+    ],
+    "plan": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+    "plan_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29",
+    "checked_utc": "2026-09-30T16:15:35.851427+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 0.01,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "Independent fixed-record binary searches for every expanded modeled candidate in both reciprocal streams, every source-field and ordinal checked; complete stream hashes bind prior global ordering audits.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+    "config": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+    "config_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29"
+  },
+  "inventory": "results/orthology/terminal-sister-background-inventory-20260930-v1",
+  "inventory_readback": "metadata/terminal_sister_background_completed_readback_20260930.json",
+  "targets": "results/orthology/duplication-candidate-tree-review-20260928-v1",
+  "output": "results/orthology/expanded-background-matching-support-20260930-v1",
+  "pins": {
+    "scripts/assess_background_matching_support.py": "90c8cbfc559f862cd5c14365ec250a700966850cc0d403c532d9821e0fe28c15",
+    "scripts/check_background_support_cases.py": "8645a022b0d880fb66b57adf78c70a141aa4396ccb4d94d84a1ac6bc99a1ea18",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+    "metadata/duplication_candidate_tree_review_completed_20260928.json": "14accbb145ef085a00ac7cea889798be3c1f62e6342a6b763008f1b237a831b7",
+    "metadata/terminal_background_orthology_readback_launch_20260930.json": "868da1ed0e31b8190c6ab7e9d3e890c6179258cc4b3c2c3e959a75ae9a4780fa",
+    "metadata/terminal_sister_background_plan_20260930.json": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "metadata/terminal_sister_background_readback_plan_20260930.json": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "target_records": 283409,
+    "expected_rows": 850227,
+    "basis": "All expanded reviewed two-model duplicate targets including identical-model endpoints, three native-orthology qualification sets and all original sequence-distance/focal/nonfocal support ranges. No outcome selection; complete independent count reconstruction required."
+  }
+}

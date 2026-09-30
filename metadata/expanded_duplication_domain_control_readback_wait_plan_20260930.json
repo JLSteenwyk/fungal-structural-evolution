@@ -1,0 +1,35 @@
+{
+  "dependencies": [
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_duplication_domain_controls_v2.py",
+    "--plan",
+    "metadata/expanded_duplication_domain_control_readback_plan_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "models": 276682,
+    "model_pairs": 134812,
+    "policies": 4,
+    "basis": "All model annotations rebuilt from independent raw segment and policy-membership joins; every complete primary pair/category/match reconstructed. Producer wait excluded."
+  },
+  "pins": {
+    "metadata/expanded_duplication_domain_control_plan_20260930.json": "5258e66e58855a50d5ecbd9585466a1408dfb6f56d82799f5553ed8903b21cfe",
+    "metadata/expanded_duplication_domain_controls_launch_20260930.json": "53466da3342a129f4a03a6cdf7803318d937e88cf8ba362f2d80978253e5ef7b",
+    "metadata/expanded_duplication_domain_control_readback_plan_20260930.json": "7d1a77f313b7eefedce7033ff6c5461ba8dbc2488c1175bffae3349e6059031f",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/readback_duplication_domain_controls_v2.py": "43f3c16361b22b33aa5213c0d0068e2cc9bd5cbe2a2eac07a60a863f01318130"
+  }
+}

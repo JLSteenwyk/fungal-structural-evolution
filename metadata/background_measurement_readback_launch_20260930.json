@@ -1,0 +1,31 @@
+{
+  "unit": "fungal-background-measurement-readback-20260930.service",
+  "service": "fungal-background-measurement-readback-20260930.service",
+  "pid": 2610762,
+  "created": 1790784940.66,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_measurements.py",
+    "--config",
+    "metadata/background_measurement_readback_plan_20260930.json"
+  ],
+  "plan": "metadata/background_measurement_readback_plan_20260930.json",
+  "plan_sha256": "07c1d0ee7f0cab5ac00b6af7d5932efbb9de4add6a69a7353b8f85792ec33e51",
+  "checked_utc": "2026-09-30T16:15:41.389221+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Reconstruct every expanded candidate field, exact model/metadata join, native eligibility, complete model/pair sets and work partitions independently. No coordinates, alignments or matched effects yet.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+  "config": "metadata/background_measurement_readback_plan_20260930.json",
+  "config_sha256": "07c1d0ee7f0cab5ac00b6af7d5932efbb9de4add6a69a7353b8f85792ec33e51"
+}

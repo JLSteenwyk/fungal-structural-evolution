@@ -1,0 +1,54 @@
+{
+  "plan": "metadata/terminal_sister_guide_comparison_plan_20260930.json",
+  "dependency": {
+    "unit": "fungal-terminal-sister-guide-comparison-20260930.service",
+    "service": "fungal-terminal-sister-guide-comparison-20260930.service",
+    "pid": 2610650,
+    "created": 1790784934.3,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_terminal_sister_guides.py",
+      "--plan",
+      "metadata/terminal_sister_guide_comparison_plan_20260930.json"
+    ],
+    "plan": "metadata/terminal_sister_guide_comparison_plan_20260930.json",
+    "plan_sha256": "21f9578d33ceef857fcec0c0a214523bafcf589678c2bb94fcdc18f83dcdcf1d",
+    "checked_utc": "2026-09-30T16:15:35.042865+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 8,
+      "minimum_free_disk_bytes": 107374182400,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "Disk-backed complete union of all 3154373 new source rows; all missing-model rows retained and modeled subset determined only by original candidate label and model availability.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+  },
+  "pins": {
+    "scripts/readback_terminal_sister_guides.py": "6edce69e750b9b89be8b2ac365ff5435e1a459944ac95040b655402c2669fb1d",
+    "scripts/check_terminal_guide_readback_cases.py": "6421919000e98628f986c94d7a2cf0ae7e7c7507a1cf72611e563a44f2571eba",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/terminal_sister_guide_comparison_plan_20260930.json": "21f9578d33ceef857fcec0c0a214523bafcf589678c2bb94fcdc18f83dcdcf1d",
+    "metadata/terminal_sister_guide_comparison_launch_20260930.json": "cc5855fc2e767526212fc6230286074bb5c71fd5c436d8113fcae9f5f3615a08"
+  },
+  "output": "metadata/terminal_sister_guide_comparison_completed_readback_20260930.json",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Every stored source row and full union independently reconstructed by sorted-cursor merge; every modeled candidate subset row checked, including one-guide, missing and identical models.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

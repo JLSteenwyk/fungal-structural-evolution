@@ -1,0 +1,60 @@
+{
+  "verified_sources": [
+    {
+      "receipt": "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/receipt.json",
+      "readback": "metadata/expanded_duplication_domain_control_completed_readback_20260930.json",
+      "readback_status": "passed_full_duplication_domain_control_readback"
+    },
+    {
+      "receipt": "results/structural_comparisons/expanded-background-domain-controls-20260930-v1/receipt.json",
+      "readback": "metadata/expanded_background_domain_control_completed_readback_20260930.json",
+      "readback_status": "passed_full_background_domain_control_readback"
+    },
+    {
+      "receipt": "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json",
+      "readback": "metadata/background_measurement_inventory_completed_readback_20260930.json",
+      "readback_status": "passed_full_background_measurement_inventory_readback"
+    },
+    {
+      "receipt": "results/orthology/expanded-background-matching-support-20260930-v1/receipt.json",
+      "readback": "metadata/expanded_background_matching_support_completed_readback_20260930.json",
+      "readback_status": "passed_full_background_matching_support_readback"
+    }
+  ],
+  "annotation_tables": [
+    "results/structural_comparisons/expanded-duplication-domain-controls-20260930-v1/model_annotations.jsonl",
+    "results/structural_comparisons/expanded-background-domain-controls-20260930-v1/model_annotations.jsonl"
+  ],
+  "background_links": "results/structural_comparisons/background-measurement-inventory-20260930-v1/candidate_measurement_links.tsv",
+  "target_links": "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv",
+  "support_table": "results/orthology/expanded-background-matching-support-20260930-v1/target_support.tsv",
+  "output": "results/orthology/expanded-architecture-matched-background-support-20260930-v1",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 5,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "target_records": 283409,
+    "expected_rows": 3400908,
+    "basis": "All 283409 expanded targets x three qualification sets x four original annotation policies. Every source artifact checked at both ends; all unknown/different/nonconservative architectures and zero-support targets remain explicit. Full independent grid replay required."
+  },
+  "pins": {
+    "scripts/assess_architecture_matched_support_v2.py": "61c7d9f8b98b0e351082c97dff7e948c8903c03794e389b188959d32362f192e",
+    "scripts/readback_architecture_support_v2.py": "b1953f8ae90d92f733a9fcc70c84e2ef559b330624e59c05f08528427de7e66c",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/expanded_architecture_source_binding_validation_20260930.json": "6f2a983e7667e7837a9e2c2d8c55f01f394ae5f7bdbe12b020a8c7d3dff11ee1",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/event_model_pair_links.tsv": "bf53c328d096dfc9d1440bcb0cf408c9c2863095f67ff5429fa7849a7ff4ae88",
+    "results/structural_comparisons/duplication-model-pair-queue-readback-20260928-v1.json": "984c7af568b0c95f6f78eca164de9a9cb305a5a1d91972af0aef503fffbbc6c7",
+    "metadata/expanded_duplication_domain_control_plan_20260930.json": "5258e66e58855a50d5ecbd9585466a1408dfb6f56d82799f5553ed8903b21cfe",
+    "metadata/expanded_background_domain_control_plan_20260930.json": "8dbd70901fcf687db9d7452e803e02359d0e2447d00f81f322ef52a90356f727",
+    "metadata/background_measurement_inventory_plan_20260930.json": "be9ebf14109a8b314ee59a4e3d30376073ba0cba9e3becf6071f69ff1401fdd9",
+    "metadata/expanded_background_matching_support_plan_20260930.json": "36d70da4dc5dc90092665b48d6e6c7f0e359424def674aac8f7902b36d39fc3d"
+  }
+}

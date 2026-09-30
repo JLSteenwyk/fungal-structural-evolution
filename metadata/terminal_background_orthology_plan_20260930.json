@@ -1,0 +1,89 @@
+{
+  "source": "results/orthology/terminal-sister-guide-comparison-20260930-v1",
+  "dependency": {
+    "unit": "fungal-terminal-sister-guide-readback-20260930.service",
+    "service": "fungal-terminal-sister-guide-readback-20260930.service",
+    "pid": 2610654,
+    "created": 1790784934.36,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_terminal_sister_guides.py",
+      "--config",
+      "metadata/terminal_sister_guide_readback_plan_20260930.json"
+    ],
+    "plan": "metadata/terminal_sister_guide_readback_plan_20260930.json",
+    "plan_sha256": "fdc10ac7ba6acf973366e1e9fc16dc345c92c5a8135dc1bc1d353024c75629f5",
+    "checked_utc": "2026-09-30T16:15:35.107418+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "output_allowance_gib": 0.01,
+      "planning_hours": [
+        0.1,
+        6
+      ],
+      "basis": "Every stored source row and full union independently reconstructed by sorted-cursor merge; every modeled candidate subset row checked, including one-guide, missing and identical models.",
+      "gpu": false,
+      "paid_resources": false
+    },
+    "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+    "config": "metadata/terminal_sister_guide_readback_plan_20260930.json",
+    "config_sha256": "fdc10ac7ba6acf973366e1e9fc16dc345c92c5a8135dc1bc1d353024c75629f5"
+  },
+  "streams": [
+    {
+      "guide": "profile",
+      "receipt": "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json",
+      "stream": "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/sorted_pairs.hex",
+      "audit_plan": "metadata/ortholog_pair_reciprocity_profile_plan_20260926.json",
+      "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt",
+      "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt"
+    },
+    {
+      "guide": "mafft",
+      "receipt": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json",
+      "stream": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/sorted_pairs.hex",
+      "audit_plan": "metadata/ortholog_pair_reciprocity_mafft_plan_20260926.json",
+      "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt",
+      "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt"
+    }
+  ],
+  "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt",
+  "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt",
+  "compiler": "/usr/bin/g++",
+  "cpp": "scripts/query_ortholog_pair_membership.cpp",
+  "fixtures": "scripts/check_ortholog_membership_cases.py",
+  "python": "/home/bizon/anaconda3/bin/python",
+  "output": "results/orthology/terminal-background-orthology-20260930-v1",
+  "pins": {
+    "scripts/query_terminal_background_orthology.py": "627e0389c4377c9620cdee5322ddf3847c3e3190271705bd92c3dd33a0f39c3a",
+    "scripts/query_ortholog_pair_membership.cpp": "e43ba20be993cb9f42b2a14dea6078b31237c4aaeeae06f61117c32658a8db82",
+    "scripts/check_ortholog_membership_cases.py": "769c3bffb0d3c95f8fdf8bcab3964ff9cde6c72f4c6d10ec23584abdf15be841",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/usr/bin/g++": "52f1ddb33fe78b9441e0f42e9cd22c571f1101938e046c8a26582494e041cc73",
+    "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/receipt.json": "1676148b2998d42d65c024091c0d7f391c88f7d1490416b9a06319d460944ecf",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/receipt.json": "dc994c82a4f889f1c1b54bb813d4a12493369251694c85456b679f28805d196b",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt": "34988f2feee9fbe98037d427ec3d5b2b952ecbccb8f7d074875826f0d817068b",
+    "metadata/terminal_sister_guide_comparison_plan_20260930.json": "21f9578d33ceef857fcec0c0a214523bafcf589678c2bb94fcdc18f83dcdcf1d",
+    "metadata/terminal_sister_guide_comparison_launch_20260930.json": "cc5855fc2e767526212fc6230286074bb5c71fd5c436d8113fcae9f5f3615a08",
+    "metadata/terminal_sister_guide_readback_plan_20260930.json": "fdc10ac7ba6acf973366e1e9fc16dc345c92c5a8135dc1bc1d353024c75629f5",
+    "metadata/terminal_sister_guide_readback_launch_20260930.json": "5168c7a362e5a048a695126eaea6e3df4a53ac003b35ebd3b1e419a69f122b15"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 2,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Complete compiled merge over both audited 15.7-GB reciprocal native streams, before/after hashes, original protein ordinals and all new modeled candidates; guide readback must finish first.",
+    "gpu": false,
+    "paid_resources": false
+  }
+}

@@ -9992,3 +9992,37 @@ does not establish universal coverage or complete the biological project.
   `metadata/expanded_duplication_coverage_screen_figure_completed_20260930.json`.
   Missing structures are not biological absence and overlapping guide counts
   are not independent events. All eight scientific aims remain incomplete.
+
+
+- September 30: resumed full expanded duplication/background integration.
+  Launched all eight source-bound background refresh stages over the complete
+  140,719-tree/3,154,373-terminal-pair design and September 28 model bridge;
+  queued expanded background annotations and full sequence/architecture support
+  checks for 283,409 targets. No response-based subset or passing-screen-only
+  pool is substituted. Source, future-artifact and false-support rejection
+  fixtures passed; every final selection still requires the original 54 fixed
+  scenarios and explicit unmatched records. Full refresh/support results remain
+  pending. CPU-only resource limits and exact process identities are saved in
+  the September 30 plans/launches; GPU inference remains paused.
+
+- September 30: full expanded primary duplication annotations completed and
+  passed separate native registry and pair reconstruction: 276,682 models,
+  134,812 distinct pairs and 539,248 four-policy records. All source hashes and
+  exact captured-process journals were checked for both completed services;
+  completion evidence is `metadata/expanded_duplication_domain_controls_completed_20260930.json`.
+  Missing annotation, policy disagreement and repeats remain explicit. Expanded
+  sibling-reference comparisons, complete background matching, coordinate/
+  orientation controls and biological duplication inference remain incomplete.
+  None of the eight scientific aims is complete.
+
+
+- September 30: complete expanded terminal sister inventory passed independent
+  traversal of every native tree and pair: 140,719 trees, 3,154,373 pair records
+  and the full 1,955,694-link frozen model bridge. All fields, missing/identical
+  model categories and counts agree. Two exact captured-process completion
+  journals and complete source/artifact hashes were collected in
+  `metadata/expanded_terminal_sister_background_inventory_completed_20260930.json`.
+  Cross-taxon unreported pairs with two distinct models number 147,159 profile
+  and 147,099 MAFFT, with overlap retained. Guide-union checking, native
+  orthology, model inventories and fixed matching remain downstream; these
+  counts are not biological speciation, independent events or effect tests.

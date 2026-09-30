@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-expanded-background-domain-controls-20260930.service",
+  "pid": 2614327,
+  "created": 1790785216.14,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/expanded_background_domain_control_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/expanded_background_domain_control_wait_plan_20260930.json",
+  "plan_sha256": "d10dfc1b765214bbb26e2cc26d3e8ad8163e99330ae05e3d96c91732255e4b42",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 5,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "models": null,
+    "model_pairs": null,
+    "policies": 4,
+    "basis": "Every expanded modeled background candidate and qualified pair, using the same four annotation policies. Actual full-scope counts established only by upstream audited inventory; no old 78372-row subset assumed."
+  },
+  "checked_utc": "2026-09-30T16:20:16.880531+00:00"
+}

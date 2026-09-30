@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    "metadata/expanded_background_matching_support_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_matching_support.py",
+    "--plan",
+    "metadata/expanded_background_matching_support_plan_20260930.json",
+    "--output",
+    "metadata/expanded_background_matching_support_completed_readback_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 24,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "gpu": false,
+    "paid_resources": false,
+    "target_records": 283409,
+    "expected_rows": 850227,
+    "basis": "All expanded reviewed two-model duplicate targets including identical-model endpoints, three native-orthology qualification sets and all original sequence-distance/focal/nonfocal support ranges. No outcome selection; complete independent count reconstruction required."
+  },
+  "pins": {
+    "scripts/assess_background_matching_support.py": "90c8cbfc559f862cd5c14365ec250a700966850cc0d403c532d9821e0fe28c15",
+    "scripts/check_background_support_cases.py": "8645a022b0d880fb66b57adf78c70a141aa4396ccb4d94d84a1ac6bc99a1ea18",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/receipt.json": "bc0b69e50881f0a5c60a5367d4111a002811ff65d847664acbfbdf34bbd7f7cb",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/profile_candidate_tree_checks.tsv": "4b4827de0eb5c195cc3c868b7b20ec38ca9566fdea94a7097144d51783ddc1a5",
+    "results/orthology/duplication-candidate-tree-review-20260928-v1/mafft_candidate_tree_checks.tsv": "7bd94d5cef32a7d472ef0218dc4eb3d6dcf6dc004269ac9a778c0cede68af510",
+    "metadata/duplication_candidate_tree_review_completed_20260928.json": "14accbb145ef085a00ac7cea889798be3c1f62e6342a6b763008f1b237a831b7",
+    "metadata/terminal_background_orthology_readback_launch_20260930.json": "868da1ed0e31b8190c6ab7e9d3e890c6179258cc4b3c2c3e959a75ae9a4780fa",
+    "metadata/terminal_sister_background_plan_20260930.json": "4dc3d588ab0075b1e2d4458c694f544acf73b3402edc3a2bc78a66d9fcca53ed",
+    "metadata/terminal_sister_background_readback_plan_20260930.json": "fb312ea75fb7a751afbc23e8494296537ba48b25a30790faa682e9a87e8852b5",
+    "metadata/expanded_background_matching_support_plan_20260930.json": "36d70da4dc5dc90092665b48d6e6c7f0e359424def674aac8f7902b36d39fc3d",
+    "metadata/expanded_background_matching_support_launch_20260930.json": "135bb756de429abd016e9c5d8e1e2b2e894e91fc37b23d7cdb180cc14acf3e85",
+    "scripts/readback_background_matching_support.py": "cdcd07a0870c15bf62dea32ca0a6282d468504422078aae5acbc764e721dddbb",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  }
+}

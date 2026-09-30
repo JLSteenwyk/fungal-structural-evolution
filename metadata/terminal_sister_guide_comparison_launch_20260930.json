@@ -1,0 +1,30 @@
+{
+  "unit": "fungal-terminal-sister-guide-comparison-20260930.service",
+  "service": "fungal-terminal-sister-guide-comparison-20260930.service",
+  "pid": 2610650,
+  "created": 1790784934.3,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_terminal_sister_guides.py",
+    "--plan",
+    "metadata/terminal_sister_guide_comparison_plan_20260930.json"
+  ],
+  "plan": "metadata/terminal_sister_guide_comparison_plan_20260930.json",
+  "plan_sha256": "21f9578d33ceef857fcec0c0a214523bafcf589678c2bb94fcdc18f83dcdcf1d",
+  "checked_utc": "2026-09-30T16:15:35.042865+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "minimum_free_disk_bytes": 107374182400,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Disk-backed complete union of all 3154373 new source rows; all missing-model rows retained and modeled subset determined only by original candidate label and model availability.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending."
+}

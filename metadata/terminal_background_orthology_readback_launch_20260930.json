@@ -1,0 +1,31 @@
+{
+  "unit": "fungal-terminal-background-orthology-readback-20260930.service",
+  "service": "fungal-terminal-background-orthology-readback-20260930.service",
+  "pid": 2610723,
+  "created": 1790784935.13,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_background_orthology.py",
+    "--config",
+    "metadata/terminal_background_orthology_readback_plan_20260930.json"
+  ],
+  "plan": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+  "plan_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29",
+  "checked_utc": "2026-09-30T16:15:35.851427+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.01,
+    "planning_hours": [
+      0.1,
+      6
+    ],
+    "basis": "Independent fixed-record binary searches for every expanded modeled candidate in both reciprocal streams, every source-field and ordinal checked; complete stream hashes bind prior global ordering audits.",
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "Live launched or dependency-waiting process; full expanded-background stage completion and independent verification remain pending.",
+  "config": "metadata/terminal_background_orthology_readback_plan_20260930.json",
+  "config_sha256": "80954db96ee099f8e6a07b427214e4a6185fefe1dbb26a49015f1edc5974bc29"
+}

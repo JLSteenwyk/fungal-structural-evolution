@@ -1,0 +1,17 @@
+{
+  "status": "passed_full_fixture_architecture_grid_and_source_binding_rejection",
+  "checked_utc": "2026-09-30T16:27:09.054276+00:00",
+  "rows": 60,
+  "architecture_statuses": 5,
+  "checks": [
+    "all_three_background_sets_and_four_policies",
+    "future_source_artifact_missing_static_pin_change_rejected_by_producer_and_checker",
+    "rehashed_false_support_rejected"
+  ],
+  "script_hashes": {
+    "scripts/check_expanded_architecture_source_bindings.py": "a107dd22eb6833461c20a5b0d4e2f22d4a4b3bdb25c9850c81f9dee89c628859",
+    "scripts/assess_architecture_matched_support_v2.py": "61c7d9f8b98b0e351082c97dff7e948c8903c03794e389b188959d32362f192e",
+    "scripts/readback_architecture_support_v2.py": "b1953f8ae90d92f733a9fcc70c84e2ef559b330624e59c05f08528427de7e66c"
+  },
+  "scope": "Synthetic source/provenance validation; not full production completion."
+}

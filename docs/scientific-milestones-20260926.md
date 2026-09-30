@@ -452,3 +452,23 @@ predictor calibration, matched controls, ascertainment correction or biological
 duplication inference. See
 [full coverage evidence](duplication-sampling-coverage-20260926.md#expanded-original-length-screening-completed-september-30).
 All eight scientific aims remain incomplete.
+
+
+September 30 expanded matching preparation: full primary duplication domain
+annotations passed independent reconstruction for all 276,682 models and
+539,248 pair/policy rows. Full native terminal-pair background refresh, orthology,
+model/annotation joins and sequence/architecture-support checking have launched
+or queued against the expanded catalog; full matching and new measurements
+remain pending. Original 54 matching scenarios and explicit unmatched outcomes
+remain required, without selection on structural response or rematching after
+coverage filtering. Expanded sibling-reference comparisons remain a separate
+required dependency. See [the complete refresh workflow](terminal-sister-backgrounds-20260927.md#expanded-catalog-refresh-september-30).
+All eight scientific evolutionary aims remain incomplete.
+
+
+The full expanded terminal-pair inventory subsequently completed and passed
+independent native-tree reconstruction for all 140,719 trees and 3,154,373
+records. Source hashes and both exact process completion journals were checked;
+see `metadata/expanded_terminal_sister_background_inventory_completed_20260930.json`.
+Cross-guide/native-orthology eligibility and all fixed matching remain downstream;
+unreported duplication is not proof of speciation. No scientific aim is complete.
