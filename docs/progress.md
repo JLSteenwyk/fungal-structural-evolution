@@ -10144,3 +10144,23 @@ does not establish universal coverage or complete the biological project.
   producer handles. Resources/timing basis recorded before launch; no pilot,
   GPU inference, predictor substitution or paid resource. All eight aims remain
   incomplete. See metadata/expanded_reference_alignment_pipeline_queued_20260930.json.
+
+
+- September 30: full additional-background coordinate producer completed
+  303,802 models/304 shards with no content rejections. Completion checked all
+  321 source/artifact bindings and the exact process journal. Independent
+  native-CIF/residue readback is active; supplemental PDB inputs still wait.
+  Producer completion is not independently verified coordinates or a
+  structural comparison result.
+
+- September 30: full reference actual input/result reuse qualification producer
+  completed all 222,804 pair/mask/order states over 55,701 pairs. All 123,016 old
+  directions have compatible current raw/PDB/position/mask/settings/checkpoint
+  bindings; 99,788 new directions remain pending native measurements. The
+  selected sources are 365 expanded-primary and 30,389 old-reference pairs,
+  independent of outcomes. Producer preserves 118,804 usable directions and
+  4,212 unavailable/numerically excluded directions, including five RMSD flags.
+  Full independent actual-source readback and outside-Git hash/journal closure
+  passed all states, 348,748 source/artifact bindings and both exact process
+  journals. These are numerical/provenance qualifications, not biological effects. Full result union, structural/orthology/phylogenetic quality and
+  calibrated inference remain required. All scientific aims remain incomplete.

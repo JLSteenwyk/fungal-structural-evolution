@@ -536,3 +536,14 @@ catalog pairs remain pending actual result reuse within the full 55,701-pair
 ledger. Numeric and geometry readers are queued, not complete. Coverage,
 common-residue/domain/PAE/orthology, full result union and calibrated duplication
 asymmetry remain required; no scientific aim is complete.
+
+
+September 30: all 303,802 additional-background coordinate producer outcomes
+finished and their 304 shards/exact journal passed integrity closure; independent
+native readback is still active. The full reference actual-result reuse gate
+produced all 222,804 directed states, retaining 123,016 compatible old states,
+4,212 unavailable/numerically excluded directions and 99,788 pending new states.
+Independent reader and exact-journal closure passed all states and 348,748
+source/artifact bindings; full reference result union and quality/orthology/
+calibration remain required. This completes
+no scientific aim and does not certify every structure or evolutionary effect.

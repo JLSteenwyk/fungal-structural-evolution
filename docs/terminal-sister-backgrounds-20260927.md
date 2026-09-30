@@ -1572,3 +1572,22 @@ records source hashes and visual review. The complete source table remains
 `results/orthology/expanded-background-control-balance-20260930-v1/covariate_balance.tsv`;
 all strata are retained regardless of illustrative plotting. All eight
 scientific aims remain incomplete.
+
+
+## Full expanded background coordinate producer finished September 30
+
+The raw-coordinate validation producer finished all **303,802 additional
+background models / 304 shards**, retaining **303,802 validated dispositions
+and no content rejections**. Completion checked **321 source/artifact hashes**,
+including every gzip coordinate shard, and the exact captured producer's
+successful completion journal:
+[producer evidence](../metadata/expanded_background_coordinate_producer_completed_20260930.json).
+
+The independent native-CIF/residue reader is active with its four CPU/32 GiB/no
+swap allowance. This producer closure does not imply that the independent
+reader or the written-input preparation is complete. The existing full
+background input materializer and PDB/residue reader still depend on that
+native check. Source/result reuse, overlapping reference/background inputs,
+new native background measurements, confidence/coverage/PAE/domain controls
+and biological comparison remain required; fixed matches are not rematched
+following quality exclusions. No GPU inference or paid resources launched.

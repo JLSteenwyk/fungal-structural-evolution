@@ -99,3 +99,17 @@ Check both masks/orders of all new pairs and retain errors and short inputs.
 The final reference/background union must also account for overlapping pairs
 before sharing verified results. CPU native measurements remain authorized;
 GPU predictions stay paused.
+
+
+### September 30: reuse compatible results with all original exclusions intact
+
+Qualify actual old/current raw and masked coordinate bytes, original residue
+positions, sequence/length, executable/options, directed checkpoints and
+complete numerical/geometry provenance. Prefer completed expanded primary
+results, otherwise old reference results, without choosing on response or
+usability. Compatible excluded/short/error results remain excluded; never
+replace them with zero distances or clear flags using a better-looking
+alternative source. Different source directions map by ordered model/version
+endpoints. Archive large raw-byte/checkpoint provenance outside Git with
+versioned locations/checksums. Independent full readback and journal closure
+precede downstream result union and inference.

@@ -774,3 +774,84 @@ Full result reuse/union, input-order correspondence, original-length coverage,
 common-residue triads, sequence-locked residue controls, confidence/PAE/domain
 orientation checks, reference orthology and phylogenetic/calibrated asymmetry
 inference remain required. None of the eight scientific aims is complete.
+
+
+## Actual reference input/result reuse qualification — September 30
+
+The full reference reuse gate now has independently verified outputs for all **55,701 distinct
+pairs**, **two masks and two input orders**, totaling **222,804 dispositions**.
+It checks every eligible old source against the current frozen inputs rather
+than treating catalog checksum matches as permission to reuse results. All
+**24,947 new pairs / 99,788 dispositions** remain explicitly pending the
+currently running native measurements; they are not filled from old results.
+
+For the **30,754 matching-source pairs**, a deterministic source preference
+uses the completed expanded primary run for **365 pairs** and the earlier
+reference run for **30,389 pairs**. This preference uses the completed source
+role, not structural responses or numerical usability. Other matching catalog
+source labels remain in the original source-union ledger. A better-looking
+alternative run cannot silently clear the selected source's numerical flags.
+
+Qualification compares raw coordinate/sequence checksums and original length;
+actual raw bytes; mask and disposition; every original residue position and
+retained amino acid; actual old/current PDB bytes; native executable checksum
+and options; complete directed checkpoint provenance and native text; and the
+full numerical and rigid-fit geometry records with their independent original
+proofs. Source collection paths/shard numbers may differ, but coordinate
+content and residue mappings must agree. Original checkpoints remain unchanged,
+with their paths and checksums retained. Original input order is mapped by
+actual ordered model/version endpoints, including reversed source directions.
+No zero distances replace short, missing or failed measurements.
+
+The producer found **123,016 compatible old directed dispositions**, with no
+incompatible input signatures. It retained **118,804 numerically usable
+alignments**, **4,154 unavailable inputs**, **53 short/nonunique rotations**,
+**four short/nonunique mappings also flagged for RMSD discrepancy**, and
+**one additional RMSD discrepancy**. These counts passed the full independent reader and exact-process completion
+closure. They count directions,
+not independent biological events, unique pairs or accepted asymmetry effects.
+A compatible old result is not automatically a usable numerical measurement.
+
+Checks cover **46,200 unique reused endpoint models**, **17,405,911,378 raw
+coordinate bytes by initial stat**, and **92,474 model/mask/source checks**;
+the latter retain models used by both preferred source roles rather than
+assuming independent observations. The producer's complete byte/provenance
+index has **348,736 source bindings**. Large exported state, proof and byte
+indexes remain under
+`results/structural_comparisons/reference-reuse-qualification-20260930-v1/`,
+outside Git. Versioned plans/scripts record their locations and source pins.
+
+The independent reader reconstructs every exported input identity and all
+222,804 directed states from original source manifests/checkpoints and complete
+numeric/geometry proof tables. It separately derives source preference,
+canonical input signatures, directed correspondence and numerical exclusions;
+source I/O/proof loading and native-text parsing libraries are shared. It
+rehashes raw/PDB/checkpoint bytes and checks every total. This is export/result
+qualification, not a new native optimization or an independent predictor.
+The separate exact-dependency closure also finished: **348,748 source/artifact
+hashes and both captured process completion journals** passed. Its full byte/
+checkpoint index remains outside Git, with the versioned location/checksum in
+[the completion locator](../metadata/reference_alignment_reuse_completed_20260930.json).
+The independent reader and completion closure are complete; no old numerical
+exclusion was cleared.
+
+A complete native synthetic handoff passed all **16 states**, including model
+versions 6/10, reversed old directions, both masks, new pairs, incompatible
+masks, unavailable inputs and nonunique rotations. Six rehashed false exports
+were rejected, including cleared exclusions and false native/source/input
+identities. Synthetic proof stubs are test data only; they do not qualify any
+production protein. This is a full-workflow check, not a protein pilot.
+
+Resources were recorded before launch: two CPU/16 GiB/no swap for the producer
+and independent reader, eight GiB output allowance each, an uncalibrated
+0.1–8-hour planning range, and no GPU or paid resources. Closure uses one
+CPU/16 GiB/no swap. Exact plans and handles are in
+`metadata/reference_alignment_reuse_queued_20260930.json` and
+`metadata/reference_alignment_reuse_closure_queued_20260930.json`.
+
+The complete independent reuse proof is now available; the full union with
+new measurements is still required. Input-order correspondence, original-length coverage,
+common-residue triads, sequence-locked correspondence, domain/orientation/PAE
+and prediction controls, native reference orthology, phylogenetic uncertainty
+and calibrated biological asymmetry remain unfinished. All eight scientific
+aims remain incomplete.

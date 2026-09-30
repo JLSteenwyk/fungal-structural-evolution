@@ -1,0 +1,254 @@
+{
+  "status": "verified_full_reference_reuse_completion_and_remaining_runtime_checkpoint",
+  "checked_utc": "2026-09-30T20:26:11.406866+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_goal_turn_evidence": "Completed full sequence-first native/cross-guide checks and reference input proofs; launched all24947 new reference pairs and exact diagnostic/geometry pipeline; pushedb8940d9.",
+  "current_turn_classification": "progress",
+  "current_turn_evidence": "Completed full222804-state actual reference input/checkpoint/numeric reuse and independent reader;348748 hash/journal closure archived outsideGit. Completed303802-model background coordinate producer integrity closure; independent native reader remains live. Native orthology streams located for next full reference check.",
+  "completed_proofs": [
+    "metadata/reference_alignment_reuse_completed_20260930.json",
+    "metadata/expanded_background_coordinate_producer_completed_20260930.json"
+  ],
+  "reuse_counts": {
+    "new_native_measurement_pending": 99788,
+    "verified_identical_input_checkpoint_and_retained_disposition": 123016
+  },
+  "reuse_numerical_counts": {
+    "usable": 118804,
+    "input_unavailable": 4154,
+    "fewer_than_three_pairs;nonunique_rotation": 53,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 4,
+    "rmsd_discrepancy": 1
+  },
+  "services": [
+    {
+      "launch": "metadata/expanded_reference_alignment_launch_20260930.json",
+      "pid": 2773729,
+      "created": 1790795916.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2773729",
+        "CPUQuotaPerSecUSec": "8s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 2773841,
+          "created": 1790795920.72,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_expanded_reference_alignments.py",
+            "--plan",
+            "metadata/expanded_reference_alignment_plan_20260930.json"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_diagnostic_launch_20260930.json",
+      "pid": 2773732,
+      "created": 1790795916.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_diagnostic_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2773732",
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_launch_20260930.json",
+      "pid": 2773735,
+      "created": 1790795916.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2773735",
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_readback_launch_20260930.json",
+      "pid": 2773741,
+      "created": 1790795916.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_readback_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2773741",
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_coordinate_readback_launch_20260930.json",
+      "pid": 2641894,
+      "created": 1790787610.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_background_coordinates.py",
+        "--plan",
+        "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2641894",
+        "CPUQuotaPerSecUSec": "4s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": [
+        {
+          "pid": 2831001,
+          "created": 1790798553.86,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2831003,
+          "created": 1790798553.91,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2831004,
+          "created": 1790798553.96,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+          ]
+        },
+        {
+          "pid": 2831006,
+          "created": 1790798554.03,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_background_coordinates.py",
+            "--plan",
+            "metadata/expanded_background_coordinate_readback_plan_20260930.json"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_alignment_inputs_launch_20260930.json",
+      "pid": 2674943,
+      "created": 1790790575.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_input_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2674943",
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_alignment_input_readback_launch_20260930.json",
+      "pid": 2674948,
+      "created": 1790790575.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_input_readback_wait_plan_20260930.json"
+      ],
+      "exact_identity_live": true,
+      "properties": {
+        "MainPID": "2674948",
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      },
+      "children": []
+    }
+  ],
+  "partial_states": {
+    "expanded-reference-alignments-20260930-v1": {
+      "stage": "aligning",
+      "completed": 25728,
+      "total": 99788,
+      "counts": {
+        "full:aligned": 12864,
+        "plddt70:aligned": 12062,
+        "plddt70:input_unavailable": 802
+      }
+    }
+  },
+  "next_native_orthology_inputs": [
+    {
+      "guide": "profile",
+      "stream": "results/orthology/ortholog-pair-reciprocity-profile-20260926-v1/sorted_pairs.hex",
+      "stream_stat_bytes": 15725918376,
+      "stream_hash_from_audit": "a24588039cc690cb7387cf5ec35793788c3fb826b53ac061dd47bb0c9e5338e1",
+      "unique_unordered_pairs": 561639942,
+      "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SpeciesIDs.txt",
+      "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/profile/Source/WorkingDirectory/SequenceIDs.txt",
+      "scope": "Located already audited native reciprocity stream for next full reference/sequence-first gene-pair membership stage. Membership requests/query/readback have not yet run; raw Orthologues source lineage/ordinal mapping must bind to native guide sources."
+    },
+    {
+      "guide": "mafft",
+      "stream": "results/orthology/ortholog-pair-reciprocity-mafft-20260926-v1/sorted_pairs.hex",
+      "stream_stat_bytes": 15722495180,
+      "stream_hash_from_audit": "8cd8f41cf5a37b14799cb3e02f7394e98d2b2953e0727ee4792f87db68cba7b3",
+      "unique_unordered_pairs": 561517685,
+      "species_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SpeciesIDs.txt",
+      "sequence_ids": "results/orthology/expanded-reconciliation-execution-20260923-v3/mafft/Source/WorkingDirectory/SequenceIDs.txt",
+      "scope": "Located already audited native reciprocity stream for next full reference/sequence-first gene-pair membership stage. Membership requests/query/readback have not yet run; raw Orthologues source lineage/ordinal mapping must bind to native guide sources."
+    }
+  ],
+  "scientific_aims_complete": 0,
+  "gpu_inference_authorized_now": false,
+  "scope": "Full objective and all required biological quality/calibration retained. Completed reuse proof is numerical/provenance qualification, not a structural-asymmetry inference; full result union, orthology, common-triad/domain/PAE and evolutionary inference still required. Live handles checked by PID/create time/command and systemdresources; quiet waiting jobs not restarted."
+}

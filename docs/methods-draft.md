@@ -1343,3 +1343,20 @@ quaternion checks are queued. Complete result union, original-length coverage,
 common-residue triads, domain/PAE controls and calibrated asymmetry inference
 remain unfinished. This resource partition is unrelated to structural outcomes
 and does not authorize reuse or remove existing numerical flags.
+
+
+The full reference reuse qualification checks all 55,701 model pairs/two masks/
+two orders, including the 24,947 currently unmeasured pairs as pending states.
+Completed expanded-primary measurements are preferred for 365 pairs and old
+reference measurements for 30,389 pairs, without outcome-based selection.
+Actual raw/PDB bytes, residue/sequence/mask/source signatures, executable
+options and every directed checkpoint and original numerical/geometry flag
+are checked before importing a compatible result. The producer records all
+123,016 compatible old states with 118,804 usable and 4,212 unavailable or
+numerically excluded directions; five RMSD flags remain explicit. The complete
+independent reader and hash/journal closure passed all exported states, 348,748
+source/artifact bindings and both exact captured process completion journals.
+Compatible states retain all numerical exclusions for downstream union. Original results
+and exclusions remain intact, and absent results are not treated as zero.
+The full result union, order/coverage/common-residue/domain/PAE/orthology and
+calibrated evolutionary analyses remain unfinished.

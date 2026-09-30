@@ -1,0 +1,26 @@
+{
+  "status": "planned_full_reference_actual_input_and_result_reuse_gate",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 8,
+  "planning_hours": [
+    0.1,
+    8
+  ],
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "full_reference_pairs": 55701,
+  "full_directed_dispositions": 222804,
+  "matching_source_pairs": 30754,
+  "matching_directed_dispositions": 123016,
+  "new_native_pair_states_retained": 24947,
+  "matching_unique_endpoint_models": 46200,
+  "raw_coordinate_stat_bytes": 17405911378,
+  "source_preference": [
+    "primary_expanded_completed",
+    "reference_old"
+  ],
+  "basis": "Complete reference pair/two-mask/two-order universe; all new pairs remain pending. Rehash every reused raw source, current/old PDB and directed checkpoint; compare full mask/status/position/sequence/length signatures, native executable/settings and all numeric/geometry flags. Full independent reader reconstructs exports from native sources. No new alignment or prediction, no model/source substitution or flag clearance. Archive large byte/provenance index and completion closure outside Git; metadata tracks their locations and hashes. TwoCPU/16GiB/no swap per producer/reader, output budget8GiB each; range uncalibrated, not ETA."
+}

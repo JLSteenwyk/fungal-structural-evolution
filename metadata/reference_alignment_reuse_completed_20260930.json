@@ -1,0 +1,35 @@
+{
+  "status": "complete_verified_full_reference_input_checkpoint_numeric_reuse",
+  "full_reference_pairs": 55701,
+  "directed_dispositions": 222804,
+  "counts": {
+    "new_native_measurement_pending": 99788,
+    "verified_identical_input_checkpoint_and_retained_disposition": 123016
+  },
+  "numerical_counts": {
+    "usable": 118804,
+    "input_unavailable": 4154,
+    "fewer_than_three_pairs;nonunique_rotation": 53,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 4,
+    "rmsd_discrepancy": 1
+  },
+  "selected_source_dispositions": {
+    "no_old_source": 99788,
+    "reference_old": 121556,
+    "primary_expanded_completed": 1460
+  },
+  "unique_model_mask_source_checks": 92474,
+  "full_hash_archive": "results/structural_comparisons/reference-reuse-qualification-20260930-v1/completion_closure.json",
+  "full_hash_archive_sha256": "c64983bd2a178e1e13374540a5fc3e01a8a34c3dabb4446b4c8bcf3531d9bd8d",
+  "bound_source_and_artifact_hashes": 348748,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/reference-reuse-qualification-20260930-v1/receipt.json",
+  "producer_receipt_sha256": "9a65b9288a8b8d43563d955087fcb34b9427ebe0d0d08614a988e3873c6666b8",
+  "independent_readback": "results/structural_comparisons/reference-reuse-qualification-20260930-v1/readback.json",
+  "independent_readback_sha256": "da44a4265fa44249ec2d21546f38249b0ed31eda159dd9bef596b642ea6790a5",
+  "source_plan": "metadata/reference_alignment_reuse_plan_20260930.json",
+  "source_plan_sha256": "e289cce514b5cd35cefb131b934b04a51bf83c1cf70f490219b66396c2134819",
+  "completion_plan_sha256": "6232174acbf92970ce0034de4307bd77ff49124288380187fa552453d584d3c0",
+  "scientific_eligibility": false,
+  "scope": "Full55701-reference-pair/two-mask/two-order design, all current raw/PDB/sequence/length/mask/positions, old native executable/settings and checkpoints verified before reuse; full independent export reconstruction and exact process journals required. Complete numerical/geometry exclusions remain traceable; source matches do not clear flags or promote missing/short measurements. New24947 pairs remain pending their native results; incompatible existing inputs, if any, require additional measurement. Full result union, correspondence/order/coverage/common-triad/domain/PAE/orthology/calibration remain required. Full byte/hash provenance archive stays outsideGit and its location/hash is versioned. No biological asymmetry or complete scientific aim."
+}
