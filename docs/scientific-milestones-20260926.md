@@ -397,3 +397,20 @@ analytic short census, retaining longer numerical degeneracy and all RMSD
 discrepancies. Full historical regression passed all 387,646 rows; nine
 reconciliation fixtures passed. These validation results do not establish
 completion or scientific acceptance of the expanded dataset.
+
+September 30: expanded duplication alignment/geometry has completed all
+539,248 directed dispositions and independent geometry verification of every
+501,324 successful alignment. All eight prerequisite/collector services exited
+successfully and their source hashes were rechecked. The 42 RMSD discrepancies
+and 472 short nonunique mappings remain explicit. Full confidence, coverage
+and input-order sensitivity and evolutionary effect tests remain required; see
+the [completed expanded geometry](duplication-sampling-coverage-20260926.md).
+
+The full whole-protein optimization-flag follow-up and separate readback are
+now queued behind the complete model-fitting audit. They cover the entire
+375,350-fit census and every later numerical review flag. Nine scope fixtures,
+five saved numerical-case regressions and all five actual producer/readback/
+restart checks passed. Future full-grid errors or unresolved checks remain
+explicit; complete comparison integration and calibrated inference are still
+outstanding. See the [full-grid follow-up](whole-protein-workflow-20260929.md).
+None of the eight scientific evolutionary aims is complete.

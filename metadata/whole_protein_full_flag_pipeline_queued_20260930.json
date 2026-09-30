@@ -1,0 +1,34 @@
+{
+  "status": "queued_verified_full_grid_flag_followup_and_readback",
+  "checked_utc": "2026-09-30T14:06:04.998934+00:00",
+  "full_scope_dispositions": 375350,
+  "live_processes": {
+    "fungal-whole-protein-full-flag-followup-20260930.service": {
+      "pid": 2485495,
+      "created": 1790777011.92,
+      "status": "sleeping",
+      "children": 0
+    },
+    "fungal-whole-protein-full-flag-readback-20260930.service": {
+      "pid": 2485499,
+      "created": 1790777012.13,
+      "status": "sleeping",
+      "children": 0
+    },
+    "fungal-whole-protein-ml-output-audit-20260929.service": {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "status": "sleeping",
+      "children": 0
+    }
+  },
+  "source_hashes": {
+    "metadata/whole_protein_full_flag_followup_launch_20260930.json": "eec37e4ca442f23982220bc353bf7e82733ac1055aec280bffc442f262988ebb",
+    "metadata/whole_protein_full_flag_followup_wait_plan_20260930.json": "5d76b5725098c439b349f657a5983a676f10986a753af7fdc9892bec652b572a",
+    "metadata/whole_protein_full_flag_readback_launch_20260930.json": "3672b627e429c6de59406aeefd36f4db25ce746c9f2f554c70be5f4dd04c63f2",
+    "metadata/whole_protein_full_flag_readback_wait_plan_20260930.json": "e40625d37b8c133c6e1d18d4db6894d306bb0e758eb9109792b9c0f03b59ee4d",
+    "metadata/whole_protein_ml_output_audit_launch_20260929.json": "48d3379ab359df6ddf228b34c75be8d7a295810dfa46737d77bf1d5b858fe3f8",
+    "metadata/whole_protein_ml_output_audit_plan_20260929.json": "3c51aaf9cfe3b710223c790c8c65a72ee529dcb914ec8dbb1ad0e8a1d046c574"
+  },
+  "scope": "Exact producer/readback/audit identities confirmed live. Both follow-up wrappers waiting, no child or output yet. Entire audited grid census and every later optimization flag are covered; no optimizer or numerical acceptance result produced by these queued stages yet."
+}

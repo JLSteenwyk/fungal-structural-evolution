@@ -363,3 +363,54 @@ paid infrastructure is used. Full export completion, saved-output validation,
 resolution of later optimization flags and inferential calibration remain
 outstanding. The older frozen measurement atlas underlying these fits is not
 silently replaced by the expanded duplication atlas.
+
+## Full-grid optimization follow-up queued (September 30)
+
+The full grid now has a queued follow-up for every optimization flag found by
+the complete 375,350-fit audit, extending beyond the initial five frozen cases.
+The [producer plan](../metadata/whole_protein_full_flag_followup_plan_20260930.json)
+accounts for all 75,070 inputs across five trees, preserving original numerical
+passes and recording original fit errors explicitly. Every numerical review
+flag receives a separate 24-candidate all-face refinement, including the
+unoptimized original reference. If its checks still fail, five bounded SLSQP
+recoveries start from the four full-face endpoints and the ratio-one
+initialization. All lower failed candidates remain eligible for selection;
+failed checks and upper-bound contacts remain unresolved statuses.
+
+The [independent serialized check](../metadata/whole_protein_full_flag_readback_plan_20260930.json)
+checks the full original disposition census and every follow-up record. It
+reconstructs likelihoods through GLS normal equations, checks candidate grids,
+start lineage, objective selection and numerical status, and verifies coefficients
+and covariance transformations. Analytic scores are compared with finite
+differences of the separate likelihood at the selected solution and nonstationary
+recovery starts. Covariance and analytic-score libraries are shared; these
+checks do not establish global optimality or identifiable variance components.
+Original and follow-up error records retain unverified numerical status.
+
+Nine [scope fixtures](../scripts/test_whole_protein_flag_scope.py) passed,
+including the entire synthetic 75,070-by-five Cartesian grid and rejection of
+missing, duplicate, unknown or inconsistently qualified records. The
+[saved-case arithmetic regression](../metadata/whole_protein_flag_followup_arithmetic_verified_20260930.json)
+checked all five previously audited numerical cases and rejected an altered
+likelihood. A further [actual worker validation](../metadata/whole_protein_flag_worker_validation_completed_20260930.json)
+ran all five cases through the producer, separate saved-output checker and
+restart, preserving outputs byte for byte. These are implementation checks
+within the full workflow, not a pilot or substitute for the complete-grid run.
+
+The [live queue record](../metadata/whole_protein_full_flag_pipeline_queued_20260930.json)
+binds both new service identities and the active prerequisite audit. At that
+check, both controllers were waiting, without child computations or output
+directories. They start only after successful predecessor terminal states and
+unchanged pinned sources. The original fitting run continues independently.
+
+The producer has eight one-thread CPU workers, 64 GiB memory and 32 GiB output;
+the checker has four workers with the same memory and output allowances.
+Both have zero swap and use no GPU or paid resources. The
+[resource assessment](../metadata/whole_protein_full_flag_resource_assessment_20260930.json)
+records historical costs, illustrative flag frequencies and timing scenarios,
+and a 64 KiB-per-flag storage scenario (22.9 GiB if every fit is flagged).
+These are planning inputs, not population estimates, ETAs or runtime bounds.
+Completed full-grid follow-up/readback, integration into a versioned complete
+comparison export and inferential calibration remain outstanding. The existing
+comparison export retains its original five-candidate registry and explicit
+review flags; it does not silently adopt the new results.

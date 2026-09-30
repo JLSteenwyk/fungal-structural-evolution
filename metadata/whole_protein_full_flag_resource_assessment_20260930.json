@@ -1,0 +1,168 @@
+{
+  "status": "full_grid_optimization_followup_resources_assessed",
+  "checked_utc": "2026-09-30T13:59:37.484956+00:00",
+  "full_grid_dispositions": 375350,
+  "producer_workers": 8,
+  "producer_memory_gib": 64,
+  "producer_output_gib": 32,
+  "checker_workers": 4,
+  "checker_memory_gib": 64,
+  "checker_output_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "available_memory_gib": 704.5938720703125,
+  "available_disk_gib": 10696.683544158936,
+  "historical_five_case_refinement_seconds": [
+    57.88976204697974,
+    5.247166260029189,
+    56.35481428500498,
+    38.401556535973214,
+    45.53936145803891
+  ],
+  "historical_one_case_recovery_seconds": 45.65796035894891,
+  "producer_scenarios": [
+    {
+      "assumed_flag_fraction": 0.001,
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 10,
+      "idealized_producer_hours": 0.13020833333333334
+    },
+    {
+      "assumed_flag_fraction": 0.001,
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 100,
+      "idealized_producer_hours": 1.3020833333333333
+    },
+    {
+      "assumed_flag_fraction": 0.001,
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 1000,
+      "idealized_producer_hours": 13.020833333333334
+    },
+    {
+      "assumed_flag_fraction": 0.01,
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 10,
+      "idealized_producer_hours": 1.3034722222222221
+    },
+    {
+      "assumed_flag_fraction": 0.01,
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 100,
+      "idealized_producer_hours": 13.034722222222221
+    },
+    {
+      "assumed_flag_fraction": 0.01,
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 1000,
+      "idealized_producer_hours": 130.34722222222223
+    },
+    {
+      "assumed_flag_fraction": 0.1,
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 10,
+      "idealized_producer_hours": 13.03298611111111
+    },
+    {
+      "assumed_flag_fraction": 0.1,
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 100,
+      "idealized_producer_hours": 130.32986111111111
+    },
+    {
+      "assumed_flag_fraction": 0.1,
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 1000,
+      "idealized_producer_hours": 1303.298611111111
+    },
+    {
+      "assumed_flag_fraction": 1.0,
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 10,
+      "idealized_producer_hours": 130.32986111111111
+    },
+    {
+      "assumed_flag_fraction": 1.0,
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 100,
+      "idealized_producer_hours": 1303.298611111111
+    },
+    {
+      "assumed_flag_fraction": 1.0,
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 1000,
+      "idealized_producer_hours": 13032.986111111111
+    }
+  ],
+  "checker_scenarios": [
+    {
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 1,
+      "idealized_hours": 0.026041666666666668
+    },
+    {
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 10,
+      "idealized_hours": 0.2604166666666667
+    },
+    {
+      "flagged_fits": 375,
+      "assumed_seconds_per_flag": 100,
+      "idealized_hours": 2.6041666666666665
+    },
+    {
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 1,
+      "idealized_hours": 0.26069444444444445
+    },
+    {
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 10,
+      "idealized_hours": 2.6069444444444443
+    },
+    {
+      "flagged_fits": 3754,
+      "assumed_seconds_per_flag": 100,
+      "idealized_hours": 26.069444444444443
+    },
+    {
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 1,
+      "idealized_hours": 2.6065972222222222
+    },
+    {
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 10,
+      "idealized_hours": 26.06597222222222
+    },
+    {
+      "flagged_fits": 37535,
+      "assumed_seconds_per_flag": 100,
+      "idealized_hours": 260.65972222222223
+    },
+    {
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 1,
+      "idealized_hours": 26.06597222222222
+    },
+    {
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 10,
+      "idealized_hours": 260.65972222222223
+    },
+    {
+      "flagged_fits": 375350,
+      "assumed_seconds_per_flag": 100,
+      "idealized_hours": 2606.597222222222
+    }
+  ],
+  "record_storage_scenario": {
+    "bytes_per_flag_record": 65536,
+    "maximum_flagged_fits": 375350,
+    "uncompressed_gib": 22.9095458984375
+  },
+  "maximum_all_face_candidates": 9008400,
+  "maximum_recovery_start_endpoints": 1876750,
+  "scope": "All numerical review flags found by the complete audited 375350-fit grid will be attempted; original fit errors retained explicitly. Up to 62.75 GB hashed inputs/array reads per complete distinct-input traversal. Eight one-thread workers and four checker workers, no n-by-n covariance allocation. Historical cases and synthetic timing scenarios are resource-planning inputs, not full-grid flag frequencies, ETAs or upper bounds. Prerequisite waiting and hashing/IO excluded from idealized hours."
+}

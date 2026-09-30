@@ -1,0 +1,44 @@
+{
+  "status": "complete_verified_primary_rmsd_diagnostic_and_short_geometry",
+  "scientific_eligibility": false,
+  "terminal_states": {
+    "fungal-expanded-duplication-rmsd-diagnostic-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-expanded-duplication-short-check-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    },
+    "fungal-expanded-duplication-accounting-check-20260929.service": {
+      "Result": "success",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive"
+    }
+  },
+  "source_hashes": {
+    "results/structural_comparisons/expanded-duplication-rmsd-diagnostic-20260929-v1/receipt.json": "6ea498e5b96297cb984877bfdbc942a36c39f9c2abbd4510707bd9df677eb03b",
+    "metadata/expanded_duplication_rmsd_diagnostic_completed_20260929.json": "dffb25a84504057757803b66bc8602f97ae1968351b70ec1942c7f7f54500a60",
+    "metadata/expanded_duplication_short_geometry_readback_20260929.json": "0fca8591f4c7174ba138e916924d13658f29359ea7dc078cf55c87223ec2dc7f",
+    "metadata/expanded_duplication_diagnostic_completion_plan_20260929.json": "57c6f0253b8c782cdf39db0aec6d8e8d0dcc612d83d2f53f682d69e4ae881336",
+    "metadata/expanded_duplication_rmsd_diagnostic_plan_20260929.json": "d10dace332353206af89e070cb47e2bf52d456b52f3e36fa953e1defdf34042b"
+  },
+  "script_sha256": "d47ce73ec41c65ad8864813ca86cb9f68dd55853f329285b384712cb862065db",
+  "dispositions": 539248,
+  "numeric_alignments": 501324,
+  "unavailable": 37924,
+  "rmsd_discrepancies": 42,
+  "short_mapping_discrepancies": 41,
+  "longer_mapping_discrepancies": 1,
+  "short_alignments": 472,
+  "aligned_length_counts": {
+    "at_least_3": 500852,
+    "2": 409,
+    "1": 63
+  },
+  "maximum_rmsd_discrepancy": 0.2574187283729639,
+  "maximum_short_analytic_agreement_error": 8.992806499463768e-15,
+  "scope": "Full native-disposition/mapping/RMSD diagnostic and all short-case analytic checks completed. Original strict audit failure and discrepant native values remain quarantined. No complete geometry qualification, biological duplication effect or prediction accuracy is established."
+}

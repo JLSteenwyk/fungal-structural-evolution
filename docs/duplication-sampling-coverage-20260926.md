@@ -665,3 +665,36 @@ it does not repeat coordinate fitting or predictions. No GPU or paid resources
 are used. Full geometry verification remains a prerequisite for input-order,
 confidence and coverage sensitivity, and biologically interpretable duplication
 tests.
+
+## Expanded full geometry completion (September 30)
+
+All eight expanded alignment, diagnostic, analytic short-case, accounting,
+geometry, readback and completion services exited successfully. The
+[completion handoff](../metadata/expanded_duplication_full_geometry_handoff_20260930.json)
+rechecked every pinned geometry source hash and each successful terminal state.
+This completed record supersedes the pending status above.
+
+| Full-cohort disposition | Count |
+| --- | ---: |
+| Directed pair/order/mask dispositions | 539,248 |
+| Successful alignments with independent geometry readback | 501,324 |
+| Explicit unavailable confidence-masked dispositions | 37,924 |
+| Numerically unique proper rotations | 500,852 |
+| Nonunique rotations from one/two-residue mappings | 472 |
+| Longer mappings with numerical rotation degeneracy | 0 |
+| RMSD discrepancies retained | 42 |
+
+All 269,624 full-protein directed alignments have numerically unique rotations.
+Among confidence-masked alignments, 231,228 have unique rotations and 472 are
+short degenerate mappings (63 one-residue and 409 two-residue mappings).
+The independent scalar short-case checks retained 41 RMSD discrepancies;
+one further discrepancy involves a longer mapping. These 42 cases remain
+explicit exclusions from scientific acceptance. The
+[full geometry result](../metadata/expanded_duplication_geometry_completed_20260929.json)
+and [independent saved-output check](../metadata/expanded_duplication_geometry_readback_20260929.json)
+account for all successful alignments. No predictions were rerun.
+
+Completed numerical geometry is a prerequisite for the full input-order,
+confidence and coverage sensitivity analyses. It does not establish structural
+prediction accuracy, stable domain orientation or an evolutionary duplication
+effect; those scientific tests and their calibration remain outstanding.
