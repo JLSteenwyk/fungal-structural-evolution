@@ -1,0 +1,29 @@
+{
+  "status": "passed_full_reference_native_assignment_attrition_sql_readback",
+  "plan_sha256": "b4d2dae07851f6ceabe97d8e39f938a2b1e6c02aa3578ca760f04638baaa96b1",
+  "producer_receipt_sha256": "55b9e250168f47ad3e14ee8a4f7a3f89b3fb8d5c021a22d6209491c0c1d771de",
+  "target_contexts": 283409,
+  "context_design_records": 566818,
+  "policy_rows": 48,
+  "matrix_rows": 76,
+  "source_hashes": {
+    "metadata/reference_orthology_attrition_plan_20260930.json": "b4d2dae07851f6ceabe97d8e39f938a2b1e6c02aa3578ca760f04638baaa96b1",
+    "scripts/summarize_reference_orthology.py": "a27c49612af64755a3d53daf118a75e239fbd7c383c2200a32da1b32f4edd5a8",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/reference_orthology_plan_20260930_v2.json": "e49c7063895dddbf7606e5b34a57fe0a4d2f07a2d595a8f240c2781a5e8315c1",
+    "metadata/reference_orthology_closure_plan_20260930_v2.json": "c7d59af52c1e134b2614d1beb343f2319c9a230b627928bb75edef771ba184ce",
+    "metadata/reference_orthology_closure_launch_20260930_v2.json": "ea550b2ae4df572db15cc0efa6063ee1ddf8a60bb567f15e91ee13ffce34cd24",
+    "metadata/reference_orthology_completed_20260930_v2.json": "7f63cf7108e435fa959159328789f3f122f37483641f022652d5a74cb1637820",
+    "metadata/reference_orthology_completed_readback_20260930_v2.json": "2461a2675b4fc882b5df9a68a3ba7dc693132f364d88b2ec1d282478f998d05c",
+    "results/orthology/reference-native-orthology-20260930-v2/receipt.json": "a63e43a4a6f21cabe41ed8df55df73ed3e616597cd55e5b9c10040dc58c80f67",
+    "results/orthology/reference-native-orthology-20260930-v2/contexts.jsonl": "4c7cd1f8a4e8ea96c0ae7b62d771d4ec8d74157e9d8a0d480196b310a6cd7d89",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json": "55b9e250168f47ad3e14ee8a4f7a3f89b3fb8d5c021a22d6209491c0c1d771de",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/lexical_reference_context_matrix.tsv": "d597cdc75cb60c8f4d23e6c6a0acc523e8c9e26ecbc90e9c978082d0d7978bcb",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/context_policy_counts.tsv": "f8eb573ef26900944dc2824bed05c762aed5e78ed9a9d88e874ad0b6befa7f56"
+  },
+  "checker_sha256": "9a80f207535b9d996a896de4fbe20a74d2744964cb36a7a7782d5d3781c82a1c",
+  "scientific_eligibility": false,
+  "scope": "Every completed context/design loaded into a uniquely keyed SQL table; all parent/missing-model/gene states, lexical native coorthology and any/all tie sensitivities independently aggregated with SQL and compared field-for-field to both complete producer tables. No producer summary code shared. Native membership/journal source closure required. Counts overlap across guides/designs/policies and are not biological orthology validations, independent events or structural effects."
+}

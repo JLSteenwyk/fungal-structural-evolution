@@ -1,0 +1,16 @@
+{
+  "status": "confirmed_initial_reference_orthology_adapter_failure_before_data_processing",
+  "cause": "Exact source status is complete_full_sequence_first_sister_reference_inventory_pending_readback; initial adapter incorrectly omitted full. Producer and dependent reader both failed at this semantic gate before source hashing or output directory creation.",
+  "source_output_exists": false,
+  "original_pins": {
+    "metadata/reference_orthology_launch_20260930.json": "1f399a49224406c1ecb65bbe89c8b3d57ba3a755cd72fd019fb41e366fac0a75",
+    "metadata/reference_orthology_readback_launch_20260930.json": "f4aae511d47f91de6442291b8c06ab5c0f0cc8a0c6d114e8582f4f404c4e32d6",
+    "metadata/reference_orthology_plan_20260930.json": "eec1680c749fa3c95b465d18e0248e74e945a6d3335c71a2317a4c7024b1e699",
+    "metadata/reference_orthology_wait_plan_20260930.json": "f1077e93e3a9e4b19099701a825f883bd3221c2e3acaf7a3388a005c3d15ed85",
+    "metadata/reference_orthology_readback_wait_plan_20260930.json": "76200de1c5b77e9c1f969cbed9401c8cf5e6b6aaa81ce6a0370956b74b48132b",
+    "scripts/query_reference_orthology.py": "10b916b94c08aec983a0a192b57fdd08e233e43ccdf55649627a8a397ef266ff",
+    "scripts/readback_reference_orthology.py": "f4f930515c7a38cc73bad343ba10e4b3146cf4b3107508977eb84bcd616765c9",
+    "scripts/check_reference_orthology.py": "465a34892e50badd40c51398fcd2fd51d8ab73351eda422c439f395c6fd7d73c"
+  },
+  "recovery": "Fresh v2 scripts, fixture validation, plan/output directory and units; production source lineage validated before launching. Original sources/scripts/plans and failed journals preserved."
+}

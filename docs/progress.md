@@ -10164,3 +10164,23 @@ does not establish universal coverage or complete the biological project.
   passed all states, 348,748 source/artifact bindings and both exact process
   journals. These are numerical/provenance qualifications, not biological effects. Full result union, structural/orthology/phylogenetic quality and
   calibrated inference remain required. All scientific aims remain incomplete.
+
+- September 30: full native reference orthology processing launched after
+  production source preflight passed 86 bindings, including both complete
+  reciprocal native streams and ordinal mappings bound to resolved-tree
+  readbacks. Scope retains all 283,409 target contexts, both reference designs,
+  214,461 nearest ties and 428,922 duplicate/reference links, including missing
+  models and parent exclusions. Synthetic checks passed and six rehashed false
+  exports were rejected. An initial status-label typo failed before processing;
+  the failed attempt is preserved and the corrected v2 run completed. Independent
+  binary-search reconstruction passed all 166,829 distinct queries and every
+  logical link; completion checked 103 bindings and both exact journals.
+  Full cohort attrition passed independent SQL aggregation of all 566,818
+  context/design rows, 48 policy rows and 76 context-state cells; its closure
+  checked 23 bindings and two journals. Parent-eligible lexical modeled
+  references with both-duplicate assignments under both native guides number
+  28,569/28,551 for availability and 21,169/21,150 for sequence-first designs.
+  Counts overlap across guides/designs; no lexical choice or parent exclusion
+  was changed. Existing CPU only; no GPU inference or paid resources. Native
+  membership does not establish a duplication effect; all eight aims remain
+  incomplete.

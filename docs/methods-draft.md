@@ -1360,3 +1360,39 @@ Compatible states retain all numerical exclusions for downstream union. Original
 and exclusions remain intact, and absent results are not treated as zero.
 The full result union, order/coverage/common-residue/domain/PAE/orthology and
 calibrated evolutionary analyses remain unfinished.
+
+### Complete nearest-reference native orthology membership — September 30
+
+Native orthology queries preserve all 283,409 source target contexts under both
+tree methods, both reference designs, every nearest tie, missing model and
+parent exclusion. The full design contains 214,461 reference tie records and
+428,922 duplicate-to-reference links. Unordered physical gene queries are
+deduplicated without deleting logical context/design/tie/side records. Each
+reference is queried against both duplicates in both globally audited native
+reciprocal streams. Protein ordinals are source-line positions, with mappings
+bound through full protein/family identity audits and resolved-tree readbacks.
+Compiled full-stream merge and independent fixed-record binary searches
+provide separate membership checks. The reader independently reconstructs
+every context, gene/model/version, lexical choice, eligibility and membership
+summary, with bracketing for absence. Empty reference sets remain unqueried;
+positive membership cannot remove a parent-context exclusion. Original fields
+and both-guide coorthology states are retained. All 166,829 unique physical
+queries and 428,922 logical links passed independent reconstruction; closure
+checked 103 source/artifact hashes and both exact process journals. This is
+native assignment provenance rather than independently validated orthology,
+ancestral reconstruction or a structural duplication effect. Small-family
+supplements are outside these native streams; all subsequent structural and
+phylogenetic/calibration controls remain required.
+
+Premeasurement cohort attrition was tabulated for every source context/design
+and independently reconstructed using a uniquely keyed SQL table rather than
+the producer's counter logic. All 566,818 rows, 48 nested eligibility/model/
+native-assignment policies and 76 lexical context-state cells passed. Missing
+genes remain unqueried, missing models are separate from native membership,
+and any/all tied-reference sensitivities are reported without altering lexical
+choices or parent exclusions. Parent-eligible lexical modeled references with
+assignments to both duplicates under both native guides number 28,569/28,551
+for availability and 21,169/21,150 for sequence-first designs. These overlapping
+conditional records do not establish independent observations, quality-qualified
+structural sample sizes or biological effects. Summary closure checked all 23
+source/artifact bindings and two additional exact completion journals.

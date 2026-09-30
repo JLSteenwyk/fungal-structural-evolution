@@ -547,3 +547,18 @@ Independent reader and exact-journal closure passed all states and 348,748
 source/artifact bindings; full reference result union and quality/orthology/
 calibration remain required. This completes
 no scientific aim and does not certify every structure or evolutionary effect.
+
+September 30: full native reference orthology workflow now processes all
+283,409 targets and both reference designs, preserving 214,461 ties and
+428,922 duplicate/reference links, all missing models and excluded parents.
+Actual production source preflight checked 86 bindings including both complete
+native reciprocal streams and source ordinal lineage. Independent binary-search
+reconstruction passed all 166,829 unique native queries and every logical link;
+exact-journal closure checked 103 source/artifact bindings and two journals.
+Full cohort attrition subsequently passed independent SQL aggregation of all
+566,818 context/design records, 48 nested policies and 76 context-state cells;
+its closure checked 23 bindings and two journals. Full structural union,
+coverage/common-triad/sequence-locked/domain/PAE/prediction and phylogenetic/
+calibration controls remain required. Native assignment is not biological
+orthology or accepted duplication asymmetry; all eight scientific aims remain
+incomplete.

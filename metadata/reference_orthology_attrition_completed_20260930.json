@@ -1,0 +1,79 @@
+{
+  "status": "complete_verified_full_reference_native_assignment_attrition",
+  "checked_utc": "2026-09-30T21:05:35.862920+00:00",
+  "summary": {
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "policy_rows": 48,
+    "matrix_rows": 76
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/reference_orthology_attrition_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "73adb3167fceb941d220c99689bb3c47267ddaf593f2978243ddd0663bd33285",
+      "captured_process_messages": 6,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790802034632469",
+          "CPU_USAGE_NSEC": "9218014000",
+          "MEMORY_PEAK": "2203648",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/reference_orthology_attrition_readback_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "0b19fa5a0a1773c5ed64853f52a5e0f8d79d0bfd1a521b181934f30c5aafc0b5",
+      "captured_process_messages": 1,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790802248006211",
+          "CPU_USAGE_NSEC": "12976828000",
+          "MEMORY_PEAK": "2207744",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/reference_orthology_attrition_completion_plan_20260930.json": "31da3bd3b553704d5695ec98fc51ffd99f352cb2799d1c1bb8f082d7101fcfe4",
+    "metadata/reference_orthology_attrition_plan_20260930.json": "b4d2dae07851f6ceabe97d8e39f938a2b1e6c02aa3578ca760f04638baaa96b1",
+    "metadata/reference_orthology_attrition_launch_20260930.json": "64f5eb8bbdeb7f206afcd9f1bd6f78645ffff898b75433a0e45d72455e8086a1",
+    "metadata/reference_orthology_attrition_wait_plan_20260930.json": "641060770baf67ca96ea14f11d0b77e36ffe2eb7f52ca86a0f7f55e0245c77ef",
+    "metadata/reference_orthology_attrition_readback_launch_20260930.json": "7af1295f541744a0632da51cf191962c1a053bcf2c17b6a8c3185a3ebb2dfcfc",
+    "metadata/reference_orthology_attrition_readback_wait_plan_20260930.json": "4aad4d2f329ebcb641584b2c564d31ed588e293c9d7a6e2322df5b900e0de465",
+    "scripts/summarize_reference_orthology.py": "a27c49612af64755a3d53daf118a75e239fbd7c383c2200a32da1b32f4edd5a8",
+    "scripts/readback_reference_orthology_attrition.py": "9a80f207535b9d996a896de4fbe20a74d2744964cb36a7a7782d5d3781c82a1c",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json": "55b9e250168f47ad3e14ee8a4f7a3f89b3fb8d5c021a22d6209491c0c1d771de",
+    "metadata/reference_orthology_attrition_completed_readback_20260930.json": "ebf1a2c23c71306d4c64d0f90b4137feabd310fd37a1f6999248b3bcb36a66e4",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/lexical_reference_context_matrix.tsv": "d597cdc75cb60c8f4d23e6c6a0acc523e8c9e26ecbc90e9c978082d0d7978bcb",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/context_policy_counts.tsv": "f8eb573ef26900944dc2824bed05c762aed5e78ed9a9d88e874ad0b6befa7f56",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/reference_orthology_plan_20260930_v2.json": "e49c7063895dddbf7606e5b34a57fe0a4d2f07a2d595a8f240c2781a5e8315c1",
+    "metadata/reference_orthology_closure_plan_20260930_v2.json": "c7d59af52c1e134b2614d1beb343f2319c9a230b627928bb75edef771ba184ce",
+    "metadata/reference_orthology_closure_launch_20260930_v2.json": "ea550b2ae4df572db15cc0efa6063ee1ddf8a60bb567f15e91ee13ffce34cd24",
+    "metadata/reference_orthology_completed_20260930_v2.json": "7f63cf7108e435fa959159328789f3f122f37483641f022652d5a74cb1637820",
+    "metadata/reference_orthology_completed_readback_20260930_v2.json": "2461a2675b4fc882b5df9a68a3ba7dc693132f364d88b2ec1d282478f998d05c",
+    "results/orthology/reference-native-orthology-20260930-v2/receipt.json": "a63e43a4a6f21cabe41ed8df55df73ed3e616597cd55e5b9c10040dc58c80f67",
+    "results/orthology/reference-native-orthology-20260930-v2/contexts.jsonl": "4c7cd1f8a4e8ea96c0ae7b62d771d4ec8d74157e9d8a0d480196b310a6cd7d89"
+  },
+  "scope": "Full283409context/566818context-design rows, all48nested eligibility/native/model policies and76lexical source-context/missingness/native-state cells independently reconstructed using SQLaggregation from the complete membership/journal-closed source. All rawsource/summary/proof bindings and two exact completion journals checked. No reselected reference/nonlexical tie, removed parent exclusion or model=orthology assumption. Counts overlap across guides/designs/policies, not independent events, biological orthology validations or structural effects; all eight scientific aims incomplete."
+}

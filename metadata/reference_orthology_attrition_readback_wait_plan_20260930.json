@@ -1,0 +1,38 @@
+{
+  "dependencies": [
+    "metadata/reference_orthology_attrition_launch_20260930.json"
+  ],
+  "pins": {
+    "metadata/reference_orthology_attrition_plan_20260930.json": "b4d2dae07851f6ceabe97d8e39f938a2b1e6c02aa3578ca760f04638baaa96b1",
+    "metadata/reference_orthology_attrition_launch_20260930.json": "64f5eb8bbdeb7f206afcd9f1bd6f78645ffff898b75433a0e45d72455e8086a1",
+    "scripts/readback_reference_orthology_attrition.py": "9a80f207535b9d996a896de4fbe20a74d2744964cb36a7a7782d5d3781c82a1c",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_reference_orthology_attrition.py",
+    "--plan",
+    "metadata/reference_orthology_attrition_plan_20260930.json",
+    "--output",
+    "metadata/reference_orthology_attrition_completed_readback_20260930.json"
+  ],
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.01,
+      2
+    ],
+    "runtime_uncalibrated": true,
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "basis": "Complete source context/design streaming into uniquely keyed SQL table; independent SQL aggregation of every lexical/native/parent/model and any/all tie policy, plus complete missingness/context matrix. Full membership/journal closure required; no producer summary functions shared or new structural fits."
+  }
+}

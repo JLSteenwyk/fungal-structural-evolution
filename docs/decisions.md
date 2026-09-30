@@ -113,3 +113,17 @@ alternative source. Different source directions map by ordered model/version
 endpoints. Archive large raw-byte/checkpoint provenance outside Git with
 versioned locations/checksums. Independent full readback and journal closure
 precede downstream result union and inference.
+
+### September 30: query native reference orthology before structural inference
+
+Retain all source target contexts under both native guides and both nearest
+reference designs, including unmodeled references, all ties and parent
+exclusions. Deduplicate physical gene queries only; preserve every logical
+context/design/tie/duplicate-side link. Bind source-line ordinals through full
+native identity audits and resolved-tree readbacks. Compare both duplicate
+memberships under both native guides; absence or disagreement remains explicit.
+Native coorthology does not override parent exclusions or prove biological
+orthology. Missing reference genes are unqueried contexts, not negative
+membership. Full independent source/link reconstruction and exact process
+journals precede completion. Preserve failed attempts and use fresh versioned
+scripts/plans/outputs for recovery.

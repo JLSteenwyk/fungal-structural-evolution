@@ -1,0 +1,52 @@
+{
+  "status": "launched_full_reference_native_membership_with_exact_independent_readback_dependency",
+  "checked_utc": "2026-09-30T20:46:16.451828+00:00",
+  "producer": {
+    "unit": "fungal-reference-orthology-20260930.service",
+    "pid": 2884469,
+    "created": 1790801175.68,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_orthology_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_orthology_wait_plan_20260930.json",
+    "plan_sha256": "f1077e93e3a9e4b19099701a825f883bd3221c2e3acaf7a3388a005c3d15ed85",
+    "checked_utc": "2026-09-30T20:46:16.418965+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "reader": {
+    "unit": "fungal-reference-orthology-readback-20260930.service",
+    "pid": 2884472,
+    "created": 1790801175.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_orthology_readback_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/reference_orthology_readback_wait_plan_20260930.json",
+    "plan_sha256": "76200de1c5b77e9c1f969cbed9401c8cf5e6b6aaa81ce6a0370956b74b48132b",
+    "checked_utc": "2026-09-30T20:46:16.451551+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "available_disk_bytes_before_launch": 11441110302720,
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "scientific_eligibility": false,
+  "scope": "Full source native orthology query launched and independent reader queued, not completed or biologically qualified. Every source context/design/tie retained. GPU predictions remain paused; no paid resources. Previous goal turn was a verified wait: exact live analysis handles and advancing alignment state were observed; current turn adds full-scope scripts, synthetic corruption checks and actual new processing."
+}

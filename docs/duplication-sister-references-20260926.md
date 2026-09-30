@@ -855,3 +855,98 @@ common-residue triads, sequence-locked correspondence, domain/orientation/PAE
 and prediction controls, native reference orthology, phylogenetic uncertainty
 and calibrated biological asymmetry remain unfinished. All eight scientific
 aims remain incomplete.
+
+## Full native reference orthology query — September 30
+
+The new native-membership workflow uses all **283,409** independently checked
+target contexts, retaining every original field and both the availability and
+sequence-first reference designs. It includes all nearest ties, unmodeled
+reference genes, lexical choices, absent references and parent-ineligible
+contexts. The full preflight counted **214,461 reference tie records** and
+**428,922 duplicate-to-reference links**. These overlap across designs and
+guides and are not independent events. This universe is larger than the
+121,490-row modeled, parent-eligible structural comparison ledger.
+
+Profile-guide availability/sequence-first ties total **32,533/74,720**;
+MAFFT-guide ties total **32,507/74,701**. Original parent-ineligible contexts
+contain **2,148/2,147 availability ties** and **2,751/2,759 sequence-first ties**.
+Their native memberships are recorded for sensitivity checks; a positive
+membership never promotes an excluded parent. Empty gene sets remain explicit
+context records and are not coded as absent native orthology.
+
+Each reference is queried against both duplicate genes in both audited native
+orthology outputs. Identical physical gene-pair queries are deduplicated while
+every context/design/tie/side link remains. The compiled merge scans both
+complete reciprocal streams (**31,448,413,556 bytes** combined), checking
+global ordering, canonical keys and exactly one record per direction.
+Source-line protein ordinals are bound through the grouped-protein identity
+audits and the completed resolved-tree membership proofs. The profile v3 path
+resolves to the original v2 profile directory; both source mappings also have
+identical checksums. No sequence-tree family/version substitution is assumed.
+
+The separate reader reconstructs the whole context/link ledger, model/version
+assignments, nearest ties and parent exclusions. It checks every unique native
+query by fixed-record binary search, with reciprocal validation and bracketing
+for absence. It separately derives whether a reference is assigned to both
+duplicates, only one, or neither under each native guide. Source I/O/proof
+loading and the fixed-record reader are shared; producer ledger and merge
+logic are not. Full byte bindings and both exact completion journals are
+required before completion is reported.
+
+Synthetic adapter checks passed the complete ten-context fixture and rejected
+six rehashed false exports: cleared parent exclusion, changed lexical choice,
+deleted unmodeled context, changed cross-guide membership, deleted nonlexical
+tie and changed native ordinal. The fixture uses stub native-tree/source
+qualification proofs and does not qualify a production protein. The initial
+adapter failed before processing because its expected source status omitted
+the word `full`. Failed scripts/plans/journals are preserved. Fresh v2 scripts
+and outputs correct only that label; all biological criteria and source data
+remain unchanged. Actual production preflight then passed **86 source
+bindings**, including complete stream hashes and native ordinal lineage.
+
+Resources were recorded before launch: one CPU, 16 GiB memory, no swap, four
+GiB output allowance and an uncalibrated 0.1–8-hour planning range for each
+processing/checking stage. Closure uses one CPU/16 GiB/no swap. No GPU or paid
+resource is used. Exact plans and live launch handles are in
+[the v2 pipeline record](../metadata/reference_orthology_queued_20260930_v2.json).
+Native membership, independent readback and journal closure are complete:
+**166,829 distinct gene-pair queries**, all **428,922 logical links**, **103
+source/artifact bindings** and **two exact process completion journals** passed.
+The profile/MAFFT streams contain **157,740/157,754** queried pairs and lack
+**9,089/9,075** respectively. These totals include parent-ineligible contexts
+and both reference designs; absence is native output absence, not a validated
+biological loss. See [the full completion proof](../metadata/reference_orthology_completed_20260930_v2.json).
+
+The full premeasurement cohort summary also passed independent SQL
+reconstruction of all **566,818 context/design records**, **48 nested policy
+rows** and **76 lexical reference/context/missingness/native-state cells**.
+Its closure checked **23 bindings and two additional exact completion
+journals**. The complete [policy table](tables/reference_native_orthology_context_policy_counts_20260930.tsv)
+and [context-state matrix](tables/reference_native_orthology_lexical_reference_context_matrix_20260930.tsv)
+are exact copies of the generated, independently checked source tables.
+
+| Native source guide | Reference design | Parent-eligible contexts | Lexical reference with a model | Lexical model assigned to both duplicates in both native guides |
+| --- | --- | ---: | ---: | ---: |
+| Profile | Availability | 69,855 | 29,155 | 28,569 |
+| MAFFT | Availability | 69,825 | 29,130 | 28,551 |
+| Profile | Sequence-first | 69,855 | 21,581 | 21,169 |
+| MAFFT | Sequence-first | 69,825 | 21,549 | 21,150 |
+
+Among parent-eligible sequence-first contexts, **68,835/68,829** lexical
+references are assigned to both duplicates under both native guides. Of
+those, **47,666/47,679** lack a model in the frozen catalog. Missing structures
+are therefore recorded separately from native orthology disagreement. These
+are conditional source-context counts, not independent events or final
+structural sample sizes. Any/all tied-reference native policies agree in this
+catalog; that observation never authorizes replacing a lexical unmodeled
+reference with another modeled gene or a farther reference. Biological
+orthology and structural qualification remain separate requirements.
+
+These checks establish native output membership, not independent biological
+orthology, accepted tree rooting, ancestral structure or a structural
+duplication effect. Small-family orthology supplements remain excluded from
+the native streams. Full structural measurement union, sequence-first
+structural sensitivity, original-length coverage, common-residue and
+sequence-locked comparisons, domain/PAE/prediction controls, phylogenetic
+uncertainty and calibrated inference remain required. All eight scientific
+aims remain incomplete.

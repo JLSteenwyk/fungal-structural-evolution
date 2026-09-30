@@ -1,0 +1,73 @@
+{
+  "status": "launched_full_reference_native_membership_readback_and_journal_closure_after_actual_source_preflight",
+  "checked_utc": "2026-09-30T20:51:28.153663+00:00",
+  "producer": {
+    "unit": "fungal-reference-orthology-20260930-v2.service",
+    "pid": 2891066,
+    "created": 1790801487.28,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_orthology_wait_plan_20260930_v2.json"
+    ],
+    "plan": "metadata/reference_orthology_wait_plan_20260930_v2.json",
+    "plan_sha256": "3211ccfe035a673c0a2aac17ce404f9429bb7b5f49b615cf29669c6c42cd2375",
+    "checked_utc": "2026-09-30T20:51:28.029877+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "reader": {
+    "unit": "fungal-reference-orthology-readback-20260930-v2.service",
+    "pid": 2891069,
+    "created": 1790801487.36,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_orthology_readback_wait_plan_20260930_v2.json"
+    ],
+    "plan": "metadata/reference_orthology_readback_wait_plan_20260930_v2.json",
+    "plan_sha256": "43eade7becbc2c8195ca140312452d0430315909eda0d0b5f6133b36151919ee",
+    "checked_utc": "2026-09-30T20:51:28.095470+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "closure": {
+    "unit": "fungal-reference-orthology-closure-20260930-v2.service",
+    "pid": 2891072,
+    "created": 1790801487.41,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/reference_orthology_closure_wait_plan_20260930_v2.json"
+    ],
+    "plan": "metadata/reference_orthology_closure_wait_plan_20260930_v2.json",
+    "plan_sha256": "1032d596c9b102eb885462164c2e805883cd58a2181014144c1110b02fb88cee",
+    "checked_utc": "2026-09-30T20:51:28.153238+00:00",
+    "resources": {
+      "cpu": 1,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "available_disk_bytes_before_launch": 11440814366720,
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "scientific_eligibility": false,
+  "scope": "Actual full source preflight passed86bindings including both31.45GBnative streams; native queries launched, independent reconstruction and exact journal closure queued. Initial adapter/status error preserved, no source/scientific criterion changed. GPU predictions remain paused; no paid resources."
+}

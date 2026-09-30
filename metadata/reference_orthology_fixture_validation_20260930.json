@@ -1,0 +1,24 @@
+{
+  "status": "passed_synthetic_full_reference_orthology_adapter_checks",
+  "target_contexts": 10,
+  "unique_queries": 6,
+  "logical_tie_records": 18,
+  "duplicate_reference_links": 36,
+  "rejected_rehashed_exports": [
+    "cleared_parent_ineligibility",
+    "changed_lexical_choice",
+    "removed_unmodeled_context",
+    "changed_cross_guide_membership",
+    "deleted_nonlexical_link",
+    "changed_native_ordinal"
+  ],
+  "scripts": {
+    "scripts/query_reference_orthology.py": "10b916b94c08aec983a0a192b57fdd08e233e43ccdf55649627a8a397ef266ff",
+    "scripts/readback_reference_orthology.py": "f4f930515c7a38cc73bad343ba10e4b3146cf4b3107508977eb84bcd616765c9",
+    "scripts/check_reference_orthology.py": "465a34892e50badd40c51398fcd2fd51d8ab73351eda422c439f395c6fd7d73c",
+    "scripts/query_ortholog_pair_membership.cpp": "e43ba20be993cb9f42b2a14dea6078b31237c4aaeeae06f61117c32658a8db82",
+    "scripts/check_ortholog_membership_cases.py": "769c3bffb0d3c95f8fdf8bcab3964ff9cde6c72f4c6d10ec23584abdf15be841",
+    "scripts/readback_background_orthology.py": "b5f34c378e43f3eda98a8e6a28f5f3e6e18edcdedd4d03948fa76596b2ace1b0"
+  },
+  "scope": "Synthetic fixture with stub native-tree/source qualification proofs; actual compiled native-stream merge, independent binary searches and complete context/link reconstruction. Six rehashed false exports rejected. Not production source qualification, biological orthology or a pilot."
+}

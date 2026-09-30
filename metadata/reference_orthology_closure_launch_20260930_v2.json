@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-reference-orthology-closure-20260930-v2.service",
+  "pid": 2891072,
+  "created": 1790801487.41,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/reference_orthology_closure_wait_plan_20260930_v2.json"
+  ],
+  "plan": "metadata/reference_orthology_closure_wait_plan_20260930_v2.json",
+  "plan_sha256": "1032d596c9b102eb885462164c2e805883cd58a2181014144c1110b02fb88cee",
+  "checked_utc": "2026-09-30T20:51:28.153238+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

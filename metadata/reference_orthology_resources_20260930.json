@@ -1,0 +1,42 @@
+{
+  "cpu": 1,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    8
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "native_stream_bytes": 31448413556,
+  "guide_preflight": {
+    "profile": {
+      "contexts": 141724,
+      "source_bytes": 49331307,
+      "availability_ties": 32533,
+      "availability_no_gene_contexts": 110809,
+      "sequence_first_ties": 74720,
+      "sequence_first_no_gene_contexts": 69376,
+      "availability_ineligible_ties": 2148,
+      "sequence_first_ineligible_ties": 2751
+    },
+    "mafft": {
+      "contexts": 141685,
+      "source_bytes": 49315388,
+      "availability_ties": 32507,
+      "availability_no_gene_contexts": 110795,
+      "sequence_first_ties": 74701,
+      "sequence_first_no_gene_contexts": 69360,
+      "availability_ineligible_ties": 2147,
+      "sequence_first_ineligible_ties": 2759
+    }
+  },
+  "basis": "All 283409 independently source-checked target contexts, both reference designs, every nearest tie and duplicate side, including unmodeled references and ineligible parents. Compiled full-stream scans of both audited native reciprocal outputs; before/after hashes plus independent binary searches. Source ordinal mappings equal between guides and bound to full resolved-tree readbacks. Existing CPU only; native source membership is not biological orthology, parent qualification or structural inference. Counts overlap across guides/designs; small-family supplements excluded."
+}

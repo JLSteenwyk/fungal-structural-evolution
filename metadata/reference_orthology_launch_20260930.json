@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-reference-orthology-20260930.service",
+  "pid": 2884469,
+  "created": 1790801175.68,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/reference_orthology_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/reference_orthology_wait_plan_20260930.json",
+  "plan_sha256": "f1077e93e3a9e4b19099701a825f883bd3221c2e3acaf7a3388a005c3d15ed85",
+  "checked_utc": "2026-09-30T20:46:16.418965+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

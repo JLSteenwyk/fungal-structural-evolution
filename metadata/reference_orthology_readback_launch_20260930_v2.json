@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-reference-orthology-readback-20260930-v2.service",
+  "pid": 2891069,
+  "created": 1790801487.36,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/reference_orthology_readback_wait_plan_20260930_v2.json"
+  ],
+  "plan": "metadata/reference_orthology_readback_wait_plan_20260930_v2.json",
+  "plan_sha256": "43eade7becbc2c8195ca140312452d0430315909eda0d0b5f6133b36151919ee",
+  "checked_utc": "2026-09-30T20:51:28.095470+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

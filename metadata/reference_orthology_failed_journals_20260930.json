@@ -1,0 +1,28 @@
+{
+  "status": "verified_both_initial_native_reference_adapter_exit_failures",
+  "services": {
+    "fungal-reference-orthology-20260930.service": {
+      "launch": "metadata/reference_orthology_launch_20260930.json",
+      "captured_pid": 2884469,
+      "captured_created": 1790801175.68,
+      "exact_process_messages": 9,
+      "journal_sha256": "4ef188444e20569d4c26e24ad9443145d585cbf8e3b729f310c287519fdd0e4f",
+      "failure_messages": [
+        "fungal-reference-orthology-20260930.service: Main process exited, code=exited, status=1/FAILURE",
+        "fungal-reference-orthology-20260930.service: Failed with result 'exit-code'."
+      ]
+    },
+    "fungal-reference-orthology-readback-20260930.service": {
+      "launch": "metadata/reference_orthology_readback_launch_20260930.json",
+      "captured_pid": 2884472,
+      "captured_created": 1790801175.74,
+      "exact_process_messages": 10,
+      "journal_sha256": "47a33a9635d31a164d26947d06192369872398f51680e1b9643355b6e3a3946c",
+      "failure_messages": [
+        "fungal-reference-orthology-readback-20260930.service: Main process exited, code=exited, status=1/FAILURE",
+        "fungal-reference-orthology-readback-20260930.service: Failed with result 'exit-code'."
+      ]
+    }
+  },
+  "scope": "Exact original producer and reader PID/command journal records plus explicit exit failure messages. Collected transient unit default success/0 is not success evidence; immutable v2 source preflight and new actual processing preserve the failed attempt."
+}

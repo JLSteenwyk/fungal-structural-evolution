@@ -1,0 +1,70 @@
+{
+  "output": "metadata/reference_orthology_attrition_completed_20260930.json",
+  "completed_status": "complete_verified_full_reference_native_assignment_attrition",
+  "evidence": {
+    "producer": {
+      "path": "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json",
+      "expected": {
+        "status": "complete_full_reference_native_assignment_attrition_summary",
+        "target_contexts": 283409,
+        "context_design_records": 566818,
+        "policy_rows": 48,
+        "matrix_rows": 76
+      }
+    },
+    "reader": {
+      "path": "metadata/reference_orthology_attrition_completed_readback_20260930.json",
+      "expected": {
+        "status": "passed_full_reference_native_assignment_attrition_sql_readback",
+        "target_contexts": 283409,
+        "context_design_records": 566818,
+        "policy_rows": 48,
+        "matrix_rows": 76
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "reader",
+      "field": "producer_receipt_sha256",
+      "to": "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json"
+    }
+  ],
+  "launches": [
+    "metadata/reference_orthology_attrition_launch_20260930.json",
+    "metadata/reference_orthology_attrition_readback_launch_20260930.json"
+  ],
+  "pins": {
+    "metadata/reference_orthology_attrition_plan_20260930.json": "b4d2dae07851f6ceabe97d8e39f938a2b1e6c02aa3578ca760f04638baaa96b1",
+    "metadata/reference_orthology_attrition_launch_20260930.json": "64f5eb8bbdeb7f206afcd9f1bd6f78645ffff898b75433a0e45d72455e8086a1",
+    "metadata/reference_orthology_attrition_wait_plan_20260930.json": "641060770baf67ca96ea14f11d0b77e36ffe2eb7f52ca86a0f7f55e0245c77ef",
+    "metadata/reference_orthology_attrition_readback_launch_20260930.json": "7af1295f541744a0632da51cf191962c1a053bcf2c17b6a8c3185a3ebb2dfcfc",
+    "metadata/reference_orthology_attrition_readback_wait_plan_20260930.json": "4aad4d2f329ebcb641584b2c564d31ed588e293c9d7a6e2322df5b900e0de465",
+    "scripts/summarize_reference_orthology.py": "a27c49612af64755a3d53daf118a75e239fbd7c383c2200a32da1b32f4edd5a8",
+    "scripts/readback_reference_orthology_attrition.py": "9a80f207535b9d996a896de4fbe20a74d2744964cb36a7a7782d5d3781c82a1c",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json": "55b9e250168f47ad3e14ee8a4f7a3f89b3fb8d5c021a22d6209491c0c1d771de",
+    "metadata/reference_orthology_attrition_completed_readback_20260930.json": "ebf1a2c23c71306d4c64d0f90b4137feabd310fd37a1f6999248b3bcb36a66e4"
+  },
+  "summary": {
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "policy_rows": 48,
+    "matrix_rows": 76
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0
+  },
+  "scope": "Full283409context/566818context-design rows, all48nested eligibility/native/model policies and76lexical source-context/missingness/native-state cells independently reconstructed using SQLaggregation from the complete membership/journal-closed source. All rawsource/summary/proof bindings and two exact completion journals checked. No reselected reference/nonlexical tie, removed parent exclusion or model=orthology assumption. Counts overlap across guides/designs/policies, not independent events, biological orthology validations or structural effects; all eight scientific aims incomplete."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "published_exact_copies_of_full_independently_verified_reference_attrition_tables",
+  "completion": "metadata/reference_orthology_attrition_completed_20260930.json",
+  "completion_sha256": "64c04ea4c26f25774bdd7f4c997e3e3236d6156252569a341c9df2a01fa6d71c",
+  "source_receipt": "results/orthology/reference-native-orthology-attrition-20260930-v1/receipt.json",
+  "source_receipt_sha256": "55b9e250168f47ad3e14ee8a4f7a3f89b3fb8d5c021a22d6209491c0c1d771de",
+  "tables": [
+    {
+      "source": "results/orthology/reference-native-orthology-attrition-20260930-v1/context_policy_counts.tsv",
+      "published_table": "docs/tables/reference_native_orthology_context_policy_counts_20260930.tsv",
+      "sha256": "f8eb573ef26900944dc2824bed05c762aed5e78ed9a9d88e874ad0b6befa7f56"
+    },
+    {
+      "source": "results/orthology/reference-native-orthology-attrition-20260930-v1/lexical_reference_context_matrix.tsv",
+      "published_table": "docs/tables/reference_native_orthology_lexical_reference_context_matrix_20260930.tsv",
+      "sha256": "d597cdc75cb60c8f4d23e6c6a0acc523e8c9e26ecbc90e9c978082d0d7978bcb"
+    }
+  ],
+  "scope": "Exact copies of all48policy and76context-state rows, not a selected subset or structural significance result. Fullcontext/SQL/journal closure passed; source dataset remains outsideGit."
+}
