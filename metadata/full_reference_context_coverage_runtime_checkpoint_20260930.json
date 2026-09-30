@@ -1,0 +1,272 @@
+{
+  "status": "verified_live_full_reference_context_coverage_pipeline_waiting_for_full_closed_coverage",
+  "checked_utc": "2026-09-30T22:35:54.816814+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_goal_turn_evidence": "6af35e3 fullcontext/modelwork bridge independently completed all283409contexts/428922sides/121490availabilitylinks,40source/artifactbindings and both exact journals; published28unit-labeled cells. Allscripts/evidence/docs pushed,HEAD=origin/mainverified.",
+  "current_goal_turn_classification": "progress",
+  "scope": "Fullcontext projection implementation and independent SQL policy/field reader tested on all synthetic states with8falseexports rejected; actualsource/currentqueue/inventory/plans preflight passed and3exactdependency-waiting production stages live. No production contextual coverage or calibrated biological effect claimed. All8aims remain incomplete; next primaryAB/commontriad/sequence-locked/domain/PAE/prediction/biologicalorthology/phylogeny/calibration remain required.",
+  "native_alignment_state": {
+    "stage": "aligning",
+    "completed": 76992,
+    "total": 99788,
+    "counts": {
+      "full:aligned": 38496,
+      "plddt70:aligned": 35324,
+      "plddt70:input_unavailable": 3172
+    }
+  },
+  "live_handles": [
+    {
+      "launch": "metadata/expanded_reference_alignment_launch_20260930.json",
+      "pid": 2773729,
+      "created": 1790795916.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "8s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_diagnostic_launch_20260930.json",
+      "pid": 2773732,
+      "created": 1790795916.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_diagnostic_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "34359738368",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_launch_20260930.json",
+      "pid": 2773735,
+      "created": 1790795916.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/expanded_reference_alignment_geometry_readback_launch_20260930.json",
+      "pid": 2773741,
+      "created": 1790795916.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_reference_alignment_geometry_readback_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "1s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/new_reference_measurement_completion_launch_20260930.json",
+      "pid": 2929454,
+      "created": 1790803818.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/new_reference_measurement_completion_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_launch_20260930.json",
+      "pid": 2929458,
+      "created": 1790803818.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_readback_launch_20260930.json",
+      "pid": 2929464,
+      "created": 1790803818.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_readback_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/reference_measurement_union_completion_launch_20260930.json",
+      "pid": 2929481,
+      "created": 1790803818.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/reference_measurement_union_completion_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_producer_launch_20260930.json",
+      "pid": 2963548,
+      "created": 1790805408.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_readback_launch_20260930.json",
+      "pid": 2963551,
+      "created": 1790805408.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_readback_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_order_coverage_completion_launch_20260930.json",
+      "pid": 2963554,
+      "created": 1790805408.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_producer_launch_20260930.json",
+      "pid": 2999739,
+      "created": 1790807620.48,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_readback_launch_20260930.json",
+      "pid": 2999742,
+      "created": 1790807620.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_completion_launch_20260930.json",
+      "pid": 2999745,
+      "created": 1790807620.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_reference_context_coverage_completion_wait_plan_20260930.json"
+      ],
+      "observed_state": {
+        "CPUQuotaPerSecUSec": "2s",
+        "MemoryMax": "17179869184",
+        "MemorySwapMax": "0",
+        "ActiveState": "active"
+      }
+    }
+  ],
+  "native_child": {
+    "pid": 2773841,
+    "created": 1790795920.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_expanded_reference_alignments.py",
+      "--plan",
+      "metadata/expanded_reference_alignment_plan_20260930.json"
+    ]
+  },
+  "fullcontext_pipeline": "metadata/full_reference_context_coverage_pipeline_queued_20260930.json",
+  "context_policy_decisions": 34009080,
+  "scientific_aims_completed": 0,
+  "gpu_inference": "paused; no current authorized prediction run window"
+}

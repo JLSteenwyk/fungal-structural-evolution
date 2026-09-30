@@ -1070,3 +1070,71 @@ coverage-qualified cohorts and effects are not yet produced. Full measurement
 union/coverage, common-residue and sequence-locked comparisons, domain/PAE/
 prediction uncertainty, biological orthology/phylogeny and calibrated
 asymmetry remain outstanding. All eight scientific aims remain incomplete.
+
+## Full source-context coverage projection queued — September 30
+
+`project_full_reference_context_coverage.py` joins the complete fixed source
+design to the closed full-reference order/original-length coverage matrix.
+The entire source record remains in `source_design`, including native guide/
+context fields, every reference tie, lexical choices, parent exclusions and
+duplicate model/version roles. Every reference-side/mask state retains its
+source pair key, both native/usable order statuses and numerical exclusions;
+unmeasured order fields are null. Missing reference models, identical models
+and outside-design pairs remain separate categorical exclusions. A false
+coverage flag represents eligibility, not a zero structural distance.
+
+Five `context_policy_flags` are stored in the receipt's fixed
+`context_policy_flag_order`:
+
+1. `lexical_pair_coverage`: both lexical reference-side comparisons pass.
+2. `lexical_pair_coverage_native_own`: coverage plus assignment to both
+   duplicates under the source guide.
+3. `lexical_pair_coverage_native_both_guides`: coverage plus assignments to
+   both duplicates under both native guides.
+4. `any_tie_pair_coverage_native_both_guides`: at least one original tied
+   reference meets coverage and both-guide assignment.
+5. `all_ties_pair_coverage_native_both_guides`: every original tied reference
+   meets those requirements, with a nonempty reference set.
+
+**Every policy also requires original parent eligibility.** Both comparisons
+use the complete upstream both-order/original-length screening. Any/all-tie
+policies are diagnostics; they never reselect the lexical reference. Missing
+lexical structures and parent-excluded physically measured overlaps stay
+explicit. These policies assess reference-side eligibility; the primary
+duplicate AB comparison and independent/common-residue triads remain to be
+qualified before duplication/asymmetry inference.
+
+The full grid has 283,409 source contexts, 566,818 context/design and 1,133,636
+context/design/mask records. Six screens and five policies represent 6,801,816
+context/screen states and 34,009,080 decisions, plus 5,147,064 side/screen
+decisions. The compressed nested full-context export remains outside Git at
+`results/orthology/full-reference-context-coverage-20260930-v1`; no source
+context is removed. The 240-cell `context_screen_counts.tsv` retains all four
+source/parent/lexical-gene/lexical-model denominators beside passed contexts.
+Counts overlap across guides/designs/masks/screens/policies.
+
+`readback_full_reference_context_coverage.py` independently checks every full
+source field, endpoint, measured/unmeasured status, numerical flag, pass and
+exclusion using SQL pair lookups; it derives contextual policies through SQL
+boolean/count aggregates. Both full ordinal/design/mask/screen universes, all
+work counts, summary values and denominators are checked. It shares source
+I/O/proof lineage only, not producer projection/policy logic. Full software
+fixtures passed all states and eight rehashed false exports were rejected,
+including promoted excluded parents, favorable-order passes, lexical tie
+replacement, missing references, vacuous all-tie passes, cleared numerical
+flags, swapped side pairs and changed denominators. Fixture closed source/
+coverage/proof/journal records are synthetic, not real-data qualification.
+
+Actual completed context-source preflight verified all 40 hash bindings and
+matching current reference-inventory/primary-queue paths. Production, SQL
+reader and original-journal closure are queued behind complete full-reference
+coverage; no contextual production result is claimed. Plans and captured
+handles are in `metadata/full_reference_context_coverage_pipeline_queued_20260930.json`.
+Use its pinned wait plans and do not restart live stages or overwrite outputs.
+Resources were planned before launch: two CPUs/16 GiB/no swap per serial
+stage, eight GiB output allowance and 100 GiB disk reserve; 0.1–12 hours after
+prerequisites is uncalibrated planning, not an ETA. No GPU or paid resource.
+
+Full primary AB/common-triad/sequence-locked/domain/PAE/prediction controls,
+biological orthology/phylogeny and calibrated inference remain outstanding.
+All eight scientific aims remain incomplete; GPU predictions stay paused.

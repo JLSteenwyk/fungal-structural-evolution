@@ -10239,3 +10239,25 @@ does not establish universal coverage or complete the biological project.
   Full context coverage/native-assignment attrition, common-triad/sequence-
   locked/domain/PAE/prediction, supported phylogeny and calibration remain
   outstanding. GPU prediction stays paused; all eight aims remain incomplete.
+
+- September 30: implemented the full source-preserving reference-context
+  coverage/native-assignment projection over 283,409 contexts, both designs/
+  guides/masks, 214,461 ties and 428,922 logical sides. Six original screens
+  produce 6,801,816 context/screen states, 34,009,080 five-policy decisions and
+  5,147,064 side/screen decisions. All full source records, missing reference
+  structures, lexical ties, identical/outside-design states and numerical
+  flags remain explicit; unmeasured order fields are null, never zero.
+  Original parent eligibility gates lexical/own-guide/both-guide/any/all-tie
+  policies even for physical pairs measured elsewhere. Empty all-tie sets
+  cannot pass, and a modeled alternative never changes the lexical choice.
+  Full fixtures passed both implementations and eight rehashed false exports
+  were rejected; fixture proof/journal records are synthetic, not a pilot.
+  Actual completed context-source preflight rechecked all 40 hash bindings
+  and its current inventory/primary queue match the coverage plan. Three
+  exact dependency-waiting production/SQL-reader/journal-closure stages are
+  live, two CPUs/16 GiB/no swap each, after the closed full-coverage gate.
+  No production contextual coverage output is claimed. The recorded native
+  grid reached 76,992/99,788. Primary duplicate AB qualification/common-triad
+  independence and correspondence, sequence-locked/domain/PAE/prediction,
+  biological orthology/phylogeny and calibration remain required. GPU
+  prediction remains paused; none of the eight scientific aims is complete.

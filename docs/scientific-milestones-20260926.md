@@ -597,3 +597,16 @@ This is source design completion, not coverage-qualified cohorts or effects.
 Full context coverage/native-assignment attrition, common-triad/sequence-locked/
 domain/PAE/prediction and phylogenetic/calibration controls remain pending.
 All eight scientific aims remain incomplete.
+
+September 30: full reference-context coverage/native-assignment diagnostics
+are implemented over every source context/design/tie and both masks/six
+screens. Full source records and missingness/parent/lexical/numerical flags
+remain explicit. The five-policy full grid represents 6,801,816 context/screen
+states and 34,009,080 decisions; the independent SQL reader and source/journal
+completion gate are implemented. Fixtures passed and rejected eight rehashed
+false exports; actual full-source preflight rechecked 40 bindings and the
+current source inventory/primary queue match. Three exact dependency-waiting
+stages are live behind closed full-reference coverage; production diagnostics
+are pending. Primary AB/common-triad/sequence-locked/domain/PAE/prediction,
+biological orthology/phylogeny and calibration remain required. None of the
+eight scientific aims is completed.

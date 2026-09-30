@@ -1,0 +1,81 @@
+{
+  "status": "queued_exact_dependency_full_reference_context_coverage_sql_readback_and_journal_closure",
+  "checked_utc": "2026-09-30T22:33:41.348536+00:00",
+  "producer": {
+    "unit": "fungal-full-reference-context-coverage-20260930.service",
+    "pid": 2999739,
+    "created": 1790807620.48,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_context_coverage_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_context_coverage_wait_plan_20260930.json",
+    "plan_sha256": "82086752e487b91a46a53befe73dbf6d07ed2f941c7abfc662e9b74b40e9a52e",
+    "checked_utc": "2026-09-30T22:33:41.221107+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "readback": {
+    "unit": "fungal-full-reference-context-coverage-readback-20260930.service",
+    "pid": 2999742,
+    "created": 1790807620.55,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json",
+    "plan_sha256": "826d84177530d61982219a44c38b2b1292ac77d0902cfa0d1616479d2520fc99",
+    "checked_utc": "2026-09-30T22:33:41.294941+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "completion": {
+    "unit": "fungal-full-reference-context-coverage-completion-20260930.service",
+    "pid": 2999745,
+    "created": 1790807620.62,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies.py",
+      "--plan",
+      "metadata/full_reference_context_coverage_completion_wait_plan_20260930.json"
+    ],
+    "plan": "metadata/full_reference_context_coverage_completion_wait_plan_20260930.json",
+    "plan_sha256": "250b9f707a9e66451b88cf4a488d3e300f4fcbe7bb065b8396baad27545f16cb",
+    "checked_utc": "2026-09-30T22:33:41.348000+00:00",
+    "resources": {
+      "cpu": 2,
+      "memory_gib": 16,
+      "swap_gib": 0,
+      "gpu": false,
+      "paid_resources": false
+    }
+  },
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "model_pairs": 55701
+  },
+  "context_screen_rows": 6801816,
+  "context_policy_decisions": 34009080,
+  "side_screen_decisions": 5147064,
+  "context_source_preflight": "metadata/full_reference_context_coverage_source_preflight_20260930.json",
+  "available_disk_bytes_before_launch": 11431511830528,
+  "scientific_eligibility": false,
+  "scope": "Full283409source contexts/566818context-design/1133636context-design-mask records,all214461ties/428922logical sides.6screens produce6801816context-screen rows/34009080fivepolicy decisions and5147064side-screen decisions;240complete summary cells include full denominators. Closed fullreference coverage/native contextual work design both required. All originalfields, reference missingness/lexical ties/parent exclusions and numerical flags retained; unmeasured order states null. Five policies require both reference-side pairs to pass and originalparent eligibility; own/both guide and any/all sensitivities explicit, no reference replacement or empty-all pass. Reference-pair coverage does not check primary duplicateAB/commontriad independence/residue correspondences, domain/PAE/prediction, biological orthology/phylogeny or calibrated asymmetry. All8aims remain incomplete; GPUpaused."
+}

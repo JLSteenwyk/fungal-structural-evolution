@@ -1,0 +1,37 @@
+{
+  "dependencies": [
+    "metadata/full_reference_context_coverage_producer_launch_20260930.json"
+  ],
+  "pins": {
+    "scripts/reference_context_coverage_sources.py": "ed7af53f978bb5dc2e82bfadc8c18dd838ef16690575bf92d707aee57ba75849",
+    "scripts/project_full_reference_context_coverage.py": "389812a186e9987c5f1ac40be529908a62c081fa44df0c2a97ebe256ca31faa3",
+    "scripts/readback_full_reference_context_coverage.py": "f7e4380ea78198a902a59717e4fc5259772c6ef3a7244fe1477f1cd1bd402666",
+    "scripts/check_full_reference_context_coverage.py": "961d60e82435a7b6860409a19f490602266adad1ff28ebd46ab1171acfd7afe2",
+    "scripts/close_full_reference_context_coverage.py": "5d93f02c2622685131784b4fccc804fadbc971fd7bb81e8e29ffb01c8d1d110e",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/full_reference_context_coverage_resources_20260930.json": "14ba71e0e0e48ab388ca46a7b43b4001e00c79713fcad09e2740c163c278a59a",
+    "metadata/full_reference_context_coverage_fixture_validation_20260930.json": "7bf848ae1b43b1c64ac7eb3626f303c39ca75fb13298160ef9cd5b4acb0d7a40",
+    "metadata/full_reference_context_coverage_source_preflight_20260930.json": "f614a664f22ab736607bad9975a338201ec62042ccd568478e850b93ab0e9dc6",
+    "metadata/reference_context_measurement_design_plan_20260930.json": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "metadata/reference_context_measurement_design_completed_20260930.json": "9c893e098215f401005eeca780da7c487d52b31f4d8d97259a723d60f4772ac5",
+    "metadata/reference_context_measurement_design_completed_readback_20260930.json": "c34177bedd74debb300b63c13a97ade56e62e8de06450432c43531ea46853d27",
+    "metadata/full_reference_order_coverage_plan_20260930.json": "4b88547df0b44ed5f27a5cd010d95c35e2e53db2fe99bfd0977f63c2ef6660a7",
+    "metadata/full_reference_order_coverage_completion_launch_20260930.json": "9b7f5b41fa6c5115933046bc5a48bf71ab5d44e8e67113815235e3b811c242dd",
+    "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json": "71836b05ce62a1c07cfeddbf02b200bb2f31a5375e01dcde6ed75ce9357cbcd1",
+    "metadata/full_reference_order_coverage_completion_plan_20260930.json": "32559075c2123f0a1dd471d05afe7cff47ffb57413e6b67ccac875e25113c368",
+    "metadata/full_reference_context_coverage_plan_20260930.json": "ed1407f4be809e914603837feebf245d66e58dd8666d02a5c044ad441926cec5",
+    "metadata/full_reference_context_coverage_producer_launch_20260930.json": "7fdccda761ddbaec1517f7e247a1a3cd443daf647fdb6c617ea8f193bb4098ed",
+    "metadata/full_reference_context_coverage_wait_plan_20260930.json": "82086752e487b91a46a53befe73dbf6d07ed2f941c7abfc662e9b74b40e9a52e"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_reference_context_coverage.py",
+    "--plan",
+    "metadata/full_reference_context_coverage_plan_20260930.json",
+    "--output",
+    "results/orthology/full-reference-context-coverage-20260930-v1/readback.json"
+  ]
+}

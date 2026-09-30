@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-reference-context-coverage-readback-20260930.service",
+  "pid": 2999742,
+  "created": 1790807620.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json"
+  ],
+  "plan": "metadata/full_reference_context_coverage_readback_wait_plan_20260930.json",
+  "plan_sha256": "826d84177530d61982219a44c38b2b1292ac77d0902cfa0d1616479d2520fc99",
+  "checked_utc": "2026-09-30T22:33:41.294941+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  }
+}

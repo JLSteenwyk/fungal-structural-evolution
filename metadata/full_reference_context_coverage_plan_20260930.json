@@ -1,0 +1,97 @@
+{
+  "context_plan": "metadata/reference_context_measurement_design_plan_20260930.json",
+  "context_readback": "metadata/reference_context_measurement_design_completed_readback_20260930.json",
+  "context_completion": "metadata/reference_context_measurement_design_completed_20260930.json",
+  "coverage_plan": "metadata/full_reference_order_coverage_plan_20260930.json",
+  "coverage_completion": "metadata/full_reference_order_coverage_completed_20260930.json",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "model_pairs": 55701
+  },
+  "output": "results/orthology/full-reference-context-coverage-20260930-v1",
+  "pins": {
+    "scripts/reference_context_coverage_sources.py": "ed7af53f978bb5dc2e82bfadc8c18dd838ef16690575bf92d707aee57ba75849",
+    "scripts/project_full_reference_context_coverage.py": "389812a186e9987c5f1ac40be529908a62c081fa44df0c2a97ebe256ca31faa3",
+    "scripts/readback_full_reference_context_coverage.py": "f7e4380ea78198a902a59717e4fc5259772c6ef3a7244fe1477f1cd1bd402666",
+    "scripts/check_full_reference_context_coverage.py": "961d60e82435a7b6860409a19f490602266adad1ff28ebd46ab1171acfd7afe2",
+    "scripts/close_full_reference_context_coverage.py": "5d93f02c2622685131784b4fccc804fadbc971fd7bb81e8e29ffb01c8d1d110e",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/full_reference_context_coverage_resources_20260930.json": "14ba71e0e0e48ab388ca46a7b43b4001e00c79713fcad09e2740c163c278a59a",
+    "metadata/full_reference_context_coverage_fixture_validation_20260930.json": "7bf848ae1b43b1c64ac7eb3626f303c39ca75fb13298160ef9cd5b4acb0d7a40",
+    "metadata/full_reference_context_coverage_source_preflight_20260930.json": "f614a664f22ab736607bad9975a338201ec62042ccd568478e850b93ab0e9dc6",
+    "metadata/reference_context_measurement_design_plan_20260930.json": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "metadata/reference_context_measurement_design_completed_20260930.json": "9c893e098215f401005eeca780da7c487d52b31f4d8d97259a723d60f4772ac5",
+    "metadata/reference_context_measurement_design_completed_readback_20260930.json": "c34177bedd74debb300b63c13a97ade56e62e8de06450432c43531ea46853d27",
+    "metadata/full_reference_order_coverage_plan_20260930.json": "4b88547df0b44ed5f27a5cd010d95c35e2e53db2fe99bfd0977f63c2ef6660a7",
+    "metadata/full_reference_order_coverage_completion_launch_20260930.json": "9b7f5b41fa6c5115933046bc5a48bf71ab5d44e8e67113815235e3b811c242dd",
+    "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json": "71836b05ce62a1c07cfeddbf02b200bb2f31a5375e01dcde6ed75ce9357cbcd1",
+    "metadata/full_reference_order_coverage_completion_plan_20260930.json": "32559075c2123f0a1dd471d05afe7cff47ffb57413e6b67ccac875e25113c368"
+  },
+  "resources": {
+    "status": "planned_full_reference_context_coverage_and_native_assignment_diagnostics",
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "output_allowance_gib": 8,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.1,
+      12
+    ],
+    "runtime_uncalibrated": true,
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "context_design_mask_records": 1133636,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "full_reference_pairs": 55701,
+    "context_screen_rows": 6801816,
+    "context_policy_decisions": 34009080,
+    "side_screen_decisions": 5147064,
+    "summary_rows": 240,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "basis": "All source contexts/both designs/guides/ties; both masks and six fixedscreens. Five contextual lexical/own-guide/both-guide/any/all-tie policies independently reconstructed using SQL aggregates; originalparent exclusion mandatory even for measured overlaps. Fullsource records and measured/rawnumeric versus nullunmeasured states retained. Compressed fullcontext export outsideGit.2CPU16GiB/noSwap per serialstage,8GiB outputallowance,100GiB diskreserve,0.1-12h uncalibrated after prerequisite. Closednative contextdesign and completed fullcoverage with originaljournal gates required before producer; no native optimization, GPU or paid resource."
+  },
+  "scope": "Full283409source contexts/566818context-design/1133636context-design-mask records,all214461ties/428922logical sides.6screens produce6801816context-screen rows/34009080fivepolicy decisions and5147064side-screen decisions;240complete summary cells include full denominators. Closed fullreference coverage/native contextual work design both required. All originalfields, reference missingness/lexical ties/parent exclusions and numerical flags retained; unmeasured order states null. Five policies require both reference-side pairs to pass and originalparent eligibility; own/both guide and any/all sensitivities explicit, no reference replacement or empty-all pass. Reference-pair coverage does not check primary duplicateAB/commontriad independence/residue correspondences, domain/PAE/prediction, biological orthology/phylogeny or calibrated asymmetry. All8aims remain incomplete; GPUpaused."
+}

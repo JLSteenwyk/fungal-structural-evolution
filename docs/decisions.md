@@ -171,3 +171,22 @@ SQL field/role reconstruction, exhaustion of both full context and original
 availability-link universes, source hashes and both original process journals.
 Work-count exports label context counts separately from logical side-link
 counts; do not pool counting units, guides, reference designs or ties.
+
+### September 30: retain the full reference-context coverage denominator
+
+Project the source/journal-closed full original-protein coverage matrix onto
+every fixed native context/design/tie and both duplicate sides. Require both
+reference-side comparisons to pass under both native input orders; carry
+all unavailable/error/numerical flags and explicit null unmeasured order
+fields. Retain missing genes/models, identical-model and outside-design work
+states. Parent eligibility is mandatory for each contextual policy even when
+a physical pair is measured in another event. Report five separate lexical
+coverage, lexical own-guide assignment, lexical both-guide assignment, any-tie
+and all-tie both-guide diagnostics. Any/all sensitivities do not change the
+original lexical reference; empty all-tie sets are excluded. Preserve full
+source, parent, guide and model availability denominators. Independently
+reconstruct each exported field and derive all contextual policies using SQL
+boolean/count aggregates. Full producer/reader journal closure precedes
+completion. Reference-side coverage does not qualify the primary duplicate
+AB comparison, an independent common-residue triad, prediction accuracy,
+biological orthology, accepted phylogeny or a calibrated asymmetry effect.

@@ -1,0 +1,28 @@
+{
+  "status": "planned_full_reference_context_coverage_and_native_assignment_diagnostics",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "output_allowance_gib": 8,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "target_contexts": 283409,
+  "context_design_records": 566818,
+  "context_design_mask_records": 1133636,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "availability_side_links": 121490,
+  "full_reference_pairs": 55701,
+  "context_screen_rows": 6801816,
+  "context_policy_decisions": 34009080,
+  "side_screen_decisions": 5147064,
+  "summary_rows": 240,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "basis": "All source contexts/both designs/guides/ties; both masks and six fixedscreens. Five contextual lexical/own-guide/both-guide/any/all-tie policies independently reconstructed using SQL aggregates; originalparent exclusion mandatory even for measured overlaps. Fullsource records and measured/rawnumeric versus nullunmeasured states retained. Compressed fullcontext export outsideGit.2CPU16GiB/noSwap per serialstage,8GiB outputallowance,100GiB diskreserve,0.1-12h uncalibrated after prerequisite. Closednative contextdesign and completed fullcoverage with originaljournal gates required before producer; no native optimization, GPU or paid resource."
+}

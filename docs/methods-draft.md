@@ -1479,3 +1479,46 @@ choice, no missing comparison becomes zero, and an identical model is not an
 independent structural replicate. Coverage, common-residue and sequence-locked
 comparisons, domain/PAE/prediction uncertainty, biological orthology/phylogeny
 and calibrated inference remain required.
+
+### Full context coverage and native-assignment policies queued — September 30
+
+The complete fixed context design is joined to the source/journal-closed
+reference pair/mask coverage matrix. All 283,409 context records and every
+source/native field remain in the full export. Both reference designs, both
+guides, all 214,461 tied-reference records/428,922 duplicate-reference sides,
+parent exclusions, missing structures and identical/outside-design states
+are retained. Measured pair flags use both numerically usable native orders
+and the original full-protein denominator; unmeasured order status/numerical
+fields are null and their screen exclusions are categorical. Original
+measured numerical flags are copied unchanged from the verified matrix.
+
+For each design/mask/screen, both duplicate-to-reference sides must pass
+coverage. Original parent eligibility gates every context policy. Five
+policies report lexical reference coverage alone, lexical coverage with
+assignment to both duplicates under the source guide, lexical coverage with
+assignments under both guides, any tied reference meeting coverage and both-
+guide assignment, and all tied references meeting those requirements. Empty
+reference sets fail every policy. Any/all-tie sensitivities are separately
+reported; they never replace the source lexical gene. Physically measured
+pairs do not override excluded parents. These diagnostics do not yet qualify
+primary duplicate AB or common-triad independence/residue correspondence.
+
+Both masks and six original screens represent 6,801,816 context/screen states
+and 34,009,080 contextual policy decisions, with 5,147,064 logical-side/screen
+decisions. These are stored in the source-preserving nested compressed
+export, not interpreted as independent observations. The 240-cell summary
+retains source-context, parent-eligible, parent-eligible lexical-gene and
+parent-eligible lexical-model denominators. An independent checker rebuilds
+each side state using SQL pair lookups, derives all contextual flags with
+SQL boolean/count aggregates, and checks all source ordinals, dimensions,
+summary cells and denominators.
+
+Code and full software fixtures passed, including excluded parents with
+measured pairs, a missing lexical model with modeled alternate, empty all-
+tie sets, native guide disagreement and numerical exclusions. Eight rehashed
+false exports were rejected. Actual context source/40 hashes/current inventory
+and primary-queue bindings passed preflight. Full production, SQL readback
+and both original process journals are queued behind closed coverage, not
+completed results. Primary AB/common-triad/sequence-locked/domain/PAE/
+prediction, biological orthology/phylogenetic and calibration checks remain
+required before effects can be tested or interpreted.
