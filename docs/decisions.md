@@ -279,3 +279,27 @@ cohorts, not an accepted biological orthology assignment or calibrated effect.
 Guide/design/core policies overlap and their counts must not be pooled as
 independent events. Preserve all source choices in models of availability,
 missingness, family/taxon effects and phylogenetic uncertainty.
+
+
+### October 1: retain legacy-only active models and qualify full background inputs
+
+The modern three input collections omit 224 active background models. Include
+the complete older reference supplementary collection after full written-input
+readback rather than silently dropping these models. Require every full
+semantic overlap and actual written byte hash to agree, and preserve all source
+origins. Use declared collection order independently of readiness or geometry;
+restore original residue positions through exact source-row hashes before
+numeric/geometry work. Keep all 146,172 physical background pairs and all
+305,434 active models. The 74,712 genuinely new native pairs come from full
+catalog screening, not the inventory's older additional-pair flag. All 71,460
+matching catalog pairs remain pending real input/checkpoint/numeric qualification.
+
+Queue eight-CPU native work only behind full independent input-union closure.
+Use separate full vectorized/quaternion reconstruction after fused numeric/
+geometry assessment; retain all short/failure/parse/timeout/RMSD/rank states.
+Require three original journals and full artifact/source hashes for new
+measurement completion. Software fixtures are synthetic implementation checks,
+not a pilot or evidence that production data passed. Preserve failed legacy
+completion v1; corrected v2 adds explicit evidence pins and reuses the passed
+reader. Keep GPU inference paused, existing CPU jobs untouched and every
+scientific aim open.

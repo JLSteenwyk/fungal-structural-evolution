@@ -10378,3 +10378,22 @@ does not establish universal coverage or complete the biological project.
   background measurement/reuse, sequence-locked/domain/PAE/prediction controls,
   phylogenetic qualification and calibration remain required. All eight aims
   remain incomplete; original CPU jobs preserved and GPU inference paused.
+
+- October 1: complete legacy-reference written-input audit passed all 14,540
+  models/29,080 mask states, checking 816,376,377 bytes across 15 shards. Corrected
+  v2 completion binds 71 hashes and both original journals; failed v1 lacked an
+  explicit materializer-receipt evidence pin and remains preserved. The reader
+  was not rerun. This retains 224 active models absent from all three modern
+  input collections. Full four-collection input union is live, covering
+  1,239,656 source states, 305,434 active models/610,868 masks and all 146,172
+  pairs with complete semantic/actual-byte overlap checks and independent SQL
+  reconstruction queued. Full 74,712-new-pair/298,848-disposition native,
+  numeric/geometry, independent vectorized/quaternion and completion pipeline
+  is queued behind successful input closure. Native uses eight CPU workers;
+  audit stages use two CPU/64 GiB, no swap/GPU/charges. Prelaunch resources
+  recorded; count-only ideal estimate 9.7671 hours is not an ETA. Synthetic
+  real-USalign checks passed all 12 states/10 alignments, rejected 12 rehashed
+  false exports and preserved native/parse/timeout/RMSD/degenerate exclusions.
+  Production union/measurements remain pending, as do actual reuse checks for
+  all 71,460 matching old-catalog pairs and full comparative calibration. All
+  eight aims remain incomplete; original CPU jobs live and GPU inference paused.

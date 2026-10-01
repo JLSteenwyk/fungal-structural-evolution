@@ -1,0 +1,36 @@
+{
+  "role": "reference",
+  "producer_plan": "metadata/duplication_reference_alignment_input_plan_20260926.json",
+  "models": 14540,
+  "output": "metadata/legacy_reference_written_inputs_readback_20261001.json",
+  "pins": {
+    "metadata/duplication_reference_alignment_input_plan_20260926.json": "317527ee77c300ce2f5042d266c2cfd0af9294a1310494e06606e5517d487df2",
+    "scripts/readback_additional_alignment_inputs.py": "5d94bedbd048def2b68309001bb7ae5da23c88dafed90a1ed238a48ad2dfd7ad",
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/legacy_reference_written_inputs_resources_20261001.json": "c7a6e7f909aa334ae8113bdb090e794ab0846d5969f98a32e52e821bcc0d0780",
+    "metadata/duplication_reference_alignment_input_launch_20260926.json": "4b0c1de0594d4327bf210451da80992b35eb8535a7486924f2e8e37235a7c18c"
+  },
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "models": 14540,
+    "input_dispositions": 29080,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "runtime_uncalibrated": true,
+    "basis": "Independent full native-coordinate/shard/PDB readback of all14540 legacy-reference supplemental models, all29080 masks and every actual written PDB. This closes the complete legacy partition needed by224 expanded-background models absent from newer input collections; no subsampling or pilot. Existing1CPU16GiB/noSwap; no GPU/charges.",
+    "free_disk_gib": 10555.009620666504
+  },
+  "scope": "Independent full native-coordinate/shard/PDB readback of all14540 legacy-reference supplemental models, all29080 masks and every actual written PDB. This closes the complete legacy partition needed by224 expanded-background models absent from newer input collections; no subsampling or pilot. Existing1CPU16GiB/noSwap; no GPU/charges."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "passed_expanded_background_native_numeric_quaternion_software_checks",
+  "directed_synthetic_native_states": 12,
+  "numerically_checked_synthetic_alignments": 10,
+  "input_collections": 4,
+  "pending_synthetic_catalog_pairs": 1,
+  "unchanged_checkpoint_replay_passed": true,
+  "synthetic_native_failure_parse_timeout_and_rmsd_discrepancy_preserved": true,
+  "rejected_rehashed_false_exports": [
+    "missing_directed_state",
+    "duplicated_directed_state",
+    "false_model_role",
+    "false_checkpoint_hash",
+    "invented_unavailable_numeric",
+    "promoted_unavailable",
+    "changed_native_status",
+    "changed_numeric_identity",
+    "changed_rmsd",
+    "changed_rank",
+    "removed_degenerate_flag",
+    "false_total"
+  ],
+  "changed_original_position_source_rejected": true,
+  "maximum_absolute_fixture_rmsd_difference": 2.177107265849051e-15,
+  "maximum_scaled_fixture_quaternion_curvature_error": 1.7048826137248506e-16,
+  "script_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_expanded_background_measurement_cases.py": "f9dd27c015d0967d491a3a22b5a5e3342508eb531569414f72396cb424375627",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_expanded_background_alignments.py": "3d58e564bf08c7721e24282919be1861f7d2c664e3bb4d4ab0abca039c0c5db7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/assess_expanded_background_measurements.py": "46329ff073d3ca24d239bb329748a66fb5d1ba8328e4c9356da970933da88440",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_expanded_background_measurements.py": "712e9be27ba7df46388536cfe5834c63b168e32e0500340b00ef7e549ff2fa6f",
+    "scripts/expanded_background_native_handoff.py": "81e53319472ef89081f38cefd32a1fcbfa8f3e83c27c8b46549473ee0673923d",
+    "scripts/expanded_background_measurement_sources.py": "d568a6888bc9abb28af876d71722d597b6128d74b49fff780cd1d90b13897109"
+  },
+  "usalign_sha256": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+  "scope": "Five synthetic20-residue models/four collections including global overlaps, legacy-only model, short pLDDT70 and collinear fit. Actual USalign both masks/orders on3new pairs; pending old pair never computed. Compact-input original-position reconstruction, immutable checkpoint replay, full diagnostic/SVD and independent vectorized/quaternion baseline,12rehashed false exports and native failure/parse/timeout/RMSD discrepancy preservation. Only closure provenance is synthesized; no actual completion-journal audit, biological pilot, full source qualification or old-result acceptance claim."
+}

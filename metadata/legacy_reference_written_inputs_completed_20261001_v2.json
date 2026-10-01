@@ -1,0 +1,131 @@
+{
+  "status": "complete_verified_full_legacy_reference_written_inputs",
+  "checked_utc": "2026-10-01T18:21:32.722362+00:00",
+  "summary": {
+    "models": 14540,
+    "input_dispositions": 29080,
+    "counts": {
+      "full:ready": 14540,
+      "plddt70:ready": 14050,
+      "plddt70:too_few_retained_residues": 490
+    },
+    "pdb_bytes": 816376377
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/duplication_reference_alignment_input_launch_20260926.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "419bdb3c3a4644393cb2070c783746dffad33cdd4f9a8aecaa41c34a945686c9",
+      "captured_process_messages": 15,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790473179271884",
+          "CPU_USAGE_NSEC": "78055835000",
+          "MEMORY_PEAK": "57503744",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/legacy_reference_written_inputs_readback_launch_20261001.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "75b432a95ef8e8f80d6c66c69882de3d47199edb79a8f4154e132b2b3d06038d",
+      "captured_process_messages": 16,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790878626847304",
+          "CPU_USAGE_NSEC": "40829464000",
+          "MEMORY_PEAK": "3518464",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/legacy_reference_written_inputs_completion_plan_20261001_v2.json": "d1ec830c9e2bc459c0f0f66a8d5d74e32063a8cee553a2b47f20a3d24ec2f730",
+    "metadata/duplication_reference_alignment_input_plan_20260926.json": "317527ee77c300ce2f5042d266c2cfd0af9294a1310494e06606e5517d487df2",
+    "scripts/readback_additional_alignment_inputs.py": "5d94bedbd048def2b68309001bb7ae5da23c88dafed90a1ed238a48ad2dfd7ad",
+    "scripts/readback_duplication_alignment_inputs.py": "6a48f6db893d53bcdfea28fec0e1978cd8acd23065327c9cc197d7d27eb8c7c3",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/legacy_reference_written_inputs_resources_20261001.json": "c7a6e7f909aa334ae8113bdb090e794ab0846d5969f98a32e52e821bcc0d0780",
+    "metadata/duplication_reference_alignment_input_launch_20260926.json": "4b0c1de0594d4327bf210451da80992b35eb8535a7486924f2e8e37235a7c18c",
+    "metadata/legacy_reference_written_inputs_readback_plan_20261001.json": "8e55742dfab5b9c3e864b19cf4f791152a8870546115e85671b9e026b2df5637",
+    "metadata/legacy_reference_written_inputs_readback_launch_20261001.json": "3bba7b60667fc4b38d778b6834a3a7ea1f82f78b69469bc9fccf8e2d4ed1cdc4",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "metadata/legacy_reference_written_inputs_readback_20261001.json": "64ae6467ca1f5038750959be62c5ee6c5f669af0368c7232af25c763dfe1e446",
+    "metadata/legacy_reference_written_inputs_completion_plan_20261001.json": "3edb4665cd9ea7b26fedb58dc5f8934d38b9799db2d28a482bfa80958fc09447",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/receipt.json": "5cdc24fce363eeb959c693dbe69d188e9c2bc5dc9d0a1859c36a3d579ee0cb6f",
+    "results/structural_comparisons/duplication-model-pair-queue-20260926-v1/models.jsonl": "48c04f2c1b327e09f4f04ed4f932514212b9eb520d2763f3e03390dd7a172ada",
+    "scripts/validate_duplication_coordinates.py": "3e060ffa50ab4f3a09aadbecec9d1e1802656bae1ed32e771cc441afec62dfd7",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/check_duplication_coordinate_validation.py": "2ad1d3a3fdab1305d1bb80b9ab77e9ac98149d2ba35fd3c0df36fcab68afc49f",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-readback-20260926-v1.json": "c031099aadcf2829279f3cedb21db6ff0ffc1ff7c30255818bc53036866ce3aa",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/model_pairs.tsv": "e5c3660201095719372b80138f5d7cf192ad8d43ebb28951aee574ec591cddcc",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/models.jsonl": "270789bb3cd9c573ee62693bf10a68073cdbfff589af06ea8ac0a62d1e852c3e",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/event_reference_comparisons.tsv": "692dc046eb280c1f129c05b2a47a674a3e56ff2c836b34fca9176d2afd6f2731",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/additional_models.jsonl": "1d6289a600251cfb431e13d57343685def9fb5de61375e8a72ca56756210eab3",
+    "scripts/validate_duplication_reference_coordinates.py": "86ccf6e7651f2f84ed203aee4c6984a44620f3bcfe4f114997f83442d144953e",
+    "scripts/check_duplication_reference_coordinates.py": "72e015d969350f93c596e42a7fc1b01f987664490c8a8a798557611a9d8db6f3",
+    "metadata/duplication_reference_coordinate_validation_plan_20260926.json": "34171f71fd3e472b2d7f5738894044d4ead4b7ef7d923878f2a92852eea55904",
+    "metadata/duplication_reference_coordinate_validation_launch_20260926.json": "7ee786c4cd740417b0da82a9f965614f97dd7ee74e9bd59dc8008798bd1a3383",
+    "scripts/readback_duplication_coordinates.py": "d607ae174a6cefbb103541bb8ca4f290e1456ab712fd52e4f1fb7f390edca356",
+    "scripts/check_duplication_coordinate_readback.py": "4eb24c259e346004cf4976b87434246c6c9406483c777f4c3171e236d8e9977d",
+    "metadata/duplication_reference_coordinate_readback_plan_20260926.json": "9f048353a9889e3fa3a5c98094340bc49a32c622ea4dcc7d82fe3f1e51b313a2",
+    "metadata/duplication_reference_coordinate_readback_launch_20260926.json": "32aa1053e22b06c52dc11c8483d5840bee357cdcba454212cf9792e58529cf7f",
+    "scripts/materialize_duplication_reference_inputs.py": "0f6092d62c9de42e1a423fbe0b55ea8da6947ee882466de9a57b6df75715261b",
+    "scripts/duplication_alignment_inputs.py": "ba99fd1241d5f191ecc7d4069e8a636a5d91ffc7c2a784f026afa99e6bbc3b87",
+    "scripts/check_duplication_reference_materialization.py": "0686d5672b6b55f4661d762f4f3fc116655ed5194ebe57620256fb854f8e836f",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/receipt.json": "84952d0b62d81aa4a89ae941471e1337b73ea68e00d373bdebeb5f92e8125fa5",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/receipt.json": "bac5673fecd69c1515b1d30b28845604dabe082d54576bbf25e0818bfab9846a",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00000.jsonl.gz": "9cedfb69f126a8f46a79256e1396fbb0aadc83064271027fc8f25fe17de4716d",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00000.jsonl.gz.readback.json": "98da9cdd7d32be3f85be21cf7c4951c20e22147be5b1751c6f7dd11952bf0e1f",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00001.jsonl.gz": "162acda86a830dc58c99111a39074295eef0f210bbc2aaf4f95fba85fd11bde5",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00001.jsonl.gz.readback.json": "d5da987200012f4abbc5aee1fe2b5d31d2fb768189663a276b7547b993a335a8",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00002.jsonl.gz": "c2bb856cff00247d05f921a8057cffb786f7c398099686f10682712d9b5fc1e8",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00002.jsonl.gz.readback.json": "89296e59edb352b96ed6b70fe2d714ae5eefe3da724de6e1c4caccfd48460569",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00003.jsonl.gz": "b136c5ca387792b4ce514b5fc0551230b13ecd98d91afaf5c3041f322c635e90",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00003.jsonl.gz.readback.json": "09db529a825d1acbee75a821771edf50ea84cfd8cd7a4aedac211544d2d27569",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00004.jsonl.gz": "99043976d5c5e43857af43956d1c6efcd19fa2869a43f6234237e271c6734777",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00004.jsonl.gz.readback.json": "fc2884992896cb1d68498a35ce2743cc9cf93cfd9b50487f9edf102f85b58cc5",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00005.jsonl.gz": "047a01183b1e64f31a5e3b72ffd374bd5b50a21b6644dc4168a0afb232048774",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00005.jsonl.gz.readback.json": "fca6dc237959705960f18234b58d31f8f71a74c55f36630c1020ed99873a504f",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00006.jsonl.gz": "85475882c1483d74260a6131a9aca056021452acd4c8666149f0b3192497ad7d",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00006.jsonl.gz.readback.json": "446cd4206a6405eaf753111c57ebf50087d232486f6c8549fc0e44ac6da9c4c4",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00007.jsonl.gz": "5c8a225f554eca5aadc1549b74fc291bf751f01150cb6b61a4efd245ae636fd4",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00007.jsonl.gz.readback.json": "f95c46cf19b203f63651b401cf16bd531fa370c2cc519786589493c354768608",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00008.jsonl.gz": "9d663dbc2d72e6ba5a4873f4c64866c58b20a4e0316ac2b31e80c493fcbbaf10",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00008.jsonl.gz.readback.json": "f0167dc1384b7da911e28bb002bddcccd5160f39056957c20c456439b47f94f3",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00009.jsonl.gz": "7fb619394b9aecd6ebd838a0939a2013b7c7501d4f321af92f8627c5bd5285d5",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00009.jsonl.gz.readback.json": "44f9b776c2bdf2d505da793f6d07d16762afa1e0cc2161061273b99cee4a1242",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00010.jsonl.gz": "1c4f74ef69e7f273d9d6e924eda20e699b9751467a24ef60eca3a5f610f962e0",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00010.jsonl.gz.readback.json": "65f8f123eeca3893fc8d6b4a87007ec81483ee685c10741af438a865d961bb17",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00011.jsonl.gz": "d143e51d53d8afeb42eb515343c753f306845af167bf8911d3123065de69fcba",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00011.jsonl.gz.readback.json": "6935fd5e504ee853e2349bbee135bb4c1e6ee6a01c1ed497d658d3cff5bd1acc",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00012.jsonl.gz": "d60ed70f49c72aa1daf702ad2ca1c470720be5df52f6eb3f7c6f282519094793",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00012.jsonl.gz.readback.json": "42d4d7e5b69e833de9b5d0dc332681dec17a8b1031a05a22ef307a071f567add",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00013.jsonl.gz": "3d227b93e94db0e6200074a7aee05427ea08ef8e9cd33879b2ff34e22616ea92",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00013.jsonl.gz.readback.json": "3a55e682d4d0baf31968ad80e0acc6b755aaace02ca681b9b96e93e47632eb55",
+    "results/structural_comparisons/duplication-reference-coordinate-validation-20260926-v1/shard-00014.jsonl.gz": "a0841ce5141be1142e4066cdec91c7b2fcbb5db29f86216634fb2d94bb23edfc",
+    "results/structural_comparisons/duplication-reference-coordinate-readback-20260926-v1/shard-00014.jsonl.gz.readback.json": "48ba9e5dc4c5ade615d60cf449396f7bc9a46482f4d52c9c38382de96ce584dc"
+  },
+  "scope": "All14540legacy-reference native-coordinate and written full/p70PDB inputs independently reconstructed, binding original legacy materializer and current full independent reader exact original journals. Enables provenance-preserving complete expanded-background input union, not native alignment reuse or biological inference."
+}

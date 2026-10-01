@@ -1631,3 +1631,30 @@ reconstruction passed every contextual output and summary, with 464,637 source
 bindings and both original journals. Counts use
 physical triples and repeated logical quality screens explicitly; they are
 not independent events. [Full workflow, evidence and limitations](full-triad-order-context-robustness-20261001.md).
+
+
+### Full expanded background measurement workflow
+
+The 146,172-pair background design retains 305,434 active models and both
+confidence masks. Exact physical input collection order is declared in advance
+across primary, modern reference, background and legacy reference collections;
+every global overlap requires identical full semantic fields and actual written
+bytes. All origins and original residue positions remain traceable. A full
+independent source/SQLite readback and two original completion journals must
+close this union before native work. All 29,080 legacy written-input states
+have passed readback and two-journal closure; production union is still running.
+
+The queued native stage measures every 74,712 new pair under both masks/orders
+(298,848 dispositions). The 71,460 catalog-matched pairs retain pending reuse
+status until exact old-input/result/numeric/geometry checks succeed. A complete
+checkpoint assessment preserves nonalignment and numerical exclusions and
+reconstructs least-squares distances, sequence identities, confidence, coverage,
+coordinate rank and proper-rotation curvature. Separate vectorized mapping,
+quaternion distance and LAPACK spectrum checks audit all states. Three exact
+original native/assessment/reader journals and full source/artifact hashes are
+required for new measurement closure. Software checks passed on actual native
+synthetic coordinates and rejected 12 rehashed false outputs; this is not
+production completion or a biological pilot. TM-scores bind native output
+without independent optimization. No biological effect, rate or calibrated
+selection inference follows from numerical eligibility alone. [Full workflow
+and prelaunch resources](terminal-sister-backgrounds-20260927.md#full-four-collection-input-union-and-new-measurements-october-1).

@@ -1,0 +1,56 @@
+{
+  "unit": "fungal-legacy-reference-written-inputs-readback-20261001-v1.service",
+  "pid": 3817973,
+  "created": 1790878581.31,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_additional_alignment_inputs.py",
+    "--plan",
+    "metadata/legacy_reference_written_inputs_readback_plan_20261001.json"
+  ],
+  "plan": "metadata/legacy_reference_written_inputs_readback_plan_20261001.json",
+  "plan_sha256": "8e55742dfab5b9c3e864b19cf4f791152a8870546115e85671b9e026b2df5637",
+  "checked_utc": "2026-10-01T18:16:22.049371+00:00",
+  "resources": {
+    "cpu": 1,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "models": 14540,
+    "input_dispositions": 29080,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 0.1,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "runtime_uncalibrated": true,
+    "basis": "Independent full native-coordinate/shard/PDB readback of all14540 legacy-reference supplemental models, all29080 masks and every actual written PDB. This closes the complete legacy partition needed by224 expanded-background models absent from newer input collections; no subsampling or pilot. Existing1CPU16GiB/noSwap; no GPU/charges.",
+    "free_disk_gib": 10555.009620666504
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "100000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-legacy-reference-written-inputs-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=100%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_additional_alignment_inputs.py",
+    "--plan",
+    "metadata/legacy_reference_written_inputs_readback_plan_20261001.json"
+  ]
+}

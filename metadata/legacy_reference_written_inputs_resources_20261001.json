@@ -1,0 +1,19 @@
+{
+  "cpu": 1,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "models": 14540,
+  "input_dispositions": 29080,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 0.1,
+  "planning_hours": [
+    0.1,
+    2
+  ],
+  "runtime_uncalibrated": true,
+  "basis": "Independent full native-coordinate/shard/PDB readback of all14540 legacy-reference supplemental models, all29080 masks and every actual written PDB. This closes the complete legacy partition needed by224 expanded-background models absent from newer input collections; no subsampling or pilot. Existing1CPU16GiB/noSwap; no GPU/charges.",
+  "free_disk_gib": 10555.009620666504
+}

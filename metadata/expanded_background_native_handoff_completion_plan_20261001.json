@@ -1,0 +1,38 @@
+{
+  "source_plan": "metadata/expanded_background_native_handoff_plan_20261001.json",
+  "output": "metadata/expanded_background_native_handoff_completed_20261001.json",
+  "launches": [
+    "metadata/expanded_background_native_handoff_producer_launch_20261001.json",
+    "metadata/expanded_background_native_handoff_readback_launch_20261001.json"
+  ],
+  "pins": {
+    "scripts/expanded_background_input_sources.py": "b0b9bfc8679506f0d51957d06b90bdc4cefd131542f258ff517018b218f25308",
+    "scripts/prepare_expanded_background_native_handoff.py": "03a40f55129067920a7710dfc4cf533cced97117a522127f99c46748aa73dd1d",
+    "scripts/readback_expanded_background_native_handoff.py": "1bd8b1f995477555eff18f7197608e981485fda69dcfe1a068da6daab2bb5ed5",
+    "scripts/close_expanded_background_native_handoff.py": "15d1de44b6022f9d000b44db461722ea31eef60b300097d01ca2d68c3e8edc6f",
+    "scripts/check_expanded_background_native_handoff_cases.py": "16fd5d5761cbbd579aad60e39751356010eef84aa1e163e808b4dcf7e08c84e2",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/expanded_background_native_handoff_fixture_validation_20261001.json": "502293b3036214c76926e86453cb3f03c930fc58b16187895a5e73ad8ba4c503",
+    "metadata/expanded_background_inputs_completed_20261001.json": "a4dd2b19461986b255c3daed77cf3f1e0bf9900c68c495aed8ae425f7236444a",
+    "metadata/legacy_reference_written_inputs_completed_20261001_v2.json": "c58fb3bf4d1250330394a7e2e31544b4d12448c71a9aab3aa7b7bebd7c771a08",
+    "metadata/expanded_background_native_handoff_resources_20261001.json": "14912831ed6c7362f75abc4cf6aca45007b14d6fbd841be01a468ae34ec74457",
+    "metadata/duplication_alignment_input_plan_20260928.json": "61426105e2cc14b587efd9616ffbe7060869dff714d6988c5e29747daa78efa0",
+    "metadata/duplication_alignment_inputs_completed_readback_20260929.json": "e7d5e449e5e75a0a674f9d08121831e3d0632fa8ab6e02c8878680b4fded2c72",
+    "metadata/expanded_duplication_reference_alignment_input_plan_20260930.json": "3660d9cd2bc3c75600998abe0e4ebde78d0ad7d68c09480fb8d3a27ed28845b8",
+    "metadata/expanded_duplication_reference_alignment_input_completed_readback_20260930.json": "574c1d4f6acb4810609e23ffbb14df69070301befd1e1bc648b3f38b0350f0c4",
+    "metadata/expanded_background_alignment_input_plan_20260930.json": "618cecaec213a14fd6bba6c63a3dc387d693cf103a2ab94fe9ed33113680d230",
+    "metadata/expanded_background_alignment_input_completed_readback_20260930.json": "58f78672e33d6d85025b1f4145c4666cd5f1fea7762528d34c0d3e0f4d322484",
+    "metadata/duplication_reference_alignment_input_plan_20260926.json": "317527ee77c300ce2f5042d266c2cfd0af9294a1310494e06606e5517d487df2",
+    "metadata/legacy_reference_written_inputs_readback_20261001.json": "64ae6467ca1f5038750959be62c5ee6c5f669af0368c7232af25c763dfe1e446",
+    "metadata/background_measurement_inventory_completed_readback_20260930.json": "3f0ecbb92fe952a2f715b03fecd9296b813a42f340dc14b496facc48b27700ac",
+    "metadata/full_pair_reuse_completed_readback_20260930_v2.json": "8daca0a8a7efc135ecbc1c8b96cae657d837a6c90c84946dcad579ef0f87f5ed",
+    "metadata/expanded_background_native_handoff_plan_20261001.json": "23a00afd8bd81979f2bc104843f182875891a0efab2ac7c2a4c031a91d3f3d03",
+    "metadata/expanded_background_native_handoff_producer_launch_20261001.json": "3c431ce04a3bc3877e10e8863c5b135d03d30e998d545f165748f80b03557e6d",
+    "metadata/expanded_background_native_handoff_readback_launch_20261001.json": "6a70111c3c2f25bc6c28dab96dc1f4193dfa018b6c3947a54d9c3002c0093d40",
+    "metadata/expanded_background_native_handoff_readback_wait_plan_20261001.json": "c4c091c2bca39065421642396303833ab58d57dc1a69ab63e57edf1131db75be"
+  },
+  "scope": "Complete146172 expanded-background pairs retain all305434active models,610868active model/mask states and all original candidate/old-catalog flags. Four fully read-back input collections retain all1239656source states, globally byte/semantic-qualified overlaps and source origins;224active models absent from modern three collections retain legacyreference provenance. Every needed rawCIF/current or overlapping readyPDB actual hash checked. All74712new native pair states preserved,71460catalog-matched pairs remain pending exact old-input/checkpoint/numeric/geometry qualification. Independent full SQL/source/model/mask/order/partition reconstruction and2exact original journals required. No favorable collection, model/reference, mask or coverage substitution; no old result acceptance, native geometry or biological matching/inference. All8aims remain incomplete; GPU inference paused."
+}

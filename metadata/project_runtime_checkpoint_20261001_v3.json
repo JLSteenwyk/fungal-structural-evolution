@@ -1,0 +1,247 @@
+{
+  "status": "verified_input_union_producer_finished_full_reader_live_new_background_pipeline_queued",
+  "checked_utc": "2026-10-01T18:53:12.734726+00:00",
+  "verified_current_handles": [
+    {
+      "launch": "metadata/expanded_background_native_handoff_producer_launch_20261001.json",
+      "launch_sha256": "3c431ce04a3bc3877e10e8863c5b135d03d30e998d545f165748f80b03557e6d",
+      "unit": "fungal-expanded-background-native-handoff-producer-20261001-v1.service",
+      "pid": 3909595,
+      "created": 1790879220.71,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/prepare_expanded_background_native_handoff.py",
+        "--plan",
+        "metadata/expanded_background_native_handoff_plan_20261001.json"
+      ],
+      "status": "terminal_original_journal_completion_verified",
+      "observed_terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "exact_process_journal_messages": 55,
+      "journal_sha256": "a067ec075d9e5acdc03b7a5d96d629baee8c0fd803f8fc14c119103cba2c63a1",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "761623823000",
+          "MEMORY_PEAK": "3518464",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_native_handoff_readback_launch_20261001.json",
+      "launch_sha256": "6a70111c3c2f25bc6c28dab96dc1f4193dfa018b6c3947a54d9c3002c0093d40",
+      "unit": "fungal-expanded-background-native-handoff-readback-20261001-v1.service",
+      "pid": 3909607,
+      "created": 1790879220.76,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_native_handoff_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.1,
+      "rss_gib": 0.01611328125,
+      "children": [
+        {
+          "pid": 4078953,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_expanded_background_native_handoff.py",
+            "--plan",
+            "metadata/expanded_background_native_handoff_plan_20261001.json",
+            "--output",
+            "results/structural_comparisons/expanded-background-native-handoff-20261001-v1/readback.json"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_native_handoff_closure_launch_20261001.json",
+      "launch_sha256": "5d7231dae8d0b0d326abe019f696f16c8b58111d769cd4ac2adb5c58c16369c2",
+      "unit": "fungal-expanded-background-native-handoff-closure-20261001-v1.service",
+      "pid": 3909626,
+      "created": 1790879220.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_native_handoff_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.13,
+      "rss_gib": 0.01611328125,
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_alignment_launch_20261001.json",
+      "launch_sha256": "dc727f2d95d7b5ab08d08bb86c44bac27451fb372b90ea8612dd08e2e699ee03",
+      "unit": "fungal-expanded-background-alignment-20261001-v1.service",
+      "pid": 4086945,
+      "created": 1790880442.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.09,
+      "rss_gib": 0.017578125,
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_assessment_launch_20261001.json",
+      "launch_sha256": "4c13473b9db9e3205fd7d4d8faf13a4d83a2eba41231853a18e1d1e24c1c6e69",
+      "unit": "fungal-expanded-background-measurement-assessment-20261001-v1.service",
+      "pid": 4086957,
+      "created": 1790880442.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_assessment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.07,
+      "rss_gib": 0.017578125,
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_readback_launch_20261001.json",
+      "launch_sha256": "87a58ba492cb45f0065044d76dab92410f1fb208352a1f96c36fb64c03c5a8b0",
+      "unit": "fungal-expanded-background-measurement-readback-20261001-v1.service",
+      "pid": 4086965,
+      "created": 1790880442.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.09,
+      "rss_gib": 0.0146484375,
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_closure_launch_20261001.json",
+      "launch_sha256": "2544551ce1a4e772f0efc34ed4fa69ed920cda45126ae93f4d4352e28bfc0314",
+      "unit": "fungal-expanded-background-measurement-closure-20261001-v1.service",
+      "pid": 4086969,
+      "created": 1790880443.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.1,
+      "rss_gib": 0.0146484375,
+      "children": []
+    }
+  ],
+  "preserved_original_live_jobs": [
+    {
+      "pid": 433565,
+      "created": 1790709562.09,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_whole_protein_ml.py",
+        "--plan",
+        "metadata/whole_protein_ml_plan_20260929.json"
+      ],
+      "children": 17,
+      "running_children": 16
+    },
+    {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_whole_protein_ml_outputs.py",
+        "--plan",
+        "metadata/whole_protein_ml_output_audit_plan_20260929.json"
+      ],
+      "children": 0,
+      "running_children": 0
+    },
+    {
+      "pid": 338483,
+      "created": 1790533714.57,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_polynomial_ml.py",
+        "--plan",
+        "metadata/full_polynomial_ml_plan_20260927.json"
+      ],
+      "children": 9,
+      "running_children": 8
+    },
+    {
+      "pid": 771240,
+      "created": 1790566377.27,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ],
+      "children": 16,
+      "running_children": 16
+    },
+    {
+      "pid": 863281,
+      "created": 1790353565.67,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_structure_retrieval.py",
+        "--plan",
+        "metadata/recovery_20260925_structure_retrieval_plan.json"
+      ],
+      "children": 1,
+      "running_children": 0
+    }
+  ],
+  "legacy_completion_status": "complete_verified_full_legacy_reference_written_inputs",
+  "legacy_completion_sha256": "c58fb3bf4d1250330394a7e2e31544b4d12448c71a9aab3aa7b7bebd7c771a08",
+  "input_union_producer_receipt": "results/structural_comparisons/expanded-background-native-handoff-20261001-v1/receipt.json",
+  "input_union_producer_receipt_sha256": "1f844a82be7e79b0cb1416b07a7673f5eb77b98d060f6817771124bc6d41378e",
+  "input_union_producer_counts": {
+    "active_models": 305434,
+    "active_model_mask_states": 610868,
+    "full_pairs": 146172,
+    "new_pairs": 74712,
+    "pending_catalog_reuse_pairs": 71460,
+    "overlapping_models": 14593,
+    "overlapping_model_mask_states": 29186,
+    "active_input_counts": {
+      "full:ready": 305434,
+      "plddt70:ready": 299632,
+      "plddt70:too_few_retained_residues": 5802
+    },
+    "directed_native_input_counts": {
+      "full:ready": 149424,
+      "plddt70:ready": 144864,
+      "plddt70:input_unavailable": 4560
+    },
+    "actual_ready_PDB_files": 657825,
+    "raw_coordinate_bytes": 128483810501,
+    "ready_PDB_bytes": 19651660401
+  },
+  "input_union_complete": false,
+  "new_native_measurements_complete": false,
+  "gpu_inference_paused": true,
+  "all_eight_scientific_aims_incomplete": true,
+  "scope": "Every live handle checked against exact PID/create/CMD and all source/wrapper plan hashes. Original completed input producer journal/resources verified; independent full reader is live with its original wrapper. Queued is not native progress or completion. Preserve original jobs; complete verification/closure remains required. No GPU, scientific completion or old reuse acceptance claimed."
+}

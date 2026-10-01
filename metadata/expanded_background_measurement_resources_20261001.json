@@ -1,0 +1,51 @@
+{
+  "status": "planned_full_new_expanded_background_native_measurements",
+  "checked_utc": "2026-10-01T18:47:23.563939+00:00",
+  "full_background_pairs": 146172,
+  "active_models": 305434,
+  "active_model_mask_states": 610868,
+  "new_model_pairs": 74712,
+  "pending_catalog_reuse_pairs": 71460,
+  "directed_native_dispositions": 298848,
+  "native_workers": 8,
+  "native_cpu": 8,
+  "native_memory_gib": 32,
+  "audit_cpu": 2,
+  "audit_memory_gib": 64,
+  "closure_cpu": 2,
+  "closure_memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 96,
+  "native_per_call_timeout_seconds": 600,
+  "native_planning_hours": [
+    10,
+    72
+  ],
+  "audit_planning_hours": [
+    0.5,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "old_native_dispositions": 285800,
+  "old_native_cpu_hours": 74.72560633305555,
+  "count_scaled_cpu_hours": 78.13715185941562,
+  "ideal_count_scaled_wall_hours_at_eight_workers": 9.767143982426953,
+  "maximum_all_ready_native_timeout_budget_wall_hours": 6226.0,
+  "old_native_completion_resource_evidence": [
+    {
+      "__REALTIME_TIMESTAMP": "1790644487378427",
+      "MESSAGE": "fungal-background-alignments-20260927.service: Consumed 3d 2h 43min 32.182s CPU time, 8.0G memory peak, 0B memory swap peak.",
+      "CPU_USAGE_NSEC": "269012182799000",
+      "MEMORY_PEAK": "8589934592",
+      "MEMORY_SWAP_PEAK": "0"
+    }
+  ],
+  "available_memory_gib": 570.2254638671875,
+  "free_disk_gib": 10552.421062469482,
+  "basis": "Count-scaled old whole-background native CPU resource record is a planning comparison only. New protein lengths, subset availability, I/O, full-source hashing and shared CPU load can change throughput substantially.600s is each ready call timeout, not a total run limit. Full74712new pairs/both masks/both orders; every short/error/timeout/parser/RMSD/geometry state retained. Eight CPU workers only after full independently closed input union. Serial two-CPU64GiB numeric/SVD and separate vectorized/quaternion audits; three exact original journals required for measurement closure. No GPU, paid resources, source selection or biological pilot."
+}

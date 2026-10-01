@@ -663,3 +663,15 @@ published. This supplies explicit comparative cohorts and uncertainty fields;
 it does not complete a scientific aim. Expanded background measurement/reuse,
 sequence-locked/domain/PAE/prediction controls, phylogenetic qualification and
 inferential calibration remain open. GPU inference remains paused.
+
+
+October 1: legacy supplementary written-input readback is closed for all
+29,080 states, 71 hashes and both original journals. The full four-collection
+input-union producer/independent reader/closure is running. Full 74,712-new-pair
+native measurements (298,848 directed states), fused numeric/geometry
+assessment, independent quaternion readback and three-journal closure are
+queued behind successful input closure. Actual-native synthetic software
+checks passed, including 12 rehashed false exports and retained error/timeout/
+RMSD/degenerate states. None of these queued production stages is complete;
+71,460 catalog-matched pairs still need real reuse qualification. All eight
+aims, calibrated inference and prediction/phylogenetic controls remain open.

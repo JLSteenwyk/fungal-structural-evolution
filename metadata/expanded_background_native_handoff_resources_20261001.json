@@ -1,0 +1,26 @@
+{
+  "status": "planned_full_current_and_legacy_background_input_union",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 16,
+  "planning_hours": [
+    0.25,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "active_models": 305434,
+  "active_model_mask_states": 610868,
+  "full_background_pairs": 146172,
+  "new_native_pairs": 74712,
+  "pending_catalog_reuse_pairs": 71460,
+  "full_input_collection_states": 1239656,
+  "basis": "Complete current primary276682/reference24804/background303802 plus legacyreference14540model partitions; all1239656input rows checked, global overlaps require identical full semantic projections and both actual written PDB hashes. Every305434active rawCIF and610868maskstates retained; all146172pairs/old-source flags preserved with74712new native pairs and71460pending real reuse qualification. Independent full SQLite reconstruction and2exact original completion journals;2CPU32GiB/noSwap/1BLASthread,16GiBoutput allowance,100GiBreserve. Full scope no pilot; no GPU/charges. Runtime range uncalibrated includes complete coordinate/PDB/source/proof hashing.",
+  "checked_utc": "2026-10-01T18:27:01.393896+00:00",
+  "free_disk_gib": 10554.255653381348,
+  "available_memory_gib": 710.5119590759277
+}

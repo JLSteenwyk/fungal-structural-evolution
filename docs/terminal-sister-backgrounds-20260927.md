@@ -1616,3 +1616,124 @@ rejects all overlaps, so it cannot be used unchanged for this expanded design.
 A new full handoff must permit only explicitly proven byte-equivalent overlaps
 and preserve both sources. This narrow exhaustive overlap diagnostic does not
 qualify the entire input union or any old alignment/native result reuse.
+
+
+## Full four-collection input union and new measurements October 1
+
+The frozen design contains 146,172 eligible physical pairs and 305,434 active
+models, drawn from 307,693 total catalog models. The active model count is
+distinct from the total catalog count. Complete catalog reuse screening finds
+74,712 pairs without an old measurement source and 71,460 matching old
+catalog pairs. The latter count is a reuse candidate count, not accepted reuse.
+The older inventory's `work_disposition` is retained alongside this current
+measurement partition; its 146,161 additional-pair flag does not specify how
+many genuinely new native alignments are needed.
+
+Three modern input collections alone omit 224 required active models. Preserve
+the older reference supplementary collection as a fourth source. Full written
+PDB readback passed all 14,540 legacy models/29,080 full and pLDDT70 states:
+14,540 full ready, 14,050 masked ready and 490 short masked inputs. It checked
+816,376,377 actual written bytes across 15 shards. The
+[versioned legacy completion](../metadata/legacy_reference_written_inputs_completed_20261001_v2.json)
+binds 71 hashes and both exact original materializer/reader journals. Its first
+completion attempt failed because the old materializer receipt had not been
+explicitly pinned as evidence. The corrected v2 plan pins both evidence
+receipts; the passed input reader was not rerun, and the original failed plan
+and launch remain preserved.
+
+The four full input collections contain primary 276,682, modern reference
+24,804, additional background 303,802 and legacy reference 14,540 model records,
+or 1,239,656 source model/mask records including overlaps. A new immutable
+[full input-union plan](../metadata/expanded_background_native_handoff_plan_20261001.json)
+checks every source record and globally overlapping semantic projection,
+actual PDB bytes, source sequence/coordinate fingerprints and original residue
+positions. Selection follows the declared primary/reference/background/legacy
+collection order, independent of readiness or result quality, and preserves
+all source origins. Modern reference/background overlap includes 1,012 models;
+the earlier narrow diagnostic of the older three-collection design does not
+contradict this different four-collection scope.
+
+The producer exports every active model, all 610,868 active model/mask states,
+all global overlapping input records and all 146,172 work-partition rows. A
+complete independent SQLite/source reconstruction and two exact original
+completion journals must close the stage. At pipeline launch this input union
+was live, not complete. The full union and its source/artifact hash archive
+remain outside Git, with small versioned completion locators. The compact
+active-input export retains a semantic hash and the exact chosen source row's
+path/ordinal/hash rather than copying large residue-position arrays. Subsequent
+geometry stages reconstruct all chosen original positions from the immutable
+original manifests and verify both full-row and semantic hashes.
+
+The input-union producer subsequently finished, with its exact original journal
+completion verified. It reports 14,593 globally overlapping models/29,186 mask
+states, 305,434 full ready inputs and 299,632 masked ready plus 5,802 short masked
+inputs. The new native partition contains 149,424 full-ready and 144,864 masked-
+ready directed states, with 4,560 masked unavailable states. It hashed 657,825
+actual ready PDB files, including overlap provenance, and 128,483,810,501 raw
+coordinate bytes. These producer results still require the live independent
+reader and final closure; they do not qualify old result reuse. The
+[runtime checkpoint](../metadata/project_runtime_checkpoint_20261001_v3.json)
+records the original completed producer and live reader/waiting pipeline
+handles, as well as the preserved likelihood, polynomial, BALiPhy and AFDB jobs.
+
+The [new native pipeline](../metadata/expanded_background_measurement_pipeline_started_20261001.json)
+has been launched as exact-dependency wrappers. It starts only after successful
+input-union closure and covers all 74,712 genuinely new pairs under both masks
+and both input directions: 298,848 dispositions. The full ledger preserves the
+other 71,460 pairs as pending actual old-input/checkpoint/numeric/geometry reuse
+checks. It does not promote a catalog match to an accepted measurement.
+
+The native runner uses the pinned existing USalign binary and settings
+`-mol prot -mm 0 -outfmt 0 -ter 2`, saves raw native output and timing, verifies
+actual input hashes around each call, and checks saved checkpoint bindings on
+replay. There is no automatic retry or source/coverage substitution. Every
+short input, native failure, parse error and timeout stays in the full grid.
+Numerical/geometry assessment then exhausts every checkpoint, reconstructs
+aligned sequence mappings, original residues, identity, confidence, coverage,
+proper-rotation least-squares RMSD, coordinate rank and rotation curvature.
+RMSD differences beyond the native printed rounding, fewer than three aligned
+pairs and nonunique rotations remain explicit numerical exclusions.
+
+The separate reader rebuilds the mappings using vectorized residue indexes,
+checks native numeric text separately, uses quaternion rotations for RMSD and
+LAPACK `gesvd`/a quaternion eigensystem for spectra and curvature, and checks
+every nullable field, disposition, model role, exclusion and summary count.
+Near-zero quaternion gaps are recorded without claiming precision sufficient
+to resolve ambiguous ranks. TM-scores bind the native text; their optimization
+is not independently repeated. Fused numerical/geometry assessment is one
+service, so final measurement closure requires three exact original journals:
+native, assessment and independent reader. Neither a completed native receipt
+nor a default inactive/success/0 systemd observation alone qualifies the work.
+
+The [software validation](../metadata/expanded_background_measurement_fixture_validation_20261001.json)
+used five synthetic 20-residue models across four collections, including
+overlaps, a legacy-only model, a short masked input and a collinear fit. Actual
+USalign computed 12 directed states, of which 10 aligned; the pending synthetic
+catalog pair was never computed. Quaternion RMSDs agreed within 2.178e-15 Å;
+scaled curvature difference was at most 1.705e-16. Twelve rehashed false exports
+were rejected. Checkpoint replay preserved bytes; synthetic native failure,
+parse failure, timeout, RMSD discrepancy and degenerate geometry states stayed
+explicit. Original-position source corruption was rejected. Only closure
+provenance was synthesized in this software suite; it does not test real
+completion journals, establish full-data source qualification or constitute
+a biological pilot.
+
+[Resources were estimated before launch](../metadata/expanded_background_measurement_resources_20261001.json):
+eight native CPU workers/32 GiB, serial two-CPU/64 GiB assessment, reader and
+completion stages, no swap, one BLAS thread, 96 GiB output allowance and 100 GiB
+disk reserve. The older 285,800-disposition whole-background run used
+74.7256 CPU hours. Scaling only by disposition count gives 78.1372 CPU hours
+or 9.7671 ideal wall hours on eight workers. This is not an ETA: new lengths,
+input availability, I/O and shared CPU use differ, and complete source hashing
+adds overhead. The provisional native planning range is 10–72 hours, with
+0.5–24 hours per audit stage; it is uncalibrated. A 600-second timeout applies
+to each ready native call, not the complete run. The extreme all-calls-time-out
+budget is 6,226 wall hours at eight workers, also not a prediction.
+
+Production input union, new measurements and real old-result reuse qualification
+are pending. Full confidence/original-length coverage, prediction/PAE/domain
+orientation and sequence-locked controls, missingness/phylogenetic adjustment,
+matched comparisons and calibrated evolutionary effects remain required.
+All eight scientific aims remain incomplete. Existing likelihood, polynomial,
+BALiPhy and AFDB jobs are preserved; GPU inference remains paused and there
+are no new charges.
