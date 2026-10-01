@@ -320,3 +320,19 @@ Preserve numerical flags, unavailable and error states. Final reuse closure
 requires two new and eight original native/numeric/geometry/reader journals.
 The full new/reused result union and evolutionary controls remain separate
 requirements; source or journal matches alone do not qualify a measurement.
+
+
+### October 1: preserve every old/new measurement state in the full background union
+
+Require the full new-native three-journal and actual-reuse ten-journal closures
+before merging all 584,688 states. Keep fixed old-reference/background source
+preference, original source directions, model roles, raw numeric/geometry
+records and every native/parse/timeout/unavailable/numerical exclusion beside
+normalized fields. A mismatched reused input blocks full union until an
+additional explicitly closed native workload exists. Independently reconstruct
+all export fields through SQL source lookup and require both original union
+journals/full hashes for completion. Do not infer coverage, biological effects
+or phylogenetic eligibility from merge or numerical eligibility alone. The
+15 false-export software checks and synthetic prior proof contracts qualify
+implementation only. Queue under two CPU/64 GiB per stage, preserve all original
+CPU jobs and leave GPU inference paused.

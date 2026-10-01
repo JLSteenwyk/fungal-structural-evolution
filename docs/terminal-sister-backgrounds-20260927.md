@@ -1836,3 +1836,76 @@ USalign execution subsequently began. A
 records saved native dispositions and retains the live wrapper identities.
 These changing checkpoint counts are descriptive progress, not full numerical
 acceptance. The complete geometry/readback/closure requirements remain in force.
+
+
+## Full background measurement union queued — October 1
+
+The old-result reuse producer finished all 146,172 physical pairs and 584,688
+mask/order states. It classified 285,840 states as matching actual old inputs
+and retained results, with 298,848 new-native states pending. No incompatible
+input states were reported. The producer reports 282,069 usable old states,
+3,694 unavailable states and 77 numerical exclusions, including five RMSD
+discrepancies. These are producer counts pending complete independent
+quaternion/alternate-SVD readback and ten-original-journal closure. New native
+comparisons are advancing under the original eight-worker run. The latest
+[exact process and progress observation](../metadata/project_runtime_checkpoint_20261001_v5.json)
+preserves the five original likelihood/BALiPhy/AFDB jobs and distinguishes
+transient counters from completed source/artifact validation.
+
+The [full union plan](../metadata/background_measurement_union_plan_20261001.json)
+covers every 146,172 pair and 584,688 state. It waits for both independently
+closed sources: 74,712 new pairs/298,848 states with three original native,
+numeric/geometry and reader journals; 71,460 reused pairs/285,840 states with
+ten original journals. Fixed old-reference/old-background ownership remains
+11/71,449 pairs. Incompatible reuse states block the union until additional
+measurements have an explicit closed workload; there is no alternative-source
+selection, automatic retry, favorable filtering or missing-as-zero substitution.
+
+The producer streams every full reuse-ledger state and chooses its previously
+fixed old source or corresponding new measurement. Its compressed export
+retains actual checkpoint path/hash, original source order, directed model
+roles, original numeric/geometry rows and flags, native metrics/elapsed time/
+return code/error/timeout, plus explicitly typed numeric/geometry fields. An
+independent reader indexes every new measurement in SQLite and reconstructs
+every export field, complete grid, count and source binding from originals.
+The union stage does not repeat native optimization or geometry estimation;
+those belong to the completed source gates. Two additional exact original
+producer/reader journals and full artifact/source bytes are required for union
+closure. All large exports, complete hash dictionaries and archives remain
+outside Git under
+`results/structural_comparisons/full-background-measurement-union-20261001-v1`.
+The future small completion locator is
+`metadata/full_background_measurement_union_completed_20261001.json`; its
+absence currently means completion is pending.
+
+The [software fixture receipt](../metadata/background_measurement_union_fixture_validation_20261001.json)
+passed all 12 states of three synthetic pairs, including reversed old-reference
+source orders, both masks, original string metrics versus normalized values,
+RMSD/nonunique/short exclusions and unavailable/native/parse/timeout states.
+All 15 coherently rehashed false exports were rejected: missing/duplicate rows,
+wrong source/direction/model roles/checkpoint, changed original or normalized
+metrics/geometry, cleared exclusions, promoted unavailable values, altered
+native failures and changed totals. A coherently rehashed incompatible-source
+closure failed before output creation. The original records and prior journal
+contracts in this fixture are explicitly synthetic: it tests software/source
+I/O and export fidelity, not physical measurement correctness, production
+completion, original journal verification or a biological pilot. Rerun with
+`python scripts/check_background_measurement_union_cases.py`.
+
+[Resources were recorded before launch](../metadata/background_measurement_union_resources_20261001.json):
+two CPU/64 GiB per serial stage, no swap, one BLAS thread, 32 GiB output/scratch
+allowance and a 100 GiB disk reserve. Full prior hash archives may exceed a
+million bindings; every source byte is rechecked. The 0.5–24 hour interval per
+stage is uncalibrated planning, not an ETA. The
+[queued pipeline](../metadata/background_measurement_union_pipeline_queued_20261001.json)
+records the frozen commands/plans, exact original PID/create/CMD captures and
+actual cgroup limits. Existing runs were not restarted. No GPU or paid resource
+is used; protein structure prediction remains paused.
+
+Production new/reuse/union completion remains pending. The merged measurement
+ledger will still require fixed-match coverage/confidence/missingness screening,
+sequence-locked and common-residue comparisons, domain/orientation/PAE/predictor
+controls, gene/species phylogenetic qualification and comparative calibration.
+Numerical availability is not evidence of a duplication effect, branch
+acceleration, selection or functional change. All eight scientific aims remain
+incomplete.

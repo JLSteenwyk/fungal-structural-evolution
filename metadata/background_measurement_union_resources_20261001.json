@@ -1,0 +1,32 @@
+{
+  "status": "planned_full_background_closed_measurement_union",
+  "checked_utc": "2026-10-01T20:02:46.554226+00:00",
+  "full_pairs": 146172,
+  "directed_dispositions": 584688,
+  "new_pairs": 74712,
+  "new_directed_dispositions": 298848,
+  "reused_pairs": 71460,
+  "reused_directed_dispositions": 285840,
+  "source_pair_counts": {
+    "reference_old": 11,
+    "background_old": 71449,
+    "no_old_source": 74712
+  },
+  "cpu": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "output_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.5,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 582.8447456359863,
+  "free_disk_gib": 10545.074119567871,
+  "basis": "Complete full-design states, not a filtered sample. Producer indexes all298848new measurement rows, then streams every584688reuse ledger state, preserving original native numeric/geometry records and creating normalized numeric fields. Reader uses independent SQLite lookup and reconstructs every field, count, direction and exclusion; native optimization and geometry are not rerun in the union. Full previous source/artifact hashes are rechecked at each stage, potentially over a million file bindings.64GiB accommodates full-source archives, hash dictionaries and new-row indexes;32GiB covers compressed exports, SQL scratch and complete hash archives. Planning interval is uncalibrated, not an ETA. Both new3-journal and reused10-journal completed source archives required before producer, then two exact union producer/reader completion journals. Prior original CPU jobs preserved; GPU inference remains paused."
+}

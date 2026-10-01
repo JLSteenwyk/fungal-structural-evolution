@@ -688,3 +688,16 @@ actual-native software checks rejected 12 rehashed false exports and retained
 numerical/unavailable/incompatible states. Production native/reuse completion,
 their full union and all comparative/phylogenetic calibration remain required.
 No scientific aim is complete; GPU inference remains paused.
+
+
+October 1: old background reuse producer processed all 584,688 design states,
+reporting 285,840 matching retained old states/298,848 new states pending and no
+incompatible inputs. Independent validation and ten-journal closure remain
+pending; new-native comparisons are live. Full old/new measurement union,
+independent SQL readback and original-journal closure are queued behind both
+source closures. Software tests rejected 15 rehashed false exports and an
+incompatible-source closure, preserving raw/typed metrics, original directions
+and all exclusions. Synthetic prior measurement/journal fixture contracts are
+not production evidence. Numerical comparison counts are not inferred
+structures or independent evolutionary events. Full controls/calibration and
+all eight scientific aims remain incomplete; GPU inference remains paused.

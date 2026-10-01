@@ -1,0 +1,44 @@
+{
+  "unit": "fungal-background-measurement-union-readback-20261001-v1.service",
+  "pid": 848559,
+  "created": 1790885024.11,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/background_measurement_union_readback_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/background_measurement_union_readback_wait_plan_20261001.json",
+  "plan_sha256": "a12abaf9aca5f8ab528b92826e34dea084ead9b721f04dcbbc7913869d1cae58",
+  "checked_utc": "2026-10-01T20:03:44.838548+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-background-measurement-union-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=64G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/background_measurement_union_readback_wait_plan_20261001.json"
+  ]
+}

@@ -1675,3 +1675,21 @@ closure requires both new plus eight original journals. Actual-native synthetic
 software checks rejected 12 rehashed exports, preserving reversed orders,
 incompatibilities and RMSD/nonunique/unavailable states. Production reuse,
 new/reused result union and calibrated evolutionary inference remain pending.
+
+
+The complete background result union is now queued over all 146,172 physical
+pairs/584,688 mask-order states. It requires independently closed new-native
+(three original journals) and actual old-result reuse (ten original journals)
+sources. The reuse producer has finished, reporting 285,840 retained old states
+and 298,848 new states pending without incompatible inputs; full independent
+validation remains active. Source ownership and original alignment direction
+are fixed before numerical outcome. The union retains original numeric and
+geometry rows beside typed fields, every native nullable/error/timeout record,
+model roles and all exclusions. A separate full SQL reader reconstructs each
+field and count from the closed sources; final closure rechecks all bytes and
+both original union journals. Native optimization/geometry are not rerun at
+this merge. Software fixtures rejected 15 rehashed false exports and blocked
+incompatible sources; synthetic prior measurement/journal contracts do not
+constitute production evidence. [Scope, resources and reproduction](terminal-sister-backgrounds-20260927.md#full-background-measurement-union-queued-october-1).
+Production completion, coverage/prediction/phylogenetic controls and calibrated
+evolutionary effects remain pending.

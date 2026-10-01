@@ -10417,3 +10417,23 @@ does not establish universal coverage or complete the biological project.
   charges; full resource estimates recorded before launch. Production native/
   reuse completion, full result union, controls and calibration remain open.
   All eight aims incomplete; original CPU jobs preserved, GPU inference paused.
+
+
+- October 1: old-result reuse producer finished every 146,172 background pair/
+  584,688 full-design state. It reports 285,840 identical-input retained old
+  states and 298,848 pending new-native states, with no incompatible inputs.
+  Independent full quaternion/alternate-SVD reuse validation is running;
+  ten-journal closure remains pending. Full 584,688-state new/reused union,
+  separate SQL field/count/source reconstruction and two-journal closure are
+  queued behind both successful source closures. Software source-I/O fixture
+  passed all 12 synthetic states, rejected 15 rehashed false exports and
+  blocked incompatible closed sources before output creation. Actual native
+  physics/prior journals are synthetic fixture contracts, not production
+  proof or a pilot. Prelaunch resources: two CPU/64 GiB, no swap/GPU/charges,
+  32 GiB output/scratch allowance, 100 GiB disk reserve; uncalibrated interval
+  0.5–24 hours per stage is not an ETA. Complete source hashes stay outside
+  Git. Frozen original PID/create/CMD/cgroup captures and current exact live
+  handles recorded; five original likelihood/BALiPhy/AFDB jobs preserved.
+  New-native comparisons remain active. Production closure, downstream
+  controls, phylogenetic qualification and calibrated effects remain pending;
+  all eight aims incomplete and GPU inference paused.

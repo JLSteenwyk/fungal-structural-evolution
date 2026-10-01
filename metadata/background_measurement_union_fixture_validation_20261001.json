@@ -1,0 +1,42 @@
+{
+  "status": "passed_complete_background_measurement_union_software_cases",
+  "full_pairs": 3,
+  "directed_dispositions": 12,
+  "source_dispositions": {
+    "reference_old": 4,
+    "background_old": 4,
+    "background_new_native": 4
+  },
+  "numerical_counts": {
+    "nonunique_rotation": 1,
+    "rmsd_discrepancy": 1,
+    "fewer_than_three_pairs;nonunique_rotation": 1,
+    "usable": 4,
+    "input_unavailable": 2,
+    "native_error": 1,
+    "parse_error": 1,
+    "timeout": 1
+  },
+  "rejected_rehashed_exports": [
+    "missing_state",
+    "duplicate_state",
+    "wrong_source",
+    "wrong_source_order",
+    "reversed_roles",
+    "wrong_checkpoint",
+    "original_numeric",
+    "normalized_numeric",
+    "original_geometry",
+    "normalized_geometry",
+    "cleared_exclusion",
+    "nullable_promotion",
+    "changed_native_metric",
+    "changed_native_error",
+    "changed_counts"
+  ],
+  "incompatible_closed_source_rejected_before_output": true,
+  "synthetic_native_numeric_geometry_and_prior_journals": true,
+  "production_journal_closure_tested": false,
+  "scope": "Test complete union I/O with synthetic closed sources and rehashed false exports.\n\nThis is a software fixture, not native optimization or scientific/journal proof.\nThe native/numeric/geometry records and prior completion journals are synthetic.\nActual full-source byte binding, checkpoint roles, complete grids, normalization,\nnullable states and independent SQL export reconstruction are exercised unchanged.\n",
+  "script_sha256": "01b75ee01af95d673545f18cc234f841d664161dfae0b2819823c81c83745bee"
+}
