@@ -420,3 +420,13 @@ full collection/journal/biological qualification remains separate.
   root. Close production only after both original batch/reader journals and
   all output/source bindings pass. Cross-policy/baseline comparisons and
   biological framework qualification remain separate required stages.
+
+
+- October 1: recompute baseline bootstrap support on each exact retained
+  cohort before comparisons with native taxon refits. Deduplicate projected
+  splits within each original replicate; do not sum source split frequencies
+  or inherit SH-aLRT labels. Record collapsed path lengths/component counts
+  as full-inference reference quantities, not native subset estimates.
+  Require complete independent pruning and two original completion journals.
+  Keep the actual 16 supported refits and subsequent biological qualification
+  as required stages.

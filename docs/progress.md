@@ -10531,3 +10531,17 @@ does not establish universal coverage or complete the biological project.
   launch: two CPU/16 GiB/no swap/one BLAS thread per serial follow-up, no GPU
   or new charges. Actual refits/readback/closure and cross-policy comparisons
   remain pending; no accepted root/framework or scientific aim completion.
+
+
+- October 1: started complete matched-taxon baseline projections across all
+  four original supported runs and four closed retained cohorts. Recomputes
+  bootstrap support from all 4,000 original trees/16,000 projected states,
+  counting merged splits once per replicate; retains all 32 views/33,088
+  edges and actual fungal/outgroup roles. SH-aLRT is unavailable; branch
+  lengths are original path sums, not subset optimizations. Independent
+  DendroPy pruning/unit-edge component reader and two-journal closure are
+  queued. Four retained-set software cases/eight views passed, and six
+  rehashed false exports were rejected. All 197 combined source bindings
+  checked before launch; two CPU/16 GiB/no swap/one BLAS thread per serial
+  stage, no GPU or charges. Actual full readback/closure and comparisons
+  against all 16 native refits remain pending. All eight aims incomplete.

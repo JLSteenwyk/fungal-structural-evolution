@@ -1809,3 +1809,17 @@ regression against a complete existing baseline and synthetic I/O/corruption
 cases is complete; the actual sensitivity readback is still pending. These
 checks do not independently recompute SH-aLRT tests or likelihood optima and
 do not establish model adequacy, a root or an accepted species framework.
+
+
+For comparisons between native taxon-sensitivity refits and full-cohort
+inference, baseline trees are projected onto each exact retained cohort.
+Empirical ultrafast-bootstrap frequencies are recalculated by counting each
+projected split once in each original replicate, even when multiple original
+edges merge. Original edge lengths are summed along retained paths; these
+values remain conditional on full-cohort inference. SH-aLRT support is not
+inherited. Independent taxon deletion and path suppression in DendroPy,
+including a unit-edge reconstruction of path component counts, checks the
+complete projected edge/frequency/role tables. Production and original
+journal closure are still pending. This diagnostic supplies a matched-taxon
+reference and does not replace actual subset inference or establish a root,
+model adequacy, dates or calibrated sequence–structure effects.

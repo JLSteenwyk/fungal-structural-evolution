@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-retained-taxon-projection-readback-20261001-v1.service",
+  "pid": 1276258,
+  "created": 1790897539.92,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/retained_taxon_projection_readback_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/retained_taxon_projection_readback_wait_plan_20261001.json",
+  "plan_sha256": "11ff581d14ff14f4372c50e4d26a459e882793535248acd07f5d439836eb4ec0",
+  "checked_utc": "2026-10-01T23:32:20.635321+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-retained-taxon-projection-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/retained_taxon_projection_readback_wait_plan_20261001.json"
+  ]
+}

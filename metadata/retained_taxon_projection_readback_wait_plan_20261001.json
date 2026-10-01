@@ -1,0 +1,33 @@
+{
+  "dependencies": [
+    "metadata/retained_taxon_projection_launch_20261001.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_pmsf_retained_taxa.py",
+    "--plan",
+    "metadata/retained_taxon_projection_plan_20261001.json",
+    "--output",
+    "results/phylogeny/full-retained-taxon-baseline-projections-20261001-v1/readback.json"
+  ],
+  "pins": {
+    "scripts/retained_taxon_projection_sources.py": "dc6bf9e21bf228f3033aa54789ce06c0502267f3bde9b2bb988c1dc503f7d4e0",
+    "scripts/project_pmsf_retained_taxa.py": "d802ff5188a05cfa09a3983a74985112902c0dd2a4360b504cf5d5bf7727adb0",
+    "scripts/readback_pmsf_retained_taxa.py": "1c9504ae6feb690b0fb29a1d7a8bc15883339b65358c676b542afc11224eef33",
+    "scripts/close_retained_taxon_projections.py": "a2b1b182df2fbe59fdb066f76e8c554448a8982a4fcce022562f39bc650df430",
+    "scripts/check_retained_taxon_projection_cases.py": "70c478004a0cfa32c67d07cbf10402f230c0347d94fb4afa44d8e6e89b99dda5",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/pmsf_four_run_sensitivity_plan_20261001.json": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "metadata/species_taxon_refit_inputs_completed_20261001.json": "f308609c789f4a9aff124e3655b043d386573524568b986e2e7ca346da20348d",
+    "metadata/retained_taxon_projection_resources_20261001.json": "3a5cfda37f165486727aa765046705b33373ac7afa4ef29d8ea7909ed42420db",
+    "results/software-checks/retained-taxon-projection-cases-20261001-v1/receipt.json": "1fff9aa89c7f455ef816dc52a3c267f4bfd51672f6093fd2b6ddc9e92b344449",
+    "metadata/retained_taxon_projection_plan_20261001.json": "9bba4bd535fe98137836315ad3ad308a0976bca64b43298e2226338f76f843e1",
+    "metadata/retained_taxon_projection_launch_20261001.json": "2ee1cc788962a7f07d4cd3a5b18a237f45c787192b7cd1b392bd54353852024d"
+  }
+}

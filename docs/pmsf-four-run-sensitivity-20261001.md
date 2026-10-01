@@ -214,3 +214,57 @@ retained taxa, marker sensitivity, model adequacy, root qualification, gene
 discordance and defensible dates remain required. SH-aLRT labels are checked
 but not recomputed, and saved likelihoods are read back rather than optimized
 independently. All eight scientific aims remain incomplete.
+
+
+### Full matched-taxon baseline projections started October 1
+
+A native subset refit needs a reference on exactly the same retained taxa.
+`project_pmsf_retained_taxa.py` therefore projects all four completed baseline
+ML/consensus trees and every one of their 4,000 original bootstrap trees onto
+each of the four closed sensitivity cohorts. This covers 16 baseline/policy
+combinations, 16,000 projected bootstrap states, 32 tree views and 33,088
+terminal/internal edge rows, preserving the full four-policy design. The
+525/522/524/503-taxon sets and their retained fungal/outgroup roles come from
+the already closed input matrices; both alignments must agree on membership.
+All 197 combined source bindings were checked before launch.
+
+Original edges can collapse to the same retained split. Each projected split
+is counted once per raw bootstrap replicate, so its support is recomputed
+from the complete original tree ensemble. Original branch lengths are summed
+along collapsed paths as reference values. No original support is inherited,
+and SH-aLRT is explicitly unavailable for every projection. An independent
+DendroPy reader deletes taxa and suppresses paths rather than importing the
+producer's set-intersection algorithm; separate copies with unit-length edges
+reconstruct the original component count for every projected path. The reader
+checks every edge, frequency, component count and retained-role boundary row.
+
+A software case illustrates why this matters: a synthetic AB split present
+in 70% of original trees becomes present in 100% after X is removed, while
+several original edges can map to the same AB edge. Counting these edges
+separately would inflate the frequency. All four synthetic retained sets and
+eight views passed independent pruning checks; six rehashed false exports
+with inflated frequencies, wrong path lengths/counts, inherited SH-aLRT or
+wrong roles were rejected. The synthetic example is a software check, not
+a biological pilot or evidence of fungal topology change.
+
+Full production projection has started, with independent readback and a
+two-original-journal closure queued behind it. Output:
+`results/phylogeny/full-retained-taxon-baseline-projections-20261001-v1`;
+eventual small completion locator:
+`metadata/retained_taxon_projections_completed_20261001.json`. Both source
+closures, every full hash and original producer/reader PID/create/command
+completion journal are required. Full projection output is not accepted
+until readback and closure pass.
+
+Resources were estimated before launch: two CPU cores, 16 GiB RAM, no swap,
+one BLAS thread per serial stage, 2 GiB output allowance and 100 GiB disk
+reserve; 0.5–12 hours per stage is an uncalibrated planning range, not an ETA.
+No new IQ-TREE inference, GPU use or charges are introduced. Native subset
+refits and existing CPU/retrieval jobs continue.
+
+These projections are conditional on the original 526-tip inference. They
+provide matched-taxon reference topology/support/path lengths for later
+comparisons; they do not substitute for the 16 real subset refits, optimize
+subset branch lengths, produce dates or structural rates, establish a root
+or demonstrate model adequacy. Complete native-versus-reference and
+cross-policy comparisons remain required; all eight aims remain incomplete.

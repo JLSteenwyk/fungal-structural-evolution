@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-retained-taxon-projection-closure-20261001-v1.service",
+  "pid": 1276261,
+  "created": 1790897539.95,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/retained_taxon_projection_closure_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/retained_taxon_projection_closure_wait_plan_20261001.json",
+  "plan_sha256": "c6a8e12d31bf32aed4f6b93e2746cd58b15e5680918f3d478ada0217bb04d4e1",
+  "checked_utc": "2026-10-01T23:32:20.660678+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-retained-taxon-projection-closure-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/retained_taxon_projection_closure_wait_plan_20261001.json"
+  ]
+}

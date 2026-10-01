@@ -758,3 +758,11 @@ the eight scientific aims. GPU prediction remains paused.
   supported refits. Existing complete-baseline and synthetic software checks
   passed; actual 902,216-profile/16,000-bootstrap/32-view readback remains
   pending. No biological milestone is upgraded to complete.
+
+
+- October 1 matched-taxon baseline reference: all four baseline runs and four
+  retained cohorts enter complete projection/support reconstruction, with
+  independent pruning and original-journal closure queued. References will
+  cover 16,000 bootstrap states/32 views, preserving unavailable SH-aLRT and
+  full-inference path-length interpretation. Native comparisons and biological
+  framework qualification remain required; no aim is marked complete.

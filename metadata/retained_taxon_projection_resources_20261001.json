@@ -1,0 +1,21 @@
+{
+  "status": "planned_full_four_baseline_four_policy_projection_support_and_independent_readback",
+  "checked_utc": "2026-10-01T23:32:19.269915+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.5,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 563.4480934143066,
+  "free_disk_gib": 10524.099426269531,
+  "basis": "Fourclosedfull526taxon baseline native runs with1000raw bootstrap trees each, fourclosedretainedtaxon policysets=16000projectedbootstrapstates and32ML-consensusviews/33088projectededges. Projectiondeduplicates mergededges ineachreplicate; independentDendroPy deletion/suppression/unit-edge pathchecks rereconstruct everyoutput. No new IQTREE inference orGPU. 2CPU16GiBnoSwap1BLAS per serial producer/reader/closure;2GiBoutput allowance and100GiBreserve. Full baseline independent reader96seconds is onlypartialtiming basis; wholeprojection/pruning costs notcalibrated. Synthetic4policyfixtures/all6rehashedfalseexports passed; allreal sourcegrids/hashclosures checked beforelaunch."
+}
