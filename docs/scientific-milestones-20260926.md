@@ -701,3 +701,17 @@ and all exclusions. Synthetic prior measurement/journal fixture contracts are
 not production evidence. Numerical comparison counts are not inferred
 structures or independent evolutionary events. Full controls/calibration and
 all eight scientific aims remain incomplete; GPU inference remains paused.
+
+
+October 1: independent reuse validation passed all 584,688 full-design states
+and reconstructed every 282,146 reused numerical alignment with quaternion/
+alternate-SVD checks; ten-journal closure is still running. Full background
+coverage/independent SQL-decimal readback/two-journal closure is queued over
+146,172 pairs/292,344 pair-mask rows/1,754,064 decisions, preserving original
+length denominators, both directions and all exclusions. All 36 physical
+target/background count rows will be checked; they are not matched effects.
+Full shared inventory and background endpoints are distinct, both counted and
+retained. Software checks rejected 13 rehashed false exports; synthetic prior
+proofs do not qualify production measurements. Full 61,216,344 frozen scenario
+decision integration, post-screen balance and calibrated/phylogenetic controls
+remain pending; all eight aims incomplete and GPU inference paused.

@@ -1909,3 +1909,82 @@ controls, gene/species phylogenetic qualification and comparative calibration.
 Numerical availability is not evidence of a duplication effect, branch
 acceleration, selection or functional change. All eight scientific aims remain
 incomplete.
+
+
+## Complete background coverage screen queued — October 1
+
+Full independent old-result reuse readback passed all 584,688 design states,
+including actual-current-input/checkpoint identity, original numerical flags,
+282,146 aligned numerical reconstructions and independent quaternion/alternate-
+SVD geometry. The 285,840 retained old states include 282,069 usable, 3,694
+unavailable and 77 numerical exclusions, with five RMSD discrepancies. New
+298,848 states remain pending native measurement. The ten-original-journal/full-
+hash reuse closure is running; successful readback is not itself that closure.
+The [current exact runtime evidence](../metadata/project_runtime_checkpoint_20261001_v6.json)
+binds the reader receipt and its exact original journal while preserving
+original likelihood/BALiPhy/AFDB processes and ongoing new-native measurements.
+
+The [complete background coverage plan](../metadata/full_background_coverage_plan_20261001.json)
+uses every 146,172 background physical pair, 292,344 pair/mask row and 584,688
+original measurement state. Its six unchanged target screens require 30 or
+50 aligned residues and 50%, 70% or 90% coverage of both original full proteins.
+Both native directions must be numerically usable and pass; pLDDT70 retained
+lengths never replace original protein lengths. Short/coverage reasons overlap,
+and unusable orders retain their original native/numerical exclusions.
+The producer exports every pair/mask row, original source/order/checkpoint
+identity, endpoint versions, full lengths/confidence metadata and both native
+order states, including nullable lengths/coverage. Both-mask intersections
+remain separate sensitivity counts.
+
+Prelaunch full-ledger enumeration distinguishes 292,326 background endpoint
+models from the broader 305,434-model input inventory shared across comparison
+types. The complete inventory remains bound; its additional models are not
+misclassified as missing background measurements. This distinction was fixed
+and tested before first production launch. The current software fixture includes
+an unused inventory model, as well as an exact 70/101 versus 71/101 boundary,
+confidence masking, asymmetric directions, RMSD/nonunique flags and unavailable/
+native-error/timeout states.
+
+The independent reader indexes all original union states in SQLite and rebuilds
+every field, direction, exclusion, six-screen decision and both-mask intersection
+using decimal ceiling cutoffs rather than producer fraction comparisons. All
+1,754,064 screen decisions must be checked. A 36-row physical count table joins
+the already closed 134,812-target-pair screen summaries with background full,
+pLDDT70 and both-mask counts; all its identities, numerators and denominators
+are independently checked. These classes have different sampling denominators;
+the table is descriptive, not a matched duplication or ecological effect.
+
+[Software checks](../metadata/full_background_coverage_fixture_validation_20261001_v2.json)
+passed all 12 directed states/six pair-mask rows/36 decisions. Thirteen rehashed
+false exports were rejected, including altered original or masked denominators,
+a boundary pass, cleared numerical/native flags, changed roles/source order/
+checkpoint, missing/duplicate rows, changed counts and a changed target-count
+comparison. Prior measurement, target and journal contracts are explicitly
+synthetic fixture data, not production physics, journal verification or a pilot.
+The earlier prelaunch fixture is archived outside Git under
+`results/software-checks/full-background-coverage-prelaunch-20261001-v1.json`;
+the versioned current receipt refers to the corrected code. Reproduce with
+`python scripts/check_full_background_coverage_cases.py`.
+
+The [three-stage pipeline](../metadata/full_background_coverage_pipeline_queued_20261001.json)
+waits for the original full measurement-union closure, then runs coverage,
+independent readback and complete source/artifact/two-original-journal closure.
+All plans/code are frozen after launch; exact original PID/create/CMD and actual
+cgroup limits are recorded. [Prelaunch resources](../metadata/full_background_coverage_resources_20261001.json)
+allocate two CPU/64 GiB per serial stage, no swap, one BLAS thread, a 32 GiB
+output/SQL/hash-archive allowance and 100 GiB disk reserve. Full prior source
+hashes may exceed a million bindings and are rechecked. The 0.5–24 hour
+planning interval per stage is uncalibrated, not an ETA. Native inference,
+GPU resources and new charges are not used. Production outputs stay outside
+Git under `results/structural_comparisons/full-background-coverage-20261001-v1`;
+the future small completion locator is
+`metadata/full_background_coverage_completed_20261001.json`.
+
+Production coverage is pending. Integration must retain all 4,250,692 frozen
+selected and 56,965,652 unmatched scenario decisions across 1,133,636 target/
+policy records and 54 scenarios; no rematching after numerical or coverage
+filtering. Selection reuse, target/control joint attrition, denominators and
+post-screen covariate balance remain required, as do common-residue/sequence-
+locked/domain/orientation/PAE/predictor/missingness controls, phylogenetic
+qualification and calibrated effects. All eight scientific aims remain
+incomplete; existing CPU jobs continue and GPU protein prediction stays paused.

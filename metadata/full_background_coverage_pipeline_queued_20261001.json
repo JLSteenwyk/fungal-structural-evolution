@@ -1,0 +1,57 @@
+{
+  "status": "queued_complete_background_coverage_after_closed_full_measurement_union",
+  "checked_utc": "2026-10-01T20:27:15.153499+00:00",
+  "source_plan": "metadata/full_background_coverage_plan_20261001.json",
+  "completion_plan": "metadata/full_background_coverage_completion_plan_20261001.json",
+  "launches": [
+    "metadata/full_background_coverage_launch_20261001.json",
+    "metadata/full_background_coverage_readback_launch_20261001.json",
+    "metadata/full_background_coverage_closure_launch_20261001.json"
+  ],
+  "expected": {
+    "pairs": 146172,
+    "models": 305434,
+    "target_pairs": 134812,
+    "pair_models": 292326
+  },
+  "pair_mask_rows": 292344,
+  "directed_source_states": 584688,
+  "screen_decisions": 1754064,
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "required_new_exact_journals": 2,
+  "matched_selected_scenario_records_remaining": 4250692,
+  "unmatched_scenario_records_retained": 56965652,
+  "scientific_eligibility": false,
+  "scope": "Complete146172physical background pairs/292344pair-mask rows/584688original native states and1754064six-screen decisions, from the independently closed full measurement union and full original305434model-length/confidence inventory. Both directions must be numerically usable;30/50aligned residues and50/70/90percent coverage of both original full proteins use unchanged duplication-target screens. Masked retained lengths never replace original denominators. All native/parse/timeout/input/numerical flags, sources, original source orders, model versions and overlapping screen exclusions retained. Both-mask intersections and all36target/background physical counts checked; counts describe distinct model pairs, not independent events or matched inferential effects. Separate SQL-original-state and decimal-ceiling reconstruction must verify every field and summary; full bytes plus two exact original coverage journals required for closure. Full frozen4.25million selected/56.97million unmatched scenario integration, weights/balance, sequence-locked/common-residue/domain/PAE/prediction/missingness/phylogenetic controls and calibrated effects remain required. All8aims incomplete; existing jobs untouched; GPU inference paused; no pilot or paid resources. Complete hash archives remain outside Git."
+}

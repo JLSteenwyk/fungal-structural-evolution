@@ -336,3 +336,18 @@ or phylogenetic eligibility from merge or numerical eligibility alone. The
 15 false-export software checks and synthetic prior proof contracts qualify
 implementation only. Queue under two CPU/64 GiB per stage, preserve all original
 CPU jobs and leave GPU inference paused.
+
+
+### October 1: apply identical full-protein screens before fixed-match attrition
+
+Queue the complete background coverage stage after successful full measurement
+union closure. Keep the same six thresholds as duplication targets, require both
+native directions, preserve all original exclusions and use original full
+protein lengths for masked coverage. Distinguish all 305,434 inventory models
+from 292,326 background endpoints rather than equating these universes; retain
+the broader inventory and test an unused model before production. Reconstruct
+all rows independently with SQL/decimal ceilings and close with complete hashes
+and both original journals. Physical target/background counts are descriptive;
+full 4,250,692 selected/56,965,652 unmatched fixed decisions, target/control
+attrition and post-screen balance remain required without rematching. Keep
+all eight aims open and GPU inference paused.

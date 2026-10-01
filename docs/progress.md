@@ -10437,3 +10437,24 @@ does not establish universal coverage or complete the biological project.
   New-native comparisons remain active. Production closure, downstream
   controls, phylogenetic qualification and calibrated effects remain pending;
   all eight aims incomplete and GPU inference paused.
+
+
+- October 1: independent old-result reuse readback passed every 584,688 design
+  state, including 282,146 current-input numerical/quaternion/alternate-SVD
+  alignment reconstructions and all original exclusions. Exact original reader
+  completion journal checked; ten-journal/full-hash reuse closure is running.
+  Complete 146,172-background-pair/292,344-pair-mask/1,754,064-decision coverage
+  pipeline is queued behind successful measurement union. Uses the same six
+  duplication-target screens, both native directions, original full length
+  denominators under either confidence mask, and all nullable/numerical/source
+  states. Separate SQL/decimal reader checks every field, intersection and all
+  36 physical target/background count rows; two new original journals required.
+  Before launch, full-ledger census distinguished 292,326 background models from
+  the broader 305,434-model inventory, which remains bound. Updated software
+  fixture covers an unused inventory model and exact cutoff boundaries; all
+  13 rehashed false exports rejected. Prior proof contracts are synthetic, not
+  production evidence or a pilot. Two CPU/64 GiB/no swap/GPU/charges; resources,
+  frozen plans and exact PID/create/CMD/cgroup limits recorded before launch.
+  All original likelihood/BALiPhy/AFDB jobs preserved. Full selected/unmatched
+  scenario attrition/balance, further structural/phylogenetic controls and
+  calibrated effects remain required; all eight aims incomplete.

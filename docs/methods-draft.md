@@ -1693,3 +1693,22 @@ incompatible sources; synthetic prior measurement/journal contracts do not
 constitute production evidence. [Scope, resources and reproduction](terminal-sister-backgrounds-20260927.md#full-background-measurement-union-queued-october-1).
 Production completion, coverage/prediction/phylogenetic controls and calibrated
 evolutionary effects remain pending.
+
+
+The full background original-protein coverage stage is queued behind successful
+whole-measurement union closure. All 146,172 physical pairs/292,344 pair-mask
+rows/584,688 original states enter the same six target thresholds, yielding
+1,754,064 decisions. Both alignment directions must be numerically usable;
+30/50-residue and 50/70/90-percent cutoffs use both original full protein lengths
+under either confidence mask. All original statuses, flags, sources, directions,
+nullable values and overlapping exclusions remain explicit. Full 305,434-model
+input inventory and 292,326 background endpoint identities are counted
+separately. Independent SQL-original-state/decimal-ceiling reconstruction checks
+every row, intersection and 36 target/background physical count rows; completion
+requires all bytes and two original coverage journals. Software fixtures rejected
+13 rehashed false exports and cover unused inventory models and exact cutoff
+boundaries; synthetic prior proofs are not production evidence. All fixed
+selected/unmatched scenario integration and post-screen balance remain downstream,
+without rematching. [Scope and resources](terminal-sister-backgrounds-20260927.md#complete-background-coverage-screen-queued-october-1).
+Independent old-result readback has passed all 584,688 design states; its full
+ten-journal closure and new-native measurement/union completion remain pending.

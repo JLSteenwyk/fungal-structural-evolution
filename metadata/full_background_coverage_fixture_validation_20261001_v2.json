@@ -1,0 +1,32 @@
+{
+  "status": "passed_full_background_coverage_software_cases",
+  "source_inventory_models": 5,
+  "pair_models": 4,
+  "broader_inventory_retained": true,
+  "physical_pairs": 3,
+  "pair_mask_rows": 6,
+  "directed_states": 12,
+  "screen_decisions": 36,
+  "exact_integer_fraction_vs_decimal_ceiling_boundary": true,
+  "confidence_mask_uses_original_lengths": true,
+  "both_orders_and_both_mask_intersections_checked": true,
+  "rejected_rehashed_exports": [
+    "missing_row",
+    "duplicate_row",
+    "wrong_original_length",
+    "wrong_masked_denominator",
+    "boundary_pass",
+    "cleared_numerical_flag",
+    "cleared_native_error",
+    "swapped_model_roles",
+    "changed_original_order",
+    "changed_source",
+    "changed_checkpoint",
+    "changed_summary",
+    "changed_target_comparison"
+  ],
+  "synthetic_prior_measurement_target_and_journal_contracts": true,
+  "production_native_or_journal_correctness_tested": false,
+  "scope": "Exercise full source I/O, exact coverage boundaries and independently rejected exports.\n\nPrior native/geometry/union/target/journal proofs are explicitly synthetic\nsoftware fixture contracts. This does not prove physical measurements or\nproduction closure and is not a pilot. Actual closed-source byte bindings,\nfull-grid handling, thresholds, missingness, export identity and SQL/decimal\nreadback run unchanged.\n",
+  "script_sha256": "d58cd6ede731ba8cbe54d46f2928388f1fb82be4ea42710d6c7f2a19fdb099a2"
+}

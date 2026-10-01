@@ -1,0 +1,32 @@
+{
+  "status": "planned_full_background_pair_coverage_with_fixed_target_policy",
+  "checked_utc": "2026-10-01T20:26:18.665142+00:00",
+  "background_physical_pairs": 146172,
+  "background_pair_mask_rows": 292344,
+  "background_directed_source_states": 584688,
+  "background_screen_decisions": 1754064,
+  "target_physical_pairs": 134812,
+  "target_pair_mask_rows": 269624,
+  "screens": 6,
+  "physical_comparison_count_rows": 36,
+  "cpu": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "output_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.5,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 683.4522819519043,
+  "free_disk_gib": 10541.90767288208,
+  "basis": "Full146172background pairs/two confidence masks/two native directions with six previously fixed target coverage screens. Producer streams every584688closed measurement state, exports every292344pair/mask row and all overlapping exclusion lists; original full protein lengths are denominators. Reader independently indexes every original union state in SQLite, rebuilds every field and threshold with exact decimal ceilings, all intersections and all36target/background physical count rows. Full previously closed union input/source hash universe is rechecked, potentially exceeding one million bindings.64GiB covers complete archives and model/flag dictionaries;32GiB covers SQL scratch, TSV outputs and complete source archives. Interval is uncalibrated planning, not an ETA. Two original coverage producer/reader journals required in addition to already closed union/source and target proofs. This does not rematch selections or establish ecological/duplication/phylogenetic effects; all full fixed-selection and unmatched design integration remains downstream. No native inference, GPU or paid resources.",
+  "source_inventory_models": 305434,
+  "background_pair_models": 292326,
+  "prelaunch_inventory_scope_check": "Broader full cross-comparison inventory has305434models;146172background pairs use292326model/version endpoints. Whole inventory retained, background membership and counts checked separately before first production launch. Earlier software fixture without an unused inventory model is archived outside Git; currentv2fixture includes one."
+}
