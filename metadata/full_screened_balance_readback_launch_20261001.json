@@ -1,0 +1,73 @@
+{
+  "unit": "fungal-full-screened-balance-readback-20261001-v1.service",
+  "pid": 1039203,
+  "created": 1790893779.89,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_screened_balance_readback_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/full_screened_balance_readback_wait_plan_20261001.json",
+  "plan_sha256": "433552de008e43f63d71487901aed30f3617dc12868581be940d1e12a3139c51",
+  "checked_utc": "2026-10-01T22:29:40.616110+00:00",
+  "resources": {
+    "status": "planned_complete_post_screen_balance_and_control_reuse",
+    "checked_utc": "2026-10-01T22:29:32.389483+00:00",
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "selected_records": 4250692,
+    "scenarios": 54,
+    "strata": 432,
+    "coverage_rows": 7776,
+    "balance_rows": 62208,
+    "maximum_retained_selection_screen_cells": 76512456,
+    "maximum_reuse_rows": 76512456,
+    "features": 8,
+    "baselines": 3,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 64,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_and_scratch_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "psutil": "7.2.2",
+    "available_memory_gib": 587.4686889648438,
+    "free_disk_gib": 10535.189842224121,
+    "basis": "Whole601446frozen nodes and4.25million closed selected records, all432strata*18mask/screens andeight features/three baselines. Numeric feature arrays about0.51GiB for selected endpoints before graph/index/closed-hash dictionaries and DataFrame copies;64GiB conservative limit. Positive retained-control reuse exports are bounded by76.5million rows;32GiB output/scratch allowance. Full source hashes and all exported reuse rows stay outside Git. Stages serial after full fixed-matching coverage closure; full independent reconstruction includes quantiles, zero-distance/variance, representation and weights.1-24hours per stage uncalibrated, not ETA; no pilot, GPU or paid resources."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-screened-balance-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=64G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_screened_balance_readback_wait_plan_20261001.json"
+  ]
+}

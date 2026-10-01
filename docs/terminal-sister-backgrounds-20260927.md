@@ -2085,3 +2085,87 @@ Post-screen feature balance, background reuse/weights, shared ancestry and
 family/taxon/gene dependence, predictor/circularity/PAE/domain/orientation
 controls, missingness sensitivity and calibrated effects remain required.
 All eight scientific aims remain incomplete.
+
+
+## Complete post-screen balance and reuse queued — October 1
+
+The [full post-screen plan](../metadata/full_screened_balance_plan_20261001.json)
+waits for the closed full matching-coverage exports. It uses every original
+4,250,692 selection across 54 scenarios, four policies and two guides, with
+three masks and six unchanged original-length screens. No controls are
+reselected after seeing physical responses or coverage. The full original
+chosen, failed and unmatched records remain in the source exports; this stage
+adds descriptive eligibility and balance summaries. Production is pending.
+
+Eight features are retained: raw sequence divergence, log positive divergence,
+mean log protein length, absolute log length ratio, mean/minimum endpoint
+pLDDT, and mean/maximum low-confidence fraction. Zero divergence remains in
+raw-distance counts; the log feature uses only jointly finite target/control
+pairs, explicitly counting exclusions without an epsilon. Exact constant
+feature values have zero sample variance. Insufficient pairs/baselines and
+zero pooled/baseline variance produce named nonestimable statuses rather than
+infinite or artificial standardized differences.
+
+Every one of 7,776 complete guide/policy/scenario/mask/screen cells reports
+retained coverage, exclusions and representation of target taxa/families/genes/
+physical pairs and control taxa/genes/nodes/physical pairs. Eight feature
+summaries in each cell give 62,208 balance rows: paired means, sample SDs,
+pooled-SD standardized differences, absolute differences and their 95th
+percentile/maximum, plus target shifts against three separate baselines:
+all original modeled targets in that guide; original metadata-matched targets
+in that scenario; and all original targets passing that screen, including
+unmatched targets. Baselines retain their own finite-feature counts. Empty
+strata remain explicit, with null rather than zero-valued undefined statistics.
+
+Control reuse is reported at both frozen node identity and canonical physical
+comparison identity. Distinct gene-labelled control nodes can map to the same
+physical pair and must not be counted as distinct structural observations.
+`retained_control_reuse.tsv.gz` preserves every positively retained control
+node in every cell, its physical pair, both reuse counts and reciprocal reuse
+weights. Each record using a node with r retained records has diagnostic weight
+1/r; physical-pair weights use the corresponding pair count. Each control
+therefore contributes one unit of mass within the chosen definition. Coverage
+tables report both weight sums, maximum/top-five reuse and Kish concentration
+`(sum w)^2 / sum(w^2)`. These are
+descriptive equal-control-mass diagnostics, not inferential weighting rules,
+independent replicates or effective evolutionary sample sizes. Full ancestry/
+family/taxon/gene dependence and sampling uncertainty remain to be modeled.
+
+`coverage.tsv`, `balance.tsv`, `retained_control_reuse.tsv.gz` and the receipt
+will be saved outside Git under
+`results/structural_comparisons/full-screened-balance-20261001-v1`.
+The reader independently reconstructs feature vectors with scalar mathematics,
+statistics with pandas, endpoint membership by integer bit decoding, and
+reuse concentration from grouped counts instead of producer per-record weight
+arrays. It compares every summary and every exported control reuse row,
+including all empty cells. Complete prior source hashes, artifact hashes and
+producer/readback original completion journals are required for closure; the
+future small locator is `metadata/full_screened_balance_completed_20261001.json`.
+
+[Software cases](../metadata/full_screened_balance_fixture_validation_20261001.json)
+passed all 54 scenarios/432 matching strata, all 7,776 coverage cells and
+62,208 feature rows, three baselines, confidence-mask intersections, role
+reversal/versions, reused nodes mapping to one physical pair, zero-distance
+log exclusions, constant variance, single-pair and empty outcomes. Twenty
+rehashed false exports were rejected, including altered representation,
+reuse weights/concentration, log exclusions/variance statuses, baseline
+shifts, quantiles, summaries and scenario 54. Prior full matching, physics
+and journal proof contracts are explicitly synthetic fixture data, not
+production proof or a biological pilot. Reproduce with
+`python scripts/check_full_screened_balance_cases.py --output NEW.json`.
+
+The [live queued pipeline](../metadata/full_screened_balance_pipeline_queued_20261001.json)
+runs only after full matching-coverage closure, then independently reconstructs
+all output before two-journal/source closure. [Prelaunch resources](../metadata/full_screened_balance_resources_20261001.json)
+record two CPU equivalents/64 GiB per serial stage, no swap, one BLAS thread,
+32 GiB output/scratch allowance and 100 GiB disk reserve. Up to 76,512,456
+retained screen cells and positive reuse rows are possible; full bindings and
+large exports remain outside Git. The 1–24 hour planning interval per stage
+is uncalibrated, not an ETA. Exact original PID/create/command and actual
+cgroup limits are recorded. Launched scripts/plans are immutable.
+
+Production balance and all calibrated evolutionary effects remain pending.
+Predictor/circularity, common-residue/domain/orientation/PAE and missingness
+controls, native phylogenetic qualification and uncertainty remain required.
+All eight scientific aims remain incomplete; original CPU/retrieval jobs
+continue and GPU prediction remains paused.

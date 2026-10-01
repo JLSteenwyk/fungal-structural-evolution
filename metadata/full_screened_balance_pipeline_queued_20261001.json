@@ -1,0 +1,61 @@
+{
+  "status": "live_queued_full_post_screen_balance_after_fixed_matching_coverage",
+  "checked_utc": "2026-10-01T22:29:43.429264+00:00",
+  "source_plan": "metadata/full_screened_balance_plan_20261001.json",
+  "source_plan_sha256": "b27f52577390b1ca66df19548928156a716bca4bd397d735694a51e7cd8f3853",
+  "static_source_pins_verified": 260,
+  "expected": {
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "selected_records": 4250692,
+    "scenarios": 54
+  },
+  "strata": 432,
+  "coverage_rows": 7776,
+  "balance_rows": 62208,
+  "maximum_retained_screen_and_reuse_rows": 76512456,
+  "verified_original_handles": [
+    {
+      "launch": "metadata/full_screened_balance_launch_20261001.json",
+      "launch_sha256": "9a30b20aa6517c20e97a3634c1cfdd8b66e60e11afd08e222956521edc70e351",
+      "pid": 1039199,
+      "created": 1790893777.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_wait_plan_20261001.json"
+      ],
+      "status": "running"
+    },
+    {
+      "launch": "metadata/full_screened_balance_readback_launch_20261001.json",
+      "launch_sha256": "c10688ce030ec5eb6417dbda051e6f5d9f6cad6ed8f59a2f5ffe6902ac2da069",
+      "pid": 1039203,
+      "created": 1790893779.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_readback_wait_plan_20261001.json"
+      ],
+      "status": "running"
+    },
+    {
+      "launch": "metadata/full_screened_balance_closure_launch_20261001.json",
+      "launch_sha256": "3e5043d76e9a4e8993807e0c89679b9ce71b52ccdc1f47fc729ff4223499ae70",
+      "pid": 1039303,
+      "created": 1790893782.7,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_closure_wait_plan_20261001.json"
+      ],
+      "status": "running"
+    }
+  ],
+  "production_complete": false,
+  "scientific_eligibility": false,
+  "scope": "All54frozen scenarios/four policies/two guides andallfull,pLDDT70,intersection masks andsix original-length screens. Eight endpoint-permutation-invariant metadata features summarized for retained selected records against all original modeled targets, original metadata-matched targets and all target-screen-eligible records, including unmatched targets. No epsilon for zero-distance logs; finite joint feature pairs and exclusions retained, exact constant values havezero variance/nonestimable standardized shifts. Report family/taxon/gene/physical-pair representation and node-versus-physical reuse, full reciprocal reuse diagnostics and Kish weight concentration. These weights are algebraic descriptive equal-control-mass diagnostics, not inferential weights, independent replicates, effective evolutionary sample sizes, phylogenetic correction or a validated duplication effect. Original selections/unmatched/failures remain in closed source, never rematched. Full source/output hashes, independent every-cell/every-reuse-row readback and two exact original journals required. Predictor/domain/PAE/orientation/ancestry/missingness sensitivity and calibrated effects remain unfinished."
+}

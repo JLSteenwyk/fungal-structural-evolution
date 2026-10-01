@@ -728,3 +728,15 @@ qualification and a queued analysis, not a duplication effect or scientific
 aim completion. Post-screen balance, dependence/phylogeny, predictor/domain/
 PAE/orientation sensitivity and calibrated inference remain unfinished.
 All eight aims remain incomplete; GPU inference remains paused.
+
+
+October 1: complete post-screen balance/reuse analysis and independent
+reconstruction are queued behind full fixed matching coverage. The stage
+retains all 7,776 cells and 62,208 feature summaries, three target baselines,
+zero/insufficient variance, log-distance exclusions, representation and
+control-node versus physical-pair reuse. Software tests rejected 20 rehashed
+false exports; production source/journal gates remain required. This is
+descriptive qualification of sampling/coverage bias and reuse, not an accepted
+duplication effect or phylogenetic effective sample size. All eight aims remain
+incomplete, including predictor/domain/PAE/orientation controls and calibrated
+phylogenetic inference. GPU prediction remains paused.

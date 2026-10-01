@@ -10479,3 +10479,21 @@ does not establish universal coverage or complete the biological project.
   New-native measurement and full downstream production remain incomplete;
   post-screen balance, structural controls and calibrated phylogenetic effects
   remain required. All eight aims incomplete; GPU inference stays paused.
+
+
+- October 1: full post-screen feature balance, three baseline shifts and
+  node-versus-physical control reuse are queued after complete fixed matching
+  coverage. All 54 scenarios/four policies/two guides, 7,776 coverage cells
+  and 62,208 feature rows retained, including empty/zero-distance/constant-
+  variance outcomes. Positive reuse ledger records both multiplicities and
+  reciprocal weights; weight concentration is descriptive, not independence
+  or accepted inferential weighting. Independent reconstruction checks every
+  feature/representation/reuse row, then full source/two-original-journal
+  closure. Full-design software checks passed and rejected 20 rehashed false
+  exports; prior matching/physics/journals are synthetic contracts, not
+  production proof or a pilot. Resource estimates recorded before launch: two
+  CPU/64 GiB, no swap/GPU/new charges; stages serial, exact PID/create/command
+  and cgroup limits captured. Original jobs remain live. See [workflow](terminal-sister-backgrounds-20260927.md#complete-post-screen-balance-and-reuse-queued-october-1).
+  Production balance and all eight scientific aims remain incomplete;
+  calibrated phylogenetic/structural/predictor/missingness controls remain
+  necessary and GPU prediction stays paused.

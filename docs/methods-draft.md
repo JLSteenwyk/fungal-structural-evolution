@@ -1745,3 +1745,29 @@ fixtures cover all 54 scenarios and reject corrupted exports/provenance;
 their prior physics and journal contracts are synthetic. Production results
 remain pending. Counts are dependent design records; post-screen covariate
 balance and calibrated phylogenetic duplication effects are separate analyses.
+
+
+## Full post-screen balance and control reuse — October 1
+
+The queued post-screen analysis retains every original fixed-match scenario
+and all closed source denominators. Eight permutation-invariant sequence,
+length and confidence features are summarized among jointly eligible target/
+control records. We distinguish shifts relative to all original modeled
+targets, original metadata-matched targets and all target-screen-eligible
+records (including unmatched targets), preserving separate finite-feature
+counts. Zero-distance log exclusions, empty cells, exact constant variance
+and insufficient pairs/baselines remain explicit. No epsilon, outcome-based
+rematching or balance-pass threshold is introduced.
+
+Full representation summaries count target taxa, families, genes and physical
+pairs, and control taxa, genes, nodes and physical pairs. A retained reuse
+ledger reports node and physical-pair multiplicity separately, with reciprocal
+weights assigning one total unit per control under each definition. Weight
+sums and Kish concentration are descriptive diagnostics, not phylogenetic
+effective sample sizes or accepted inferential weights. Independent scalar/
+pandas reconstruction checks all 62,208 feature rows, 7,776 coverage cells
+and all reuse records, including empty and nonestimable cases, followed by
+full source/artifact/two-original-journal closure. Software fixtures use
+synthetic prior matching/physics/journals; production results are pending.
+Biological duplication effects require subsequent dependence, predictor,
+structural-domain/PAE/orientation, missingness and phylogenetic calibration.

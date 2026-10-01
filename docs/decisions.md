@@ -374,3 +374,19 @@ exact original process identity plus recorded terminal completion fields;
 store fresh raw/canonical diagnostics separately. Do not claim original raw
 byte equivalence, accept collected-unit default success fields alone, or
 reinterpret journal validation as a repeat scientific-input/geometry audit.
+
+
+## Full post-screen baseline and reuse definitions — October 1
+
+Keep three baselines distinct: all original modeled target records, all
+metadata-matched targets in each fixed scenario, and all target-screen-eligible
+records including unmatched targets. Paired log-distance summaries exclude
+nonpositive distances explicitly without an epsilon; constant vectors have
+exact zero variance and standardized quantities remain nonestimable.
+
+Report control reuse both by original node and by canonical model/version
+physical pair. Gene-labelled aliases of the same pair do not create additional
+physical observations. Reciprocal reuse weights and Kish concentration are
+descriptive mass/concentration diagnostics; they do not qualify an inferential
+weight scheme, evolutionary sample size, independent events or phylogenetic
+correction. Retain original matching and all source failures/unmatched records.
