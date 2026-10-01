@@ -10321,3 +10321,39 @@ does not establish universal coverage or complete the biological project.
   All-four topology/consensus/guide/alignment, rooting and model/taxon/marker
   sensitivity remain required. No scientific aim is complete; GPU inference
   remains paused.
+
+- October 1: full same-residue geometry finished every 865,792 fit disposition.
+  Independent quaternion reconstruction passed every field, proper-rotation
+  classification, distance/contrast, confidence, identity and screening decision;
+  maximum difference 5.107e-14 Å. All 713,512 eligible states have unique fits
+  at the declared numeric tolerance; 105,732 short/46,548 source exclusions stay
+  explicit. Closure binds 464,600 hashes and both original journals. Exact
+  completed counts are published in 58 unit-labeled rows. At 50 residues/70%
+  original coverage, combined reference-common/cycle-consistent passes number
+  66,984/59,480 full and 45,440/43,624 pLDDT70 order states, not independent events.
+  Full logical-context linkage and order/mask robustness remain required.
+
+- October 1: completed all-four crossed PMSF ML/consensus topology sensitivity.
+  Full independent DendroPy reconstruction checked eight 523-split tree views,
+  4,576 view/split cells, 16 comparisons and 674 overlapping incompatible pairs.
+  Closure binds 115 hashes and both original journals; nine rehashed full actual
+  data exports were rejected. ML/consensus splits shared across four runs are
+  480/483; all eight share 480. Standalone PNG/SVG and all 16 comparison/eight
+  boundary rows were published, with independent RF recount, plot-artist and
+  36 SVG-value checks and visual review. Full 1,052 taxon/matrix character rows
+  and every nearest role boundary passed independent FASTA/DendroPy checks;
+  closure binds 123 hashes/one original journal. P/P's nearest outgroup boundary
+  adds Amoeboaphelidium protococcarum, with only 164/204 observed residues and
+  over 99.6% gaps. This flags coverage/placement uncertainty without assigning
+  a root or claiming artifact causation. Taxon/marker/model/rooting/hybrid
+  sensitivities and a final species framework remain open.
+
+- October 1: all 303,802 additional-background coordinate dispositions and
+  133,998,473 residues passed complete native-CIF/exported-coordinate readback.
+  All 607,604 written PDB states passed independent input reconstruction, with
+  5,752 short pLDDT70 inputs retained; total written bytes 18,056,589,431.
+  Composite closure binds 651 hashes and four exact original journals. Actual
+  old-alignment reuse qualification, new full-background native measurements,
+  coverage/confidence/orientation and calibrated matched effects remain open.
+  Original likelihood/BALiPhy/AFDB jobs are preserved. GPU inference remains
+  paused; none of the eight scientific aims is complete.

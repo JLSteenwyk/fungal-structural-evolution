@@ -1,0 +1,71 @@
+{
+  "output": "metadata/pmsf_role_boundary_character_completed_20261001.json",
+  "completed_status": "complete_verified_full_pmsf_role_boundary_and_character_diagnostics",
+  "evidence": {
+    "diagnostic": {
+      "path": "results/phylogeny/pmsf-role-boundary-character-diagnostics-20261001-v1/receipt.json",
+      "expected": {
+        "status": "passed_full_pmsf_role_boundary_and_character_diagnostics",
+        "taxon_matrix_rows": 1052,
+        "tree_views": 8,
+        "boundary_rows": 8,
+        "matrix_sites": {
+          "profile": 49027,
+          "mafft": 63750
+        },
+        "character_totals": {
+          "profile": {
+            "canonical_aa": 22778444,
+            "gaps": 3009534,
+            "noncanonical_or_ambiguous": 224
+          },
+          "mafft": {
+            "canonical_aa": 28568763,
+            "gaps": 4963466,
+            "noncanonical_or_ambiguous": 271
+          }
+        },
+        "greater_than_half_noncanonical_or_gap_taxa": {
+          "profile": 28,
+          "mafft": 31
+        }
+      }
+    }
+  },
+  "links": [],
+  "launches": [
+    "metadata/pmsf_role_boundary_character_launch_20261001.json"
+  ],
+  "pins": {
+    "metadata/pmsf_role_boundary_character_plan_20261001.json": "c385856c56d51f2df5d867c23a152e63cd245d7125fa9a62f997a72163ea5629",
+    "metadata/pmsf_role_boundary_character_launch_20261001.json": "7f3841665e83ad56ce0677386b0c7de74f39b1f76ac3c9a8814dceb2fdc94f2d",
+    "results/phylogeny/pmsf-role-boundary-character-diagnostics-20261001-v1/receipt.json": "3e1cd41ddbe952a896ba3c2a2bc71ca4bf857c3493a6fb7c48aa944e961728e5",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "summary": {
+    "taxon_matrix_rows": 1052,
+    "tree_views": 8,
+    "boundary_rows": 8,
+    "matrix_sites": {
+      "profile": 49027,
+      "mafft": 63750
+    },
+    "character_totals": {
+      "profile": {
+        "canonical_aa": 22778444,
+        "gaps": 3009534,
+        "noncanonical_or_ambiguous": 224
+      },
+      "mafft": {
+        "canonical_aa": 28568763,
+        "gaps": 4963466,
+        "noncanonical_or_ambiguous": 271
+      }
+    },
+    "greater_than_half_noncanonical_or_gap_taxa": {
+      "profile": 28,
+      "mafft": 31
+    }
+  },
+  "scope": "All526taxa under2fullfrozen alignment matrices,1052charactercoverage rows; canonical20AA/gaps/otherambiguity separate. BioSeqIO/Counter output independently reconstructed with complete manualFASTA/stringcount parsing. Entire8views/523rawinternaledges perview exhausted for minimum symmetricdifference todeclared25outgroups, all ties retained; independent DendroPy rawtree/table reconstruction. This nearest-boundary diagnostic doesnotchoose root orchange501/25roles, taxa or primarydatasets. A character/placement association is descriptive, not artifactcausation. Full source115hash/fourrun2journal closure bound; no refit/GPU/paidresources, all8aimsincomplete."
+}

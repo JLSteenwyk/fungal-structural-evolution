@@ -1,0 +1,77 @@
+{
+  "status": "passed_bound_full_four_run_pmsf_RF_figure_and_tables",
+  "plan_sha256": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+  "completion_sha256": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+  "matrices": {
+    "ml": [
+      [
+        0,
+        14,
+        60,
+        76
+      ],
+      [
+        14,
+        0,
+        48,
+        68
+      ],
+      [
+        60,
+        48,
+        0,
+        40
+      ],
+      [
+        76,
+        68,
+        40,
+        0
+      ]
+    ],
+    "consensus": [
+      [
+        0,
+        14,
+        56,
+        78
+      ],
+      [
+        14,
+        0,
+        44,
+        70
+      ],
+      [
+        56,
+        44,
+        0,
+        32
+      ],
+      [
+        78,
+        70,
+        32,
+        0
+      ]
+    ]
+  },
+  "within_run_RF": [
+    0,
+    0,
+    4,
+    10
+  ],
+  "checked_SVG_value_labels": 36,
+  "comparison_table_rows": 16,
+  "boundary_table_rows": 8,
+  "artifacts": {
+    "docs/figures/pmsf_four_run_RF_sensitivity_20261001.png": "897ef0eb3775948f43e07d13466aefaf455bab76d326a9e4019deea552a1d426",
+    "docs/figures/pmsf_four_run_RF_sensitivity_20261001.svg": "c161608d60fb4473c7969f2c95c2469f0d9e5e86602806036da113cb721632cd",
+    "docs/tables/pmsf_four_run_split_comparisons_20261001.tsv": "2ca7455130cd14ea954d68bf3773bcf5b0c819e34c7ea71cd3ab774678cbacc9",
+    "docs/tables/pmsf_four_run_role_boundary_20261001.tsv": "a3bfff82abeda5069b4b99c57974a1865f04a161c6e6d24ef2bd0c985c4f9383"
+  },
+  "script_sha256": "50bc95907a725bb2af4d5ade5eefd3f8eeedc4f57860f8671963fe561106de60",
+  "scientific_eligibility": false,
+  "scope": "Full source closure rechecked. All12cross-run and4within-run RF distances independently recounted from the entire verified split-presence grid; both plotted matrices,4bar heights and36exported SVG value labels checked. Standalone PNG/SVG and full16/8row tables bound. No pixelwise raster validation, inferential significance, chosenroot or accepted species framework."
+}

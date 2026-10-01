@@ -1,0 +1,53 @@
+{
+  "unit": "fungal-pmsf-four-run-readback-20261001-v1.service",
+  "pid": 3597078,
+  "created": 1790871036.97,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/pmsf_four_run_readback_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/pmsf_four_run_readback_wait_plan_20261001.json",
+  "plan_sha256": "447f75b569bdd27cade07175962cfe2361aa3617303e84725b87816ede8c46bb",
+  "checked_utc": "2026-10-01T16:10:37.710816+00:00",
+  "resources": {
+    "status": "planned_full_four_run_pmsf_topology_consensus_sensitivity",
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_mib": 200,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "basis": "All4closed/audited526tip LG+C20+F+G4 crossedalignment/guide runs;8ML/consensus views x523internal splits=4184source split records.16comparisons:6MLcrossrun+6consensuscrossrun+4withinrun. Sourcebootstraps/profiles alreadyaudited; no bootstrap refit. Worst16x523^2 candidatechecks before common-split subtraction; actualsmall selectedsymmetric differences not presumed. Existing2CPU8GiBnoSwap per serial producer/DendroPyreader,200MiBoutput reserve,0.01-1hplanningrange uncalibrated,$0noGPU. Entire526tipmanifest roles501ingroup/25outgroup remain fixed; checkroleboundary withoutrooting."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-pmsf-four-run-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=8G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/pmsf_four_run_readback_wait_plan_20261001.json"
+  ]
+}

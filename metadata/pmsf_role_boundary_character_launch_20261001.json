@@ -1,0 +1,50 @@
+{
+  "unit": "fungal-pmsf-role-character-diagnostics-20261001-v1.service",
+  "pid": 3610042,
+  "created": 1790872246.03,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_pmsf_role_boundary_and_characters.py",
+    "--plan",
+    "metadata/pmsf_role_boundary_character_plan_20261001.json"
+  ],
+  "plan": "metadata/pmsf_role_boundary_character_plan_20261001.json",
+  "plan_sha256": "c385856c56d51f2df5d867c23a152e63cd245d7125fa9a62f997a72163ea5629",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_allowance_mib": 100,
+    "full_character_cells_per_parser": 59320702,
+    "basis": "Bothcompletefrozen full526taxon matrices,2independent fullFASTA character-count methods,8fullrawtrees and all nearest declaredrole boundaries. No filtering/refitting/pilot; byte/charactercount and8x523internaledge work beforelaunch, existing2CPU8GiBnoSwap,$0noGPU. Counts/descriptive placement diagnostic only, no causal explanation of topology."
+  },
+  "checked_utc": "2026-10-01T16:30:46.774205+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-pmsf-role-character-diagnostics-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=8G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_pmsf_role_boundary_and_characters.py",
+    "--plan",
+    "metadata/pmsf_role_boundary_character_plan_20261001.json"
+  ]
+}

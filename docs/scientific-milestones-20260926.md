@@ -1,4 +1,4 @@
-# Open scientific milestones — updated September 30, 2026
+# Open scientific milestones — updated October 1, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
@@ -642,3 +642,13 @@ is still open. The fourth crossed PMSF run passed full profiles/trees/1,000
 bootstrap audit and original two-journal closure. All-four comparisons, rooting,
 model adequacy and taxon/marker/hybrid sensitivities remain open; no final
 species framework or completed scientific aim is claimed.
+
+
+October 1: full same-residue geometry is independently verified for all 865,792
+fit dispositions, with two original journals/464,600 bindings. Full all-four
+PMSF ML/consensus sensitivity is independently closed: 480/523 ML splits shared,
+with sparse-taxon/rooting sensitivity retained. Full 1,052-row character and
+eight-view nearest-role-boundary diagnostics and all supplemental-background
+CIF/PDB inputs are closed. Logical-context/order/mask qualification, actual
+background measurements, phylogenetic taxon/marker/model/root sensitivities and
+inferential calibration remain open; none of the eight aims is complete.

@@ -1,0 +1,69 @@
+{
+  "runs": {
+    "profile_profile": {
+      "run": "results/phylogeny/pmsf-profile-profile-recovery-v2",
+      "audit": "results/phylogeny/pmsf-profile-profile-readback-v1"
+    },
+    "profile_mafft": {
+      "run": "results/phylogeny/pmsf-profile-mafft-v1",
+      "audit": "results/phylogeny/pmsf-profile-mafft-readback-v1"
+    },
+    "mafft_profile": {
+      "run": "results/phylogeny/pmsf-mafft-profile-v1",
+      "audit": "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1"
+    },
+    "mafft_mafft": {
+      "run": "results/phylogeny/pmsf-mafft-mafft-v1",
+      "audit": "results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1"
+    }
+  },
+  "manifest": "metadata/analysis_manifest.tsv",
+  "fourth_completion": "metadata/pmsf_fourth_readback_completed_20261001.json",
+  "expected": {
+    "taxa": 526,
+    "internal_splits_per_view": 523,
+    "tree_views": 8,
+    "comparison_rows": 16
+  },
+  "output": "results/phylogeny/pmsf-four-run-ML-consensus-sensitivity-20261001-v1",
+  "resources": {
+    "status": "planned_full_four_run_pmsf_topology_consensus_sensitivity",
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_mib": 200,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "basis": "All4closed/audited526tip LG+C20+F+G4 crossedalignment/guide runs;8ML/consensus views x523internal splits=4184source split records.16comparisons:6MLcrossrun+6consensuscrossrun+4withinrun. Sourcebootstraps/profiles alreadyaudited; no bootstrap refit. Worst16x523^2 candidatechecks before common-split subtraction; actualsmall selectedsymmetric differences not presumed. Existing2CPU8GiBnoSwap per serial producer/DendroPyreader,200MiBoutput reserve,0.01-1hplanningrange uncalibrated,$0noGPU. Entire526tipmanifest roles501ingroup/25outgroup remain fixed; checkroleboundary withoutrooting."
+  },
+  "pins": {
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/compare_four_run_pmsf.py": "def9d01908f5cde297e277ec3f8abeb1d26e540c3954ae11703e1643743bb0e9",
+    "scripts/readback_four_run_pmsf.py": "a4da9782804e08c171ab7a4afabe474df02e82999beeb85c4d7262f2b959292f",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/pmsf_fourth_readback_completed_20261001.json": "b1ea0c8829c37218ce46952906136b217317262cd7513c63bbde97174af6eeee",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/pmsf_four_run_sensitivity_resources_20261001.json": "53f1c7b603cff2bc970f7aa955a7eb8c8a74c404b60342c73290554d85c4548d",
+    "results/phylogeny/pmsf-profile-profile-recovery-v2/receipt.json": "b2642f338eb34116f1046c75c2d58ded71ad610482ec38cdfd5243e5a3ee2591",
+    "results/phylogeny/pmsf-profile-mafft-v1/receipt.json": "1a40206961cb0caa110551398ec30a74e4c3e385295506a8a580960eac27c41e",
+    "results/phylogeny/pmsf-mafft-profile-v1/receipt.json": "3eaab8eb80db419d44f094c6595c4958488622794bfdd959b5ddd9654c5b7137",
+    "results/phylogeny/pmsf-mafft-mafft-v1/receipt.json": "5be8ab35e729f66121ba468a442389f0d3d8b6b8b8fe4c4fb29134fb6040ff56",
+    "results/phylogeny/pmsf-profile-profile-readback-v1/receipt.json": "8f20231f12eeefd050c8c5bd68ea1fb8e601eb6596f83b2985efad9d11f73031",
+    "results/phylogeny/pmsf-profile-mafft-readback-v1/receipt.json": "1a37302c23cd8e4cc9163d900e9273af9ff8faf789cfbe1d745ad6c85f87afeb",
+    "results/phylogeny/pmsf-mafft-profile-readback-20260927-v1/receipt.json": "f29ae5791d1f09c55e2e988cb183423d972a147e83842c3b71b28bb0f890f107",
+    "results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1/receipt.json": "24f5c42f07799bbee954c286f674bf174d532b8ad17d9fdecdd5e06ec8d33bb3",
+    "scripts/close_four_run_pmsf.py": "75f72555e2e1e4032c747b6b253acfd970269d28e175c72e09baf93416281019"
+  },
+  "scope": "Complete4crossed profile/MAFFT alignment x profile/MAFFT guide PMSF runs. Every523ML and523consensus internal split on common526tips, every union absent/present cell,16comparisons(all6ML+all6consensus+4withinrun),all incompatible unique-split pairs andquartetwitnesses retained. ML supportlabel SH-aLRT>=80 and empiricalUFB>=95; consensuslabel empiricalUFB>=95 with SH-aLRTunavailable. Separatecriteria neverinventmissing support. Full frozen501ingroup/25outgroup boundarydiagnostic doesnotassignroot. Full source/profile/1000bootstrap audits bound; independent DendroPy rawtree/node/bipartition reader and2exactoriginaljournals beforeclosedcompletion. Different siteuniverses prevent rawLLcomparison. No accepted species framework/root/modeladequacy/biologicaldiscordance/dates orinferentialcalibration;all8aimsincomplete,GPUinferencepaused."
+}

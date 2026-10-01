@@ -1,0 +1,293 @@
+{
+  "status": "verified_full_geometry_PMSF_sensitivity_and_background_input_checkpoint",
+  "checked_utc": "2026-10-01T16:45:17.850651+00:00",
+  "closed_proofs": {
+    "metadata/full_triad_same_residue_fit_completed_20261001.json": "81e3cef6036b851a71e6145b4364de40a3f25658334ffb91509e4272d4a81e9d",
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "metadata/pmsf_role_boundary_character_completed_20261001.json": "d28a9a26e29673dfe4fe9611267516851b3db65454132667663ef846a23c1ff3",
+    "metadata/expanded_background_inputs_completed_20261001.json": "a4dd2b19461986b255c3daed77cf3f1e0bf9900c68c495aed8ae425f7236444a"
+  },
+  "original_background_handles": [
+    {
+      "pid": 433565,
+      "created": 1790709562.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_whole_protein_ml.py",
+        "--plan",
+        "metadata/whole_protein_ml_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 436679,
+          "created": 1790709687.55,
+          "status": "sleeping"
+        },
+        {
+          "pid": 436680,
+          "created": 1790709687.55,
+          "status": "running"
+        },
+        {
+          "pid": 436683,
+          "created": 1790709687.55,
+          "status": "running"
+        },
+        {
+          "pid": 436684,
+          "created": 1790709687.55,
+          "status": "running"
+        },
+        {
+          "pid": 436685,
+          "created": 1790709687.55,
+          "status": "running"
+        },
+        {
+          "pid": 436686,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436687,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436688,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436689,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436690,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436691,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436692,
+          "created": 1790709687.56,
+          "status": "running"
+        },
+        {
+          "pid": 436693,
+          "created": 1790709687.57,
+          "status": "running"
+        },
+        {
+          "pid": 436694,
+          "created": 1790709687.57,
+          "status": "running"
+        },
+        {
+          "pid": 436695,
+          "created": 1790709687.57,
+          "status": "running"
+        },
+        {
+          "pid": 436696,
+          "created": 1790709687.57,
+          "status": "running"
+        },
+        {
+          "pid": 436697,
+          "created": 1790709687.57,
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_whole_protein_ml_outputs.py",
+        "--plan",
+        "metadata/whole_protein_ml_output_audit_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "pid": 338483,
+      "created": 1790533714.57,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_polynomial_ml.py",
+        "--plan",
+        "metadata/full_polynomial_ml_plan_20260927.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 338685,
+          "created": 1790533729.74,
+          "status": "sleeping"
+        },
+        {
+          "pid": 338696,
+          "created": 1790533731.91,
+          "status": "running"
+        },
+        {
+          "pid": 338699,
+          "created": 1790533731.92,
+          "status": "running"
+        },
+        {
+          "pid": 338700,
+          "created": 1790533731.93,
+          "status": "running"
+        },
+        {
+          "pid": 338701,
+          "created": 1790533731.93,
+          "status": "running"
+        },
+        {
+          "pid": 338702,
+          "created": 1790533731.93,
+          "status": "running"
+        },
+        {
+          "pid": 338703,
+          "created": 1790533731.93,
+          "status": "running"
+        },
+        {
+          "pid": 338704,
+          "created": 1790533731.94,
+          "status": "running"
+        },
+        {
+          "pid": 338705,
+          "created": 1790533731.95,
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "pid": 771240,
+      "created": 1790566377.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 3006802,
+          "created": 1790808057.37,
+          "status": "running"
+        },
+        {
+          "pid": 3006803,
+          "created": 1790808060.71,
+          "status": "running"
+        },
+        {
+          "pid": 3335579,
+          "created": 1790841611.7,
+          "status": "running"
+        },
+        {
+          "pid": 3565257,
+          "created": 1790868649.23,
+          "status": "running"
+        },
+        {
+          "pid": 3565969,
+          "created": 1790868663.62,
+          "status": "running"
+        },
+        {
+          "pid": 3566247,
+          "created": 1790868672.0,
+          "status": "running"
+        },
+        {
+          "pid": 3566403,
+          "created": 1790868674.85,
+          "status": "running"
+        },
+        {
+          "pid": 3566748,
+          "created": 1790868686.19,
+          "status": "running"
+        },
+        {
+          "pid": 3566757,
+          "created": 1790868687.48,
+          "status": "running"
+        },
+        {
+          "pid": 3566837,
+          "created": 1790868689.64,
+          "status": "running"
+        },
+        {
+          "pid": 3568052,
+          "created": 1790868716.01,
+          "status": "running"
+        },
+        {
+          "pid": 3568273,
+          "created": 1790868724.99,
+          "status": "running"
+        },
+        {
+          "pid": 3568345,
+          "created": 1790868731.41,
+          "status": "running"
+        },
+        {
+          "pid": 3568499,
+          "created": 1790868736.94,
+          "status": "running"
+        },
+        {
+          "pid": 3568643,
+          "created": 1790868741.32,
+          "status": "running"
+        },
+        {
+          "pid": 3570194,
+          "created": 1790868848.03,
+          "status": "running"
+        }
+      ]
+    },
+    {
+      "pid": 863281,
+      "created": 1790353565.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_structure_retrieval.py",
+        "--plan",
+        "metadata/recovery_20260925_structure_retrieval_plan.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 866035,
+          "created": 1790353567.31,
+          "status": "sleeping"
+        }
+      ]
+    }
+  ],
+  "scientific_eligibility": false,
+  "scope": "Closed full-scope numerical/input/phylogenetic sensitivity results, with original long-job identities rechecked and preserved. No final species framework/calibrated evolutionary conclusions; all8aimsincomplete."
+}

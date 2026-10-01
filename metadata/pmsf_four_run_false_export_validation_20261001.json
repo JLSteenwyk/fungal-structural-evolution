@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_four_run_pmsf_rehashed_false_export_checks",
+  "plan_sha256": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+  "producer_receipt_sha256": "a08e4f892c11eec17667436d680c75a63d7a9e351eec5776bd62d7fbb2b694ae",
+  "actual_source_runs": 4,
+  "actual_tree_views": 8,
+  "actual_taxa": 526,
+  "baseline_full_reader_passed": true,
+  "rejected_rehashed_false_exports": [
+    "changed_RF",
+    "invented_consensus_SH_aLRT",
+    "promoted_weak_conflict",
+    "invalid_quartet",
+    "invented_role_boundary",
+    "missing_presence_cell",
+    "duplicate_comparison",
+    "missing_comparison",
+    "changed_branch_length"
+  ],
+  "checker_sha256": "c19eea7e2ac26850b9c69346328ccc30e0ed643dddbe158c005042aa9123ff2f",
+  "scientific_eligibility": false,
+  "scope": "Complete actual data/schema/source gates exercised in isolated export copies. Source trees/audits and production outputs unchanged; alternative temporary-plan binding requalified before tests. Rehashed false table exports rejected independently. No synthetic taxa/source stubs or pilot, no scientific significance."
+}

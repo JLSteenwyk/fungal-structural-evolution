@@ -1591,3 +1591,16 @@ native check. Source/result reuse, overlapping reference/background inputs,
 new native background measurements, confidence/coverage/PAE/domain controls
 and biological comparison remain required; fixed matches are not rematched
 following quality exclusions. No GPU inference or paid resources launched.
+
+
+## Full supplemental background inputs completed October 1
+
+Every 303,802 additional model disposition and 133,998,473 residue coordinates
+passed the full native-CIF/exported-coordinate reader across 304 shards. Every
+607,604 full/pLDDT70 written PDB input disposition passed independent checks;
+5,752 short pLDDT70 inputs remain explicit. Written bytes total 18,056,589,431.
+[Composite completion](../metadata/expanded_background_inputs_completed_20261001.json)
+binds 651 source/artifact hashes and all four exact original journals. This
+closes input materialization, not biological matching or structural divergence.
+The full 146,172-pair background measurement design still needs actual reuse
+qualification/new measurements, coverage and predictor/orientation calibration.

@@ -1,0 +1,53 @@
+{
+  "unit": "fungal-pmsf-four-run-sensitivity-20261001-v1.service",
+  "pid": 3597074,
+  "created": 1790871036.91,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_four_run_pmsf.py",
+    "--plan",
+    "metadata/pmsf_four_run_sensitivity_plan_20261001.json"
+  ],
+  "plan": "metadata/pmsf_four_run_sensitivity_plan_20261001.json",
+  "plan_sha256": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+  "checked_utc": "2026-10-01T16:10:37.656228+00:00",
+  "resources": {
+    "status": "planned_full_four_run_pmsf_topology_consensus_sensitivity",
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_mib": 200,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "basis": "All4closed/audited526tip LG+C20+F+G4 crossedalignment/guide runs;8ML/consensus views x523internal splits=4184source split records.16comparisons:6MLcrossrun+6consensuscrossrun+4withinrun. Sourcebootstraps/profiles alreadyaudited; no bootstrap refit. Worst16x523^2 candidatechecks before common-split subtraction; actualsmall selectedsymmetric differences not presumed. Existing2CPU8GiBnoSwap per serial producer/DendroPyreader,200MiBoutput reserve,0.01-1hplanningrange uncalibrated,$0noGPU. Entire526tipmanifest roles501ingroup/25outgroup remain fixed; checkroleboundary withoutrooting."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-pmsf-four-run-sensitivity-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=8G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_four_run_pmsf.py",
+    "--plan",
+    "metadata/pmsf_four_run_sensitivity_plan_20261001.json"
+  ]
+}

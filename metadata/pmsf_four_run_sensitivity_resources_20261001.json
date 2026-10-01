@@ -1,0 +1,17 @@
+{
+  "status": "planned_full_four_run_pmsf_topology_consensus_sensitivity",
+  "cpu": 2,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_mib": 200,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.01,
+    1
+  ],
+  "runtime_uncalibrated": true,
+  "basis": "All4closed/audited526tip LG+C20+F+G4 crossedalignment/guide runs;8ML/consensus views x523internal splits=4184source split records.16comparisons:6MLcrossrun+6consensuscrossrun+4withinrun. Sourcebootstraps/profiles alreadyaudited; no bootstrap refit. Worst16x523^2 candidatechecks before common-split subtraction; actualsmall selectedsymmetric differences not presumed. Existing2CPU8GiBnoSwap per serial producer/DendroPyreader,200MiBoutput reserve,0.01-1hplanningrange uncalibrated,$0noGPU. Entire526tipmanifest roles501ingroup/25outgroup remain fixed; checkroleboundary withoutrooting."
+}

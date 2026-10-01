@@ -241,3 +241,22 @@ independent quaternion reader and both exact original completion journals.
 The completed fourth PMSF audit does not establish an accepted species framework;
 retain its gap warnings and require all-four topology/consensus and broader
 phylogenetic sensitivities.
+
+
+### October 1: preserve tree-specific support and sparse-taxon uncertainty
+
+Keep all four alignment/guide combinations and both ML/consensus views. Report
+ML SH-aLRT80/UFB95 criteria separately from consensus UFB95, leaving unavailable
+SH-aLRT blank. Exhaust all split/missing/conflict/witness records and require
+independent raw-tree reconstruction and original journal closure. Compare full
+character coverage on both matrices and retain every nearest declared-role
+boundary without selecting a root or changing taxon roles. The sparse
+Amoeboaphelidium protococcarum placement motivates taxon/marker sensitivities;
+its observation does not prove causal missing-data bias. Pruned-topology
+checks, if used next, cannot substitute for native sensitivity refits.
+
+Same-residue numerical completion does not establish calibrated asymmetry.
+Preserve all order/mask/core alternatives and perform complete logical-context
+linkage and robustness qualification before comparative inference. Full
+additional-background input closure precedes any actual alignment reuse or
+new native measurement acceptance. Keep all eight scientific aims open.

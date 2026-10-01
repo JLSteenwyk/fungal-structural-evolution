@@ -1586,3 +1586,24 @@ and jointly. Full source/journal closure gates production. The exhaustive work
 preflight measured 77,805 distinct eligible cores and 233,415 pair fits per
 implementation. [Production and resource details](full-triad-same-residue-geometry-20261001.md);
 completed geometry or calibrated asymmetry is not yet claimed.
+
+
+### Full crossed PMSF topology, consensus and character diagnostics
+
+All four fixed alignment/guide combinations retain both ML and consensus trees.
+Six cross-run pairs per tree type and four within-run pairs exhaust every split,
+missing cell and incompatible split pair on the same 526 tips. ML support
+criteria use SH-aLRT80/UFB95; consensus uses UFB95 with SH-aLRT unavailable.
+DendroPy independently reconstructs raw nodes/lengths, compatibility and quartet
+witnesses. Comparisons retain all support alternatives rather than selecting a
+preferred run. Full taxa-character coverage and nearest declared outgroup-set
+boundaries retain every taxon and tied minimum. Counts use independent complete
+FASTA parsers and topology libraries. These diagnostic distances are not rates,
+biological discordance tests or proof of a root. Complete results, warning
+interpretation and numerical/journal evidence are in
+[the species-tree sensitivity workflow](pmsf-four-run-sensitivity-20261001.md).
+
+The full same-residue geometry subsequently passed all 865,792 dispositions and
+independent quaternion checks with maximum difference 5.107e-14 Å. Core and
+inherited three-edge six-screen passes remain separate; logical events and
+order/mask robustness are not inferred from aggregated repeated state counts.

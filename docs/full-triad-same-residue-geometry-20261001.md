@@ -1,9 +1,9 @@
 # Full same-residue duplicate/reference geometry — October 1, 2026
 
-The full geometric comparison is running on existing CPUs. Its independent
-quaternion reader and journal closure are queued behind the producer. Completed
-outputs are not claimed until both stages pass and original journal evidence is
-closed. The production source is the independently verified full mapping grid
+The full geometric comparison and independent quaternion reconstruction have
+completed on existing CPUs. Closure verified 464,600 source/artifact bindings
+and both exact original producer/reader journals. The production source is
+the independently verified full mapping grid
 described in [the correspondence workflow](full-triad-common-residues-20260930.md).
 
 All 27,056 source-ready ordered physical triples are included under two masks,
@@ -15,8 +15,10 @@ sides, including unscheduled and missing states.
 
 Full-data preflight exhausted the entire grid and rechecked its source bindings.
 It found 713,512 dispositions with eligible coordinate inputs, 105,732 short-core
-dispositions and 46,548 source-excluded dispositions. These are prefit statuses:
-eligible coordinate inputs can still have degenerate geometry. Within a physical
+dispositions and 46,548 source-excluded dispositions. These were prefit statuses:
+all 713,512 eligible dispositions subsequently had unique fits at the declared
+numeric tolerance. The short and source-excluded dispositions remain explicit.
+Within a physical
 triple and mask, order/core alternatives repeat some residue sets. There are
 77,805 distinct eligible sets, totaling 16,923,795 residue occurrences and
 233,415 proper pair fits per implementation after identical-core reuse. The
@@ -53,7 +55,16 @@ changed residue hashes or model roles, promoted degenerate/short cores, cleared
 source exclusions and favorable inherited screens. Proof I/O was stubbed only
 in these software fixtures; full production uses the closed actual-data gate.
 
-Each serial stage has two CPU cores, 32 GiB RAM, no swap and one BLAS thread.
+The full reader reproduced every row, distance, signed contrast, confidence,
+identity and screening decision. Maximum absolute RMSD/contrast disagreement
+was 5.107e-14 Å. At 50 residues/70% original coverage, combined core/three-edge
+passes number 66,984 reference-common versus 59,480 cycle-consistent full-mask
+states, and 45,440 versus 43,624 pLDDT70 states. These counts include eight-order
+alternatives and are not independent events, physical triples or calibrated
+effect estimates. Full logical-context linkage and order/mask robustness
+qualification remain ahead.
+
+Each serial stage had two CPU cores, 32 GiB RAM, no swap and one BLAS thread.
 The output allowance is 32 GiB with a 100 GiB disk reserve. The planning range
 of 0.5–12 hours per stage remains uncalibrated. No GPU or paid resources are used.
 
@@ -64,18 +75,22 @@ Reproducibility records:
 - [Software fixture results](../metadata/full_triad_same_residue_fit_fixture_validation_20261001_v2.json)
 - [Immutable production plan](../metadata/full_triad_same_residue_fit_plan_20261001.json)
 - [Original producer, reader and closure handles](../metadata/full_triad_same_residue_fit_pipeline_started_20261001.json)
+- [Verified full geometry completion](../metadata/full_triad_same_residue_fit_completed_20261001.json)
+- [All 58 unit-labeled fit/screen count rows](tables/full_triad_geometry_dispositions_20261001.tsv)
 
 Large tables, source hashes and independent readback remain outside Git in
 `results/structural_comparisons/full-triad-same-residue-fits-20261001-v1/`.
-The expected final small completion record is
-`metadata/full_triad_same_residue_fit_completed_20261001.json`; its existence
-and passed status must be checked before any completion claim.
+The small completion record is
+`metadata/full_triad_same_residue_fit_completed_20261001.json`, with status
+`complete_verified_full_triad_same_residue_geometry`.
 
 Logical-context linkage, native assignment and reference-choice sensitivities,
 sequence-locked/domain/PAE/orientation controls, prediction calibration,
 phylogenetic dependence and calibrated inference remain required. The fourth
 crossed PMSF run separately passed its full profile/tree/bootstrap audit and
 [37-binding, two-journal closure](../metadata/pmsf_fourth_readback_completed_20261001.json).
-All-four topology/consensus sensitivity, rooting, model adequacy and taxon/marker
-sensitivities are still needed before accepting a species framework. All eight
+All-four topology/consensus comparison is now independently closed in
+[the species-tree sensitivity workflow](pmsf-four-run-sensitivity-20261001.md).
+Rooting, model adequacy and taxon/marker/hybrid sensitivities remain required
+before accepting a species framework. All eight
 scientific aims remain incomplete; GPU predictions remain paused.

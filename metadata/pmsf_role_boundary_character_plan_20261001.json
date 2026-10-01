@@ -1,0 +1,29 @@
+{
+  "source_plan": "metadata/pmsf_four_run_sensitivity_plan_20261001.json",
+  "completion": "metadata/pmsf_four_run_sensitivity_completed_20261001.json",
+  "output": "results/phylogeny/pmsf-role-boundary-character-diagnostics-20261001-v1",
+  "pins": {
+    "metadata/pmsf_four_run_sensitivity_plan_20261001.json": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "scripts/diagnose_pmsf_role_boundary_and_characters.py": "1e5928e14a28116b878fb68f8861983b2f51dfc82b2a4b9d935469a4b00187b7",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "output_allowance_mib": 100,
+    "full_character_cells_per_parser": 59320702,
+    "basis": "Bothcompletefrozen full526taxon matrices,2independent fullFASTA character-count methods,8fullrawtrees and all nearest declaredrole boundaries. No filtering/refitting/pilot; byte/charactercount and8x523internaledge work beforelaunch, existing2CPU8GiBnoSwap,$0noGPU. Counts/descriptive placement diagnostic only, no causal explanation of topology."
+  },
+  "scope": "All526taxa under2fullfrozen alignment matrices,1052charactercoverage rows; canonical20AA/gaps/otherambiguity separate. BioSeqIO/Counter output independently reconstructed with complete manualFASTA/stringcount parsing. Entire8views/523rawinternaledges perview exhausted for minimum symmetricdifference todeclared25outgroups, all ties retained; independent DendroPy rawtree/table reconstruction. This nearest-boundary diagnostic doesnotchoose root orchange501/25roles, taxa or primarydatasets. A character/placement association is descriptive, not artifactcausation. Full source115hash/fourrun2journal closure bound; no refit/GPU/paidresources, all8aimsincomplete."
+}
