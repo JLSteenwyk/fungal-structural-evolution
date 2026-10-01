@@ -740,3 +740,14 @@ descriptive qualification of sampling/coverage bias and reuse, not an accepted
 duplication effect or phylogenetic effective sample size. All eight aims remain
 incomplete, including predictor/domain/PAE/orientation controls and calibrated
 phylogenetic inference. GPU prediction remains paused.
+
+
+October 1: all eight native taxon sensitivity matrices are closed with complete
+233.9-million-character/membership/site-map checks and two original journals.
+Sixteen supported crossed C20-PMSF refits have started serially, beginning with
+a fresh 525-taxon guide. Baseline remains 526 entries/25 outgroups; alternative
+cohorts retain explicit outgroup/fine-lineage losses. Full subset outputs,
+independent collection/topology/root comparisons, original completion closure
+and model/marker/identity/dating qualification remain required. This advances
+the phylogenetic framework, not a final rooted tree or completion of any of
+the eight scientific aims. GPU prediction remains paused.

@@ -1,0 +1,64 @@
+{
+  "unit": "fungal-species-taxon-refit-inputs-20261001-v1.service",
+  "pid": 1059060,
+  "created": 1790894758.13,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_species_taxon_refit_inputs.py",
+    "--plan",
+    "metadata/species_taxon_refit_input_plan_20261001.json"
+  ],
+  "plan": "metadata/species_taxon_refit_input_plan_20261001.json",
+  "plan_sha256": "5b002f97cdce5af8b1a0d95edfbd5bc8fe75d33964d5087316d015bb44d130d2",
+  "checked_utc": "2026-10-01T22:45:58.864619+00:00",
+  "resources": {
+    "status": "planned_complete_native_taxon_refit_input_preparation_and_readback",
+    "checked_utc": "2026-10-01T22:45:58.815883+00:00",
+    "source_taxa": 526,
+    "alignments": 2,
+    "policies": 4,
+    "matrices": 8,
+    "source_character_cells": 59320702,
+    "retained_taxon_matrix_cells": 4148,
+    "planned_native_crossed_fits": 16,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 580.0970611572266,
+    "free_disk_gib": 10534.179584503174,
+    "basis": "Read both complete frozen matrices and every existing coverage/membership identity; prepare4full taxon sensitivity policies forboth aligners, preserving all125markers/columns/site maps. Complete4148retainedtaxon/matrix cells and234millionapproximate sequence characters independently checked with manualFASTA/string counts.1GiB covers copied sequences/maps/partitions; not native inference or pilot. Heavy16crossed mixture refits will receive separate resource estimates and a one-at-a-time memory gate before launch."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-species-taxon-refit-inputs-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=8G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_species_taxon_refit_inputs.py",
+    "--plan",
+    "metadata/species_taxon_refit_input_plan_20261001.json"
+  ]
+}

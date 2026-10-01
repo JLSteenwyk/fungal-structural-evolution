@@ -1,0 +1,31 @@
+{
+  "dependencies": [
+    "metadata/species_taxon_refit_input_launch_20261001.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_species_taxon_refit_inputs.py",
+    "--plan",
+    "metadata/species_taxon_refit_input_plan_20261001.json",
+    "--output",
+    "results/phylogeny/native-taxon-refit-inputs-20261001-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "metadata/pmsf_role_boundary_character_completed_20261001.json": "d28a9a26e29673dfe4fe9611267516851b3db65454132667663ef846a23c1ff3",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/taxon_matrix_coverage.tsv": "c0be70f8630acca4452f4ba14c1bcb3f7d7049019ad3a35f98549886229bd160",
+    "config/curated_hybrid_evidence.json": "f7f4779e1100d0d42ec16b9d074879011031e8c240fa8308fac7da59ce4cd304",
+    "metadata/taxon_label_review.tsv": "cfb0ec10270a4ad0a8c4ea856a57a627765534b4695eafd2833ec9d5ed0a36b2",
+    "metadata/species_taxon_refit_input_resources_20261001.json": "57ed39f2a371c1f8c90dc37271eed2f20e99b3215dc9ead78852e755290a1b65",
+    "scripts/prepare_species_taxon_refit_inputs.py": "0976d9d4e7da5a2945ac32229e4ec464190b58d8582562eb2060a931c0714091",
+    "scripts/readback_species_taxon_refit_inputs.py": "ea52a25e741ac5d3ef10b253d1839e7f4776654777df8538f2b915b5154e8f28",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/species_taxon_refit_input_plan_20261001.json": "5b002f97cdce5af8b1a0d95edfbd5bc8fe75d33964d5087316d015bb44d130d2",
+    "metadata/species_taxon_refit_input_launch_20261001.json": "c7289d18a2b14ad13c17c616ae049c84b48ad22171b5a807d25611a0e18d379f"
+  }
+}

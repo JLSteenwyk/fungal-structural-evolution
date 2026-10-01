@@ -390,3 +390,22 @@ physical observations. Reciprocal reuse weights and Kish concentration are
 descriptive mass/concentration diagnostics; they do not qualify an inferential
 weight scheme, evolutionary sample size, independent events or phylogenetic
 correction. Retain original matching and all source failures/unmatched records.
+
+
+## Native taxon refits and conditional guide reuse — October 1
+
+Preserve the full 526-entry baseline and all 25 original outgroups. Test four
+explicit taxon policies by native supported refitting on both alignments and
+both conditioning guide alignments. Preserve every retained original sequence,
+site/marker mapping and all exclusion/lineage counts. The low-occupancy policy
+retains 23 outgroups; detailed lineage-bin losses are sampling sensitivities,
+not a preferred filtered design or diagnosed biological loss.
+
+Reuse exact-matrix homogeneous guide files only as frozen conditioning inputs
+with full input/config/build/artifact and report/tree/tip checks. Do not claim
+new supported inference or retrospective original-process completion from
+those files. Refit every mixture profile and supported sensitivity tree;
+topology pruning alone is insufficient. Only one mixture fit at a time and
+only after currently available memory reaches its recorded prelaunch threshold.
+Preserve native/checkpoint process identities and complete successful records;
+full collection/journal/biological qualification remains separate.

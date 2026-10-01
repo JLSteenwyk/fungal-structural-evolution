@@ -10497,3 +10497,22 @@ does not establish universal coverage or complete the biological project.
   Production balance and all eight scientific aims remain incomplete;
   calibrated phylogenetic/structural/predictor/missingness controls remain
   necessary and GPU prediction stays paused.
+
+
+- October 1: native taxon species-tree sensitivity inputs are closed after
+  checking all eight matrices/233,899,498 retained characters, original sites/
+  markers, 2,104 membership and 1,524 fine-lineage rows, with 188 bindings and
+  two original journals. Four policies test sparse boundary taxon, low occupancy,
+  curated hybrids and incomplete labels; primary 526-entry/25-outgroup design
+  preserved. Low-coverage policy retains 23 outgroups; strict label policy
+  removes 12 fine-grained lineage bins, explicitly retained in loss tables.
+  Full 16 crossed supported native PMSF refits launched serially. A fresh
+  525-taxon profile guide is running; four exact-matrix old homogeneous guides
+  are frozen inputs rather than new supported tree claims. Complete numerical
+  audit code generalized for subset dimensions and reproduced every original
+  baseline profile/bootstrap/support row. Eight threads/650 GiB service cap,
+  no swap/GPU/charges, 650 GiB available-memory gate before each mixture phase;
+  resources estimated before launch. Full collection/readback/comparison/
+  journal closure and biological framework qualification remain required.
+  Original CPU/retrieval jobs preserved. See [design and evidence](pmsf-four-run-sensitivity-20261001.md#native-taxon-sensitivity-refits-started-october-1).
+  No accepted root, species count, dating or scientific-aim completion claimed.

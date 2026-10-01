@@ -1,0 +1,27 @@
+{
+  "status": "planned_complete_native_taxon_refit_input_preparation_and_readback",
+  "checked_utc": "2026-10-01T22:45:58.815883+00:00",
+  "source_taxa": 526,
+  "alignments": 2,
+  "policies": 4,
+  "matrices": 8,
+  "source_character_cells": 59320702,
+  "retained_taxon_matrix_cells": 4148,
+  "planned_native_crossed_fits": 16,
+  "cpu_per_stage": 2,
+  "memory_gib_per_stage": 8,
+  "swap_gib": 0,
+  "output_allowance_gib": 1,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.01,
+    1
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 580.0970611572266,
+  "free_disk_gib": 10534.179584503174,
+  "basis": "Read both complete frozen matrices and every existing coverage/membership identity; prepare4full taxon sensitivity policies forboth aligners, preserving all125markers/columns/site maps. Complete4148retainedtaxon/matrix cells and234millionapproximate sequence characters independently checked with manualFASTA/string counts.1GiB covers copied sequences/maps/partitions; not native inference or pilot. Heavy16crossed mixture refits will receive separate resource estimates and a one-at-a-time memory gate before launch."
+}

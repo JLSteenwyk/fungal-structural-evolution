@@ -1,0 +1,88 @@
+{
+  "baseline_completion": "metadata/pmsf_four_run_sensitivity_completed_20261001.json",
+  "boundary_completion": "metadata/pmsf_role_boundary_character_completed_20261001.json",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "coverage": "metadata/taxon_matrix_coverage.tsv",
+  "hybrids": "config/curated_hybrid_evidence.json",
+  "labels": "metadata/taxon_label_review.tsv",
+  "matrices": {
+    "profile": "results/phylogeny/profile-matrix-50-v1",
+    "mafft": "results/phylogeny/mafft-matrix-50-v1"
+  },
+  "sparse_boundary_taxon": "F1243177",
+  "expected_retention": {
+    "exclude_sparse_boundary_taxon": {
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      }
+    },
+    "exclude_below10_both_alignments": {
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      }
+    },
+    "exclude_curated_hybrids": {
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      }
+    },
+    "exclude_hybrids_and_uncertain_labels": {
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      }
+    }
+  },
+  "output": "results/phylogeny/native-taxon-refit-inputs-20261001-v1",
+  "pins": {
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "metadata/pmsf_role_boundary_character_completed_20261001.json": "d28a9a26e29673dfe4fe9611267516851b3db65454132667663ef846a23c1ff3",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/taxon_matrix_coverage.tsv": "c0be70f8630acca4452f4ba14c1bcb3f7d7049019ad3a35f98549886229bd160",
+    "config/curated_hybrid_evidence.json": "f7f4779e1100d0d42ec16b9d074879011031e8c240fa8308fac7da59ce4cd304",
+    "metadata/taxon_label_review.tsv": "cfb0ec10270a4ad0a8c4ea856a57a627765534b4695eafd2833ec9d5ed0a36b2",
+    "metadata/species_taxon_refit_input_resources_20261001.json": "57ed39f2a371c1f8c90dc37271eed2f20e99b3215dc9ead78852e755290a1b65",
+    "scripts/prepare_species_taxon_refit_inputs.py": "0976d9d4e7da5a2945ac32229e4ec464190b58d8582562eb2060a931c0714091",
+    "scripts/readback_species_taxon_refit_inputs.py": "ea52a25e741ac5d3ef10b253d1839e7f4776654777df8538f2b915b5154e8f28",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8"
+  },
+  "resources": {
+    "status": "planned_complete_native_taxon_refit_input_preparation_and_readback",
+    "checked_utc": "2026-10-01T22:45:58.815883+00:00",
+    "source_taxa": 526,
+    "alignments": 2,
+    "policies": 4,
+    "matrices": 8,
+    "source_character_cells": 59320702,
+    "retained_taxon_matrix_cells": 4148,
+    "planned_native_crossed_fits": 16,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 8,
+    "swap_gib": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 580.0970611572266,
+    "free_disk_gib": 10534.179584503174,
+    "basis": "Read both complete frozen matrices and every existing coverage/membership identity; prepare4full taxon sensitivity policies forboth aligners, preserving all125markers/columns/site maps. Complete4148retainedtaxon/matrix cells and234millionapproximate sequence characters independently checked with manualFASTA/string counts.1GiB covers copied sequences/maps/partitions; not native inference or pilot. Heavy16crossed mixture refits will receive separate resource estimates and a one-at-a-time memory gate before launch."
+  },
+  "scope": "All526frozen baseline entries/25designatedoutgroups remain primary. Sensitivity matrices exclude sparse boundary taxon, require>=10%canonical occupancy in each of both original alignments, exclude two curatedhybrids, or excludehybridsplus21incomplete labels. Original125markers/columns/residue sequences andfull site/partition mappings preserved byte-for-byte excepttaxon subsetting. These are conditional native-refit inputs, not final filtering, accepted species identities, rooting, model adequacy or phylogeny. Full whole-source proof/independent complete matrix/membership checks and two original process journals required. Planned full16crossed LG+C20+F+G4 supported refits remain separate expensive stage; no topology robustness inferred from data subsetting/pruning."
+}

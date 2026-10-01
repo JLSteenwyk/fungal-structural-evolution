@@ -86,3 +86,82 @@ Taxon/marker coverage sensitivity, justified rooting, hybrid/taxonomic uncertain
 model adequacy and gene-tree discordance remain required. Topology pruning alone
 would not replace native refitting on a sensitivity dataset. Structural effects
 must propagate relevant tree/placement uncertainty. All eight aims remain open.
+
+
+## Native taxon sensitivity refits started — October 1
+
+[Eight prepared matrices](../metadata/species_taxon_refit_inputs_completed_20261001.json)
+passed complete independent raw FASTA/character/membership/site-map checks:
+233,899,498 retained characters, 4,148 taxon/matrix cells, 2,104 membership rows
+and 1,524 detailed lineage-retention rows. The completion binds 188 sources
+and both exact original preparation/readback process journals. Original
+retained sequences, all 125 markers, all columns and complete partition/site
+mappings remain unchanged. The full 526-entry/25-outgroup baseline remains
+primary; these sensitivities do not replace the requested sampling design.
+
+| Taxon policy, applied to both aligners | Retained fungal entries | Retained outgroups | Total |
+| --- | ---: | ---: | ---: |
+| Exclude sparse boundary taxon F1243177 | 500 | 25 | 525 |
+| Require at least 10% canonical occupancy in each original alignment | 499 | 23 | 522 |
+| Exclude the two curated hybrids | 499 | 25 | 524 |
+| Also exclude 21 incomplete species labels | 478 | 25 | 503 |
+
+These are manifest entry counts, not established species identities. The
+10% policy loses one complete fine-grained manifest lineage bin, Cryoendolithus;
+the strict identity policy loses 12 such bins. The bins are full taxonomy paths
+with mixed terminal ranks, not 13 independent major-clade extinctions or
+wholesale loss of 13 phyla. Every original/retained/excluded/zero group is in
+`results/phylogeny/native-taxon-refit-inputs-20261001-v1/lineage_retention.tsv`.
+Sampling changes must accompany later tree comparisons; thresholds are
+sensitivities, not calibrated reliability or final filtering criteria.
+
+The [native plan](../metadata/species_taxon_pmsf_plan_20261001.json) fits all
+16 combinations: four taxon policies, two full alignments and two conditioning
+guides. Each LG+C20+F+G4 PMSF run refits mixture profiles on its actual subset,
+then estimates a supported tree with 1,000 SH-aLRT and 1,000 ultrafast-bootstrap
+replicates, BNNI and saved bootstrap trees. Topology pruning does not substitute
+for inference. Four existing unsupported LG+F+G4 guides match the new hybrid/
+label matrices byte-for-byte; these are frozen conditioning inputs with
+input/build/config/artifact and raw report/tree/tip checks. Their reuse does
+not claim new supported inference or retroactively validated original-process
+completion. Four missing guides are freshly inferred.
+
+The [controller launch](../metadata/species_taxon_pmsf_launch_20261001.json)
+has started a fresh profile-alignment, sparse-boundary-exclusion guide search
+on all 525 retained taxa and 49,027 columns. Every guide and native run uses
+its exact matrix/guide/build/settings hashes; native PID/create/command captures
+are retained in each run folder. Complete states are reusable with unchanged
+configuration; uncheckpointed/changed states require inspection. Only one
+mixture run can hold the shared species-PMSF lock. A live process must not be
+restarted solely because observation expires.
+
+The dimension-generalized auditor preserves every original full profile, raw
+tree/report, 1,000-bootstrap tip/edge/NEXUS and empirical-support check. Its
+[complete original-data regression](../metadata/species_taxon_pmsf_general_audit_validation_20261001.json)
+passed all 526 taxa, 49,027 profiles and 1,000 raw trees, reproducing the
+original 1,046 support rows byte-for-byte. This tests generalized code on
+existing complete data, not subset results or model adequacy. Actual 503/522/
+524/525 native outputs must pass their complete audits after refitting. Full
+independent collection reconstruction, common-tip topology/support/root-boundary
+comparison and original-journal/source closure remain required before accepting
+these sensitivities as complete.
+
+[Prelaunch resources](../metadata/species_taxon_pmsf_resources_20261001.json):
+eight native threads, 650 GiB service limit, IQ-TREE mixture limit 600G, no swap
+and one BLAS thread. Homogeneous guides need at least 64 GiB available memory
+and use IQ-TREE's 32G limit. Each mixture launch waits for at least 650 GiB
+currently available memory and 100 GiB disk reserve. Full baseline native logs
+estimated 333,579 MB profile and 434,144 MB MAFFT mixture RAM; these are native
+requirements, not measured peak RSS. Supported full baseline runs took about
+44.6/58.7 hours at 16 threads; eight-thread subset runtimes are not inferred
+from those values. Conservative planning allows 14–72 hours per missing guide
+and 24–336 hours per supported run, or 440–5,664 hours for the serial batch
+excluding potentially unbounded memory waits. This is an uncalibrated envelope,
+not an ETA. Output allowance is 100 GiB. Existing local resources only, no
+GPU or new charges. Original running scientific/retrieval jobs were preserved.
+
+Native supported refits and robustness conclusions remain incomplete. Marker
+selection/FCS sensitivity, model adequacy, justified rooting, gene discordance,
+hybrid subgenomes, accepted species identity and dating uncertainty remain
+separate required work. Structural effects must propagate relevant tree and
+sampling uncertainty. All eight scientific aims remain incomplete.

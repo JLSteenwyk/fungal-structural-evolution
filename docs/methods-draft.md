@@ -1771,3 +1771,27 @@ full source/artifact/two-original-journal closure. Software fixtures use
 synthetic prior matching/physics/journals; production results are pending.
 Biological duplication effects require subsequent dependence, predictor,
 structural-domain/PAE/orientation, missingness and phylogenetic calibration.
+
+
+## Native taxon species-tree sensitivities — October 1
+
+Four taxon policies are applied separately to the original profile and MAFFT
+concatenations: exclusion of sparse boundary taxon F1243177; canonical occupancy
+of at least 10% in each alignment; exclusion of two assembly-linked curated
+hybrids; and exclusion of hybrids plus 21 incomplete labels. Exact retained
+sequences, all 125 markers, columns and partition/site mappings remain unchanged.
+Independent full character reconstruction verifies each subset and all membership/
+lineage counts. These cohorts do not replace the full baseline or establish
+accepted unique-species counts. Their loss of outgroups and fine taxonomic
+coverage is retained for interpretation.
+
+All four policies cross both matrices with both conditioning guide alignments
+in 16 supported LG+C20+F+G4 PMSF refits. Four byte-identical existing homogeneous
+guide outputs are checked as frozen conditional inputs; missing guides are
+freshly inferred from the complete corresponding sensitivity data. Every PMSF
+profile and supported tree is refitted with 1,000 SH-aLRT/1,000 UFBoot replicates
+and BNNI, then receives full profile/report/raw-tree/empirical-bootstrap/NEXUS
+readback on its exact taxon universe. Runs are serial with a memory gate;
+complete collection reconstruction, common-tip comparisons, root/marker/model/
+identity sensitivity and original-journal closure remain required. This is
+ongoing sensitivity inference, not a pruned-tree substitute or final phylogeny.

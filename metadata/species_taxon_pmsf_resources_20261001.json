@@ -1,0 +1,38 @@
+{
+  "status": "planned_full_sixteen_supported_native_taxon_alignment_guide_refits",
+  "checked_utc": "2026-10-01T22:58:37.631153+00:00",
+  "policies": 4,
+  "alignment_matrices": 8,
+  "crossed_native_runs": 16,
+  "existing_exact_matrix_conditioning_guides": 4,
+  "new_homogeneous_guides": 4,
+  "threads": 8,
+  "concurrent_mixture_runs": 1,
+  "iqtree_mixture_memory_limit": "600G",
+  "service_memory_gib": 650,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "guide_minimum_available_memory_gib": 64,
+  "mixture_minimum_available_memory_gib": 650,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 100,
+  "planning_hours_per_new_guide": [
+    14,
+    72
+  ],
+  "planning_hours_per_native_supported_run": [
+    24,
+    336
+  ],
+  "planning_hours_whole_batch_excluding_memory_wait": [
+    440,
+    5664
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 578.7534523010254,
+  "free_disk_gib": 10533.495624542236,
+  "basis": "Full2alignment x2guide x4taxon-policy crossedrefits, sameLG+C20+F+G4 PMSF/1000SH-aLRT/1000UFBoot+BNNI/nativeboot trees as baseline. Original full matrices require333579/434144MB IQ-TREE mixture RAM by native logs and baseline supported runs took44.65/58.67h at16threads; newrun8threads and smaller tipgrids do not guarantee same runtime. Service650GiB, IQ-TREE600G and fresh650GiB available-memory gate preserve room for other CPUjobs; memory waits are unbounded. Homogeneous guide32G stage needs64GiB available; four exact-byte cached guides reused as frozen inputs with report/tip validation, fourmissing guides freshly inferred. One mixture atatime/sharedbaseline lock; checkpoints/config pins preserve completed source records. Full numerical-output/collection/journal/biological qualification remains required; these are sensitivities not a smallerreplacement design."
+}
