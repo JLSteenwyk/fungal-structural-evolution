@@ -1795,3 +1795,17 @@ readback on its exact taxon universe. Runs are serial with a memory gate;
 complete collection reconstruction, common-tip comparisons, root/marker/model/
 identity sensitivity and original-journal closure remain required. This is
 ongoing sensitivity inference, not a pruned-tree substitute or final phylogeny.
+
+
+The native taxon-sensitivity outputs will additionally undergo independent
+DendroPy tree parsing and Decimal profile reconstruction. For each of the
+16 crossed runs, the reader enumerates all raw bootstrap tip/edge grids,
+reconstructs empirical split frequencies and checks the full NEXUS universe,
+raw/report tree agreement and all support fields. It uses the actual retained
+manifest roles for each ML/consensus boundary diagnostic. Original batch
+completion and independent reader completion must be demonstrated by their
+captured PID/create/command journals and full source hashes. Software
+regression against a complete existing baseline and synthetic I/O/corruption
+cases is complete; the actual sensitivity readback is still pending. These
+checks do not independently recompute SH-aLRT tests or likelihood optima and
+do not establish model adequacy, a root or an accepted species framework.

@@ -751,3 +751,10 @@ independent collection/topology/root comparisons, original completion closure
 and model/marker/identity/dating qualification remain required. This advances
 the phylogenetic framework, not a final rooted tree or completion of any of
 the eight scientific aims. GPU prediction remains paused.
+
+
+- October 1 native sensitivity follow-up: separate full DendroPy/Decimal
+  collection reader and original-journal closure are queued after all 16
+  supported refits. Existing complete-baseline and synthetic software checks
+  passed; actual 902,216-profile/16,000-bootstrap/32-view readback remains
+  pending. No biological milestone is upgraded to complete.

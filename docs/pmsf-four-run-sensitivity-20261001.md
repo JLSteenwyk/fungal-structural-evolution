@@ -165,3 +165,52 @@ selection/FCS sensitivity, model adequacy, justified rooting, gene discordance,
 hybrid subgenomes, accepted species identity and dating uncertainty remain
 separate required work. Structural effects must propagate relevant tree and
 sampling uncertainty. All eight scientific aims remain incomplete.
+
+
+### Independent complete native collection queued October 1
+
+`readback_native_taxon_pmsf_collection.py` is a separate DendroPy/Decimal
+reader of all 16 actual native outputs. It imports neither the native runner
+nor its Bio.Phylo numerical audit. Each run reconstructs every printed site
+profile, raw ML/consensus/conditioning-guide edge, report tree, all 1,000 raw
+bootstrap trees, the complete NEXUS label/split/weight universe and every
+first-audit support field. The full design contains 902,216 site profiles,
+16,000 raw bootstrap trees and 32 ML/consensus views. The reader also emits
+32 boundary rows using each policy's actual retained fungal/outgroup roles.
+An absent boundary is retained; boundary support does not assign a root.
+
+Software validation passed the complete existing 526-taxon, 49,027-site,
+1,000-bootstrap profile baseline using the final unchanged reader code.
+That readback reproduced all 1,046 support rows and 1,247 empirical splits,
+with maximum Decimal profile-sum discrepancy 0.00000175. Four variable-tip
+software cases passed, and 20 corrupted exports were rejected after their
+checksums were regenerated. The complete 16-job collection I/O fixture
+also passed all 32 boundary rows and 16,000 synthetic bootstrap trees. Its
+likelihoods, profiles, inference statuses and prior journal contracts are
+synthetic; these fixtures are neither subset biological validation nor
+production completion evidence or a pilot. The developmental baseline check
+is preserved; the final check binds the unchanged script before and after
+execution. Evidence locator:
+`metadata/species_taxon_pmsf_independent_reader_validation_20261001.json`.
+
+The independent reader waits for the captured native batch to terminate
+successfully. A separately queued closure requires the independent receipt,
+all source/output hashes, exact per-job native command captures and completion
+checkpoints, and the two original native-batch/reader PID/create/command
+journals. Full hash dictionaries remain outside Git; eventual completion
+locator is `metadata/species_taxon_pmsf_collection_completed_20261001.json`.
+Collected-unit default success fields alone cannot close the batch.
+
+Resource estimates preceded launch: two CPU cores, 16 GiB RAM, no swap, one
+BLAS thread per serial reader/closure, 1 GiB output allowance and 100 GiB disk
+reserve; no GPU or new charges. The complete existing baseline took 96.1
+seconds in this environment; the 0.5–12-hour collection planning range is
+uncalibrated for all 16 outputs and excludes the inference wait. The native
+inference service and its available-memory gate remain unchanged.
+
+The actual sensitivity outputs, collection and journal closure remain
+pending. Comparisons across native policies and baseline trees on matched
+retained taxa, marker sensitivity, model adequacy, root qualification, gene
+discordance and defensible dates remain required. SH-aLRT labels are checked
+but not recomputed, and saved likelihoods are read back rather than optimized
+independently. All eight scientific aims remain incomplete.

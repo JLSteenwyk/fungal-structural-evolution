@@ -10516,3 +10516,18 @@ does not establish universal coverage or complete the biological project.
   journal closure and biological framework qualification remain required.
   Original CPU/retrieval jobs preserved. See [design and evidence](pmsf-four-run-sensitivity-20261001.md#native-taxon-sensitivity-refits-started-october-1).
   No accepted root, species count, dating or scientific-aim completion claimed.
+
+
+- October 1: published the full native taxon-sensitivity input/refit workflow
+  (commit ccb0d69). Queued separate DendroPy/Decimal collection readback of all
+  16 actual supported refits: 902,216 profiles, 16,000 bootstrap trees, all raw
+  report/tree/NEXUS/support fields and 32 retained-role boundary rows. Final
+  unchanged-code regression passed the complete original 526-tip baseline;
+  four variable-tip cases passed, 20 rehashed false exports were rejected,
+  and the full 16-job software I/O fixture passed. Synthetic inference and
+  journal contracts do not prove production completion. Separate closure
+  requires complete source hashes, per-job native command captures and both
+  original native/reader completion journals. Resource estimates preceded
+  launch: two CPU/16 GiB/no swap/one BLAS thread per serial follow-up, no GPU
+  or new charges. Actual refits/readback/closure and cross-policy comparisons
+  remain pending; no accepted root/framework or scientific aim completion.

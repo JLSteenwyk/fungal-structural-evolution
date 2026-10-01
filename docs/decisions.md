@@ -409,3 +409,14 @@ topology pruning alone is insufficient. Only one mixture fit at a time and
 only after currently available memory reaches its recorded prelaunch threshold.
 Preserve native/checkpoint process identities and complete successful records;
 full collection/journal/biological qualification remains separate.
+
+
+- October 1: require a second, algorithmically separate complete reader for
+  all native taxon PMSF sensitivities. DendroPy/Decimal/raw-bootstrap checks
+  reconstruct numerical outputs independently of the Bio.Phylo first audit.
+  Software validation uses the complete existing baseline and explicit
+  synthetic fixtures; it is not a smaller biological pilot. Preserve every
+  policy's retained-role boundary, including absence, without assigning a
+  root. Close production only after both original batch/reader journals and
+  all output/source bindings pass. Cross-policy/baseline comparisons and
+  biological framework qualification remain separate required stages.

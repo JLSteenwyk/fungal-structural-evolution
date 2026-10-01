@@ -1,0 +1,29 @@
+{
+  "collection_plan": "metadata/species_taxon_pmsf_collection_plan_20261001.json",
+  "output": "metadata/species_taxon_pmsf_collection_completed_20261001.json",
+  "launches": [
+    "metadata/species_taxon_pmsf_launch_20261001.json",
+    "metadata/species_taxon_pmsf_collection_launch_20261001.json"
+  ],
+  "pins": {
+    "scripts/readback_native_taxon_pmsf_collection.py": "050037f672f647ff3af26e3a3fadf237a92a98476a8fc92c048ee9681b59af8b",
+    "scripts/close_native_taxon_pmsf_collection.py": "25c52dc225cfbd3ff29aad5002726fdbf79917963932131c38ae8e2727fb11a0",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/species_taxon_pmsf_plan_20261001.json": "00903ea43a8df53375ed47796e3e5e6235efb3a1ace18f3f78806032b14582a8",
+    "metadata/species_taxon_pmsf_launch_20261001.json": "690a831f2043516ed06316a30107918eb2f27e047a370c982575bbc173ad12da",
+    "metadata/species_taxon_refit_inputs_completed_20261001.json": "f308609c789f4a9aff124e3655b043d386573524568b986e2e7ca346da20348d",
+    "metadata/species_taxon_pmsf_collection_resources_20261001.json": "8d5a73d7c38307bb697dfdd95965edf3fb196993043299ca4b33987740c739fb",
+    "metadata/species_taxon_pmsf_independent_reader_validation_20261001.json": "0ae5fb6c2a845897cac517e524e3038e2a3b76c8e9dd167db1c0eb7f665ca965",
+    "results/software-checks/native-taxon-independent-full-baseline-20261001-v2/receipt.json": "e22c9b5ce282b294b0471a3036ed3a51734b491ac18eda45b25e3faed46f0239",
+    "results/software-checks/native-taxon-independent-reader-cases-20261001-v1/receipt.json": "a40634c06b782671d5f0e0d1aedf138bef01d641879f92c83b71d04028da61f8",
+    "results/software-checks/native-taxon-collection-grid-20261001-v1/receipt.json": "e1401821b73b8e5f634642113766d44d20c797ac5704ebc89f65dc58f89ed007",
+    "metadata/species_taxon_pmsf_collection_plan_20261001.json": "7f5af077d28899cf061513d2f98684d8f11fff7278a58f1504aeb06f20b8a5e8",
+    "metadata/species_taxon_pmsf_collection_wait_plan_20261001.json": "8c2f015f2971858f6a472eb8c7e6d4de0887774186fc0c480400f23bb8056834",
+    "metadata/species_taxon_pmsf_collection_launch_20261001.json": "8341bce96b49294a6e3393c6b72e05757c61ca1b93da811e866a319f9d9e3074"
+  },
+  "scope": "All16supportednative PMSF refits from fourtaxonpolicies x twoactualalignments x two conditioningguides: everyactualsite profile/rawML-consensus-guide tree/report/1000nativebootstrap tip-edge grids/allNEXUS empiricalsplit weights/allfirst-audit support rows/32retained-roleboundary diagnostic rows. IndependentDendroPy/Decimal/FASTA reader; frozen completeinput proof and allsource/config/native-output hashes required. Complete originalnativebatch+independentreader PID/create/CMD journals atclosure. Unrooted roleboundary is notroot/dating, SH-aLRTlabels notrerun, likelihoods notindependentlyoptimized. Crossbaseline/crosspolicy topological comparisons, marker/modeladequacy/discordance/calibrations remain required. All8aims incomplete, GPUinferencepaused, no newcharges."
+}

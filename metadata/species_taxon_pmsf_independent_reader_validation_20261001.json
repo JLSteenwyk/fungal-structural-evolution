@@ -1,0 +1,23 @@
+{
+  "status": "passed_independent_native_taxon_pmsf_reader_software_validation",
+  "checked_utc": "2026-10-01T23:19:08.035732+00:00",
+  "reader_script_sha256": "050037f672f647ff3af26e3a3fadf237a92a98476a8fc92c048ee9681b59af8b",
+  "evidence": {
+    "baseline": {
+      "path": "results/software-checks/native-taxon-independent-full-baseline-20261001-v2/receipt.json",
+      "sha256": "e22c9b5ce282b294b0471a3036ed3a51734b491ac18eda45b25e3faed46f0239",
+      "status": "passed_dendropy_decimal_independent_full_original_baseline_regression"
+    },
+    "cases": {
+      "path": "results/software-checks/native-taxon-independent-reader-cases-20261001-v1/receipt.json",
+      "sha256": "a40634c06b782671d5f0e0d1aedf138bef01d641879f92c83b71d04028da61f8",
+      "status": "passed_variable_tip_native_reader_software_cases"
+    },
+    "grid": {
+      "path": "results/software-checks/native-taxon-collection-grid-20261001-v1/receipt.json",
+      "sha256": "e1401821b73b8e5f634642113766d44d20c797ac5704ebc89f65dc58f89ed007",
+      "status": "passed_complete_native_taxon_collection_grid_software_fixture"
+    }
+  },
+  "scope": "Complete actual526taxon49027site1000bootstrap baseline replay with unchanged final code, four variabletip software cases and20rehashed falseexports, full16job32view16000synthetic-bootstrap collection I/O grid. All grid inference/likelihood/provenance/journal contracts are synthetic. No actual sensitivity inference/collection/journal/root/model-adequacy completion claimed."
+}
