@@ -1,0 +1,19 @@
+{
+  "status": "planned_full_triad_same_residue_geometry",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 32,
+  "planning_hours": [
+    0.5,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "mapping_states": 432896,
+  "fit_rows": 865792,
+  "basis": "Exact full closed 27056ordered physical triads x2masks x8nativeorders x2core definitions. At most2597376 proper pair fits per producer/independent reader before within-triad identical-core caching. Full work preflight counts actual eligible unique cores and coordinate byte budget, without sampled fitting or pilot. Existing exact SVD and independent quaternion math reused; full coordinate/grid/source/coverage checks remain required. Serial2CPU32GiB/noSwap stages,1BLASthread;32GiB output allowance/100GiB reserve,$0GPU/paid resources. Uncalibrated0.5-12hplanningrange per stage, not measured ETA."
+}

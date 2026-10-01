@@ -1,0 +1,33 @@
+{
+  "status": "complete_verified_full_reference_measurement_union",
+  "full_pairs": 55701,
+  "directed_dispositions": 222804,
+  "source_dispositions": {
+    "reference_new_native": 99788,
+    "reference_old": 121556,
+    "primary_expanded_completed": 1460
+  },
+  "native_status_counts": {
+    "full:aligned": 111402,
+    "plddt70:aligned": 102522,
+    "plddt70:input_unavailable": 8880
+  },
+  "numerical_counts": {
+    "usable": 213791,
+    "input_unavailable": 8880,
+    "fewer_than_three_pairs;nonunique_rotation": 121,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 11,
+    "rmsd_discrepancy": 1
+  },
+  "full_hash_archive": "results/structural_comparisons/reference-measurement-union-20260930-v1/completion_closure.json",
+  "full_hash_archive_sha256": "c3456e44e4a2828dbfcfe9493e4a210bc027f65a28b43ee095acf2ed26689c0e",
+  "bound_source_and_artifact_hashes": 222898,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/reference-measurement-union-20260930-v1/receipt.json",
+  "producer_receipt_sha256": "e2813f4a1cb44089df112add54eb8454a4db31b8bd88000fae96e711820f45b4",
+  "independent_readback": "results/structural_comparisons/reference-measurement-union-20260930-v1/readback.json",
+  "independent_readback_sha256": "cd0e03066bf348ea35e0e0c93dabf1a20dd7da426f5e4e9e28c4be9ce82bcb8c",
+  "completion_plan_sha256": "cb246e416a5d0d18b7a2d3420e90be2f7370fa21f3c8851ecf36bd6374e517b3",
+  "scientific_eligibility": false,
+  "scope": "Full55701reference pairs/222804mask-order states from independently qualified identical-input old sources and fully measurement/numerical/quaternion/journal-closed new native output. Full independent field reconstruction, checkpoint byte bindings and two exact union producer/reader journals required. All original flags/missing/error metrics/native source directions retained, never selected by usability. No scientific coverage/commontriad/domain/PAE/prediction/biological-orthology/phylogenetic/calibration acceptance; all8aims remain incomplete. Large complete hash archive stays outsideGit with versioned checksum/location."
+}

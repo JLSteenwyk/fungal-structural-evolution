@@ -1,0 +1,37 @@
+{
+  "status": "planned_full_triad_original_residue_mapping",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "output_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.1,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "unique_ordered_model_triads": 31235,
+  "correspondence_work_triads": 27056,
+  "mask_order_states": 432896,
+  "all_input_dispositions": 602972,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "basis": "Exact closed full source-ready triad grid, both masks and all8current-order combinations. Full input-source preflight precedes mapping. Every used raw checkpoint/actual source-order/current endpoint/masked sequence/written PDB hash checked, original protein positions reconstructed. Reference-common and AB-cycle-consistent triples retained without order selection. Both-order six-screen primary/reference pair flags preserved, with errors/numerical/raw excluded maps explicit. Shared source/proof I/O plus independent iterator/relation reader; full hash archive outside Git, exact2original journals.2CPU32GiB/noSwap each serial stage;32GiB output allowance/100GiB disk reserve beforelaunch; upper-bound output triples to be measured on full actual retained-length grid, not a sampling pilot. No native optimization/geometric fit/GPU/paid resources. Mapping runtime estimate uncalibrated after closed reference coverage prerequisite.",
+  "actual_full_input_preflight": {
+    "needed_models": 78879,
+    "needed_input_counts": {
+      "full:ready": 78879,
+      "plddt70:ready": 74823,
+      "plddt70:too_few_retained_residues": 4056
+    },
+    "maximum_original_length": 2271,
+    "median_original_length": 334,
+    "upper_bound_triple_occurrences_both_definitions": 208929520,
+    "upper_bound_uncompressed_triple_bytes": 3551801840,
+    "metadata_and_compression_overhead_excluded_from_bound": true
+  }
+}

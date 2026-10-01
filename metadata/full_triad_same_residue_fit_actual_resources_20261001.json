@@ -1,0 +1,41 @@
+{
+  "status": "planned_full_triad_same_residue_geometry",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 32,
+  "planning_hours": [
+    0.5,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "mapping_states": 432896,
+  "fit_rows": 865792,
+  "basis": "Exact full closed 27056ordered physical triads x2masks x8nativeorders x2core definitions. At most2597376 proper pair fits per producer/independent reader before within-triad identical-core caching. Full work preflight counts actual eligible unique cores and coordinate byte budget, without sampled fitting or pilot. Existing exact SVD and independent quaternion math reused; full coordinate/grid/source/coverage checks remain required. Serial2CPU32GiB/noSwap stages,1BLASthread;32GiB output allowance/100GiB reserve,$0GPU/paid resources. Uncalibrated0.5-12hplanningrange per stage, not measured ETA.",
+  "actual_full_work_preflight": {
+    "mapping_states": 432896,
+    "fit_rows": 865792,
+    "counts": {
+      "full:reference_common:pending_common_coordinate_geometry": 209152,
+      "full:cycle_consistent:pending_common_coordinate_geometry": 165272,
+      "plddt70:reference_common:pending_common_coordinate_geometry": 182018,
+      "plddt70:cycle_consistent:pending_common_coordinate_geometry": 157070,
+      "plddt70:cycle_consistent:fewer_than_three_common_residues": 36104,
+      "full:cycle_consistent:fewer_than_three_common_residues": 51176,
+      "plddt70:reference_common:fewer_than_three_common_residues": 11156,
+      "plddt70:reference_common:source_excluded": 23274,
+      "plddt70:cycle_consistent:source_excluded": 23274,
+      "full:reference_common:fewer_than_three_common_residues": 7296
+    },
+    "triple_occurrences": 154285210,
+    "unique_eligible_triple_sets_within_physical_triad_and_mask": 77805,
+    "unique_eligible_residue_occurrences": 16923795,
+    "proper_pair_fits_per_implementation": 233415,
+    "needed_pdb_inputs": 142847,
+    "needed_pdb_bytes": 3841629229
+  }
+}

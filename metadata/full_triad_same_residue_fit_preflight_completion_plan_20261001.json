@@ -1,0 +1,65 @@
+{
+  "output": "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/completion_archive.json",
+  "completed_status": "complete_verified_full_triad_geometric_fit_work_preflight",
+  "evidence": {
+    "preflight": {
+      "path": "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/receipt.json",
+      "expected": {
+        "status": "passed_full_triad_geometric_fit_work_preflight",
+        "mapping_states": 432896,
+        "fit_rows": 865792,
+        "counts": {
+          "full:reference_common:pending_common_coordinate_geometry": 209152,
+          "full:cycle_consistent:pending_common_coordinate_geometry": 165272,
+          "plddt70:reference_common:pending_common_coordinate_geometry": 182018,
+          "plddt70:cycle_consistent:pending_common_coordinate_geometry": 157070,
+          "plddt70:cycle_consistent:fewer_than_three_common_residues": 36104,
+          "full:cycle_consistent:fewer_than_three_common_residues": 51176,
+          "plddt70:reference_common:fewer_than_three_common_residues": 11156,
+          "plddt70:reference_common:source_excluded": 23274,
+          "plddt70:cycle_consistent:source_excluded": 23274,
+          "full:reference_common:fewer_than_three_common_residues": 7296
+        },
+        "triple_occurrences": 154285210,
+        "unique_eligible_triple_sets_within_physical_triad_and_mask": 77805,
+        "unique_eligible_residue_occurrences": 16923795,
+        "proper_pair_fits_per_implementation": 233415,
+        "needed_pdb_inputs": 142847,
+        "needed_pdb_bytes": 3841629229
+      }
+    }
+  },
+  "links": [],
+  "launches": [
+    "metadata/full_triad_same_residue_fit_preflight_launch_20261001.json"
+  ],
+  "pins": {
+    "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/receipt.json": "9ae1b3e75b1839a3d8075027c61947de4380bf8ee404edb2703485450890eda6",
+    "metadata/full_triad_same_residue_fit_preflight_plan_20261001.json": "9e3b3804af3e216e9dd7fcc9e5bb8bbd9f6fc6815fcb720560c3a1138207f996",
+    "metadata/full_triad_same_residue_fit_preflight_launch_20261001.json": "5c8ad347afee70338095cfc6525bb58ea72dbb16050f491c61e09ddc9702fbd5",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794"
+  },
+  "summary": {
+    "mapping_states": 432896,
+    "fit_rows": 865792,
+    "counts": {
+      "full:reference_common:pending_common_coordinate_geometry": 209152,
+      "full:cycle_consistent:pending_common_coordinate_geometry": 165272,
+      "plddt70:reference_common:pending_common_coordinate_geometry": 182018,
+      "plddt70:cycle_consistent:pending_common_coordinate_geometry": 157070,
+      "plddt70:cycle_consistent:fewer_than_three_common_residues": 36104,
+      "full:cycle_consistent:fewer_than_three_common_residues": 51176,
+      "plddt70:reference_common:fewer_than_three_common_residues": 11156,
+      "plddt70:reference_common:source_excluded": 23274,
+      "plddt70:cycle_consistent:source_excluded": 23274,
+      "full:reference_common:fewer_than_three_common_residues": 7296
+    },
+    "triple_occurrences": 154285210,
+    "unique_eligible_triple_sets_within_physical_triad_and_mask": 77805,
+    "unique_eligible_residue_occurrences": 16923795,
+    "proper_pair_fits_per_implementation": 233415,
+    "needed_pdb_inputs": 142847,
+    "needed_pdb_bytes": 3841629229
+  },
+  "scope": "Exhaustive full closed mapping/input grid, both definitions/masks/all8orders. Counts actual eligible coordinate work and within-triad/mask identical-triple reuse; no sampled geometry, preselection or pilot. RAM/disk/runtime estimates in immutable resource plan remain estimates, not observed runtime or scientific qualification."
+}

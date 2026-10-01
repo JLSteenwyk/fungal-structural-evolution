@@ -10285,3 +10285,39 @@ does not establish universal coverage or complete the biological project.
   coverage/common-core/cycle-consistent/sequence-locked/domain/PAE/prediction,
   biological orthology/phylogeny and inferential calibration remain required.
   GPU predictions remain paused; all eight scientific aims remain incomplete.
+
+- October 1: restored interactive command access and verified that the original
+  reference pipeline continued without restarting. All 99,788 new-native
+  dispositions, numerical/independent geometry checks, the full 222,804-state
+  measurement union, 668,412 reference coverage decisions and the complete
+  contextual coverage projection passed their independent readers and exact
+  original journal closure. Full common-residue mapping completed 432,896
+  two-mask/eight-order states for all 27,056 source-ready ordered triples.
+  Independent iterator/relation reconstruction passed all fields, grids and
+  aggregates; closure binds 321,723 hashes and both original journals.
+  Reference-common and cycle-consistent occurrences total 81,029,452 and
+  73,255,758, with all numerical/short/failed source states retained. Full input
+  preflight verified all 602,972 input dispositions and 78,879 required models;
+  4,056 short pLDDT70 inputs remain excluded. No same-residue geometric fit or
+  calibrated asymmetry is claimed. Original whole-protein likelihood,
+  polynomial likelihood and BALiPhy handles remain live; GPU inference stays
+  paused. All eight scientific aims remain incomplete. Details and immutable
+  source locators: [full correspondence workflow](full-triad-common-residues-20260930.md).
+
+- October 1: full-data same-residue geometry preflight completed all 432,896
+  mappings and 865,792 prospective fit dispositions. It found 713,512 eligible
+  input dispositions, 105,732 short cores and 46,548 source exclusions; 77,805
+  distinct eligible cores imply 233,415 proper pair fits per implementation.
+  All 321,735 bindings and the original preflight journal were verified. Full
+  SVD producer launched, independent quaternion reader and exact two-journal
+  closure queued; each serial stage has two CPUs/32 GiB/no swap/one BLAS thread.
+  Fixtures passed 48 states/96 rows and rejected 13 rehashed false exports.
+  Shared-core and inherited both-order three-edge screens remain separate.
+  [Full geometry workflow](full-triad-same-residue-geometry-20261001.md);
+  production geometry completion and calibrated effects are not claimed.
+  The fourth crossed PMSF source and full reader also finished; closure binds
+  37 hashes and both original journals. Its 526 taxa/63,750 sites/1,000 bootstrap
+  grids were audited, with 31 gap-heavy sequences and ML/consensus RF=10 retained.
+  All-four topology/consensus/guide/alignment, rooting and model/taxon/marker
+  sensitivity remain required. No scientific aim is complete; GPU inference
+  remains paused.

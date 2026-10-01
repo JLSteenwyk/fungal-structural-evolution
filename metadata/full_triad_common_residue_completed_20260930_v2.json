@@ -1,0 +1,71 @@
+{
+  "status": "complete_verified_full_triad_original_residue_mapping",
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "unique_ordered_model_triads": 31235,
+  "correspondence_work_triads": 27056,
+  "mask_order_states": 432896,
+  "needed_models": 78879,
+  "all_input_dispositions": 602972,
+  "input_source_counts": {
+    "primary": {
+      "input_dispositions": 553364,
+      "counts": {
+        "full:ready": 276682,
+        "plddt70:ready": 249733,
+        "plddt70:too_few_retained_residues": 26949
+      }
+    },
+    "additional": {
+      "input_dispositions": 49608,
+      "counts": {
+        "full:ready": 24804,
+        "plddt70:ready": 23781,
+        "plddt70:too_few_retained_residues": 1023
+      }
+    }
+  },
+  "common_reference_residue_occurrences": 81029452,
+  "cycle_consistent_residue_occurrences": 73255758,
+  "counts": {
+    "full:recorded_without_edge_exclusions": 167288,
+    "plddt70:recorded_without_edge_exclusions": 158014,
+    "plddt70:no_cycle_consistent_residues": 25614,
+    "full:no_cycle_consistent_residues": 43136,
+    "plddt70:no_common_reference_residues": 9546,
+    "plddt70:input_unavailable;no_common_reference_residues": 22604,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation": 8,
+    "full:no_common_reference_residues": 6024,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;no_common_reference_residues": 208,
+    "plddt70:fewer_than_three_pairs;input_unavailable;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 20,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_common_reference_residues": 148,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_common_reference_residues": 28,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;no_cycle_consistent_residues": 228,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation;rmsd_discrepancy;no_cycle_consistent_residues": 30
+  },
+  "three_pair_pass_state_counts": {
+    "full:n30_c50": 105776,
+    "full:n30_c70": 70600,
+    "full:n30_c90": 29000,
+    "full:n50_c50": 105016,
+    "full:n50_c70": 70504,
+    "full:n50_c90": 29000,
+    "plddt70:n30_c50": 79128,
+    "plddt70:n30_c70": 46680,
+    "plddt70:n30_c90": 12368,
+    "plddt70:n50_c50": 78720,
+    "plddt70:n50_c70": 46640,
+    "plddt70:n50_c90": 12368
+  },
+  "producer_receipt": "results/structural_comparisons/full-triad-common-residues-20260930-v2/receipt.json",
+  "producer_receipt_sha256": "091d03e8f9f93cd6eaa88fec9185971e24e19c1dfd5bbff2a2ea14021ee3c037",
+  "independent_readback": "results/structural_comparisons/full-triad-common-residues-20260930-v2/readback.json",
+  "independent_readback_sha256": "bae7814fb615b51ce88b995876a164785894ff04b6477b96673ccffa2ae86e81",
+  "full_hash_archive": "results/structural_comparisons/full-triad-common-residues-20260930-v2/completion_archive.json",
+  "full_hash_archive_sha256": "81d69deeeae49b69c37447112a7bbdc3e5098eec4ff4b2dc0f3a1252f0861960",
+  "bound_source_hashes": 321723,
+  "exact_process_journals_checked": 2,
+  "scientific_eligibility": false,
+  "scope": "Full closed original283409contexts/214461ties/428922sides remain immutable linked, including unscheduled missing/excluded/identical/outside-design source states. All27056source-ready ordered physical triads mapped under2masks\u00d78current native AB/AR/BR orders=432896states; no coverage-outcome preselection. Require prior source/journal-closed full primary and reference coverage/union proofs. Every used actual raw checkpoint/source/nativeorder/hash/written-mask sequence/PDB hash reconstructed on original full protein residue positions. Reference-common and AB-cycle-consistent triples separate; raw numerical exclusions and all missing/error/timeout states retained. All6both-order/full-original-length pair-screen flags copied for3edges, without accepting shared core coverage. Common-core fit input statuses exclude failed sources/short cores; positive cores remain pending geometric assessment. Independent iterator/relation reconstruction, allfullgrids/aggregates/sourcehashes and2exact original journals required. Large artifacts/fullhashes outsideGit; no common-coordinate geometricfit/biological orthology/acceptedphylogeny/prediction calibration/asymmetry inference. Full all8aims remain incomplete; GPU prediction remains paused. Productionv2retains reference-union inherited native-status exclusions exactly once and primary empty numerical-status fields without dropping either source classification; inputpreflight-pinned prototypes remain immutable. Full softwarefixture32states with independent iterator/relation reader rejected12rehashedfalse exports, including promoted2-residue commoncore."
+}

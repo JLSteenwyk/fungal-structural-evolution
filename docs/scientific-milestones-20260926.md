@@ -624,3 +624,21 @@ labels distinct counting units. This completes source design only. Measured
 three-edge coverage/common-core/cycle-consistency, sequence-locked/domain/PAE/
 prediction, biological orthology/phylogeny and calibration remain required;
 none of the eight scientific aims is complete. GPU inference remains paused.
+
+
+October 1: full reference native/union/coverage/contextual stages and the entire
+432,896-state common-residue mapping grid are independently verified and closed
+with original journals. Mapping retains both definitions, both masks, all eight
+native orders and the full immutable source design. This completes technical
+correspondence/provenance gates only. Same-residue geometry, context linkage,
+sequence-locked/domain/PAE/prediction controls, supported phylogeny and calibrated
+comparative inference remain open; all eight scientific aims remain incomplete.
+
+
+October 1: full same-residue geometry producer is running with independent
+quaternion reconstruction and exact-journal closure queued. Exhaustive measured
+work preflight and software exclusions passed; the production numerical gate
+is still open. The fourth crossed PMSF run passed full profiles/trees/1,000
+bootstrap audit and original two-journal closure. All-four comparisons, rooting,
+model adequacy and taxon/marker/hybrid sensitivities remain open; no final
+species framework or completed scientific aim is claimed.

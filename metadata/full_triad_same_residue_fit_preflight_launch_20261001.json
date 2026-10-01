@@ -1,0 +1,48 @@
+{
+  "unit": "fungal-full-triad-fit-work-preflight-20261001-v1.service",
+  "pid": 3576918,
+  "created": 1790869376.92,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/preflight_full_triad_fits.py",
+    "--plan",
+    "metadata/full_triad_same_residue_fit_preflight_plan_20261001.json",
+    "--output",
+    "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/receipt.json"
+  ],
+  "plan": "metadata/full_triad_same_residue_fit_preflight_plan_20261001.json",
+  "plan_sha256": "9e3b3804af3e216e9dd7fcc9e5bb8bbd9f6fc6815fcb720560c3a1138207f996",
+  "checked_utc": "2026-10-01T15:42:57.654405+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-triad-fit-work-preflight-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/preflight_full_triad_fits.py",
+    "--plan",
+    "metadata/full_triad_same_residue_fit_preflight_plan_20261001.json",
+    "--output",
+    "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/receipt.json"
+  ]
+}

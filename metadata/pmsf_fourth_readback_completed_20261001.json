@@ -1,0 +1,102 @@
+{
+  "status": "complete_verified_fourth_crossed_pmsf_profile_tree_and_bootstrap_readback",
+  "checked_utc": "2026-10-01T15:48:52.617352+00:00",
+  "summary": {
+    "taxa": 526,
+    "sites": 63750,
+    "bootstrap_trees": 1000,
+    "empirical_splits": 1243,
+    "internal_support_rows": 1046,
+    "ml_consensus_rf": 10,
+    "reported_ml_log_likelihood": -22124588.5415,
+    "reported_consensus_log_likelihood": -22124593.680075,
+    "consensus_likelihood_improvement": -5.138575002551079,
+    "warnings": [
+      "WARNING: 31 sequences contain more than 50% gaps/ambiguity",
+      "WARNING: 31 sequences contain more than 50% gaps/ambiguity"
+    ]
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/pmsf_memory_recovery_launch_20260928.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "2d59569aea64372f8e1de4347e8942f97271f33bd3bc32d6dfa4b461b00e8544",
+      "captured_process_messages": 877,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790852319128171",
+          "CPU_USAGE_NSEC": "3121401624465000",
+          "MEMORY_PEAK": "30067421184",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/pmsf_fourth_readback_launch_20260928_v2.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "62dbcb8d71d19260a90e75a101396405c710b4b914620023719d393f5f8d3a8a",
+      "captured_process_messages": 7938,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790852352774539",
+          "CPU_USAGE_NSEC": "32294660000",
+          "MEMORY_PEAK": "41967616",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "metadata/pmsf_fourth_completion_plan_20261001.json": "b99fc6e27b19d3a486c8d875dc7428f5b5ad3323faa8cbb0519f94d8b51620ee",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_species_pmsf.py": "36d0b56e14633951ce5583d9478704f7f13ae24b109f95714c05d6d3032122de",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/receipt.json": "47c89ee79152c767603fd890a38abfff28036acfb15e55f7f91865cd9b525231",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-matrix-50-v1/matrix.faa": "e9fed4386a051dfbd6759013418c897045df081d2889226ae2e2ffa99c5fde1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-guide-audit-v1/receipt.json": "2fa8fff788911b835fed6699457d0b3865a39c0facbdcf4e546469cadcdd7d24",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/mafft-guide-audit-v1/guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/species-mixture-resources-v2/receipt.json": "2c20cd54819d288d5322ad64d9081657a686c71bf8d90eed8d1c1db06b7d0bf4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/phylogeny/pmsf-mafft-mafft-v1/input_guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "scripts/audit_species_pmsf.py": "909d8d5b82f6e97c98e46604e2e5dbcb22b0ee21033be02a49a884d49d867cf5",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/advance_fourth_pmsf_readback.py": "7cb0da8f8209b873c60cd9b3db637a266b990020e10f54f65eaa5ffbac22c439",
+    "metadata/recovery_20260925_crossed_pmsf_config.json": "3ded8619d1ec9489024f520851ee2190c997fa66eefea5a7aefd53ddbe2effe4",
+    "results/phylogeny/pmsf-mafft-mafft-v1/config.json": "b5b0c9bf64dea3f50415368be2c35c1dda07e92c9192519a2876d86705f4d4b3",
+    "metadata/pmsf_checkpoint_recovery_plan_20260928_v2.json": "2d4ad65a1b7e91be150b4839df51acdf53082cba1ab1e8039bb52ee37fbaf2f0",
+    "metadata/pmsf_memory_recovery_launch_20260928.json": "3b9e432cccb6ca13cd6eff3c13d1a34182ec67a2e9646231078422a8118d4f32",
+    "scripts/wait_for_pmsf_recovery_memory.py": "9fc1edf57bd9ad03dbb7561efd1d2cf339a1af839d4fa6ebb5ff069798ee7cc6",
+    "metadata/pmsf_fourth_readback_plan_20260928_v2.json": "522ad9eca19b40f1f257f9353f8d0e32f6d4afaad6a6cca3e089d4b570192d58",
+    "results/phylogeny/pmsf-mafft-mafft-v1/receipt.json": "5be8ab35e729f66121ba468a442389f0d3d8b6b8b8fe4c4fb29134fb6040ff56",
+    "results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1/receipt.json": "24f5c42f07799bbee954c286f674bf174d532b8ad17d9fdecdd5e06ec8d33bb3",
+    "results/phylogeny/pmsf-fourth-readback-handoff-20260928-v2/receipt.json": "b04c03601108b9ff454d401e577669ce4b6e2bdff0cc6b7473a88b0e2ca3917f",
+    "metadata/pmsf_fourth_readback_launch_20260928_v2.json": "8cd6663e6f2e2cebb821801fed4e4e3997cabf1373042bf6c08ae8a2b75562e7",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.splits.nex": "294e05c80cce236cf11b528c2940bc7a6059f0eef2d3f6cacc247b3c68e8f0e4",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.iqtree": "cd7470c484ef41803fe5d2a90ead8fd9c4d5a2daefe8cfcf14a0aaab146dfc38",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.treefile": "13cab96bed48a8c0764f4068437c5a99271d3c57f01ea6e6f47cba30d7f197b7",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.ckp.gz": "7ce2c46649d40cf1e9ec03ea345b492a80e5a416c031e640072a27c85b97d5b4",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.sitefreq": "1a08c4dc973667e877f188fabafa327013dd96325807998272e51065c43e489d",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.ufboot": "14bfc9305800b047ed8230a8765375ab5fdbfcf93873101ec40a9b2e33275b1e",
+    "results/phylogeny/pmsf-mafft-mafft-v1/stdout.log": "75ac4de50d3df92621bfb185b651d0cd92265f62d31d188247ad7a1ed4892f9c",
+    "results/phylogeny/pmsf-mafft-mafft-v1/input_guide.treefile": "6237ed38d86e67cad350ddf98de00ca0fb11efae35169de71167e289f6bf5f8a",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.mldist": "e541b39cba45c7a2974e0931bb0d43d9b972454c8221fecae4eeca702a0c7816",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.contree": "636551ca7b29a1d2a3e4af59374e1a70f45a48459503743920ebe302a4ff3d31",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.log": "2942072eaa32635f1d8541bca3d52571444c74cb14e610764c63964a5ea10987",
+    "results/phylogeny/pmsf-mafft-mafft-v1/pmsf.bionj": "ded8f4481405c7f05cc2c21d7a7dd18fa9a1ba36d4a252ad061c87dabfef43a8",
+    "results/phylogeny/pmsf-mafft-mafft-readback-20260927-v1/branch_support.tsv": "5c844722b4ab3e73ef3c9a77c301e14cfa2e14ed167e697ca47b18e433ea6eeb"
+  },
+  "scope": "Fourth crossed PMSF run full526tips/63750sites/1000bootstrap tip grids/sitefrequency profiles/report and ML/consensus split supports audited; exactoriginal recovery controller and reader journals captured. UFBsupport independently recounted, SH-aLRTlabels checked not independentlyrecomputed, LLreport read not refitted. 31gap/ambiguity-heavy sequences and ML-consensusRF10 remain diagnostic. Allfourtopology/guide/alignment and taxon/marker/root/modeladequacy/hybrid sensitivities remain required. No accepted species framework or dated branches inferred; all8aims incomplete."
+}

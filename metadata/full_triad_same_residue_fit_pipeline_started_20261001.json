@@ -1,0 +1,153 @@
+{
+  "status": "launched_full_triad_same_residue_fits_independent_reader_and_closure",
+  "checked_utc": "2026-10-01T15:53:03.322379+00:00",
+  "plan": "metadata/full_triad_same_residue_fit_plan_20261001.json",
+  "preflight_completion": "metadata/full_triad_same_residue_fit_preflight_verified_20261001.json",
+  "preflight_completion_sha256": "211dd2618ad3b2733c0a5c46dfb74ec91e8c72bb7022b8b494e15f733e066d59",
+  "software_fixture": "metadata/full_triad_same_residue_fit_fixture_validation_20261001_v2.json",
+  "stages": [
+    {
+      "unit": "fungal-full-triad-same-residue-fits-20261001-v1.service",
+      "pid": 3583855,
+      "created": 1790869982.52,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/fit_full_triad_common_residues.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_plan_20261001.json"
+      ],
+      "plan": "metadata/full_triad_same_residue_fit_plan_20261001.json",
+      "plan_sha256": "aa87da4f6282f4743756030bcdc90bb809a9cb3e15722f3316ea900360a438e0",
+      "checked_utc": "2026-10-01T15:53:03.257378+00:00",
+      "resources": {
+        "cpu": 2,
+        "memory_gib": 32,
+        "swap_gib": 0,
+        "gpu": false,
+        "paid_resources": false
+      },
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-triad-same-residue-fits-20261001-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/fit_full_triad_common_residues.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_plan_20261001.json"
+      ]
+    },
+    {
+      "unit": "fungal-full-triad-same-residue-readback-20261001-v1.service",
+      "pid": 3583859,
+      "created": 1790869982.57,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_readback_wait_plan_20261001.json"
+      ],
+      "plan": "metadata/full_triad_same_residue_fit_readback_wait_plan_20261001.json",
+      "plan_sha256": "3a4a123a9615f77c4cf399feffad590a800c76961f4b92bedbb89ed90acbb35c",
+      "checked_utc": "2026-10-01T15:53:03.289057+00:00",
+      "resources": {
+        "cpu": 2,
+        "memory_gib": 32,
+        "swap_gib": 0,
+        "gpu": false,
+        "paid_resources": false
+      },
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-triad-same-residue-readback-20261001-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "unit": "fungal-full-triad-same-residue-completion-20261001-v1.service",
+      "pid": 3583863,
+      "created": 1790869982.6,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_completion_wait_plan_20261001.json"
+      ],
+      "plan": "metadata/full_triad_same_residue_fit_completion_wait_plan_20261001.json",
+      "plan_sha256": "218e7c49b74d06630d85c2ce0653b6b8a359db648fe667df7de9dd05b7d3b053",
+      "checked_utc": "2026-10-01T15:53:03.322117+00:00",
+      "resources": {
+        "cpu": 2,
+        "memory_gib": 32,
+        "swap_gib": 0,
+        "gpu": false,
+        "paid_resources": false
+      },
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-triad-same-residue-completion-20261001-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_completion_wait_plan_20261001.json"
+      ]
+    }
+  ],
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "correspondence_work_triads": 27056,
+    "mask_order_states": 432896
+  },
+  "fit_rows": 865792,
+  "final_completion": "metadata/full_triad_same_residue_fit_completed_20261001.json",
+  "scientific_eligibility": false,
+  "scope": "Full closed 283409contexts/214461ties/428922logical sides remain source-linked including unscheduled/failed/missing states. All27056source-ready ordered triads x2masks x8nativeorders x2reference-common/cycle-consistent cores=865792fit dispositions. Exact identical original residue triples for AB/AR/BR proper-rigid distances, signed AR-BR contrast, identities/confidence; current masks/full original-length denominators. Raw failures/numerical flags/short/degenerate cores remain explicit with blank uncomputed metrics. Separate core and inherited both-order3edge6screen flags and combined passes, no favorable-order choice. Independent quaternion/eigenproblem geometry, full fields/grid/hash checks and2exact original journals required before completion. Large artifacts/fullhash archives outsideGit. No calibrated biological asymmetry/directional evolutionaryrate/acceptedphylogeny/prediction calibration; full all8aims incomplete. GPU inference paused."
+}

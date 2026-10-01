@@ -1,0 +1,26 @@
+{
+  "status": "passed_full_synthetic_original_residue_mapping_checks",
+  "triads": 2,
+  "mask_order_states": 32,
+  "numerical_raw_map_pairs": 3,
+  "native_statuses": [
+    "aligned",
+    "input_unavailable",
+    "native_error",
+    "parse_error",
+    "timeout"
+  ],
+  "rejected_rehashed_exports": [
+    "changed_original_position",
+    "promoted_cycle",
+    "cleared_numerical_flag",
+    "cleared_failed_order",
+    "changed_source_order",
+    "changed_directed_endpoint",
+    "favorable_coverage",
+    "changed_original_length",
+    "removed_state",
+    "duplicated_state"
+  ],
+  "scope": "Synthetic raw checkpoint/masked input/projection fixtures with injected source-I/O loaders; no production source proofs or sampling pilot. Indexed producer and independent iterator reader both exercised on full grid, alignment gaps, unequal model versions, reversed original source order/current endpoints, nonconsecutive masked protein positions, raw numerically excluded maps and all four native failure statuses. Full source/proof loaders require separate actual input preflight and closed native production validation."
+}

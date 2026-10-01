@@ -1,0 +1,120 @@
+{
+  "output": "metadata/full_triad_common_input_preflight_verified_20260930.json",
+  "completed_status": "complete_verified_full_triad_original_and_masked_input_preflight",
+  "evidence": {
+    "preflight": {
+      "path": "metadata/full_triad_common_input_preflight_completed_20260930.json",
+      "expected": {
+        "status": "passed_full_triad_original_and_masked_input_preflight",
+        "target_contexts": 283409,
+        "reference_tie_records": 214461,
+        "duplicate_reference_links": 428922,
+        "unique_ordered_model_triads": 31235,
+        "correspondence_work_triads": 27056,
+        "potential_correspondence_states": 432896,
+        "needed_models": 78879,
+        "all_input_dispositions": 602972,
+        "input_source_counts": {
+          "primary": {
+            "input_dispositions": 553364,
+            "counts": {
+              "full:ready": 276682,
+              "plddt70:ready": 249733,
+              "plddt70:too_few_retained_residues": 26949
+            }
+          },
+          "additional": {
+            "input_dispositions": 49608,
+            "counts": {
+              "full:ready": 24804,
+              "plddt70:ready": 23781,
+              "plddt70:too_few_retained_residues": 1023
+            }
+          }
+        },
+        "needed_input_counts": {
+          "full:ready": 78879,
+          "plddt70:ready": 74823,
+          "plddt70:too_few_retained_residues": 4056
+        },
+        "maximum_original_length": 2271,
+        "minimum_original_length": 29,
+        "median_original_length": 334,
+        "upper_bound_triple_occurrences_both_definitions": 208929520,
+        "upper_bound_uncompressed_triple_bytes": 3551801840,
+        "scientific_eligibility": false
+      }
+    }
+  },
+  "links": [],
+  "launches": [
+    "metadata/full_triad_common_input_preflight_launch_20260930.json"
+  ],
+  "pins": {
+    "scripts/full_triad_common_sources.py": "c3fb45e6fe703c1dbf2189bc6428c74d53f984b76058ac5276ddb7e8c8a6b7db",
+    "scripts/map_full_triad_common_residues.py": "2283a08c9d7f51e171acdabfc74033103d623d8d34454d294d2304a120c70be1",
+    "scripts/readback_full_triad_common_residues.py": "2d5b46b2c7de0a68e088e4292dc842a442f28296651e8d479423d52da98f2983",
+    "scripts/preflight_full_triad_common_inputs.py": "3b962669372f7c6354e357f79dc19e8f47dca1746fce790e65d02a70567a959e",
+    "scripts/close_full_triad_common_residues.py": "6ca2ac2e38950f3a4cba9f439806021e9bf29228a40f3dd3ab233764018d52c4",
+    "scripts/check_full_triad_common_residues.py": "8648ee74a9a52f609c73cc432860d9cedf01dd52b80c66bc3d221fa4bc85a43e",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/reference_triad_design_sources.py": "b56abee475f3bcaa3abf0712ab64d26cbf17b5ed5dcdc2a24751b0a922206864",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_triad_common_residue_fixture_validation_20260930.json": "007c64b3a9ff3c5f38d43538d751740578b2faf75440054ae5ded9d6c63993de",
+    "metadata/full_triad_common_residue_resources_20260930.json": "b37323ebbd28f8ec443586bb4b5058e4dbc10989dc73d366f53dbc0963bef861",
+    "metadata/full_reference_triad_work_design_plan_20260930.json": "4c146c16f91fac8397f4fdbc42fcadcaf19da3cab19d293cd661632457873292",
+    "metadata/full_reference_triad_work_design_completed_readback_20260930.json": "c4b8cf7b2b327aea0e5d403b99d30163306bbbcbd2b5310ad40b1ae1059f8324",
+    "metadata/full_reference_triad_work_design_completed_20260930.json": "d70474566e3d618a858652a4f99cc8bab9d34c040f8c92d3663a0fb972a7dea4",
+    "metadata/expanded_duplication_alignment_plan_20260929.json": "23885f97d240157558d5c43b3b2c6081537f8fba83e4ed1bf9cd9a3c82cd3fa0",
+    "metadata/expanded_reference_alignment_plan_20260930.json": "0ff0685ac641586f25d8370a4f29939772947b370aa360cf676a1e0a7eec1c0f",
+    "metadata/expanded_duplication_coverage_screens_plan_20260930_v2.json": "792775638d00609d285380126615b26c5979e2a0d2c17edd2b72deb447ecf048",
+    "metadata/expanded_duplication_coverage_screens_completed_readback_20260930_v2.json": "89c3b80fa4921d8fbc722ecca07f1d0f040dcca0374769156496ba7110cf3a56",
+    "metadata/expanded_duplication_coverage_screens_completed_20260930_v2.json": "3061899adb46ea009f8c0ac79ff77a6c64bc719d7714d17cc6d939994881891b",
+    "metadata/full_reference_order_coverage_plan_20260930.json": "4b88547df0b44ed5f27a5cd010d95c35e2e53db2fe99bfd0977f63c2ef6660a7",
+    "metadata/full_triad_common_input_preflight_plan_20260930.json": "71314aea360dff0de3dd7d9a8042ae183a52fdabdd0db5be96e6db6dc00c7cd6",
+    "metadata/full_triad_common_input_preflight_completed_20260930.json": "d2a3ee0abbc0757d05194c3a096949c6e8b26faca6d35a86ff3ae3a571152076",
+    "metadata/full_triad_common_input_preflight_launch_20260930.json": "bd2a240f6a0f4e4692424e0190c100bad64fbac147c513de5112cf30f3261e22"
+  },
+  "summary": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "unique_ordered_model_triads": 31235,
+    "correspondence_work_triads": 27056,
+    "potential_correspondence_states": 432896,
+    "needed_models": 78879,
+    "all_input_dispositions": 602972,
+    "input_source_counts": {
+      "primary": {
+        "input_dispositions": 553364,
+        "counts": {
+          "full:ready": 276682,
+          "plddt70:ready": 249733,
+          "plddt70:too_few_retained_residues": 26949
+        }
+      },
+      "additional": {
+        "input_dispositions": 49608,
+        "counts": {
+          "full:ready": 24804,
+          "plddt70:ready": 23781,
+          "plddt70:too_few_retained_residues": 1023
+        }
+      }
+    },
+    "needed_input_counts": {
+      "full:ready": 78879,
+      "plddt70:ready": 74823,
+      "plddt70:too_few_retained_residues": 4056
+    },
+    "maximum_original_length": 2271,
+    "minimum_original_length": 29,
+    "median_original_length": 334,
+    "upper_bound_triple_occurrences_both_definitions": 208929520,
+    "upper_bound_uncompressed_triple_bytes": 3551801840,
+    "scientific_eligibility": false
+  },
+  "scope": "Actual full602972writteninputstates/78879neededmodels/27056readytriads/432896futuretwo-mask/eight-order states. Original lengths/source hashes/fullsequences/maskedpositions/subsequences and allinputstatus/count universes checked from exact closedfullsource design; actual original preflight PID/create/command journal and allhashbindings required. Raw/native residue correspondence/common-coordinate fit/biological orthology/prediction/phylogeny/calibration remain outstanding. No GPU prediction/newnativeoptimization/paidresources; all8aims incomplete."
+}

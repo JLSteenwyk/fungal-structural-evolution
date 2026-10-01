@@ -1,0 +1,541 @@
+{
+  "status": "passed_full_reference_geometry_readback",
+  "plan_sha256": "e2e798290447c9e92c07eebc384919b3d04ad0aabe88839ec93ef5f1ae08f92c",
+  "producer_receipt_sha256": "1fdc3ed9449487aa3916454ee77f2ab5192751016b09b9ccb31533d12aba5c67",
+  "alignments_checked": 95062,
+  "counts": {
+    "full:unique_at_numeric_tolerance": 49894,
+    "plddt70:unique_at_numeric_tolerance": 45093,
+    "plddt70:degenerate_at_numeric_tolerance": 75
+  },
+  "maximum_scaled_quaternion_curvature_error": 1.9805636788265186e-15,
+  "near_zero_quaternion_gaps": 75,
+  "degenerate_alignments": [
+    {
+      "pair_key": "84efcbc6bca6627cd10253989a6a838990f020bb69dafecec723ab05abe811c9",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "84efcbc6bca6627cd10253989a6a838990f020bb69dafecec723ab05abe811c9",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "fbd90f4fc1054ba317c18d3166b127a648e78266323c07fd8224029e66cb2a48",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "fbd90f4fc1054ba317c18d3166b127a648e78266323c07fd8224029e66cb2a48",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "a6a0011ed6ba8d0fe26617ce52fe75ad658a054a50ea628aeb2d171abc582129",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "a6a0011ed6ba8d0fe26617ce52fe75ad658a054a50ea628aeb2d171abc582129",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "843cadfd6b0af4bf4cc00673401d195c4e8bc11df3a7705e2906a7f5f70f8e8a",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "843cadfd6b0af4bf4cc00673401d195c4e8bc11df3a7705e2906a7f5f70f8e8a",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "13851dedbcda6b180fa7a59c4e4e9a4316b4c3c6c78b5a31533646c94688f560",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "13851dedbcda6b180fa7a59c4e4e9a4316b4c3c6c78b5a31533646c94688f560",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "02fe88803bb41e25c889607cd79d14f412fb7818de529ac3b3924eeb56f8fc00",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "19ddc5d304a459e05f5b628d29e2228e2c8145d0ed7231d02f26a71b4171a88d",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "19ddc5d304a459e05f5b628d29e2228e2c8145d0ed7231d02f26a71b4171a88d",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "a7a04f2876a5907e84a78691c0aadd15a0a5fffd3697eb08f7e630a88caaaee9",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "a56a8842aa3cd3ffbb485f619e1abc237b9050046b64c36e5273f253f95ac0ba",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "a56a8842aa3cd3ffbb485f619e1abc237b9050046b64c36e5273f253f95ac0ba",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d922ec87870c9cf68508865d3addcc76aa6af96d81528bc323891a7b547d10c6",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d922ec87870c9cf68508865d3addcc76aa6af96d81528bc323891a7b547d10c6",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "5085062d7aec1d4d4c69bd3cd15b65c275e3f8d640866426176e475a22a8706d",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "5085062d7aec1d4d4c69bd3cd15b65c275e3f8d640866426176e475a22a8706d",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6273cb631e40a2b99a24472dd84a13223c41421b462a1042d5ba2cfd531ae592",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6273cb631e40a2b99a24472dd84a13223c41421b462a1042d5ba2cfd531ae592",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "947c3c93f473fd42f5badcac83cb16b4fe802037579f77954267ff35df66872f",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "947c3c93f473fd42f5badcac83cb16b4fe802037579f77954267ff35df66872f",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "9d40ea8ba5824f4923db6a8d246be39439d53f17e8284be807dd68b28e41ccb5",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "9d40ea8ba5824f4923db6a8d246be39439d53f17e8284be807dd68b28e41ccb5",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6f15d946459d5aefacd64740435b9b87c42814d3a846bde855a7b9c7b186828e",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6f15d946459d5aefacd64740435b9b87c42814d3a846bde855a7b9c7b186828e",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "8ca5fba5baf7f42bd352039b8372043b140a6fc70c3a1e235d9be78b262758d6",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "e4bc0f42577d27a56037c214120ebbf0f8cdc21c8ff17046f0a49c2dce3c5df5",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "e4bc0f42577d27a56037c214120ebbf0f8cdc21c8ff17046f0a49c2dce3c5df5",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "abb536741e6df363f2fc8d19673d428c4ec6ddc227c3e538cdac92d7d7279f7d",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "abb536741e6df363f2fc8d19673d428c4ec6ddc227c3e538cdac92d7d7279f7d",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "7bbd8ac272e5ec36a4c0030ccc7aa48b6c2a511f5d309df50beb937077f4c57a",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "7bbd8ac272e5ec36a4c0030ccc7aa48b6c2a511f5d309df50beb937077f4c57a",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "b4a4704fd7f727d80d70130a7e2264eaf7863f90b27b8876a3933cd20b1fe795",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "b4a4704fd7f727d80d70130a7e2264eaf7863f90b27b8876a3933cd20b1fe795",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6365258f2822a9ec452d7e2446a10e0fa372373f7cdff2ea34694e55fd3dbb09",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "dc74e26cc7a7e84dbced9799b9e198ea68e2e27d56bd56d84b9b07f31d34da9d",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "dc74e26cc7a7e84dbced9799b9e198ea68e2e27d56bd56d84b9b07f31d34da9d",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "3229fedc030c8677aa03374f364a589bf6edb17da4615cc7cde892df812b7248",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "3229fedc030c8677aa03374f364a589bf6edb17da4615cc7cde892df812b7248",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "f5e0ea961ea9e330ade164f8d4daf5b26ef48a69b333ae63904a258fc6c2a586",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "f5e0ea961ea9e330ade164f8d4daf5b26ef48a69b333ae63904a258fc6c2a586",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d178a725f387dc5eac2963fb400da333f6eca67ea224dc769a8eb762b762a3f6",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "d178a725f387dc5eac2963fb400da333f6eca67ea224dc769a8eb762b762a3f6",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "b855dd35c1ff9c98606e7519fbf7419b01ce210346b08261d164df603318f150",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "f0995f5d67d1549bfebe324b675f09adfb11252dc7ff227e8bfe1a1616228098",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "f0995f5d67d1549bfebe324b675f09adfb11252dc7ff227e8bfe1a1616228098",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "1f4aa403c79be8ccb5e7d2fac8a75f15dc75261c57ec61570eb46967c7b81041",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "1f4aa403c79be8ccb5e7d2fac8a75f15dc75261c57ec61570eb46967c7b81041",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4de2076b0556be10c10fee30e2720c4868d33441f0d037e75619a8f4d87c3500",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "4de2076b0556be10c10fee30e2720c4868d33441f0d037e75619a8f4d87c3500",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6ebcab542df0b0ce77f490c321bbb517dbc6fcf9414c1152164f80cbc920f257",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "6ebcab542df0b0ce77f490c321bbb517dbc6fcf9414c1152164f80cbc920f257",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "782ae3d4f32a043934039ed28aa7874802acabb4e0c3f988d5e8c0ba06731d72",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "outside_printed_rounding"
+    },
+    {
+      "pair_key": "782ae3d4f32a043934039ed28aa7874802acabb4e0c3f988d5e8c0ba06731d72",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "daa3a840ef1ed160a3db9fd9e40889e48b1b64998c1e1d54e9a63f2e255e00a7",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "daa3a840ef1ed160a3db9fd9e40889e48b1b64998c1e1d54e9a63f2e255e00a7",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "dba2bc85d4f6320fc13db48060087db0593211cfc022c15fc191bac281d457eb",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "dba2bc85d4f6320fc13db48060087db0593211cfc022c15fc191bac281d457eb",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "ab164c29ab888a67a229cebb6dea7c77d3da126b881eaa04a881a8e69c801662",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "ab164c29ab888a67a229cebb6dea7c77d3da126b881eaa04a881a8e69c801662",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "38333aa3b897a7d34c3eacd39900c2edbdcb6a651c1cf5a6fede2309d1ab45ca",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "38333aa3b897a7d34c3eacd39900c2edbdcb6a651c1cf5a6fede2309d1ab45ca",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "127a1f4968279dc63f7b11fdce90ba1a320e48b91a752433e3f71631a5c0e67c",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "83bd0cd125bb72148c8f4fb5b44c8ae4c93f8332a27a369950d155f3c6437fa9",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "83bd0cd125bb72148c8f4fb5b44c8ae4c93f8332a27a369950d155f3c6437fa9",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 1,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "1b85736c492d78fde183dee22b5c339f4bf4f870fe9346f31c5410d3f659100a",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "1b85736c492d78fde183dee22b5c339f4bf4f870fe9346f31c5410d3f659100a",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "59f88c7653c8fd9ea24e2f9cfa8fd358ec0cbbd26cf897a7232d993fad00f4cd",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "59f88c7653c8fd9ea24e2f9cfa8fd358ec0cbbd26cf897a7232d993fad00f4cd",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "9e14ee60e9994da723d9fa09938b96dea201b4093b544e1434458ebfe072d224",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "cd8ac56d2f4de13379f060edd116efdbccb4b4773dee1a112e6acb298c9abb40",
+      "mask": "plddt70",
+      "order": 0,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    },
+    {
+      "pair_key": "cd8ac56d2f4de13379f060edd116efdbccb4b4773dee1a112e6acb298c9abb40",
+      "mask": "plddt70",
+      "order": 1,
+      "aligned_length": 2,
+      "rmsd_status": "within_printed_rounding"
+    }
+  ],
+  "scope": "Every geometry row checked from hashed native mapping/PDBs. Coordinate and cross spectra checked using LAPACK gesvd; curvature/optimum checked using independent 4x4 quaternion eigensystem. Status verified under original numeric tolerance; near-zero gaps recorded, not treated as cross-method proof of machine-precision rank. No prediction-uncertainty or biological inference claim."
+}

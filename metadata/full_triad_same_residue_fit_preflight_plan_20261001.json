@@ -1,0 +1,78 @@
+{
+  "mapping_plan": "metadata/full_triad_common_residue_plan_20260930_v2.json",
+  "mapping_completion": "metadata/full_triad_common_residue_completed_20260930_v2.json",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "correspondence_work_triads": 27056,
+    "mask_order_states": 432896
+  },
+  "resources": {
+    "status": "planned_full_triad_same_residue_geometry",
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 32,
+    "planning_hours": [
+      0.5,
+      12
+    ],
+    "runtime_uncalibrated": true,
+    "mapping_states": 432896,
+    "fit_rows": 865792,
+    "basis": "Exact full closed 27056ordered physical triads x2masks x8nativeorders x2core definitions. At most2597376 proper pair fits per producer/independent reader before within-triad identical-core caching. Full work preflight counts actual eligible unique cores and coordinate byte budget, without sampled fitting or pilot. Existing exact SVD and independent quaternion math reused; full coordinate/grid/source/coverage checks remain required. Serial2CPU32GiB/noSwap stages,1BLASthread;32GiB output allowance/100GiB reserve,$0GPU/paid resources. Uncalibrated0.5-12hplanningrange per stage, not measured ETA."
+  },
+  "output": "results/structural_comparisons/full-triad-same-residue-fits-20261001-v1",
+  "pins": {
+    "scripts/full_triad_fit_sources.py": "358bcefdde89beba566c48eef359d935b535666f536fef6ab44b5cd04b5e9cae",
+    "scripts/preflight_full_triad_fits.py": "3471ffbd3a38c876d8dea65ae8608f444eb5f7e03a0ab6badc061ad3ff52bdbe",
+    "scripts/fit_whole_protein_common_residues.py": "076a817ca27328783a97b218710456531e8a2f7917161fd82b2d2f4b9969ce45",
+    "scripts/readback_whole_protein_common_fits.py": "5710b7513314edb34801122928e8b200722dc4a6c5fb88d373beffa776b07413",
+    "scripts/assess_domain_alignment_geometry.py": "b99336d078fcfd2a5df6e8df0f0d9d54a416278d03a55282189a39dc6dc01cab",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/full_triad_common_residue_plan_20260930_v2.json": "a97f14e6f33ecbe3f6af1e71fd478050fe10390ac112f5e7594c96fb79fe02a8",
+    "metadata/full_triad_common_residue_completed_20260930_v2.json": "142c934bc37aa813c6f6b28a4595aa950ef9de924c2f60ee2342abc9f12736d1",
+    "metadata/full_triad_same_residue_fit_resources_20261001.json": "83dbf2103823c368731fc1d56fef33df83cf51eb0c9dc0a67883cf253c1acc9b"
+  },
+  "scope": "Full closed 283409contexts/214461ties/428922logical sides remain source-linked including unscheduled/failed/missing states. All27056source-ready ordered triads x2masks x8nativeorders x2reference-common/cycle-consistent cores=865792fit dispositions. Exact identical original residue triples for AB/AR/BR proper-rigid distances, signed AR-BR contrast, identities/confidence; current masks/full original-length denominators. Raw failures/numerical flags/short/degenerate cores remain explicit with blank uncomputed metrics. Separate core and inherited both-order3edge6screen flags and combined passes, no favorable-order choice. Independent quaternion/eigenproblem geometry, full fields/grid/hash checks and2exact original journals required before completion. Large artifacts/fullhash archives outsideGit. No calibrated biological asymmetry/directional evolutionaryrate/acceptedphylogeny/prediction calibration; full all8aims incomplete. GPU inference paused."
+}

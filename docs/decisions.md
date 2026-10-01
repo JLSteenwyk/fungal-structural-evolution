@@ -213,3 +213,31 @@ qualify native coverage, common residue correspondence, biological orthology,
 prediction error or asymmetry. The full future mapping design retains both
 masks and all eight edge-order combinations, with reference-common and
 AB-cycle-consistent residue sets assessed separately before physical fitting.
+
+
+### October 1: close original correspondence jobs before geometric fitting
+
+Interactive access failure did not stop the original CPU jobs. Use their closed
+full-scope outputs rather than relaunching them. Preserve preflight-pinned
+prototype sources and production v2 plans unchanged. Record full-input/grid,
+independent reconstruction, artifact hashes and exact original journals before
+claiming completion. Common-reference and cycle-consistent cores remain separate;
+failed sources and short cores remain explicit, and favorable native orders are
+not selected. Subsequent three-edge fits must use identical triples and recheck
+proper-rotation geometry, inherited exclusions and original coverage. Raw signed
+RMSD differences are descriptive contrasts, not directional evolutionary rates.
+
+
+### October 1: separate shared-core and inherited three-edge qualification
+
+Use exact same-residue rigid fits for all three distances under both mapped
+cores and every native order. Reuse computations only for identical physical
+triple/mask/residue sets; preserve every output disposition and logical source
+link. Keep inherited both-order three-edge coverage separate from shared-core
+geometry/coverage and require both for combined screening. Blank uncomputed
+metrics distinguish failed/short states from computed degenerate geometry.
+Require the exhaustive closed work preflight before production, then an
+independent quaternion reader and both exact original completion journals.
+The completed fourth PMSF audit does not establish an accepted species framework;
+retain its gap warnings and require all-four topology/consensus and broader
+phylogenetic sensitivities.

@@ -1,0 +1,31 @@
+{
+  "status": "complete_verified_full_triad_geometric_fit_work_preflight",
+  "mapping_states": 432896,
+  "fit_rows": 865792,
+  "counts": {
+    "full:reference_common:pending_common_coordinate_geometry": 209152,
+    "full:cycle_consistent:pending_common_coordinate_geometry": 165272,
+    "plddt70:reference_common:pending_common_coordinate_geometry": 182018,
+    "plddt70:cycle_consistent:pending_common_coordinate_geometry": 157070,
+    "plddt70:cycle_consistent:fewer_than_three_common_residues": 36104,
+    "full:cycle_consistent:fewer_than_three_common_residues": 51176,
+    "plddt70:reference_common:fewer_than_three_common_residues": 11156,
+    "plddt70:reference_common:source_excluded": 23274,
+    "plddt70:cycle_consistent:source_excluded": 23274,
+    "full:reference_common:fewer_than_three_common_residues": 7296
+  },
+  "triple_occurrences": 154285210,
+  "unique_eligible_triple_sets_within_physical_triad_and_mask": 77805,
+  "unique_eligible_residue_occurrences": 16923795,
+  "proper_pair_fits_per_implementation": 233415,
+  "needed_pdb_inputs": 142847,
+  "needed_pdb_bytes": 3841629229,
+  "preflight_receipt": "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/receipt.json",
+  "preflight_receipt_sha256": "9ae1b3e75b1839a3d8075027c61947de4380bf8ee404edb2703485450890eda6",
+  "full_hash_archive": "results/structural_comparisons/full-triad-fit-work-preflight-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "193e16b4bc4cc7f216a26dc492557264c68e6b61f4162601a283209965fd9085",
+  "bound_source_hashes": 321735,
+  "exact_process_journals_checked": 1,
+  "scientific_eligibility": false,
+  "scope": "Exhaustive full closed mapping/input grid, both definitions/masks/all8orders. Counts actual eligible coordinate work and within-triad/mask identical-triple reuse; no sampled geometry, preselection or pilot. RAM/disk/runtime estimates in immutable resource plan remain estimates, not observed runtime or scientific qualification."
+}

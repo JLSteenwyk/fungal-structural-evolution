@@ -1,0 +1,50 @@
+{
+  "status": "verified_live_full_same_residue_geometry_pipeline",
+  "checked_utc": "2026-10-01T15:57:24.535317+00:00",
+  "handles": [
+    {
+      "launch": "metadata/full_triad_same_residue_fit_producer_launch_20261001.json",
+      "pid": 3583855,
+      "created": 1790869982.52,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/fit_full_triad_common_residues.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_plan_20261001.json"
+      ],
+      "status": "running",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_triad_same_residue_fit_readback_launch_20261001.json",
+      "pid": 3583859,
+      "created": 1790869982.57,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_triad_same_residue_fit_completion_launch_20261001.json",
+      "pid": 3583863,
+      "created": 1790869982.6,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_triad_same_residue_fit_completion_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    }
+  ],
+  "counts_table": "docs/tables/full_triad_correspondence_and_fit_work_20261001.tsv",
+  "counts_table_sha256": "88555f3abfa1fe5c2bc89f348d3a2606ca19f046ad0ff16854b09ca68d1337d1",
+  "counts_table_rows": 23,
+  "pmsf_fourth_completion": "metadata/pmsf_fourth_readback_completed_20261001.json",
+  "scientific_eligibility": false
+}

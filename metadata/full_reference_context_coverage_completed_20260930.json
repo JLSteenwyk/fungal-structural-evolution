@@ -1,0 +1,149 @@
+{
+  "status": "complete_verified_full_reference_context_coverage",
+  "checked_utc": "2026-09-30T23:59:49.000339+00:00",
+  "summary": {
+    "target_contexts": 283409,
+    "context_design_records": 566818,
+    "context_design_mask_records": 1133636,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "availability_side_links": 121490,
+    "context_screen_rows": 6801816,
+    "context_policy_decisions": 34009080,
+    "side_screen_decisions": 5147064,
+    "summary_rows": 240,
+    "guide_contexts": {
+      "profile": 141724,
+      "mafft": 141685
+    },
+    "side_mask_work_counts": {
+      "profile|availability|parent=1|full|in_full_reference_measurement_design": 60406,
+      "profile|availability|parent=1|plddt70|in_full_reference_measurement_design": 60406,
+      "profile|sequence_first|parent=1|full|in_full_reference_measurement_design": 44668,
+      "profile|sequence_first|parent=1|plddt70|in_full_reference_measurement_design": 44668,
+      "profile|sequence_first|parent=1|full|reference_model_missing": 98906,
+      "profile|sequence_first|parent=1|plddt70|reference_model_missing": 98906,
+      "profile|sequence_first|parent=0|full|reference_model_missing": 2950,
+      "profile|sequence_first|parent=0|plddt70|reference_model_missing": 2950,
+      "profile|availability|parent=0|full|outside_full_reference_measurement_design": 4030,
+      "profile|availability|parent=0|plddt70|outside_full_reference_measurement_design": 4030,
+      "profile|sequence_first|parent=0|full|outside_full_reference_measurement_design": 2286,
+      "profile|sequence_first|parent=0|plddt70|outside_full_reference_measurement_design": 2286,
+      "profile|availability|parent=1|full|identical_model_not_independent": 364,
+      "profile|availability|parent=1|plddt70|identical_model_not_independent": 364,
+      "profile|sequence_first|parent=1|full|identical_model_not_independent": 364,
+      "profile|sequence_first|parent=1|plddt70|identical_model_not_independent": 364,
+      "profile|availability|parent=0|full|identical_model_not_independent": 265,
+      "profile|availability|parent=0|plddt70|identical_model_not_independent": 265,
+      "profile|sequence_first|parent=0|full|identical_model_not_independent": 265,
+      "profile|sequence_first|parent=0|plddt70|identical_model_not_independent": 265,
+      "profile|availability|parent=0|full|in_full_reference_measurement_design": 1,
+      "profile|availability|parent=0|plddt70|in_full_reference_measurement_design": 1,
+      "profile|sequence_first|parent=0|full|in_full_reference_measurement_design": 1,
+      "profile|sequence_first|parent=0|plddt70|in_full_reference_measurement_design": 1,
+      "mafft|availability|parent=1|full|in_full_reference_measurement_design": 60354,
+      "mafft|availability|parent=1|plddt70|in_full_reference_measurement_design": 60354,
+      "mafft|sequence_first|parent=1|full|in_full_reference_measurement_design": 44608,
+      "mafft|sequence_first|parent=1|plddt70|in_full_reference_measurement_design": 44608,
+      "mafft|sequence_first|parent=1|full|reference_model_missing": 98910,
+      "mafft|sequence_first|parent=1|plddt70|reference_model_missing": 98910,
+      "mafft|sequence_first|parent=0|full|reference_model_missing": 2956,
+      "mafft|sequence_first|parent=0|plddt70|reference_model_missing": 2956,
+      "mafft|availability|parent=0|full|outside_full_reference_measurement_design": 4031,
+      "mafft|availability|parent=0|plddt70|outside_full_reference_measurement_design": 4031,
+      "mafft|sequence_first|parent=0|full|outside_full_reference_measurement_design": 2299,
+      "mafft|sequence_first|parent=0|plddt70|outside_full_reference_measurement_design": 2299,
+      "mafft|availability|parent=1|full|identical_model_not_independent": 366,
+      "mafft|availability|parent=1|plddt70|identical_model_not_independent": 366,
+      "mafft|sequence_first|parent=1|full|identical_model_not_independent": 366,
+      "mafft|sequence_first|parent=1|plddt70|identical_model_not_independent": 366,
+      "mafft|availability|parent=0|full|identical_model_not_independent": 263,
+      "mafft|availability|parent=0|plddt70|identical_model_not_independent": 263,
+      "mafft|sequence_first|parent=0|full|identical_model_not_independent": 263,
+      "mafft|sequence_first|parent=0|plddt70|identical_model_not_independent": 263
+    }
+  },
+  "scientific_eligibility": false,
+  "services": [
+    {
+      "launch": "metadata/full_reference_context_coverage_producer_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "eba7f667fcaebd0e802e952c15bcc35f5774427ea61481510f68c607f0810228",
+      "captured_process_messages": 166,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790812660901799",
+          "CPU_USAGE_NSEC": "85278795000",
+          "MEMORY_PEAK": "8884224",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    },
+    {
+      "launch": "metadata/full_reference_context_coverage_readback_launch_20260930.json",
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "LoadState": "not-found",
+        "ActiveState": "inactive"
+      },
+      "journal_sha256": "45e39bb23012ade75f7b3f8d668a7da33ea6ebd489247c00b00595a86849ebe0",
+      "captured_process_messages": 169,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790812758835391",
+          "CPU_USAGE_NSEC": "92782762000",
+          "MEMORY_PEAK": "8814592",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "terminal_evidence": "Captured process is absent; exact PID/command journal completion and complete hashed artifacts/proofs checked. LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status."
+    }
+  ],
+  "source_hashes": {
+    "results/orthology/full-reference-context-coverage-20260930-v1/completion_closure_plan.json": "f77f35569c712f41e1b434efb11520fc13c8252d7544b61bf13e10dbe48f2b69",
+    "metadata/full_reference_context_coverage_completion_plan_20260930.json": "0e28f3acd92e18cb8f5b65e70733b2faf02b224d9caaf9c268cfcc9535ed6083",
+    "scripts/reference_context_coverage_sources.py": "ed7af53f978bb5dc2e82bfadc8c18dd838ef16690575bf92d707aee57ba75849",
+    "scripts/project_full_reference_context_coverage.py": "389812a186e9987c5f1ac40be529908a62c081fa44df0c2a97ebe256ca31faa3",
+    "scripts/readback_full_reference_context_coverage.py": "f7e4380ea78198a902a59717e4fc5259772c6ef3a7244fe1477f1cd1bd402666",
+    "scripts/check_full_reference_context_coverage.py": "961d60e82435a7b6860409a19f490602266adad1ff28ebd46ab1171acfd7afe2",
+    "scripts/close_full_reference_context_coverage.py": "5d93f02c2622685131784b4fccc804fadbc971fd7bb81e8e29ffb01c8d1d110e",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/full_reference_context_coverage_resources_20260930.json": "14ba71e0e0e48ab388ca46a7b43b4001e00c79713fcad09e2740c163c278a59a",
+    "metadata/full_reference_context_coverage_fixture_validation_20260930.json": "7bf848ae1b43b1c64ac7eb3626f303c39ca75fb13298160ef9cd5b4acb0d7a40",
+    "metadata/full_reference_context_coverage_source_preflight_20260930.json": "f614a664f22ab736607bad9975a338201ec62042ccd568478e850b93ab0e9dc6",
+    "metadata/reference_context_measurement_design_plan_20260930.json": "4ce428c15835daed1b86db38630824afdaac5eb87a2e870ffa11e5d48e2fab3c",
+    "metadata/reference_context_measurement_design_completed_20260930.json": "9c893e098215f401005eeca780da7c487d52b31f4d8d97259a723d60f4772ac5",
+    "metadata/reference_context_measurement_design_completed_readback_20260930.json": "c34177bedd74debb300b63c13a97ade56e62e8de06450432c43531ea46853d27",
+    "metadata/full_reference_order_coverage_plan_20260930.json": "4b88547df0b44ed5f27a5cd010d95c35e2e53db2fe99bfd0977f63c2ef6660a7",
+    "metadata/full_reference_order_coverage_completion_launch_20260930.json": "9b7f5b41fa6c5115933046bc5a48bf71ab5d44e8e67113815235e3b811c242dd",
+    "metadata/full_reference_order_coverage_completion_wait_plan_20260930.json": "71836b05ce62a1c07cfeddbf02b200bb2f31a5375e01dcde6ed75ce9357cbcd1",
+    "metadata/full_reference_order_coverage_completion_plan_20260930.json": "32559075c2123f0a1dd471d05afe7cff47ffb57413e6b67ccac875e25113c368",
+    "metadata/full_reference_context_coverage_plan_20260930.json": "ed1407f4be809e914603837feebf245d66e58dd8666d02a5c044ad441926cec5",
+    "metadata/full_reference_context_coverage_producer_launch_20260930.json": "7fdccda761ddbaec1517f7e247a1a3cd443daf647fdb6c617ea8f193bb4098ed",
+    "metadata/full_reference_context_coverage_readback_launch_20260930.json": "eb94011ba64fc1c340dd606e7cdfcdbd74158cf4f8d80ff5da9400b031be0752",
+    "results/orthology/full-reference-context-coverage-20260930-v1/receipt.json": "b84f21bdbdc76914ddbc677a759e57e10c91c91c687e4b23038d1460faa2c776",
+    "results/orthology/full-reference-context-coverage-20260930-v1/readback.json": "276654844cbd36915bc8137340d0d074e194bdb862be4b741f2a2d48b1fc308a",
+    "results/orthology/full-reference-context-coverage-20260930-v1/context_coverage.jsonl.gz": "376426ac15af162c2a1d0038b7eef8a84ade5fb13aa8848e6f57d1ce9adbafb7",
+    "results/orthology/full-reference-context-coverage-20260930-v1/context_screen_counts.tsv": "c7a5fd849de09a099471a2ec651714b71f7493bc3bf19aef82eb787b1292f172",
+    "results/orthology/reference-context-measurement-design-20260930-v1/receipt.json": "2ac75ac920df1773b14914d59afdc66bd58bd86cb335be18673a6b54fc0a0553",
+    "results/orthology/reference-context-measurement-design-20260930-v1/context_measurement_design.jsonl": "54f9e0f63abd7b0d30fa2c2489907108ced7f3e785e216e94e570b425c96f366",
+    "results/structural_comparisons/full-reference-order-coverage-20260930-v1/readback.json": "e8febe4bb90e946f48a799616a4b368c6459f840e8f7a37262597ecc480aefdd",
+    "results/structural_comparisons/full-reference-order-coverage-20260930-v1/completion_closure.json": "34c225f992208505eaf14a344d780492473688f9328ff87fb69fe030824b7c77",
+    "results/structural_comparisons/full-reference-order-coverage-20260930-v1/receipt.json": "9dd01b1373d3f2e8772da0afedfb646dc46f5f8799e4e302ab145e2d04d19ee9",
+    "results/structural_comparisons/full-reference-order-coverage-20260930-v1/pair_mask_order_coverage.tsv": "f71cd225d62c0357275eb4847170b2bd6fa18ffef47a3270f79ebe082517ae49",
+    "metadata/full_reference_order_coverage_completed_20260930.json": "77f763d1750366269a5acf38eba822789437601b79d3cf02eb81dc79fb2ce23e",
+    "metadata/reference_measurement_union_plan_20260930.json": "96feb729aa708ea743e9a4cbaf721e6c74f779997444022686a807ababd95752",
+    "metadata/expanded_reference_alignment_plan_20260930.json": "0ff0685ac641586f25d8370a4f29939772947b370aa360cf676a1e0a7eec1c0f"
+  },
+  "scope": "Full283409source contexts/566818context-design/1133636context-design-mask records,all214461ties/428922logical sides.6screens produce6801816context-screen rows/34009080fivepolicy decisions and5147064side-screen decisions;240complete summary cells include full denominators. Closed fullreference coverage/native contextual work design both required. All originalfields, reference missingness/lexical ties/parent exclusions and numerical flags retained; unmeasured order states null. Five policies require both reference-side pairs to pass and originalparent eligibility; own/both guide and any/all sensitivities explicit, no reference replacement or empty-all pass. Reference-pair coverage does not check primary duplicateAB/commontriad independence/residue correspondences, domain/PAE/prediction, biological orthology/phylogeny or calibrated asymmetry. All8aims remain incomplete; GPUpaused."
+}

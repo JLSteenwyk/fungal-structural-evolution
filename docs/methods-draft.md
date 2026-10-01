@@ -1556,3 +1556,33 @@ AB-cycle-consistent cores, fit identical residue triples and evaluate original
 full-protein coverage. Sequence-locked/domain/PAE/orientation, prediction-error,
 phylogenetic and calibrated inference controls remain required. Exact count
 units and provenance are in [the full workflow](full-reference-triad-work-design-20260930.md).
+
+
+### Full original-residue duplicate/reference correspondence
+
+The completed source-ready grid includes 27,056 ordered physical triples,
+both masks and all eight AB/AR/BR native orders, without coverage preselection.
+Actual raw checkpoint inputs, directions, source orders and checksums determine
+pair mappings on original protein positions. AR/BR intersections and a separate
+AB-cycle-consistent subset are retained, including failed, numerically excluded
+and short states. Both-order pair-screen flags retain original full-protein
+coverage denominators. An independent iterator/relation reader reconstructs all
+432,896 states and every classification. Exact two-journal closure binds 321,723
+hashes. No shared-coordinate fit or evolutionary effect is established by these
+checks. Input sources, complete contextual coverage and limitations are recorded
+in [the full correspondence workflow](full-triad-common-residues-20260930.md).
+
+
+### Full identical-residue geometric comparisons
+
+The scheduled 865,792 fit dispositions retain both masks, eight edge orders and
+reference-common versus cycle-consistent cores. Proper SVD rigid fits for AB,
+AR and BR use identical original-position triples; an independent quaternion
+reader reconstructs every distance, orientation-preserving contrast, confidence,
+identity and uniqueness classification. Short/source-excluded fits have blank
+metrics and degenerate computed fits stay excluded. Six rational original-length
+core screens and inherited both-order three-edge screens are reported separately
+and jointly. Full source/journal closure gates production. The exhaustive work
+preflight measured 77,805 distinct eligible cores and 233,415 pair fits per
+implementation. [Production and resource details](full-triad-same-residue-geometry-20261001.md);
+completed geometry or calibrated asymmetry is not yet claimed.
