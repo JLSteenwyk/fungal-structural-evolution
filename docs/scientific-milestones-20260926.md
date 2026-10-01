@@ -675,3 +675,16 @@ checks passed, including 12 rehashed false exports and retained error/timeout/
 RMSD/degenerate states. None of these queued production stages is complete;
 71,460 catalog-matched pairs still need real reuse qualification. All eight
 aims, calibrated inference and prediction/phylogenetic controls remain open.
+
+
+October 1: complete four-collection input union passed full source/SQLite
+readback and both original journals, binding 964,012 hashes. All 610,868 active
+model/mask states, 14,593 global overlaps and 146,172 pairs are closed. The
+eight-worker native runner has started input checks. Actual old-result reuse
+qualification is launched over all 584,688 full-design states, with full
+current-coordinate numerical reconstruction, independent quaternion geometry
+and ten-journal closure queued. Eight original old-source journals were verified;
+actual-native software checks rejected 12 rehashed false exports and retained
+numerical/unavailable/incompatible states. Production native/reuse completion,
+their full union and all comparative/phylogenetic calibration remain required.
+No scientific aim is complete; GPU inference remains paused.

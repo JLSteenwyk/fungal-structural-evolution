@@ -1,0 +1,178 @@
+{
+  "target_alignment_plan": "metadata/expanded_background_alignment_plan_20261001.json",
+  "sources": {
+    "reference_old": {
+      "kind": "reference",
+      "alignment_plan": "metadata/duplication_reference_alignment_plan_20260926.json",
+      "alignment_status": "complete_reference_alignment_dispositions_pending_readback",
+      "input_sources": [
+        {
+          "inputs": "results/structural_comparisons/duplication-alignment-inputs-20260926-v1",
+          "input_plan": "metadata/duplication_alignment_input_plan_20260926.json",
+          "status": "complete_duplication_alignment_input_materialization"
+        },
+        {
+          "inputs": "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1",
+          "input_plan": "metadata/duplication_reference_alignment_input_plan_20260926.json",
+          "status": "complete_additional_reference_alignment_input_materialization"
+        }
+      ],
+      "diagnostic": "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1",
+      "diagnostic_status": "complete_reference_alignment_rmsd_diagnostic_not_scientific_acceptance",
+      "geometry": "results/structural_comparisons/duplication-reference-geometry-20260927-v1",
+      "geometry_status": "complete_reference_alignment_geometry_pending_independent_readback",
+      "geometry_readback": "results/structural_comparisons/duplication-reference-geometry-readback-20260927-v2.json",
+      "geometry_readback_status": "passed_full_reference_geometry_readback",
+      "diagnostic_plan": "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json",
+      "geometry_plan": "metadata/duplication_reference_geometry_plan_20260927.json",
+      "geometry_readback_plan": "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json",
+      "launches": [
+        "metadata/duplication_reference_alignment_launch_20260926.json",
+        "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json",
+        "metadata/duplication_reference_geometry_launch_20260927.json",
+        "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json"
+      ]
+    },
+    "background_old": {
+      "kind": "background",
+      "alignment_plan": "metadata/background_alignment_plan_20260927.json",
+      "alignment_status": "complete_background_alignment_dispositions_pending_readback",
+      "diagnostic": "results/structural_comparisons/background-alignment-rmsd-diagnostic-20260928-v1",
+      "diagnostic_status": "complete_background_alignment_rmsd_diagnostic_not_scientific_acceptance",
+      "geometry": "results/structural_comparisons/background-alignment-geometry-20260928-v1",
+      "geometry_status": "complete_background_alignment_geometry_pending_independent_readback",
+      "geometry_readback": "results/structural_comparisons/background-alignment-geometry-readback-20260928-v1.json",
+      "geometry_readback_status": "passed_full_background_geometry_readback",
+      "diagnostic_plan": "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json",
+      "geometry_plan": "metadata/background_alignment_geometry_plan_20260928.json",
+      "geometry_readback_plan": "metadata/background_alignment_geometry_readback_plan_20260928.json",
+      "launches": [
+        "metadata/background_alignment_launch_20260927.json",
+        "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json",
+        "metadata/background_alignment_geometry_launch_20260928.json",
+        "metadata/background_alignment_geometry_readback_launch_20260928.json"
+      ]
+    }
+  },
+  "expected": {
+    "active_models": 305434,
+    "full_pairs": 146172,
+    "new_pairs": 74712,
+    "selected_source_pairs": {
+      "reference_old": 11,
+      "background_old": 71449
+    }
+  },
+  "output": "results/structural_comparisons/background-reuse-qualification-20261001-v1",
+  "pins": {
+    "scripts/expanded_background_reuse_sources.py": "0f76fa1a4ec577ea928445a92eeb659362198dd56ce9f88ee58ecfcac399e7a7",
+    "scripts/qualify_expanded_background_reuse.py": "93490968d293504db38d2c6f6758170724df28b42fcca6d6d49766abef3618ce",
+    "scripts/readback_expanded_background_reuse.py": "e2c69f3ceb96a0a9d0d1b821ea83dbb4fec3712545a4f1d3aaec3facf992ff7d",
+    "scripts/close_expanded_background_reuse.py": "94a98e02428b3ada383bc6783c71efcb90fbfa9aabf7835952de64aeefe4a6d3",
+    "scripts/check_expanded_background_reuse_cases.py": "51bc0998fbf67b5e52bc57ee1384b434e25c391e3a58d233fe2fb8dbbf09b430",
+    "scripts/expanded_background_native_handoff.py": "81e53319472ef89081f38cefd32a1fcbfa8f3e83c27c8b46549473ee0673923d",
+    "scripts/background_alignment_handoff.py": "c4a736ade77e9dbab61ca4aa8a066455e4fae7674ba8541646556750e8d59483",
+    "scripts/qualify_reference_alignment_reuse.py": "f57327daf027f15b21859a6c80a0e88beba603093602259a23d3a2695a0dd9ad",
+    "scripts/readback_reference_alignment_reuse.py": "4f1b7512ed8c0d75eb7f5ef2a111e03ec5d2a0ab0b232042c6d6ab4ff8702e5d",
+    "scripts/readback_expanded_background_measurements.py": "712e9be27ba7df46388536cfe5834c63b168e32e0500340b00ef7e549ff2fa6f",
+    "scripts/readback_background_alignment_geometry.py": "811c52676ab62534b7575baf11b3d2d45978f830a08921055ae0c3a5c47216cf",
+    "scripts/readback_domain_triad_common_fits.py": "185e8caa873928ed6e76aa2d6c40e0a028d5ec0cd52c5d30c4ff24145b48135f",
+    "scripts/duplication_alignment_numeric_diagnostic.py": "eef5e96762c2870031f247b6d01d7389aa2bd6a7de059e4af45a6bc4c0426515",
+    "scripts/duplication_alignment_numeric_readback.py": "ca5df0fa7b8a2f05d5beba52a266ee965e27fa1ef61aef9121f4772cbc126d02",
+    "scripts/readback_cross_clan_alignments.py": "7ce4a7c5c1d92c4ac1554f05e18a15c59450aed4a684fcad613e95c69e42f7e9",
+    "scripts/run_cross_clan_alignments.py": "3a2c4ed664d293c6d33010546542901e8e83727b2195cfb519d6d286e64f0920",
+    "scripts/run_duplication_alignments.py": "547fb6e773e0ca43ccc71aa8e782e4820deba24c020f488f39f2689420b8363e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "scripts/screen_duplication_domain_alignment_coverage.py": "ae20b70fa54ca172da96b749afd8f4a320c082700442e18a222d3e87f661343e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "metadata/expanded_background_reuse_fixture_validation_20261001.json": "6bd603c8e903718e5c70dcc6300802ce74ec45c85297d60b41acc6a9f67afeb6",
+    "metadata/expanded_background_reuse_resources_20261001.json": "bd1b1fbe2006d7fe52d3603cd98dd9d3d659cfc92ad6654177a68ea0fcb7734d",
+    "metadata/expanded_background_reuse_original_source_journals_20261001.json": "ca370483c629f9b0dc165404c11d407ef6c661f210033fedaf792595021a365a",
+    "metadata/expanded_background_alignment_plan_20261001.json": "bc0cc5e153f5f0f74b2711ff8b11ff74f3af7bb79c08171fa5c6049d46d8cfc3",
+    "metadata/expanded_background_native_handoff_closure_launch_20261001.json": "5d7231dae8d0b0d326abe019f696f16c8b58111d769cd4ac2adb5c58c16369c2",
+    "metadata/expanded_background_native_handoff_completion_plan_20261001.json": "5a4ba71e4fa3bf7ae179767af89561b471bd2cd0d4c6004365acdd24a24ff63c",
+    "metadata/expanded_background_native_handoff_closure_wait_plan_20261001.json": "fc4720f9dfd811d5a067d0da153388a02f75de211c17b0daac29bbc6d54875ea",
+    "metadata/duplication_reference_alignment_plan_20260926.json": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+    "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04",
+    "metadata/duplication_reference_geometry_plan_20260927.json": "0f3f30094539badd4af0413548b40cf51b269abf2ff94ba552aff5015b32f6e0",
+    "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+    "results/structural_comparisons/duplication-reference-geometry-readback-20260927-v2.json": "cf291441c1aa078e1a6ce1bd75e33e6d1f5783983a8347316bdec182c8edb8d9",
+    "metadata/duplication_reference_alignment_launch_20260926.json": "75950d7db3e1d625c97dd3ddc61dac3f46fcaba84eb3ab933f636840ff05c012",
+    "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json": "96f88fc3bbeeb08e663a55b8221ddc237fa55156db31d90be1e946fd6db71ef3",
+    "metadata/duplication_reference_geometry_launch_20260927.json": "ee11550874f59aabf892be8f23af88258f752532c9a4e7c9848978bbaa5bbb72",
+    "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json": "32fa0999794edfaba7d16cac2619c538029e6a7c6a334d26950683ca39150109",
+    "results/structural_comparisons/duplication-reference-alignments-20260926-v1/receipt.json": "e8b24d4abb47870c2307f60b99f7866ec19b50e9f38e227d7f98c66eed8ecf41",
+    "results/structural_comparisons/duplication-reference-alignments-20260926-v1/checkpoint_manifest.tsv": "cb7ff351f3506c3f6c439b42fda5c83b0ee077e2e468f321f591f1bab0144579",
+    "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1/receipt.json": "cfed0fca5a67be9c16e0571bb26305c96cd89e623b3b5f97224bc3b161db5e20",
+    "results/structural_comparisons/duplication-reference-rmsd-diagnostic-20260927-v1/numeric_readback.tsv": "cdae45014c906bd4aeeeac247d30753112ac76aa0b56ebd31013e62e494c8296",
+    "results/structural_comparisons/duplication-reference-geometry-20260927-v1/receipt.json": "1a18a36cad5e4ccd7fd20b4ca56ce4b848cb17d9d40537ac1c3a652711842e5e",
+    "results/structural_comparisons/duplication-reference-geometry-20260927-v1/alignment_geometry.tsv": "8107334f4d78cfaedf37c7816f01e11d9dce1d0bd05a5f8a5d272372d0d601d4",
+    "metadata/background_alignment_plan_20260927.json": "c891663540eca106e1a65cb667581d28cd7749d02039f6d2a0412ae0ebd1d328",
+    "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json": "7e0db1101ffbe0b15376b853635317fdd04aaedf6fed0eda536e37dbea71a1c9",
+    "metadata/background_alignment_geometry_plan_20260928.json": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+    "metadata/background_alignment_geometry_readback_plan_20260928.json": "f6c9ad610a6b43c33c2e0084b826cba735cec384624877de816c8f8eff29bcb9",
+    "results/structural_comparisons/background-alignment-geometry-readback-20260928-v1.json": "89cd08bd137d4baac01e71484692e62e56e8c0c7727b80392d93a0abfcb5de1a",
+    "metadata/background_alignment_launch_20260927.json": "3778e4eb09a1d4dde5c7e9e27feb9aea9d943cc5a020c46357c4ad28791f0f07",
+    "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json": "e9b1eec457fd8b678af5dd70ea978548199c3b9254142984d535209a07ec4561",
+    "metadata/background_alignment_geometry_launch_20260928.json": "5184f1c13a687ba568e2b34f6f396e4b57f9be423c6db40895912c536fec30c4",
+    "metadata/background_alignment_geometry_readback_launch_20260928.json": "74c4ada3fd7cbc2d6099dbc64d96a674ddbd379d24bea16e34dc102d23c17578",
+    "results/structural_comparisons/background-alignments-20260927-v1/receipt.json": "57e755e448fea149bcfa4c5ed97aaeb4a9fef64c005c281ca034ed428b2121fe",
+    "results/structural_comparisons/background-alignments-20260927-v1/checkpoint_manifest.tsv": "4f81c7e390fa529673e0311133436c062ba41b0aceb99c012edc9b9c679ad4f6",
+    "results/structural_comparisons/background-alignment-rmsd-diagnostic-20260928-v1/receipt.json": "f50f8833fe9837898212610a254566cc674917bcc04b4dbdc8150de48108eed2",
+    "results/structural_comparisons/background-alignment-rmsd-diagnostic-20260928-v1/numeric_readback.tsv": "6ad3efb0acc432b1a309b9dedbd8c34a2670394b291fa0c37faee2e09f494a9c",
+    "results/structural_comparisons/background-alignment-geometry-20260928-v1/receipt.json": "5b46db08bc5c64c37eda56829d85b6db4d1a3c494f60333ac7fe09858245dd50",
+    "results/structural_comparisons/background-alignment-geometry-20260928-v1/alignment_geometry.tsv": "bcf3e539f3b32f0f247c1c666633d685dc8694619fe6fc335afa757a1a7816aa",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784"
+  },
+  "resources": {
+    "status": "planned_full_expanded_background_actual_input_checkpoint_and_geometry_reuse_qualification",
+    "checked_utc": "2026-10-01T19:14:35.743875+00:00",
+    "cpu": 2,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "full_background_pairs": 146172,
+    "full_directed_dispositions": 584688,
+    "matching_old_pairs": 71460,
+    "matching_old_directed_states": 285840,
+    "new_native_pairs_kept_pending": 74712,
+    "new_native_states_kept_pending": 298848,
+    "selected_source_pairs": {
+      "reference_old": 11,
+      "background_old": 71449,
+      "no_old_source": 74712
+    },
+    "matching_unique_current_models": 142906,
+    "selected_source_unique_current_models": {
+      "reference_old": 22,
+      "background_old": 142884
+    },
+    "matched_current_raw_stat_bytes": 61664784336,
+    "matched_current_residues": 64779073,
+    "current_full_input_union_models": 305434,
+    "current_full_model_mask_states": 610868,
+    "source_preference": [
+      "reference_old",
+      "background_old"
+    ],
+    "output_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "per_stage_planning_hours": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "exact_original_source_journals": 8,
+    "required_final_original_journals": 10,
+    "available_memory_gib": 571.0757637023926,
+    "free_disk_gib": 10549.69235610962,
+    "basis": "Full584688pair/mask/order current design; current full independent input union and its2originaljournals required. Actual hash every reused raw/current/old PDB/checkpoint; full status/position/sequence/length/native setting equality; full old native and numerical/geometry proof contracts. Recompute every reused aligned numeric row by SVD on current identical inputs; separate reader reconstructs every reuse export and original numeric/geometry by vectorized/quaternion/gesvd methods. All flags/unavailable/incompatible/new-pending states preserved. Source preference fixed before outcomes, no favorable fallback or fresh native optimization. Final closure checks2new plus8original native/diagnostic/geometry/readback journals. Serial2CPU64GiB stages;1BLAS/noSwap;32GiBoutput/100GiBreserve. I/O and full source/archive/position checks dominate some stages; planning range uncalibrated, not ETA. No pilot/GPU/charges or biological acceptance."
+  },
+  "scope": "Complete146172background physical pairs/two masks/two directions(584688states), all305434active current models and full independently closed four-collection input union. Fixed old-reference-before-old-background selection assigns11/71449pairs;74712new native pairs remain pending within this separate reuse ledger. Every actual raw/current-old PDB/mask/original-position/sequence/length/native-settings/checkpoint identity is qualified; incompatible states require additional native measurements without alternate-source selection. Every reused successful native numeric row reconstructed on current byte-identical inputs; separate full reader rebuilds source preference, role/order, all exports, numeric mappings/quaternion RMSD/gesvd curvature and every flag/exclusion. Original unavailable/native/parse/timeout/RMSD/nonunique states retained; no automatic retry or missing-as-zero substitution. Two new plus eight exact original native/diagnostic/geometry/readback completion journals and full actual sources/artifacts required for reuse closure. TM-score optimization is not independently repeated. Full new-measurement/reuse union, coverage/prediction/domain/PAE/sequence-locked/missingness/phylogenetic controls and calibrated effects remain required. All8aims incomplete; GPU inference paused, no pilot or charges."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "observed_live_full_background_native_checkpoint_progress_reuse_source_checks_running",
+  "checked_utc": "2026-10-01T19:26:53.572230+00:00",
+  "native_original_launch": "metadata/expanded_background_alignment_launch_20261001.json",
+  "native_original_launch_sha256": "dc727f2d95d7b5ab08d08bb86c44bac27451fb372b90ea8612dd08e2e699ee03",
+  "native_original_pid": 4086945,
+  "native_original_created": 1790880442.89,
+  "native_progress_source": "results/structural_comparisons/expanded-background-alignments-20261001-v1/state.json",
+  "observed_progress_source_sha256": "0de90980ba40ff8f61ac9d743298ea7720c5f07364f5c0c554a9505b535919b5",
+  "observed_progress": {
+    "stage": "aligning_full_new_background_partition",
+    "completed": 3008,
+    "total": 298848,
+    "counts": {
+      "full:aligned": 1504,
+      "plddt70:aligned": 1454,
+      "plddt70:input_unavailable": 50
+    }
+  },
+  "reuse_original_launch": "metadata/expanded_background_reuse_producer_launch_20261001.json",
+  "reuse_original_launch_sha256": "13a3ca79f207b0f7d7499a157e4df66c073489285c09cdc1e823d3af7f84741e",
+  "reuse_original_pid": 786634,
+  "reuse_original_created": 1790882075.63,
+  "scientific_eligibility": false,
+  "scope": "Live state file is mutable: its observed bytes/counts are snapshotted here, not a permanent source pin or complete independent checkpoint/geometry proof. Both exact original wrapper PID/create/CMD handles live. Counts describe saved native dispositions only; reused-state qualification and both full independent measurement/reuse closures remain pending. GPU inference paused; all8aims incomplete."
+}

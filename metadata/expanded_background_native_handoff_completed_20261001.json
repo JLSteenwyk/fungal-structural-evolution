@@ -1,0 +1,46 @@
+{
+  "status": "complete_verified_full_expanded_background_native_input_handoff",
+  "active_models": 305434,
+  "active_model_mask_states": 610868,
+  "full_pairs": 146172,
+  "new_pairs": 74712,
+  "pending_catalog_reuse_pairs": 71460,
+  "collection_model_counts": {
+    "primary": 276682,
+    "reference": 24804,
+    "background": 303802,
+    "legacy_reference": 14540
+  },
+  "collection_input_states": {
+    "primary": 553364,
+    "reference": 49608,
+    "background": 607604,
+    "legacy_reference": 29080
+  },
+  "overlapping_models": 14593,
+  "overlapping_model_mask_states": 29186,
+  "active_input_counts": {
+    "full:ready": 305434,
+    "plddt70:ready": 299632,
+    "plddt70:too_few_retained_residues": 5802
+  },
+  "directed_native_input_counts": {
+    "full:ready": 149424,
+    "plddt70:ready": 144864,
+    "plddt70:input_unavailable": 4560
+  },
+  "actual_ready_PDB_files": 657825,
+  "actual_raw_coordinate_models": 305434,
+  "raw_coordinate_bytes": 128483810501,
+  "ready_PDB_bytes": 19651660401,
+  "producer_receipt": "results/structural_comparisons/expanded-background-native-handoff-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "1f844a82be7e79b0cb1416b07a7673f5eb77b98d060f6817771124bc6d41378e",
+  "independent_readback": "results/structural_comparisons/expanded-background-native-handoff-20261001-v1/readback.json",
+  "independent_readback_sha256": "818434e23c14dab40d9c365a46db283b8aa97bd5b33a47a69c848fc0884d3027",
+  "full_hash_archive": "results/structural_comparisons/expanded-background-native-handoff-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "ac47f9416c67b9466dca95221d927b8622a24543b2d5177eebeea67c4522bf60",
+  "bound_source_hashes": 964012,
+  "exact_process_journals_checked": 2,
+  "scientific_eligibility": false,
+  "scope": "Complete146172 expanded-background pairs retain all305434active models,610868active model/mask states and all original candidate/old-catalog flags. Four fully read-back input collections retain all1239656source states, globally byte/semantic-qualified overlaps and source origins;224active models absent from modern three collections retain legacyreference provenance. Every needed rawCIF/current or overlapping readyPDB actual hash checked. All74712new native pair states preserved,71460catalog-matched pairs remain pending exact old-input/checkpoint/numeric/geometry qualification. Independent full SQL/source/model/mask/order/partition reconstruction and2exact original journals required. No favorable collection, model/reference, mask or coverage substitution; no old result acceptance, native geometry or biological matching/inference. All8aims remain incomplete; GPU inference paused."
+}

@@ -1658,3 +1658,20 @@ production completion or a biological pilot. TM-scores bind native output
 without independent optimization. No biological effect, rate or calibrated
 selection inference follows from numerical eligibility alone. [Full workflow
 and prelaunch resources](terminal-sister-backgrounds-20260927.md#full-four-collection-input-union-and-new-measurements-october-1).
+
+Subsequently, full input-union source/SQL readback and both original journals
+passed, binding 964,012 source/artifact hashes. All 610,868 active input states,
+global overlaps and 146,172 work pairs are closed. The native runner has started
+input checks; production native numerical/geometry completion remains pending.
+Actual old-result qualification is launched over all 584,688 full-design states.
+Reference-before-background preference is fixed, with 11/71,449 source pairs;
+new, incompatible and nonalignment states remain explicit. Source coordinate,
+original residue/sequence/length/mask/status/PDB bytes and native settings must
+match. Every compatible original numeric row is reconstructed on the current
+coordinates; separate quaternion and alternate-SVD checks qualify the complete
+reuse exports and old geometry, with original numerical exclusions retained.
+Eight original source journals passed separate verification; final reuse
+closure requires both new plus eight original journals. Actual-native synthetic
+software checks rejected 12 rehashed exports, preserving reversed orders,
+incompatibilities and RMSD/nonunique/unavailable states. Production reuse,
+new/reused result union and calibrated evolutionary inference remain pending.

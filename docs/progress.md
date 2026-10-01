@@ -10397,3 +10397,23 @@ does not establish universal coverage or complete the biological project.
   Production union/measurements remain pending, as do actual reuse checks for
   all 71,460 matching old-catalog pairs and full comparative calibration. All
   eight aims remain incomplete; original CPU jobs live and GPU inference paused.
+
+- October 1: full four-collection input-union readback and closure completed,
+  binding 964,012 actual source/artifact hashes and both original journals.
+  Every 1,239,656 source input state, 610,868 active state, 14,593 overlapping
+  model and 146,172 pair passed complete source/SQL/byte reconstruction. Native
+  runner started its source-input checks, retaining 294,288 ready and 4,560
+  unavailable directed states. Actual old-result reuse producer is launched for
+  all 584,688 full-design states, with 11 reference/71,449 background candidate
+  pairs selected by fixed source preference and 74,712 new pairs retained as
+  pending. All 142,906 matched current models have actual raw/PDB/projection/
+  checkpoint checks required, with full numerical/current-coordinate and
+  separate quaternion/alternate-SVD reconstruction. Eight original source
+  journals passed; final reuse closure requires ten original journals. Software
+  suite passed actual-native old-background I/O and 16-state full reuse checks,
+  preserving order reversal, six nonunique/one discrepant/four unavailable/one
+  usable reused states. Twelve rehashed false exports rejected; incompatible
+  masks stay pending without source switching. Two CPU/64 GiB, no swap/GPU/new
+  charges; full resource estimates recorded before launch. Production native/
+  reuse completion, full result union, controls and calibration remain open.
+  All eight aims incomplete; original CPU jobs preserved, GPU inference paused.

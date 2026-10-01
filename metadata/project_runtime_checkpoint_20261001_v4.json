@@ -1,0 +1,249 @@
+{
+  "status": "verified_full_input_union_complete_new_background_native_and_reuse_source_checks_live",
+  "checked_utc": "2026-10-01T19:22:20.304010+00:00",
+  "input_completion": "metadata/expanded_background_native_handoff_completed_20261001.json",
+  "input_completion_sha256": "b18c8bbe41b5d03c683a7422171d8061088b3edaf8b702f8679e89cb6b75c5a9",
+  "input_bound_source_hashes": 964012,
+  "input_exact_journals": 2,
+  "input_active_models": 305434,
+  "input_active_masks": 610868,
+  "input_full_pairs": 146172,
+  "original_source_journal_audit": "metadata/expanded_background_reuse_original_source_journals_20261001.json",
+  "original_source_journal_audit_sha256": "ca370483c629f9b0dc165404c11d407ef6c661f210033fedaf792595021a365a",
+  "verified_pipeline_handles": [
+    {
+      "launch": "metadata/expanded_background_alignment_launch_20261001.json",
+      "launch_sha256": "dc727f2d95d7b5ab08d08bb86c44bac27451fb372b90ea8612dd08e2e699ee03",
+      "pid": 4086945,
+      "created": 1790880442.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 585422,
+          "created": 1790881944.45,
+          "status": "sleeping",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_expanded_background_alignments.py",
+            "--plan",
+            "metadata/expanded_background_alignment_plan_20261001.json"
+          ],
+          "cpu_seconds": 267.25,
+          "rss_gib": 3.2490081787109375
+        },
+        {
+          "pid": 797341,
+          "created": 1790882529.92,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/c7/c794e5c3e5b4789b640b9cd495f77150af7c752e4513c317a36515b22b935504-full.pdb",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/0c/0cf1815f5ae9f906bf979d8b227ebd1f822ebe3141a85fe133f263afaad1bb86-full.pdb",
+            "-mol",
+            "prot",
+            "-mm",
+            "0",
+            "-outfmt",
+            "0",
+            "-ter",
+            "2"
+          ],
+          "cpu_seconds": 7.9799999999999995,
+          "rss_gib": 0.017578125
+        },
+        {
+          "pid": 797342,
+          "created": 1790882529.93,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/0c/0cf1815f5ae9f906bf979d8b227ebd1f822ebe3141a85fe133f263afaad1bb86-full.pdb",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/c7/c794e5c3e5b4789b640b9cd495f77150af7c752e4513c317a36515b22b935504-full.pdb",
+            "-mol",
+            "prot",
+            "-mm",
+            "0",
+            "-outfmt",
+            "0",
+            "-ter",
+            "2"
+          ],
+          "cpu_seconds": 7.97,
+          "rss_gib": 0.017578125
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_assessment_launch_20261001.json",
+      "launch_sha256": "4c13473b9db9e3205fd7d4d8faf13a4d83a2eba41231853a18e1d1e24c1c6e69",
+      "pid": 4086957,
+      "created": 1790880442.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_assessment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_readback_launch_20261001.json",
+      "launch_sha256": "87a58ba492cb45f0065044d76dab92410f1fb208352a1f96c36fb64c03c5a8b0",
+      "pid": 4086965,
+      "created": 1790880442.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_closure_launch_20261001.json",
+      "launch_sha256": "2544551ce1a4e772f0efc34ed4fa69ed920cda45126ae93f4d4352e28bfc0314",
+      "pid": 4086969,
+      "created": 1790880443.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_reuse_producer_launch_20261001.json",
+      "launch_sha256": "13a3ca79f207b0f7d7499a157e4df66c073489285c09cdc1e823d3af7f84741e",
+      "pid": 786634,
+      "created": 1790882075.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_producer_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 786647,
+          "created": 1790882076.45,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/qualify_expanded_background_reuse.py",
+            "--plan",
+            "metadata/expanded_background_reuse_plan_20261001.json"
+          ],
+          "cpu_seconds": 318.82,
+          "rss_gib": 9.048946380615234
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_reuse_reader_launch_20261001.json",
+      "launch_sha256": "86b01741a2ce8b830b01ee39d215ee621a94236f0952559d0fb6a762a44be7c1",
+      "pid": 786638,
+      "created": 1790882075.69,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_reader_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_reuse_closure_launch_20261001.json",
+      "launch_sha256": "2346d1f4af813b6a67af362c10ebe83c6efb26241c862a52c51bc22c339b4bab",
+      "pid": 786642,
+      "created": 1790882075.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    }
+  ],
+  "preserved_original_live_jobs": [
+    {
+      "pid": 433565,
+      "created": 1790709562.09,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_whole_protein_ml.py",
+        "--plan",
+        "metadata/whole_protein_ml_plan_20260929.json"
+      ],
+      "children": 17
+    },
+    {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_whole_protein_ml_outputs.py",
+        "--plan",
+        "metadata/whole_protein_ml_output_audit_plan_20260929.json"
+      ],
+      "children": 0
+    },
+    {
+      "pid": 338483,
+      "created": 1790533714.57,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_polynomial_ml.py",
+        "--plan",
+        "metadata/full_polynomial_ml_plan_20260927.json"
+      ],
+      "children": 9
+    },
+    {
+      "pid": 771240,
+      "created": 1790566377.27,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ],
+      "children": 16
+    },
+    {
+      "pid": 863281,
+      "created": 1790353565.67,
+      "status": "sleeping",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_structure_retrieval.py",
+        "--plan",
+        "metadata/recovery_20260925_structure_retrieval_plan.json"
+      ],
+      "children": 1
+    }
+  ],
+  "new_background_measurements_complete": false,
+  "old_background_reuse_complete": false,
+  "full_background_result_union_complete": false,
+  "gpu_inference_paused": true,
+  "all_eight_scientific_aims_incomplete": true,
+  "scope": "Closed full input producer/independent source-grid/archive hashes and original2journals checked. All7new measurement/reuse exact PID/create/CMD handles and immutable wrapper/source pins revalidated; source-checking children live, no production native result count or accepted reuse claimed. Original5CPU/network jobs preserved. Native/reuse geometry/readback/closure and full comparative controls remain required; no GPU/charges or scientific completion."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "passed_full_expanded_background_actual_native_reuse_software_checks",
+  "synthetic_full_pairs": 4,
+  "synthetic_directed_states": 16,
+  "synthetic_reused_states": 12,
+  "synthetic_reconstructed_alignments": 8,
+  "old_background_three_partition_IO_checked": true,
+  "reversed_old_reference_orders_preserved": true,
+  "numerical_flags_and_unavailable_states_preserved": true,
+  "incompatible_mask_requires_new_measurement_without_source_substitution": true,
+  "rejected_rehashed_false_exports": [
+    "missing_state",
+    "duplicated_state",
+    "wrong_preference",
+    "wrong_original_order",
+    "wrong_model_role",
+    "invented_native_hash",
+    "cleared_degenerate",
+    "cleared_discrepancy",
+    "promoted_new_pair",
+    "changed_numeric",
+    "changed_geometry",
+    "false_total"
+  ],
+  "maximum_absolute_fixture_reused_rmsd_difference": 2.177107265849051e-15,
+  "maximum_scaled_fixture_reused_quaternion_curvature_error": 1.7048826137248506e-16,
+  "script_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_expanded_background_reuse_cases.py": "51bc0998fbf67b5e52bc57ee1384b434e25c391e3a58d233fe2fb8dbbf09b430",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/qualify_expanded_background_reuse.py": "93490968d293504db38d2c6f6758170724df28b42fcca6d6d49766abef3618ce",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_expanded_background_reuse.py": "e2c69f3ceb96a0a9d0d1b821ea83dbb4fec3712545a4f1d3aaec3facf992ff7d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/expanded_background_reuse_sources.py": "0f76fa1a4ec577ea928445a92eeb659362198dd56ce9f88ee58ecfcac399e7a7"
+  },
+  "usalign_sha256": "7d3f62aa3b2d050e0da4d5915c2edab46f5232762acd61c478055d14a835c784",
+  "scope": "Complete16-state synthetic grid with actual native original reference/background records and full three-partition old-background input/proof/source contracts. Current closed input-union I/O and original proof/journal provenance synthesized only here. Full actual-source input compatibility, fixed reference-before-background choice, reversed old orders, original flag retention, SVD/quaternion reconstruction,12rehashed false outputs and incompatible masks checked. No real full input-union/old-journal proof, accepted production reuse, biological pilot or biological effect claim."
+}

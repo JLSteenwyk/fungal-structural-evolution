@@ -1,0 +1,250 @@
+{
+  "status": "passed_eight_original_old_reference_background_native_numeric_geometry_reader_journals",
+  "checked_utc": "2026-10-01T19:10:49.298872+00:00",
+  "services": [
+    {
+      "launch": "metadata/duplication_reference_alignment_launch_20260926.json",
+      "unit": "fungal-duplication-reference-alignments-20260926.service",
+      "pid": 147498,
+      "created": 1790472032.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_duplication_reference_alignments.py",
+        "--plan",
+        "metadata/duplication_reference_alignment_plan_20260926.json"
+      ],
+      "plan": "metadata/duplication_reference_alignment_plan_20260926.json",
+      "plan_sha256": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 2034,
+      "journal_sha256": "732d87f8b40643c452c6388ffb056e8865cd3ca11b6396fc0b25825e5513b902",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "56142498569000",
+          "MEMORY_PEAK": "2910416896",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json",
+      "unit": "fungal-reference-rmsd-diagnostic-20260927.service",
+      "pid": 2926185,
+      "created": 1790514338.56,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/diagnose_reference_alignment_rmsds.py",
+        "--plan",
+        "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json"
+      ],
+      "plan": "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json",
+      "plan_sha256": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 13,
+      "journal_sha256": "de33189afc6fa4d5380d061d78f3c6d4b7beb1edbefc37df87bde585492e6a50",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "203791704000",
+          "MEMORY_PEAK": "6522064896",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/duplication_reference_geometry_launch_20260927.json",
+      "unit": "fungal-reference-geometry-20260927.service",
+      "pid": 2934070,
+      "created": 1790514466.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/assess_reference_alignment_geometry.py",
+        "--plan",
+        "metadata/duplication_reference_geometry_plan_20260927.json"
+      ],
+      "plan": "metadata/duplication_reference_geometry_plan_20260927.json",
+      "plan_sha256": "0f3f30094539badd4af0413548b40cf51b269abf2ff94ba552aff5015b32f6e0",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 32,
+      "journal_sha256": "1c807b5782b49a395d7bc1a859853e1c13f8abfbcaecf44f5ab1895868617d77",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "229754274000",
+          "MEMORY_PEAK": "49147904",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json",
+      "unit": "fungal-reference-geometry-readback-20260927-v2.service",
+      "pid": 2963630,
+      "created": 1790514911.1,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_reference_alignment_geometry_v2.py",
+        "--plan",
+        "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json"
+      ],
+      "plan": "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json",
+      "plan_sha256": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 26,
+      "journal_sha256": "abfb00541746bb02fdcfc0d641349a1b2d9fc2d65eec443d0e970ac938a9daa7",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "217324072000",
+          "MEMORY_PEAK": "4363583488",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/background_alignment_launch_20260927.json",
+      "unit": "fungal-background-alignments-20260927.service",
+      "pid": 2038561,
+      "created": 1790501114.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_background_alignments.py",
+        "--plan",
+        "metadata/background_alignment_plan_20260927.json"
+      ],
+      "plan": "metadata/background_alignment_plan_20260927.json",
+      "plan_sha256": "c891663540eca106e1a65cb667581d28cd7749d02039f6d2a0412ae0ebd1d328",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 4466,
+      "journal_sha256": "17a7dc73fcc1c69962dac939c0a01da41e244f0cdbb8c09b85df0f20729dc29a",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "269012182799000",
+          "MEMORY_PEAK": "8589934592",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json",
+      "unit": "fungal-background-rmsd-diagnostic-20260928.service",
+      "pid": 2541564,
+      "created": 1790644946.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/diagnose_background_alignment_rmsds.py",
+        "--plan",
+        "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json"
+      ],
+      "plan": "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json",
+      "plan_sha256": "7e0db1101ffbe0b15376b853635317fdd04aaedf6fed0eda536e37dbea71a1c9",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 28,
+      "journal_sha256": "39904584c4f0738c64c359457fbace055b1ddbba46235bee4e6d1e8c298bd51e",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "694532304000",
+          "MEMORY_PEAK": "10638397440",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/background_alignment_geometry_launch_20260928.json",
+      "unit": "fungal-background-alignment-geometry-20260928.service",
+      "pid": 2544825,
+      "created": 1790645165.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/assess_background_alignment_geometry.py",
+        "--plan",
+        "metadata/background_alignment_geometry_plan_20260928.json"
+      ],
+      "plan": "metadata/background_alignment_geometry_plan_20260928.json",
+      "plan_sha256": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 62,
+      "journal_sha256": "85fead975fd5c1fb0a877de254dd4b214ac79e292e1b8aa9765e99b6fd490d45",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "716450649000",
+          "MEMORY_PEAK": "8300003328",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/background_alignment_geometry_readback_launch_20260928.json",
+      "unit": "fungal-background-geometry-readback-20260928.service",
+      "pid": 2550726,
+      "created": 1790645500.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_background_alignment_geometry.py",
+        "--plan",
+        "metadata/background_alignment_geometry_readback_plan_20260928.json"
+      ],
+      "plan": "metadata/background_alignment_geometry_readback_plan_20260928.json",
+      "plan_sha256": "f6c9ad610a6b43c33c2e0084b826cba735cec384624877de816c8f8eff29bcb9",
+      "terminal_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "original_process_messages": 42,
+      "journal_sha256": "1024d02b378a8b2fb6c52c4e9af0cc9b9e06d5a83ee0041ce126dd4d3012fc51",
+      "completion_resources": [
+        {
+          "CPU_USAGE_NSEC": "701175522000",
+          "MEMORY_PEAK": "8717045760",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "metadata/duplication_reference_alignment_launch_20260926.json": "75950d7db3e1d625c97dd3ddc61dac3f46fcaba84eb3ab933f636840ff05c012",
+    "metadata/duplication_reference_alignment_plan_20260926.json": "f19a703ef05dcfc1c046db3372761515f6aaed5922a9baa98aeb3d7bd9c257a0",
+    "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json": "96f88fc3bbeeb08e663a55b8221ddc237fa55156db31d90be1e946fd6db71ef3",
+    "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json": "fc131ce37f6975f8705d55c85a6412904d8fd5551e9bc09d150f7b6f6301aa04",
+    "metadata/duplication_reference_geometry_launch_20260927.json": "ee11550874f59aabf892be8f23af88258f752532c9a4e7c9848978bbaa5bbb72",
+    "metadata/duplication_reference_geometry_plan_20260927.json": "0f3f30094539badd4af0413548b40cf51b269abf2ff94ba552aff5015b32f6e0",
+    "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json": "32fa0999794edfaba7d16cac2619c538029e6a7c6a334d26950683ca39150109",
+    "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json": "972d0e223a2c039fe7d2b98fbc6579cf33d34b8bf510475f3fe772eb2297ea59",
+    "metadata/background_alignment_launch_20260927.json": "3778e4eb09a1d4dde5c7e9e27feb9aea9d943cc5a020c46357c4ad28791f0f07",
+    "metadata/background_alignment_plan_20260927.json": "c891663540eca106e1a65cb667581d28cd7749d02039f6d2a0412ae0ebd1d328",
+    "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json": "e9b1eec457fd8b678af5dd70ea978548199c3b9254142984d535209a07ec4561",
+    "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json": "7e0db1101ffbe0b15376b853635317fdd04aaedf6fed0eda536e37dbea71a1c9",
+    "metadata/background_alignment_geometry_launch_20260928.json": "5184f1c13a687ba568e2b34f6f396e4b57f9be423c6db40895912c536fec30c4",
+    "metadata/background_alignment_geometry_plan_20260928.json": "a35421745cfd4745e21ec30e8612a5f115b1ef4660d6b585fc08f56818d24ee6",
+    "metadata/background_alignment_geometry_readback_launch_20260928.json": "74c4ada3fd7cbc2d6099dbc64d96a674ddbd379d24bea16e34dc102d23c17578",
+    "metadata/background_alignment_geometry_readback_plan_20260928.json": "f6c9ad610a6b43c33c2e0084b826cba735cec384624877de816c8f8eff29bcb9"
+  },
+  "scientific_eligibility": false,
+  "scope": "All eight originally captured native/diagnostic/geometry/independent-reader handles are absent or replaced, with original PID/CMD invocation-matched journal resource completion and success terminal states. Original create times preserved in their immutable launch records; source plans checked by launch SHA. This journal-only audit does not establish current full input/coordinate/checkpoint identity or authorize old result reuse. Full current-data reuse producer/reader and final ten-journal completion remain required."
+}

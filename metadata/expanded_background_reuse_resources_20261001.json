@@ -1,0 +1,47 @@
+{
+  "status": "planned_full_expanded_background_actual_input_checkpoint_and_geometry_reuse_qualification",
+  "checked_utc": "2026-10-01T19:14:35.743875+00:00",
+  "cpu": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "full_background_pairs": 146172,
+  "full_directed_dispositions": 584688,
+  "matching_old_pairs": 71460,
+  "matching_old_directed_states": 285840,
+  "new_native_pairs_kept_pending": 74712,
+  "new_native_states_kept_pending": 298848,
+  "selected_source_pairs": {
+    "reference_old": 11,
+    "background_old": 71449,
+    "no_old_source": 74712
+  },
+  "matching_unique_current_models": 142906,
+  "selected_source_unique_current_models": {
+    "reference_old": 22,
+    "background_old": 142884
+  },
+  "matched_current_raw_stat_bytes": 61664784336,
+  "matched_current_residues": 64779073,
+  "current_full_input_union_models": 305434,
+  "current_full_model_mask_states": 610868,
+  "source_preference": [
+    "reference_old",
+    "background_old"
+  ],
+  "output_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "per_stage_planning_hours": [
+    1,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "exact_original_source_journals": 8,
+  "required_final_original_journals": 10,
+  "available_memory_gib": 571.0757637023926,
+  "free_disk_gib": 10549.69235610962,
+  "basis": "Full584688pair/mask/order current design; current full independent input union and its2originaljournals required. Actual hash every reused raw/current/old PDB/checkpoint; full status/position/sequence/length/native setting equality; full old native and numerical/geometry proof contracts. Recompute every reused aligned numeric row by SVD on current identical inputs; separate reader reconstructs every reuse export and original numeric/geometry by vectorized/quaternion/gesvd methods. All flags/unavailable/incompatible/new-pending states preserved. Source preference fixed before outcomes, no favorable fallback or fresh native optimization. Final closure checks2new plus8original native/diagnostic/geometry/readback journals. Serial2CPU64GiB stages;1BLAS/noSwap;32GiBoutput/100GiBreserve. I/O and full source/archive/position checks dominate some stages; planning range uncalibrated, not ETA. No pilot/GPU/charges or biological acceptance."
+}

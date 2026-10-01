@@ -303,3 +303,20 @@ not a pilot or evidence that production data passed. Preserve failed legacy
 completion v1; corrected v2 adds explicit evidence pins and reuses the passed
 reader. Keep GPU inference paused, existing CPU jobs untouched and every
 scientific aim open.
+
+
+### October 1: qualify all actual old background states before result union
+
+Keep all 146,172 pairs and both masks/directions in the reuse qualification
+ledger, including 74,712 new pairs as pending. Use old reference first and then
+old background according to an outcome-independent fixed order; preserve all
+matching alternatives and source endpoint order. An input mismatch requires
+new measurement, not an alternative source chosen after observing a fit.
+Require actual raw/PDB/checkpoint hashes, full original residue/sequence/length/
+mask/status identity, native settings and complete original proof lineage.
+Reconstruct all reused aligned numeric values on current byte-identical inputs,
+then independently audit all exports, quaternion RMSDs and rotation geometry.
+Preserve numerical flags, unavailable and error states. Final reuse closure
+requires two new and eight original native/numeric/geometry/reader journals.
+The full new/reused result union and evolutionary controls remain separate
+requirements; source or journal matches alone do not qualify a measurement.

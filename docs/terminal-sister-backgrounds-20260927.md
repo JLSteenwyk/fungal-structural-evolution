@@ -1737,3 +1737,102 @@ matched comparisons and calibrated evolutionary effects remain required.
 All eight scientific aims remain incomplete. Existing likelihood, polynomial,
 BALiPhy and AFDB jobs are preserved; GPU inference remains paused and there
 are no new charges.
+
+
+## Full input union completed and actual old-result reuse October 1
+
+The entire independent source/SQLite reconstruction passed every 1,239,656
+source input state, all 610,868 active states, 14,593 globally overlapping
+models and all 146,172 background pairs. The
+[completed input union](../metadata/expanded_background_native_handoff_completed_20261001.json)
+binds 964,012 actual source/artifact hashes and both original producer/reader
+journals. This verifies all 305,434 active raw coordinate models and 657,825
+written PDB files including overlap provenance, covering 128,483,810,501 raw
+coordinate bytes and 19,651,660,401 PDB bytes. Full/masked ready directed native
+states number 149,424/144,864, with 4,560 unavailable masked dispositions. The
+eight-worker new alignment runner has started its complete source-input checks;
+native measurement, numerical/geometry readback and measurement closure remain
+pending. Finishing this input gate does not establish a comparative effect.
+
+The [full reuse pipeline](../metadata/expanded_background_reuse_pipeline_started_20261001.json)
+is also launched. It exhausts 146,172 pairs under both masks and directions,
+or 584,688 states. A fixed reference-before-background source preference assigns
+11 old-reference and 71,449 old-background pairs, or 285,840 candidate states;
+the other 298,848 states retain new-native-pending status in this separate
+ledger. Both source choices and their original order are explicit. Alternative
+matching source labels remain in the full output; a reference input mismatch
+does not trigger a fallback chosen after observing an outcome.
+
+The old-background loader validates all three original input partitions and
+the complete original native manifest, binds the precise original input bundle,
+and checks the full diagnostic/geometry/independent-reader lineage. The
+old-reference source uses the existing audited source contract. Every needed
+current/old raw source, original residue map, full and retained sequence,
+length, mask/status/reason, written PDB bytes, native binary/options/timeout and
+directed checkpoint is compared. The candidate pairs use 142,906 current
+models (22 reference and 142,884 background), representing 64,779,073 residues
+and 61,664,784,336 raw bytes by prelaunch file statistics. Statistics are a
+resource estimate; production qualification requires actual byte hashes.
+
+For every compatible reused alignment, the producer reconstructs the original
+numeric values on the current byte-identical coordinates using proper-rotation
+SVD fits. The reader independently rebuilds every input-identity and directed
+reuse export, fixed source choice and old-to-current endpoint order. Vectorized
+residue mapping, quaternion RMSD, LAPACK `gesvd` spectra and quaternion
+curvature check each reused successful original result. Both full and masked
+states remain explicit; confidence uses rounded PDB values. Original RMSD
+discrepancies, short alignments, nonunique rotations, unavailable inputs and
+native/parse/timeout failures remain in the results. No source substitution,
+fresh native optimization or automatic retry is performed. TM-scores bind
+native text without independent optimization.
+
+Incompatible input states receive `incompatible_inputs_require_new_measurement`
+and remain unqualified, with null result fields rather than zero distances.
+If the production check finds any such states, they require a separate explicit
+native workload and cannot be resolved by editing the already launched plans.
+All original catalog and work dispositions stay in the copied complete ledger.
+The reuse producer/reader completion is not the union of reused and new results;
+that full union and its independent readback remain required.
+
+The [original source-journal audit](../metadata/expanded_background_reuse_original_source_journals_20261001.json)
+verified all eight original reference/background native, numeric, geometry and
+independent-reader process invocations, their pinned source plans, original
+PID/command journal messages, matching completion resources and successful
+terminal states. This journal-only check does not establish current coordinate
+or checkpoint identity. Final reuse closure requires those eight journals plus
+both new producer/reader journals and the complete current byte/artifact proofs:
+ten original journals in total.
+
+The [new software suite](../metadata/expanded_background_reuse_fixture_validation_20261001.json)
+passed a full 16-state synthetic grid: 12 old-source states and four new-pending
+states, with eight original native alignments reconstructed. It exercises the
+actual old-background three-partition I/O contract and reference order reversal.
+Six nonunique fits, one RMSD discrepancy, four unavailable states and one usable
+state remain explicit. Twelve rehashed false exports were rejected. A separate
+mask incompatibility left four states requiring fresh measurement, eight reused
+and four new-pending without alternative-source selection. Independent RMSDs
+agreed within 2.178e-15 Å; scaled curvature error was at most 1.705e-16. Current
+input-union I/O and original proof/journal provenance are synthetic only in this
+software suite. It does not establish real production reuse, actual original
+journal completion or a biological pilot.
+
+[Prelaunch resource estimates](../metadata/expanded_background_reuse_resources_20261001.json)
+allocate two CPU/64 GiB per serial producer, reader and completion stage, no
+swap, one BLAS thread, 32 GiB output allowance and 100 GiB disk reserve. The
+per-stage planning range is 1–24 hours and is uncalibrated, not an ETA. Full
+current-source hashing, original-position reconstruction, selected old-source
+readback and current-coordinate fits add I/O and CPU overhead. Existing
+likelihood/polynomial/BALiPhy/AFDB handles are preserved; native new measurements
+and old-result qualification have separate immutable outputs. GPU inference
+remains paused; no new charges. Production reuse and measurement closure,
+full union, coverage/domain/PAE/prediction/sequence-locked/missingness/phylogenetic
+controls and calibrated effects remain required. All eight aims remain incomplete.
+
+The [runtime check](../metadata/project_runtime_checkpoint_20261001_v4.json)
+binds the closed input/archive/proof metadata and records the exact seven live
+native/reuse pipeline wrapper handles and five preserved original jobs. Native
+USalign execution subsequently began. A
+[live progress snapshot](../metadata/expanded_background_native_progress_snapshot_20261001.json)
+records saved native dispositions and retains the live wrapper identities.
+These changing checkpoint counts are descriptive progress, not full numerical
+acceptance. The complete geometry/readback/closure requirements remain in force.
