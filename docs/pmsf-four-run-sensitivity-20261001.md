@@ -268,3 +268,58 @@ comparisons; they do not substitute for the 16 real subset refits, optimize
 subset branch lengths, produce dates or structural rates, establish a root
 or demonstrate model adequacy. Complete native-versus-reference and
 cross-policy comparisons remain required; all eight aims remain incomplete.
+
+
+### Complete retained-reference comparisons queued October 1
+
+`compare_retained_tree_views.py` will compare every projected ML/consensus
+view within each of the four actual retained cohorts. The full grid has
+32 views and 64 comparisons: six cross-run ML, six cross-run consensus and
+four within-run ML/consensus pairs per cohort. Exports retain every union
+split presence/absence cell, RF and normalized RF, every incompatible pair
+of unique splits and a canonical taxon quartet witnessing each conflict.
+Conflicts are streamed to gzip. The support screen requires recomputed
+projected UFB >=95 for both splits; SH-aLRT remains unavailable. This is a
+descriptive screen conditional on original full-cohort inference, not a
+formal topology test or native-refit robustness claim.
+
+The separate reader reconstructs all 32 projected topologies and path lengths
+from the original raw baseline trees using DendroPy taxon deletion. DendroPy
+RF and bipartition compatibility independently check every comparison,
+conflict, quartet, support field and presence cell. Software tests passed
+the full four-cohort/32-view/64-pair grid, including support at 95, below 95
+and above 95, and rejected 14 rehashed false exports. Trees and supports
+in the fixture are synthetic; no production bootstrap/journal or biological
+pilot claim follows from these tests.
+
+The producer is queued behind the actual projection closure and requires
+its full hash archive and both original completion journals. Its independent
+reader and separate two-journal completion closure are also queued. Output:
+`results/phylogeny/full-retained-baseline-tree-comparisons-20261001-v1`;
+eventual completion locator:
+`metadata/retained_tree_comparisons_completed_20261001.json`. Production
+comparisons and their original-journal closure remain pending.
+
+Resource assessment preceded launch: the closed original comparison has at
+most 39 unique splits per view pair. Taxon projection cannot increase RF for
+these binary matched trees, giving a conservative 64 x 39² = 97,344 conflict
+candidate bound. Each serial producer/reader/closure uses two CPU cores,
+16 GiB RAM, no swap and one BLAS thread; 2 GiB output allowance and 100 GiB
+disk reserve. The 0.01–4-hour planning range per stage excludes dependency
+waits and is uncalibrated. No new inference, GPU use or charges. Actual source
+cohorts and 197 bindings were checked before queuing, with the completed
+projection proof still required before production output can be created.
+
+Full native-versus-reference and cross-policy comparisons will still be
+needed after the 16 native refits are closed. These reference comparisons
+do not accept a root, dating, model adequacy or a biological species
+framework and do not complete any of the eight evolutionary aims.
+
+
+At the final October 1 checkpoint, the projection producer has terminated
+successfully after all 16 combinations, with 33,088 edge rows and 19,289
+empirical split-frequency rows. Its original captured process completion
+journal and every source/output hash were checked. Independent full pruning
+readback has started and the two-journal closure is pending. The producer's
+28/32 role-boundary presence count remains provisional and conditional on
+original inference; no root or native subset robustness is accepted from it.

@@ -1,0 +1,23 @@
+{
+  "status": "planned_full_32_view_64_pair_matched_taxon_baseline_comparison",
+  "checked_utc": "2026-10-01T23:48:00.445034+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.01,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 701.7699203491211,
+  "free_disk_gib": 10523.35470199585,
+  "source_max_unique_splits_per_original_baseline_comparison": 39,
+  "conservative_conflict_candidate_upper_bound": 97344,
+  "basis": "All4closedretainedtaxon cohorts x8referenceML-consensusviews=32views/64pairs. Originalclosed16comparison source hasmaximum39unique splitsperbinaryview pair; taxonprojection cannot increase RF, so64x39^2=97344conservative conflict candidates, before compatibility screening. Streamgzip conflicts; fullpresencegrid/currenttaxonroles/specificprojectedUFB95 criteria retained. IndependentDendroPy rawtree pruning/RF/bipartition reader reconstructs everyexport. No new inference/GPU/charges. Serial2CPU16GiBnoSwap1BLAS producer/reader/closure,2GiBoutputallowance/100GiBreserve. Sources197bindings verified beforequeue; realprojectionclosure required beforeoutput. Wholeproduction timinguncalibrated,0.01\u20134h/stage excludingdependencywait; fixtures32views64pairs/14rehashedfalseexports passed withsynthetictrees/supports andnooriginalproductionjournalclaim."
+}

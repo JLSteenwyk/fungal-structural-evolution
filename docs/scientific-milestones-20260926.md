@@ -766,3 +766,11 @@ the eight scientific aims. GPU prediction remains paused.
   cover 16,000 bootstrap states/32 views, preserving unavailable SH-aLRT and
   full-inference path-length interpretation. Native comparisons and biological
   framework qualification remain required; no aim is marked complete.
+
+
+- October 1 retained-reference robustness: complete 32-view/64-pair comparison
+  and independent raw-tree RF/bipartition reader are queued after full
+  projection closure, with separate original-journal completion. Synthetic
+  full-grid/corruption checks passed; actual comparison results remain pending.
+  Full native-refit comparisons and biological framework qualification remain
+  required, with all eight scientific aims incomplete.

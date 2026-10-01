@@ -1823,3 +1823,15 @@ complete projected edge/frequency/role tables. Production and original
 journal closure are still pending. This diagnostic supplies a matched-taxon
 reference and does not replace actual subset inference or establish a root,
 model adequacy, dates or calibrated sequence–structure effects.
+
+
+Projected baseline topological sensitivity will be compared within each exact
+retained cohort across all crossed alignment/guide runs and ML/consensus
+views. Every incompatible pair of unique splits is retained with a quartet
+witness, and every union split receives a presence/absence row for each
+view. Recomputed projected UFB >=95 is a descriptive support screen; SH-aLRT
+is unavailable. Independent raw-tree pruning, DendroPy RF and bipartition
+compatibility checks reconstruct all comparisons and conflicts. Production
+and journal closure remain pending, and native-versus-reference comparisons
+will remain necessary. Reference-only comparisons conditional on the original
+full-cohort fit do not establish native subset robustness or model adequacy.

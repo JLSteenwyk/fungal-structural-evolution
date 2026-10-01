@@ -10545,3 +10545,27 @@ does not establish universal coverage or complete the biological project.
   checked before launch; two CPU/16 GiB/no swap/one BLAS thread per serial
   stage, no GPU or charges. Actual full readback/closure and comparisons
   against all 16 native refits remain pending. All eight aims incomplete.
+
+
+- October 1: complete retained-reference comparisons are queued after full
+  projection closure: 32 views, 64 pairs, every split-presence cell, all
+  incompatible unique-split pairs and canonical quartet witnesses. Projected
+  UFB95 screens retain unavailable SH-aLRT. Independent raw DendroPy pruning,
+  RF and bipartition compatibility reconstruct every export; two original
+  producer/reader journals and full hashes required for closure. The full
+  software grid passed, including exact/below/above95 support, and rejected
+  14 rehashed false exports; trees/supports are synthetic, not production
+  inference or a pilot. Resources estimated before launch: two CPU/16 GiB/
+  no swap/one BLAS thread per serial stage, no GPU or charges. Actual full
+  comparison/readback/closure and native-versus-reference comparisons remain
+  pending; all eight scientific aims incomplete.
+
+
+- October 1: full retained-baseline projection producer finished all 16
+  baseline/cohort combinations, 33,088 projected edges, 19,289 empirical
+  split-frequency rows and 32 role-boundary rows. Original PID/create/CMD
+  absence, captured completion journal and all output/source hashes verified.
+  Independent full pruning reader is now running; complete readback and
+  two-journal closure remain pending. The producer reports 28/32 boundary
+  views with the declared role split, a provisional diagnostic conditional
+  on original inference, not a qualified root or native subset result.

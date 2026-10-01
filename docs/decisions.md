@@ -430,3 +430,12 @@ full collection/journal/biological qualification remains separate.
   Require complete independent pruning and two original completion journals.
   Keep the actual 16 supported refits and subsequent biological qualification
   as required stages.
+
+
+- October 1: retain every comparison/conflicting split and quartet across all
+  32 retained-reference views, rather than only selected stable branches.
+  Compare views on the same cohort and report projected UFB95 criteria with
+  unavailable SH-aLRT. Require full projection closure before production and
+  independently reconstruct RF/compatibility from raw pruned trees. Keep
+  actual native-versus-reference comparisons and biological framework
+  qualification as separate required work.

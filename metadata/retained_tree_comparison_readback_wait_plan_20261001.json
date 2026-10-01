@@ -1,0 +1,34 @@
+{
+  "dependencies": [
+    "metadata/retained_tree_comparison_launch_20261001.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_retained_tree_comparisons.py",
+    "--plan",
+    "metadata/retained_tree_comparison_plan_20261001.json",
+    "--output",
+    "results/phylogeny/full-retained-baseline-tree-comparisons-20261001-v1/readback.json"
+  ],
+  "pins": {
+    "scripts/retained_tree_comparison_sources.py": "8533ea84c56c1aea1e62b2176a43834b03ccc2b983cc13c45542fe27892be3b0",
+    "scripts/compare_retained_tree_views.py": "4fa02239bcc5e14e17a825a02cb0fb406e471c951ce9ca0d7ae95f7b77ce0f8b",
+    "scripts/readback_retained_tree_comparisons.py": "cd862980e906ab961558b79bd46ddbce9ea8797abe8986d0fbce8bde1e60dbfd",
+    "scripts/close_retained_tree_comparisons.py": "a12c53ff02229a0a5601f0985ec9327a1dfb5d33e5ea2a89bf1c85aa604179bd",
+    "scripts/check_retained_tree_comparison_cases.py": "980ce175eac9bb464e7dbfff3e53fc4f40949dcea6be18c5683e5fb630025a31",
+    "scripts/retained_taxon_projection_sources.py": "dc6bf9e21bf228f3033aa54789ce06c0502267f3bde9b2bb988c1dc503f7d4e0",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/retained_taxon_projection_plan_20261001.json": "9bba4bd535fe98137836315ad3ad308a0976bca64b43298e2226338f76f843e1",
+    "metadata/retained_taxon_projection_closure_launch_20261001.json": "ccd992cf55dbd339b0660f03dc65c70317f43e42f113495ce7e460503927a170",
+    "metadata/retained_tree_comparison_resources_20261001.json": "1b1290678991acf180dab7b82d4d4db1158585c80f0569aa86d9236d08fb21cc",
+    "results/software-checks/retained-tree-comparison-cases-20261001-v1/receipt.json": "a7d34a377fe3cfda8e1850ccc709eb275ae9f121d325de0509d133ffe16609b5",
+    "metadata/retained_tree_comparison_plan_20261001.json": "9cf69f72d1eab9711cebac0c4061959b7959cac6d9003b0362a4efc897c800af",
+    "metadata/retained_tree_comparison_wait_plan_20261001.json": "792113ff8bb900f68e99222f3f757350a0c163e8b35282a7eccbb84d08616b7f",
+    "metadata/retained_tree_comparison_launch_20261001.json": "41614e614e7a0cabf1d07ad673b7c2080e64fba243b2f891fa9550176eb8aa73"
+  }
+}
