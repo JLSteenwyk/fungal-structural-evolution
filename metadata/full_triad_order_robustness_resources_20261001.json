@@ -1,0 +1,22 @@
+{
+  "status": "planned_complete_closed_fit_all_order_aggregation",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 8,
+  "planning_hours": [
+    0.25,
+    6
+  ],
+  "runtime_uncalibrated": true,
+  "fit_rows": 865792,
+  "robustness_groups": 108224,
+  "basis": "Full closed27056 ordered physical triads x2masks x8orders x2core definitions. Linear aggregation of18 numeric fields/six screens; independent full865792row disk SQLite indexed by exact key/order. Output allowance includes108224 full grid summaries, SQLite, large immutable provenance/hash archives. Serial2CPU32GiB/noSwap/1BLASthread stages; no sampled/pilot biological work. Runtime includes repeated complete464600source hash verification; range is uncalibrated planning bound, not measured ETA.",
+  "available_memory_gib": 719.5846290588379,
+  "free_disk_gib": 10559.004302978516,
+  "checked_utc": "2026-10-01T17:36:19.673882+00:00"
+}

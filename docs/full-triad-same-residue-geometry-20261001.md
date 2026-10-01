@@ -61,8 +61,9 @@ was 5.107e-14 Å. At 50 residues/70% original coverage, combined core/three-edge
 passes number 66,984 reference-common versus 59,480 cycle-consistent full-mask
 states, and 45,440 versus 43,624 pLDDT70 states. These counts include eight-order
 alternatives and are not independent events, physical triples or calibrated
-effect estimates. Full logical-context linkage and order/mask robustness
-qualification remain ahead.
+effect estimates. Full logical-context linkage and order/mask summaries have
+subsequently passed independent checks in [the complete contextual robustness
+workflow](full-triad-order-context-robustness-20261001.md).
 
 Each serial stage had two CPU cores, 32 GiB RAM, no swap and one BLAS thread.
 The output allowance is 32 GiB with a 100 GiB disk reserve. The planning range
@@ -84,7 +85,8 @@ The small completion record is
 `metadata/full_triad_same_residue_fit_completed_20261001.json`, with status
 `complete_verified_full_triad_same_residue_geometry`.
 
-Logical-context linkage, native assignment and reference-choice sensitivities,
+Full original-context linkage and fixed native assignment/reference-choice
+quality policies are now independently checked. Biological orthology,
 sequence-locked/domain/PAE/orientation controls, prediction calibration,
 phylogenetic dependence and calibrated inference remain required. The fourth
 crossed PMSF run separately passed its full profile/tree/bootstrap audit and

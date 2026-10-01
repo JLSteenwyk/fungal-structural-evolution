@@ -1,0 +1,30 @@
+{
+  "source_plan": "metadata/full_triad_order_robustness_plan_20261001.json",
+  "output": "metadata/full_triad_order_robustness_completed_20261001.json",
+  "launches": [
+    "metadata/full_triad_order_robustness_producer_launch_20261001.json",
+    "metadata/full_triad_order_robustness_readback_launch_20261001.json"
+  ],
+  "pins": {
+    "scripts/full_triad_robustness_sources.py": "07613408e90c7be7eaec0d6c7cd181d2d98be48595988f01859d2901e13b2291",
+    "scripts/summarize_full_triad_order_robustness.py": "2f97377694579c5030f5532cca1fba98c7aa5f4f60157b96721657da2371779c",
+    "scripts/readback_full_triad_order_robustness.py": "0e5ba61774bf980e7342ec5b6e8c70de5c07068fcedbb47c3358f8cd4c20711d",
+    "scripts/close_full_triad_order_robustness.py": "3cfa005525e3d99d89ce2cd7f1f8ea11757fe1a7acd9e46eeed620b1e7091b29",
+    "scripts/check_full_triad_order_robustness_cases.py": "89bdc19f9611243684a2d4129b52600d9fcc96bb267d0c9981907aa58b780d26",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_triad_same_residue_fit_plan_20261001.json": "aa87da4f6282f4743756030bcdc90bb809a9cb3e15722f3316ea900360a438e0",
+    "metadata/full_triad_same_residue_fit_completed_20261001.json": "81e3cef6036b851a71e6145b4364de40a3f25658334ffb91509e4272d4a81e9d",
+    "metadata/full_reference_triad_work_design_plan_20260930.json": "4c146c16f91fac8397f4fdbc42fcadcaf19da3cab19d293cd661632457873292",
+    "metadata/full_reference_triad_work_design_completed_20260930.json": "d70474566e3d618a858652a4f99cc8bab9d34c040f8c92d3663a0fb972a7dea4",
+    "metadata/full_triad_order_robustness_fixture_validation_20261001.json": "9e884fc6d51e0b5a16b952118ed721e778911106477253a4a4e37d8840d11da1",
+    "metadata/full_triad_order_robustness_resources_20261001.json": "113638ec0a42d7a7a31740bfb5672b2b90cb86cf94b17ace84f96e5448e94e9a",
+    "metadata/full_triad_order_robustness_plan_20261001.json": "0a8a8e04e92e904e45df7461fed41976aa8d8818ff62a4846348d23f82528bd7",
+    "metadata/full_triad_order_robustness_producer_launch_20261001.json": "f9f0c6b61fa42169ac3177b89881924ff3a449ef33422b7673e457324aa61d00",
+    "metadata/full_triad_order_robustness_readback_launch_20261001.json": "c67170fc6d2f7d6b3fdfe9039cc6a18a7660521707745516a2e57173a4f57735",
+    "metadata/full_triad_order_robustness_readback_wait_plan_20261001.json": "21c0ccddff36dec68525f51c894eceb8fbcc7f35b8f68bc23b635017a2d588fa"
+  },
+  "scope": "All27056 closed source-ready ordered physical triads x2masks x2common core definitions=108224 groups, retaining all8native alignment orders and all865792 fit dispositions. Full status/triple hashes/exclusions/order bitmaps,18 finite numeric ranges with NULL uncomputed values, strict all-order numeric contrast direction and six combined/core/inherited screens. All-order versus any-order summaries are descriptive physical comparisons, not independent evolutionary events, calibrated asymmetry or accepted native orthology. Full283409sourcecontexts/214461ties require subsequent parent-gated logical linkage. Source hashes, independent full SQL aggregation/readback and2exact original completion journals required. All8aims remain incomplete; GPU inference paused."
+}

@@ -652,3 +652,14 @@ eight-view nearest-role-boundary diagnostics and all supplemental-background
 CIF/PDB inputs are closed. Logical-context/order/mask qualification, actual
 background measurements, phylogenetic taxon/marker/model/root sensitivities and
 inferential calibration remain open; none of the eight aims is complete.
+
+
+October 1: full order/mask/core physical summaries and unchanged logical-context
+linkage are independently closed. Every 108,224 physical group and every
+283,409 original context/214,461 tie passed checks, including source-parent
+gates, missing values, reference ties, both masks and all eight orders. Complete
+24-row physical and 720-row contextual tables and a coverage figure are
+published. This supplies explicit comparative cohorts and uncertainty fields;
+it does not complete a scientific aim. Expanded background measurement/reuse,
+sequence-locked/domain/PAE/prediction controls, phylogenetic qualification and
+inferential calibration remain open. GPU inference remains paused.

@@ -1,0 +1,91 @@
+{
+  "robustness_plan": "metadata/full_triad_order_robustness_plan_20261001.json",
+  "robustness_completion": "metadata/full_triad_order_robustness_completed_20261001.json",
+  "triad_work_plan": "metadata/full_reference_triad_work_design_plan_20260930.json",
+  "triad_work_completion": "metadata/full_reference_triad_work_design_completed_20260930.json",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "expected": {
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "duplicate_reference_links": 428922,
+    "measured_triads": 27056,
+    "measured_robustness_groups": 108224
+  },
+  "resources": {
+    "status": "planned_full_original_context_geometry_linkage",
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 16,
+    "planning_hours": [
+      0.25,
+      8
+    ],
+    "runtime_uncalibrated": true,
+    "target_contexts": 283409,
+    "reference_tie_records": 214461,
+    "physical_groups": 108224,
+    "logical_reference_screen_decisions": 7720596,
+    "context_screen_states": 20405448,
+    "context_policy_decisions": 102027240,
+    "basis": "Full unchanged283409contexts x2designs x3mask scenarios x2cores x6screens x5policies, with all214461ties and original428922side links retained. Projection streams complete contexts and links normalized108224 physical summaries without duplicating numeric arrays. Independent full model-role/SHA/source-gate reconstruction plus SQL bitmap/policy aggregates; serial2CPU32GiB/noSwap/1BLASthread. SixteenGiB output allowance including raw-bound provenance/reader closure;100GiBfree reserve. No pilot, GPU or paid resources. Runtime range uncalibrated includes repeated source hashes.",
+    "available_memory_gib": 715.2675514221191,
+    "free_disk_gib": 10558.130073547363,
+    "checked_utc": "2026-10-01T17:45:42.815014+00:00"
+  },
+  "output": "results/structural_comparisons/full-triad-context-geometry-20261001-v1",
+  "pins": {
+    "scripts/full_triad_context_geometry_sources.py": "a2cd05f04950c622c1b79257ebe556d03972500ecc983260b8d9293c41d3a44d",
+    "scripts/project_full_triad_context_geometry.py": "2ff96d96607a791b752136cba6423df1e4d18ed18667cee9b2384909a081f29b",
+    "scripts/readback_full_triad_context_geometry.py": "ce4be480a771c197829162c1162b7da504f87b3709ebc33877cc97a384bd6f20",
+    "scripts/close_full_triad_context_geometry.py": "516d837b6f9b4c61fafec6f3dde7713c19ba5ac7abaa1b15e2b66a5b83a6b3f5",
+    "scripts/check_full_triad_context_geometry_cases.py": "c8fd42587cb735f373b6498c6d2783c27033f2f2fd4300a1d5e7995d0c211568",
+    "scripts/full_triad_robustness_sources.py": "07613408e90c7be7eaec0d6c7cd181d2d98be48595988f01859d2901e13b2291",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_triad_order_robustness_plan_20261001.json": "0a8a8e04e92e904e45df7461fed41976aa8d8818ff62a4846348d23f82528bd7",
+    "metadata/full_triad_order_robustness_completed_20261001.json": "3a1fd3f61d65dc07a6d5e13125f3421ba83f0d72e2bd1b079883f38ac80f96d6",
+    "metadata/full_reference_triad_work_design_plan_20260930.json": "4c146c16f91fac8397f4fdbc42fcadcaf19da3cab19d293cd661632457873292",
+    "metadata/full_reference_triad_work_design_completed_20260930.json": "d70474566e3d618a858652a4f99cc8bab9d34c040f8c92d3663a0fb972a7dea4",
+    "metadata/full_triad_context_geometry_fixture_validation_20261001.json": "b12f44f148a7b95ee236e5c6464bce961a07a2a4f46331ebdc89aadb759ae1c5",
+    "metadata/full_triad_context_geometry_resources_20261001.json": "f0d26592a1f129dcd6eb952ef4308e2f13f14119395f3456d36e1d2d90481d43"
+  },
+  "scope": "Full283409 original source contexts/566818designs/214461tied references/428922logical sides linked to all108224 verified physical triad/mask/core8order summaries. Every family/taxon/gene node/sequence distance/source choice remains unchanged; no replacement of missing lexical models. Full, p70 and both-mask order-bit intersections, source correspondence/native-own/native-both gates, strict all8order qualification and lexical/any/all-tie context policies retain excluded/unmeasured/empty/identical-model cases. Original parent eligibility gates even measured physical overlaps. Normalized physical result keys retain access to all18 numeric ranges; no averaging across masks/cores. Independent full SQL/model-key/source-gate readback and2exact original completion journals required. Seven720596reference-screen decisions/20405448context-screen states/102027240policy decisions are repeated logical screens, not independent events or pvalues. No accepted orthology/phylogeny/calibrated duplication effect. All8aims incomplete; GPU inference paused."
+}

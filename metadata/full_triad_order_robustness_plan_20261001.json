@@ -1,0 +1,86 @@
+{
+  "geometry_plan": "metadata/full_triad_same_residue_fit_plan_20261001.json",
+  "geometry_completion": "metadata/full_triad_same_residue_fit_completed_20261001.json",
+  "triad_work_plan": "metadata/full_reference_triad_work_design_plan_20260930.json",
+  "triad_work_completion": "metadata/full_reference_triad_work_design_completed_20260930.json",
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "expected": {
+    "correspondence_work_triads": 27056,
+    "mapping_states": 432896,
+    "fit_rows": 865792,
+    "robustness_groups": 108224
+  },
+  "numeric_readback_absolute_tolerance": 1e-09,
+  "resources": {
+    "status": "planned_complete_closed_fit_all_order_aggregation",
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 8,
+    "planning_hours": [
+      0.25,
+      6
+    ],
+    "runtime_uncalibrated": true,
+    "fit_rows": 865792,
+    "robustness_groups": 108224,
+    "basis": "Full closed27056 ordered physical triads x2masks x8orders x2core definitions. Linear aggregation of18 numeric fields/six screens; independent full865792row disk SQLite indexed by exact key/order. Output allowance includes108224 full grid summaries, SQLite, large immutable provenance/hash archives. Serial2CPU32GiB/noSwap/1BLASthread stages; no sampled/pilot biological work. Runtime includes repeated complete464600source hash verification; range is uncalibrated planning bound, not measured ETA.",
+    "available_memory_gib": 719.5846290588379,
+    "free_disk_gib": 10559.004302978516,
+    "checked_utc": "2026-10-01T17:36:19.673882+00:00"
+  },
+  "output": "results/structural_comparisons/full-triad-all-order-robustness-20261001-v1",
+  "pins": {
+    "scripts/full_triad_robustness_sources.py": "07613408e90c7be7eaec0d6c7cd181d2d98be48595988f01859d2901e13b2291",
+    "scripts/summarize_full_triad_order_robustness.py": "2f97377694579c5030f5532cca1fba98c7aa5f4f60157b96721657da2371779c",
+    "scripts/readback_full_triad_order_robustness.py": "0e5ba61774bf980e7342ec5b6e8c70de5c07068fcedbb47c3358f8cd4c20711d",
+    "scripts/close_full_triad_order_robustness.py": "3cfa005525e3d99d89ce2cd7f1f8ea11757fe1a7acd9e46eeed620b1e7091b29",
+    "scripts/check_full_triad_order_robustness_cases.py": "89bdc19f9611243684a2d4129b52600d9fcc96bb267d0c9981907aa58b780d26",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_triad_same_residue_fit_plan_20261001.json": "aa87da4f6282f4743756030bcdc90bb809a9cb3e15722f3316ea900360a438e0",
+    "metadata/full_triad_same_residue_fit_completed_20261001.json": "81e3cef6036b851a71e6145b4364de40a3f25658334ffb91509e4272d4a81e9d",
+    "metadata/full_reference_triad_work_design_plan_20260930.json": "4c146c16f91fac8397f4fdbc42fcadcaf19da3cab19d293cd661632457873292",
+    "metadata/full_reference_triad_work_design_completed_20260930.json": "d70474566e3d618a858652a4f99cc8bab9d34c040f8c92d3663a0fb972a7dea4",
+    "metadata/full_triad_order_robustness_fixture_validation_20261001.json": "9e884fc6d51e0b5a16b952118ed721e778911106477253a4a4e37d8840d11da1",
+    "metadata/full_triad_order_robustness_resources_20261001.json": "113638ec0a42d7a7a31740bfb5672b2b90cb86cf94b17ace84f96e5448e94e9a"
+  },
+  "scope": "All27056 closed source-ready ordered physical triads x2masks x2common core definitions=108224 groups, retaining all8native alignment orders and all865792 fit dispositions. Full status/triple hashes/exclusions/order bitmaps,18 finite numeric ranges with NULL uncomputed values, strict all-order numeric contrast direction and six combined/core/inherited screens. All-order versus any-order summaries are descriptive physical comparisons, not independent evolutionary events, calibrated asymmetry or accepted native orthology. Full283409sourcecontexts/214461ties require subsequent parent-gated logical linkage. Source hashes, independent full SQL aggregation/readback and2exact original completion journals required. All8aims remain incomplete; GPU inference paused."
+}

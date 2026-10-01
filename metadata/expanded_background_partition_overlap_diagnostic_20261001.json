@@ -1,0 +1,331 @@
+{
+  "status": "passed_full_partition_overlap_and_all_overlapping_written_input_diagnostic",
+  "model_partition_sizes": {
+    "primary": 276682,
+    "old_reference_additional": 14540,
+    "expanded_background_additional": 303802
+  },
+  "intersections": [
+    {
+      "partitions": [
+        "primary",
+        "old_reference_additional"
+      ],
+      "overlapping_models": 6,
+      "different_source_hashes": 0
+    },
+    {
+      "partitions": [
+        "primary",
+        "expanded_background_additional"
+      ],
+      "overlapping_models": 0,
+      "different_source_hashes": 0
+    },
+    {
+      "partitions": [
+        "old_reference_additional",
+        "expanded_background_additional"
+      ],
+      "overlapping_models": 0,
+      "different_source_hashes": 0
+    }
+  ],
+  "overlapping_model_mask_states": 12,
+  "written_pdb_files_checked": 24,
+  "comparisons": [
+    {
+      "model_mask": [
+        "AF-A0A286U7I2-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "3893c744ef3dde35c2bf748a7d570024b6ccb03fed985d9a036bec4acbe77e19",
+      "written_pdb_sha256": "9f179baac1083275801257d8c94f5eed150bc6c6d0939431cec474a4011f11bf",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00149.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 331,
+      "retained_residues": 331,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286U7I2-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "3893c744ef3dde35c2bf748a7d570024b6ccb03fed985d9a036bec4acbe77e19",
+      "written_pdb_sha256": "295fc1e6dc2b2967a11872a48be08e865ef5d8510227edf98be365ba36ce077e",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00149.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 331,
+      "retained_residues": 306,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286U9I8-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "092e2071e452e24f2471c1c2776ff55744dc63bec2a9a280949e387c36f8c390",
+      "written_pdb_sha256": "a2dae987654ab907cfc422a46948e42b13921e30ca32e1f8116c613b6598c50b",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00149.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 550,
+      "retained_residues": 550,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286U9I8-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "092e2071e452e24f2471c1c2776ff55744dc63bec2a9a280949e387c36f8c390",
+      "written_pdb_sha256": "d059af2dc0b5d95e9173fbcb960c13d0cd91c22377cf59493f88716a9bdebfd5",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00149.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 550,
+      "retained_residues": 513,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UHK8-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "f4ffd0c5cb83cc6176ba5fae431f50f8905ea1f589dbf6d616ad3d968fd0c928",
+      "written_pdb_sha256": "e7a0aebf0b19d060ba4a494cf204c05621929ac0f61d1ea1edd3ba75eb649e35",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 247,
+      "retained_residues": 247,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UHK8-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "f4ffd0c5cb83cc6176ba5fae431f50f8905ea1f589dbf6d616ad3d968fd0c928",
+      "written_pdb_sha256": "397c39f3f06adb3e9d5b58890af5464ec538b26e426c28e75a54555828a172a6",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 247,
+      "retained_residues": 233,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UHP2-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "0247bd7d2327f6cfc87b5be0e7dc324acf62233d1302e661a48f8167d411846d",
+      "written_pdb_sha256": "e56bce968c0ebad6859458550daa9ab6ee31e09b33b1cabc923494d512c70de7",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 957,
+      "retained_residues": 957,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UHP2-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "0247bd7d2327f6cfc87b5be0e7dc324acf62233d1302e661a48f8167d411846d",
+      "written_pdb_sha256": "c099da4fd733d27fbbc31b92567e7726182c2c2f366d060538e26554a109e8fc",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 957,
+      "retained_residues": 750,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UVJ5-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "16e562fe6f5f19d5b45b1aff483224ff419c1588fc1a658e542391758f0a9992",
+      "written_pdb_sha256": "910eb771ed9d26186edfd7d049a5d5e4c485dca9aea8a67d4aec590e404b2cd1",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 471,
+      "retained_residues": 471,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A286UVJ5-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "16e562fe6f5f19d5b45b1aff483224ff419c1588fc1a658e542391758f0a9992",
+      "written_pdb_sha256": "0e0d0eac078c4675e5237c77fd46eeac74b3dee5aa92fb00dfe2fbda3956581c",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00150.jsonl.gz",
+        "shard-00008.jsonl.gz"
+      ],
+      "original_length": 471,
+      "retained_residues": 388,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A9P6AWK1-F1",
+        6,
+        "full"
+      ],
+      "status": "ready",
+      "source_sha256": "077814e456dbcf5ad943d16c0d45d1b6be6c216e05fdbb0ad1f61c4a962883e4",
+      "written_pdb_sha256": "ef824876f113f6d3a2e0deff0d03abc8f0e12e86c67fceeebf17a3bfa6bd4c49",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-full.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-full.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00250.jsonl.gz",
+        "shard-00014.jsonl.gz"
+      ],
+      "original_length": 319,
+      "retained_residues": 319,
+      "semantic_fields_equal": true
+    },
+    {
+      "model_mask": [
+        "AF-A0A9P6AWK1-F1",
+        6,
+        "plddt70"
+      ],
+      "status": "ready",
+      "source_sha256": "077814e456dbcf5ad943d16c0d45d1b6be6c216e05fdbb0ad1f61c4a962883e4",
+      "written_pdb_sha256": "f9d2dcaada1f0a652078c40818273639632e9ba565b65f1e549120ab9233114f",
+      "input_paths": [
+        "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-plddt70.pdb",
+        "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-plddt70.pdb"
+      ],
+      "coordinate_shards": [
+        "shard-00250.jsonl.gz",
+        "shard-00014.jsonl.gz"
+      ],
+      "original_length": 319,
+      "retained_residues": 187,
+      "semantic_fields_equal": true
+    }
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/diagnose_expanded_background_partition_overlap.py": "ae7138761eb7dba4cdf0650f1d36f10566489a05de9660d612badd6ca4d5085e",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/receipt.json": "45c8fbe5b7ad86fc238915dc61f52813efcd44a101cecf8fe3982f233a80c85b",
+    "results/structural_comparisons/duplication-model-pair-queue-20260928-v1/models.jsonl": "a1893a18f03f97571d7cf66008641d5f7e2a9180e18e14ce3b5d45955f917e3c",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/receipt.json": "cec08b3faf6266615c1d460a436cf8c82aa034b077bb78cb54c48a7732c777ec",
+    "results/structural_comparisons/duplication-reference-comparison-inventory-20260926-v1/additional_models.jsonl": "1d6289a600251cfb431e13d57343685def9fb5de61375e8a72ca56756210eab3",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/receipt.json": "e501f7d984cef7580e62b5b98f6cc2b94e06b6dea96cfec26261e748b50b0b98",
+    "results/structural_comparisons/background-measurement-inventory-20260930-v1/additional_models.jsonl": "0737a106a72b8d0930e5d88e1962938adbe8e5aeac04418d4f94d667e24d923d",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/receipt.json": "4d33797c33599aab85e2815ce29a8ef4ae3fab38cf54c505b6590648ff2d23ca",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/inputs.jsonl": "df5c21b88a114f9f99bb2df7e758c03495fb38aa1b8e9cbbda48ca94b810e456",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/receipt.json": "6f6644356805c5ba7677efddaeae7750090244b7de197f26e2b34c6cffb34cc3",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/inputs.jsonl": "b06fe58a709ab9ad0dae4677d4888e90e40c89e13e852f2fe1767676d5c6e7ef",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-full.pdb": "9f179baac1083275801257d8c94f5eed150bc6c6d0939431cec474a4011f11bf",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-full.pdb": "9f179baac1083275801257d8c94f5eed150bc6c6d0939431cec474a4011f11bf",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-plddt70.pdb": "295fc1e6dc2b2967a11872a48be08e865ef5d8510227edf98be365ba36ce077e",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/5c/5c1e798b30144689019030621f400c4883acefdc73934d17ab80c1550828cb29-plddt70.pdb": "295fc1e6dc2b2967a11872a48be08e865ef5d8510227edf98be365ba36ce077e",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-full.pdb": "a2dae987654ab907cfc422a46948e42b13921e30ca32e1f8116c613b6598c50b",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-full.pdb": "a2dae987654ab907cfc422a46948e42b13921e30ca32e1f8116c613b6598c50b",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-plddt70.pdb": "d059af2dc0b5d95e9173fbcb960c13d0cd91c22377cf59493f88716a9bdebfd5",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3b/3b203b2113f9b7cf9856e83b8f33670788e4659185073bb50f3e4478dc7f813e-plddt70.pdb": "d059af2dc0b5d95e9173fbcb960c13d0cd91c22377cf59493f88716a9bdebfd5",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-full.pdb": "e7a0aebf0b19d060ba4a494cf204c05621929ac0f61d1ea1edd3ba75eb649e35",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-full.pdb": "e7a0aebf0b19d060ba4a494cf204c05621929ac0f61d1ea1edd3ba75eb649e35",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-plddt70.pdb": "397c39f3f06adb3e9d5b58890af5464ec538b26e426c28e75a54555828a172a6",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/a2/a268e12074d88fc6030452fbb710c85285fb0d5beab23a647bf2ee1d631f9d56-plddt70.pdb": "397c39f3f06adb3e9d5b58890af5464ec538b26e426c28e75a54555828a172a6",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-full.pdb": "e56bce968c0ebad6859458550daa9ab6ee31e09b33b1cabc923494d512c70de7",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-full.pdb": "e56bce968c0ebad6859458550daa9ab6ee31e09b33b1cabc923494d512c70de7",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-plddt70.pdb": "c099da4fd733d27fbbc31b92567e7726182c2c2f366d060538e26554a109e8fc",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/da/dabe23c5e7882fecd4a108d0e30d12447a9be599fa011eef809f47e62ddd00e9-plddt70.pdb": "c099da4fd733d27fbbc31b92567e7726182c2c2f366d060538e26554a109e8fc",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-full.pdb": "910eb771ed9d26186edfd7d049a5d5e4c485dca9aea8a67d4aec590e404b2cd1",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-full.pdb": "910eb771ed9d26186edfd7d049a5d5e4c485dca9aea8a67d4aec590e404b2cd1",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-plddt70.pdb": "0e0d0eac078c4675e5237c77fd46eeac74b3dee5aa92fb00dfe2fbda3956581c",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/7f/7fb2e75eb0c0a10360b994d4ac99b0304abcb298b40eecc49a2ac74f724cd00d-plddt70.pdb": "0e0d0eac078c4675e5237c77fd46eeac74b3dee5aa92fb00dfe2fbda3956581c",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-full.pdb": "ef824876f113f6d3a2e0deff0d03abc8f0e12e86c67fceeebf17a3bfa6bd4c49",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-full.pdb": "ef824876f113f6d3a2e0deff0d03abc8f0e12e86c67fceeebf17a3bfa6bd4c49",
+    "results/structural_comparisons/duplication-alignment-inputs-20260928-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-plddt70.pdb": "f9d2dcaada1f0a652078c40818273639632e9ba565b65f1e549120ab9233114f",
+    "results/structural_comparisons/duplication-reference-alignment-inputs-20260926-v1/pdb/3e/3ee2b9f4db37a7a4b59c3f1b4e78c33c8cf5e28bede737d3240b987adafdf870-plddt70.pdb": "f9d2dcaada1f0a652078c40818273639632e9ba565b65f1e549120ab9233114f"
+  },
+  "alignment_reuse_qualified": false,
+  "complete_input_union_qualified": false,
+  "scientific_eligibility": false,
+  "scope": "Exhaustive intersection of all three model partitions, then every full/p70 state for all six overlapping models. Exact semantic input fields, source model hashes and all24actual written PDB file hashes agree; distinct collection paths/shards retained. This diagnoses why the old strict nonoverlap handoff cannot be used unchanged for expanded backgrounds. Does not qualify the full active-model handoff, any old alignment reuse/native geometry, matched effect or scientific inference."
+}

@@ -1584,8 +1584,9 @@ metrics and degenerate computed fits stay excluded. Six rational original-length
 core screens and inherited both-order three-edge screens are reported separately
 and jointly. Full source/journal closure gates production. The exhaustive work
 preflight measured 77,805 distinct eligible cores and 233,415 pair fits per
-implementation. [Production and resource details](full-triad-same-residue-geometry-20261001.md);
-completed geometry or calibrated asymmetry is not yet claimed.
+implementation. The complete numerical geometry subsequently passed independent
+reconstruction; [production and resource details](full-triad-same-residue-geometry-20261001.md).
+Calibrated asymmetry is not yet claimed.
 
 
 ### Full crossed PMSF topology, consensus and character diagnostics
@@ -1607,3 +1608,26 @@ The full same-residue geometry subsequently passed all 865,792 dispositions and
 independent quaternion checks with maximum difference 5.107e-14 Å. Core and
 inherited three-edge six-screen passes remain separate; logical events and
 order/mask robustness are not inferred from aggregated repeated state counts.
+
+
+### Full structural order robustness and original context linkage
+
+All 865,792 geometric dispositions are aggregated into 108,224 physical
+triad/mask/core groups, retaining every eight-order status, residue hash,
+exclusion and combined/core/inherited screen bitmap. Eighteen numeric fields
+retain available-order counts and ranges; missing metrics remain null. Strict
+all-order sign categories keep original model roles and are descriptive, not
+calibrated evolutionary directions. Independent complete SQLite reconstruction
+checks every source row/group/summary; maximum numeric difference is 2.842e-14.
+
+The full context projection embeds unchanged original work records and links
+all 283,409 contexts/214,461 tied references to normalized physical results.
+Original source/parent/model-identity and native-guide gates remain mandatory,
+including measured overlaps in otherwise excluded contexts. Both confidence
+masks and their exact order-bit intersection remain separate for each core.
+Five fixed lexical/native/any/all-tie policies retain missing references and
+empty ties without reselection. Full model-role/source-gate and SQL policy
+reconstruction passed every contextual output and summary, with 464,637 source
+bindings and both original journals. Counts use
+physical triples and repeated logical quality screens explicitly; they are
+not independent events. [Full workflow, evidence and limitations](full-triad-order-context-robustness-20261001.md).

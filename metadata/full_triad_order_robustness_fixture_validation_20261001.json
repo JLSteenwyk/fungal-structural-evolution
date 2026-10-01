@@ -1,0 +1,28 @@
+{
+  "status": "passed_synthetic_full_triad_all_order_software_checks",
+  "synthetic_triads": 4,
+  "fit_rows": 128,
+  "robustness_groups": 16,
+  "baseline_readback_status": "passed_full_triad_all_order_robustness_sql_readback",
+  "rejected_rehashed_false_exports": [
+    "promoted_all_orders",
+    "wrong_range",
+    "wrong_mean",
+    "missing_distance_as_zero",
+    "promoted_nonunique",
+    "invented_direction",
+    "lost_exclusion",
+    "changed_order_layout",
+    "changed_model_role",
+    "duplicated_group",
+    "missing_group",
+    "invented_scientific_eligibility"
+  ],
+  "script_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_triad_order_robustness_cases.py": "89bdc19f9611243684a2d4129b52600d9fcc96bb267d0c9981907aa58b780d26",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/summarize_full_triad_order_robustness.py": "2f97377694579c5030f5532cca1fba98c7aa5f4f60157b96721657da2371779c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_triad_order_robustness.py": "0e5ba61774bf980e7342ec5b6e8c70de5c07068fcedbb47c3358f8cd4c20711d",
+    "scripts/full_triad_robustness_sources.py": "07613408e90c7be7eaec0d6c7cd181d2d98be48595988f01859d2901e13b2291"
+  },
+  "scope": "Synthetic aggregation/null/status/order-bit/sign tests and independent SQL rejection of12 rehashed false exports. Source/proof I/O stubbed only here; does not qualify real closed-source hashes, model geometry or scientific inference; not a pilot."
+}

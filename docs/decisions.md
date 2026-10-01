@@ -260,3 +260,22 @@ Preserve all order/mask/core alternatives and perform complete logical-context
 linkage and robustness qualification before comparative inference. Full
 additional-background input closure precedes any actual alignment reuse or
 new native measurement acceptance. Keep all eight scientific aims open.
+
+
+### October 1: qualify complete physical grids before original-context policies
+
+Retain all eight native alignment orders for each ordered model triple, mask
+and common-core definition. Publish all-order and any-order coverage separately;
+the latter cannot qualify a strict all-order cohort. Numeric ranges retain null
+uncomputed values and original A/B sign. Both-mask qualification intersects
+the same order bits; it does not average distances across different residue
+sets. Join physical results to every unchanged original context/tie with its
+original parent/model-identity and native-guide gates. A measured overlap cannot
+promote an excluded context, and a missing lexical model cannot be replaced
+after observing geometry. Empty all-tie sets remain excluded.
+
+The full independently closed contextual design supplies future comparative
+cohorts, not an accepted biological orthology assignment or calibrated effect.
+Guide/design/core policies overlap and their counts must not be pooled as
+independent events. Preserve all source choices in models of availability,
+missingness, family/taxon effects and phylogenetic uncertainty.

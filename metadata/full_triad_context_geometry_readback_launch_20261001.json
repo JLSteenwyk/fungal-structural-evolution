@@ -1,0 +1,44 @@
+{
+  "unit": "fungal-full-triad-context-geometry-readback-20261001-v1.service",
+  "pid": 3691382,
+  "created": 1790876742.18,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_triad_context_geometry_readback_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/full_triad_context_geometry_readback_wait_plan_20261001.json",
+  "plan_sha256": "235738e31f42208f15d195cb06a835312a86a2285031f70d014ed273b5a286a5",
+  "checked_utc": "2026-10-01T17:45:42.903170+00:00",
+  "resources": {
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-triad-context-geometry-readback-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_triad_context_geometry_readback_wait_plan_20261001.json"
+  ]
+}

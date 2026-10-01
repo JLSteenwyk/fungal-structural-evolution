@@ -1,0 +1,27 @@
+{
+  "status": "passed_synthetic_full_triad_context_geometry_software_checks",
+  "synthetic_contexts": 20,
+  "synthetic_reference_ties": 44,
+  "baseline_readback_status": "passed_full_triad_context_geometry_sql_readback",
+  "rejected_rehashed_false_exports": [
+    "promoted_excluded_parent",
+    "unmeasured_bitmap_as_zero",
+    "favorable_reference_reselection",
+    "dropped_unmodeled_tie",
+    "vacuous_empty_all_ties",
+    "promoted_native_both_guides",
+    "invented_both_mask_bitmap",
+    "changed_physical_result_key",
+    "changed_original_gene_context",
+    "duplicated_context",
+    "missing_context",
+    "invented_scientific_eligibility"
+  ],
+  "script_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_triad_context_geometry_cases.py": "c8fd42587cb735f373b6498c6d2783c27033f2f2fd4300a1d5e7995d0c211568",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/project_full_triad_context_geometry.py": "2ff96d96607a791b752136cba6423df1e4d18ed18667cee9b2384909a081f29b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_triad_context_geometry.py": "ce4be480a771c197829162c1162b7da504f87b3709ebc33877cc97a384bd6f20",
+    "scripts/full_triad_context_geometry_sources.py": "a2cd05f04950c622c1b79257ebe556d03972500ecc983260b8d9293c41d3a44d"
+  },
+  "scope": "All10synthetic context cases in both guides/bothdesigns: measured excluded parents, missing lexical model followed by measured ties, empty tie sets, same modelID/differentversions, own vsboth native guides, full/p70 discordance, complementary orderbits, unscheduled links. Independent SQL baseline and12 rehashed false export rejections. Source/proof I/O stubbed only here; not a biological pilot or real source/geometry/scientific qualification."
+}

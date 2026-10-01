@@ -10357,3 +10357,24 @@ does not establish universal coverage or complete the biological project.
   coverage/confidence/orientation and calibrated matched effects remain open.
   Original likelihood/BALiPhy/AFDB jobs are preserved. GPU inference remains
   paused; none of the eight scientific aims is complete.
+
+- October 1: full alignment-order aggregation passed independent SQL
+  reconstruction for all 865,792 fits/108,224 physical groups. All statuses,
+  nullable metrics, ranges, model roles, residue hashes, exclusions and six
+  all/any-order screens were checked; maximum numeric difference 2.842e-14.
+  Closure binds 464,618 hashes and both original journals. Full original-context
+  geometry linkage also passed: 283,409 contexts, 214,461 ties, 428,922 sides,
+  7,720,596 reference/screen decisions, 20,405,448 context/screen states and
+  102,027,240 repeated policy decisions. Independent model-key/source-gate/SQL
+  checks preserve missing lexical choices, excluded parents, empty ties and
+  both-mask intersections; closure binds 464,637 hashes/two original journals.
+  Two software suites rejected 24 rehashed false exports. Published all 24
+  physical screen/720 contextual rows and PNG/SVG/PDF coverage figures; all
+  plotted values and 24 bar heights checked and PNG visually reviewed.
+  Availability versus sequence-first reference-common pLDDT70/native-both
+  cohorts contain 5,592–5,593 versus 3,915–3,916 contexts per guide at the
+  50-residue/70%-coverage screen. Counts overlap; these are quality cohorts,
+  not inferential effects or independent evolutionary events. Expanded
+  background measurement/reuse, sequence-locked/domain/PAE/prediction controls,
+  phylogenetic qualification and calibration remain required. All eight aims
+  remain incomplete; original CPU jobs preserved and GPU inference paused.

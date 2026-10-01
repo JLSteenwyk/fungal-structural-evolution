@@ -1,0 +1,26 @@
+{
+  "status": "planned_full_original_context_geometry_linkage",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 16,
+  "planning_hours": [
+    0.25,
+    8
+  ],
+  "runtime_uncalibrated": true,
+  "target_contexts": 283409,
+  "reference_tie_records": 214461,
+  "physical_groups": 108224,
+  "logical_reference_screen_decisions": 7720596,
+  "context_screen_states": 20405448,
+  "context_policy_decisions": 102027240,
+  "basis": "Full unchanged283409contexts x2designs x3mask scenarios x2cores x6screens x5policies, with all214461ties and original428922side links retained. Projection streams complete contexts and links normalized108224 physical summaries without duplicating numeric arrays. Independent full model-role/SHA/source-gate reconstruction plus SQL bitmap/policy aggregates; serial2CPU32GiB/noSwap/1BLASthread. SixteenGiB output allowance including raw-bound provenance/reader closure;100GiBfree reserve. No pilot, GPU or paid resources. Runtime range uncalibrated includes repeated source hashes.",
+  "available_memory_gib": 715.2675514221191,
+  "free_disk_gib": 10558.130073547363,
+  "checked_utc": "2026-10-01T17:45:42.815014+00:00"
+}

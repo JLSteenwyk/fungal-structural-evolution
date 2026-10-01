@@ -1,0 +1,41 @@
+{
+  "status": "complete_verified_full_triad_context_geometry",
+  "target_contexts": 283409,
+  "context_design_records": 566818,
+  "reference_tie_records": 214461,
+  "duplicate_reference_links": 428922,
+  "logical_reference_screen_decisions": 7720596,
+  "context_screen_states": 20405448,
+  "context_policy_decisions": 102027240,
+  "summary_rows": 720,
+  "guide_contexts": {
+    "profile": 141724,
+    "mafft": 141685
+  },
+  "reference_measurement_presence_counts": {
+    "profile|availability|parent=1|measured=1|source_ready=1": 27622,
+    "profile|sequence_first|parent=1|measured=1|source_ready=1": 20300,
+    "profile|sequence_first|parent=1|measured=0|source_ready=0": 51669,
+    "profile|availability|parent=1|measured=0|source_ready=0": 2763,
+    "profile|sequence_first|parent=0|measured=0|source_ready=0": 2751,
+    "profile|availability|parent=0|measured=0|source_ready=0": 2148,
+    "mafft|availability|parent=1|measured=1|source_ready=1": 27596,
+    "mafft|sequence_first|parent=1|measured=1|source_ready=1": 20272,
+    "mafft|sequence_first|parent=1|measured=0|source_ready=0": 51670,
+    "mafft|availability|parent=1|measured=0|source_ready=0": 2764,
+    "mafft|sequence_first|parent=0|measured=0|source_ready=0": 2759,
+    "mafft|availability|parent=0|measured=0|source_ready=0": 2147
+  },
+  "measured_triads": 27056,
+  "measured_robustness_groups": 108224,
+  "producer_receipt": "results/structural_comparisons/full-triad-context-geometry-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "05e124636e1a2ec3b8b3e3d63758bd1a20045afdaca1260029873dcc3251c8eb",
+  "independent_readback": "results/structural_comparisons/full-triad-context-geometry-20261001-v1/readback.json",
+  "independent_readback_sha256": "d98abf8a307bcc40be11ba3039e394214708c91ae0f35caf7af7324acc289edf",
+  "full_hash_archive": "results/structural_comparisons/full-triad-context-geometry-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "71dc431998cecfa3ae930a0d88bb154bb2277002f90bc727f3497ca85bfa5b11",
+  "bound_source_hashes": 464637,
+  "exact_process_journals_checked": 2,
+  "scientific_eligibility": false,
+  "scope": "Full283409 original source contexts/566818designs/214461tied references/428922logical sides linked to all108224 verified physical triad/mask/core8order summaries. Every family/taxon/gene node/sequence distance/source choice remains unchanged; no replacement of missing lexical models. Full, p70 and both-mask order-bit intersections, source correspondence/native-own/native-both gates, strict all8order qualification and lexical/any/all-tie context policies retain excluded/unmeasured/empty/identical-model cases. Original parent eligibility gates even measured physical overlaps. Normalized physical result keys retain access to all18 numeric ranges; no averaging across masks/cores. Independent full SQL/model-key/source-gate readback and2exact original completion journals required. Seven720596reference-screen decisions/20405448context-screen states/102027240policy decisions are repeated logical screens, not independent events or pvalues. No accepted orthology/phylogeny/calibrated duplication effect. All8aims incomplete; GPU inference paused."
+}

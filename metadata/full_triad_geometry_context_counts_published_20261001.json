@@ -1,0 +1,91 @@
+{
+  "status": "published_complete_closed_full_triad_order_and_context_counts",
+  "full_context_summary_rows": 720,
+  "full_physical_screen_summary_rows": 24,
+  "figure_bar_heights_checked": 24,
+  "figure_series": [
+    {
+      "mapping_definition": "reference_common",
+      "mask": "full",
+      "counts": [
+        8235,
+        8234,
+        5860,
+        5861
+      ]
+    },
+    {
+      "mapping_definition": "reference_common",
+      "mask": "plddt70",
+      "counts": [
+        5592,
+        5593,
+        3915,
+        3916
+      ]
+    },
+    {
+      "mapping_definition": "reference_common",
+      "mask": "both_masks",
+      "counts": [
+        5592,
+        5593,
+        3915,
+        3916
+      ]
+    },
+    {
+      "mapping_definition": "cycle_consistent",
+      "mask": "full",
+      "counts": [
+        7316,
+        7316,
+        5182,
+        5184
+      ]
+    },
+    {
+      "mapping_definition": "cycle_consistent",
+      "mask": "plddt70",
+      "counts": [
+        5370,
+        5370,
+        3766,
+        3767
+      ]
+    },
+    {
+      "mapping_definition": "cycle_consistent",
+      "mask": "both_masks",
+      "counts": [
+        5365,
+        5365,
+        3764,
+        3765
+      ]
+    }
+  ],
+  "source_hashes": {
+    "metadata/full_triad_order_robustness_completed_20261001.json": "3a1fd3f61d65dc07a6d5e13125f3421ba83f0d72e2bd1b079883f38ac80f96d6",
+    "results/structural_comparisons/full-triad-all-order-robustness-20261001-v1/receipt.json": "703e24fae9fd027b87edeceea52a82b23a0a2400d74c7b3f0aafa0373ad21138",
+    "results/structural_comparisons/full-triad-all-order-robustness-20261001-v1/readback.json": "2a9da8618279516b1ce459a511967a27ebe3d376a8c35339da17869fc2941925",
+    "results/structural_comparisons/full-triad-all-order-robustness-20261001-v1/completion_archive.json": "a38b1be2cae5963a3ec6f85e264e2710ca2c2b2898f44f4b2c1a72e506045a2f",
+    "results/structural_comparisons/full-triad-all-order-robustness-20261001-v1/triad_order_robustness.jsonl.gz": "1141789627a625003b2965a45efdfed4282c208124126d264f6f408d9b560bec",
+    "metadata/full_triad_context_geometry_completed_20261001.json": "3dba4f5c508996f92637b22fa73924f08b5e59e4e64096d7e4a546972f78d2e3",
+    "results/structural_comparisons/full-triad-context-geometry-20261001-v1/receipt.json": "05e124636e1a2ec3b8b3e3d63758bd1a20045afdaca1260029873dcc3251c8eb",
+    "results/structural_comparisons/full-triad-context-geometry-20261001-v1/readback.json": "d98abf8a307bcc40be11ba3039e394214708c91ae0f35caf7af7324acc289edf",
+    "results/structural_comparisons/full-triad-context-geometry-20261001-v1/completion_archive.json": "71dc431998cecfa3ae930a0d88bb154bb2277002f90bc727f3497ca85bfa5b11",
+    "results/structural_comparisons/full-triad-context-geometry-20261001-v1/context_geometry.jsonl.gz": "31029527b18b22751674ba1109266629dab342256737d6d526018de19389156d",
+    "results/structural_comparisons/full-triad-context-geometry-20261001-v1/context_geometry_counts.tsv": "8e44eeb6543b6c43ee64f76901f6cfa7de38712f3131dcc4c99c8c89a7eeb11d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/publish_full_triad_geometry_context_counts.py": "4a574fec0a883686fad1731809940f64fb4dc9083e2c66911fff353bf323d2f9"
+  },
+  "artifacts": {
+    "docs/figures/full_triad_context_geometry_coverage_20261001.png": "34c390f0283487091a29d3705a54337f7a854b3c45a99b1ad9f0a59c95365370",
+    "docs/figures/full_triad_context_geometry_coverage_20261001.svg": "8c771b78170f15e0f82141120f43cf2a0ae9969c927f7db66c5808316811f572",
+    "docs/figures/full_triad_context_geometry_coverage_20261001.pdf": "1b0ca1381a9e7c59577e6ccb586786e430057c70335e507c1b5f3949745b6e5d",
+    "docs/tables/full_triad_context_geometry_counts_20261001.tsv": "8e44eeb6543b6c43ee64f76901f6cfa7de38712f3131dcc4c99c8c89a7eeb11d",
+    "docs/tables/full_triad_all_order_screen_counts_20261001.tsv": "21e0205ce3ea453f00bd68e5aea17b41673a453b49298ca4e2e8ee2e5d6ac8fc"
+  },
+  "scientific_eligibility": false,
+  "scope": "Complete closed720 context/screen/policy rows and24 distinct physical all/any-order screen rows. Figure uses only fixed lexical/native-both policy at50residues/70% original coverage; every24barheight/label derives from closed full SQL-checked counts. Full guide/design/core/mask/source-parent denominators retained. Repeated contexts and physical triples are not independent events; quality coverage does not establish duplication effects or selection."
+}

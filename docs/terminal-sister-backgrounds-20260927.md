@@ -1604,3 +1604,15 @@ binds 651 source/artifact hashes and all four exact original journals. This
 closes input materialization, not biological matching or structural divergence.
 The full 146,172-pair background measurement design still needs actual reuse
 qualification/new measurements, coverage and predictor/orientation calibration.
+
+The [complete input-partition overlap diagnostic](../metadata/expanded_background_partition_overlap_diagnostic_20261001.json)
+exhausted the expanded-primary, old-reference-additional and expanded-background
+model partitions. The background partition is disjoint from both others. Six
+models occur in both primary and old-reference input collections: all 12
+full/pLDDT70 states have identical physical semantic fields, source hashes and
+written PDB hashes, checked on all 24 actual files. Collection-specific paths
+and coordinate-shards remain separate provenance. The old background handoff
+rejects all overlaps, so it cannot be used unchanged for this expanded design.
+A new full handoff must permit only explicitly proven byte-equivalent overlaps
+and preserve both sources. This narrow exhaustive overlap diagnostic does not
+qualify the entire input union or any old alignment/native result reuse.
