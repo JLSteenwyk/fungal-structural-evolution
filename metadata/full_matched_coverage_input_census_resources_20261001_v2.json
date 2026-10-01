@@ -1,0 +1,26 @@
+{
+  "status": "planned_whole_fixed_matching_node_identity_census",
+  "checked_utc": "2026-10-01T22:01:27.091074+00:00",
+  "target_nodes": 283409,
+  "background_nodes": 318037,
+  "target_pairs": 134812,
+  "background_pairs": 146172,
+  "source_inventory_models": 305434,
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "output_allowance_mib": 16,
+  "planning_hours": [
+    0.1,
+    2
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 585.3271713256836,
+  "free_disk_gib": 10536.65493774414,
+  "basis": "Whole601446graph nodes, all305434current model catalog entries, complete269624target coverage rows and146172background pair identities. Metadata/catalog/whole-file hash and role/length linkage census only; raw structures, native optimization and screen correctness are not re-audited.16GiB accommodates full model and physical-pair maps.16MiB output allowance for scalar counts and source-file bindings. No pilot or inference; full production coverage/matching gates remain required.",
+  "correction": "Use dedicated four-journal graph/covariate proof; verify graph/readback/covariate/fixed-selection lineage. Inspect model metadata for same-model nodes as well as distinct pairs. Preserve failed v1."
+}

@@ -1,0 +1,43 @@
+{
+  "input_completion": "metadata/expanded_background_native_handoff_completed_20261001.json",
+  "target_completion": "metadata/expanded_duplication_coverage_screens_completed_20260930_v2.json",
+  "target_plan": "metadata/expanded_duplication_coverage_screens_plan_20260930_v2.json",
+  "matching_completion": "metadata/expanded_background_fixed_matching_completed_20260930.json",
+  "graph": "results/orthology/expanded-background-match-graph-20260930-v1",
+  "output": "metadata/full_matched_coverage_input_census_completed_20261001.json",
+  "pins": {
+    "scripts/census_full_matched_coverage_inputs.py": "37275a155b60ffa8dbee163e9a0f38404dcc3fe85fde9269adfdc775a7090997",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/full_matched_coverage_input_census_resources_20261001.json": "193d2e001cb9296134031a8fec402b57a72b5be3d4c494eaf7c1390ec82ff69e",
+    "metadata/expanded_background_native_handoff_completed_20261001.json": "b18c8bbe41b5d03c683a7422171d8061088b3edaf8b702f8679e89cb6b75c5a9",
+    "metadata/expanded_duplication_coverage_screens_completed_20260930_v2.json": "3061899adb46ea009f8c0ac79ff77a6c64bc719d7714d17cc6d939994881891b",
+    "metadata/expanded_duplication_coverage_screens_plan_20260930_v2.json": "792775638d00609d285380126615b26c5979e2a0d2c17edd2b72deb447ecf048",
+    "metadata/expanded_background_fixed_matching_completed_20260930.json": "4d5ca5de8ec510cb2eede355d5b9a7dadeb7a810152a474fcafb60ccfb2e804b"
+  },
+  "resources": {
+    "status": "planned_whole_fixed_matching_node_identity_census",
+    "checked_utc": "2026-10-01T20:55:48.990850+00:00",
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "target_pairs": 134812,
+    "background_pairs": 146172,
+    "source_inventory_models": 305434,
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_allowance_mib": 16,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 770.7517204284668,
+    "free_disk_gib": 10539.749992370605,
+    "basis": "Whole601446graph nodes, all305434current model catalog entries, complete269624target coverage rows and146172background pair identities. Metadata/catalog/whole-file hash and role/length linkage census only; raw structures, native optimization and screen correctness are not re-audited.16GiB accommodates full model and physical-pair maps.16MiB output allowance for scalar counts and source-file bindings. No pilot or inference; full production coverage/matching gates remain required."
+  }
+}

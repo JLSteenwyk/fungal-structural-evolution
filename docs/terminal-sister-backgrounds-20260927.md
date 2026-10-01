@@ -1988,3 +1988,100 @@ post-screen covariate balance remain required, as do common-residue/sequence-
 locked/domain/orientation/PAE/predictor/missingness controls, phylogenetic
 qualification and calibrated effects. All eight scientific aims remain
 incomplete; existing CPU jobs continue and GPU protein prediction stays paused.
+
+
+## Complete fixed matching coverage queued — October 1
+
+The [old-result reuse closure](../metadata/expanded_background_reuse_completed_20261001.json)
+is complete: all 584,688 full-design states, 282,146 numerical alignment
+reconstructions, 1,531,355 source bindings and ten original completion journals.
+The closure retains 285,840 qualified old states and 298,848 new-native states
+pending measurement. Native/numerical exclusions remain dispositions, not
+zero structural responses. The full hash archive remains outside Git.
+
+A subsequent [journal audit](../metadata/expanded_background_reuse_journal_revalidation_20261001.json)
+rechecked exact original PID/create/command identity, terminal absence and all
+recorded completion resource fields for every original service. Raw journal JSON
+serialization hashes differed for all ten queries; original hashes and archives
+were preserved. Two fresh queries of one completed unit had identical parsed
+messages but different bytes ([diagnostic](../metadata/journal_serialization_diagnostic_20261001.json)).
+The audit validates original completion fields; it does not claim full canonical
+equivalence to the unavailable original raw journal bytes or repeat the prior
+complete scientific-input hash/geometry audit.
+
+The [complete node census](../metadata/full_matched_coverage_input_census_verified_20261001_v3.json)
+passed every 283,409 target and 318,037 background node, all original catalogue
+fields/model versions/gene-to-model roles, all 134,812 target physical pairs and
+146,172 background physical pairs. Both complete original model catalogues
+contain 584,276 unique identities; their 276,682 target and 307,693 background
+rows overlap at 99 identities. All 305,434 current background-input inventory
+models were read separately. Every background endpoint is present there; only
+146 target endpoint occurrences overlap that inventory. Target-only catalogue
+entries are checked against their original catalogue and target physical table.
+Every same-model node is retained and catalogue-checked without inventing an
+alignment. No confidence-descriptor differences were found. Complete census
+file hashes and its exact original v3 process completion are bound.
+
+Two failed census versions remain immutable. Version 1 requested the graph
+receipt from the fixed-matching closure, which records selected matching
+exports. The dedicated graph/covariate closure provides that receipt and four
+original journals. Version 2 correctly used this source but incorrectly required
+target-only models in the background inventory. Version 3 checks each complete
+source universe in its actual role and all physical membership. These failures
+did not stop or restart the original alignments, likelihood or retrieval jobs.
+
+The [integration plan](../metadata/full_matched_coverage_plan_20261001.json)
+preserves every original chosen-control row, original endpoint correspondence,
+score, ties and all matched/unmatched scenario lists. It covers 1,133,636
+target/policy records, 54 scenarios and all 61,216,344 scenario decisions:
+4,250,692 selected and 56,965,652 unmatched. Coverage flags are joined by model
+ID/version to both full and pLDDT70 physical comparisons; the both-mask screen
+is their intersection. Same-model nodes retain an explicit no-alignment
+disposition and fail physical eligibility rather than becoming zero effects.
+No targets or chosen controls are removed or rematched after seeing outcomes.
+
+Full exports comprise `selected_pair_coverage.tsv.gz`,
+`target_policy_coverage_status.tsv.gz` and `matched_attrition_counts.tsv`,
+under `results/structural_comparisons/full-fixed-matched-coverage-20261001-v1`.
+The complete 7,776 guide/policy/scenario/mask/screen cells include empty strata,
+all targets, matched/unmatched counts, target pass counts in all three groups,
+control and joint passes, target-only/control-only/neither-pass categories.
+Compact six-screen bit fields represent all 76,512,456 selected screen cells;
+retained scenario lists represent 1,101,894,192 logical full-design screen cells
+without materializing billions of redundant rows. These are dependent design
+records, not independent evolutionary replicates.
+
+The reader preserves and compares every original export field, independently
+projects model roles/masks in SQLite, verifies every frozen membership and
+reconstructs all summary cells. [Software cases](../metadata/full_matched_coverage_fixture_validation_20261001_v3.json)
+passed all 54 scenarios, role reversal/version 6/10, mask intersections,
+same-model exclusions, all four attrition categories and empty strata; 17
+rehashed false exports were rejected. [Separate proof regression cases](../metadata/full_matched_graph_fixture_validation_20261001.json)
+rejected eight wrong graph/covariate/matching contracts, including using the
+matching closure as graph proof. Prior physics, census and journals are
+explicitly synthetic contracts in these software fixtures. Production proof
+requires actual closed sources and original journals; these tests are not
+physical validation or a biological pilot.
+
+Earlier prelaunch software receipts are preserved outside Git at
+`results/software-checks/full-matched-coverage-prelaunch-20261001-v1.json`
+and `full-matched-coverage-prelaunch-20261001-v2.json`. The versioned v3
+receipt and pinned current scripts include the closed whole-node census gate.
+
+The [queued pipeline](../metadata/full_matched_coverage_pipeline_queued_20261001.json)
+waits for complete background coverage closure before integration, then runs
+independent readback and source/artifact/two-original-journal closure. Its
+[resources](../metadata/full_matched_coverage_resources_20261001.json) were
+estimated before launch: two CPU equivalents/64 GiB per serial stage, no swap,
+one BLAS thread, 64 GiB export/SQL scratch allowance and 100 GiB disk reserve.
+The 1–24 hour planning interval per stage is uncalibrated, not an ETA. Exact
+original PID/create/command and actual cgroup limits are recorded; launched
+scripts and plans are frozen. No GPU prediction or paid resources were started.
+The future completion locator is
+`metadata/full_matched_coverage_completed_20261001.json`.
+
+This integration remains pending and does not complete duplication inference.
+Post-screen feature balance, background reuse/weights, shared ancestry and
+family/taxon/gene dependence, predictor/circularity/PAE/domain/orientation
+controls, missingness sensitivity and calibrated effects remain required.
+All eight scientific aims remain incomplete.

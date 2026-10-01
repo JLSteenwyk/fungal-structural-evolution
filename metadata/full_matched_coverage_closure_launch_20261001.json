@@ -1,0 +1,68 @@
+{
+  "unit": "fungal-full-matched-coverage-closure-20261001-v1.service",
+  "pid": 1014035,
+  "created": 1790892549.81,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_matched_coverage_closure_wait_plan_20261001.json"
+  ],
+  "plan": "metadata/full_matched_coverage_closure_wait_plan_20261001.json",
+  "plan_sha256": "33649eaf1f018efa2a1e7efaf59a0c5789d6f85c74cd266081a67e8af3ea7b49",
+  "checked_utc": "2026-10-01T22:09:10.541596+00:00",
+  "resources": {
+    "status": "planned_complete_frozen_matching_coverage_and_independent_readback",
+    "checked_utc": "2026-10-01T22:08:59.154703+00:00",
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "target_policy_records": 1133636,
+    "scenarios": 54,
+    "scenario_decisions": 61216344,
+    "selected_records": 4250692,
+    "unmatched_decisions": 56965652,
+    "selected_screen_cells": 76512456,
+    "logical_full_design_screen_cells": 1101894192,
+    "attrition_rows": 7776,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 64,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_and_sql_scratch_allowance_gib": 64,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 586.695987701416,
+    "free_disk_gib": 10536.207942962646,
+    "basis": "All601446nodes,1.13million target/policy rows and4.25million frozen selections; complete54-scenario unmatched lists preserve61.2million design decisions without writing1.10billion individual logical screen cells. Gzip full source row fidelity plus9compact screen-bit columns; independent SQLite reconstruction over all18mask/screen cells per selected row. Upstream full closure hash universes are retained outside Git.64GiB conservative in-memory provenance/graph allowance;64GiB full export and SQLite scratch planning allowance; timings uncalibrated. Producer/readback serial; closure may overlap reader terminal only. No biological pilot, rematching, outcome-based deletions or independent replicate claim."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-matched-coverage-closure-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=64G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/full_matched_coverage_closure_wait_plan_20261001.json"
+  ]
+}

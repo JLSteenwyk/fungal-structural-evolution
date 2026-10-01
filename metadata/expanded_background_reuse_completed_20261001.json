@@ -1,0 +1,35 @@
+{
+  "status": "complete_verified_full_background_input_checkpoint_reuse_with_dispositions",
+  "full_background_pairs": 146172,
+  "directed_dispositions": 584688,
+  "counts": {
+    "verified_identical_input_checkpoint_and_retained_disposition": 285840,
+    "new_native_measurement_pending": 298848
+  },
+  "numerical_counts": {
+    "usable": 282069,
+    "input_unavailable": 3694,
+    "fewer_than_three_pairs;nonunique_rotation": 72,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 5
+  },
+  "selected_source_dispositions": {
+    "background_old": 285796,
+    "no_old_source": 298848,
+    "reference_old": 44
+  },
+  "unique_model_mask_source_checks": 285812,
+  "numerically_reconstructed_reuse_alignments": 282146,
+  "full_hash_archive": "results/structural_comparisons/background-reuse-qualification-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "d1ae0436d49e9ac701875c77828cad05e1637b955fc93692e442f21bde0c10db",
+  "bound_source_hashes": 1531355,
+  "exact_process_journals_checked": 10,
+  "producer_receipt": "results/structural_comparisons/background-reuse-qualification-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "ee76e093c3fa189e5ae8fe32b9fdc8ea89c50914a5410cc4627343dcc8acd5ca",
+  "independent_readback": "results/structural_comparisons/background-reuse-qualification-20261001-v1/readback.json",
+  "independent_readback_sha256": "29ba184bea226744e40746cf796c39cb02e7fa1bd19b31abd905f9447e0b2286",
+  "source_plan": "metadata/expanded_background_reuse_plan_20261001.json",
+  "source_plan_sha256": "dfbcca7c14820a195a79a1eb4ba03c71e0cd1dec97e76916c026aafdc2e39434",
+  "completion_plan_sha256": "5f27bdf0ea3a6a43a2daf78673becd5a2321d410ec1788b084a9b3afdbdbb6ba",
+  "scientific_eligibility": false,
+  "scope": "Complete146172background physical pairs/two masks/two directions(584688states), all305434active current models and full independently closed four-collection input union. Fixed old-reference-before-old-background selection assigns11/71449pairs;74712new native pairs remain pending within this separate reuse ledger. Every actual raw/current-old PDB/mask/original-position/sequence/length/native-settings/checkpoint identity is qualified; incompatible states require additional native measurements without alternate-source selection. Every reused successful native numeric row reconstructed on current byte-identical inputs; separate full reader rebuilds source preference, role/order, all exports, numeric mappings/quaternion RMSD/gesvd curvature and every flag/exclusion. Original unavailable/native/parse/timeout/RMSD/nonunique states retained; no automatic retry or missing-as-zero substitution. Two new plus eight exact original native/diagnostic/geometry/readback completion journals and full actual sources/artifacts required for reuse closure. TM-score optimization is not independently repeated. Full new-measurement/reuse union, coverage/prediction/domain/PAE/sequence-locked/missingness/phylogenetic controls and calibrated effects remain required. All8aims incomplete; GPU inference paused, no pilot or charges."
+}

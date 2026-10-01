@@ -1,0 +1,391 @@
+{
+  "status": "passed_closed_original_journal_semantic_revalidation",
+  "checked_utc": "2026-10-01T22:05:17.528156+00:00",
+  "completion": "metadata/expanded_background_reuse_completed_20261001.json",
+  "completion_sha256": "d5b2fd20312a30765c8def9321001e50d90d7719d93b8f6275ca3cd4d04e56ac",
+  "closed_archive": "results/structural_comparisons/background-reuse-qualification-20261001-v1/completion_archive.json",
+  "closed_archive_sha256": "d1ae0436d49e9ac701875c77828cad05e1637b955fc93692e442f21bde0c10db",
+  "exact_process_journals_checked": 10,
+  "raw_serialization_differences": 10,
+  "services": [
+    {
+      "launch": "metadata/expanded_background_reuse_producer_launch_20261001.json",
+      "unit": "fungal-expanded-background-reuse-producer-20261001-v1.service",
+      "pid": 786634,
+      "created": 1790882075.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_producer_wait_plan_20261001.json"
+      ],
+      "original_invocations": [
+        "c07879537a0b4a8fb585c28623085d6c"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 1,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790884431577967",
+          "CPU_USAGE_NSEC": "1731149115000",
+          "MEMORY_PEAK": "3551232",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/expanded_background_reuse_producer_launch_20261001.jsonl",
+      "current_journal_sha256": "366eb56d0a05e51c336d1699d65eca2bd622663e1feb2a52baf0342ab84c1045",
+      "current_canonical_journal_sha256": "9bb5a9b59684b949146b94f599fde7b646927c28f939aa5318453756cae90af7",
+      "closure_raw_journal_sha256": "b7a9fdc89dfda37086cda9564b4e9c1f710d6e53f779d95342f1ba0049db587a",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/expanded_background_reuse_reader_launch_20261001.json",
+      "unit": "fungal-expanded-background-reuse-reader-20261001-v1.service",
+      "pid": 786638,
+      "created": 1790882075.69,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_reader_wait_plan_20261001.json"
+      ],
+      "original_invocations": [
+        "89c79bda612c4d7fab987d297f54b3f2"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 80,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790886348049183",
+          "CPU_USAGE_NSEC": "1819716556000",
+          "MEMORY_PEAK": "3018752",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/expanded_background_reuse_reader_launch_20261001.jsonl",
+      "current_journal_sha256": "bf69d723ad1f284c59feb5ffef614a061f468de9b1cde2f52afd28bf4e201a12",
+      "current_canonical_journal_sha256": "5c41d8914f53915cd88728bb31576573bdd47cf3e55ec0c9a7b37b551565418f",
+      "closure_raw_journal_sha256": "aae1d43cff58324e0dfc40372e763f379fd7d396583a03781981902dd2537f4b",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/duplication_reference_alignment_launch_20260926.json",
+      "unit": "fungal-duplication-reference-alignments-20260926.service",
+      "pid": 147498,
+      "created": 1790472032.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_duplication_reference_alignments.py",
+        "--plan",
+        "metadata/duplication_reference_alignment_plan_20260926.json"
+      ],
+      "original_invocations": [
+        "d9ee60360a924a1eac1a625285ec7360"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 2034,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790514163022214",
+          "CPU_USAGE_NSEC": "56142498569000",
+          "MEMORY_PEAK": "2910416896",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_alignment_launch_20260926.jsonl",
+      "current_journal_sha256": "173c7a1b31bd25a2475977dffc161192499f0916a1984e535e5d149a60c15844",
+      "current_canonical_journal_sha256": "71a8f8dcc9ac6d68a90aa783c4047375596f46e2f675bc94d57f345db09c90e4",
+      "closure_raw_journal_sha256": "49b6917b72001e97ccc91608afef9fd0dc4ef0fb0bb2d8d7efce23f40b84bc05",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json",
+      "unit": "fungal-reference-rmsd-diagnostic-20260927.service",
+      "pid": 2926185,
+      "created": 1790514338.56,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/diagnose_reference_alignment_rmsds.py",
+        "--plan",
+        "metadata/duplication_reference_rmsd_diagnostic_plan_20260927.json"
+      ],
+      "original_invocations": [
+        "2e9e7aac5af144b59090f211a215d887"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 13,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790514566354830",
+          "CPU_USAGE_NSEC": "203791704000",
+          "MEMORY_PEAK": "6522064896",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_rmsd_diagnostic_launch_20260927.jsonl",
+      "current_journal_sha256": "08290a6b72b89d7b17750184dd6efa4fddb48a28b8ca2390559d10bd7a5197f3",
+      "current_canonical_journal_sha256": "e8e3fbc444e0232eedb6e84df8af44aaea51c7d9af2c1314237c9739f9f7baf0",
+      "closure_raw_journal_sha256": "a5202cc3b93985cd24666fe34ed682acad932197c8ba3628906e6645c5bba04e",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/duplication_reference_geometry_launch_20260927.json",
+      "unit": "fungal-reference-geometry-20260927.service",
+      "pid": 2934070,
+      "created": 1790514466.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/assess_reference_alignment_geometry.py",
+        "--plan",
+        "metadata/duplication_reference_geometry_plan_20260927.json"
+      ],
+      "original_invocations": [
+        "1b073f1bc4b24e189cc51b3725289a19"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 32,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790514817351341",
+          "CPU_USAGE_NSEC": "229754274000",
+          "MEMORY_PEAK": "49147904",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_geometry_launch_20260927.jsonl",
+      "current_journal_sha256": "29622bde116c8230586dd117b505b86c64b802b821959730a33d0c5ff45149e6",
+      "current_canonical_journal_sha256": "600bf341b8c5c4579b71ba1d7573cfa5c7b3af0de3db2f4d1312897b7f0b0a5a",
+      "closure_raw_journal_sha256": "14f15f795a2696f734114684e15e799ad7b79b4d51750b939c27017310bd2472",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json",
+      "unit": "fungal-reference-geometry-readback-20260927-v2.service",
+      "pid": 2963630,
+      "created": 1790514911.1,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_reference_alignment_geometry_v2.py",
+        "--plan",
+        "metadata/duplication_reference_geometry_readback_plan_20260927_v2.json"
+      ],
+      "original_invocations": [
+        "c99c3d5781d144adbfff843f39dbfbd0"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 26,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790515129186055",
+          "CPU_USAGE_NSEC": "217324072000",
+          "MEMORY_PEAK": "4363583488",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_geometry_readback_launch_20260927_v2.jsonl",
+      "current_journal_sha256": "bab4d7e45d4aad59b63f4ff100601093f218589eac104ae2c86701caa722ddf8",
+      "current_canonical_journal_sha256": "eb37f1527388e3813b54801e13f849fc1ec690750c574fd10ae8fb6afd077eff",
+      "closure_raw_journal_sha256": "98dc4e91d1fd5246d6c60662e15c6f110eb981cc31093df52e026e36ecd8599a",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/background_alignment_launch_20260927.json",
+      "unit": "fungal-background-alignments-20260927.service",
+      "pid": 2038561,
+      "created": 1790501114.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_background_alignments.py",
+        "--plan",
+        "metadata/background_alignment_plan_20260927.json"
+      ],
+      "original_invocations": [
+        "fb8086efd3c94da19163e635725620b6"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 4466,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790644487378427",
+          "CPU_USAGE_NSEC": "269012182799000",
+          "MEMORY_PEAK": "8589934592",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_launch_20260927.jsonl",
+      "current_journal_sha256": "6369007876496b6af673542c6c42e42ae281eea72088877b17e205b30ecbcc4e",
+      "current_canonical_journal_sha256": "87003bff9356e9974c6dacd46b09ca528e53d2ca6e15aacebedbfaa50a911b72",
+      "closure_raw_journal_sha256": "a354408b00a75694ee7e6187b06f2389620c6db0ba0e26bdb6ca8bf806626b86",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json",
+      "unit": "fungal-background-rmsd-diagnostic-20260928.service",
+      "pid": 2541564,
+      "created": 1790644946.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/diagnose_background_alignment_rmsds.py",
+        "--plan",
+        "metadata/background_alignment_rmsd_diagnostic_plan_20260928.json"
+      ],
+      "original_invocations": [
+        "c55861724ee947c4aa41580ebc0a24fb"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 28,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790645685388669",
+          "CPU_USAGE_NSEC": "694532304000",
+          "MEMORY_PEAK": "10638397440",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_rmsd_diagnostic_launch_20260928.jsonl",
+      "current_journal_sha256": "806cc03cf9260dfd09d53bedded72ae71c6e3148e96c16b8a4caff410f94f728",
+      "current_canonical_journal_sha256": "125634713195c565e8ce8ca343f5f32ab2e3a802cfb92857103a55c048ee8af8",
+      "closure_raw_journal_sha256": "dfeb3d8eeef6a6779f61eb9acdef66c006165068e1d8a93f82839f4c6b03accb",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/background_alignment_geometry_launch_20260928.json",
+      "unit": "fungal-background-alignment-geometry-20260928.service",
+      "pid": 2544825,
+      "created": 1790645165.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/assess_background_alignment_geometry.py",
+        "--plan",
+        "metadata/background_alignment_geometry_plan_20260928.json"
+      ],
+      "original_invocations": [
+        "9d322117958a4c9cb80f14cdd855f877"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 62,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790646423849525",
+          "CPU_USAGE_NSEC": "716450649000",
+          "MEMORY_PEAK": "8300003328",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_geometry_launch_20260928.jsonl",
+      "current_journal_sha256": "5dedf2358a3db4cd0e8d96a61ec10653a92115d9fa7989e9cf0fa5b40d4d2e7d",
+      "current_canonical_journal_sha256": "5baf31b1809b1a64c05a3bceb0ffd5cf4ca9a04a9b700489922502d93648c966",
+      "closure_raw_journal_sha256": "6d25407807a3db1ed5b078612b267375c60bb0b0289f54371ea2770ab59e6228",
+      "raw_serialization_equal": false
+    },
+    {
+      "launch": "metadata/background_alignment_geometry_readback_launch_20260928.json",
+      "unit": "fungal-background-geometry-readback-20260928.service",
+      "pid": 2550726,
+      "created": 1790645500.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_background_alignment_geometry.py",
+        "--plan",
+        "metadata/background_alignment_geometry_readback_plan_20260928.json"
+      ],
+      "original_invocations": [
+        "7b81ffb3d6a8418eb424794b99141ebd"
+      ],
+      "observed_state": {
+        "Result": "success",
+        "ExecMainStatus": "0",
+        "ActiveState": "inactive"
+      },
+      "captured_process_messages": 42,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790647135041392",
+          "CPU_USAGE_NSEC": "701175522000",
+          "MEMORY_PEAK": "8717045760",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "original_completion_fields_equal": true,
+      "current_journal": "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_geometry_readback_launch_20260928.jsonl",
+      "current_journal_sha256": "bad627537ffb264ea0f74b86f745601dc1c6706a30c30898dd6d74a8e583c432",
+      "current_canonical_journal_sha256": "950b188dd19e456f4e87410685490d95e0e4a49e0e00ae0530702556973b1126",
+      "closure_raw_journal_sha256": "69b1446dbab17c1a7dcd48edf823aac4ca487869e3b0ef9ea80b7dbd14dd97a8",
+      "raw_serialization_equal": false
+    }
+  ],
+  "source_hashes": {
+    "metadata/expanded_background_reuse_completed_20261001.json": "d5b2fd20312a30765c8def9321001e50d90d7719d93b8f6275ca3cd4d04e56ac",
+    "results/structural_comparisons/background-reuse-qualification-20261001-v1/completion_archive.json": "d1ae0436d49e9ac701875c77828cad05e1637b955fc93692e442f21bde0c10db",
+    "results/structural_comparisons/background-reuse-qualification-20261001-v1/receipt.json": "ee76e093c3fa189e5ae8fe32b9fdc8ea89c50914a5410cc4627343dcc8acd5ca",
+    "results/structural_comparisons/background-reuse-qualification-20261001-v1/readback.json": "29ba184bea226744e40746cf796c39cb02e7fa1bd19b31abd905f9447e0b2286",
+    "metadata/expanded_background_reuse_plan_20261001.json": "dfbcca7c14820a195a79a1eb4ba03c71e0cd1dec97e76916c026aafdc2e39434",
+    "metadata/expanded_background_reuse_producer_launch_20261001.json": "13a3ca79f207b0f7d7499a157e4df66c073489285c09cdc1e823d3af7f84741e",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/expanded_background_reuse_producer_launch_20261001.jsonl": "366eb56d0a05e51c336d1699d65eca2bd622663e1feb2a52baf0342ab84c1045",
+    "metadata/expanded_background_reuse_reader_launch_20261001.json": "86b01741a2ce8b830b01ee39d215ee621a94236f0952559d0fb6a762a44be7c1",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/expanded_background_reuse_reader_launch_20261001.jsonl": "bf69d723ad1f284c59feb5ffef614a061f468de9b1cde2f52afd28bf4e201a12",
+    "metadata/duplication_reference_alignment_launch_20260926.json": "75950d7db3e1d625c97dd3ddc61dac3f46fcaba84eb3ab933f636840ff05c012",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_alignment_launch_20260926.jsonl": "173c7a1b31bd25a2475977dffc161192499f0916a1984e535e5d149a60c15844",
+    "metadata/duplication_reference_rmsd_diagnostic_launch_20260927.json": "96f88fc3bbeeb08e663a55b8221ddc237fa55156db31d90be1e946fd6db71ef3",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_rmsd_diagnostic_launch_20260927.jsonl": "08290a6b72b89d7b17750184dd6efa4fddb48a28b8ca2390559d10bd7a5197f3",
+    "metadata/duplication_reference_geometry_launch_20260927.json": "ee11550874f59aabf892be8f23af88258f752532c9a4e7c9848978bbaa5bbb72",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_geometry_launch_20260927.jsonl": "29622bde116c8230586dd117b505b86c64b802b821959730a33d0c5ff45149e6",
+    "metadata/duplication_reference_geometry_readback_launch_20260927_v2.json": "32fa0999794edfaba7d16cac2619c538029e6a7c6a334d26950683ca39150109",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/duplication_reference_geometry_readback_launch_20260927_v2.jsonl": "bab4d7e45d4aad59b63f4ff100601093f218589eac104ae2c86701caa722ddf8",
+    "metadata/background_alignment_launch_20260927.json": "3778e4eb09a1d4dde5c7e9e27feb9aea9d943cc5a020c46357c4ad28791f0f07",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_launch_20260927.jsonl": "6369007876496b6af673542c6c42e42ae281eea72088877b17e205b30ecbcc4e",
+    "metadata/background_alignment_rmsd_diagnostic_launch_20260928.json": "e9b1eec457fd8b678af5dd70ea978548199c3b9254142984d535209a07ec4561",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_rmsd_diagnostic_launch_20260928.jsonl": "806cc03cf9260dfd09d53bedded72ae71c6e3148e96c16b8a4caff410f94f728",
+    "metadata/background_alignment_geometry_launch_20260928.json": "5184f1c13a687ba568e2b34f6f396e4b57f9be423c6db40895912c536fec30c4",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_geometry_launch_20260928.jsonl": "5dedf2358a3db4cd0e8d96a61ec10653a92115d9fa7989e9cf0fa5b40d4d2e7d",
+    "metadata/background_alignment_geometry_readback_launch_20260928.json": "74c4ada3fd7cbc2d6099dbc64d96a674ddbd379d24bea16e34dc102d23c17578",
+    "results/runtime-audits/background-reuse-original-journals-20261001-v1/background_alignment_geometry_readback_launch_20260928.jsonl": "bad627537ffb264ea0f74b86f745601dc1c6706a30c30898dd6d74a8e583c432"
+  },
+  "scientific_eligibility": false,
+  "scope": "Revalidate original completion identities without treating JSON key order as content.\n\nChecks the closed archive's actual hash and original PID/create/command journal\nmessages and completion resource records. Full scientific inputs are not\nrehashed here; their prior complete closure remains a separate requirement.\nRaw journal serialization differences are diagnostics, never silently rewritten.\n"
+}

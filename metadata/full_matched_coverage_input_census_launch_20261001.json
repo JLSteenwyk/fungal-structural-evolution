@@ -1,0 +1,62 @@
+{
+  "unit": "fungal-full-matched-coverage-input-census-20261001-v1.service",
+  "pid": 937536,
+  "created": 1790888148.32,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/census_full_matched_coverage_inputs.py",
+    "--plan",
+    "metadata/full_matched_coverage_input_census_plan_20261001.json"
+  ],
+  "plan": "metadata/full_matched_coverage_input_census_plan_20261001.json",
+  "plan_sha256": "aced7103fdd6be3b2c54b4799897bffa0693fb253860de8bd20c5847cccd1adc",
+  "checked_utc": "2026-10-01T20:55:49.052425+00:00",
+  "resources": {
+    "status": "planned_whole_fixed_matching_node_identity_census",
+    "checked_utc": "2026-10-01T20:55:48.990850+00:00",
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "target_pairs": 134812,
+    "background_pairs": 146172,
+    "source_inventory_models": 305434,
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_allowance_mib": 16,
+    "planning_hours": [
+      0.1,
+      2
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 770.7517204284668,
+    "free_disk_gib": 10539.749992370605,
+    "basis": "Whole601446graph nodes, all305434current model catalog entries, complete269624target coverage rows and146172background pair identities. Metadata/catalog/whole-file hash and role/length linkage census only; raw structures, native optimization and screen correctness are not re-audited.16GiB accommodates full model and physical-pair maps.16MiB output allowance for scalar counts and source-file bindings. No pilot or inference; full production coverage/matching gates remain required."
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-matched-coverage-input-census-20261001-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/census_full_matched_coverage_inputs.py",
+    "--plan",
+    "metadata/full_matched_coverage_input_census_plan_20261001.json"
+  ]
+}

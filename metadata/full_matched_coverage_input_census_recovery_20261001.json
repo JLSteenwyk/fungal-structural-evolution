@@ -1,0 +1,60 @@
+{
+  "status": "preserved_failed_full_matched_input_census_versions",
+  "checked_utc": "2026-10-01T22:13:04.750673+00:00",
+  "failed_versions": [
+    {
+      "launch": "metadata/full_matched_coverage_input_census_launch_20261001.json",
+      "launch_sha256": "6ba5cb9a7b8a0fbf36eb78306a3e9e60045d3588ccb3c5c4836197e72009fc3b",
+      "unit": "fungal-full-matched-coverage-input-census-20261001-v1.service",
+      "pid": 937536,
+      "created": 1790888148.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/census_full_matched_coverage_inputs.py",
+        "--plan",
+        "metadata/full_matched_coverage_input_census_plan_20261001.json"
+      ],
+      "exact_original_process_messages": 6,
+      "failure_messages": [
+        {
+          "timestamp": "1790888162560193",
+          "message": "fungal-full-matched-coverage-input-census-20261001-v1.service: Main process exited, code=exited, status=1/FAILURE"
+        },
+        {
+          "timestamp": "1790888162560976",
+          "message": "fungal-full-matched-coverage-input-census-20261001-v1.service: Failed with result 'exit-code'."
+        }
+      ],
+      "cause": "Graph receipt looked up in fixed matching closure"
+    },
+    {
+      "launch": "metadata/full_matched_coverage_input_census_launch_20261001_v2.json",
+      "launch_sha256": "42ff156fd44192aceb91edf4b96e77e164951d0713216a2b0649a2c0425ba183",
+      "unit": "fungal-full-matched-coverage-input-census-20261001-v2.service",
+      "pid": 1004047,
+      "created": 1790892086.4,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/census_full_matched_coverage_inputs_v2.py",
+        "--plan",
+        "metadata/full_matched_coverage_input_census_plan_20261001_v2.json"
+      ],
+      "exact_original_process_messages": 6,
+      "failure_messages": [
+        {
+          "timestamp": "1790892100131280",
+          "message": "fungal-full-matched-coverage-input-census-20261001-v2.service: Main process exited, code=exited, status=1/FAILURE"
+        },
+        {
+          "timestamp": "1790892100131726",
+          "message": "fungal-full-matched-coverage-input-census-20261001-v2.service: Failed with result 'exit-code'."
+        }
+      ],
+      "cause": "Target-only models incorrectly required in background active inventory"
+    }
+  ],
+  "replacement": "metadata/full_matched_coverage_input_census_verified_20261001_v3.json",
+  "replacement_sha256": "a525a946ff9a4956b126040a8b4c028b19b7755eb96a078e6d1b2641b98264fb",
+  "replacement_original_completion_verified": true,
+  "scope": "Preserve launched failed files and process identities; replacement retains whole target/background source universes and complete physical-pair membership. Background alignment and original scientific jobs were not restarted."
+}

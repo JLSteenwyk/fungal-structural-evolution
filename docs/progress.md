@@ -10458,3 +10458,24 @@ does not establish universal coverage or complete the biological project.
   All original likelihood/BALiPhy/AFDB jobs preserved. Full selected/unmatched
   scenario attrition/balance, further structural/phylogenetic controls and
   calibrated effects remain required; all eight aims incomplete.
+
+
+- October 1: local execution recovered after the sandbox startup failure;
+  original CPU/AFDB processes and queued follow-ups verified by exact live
+  PID/create/command. Full old-result reuse closure finished 584,688 states,
+  282,146 numerical reconstructions, 1,531,355 bindings and ten original
+  journals. Original completion fields revalidated; raw JSON serialization
+  differences documented without changing the closed archive. Full v3 census
+  passed all 601,446 graph nodes, 584,276 original catalogue identities and
+  complete target/background physical membership, with no confidence metadata
+  differences. Failed v1/v2 checks preserved and corrected in new versions.
+  Full frozen matching coverage/independent SQL/two-journal closure queued
+  behind background coverage: all 4,250,692 selected and 56,965,652 unmatched
+  decisions, 54 scenarios, 7,776 complete attrition cells. Software tests
+  rejected 17 rehashed false exports and eight false provenance contracts.
+  Prior proofs in fixtures are synthetic, not production validation. Resources
+  estimated before launch; two CPU/64 GiB, no swap/GPU/new charges per serial
+  stage. See [workflow and evidence](terminal-sister-backgrounds-20260927.md#complete-fixed-matching-coverage-queued-october-1).
+  New-native measurement and full downstream production remain incomplete;
+  post-screen balance, structural controls and calibrated phylogenetic effects
+  remain required. All eight aims incomplete; GPU inference stays paused.

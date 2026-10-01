@@ -1,0 +1,18 @@
+{
+  "status": "passed_separate_full_matched_graph_source_contract_cases",
+  "matching_closure_has_no_graph_receipt": true,
+  "rejected_false_proofs": [
+    "wrong_matching_closure_used_as_graph_proof",
+    "missing_graph_receipt_binding",
+    "missing_original_journal",
+    "wrong_covariate_graph_lineage",
+    "wrong_covariate_readback_lineage",
+    "wrong_fixed_matching_covariate_lineage",
+    "wrong_full_graph_count",
+    "changed_node_bytes_without_updated_proof"
+  ],
+  "synthetic_prior_proofs": true,
+  "production_journals_tested": false,
+  "scope": "Regression cases for separated graph/covariate and matching proof contracts.\n\nProofs are explicitly synthetic. This checks refusal of wrong provenance, not\nproduction journals, physical structures or scientific model validity.\n",
+  "script_sha256": "f1b2107d587ccb5921a5cb14690e4b802375a2e3f460deaa54d0df9167ab0800"
+}

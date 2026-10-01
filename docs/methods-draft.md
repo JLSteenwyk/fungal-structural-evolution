@@ -1712,3 +1712,36 @@ selected/unmatched scenario integration and post-screen balance remain downstrea
 without rematching. [Scope and resources](terminal-sister-backgrounds-20260927.md#complete-background-coverage-screen-queued-october-1).
 Independent old-result readback has passed all 584,688 design states; its full
 ten-journal closure and new-native measurement/union completion remain pending.
+
+
+## Full frozen matching coverage attrition — October 1
+
+Before integrating responses, we checked all 283,409 duplication-target and
+318,037 background graph nodes against their original versioned model
+catalogues and the appropriate complete physical comparison tables. Target
+models were not required to occur in the background-only active inventory.
+All roles, model IDs/versions, sequence and coordinate hashes, original lengths
+and catalogue confidence values were checked, including same-model nodes.
+The graph/covariate four-journal closure was bound separately from the
+selected-control two-journal closure, with explicit producer/readback and
+fixed-selection lineage checks.
+
+The queued integration keeps the original 54-scenario/four-policy/two-guide
+matching design fixed. Original selection identities, endpoint order, scores
+and ties, plus all matched/unmatched lists, are retained. Every physical
+comparison receives the unchanged six target coverage screens (30/50 aligned
+residues and 50/70/90% of both original full proteins), separately for full
+and pLDDT70 masks and their intersection. Same-model comparisons receive an
+explicit no-alignment exclusion, not a zero response. All selected failures
+and unmatched decisions remain in their original denominators.
+
+An independent reader compares all 4,250,692 selected source/export rows and
+1,133,636 target-policy rows, independently projects flags by endpoint
+identity and reconstructs every one of 7,776 attrition cells in SQLite,
+including empty strata and all joint/target-only/control-only/neither-pass
+categories. Full closed input hashes, all output hashes and both original
+completion journals are required before production acceptance. Software
+fixtures cover all 54 scenarios and reject corrupted exports/provenance;
+their prior physics and journal contracts are synthetic. Production results
+remain pending. Counts are dependent design records; post-screen covariate
+balance and calibrated phylogenetic duplication effects are separate analyses.

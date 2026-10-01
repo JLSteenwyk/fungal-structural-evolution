@@ -1,0 +1,72 @@
+{
+  "status": "live_queued_full_fixed_matched_coverage_after_complete_background_coverage",
+  "checked_utc": "2026-10-01T22:13:04.718193+00:00",
+  "source_plan": "metadata/full_matched_coverage_plan_20261001.json",
+  "source_plan_sha256": "957a961c5fba81bca74fb666a099be4dc333bbf320dec74b9d467e6374d3c827",
+  "static_source_pins_verified": 249,
+  "expected": {
+    "target_pairs": 134812,
+    "background_pairs": 146172,
+    "source_inventory_models": 305434,
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "target_policy_records": 1133636,
+    "scenarios": 54,
+    "selected_records": 4250692,
+    "unmatched_decisions": 56965652,
+    "source_edges": 5059122
+  },
+  "scenario_decisions": 61216344,
+  "selected_screen_cells": 76512456,
+  "logical_full_design_screen_cells": 1101894192,
+  "attrition_rows": 7776,
+  "verified_original_handles": [
+    {
+      "launch": "metadata/full_matched_coverage_launch_20261001.json",
+      "launch_sha256": "133d09de2c27cf25fef07435bcc4e63deec6da3eb186e27e42cb5732311b2a11",
+      "pid": 1013966,
+      "created": 1790892544.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_matched_coverage_readback_launch_20261001.json",
+      "launch_sha256": "a78bbd0adbf2ac699a11edc71d30604551d489eb35354309e62e790f00271edd",
+      "pid": 1013999,
+      "created": 1790892546.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_matched_coverage_closure_launch_20261001.json",
+      "launch_sha256": "420f206e10c24594c68c26862657d1c544ea63bf72f3b272a612d85eff63ce44",
+      "pid": 1014035,
+      "created": 1790892549.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    }
+  ],
+  "census_completion": "metadata/full_matched_coverage_input_census_verified_20261001_v3.json",
+  "census_completion_sha256": "a525a946ff9a4956b126040a8b4c028b19b7755eb96a078e6d1b2641b98264fb",
+  "production_complete": false,
+  "scientific_eligibility": false,
+  "scope": "Preserve all original chosen controls, endpoint mapping/caliper scores/ties and all unmatched scenarios across the complete frozen54-scenario design. Map physical QC by model ID/version regardless of gene roles; same-model nodes retained with explicit no-alignment disposition, not zero structural effects. Same six original full-protein length screens for full,pLDDT70,and intersection. No filtering/rematching on structural outcomes. Full source hashes, independent all-row SQL projection/stratum replay and original producer/reader journal closure required. Post-screen covariate balance, predictor/PAE/orientation controls, family/phylogeny/taxon dependence and calibrated biological inference remain separate unfinished requirements; counts are dependent logical records."
+}

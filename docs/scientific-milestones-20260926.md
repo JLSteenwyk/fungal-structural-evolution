@@ -715,3 +715,16 @@ retained. Software checks rejected 13 rehashed false exports; synthetic prior
 proofs do not qualify production measurements. Full 61,216,344 frozen scenario
 decision integration, post-screen balance and calibrated/phylogenetic controls
 remain pending; all eight aims incomplete and GPU inference paused.
+
+
+October 1: full background reuse is closed with all 1,531,355 bindings and
+ten original journals, preserving every old/new/numerically excluded state.
+Full source-specific graph/physical compatibility census passed every 601,446
+node and all target/background physical identities. Full frozen-control
+coverage and independent all-row SQL/stratum readback are queued behind
+background coverage, retaining all 61,216,344 scenario decisions and every
+unmatched/same-model/failed-screen disposition. This is a completed input
+qualification and a queued analysis, not a duplication effect or scientific
+aim completion. Post-screen balance, dependence/phylogeny, predictor/domain/
+PAE/orientation sensitivity and calibrated inference remain unfinished.
+All eight aims remain incomplete; GPU inference remains paused.

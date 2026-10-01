@@ -351,3 +351,26 @@ and both original journals. Physical target/background counts are descriptive;
 full 4,250,692 selected/56,965,652 unmatched fixed decisions, target/control
 attrition and post-screen balance remain required without rematching. Keep
 all eight aims open and GPU inference paused.
+
+
+## Source-specific matched coverage and journal revalidation — October 1
+
+Use the dedicated full graph/covariate proof for graph and covariate identity,
+then tie fixed matching to that covariate receipt; selected matching exports
+do not alone bind the complete graph. Check duplication targets against their
+original catalogue and target physical QC, backgrounds against their original
+catalogue and current background physical inventory. Keep same-model nodes
+explicitly excluded. Preserve failed launched versions; corrections use new
+scripts/plans/units/output paths.
+
+Freeze all original control choices across the entire scenario design before
+coverage outcomes. Preserve original unmatched and failed selected records,
+complete denominators and empty strata. Attrition exports do not replace
+post-screen balance, dependence control or biological calibration.
+
+Raw `journalctl -o json` byte hashes can vary with serialization even when
+parsed messages are identical. Preserve original closure hashes and revalidate
+exact original process identity plus recorded terminal completion fields;
+store fresh raw/canonical diagnostics separately. Do not claim original raw
+byte equivalence, accept collected-unit default success fields alone, or
+reinterpret journal validation as a repeat scientific-input/geometry audit.

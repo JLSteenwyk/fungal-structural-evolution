@@ -1,0 +1,903 @@
+{
+  "status": "verified_restored_local_access_closed_background_reuse_and_live_queued_full_fixed_matched_coverage",
+  "checked_utc": "2026-10-01T22:10:26.502258+00:00",
+  "verified_pipeline_handles": [
+    {
+      "launch": "metadata/expanded_background_alignment_launch_20261001.json",
+      "launch_sha256": "dc727f2d95d7b5ab08d08bb86c44bac27451fb372b90ea8612dd08e2e699ee03",
+      "pid": 4086945,
+      "created": 1790880442.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 585422,
+          "created": 1790881944.45,
+          "status": "sleeping",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_expanded_background_alignments.py",
+            "--plan",
+            "metadata/expanded_background_alignment_plan_20261001.json"
+          ]
+        },
+        {
+          "pid": 1015469,
+          "created": 1790892615.05,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/ab/abbf419d75a54ea7b29c49b7fb5906ba4d958b6542270cbbf346ca96a2ff55bc-full.pdb",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/3a/3ae7e5df1241ae7008b81643c00e7743526ca142851d2509eeca94b0c6ac265d-full.pdb",
+            "-mol",
+            "prot",
+            "-mm",
+            "0",
+            "-outfmt",
+            "0",
+            "-ter",
+            "2"
+          ]
+        },
+        {
+          "pid": 1015470,
+          "created": 1790892615.06,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/US-align/USalign",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/3a/3ae7e5df1241ae7008b81643c00e7743526ca142851d2509eeca94b0c6ac265d-full.pdb",
+            "results/structural_comparisons/expanded-background-alignment-inputs-20260930-v1/pdb/ab/abbf419d75a54ea7b29c49b7fb5906ba4d958b6542270cbbf346ca96a2ff55bc-full.pdb",
+            "-mol",
+            "prot",
+            "-mm",
+            "0",
+            "-outfmt",
+            "0",
+            "-ter",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_assessment_launch_20261001.json",
+      "launch_sha256": "4c13473b9db9e3205fd7d4d8faf13a4d83a2eba41231853a18e1d1e24c1c6e69",
+      "pid": 4086957,
+      "created": 1790880442.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_assessment_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_readback_launch_20261001.json",
+      "launch_sha256": "87a58ba492cb45f0065044d76dab92410f1fb208352a1f96c36fb64c03c5a8b0",
+      "pid": 4086965,
+      "created": 1790880442.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/expanded_background_measurement_closure_launch_20261001.json",
+      "launch_sha256": "2544551ce1a4e772f0efc34ed4fa69ed920cda45126ae93f4d4352e28bfc0314",
+      "pid": 4086969,
+      "created": 1790880443.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/background_measurement_union_launch_20261001.json",
+      "launch_sha256": "6a8d45e07519ddad25df90f6460cfbd83a5aa12be0e7713f8f5a7bb256ce8c04",
+      "pid": 848551,
+      "created": 1790885023.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/background_measurement_union_readback_launch_20261001.json",
+      "launch_sha256": "1d37ca384b239f3afa88b26255a083283fb0e96fa0d7c61fe95ddaecff321cd3",
+      "pid": 848559,
+      "created": 1790885024.11,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/background_measurement_union_closure_launch_20261001.json",
+      "launch_sha256": "efc3ad64f05254b1e465aaeec7342b596778c8b11b0e26cebd428d9b73be6615",
+      "pid": 848569,
+      "created": 1790885024.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_background_coverage_launch_20261001.json",
+      "launch_sha256": "bf72ba57102e750825b764bff50fb3079c85a4549293422f6abafd5a8781239b",
+      "pid": 895176,
+      "created": 1790886428.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_background_coverage_readback_launch_20261001.json",
+      "launch_sha256": "abaf00530fe3f53d616e6859e0e2d8ef8b3c0d6caa4f79d1808ba480334d685e",
+      "pid": 895249,
+      "created": 1790886431.47,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_background_coverage_closure_launch_20261001.json",
+      "launch_sha256": "c3cfc460af3f43dd130bdfb06a031e66d11aa7bae0322fa69dd691e5e04f321f",
+      "pid": 895425,
+      "created": 1790886434.43,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_matched_coverage_launch_20261001.json",
+      "launch_sha256": "133d09de2c27cf25fef07435bcc4e63deec6da3eb186e27e42cb5732311b2a11",
+      "pid": 1013966,
+      "created": 1790892544.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_matched_coverage_readback_launch_20261001.json",
+      "launch_sha256": "a78bbd0adbf2ac699a11edc71d30604551d489eb35354309e62e790f00271edd",
+      "pid": 1013999,
+      "created": 1790892546.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_readback_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_matched_coverage_closure_launch_20261001.json",
+      "launch_sha256": "420f206e10c24594c68c26862657d1c544ea63bf72f3b272a612d85eff63ce44",
+      "pid": 1014035,
+      "created": 1790892549.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_closure_wait_plan_20261001.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    }
+  ],
+  "preserved_original_live_jobs": [
+    {
+      "pid": 433565,
+      "created": 1790709562.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_whole_protein_ml.py",
+        "--plan",
+        "metadata/whole_protein_ml_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 436679,
+          "created": 1790709687.55,
+          "status": "sleeping",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.resource_tracker import main;main(9)"
+          ]
+        },
+        {
+          "pid": 436680,
+          "created": 1790709687.55,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=15)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436683,
+          "created": 1790709687.55,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=17)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436684,
+          "created": 1790709687.55,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=19)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436685,
+          "created": 1790709687.55,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=21)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436686,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=23)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436687,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=25)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436688,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=27)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436689,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=29)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436690,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=31)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436691,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=33)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436692,
+          "created": 1790709687.56,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=35)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436693,
+          "created": 1790709687.57,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=37)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436694,
+          "created": 1790709687.57,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=39)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436695,
+          "created": 1790709687.57,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=41)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436696,
+          "created": 1790709687.57,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=43)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 436697,
+          "created": 1790709687.57,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=45)",
+            "--multiprocessing-fork"
+          ]
+        }
+      ]
+    },
+    {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_whole_protein_ml_outputs.py",
+        "--plan",
+        "metadata/whole_protein_ml_output_audit_plan_20260929.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "pid": 338483,
+      "created": 1790533714.57,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_polynomial_ml.py",
+        "--plan",
+        "metadata/full_polynomial_ml_plan_20260927.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 338685,
+          "created": 1790533729.74,
+          "status": "sleeping",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.resource_tracker import main;main(9)"
+          ]
+        },
+        {
+          "pid": 338696,
+          "created": 1790533731.91,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=14)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338699,
+          "created": 1790533731.92,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=16)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338700,
+          "created": 1790533731.93,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=18)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338701,
+          "created": 1790533731.93,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=20)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338702,
+          "created": 1790533731.93,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=22)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338703,
+          "created": 1790533731.93,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=24)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338704,
+          "created": 1790533731.94,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=26)",
+            "--multiprocessing-fork"
+          ]
+        },
+        {
+          "pid": 338705,
+          "created": 1790533731.95,
+          "status": "running",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "-c",
+            "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=10, pipe_handle=28)",
+            "--multiprocessing-fork"
+          ]
+        }
+      ]
+    },
+    {
+      "pid": 771240,
+      "created": 1790566377.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 978762,
+          "created": 1790890661.8,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261152",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/1215fce145aa6a564b4858e2bf8d86023d6e5ddc500c5b358ed6016a4777df0c-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 980721,
+          "created": 1790890797.35,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262484",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/ea22d64eeafa574cebc42efcdc9d3091d230a144316f1879fab6dc18243b441e-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 993316,
+          "created": 1790891586.19,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261956",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/9b92fbbb126a2db7b15e7c72df7eb6447db40116420a41c9b2197294eac105e0-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1003220,
+          "created": 1790892043.51,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262256",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/c653794f534e750fa56c91b8f025916402a8bbbefd347468659437cf2c7493e8-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1005261,
+          "created": 1790892147.44,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261056",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/04c2aacbb49767976d967570af07cb2ee295698c4842a3871e9fa2b43c1c423e-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1005792,
+          "created": 1790892178.12,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262328",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/ce6ca2c146f608cafe589bc9a297c77ed7948caac1b006eb031ede7975ee1401-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1011347,
+          "created": 1790892410.49,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262136",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/b5fcd4bb2bad85a36f8ab1fdcdb4f00a05ba31b03fc8b7cd2702e1d973f8ed6d-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1012440,
+          "created": 1790892463.26,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262124",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/b5798e78d23ed01c8d8004f5663a65aa1d50fc9af4ed036f23626451393031be-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1012990,
+          "created": 1790892499.31,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262148",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/b81382c8a9caedce62d6197a3fb73f4114027223a26af86b9877baedd75e00c1-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1012992,
+          "created": 1790892499.75,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261392",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/41ddef2f3dd8342f1a3d3b8c2009a6c535e46733a73cc4755936f2c674a493bc-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1013873,
+          "created": 1790892536.28,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261896",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/930e3256cf0f6c3a31f44c3da0e1809e7d51b5746e0421e6c1ebd7e84be62d1e-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1015034,
+          "created": 1790892588.06,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261836",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/8b4bdd43c6f7ad68f26c76d2c6430a5c9d7ee8e3b4ba88b08391d053a78710f3-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 1015466,
+          "created": 1790892614.86,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262028",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/a9d1694f618664eff4686111a5368ca068a6a2696b55025ce18ec0638c0c698e-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 3335579,
+          "created": 1790841611.7,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262600",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 3565257,
+          "created": 1790868649.23,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262076",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        },
+        {
+          "pid": 3565969,
+          "created": 1790868663.62,
+          "status": "running",
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20262604",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ]
+        }
+      ]
+    },
+    {
+      "pid": 863281,
+      "created": 1790353565.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_structure_retrieval.py",
+        "--plan",
+        "metadata/recovery_20260925_structure_retrieval_plan.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 866035,
+          "created": 1790353567.31,
+          "status": "sleeping",
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/retrieve_matched_models.py"
+          ]
+        }
+      ]
+    }
+  ],
+  "terminal_pipeline_handles": [
+    {
+      "launch": "metadata/expanded_background_reuse_closure_launch_20261001.json",
+      "launch_sha256": "2346d1f4af813b6a67af362c10ebe83c6efb26241c862a52c51bc22c339b4bab",
+      "pid": 786642,
+      "created": 1790882075.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_reuse_closure_wait_plan_20261001.json"
+      ],
+      "status": "verified_original_completion",
+      "exact_process_messages": 144,
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790887066523781",
+          "CPU_USAGE_NSEC": "665000052000",
+          "MEMORY_PEAK": "3784704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "reuse_completion": "metadata/expanded_background_reuse_completed_20261001.json",
+  "reuse_completion_sha256": "d5b2fd20312a30765c8def9321001e50d90d7719d93b8f6275ca3cd4d04e56ac",
+  "reuse_journal_revalidation": "metadata/expanded_background_reuse_journal_revalidation_20261001.json",
+  "reuse_journal_revalidation_sha256": "1c4d0d7b8cc87ed20b8d40948e4e95a72c2ac8e6bef7a915d17e4864898580c9",
+  "full_node_census": "metadata/full_matched_coverage_input_census_verified_20261001_v3.json",
+  "full_node_census_sha256": "a525a946ff9a4956b126040a8b4c028b19b7755eb96a078e6d1b2641b98264fb",
+  "matched_plan": "metadata/full_matched_coverage_plan_20261001.json",
+  "matched_plan_sha256": "957a961c5fba81bca74fb666a099be4dc333bbf320dec74b9d467e6374d3c827",
+  "native_progress": {
+    "path": "results/structural_comparisons/expanded-background-alignments-20261001-v1/state.json",
+    "sha256_at_observation": "4357d056c1f2844b09641b0f010c2eeb001fe6a7ef8f71015b3ac53f4435fcc0",
+    "stage": "aligning_full_new_background_partition",
+    "completed": 69888,
+    "total": 298848,
+    "counts": {
+      "full:aligned": 34944,
+      "plddt70:aligned": 33934,
+      "plddt70:input_unavailable": 1010
+    }
+  },
+  "old_background_reuse_ten_journal_closure_complete": true,
+  "new_background_measurements_complete": false,
+  "full_background_result_union_complete": false,
+  "full_background_coverage_complete": false,
+  "full_matched_selection_coverage_complete": false,
+  "all_eight_scientific_aims_incomplete": true,
+  "gpu_inference_paused": true,
+  "scope": "Exact original live PID/create/CMD and terminal journal identities checked after sandbox access recovered. Completion locators distinguish source qualification from pending downstream production. Native progress is mutable checkpoint observation, not independent numerical acceptance. All original CPU/AFDB jobs preserved; no GPU inference or paid resources started."
+}
