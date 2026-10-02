@@ -1,0 +1,222 @@
+{
+  "status": "preserved_failed_catalog_target_quarantine_contract_attempt",
+  "checked_utc": "2026-10-02T17:13:59.621006+00:00",
+  "source_plan": "metadata/full_expanded_measurement_catalog_plan_20261002_v2.json",
+  "source_plan_sha256": "e0ba8ae8e6790bf01b512b4084c7ad720e215baf45eae0c287dbc853fda4cc61",
+  "error": "Target screened aligned-length value is blank for a numerically excluded native-aligned state; v2 attempted float(blank).",
+  "original_failed_handles": [
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_v2_launch_20261002.json",
+      "pid": 2208425,
+      "created": 1790960900.82,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_v2_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "121dc2ad5c8e8ddb3f65c00741f138ca9b38c7d28ef0691c7ac04c50d9124bb6",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "e2ebb0995f10575c06f931b487c2f72851797459fff7206dd488e52b952e27f6",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961196601486",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "e782edbf31f347918c14a0a32868394d"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961196601930",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "e782edbf31f347918c14a0a32868394d"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961196602075",
+          "CPU_USAGE_NSEC": "288441494000",
+          "MEMORY_PEAK": "3420160",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_v2_readback_launch_20261002.json",
+      "pid": 2208429,
+      "created": 1790960900.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "18f49d9e7981d4dfa301df7539065a043a88f77912e382b23f12478270ed2134",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "ef830eecff697ba22d7bd7f08f5b1bef4d6b2b5adccb4842ba61525fac10b5d2",
+      "captured_process_messages": 20,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961201990404",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "1af9fe5a6b0342d585df9a485bd08c05"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961201990873",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "1af9fe5a6b0342d585df9a485bd08c05"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_v2_closure_launch_20261002.json",
+      "pid": 2208433,
+      "created": 1790960900.9,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "37f33db78218f4b20694c5de34b2a66809bb2559b1651d06fc00d49818e2bae6",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "908e7ced334450a6be0023d27a2570222c3366a604b9bccd74bb59936a138052",
+      "captured_process_messages": 20,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961202027526",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-closure-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5873a87a6dfe454486d144e9e088a046"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961202027751",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-v2-closure-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5873a87a6dfe454486d144e9e088a046"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/full_expanded_case_measurements_launch_20261002.json",
+      "pid": 2209296,
+      "created": 1790960995.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_case_measurements_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e874f532b8ae9a43007f181df96e7892eae1901dd433fba647556878112d65ff",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "73337228c4edda6da5babc56a2a5d489b8fc2bd0994f13729ffca789fea79ddc",
+      "captured_process_messages": 17,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961206299299",
+          "MESSAGE": "fungal-full-expanded-case-measurements-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "d2940c749f9f4d8a9de3e0155abe451c"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961206299615",
+          "MESSAGE": "fungal-full-expanded-case-measurements-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "d2940c749f9f4d8a9de3e0155abe451c"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/full_expanded_case_measurements_readback_launch_20261002.json",
+      "pid": 2209307,
+      "created": 1790960995.3,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_case_measurements_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "67d9bca7054f0c0b3dd373670858ead9f590cf0bf0cba5f077d25cf10a61fbce",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "74727fe20ec99e93c3072a4005ea1c43b2baa46287c9ec7fadc2d0c723c4679a",
+      "captured_process_messages": 18,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961236326723",
+          "MESSAGE": "fungal-full-expanded-case-measurements-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "e1aac1961ae34f7f80fbd7f94c105b73"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961236327164",
+          "MESSAGE": "fungal-full-expanded-case-measurements-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "e1aac1961ae34f7f80fbd7f94c105b73"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/full_expanded_case_measurements_closure_launch_20261002.json",
+      "pid": 2209311,
+      "created": 1790960995.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_case_measurements_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "12ba2a122830e54eec6be4a130ccc5b0eb6809c98c565ffa2364514f43de4ea0",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "f85a6c25b321f985dca649b3d3a833d5f67ff69dfda3dbf1490ea360a278f6d2",
+      "captured_process_messages": 18,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790961236330905",
+          "MESSAGE": "fungal-full-expanded-case-measurements-closure-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4447c8c1d9964c1fb6cdafd14c0f39be"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790961236331127",
+          "MESSAGE": "fungal-full-expanded-case-measurements-closure-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4447c8c1d9964c1fb6cdafd14c0f39be"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "correction": "V3 distinguishes raw diagnostic numeric values from target coverage blanking; unusable target lengths remain blank in coverage while raw catalog diagnostics are kept gated numerical_usable=0. Entire original target/background native work remains unchanged; original scripts/plans/output/journals preserved.",
+  "scope": "V2 native-source receipt lineage passed; export stopped on quarantine projection. Queued original join dependencies failed without any joined production output. No native refit."
+}

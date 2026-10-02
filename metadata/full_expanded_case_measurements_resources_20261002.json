@@ -1,0 +1,30 @@
+{
+  "status": "planned_complete_expanded_case_mask_measurement_join",
+  "checked_utc": "2026-10-02T17:09:54.395449+00:00",
+  "logical_cases": 75188,
+  "case_mask_rows": 150376,
+  "outcomes": 2,
+  "order_pair_cells": 1203008,
+  "source_directed_states": 1123936,
+  "selected_records": 4250692,
+  "unmatched_decisions": 56965652,
+  "cpu_per_stage": 2,
+  "memory_gib_per_stage": 32,
+  "swap_gib": 0,
+  "output_and_scratch_allowance_gib": 16,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 579.291145324707,
+  "free_disk_gib": 10431.373447418213,
+  "whole_census_producer_receipt": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/receipt.json",
+  "whole_census_producer_receipt_sha256": "1a26df4c1f3457cac3a1d5a26f382a2fea53c0ce993314f251548d3be448b7e9",
+  "census_independent_readback_required_before_run": true,
+  "basis": "All75188full-census logical cases*two masks*four target/control order pairs*two outcomes;150376rows and1203008potential contrast cells. Entire1123936row directed catalog and full expanded closed-source dictionaries in memory;32GiB cap and16GiB output/proof allowance. Original4250692selection memberships/54scenarios/four policies/two guides andall56965652unmatched decisions remain linked to the full closed case index. Full independent Decimal reconstruction after producer; uncalibrated1-12h excludes dependency waiting. No native fit, GPU or paid resources."
+}

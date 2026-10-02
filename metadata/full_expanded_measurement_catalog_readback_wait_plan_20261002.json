@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_expanded_measurement_catalog_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_expanded_measurement_catalog.py",
+    "--plan",
+    "metadata/full_expanded_measurement_catalog_plan_20261002.json",
+    "--output",
+    "results/structural_comparisons/full-expanded-directed-measurements-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_measurement_catalog_plan_20261002.json": "312679de21ef19b36abe39e29439bbf32dd779d56d2ebf1a81dfe071c9e863f5",
+    "metadata/full_expanded_measurement_catalog_launch_20261002.json": "7e3fd59d505cc7b5f349037681bca7b6a872db6f4d7fa155c365116e696fbe0b",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

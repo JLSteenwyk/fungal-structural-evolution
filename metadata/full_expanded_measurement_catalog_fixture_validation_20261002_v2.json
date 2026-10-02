@@ -1,0 +1,43 @@
+{
+  "status": "passed_full_expanded_measurement_catalog_software_contracts",
+  "directed_states": 16,
+  "raw_numeric_failures_quarantined": true,
+  "native_errors_and_null_metrics_retained": true,
+  "real_numeric_zero_retained": true,
+  "source_order_reversal_preserved": true,
+  "shared_physical_pairs_across_roles_not_collapsed": true,
+  "full_length_denominators_and_masks_checked": true,
+  "completed_restart_refused": true,
+  "interrupted_full_replay_passed": true,
+  "rejected_rehashed_exports": [
+    "missing_state",
+    "duplicate_state",
+    "changed_role",
+    "changed_pair",
+    "changed_mask",
+    "changed_order",
+    "changed_model_version",
+    "changed_source_order",
+    "changed_source_checkpoint",
+    "changed_checkpoint_hash",
+    "changed_rmsd",
+    "changed_native_tm",
+    "changed_geometry",
+    "cleared_exclusion",
+    "promoted_numeric_failure",
+    "missing_as_zero",
+    "masked_denominator_substitution",
+    "changed_coverage_bits",
+    "changed_intersection_bits",
+    "changed_summary"
+  ],
+  "synthetic_prior_native_matching_and_journal_contracts": true,
+  "production_fits_or_journals_tested": false,
+  "scope": "Directed catalog contracts, nullable failures and rehashed corrupt exports.\n\nPrior native fits, matching and original journals are synthetic contracts;\nthe tests cover the new normalization/readback software, not real fitting or\nfull scientific source acceptance. The complete production scope is unchanged.\n",
+  "source_hashes": {
+    "scripts/full_expanded_measurement_catalog_sources_v2.py": "d7cae1c11ecf796d06f452cdb849b12273805ec4720d0ab86cc824e9fad58cc5",
+    "scripts/export_full_expanded_measurement_catalog_v2.py": "fad4e94c4b3ad76ae80dd468e8d9ed0704da8ee966f8732355ddf5cad3f5aace",
+    "scripts/readback_full_expanded_measurement_catalog_v2.py": "85190869d82bf863acd214a8ee309a57e535f1666b845bde7b8aaf5243a4a1c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_expanded_measurement_catalog_v2.py": "b30efef2b3ccef109570a93240506f636d1a8f491743ec2950515993ff2448b8"
+  }
+}

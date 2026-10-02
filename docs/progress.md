@@ -1,6 +1,50 @@
 # Progress and evidence
 
+## October 2 complete expanded case and measurement integration
+
+The full case producer and independent SQL reader passed all 4,250,692 fixed
+selections, 1,133,636 target/policy rows and 56,965,652 unmatched decisions.
+They identified 75,188 logical cases and 37,600 physical target/control pair
+combinations, spanning 3,331 families and 199 focal taxa per guide. Different
+genes, both endpoint mappings, all 54 scenarios/four policies/two guides,
+same-model exclusions and quality bits remain explicit. The final original
+journal/full-hash closure passed 1,830,493 bindings and both original journals.
+This is an ascertained subset and dependent
+reuse census, not a phylogenetically adjusted effect or independent sample size.
+
+Implemented and launched the complete 1,123,936-state directed catalog and
+queued the full 150,376-case/mask measurement join, covering 1,203,008 potential
+cross-order/outcome cells. Every target/control order, sequence/gene identity,
+failure and original-length/mask gate remains accessible. Both-orders-only
+means and complete-four-order envelopes cannot be promoted from partial or
+excluded measurements. A separate Decimal reader verifies all derived values.
+Software contracts rejected 23 index, 20 catalog and 19 join false exports and
+passed interruption replay/completed-restart refusal. These are software
+contracts with synthetic prior source proofs, not production acceptance.
+
+Preserved the first catalog source-lineage failure and the second target-QC
+blanking failure, plus their dependent original failures, without changing
+existing native results or pinned attempts. The corrected catalog v3 expands
+the original receipt/manifest/checkpoint chain and distinguishes quarantined
+raw diagnostics from target coverage's blank excluded values; join v2 depends
+on its original closure. Two CPU/32 GiB/no swap/one BLAS thread, 100 GiB reserve
+and 16–32 GiB output/scratch were estimated before launch. No GPU or paid
+resources. The catalog producer and full independent reader passed all 1,123,936 states;
+its final provenance closure is running. Full join production/reader/closure
+remain pending.
+[Schemas, resources, provenance and reproducibility](full-expanded-matched-measurements-20261002.md).
+Expanded covariance/design/model fitting, ascertainment/dependence controls,
+accepted phylogeny/reconciliation, predictor/domain/PAE/orientation and
+calibrated inference remain required. Older fitting grids retain their older
+cohorts. All eight aims remain incomplete; GPU prediction stays paused.
+
 ## October 2 runtime collector child-process race repaired
+
+A [fresh error recheck at 17:48 UTC](../metadata/runtime_error_recheck_20261002_1748.json)
+passed all seven race-regression checks, verified 33 still-live original jobs
+and one newly successful terminal reader, and found no new error matches in
+their previous 30 minutes of service logs. This does not erase preserved
+historical failures or establish full scientific completion.
 
 The earlier missing-`source_hashes` input error is resolved by using the
 fixture-validation locator. A separate status-collector failure occurred when
@@ -10897,7 +10941,22 @@ does not establish universal coverage or complete the biological project.
   alignment/geometry/comparison/context production remains pending, along with
   context/tie direction integration, matched backgrounds, prediction/domain/PAE,
   accepted phylogeny/reconciliation, dependence/sampling and calibrated inference.
-  All eight aims remain incomplete; GPU prediction stays paused.
+All eight aims remain incomplete; GPU prediction stays paused.
+
+The [fresh execution checkpoint](../metadata/full_expanded_measurement_execution_checkpoint_20261002_v2.json)
+reverified 2,299,379 complete case/context source/artifact bindings and all
+49 original process identities: 34 live, six newly successful terminal handles
+and nine preserved new integration/dependency failures. The initial inventory
+collector assumed every older job had a launch record; the original AlphaFold
+retrieval instead has only an exact PID/create/CMD baseline. The collector now
+preserves that schema, requires the original process live and captures the
+actual script/command-plan hashes without fabricating a launch or terminal
+proof. The failed foreground observation remains recorded. Older 70 terminal
+successes/ten historical failures remain at the separate full runtime v20,
+not newly reverified by this narrower execution checkpoint. The complete
+original-context joint analysis has also closed all 459,122,580 policy decisions
+and 32,400 counts with 493,914 bindings/two original journals; full publication
+and figure review remain next.
   [Executed results and reproducibility](full-triad-contrast-sensitivity-20261002.md).
 
 - October 2 UTC: implemented and launched complete original-context contrast

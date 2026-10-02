@@ -1,0 +1,104 @@
+{
+  "status": "complete_verified_full_matching_logical_case_index",
+  "target_nodes": 283409,
+  "background_nodes": 318037,
+  "target_policy_records": 1133636,
+  "scenarios": 54,
+  "scenario_decisions": 61216344,
+  "selected_records": 4250692,
+  "unmatched_decisions": 56965652,
+  "logical_cases": 75188,
+  "physical_cases": 37600,
+  "unique_selected_targets": 53042,
+  "unique_selected_backgrounds": 44699,
+  "maximum_selection_reuse": 216,
+  "case_dispositions": {
+    "target_same_model=1,background_same_model=1": 4788,
+    "target_same_model=0,background_same_model=0": 70221,
+    "target_same_model=0,background_same_model=1": 139,
+    "target_same_model=1,background_same_model=0": 40
+  },
+  "guide_census": {
+    "profile": {
+      "logical_cases": 37588,
+      "selected_records": 2125304,
+      "physical_cases": 37588,
+      "target_nodes": 26521,
+      "background_nodes": 22345,
+      "target_families": 3331,
+      "background_families": 3331,
+      "focal_taxa": 199
+    },
+    "mafft": {
+      "logical_cases": 37600,
+      "selected_records": 2125388,
+      "physical_cases": 37600,
+      "target_nodes": 26521,
+      "background_nodes": 22354,
+      "target_families": 3331,
+      "background_families": 3331,
+      "focal_taxa": 199
+    }
+  },
+  "future_case_mask_rows": 150376,
+  "future_order_pair_cells": 601504,
+  "retained_selection_screen_cells": 46158656,
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "masks": [
+    "full",
+    "plddt70",
+    "both"
+  ],
+  "guides": [
+    "profile",
+    "mafft"
+  ],
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "full_hash_archive": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "6f2760f983329bd66c84986d9d398d916d316c3a408ddeb7b86adb88f2e1545b",
+  "bound_source_hashes": 1830493,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "1a26df4c1f3457cac3a1d5a26f382a2fea53c0ce993314f251548d3be448b7e9",
+  "independent_readback": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/readback.json",
+  "independent_readback_sha256": "57e5510feaca5a235e57fb7dd3533295d186ae1c6a5cfbc11d23b738e0c70422",
+  "completion_plan_sha256": "10bae02101208f3672167ef4fd0c8a420d025d7b089b71205d6706d6f412ced5",
+  "scientific_eligibility": false,
+  "scope": "Every4250692fixed selection remains verbatim in a case-linked membership export, with original row ordinal, endpoint mapping, caliper score, ties, masks and allsix screens. All1133636target/policy rows and56965652unmatched decisions stay in the closed original status source, fully replayed for membership. Logical cases use ordered target/background node IDs and retain guide, gene-family/taxon/gene-node/gene identities. Physical cases use ordered target/background model-pair hashes only as reuse descriptors; never substitute physical identity for independent gene contexts. Same-model cases remain explicitly unaligned, with zero eligibility bits, not zero effects. Both mask sources and intersection eligibility preserved. Full independent SQL every-case/every-selection replay and complete two-original-journal/full-source closure required. Indexing is a measurement handoff, not a fit, independent sample count, phylogenetic correction, duplication effect or accepted hypothesis test. Expanded measurement joins/models/calibration and all eight scientific aims remain unfinished."
+}

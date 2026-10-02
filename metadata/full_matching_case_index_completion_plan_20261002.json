@@ -1,0 +1,44 @@
+{
+  "source_plan": "metadata/full_matching_case_index_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/readback.json",
+  "producer_status": "complete_full_matching_case_index_pending_independent_readback",
+  "reader_status": "passed_full_matching_case_index_sql_readback",
+  "completed_status": "complete_verified_full_matching_logical_case_index",
+  "summary_fields": [
+    "target_nodes",
+    "background_nodes",
+    "target_policy_records",
+    "scenarios",
+    "scenario_decisions",
+    "selected_records",
+    "unmatched_decisions",
+    "logical_cases",
+    "physical_cases",
+    "unique_selected_targets",
+    "unique_selected_backgrounds",
+    "maximum_selection_reuse",
+    "case_dispositions",
+    "guide_census",
+    "future_case_mask_rows",
+    "future_order_pair_cells",
+    "retained_selection_screen_cells",
+    "screens",
+    "masks",
+    "guides",
+    "policies"
+  ],
+  "launches": [
+    "metadata/full_matching_case_index_launch_20261002.json",
+    "metadata/full_matching_case_index_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_matching_case_index_plan_20261002.json": "854322b473d63a2792cdda952cbb1b009a849bc66911568ad065d00f547796c7",
+    "metadata/full_matching_case_index_launch_20261002.json": "d62cef4d32922d17c5f9ed21341caf291c136a9c0d91cfe35ba94bde79fd7930",
+    "metadata/full_matching_case_index_readback_launch_20261002.json": "f0228f8da17191097b562b313b0dc684e6adaef9aa6fd52907fdb3d8c46ad911",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_matching_case_index_completed_20261002.json",
+  "scope": "Every4250692fixed selection remains verbatim in a case-linked membership export, with original row ordinal, endpoint mapping, caliper score, ties, masks and allsix screens. All1133636target/policy rows and56965652unmatched decisions stay in the closed original status source, fully replayed for membership. Logical cases use ordered target/background node IDs and retain guide, gene-family/taxon/gene-node/gene identities. Physical cases use ordered target/background model-pair hashes only as reuse descriptors; never substitute physical identity for independent gene contexts. Same-model cases remain explicitly unaligned, with zero eligibility bits, not zero effects. Both mask sources and intersection eligibility preserved. Full independent SQL every-case/every-selection replay and complete two-original-journal/full-source closure required. Indexing is a measurement handoff, not a fit, independent sample count, phylogenetic correction, duplication effect or accepted hypothesis test. Expanded measurement joins/models/calibration and all eight scientific aims remain unfinished."
+}

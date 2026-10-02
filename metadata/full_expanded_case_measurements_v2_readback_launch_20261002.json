@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-expanded-case-measurements-v2-readback-20261002-v1.service",
+  "pid": 2214589,
+  "created": 1790961280.98,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_expanded_case_measurements_v2_readback_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/full_expanded_case_measurements_v2_readback_wait_plan_20261002.json",
+  "plan_sha256": "4d37edd416d9a04b7ee2b7928364499abe7fa129d4e7ec651e8d0950b1560ef9",
+  "checked_utc": "2026-10-02T17:14:41.716084+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-expanded-case-measurements-v2-readback-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_expanded_case_measurements_v2_readback_wait_plan_20261002.json"
+  ]
+}

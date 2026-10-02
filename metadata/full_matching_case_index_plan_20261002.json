@@ -1,0 +1,108 @@
+{
+  "matching_completion": "metadata/full_matched_coverage_completed_20261001.json",
+  "matching_plan": "metadata/full_matched_coverage_plan_20261001.json",
+  "guides": [
+    "profile",
+    "mafft"
+  ],
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "expected": {
+    "target_nodes": 283409,
+    "background_nodes": 318037,
+    "selected_records": 4250692,
+    "scenarios": 54,
+    "target_policy_records": 1133636,
+    "unmatched_decisions": 56965652
+  },
+  "output": "results/structural_comparisons/full-matching-logical-cases-20261002-v1",
+  "pins": {
+    "scripts/full_matching_case_sources.py": "2d789b4a0cf1ef3157e18d529e2d1ab15ea5a5134514b9b8fa8c5bfe7b8b32af",
+    "scripts/index_full_matching_cases.py": "33864a8717a3dd7c139701a536d77ed1c2eff761b5c0865818c2c181a546fb4a",
+    "scripts/readback_full_matching_cases.py": "598d71923f0cfd8af644236296f4115b40625a941abba8eda15e956bf31cc8d5",
+    "scripts/check_full_matching_case_index.py": "90bded2316166ee24b7e47f521ba26cf88a242eee0879d31767eaca65cb14c84",
+    "scripts/launch_full_matching_case_index.py": "039687ff99b5b67a02885e57abde37d66a4362bdef21511b3417dc83607a630f",
+    "scripts/full_screened_balance_sources.py": "9864cffbaecc1fd5a7ed6673cca7de4f0fb46580f1e0371b70a465a9fab71dd9",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/full_matched_coverage_sources.py": "774bae2f7f87ceee68088922e836c4f3081d1a949bb7a8c2249a661ce424e970",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_matching_case_index_fixture_validation_20261002.json": "b97474cac9401f5eaca2561d59001aeac3fd0df1720d52fc59ec180634fa91fe",
+    "metadata/full_matching_case_index_resources_20261002.json": "3b872a178d77a0ba652cf3fa3e1cc3da7ff971b24417de3b21cef8821f148897",
+    "metadata/full_matched_coverage_completed_20261001.json": "2639a1fa4130fc1176ac5be1a4111a2dcc67bbc96df6c680c5802233d47fdca3",
+    "metadata/full_matched_coverage_plan_20261001.json": "957a961c5fba81bca74fb666a099be4dc333bbf320dec74b9d467e6374d3c827"
+  },
+  "resources": {
+    "status": "planned_full_frozen_matching_logical_case_index",
+    "checked_utc": "2026-10-02T16:43:56.382085+00:00",
+    "selected_records": 4250692,
+    "target_policy_records": 1133636,
+    "unmatched_decisions": 56965652,
+    "maximum_logical_cases": 4250692,
+    "maximum_future_case_mask_rows": 8501384,
+    "maximum_future_order_pair_cells": 34005536,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 32,
+    "swap_gib": 0,
+    "output_and_scratch_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      12
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 723.775146484375,
+    "free_disk_gib": 10433.666595458984,
+    "input_sizes_bytes": {
+      "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/selected_pair_coverage.tsv.gz": 47313999,
+      "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/target_policy_coverage_status.tsv.gz": 40409252
+    },
+    "basis": "Complete fixed selection/status streams and all601446graph nodes; upper bound one logical case per selected record.32GiB covers graph, full closed source-hash map, case metadata dictionary, sort and bounded SQLite cache.32GiB disk allowance for complete membership/index and independent SQLite scratch. Separate reader runs after producer. This is a full census before measurement join resource estimates, not a pilot or subset. Runtime is a planning allowance, not calibrated ETA; no native alignment or GPU work."
+  },
+  "fixture_validation": "metadata/full_matching_case_index_fixture_validation_20261002.json",
+  "scope": "Every4250692fixed selection remains verbatim in a case-linked membership export, with original row ordinal, endpoint mapping, caliper score, ties, masks and allsix screens. All1133636target/policy rows and56965652unmatched decisions stay in the closed original status source, fully replayed for membership. Logical cases use ordered target/background node IDs and retain guide, gene-family/taxon/gene-node/gene identities. Physical cases use ordered target/background model-pair hashes only as reuse descriptors; never substitute physical identity for independent gene contexts. Same-model cases remain explicitly unaligned, with zero eligibility bits, not zero effects. Both mask sources and intersection eligibility preserved. Full independent SQL every-case/every-selection replay and complete two-original-journal/full-source closure required. Indexing is a measurement handoff, not a fit, independent sample count, phylogenetic correction, duplication effect or accepted hypothesis test. Expanded measurement joins/models/calibration and all eight scientific aims remain unfinished."
+}

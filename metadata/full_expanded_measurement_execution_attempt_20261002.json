@@ -1,0 +1,8 @@
+{
+  "status": "preserved_foreground_execution_inventory_schema_failure",
+  "checked_utc": "2026-10-02T17:24:14.895513+00:00",
+  "error": "IndexError: prior AlphaFold retrieval process863281 has an empty launch_records list; it is tracked by exact PID/create/CMD.",
+  "failed_before_output": true,
+  "correction": "Preserve original retrieval identity/schema; require it live, capture actual script/command-plan hashes, and do not fabricate a launch record or terminal proof.",
+  "scientific_job_mutations": false
+}

@@ -1,5 +1,20 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+The October 2 [expanded case/measurement handoff](full-expanded-matched-measurements-20261002.md)
+adds complete source-linked logical case identities and all target/control
+order comparisons for the expanded fixed matching. The full case producer and
+independent SQL reader passed 4,250,692 selections and all unmatched partitions;
+75,188 logical cases retain gene/family/taxon/gene-tree-node and physical model
+identities separately. The directed catalog producer and independent reader passed all 1,123,936
+states; final provenance closure is running. The case/mask join is implemented
+and queued, with final acceptance pending. Both-orders-only means
+and complete four-order envelopes preserve missing and excluded states for
+RMSD and explicitly native TM dissimilarity. Separate Decimal reconstruction
+checks derived arithmetic. These are dependent measurement records for future
+expanded covariance and model fitting, not calibrated effects or completed
+phylogenetic adjustment. See the workflow for all source, mask, denominator,
+quarantine, resource and original-journal requirements.
+
 This draft describes executed methods through 22 September 2026. Early exploratory datasets remain explicitly identified by their snapshot sizes. Full structural-atlas construction and the final phylogenetically integrated evolutionary analyses remain unfinished; completed preparation and conditional estimates are not treated as final biological results.
 
 ## Sampling and sequence acquisition

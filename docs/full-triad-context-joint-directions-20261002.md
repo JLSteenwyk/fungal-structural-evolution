@@ -4,7 +4,11 @@ The full integration's producer has completed **283,409 original gene-tree
 contexts, 566,818 design records, 214,461 tied references and 428,922 logical
 sides**. It links all 27,056 source-ready ordered physical triples and 730,512
 joint direction groups back to their original parent and reference identities.
-Full independent readback and closure remain pending. This extends the
+Full independent readback and [provenance closure](../metadata/full_triad_context_joint_directions_completed_20261002.json)
+have passed all 459,122,580 policy decisions and 32,400 count rows, with
+493,914 source/artifact bindings and both original completion/resource journals.
+The complete proof was reverified in the [execution checkpoint](../metadata/full_expanded_measurement_execution_checkpoint_20261002.json).
+Full count publication and figure review remain subsequent work. This extends the
 [completed structural-context directions](full-triad-context-contrasts-20261002.md)
 to the [joint sequence/structural physical control](full-triad-joint-directions-20261002.md).
 

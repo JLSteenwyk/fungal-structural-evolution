@@ -1,0 +1,14 @@
+{
+  "status": "verified_original_retrieval_inventory_schema_repair",
+  "initial_failure_record": "metadata/full_expanded_measurement_execution_attempt_20261002.json",
+  "initial_collector_source_preserved": "scripts/record_expanded_measurement_execution_initial_failed.py",
+  "initial_collector_source_sha256": "e95d1893fa945c0a645fff6577977bdd55a7c19f023e848db64bbe80b28477fe",
+  "preservation_basis": "Initial foreground source reconstructed by reversing exactly the two documented launch-schema repair edits; failed before output. This is source preservation, not a fabricated original launch/journal.",
+  "corrected_collector": "scripts/record_expanded_measurement_execution.py",
+  "corrected_collector_sha256": "e2d08b0ab4e115f3518d426f0034bfa02cd564dc717a18f2f2e52138863e5231",
+  "expanded_terminal_collector": "scripts/record_expanded_measurement_execution_v2.py",
+  "expanded_terminal_collector_sha256": "b1ef5d7edc8e3057bc4576b1b3f1045153e685b3f4286e0bd0eb5636b7563140",
+  "full_passed_checkpoint": "metadata/full_expanded_measurement_execution_checkpoint_20261002_v2.json",
+  "full_passed_checkpoint_sha256": "afdeb0a5d3ded2104fe93464e73f42a93c00ba19beac88a3c950bf54148c55ca",
+  "scope": "Original AlphaFold retrieval remains live by exact PID/create/CMD; no invented launch record, skipped job, native restart or changed scientific input."
+}

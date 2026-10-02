@@ -1,0 +1,121 @@
+{
+  "status": "preserved_failed_catalog_source_lineage_attempt",
+  "checked_utc": "2026-10-02T17:08:21.005646+00:00",
+  "source_plan": "metadata/full_expanded_measurement_catalog_plan_20261002.json",
+  "source_plan_sha256": "312679de21ef19b36abe39e29439bbf32dd779d56d2ebf1a81dfe071c9e863f5",
+  "error": "Source absent from downstream matching archive: original target checkpoint_manifest.tsv",
+  "failure_before_any_catalog_artifact": true,
+  "original_failed_handles": [
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_launch_20261002.json",
+      "pid": 2188031,
+      "created": 1790960213.73,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "7e3fd59d505cc7b5f349037681bca7b6a872db6f4d7fa155c365116e696fbe0b",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "b2eb6f86fa4b1928381aef3bcc615229d4677a65cf90ff4931d297af3fbd07fd",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790960223424913",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "0547d24c318c43a9b6e2db5c79d95e80"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790960223425557",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "0547d24c318c43a9b6e2db5c79d95e80"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790960223425952",
+          "CPU_USAGE_NSEC": "8980385000",
+          "MEMORY_PEAK": "3796992",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_readback_launch_20261002.json",
+      "pid": 2188035,
+      "created": 1790960213.78,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "4f9e90d587ee1b1829a2f037592b9f65dd5fef5639ee222b6e0f32623cec0f57",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "528ba0dc0ebcdd6d106a2dfb368881529de6c36d8b2c9bfc8e2733f313c247fa",
+      "captured_process_messages": 11,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790960244638232",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ad99b59db3dc4973b3b6a7c8d6f99f95"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790960244638578",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ad99b59db3dc4973b3b6a7c8d6f99f95"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/full_expanded_measurement_catalog_closure_launch_20261002.json",
+      "pid": 2188040,
+      "created": 1790960213.82,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_measurement_catalog_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "a17607775b06a0e76c69c311d01cc3db586af5834cc419277a482b76f9888eac",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "39d491e1365bab66a2de3171fdaa04d66e5c925c77013bcb9f8cb06b16c76dae",
+      "captured_process_messages": 11,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790960244671562",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-closure-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "52f096eaace94f1da6f51a2559500e3a"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790960244671770",
+          "MESSAGE": "fungal-full-expanded-measurement-catalog-closure-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "52f096eaace94f1da6f51a2559500e3a"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "correction": "New v2 expands unchanged closed summary -> native/diagnostic/geometry receipts -> original manifest -> every539248original target checkpoint, while keeping old scripts/plans/launches/journals immutable.",
+  "scope": "Catalog integration source gate failed; native measurements and existing scientific jobs unchanged."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "planned_full_frozen_matching_logical_case_index",
+  "checked_utc": "2026-10-02T16:43:56.382085+00:00",
+  "selected_records": 4250692,
+  "target_policy_records": 1133636,
+  "unmatched_decisions": 56965652,
+  "maximum_logical_cases": 4250692,
+  "maximum_future_case_mask_rows": 8501384,
+  "maximum_future_order_pair_cells": 34005536,
+  "cpu_per_stage": 2,
+  "memory_gib_per_stage": 32,
+  "swap_gib": 0,
+  "output_and_scratch_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 723.775146484375,
+  "free_disk_gib": 10433.666595458984,
+  "input_sizes_bytes": {
+    "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/selected_pair_coverage.tsv.gz": 47313999,
+    "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/target_policy_coverage_status.tsv.gz": 40409252
+  },
+  "basis": "Complete fixed selection/status streams and all601446graph nodes; upper bound one logical case per selected record.32GiB covers graph, full closed source-hash map, case metadata dictionary, sort and bounded SQLite cache.32GiB disk allowance for complete membership/index and independent SQLite scratch. Separate reader runs after producer. This is a full census before measurement join resource estimates, not a pilot or subset. Runtime is a planning allowance, not calibrated ETA; no native alignment or GPU work."
+}

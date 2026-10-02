@@ -702,3 +702,23 @@ calibrated expanded models. Preserve failed publication contracts and prior
 figures while correcting immutable versioned output paths/labels.
 [Complete background results](full-screened-background-results-20261002.md),
 [closed joint directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).
+
+
+## October 2: retain gene contexts through the expanded measurement handoff
+
+Index the complete expanded fixed matching by ordered target/background node
+IDs. Keep physical model-pair identity as a separate reuse descriptor; genes
+sharing predictions are not interchangeable independent observations. Preserve
+all selections, endpoint mappings, scores, ties, unmatched scenarios and
+mask/screens. All four target/control alignment-order comparisons remain
+explicit; means require both orders and complete envelopes require all four
+cells. Native TM dissimilarity remains labelled as native, with its length and
+prediction-source limitations. Raw excluded diagnostics are quarantined by
+numerical usability, and target coverage's intentional blanking is preserved.
+Do not reuse older fitted inputs as evidence of fitting this expanded cohort.
+Independent full SQL/source/Decimal readers and original journal/full-hash
+closures gate all handoffs. New integration failures retain their original
+versions and proof records; corrected source-lineage and quarantine contracts
+use fresh versions. Expanded modelling, phylogenetic/reconciliation uncertainty,
+ascertainment/dependence/prediction controls and calibration remain required.
+[Full workflow and schemas](full-expanded-matched-measurements-20261002.md).

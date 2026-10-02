@@ -1,0 +1,35 @@
+{
+  "source_plan": "metadata/full_expanded_measurement_catalog_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v1/readback.json",
+  "producer_status": "complete_full_expanded_measurement_catalog_pending_independent_readback",
+  "reader_status": "passed_full_expanded_measurement_catalog_source_and_numeric_readback",
+  "completed_status": "complete_verified_full_expanded_directed_measurement_catalog",
+  "summary_fields": [
+    "target_pairs",
+    "background_pairs",
+    "pair_mask_rows",
+    "directed_states",
+    "numeric_states",
+    "usable_states",
+    "unavailable_states",
+    "native_status_counts",
+    "numerical_exclusion_counts",
+    "source_kind_counts",
+    "screens",
+    "masks"
+  ],
+  "launches": [
+    "metadata/full_expanded_measurement_catalog_launch_20261002.json",
+    "metadata/full_expanded_measurement_catalog_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_measurement_catalog_plan_20261002.json": "312679de21ef19b36abe39e29439bbf32dd779d56d2ebf1a81dfe071c9e863f5",
+    "metadata/full_expanded_measurement_catalog_launch_20261002.json": "7e3fd59d505cc7b5f349037681bca7b6a872db6f4d7fa155c365116e696fbe0b",
+    "metadata/full_expanded_measurement_catalog_readback_launch_20261002.json": "4f9e90d587ee1b1829a2f037592b9f65dd5fef5639ee222b6e0f32623cec0f57",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_expanded_measurement_catalog_completed_20261002.json",
+  "scope": "Normalize the entire539248target and584688background directed states, each full/pLDDT70mask andboth orders. Original native checkpoint/source-order identities remain explicit, including old background/reference/new native ownership. Catalog rows retain raw independently checked RMSD/geometry/native TM diagnostics even when numerically excluded; downstream consumers MUST gate numerical_usable and whole pair coverage before using measurements. Failed/unavailable native states keep null metrics, never zero. A genuine usable zero RMSD stays numeric zero. Original-length coverage differs from native masked-input coverage. Nativeleft/right TM metrics refer to the directed native inputs and are native scores, not independently optimized TM scores. Both-mask intersection is eligibility metadata, not an extra physical measurement. Same-model nodes remain in the logical-case index with no invented native measurement. Complete every-value source/numeric independent reconstruction, two exact original completion/resource journals and full closed hashes required. This catalog is a handoff for all logical cases, not accepted evolutionary effects, confidence intervals, model calibration, predictor/domain/PAE checks or phylogenetic correction. All eight aims remain incomplete."
+}

@@ -1,0 +1,98 @@
+{
+  "matching_completion": "metadata/full_matched_coverage_completed_20261001.json",
+  "matching_plan": "metadata/full_matched_coverage_plan_20261001.json",
+  "target_summary_plan": "metadata/expanded_usable_orders_plan_20260930.json",
+  "target_summary_readback": "metadata/expanded_usable_orders_readback_20260930.json",
+  "target_native_plan": "metadata/expanded_duplication_alignment_plan_20260929.json",
+  "expected": {
+    "target_pairs": 134812,
+    "background_pairs": 146172,
+    "selected_records": 4250692,
+    "target_numeric_states": 501324
+  },
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "output": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3",
+  "pins": {
+    "scripts/full_expanded_measurement_catalog_sources_v3.py": "d7cae1c11ecf796d06f452cdb849b12273805ec4720d0ab86cc824e9fad58cc5",
+    "scripts/export_full_expanded_measurement_catalog_v3.py": "28855a56b088f46e0d4523a9a1f51b083e088d6402362c02e89e9a020deea245",
+    "scripts/readback_full_expanded_measurement_catalog_v3.py": "3900c06b21fb400e95da736a068bb8c9b33c19a4a2527d1b095280da4a0f19b8",
+    "scripts/check_full_expanded_measurement_catalog_v3.py": "4f661298a33c4fe1b591714110349a353b49c2c0da529ebe6837d682e0adfa56",
+    "scripts/launch_full_expanded_measurement_catalog_v3.py": "94a3e2c359b9dbb250cc884d3db3e8e3ed48295670144b4ba647e48565458387",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "metadata/full_expanded_measurement_catalog_fixture_validation_20261002_v3.json": "59e54d9767d562442a910b687f79853e49d8a5c475920f7a4f2712b83f398dc8",
+    "metadata/full_expanded_measurement_catalog_resources_20261002_v3.json": "0e81c9613d238ccb6fe0282ac62cdb579355849b62dde575e6972eae534e4200",
+    "metadata/full_matched_coverage_completed_20261001.json": "2639a1fa4130fc1176ac5be1a4111a2dcc67bbc96df6c680c5802233d47fdca3",
+    "metadata/full_matched_coverage_plan_20261001.json": "957a961c5fba81bca74fb666a099be4dc333bbf320dec74b9d467e6374d3c827",
+    "metadata/expanded_usable_orders_plan_20260930.json": "bad6d0d6210be900437ca4c0767a4ead04b005c7c586a10fe259f14ccec11743",
+    "metadata/expanded_usable_orders_readback_20260930.json": "130a6c0310adc40465b4ae792273a11fd61a622eb77f71e1624c2537efd6a8f7",
+    "metadata/expanded_duplication_alignment_plan_20260929.json": "23885f97d240157558d5c43b3b2c6081537f8fba83e4ed1bf9cd9a3c82cd3fa0",
+    "metadata/full_expanded_measurement_catalog_attempt_20261002.json": "3bc12ebfcc78bd4fe724badbffc385e660a3237ca1437b855304f90b4917a7ac",
+    "metadata/full_expanded_measurement_catalog_attempt_20261002_v2.json": "da480e269c9a3e8e240a9b93824008d81ffc43bb19440c6de0f51a08a8fa3444"
+  },
+  "resources": {
+    "status": "planned_full_expanded_directed_measurement_catalog",
+    "checked_utc": "2026-10-02T17:13:59.621679+00:00",
+    "target_pairs": 134812,
+    "background_pairs": 146172,
+    "target_directed_states": 539248,
+    "background_directed_states": 584688,
+    "directed_states": 1123936,
+    "pair_mask_rows": 561968,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 32,
+    "swap_gib": 0,
+    "output_and_scratch_allowance_gib": 16,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      12
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 719.8060340881348,
+    "free_disk_gib": 10432.072151184082,
+    "basis": "Complete role/pair/mask/order grid:539248target plus584688background dispositions. Closed source/hash map plus501324target numeric and geometry rows and561968quality rows stay below32GiB estimate; producer drops target joins before streaming313MiB background union.16GiB full-table/scratch allowance. Full independent reconstruction of every output value and source identity; no new native fits or GPU work.1-12h is a planning allowance, not calibrated ETA. V2 additionally expands539248original target checkpoint bindings through the frozen usable-summary receipt chain; same full physical scope and memory/storage allowance."
+  },
+  "fixture_validation": "metadata/full_expanded_measurement_catalog_fixture_validation_20261002_v3.json",
+  "scope": "Normalize the entire539248target and584688background directed states, each full/pLDDT70mask andboth orders. Original native checkpoint/source-order identities remain explicit, including old background/reference/new native ownership. Catalog rows retain raw independently checked RMSD/geometry/native TM diagnostics even when numerically excluded; downstream consumers MUST gate numerical_usable and whole pair coverage before using measurements. Failed/unavailable native states keep null metrics, never zero. A genuine usable zero RMSD stays numeric zero. Original-length coverage differs from native masked-input coverage. Nativeleft/right TM metrics refer to the directed native inputs and are native scores, not independently optimized TM scores. Both-mask intersection is eligibility metadata, not an extra physical measurement. Same-model nodes remain in the logical-case index with no invented native measurement. Complete every-value source/numeric independent reconstruction, two exact original completion/resource journals and full closed hashes required. This catalog is a handoff for all logical cases, not accepted evolutionary effects, confidence intervals, model calibration, predictor/domain/PAE checks or phylogenetic correction. All eight aims remain incomplete. V2 explicitly expands the original closed target receipt/manifest/checkpoint chain, rather than assuming downstream matching listed the original native manifest. V3 explicitly preserves the original target QC blanking of excluded diagnostics while retaining gated raw numeric values in this catalog; background coverage retains its original raw aligned lengths."
+}

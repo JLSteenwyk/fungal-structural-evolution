@@ -1,0 +1,11 @@
+{
+  "status": "queued_full_expanded_matched_case_measurements",
+  "source_plan": "metadata/full_expanded_case_measurements_plan_20261002.json",
+  "source_plan_sha256": "bfa37f12ba2b893785c045f2de2cba1bb68ebef262b1bf04809f0f36252b43a9",
+  "launches": [
+    "metadata/full_expanded_case_measurements_launch_20261002.json",
+    "metadata/full_expanded_case_measurements_readback_launch_20261002.json",
+    "metadata/full_expanded_case_measurements_closure_launch_20261002.json"
+  ],
+  "scope": "Join all75188logical gene-context cases andbothfull/pLDDT70physical masks, without selecting a favorable source/order/core/matching scenario. Original54scenarios/four policies/two guides and4250692selection memberships plus56965652unmatched decisions are linked verbatim via the closed case index. Each case/mask retains both target andboth control order states, failures/reasons, aligned length, source catalog key, sequence distances andsix original-length quality bits, includingboth-mask intersection. Outcomes are independently checked RMSD and explicitly native1-mean(endpoint-normalized-TM) dissimilarity; the native TM scores are not independently optimized. Derive allfour cross-order deltas, both-orders-only means, and a complete-four-order envelope only whenallfour cells are numerically available. Partial orders remain null for full means/envelopes; a genuine zero stays zero. Same-model cases have no invented distance. Raw quarantined numeric states stay in the original complete catalog; usability gates prevent promotion. Catalog state_key maps to all model/version/native-source/checkpoint identities; row_identity is stable for future covariance/design input linkage. Full independent Decimal numeric/identity/source-gate reconstruction with a2e-14scale arithmetic rounding allowance and two exact original-journal/full-hash closure required. Envelopes describe dependent alignment-order sensitivity, not CIs or accepted evolutionary effects. Expanded calibrated mixed models, covariance/reconciliation/phylogeny, predictor/domain/PAE, ascertainment/reuse controls and all eight aims remain unfinished."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "planned_full_expanded_directed_measurement_catalog",
+  "checked_utc": "2026-10-02T16:56:53.886280+00:00",
+  "target_pairs": 134812,
+  "background_pairs": 146172,
+  "target_directed_states": 539248,
+  "background_directed_states": 584688,
+  "directed_states": 1123936,
+  "pair_mask_rows": 561968,
+  "cpu_per_stage": 2,
+  "memory_gib_per_stage": 32,
+  "swap_gib": 0,
+  "output_and_scratch_allowance_gib": 16,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 719.8060340881348,
+  "free_disk_gib": 10432.072151184082,
+  "basis": "Complete role/pair/mask/order grid:539248target plus584688background dispositions. Closed source/hash map plus501324target numeric and geometry rows and561968quality rows stay below32GiB estimate; producer drops target joins before streaming313MiB background union.16GiB full-table/scratch allowance. Full independent reconstruction of every output value and source identity; no new native fits or GPU work.1-12h is a planning allowance, not calibrated ETA."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "launched_full_expanded_directed_measurement_catalog",
+  "source_plan": "metadata/full_expanded_measurement_catalog_plan_20261002_v2.json",
+  "source_plan_sha256": "e0ba8ae8e6790bf01b512b4084c7ad720e215baf45eae0c287dbc853fda4cc61",
+  "launches": [
+    "metadata/full_expanded_measurement_catalog_v2_launch_20261002.json",
+    "metadata/full_expanded_measurement_catalog_v2_readback_launch_20261002.json",
+    "metadata/full_expanded_measurement_catalog_v2_closure_launch_20261002.json"
+  ],
+  "scope": "Normalize the entire539248target and584688background directed states, each full/pLDDT70mask andboth orders. Original native checkpoint/source-order identities remain explicit, including old background/reference/new native ownership. Catalog rows retain raw independently checked RMSD/geometry/native TM diagnostics even when numerically excluded; downstream consumers MUST gate numerical_usable and whole pair coverage before using measurements. Failed/unavailable native states keep null metrics, never zero. A genuine usable zero RMSD stays numeric zero. Original-length coverage differs from native masked-input coverage. Nativeleft/right TM metrics refer to the directed native inputs and are native scores, not independently optimized TM scores. Both-mask intersection is eligibility metadata, not an extra physical measurement. Same-model nodes remain in the logical-case index with no invented native measurement. Complete every-value source/numeric independent reconstruction, two exact original completion/resource journals and full closed hashes required. This catalog is a handoff for all logical cases, not accepted evolutionary effects, confidence intervals, model calibration, predictor/domain/PAE checks or phylogenetic correction. All eight aims remain incomplete. V2 explicitly expands the original closed target receipt/manifest/checkpoint chain, rather than assuming downstream matching listed the original native manifest."
+}

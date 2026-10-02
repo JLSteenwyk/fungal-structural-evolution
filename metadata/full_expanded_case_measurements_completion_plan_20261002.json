@@ -1,0 +1,35 @@
+{
+  "source_plan": "metadata/full_expanded_case_measurements_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-expanded-matched-measurements-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-expanded-matched-measurements-20261002-v1/readback.json",
+  "producer_status": "complete_full_expanded_case_measurement_join_pending_independent_readback",
+  "reader_status": "passed_full_expanded_case_measurement_join_decimal_readback",
+  "completed_status": "complete_verified_full_expanded_matched_case_measurements",
+  "summary_fields": [
+    "logical_cases",
+    "physical_cases",
+    "selected_records",
+    "unmatched_decisions",
+    "case_mask_rows",
+    "order_pair_cells",
+    "valid_order_pair_cells",
+    "complete_envelopes",
+    "incomplete_envelopes",
+    "same_model_case_mask_rows",
+    "outcomes",
+    "masks"
+  ],
+  "launches": [
+    "metadata/full_expanded_case_measurements_launch_20261002.json",
+    "metadata/full_expanded_case_measurements_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_case_measurements_plan_20261002.json": "bfa37f12ba2b893785c045f2de2cba1bb68ebef262b1bf04809f0f36252b43a9",
+    "metadata/full_expanded_case_measurements_launch_20261002.json": "e874f532b8ae9a43007f181df96e7892eae1901dd433fba647556878112d65ff",
+    "metadata/full_expanded_case_measurements_readback_launch_20261002.json": "67d9bca7054f0c0b3dd373670858ead9f590cf0bf0cba5f077d25cf10a61fbce",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_expanded_case_measurements_completed_20261002.json",
+  "scope": "Join all75188logical gene-context cases andbothfull/pLDDT70physical masks, without selecting a favorable source/order/core/matching scenario. Original54scenarios/four policies/two guides and4250692selection memberships plus56965652unmatched decisions are linked verbatim via the closed case index. Each case/mask retains both target andboth control order states, failures/reasons, aligned length, source catalog key, sequence distances andsix original-length quality bits, includingboth-mask intersection. Outcomes are independently checked RMSD and explicitly native1-mean(endpoint-normalized-TM) dissimilarity; the native TM scores are not independently optimized. Derive allfour cross-order deltas, both-orders-only means, and a complete-four-order envelope only whenallfour cells are numerically available. Partial orders remain null for full means/envelopes; a genuine zero stays zero. Same-model cases have no invented distance. Raw quarantined numeric states stay in the original complete catalog; usability gates prevent promotion. Catalog state_key maps to all model/version/native-source/checkpoint identities; row_identity is stable for future covariance/design input linkage. Full independent Decimal numeric/identity/source-gate reconstruction with a2e-14scale arithmetic rounding allowance and two exact original-journal/full-hash closure required. Envelopes describe dependent alignment-order sensitivity, not CIs or accepted evolutionary effects. Expanded calibrated mixed models, covariance/reconciliation/phylogeny, predictor/domain/PAE, ascertainment/reuse controls and all eight aims remain unfinished."
+}
