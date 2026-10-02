@@ -64,6 +64,13 @@ against original branches across five working trees. Closure checked 1,830,546
 bindings and both original journals. Expanded model fitting and calibration
 remain pending. The older factors do not cover this expanded cohort.
 
+The [full expanded model-input workflow](docs/full-expanded-model-inputs-20261002.md)
+is now launched for all 751,880 case/mask/order rows and 51,840 fixed setting
+counts. It retains gene/model identities, null measurements and nonlinear
+sequence contrasts, with independent Decimal and SQLite readback queued.
+Software checks rejected 18 altered exports; production acceptance and full
+expanded model fitting remain pending. No GPU prediction was resumed.
+
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved
 memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet

@@ -1,0 +1,73 @@
+table	field	type	definition
+inputs	input_id	string	SHA256 of source case/mask row identity and order contrast; stable datum ID, not an independent replicate
+inputs	row_identity	string	Closed matched-measurement case/mask source identity
+inputs	case_id	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	case_row	int64	Zero-based original full logical case index row
+inputs	physical_case_id	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	target_id	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_id	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	guide	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	target_family	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_family	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	focal_taxon	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	gene_node	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	target_gene_a	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	target_gene_b	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_gene_a	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_gene_b	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_taxon_a	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_taxon_b	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	target_pair_key	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	background_pair_key	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	family_component	string	Full expanded component ID connecting shared families/nodes/pairs/genes/versioned model-coordinate identities
+inputs	species_pattern_id	string	Full expanded zero-sum species contrast identity across all 526 tips
+inputs	species_pattern_row	int64	Zero-based full expanded covariance pattern row
+inputs	mask	string	full or plddt70 residue mask
+inputs	order_contrast	string	00,01,10,11 or mean: first digit target order, second digit control order
+inputs	numerical_usable	int64	One if all selected raw target and control states are numerically usable; otherwise zero
+inputs	disposition	string	Original closed case or covariance identity/label; distinct gene identities retained despite shared models
+inputs	joint_mask_pass_bits	int64	Original six-screen joint target/control eligibility bits for this mask
+inputs	joint_both_pass_bits	int64	Original six-screen joint target/control eligibility bits across both masks
+inputs	selection_records	int64	Number of original policy/scenario memberships reusing this logical case
+inputs	target_state_keys	string	JSON list of closed directed catalog state IDs; same-model key empty; mean includes both orders
+inputs	background_state_keys	string	JSON list of closed directed catalog state IDs; same-model key empty; mean includes both orders
+inputs	rmsd_delta	nullable_float64	Target minus control raw CA RMSD (angstrom) for selected orders
+inputs	native_tm_dissimilarity_delta	nullable_float64	Target minus control 1 minus mean two endpoint-normalized native TM scores; not independently optimized TM alignments
+inputs	gene_distance_delta	nullable_float64	Target minus control gene-tree patristic sequence distance
+inputs	gene_distance_square_delta	nullable_float64	Target distance squared minus control distance squared
+inputs	gene_distance_cube_delta	nullable_float64	Target distance cubed minus control distance cubed
+inputs	aligned_identity_delta	nullable_float64	Target minus control raw aligned exact identity fraction
+inputs	aligned_identity_square_delta	nullable_float64	Target identity squared minus control identity squared; transform before averaging orders
+inputs	aligned_identity_cube_delta	nullable_float64	Target identity cubed minus control identity cubed; transform before averaging orders
+inputs	original_coverage_delta	nullable_float64	Difference of mean endpoint aligned/original full protein length fractions
+inputs	log_aligned_length_ratio	nullable_float64	Difference of log aligned CA pair counts; mean of logs for mean order contrast
+inputs	aligned_plddt70_fraction_delta	nullable_float64	Difference of fractions of aligned residue pairs with both endpoints pLDDT at least 70
+inputs	log_original_length_ratio	nullable_float64	Log ratio of geometric mean original endpoint protein lengths
+inputs	mean_ca_plddt_delta	nullable_float64	Difference of mean endpoint full-model CA pLDDT on 0–100 scale
+inputs	fraction_ca_plddt_below50_delta	nullable_float64	Difference of mean endpoint full-model fractions of CA pLDDT below 50
+setting_counts	guide	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	policy	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	scenario_id	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	mask	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	eligibility_gate	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	screen	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	order_contrast	string	Fixed original setting identity; eligibility_gate mask or both_masks
+setting_counts	all_target_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unmatched_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	selected_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	same_model_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	quality_retained_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	quality_excluded_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	quality_retained_numeric_records	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_targets	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_background_nodes	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_background_physical_pairs	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_target_families	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_family_components	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_species_patterns	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	unique_focal_taxa	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	maximum_background_node_reuse	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	maximum_background_physical_pair_reuse	int64	Full original selected or retained cohort count/reuse metric reconstructed independently from original selection memberships
+setting_counts	sum_inverse_background_node_reuse_weights	int64	Sum of per-record inverse group size equals number of represented groups; not effective sample size
+setting_counts	sum_inverse_background_physical_pair_reuse_weights	int64	Sum of per-record inverse group size equals number of represented groups; not effective sample size
+setting_counts	sum_inverse_family_component_weights	int64	Sum of per-record inverse group size equals number of represented groups; not effective sample size

@@ -2446,3 +2446,21 @@ treated as proof of a defective model. The first higher-memory isolated
 recovery still failed, so resource allowance is not treated as sufficient
 remediation. Priors, taxa, sequences and scientific thresholds are unchanged.
 [Full sources, figures, counts and interpretation](baliphy-full-first-horizon-diagnostics-20261002.md).
+
+
+## October 2: full expanded model-input handoff
+
+Prepared and launched the complete expanded model-input grid for 75,188
+logical cases, 37,600 physical cases and 4,250,692 fixed matching memberships.
+All 751,880 case/mask/order rows retain original gene identities, expanded
+family/species covariance indices, two structural responses, nonlinear
+gene-distance/aligned-identity contrasts and six coverage/length/confidence
+contrasts. Powers are transformed before order means; unavailable/quarantined/
+same-model measurements remain null. All 51,840 setting-count rows, including
+empty strata, are reconstructed from original memberships. Independent
+50-digit Decimal and SQLite readback plus complete source/artifact and two
+original-process journal closure gate acceptance. These are input and
+provenance checks, not fitted/calibrated effects. Full design ranks, exact
+recipe equivalence, expanded dependence fitting, accepted phylogenies and
+prediction/domain/PAE/ascertainment controls remain necessary.
+[Scope, methods, resources and reproduction](full-expanded-model-inputs-20261002.md).

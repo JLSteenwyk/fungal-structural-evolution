@@ -1,0 +1,148 @@
+{
+  "cases_completion": "metadata/full_matching_case_index_completed_20261002.json",
+  "cases_plan": "metadata/full_matching_case_index_plan_20261002.json",
+  "measurements_completion": "metadata/full_expanded_case_measurements_v2_completed_20261002.json",
+  "measurements_plan": "metadata/full_expanded_case_measurements_plan_20261002_v2.json",
+  "catalog_completion": "metadata/full_expanded_measurement_catalog_v3_completed_20261002.json",
+  "catalog_plan": "metadata/full_expanded_measurement_catalog_plan_20261002_v3.json",
+  "covariance_completion": "metadata/full_expanded_covariance_completed_20261002.json",
+  "covariance_plan": "metadata/full_expanded_covariance_plan_20261002.json",
+  "expected": {
+    "logical_cases": 75188,
+    "physical_cases": 37600,
+    "selected_records": 4250692,
+    "unmatched_decisions": 56965652,
+    "directed_states": 1123936,
+    "scenarios": 54
+  },
+  "guides": [
+    "profile",
+    "mafft"
+  ],
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "output": "results/phylogeny/full-expanded-model-inputs-20261002-v1",
+  "fixture_validation": "metadata/full_expanded_model_input_fixture_validation_20261002.json",
+  "resources": {
+    "status": "planned_full_expanded_model_input_stage",
+    "checked_utc": "2026-10-02T19:44:48.153808+00:00",
+    "logical_cases": 75188,
+    "case_mask_rows": 150376,
+    "model_input_rows": 751880,
+    "selected_records": 4250692,
+    "partitions": 10,
+    "setting_count_rows": 51840,
+    "future_model_setting_rows": 622080,
+    "nominal_future_tree_setting_fits": 3110400,
+    "future_fits_launched": false,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_and_scratch_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 611.4822196960449,
+    "free_disk_gib": 10414.409420013428,
+    "source_file_bytes": {
+      "cases": {
+        "results/structural_comparisons/full-matching-logical-cases-20261002-v1/receipt.json": 393429962,
+        "results/structural_comparisons/full-matching-logical-cases-20261002-v1/completion_archive.json": 393432739,
+        "results/structural_comparisons/full-matching-logical-cases-20261002-v1/selection_case_links.tsv.gz": 71646417,
+        "results/structural_comparisons/full-matching-logical-cases-20261002-v1/case_index.tsv.gz": 21628644
+      },
+      "measurements": {
+        "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/receipt.json": 516653486,
+        "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/completion_archive.json": 516656413,
+        "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/case_mask_contrasts.tsv.gz": 49227640
+      },
+      "catalog": {
+        "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/receipt.json": 516648625,
+        "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/completion_archive.json": 516651638,
+        "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/directed_measurements.tsv.gz": 247305603
+      },
+      "covariance": {
+        "results/phylogeny/full-expanded-covariance-20261002-v1/receipt.json": 393436407,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/completion_archive.json": 393438791,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/entity_incidence.tsv.gz": 71827976,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/species_contrast_design.npz": 59120,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_profile.npz": 23868928,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/case_covariance_index.tsv.gz": 16577402,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_mafft.npz": 23869377,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/profile_guide.npz": 23877945,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_mafft_profile.npz": 23868779,
+        "results/phylogeny/full-expanded-covariance-20261002-v1/mafft_guide.npz": 23876620
+      }
+    },
+    "basis": "Complete ten case/mask/order parquet partitions and 51,840 matching setting-count rows. Full source maps and closed prior receipts dominate transient Python memory. Reader uses Decimal cell reconstruction and SQLite with all 4,250,692 selection links; 32GiB memory and disk allowance are conservative bounds, not measured runtime predictions. Original decisions and memberships remain in pinned inputs. This prepares inputs only; full expanded fit resources require a separate design/rank/recipe inventory and runtime estimate."
+  },
+  "pins": {
+    "metadata/full_expanded_case_measurements_plan_20261002_v2.json": "420e5687e2ec565560b12cefefa1cd4d25f3d86d50813c17a189d492ccd870e9",
+    "metadata/full_expanded_case_measurements_v2_completed_20261002.json": "38014ccd1aaf5f61accded39927913fcc9372997cccbeed12949cd6efa5fdb2d",
+    "metadata/full_expanded_covariance_completed_20261002.json": "591630a8e7542f04bf64381b637de5cff4d5a7b69acbbe3b562e4cde5f19c597",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "metadata/full_expanded_measurement_catalog_plan_20261002_v3.json": "adcd5cb1d6197adb6f913af3da3758a14f40307e922f2861678b2ec02eab0eb3",
+    "metadata/full_expanded_measurement_catalog_v3_completed_20261002.json": "86ce6ffb31f0547ed1a05511189c7d72988bc4002cf2b75a123a7eec431bf5f0",
+    "metadata/full_expanded_model_input_fixture_validation_20261002.json": "f005a021c4365fba94cb33f84c2f48dd1b2a9772fc8ef2d74c10aa633a02e5c7",
+    "metadata/full_expanded_model_inputs_resources_20261002.json": "1f54e3940e14ddafd0c1b4d0cdd104a3e7e87b82322bc468fe7ecbeef7d84eb9",
+    "metadata/full_matching_case_index_completed_20261002.json": "14695fe8060794401426339f54854d076389e65592bcb3afcea8bed3696e76d7",
+    "metadata/full_matching_case_index_plan_20261002.json": "854322b473d63a2792cdda952cbb1b009a849bc66911568ad065d00f547796c7",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_expanded_model_inputs.py": "cb00f80d16ee599cb051abf948e352e4aa4e65aa5a8d960ecb0bfb31b2765240",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/launch_full_expanded_model_inputs.py": "fc86192cf15bb8cec66a9875a7b7616f93da9d9dce112bd2ecb8449e39c129e2",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_expanded_model_inputs.py": "c8de150969506ba8663bc40dc7a2ed2fa469944b698245a91d6c82de50bb1c36",
+    "scripts/readback_full_expanded_model_inputs.py": "584cf5584e7c50c4fee360a8be48f46c9c79854eaa823a27855e035ed786aaf6",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "scope": "Complete expanded working-model inputs from all 75,188 logical/37,600 physical cases and 4,250,692 selected memberships, retaining 56,965,652 unmatched decisions through original fixed matching counts. Export all 751,880 case/mask/order records and all 51,840 guide/policy/scenario/mask/eligibility/screen/order strata, including empty/excluded/same-model cases. Original gene endpoints, physical/versioned model identities, new family components and full expanded species patterns remain linked. Missing measurements are null, never zero; raw true zero remains observed. Gene distance and aligned identity powers are transformed before order means. Independent Decimal calculations and SQLite raw-membership cohort/reuse counts, full source hashes and two actual original process journals gate closure. Counts and inverse-reuse weight sums are not effective sample sizes. Five species covariance alternatives remain working substitution kernels, not accepted dated trees. No calibrated effect, fitted variance, complete ancestry correction or full model fitting is established by this input handoff. All eight aims remain incomplete; expanded fitting/rank/recipe/dependence/ascertainment/domain/PAE/prediction controls and inferential calibration remain required. No GPU or new paid resources."
+}

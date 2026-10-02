@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_expanded_model_inputs_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_expanded_model_inputs.py",
+    "--plan",
+    "metadata/full_expanded_model_inputs_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "metadata/full_expanded_model_inputs_launch_20261002.json": "0030c813e4acd36469ed6b942f71bacc450dec13ca60b4e97d9c46a16149b3ee",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "planned_full_expanded_model_input_stage",
+  "checked_utc": "2026-10-02T19:44:48.153808+00:00",
+  "logical_cases": 75188,
+  "case_mask_rows": 150376,
+  "model_input_rows": 751880,
+  "selected_records": 4250692,
+  "partitions": 10,
+  "setting_count_rows": 51840,
+  "future_model_setting_rows": 622080,
+  "nominal_future_tree_setting_fits": 3110400,
+  "future_fits_launched": false,
+  "cpu_per_stage": 2,
+  "memory_gib_per_stage": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "output_and_scratch_allowance_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    1,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "available_memory_gib": 611.4822196960449,
+  "free_disk_gib": 10414.409420013428,
+  "source_file_bytes": {
+    "cases": {
+      "results/structural_comparisons/full-matching-logical-cases-20261002-v1/receipt.json": 393429962,
+      "results/structural_comparisons/full-matching-logical-cases-20261002-v1/completion_archive.json": 393432739,
+      "results/structural_comparisons/full-matching-logical-cases-20261002-v1/selection_case_links.tsv.gz": 71646417,
+      "results/structural_comparisons/full-matching-logical-cases-20261002-v1/case_index.tsv.gz": 21628644
+    },
+    "measurements": {
+      "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/receipt.json": 516653486,
+      "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/completion_archive.json": 516656413,
+      "results/structural_comparisons/full-expanded-matched-measurements-20261002-v2/case_mask_contrasts.tsv.gz": 49227640
+    },
+    "catalog": {
+      "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/receipt.json": 516648625,
+      "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/completion_archive.json": 516651638,
+      "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/directed_measurements.tsv.gz": 247305603
+    },
+    "covariance": {
+      "results/phylogeny/full-expanded-covariance-20261002-v1/receipt.json": 393436407,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/completion_archive.json": 393438791,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/entity_incidence.tsv.gz": 71827976,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/species_contrast_design.npz": 59120,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_profile.npz": 23868928,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/case_covariance_index.tsv.gz": 16577402,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_mafft.npz": 23869377,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/profile_guide.npz": 23877945,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_mafft_profile.npz": 23868779,
+      "results/phylogeny/full-expanded-covariance-20261002-v1/mafft_guide.npz": 23876620
+    }
+  },
+  "basis": "Complete ten case/mask/order parquet partitions and 51,840 matching setting-count rows. Full source maps and closed prior receipts dominate transient Python memory. Reader uses Decimal cell reconstruction and SQLite with all 4,250,692 selection links; 32GiB memory and disk allowance are conservative bounds, not measured runtime predictions. Original decisions and memberships remain in pinned inputs. This prepares inputs only; full expanded fit resources require a separate design/rank/recipe inventory and runtime estimate."
+}

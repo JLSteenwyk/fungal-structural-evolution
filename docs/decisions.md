@@ -767,3 +767,18 @@ matching software are not automatically labelled software defects. Preserve
 the repeated higher-memory failure and source/version evidence; do not trim
 taxa, truncate priors, repair logged values or change diagnostic thresholds.
 [Complete publication and remaining requirements](baliphy-full-first-horizon-diagnostics-20261002.md).
+
+
+## October 2: preserve the complete expanded model-input grid
+
+Retain every logical case under both masks and all five order contrasts.
+Keep distinct gene endpoints despite shared predictions; link full expanded
+covariance indices rather than old-subset factors. Transform identity and
+distance powers before averaging orders. Missing structural measurements stay
+null and raw observed zero stays zero. Preserve original matching decisions,
+all 54 scenarios, all fixed screens and both eligibility gates. Check every
+numeric input with separate Decimal calculations and every cohort/reuse count
+with original-membership SQLite reconstruction. The full 622,080 future
+model-setting records and 3,110,400 nominal tree-setting fits require rank/
+recipe/resource qualification before fitting. No GPU authorization changed.
+[Complete workflow](full-expanded-model-inputs-20261002.md).

@@ -11246,3 +11246,20 @@ and figure review remain next.
   missingness/dependence/uncertainty/calibration remain required. All eight aims
   incomplete; GPUs remain paused. [Full background results](full-screened-background-results-20261002.md)
   and [complete joint directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).
+
+
+- October 2 UTC: the previous error recheck was a verified wait: the original
+  BAli-Phy recovery parent and native child remained live. Fresh status-monitor
+  contracts passed all seven checks; corrected postprocessing is closed, while
+  the first higher-memory native allocation failure remains preserved. Then
+  implemented, froze and launched full expanded model inputs: 751,880 rows
+  from all 75,188 cases and 51,840 complete fixed setting-count rows. Software
+  contracts passed complete synthetic handoffs, interruption replay and
+  completed-restart refusal, rejecting all 18 altered exports. Before launch,
+  recorded two CPU/32 GiB/no swap/BLAS1, 32 GiB output/scratch and 100 GiB reserve,
+  no GPU/new charges. Producer PID 2410814, reader 2410818 and closure 2410822
+  are the original handles. Independent Decimal/SQLite full production checks
+  and provenance closure remain pending. Full fit/rank/recipe/dependence and
+  calibration work, prediction/domain/PAE/accepted species/reconciled gene
+  framework and all eight scientific aims remain incomplete.
+  [Full input methods and resources](full-expanded-model-inputs-20261002.md).

@@ -1,0 +1,33 @@
+{
+  "status": "passed_full_expanded_model_input_software_contracts",
+  "rejected_rehashed_exports": [
+    "nonlinear_mean_after_transform",
+    "gene_distance_sign",
+    "response_shift",
+    "confidence_shift",
+    "coverage_shift",
+    "gene_alias_collapsed",
+    "species_pattern_changed",
+    "component_changed",
+    "state_key_swapped",
+    "input_identity_changed",
+    "source_case_row_changed",
+    "null_as_zero",
+    "invalid_promoted",
+    "drop_case",
+    "extra_case",
+    "wrong_setting_count",
+    "omit_final_scenario",
+    "reuse_weight_changed"
+  ],
+  "full_interrupt_replay_passed": true,
+  "completed_restart_refused": true,
+  "source_and_journal_fixtures_synthetic": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_expanded_model_inputs.py": "cb00f80d16ee599cb051abf948e352e4aa4e65aa5a8d960ecb0bfb31b2765240",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/prepare_full_expanded_model_inputs.py": "c8de150969506ba8663bc40dc7a2ed2fa469944b698245a91d6c82de50bb1c36",
+    "scripts/readback_full_expanded_model_inputs.py": "584cf5584e7c50c4fee360a8be48f46c9c79854eaa823a27855e035ed786aaf6"
+  },
+  "scope": "Eight gene-context cases including shared model/physical aliases, retained true zero, target/control same-model exclusions, a one-order quarantine, coverage exclusions, original S54, background reuse and both missing/zero distinctions. Complete fixture setting grid and independent Decimal/SQLite checks. Native case/catalog/covariance/measurement closure proofs and prior journals are synthetic software contracts, not a biological pilot or production acceptance."
+}

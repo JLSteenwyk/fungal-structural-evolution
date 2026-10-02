@@ -1,0 +1,37 @@
+{
+  "source_plan": "metadata/full_expanded_model_inputs_plan_20261002.json",
+  "producer_receipt": "results/phylogeny/full-expanded-model-inputs-20261002-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-expanded-model-inputs-20261002-v1/readback.json",
+  "producer_status": "complete_full_expanded_model_inputs_pending_independent_readback",
+  "reader_status": "passed_full_expanded_model_input_decimal_and_sql_readback",
+  "completed_status": "complete_verified_full_expanded_model_inputs",
+  "summary_fields": [
+    "logical_cases",
+    "physical_cases",
+    "selected_records",
+    "unmatched_decisions",
+    "case_mask_rows",
+    "model_input_rows",
+    "partitions",
+    "settings",
+    "valid_input_rows",
+    "invalid_input_rows",
+    "quality_retained_setting_occurrences",
+    "model_specifications_per_setting",
+    "future_model_setting_rows",
+    "working_tree_alternatives"
+  ],
+  "launches": [
+    "metadata/full_expanded_model_inputs_launch_20261002.json",
+    "metadata/full_expanded_model_inputs_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "metadata/full_expanded_model_inputs_launch_20261002.json": "0030c813e4acd36469ed6b942f71bacc450dec13ca60b4e97d9c46a16149b3ee",
+    "metadata/full_expanded_model_inputs_readback_launch_20261002.json": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_expanded_model_inputs_completed_20261002.json",
+  "scope": "Complete expanded working-model inputs from all 75,188 logical/37,600 physical cases and 4,250,692 selected memberships, retaining 56,965,652 unmatched decisions through original fixed matching counts. Export all 751,880 case/mask/order records and all 51,840 guide/policy/scenario/mask/eligibility/screen/order strata, including empty/excluded/same-model cases. Original gene endpoints, physical/versioned model identities, new family components and full expanded species patterns remain linked. Missing measurements are null, never zero; raw true zero remains observed. Gene distance and aligned identity powers are transformed before order means. Independent Decimal calculations and SQLite raw-membership cohort/reuse counts, full source hashes and two actual original process journals gate closure. Counts and inverse-reuse weight sums are not effective sample sizes. Five species covariance alternatives remain working substitution kernels, not accepted dated trees. No calibrated effect, fitted variance, complete ancestry correction or full model fitting is established by this input handoff. All eight aims remain incomplete; expanded fitting/rank/recipe/dependence/ascertainment/domain/PAE/prediction controls and inferential calibration remain required. No GPU or new paid resources."
+}
