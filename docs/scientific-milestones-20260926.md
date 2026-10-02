@@ -1086,3 +1086,18 @@ integration for aims 2/4, but production design/covariance qualification,
 variance optimization and calibrated inference remain open. All eight aims
 remain incomplete; structural GPU prediction remains paused.
 [Full operator and identifiability methods](full-entity-operator-bank-20261002.md).
+
+October 2 UTC: full operator-bank source/artifact/two-journal closure is
+complete for all 75,188 cases and 13 operators, checking 1,830,606 bindings.
+Complete uniform covariance qualification is implemented, tested and queued
+behind original design-v2 closure, retaining all 622,080 model settings,
+signed/unsigned modes and five trees (6,220,800 setting links). Exact target/
+uniform-residual and endpoint-family/intercept combinations preserve the
+covariance cone; other dependencies remain explicit review states. Cached
+component and independent sparse latent-space algebra passed 48 dense cases;
+complete synthetic-grid contracts rejected 17 altered exports with full
+interruption recovery. This advances complete numerical dependence/model
+integration for aims 2/4. Production design/qualification, weight/control
+variants, variance fitting, calibrated inference and all eight aims remain
+incomplete. GPU structure prediction remains paused.
+[Complete uniform qualification](full-uniform-covariance-qualification-20261002.md).

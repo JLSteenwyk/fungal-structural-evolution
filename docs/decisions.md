@@ -837,3 +837,23 @@ No generic independent-column selection is authorized to change the
 nonnegative variance cone. The new numerical audit passed all 24 dense
 error-contrast tests and 13 invalid-input rejections; complete production
 cohort/design qualification still awaits source closure.
+
+## October 2: retain the complete uniform covariance qualification grid
+
+Queue every original expanded design under both loading modes and all five
+working trees, with all 6,220,800 setting/mode/tree links retained. Represent
+target-node plus uniform residual variance as their exact combined variance;
+represent unsigned endpoint-family plus contrast-intercept variance as
+`variance_intercept + 4*variance_endpoint_family`. Preserve signed-family
+zero in the audit. These specific exact combinations preserve the covariance
+cone; do not drop any other dependent basis automatically. Nonuniform weights
+remain a separate required qualification, not implied by this uniform stage.
+
+Reuse component products across fixed designs. The independent reader caches
+sparse global entity overlaps and reassociates species contractions to avoid
+dense latent-by-species caches for every tree. Independent producer/reader
+qualification and exact SQLite source-setting links gate numerical acceptance;
+full source/artifact/two-original-journal closure gates the handoff. Source
+review, constant-response, empty, dependency, rank-boundary and numerical-error
+states remain explicit. No fit or calibrated inference is established.
+[Full stage contracts, resources and scope](full-uniform-covariance-qualification-20261002.md).

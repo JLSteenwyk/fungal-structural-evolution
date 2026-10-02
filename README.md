@@ -87,11 +87,22 @@ matrices, with complete kernel dependency checks and ten fixed numerical
 benchmarks across five working trees. The numerical backend passed independent
 dense and 80-digit checks; full-bank software tests rejected 15 altered exports.
 Independent production readback passed all operators, Grams and ten full-case
-benchmarks; final provenance closure and expanded variance fitting remain pending.
+benchmarks; [final provenance closure](metadata/full_entity_operator_bank_completed_20261002.json)
+verified 1,830,606 source/artifact bindings and both original journals.
+Expanded variance fitting remains pending.
 A complete scan of all original matching selections verifies that target-node
 variance aliases uniform residual variance within each setting. New error-contrast
 checks also audit covariance dependencies after fixed effects are removed;
 these are required before qualifying the final variance models.
+
+The [full uniform covariance qualification stage](docs/full-uniform-covariance-qualification-20261002.md)
+is queued behind original design closure. It retains all 622,080 fixed settings,
+both loading modes and five working trees: 6,220,800 setting/mode/tree links.
+Exact target/residual and family/intercept combinations remove known redundant
+parameterizations; other dependencies remain review states. Reusable kernels
+passed 48 dense/latent comparisons, and full contracts rejected 17 altered
+exports with complete interruption replay. Production qualification, weighting,
+variance optimization and calibrated inference remain pending.
 
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved

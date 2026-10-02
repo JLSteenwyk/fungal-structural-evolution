@@ -11357,3 +11357,38 @@ and figure review remain next.
   compared directly rather than requiring byte-identical journal rendering.
   Expanded production cohort/design/variance fitting, calibration, accepted
   phylogenies/reconciliation and all eight aims remain incomplete. GPUs paused.
+
+- October 2 UTC: previous goal turn made concrete progress by committing/
+  pushing the complete entity covariance bank and residual-space numerical
+  qualification primitives (`0a88578`). The original operator-bank closure
+  finished at 21:51 UTC: all 75,188 cases/1,052,632 raw occurrences/13 matrices/
+  ten benchmarks, 1,830,606 source/artifact bindings and both original process
+  journals are closed. The refreshed v4 checkpoint revalidated sealed archive,
+  original receipt links and actual terminal resource evidence. Original full
+  design-v2 production remains live and processed more than 4,250 of 4,340
+  exact cohorts; independent design acceptance remains pending.
+
+  Implemented and froze complete uniform covariance qualification for every
+  original design and all 622,080 fixed settings, signed/unsigned modes and
+  five working trees: 6,220,800 setting/mode/tree links. Known target/residual
+  and family/intercept dependencies use exact covariance-preserving combined
+  variances; every other dependency remains review. Cached component products
+  and sparse global latent overlaps avoid repeating per-component work for
+  every design/tree and avoid dense global covariance/projector/latent caches.
+  Independent block/latent/dense primitives passed 48 cases and seven invalid
+  input rejections. Complete software contracts passed 720 synthetic settings,
+  1,800 audits/7,200 links, the independently qualified seven-basis path,
+  interruption replay, completed-restart refusal and all 17 altered exports.
+  Fixture header mismatch was corrected before launch; final v3 software
+  receipt binds the frozen optimized reader. Older unlaunched receipts remain.
+
+  Before launch recorded two CPU/32 GiB/no swap/BLAS1, 64 GiB output/scratch
+  and 164 GiB free reserve; conservative pre-sharing record bound 53.4 GiB.
+  No GPU or new charges. Original queued producer PID 2522914, reader 2522932
+  and closure 2522940 wait behind the original design-v2 closure, without
+  restarting it. The [fresh queue checkpoint](../metadata/full_uniform_covariance_qualification_queue_checkpoint_20261002.json)
+  verifies all 12 original upstream/new/recovery handles, 53 pins, actual new
+  cgroup limits and sealed full input/operator closures. Nonuniform weights,
+  control variants, expanded variance optimization/calibration, accepted
+  species/reconciled gene framework and all eight aims remain incomplete.
+  [Full uniform stage scope, methods and resources](full-uniform-covariance-qualification-20261002.md).

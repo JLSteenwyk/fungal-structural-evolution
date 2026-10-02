@@ -1,0 +1,85 @@
+{
+  "status": "complete_verified_full_entity_operator_bank",
+  "logical_cases": 75188,
+  "entity_occurrences": 1052632,
+  "unique_entities": {
+    "target_node": 53042,
+    "background_node": 44699,
+    "model_pair": 48874,
+    "family": 3413,
+    "gene": 97750,
+    "model": 93625
+  },
+  "matrices": 13,
+  "operator_nnz": {
+    "signed|target_node": 75188,
+    "unsigned|target_node": 75188,
+    "signed|background_node": 75188,
+    "unsigned|background_node": 75188,
+    "signed|model_pair": 150376,
+    "unsigned|model_pair": 150376,
+    "signed|family": 0,
+    "unsigned|family": 75188,
+    "signed|gene": 300752,
+    "unsigned|gene": 300752,
+    "signed|model": 290997,
+    "unsigned|model": 290997,
+    "contrast|family_intercept": 75188
+  },
+  "family_components": 3330,
+  "largest_component": 2884,
+  "sum_component_squared_sizes": 23884972,
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "kernel_gram_ranks": {
+    "signed|mafft_guide": 8,
+    "unsigned|mafft_guide": 8,
+    "signed|pmsf_mafft_profile": 8,
+    "unsigned|pmsf_mafft_profile": 8,
+    "signed|pmsf_profile_mafft": 8,
+    "unsigned|pmsf_profile_mafft": 8,
+    "signed|pmsf_profile_profile": 8,
+    "unsigned|pmsf_profile_profile": 8,
+    "signed|profile_guide": 8,
+    "unsigned|profile_guide": 8
+  },
+  "zero_kernels": {
+    "signed|mafft_guide": [
+      "family"
+    ],
+    "unsigned|mafft_guide": [],
+    "signed|pmsf_mafft_profile": [
+      "family"
+    ],
+    "unsigned|pmsf_mafft_profile": [],
+    "signed|pmsf_profile_mafft": [
+      "family"
+    ],
+    "unsigned|pmsf_profile_mafft": [],
+    "signed|pmsf_profile_profile": [
+      "family"
+    ],
+    "unsigned|pmsf_profile_profile": [],
+    "signed|profile_guide": [
+      "family"
+    ],
+    "unsigned|profile_guide": []
+  },
+  "numerical_benchmarks": 10,
+  "full_hash_archive": "results/phylogeny/full-entity-operator-bank-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "3ab728af58fd5c593aff6a0ddca4c06650f0ad84785d200cbf75e764a7a7685d",
+  "bound_source_hashes": 1830606,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-entity-operator-bank-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "f1a48eadf749fb54cbc0a716df2549d83b67e9ffe1224548772d38537d44070f",
+  "independent_readback": "results/phylogeny/full-entity-operator-bank-20261002-v1/readback.json",
+  "independent_readback_sha256": "7460356ad8a3427996b22ebd59d4535d8a0e34ff57361faa0c36745668a020af",
+  "completion_plan_sha256": "cda8f4648d01319a37a3a70f124af26d00ee90873a408830e07fe2709d2c16b6",
+  "scientific_eligibility": false,
+  "scope": "Complete full 75,188-case shared-entity operator bank from the closed expanded covariance source, preserving all1,052,632 raw occurrences, distinct genes despite shared physical predictions and all full case/family/component/species-pattern identities. Export all six endpoint/entity kinds under signed and unsigned loadings plus a separately defined family contrast intercept:13 sparse operators. Exact signed family cancellation is preserved; unsigned family loadings are twice the family-intercept incidence and therefore their covariance kernels are proportional, not separately identified variance components. Complete full-case Frobenius kernel Grams on residual identity, six entity bases, family contrast intercept and species covariance across all five working trees diagnose zero/collinear bases; Gram conditioning squares basis conditioning and cohort-specific variance identifiability remains unqualified. Ten complete fixed-parameter numerical benchmarks evaluate block Cholesky and species Woodbury solves/log determinants on every original case, checked independently by raw Counter loadings, latent-space Gram identities and explicit latent outer products with block/species LU. Numerical refinement checks residuals without jitter, eigenvalue clipping, changed covariance targets or dropped cases. Full producer/reader/source/artifact/two-original-journal closure gates bank acceptance. Benchmarks are neither estimated variance components nor accepted shared-ancestry correction, biological effects, optimizer qualification or calibrated inference. Expanded fixed-design/cohort inventories and fit-resource specification remain separate; final signed/unsigned covariance/weight/control variants, prediction/domain/PAE/ascertainment, accepted species/reconciled gene trees, calibration and all eight scientific aims remain open. No GPU or new charges."
+}

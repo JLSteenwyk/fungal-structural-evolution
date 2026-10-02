@@ -2535,3 +2535,27 @@ benchmarks; final bank source/artifact closure remains pending.
 The full model-input reader passed 10,526,320 numeric-cell checks and input
 closure verified 2,369,865 bindings plus both original journals. The original
 full design-v2 queue automatically started after that closure.
+
+## October 2: complete uniform covariance qualification grid
+
+The operator bank has now closed all 75,188 cases/13 matrices/ten benchmarks
+with 1,830,606 source/artifact bindings and two original journals. Queued
+uniform covariance qualification behind original design closure for all
+622,080 original settings, two loading modes and five working trees, retaining
+all 6,220,800 setting/mode/tree links. Exact cohort/design sharing avoids
+repeated calculations while preserving every original setting and gene context.
+
+Combine setting-specific target-node variance with uniform residual variance.
+Signed endpoint-family covariance remains zero in the audit. Unsigned endpoint
+family variance is combined with contrast-family intercept variance using its
+exact kernel multiplier four. No other dependency is silently removed.
+Each active design receives raw and REML residual-space kernel qualification,
+with all source review/empty/error states and constant-response exclusions
+retained. The producer reuses component products; an independent latent-space
+reader uses pivoted QR/gesvd and SQLite foreign-key replay of every original
+setting. Forty-eight dense/block/latent software comparisons and complete
+synthetic-grid contracts passed, rejecting 17 altered exports with full replay.
+These are software fixtures, not a biological pilot. Before launch recorded
+two CPU/32 GiB/no swap/BLAS1, 64 GiB output/scratch and 164 GiB free reserve,
+without GPUs or charges. Production qualification, nonuniform/control variants,
+variance optimization, model adequacy/calibration and all eight aims remain open.

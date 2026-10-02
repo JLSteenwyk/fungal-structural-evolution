@@ -1,0 +1,40 @@
+{
+  "status": "passed_full_uniform_covariance_qualification_contracts",
+  "synthetic_model_setting_rows": 720,
+  "synthetic_design_audits": 1800,
+  "synthetic_setting_links": 7200,
+  "rejected_rehashed_exports": [
+    "omit_final_tree",
+    "omit_unsigned",
+    "wrong_raw_gram",
+    "wrong_projected_gram",
+    "wrong_envelope",
+    "wrong_rank",
+    "promote_dependent_basis",
+    "undo_target_fold",
+    "wrong_family_fold",
+    "wrong_design_hash",
+    "wrong_source_contract",
+    "false_failure",
+    "link_omit_final_tree",
+    "link_omit_empty",
+    "link_wrong_fit",
+    "link_wrong_audit",
+    "link_wrong_status"
+  ],
+  "full_interrupt_replay_passed": true,
+  "completed_restart_refused": true,
+  "source_and_journal_fixtures_synthetic": true,
+  "independent_seven_basis_qualified_path_passed": true,
+  "all_loading_modes_trees_empty_and_review_cases_retained": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_covariance_qualification.py": "58d21b57502c37b2eb5299914613a393befb0da91fa35059fc163b49ff0ee399",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "scripts/prepare_full_covariance_qualification.py": "f2443726c3b1ca2558014e8297796738f49cccf3c1077669a4caf90278cda5dc",
+    "scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "scope": "Complete 24-case/six-cohort synthetic closed-grid software contracts, with signed/unsigned five-tree products, exact target/family folds, independent latent-space/SQL replay and all original settings. No production qualification, biological pilot, variance fit or calibrated inference."
+}

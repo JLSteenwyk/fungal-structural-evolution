@@ -1,0 +1,25 @@
+{
+  "status": "passed_reusable_covariance_kernel_context_contracts",
+  "checked_utc": "2026-10-02T21:57:18.993963+00:00",
+  "independent_dense_and_latent_cases": 48,
+  "maximum_projected_gram_relative_frobenius_error": 3.1192906008901388e-16,
+  "empty_global_columns_removed_without_kernel_change": true,
+  "raw_cache_unchanged_by_design": true,
+  "rejected_invalid_inputs": [
+    "cross_component_entity",
+    "nonpositive_residual",
+    "nonfinite_entity",
+    "reserved_entity_name",
+    "nonfinite_factor",
+    "rank_deficient_design",
+    "no_residual_dimensions"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_covariance_basis_context.py": "46f95d03a7b70b7a11f18a89e1d9d700a907301bf59d002c737f2785a58d330e",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/check_covariance_basis_audit.py": "2db1b5f86766f6777cf35485413c19c3f73d1907985af53452001d1462e77f8d"
+  },
+  "scope": "Synthetic numerical contracts only. Block-space, latent-space and dense-null-space algebra agree under signed loadings, rank-zero species factors, reuse and extreme design units. Not production-cohort qualification, a biological pilot or a variance fit."
+}

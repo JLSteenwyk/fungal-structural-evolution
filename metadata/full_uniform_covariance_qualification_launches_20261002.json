@@ -1,0 +1,11 @@
+{
+  "status": "queued_full_uniform_covariance_qualification",
+  "source_plan": "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+  "source_plan_sha256": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+  "launches": [
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+    "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json",
+    "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json"
+  ],
+  "scope": "Complete uniform-residual covariance-basis qualification for every original expanded design and all 622,080 fixed model settings, both signed/unsigned loading modes and all five working species trees (6,220,800 setting/mode/tree links). Source closures retain all 75,188 logical cases and original distinct genes/model identities and matching decisions. Cohort-specific target-node identity is folded into uniform residual variance; signed endpoint-family zero is retained in the audit, and unsigned endpoint-family variance is combined with the actual family contrast-intercept variance using its exact factor four. No other basis is silently dropped. Check both raw and REML fixed-effect-residual kernel Grams with explicit numerical envelopes, rank boundaries, dependencies and review/error/empty/constant-response states. Cache exact component products, never change the observation or variance cone. Independent latent-space/null-space algebra, QR/gesvd, exact original setting links with SQLite foreign keys, full source/artifact hashes and two actual original completion/resource journals gate closure. Qualification is numerical structural identifiability, not a variance fit, accepted evolutionary ancestry model, adequacy, calibrated uncertainty or biological effect. Nonuniform weighting and control variants, expanded optimization/calibration, prediction/domain/PAE/ascertainment and accepted species/reconciled gene trees remain separate required work. All eight aims remain incomplete. No GPU or new charges."
+}

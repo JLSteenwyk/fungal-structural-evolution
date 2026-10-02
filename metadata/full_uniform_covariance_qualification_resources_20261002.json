@@ -1,0 +1,33 @@
+{
+  "status": "recorded_before_full_uniform_covariance_qualification_launch",
+  "cpus": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "output_and_scratch_budget_gib": 64,
+  "minimum_free_disk_gib": 164,
+  "gpu_usage": false,
+  "new_paid_resources": false,
+  "complete_original_model_setting_rows": 622080,
+  "loading_modes": 2,
+  "working_trees": 5,
+  "complete_setting_audit_links": 6220800,
+  "maximum_pre_sharing_design_audits": 3110400,
+  "observed_original_design_cohorts_before_closure": 4340,
+  "conditional_design_audits": 1302000,
+  "observed_scope_not_yet_independently_closed": true,
+  "maximum_separate_component_bytes": 66539648,
+  "maximum_five_kernel_component_stack_bytes": 332698240,
+  "maximum_five_full_species_factor_bytes": 905263520,
+  "maximum_seven_kernel_projection_image_bytes": 42105280,
+  "maximum_ordered_sparse_entity_overlap_nonzero_cells": 10827072,
+  "maximum_audit_record_budget_bytes": 16384,
+  "maximum_setting_link_budget_bytes": 1024,
+  "conservative_uncompressed_record_budget_bytes": 57330892800,
+  "runtime_planning_hours_per_stage": [
+    1,
+    168
+  ],
+  "runtime_estimate_calibrated": false,
+  "scope": "Full original 622,080 setting grid, both loading modes and all five working trees. Exact cohort/design sharing affects repeated computation only; no setting or gene context is omitted. Budget includes compressed audit/link exports, SQLite scratch and complete source/archive receipts. Original source proof dictionaries may dominate memory. Global full covariance/projector and dense global latent-overlap matrices are never allocated. The independent reader stores sparse global entity overlaps and uses associative n-by-p contractions. Timing range is uncalibrated, not an optimization or project ETA. No GPU or new charges; existing jobs remain unchanged."
+}

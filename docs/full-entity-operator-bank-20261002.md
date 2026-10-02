@@ -5,14 +5,15 @@ cases**, preserving **1,052,632 endpoint/entity occurrences** from the closed
 expanded covariance index. It exports **13 sparse incidence matrices** and
 checks ten fixed numerical covariance benchmarks across both loading modes and
 all five working species trees. Producer, independent reader and final
-provenance closure are separate jobs. Production acceptance remains pending;
+provenance closure are separate jobs. [Production closure is complete](../metadata/full_entity_operator_bank_completed_20261002.json);
 these runs do not estimate variance components or biological effects.
 
 The original producer finished on October 2 at 20:57 UTC. All 13 matrices,
 ten full-case Grams and ten fixed numerical benchmarks are present. The
 independent original reader finished at 21:25 UTC and its receipt records
 `passed_full_entity_operator_raw_loading_and_gram_readback`. Final provenance
-closure is running and still required. Both loading modes have full-bank normalized Gram
+closure finished at 21:51 UTC, checking 1,830,606 source/artifact bindings and
+both original journals. Both loading modes have full-bank normalized Gram
 rank eight across all five working trees. The signed family kernel is zero;
 the unsigned family kernel is proportional to the family contrast intercept.
 Full construction plus three-right-hand-side solves took 7.95–14.70 seconds
@@ -200,7 +201,9 @@ Variance identities, signed/unsigned definitions, weighting and scientific
 control variants must be specified in final fit identities; unidentifiable
 components must not be reported as separate estimated effects.
 
-Complete cohort/design verification, expanded optimizer and numerical audits,
+The [full uniform cohort/design qualification](full-uniform-covariance-qualification-20261002.md)
+is now queued behind original design closure, with every setting, both loading
+modes and all five trees retained. Complete cohort/design verification, expanded optimizer and numerical audits,
 uncertainty/calibration and multiple-testing controls remain required. Accepted
 species/reconciled gene trees, branch durations, prediction-source, domain/PAE,
 missingness and ascertainment controls remain open. Working substitution

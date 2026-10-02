@@ -1,0 +1,33 @@
+{
+  "source_plan": "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+  "producer_receipt": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/readback.json",
+  "producer_status": "complete_full_uniform_covariance_qualification_pending_independent_readback",
+  "reader_status": "passed_full_uniform_covariance_latent_and_sql_readback",
+  "completed_status": "complete_verified_full_uniform_covariance_qualification",
+  "summary_fields": [
+    "logical_cases",
+    "model_setting_rows",
+    "unique_cohorts",
+    "unique_designs",
+    "audit_rows",
+    "setting_audit_links",
+    "audit_status_counts",
+    "link_status_counts",
+    "trees",
+    "loading_modes"
+  ],
+  "launches": [
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+    "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4",
+    "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json": "665eae1a9470de314bf2415cb316f5946e6c91614f57fb16eb7b82590a287c69",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_uniform_covariance_qualification_completed_20261002.json",
+  "scope": "Complete uniform-residual covariance-basis qualification for every original expanded design and all 622,080 fixed model settings, both signed/unsigned loading modes and all five working species trees (6,220,800 setting/mode/tree links). Source closures retain all 75,188 logical cases and original distinct genes/model identities and matching decisions. Cohort-specific target-node identity is folded into uniform residual variance; signed endpoint-family zero is retained in the audit, and unsigned endpoint-family variance is combined with the actual family contrast-intercept variance using its exact factor four. No other basis is silently dropped. Check both raw and REML fixed-effect-residual kernel Grams with explicit numerical envelopes, rank boundaries, dependencies and review/error/empty/constant-response states. Cache exact component products, never change the observation or variance cone. Independent latent-space/null-space algebra, QR/gesvd, exact original setting links with SQLite foreign keys, full source/artifact hashes and two actual original completion/resource journals gate closure. Qualification is numerical structural identifiability, not a variance fit, accepted evolutionary ancestry model, adequacy, calibrated uncertainty or biological effect. Nonuniform weighting and control variants, expanded optimization/calibration, prediction/domain/PAE/ascertainment and accepted species/reconciled gene trees remain separate required work. All eight aims remain incomplete. No GPU or new charges."
+}

@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_covariance_qualification.py",
+    "--plan",
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}
