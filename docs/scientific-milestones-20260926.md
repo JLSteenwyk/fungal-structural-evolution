@@ -1101,3 +1101,14 @@ integration for aims 2/4. Production design/qualification, weight/control
 variants, variance fitting, calibrated inference and all eight aims remain
 incomplete. GPU structure prediction remains paused.
 [Complete uniform qualification](full-uniform-covariance-qualification-20261002.md).
+
+Analytic profile ML/REML and three-start constrained variance optimization are
+validated. Independent spectral likelihood, candidate replay and conservative
+local curvature checks passed 48 dense cases, strong signed 80-digit scores,
+two optimizer/curvature comparisons, 15 altered exports and six analytic
+critical-cone stress fixtures. Prospective complete uniform fitting covers
+up to 5,208,000 unique candidates and 12,441,600 original setting links,
+without reducing the project to a pilot. These numerical foundations advance
+aims 2/4; production qualification/fitting, independent global checks, control
+variants, uncertainty calibration and all eight scientific aims remain open.
+[Likelihood, independent audit and complete inventory](shared-entity-likelihood-20261002.md).

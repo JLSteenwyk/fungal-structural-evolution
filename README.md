@@ -107,8 +107,12 @@ variance optimization and calibrated inference remain pending.
 The [shared-entity likelihood/optimizer backend](docs/shared-entity-likelihood-20261002.md)
 now has analytic ML/REML gradients and explicit nonnegative-boundary checks.
 It passed 36 dense score comparisons, an 80-digit correlated signed example
-and six independent optimizer comparisons. Full production fits and their
-resource/numerical/calibration audits remain pending.
+and six independent optimizer comparisons. Separate spectral replay/local
+curvature checks passed 48 dense cases, an 80-digit signed case and 15 altered
+candidate exports. Complete prospective uniform ML/REML accounting retains
+up to 5,208,000 unique candidates and 12,441,600 original setting links.
+Closed qualification, full-scope timing, production fitting/global numerical
+audits and calibrated inference remain pending.
 
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved

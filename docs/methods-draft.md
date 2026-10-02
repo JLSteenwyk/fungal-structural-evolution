@@ -2574,3 +2574,19 @@ REML objectives across different fixed designs are not ordinary comparable
 likelihoods. All 36 dense scores, 80-digit correlated case and six independent
 optimizer comparisons passed. Production fitting, independent curvature/full
 numerical audits and calibration remain pending.
+
+An independent candidate replay uses component eigen inverse square roots,
+species SVD whitening and a fixed-design SVD, without production numerical
+solver imports. Kernel columns stream in bounded batches. REML traces use
+positive norms in whitened residual space. Original-unit coefficient exports
+are compared in balanced units; scale, components and variance boundary KKT
+conditions are separately checked. Two-resolution score Hessians test positive
+curvature on a superset of the constrained critical cone, retaining weak lower
+boundaries and all flat/negative/asymmetric/unresolved states. Its error
+envelope is an empirical stability screen, not a rigorous bound or a global
+optimality proof. Forty-eight dense cases, signed 80-digit scores, two numerical
+candidate/curvature replays, 15 altered exports, seven invalid inputs and six
+analytic critical-cone stress fixtures passed. Complete prospective uniform
+ML/REML arithmetic covers at most 5,208,000 unique candidates/12,441,600 setting
+links. Timing, closed qualified inputs, full production audits and calibration
+remain required; no fitting launch or biological acceptance follows.

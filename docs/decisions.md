@@ -857,3 +857,22 @@ full source/artifact/two-original-journal closure gates the handoff. Source
 review, constant-response, empty, dependency, rank-boundary and numerical-error
 states remain explicit. No fit or calibrated inference is established.
 [Full stage contracts, resources and scope](full-uniform-covariance-qualification-20261002.md).
+
+## October 2: independent spectral candidate checks and complete fit accounting
+
+Verify supplied ML/REML candidates with an eigen/SVD whitening implementation
+independent of production Cholesky algebra. Compare coefficients in balanced
+units, preserve conditional uncertainty labels, and require explicit score
+boundary checks. Local curvature must be positive on a conservative superset
+of the critical cone; weak boundaries stay tested. Flat/negative/asymmetric or
+resolution-dependent curvature remains review. The empirical stability screen
+is not a global-optimum proof or calibrated inferential uncertainty.
+
+Preserve all original settings and exact source/input identities in prospective
+uniform ML/REML fitting. Full arithmetic permits at most 5,208,000 unique
+candidates and 12,441,600 setting links; exact source sharing reduces repeated
+computation without shrinking the study. Retain all nonqualified source rows.
+Close original design/qualification inputs, specify restartable full exports
+and independent global checks, and measure full-scope timing before production
+launch. No biological pilot, new GPU schedule or paid resource is introduced.
+[Validation, limits and resource inventory](shared-entity-likelihood-20261002.md).

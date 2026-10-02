@@ -1,0 +1,58 @@
+{
+  "status": "passed_independent_spectral_shared_entity_likelihood_contracts",
+  "checked_utc": "2026-10-02T22:41:09.732619+00:00",
+  "independent_dense_ml_reml_cases": 48,
+  "maximum_absolute_objective_error": 2.1316282072803006e-14,
+  "maximum_absolute_gradient_error": 3.552713678800501e-14,
+  "maximum_inverse_relative_residual": 6.403365641358952e-15,
+  "strong_signed_cases": 2,
+  "precision_digits": 80,
+  "strong_signed_high_precision_errors": {
+    "ml": {
+      "objective_absolute_error": 4.1175951537297806e-11,
+      "maximum_gradient_absolute_error": 2.2768245622195593e-17
+    },
+    "reml": {
+      "objective_absolute_error": 2.511413299544074e-11,
+      "maximum_gradient_absolute_error": 1.2278589603398338e-17
+    }
+  },
+  "independent_optimizer_candidates_replayed": 2,
+  "altered_candidate_exports_rejected": [
+    "objective",
+    "nonfinite_objective",
+    "coefficient",
+    "conditional_covariance",
+    "profiled_scale",
+    "variance_components",
+    "scientific_acceptance_flag",
+    "conditional_covariance_flag",
+    "parameter_order",
+    "kernel_normalization",
+    "negative_ratio",
+    "unqualified_optimizer",
+    "false_variance_cap"
+  ],
+  "invalid_inputs_rejected": [
+    "cross_component_entity",
+    "rank_deficient_design",
+    "perfect_response_fit",
+    "negative_diagonal",
+    "reserved_species_name",
+    "zero_column_batch",
+    "extreme_component_condition"
+  ],
+  "entity_batch_bound_verified": 2,
+  "permutations_and_extreme_design_units_passed": true,
+  "source_hashes": {
+    "scripts/check_independent_shared_entity_likelihood.py": "9862b5e559d7d819c0259adf32324810729a31f2c731d41e7ca8fdf2077e24c5",
+    "scripts/independent_shared_entity_likelihood.py": "7c0a87303600f094be7abd4c5701149f6d8a04bb648539a045af8487213eafeb",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "scope": "Independent component eigendecomposition, species SVD and fixed-design SVD; streamed positive-norm kernel traces. Synthetic software fixtures only. No production candidate acceptance, independent curvature/global optimum or calibrated inference."
+}

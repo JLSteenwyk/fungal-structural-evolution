@@ -1,0 +1,90 @@
+{
+  "status": "passed_independent_spectral_shared_entity_likelihood_contracts",
+  "checked_utc": "2026-10-02T22:42:54.991493+00:00",
+  "independent_dense_ml_reml_cases": 48,
+  "maximum_absolute_objective_error": 2.1316282072803006e-14,
+  "maximum_absolute_gradient_error": 3.552713678800501e-14,
+  "maximum_inverse_relative_residual": 6.403365641358952e-15,
+  "strong_signed_cases": 2,
+  "precision_digits": 80,
+  "strong_signed_high_precision_errors": {
+    "ml": {
+      "objective_absolute_error": 4.1175951537297806e-11,
+      "maximum_gradient_absolute_error": 2.2768245622195593e-17
+    },
+    "reml": {
+      "objective_absolute_error": 2.511413299544074e-11,
+      "maximum_gradient_absolute_error": 1.2278589603398338e-17
+    }
+  },
+  "independent_optimizer_candidates_replayed": 2,
+  "altered_candidate_exports_rejected": [
+    "objective",
+    "nonfinite_objective",
+    "coefficient",
+    "conditional_covariance",
+    "profiled_scale",
+    "variance_components",
+    "scientific_acceptance_flag",
+    "conditional_covariance_flag",
+    "parameter_order",
+    "kernel_normalization",
+    "negative_ratio",
+    "unqualified_optimizer",
+    "false_variance_cap"
+  ],
+  "independent_local_curvature_checks": [
+    {
+      "status": "independent_shared_entity_local_minimum_check_passed_pending_global_and_inferential_audits",
+      "curvature_evaluations": 13,
+      "strong_lower_boundary_indices": [
+        2
+      ],
+      "tested_curvature_eigenvalues": [
+        3.0573456095787286,
+        15.439648543863882
+      ],
+      "hessian_antisymmetry_norm": 9.68824324760788e-07,
+      "two_resolution_hessian_difference_norm": 0.00014393958972714325,
+      "numerical_curvature_review_envelope": 0.0005757656634035339
+    },
+    {
+      "status": "independent_shared_entity_local_minimum_check_passed_pending_global_and_inferential_audits",
+      "curvature_evaluations": 13,
+      "strong_lower_boundary_indices": [
+        2
+      ],
+      "tested_curvature_eigenvalues": [
+        3.027763607058682,
+        15.807182461155897
+      ],
+      "hessian_antisymmetry_norm": 8.945153937792113e-07,
+      "two_resolution_hessian_difference_norm": 0.00013526036271449264,
+      "numerical_curvature_review_envelope": 0.0005410492269228297
+    }
+  ],
+  "maximum_dense_curvature_absolute_difference": 7.283063041541027e-10,
+  "failed_candidate_curvature_refused": true,
+  "invalid_inputs_rejected": [
+    "cross_component_entity",
+    "rank_deficient_design",
+    "perfect_response_fit",
+    "negative_diagonal",
+    "reserved_species_name",
+    "zero_column_batch",
+    "extreme_component_condition"
+  ],
+  "entity_batch_bound_verified": 2,
+  "permutations_and_extreme_design_units_passed": true,
+  "source_hashes": {
+    "scripts/check_independent_shared_entity_likelihood.py": "956ea316464c33814370dd88b3c070ec6bd7a7af1a6ad37c823573e9fecc7229",
+    "scripts/independent_shared_entity_likelihood.py": "6d13e4487e9278ec0a7b31a1a0b392ebbbc8d247f0b0b2fa60185f2c0c719b33",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "scope": "Independent component eigendecomposition, species SVD and fixed-design SVD; streamed positive-norm kernel traces. Synthetic software fixtures only. No production candidate acceptance, independent curvature/global optimum or calibrated inference."
+}

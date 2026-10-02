@@ -62,3 +62,49 @@ Full production timing/resource estimates, qualified cohort/mode/tree recipes,
 independent full-scope fitting audits, weight/control variants and uncertainty
 calibration remain required. All eight scientific aims remain incomplete;
 structural GPU prediction remains paused.
+
+The [independent spectral implementation](../scripts/independent_shared_entity_likelihood.py)
+replays candidates using component eigen decompositions, species SVD whitening
+and a separate fixed-design SVD. It imports neither production likelihood nor
+covariance code. Inverse residuals are checked against the supplied covariance;
+unresolved component eigenvalues are review errors without clipping or jitter.
+Entity traces stream at most 32 columns. REML traces use squared norms after
+orthogonal fixed-effect removal. Coefficient/covariance comparisons use balanced
+design units to reject corrupted tiny-unit exports. Objective, scale, variance
+components, parameter identity, kernel normalization, boundary scores and
+numerical-only inference flags are checked separately.
+
+Local curvature screens evaluate independent scores at two finite-difference
+resolutions with central or bounded one-sided stencils. Strictly positive lower
+boundary scores permit removing those directions from the critical cone;
+weak lower boundaries remain in the tested space. Positive curvature is
+required on the whole remaining space, a sufficient, conservative constrained
+minimum condition. Flat, negative, asymmetric and unresolved curvature remains
+review. The stability envelope is empirical, not a rigorous floating-point
+bound. This does not prove a global optimum or calibrate variance uncertainty.
+
+The [final independent validation](../metadata/independent_shared_entity_likelihood_validation_20261002_v5.json)
+passed 48 dense ML/REML cases, permutations, exact zero variance/rank, streamed
+two-column batches and extreme design units. Maximum objective/gradient
+discrepancies were 2.14e-14/3.56e-14; maximum inverse relative residual was
+6.41e-15. Signed 80-digit objective/gradient discrepancies were at most
+4.12e-11/2.28e-17. Both optimizer replays and their local curvature checks passed;
+dense curvature discrepancy was at most 7.29e-10. All 15 altered candidate
+exports, seven invalid inputs and six analytic critical-cone stress fixtures
+behaved as required. These fixtures are not production fits, a biological pilot
+or accepted effects. Earlier unlaunched validation versions remain preserved.
+
+The [prospective full fitting inventory](../metadata/full_shared_entity_fit_resource_inventory_20261002_v3.json)
+preserves all 622,080 original settings, both outcomes/modes, five trees and
+ML/REML. Original fit-input sharing permits at most 5,208,000 unique candidates
+and 12,441,600 setting links. Covariance review rows remain linked even when
+no optimizer runs. Three starts with 500 search evaluations and each final
+replay give a ceiling of 7,827,624,000 evaluations, not expected iterations or
+time. Six-ratio candidate replay/curvature uses at most 26 independent
+evaluations; an independent global-optimization budget remains unspecified.
+Conservative uncompressed record allowances total 488.7 GiB, with proposed
+1 TiB output/scratch reserve and two CPU/32 GiB/no swap/BLAS1 per worker.
+These are prospective budgets, not launched limits or measured peak memory.
+Eligible counts, full-scope timing and restartable export/readback contracts
+still require closed design and covariance qualification. No production fitting
+job was launched by this inventory.

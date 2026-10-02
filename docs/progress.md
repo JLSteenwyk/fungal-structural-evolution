@@ -11415,3 +11415,32 @@ and figure review remain next.
   Full fitting resource/timing specification, weight/control variants,
   accepted phylogenies/reconciliation and all eight aims remain incomplete.
   [Likelihood, optimizer and validation](shared-entity-likelihood-20261002.md).
+
+- October 2, 22:47 UTC: the previous goal turn was a verified wait/error audit:
+  original recovery and design reader handles remained live, all seven monitor
+  contracts passed, and no new recent service errors were observed. The first
+  memory retry's failure remains explicit; the ongoing retry retained two
+  allocation warnings without a fatal error. Committed/pushed analytic
+  likelihood and three-start optimizer plus current binding receipts
+  (`5dcf291`). No launched source or original job was changed.
+
+  Added independent eigen/SVD spectral likelihood, bounded streamed entity
+  traces, balanced-unit coefficient replay and two-resolution constrained local
+  curvature screens. Final software checks passed 48 dense cases, the 80-digit
+  strong signed comparison, two optimizer/curvature replays, all 15 altered
+  exports, seven invalid inputs and six analytic critical-cone fixtures.
+  Maximum gradient discrepancy was 3.56e-14; dense curvature discrepancy was
+  7.29e-10. Negative/flat/asymmetric curvature, caps, failed replay and unresolved
+  inputs remain review. Local screens do not prove global optima or calibrated
+  uncertainty. No production fit is accepted by these software checks.
+
+  Prepared complete prospective uniform ML/REML arithmetic: at most 5,208,000
+  unique candidates and 12,441,600 original setting links. Conservative output
+  allowances total 488.7 GiB; proposed reserve is 1 TiB with two CPU/32 GiB/no
+  swap/BLAS1 per worker. Evaluation ceilings are not runtime estimates. Closed
+  qualification, full-scope timing, independent global checks and restartable
+  production audits remain required. Original design reader 2531510 remains
+  live and advanced to at least 200 of 4,340 cohorts after complete SQL source
+  membership construction; uniform qualifier remains original queued. GPU
+  prediction remains paused; all eight aims remain incomplete.
+  [Independent replay, curvature and full inventory](shared-entity-likelihood-20261002.md).
