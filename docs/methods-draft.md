@@ -2559,3 +2559,18 @@ These are software fixtures, not a biological pilot. Before launch recorded
 two CPU/32 GiB/no swap/BLAS1, 64 GiB output/scratch and 164 GiB free reserve,
 without GPUs or charges. Production qualification, nonuniform/control variants,
 variance optimization, model adequacy/calibration and all eight aims remain open.
+
+## October 2: analytic shared-entity profile likelihood and bounded optimization
+
+Implemented direct-residual profile ML/REML with analytic kernel scores.
+Fixed effects use balanced QR coordinates with the original REML determinant
+Jacobian and original-unit conditional coefficients restored. Entity scores
+combine component inverse traces, species low-rank correction and fixed-effect
+subtraction; no global dense covariance/projector is constructed. Three
+deterministic expm1-coordinate searches permit exact zero variances. Explicit
+KKT replay, computational upper caps, disagreement and budget/error states
+gate numerical candidates. Conditional covariance is not calibrated uncertainty.
+REML objectives across different fixed designs are not ordinary comparable
+likelihoods. All 36 dense scores, 80-digit correlated case and six independent
+optimizer comparisons passed. Production fitting, independent curvature/full
+numerical audits and calibration remain pending.

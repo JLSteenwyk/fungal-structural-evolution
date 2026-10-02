@@ -11392,3 +11392,26 @@ and figure review remain next.
   control variants, expanded variance optimization/calibration, accepted
   species/reconciled gene framework and all eight aims remain incomplete.
   [Full uniform stage scope, methods and resources](full-uniform-covariance-qualification-20261002.md).
+
+- October 2 UTC: previous goal turn made concrete progress by committing and
+  pushing complete uniform covariance qualification (`8199d6b`). The original
+  design producer finished all 4,340 cohorts/130,200 designs/260,400 fit inputs
+  and all 622,080 original settings. Preliminary source rank checks were all
+  full rank; independent reader child 2531510 remains live and final closure
+  is pending. The original uniform qualifier remains queued, without restart.
+
+  Implemented profile ML/REML with analytic shared-entity/species variance
+  scores, QR fixed effects and original-unit conditional coefficients. All
+  36 dense/finite-difference cases, variance-zero/rank-zero alternatives,
+  permutations/extreme units and nine invalid-input rejections passed.
+  Strong signed 80-digit comparison passed with gradient error <=1.90e-16.
+  Deterministic three-start nonnegative optimization passed all six independent
+  dense Powell comparisons (objective discrepancy <=4.27e-10), retaining
+  upper caps, exhausted budgets and unidentified target/residual variance
+  as review/failure states. Explicit KKT checks rejected narrow-box false
+  optimizer success. Candidates remain pending independent numerical/curvature
+  and inferential audits. These are software fixtures, not production fits or
+  a biological pilot. Launched covariance/qualification sources were unchanged.
+  Full fitting resource/timing specification, weight/control variants,
+  accepted phylogenies/reconciliation and all eight aims remain incomplete.
+  [Likelihood, optimizer and validation](shared-entity-likelihood-20261002.md).

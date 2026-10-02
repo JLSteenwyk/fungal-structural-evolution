@@ -1,0 +1,28 @@
+{
+  "status": "passed_shared_entity_analytic_profile_likelihood_contracts",
+  "checked_utc": "2026-10-02T22:27:20.783744+00:00",
+  "ml_reml_dense_cases": 36,
+  "maximum_absolute_objective_error": 7.105427357601002e-15,
+  "maximum_absolute_analytic_gradient_error": 7.105427357601002e-15,
+  "maximum_absolute_finite_difference_error": 1.021609463691675e-09,
+  "row_permutation_passed": true,
+  "extreme_design_units_passed": true,
+  "zero_variance_boundaries_and_zero_rank_species_passed": true,
+  "rejected_invalid_inputs": [
+    "negative_ratio",
+    "nonfinite_ratio",
+    "wrong_ratio_count",
+    "unknown_method",
+    "rank_deficient_design",
+    "nonfinite_response",
+    "perfect_response_fit",
+    "unrepresentable_coefficient_covariance",
+    "cross_component_entity"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265"
+  },
+  "scope": "Numerical likelihood/gradient contracts only; dense inverses and forward/central fourth-order numerical derivatives. Not an optimizer, production fit, a biological pilot or uncertainty calibration."
+}

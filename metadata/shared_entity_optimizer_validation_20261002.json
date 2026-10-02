@@ -1,0 +1,28 @@
+{
+  "status": "passed_shared_entity_multistart_optimizer_contracts",
+  "checked_utc": "2026-10-02T22:24:42.953181+00:00",
+  "independent_dense_powell_cases": 6,
+  "multistart_candidates_pending_audit": 6,
+  "candidate_statuses": [
+    "optimized_shared_entity_candidate_pending_independent_audit",
+    "optimized_shared_entity_candidate_pending_independent_audit",
+    "optimized_shared_entity_candidate_pending_independent_audit",
+    "optimized_shared_entity_candidate_pending_independent_audit",
+    "optimized_shared_entity_candidate_pending_independent_audit",
+    "optimized_shared_entity_candidate_pending_independent_audit"
+  ],
+  "maximum_independent_optimizer_objective_error": 4.263540631654905e-10,
+  "upper_variance_caps_retained_as_review": true,
+  "exhausted_evaluation_budgets_retained_as_failure": true,
+  "target_residual_alias_rejected": true,
+  "narrow_box_false_optimizer_success_retained_as_review": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_shared_entity_optimizer.py": "26b34f6c0ac46f4a1ee2a0707fdcac4455060539bd47aaae7a84a0a929ad27bf",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "scripts/shared_entity_likelihood.py": "dd4675e91c695659cda435006f3590fbddc1abcf2f18e075d54d5fe1ca206490",
+    "scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "scope": "Synthetic software optimizer contracts only. Independent dense Powell solutions and explicit boundary/failure/identifiability tests. No production fit, biological pilot, independent full-data optimization acceptance or calibrated uncertainty."
+}

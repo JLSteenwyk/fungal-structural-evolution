@@ -1,0 +1,20 @@
+{
+  "status": "passed_80_digit_signed_shared_entity_likelihood_scores",
+  "precision_digits": 80,
+  "errors": {
+    "ml": {
+      "objective_absolute_error": 3.2933655802480644e-12,
+      "maximum_gradient_absolute_error": 2.279535067650773e-17
+    },
+    "reml": {
+      "objective_absolute_error": 2.9203306439740118e-12,
+      "maximum_gradient_absolute_error": 1.8973538018496328e-16
+    }
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_shared_entity_likelihood_precision.py": "8bab5d162cb138204d9ba2258115cc3555c1c992787d13dcd9ec2790bb47e4bd",
+    "scripts/shared_entity_likelihood.py": "dd4675e91c695659cda435006f3590fbddc1abcf2f18e075d54d5fe1ca206490",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265"
+  },
+  "scope": "Strong signed numerical covariance test only; exact high-precision inverse/determinant/gradient. No production biological fit, pilot or uncertainty calibration."
+}
