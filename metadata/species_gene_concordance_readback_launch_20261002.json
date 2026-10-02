@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-species-gcf-readback-20261002-v1.service",
+  "pid": 1331185,
+  "created": 1790900583.7,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/species_gene_concordance_readback_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/species_gene_concordance_readback_wait_plan_20261002.json",
+  "plan_sha256": "5e31ff19eff128df69fa5dd0973b84d6df9115923a5c1939e2b3d8000c64e6ad",
+  "checked_utc": "2026-10-02T00:23:04.411125+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-species-gcf-readback-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/species_gene_concordance_readback_wait_plan_20261002.json"
+  ]
+}

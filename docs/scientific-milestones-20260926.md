@@ -774,3 +774,33 @@ the eight scientific aims. GPU prediction remains paused.
   full-grid/corruption checks passed; actual comparison results remain pending.
   Full native-refit comparisons and biological framework qualification remain
   required, with all eight scientific aims incomplete.
+
+
+October 2 UTC: all 16 native gene-concordance runs have completed on all
+250 audited marker trees against the eight candidate species views. Full
+independent reconstruction of 1,046,000 branch–gene cells and 8,368 branch
+summaries is running, followed by source/two-journal closure. A new v2 reader
+checks every NEXUS annotation and native precision; original inventory failure
+is preserved. Three native software cases passed and 26 false exports were
+rejected. [Workflow](species-gene-concordance-20261002.md). Marker estimation,
+biological discordance, taxon/model/root robustness and calibrated structural
+effects remain unresolved; no scientific aim is marked complete.
+
+
+October 2 UTC: full native gCF is now independently closed for all 16 runs,
+1,046,000 branch–gene cells and 8,368 summaries, with 1,217 bindings and both
+original completion journals. The complete support table and inspected figure
+retain all ten unavailable factors. Descriptive concordance does not propagate
+gene inference uncertainty or identify a biological cause; full taxon/model/
+root qualification, reconciliation and calibrated structural effects remain
+required. [Completed workflow](species-gene-concordance-20261002.md).
+
+
+October 2 UTC: all retained-reference projections and comparisons passed full
+independent reconstruction and original-journal closure: 16,000 projected
+bootstrap states/32 views/33,088 edges and all 64 comparisons/17,744 presence
+cells/1,898 overlapping conflicts. Full source archives bind 207 and 229
+inputs/artifacts respectively. These matched-taxon references preserve original
+path sums and unavailable SH-aLRT; they do not replace the 16 actual native
+refits or establish a root/model adequacy/structural evolutionary effect.
+[Completed evidence](pmsf-four-run-sensitivity-20261001.md#retained-reference-sensitivity-closed-october-2-utc).

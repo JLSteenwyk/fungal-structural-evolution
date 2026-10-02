@@ -1,0 +1,37 @@
+{
+  "source_plan": "metadata/species_gene_concordance_plan_20261002.json",
+  "source_plan_sha256": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+  "output": "results/phylogeny/full-species-gcf-independent-readback-20261002-v2/receipt.json",
+  "pins": {
+    "scripts/readback_species_gene_concordance_v2.py": "9cf762e85c4121febafa0a7ef5f7dd086a0741135c7dbe8d5634c8741a6e6d1a",
+    "scripts/check_species_gene_concordance_cases_v2.py": "bf5cb43fd83b53d0643ce1c5539b5106b365e01e4f7d563869183b9db4cb1c18",
+    "scripts/close_species_gene_concordance_v2.py": "e341a7adcf228dce6360fb1642c51fb389e10d0397634e63b900ce96cd9d3b82",
+    "results/software-checks/native-gcf-cases-20261002-v4/receipt.json": "2fafcab177dd4a34e87e25ed0945d655fbbdefc2d638d6c3c98630bb979e0d4d",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_launch_20261002.json": "65fdc624d3c810abdf197dd76b220f2c22dda2a2b8676ff44b1a532076810873",
+    "metadata/species_gene_concordance_reader_contract_failure_20261002.json": "461e734bde7fe73cd8fd7466d89d8814704c1c6fa6062c4b9d3aa488d5e80e11",
+    "metadata/species_gene_concordance_readback_resources_20261002_v2.json": "7987b0fd242dcf9a860ca7901b75622b5fd9eaf82b7a4a38214f6a9dbd9e9478"
+  },
+  "resources": {
+    "status": "planned_full_native_gcf_v2_reader_with_all_nexus_annotations",
+    "checked_utc": "2026-10-02T00:29:45.500658+00:00",
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_gib": 2,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      0.01,
+      4
+    ],
+    "runtime_uncalibrated": true,
+    "available_memory_gib": 701.6848030090332,
+    "free_disk_gib": 10520.79702758789,
+    "basis": "Native full sixteen-run batch completed. New independent reader verifies all 1,046,000 branch-marker cells, 8,368 branch summaries, all native NEXUS cell/aggregate annotations and format-specific precision. Three synthetic native contracts include fractional percentages/long branch precision and zero denominators; all 26 altered exports rejected. Preserve original failed reader/closure journals and original native outputs. Two CPU/16 GiB/no swap/one BLAS thread per serial reader/closure, 2 GiB output allowance, 100 GiB reserve, uncalibrated .01-4h stage planning interval, no GPU/new charges/restarts."
+  },
+  "scope": "All 250 audited profile/MAFFT marker trees against all eight closed original 526-taxon PMSF ML/consensus reference views: sixteen native gCF runs and all 1,046,000 branch-marker cells. Reference internal labels removed before native rerooting; original support joined by canonical split. Independent reconstruction verifies every native statistic and per-gene state, preserving nondecisive missing-clade cases as unavailable and handling native all-NA zero-denominator outputs explicitly. Canonical NNI alternatives retain a consistent per-branch mapping to native NNI labels. Full source hashes and two original producer/reader completion journals are required for closure. Concordance is conditional on inferred marker topologies and candidate species references; gene estimation uncertainty, orthology/model adequacy, root, taxon/marker sensitivities, biological causes of discordance, dating and accepted evolutionary effects remain unresolved. No GPU, paid infrastructure or restart of existing analyses; all eight scientific aims remain incomplete."
+}

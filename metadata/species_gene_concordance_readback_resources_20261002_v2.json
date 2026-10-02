@@ -1,0 +1,21 @@
+{
+  "status": "planned_full_native_gcf_v2_reader_with_all_nexus_annotations",
+  "checked_utc": "2026-10-02T00:29:45.500658+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.01,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 701.6848030090332,
+  "free_disk_gib": 10520.79702758789,
+  "basis": "Native full sixteen-run batch completed. New independent reader verifies all 1,046,000 branch-marker cells, 8,368 branch summaries, all native NEXUS cell/aggregate annotations and format-specific precision. Three synthetic native contracts include fractional percentages/long branch precision and zero denominators; all 26 altered exports rejected. Preserve original failed reader/closure journals and original native outputs. Two CPU/16 GiB/no swap/one BLAS thread per serial reader/closure, 2 GiB output allowance, 100 GiB reserve, uncalibrated .01-4h stage planning interval, no GPU/new charges/restarts."
+}

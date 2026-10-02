@@ -1835,3 +1835,46 @@ compatibility checks reconstruct all comparisons and conflicts. Production
 and journal closure remain pending, and native-versus-reference comparisons
 will remain necessary. Reference-only comparisons conditional on the original
 full-cohort fit do not establish native subset robustness or model adequacy.
+
+
+### Full gene concordance across candidate species views (October 2 UTC)
+
+All 125 profile marker trees and all 125 MAFFT marker trees were compared with
+each of the eight closed original PMSF ML/consensus views using IQ-TREE 3.0.1
+`--gcf --cf-verbose`: 16 runs, 8,368 branch summaries and 1,046,000 branch–gene
+cells. Decisiveness requires coverage of all four incident reference clades.
+Concordant, two NNI alternatives, residual discordance and uninformative
+missing-clade states remain separate, with the actual decisive denominator.
+Reference internal labels are removed before native reorientation; original
+SH-aLRT/bootstrap support is joined by canonical split.
+
+Independent DendroPy reconstruction checks every restricted gene split,
+incident-clade count, native verbose/aggregate/NEXUS value, branch ID, factor
+label and branch length. Native NNI orientation must have one consistent
+mapping across genes for each branch. Zero decisive genes retain unavailable
+factors and all-NA native statistics. Numerical checks respect two-decimal
+statistical percentages, three-significant-digit Newick factors and six-
+significant-digit statistical branch lengths. The initial reader inventory
+failure is retained; new v2 output checks every NEXUS annotation. Full v2
+readback and two-original-journal closure passed all 1,046,000 cells with
+1,217 bindings. Descriptive support joins retain all 8,368 branch rows,
+including ten unavailable factors; all counts/factors and 16 medians were
+checked against the closed reader ledgers and the figure was inspected.
+
+See [complete workflow and interpretation](species-gene-concordance-20261002.md)
+and [Minh, Hahn and Lanfear 2020](https://doi.org/10.1093/molbev/msaa106). Raw
+gCF is conditional on inferred marker/reference topologies and taxon coverage;
+it does not distinguish biological discordance from estimation error or
+qualify a root, reconciliation, dating or structural evolutionary effect.
+
+
+The retained-reference projection and comparison stages subsequently passed
+full independent reconstruction and two-original-journal closures: all
+16,000 projected bootstrap states, 32 views, 33,088 edges and 19,289 empirical
+split-frequency rows (207 bindings), followed by all 64 comparisons, 17,744
+presence cells and 1,898 overlapping incompatible split pairs/quartet witnesses
+(229 bindings). Closed small receipts locate the complete source archives:
+[projection](../metadata/retained_taxon_projections_completed_20261001.json)
+and [comparison](../metadata/retained_tree_comparisons_completed_20261001.json).
+Original path sums and missing projected SH-aLRT remain explicit; full actual
+native subset refits and native-versus-reference comparisons are still needed.

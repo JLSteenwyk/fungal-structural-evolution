@@ -10569,3 +10569,45 @@ does not establish universal coverage or complete the biological project.
   two-journal closure remain pending. The producer reports 28/32 boundary
   views with the declared role split, a provisional diagnostic conditional
   on original inference, not a qualified root or native subset result.
+
+
+- October 2 UTC (October 1 local): computed all 16 native gCF comparisons
+  from all 125 profile and 125 MAFFT audited gene trees against eight closed
+  candidate species views: 8,368 branch summaries and 1,046,000 branch–gene
+  cells. Prelaunch full census passed 1,037 bindings. First reader inventory
+  omitted native NEXUS, so its failure and original closure journal are
+  preserved; original native output is unchanged. New v2 independent reader
+  validates all NEXUS aggregate/cell annotations and native precision, after
+  three native software contracts passed and 26 altered exports were rejected.
+  Full readback/source/two-original-journal closure and descriptive support
+  figure remain pending. Resources preceded launch: two CPU/16 GiB/no swap/
+  one BLAS thread per serial stage, no GPU or charges. [Full workflow](species-gene-concordance-20261002.md).
+  All original scientific jobs and required biological qualification remain;
+  all eight aims incomplete and GPU prediction paused.
+
+
+- October 2 UTC: full independent gCF readback passed all 16 native runs,
+  1,046,000 branch–gene cells and every NEXUS annotation. Two-original-journal
+  closure verified 1,217 bindings. Retained 119,892 uninformative cells and
+  ten zero-denominator branch rows. The full 8,368-row original-support join,
+  gCF/count/state/median readback and rendered figure also passed; its original
+  completion journal and all source/output hashes were verified. Median gCF
+  spans 52.1–52.6% for profile markers and 58.9–60.0% for MAFFT markers across
+  reference views, conditional on gene/reference inference and actual coverage.
+  Figure resources preceded launch: one CPU/4 GiB/no swap/one BLAS thread,
+  no GPU or charges. [Completed methods, figure and limitations](species-gene-concordance-20261002.md).
+  Gene estimation uncertainty, taxon/model/root robustness and all eight
+  scientific aims remain open; GPU prediction remains paused.
+
+
+- October 2 UTC: retained-reference pruning and full comparisons closed while
+  gCF work ran. All 16 baseline/cohort projections, 16,000 projected bootstrap
+  states, 32 views, 33,088 edges and 19,289 split-frequency rows passed full
+  independent pruning and 207-binding/two-journal closure. All 64 comparisons,
+  17,744 presence cells and 1,898 overlapping conflicts/quartets passed full
+  independent reconstruction and 229-binding/two-journal closure.
+  [Completed sensitivity evidence](pmsf-four-run-sensitivity-20261001.md#retained-reference-sensitivity-closed-october-2-utc).
+  Latest exact live checkpoint confirms 19 ongoing/queued pipeline handles and
+  six original scientific/retrieval jobs; expanded structural comparisons have
+  processed 132,352/298,848 states. Actual native subset refits and all eight
+  biological aims remain incomplete; GPU prediction stays paused.

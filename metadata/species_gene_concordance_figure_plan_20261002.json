@@ -1,0 +1,31 @@
+{
+  "completion": "metadata/species_gene_concordance_completed_20261002_v2.json",
+  "source_plan": "metadata/species_gene_concordance_plan_20261002.json",
+  "output": "results/phylogeny/full-species-gcf-support-summary-20261002-v1",
+  "pins": {
+    "scripts/summarize_species_gene_concordance.py": "18226df2671596069c120f4a10f816ecea6f53467300fc18d6582a837049d070",
+    "metadata/species_gene_concordance_completed_20261002_v2.json": "b95e03b91d28245a860673cce1bd2f7818650173ec567a5120bf3727efcb6baf",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_figure_resources_20261002.json": "0d97ca839c4890357c4feb991ea7edc9038e7ac5ac69301859e45ba67160487b"
+  },
+  "resources": {
+    "checked_utc": "2026-10-02T00:35:22.757445+00:00",
+    "cpu": 1,
+    "memory_gib": 4,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_gib": 0.1,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.001,
+      0.2
+    ],
+    "runtime_uncalibrated": true,
+    "free_disk_gib": 10512.009765625,
+    "basis": "Join all 8,368 closed branch summaries to 4,184 original support rows, retain zero denominators, render all available observations in eight reference-view panels; no inference, GPU or new charges. Full original proof hashes checked before using results."
+  },
+  "scope": "Full closed 16-run/8,368-branch gCF and original bootstrap/SH-aLRT support join. Figure displays all available gCF values across both marker alignments and eight reference views, with all unavailable values retained in the full table. Descriptive conditional concordance is not a branch posterior, biological cause, root or qualified framework; dependence and variable decisive denominators remain explicit. All eight aims incomplete."
+}

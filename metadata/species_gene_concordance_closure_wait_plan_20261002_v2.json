@@ -1,0 +1,25 @@
+{
+  "dependencies": [
+    "metadata/species_gene_concordance_readback_launch_20261002_v2.json"
+  ],
+  "pins": {
+    "scripts/readback_species_gene_concordance_v2.py": "9cf762e85c4121febafa0a7ef5f7dd086a0741135c7dbe8d5634c8741a6e6d1a",
+    "scripts/check_species_gene_concordance_cases_v2.py": "bf5cb43fd83b53d0643ce1c5539b5106b365e01e4f7d563869183b9db4cb1c18",
+    "scripts/close_species_gene_concordance_v2.py": "e341a7adcf228dce6360fb1642c51fb389e10d0397634e63b900ce96cd9d3b82",
+    "results/software-checks/native-gcf-cases-20261002-v4/receipt.json": "2fafcab177dd4a34e87e25ed0945d655fbbdefc2d638d6c3c98630bb979e0d4d",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_launch_20261002.json": "65fdc624d3c810abdf197dd76b220f2c22dda2a2b8676ff44b1a532076810873",
+    "metadata/species_gene_concordance_reader_contract_failure_20261002.json": "461e734bde7fe73cd8fd7466d89d8814704c1c6fa6062c4b9d3aa488d5e80e11",
+    "metadata/species_gene_concordance_readback_resources_20261002_v2.json": "7987b0fd242dcf9a860ca7901b75622b5fd9eaf82b7a4a38214f6a9dbd9e9478",
+    "metadata/species_gene_concordance_readback_plan_20261002_v2.json": "00574fdfbf6f0451aa081c277b0c12992e50c74e67562fcdfdef1f905d282b58",
+    "metadata/species_gene_concordance_readback_launch_20261002_v2.json": "3847f95477a099cef803c3d9ec0fc011b2236bd421c42d39684a5569e8d6c47b",
+    "metadata/species_gene_concordance_completion_plan_20261002_v2.json": "6959c276a83e677f12511ad442cb5ab2f6b01bf249273e2f87ab0f52a3a0499f"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_species_gene_concordance_v2.py",
+    "--plan",
+    "metadata/species_gene_concordance_completion_plan_20261002_v2.json"
+  ],
+  "scope": "All 250 audited profile/MAFFT marker trees against all eight closed original 526-taxon PMSF ML/consensus reference views: sixteen native gCF runs and all 1,046,000 branch-marker cells. Reference internal labels removed before native rerooting; original support joined by canonical split. Independent reconstruction verifies every native statistic and per-gene state, preserving nondecisive missing-clade cases as unavailable and handling native all-NA zero-denominator outputs explicitly. Canonical NNI alternatives retain a consistent per-branch mapping to native NNI labels. Full source hashes and two original producer/reader completion journals are required for closure. Concordance is conditional on inferred marker topologies and candidate species references; gene estimation uncertainty, orthology/model adequacy, root, taxon/marker sensitivities, biological causes of discordance, dating and accepted evolutionary effects remain unresolved. No GPU, paid infrastructure or restart of existing analyses; all eight scientific aims remain incomplete."
+}

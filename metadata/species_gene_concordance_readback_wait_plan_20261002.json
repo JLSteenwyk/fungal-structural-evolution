@@ -1,0 +1,36 @@
+{
+  "dependencies": [
+    "metadata/species_gene_concordance_launch_20261002.json"
+  ],
+  "pins": {
+    "scripts/species_gcf_sources.py": "99d46bb41c8a8ed46608f9972d011139a8d444df2719a2f2b628329bf718d466",
+    "scripts/run_species_gene_concordance.py": "f1e709a8e851e254b49ff17c05203ea03129e0f1d2b1db008f2f4f9d611c1363",
+    "scripts/readback_species_gene_concordance.py": "5c87aeb180125035340de962bf0bb77fa3f2843c092ab0eb34287562eb4ff189",
+    "scripts/check_species_gene_concordance_cases.py": "c3504db840b222bd0f7949aa691719233e4fc142acfd1f22db71ebcc511f1d9f",
+    "scripts/close_species_gene_concordance.py": "148550bfff96efb1275929852eba23f513d17b7fdc6ef899f68d4fb02f49a5ce",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/audit_species_guide.py": "955b3cbb2cc28d076755fd2e161f0118d1de813b871067f41095260f36c8f7f5",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/pmsf_four_run_sensitivity_plan_20261001.json": "75a953d7b8613a762583708d43bc340db9bd53c14bb1bd882c454c30ff727853",
+    "metadata/pmsf_four_run_sensitivity_completed_20261001.json": "e01bf8f7208991b441f7024e3625e562697147aec90e102a49d299684ee74a11",
+    "metadata/marker_alignment_topology_completed_20260930.json": "9076ef9bad51693e4d671d3a02149d3de4f5f7f386de06a4a2c3f3bd90809da8",
+    "metadata/species_gene_concordance_resources_20261002.json": "c7087796326c9ab9886219d63d702a0d38d619e1378c3312e8e169aea7a395d2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/iqtree-3.0.1-Linux-intel/bin/iqtree3": "40424ccdb1d79c304641f910cb6c172ebb670214e50958352018e3ff9906ab8f",
+    "results/software-checks/native-gcf-cases-20261002-v2/receipt.json": "07623bd49fefe248e8fb11378ec68cafc14b96450d6765767284d243bedbd86e",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_launch_20261002.json": "65fdc624d3c810abdf197dd76b220f2c22dda2a2b8676ff44b1a532076810873"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_species_gene_concordance.py",
+    "--plan",
+    "metadata/species_gene_concordance_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-species-gene-concordance-20261002-v1/readback.json"
+  ],
+  "scope": "All 250 audited profile/MAFFT marker trees against all eight closed original 526-taxon PMSF ML/consensus reference views: sixteen native gCF runs and all 1,046,000 branch-marker cells. Reference internal labels removed before native rerooting; original support joined by canonical split. Independent reconstruction verifies every native statistic and per-gene state, preserving nondecisive missing-clade cases as unavailable and handling native all-NA zero-denominator outputs explicitly. Canonical NNI alternatives retain a consistent per-branch mapping to native NNI labels. Full source hashes and two original producer/reader completion journals are required for closure. Concordance is conditional on inferred marker topologies and candidate species references; gene estimation uncertainty, orthology/model adequacy, root, taxon/marker sensitivities, biological causes of discordance, dating and accepted evolutionary effects remain unresolved. No GPU, paid infrastructure or restart of existing analyses; all eight scientific aims remain incomplete."
+}

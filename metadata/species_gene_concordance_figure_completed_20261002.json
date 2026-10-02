@@ -1,0 +1,31 @@
+{
+  "status": "complete_verified_full_closed_species_gcf_support_summary_and_inspected_figure",
+  "checked_utc": "2026-10-02T00:38:11.347505+00:00",
+  "branch_rows": 8368,
+  "available_gcf_rows": 8358,
+  "zero_decisive_rows": 10,
+  "full_branch_count_state_gcf_and_median_readback_passed": true,
+  "visual_inspection_passed": true,
+  "producer_receipt": "results/phylogeny/full-species-gcf-support-summary-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "fc318a6fc0f58b2a4918fa1286eb46ebaffb7ebfb5a5df3cc4aafb2ad7ad5d87",
+  "source_gene_concordance_completion": "metadata/species_gene_concordance_completed_20261002_v2.json",
+  "source_gene_concordance_completion_sha256": "b95e03b91d28245a860673cce1bd2f7818650173ec567a5120bf3727efcb6baf",
+  "launch": "metadata/species_gene_concordance_figure_launch_20261002.json",
+  "launch_sha256": "7cadf82c6f49d5a96361baf1e5f5746ccc30f3f1a82d2710444a10b0b4715784",
+  "original_completion_journal_sha256": "612ec536712d132eea0e7edab33dd4f3b162e09172e834a515d2d2ea947299f4",
+  "captured_process_messages": 1,
+  "completion_resource_records": [
+    {
+      "__REALTIME_TIMESTAMP": "1790901327240020",
+      "CPU_USAGE_NSEC": "4444906000",
+      "MEMORY_PEAK": "2211840",
+      "MEMORY_SWAP_PEAK": "0"
+    }
+  ],
+  "figures": {
+    "docs/figures/species_gcf_support_20261002.pdf": "7016d660334f9e333c60c7905ae8348a816da513a8a26ce2437561792b929030",
+    "docs/figures/species_gcf_support_20261002.png": "8562b64338f307c2ad0e812bcda42169c2c02c71453cb9751ddd297701e56adf"
+  },
+  "scientific_eligibility": false,
+  "scope": "All 8,368 branches retained and original empirical bootstrap/SH-aLRT linked. Full independently classified branch counts, gCF values and 16 medians rechecked against closed reader ledgers. All artifacts and source hashes verified, captured original figure process completion checked, PDF/PNG rendered and PNG inspected. Descriptive conditional estimates, no accepted root or biological cause; all eight scientific aims remain incomplete."
+}

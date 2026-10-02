@@ -439,3 +439,14 @@ full collection/journal/biological qualification remains separate.
   independently reconstruct RF/compatibility from raw pruned trees. Keep
   actual native-versus-reference comparisons and biological framework
   qualification as separate required work.
+
+
+- October 2 UTC: compute native gCF across every one of the 250 audited marker
+  trees and all eight completed candidate species views, retaining all
+  1,046,000 branch–gene states and actual decisive denominators. Join original
+  support by canonical split because native reorientation can move labels.
+  Require a separate complete bipartition/NEXUS reader and two original
+  completion journals. Preserve the first reader's inventory failure and
+  implement corrections in new v2 scripts/plans/outputs. Keep unavailable
+  factors, gene-estimation uncertainty and biological causes explicit;
+  these measurements do not substitute for phylogenetic qualification.

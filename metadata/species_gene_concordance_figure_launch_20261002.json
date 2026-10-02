@@ -1,0 +1,44 @@
+{
+  "unit": "fungal-species-gcf-support-figure-20261002-v1.service",
+  "pid": 1343513,
+  "created": 1790901322.07,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_species_gene_concordance.py",
+    "--completion",
+    "metadata/species_gene_concordance_completed_20261002_v2.json",
+    "--plan",
+    "metadata/species_gene_concordance_figure_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-species-gcf-support-summary-20261002-v1"
+  ],
+  "plan": "metadata/species_gene_concordance_figure_plan_20261002.json",
+  "plan_sha256": "374c1283b34acea1359bb0bd685eeba50a4981bb1385f0ea348f59138df04b32",
+  "actual_cgroup_limits": {
+    "cpu.max": "100000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-species-gcf-support-figure-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=100%",
+    "--property=MemoryMax=4G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_species_gene_concordance.py",
+    "--completion",
+    "metadata/species_gene_concordance_completed_20261002_v2.json",
+    "--plan",
+    "metadata/species_gene_concordance_figure_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-species-gcf-support-summary-20261002-v1"
+  ]
+}

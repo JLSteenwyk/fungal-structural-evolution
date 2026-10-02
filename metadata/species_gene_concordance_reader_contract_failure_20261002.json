@@ -1,0 +1,23 @@
+{
+  "status": "diagnosed_original_native_batch_preserved_new_reader_v2_required",
+  "checked_utc": "2026-10-02T00:29:45.499312+00:00",
+  "failed_handles": [
+    {
+      "launch": "metadata/species_gene_concordance_readback_launch_20261002.json",
+      "launch_sha256": "86451ce36b4741c50dcb1fe83096f3756bbba408d2c4fe88528a591714012b2d",
+      "journal": "results/phylogeny/species-gcf-initial-reader-contract-failure-20261002-v1/species_gene_concordance_readback_launch_20261002.journal.jsonl",
+      "journal_sha256": "e1d0ecc4d7d176ae36d9e04891ab743919dbf25a40031964d930d4108e66ada6"
+    },
+    {
+      "launch": "metadata/species_gene_concordance_closure_launch_20261002.json",
+      "launch_sha256": "623e1f461b627be46c67046b19bb3596308b0c6dd88e3cb1558a32b48aa7daa9",
+      "journal": "results/phylogeny/species-gcf-initial-reader-contract-failure-20261002-v1/species_gene_concordance_closure_launch_20261002.journal.jsonl",
+      "journal_sha256": "13820bcf4dc4da0aaaa638098d7584c1b868ad715058484350042a19e87d7988"
+    }
+  ],
+  "native_receipt": "results/phylogeny/full-species-gene-concordance-20261002-v1/receipt.json",
+  "native_receipt_sha256": "d6628e4c63677c854d7004d27652c3b9df17536487cd16b491de40820777e7e8",
+  "cause": "First reader incorrectly required seven artifacts; native output also includes gcf.cf.tree.nex. Subsequent full-format review established two-decimal statistical percentages, three-significant-digit Newick factors, six-significant-digit stat branch lengths, and all-NA zero-denominator statistics with unlabelled Newick branches. Synthetic cases did produce NEXUS, but the initial checker did not validate it. Original native outputs are retained; no native recomputation or mutation of launched code/plans.",
+  "correction": "New immutable v2 reader/closer and v2 check script validate every NEXUS aggregate and per-gene annotation plus format-specific precision. Three native synthetic cases passed and 26 altered exports rejected. Full production v2 readback is required before acceptance.",
+  "scientific_eligibility": false
+}

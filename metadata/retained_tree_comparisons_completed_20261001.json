@@ -1,0 +1,73 @@
+{
+  "status": "complete_verified_full_retained_baseline_tree_comparisons",
+  "policies": 4,
+  "tree_views": 32,
+  "comparison_rows": 64,
+  "split_presence_rows": 17744,
+  "incompatible_pairs": 1898,
+  "policy_summaries": [
+    {
+      "policy": "exclude_sparse_boundary_taxon",
+      "retained_taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "views": 8,
+      "comparisons": 16,
+      "shared_all_ml": 489,
+      "shared_all_consensus": 490,
+      "shared_all_eight": 489
+    },
+    {
+      "policy": "exclude_below10_both_alignments",
+      "retained_taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "views": 8,
+      "comparisons": 16,
+      "shared_all_ml": 488,
+      "shared_all_consensus": 489,
+      "shared_all_eight": 488
+    },
+    {
+      "policy": "exclude_curated_hybrids",
+      "retained_taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "views": 8,
+      "comparisons": 16,
+      "shared_all_ml": 482,
+      "shared_all_consensus": 485,
+      "shared_all_eight": 482
+    },
+    {
+      "policy": "exclude_hybrids_and_uncertain_labels",
+      "retained_taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "views": 8,
+      "comparisons": 16,
+      "shared_all_ml": 463,
+      "shared_all_consensus": 466,
+      "shared_all_eight": 463
+    }
+  ],
+  "full_hash_archive": "results/phylogeny/full-retained-baseline-tree-comparisons-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "b3fbed7b7f1d30104625bc7fa591227bb1ccf2585c4d9c390e589f489237747b",
+  "bound_source_hashes": 229,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-retained-baseline-tree-comparisons-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "17c88954056fc29e8803d7f98a4065f6f247c27cd7dd0e8f3e8ca6771b4b2eb3",
+  "independent_readback": "results/phylogeny/full-retained-baseline-tree-comparisons-20261001-v1/readback.json",
+  "independent_readback_sha256": "f52dabade65824035a3332e42820e86f0fa92bfdb58634b6c0b4859c6fda5b33",
+  "completion_plan_sha256": "d49cbcc377825834d097319efb865e374ac9d09fe9b88de241438842f10111da",
+  "scientific_eligibility": false,
+  "scope": "Complete32matched-taxon baselineML/consensus views onfouractualclosed policycohorts,64paircomparisons(6MLcrossrun+6consensuscrossrun+4withinrun percohort),allevery unionpresence cells andincompatible unique splitpairs/canonicalquartetwitnesses. EmpiricalprojectedUFB95only, SH-aLRTunavailable; sourceall4000originalbootstrap trees/16000projectionstates must befullyclosedwith2journalsbeforeproducer. IndependentDendroPy rawbaseline taxondeletion/RF/bipartitioncompatibility/branchpath checks reconstructeveryexport. Separate2originalproducer/readerjournals/fullhasharchive forcompletion. Projectionconditionalonoriginal526tipinference;not16nativerefitting oraccepted root/framework/modeladequacy/dating/biologicaldiscordance/evolutionaryrate/aimcompletion. All8aimsincomplete/GPUpaused/nocharges/restarts."
+}

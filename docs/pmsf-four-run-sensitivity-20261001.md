@@ -323,3 +323,43 @@ journal and every source/output hash were checked. Independent full pruning
 readback has started and the two-journal closure is pending. The producer's
 28/32 role-boundary presence count remains provisional and conditional on
 original inference; no root or native subset robustness is accepted from it.
+
+
+### Full marker concordance added October 2 UTC
+
+All eight completed candidate views now have native gCF measurements from
+all 125 profile and 125 MAFFT gene trees. All 16 native runs, independent
+reconstruction of 1,046,000 branch–marker cells and NEXUS exports, and full
+1,217-binding/two-original-journal closure passed. The 8,368-row support join
+and inspected figure retain ten unavailable factors. [Methods, recovery and interpretation](species-gene-concordance-20261002.md).
+These conditional concordance measurements complement bootstrap/SH-aLRT
+support and the earlier marker-conflict diagnostic; they do not identify
+biological causes or complete the species framework.
+
+
+### Retained-reference sensitivity closed October 2 UTC
+
+Complete pruning/readback/two-original-journal closure passed all 16 baseline/
+retained-cohort combinations: 16,000 projected bootstrap states, 32 views,
+33,088 edge rows and 19,289 empirical split-frequency rows, with 207 bindings.
+The role boundary is present in 28/32 projected views, conditional on original
+inference. This is a declared role split, not an accepted root.
+
+All 64 within-cohort reference comparisons also passed independent raw-tree
+pruning, RF and split-compatibility reconstruction and both original journals,
+with 229 bindings. Complete output retains 17,744 split-presence cells and
+1,898 overlapping incompatible split-pair records with quartet witnesses.
+Shared splits across all eight views number 489/522 after removing the sparse
+boundary taxon, 488/519 after the low-occupancy policy, 482/521 after excluding
+curated hybrids and 463/500 after excluding hybrids plus incomplete labels.
+These denominators are the internal splits per retained binary tree. The
+cohorts differ, so these fractions are descriptive reference sensitivities,
+not independent estimates or comparisons of refitted models.
+
+[Projection completion](../metadata/retained_taxon_projections_completed_20261001.json)
+and [comparison completion](../metadata/retained_tree_comparisons_completed_20261001.json)
+locate the full source archives outside Git. Actual 16 native supported subset
+refits are still running and native-versus-reference comparisons remain
+required. Projection lengths remain original path sums and projected SH-aLRT
+remains unavailable. No model adequacy, dating, final species framework or
+structural evolutionary effect is accepted by these completed stages.

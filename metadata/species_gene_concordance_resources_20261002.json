@@ -1,0 +1,21 @@
+{
+  "status": "planned_full_250_marker_eight_reference_native_gcf_and_independent_readback",
+  "checked_utc": "2026-10-02T00:22:21.615152+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.01,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 701.6848030090332,
+  "free_disk_gib": 10520.79702758789,
+  "basis": "Eight closed 526-taxon candidate species-tree ML/consensus views, all 125 independently audited gene trees per profile/MAFFT alignment. Sixteen native IQ-TREE gCF jobs, 8,368 branch summaries and 1,046,000 branch-marker cells. Independent DendroPy bipartition reconstruction checks every cell, incident-clade taxon coverage, a consistent NNI mapping, counts, percentages, native branch IDs/tree labels and branch lengths. Full input census passed 1,037 bindings before plan creation. Synthetic native six-taxon all-state and zero-decisive checks passed; 19 false exports rejected. Native software fixture is not a biological pilot or a calibrated full-dataset runtime. Two CPU/16 GiB/no swap/one BLAS thread per serial producer/reader/closure, no GPU, new charges or changes to existing jobs."
+}

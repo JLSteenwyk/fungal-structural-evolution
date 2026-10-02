@@ -1,0 +1,237 @@
+{
+  "status": "complete_verified_full_native_species_gene_concordance",
+  "references": 8,
+  "marker_alignments": 2,
+  "markers_per_alignment": 125,
+  "native_runs": 16,
+  "branch_marker_cells": 1046000,
+  "branch_summary_rows": 8368,
+  "state_counts": {
+    "not_decisive_missing_incident_clade": 119892,
+    "concordant": 494990,
+    "residual_discordance": 313825,
+    "alternative_1": 58918,
+    "alternative_2": 58375
+  },
+  "run_summaries": [
+    {
+      "run": "profile_profile-ml-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7611,
+        "concordant": 29661,
+        "residual_discordance": 20807,
+        "alternative_1": 3648,
+        "alternative_2": 3648
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "profile_profile-ml-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7433,
+        "alternative_1": 3566,
+        "residual_discordance": 18471,
+        "alternative_2": 3708,
+        "concordant": 32197
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "profile_profile-consensus-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7611,
+        "concordant": 29661,
+        "residual_discordance": 20807,
+        "alternative_1": 3648,
+        "alternative_2": 3648
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "profile_profile-consensus-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7433,
+        "alternative_1": 3566,
+        "residual_discordance": 18471,
+        "alternative_2": 3708,
+        "concordant": 32197
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "profile_mafft-ml-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7518,
+        "concordant": 29707,
+        "residual_discordance": 20840,
+        "alternative_1": 3648,
+        "alternative_2": 3662
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "profile_mafft-ml-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7340,
+        "alternative_1": 3541,
+        "residual_discordance": 18488,
+        "alternative_2": 3729,
+        "concordant": 32277
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "profile_mafft-consensus-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7518,
+        "concordant": 29707,
+        "residual_discordance": 20840,
+        "alternative_1": 3648,
+        "alternative_2": 3662
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "profile_mafft-consensus-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7340,
+        "alternative_1": 3541,
+        "residual_discordance": 18488,
+        "alternative_2": 3729,
+        "concordant": 32277
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "mafft_profile-ml-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7520,
+        "concordant": 29659,
+        "residual_discordance": 20821,
+        "alternative_1": 3786,
+        "alternative_2": 3589
+      },
+      "zero_decisive_branches": 2
+    },
+    {
+      "run": "mafft_profile-ml-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7339,
+        "alternative_1": 3700,
+        "residual_discordance": 18429,
+        "alternative_2": 3620,
+        "concordant": 32287
+      },
+      "zero_decisive_branches": 2
+    },
+    {
+      "run": "mafft_profile-consensus-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7530,
+        "concordant": 29656,
+        "residual_discordance": 20808,
+        "alternative_1": 3787,
+        "alternative_2": 3594
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "mafft_profile-consensus-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7351,
+        "alternative_1": 3706,
+        "residual_discordance": 18414,
+        "alternative_2": 3631,
+        "concordant": 32273
+      },
+      "zero_decisive_branches": 1
+    },
+    {
+      "run": "mafft_mafft-ml-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7681,
+        "concordant": 29511,
+        "residual_discordance": 20753,
+        "alternative_1": 3841,
+        "alternative_2": 3589
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "mafft_mafft-ml-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7502,
+        "alternative_1": 3756,
+        "residual_discordance": 18326,
+        "alternative_2": 3634,
+        "concordant": 32157
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "mafft_mafft-consensus-profile",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7673,
+        "concordant": 29559,
+        "residual_discordance": 20741,
+        "alternative_1": 3812,
+        "alternative_2": 3590
+      },
+      "zero_decisive_branches": 0
+    },
+    {
+      "run": "mafft_mafft-consensus-mafft",
+      "branches": 523,
+      "branch_marker_cells": 65375,
+      "state_counts": {
+        "not_decisive_missing_incident_clade": 7492,
+        "alternative_1": 3724,
+        "residual_discordance": 18321,
+        "alternative_2": 3634,
+        "concordant": 32204
+      },
+      "zero_decisive_branches": 0
+    }
+  ],
+  "full_hash_archive": "results/phylogeny/full-species-gcf-independent-readback-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "5a6c37eeb4de05d5de30f25542246154fda3e7e09314d76c09f98cd328c70223",
+  "bound_source_hashes": 1217,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-species-gene-concordance-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "d6628e4c63677c854d7004d27652c3b9df17536487cd16b491de40820777e7e8",
+  "independent_readback": "results/phylogeny/full-species-gcf-independent-readback-20261002-v2/receipt.json",
+  "independent_readback_sha256": "3624b01b8d916844fca008015bdb0d3fb3fdc2196179eb6aad57e37149df4307",
+  "completion_plan_sha256": "6959c276a83e677f12511ad442cb5ab2f6b01bf249273e2f87ab0f52a3a0499f",
+  "scientific_eligibility": false,
+  "scope": "All 250 audited profile/MAFFT marker trees against all eight closed original 526-taxon PMSF ML/consensus reference views: sixteen native gCF runs and all 1,046,000 branch-marker cells. Reference internal labels removed before native rerooting; original support joined by canonical split. Independent reconstruction verifies every native statistic and per-gene state, preserving nondecisive missing-clade cases as unavailable and handling native all-NA zero-denominator outputs explicitly. Canonical NNI alternatives retain a consistent per-branch mapping to native NNI labels. Full source hashes and two original producer/reader completion journals are required for closure. Concordance is conditional on inferred marker topologies and candidate species references; gene estimation uncertainty, orthology/model adequacy, root, taxon/marker sensitivities, biological causes of discordance, dating and accepted evolutionary effects remain unresolved. No GPU, paid infrastructure or restart of existing analyses; all eight scientific aims remain incomplete."
+}
