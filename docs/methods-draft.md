@@ -2290,3 +2290,24 @@ remain sequence-derived, contexts/settings remain dependent, and matched
 backgrounds/predictor/domain/PAE/accepted phylogeny/reconciliation/calibration
 remain required. All eight aims incomplete; GPU prediction paused.
 [Full integration, semantics and reproduction](full-triad-context-joint-directions-20261002.md).
+
+
+## Full whole-protein optimization provenance handoff queued October 2 UTC
+
+The final handoff links the entire 75,070-input/five-tree/375,350-fit grid to all
+75,070 original five-fit audit shards and every flagged follow-up. Each original
+input/fit checksum, audit identity/five-fit checksum set/result digest and exact
+manifest result is required. Follow-up scope equals the entire original census;
+producer/reader keys equal all original flags. Original and follow-up errors
+retain unverified numerical status, and reviewed outcomes cannot become passed
+fits through hashing alone. Four original fit/audit/follow-up/reader processes
+must be absent with invocation-linked original completion/resource journals and
+full hashes before a final completion locator can be written. Candidate numerical
+likelihood/coefficient/covariance/gradient replay remains the existing full
+reader's responsibility; this handoff binds its exhaustive evidence. Software
+contracts passed 15 fixture original audit states, all pass/review/error paths
+and 11 rehashed corrupted-evidence rejections. Prelaunch estimates specify two
+CPU/32 GiB/no swap, 4 GiB archives and 100 GiB reserve. Full native results,
+versioned complete comparison integration and calibrated inference remain
+pending; all eight aims incomplete, GPU prediction paused.
+[Full scope, evidence and reproduction](full-whole-protein-optimization-closure-20261002.md).

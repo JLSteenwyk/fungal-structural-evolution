@@ -1023,3 +1023,18 @@ accepted phylogeny/reconciliation, actual matched backgrounds, predictor/domain/
 PAE and calibrated inference remain required. All eight aims incomplete; GPU
 prediction paused.
 [Full contextual joint-direction integration](full-triad-context-joint-directions-20261002.md).
+
+
+October 2 UTC: an exhaustive original-fit/audit/follow-up provenance handoff is
+implemented and queued for all 75,070 inputs/375,350 tree fits/75,070 audit shards
+and every flagged case. Complete manifests/identities/hashes/error dispositions
+plus all four original journals gate completion. Software contracts rejected
+11 false evidence cases and preserve pass/review/error distinctions. This supports
+complete working-model integration for aims 2 and 4; numerical acceptance and
+calibrated inference remain separate. The [broader live inventory](../metadata/project_live_launch_inventory_20261002.json)
+verifies 63 distinct original jobs, including 13 older jobs absent from previous
+checkpoints plus the new handoff. The [fresh full checkpoint](../metadata/project_runtime_checkpoint_20261002_v18.json)
+verifies 54 plan-bearing/original handles, 35 terminal successes, ten preserved
+historical failures and 467,124 bindings; nine legacy-schema wrappers remain
+recorded separately. All eight aims incomplete; GPU prediction paused.
+[Full numerical handoff and remaining integration](full-whole-protein-optimization-closure-20261002.md).

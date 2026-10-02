@@ -414,3 +414,24 @@ Completed full-grid follow-up/readback, integration into a versioned complete
 comparison export and inferential calibration remain outstanding. The existing
 comparison export retains its original five-candidate registry and explicit
 review flags; it does not silently adopt the new results.
+
+
+## Full original-fit/follow-up provenance handoff queued (October 2 UTC)
+
+The [exhaustive final handoff](full-whole-protein-optimization-closure-20261002.md)
+is now queued behind the original full follow-up reader. It binds all 75,070
+inputs/375,350 fits/75,070 five-fit audit shards and every flagged follow-up,
+checking original identities, complete scope/manifests, result digests and
+numerical pass/review/error linkage. Four original fit/audit/follow-up/reader
+completion/resource journals and full hashes gate closure. Software contracts
+passed all 15 original fixture audit states and 11 corrupted evidence rejections.
+Resources preceded launch: two CPU/32 GiB/no swap, 4 GiB archive output,
+100 GiB reserve; no GPU, paid resources or existing-job changes. Full native
+production/audit/follow-up remain pending, followed by versioned complete
+comparison integration and calibrated inference. The frozen original comparison
+export retains its five-candidate registry. All eight aims incomplete.
+
+The [broader live inventory](../metadata/project_live_launch_inventory_20261002.json)
+includes older queued follow-up/comparison and ancestral/phylogenetic wrappers
+that were absent from recent runtime checkpoints. All 63 distinct original
+handles were checked; nine legacy-schema wrappers are retained separately.

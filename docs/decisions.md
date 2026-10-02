@@ -653,3 +653,19 @@ both original completion/resource journals before production acceptance.
 Full production is queued, not completed. These dependent context descriptions
 do not establish biological polarity, significance or a duplication effect.
 [Full contextual joint-direction workflow](full-triad-context-joint-directions-20261002.md).
+
+
+## October 2 UTC: close complete whole-protein numerical evidence before integration
+
+Require full Cartesian original fit/audit manifests, every input/fit checksum,
+every five-fit audit shard and all flagged follow-ups before integrating complete
+optimization results into a new comparison version. Preserve passes, flags and
+original/follow-up errors with exact source/readback identities. Neither a
+checksum nor a completed process promotes an unverified numerical error. Bind
+all original fit/audit/follow-up/reader completion/resource journals and complete
+source hashes; preserve the old five-candidate export as its own frozen version.
+Numerical closure is not global optimality, identifiable covariance components,
+accepted phylogeny or calibrated biological inference. Also retain older launch
+schemas in the live inventory rather than excluding those original jobs or
+rewriting their provenance.
+[Full handoff and live inventory scope](full-whole-protein-optimization-closure-20261002.md).

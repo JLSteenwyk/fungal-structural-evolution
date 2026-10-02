@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-whole-protein-optimization-closure-20261002-v1.service",
+  "pid": 246680,
+  "created": 1790927515.85,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_whole_protein_optimization_closure_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/full_whole_protein_optimization_closure_wait_plan_20261002.json",
+  "plan_sha256": "c196549ee1f6ea368b89bcb31d0e787e0c6cf79dafaef1e67a4b2a0fcebf60d5",
+  "checked_utc": "2026-10-02T07:51:56.592738+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-whole-protein-optimization-closure-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_whole_protein_optimization_closure_wait_plan_20261002.json"
+  ]
+}

@@ -12,8 +12,11 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
-The [latest verified runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v17.json)
-checks all 43 pipeline handles and six original scientific/retrieval jobs.
+The [latest verified runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v18.json)
+checks 48 pipeline handles and six original scientific/retrieval jobs. A
+[broader original-launch inventory](metadata/project_live_launch_inventory_20261002.json)
+verifies 63 distinct live project jobs, including nine older wrappers with
+legacy launch schemas.
 Full sequence-derived geometry, all-order comparison against structural
 correspondences, and linkage to original contexts are queued after alignment
 closure; production results remain pending.

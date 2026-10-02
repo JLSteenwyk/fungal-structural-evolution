@@ -11008,3 +11008,30 @@ does not establish universal coverage or complete the biological project.
   All eight aims incomplete; GPU prediction paused; no existing job changes,
   restarts or new charges.
   [Complete contextual joint-direction workflow](full-triad-context-joint-directions-20261002.md).
+
+
+- October 2 UTC: implemented and queued the exhaustive whole-protein optimization
+  handoff behind the original complete follow-up reader. All 75,070 inputs/
+  375,350 fits/75,070 five-fit audit shards and every original flag require exact
+  source/hash/identity/result-digest/manifest linkage; original and follow-up
+  pass/review/error dispositions remain explicit. Four original completion/
+  resource journals plus complete source/artifact hashes gate final closure.
+  Software contracts passed 15 original fixture audit states, retained numerical
+  errors/reviews and rejected all 11 corrupted evidence cases. Resources preceded
+  launch: two CPU/32 GiB/no swap, 4 GiB archives and 100 GiB reserve, no GPU or
+  paid resources. The original queued closure is PID 246680. At inspection the
+  live original fitting manifest contained 183,960/375,350 dispositions; full
+  original fit/audit/follow-up results and complete comparison integration remain
+  pending. A scan of every original launch record found 13 older live jobs
+  absent from recent checkpoints. Including the new handoff, the [broader inventory](../metadata/project_live_launch_inventory_20261002.json)
+  verifies 63 distinct original live handles. Four older plan-bearing wrappers
+  were added to the [fresh full checkpoint](../metadata/project_runtime_checkpoint_20261002_v18.json),
+  now covering 48 pipeline/six original live jobs, 35 verified terminal successes,
+  ten preserved historical failures and 467,124 closed bindings. Nine older
+  legacy-schema phylogenetic/polynomial/ancestral wrappers remain independently
+  recorded with exact original identity and available command-plan/script hashes.
+  Expanded background progress was 280,896/298,848 at the full-check observation.
+  No original job or launch record was changed/restarted. Full versioned comparison
+  integration, prediction/phylogeny/model adequacy and calibrated inference remain
+  required. All eight aims incomplete; GPU prediction paused.
+  [Complete handoff, estimates and methods](full-whole-protein-optimization-closure-20261002.md).

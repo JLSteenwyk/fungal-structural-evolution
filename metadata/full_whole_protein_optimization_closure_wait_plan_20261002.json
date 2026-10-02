@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/whole_protein_full_flag_readback_launch_20260930.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_whole_protein_optimization.py",
+    "--plan",
+    "metadata/full_whole_protein_optimization_closure_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_whole_protein_optimization_closure_plan_20261002.json": "4268faf2d46b89f888af81e060cba29f649401f3d0e0aea12f81afb6497efa46",
+    "metadata/whole_protein_full_flag_readback_launch_20260930.json": "3672b627e429c6de59406aeefd36f4db25ce746c9f2f554c70be5f4dd04c63f2",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

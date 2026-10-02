@@ -1,0 +1,31 @@
+{
+  "status": "estimated_before_launch_full_whole_protein_optimization_closure",
+  "checked_utc": "2026-10-02T07:51:56.347482+00:00",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "maximum_output_gib": 4,
+  "planning_hours": [
+    1,
+    24
+  ],
+  "runtime_uncalibrated": true,
+  "not_completion_eta": true,
+  "dependency_wait_excluded": true,
+  "unique_original_inputs": 75070,
+  "original_fits": 375350,
+  "original_audit_shards": 75070,
+  "minimum_direct_input_fit_audit_bindings": 525490,
+  "full_native_completion_journals": 4,
+  "maximum_flag_cases": 375350,
+  "maximum_direct_bindings_including_followups": 900840,
+  "planning_bytes_per_binding": 1024,
+  "planning_binding_archive_gib": 0.8591079711914062,
+  "available_memory_gib": 716.5888252258301,
+  "free_disk_gib": 10480.014373779297,
+  "basis": "Full75070input/375350fit/all75070auditshard census plus everydynamicflag case and4originaljournals. Inputcollection roughly62.75GB per prior resource plan; archive-only bindings/journals, no copying/reoptimizing arrays or fits. Worst-case900840direct entries at1KiB each about0.86GiB plus source maps/journals;4GiB output/100GiB reserve. FullhashI/O elapsedunmeasured;1-24hplanningnotETA. No GPUs/newcharges/existingjobchanges."
+}
