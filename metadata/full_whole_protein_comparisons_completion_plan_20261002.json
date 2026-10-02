@@ -1,0 +1,34 @@
+{
+  "source_plan": "metadata/full_whole_protein_comparisons_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-whole-protein-comparisons-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-whole-protein-comparisons-20261002-v1/readback.json",
+  "producer_status": "complete_full_whole_protein_comparisons_pending_independent_readback",
+  "reader_status": "passed_full_whole_protein_comparisons_source_selection_arithmetic_readback",
+  "completed_status": "complete_verified_full_whole_protein_comparisons",
+  "summary_fields": [
+    "fit_summaries",
+    "parameter_records",
+    "comparisons",
+    "trees",
+    "original_fit_status_counts",
+    "effective_fit_status_counts",
+    "followup_status_counts",
+    "selected_source_kind_counts",
+    "comparison_status_counts",
+    "relation_counts",
+    "followup_cases_integrated"
+  ],
+  "launches": [
+    "metadata/full_whole_protein_comparisons_launch_20261002.json",
+    "metadata/full_whole_protein_comparisons_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_whole_protein_comparisons_plan_20261002.json": "61022b9c4dbb6a1df9feba8f2ace6edb5d2313e7cd3eeb8c0e14cb285be25713",
+    "metadata/full_whole_protein_comparisons_launch_20261002.json": "1bd87a3177b272a38ce2fcda4713559e5fd1673c3bb4b09db9fd9e25a1074a35",
+    "metadata/full_whole_protein_comparisons_readback_launch_20261002.json": "f528063455099adf783fdb77ecf762bf01fe69241a00139b929f6106fb45175d",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_whole_protein_comparisons_completed_20261002.json",
+  "scope": "Complete verified375350 fit dispositions/75070older frozenmeasurementinputs/5tree alternatives and everydynamic optimizationflag follow-up; all4147200 immutable within-setting comparisons. Originalpass/error retained; follow-up pass/refinement/recovery selected only afterfull four-original-journal/hash closure. Reviews retained, follow-up errorsretainoriginal flagged auditedfit explicitly. Separate normalized coefficients/conditional GLS covariance and selectedvariance parameters. Fullraw independent source-selection, coefficient-unit transforms, comparison arithmetic/nesting/decisions and finaltwo-original-journal/hash closure. Noexpanded-atlas coverage transfer, globaloptimum/calibratedCI/pvalue/biologicaleffect/modelacceptance claim; all8aims incomplete; GPUs paused."
+}

@@ -1038,3 +1038,18 @@ verifies 54 plan-bearing/original handles, 35 terminal successes, ten preserved
 historical failures and 467,124 bindings; nine legacy-schema wrappers remain
 recorded separately. All eight aims incomplete; GPU prediction paused.
 [Full numerical handoff and remaining integration](full-whole-protein-optimization-closure-20261002.md).
+
+October 2 UTC: complete working-model comparison integration is implemented
+and queued for all 375,350 fits, 375,350 selected parameter records and 4,147,200
+comparisons, including every closed optimization follow-up. An independent
+source-selection/parameter transform/comparison reader retains error/review
+states, and two-original-journal/full-hash closure gates completion. Software
+checks passed all five relationship types and source-selection branches,
+committed recovery and completed-restart refusal, rejecting 26 altered source
+or export cases. This advances aims 2/4 implementation; full production and
+inferential/model/phylogenetic calibration remain pending. The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v19.json)
+verifies 51 pipeline/six original live handles and 467,128 bindings, with 35
+terminal successes and ten preserved historical failures. The [broader inventory](../metadata/project_live_launch_inventory_20261002_v2.json)
+verifies all 66 distinct original handles. All eight aims incomplete; GPU
+prediction paused.
+[Complete comparison integration](full-whole-protein-comparisons-20261002.md).

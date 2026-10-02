@@ -2311,3 +2311,33 @@ CPU/32 GiB/no swap, 4 GiB archives and 100 GiB reserve. Full native results,
 versioned complete comparison integration and calibrated inference remain
 pending; all eight aims incomplete, GPU prediction paused.
 [Full scope, evidence and reproduction](full-whole-protein-optimization-closure-20261002.md).
+
+## Full whole-protein comparison integration queued October 2 UTC
+
+The new immutable export integrates every verified dynamic optimization
+follow-up over all 75,070 frozen numerical inputs/five tree alternatives/
+375,350 fits, preserving all 4,147,200 original comparison links. Original
+passes/errors remain unchanged. Passing closed follow-ups select their fitted
+refinement/recovery; unresolved follow-ups retain explicit review. Follow-up
+errors retain the original audited flagged candidate with both source identities.
+Selected coefficients, covariate scales, scaled/raw conditional GLS covariance,
+variance ratios and residual scale are exported in a separate normalized
+375,350-record parameter file. Conditional covariance is not a calibrated
+interval or propagation of phylogenetic/predictor/sampling/model uncertainty.
+
+An independent selection implementation reconstructs every source summary and
+parameter, validates dimensions, finite values and unit transformations, then
+uses the existing separate likelihood arithmetic/decision reader for every link.
+Different observations, original errors, optimization/support reviews and
+negative nested gains remain explicit. Deterministic parameter compression and
+source-bound tree checkpoints permit identical-plan recovery; completed exports
+refuse restart. Software checks passed all five relationships and selection
+paths, committed recovery, completed-restart refusal and 26 false-source/export
+rejections. Full production requires prior four-journal optimization closure,
+every source/artifact hash and final two-original-journal closure. Prelaunch
+resources: two CPU/32 GiB/no swap/one BLAS thread, 64 GiB output and 100 GiB
+reserve; no GPU/new charges. Full biological/model calibration remains required.
+The older five-candidate comparison version remains separate, and these older
+measurement fits do not establish expanded-atlas coverage. All eight aims remain
+incomplete; GPU prediction remains paused.
+[Full source-selection semantics and reproduction](full-whole-protein-comparisons-20261002.md).

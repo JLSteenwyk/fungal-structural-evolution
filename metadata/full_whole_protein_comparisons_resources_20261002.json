@@ -1,0 +1,31 @@
+{
+  "status": "estimated_before_launch_full_whole_protein_comparison_integration",
+  "checked_utc": "2026-10-02T08:23:20.961446+00:00",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "maximum_output_gib": 64,
+  "planning_hours_per_producer_or_reader": [
+    1,
+    48
+  ],
+  "runtime_uncalibrated": true,
+  "not_completion_eta": true,
+  "dependency_wait_excluded": true,
+  "unique_inputs": 75070,
+  "source_fits": 375350,
+  "parameter_records": 375350,
+  "comparisons": 4147200,
+  "trees": 5,
+  "maximum_followups": 375350,
+  "estimated_raw_comparison_bytes": 33973862400,
+  "estimated_raw_parameter_bytes": 6149734400,
+  "free_disk_gib": 10478.296222686768,
+  "available_memory_gib": 579.7032012939453,
+  "basis": "Entire older frozen75070-input cohort acrossfive trees:375350 scalar summaries/normalized parameter records and4147200 comparisons. 8KiB/raw comparison roughly31.64GiB plus16KiB/raw parameters5.73GiB, level-one gzip/checkpoints/full inherited hash maps;64GiB output cap100GiB reserve. Fullhash/read I/O unmeasured;1-48h active-time planning perproducer orreader notETA; dependencywait separate. SharedCPU memory only; noGPU/newcharges/changes tooriginaljobs."
+}

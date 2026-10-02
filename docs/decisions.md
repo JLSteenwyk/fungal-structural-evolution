@@ -669,3 +669,19 @@ accepted phylogeny or calibrated biological inference. Also retain older launch
 schemas in the live inventory rather than excluding those original jobs or
 rewriting their provenance.
 [Full handoff and live inventory scope](full-whole-protein-optimization-closure-20261002.md).
+
+## October 2 UTC: integrate all optimization follow-ups with explicit selected parameters
+
+Require complete four-journal optimization closure before integrating every
+original flag into a new full comparison version. Preserve the old five-case
+version. Select closed refinement/recovery results while retaining unresolved
+status; on follow-up error retain the original audited flagged fit and record
+the failed source explicitly. Export selected coefficients and conditional
+covariance separately from millions of repeated scalar comparisons; verify
+source selection and unit transformations independently. Conditional covariance
+does not establish calibrated uncertainty. Bind identical-plan checkpoint
+recovery to deterministic parameter hashes and require full readback and both
+original journals before completion. No favorable review/error promotion,
+negative-gain clamping, transfer to expanded measurement cohorts or automatic
+biological/model acceptance.
+[Full workflow, validation and resources](full-whole-protein-comparisons-20261002.md).

@@ -12,10 +12,10 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
-The [latest verified runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v18.json)
-checks 48 pipeline handles and six original scientific/retrieval jobs. A
-[broader original-launch inventory](metadata/project_live_launch_inventory_20261002.json)
-verifies 63 distinct live project jobs, including nine older wrappers with
+The [latest verified runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v19.json)
+checks 51 pipeline handles and six original scientific/retrieval jobs. A
+[broader original-launch inventory](metadata/project_live_launch_inventory_20261002_v2.json)
+verifies 66 distinct live project jobs, including nine older wrappers with
 legacy launch schemas.
 Full sequence-derived geometry, all-order comparison against structural
 correspondences, and linkage to original contexts are queued after alignment
@@ -27,6 +27,13 @@ are also [implemented and queued](docs/full-triad-joint-directions-20261002.md).
 Their [full integration into original contexts and reference pools](docs/full-triad-context-joint-directions-20261002.md)
 is queued after joint-direction closure; all original gates and exclusions remain
 explicit.
+
+The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
+is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It
+incorporates every verified optimization follow-up and saves selected
+coefficients and conditional covariance with their exact source identities.
+Production awaits full optimization closure; numerical reviews and errors stay
+explicit, and inferential calibration remains required.
 
 The analyzed cohort contains **501 fungal entries and 25 outgroups** (526
 entries). The candidate manifest has 527 entries; *Saccharomyces jurei* is

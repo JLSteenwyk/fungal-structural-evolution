@@ -11035,3 +11035,32 @@ does not establish universal coverage or complete the biological project.
   integration, prediction/phylogeny/model adequacy and calibrated inference remain
   required. All eight aims incomplete; GPU prediction paused.
   [Complete handoff, estimates and methods](full-whole-protein-optimization-closure-20261002.md).
+
+- October 2 UTC: resumed after verifying the recent status-monitoring error fix.
+  All seven child-race contracts and a fresh full runtime collection passed;
+  every prior 63 original job handle was live, with no new exceptions in recent
+  unit logs. This was a verified wait/check, not a production restart. Then
+  implemented, froze and queued complete whole-protein comparison integration:
+  all 75,070 inputs/five trees/375,350 summaries and selected parameter records,
+  and 4,147,200 comparisons, including every closed dynamic optimization
+  follow-up. Independent source-selection/parameter transform/arithmetic/status
+  readback preserves original/follow-up error/review states; four-journal source
+  closure and final two-original-journal/full-hash closure gate completion.
+  Software checks passed all five relationship types/refinement/recovery/error
+  paths, deterministic parameter hashes across committed recovery and
+  completed-restart refusal; all 26 invalid source/export cases were rejected.
+  Ten current passed fits separately confirmed parameter-format compatibility,
+  not full-grid acceptance. Resources preceded launch: two CPU/32 GiB/no swap/
+  one BLAS thread, 64 GiB output and 100 GiB reserve, no GPU/new charges. Original
+  producer PID 1810771, reader 1810866 and closure 1810908 await optimization
+  closure PID 246680; existing jobs remain unchanged. The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v19.json)
+  verifies 51 pipeline/six original live jobs, 35 terminal successes, ten
+  preserved historical failures and 467,128 distinct closed bindings. The
+  [broader inventory](../metadata/project_live_launch_inventory_20261002_v2.json)
+  verifies all 66 original live handles, retaining nine legacy schemas. Expanded
+  background progress was 293,184/298,848; subsequent native sequence progress
+  195,712/324,672 and whole-protein manifest 188,365/375,350. Full production,
+  expanded measurement integration, accepted species/reconciled gene framework,
+  predictor/domain/PAE, sampling/dependence and calibrated inference remain
+  required. All eight aims incomplete; GPU prediction paused.
+  [Complete source selection, parameters and reproduction](full-whole-protein-comparisons-20261002.md).

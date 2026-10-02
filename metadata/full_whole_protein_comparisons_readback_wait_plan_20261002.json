@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_whole_protein_comparisons_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_whole_protein_comparisons.py",
+    "--plan",
+    "metadata/full_whole_protein_comparisons_plan_20261002.json",
+    "--output",
+    "results/structural_comparisons/full-whole-protein-comparisons-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/full_whole_protein_comparisons_plan_20261002.json": "61022b9c4dbb6a1df9feba8f2ace6edb5d2313e7cd3eeb8c0e14cb285be25713",
+    "metadata/full_whole_protein_comparisons_launch_20261002.json": "1bd87a3177b272a38ce2fcda4713559e5fd1673c3bb4b09db9fd9e25a1074a35",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}
