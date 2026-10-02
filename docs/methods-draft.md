@@ -2181,3 +2181,30 @@ the joint-mask/joint-core quality cohort contains 5,448 physical triples:
 under the numerical boundary. These are dependent descriptive measurements;
 context/tie gates and biological/statistical calibration remain required.
 [Scope, results and resources](full-triad-contrast-sensitivity-20261002.md).
+
+## Full original-context contrast directions added October 2 UTC
+
+The closed physical contrast-sensitivity results are linked to all 283,409
+unchanged original gene-tree contexts, retaining 214,461 tied references and
+428,922 logical sides. Both native guides and availability/sequence-first
+designs preserve original family/taxon/gene/node/model/version/source identities,
+reference order and parent/distinct-model/three-pair/native gates. All nine
+mask/core scenarios and six screens create 11,580,894 reference cells,
+30,608,172 context/design cells and 153,040,860 repeated five-policy decisions.
+These are dependent descriptions, not independent biological events or tests.
+
+Lexical references remain fixed under each of three source gates. Any-eligible
+native-both policy direction uses every quality-eligible tie and retains
+eligible counts and four-category direction support; it does not stand in for
+complete original-tie agreement. All-tie policies require every original tie
+eligible and a nonempty set. Differing reference direction categories remain
+disagreement, missing/near-zero/excluded states remain distinct, and geometric
+eligibility does not establish directional consistency. Physical extrema and
+1e-9 Å numerical direction classes remain descriptive, not confidence intervals
+or biological effect cutoffs. Independent raw-model SHA/source-gate reconstruction
+and SQL lexical/pool/support/count/denominator checks cover all original records
+and deterministic checkpoints, followed by full hashes and two original journals.
+Software checks passed 24 contexts/52 ties/2,160 decisions, committed checkpoint
+recovery and 20 false-export rejections. Production and independent readback are
+pending; phylogenetic/predictor/domain/PAE and calibrated inference remain required.
+[Complete context semantics and resources](full-triad-context-contrasts-20261002.md).

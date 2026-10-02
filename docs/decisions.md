@@ -601,3 +601,18 @@ every exported field/count/checkpoint. Repeated scenario decisions remain
 dependent. Full source context/tie/native-parent gates, accepted phylogeny,
 prediction/domain/PAE controls and calibrated inference are still required.
 [Complete scope](full-triad-contrast-sensitivity-20261002.md).
+
+## October 2 UTC: separate reference-pool direction from quality eligibility
+
+Preserve all original contexts, lexical references and tied choices when linking
+closed physical contrasts. A physically measured shared triple cannot override
+parent, model-identity, three-pair or native-guide exclusions. Null gated
+directions do not mean zero contrasts. Summarize every eligible native-both tie
+in the any-eligible pool, reporting category disagreement and direction support;
+uniform agreement of an incomplete eligible subset does not establish complete
+original-tie agreement. All-tie pools require all original references eligible
+and nonempty; missing lexical references are never replaced. A quality-passing
+context may have disagreeing reference directions. Retain quality flags and
+direction states separately; do not choose a favorable reference/mask/core/order
+or claim biological polarity/significance from these conditional descriptions.
+[Complete full-context workflow](full-triad-context-contrasts-20261002.md).

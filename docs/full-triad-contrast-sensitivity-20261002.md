@@ -133,3 +133,11 @@ controls, matched backgrounds, domain/PAE/predictor controls, accepted species
 and reconciled gene framework, shared ancestry, missingness and statistical
 calibration remain required. All eight scientific aims remain incomplete;
 GPU protein prediction remains paused.
+
+October 2 UTC: [full original-context direction linkage](full-triad-context-contrasts-20261002.md)
+is now implemented and running on all 283,409 unchanged source contexts and
+214,461 reference ties. It retains original parent/native/model gates and
+lexical choices, distinguishes quality eligibility from direction agreement,
+and keeps disagreeing or incomplete tied-reference pools explicit. Software
+contracts passed checkpoint recovery and rejected 20 false exports; full
+production and independent original-gate/SQL readback remain pending.

@@ -961,3 +961,19 @@ sequence-derived production, context/tie direction integration, matched controls
 prediction/domain/PAE, accepted phylogeny/reconciliation and statistical calibration
 remain required. All eight scientific aims incomplete; GPU prediction paused.
 [Complete physical contrast results](full-triad-contrast-sensitivity-20261002.md).
+
+October 2 UTC: full original-context direction linkage is implemented and running
+for all 283,409 source contexts/214,461 ties. Original gates, lexical reference
+identity and all nine mask/core scenarios remain intact. Any-eligible pools retain
+all eligible reference direction support/disagreement; all-original-tie agreement
+requires complete nonempty eligibility. Quality and direction remain separate.
+All 2,160 software decisions and committed restart recovery passed; 20 false
+exports were rejected. Full production and independent raw-model/source-gate/SQL
+pool/count/checkpoint reconstruction and journal closure remain pending. The
+[fresh runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v13.json)
+verified 40 pipeline/six original live jobs and 466,824 closed bindings. A failed
+foreground checkpoint input-schema observation was preserved and corrected without
+changing scientific jobs. Full sequence-derived control production, actual
+matched backgrounds, predictor/domain/PAE, accepted phylogeny/reconciliation,
+dependence and calibrated inference remain required. All eight aims incomplete;
+GPU prediction paused. [Complete original-context direction scope](full-triad-context-contrasts-20261002.md).

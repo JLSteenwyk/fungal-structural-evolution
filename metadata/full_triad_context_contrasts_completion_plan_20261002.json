@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/full_triad_context_contrasts_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-context-contrasts-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-context-contrasts-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_context_contrasts_pending_independent_readback",
+  "reader_status": "passed_full_triad_context_contrasts_original_gate_sql_readback",
+  "completed_status": "complete_verified_full_triad_context_contrasts",
+  "summary_fields": [
+    "target_contexts",
+    "context_design_records",
+    "reference_tie_records",
+    "duplicate_reference_links",
+    "logical_reference_screen_decisions",
+    "context_screen_states",
+    "context_policy_decisions",
+    "summary_rows",
+    "guide_contexts",
+    "reference_measurement_presence_counts",
+    "measured_triads",
+    "measured_contrast_groups",
+    "direction_counts"
+  ],
+  "launches": [
+    "metadata/full_triad_context_contrasts_launch_20261002.json",
+    "metadata/full_triad_context_contrasts_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_context_contrasts_plan_20261002.json": "2d9c7d1d56dda49b5caa167adf57e378483bca540e94b15f79c513b9b9962622",
+    "metadata/full_triad_context_contrasts_launch_20261002.json": "003040a5d829ddc359604995292585b3a71d29dade38ac71bdedc6c9ec0ad933",
+    "metadata/full_triad_context_contrasts_readback_launch_20261002.json": "3acd2b0d143061ee87ad64b5538d463d0c32f643c356acd4d22c010f09a658be",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_context_contrasts_completed_20261002.json",
+  "scope": "All283409unchanged original gene-tree contexts/566818designs/214461tied references/428922logical sides linked to all27056closed ordered physical triples/243504mask-core contrast sensitivity groups. Both sourceguides and availability/sequence_first choices retain original family/taxon/gene/node/source/model/version/referenceorder/lexicalidentity and parent/distinct-model/all3pair/native-own/native-both gates. Physical presence, gated NULL directions and zero/near-zero measured direction remain distinct. All9mask/core scenarios and6screens;11580894referencecells,30608172contextcells,153040860five-policy decisions,10800disjoint direction-count rows with original denominators. Fixedlexical under3source gates; any-eligible native-both pool compares ALLqualityeligible tied references, reports direction-category disagreement and four-class support/counts; missing/ineligible originalties remain visible and anypool agreement is not complete-alltie agreement. All-ties native-both policy requires everyoriginaltie eligible and nonempty; differentqualifiedreference categories remain disagreement, no favorable reference/model reselection. Qualityeligibility separate from directionconsistency, so passingphysicalgeometry cannot invent a stablesignedcontextcontrast or override source exclusions. Numericaldirection boundary1e-9angstrom inheritedfromclosedcontrastanalysis is not biological effect size; sensitivity states are not confidence intervals. Independent original raw model-role SHA/source gate reconstruction and SQL lexical/allreferencepool/support/count/denominator reconstruction plus exactoriginal context/checkpoint exports, fullhashes and2original completion/resource journals required. Atomic configuration/receipt and exclusive-lock deterministic1000context checkpoints support checked interruptedrestart; completed outputs immutable. Originalcontexts/sharedphysicalproteins/references/guides are dependent, not independent events or tests. Qualifieddirectiondoesnot establish biologicalduplication/asymmetry/evolutionarypolarity, accepted phylogeny, causal acceleration or significance. Fullsequence production/contextdirection controls, actualmatchedbackgrounds, domain/PAE/prediction/phylogeny and statistical calibration remain required. All8aims incomplete; GPU prediction paused; no existingjob changes/restarts/newcharges."
+}

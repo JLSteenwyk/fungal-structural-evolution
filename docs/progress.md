@@ -10873,3 +10873,33 @@ does not establish universal coverage or complete the biological project.
   accepted phylogeny/reconciliation, dependence/sampling and calibrated inference.
   All eight aims remain incomplete; GPU prediction stays paused.
   [Executed results and reproducibility](full-triad-contrast-sensitivity-20261002.md).
+
+- October 2 UTC: implemented and launched complete original-context contrast
+  directions for all 283,409 unchanged contexts/214,461 reference ties/428,922
+  sides. Nine mask/core scenarios and six screens preserve original guide,
+  family/taxon/gene/node/model/version/parent/three-pair/native gates and lexical
+  reference order. Every eligible tied reference contributes to direction-pool
+  support/disagreement; partial eligible subsets cannot stand in for complete
+  original-tie agreement. Quality flags and direction states remain separate.
+  Full planned scope is 11,580,894 reference cells, 30,608,172 context/design
+  cells, 153,040,860 repeated five-policy decisions and 10,800 disjoint count
+  rows. These are dependent descriptions, not events or tests. Software checks
+  passed 24 contexts/52 ties/2,160 decisions and committed checkpoint recovery;
+  all 20 rehashed false exports were rejected. Resources preceded launch:
+  two CPU/32 GiB/no swap/one BLAS thread, 64 GiB output, 100 GiB reserve,
+  no GPU/new charges or existing-job changes. Production and independent raw
+  original-model SHA/source-gate/SQL pool/support/count/denominator/checkpoint
+  reconstruction and two-original-journal/full-hash closure remain pending.
+  The first foreground runtime-check command used a raw software receipt
+  without the required binding map and failed before creating a checkpoint;
+  the [failed observation](../metadata/project_runtime_checkpoint_attempt_20261002_v13.json)
+  is preserved. The corrected collector uses the passed fixture-validation
+  binding locator. The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v13.json)
+  verified all 40 live pipeline/six original scientific-retrieval jobs,
+  32 terminal successes, ten preserved historical pipeline failures and
+  466,824 distinct closed bindings. Background progress was 244,736/298,848
+  at observation. Full sequence/context production, matched backgrounds,
+  prediction/domain/PAE, accepted species/reconciled gene framework and calibrated
+  biological inference remain required. All eight aims remain incomplete;
+  GPU protein prediction stays paused.
+  [Full context direction workflow](full-triad-context-contrasts-20261002.md).

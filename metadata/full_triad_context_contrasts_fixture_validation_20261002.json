@@ -1,0 +1,27 @@
+{
+  "status": "passed_full_triad_context_contrast_software_contracts",
+  "checked_utc": "2026-10-02T06:20:17.480768+00:00",
+  "receipt": "results/software-checks/full-triad-context-contrasts-20261002-v2/receipt.json",
+  "receipt_sha256": "662d78701ae6ba771f8ca634bc594a6da493665bea8c73b583d051b705356c34",
+  "target_contexts": 24,
+  "reference_tie_records": 52,
+  "measured_contrast_groups": 45,
+  "logical_reference_screen_decisions": 468,
+  "context_screen_states": 432,
+  "context_policy_decisions": 2160,
+  "summary_rows": 1800,
+  "checked_reused_chunks": 1,
+  "rejected_false_exports": 20,
+  "source_hashes": {
+    "results/software-checks/full-triad-context-contrasts-20261002-v2/receipt.json": "662d78701ae6ba771f8ca634bc594a6da493665bea8c73b583d051b705356c34",
+    "results/software-checks/full-triad-context-contrasts-20261002-v2/receipt.source_fixture.json": "b12f44f148a7b95ee236e5c6464bce961a07a2a4f46331ebdc89aadb759ae1c5",
+    "scripts/full_triad_context_contrast_sources.py": "c95e58c6eb4d3c3b442c61bd2ee5d547300934b0c3fcfe591d36ff2f19a8b286",
+    "scripts/project_full_triad_context_contrasts.py": "433ff69943de24c6d519f72381e4bd5a7be2b566d8f5078e071961ee7b7fa8c1",
+    "scripts/readback_full_triad_context_contrasts.py": "c8cf708733e7353c6a86fdd3a2cdccf7e947ce13318ad0988e1d4a2d53308601",
+    "scripts/check_full_triad_context_contrasts.py": "62bad55ae30477c79dedd5a2a4b7190b7a4231dead91bd30b60948b921eda4d2",
+    "scripts/launch_full_triad_context_contrasts.py": "0bb7b37fe051ab55f7b424080b32e1cdadbd692504c115a79aed5c1387cab72c",
+    "scripts/check_full_triad_context_geometry_cases.py": "c8fd42587cb735f373b6498c6d2783c27033f2f2fd4300a1d5e7995d0c211568"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full original context/reference-pool software contracts; production source-closure I/O stubbed, not biological evidence."
+}
