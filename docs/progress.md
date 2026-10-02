@@ -18,8 +18,9 @@ The [repair record](../metadata/runtime_checkpoint_child_race_repair_20261002.js
 binds those checks and a successful fresh local full checkpoint: 467,131
 distinct artifact bindings, 40 live pipeline handles, six original live jobs,
 35 verified terminal successes and ten preserved historical pipeline failures.
-The full checkpoint is retained locally pending publication of earlier
-joint-direction launch artifacts. The failed collector observation is preserved
+The repair record predates publication of the joint-direction launch artifacts;
+the newer full checkpoint is linked below. The failed collector observation is
+preserved
 [separately](../metadata/project_runtime_checkpoint_attempt_20261002_v15.json).
 This was a status-collection error; scientific jobs were not stopped, restarted
 or reconfigured. All eight biological aims remain incomplete; GPU prediction
@@ -10940,3 +10941,41 @@ does not establish universal coverage or complete the biological project.
   preserved historical failures and 466,824 closed bindings; background
   progress was 247,808/298,848 at observation. No production restart or changes
   to existing jobs. All eight aims incomplete; GPU prediction paused.
+
+- October 2 UTC: complete original-context contrast readback and provenance
+  closure passed all 283,409 contexts/214,461 ties/153,040,860 policy decisions
+  and 10,800 count rows. The [completion locator](../metadata/full_triad_context_contrasts_completed_20261002.json)
+  binds 465,222 source/artifact hashes and both original completion/resource
+  journals. Full counts and revised PNG/SVG/PDF figures are published; exact
+  values and actual PNG/rendered one-page PDF were reviewed. The first figure
+  had overlapping total/disagreement annotations and is retained; v2 resolves
+  the overlap with unchanged counts. At the joint-mask/core 50-residue/70%
+  screen, native-both fixed lexical availability cohorts qualify 5,365 contexts
+  per guide; profile positive/negative/uncertain counts are 1,951/1,755/1,659,
+  MAFFT 1,950/1,754/1,661. Sequence-first cohorts qualify 3,764/3,765 contexts.
+  Cohorts overlap and eligibility changes with reference design; counts are
+  dependent sensitivity descriptions, not calibrated duplication effects.
+  [Complete results and figures](full-triad-context-contrasts-20261002.md).
+
+- October 2 UTC: implemented, froze and queued the full joint sequence/structural
+  contrast-direction control across all 27,056 ready triples/1,515,136 original
+  raw fits. All 27 mask/method/core scenarios retain deduplicated source/joint
+  envelopes, missing/nonunique states and numerical sign uncertainty; the full
+  envelope has 56 actual fit states. All selected 48-bit order-pair maps must
+  pass intersection; favorable source/method/core/order/diagonal selection
+  cannot promote qualification. Full production scope is 730,512 groups,
+  4,383,072 screening decisions and 1,134 count rows. Software contracts passed
+  14 triples/784 raw fits/378 groups/756 decisions, committed recovery and
+  completed-restart refusal; all 20 false exports were rejected. The three
+  original jobs await complete correspondence-comparison closure. Resources
+  preceded launch: two CPU/32 GiB/no swap/one BLAS thread, 16 GiB output,
+  100 GiB reserve, no GPU or paid resources. The [fresh full checkpoint](../metadata/project_runtime_checkpoint_20261002_v16.json)
+  verifies 467,127 closed bindings, 40 live pipeline/six original jobs,
+  35 terminal successes and ten preserved historical failures; expanded
+  background progress was 263,552/298,848. A subsequent [exact queue check](../metadata/full_triad_joint_directions_queue_checkpoint_20261002.json)
+  verified all 46 original live handles and native sequence progress
+  140,800/324,672. Full joint production and contextual directions, actual
+  matched backgrounds, predictor/domain/PAE, accepted species/reconciled gene
+  framework, dependence/sampling and calibrated inference remain required.
+  All eight aims incomplete; GPU prediction remains paused.
+  [Full joint direction workflow](full-triad-joint-directions-20261002.md).

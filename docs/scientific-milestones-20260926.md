@@ -977,3 +977,31 @@ changing scientific jobs. Full sequence-derived control production, actual
 matched backgrounds, predictor/domain/PAE, accepted phylogeny/reconciliation,
 dependence and calibrated inference remain required. All eight aims incomplete;
 GPU prediction paused. [Complete original-context direction scope](full-triad-context-contrasts-20261002.md).
+
+October 2 UTC: original-context direction production, full independent readback
+and closure are now complete for all 283,409 contexts/214,461 reference ties,
+153,040,860 policy decisions and 10,800 count rows. Both original completion/
+resource journals and 465,222 bindings are verified. The full count table and
+revised standalone PNG/SVG/PDF figure passed exact-value and actual visual
+review; all original gates and incomplete/missing reference dispositions
+remain intact. [Complete results](full-triad-context-contrasts-20261002.md).
+This advances the reference-choice control for aim 4 without establishing
+calibrated asymmetry or completing any aim.
+
+October 2 UTC: the full joint sequence/structural direction control is
+implemented and queued after correspondence-comparison closure. All 27,056
+ready triples/1,515,136 raw fits define 730,512 mask/method/core groups and
+4,383,072 quality-screen decisions. Separate and deduplicated joint envelopes,
+complete 48-bit qualification, raw-fit SQL/order-flag reconstruction, full hashes
+and original journals prevent favorable source/order selection. Software
+contracts passed the complete synthetic 27-scenario grid, recovery and all
+20 false-export rejections; production results remain pending. The
+[fresh runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v16.json)
+verifies 40 pipeline/six original live jobs, 35 terminal successes, ten
+preserved historical failures and 467,127 closed bindings. The
+[exact queue/progress check](../metadata/full_triad_joint_directions_queue_checkpoint_20261002.json)
+records 140,800/324,672 valid native alignments. Original contextual joint
+directions, actual matched backgrounds, prediction/domain/PAE, accepted
+phylogeny/reconciliation and calibrated inference remain required. All eight
+aims incomplete; GPU prediction paused.
+[Full joint-direction scope and reproduction](full-triad-joint-directions-20261002.md).

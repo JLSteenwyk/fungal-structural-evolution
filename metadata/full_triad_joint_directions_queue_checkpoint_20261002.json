@@ -1,0 +1,482 @@
+{
+  "status": "verified_original_live_jobs_and_native_sequence_progress",
+  "checked_utc": "2026-10-02T07:12:04.011924+00:00",
+  "runtime_checkpoint": "metadata/project_runtime_checkpoint_20261002_v16.json",
+  "runtime_checkpoint_sha256": "0471b4a8cae8aa0abefafa5af0e52bcde1052f8276abc407002076fec086e933",
+  "exact_original_live_handles": [
+    {
+      "pid": 4086945,
+      "created": 1790880442.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_alignment_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 4086957,
+      "created": 1790880442.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_assessment_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 4086965,
+      "created": 1790880442.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 4086969,
+      "created": 1790880443.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/expanded_background_measurement_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 848551,
+      "created": 1790885023.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 848559,
+      "created": 1790885024.11,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 848569,
+      "created": 1790885024.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/background_measurement_union_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 895176,
+      "created": 1790886428.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 895249,
+      "created": 1790886431.47,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 895425,
+      "created": 1790886434.43,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_background_coverage_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1013966,
+      "created": 1790892544.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1013999,
+      "created": 1790892546.91,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1014035,
+      "created": 1790892549.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_matched_coverage_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1039199,
+      "created": 1790893777.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1039203,
+      "created": 1790893779.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_readback_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1039303,
+      "created": 1790893782.7,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/full_screened_balance_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1117260,
+      "created": 1790895518.02,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_species_taxon_pmsf.py",
+        "--plan",
+        "metadata/species_taxon_pmsf_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1262642,
+      "created": 1790896747.35,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/species_taxon_pmsf_collection_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1262649,
+      "created": 1790896747.4,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies.py",
+        "--plan",
+        "metadata/species_taxon_pmsf_collection_closure_wait_plan_20261001.json"
+      ]
+    },
+    {
+      "pid": 1519599,
+      "created": 1790911695.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/native_subset_tree_comparison_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1519604,
+      "created": 1790911695.37,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/native_subset_tree_comparison_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1519607,
+      "created": 1790911695.4,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/native_subset_tree_comparison_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1553892,
+      "created": 1790913503.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_triad_sequence_alignments.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1553896,
+      "created": 1790913503.42,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1553900,
+      "created": 1790913503.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245700,
+      "created": 1790915675.0,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_fit_preflight_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245823,
+      "created": 1790915675.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_fit_preflight_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245864,
+      "created": 1790915675.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_fit_preflight_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245898,
+      "created": 1790915675.18,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_geometry_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245935,
+      "created": 1790915675.24,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_geometry_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 3245964,
+      "created": 1790915675.3,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_geometry_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 221097,
+      "created": 1790917171.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 221183,
+      "created": 1790917171.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 221211,
+      "created": 1790917171.92,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1592357,
+      "created": 1790918930.03,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1592412,
+      "created": 1790918930.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1592437,
+      "created": 1790918930.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1447574,
+      "created": 1790923889.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_joint_directions_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1447590,
+      "created": 1790923889.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_joint_directions_readback_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 1447609,
+      "created": 1790923890.03,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_joint_directions_closure_wait_plan_20261002.json"
+      ]
+    },
+    {
+      "pid": 433565,
+      "created": 1790709562.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_whole_protein_ml.py",
+        "--plan",
+        "metadata/whole_protein_ml_plan_20260929.json"
+      ]
+    },
+    {
+      "pid": 434272,
+      "created": 1790709590.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/audit_whole_protein_ml_outputs.py",
+        "--plan",
+        "metadata/whole_protein_ml_output_audit_plan_20260929.json"
+      ]
+    },
+    {
+      "pid": 338483,
+      "created": 1790533714.57,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_polynomial_ml.py",
+        "--plan",
+        "metadata/full_polynomial_ml_plan_20260927.json"
+      ]
+    },
+    {
+      "pid": 771240,
+      "created": 1790566377.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ]
+    },
+    {
+      "pid": 863281,
+      "created": 1790353565.67,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_structure_retrieval.py",
+        "--plan",
+        "metadata/recovery_20260925_structure_retrieval_plan.json"
+      ]
+    },
+    {
+      "pid": 2683449,
+      "created": 1790512421.6,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_hybrid_excluded_species_guides.py",
+        "--plan",
+        "metadata/hybrid_excluded_species_guide_plan_20260927.json"
+      ]
+    }
+  ],
+  "live_pipeline_handles": 40,
+  "original_live_jobs": 6,
+  "native_sequence_progress": {
+    "path": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/state.json",
+    "status": "running_full_triad_sequence_alignment_dispositions",
+    "completed": 140800,
+    "total": 324672,
+    "counts": {
+      "mafft_auto:valid_sequence_alignment": 70402,
+      "famsa_default:valid_sequence_alignment": 70398
+    },
+    "plan_sha256": "8c2241dde96059e740d835c707137061057f31c57d2592ed8d196d6cb7be61f8"
+  },
+  "scope": "Fresh exact PID/create/CMD checks and current native checkpoint; running/queued jobs are not terminal scientific results. No existing job changes/restarts, GPU prediction paused, all eight aims incomplete."
+}

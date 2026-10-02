@@ -616,3 +616,22 @@ context may have disagreeing reference directions. Retain quality flags and
 direction states separately; do not choose a favorable reference/mask/core/order
 or claim biological polarity/significance from these conditional descriptions.
 [Complete full-context workflow](full-triad-context-contrasts-20261002.md).
+
+## October 2 UTC: require joint direction across correspondence sources
+
+Retain separate sequence, structural and joint signed contrast envelopes across
+every selected mask, sequence method, core and input order. Deduplicate actual
+geometry keys rather than repeating structural fits for each aligner. The full
+joint envelope has 56 actual fits; source-category agreement involving sign
+uncertainty is not stable sign or effect concordance. Missing/nonunique grids
+cannot become complete. Require intersection of all 48 original order-pair
+screen bits across every selected leaf; complementary failures and favorable
+mask/method diagonals must not promote qualification. Keep numerical direction
+boundaries distinct from biological effect sizes and uncertainty intervals.
+Independent original raw-fit SQL extrema/grid/status reconstruction and separate
+Cartesian order-flag/complement-union checks precede full hashes and both original
+journals. Sequence-derived mappings still use predicted coordinates and do not
+remove predictor circularity. Original parent/native/model/reference/tie gates
+remain mandatory for subsequent contextual interpretation. Full production is
+queued; all eight scientific aims remain incomplete.
+[Complete joint-direction workflow](full-triad-joint-directions-20261002.md).

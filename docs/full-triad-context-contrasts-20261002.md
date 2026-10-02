@@ -4,8 +4,9 @@ The full direction-linkage producer finished across **283,409 unchanged original
 gene-tree contexts, 566,818 design records, 214,461 tied references and 428,922
 logical sides**. It uses all **27,056 measured ordered physical triples and
 243,504 closed contrast-sensitivity groups**. All 153,040,860 policy decisions
-and 10,800 count rows were produced. Independent full readback and journal
-closure remain pending; production outputs are provisional until those pass.
+and 10,800 count rows passed independent full readback. Final closure verifies
+465,222 source/artifact bindings and both original process completion/resource
+journals. The complete table and revised PNG/SVG/PDF figure are published below.
 
 This stage addresses reference-choice uncertainty in the structural comparisons.
 It does not establish a duplication effect, evolutionary polarity or statistical
@@ -70,7 +71,7 @@ separate states.
 context can pass all geometric screens while its references disagree. No model,
 reference, mask, core or alignment order is reselected to obtain a desired sign.
 
-| Complete producer output unit, awaiting independent verification | Count |
+| Independently verified output unit | Count |
 | --- | ---: |
 | Original contexts | 283,409 |
 | Reference × scenario × screen cells | 11,580,894 |
@@ -82,6 +83,50 @@ Summary partitions cover all ten direction/exclusion states and preserve source
 context, parent-eligible, lexical-gene and lexical-model denominators. These are
 dependent descriptions of overlapping cohorts; they are not independent
 evolutionary events or multiple-testing hypotheses.
+
+## Verified context results
+
+At ≥50 common residues and ≥70% original protein coverage, requiring both
+confidence masks, both core definitions and native membership in both guides,
+the direction counts are:
+
+| Guide | Design | Reference policy | Positive | Negative | Sign uncertain | Reference disagreement | Quality-qualified total |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Profile | Availability | Fixed lexical | 1,951 | 1,755 | 1,659 | 0 | 5,365 |
+| Profile | Availability | Any eligible ties | 1,952 | 1,755 | 1,660 | 2 | 5,369 |
+| Profile | Availability | All original ties | 1,950 | 1,753 | 1,659 | 2 | 5,364 |
+| Profile | Sequence first | Fixed lexical | 1,401 | 1,238 | 1,125 | 0 | 3,764 |
+| Profile | Sequence first | Any eligible ties | 1,402 | 1,239 | 1,127 | 2 | 3,770 |
+| Profile | Sequence first | All original ties | 1,399 | 1,233 | 1,123 | 2 | 3,757 |
+| MAFFT | Availability | Fixed lexical | 1,950 | 1,754 | 1,661 | 0 | 5,365 |
+| MAFFT | Availability | Any eligible ties | 1,951 | 1,754 | 1,662 | 2 | 5,369 |
+| MAFFT | Availability | All original ties | 1,949 | 1,752 | 1,661 | 2 | 5,364 |
+| MAFFT | Sequence first | Fixed lexical | 1,400 | 1,238 | 1,127 | 0 | 3,765 |
+| MAFFT | Sequence first | Any eligible ties | 1,401 | 1,239 | 1,129 | 2 | 3,771 |
+| MAFFT | Sequence first | All original ties | 1,398 | 1,233 | 1,125 | 2 | 3,758 |
+
+The within-numerical-tolerance count is zero in these twelve cohorts. Positive
+means A is farther from the reference than B under every selected geometry
+setting; negative means the reverse. Sign uncertainty retains variation across
+the selected orders, masks and cores. A reference disagreement can include a
+positive reference and a sign-uncertain reference; it need not imply opposite
+signs. The overlapping guide/design/policy cohorts must not be summed as
+independent biological events. Sequence-first availability and gate attrition
+also change the eligible cohort, so differences between totals do not estimate
+the effect of reference choice on a fixed population.
+
+![Verified original-context directions](figures/full_triad_context_contrasts_20261002_v2.png)
+
+- [Complete 10,800-row table](tables/full_triad_context_contrast_counts_20261002_v2.tsv)
+- [SVG](figures/full_triad_context_contrasts_20261002_v2.svg) and [PDF](figures/full_triad_context_contrasts_20261002_v2.pdf)
+- [Final completion evidence](../metadata/full_triad_context_contrasts_completed_20261002.json)
+- [Count/publication checks](../metadata/full_triad_context_contrasts_published_20261002_v2.json)
+- [Actual PNG and rendered PDF review](../metadata/full_triad_context_contrasts_figure_review_20261002_v2.json)
+
+The first figure's total and disagreement labels overlapped during visual
+review. Its files and publication record are retained. The v2 publisher uses
+separate annotation offsets; all counts are unchanged and the revised PNG and
+rendered one-page PDF were visually inspected.
 
 ## Verification, restart and resources
 
@@ -125,13 +170,16 @@ new paid resources or changes to existing jobs.
 - [Independent original-gate/SQL reader](../scripts/readback_full_triad_context_contrasts.py)
 - [Software contracts](../scripts/check_full_triad_context_contrasts.py)
 - [Launcher](../scripts/launch_full_triad_context_contrasts.py)
+- [Revised table/figure publisher](../scripts/publish_full_triad_context_contrasts_v2.py)
 
 Large outputs remain outside Git in
 `results/structural_comparisons/full-triad-context-contrasts-20261002-v1/`.
-The future completion locator is
+The completion locator is
 `metadata/full_triad_context_contrasts_completed_20261002.json`.
 
 Full sequence-derived production and corresponding contextual directions,
 actual matched backgrounds, prediction/domain/PAE controls, accepted species
 and reconciled gene framework, family/taxon dependence, missingness, sampling
 and calibrated inference remain required. GPU protein prediction remains paused.
+The [joint sequence/structural direction workflow](full-triad-joint-directions-20261002.md)
+is implemented and queued; it has not yet produced full production results.

@@ -1,0 +1,28 @@
+{
+  "status": "passed_full_triad_joint_direction_software_contracts",
+  "checked_utc": "2026-10-02T06:51:30.282812+00:00",
+  "receipt": "results/software-checks/full-triad-joint-directions-20261002-v1/receipt.json",
+  "receipt_sha256": "d7e0f0b2409908b0fd6890055d0fa1566276c612c2da931b6ad321fe1f8021f6",
+  "measured_triads": 14,
+  "sequence_fit_rows": 336,
+  "structural_fit_rows": 448,
+  "joint_direction_groups": 378,
+  "screen_decisions": 756,
+  "summary_rows": 378,
+  "checked_reused_chunks": 1,
+  "completed_restart_refused": true,
+  "raw_fit_input_order": "reversed",
+  "rejected_false_exports": 20,
+  "source_hashes": {
+    "results/software-checks/full-triad-joint-directions-20261002-v1/receipt.json": "d7e0f0b2409908b0fd6890055d0fa1566276c612c2da931b6ad321fe1f8021f6",
+    "scripts/full_triad_joint_direction_sources.py": "452bcfddb8f9e3666822f7d1148f67b692e9fea85c7183f4df13ab5fc3da070f",
+    "scripts/summarize_full_triad_joint_directions.py": "e0488f838528de86e633af6cf65431e33f22491f2f3e61c234b295a6979f1103",
+    "scripts/readback_full_triad_joint_directions.py": "bb63ca86c27f9de7ac188b89749d530b2bd587ac1a37ec996bf3670a9691b780",
+    "scripts/check_full_triad_joint_directions.py": "5b3d5b18eb040110f105e23524ed5aefa2aa7f8c599181f9c6fe6206c513a66c",
+    "scripts/launch_full_triad_joint_directions.py": "dae1ede29818ea731b9d2a1d4ec40a65ebaa4b308787d54050645b6fb4a0bda9",
+    "scripts/compare_full_triad_correspondence.py": "1a9c1f485ad39ff80b76f885eb5fdf8fee1e803bfff07c67f5f8c06ef6540d9a",
+    "scripts/summarize_full_triad_order_robustness.py": "2f97377694579c5030f5532cca1fba98c7aa5f4f60157b96721657da2371779c"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full27-scenario joint direction software grid; production source closure I/O stubbed, not biological evidence."
+}

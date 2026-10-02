@@ -2205,6 +2205,51 @@ or biological effect cutoffs. Independent raw-model SHA/source-gate reconstructi
 and SQL lexical/pool/support/count/denominator checks cover all original records
 and deterministic checkpoints, followed by full hashes and two original journals.
 Software checks passed 24 contexts/52 ties/2,160 decisions, committed checkpoint
-recovery and 20 false-export rejections. Production and independent readback are
-pending; phylogenetic/predictor/domain/PAE and calibrated inference remain required.
+recovery and 20 false-export rejections. Full production and independent readback
+passed all 153,040,860 policy decisions and 10,800 count rows; final closure
+verifies 465,222 bindings and both original completion/resource journals.
+At ≥50 residues/≥70% original coverage, both masks/cores and native-both fixed
+lexical references qualify 5,365 contexts per availability guide and 3,764/3,765
+sequence-first contexts. Their respective positive/negative/sign-uncertain
+counts are profile availability 1,951/1,755/1,659, MAFFT availability
+1,950/1,754/1,661, profile sequence first 1,401/1,238/1,125, and MAFFT sequence
+first 1,400/1,238/1,127. Complete any/all-tie counts and full exclusions are
+published separately. Overlapping conditional cohorts cannot be pooled as
+independent events. Figures passed exact-value checks and actual PNG/rendered
+PDF review after resolving annotation overlap. Phylogenetic/predictor/domain/PAE
+and calibrated inference remain required.
 [Complete context semantics and resources](full-triad-context-contrasts-20261002.md).
+
+## Joint sequence/structural contrast directions queued October 2 UTC
+
+The complete physical correspondence control combines all 649,344
+sequence-derived and 865,792 structure-derived raw fit dispositions across
+27,056 original source-ready ordered triples. All 27 mask/method/core scenarios
+retain separate source and joint signed AR-minus-BR RMSD extrema, expected and
+available orders, uniqueness, strict-zero and 1e-9 Å numerical direction states.
+Selected source geometry keys are deduplicated: the most inclusive joint
+envelope contains 24 sequence plus 32 structural fits, not 384 repeated paired
+comparisons. Matching source direction categories can include matching sign
+uncertainty and do not establish stable sign or effect concordance.
+
+Each screen intersects all selected original 48-bit six-by-eight order-pair
+maps across masks, methods and cores; every bit must pass with inherited
+three-pair exclusions and original protein-length denominators. No favorable
+method/core/order or mask/method diagonal can create qualification. Full scope
+is 730,512 joint groups, 4,383,072 dependent six-screen decisions and 1,134
+disjoint qualified-direction count rows. Raw-fit SQLite reconstruction
+independently checks complete grids/model roles/statuses/extrema and separately
+derives Cartesian order-pair flags and complement-union qualification; all
+export fields/types, counts, denominators and checkpoints require agreement.
+Full hashes and both original journals gate completion.
+
+Software contracts passed 14 triples/784 raw fits/378 joint groups/756 decisions,
+committed two-triple recovery and completed-restart refusal; all 20 rehashed
+false exports were rejected. Production source-closure I/O is stubbed only in
+fixtures. Two CPU/32 GiB/no swap/one BLAS thread, 16 GiB output and 100 GiB
+reserve were estimated before the three original jobs were queued. Production
+awaits full correspondence-comparison closure. Sequence mappings use the same
+predicted coordinates; predictor circularity, original contextual parent/native/
+reference/tie gates, matched backgrounds, phylogeny and calibrated inference
+remain required. All eight aims remain incomplete; GPU prediction stays paused.
+[Complete joint-direction workflow](full-triad-joint-directions-20261002.md).

@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/full_triad_joint_directions_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-joint-directions-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-joint-directions-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_joint_directions_pending_independent_readback",
+  "reader_status": "passed_full_triad_joint_directions_raw_fit_sql_readback",
+  "completed_status": "complete_verified_full_triad_joint_directions",
+  "summary_fields": [
+    "measured_triads",
+    "sequence_fit_rows",
+    "structural_fit_rows",
+    "source_sequence_groups",
+    "source_structural_groups",
+    "source_comparison_groups",
+    "joint_direction_groups",
+    "screen_decisions",
+    "summary_rows",
+    "joint_direction_counts",
+    "qualified_direction_counts",
+    "source_category_relation_counts",
+    "maximum_joint_contrast_span"
+  ],
+  "launches": [
+    "metadata/full_triad_joint_directions_launch_20261002.json",
+    "metadata/full_triad_joint_directions_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_joint_directions_plan_20261002.json": "42ac6435824ce0fbc95b5b94939a29b878651407b54c3c3a71f3c4c1f368ad5f",
+    "metadata/full_triad_joint_directions_launch_20261002.json": "d1a2dbd91959d89c8d4207a372390afbd5ee6a859abd4b812cfea656ed67f3fa",
+    "metadata/full_triad_joint_directions_readback_launch_20261002.json": "7df2f0fd547462ecfd77fb4768e0ba20dcc36fb95d564d3190825166618ca041",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_joint_directions_completed_20261002.json",
+  "scope": "All27056ready ordered physical triples/649344closed sequence-derived same-residue fits/865792closed structure-derived fits. All27full/plddt70/both-mask xMAFFT/FAMSA/both-method xreference_common/cycle_consistent/both-core scenarios:730512groups/4383072six-screen decisions/1134disjoint qualifieddirection counts. Deduplicate selected source geometry keys so full joint envelope has24sequence+32structural=56actual fit states, not repeated384paired measurements. Preserve both separate source envelopes and joint signed RMSD(A,reference)-RMSD(B,reference) extrema/available/expected/unique states, exact-zero and1e-9angstrom numerical direction categories, and sourcecategory relation. Matching uncertain categories doesnot establish stable sign, concordance of effects or biological agreement. Missing/nonunique states explicit; numerical tolerance not effect size or confidence interval. All selected48order-pair bitmap intersections required; inherited three-pair exclusions and original proteinlength coverage persist; complementary failures/favorable source/mask/method/core/order/diagonal cannot create qualification. Independent complete1515136raw fit/model-role/status/grid SQL extrema/count/direction/source relation and separate Cartesian source flags/complement-union bitmap reconstruction required for everyexport/checkpoint/summary, followed by fullhashes and2originaljournals. Atomic configuration/receipt, exclusive lock and deterministic100-triple checkpoints support checked interruptedrestart; completedoutput immutable. Full source dependency closure retains all31235originaltriples/283409contexts/214461ties/428922sides including excluded/unscheduled originals. Original source parent/native/model/reference/tie gates must still govern subsequent contextual interpretation. Sequence-derived correspondence uses same predicted coordinates; doesnot remove predictor circularity or demonstrate biological duplication/asymmetry/evolutionary rate/accepted homology/phylogeny/significance. Actual matchedbackgrounds, fulljointcontextdirections, domain/PAE/predictor/phylogeny/dependence/sampling/statistical calibration remain required. All8aims incomplete; GPU inference paused; noexistingjobchanges/restarts/newcharges."
+}
