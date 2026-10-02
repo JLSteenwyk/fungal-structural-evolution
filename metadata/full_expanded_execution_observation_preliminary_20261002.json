@@ -1,0 +1,15 @@
+{
+  "status": "stopped_preliminary_read_only_observation",
+  "checked_utc": "2026-10-02T18:06:31.798001+00:00",
+  "pid": 2301120,
+  "created": 1790964339.07,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_expanded_measurement_execution_v3.py",
+    "--output",
+    "metadata/full_expanded_measurement_execution_checkpoint_20261002_v3.json"
+  ],
+  "reason": "Preliminary v3 monitor used a prospective join-completion status label different from the actual immutable join completion plan. The join completion locator is not present; no completion was misclassified. Preserve the preliminary source and stop this hashing-only observation. V4 uses exact complete_verified_full_expanded_matched_case_measurements status from the original completion plan. No scientific job or plan is modified.",
+  "replacement_script": "scripts/record_expanded_measurement_execution_v4.py",
+  "scientific_jobs_changed": false
+}

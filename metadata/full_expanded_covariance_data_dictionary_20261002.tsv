@@ -1,0 +1,32 @@
+artifact	field	type	unit	definition
+case_covariance_index.tsv.gz	case_id	string	identity	Foreign key to the full closed logical case index; gene contexts sharing predictions remain distinct.
+case_covariance_index.tsv.gz	physical_case_id	string	identity	Ordered target/control model-pair reuse descriptor; not an independent gene context.
+case_covariance_index.tsv.gz	target_id	string	identity	Original target gene-tree node identifier.
+case_covariance_index.tsv.gz	background_id	string	identity	Original selected background node identifier.
+case_covariance_index.tsv.gz	guide	string	category	Original profile or mafft guide; overlapping guide cases remain linked by shared entities.
+case_covariance_index.tsv.gz	target_family	string	identity	Original target family.
+case_covariance_index.tsv.gz	background_family	string	identity	Original background family.
+case_covariance_index.tsv.gz	family_component	string	identity	SHA256 of sorted families connected by shared endpoint entities across guides; prospective blocking group.
+case_covariance_index.tsv.gz	species_pattern_id	string	identity	SHA256 of sorted nonzero taxon-label/integer twice-weight pairs; zero pattern retained.
+case_covariance_index.tsv.gz	species_pattern_row	integer	zero-based index	Exact row in the complete pattern design and each tree factor.
+case_covariance_index.tsv.gz	focal_index	integer	zero-based index	Focal taxon column in taxa.json.
+case_covariance_index.tsv.gz	background_index_a	integer	zero-based index	Original background endpoint A column in taxa.json.
+case_covariance_index.tsv.gz	background_index_b	integer	zero-based index	Original background endpoint B column in taxa.json.
+case_covariance_index.tsv.gz	selection_records	integer	count	Complete fixed-selection reuse count linked through case_id; not independent N.
+case_covariance_index.tsv.gz	target_same_model	integer	Boolean 0/1	Target endpoints use the same model; retained, no invented structural zero.
+case_covariance_index.tsv.gz	background_same_model	integer	Boolean 0/1	Background endpoints use the same model; retained, no invented structural zero.
+entity_incidence.tsv.gz	case_id	string	identity	Foreign key to the full closed logical case index; gene contexts sharing predictions remain distinct.
+entity_incidence.tsv.gz	entity_kind	string	category	target_node/background_node/model_pair/family/gene/model.
+entity_incidence.tsv.gz	entity_id	string	identity	SHA256 of kind and exact entity token; signed/unsigned loadings use the same entity identity.
+entity_incidence.tsv.gz	entity_value	JSON array	identity	Original node/pair/family/gene token; model token is [model_id, integer version, coordinate SHA256].
+entity_incidence.tsv.gz	side	string	category	Original target/background role.
+entity_incidence.tsv.gz	endpoint	string	category	a/b for gene and model occurrences; intentionally blank for node/pair/family.
+entity_incidence.tsv.gz	signed_loading	float	dimensionless	Target +1 or +0.5 per endpoint, background -1 or -0.5; prospective signed contrast incidence.
+entity_incidence.tsv.gz	unsigned_loading	float	dimensionless	Magnitude 1 or 0.5; prospective reuse incidence without signed cancellation.
+patterns.tsv	species_pattern_id	string	identity	SHA256 of sorted nonzero taxon-label/integer twice-weight pairs; zero pattern retained.
+patterns.tsv	row_index	integer	zero-based index	Canonical pattern row; ascending pattern ID order.
+patterns.tsv	taxa	JSON array	taxon labels	Sorted nonzero-weight taxa in this pattern; [] for the exactly zero pattern.
+patterns.tsv	twice_weights	JSON integer array	twice dimensionless weight	Corresponding integer coefficients; sums to zero, [] for zero pattern.
+family_components.tsv	family	string	identity	Original family identifier, shared across guide labels.
+family_components.tsv	family_component	string	identity	SHA256 of sorted families connected by shared endpoint entities across guides; prospective blocking group.
+family_components.tsv	component_families	integer	count	Number of distinct original families in this shared-entity component.

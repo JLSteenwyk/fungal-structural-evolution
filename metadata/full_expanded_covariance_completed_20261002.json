@@ -1,0 +1,40 @@
+{
+  "status": "complete_verified_full_expanded_covariance",
+  "logical_cases": 75188,
+  "physical_cases": 37600,
+  "selected_records": 4250692,
+  "species_columns": 526,
+  "patterns": 9812,
+  "zero_patterns": 0,
+  "rank": 301,
+  "families": 3413,
+  "family_components": 3330,
+  "entity_occurrences": 1052632,
+  "unique_entities": {
+    "target_node": 53042,
+    "model_pair": 48874,
+    "family": 3413,
+    "gene": 97750,
+    "model": 93625,
+    "background_node": 44699
+  },
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "covariance_entries_per_tree": 96275344,
+  "full_hash_archive": "results/phylogeny/full-expanded-covariance-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "e8bc84920975b338735f775fa0bf577c57b987d95389ccfd12ba63509ceda2a9",
+  "bound_source_hashes": 1830546,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-expanded-covariance-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "e2c13dd78ce687d30dd180100e4ba52eeaaf3f335230a535b0e1af07185cc70d",
+  "independent_readback": "results/phylogeny/full-expanded-covariance-20261002-v1/readback.json",
+  "independent_readback_sha256": "780dab69bb6a80336455207cc508b17c2873a247f84fb54ed9aae553d7d2d0fe",
+  "completion_plan_sha256": "374e063ebadcc437240ec96c45a2afdaa50b9d6747ac636ca2dfa4b0a0f27e25",
+  "scientific_eligibility": false,
+  "scope": "Complete expanded working covariance handoff for all75,188logicalcases and4,250,692selection memberships. Retain14separate endpoint/entity occurrences percase:target/backgroundnodes,modelpairs,families,andallfourgenes/fourversionedmodel+coordinateidentities. Signed contrast and unsigned reuse loadings remain alternatives, not fitted covariance assumptions. Same-model aliasedgenes remain distinct, and original rows/quality exclusions remain linked through case_id to closed selection/measurement handoffs. Family components connect every shared entity across both guides, built independently by union-find and sparse connected-components. Newzero-sum additive taxonpatterns are computed for the full expandedcohort; never assume older4,568pattern/rank242factors cover these9,812patterns. Numerically estimable SVD row-space factors forfivecurrent workingkernelalternatives are fully checked against kernel algebra and independently parsed original treeedges; no jitter, eigenvalue clipping or fabricated factor for missingtaxa. All526entrytips retained; substitutionunits are not dateddurations. Producer/reader andtwoactualoriginaljournal/full-hashclosure gatefinalhandoff. No variancefit, calibratedeffect, causalexchangeability, complete shared-ancestry correction or acceptance ofworkingtrees/reconciliation is implied. Allmask/order/screen/policy/scenario sensitivities staylinkedwithout multiplying effectiveN; newexpandeddesigns,fits,dependence/ascertainment/prediction/domain/PAE controls andall eightscientificaims remainunfinished."
+}

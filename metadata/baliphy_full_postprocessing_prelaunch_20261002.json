@@ -1,0 +1,81 @@
+{
+  "status": "full_postprocessing_original_terminal_journals_verified_before_closure",
+  "checked_utc": "2026-10-02T18:38:21.799584+00:00",
+  "original_journals": [
+    {
+      "launch": "metadata/baliphy_full_anchored_states_launch_20260928_v2.json",
+      "pid": 841463,
+      "created": 1790572064.21,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_ancestral_state_traces_v2.py",
+        "--plan",
+        "metadata/baliphy_full_anchored_states_plan_20260928_v2.json"
+      ],
+      "launch_sha256": "232c226fd8d7b9b4d67650577bd9138f6bc34846dc72207f4e7a4cc25223b611",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "7e6c27d77facd6ab14907962e9e8287f71ed85c7134bc3342d0c754d8e50fb80",
+      "captured_process_messages": 1617,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790964600631186",
+          "CPU_USAGE_NSEC": "21585225693000",
+          "MEMORY_PEAK": "2006347776",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_candidate_length_diagnostic_launch_20260927.json",
+      "pid": 783288,
+      "created": 1790567318.4,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_ancestral_length_diagnostics.py",
+        "--plan",
+        "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json"
+      ],
+      "launch_sha256": "3bac2b44286476e6271810b9f957fd1f2bc6c0f24a91812266046a7eb77b8689",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "05712b34b42e675417ce1190404e8df905da1f10f19d10f552dc31ed5be1fd91",
+      "captured_process_messages": 402,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790964159510318",
+          "CPU_USAGE_NSEC": "1807072796000",
+          "MEMORY_PEAK": "30896128",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/ancestral_categorical_queue_launch_20260928.json",
+      "pid": 1210229,
+      "created": 1790611279.29,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_ancestral_categorical_diagnostics.py",
+        "--plan",
+        "metadata/ancestral_categorical_queue_plan_20260928.json"
+      ],
+      "launch_sha256": "d7697d97dd318715b309da62f1f69ee8d0a21d1b6b1175edb284dcb9fdf0aa4d",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "49186723661b74b3efbdf2f9dbe2d68976bf5b243a2609747b24911b12289e13",
+      "captured_process_messages": 402,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790965227291689",
+          "CPU_USAGE_NSEC": "12648395244000",
+          "MEMORY_PEAK": "42283008",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completion_plan": "metadata/baliphy_full_postprocessing_completion_plan_20261002.json",
+  "completion_plan_sha256": "c4dfee165997045bd569c4c8150fe2e590f4183bf7a4012b30ee386f2d903395",
+  "scientific_eligibility": false
+}

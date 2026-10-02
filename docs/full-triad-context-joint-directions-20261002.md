@@ -8,7 +8,11 @@ Full independent readback and [provenance closure](../metadata/full_triad_contex
 have passed all 459,122,580 policy decisions and 32,400 count rows, with
 493,914 source/artifact bindings and both original completion/resource journals.
 The complete proof was reverified in the [execution checkpoint](../metadata/full_expanded_measurement_execution_checkpoint_20261002.json).
-Full count publication and figure review remain subsequent work. This extends the
+The [complete count table](tables/full_triad_context_joint_direction_counts_20261002.tsv)
+and [PNG](figures/full_triad_context_joint_directions_20261002.png),
+[SVG](figures/full_triad_context_joint_directions_20261002.svg) and
+[PDF](figures/full_triad_context_joint_directions_20261002.pdf) are published,
+with full count/partition/SVG-value checks and actual PNG/rendered-PDF review. This extends the
 [completed structural-context directions](full-triad-context-contrasts-20261002.md)
 to the [joint sequence/structural physical control](full-triad-joint-directions-20261002.md).
 
@@ -167,3 +171,27 @@ original-source/SQL readback and final closure remain live; there is no final
 completion claim for this context stage. The upstream [joint physical directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc)
 are now fully closed and published. This updates the earlier queued status.
 All original gates remain intact, all eight aims incomplete, GPU prediction paused.
+
+
+## Complete published counts and figure, October 2
+
+All 32,400 disjoint summary rows are published, covering every guide/design/
+mask/method/core/screen/reference-policy/state combination and source denominator.
+The figure includes all four guide/design cohorts, three sequence-method
+alternatives and three native-both reference policies: 12 panels and 36 bars.
+It fixes both masks, both cores and ≥50 residues/≥70% original protein coverage.
+Publication checks every table value against complete producer, independent
+reader and closure counts, then checks every displayed SVG value and count
+metadata. PNG and rendered PDF were inspected for labels, clipping and counts.
+[Publication evidence](../metadata/full_triad_context_joint_direction_publication_20261002.json),
+[visual review](../metadata/full_triad_context_joint_direction_visual_review_20261002.json).
+
+For all-original ties and both sequence methods, the availability cohort has
+5,318 qualified contexts per guide: 2,675/2,676 (50.30%/50.32%) are sign uncertain.
+The sequence-first cohort has 3,724/3,725 qualified contexts, with 1,814/1,815
+(48.71%/48.72%) sign uncertain. These overlapping cohorts retain original gates
+and tied-reference exclusions. Disagreement among eligible ties is separately
+reported; agreement in an incomplete eligible pool is not complete original-tie
+agreement. These counts describe correspondence/order sensitivity, not
+confidence intervals, evolutionary polarity, calibrated duplication effects
+or independent biological sample sizes.

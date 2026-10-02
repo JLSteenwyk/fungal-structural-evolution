@@ -1,0 +1,9 @@
+{
+  "status": "foreground_execution_snapshot_requires_ancestral_postprocessing_audits",
+  "checked_utc": "2026-10-02T18:35:01.962965+00:00",
+  "original_failed_observer": "scripts/record_expanded_measurement_execution_v5.py",
+  "reason": "The full anchored-state, categorical and candidate-length controllers became terminal after the native first horizon completed. V5 required stage-specific full artifact audit before recording these newly terminal handles; the first unsupported handle was ancestral_categorical_queue_launch_20260928.json.",
+  "next_observer": "scripts/record_expanded_measurement_execution_v6.py",
+  "scientific_acceptance_changed": false,
+  "scope": "V6 distinguishes verified original invocation success from scientific artifact acceptance. Newly terminal unknown stages remain explicitly unaccepted and require full scope audits; it does not weaken any producer/reader/full-source closure gate."
+}

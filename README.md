@@ -45,12 +45,32 @@ is implemented. Its full case producer and independent reader passed all
 4,250,692 selections, identifying 75,188 logical cases across 3,331 families
 and 199 focal taxa per guide; [final provenance closure](metadata/full_matching_case_index_completed_20261002.json)
 passed 1,830,493 hashes and both original journals.
-The corrected full directed catalog producer and independent reader passed all
-1,123,936 states; final provenance closure is running. The complete join is queued for 150,376 case/mask records with all four target–control orders,
+The corrected directed catalog has [completed full provenance closure](metadata/full_expanded_measurement_catalog_v3_completed_20261002.json)
+for all 1,123,936 states, with 2,369,743 bound hashes and both original journals.
+The full join has [completed independent Decimal readback and closure](metadata/full_expanded_case_measurements_v2_completed_20261002.json)
+for all 150,376 case/mask records, with 2,369,783 bound hashes and both original
+journals, retaining all four target–control orders,
 explicit failures, original sequence/gene identities and quality gates.
 This prepares expanded model inputs; calibrated phylogenetic effects remain
 unfinished. Two catalog integration failures are preserved in the workflow
 record, with corrected immutable versions launched.
+
+The [expanded dependence and species covariance workflow](docs/full-expanded-covariance-20261002.md)
+has [completed independent readback and closure](metadata/full_expanded_covariance_completed_20261002.json)
+for all 75,188 cases: 1,052,632 endpoint/entity occurrences and 9,812 species
+contrast patterns across 3,413 families and 3,330 shared-entity components.
+The new rank-301 factors passed all 481,376,720 ordered covariance comparisons
+against original branches across five working trees. Closure checked 1,830,546
+bindings and both original journals. Expanded model fitting and calibration
+remain pending. The older factors do not cover this expanded cohort.
+
+The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
+is closed: 1,617 of 1,620 chains passed output integrity, with three preserved
+memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet
+passes every scalar mixing check at either burn-in cutoff. Five chains logged
+allocation warnings. Separate same-seed attempts for all three failed chains
+are running serially with a 48 GiB address-space limit under a one-CPU/64 GiB
+service cap. Ancestral posterior qualification remains incomplete.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It
@@ -93,7 +113,7 @@ See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 | Full signed contrast sensitivity — October 2 UTC | All 243,504 mask/core sensitivity groups and 1,461,024 screening decisions passed independent reconstruction from the complete 865,792 raw fits. Two-original-journal closure binds 464,919 hashes; [full table, figure and methods](docs/full-triad-contrast-sensitivity-20261002.md). Software checks passed checkpoint recovery and rejected 16 false exports | At 50 residues/70% coverage, 1,688 of 5,448 triples passing quality under both masks and both cores have sign-uncertain reference contrasts. These are dependent physical sensitivity results, not confidence intervals or significant biological asymmetry. Full joint sequence/context direction production, predictor/domain/PAE/phylogenetic controls and calibrated inference remain required |
 | Original-context contrast directions — verified October 2 UTC | All 283,409 contexts/214,461 ties/428,922 sides, 153,040,860 policy decisions and 10,800 count rows passed independent raw-model SHA/gate/SQL pool/support/count/checkpoint reconstruction. Closure binds 465,222 hashes and both original journals. Full counts and revised PNG/SVG/PDF passed value checks and actual visual review; [results and resources](docs/full-triad-context-contrasts-20261002.md). Software checks passed 2,160 decisions, committed recovery and 20 false-export rejections | Quality eligibility remains separate from direction agreement; incomplete eligible reference pools do not establish complete original-tie agreement. Shared contexts/references/guides are dependent. Joint sequence controls, matched backgrounds, prediction/domain/PAE, accepted phylogeny/reconciliation and calibrated inference remain required |
 | Joint sequence/structural contrast directions — verified October 2 UTC | All 730,512 joint groups, 4,383,072 screens and 1,134 counts passed full raw-fit/SQL readback and closure; [493,605 hashes/two journals](metadata/full_triad_joint_directions_completed_20261002.json). Complete table and inspected PNG/SVG/PDF [published](docs/full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc). | Main quality cohort: 5,402 triples; 1,416 positive/1,270 negative/2,716 sign uncertain (50.28%). Measurement envelopes are not confidence intervals or evolutionary polarity. Original-context direction closure, matched common-residue/domain/PAE/predictor/phylogenetic controls and calibrated effects remain required. |
-| Joint directions in original contexts — complete October 2 UTC | Full producer, independent source/SQL reader and final closure passed all 283,409 contexts/214,461 ties/459,122,580 dependent policy decisions and 32,400 count rows. [493,914 hashes and both original journals](metadata/full_triad_context_joint_directions_completed_20261002.json) were reverified in the execution checkpoint. | Complete count publication and figure review remain next. Partial eligible pools do not establish complete original-tie agreement. Domain/PAE/predictor/accepted phylogeny/reconciliation/dependence/calibration remain required. |
+| Joint directions in original contexts — complete October 2 UTC | Full producer, independent source/SQL reader and final closure passed all 283,409 contexts/214,461 ties/459,122,580 dependent policy decisions and 32,400 count rows. [493,914 hashes and both original journals](metadata/full_triad_context_joint_directions_completed_20261002.json) were reverified in the execution checkpoint. | [Full counts and visually reviewed figure](docs/full-triad-context-joint-directions-20261002.md#complete-published-counts-and-figure-october-2) published. Partial eligible pools do not establish complete original-tie agreement. Domain/PAE/predictor/accepted phylogeny/reconciliation/dependence/calibration remain required. |
 | Full expanded background measurements — October 1 | All 298,848 new-native states and old-input reuse passed numeric/quaternion/readback and original journals. Full 146,172-pair/584,688-state union passed; [1,830,246 hashes/two union journals](metadata/full_background_measurement_union_completed_20261001.json). Missing/excluded states and old/new ownership retained. | Full measurements do not establish confidence-qualified evolutionary effects. Expanded working-model inputs and matched sequence/common-residue/domain/PAE/predictor/phylogenetic controls remain required; [complete results](docs/full-screened-background-results-20261002.md). |
 | Complete background coverage screens — October 1 | All 292,344 pair/mask rows and 1,754,064 fixed decisions passed independent SQL/decimal/original-length reconstruction and closure; [1,830,368 hashes/two journals](metadata/full_background_coverage_completed_20261001.json). At 50 residues/70% coverage, 59,844 backgrounds pass both masks. | Original full-protein denominators and both orders remain mandatory. These distinct-pair counts are not matched effects, biological events or phylogenetic effective sample sizes. |
 | Complete fixed matching coverage — October 1 | All 4,250,692 frozen selections/56,965,652 unmatched decisions/76,512,456 selected screening cells passed independent reconstruction and closure; [1,830,469 hashes/two journals](metadata/full_matched_coverage_completed_20261001.json). | Controls were not reselected after screening. Same-model/excluded states remain explicit. Expanded effect models, prediction/domain/PAE/phylogenetic and calibrated uncertainty controls remain required. |

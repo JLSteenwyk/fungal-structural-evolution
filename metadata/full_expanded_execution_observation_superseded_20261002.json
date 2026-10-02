@@ -1,0 +1,15 @@
+{
+  "status": "stopped_superseded_read_only_observation",
+  "checked_utc": "2026-10-02T18:05:41.927604+00:00",
+  "pid": 2299634,
+  "created": 1790964226.41,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_expanded_measurement_execution_v2.py",
+    "--output",
+    "/tmp/full-expanded-execution-recheck-20261002-1803.json"
+  ],
+  "reason": "The original full case/mask join producer completed while the v2 monitor was hashing sources. V2 only classifies terminal case and catalog handles and would reject this new successful join handoff. Original monitor source retained unchanged; v3 adds explicit pending/closed join and covariance classifications and all three new exact covariance launch identities. This was a deliberate stop of a foreground read-only observation, not a scientific-job stop or a restart after an observation timeout.",
+  "replacement_script": "scripts/record_expanded_measurement_execution_v3.py",
+  "scientific_jobs_changed": false
+}

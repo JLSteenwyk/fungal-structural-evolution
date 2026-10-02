@@ -1,0 +1,59 @@
+{
+  "status": "foreground_expanded_execution_requires_new_baliphy_terminal_audit",
+  "checked_utc": "2026-10-02T18:17:26.268542+00:00",
+  "script": "scripts/record_expanded_measurement_execution_v4.py",
+  "script_sha256": "7f227ced67f8944495fb629736cca3c157be867d1cc670bb534058fc38bfd62b",
+  "exception": "AssertionError: New terminal handle requires a completed-stage audit: metadata/baliphy_independent_chain_launch_20260927.json",
+  "scientific_jobs_changed": false,
+  "new_original_terminal_journals": [
+    {
+      "launch": "metadata/baliphy_independent_chain_launch_20260927.json",
+      "pid": 771240,
+      "created": 1790566377.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_independent_baliphy_chains.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_plan_20260927.json"
+      ],
+      "launch_sha256": "f4b10d315edd95df5f28f5c8f19372a3c4bf81790c60b544c849b6dbc587dbe4",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3d84999d8eca9a63a40b570f6ed15d83ae7fe0163cd27eb9c1411d7220cf258a",
+      "captured_process_messages": 1627,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790964099280808",
+          "CPU_USAGE_NSEC": "5791139374718000",
+          "MEMORY_PEAK": "77076656128",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json",
+      "pid": 775320,
+      "created": 1790566705.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/advance_independent_chain_diagnostics.py",
+        "--plan",
+        "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json"
+      ],
+      "launch_sha256": "4d6b52f79aacd8005f2c854535c2c1d7c51cf4e06139c3d32c57d619a7aea479",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ab3bbcbfc866a9cc839d95a927054c4987c77b55098185fa2b01394348edf31d",
+      "captured_process_messages": 402,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790964119495980",
+          "CPU_USAGE_NSEC": "3306651760000",
+          "MEMORY_PEAK": "8589934592",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "next_action": "Close complete1620-chain/405-quartet native and scalar accounting, then add this full proof to a new immutable execution monitor."
+}

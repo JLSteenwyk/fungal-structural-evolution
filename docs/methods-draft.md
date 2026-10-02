@@ -1,13 +1,26 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+The October 2 [expanded covariance handoff](full-expanded-covariance-20261002.md)
+computes complete new species factors and endpoint/entity incidence for every
+expanded logical case. It preserves distinct genes sharing versioned models,
+repeated targets/controls and original selection membership. The full design
+has 9,812 exact zero-sum taxon patterns on 526 working-kernel tips. Independent
+shared-entity graph and original tree-edge reconstruction gate acceptance.
+The full handoff passed independent readback and provenance closure:
+1,052,632 entity occurrences, 3,330 family components, rank 301 and all
+481,376,720 ordered pattern-pair covariances across five working trees. Closure
+checked 1,830,546 bindings and both original journals. No new variance
+components or calibrated evolutionary effects have been fitted.
+
 The October 2 [expanded case/measurement handoff](full-expanded-matched-measurements-20261002.md)
 adds complete source-linked logical case identities and all target/control
 order comparisons for the expanded fixed matching. The full case producer and
 independent SQL reader passed 4,250,692 selections and all unmatched partitions;
 75,188 logical cases retain gene/family/taxon/gene-tree-node and physical model
-identities separately. The directed catalog producer and independent reader passed all 1,123,936
-states; final provenance closure is running. The case/mask join is implemented
-and queued, with final acceptance pending. Both-orders-only means
+identities separately. The directed catalog passed all 1,123,936 states through full provenance
+closure. The case/mask join passed independent Decimal readback and full
+provenance closure for all 150,376 rows, with 2,369,783 source/artifact bindings
+and both original journals. Both-orders-only means
 and complete four-order envelopes preserve missing and excluded states for
 RMSD and explicitly native TM dissimilarity. Separate Decimal reconstruction
 checks derived arithmetic. These are dependent measurement records for future
@@ -2391,3 +2404,23 @@ terminal journals in runtimev20 (2,301,852 distinct bindings). Expanded
 working-model inputs, predictor/domain/PAE, accepted phylogeny/reconciliation,
 sampling/dependence and calibrated effects remain required. All eight aims
 incomplete; GPU prediction paused.
+
+
+## Full first-horizon ancestral accounting, October 2
+
+All 1,620 initial independent-chain dispositions were source-closed against
+original configurations, input hashes, native output/sample-audit/scalar-log
+artifacts, diagnostic reports and both original completion/resource journals.
+The 1,000-iteration horizon produced 1,617 integrity-checked chains and three
+native memory-allocation failures. Diagnostics covered 402 four-chain quartets
+at burn-in cutoffs 250 and 500, with no quartet passing every scalar check.
+Allocation notices were censused from all original stderr files and retained
+for five chains, including three integrity-passing outputs. These are source
+and diagnostic accounting results, not joint posterior qualification.
+
+Three failed chains receive separate same-seed attempts with only the native
+address-space limit changed from 12 to 48 GiB. Serial execution uses one CPU,
+64 GiB total memory and no swap. Original attempts remain unchanged, with no
+sample concatenation. Corrected quartet lineage, new integrity/diagnostic
+checks and length/alignment/categorical/scalar mixing qualification remain
+required. See [complete sources and limitations](baliphy-method-assessment-20260927.md#full-initial-horizon-completed-and-source-closed-october-2).

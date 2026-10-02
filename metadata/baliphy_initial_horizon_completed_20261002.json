@@ -1,0 +1,27 @@
+{
+  "status": "complete_verified_baliphy_initial_horizon_accounting",
+  "chains": 1620,
+  "checked_chains": 1617,
+  "failed_chains": 3,
+  "complete_quartets": 402,
+  "unresolved_quartets": 3,
+  "scalar_variable_counts": {
+    "250:scalar_mixing_requires_review": 11679,
+    "250:passes_scalar_screen_only": 3195,
+    "500:scalar_mixing_requires_review": 11973,
+    "500:passes_scalar_screen_only": 2901
+  },
+  "quartets_passing_every_scalar": {
+    "250": 0,
+    "500": 0
+  },
+  "chains_with_allocation_notices": 5,
+  "accounting": "results/ancestral/baliphy-initial-horizon-accounting-20261002-v1/accounting.json",
+  "accounting_sha256": "61e201548658e4c570a569f621e56c15946437bde60a78deba2a8744c767b469",
+  "full_hash_archive": "results/ancestral/baliphy-initial-horizon-accounting-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "2baec79feec8e9167b4bb10b43befcd99dd31738a98afdd3d23d4d5ccb1624ed",
+  "bound_source_hashes": 22425,
+  "exact_process_journals_checked": 2,
+  "scientific_eligibility": false,
+  "scope": "Account for the entire original1620-chain/405-quartet first1000-iterationhorizon. Full configuration/nativeartifact/sample-audit/scalar-log/diagnostic-evidence hashes and actualoriginal producer/diagnostic completion journals required. Failednativechains, allocationnotices, unresolvedquartets and scalarreviewstatuses remain explicit. This closes input/output accounting, not independent reimplementation of all saved-alignment parsing or ArviZ metrics, posterior convergence, ancestral qualification, indel/alignment/category mixing or completed aim8. Recoveryusesnewimmutable attemptidentities; never concatenate originalfailedsamples or replaceoriginal receipts."
+}

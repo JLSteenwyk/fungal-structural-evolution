@@ -577,3 +577,50 @@ It creates a fresh versioned output directory; an interrupted watcher can be
 rerun under a new output version while retaining earlier results. No group
 has yet produced a production length-convergence result, and positional
 amino-acid/homology mixing remains a separate outstanding requirement.
+
+
+### Full initial horizon completed and source-closed, October 2
+
+The original full batch and scalar-diagnostic controller are terminal.
+[Complete initial-horizon accounting](../metadata/baliphy_initial_horizon_completed_20261002.json)
+checks all 1,620 dispositions, original configuration/input/native artifact and
+audit hashes, all scalar diagnostic report lineage, and both actual original
+completion/resource journals: 22,425 bound sources. Of 1,620 chains, 1,617
+passed saved-alignment/node/log integrity and three failed with native
+`std::bad_alloc` under the original 12 GiB address-space cap. This is full
+input/output accounting; it does not independently reimplement the saved
+alignment parser or ArviZ diagnostic algorithms.
+
+Scalar diagnostics are complete for 402 of 405 quartets; the three missing
+quartets retain their failed-chain identifiers. At burn-in 250, 3,195 scalar
+variables pass their screen and 11,679 require mixing review. At burn-in 500,
+2,901 pass and 11,973 require review. **No complete quartet passes every scalar
+screen at either cutoff.** Passing individual variables cannot qualify a joint
+ancestral posterior. Length, alignment and categorical state mixing, root/
+prior/annotation uncertainty and biological adequacy remain unqualified.
+
+Five chains logged allocation fallback notices. Three of these exited zero
+and passed output integrity; two are among the terminal memory failures. The
+third terminal memory failure had no recorded fallback notice. Exit zero and
+intact samples therefore do not remove the need to assess allocation warnings.
+The full accounting record retains each affected chain and its exact stderr
+hash; the notice-positive integrity-passing chains are not posterior-qualified.
+
+[New isolated recovery attempts](../metadata/baliphy_memory_recovery_plan_20261002.json)
+cover all three failed chains. They preserve the exact executable, priors,
+model/input hashes, seeds, 1,000-iteration horizon, output limits and original
+timeouts. Only native address-space allowance changes from 12 to 48 GiB.
+The service runs one chain at a time under one CPU/64 GiB memory/no swap,
+with no GPU or paid resources. Prior attempts remain immutable and samples
+are never concatenated. The full 1,620-chain source grid and all failed-artifact
+hashes were checked before launch; incomplete/unknown/successful recovery
+scopes were rejected. The uncalibrated 1–240 hour planning allowance is not
+a completion ETA: failed elapsed times do not predict successful sampling.
+
+Recovery still requires output integrity, complete corrected quartet lineage,
+new scalar diagnostics and posterior mixing qualification. Warning-positive
+integrity-passing chains need separate assessment and, if warranted, isolated
+resource-controlled reruns. New attempts do not change acceptance thresholds.
+The next full sampling horizon must be costed from the complete observed
+run, with uncertainty and difficult strata retained; there is no accepted
+ancestral posterior or completed aim 8 at this checkpoint.

@@ -1,5 +1,84 @@
 # Progress and evidence
 
+## October 2 ancestral postprocessing coordinate contract corrected
+
+The original state-extraction, candidate-length and categorical controllers
+have finished their first-horizon processing: 1,617 state chains, 402 complete
+quartets and three unresolved memory-failed chains. The first full accounting
+validator failed because it counted coordinate metadata fields instead of
+node/residue anchors. Its [original failed invocation](../metadata/baliphy_full_postprocessing_failed_attempt_20261002_v1.json)
+is preserved; original data, launched scripts and plans remain unchanged.
+
+The new validator derives the coordinate count as four candidate nodes times
+the sum of ungapped tip lengths, and compares every contributing original
+chain coordinate file with the quartet manifest. The [full saved-output
+contract](../metadata/baliphy_full_postprocessing_coordinate_validation_20261002_v2.json)
+passed all 402 quartets, 1,608 contributing chain coordinate files and 804
+cutoff summaries, reproduced the old count error in all 804 summaries, and
+rejected nine malformed metadata cases. The [versioned full accounting
+rerun](../metadata/baliphy_full_postprocessing_completion_plan_20261002_v2.json)
+is live under two CPU/32 GiB/no swap; complete artifact hashes and three
+original controller journals remain required. This does not qualify ancestral
+posteriors. The separate same-seed memory recovery remains live.
+
+## October 2 full ancestral horizon accounted and isolated memory recovery
+
+The original BAli-Phy producer and scalar-diagnostic controller have finished.
+Full [horizon accounting](../metadata/baliphy_initial_horizon_completed_20261002.json)
+closed 22,425 source/artifact hashes and both original journals across all
+1,620 chains and 405 input/prior quartets. 1,617 chains passed integrity checks;
+three failed with native allocation errors under the original 12 GiB address-
+space cap. Scalar diagnostics cover 402 quartets; three remain unresolved.
+At burn-in 250/500, 11,679/11,973 scalar states require mixing review and
+3,195/2,901 pass only their scalar screen. Zero quartets pass every scalar
+check at either cutoff. Five chains have allocation fallback notices, including
+three integrity-passing chains. No posterior or ancestral sequence is qualified.
+
+Separate [same-seed recovery attempts](../metadata/baliphy_memory_recovery_plan_20261002.json)
+are launched for all three failed chains, preserving priors, model/input hashes,
+iterations, original timeouts and failed outputs. Only the address-space limit
+changes from 12 to 48 GiB. Runs are serial under one CPU/64 GiB/no swap; no
+GPU or paid resources. Failed chains are selected against the entire original
+1,620-chain grid, with scope-corruption rejections and full failed-artifact
+prelaunch checks. No sample concatenation. Successful recovery, full quartet
+overlays, allocation-notice review and length/alignment/category/scalar mixing
+qualification remain required. This does not complete aim 8.
+
+The full original-context joint direction counts and inspected PNG/SVG/PDF
+are also [published](full-triad-context-joint-directions-20261002.md#complete-published-counts-and-figure-october-2)
+for all 32,400 rows, 12 panels and 36 reference-policy bars. At joint mask/core/
+method n50/c70 with all-original ties, sign uncertainty is 50.30%/50.32% of
+qualified availability contexts and 48.71%/48.72% of sequence-first contexts
+across the two guides. These dependent measurement sensitivities are not
+calibrated biological effects.
+
+## October 2 expanded entity and phylogenetic covariance production
+
+Completed the [full expanded covariance workflow](full-expanded-covariance-20261002.md)
+for all 75,188 logical cases, 9,812 unique taxon contrasts and 3,413 families.
+Every endpoint taxon is present in the 526-tip working kernels. The registry
+retains 1,052,632 signed/unsigned endpoint/entity occurrences, original genes
+and model versions/coordinate hashes, repeated controls and cross-guide reuse.
+Family components use shared entities; a separate sparse graph reader checks
+them. New factors cover every expanded pattern and all five current tree
+alternatives, with 481,376,720 ordered covariance entries checked against
+original tree-edge paths. Older cohort factors/rank are not imposed.
+
+Software contracts rejected 22 corrupted/rehashed exports and passed alias,
+same-model, zero-pattern and full-interruption replay checks. Prior source and
+journal proofs in fixtures are synthetic. Two CPU/32 GiB/no swap/one BLAS thread,
+16 GiB scratch/output and 100 GiB reserve were recorded before launch. The
+original producer, reader and closure passed all 481,376,720 covariance entries,
+computed rank 301 and 3,330 family components, and closed 1,830,546 bindings
+and both original journals. Expanded calibrated fits remain pending. No GPU or paid resources.
+
+The full directed catalog has closed all 1,123,936 states with 2,369,743 source/
+artifact bindings and both original journals. The case/mask join passed
+independent Decimal readback and closure for all 150,376 rows, with 2,369,783
+bindings and both original journals. Verified counts: 70,221 full-mask and 70,015 pLDDT70 cases have all
+four cross-order measurements per outcome. There are 9,934 same-model case/mask
+rows, preserved without invented zero distances. All eight aims remain incomplete.
+
 ## October 2 complete expanded case and measurement integration
 
 The full case producer and independent SQL reader passed all 4,250,692 fixed

@@ -722,3 +722,32 @@ versions and proof records; corrected source-lineage and quarantine contracts
 use fresh versions. Expanded modelling, phylogenetic/reconciliation uncertainty,
 ascertainment/dependence/prediction controls and calibration remain required.
 [Full workflow and schemas](full-expanded-matched-measurements-20261002.md).
+
+
+## October 2: recompute dependence inputs for the full expanded cohort
+
+Do not reuse the earlier 4,568-pattern factors as coverage of the expanded
+9,812-pattern design. Preserve all gene and versioned model endpoint occurrences
+and target/control reuse, across guides. Export signed and unsigned incidence
+separately; they represent different prospective models, with cancellation
+explicit. Derive shared-entity family components and species patterns from
+every closed logical case, including excluded/same-model/zero-pattern records.
+Independent graph and raw-tree-edge checks must cover the entire export.
+The five current kernel trees remain working substitution-distance alternatives,
+not accepted dated phylogenies or a complete dependence correction. Expanded
+designs, fitting, calibration and the other biological controls remain required.
+[Complete resources, sources and interpretation](full-expanded-covariance-20261002.md).
+
+
+## October 2: preserve ancestral failures and separate integrity from mixing
+
+Close full 1,620-chain accounting and both original journals before using the
+new terminal ancestral handoff. Retain all three memory failures and all five
+allocation-warning chains, including integrity-passing outputs. No quartet
+passes every scalar screen at this horizon, so individual scalar passes cannot
+qualify ancestral posteriors. Recover failed chains with isolated same-seed
+attempts under higher memory allowance, retaining the original model, horizon,
+inputs and timeouts and running serially. Do not join failed samples or change
+scientific thresholds. Full quartet overlays, warning review and length/
+alignment/category/scalar mixing remain required before interpretation.
+[Full accounting and recovery evidence](baliphy-method-assessment-20260927.md#full-initial-horizon-completed-and-source-closed-october-2).

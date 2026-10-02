@@ -1,0 +1,28 @@
+{
+  "status": "passed_actual_full_grid_failed_recovery_prelaunch_selection",
+  "checked_utc": "2026-10-02T18:19:24.296954+00:00",
+  "full_original_grid": 1620,
+  "failed_jobs": 3,
+  "seed_model_inputs_and_timeouts_preserved": true,
+  "all_original_failed_artifacts_verified": true,
+  "rejected_false_scopes": [
+    "missing_failed_chain",
+    "duplicate_or_unknown_chain",
+    "included_successful_chain"
+  ],
+  "source_hashes": {
+    "scripts/recover_baliphy_memory_failures_20261002.py": "eff8510b7e4d1ad6b7c1e85db46e0ae06b16c5da404cdf5653d805ec6d5f33fa",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "results/ancestral/baliphy-independent-chains-20260927-v1/receipt.json": "97cc5edae59bbcfda4c5afd5f795a20a94b46b526777d3dc1425331a16e06ed0",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/initial_horizon_jobs.json": "f0c38ebfd985907f55d2ba5bb8cc12d75c47ca10dfa851492ad57eebcf5c835a",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e",
+    "metadata/baliphy_independent_chain_launch_20260927.json": "f4b10d315edd95df5f28f5c8f19372a3c4bf81790c60b544c849b6dbc587dbe4",
+    "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json": "4d6b52f79aacd8005f2c854535c2c1d7c51cf4e06139c3d32c57d619a7aea479"
+  },
+  "native_recovery_not_yet_launched": true
+}

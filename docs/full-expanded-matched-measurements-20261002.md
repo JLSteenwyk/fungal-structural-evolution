@@ -1,6 +1,6 @@
 # Complete expanded matched measurement handoff
 
-The expanded dataset now has a full case index and an implemented measurement
+The expanded dataset now has a full case index and a validated measurement
 join. This stage connects the measured protein comparisons to the original
 gene contexts needed for sequence–structure and duplication models. It does
 not yet estimate a calibrated duplication effect or correct for phylogenetic
@@ -37,8 +37,8 @@ semantics. It is reproducible with `write_expanded_measurement_dictionary.py`.
 | `case_index.tsv.gz` | 75,188 target/background node combinations, retaining guide, families, focal taxon, gene-tree node, all four genes, background taxa, physical pair identities, sequence distances, reuse and quality bits |
 | `selection_case_links.tsv.gz` | All 4,250,692 original selections, including exact score, ties, scenario, policy and endpoint mapping, with source ordinal and logical/physical case references |
 | Original target/policy coverage status | All 1,133,636 records and 56,965,652 unmatched decisions; referenced with its original checksum, fully replayed for membership |
-| `directed_measurements.tsv.gz` | Planned complete 1,123,936 states: 539,248 target and 584,688 background states, each physical pair/mask/order, with original checkpoints and sources |
-| `case_mask_contrasts.tsv.gz` | Planned complete 150,376 case/mask rows and 1,203,008 potential order-pair/outcome cells; full and pLDDT70 are physical masks, while their intersection is an eligibility gate |
+| `directed_measurements.tsv.gz` | Complete 1,123,936 states: 539,248 target and 584,688 background states, each physical pair/mask/order, with original checkpoints and sources |
+| `case_mask_contrasts.tsv.gz` | Complete 150,376 case/mask rows and 1,203,008 potential order-pair/outcome cells; full and pLDDT70 are physical masks, while their intersection is an eligibility gate |
 
 `case_id` hashes the ordered target/background **node** identifiers with the
 `fixed-matched-logical-case-v1` namespace. `physical_case_id` hashes the ordered
@@ -105,9 +105,13 @@ The [case index plan](../metadata/full_matching_case_index_plan_20261002.json)
 has a successful full producer/reader and completed original provenance closure. The
 [corrected catalog v3 plan](../metadata/full_expanded_measurement_catalog_plan_20261002_v3.json)
 and [join v2 plan](../metadata/full_expanded_case_measurements_plan_20261002_v2.json)
-have a complete catalog producer and passed full independent readback of all
-1,123,936 directed states. Final catalog provenance closure is running and the
-full join is queued, with exact identities recorded in their versioned launch
+have completed directed-catalog provenance closure for all 1,123,936 states,
+with 2,369,743 bound hashes and both original journals. The full join passed
+[separate Decimal readback and final closure](../metadata/full_expanded_case_measurements_v2_completed_20261002.json)
+for all 150,376 case/mask rows, with 2,369,783 bound hashes and both original
+journals. Complete four-order envelopes exist for 70,221 full-mask and
+70,015 pLDDT70 cases per outcome; 9,934 same-model case/mask rows retain null
+measurements. Exact identities remain recorded in the versioned launch
 inventories. Existing native fits and other scientific jobs were not changed.
 
 Resources were recorded before each launch: two CPU equivalents, 32 GiB memory,
@@ -135,8 +139,9 @@ edit a launched plan or rerun its completed output. Final completion locators
 are written by the original queued closure jobs after the full reader and
 journal/hash checks pass.
 
-Next required work includes the full model-input design and covariance index
-for this expanded cohort; full mask/order/screen/matching/reuse sensitivities;
+The [complete expanded covariance index/factor workflow](full-expanded-covariance-20261002.md)
+has completed full source, entity, rank and raw-tree covariance checks for this
+entire cohort. Next required work includes the expanded model-input design; full mask/order/screen/matching/reuse sensitivities;
 accepted species/gene/reconciliation uncertainty; dependence and ascertainment
 modelling; predictor, domain, PAE and orientation controls; calibration and
 multiple-testing treatment. Older 375,350 whole-protein fits retain their

@@ -1,0 +1,81 @@
+{
+  "status": "complete_verified_full_expanded_directed_measurement_catalog",
+  "target_pairs": 134812,
+  "background_pairs": 146172,
+  "pair_mask_rows": 561968,
+  "directed_states": 1123936,
+  "numeric_states": 1077758,
+  "usable_states": 1077126,
+  "unavailable_states": 46178,
+  "native_status_counts": {
+    "target:full:aligned": 269624,
+    "target:plddt70:aligned": 231700,
+    "target:plddt70:input_unavailable": 37924,
+    "background:full:aligned": 292344,
+    "background:plddt70:aligned": 284090,
+    "background:plddt70:input_unavailable": 8254
+  },
+  "numerical_exclusion_counts": {
+    "target:native_status:input_unavailable": 37924,
+    "target:fewer_than_three_pairs;nonunique_rotation": 431,
+    "target:rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 41,
+    "target:rmsd_discrepancy": 1,
+    "background:input_unavailable": 8254,
+    "background:fewer_than_three_pairs;nonunique_rotation": 144,
+    "background:rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 13,
+    "background:rmsd_discrepancy": 2
+  },
+  "source_kind_counts": {
+    "target:target_original": 539248,
+    "background:background_old": 285796,
+    "background:background_new_native": 298848,
+    "background:reference_old": 44
+  },
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "masks": [
+    "full",
+    "plddt70"
+  ],
+  "full_hash_archive": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/completion_archive.json",
+  "full_hash_archive_sha256": "5ac77819935d2ead991390a39582f8ce59de961c568f85ce1e0869da24ed18d9",
+  "bound_source_hashes": 2369743,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/receipt.json",
+  "producer_receipt_sha256": "f9920eaf6d8a0d4625a2732eb8a6d6b4c258fcac2b0ec226d997b1a142222775",
+  "independent_readback": "results/structural_comparisons/full-expanded-directed-measurements-20261002-v3/readback.json",
+  "independent_readback_sha256": "1fcc5f495577165b8353127b06b6a1f04b75f09060dfa62bf27baf06eacd0988",
+  "completion_plan_sha256": "edf333ea06a802ec464c2d1193f7614c4c574a6f2b4ad7bde99d87f063bf704f",
+  "scientific_eligibility": false,
+  "scope": "Normalize the entire539248target and584688background directed states, each full/pLDDT70mask andboth orders. Original native checkpoint/source-order identities remain explicit, including old background/reference/new native ownership. Catalog rows retain raw independently checked RMSD/geometry/native TM diagnostics even when numerically excluded; downstream consumers MUST gate numerical_usable and whole pair coverage before using measurements. Failed/unavailable native states keep null metrics, never zero. A genuine usable zero RMSD stays numeric zero. Original-length coverage differs from native masked-input coverage. Nativeleft/right TM metrics refer to the directed native inputs and are native scores, not independently optimized TM scores. Both-mask intersection is eligibility metadata, not an extra physical measurement. Same-model nodes remain in the logical-case index with no invented native measurement. Complete every-value source/numeric independent reconstruction, two exact original completion/resource journals and full closed hashes required. This catalog is a handoff for all logical cases, not accepted evolutionary effects, confidence intervals, model calibration, predictor/domain/PAE checks or phylogenetic correction. All eight aims remain incomplete. V2 explicitly expands the original closed target receipt/manifest/checkpoint chain, rather than assuming downstream matching listed the original native manifest. V3 explicitly preserves the original target QC blanking of excluded diagnostics while retaining gated raw numeric values in this catalog; background coverage retains its original raw aligned lengths."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed_context_joint_direction_png_and_rendered_pdf_visual_review",
+  "checked_utc": "2026-10-02T18:28:09.333267+00:00",
+  "publication": "metadata/full_triad_context_joint_direction_publication_20261002.json",
+  "publication_sha256": "d371a8c88e9de094325c6dc64113ad4bcd49cf2d2dabcb44b8f67634ae82f1cc",
+  "png": "docs/figures/full_triad_context_joint_directions_20261002.png",
+  "png_sha256": "eebaab3dc63e0903711fe022f43aeb5d6fae69d13d2cae41fe832d49068d90e0",
+  "pdf": "docs/figures/full_triad_context_joint_directions_20261002.pdf",
+  "pdf_sha256": "36ca526adf83718cc00526d02d07f782475b7ee2b1b833ac9909e2991f0ad6b4",
+  "rendered_pdf_local": "/tmp/full-context-joint-direction-pdf-review-20261002.png",
+  "reviewed_panels": 12,
+  "reviewed_policy_bars": 36,
+  "checks": [
+    "All twelve guide/design/method panel titles, three reference-policy labels, all nonzero segment counts and totals are legible.",
+    "Small reference-disagreement counts are explicitly annotated above bars.",
+    "Common quality-passing count axis, joint mask/core/residue/coverage criteria, legend and dependence/polarity limitations are visible without clipping.",
+    "Native PNG and pdftoppm-rendered PDF inspected; source SVG text/count metadata independently checked by publication script."
+  ],
+  "scientific_eligibility": false
+}

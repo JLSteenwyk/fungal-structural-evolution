@@ -1,0 +1,63 @@
+{
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "horizon_completion": "metadata/baliphy_initial_horizon_completed_20261002.json",
+  "postprocessing_plans": {
+    "states": "metadata/baliphy_full_anchored_states_plan_20260928_v2.json",
+    "length": "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json",
+    "categorical": "metadata/ancestral_categorical_queue_plan_20260928.json"
+  },
+  "launches": [
+    "metadata/baliphy_full_anchored_states_launch_20260928_v2.json",
+    "metadata/baliphy_candidate_length_diagnostic_launch_20260927.json",
+    "metadata/ancestral_categorical_queue_launch_20260928.json"
+  ],
+  "output": "results/ancestral/full-postprocessing-accounting-20261002-v2",
+  "completion": "metadata/baliphy_full_postprocessing_completed_20261002_v2.json",
+  "resources": {
+    "checked_utc": "2026-10-02T18:48:52.426892+00:00",
+    "cpu_per_stage": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_allowance_gib": 4,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "full_chains": 1620,
+    "processed_state_chains": 1617,
+    "full_quartets": 405,
+    "complete_categorical_and_length_quartets": 402,
+    "available_memory_gib": 722.3570823669434,
+    "free_disk_gib": 10418.004337310791,
+    "basis": "Full source/provenance/accounting readback for every1617processedstatechain and402complete categorical/lengthquartets, plus all3failed/unresolvednativechains. Original compressedarrays/report files remain in place; no new sampling or reconstruction oflarge arrays. Full SHAverification traverses originalattempt artifacts andallfinalsourceboundaries.32GiB covers largest per-group JSONcoordinate manifest/metadata andsha readbuffers;4GiB output for compact fullproof maps/accounting. All original3postprocessinginvocations are terminal and have exactsuccess/resource journals. Timinguncalibrated; no projectETA.",
+    "gpu": false,
+    "new_cost_usd": 0
+  },
+  "pins": {
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/baliphy_initial_horizon_completed_20261002.json": "4ecf3c2a4052e612a0e69ab60f892ef43b284db221c23815bbc26c5a2f3b5168",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_full_anchored_states_plan_20260928_v2.json": "201c0a5e453d0702e616867fa55f2be35a0521996822c61830daf8f769c5ba8e",
+    "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json": "dd56e19c77ef0945b474814841b89b6f3bb96eb0c624a2086fed7abe8ae83bb9",
+    "metadata/ancestral_categorical_queue_plan_20260928.json": "1f98afd7d148d963423efe3723d9415efc4794bcc9c582ea1ef9cd52d88317c7",
+    "metadata/baliphy_full_anchored_states_launch_20260928_v2.json": "232c226fd8d7b9b4d67650577bd9138f6bc34846dc72207f4e7a4cc25223b611",
+    "metadata/baliphy_candidate_length_diagnostic_launch_20260927.json": "3bac2b44286476e6271810b9f957fd1f2bc6c0f24a91812266046a7eb77b8689",
+    "metadata/ancestral_categorical_queue_launch_20260928.json": "d7697d97dd318715b309da62f1f69ee8d0a21d1b6b1175edb284dcb9fdf0aa4d",
+    "scripts/close_baliphy_postprocessing_20261002_v2.py": "d9a8d5227e77a25129f6f6652dc8579fc40e87a8d25ef0448f507d85cf6f0708",
+    "scripts/check_baliphy_postprocessing_coordinates_20261002.py": "3c4456a85959b86e472f4a16a4706175eea0a09bb7ac33fcd44f7e26aedfab2d",
+    "scripts/launch_baliphy_postprocessing_v2_20261002.py": "2c6772b801e58beea7a2211ebec2bebd37047bfe2949daaec8f53265a414793a",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "metadata/baliphy_full_postprocessing_coordinate_validation_20261002_v2.json": "5630c36dfb365d9128aa54c25a1cf068f89829bebe4f9a34ea74a6045e09752d",
+    "metadata/baliphy_full_postprocessing_failed_attempt_20261002_v1.json": "c45663be494693b78421e315fd783b32a9a78ddc2177733b9f4ee45d577a1283"
+  },
+  "scope": "Account for complete original1620chain/405quartet state extraction and length/categorical outputs, retaining every3unresolved nativefailure. Full originalplan/attempt/sample-audit/array/report/manifest hashlineage plus threeexact originalpostprocessing completion/resource journals required. Reconcile every status and full coordinate/pattern/length count partition with nativecheckedchains, manifest quartet/seed/input identities and savediterationgrid. These hashes/source metadata/serialized counts do not independently reimplement ArviZ metrics or every rawtrajectory numeric value; categorical andlengthstate mixing and jointposteriorqualification remain separate. Duplicate extant anchors are correlated representation, not independent residues. Priorinitialhorizon all-scalar-pass quartets zero; no ancestralstructure/effect qualification is invented bythis closure. Correctedrecovery quartet overlays, warningreview, adequate newsamplinghorizon andall8aims remainunfinished. Version2 corrects the coordinate-schema count and binds/equates every contributing original-chain coordinate file; the original failed version1 invocation is preserved. All804cutoff summaries passed the corrected schema contract before this full closure launch.",
+  "coordinate_validation": "metadata/baliphy_full_postprocessing_coordinate_validation_20261002_v2.json",
+  "preserved_failed_attempt": "metadata/baliphy_full_postprocessing_failed_attempt_20261002_v1.json"
+}

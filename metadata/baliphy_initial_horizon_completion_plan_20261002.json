@@ -1,0 +1,37 @@
+{
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "diagnostic_plan": "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json",
+  "launches": [
+    "metadata/baliphy_independent_chain_launch_20260927.json",
+    "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json"
+  ],
+  "output": "results/ancestral/baliphy-initial-horizon-accounting-20261002-v1",
+  "completion": "metadata/baliphy_initial_horizon_completed_20261002.json",
+  "pins": {
+    "scripts/record_baliphy_horizon_completion_20261002.py": "42020edfe95fa3975dcd92cc5afa664d9952cbbf58d9b015105df44f6129f17d",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/baliphy_independent_chain_launch_20260927.json": "f4b10d315edd95df5f28f5c8f19372a3c4bf81790c60b544c849b6dbc587dbe4",
+    "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json": "4d6b52f79aacd8005f2c854535c2c1d7c51cf4e06139c3d32c57d619a7aea479",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json": "3e2b8e8e957c4b4a79da506636b766b38887a2d3ea356585d2e815a7f91593b8"
+  },
+  "resources": {
+    "cpu_per_stage": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 4,
+    "planning_hours": [
+      0.1,
+      8
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_cost_usd": 0
+  },
+  "scope": "Account for the entire original1620-chain/405-quartet first1000-iterationhorizon. Full configuration/nativeartifact/sample-audit/scalar-log/diagnostic-evidence hashes and actualoriginal producer/diagnostic completion journals required. Failednativechains, allocationnotices, unresolvedquartets and scalarreviewstatuses remain explicit. This closes input/output accounting, not independent reimplementation of all saved-alignment parsing or ArviZ metrics, posterior convergence, ancestral qualification, indel/alignment/category mixing or completed aim8. Recoveryusesnewimmutable attemptidentities; never concatenate originalfailedsamples or replaceoriginal receipts."
+}
