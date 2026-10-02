@@ -1005,3 +1005,21 @@ directions, actual matched backgrounds, prediction/domain/PAE, accepted
 phylogeny/reconciliation and calibrated inference remain required. All eight
 aims incomplete; GPU prediction paused.
 [Full joint-direction scope and reproduction](full-triad-joint-directions-20261002.md).
+
+
+October 2 UTC: all original contexts and tied references are now implemented
+and queued for full joint sequence/structural direction integration across 27
+mask/method/core scenarios and six screens. Original parent/model/pair/native
+and fixed-reference gates, complete eligible-pool direction support and
+all-original tie requirements remain intact. Full scope is 459,122,580 repeated
+policy decisions and 32,400 disjoint state counts, not independent events or
+tests. All 8,100 software decisions, committed recovery and completed-restart
+refusal passed; all 23 false exports were rejected. The [fresh full runtime proof](../metadata/project_runtime_checkpoint_20261002_v17.json)
+verifies 43 pipeline/six original live jobs and 467,127 bindings, with 35 terminal
+successes and ten preserved historical failures. The [exact queue/progress record](../metadata/full_triad_context_joint_directions_queue_checkpoint_20261002.json)
+records 156,160/324,672 native alignments. Full production awaits original joint
+physical-direction closure. This advances aim 4 correspondence/reference controls;
+accepted phylogeny/reconciliation, actual matched backgrounds, predictor/domain/
+PAE and calibrated inference remain required. All eight aims incomplete; GPU
+prediction paused.
+[Full contextual joint-direction integration](full-triad-context-joint-directions-20261002.md).

@@ -183,3 +183,5 @@ and reconciled gene framework, family/taxon dependence, missingness, sampling
 and calibrated inference remain required. GPU protein prediction remains paused.
 The [joint sequence/structural direction workflow](full-triad-joint-directions-20261002.md)
 is implemented and queued; it has not yet produced full production results.
+The [full joint contextual direction integration](full-triad-context-joint-directions-20261002.md)
+is also implemented and queued after physical joint-direction closure.

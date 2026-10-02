@@ -10979,3 +10979,32 @@ does not establish universal coverage or complete the biological project.
   framework, dependence/sampling and calibrated inference remain required.
   All eight aims incomplete; GPU prediction remains paused.
   [Full joint direction workflow](full-triad-joint-directions-20261002.md).
+
+
+- October 2 UTC: implemented, froze and queued complete original-context joint
+  sequence/structural directions for all 283,409 contexts/214,461 tied references/
+  428,922 sides. All 27 mask/method/core scenarios preserve original identities,
+  lexical order, parent/model/three-pair/native gates and complete eligible and
+  all-original reference pools. Full scope is 34,742,682 reference cells,
+  91,824,516 context/design cells, 459,122,580 repeated five-policy decisions
+  and 32,400 disjoint counts. Physical presence never overrides source gates;
+  incomplete eligible-pool agreement does not become complete original-tie
+  agreement, and quality remains separate from direction. Software contracts
+  passed 30 contexts/64 ties/216 groups/8,100 decisions, committed recovery and
+  completed-restart refusal; all 23 rehashed false exports were rejected.
+  A foreground fixture receipt write initially failed on a missing output
+  directory; corrected directory creation and a complete v2 rerun passed before
+  production launch. Resources preceded launch: two CPU/32 GiB/no swap/one BLAS
+  thread, 192 GiB output and 100 GiB reserve, with measured prior-stage storage
+  recorded. Original producer PID 3282118, reader 3282235 and closure 3282319
+  are queued after original joint-direction closure. The [fresh full checkpoint](../metadata/project_runtime_checkpoint_20261002_v17.json)
+  verifies 467,127 bindings, 43 pipeline/six original live jobs, 35 terminal
+  successes and ten preserved historical pipeline failures; expanded background
+  progress was 272,704/298,848. The subsequent [exact queue check](../metadata/full_triad_context_joint_directions_queue_checkpoint_20261002.json)
+  verifies all 49 original live handles and native sequence progress
+  156,160/324,672. Full production results remain pending. Actual matched
+  backgrounds, predictor/domain/PAE, accepted species/reconciled gene framework,
+  dependence/missingness/sampling and calibrated inference remain required.
+  All eight aims incomplete; GPU prediction paused; no existing job changes,
+  restarts or new charges.
+  [Complete contextual joint-direction workflow](full-triad-context-joint-directions-20261002.md).

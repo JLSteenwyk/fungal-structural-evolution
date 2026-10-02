@@ -150,6 +150,9 @@ or establish independent predictor validation. Joint physical directions must
 still be linked to the original parent, model, native-guide, fixed-reference
 and complete-tie gates; full contextual joint directions are not implemented
 by this physical stage or by the separate eligibility-only context stage.
+The [complete joint contextual direction integration](full-triad-context-joint-directions-20261002.md)
+is now implemented and queued behind this stage's original closure. Its full
+production and independent readback remain pending.
 
 Actual matched backgrounds, domain/orientation/PAE and predictor controls,
 accepted species/reconciled gene framework, family/taxon dependence,

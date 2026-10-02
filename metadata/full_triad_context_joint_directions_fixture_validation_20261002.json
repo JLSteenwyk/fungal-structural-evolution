@@ -1,0 +1,32 @@
+{
+  "status": "passed_full_triad_context_joint_direction_software_contracts",
+  "checked_utc": "2026-10-02T07:27:57.418637+00:00",
+  "receipt": "results/software-checks/full-triad-context-joint-directions-20261002-v2/receipt.json",
+  "receipt_sha256": "cb1ae1845ed3df9a4b26db8a30ad53752595480de798cbf3bf67221e60edbadc",
+  "target_contexts": 30,
+  "reference_tie_records": 64,
+  "measured_triads": 8,
+  "measured_contrast_groups": 216,
+  "context_policy_decisions": 8100,
+  "summary_rows": 5400,
+  "checked_reused_chunks": 1,
+  "completed_restart_refused": true,
+  "rejected_false_exports": 23,
+  "previous_fixture_attempt": "Initial foreground receipt write failed because the output parent did not exist; fixed directory creation and reran complete contracts to a new v2 path. No production failure or job changes.",
+  "source_hashes": {
+    "results/software-checks/full-triad-context-joint-directions-20261002-v2/receipt.json": "cb1ae1845ed3df9a4b26db8a30ad53752595480de798cbf3bf67221e60edbadc",
+    "results/software-checks/full-triad-context-joint-directions-20261002-v2/receipt.source_fixture.json": "b12f44f148a7b95ee236e5c6464bce961a07a2a4f46331ebdc89aadb759ae1c5",
+    "scripts/full_triad_context_joint_direction_sources.py": "bf2313455ccbd4695f8337f0dec013081283ae7de210143a3cfa1b132ae3aa32",
+    "scripts/project_full_triad_context_joint_directions.py": "86323dc203528ce19693c54223f373b3d6642e3a066f0154395ce1a155c1b087",
+    "scripts/readback_full_triad_context_joint_directions.py": "3313dea54eb38fa7ab54e39f7a4c584a9c9f4bbd435c10d91e43e6bfc84be15c",
+    "scripts/check_full_triad_context_joint_directions.py": "f60b4ff1d339d49da6f0e986613defba54ac8da08cac77d4d7ebd57ff0187669",
+    "scripts/launch_full_triad_context_joint_directions.py": "52ea4b148f46235a31e673d92745e1f9a220a514790bc4b47a1bc62b02a2e455",
+    "scripts/project_full_triad_context_contrasts.py": "433ff69943de24c6d519f72381e4bd5a7be2b566d8f5078e071961ee7b7fa8c1",
+    "scripts/full_triad_context_contrast_sources.py": "c95e58c6eb4d3c3b442c61bd2ee5d547300934b0c3fcfe591d36ff2f19a8b286",
+    "scripts/full_triad_context_geometry_sources.py": "a2cd05f04950c622c1b79257ebe556d03972500ecc983260b8d9293c41d3a44d",
+    "scripts/check_full_triad_context_geometry_cases.py": "c8fd42587cb735f373b6498c6d2783c27033f2f2fd4300a1d5e7995d0c211568",
+    "scripts/check_full_triad_context_contrasts.py": "62bad55ae30477c79dedd5a2a4b7190b7a4231dead91bd30b60948b921eda4d2"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full original context/reference-pool software contracts; production source-closure I/O stubbed, not biological evidence."
+}

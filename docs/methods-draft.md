@@ -2253,3 +2253,40 @@ predicted coordinates; predictor circularity, original contextual parent/native/
 reference/tie gates, matched backgrounds, phylogeny and calibrated inference
 remain required. All eight aims remain incomplete; GPU prediction stays paused.
 [Complete joint-direction workflow](full-triad-joint-directions-20261002.md).
+
+
+## Full contextual joint directions queued October 2 UTC
+
+All 283,409 unchanged contexts/566,818 designs/214,461 tied references/428,922
+sides are linked to the complete joint physical direction controls under all
+27 mask/method/core scenarios and six screens. This defines 34,742,682 reference
+cells, 91,824,516 context/design cells, 459,122,580 repeated five-policy direction
+decisions and 32,400 disjoint state-count rows. Original guide/family/taxon/gene/
+node/model/version/reference-order identities and parent/distinct-model/three-pair/
+native gates remain unchanged. Normalized keys retain explicit mask, method and
+core axes. Missing/gated direction remains null, distinct from measured near-zero.
+
+Fixed lexical policies retain each of three source gates. Any-eligible native-
+both direction uses every eligible tie with gate counts and four-category
+support; agreement among incomplete subsets does not establish complete
+original-tie agreement. All-original policies require nonempty complete
+eligibility. Reference-category disagreement remains separate from geometry
+quality; favorable reference/method/core/order choices cannot promote a sign.
+The inherited numerical threshold does not define effect size or uncertainty.
+
+Independent original-role SHA and raw context-gate reconstruction plus SQLite
+lexical/all-pool/support/denominator checks require exact export fields/types,
+source row order and all deterministic checkpoints, followed by full hashes
+and both original invocation-linked completion/resource journals. Software
+contracts passed 30 contexts/64 ties/216 joint physical groups/all 27 scenarios/
+8,100 decisions, committed four-context recovery and completed-restart refusal;
+all 23 false exports were rejected. Production source-closure I/O is stubbed
+only in fixtures. The initial fixture receipt write failed on a missing output
+directory; directory creation was fixed and the complete suite rerun to a new
+v2 identity before launch. Two CPU/32 GiB/no swap/one BLAS thread, 192 GiB output
+and 100 GiB reserve were estimated before three original queued launches.
+Full production awaits physical joint-direction closure. Predicted coordinates
+remain sequence-derived, contexts/settings remain dependent, and matched
+backgrounds/predictor/domain/PAE/accepted phylogeny/reconciliation/calibration
+remain required. All eight aims incomplete; GPU prediction paused.
+[Full integration, semantics and reproduction](full-triad-context-joint-directions-20261002.md).

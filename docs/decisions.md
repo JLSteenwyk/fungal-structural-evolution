@@ -635,3 +635,21 @@ remove predictor circularity. Original parent/native/model/reference/tie gates
 remain mandatory for subsequent contextual interpretation. Full production is
 queued; all eight scientific aims remain incomplete.
 [Complete joint-direction workflow](full-triad-joint-directions-20261002.md).
+
+
+## October 2 UTC: carry joint directions through complete original reference pools
+
+Apply all 27 joint mask/method/core direction scenarios to every original
+context and tied reference. Preserve explicit scenario axes, source identities,
+lexical order and parent/distinct-model/three-pair/native gates; physical overlap
+cannot override source exclusions. Keep gated null direction distinct from
+near-zero measurements and geometry qualification separate from category
+agreement. Any-eligible pool direction uses all eligible ties and retains all
+original missing/ineligible references; complete original-tie agreement requires
+a nonempty fully eligible pool. Reject favorable method/reference selection,
+incomplete axes and altered support/count/type fields using independent original
+model-role SHA/gate and SQL pool/count reconstruction. Require full hashes and
+both original completion/resource journals before production acceptance.
+Full production is queued, not completed. These dependent context descriptions
+do not establish biological polarity, significance or a duplication effect.
+[Full contextual joint-direction workflow](full-triad-context-joint-directions-20261002.md).

@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/full_triad_joint_directions_closure_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/project_full_triad_context_joint_directions.py",
+    "--plan",
+    "metadata/full_triad_context_joint_directions_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_context_joint_directions_plan_20261002.json": "2ed79eafe04c9f97ec3ccb9769cbfb1fa579d55cb63708b336b7e4ee1cfdb071",
+    "metadata/full_triad_joint_directions_closure_launch_20261002.json": "9999825c145a1597b38af63651ce477963d50aab43ebab09282938be128cc13e",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}
