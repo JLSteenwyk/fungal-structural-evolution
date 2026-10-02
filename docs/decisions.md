@@ -470,3 +470,12 @@ full collection/journal/biological qualification remains separate.
   infer their biological polarity from native labels. Full named-case proof
   validates the implementation and leaves the remaining batch and biological
   model/root/reconciliation qualification open.
+
+- October 2 UTC: compare every coalescent candidate with all same-cohort
+  original/projected concatenated references and all other coalescent
+  alignment/support candidates. Preserve every conflict and support metric;
+  do not equate local posterior, UFB and SH-aLRT, compare lengths across
+  units, assign a root from a role split, or interpret overlapping split
+  pairs as independent evolutionary events. Require complete native
+  numerical closure, raw-tree comparison readback and both original
+  completion journals before accepting the full comparison stage.

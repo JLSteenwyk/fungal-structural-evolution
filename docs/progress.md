@@ -10638,3 +10638,23 @@ does not establish universal coverage or complete the biological project.
   states. [Design and evidence](species-coalescent-sensitivities-20261002.md).
   Candidate comparisons, gene/taxon/MSC/root qualification and all eight
   evolutionary aims remain incomplete. GPU prediction remains paused.
+
+- October 2 UTC: queued every coalescent-versus-concatenated and coalescent
+  alignment/support comparison across five cohorts: 70 views, 240 reference
+  pairs and 75 coalescent pairs, total 315. Complete union presence, RF, all
+  incompatible pairs/canonical witnesses, separate support screens/branch
+  units and all 70 actual role boundaries are retained. Full raw DendroPy
+  pruning/RF/bipartition reader and two-journal closure are queued. The full
+  70-view/315-pair software grid passed; 13 altered exports were rejected.
+  First actual 526-taxon candidate versus all eight original references
+  passed 5,814 presence cells/1,988 overlapping conflicts and 1,475-binding/
+  two-journal closure. It shares 431–438/523 splits per reference, 417 across
+  all nine views; no method preference or independent biological events
+  are inferred. Resources preceded launch: two CPU/16 GiB/no swap/one BLAS
+  thread per serial stage, no GPU or charges. Latest exact checkpoint: 17/30
+  native cases finished, 25 live pipeline handles, six original scientific/
+  retrieval jobs and 162,816/298,848 new structural comparison states.
+  [Complete workflow and interpretation](coalescent-reference-comparisons-20261002.md).
+  Full comparisons, actual subset inference and gene/taxon/model/root/dating/
+  reconciliation qualification remain open. All eight aims are incomplete;
+  GPU prediction remains paused.

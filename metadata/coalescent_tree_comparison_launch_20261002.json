@@ -1,0 +1,19 @@
+{
+  "unit": "fungal-coalescent-reference-comparisons-20261002-v1.service",
+  "pid": 1444029,
+  "created": 1790907116.42,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/coalescent_tree_comparison_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/coalescent_tree_comparison_wait_plan_20261002.json",
+  "plan_sha256": "0108ff2c8e7828127fa70455cdf2edabf3152fc73747095b4bdddd06cf02c239",
+  "checked_utc": "2026-10-02T02:11:57.260899+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  }
+}

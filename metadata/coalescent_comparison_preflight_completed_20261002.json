@@ -1,0 +1,36 @@
+{
+  "status": "complete_verified_named_coalescent_reference_tree_comparisons",
+  "cohorts": 1,
+  "tree_views": 9,
+  "comparison_rows": 8,
+  "split_presence_rows": 5814,
+  "incompatible_pairs": 1988,
+  "role_boundary_rows": 9,
+  "boundary_views_with_role_split": 7,
+  "cohort_summaries": [
+    {
+      "cohort": "full_primary",
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "coalescent_views": 1,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 523,
+      "shared_all_references": 480,
+      "shared_all_views": 417
+    }
+  ],
+  "full_hash_archive": "results/phylogeny/full-first-coalescent-reference-comparisons-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "154e31c82a05b7f263d192d7e83e47d067397b5eb6d79688935dbdc991abb697",
+  "bound_source_hashes": 1475,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-first-coalescent-reference-comparisons-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "accd3353b7b9b960235ba2fa5638d1dfc8defefaa871f56cc968905db6ce327a",
+  "independent_readback": "results/phylogeny/full-first-coalescent-reference-comparisons-20261002-v1/readback.json",
+  "independent_readback_sha256": "d2aedf8189f34ae486ad2f1ab48827358516f8e55d2a788c629d49517dd6ccaa",
+  "completion_plan_sha256": "5ec05a8317a63d0d74f3b5f4e16624950018b94a6b08559fcd919e00c9b23080",
+  "scientific_eligibility": false,
+  "scope": "Complete actual first 526-taxon coalescent candidate versus all eight closed concatenated reference views. Every split, RF, incompatibility/witness, exact support disposition and actual 501-entry ingroup/25-outgroup boundary retained. Distinct local PP95, original ML SH80/UFB95, consensus UFB95 metrics; branch lengths have different units and are never compared numerically between methods. Full named-case comparison, not completion of remaining 29 candidates or a biological pilot. Accepted root, search/model/gene qualification, reconciled framework and all eight evolutionary aims remain open. No GPU/new charges/restart."
+}

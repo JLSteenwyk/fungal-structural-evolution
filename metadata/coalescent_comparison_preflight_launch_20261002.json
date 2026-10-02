@@ -1,0 +1,19 @@
+{
+  "unit": "fungal-coalescent-reference-preflight-20261002-v1.service",
+  "pid": 1439659,
+  "created": 1790906838.11,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_coalescent_species_trees.py",
+    "--plan",
+    "metadata/coalescent_comparison_preflight_plan_20261002.json"
+  ],
+  "plan": "metadata/coalescent_comparison_preflight_plan_20261002.json",
+  "plan_sha256": "c043f50c5d96b5d3e6c56babd9007c298a77dd97a2252e385f4266bbd5285eca",
+  "checked_utc": "2026-10-02T02:07:18.947234+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  }
+}

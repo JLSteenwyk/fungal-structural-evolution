@@ -1923,3 +1923,30 @@ Candidate estimation remains conditional on inferred genes, taxa/support
 settings and MSC/locality assumptions. Numerical agreement does not prove
 search optimality or biological model adequacy. Native rooting is arbitrary;
 coalescent lengths do not estimate substitutions, time or structural change.
+
+### Matched-taxon coalescent/reference tree comparisons (October 2 UTC)
+
+Thirty numerically closed coalescent candidates are compared with the 40
+original/projected concatenated ML/consensus views under five exact cohorts.
+Every six-candidate/eight-reference cross contributes 48 pairs; all 15
+coalescent candidate pairs per cohort are retained, total 315 comparisons.
+Every union split-presence cell, RF count, incompatible unique-split pair,
+canonical quartet witness and all 70 ingroup/outgroup boundaries are exported.
+An independent DendroPy raw-tree pruning/RF/bipartition reader reconstructs
+every export before full hashes and two original journals permit closure.
+
+Local posterior 0.95, original ML SH80/UFB95, consensus UFB95 and projected
+UFB95 with unavailable SH-aLRT remain distinct descriptive criteria. Effective
+genes and branch units are retained. Coalescent MAP lengths are not compared
+numerically with amino-acid substitution or original projected path lengths.
+Role-boundary presence is unrooted and does not assign biological polarity.
+
+The full synthetic 70-view/315-pair grid passed with 13 false exports rejected.
+The actual first full candidate versus eight original references passed
+5,814 presence cells and 1,988 overlapping incompatible pairs, with both
+original journals and 1,475 bindings. Pairwise shared splits span 431–438/523;
+417 splits are shared across all nine views. Comparisons condition on
+inferred genes and candidate trees; overlaps are not independent events
+or evidence selecting a biological cause or preferred model. Full 315-pair
+production/readback/closure is queued after all native numerical proofs.
+[Workflow and limitations](coalescent-reference-comparisons-20261002.md).

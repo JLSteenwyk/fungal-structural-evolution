@@ -194,7 +194,9 @@ at its observation time. Later native progress remains outside Git.
 Input preparation, full independent input readback and closure are complete.
 Native inference is running; full numerical/quartet readback and closure are
 queued. Candidate tree comparisons and comparison against all concatenated
-references remain required. Gene-tree
+references are now [queued across all 70 views/315 pairs](coalescent-reference-comparisons-20261002.md).
+The full named-case comparison passed all eight original references; this
+does not certify the remaining candidate comparisons. Gene-tree
 estimation uncertainty, locus dependence, low taxon occupancy, orthology,
 gene-selection sensitivity, hybrid ancestry and MSC adequacy remain open.
 These candidate topologies must be qualified before reconciliation and

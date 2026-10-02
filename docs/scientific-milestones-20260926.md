@@ -818,3 +818,14 @@ denominator and all 65,375 local states passed one-journal closure.
 Full-batch numerical closure, candidate comparisons, gene/taxon/model/root
 qualification and the final reconciled framework remain required. No
 biological aim is complete; GPU prediction remains paused.
+
+October 2 UTC: full 70-view/315-pair coalescent/reference comparisons and
+independent raw-tree reader/two-journal closure are queued. The actual first
+526-taxon candidate versus all eight original references passed every
+5,814 presence cell and 1,988 overlapping incompatible pairs, with two
+original journals and 1,475 bindings. It shares 431–438/523 splits per
+reference and 417 across all nine views. [Scope and evidence](coalescent-reference-comparisons-20261002.md).
+These conditional similarities do not establish a preferred method, cause
+of discordance, root or accepted structural evolutionary framework. Full
+candidate comparisons, actual subset fits and remaining qualification
+are required; all eight biological aims remain incomplete.

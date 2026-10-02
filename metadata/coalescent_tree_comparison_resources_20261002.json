@@ -1,0 +1,22 @@
+{
+  "status": "estimated_before_full_70_view_315_pair_coalescent_reference_comparison",
+  "checked_utc": "2026-10-02T02:11:57.044645+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "planning_hours_per_stage": [
+    0.02,
+    2
+  ],
+  "runtime_uncalibrated": true,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "available_memory_gib": 557.7232208251953,
+  "free_disk_gib": 10504.744457244873,
+  "maximum_conflict_candidate_checks": 86161635,
+  "basis": "All 30 numerically closed coalescent candidates and 40 exact same-taxon original/projected concatenated ML/consensus views. Five cohorts x(6 coalescent x8 references + choose(6,2))=315 pairs; all union split-presence cells, incompatible split pairs/witnesses and 70 actual role boundaries. Integer masks in producer, independent raw DendroPy pruning/RF/bipartition reader. Full actual first 526-taxon candidate x8 reference proof closed with 1,475 bindings/two journals: 5,814 presence cells and 1,988 overlapping incompatible pairs. Producer8.506 CPU sec/reader9.403 CPU sec. Conservative full315x523^2 candidate bound; most common splits removed first. Serial2CPU16GiB/noSwap/1BLAS per stage, 4GiB output allowance/100GiB reserve. No inference restart, GPU or new charges. Biological framework remains unqualified."
+}
