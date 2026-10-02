@@ -2341,3 +2341,38 @@ The older five-candidate comparison version remains separate, and these older
 measurement fits do not establish expanded-atlas coverage. All eight aims remain
 incomplete; GPU prediction remains paused.
 [Full source-selection semantics and reproduction](full-whole-protein-comparisons-20261002.md).
+
+## Expanded background and correspondence controls completed October 2 UTC
+
+Full expanded background scope closed at 146,172 physical pairs/584,688
+directed states, preserving old/new source ownership and all original missing,
+short, nonunique and RMSD flags. Both-order original-length screens passed
+complete independent reconstruction. At 50 residues/70% original coverage,
+59,844 background pairs pass both masks; this is not a matched effect estimate.
+All 4,250,692 fixed metadata selections were carried through coverage without
+rematching, including unmatched and excluded records. Independent numerical
+balance/reuse reconstruction closed 62,208 feature rows/7,776 coverage strata/
+32,682,096 reuse rows. Across all 54 fixed scenarios, guide/policy/mask/screen/
+feature groups retain signed extrema, absolute medians/maxima and unavailable
+counts. The complete 4,608-row summary was independently recomputed. Figures
+use all both-mask/n50c70 group maxima, retain distinct SD denominators and do
+not establish universal balance thresholds. Maximum matched target–control
+SMD0.1676 coexists with retained-target shifts up to1.2182 baseline SD relative
+to all targets. Matched balance does not qualify representative event coverage.
+[Full results and inspected figures](full-screened-background-results-20261002.md).
+
+All 324,672 native sequence alignment states, 649,344 sequence geometry
+dispositions and 10,389,504 sequence/structural order-pair comparisons also
+passed independent readback and source/journal closure. The complete joint
+physical-direction control retains all 1,515,136 raw fit states and 730,512
+mask/method/core groups. In the both-mask/both-method/both-core n50c70 cohort,
+5,402 triples pass quality:1,416 positive/1,270 negative/2,716 sign uncertain.
+Numerical direction envelopes are sensitivity descriptions, not calibrated
+uncertainty or evolutionary polarity. Original-context eligibility linkage is
+closed; contextual joint-direction readback/closure remains pending. Both
+figures passed full count/SVG/PDF-label checks and actual PNG/rendered-PDF
+inspection. Complete new source hashes were refreshed alongside original
+terminal journals in runtimev20 (2,301,852 distinct bindings). Expanded
+working-model inputs, predictor/domain/PAE, accepted phylogeny/reconciliation,
+sampling/dependence and calibrated effects remain required. All eight aims
+incomplete; GPU prediction paused.

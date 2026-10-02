@@ -1,0 +1,137 @@
+{
+  "status": "complete_verified_full_background_original_length_coverage",
+  "source_inventory_models": 305434,
+  "pair_models": 292326,
+  "pairs": 146172,
+  "pair_mask_rows": 292344,
+  "directed_source_states": 584688,
+  "screen_decisions": 1754064,
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "pass_counts": {
+    "full:n30_c50": 118233,
+    "full:n30_c70": 93228,
+    "full:n30_c90": 53214,
+    "full:n50_c50": 117946,
+    "full:n50_c70": 93185,
+    "full:n50_c90": 53207,
+    "plddt70:n30_c50": 91945,
+    "plddt70:n30_c70": 59897,
+    "plddt70:n30_c90": 19141,
+    "plddt70:n50_c50": 91637,
+    "plddt70:n50_c70": 59845,
+    "plddt70:n50_c90": 19133
+  },
+  "both_masks_pass_counts": {
+    "n30_c50": 91943,
+    "n30_c70": 59896,
+    "n30_c90": 19141,
+    "n50_c50": 91635,
+    "n50_c70": 59844,
+    "n50_c90": 19133
+  },
+  "exclusion_counts": {
+    "full:n30_c70:low_original_protein_coverage": 52944,
+    "full:n30_c90:low_original_protein_coverage": 92958,
+    "full:n50_c70:low_original_protein_coverage": 52944,
+    "full:n50_c90:low_original_protein_coverage": 92958,
+    "plddt70:n30_c70:low_original_protein_coverage": 82074,
+    "plddt70:n30_c90:low_original_protein_coverage": 122830,
+    "plddt70:n50_c70:low_original_protein_coverage": 82074,
+    "plddt70:n50_c90:low_original_protein_coverage": 122830,
+    "plddt70:n30_c50:short_alignment": 5513,
+    "plddt70:n30_c50:low_original_protein_coverage": 50025,
+    "plddt70:n30_c70:short_alignment": 5513,
+    "plddt70:n30_c90:short_alignment": 5513,
+    "plddt70:n50_c50:short_alignment": 10382,
+    "plddt70:n50_c50:low_original_protein_coverage": 50025,
+    "plddt70:n50_c70:short_alignment": 10382,
+    "plddt70:n50_c90:short_alignment": 10382,
+    "full:n30_c50:low_original_protein_coverage": 27937,
+    "full:n50_c50:low_original_protein_coverage": 27937,
+    "full:n50_c50:short_alignment": 2128,
+    "full:n50_c70:short_alignment": 2128,
+    "full:n50_c90:short_alignment": 2128,
+    "plddt70:n30_c50:order0_not_numerically_usable": 4209,
+    "plddt70:n30_c50:order1_not_numerically_usable": 4204,
+    "plddt70:n30_c70:order0_not_numerically_usable": 4209,
+    "plddt70:n30_c70:order1_not_numerically_usable": 4204,
+    "plddt70:n30_c90:order0_not_numerically_usable": 4209,
+    "plddt70:n30_c90:order1_not_numerically_usable": 4204,
+    "plddt70:n50_c50:order0_not_numerically_usable": 4209,
+    "plddt70:n50_c50:order1_not_numerically_usable": 4204,
+    "plddt70:n50_c70:order0_not_numerically_usable": 4209,
+    "plddt70:n50_c70:order1_not_numerically_usable": 4204,
+    "plddt70:n50_c90:order0_not_numerically_usable": 4209,
+    "plddt70:n50_c90:order1_not_numerically_usable": 4204,
+    "full:n30_c50:short_alignment": 165,
+    "full:n30_c70:short_alignment": 165,
+    "full:n30_c90:short_alignment": 165
+  },
+  "target_pairs": 134812,
+  "target_pass_counts": {
+    "full:n30_c50": 79096,
+    "full:n30_c70": 54177,
+    "full:n30_c90": 27474,
+    "full:n50_c50": 77904,
+    "full:n50_c70": 53962,
+    "full:n50_c90": 27451,
+    "plddt70:n30_c50": 53229,
+    "plddt70:n30_c70": 31371,
+    "plddt70:n30_c90": 9004,
+    "plddt70:n50_c50": 52831,
+    "plddt70:n50_c70": 31274,
+    "plddt70:n50_c90": 8989
+  },
+  "target_both_masks_pass_counts": {
+    "n30_c50": 53225,
+    "n30_c70": 31368,
+    "n30_c90": 9004,
+    "n50_c50": 52826,
+    "n50_c70": 31271,
+    "n50_c90": 8989
+  },
+  "full_hash_archive": "results/structural_comparisons/full-background-coverage-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "6ef1185d50b17b2ae24001f423ce266573d36994f37291fdd792487d42d32f45",
+  "bound_source_hashes": 1830368,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-background-coverage-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "b02afe2b84a907e2fa6257c7f2cdbefd103b948a7b5ae1c586070dbd8690ec17",
+  "independent_readback": "results/structural_comparisons/full-background-coverage-20261001-v1/readback.json",
+  "independent_readback_sha256": "4b51e8fb516a07fba838875b08ef2cf90606b484e77339151a8b6c678dcbe9c8",
+  "source_plan": "metadata/full_background_coverage_plan_20261001.json",
+  "source_plan_sha256": "2480a06713088cda7abb297a3f10b1dc78a69f318971f44ef81017283ecba9f0",
+  "completion_plan_sha256": "0cea2bb561adfacd1620c26b13776c71f5a46cc2d05b6c8e93ad6b2a607ab0e8",
+  "scientific_eligibility": false,
+  "scope": "Complete146172physical background pairs/292344pair-mask rows/584688original native states and1754064six-screen decisions, from the independently closed full measurement union and full original305434model-length/confidence inventory. Both directions must be numerically usable;30/50aligned residues and50/70/90percent coverage of both original full proteins use unchanged duplication-target screens. Masked retained lengths never replace original denominators. All native/parse/timeout/input/numerical flags, sources, original source orders, model versions and overlapping screen exclusions retained. Both-mask intersections and all36target/background physical counts checked; counts describe distinct model pairs, not independent events or matched inferential effects. Separate SQL-original-state and decimal-ceiling reconstruction must verify every field and summary; full bytes plus two exact original coverage journals required for closure. Full frozen4.25million selected/56.97million unmatched scenario integration, weights/balance, sequence-locked/common-residue/domain/PAE/prediction/missingness/phylogenetic controls and calibrated effects remain required. All8aims incomplete; existing jobs untouched; GPU inference paused; no pilot or paid resources. Complete hash archives remain outside Git."
+}

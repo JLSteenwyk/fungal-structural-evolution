@@ -402,3 +402,27 @@ orthology/phylogenetic qualification, matched backgrounds and calibrated
 uncertainty/multiple testing remain required. Signed A/B reference contrasts
 do not establish ancestral polarity or which duplicate evolved faster.
 All eight scientific aims remain incomplete; GPU prediction remains paused.
+
+## Complete production and closure — October 2 UTC
+
+The full native and comparison stages have completed. Original launch plans
+and outputs remain unchanged, and full independent readback/journal/hash
+closure passed each stage:
+
+| Stage | Complete verified scope | Evidence |
+|---|---|---|
+| Sequence alignments | 324,672 MAFFT/FAMSA states; 85,050,227 common-residue occurrences | [321,819 bindings/two journals](../metadata/full_triad_sequence_alignment_completed_20261002.json) |
+| Fit preflight | 649,344 dispositions; 85,432 unique eligible cores | [321,839 bindings/two journals](../metadata/full_triad_sequence_fit_preflight_completed_20261002.json) |
+| Sequence-derived geometry | 649,344 fitted/missing/excluded dispositions from 77,052 PDB inputs | [398,903 bindings/two journals](../metadata/full_triad_sequence_geometry_completed_20261002.json) |
+| Sequence vs structural correspondences | 216,448 groups; 10,389,504 order-pair states | [493,296 bindings/two journals](../metadata/full_triad_correspondence_comparison_completed_20261002.json) |
+| Original-context eligibility linkage | 283,409 contexts; 214,461 ties; 459,122,580 dependent policy decisions; 3,240 count rows | [493,601 bindings/two journals](../metadata/full_triad_context_correspondence_completed_20261002.json) |
+
+This updates earlier queued/pending statements. The complete 31,235 source
+triad designs retain all 27,056 source-ready triples and 4,179 unscheduled
+designs. Native fitting availability and numerical geometry do not promote
+quality exclusions or establish biological orthology. The physical joint
+direction stage also completed; see [all counts and inspected figures](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).
+Original-context joint-direction readback and closure remain pending.
+Prediction/circularity, domain/orientation/PAE, accepted phylogeny/reconciliation,
+dependence, uncertainty and calibrated effects remain required. All eight aims
+incomplete; GPU prediction remains paused.

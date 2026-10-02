@@ -1,0 +1,39 @@
+{
+  "status": "complete_verified_full_triad_sequence_fit_preflight",
+  "ordered_model_triads": 31235,
+  "source_ready_triads": 27056,
+  "native_alignment_states": 324672,
+  "fit_rows": 649344,
+  "input_status_counts": {
+    "full:famsa_default:pending_common_coordinate_geometry": 156695,
+    "plddt70:famsa_default:pending_common_coordinate_geometry": 133674,
+    "full:mafft_auto:pending_common_coordinate_geometry": 158223,
+    "plddt70:mafft_auto:pending_common_coordinate_geometry": 133325,
+    "plddt70:famsa_default:fewer_than_three_common_residues": 28662,
+    "plddt70:mafft_auto:fewer_than_three_common_residues": 29011,
+    "full:famsa_default:fewer_than_three_common_residues": 5641,
+    "full:mafft_auto:fewer_than_three_common_residues": 4113
+  },
+  "triple_occurrences": {
+    "full:famsa_default": 43068284,
+    "plddt70:famsa_default": 27492021,
+    "full:mafft_auto": 41981943,
+    "plddt70:mafft_auto": 27345565
+  },
+  "unique_eligible_cores": 85432,
+  "unique_eligible_residue_occurrences": 21232957,
+  "proper_pair_fits_per_implementation": 256296,
+  "needed_full_pdb_inputs": 77052,
+  "needed_full_pdb_bytes": 2375016234,
+  "full_hash_archive": "results/structural_comparisons/full-triad-sequence-fit-preflight-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "7c967127ad181ef5013228cfdd559d40b9b1c6d2e3998c1c999df7893774de23",
+  "bound_source_hashes": 321839,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-triad-sequence-fit-preflight-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "ebb644f200dfdec8e8714467f30cbb957057d6e01e2236de90defd676d1e0c94",
+  "independent_readback": "results/structural_comparisons/full-triad-sequence-fit-preflight-20261002-v1/readback.json",
+  "independent_readback_sha256": "705c945575d016a63291a7c12bc46c263876a8093e3e5e9deb398917a4605cd1",
+  "completion_plan_sha256": "583703b2c7f19f680d41c5b10e22feb884f9195b8180fbcba1bee2f282fa4f28",
+  "scientific_eligibility": false,
+  "scope": "Full27056original source-ready ordered A/B/reference triples, both MAFFT/FAMSA and all6 native input orders, both full/plddt70 masks=649344 explicit fit rows. Reconstruct from original full sequences before joint source-mask filtering. Full preflight measures all native dispositions, unique eligible cores, exact PDB demand and original-length coverage context; independent raw SeqIO reader and both original completion/resource journals required. Proper SVD and separate quaternion fits retain all3 pair distances on identical residue triples, signed ARminusBR, identities and rounded-PDB confidence summaries plus authoritative source-mask fraction. Retain missing/native failure/short/source-rejected/degenerate states, all6 original rational length screens and inherited both-order three-edge exclusions. Aligners/orders are dependent alternatives, not biological replicates. Every checkpoint is reconstructed and checked on restart. Full raw-MSA/position/PDB/numeric/grid/screen/SQLite export readback and both original journals plus full hashes precede closure. Original31235triads/283409contexts/214461ties/428922sides are linked by native/catalog closures; parent/context gates still require downstream integration. Structural-correspondence comparison, domain/orientation/PAE/prediction controls and qualified phylogeny/calibration remain required. No homology truth, ancestral polarity, biological asymmetry or significance inferred. All8aims incomplete; GPU prediction paused; no existing job change, restart or charges."
+}

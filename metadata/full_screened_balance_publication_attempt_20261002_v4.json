@@ -1,0 +1,13 @@
+{
+  "status": "failed_foreground_balance_publication_existing_figure_refusal",
+  "checked_utc": "2026-10-02T16:10:21.321857+00:00",
+  "script": "scripts/publish_full_screened_balance_v4.py",
+  "script_sha256": "84422b17ed4a7aa5f0d9e6f9df54c515dfe52094aa152f9a5b81a27be021b49d",
+  "exit_code": 1,
+  "existing_tables_and_figures_preserved": true,
+  "new_summary_tables_created": true,
+  "new_figures_created": false,
+  "correction": "The v3 path substitution did not match the prefixed figure string. V5 replaces the filename substring directly; all five final paths inspected to be absent before execution. V4 tables retained and immutable.",
+  "replacement_script": "scripts/publish_full_screened_balance_v5.py",
+  "scientific_eligibility": false
+}

@@ -685,3 +685,20 @@ original journals before completion. No favorable review/error promotion,
 negative-gain clamping, transfer to expanded measurement cohorts or automatic
 biological/model acceptance.
 [Full workflow, validation and resources](full-whole-protein-comparisons-20261002.md).
+
+## October 2 UTC: preserve correspondence sensitivity and target-selection shifts in inference
+
+Publish every closed physical mask/method/core direction and retain full
+eligible/reference uncertainty when moving into original contexts. Sign
+uncertainty over alternative measurements is not a confidence interval or
+ancestral polarity. Do not infer counts of sign reversals by subtracting
+different quality cohorts. Publish every fixed-matching scenario's post-screen
+balance and all three target-selection baselines. Aggregate scenarios only as
+descriptive extrema/medians with explicit estimability, never independent
+events or an optimally selected matching specification. Retained target–control
+balance does not establish representative duplication-event coverage; observed
+selection shifts remain requirements for missingness/sampling sensitivity and
+calibrated expanded models. Preserve failed publication contracts and prior
+figures while correcting immutable versioned output paths/labels.
+[Complete background results](full-screened-background-results-20261002.md),
+[closed joint directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).

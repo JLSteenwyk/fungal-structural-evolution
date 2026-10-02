@@ -1,0 +1,45 @@
+{
+  "status": "complete_verified_full_new_background_native_numeric_geometry",
+  "directed_dispositions": 298848,
+  "numerically_checked_alignments": 294288,
+  "counts": {
+    "full:aligned": 149424,
+    "plddt70:aligned": 144864,
+    "plddt70:input_unavailable": 4560
+  },
+  "rmsd_status_counts": {
+    "full:within_printed_rounding": 149424,
+    "plddt70:within_printed_rounding": 144854,
+    "plddt70:outside_printed_rounding": 10
+  },
+  "geometry_counts": {
+    "full:unique_at_numeric_tolerance": 149424,
+    "plddt70:unique_at_numeric_tolerance": 144784,
+    "plddt70:degenerate_at_numeric_tolerance": 80
+  },
+  "numerical_eligibility_counts": {
+    "full:usable": 149424,
+    "plddt70:usable": 144782,
+    "plddt70:input_unavailable": 4560,
+    "plddt70:fewer_than_three_pairs;nonunique_rotation": 72,
+    "plddt70:rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 8,
+    "plddt70:rmsd_discrepancy": 2
+  },
+  "maximum_rmsd_rounding_error": 0.02919123398662197,
+  "full_background_pairs": 146172,
+  "existing_catalog_pairs_pending_reuse": 71460,
+  "new_pairs": 74712,
+  "full_hash_archive": "results/structural_comparisons/expanded-background-alignments-20261001-v1/measurement_completion_archive.json",
+  "full_hash_archive_sha256": "ce80173a6071b24bafe65a1c0e30e13385004c9adc35d824f1a7ff6e2977a373",
+  "native_receipt": "results/structural_comparisons/expanded-background-alignments-20261001-v1/receipt.json",
+  "native_receipt_sha256": "f3dcc29b486acd2b2dbbba9c993ca8bd0baf2f65962e2f742fb74a70f8442481",
+  "assessment_receipt": "results/structural_comparisons/expanded-background-numeric-geometry-20261001-v1/receipt.json",
+  "assessment_receipt_sha256": "766fb6c37a376bf654e375bf979c99b06d3318a9597f83faea704f8076984774",
+  "independent_readback": "metadata/expanded_background_measurement_completed_readback_20261001.json",
+  "independent_readback_sha256": "628fe60c7726d3d1dcc48c9784da29c001c8dd0af86cbeb2e91ea9c9551b07b5",
+  "bound_source_hashes": 1262901,
+  "exact_process_journals_checked": 3,
+  "completion_plan_sha256": "817419b604fc34d58c7a55a419a9d376d4f915b90a49cb6bee5bac1e3652d236",
+  "scientific_eligibility": false,
+  "scope": "Full146172background pairs and305434active models/two masks retained. Run all74712new pairs in both masks and both orders(298848dispositions) after independently verified full four-collection input union and two original input journals. All71460catalog-matched pairs remain pending actual old-input/checkpoint/numeric/geometry reuse qualification. New checkpoint binding/native parse/text/sequence/confidence/least-squares geometry are checked for every disposition, independent vectorized mappings/quaternion rotations/gesvd spectra and all exclusions reconstructed; three exact native/assessment/reader journals required. TM-scores bind native text only, not independent optimization. Full-source actual bytes and original positions retain all masks/orders/collection origins; no favorable source/outcome selection, failed-state retry or missing-as-zero substitution. Prediction/PAE/domain/sequence-locked/confidence/missingness/phylogenetic and calibrated effects remain required. All8scientific aims incomplete; GPU inference paused; no charges."
+}

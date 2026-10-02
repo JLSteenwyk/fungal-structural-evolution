@@ -1,0 +1,12 @@
+{
+  "status": "failed_foreground_balance_publication_existing_table_refusal",
+  "checked_utc": "2026-10-02T16:08:58.904783+00:00",
+  "script": "scripts/publish_full_screened_balance_v3.py",
+  "script_sha256": "c03f97f90082d8a246d5848234365e0449e06548597b3fcb3248da62027f515e",
+  "exit_code": 1,
+  "existing_tables_preserved": true,
+  "new_publication_outputs_created": false,
+  "correction": "New v4 publisher gives every table/figure a new versioned path. Prior v2 figures/tables remain immutable; no scientific job changes or restarts.",
+  "replacement_script": "scripts/publish_full_screened_balance_v4.py",
+  "scientific_eligibility": false
+}

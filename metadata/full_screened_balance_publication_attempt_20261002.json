@@ -1,0 +1,14 @@
+{
+  "status": "failed_foreground_balance_publication_archive_status_contract",
+  "checked_utc": "2026-10-02T16:06:41.747503+00:00",
+  "script": "scripts/publish_full_screened_balance.py",
+  "script_sha256": "0d904e0ecf0764407172bac6550bcda246fe0575d584e4f9d59c447889a4a3aa",
+  "exit_code": 1,
+  "expected_archive_status": "complete_verified_full_fixed_matching_post_screen_balance_and_reuse_archive",
+  "actual_frozen_archive_status": "complete_verified_full_screened_balance_archive",
+  "source_archive_hash_and_journal_count_passed": true,
+  "publication_outputs_created": false,
+  "correction": "New v2 publication script uses the exact original frozen closure archive status. Scientific sources/journals are unchanged; no production job restart.",
+  "replacement_script": "scripts/publish_full_screened_balance_v2.py",
+  "scope": "Foreground publication contract mismatch only; full scientific producer/readback/closure passed, preserved."
+}

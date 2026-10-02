@@ -160,3 +160,49 @@ missingness/sampling and calibrated statistical tests remain required.
 Positive/negative physical contrasts do not establish evolutionary polarity,
 structural acceleration, selection or a duplication effect. All eight
 scientific aims remain incomplete; GPU protein prediction remains paused.
+
+## Complete production and published results — October 2 UTC
+
+Full production, independent raw-fit/SQL readback and both-original-journal
+closure passed all **27,056 physical triples, 649,344 sequence fits, 865,792
+structural fits, 730,512 joint groups, 4,383,072 screening decisions and 1,134
+count rows**. The [completion locator](../metadata/full_triad_joint_directions_completed_20261002.json)
+binds 493,605 source/artifact hashes and both original completion/resource
+journals. The [fresh runtime collection](../metadata/project_runtime_checkpoint_20261002_v20.json)
+rechecked complete sources together with ten other newly closed background and
+correspondence stages, totaling 2,301,852 distinct bindings. This is the current
+status; earlier queued statements describe the initial launch.
+
+The [complete count table](tables/full_triad_joint_direction_counts_20261002.tsv)
+preserves every mask, sequence-method, core and screen combination. The figure
+shows all 27 scenarios at ≥50 residues and ≥70% of both original proteins:
+
+![Complete joint direction sensitivity](figures/full_triad_joint_directions_20261002.png)
+
+[PDF](figures/full_triad_joint_directions_20261002.pdf) ·
+[SVG](figures/full_triad_joint_directions_20261002.svg)
+
+Under both masks, both sequence methods and both core definitions, **5,402**
+triples pass quality: **1,416 positive, 1,270 negative and 2,716 sign uncertain
+(50.28%)**. There are no within-tolerance, unavailable or nonunique outcomes in
+this quality-passing cohort; 21,654 of the original 27,056 triples are excluded
+by this quality screen. Sign uncertainty describes the envelope over retained
+correspondence/mask/core/order alternatives, not a confidence interval.
+The corresponding structural-only cohort had 5,448 triples, so changes in
+aggregate counts are not paired reference effects or counts of sign reversals.
+Physical triples, scenarios and original gene contexts remain dependent.
+
+The [publication receipt](../metadata/full_triad_joint_directions_published_20261002.json)
+binds the complete table and PNG/SVG/PDF to the closed source. All plotted
+counts were checked against the full table and SVG metadata; every nonzero
+numeric label was checked in the one-page PDF. Actual PNG and rendered PDF
+were inspected, with [review evidence](../metadata/full_triad_joint_directions_figure_review_20261002.json).
+Reproduce the publication using `scripts/publish_full_triad_joint_directions.py`
+against a new output location; preserve published outputs.
+
+Full joint directions across original contexts and complete tied-reference
+pools have finished their producer and await independent readback and closure.
+Expanded matched background measurements/balance are now closed, but joint
+sequence-correspondence/domain/orientation/PAE/predictor controls, accepted
+species/reconciled gene framework, sampling/dependence and calibrated biological
+inference remain required. All eight aims incomplete; GPU prediction paused.

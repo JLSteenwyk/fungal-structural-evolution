@@ -1,0 +1,38 @@
+{
+  "status": "published_full_verified_post_screen_balance_and_selection_shift_summary",
+  "source_completion": "metadata/full_screened_balance_completed_20261001.json",
+  "source_completion_sha256": "ea3a54127ea1acd185e036b73d4cfa40b5fdc29ccda0dedc2aead86b12776e5a",
+  "full_source_archive": "results/structural_comparisons/full-screened-balance-20261001-v1/completion_archive.json",
+  "full_source_archive_sha256": "9a72bb98a719e419498668977b7f918f6f7b2c5a459f0807adf4436971e9fa5c",
+  "original_completion_journals": 2,
+  "full_balance_rows": 62208,
+  "full_coverage_rows": 7776,
+  "summary_rows": 4608,
+  "plotted_summary_cells": 256,
+  "plotted_scenarios_per_cell": 54,
+  "svg_text_and_metadata_values_checked": true,
+  "main_screen_maximum_absolute_by_metric": {
+    "standardized_mean_difference": 0.16762187768961326,
+    "selection_shift_in_baseline_sd": 1.218190962394778,
+    "metadata_matched_shift_in_baseline_sd": 0.605954809716645,
+    "target_eligible_all_shift_in_baseline_sd": 0.7007649787112339
+  },
+  "source_hashes": {
+    "metadata/full_screened_balance_completed_20261001.json": "ea3a54127ea1acd185e036b73d4cfa40b5fdc29ccda0dedc2aead86b12776e5a",
+    "results/structural_comparisons/full-screened-balance-20261001-v1/completion_archive.json": "9a72bb98a719e419498668977b7f918f6f7b2c5a459f0807adf4436971e9fa5c",
+    "results/structural_comparisons/full-screened-balance-20261001-v1/receipt.json": "adbb95c73159ddc834450079ec8c1b23f66e81884198fb43f0df9cb84dcd309e",
+    "results/structural_comparisons/full-screened-balance-20261001-v1/readback.json": "1e6ed09dfcbea143f6a537dc2e416a6194085a110e840f9b00303acb36f73598",
+    "results/structural_comparisons/full-screened-balance-20261001-v1/balance.tsv": "3150a6d767b8b78a3353f00c6a688ea1b3ae357641dd4f39aa4dcef0f21df268",
+    "results/structural_comparisons/full-screened-balance-20261001-v1/coverage.tsv": "f60f45f314f7b1a09922637f524855e7ce55ba219a30ef569d245dfbd152bcd9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/publish_full_screened_balance_v2.py": "b542306b2fc9f13b643366b4ce94644158fa8dde1cd3bc17d46e8aefab1b9fde"
+  },
+  "artifacts": {
+    "docs/tables/full_screened_balance_scenario_summary_20261002.tsv": "322f06c92aea538313f5501dccb286243b878ab669c7ca48c22325412951d400",
+    "docs/tables/full_screened_matching_coverage_20261002.tsv": "f60f45f314f7b1a09922637f524855e7ce55ba219a30ef569d245dfbd152bcd9",
+    "docs/figures/full_screened_balance_20261002.png": "592b0343224590e7a3fb4e9765b8f1b601c1538fe7d3e9d766da7efa344d2bdd",
+    "docs/figures/full_screened_balance_20261002.svg": "8e76712dfae0446b276398bfdae0605171a9ae36fe4d16ad5030af8b842194c0",
+    "docs/figures/full_screened_balance_20261002.pdf": "8ecdce25bf1c18990ab394f6fe01e7350e7d3f02e540b1d43991f4621d495598"
+  },
+  "scientific_eligibility": false,
+  "scope": "Full62208balance rows/7776coverage strata retained with4608all-mask/screen/guide/policy/feature/metric summaries acrossall54scenarios. Report signedextrema/absolute medians/maxima/estimable/missingcounts; figureshowsall256bothmaskn50c70 maxima, never favorable matching scenario. Magnitudes use distinct source denominators permetric; no aggregation asindependent events orweightedbiologicaleffects. Sourcefullhash/journal refresh and actualfigurevisualcheck separate. Sourcebalance doesnot proveunbiased sampling or calibratedcausal/duplicationeffects;all8aims incomplete;GPUpaused."
+}

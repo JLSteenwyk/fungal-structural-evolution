@@ -1,0 +1,35 @@
+{
+  "status": "complete_verified_full_background_measurement_union",
+  "full_pairs": 146172,
+  "directed_dispositions": 584688,
+  "source_dispositions": {
+    "background_old": 285796,
+    "background_new_native": 298848,
+    "reference_old": 44
+  },
+  "native_status_counts": {
+    "full:aligned": 292344,
+    "plddt70:aligned": 284090,
+    "plddt70:input_unavailable": 8254
+  },
+  "numerical_counts": {
+    "usable": 576275,
+    "input_unavailable": 8254,
+    "fewer_than_three_pairs;nonunique_rotation": 144,
+    "rmsd_discrepancy;fewer_than_three_pairs;nonunique_rotation": 13,
+    "rmsd_discrepancy": 2
+  },
+  "full_hash_archive": "results/structural_comparisons/full-background-measurement-union-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "1381bb35eed0ff5470e9e25c92391482b883f5755a62c1da943fc91e023f6670",
+  "bound_source_hashes": 1830246,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-background-measurement-union-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "2fce33c40af3bde736e889ca46c1840453cb2f4438c3773e9f3dee22978f2c2e",
+  "independent_readback": "results/structural_comparisons/full-background-measurement-union-20261001-v1/readback.json",
+  "independent_readback_sha256": "9979239bf6826ed4727949da657b1825dadc19fe1ea3ed1a7e39c9d6cd70efa6",
+  "source_plan": "metadata/background_measurement_union_plan_20261001.json",
+  "source_plan_sha256": "c2592498c7e69c0083572f16c319e99671f5152ce944a586269cf0051b31b195",
+  "completion_plan_sha256": "6118ad7a1f1464efb5de67ec5b55d848464071e1b206ad7ec2e127ab14513e5d",
+  "scientific_eligibility": false,
+  "scope": "Full146172physical background pairs and584688mask/order states from independently closed new74712pair/native-numeric-quaternion3-journal and71460pair/actual-input-old-result-quaternion10-journal sources. Fixed old-reference11/old-background71449pair ownership retained regardless of numerical outcome; no source switching, trimming or retries. Every raw/native record, old source order, original numeric/geometry row, normalized value, nullable failure/input state and numerical exclusion preserved. Incompatible reuse states block full union until an additional explicitly closed native workload exists. Complete independent SQL source reconstruction and all source bytes plus two exact original union journals required. Native optimization/TM-score optimization and geometry are not repeated here. Numeric availability does not establish coverage, orthology, phylogenetic eligibility, stability under predictor/PAE/domain/orientation/sequence-locked/missingness uncertainty or calibrated evolutionary effects. All8aims remain incomplete; GPU inference paused, no pilot or paid resources. Large complete hash archives stay outside Git."
+}

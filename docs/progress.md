@@ -11064,3 +11064,32 @@ does not establish universal coverage or complete the biological project.
   predictor/domain/PAE, sampling/dependence and calibrated inference remain
   required. All eight aims incomplete; GPU prediction paused.
   [Complete source selection, parameters and reproduction](full-whole-protein-comparisons-20261002.md).
+
+- October 2 UTC: prior turn made concrete progress by committing/pushing complete
+  whole-protein comparison integration (`64fb55a`). Fresh exact original-process
+  checks now found 35 prior pipeline handles absent because their work completed;
+  no job was restarted. Full runtimev20 refreshed eleven newly closed background
+  and correspondence stages, verified all original completion/resource journals,
+  2,301,852 distinct closed bindings, 70 terminal successes and ten preserved
+  historical failures. The [broader inventory](../metadata/project_live_launch_inventory_20261002_v3.json)
+  retains31exact livehandles (16pipeline/six original/ninelegacy wrappers).
+  Expanded background union closed146,172pairs/584,688states; matching/balance
+  closedall4,250,692selections/62,208feature rows/32,682,096reuse rows. Sequence
+  alignment/geometry/comparison/context eligibility and joint physical
+  directions closed complete scopes with missing/excluded states retained.
+  Published all1,134joint direction counts and all4,608fixed-scenario balance
+  summaries plus full7,776coverage rows. Separate extrema/median reconstruction
+  verified every balance summary. All plotted SVG/PDF labels and actual
+  PNG/rendered PDFs passed review. Initial balance publication assumed a
+  different archive status; corrected using the original frozen contract.
+  First figure labels touched; preservedv2, existing-output refusals andv4tables,
+  then fully versionedv5 output/label checks passed without source/job changes.
+  Main joint-quality cohort5402 has1416positive/1270negative/2716uncertain
+  (50.28%); matching SMDmax0.1676 coexists with target-selection shiftmax1.2182
+  baselineSD. These are dependent measurement/sampling controls, not calibrated
+  effects. Original-context joint producer finished and reader/closure remain
+  live. Whole-protein manifest had209,410/375,350 dispositions at observation.
+  Expanded models/predictor/domain/PAE/accepted species/reconciled gene framework/
+  missingness/dependence/uncertainty/calibration remain required. All eight aims
+  incomplete; GPUs remain paused. [Full background results](full-screened-background-results-20261002.md)
+  and [complete joint directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).

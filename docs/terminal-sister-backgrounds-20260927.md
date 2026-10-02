@@ -2169,3 +2169,16 @@ Predictor/circularity, common-residue/domain/orientation/PAE and missingness
 controls, native phylogenetic qualification and uncertainty remain required.
 All eight scientific aims remain incomplete; original CPU/retrieval jobs
 continue and GPU prediction remains paused.
+
+## Full expanded production completed — October 2 UTC
+
+All expanded native, numeric/geometry, old/new union, original-length coverage,
+fixed-matching attrition and post-screen balance/reuse stages now passed full
+independent readback, source hashes and original journals. Earlier pending
+statements describe the launch. Complete measured scope is 146,172 physical
+background pairs/584,688 states, all 4,250,692 frozen matching selections and
+62,208 post-screen feature summaries. The all-scenario summary and inspected
+figures show retained target–control balance alongside target-selection shifts;
+matching does not establish unbiased coverage. Calibrated expanded effects and
+matched common-residue/domain/PAE/prediction/phylogenetic controls remain required.
+[Complete results, source evidence and publication](full-screened-background-results-20261002.md).

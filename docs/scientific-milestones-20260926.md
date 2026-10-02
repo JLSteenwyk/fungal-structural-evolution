@@ -1053,3 +1053,21 @@ terminal successes and ten preserved historical failures. The [broader inventory
 verifies all 66 distinct original handles. All eight aims incomplete; GPU
 prediction paused.
 [Complete comparison integration](full-whole-protein-comparisons-20261002.md).
+
+October 2 UTC: eleven newly completed production stages passed full original
+journal/hash refresh, including expanded background native/union/coverage/
+matching/balance and sequence alignment/preflight/geometry/comparison/context-
+eligibility/joint physical directions. Fresh runtimev20 verifies 2,301,852
+distinct bindings, 70 terminal successes and ten preserved historical failures;
+31 exact live handles remain including nine legacy wrappers. Complete joint
+direction counts and post-screen all-scenario summaries plus PNG/SVG/PDF figures
+are published and independently checked/visually reviewed. Joint physical
+contrast sign remains uncertain for2,716/5,402(50.28%) main-quality triples.
+Matched balance up to0.1676 SMD coexists with target-selection shifts up to1.2182
+baseline SD. This advances actual controls for aims2/4 and sampling requirements;
+it does not establish calibrated biological effects or complete any aim.
+Contextual joint directions await reader/closure; full expanded working-model
+integration, predictor/domain/PAE, accepted species/reconciled gene framework
+and calibrated inference remain required. All eight aims incomplete; GPU paused.
+[Background/matching results](full-screened-background-results-20261002.md),
+[joint physical directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).

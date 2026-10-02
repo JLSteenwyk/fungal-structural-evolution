@@ -1,0 +1,23 @@
+{
+  "status": "complete_verified_full_triad_sequence_alignment_dispositions",
+  "ordered_model_triads": 31235,
+  "source_ready_triads": 27056,
+  "unique_sequence_model_sets": 27056,
+  "native_alignment_states": 324672,
+  "counts": {
+    "mafft_auto:valid_sequence_alignment": 162336,
+    "famsa_default:valid_sequence_alignment": 162336
+  },
+  "common_residue_occurrences": 85050227,
+  "full_hash_archive": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "899f7b23b01328d81891cd016bf866cc6af39ecdd7a7dd718034629a7dc0d310",
+  "bound_source_hashes": 321819,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "4d05dcc5f5ed5d075b1b72910b2806e0e8291178e469e65dbad81d1d0c32fd65",
+  "independent_readback": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/readback.json",
+  "independent_readback_sha256": "d4290d43b5949fac6776b1d264a7fcf0ff9da257ad9f903927f35dc8165eb7a0",
+  "completion_plan_sha256": "fc8b96fdd4e76d63e1401ab56cc56a21b6c67ec6376d8c9200237b842fe1a671",
+  "scientific_eligibility": false,
+  "scope": "Full source-bound27056physical duplicate/reference triples under both installed MAFFT7.525--auto andFAMSA2.5.2default, all6input permutations=324672native dispositions. Align original full sequences before filtering any confidence residues; retain exact original residue triples in fully observed columns. Original31235triads/283409contexts/214461ties/428922sides including unscheduled/missing/excluded remain linked by closed fullcatalog. Nativeinput/output/error bytes,command/PID/create/timing and statuses stored in hash-bound transactional SQLite; errors/timeouts/malformed outputs remain explicit. Restart reuses exactly checked completed records; owned interrupted input mustmatch. Separate raw SeqIO/counter reader verifies every fullstate/sequence/command/input/rawhash/coordinate mapping; fullsourcehashes and both original producer/reader journals required. Same-residue proper-rigid fits under full/plddt70masks, originalcoverage screens, inherited target exclusions, comparison against structural mappings and phylogenetic/prediction/domain/PAE/calibration controls remain downstream requirements. No homology truth, biological asymmetry/evolutionarydirection or acceptedroot/model inferred from alignment. All8aims remain incomplete; GPU inference paused; no newcharges or existing job restart/mutation."
+}

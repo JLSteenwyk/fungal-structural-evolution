@@ -1,0 +1,82 @@
+{
+  "status": "complete_verified_full_fixed_matching_post_screen_balance_and_reuse",
+  "target_nodes": 283409,
+  "background_nodes": 318037,
+  "selected_records": 4250692,
+  "scenarios": 54,
+  "strata": 432,
+  "coverage_rows": 7776,
+  "balance_rows": 62208,
+  "reuse_rows": 32682096,
+  "retained_selection_screen_cells": 46158656,
+  "features": [
+    "sequence_distance",
+    "log_positive_sequence_distance",
+    "mean_log_length",
+    "log_length_asymmetry",
+    "mean_plddt",
+    "minimum_plddt",
+    "mean_lowconf_fraction",
+    "maximum_lowconf_fraction"
+  ],
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "masks": [
+    "full",
+    "plddt70",
+    "both"
+  ],
+  "guides": [
+    "profile",
+    "mafft"
+  ],
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "full_hash_archive": "results/structural_comparisons/full-screened-balance-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "9a72bb98a719e419498668977b7f918f6f7b2c5a459f0807adf4436971e9fa5c",
+  "bound_source_hashes": 1830489,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-screened-balance-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "adbb95c73159ddc834450079ec8c1b23f66e81884198fb43f0df9cb84dcd309e",
+  "independent_readback": "results/structural_comparisons/full-screened-balance-20261001-v1/readback.json",
+  "independent_readback_sha256": "1e6ed09dfcbea143f6a537dc2e416a6194085a110e840f9b00303acb36f73598",
+  "source_plan": "metadata/full_screened_balance_plan_20261001.json",
+  "source_plan_sha256": "b27f52577390b1ca66df19548928156a716bca4bd397d735694a51e7cd8f3853",
+  "completion_plan_sha256": "2e750e59087922996ea7261353a7744783e11fec725e7ae399aab8c8789c6dbf",
+  "scientific_eligibility": false,
+  "scope": "All54frozen scenarios/four policies/two guides andallfull,pLDDT70,intersection masks andsix original-length screens. Eight endpoint-permutation-invariant metadata features summarized for retained selected records against all original modeled targets, original metadata-matched targets and all target-screen-eligible records, including unmatched targets. No epsilon for zero-distance logs; finite joint feature pairs and exclusions retained, exact constant values havezero variance/nonestimable standardized shifts. Report family/taxon/gene/physical-pair representation and node-versus-physical reuse, full reciprocal reuse diagnostics and Kish weight concentration. These weights are algebraic descriptive equal-control-mass diagnostics, not inferential weights, independent replicates, effective evolutionary sample sizes, phylogenetic correction or a validated duplication effect. Original selections/unmatched/failures remain in closed source, never rematched. Full source/output hashes, independent every-cell/every-reuse-row readback and two exact original journals required. Predictor/domain/PAE/orientation/ancestry/missingness sensitivity and calibrated effects remain unfinished."
+}

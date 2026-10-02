@@ -1,0 +1,83 @@
+{
+  "status": "complete_verified_full_fixed_matched_coverage_attrition",
+  "target_nodes": 283409,
+  "background_nodes": 318037,
+  "target_policy_records": 1133636,
+  "scenarios": 54,
+  "scenario_decisions": 61216344,
+  "selected_records": 4250692,
+  "unmatched_decisions": 56965652,
+  "selection_screen_cells": 76512456,
+  "full_scenario_screen_cells": 1101894192,
+  "attrition_rows": 7776,
+  "screens": [
+    {
+      "id": "n30_c50",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n30_c70",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n30_c90",
+      "minimum_aligned_residues": 30,
+      "minimum_original_coverage": 0.9
+    },
+    {
+      "id": "n50_c50",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.5
+    },
+    {
+      "id": "n50_c70",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.7
+    },
+    {
+      "id": "n50_c90",
+      "minimum_aligned_residues": 50,
+      "minimum_original_coverage": 0.9
+    }
+  ],
+  "masks": [
+    "full",
+    "plddt70",
+    "both"
+  ],
+  "guides": [
+    "profile",
+    "mafft"
+  ],
+  "policies": [
+    "alignment_evalue",
+    "alignment_bitscore",
+    "envelope_evalue",
+    "envelope_bitscore"
+  ],
+  "node_dispositions": {
+    "target:profile:distinct_model_pair": 134430,
+    "target:profile:identical_model_no_alignment": 7294,
+    "target:mafft:distinct_model_pair": 134391,
+    "target:mafft:identical_model_no_alignment": 7294,
+    "background:profile:identical_model_no_alignment": 13026,
+    "background:mafft:identical_model_no_alignment": 13102,
+    "background:profile:distinct_model_pair": 145966,
+    "background:mafft:distinct_model_pair": 145943
+  },
+  "full_hash_archive": "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/completion_archive.json",
+  "full_hash_archive_sha256": "53e26505102b853c729ca8ab925e368b0a5d9a9b4a079202b7d57a46db8327c6",
+  "bound_source_hashes": 1830469,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/receipt.json",
+  "producer_receipt_sha256": "131b43eca259d3a5efa1354a16331916566cbe88d8b0ebfa94f91110a92e9c6b",
+  "independent_readback": "results/structural_comparisons/full-fixed-matched-coverage-20261001-v1/readback.json",
+  "independent_readback_sha256": "ecec1cc7d4decf1b16b2d205d8dffcb8c11693142728bf6f1b59b66c4f573173",
+  "source_plan": "metadata/full_matched_coverage_plan_20261001.json",
+  "source_plan_sha256": "957a961c5fba81bca74fb666a099be4dc333bbf320dec74b9d467e6374d3c827",
+  "completion_plan_sha256": "831db364b12a1b7f4fa41f137dd9ecdea92c83dd890f57ab942be0914ff55382",
+  "scientific_eligibility": false,
+  "scope": "Preserve all original chosen controls, endpoint mapping/caliper scores/ties and all unmatched scenarios across the complete frozen54-scenario design. Map physical QC by model ID/version regardless of gene roles; same-model nodes retained with explicit no-alignment disposition, not zero structural effects. Same six original full-protein length screens for full,pLDDT70,and intersection. No filtering/rematching on structural outcomes. Full source hashes, independent all-row SQL projection/stratum replay and original producer/reader journal closure required. Post-screen covariate balance, predictor/PAE/orientation controls, family/phylogeny/taxon dependence and calibrated biological inference remain separate unfinished requirements; counts are dependent logical records."
+}

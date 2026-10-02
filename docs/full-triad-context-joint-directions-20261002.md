@@ -1,10 +1,10 @@
 # Joint sequence/structural directions in original gene-tree contexts
 
-The full integration is implemented and queued for **283,409 original gene-tree
+The full integration's producer has completed **283,409 original gene-tree
 contexts, 566,818 design records, 214,461 tied references and 428,922 logical
 sides**. It links all 27,056 source-ready ordered physical triples and 730,512
 joint direction groups back to their original parent and reference identities.
-Full production results are pending. This extends the
+Full independent readback and closure remain pending. This extends the
 [completed structural-context directions](full-triad-context-contrasts-20261002.md)
 to the [joint sequence/structural physical control](full-triad-joint-directions-20261002.md).
 
@@ -153,3 +153,13 @@ Actual matched backgrounds, predictor/domain/PAE controls, accepted species and
 reconciled gene framework, family/taxon dependence, missingness/sampling and
 statistical calibration remain required. All eight scientific aims remain
 incomplete; GPU prediction remains paused.
+## Current production checkpoint — October 2 UTC
+
+The original producer completed all 283,409 contexts/214,461 ties and
+459,122,580 dependent policy decisions. Its original process is absent and its
+invocation-linked completion/resource journal passed the [fresh full runtime
+check](../metadata/project_runtime_checkpoint_20261002_v20.json). Independent
+original-source/SQL readback and final closure remain live; there is no final
+completion claim for this context stage. The upstream [joint physical directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc)
+are now fully closed and published. This updates the earlier queued status.
+All original gates remain intact, all eight aims incomplete, GPU prediction paused.
