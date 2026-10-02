@@ -1,0 +1,28 @@
+{
+  "status": "passed_independent_spectral_multistart_optimizer_contracts",
+  "independent_ml_reml_cases": 6,
+  "candidates_with_all_independent_starts_agreeing": 5,
+  "candidate_statuses": [
+    "independent_multistart_searches_agree_pending_inferential_calibration",
+    "independent_multistart_searches_agree_pending_inferential_calibration",
+    "independent_multistart_searches_agree_pending_inferential_calibration",
+    "independent_multistart_searches_agree_pending_inferential_calibration",
+    "independent_shared_entity_search_requires_review",
+    "independent_multistart_searches_agree_pending_inferential_calibration"
+  ],
+  "maximum_dense_objective_error": 2.842170943040401e-14,
+  "independent_budget_exhaustion_retained_as_review": true,
+  "altered_candidate_refused_before_search": true,
+  "source_hashes": {
+    "scripts/check_independent_shared_entity_optimizer.py": "9c5df2359819754a3bd2ec10013284973cac689aa6158c31e2f53788f4f2dfd2",
+    "scripts/independent_shared_entity_optimizer.py": "0d5d98a9e69059a7b08d60e91372048e3a02ca58214330cd32513311f95652ff",
+    "scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "scope": "Synthetic complete numerical optimizer fixtures only. Dense objective checks of independent spectral SLSQP starts. Agreement is not a global optimality proof, production biological fit, pilot or calibrated uncertainty."
+}

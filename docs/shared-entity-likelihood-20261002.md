@@ -108,3 +108,60 @@ These are prospective budgets, not launched limits or measured peak memory.
 Eligible counts, full-scope timing and restartable export/readback contracts
 still require closed design and covariance qualification. No production fitting
 job was launched by this inventory.
+
+The [independent optimizer](../scripts/independent_shared_entity_optimizer.py)
+uses spectral scores with SLSQP, distinct from production Cholesky/L-BFGS-B.
+Three deterministic starts must independently meet boundary KKT conditions,
+avoid the upper cap and agree with the supplied candidate at an explicit
+absolute likelihood tolerance. All failures and disagreements remain review.
+[Six software comparisons](../metadata/independent_shared_entity_optimizer_validation_20261002.json)
+checked every finite independent objective against a dense inverse: maximum
+discrepancy 2.85e-14. Five cases met every independent-start requirement; one
+retained numerical review. Budget exhaustion and an altered candidate were
+rejected. Bounded multistart agreement does not prove a global optimum.
+
+The [full fitting producer](../scripts/prepare_full_shared_entity_fits.py) and
+[independent reader](../scripts/readback_full_shared_entity_fits.py) now connect
+these algorithms to the entire original source grid. Candidate identities bind
+closed qualification, original design/response/audit identities, methods,
+optimizer/audit settings and all backend pins. Response/design hashes and
+original ordered cohorts are rechecked before fitting. Only qualified bases
+are optimized. All excluded, constant, dependent and failed rows remain linked.
+Each cohort's compressed candidates and receipt are finalized atomically;
+restart verifies and reuses completed cohorts without rewriting them. SQLite
+links every original setting to its exact shared candidate. Completed producers
+and readers refuse reruns, including a different reader output name.
+
+The reader reconstructs every original candidate and setting link, independently
+checks coefficients/scale/components and every finite start, validates seeds,
+selected parameters and spread tolerances, and deterministically reproduces
+claimed production failures. Converged candidates additionally receive local
+curvature and independent SLSQP checks. Numerical reviews cannot be promoted.
+Reader scratch can be rebuilt only under its exclusive lock and unchanged
+source state, with a complete independent replay. Numerical output acceptance
+still requires final full hashes and both actual original process journals.
+
+[Complete software contracts](../metadata/full_shared_entity_fit_contract_validation_20261002_v3.json)
+passed the 24-case/six-cohort/720-setting grid: 7,200 candidate rows and 14,400
+setting links, all 12 rehashed altered-grid exports and seven altered numerical
+exports, checkpoint reuse and completed-restart refusal. Separate numerical
+fixtures exercise independent candidate/curvature/search qualification,
+budget-failure reproduction and the full five-entity-plus-species recipe's
+strict optimization review. The early SLSQP checker expectation was corrected
+to retain either iteration-limit review or explicit evaluation-budget failure;
+neither outcome permits numerical acceptance. Earlier unlaunched full-grid
+receipts remain preserved. These are software fixtures, not a biological pilot.
+
+The [71-pin draft production plan](../metadata/full_shared_entity_fit_draft_plan_20261002.json)
+retains the full 622,080-setting grid. Its [updated resource inventory](../metadata/full_shared_entity_fit_resource_inventory_20261002_v4.json)
+includes independent three-start searches, start replays and local curvature:
+at most 1,534 independent-reader evaluations per candidate, including the
+production-failure replay alternative. These are evaluation ceilings, not
+expected work or runtime. The plan is neither launched nor queued. Closed
+qualification, full-scope timing and actual resource installation are still
+required; nonuniform/control variants and inferential calibration remain open.
+
+The [full-stage environment](../environments/full-shared-entity-fits-20261002.yml)
+pins the locally validated Python, NumPy, SciPy, Arrow, psutil and mpmath
+versions. The smaller numerical likelihood environment alone does not supply
+the full source-table/monitoring dependencies.

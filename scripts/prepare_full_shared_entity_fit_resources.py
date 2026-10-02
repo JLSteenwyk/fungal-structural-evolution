@@ -20,7 +20,11 @@ def main():
         'scripts/shared_entity_likelihood.py','scripts/fit_shared_entity_likelihood.py',
         'scripts/independent_shared_entity_likelihood.py','environments/shared-entity-likelihood-20261002.yml',
         'metadata/full_expanded_covariance_completed_20261002.json',
-        'scripts/prepare_full_shared_entity_fit_resources.py']
+        'scripts/prepare_full_shared_entity_fit_resources.py',
+        'metadata/independent_shared_entity_optimizer_validation_20261002.json',
+        'metadata/full_shared_entity_fit_contract_validation_20261002_v3.json',
+        'scripts/independent_shared_entity_optimizer.py','scripts/full_shared_entity_fit_sources.py',
+        'scripts/prepare_full_shared_entity_fits.py','scripts/readback_full_shared_entity_fits.py']
     bindings={s:sha(s) for s in paths}
     plan=json.loads(Path(paths[0]).read_text());qualification=json.loads(Path(paths[1]).read_text())
     receipt_path=Path(plan['output'])/'receipt.json';bindings[str(receipt_path)]=sha(receipt_path)
@@ -33,7 +37,8 @@ def main():
         closed=json.loads(Path(path).read_text());assert closed['status']==expected
         assert sha(closed['full_hash_archive'])==closed['full_hash_archive_sha256']
         bindings[closed['full_hash_archive']]=closed['full_hash_archive_sha256']
-    for path in paths[5:7]:
+    for path in [*paths[5:7],'metadata/independent_shared_entity_optimizer_validation_20261002.json',
+                 'metadata/full_shared_entity_fit_contract_validation_20261002_v3.json']:
         validation=json.loads(Path(path).read_text());assert validation['status'].startswith('passed_')
         for source,digest in validation['source_hashes'].items():assert sha(source)==digest;bindings[source]=digest
     modes=2;trees=len(design['trees']);methods=['ml','reml'];outcomes=2
@@ -60,7 +65,12 @@ def main():
         per_start_search_evaluation_budget=max_evaluations,per_start_final_replay_budget=1,
         maximum_search_and_final_replay_evaluations=unique_candidates*starts*(max_evaluations+1),
         maximum_candidate_replay_and_local_curvature_evaluations=unique_candidates*(2+4*ratios),
-        additional_independent_global_optimization_budget_not_yet_specified=True,
+        independent_optimizer_method='spectral_SLSQP',independent_optimizer_starts=3,
+        maximum_independent_search_and_final_replay_evaluations=unique_candidates*starts*(max_evaluations+1),
+        maximum_complete_independent_reader_evaluations=unique_candidates*(5+2+4*ratios+starts*(max_evaluations+1)),
+        complete_independent_reader_evaluation_bound_per_candidate=5+2+4*ratios+starts*(max_evaluations+1),
+        independent_production_failure_replay_evaluations_included_in_maximum=True,
+        mathematical_global_optimality_not_established=True,
         eligible_fit_count_pending_full_uniform_covariance_qualification=True,
         proposed_cpu_quota_per_worker=2,proposed_memory_gib_per_worker=32,proposed_swap_gib=0,proposed_blas_threads=1,
         largest_original_cohort=n,species_factor_rank=factor_rank,
@@ -79,10 +89,11 @@ def main():
             'exact shared-input reuse; qualification/review rows must remain even when no optimizer runs. '
             'Counts are preliminary producer scope, not accepted designs or fitted effects. Evaluation '
             'budgets are maxima, not expected iterations or wall time. Output estimates require record '
-            'size monitoring; array ceilings are not process peak-memory guarantees. Before production '
-            'launch close original design/qualification stages, finish restartable producer/independent '
-            'reader/export contracts, estimate full-scope timing with qualified inputs, specify independent '
-            'global-optimization checks and enforce resource/disk limits. Nonuniform/control variants, '
+            'size monitoring; array ceilings are not process peak-memory guarantees. Full restartable '
+            'producer/independent reader/export contracts passed synthetic full-grid fixtures. Before '
+            'production launch close original design/qualification stages and estimate full-scope '
+            'timing with qualified inputs and enforce resource/disk limits. Independent bounded multistart '
+            'agreement and local curvature checks do not prove mathematical global optimality. Nonuniform/control variants, '
             'uncertainty calibration, accepted phylogenetic framework and all eight aims remain required.')
     with a.output.open('x') as f:json.dump(result,f,indent=2);f.write('\n')
     print(json.dumps({k:result[k] for k in ['status','maximum_unique_uniform_candidates',

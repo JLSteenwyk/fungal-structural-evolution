@@ -114,6 +114,12 @@ up to 5,208,000 unique candidates and 12,441,600 original setting links.
 Closed qualification, full-scope timing, production fitting/global numerical
 audits and calibrated inference remain pending.
 
+Complete source-bound fitting and independent spectral SLSQP/readback are now
+implemented with immutable cohort checkpoints. Full software contracts passed
+7,200 candidates/14,400 links, rejecting 19 altered exports. A 71-pin production
+draft preserves every original setting; it remains unlaunched pending closed
+qualification and measured runtime.
+
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved
 memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet

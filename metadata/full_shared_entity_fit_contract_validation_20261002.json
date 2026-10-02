@@ -1,0 +1,45 @@
+{
+  "status": "passed_full_shared_entity_fitting_grid_checkpoint_and_spectral_contracts",
+  "synthetic_original_model_settings": 720,
+  "synthetic_candidate_rows": 7200,
+  "synthetic_setting_fit_links": 14400,
+  "rehashed_altered_grid_exports_rejected": [
+    "omit_last_tree",
+    "omit_unsigned",
+    "duplicate_candidate",
+    "wrong_fit_input",
+    "wrong_response_hash",
+    "wrong_covariance_audit",
+    "wrong_active_columns",
+    "false_scientific_acceptance",
+    "promote_source_review",
+    "link_omit_reml",
+    "link_wrong_candidate",
+    "link_wrong_status"
+  ],
+  "altered_numerical_exports_rejected": [
+    "objective",
+    "start_objective",
+    "variance_component",
+    "false_failure",
+    "source_coefficient"
+  ],
+  "independent_candidate_curvature_and_multistart_path_passed": true,
+  "budget_failure_reproduced_without_promotion": true,
+  "completed_restart_refused": true,
+  "interrupted_cohort_checkpoints_reused_without_rewrite": true,
+  "source_and_journal_fixtures_synthetic": true,
+  "source_hashes": {
+    "scripts/check_full_shared_entity_fits.py": "d457d66f9dfa12637d9ab484a1d88a18ad08c1b1b174d82c20e5ad544f6fe646",
+    "scripts/full_shared_entity_fit_sources.py": "62863cee98bcbafd66ce3f9bf7db1f1be1b2aa64cff42ea05bf8ccc0090e8504",
+    "scripts/prepare_full_shared_entity_fits.py": "6589766e2515d2ccce447f56b61db93df220aca38630754f2fbffedb15358a63",
+    "scripts/readback_full_shared_entity_fits.py": "eaea35713f21c814f1b1ede9cf59fb2903b83557c9612cedc4945dde6241ec82",
+    "scripts/independent_shared_entity_optimizer.py": "0d5d98a9e69059a7b08d60e91372048e3a02ca58214330cd32513311f95652ff",
+    "scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6"
+  },
+  "scope": "Complete synthetic 24-case/six-cohort/720-setting source grid under both outcomes, ML/REML, signed/unsigned and all five trees, plus explicit positive numerical-fit and failure/export contracts. No biological pilot, production fitting launch, closed production numerical result or calibrated inference."
+}

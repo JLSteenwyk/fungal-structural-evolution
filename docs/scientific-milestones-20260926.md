@@ -1112,3 +1112,11 @@ without reducing the project to a pilot. These numerical foundations advance
 aims 2/4; production qualification/fitting, independent global checks, control
 variants, uncertainty calibration and all eight scientific aims remain open.
 [Likelihood, independent audit and complete inventory](shared-entity-likelihood-20261002.md).
+
+Complete uniform fitting/readback and immutable cohort checkpoints passed the
+full 7,200-candidate/14,400-link software grid, 12 rehashed grid alterations and
+seven numerical alterations. Independent spectral SLSQP comparisons checked
+six cases; five met all numerical requirements and one retained review. The
+71-pin full-scope draft is unlaunched pending closed original qualification and
+measured runtime. Production numerical acceptance, nonuniform/control variants,
+calibration and the eight biological aims remain incomplete.

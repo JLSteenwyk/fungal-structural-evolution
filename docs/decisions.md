@@ -876,3 +876,20 @@ Close original design/qualification inputs, specify restartable full exports
 and independent global checks, and measure full-scope timing before production
 launch. No biological pilot, new GPU schedule or paid resource is introduced.
 [Validation, limits and resource inventory](shared-entity-likelihood-20261002.md).
+
+## October 2: checkpoint full fits and independently qualify every finite candidate
+
+Bind full-grid candidate identity to closed qualification, original response/
+design/audit identities and all backend pins/settings. Finalize each cohort
+atomically and verify it on resume. Keep source exclusions, exact zero columns,
+constant responses, dependencies and optimizer failures in the setting links.
+Refuse completed reruns, including alternate reader output names. Rebuild only
+derived reader scratch under its exclusive lock and unchanged input state.
+
+Use separate spectral SLSQP starts, objective/KKT checks and conservative local
+curvature before calling a working candidate independently numerically audited.
+Replay every finite production start and reproduce declared failures, so error
+records cannot conceal source cases. Agreement supports numerical qualification
+but proves neither global optimality nor calibrated biological effects. The
+full 71-pin draft remains unlaunched while qualification/timing are incomplete;
+all eight aims and nonuniform/control/calibration requirements stay open.

@@ -11444,3 +11444,33 @@ and figure review remain next.
   membership construction; uniform qualifier remains original queued. GPU
   prediction remains paused; all eight aims remain incomplete.
   [Independent replay, curvature and full inventory](shared-entity-likelihood-20261002.md).
+
+- October 2, 23:14 UTC: the previous goal turn made concrete progress by
+  committing/pushing independent spectral likelihood/curvature validation and
+  complete fitting resource arithmetic (`af131af`). Original design reader
+  2531510 remains live and advanced beyond 1,425 of 4,340 cohorts; original
+  uniform covariance qualification remains queued without restart.
+
+  Implemented independent spectral SLSQP multistart comparison. Six ML/REML
+  software cases matched dense objectives to 2.85e-14; five met every start's
+  boundary/agreement requirement and one stayed review. Implemented complete
+  source-bound fitting, atomic cohort checkpoints, original setting-to-candidate
+  SQLite links and independent numerical/start/curvature/search readback.
+  Complete contracts passed all 7,200 synthetic candidates/14,400 setting
+  links over the full 720-setting fixture, 12 rehashed grid alterations and
+  seven numerical alterations, completed-restart refusal and immutable cohort
+  checkpoint reuse. Real source reviews/failures are retained and reproduced,
+  never changed into accepted effects. The full six-variance numerical fixture
+  remained under its strict optimization review threshold.
+
+  Prepared a 71-pin draft retaining all prospective 5,208,000 candidates/
+  12,441,600 original setting links. Updated resource ceilings include three
+  independent SLSQP searches and all replays/curvature, with at most 1,534
+  reader evaluations per candidate; ceilings are not ETAs. Production fitting
+  is neither launched nor queued pending closed qualification and measured
+  runtime. Original BAli-Phy retry is live beyond iteration 906 with two
+  existing allocation warnings and no observed fatal error; earlier higher-
+  memory failure remains explicit. Nonuniform/control variants, calibration,
+  accepted phylogenetic/reconciliation framework and all eight aims remain
+  incomplete. GPU structure prediction remains paused.
+  [Full fitting contracts, draft and current resources](shared-entity-likelihood-20261002.md).

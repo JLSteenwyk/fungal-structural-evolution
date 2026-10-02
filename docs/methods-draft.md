@@ -2590,3 +2590,18 @@ analytic critical-cone stress fixtures passed. Complete prospective uniform
 ML/REML arithmetic covers at most 5,208,000 unique candidates/12,441,600 setting
 links. Timing, closed qualified inputs, full production audits and calibration
 remain required; no fitting launch or biological acceptance follows.
+
+Complete uniform fitting now has source-bound candidate identities, immutable
+cohort checkpoints and SQLite links for every original setting. Original
+response/design/audit hashes and distinct gene/model identities are retained;
+only qualified covariance recipes are optimized. Independent spectral SLSQP
+searches supplement replay/curvature: all three must meet explicit boundary
+and objective agreement conditions. Bounded search agreement is not a global
+optimality proof. The reader replays finite original starts, seed coordinates,
+selected ratios, conditional coefficients, scales/components and exact original
+setting links; claimed failures are reproduced without promotion. Full-grid
+software contracts passed 7,200 candidates/14,400 links and 19 altered exports,
+with interruption recovery and completed-restart refusal. The 71-pin production
+draft preserves all settings, but closed qualification, full-scope timing,
+actual resource limits and final two-journal/hash closure remain required.
+No production fits or calibrated biological effects are established.
