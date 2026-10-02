@@ -1,0 +1,25 @@
+{
+  "status": "passed_full_triad_sequence_alignment_native_software_contracts",
+  "actual_native_states": 48,
+  "methods": 2,
+  "input_orders": 6,
+  "fixtures": 4,
+  "altered_exports_rejected": 15,
+  "exact_interrupted_task_replay_passed": true,
+  "counts": {
+    "mafft_auto:valid_sequence_alignment": 24,
+    "famsa_default:valid_sequence_alignment": 24
+  },
+  "scientific_eligibility": false,
+  "source_hashes": {
+    "scripts/full_triad_sequence_sources.py": "2a78edd867d35c880b5f6c6d5057705d7d225c339ba1501dac3929f5fb38633e",
+    "scripts/triad_sequence_native.py": "796807dae6312039c40c8474f5801f704f25829dbfa929c0f23be6d0ae754077",
+    "scripts/run_full_triad_sequence_alignments.py": "9fcb17e80c05c9fbda7c843260d7d2d5ff162b1d69396f0351f3706d119fabea",
+    "scripts/readback_full_triad_sequence_alignments.py": "8d59868303629fd3850c47c1ab6f5b3a7de90af3fc482feefbc19b93a0effe03",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_triad_sequence_alignments.py": "2a4f16467f62bad23e1d3fcbfea94317722a2f167e28f6163988a90f63a33de3",
+    "metadata/full_triad_sequence_alignment_tools_20261002.json": "81319131ec066b0c4f1a3985b9926abb008807a3d8c914d582e073789c698fc4"
+  },
+  "scope": "Actual installed MAFFT/FAMSA software fixtures, all6orders, indel/repeat/identical/nonstandard-letter sequences. Full raw independent SeqIO/counter readback, changed checkpoints/scope reject, interrupted exact input replay. No biological pilot or production alignment completion.",
+  "receipt": "results/software-checks/full-triad-sequence-alignments-20261002-v1/receipt.json",
+  "receipt_sha256": "019a36e6d0eda9d28f19c83b3ab2f53e35ed79f643f1f555c7668f970f1afbc6"
+}

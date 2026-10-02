@@ -1,0 +1,34 @@
+{
+  "source_plan": "metadata/full_triad_sequence_catalog_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-sequence-catalog-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-sequence-catalog-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_sequence_catalog_pending_independent_readback",
+  "reader_status": "passed_full_triad_sequence_catalog_readback",
+  "completed_status": "complete_verified_full_triad_sequence_catalog",
+  "summary_fields": [
+    "ordered_model_triads",
+    "source_ready_triads",
+    "unscheduled_original_triads",
+    "unique_sequence_model_sets",
+    "native_alignment_states",
+    "target_contexts",
+    "reference_tie_records",
+    "duplicate_reference_links",
+    "maximum_sequence_length",
+    "maximum_three_sequence_length",
+    "sequence_letters"
+  ],
+  "launches": [
+    "metadata/full_triad_sequence_catalog_launch_20261002.json",
+    "metadata/full_triad_sequence_catalog-readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_sequence_catalog_plan_20261002.json": "8af76296b5a5ab02e04cb2cd7559b6cba9b563cc3ad910bb70f3b99fb05d9059",
+    "metadata/full_triad_sequence_catalog_launch_20261002.json": "732dd6e0383e1d42153b3bf3c1a516aaea25525091befbb1aa69de457342f607",
+    "metadata/full_triad_sequence_catalog-readback_launch_20261002.json": "1fa46fc51cb802c08c523938284a58d25dcedb9f52dfa5f80c4a553137274964",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_sequence_catalog_completed_20261002.json",
+  "scope": "Full original31235ordered physical triads and27056source-ready model triples, source-bound to all283409contexts/214461ties/428922logical sides including excluded/missing/identical/outside-design records. Full original sequence identities before masks; reuse identical unordered versioned model sets while retaining every role assignment and logical occurrence. Both MAFFT/FAMSA and all6input orders will be run for every physical set, with full/plddt70same-residue geometry downstream. No structural outcome/native alignment/acceptedhomology/asymmetry/predictionaccuracy claim at catalog stage. Full independent original sequence/role/source/grid reconstruction and both original producer/reader completion journals plus all hashes required. All8aims incomplete; GPU prediction paused; no new charges or existing job mutation."
+}

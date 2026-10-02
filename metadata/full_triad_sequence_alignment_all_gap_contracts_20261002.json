@@ -1,0 +1,14 @@
+{
+  "status": "passed_exact_ungapped_sequence_all_gap_column_contract",
+  "independent_parsers_rejected": 2,
+  "original_valid_native_alignment_preserved": true,
+  "modified_raw_sha256": "daa89809013bc39ee78b7b0df109020a7d496bb31f5275c611749639495a9eca",
+  "source_hashes": {
+    "results/software-checks/full-triad-sequence-alignments-20261002-v1/native/receipt.json": "b5b7ee727a1b58e3865cb9cff4790907e21451b34ec92b34673378faa67f5e1a",
+    "results/software-checks/full-triad-sequence-alignments-20261002-v1/native/native_alignments.sqlite": "721bd51d9b1dde2ac0a8ea606f2d199a0a4259060bba8fb41ac14833b77bc1dc",
+    "scripts/triad_sequence_native.py": "796807dae6312039c40c8474f5801f704f25829dbfa929c0f23be6d0ae754077",
+    "scripts/readback_full_triad_sequence_alignments.py": "8d59868303629fd3850c47c1ab6f5b3a7de90af3fc482feefbc19b93a0effe03"
+  },
+  "scientific_eligibility": false,
+  "scope": "Prepend exactly one all-gap column to a valid native three-sequence MSA while preserving equal widths, all identifiers and every ungapped sequence. Both independent parsers reject solely the invalid all-gap correspondence column. Software contract only, no native output mutation or biological pilot."
+}

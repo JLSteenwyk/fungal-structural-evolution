@@ -520,3 +520,16 @@ full collection/journal/biological qualification remains separate.
   support/length semantics remain explicit. The full synthetic workflow passed
   with all 15 corrupted exports rejected; actual production remains dependent
   on the original 16 native fits. No GPU or paid resources are added.
+
+- October 2 UTC: apply sequence-derived correspondence controls to every
+  source-ready expanded physical triple, while retaining all original
+  missing/excluded/unscheduled context and role records. Align full sequences
+  before confidence filtering with both installed MAFFT/FAMSA under all six
+  input orders. Do not select alignments from structural outcomes, substitute
+  the previous 48 identical-domain cases for the full design, or count methods/
+  orders as biological replicates. Require independent raw sequence/position
+  reconstruction and both original journals/full hashes before downstream
+  same-residue geometry under both masks. Preserve source-parent eligibility,
+  original-protein coverage and explicit native failures. Sequence-derived
+  correspondence is a sensitivity control; predicted coordinates still derive
+  from sequences and biological homology/asymmetry require further evidence.

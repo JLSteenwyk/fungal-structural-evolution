@@ -2019,3 +2019,40 @@ rejected. Production waits for complete original native inference/collection;
 these software contracts do not constitute biological results. Resources were
 estimated before launch at serial two CPU/16 GiB/no swap/one BLAS thread,
 without GPU or charges. [Workflow and limitations](native-subset-tree-comparisons-20261002.md).
+
+### Full sequence-derived duplicate/reference correspondence (October 2 UTC)
+
+The original full triad design was independently inventoried using full
+sequence strings and exact model/version identities before confidence filtering.
+All 31,235 original physical triples remain represented; 27,056 source-ready
+triples are scheduled and 4,179 retain explicit unscheduled dispositions.
+The catalog is source-bound to all 283,409 contexts, 214,461 ties and 428,922
+logical sides. Every A/B/reference role assignment is preserved under sorted
+model indices. Full independent source/sequence/role readback and two-journal
+closure passed 321,761 bindings. Readiness does not establish biological
+duplication or orthology.
+
+Both installed MAFFT 7.525 (`--amino --anysymbol --thread 1 --auto`) and FAMSA
+2.5.2-2598410 (`-t 1`, default single-input settings) are running for all six
+input permutations of every set: 324,672 native dispositions. Common fully
+observed columns yield exact original residue triples; no structural distance
+selects an alignment or input order. Exact input/output/error bytes, checksums,
+commands, PID/create observations and every native timeout/error/malformed
+disposition are retained in transactional SQLite checkpoints. The separate
+reader uses Bio.SeqIO and independent residue counters to reconstruct all raw
+MSAs and their coordinate correspondences. Full native source/hash/readback
+and two-original-journal closure remain pending. Installed-tool software
+contracts passed all 48 indel/repeat/identical/nonstandard-letter states under
+the complete two-method/six-order grid, rejecting 15 altered exports; exact
+interrupted-task input replay also passed.
+
+Resources preceded launch: two one-thread CPU workers, 32 GiB RAM, no swap,
+32 GiB output allowance, 100 GiB disk reserve and no GPU or charges. After
+full native closure, both full and pLDDT70 masks require same-position proper
+rigid fitting for all 649,344 intended dispositions, preserving joint confidence
+filtering, original coverage/screens/parent exclusions and incomplete states.
+Comparison against structural correspondence, domain/orientation/PAE/predictor
+controls and phylogenetic/calibrated inference remain required. These dependent
+alternatives do not increase biological replication; alignment agreement does
+not establish homology truth, prediction independence or ancestral polarity.
+[Full workflow and current evidence](full-triad-sequence-correspondence-20261002.md).

@@ -1,0 +1,90 @@
+{
+  "status": "verified_live_full_triad_sequence_alignment_run",
+  "checked_utc": "2026-10-02T04:01:38.754330+00:00",
+  "exact_live_handles": [
+    {
+      "launch": "metadata/full_triad_sequence_alignments_launch_20261002.json",
+      "launch_sha256": "51f95b5b9b5065574bab83bd3f32fb03e47cb03e4baff226fcd7141b1341959d",
+      "pid": 1553892,
+      "created": 1790913503.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_triad_sequence_alignments.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_plan_20261002.json"
+      ],
+      "status": "sleeping",
+      "children": [
+        {
+          "pid": 1691639,
+          "created": 1790913697.79,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/famsa_v2.5.2/famsa",
+            "-t",
+            "1",
+            "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/native_work/01728d2dc5e43390fed3ffe5160a7519a9d25f312321106330f24713ccf76142/famsa_default-201/input.faa",
+            "STDOUT"
+          ],
+          "status": "running",
+          "cpu_seconds": 0.12
+        },
+        {
+          "pid": 1691647,
+          "created": 1790913697.83,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/famsa_v2.5.2/famsa",
+            "-t",
+            "1",
+            "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/native_work/01728d2dc5e43390fed3ffe5160a7519a9d25f312321106330f24713ccf76142/famsa_default-210/input.faa",
+            "STDOUT"
+          ],
+          "status": "running",
+          "cpu_seconds": 0.09
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_triad_sequence_alignments-readback_launch_20261002.json",
+      "launch_sha256": "d33d586cf38a4bb35ba61b741971242c4178990a6deaf9861af2db8384772cd9",
+      "pid": 1553896,
+      "created": 1790913503.42,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_readback_wait_plan_20261002.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    },
+    {
+      "launch": "metadata/full_triad_sequence_alignments-closure_launch_20261002.json",
+      "launch_sha256": "3610f6abe05333c484dd59cbd124a2e8f6aa55bc7b4942a03575f7715ce6016e",
+      "pid": 1553900,
+      "created": 1790913503.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_closure_wait_plan_20261002.json"
+      ],
+      "status": "sleeping",
+      "children": []
+    }
+  ],
+  "state_path": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/state.json",
+  "state_sha256_at_observation": "bbc47b8fd1e600e39dfdbd69cdae99e1f81216edae6193575fc54fedf4f5d8e2",
+  "progress": {
+    "status": "running_full_triad_sequence_alignment_dispositions",
+    "completed": 2048,
+    "total": 324672,
+    "counts": {
+      "mafft_auto:valid_sequence_alignment": 1026,
+      "famsa_default:valid_sequence_alignment": 1022
+    },
+    "plan_sha256": "8c2241dde96059e740d835c707137061057f31c57d2592ed8d196d6cb7be61f8"
+  },
+  "scientific_eligibility": false,
+  "gpu_inference_paused": true,
+  "scope": "All3originalPID/create/CMD matched live; nativeprogress observed atomically from its state snapshot. Full sequence alignment production remains incomplete; raw readback/closure, same-residue geometry, masks/coverage/context/prediction/domain/PAE/phylogeny/calibration controls remain required. No restart or existing job mutation."
+}

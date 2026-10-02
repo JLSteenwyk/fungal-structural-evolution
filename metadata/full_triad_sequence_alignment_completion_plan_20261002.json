@@ -1,0 +1,29 @@
+{
+  "source_plan": "metadata/full_triad_sequence_alignment_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_sequence_alignment_dispositions_pending_independent_readback",
+  "reader_status": "passed_full_triad_sequence_alignment_raw_msa_readback",
+  "completed_status": "complete_verified_full_triad_sequence_alignment_dispositions",
+  "summary_fields": [
+    "ordered_model_triads",
+    "source_ready_triads",
+    "unique_sequence_model_sets",
+    "native_alignment_states",
+    "counts",
+    "common_residue_occurrences"
+  ],
+  "launches": [
+    "metadata/full_triad_sequence_alignments_launch_20261002.json",
+    "metadata/full_triad_sequence_alignments-readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_sequence_alignment_plan_20261002.json": "8c2241dde96059e740d835c707137061057f31c57d2592ed8d196d6cb7be61f8",
+    "metadata/full_triad_sequence_alignments_launch_20261002.json": "51f95b5b9b5065574bab83bd3f32fb03e47cb03e4baff226fcd7141b1341959d",
+    "metadata/full_triad_sequence_alignments-readback_launch_20261002.json": "d33d586cf38a4bb35ba61b741971242c4178990a6deaf9861af2db8384772cd9",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_sequence_alignment_completed_20261002.json",
+  "scope": "Full source-bound27056physical duplicate/reference triples under both installed MAFFT7.525--auto andFAMSA2.5.2default, all6input permutations=324672native dispositions. Align original full sequences before filtering any confidence residues; retain exact original residue triples in fully observed columns. Original31235triads/283409contexts/214461ties/428922sides including unscheduled/missing/excluded remain linked by closed fullcatalog. Nativeinput/output/error bytes,command/PID/create/timing and statuses stored in hash-bound transactional SQLite; errors/timeouts/malformed outputs remain explicit. Restart reuses exactly checked completed records; owned interrupted input mustmatch. Separate raw SeqIO/counter reader verifies every fullstate/sequence/command/input/rawhash/coordinate mapping; fullsourcehashes and both original producer/reader journals required. Same-residue proper-rigid fits under full/plddt70masks, originalcoverage screens, inherited target exclusions, comparison against structural mappings and phylogenetic/prediction/domain/PAE/calibration controls remain downstream requirements. No homology truth, biological asymmetry/evolutionarydirection or acceptedroot/model inferred from alignment. All8aims remain incomplete; GPU inference paused; no newcharges or existing job restart/mutation."
+}

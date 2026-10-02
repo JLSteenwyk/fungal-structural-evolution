@@ -1,0 +1,29 @@
+{
+  "status": "estimated_before_full_324672_triad_sequence_alignment_states",
+  "checked_utc": "2026-10-02T03:58:24.001280+00:00",
+  "cpu": 2,
+  "workers": 2,
+  "native_threads_per_worker": 1,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "output_allowance_gib": 32,
+  "planning_hours": [
+    4.5,
+    270
+  ],
+  "runtime_uncalibrated": true,
+  "native_timeout_seconds": 600,
+  "source_ready_triads": 27056,
+  "unique_model_sets": 27056,
+  "native_alignment_states": 324672,
+  "maximum_sequence_length": 2271,
+  "maximum_three_sequence_length": 3819,
+  "available_memory_gib": 564.1630935668945,
+  "free_disk_gib": 10497.125705718994,
+  "basis": "Full actual source census, all2methods*6permutations*27056sets; 4.5-270h illustrative active-time scenario from0.1-6CPU sec/state divided by2workers, not measured biological sample or ETA; hash I/O and extreme cases excluded.600sec native guard retains timeout rows.64KiB/state raw storage scenario19.82GiB plus compressedSQLite overhead,32GiB allowance/100GiB reserve. Full raw input/output/error bytes, exactcommands/PID/create recorded; all originals/missing/excluded contexts retained. Actual48installed-native software states,15changedexports rejected; no pilot/GPU/charges/source mutation. Separate serial rawreader and source/journal closure use2CPU32GiBnoSwap."
+}

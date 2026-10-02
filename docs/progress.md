@@ -10733,3 +10733,35 @@ does not establish universal coverage or complete the biological project.
   preserved failures. Expanded background progress was 187,136/298,848 states
   at observation. No native inference or unrelated job was restarted. All
   eight scientific aims remain incomplete; GPU prediction remains paused.
+
+- October 2 UTC: implemented the full expanded sequence-derived correspondence
+  control, preserving all 31,235 original physical triples and all original
+  283,409 contexts/214,461 ties/428,922 logical sides. All 27,056 source-ready
+  triples have checked full original sequences and exact A/B/reference role
+  projections; 4,179 unscheduled originals retain explicit dispositions.
+  Full source/sequence/grid/role producer and independent reader passed
+  321,761-binding/two-journal closure. The exact census found a maximum single
+  sequence length of 2,271, maximum summed triple length of 3,819 and only
+  standard amino acids. No structural result selects inputs.
+  [Complete source closure](../metadata/full_triad_sequence_catalog_completed_20261002.json).
+
+- October 2 UTC: both installed MAFFT/FAMSA and all six input permutations
+  passed 48 actual native software contracts across indel/repeat/identical/
+  nonstandard-letter inputs. Independent raw MSA/position reconstruction
+  passed; all 15 altered checkpoint/scope exports and malformed raw sequence
+  checks were rejected, and exact interrupted-input replay passed. The full
+  324,672-state native run is now active with two one-thread CPU workers,
+  32 GiB RAM/no swap, transactional checkpoints and preserved exact raw bytes,
+  commands and failure dispositions. Full independent raw reader and original
+  producer/reader journal closure are queued. Resource estimates preceded
+  launch; no GPU, charge or existing-job changes. The
+  [native checkpoint](../metadata/full_triad_sequence_alignment_runtime_checkpoint_20261002.json)
+  verified all three original live handles and recorded 2,048 valid states
+  at observation. The [project checkpoint](../metadata/project_runtime_checkpoint_20261002_v7.json)
+  rechecked 323,636 distinct closed bindings, 25 live pipeline handles, six
+  original scientific/retrieval jobs, 29 terminal successes and ten preserved
+  failures; background progress was 196,544/298,848 states. Native completion,
+  649,344 intended full/pLDDT70 same-residue geometry dispositions and integration
+  with original structural mappings/contexts/coverage/prediction/domain/PAE/
+  phylogeny/calibration remain required. All eight aims remain incomplete.
+  [Full correspondence workflow](full-triad-sequence-correspondence-20261002.md).

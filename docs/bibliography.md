@@ -101,9 +101,25 @@ especially for extracted domains and incomplete annotations.
 
 
 - Zhang, Rabiee, Sayyari and Mirarab 2018. [ASTRAL-III: polynomial time species tree reconstruction from partially resolved gene trees](https://doi.org/10.1186/s12859-018-2129-y). Full gene-tree species estimation with unresolved branches; informs the 30-run alignment/taxon/support sensitivity design. Published low-bootstrap contraction does not numerically validate our distinct SH-aLRT settings. Installed 5.7.8 jar/dependencies were checked against the official archive.
-- Sayyari and Mirarab 2016. [Fast Coalescent-Based Computation of Local Branch Support from Quartet Frequencies](https://doi.org/10.1093/molbev/msw079). Method behind ASTRAL local support/coalescent internal lengths; locality and inferred-gene/model assumptions require qualification before treating support as calibrated topology uncertainty. Independent local/global quartet and numerical validation passed the first full candidate; the 30-case readback remains queued.
+- Sayyari and Mirarab 2016. [Fast Coalescent-Based Computation of Local Branch Support from Quartet Frequencies](https://doi.org/10.1093/molbev/msw079). Method behind ASTRAL local support/coalescent internal lengths; locality and inferred-gene/model assumptions require qualification before treating support as calibrated topology uncertainty. Independent local/global quartet and numerical validation passed all 30 full candidates, followed by source/two-journal closure; biological qualification remains open.
 
 - Sukumaran and Holder 2010. [DendroPy: a Python library for phylogenetic computing](https://doi.org/10.1093/bioinformatics/btq228). Tree parsing, manipulation and split-based comparisons underpin the independent raw-tree pruning/RF/bipartition readers. The installed implementation is checked using complete source trees and altered-output software contracts; software agreement does not qualify biological interpretation.
 - Moreno, Holder and Sukumaran 2024. [DendroPy 5: a mature Python library for phylogenetic computing](https://doi.org/10.21105/joss.06943). Current major-version software reference. This project retains its installed 5.0.8 environment for the launched readers; no package upgrade is made during execution.
 
 - ASTRAL author implementation, accessed October 2 UTC 2026: [WQInference.java](https://github.com/smirarab/ASTRAL/blob/master/main/phylonet/coalescent/WQInference.java) and [Posterior.java](https://github.com/smirarab/ASTRAL/blob/master/main/phylonet/coalescent/Posterior.java). Branch annotation retains available-gene effective N for resolved-evidence discrepancies at most0.001; otherwise it substitutes fractional resolved evidence. Explicit N enters fractions, posterior and MAP calculations. Upstream source inspection is supported by three actual installed5.7.8 jar threshold contracts, not treated alone as proof of build behavior. Full source/download provenance stays outside Git and is bound in the corrected audit plans.
+
+## Full sequence-derived correspondence controls
+
+- MAFFT author [manual](https://mafft.cbrc.jp/alignment/software/manual/manual.html)
+  and [acceptable-symbol documentation](https://mafft.cbrc.jp/alignment/software/anysymbol.html),
+  accessed October 2 UTC 2026. Document `--auto` strategy selection, explicit
+  amino-acid input and unknown-character scoring/preservation. The manual
+  identifies its older coverage, so actual installed 7.525 commands and byte
+  preservation are checked separately. These sources inform the full native
+  sequence correspondence control, not a claim of correct project homology.
+- FAMSA [author repository and usage](https://github.com/refresh-bio/FAMSA),
+  accessed October 2 UTC 2026. Single-input MSA and explicit thread settings
+  guide the second correspondence method. Installed 2.5.2-2598410 version/help,
+  executable hashes and all six-order native software contracts are recorded
+  separately. Cross-method agreement is a sensitivity diagnostic and does not
+  validate homology or make sequence-derived predicted coordinates independent.

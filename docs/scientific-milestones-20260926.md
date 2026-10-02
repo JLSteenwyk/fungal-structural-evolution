@@ -1,4 +1,4 @@
-# Open scientific milestones — updated October 1, 2026
+# Open scientific milestones — updated October 2, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
@@ -877,3 +877,19 @@ production/readback/two-journal closure is pending.
 Gene/marker/taxon/model/root/dating/reconciliation qualification and calibrated
 structural evolutionary effects remain required. All eight aims remain
 incomplete; GPU protein prediction remains paused.
+
+October 2 UTC: the full expanded sequence-derived correspondence control is
+implemented and running on all 27,056 source-ready physical triples, with all
+31,235 originals and 283,409 contexts/214,461 ties/428,922 sides retained in the
+closed source lineage. Full independent sequence/role/input reconstruction
+passed 321,761-binding/two-journal closure. Both installed MAFFT/FAMSA and every
+six-order permutation are active across all 324,672 native states; separate
+complete raw MSA/position readback and original-journal closure are queued.
+Actual native software checks passed 48 states and rejected 15 altered exports,
+including scope changes, with exact interrupted-task input replay checked.
+Source readiness and valid MSAs do not establish biological duplication,
+homology truth or predictor independence. Full sequence-derived same-residue
+geometry under both masks, original exclusions/screens/context links,
+structural-mapping comparisons, domain/PAE/prediction/phylogeny and calibrated
+effects remain required. All eight scientific aims remain incomplete.
+[Full workflow and dependency evidence](full-triad-sequence-correspondence-20261002.md).
