@@ -2114,3 +2114,39 @@ output allowance, 100 GiB reserve, no GPU or new charges. Context/parent linkage
 shared mask/method/core qualification, domain/PAE/predictor controls and calibrated
 phylogenetic/duplication inference remain required. Numerical signs do not infer
 ancestral polarity or biological significance. [Full comparison workflow](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).
+
+### Full correspondence linkage to original contexts (October 2 UTC)
+
+Full context linkage is implemented and queued after complete correspondence
+comparison closure. Every original 283,409 context/566,818 designs/214,461 tied
+references/428,922 sides retains its guide, family/taxon/gene/node/source/model
+identity and lexical/tie order. Original parent, distinct model/version, three
+pair-design and native-own/both-guide readiness are retained; shared physical
+results do not promote excluded logical contexts. Missing results remain NULL,
+separate from measured zero-pass bitmaps. Reference links retain eight normalized
+physical keys for complete numerical/status/overlap access.
+
+All 27 logical mask/method/core combinations include joint both-mask, both-method
+and both-core requirements. The corresponding 48-order-pair bitmaps intersect;
+full qualification requires all bits in each included leaf. Five lexical/any/all
+tied-reference policies retain every missing/excluded/tied state; empty tie sets
+fail the all-tie policy. Full scope includes 34,742,682 reference-screen cells,
+91,824,516 context/design/scenario/screen cells, 459,122,580 repeated policy
+decisions and 3,240 guide/design/scenario/screen/policy summary rows. These are
+dependent eligibility screens, not independent events or statistical tests.
+Conditional source/geometry qualification does not establish contrast-direction
+stability, accepted duplication/phylogeny or biological significance.
+
+The independent reader rebuilds ordered model SHA keys and every source gate
+from raw context records, derives scenario bitmaps via unions of missing bits,
+and reconstructs all policies, counts and denominators using SQL. Every source
+record, output field/type, complete row grid and deterministic checkpoint must
+agree before full source/hash and both original-journal closure. Interrupted
+restart regenerates and checks 1,000-context chunks under an exclusive lock.
+The full 28-context/60-tie/27-scenario software grid passed 7,560 policy decisions,
+540 one-screen summaries and recovery of a four-context chunk; all 18 false
+exports were rejected. Production source-closure I/O is stubbed only in fixtures.
+Resources were estimated before launch: two CPU/32 GiB/no swap/one BLAS thread,
+32 GiB output allowance, 100 GiB reserve, no GPU or new charges. Production and
+prediction/domain/PAE/phylogenetic dependence/sampling/calibration remain pending.
+[Full context workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).

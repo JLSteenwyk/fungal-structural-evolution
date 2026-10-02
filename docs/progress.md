@@ -10819,3 +10819,33 @@ does not establish universal coverage or complete the biological project.
   alternatives are not evolutionary events. All eight aims remain incomplete;
   GPU prediction remains paused.
   [Complete comparison workflow](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).
+
+- October 2 UTC: implemented and queued full correspondence linkage to every
+  original 283,409 context/566,818 designs/214,461 ties/428,922 sides. Original
+  guide/family/taxon/gene/node/model/version identities, reference order and
+  parent/distinct-model/three-pair/native-own/both-guide gates remain unchanged.
+  All 27 mask/method/core scenarios use intersections of 48-order-pair
+  bitmaps; missing measurements are NULL, separate from measured zero-pass
+  results. Five lexical/any/all-tie policies retain empty/missing/excluded
+  states. Full scope is 34,742,682 reference-screen cells, 91,824,516 context
+  cells, 459,122,580 repeated eligibility decisions and 3,240 summaries;
+  these are dependent screens, not events or tests. Independent raw model/SHA/
+  source gates, complement-union bitmap arithmetic and SQL policies/counts/
+  denominators/checkpoints require both original journals/full-hash closure.
+  Software contracts passed all 28 contexts/60 ties/27 scenarios/7,560 policy
+  decisions and recovery of a committed four-context chunk, rejecting 18
+  rehashed false exports. Resources preceded three original queued launches:
+  two CPU/32 GiB/no swap/one BLAS thread, 32 GiB output, 100 GiB reserve,
+  no GPU or new charges. The
+  [fresh runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v10.json)
+  verified 466,533 distinct closed bindings, all 37 live pipeline handles,
+  six original scientific/retrieval jobs, 29 terminal successes and ten
+  preserved failures; background progress was 224,896/298,848 at observation.
+  The [exact queue checkpoint](../metadata/full_triad_context_correspondence_queue_checkpoint_20261002.json)
+  rechecked all three native, three comparison and three context handles,
+  recording current native alignment progress. Full production native sequence,
+  geometry, comparison and context results remain pending. Matched controls,
+  prediction/domain/PAE, accepted phylogeny/reconciliation, sampling/dependence,
+  contrast uncertainty and calibration remain required. All eight aims
+  incomplete; GPU prediction remains paused.
+  [Full context scope and workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).

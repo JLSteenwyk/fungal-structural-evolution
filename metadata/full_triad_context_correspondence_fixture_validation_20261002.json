@@ -1,0 +1,27 @@
+{
+  "status": "passed_full_triad_context_correspondence_software_contracts",
+  "checked_utc": "2026-10-02T05:28:50.422925+00:00",
+  "receipt": "results/software-checks/full-triad-context-correspondence-20261002-v2/receipt.json",
+  "receipt_sha256": "70ca37cac2c9f5b592ef23f2c321028c93a03f30f83e4b422ad0fb1848e83dbc",
+  "target_contexts": 28,
+  "reference_tie_records": 60,
+  "measured_comparison_groups": 56,
+  "logical_reference_screen_decisions": 1620,
+  "context_screen_states": 1512,
+  "context_policy_decisions": 7560,
+  "summary_rows": 540,
+  "checked_reused_chunks": 1,
+  "rejected_false_exports": 18,
+  "source_hashes": {
+    "results/software-checks/full-triad-context-correspondence-20261002-v2/receipt.json": "70ca37cac2c9f5b592ef23f2c321028c93a03f30f83e4b422ad0fb1848e83dbc",
+    "results/software-checks/full-triad-context-correspondence-20261002-v2/receipt.source_fixture.json": "b12f44f148a7b95ee236e5c6464bce961a07a2a4f46331ebdc89aadb759ae1c5",
+    "scripts/full_triad_context_correspondence_sources.py": "97a2ff382fa8448e20c347e8859bf53c5c80f22046f19d5b876b034678ada3a6",
+    "scripts/project_full_triad_context_correspondence.py": "7d1f95f82336d5a5277db61781f35b03735e05d0881f5f24d5f03bbd611535d6",
+    "scripts/readback_full_triad_context_correspondence.py": "40ef0736964b1676414d2550f219768f88cf03f5f338c920e211e22f01e747f1",
+    "scripts/check_full_triad_context_correspondence.py": "2a6f903642a631ba8a2c2eb651935e6c0025284d156c650521a06455b2edc9b2",
+    "scripts/launch_full_triad_context_correspondence.py": "42766b4044bd2f3fdbc56373113a5aff33fb4255879ade4501888112bd5246ce",
+    "scripts/check_full_triad_context_geometry_cases.py": "c8fd42587cb735f373b6498c6d2783c27033f2f2fd4300a1d5e7995d0c211568"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full-context/source-gate software check, not a biological pilot. Original source proof I/O stubbed. Complete two-guide/two-design/27mask-method-core scenario grid, 48-bit leaves, missing/parent/native gates, lexical/any/all-tie policies, independent SHA/source reconstruction, complement-union bitmap and SQL summaries/checkpoint exports exercised."
+}

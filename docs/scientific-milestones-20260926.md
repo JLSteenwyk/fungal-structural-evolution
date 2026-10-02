@@ -926,3 +926,21 @@ projection. Sequence/native geometry/comparison production and original-context/
 parent integration remain pending. Prediction/domain/PAE/phylogenetic/calibration
 controls and all eight biological aims remain unfinished; GPU prediction paused.
 [Full comparison scope](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).
+
+October 2 UTC: full correspondence/parent-context integration is implemented
+and queued for every 283,409 source context and 214,461 tied reference. All
+27 mask/method/core scenarios intersect original 48-order-pair bitmaps, with
+unchanged parent/model/pair/native gates and fixed lexical/any/all-tie policies.
+Missing, measured-zero, excluded, empty and tied states remain distinct. Full
+scope includes 34,742,682 reference-screen cells/91,824,516 context cells/
+459,122,580 repeated policy decisions/3,240 summaries; these are dependent
+eligibility screens. Independent raw SHA/model/source-gate/complement-union/
+SQL reconstruction and full checkpoint/journal/hash closure are required.
+The complete 28-context/60-tie/27-scenario software grid passed 7,560 policy
+decisions and committed checkpoint recovery; all 18 false exports were rejected.
+The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v10.json)
+verified 37 pipeline/six original live handles and 466,533 closed bindings.
+Production native sequence/geometry/comparison/context closure, matched controls,
+prediction/domain/PAE, accepted phylogeny/reconciliation, dependence/sampling
+and calibrated biological inference remain required. All eight aims incomplete;
+GPU prediction paused. [Full original-context workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).

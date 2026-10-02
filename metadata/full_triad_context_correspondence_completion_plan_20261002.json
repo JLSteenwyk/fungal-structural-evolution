@@ -1,0 +1,35 @@
+{
+  "source_plan": "metadata/full_triad_context_correspondence_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-context-correspondence-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-context-correspondence-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_context_correspondence_pending_independent_readback",
+  "reader_status": "passed_full_triad_context_correspondence_sql_readback",
+  "completed_status": "complete_verified_full_triad_context_correspondence",
+  "summary_fields": [
+    "target_contexts",
+    "context_design_records",
+    "reference_tie_records",
+    "duplicate_reference_links",
+    "logical_reference_screen_decisions",
+    "context_screen_states",
+    "context_policy_decisions",
+    "summary_rows",
+    "guide_contexts",
+    "reference_measurement_presence_counts",
+    "measured_triads",
+    "measured_comparison_groups"
+  ],
+  "launches": [
+    "metadata/full_triad_context_correspondence_launch_20261002.json",
+    "metadata/full_triad_context_correspondence_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_context_correspondence_plan_20261002.json": "7f60262b829110e26c3730cd6c2a8e281ac25c33ca49463b51cddac41bed89ac",
+    "metadata/full_triad_context_correspondence_launch_20261002.json": "f0db37cdbfd2fc233b61db03a990b0e5a7ab4293b6d03414494ca6b130ab4e07",
+    "metadata/full_triad_context_correspondence_readback_launch_20261002.json": "7881d51e3ea6908450d35ad44e51eccece83b9ea235c6cae00b2f34dd6e76e08",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_context_correspondence_completed_20261002.json",
+  "scope": "Full283409unchanged original logical contexts/566818designs/214461tied references/428922logical sides connected to all216448closed physical correspondence-comparison groups from27056ordered triples. Both original guide variants and availability/sequence_first choices retained with exact taxon/family/gene/node/model/version/source relationships. Full/p70/both_masks, MAFFT/FAMSA/both_methods, reference_common/cycle_consistent/both_cores logical scenarios intersect all48sequence-by-structural order pairs, yielding34742682reference-screen cells/91824516context-screen cells/459122580repeated policy decisions and3240summary rows. These are dependent eligibility screens, not independent events or statistical tests. Original parent/model/all3pair source/native-own/native-both coorthology gates always retained; physical overlaps cannot promote excluded contexts. Missing physical result is NULL, not measured0; lexical missing models/tie order/empty/nonvacuous all-tie behavior fixed. Leaf2-by2-by2 result keys remain normalized for full numeric/overlap/status access. Strict full48bit all-order qualification and five lexical/any/all-tie policies, not favorable ordering. Independent original SHA/model/source gate reconstruction, complement-union bitmap arithmetic, SQL policy/summary/denominator reconstruction and complete original context/checkpoint exports required, followed by both original producer/reader completion/resource journals and full hashes. Exclusive-lock deterministic1000context checkpoint regeneration/checking supports interrupted restart. Consume only full closed physical comparison; no biological asymmetry, polarity, accepted orthology/phylogeny or calibrated effect inferred. Prediction/domain/PAE, phylogenetic dependence/sampling and model/statistical calibration remain required. All8aims incomplete; GPU prediction paused; no existing job changes/restarts or newcharges."
+}

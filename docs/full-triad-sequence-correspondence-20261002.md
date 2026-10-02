@@ -301,6 +301,99 @@ biological analyses. All 31,235 originals and 283,409 contexts/214,461 ties/428,
 sides remain linked through the closed source catalog, including unscheduled
 and excluded originals.
 
+## Original-context linkage and joint qualification queued October 2 UTC
+
+The complete context linkage is implemented and queued after full correspondence
+comparison closure. It preserves every original **283,409 context, 566,818
+design record, 214,461 tied reference and 428,922 logical side**. Both original
+guide variants, family/taxon/gene/node identities, duplicate model versions,
+reference order and availability/sequence-first choices remain unchanged.
+Production results are pending; these counts describe the complete planned scope.
+
+Each original reference links to its eight normalized physical comparison keys:
+two masks × two sequence methods × two structural core definitions. Physical
+presence is separate from source eligibility. Parent exclusions, distinct
+versioned/model identities, all three required pair-design links and original
+native coorthology gates must still pass. A physical result used by another
+context cannot promote an excluded parent. Missing physical measurements retain
+NULL bitmaps; a measured result with no passing orders has integer-zero bitmaps.
+Lexical missing models and later measured ties remain distinct. No reference
+is reselected using a favorable geometry result.
+
+Logical scenarios cover all 27 combinations of full/pLDDT70/both masks,
+MAFFT/FAMSA/both methods, and reference-common/cycle-consistent/both cores.
+Joint scenarios intersect the corresponding 48-order-pair bitmaps. Full
+qualification requires all 48 bits in every included leaf; complementary
+orders or a favorable mask/method combination cannot create agreement.
+Reference flags preserve the original three source gates: correspondence
+readiness, native-own-guide readiness, and native-both-guide readiness.
+These flags describe conditional source/geometry eligibility, not confirmed
+duplication, accepted phylogeny, contrast-direction stability or biological
+significance. Full numeric/status/overlap results remain accessible through
+the normalized physical keys.
+
+Five fixed context policies retain the lexical reference under each original
+source gate, any tied reference under the both-guide gate, and all tied
+references under that gate. Empty tie sets fail the all-tie policy. All
+lexical, missing, excluded and tied states remain explicit.
+
+| Full planned output unit | Count |
+| --- | ---: |
+| Original logical contexts | 283,409 |
+| Reference × scenario × screen cells | 34,742,682 |
+| Context × design × scenario × screen cells | 91,824,516 |
+| Repeated context policy decisions | 459,122,580 |
+| Guide/design/scenario/screen/policy summary rows | 3,240 |
+
+These are repeated eligibility screens, not independent events, tests or
+effect estimates. Shared physical proteins, references, families and guide
+variants must remain dependent in subsequent models and resampling.
+
+The producer uses direct bitmap intersections. The independent reader
+reconstructs each original ordered model SHA, source parent/distinct-model/
+three-pair/native gates and complete physical keys from raw context records.
+It derives intersections separately using unions of missing bits, then uses
+SQL for all lexical/any/all-tie policies, denominators and summary counts.
+Every original source record, export field, nullable bitmap, Boolean flag,
+source-row sequence and checkpoint must agree. Counts must cover the complete
+plan; both original producer/reader completion/resource journals and all source/
+artifact hashes are required for closure.
+
+Deterministic checkpoints commit 1,000 contexts per chunk (284 planned chunks).
+Restart regenerates and exactly checks existing chunks, rebuilding exports
+under an exclusive lock held through receipt creation. Completed receipts
+refuse restart. The full software grid passed 28 contexts/60 reference ties/
+56 physical groups and all 27 scenarios: 1,620 reference-screen cells, 1,512
+context cells, 7,560 policy decisions and 540 one-screen summary rows. Tests
+include measured excluded parents, missing lexical models followed by measured
+ties, empty ties, same-ID/different-version models, native guide disagreement,
+mask/method/core disagreement, complementary order bits and a favorable
+mask/method diagonal. All 18 rehashed false exports were rejected, including
+changed source taxa/keys, missing/duplicate contexts, Boolean/integer substitution
+and invented eligibility. Recovery rechecked a committed four-context chunk.
+Only production source-closure I/O is stubbed in these software contracts;
+production requires the real full comparison closure.
+[Software contract locator](../metadata/full_triad_context_correspondence_fixture_validation_20261002.json).
+
+Prelaunch resource estimates specify a two-CPU quota, 32 GiB RAM, no swap,
+one BLAS thread, 32 GiB output allowance and 100 GiB free-disk reserve. The
+1–48-hour planning range for each producer/reader excludes dependency waits
+and is uncalibrated; it is not a completion ETA. No GPU or new charges.
+[Resources](../metadata/full_triad_context_correspondence_resources_20261002.json),
+[frozen plan](../metadata/full_triad_context_correspondence_plan_20261002.json),
+[original launch identities](../metadata/full_triad_context_correspondence_launches_20261002.json)
+and [launcher](../scripts/launch_full_triad_context_correspondence.py).
+The future completion locator is
+`metadata/full_triad_context_correspondence_completed_20261002.json`.
+Do not start duplicates. Reproduction uses new output/plan locations or checked
+restart only after the original process is authoritatively stopped.
+
+Full production alignment, sequence geometry, correspondence comparison and
+context linkage remain pending. Fixed matched controls, prediction/domain/PAE,
+contrast uncertainty, accepted phylogenetic/reconciliation framework, shared
+ancestry/sampling and statistical calibration remain required. All eight
+scientific aims remain incomplete; GPU protein prediction remains paused.
+
 The two aligners and six orders are dependent sensitivity alternatives, not
 additional biological replicates. Sequence-derived correspondence reduces one
 source of structural alignment dependence; predicted coordinates still derive

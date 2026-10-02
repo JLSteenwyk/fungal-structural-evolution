@@ -1,0 +1,151 @@
+{
+  "status": "verified_original_live_full_context_correspondence_queue",
+  "checked_utc": "2026-10-02T05:35:47.011134+00:00",
+  "verified_original_handles": [
+    {
+      "launch": "metadata/full_triad_context_correspondence_launch_20261002.json",
+      "launch_sha256": "f0db37cdbfd2fc233b61db03a990b0e5a7ab4293b6d03414494ca6b130ab4e07",
+      "pid": 1592357,
+      "created": 1790918930.03,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_context_correspondence_readback_launch_20261002.json",
+      "launch_sha256": "7881d51e3ea6908450d35ad44e51eccece83b9ea235c6cae00b2f34dd6e76e08",
+      "pid": 1592412,
+      "created": 1790918930.09,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_readback_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_context_correspondence_closure_launch_20261002.json",
+      "launch_sha256": "00a79f0f10bbb9d736599488f79a8f4cb3d1bc4e48e5894dc099a7d9483b699e",
+      "pid": 1592437,
+      "created": 1790918930.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_context_correspondence_closure_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_correspondence_comparison_launch_20261002.json",
+      "launch_sha256": "d78464f984af0841698d875bc5f07e3ab6edc68877b4a1f45f007aa5d762caf0",
+      "pid": 221097,
+      "created": 1790917171.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_correspondence_comparison_readback_launch_20261002.json",
+      "launch_sha256": "a67c4507027e93577beaa557aeab269ca168e15b7bc496eb450e62ce6dd30631",
+      "pid": 221183,
+      "created": 1790917171.85,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_readback_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_correspondence_comparison_closure_launch_20261002.json",
+      "launch_sha256": "dcbe63ede6d2f0465614e5db212a1d908736820a1ba6e59d9d09039a37a05c76",
+      "pid": 221211,
+      "created": 1790917171.92,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_correspondence_comparison_closure_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_sequence_alignments_launch_20261002.json",
+      "launch_sha256": "51f95b5b9b5065574bab83bd3f32fb03e47cb03e4baff226fcd7141b1341959d",
+      "pid": 1553892,
+      "created": 1790913503.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_full_triad_sequence_alignments.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_sequence_alignments-readback_launch_20261002.json",
+      "launch_sha256": "d33d586cf38a4bb35ba61b741971242c4178990a6deaf9861af2db8384772cd9",
+      "pid": 1553896,
+      "created": 1790913503.42,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_readback_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    },
+    {
+      "launch": "metadata/full_triad_sequence_alignments-closure_launch_20261002.json",
+      "launch_sha256": "3610f6abe05333c484dd59cbd124a2e8f6aa55bc7b4942a03575f7715ce6016e",
+      "pid": 1553900,
+      "created": 1790913503.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_triad_sequence_alignment_closure_wait_plan_20261002.json"
+      ],
+      "status": "sleeping"
+    }
+  ],
+  "native_progress": {
+    "path": "results/structural_comparisons/full-triad-sequence-alignments-20261002-v1/state.json",
+    "sha256_at_observation": "4f5a068aedbb1f95c22c1240913069257f84f6dec0a90ee58a57476716140cab",
+    "status": "running_full_triad_sequence_alignment_dispositions",
+    "completed": 69120,
+    "total": 324672,
+    "counts": {
+      "mafft_auto:valid_sequence_alignment": 34560,
+      "famsa_default:valid_sequence_alignment": 34560
+    },
+    "plan_sha256": "8c2241dde96059e740d835c707137061057f31c57d2592ed8d196d6cb7be61f8"
+  },
+  "source_hashes": {
+    "metadata/full_triad_context_correspondence_launch_20261002.json": "f0db37cdbfd2fc233b61db03a990b0e5a7ab4293b6d03414494ca6b130ab4e07",
+    "metadata/full_triad_context_correspondence_readback_launch_20261002.json": "7881d51e3ea6908450d35ad44e51eccece83b9ea235c6cae00b2f34dd6e76e08",
+    "metadata/full_triad_context_correspondence_closure_launch_20261002.json": "00a79f0f10bbb9d736599488f79a8f4cb3d1bc4e48e5894dc099a7d9483b699e",
+    "metadata/full_triad_correspondence_comparison_launch_20261002.json": "d78464f984af0841698d875bc5f07e3ab6edc68877b4a1f45f007aa5d762caf0",
+    "metadata/full_triad_correspondence_comparison_readback_launch_20261002.json": "a67c4507027e93577beaa557aeab269ca168e15b7bc496eb450e62ce6dd30631",
+    "metadata/full_triad_correspondence_comparison_closure_launch_20261002.json": "dcbe63ede6d2f0465614e5db212a1d908736820a1ba6e59d9d09039a37a05c76",
+    "metadata/full_triad_sequence_alignments_launch_20261002.json": "51f95b5b9b5065574bab83bd3f32fb03e47cb03e4baff226fcd7141b1341959d",
+    "metadata/full_triad_sequence_alignments-readback_launch_20261002.json": "d33d586cf38a4bb35ba61b741971242c4178990a6deaf9861af2db8384772cd9",
+    "metadata/full_triad_sequence_alignments-closure_launch_20261002.json": "3610f6abe05333c484dd59cbd124a2e8f6aa55bc7b4942a03575f7715ce6016e"
+  },
+  "full_comparison_complete": false,
+  "full_context_correspondence_complete": false,
+  "gpu_inference_paused": true,
+  "all_eight_scientific_aims_incomplete": true,
+  "scope": "Exact original PID/create/CMD reverified for all3native,3comparison,3context projection handles. Progress counts are observations, not full production results. Context projection waits original closed full comparison. No original job settings changed or restarted; GPU prediction paused."
+}

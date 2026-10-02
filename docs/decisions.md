@@ -566,3 +566,22 @@ full collection/journal/biological qualification remains separate.
   and interrupted recovery passed, with all 17 false pair/group exports
   rejected. Three jobs are queued under pre-estimated CPU-only resources;
   production and calibrated biological interpretation remain pending.
+
+- October 2 UTC: preserve every original context and tied reference when
+  integrating correspondence controls. Add all 27 mask/method/core scenarios
+  using intersections of exact 48-order-pair bitmaps; use joint both-mask,
+  both-method and both-core requirements without favorable combinations.
+  Physical availability cannot override original parent/distinct-model/
+  three-pair/native coorthology gates. Missing physical results stay NULL,
+  distinct from measured zero-pass bitmaps. Keep lexical choices and tie order
+  fixed; exclude empty sets from all-tie policies. Require independent original
+  model SHA/source-gate reconstruction, complement-union bitmap arithmetic,
+  SQL policy/denominator checks and all source/checkpoint exports, followed
+  by original two-journal/full-hash closure. Regenerate and check deterministic
+  1,000-context checkpoint chunks under an exclusive lock on interrupted
+  restart; never duplicate a live job or restart completed output. Full
+  software contracts and recovery passed, rejecting all 18 false exports.
+  Complete production is queued after original comparison closure. Repeated
+  eligibility decisions are dependent screens, not events, tests, accepted
+  duplication or calibrated effects. Biological/phylogenetic/prediction
+  uncertainty remains; GPU prediction stays paused.
