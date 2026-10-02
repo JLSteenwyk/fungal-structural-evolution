@@ -1,0 +1,446 @@
+{
+  "status": "checked_original_full_entity_bank_input_design_and_ancestral_handles",
+  "checked_utc": "2026-10-02T20:51:37.732309+00:00",
+  "source_plan": "metadata/full_entity_operator_plan_20261002.json",
+  "source_plan_sha256": "ca3d36ba2ef3e0a6b8571ebda8d2d3afceca83a0923e7ddf71e186f927b8031d",
+  "pins_verified": 21,
+  "handles": [
+    {
+      "unit": "fungal-full-entity-operator-bank-20261002-v1.service",
+      "pid": 2473524,
+      "created": 1790973644.39,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_entity_operator_bank_wait_plan_20261002.json",
+      "plan_sha256": "9cfc3f2e028e9f76bd343e1c784a20e52f96850ade8fd47a62d4a1d11d0de7ff",
+      "checked_utc": "2026-10-02T20:40:45.131598+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-entity-operator-bank-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_entity_operator_bank_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [
+        {
+          "pid": 2473531,
+          "created": 1790973644.47,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_full_entity_operators.py",
+            "--plan",
+            "metadata/full_entity_operator_plan_20261002.json"
+          ],
+          "status": "disk-sleep",
+          "cpu_seconds_at_observation": 495.15999999999997
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "e3e07370c5bf26290475457739491242fe5915cf19392cdc17990c70b84ea50b"
+    },
+    {
+      "unit": "fungal-full-entity-operator-bank-readback-20261002-v1.service",
+      "pid": 2473528,
+      "created": 1790973644.44,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json",
+      "plan_sha256": "6c51b8c5ef7ee61e2caca5f1bb018a92a9edcd7cadd052f42ebee5ad79770010",
+      "checked_utc": "2026-10-02T20:40:45.180112+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-entity-operator-bank-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_entity_operator_bank_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "e3e312f499a153a639ab8c49c5b514cddb3754c71b5993797669c02a479f4e8c"
+    },
+    {
+      "unit": "fungal-full-entity-operator-bank-closure-20261002-v1.service",
+      "pid": 2473533,
+      "created": 1790973644.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json",
+      "plan_sha256": "91fc20498093bbdb1b64fe8ce3fb728945760379d5eff8b7ec26b756342d3e58",
+      "checked_utc": "2026-10-02T20:40:45.209545+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-entity-operator-bank-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_entity_operator_bank_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.08,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "97b973b1fa0f95d52fde021cd62c0adc1e5d60646ba326b8281e8c48c0959c91"
+    },
+    {
+      "unit": "fungal-full-expanded-model-inputs-readback-20261002-v1.service",
+      "pid": 2410818,
+      "created": 1790970289.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json",
+      "plan_sha256": "13cb3ac3611466a026bc8711e394fcd0e8b16ccd97fa5d9340a682aa3518c3af",
+      "checked_utc": "2026-10-02T19:44:50.352557+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-inputs-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_inputs_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.09,
+      "children": [
+        {
+          "pid": 2435119,
+          "created": 1790971100.57,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_full_expanded_model_inputs.py",
+            "--plan",
+            "metadata/full_expanded_model_inputs_plan_20261002.json",
+            "--output",
+            "results/phylogeny/full-expanded-model-inputs-20261002-v1/readback.json"
+          ],
+          "status": "disk-sleep",
+          "cpu_seconds_at_observation": 3056.38
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2"
+    },
+    {
+      "unit": "fungal-full-expanded-model-inputs-closure-20261002-v1.service",
+      "pid": 2410822,
+      "created": 1790970289.66,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_inputs_closure_wait_plan_20261002.json",
+      "plan_sha256": "046238919f8c7716f51cb1aaf767ecdb1404f272d7a3216c0d3fb942b35f3655",
+      "checked_utc": "2026-10-02T19:44:50.383047+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-inputs-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_inputs_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.19,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-20261002-v1.service",
+      "pid": 2451729,
+      "created": 1790971820.88,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json",
+      "plan_sha256": "1b5853d1ae916daa128899ab86b5ce170cc018cf2cc8c3bab54d35ad7b65f6e4",
+      "checked_utc": "2026-10-02T20:10:21.615834+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.12,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "5973f43a620193d0950c411542ffee55248a3e90746e66655c5408e18f79516c"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+      "pid": 2451757,
+      "created": 1790971820.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json",
+      "plan_sha256": "0570fb50f6aaa917919134e3cba3fe8353c784d3bd57f7226268b7671ba80113",
+      "checked_utc": "2026-10-02T20:10:21.646169+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.12,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ff4bf58854a0d4e9bed85a53f1f3f5300f0696afe73eb59b59a2cc70eb6ef003"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+      "pid": 2451777,
+      "created": 1790971820.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json",
+      "plan_sha256": "d27e67f3196d58acbc623f7d6498dd1d2b1a936d0cc133b38baa89c463ec01ac",
+      "checked_utc": "2026-10-02T20:10:21.679185+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.17,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6"
+    },
+    {
+      "unit": "fungal-baliphy-memory-recovery-20261002-v1.service",
+      "pid": 2318420,
+      "created": 1790965225.41,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_baliphy_memory_failures_20261002.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_plan_20261002.json"
+      ],
+      "plan": "metadata/baliphy_memory_recovery_plan_20261002.json",
+      "plan_sha256": "40de274efb0f557f9da0610e3c6290bc0224618d14a1504694cfdb224efeb224",
+      "checked_utc": "2026-10-02T18:20:26.153405+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-memory-recovery-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=100%",
+        "--property=MemoryMax=64G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_baliphy_memory_failures_20261002.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_plan_20261002.json"
+      ],
+      "launch": "metadata/baliphy_memory_recovery_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 16.119999999999997,
+      "children": [
+        {
+          "pid": 2353875,
+          "created": 1790967039.43,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261943",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 7244.5599999999995
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "aa92581d7a64d1444a86bd9001cc71c7e581e0bcc0b5f1f5b226e6045b09b5d1"
+    }
+  ],
+  "full_operator_production_accepted": false,
+  "full_model_input_production_accepted": false,
+  "full_design_production_accepted": false,
+  "scope": "Exact original PID/create-time/command observations and plan/software pins. Full source/artifact and independent production acceptance remain pending. Existing input/design/recovery jobs not restarted or changed; GPU prediction paused and no charges."
+}

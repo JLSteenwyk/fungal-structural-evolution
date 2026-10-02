@@ -1,0 +1,83 @@
+{
+  "covariance_completion": "metadata/full_expanded_covariance_completed_20261002.json",
+  "covariance_plan": "metadata/full_expanded_covariance_plan_20261002.json",
+  "expected": {
+    "logical_cases": 75188,
+    "entity_occurrences": 1052632,
+    "family_components": 3330
+  },
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "output": "results/phylogeny/full-entity-operator-bank-20261002-v1",
+  "fixture_validation": "metadata/full_entity_operator_fixture_validation_20261002.json",
+  "primitive_validation": "metadata/shared_entity_covariance_fixture_validation_20261002.json",
+  "resources": {
+    "status": "planned_complete_full_shared_entity_operator_bank",
+    "checked_utc": "2026-10-02T20:40:44.283650+00:00",
+    "logical_cases": 75188,
+    "entity_occurrences": 1052632,
+    "operator_matrices": 13,
+    "working_trees": 5,
+    "full_case_fixed_numeric_benchmarks": 10,
+    "family_components": 3330,
+    "largest_component": 2884,
+    "sum_component_squared_sizes": 23884972,
+    "maximum_dense_component_bytes": 66539648,
+    "maximum_seven_kernel_stack_bytes": 465777536,
+    "full_block_cholesky_bytes": 191079776,
+    "expanded_factor_bytes": 181052704,
+    "maximum_latent_factor_projection_bytes": 235382000,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_and_scratch_allowance_gib": 16,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      12
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 444.54523849487305,
+    "free_disk_gib": 10409.849346160889,
+    "software": {
+      "python": "3.10.13",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "mpmath": "1.3.0"
+    },
+    "basis": "Complete 75,188-case bank, all 1,052,632 original endpoint occurrences, 12 signed/unsigned entity operators plus a separate family contrast intercept, and ten fixed numerical benchmarks across all five rank301 working trees. Largest full component has 2,884 rows, 66,540,448 bytes per dense component; all squared blocks total 191,079,776 bytes. Dense seven-kernel component scratch at most 465,783,136 bytes; expanded species factor 181,052,704 bytes; maximum latent-factor projection 235,382,000 bytes. Full raw/source proof dictionaries dominate remaining memory. Reader assembles local bases by explicit sparse latent outer products, never a full observation covariance or a dense n-by-all-global-entity matrix. This is a fixed full-case numerical benchmark and operator/Gram bank, not optimizer fitting or a biological pilot; run measurements will inform separate fit resource estimates."
+  },
+  "pins": {
+    "environments/shared-entity-covariance-20261002.yml": "3ee7d47941ee79be242be0dac89f65e9d1db654019956f330e89601d9fa2d5c2",
+    "metadata/full_entity_operator_fixture_validation_20261002.json": "41ab1136b6e453c957feb91cd82ea06cc0034a96a6d002eedafdd393f6e9d337",
+    "metadata/full_entity_operator_resources_20261002.json": "c6a9c88fc6be758c6bb6050cf2ccf22248331296773ebfcafe5294cb94e30228",
+    "metadata/full_expanded_covariance_completed_20261002.json": "591630a8e7542f04bf64381b637de5cff4d5a7b69acbbe3b562e4cde5f19c597",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "metadata/shared_entity_covariance_fixture_validation_20261002.json": "91846d8f53ad4dd63b2560fa1403ac0441178b88fba74e5b1964a607b3aaae60",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_entity_operators.py": "d3fb8117d8fed77406b01695a8d5e665c572bcc0057c33d64272f3d1b2b90a4e",
+    "scripts/check_shared_entity_covariance.py": "1858fdf9adbea4e96330d23716e8ad715ff855673e036c0d24cbf88550071853",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "scripts/launch_full_entity_operators.py": "9adcbab28e16f8d9f0865dd96604ff5b36d82930bc920cdd3cff9807e387d311",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_entity_operators.py": "932541dbec9a9882fa8d0fd2a5825559f6b21999258fe3d5c2ad3c07d8f39619",
+    "scripts/readback_full_entity_operators.py": "6199c4e01dc65483355cb456689bafef06db7473bfa405a5f20c19f19af38a03",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265"
+  },
+  "scope": "Complete full 75,188-case shared-entity operator bank from the closed expanded covariance source, preserving all1,052,632 raw occurrences, distinct genes despite shared physical predictions and all full case/family/component/species-pattern identities. Export all six endpoint/entity kinds under signed and unsigned loadings plus a separately defined family contrast intercept:13 sparse operators. Exact signed family cancellation is preserved; unsigned family loadings are twice the family-intercept incidence and therefore their covariance kernels are proportional, not separately identified variance components. Complete full-case Frobenius kernel Grams on residual identity, six entity bases, family contrast intercept and species covariance across all five working trees diagnose zero/collinear bases; Gram conditioning squares basis conditioning and cohort-specific variance identifiability remains unqualified. Ten complete fixed-parameter numerical benchmarks evaluate block Cholesky and species Woodbury solves/log determinants on every original case, checked independently by raw Counter loadings, latent-space Gram identities and explicit latent outer products with block/species LU. Numerical refinement checks residuals without jitter, eigenvalue clipping, changed covariance targets or dropped cases. Full producer/reader/source/artifact/two-original-journal closure gates bank acceptance. Benchmarks are neither estimated variance components nor accepted shared-ancestry correction, biological effects, optimizer qualification or calibrated inference. Expanded fixed-design/cohort inventories and fit-resource specification remain separate; final signed/unsigned covariance/weight/control variants, prediction/domain/PAE/ascertainment, accepted species/reconciled gene trees, calibration and all eight scientific aims remain open. No GPU or new charges."
+}

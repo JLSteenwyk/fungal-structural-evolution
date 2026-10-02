@@ -805,3 +805,35 @@ A direct rank-boundary contract demonstrated that raw condition numbers
 amplify otherwise acceptable last-singular-value roundoff. Rank thresholds
 and review dispositions remain unchanged; the original version1 queue was
 stopped with exact original handles before production and journal-preserved.
+
+
+## October 2: shared genes/models and explicit variance-basis identities
+
+Preserve each original entity namespace and distinct genes despite shared
+coordinates. Retain signed endpoint cancellation rather than inventing
+noise for a cancelled contrast. A family effect on the target-control
+contrast is a separate one-per-case definition; unsigned family incidence
+and this contrast intercept have proportional covariance kernels and cannot
+be independently estimated together. Check complete kernel dependencies
+before final covariance model identities/fitting, and repeat qualification
+within each actual cohort. Fixed full-case numeric benchmarks are software/
+resource evidence, not estimated variances, biological effects or a pilot.
+[Full bank and numerical backend](full-entity-operator-bank-20261002.md).
+
+## October 2: qualify covariance bases within each setting and its fixed design
+
+All 4,250,692 original selection records establish one control per target
+within each of 432 nonempty matching strata. Under a uniform residual diagonal,
+the setting-specific target-node covariance equals residual identity. Do not
+fit these as separately identified variances. The global pooled-case kernel
+differs because targets recur across settings; its full Gram rank cannot
+replace cohort-specific qualification. Nonuniform weighting requires its own
+audit. Signed endpoint-family variance remains zero, while unsigned endpoint
+family and contrast-family intercept variances are proportional.
+
+Qualify the residual-space bases `H K H` as well as raw covariance bases before
+REML fitting. Explicitly retain unresolved cancellation and rank boundaries.
+No generic independent-column selection is authorized to change the
+nonnegative variance cone. The new numerical audit passed all 24 dense
+error-contrast tests and 13 invalid-input rejections; complete production
+cohort/design qualification still awaits source closure.

@@ -1,0 +1,513 @@
+{
+  "status": "verified_original_handles_and_full_stage_closure_checkpoint",
+  "checked_utc": "2026-10-02T21:29:43.250598+00:00",
+  "previous_checkpoint": "metadata/full_entity_operator_queue_checkpoint_20261002.json",
+  "previous_checkpoint_sha256": "6c4892a9cfefbb9ccc590669d015af19dc1256144b7ef843f2e69796ab5a34a9",
+  "pins_verified": {
+    "environments/shared-entity-covariance-20261002.yml": "3ee7d47941ee79be242be0dac89f65e9d1db654019956f330e89601d9fa2d5c2",
+    "metadata/full_entity_operator_fixture_validation_20261002.json": "41ab1136b6e453c957feb91cd82ea06cc0034a96a6d002eedafdd393f6e9d337",
+    "metadata/full_entity_operator_resources_20261002.json": "c6a9c88fc6be758c6bb6050cf2ccf22248331296773ebfcafe5294cb94e30228",
+    "metadata/full_expanded_covariance_completed_20261002.json": "591630a8e7542f04bf64381b637de5cff4d5a7b69acbbe3b562e4cde5f19c597",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "metadata/shared_entity_covariance_fixture_validation_20261002.json": "91846d8f53ad4dd63b2560fa1403ac0441178b88fba74e5b1964a607b3aaae60",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_entity_operators.py": "d3fb8117d8fed77406b01695a8d5e665c572bcc0057c33d64272f3d1b2b90a4e",
+    "scripts/check_shared_entity_covariance.py": "1858fdf9adbea4e96330d23716e8ad715ff855673e036c0d24cbf88550071853",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "scripts/launch_full_entity_operators.py": "9adcbab28e16f8d9f0865dd96604ff5b36d82930bc920cdd3cff9807e387d311",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_entity_operators.py": "932541dbec9a9882fa8d0fd2a5825559f6b21999258fe3d5c2ad3c07d8f39619",
+    "scripts/readback_full_entity_operators.py": "6199c4e01dc65483355cb456689bafef06db7473bfa405a5f20c19f19af38a03",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265"
+  },
+  "handles": [
+    {
+      "launch": "metadata/full_entity_operator_bank_launch_20261002.json",
+      "pid": 2473524,
+      "created": 1790973644.39,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e3e07370c5bf26290475457739491242fe5915cf19392cdc17990c70b84ea50b",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "d8cc9b219c7365b8f1dfc7ff19c4b4acd066da0fa3f3397f597fa501fcc00ad6",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790974635240322",
+          "CPU_USAGE_NSEC": "704760173000",
+          "MEMORY_PEAK": "22618628096",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_entity_operator_bank_readback_launch_20261002.json",
+      "pid": 2473528,
+      "created": 1790973644.44,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e3e312f499a153a639ab8c49c5b514cddb3754c71b5993797669c02a479f4e8c",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "8a2968671e3cc9a003e28e7da14d2b5aa26e60a929243826fd20c6988d12a7b8",
+      "captured_process_messages": 34,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790976312610506",
+          "CPU_USAGE_NSEC": "1028723428000",
+          "MEMORY_PEAK": "3260416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-entity-operator-bank-closure-20261002-v1.service",
+      "pid": 2473533,
+      "created": 1790973644.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json",
+      "plan_sha256": "91fc20498093bbdb1b64fe8ce3fb728945760379d5eff8b7ec26b756342d3e58",
+      "checked_utc": "2026-10-02T20:40:45.209545+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-entity-operator-bank-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_entity_operator_bank_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.16,
+      "children": [
+        {
+          "pid": 2501127,
+          "created": 1790976317.32,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/close_full_triad_sequence_stage.py",
+            "--plan",
+            "metadata/full_entity_operator_bank_completion_plan_20261002.json"
+          ],
+          "status": "disk-sleep",
+          "cpu_seconds_at_observation": 110.85000000000001
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "97b973b1fa0f95d52fde021cd62c0adc1e5d60646ba326b8281e8c48c0959c91"
+    },
+    {
+      "launch": "metadata/full_expanded_model_inputs_readback_launch_20261002.json",
+      "pid": 2410818,
+      "created": 1790970289.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "8ff163d53f8f8e5727b0b00b8cdce83deafd257a5b6bbcf11e50487b06a4f1ae",
+      "captured_process_messages": 28,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790974542331651",
+          "CPU_USAGE_NSEC": "3142028058000",
+          "MEMORY_PEAK": "5848264704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_inputs_closure_launch_20261002.json",
+      "pid": 2410822,
+      "created": 1790970289.66,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "8cc40569744296cc42d41e4b2e4422f5ddff606793f7579b4ec50713826d15c1",
+      "captured_process_messages": 143,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790976341530565",
+          "CPU_USAGE_NSEC": "996571201000",
+          "MEMORY_PEAK": "10764288",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-20261002-v1.service",
+      "pid": 2451729,
+      "created": 1790971820.88,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json",
+      "plan_sha256": "1b5853d1ae916daa128899ab86b5ce170cc018cf2cc8c3bab54d35ad7b65f6e4",
+      "checked_utc": "2026-10-02T20:10:21.615834+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.2,
+      "children": [
+        {
+          "pid": 2501563,
+          "created": 1790976355.46,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_full_expanded_model_designs.py",
+            "--plan",
+            "metadata/full_expanded_model_designs_plan_20261002_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 112.72
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "5973f43a620193d0950c411542ffee55248a3e90746e66655c5408e18f79516c"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+      "pid": 2451757,
+      "created": 1790971820.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json",
+      "plan_sha256": "0570fb50f6aaa917919134e3cba3fe8353c784d3bd57f7226268b7671ba80113",
+      "checked_utc": "2026-10-02T20:10:21.646169+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.2,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ff4bf58854a0d4e9bed85a53f1f3f5300f0696afe73eb59b59a2cc70eb6ef003"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+      "pid": 2451777,
+      "created": 1790971820.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json",
+      "plan_sha256": "d27e67f3196d58acbc623f7d6498dd1d2b1a936d0cc133b38baa89c463ec01ac",
+      "checked_utc": "2026-10-02T20:10:21.679185+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.27,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6"
+    },
+    {
+      "unit": "fungal-baliphy-memory-recovery-20261002-v1.service",
+      "pid": 2318420,
+      "created": 1790965225.41,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_baliphy_memory_failures_20261002.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_plan_20261002.json"
+      ],
+      "plan": "metadata/baliphy_memory_recovery_plan_20261002.json",
+      "plan_sha256": "40de274efb0f557f9da0610e3c6290bc0224618d14a1504694cfdb224efeb224",
+      "checked_utc": "2026-10-02T18:20:26.153405+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-memory-recovery-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=100%",
+        "--property=MemoryMax=64G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_baliphy_memory_failures_20261002.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_plan_20261002.json"
+      ],
+      "launch": "metadata/baliphy_memory_recovery_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 19.63,
+      "children": [
+        {
+          "pid": 2353875,
+          "created": 1790967039.43,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "20261943",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered.hs",
+            "--iterations",
+            "1000",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 9520.640000000001
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "aa92581d7a64d1444a86bd9001cc71c7e581e0bcc0b5f1f5b226e6045b09b5d1"
+    }
+  ],
+  "new_software_and_selection_proofs": [
+    {
+      "path": "metadata/covariance_basis_audit_validation_20261002_v2.json",
+      "sha256": "dd1d84f3078a5537943b4d624a3fcff9cd96d731a2daaaf5d58e67d4baabe240",
+      "status": "passed_covariance_basis_error_contrast_checks"
+    },
+    {
+      "path": "metadata/full_entity_operator_target_node_redundancy_20261002_v2.json",
+      "sha256": "f5259e6bfebb76a3769d04109b42018cdd0d3bed4e53a4d8de6b874603a58fbc",
+      "status": "verified_target_node_identity_kernel_in_every_original_matching_stratum"
+    }
+  ],
+  "stages": {
+    "model_inputs": {
+      "accepted": true,
+      "path": "metadata/full_expanded_model_inputs_completed_20261002.json",
+      "sha256": "4557ec43f083cf852cb8bf664ce70e29d37ad282d096238c162cdd8c4bc08cb2",
+      "status": "complete_verified_full_expanded_model_inputs",
+      "full_hash_archive": "results/phylogeny/full-expanded-model-inputs-20261002-v1/completion_archive.json",
+      "full_hash_archive_sha256": "a93ec6c667963728c3f3234ab4d64beb765d76773dfe5efca1b99d1103102371",
+      "original_closure_full_bindings_checked": 2369865,
+      "original_journals_revalidated": [
+        {
+          "launch": "metadata/full_expanded_model_inputs_launch_20261002.json",
+          "pid": 2410814,
+          "created": 1790970289.58,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_expanded_model_inputs_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "0030c813e4acd36469ed6b942f71bacc450dec13ca60b4e97d9c46a16149b3ee",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "a2060b5265b3c6bd3e0632c04ec6d71de8f2388bc991ca6027504471c2765e2d",
+          "captured_process_messages": 1,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790971091988950",
+              "CPU_USAGE_NSEC": "801348604000",
+              "MEMORY_PEAK": "2976030720",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "2bdf82dab8580482f63f4c02ceeb8234be95836702f32f668ef42b8885eee8eb"
+        },
+        {
+          "launch": "metadata/full_expanded_model_inputs_readback_launch_20261002.json",
+          "pid": 2410818,
+          "created": 1790970289.63,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "a8d7679a234ea822a400c9c835307ae7f3af570289099b7d85d6e1c40e0aa608",
+          "captured_process_messages": 28,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790974542331651",
+              "CPU_USAGE_NSEC": "3142028058000",
+              "MEMORY_PEAK": "5848264704",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "65c520dd88ff066658ec2d7fbcb87b423f9edbf3e47960f6c419e63ecc33e0c3"
+        }
+      ],
+      "summary": {
+        "logical_cases": 75188,
+        "physical_cases": 37600,
+        "selected_records": 4250692,
+        "unmatched_decisions": 56965652,
+        "case_mask_rows": 150376,
+        "model_input_rows": 751880,
+        "partitions": 10,
+        "settings": 51840,
+        "valid_input_rows": {
+          "full|00": 70221,
+          "full|01": 70221,
+          "full|10": 70221,
+          "full|11": 70221,
+          "full|mean": 70221,
+          "plddt70|00": 70015,
+          "plddt70|01": 70015,
+          "plddt70|10": 70015,
+          "plddt70|11": 70015,
+          "plddt70|mean": 70015
+        },
+        "invalid_input_rows": {
+          "full|00": 4967,
+          "full|01": 4967,
+          "full|10": 4967,
+          "full|11": 4967,
+          "full|mean": 4967,
+          "plddt70|00": 5173,
+          "plddt70|01": 5173,
+          "plddt70|10": 5173,
+          "plddt70|11": 5173,
+          "plddt70|mean": 5173
+        },
+        "quality_retained_setting_occurrences": 300073760,
+        "model_specifications_per_setting": 12,
+        "future_model_setting_rows": 622080,
+        "working_tree_alternatives": 5
+      },
+      "scope": "Sealed full archive checksum, compact/summary/receipt linkage and actual original completion/resource journals revalidated. Full source and artifact hashing was performed by the original producer, independent reader and closure; it is not repeated here. No scientific model or effect is accepted by this handoff."
+    },
+    "operator_bank": {
+      "accepted": false,
+      "expected_completion": "metadata/full_entity_operator_bank_completed_20261002.json",
+      "reason": "Final compact completion is absent"
+    },
+    "design_inventory": {
+      "accepted": false,
+      "expected_completion": "metadata/full_expanded_model_designs_v2_completed_20261002.json",
+      "reason": "Final compact completion is absent"
+    }
+  },
+  "all_eight_scientific_aims_incomplete": true,
+  "gpu_inference_paused": true,
+  "scope": "Exact original identities and immutable plans retained. Completed handles require actual invocation-linked completion/resource journals; artifact acceptance is separately recorded by full stage closures. No settings changes or restarts."
+}

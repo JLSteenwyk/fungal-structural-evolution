@@ -2486,3 +2486,52 @@ No variance fit, adequate shared-ancestry correction or calibrated inference
 is established by the inventory. Final fit identities still need covariance
 loading, weighting and control variants.
 [Complete scope, resources and tests](full-expanded-model-designs-20261002.md).
+
+
+## October 2: full shared-entity covariance operators
+
+Launched the complete bank for all 75,188 cases and 1,052,632 closed raw
+endpoint occurrences. Six entity namespaces retain signed/unsigned loadings,
+with a separately defined family effect on the contrast. Signed family
+endpoints cancel; unsigned family incidence is twice family-intercept
+incidence, so their covariance kernels are proportional. Complete full-case
+Frobenius Grams across both modes and five working trees retain zero/collinear
+bases; actual cohort-specific parameter identifiability remains unqualified.
+A block Cholesky plus low-rank species operator supports solves, log
+determinants, inverse diagonals and direct-residual profiled REML without a
+full observation covariance. Numerical refinement preserves the covariance
+and does not add jitter or clip eigenvalues. All ten full-case fixed numerical
+benchmarks use explicit nonestimated variances and deterministic RHS; independent
+raw Counter loadings, latent Gram identities and explicit outer-product/LU
+readback gate acceptance with full hashes and two original journals. No
+variance fit, accepted ancestry correction or calibrated effect is inferred.
+[Complete definitions, tests and resources](full-entity-operator-bank-20261002.md).
+
+## October 2: setting-specific and residual-space covariance identifiability
+
+A direct scan of all 4,250,692 verified original matching selection records
+found no repeated target within any of 432 guide/policy/scenario strata.
+Each setting and every eligibility subset therefore has unit target-node
+kernel equal to identity. Under uniform residual covariance this term aliases
+residual scale and must not be fitted as a separately identified variance.
+Global pooled logical cases do not share this identity; nonuniform weighting
+or different loading definitions require separate assessment.
+
+For each full-rank active design, the numerical covariance-basis audit uses
+orthonormal fixed-effect columns Q and compares residual kernels H K H,
+H=I-QQ', as well as raw kernels. Projected Frobenius products are evaluated
+from component-local raw kernel products, KQ and Q'KQ, avoiding global dense
+covariances or projectors. Norm-resolution envelopes include contraction
+dimensions and design conditioning; zero, dependent and boundary cases remain
+review states. Twenty-four independent dense error-contrast tests and all 13
+invalid-input rejections passed. These software checks neither select variance
+models nor establish production-cohort acceptance or scientific calibration.
+
+The original full operator-bank producer finished all 13 incidence operators
+and ten mode/tree benchmarks. Maximum solve residual was 2.063e-12; fixed
+construction/solve timings were 7.95–14.70 seconds per three-column benchmark.
+Independent bank readback passed all raw operators, Grams and full-case
+benchmarks; final bank source/artifact closure remains pending.
+The full model-input reader passed 10,526,320 numeric-cell checks and input
+closure verified 2,369,865 bindings plus both original journals. The original
+full design-v2 queue automatically started after that closure.

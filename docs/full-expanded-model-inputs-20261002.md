@@ -1,10 +1,19 @@
 # Full expanded sequence–structure model inputs
 
-The complete input stage was launched on October 2 for **75,188 logical cases**
+The complete input stage closed on October 2 for **75,188 logical cases**
 and **37,600 physical target–control combinations**, preserving all **4,250,692
-original selection memberships**. Production, independent readback and final
-provenance closure are separate jobs; launch is not evidence of accepted results.
+original selection memberships**. The [final completion receipt](../metadata/full_expanded_model_inputs_completed_20261002.json)
+binds full production, independent readback and provenance closure. This is an
+accepted input handoff, not a variance fit or calibrated evolutionary result.
 All eight scientific aims remain incomplete.
+
+All 751,880 rows and 51,840 fixed setting counts passed independent readback,
+including **10,526,320 numeric-cell checks** against 50-digit Decimal and raw
+membership reconstruction in SQLite. The original closure verified **2,369,865
+source/artifact bindings** and both actual original completion/resource
+journals, finishing at 21:25 UTC. The full archive remains outside Git and its
+checksum/location are recorded in the compact completion receipt. The
+original design-v2 job automatically started after this closure.
 
 ## Inputs and scope
 

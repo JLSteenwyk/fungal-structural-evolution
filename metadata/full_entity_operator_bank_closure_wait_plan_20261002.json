@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_entity_operator_bank_launch_20261002.json",
+    "metadata/full_entity_operator_bank_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_entity_operator_bank_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_entity_operator_bank_completion_plan_20261002.json": "cda8f4648d01319a37a3a70f124af26d00ee90873a408830e07fe2709d2c16b6",
+    "metadata/full_entity_operator_bank_launch_20261002.json": "e3e07370c5bf26290475457739491242fe5915cf19392cdc17990c70b84ea50b",
+    "metadata/full_entity_operator_bank_readback_launch_20261002.json": "e3e312f499a153a639ab8c49c5b514cddb3754c71b5993797669c02a479f4e8c",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "checked_utc": "2026-10-02T21:17:27.153175+00:00",
+  "monitor_regression": {
+    "status": "passed_runtime_checkpoint_child_race_checks",
+    "checked_utc": "2026-10-02T21:16:42.637930+00:00",
+    "checks": [
+      "original_v3_race_reproduced",
+      "disappeared_child_recorded_survivor_preserved",
+      "zombie_child_recorded",
+      "child_access_denied_remains_fatal",
+      "parent_disappearance_remains_fatal",
+      "reused_parent_pid_not_accepted",
+      "changed_parent_command_rejected"
+    ],
+    "source_hashes": {
+      "scripts/check_runtime_checkpoint_child_race.py": "beba192ed02103026df3a00092b4fca4c35ac1a08014202d39351aceb9270dcf",
+      "scripts/record_project_runtime_checkpoint_v3.py": "79d080322c4807db75975b6123d34d1f75996208eb8c3cd6a641ba2ecf9c594d",
+      "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7"
+    },
+    "scope": "Software process-observation checks only; real scientific processes are neither stopped nor restarted."
+  },
+  "basis": "metadata/runtime_error_recheck_20261002_1748.json",
+  "additional_handle_checkpoint": "metadata/full_entity_operator_queue_checkpoint_20261002.json",
+  "live_handle_count": 24,
+  "terminal_journal_count": 6,
+  "observation_errors": [
+    {
+      "launch": "metadata/full_polynomial_ml_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/baliphy_independent_chain_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/hybrid_excluded_species_guide_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/neocallimastix_guide_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/ancestral_categorical_queue_launch_20260928.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/polynomial_ml_comparison_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/baliphy_full_anchored_states_launch_20260928_v2.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/neocallimastix_guide_audit_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/baliphy_candidate_length_diagnostic_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/full_polynomial_ml_output_audit_launch_20260927.json",
+      "error": "KeyError('plan')"
+    },
+    {
+      "launch": "metadata/hybrid_excluded_guide_audit_launch_20260927.json",
+      "error": "KeyError('plan')"
+    }
+  ],
+  "recent_30_minute_error_matches": [],
+  "live_recovery": {
+    "unit": "fungal-baliphy-memory-recovery-20261002-v1.service",
+    "pid": 2318420,
+    "created": 1790965225.41,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/recover_baliphy_memory_failures_20261002.py",
+      "--plan",
+      "metadata/baliphy_memory_recovery_plan_20261002.json"
+    ],
+    "plan": "metadata/baliphy_memory_recovery_plan_20261002.json",
+    "plan_sha256": "40de274efb0f557f9da0610e3c6290bc0224618d14a1504694cfdb224efeb224",
+    "checked_utc": "2026-10-02T18:20:26.153405+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "100000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "systemd_launch_command": [
+      "systemd-run",
+      "--user",
+      "--collect",
+      "--unit=fungal-baliphy-memory-recovery-20261002-v1.service",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "--property=CPUQuota=100%",
+      "--property=MemoryMax=64G",
+      "--property=MemorySwapMax=0",
+      "--setenv=PYTHONUNBUFFERED=1",
+      "--setenv=OPENBLAS_NUM_THREADS=1",
+      "--setenv=OMP_NUM_THREADS=1",
+      "--setenv=MKL_NUM_THREADS=1",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/recover_baliphy_memory_failures_20261002.py",
+      "--plan",
+      "metadata/baliphy_memory_recovery_plan_20261002.json"
+    ],
+    "launch": "metadata/baliphy_memory_recovery_launch_20261002.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 18.52,
+    "children": [
+      {
+        "pid": 2353875,
+        "created": 1790967039.43,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "20261943",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chain-inputs-20260927-v1/models/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered.hs",
+          "--iterations",
+          "1000",
+          "--name",
+          "independent-chain"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 8791.37
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "aa92581d7a64d1444a86bd9001cc71c7e581e0bcc0b5f1f5b226e6045b09b5d1"
+  },
+  "recovery_chain_observations": [
+    {
+      "chain": "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain2",
+      "stderr_path": "results/ancestral/baliphy-independent-memory-recovery-20261002-v1/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain2/attempt-0001/stderr.log",
+      "fatal_bad_alloc_present": true,
+      "allocation_warnings": 20,
+      "terminal_receipt_present": true,
+      "status": "failed",
+      "stderr_sha256_at_observation": "0b811b5c1228e326a9dffcfe633aba7f052096043797f99ce2aa259c1827afd5"
+    },
+    {
+      "chain": "9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered-chain3",
+      "stderr_path": "results/ancestral/baliphy-independent-memory-recovery-20261002-v1/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered-chain3/attempt-0001/stderr.log",
+      "fatal_bad_alloc_present": false,
+      "allocation_warnings": 2,
+      "terminal_receipt_present": false,
+      "status": "no_terminal_receipt",
+      "stderr_sha256_at_observation": "c33bfc2301b53d8d3f26d1395eeb9fe54eeed2656cf19f250ae7a78cd3a7ab57"
+    }
+  ],
+  "scope": "Read-only current process/journal/error observation. Original identity and plan hashes checked. Terminal scientific artifact acceptance is not revalidated here. No job settings changes, restarts or GPU use."
+}

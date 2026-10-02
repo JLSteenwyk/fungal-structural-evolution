@@ -1071,3 +1071,18 @@ integration, predictor/domain/PAE, accepted species/reconciled gene framework
 and calibrated inference remain required. All eight aims incomplete; GPU paused.
 [Background/matching results](full-screened-background-results-20261002.md),
 [joint physical directions](full-triad-joint-directions-20261002.md#complete-production-and-published-results-october-2-utc).
+
+October 2, 21:30 UTC: full expanded working-model inputs closed all 751,880
+records and 51,840 setting counts, with 10,526,320 independent numeric-cell
+checks, 2,369,865 source/artifact bindings and both original process journals.
+The existing full design-v2 inventory started automatically for 622,080
+fixed model-setting records. Full entity-bank production and independent
+readback passed all 13 operators and ten fixed benchmarks over 75,188 cases;
+bank provenance closure is running. A complete original-selection scan proves
+setting-specific target variance aliases uniform residual variance. New raw/
+REML residual-space covariance-basis checks passed 24 dense comparisons and
+13 invalid-input rejections. These advance complete dependence/model
+integration for aims 2/4, but production design/covariance qualification,
+variance optimization and calibrated inference remain open. All eight aims
+remain incomplete; structural GPU prediction remains paused.
+[Full operator and identifiability methods](full-entity-operator-bank-20261002.md).

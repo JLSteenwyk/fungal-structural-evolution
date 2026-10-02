@@ -1,0 +1,16 @@
+{
+  "status": "verified_exact_computed_resource_fields",
+  "resource_note_sha256": "c6a9c88fc6be758c6bb6050cf2ccf22248331296773ebfcafe5294cb94e30228",
+  "actual": {
+    "maximum_dense_component_bytes": 66539648,
+    "maximum_seven_kernel_stack_bytes": 465777536,
+    "full_block_cholesky_bytes": 191079776,
+    "expanded_factor_bytes": 181052704,
+    "maximum_latent_factor_projection_bytes": 235382000
+  },
+  "prose_overestimates_bytes": {
+    "maximum_dense_component_bytes": 800,
+    "maximum_seven_kernel_stack_bytes": 5600
+  },
+  "scope": "Frozen resource note retained. Computed numeric fields are exact; two prose figures conservatively overestimate dimensions by the stated bytes. Resource/cgroup limits and mathematical inputs unchanged."
+}

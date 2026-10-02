@@ -1,0 +1,31 @@
+{
+  "status": "passed_shared_entity_block_low_rank_covariance_contracts",
+  "dense_cases": 36,
+  "maximum_absolute_solve_error": 3.3306690738754696e-15,
+  "maximum_absolute_logdet_error": 2.1316282072803006e-14,
+  "maximum_absolute_profiled_reml_error": 1.4210854715202004e-14,
+  "high_precision_signed_shared_case_passed": true,
+  "row_permutation_passed": true,
+  "zero_rank_and_zero_variance_passed": true,
+  "duplicate_and_cancelling_aliases_preserved": true,
+  "invalid_cases_rejected": [
+    "entity_crosses_blocks",
+    "nonpositive_diagonal",
+    "nonfinite_diagonal",
+    "negative_entity",
+    "nonfinite_entity",
+    "negative_species",
+    "missing_named_variance",
+    "nonfinite_factor",
+    "nonfinite_incidence",
+    "nonfinite_rhs",
+    "rank_deficient_design",
+    "exact_zero_response",
+    "exact_nonzero_fit"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_shared_entity_covariance.py": "1858fdf9adbea4e96330d23716e8ad715ff855673e036c0d24cbf88550071853",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265"
+  },
+  "scope": "Numerical software contracts only. Independent explicit latent-entity outer products/dense inverses and 80-digit inverse/determinant; no biological pilot, production fit, optimizer or inferential calibration."
+}

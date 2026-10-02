@@ -1,0 +1,19 @@
+artifact	field	definition
+operators/*.npz	CSR arrays	Rows are every original logical case, columns are sorted source entity IDs; duplicate signed/unsigned endpoint loadings coalesced exactly
+entity_labels.json	kind -> entity_ids	Separate target_node/background_node/model_pair/family/gene/model namespaces and original 64-character SHA identities; gene IDs retained despite shared models
+case_ids.json	case_ids	Original closed covariance case order; no confidence/mask/scenario filtering in this bank
+block_labels.npy	component IDs	Full connected family/entity components in the original case order; each active entity is contained within one component
+operator_manifest.json	mode	signed/unsigned original endpoint loading or contrast for separately defined one-per-case family intercept
+operator_manifest.json	kind	Original entity kind or explicit family_intercept
+operator_manifest.json	shape, nnz	Original case/entity dimensions and coalesced nonzero count; cancelled signed family is an explicit zero operator
+operator_manifest.json	path, sha256	Exact CSR artifact locator/checksum
+*-kernel-gram.npz	gram	Complete all-case kernel Frobenius inner products; residual identity, six entity kernels, family contrast intercept, species
+kernel_gram_manifest.json	normalized_kernel_gram_rank	Numerical rank of normalized kernel Gram, not full cohort-specific parameter identifiability or fitted variance rank
+kernel_gram_manifest.json	zero_kernels	Exactly zero original covariance bases; not zero physical structural change
+kernel_gram_manifest.json	normalized_gram_singular_values, rank_tolerance	Recorded float64 normalized Gram singular spectrum and dimension/epsilon tolerance; no clipping
+benchmark_manifest.json	entity_variances	Fixed values: 0.125 each original entity basis and 0.5 family contrast intercept; not estimated components
+benchmark_manifest.json	species_variance, residual_diagonal	Fixed 0.25 species coefficient and uniform residual diagonal one; no fitting or empirical weights
+benchmark_manifest.json	logdet	Full fixed benchmark covariance log determinant, independently checked by LU
+benchmark_manifest.json	maximum_solve_residual, solve_diagnostic	Maximum full operator residual and iterative refinement count; target covariance unchanged
+benchmark_manifest.json	elapsed_seconds	Measured full construction/fixed solve seconds; not full optimization/project ETA
+benchmarks/*.npz	solution	Every original case, three deterministic RHS columns: ones, linear -1..1 ramp, sin(original case row)

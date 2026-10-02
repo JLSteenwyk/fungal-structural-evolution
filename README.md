@@ -65,19 +65,33 @@ bindings and both original journals. Expanded model fitting and calibration
 remain pending. The older factors do not cover this expanded cohort.
 
 The [full expanded model-input workflow](docs/full-expanded-model-inputs-20261002.md)
-is now launched for all 751,880 case/mask/order rows and 51,840 fixed setting
+has finished producing all 751,880 case/mask/order rows and 51,840 fixed setting
 counts. It retains gene/model identities, null measurements and nonlinear
-sequence contrasts, with independent Decimal and SQLite readback queued.
-Software checks rejected 18 altered exports; production acceptance and full
-expanded model fitting remain pending. No GPU prediction was resumed.
-The producer has since finished the complete grid; independent readback is
-running. The [complete design and recipe inventory](docs/full-expanded-model-designs-20261002.md)
-is queued behind its original closure for all 622,080 fixed model-setting
+sequence contrasts. Independent Decimal/SQLite readback passed all 10,526,320
+numeric-cell checks, and [final provenance closure](metadata/full_expanded_model_inputs_completed_20261002.json)
+verified 2,369,865 bindings plus both original process journals.
+Software checks rejected 18 altered exports; full expanded model fitting
+remains pending. No GPU prediction was resumed.
+The [complete design and recipe inventory](docs/full-expanded-model-designs-20261002.md)
+automatically started after that closure for all 622,080 fixed model-setting
 records. It will check exact cohort sharing and independently verify numerical
 ranks while retaining all empty and review states. Software contracts rejected
 23 altered exports, including a corrected rank-boundary diagnostic check in
 version 2. The original design queue was preserved before production began.
 Expanded covariance fits remain pending.
+
+The [complete shared-entity operator bank](docs/full-entity-operator-bank-20261002.md)
+has finished producing all 75,188 cases and 1,052,632 original occurrences. It preserves
+distinct genes and shared predictions in 13 signed/unsigned/family incidence
+matrices, with complete kernel dependency checks and ten fixed numerical
+benchmarks across five working trees. The numerical backend passed independent
+dense and 80-digit checks; full-bank software tests rejected 15 altered exports.
+Independent production readback passed all operators, Grams and ten full-case
+benchmarks; final provenance closure and expanded variance fitting remain pending.
+A complete scan of all original matching selections verifies that target-node
+variance aliases uniform residual variance within each setting. New error-contrast
+checks also audit covariance dependencies after fixed effects are removed;
+these are required before qualifying the final variance models.
 
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved

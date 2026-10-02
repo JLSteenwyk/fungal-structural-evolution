@@ -1,0 +1,22 @@
+{
+  "status": "verified_target_node_identity_kernel_in_every_original_matching_stratum",
+  "checked_utc": "2026-10-02T21:12:16.707353+00:00",
+  "closed_case_completion": "metadata/full_matching_case_index_completed_20261002.json",
+  "closed_case_completion_sha256": "14695fe8060794401426339f54854d076389e65592bcb3afcea8bed3696e76d7",
+  "closed_case_archive": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/completion_archive.json",
+  "closed_case_archive_sha256": "6f2760f983329bd66c84986d9d398d916d316c3a408ddeb7b86adb88f2e1545b",
+  "closed_selection_links": "results/structural_comparisons/full-matching-logical-cases-20261002-v1/selection_case_links.tsv.gz",
+  "closed_selection_links_sha256": "61262d2c050e5264570dfd6afe2c3cd44c84ad2e2ab03a1c6b04e419d997a705",
+  "selected_records_checked": 4250692,
+  "original_strata": 432,
+  "distinct_original_target_ids": 53042,
+  "duplicate_targets_within_stratum": 0,
+  "supplemental_input_producer_count_rows": 51840,
+  "supplemental_count_table_sha256": "7a3e7fe1b1eac14a64eefaa347c3e4b309fac0bc5b108ab36e0c5bc26c7e78d3",
+  "supplemental_counts_independent_acceptance_pending": true,
+  "mathematical_result": "Each original stratum has one selected control per target, hence unit target-node incidence in distinct columns gives Z_target Z_target.T=I. Every mask/quality subset retains this identity. Under a uniform residual diagonal the target-node variance is confounded with residual scale and is not separately identified.",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/verify_matching_target_covariance_identity.py": "007cd38fee7480531f1f6115e2c3bd5d15cd85c1d949eedda6366de8a106d7dd"
+  },
+  "scope": "Complete direct scan of closed original selection links, verified archive status/two-journal service count/summary and archive/link checksums. Supplemental count table agreement is not full independent input acceptance. This does not imply independent physical predictions/genes/backgrounds or identity of the global pooled-case kernel. Nonuniform diagonals and other weighting/loadings require separate qualification. No variances/effects estimated."
+}

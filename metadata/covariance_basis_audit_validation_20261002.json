@@ -1,0 +1,34 @@
+{
+  "status": "passed_covariance_basis_error_contrast_checks",
+  "checked_utc": "2026-10-02T21:23:56.803287+00:00",
+  "dense_cases": 24,
+  "maximum_raw_gram_absolute_error": 1.52587890625e-05,
+  "maximum_projected_gram_absolute_error": 3.0517578125e-05,
+  "rejected_invalid_inputs": [
+    "empty_rows",
+    "nonpositive_diagonal",
+    "nonfinite_diagonal",
+    "factor_shape",
+    "nonfinite_factor",
+    "zero_design_column",
+    "rank_deficient_design",
+    "nonfinite_design",
+    "no_residual_dimension",
+    "reserved_entity_name",
+    "wrong_entity_rows",
+    "nonfinite_incidence",
+    "cross_component_entity"
+  ],
+  "scientific_regressions": [
+    "target_identity_aliases_uniform_residual",
+    "nonuniform_residual_requires_new_qualification",
+    "family_intercept_annihilated_by_fixed_effect",
+    "raw_independent_kernels_alias_in_reml",
+    "extreme_design_scaling_preserves_column_space"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_covariance_basis_audit.py": "c318f4a2bd782d4ef8f83822ab887a91367e20f44de1a4bdc7f454ef607428c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py": "6641c5f361cb884e88a39e2180ce3d3d356852dd2972b7c9cc65affc9c294740"
+  },
+  "scope": "Software algebra checks against independent dense null-space error contrasts. No production cohort acceptance, covariance selection, variance fitting or pilot."
+}

@@ -11301,3 +11301,59 @@ and figure review remain next.
   closure 2451777. The fresh v2 queue checkpoint verifies all live identities
   and complete plan/software pins, while retaining the terminal input producer
   as pending independent readback. Source/recovery jobs remain unchanged.
+
+
+- October 2 UTC: previous goal turn made concrete progress by committing/
+  pushing complete expanded design inventory (`58ebdac`). Original full
+  input reader remains live after all ten numeric partitions; original design
+  v2 producer remains queued behind its closure, with no restart. Implemented
+  the general shared-entity/block/phylogenetic covariance backend and full
+  operator-bank pipeline. Primitive contracts passed 36 dense cases,
+  80-digit correlated signed case, permutations/zero bases/cancelling aliases
+  and rejection of 13 invalid inputs. Full bank contracts passed every
+  13operator/10benchmark, interruption replay and completed-restart refusal,
+  rejecting all 15 altered exports. Before launch recorded two CPU/32 GiB/
+  no swap/BLAS1, 16 GiB output/scratch and 100 GiB reserve, no GPU/charges.
+  Full source census: 3,330 components, largest 2,884 cases and 23,884,972
+  component-square entries. Original producer PID 2473524, independent reader
+  2473528 and closure 2473533 are launched for all 75,188 cases/1,052,632
+  occurrences. Signed/unsigned full kernel dependencies and ten fixed
+  numerical benchmarks span all five working trees; values are not fitted
+  variance components or biological estimates. Full production readback/
+  closure, expanded optimizer/model/uncertainty qualification, accepted
+  phylogenies/reconciliation and all eight scientific aims remain incomplete.
+  GPU prediction remains paused; source input and ancestry recovery jobs unchanged.
+  [Complete operator definitions, tests and resources](full-entity-operator-bank-20261002.md).
+
+- October 2, 21:30 UTC: the previous error recheck was a verified wait: original
+  recovery parent 2318420 and native child 2353875 remained live. All seven
+  process-monitor contracts passed; one higher-memory allocation failure and
+  two warnings in the ongoing retry remain explicit. No scientific job was
+  restarted or changed. The full expanded model-input stage has now closed
+  all 751,880 rows/51,840 settings after 10,526,320 independent numeric-cell
+  checks and 2,369,865 source/artifact bindings plus both actual original
+  completion/resource journals. The original full design-v2 job automatically
+  began after closure. The original operator producer and independent reader
+  finished every 13operator/10benchmark over all 75,188 cases; final provenance
+  closure remains live. All mode/tree full-bank Gram ranks are eight, with
+  signed-family zero and unsigned-family/intercept proportionality retained.
+  Fixed full construction/solve times were 7.95–14.70s and maximum residual
+  2.063e-12; these are not model-optimization or project ETAs.
+
+  A full scan of all 4,250,692 original selection records proves target-node
+  covariance equals identity within each of 432 original strata and all screen
+  subsets. It aliases uniform residual variance and must not be independently
+  estimated. Global pooled-case ranks do not qualify individual cohorts;
+  nonuniform weighting needs separate checks. Implemented a residual-space
+  covariance-basis audit without global dense projectors. All 24 independent
+  dense error-contrast checks, extreme column scaling, component-allocation
+  check and 13 invalid-input rejections passed. Maximum projected-Gram relative
+  Frobenius discrepancy was 4.05e-16. Norm cancellation, dependencies and rank
+  boundaries retain review states; no variance model is selected automatically.
+  Exact original handles/pins and the sealed input archive/journals were
+  refreshed in the [full-stage checkpoint](../metadata/full_entity_operator_queue_checkpoint_20261002_v3.json).
+  Archived journal byte hashes remain original observations; freshly emitted
+  JSON key order varies, so new semantic completion/resource evidence is
+  compared directly rather than requiring byte-identical journal rendering.
+  Expanded production cohort/design/variance fitting, calibration, accepted
+  phylogenies/reconciliation and all eight aims remain incomplete. GPUs paused.
