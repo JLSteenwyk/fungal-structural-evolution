@@ -1,7 +1,7 @@
 # Full gene-tree species-tree sensitivities
 
-Thirty ASTRAL-III 5.7.8 analyses are complete after independent input
-verification; the corrected full numerical readback is running. They use all 125 profile marker trees or all 125 MAFFT marker
+Thirty ASTRAL-III 5.7.8 analyses and their complete independent local/global
+quartet validation are complete. They use all 125 profile marker trees or all 125 MAFFT marker
 trees, each under five actual taxon cohorts and three gene-support settings.
 This estimates candidate species relationships from gene trees and complements
 the original concatenated PMSF analyses. It does not accept a final species
@@ -115,7 +115,7 @@ not ETAs. Existing analyses continue and GPU prediction remains paused.
 
 ## Independent local and global quartet verification
 
-All 30 native inferences are complete. The corrected full readback is running. It retains all 15,510
+All 30 native inferences and the corrected full readback are complete. It retains all 15,510
 internal branches and all 1,938,750 branch–gene states across the 30 cases,
 plus 3,750 per-gene global matching/resolved-quartet counts. It uses separate
 Python/Numba algorithms and DendroPy parsing, without ASTRAL libraries.
@@ -179,25 +179,30 @@ python scripts/close_species_coalescent_quartets.py \
   --plan metadata/species_coalescent_quartet_completion_plan_20261002_v2.json
 ```
 
-These commands identify immutable active/queued runs, not instructions to start
+These commands identify immutable completed runs, not instructions to start
 duplicates. Full readback output is
 `results/phylogeny/full-species-coalescent-quartet-readback-20261002-v2`;
-the future small locator is
-`metadata/species_coalescent_quartets_completed_20261002_v2.json`.
-The [runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
-records 30/30 native cases completed, 27 live pipeline handles, six original
-scientific/retrieval jobs and 178,496/298,848 new structural comparison states
-at its observation time. Later native progress remains outside Git.
+the [completed small locator](../metadata/species_coalescent_quartets_completed_20261002_v2.json)
+binds 1,757 source/artifact hashes and both original native/auditor completion
+journals. All 15,510 branches, 1,938,750 local branch–gene states and 3,750
+global per-gene states passed, including the previously failing case.
+The [runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v6.json)
+records 30/30 native cases and full numerical closure, 22 live pipeline handles,
+six original scientific/retrieval jobs, 26 verified terminal successes and ten
+preserved failures. It checked 1,874 distinct closed bindings and recorded
+187,136/298,848 new structural comparison states at its observation time.
+Later native progress remains outside Git.
 
 ## Remaining qualification
 
 Input preparation, full independent input readback and closure are complete.
 Native inference is complete with all source/output hashes and its original
-completion journal verified; corrected full numerical/quartet readback is
-running and its closure remains queued. Candidate tree comparisons and comparison against all concatenated
-references are now [queued across all 70 views/315 pairs](coalescent-reference-comparisons-20261002.md).
-The full named-case comparison passed all eight original references; this
-does not certify the remaining candidate comparisons. Gene-tree
+completion journal verified; corrected full numerical/quartet readback and
+two-journal closure are complete. Candidate comparisons against all concatenated
+references are [complete across all 70 views/315 pairs](coalescent-reference-comparisons-20261002.md),
+including independent raw-tree readback and inspected figures. Comparisons using
+the 16 actual subset PMSF refits are [queued separately](native-subset-tree-comparisons-20261002.md).
+Gene-tree
 estimation uncertainty, locus dependence, low taxon occupancy, orthology,
 gene-selection sensitivity, hybrid ancestry and MSC adequacy remain open.
 These candidate topologies must be qualified before reconciliation and
@@ -237,8 +242,10 @@ The original failed full reader and its partial exports remain unchanged.
 New v2 plans/output directories run the v3 reader over all 30 candidates.
 The previously failing complete 526-taxon SH10 candidate has now passed all
 523 branches and 65,375 local states, with its exact global matching score.
-The complete production batch/two-original-journal closure remains pending.
-The corrected comparisons and figure use new versioned dependencies. Their
+The complete production batch passed and its two-original-journal closure
+binds all 1,757 hashes. All 315 corrected comparisons and their figures also
+passed independent readback and closure; both actual figure pages were inspected.
+The corrected comparisons and figure used new versioned dependencies. Their
 handoff wrapper verifies original invocation-linked completion/resource
 journals and rejects collected failed-unit default success fields. All eight
 scientific aims, root/model/gene/taxon/dating/reconciliation qualification

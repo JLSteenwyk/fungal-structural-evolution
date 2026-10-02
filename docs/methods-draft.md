@@ -1882,7 +1882,7 @@ native subset refits and native-versus-reference comparisons are still needed.
 
 ### Full coalescent species-tree sensitivities (October 2 UTC)
 
-ASTRAL-III 5.7.8 is running on every combination of profile/MAFFT genes, five
+ASTRAL-III 5.7.8 completed every combination of profile/MAFFT genes, five
 full/closed taxon cohorts and three support settings: uncontracted, SH-aLRT
 below 10 contracted, and SH-aLRT below 80 contracted. All 125 markers remain
 in every input. Missing support is recorded separately and contracted in
@@ -1900,8 +1900,8 @@ match the official 5.7.8 archive. Native resolved/missing/polytomous contracts
 passed. All native commands, child process identities, return codes and
 annotated tree/log hashes are retained outside Git.
 
-Independent Python/Numba readback is queued for every 15,510 branch and
-1,938,750 branch–gene state. A colored postorder dynamic program computes
+Independent Python/Numba readback passed every one of 15,510 branches and
+1,938,750 branch–gene states. A colored postorder dynamic program computes
 exact local quartet counts; gene-specific normalization preserves missing
 clades and unresolved evidence. Separate node-component intersections
 compute the exact global matching score, and unresolved quartet centers
@@ -1914,9 +1914,10 @@ tree-pair cases passed; 120 altered native values were rejected.
 The first actual full candidate passed all 523 branches and 65,375 local
 states, its exact global numerator/denominator and one-journal closure with
 1,434 bindings. This certifies one candidate's numerical calculations; the
-30-case full readback/two-journal closure and all native-versus-concatenation
-comparisons remain pending. Full readback resources were estimated before
-launch: two CPU/16 GiB/no swap/one BLAS thread, no GPU or charges.
+full 30-case readback subsequently passed all local/global states and
+two-journal closure with 1,757 source/artifact bindings. All 315 comparisons
+against concatenated references also passed. Full readback resources were
+estimated before launch: two CPU/16 GiB/no swap/one BLAS thread, no GPU or charges.
 
 [Workflow, complete inputs and current evidence](species-coalescent-sensitivities-20261002.md).
 Candidate estimation remains conditional on inferred genes, taxa/support
@@ -1948,10 +1949,16 @@ original journals and 1,475 bindings. Pairwise shared splits span 431–438/523;
 417 splits are shared across all nine views. Comparisons condition on
 inferred genes and candidate trees; overlaps are not independent events
 or evidence selecting a biological cause or preferred model. Full 315-pair
-production/readback/closure is queued after all native numerical proofs.
+production/readback/closure subsequently passed all 48,412 presence cells,
+49,847 overlapping conflicts and 70 role-boundary rows (64 present), with
+1,805 bindings and both original journals. The primary cohort shares 397
+splits across all 14 views; the four retained cohorts share 410/411/399/384
+respectively. Across all cohorts, cross-reference RF ranges from 134 to 184,
+and within-coalescent RF from 14 to 138. These are conditional descriptive
+measurements rather than qualified structural evolutionary branches.
 [Workflow and limitations](coalescent-reference-comparisons-20261002.md).
 
-### Complete candidate-tree sensitivity figure (queued October 2 UTC)
+### Complete candidate-tree sensitivity figure (October 2 UTC)
 
 After full source comparison closure, all 240 coalescent/reference and
 75 coalescent alignment/support pairs are displayed in ten cohort panels
@@ -1963,8 +1970,10 @@ three-decimal PDF distances, count identities, roles and unavailable triangular
 cells. Full hashes and both original producer/reader completion journals
 precede a separate visual inspection of both actual pages. The full synthetic
 315-cell/two-page contract passed, rejecting 12 altered exports. Actual
-production rendering/readback/closure/inspection remains pending; no fixture
-is presented as biological evidence. Serial two CPU/8 GiB/no swap/one BLAS
+production rendering and independent readback passed all 315 placements and
+printed PDF values, followed by 1,833-binding/two-journal closure. Both actual
+pages were visually inspected and published as a standalone PDF and PNGs;
+no fixture is presented as biological evidence. Serial two CPU/8 GiB/no swap/one BLAS
 resources were estimated before launch, without GPU or charges. These
 descriptive point-tree differences inform later uncertainty analysis and
 do not qualify a biological root, preferred model or structural effect.
@@ -1982,9 +1991,31 @@ fractions, local posterior and MAP length. The exact quartet DP and 2e-8
 absolute/relative comparison tolerances are unchanged. Three actual installed
 5.7.8 boundary contracts and all five earlier native contracts passed;
 120 altered values of 0.0001 were rejected. The previously failing complete
-candidate now passes all 65,375 states and exact global score; full batch
-closure is pending. Original failures/partial exports are preserved, and
-new v2 plans/output directories carry the corrected full numerical/comparison/
+candidate passed all 65,375 states and exact global score; the full 30-case
+batch and two-journal closure subsequently passed. Original failures/partial
+exports are preserved, and new v2 plans/output directories carry the corrected full numerical/comparison/
 figure workflow. Successful dependency handoffs require original invocation
 completion/resource journals; collected unit defaults do not prove success.
 [Native semantics and evidence](species-coalescent-sensitivities-20261002.md#native-completion-and-effective-n-correction-october-2-utc).
+
+### Actual native taxon-subset tree comparisons (queued October 2 UTC)
+
+The 16 actual subset PMSF fits will contribute 32 native ML/consensus views
+under four previously fixed retained cohorts. Every native view is compared
+with all matching projected concatenated references and coalescent candidates,
+and with every other native view: 88 total views and 560 pairs, consisting of
+192 native/coalescent, 256 native/projected and 112 native/native comparisons.
+Every split-presence cell, incompatible pair, quartet witness and all 88 role
+boundaries are retained. Native consensus multifurcations remain unresolved.
+Observed split counts and missing internal slots are reported alongside
+RF/[2*(taxa-3)] and RF divided by the observed split total; the latter is
+unavailable for a zero/zero denominator. Independent DendroPy raw-tree
+parsing/pruning/RF/compatibility/metric readback precedes full hash and both
+original producer/reader journal closure. Native SH80/UFB95, consensus and
+projected UFB95 with unavailable SH, and coalescent PP95 remain distinct
+screens and branch units remain explicit. Full 88-view/560-pair software
+contracts passed, including four zero denominators and 15 altered exports
+rejected. Production waits for complete original native inference/collection;
+these software contracts do not constitute biological results. Resources were
+estimated before launch at serial two CPU/16 GiB/no swap/one BLAS thread,
+without GPU or charges. [Workflow and limitations](native-subset-tree-comparisons-20261002.md).

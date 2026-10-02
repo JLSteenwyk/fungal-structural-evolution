@@ -839,7 +839,7 @@ cases complete, 28 live pipeline handles, six original scientific/retrieval
 jobs and 173,056/298,848 expanded background states. The figure will describe
 conditional topology sensitivity; gene/taxon/model/root/reconciliation and
 calibrated structural evolutionary qualification remain necessary.
-[Figure requirements](coalescent-reference-comparisons-20261002.md#full-comparison-figure-queued-october-2-utc).
+[Figure requirements and subsequent completion](coalescent-reference-comparisons-20261002.md#full-comparison-figure-completed-october-2-utc).
 
 October 2 UTC: all 30 native coalescent outputs are complete, with 1,571
 source/output hashes and one original native completion/resource journal.
@@ -853,3 +853,27 @@ readback, comparisons, figure and actual visual inspection remain required.
 New versioned jobs use exact original dependency journals; all original
 failures and unrelated scientific jobs remain preserved. [Current evidence](species-coalescent-sensitivities-20261002.md#native-completion-and-effective-n-correction-october-2-utc).
 All eight biological aims remain incomplete.
+
+October 2 UTC: full corrected coalescent numerical proof is complete for all
+30 candidates, 15,510 branches, 1,938,750 local branch–gene states and 3,750
+global per-gene states, with 1,757 bindings and both original completion
+journals. All 315 candidate/reference comparisons passed full independent
+raw-tree readback, 1,805-binding/two-journal closure and every presence,
+conflict, support and role-boundary check. The primary cohort shares 397 splits
+across all 14 views; this is conditional topology agreement rather than a
+qualified species framework. All 315 comparison figure cells and printed PDF
+values passed readback, followed by 1,833-binding/two-journal closure and actual
+inspection of both pages. [Completed comparisons and figures](coalescent-reference-comparisons-20261002.md).
+
+October 2 UTC: actual native-subset comparisons are now implemented and queued
+for the entire four-cohort/88-view/560-pair design. Source acceptance requires
+all 16 actual supported PMSF fits and complete bootstrap/profile/raw-tree
+collection, not projected substitutes or partial fits. Full software checks
+passed, preserving unresolved native consensus states and zero-denominator
+unavailability, and rejecting 15 altered exports. Original subset inference
+remains live on the first guide; no completion ETA is claimed. Full comparison
+production/readback/two-journal closure is pending.
+[Actual subset-fit workflow](native-subset-tree-comparisons-20261002.md).
+Gene/marker/taxon/model/root/dating/reconciliation qualification and calibrated
+structural evolutionary effects remain required. All eight aims remain
+incomplete; GPU protein prediction remains paused.

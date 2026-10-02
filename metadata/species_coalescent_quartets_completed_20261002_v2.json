@@ -1,0 +1,20 @@
+{
+  "status": "complete_verified_full_native_coalescent_quartet_numerics",
+  "cases": 30,
+  "markers_per_case": 125,
+  "internal_branches": 15510,
+  "branch_gene_states": 1938750,
+  "global_numerator_independently_verified": true,
+  "native_search_optimality_verified": false,
+  "full_hash_archive": "results/phylogeny/full-species-coalescent-quartet-readback-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "50e3733a82bdd5ee6a35e0d8c32b910589222090d42c9739ed67f66884d4a396",
+  "bound_source_hashes": 1757,
+  "exact_process_journals_checked": 2,
+  "native_receipt": "results/phylogeny/full-species-coalescent-sensitivities-20261002-v1/receipt.json",
+  "native_receipt_sha256": "56117ca0e5e7e1f7994587c3b6c502d368b8538c743e9fa852143d0454c6c23c",
+  "independent_readback": "results/phylogeny/full-species-coalescent-quartet-readback-20261002-v2/receipt.json",
+  "independent_readback_sha256": "66a63eee71172df98e8d80c8305da21e136ca29062f2ce3f9203c328d9171d22",
+  "completion_plan_sha256": "97143bc3c87f434f74599934c3f455431e49e918c91dd691307fe0218fabf56c",
+  "scientific_eligibility": false,
+  "scope": "All 30 full ASTRAL-III alignment/cohort/gene-support candidates, all 125 genes in every case: 15,510 internal branches, 1,938,750 local branch-gene states and 3,750 independent global quartet numerator/denominator states. Compute integer quartet counts before per-gene normalization; preserve missing incident clades and unresolved evidence. Verify native concordant local evidence and unordered NNI alternatives, effective gene counts/fractions, lambda .5 local posteriors and MAP coalescent lengths; exact global matching numerator/resolved denominator/normalized arithmetic. Full hashes and both original native/auditor completion journals required for later closure. This establishes numerical correspondence, not constrained or unconstrained search optimality, gene estimation uncertainty, MSC/locality adequacy, root, dated/reconciled framework or biological structural evolution. Candidate comparisons and all eight evolutionary aims remain open. No GPU, paid resources or mutation/restart of existing native or scientific jobs. Corrected immutable v3 numeric reader implements installed ASTRAL5.7.8 effective-N rule: use independently counted available genes unless the fractional resolved total differs by more than0.001, then use the resolved total. Keep both totals and the adjustment disposition. PP/q/MAP use the verified native-effective denominator; all comparison tolerances remain2e-8. Actual999/1000/1001-quartet pinned-jar boundary checks passed, previous5native cases rechecked and all120 changed0.0001 values rejected. Preserve failed original full audit and its downstream attempts; no native tree inference restarted. New handoff wrapper requires original invocation-linked completion/resources and rejects collected failed-unit default success fields."
+}

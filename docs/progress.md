@@ -10697,3 +10697,39 @@ does not establish universal coverage or complete the biological project.
   Full numerical/comparison/actual figure completion and scientific
   qualification remain pending. All eight aims incomplete; GPU prediction
   remains paused.
+
+- October 2 UTC: corrected full native quartet validation and closure passed
+  all 30 candidates, 15,510 internal branches, 1,938,750 local branch–gene
+  states and 3,750 global per-gene states. The completed numerical locator
+  binds 1,757 source/artifact hashes and both original native/auditor completion
+  journals. All 315 candidate/reference comparisons subsequently passed full
+  independent raw-tree readback, including 48,412 presence cells, 49,847
+  overlapping conflicts and all 70 role-boundary rows (64 present), with
+  1,805 bindings and both original producer/reader journals. The primary
+  cohort shares 397 splits across all 14 views; retained-cohort shared counts
+  are 410/411/399/384. These are conditional candidate relationships, not
+  independent structural evolutionary events or evidence accepting a root.
+  The complete 315-cell/ten-panel/two-page figure passed independent cell and
+  PDF-value checks, 1,833-binding/two-journal closure and visual inspection of
+  both actual pages. The standalone PDF and both PNGs are published in
+  [the complete comparison workflow](coalescent-reference-comparisons-20261002.md).
+
+- October 2 UTC: implemented and queued complete comparisons of all 16 actual
+  native subset PMSF fits after their full original inference/collection
+  closure. Four exact cohorts each contain eight native, eight projected
+  reference and six coalescent views: 88 views and 560 pairs, including
+  192 native/coalescent, 256 native/projected and 112 native/native comparisons.
+  All presence cells, conflicts, witnesses and 88 role boundaries are retained;
+  native consensus multifurcations, observed split counts and zero-denominator
+  unavailability remain explicit. The full independent raw-tree software grid
+  passed, including four star/star unavailable normalizations; all 15 altered
+  exports were rejected. Resource estimates preceded launch: serial two CPU/
+  16 GiB/no swap/one BLAS thread, no GPU or charges. Original native inference
+  remains on its first 525-taxon guide, with later mixture memory guards
+  unchanged. [Complete queued workflow](native-subset-tree-comparisons-20261002.md).
+  The [fresh exact runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v6.json)
+  checked 1,874 distinct closed bindings, 22 live pipeline handles, six
+  original scientific/retrieval jobs, 26 verified terminal successes and ten
+  preserved failures. Expanded background progress was 187,136/298,848 states
+  at observation. No native inference or unrelated job was restarted. All
+  eight scientific aims remain incomplete; GPU prediction remains paused.

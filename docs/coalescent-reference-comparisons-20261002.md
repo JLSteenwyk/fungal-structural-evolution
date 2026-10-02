@@ -1,7 +1,7 @@
 # Coalescent and concatenated candidate-tree comparisons
 
-The full comparison is queued after the independent numerical closure of all
-30 ASTRAL candidates. It compares candidate relationships across gene-tree
+The full comparison and inspected figures are complete after independent
+numerical closure of all 30 ASTRAL candidates. It compares candidate relationships across gene-tree
 alignment/support settings and against every original or exactly matched
 taxon projection of the four concatenated PMSF runs. These comparisons inform
 the tree uncertainty needed for subsequent structural-rate and reconciliation
@@ -84,6 +84,32 @@ is present in this candidate (local posterior 0.9982808647585494, effective
 genes 107); this remains an unrooted diagnostic. The other 29 candidates are
 not certified by this named-case comparison.
 
+## Full comparison results
+
+All 315 comparisons passed independent raw-tree readback, including 48,412
+split-presence cells, 49,847 overlapping incompatible split pairs and all 70
+role-boundary rows. The declared role split occurs in 64 of 70 views. Closure
+binds 1,805 hashes and both original producer/reader completion journals in the
+[full comparison locator](../metadata/coalescent_tree_comparisons_completed_20261002_v2.json).
+
+| Cohort | Taxa | Ingroup / outgroup | Shared across six coalescent views | Shared across eight references | Shared across all 14 views |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Full primary | 526 | 501 / 25 | 440 | 480 | 397 |
+| Exclude sparse boundary taxon | 525 | 500 / 25 | 450 | 489 | 410 |
+| Exclude below 10% occupancy in both alignments | 522 | 499 / 23 | 454 | 488 | 411 |
+| Exclude curated hybrids | 524 | 499 / 25 | 437 | 482 | 399 |
+| Exclude hybrids and incomplete labels | 503 | 478 / 25 | 420 | 463 | 384 |
+
+Across the 240 coalescent/reference pairs, RF spans 134–184 and normalized RF
+0.129094–0.175908. Across the 75 within-coalescent pairs, RF spans 14–138 and
+normalized RF 0.013487–0.134000. These ranges combine different retained taxon
+sets; each individual pair uses identical taxa. The 397 primary shared splits
+are candidate relationships for subsequent sensitivity analyses, conditional
+on the marker trees, point estimates and models. They do not establish a
+qualified root, sequence–structure effect or biological cause of discordance.
+The 49,847 overlapping conflicts are dependent split pairs, not independent
+evolutionary events.
+
 ## Execution and remaining work
 
 Resources were estimated before launch: two CPU/16 GiB/no swap/one BLAS
@@ -104,24 +130,26 @@ python scripts/close_coalescent_tree_comparisons.py \
   --plan metadata/coalescent_tree_comparison_completion_plan_20261002_v2.json
 ```
 
-Commands identify the frozen queued runs; do not start duplicate runs.
+Commands identify the frozen completed runs; do not start duplicate runs.
 Reproduction uses new plans/output locations. Full tables/conflict records,
-trees and hash dictionaries stay outside Git. The future small locator is
+trees and hash dictionaries stay outside Git. The completed small locator is
 `metadata/coalescent_tree_comparisons_completed_20261002_v2.json`.
 
-The [current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
-records 30/30 native coalescent cases complete, 27 live pipeline handles and
+The [current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v6.json)
+records 30/30 native coalescent cases and full numerical closure, 22 live pipeline handles and
 six original scientific/retrieval jobs; new structural comparisons have
-processed 178,496/298,848 states at its observation time. Full coalescent
-numerical readback is running; its closure and these 315 comparisons remain queued. Gene-tree
+processed 187,136/298,848 states at its observation time. All 315 comparisons,
+their independent readback and two-page figure are complete. The
+[560 actual subset-fit comparisons](native-subset-tree-comparisons-20261002.md)
+are queued after full native subset inference/collection. Gene-tree
 estimation uncertainty, marker dependence/selection, taxon identity, MSC and
 sequence-model adequacy, roots, accepted dating and reconciliation remain open.
 All eight evolutionary aims remain incomplete. GPU prediction remains paused.
 
-## Full comparison figure queued October 2 UTC
+## Full comparison figure completed October 2 UTC
 
-The figure workflow waits for the actual full 315-comparison closure; the
-named-case results cannot satisfy its input requirements. It will show all
+The figure workflow used the actual full 315-comparison closure;
+named-case results could not satisfy its input requirements. It shows all
 240 coalescent/reference pairs as five 6-by-8 panels, and all 75 unique
 coalescent pairs as five lower-triangular panels on a second PDF page. Both
 pages use the same color limits. Every cell displays the normalized RF
@@ -155,10 +183,21 @@ python scripts/close_coalescent_comparison_figure.py \
   --plan metadata/coalescent_comparison_figure_completion_plan_20261002_v2.json
 ```
 
-These identify the already queued jobs; reproduction requires new output
-locations and plans. The future numerical/journal locator is
+These identify the completed jobs; reproduction requires new output
+locations and plans. The numerical/journal locator is
 `metadata/coalescent_comparison_figure_completed_20261002_v2.json`; its initial
-status requires subsequent visual inspection. The figure describes candidate
+status records the separate visual-inspection requirement. Both actual PNG
+pages were subsequently inspected and copied with the standalone two-page PDF.
+The [inspection locator](../metadata/coalescent_comparison_figure_inspected_20261002.json)
+records the full 1,833-binding/two-journal archive and hashes of the published
+artifacts. Every one of the 315 cell placements and printed PDF values passed
+independent readback. [Download the two-page PDF](figures/coalescent_reference_sensitivity_20261002.pdf).
+
+![All 240 coalescent/reference comparisons](figures/coalescent_reference_rf_20261002.png)
+
+![All 75 unique coalescent candidate comparisons](figures/coalescent_internal_rf_20261002.png)
+
+The figure describes candidate
 tree sensitivity and does not assign a preferred tree, root or cause of
 discordance. Actual subset inference, reconciliation, gene/model/root
 qualification and the structural evolutionary tests remain necessary.
@@ -179,16 +218,16 @@ The new v3 numerical reader and versioned v2 plans/output directories account
 for that exact native rule while keeping comparison tolerance 2e-8. Three
 actual installed-jar boundary cases passed, all five previous native contracts
 were rechecked, and 120 changes of 0.0001 to count/effective-N/posterior/length
-values were rejected. The corrected full audit has passed the previously
-failing complete candidate and continues across all 30. The comparison and
-figure jobs above now wait for its new v2 completion proof.
+values were rejected. The corrected full audit passed all 30 candidates.
+The comparison and figure jobs above used its new v2 completion proof and
+both stages passed complete independent readback and original-journal closure.
 
 The new dependency wrapper requires exact original invocation-linked process
 and completion/resource journal records. Collected systemd unit defaults
 (success/0) alone are insufficient, including after a failed original job.
 Actual native completion and original audit failure were checked; five altered
 journal contracts were rejected and explicit null messages are handled. The
-[current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
+[current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v6.json)
 preserves ten original failures (two earlier gCF attempts and eight affected
 coalescent/dependency attempts), rather than relabeling them as successes.
 Failures with no CPU resource summary retain their actual invocation-linked

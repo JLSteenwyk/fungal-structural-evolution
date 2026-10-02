@@ -1,0 +1,88 @@
+{
+  "status": "complete_verified_full_coalescent_reference_tree_comparisons",
+  "cohorts": 5,
+  "tree_views": 70,
+  "comparison_rows": 315,
+  "split_presence_rows": 48412,
+  "incompatible_pairs": 49847,
+  "role_boundary_rows": 70,
+  "boundary_views_with_role_split": 64,
+  "cohort_summaries": [
+    {
+      "cohort": "exclude_below10_both_alignments",
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "coalescent_views": 6,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 454,
+      "shared_all_references": 488,
+      "shared_all_views": 411
+    },
+    {
+      "cohort": "exclude_curated_hybrids",
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "coalescent_views": 6,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 437,
+      "shared_all_references": 482,
+      "shared_all_views": 399
+    },
+    {
+      "cohort": "exclude_hybrids_and_uncertain_labels",
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "coalescent_views": 6,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 420,
+      "shared_all_references": 463,
+      "shared_all_views": 384
+    },
+    {
+      "cohort": "exclude_sparse_boundary_taxon",
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "coalescent_views": 6,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 450,
+      "shared_all_references": 489,
+      "shared_all_views": 410
+    },
+    {
+      "cohort": "full_primary",
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "coalescent_views": 6,
+      "concatenated_views": 8,
+      "shared_all_coalescent": 440,
+      "shared_all_references": 480,
+      "shared_all_views": 397
+    }
+  ],
+  "full_hash_archive": "results/phylogeny/full-coalescent-reference-tree-comparisons-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "b743c12408a86ec9794cb9bd502a90c6fbd8cd08831553518ce0489f493b3232",
+  "bound_source_hashes": 1805,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-coalescent-reference-tree-comparisons-20261002-v2/receipt.json",
+  "producer_receipt_sha256": "ec053203c729bf7e7dd1b3597d6cca732428e5f34d76164f4ba54c5e7f6ed345",
+  "independent_readback": "results/phylogeny/full-coalescent-reference-tree-comparisons-20261002-v2/readback.json",
+  "independent_readback_sha256": "d79ee29482d69700edf491a16050f3afc45fc7551d714fb0beed5eebc8a77c51",
+  "completion_plan_sha256": "0bb2cbec8a1c791c856223311c65a0a67a562e8603ed4427f1f71acb40db42d2",
+  "scientific_eligibility": false,
+  "scope": "Complete five actual cohorts, 30 full coalescent candidates and 40 original/projected concatenated reference views: 70 views, 240 coalescent/reference and 75 coalescent alignment/support comparisons=315 pairs. Preserve every union split-presence cell, incompatible split pair, canonical quartet witness and all70 actual role boundaries. Independent raw DendroPy tree parsing/pruning/RF/bipartition compatibility/length and support-disposition readback required, followed by full hashes and both original producer/reader completion journals. Local PP95, original ML SH80/UFB95, original consensus UFB95 and projected UFB95 with SH unavailable remain distinct screening criteria; their probabilities are not equated or calibrated global uncertainty. Coalescent MAP and AA substitution/path-sum lengths keep separate units and are not directly compared. No raw likelihood comparison across site universes, accepted root/model/gene uncertainty, dated/reconciled framework, structural change or biological aim completion. All eight aims remain incomplete. No GPU/new charges/restart/mutation of existing inference jobs. Corrected immutable v3 numeric reader implements installed ASTRAL5.7.8 effective-N rule: use independently counted available genes unless the fractional resolved total differs by more than0.001, then use the resolved total. Keep both totals and the adjustment disposition. PP/q/MAP use the verified native-effective denominator; all comparison tolerances remain2e-8. Actual999/1000/1001-quartet pinned-jar boundary checks passed, previous5native cases rechecked and all120 changed0.0001 values rejected. Preserve failed original full audit and its downstream attempts; no native tree inference restarted. New handoff wrapper requires original invocation-linked completion/resources and rejects collected failed-unit default success fields."
+}

@@ -501,3 +501,22 @@ full collection/journal/biological qualification remains separate.
   collected unit default fields. Retain exact failure exit records when a
   short failed invocation has no CPU summary; never infer successful completion
   from those missing resource records.
+
+- October 2 UTC: publish actual full coalescent/reference figures only after
+  all 30 native candidates pass numerical proof, all 315 comparisons pass
+  independent raw-tree readback, and every figure cell/PDF value, full archive,
+  original journal and both actual rendered pages are verified. These stages
+  are now complete. Preserve the earlier failed attempts and the separate
+  effective-N evidence; no inferred tree is rerun or silently altered.
+
+- October 2 UTC: compare all actual native taxon-subset fits against every
+  matched projected reference/coalescent candidate and each other, covering
+  all 88 views/560 pairs after full native collection closure. Preserve native
+  consensus multifurcations and report observed split counts/missing slots,
+  maximum-resolved RF normalization and observed-split normalization separately.
+  The latter is unavailable at a zero/zero denominator. Verify all exports
+  independently from raw trees; require both original producer/reader journals
+  and full hashes. Fixed source cohorts, every missing state and separate
+  support/length semantics remain explicit. The full synthetic workflow passed
+  with all 15 corrupted exports rejected; actual production remains dependent
+  on the original 16 native fits. No GPU or paid resources are added.
