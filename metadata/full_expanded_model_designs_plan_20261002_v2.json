@@ -1,0 +1,126 @@
+{
+  "inputs_completion": "metadata/full_expanded_model_inputs_completed_20261002.json",
+  "inputs_plan": "metadata/full_expanded_model_inputs_plan_20261002.json",
+  "inputs_closure_launch": "metadata/full_expanded_model_inputs_closure_launch_20261002.json",
+  "expected": {
+    "logical_cases": 75188,
+    "selected_records": 4250692,
+    "input_setting_rows": 51840,
+    "model_setting_rows": 622080
+  },
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "model_specification": {
+    "sequence_axes": {
+      "gene_distance": [
+        "gene_distance_delta",
+        "gene_distance_square_delta",
+        "gene_distance_cube_delta"
+      ],
+      "aligned_identity": [
+        "aligned_identity_delta",
+        "aligned_identity_square_delta",
+        "aligned_identity_cube_delta"
+      ]
+    },
+    "outcomes": [
+      "rmsd_delta",
+      "native_tm_dissimilarity_delta"
+    ],
+    "degrees": [
+      1,
+      2,
+      3
+    ],
+    "nuisance_columns": [
+      "original_coverage_delta",
+      "log_aligned_length_ratio",
+      "aligned_plddt70_fraction_delta",
+      "log_original_length_ratio",
+      "mean_ca_plddt_delta",
+      "fraction_ca_plddt_below50_delta"
+    ],
+    "intercept": true,
+    "centering": false,
+    "scaling": "Each column divided by its maximum absolute value and then L2 norm; no approximate zero cutoff",
+    "exact_zero_columns": "Recorded explicitly and inactive; no nonzero column dropped to restore rank",
+    "numerical_rank": "SVD of active unit-L2 columns; max(N,nominal_columns) * float64 epsilon * largest singular value",
+    "rank_boundary": "Ranks at one tenth and ten times the default tolerance must agree or disposition requires review",
+    "nonfit_states": [
+      "empty_setting",
+      "sequence_axis_uninformative_requires_review",
+      "insufficient_residual_dimension",
+      "rank_boundary_requires_review",
+      "rank_deficient_requires_review",
+      "constant_response_requires_review"
+    ],
+    "condition_readback": "Exact relationship to exported singular values, then independent reciprocal-condition comparison with dimension-dependent float64 backward-error allowance. Singular-value checks, rank cutoffs and review states unchanged."
+  },
+  "output": "results/phylogeny/full-expanded-model-designs-20261002-v2",
+  "fixture_validation": "metadata/full_expanded_model_design_fixture_validation_20261002_v2.json",
+  "resources": {
+    "status": "planned_full_expanded_design_inventory_v2_condition_precision_fix",
+    "checked_utc": "2026-10-02T20:10:20.085876+00:00",
+    "logical_cases": 75188,
+    "selected_records": 4250692,
+    "input_setting_rows": 51840,
+    "model_setting_rows": 622080,
+    "nominal_tree_setting_fits": 3110400,
+    "maximum_unique_cohorts": 10368,
+    "maximum_unique_designs": 311040,
+    "maximum_unique_fit_inputs": 622080,
+    "cohort_member_occurrence_upper_bound": 60014752,
+    "cohort_member_array_upper_bytes": 480118016,
+    "cpu_per_stage": 2,
+    "memory_gib_per_stage": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "output_and_scratch_allowance_gib": 32,
+    "minimum_free_disk_gib": 100,
+    "planning_hours_per_stage": [
+      1,
+      24
+    ],
+    "runtime_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "available_memory_gib": 609.5326881408691,
+    "free_disk_gib": 10412.191097259521,
+    "input_producer_receipt": "results/phylogeny/full-expanded-model-inputs-20261002-v1/receipt.json",
+    "input_producer_receipt_sha256": "2073dade741d4653b24de0a76a2df2639e0558871d7826a482d6d94c423fcdc7",
+    "input_partitions_bytes": 411091420,
+    "basis": "Complete 622,080 setting records with exact cohort sharing, at most 311,040 nominal fixed-effect design audits and 622,080 response-input records. Closed producer counts bound all base-cohort member occurrences at 60,014,752 before deduplication; int64 membership arrays use at most 480,118,016 bytes. Ten fixed numeric partitions load once and dense N-by-at-most-10 scratch is streamed per design. Full source hash maps and SQLite original-membership readback dominate memory/disk beyond small matrices. No N-by-N covariance is allocated and no variance model or scientific hypothesis is fitted. SVD/QR stage runtime uncalibrated; rank/equivalence census must inform a separate full fit resource plan.",
+    "preserved_original_queue": "metadata/full_expanded_model_designs_superseded_attempt_20261002_v1.json",
+    "rank_cutoffs_or_review_policy_changed": false
+  },
+  "pins": {
+    "metadata/full_expanded_model_design_fixture_validation_20261002_v2.json": "ed0bd70693f9d4a88a363c38610b29b5b4ac5a9791d1208fdf5da0d6d204ddfe",
+    "metadata/full_expanded_model_designs_resources_20261002_v2.json": "e059ba81f72b820516d7bc0483bcbe33bffbb768d995253c28a72557afb0af1e",
+    "metadata/full_expanded_model_designs_superseded_attempt_20261002_v1.json": "828f67222fe6451e180b52311c720de00a034e4fcfd653cf57383f5a61e20c5f",
+    "metadata/full_expanded_model_inputs_closure_launch_20261002.json": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583",
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/receipt.json": "2073dade741d4653b24de0a76a2df2639e0558871d7826a482d6d94c423fcdc7",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_expanded_model_designs_v2.py": "35b22f4964e3ef6dfef7d90aaf01c0f0f531d497c69390ec5c014281460fbcb9",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/launch_full_expanded_model_designs_v2.py": "9002f1bec68e27b7fa8bc8db118ea225b2ff171b29d21c81ad1d1eb8dc62d7b4",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_expanded_model_designs.py": "94bf748656a3aef71904c0d193728d76ca28926920587f7e817a8087e5b9c886",
+    "scripts/readback_full_expanded_model_designs_v2.py": "d36bce05c97cc67a634c3f7a76d2af842fb31bb7a6db43b3303348b224308c7c",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "scope": "Complete 622,080 expanded fixed model-setting inputs across all guides/policies/54scenarios/masks/eligibility/screens/orders and both responses/two sequence axes/three polynomial degrees, nominally 3,110,400 tree-setting inputs over five working covariance alternatives. Preserve every setting and map exact ordered logical case identities to shared cohort/design/response inputs; never collapse distinct genes or weight memberships as replicates. All declared columns retained in audit; exactly zero contrasts explicitly inactive without approximate term deletion, and nonzero dependencies, absent sequence information, empty/underspecified cohorts, rank boundaries and constant responses require review. Numerical ranks are independently checked by long-double normalization and pivoted QR followed by LAPACK gesvd, and SQLite independently reconstructs every cohort from all original selection links. Raw/scaled design and response hashes, full expanded covariance/entity identity and working tree/source contracts remain bound. Full producer/reader/hash/two-original-journal closure gates acceptance. This is not a variance fit, adequate-model qualification or calibrated evolutionary inference. Nominal input counts precede final shared-entity loading/variance/weight/control variants and are not final scientific fit counts. Expanded covariance fitting, dependence, uneven sampling/missingness/ascertainment, predictor/domain/PAE, accepted species/reconciled gene trees, uncertainty/calibration and all eight scientific aims remain open. GPU prediction stays paused; no charges. Version2 corrects raw ill-conditioned condition-number readback by verifying the exact exported singular-value ratio and its stable reciprocal against independent QR/SVD with a dimension/epsilon error bound. All rank cutoffs and review dispositions remain unchanged; original three version1 queued invocations were stopped and journal-preserved before production began. Version2 boundary contract and all23 altered exports pass before launch."
+}

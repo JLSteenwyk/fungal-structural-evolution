@@ -782,3 +782,26 @@ with original-membership SQLite reconstruction. The full 622,080 future
 model-setting records and 3,110,400 nominal tree-setting fits require rank/
 recipe/resource qualification before fitting. No GPU authorization changed.
 [Complete workflow](full-expanded-model-inputs-20261002.md).
+
+
+## October 2: exact cohort reuse and explicit design qualification
+
+Retain all 622,080 expanded model settings, including empty and unestimable
+ones. Share computation only for exact ordered original case identities,
+mask/order/axis/degree/response and source contracts; preserve distinct genes
+sharing models. Record every declared term and deactivate only exactly zero
+columns, with no approximate cutoff. Keep nonzero collinearity, absent sequence
+information and constant response explicit. Check rank stability across the
+recorded tolerance band using independent long-double normalization and
+pivoted QR/gesvd. Complete original-membership SQL reconstruction, every
+source/artifact hash and both original process journals gate production
+acceptance. No expanded variance fit is launched until the full census
+informs a separate compute/resource plan.
+[Full design inventory](full-expanded-model-designs-20261002.md).
+
+For version2, verify condition-number exports through their singular-value
+ratio and compare reciprocal condition using a dimension/epsilon error bound.
+A direct rank-boundary contract demonstrated that raw condition numbers
+amplify otherwise acceptable last-singular-value roundoff. Rank thresholds
+and review dispositions remain unchanged; the original version1 queue was
+stopped with exact original handles before production and journal-preserved.

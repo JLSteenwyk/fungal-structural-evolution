@@ -70,6 +70,14 @@ counts. It retains gene/model identities, null measurements and nonlinear
 sequence contrasts, with independent Decimal and SQLite readback queued.
 Software checks rejected 18 altered exports; production acceptance and full
 expanded model fitting remain pending. No GPU prediction was resumed.
+The producer has since finished the complete grid; independent readback is
+running. The [complete design and recipe inventory](docs/full-expanded-model-designs-20261002.md)
+is queued behind its original closure for all 622,080 fixed model-setting
+records. It will check exact cohort sharing and independently verify numerical
+ranks while retaining all empty and review states. Software contracts rejected
+23 altered exports, including a corrected rank-boundary diagnostic check in
+version 2. The original design queue was preserved before production began.
+Expanded covariance fits remain pending.
 
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved

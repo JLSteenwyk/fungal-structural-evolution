@@ -2464,3 +2464,25 @@ provenance checks, not fitted/calibrated effects. Full design ranks, exact
 recipe equivalence, expanded dependence fitting, accepted phylogenies and
 prediction/domain/PAE/ascertainment controls remain necessary.
 [Scope, methods, resources and reproduction](full-expanded-model-inputs-20261002.md).
+
+
+## October 2: full expanded design rank and recipe inventory
+
+Queued all 622,080 fixed model-setting inputs and five working tree alternatives
+behind the original full input closure. Each cohort retains original cases
+in canonical case-ID order; exact cohort/design/response inputs can share
+computation while all original settings remain mapped. Raw and scaled matrix
+hashes, response values and complete source/covariance/physical/gene-node
+identities remain bound. Declared columns include intercept, sequence power
+contrasts and all six nuisance contrasts. Scaling uses maximum absolute value
+then L2 norm without centering. Exactly zero columns remain recorded but
+inactive; nonzero dependencies are not trimmed. Ranks use default float64
+dimension/leading-singular-value tolerance and a 0.1–10 tolerance band;
+long-double normalization and independent pivoted QR/gesvd readback verify
+all numerical diagnostics. SQLite independently reconstructs every original
+cohort and the full fixed setting grid. Empty/uninformative/underspecified/
+rank-boundary/rank-deficient/constant-response states remain explicit.
+No variance fit, adequate shared-ancestry correction or calibrated inference
+is established by the inventory. Final fit identities still need covariance
+loading, weighting and control variants.
+[Complete scope, resources and tests](full-expanded-model-designs-20261002.md).

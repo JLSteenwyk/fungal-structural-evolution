@@ -1,0 +1,39 @@
+{
+  "status": "passed_full_expanded_model_design_software_contracts",
+  "rejected_rehashed_exports": [
+    "cohort_order",
+    "cohort_alias_collapse",
+    "omit_s54",
+    "omit_empty_setting",
+    "setting_fit_changed",
+    "setting_degree_changed",
+    "wrong_rank",
+    "drop_nonzero_column",
+    "wrong_scale",
+    "loose_rank_tolerance",
+    "scaled_hash",
+    "raw_hash",
+    "component_hash",
+    "physical_pair_hash",
+    "ordered_input_hash",
+    "wrong_predictor",
+    "response_hash",
+    "constant_promoted",
+    "missing_fit",
+    "extra_fit",
+    "tree_changed",
+    "source_contract"
+  ],
+  "full_interrupt_replay_passed": true,
+  "completed_restart_refused": true,
+  "extreme_scale_qr_svd_check_passed": true,
+  "full_grid_retained_and_exact_cohorts_shared": true,
+  "source_and_journal_fixtures_synthetic": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_expanded_model_designs.py": "4777893eb2774bcf8a956e3246aee728a14a87f685277b749f55a6f614f012cc",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "scripts/prepare_full_expanded_model_designs.py": "94bf748656a3aef71904c0d193728d76ca28926920587f7e817a8087e5b9c886",
+    "scripts/readback_full_expanded_model_designs.py": "89ffb4dad75b4635dbf5405cff37fcbde1caa1990cc0a967c747e65a624dbe4d"
+  },
+  "scope": "48 distinct gene-context cases; shared physical/model contexts, reused controls, 3,840 fixed model settings with exact reuse, empty/underspecified/rank-deficient/uninformative/constant-response dispositions. Full synthetic closed sources and journals check software only; not a pilot or production acceptance. Exact-zero nuisance columns remain explicit; no approximate term deletion or calibrated inference."
+}

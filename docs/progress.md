@@ -11263,3 +11263,41 @@ and figure review remain next.
   calibration work, prediction/domain/PAE/accepted species/reconciled gene
   framework and all eight scientific aims remain incomplete.
   [Full input methods and resources](full-expanded-model-inputs-20261002.md).
+
+
+- October 2 UTC: the prior goal turn made concrete progress by committing and
+  pushing the full model-input workflow (`d58dc42`). Its original producer has
+  now finished all 751,880 rows and 51,840 setting counts; independent
+  Decimal/SQLite readback remains live. Then implemented, froze and queued the
+  full expanded design inventory for all 622,080 fixed model-setting inputs.
+  Exact cohort sharing retains all original settings and distinct gene
+  identities. Exact-zero nuisance terms remain in the audit but inactive;
+  all other numerical/response review states remain explicit. Software
+  contracts passed all 3,840 synthetic setting rows, independent long-double/
+  QR/gesvd checks, extreme scales, interruption replay and completed-restart
+  refusal, rejecting all 22 altered exports. Before launch recorded two CPU/
+  32 GiB/no swap/BLAS1, 32 GiB output/scratch and 100 GiB reserve, no GPU/charges.
+  Original queued producer PID 2442146, reader 2442150 and closure 2442154 await
+  original input closure. Closed producer counts bound pre-sharing cohort
+  member indices at 480,118,016 bytes. The nominal 3,110,400 tree-setting
+  inputs precede final covariance/weight/control variants and are not fitted
+  results. Full production closure, expanded fitting/calibration, predictor/
+  domain/PAE, accepted phylogenies/reconciliation and all eight scientific
+  aims remain incomplete; GPU prediction stays paused.
+  [Complete design methods and resources](full-expanded-model-designs-20261002.md).
+
+- October 2 UTC: a further rank-boundary fixture exposed an unjustified fixed
+  relative tolerance on ill-conditioned condition numbers in the new design
+  reader. Every original version1 queue handle was verified live with no
+  production child/output before stopping and preserving all three original
+  journals. New immutable version2 checks the exported singular-value ratio
+  exactly and its stable reciprocal against independent QR/SVD with a
+  dimension/epsilon error bound. Singular-value tests, rank cutoffs and all
+  review dispositions are unchanged. Complete version2 contracts, boundary
+  case, extreme scales, full replay and all 23 altered-export rejections
+  passed before the corrected full queue was launched. Version1 plans/scripts/
+  launches remain preserved; the original full input reader was unchanged.
+  Corrected original handles are producer PID 2451729, reader 2451757 and
+  closure 2451777. The fresh v2 queue checkpoint verifies all live identities
+  and complete plan/software pins, while retaining the terminal input producer
+  as pending independent readback. Source/recovery jobs remain unchanged.

@@ -1,0 +1,68 @@
+table	field	definition
+model_settings	guide	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	policy	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	scenario_id	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	mask	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	eligibility_gate	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	screen	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	order_contrast	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	outcome	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	sequence_axis	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	degree	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	cohort_id	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	design_id	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	fit_input_id	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	records	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	disposition	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+model_settings	nominal_tree_fits	Original setting/specification and exact cohort/design/response-input identities; all settings retained
+cohort_manifest	cohort_id	Hash of guide, mask and canonically ordered original logical case IDs
+cohort_manifest	guide	Original alignment guide
+cohort_manifest	mask	full or plddt70
+cohort_manifest	ordered_case_ids_sha256	SHA256 of fixed-width 64-byte ordered case IDs without truncation
+cohort_manifest	membership_occurrences	Number of distinct base settings sharing this exact cohort; not replicate count
+cohort_manifest	path	Compressed NPZ containing case_rows only
+cohort_manifest	sha256	Exact artifact checksum
+cohort_manifest	records	Number of logical case rows
+cohort_manifest	case_rows_sha256	SHA256 of little-endian int64 original case indices in canonical case-ID order
+unique_designs	design_id	Exact cohort/order/axis/degree/predictor/source-contract hash
+unique_designs	cohort_id	Foreign key into cohort manifest
+unique_designs	mask	Residue mask
+unique_designs	order_contrast	00/01/10/11 or mean
+unique_designs	sequence_axis	gene_distance or aligned_identity
+unique_designs	degree	1,2 or3 powers transformed before order means
+unique_designs	predictor_columns	Full declared columns: intercept, sequence powers, six nuisance terms
+unique_designs	records	Cohort size
+unique_designs	columns	Nominal declared columns
+unique_designs	active_columns	Declared columns with at least one exact nonzero value; all nominal columns for empty cohorts
+unique_designs	active_column_indices	Indices of active declared columns; exact zeros only inactive
+unique_designs	exactly_zero_column_indices	Declared all-zero column indices; no values imputed and no approximate cutoff
+unique_designs	column_maxabs	Original per-column maximum absolute value
+unique_designs	column_l2_after_maxabs	L2 norm after division by positive column maxabs; zero retained for an all-zero column
+unique_designs	singular_values	Singular values of active unit-L2 design
+unique_designs	rank_tolerance	max(N,nominal columns) times float64 epsilon times largest singular value
+unique_designs	rank	Count of singular values above default tolerance
+unique_designs	rank_at_one_tenth_tolerance	Rank at 0.1 times default tolerance
+unique_designs	rank_at_ten_times_tolerance	Rank at 10 times default tolerance
+unique_designs	normalized_condition_number	Largest/smallest singular value when active design has full rank; otherwise null
+unique_designs	raw_design_sha256	SHA256 of little-endian float64 full declared raw design; signed zero canonicalized
+unique_designs	scaled_design_sha256	SHA256 of little-endian float64 active scaled design
+unique_designs	ordered_input_ids_sha256	Checksum of original mask/order input IDs in cohort order
+unique_designs	species_pattern_rows_sha256	Checksum of expanded species-pattern indices in cohort order
+unique_designs	family_components_sha256	Checksum of original full expanded shared-entity component IDs
+unique_designs	background_nodes_sha256	Checksum of original reused background gene-node IDs
+unique_designs	background_physical_pairs_sha256	Checksum of original reused background physical-model pair IDs
+unique_designs	unique_family_components	Distinct full shared-entity components; not effective N
+unique_designs	unique_species_patterns	Distinct expanded species patterns; not effective N
+unique_designs	largest_family_component	Largest number of retained rows sharing a full covariance component
+unique_designs	disposition	Design readiness/review status; not scientific acceptance
+unique_fit_inputs	fit_input_id	Hash of exact design ID, response label and response values; identifies data input, not final variance-model specification
+unique_fit_inputs	design_id	Foreign key into unique_designs
+unique_fit_inputs	cohort_id	Foreign key into cohort manifest
+unique_fit_inputs	outcome	rmsd_delta or native_tm_dissimilarity_delta
+unique_fit_inputs	response_sha256	SHA256 of little-endian float64 ordered observed response; signed zero canonicalized
+unique_fit_inputs	records	Response count
+unique_fit_inputs	response_min	Minimum observed response, null for empty cohort
+unique_fit_inputs	response_max	Maximum observed response, null for empty cohort
+unique_fit_inputs	disposition	Ready for working fit or explicit unresolved review state
+unique_fit_inputs	trees	Five current working species covariance alternatives; not accepted dated trees
+unique_fit_inputs	source_contract	Closed input/covariance plan and completion checksum contract

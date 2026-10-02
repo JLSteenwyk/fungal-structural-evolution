@@ -1,0 +1,38 @@
+{
+  "source_plan": "metadata/full_expanded_model_designs_plan_20261002.json",
+  "producer_receipt": "results/phylogeny/full-expanded-model-designs-20261002-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-expanded-model-designs-20261002-v1/readback.json",
+  "producer_status": "complete_full_expanded_model_designs_pending_independent_readback",
+  "reader_status": "passed_full_expanded_model_design_sql_qr_readback",
+  "completed_status": "complete_verified_full_expanded_model_designs",
+  "summary_fields": [
+    "logical_cases",
+    "selected_records",
+    "input_setting_rows",
+    "model_setting_rows",
+    "unique_cohorts",
+    "unique_designs",
+    "unique_fit_inputs",
+    "nominal_tree_setting_fits",
+    "unique_tree_fit_inputs",
+    "design_status_counts",
+    "fit_input_status_counts",
+    "setting_status_counts",
+    "largest_cohort",
+    "cohort_member_occurrences",
+    "trees"
+  ],
+  "launches": [
+    "metadata/full_expanded_model_designs_launch_20261002.json",
+    "metadata/full_expanded_model_designs_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_expanded_model_designs_plan_20261002.json": "00e0e2d6d93679cb3f2df91ada1cc93f5bdf3155c01cab4d6e40f6ce68610730",
+    "metadata/full_expanded_model_designs_launch_20261002.json": "ed67c961d8dfae5dd06503d24a9bd6dd313919c003c40a207ff539195022f677",
+    "metadata/full_expanded_model_designs_readback_launch_20261002.json": "e1055942cb4245d42300d1370f73aa7942a036357eb78f0a93f8a891868d6e53",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_expanded_model_designs_completed_20261002.json",
+  "scope": "Complete 622,080 expanded fixed model-setting inputs across all guides/policies/54scenarios/masks/eligibility/screens/orders and both responses/two sequence axes/three polynomial degrees, nominally 3,110,400 tree-setting inputs over five working covariance alternatives. Preserve every setting and map exact ordered logical case identities to shared cohort/design/response inputs; never collapse distinct genes or weight memberships as replicates. All declared columns retained in audit; exactly zero contrasts explicitly inactive without approximate term deletion, and nonzero dependencies, absent sequence information, empty/underspecified cohorts, rank boundaries and constant responses require review. Numerical ranks are independently checked by long-double normalization and pivoted QR followed by LAPACK gesvd, and SQLite independently reconstructs every cohort from all original selection links. Raw/scaled design and response hashes, full expanded covariance/entity identity and working tree/source contracts remain bound. Full producer/reader/hash/two-original-journal closure gates acceptance. This is not a variance fit, adequate-model qualification or calibrated evolutionary inference. Nominal input counts precede final shared-entity loading/variance/weight/control variants and are not final scientific fit counts. Expanded covariance fitting, dependence, uneven sampling/missingness/ascertainment, predictor/domain/PAE, accepted species/reconciled gene trees, uncertainty/calibration and all eight scientific aims remain open. GPU prediction stays paused; no charges."
+}
