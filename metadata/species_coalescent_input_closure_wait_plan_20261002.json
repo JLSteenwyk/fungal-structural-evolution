@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    "metadata/species_coalescent_input_launch_20261002.json",
+    "metadata/species_coalescent_input_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "scripts/species_coalescent_sources.py": "97e2e7d4be4fa817111ab065f3f595a17c4ac5bc4593e6c7f1e8cefbee6b75c6",
+    "scripts/prepare_species_coalescent_inputs.py": "70397c293d2558fb0abfb0bf0cb5e4cd72b11b880e5c2ccc200e85a093b79c46",
+    "scripts/readback_species_coalescent_inputs.py": "b52acdf221ac35346fb5b692fc9014584a87297aaa486ceda53b0edd22eaa3a1",
+    "scripts/check_species_coalescent_input_cases.py": "b3bddad13236c91b1c4bf3c885134820aa9041998166e4f2be1b463543b53d70",
+    "scripts/close_species_coalescent_inputs.py": "8af302ae62cbdcb7d3f95640c30f4954daf2a4d3b4ddce6313ec0fe4976e3b4b",
+    "scripts/run_species_coalescent_sensitivities.py": "65a9dbb31675d323711fe2a315c22219b5e3c52c507b71af1f269a7174cb33dd",
+    "scripts/species_gcf_sources.py": "99d46bb41c8a8ed46608f9972d011139a8d444df2719a2f2b628329bf718d466",
+    "scripts/retained_taxon_projection_sources.py": "dc6bf9e21bf228f3033aa54789ce06c0502267f3bde9b2bb988c1dc503f7d4e0",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_completed_20261002_v2.json": "b95e03b91d28245a860673cce1bd2f7818650173ec567a5120bf3727efcb6baf",
+    "metadata/retained_taxon_projection_plan_20261001.json": "9bba4bd535fe98137836315ad3ad308a0976bca64b43298e2226338f76f843e1",
+    "metadata/species_taxon_refit_inputs_completed_20261001.json": "f308609c789f4a9aff124e3655b043d386573524568b986e2e7ca346da20348d",
+    "metadata/species_coalescent_input_resources_20261002.json": "8c896167acb8c55623b3ee09f3610f91f3bcb8c61da67f9fc751c23dd110fae2",
+    "results/software-checks/species-coalescent-input-cases-20261002-v1/receipt.json": "41e759d5d87ffb79fa5440b3d5cf1a0a4dbd4291a50831130059941bcf666454",
+    "results/software-checks/astral-native-contract-20261002-v1/receipt.json": "7d0a06c97fde4872dbc7b33ba9c2a649f854f2d47880324e7392b94260ded92f",
+    "metadata/species_coalescent_input_plan_20261002.json": "26417591ce83e903a306a52e75b41edf0885f67b4cb0c6be3a118817873ed6ca",
+    "metadata/species_coalescent_input_launch_20261002.json": "7c459f6a7911521f24cc3d648644c1e1714657834675d8d0e633908fdc5af0e8",
+    "metadata/species_coalescent_input_readback_wait_plan_20261002.json": "c7d8a05b3b1e2710ecec1c764e4d66d17d14d02dfb89b32d3323879922a08af7",
+    "metadata/species_coalescent_input_readback_launch_20261002.json": "c0650927854759102be5231b9bbc417cd92f79b55b76ca06d45dfbf04dd54f5b",
+    "scripts/close_species_coalescent_inputs_v2.py": "7645f743cf263450c14861b98efd7ff7f892274e31819c16ce0ef2e8bb63383b",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "results/software-checks/null-message-closure-helper-20261002-v1/receipt.json": "f2921f0846e63010a3a57aacde15427d76470916a5de787de19bbb903b62a9de",
+    "results/software-checks/full-coalescent-input-source-census-20261002-v1.json": "5648c94de6ba9a33bbd3db40ee5f6efea9af07396742d58e252315bf3325f77d",
+    "metadata/species_coalescent_input_completion_plan_20261002.json": "aa3e300a690c54e75f35f18ec133b36fa45df7c23dea256b28fcb0ca8a208206"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_species_coalescent_inputs_v2.py",
+    "--plan",
+    "metadata/species_coalescent_input_completion_plan_20261002.json"
+  ],
+  "scope": "All 125 profile and 125 MAFFT audited gene trees, full 526-entry primary cohort plus four actually closed retained cohorts, and three explicit gene-support policies =30 datasets/3750 marker states. Verify all1781685 original gene split/support decisions and every contracted/pruned topology against independent DendroPy source split sets. Contraction occurs before pruning; unavailable SH-aLRT is separately recorded and contracted under SH10/SH80 settings, retained in the uncontracted baseline. These are SH-aLRT sensitivities, not published bootstrap thresholds or posterior draws. Preserve125markers per input and exact tip union/ingroup/outgroup roles including all25 outgroups in primary. Input completion requires full hashes and two original process journals. Supports and marker estimation uncertainty, orthology, taxon identity, MSC model adequacy, roots and native scoring/comparisons remain unqualified; all eight evolutionary aims remain incomplete. No GPU/newcharges/restart/mutation of existing jobs."
+}

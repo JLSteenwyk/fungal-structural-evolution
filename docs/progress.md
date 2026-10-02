@@ -10611,3 +10611,30 @@ does not establish universal coverage or complete the biological project.
   six original scientific/retrieval jobs; expanded structural comparisons have
   processed 132,352/298,848 states. Actual native subset refits and all eight
   biological aims remain incomplete; GPU prediction stays paused.
+
+
+- October 2 UTC: launched all 30 ASTRAL-III alignment/taxon/support
+  sensitivities, with all 125 markers per input. Independent source census
+  checked 1,305 bindings and every taxon union. Missing support remains
+  separate: 565 profile and 366 MAFFT values, contracted only in filtered
+  inputs. Full preparation/readback/closure passed all 3,750 states,
+  1,781,685 support decisions and 1,545,528 retained splits, with 1,408
+  bindings and both original completion journals. Native inference is live.
+  Resources preceded launch: two CPU/16 GiB input stages, two CPU/32 GiB
+  native stage (28 GiB Java heap), no swap/GPU/charges, all serial.
+
+- October 2 UTC: queued full independent coalescent global/local quartet
+  and numerical readback: 15,510 branches, 1,938,750 branch–gene states and
+  3,750 exact global per-gene numerator/denominator counts. Exhaustive
+  18,720 color/tree cases, five actual native numerical contracts and
+  1,264 global tree-pair cases passed; 120 altered native values rejected.
+  The complete first 526-taxon candidate passed all 523 branches/65,375
+  states, exact global score and one original auditor journal/1,434-binding
+  closure. It does not certify the remaining 29 candidates. Full readback
+  and two-original-journal closure are queued, with prelaunch two CPU/
+  16 GiB/no swap/one BLAS resources and no GPU/charges. Latest checkpoint
+  confirms 8/30 native cases complete, 22 live pipeline handles, six original
+  scientific/retrieval jobs and 153,344/298,848 new structural comparison
+  states. [Design and evidence](species-coalescent-sensitivities-20261002.md).
+  Candidate comparisons, gene/taxon/MSC/root qualification and all eight
+  evolutionary aims remain incomplete. GPU prediction remains paused.

@@ -1,0 +1,44 @@
+{
+  "dependencies": [
+    "metadata/species_coalescent_input_closure_launch_20261002.json"
+  ],
+  "pins": {
+    "scripts/species_coalescent_sources.py": "97e2e7d4be4fa817111ab065f3f595a17c4ac5bc4593e6c7f1e8cefbee6b75c6",
+    "scripts/prepare_species_coalescent_inputs.py": "70397c293d2558fb0abfb0bf0cb5e4cd72b11b880e5c2ccc200e85a093b79c46",
+    "scripts/readback_species_coalescent_inputs.py": "b52acdf221ac35346fb5b692fc9014584a87297aaa486ceda53b0edd22eaa3a1",
+    "scripts/check_species_coalescent_input_cases.py": "b3bddad13236c91b1c4bf3c885134820aa9041998166e4f2be1b463543b53d70",
+    "scripts/close_species_coalescent_inputs.py": "8af302ae62cbdcb7d3f95640c30f4954daf2a4d3b4ddce6313ec0fe4976e3b4b",
+    "scripts/run_species_coalescent_sensitivities.py": "65a9dbb31675d323711fe2a315c22219b5e3c52c507b71af1f269a7174cb33dd",
+    "scripts/species_gcf_sources.py": "99d46bb41c8a8ed46608f9972d011139a8d444df2719a2f2b628329bf718d466",
+    "scripts/retained_taxon_projection_sources.py": "dc6bf9e21bf228f3033aa54789ce06c0502267f3bde9b2bb988c1dc503f7d4e0",
+    "scripts/four_run_pmsf_sources.py": "287dfa4ca98fc88e679921731b84c15b8d7d7d26f53d9127ed5e706387544d53",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/record_completed_order_marker_handoffs.py": "f6c985d69ae9489a62b677717d52408320341a86bb13bc7185eca8574b743794",
+    "scripts/screen_duplication_alignment_reuse.py": "b4dc4423c7377319b6b3bf09a6c4212c49716bec6a470542a791cae47f18ddb8",
+    "metadata/species_gene_concordance_plan_20261002.json": "8e23ace5dfd6260d5f341d28fb844db7d4bdac0d278b7af13b049d0644f9285d",
+    "metadata/species_gene_concordance_completed_20261002_v2.json": "b95e03b91d28245a860673cce1bd2f7818650173ec567a5120bf3727efcb6baf",
+    "metadata/retained_taxon_projection_plan_20261001.json": "9bba4bd535fe98137836315ad3ad308a0976bca64b43298e2226338f76f843e1",
+    "metadata/species_taxon_refit_inputs_completed_20261001.json": "f308609c789f4a9aff124e3655b043d386573524568b986e2e7ca346da20348d",
+    "metadata/species_coalescent_input_resources_20261002.json": "8c896167acb8c55623b3ee09f3610f91f3bcb8c61da67f9fc751c23dd110fae2",
+    "results/software-checks/species-coalescent-input-cases-20261002-v1/receipt.json": "41e759d5d87ffb79fa5440b3d5cf1a0a4dbd4291a50831130059941bcf666454",
+    "results/software-checks/astral-native-contract-20261002-v1/receipt.json": "7d0a06c97fde4872dbc7b33ba9c2a649f854f2d47880324e7392b94260ded92f",
+    "metadata/species_coalescent_input_plan_20261002.json": "26417591ce83e903a306a52e75b41edf0885f67b4cb0c6be3a118817873ed6ca",
+    "metadata/species_coalescent_input_closure_launch_20261002.json": "fa789a8d90d41cfc7a0adf63e6c5385df304b7b4abcfc584aae6e562757dfcca",
+    "metadata/species_coalescent_native_resources_20261002.json": "bf544d695c047a5c055e5f1bdba415c15717c71cf1c5f9dd5093bae89eba1324",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/Astral/astral.5.7.8.jar": "2f109e9d48147877eba87799543a2e4e53f21be271e3c4c87de4d4b037a38889",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/Astral/lib/JSAP-2.1.jar": "331746fa62cfbc3368260c5a2e660936ad11be612308c120a044e120361d474e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/Astral/lib/colt.jar": "e1fcbfbdd0d0caedadfb59febace5a62812db3b9425f3a03ef4c4cbba3ed0ee3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/Astral/lib/main.jar": "74f8ff6e7e840d4d3ee15b62bd772c5a2ddf4cda358dad123f961fb0a0f2dd11",
+    "/usr/bin/java": "fbaba969f59ed81814e9d5e68f008cdc003cdd4eff1359afe23eace44fb4f48d",
+    "metadata/species_coalescent_native_plan_20261002.json": "3c30012c8807b94e9c4d365ff9e5b2e71c6e1774fc5266eacf7430b64dd43c29"
+  },
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_species_coalescent_sensitivities.py",
+    "--plan",
+    "metadata/species_coalescent_native_plan_20261002.json"
+  ],
+  "scope": "All thirty actual full ASTRAL-III candidate species-tree inferences: 125 audited genes per profile/MAFFT dataset, five full/closed retained cohorts including all25 outgroups in primary, uncontracted and SH-aLRT10/80 support sensitivities. Missing SH-aLRT is separately contracted under filtered policies, not imputed as zero or called bootstrap support. Native -t2 retains all quartet/local-posterior/effective-gene annotations and coalescent-unit internal lengths; terminal lengths remain absent. Native tree roots are arbitrary and not biologically accepted; lengths are not substitution/time/structural-displacement estimates. Full source closure required before output; every actual command/PID/create/returncode/export is captured. Full independent numerical/quartet scoring, cross-policy and comparison-to-concatenation, bootstrap/marker-estimation uncertainty and biological framework qualification remain required. All eight aims incomplete. No GPU/new charges/restart of existing jobs."
+}

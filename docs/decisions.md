@@ -450,3 +450,23 @@ full collection/journal/biological qualification remains separate.
   implement corrections in new v2 scripts/plans/outputs. Keep unavailable
   factors, gene-estimation uncertainty and biological causes explicit;
   these measurements do not substitute for phylogenetic qualification.
+
+
+- October 2 UTC: estimate the full gene-tree species-tree alternative using
+  all 125 markers from each alignment under every closed taxon cohort and
+  uncontracted/SH10/SH80 settings. Preserve missing-support dispositions;
+  contract before pruning and keep exact-cutoff edges. Do not equate SH-aLRT
+  with the literature's bootstrap contraction thresholds or call filtered
+  trees posterior draws. Require full independently reconstructed input
+  splits and both original completion journals before native inference;
+  qualify quartet/local-posterior/coalescent-length estimates and compare
+  all candidate trees before biological integration.
+
+- October 2 UTC: independently recompute local and global quartet evidence
+  for every coalescent candidate. Preserve unavailable and unresolved
+  evidence before gene-specific normalization, check default-prior posterior
+  and MAP coalescent lengths, and require both original completion journals
+  after all 30 cases. Compare NNI alternatives as an unordered pair; do not
+  infer their biological polarity from native labels. Full named-case proof
+  validates the implementation and leaves the remaining batch and biological
+  model/root/reconciliation qualification open.

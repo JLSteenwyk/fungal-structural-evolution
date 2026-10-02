@@ -1,0 +1,21 @@
+{
+  "status": "planned_full_30_case_support_contraction_and_taxon_pruning_input_proof",
+  "checked_utc": "2026-10-02T01:03:57.217818+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_stage": [
+    0.01,
+    4
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 561.8233413696289,
+  "free_disk_gib": 10510.05337524414,
+  "basis": "All 125 audited gene trees per alignment, five closed cohorts and uncontracted/SH-aLRT10/SH-aLRT80 policies =30 inputs, 3750 marker states, 1781685 original support decisions. Contraction precedes pruning; missing support is separate and contracted only under filtered policies. Independent DendroPy source split projection and two original completion journals required. Synthetic full 5x3 software cases passed and rejected17 wrong taxa/threshold inputs; no biological pilot. TwoCPU16GiB noSwap oneBLAS thread per serial preparation/reader/closure, no GPU, cost, mutation or restart of existing jobs."
+}

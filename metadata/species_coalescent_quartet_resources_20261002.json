@@ -1,0 +1,20 @@
+{
+  "status": "estimated_before_full_30_candidate_independent_quartet_numeric_readback",
+  "checked_utc": "2026-10-02T01:42:43.374674+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.25,
+    2
+  ],
+  "available_memory_gib": 557.5140190124512,
+  "free_disk_gib": 10506.690120697021,
+  "basis": "Every 15,510 internal branch x 125 gene state =1,938,750 local states across 30 actual complete native candidates, plus 3,750 exact global matching/resolved counts. First complete 526-taxon candidate global/local auditor took 33.2 elapsed seconds and 38.647 CPU seconds including source hash verification/JIT. Full batch nominal ~17 minutes plus source I/O/closure, range .25\u20132 hours for scheduling, not guaranteed ETA; excludes native dependency waits. Full first-case proof and exhaustive 18,720 color/tree +1,264 global tree-pair contracts passed. All serial, 2CPU16GiB/noSwap/one BLAS; no GPU, charges or native restarts."
+}

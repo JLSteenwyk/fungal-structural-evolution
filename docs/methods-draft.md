@@ -1878,3 +1878,48 @@ presence cells and 1,898 overlapping incompatible split pairs/quartet witnesses
 and [comparison](../metadata/retained_tree_comparisons_completed_20261001.json).
 Original path sums and missing projected SH-aLRT remain explicit; full actual
 native subset refits and native-versus-reference comparisons are still needed.
+
+
+### Full coalescent species-tree sensitivities (October 2 UTC)
+
+ASTRAL-III 5.7.8 is running on every combination of profile/MAFFT genes, five
+full/closed taxon cohorts and three support settings: uncontracted, SH-aLRT
+below 10 contracted, and SH-aLRT below 80 contracted. All 125 markers remain
+in every input. Missing support is recorded separately and contracted in
+filtered inputs; exactly 10/80 is retained. Contraction precedes pruning.
+These are SH-aLRT sensitivities, distinct from published bootstrap thresholds.
+The primary set keeps all 526 entries and 25 outgroups; species identity
+qualification remains open. Full source census passed all 250 trees, ten
+cohort/alignment unions and 1,305 bindings; every retained marker has at
+least 402 taxa.
+
+All 3,750 input states, 1,781,685 support decisions and 1,545,528 retained
+splits passed independent DendroPy reconstruction. Closure verified 1,408
+bindings and both original journals. Installed jar and three dependencies
+match the official 5.7.8 archive. Native resolved/missing/polytomous contracts
+passed. All native commands, child process identities, return codes and
+annotated tree/log hashes are retained outside Git.
+
+Independent Python/Numba readback is queued for every 15,510 branch and
+1,938,750 branch–gene state. A colored postorder dynamic program computes
+exact local quartet counts; gene-specific normalization preserves missing
+clades and unresolved evidence. Separate node-component intersections
+compute the exact global matching score, and unresolved quartet centers
+give the independent global denominator. Beta-tail integration and the
+native default lambda = 0.5 recompute local posterior support and MAP
+coalescent lengths. NNI alternatives are compared as an unordered pair.
+All 18,720 color/tree cases, five native numerical contracts and 1,264 global
+tree-pair cases passed; 120 altered native values were rejected.
+
+The first actual full candidate passed all 523 branches and 65,375 local
+states, its exact global numerator/denominator and one-journal closure with
+1,434 bindings. This certifies one candidate's numerical calculations; the
+30-case full readback/two-journal closure and all native-versus-concatenation
+comparisons remain pending. Full readback resources were estimated before
+launch: two CPU/16 GiB/no swap/one BLAS thread, no GPU or charges.
+
+[Workflow, complete inputs and current evidence](species-coalescent-sensitivities-20261002.md).
+Candidate estimation remains conditional on inferred genes, taxa/support
+settings and MSC/locality assumptions. Numerical agreement does not prove
+search optimality or biological model adequacy. Native rooting is arbitrary;
+coalescent lengths do not estimate substitutions, time or structural change.

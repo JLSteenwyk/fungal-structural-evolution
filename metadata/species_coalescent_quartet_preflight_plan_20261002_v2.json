@@ -1,0 +1,43 @@
+{
+  "mode": "complete_named_cases_preflight",
+  "native_plan": "metadata/species_coalescent_native_plan_20261002.json",
+  "cases": [
+    "profile-full_primary-uncontracted"
+  ],
+  "output": "results/phylogeny/full-species-coalescent-quartet-preflight-20261002-v2",
+  "pins": {
+    "scripts/coalescent_quartet_audit_v2.py": "674c67d087ff6e14db91fba2f9bb9bf4fbe55dc54c5ac5c2639efe727f978e29",
+    "scripts/check_coalescent_quartet_audit_v2.py": "ca3fbd8bc63d430d1038fe621fbb74c52ee943003dc004df7c55940b42285f93",
+    "scripts/coalescent_global_quartet_audit.py": "879619ca98a70828c2827dffdffb528257af188eaaca55d172405eb426df5276",
+    "scripts/check_coalescent_global_quartets.py": "8b6e95556c69e4ce46845fafffb435280536bd25d77c5c96d7b86f8078fb2e23",
+    "scripts/readback_species_coalescent_quartets.py": "e00aab093a737234d3a8a6aeadac03beee61ceb8b56277fc8d08bb0fc2d0d369",
+    "scripts/readback_species_coalescent_quartets_v2.py": "1a9d9418dfc7f20756e0d1f752d12d77aacb1785e66b3c46bc31a84c7edbad13",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/software-checks/coalescent-quartet-numeric-contracts-20261002-v2/receipt.json": "dcb46b1127e82a10650415eb6f13c122ed8231b4fec87df39b5e428b72de636e",
+    "results/software-checks/coalescent-global-quartet-contracts-20261002-v1/receipt.json": "30cbd062b60077e68321a2db6d99d5b4323c248dabd5319983acdc7758d7b6fe",
+    "metadata/species_coalescent_quartet_preflight_resources_20261002_v2.json": "64725f262a0d02fe5c7b90f78955253a590b634d720f66b901f73559a6c5be35"
+  },
+  "resources": {
+    "status": "estimated_before_complete_native_case_global_and_local_quartet_preflight",
+    "checked_utc": "2026-10-02T01:38:54.986447+00:00",
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "available_memory_gib": 556.8063087463379,
+    "free_disk_gib": 10507.38480758667,
+    "basis": "Every 523 branch x 125 gene state of the actual full 526-taxon first completed native candidate. Integer colored-tree DP plus independent global denominator, analytic local posterior and MAP lengths. Full case, no biological pilot. 18,720 exhaustive color/tree cases and five actual native resolved, fractional, missing, star and discordant contracts passed; 120 altered native values rejected. No GPU, new charges or production restart. New global numerator algorithm passed all 105 six-tip species topologies x 12 gene cases plus four twelve-tip missing/multifurcating cases against brute four-tip enumeration. Original complete first-case local audit took 16.0 seconds; new global stage remains uncalibrated. Original native inference and first audit stay unchanged."
+  },
+  "scope": "Actual full first 526-taxon profile/uncontracted candidate: independent exact global quartet matching numerator/resolved denominator, every 523 branch x 125 gene local count, unavailable/effective evidence, default-prior posterior and MAP length. Full named-case verification, no biological pilot or claim about other native cases. Constrained native search optimality, gene uncertainty, rooted biological/model framework and all eight aims remain open."
+}

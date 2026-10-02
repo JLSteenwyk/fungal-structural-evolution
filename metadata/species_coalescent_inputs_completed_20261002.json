@@ -1,0 +1,383 @@
+{
+  "status": "complete_verified_full_species_coalescent_inputs",
+  "cases": 30,
+  "alignments": 2,
+  "cohorts": 5,
+  "support_policies": 3,
+  "marker_states": 3750,
+  "original_gene_split_support_decisions": 1781685,
+  "retained_internal_split_states": 1545528,
+  "case_summaries": [
+    {
+      "case": "profile-full_primary-uncontracted",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "profile-full_primary-sh_alrt10",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 2919
+    },
+    {
+      "case": "profile-full_primary-sh_alrt80",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 19687
+    },
+    {
+      "case": "profile-exclude_sparse_boundary_taxon-uncontracted",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "profile-exclude_sparse_boundary_taxon-sh_alrt10",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 2919
+    },
+    {
+      "case": "profile-exclude_sparse_boundary_taxon-sh_alrt80",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 19687
+    },
+    {
+      "case": "profile-exclude_below10_both_alignments-uncontracted",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "profile-exclude_below10_both_alignments-sh_alrt10",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 2919
+    },
+    {
+      "case": "profile-exclude_below10_both_alignments-sh_alrt80",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 19687
+    },
+    {
+      "case": "profile-exclude_curated_hybrids-uncontracted",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "profile-exclude_curated_hybrids-sh_alrt10",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 2919
+    },
+    {
+      "case": "profile-exclude_curated_hybrids-sh_alrt80",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 19687
+    },
+    {
+      "case": "profile-exclude_hybrids_and_uncertain_labels-uncontracted",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "profile-exclude_hybrids_and_uncertain_labels-sh_alrt10",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 2919
+    },
+    {
+      "case": "profile-exclude_hybrids_and_uncertain_labels-sh_alrt80",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59315,
+      "contracted_missing_support": 565,
+      "contracted_below_support": 19687
+    },
+    {
+      "case": "mafft-full_primary-uncontracted",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "mafft-full_primary-sh_alrt10",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 2319
+    },
+    {
+      "case": "mafft-full_primary-sh_alrt80",
+      "markers": 125,
+      "taxa": 526,
+      "roles": {
+        "ingroup": 501,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 18183
+    },
+    {
+      "case": "mafft-exclude_sparse_boundary_taxon-uncontracted",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "mafft-exclude_sparse_boundary_taxon-sh_alrt10",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 2319
+    },
+    {
+      "case": "mafft-exclude_sparse_boundary_taxon-sh_alrt80",
+      "markers": 125,
+      "taxa": 525,
+      "roles": {
+        "ingroup": 500,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 18183
+    },
+    {
+      "case": "mafft-exclude_below10_both_alignments-uncontracted",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "mafft-exclude_below10_both_alignments-sh_alrt10",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 2319
+    },
+    {
+      "case": "mafft-exclude_below10_both_alignments-sh_alrt80",
+      "markers": 125,
+      "taxa": 522,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 23
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 18183
+    },
+    {
+      "case": "mafft-exclude_curated_hybrids-uncontracted",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "mafft-exclude_curated_hybrids-sh_alrt10",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 2319
+    },
+    {
+      "case": "mafft-exclude_curated_hybrids-sh_alrt80",
+      "markers": 125,
+      "taxa": 524,
+      "roles": {
+        "ingroup": 499,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 18183
+    },
+    {
+      "case": "mafft-exclude_hybrids_and_uncertain_labels-uncontracted",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 0,
+      "contracted_below_support": 0
+    },
+    {
+      "case": "mafft-exclude_hybrids_and_uncertain_labels-sh_alrt10",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 2319
+    },
+    {
+      "case": "mafft-exclude_hybrids_and_uncertain_labels-sh_alrt80",
+      "markers": 125,
+      "taxa": 503,
+      "roles": {
+        "ingroup": 478,
+        "outgroup": 25
+      },
+      "original_gene_split_support_decisions": 59464,
+      "contracted_missing_support": 366,
+      "contracted_below_support": 18183
+    }
+  ],
+  "full_hash_archive": "results/phylogeny/full-species-coalescent-inputs-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "72a6b68e4ffbd903ae8e8834f8be2b0c5bad07e95a7892f6de1ae26b9ba85dcd",
+  "bound_source_hashes": 1408,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-species-coalescent-inputs-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "f40ae052a3b536b80485bb74caa02856a99928c296c140bfa26457cda5a2f1d9",
+  "independent_readback": "results/phylogeny/full-species-coalescent-inputs-20261002-v1/readback.json",
+  "independent_readback_sha256": "70f9f16176a6a5ec3e5553acd976d1e0a2d23adc5bf551dd4f39c003bd0a5f3b",
+  "completion_plan_sha256": "aa3e300a690c54e75f35f18ec133b36fa45df7c23dea256b28fcb0ca8a208206",
+  "scientific_eligibility": false,
+  "scope": "All 125 profile and 125 MAFFT audited gene trees, full 526-entry primary cohort plus four actually closed retained cohorts, and three explicit gene-support policies =30 datasets/3750 marker states. Verify all1781685 original gene split/support decisions and every contracted/pruned topology against independent DendroPy source split sets. Contraction occurs before pruning; unavailable SH-aLRT is separately recorded and contracted under SH10/SH80 settings, retained in the uncontracted baseline. These are SH-aLRT sensitivities, not published bootstrap thresholds or posterior draws. Preserve125markers per input and exact tip union/ingroup/outgroup roles including all25 outgroups in primary. Input completion requires full hashes and two original process journals. Supports and marker estimation uncertainty, orthology, taxon identity, MSC model adequacy, roots and native scoring/comparisons remain unqualified; all eight evolutionary aims remain incomplete. No GPU/newcharges/restart/mutation of existing jobs."
+}

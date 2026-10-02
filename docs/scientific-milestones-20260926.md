@@ -804,3 +804,17 @@ inputs/artifacts respectively. These matched-taxon references preserve original
 path sums and unavailable SH-aLRT; they do not replace the 16 actual native
 refits or establish a root/model adequacy/structural evolutionary effect.
 [Completed evidence](pmsf-four-run-sensitivity-20261001.md#retained-reference-sensitivity-closed-october-2-utc).
+
+
+October 2 UTC: the 30-run gene-tree species-tree alternative is running with
+all 125 profile/MAFFT markers, five exact cohorts and three SH-aLRT settings.
+All 3,750 inputs and 1,781,685 support decisions passed independent readback
+and two-journal/1,408-binding closure. Every taxon union passed; missing
+support remains separate and no marker is omitted. Full independent local
+and global quartet/numeric readback is queued for 15,510 branches and
+1,938,750 branch–gene states. The first full candidate's exact numerator/
+denominator and all 65,375 local states passed one-journal closure.
+[Workflow and evidence](species-coalescent-sensitivities-20261002.md).
+Full-batch numerical closure, candidate comparisons, gene/taxon/model/root
+qualification and the final reconciled framework remain required. No
+biological aim is complete; GPU prediction remains paused.

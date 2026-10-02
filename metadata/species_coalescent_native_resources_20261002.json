@@ -1,0 +1,25 @@
+{
+  "status": "planned_full_30_native_astral_iii_gene_support_taxon_sensitivity_runs",
+  "checked_utc": "2026-10-02T01:09:07.846835+00:00",
+  "cpu": 2,
+  "memory_gib": 32,
+  "java_heap_gib": 28,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 2,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_case": [
+    0.05,
+    6
+  ],
+  "planning_hours_full_serial_batch": [
+    1.5,
+    180
+  ],
+  "runtime_uncalibrated": true,
+  "available_memory_gib": 562.5128517150879,
+  "basis": "Thirty actual 125-marker ASTRAL-III 5.7.8 inferences: two alignments x five full/closed taxon cohorts x three explicit support-contraction settings, all full data without a biological pilot. Local jar and all three dependencies exactly match official archive; native six-taxon resolved/missing/polytomous contracts passed. Java21 -Xmx28G with two available processors, service2CPU32GiB/noSwap/1BLAS. ASTRAL algorithm is mostly single threaded; adding arbitrary worker threads is not meaningful. TwoGiB output allowance and100GiB disk reserve. Native runtime on 500 taxa/high discordance is uncalibrated; full independent scoring/comparison/journal closure remains required. No GPU, paid resources or restart/mutation of existing analyses."
+}

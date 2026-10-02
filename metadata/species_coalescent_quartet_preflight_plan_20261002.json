@@ -1,0 +1,39 @@
+{
+  "mode": "complete_named_cases_preflight",
+  "native_plan": "metadata/species_coalescent_native_plan_20261002.json",
+  "cases": [
+    "profile-full_primary-uncontracted"
+  ],
+  "output": "results/phylogeny/full-species-coalescent-quartet-preflight-20261002-v1",
+  "pins": {
+    "scripts/coalescent_quartet_audit_v2.py": "674c67d087ff6e14db91fba2f9bb9bf4fbe55dc54c5ac5c2639efe727f978e29",
+    "scripts/check_coalescent_quartet_audit_v2.py": "ca3fbd8bc63d430d1038fe621fbb74c52ee943003dc004df7c55940b42285f93",
+    "scripts/readback_species_coalescent_quartets.py": "e00aab093a737234d3a8a6aeadac03beee61ceb8b56277fc8d08bb0fc2d0d369",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "results/software-checks/coalescent-quartet-numeric-contracts-20261002-v2/receipt.json": "dcb46b1127e82a10650415eb6f13c122ed8231b4fec87df39b5e428b72de636e",
+    "metadata/species_coalescent_quartet_preflight_resources_20261002.json": "4749c4bae51b6b4ce6b573d5f8fab82dfc154f630912b553b8c39e191c336c81"
+  },
+  "resources": {
+    "status": "estimated_before_complete_native_case_quartet_preflight",
+    "checked_utc": "2026-10-02T01:32:23.424700+00:00",
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false,
+    "cost_usd": 0,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 100,
+    "planning_hours": [
+      0.01,
+      1
+    ],
+    "runtime_uncalibrated": true,
+    "available_memory_gib": 556.8063087463379,
+    "free_disk_gib": 10507.38480758667,
+    "basis": "Every 523 branch x 125 gene state of the actual full 526-taxon first completed native candidate. Integer colored-tree DP plus independent global denominator, analytic local posterior and MAP lengths. Full case, no biological pilot. 18,720 exhaustive color/tree cases and five actual native resolved, fractional, missing, star and discordant contracts passed; 120 altered native values rejected. No GPU, new charges or production restart."
+  },
+  "scope": "Actual complete full-primary uncontracted profile candidate: all 523 branches x 125 input genes, 65,375 local quartet states. Independent quartet counts, unavailable/effective evidence, exact global denominator and posterior/MAP numerical checks. Native global matching numerator/search optimum and all other cases remain unverified by this preflight. Biological model, rooted framework, uncertainty and all eight evolutionary aims remain open."
+}

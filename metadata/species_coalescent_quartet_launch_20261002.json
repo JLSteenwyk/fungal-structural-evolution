@@ -1,0 +1,19 @@
+{
+  "unit": "fungal-species-coalescent-quartet-readback-20261002-v1.service",
+  "pid": 1411675,
+  "created": 1790905362.75,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/species_coalescent_quartet_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/species_coalescent_quartet_wait_plan_20261002.json",
+  "plan_sha256": "0ab2b4d3bb908d1c7d53dc0a7c289283d237a5689161141c07c850a533753b47",
+  "checked_utc": "2026-10-02T01:42:43.580620+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  }
+}
