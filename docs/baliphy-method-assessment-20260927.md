@@ -624,3 +624,19 @@ resource-controlled reruns. New attempts do not change acceptance thresholds.
 The next full sampling horizon must be costed from the complete observed
 run, with uncertainty and difficult strata retained; there is no accepted
 ancestral posterior or completed aim 8 at this checkpoint.
+
+
+## Complete first-horizon postprocessing and publication, October 2
+
+Full state/length/category accounting now closed 49,902 source/artifact hashes
+and three original controller journals. The corrected coordinate-schema
+validator passed all 402 complete quartets; the original failed attempt remains
+intact. The complete 810-row table retains every group at both cutoffs, including
+three unresolved groups, and all eight PNG/SVG/PDF panels passed numerical and
+visual checks. None passes every scalar or length screen; no categorical pattern
+passes its observed-state indicator screen. Full posterior qualification remains
+open. A full original scalar census locates 335 infinite gamma-shape values
+in iterations 1–14, before both original burn-in cuts; matching native source
+explicitly supports the infinite-shape equal-rate limit. This is distinct from
+convergence and the repeated first higher-memory native failure.
+[Full tables, exact counts, source-version review and remaining work](baliphy-full-first-horizon-diagnostics-20261002.md).

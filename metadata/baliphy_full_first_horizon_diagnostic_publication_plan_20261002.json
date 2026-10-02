@@ -1,0 +1,45 @@
+{
+  "horizon_completion": "metadata/baliphy_initial_horizon_completed_20261002.json",
+  "postprocessing_completion": "metadata/baliphy_full_postprocessing_completed_20261002_v2.json",
+  "producer_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+  "controller_plans": {
+    "scalar": "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json",
+    "length": "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json",
+    "categorical": "metadata/ancestral_categorical_queue_plan_20260928.json"
+  },
+  "postprocessing_accounting_launch": "metadata/baliphy_full_postprocessing_accounting_v2_launch_20261002.json",
+  "table": "docs/tables/baliphy_full_first_horizon_diagnostics_20261002.tsv",
+  "figure_stem": "docs/figures/baliphy_full_first_horizon_diagnostics_20261002",
+  "completion": "metadata/baliphy_full_first_horizon_diagnostic_publication_20261002.json",
+  "resources": {
+    "checked_utc": "2026-10-02T18:58:11.536467+00:00",
+    "cpu_per_stage": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "minimum_free_disk_gib": 100,
+    "output_allowance_gib": 1,
+    "planning_hours": [
+      1,
+      3
+    ],
+    "runtime_uncalibrated": true,
+    "available_memory_gib": 722.6807327270508,
+    "free_disk_gib": 10417.476043701172,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "basis": "All405originalquartets andtwo cutoffs retained,402completegroups withscalar/length/category reports and3failedgroups. Reconcile every originalsummary count plusallclosedsourceartifact hashes. Source49902hashmap and1620jobs estimated<2GiB resident;largearrays are streamed forSHAonly.810row table andeightpanels PNG/SVG/PDF estimated<1GiB. No newnative sampling; timinguncalibrated andnot aprojectETA."
+  },
+  "scope": "Publish the complete first1000iteration horizon only, all405originalmodel/input/priorquartets, allthreepriors andbothburnin cuts. Retain allthreeunresolvednative memoryfailures withblank diagnostics, allallocationwarninggroups andoriginalconfig/seed/chainidentities. Reconstructevery raw scalar/lengthvariable status andcategorical coordinate/patternpartition and reconcile with bothclosedfullaccounting summaries;verifyeveryfullclosedsourcehash. Figurecounts are descriptive diagnosticunits, not independent biological observations orconvergence probabilities; duplicateanchors/patterns/groupsaredependent, constant/noobservedvariationstatesrequire review, andpassing marginalscreenalone doesnot qualify jointposterior. No quartetpasses allscalarorlengthscreens andnocategoricalpatternpasses observedindicator screens. Nofailedsamplesconcatenation,noancestralstructurequalification,noeightaimcompletion. Publication includesfull810rowtable/eightpanels andSVGnumericalmetadata. ActualPNG/renderedPDFvisualinspection separatelyrequired.",
+  "pins": {
+    "scripts/publish_baliphy_full_diagnostics_20261002.py": "f6c6f4f1a188360f61b40758bdd6d40de45071c377837f144a4105997535025a",
+    "scripts/launch_baliphy_full_diagnostics_20261002.py": "415e5352d6a36560c66c53b86969d15979a0241dd825e2834b5d4248f771424a",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/baliphy_initial_horizon_completed_20261002.json": "4ecf3c2a4052e612a0e69ab60f892ef43b284db221c23815bbc26c5a2f3b5168",
+    "metadata/baliphy_full_postprocessing_completed_20261002_v2.json": "168dad6c070ac4548bd72c7c874600ee6e31b1beba602681a449ce484f6edf88",
+    "metadata/baliphy_full_postprocessing_accounting_v2_launch_20261002.json": "7ee55cacc814103478b2561c7d5a9af118cf75541a317fd4888967b0ae2230e8"
+  }
+}

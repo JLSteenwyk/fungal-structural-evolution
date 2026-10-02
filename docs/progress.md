@@ -1,6 +1,6 @@
 # Progress and evidence
 
-## October 2 ancestral postprocessing coordinate contract corrected
+## October 2 full ancestral diagnostics published and initialization reviewed
 
 The original state-extraction, candidate-length and categorical controllers
 have finished their first-horizon processing: 1,617 state chains, 402 complete
@@ -17,9 +17,24 @@ passed all 402 quartets, 1,608 contributing chain coordinate files and 804
 cutoff summaries, reproduced the old count error in all 804 summaries, and
 rejected nine malformed metadata cases. The [versioned full accounting
 rerun](../metadata/baliphy_full_postprocessing_completion_plan_20261002_v2.json)
-is live under two CPU/32 GiB/no swap; complete artifact hashes and three
-original controller journals remain required. This does not qualify ancestral
-posteriors. The separate same-seed memory recovery remains live.
+has completed under two CPU/32 GiB/no swap, closing 49,902 source/artifact
+hashes and three original controller journals. All 402 complete quartets
+require length/category mixing review; no quartet passes every scalar or
+length screen. The [full diagnostic publication](baliphy-full-first-horizon-diagnostics-20261002.md)
+retains all 810 group/cutoff rows, including three unresolved groups, and all
+eight inspected PNG/SVG/PDF panels. Publication reverified 49,908 bindings,
+every count, SVG metadata and PDF labels. This does not qualify ancestral
+posteriors. The separate same-seed memory recovery remains live; its first
+higher-memory attempt failed again and is preserved.
+
+The complete original scalar census checked all 1,620 logs and 69,601,090
+numeric cells. It located 335 nonfinite gamma-shape values in 134 integrity-
+passing chains, all in iterations 1–14 and none after either original burn-in
+cutoff. The matching v4.3 source explicitly handles infinite shape with unit
+rates, so these displayed values alone do not prove a software defect.
+Initialization, allocation failures and posterior-mixing qualification remain
+separate. Full source/version evidence and original range tables are linked
+from the diagnostic publication. No scientific model or thresholds changed.
 
 ## October 2 full ancestral horizon accounted and isolated memory recovery
 

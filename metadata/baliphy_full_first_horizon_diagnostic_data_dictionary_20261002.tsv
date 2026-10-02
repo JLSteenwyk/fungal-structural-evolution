@@ -1,0 +1,54 @@
+table	field	missing_semantics	description
+quartet_cutoff_diagnostics	model_input_identity	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original effective input/prior identity; primary quartet key.
+quartet_cutoff_diagnostics	effective_input_group	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original input identity before prior labels; configuration aliases are retained.
+quartet_cutoff_diagnostics	prior	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original package/centered/broad prior label; no new prior fit.
+quartet_cutoff_diagnostics	family	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original protein-family ID.
+quartet_cutoff_diagnostics	proteins	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Protein sequences in the original input; not a count of unique species.
+quartet_cutoff_diagnostics	original_configuration_ids	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	JSON list of original configurations represented by the effective input.
+quartet_cutoff_diagnostics	chain_ids	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	JSON list of the four original chain IDs.
+quartet_cutoff_diagnostics	seeds	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	JSON list of four distinct original seeds.
+quartet_cutoff_diagnostics	checked_chains	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Native chains with original saved-output integrity checks.
+quartet_cutoff_diagnostics	failed_chains	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original native failures; failed partial samples are never joined.
+quartet_cutoff_diagnostics	allocation_notice_chains	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Chains recording an original allocation fallback notice; not equivalent to terminal failure.
+quartet_cutoff_diagnostics	cutoff	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original iteration cutoff; retain strictly greater iterations.
+quartet_cutoff_diagnostics	disposition	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Complete diagnostics requiring review, or unresolved native failure.
+quartet_cutoff_diagnostics	scalar_draws_per_chain	Blank for unresolved quartet; never imputed as zero	Post-cutoff native scalar iterations per chain: 750/500.
+quartet_cutoff_diagnostics	saved_state_draws_per_chain	Blank for unresolved quartet; never imputed as zero	Post-cutoff saved state iterations per chain: 75/50.
+quartet_cutoff_diagnostics	scalar_variables	Blank for unresolved quartet; never imputed as zero	Number of scalar variable reports: 37 per complete group/cutoff.
+quartet_cutoff_diagnostics	scalar_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+quartet_cutoff_diagnostics	scalar_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+quartet_cutoff_diagnostics	scalar_constant_review	Blank for unresolved quartet; never imputed as zero	Count with constant per-chain trajectories requiring review.
+quartet_cutoff_diagnostics	every_scalar_screen_pass	Blank for unresolved quartet; never imputed as zero	All 37 marginal scalar screens pass; never sufficient for joint posterior qualification.
+quartet_cutoff_diagnostics	length_variables	Blank for unresolved quartet; never imputed as zero	Four candidate-node length reports per complete group/cutoff.
+quartet_cutoff_diagnostics	length_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+quartet_cutoff_diagnostics	length_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+quartet_cutoff_diagnostics	length_constant_review	Blank for unresolved quartet; never imputed as zero	Count with constant per-chain trajectories requiring review.
+quartet_cutoff_diagnostics	every_length_screen_pass	Blank for unresolved quartet; never imputed as zero	All four candidate-length marginal screens pass; not sufficient for joint posterior qualification.
+quartet_cutoff_diagnostics	categorical_coordinates	Blank for unresolved quartet; never imputed as zero	Node/residue anchors retaining correlated and duplicated representations.
+quartet_cutoff_diagnostics	categorical_patterns	Blank for unresolved quartet; never imputed as zero	Distinct full temporal traces within this group/cutoff; not distinct homologous sites.
+quartet_cutoff_diagnostics	coordinate_indicator_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+quartet_cutoff_diagnostics	coordinate_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+quartet_cutoff_diagnostics	coordinate_no_variation_review	Blank for unresolved quartet; never imputed as zero	Count with no observed state variation; requires review and does not establish state certainty.
+quartet_cutoff_diagnostics	pattern_indicator_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+quartet_cutoff_diagnostics	pattern_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+quartet_cutoff_diagnostics	pattern_no_variation_review	Blank for unresolved quartet; never imputed as zero	Count with no observed state variation; requires review and does not establish state certainty.
+quartet_cutoff_diagnostics	scientific_eligibility	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Always zero; no accepted ancestral posterior implied.
+native_scalar_ranges	chain_id	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original single-chain identity; primary key with variable in range table.
+native_scalar_ranges	model_input_identity	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original effective input/prior identity; primary quartet key.
+native_scalar_ranges	prior	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original package/centered/broad prior label; no new prior fit.
+native_scalar_ranges	family	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original protein-family ID.
+native_scalar_ranges	integrity_disposition	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original native saved-output integrity status; does not certify mixing.
+native_scalar_ranges	variable	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original native scalar log column name; nine declared columns retained.
+native_scalar_ranges	logged_iterations	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Number of original scalar rows, including initialization; failed histories may be partial.
+native_scalar_ranges	last_iteration	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Last observed original iteration; not a recovered sample horizon.
+native_scalar_ranges	finite_values	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Finite observed values of this variable.
+native_scalar_ranges	nan_values	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Observed NaN values; preserved without repair.
+native_scalar_ranges	positive_infinity_values	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Observed positive infinity values; interpretation requires source/model review.
+native_scalar_ranges	negative_infinity_values	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Observed negative infinity values; preserved without repair.
+native_scalar_ranges	first_value	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	First original text value; may be nonfinite.
+native_scalar_ranges	last_value	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Last original text value; may be nonfinite.
+native_scalar_ranges	finite_minimum	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Minimum finite observed value; blank if no finite value; not a probability bound.
+native_scalar_ranges	finite_maximum	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Maximum finite observed value; blank if no finite value; not a probability bound.
+native_scalar_ranges	first_nonfinite_iteration	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	First iteration with a nonfinite value; blank when none observed.
+native_scalar_ranges	source_log	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	Original immutable scalar file path, linked to the full native closure.
+native_scalar_ranges	source_log_sha256	Explicit zero is a true count; see field definition for blank extrema/nonfinite iteration	SHA256 of the original scalar file, checked against source lineage.

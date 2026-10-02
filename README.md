@@ -70,7 +70,13 @@ memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet
 passes every scalar mixing check at either burn-in cutoff. Five chains logged
 allocation warnings. Separate same-seed attempts for all three failed chains
 are running serially with a 48 GiB address-space limit under a one-CPU/64 GiB
-service cap. Ancestral posterior qualification remains incomplete.
+service cap. The first higher-memory attempt failed again and is retained.
+The [complete ancestral diagnostic table and inspected eight-panel figure](docs/baliphy-full-first-horizon-diagnostics-20261002.md)
+now cover all 405 groups at both cutoffs, with failed groups explicit. Full
+state/length/category accounting closed 49,902 hashes and three original
+journals. A full scalar-log census and matching-version source review retain
+initialization and allocation concerns separately from post-burn-in mixing.
+Ancestral posterior qualification remains incomplete.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

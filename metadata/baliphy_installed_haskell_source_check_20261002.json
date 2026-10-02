@@ -1,0 +1,20 @@
+{
+  "status": "verified_installed_haskell_gamma_and_log_transform_sources_match_upstream_commit",
+  "checked_utc": "2026-10-02T19:14:51.208948+00:00",
+  "upstream_commit": "80b0402eed0157f31ecb57e0efc34c03ed83050c",
+  "modules": [
+    "haskell/Probability/Distribution/Laplace.hs",
+    "haskell/Probability/Distribution/Transform.hs",
+    "haskell/SModel/ASRV.hs"
+  ],
+  "source_hashes": {
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Probability/Distribution/Laplace.hs": "1cdbb17772e4b237a8ace27b668fba069c78769d15414290ae74b1ce16556697",
+    "data/software_audits/baliphy-4.3-source-20261002/haskell/Probability/Distribution/Laplace.hs": "1cdbb17772e4b237a8ace27b668fba069c78769d15414290ae74b1ce16556697",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Probability/Distribution/Transform.hs": "dffa62768846fa16e84eba8fdc74f660c63736964e6260766938465a5dcb67c0",
+    "data/software_audits/baliphy-4.3-source-20261002/haskell/Probability/Distribution/Transform.hs": "dffa62768846fa16e84eba8fdc74f660c63736964e6260766938465a5dcb67c0",
+    "data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/SModel/ASRV.hs": "cd695cac601e76e3a5a40805b7fee93d31cdb2a42af343c982b09db65a6aaa54",
+    "data/software_audits/baliphy-4.3-source-20261002/haskell/SModel/ASRV.hs": "cd695cac601e76e3a5a40805b7fee93d31cdb2a42af343c982b09db65a6aaa54"
+  },
+  "scientific_eligibility": false,
+  "scope": "Byte equality for the actually installed Laplace, exponentiated distribution transform andASRV modules versus the retrieved matching80b0402source. Native builtins matchingversion/source reviewed separately. This is software-source provenance, not jointposterior qualification or attribution ofallocation failures."
+}

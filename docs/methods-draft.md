@@ -2424,3 +2424,25 @@ address-space limit changed from 12 to 48 GiB. Serial execution uses one CPU,
 sample concatenation. Corrected quartet lineage, new integrity/diagnostic
 checks and length/alignment/categorical/scalar mixing qualification remain
 required. See [complete sources and limitations](baliphy-method-assessment-20260927.md#full-initial-horizon-completed-and-source-closed-october-2).
+
+
+## Full ancestral diagnostics and initialization census, October 2
+
+State extraction and length/categorical diagnostic accounting closed all
+1,617 processed chains, 402 complete quartets and three unresolved native
+failures, with 49,902 source/artifact hashes and three original controller
+journals. The complete 810-row publication retains every group/cutoff and
+all count partitions; no quartet passes every scalar or candidate-length
+screen. Constant/no-observed variation states retain review status. The
+8-panel PNG/SVG/PDF figure passed source-count, table, SVG-metadata, PDF-value
+and visual checks. Anchors and temporal patterns remain correlated units.
+
+A separate full original native-log census checked 69,601,090 numeric cells
+across all 1,620 chains and exported nine declared scalar ranges per chain.
+All 335 nonfinite gamma-shape cells occurred in iterations 1–14, before both
+original burn-in cutoffs. Matching installed v4.3 source explicitly handles
+infinite gamma shape using unit rates; displayed infinity alone is not
+treated as proof of a defective model. The first higher-memory isolated
+recovery still failed, so resource allowance is not treated as sufficient
+remediation. Priors, taxa, sequences and scientific thresholds are unchanged.
+[Full sources, figures, counts and interpretation](baliphy-full-first-horizon-diagnostics-20261002.md).

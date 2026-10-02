@@ -751,3 +751,19 @@ inputs and timeouts and running serially. Do not join failed samples or change
 scientific thresholds. Full quartet overlays, warning review and length/
 alignment/category/scalar mixing remain required before interpretation.
 [Full accounting and recovery evidence](baliphy-method-assessment-20260927.md#full-initial-horizon-completed-and-source-closed-october-2).
+
+
+## October 2: full ancestral diagnostic publication and matching-version review
+
+Retain all 405 original quartets and both burn-in cuts, including unresolved
+groups with blank diagnostics. Separate integrity, scalar/length/category
+mixing and joint posterior qualification. The corrected coordinate-schema
+closer must compare all original contributing chain coordinate files and
+complete original artifact/journal closure. Publish complete count partitions
+and inspect actual plots. Audit original scalar logs before extending sampling
+or inferring that memory alone caused native allocation failures. Nonfinite
+gamma values confined to discarded initialization and explicitly handled by
+matching software are not automatically labelled software defects. Preserve
+the repeated higher-memory failure and source/version evidence; do not trim
+taxa, truncate priors, repair logged values or change diagnostic thresholds.
+[Complete publication and remaining requirements](baliphy-full-first-horizon-diagnostics-20261002.md).
