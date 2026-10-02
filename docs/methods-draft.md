@@ -2047,10 +2047,32 @@ the complete two-method/six-order grid, rejecting 15 altered exports; exact
 interrupted-task input replay also passed.
 
 Resources preceded launch: two one-thread CPU workers, 32 GiB RAM, no swap,
-32 GiB output allowance, 100 GiB disk reserve and no GPU or charges. After
-full native closure, both full and pLDDT70 masks require same-position proper
-rigid fitting for all 649,344 intended dispositions, preserving joint confidence
-filtering, original coverage/screens/parent exclusions and incomplete states.
+32 GiB output allowance, 100 GiB disk reserve and no GPU or charges. Full
+preflight, independent raw-MSA preflight readback, and their original-journal
+closure are queued after complete native closure. The preflight measures
+all 649,344 intended full/pLDDT70 fit dispositions and exact unique eligible
+cores/PDB demand before coordinate fitting. Full SVD fitting, independent
+raw-MSA/quaternion reconstruction and two-journal closure are also queued.
+Both masks use identical three-way original residue matches, with joint
+membership in authoritative confidence-mask position lists. PDB confidence
+rounding never selects a residue; rounded-PDB confidence summaries and
+authoritative-mask fractions are exported separately. Original-length and
+retained-mask coverage, all six rational core screens, inherited both-order
+three-pair exclusions and their intersection remain distinct. Short/degenerate/
+source-rejected/native-failed states retain explicit dispositions and blank
+uncomputed metrics. An exhaustive 432,896-view source check established
+constancy of inherited both-order gates across structural-order views.
+
+The complete synthetic 72-state/144-fit software grid passed real raw-MSA/PDB/
+SQLite and SVD/quaternion algorithms, including nonconsecutive masks, a rounded
+69.996-to-70.00 confidence boundary, unequal original lengths, duplicate-role
+reversal, reflections, collinearity, short cores, native failures and inherited
+exclusions. All 16 rehashed geometry exports and three changed preflight
+summaries were rejected; interrupted recovery rechecked 24 committed rows.
+Production sources are not replaced by these fixtures. Transactional fit
+checkpoints are reconstructed and checked on restart. Full production preflight,
+fits and independent readback remain pending. Prelaunch planning ranges are
+uncalibrated and exclude dependency waits; no GPU or additional charges.
 Comparison against structural correspondence, domain/orientation/PAE/predictor
 controls and phylogenetic/calibrated inference remain required. These dependent
 alternatives do not increase biological replication; alignment agreement does

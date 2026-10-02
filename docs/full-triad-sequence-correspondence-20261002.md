@@ -125,14 +125,96 @@ The future native completion locator is
 
 ## Required structural and evolutionary integration
 
-After native alignment/readback/journal closure, the next stage must fit all
-three pair distances on the same sequence-derived positions under full and
-pLDDT70 masks: 649,344 intended fit dispositions before within-triple coordinate
-reuse. Confidence exclusions must apply jointly across all three proteins.
-Proper-rigid geometry, original-protein coverage, all six existing screens,
-source-parent exclusions, native failures and every original context must remain
-explicit. These new fits must be compared with the existing structural
-correspondence alternatives, including incomplete and conflicting cases.
+The complete sequence-derived geometry workflow is now implemented and queued
+behind the original native alignment/reader closure. It covers all **649,344
+fit dispositions**: 27,056 ordered triples, two alignment methods, six input
+orders and two confidence masks. Production preflight and geometric results
+are still pending; the software checks below do not establish their completion.
+
+## Full sequence-derived geometry queued October 2 UTC
+
+A full producer and separate raw-MSA reader first count every native state,
+masked core, unique eligible core, residue occurrence and required full-PDB
+input/byte. Both original preflight journals and complete source hashes must
+close before any coordinate fitting. This measures actual work across the
+entire dataset, without a separate biological pilot.
+
+Fits project sorted sequence indices back to the original A/B/reference roles.
+Every pair uses the same original three-way residue matches. Confidence masks
+use membership in the previously verified original-position lists; rounded PDB
+confidence never determines retention. For example, a source confidence of
+69.996 can print as 70.00 in a materialized PDB while remaining excluded from
+the authoritative pLDDT70 mask. Outputs therefore distinguish
+`joint_authoritative_plddt70_fraction` from `joint_plddt70_fraction` calculated
+from rounded PDB values. Mean confidence values also reflect materialized PDB
+precision. Filtering applies jointly across all three proteins after full
+sequence alignment. Coverage uses each full original protein length; retained
+mask length and its separate coverage are exported explicitly.
+
+The producer computes proper SVD rotations for AB, AR and BR, signed AR−BR,
+sequence identities, confidence summaries and rotation-uniqueness dispositions.
+All six original rational coverage screens remain explicit, separately for
+the new common core, inherited both-order three-edge eligibility, and their
+intersection. The actual full 432,896-view structural mapping was checked:
+each original triple/mask has constant both-order three-edge screening gates
+across all eight structural-order views.
+[Full gate-constancy evidence](../metadata/full_triad_sequence_fit_baseline_gates_verified_20261002.json).
+This consistency does not promote excluded logical contexts or parents.
+Native failures, short cores, source-rejected masks and degenerate geometry
+remain rows with explicit status; uncomputed numerical metrics remain blank.
+
+Transactional SQLite checkpoints commit complete triads. Restart reconstructs
+every saved fit from its original immutable sources, checks compressed payload
+hashes and exact calculated fields, then rebuilds the complete export without
+duplicating rows. An exclusive run lock prevents concurrent writers. A completed
+receipt refuses restart. The independent reader rebuilds original positions
+from raw MSA using Bio.SeqIO, projects authoritative masks separately and uses
+a quaternion eigenproblem to calculate every fit. It checks all numerical
+fields at 1e−9 absolute/relative tolerance, RMSD metric bounds, every source/role/
+mask/screen field, complete row ordering and the exact SQLite/export agreement.
+Closure requires both original producer/reader completion/resource journals
+and the complete source and artifact hash inventory.
+
+Software contracts passed the full 72-state/144-fit grid across five physical
+model sets and six ordered role triples, including physical reuse and a
+reversed duplicate-role projection. Tests exercise real raw-MSA parsing,
+SQLite and PDB reading, unequal lengths, nonconsecutive confidence masks,
+the confidence-rounding boundary, native failure, a two-residue common core,
+source rejection, collinear and reflected coordinates, inherited exclusions
+and sign reversal. The independent maximum RMSD/contrast difference was
+1.849e−14 Å. All 16 rehashed false geometry exports and three altered preflight
+summaries were rejected. Recovery from an owned synthetic interruption rechecked
+and reused 24 committed rows. Production source-closure I/O is stubbed only in
+these software fixtures; production requires the real complete source closures.
+[Software contract locator](../metadata/full_triad_sequence_geometry_fixture_validation_20261002.json).
+
+Resource estimates preceded launch: two-CPU quota, 32 GiB RAM, no swap, one
+BLAS thread and no GPU or additional charges. Geometry allows 32 GiB output
+and requires 100 GiB free disk. Uncalibrated planning ranges are 0.25–8 hours
+for each preflight/reader stage and 1–24 hours for each geometric fit/readback;
+they exclude dependency waits and are not completion ETAs. Exact unique work
+and input-byte demand must be verified by full preflight first.
+[Resource estimate](../metadata/full_triad_sequence_geometry_resources_20261002.json).
+
+The six original queued launch identities, creation times, exact commands and
+actual cgroup limits are recorded in the
+[launch inventory](../metadata/full_triad_sequence_geometry_followup_launches_20261002.json).
+All waits use original invocation-linked journals, not collected unit defaults.
+The [frozen workflow](../metadata/full_triad_sequence_geometry_followup_workflow_20261002.json)
+and [launcher](../scripts/launch_full_triad_sequence_geometry_followup.py) describe
+the queue; **do not launch duplicates**. The two source plans are
+[preflight](../metadata/full_triad_sequence_fit_preflight_plan_20261002.json) and
+[geometry](../metadata/full_triad_sequence_geometry_plan_20261002.json).
+Future completion locators are
+`metadata/full_triad_sequence_fit_preflight_completed_20261002.json` and
+`metadata/full_triad_sequence_geometry_completed_20261002.json`.
+
+## Remaining evolutionary integration
+
+These new fits must be compared with the existing structural correspondence
+alternatives, including incomplete and conflicting cases. Every original logical
+context and parent exclusion must still be integrated without promotion based
+on a favorable common-core result.
 
 The two aligners and six orders are dependent sensitivity alternatives, not
 additional biological replicates. Sequence-derived correspondence reduces one

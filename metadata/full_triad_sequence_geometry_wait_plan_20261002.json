@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/full_triad_sequence_fit_preflight_closure_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/fit_full_triad_sequence_correspondence.py",
+    "--plan",
+    "metadata/full_triad_sequence_geometry_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_sequence_geometry_plan_20261002.json": "4e85fae92899171ce6d267cf5c0b7a906e384ed30521020f10f4123d1111333d",
+    "metadata/full_triad_sequence_fit_preflight_closure_launch_20261002.json": "309280c95e8b03810891c9a79637205917b10b27110bd859f436b9df6b62042e",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

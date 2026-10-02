@@ -1,0 +1,38 @@
+{
+  "status": "prelaunch_full_triad_sequence_geometry_resource_estimate",
+  "checked_utc": "2026-10-02T04:34:29.468683+00:00",
+  "ordered_model_triads": 31235,
+  "source_ready_triads": 27056,
+  "native_alignment_states": 324672,
+  "fit_rows": 649344,
+  "uncached_proper_pair_fits_per_implementation_upper_bound": 1948032,
+  "preflight": {
+    "cpu_quota": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "planning_hours_each": [
+      0.25,
+      8
+    ],
+    "maximum_output_gib": 1
+  },
+  "geometry": {
+    "cpu_quota": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "planning_hours_each": [
+      1,
+      24
+    ],
+    "maximum_output_gib": 32,
+    "minimum_free_disk_gib": 100
+  },
+  "runtime_calibrated": false,
+  "runtime_excludes_dependency_wait": true,
+  "exact_unique_cores_and_needed_pdb_bytes": "Must be measured by full independent preflight before any production geometric fitting.",
+  "gpu": false,
+  "new_infrastructure": false,
+  "estimated_additional_charge_usd": 0,
+  "scope": "Planning ranges for serial full source/hash/MSA reconstruction and fitted/readback stages, not completion ETAs. Two proper rotation implementations each cover all three pairs on identical triples. Fit cache may reduce arithmetic but never reported grid coverage. Existing native jobs/settings are unchanged; full source preflight gates geometry."
+}

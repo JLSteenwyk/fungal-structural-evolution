@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_triad_sequence_geometry_software_contracts",
+  "checked_utc": "2026-10-02T04:34:29.468683+00:00",
+  "receipt": "results/software-checks/full-triad-sequence-geometry-20261002-v2/receipt.json",
+  "receipt_sha256": "f7541a2a95417be610540e0f03cab0f5715b208a56fd5d393aee7eaa97aaf054",
+  "fit_rows": 144,
+  "native_alignment_states": 72,
+  "checked_reused_fit_rows": 24,
+  "rejected_false_geometry_exports": 16,
+  "rejected_false_preflight_summaries": 3,
+  "source_hashes": {
+    "results/software-checks/full-triad-sequence-geometry-20261002-v2/receipt.json": "f7541a2a95417be610540e0f03cab0f5715b208a56fd5d393aee7eaa97aaf054",
+    "scripts/full_triad_sequence_fit_sources.py": "1c73e422b3ef058f335173a6d0914641de6b105fb4b5e3c2ab4dc95bbd79810f",
+    "scripts/preflight_full_triad_sequence_fits.py": "0be1bc6c792e1c68511ea393ab72c69e67ad5e3220753a16a49659a07af0d749",
+    "scripts/readback_full_triad_sequence_fit_preflight.py": "251d20903aa21456c52e14a33cd12714c53e8b21a6c754d8901bef577e416b9b",
+    "scripts/fit_full_triad_sequence_correspondence.py": "09454b9bfb5aaed96c0183f62f162ee0c7d3a11955ee1c0acab3667c2a94d44d",
+    "scripts/readback_full_triad_sequence_geometry.py": "34e21f62f5d2a51a622bdad240c70584b11fe94a0c92e4dd411b58cbd0d25beb",
+    "scripts/check_full_triad_sequence_geometry.py": "66c29ae71bb5d9be312b0c42ce9c3a6ff0cbf0d5570cc1c27db8812ec943197c",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic software contracts; source closure I/O stubbed, real raw MSA, SQLite, PDB, SVD/quaternion and screens exercised. Not production proof or a taxon pilot."
+}

@@ -893,3 +893,19 @@ geometry under both masks, original exclusions/screens/context links,
 structural-mapping comparisons, domain/PAE/prediction/phylogeny and calibrated
 effects remain required. All eight scientific aims remain incomplete.
 [Full workflow and dependency evidence](full-triad-sequence-correspondence-20261002.md).
+
+October 2 UTC: complete full sequence-derived geometry software and execution
+workflow is implemented and queued for every 649,344 method/order/mask fit state.
+Full independent work preflight and two-original-journal closure gate fitting;
+every raw-MSA/PDB/role/mask/coverage/screen/numeric/SQLite output is subsequently
+reconstructed with independent quaternion rotations before full closure.
+Actual source pair-gate constancy passed all 432,896 structural-order states.
+Software checks passed 144 rows and committed 24-row checkpoint recovery,
+rejecting 16 false geometry and three false preflight summaries. These tests
+are software evidence, not completed production or a biological pilot.
+All six original queued handles and all existing jobs remain live in the
+[fresh runtime proof](../metadata/project_runtime_checkpoint_20261002_v8.json).
+Full production native/preflight/fit/readback completion, original-context/parent
+gates, structural-mapping comparison, prediction/domain/PAE/phylogenetic controls
+and calibrated biological analyses remain required. All eight aims incomplete;
+GPU protein prediction remains paused. [Workflow and source requirements](full-triad-sequence-correspondence-20261002.md#full-sequence-derived-geometry-queued-october-2-utc).

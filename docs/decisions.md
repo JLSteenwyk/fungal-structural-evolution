@@ -533,3 +533,20 @@ full collection/journal/biological qualification remains separate.
   original-protein coverage and explicit native failures. Sequence-derived
   correspondence is a sensitivity control; predicted coordinates still derive
   from sequences and biological homology/asymmetry require further evidence.
+
+- October 2 UTC: require exhaustive independent work preflight before the full
+  649,344 sequence-derived geometry grid. Use authoritative original confidence
+  mask positions; PDB rounding must never create eligibility. Export rounded
+  PDB confidence summaries separately from authoritative mask fractions. Fit
+  all three distances on the identical residue triples, with coverage relative
+  to full original protein lengths. Retain six core screens, inherited
+  both-order pair gates and their intersection separately. The complete
+  432,896-view source gate-constancy check permits reuse of those inherited
+  gates within an ordered triple/mask; it does not qualify excluded parents or
+  logical contexts. Preserve all native failure/short/rejected/degenerate
+  dispositions. Full raw-MSA/quaternion/SQLite readback and original journals
+  plus hashes must close before structural/phylogenetic interpretation. Resume
+  only with source/plan-bound checkpoints reconstructed and rechecked; never
+  duplicate a live producer. Full software tests passed and all six subsequent
+  jobs are queued after the original native closure. Production completion and
+  biological integration remain outstanding; GPU prediction stays paused.

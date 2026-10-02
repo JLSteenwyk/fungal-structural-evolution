@@ -1,0 +1,68 @@
+{
+  "native_closure_launch": "metadata/full_triad_sequence_alignments-closure_launch_20261002.json",
+  "stages": [
+    {
+      "name": "full-triad-sequence-fit-preflight",
+      "source_plan": "metadata/full_triad_sequence_fit_preflight_plan_20261002.json",
+      "producer_script": "scripts/preflight_full_triad_sequence_fits.py",
+      "reader_script": "scripts/readback_full_triad_sequence_fit_preflight.py",
+      "producer_status": "complete_full_triad_sequence_fit_preflight_pending_independent_readback",
+      "reader_status": "passed_full_triad_sequence_fit_raw_preflight_readback",
+      "completed_status": "complete_verified_full_triad_sequence_fit_preflight",
+      "summary_fields": [
+        "ordered_model_triads",
+        "source_ready_triads",
+        "native_alignment_states",
+        "fit_rows",
+        "input_status_counts",
+        "triple_occurrences",
+        "unique_eligible_cores",
+        "unique_eligible_residue_occurrences",
+        "proper_pair_fits_per_implementation",
+        "needed_full_pdb_inputs",
+        "needed_full_pdb_bytes"
+      ],
+      "completion_plan": "metadata/full_triad_sequence_fit_preflight_completion_plan_20261002.json",
+      "completion_output": "metadata/full_triad_sequence_fit_preflight_completed_20261002.json",
+      "scope": "Full27056original source-ready ordered A/B/reference triples, both MAFFT/FAMSA and all6 native input orders, both full/plddt70 masks=649344 explicit fit rows. Reconstruct from original full sequences before joint source-mask filtering. Full preflight measures all native dispositions, unique eligible cores, exact PDB demand and original-length coverage context; independent raw SeqIO reader and both original completion/resource journals required. Proper SVD and separate quaternion fits retain all3 pair distances on identical residue triples, signed ARminusBR, identities and rounded-PDB confidence summaries plus authoritative source-mask fraction. Retain missing/native failure/short/source-rejected/degenerate states, all6 original rational length screens and inherited both-order three-edge exclusions. Aligners/orders are dependent alternatives, not biological replicates. Every checkpoint is reconstructed and checked on restart. Full raw-MSA/position/PDB/numeric/grid/screen/SQLite export readback and both original journals plus full hashes precede closure. Original31235triads/283409contexts/214461ties/428922sides are linked by native/catalog closures; parent/context gates still require downstream integration. Structural-correspondence comparison, domain/orientation/PAE/prediction controls and qualified phylogeny/calibration remain required. No homology truth, ancestral polarity, biological asymmetry or significance inferred. All8aims incomplete; GPU prediction paused; no existing job change, restart or charges."
+    },
+    {
+      "name": "full-triad-sequence-geometry",
+      "source_plan": "metadata/full_triad_sequence_geometry_plan_20261002.json",
+      "producer_script": "scripts/fit_full_triad_sequence_correspondence.py",
+      "reader_script": "scripts/readback_full_triad_sequence_geometry.py",
+      "producer_status": "complete_full_triad_sequence_geometry_pending_independent_readback",
+      "reader_status": "passed_full_triad_sequence_raw_msa_quaternion_geometry_readback",
+      "completed_status": "complete_verified_full_triad_sequence_correspondence_geometry",
+      "summary_fields": [
+        "ordered_model_triads",
+        "source_ready_triads",
+        "native_alignment_states",
+        "fit_rows",
+        "counts",
+        "core_screen_pass_counts",
+        "screen_pass_counts",
+        "triple_occurrences",
+        "fitted_pdb_inputs"
+      ],
+      "completion_plan": "metadata/full_triad_sequence_geometry_completion_plan_20261002.json",
+      "completion_output": "metadata/full_triad_sequence_geometry_completed_20261002.json",
+      "scope": "Full27056original source-ready ordered A/B/reference triples, both MAFFT/FAMSA and all6 native input orders, both full/plddt70 masks=649344 explicit fit rows. Reconstruct from original full sequences before joint source-mask filtering. Full preflight measures all native dispositions, unique eligible cores, exact PDB demand and original-length coverage context; independent raw SeqIO reader and both original completion/resource journals required. Proper SVD and separate quaternion fits retain all3 pair distances on identical residue triples, signed ARminusBR, identities and rounded-PDB confidence summaries plus authoritative source-mask fraction. Retain missing/native failure/short/source-rejected/degenerate states, all6 original rational length screens and inherited both-order three-edge exclusions. Aligners/orders are dependent alternatives, not biological replicates. Every checkpoint is reconstructed and checked on restart. Full raw-MSA/position/PDB/numeric/grid/screen/SQLite export readback and both original journals plus full hashes precede closure. Original31235triads/283409contexts/214461ties/428922sides are linked by native/catalog closures; parent/context gates still require downstream integration. Structural-correspondence comparison, domain/orientation/PAE/prediction controls and qualified phylogeny/calibration remain required. No homology truth, ancestral polarity, biological asymmetry or significance inferred. All8aims incomplete; GPU prediction paused; no existing job change, restart or charges."
+    }
+  ],
+  "pins": {
+    "metadata/full_triad_sequence_fit_preflight_plan_20261002.json": "ac1321e2cf85bada7d7614230e621f8612738761d54256ee574870b1ef102879",
+    "metadata/full_triad_sequence_geometry_plan_20261002.json": "4e85fae92899171ce6d267cf5c0b7a906e384ed30521020f10f4123d1111333d",
+    "metadata/full_triad_sequence_alignments-closure_launch_20261002.json": "3610f6abe05333c484dd59cbd124a2e8f6aa55bc7b4942a03575f7715ce6016e",
+    "scripts/full_triad_sequence_fit_sources.py": "1c73e422b3ef058f335173a6d0914641de6b105fb4b5e3c2ab4dc95bbd79810f",
+    "scripts/preflight_full_triad_sequence_fits.py": "0be1bc6c792e1c68511ea393ab72c69e67ad5e3220753a16a49659a07af0d749",
+    "scripts/readback_full_triad_sequence_fit_preflight.py": "251d20903aa21456c52e14a33cd12714c53e8b21a6c754d8901bef577e416b9b",
+    "scripts/fit_full_triad_sequence_correspondence.py": "09454b9bfb5aaed96c0183f62f162ee0c7d3a11955ee1c0acab3667c2a94d44d",
+    "scripts/readback_full_triad_sequence_geometry.py": "34e21f62f5d2a51a622bdad240c70584b11fe94a0c92e4dd411b58cbd0d25beb",
+    "scripts/check_full_triad_sequence_geometry.py": "66c29ae71bb5d9be312b0c42ce9c3a6ff0cbf0d5570cc1c27db8812ec943197c",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "metadata/full_triad_sequence_geometry_resources_20261002.json": "593f6887c1793ebafdbd9266ffc38e4e97217587e93204c347429268d282eae5"
+  },
+  "launch_inventory": "metadata/full_triad_sequence_geometry_followup_launches_20261002.json",
+  "scope": "Full27056original source-ready ordered A/B/reference triples, both MAFFT/FAMSA and all6 native input orders, both full/plddt70 masks=649344 explicit fit rows. Reconstruct from original full sequences before joint source-mask filtering. Full preflight measures all native dispositions, unique eligible cores, exact PDB demand and original-length coverage context; independent raw SeqIO reader and both original completion/resource journals required. Proper SVD and separate quaternion fits retain all3 pair distances on identical residue triples, signed ARminusBR, identities and rounded-PDB confidence summaries plus authoritative source-mask fraction. Retain missing/native failure/short/source-rejected/degenerate states, all6 original rational length screens and inherited both-order three-edge exclusions. Aligners/orders are dependent alternatives, not biological replicates. Every checkpoint is reconstructed and checked on restart. Full raw-MSA/position/PDB/numeric/grid/screen/SQLite export readback and both original journals plus full hashes precede closure. Original31235triads/283409contexts/214461ties/428922sides are linked by native/catalog closures; parent/context gates still require downstream integration. Structural-correspondence comparison, domain/orientation/PAE/prediction controls and qualified phylogeny/calibration remain required. No homology truth, ancestral polarity, biological asymmetry or significance inferred. All8aims incomplete; GPU prediction paused; no existing job change, restart or charges."
+}

@@ -10765,3 +10765,30 @@ does not establish universal coverage or complete the biological project.
   with original structural mappings/contexts/coverage/prediction/domain/PAE/
   phylogeny/calibration remain required. All eight aims remain incomplete.
   [Full correspondence workflow](full-triad-sequence-correspondence-20261002.md).
+
+- October 2 UTC: implemented and queued full sequence-derived same-residue
+  geometry for all 27,056 original ready triples, both sequence methods/all
+  six orders/two masks: 649,344 fit dispositions. Full preflight counts exact
+  unique eligible cores and full-PDB byte demand; its independent raw-MSA
+  reader and original two-journal closure gate coordinate fitting. Geometry
+  uses proper SVD fits plus separate raw-MSA/quaternion reconstruction of
+  every field, screen and SQLite/export record. Joint masks use authoritative
+  original-position membership, including rounded-confidence boundary cases;
+  original protein-length coverage and inherited both-order three-edge gates
+  remain explicit. An actual full-source check verified those pair gates are
+  constant across all 432,896 structural-order views. Complete software
+  contracts passed 72 native states/144 fit rows, 24-row committed checkpoint
+  recovery, duplicate-role sign reversal and all 16 false geometry/three false
+  preflight export rejections. Software contracts do not replace full production
+  source proof. Resource estimates preceded six original queued launches: two
+  CPU/32 GiB/no swap/one BLAS thread, no GPU or new charges. The
+  [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v8.json)
+  verified 323,639 distinct closed bindings, all 31 live pipeline handles,
+  six original scientific/retrieval jobs, 29 terminal successes and ten
+  preserved failures. Background progress was 207,808/298,848 at observation.
+  A separate [exact queue checkpoint](../metadata/full_triad_sequence_geometry_queue_checkpoint_20261002.json)
+  rechecked all three original native and six follow-up handles and current
+  native progress. Full native closure, preflight and geometry results remain
+  pending; original-context/parent integration, structural correspondence
+  comparison and phylogenetic/prediction/domain/PAE/calibration controls remain
+  required. All eight aims incomplete; GPU prediction stays paused.

@@ -1,0 +1,14 @@
+{
+  "status": "queued_full_triad_sequence_fit_preflight_and_geometry",
+  "workflow_sha256": "6fcf54e2ace3816eeec6e0583fe910ccbe7cb632a05c29bfe1b4f916fa591829",
+  "launches": [
+    "metadata/full_triad_sequence_fit_preflight_launch_20261002.json",
+    "metadata/full_triad_sequence_fit_preflight_readback_launch_20261002.json",
+    "metadata/full_triad_sequence_fit_preflight_closure_launch_20261002.json",
+    "metadata/full_triad_sequence_geometry_launch_20261002.json",
+    "metadata/full_triad_sequence_geometry_readback_launch_20261002.json",
+    "metadata/full_triad_sequence_geometry_closure_launch_20261002.json"
+  ],
+  "checked_utc": "2026-10-02T04:34:36.046445+00:00",
+  "scope": "Full27056original source-ready ordered A/B/reference triples, both MAFFT/FAMSA and all6 native input orders, both full/plddt70 masks=649344 explicit fit rows. Reconstruct from original full sequences before joint source-mask filtering. Full preflight measures all native dispositions, unique eligible cores, exact PDB demand and original-length coverage context; independent raw SeqIO reader and both original completion/resource journals required. Proper SVD and separate quaternion fits retain all3 pair distances on identical residue triples, signed ARminusBR, identities and rounded-PDB confidence summaries plus authoritative source-mask fraction. Retain missing/native failure/short/source-rejected/degenerate states, all6 original rational length screens and inherited both-order three-edge exclusions. Aligners/orders are dependent alternatives, not biological replicates. Every checkpoint is reconstructed and checked on restart. Full raw-MSA/position/PDB/numeric/grid/screen/SQLite export readback and both original journals plus full hashes precede closure. Original31235triads/283409contexts/214461ties/428922sides are linked by native/catalog closures; parent/context gates still require downstream integration. Structural-correspondence comparison, domain/orientation/PAE/prediction controls and qualified phylogeny/calibration remain required. No homology truth, ancestral polarity, biological asymmetry or significance inferred. All8aims incomplete; GPU prediction paused; no existing job change, restart or charges."
+}
