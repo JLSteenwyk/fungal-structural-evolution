@@ -1,10 +1,11 @@
 # Full original-context reference-contrast directions
 
-The full direction linkage is running across **283,409 unchanged original
+The full direction-linkage producer finished across **283,409 unchanged original
 gene-tree contexts, 566,818 design records, 214,461 tied references and 428,922
 logical sides**. It uses all **27,056 measured ordered physical triples and
-243,504 closed contrast-sensitivity groups**. Production results, independent
-readback and journal closure remain pending.
+243,504 closed contrast-sensitivity groups**. All 153,040,860 policy decisions
+and 10,800 count rows were produced. Independent full readback and journal
+closure remain pending; production outputs are provisional until those pass.
 
 This stage addresses reference-choice uncertainty in the structural comparisons.
 It does not establish a duplication effect, evolutionary polarity or statistical
@@ -69,7 +70,7 @@ separate states.
 context can pass all geometric screens while its references disagree. No model,
 reference, mask, core or alignment order is reselected to obtain a desired sign.
 
-| Complete planned unit | Count |
+| Complete producer output unit, awaiting independent verification | Count |
 | --- | ---: |
 | Original contexts | 283,409 |
 | Reference × scenario × screen cells | 11,580,894 |

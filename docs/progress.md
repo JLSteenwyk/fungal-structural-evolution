@@ -10903,3 +10903,15 @@ does not establish universal coverage or complete the biological project.
   biological inference remain required. All eight aims remain incomplete;
   GPU protein prediction stays paused.
   [Full context direction workflow](full-triad-context-contrasts-20261002.md).
+
+- October 2 UTC follow-up: the exact original context-contrast producer has
+  now terminated successfully after all 283,409 contexts/214,461 ties and
+  153,040,860 policy decisions, producing all 10,800 summary rows. Its original
+  invocation-linked journal records 7 min 39.263 sec CPU use. The independent
+  full original-gate/SQL reader is live and has begun complete readback; outputs
+  remain provisional until readback and full hash/two-journal closure pass.
+  The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v14.json)
+  verifies 39 live pipeline/six original jobs, 33 terminal successes, ten
+  preserved historical failures and 466,824 closed bindings; background
+  progress was 247,808/298,848 at observation. No production restart or changes
+  to existing jobs. All eight aims incomplete; GPU prediction paused.
