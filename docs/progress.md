@@ -1,5 +1,30 @@
 # Progress and evidence
 
+## October 2 runtime collector child-process race repaired
+
+The earlier missing-`source_hashes` input error is resolved by using the
+fixture-validation locator. A separate status-collector failure occurred when
+an ephemeral child exited between process enumeration and command-line capture.
+The pinned v3 collector remains unchanged. The
+[v4 collector](../scripts/record_project_runtime_checkpoint_v4.py) records
+disappeared children separately while preserving strict original-parent
+identity checks and artifact/journal verification. Permission errors and parent
+observation failures still propagate.
+
+[Seven targeted checks](../metadata/runtime_checkpoint_child_race_validation_20261002.json)
+reproduced the v3 error, verified the correction, and checked that parent PID
+reuse, command changes and other observation errors are not silently accepted.
+The [repair record](../metadata/runtime_checkpoint_child_race_repair_20261002.json)
+binds those checks and a successful fresh local full checkpoint: 467,131
+distinct artifact bindings, 40 live pipeline handles, six original live jobs,
+35 verified terminal successes and ten preserved historical pipeline failures.
+The full checkpoint is retained locally pending publication of earlier
+joint-direction launch artifacts. The failed collector observation is preserved
+[separately](../metadata/project_runtime_checkpoint_attempt_20261002_v15.json).
+This was a status-collection error; scientific jobs were not stopped, restarted
+or reconfigured. All eight biological aims remain incomplete; GPU prediction
+remains paused.
+
 ## September 27 recovered functional-site integration completed
 
 All 17,105 prior functional correspondence rows have been joined to the current

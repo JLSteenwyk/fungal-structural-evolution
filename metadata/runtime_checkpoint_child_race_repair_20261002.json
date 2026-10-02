@@ -1,0 +1,20 @@
+{
+  "status": "verified_runtime_checkpoint_child_race_repair",
+  "checked_utc": "2026-10-02T07:03:25.909886+00:00",
+  "checkpoint_local_path": "metadata/project_runtime_checkpoint_20261002_v15.json",
+  "checkpoint_sha256": "f06d37b0ea7dc62fc8e22877a6b3e87320f840856b3814d168e51963f7f11964",
+  "checkpoint_retained_locally": true,
+  "checkpoint_publication": "Pending joint-direction launch/result artifacts from earlier work are not included in this focused repair commit.",
+  "live_pipeline_handles": 40,
+  "original_live_jobs": 6,
+  "verified_terminal_successes": 35,
+  "preserved_historical_pipeline_failures": 10,
+  "distinct_closed_bindings_checked": 467131,
+  "source_hashes": {
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/check_runtime_checkpoint_child_race.py": "beba192ed02103026df3a00092b4fca4c35ac1a08014202d39351aceb9270dcf",
+    "metadata/runtime_checkpoint_child_race_validation_20261002.json": "273e3983453c444ca21f5950f8d38c9689fff9d062277f961525577f18cee5b3",
+    "metadata/project_runtime_checkpoint_attempt_20261002_v15.json": "4e71958bc1e993a52a96322e8aceb6a4fb46cc24cacbaf942a33bd1dc6f0ad87"
+  },
+  "scope": "Child-observation race repaired and real full checkpoint passed. No scientific job settings, GPU schedule or original pinned collector were changed."
+}

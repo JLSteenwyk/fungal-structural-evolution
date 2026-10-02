@@ -1,0 +1,15 @@
+{
+  "status": "failed_runtime_checkpoint_ephemeral_child_observation",
+  "checked_utc": "2026-10-02T07:02:51.583736+00:00",
+  "script": "scripts/record_project_runtime_checkpoint_v3.py",
+  "script_sha256": "79d080322c4807db75975b6123d34d1f75996208eb8c3cd6a641ba2ecf9c594d",
+  "requested_output": "metadata/project_runtime_checkpoint_20261002_v15.json",
+  "exit_code": 1,
+  "error": "psutil.NoSuchProcess: process no longer exists (pid=1538817)",
+  "failed_child_pid": 1538817,
+  "output_created": false,
+  "evidence": "Prior foreground collector session 54757 traceback, live_record child cmdline read; controlled reproduction recorded separately.",
+  "correction": "Version v4 records children that disappear during observation; parent identity, errors and full artifact/journal verification remain strict.",
+  "replacement_script": "scripts/record_project_runtime_checkpoint_v4.py",
+  "scope": "Status collector failure only. No production scientific job was stopped, restarted or marked failed."
+}
