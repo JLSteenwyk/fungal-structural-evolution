@@ -1,0 +1,28 @@
+{
+  "status": "prelaunch_full_triad_correspondence_comparison_resource_estimate",
+  "checked_utc": "2026-10-02T04:59:32.155016+00:00",
+  "source_ready_triads": 27056,
+  "sequence_fit_rows": 649344,
+  "structural_fit_rows": 865792,
+  "sequence_groups": 108224,
+  "comparison_groups": 216448,
+  "pair_states": 10389504,
+  "export_columns": 54,
+  "per_triad_checkpoint_files": 27056,
+  "cpu_quota": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "maximum_output_gib": 32,
+  "minimum_free_disk_gib": 100,
+  "planning_hours_per_producer_or_reader": [
+    1,
+    36
+  ],
+  "runtime_calibrated": false,
+  "runtime_excludes_dependency_wait": true,
+  "basis": "Full18 shared numeric differences, original triple-set overlaps, strict numeric sign agreement, all6 screens and full6-by8 order pairs per method/mask/core. Independent raw SeqIO reconstruction, sorted-tuple overlap and SQL aggregates. Stream per triad; retain exact restart-checked compressed block archives and full exports. Complete source/artifact hashing before closure. Planning bounds are not completion ETAs.",
+  "gpu": false,
+  "new_infrastructure": false,
+  "additional_charge_usd": 0
+}

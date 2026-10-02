@@ -2078,3 +2078,39 @@ controls and phylogenetic/calibrated inference remain required. These dependent
 alternatives do not increase biological replication; alignment agreement does
 not establish homology truth, prediction independence or ancestral polarity.
 [Full workflow and current evidence](full-triad-sequence-correspondence-20261002.md).
+
+### Full sequence versus structural correspondence sensitivity (October 2 UTC)
+
+After complete source geometry closure, all 108,224 sequence method/mask/triad
+groups are compared with both original structural core definitions. Each of
+216,448 comparison groups retains all six-by-eight input-order alternatives:
+10,389,504 paired states. The complete implementation, independent reader and
+original-journal closure are queued; production results remain pending.
+Every paired state retains original residue-triple intersection/union/Jaccard,
+correspondence equality, both fit statuses and numerical uniqueness, strict
+numerical sign agreement, all 18 shared numeric differences, and each source's
+six combined screens with their intersection. Empty-union overlap and uncomputed
+numeric differences remain unavailable. Different cores may contain different
+residues or coverage; the differences quantify descriptive sensitivity rather
+than independent biological effects.
+
+Full sequence-order summaries retain source/native/payload/correspondence identity,
+all 19 numeric ranges, core/inherited/combined screens and all six exclusions.
+Joint summaries retain every 48-pair layout, range, missing state, sign count
+and all/any-order bitmap. No favorable order or method is selected and alternatives
+are not replicates. The independent reader rebuilds raw sequence correspondences
+with Bio.SeqIO, merges sorted tuples for overlap, and reconstructs every pair,
+range, mean, status and bitmap using SQL. Absolute numerical tolerance is 1e−9.
+Full source/hash and both original producer/reader journal closure are required.
+Deterministic per-triple checkpoints are regenerated and checked on restart
+under an exclusive lock held through receipt creation.
+
+The entire 2,304-pair/48-group/24-sequence-group software grid passed using
+actual raw-MSA/PDB/SVD synthetic sources; all 11 false pair exports and six false
+group exports were rejected, and recovery checked two committed triples.
+Production source-closure I/O is stubbed only in software fixtures. Resources
+were estimated before launch: two CPU/32 GiB/no swap/one BLAS thread, 32 GiB
+output allowance, 100 GiB reserve, no GPU or new charges. Context/parent linkage,
+shared mask/method/core qualification, domain/PAE/predictor controls and calibrated
+phylogenetic/duplication inference remain required. Numerical signs do not infer
+ancestral polarity or biological significance. [Full comparison workflow](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).

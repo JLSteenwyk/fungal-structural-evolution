@@ -550,3 +550,19 @@ full collection/journal/biological qualification remains separate.
   duplicate a live producer. Full software tests passed and all six subsequent
   jobs are queued after the original native closure. Production completion and
   biological integration remain outstanding; GPU prediction stays paused.
+
+- October 2 UTC: compare every sequence method/order with every structural
+  core/order for the same original triple and mask. Retain all 10,389,504
+  pair states and 216,448 joint groups alongside the 108,224 all-sequence-order
+  groups. Preserve exact correspondence overlap, original-length coverage,
+  statuses and exclusions, all 18 shared numeric differences and each source's
+  six screening decisions. Empty-union overlap is unavailable. Strict numerical
+  sign agreement is descriptive; different residue cores, masks and prediction
+  sources cannot establish evolutionary polarity or extra independent events.
+  Require independent raw-MSA/sorted-tuple/SQL reconstruction, deterministic
+  checkpoint/export checks and both original journals/full hashes. Source
+  acceptance requires both full geometry closures; original parent/context
+  gates remain required after physical comparison. Full software contracts
+  and interrupted recovery passed, with all 17 false pair/group exports
+  rejected. Three jobs are queued under pre-estimated CPU-only resources;
+  production and calibrated biological interpretation remain pending.

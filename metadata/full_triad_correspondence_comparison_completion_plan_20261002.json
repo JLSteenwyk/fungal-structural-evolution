@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/full_triad_correspondence_comparison_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-correspondence-comparison-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-correspondence-comparison-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_correspondence_comparison_pending_independent_readback",
+  "reader_status": "passed_full_triad_correspondence_raw_msa_sql_readback",
+  "completed_status": "complete_verified_full_triad_correspondence_comparison",
+  "summary_fields": [
+    "ordered_model_triads",
+    "source_ready_triads",
+    "sequence_fit_rows",
+    "structural_fit_rows",
+    "sequence_groups",
+    "comparison_groups",
+    "pair_states",
+    "pair_status_counts",
+    "sequence_direction_counts",
+    "joint_direction_counts",
+    "both_screen_pass_counts",
+    "all_pair_screen_pass_group_counts",
+    "maximum_absolute_metric_difference"
+  ],
+  "launches": [
+    "metadata/full_triad_correspondence_comparison_launch_20261002.json",
+    "metadata/full_triad_correspondence_comparison_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_correspondence_comparison_plan_20261002.json": "700770f86421ee4b30d64da5a1af4f99e97b94f5dea5b612e5547c88fda45165",
+    "metadata/full_triad_correspondence_comparison_launch_20261002.json": "d78464f984af0841698d875bc5f07e3ab6edc68877b4a1f45f007aa5d762caf0",
+    "metadata/full_triad_correspondence_comparison_readback_launch_20261002.json": "a67c4507027e93577beaa557aeab269ca168e15b7bc496eb450e62ce6dd30631",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_correspondence_comparison_completed_20261002.json",
+  "scope": "Full27056original source-ready ordered A/B/reference triples, both masks, both sequence methods, both structural core definitions, all6sequence-by8structural orders:216448comparison groups and10389504paired states, plus108224sequence all6order groups. Consume only closed full649344sequence and865792structural fit dispositions with complete sources/artifacts and both original producer/reader journals. Retain exact original role/model/hash/source-parameter identities, every native/mask/source/short/degenerate exclusion and all6combined/core/inherited screening decisions. All18 shared numeric differences and exact original triple intersection/union/Jaccard preserve coverage and residue-correspondence changes; empty-union Jaccard is unavailable. Strict sign agreement and ranges are descriptive sensitivity, not inferred directional evolution or significance. Methods/orders and repeated pairs are dependent alternatives, not replicates. Complete raw-MSA reconstruction, independent sorted-tuple overlap/SQL pair arithmetic/all aggregation, all fields/grid/nulls/bitmaps/checkpoints and original journals/hashes gate closure. Per-triad deterministic compressed checkpoints are fully regenerated and checked on interrupted restart under an exclusive lock. Original31235triads/283409contexts/214461ties/428922sides remain source-linked including unscheduled dispositions; original parent/context integration and phylogeny/prediction/domain/PAE/calibration remain required. All8aims incomplete, GPU prediction paused, no existing job changes/restarts or new charges."
+}

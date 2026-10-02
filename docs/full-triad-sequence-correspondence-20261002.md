@@ -211,10 +211,95 @@ Future completion locators are
 
 ## Remaining evolutionary integration
 
-These new fits must be compared with the existing structural correspondence
-alternatives, including incomplete and conflicting cases. Every original logical
-context and parent exclusion must still be integrated without promotion based
-on a favorable common-core result.
+The complete comparison with structural correspondence alternatives is now
+implemented and queued, as described below. Its full production results remain
+pending. Every original logical context and parent exclusion must still be
+integrated without promotion based on a favorable common-core result.
+
+## Full correspondence comparison queued October 2 UTC
+
+The new stage consumes only the complete, independently closed 649,344
+sequence-derived and 865,792 structure-derived fits. Both original source
+producer/reader completion journals and full source/artifact hashes are required.
+Original sequence sets, A/B/reference roles, masks, structural mapping definitions,
+native payload hashes and complete row grids are checked before comparison.
+The same original ordered triple is compared throughout; no favorable alignment
+order, reference, mask or core is selected.
+
+| Output | Full planned row count | Scope |
+| --- | ---: | --- |
+| Sequence order robustness | 108,224 | 27,056 triples × two masks × two sequence methods; all six input orders retained |
+| Correspondence comparison groups | 216,448 | Sequence groups × two structural core definitions |
+| Paired comparison states | 10,389,504 | Every comparison group × six sequence orders × eight structural orders |
+
+Each paired state retains both fit statuses, exact residue-triple hashes and
+sizes, intersection and union counts, Jaccard overlap, correspondence equality,
+numerical uniqueness and strict numerical contrast-sign agreement. Empty-union
+Jaccard values remain unavailable. Every one of the 18 shared numerical fields
+has its sequence-minus-structural difference exported where both values exist.
+This includes residue count, original protein-length coverage, AB/AR/BR RMSDs,
+AR−BR, sequence identities, rounded-PDB confidence summaries and rotation
+curvatures. These differences describe sensitivity to correspondence and coverage;
+the two cores can contain different positions and do not define independent
+evolutionary effects. Uncomputed values remain blank. Six screens retain each
+source's combined pass and their intersection for every order pair.
+
+The separate sequence-order summary retains all six statuses, native statuses/
+payload hashes, correspondence hashes, 19 numerical ranges (including the
+authoritative source-mask fraction), all six core/inherited/combined screening
+bitmaps and source exclusions. All-order qualification requires all six orders;
+any-order qualification is reported separately. Joint groups retain the full
+48-pair layout, numerical difference ranges, missing-value counts, correspondence-equality
+counts, strict numerical sign agreement and all/any-pair screen bitmaps. A fully
+passing group requires all 48 order pairs. Numerical signs use the exported
+values and have no significance or evolutionary-polarity interpretation.
+
+The producer streams complete triples, uses set intersections for correspondence
+overlap and calculates full order-pair differences. A separate reader reconstructs
+every sequence correspondence from raw MSA with Bio.SeqIO, calculates overlap
+using a sorted-tuple merge and uses SQL for pair subtraction, ranges, means,
+status counts and order/screen bitmaps. It checks every output field and complete
+ordering, all missing values, every summary and the checkpoint/export agreement
+at 1e−9 absolute numerical tolerance. No producer summary or comparison algorithm
+is imported. Full source hashes and both original completion/resource journals
+must close after the independent reader.
+
+Deterministic compressed checkpoints retain each triple's complete sequence,
+pair and joint-group exports. Interrupted restart regenerates and exactly checks
+every existing checkpoint before rebuilding the full tables. An exclusive lock
+is held through receipt creation. Complete receipts refuse restart; live jobs
+must never be duplicated. The full software test used the existing actual raw-MSA/
+PDB/SVD fixture sources and the entire six-by-eight grid across six ordered
+triples, including role reversal, two masks, two methods, both structural cores,
+incomplete/source-rejected/degenerate states and inherited exclusions. All 2,304
+pair states/48 joint groups/24 sequence groups passed; 11 rehashed false pair
+exports and six false group exports were rejected. Interrupted recovery checked
+two committed triple blocks. The maximum independent numerical difference was
+4.441e−16. Production closure I/O is stubbed in these software contracts;
+the production workflow requires the real full closures.
+[Software evidence](../metadata/full_triad_correspondence_comparison_fixture_validation_20261002.json).
+
+Resources were estimated before launch: two-CPU quota, 32 GiB RAM, no swap,
+one BLAS thread, 32 GiB output allowance and a 100 GiB free-disk reserve.
+The uncalibrated planning range is 1–36 hours for each producer/reader, excluding
+dependency waits; it is not a completion ETA. No GPU or new charges.
+[Resource estimate](../metadata/full_triad_correspondence_comparison_resources_20261002.json).
+The three original jobs wait behind the original sequence-geometry closure;
+[launch identities](../metadata/full_triad_correspondence_comparison_launches_20261002.json),
+[frozen plan](../metadata/full_triad_correspondence_comparison_plan_20261002.json)
+and [workflow/launcher](../scripts/launch_full_triad_correspondence_comparison.py).
+The future completion locator is
+`metadata/full_triad_correspondence_comparison_completed_20261002.json`.
+Do not launch duplicates. Independent reproduction requires new plans/output
+locations or a checked restart after the original process is authoritatively stopped.
+
+Full production native alignment, sequence geometry and correspondence comparison
+are still pending. Original source/context/parent eligibility, joint-mask/method/
+core robustness, fixed matched controls, domain/orientation/PAE and predictor
+differences must still be integrated into qualified phylogenetic and calibrated
+biological analyses. All 31,235 originals and 283,409 contexts/214,461 ties/428,922
+sides remain linked through the closed source catalog, including unscheduled
+and excluded originals.
 
 The two aligners and six orders are dependent sensitivity alternatives, not
 additional biological replicates. Sequence-derived correspondence reduces one

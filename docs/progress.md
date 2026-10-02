@@ -10792,3 +10792,30 @@ does not establish universal coverage or complete the biological project.
   pending; original-context/parent integration, structural correspondence
   comparison and phylogenetic/prediction/domain/PAE/calibration controls remain
   required. All eight aims incomplete; GPU prediction stays paused.
+
+- October 2 UTC: implemented and queued the full comparison of sequence- and
+  structure-derived correspondence: all 108,224 sequence order groups,
+  216,448 method/mask/core comparison groups and 10,389,504 six-by-eight order
+  pairs. Both complete source geometry closures are required before execution.
+  Every original residue-triple intersection/union/Jaccard, status/hash/role,
+  all 18 shared numeric differences and six joint screening decisions remain
+  explicit. Empty-union Jaccard and uncomputed numeric differences stay
+  unavailable. Independent raw MSA/sorted-tuple/SQL reconstruction checks all
+  pairs, summaries, order bitmaps, missing values and deterministic checkpoints;
+  both original producer/reader journals and full hashes gate closure. Complete
+  software grid passed all 2,304 states/48 joint groups/24 sequence groups,
+  with two-triple interrupted recovery and 11 false pair/six false group
+  exports rejected. Resource estimates preceded the three original queued
+  launches: two-CPU quota/32 GiB/no swap/one BLAS thread, 32 GiB output and
+  100 GiB reserve, no GPU or new charges. The
+  [fresh runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v9.json)
+  rechecked 466,534 distinct closed bindings, all 34 live pipeline handles,
+  six original scientific/retrieval jobs, 29 terminal successes and ten
+  preserved failures. This includes full existing structural geometry,
+  all-order robustness and original-context closures. Expanded background
+  processing was at 215,232/298,848 states at observation. Full native
+  sequence/geometry/comparison results and original context/parent integration,
+  prediction/domain/PAE/phylogeny/calibration remain required. Dependent
+  alternatives are not evolutionary events. All eight aims remain incomplete;
+  GPU prediction remains paused.
+  [Complete comparison workflow](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).

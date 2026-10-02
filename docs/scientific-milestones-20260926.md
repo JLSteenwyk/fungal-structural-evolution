@@ -909,3 +909,20 @@ Full production native/preflight/fit/readback completion, original-context/paren
 gates, structural-mapping comparison, prediction/domain/PAE/phylogenetic controls
 and calibrated biological analyses remain required. All eight aims incomplete;
 GPU protein prediction remains paused. [Workflow and source requirements](full-triad-sequence-correspondence-20261002.md#full-sequence-derived-geometry-queued-october-2-utc).
+
+October 2 UTC: full sequence-versus-structural correspondence sensitivity is
+implemented and queued after complete source geometry closure. All 10,389,504
+order-pair states, 216,448 joint groups and 108,224 sequence groups retain
+correspondence overlaps, coverage, all 18 shared numeric differences, missing
+states and six combined screening decisions. Independent raw-MSA/sorted-tuple/
+SQL readback and two-original-journal/full-hash closure are queued. All 2,304
+software states passed, two committed blocks were rechecked on interrupted
+restart, and 17 false exports were rejected. These are software contracts,
+not full production or biological evidence. The
+[fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v9.json)
+verified all 34 pipeline/six original handles and 466,534 closed bindings,
+including complete existing structural fits, order robustness and context
+projection. Sequence/native geometry/comparison production and original-context/
+parent integration remain pending. Prediction/domain/PAE/phylogenetic/calibration
+controls and all eight biological aims remain unfinished; GPU prediction paused.
+[Full comparison scope](full-triad-sequence-correspondence-20261002.md#full-correspondence-comparison-queued-october-2-utc).

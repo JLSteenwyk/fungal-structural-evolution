@@ -1,0 +1,24 @@
+{
+  "status": "passed_full_triad_correspondence_comparison_software_contracts",
+  "checked_utc": "2026-10-02T04:59:32.155016+00:00",
+  "receipt": "results/software-checks/full-triad-correspondence-comparison-20261002-v1/receipt.json",
+  "receipt_sha256": "6ca9dff141f32fedae10086ab6e5daf028187667e673882adcd6d5209e782dfa",
+  "pair_states": 2304,
+  "sequence_groups": 24,
+  "comparison_groups": 48,
+  "checked_reused_triad_blocks": 2,
+  "rejected_false_pair_exports": 11,
+  "rejected_false_group_exports": 6,
+  "source_hashes": {
+    "results/software-checks/full-triad-correspondence-comparison-20261002-v1/receipt.json": "6ca9dff141f32fedae10086ab6e5daf028187667e673882adcd6d5209e782dfa",
+    "scripts/full_triad_correspondence_comparison_sources.py": "1fef18c0031d6374a066bc640780b71ebd4667eae7546cc206cbd306dbfc8357",
+    "scripts/compare_full_triad_correspondence.py": "1a9c1f485ad39ff80b76f885eb5fdf8fee1e803bfff07c67f5f8c06ef6540d9a",
+    "scripts/readback_full_triad_correspondence_comparison.py": "65a3f3b3885048aa2dd70a7cf22858834c4b568387bdfce621338a68028c64da",
+    "scripts/check_full_triad_correspondence_comparison.py": "b0e1faef6fc7e1f26608e3d567f1c4cf4efbad9428f2d3cda212335629ef6f2b",
+    "scripts/launch_full_triad_correspondence_comparison.py": "d863534f0bb6eacc91e0e8eab3aa19a7299e549b7013db7b997678bb13c7fee6",
+    "results/software-checks/full-triad-correspondence-comparison-20261002-v1/receipt.geometry_fixture.json": "f7541a2a95417be610540e0f03cab0f5715b208a56fd5d393aee7eaa97aaf054",
+    "scripts/check_full_triad_sequence_geometry.py": "66c29ae71bb5d9be312b0c42ce9c3a6ff0cbf0d5570cc1c27db8812ec943197c"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full order-grid software check. Closed-source I/O stubbed; real original raw MSA reconstruction, authoritative masks, PDB parsing/SVD fits, source field/grid checks, independent SQL/overlap algorithms and checkpoint/export validation exercised. No production source qualification or biological pilot."
+}
