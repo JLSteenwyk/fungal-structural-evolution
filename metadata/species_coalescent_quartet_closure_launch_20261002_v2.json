@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-species-coalescent-quartet-closure-20261002-v2.service",
+  "pid": 1495763,
+  "created": 1790910196.95,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/species_coalescent_quartet_closure_wait_plan_20261002_v2.json"
+  ],
+  "plan": "metadata/species_coalescent_quartet_closure_wait_plan_20261002_v2.json",
+  "plan_sha256": "20a94375b85adfc41363af035a6dd50a4c0e6061ebcf48744412b708b17a5595",
+  "checked_utc": "2026-10-02T03:03:17.659855+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-species-coalescent-quartet-closure-20261002-v2.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/species_coalescent_quartet_closure_wait_plan_20261002_v2.json"
+  ]
+}

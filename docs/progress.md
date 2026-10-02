@@ -10658,3 +10658,42 @@ does not establish universal coverage or complete the biological project.
   Full comparisons, actual subset inference and gene/taxon/model/root/dating/
   reconciliation qualification remain open. All eight aims are incomplete;
   GPU prediction remains paused.
+
+- October 2 UTC: queued the full comparison figure after actual closure of
+  all 315 comparisons. Ten panels/two PDF pages retain all 240 candidate/
+  reference pairs and 75 unique coalescent pairs, precise source identities
+  and a shared normalized-RF color scale. A separate reader checks all 315
+  cell placements, RF/count identities, roles, unused triangular cells and
+  every printed three-decimal PDF distance; two original completion journals
+  and full hashes precede separate visual inspection of both actual pages.
+  Full synthetic rendering/placement passed and 12 altered exports were
+  rejected. Fixture previews are labeled software checks, not biological
+  evidence. Resources preceded launch: serial two CPU/8 GiB/no swap/one
+  BLAS thread, no GPU or charges. Fresh [runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v4.json)
+  rechecked 1,490 closed bindings, all 28 live pipeline handles and six
+  original scientific/retrieval jobs. At observation, 29/30 native candidates
+  were complete and expanded background processing had reached
+  173,056/298,848 states. Full native numerical readback, comparisons and
+  actual figure remain pending. All eight scientific aims remain incomplete;
+  GPU protein prediction remains paused.
+
+- October 2 UTC: all 30 native coalescent inferences completed with zero
+  return codes. Full per-case/source/output inventory and the original
+  completion/resource journal passed 1,571-binding closure. The first full
+  numerical reader stopped in case 2 on native EN125 versus fractional
+  evidence124.99995265575164. Identified ASTRAL's at-most0.001 effective-N
+  retention rule; new immutable v3 readers account for it without changing
+  quartet DP or 2e-8 tolerances. Three actual installed-jar threshold cases
+  and all five previous native contracts passed; 120 changes of0.0001 were
+  rejected. The previously failing complete candidate now passes every
+  65,375 state and exact global score. New v2 full numerical/comparison/figure
+  jobs are running/queued, using original-journal verified handoffs. The
+  [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
+  verifies all 27 live pipeline handles, six original scientific/retrieval
+  jobs, 18 original terminal successes and ten preserved failures, with
+  1,648 closed bindings checked; background progress178,496/298,848 at
+  observation. Failed original audit/dependency attempts and partial exports
+  remain unchanged, and no native inference or unrelated job was restarted.
+  Full numerical/comparison/actual figure completion and scientific
+  qualification remain pending. All eight aims incomplete; GPU prediction
+  remains paused.

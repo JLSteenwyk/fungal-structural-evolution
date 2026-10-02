@@ -479,3 +479,25 @@ full collection/journal/biological qualification remains separate.
   pairs as independent evolutionary events. Require complete native
   numerical closure, raw-tree comparison readback and both original
   completion journals before accepting the full comparison stage.
+
+- October 2 UTC: display the full 315-comparison grid after actual full
+  source closure, retaining every cohort and candidate/reference pair.
+  Use a common normalized-RF scale across the two pages; blank triangular
+  cells are not additional observations. Require a separate complete
+  source-to-cell and PDF numeric-label reader, full hashes and both original
+  completion journals, followed by visual inspection of both actual pages.
+  Software fixture previews are explicitly labeled and remain outside the
+  production results. Point-tree distances do not select a preferred model
+  or establish biological causes, roots or calibrated structural effects.
+
+- October 2 UTC: preserve the failed full quartet reader and every affected
+  dependency attempt. Implement ASTRAL's exact effective-N substitution rule
+  in new v3 readers, keeping raw fractional evidence, available genes and
+  native-effective denominator distinct. Verify actual installed-jar boundary
+  behavior and retain the strict 2e-8 comparison tolerance; no broad tolerance
+  increase or native inference rerun. Use new v2 plans/output directories
+  throughout the full audit/comparison/figure chain. Dependency handoffs
+  require invocation-linked original completion/resource records rather than
+  collected unit default fields. Retain exact failure exit records when a
+  short failed invocation has no CPU summary; never infer successful completion
+  from those missing resource records.

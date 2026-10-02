@@ -1950,3 +1950,41 @@ inferred genes and candidate trees; overlaps are not independent events
 or evidence selecting a biological cause or preferred model. Full 315-pair
 production/readback/closure is queued after all native numerical proofs.
 [Workflow and limitations](coalescent-reference-comparisons-20261002.md).
+
+### Complete candidate-tree sensitivity figure (queued October 2 UTC)
+
+After full source comparison closure, all 240 coalescent/reference and
+75 coalescent alignment/support pairs are displayed in ten cohort panels
+on two PDF pages with a common color scale. Normalized RF uses twice the
+retained taxon count minus six; every compared pair uses identical taxa.
+Each pair remains linked to its source cohort/view identities and precise
+distance. An independent reader checks every cell placement and all printed
+three-decimal PDF distances, count identities, roles and unavailable triangular
+cells. Full hashes and both original producer/reader completion journals
+precede a separate visual inspection of both actual pages. The full synthetic
+315-cell/two-page contract passed, rejecting 12 altered exports. Actual
+production rendering/readback/closure/inspection remains pending; no fixture
+is presented as biological evidence. Serial two CPU/8 GiB/no swap/one BLAS
+resources were estimated before launch, without GPU or charges. These
+descriptive point-tree differences inform later uncertainty analysis and
+do not qualify a biological root, preferred model or structural effect.
+
+### Native effective-N semantics and dependency recovery (October 2 UTC)
+
+All 30 native tree outputs are complete and their 1,571-binding/original-journal
+inventory closure is verified. The initial full numerical reader failed on
+125.0 native effective N versus 124.99995265575164 fractional resolved evidence.
+ASTRAL's implementation retains the count of genes having all four incident
+clades when the resolved total differs by at most 0.001; otherwise it uses that
+fractional total. The v3 reader keeps both totals, records this disposition,
+and uses the independently verified native effective denominator for quartet
+fractions, local posterior and MAP length. The exact quartet DP and 2e-8
+absolute/relative comparison tolerances are unchanged. Three actual installed
+5.7.8 boundary contracts and all five earlier native contracts passed;
+120 altered values of 0.0001 were rejected. The previously failing complete
+candidate now passes all 65,375 states and exact global score; full batch
+closure is pending. Original failures/partial exports are preserved, and
+new v2 plans/output directories carry the corrected full numerical/comparison/
+figure workflow. Successful dependency handoffs require original invocation
+completion/resource journals; collected unit defaults do not prove success.
+[Native semantics and evidence](species-coalescent-sensitivities-20261002.md#native-completion-and-effective-n-correction-october-2-utc).

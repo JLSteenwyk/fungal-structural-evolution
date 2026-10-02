@@ -1,0 +1,21 @@
+{
+  "status": "estimated_before_full_315_cell_coalescent_figure_workflow",
+  "checked_utc": "2026-10-02T02:47:02.505802+00:00",
+  "cpu": 2,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "planning_hours_per_stage": [
+    0.002,
+    0.2
+  ],
+  "runtime_uncalibrated": true,
+  "output_allowance_gib": 1,
+  "minimum_free_disk_gib": 100,
+  "available_memory_gib": 699.5259780883789,
+  "free_disk_gib": 10502.32557296753,
+  "basis": "Five6x8 source matrices240cells and five6x6 lower triangles75cells. Two-page12.2x13.2inchPDF and two180dpiPNGs2196x2376pixels, full315pair/matrix readback and PDF label parsing. Already passed all315 synthetic cell mappings, two-page rendering and12altered exports. Rehash inherited closed source proofs (about1500 bindings), no new inference; serial stages2CPU8GiBnoSwap1BLAS; exclude dependency wait from planning."
+}

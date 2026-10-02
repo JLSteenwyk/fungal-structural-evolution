@@ -829,3 +829,27 @@ These conditional similarities do not establish a preferred method, cause
 of discordance, root or accepted structural evolutionary framework. Full
 candidate comparisons, actual subset fits and remaining qualification
 are required; all eight biological aims remain incomplete.
+
+October 2 UTC: full 315-comparison figure/independent cell and PDF-label
+readback/two-journal closure queued after actual full comparison closure.
+The full synthetic 315-cell/two-page contract passed, rejecting 12 changed
+exports. Actual production rendering/readback and subsequent inspection of
+both pages remain pending. Fresh exact live checkpoint verifies 29/30 native
+cases complete, 28 live pipeline handles, six original scientific/retrieval
+jobs and 173,056/298,848 expanded background states. The figure will describe
+conditional topology sensitivity; gene/taxon/model/root/reconciliation and
+calibrated structural evolutionary qualification remain necessary.
+[Figure requirements](coalescent-reference-comparisons-20261002.md#full-comparison-figure-queued-october-2-utc).
+
+October 2 UTC: all 30 native coalescent outputs are complete, with 1,571
+source/output hashes and one original native completion/resource journal.
+The original full numerical reader's effective-N assumption failed in case 2;
+new v3 readers implement the installed tool's 0.001 substitution rule while
+retaining raw fractional/available evidence and unchanged 2e-8 tolerances.
+Three actual boundary contracts and five prior native cases passed, rejecting
+120 altered values. The previously failing full candidate now passes every
+65,375 local state and exact global matching score. Full corrected batch
+readback, comparisons, figure and actual visual inspection remain required.
+New versioned jobs use exact original dependency journals; all original
+failures and unrelated scientific jobs remain preserved. [Current evidence](species-coalescent-sensitivities-20261002.md#native-completion-and-effective-n-correction-october-2-utc).
+All eight biological aims remain incomplete.

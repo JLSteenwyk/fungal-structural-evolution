@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-coalescent-reference-readback-20261002-v2.service",
+  "pid": 1495986,
+  "created": 1790910197.01,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/coalescent_tree_comparison_readback_wait_plan_20261002_v2.json"
+  ],
+  "plan": "metadata/coalescent_tree_comparison_readback_wait_plan_20261002_v2.json",
+  "plan_sha256": "629db33210211cd12389fb68fcecb7262c6870fbb87d998e0170b0f9a7d03a29",
+  "checked_utc": "2026-10-02T03:03:17.752253+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-coalescent-reference-readback-20261002-v2.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/coalescent_tree_comparison_readback_wait_plan_20261002_v2.json"
+  ]
+}

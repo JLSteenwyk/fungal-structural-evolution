@@ -96,24 +96,101 @@ a guaranteed ETA. No inference is restarted, and no GPU or paid resource is used
 
 ```bash
 python scripts/compare_coalescent_species_trees.py \
-  --plan metadata/coalescent_tree_comparison_plan_20261002.json
+  --plan metadata/coalescent_tree_comparison_plan_20261002_v2.json
 python scripts/readback_coalescent_tree_comparisons.py \
-  --plan metadata/coalescent_tree_comparison_plan_20261002.json \
-  --output results/phylogeny/full-coalescent-reference-tree-comparisons-20261002-v1/readback.json
+  --plan metadata/coalescent_tree_comparison_plan_20261002_v2.json \
+  --output results/phylogeny/full-coalescent-reference-tree-comparisons-20261002-v2/readback.json
 python scripts/close_coalescent_tree_comparisons.py \
-  --plan metadata/coalescent_tree_comparison_completion_plan_20261002.json
+  --plan metadata/coalescent_tree_comparison_completion_plan_20261002_v2.json
 ```
 
 Commands identify the frozen queued runs; do not start duplicate runs.
 Reproduction uses new plans/output locations. Full tables/conflict records,
 trees and hash dictionaries stay outside Git. The future small locator is
-`metadata/coalescent_tree_comparisons_completed_20261002.json`.
+`metadata/coalescent_tree_comparisons_completed_20261002_v2.json`.
 
-The [current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v3.json)
-records 17/30 native coalescent cases complete, 25 live pipeline handles and
+The [current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
+records 30/30 native coalescent cases complete, 27 live pipeline handles and
 six original scientific/retrieval jobs; new structural comparisons have
-processed 162,816/298,848 states at its observation time. Full coalescent
-numerical readback/closure and these 315 comparisons remain queued. Gene-tree
+processed 178,496/298,848 states at its observation time. Full coalescent
+numerical readback is running; its closure and these 315 comparisons remain queued. Gene-tree
 estimation uncertainty, marker dependence/selection, taxon identity, MSC and
 sequence-model adequacy, roots, accepted dating and reconciliation remain open.
 All eight evolutionary aims remain incomplete. GPU prediction remains paused.
+
+## Full comparison figure queued October 2 UTC
+
+The figure workflow waits for the actual full 315-comparison closure; the
+named-case results cannot satisfy its input requirements. It will show all
+240 coalescent/reference pairs as five 6-by-8 panels, and all 75 unique
+coalescent pairs as five lower-triangular panels on a second PDF page. Both
+pages use the same color limits. Every cell displays the normalized RF
+distance, with denominator twice the retained taxon count minus six. This
+is a topology distance for the same taxon set within each comparison; distances
+between different cohorts do not represent the same collection of splits.
+
+The complete pair table and panel JSON retain all source identities and exact
+distances. A separate reader reconstructs all 315 cell placements from the
+closed comparison table, verifies the RF count identities and cohort roles,
+checks that unused triangular cells remain unavailable, and checks every
+three-decimal distance printed in both PDF pages. All source/output hashes
+and both original figure-producer/reader completion journals are required.
+Visual inspection of both actual PNG pages is a separate requirement before
+publishing the figures. Full synthetic rendering and 315-cell placement
+passed, with 12 altered exports rejected; the previews are labeled software
+fixtures and are not production or biological results.
+
+Resources were estimated before launching the serial stages: two CPU,
+8 GiB RAM, no swap, one BLAS thread, 1 GiB output allowance and a 100 GiB
+disk reserve. The 0.002–0.2 hour planning range per stage excludes dependency
+waits and is uncalibrated. No GPU, package installation or new charge is used.
+
+```bash
+python scripts/summarize_coalescent_tree_comparisons.py \
+  --plan metadata/coalescent_comparison_figure_plan_20261002_v2.json
+python scripts/readback_coalescent_comparison_figure.py \
+  --plan metadata/coalescent_comparison_figure_plan_20261002_v2.json \
+  --output results/phylogeny/full-coalescent-comparison-figure-20261002-v2/readback.json
+python scripts/close_coalescent_comparison_figure.py \
+  --plan metadata/coalescent_comparison_figure_completion_plan_20261002_v2.json
+```
+
+These identify the already queued jobs; reproduction requires new output
+locations and plans. The future numerical/journal locator is
+`metadata/coalescent_comparison_figure_completed_20261002_v2.json`; its initial
+status requires subsequent visual inspection. The figure describes candidate
+tree sensitivity and does not assign a preferred tree, root or cause of
+discordance. Actual subset inference, reconciliation, gene/model/root
+qualification and the structural evolutionary tests remain necessary.
+
+## Preserved initial dependency failures and corrected workflow
+
+All 30 native inferences finished successfully. Their complete source/output
+inventory and original completion journal bind 1,571 hashes in the
+[native output locator](../metadata/species_coalescent_native_outputs_completed_20261002.json).
+This certifies output availability; full numerical and biological qualification
+remain separate requirements. The initial full numerical reader stopped in
+case 2 because it assumed the fractional resolved total always equals native
+effective N. ASTRAL instead retains the available-gene count for differences
+at most 0.001. The initial audit and all eight affected audit/dependency
+attempts are preserved; inferred trees and prior closed results are unchanged.
+
+The new v3 numerical reader and versioned v2 plans/output directories account
+for that exact native rule while keeping comparison tolerance 2e-8. Three
+actual installed-jar boundary cases passed, all five previous native contracts
+were rechecked, and 120 changes of 0.0001 to count/effective-N/posterior/length
+values were rejected. The corrected full audit has passed the previously
+failing complete candidate and continues across all 30. The comparison and
+figure jobs above now wait for its new v2 completion proof.
+
+The new dependency wrapper requires exact original invocation-linked process
+and completion/resource journal records. Collected systemd unit defaults
+(success/0) alone are insufficient, including after a failed original job.
+Actual native completion and original audit failure were checked; five altered
+journal contracts were rejected and explicit null messages are handled. The
+[current runtime checkpoint](../metadata/project_runtime_checkpoint_20261002_v5.json)
+preserves ten original failures (two earlier gCF attempts and eight affected
+coalescent/dependency attempts), rather than relabeling them as successes.
+Failures with no CPU resource summary retain their actual invocation-linked
+exit-code records; successful completion still requires resource records.
+No native inference or unrelated scientific job was restarted.

@@ -1,0 +1,20 @@
+{
+  "status": "estimated_before_corrected_full_30_native_quartet_readback",
+  "checked_utc": "2026-10-02T03:03:17.579126+00:00",
+  "cpu": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "output_allowance_gib": 4,
+  "minimum_free_disk_gib": 100,
+  "planning_hours": [
+    0.25,
+    2
+  ],
+  "available_memory_gib": 562.2717208862305,
+  "free_disk_gib": 10501.255725860596,
+  "basis": "Every 15,510 internal branch x 125 gene state =1,938,750 local states across 30 actual complete native candidates, plus 3,750 exact global matching/resolved counts. First complete 526-taxon candidate global/local auditor took 33.2 elapsed seconds and 38.647 CPU seconds including source hash verification/JIT. Full batch nominal ~17 minutes plus source I/O/closure, range .25\u20132 hours for scheduling, not guaranteed ETA; excludes native dependency waits. Full first-case proof and exhaustive 18,720 color/tree +1,264 global tree-pair contracts passed. All serial, 2CPU16GiB/noSwap/one BLAS; no GPU, charges or native restarts. Corrected immutable v3 numeric reader implements installed ASTRAL5.7.8 effective-N rule: use independently counted available genes unless the fractional resolved total differs by more than0.001, then use the resolved total. Keep both totals and the adjustment disposition. PP/q/MAP use the verified native-effective denominator; all comparison tolerances remain2e-8. Actual999/1000/1001-quartet pinned-jar boundary checks passed, previous5native cases rechecked and all120 changed0.0001 values rejected. Preserve failed original full audit and its downstream attempts; no native tree inference restarted. New handoff wrapper requires original invocation-linked completion/resources and rejects collected failed-unit default success fields."
+}
