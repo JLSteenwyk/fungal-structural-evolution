@@ -10849,3 +10849,27 @@ does not establish universal coverage or complete the biological project.
   contrast uncertainty and calibration remain required. All eight aims
   incomplete; GPU prediction remains paused.
   [Full context scope and workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).
+
+- October 2 UTC: completed the full signed reference-distance sensitivity
+  analysis on all 27,056 original ready triples/865,792 closed fits. All nine
+  mask/core scenarios preserve every selected structural order, missing and
+  nonunique dispositions, exact-zero/numerical-boundary direction classes,
+  original model roles and inherited quality exclusions. Independent raw-fit
+  SQLite reconstruction passed all 243,504 groups/1,461,024 screening decisions
+  and 378 disjoint count rows. Two-original-journal closure binds 464,919 hashes.
+  Software contracts passed 384 raw fits/108 groups/216 decisions and committed
+  checkpoint recovery; all 16 rehashed false exports were rejected. At 50
+  residues/70% coverage, the joint-mask/joint-core quality cohort contains 5,448
+  triples: 1,975 positive, 1,785 negative and 1,688 sign uncertain (30.98%).
+  These are dependent physical sensitivity measurements, not calibrated
+  biological asymmetry or confidence intervals. Full table and PNG/SVG/PDF
+  figures were published, with values checked and actual PNG/rendered PDF
+  visually inspected. The [fresh checkpoint](../metadata/project_runtime_checkpoint_20261002_v12.json)
+  verified 37 live pipeline handles/six original jobs, 32 terminal successes,
+  ten preserved historical failures and 466,820 distinct closed bindings;
+  expanded background progress was 235,648/298,848 at observation. Full sequence
+  alignment/geometry/comparison/context production remains pending, along with
+  context/tie direction integration, matched backgrounds, prediction/domain/PAE,
+  accepted phylogeny/reconciliation, dependence/sampling and calibrated inference.
+  All eight aims remain incomplete; GPU prediction stays paused.
+  [Executed results and reproducibility](full-triad-contrast-sensitivity-20261002.md).

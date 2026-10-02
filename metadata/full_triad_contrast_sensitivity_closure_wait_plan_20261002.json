@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_triad_contrast_sensitivity_launch_20261002.json",
+    "metadata/full_triad_contrast_sensitivity_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_triad_contrast_sensitivity_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_contrast_sensitivity_completion_plan_20261002.json": "80482d018431bd83b10746ac23b3996220007ee102bd393f9577a3a1deeb6d85",
+    "metadata/full_triad_contrast_sensitivity_launch_20261002.json": "2abedbbe51f27c2cdc99fc4c11b6a9008505118bbccbc573aae8b867cf335f78",
+    "metadata/full_triad_contrast_sensitivity_readback_launch_20261002.json": "74359c2b70433df3a9b33c72ef48326e639360e380f4d5263548c87df1f7a60e",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

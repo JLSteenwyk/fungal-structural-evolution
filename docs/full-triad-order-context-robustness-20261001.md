@@ -125,3 +125,13 @@ and numerical geometric qualification do not establish biological orthology.
 Final inferential calibration, multiple testing and uncertainty propagation
 remain open. None of the eight scientific aims is complete; GPU inference
 remains paused.
+
+October 2 UTC: [full signed contrast sensitivity](full-triad-contrast-sensitivity-20261002.md)
+has passed across all 27,056 triples, nine mask/core scenarios and every selected
+structural order. It retains missing/nonunique fits, original roles and inherited
+quality exclusions; independent reconstruction uses the complete original
+865,792 raw fits. Full production/readback/two-journal closure binds 464,919 hashes.
+At 50 residues/70% coverage, 1,688 of 5,448 quality-passing joint-mask/joint-core
+triples have sign-uncertain contrasts. Sensitivity
+envelopes and numerical-boundary signs are descriptive prerequisites, not
+confidence intervals or calibrated biological effects.

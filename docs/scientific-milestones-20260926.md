@@ -944,3 +944,20 @@ Production native sequence/geometry/comparison/context closure, matched controls
 prediction/domain/PAE, accepted phylogeny/reconciliation, dependence/sampling
 and calibrated biological inference remain required. All eight aims incomplete;
 GPU prediction paused. [Full original-context workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).
+
+October 2 UTC: full signed structural reference-contrast sensitivity is closed.
+All 243,504 mask/core scenario groups/1,461,024 decisions retain every selected
+order and original roles/exclusions. Independent reconstruction exhausted all
+865,792 original raw fit dispositions; full closure binds 464,919 hashes and
+both original completion/resource journals. Software contracts passed committed
+checkpoint recovery and rejected 16 rehashed false exports. At 50 residues/70%
+coverage, 1,688 of 5,448 joint-mask/joint-core quality-passing physical triples
+have sign-uncertain reference contrasts. Full 378-row counts and standalone
+figures passed value checks and actual PNG/PDF visual inspection. These are
+dependent descriptive sensitivities, not calibrated duplication effects or
+uncertainty intervals. The [fresh runtime proof](../metadata/project_runtime_checkpoint_20261002_v12.json)
+verified 37 pipeline/six original live jobs and 466,820 closed bindings. Full
+sequence-derived production, context/tie direction integration, matched controls,
+prediction/domain/PAE, accepted phylogeny/reconciliation and statistical calibration
+remain required. All eight scientific aims incomplete; GPU prediction paused.
+[Complete physical contrast results](full-triad-contrast-sensitivity-20261002.md).

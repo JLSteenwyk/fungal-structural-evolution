@@ -2150,3 +2150,34 @@ Resources were estimated before launch: two CPU/32 GiB/no swap/one BLAS thread,
 32 GiB output allowance, 100 GiB reserve, no GPU or new charges. Production and
 prediction/domain/PAE/phylogenetic dependence/sampling/calibration remain pending.
 [Full context workflow](full-triad-sequence-correspondence-20261002.md#original-context-linkage-and-joint-qualification-queued-october-2-utc).
+
+## Full structural contrast sensitivity added October 2 UTC
+
+The full closed set of 27,056 source-ready ordered physical triples is analyzed
+under nine full/pLDDT70/both-mask by reference-common/cycle-consistent/both-core
+scenarios, retaining all eight orders in each selected leaf. This creates
+243,504 contrast groups and 1,461,024 decisions under six existing quality
+screens. Signed RMSD(A, reference) minus RMSD(B, reference) extrema retain
+original model versions and A/B/reference roles. Available/expected counts and
+unique-fit status distinguish missing, nonunique, positive, negative, near-zero
+and sign-uncertain dispositions. Both exact-zero and 1e-9 Å numerical boundaries
+are exported; these thresholds are numerical classification boundaries and
+do not define biological effect size. Sensitivity envelopes are not uncertainty
+intervals. Eligibility requires every selected order to pass combined core and
+inherited three-pair screens with original protein-length coverage denominators.
+Source logical parents, native guides, reference choices/ties and family/taxon
+dependence remain necessary gates for subsequent comparative inference.
+
+The producer combines closed all-order summaries; a separate raw-fit SQLite
+reader reconstructs every group, source role/grid, bitmap, status, range, sign,
+count, denominator and deterministic checkpoint from all 865,792 original fit
+rows. Full hash verification and both original completion/resource journals gate
+closure. Software contracts passed 384 raw rows/108 scenario groups/216 decisions,
+committed checkpoint recovery and 16 false-export rejections. Full production
+and independent reconstruction passed all 243,504 groups/1,461,024 decisions;
+two-original-journal closure binds 464,919 hashes. At 50 residues/70% coverage,
+the joint-mask/joint-core quality cohort contains 5,448 physical triples:
+1,975 uniformly positive, 1,785 uniformly negative and 1,688 sign uncertain
+under the numerical boundary. These are dependent descriptive measurements;
+context/tie gates and biological/statistical calibration remain required.
+[Scope, results and resources](full-triad-contrast-sensitivity-20261002.md).

@@ -1,0 +1,32 @@
+{
+  "source_plan": "metadata/full_triad_contrast_sensitivity_plan_20261002.json",
+  "producer_receipt": "results/structural_comparisons/full-triad-contrast-sensitivity-20261002-v1/receipt.json",
+  "independent_readback": "results/structural_comparisons/full-triad-contrast-sensitivity-20261002-v1/readback.json",
+  "producer_status": "complete_full_triad_contrast_sensitivity_pending_independent_readback",
+  "reader_status": "passed_full_triad_contrast_sensitivity_raw_fit_sql_readback",
+  "completed_status": "complete_verified_full_triad_contrast_sensitivity",
+  "summary_fields": [
+    "measured_triads",
+    "source_fit_rows",
+    "source_order_groups",
+    "sensitivity_groups",
+    "screen_decisions",
+    "summary_rows",
+    "direction_counts",
+    "qualified_direction_counts",
+    "maximum_contrast_span"
+  ],
+  "launches": [
+    "metadata/full_triad_contrast_sensitivity_launch_20261002.json",
+    "metadata/full_triad_contrast_sensitivity_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_triad_contrast_sensitivity_plan_20261002.json": "c2889b343c0a20761ac5ae13526287c3b351fd203564c02cf6aef9edd7652de4",
+    "metadata/full_triad_contrast_sensitivity_launch_20261002.json": "2abedbbe51f27c2cdc99fc4c11b6a9008505118bbccbc573aae8b867cf335f78",
+    "metadata/full_triad_contrast_sensitivity_readback_launch_20261002.json": "74359c2b70433df3a9b33c72ef48326e639360e380f4d5263548c87df1f7a60e",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_triad_contrast_sensitivity_completed_20261002.json",
+  "scope": "All27056original ready ordered physical triples/865792closed fit dispositions/108224closed all-eight-order groups. All9full/plddt70/both-mask and reference_common/cycle_consistent/both-core scenarios,243504contrast envelopes/1461024six-screen decisions/378disjoint descriptive count rows. Signed RMSD(A,reference)-RMSD(B,reference) roles and everyorder retained; extrema and available/expected/unique states preserved; missing and nonunique states not promoted, no favorable core/mask/order selection. Exact-zero and1e-9angstrom numerical-boundary direction classifications both retained. Tolerance is numerical, not biological-effect or confidence-interval threshold; sensitivity envelopes are not sampling/prediction/ASR uncertainty. Full selected leaf8-bit qualification preserves inherited source exclusions and original full-protein coverage. Original logical contexts/parents/native guides/ties are not independently replicated physical observations and must gate subsequent use. Independent raw-fit SQL everyfield, role/grid/status/numeric/bitmaps/count/checkpoint readback plus2originalcompletion/resourcejournals and completehashes required. Descriptive physical contrast sensitivity doesnot establish duplication, acceleration, causality, prediction-independence, homology truth, accepted species/gene framework or calibrated significance. Full sequence controls, context/tie direction integration, actual matched backgrounds, domain/PAE/predictor/phylogeny/statistical calibration remain required. All8aims incomplete; GPU prediction paused; no changes to existing jobs or newcharges."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_triad_contrast_sensitivity_software_contracts",
+  "checked_utc": "2026-10-02T05:53:35.084287+00:00",
+  "receipt": "results/software-checks/full-triad-contrast-sensitivity-20261002-v1/receipt.json",
+  "receipt_sha256": "2e80cce7fc98d82dd40ce6145e1d6b985ec8fc47650991b74ca5606bfebcc831",
+  "measured_triads": 12,
+  "source_fit_rows": 384,
+  "source_order_groups": 48,
+  "sensitivity_groups": 108,
+  "screen_decisions": 216,
+  "summary_rows": 126,
+  "checked_reused_chunks": 1,
+  "raw_fit_input_order": "reversed",
+  "rejected_false_exports": 16,
+  "source_hashes": {
+    "results/software-checks/full-triad-contrast-sensitivity-20261002-v1/receipt.json": "2e80cce7fc98d82dd40ce6145e1d6b985ec8fc47650991b74ca5606bfebcc831",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_triad_contrast_sensitivity.py": "1123dcd7bf403641db3f11bc4076a905e0e66b2cd53419864b9cbc99c8ca5ab8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/summarize_full_triad_contrast_sensitivity.py": "567a59845ce243e2dc0464ce0936355240df88b56b846ccde7e14eace86fcf8b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_triad_contrast_sensitivity.py": "dc0c9e5b7d506998b61421ca7546e444da5f9dc6e1d73d0990747443b21fa5c0"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic full-grid software contract; production source closure I/O stubbed, not biological evidence."
+}

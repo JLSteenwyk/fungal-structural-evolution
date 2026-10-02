@@ -585,3 +585,19 @@ full collection/journal/biological qualification remains separate.
   eligibility decisions are dependent screens, not events, tests, accepted
   duplication or calibrated effects. Biological/phylogenetic/prediction
   uncertainty remains; GPU prediction stays paused.
+
+## October 2 UTC: preserve complete signed contrast sensitivity
+
+Retain all nine mask/core combinations, including joint scenarios, and every
+selected structural alignment order for each of the 27,056 source-ready triples.
+Report original-role AR-minus-BR extrema and missing/nonunique states before any
+contextual or biological interpretation. Export exact-zero and 1e-9 Å numerical
+direction classes; the numerical boundary is not an effect-size cutoff, and
+sensitivity ranges are not confidence intervals. Strict all-selected-order
+quality qualification preserves existing inherited exclusions. Never select a
+favorable mask/core/order or promote an excluded result because its sign is
+consistent. The independent reader must reconstruct the full raw-fit grid and
+every exported field/count/checkpoint. Repeated scenario decisions remain
+dependent. Full source context/tie/native-parent gates, accepted phylogeny,
+prediction/domain/PAE controls and calibrated inference are still required.
+[Complete scope](full-triad-contrast-sensitivity-20261002.md).

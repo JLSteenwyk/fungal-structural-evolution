@@ -1,0 +1,24 @@
+{
+  "status": "estimated_before_launch_full_structural_contrast_sensitivity",
+  "checked_utc": "2026-10-02T05:53:35.083718+00:00",
+  "cpu": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "cost_usd": 0,
+  "minimum_free_disk_gib": 100,
+  "maximum_output_gib": 8,
+  "checkpoint_triads": 100,
+  "planned_chunks": 271,
+  "planning_hours_per_producer_and_reader": [
+    1,
+    12
+  ],
+  "runtime_uncalibrated": true,
+  "not_completion_eta": true,
+  "available_memory_gib": 567.797492980957,
+  "free_disk_gib": 10489.977577209473,
+  "basis": "All27056 ready ordered physical triples,108224closed eight-order groups,865792raw fits. Nine mask/core scenarios,243504groups,1461024six-screen decisions,378summary rows. Linear streaming/checkpoints; independent raw865792row SQLite with full grid and role checks, indexed per-triple reconstruction. Complete464618closed source bindings rehashed in each stage.8GiB output allowance includes duplicate gzip checkpoints and expanded journals/hash archives. No GPU or newcharges; twoCPU32GiB/noSwap services, oneBLASthread. Range is uncalibrated planning envelope."
+}
