@@ -11848,3 +11848,14 @@ and figure review remain next.
   successful terminal handles; fitting remains unlaunched. No native
   sampling/GPU/new-cost launch or existing-source edit; all eight aims,
   accepted framework, model/predictor controls and calibration remain open.
+
+- October 3, 04:52 UTC (00:52 EDT): rechecked the earlier error. All seven
+  process-monitor regression contracts and 250 binary numerical fixtures
+  passed. Exact original process or invocation-linked terminal journal checks
+  passed for 54 handles without observation errors. The journal window since
+  00:03 EDT contained no new failure messages; three keyword matches were
+  successful census summaries reporting historical allocation failures.
+  The two native allocation failures and the ESS numerical discrepancy remain
+  unresolved. Both validation producers have written all planned checkpoints;
+  full readback and provenance closure remain pending. No jobs were restarted.
+  [Classified error recheck](../metadata/project_error_recheck_20261003_0052_classified.json).

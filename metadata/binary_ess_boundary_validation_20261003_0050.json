@@ -1,0 +1,49 @@
+{
+  "status": "passed_exact_binary_ess_zero_pair_review_contracts",
+  "actual_regression_certified_as_unresolved_not_agreement": true,
+  "real_case_certificate": {
+    "ess": [
+      188.6701872299568,
+      199.59370238699847
+    ],
+    "exact_zero_pair_indices": [
+      1
+    ],
+    "split_chains": 8,
+    "split_draws": 25,
+    "counts": [
+      23,
+      25,
+      20,
+      24,
+      20,
+      24,
+      22,
+      25
+    ],
+    "scope": "Only exact reachable zero pairs permit alternate stop/storage decisions; genuine negative pairs stop enumeration."
+  },
+  "random_binary_fixtures": 250,
+  "ordinary_agreement_fixtures": 250,
+  "numerical_review_fixtures": 0,
+  "noncertified_metric_alterations_rejected": [
+    "rhat",
+    "bulk_ess",
+    "tail_ess",
+    "mean_mcse"
+  ],
+  "comparison_tolerance": {
+    "atol": 1e-08,
+    "rtol": 1e-08
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_binary_ess_boundary_certificate.py": "d13c4fe933a2d30cbe3f30d6c6ac0599118c032f1328ea5beda19b2caf7ac94c",
+    "scripts/binary_ess_boundary_certificate.py": "db1c2553ea53517d4b59befe191bdb8fba77cdc011a48c7a22cd60f9ae489665",
+    "scripts/independent_ancestral_scalar_diagnostics_v2.py": "8b4a974a58175e0875ecb445755d0b4c5572a1eab389a454aeab9fce4be93ba1",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "metadata/binary_ess_boundary_regression_20261002.json": "0ed57e302b200cb1a152c5e7250504f68e7f6b99503ebabc5ff50b9db0b29a69"
+  },
+  "scientific_eligibility": false,
+  "production_integration_complete": false,
+  "scope": "Exact binary integer/Fraction reachable-zero Geyer branch certificate. Differing values are explicitly unresolved, not passed numerical agreement; unrelated mismatches fail. No production stage restart or posterior/model qualification."
+}

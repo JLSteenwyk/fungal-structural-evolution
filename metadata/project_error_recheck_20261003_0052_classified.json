@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-03T04:52:10.350644+00:00",
+  "raw_recheck": "metadata/project_error_recheck_20261003_0052.json",
+  "raw_recheck_sha256": "03f7b2f37796ef4465717c7c42f72b775e8a96a32b29be2f0783e82002361ee1",
+  "monitor_checks_passed": 7,
+  "original_handles_checked": 54,
+  "observation_errors": [],
+  "journal_window_start_local": "2026-10-03 00:03:00 America/New_York",
+  "journal_rows_scanned": 4885,
+  "new_failure_messages": [],
+  "historical_census_summary_matches": [
+    {
+      "timestamp": "1791001417058526",
+      "unit": "fungal-baliphy-horizon-resources-20261003-v1.service",
+      "classification": "Completed resource census reports historical failures; not a new exception or failed invocation"
+    },
+    {
+      "timestamp": "1791001477115499",
+      "unit": "fungal-baliphy-horizon-resources-readback-20261003-v1.service",
+      "classification": "Completed resource census reports historical failures; not a new exception or failed invocation"
+    },
+    {
+      "timestamp": "1791001498441321",
+      "unit": "fungal-baliphy-horizon-resources-closure-20261003-v1.service",
+      "classification": "Completed resource census reports historical failures; not a new exception or failed invocation"
+    }
+  ],
+  "ess_discrepancy_still_explicit_numerical_review": true,
+  "unresolved_native_allocation_failures": 2,
+  "validation_producer_checkpoint_counts_complete": true,
+  "full_readback_closure_pending": true,
+  "jobs_restarted": false,
+  "scope": "The raw keyword scan matches bad_alloc_attempts in three successful historical census summaries. Those are classified separately; no new failure message was detected in this journal window. The two failed chains and ESS review remain unresolved."
+}
