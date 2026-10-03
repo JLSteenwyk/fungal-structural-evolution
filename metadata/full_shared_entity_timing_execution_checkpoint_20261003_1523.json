@@ -1,0 +1,673 @@
+{
+  "status": "verified_original_full_timing_queue_and_recovered_publication_checkpoint",
+  "checked_utc": "2026-10-03T15:22:58.857053+00:00",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_shared_entity_timing_queue.py": "a78a1cf29b200024a86324fbf68ad176f33ab35587b7b3a791217fde67037b29",
+    "metadata/full_expanded_model_designs_plan_20261002_v2.json": "8663dc251acc3c4743a2b4faa3f306be986f8609df22f0a6acf7b898019625c9",
+    "metadata/full_expanded_model_design_fixture_validation_20261002_v2.json": "ed0bd70693f9d4a88a363c38610b29b5b4ac5a9791d1208fdf5da0d6d204ddfe",
+    "metadata/full_expanded_model_designs_resources_20261002_v2.json": "e059ba81f72b820516d7bc0483bcbe33bffbb768d995253c28a72557afb0af1e",
+    "metadata/full_expanded_model_designs_superseded_attempt_20261002_v1.json": "828f67222fe6451e180b52311c720de00a034e4fcfd653cf57383f5a61e20c5f",
+    "metadata/full_expanded_model_inputs_closure_launch_20261002.json": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583",
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/receipt.json": "2073dade741d4653b24de0a76a2df2639e0558871d7826a482d6d94c423fcdc7",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_expanded_model_designs_v2.py": "35b22f4964e3ef6dfef7d90aaf01c0f0f531d497c69390ec5c014281460fbcb9",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/launch_full_expanded_model_designs_v2.py": "9002f1bec68e27b7fa8bc8db118ea225b2ff171b29d21c81ad1d1eb8dc62d7b4",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_expanded_model_designs.py": "94bf748656a3aef71904c0d193728d76ca28926920587f7e817a8087e5b9c886",
+    "scripts/readback_full_expanded_model_designs_v2.py": "d36bce05c97cc67a634c3f7a76d2af842fb31bb7a6db43b3303348b224308c7c",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+    "environments/shared-entity-covariance-20261002.yml": "3ee7d47941ee79be242be0dac89f65e9d1db654019956f330e89601d9fa2d5c2",
+    "metadata/full_entity_operator_fixture_validation_20261002.json": "41ab1136b6e453c957feb91cd82ea06cc0034a96a6d002eedafdd393f6e9d337",
+    "metadata/full_entity_operator_resources_20261002.json": "c6a9c88fc6be758c6bb6050cf2ccf22248331296773ebfcafe5294cb94e30228",
+    "metadata/full_expanded_covariance_completed_20261002.json": "591630a8e7542f04bf64381b637de5cff4d5a7b69acbbe3b562e4cde5f19c597",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "metadata/shared_entity_covariance_fixture_validation_20261002.json": "91846d8f53ad4dd63b2560fa1403ac0441178b88fba74e5b1964a607b3aaae60",
+    "scripts/check_full_entity_operators.py": "d3fb8117d8fed77406b01695a8d5e665c572bcc0057c33d64272f3d1b2b90a4e",
+    "scripts/check_shared_entity_covariance.py": "1858fdf9adbea4e96330d23716e8ad715ff855673e036c0d24cbf88550071853",
+    "scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "scripts/launch_full_entity_operators.py": "9adcbab28e16f8d9f0865dd96604ff5b36d82930bc920cdd3cff9807e387d311",
+    "scripts/prepare_full_entity_operators.py": "932541dbec9a9882fa8d0fd2a5825559f6b21999258fe3d5c2ad3c07d8f39619",
+    "scripts/readback_full_entity_operators.py": "6199c4e01dc65483355cb456689bafef06db7473bfa405a5f20c19f19af38a03",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "metadata/full_entity_operator_bank_completed_20261002.json": "b98b87dc049f4eb6e4826b9f1060a96f6f8501901f71b78e9f499749432d327c",
+    "metadata/full_expanded_model_inputs_completed_20261002.json": "4557ec43f083cf852cb8bf664ce70e29d37ad282d096238c162cdd8c4bc08cb2",
+    "metadata/full_entity_operator_plan_20261002.json": "ca3d36ba2ef3e0a6b8571ebda8d2d3afceca83a0923e7ddf71e186f927b8031d",
+    "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6",
+    "metadata/full_uniform_covariance_qualification_validation_20261002_v3.json": "fd6ec55d17521538c441bc4577d629827a31fb76fa85d0673d6ff87b84983013",
+    "metadata/covariance_basis_context_validation_20261002_v2.json": "0c5299ac826678c30d17491b718f3cfabcaf8c29f03d84b824ae5a60ac4faf21",
+    "metadata/full_uniform_covariance_qualification_resources_20261002.json": "19fb24e08b7f68f5167a3048ab42385d869801c000c5fbade94907ec54f02f3f",
+    "environments/full-uniform-covariance-qualification-20261002.yml": "a4f154c6cd4917258cfe0f6cde5c56bbfba328c13ddfc62d7fc3a9ae7cb4dcda",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/check_covariance_basis_audit.py": "2db1b5f86766f6777cf35485413c19c3f73d1907985af53452001d1462e77f8d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/check_covariance_basis_context.py": "46f95d03a7b70b7a11f18a89e1d9d700a907301bf59d002c737f2785a58d330e",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "scripts/prepare_full_covariance_qualification.py": "f2443726c3b1ca2558014e8297796738f49cccf3c1077669a4caf90278cda5dc",
+    "scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "scripts/check_full_covariance_qualification.py": "58d21b57502c37b2eb5299914613a393befb0da91fa35059fc163b49ff0ee399",
+    "scripts/launch_full_covariance_qualification.py": "79496e68d99245bfcd21e01861bb0743b82a014a2d9c3288fc08aed717c3260c",
+    "metadata/full_shared_entity_fit_draft_plan_20261002_v2.json": "9748fa03db51aacb30f5f14f03e4936ad1e524a5fd1f6ff32978fd0c25a33f95",
+    "scripts/full_shared_entity_fit_sources.py": "e4110acadef870b9c7b095e263c6bb3ed3a4f0ebaa98e306c03036ba73d5b215",
+    "scripts/prepare_full_shared_entity_fits.py": "6589766e2515d2ccce447f56b61db93df220aca38630754f2fbffedb15358a63",
+    "scripts/readback_full_shared_entity_fits.py": "db7fbd49bf5ad1a382ef8daebbb7943a17acf8fdd56488b146d668b6e8c06426",
+    "scripts/check_full_shared_entity_fits.py": "640a15d2cfb714d6adf36d7138ed7bfd606b31bd23fbc4cab634a3db4cb3ae38",
+    "scripts/independent_shared_entity_optimizer.py": "0d5d98a9e69059a7b08d60e91372048e3a02ca58214330cd32513311f95652ff",
+    "scripts/check_independent_shared_entity_optimizer.py": "9c5df2359819754a3bd2ec10013284973cac689aa6158c31e2f53788f4f2dfd2",
+    "scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "environments/shared-entity-likelihood-20261002.yml": "9c228cb03ddc785c8690d1edd08c65b4c9a9d16ed8640cbdcf993c0d8f7f5d5f",
+    "metadata/full_shared_entity_fit_contract_validation_20261002_v3.json": "4b46da5c3952afc6190d1de612235a67b7af242f6ac2dfa68e937ac4a12c795b",
+    "metadata/independent_shared_entity_optimizer_validation_20261002.json": "05e587f08970873e7d3eb29e6d0d40c8fb74ce91d003032e39f3edd5423802e8",
+    "metadata/independent_shared_entity_likelihood_validation_20261002_v5.json": "0dd28b948cbe796ef81786ff7000310c3a7d657055b59dcd6c48a530f6ebd1ee",
+    "metadata/shared_entity_likelihood_validation_20261002_v3.json": "635b2e19777ed35d82ad94a678efb610bea14f45b7e78eb1af9bcdf5aca0a0d1",
+    "metadata/shared_entity_optimizer_validation_20261002_v2.json": "1ebb36de2750732abb8b52a0bf817cea6425f99cae8d66f2cf819aa571172918",
+    "metadata/full_shared_entity_fit_resource_inventory_20261002_v4.json": "f45a5032fc9d53223062b331fee769a9a2a6af52b43daabd9294cae526a58c7b",
+    "environments/full-shared-entity-fits-20261002.yml": "6b4ae1ff8cff7e891388a56c4f2b06aefc36b48d0ba4d8a322f7cf8800ec6c88",
+    "scripts/independent_shared_entity_likelihood_fast.py": "af30887cf38d0a4a0941e77ed12c65b6d65f00aec3f883fc644d5417262158b3",
+    "scripts/check_component_spectral_likelihood.py": "00957f20ebbe785ed31ac80010a7caa6b73a640fce181ce17265bcf233970c0a",
+    "scripts/readback_full_shared_entity_fits_v2.py": "3f514a9213306007ab9e45ef27fe18280854ba8ceddea4298e69758e94b92aa6",
+    "scripts/check_full_shared_entity_fits_v2.py": "2515d5a126b64ee0933f7866c29ba93c1d1a5d3f846a69e08592e99ee8da0bf3",
+    "scripts/prepare_full_shared_entity_fit_resources_v2.py": "dbd4415ae506dc33b05c5e4b0f1a191f379c1e833afa7444118739dc0764def1",
+    "metadata/full_shared_entity_fit_contract_validation_20261002_v4.json": "03659f284495385063969e2302e97f9eca9b244c48dce4577e26f4f5ec879800",
+    "metadata/component_spectral_likelihood_validation_20261002.json": "d0f0a80eb92f3bd1b69113dc0bbb316cb16d60826ffb3eded2baa7be115621fd",
+    "metadata/full_shared_entity_fit_resource_inventory_20261002_v5.json": "e8b37b409db621d2f39d39a65196b6caf7964e36e8d774cfbadd2aa935052a45",
+    "metadata/full_shared_entity_fit_draft_plan_20261002.json": "f9d6984831bc91a514d803a5897d35e9684e8b2e5b915d38825ad62cb813ff44",
+    "metadata/full_shared_entity_timing_plan_20261002.json": "78493d1a97f4d8de76747dc16bc6643970ad1c173610216fdb80828f7c0c2ec4",
+    "scripts/full_shared_entity_timing.py": "68a8f1658a8c36892773afcbaab63319ce265f3c5543963a2113ef5a58f80019",
+    "scripts/prepare_full_shared_entity_timing.py": "7fd03ee2f8bb462a8be434f8560b6467ef0568dee1b9a16b83ef1cc26404aa4f",
+    "scripts/readback_full_shared_entity_timing.py": "9dca28bb806a52aed47611d079603cdd5e4e14fc9646ca6663b9e318fbe45b31",
+    "scripts/check_full_shared_entity_timing.py": "d325e30193dd2739f28550e69efb0b061dacc4a182599b5dca07b33f455ef5e4",
+    "scripts/launch_full_shared_entity_timing.py": "f567b7f1702b7970f1e4d7743e3eacc59eaac8cf35100f050077e18761fc467f",
+    "metadata/full_shared_entity_timing_validation_20261002.json": "7d2583c2e7cf4620c3d7511710b65e44c26d1a3038eeb26b2a8f6c6b4fa9aeee",
+    "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json": "32dbf99c1c8b107ca93d9628186f1428aa4a0b86a3ffed3e317448e4dec72c20",
+    "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json": "c6620ca76253c13bb86194a58ecb716b937ad95002a8cc9b7371889f2188f6e5",
+    "scripts/baliphy_recovery_diagnostic_sources.py": "0d513c86fee7341a998ef815189781caaf4a8f99ca5b39b789d9cc0c077335ea",
+    "scripts/prepare_baliphy_recovery_diagnostics_20261002.py": "9cf55a6bdade55be776652a0ea62276743ba5e6670a9cf580dbc51f27bab083e",
+    "scripts/readback_baliphy_recovery_diagnostics_20261002.py": "eabc1a66abecaa809416606609121ac1b37f40826c32379fdc3f1aa2fc08ebb8",
+    "scripts/check_baliphy_recovery_diagnostics_20261002.py": "ab3f456fcef0922e1a80ce93b2755c487b605dc3f239e83fbd5a0a3737ad0299",
+    "scripts/launch_baliphy_recovery_diagnostics_20261002.py": "86faab3892949d57cfc1c8cab78e943d28b8859729289cdf86c8bd985371ce9a",
+    "scripts/audit_baliphy_memory_recovery_20261002_v2.py": "6d6049e9a50f6aaf5ccb844a5bfc38f643353aaccce8adf826cfde814930f1ca",
+    "scripts/prepare_ancestral_state_traces.py": "084cf24b384c3066ee292c87e763142239fb27dcbdb53986a2d1e861b52ec34a",
+    "scripts/ancestral_residue_anchors.py": "cc8c41b12fe946563c0e07b0ef78db65b8978ffbf0919e7afe05011ea615faee",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/prepare_ancestral_length_diagnostics.py": "4b59339fd35e7ddc477cac30623b1f4dcd28ede7e100562ee26cf16e96545450",
+    "scripts/read_ancestral_state_quartet.py": "f4700173d4a53643b7ceeab9336f291f58b5c688e4e5d21bfcbfe88569a31e95",
+    "scripts/report_ancestral_state_quartet.py": "1adca6baca6a2245a6cd293cbac0b9f171dd1c4255dbf360cb2f69d812a5f742",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+    "scripts/ancestral_categorical_diagnostics.py": "52ab9326030033d88d98c867b61cb8d2e5f98a19ac680f0e21506a5e29f6d6f6",
+    "scripts/ancestral_state_patterns.py": "bb626a3b1bccf857ec13ae1fce6637603204273cac8104d91df1bd1745358571",
+    "metadata/baliphy_recovery_diagnostic_validation_20261002.json": "725c0462701d519a75fb6963fa309e6fbf8774f0cf8c7394e332f99b179c90af",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_memory_recovery_plan_20261002.json": "40de274efb0f557f9da0610e3c6290bc0224618d14a1504694cfdb224efeb224",
+    "metadata/baliphy_memory_recovery_accounting_v2_launch_20261002.json": "4a16d8af9a9899fed5547f746666a09b78caa6f83178975c5812daf6b1e18be7",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "metadata/baliphy_full_postprocessing_completed_20261002_v2.json": "168dad6c070ac4548bd72c7c874600ee6e31b1beba602681a449ce484f6edf88",
+    "results/ancestral/baliphy-memory-recovery-accounting-20261002-v2/completion_archive.json": "9a3ca8a78262f2e3c8ede11d9f0f69ab46cbf34805ffa888009d104b4fbf3214",
+    "results/ancestral/full-postprocessing-accounting-20261002-v2/completion_archive.json": "281d48f0203248177f6c275257c58836b1e9826f003c7798d39c7e7e46fb66a9",
+    "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json": "3e2b8e8e957c4b4a79da506636b766b38887a2d3ea356585d2e815a7f91593b8",
+    "metadata/baliphy_full_anchored_states_plan_20260928_v2.json": "201c0a5e453d0702e616867fa55f2be35a0521996822c61830daf8f769c5ba8e",
+    "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json": "dd56e19c77ef0945b474814841b89b6f3bb96eb0c624a2086fed7abe8ae83bb9",
+    "metadata/ancestral_categorical_queue_plan_20260928.json": "1f98afd7d148d963423efe3723d9415efc4794bcc9c582ea1ef9cd52d88317c7",
+    "environments/ancestral-diagnostics-20260927.lock.txt": "a0e88f2344b17e1eb9a04ceef006b44926b11c67a7fe814856bce66815e0740f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/SOFTWARE/ancestral-diagnostics-20260927/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json": "49de3f8ae01174f300c9ca2f136fbe23a0f6078fb384cc935a7c2ca37ea164d8",
+    "metadata/baliphy_full_recovered_horizon_diagnostic_publication_plan_20261002.json": "826b56e7f946c7847ceef32c3a0be1a007bf0270fbc208e97557ea399d078855",
+    "scripts/publish_baliphy_recovered_diagnostics_20261002.py": "1583433059fefe6858eb53783e4e75692e4a8deb3828b04f16618880d89f532a",
+    "scripts/launch_baliphy_recovered_diagnostics_20261002.py": "c3cbc9bf7beb6a06b40d87b04d5dae00280ff92fbe966a74a95b89f5bb94ac6c",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591"
+  },
+  "original_handles": [
+    {
+      "launch": "metadata/full_expanded_model_designs_v2_launch_20261002.json",
+      "pid": 2451729,
+      "created": 1790971820.88,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "5973f43a620193d0950c411542ffee55248a3e90746e66655c5408e18f79516c",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "7e9c56000810ecdf11dce6d86c5b6a172bfff94f96478e16a90fd42a4c691b0f",
+      "captured_process_messages": 152,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790979135991169",
+          "CPU_USAGE_NSEC": "2190363111000",
+          "MEMORY_PEAK": "8679424",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_designs_v2_readback_launch_20261002.json",
+      "pid": 2451757,
+      "created": 1790971820.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "ff4bf58854a0d4e9bed85a53f1f3f5300f0696afe73eb59b59a2cc70eb6ef003",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ed3261ef82321fc1951997cc3e001d758b4f0ae22d6f92b4d504ffb58056e0b7",
+      "captured_process_messages": 245,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790987440277235",
+          "CPU_USAGE_NSEC": "7599841544000",
+          "MEMORY_PEAK": "2772992",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json",
+      "pid": 2451777,
+      "created": 1790971820.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "b6b902e20096dad903bc6b0ae5f1bbaa9977930f11b35619e8637d71f89ad7b0",
+      "captured_process_messages": 522,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989152879329",
+          "CPU_USAGE_NSEC": "1043465663000",
+          "MEMORY_PEAK": "3014656",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-20261002-v1.service",
+      "pid": 2522914,
+      "created": 1790978401.08,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json",
+      "plan_sha256": "7af1a2a0389bfa1a8cebb02eefb9ea2c837ec0703be0e2cbb6156ff1fbca6193",
+      "checked_utc": "2026-10-02T22:00:01.803308+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.42,
+      "children": [
+        {
+          "pid": 2636177,
+          "created": 1790989181.92,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_full_covariance_qualification.py",
+            "--plan",
+            "metadata/full_uniform_covariance_qualification_plan_20261002.json"
+          ],
+          "status": "disk-sleep",
+          "cpu_seconds_at_observation": 51284.600000000006
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+      "pid": 2522932,
+      "created": 1790978401.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json",
+      "plan_sha256": "4362c5f17f82f572686daadadeb62e8e2f7838342ae9a107474f6b1ef772b861",
+      "checked_utc": "2026-10-02T22:00:01.848746+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 1.9900000000000002,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "665eae1a9470de314bf2415cb316f5946e6c91614f57fb16eb7b82590a287c69",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-closure-20261002-v1.service",
+      "pid": 2522940,
+      "created": 1790978401.16,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json",
+      "plan_sha256": "d3ad50aad959419924f3c9b91dcca58cc37af73a10b8bd336fe72b14189daa00",
+      "checked_utc": "2026-10-02T22:00:01.879176+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 3.12,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "32dbf99c1c8b107ca93d9628186f1428aa4a0b86a3ffed3e317448e4dec72c20",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-full-shared-entity-timing-20261002-v1.service",
+      "pid": 2617556,
+      "created": 1790987392.64,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_shared_entity_timing_wait_plan_20261002.json",
+      "plan_sha256": "4716d57622f83931f5065e936b2b27a8dfc394b10031a56dda971072618e998a",
+      "checked_utc": "2026-10-03T00:29:53.371195+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-shared-entity-timing-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_shared_entity_timing_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 1.68,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "3e5d1ace8d71b02dd02b3eb87d1e96cfa2cd7750937c4053bf6a78a173dc0905",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-full-shared-entity-timing-readback-20261002-v1.service",
+      "pid": 2617560,
+      "created": 1790987392.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_shared_entity_timing_readback_wait_plan_20261002.json",
+      "plan_sha256": "1d78a936128f7acca91e7d2d7f3d6b520f3dfe15ea4c54dc65948868faef9396",
+      "checked_utc": "2026-10-03T00:29:53.401523+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-shared-entity-timing-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_shared_entity_timing_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 1.7399999999999998,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "f2a22ca23243fb2ef4c43d97b1fafd6fa261d11409020d97830247df8b1e4f4b",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-full-shared-entity-timing-closure-20261002-v1.service",
+      "pid": 2617564,
+      "created": 1790987392.71,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_shared_entity_timing_closure_wait_plan_20261002.json",
+      "plan_sha256": "7a820259fe252fdd1e6a5e706939f3fc7af2a9d16013d71d0904c4a91b1ced15",
+      "checked_utc": "2026-10-03T00:29:53.432817+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-shared-entity-timing-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_shared_entity_timing_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_shared_entity_timing_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 2.62,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "5198582bb86fcb957b01ebb91d79ef8b4c0bf70fde4fde007e1ab59834a6588e",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json",
+      "pid": 2604849,
+      "created": 1790986072.38,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "9c6c9e01daf49a32b6b233acd318fe34c4f0413e04effde3879a1f8ff8bf77c5",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5cef64d07291fc8c9837d7c3596c204c6b16413775de8c80512c4d3dd20e2391",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790986483222914",
+          "CPU_USAGE_NSEC": "377285857000",
+          "MEMORY_PEAK": "3764224",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json",
+      "pid": 2604853,
+      "created": 1790986072.43,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "d0d318ec8e5178032fe2690e1783fa403411b108220dd20e877a43c411eeaccb",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "6bf8aa34e8d99ecd3225bf540bc37eda650feba55f5dbf9d0c55d512e84d1edb",
+      "captured_process_messages": 15,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790986704888396",
+          "CPU_USAGE_NSEC": "191203586000",
+          "MEMORY_PEAK": "2883584",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json",
+      "pid": 2604858,
+      "created": 1790986072.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "a76ef8d824fe67fe5764835b3c2c830eac36fd3808508463f607485f3273bf8f",
+      "captured_process_messages": 23,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790986993376019",
+          "CPU_USAGE_NSEC": "239981925000",
+          "MEMORY_PEAK": "2809856",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json",
+      "pid": 2622949,
+      "created": 1790987955.15,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovered_diagnostics_publication_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "d33ef1c697ca71f552639c2e8793289ec03401af62b45b89f12e72c2c8955593",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790988059856009",
+          "CPU_USAGE_NSEC": "92739472000",
+          "MEMORY_PEAK": "3260416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_recovered_diagnostics_publication_closure_launch_20261002.json",
+      "pid": 2626860,
+      "created": 1790988221.27,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovered_diagnostics_publication_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "225dc694a6b8c8b4cc3bc20d410f03cd1ee1ad2497c2d71565c542a6beb9ebc8",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "f33ab21bf1448cf9c720f157d6e65a916760a9b65dacd412635300efa266bf16",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790988305606198",
+          "CPU_USAGE_NSEC": "76499140000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "stage_observations": {
+    "design": {
+      "path": "metadata/full_expanded_model_designs_v2_completed_20261002.json",
+      "sha256": "1868d3980404105e8a8aaab87fd6a7c5f6a112e1bb2b0c55a1b5de7e160ce54e",
+      "accounting_closure_present": true,
+      "status": "complete_verified_full_expanded_model_designs",
+      "full_hash_archive": "results/phylogeny/full-expanded-model-designs-20261002-v2/completion_archive.json",
+      "full_hash_archive_sha256": "78e310d556316310b5ec9702434a33a8bc874892e5d8c93c98e686a9f2fd51f3",
+      "reported_full_source_bindings": 2374229,
+      "reported_original_process_journals": 2
+    },
+    "qualification": {
+      "path": "metadata/full_uniform_covariance_qualification_completed_20261002.json",
+      "accounting_closure_present": false
+    },
+    "timing": {
+      "path": "metadata/full_shared_entity_timing_completed_20261002.json",
+      "accounting_closure_present": false
+    },
+    "recovery_diagnostics": {
+      "path": "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json",
+      "sha256": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+      "accounting_closure_present": true,
+      "status": "complete_verified_full_baliphy_recovery_diagnostics",
+      "full_hash_archive": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/completion_archive.json",
+      "full_hash_archive_sha256": "b2d5a44d97697283d02ae26e2cd122f6e0693c61e4bbeee9eb412aa9c82d0b96",
+      "reported_full_source_bindings": 50019,
+      "reported_original_process_journals": 2
+    },
+    "recovered_publication": {
+      "path": "metadata/baliphy_full_recovered_horizon_diagnostic_publication_completed_20261002.json",
+      "sha256": "aa9883e1d585fa62ee80a16a5d293e30f4a654f23f0f3af24f0ca2d83a363472",
+      "accounting_closure_present": true,
+      "status": "complete_verified_full_recovered_horizon_diagnostic_publication",
+      "full_hash_archive": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/publication_completion_archive.json",
+      "full_hash_archive_sha256": "10d839376335191ee085a046d9f9f01dbee3172cb459fea8d003bcb5c20a0049",
+      "reported_full_source_bindings": 50032,
+      "reported_original_process_journals": 3
+    }
+  },
+  "live_original_handles": 6,
+  "original_terminal_success_journals": 8,
+  "production_fitting_launched": false,
+  "gpu_inference_paused": true,
+  "all_eight_aims_incomplete": true,
+  "scope": "Small pinned plan/backend sources and compact archive hashes rechecked; every captured original PID/create/command, current live cgroup or actual invocation-linked terminal resource journal observed. Full multi-million-binding scientific archives are not rehashed by this observer, and a missing compact closure is not a process failure. No queue/source mutation, restart, GPU prediction or inferential acceptance."
+}

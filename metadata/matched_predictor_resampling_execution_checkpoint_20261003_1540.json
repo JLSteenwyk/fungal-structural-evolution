@@ -1,0 +1,301 @@
+{
+  "status": "verified_original_full_matched_predictor_resampling_runtime",
+  "checked_utc": "2026-10-03T15:38:50.486375+00:00",
+  "plan_sha256": "9060119ba4a2a9d9bf55da30938226cbc21b19797190af2862a14dbabe7842f6",
+  "frozen_pins_checked": 17047,
+  "original_handles": [
+    {
+      "unit": "fungal-matched-predictor-resampling-20261003-v1.service",
+      "pid": 3169373,
+      "created": 1791041798.99,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/matched_predictor_resampling_wait_plan_20261003.json",
+      "plan_sha256": "6d66ef613d43162b177f8fa13510fc71fc14ffa3cab2a8dfc1f39dfd743d94c3",
+      "checked_utc": "2026-10-03T15:36:39.732638+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "800000 100000",
+        "memory.max": "25769803776",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-matched-predictor-resampling-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=800%",
+        "--property=MemoryMax=24G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/matched_predictor_resampling_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [
+        {
+          "pid": 3169380,
+          "created": 1791041799.09,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_matched_predictor_resampling.py",
+            "--plan",
+            "metadata/matched_predictor_resampling_plan_20261003_v1.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 299.52
+        }
+      ],
+      "children_unavailable_during_observation": [
+        {
+          "pid": 3171673,
+          "error_type": "ZombieProcess",
+          "scope": "Ephemeral child disappeared during observation; not a parent-job failure."
+        }
+      ],
+      "launch_sha256": "967b6ccf7eed8680f7bde22dd7ba911f107f506107e0ce830d7442970dd903ac",
+      "current_cgroup_limits": {
+        "cpu.max": "800000 100000",
+        "memory.max": "25769803776",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-matched-predictor-resampling-readback-20261003-v1.service",
+      "pid": 3169377,
+      "created": 1791041799.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/matched_predictor_resampling_readback_wait_plan_20261003.json",
+      "plan_sha256": "7141782baaa7cf21e161c84278cfb1a21dc71306d463bd41d2656571733d8e88",
+      "checked_utc": "2026-10-03T15:36:39.790642+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-matched-predictor-resampling-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/matched_predictor_resampling_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "a4f53b676a17ce277385e7d0541fdb371e6ff83722c39ed1d708c62ff06c45ab",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-matched-predictor-resampling-closure-20261003-v1.service",
+      "pid": 3169382,
+      "created": 1791041799.11,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/matched_predictor_resampling_closure_wait_plan_20261003.json",
+      "plan_sha256": "c9782630def4a395532d4f02b98d0b04ffc5deaa18a95f715a1f878a23cd54e4",
+      "checked_utc": "2026-10-03T15:36:39.825395+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-matched-predictor-resampling-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_resampling_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/matched_predictor_resampling_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "d86a45b00645ca2d4d612110d48cec945705accc948e9238f683dc00e35d0cf1",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "current_native_workers": [],
+  "recent_original_producer_journal": [
+    {
+      "MESSAGE": "matched_predictor_resample 69 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 68 complete True",
+      "__REALTIME_TIMESTAMP": "1791041891182164"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 70 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 66 complete True",
+      "__REALTIME_TIMESTAMP": "1791041891186329"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 71 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 69 complete True",
+      "__REALTIME_TIMESTAMP": "1791041891196434"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 72 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 71 complete True",
+      "__REALTIME_TIMESTAMP": "1791041891822940"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 73 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 72 complete True",
+      "__REALTIME_TIMESTAMP": "1791041899172370"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 74 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 73 complete True",
+      "__REALTIME_TIMESTAMP": "1791041899233305"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 75 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 77 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900185389"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 76 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 76 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900370171"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 77 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 75 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900515765"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 78 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 74 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900594491"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 79 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 78 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900675495"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 80 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 79 complete True",
+      "__REALTIME_TIMESTAMP": "1791041900683993"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 81 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 80 complete True",
+      "__REALTIME_TIMESTAMP": "1791041909294256"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 82 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 81 complete True",
+      "__REALTIME_TIMESTAMP": "1791041909470961"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 83 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 82 complete True",
+      "__REALTIME_TIMESTAMP": "1791041910239895"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 84 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 83 complete True",
+      "__REALTIME_TIMESTAMP": "1791041910318657"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 85 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 84 complete True",
+      "__REALTIME_TIMESTAMP": "1791041910654889"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 86 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 85 complete True",
+      "__REALTIME_TIMESTAMP": "1791041910682221"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 87 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 87 complete True",
+      "__REALTIME_TIMESTAMP": "1791041910945796"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 88 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 86 complete True",
+      "__REALTIME_TIMESTAMP": "1791041911113754"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 89 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 88 complete True",
+      "__REALTIME_TIMESTAMP": "1791041919362276"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 90 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 89 complete True",
+      "__REALTIME_TIMESTAMP": "1791041919747192"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 91 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 90 complete True",
+      "__REALTIME_TIMESTAMP": "1791041920344767"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 92 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 91 complete True",
+      "__REALTIME_TIMESTAMP": "1791041920431928"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 93 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 92 complete True",
+      "__REALTIME_TIMESTAMP": "1791041920810330"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 94 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 93 complete True",
+      "__REALTIME_TIMESTAMP": "1791041920826394"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 95 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 94 complete True",
+      "__REALTIME_TIMESTAMP": "1791041921280393"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 96 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 95 complete True",
+      "__REALTIME_TIMESTAMP": "1791041921441965"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 97 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 96 complete True",
+      "__REALTIME_TIMESTAMP": "1791041929900792"
+    },
+    {
+      "MESSAGE": "matched_predictor_resample 98 / 53200 003d6ee9f0c327460a6b7d0f55bd802a6502f69feedd4d2f7cf8d01bf864d440 iid_sites 97 complete True",
+      "__REALTIME_TIMESTAMP": "1791041930228690"
+    }
+  ],
+  "expected_resampling_cases": 53200,
+  "expected_native_roles": 372400,
+  "accounting_closure": null,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Exact original PID/create/command, current cgroup and sampled native process limits verified. Recent original producer messages are unclosed progress, not complete archive/native readback. A native worker exiting during observation is omitted, never treated as failed or restarted. No process/source changes or GPU use."
+}

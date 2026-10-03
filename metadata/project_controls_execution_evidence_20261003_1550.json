@@ -1,0 +1,37 @@
+{
+  "status": "verified_original_control_diagnostic_waits_exited_zero",
+  "checked_utc": "2026-10-03T15:56:33.681695+00:00",
+  "executions": [
+    {
+      "stage": "covariance_diagnostic",
+      "unit": "fungal-covariance-basis-diagnostic-20261003-v1.service",
+      "invocation_id": "f6badd6553224a0ea0179c19d86d7da6",
+      "actual_tool_session_id": 29975,
+      "actual_tool_terminal_exit_code": 0,
+      "requested_cpu_quota": 2,
+      "requested_memory_gib": 8,
+      "requested_cgroup_swap_bytes": 0,
+      "requested_wall_seconds": 180
+    },
+    {
+      "stage": "partial_resampling_readback",
+      "unit": "fungal-resampling-available-readback-20261003-v1.service",
+      "invocation_id": "44a97f625e4f438fb1725b5a2325ca89",
+      "actual_tool_session_id": 46313,
+      "actual_tool_terminal_exit_code": 0,
+      "requested_cpu_quota": 2,
+      "requested_memory_gib": 16,
+      "requested_cgroup_swap_bytes": 0,
+      "requested_wall_seconds": 180
+    }
+  ],
+  "source_hashes": {
+    "data/software_audits/project-controls-execution-evidence-20261003-1550/covariance_diagnostic.journal.jsonl": "2db155c75608c3c28c8ed35c58db65f35c226812c29aaecc87795ad7a8b972b9",
+    "scripts/diagnose_covariance_basis_dependencies.py": "b413507eaa636045a68f65debd6d2b49783949afba13f31dba407422d7c7e8da",
+    "metadata/full_covariance_first_cohort_dependency_diagnostic_20261003_v1.json": "6e8a1e5be3ecb7f5e9cb8e7c6c0d140f220e382c21eca65ac1b10390016fcfd1",
+    "data/software_audits/project-controls-execution-evidence-20261003-1550/partial_resampling_readback.journal.jsonl": "6c8332da25e6843d3ae8f1efea1fadd3dd4ce585134ea7e6dedb2fe28192dd38",
+    "scripts/readback_available_matched_predictor_resampling.py": "34467e87df359e46e62f76af7913649b2510413887a065adc3e6decfd7539247",
+    "metadata/matched_predictor_resampling_partial_readback_20261003_v1.json": "30dd5f52490531e47810a668b26231ccdfdceb50734c29c7b30923d572bd456c"
+  },
+  "scope": "Actual original wait return codes and invocation-specific manager journals retained. Requested service caps are distinguished from sampled native worker limits; manager memory peaks are not process RSS. These are bounded covariance diagnosis and partial production resampling replay, not full-grid closure or scientific acceptance."
+}

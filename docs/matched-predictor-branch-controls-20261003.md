@@ -145,6 +145,13 @@ pinned in the production plan.
 
 ## Remaining scientific work
 
+The [full paired site/block resampling workflow](matched-predictor-paired-resampling-20261003.md)
+is now running: all 133 ready inputs, 53,200 draws and 372,400 native roles.
+Complete software qualification and an explicitly partial production
+readback passed. Full native/readback/closure and interval calibration remain
+pending; fixed alignments, predictions and topologies remain conditioning
+inputs. This complements, rather than completes, the uncertainty requirements.
+
 Prediction source and near-zero branch behavior require uncertainty/model
 controls before interpreting acceleration. Joint alignment/site resampling,
 boundary-aware calibration, direct coordinate/experimental benchmarks and
@@ -155,5 +162,5 @@ or annotation effects, establish orthology, or reconstruct ancestral changes.
 Broad-lineage sequence–structure models, acceleration tests, domain events,
 duplication/ecology/functional-site/selection analyses, adequate ancestral
 uncertainty and the remaining structural atlas are unfinished. The full
-corrected ancestral startup and covariance qualification continue separately.
+corrected ancestral sampler and covariance qualification continue separately.
 All eight biological aims remain incomplete.

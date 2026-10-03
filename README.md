@@ -25,6 +25,15 @@ small-branch sensitivity checks. Figures and all-view/all-marker tables are
 published; uncertainty, model adequacy and accepted evolutionary effects
 remain unqualified.
 
+The [paired site/block uncertainty control](docs/matched-predictor-paired-resampling-20261003.md)
+is now running over all 133 ready inputs: 53,200 draws and 372,400 native fits.
+Each draw matches columns across AA and both predictors and retains every
+failure. Software qualification passed the complete draw grid; early
+production readback passed 42 native roles across both modes. Eight CPU
+workers/24 GiB/no swap run separately from the paused GPU predictions.
+Full resampling readback, provenance closure and calibrated uncertainty
+remain pending.
+
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
 projection entries across all 70 closed tree views. All 125 marker slots, both
@@ -219,6 +228,14 @@ parameterizations; other dependencies remain review states. Reusable kernels
 passed 48 dense/latent comparisons, and full contracts rejected 17 altered
 exports with complete interruption replay. Production qualification, weighting,
 variance optimization and calibrated inference remain pending.
+
+The full producer has generated all 1,302,000 audits and 6,220,800 setting
+links, reporting every basis as requiring review. Full independent readback
+and closure remain pending. A bounded diagnostic of all 300 audits in the
+first cohort confirms three covariance dependencies within recorded numerical
+bounds. A reduced basis needs complete operator, variance-cone and design
+qualification before production fitting; original audits and jobs remain
+unchanged. [Dependency evidence and proposed next steps](docs/full-covariance-dependency-review-20261003.md).
 
 The [shared-entity likelihood/optimizer backend](docs/shared-entity-likelihood-20261002.md)
 now has analytic ML/REML gradients and explicit nonnegative-boundary checks.

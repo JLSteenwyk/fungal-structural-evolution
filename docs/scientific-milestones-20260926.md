@@ -1363,3 +1363,21 @@ those aims, accept a phylogenetic/orthology model, infer physical displacement
 or establish calibrated acceleration/coupling/selection. All eight aims and
 ancestral posterior adequacy remain incomplete.
 [Complete methods, figures and prerequisites](matched-predictor-branch-controls-20261003.md).
+
+### October 3: full paired uncertainty execution and covariance diagnosis
+
+All 53,200 paired site/block draws passed software qualification; all 372,400
+ native roles are launched through the full input grid. Early partial
+ production replay passed 42 roles across both modes. Full native/readback/
+ provenance completion and calibrated uncertainty remain pending. This
+ control retains all 125 marker slots/70 views upstream, and its usable
+ overlap remains 21 fungal taxa/71 markers. It does not replace broad sampling.
+ [Method and evidence](matched-predictor-paired-resampling-20261003.md).
+
+All 1,302,000 uniform covariance producer audits require review. Additional
+ dependencies are diagnosed in the first full cohort; exact complete-cohort
+ operator/cone proofs and reduced-basis qualification precede fitting.
+ Ancestral computational checks continue, without posterior acceptance.
+ All eight biological aims and the full requested atlas/framework/deliverables
+ remain incomplete; the project goal stays active.
+ [Covariance next steps](full-covariance-dependency-review-20261003.md).

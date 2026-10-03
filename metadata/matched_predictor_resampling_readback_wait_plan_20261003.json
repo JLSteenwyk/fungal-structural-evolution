@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/matched_predictor_resampling_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_matched_predictor_resampling.py",
+    "--plan",
+    "metadata/matched_predictor_resampling_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_resampling_plan_20261003_v1.json": "9060119ba4a2a9d9bf55da30938226cbc21b19797190af2862a14dbabe7842f6",
+    "metadata/matched_predictor_resampling_launch_20261003.json": "967b6ccf7eed8680f7bde22dd7ba911f107f506107e0ce830d7442970dd903ac",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

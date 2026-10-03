@@ -12486,3 +12486,41 @@ and figure review remain next.
   historical allocation failures, posterior adequacy and all eight aims remain
   unresolved. [Current replay](../metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json)
   and [execution evidence](../metadata/baliphy_current_error_recheck_execution_20261003_1520.json).
+
+- October 3, 15:50 UTC: implemented, qualified and launched the full paired
+  site/block uncertainty control for all 133 usable predictor input. All
+  53,200 draw identities and paired indices passed independent software
+  serialization; fourteen successful synthetic fits plus seven CPU-zero failure
+  fits checked lossless archives, native tree/report readback and failed
+  retention. Sixteen malformed contracts were rejected. The original full
+  producer/reader/closure use eight-CPU/24-GiB and two-CPU/16-GiB/no-swap caps;
+  all frozen source/input/model hashes and original handles were observed.
+  At 15:50 UTC, 575 completed case receipts were available; six cases/42 native
+  roles across both modes and two inputs passed independent partial production
+  replay. A sampled live worker retained actual 2-GiB/300 CPU-second/8-MiB file
+  limits. Full53,200-case numerical/provenance closure remains pending.
+  [Method, resources and limits](matched-predictor-paired-resampling-20261003.md).
+
+  The preceding goal turn was progress: full matched inputs/native point fits
+  and publication changed authoritative state. The intervening error-check
+  turn also provided new native/saved-output evidence and published it. The
+  current turn moves required branch uncertainty forward, preserving the full
+ 500-fungus/25-outgroup objective and all eight unfinished aims.
+
+  The full covariance producer has finished, reporting all 1,302,000 bases and
+ 6,220,800 links as requiring review; full independent readback/closure remains
+ pending. All 300 first-cohort audits support three dependencies within recorded
+ numerical bounds; four composite terms look promising only in that cohort.
+ Exact all-cohort identities, preservation of the nonnegative variance cone,
+ full raw/REML qualification and nonuniform controls are prerequisites to
+ fitting. The original joint ancestral sampler had 112 successful unclosed
+ checkpoints at 15:38 UTC; full completion and posterior adequacy remain pending.
+ No old jobs restarted, GPU prediction resumed or charges incurred.
+ [Dependency review](full-covariance-dependency-review-20261003.md).
+
+  At 15:58 UTC the exact original resampling controller reported 918/53,200
+  completed cases; all three controllers and 17,047 frozen pins were checked.
+  The ancestral sampler had 192 successful unclosed checkpoints. Covariance
+  full readback/closure and production fitting remain pending.
+  [Current resampling runtime](../metadata/matched_predictor_resampling_execution_checkpoint_20261003_1555.json)
+  and [ancestral runtime](../metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_1555.json).

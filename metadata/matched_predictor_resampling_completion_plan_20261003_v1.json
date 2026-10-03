@@ -1,0 +1,35 @@
+{
+  "source_plan": "metadata/matched_predictor_resampling_plan_20261003_v1.json",
+  "producer_receipt": "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/receipt.json",
+  "independent_readback": "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/readback.json",
+  "producer_status": "complete_full_matched_predictor_paired_resampling_pending_independent_readback",
+  "reader_status": "passed_full_matched_predictor_paired_resampling_independent_readback",
+  "completed_status": "complete_verified_full_matched_predictor_paired_resampling",
+  "summary_fields": [
+    "original_comparison_cases",
+    "unique_inputs",
+    "replicates_per_mode",
+    "modes",
+    "resampling_cases",
+    "native_roles",
+    "native_status_counts",
+    "complete_cases",
+    "unresolved_cases",
+    "serialized_branch_value_slots",
+    "finite_branch_values",
+    "archived_native_files"
+  ],
+  "launches": [
+    "metadata/matched_predictor_resampling_launch_20261003.json",
+    "metadata/matched_predictor_resampling_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_resampling_plan_20261003_v1.json": "9060119ba4a2a9d9bf55da30938226cbc21b19797190af2862a14dbabe7842f6",
+    "metadata/matched_predictor_resampling_launch_20261003.json": "967b6ccf7eed8680f7bde22dd7ba911f107f506107e0ce830d7442970dd903ac",
+    "metadata/matched_predictor_resampling_readback_launch_20261003.json": "a4f53b676a17ce277385e7d0541fdb371e6ff83722c39ed1d708c62ff06c45ab",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/matched_predictor_resampling_completed_20261003_v1.json",
+  "scope": "Full paired predictor uncertainty control: every 133 ready fixed-topology input from the closed 8750-case/125-marker/70-view grid, with all 3780 insufficient comparisons preserved upstream. There are 71 markers and 21 fungal taxa in selected predictor overlap, not full fungal diversity. Two hundred iid-site and two hundred circular-ten-retained-column-block draws per input, using identical column indices for AA, AlphaFold and ESMFold states and all taxa; predictions, original taxon/missingness eligibility, tree topology and state models remain fixed. The 71 identical alignment/taxon/column draw groups share draws across alternative topologies. All 53200 cases and 372400 native roles are retained, including failed/invalid cases; no retry, new eligibility filter or successful-only interval acceptance. Independent full archive/tree/report/array readback and original producer/reader journal closure required. Branch lengths are state substitutions/site, not physical displacement or rates/year. Blocks use retained-column order and circular wrapping, not physical residue distance or guaranteed independent blocks. These are conditional uncertainty and sensitivity analyses, not predictive-source/model/orthology/framework acceptance, multiple-test calibration or any completed biological aim. No GPU prediction, costs or old job/source changes."
+}

@@ -1324,3 +1324,22 @@ benchmarks remain prerequisites for accepted evolutionary interpretation.
 GPU prediction, original ancestral/covariance jobs and their frozen sources
 remain unchanged; no paid infrastructure or automatic native retry.
 [Methods, complete scope, results and limits](matched-predictor-branch-controls-20261003.md).
+
+## October 3: paired uncertainty and identifiable covariance terms
+
+Run all 133 ready matched predictor inputs with 200 independent-site and 200
+ circular-ten-retained-column-block draws each. Share each draw across AA,
+ both predictor states and all taxa; share draws across identical alignment
+ groups under alternative trees. Retain original eligibility, all insufficient
+ cases and every failed/invalid native outcome. Lossless native archives and
+ independent full readback precede accepted uncertainty summaries. Fixed
+ prediction/topology uncertainty and broad fungal inference remain separate.
+ [Full workflow](matched-predictor-paired-resampling-20261003.md).
+
+The full uniform covariance producer reports every seven-term basis requires
+ review. First-cohort diagnostics support additional kernel dependencies.
+ Prove identities across every cohort and preserve the complete nonnegative
+ covariance cone before fitting composite terms; do not interpret separate
+ variance estimates for aliased components. No relaxation of original
+ numerical tolerances, source edits or early production-fit launch.
+ [Dependency review](full-covariance-dependency-review-20261003.md).

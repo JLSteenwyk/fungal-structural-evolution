@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3000",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_matched_predictor_resampling.py",
+    "--output",
+    "data/software_audits/matched-predictor-resampling-20261003-v1",
+    "--receipt",
+    "metadata/matched_predictor_resampling_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_matched_predictor_resampling_stage_v1.py": "f2a6c1710a9fdd24944bf314f43844119941fc58d1a473828b17da5bac7c73b5",
+    "metadata/matched_predictor_resampling_software_resources_20261003_v1.json": "6d7e9dc01c24f814d9834ff8e301f928dc3b61fafc3c2463dcbf51b1dd0d3a3f",
+    "scripts/check_matched_predictor_resampling.py": "4ba787372c126bdfe925b5565974adcea3905365a0c8b614eb47ff638287cf7a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "3e99ca9135984486931ef86e97f1de3b",
+  "wrapper": {
+    "pid": 3166302,
+    "created": 1791041506.95,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_matched_predictor_resampling_stage_v1.py",
+      "--resources",
+      "metadata/matched_predictor_resampling_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/matched_predictor_resampling_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/matched_predictor_resampling_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_matched_predictor_resampling.py",
+      "--output",
+      "data/software_audits/matched-predictor-resampling-20261003-v1",
+      "--receipt",
+      "metadata/matched_predictor_resampling_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-03T15:31:47.761127+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T15:32:13.131418+00:00",
+  "child": {
+    "pid": 3166303,
+    "created": 1791041507.06,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3000",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_matched_predictor_resampling.py",
+      "--output",
+      "data/software_audits/matched-predictor-resampling-20261003-v1",
+      "--receipt",
+      "metadata/matched_predictor_resampling_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 25.369859522907063,
+  "child_cpu_seconds": 22.606694,
+  "child_peak_rss_bytes": 305098752,
+  "receipt": "metadata/matched_predictor_resampling_software_validation_20261003_v1.json",
+  "receipt_sha256": "c0fa5ac83723b5716e23dd45f6094c5fd088207395d92f3d241c3a68563b8fbe",
+  "artifacts": {
+    "metadata/matched_predictor_resampling_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/matched_predictor_resampling_software_execution_20261003_v1/configuration.json": "d8289e10b3c143236fd1568a84307d558a09a04ffffd722741babcf820fb814e",
+    "metadata/matched_predictor_resampling_software_execution_20261003_v1/stdout.log": "6992bf931e76c90ef23efaed8e47ee1f3368ec99a418e75fc5dbc94f951dee52",
+    "metadata/matched_predictor_resampling_software_execution_20261003_v1/process.json": "d5baae55d80d4623a04c76c19ad0f4c9db8b3537befc847eadbbeaae5a593d0e"
+  },
+  "scope": "One original new CPU-only matched-predictor software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Twenty-one synthetic native IQTree software fits, including seven deliberately CPU-limited failures, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}

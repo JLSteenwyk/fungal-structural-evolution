@@ -1,0 +1,15 @@
+{
+  "status": "launched_full_matched_predictor_paired_resampling",
+  "source_plan": "metadata/matched_predictor_resampling_plan_20261003_v1.json",
+  "source_plan_sha256": "9060119ba4a2a9d9bf55da30938226cbc21b19797190af2862a14dbabe7842f6",
+  "launches": [
+    "metadata/matched_predictor_resampling_launch_20261003.json",
+    "metadata/matched_predictor_resampling_readback_launch_20261003.json",
+    "metadata/matched_predictor_resampling_closure_launch_20261003.json"
+  ],
+  "expected_cases": 53200,
+  "expected_native_roles": 372400,
+  "all_eight_aims_incomplete": true,
+  "gpu": false,
+  "new_cost_usd": 0
+}
