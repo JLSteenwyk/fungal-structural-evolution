@@ -1,0 +1,34 @@
+{
+  "source_plan": "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+  "producer_receipt": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-uniform-covariance-process-readback-20261003-v2/readback.json",
+  "producer_status": "complete_full_uniform_covariance_qualification_pending_independent_readback",
+  "reader_status": "passed_full_uniform_covariance_process_latent_and_sql_readback_v2",
+  "completed_status": "complete_verified_full_uniform_covariance_qualification",
+  "summary_fields": [
+    "logical_cases",
+    "model_setting_rows",
+    "unique_cohorts",
+    "unique_designs",
+    "audit_rows",
+    "setting_audit_links",
+    "audit_status_counts",
+    "link_status_counts",
+    "trees",
+    "loading_modes"
+  ],
+  "launches": [
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+    "metadata/process_covariance_readback_v2_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+    "metadata/process_covariance_readback_plan_20261003_v2.json": "e56451f4854a4f600923b0421f26d764069b104ecb40b488e03c51e56ef14e37",
+    "metadata/full_uniform_covariance_qualification_launch_20261002.json": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4",
+    "metadata/process_covariance_readback_v2_launch_20261003.json": "f096097a131582260f9c01eaafd1816c44aa58e85bb6ff2c843cd496d3c8728b",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_uniform_covariance_process_completed_20261003_v2.json",
+  "scope": "Complete independent readback of the unchanged original75188cases/622080settings/4340cohorts/130200designs/1302000audits/6220800setting links, both loading modes and all five trees. Eight bounded forked cohort processes change only scheduling; original latent independent products, normalizedQR, reciprocal-condition checks, entire Gram/error envelopes,gesvd rank validation and failure reproduction remain frozen. All source hashes, recipes, review/empty/constant/failed states and exact SQL identities retained. At most16pending cohort payloads; new immutable root, capture rejected exact audits/matrices/reference products without allowing completion; no original edits/restarts/output substitution. Original producer plus this complete independent reader require both exact original process/invocation journals and complete hashes for separate alternate closure. Original serial reader and queued descendants remain unchanged. New downstream consumers need a separately versioned explicit alternate-readback source adapter; old paths are never written. No numerical tolerance relaxation, rank deletion, accepted covariance/variance model, production optimizer or biological effect. Existing CPU resources only; no GPU, new charges or completed biological aims."
+}

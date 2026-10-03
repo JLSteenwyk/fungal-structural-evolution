@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    "metadata/process_covariance_readback_v2_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=21600",
+    "--fsize=1073741824",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_full_reduced_covariance_qualification_v3.py",
+    "--plan",
+    "metadata/full_reduced_covariance_qualification_plan_20261003_v3.json"
+  ],
+  "pins": {
+    "metadata/full_reduced_covariance_qualification_plan_20261003_v3.json": "3b83718adae282eb77f25f00603afb213b6221d2d8fadb36a5b3ca415d0daf95",
+    "metadata/process_covariance_readback_v2_closure_launch_20261003.json": "d252587ae4961dd123b9f63f7b094beb2cca4836e2de9dadd64590dd9ce4a8d2",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

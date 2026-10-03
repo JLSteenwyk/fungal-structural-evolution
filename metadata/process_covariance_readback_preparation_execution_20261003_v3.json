@@ -1,0 +1,76 @@
+{
+  "stage": "summary",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=1073741824",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_and_launch_process_covariance_readback_v3.py"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_process_covariance_preparation_stage.py": "a3f3a794a47e7c9e5124f65e43e1a5d39189115d23b753e1b8770e25e1214395",
+    "metadata/process_covariance_readback_preparation_resources_20261003_v3.json": "c7ba5705777a6f089583863289fe0c3f882e830c4b343b4444fba7a98e0aeb38",
+    "scripts/prepare_and_launch_process_covariance_readback_v3.py": "6a678a36c488c24bb5a598b40d2a7af758d738575df30e1f83878eb129437db1",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "dc05f2b119bb4082ba820f3ef8dcaa5e",
+  "wrapper": {
+    "pid": 960059,
+    "created": 1791060623.97,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_preparation_stage.py",
+      "--resources",
+      "metadata/process_covariance_readback_preparation_resources_20261003_v3.json",
+      "--execution",
+      "metadata/process_covariance_readback_preparation_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/process_covariance_readback_launches_20261003_v2.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_and_launch_process_covariance_readback_v3.py"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 5400,
+  "started_utc": "2026-10-03T20:50:24.773854+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T20:50:31.126592+00:00",
+  "child": {
+    "pid": 960060,
+    "created": 1791060624.08,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=1073741824",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_and_launch_process_covariance_readback_v3.py"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 6.352539439918473,
+  "child_cpu_seconds": 6.289733,
+  "child_peak_rss_bytes": 1580019712,
+  "receipt": "metadata/process_covariance_readback_launches_20261003_v2.json",
+  "receipt_sha256": "8ddf72613bb25942b2967d879f27365c5e1268405afc56fde84f79733a449cc2",
+  "artifacts": {
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3/stderr.log": "f4f06a83e8a325ca2413b0b6eac03f0997db63f388403caea7a5418281585e91",
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3/configuration.json": "e6b4bf01b47e763515dd7ee19cfa13817cc43bc72b39f836cf3fcc8fd4ca77bc",
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3/stdout.log": "9d0db8fb8d695c7cdd79168696441cd397106e0481ac019b0642fc0936a8f690",
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3/process.json": "9ea7eaab7e91b2e23f8c51a4101b4fda49f17597a208d18a72b524e36121dd9c"
+  },
+  "scope": "One original CPU-only complete process-readback preparation with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the launch inventory receipt. This preparation verifies software gates, source producer terminal evidence and resources, then launches a fresh complete full-source reader and separate closure. Its own exit is not full-grid arithmetic closure. No original-output edits, failed-job restart, GPU work, new charges or biological acceptance."
+}

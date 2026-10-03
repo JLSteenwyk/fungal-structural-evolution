@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=900",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_parallel_covariance_readback_v2.py",
+    "--output",
+    "data/software_audits/process-covariance-readback-20261003-v2",
+    "--receipt",
+    "metadata/process_covariance_readback_software_validation_20261003_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_process_covariance_software_stage.py": "cc59e3e838c8ff1fce7a108977e8fb8ecf2e04c8bda0c1c44cffb60254d88104",
+    "metadata/process_covariance_readback_software_resources_20261003_v2.json": "0c4902287ce09868b473594561673fd26bcdec6ea5959b8556304959817a7bcc",
+    "scripts/check_parallel_covariance_readback_v2.py": "41956c50e62859e510bf293f620788f4b42c159598221c2d8d777a7f759c7a85",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "37308e961e6742f0b8cef015f66c62d2",
+  "wrapper": {
+    "pid": 955585,
+    "created": 1791060394.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_software_stage.py",
+      "--resources",
+      "metadata/process_covariance_readback_software_resources_20261003_v2.json",
+      "--execution",
+      "metadata/process_covariance_readback_software_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/process_covariance_readback_software_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_parallel_covariance_readback_v2.py",
+      "--output",
+      "data/software_audits/process-covariance-readback-20261003-v2",
+      "--receipt",
+      "metadata/process_covariance_readback_software_validation_20261003_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1200,
+  "started_utc": "2026-10-03T20:46:35.543134+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T20:47:20.345777+00:00",
+  "child": {
+    "pid": 955594,
+    "created": 1791060394.85,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=6442450944",
+      "--cpu=900",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_parallel_covariance_readback_v2.py",
+      "--output",
+      "data/software_audits/process-covariance-readback-20261003-v2",
+      "--receipt",
+      "metadata/process_covariance_readback_software_validation_20261003_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 44.80246195697691,
+  "child_cpu_seconds": 70.459531,
+  "child_peak_rss_bytes": 198172672,
+  "receipt": "metadata/process_covariance_readback_software_validation_20261003_v2.json",
+  "receipt_sha256": "778e62cfad6347e82686e66364f19dbbe50406ac7a4ade9a708f3ac805c11bcc",
+  "artifacts": {
+    "metadata/process_covariance_readback_software_execution_20261003_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/process_covariance_readback_software_execution_20261003_v2/configuration.json": "19884bb43d1802cfa1c4a9ab937d2cde47a5d54e95e9f7afa595b0a36c4cdf77",
+    "metadata/process_covariance_readback_software_execution_20261003_v2/stdout.log": "59eaa6433c1a39b0cfaaf3f767055b0bd9ca4edcb3eb5dc488d7f15e9d416849",
+    "metadata/process_covariance_readback_software_execution_20261003_v2/process.json": "1329dd543820734cd3b568a3cb884b2a2f9d65f007c403bf26cab7d62bcc07bb"
+  },
+  "scope": "One original CPU-only process covariance full-reader synthetic numerical qualification with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the checker receipt; no real full-grid source closure, production fitting, GPU work, new charges or biological acceptance."
+}

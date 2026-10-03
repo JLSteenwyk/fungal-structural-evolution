@@ -33,9 +33,9 @@ production readback passed 42 native roles across both modes. Eight CPU
 workers/24 GiB/no swap run separately from the paused GPU predictions.
 Full resampling readback, provenance closure and calibrated uncertainty
 remain pending.
-At October 3, 17:27 UTC, the original controller reported 5,099/53,200
-completed draws; full independent native archive closure remains pending.
-[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_1728.json).
+At October 3, 20:54 UTC, the original controller reported 14,372/53,200
+completed draws (27.0%); full independent native archive closure remains pending.
+[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_2055.json).
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
@@ -65,22 +65,10 @@ eligibility. Unknown-residue disagreements between separate conditional draws
 remain explicit; historical ancestral categories are unavailable.
 
 The full corrected V5 startup grid has closed all 1,620 checks with zero
-unsuccessful roles; its 14,402 source/artifact bindings were rehashed at the
-October 3, 17:03 UTC error recheck. The V3 full 20-iteration joint sampler was
-running after all four prerequisite closures. Its software gate passed the entire
-1,620-role workflow with explicit mock failures and export-tampering checks.
-It uses sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
-A new read-only resource observer tracks this new invocation separately.
-All 872 completed roles available at the error-check snapshot passed fresh
-native-output replay, covering 2,616 joint frames and 33,657,014 ancestral
-residue/category pairs. The installed original formatter still fails a fresh
-probe; the corrected logger passes these checks. Full sampler completion and
-longer adequate posterior ensembles remain pending.
-[Current error recheck](metadata/baliphy_current_joint_logger_error_recheck_summary_20261003_1703.json).
-At 17:27 UTC the sampler had 976 successful unclosed short-run checkpoints;
-these computational checks do not establish adequate ancestral posteriors.
-[Original sampler runtime](metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_1728.json).
-[Full correction, evidence, resources and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
+unsuccessful roles. The completed corrected short-sampler output includes
+4,788 checked joint frames and 54,527,895 ancestral residue/category pairs.
+Output integrity does not establish adequate ancestral posteriors.
+[Full correction and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
 
 The complete short sampler has now closed all 1,620 outcomes: **1,596 pass
 output checks and 24 SIGSEGV failures remain**, with 84,071 bound hashes and
@@ -89,10 +77,21 @@ inputs. Controlled diagnostics reproduced 8-MiB native stack exhaustion on
 both; a scoped 64-MiB limit allowed initial logging to finish. The
 [fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) now runs
 all 24 failed roles with new seeds, preserved models/priors and full
-1,620-role provenance. Four live workers had verified stack limits at 18:28
-UTC; full sampling/readback/closure remains pending. Originals and global
+1,620-role provenance. At 20:54 UTC, four follow-ups had timed out and four
+workers were active, with no recurrence of the earlier crash in the checked
+follow-up logs. Full sampling/readback/closure remains pending. Originals and global
 defaults stay unchanged. These short checks do not qualify ancestral
 posteriors or repair the two older allocation failures.
+
+The [fresh full covariance reader](docs/full-process-covariance-readback-20261003.md)
+is running across all 4,340 cohorts, 1,302,000 audits and 6,220,800 setting
+links. Eight bounded worker processes retain frozen arithmetic and tolerances
+and now capture the exact audit/matrices if rejected. Complete software
+checks passed; full numerical validation remains pending. The old mismatch
+is unexplained despite 2,700 passing diagnostic comparisons. The newly
+qualified retained-basis stage is queued behind complete validation; production
+fitting has not started. Original failed outputs and serial queues stay
+preserved.
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The

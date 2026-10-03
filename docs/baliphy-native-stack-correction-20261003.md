@@ -144,3 +144,18 @@ repair. The new timeout is distinct from the historical SIGSEGV evidence.
 Complete 24-role follow-up readback, resource accounting and adequate ancestral
 posteriors remain required. Existing limits, seeds, attempts and native outputs
 are unchanged; this check starts no longer-chain or GPU inference.
+
+## Error recheck at 20:54 UTC
+
+[Fresh original runtime](../metadata/baliphy_stack_followup_execution_checkpoint_20261003_2055.json)
+confirms four completed follow-ups, all unsuccessful timeouts, and four live
+native workers with the scoped 64-MiB stack. Native receipts for all four
+completed broad-prior roles were freshly hash-verified: timeout exit `-9`,
+worker elapsed times 5,679.46, 6,272.71, 6,789.17 and 7,205.35 seconds.
+Saved stdout/stderr/scalar log hashes were checked and scanned; no
+`bad_alloc`, allocation-failure warning or SIGSEGV was observed. Current active
+stdout/stderr likewise contained none at the scan. These observations do not
+prove complete repair; the full twenty-iteration horizon remains unresolved.
+[Read-only error recheck](../metadata/project_error_recheck_20261003_2044.json).
+Original limits, attempts and next planned roles are unchanged, with no
+automatic retry or extension.

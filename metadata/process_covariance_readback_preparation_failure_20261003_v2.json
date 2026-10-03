@@ -1,0 +1,31 @@
+{
+  "status": "original_preparation_failure_before_any_full_reader_launch_retained",
+  "actual_tool_terminal_exit_code": 1,
+  "actual_tool_session_id": null,
+  "invocation_id": "4126e44f767e403ca216c4f09d9629e1",
+  "wrapper": {
+    "pid": 958106,
+    "created": 1791060526.81,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_preparation_stage.py",
+      "--resources",
+      "metadata/process_covariance_readback_preparation_resources_20261003_v2.json",
+      "--execution",
+      "metadata/process_covariance_readback_preparation_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/process_covariance_readback_launches_20261003_v2.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_and_launch_process_covariance_readback.py"
+    ]
+  },
+  "cause": "Missing software transport receipt because original transport exporter expected a wrapper PID journal entry despite pipe mode. Software numeric contracts passed; no full reader plan or launch created.",
+  "source_hashes": {
+    "metadata/process_covariance_readback_preparation_execution_20261003_v2.json": "85d1e8fe32dc4363218f601c393a20973fafed0596505a7d5613ed1da3146e55",
+    "metadata/process_covariance_readback_preparation_execution_20261003_v2/original-invocation-journal.jsonl": "30e0c85eeb9fce9ccc6d8191705aacfe724ff8553954adf19b4054d71c1a1b3d"
+  },
+  "next_action": "Use a fresh preparation version with explicit original tool/configuration/start-command/invocation-completion proof, without claiming unavailable process journal entries."
+}

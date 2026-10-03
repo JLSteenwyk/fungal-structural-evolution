@@ -1,0 +1,38 @@
+{
+  "status": "verified_original_pipe_stage_wait_zero",
+  "actual_tool_terminal_exit_code": 0,
+  "tool_session_id": 52055,
+  "invocation_id": "13c05ddea2354017b6818baf9717f604",
+  "wrapper": {
+    "pid": 961751,
+    "created": 1791060743.19,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_retained_source_software_stage.py",
+      "--resources",
+      "metadata/reduced_covariance_process_source_software_resources_20261003_v4.json",
+      "--execution",
+      "metadata/reduced_covariance_process_source_software_execution_20261003_v4.json",
+      "--receipt",
+      "metadata/reduced_covariance_process_source_software_validation_20261003_v4.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_reduced_covariance_qualification_v4.py",
+      "--output",
+      "data/software_audits/retained-covariance-process-source-20261003-v4",
+      "--receipt",
+      "metadata/reduced_covariance_process_source_software_validation_20261003_v4.json"
+    ]
+  },
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "exact_wrapper_pid_journal_entries": 0,
+  "source_hashes": {
+    "metadata/reduced_covariance_process_source_software_execution_20261003_v4.json": "086f622c26fb68a0bcec5c5c1f00dfcf68177b5383014cc892f29358c2d7d3b9",
+    "metadata/reduced_covariance_process_source_software_validation_20261003_v4.json": "24e2bc7cf8920a324b00b07998a15ba2e0e7ba5bbd9438796627e35c57bd8a9c",
+    "metadata/reduced_covariance_process_source_software_execution_20261003_v4/original-invocation-journal.jsonl": "a0f3fb7ea4fd3d1ce7e74c6934e66515bac62fe99e3052b123f4c4c7fbcd51b0"
+  },
+  "scope": "Observed original tool wait0, wrapper/native configuration PID/create/command, environment invocation ID and original manager command/time/completion. Pipe-mode wrapper journal messages unavailable and not fabricated. Evidence scope is native software/preparation receipt, not production numerical closure."
+}

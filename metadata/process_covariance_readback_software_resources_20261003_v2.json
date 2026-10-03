@@ -1,0 +1,19 @@
+{
+  "status": "estimated_before_process_covariance_software_launch",
+  "checked_utc": "2026-10-03T20:46:35.375369+00:00",
+  "cpus": 2,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "workers": 8,
+  "blas_threads": 1,
+  "address_space_gib": 6,
+  "cpu_seconds_per_stage": 900,
+  "wall_seconds_per_stage": 1200,
+  "per_file_limit_mib": 128,
+  "minimum_available_ram_gib": 8,
+  "minimum_free_disk_gib": 4,
+  "estimated_output_gib": 1,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "Synthetic complete six-cohort 1800-audit 7200-link software qualification with one/eight fork workers and all21 altered source/result contracts. CPU900 is per process inherited by at most nine numeric processes, not a total CPU allowance. Wall1200 and whole cgroup2CPU8GiB0swap bound aggregate work;6GiB per-process AS does not claim a measured aggregate peak. Original frozen numerical recipes/tolerances remain unchanged. No biological pilot or new native inference."
+}

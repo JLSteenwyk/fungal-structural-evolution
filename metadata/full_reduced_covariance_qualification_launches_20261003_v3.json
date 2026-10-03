@@ -1,0 +1,29 @@
+{
+  "status": "queued_complete_retained_covariance_after_alternate_source_closure",
+  "source_plan": "metadata/full_reduced_covariance_qualification_plan_20261003_v3.json",
+  "source_plan_sha256": "3b83718adae282eb77f25f00603afb213b6221d2d8fadb36a5b3ca415d0daf95",
+  "launches": [
+    "metadata/reduced_covariance_process_source_v3_launch_20261003.json",
+    "metadata/reduced_covariance_process_source_v3_readback_launch_20261003.json",
+    "metadata/reduced_covariance_process_source_v3_closure_launch_20261003.json"
+  ],
+  "expected": {
+    "logical_cases": 75188,
+    "model_setting_rows": 622080,
+    "unique_cohorts": 4340,
+    "unique_designs": 130200,
+    "audit_rows": 1302000,
+    "setting_audit_links": 6220800
+  },
+  "separately_replayed_real_certificates": 8680,
+  "real_certificate_basis_counts": {
+    "4": 7232,
+    "5": 1448
+  },
+  "original_serial_jobs_changed": false,
+  "original_reader_path_replaced": false,
+  "production_fitting_launched": false,
+  "all_eight_aims_incomplete": true,
+  "gpu": false,
+  "new_cost_usd": 0
+}

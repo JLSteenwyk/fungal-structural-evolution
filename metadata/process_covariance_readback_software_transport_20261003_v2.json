@@ -1,0 +1,39 @@
+{
+  "status": "verified_actual_process_covariance_software_wait_zero",
+  "tool_session_id": 98973,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-process-covariance-readback-software-20261003-v2.service",
+  "invocation_id": "37308e961e6742f0b8cef015f66c62d2",
+  "wrapper": {
+    "pid": 955585,
+    "created": 1791060394.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_software_stage.py",
+      "--resources",
+      "metadata/process_covariance_readback_software_resources_20261003_v2.json",
+      "--execution",
+      "metadata/process_covariance_readback_software_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/process_covariance_readback_software_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_parallel_covariance_readback_v2.py",
+      "--output",
+      "data/software_audits/process-covariance-readback-20261003-v2",
+      "--receipt",
+      "metadata/process_covariance_readback_software_validation_20261003_v2.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 0,
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "source_hashes": {
+    "metadata/process_covariance_readback_software_execution_20261003_v2.json": "24183af75000a3067770a49a946fe7cfd24e7b6c9f3de425ad21bb848f3e6486",
+    "metadata/process_covariance_readback_software_validation_20261003_v2.json": "778e62cfad6347e82686e66364f19dbbe50406ac7a4ade9a708f3ac805c11bcc",
+    "data/software_audits/process-covariance-readback-20261003-v2/original-invocation-journal.jsonl": "de34fab8ea914e7d593faa9edabb77a65ee9f753e59a79fff7ff5a833bf95c65"
+  },
+  "scope": "Actual original tool wait exit0 plus wrapper PID/create/command and native execution configuration, environment invocation ID, original manager start command/time and invocation-specific completion journal. Pipe mode sends process stdout to the tool, so no wrapper PID journal entry exists. No such entry is fabricated. Manager memory peak is not worker/cgroup peak. Software fixtures are synthetic; this is not full biological source closure."
+}

@@ -1,0 +1,195 @@
+{
+  "status": "read_only_existing_errors_rechecked",
+  "checked_utc": "2026-10-03T20:43:25.543470+00:00",
+  "ancestral_checkpoint": "metadata/baliphy_stack_followup_execution_checkpoint_20261003_error_recheck_2042.json",
+  "ancestral_checkpoint_sha256": "f676448b625452ffd67c6995094edd7fae75cbd96934c923364f2e4e87d315b3",
+  "ancestral_completed_followups": 4,
+  "ancestral_live_followups": 4,
+  "completed_followups_all_timeout": true,
+  "bad_alloc_or_SIGSEGV_in_scanned_followup_logs": false,
+  "covariance_original_failed_handles": [
+    {
+      "launch": "metadata/parallel_covariance_readback_v1_launch_20261003.json",
+      "pid": 3366590,
+      "created": 1791054048.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "de3821f8ee3eeb3bfc2a12fad8685a2a0b20ab72959b54a62a25b7f9f7a013c2",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "c27b24d2e18aaf9679ad76f3e3306ff634e91c0c68489e64e27a3b371b81ab0a",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055795722539",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "494e15ab975846e1b5598ebafe0aefd3"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055795723085",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "494e15ab975846e1b5598ebafe0aefd3"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055795723232",
+          "CPU_USAGE_NSEC": "2234838063000",
+          "MEMORY_PEAK": "3747840",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/parallel_covariance_readback_v1_closure_launch_20261003.json",
+      "pid": 3366594,
+      "created": 1791054048.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "cd5d3c2b96c020b9e775f602010b3c43fdbd2c8399353707f3782ec53b07ac1d",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "cfdb31a501108bb470e4e5c2a44dc4a9b59baf4aeea971ec30808d5a906fc717",
+      "captured_process_messages": 69,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055821609148",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-closure-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "dc7fe8265732412283aa20cc275fc581"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055821609457",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-closure-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "dc7fe8265732412283aa20cc275fc581"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json",
+      "pid": 3431238,
+      "created": 1791054972.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "8791c9952ec2a7f413d7e741549c1986251f76f914ed01043935962bf635a196",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "82f9aa8eb88e8cb9b700249962ef2195ac0c65b8025972a39ec776f9440173db",
+      "captured_process_messages": 39,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055844324092",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "c4463bc841e3424cbefd0ceb03bdf89a"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055844324397",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "c4463bc841e3424cbefd0ceb03bdf89a"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json",
+      "pid": 3431277,
+      "created": 1791054972.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "6c1d7a814c2a0b0bcce097108393ac9d94b4e7132c43826b5776309c3c2b5199",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "62ee9ee4b46907d845adcdc1595e743f7df18b16916786acbcd65feb429c56d4",
+      "captured_process_messages": 40,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055874357557",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "54624fe7f48e4c4ba86a5966218e4ff6"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055874358050",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "54624fe7f48e4c4ba86a5966218e4ff6"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_closure_launch_20261003.json",
+      "pid": 3431321,
+      "created": 1791054972.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "48a849c3bbb9b00cb0254f3a0c30a28937b82bf4b1d31693cf0ab2c14ace64a0",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "8dbd88d36b8f23d7fde0fd3391e22a6852f54312612145424ca4b83346a3df6b",
+      "captured_process_messages": 39,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055844456550",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "cf92fb23541f4a71a35cff768bcf9976"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055844456778",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "cf92fb23541f4a71a35cff768bcf9976"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "covariance_full_completion_present": false,
+  "covariance_diagnostic_receipt": "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json",
+  "covariance_diagnostic_replays_previously_passed": 2700,
+  "covariance_error_cause_resolved": false,
+  "new_native_inference_runs_started": 0,
+  "scope": "Fresh identity-bound runtime monitor, four receipt hashes and saved log hashes checked; current logs scanned. Five original covariance failure journals freshly checked using expected-failure mode. Previous 2700-replay diagnostic receipt inspected, numeric calculations not rerun. Full covariance monitor rejected the known failure as it defaults to expecting success; no source or running job altered."
+}

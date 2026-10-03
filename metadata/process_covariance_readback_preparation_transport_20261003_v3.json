@@ -1,0 +1,34 @@
+{
+  "status": "verified_original_pipe_stage_wait_zero",
+  "actual_tool_terminal_exit_code": 0,
+  "tool_session_id": 28940,
+  "invocation_id": "dc05f2b119bb4082ba820f3ef8dcaa5e",
+  "wrapper": {
+    "pid": 960059,
+    "created": 1791060623.97,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_preparation_stage.py",
+      "--resources",
+      "metadata/process_covariance_readback_preparation_resources_20261003_v3.json",
+      "--execution",
+      "metadata/process_covariance_readback_preparation_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/process_covariance_readback_launches_20261003_v2.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_and_launch_process_covariance_readback_v3.py"
+    ]
+  },
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "exact_wrapper_pid_journal_entries": 0,
+  "source_hashes": {
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3.json": "ca2212b8e7a94d33dea8c86dc49dbfcf7174d64260875bbddef6c29bc27ce88f",
+    "metadata/process_covariance_readback_launches_20261003_v2.json": "8ddf72613bb25942b2967d879f27365c5e1268405afc56fde84f79733a449cc2",
+    "metadata/process_covariance_readback_preparation_execution_20261003_v3/original-invocation-journal.jsonl": "349551b5eb22b3a986027477a1266bb1a23d9f50cea265b7aae635a1fa5f09ae"
+  },
+  "scope": "Observed original tool wait0, wrapper/native configuration PID/create/command, environment invocation ID and original manager command/time/completion. Pipe-mode wrapper journal messages unavailable and not fabricated. Evidence scope is native software/preparation receipt, not production numerical closure."
+}

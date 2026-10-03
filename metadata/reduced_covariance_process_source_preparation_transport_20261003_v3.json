@@ -1,0 +1,34 @@
+{
+  "status": "verified_original_pipe_stage_wait_zero",
+  "actual_tool_terminal_exit_code": 0,
+  "tool_session_id": 94678,
+  "invocation_id": "650c180b62a248cc8a06f42277856bb9",
+  "wrapper": {
+    "pid": 963435,
+    "created": 1791060864.67,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_process_covariance_preparation_stage.py",
+      "--resources",
+      "metadata/reduced_covariance_process_source_preparation_resources_20261003_v3.json",
+      "--execution",
+      "metadata/reduced_covariance_process_source_preparation_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/full_reduced_covariance_qualification_launches_20261003_v3.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_and_launch_reduced_covariance_process_source.py"
+    ]
+  },
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "exact_wrapper_pid_journal_entries": 0,
+  "source_hashes": {
+    "metadata/reduced_covariance_process_source_preparation_execution_20261003_v3.json": "962eef5b1439fcd57d26f7fe300d0d1091192dca7e1d02fbc7de88a91d6be817",
+    "metadata/full_reduced_covariance_qualification_launches_20261003_v3.json": "4286ff3654fa53c3bd82de073617e986578ff0320cf7a755497f602c36c36272",
+    "metadata/reduced_covariance_process_source_preparation_execution_20261003_v3/original-invocation-journal.jsonl": "4fc90f48d01b251ffaab0ddae974c3366014b30c52830ef8b91f1de7b9598d3b"
+  },
+  "scope": "Observed original tool wait0 plus native preparation identity/configuration and original invocation-linked manager start/completion. Preparation separately replayed8680real certificates before queuing complete retained numerical grid. Pipe-mode wrapper journal rows absent and not fabricated. Numerical consumers remain queued, not accepted."
+}

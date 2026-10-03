@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-reduced-covariance-process-source-v3-closure-20261003-v1.service",
+  "pid": 963503,
+  "created": 1791060866.38,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/reduced_covariance_process_source_v3_closure_wait_plan_20261003.json"
+  ],
+  "plan": "metadata/reduced_covariance_process_source_v3_closure_wait_plan_20261003.json",
+  "plan_sha256": "1204d66cf460a6633dd6ac0d3ebcc2a928cd5d49530021a88a7cfa153c668022",
+  "checked_utc": "2026-10-03T20:54:27.097534+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-reduced-covariance-process-source-v3-closure-20261003-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/reduced_covariance_process_source_v3_closure_wait_plan_20261003.json"
+  ]
+}

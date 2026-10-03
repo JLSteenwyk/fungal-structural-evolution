@@ -1439,3 +1439,31 @@ serial queue is not redirected. The ancestral follow-up timeout likewise
 remains an explicit unsuccessful attempt, distinct from initialization
 SIGSEGV correction and adequate posterior evidence.
 [Numerical implementation, diagnostics and remaining whole-grid requirements](retained-covariance-fitting-numerics-20261003.md).
+
+## October 3: investigate the full mismatch with exact case capture
+
+The completed2700comparison cohort diagnostic does not reproduce or explain
+its original full-run mismatch. Use a new complete, instrumented eight-process
+reader to investigate the full source and retain the exact rejected audit,
+independent reference and fixed matrix if it recurs. This execution does not
+claim a verified causal correction; it preserves every source/case/check and
+all frozen arithmetic/tolerances. Original failed readers, serial queues and
+outputs stay immutable. The earlier requirement for causal diagnosis remains
+applicable to any claimed numerical repair. Here the new complete calculation
+uses unchanged mathematics and cannot close after a rejected case.
+
+Require a separately versioned retained-source adapter for the exact process
+reader and complete source/journal closure. Admission checks backend/worker
+identity, enabled failure capture, unchanged arithmetic and absence of rejected
+artifacts, plus the full exact covariance cone. Keep23malformed/source tests,
+full positive fixture rehashing and distinct real8680certificate preparation.
+Full numerical closure and full-scope timing/contracts precede optimization;
+no successful software fixture or live worker establishes biological acceptance.
+
+Distinguish actual pipe-mode software/preparation waits and original native
+configuration/identity from invocation manager journals: forwarded stdout
+cannot yield process PID journal entries. Preserve the missing-transport
+preparation failure and use fresh immutable preparation rather than fabricate
+entries or edit a launched version. Production readers still require their
+actual original process journals for full closure.
+[Methods and complete evidence](full-process-covariance-readback-20261003.md).

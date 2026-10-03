@@ -12732,3 +12732,45 @@ and figure review remain next.
   no full4340-cohort arithmetic or biological acceptance is claimed. Next full
   reader instrumentation must capture exact audit/context failure evidence
   while retaining all sources, cases, checks and numerical tolerances.
+
+- October 3, 20:54 UTC: implemented, qualified and launched a fresh complete
+  covariance reader using eight bounded worker processes and exact rejected
+  audit/matrix/reference capture. Original frozen numerical checks and the
+  entire 4,340-cohort/1,302,000-audit/6,220,800-link census remain unchanged.
+  The original mismatch remains unexplained despite the completed 2,700-case
+  diagnostic; process isolation is not a verified causal repair. The new
+  software check passes one/eight-process agreement, 21 source/result
+  corruptions and actual rejected-case capture/replay. Original tool wait98973
+  returned zero, using70.46native CPU seconds. Pipe-mode process journal rows
+  were absent; exact original native identities/configuration, manager command/
+  time/invocation completion and actual waits were retained without fabrication.
+  The first preparation's missing-transport failure was preserved before any
+  full launch; fresh V3 preparation wait28940 returned zero. New reader PID960129
+  is live inside controller960102, checking full sources before its fresh root.
+  Closer960106 is live and waiting. Actual8CPU64GiB0swap caps/pins were verified.
+  [Complete method, resources and source/terminal evidence](full-process-covariance-readback-20261003.md).
+
+  New retained-source V3 adapter software passes600synthetic audits/1200links,
+  allfive trees/both modes/bothq4q5bases/constants,23malformed states and exact
+  positive source restoration/rehashing. Original wait52055 returned zero.
+  Preparation separately replayed8680real certificates (7232q4/1448q5), then
+  wait94678 returned zero. Complete numerical producer963495/reader963499/
+  closer963503 are live waiting for the new full source closure. Their frozen
+  plans/caps were freshly checked. No numerical producer or optimizer has
+  started and no full arithmetic or biological acceptance is claimed.
+
+  Paired predictor resampling reports14,372/53,200draws from the original live
+  controller. Ancestral follow-ups have four preserved timeouts and four live
+  scoped-stack workers; no historical allocation/SIGSEGV error was observed
+  in scanned follow-up logs. Full horizon and adequate posteriors remain open.
+
+  Previous goal turn was progress: fitting numerical qualification and full-
+  cohort diagnostic evidence changed the next action and were published in
+  b64d1c5. The intervening user error check was a verified wait on four exact
+  native workers and preserved terminal failures. This goal turn is progress:
+  complete fresh reader execution and full-scope downstream source qualification/
+  queue change authoritative state. Full candidate/source/output/link workflow,
+  timing/fits/calibration, accepted species framework/reconciliation/dating,
+  complete atlas and all eight biological aims remain required. Approximately
+  500fungi plus25outgroups remains the goal; GPU prediction stays paused and
+  no new charges were incurred.
