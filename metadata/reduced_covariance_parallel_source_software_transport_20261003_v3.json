@@ -1,0 +1,34 @@
+{
+  "status": "verified_original_alternate_covariance_software_waits_with_preserved_restoration_finding",
+  "transports": [
+    {
+      "version": 2,
+      "actual_tool_terminal_exit_code": 0,
+      "tool_session_id": 22774,
+      "invocation_id": "a7559ab6db91472eb95fbf28bce30296",
+      "original_process_messages": 1,
+      "original_completion_resource_records": 1,
+      "execution": "metadata/reduced_covariance_parallel_source_software_execution_20261003_v2.json",
+      "execution_sha256": "d6782000911b77c5ba54149a3ba22090d7c888fe32b665b2e3d85d60801591f8",
+      "post_mutation_fixture_gate_accepted": false
+    },
+    {
+      "version": 3,
+      "actual_tool_terminal_exit_code": 0,
+      "tool_session_id": 35338,
+      "invocation_id": "89d26cba38224452b358f28b021bb7ff",
+      "original_process_messages": 1,
+      "original_completion_resource_records": 1,
+      "execution": "metadata/reduced_covariance_parallel_source_software_execution_20261003_v3.json",
+      "execution_sha256": "a9d367bed3d272acb9448d72dbccb8a2c5d1bc04c0e8246645f320aca516b93c",
+      "post_mutation_fixture_gate_accepted": true
+    }
+  ],
+  "source_hashes": {
+    "metadata/reduced_covariance_parallel_source_software_execution_20261003_v2.json": "d6782000911b77c5ba54149a3ba22090d7c888fe32b665b2e3d85d60801591f8",
+    "metadata/reduced_covariance_parallel_source_software_execution_20261003_v2/original-invocation-journal.jsonl": "3caeb5225c35b52c65766def20904e4f2c88fd8c16f968df7e25dfb923d09b30",
+    "metadata/reduced_covariance_parallel_source_software_execution_20261003_v3.json": "a9d367bed3d272acb9448d72dbccb8a2c5d1bc04c0e8246645f320aca516b93c",
+    "metadata/reduced_covariance_parallel_source_software_execution_20261003_v3/original-invocation-journal.jsonl": "662d2913dced240e183f5354acba5ce3156d809305d0216f3f5986418b8f8310"
+  },
+  "scope": "Two actual original software tool waits and PID/create/command/invocation journals. V3 complete positive source graph rehashed; V2 test restoration finding retained. Borrowed execution wrapper has an inherited scope paragraph mentioning8680real certificates; these two checker commands themselves cover600synthetic audits/1200links. Full real certificate replay is separately performed by this preparation command, not attributed to those children. No production source edits or biological acceptance."
+}

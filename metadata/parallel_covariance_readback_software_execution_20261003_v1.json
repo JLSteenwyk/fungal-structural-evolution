@@ -1,0 +1,24 @@
+{
+  "status": "verified_original_parallel_covariance_software_wait_exited_zero",
+  "actual_tool_terminal_exit_code": 0,
+  "tool_session_id": 58029,
+  "invocation_id": "c866f80316444ff29d3b977576c01885",
+  "original_journal_pid": 3360545,
+  "original_command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_parallel_covariance_readback.py",
+    "--output",
+    "data/software_audits/parallel-covariance-readback-20261003-v1",
+    "--receipt",
+    "metadata/parallel_covariance_readback_software_validation_20261003_v1.json"
+  ],
+  "original_process_messages": 166,
+  "original_completion_resource_records": 1,
+  "software_self_cpu_seconds": 71.34976800000001,
+  "software_self_peak_rss_bytes": 217231360,
+  "source_hashes": {
+    "metadata/parallel_covariance_readback_software_validation_20261003_v1.json": "89674970b4c32085b93693deec24f115cde0361771787f62d55c3ecc92a9c4fe",
+    "data/software_audits/parallel-covariance-readback-20261003-v1/original-invocation-journal.jsonl": "4001e84b895fd5eb7389286db51bfad7353ed426c013353f6ed5c9d27b02f387"
+  },
+  "scope": "Observed original tool wait, exact invocation/PID/command journal and original completion resources. Self RSS is not charged group/native peak. Source/journal fixtures inside numerical software runs remain synthetic."
+}

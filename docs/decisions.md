@@ -1386,3 +1386,30 @@ weighting, adequacy, accepted phylogenies/reconciliation, calibration and all
 eight biological aims remain separate requirements.
 [Exact evidence](full-covariance-dependency-review-20261003.md) and
 [full numerical workflow](full-reduced-covariance-qualification-20261003.md).
+
+## October 3: complete parallel arithmetic and an explicit alternate source
+
+Use eight bounded whole-cohort workers for a separately versioned complete
+independent readback of the original seven-kernel covariance outputs. Preserve
+the complete case/setting/tree/mode census, independent latent products,
+normalized QR, reciprocal-condition checks, original Gram/error envelopes,
+gesvd ranks, conservative reviews and original failure reproduction. Require
+all source/report hashes, a second serialized recipe pass, all setting links
+and actual original producer/new reader journals before alternate closure.
+The frozen original serial reader and all existing queues stay unchanged.
+
+Use a new explicit source adapter for the retained-basis queue; never write the
+old reader path or redirect an already queued consumer. Require exact alternate
+plan/reader/producer identities, full counts, source contract and resource
+caps, plus closed complete integer covariance-cone certificates. The numerical
+reduction and inherited envelopes remain unchanged across the entire grid.
+
+Preserve the V2 software fixture restoration finding. JSON semantic equality
+does not restore saved byte hashes. Only the fresh V3 byte-exact test and
+complete positive source-graph replay admit the new queue. Distinguish synthetic
+source tests from preparation's separately executed 8,680 real certificate
+checks; do not repeat the borrowed wrapper's overly broad scope as child
+evidence. Live handles or missing fresh roots do not establish completion or
+failure. Full numerical closure and measured complete-scope timing precede
+production fitting; all biological aims remain open.
+[Method, resources, finding and execution evidence](full-parallel-covariance-readback-20261003.md).

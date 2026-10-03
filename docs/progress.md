@@ -12620,3 +12620,52 @@ and figure review remain next.
   full model qualification. The approximately 500-fungus/25-outgroup goal
   stays active. Original jobs and frozen sources remain intact; GPU prediction
   remains paused and no charges were incurred.
+
+- October 3, 19:22 UTC: added a complete independent parallel covariance
+  readback and explicit retained-basis source adapter. The original serial
+  reader remains live; its output, code and existing consumers are unchanged.
+  New eight-worker scheduling retains the original latent/QR/gesvd arithmetic,
+  error envelopes, all 4,340 cohorts/1,302,000 audits and 6,220,800 setting links.
+  Actual one/eight-worker software runs agree with the serial reference on
+  1,800 synthetic audits/7,200 links; all 21 source/result corruption cases
+  were rejected. Exact original software wait returned zero. Reader PID
+  3366590 and closer PID 3366594 are live; native child PID 3366622 is doing
+  full source verification before creation of its new root. Full arithmetic
+  closure remains pending. Eight CPUs/64 GiB/no swap, bounded pending payloads,
+  48-GiB AS, per-file/CPU limits and disk planning were recorded before launch.
+  [Complete method and evidence](full-parallel-covariance-readback-20261003.md).
+
+  Preserved the alternate-source checker V2 finding: JSON restoration changed
+  bytes in three synthetic parent files, invalidating six positive bindings.
+  No production data changed and that gate did not admit production work.
+  Fresh checker V3 uses exact-byte restoration and rehashes the complete
+  positive graph. It passes 600 synthetic audits/1,200 links, both basis sizes,
+  modes and five trees, 600 constant-response links and sixteen malformed/
+  restart cases. Actual software waits and invocation journals are retained.
+  The borrowed wrapper's inherited real-certificate scope statement is
+  explicitly corrected; preparation separately replayed all 8,680 real
+  certificates before launch. Complete V2 retained numerical producer/reader/
+  closer PIDs 3431238/3431277/3431321 wait for the new complete arithmetic
+  closure. Their original identities/caps and frozen pins passed fresh
+  runtime observation; no numerical optimizer has launched. The new queue
+  preserves the full original grid and unchanged error bounds.
+
+  The ancestral sampler has separately closed all 1,620 original short
+  outcomes, with 1,596 successful integrity checks and 24 preserved native
+  SIGSEGV failures in two 622-tip inputs. Both diagnostics identify 8-MiB
+  stack exhaustion; 64-MiB initialization checks pass. Full-role follow-ups
+  remain incomplete: at 19:20 UTC four verified native workers have the
+  scoped larger stack, each has reached iteration 9, all four error logs are
+  empty and no cgroup memory-limit/OOM events have occurred. No fresh role
+  has finished; neither complete repair nor posterior adequacy is claimed.
+  [Failure accounting and scoped full follow-up](baliphy-native-stack-correction-20261003.md).
+
+  The previous goal turn was progress: complete causal diagnosis, fresh full
+  follow-up execution, full parallel source implementation and complete-scope
+  numerical queue changed authoritative state. The intervening user error
+  check was a verified wait on four original native processes. This turn adds
+  reproducible runtime observation and publishes source/software/launch
+  evidence and methods. Full model qualification, timing/fits/calibration,
+  uncertainty, accepted framework/reconciliation/dating and all eight aims
+  remain incomplete; approximately 500 fungi plus 25 outgroups stays the goal.
+  GPU prediction remains paused and no new charges were incurred.

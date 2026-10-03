@@ -1,0 +1,52 @@
+{
+  "status": "preserved_software_fixture_byte_restoration_finding_before_production_consumer_launch",
+  "checked_utc": "2026-10-03T19:10:31.361388+00:00",
+  "changed_fixture_bindings": [
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/receipt.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/parallel/readback.json",
+      "expected_sha256": "28282fc30d9fdbff32dbc9750f3ec0baca75006223459e705a46de6321d7cbc9",
+      "actual_sha256": "2f79faec428bf0b8daa988df43265701f72e288f4169aaeef3e2da6540c65f8e"
+    },
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/receipt.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/alternate-completed.json",
+      "expected_sha256": "9fe84d3d86fb6367b2902828cd19fc7c0d439974a1cfa3df862d0a0592449c7a",
+      "actual_sha256": "a74e5afad356458995996552f56aebaa414cb09d564a830fe7c552bf8d3c939d"
+    },
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/receipt.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/alternate-archive.json",
+      "expected_sha256": "dfadde54cc5e16833aeb98b16d050ca659a13691d97bf7704f5754c0ca30e801",
+      "actual_sha256": "232c37154c0e603f47c0e52b2f57e0bad57f2f546b9adfa1e966629e17f62653"
+    },
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/readback.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/parallel/readback.json",
+      "expected_sha256": "28282fc30d9fdbff32dbc9750f3ec0baca75006223459e705a46de6321d7cbc9",
+      "actual_sha256": "2f79faec428bf0b8daa988df43265701f72e288f4169aaeef3e2da6540c65f8e"
+    },
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/readback.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/alternate-completed.json",
+      "expected_sha256": "9fe84d3d86fb6367b2902828cd19fc7c0d439974a1cfa3df862d0a0592449c7a",
+      "actual_sha256": "a74e5afad356458995996552f56aebaa414cb09d564a830fe7c552bf8d3c939d"
+    },
+    {
+      "receipt": "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/readback.json",
+      "source": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/retained-covariance-parallel-source-20261003-v2/alternate-archive.json",
+      "expected_sha256": "dfadde54cc5e16833aeb98b16d050ca659a13691d97bf7704f5754c0ca30e801",
+      "actual_sha256": "232c37154c0e603f47c0e52b2f57e0bad57f2f546b9adfa1e966629e17f62653"
+    }
+  ],
+  "affected_unique_files": 3,
+  "production_data_affected": false,
+  "production_consumer_launched": false,
+  "source_code_numerical_admission_changed": false,
+  "source_hashes": {
+    "scripts/check_full_reduced_covariance_qualification_v2.py": "b6f4499816ff9048c38908b21aa6981a9862c8738a199321c9dc986bda064a58",
+    "metadata/reduced_covariance_parallel_source_software_validation_20261003_v2.json": "b0842fd48a19ccaf47a923f013ca5af7c8fb5e1bc3cdea6e03fd8663b5c4dddc",
+    "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/receipt.json": "633bc102ad8b07432eaf5aff1f340209c540889bc02cbe383ed51bd0298d497f",
+    "data/software_audits/retained-covariance-parallel-source-20261003-v2/qualified/readback.json": "189f631fa7c7450ff16c34cc8f2f6fffa2af978d9ac408ef6dfa838a376aab7d"
+  }
+}

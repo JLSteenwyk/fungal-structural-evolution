@@ -1,0 +1,34 @@
+{
+  "source_plan": "metadata/full_reduced_covariance_qualification_plan_20261003_v2.json",
+  "producer_receipt": "results/phylogeny/full-exact-retained-covariance-qualification-20261003-v2/receipt.json",
+  "independent_readback": "results/phylogeny/full-exact-retained-covariance-qualification-20261003-v2/readback.json",
+  "producer_status": "complete_full_exact_retained_uniform_covariance_qualification_pending_readback_v2",
+  "reader_status": "passed_full_exact_retained_uniform_covariance_qualification_independent_readback_v2",
+  "completed_status": "complete_verified_full_exact_retained_uniform_covariance_qualification_v2",
+  "summary_fields": [
+    "logical_cases",
+    "model_setting_rows",
+    "unique_cohorts",
+    "unique_designs",
+    "audit_rows",
+    "setting_audit_links",
+    "audit_status_counts",
+    "link_status_counts",
+    "trees",
+    "loading_modes",
+    "retained_basis_audit_counts"
+  ],
+  "launches": [
+    "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json",
+    "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/full_reduced_covariance_qualification_plan_20261003_v2.json": "87506fc536ad544dc2a5a41253259608efe16453dad04bd88563e74f3e9f0c3f",
+    "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json": "8791c9952ec2a7f413d7e741549c1986251f76f914ed01043935962bf635a196",
+    "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json": "6c1d7a814c2a0b0bcce097108393ac9d94b4e7132c43826b5776309c3c2b5199",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_reduced_covariance_qualification_completed_20261003_v2.json",
+  "scope": "Complete original75188cases/622080settings/4340cohorts/130200designs:1302000exact retained covariance audits/6220800setting links, both modes and allfive working trees. Explicit separately closed parallel readback of the same original full seven-kernel producer required; original serial reader path neither required,written nor replaced. Source plan/producer/alternate-reader/worker/resource identity, exactV2operator/cone proof and complete original journals checked. Frozen reduction/independentgesvd/SQL and unchanged principal Gram/error envelopes; all review/nonready/constant cases retained. V2 software byte-restoration finding preserved; stronger V3software admission rehashes the entire positive fixture graph. New immutable source adapter/output/controller namespace; original serial/qualification/timing queues untouched. Full source/artifact/two new original journals before numerical closure. No tolerance relaxation,removed exception kernel,optimizer,model acceptance,nonuniform qualification,accepted phylogeny/reconciliation/calibration or completed biological aims."
+}

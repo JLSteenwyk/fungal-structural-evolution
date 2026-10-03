@@ -264,6 +264,16 @@ Gram/error submatrices and independently checks every entry and rank.
 Numerical review states, original failed/non-ready settings, nonuniform
 controls, full timing/fitting and biological interpretation remain pending.
 
+A [separate full parallel arithmetic reader](docs/full-parallel-covariance-readback-20261003.md)
+is now live with eight bounded cohort workers and the original numerical
+checks and tolerances. Its new retained-basis consumer explicitly waits for
+complete alternate closure, preserving all 1,302,000 audits and 6,220,800 links.
+Original serial jobs and their queued consumers remain intact. The stronger
+alternate-source software gate restores test fixtures byte for byte and
+rehashes all positive-output bindings; the earlier formatting-restoration
+finding is preserved. Neither new full numerical stage is complete, and
+production optimization remains unlaunched.
+
 The [shared-entity likelihood/optimizer backend](docs/shared-entity-likelihood-20261002.md)
 now has analytic ML/REML gradients and explicit nonnegative-boundary checks.
 It passed 36 dense score comparisons, an 80-digit correlated signed example

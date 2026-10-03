@@ -1,0 +1,293 @@
+{
+  "status": "verified_original_alternate_covariance_pipeline_runtime",
+  "checked_utc": "2026-10-03T19:22:52.089722+00:00",
+  "stage": "retained",
+  "plan": "metadata/full_reduced_covariance_qualification_plan_20261003_v2.json",
+  "plan_sha256": "87506fc536ad544dc2a5a41253259608efe16453dad04bd88563e74f3e9f0c3f",
+  "frozen_pins_checked": 28,
+  "original_handles": [
+    {
+      "unit": "fungal-reduced-covariance-parallel-source-v2-20261003-v1.service",
+      "pid": 3431238,
+      "created": 1791054972.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/reduced_covariance_parallel_source_v2_wait_plan_20261003.json",
+      "plan_sha256": "c26c0974f32a7a22a93d2f1c7ee13e6314923ecf77cf365e290d98b7785e9ce7",
+      "checked_utc": "2026-10-03T19:16:13.367826+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-reduced-covariance-parallel-source-v2-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "8791c9952ec2a7f413d7e741549c1986251f76f914ed01043935962bf635a196",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8450048,
+        "memory.peak": 8900608,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service",
+      "pid": 3431277,
+      "created": 1791054972.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/reduced_covariance_parallel_source_v2_readback_wait_plan_20261003.json",
+      "plan_sha256": "ee3024ddba6f4b7df4be49ca572938dd2e1cf416aba4f67caef64d2ba3c64bf8",
+      "checked_utc": "2026-10-03T19:16:13.422097+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "6c1d7a814c2a0b0bcce097108393ac9d94b4e7132c43826b5776309c3c2b5199",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8441856,
+        "memory.peak": 8957952,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service",
+      "pid": 3431321,
+      "created": 1791054972.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/reduced_covariance_parallel_source_v2_closure_wait_plan_20261003.json",
+      "plan_sha256": "c4c97ee8fd9265f73fa299daffa2e41b628fe4e4606f79613c62671180f1a4e5",
+      "checked_utc": "2026-10-03T19:16:13.457749+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/reduced_covariance_parallel_source_v2_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "48a849c3bbb9b00cb0254f3a0c30a28937b82bf4b1d31693cf0ab2c14ace64a0",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8470528,
+        "memory.peak": 8798208,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-parallel-covariance-readback-v1-closure-20261003-v1.service",
+      "pid": 3366594,
+      "created": 1791054048.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/parallel_covariance_readback_v1_closure_wait_plan_20261003.json",
+      "plan_sha256": "3fb845179f9abcf76cd276d1e4fd4589c94a82f5b9592cad2a9963665bc8376f",
+      "checked_utc": "2026-10-03T19:00:49.082166+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-parallel-covariance-readback-v1-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/parallel_covariance_readback_v1_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.22000000000000003,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "cd5d3c2b96c020b9e775f602010b3c43fdbd2c8399353707f3782ec53b07ac1d",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 31805440,
+        "memory.peak": 50884608,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "completion_gates": {
+    "qualification_completion": {
+      "path": "metadata/full_uniform_covariance_parallel_completed_20261003_v1.json",
+      "present": false
+    },
+    "exact_completion": {
+      "path": "metadata/full_exact_covariance_folds_completed_20261003_v2.json",
+      "present": true,
+      "status": "complete_verified_full_exact_uniform_covariance_folds_v2",
+      "sha256": "0b63c0b7da49d2b34dc4b5a8db51fe2cdf6a1200b55afe0b99085f166aa388e5",
+      "declared_source_bindings": 4403,
+      "original_journals": 2,
+      "full_hash_archive_sha256": "9a188f3e30be184531928f48af7122c5ce1b7ee22a6512a2caa74a3d70674569"
+    },
+    "completion": {
+      "path": "metadata/full_reduced_covariance_qualification_completed_20261003_v2.json",
+      "present": false
+    }
+  },
+  "output_root_present": false,
+  "completed_cohort_files": 0,
+  "producer_receipt_present": false,
+  "independent_readback_present": false,
+  "expected": {
+    "logical_cases": 75188,
+    "model_setting_rows": 622080,
+    "unique_cohorts": 4340,
+    "unique_designs": 130200,
+    "audit_rows": 1302000,
+    "setting_audit_links": 6220800
+  },
+  "production_fitting_launched": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command or invocation-linked terminal journals; live cgroup limits/memory and immutable pins checked. Compact closure/archive hashes and available file counts only: no full inherited source replay, independent artifact validation, precise final native peaks, numerical qualification or biological acceptance. A live source-checking child may precede creation of its fresh output root. No restart or mutation."
+}

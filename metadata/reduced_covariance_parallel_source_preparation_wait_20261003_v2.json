@@ -1,0 +1,20 @@
+{
+  "status": "recorded_actual_original_preparation_tool_wait",
+  "recorded_utc": "2026-10-03T19:26:59.670751+00:00",
+  "tool_session_id": 83957,
+  "actual_terminal_exit_code": 0,
+  "original_command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=1073741824",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_and_launch_reduced_covariance_parallel_source.py"
+  ],
+  "launch_inventory": "metadata/full_reduced_covariance_qualification_launches_20261003_v2.json",
+  "launch_inventory_sha256": "65e001fa21bb98be9595becaf1fd7c3296fec7b355becfe93b5e3f6ea6a38269",
+  "captured_outer_preparation_pid": null,
+  "captured_outer_preparation_invocation": null,
+  "scope": "Actual original exec tool session83957 completion returned zero. Original launch PID/create/command/invocation evidence is in the immutable separate launch records. No outer preparation PID or invocation was captured; do not invent an outer process journal or treat a default systemd status as this wait. Source arithmetic/numerical stages are incomplete; this only records preparation transport."
+}

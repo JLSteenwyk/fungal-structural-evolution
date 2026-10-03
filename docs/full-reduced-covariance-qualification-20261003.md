@@ -9,6 +9,12 @@ still pending. Production variance fitting remains unlaunched.
 [Exact proof and variance maps](full-covariance-dependency-review-20261003.md).
 [Original queue and dependency observation](../metadata/full_reduced_covariance_qualification_execution_checkpoint_20261003_1728.json).
 
+An additional V2 consumer now waits for separately closed complete parallel
+arithmetic evidence through an explicit new source adapter. It retains the
+same full numerical grid, principal Grams and error envelopes. The original
+V1 queue above remains unchanged.
+[Alternate source, software restoration finding, resources and current queue](full-parallel-covariance-readback-20261003.md).
+
 ## Complete grid and preserved model
 
 The new stage retains all 130,200 original designs, both loading modes and
