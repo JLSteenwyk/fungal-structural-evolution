@@ -11753,3 +11753,45 @@ and figure review remain next.
   repaired by integrity checks. All eight aims, accepted phylogeny/
   reconciliation/dating and biological control/calibration work remain open.
   [Complete native replay, resource plan and evidence](independent-native-alignment-replay-20261002.md).
+
+
+- October 3, 04:03 UTC (00:03 EDT): checked the user's earlier-error concern.
+  The process-monitor regression passed all seven contracts; the exact ESS
+  regression, 250 binary fixtures and four unrelated altered-metric rejections
+  passed. The actual original failing group/source patterns/saved revised row
+  remain hash-identical. Its numerical discrepancy remains explicit review,
+  with unchanged ordinary tolerances. No matching new failure messages were
+  found in fungal-service journals since the revised launch at 22:49 EDT.
+  The two original native allocation failures remain unresolved.
+  [Recheck evidence](../metadata/project_error_recheck_20261003.json).
+
+  The preceding goal work implemented and launched the complete independent
+  source-to-runtime clade/branch/candidate verification. Forty randomized tree
+  comparisons, a 2,399-node tree, branch-threshold/negative-edge/quoted-label
+  checks, eight invalid correspondences, twelve rehashed false exports and four
+  corrupted source audits passed their acceptance/rejection contracts. The
+  full 1,620-chain synthetic workflow retained both failures and all six intact
+  chains in unresolved groups; interrupted checkpoints stayed byte-identical.
+  This was software verification, not a biological pilot. The immutable 49-pin
+  plan launched under two-CPU/32-GiB/no-swap/BLAS-one limits after complete
+  resource estimates and actual prerequisite journals.
+
+  Full producer, serialized reconstruction and provenance closure are now
+  complete: all 161,156 node pairs, 159,538 nonroot branch pairs, 6,472 candidate
+  node pairs and 653,672 frame mappings passed. Closure binds 51,725 hashes
+  and two original producer/reader journals; the fresh observer verified all
+  three original successful terminal controllers 2735141/2735145/2735152 and
+  the compact archive hash. All 1,618 assumed-root candidates remain conditional;
+  both original failures remain unchanged. No biological root, model or joint
+  posterior was accepted.
+  [Full method and evidence](independent-native-clade-mapping-20261002.md).
+
+  At 04:01 UTC the original categorical producer had 269/405 group checkpoints
+  (267 complete, both failures retained), 1,193,436 patterns and 26,255,592
+  indicators. The native residue producer had 1,599/1,620 chain checkpoints
+  (1,597 intact, both failures retained), 161,297 saved alignments,
+  8,683,202,704 states and 3,782,781,376 cutoff-count cells. These are producer
+  progress; their separate complete serialized/provenance closures remain
+  pending. Original qualification/timing jobs retain six live/eight successful
+  terminal handles; fitting remains unlaunched. No job was restarted during
+  the recheck, GPU prediction stays paused, and all eight aims remain open.

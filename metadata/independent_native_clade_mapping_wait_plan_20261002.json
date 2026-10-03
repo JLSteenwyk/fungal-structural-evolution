@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_native_alignment_inventory_launch_20261002.json",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_independent_native_clade_mapping.py",
+    "--plan",
+    "metadata/independent_native_clade_mapping_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_native_clade_mapping_plan_20261002.json": "2a5ba0076ca08de88eeae21ef0f8b3af151caa486f1606ace66bef3d8d88bb6e",
+    "metadata/independent_native_alignment_inventory_launch_20261002.json": "098b1a36a72e3d88b2e6f3617b42034a117b267ae906a6c297d0e18f627ad585",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

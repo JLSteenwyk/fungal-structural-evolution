@@ -1,0 +1,188 @@
+{
+  "status": "verified_original_native_clade_mapping_runtime_and_unclosed_checkpoint_observation",
+  "checked_utc": "2026-10-03T04:01:17.593940+00:00",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_independent_native_clade_mapping_checkpoint.py": "bfb688c299aeea309bb8517ac31bb6e23b6f3e5a3a0d627001ad82ab0717af29",
+    "metadata/independent_native_clade_mapping_plan_20261002.json": "2a5ba0076ca08de88eeae21ef0f8b3af151caa486f1606ace66bef3d8d88bb6e",
+    "metadata/independent_native_ancestral_alignment_validation_20261002.json": "1ab8eebc0fccbd7e0c94df2bd51b9e9489c4d91c8ce1082717c50231fbd0b957",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_native_ancestral_alignment.py": "b5edcfc37a9e6757270a34a79d642bb91a46a3add9fce6704a704fadda62f9e3",
+    "scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "scripts/prepare_ancestral_state_traces.py": "084cf24b384c3066ee292c87e763142239fb27dcbdb53986a2d1e861b52ec34a",
+    "scripts/ancestral_residue_anchors.py": "cc8c41b12fe946563c0e07b0ef78db65b8978ffbf0919e7afe05011ea615faee",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/inventory_independent_native_ancestral_alignments.py": "755698dfb53c6a60d722dce6b65332e504e2a0a8bd33e855d9142badd15a7323",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_native_alignment_replay.py": "fb7db4226255d8537a2890da553bfb06d27ab39dc4f71a513ddd339395e526b5",
+    "scripts/independent_native_alignment_replay_sources.py": "d9b39d761d3236c0bda47bb496e79afad05ad83c39ae24a475eb67801b9a87a6",
+    "scripts/independent_native_alignment_replay.py": "95b396b4b73062ffa6994917534883597e94ae8e28dc575a51aad59fd060dc02",
+    "scripts/prepare_independent_native_alignment_replay.py": "24bd34427d2c2cff7110a6c0d10a4aeee3723558b16c75c1a11d096698ced065",
+    "scripts/readback_independent_native_alignment_replay.py": "460db05a9493c7fb0afd2ecd1189611512cacf6d67a64ee397b9c97ce5f3bc40",
+    "scripts/check_independent_baliphy_scalar_readback_v2.py": "dc23b053c9f7a3eedd399c7dacc6f91d0f7e4028c7c806db52d083046de7ae35",
+    "metadata/independent_native_alignment_inventory_plan_20261002.json": "a94a979c19f8a4b2635e334603cb997d5b4d6d4065682106140abfa84f110e4d",
+    "metadata/independent_native_alignment_replay_grid_validation_20261002.json": "cb70c1072ad1176cf4290c4538b90d5e1bb1c6fa1bd113dcd5e7b245a0cbf45a",
+    "metadata/independent_native_alignment_replay_resources_20261002.json": "f0c2f44532193d18d375f616ecc11f1b41097b71d5376d0381f2802b31428feb",
+    "metadata/independent_native_alignment_inventory_20261002.json": "4ccc8f306260d917730030414bf5e51673ca068e27c3d899a34fe30e810bbd09",
+    "metadata/independent_native_alignment_inventory_completed_20261002.json": "4a22ff146d34838245d657109c1919a36d4cdfdc600e829943303bd45f47f200",
+    "metadata/independent_native_alignment_inventory_launch_20261002.json": "098b1a36a72e3d88b2e6f3617b42034a117b267ae906a6c297d0e18f627ad585",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "scripts/launch_independent_native_alignment_replay.py": "6aa67e9caec8679497045b712225b311d929efec0dd538e823410bda286f1aba",
+    "scripts/record_independent_native_alignment_replay_checkpoint.py": "0578c5dc82069947523f17d523dd19ac61194ce59b2481e067da0d42e715f274",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/prepare_independent_baliphy_scalar_readback_v2.py": "5c916980472eb6e2028dbf23711fd99f67cc1c0b7dac3480dacb53f3e85f40ee",
+    "environments/independent-native-alignment-verification-20261002.yml": "06b97c1c4fdd68eac490bb35337305622a45e9e60e2348be61feb39164107e6f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_native_clade_mapping.py": "2b65b077191514b11872fda8859c149289c02eb177f7ddb323679e092fe652b0",
+    "scripts/independent_native_ancestral_topology.py": "c0f92cf0c85396a6119270e733355a02e99352d1d915c6730c1977fa867cd98b",
+    "scripts/independent_native_clade_mapping.py": "1521ff3f0e45aca6db6bf2a5cba83b3632139933e3040a169c7982c0ba133b76",
+    "scripts/independent_native_clade_mapping_fixture.py": "90d71c873f530dbcaf2d55c9d8d38409fc7ce60cb673e549397e8049198b0a27",
+    "scripts/prepare_independent_native_clade_mapping.py": "3eae1048862e42d957c0d92456288ef186c814fa521875c86312cd27b3c779ec",
+    "scripts/readback_independent_native_clade_mapping.py": "687fd6e24f018253d4e8655767547c56583e96aa3a14bc0ce915a05002217222",
+    "scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "metadata/independent_native_alignment_replay_plan_20261002.json": "e992c10a887fa4a7b8e8dad4c61a823365a1aa3b76d5303eeba1f57489a71517",
+    "metadata/independent_native_clade_mapping_grid_validation_20261002.json": "9c5ad06d386ae036b74c57c4a8433998e96cdba66d8be045309d066289f2b1a2",
+    "metadata/independent_native_clade_mapping_resources_20261002.json": "594898d42431c549e92cc40b880756761549a6dc3dc5861e6a2f01a8ff6a3c4d",
+    "scripts/launch_independent_native_clade_mapping.py": "ac029497468bfa79447fba54d625614543cfe56c7ab37bcbd9cf08ef630fdea0",
+    "scripts/record_independent_native_clade_mapping_checkpoint.py": "bfb688c299aeea309bb8517ac31bb6e23b6f3e5a3a0d627001ad82ab0717af29",
+    "scripts/independent_ancestral_scalar_diagnostics_v2.py": "8b4a974a58175e0875ecb445755d0b4c5572a1eab389a454aeab9fce4be93ba1",
+    "results/ancestral/case-local-trees-20260927-v1/ancestral_node_mapping.tsv": "a0b224f949abeedfb09a105bdd7ec675a434da710ef5d8ac4333207385191e6e"
+  },
+  "original_handles": [
+    {
+      "launch": "metadata/independent_native_clade_mapping_launch_20261002.json",
+      "pid": 2735141,
+      "created": 1790999121.58,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_native_clade_mapping_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "53a2b7b2ef571edad7f27d24dbe06c9701bdc7dc0d64bbf161ab561ffa3b1bf7",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "cef3fdad6f3e5c79e84ca5be633c11621612a2c7e4e0124bb4c74e29e06e8c4c",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790999418573475",
+          "CPU_USAGE_NSEC": "295648684000",
+          "MEMORY_PEAK": "3571712",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_native_clade_mapping_readback_launch_20261002.json",
+      "pid": 2735145,
+      "created": 1790999121.64,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_native_clade_mapping_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "36174175410edf8625ea4fd51b5c0af754b8970bdd1fff4490acb553fe2a7bfb",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "92d67370cc226604e0f8c3a1debe72121b4add171e81df5e3b0a3a23387aba0f",
+      "captured_process_messages": 11,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790999783832565",
+          "CPU_USAGE_NSEC": "361099478000",
+          "MEMORY_PEAK": "3518464",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_native_clade_mapping_closure_launch_20261002.json",
+      "pid": 2735152,
+      "created": 1790999121.69,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_native_clade_mapping_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "718721cb8f425bcdeddac20adf8279afae5a7627ce61d9d1f0682b834d99160d",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "84b34f671fe3c7a4b6ea5a4f232cfd2784f9dc7ff6d174be66129a7228a4b8a2",
+      "captured_process_messages": 24,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791000017804825",
+          "CPU_USAGE_NSEC": "204723062000",
+          "MEMORY_PEAK": "3641344",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "full_chains": 1620,
+    "checked_chains": 1618,
+    "failed_chains": 2,
+    "full_groups": 405,
+    "complete_groups": 403,
+    "unresolved_groups": 2,
+    "intact_chains_in_unresolved_groups": 6,
+    "effective_input_groups": 135,
+    "node_pairs": 161156,
+    "nonroot_branch_pairs": 159538,
+    "candidate_node_pairs": 6472,
+    "candidate_frame_mappings": 653672,
+    "assumed_root_candidates": 1618,
+    "negative_branch_pairs_require_review": 0
+  },
+  "unclosed_producer_checkpoints": {
+    "chains": 1620,
+    "checked_chains": 1618,
+    "failed_chains": 2,
+    "node_pairs": 161156,
+    "nonroot_branch_pairs": 159538,
+    "candidate_node_pairs": 6472,
+    "candidate_frame_mappings": 653672,
+    "assumed_root_candidates": 1618
+  },
+  "accounting_closure": {
+    "status": "complete_verified_full_independent_native_clade_mapping",
+    "full_chains": 1620,
+    "checked_chains": 1618,
+    "failed_chains": 2,
+    "full_groups": 405,
+    "complete_groups": 403,
+    "unresolved_groups": 2,
+    "intact_chains_in_unresolved_groups": 6,
+    "effective_input_groups": 135,
+    "node_pairs": 161156,
+    "nonroot_branch_pairs": 159538,
+    "candidate_node_pairs": 6472,
+    "candidate_frame_mappings": 653672,
+    "assumed_root_candidates": 1618,
+    "negative_branch_pairs_require_review": 0,
+    "full_hash_archive": "results/ancestral/full-independent-native-clade-mapping-20261002-v1/completion_archive.json",
+    "full_hash_archive_sha256": "54c4a3000a5cd8fa9bcf77e7beae1b4d2f6ecd0eaa1f84d67925cda6ba3887b6",
+    "bound_source_hashes": 51725,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/ancestral/full-independent-native-clade-mapping-20261002-v1/receipt.json",
+    "producer_receipt_sha256": "c08214aa470f15145a639dffd3744408b7fe32f1087a87502850108e48407a12",
+    "independent_readback": "results/ancestral/full-independent-native-clade-mapping-20261002-v1/readback.json",
+    "independent_readback_sha256": "0580c15d27955f5b8ab6b50a22e2c91b5647e45db2b13e18960b7f5651a43dca",
+    "completion_plan_sha256": "3f8af3442e621f2593bd41782c5e4b43f0b41f41815724e12a0218844fddbbfd",
+    "scientific_eligibility": false,
+    "scope": "Full1620original chain identities/405groups/135effectiveinputs.1618intact chains including six in unresolved quartets; two native failures retained. Manual named Newick parser/integer descendant bitsets independently reconstruct all161156source/runtime rooted node pairs and159538nonroot branches, derive all6472candidate node matches from full tips and verify all653672saved-audit candidate frame identities/levels. Exact decimal inputs and rational length differences keep original strict absolute1e-10branch threshold; root edge excluded as in original. Full source/hash graph, immutable wholechain node/candidate reports, full serialized topology replay and two actual original journals gate closure. Both implementations share the new tree decoder, not a third independent algorithm. Original conditional root/tree/model are not biologically accepted; 1618assumed-root candidates explicit. No saved alignment/state decoding, new native inference, GPU or charges/pilot. Adequate sampling/model/root/topology/predictor controls and all eight aims incomplete."
+  },
+  "gpu_inference_paused": true,
+  "all_eight_aims_incomplete": true,
+  "scope": "Exact original PID/create/command or actual completion journal, small frozen pins and live caps observed. Checkpoint totals are unclosed progress, not full serialized/source/journal closure or posterior acceptance. Compact closure archive hash, if present, is checked; this observer does not repeat full topology reconstruction or large-data hashing."
+}

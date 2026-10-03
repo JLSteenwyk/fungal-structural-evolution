@@ -1,0 +1,37 @@
+{
+  "source_plan": "metadata/independent_native_clade_mapping_plan_20261002.json",
+  "producer_receipt": "results/ancestral/full-independent-native-clade-mapping-20261002-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-independent-native-clade-mapping-20261002-v1/readback.json",
+  "producer_status": "complete_full_independent_native_clade_mapping_pending_readback",
+  "reader_status": "passed_full_independent_native_clade_mapping_serialized_readback",
+  "completed_status": "complete_verified_full_independent_native_clade_mapping",
+  "summary_fields": [
+    "full_chains",
+    "checked_chains",
+    "failed_chains",
+    "full_groups",
+    "complete_groups",
+    "unresolved_groups",
+    "intact_chains_in_unresolved_groups",
+    "effective_input_groups",
+    "node_pairs",
+    "nonroot_branch_pairs",
+    "candidate_node_pairs",
+    "candidate_frame_mappings",
+    "assumed_root_candidates",
+    "negative_branch_pairs_require_review"
+  ],
+  "launches": [
+    "metadata/independent_native_clade_mapping_launch_20261002.json",
+    "metadata/independent_native_clade_mapping_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_native_clade_mapping_plan_20261002.json": "2a5ba0076ca08de88eeae21ef0f8b3af151caa486f1606ace66bef3d8d88bb6e",
+    "metadata/independent_native_clade_mapping_launch_20261002.json": "53a2b7b2ef571edad7f27d24dbe06c9701bdc7dc0d64bbf161ab561ffa3b1bf7",
+    "metadata/independent_native_clade_mapping_readback_launch_20261002.json": "36174175410edf8625ea4fd51b5c0af754b8970bdd1fff4490acb553fe2a7bfb",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/independent_native_clade_mapping_completed_20261002.json",
+  "scope": "Full1620original chain identities/405groups/135effectiveinputs.1618intact chains including six in unresolved quartets; two native failures retained. Manual named Newick parser/integer descendant bitsets independently reconstruct all161156source/runtime rooted node pairs and159538nonroot branches, derive all6472candidate node matches from full tips and verify all653672saved-audit candidate frame identities/levels. Exact decimal inputs and rational length differences keep original strict absolute1e-10branch threshold; root edge excluded as in original. Full source/hash graph, immutable wholechain node/candidate reports, full serialized topology replay and two actual original journals gate closure. Both implementations share the new tree decoder, not a third independent algorithm. Original conditional root/tree/model are not biologically accepted; 1618assumed-root candidates explicit. No saved alignment/state decoding, new native inference, GPU or charges/pilot. Adequate sampling/model/root/topology/predictor controls and all eight aims incomplete."
+}

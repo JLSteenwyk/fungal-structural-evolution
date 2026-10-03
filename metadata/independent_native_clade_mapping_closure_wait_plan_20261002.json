@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_native_clade_mapping_launch_20261002.json",
+    "metadata/independent_native_clade_mapping_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/independent_native_clade_mapping_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_native_clade_mapping_completion_plan_20261002.json": "3f8af3442e621f2593bd41782c5e4b43f0b41f41815724e12a0218844fddbbfd",
+    "metadata/independent_native_clade_mapping_launch_20261002.json": "53a2b7b2ef571edad7f27d24dbe06c9701bdc7dc0d64bbf161ab561ffa3b1bf7",
+    "metadata/independent_native_clade_mapping_readback_launch_20261002.json": "36174175410edf8625ea4fd51b5c0af754b8970bdd1fff4490acb553fe2a7bfb",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

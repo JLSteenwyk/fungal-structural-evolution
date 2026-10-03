@@ -1,0 +1,30 @@
+{
+  "status": "verified_no_recurrence_of_monitoring_or_blocking_categorical_error",
+  "checked_utc": "2026-10-03T04:03:09.698773+00:00",
+  "source_hashes": {
+    "metadata/runtime_checkpoint_child_race_validation_20261003.json": "00f329db4e94d88dacb534f73a15954d543f215518fc5fc05397abd15b02f7ad",
+    "metadata/binary_ess_boundary_validation_20261003.json": "b1c60df27dfbc09ca2f979989b6517dbd0bc795421c0bac573611c2a2a2b5b8a",
+    "metadata/independent_baliphy_category_v2_execution_checkpoint_20261003.json": "460ea6a6297223929165a778c15efb12242ae3bf140ff818c257c74cfcd1630c",
+    "metadata/independent_native_alignment_replay_execution_checkpoint_20261003.json": "b91f091fd74cb0d2809279ad16f9b4db348d4197b1ccebea2ceefa4073c17cbc",
+    "metadata/independent_native_clade_mapping_execution_checkpoint_20261003.json": "b2abb62232a982d25fe9626474d5b99aa3d0e9a05917507cdd061a78ab7d2288",
+    "metadata/full_shared_entity_timing_queue_checkpoint_20261003.json": "13c99bedee7db70de18461400c379f00ecc9dd28288f2282d2439e7e5bc05501",
+    "metadata/independent_baliphy_category_v2_boundary_checkpoint_20261002.json": "4c20e60028dd924b635f799abb0fa5495c7b4d68fc34faed6b4a38748882cc55"
+  },
+  "monitor_contracts_passed": 7,
+  "binary_regression_remains_explicit_unresolved_review": true,
+  "binary_random_fixtures_passed": 250,
+  "noncertified_metric_alterations_rejected": 4,
+  "actual_failed_group_artifacts_rehashed": true,
+  "journal_scan_since_local": "2026-10-02 22:49:34 America/New_York",
+  "journal_scan_sha256_at_observation": "448a8b4781b00a3da36b290d12dd3f2c27a5314cde58d474f61d251ebd2ec50c",
+  "matching_failure_messages": [],
+  "categorical_producer_groups_at_checkpoint": 269,
+  "native_replay_chains_at_checkpoint": 1599,
+  "clade_mapping_accounting_closed": true,
+  "original_native_allocation_failures_unresolved": 2,
+  "full_categorical_and_native_residue_closure_pending": true,
+  "jobs_restarted": false,
+  "gpu_inference_paused": true,
+  "scientific_eligibility": false,
+  "scope": "Read-only original runtime checks, regression checks and actual saved boundary artifacts. The exact ESS numerical discrepancy still exists and is retained as review. No matching failures in the specified journal window does not prove all historical project errors resolved; the two native allocation failures remain explicit. Complete new node mapping is conditional on supplied root/tree/model. All eight aims remain incomplete."
+}

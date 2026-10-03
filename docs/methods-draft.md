@@ -2764,3 +2764,26 @@ a third independent implementation. Full production closure, adequate joint
 sampling and biological model/root/topology/predictor qualification remain
 pending.
 [Full method, environment and evidence](independent-native-alignment-replay-20261002.md).
+
+
+### Independent source-to-runtime ancestral topology correspondence
+
+A separate immutable full-scope workflow manually parsed named Newick trees
+and indexed every node by its sorted-tip descendant bitset. Source/runtime
+tip sets and all rooted clades had to match; internal labels and child ordering
+could differ. Finite decimal nonroot edge parameters were compared using exact
+rational subtraction under the original strict absolute difference <1e-10.
+The root edge was excluded as in the original audit. Retained candidate tip
+sets independently identified source/runtime nodes; levels, labels, iterations
+and uniqueness were checked against all saved candidate-audit entries.
+
+The complete producer and full serialized reconstruction verified 161,156
+node pairs, 159,538 nonroot branch pairs and 653,672 candidate-frame mappings
+across all 1,618 intact chains. Closure bound 51,725 source/artifact hashes
+and the two original completion journals. Both failed chains were preserved.
+The serialized reader shares this tree implementation and is not a third
+independent decoder. These checks are conditional on the supplied biological
+root/tree/model and do not establish adequate posterior mixing, root acceptance
+or model adequacy. Raw saved-alignment/state/count reconstruction and
+categorical diagnostic readback proceed as separate full-scope workflows.
+[Implementation, controls and evidence](independent-native-clade-mapping-20261002.md).

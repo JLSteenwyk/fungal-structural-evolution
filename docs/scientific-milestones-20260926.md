@@ -1185,3 +1185,18 @@ state and 4,239,976,576 count cell. Complete serialized replay, source/artifact/
 journal closure, independent clade mapping, adequate sampling, accepted
 biological controls and all eight aims remain open.
 [Execution, methods and resources](independent-native-alignment-replay-20261002.md).
+
+
+### October 3: full conditional ancestral node correspondence closed
+
+All 1,618 intact original chains passed independent reconstruction of 161,156
+rooted node correspondences, 159,538 nonroot branch parameters and 653,672
+candidate-frame mappings, including six intact chains in unresolved quartets.
+Full serialized reconstruction/source/artifact/two-journal closure completed;
+both failed-chain dispositions remain unchanged. The supplied biological root
+and model remain conditional assumptions. Raw residue/count and categorical
+readback closures remain pending. The exact ESS discrepancy remains numerical
+review, although it no longer stops the revised run; both native allocation
+failures remain unresolved. GPU inference stays paused. Accepted framework,
+controls/calibration and all eight biological aims remain incomplete.
+[Evidence and limits](independent-native-clade-mapping-20261002.md).

@@ -1038,3 +1038,22 @@ alignments, 9,732,673,504 state observations and 4,239,976,576 cutoff count
 cells, with complete source/artifact hashes and two exact original journals
 required for closure. No native inference, GPU prediction or new charges.
 [Complete method, controls and resources](independent-native-alignment-replay-20261002.md).
+
+
+## October 3: independently close conditional ancestral node correspondence
+
+Preserve the supplied trees, roots, original mappings, selected attempts, seeds
+and all 1,620 chain identities. Independently reconstruct every rooted clade
+with manual parsing and integer descendant bitsets. Compare nonroot decimal
+branch parameters by exact rational subtraction with the unchanged strict
+absolute threshold of 1e-10; exclude the root edge as in the original audit.
+Keep biological root acceptance false even when all correspondence checks pass.
+Full producer/readback/provenance closure now passed over all 1,618 intact
+chains; both failures retain their original dispositions. The producer and
+reader share the new decoder, so this is not a third independent algorithm.
+No live production source, plan or invocation was changed.
+[Complete verification and limitations](independent-native-clade-mapping-20261002.md).
+
+The error recheck passed the seven monitor contracts and the exact ESS review
+regression. The numerical discrepancy remains review and both native allocation
+failures remain unresolved; passing serialization does not qualify sampling.
