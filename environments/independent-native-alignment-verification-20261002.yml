@@ -1,0 +1,11 @@
+name: independent-native-alignment-verification-20261002
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - psutil=7.2.2
+  - biopython=1.86
+# Production manual decoding/projection does not import Biopython.
+# Software expected-state fixtures use the original projection module.

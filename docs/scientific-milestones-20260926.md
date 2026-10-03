@@ -1169,3 +1169,19 @@ and their projected state/count arrays remains pending; clade identity inherits
 the earlier audit. Adequate mixing, model/root/predictor controls and all eight
 biological aims remain incomplete.
 [Latest evidence](independent-ancestral-categories-20261002.md#exact-ess-boundary-and-full-replacement-october-2-evening).
+
+
+At October 2, 23:12 EDT, the revised categorical producer had passed the
+originally failing group and completed 48 unclosed checkpoints/325,551
+pattern rows/7,162,122 indicators. A freshly hashed actual-source/output
+check reconstructs the exact former failure and confirms its differing ESS
+values remain numerical review. Full categorical closure is still pending.
+
+Complete 1,620-chain native replay software contracts passed, retaining both
+failures and the six intact-unresolved chains. Fourteen rehashed false exports
+and eight source/native alterations were rejected. Full production launched
+at 23:13 EDT for every 163,418 native saved alignment, 9,732,673,504 projected
+state and 4,239,976,576 count cell. Complete serialized replay, source/artifact/
+journal closure, independent clade mapping, adequate sampling, accepted
+biological controls and all eight aims remain open.
+[Execution, methods and resources](independent-native-alignment-replay-20261002.md).

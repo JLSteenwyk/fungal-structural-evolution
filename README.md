@@ -185,9 +185,13 @@ certifies the two rounding outcomes and retains differing values as explicit
 numerical review; ordinary comparison tolerances remain unchanged. All 405
 software workflow cases passed, including the real failing trace and 12
 altered-export rejections. Full serialized replay and provenance closure remain
-pending. A separate native FASTA/Newick decoder passed its software contracts
+pending. The [saved output for the originally failing group](metadata/independent_baliphy_category_v2_boundary_checkpoint_20261002.json)
+has been rechecked and retains its numerical review flag. A separate native FASTA/Newick decoder passed its software contracts
 and the [full 1,620-chain source inventory](metadata/independent_native_alignment_inventory_20261002.json),
-but independently decoding all saved native alignments remains pending.
+and the [complete native sample replay](docs/independent-native-alignment-replay-20261002.md)
+is now running. It covers all 163,418 saved alignments, 9,732,673,504 projected
+states and 4,239,976,576 cutoff-count cells, with both failed chains retained.
+Full raw-sample reconstruction/readback/provenance closure remains pending.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

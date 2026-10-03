@@ -267,3 +267,23 @@ The proposed complete replay uses two CPUs/32 GiB/no swap, a 4-GiB output
 allowance and 104-GiB minimum free disk; its 1–48-hour range per stage is
 uncalibrated and no replay has launched. Adequate sampling, accepted phylogenetic/
 model/root/predictor controls and all eight biological aims remain incomplete.
+
+
+## Actual formerly failing group passed, October 2 at 23:12 EDT
+
+The [fresh actual-source/output checkpoint](../metadata/independent_baliphy_category_v2_boundary_checkpoint_20261002.json)
+rehashed the original pattern/report and the new closed group/cutoff artifact.
+It independently reconstructed pattern 932 in the originally failing group
+and matched the exact saved row. Both differing ESS values and their exact
+zero-pair certificate remain explicit numerical review; this is not numerical
+agreement. At that observation the new producer had 48 complete group
+checkpoints/325,551 pattern rows/7,162,122 declared indicators. Full serialized
+readback/provenance closure remains pending.
+
+The [complete independent native sample replay](independent-native-alignment-replay-20261002.md)
+has now launched after its full 1,620-chain workflow contracts passed. This
+supersedes the inventory's historical unlaunched proposal. It preserves all
+1,618 intact chains, including six in unresolved quartets, and both failures,
+and independently checks every saved alignment/state/count cell. Adequate
+joint sampling and biological posterior/model/root/predictor qualification
+remain open.

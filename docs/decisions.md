@@ -1015,3 +1015,26 @@ verification is separate: manual native decoding and the full 1,620-chain source
 inventory are complete, but saved-block projections/count arrays and independent
 clade identity are not newly qualified. No native sampling/GPU restart follows.
 [Evidence and full replacement](independent-ancestral-categories-20261002.md#exact-ess-boundary-and-full-replacement-october-2-evening).
+
+
+## October 2 evening: execute full independent native sample verification
+
+The complete 1,620-chain software workflow passed, including the six intact
+chains in unresolved quartets and both original failures. Expected arrays use
+the original projection and separate per-label histograms; new production
+uses manual FASTA/Newick/native iteration decoding and coordinate-key integer
+histograms. Preserve all original inputs, seeds, selected complete attempts,
+candidate mappings, cutoffs and state alphabets. Compare every saved state,
+unanchored count and cutoff count cell exactly, then fully reconstruct every
+serialized frame/checkpoint. Source-to-runtime clade identity inherits the
+closed audit and is not newly qualified. Fourteen rehashed false exports and
+eight source/native alterations were rejected; interrupted checkpoints stay
+byte-identical and completed restarts are refused.
+
+The 35-pin full plan launched under two-CPU/32-GiB/no-swap limits after actual
+original inventory/diagnostic completion journals were checked. All original
+and newly launched code/plans remain immutable. Scope is 163,418 saved native
+alignments, 9,732,673,504 state observations and 4,239,976,576 cutoff count
+cells, with complete source/artifact hashes and two exact original journals
+required for closure. No native inference, GPU prediction or new charges.
+[Complete method, controls and resources](independent-native-alignment-replay-20261002.md).

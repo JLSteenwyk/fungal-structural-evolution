@@ -11690,3 +11690,66 @@ and figure review remain next.
   reached in the new full run. All 35/54/53/27/80/14 respective original
   categorical/replacement/qualification/timing/fitting/native-inventory plan
   pins and current validation source hashes remain unchanged.
+
+
+- October 3, 03:18 UTC (October 2, 23:18 EDT): the preceding goal turn made
+  concrete progress by diagnosing/certifying the categorical exact-zero ESS
+  boundary, completing full replacement software tests, launching the 54-pin
+  replacement and publishing its sources/verification records. All original
+  failed invocations and their outputs remain immutable.
+
+  Fresh actual-source and new-output hashing now confirms the revised
+  producer passed the original failed group. The exact saved pattern row
+  reconstructs correctly, retaining both differing ESS values and their
+  exact certificate as unresolved numerical review. At 23:12 EDT, 48 complete
+  group checkpoints/325,551 pattern rows/7,162,122 state indicators were
+  complete. Ordinary tolerance remains strict; full categorical serialized
+  readback/provenance closure is pending.
+
+  Implemented complete independent saved-native alignment/state/count replay
+  for all 1,620 original chain identities and 405 groups. The 1,618 intact
+  chains include all six intact chains in unresolved quartets; the two failures
+  remain explicit. Every runtime label, extant residue identity, candidate
+  length, native iteration, projected state and unanchored count is checked.
+  Fresh coordinate-key bincount histograms in 4,096-coordinate blocks verify
+  both original cutoffs/all 22 labels. Deterministic logical frame records and
+  immutable whole-chain checkpoints undergo full raw re-decoding/serialized
+  reconstruction; source/artifact hashes and two actual original journals
+  gate final closure. Independent clade identity inherits the closed audit.
+
+  The complete software workflow passed 1,620 chains/163,418 saved alignments/
+  653,672 candidate frames, including variable unknown/gap/unanchored patterns
+  and both failures. Expected arrays use the original projection and separate
+  per-label counts. Six histogram fixtures exercise both cutoffs and coordinate
+  block boundaries. Interrupted checkpoints remain byte-identical and completed
+  producer/alternate-reader restarts are refused. Fourteen rehashed false
+  exports and eight native/source-array alterations were rejected. Every
+  production coordinate manifest was censused; the complete source schema
+  is enforced by the final passing tests. Fixture journals are synthetic,
+  not actual production provenance or a biological pilot.
+
+  A 35-pin full production plan launched at 23:13 EDT under original
+  controllers 2716502/2716506/2716513, with the native producer observed live.
+  Scope is all 163,418 saved alignments, 653,672 candidate frames,
+  9,732,673,504 state observations, 708,466 unanchored observations and
+  4,239,976,576 cutoff-count cells. Installed limits are two CPU equivalents/
+  32 GiB/no swap/one BLAS thread; one complete chain is resident at a time.
+  Complete source inventory is 50,066 bindings/65,141,744,592 bytes per
+  full hash pass, with repeated full checks required. Estimated workspace
+  1,058,881,024 bytes is not a hard bound; output allowance four GiB and
+  uncalibrated 1–48 hours per stage are planning, not a finish/convergence ETA.
+
+  At 23:18 EDT the original live native replay completed 20 unclosed chain
+  checkpoints: 2,020 alignments, 502,223,712 state observations, 218,790,528
+  cutoff-count cells and 8,946 unanchored observations. Full initial source
+  hashes passed before decoding; complete independent serialized/artifact/
+  source/journal closure remains pending. All original running/queued jobs
+  remain unchanged. The 14-handle design/qualification/timing/publication
+  observer verified six live originals/eight successful terminal originals
+  and 126 small pins; covariance qualification was live at 642/4,340 cohorts
+  at 23:13 EDT. Full timing remains queued and variance fitting unlaunched.
+  No new native inference, GPU prediction or paid resources; GPU prediction
+  stays paused. Neither native allocation failure nor posterior mixing is
+  repaired by integrity checks. All eight aims, accepted phylogeny/
+  reconciliation/dating and biological control/calibration work remain open.
+  [Complete native replay, resource plan and evidence](independent-native-alignment-replay-20261002.md).

@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_native_alignment_replay_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_independent_native_alignment_replay.py",
+    "--plan",
+    "metadata/independent_native_alignment_replay_plan_20261002.json",
+    "--output",
+    "results/ancestral/full-independent-native-alignment-replay-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/independent_native_alignment_replay_plan_20261002.json": "e992c10a887fa4a7b8e8dad4c61a823365a1aa3b76d5303eeba1f57489a71517",
+    "metadata/independent_native_alignment_replay_launch_20261002.json": "98d79f9b6c7759b7f6ad3f8b045dd0a756097c668b863e61091dc283f577e687",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

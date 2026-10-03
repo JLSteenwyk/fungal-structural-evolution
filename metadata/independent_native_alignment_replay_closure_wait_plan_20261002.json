@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_native_alignment_replay_launch_20261002.json",
+    "metadata/independent_native_alignment_replay_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/independent_native_alignment_replay_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_native_alignment_replay_completion_plan_20261002.json": "af2d667f3f17bc860dca5c82630d6c9d014151e21fdc42cc8366b3b2f8f513d2",
+    "metadata/independent_native_alignment_replay_launch_20261002.json": "98d79f9b6c7759b7f6ad3f8b045dd0a756097c668b863e61091dc283f577e687",
+    "metadata/independent_native_alignment_replay_readback_launch_20261002.json": "7d4b7993e52a9697ded5f115223616b41f868e7a0c993c85fb91480472f1eb18",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

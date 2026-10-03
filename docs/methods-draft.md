@@ -2728,3 +2728,39 @@ unanchored counts and both cutoff count arrays are still pending; clade mapping
 inherits the existing audit. No qualified joint posterior or ancestral structure
 is established.
 [Records, methods and limits](independent-ancestral-categories-20261002.md#independent-native-decoding-inventory).
+
+
+### Full independent saved-alignment and projection verification
+
+The complete selected 1,620-chain grid is retained: 1,618 intact chains,
+two failed chains and all 405 original model groups. The six intact chains
+belonging to unresolved quartets remain included. Manual FASTA/Newick/native
+iteration parsing and sorted extant nongap-column projection independently
+verify every saved alignment against the original state arrays and per-draw
+node-length audit. Concrete observed residues must match; expected input X
+residues retain wildcard semantics. Every candidate residue at a column
+without an extant residue contributes to unanchored counts. All projected
+states and counts require exact equality. Repeated anchors are not independent
+biological observations. Source-to-runtime clade mapping inherits the audit.
+
+Fresh complete trajectories supply both original cutoff histograms using
+integer coordinate/state keys and bincount in 4,096-coordinate blocks.
+Both greater-than iteration cuts retain exactly 75/50 samples per chain,
+all four candidate nodes and all 22 state labels. Full scope is 163,418
+saved samples, 653,672 candidate frames, 9,732,673,504 state observations,
+708,466 unanchored observations and 4,239,976,576 count-array cells. Every
+logical frame is serialized with alignment/projection digests, node lengths
+and unanchored counts; whole-chain checkpoints also bind full-array/count
+digests and source identities.
+
+The complete software grid used original projection/per-label expected
+counts and four variable native templates. All 1,620 identities, both failures
+and six intact-unresolved chains passed full reconstruction/checkpoint tests;
+14 rehashed false exports and eight original-source alterations were rejected.
+Production/readback/closure launched after actual inventory/diagnostic journal
+checks, with full source hashes before and after, two-CPU/32-GiB/no-swap caps
+and a four-GiB output allowance. The reader shares the new decoder; it is not
+a third independent implementation. Full production closure, adequate joint
+sampling and biological model/root/topology/predictor qualification remain
+pending.
+[Full method, environment and evidence](independent-native-alignment-replay-20261002.md).
