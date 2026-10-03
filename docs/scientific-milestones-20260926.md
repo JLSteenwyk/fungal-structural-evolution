@@ -14,7 +14,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 5. Ecological/morphological transitions | Evidence-curated traits and independently verified ESMFold/expanded AlphaFold shared-site coverage | Establish independently replicated usable transitions, preserve ambiguous assignments, and test controlled associations with structural change. A trait's number of labeled tips is not its number of independent origins. See [ecology](ecology-evidence-workflow.md). |
 | 6. Functional locations | Audited residue accessibility and functional correspondences | Join changes to supported core/surface and catalytic/binding annotations; evaluate matched backgrounds and supported interfaces/pockets where evidence permits. Annotation correspondence does not establish activity. See [functional workflow](functional-site-workflow.md). |
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
-| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and full alternate-start comparisons completed; 26,126,280 alternate probabilities independently checked. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. Conditional amino-acid marginals and 20-step diagnostic chains are not final ancestral ensembles. See [ancestral evidence](ancestral-case-inputs.md). |
+| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and alternate-start comparisons completed; 26,126,280 alternate probabilities checked. Full 1,000-iteration recovered overlay: 1,618 intact chains/403 complete quartets/two failures, with verified diagnostic table/figures. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. No complete quartet passes every scalar/length screen. Separate [full numerical scalar readback](independent-ancestral-scalar-readback-20261002.md) is running; conditional marginals and integrity-passing traces are not qualified ancestral ensembles. |
 
 ## Current execution dependencies (updated September 29)
 
@@ -1120,3 +1120,20 @@ six cases; five met all numerical requirements and one retained review. The
 71-pin full-scope draft is unlaunched pending closed original qualification and
 measured runtime. Production numerical acceptance, nonuniform/control variants,
 calibration and the eight biological aims remain incomplete.
+
+
+On October 2 evening, the full design readback/provenance closure completed
+2,374,229 bindings and both original journals. Original uniform covariance
+qualification is active over all 4,340 cohorts; full qualified-input timing stays
+queued and the replacement 80-pin fitting draft remains unlaunched.
+
+Aim 8's separate scalar numerical check closed all 405 groups and 33,046 rows with
+50,449 bindings and two original journals. Defined metrics agree on 30,478 rows; 2,568
+constant-chain rows retain no-metric review. None of the 403 complete quartets
+passes every scalar or candidate-length screen. Separate 22-label categorical
+software passed 84 cases and 16 exact pattern/map fixtures; the full original
+inventory retains 2,032,526 pattern/cutoff rows and 44,715,572 declared indicators.
+Production categorical replay, native parser independence, adequate horizons,
+model/root/predictor qualification and all eight biological aims remain open.
+[Scalar completion](independent-ancestral-scalar-readback-20261002.md),
+[categorical software and complete inventory](independent-ancestral-categories-20261002.md).

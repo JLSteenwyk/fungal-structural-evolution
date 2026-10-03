@@ -1,0 +1,182 @@
+{
+  "status": "preserved_independent_scalar_v1_quantile_boundary_discrepancy",
+  "checked_utc": "2026-10-03T01:14:01.907332+00:00",
+  "original_failed_handles": [
+    {
+      "launch": "metadata/independent_baliphy_scalar_launch_20261002.json",
+      "pid": 2642451,
+      "created": 1790989745.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "dfd123aa525ab81e34d1c8fdb3e00ff90f2387f7801899d9bf86b5b95ad46361",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "bfbe66c00721335012c6b05d314996553f7e2074eb813bcb46cf1ab5f97a805e",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989839619506",
+          "MESSAGE": "fungal-independent-baliphy-scalar-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "823497829d4c4e7d9b7ac049b18bbcca"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989839619825",
+          "MESSAGE": "fungal-independent-baliphy-scalar-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "823497829d4c4e7d9b7ac049b18bbcca"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989839620152",
+          "CPU_USAGE_NSEC": "90041100000",
+          "MEMORY_PEAK": "3784704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_readback_launch_20261002.json",
+      "pid": 2642455,
+      "created": 1790989745.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "c68b7652e44713252ee781218d43756d7a4e3421adbd53ec58c77d99bc03fbf9",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "ca7710b124341e85350147ae9ddff2d2ed9361134cd370ee62a0d70e02cc485c",
+      "captured_process_messages": 14,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989866050513",
+          "MESSAGE": "fungal-independent-baliphy-scalar-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ba7fcac751da4fceb3f918e2c0b80944"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989866050951",
+          "MESSAGE": "fungal-independent-baliphy-scalar-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ba7fcac751da4fceb3f918e2c0b80944"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_closure_launch_20261002.json",
+      "pid": 2642460,
+      "created": 1790989745.15,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "13a1c316143161574e8e45120bccee4b3eb30a10b84d69d4bc79328c114e16a9",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "fb3e71874687751c889433edad401044fe280007c49e32918e2d39fedb102a76",
+      "captured_process_messages": 14,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989866072194",
+          "MESSAGE": "fungal-independent-baliphy-scalar-closure-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "6c1ae9b3d2fd41cc9b9ae414fbb181d2"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989866072412",
+          "MESSAGE": "fungal-independent-baliphy-scalar-closure-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "6c1ae9b3d2fd41cc9b9ae414fbb181d2"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "diagnosis": {
+    "group": "1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package",
+    "kind": "scalar",
+    "cutoff": "250",
+    "variable": "F:pi[A]",
+    "report": {
+      "path": "results/ancestral/baliphy-independent-chain-diagnostics-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package/discard-250/diagnostics.json",
+      "sha256": "2e3eb30b82be14423d2613ce3cd88f62b31304478c38e8816a1845dc32c2c620",
+      "counts": {
+        "passes_scalar_screen_only": 4,
+        "scalar_mixing_requires_review": 33
+      }
+    },
+    "original": {
+      "status": "scalar_mixing_requires_review",
+      "draws_per_chain": 750,
+      "rhat": 1.0102927493336402,
+      "bulk_ess": 359.7800265237428,
+      "tail_ess": 282.5477617367825,
+      "mean_mcse": 0.0006440897481176016
+    },
+    "independent": {
+      "status": "scalar_mixing_requires_review",
+      "draws_per_chain": 750,
+      "rhat": 1.0102927493336402,
+      "bulk_ess": 359.7800265237427,
+      "tail_ess": 285.22669738212136,
+      "mean_mcse": 0.0006440897481176016
+    },
+    "trace_path": "/tmp/independent-baliphy-tail-ess-failure.npy",
+    "trace_sha256": "0eb877b0461d6eea0690cba5c90462bc53c5d47653450ee9a867a4dae1cfeead",
+    "source_pins": {
+      "results/ancestral/baliphy-independent-chain-diagnostics-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package/manifest-250.json": "5e630dc44874ee6273475baea5d784a9f8c0897053bb4c20eda5a38863e309ed",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chains-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package-chain1/attempt-0001/independent-chain-1/C1.log": "ae67de8366450635894ca3be99f8e9efaeb9deba4316bad0a733f4337010ccf3",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chains-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package-chain2/attempt-0001/independent-chain-1/C1.log": "63300b2768e96bb6115e903c510817fd099e89681e7f286fe5cec5590a2c3a68",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chains-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package-chain3/attempt-0001/independent-chain-1/C1.log": "1e4390d5f815a8f2740e51a1bc9a4568b49a08307d0ed6ed1bb554eb3db2f304",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-chains-20260927-v1/1460e6152760deed0e5c05d74a85a91539f07cd965f8cb928038e92aa9fab72d-package-chain4/attempt-0001/independent-chain-1/C1.log": "c3c17cb11341d37b682619502a752dc77dfd033b135b2681e17165acf1d0e630"
+    }
+  },
+  "cause": "The direct-lag ESS matches the FFT ESS on identical binary indicators. NumPy type7 interpolation and locked ArviZ mquantiles differ by one representable floating value at the 5% threshold; a repeated draw changes indicator membership (151 vs150). Original savedtailESS282.5477617367825; NumPy-indicator-tailESS285.22669738212136. This is a quantile/indicator boundary issue, not evidence of repaired native failures or posterior convergence.",
+  "failed_code_pins": {
+    "scripts/independent_ancestral_scalar_diagnostics.py": "6fbbf2dad422b9cbf2968ea62f5f5a5f5414824e09fa993b11cb02a8e139ba82",
+    "scripts/check_independent_ancestral_scalar_diagnostics.py": "a895b0a0347c69973629f852e8182e164d25b2d7fd9dfe0ad3185d1037d93bb5",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/prepare_independent_baliphy_scalar_readback.py": "8c61dd77973819634b7a9cf184ed255a173619a0573d261718d17b62f2e398ba",
+    "scripts/readback_independent_baliphy_scalar_readback.py": "2cc74cbfcb8e43bfbe425f277bd046f09d5f825847594be723eb4442c76fd12f",
+    "scripts/check_independent_baliphy_scalar_readback.py": "d0ae5e8624d71f738381f38041b37bb3310f6bb57be90730de45420b56170df2",
+    "scripts/launch_independent_baliphy_scalar_readback.py": "b516666301deb6b88be150f31025861c684b2495ef99791884ca224d28d8bf95",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "metadata/independent_ancestral_scalar_validation_20261002_v2.json": "3332336ff626c2cbac5c52c265fae15d905b50055a73803997e2b7d011617ea5",
+    "metadata/independent_baliphy_scalar_grid_validation_20261002.json": "6535c1be3cf43916299d03217a64dc2b0c0f310928f4567af5943f3736475b22"
+  },
+  "original_checkpoints_preserved": 44,
+  "native_sampling_affected": false,
+  "native_jobs_restarted": false,
+  "replacement_required": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed_full_independent_baliphy_scalar_grid_and_checkpoint_contracts",
+  "synthetic_full_quartets": 405,
+  "complete_quartets": 403,
+  "unresolved_quartets": 2,
+  "variable_cutoff_rows": 33046,
+  "unchanged_interrupted_checkpoints_reused": true,
+  "completed_producer_and_alternate_reader_restart_refused": true,
+  "rehashed_false_exports_rejected": [
+    "remove_variable",
+    "duplicate_variable",
+    "change_metric",
+    "change_source_disposition",
+    "foreign_report",
+    "promote_science",
+    "hide_unresolved_group"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_baliphy_scalar_readback_v2.py": "dc23b053c9f7a3eedd399c7dacc6f91d0f7e4028c7c806db52d083046de7ae35",
+    "scripts/independent_ancestral_scalar_diagnostics_v2.py": "8b4a974a58175e0875ecb445755d0b4c5572a1eab389a454aeab9fce4be93ba1",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/prepare_independent_baliphy_scalar_readback_v2.py": "5c916980472eb6e2028dbf23711fd99f67cc1c0b7dac3480dacb53f3e85f40ee",
+    "scripts/readback_independent_baliphy_scalar_readback_v2.py": "ab6aec8e6cbfcf93abb9e233c74f355131a8a5aa310d277dfcb239dd7c7d9f74"
+  },
+  "scientific_eligibility": false,
+  "scope": "Full synthetic constant-trace grid/count/serialized/provenance/checkpoint contracts, retaining every405group/two cutoffs/37scalar+4lengthvariables. Source journals and constant diagnostics are fixtures; separate106case oracle contracts test actual nonconstant numerical methods. No production posterior or biological pilot."
+}

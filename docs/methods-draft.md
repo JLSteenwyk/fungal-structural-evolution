@@ -2619,3 +2619,43 @@ with interruption recovery and completed-restart refusal. The 71-pin production
 draft preserves all settings, but closed qualification, full-scope timing,
 actual resource limits and final two-journal/hash closure remain required.
 No production fits or calibrated biological effects are established.
+
+
+## Separate ancestral marginal numerical verification (October 2)
+
+For all 405 original BAli-Phy quartets, retain the 403 complete whole-attempt
+quartets and two unresolved native failures at both original burn-in cutoffs.
+Recalculate all 37 scalar and four candidate-length variables with a separate
+rank/folded split R-hat, bulk/tail ESS and mean Monte Carlo standard-error
+implementation. Direct autocovariance dot products replace the original FFT
+backend; all original thresholds and the 1e-8 absolute-plus-relative comparison
+tolerance remain fixed. Four chains split into equal halves, tied ranks average,
+and odd retained lengths drop the central draw. Tail indicators use the locked
+weighted type-7 arithmetic so representational rounding cannot silently change
+which tied draws enter an indicator. A failed first version demonstrated that
+boundary issue and is preserved with its actual journals and exact raw trace.
+
+The replacement passed 107 locked-oracle fixtures and all 33,046 production
+variable/cutoff rows. Defined metrics agree on 30,478 rows; 2,568 original
+constant-chain rows retain no-metric review. Full raw-trace serialized replay
+reproduced each result, and provenance closure bound 50,449 sources/artifacts and
+both actual original producer/reader journals. Maximum errors are R-hat 4.45e-16,
+bulk ESS 5.30e-11, tail ESS 5.96e-11 and mean MCSE 5.69e-14. The serialized reader uses
+the same separate estimator and is not a third numerical implementation.
+No quartet passes every scalar or candidate-length screen at either cutoff.
+[Complete scalar method and evidence](independent-ancestral-scalar-readback-20261002.md).
+
+Separate categorical software uses histogram counts for all 22 production labels,
+including unknown X and gaps, and the direct-lag backend for binary indicators.
+Every unseen state and constant/singular review remains explicit. Pairwise
+empirical total variation is descriptive, without iid uncertainty claims.
+Lossless lexicographic full-trace grouping restores first-coordinate appearance
+IDs without sorting draws, thinning or relabeling states. 84 locked-oracle
+fixtures, simultaneous code/label permutations, six integer dtypes and 16
+pattern-map cases passed. The complete original source inventory contains
+2,032,526 pattern/cutoff rows and 44,715,572 declared indicator rows. Small metadata
+and archive hashes were rechecked, but the inventory does not repeat the large
+data hash/numerical passes. Complete categorical production replay, independent
+native parsing, adequate horizons and joint posterior/model/root qualification
+remain necessary before accepted ancestral predictions.
+[Categorical contracts, resource inventory and limits](independent-ancestral-categories-20261002.md).

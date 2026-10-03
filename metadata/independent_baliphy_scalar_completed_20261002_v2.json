@@ -1,0 +1,46 @@
+{
+  "status": "complete_verified_full_independent_baliphy_scalar_comparison",
+  "full_quartets": 405,
+  "complete_quartets": 403,
+  "unresolved_quartets": 2,
+  "variable_cutoff_rows": 33046,
+  "source_status_counts": {
+    "scalar:250:scalar_mixing_requires_review": 11716,
+    "scalar:250:passes_scalar_screen_only": 3195,
+    "scalar:500:scalar_mixing_requires_review": 12010,
+    "scalar:500:passes_scalar_screen_only": 2901,
+    "length:250:constant_chain_requires_review": 1265,
+    "length:250:scalar_mixing_requires_review": 347,
+    "length:500:constant_chain_requires_review": 1303,
+    "length:500:scalar_mixing_requires_review": 309
+  },
+  "numeric_comparison_status_counts": {
+    "all_defined_metrics_compared": 30478,
+    "original_disposition_only_no_defined_metrics": 2568
+  },
+  "maximum_absolute_errors": {
+    "rhat": 4.440892098500626e-16,
+    "bulk_ess": 5.297806637827307e-11,
+    "tail_ess": 5.95719029661268e-11,
+    "mean_mcse": 5.684341886080802e-14
+  },
+  "quartets_passing_every_scalar": {
+    "250": 0,
+    "500": 0
+  },
+  "quartets_passing_every_length_scalar": {
+    "250": 0,
+    "500": 0
+  },
+  "full_hash_archive": "results/ancestral/full-independent-scalar-readback-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "dfb61075b3a39053831b94d7d5a7105079bd402463b62dcd8e017b35665959e7",
+  "bound_source_hashes": 50449,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-independent-scalar-readback-20261002-v2/receipt.json",
+  "producer_receipt_sha256": "bc65226c190d89e915ef7ad46ada1a354b1846ba4f097d58506db9fa3c3f36f1",
+  "independent_readback": "results/ancestral/full-independent-scalar-readback-20261002-v2/readback.json",
+  "independent_readback_sha256": "ff1583cb30640bbd03842b9a8aa089903d06dde08b47bc34fa53e9810084689a",
+  "completion_plan_sha256": "26c5a26571b04dede5f253d6e2e0cd9a3a05e21cf8930f4723c82234cc2ea7c2",
+  "scientific_eligibility": false,
+  "scope": "Full closed same-seed whole-attempt recovery-overlay numerical verification for all405quartets, both originalcutoffs, every37scalar+4candidate-length report. Recalculate rawTSV metrics with a separate direct-lag rank/folded Rhat, bulk/tailESS andmeanMCSE implementation thatimportsnoArviZ/project estimator; compare all defined metrics/dispositions atdeclared1e-8absolute+relative tolerance. Constant originalchains retainno-metricreview; exactzero split-withinvariance retainsunresolvedRhat ratherthanfalse numeric agreement. Every originalmodel/input/seed/attempt/source/report identity, scalar nativeaudit log link, allmissing/failuregroups andthresholds retained. Atomic wholequartet checkpoints plusallserialized rows recalculated before fullsource/artifact/twoactualjournal closure. Reader replay uses the same separate estimator andisnotathird implementation; nativealignment parser/categorical metrics/jointposterior qualification remain open. No native sampling/restarts/GPU/newcharges/biologicalpilot orcompletionofaim8/otheraims. Version2 replaces only quantile finite-arithmetic interpolation with an independently calculated weighted type7 convention matching the locked original reports, preserving1e-8comparison tolerances, every405quartet and allsource/diagnostic scientific thresholds. Originalfailedv1code/plan/44checkpoints/3terminalfailureinvocations remain preserved; no native inference/restart."
+}

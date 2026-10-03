@@ -1,0 +1,41 @@
+{
+  "status": "complete_verified_full_expanded_model_designs",
+  "logical_cases": 75188,
+  "selected_records": 4250692,
+  "input_setting_rows": 51840,
+  "model_setting_rows": 622080,
+  "unique_cohorts": 4340,
+  "unique_designs": 130200,
+  "unique_fit_inputs": 260400,
+  "nominal_tree_setting_fits": 3110400,
+  "unique_tree_fit_inputs": 1302000,
+  "design_status_counts": {
+    "full_rank_design": 130200
+  },
+  "fit_input_status_counts": {
+    "ready_for_working_covariance_fit": 260400
+  },
+  "setting_status_counts": {
+    "ready_for_working_covariance_fit": 622080
+  },
+  "largest_cohort": 22934,
+  "cohort_member_occurrences": 34110120,
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "full_hash_archive": "results/phylogeny/full-expanded-model-designs-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "78e310d556316310b5ec9702434a33a8bc874892e5d8c93c98e686a9f2fd51f3",
+  "bound_source_hashes": 2374229,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-expanded-model-designs-20261002-v2/receipt.json",
+  "producer_receipt_sha256": "fbb85ea25ab3ba4ecb7b36fa0b996c5251164aff982e0ce6beeef65e3508776b",
+  "independent_readback": "results/phylogeny/full-expanded-model-designs-20261002-v2/readback.json",
+  "independent_readback_sha256": "ad7acc716f1f2e9b6768a4e12ffb56e2520cb199444c4f8465c5f2fe8211789e",
+  "completion_plan_sha256": "a87e1569ceafafe0f3b4a294e464fcb962c192218c8cfdd0146ef256f119ea08",
+  "scientific_eligibility": false,
+  "scope": "Complete 622,080 expanded fixed model-setting inputs across all guides/policies/54scenarios/masks/eligibility/screens/orders and both responses/two sequence axes/three polynomial degrees, nominally 3,110,400 tree-setting inputs over five working covariance alternatives. Preserve every setting and map exact ordered logical case identities to shared cohort/design/response inputs; never collapse distinct genes or weight memberships as replicates. All declared columns retained in audit; exactly zero contrasts explicitly inactive without approximate term deletion, and nonzero dependencies, absent sequence information, empty/underspecified cohorts, rank boundaries and constant responses require review. Numerical ranks are independently checked by long-double normalization and pivoted QR followed by LAPACK gesvd, and SQLite independently reconstructs every cohort from all original selection links. Raw/scaled design and response hashes, full expanded covariance/entity identity and working tree/source contracts remain bound. Full producer/reader/hash/two-original-journal closure gates acceptance. This is not a variance fit, adequate-model qualification or calibrated evolutionary inference. Nominal input counts precede final shared-entity loading/variance/weight/control variants and are not final scientific fit counts. Expanded covariance fitting, dependence, uneven sampling/missingness/ascertainment, predictor/domain/PAE, accepted species/reconciled gene trees, uncertainty/calibration and all eight scientific aims remain open. GPU prediction stays paused; no charges. Version2 corrects raw ill-conditioned condition-number readback by verifying the exact exported singular-value ratio and its stable reciprocal against independent QR/SVD with a dimension/epsilon error bound. All rank cutoffs and review dispositions remain unchanged; original three version1 queued invocations were stopped and journal-preserved before production began. Version2 boundary contract and all23 altered exports pass before launch."
+}

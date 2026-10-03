@@ -1,0 +1,32 @@
+{
+  "source_plan": "metadata/independent_baliphy_scalar_plan_20261002_v2.json",
+  "producer_receipt": "results/ancestral/full-independent-scalar-readback-20261002-v2/receipt.json",
+  "independent_readback": "results/ancestral/full-independent-scalar-readback-20261002-v2/readback.json",
+  "producer_status": "complete_full_independent_baliphy_scalar_comparison_pending_readback",
+  "reader_status": "passed_full_independent_baliphy_scalar_serialized_comparison_readback",
+  "completed_status": "complete_verified_full_independent_baliphy_scalar_comparison",
+  "summary_fields": [
+    "full_quartets",
+    "complete_quartets",
+    "unresolved_quartets",
+    "variable_cutoff_rows",
+    "source_status_counts",
+    "numeric_comparison_status_counts",
+    "maximum_absolute_errors",
+    "quartets_passing_every_scalar",
+    "quartets_passing_every_length_scalar"
+  ],
+  "launches": [
+    "metadata/independent_baliphy_scalar_v2_launch_20261002.json",
+    "metadata/independent_baliphy_scalar_v2_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_baliphy_scalar_plan_20261002_v2.json": "b4ddd975f62217fd72082afdfe3d5129c267f789a22552a294341a19c0a402b4",
+    "metadata/independent_baliphy_scalar_v2_launch_20261002.json": "ecf6258479e24b3ba753fb1a8419c76f273c994d0e290c2bc3a48185940a1946",
+    "metadata/independent_baliphy_scalar_v2_readback_launch_20261002.json": "e52bd7559ad159e0ccf10aac1188ced03a189a8b0896cdfc0dcf23299bff0ace",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/independent_baliphy_scalar_completed_20261002_v2.json",
+  "scope": "Full closed same-seed whole-attempt recovery-overlay numerical verification for all405quartets, both originalcutoffs, every37scalar+4candidate-length report. Recalculate rawTSV metrics with a separate direct-lag rank/folded Rhat, bulk/tailESS andmeanMCSE implementation thatimportsnoArviZ/project estimator; compare all defined metrics/dispositions atdeclared1e-8absolute+relative tolerance. Constant originalchains retainno-metricreview; exactzero split-withinvariance retainsunresolvedRhat ratherthanfalse numeric agreement. Every originalmodel/input/seed/attempt/source/report identity, scalar nativeaudit log link, allmissing/failuregroups andthresholds retained. Atomic wholequartet checkpoints plusallserialized rows recalculated before fullsource/artifact/twoactualjournal closure. Reader replay uses the same separate estimator andisnotathird implementation; nativealignment parser/categorical metrics/jointposterior qualification remain open. No native sampling/restarts/GPU/newcharges/biologicalpilot orcompletionofaim8/otheraims. Version2 replaces only quantile finite-arithmetic interpolation with an independently calculated weighted type7 convention matching the locked original reports, preserving1e-8comparison tolerances, every405quartet and allsource/diagnostic scientific thresholds. Originalfailedv1code/plan/44checkpoints/3terminalfailureinvocations remain preserved; no native inference/restart."
+}

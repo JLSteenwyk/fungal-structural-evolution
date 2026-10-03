@@ -11545,3 +11545,46 @@ and figure review remain next.
   requirements and all eight biological aims remain incomplete.
   [Recovered figures/counts](baliphy-full-first-horizon-diagnostics-20261002.md#recovered-overlay-publication),
   [timing contracts and limitations](shared-entity-likelihood-20261002.md#full-scope-runtime-preflight).
+
+
+- October 3, 01:36 UTC (October 2 evening EDT): the preceding error-check
+  turn was a verified wait on the original scalar readback controller 2647110
+  and native reader 2649424. The corrected producer had completed all 33,046
+  rows; replay of the exact formerly failing trace agreed at unchanged tolerance.
+
+  The full design provenance closure completed 2,374,229 bindings and both
+  original journals. Original uniform covariance qualification started
+  automatically after that closure and reached 140 of 4,340 cohorts at 21:36
+  EDT. The original reader/closure and full-scope timing pipeline remain queued;
+  the 14-handle observer checked six live/eight terminal originals and 126 small
+  pinned sources. Production variance fitting remains unlaunched.
+
+  Separate ancestral scalar numerical verification now completed every original
+  quartet, both cutoffs and all 33,046 rows: 30,478 with defined metrics and
+  2,568 original constant-chain no-metric reviews. Maximum defined discrepancies
+  were R-hat 4.45e-16, bulk ESS 5.30e-11, tail ESS 5.96e-11 and mean MCSE
+  5.69e-14. All passed the unchanged 1e-8 absolute-plus-relative comparison.
+  Full serialized reconstruction passed, followed by 50,449 bindings and both
+  actual original journals. All three corrected invocations are terminal
+  success; all three failed first-version invocations and 44 partial checkpoints
+  remain preserved. The discrepancy was a tied-percentile rounding boundary,
+  fixed through a new weighted type-7 implementation rather than tolerances.
+  No quartet passes every scalar or length screen; neither native allocation
+  failure was repaired and no ancestral posterior is qualified.
+
+  Added an independent unordered-state/pattern backend and checked 84 cases
+  against the locked oracle over all 22 production labels, including X and gaps.
+  All label permutations, six integer dtypes and 16 exact temporal pattern/map
+  fixtures passed; seven invalid state/alphabet inputs, three invalid pattern
+  inputs and eight false exports were rejected. Twelve singular indicator
+  fixtures retain explicit review. The complete source/resource inventory
+  retains 405 quartets/1,620 IDs and both cutoffs: 2,032,526 pattern rows,
+  44,715,572 declared indicator rows and 22,871,876 coordinates per cutoff.
+  Inventory metadata/archive hashes were checked; its large-data hashes are
+  inherited from the closed archive, not newly replayed numerical evidence.
+  Full categorical production checkpoints/readback, native parser independence
+  and adequate joint sampling remain open. GPU prediction stays paused, and
+  accepted phylogenetic/reconciliation/dating framework, control/calibration
+  work and all eight aims remain incomplete.
+  [Scalar proof](independent-ancestral-scalar-readback-20261002.md),
+  [categorical method, full inventory and next requirements](independent-ancestral-categories-20261002.md).

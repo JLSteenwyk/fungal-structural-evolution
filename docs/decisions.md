@@ -942,3 +942,34 @@ Preserve all search budgets and numerical thresholds in conditional extrapolatio
 Tests cover the complete synthetic grid, genuine six-variance probes and separate
 full eligible selection. Timing agreement does not qualify fits, prove runtime
 bounds or supply a project ETA. Original pinned sources and queues remain fixed.
+
+
+## October 2 evening: preserve failed scalar verification and match finite percentile arithmetic
+
+Keep all 405 quartets at both cutoffs and the original 1e-8 comparison and scientific
+thresholds. The first direct-lag check failed after 44 checkpoints because a tied
+5% percentile rounded one representable float differently under NumPy versus
+the locked weighted type-7 interpolation, changing 150 indicator members to 151.
+Identical indicators gave matching direct-lag/FFT ESS. Preserve that code, plan,
+outputs and all three actual failed invocation journals. A new version computes
+the locked weighted interpolation independently, retaining the exact raw-log
+regression. It passed 107 software cases and the complete production grid of 403
+complete and two unresolved groups, all 33,046 rows, serialized reconstruction
+and closure of 50,449 bindings and two journals. Defined metrics match on
+30,478 rows; 2,568 constant-chain rows
+retain no-metric review. Numerical agreement does not qualify joint sampling.
+
+## October 2 evening: retain unknown residues in full categorical verification
+
+Use every production label ACDEFGHIKLMNPQRSTVWYX-, including X and gaps,
+without imposing amino-acid order. Separate histogram counts, direct-lag binary
+indicator metrics and lexicographic exact temporal grouping from the original
+implementations. Retain every unseen state, original constant-chain disposition,
+singular-split review, seed/input/attempt identity and failed quartet.
+84 software cases and 16 pattern/map fixtures passed with label permutations and
+eight false-export rejections. The full 405-group inventory contains 2,032,526
+pattern/cutoff rows and 44,715,572 indicator rows. Proposed resources are two CPU
+equivalents, 32 GiB, no swap and a 128 GiB output allowance. These are uncalibrated
+planning, not an inference launch or finish ETA.
+Inventory small-source hashes and archive provenance are distinct from the
+required complete large-data numeric replay and native parser qualification.

@@ -1,0 +1,84 @@
+{
+  "diagnostic_completion": "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json",
+  "recovery_completion": "metadata/baliphy_memory_recovery_completed_20261002_v2.json",
+  "diagnostic_closure_launch": "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json",
+  "numerical_validation": "metadata/independent_ancestral_scalar_validation_20261002_v2.json",
+  "grid_validation": "metadata/independent_baliphy_scalar_grid_validation_20261002.json",
+  "output": "results/ancestral/full-independent-scalar-readback-20261002-v1",
+  "completion": "metadata/independent_baliphy_scalar_completed_20261002.json",
+  "completion_plan": "metadata/independent_baliphy_scalar_completion_plan_20261002.json",
+  "launch_inventory": "metadata/independent_baliphy_scalar_launches_20261002.json",
+  "comparison_tolerances": {
+    "atol": 1e-08,
+    "rtol": 1e-08
+  },
+  "resources": {
+    "checked_utc": "2026-10-03T01:09:05.598529+00:00",
+    "cpu_per_stage": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "minimum_free_disk_gib": 104,
+    "output_allowance_gib": 4,
+    "planning_active_hours": [
+      0.5,
+      8
+    ],
+    "runtime_uncalibrated": true,
+    "source_bindings": 50019,
+    "source_bytes_per_full_hash_pass": 65123768767,
+    "scalar_variable_cutoff_rows": 29822,
+    "length_variable_cutoff_rows": 3224,
+    "total_variable_cutoff_rows": 33046,
+    "maximum_native_draws_per_chain": 1001,
+    "maximum_retained_draws_per_chain": 750,
+    "largest_single_variable_array_bytes": 24000,
+    "software_fixture_cases": 106,
+    "software_fixture_seconds": 0.33265915303491056,
+    "available_memory_gib": 311.1846389770508,
+    "free_disk_gib": 10394.029403686523,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "basis": "Full405originalquartet ledger,403complete/2retainedfailures,37scalar+4lengthvariables atboth250/500cuts. StreamingrawTSVs perquartet; atmost4x1001x37float64scalarcells plusboundedlengthcache, groupJSON and50khashmap<2GiBestimated.33046rowJSON/checkpoint/proofoutputs<4GiBallowance. Direct-lag correlation is bounded bymaximum375draw split halves.106software oraclefixtures completed in0.333s; neither mixture nor full file/hash costs give mathematical runtime bound or posterior/project ETA. Multiple full60.65GiB sourcehashpasses are required."
+  },
+  "scope": "Full closed same-seed whole-attempt recovery-overlay numerical verification for all405quartets, both originalcutoffs, every37scalar+4candidate-length report. Recalculate rawTSV metrics with a separate direct-lag rank/folded Rhat, bulk/tailESS andmeanMCSE implementation thatimportsnoArviZ/project estimator; compare all defined metrics/dispositions atdeclared1e-8absolute+relative tolerance. Constant originalchains retainno-metricreview; exactzero split-withinvariance retainsunresolvedRhat ratherthanfalse numeric agreement. Every originalmodel/input/seed/attempt/source/report identity, scalar nativeaudit log link, allmissing/failuregroups andthresholds retained. Atomic wholequartet checkpoints plusallserialized rows recalculated before fullsource/artifact/twoactualjournal closure. Reader replay uses the same separate estimator andisnotathird implementation; nativealignment parser/categorical metrics/jointposterior qualification remain open. No native sampling/restarts/GPU/newcharges/biologicalpilot orcompletionofaim8/otheraims.",
+  "references": [
+    {
+      "title": "Vehtari et al. rank-normalization, folding and localization",
+      "url": "https://arxiv.org/abs/1903.08008",
+      "accessed_utc": "2026-10-03"
+    },
+    {
+      "title": "Stan posterior analysis reference",
+      "url": "https://mc-stan.org/docs/reference-manual/analysis.html",
+      "accessed_utc": "2026-10-03"
+    },
+    {
+      "title": "ArviZ 0.22.0 mean MCSE API",
+      "url": "https://python.arviz.org/en/v0.22.0/api/generated/arviz.mcse.html",
+      "accessed_utc": "2026-10-03"
+    }
+  ],
+  "pins": {
+    "scripts/independent_ancestral_scalar_diagnostics.py": "6fbbf2dad422b9cbf2968ea62f5f5a5f5414824e09fa993b11cb02a8e139ba82",
+    "scripts/check_independent_ancestral_scalar_diagnostics.py": "a895b0a0347c69973629f852e8182e164d25b2d7fd9dfe0ad3185d1037d93bb5",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/prepare_independent_baliphy_scalar_readback.py": "8c61dd77973819634b7a9cf184ed255a173619a0573d261718d17b62f2e398ba",
+    "scripts/readback_independent_baliphy_scalar_readback.py": "2cc74cbfcb8e43bfbe425f277bd046f09d5f825847594be723eb4442c76fd12f",
+    "scripts/check_independent_baliphy_scalar_readback.py": "d0ae5e8624d71f738381f38041b37bb3310f6bb57be90730de45420b56170df2",
+    "scripts/launch_independent_baliphy_scalar_readback.py": "b516666301deb6b88be150f31025861c684b2495ef99791884ca224d28d8bf95",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "metadata/independent_ancestral_scalar_validation_20261002_v2.json": "3332336ff626c2cbac5c52c265fae15d905b50055a73803997e2b7d011617ea5",
+    "metadata/independent_baliphy_scalar_grid_validation_20261002.json": "6535c1be3cf43916299d03217a64dc2b0c0f310928f4567af5943f3736475b22"
+  }
+}

@@ -1,0 +1,9 @@
+name: independent-ancestral-verification-20261002
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - psutil=7.2.2
+# Locked ArviZ oracle tests separately use ancestral-diagnostics-20260927.lock.txt.

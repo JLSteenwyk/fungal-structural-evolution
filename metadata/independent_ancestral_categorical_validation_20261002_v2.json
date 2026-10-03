@@ -1,0 +1,350 @@
+{
+  "status": "passed_independent_ancestral_categorical_contracts",
+  "fixtures": 84,
+  "fixture_names": [
+    "constant-19",
+    "chain-constants-19",
+    "binary-iid-19",
+    "all-labels-iid-19",
+    "unknown-only-19",
+    "unknown-gap-19",
+    "constant-halves-19",
+    "alternating-19",
+    "one-rare-observation-19",
+    "one-constant-chain-19",
+    "chain-frequency-mismatch-19",
+    "sticky-all-labels-19",
+    "constant-20",
+    "chain-constants-20",
+    "binary-iid-20",
+    "all-labels-iid-20",
+    "unknown-only-20",
+    "unknown-gap-20",
+    "constant-halves-20",
+    "alternating-20",
+    "one-rare-observation-20",
+    "one-constant-chain-20",
+    "chain-frequency-mismatch-20",
+    "sticky-all-labels-20",
+    "constant-21",
+    "chain-constants-21",
+    "binary-iid-21",
+    "all-labels-iid-21",
+    "unknown-only-21",
+    "unknown-gap-21",
+    "constant-halves-21",
+    "alternating-21",
+    "one-rare-observation-21",
+    "one-constant-chain-21",
+    "chain-frequency-mismatch-21",
+    "sticky-all-labels-21",
+    "constant-50",
+    "chain-constants-50",
+    "binary-iid-50",
+    "all-labels-iid-50",
+    "unknown-only-50",
+    "unknown-gap-50",
+    "constant-halves-50",
+    "alternating-50",
+    "one-rare-observation-50",
+    "one-constant-chain-50",
+    "chain-frequency-mismatch-50",
+    "sticky-all-labels-50",
+    "constant-75",
+    "chain-constants-75",
+    "binary-iid-75",
+    "all-labels-iid-75",
+    "unknown-only-75",
+    "unknown-gap-75",
+    "constant-halves-75",
+    "alternating-75",
+    "one-rare-observation-75",
+    "one-constant-chain-75",
+    "chain-frequency-mismatch-75",
+    "sticky-all-labels-75",
+    "constant-500",
+    "chain-constants-500",
+    "binary-iid-500",
+    "all-labels-iid-500",
+    "unknown-only-500",
+    "unknown-gap-500",
+    "constant-halves-500",
+    "alternating-500",
+    "one-rare-observation-500",
+    "one-constant-chain-500",
+    "chain-frequency-mismatch-500",
+    "sticky-all-labels-500",
+    "constant-750",
+    "chain-constants-750",
+    "binary-iid-750",
+    "all-labels-iid-750",
+    "unknown-only-750",
+    "unknown-gap-750",
+    "constant-halves-750",
+    "alternating-750",
+    "one-rare-observation-750",
+    "one-constant-chain-750",
+    "chain-frequency-mismatch-750",
+    "sticky-all-labels-750"
+  ],
+  "fixture_status_counts": {
+    "no_observed_state_variation_requires_review": 14,
+    "categorical_mixing_requires_review": 62,
+    "observed_state_indicator_screens_pass_only": 8
+  },
+  "alphabet": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "V",
+    "W",
+    "Y",
+    "X",
+    "-"
+  ],
+  "every_declared_state_compared": true,
+  "label_permutation_cases": 84,
+  "supported_integer_dtypes_compared": [
+    "int8",
+    "int32",
+    "int64",
+    "uint8",
+    "uint32",
+    "uint64"
+  ],
+  "maximum_absolute_errors": {
+    "rhat": 2.220446049250313e-16,
+    "bulk_ess": 5.002220859751105e-12,
+    "tail_ess": 7.73070496506989e-12,
+    "mean_mcse": 1.734723475976807e-17
+  },
+  "singular_indicator_reviews": [
+    {
+      "fixture": "constant-halves-20",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-20",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-21",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-21",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-50",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-50",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-75",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-75",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-500",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-500",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-750",
+      "state": "A",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    },
+    {
+      "fixture": "constant-halves-750",
+      "state": "C",
+      "reason": "rhat_zero_split_within_variance_requires_review"
+    }
+  ],
+  "maximum_permuted_total_variation_roundoff": 2.220446049250313e-16,
+  "invalid_state_inputs_rejected": 7,
+  "altered_exports_rejected": [
+    "count",
+    "frequency",
+    "metric",
+    "status",
+    "missing-state",
+    "tv",
+    "unobserved",
+    "extra-field"
+  ],
+  "exact_pattern_cases": [
+    {
+      "draws": 1,
+      "coordinate_shape": [
+        1
+      ],
+      "patterns": 1
+    },
+    {
+      "draws": 1,
+      "coordinate_shape": [
+        17
+      ],
+      "patterns": 15
+    },
+    {
+      "draws": 1,
+      "coordinate_shape": [
+        4,
+        13
+      ],
+      "patterns": 50
+    },
+    {
+      "draws": 1,
+      "coordinate_shape": [
+        2,
+        3,
+        5
+      ],
+      "patterns": 28
+    },
+    {
+      "draws": 20,
+      "coordinate_shape": [
+        1
+      ],
+      "patterns": 1
+    },
+    {
+      "draws": 20,
+      "coordinate_shape": [
+        17
+      ],
+      "patterns": 15
+    },
+    {
+      "draws": 20,
+      "coordinate_shape": [
+        4,
+        13
+      ],
+      "patterns": 50
+    },
+    {
+      "draws": 20,
+      "coordinate_shape": [
+        2,
+        3,
+        5
+      ],
+      "patterns": 28
+    },
+    {
+      "draws": 50,
+      "coordinate_shape": [
+        1
+      ],
+      "patterns": 1
+    },
+    {
+      "draws": 50,
+      "coordinate_shape": [
+        17
+      ],
+      "patterns": 15
+    },
+    {
+      "draws": 50,
+      "coordinate_shape": [
+        4,
+        13
+      ],
+      "patterns": 50
+    },
+    {
+      "draws": 50,
+      "coordinate_shape": [
+        2,
+        3,
+        5
+      ],
+      "patterns": 28
+    },
+    {
+      "draws": 75,
+      "coordinate_shape": [
+        1
+      ],
+      "patterns": 1
+    },
+    {
+      "draws": 75,
+      "coordinate_shape": [
+        17
+      ],
+      "patterns": 15
+    },
+    {
+      "draws": 75,
+      "coordinate_shape": [
+        4,
+        13
+      ],
+      "patterns": 50
+    },
+    {
+      "draws": 75,
+      "coordinate_shape": [
+        2,
+        3,
+        5
+      ],
+      "patterns": 28
+    }
+  ],
+  "invalid_pattern_inputs_rejected": 3,
+  "arviz_oracle_version": "0.22.0",
+  "numpy_version": "2.2.6",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_ancestral_categorical_diagnostics.py": "04f00da3532b73273ac847fc0bafc6781d0c87c0ec89688fbfc267305826bfb9",
+    "scripts/independent_ancestral_categorical_diagnostics.py": "0477e0cc6a4b7e5bc4b02771d40f6a39e252f358bd8cff2e11ecbf573d32aa76",
+    "scripts/independent_ancestral_scalar_diagnostics_v2.py": "8b4a974a58175e0875ecb445755d0b4c5572a1eab389a454aeab9fce4be93ba1",
+    "scripts/ancestral_categorical_diagnostics.py": "52ab9326030033d88d98c867b61cb8d2e5f98a19ac680f0e21506a5e29f6d6f6",
+    "scripts/ancestral_state_patterns.py": "bb626a3b1bccf857ec13ae1fce6637603204273cac8104d91df1bd1745358571",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585"
+  },
+  "elapsed_seconds": 0.9981773929903284,
+  "scientific_eligibility": false,
+  "production_patterns_replayed": false,
+  "scope": "Software fixtures only: separate counts, all-label indicator metrics, absent states, six descriptive distances, code/label permutation and lossless first-appearance pattern maps. No native parser validation, production posterior or biological pilot."
+}

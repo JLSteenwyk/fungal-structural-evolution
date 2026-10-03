@@ -1,0 +1,274 @@
+{
+  "status": "verified_independent_scalar_v2_closure_and_preserved_v1_failures",
+  "checked_utc": "2026-10-03T01:34:32.170758+00:00",
+  "small_pinned_sources_rehashed": {
+    "metadata/independent_baliphy_scalar_plan_20261002.json": "a315790ae7e0665d200085e44f41a730c552cfd9bdf95ea09378b4f0827ed59d",
+    "scripts/independent_ancestral_scalar_diagnostics.py": "6fbbf2dad422b9cbf2968ea62f5f5a5f5414824e09fa993b11cb02a8e139ba82",
+    "scripts/check_independent_ancestral_scalar_diagnostics.py": "a895b0a0347c69973629f852e8182e164d25b2d7fd9dfe0ad3185d1037d93bb5",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/prepare_independent_baliphy_scalar_readback.py": "8c61dd77973819634b7a9cf184ed255a173619a0573d261718d17b62f2e398ba",
+    "scripts/readback_independent_baliphy_scalar_readback.py": "2cc74cbfcb8e43bfbe425f277bd046f09d5f825847594be723eb4442c76fd12f",
+    "scripts/check_independent_baliphy_scalar_readback.py": "d0ae5e8624d71f738381f38041b37bb3310f6bb57be90730de45420b56170df2",
+    "scripts/launch_independent_baliphy_scalar_readback.py": "b516666301deb6b88be150f31025861c684b2495ef99791884ca224d28d8bf95",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "metadata/independent_ancestral_scalar_validation_20261002_v2.json": "3332336ff626c2cbac5c52c265fae15d905b50055a73803997e2b7d011617ea5",
+    "metadata/independent_baliphy_scalar_grid_validation_20261002.json": "6535c1be3cf43916299d03217a64dc2b0c0f310928f4567af5943f3736475b22",
+    "metadata/independent_baliphy_scalar_plan_20261002_v2.json": "b4ddd975f62217fd72082afdfe3d5129c267f789a22552a294341a19c0a402b4",
+    "scripts/independent_ancestral_scalar_diagnostics_v2.py": "8b4a974a58175e0875ecb445755d0b4c5572a1eab389a454aeab9fce4be93ba1",
+    "scripts/check_independent_ancestral_scalar_diagnostics_v2.py": "675e770535d43ea4f13992f02d9ae61bdca5f5ce508ace29a34e9605b71b0cf2",
+    "scripts/prepare_independent_baliphy_scalar_readback_v2.py": "5c916980472eb6e2028dbf23711fd99f67cc1c0b7dac3480dacb53f3e85f40ee",
+    "scripts/readback_independent_baliphy_scalar_readback_v2.py": "ab6aec8e6cbfcf93abb9e233c74f355131a8a5aa310d277dfcb239dd7c7d9f74",
+    "scripts/check_independent_baliphy_scalar_readback_v2.py": "dc23b053c9f7a3eedd399c7dacc6f91d0f7e4028c7c806db52d083046de7ae35",
+    "scripts/launch_independent_baliphy_scalar_readback_v2.py": "ecf3f380217e24b2e3ed57d27dd9308852dd82959192c39f550dc1d972503f66",
+    "metadata/independent_ancestral_scalar_validation_20261002_v3.json": "820ea68b84357135f17a38a019cc9a68c33fc5caec4468b9de2775b34cb9a40a",
+    "metadata/independent_baliphy_scalar_grid_validation_20261002_v2.json": "64d95be913a7df2d28820bbb890baa6ad41302aff5ca75f3a9b82576a4ae2562",
+    "metadata/independent_baliphy_scalar_v1_failure_20261002.json": "33da20aace22e654a4d8aa406a1059eb41480ab04457053235869c3fd3d83d4e",
+    "results/ancestral/independent-scalar-boundary-regression-20261002-v1/trace.npy": "0eb877b0461d6eea0690cba5c90462bc53c5d47653450ee9a867a4dae1cfeead",
+    "results/ancestral/independent-scalar-boundary-regression-20261002-v1/source.json": "ead7c77f4e8cfc9e442499c53794657baa283440ca0201eff286cb245babef75",
+    "scripts/materialize_scalar_quantile_boundary_regression.py": "5db743033bed8f2c654646eca3de848e0656513b2461a132183869e11ae1fd70"
+  },
+  "original_handles": [
+    {
+      "launch": "metadata/independent_baliphy_scalar_launch_20261002.json",
+      "pid": 2642451,
+      "created": 1790989745.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "dfd123aa525ab81e34d1c8fdb3e00ff90f2387f7801899d9bf86b5b95ad46361",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "adbea8f7fc52ebd78558e403b225b4af3ea5c5e49bf454813de14885090a1d91",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989839619506",
+          "MESSAGE": "fungal-independent-baliphy-scalar-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "823497829d4c4e7d9b7ac049b18bbcca"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989839619825",
+          "MESSAGE": "fungal-independent-baliphy-scalar-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "823497829d4c4e7d9b7ac049b18bbcca"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989839620152",
+          "CPU_USAGE_NSEC": "90041100000",
+          "MEMORY_PEAK": "3784704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_readback_launch_20261002.json",
+      "pid": 2642455,
+      "created": 1790989745.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "c68b7652e44713252ee781218d43756d7a4e3421adbd53ec58c77d99bc03fbf9",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "11a72c96bc3b9e1d6522d788f5aedf9930d097b573038232a50f242680900a1c",
+      "captured_process_messages": 14,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989866050513",
+          "MESSAGE": "fungal-independent-baliphy-scalar-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ba7fcac751da4fceb3f918e2c0b80944"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989866050951",
+          "MESSAGE": "fungal-independent-baliphy-scalar-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "ba7fcac751da4fceb3f918e2c0b80944"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_closure_launch_20261002.json",
+      "pid": 2642460,
+      "created": 1790989745.15,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "13a1c316143161574e8e45120bccee4b3eb30a10b84d69d4bc79328c114e16a9",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "703d8ca18d4bc838cbad478d603383b3e9140fdcf0a2e5e401f6655faac1d800",
+      "captured_process_messages": 14,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790989866072194",
+          "MESSAGE": "fungal-independent-baliphy-scalar-closure-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "6c1ae9b3d2fd41cc9b9ae414fbb181d2"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790989866072412",
+          "MESSAGE": "fungal-independent-baliphy-scalar-closure-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "6c1ae9b3d2fd41cc9b9ae414fbb181d2"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_v2_launch_20261002.json",
+      "pid": 2647106,
+      "created": 1790990259.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_v2_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "ecf6258479e24b3ba753fb1a8419c76f273c994d0e290c2bc3a48185940a1946",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ad675149abbc1b6ea6544c164f791441351dd80a953e0d00dae9ddbb73c9b794",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790990502998564",
+          "CPU_USAGE_NSEC": "241836728000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_v2_readback_launch_20261002.json",
+      "pid": 2647110,
+      "created": 1790990259.41,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e52bd7559ad159e0ccf10aac1188ced03a189a8b0896cdfc0dcf23299bff0ace",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3131e127b3291f49ef2b1e5c9a3944e70e4c28bad7677569c83ceac08128dcb7",
+      "captured_process_messages": 10,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790990840106711",
+          "CPU_USAGE_NSEC": "309485323000",
+          "MEMORY_PEAK": "3514368",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_baliphy_scalar_v2_closure_launch_20261002.json",
+      "pid": 2647117,
+      "created": 1790990259.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_baliphy_scalar_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "b731a27e0e7656d7a2d796fa7e1364511008e7b6dfbd05d3891769472ded3207",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "1a1786edf3995e7dbf9b9e9a683580df896890c0d45c45c7e9f44d510336fc5a",
+      "captured_process_messages": 21,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790991060659927",
+          "CPU_USAGE_NSEC": "199851704000",
+          "MEMORY_PEAK": "2928640",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completion_path": "metadata/independent_baliphy_scalar_completed_20261002_v2.json",
+  "completion_sha256": "547a5d8c560e2cd82708a105131e6042dceafdfdaf0432a9ccdd1795e1d274cd",
+  "completion": {
+    "status": "complete_verified_full_independent_baliphy_scalar_comparison",
+    "full_quartets": 405,
+    "complete_quartets": 403,
+    "unresolved_quartets": 2,
+    "variable_cutoff_rows": 33046,
+    "source_status_counts": {
+      "scalar:250:scalar_mixing_requires_review": 11716,
+      "scalar:250:passes_scalar_screen_only": 3195,
+      "scalar:500:scalar_mixing_requires_review": 12010,
+      "scalar:500:passes_scalar_screen_only": 2901,
+      "length:250:constant_chain_requires_review": 1265,
+      "length:250:scalar_mixing_requires_review": 347,
+      "length:500:constant_chain_requires_review": 1303,
+      "length:500:scalar_mixing_requires_review": 309
+    },
+    "numeric_comparison_status_counts": {
+      "all_defined_metrics_compared": 30478,
+      "original_disposition_only_no_defined_metrics": 2568
+    },
+    "maximum_absolute_errors": {
+      "rhat": 4.440892098500626e-16,
+      "bulk_ess": 5.297806637827307e-11,
+      "tail_ess": 5.95719029661268e-11,
+      "mean_mcse": 5.684341886080802e-14
+    },
+    "quartets_passing_every_scalar": {
+      "250": 0,
+      "500": 0
+    },
+    "quartets_passing_every_length_scalar": {
+      "250": 0,
+      "500": 0
+    },
+    "full_hash_archive": "results/ancestral/full-independent-scalar-readback-20261002-v2/completion_archive.json",
+    "full_hash_archive_sha256": "dfb61075b3a39053831b94d7d5a7105079bd402463b62dcd8e017b35665959e7",
+    "bound_source_hashes": 50449,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/ancestral/full-independent-scalar-readback-20261002-v2/receipt.json",
+    "producer_receipt_sha256": "bc65226c190d89e915ef7ad46ada1a354b1846ba4f097d58506db9fa3c3f36f1",
+    "independent_readback": "results/ancestral/full-independent-scalar-readback-20261002-v2/readback.json",
+    "independent_readback_sha256": "ff1583cb30640bbd03842b9a8aa089903d06dde08b47bc34fa53e9810084689a",
+    "completion_plan_sha256": "26c5a26571b04dede5f253d6e2e0cd9a3a05e21cf8930f4723c82234cc2ea7c2",
+    "scientific_eligibility": false,
+    "scope": "Full closed same-seed whole-attempt recovery-overlay numerical verification for all405quartets, both originalcutoffs, every37scalar+4candidate-length report. Recalculate rawTSV metrics with a separate direct-lag rank/folded Rhat, bulk/tailESS andmeanMCSE implementation thatimportsnoArviZ/project estimator; compare all defined metrics/dispositions atdeclared1e-8absolute+relative tolerance. Constant originalchains retainno-metricreview; exactzero split-withinvariance retainsunresolvedRhat ratherthanfalse numeric agreement. Every originalmodel/input/seed/attempt/source/report identity, scalar nativeaudit log link, allmissing/failuregroups andthresholds retained. Atomic wholequartet checkpoints plusallserialized rows recalculated before fullsource/artifact/twoactualjournal closure. Reader replay uses the same separate estimator andisnotathird implementation; nativealignment parser/categorical metrics/jointposterior qualification remain open. No native sampling/restarts/GPU/newcharges/biologicalpilot orcompletionofaim8/otheraims. Version2 replaces only quantile finite-arithmetic interpolation with an independently calculated weighted type7 convention matching the locked original reports, preserving1e-8comparison tolerances, every405quartet and allsource/diagnostic scientific thresholds. Originalfailedv1code/plan/44checkpoints/3terminalfailureinvocations remain preserved; no native inference/restart."
+  },
+  "gpu_inference_paused": true,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command or actual invocation-linked journals rechecked; both frozen plans and source pins unchanged. Closed50449-binding archive hash/count/summary and producer/readback hashes rechecked. This observer does not repeat the complete large-data hash passes already required by the terminal closure; software/numeric agreement does not repair native failures or establish a qualified posterior."
+}

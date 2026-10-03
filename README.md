@@ -74,8 +74,9 @@ Software checks rejected 18 altered exports; full expanded model fitting
 remains pending. No GPU prediction was resumed.
 The [complete design and recipe inventory](docs/full-expanded-model-designs-20261002.md)
 automatically started after that closure for all 622,080 fixed model-setting
-records. Its original reader has now checked all 4,340 cohorts, 130,200 designs
-and 260,400 response inputs; full source/artifact closure is still running.
+records. Its original reader checked all 4,340 cohorts, 130,200 designs
+and 260,400 response inputs; [full source/artifact closure completed](metadata/full_expanded_model_designs_v2_completed_20261002.json)
+across 2,374,229 bindings and both original journals.
 Both producer and reader report full rank throughout, with original exclusions
 and review rules retained. Software contracts rejected
 23 altered exports, including a corrected rank-boundary diagnostic check in
@@ -98,7 +99,7 @@ checks also audit covariance dependencies after fixed effects are removed;
 these are required before qualifying the final variance models.
 
 The [full uniform covariance qualification stage](docs/full-uniform-covariance-qualification-20261002.md)
-is queued behind original design closure. It retains all 622,080 fixed settings,
+started automatically after original design closure. It retains all 622,080 fixed settings,
 both loading modes and five working trees: 6,220,800 setting/mode/tree links.
 Exact target/residual and family/intercept combinations remove known redundant
 parameterizations; other dependencies remain review states. Reusable kernels
@@ -158,6 +159,25 @@ state/length/category accounting closed 49,902 hashes and three original
 journals. A full scalar-log census and matching-version source review retain
 initialization and allocation concerns separately from post-burn-in mixing.
 Ancestral posterior qualification remains incomplete.
+
+A [separate full-grid scalar numerical check](docs/independent-ancestral-scalar-readback-20261002.md)
+completed all 33,046 scalar/length variable-cutoff rows, retaining both
+failed quartets. A direct-lag implementation passed 107 locked-oracle fixtures
+and complete source/checkpoint contracts. Its serialized reader rebuilt every
+row; [closure](metadata/independent_baliphy_scalar_completed_20261002_v2.json)
+checked 50,449 bindings and both original journals. Defined metrics agree on
+30,478 rows; 2,568 constant-chain rows retain their no-metric review.
+A percentile-boundary discrepancy in its first
+version is preserved; the replacement matches the locked weighted interpolation
+without changing tolerances. Numerical agreement does not qualify a joint
+ancestral posterior or resolve the native allocation failures.
+
+[Separate categorical verification software](docs/independent-ancestral-categories-20261002.md)
+passed 84 locked-oracle cases over the full 22-state alphabet, including unknown
+residues and gaps, label permutations and lossless temporal pattern grouping.
+The complete source inventory retains all 405 groups, 2,032,526 pattern/cutoff
+rows and 44,715,572 declared state-indicator rows. Full production categorical
+numeric replay and independent native-parser validation remain pending.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

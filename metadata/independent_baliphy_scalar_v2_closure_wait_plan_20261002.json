@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_baliphy_scalar_v2_launch_20261002.json",
+    "metadata/independent_baliphy_scalar_v2_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/independent_baliphy_scalar_completion_plan_20261002_v2.json"
+  ],
+  "pins": {
+    "metadata/independent_baliphy_scalar_completion_plan_20261002_v2.json": "26c5a26571b04dede5f253d6e2e0cd9a3a05e21cf8930f4723c82234cc2ea7c2",
+    "metadata/independent_baliphy_scalar_v2_launch_20261002.json": "ecf6258479e24b3ba753fb1a8419c76f273c994d0e290c2bc3a48185940a1946",
+    "metadata/independent_baliphy_scalar_v2_readback_launch_20261002.json": "e52bd7559ad159e0ccf10aac1188ced03a189a8b0896cdfc0dcf23299bff0ace",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

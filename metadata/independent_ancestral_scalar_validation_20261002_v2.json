@@ -1,0 +1,207 @@
+{
+  "status": "passed_independent_ancestral_scalar_direct_lag_contracts",
+  "fixtures": 106,
+  "fixture_names": [
+    "ar-20--0.95",
+    "ar-20--0.5",
+    "ar-20-0.0",
+    "ar-20-0.5",
+    "ar-20-0.95",
+    "iid-20",
+    "location-mismatch-20",
+    "scale-mismatch-20",
+    "heavy-tail-20",
+    "categorical-ties-20",
+    "binary-ties-20",
+    "one-constant-chain-20",
+    "constant-disagreeing-chains-20",
+    "nonfinite-20",
+    "constant-halves-20",
+    "ar-21--0.95",
+    "ar-21--0.5",
+    "ar-21-0.0",
+    "ar-21-0.5",
+    "ar-21-0.95",
+    "iid-21",
+    "location-mismatch-21",
+    "scale-mismatch-21",
+    "heavy-tail-21",
+    "categorical-ties-21",
+    "binary-ties-21",
+    "one-constant-chain-21",
+    "constant-disagreeing-chains-21",
+    "nonfinite-21",
+    "constant-halves-21",
+    "ar-25--0.95",
+    "ar-25--0.5",
+    "ar-25-0.0",
+    "ar-25-0.5",
+    "ar-25-0.95",
+    "iid-25",
+    "location-mismatch-25",
+    "scale-mismatch-25",
+    "heavy-tail-25",
+    "categorical-ties-25",
+    "binary-ties-25",
+    "one-constant-chain-25",
+    "constant-disagreeing-chains-25",
+    "nonfinite-25",
+    "constant-halves-25",
+    "ar-50--0.95",
+    "ar-50--0.5",
+    "ar-50-0.0",
+    "ar-50-0.5",
+    "ar-50-0.95",
+    "iid-50",
+    "location-mismatch-50",
+    "scale-mismatch-50",
+    "heavy-tail-50",
+    "categorical-ties-50",
+    "binary-ties-50",
+    "one-constant-chain-50",
+    "constant-disagreeing-chains-50",
+    "nonfinite-50",
+    "constant-halves-50",
+    "ar-75--0.95",
+    "ar-75--0.5",
+    "ar-75-0.0",
+    "ar-75-0.5",
+    "ar-75-0.95",
+    "iid-75",
+    "location-mismatch-75",
+    "scale-mismatch-75",
+    "heavy-tail-75",
+    "categorical-ties-75",
+    "binary-ties-75",
+    "one-constant-chain-75",
+    "constant-disagreeing-chains-75",
+    "nonfinite-75",
+    "constant-halves-75",
+    "ar-500--0.95",
+    "ar-500--0.5",
+    "ar-500-0.0",
+    "ar-500-0.5",
+    "ar-500-0.95",
+    "iid-500",
+    "location-mismatch-500",
+    "scale-mismatch-500",
+    "heavy-tail-500",
+    "categorical-ties-500",
+    "binary-ties-500",
+    "one-constant-chain-500",
+    "constant-disagreeing-chains-500",
+    "nonfinite-500",
+    "constant-halves-500",
+    "ar-750--0.95",
+    "ar-750--0.5",
+    "ar-750-0.0",
+    "ar-750-0.5",
+    "ar-750-0.95",
+    "iid-750",
+    "location-mismatch-750",
+    "scale-mismatch-750",
+    "heavy-tail-750",
+    "categorical-ties-750",
+    "binary-ties-750",
+    "one-constant-chain-750",
+    "constant-disagreeing-chains-750",
+    "nonfinite-750",
+    "constant-halves-750",
+    "insufficient"
+  ],
+  "fixture_status_counts": {
+    "scalar_mixing_requires_review": 70,
+    "constant_chain_requires_review": 14,
+    "nonfinite_draws": 7,
+    "passes_scalar_screen_only": 14,
+    "insufficient_retained_draws": 1
+  },
+  "maximum_absolute_errors": {
+    "rhat": 2.220446049250313e-16,
+    "bulk_ess": 6.184563972055912e-11,
+    "tail_ess": 9.094947017729282e-13,
+    "mean_mcse": 4.163336342344337e-16
+  },
+  "invalid_chain_shapes_rejected": [
+    [
+      3,
+      30
+    ],
+    [
+      5,
+      30
+    ],
+    [
+      120
+    ]
+  ],
+  "singular_split_variance_fixtures_retained_as_numeric_review": [
+    {
+      "fixture": "constant-halves-20",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": null,
+      "independent_rhat": null
+    },
+    {
+      "fixture": "constant-halves-21",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": null,
+      "independent_rhat": null
+    },
+    {
+      "fixture": "constant-halves-25",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": 6199404860762849.0,
+      "independent_rhat": 6199404860762849.0
+    },
+    {
+      "fixture": "constant-halves-50",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": 6354246513367298.0,
+      "independent_rhat": 6354246513367298.0
+    },
+    {
+      "fixture": "constant-halves-75",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": 6400057834959746.0,
+      "independent_rhat": 6400057834959745.0
+    },
+    {
+      "fixture": "constant-halves-500",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": 6480782600785514.0,
+      "independent_rhat": 6480782600785514.0
+    },
+    {
+      "fixture": "constant-halves-750",
+      "unresolved": [
+        "rhat_zero_split_within_variance_requires_review"
+      ],
+      "original_rhat": null,
+      "independent_rhat": null
+    }
+  ],
+  "altered_numeric_export_rejected": true,
+  "arviz_oracle_version": "0.22.0",
+  "numpy_version": "2.2.6",
+  "elapsed_seconds": 0.33265915303491056,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_ancestral_scalar_diagnostics.py": "a895b0a0347c69973629f852e8182e164d25b2d7fd9dfe0ad3185d1037d93bb5",
+    "scripts/independent_ancestral_scalar_diagnostics.py": "6fbbf2dad422b9cbf2968ea62f5f5a5f5414824e09fa993b11cb02a8e139ba82",
+    "scripts/ancestral_chain_diagnostics.py": "27c7eaa76d7eaded86b04fcefdc5bf265ad0b680eff4d7bfed3f234826fae585"
+  },
+  "scientific_eligibility": false,
+  "scope": "Software direct-lag versus locked FFT numerical comparison, including tied/binary/odd/antithetical/autocorrelated/shifted/heavy-tailed/constant/nonfinite traces. No production posterior, native-parser validation or biological pilot. The independent implementation imports no ArviZ/project diagnostic estimator."
+}
