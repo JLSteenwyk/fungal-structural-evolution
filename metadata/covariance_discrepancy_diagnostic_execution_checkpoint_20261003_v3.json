@@ -1,0 +1,135 @@
+{
+  "status": "verified_original_live_full_cohort_covariance_diagnostic_and_original_serial_reader",
+  "checked_utc": "2026-10-03T20:13:41.055148+00:00",
+  "pending_original_tool_session": 63067,
+  "configuration": "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/configuration.json",
+  "configuration_sha256": "6bbb939691ff5be914f1a15a6eed37e3813e05b3c19d34e5fbc7a8902338b64b",
+  "invocation_id": "bca46dbb4cfb4789afa0a235c6403aa6",
+  "wrapper": {
+    "pid": 58054,
+    "created": 1791058073.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage_v3.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v3.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+    ]
+  },
+  "children": [
+    {
+      "pid": 58119,
+      "created": 1791058073.82,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+        "--output",
+        "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+        "--receipt",
+        "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+      ],
+      "cpu_seconds": 538.67,
+      "rss_bytes": 5416357888,
+      "actual_process_limits": {
+        "address_space": [
+          12884901888,
+          12884901888
+        ],
+        "cpu_seconds": [
+          3600,
+          3600
+        ],
+        "file_bytes": [
+          134217728,
+          134217728
+        ]
+      }
+    }
+  ],
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "original_serial_reader": {
+    "unit": "fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+    "pid": 2522932,
+    "created": 1790978401.12,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+    ],
+    "plan": "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json",
+    "plan_sha256": "4362c5f17f82f572686daadadeb62e8e2f7838342ae9a107474f6b1ef772b861",
+    "checked_utc": "2026-10-02T22:00:01.848746+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "systemd_launch_command": [
+      "systemd-run",
+      "--user",
+      "--collect",
+      "--unit=fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+      "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+      "--property=CPUQuota=200%",
+      "--property=MemoryMax=32G",
+      "--property=MemorySwapMax=0",
+      "--setenv=PYTHONUNBUFFERED=1",
+      "--setenv=OPENBLAS_NUM_THREADS=1",
+      "--setenv=OMP_NUM_THREADS=1",
+      "--setenv=MKL_NUM_THREADS=1",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+    ],
+    "launch": "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 2.21,
+    "children": [
+      {
+        "pid": 3163489,
+        "created": 1791041193.01,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_covariance_qualification.py",
+          "--plan",
+          "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+          "--output",
+          "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/readback.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 16674.03
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "665eae1a9470de314bf2415cb316f5946e6c91614f57fb16eb7b82590a287c69"
+  },
+  "completed_worker_parts": {
+    "worker-serial.json": {
+      "sha256": "f3b4e6e7e24cf6c0160b5af3d19e3492acbaef3c99cb6366101fdbec542b1eb1",
+      "audits": 300,
+      "failed_comparisons": 0
+    }
+  },
+  "expected_complete_numeric_replays": 2700,
+  "production_source_closure": false,
+  "scientific_eligibility": false,
+  "scope": "Actual original V3diagnostic wrapper/child PID/create/command/native limits and cgroup bounds confirmed live now. Original serial reader independently confirmed live. Available serialized worker counts/hashes only; no completed diagnostic or cause/repair, full numerical proof or fitting acceptance. No source edits or original-job restart."
+}

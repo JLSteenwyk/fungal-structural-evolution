@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=3600",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+    "--output",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v2",
+    "--receipt",
+    "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_covariance_discrepancy_diagnostic_stage.py": "5f724a47f57302a7a02f6825673d6ca1a0b380aea73d6fc36cb70ee63dec3a19",
+    "metadata/covariance_discrepancy_diagnostic_resources_20261003_v2.json": "9815785b78231c714860f14b244287d49e03d7ac505ebc6446a781975190ed6c",
+    "scripts/diagnose_parallel_covariance_discrepancy_v2.py": "dd8ae647135e329ad1e25fb90e18a2a630e4fb9b48f9391085609e5425cf2413",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "b77e1af5bf2143069dfa46eb642b3036",
+  "wrapper": {
+    "pid": 4047457,
+    "created": 1791057624.75,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v2.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v2",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-03T20:00:25.551619+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-03T20:03:07.287176+00:00",
+  "child": {
+    "pid": 4047458,
+    "created": 1791057624.85,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=6442450944",
+      "--cpu=3600",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v2",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 161.73531999695115,
+  "child_cpu_seconds": 168.785236,
+  "child_peak_rss_bytes": 4127678464,
+  "receipt": "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2/stderr.log": "0ce73a876a7ef54e7b7695a9070049bbd4c58946f5658cce4d1882e55a5b8a25",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2/configuration.json": "ef23788a6c98dc80620f5995b25f3a1e412a7f9e957080e88571842b052a568e",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2/process.json": "31cb94060ea566b8684d842c56d88bc6c1c4c38268e72ed9fb05502695af1ae8"
+  },
+  "scope": "One original CPU-only read-only source-bound numerical diagnosis with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the diagnostic receipt; no full-grid arithmetic closure, original-output edits, inference, failed-job restart, GPU work, new charges or biological acceptance."
+}

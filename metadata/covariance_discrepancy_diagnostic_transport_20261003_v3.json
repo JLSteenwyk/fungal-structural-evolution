@@ -1,0 +1,41 @@
+{
+  "status": "verified_actual_original_complete_cohort_diagnostic_wait",
+  "checked_utc": "2026-10-03T20:20:23.349311+00:00",
+  "tool_session_id": 63067,
+  "actual_terminal_exit_code": 0,
+  "invocation_id": "bca46dbb4cfb4789afa0a235c6403aa6",
+  "wrapper": {
+    "pid": 58054,
+    "created": 1791058073.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage_v3.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v3.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+    ]
+  },
+  "original_process_messages": 1,
+  "original_completion_resource_records": 1,
+  "complete_numeric_replays": 2700,
+  "failed_comparisons": 0,
+  "exact_serial_thread_agreement": true,
+  "source_hashes": {
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3.json": "f9e50294982a8114e8006e46b5316b2e8a22aaaf2bbd3f1671064143f25b3a10",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/original-invocation-journal.jsonl": "b926034732ed255a743dbe77d0165154c156e4a8acbbd36b2a558e116a27fc35",
+    "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json": "9ea2c810fe404fd8611318fa49886bc9a7fe402705cfb7d76a38f9c4b1985d87"
+  },
+  "scope": "Actual original wait63067 returned zero with exact PID/create/command/invocation-linked completion/resource journals. Complete candidate-cohort2700strict comparisons and all scoped source/artifact hashes freshly checked; no failures. Original full-run single-entry failure remains unreproduced and unexplained; no complete4340cohort arithmetic proof, repair or production fitting acceptance."
+}

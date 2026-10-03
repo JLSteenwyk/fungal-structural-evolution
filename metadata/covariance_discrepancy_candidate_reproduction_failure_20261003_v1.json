@@ -1,0 +1,27 @@
+{
+  "status": "preserved_terminated_supplementary_candidate_reconstruction_command",
+  "recorded_utc": "2026-10-03T20:31:27.853364+00:00",
+  "actual_tool_session": 25679,
+  "actual_terminal_exit_code": 137,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=4294967296",
+    "--cpu=120",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/select_covariance_discrepancy_candidates.py",
+    "--manifest",
+    "metadata/covariance_discrepancy_candidate_selection_20261003_v1.json",
+    "--output",
+    "data/software_audits/parallel-covariance-candidate-reproduction-20261003-v1/candidate-original-audits.json"
+  ],
+  "output_present": false,
+  "captured_original_pid": null,
+  "captured_original_invocation": null,
+  "source_hashes": {
+    "scripts/select_covariance_discrepancy_candidates.py": "0ce8e0d9997e7b4709926e2a41d740631293e23a6fa611946019b8b0b3947a03"
+  },
+  "cause_verified": false,
+  "scope": "Actual execsession25679 terminated137 with no output. No original PID/invocation/resource journal was captured, so the cause is not inferred as a CPU, memory or global-machine failure. This supplemental reproduction command does not supply numerical acceptance. Original diagnostics, qualification, sources and failed roots stay unchanged; new standard-library streaming implementation uses a fresh namespace."
+}

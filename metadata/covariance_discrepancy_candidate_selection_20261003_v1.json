@@ -1,0 +1,56 @@
+{
+  "status": "bound_exact_original_covariance_discrepancy_candidate_selection",
+  "source_plan": "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+  "source_plan_sha256": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+  "producer_receipt": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "6120453f5305a5a6afec5af5ebb0dd7e9460c786f54763d9b9d59fe3109bebef",
+  "original_audit_export": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/design_covariance_audits.jsonl.gz",
+  "original_audit_export_sha256": "b50e85e862e5ce2631498a9464df8e117d3763e1d16831347001d2a8e30e4200",
+  "cohort_id": "02b1cc8a4f14b4951bd3d19789fb94ee39c59f687661c9a94ac0c0ffea8a051f",
+  "candidate_audits": [
+    {
+      "audit_id": "0b32c92e3f2afe91c3952526482864fe2263b3d01f79c6949e4e414ba2507255",
+      "record_sha256": "0261a92759a49a7ef5590d80f65317f6f082057073ba43adf992f7f4907f3348"
+    },
+    {
+      "audit_id": "54ceae6e64ffdb8e54f2ae961fc878585df8eb046e3acf07ece1a0de0acc6627",
+      "record_sha256": "0fb5a41de1e818ee5410c272569ea53672ada33947a4a4f504ed4facc19032b6"
+    },
+    {
+      "audit_id": "899b307ce5e3f66e87cc1ce4d047e224eefb6474b1b0e476ff30d744e002ca71",
+      "record_sha256": "d652a766750b3c32f587c1b822f9ea93a624fc90efbc030f375cc187c7b78dbb"
+    },
+    {
+      "audit_id": "7764d40e9a360b9cf08245fda781d0cc3e21cc6d71a2f9352dd5db1185293cbf",
+      "record_sha256": "6d1e0ae525b936e27b13e5638c94463ecca5738f3d219fd5e90461dca9c40ba0"
+    },
+    {
+      "audit_id": "e5f7af0ee684f4e02003408d0130dae73b47691b0fd1b855f446d8a8369d120b",
+      "record_sha256": "3137f465f1a7f1fcc5ee4499bf4b7e5632bab11feb49a965a9590aca960f16da"
+    },
+    {
+      "audit_id": "7af04894662d41f0b0e8b9778d6b8c935baeaa76f66569def649a35c519051fb",
+      "record_sha256": "0920690d0bd8639548dba4b2b4376e4dd90964dac74e1e3c18ff92db94327aca"
+    },
+    {
+      "audit_id": "206deef8f7766b9bd1482d974fb8596d8380276640a01a9dad7e08fef5792472",
+      "record_sha256": "16c3e77713c87539eb787da8c094418dada47c912ef2319ae813a4f34c85ce12"
+    },
+    {
+      "audit_id": "3257c02343cc1e460a6fd0398655a097627da0f97cd6c5d621194cb0e388fbd3",
+      "record_sha256": "a45e5d614b02ad8c01cac9b505640f4bb3d9299f9e8920f5dc4b493b3c46b103"
+    },
+    {
+      "audit_id": "1c56a41546b214d99746cf416861ca4e4ccde6e638d5beff674727c326482bb3",
+      "record_sha256": "01e0718454b4e4608ce6bf931154295c8414b46c9cdc8eb83767042b79170cf0"
+    },
+    {
+      "audit_id": "ef96abee84521958423ed444d0e1538defbd34d459adbf196912c5cb303d0896",
+      "record_sha256": "06e68cb9b4c855e4c173ca4c3cd16193c65764f06ef4c836818f2a46a34bec17"
+    }
+  ],
+  "candidate_json_sha256": "cb17974243ec46bbaa5233c1430350446a8f4da8824f41d8fa011f4ef37ed44b",
+  "original_diagnostic_candidate_path": "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/candidate-original-audits.json",
+  "scientific_eligibility": false,
+  "scope": "Exact ten diagnostic records and deterministic byte serialization are reconstructible from the unchanged original source audit export. This selected cohort is consistent with rounded failure output, but the original full failure lacks an exact audit identity. Selection is not causal attribution or arithmetic acceptance."
+}

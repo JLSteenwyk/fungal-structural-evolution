@@ -1,0 +1,23 @@
+{
+  "status": "verified_exact_diagnostic_candidate_reconstruction_from_original_export",
+  "checked_utc": "2026-10-03T20:32:20.678534+00:00",
+  "actual_tool_session": 12371,
+  "actual_terminal_exit_code": 0,
+  "candidates": 10,
+  "output": "data/software_audits/parallel-covariance-candidate-reproduction-20261003-v2/candidate-original-audits.json",
+  "output_sha256": "cb17974243ec46bbaa5233c1430350446a8f4da8824f41d8fa011f4ef37ed44b",
+  "selector": "scripts/select_covariance_discrepancy_candidates_v2.py",
+  "limits": {
+    "address_space_gib": 2,
+    "cpu_seconds": 900,
+    "per_file_limit_mib": 128,
+    "blas_threads": 1
+  },
+  "source_hashes": {
+    "metadata/covariance_discrepancy_candidate_selection_20261003_v1.json": "aedcef102aa0b171878341108e91351a67c53e1ce68fc986a0f4f7b073eb5172",
+    "scripts/select_covariance_discrepancy_candidates_v2.py": "e1b06d17e1e964ccf13134affa76834b9f4fcc3d4d49c783d343949803e54595"
+  },
+  "captured_original_pid": null,
+  "captured_original_invocation": null,
+  "scope": "Actual execsession12371 returned zero and independently rehashed reconstructed bytes exactly match the original diagnostic input hash. Standard-library oneMiB streaming hash preserves the original source/export/record/order checks. This routine data-file reconstruction has no captured outer PID/invocation journal and is not source arithmetic closure or numerical acceptance. Failed supplementaryV1command remains preserved."
+}

@@ -1,0 +1,256 @@
+{
+  "status": "verified_original_full_parallel_covariance_failure_and_dependency_failures_preserved",
+  "checked_utc": "2026-10-03T19:46:27.099135+00:00",
+  "original_handles": [
+    {
+      "launch": "metadata/parallel_covariance_readback_v1_launch_20261003.json",
+      "pid": 3366590,
+      "created": 1791054048.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "de3821f8ee3eeb3bfc2a12fad8685a2a0b20ab72959b54a62a25b7f9f7a013c2",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "970780f4e564fe11a0edff9100318d32c1b56b3a77e554337a9ebae0b8e22591",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055795722539",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "494e15ab975846e1b5598ebafe0aefd3"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055795723085",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "494e15ab975846e1b5598ebafe0aefd3"
+        }
+      ],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055795723232",
+          "CPU_USAGE_NSEC": "2234838063000",
+          "MEMORY_PEAK": "3747840",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/parallel_covariance_readback_v1_closure_launch_20261003.json",
+      "pid": 3366594,
+      "created": 1791054048.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/parallel_covariance_readback_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "cd5d3c2b96c020b9e775f602010b3c43fdbd2c8399353707f3782ec53b07ac1d",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "2312b048588e395e296285a73a007bbfc99350bfed2431b37fc9564622b6942d",
+      "captured_process_messages": 69,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055821609148",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-closure-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "dc7fe8265732412283aa20cc275fc581"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055821609457",
+          "MESSAGE": "fungal-parallel-covariance-readback-v1-closure-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "dc7fe8265732412283aa20cc275fc581"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json",
+      "pid": 3431238,
+      "created": 1791054972.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "8791c9952ec2a7f413d7e741549c1986251f76f914ed01043935962bf635a196",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "8b8e9fa042f2a5ffef2e4ea11a777a5abdc8127678ad79f075685dd6bb18c7be",
+      "captured_process_messages": 39,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055844324092",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "c4463bc841e3424cbefd0ceb03bdf89a"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055844324397",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "c4463bc841e3424cbefd0ceb03bdf89a"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json",
+      "pid": 3431277,
+      "created": 1791054972.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "6c1d7a814c2a0b0bcce097108393ac9d94b4e7132c43826b5776309c3c2b5199",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "0bad2edd897916440aec74c121cd563a33969f4ca4685d66f2c392982aa0a746",
+      "captured_process_messages": 40,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055874357557",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "54624fe7f48e4c4ba86a5966218e4ff6"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055874358050",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-readback-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "54624fe7f48e4c4ba86a5966218e4ff6"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_parallel_source_v2_closure_launch_20261003.json",
+      "pid": 3431321,
+      "created": 1791054972.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_parallel_source_v2_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "48a849c3bbb9b00cb0254f3a0c30a28937b82bf4b1d31693cf0ab2c14ace64a0",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "b4621cecf8650b4091cefd31fecf08328614d1d61e8caa5cc204ce214a1b5165",
+      "captured_process_messages": 39,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791055844456550",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "cf92fb23541f4a71a35cff768bcf9976"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1791055844456778",
+          "MESSAGE": "fungal-reduced-covariance-parallel-source-v2-closure-20261003-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "cf92fb23541f4a71a35cff768bcf9976"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "source_hashes": {
+    "metadata/parallel_covariance_readback_v1_launch_20261003.json": "de3821f8ee3eeb3bfc2a12fad8685a2a0b20ab72959b54a62a25b7f9f7a013c2",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/parallel_covariance_readback_v1_launch_20261003-original-journal.jsonl": "712b59ff9477b1b6de56f8f3070ac786d122944b5a6d0bc06f1fdb76d0473ebe",
+    "metadata/parallel_covariance_readback_v1_closure_launch_20261003.json": "cd5d3c2b96c020b9e775f602010b3c43fdbd2c8399353707f3782ec53b07ac1d",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/parallel_covariance_readback_v1_closure_launch_20261003-original-journal.jsonl": "c9b7bd30cb85a429ebdf34c145871b645e29ca0f4a9295972a8bf26039597519",
+    "metadata/reduced_covariance_parallel_source_v2_launch_20261003.json": "8791c9952ec2a7f413d7e741549c1986251f76f914ed01043935962bf635a196",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/reduced_covariance_parallel_source_v2_launch_20261003-original-journal.jsonl": "3f420c766b3d5a2e2cd7794a4ddbf261c817ce7bd9d1c8db07cdd1f05e88bb13",
+    "metadata/reduced_covariance_parallel_source_v2_readback_launch_20261003.json": "6c1d7a814c2a0b0bcce097108393ac9d94b4e7132c43826b5776309c3c2b5199",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/reduced_covariance_parallel_source_v2_readback_launch_20261003-original-journal.jsonl": "e8da3bf43b6e96bf214886e3083e99b2d8cc6681ac6b51c2f5bde9a9b0807e41",
+    "metadata/reduced_covariance_parallel_source_v2_closure_launch_20261003.json": "48a849c3bbb9b00cb0254f3a0c30a28937b82bf4b1d31693cf0ab2c14ace64a0",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/reduced_covariance_parallel_source_v2_closure_launch_20261003-original-journal.jsonl": "eb10520bf6f336fa00356758311530bbe9f70c3dddfbeaf6972125ff6746c9ea"
+  },
+  "partial_artifacts": {
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/stage_plan.json": "f3304208bb4e10b01e654299c5be66ad1df29d39f75e6847acdb0c50c50d1039",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/stage.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01a61b1160774908264ea8900c18f1e29e33883dd95f30349f5b32a370c7e922.json": "3cad807b3c9e59f64ebeb2d4f1d1e7b8e6d3ebf617aac9e78cba65bb1f11c17e",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/007a7988d8d5996ec543f7e826f8ed7c2fb5cfaa584b409fcdb9cbe25e637352.json": "ae8bb89d25d711e685a372eabb10f8de06f1dc8fd92cc8d910f39fb98c92f4ab",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/016aa0c2cd3fb6fadf6f68d329b3a3df1539164ab42183e86682399cf763c869.json": "b1ccb8eb1c83afe87642a53ae765802b86f9b3eb795b630507157be12c0c8a0f",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/00c9462e56f1fcdf34d9e1f94c47c072ea4d26961d46c37b18de57bbc9ddc189.json": "c63baf259aac2946ccd42aa2098ce0caee6245ffe0079bfd9f761c740ddb96ba",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01cdb498b32ed2491055245ad6ccd1b01dfc23de0ac35d2d84d250b432037ce3.json": "af03563abd6f6f02bfc9669b27fa9b7d381ef2d45b0a8ef9fb96fc22a6c76fd7",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01148fb821e68b84b5972bc0373220feee2a500978432a8699fd5ee2e3923dc9.json": "616f47ea9fa30422c01b3d41f791de84c77f04418fbcb7bcd50b2c75fac6d423",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/006f5316d995e5a600508ae69bddde105efb87a0f169d4be12aa221d3cbcff8d.json": "ff9e3832208298787f71412a191de470313e5ed7de11a9dc07932e4033e915eb",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01cca11d15878e3731951019fcb38011a0c9596680f9365beb3249eed75681ec.json": "915ec7008fc3b87981e412a2c33c36ab60feddbf8665da41a11bd0a0488b66a6",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02466cb2d09d31a440a70bdb01ba88d0f448802bb5b743f2aa91a5fde9fd076e.json": "ef58c63f04daa4172bc24f0f2c54382e66f11a6989ea8cd06c7db0860fe7b1ae",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02bb845e45ebe2084857eb3435e39291f2b6b00dbc8d1114f3c7fc9387461e9a.json": "c458368e3d862b2f4f1f7cf2aa77f377c6cdd2a92d8ac4878500ad2629284faa",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0213b3aafa3bf68676b8df243e5b67ee2f65eb7ce7d98ff925b8a301209ab478.json": "7df94665766077c540bd59e431784e6454e05dfde5d4cabdf7bfde110950862d",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0287cacb4707b214c421a18b525ed300cfc4881dfd818f5d6f8790aa176263e6.json": "b9b597408672970a1c6b0975379c206871ca2f899446047d18a519f1bb44f3ef",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0020fd0d2cf4bf66025eeced096fc9f827e1cdfae6a9674033558f55d74f0d25.json": "f7e7f934586b91d2e3e4b8b1152d29940b8a5c15c8096fd8f7b135a14b910597",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01b9ce71ec0704eb93752df6714f78996623fc08a4f53552e0b25b14499419aa.json": "da9608386c3337620eb8a724c40aedccb8abc84c68da9b75796cfb0ea028ad55",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/00e287156af7576ed020125157b1b82e6c3aff4de89ab829e6395821256e84f2.json": "36903f88065db9fc7ae2f185ecc16a93fb4d3e89970358056f7425facab99e94",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/00baf01b7f00b4ce2a223913b88dbb761775f25193c5a1139fd5708490eab953.json": "58da5dc3ffc9aaad439b0b88d3a084e8e49738f4c4152a82b684adba5ea6e2c8",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/020e99ce9004bf8a01a33ae7c2b88b8d4c141615855151b7b70f8f695ae59929.json": "1405e5fc57a54ee4972001e836563e852ee89c021a3f53daf48e3cbb62082f5f",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0290703f7b745266b9d22ef748f45fa689a0d6964c14c7f37d9720814d3bdcb6.json": "da4e67cdaf53a994bde591ed468314d49770bbe6eafe9b20185776e8d537336b",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0219c60dae43d3dbf1d289a8a7a04f34193551be22a92e0bceae5eacc7bd4042.json": "ac1ea193da1f6be818be405f01fc4905feda607656869717bb7417c06edc6253",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01bc087c86c373a6124e326f2be54d98139ee3b0a1b0aa8ac281628894fb3cb1.json": "e758ceac42e948c8391c1e57fa11aec282de54c260faae859b52f43c9170cc4b",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01075deb4dca02b81b70e9736c809a02e280f8eb4281545a9be7f3f9eef797cb.json": "6f1bbc0792f9d8963a0cfce2c21c922d6f0d076ff5a2cb9992927379baf5bb04",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/004d4ac24ca51569f4055a43f8e8ad4a7fcc62cbc2121f1e0f80c29fb8fdb787.json": "87ab7f46bf05dbe5cebafa3dd8d8fcbf36348ae01deed485c2ba5b1e85fdf48f",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02a988e9cc060d04dda98dea43ab1d6a1713b9bfbe8c197a4a5d124bd49adc52.json": "c48dc45d1695b507e7a0931581b23c9ccc3067f3fab251e62913af311c2f1eae",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/00802bb7f3219d2c61003b9a1d2538b4e19f7103f9e48fa0a6e39c3893b7f174.json": "57f4bf995b7ea70ab83c0fa181ea8d355c9ae6a90f4402a2d76c15c11e092a13",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/014a8074046c423760408dad2e6a4d5e676679d3c9d8c96b6eaf682416d01d14.json": "55db4bab5b63055ced885eecb68cd5f8b998e620623698bee4dde21a2a0b9d13",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01db71928be11892ccb090a135c88e3d73f47588037cf213d7b11137ab54423b.json": "7c52548da6eab5500c2f3cfff7182dc4e37d5b7b099a5659e4acd43fda5c4a3a",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/026c77b4aadf9254c8b974b1690463cab8403cabcc67e16f8cd44f044eec4298.json": "b5f172b7b39f1de1de7e31f6fc7924451ac58a9f28b19f3983f85295246d4d83",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/026cc25e76f637a703e53c5b37eafbd40ed55618a1e286448ae122b4b35b53be.json": "fa1eeb5259c171dbd45e76ff97aefbf450f984c867607ce01d5eff27c1a42f22",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/010eab60a9433d02f1d1165b8c56d642051ffc4a320043f1caeda3b3634bd0e1.json": "c07a261b437f24d5ad7c3b6e1115bda4b521da54b78cc7b4245d98b552f74197",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/019dd7edaac66940248201d8edd56dd9a3670e357104b2c94b4799b72bf32b2d.json": "12a10934e5ffb6e016e28e9eb4ebe0c86302200d588fece15a375be6ee385e1d",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0231686cc610a8caf62469a425178fe33bd25be57bbd1328c57d51be391db63a.json": "3e05a454199aff87eefc87ca8f72d1dfa750d7c32a951addb600f9f97292f9e4",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0048acecedff58f822f00506fdc275281324bd8f298921cd58b25dd3fc2c5c63.json": "4982b277ade21577b4f2d618a493e71141edf4d0fa586815d8c72b46b1de4489",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01553ded85021e7d0c19e36a2cdead1c1a248f9b590d70e1dbff31feba50e864.json": "3cec21a7ab29073c3ebc826a818322614d305ef44603c7172463049df7a24e3c",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02208a643c0097966e13f7a0eb371a84bd3978c0f050efd6add640582898ff4f.json": "abae20384ede88c36764b070a3d452a59e217a13bc04fe1a3f8ae5647a19dd14",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0130f848daf3eca5dd8907a807c32a71a29d7c30de801e1ed9bd0ef063dc61c4.json": "bc1e65917a4f38b3ef0b49e174b143b47014b9b39f0d4e36b317320761a53990",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0091747dee6b26ee008d3c1a2a12f596ac3be516be92c879a8747e50a4af9c5c.json": "ed2aec6df3a8c8a9066130a8588fa0ca9ea935bca06cce7de988ba0bc3ec0193",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/004eef7de6deb66390d7599400e187e73d1bfe4d16bd2e068e4e484c398b3772.json": "3eb130da16f1855e88282141b35c0ae17731cf66e64a492c1bc96d586a4fcacd",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/024dcb1d1b9894c589f360c32bf49c48fa02e760648fa01d7dba59850b439d29.json": "31f0027a6a5cf4f49e5d894f6b9e567498ac7deea7565318a602303d0549d658",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02bddaab22ba1ac2f0319dcb4385c2e66f4a95a80b354490b4dec2197a5ef194.json": "c5951f9d9477914d0d797f812c6e436ef8e831957e671553912ffc6aff2c7d3a",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/01a1a40616fd72b6ec6345de00b03e46f9b5ca37b57af69357c718f241bef7a0.json": "9fca82789a3fa4f15417c903cbbf30952330ddf8b608ef4147f6ea73c4b8e096",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/02bf3da1b4c18cd8fe07f11b5b4e4876e14d4a42567e3ae14fcb566200e8a596.json": "a00094c18c3d88877914ee54d62b4c7d5e549715d09cf2503129f7d1fe94350a",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/004003abe077c7b564eccd2d7c4aef04f02f7f57e26643f693a27a0ec87ecd41.json": "f9e163c2e816e291b69b01ed52b5bab116e50313d65bbdb888d9b318b84fd24e",
+    "results/phylogeny/full-uniform-covariance-parallel-readback-20261003-v1/cohorts/0218bb386c08bce0d194bf8caa770f38cc078514e5ea9163d33a0cb36e96562b.json": "2e785aedb6faa68d8cffc416bd4421eb99ed7762a5936eef7c68efef2372a63e"
+  },
+  "completed_cohort_reports": 43,
+  "full_cohorts": 4340,
+  "full_audits": 1302000,
+  "full_setting_links": 6220800,
+  "completion_present": false,
+  "independent_gram_discrepancy_requires_diagnosis": true,
+  "frozen_rtol": 3e-09,
+  "frozen_atol": 2e-08,
+  "reported_max_absolute_mismatch": 0.00343227,
+  "reported_max_relative_mismatch": 1.11723156e-07,
+  "downstream_production_numerical_execution_started": false,
+  "production_fitting_launched": false,
+  "native_restarts": 0,
+  "scope": "Exact original five failed PID/create/command/invocation journals and all43partial cohort output hashes retained. Parallel reader failed a single projected-Gram entry comparison; downstream closure/numerical queues correctly refused failed dependency. Traceback does not uniquely identify the audit or establish its cause. No tolerance change, source repair, completed arithmetic closure or numerical acceptance. Original serial reader remains separate and was observed live."
+}

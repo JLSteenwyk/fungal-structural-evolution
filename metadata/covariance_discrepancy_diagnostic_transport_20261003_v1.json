@@ -1,0 +1,38 @@
+{
+  "status": "verified_actual_original_read_only_discrepancy_diagnostic_wait",
+  "checked_utc": "2026-10-03T20:03:53.795955+00:00",
+  "tool_session_id": 97237,
+  "actual_terminal_exit_code": 0,
+  "invocation_id": "22d7e3f710884686bc91ec25119c7a4d",
+  "wrapper": {
+    "pid": 4041429,
+    "created": 1791057298.66,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v1.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v1",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v1.json"
+    ]
+  },
+  "original_process_messages": 1,
+  "original_completion_resource_records": 1,
+  "source_hashes": {
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v1.json": "2bd8e48ee75d633749c43b2697feabeaea8d60e975f0df36fd948d827346ef26",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v1/original-invocation-journal.jsonl": "94d930c96d583de356baad50e1af72df9cdc0463b4b4fbdf0f23281576e62032",
+    "metadata/covariance_discrepancy_diagnostic_validation_20261003_v1.json": "21f5823a4d1676a8edfdd6ac80639741675c399dddff8e11df0f294a20e7459e"
+  },
+  "scope": "Exact original diagnostic wait/PID/create/command/invocation journal and fresh scoped source/artifact replay. Candidate-only serial/eight-thread results pass, but do not establish the failed full-run cause, repair or complete arithmetic acceptance."
+}

@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=900",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_shared_entity_candidates.py",
+    "--output",
+    "data/software_audits/retained-candidate-20261003-v1",
+    "--receipt",
+    "metadata/retained_candidate_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_retained_candidate_software_stage.py": "fc43968de3961f30d6d048ff528da8a963606b579e3e93b385f27082d2601377",
+    "metadata/retained_candidate_software_resources_20261003_v1.json": "0dc64f0d0dfe9b60dd83a61233d06b68b2c5e1b152fb5894873c0b33938be09e",
+    "scripts/check_retained_shared_entity_candidates.py": "ba170584e0b2806c10b0a59d27d78f43d8adf1237dbe61009bfbc7f4795bd47f",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "bfe257fcab00417e8192c6cdd8a12d50",
+  "wrapper": {
+    "pid": 4022350,
+    "created": 1791056302.61,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_candidate_software_stage.py",
+      "--resources",
+      "metadata/retained_candidate_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/retained_candidate_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/retained_candidate_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_shared_entity_candidates.py",
+      "--output",
+      "data/software_audits/retained-candidate-20261003-v1",
+      "--receipt",
+      "metadata/retained_candidate_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1200,
+  "started_utc": "2026-10-03T19:38:23.414322+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T19:38:32.266751+00:00",
+  "child": {
+    "pid": 4022352,
+    "created": 1791056302.72,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=6442450944",
+      "--cpu=900",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_shared_entity_candidates.py",
+      "--output",
+      "data/software_audits/retained-candidate-20261003-v1",
+      "--receipt",
+      "metadata/retained_candidate_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 8.85225688898936,
+  "child_cpu_seconds": 8.823481000000001,
+  "child_peak_rss_bytes": 116391936,
+  "receipt": "metadata/retained_candidate_software_validation_20261003_v1.json",
+  "receipt_sha256": "1d1420c96002a262f93bbb65810fe232a6ab1cdcea2ff38de463f1c5776f361f",
+  "artifacts": {
+    "metadata/retained_candidate_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_candidate_software_execution_20261003_v1/configuration.json": "81d81c075fa759811d8354555587e569c5818ecb3e26e892919ba4daa2ec883c",
+    "metadata/retained_candidate_software_execution_20261003_v1/stdout.log": "9e857648f1367e9c072629119b5e21449d113480f08e4633ec2ea8b7816c7793",
+    "metadata/retained_candidate_software_execution_20261003_v1/process.json": "60cba056e1712c172a6c2078c39fcbc5661105035547d4954bd554831d4efedf"
+  },
+  "scope": "One original CPU-only retained-candidate synthetic numerical qualification with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the checker receipt; no real full-grid source closure, production fitting, GPU work, new charges or biological acceptance."
+}

@@ -1413,3 +1413,29 @@ evidence. Live handles or missing fresh roots do not establish completion or
 failure. Full numerical closure and measured complete-scope timing precede
 production fitting; all biological aims remain open.
 [Method, resources, finding and execution evidence](full-parallel-covariance-readback-20261003.md).
+
+## October 3: retain two fitting guards and preserve failed full arithmetic
+
+Require both the inherited exact principal-Gram/error-envelope qualification
+and the fresh retained-incidence backend qualification before numerical fits.
+Their envelopes differ with incidence widths and are distinct evidence; never
+replace the inherited values with a narrower fresh bound. Bind the original
+and retained audit and integer certificate into each candidate, preserve all
+non-ready/reviewed source states and retain the fifth pair term in exceptions.
+Keep original multistart/boundary/precision and independent spectral/search
+tolerances. Component software evidence cannot establish whole-grid fitting,
+full runtime, calibration or accepted biological effects.
+
+Preserve the full parallel reader's single-entry mismatch and all five actual
+dependency failures. No closure is emitted and no failed original root is
+restarted. Candidate-only replay success does not establish the cause. Use a
+separate complete-cohort read-only diagnostic, recording every exact audit.
+Preserve its V2 address-space failure after 300 successful serial comparisons;
+the fresh V3 diagnostic changes only scoped memory allowances and output
+namespace. It retains all 2,700 serial/concurrent comparisons, eight contexts,
+two modes, five trees and numerical tolerances. A verified cause/correction
+precedes any replacement full arithmetic or numerical launch. The original
+serial queue is not redirected. The ancestral follow-up timeout likewise
+remains an explicit unsuccessful attempt, distinct from initialization
+SIGSEGV correction and adequate posterior evidence.
+[Numerical implementation, diagnostics and remaining whole-grid requirements](retained-covariance-fitting-numerics-20261003.md).

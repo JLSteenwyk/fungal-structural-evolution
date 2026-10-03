@@ -126,3 +126,21 @@ posteriors, model/root/predictor qualification, accepted phylogenies,
 reconciliation/dating and calibrated evolutionary effects remain pending.
 All eight biological aims remain incomplete. GPU prediction stays paused.
 This correction changes no global stack, SLURM, GPU or power default.
+
+## Follow-up outcome observed at 20:08 UTC
+
+The [fresh original runtime checkpoint](../metadata/baliphy_stack_followup_execution_checkpoint_20261003_2010.json)
+records one unsuccessful follow-up and four active native workers. The first
+broad-prior role timed out after 5,679.46 worker seconds and was terminated
+with exit `-9`; its saved native receipt explicitly records `timeout`. Its
+scalar log contains iterations 0 through 9, with no allocation warnings or
+`bad_alloc`. It does not contain the complete 20-iteration horizon or accepted
+joint frames. The next queued role has started; the failed attempt remains
+preserved and is not automatically retried.
+
+The scoped larger stack removes the reproduced initialization crash in the
+two debugger examples, but these examples do not establish a complete sampler
+repair. The new timeout is distinct from the historical SIGSEGV evidence.
+Complete 24-role follow-up readback, resource accounting and adequate ancestral
+posteriors remain required. Existing limits, seeds, attempts and native outputs
+are unchanged; this check starts no longer-chain or GPU inference.

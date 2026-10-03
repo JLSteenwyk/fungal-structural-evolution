@@ -265,14 +265,16 @@ Numerical review states, original failed/non-ready settings, nonuniform
 controls, full timing/fitting and biological interpretation remain pending.
 
 A [separate full parallel arithmetic reader](docs/full-parallel-covariance-readback-20261003.md)
-is now live with eight bounded cohort workers and the original numerical
-checks and tolerances. Its new retained-basis consumer explicitly waits for
-complete alternate closure, preserving all 1,302,000 audits and 6,220,800 links.
-Original serial jobs and their queued consumers remain intact. The stronger
-alternate-source software gate restores test fixtures byte for byte and
-rehashes all positive-output bindings; the earlier formatting-restoration
-finding is preserved. Neither new full numerical stage is complete, and
-production optimization remains unlaunched.
+validated 43 cohorts before failing a projected-Gram comparison. Its closer
+and new numerical queues stopped on that failed dependency; original serial
+jobs and their queued consumers remain intact. All 1,302,000 audits and
+6,220,800 links stay in scope. The failed run and software fixture-restoration
+finding are preserved; full numerical closure remains pending.
+[Source-bound discrepancy diagnosis and retained fitting numerics](docs/retained-covariance-fitting-numerics-20261003.md):
+the new four/five-term fitting bridge passes dense/score and independent
+candidate tests while preserving inherited and fresh guards separately.
+Full fitting source/output/link contracts, timing and production optimization
+remain required; no biological effect is accepted.
 
 The [shared-entity likelihood/optimizer backend](docs/shared-entity-likelihood-20261002.md)
 now has analytic ML/REML gradients and explicit nonnegative-boundary checks.

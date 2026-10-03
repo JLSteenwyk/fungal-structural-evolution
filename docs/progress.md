@@ -12669,3 +12669,66 @@ and figure review remain next.
   uncertainty, accepted framework/reconciliation/dating and all eight aims
   remain incomplete; approximately 500 fungi plus 25 outgroups stays the goal.
   GPU prediction remains paused and no new charges were incurred.
+
+- October 3, 20:08 UTC: implemented and qualified the four/five-term numerical
+  fitting bridge. It independently checks the bound original/retained audit
+  and exact certificate, preserves every inherited Gram/error entry, and
+  additionally requires fresh retained-backend independence. Fresh and
+  inherited envelopes differ in all four synthetic operator scenarios; neither
+  replaces the other. Twenty-four dense likelihood/score cases, 84 derivative
+  cells, eight actual ML/REML multistart fits/replays, eight budget-exhaustion
+  replays, 32 exclusions and 56 altered-source/candidate cases pass unchanged
+  numerical contracts. Four candidates pass independent numerical checks
+  pending calibration and four remain reviewed. Actual software tool wait
+  83538 returned zero with original PID/create/command/invocation journals;
+  measured native peak RSS is 116,391,936 bytes and CPU time is 8.82 seconds.
+  Full source/candidate/setting contracts, full-scope timing and production
+  fitting remain required across all 5,208,000 prospective candidates and
+  12,441,600 setting links. The software component is not a fungal pilot or
+  full fitting workflow.
+  [Numerical method and actual evidence](retained-covariance-fitting-numerics-20261003.md).
+
+  The complete parallel arithmetic reader failed after 43 cohort reports on
+  one of 49 projected-Gram entries: absolute mismatch about 0.00343227 versus
+  the frozen 3e-9 relative/2e-8 absolute tolerance. Its closer and three new
+  numerical controllers stopped correctly on the failed dependency. All five
+  original terminal failures and every partial artifact hash are preserved;
+  original serial/V1 queues remain separate and live. No full arithmetic
+  closure or downstream numerical acceptance is claimed. The first scoped
+  source-bound diagnostic passes its ten candidate records/one distinct design
+  under serial and eight-thread calculations, but does not explain the failed
+  full run. Original source/method/tolerances and failed roots are unchanged.
+
+  A full-cohort diagnostic passes all 300 original audits serially before its
+  eight-context phase reaches the 6-GiB AS allocation limit. Its actual failed
+  wait and native 4.13-GB peak RSS are preserved; this is a distinct diagnostic
+  resource failure. Fresh V3 uses the identical full-cohort program, both modes,
+  five trees, all thirty designs and unchanged checks, with scoped 16-GiB RAM/
+  12-GiB AS limits and the same two-CPU/no-swap/one-BLAS-thread caps. It is running
+  toward 2,700 complete numeric comparisons. This diagnostic does not restart
+  any failed scientific producer or substitute for full source closure.
+
+  The original ancestral follow-up has one preserved timeout after 5,679.46
+  worker seconds, scalar iterations 0–9, no allocation warning/`bad_alloc` and
+  no completed joint horizon. Four native workers remain active and the next
+  queued role has started. This does not establish complete stack repair or
+  posterior adequacy. [Exact observation and scope](baliphy-native-stack-correction-20261003.md).
+
+  Previous goal turn: progress through full pipeline implementation, execution
+  and publication in commit160b221. This turn changes the full fitting numerical
+  implementation and produces source-bound diagnostic evidence that changes
+  the next action; it is progress. Diagnose the original discrepancy before
+  revised full arithmetic/retained qualification/timing/fitting. Accepted
+  framework/reconciliation/dating, controls/calibration and all eight biological
+  aims remain open. Approximately 500 fungi plus 25 outgroups remains the goal;
+  GPU prediction stays paused and no charges were incurred.
+
+  Same-turn completion update: the V3 full-cohort diagnostic's actual original
+  tool wait63067 returned zero. All2,700strict comparisons pass and each of the
+  eight complete concurrent replays matches the serial result exactly. All
+  scoped source/artifact hashes and original completion journals were freshly
+  verified. Thirty logical designs retain all300audits and six distinct fixed
+  matrices. The original full-run mismatch remains unreproduced and unexplained;
+  no full4340-cohort arithmetic or biological acceptance is claimed. Next full
+  reader instrumentation must capture exact audit/context failure evidence
+  while retaining all sources, cases, checks and numerical tolerances.

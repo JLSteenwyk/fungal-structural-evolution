@@ -1,5 +1,14 @@
 # Complete parallel covariance readback and explicit downstream source
 
+**Current status:** the new full reader has failed a projected-Gram comparison
+after 43 completed cohort reports. Its closer and three new numerical queue
+controllers stopped on the failed dependency. All original output and journal
+evidence is preserved. The first candidate-only source-bound replay passes,
+but does not explain the failure. The complete cohort diagnostic now passes all
+2,700 serial/concurrent comparisons; the original mismatch remains unexplained.
+[Failure evidence, diagnosis and next fitting requirements](retained-covariance-fitting-numerics-20261003.md).
+The launch and 19:22 observations below are historical checkpoints.
+
 The original uniform covariance producer finished all 1,302,000 audits and
 6,220,800 setting links. Its original serial independent reader is still
 running. A separately versioned complete reader now uses eight bounded cohort

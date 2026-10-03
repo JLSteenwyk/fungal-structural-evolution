@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+    "--output",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+    "--receipt",
+    "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_covariance_discrepancy_diagnostic_stage_v3.py": "44a6db2c05e63d2c704e93d8c52fe3bfa1ef43f65c40ce6476a5663aa18c0cbe",
+    "metadata/covariance_discrepancy_diagnostic_resources_20261003_v3.json": "be278e88de4a991a96d56eeea679a9f08db26c82f2ac2bdf84c5315e0e04d082",
+    "scripts/diagnose_parallel_covariance_discrepancy_v2.py": "dd8ae647135e329ad1e25fb90e18a2a630e4fb9b48f9391085609e5425cf2413",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "bca46dbb4cfb4789afa0a235c6403aa6",
+  "wrapper": {
+    "pid": 58054,
+    "created": 1791058073.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage_v3.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v3.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-03T20:07:54.521343+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T20:14:29.002694+00:00",
+  "child": {
+    "pid": 58119,
+    "created": 1791058073.82,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 394.4810907980427,
+  "child_cpu_seconds": 628.747294,
+  "child_peak_rss_bytes": 6355795968,
+  "receipt": "metadata/covariance_discrepancy_diagnostic_validation_20261003_v3.json",
+  "receipt_sha256": "9ea2c810fe404fd8611318fa49886bc9a7fe402705cfb7d76a38f9c4b1985d87",
+  "artifacts": {
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/configuration.json": "6bbb939691ff5be914f1a15a6eed37e3813e05b3c19d34e5fbc7a8902338b64b",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/stdout.log": "1e440b4673528c988bd99a74d5c18dcc2263872f6090c9470ff4b65c5de01b4a",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v3/process.json": "2c729e6b3b7db9dafdaec0a08e88a2d86453db2597c4959464dc207a647a7852"
+  },
+  "scope": "One original CPU-only read-only source-bound numerical diagnosis with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the diagnostic receipt; no full-grid arithmetic closure, original-output edits, inference, failed-job restart, GPU work, new charges or biological acceptance."
+}

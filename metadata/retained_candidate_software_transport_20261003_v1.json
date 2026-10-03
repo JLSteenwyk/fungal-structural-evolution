@@ -1,0 +1,38 @@
+{
+  "status": "verified_actual_original_retained_candidate_software_wait",
+  "checked_utc": "2026-10-03T19:41:35.819912+00:00",
+  "tool_session_id": 83538,
+  "actual_terminal_exit_code": 0,
+  "invocation_id": "bfe257fcab00417e8192c6cdd8a12d50",
+  "wrapper": {
+    "pid": 4022350,
+    "created": 1791056302.61,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_candidate_software_stage.py",
+      "--resources",
+      "metadata/retained_candidate_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/retained_candidate_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/retained_candidate_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_shared_entity_candidates.py",
+      "--output",
+      "data/software_audits/retained-candidate-20261003-v1",
+      "--receipt",
+      "metadata/retained_candidate_software_validation_20261003_v1.json"
+    ]
+  },
+  "original_process_messages": 1,
+  "original_completion_resource_records": 1,
+  "source_hashes": {
+    "metadata/retained_candidate_software_execution_20261003_v1.json": "f121d3853630a51e9ce13a16c401c8f0ab11219f4c7dc047499113c27d2b055b",
+    "metadata/retained_candidate_software_execution_20261003_v1/original-invocation-journal.jsonl": "709e79e2e884fcb4330c76053649a9177ff4d93883a705849fbe77cdb5f7f793",
+    "metadata/retained_candidate_software_validation_20261003_v1.json": "1d1420c96002a262f93bbb65810fe232a6ab1cdcea2ff38de463f1c5776f361f"
+  },
+  "scope": "Actual tool session83538 returned zero. Exact original wrapper PID/create/command and invocation-linked process and completion/resource journals captured. Manager516KiB peak is not native memory; child measured peak is separately recorded in execution. Synthetic retained-candidate tests only; no production full-grid source or fitting closure."
+}

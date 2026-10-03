@@ -1,0 +1,139 @@
+{
+  "status": "completed_source_bound_read_only_covariance_discrepancy_diagnostic",
+  "checked_utc": "2026-10-03T20:14:26.029665+00:00",
+  "cohort_id": "02b1cc8a4f14b4951bd3d19789fb94ee39c59f687661c9a94ac0c0ffea8a051f",
+  "records": 12097,
+  "candidate_original_audits": 300,
+  "unique_fixed_design_matrices": 6,
+  "logical_fixed_designs": 30,
+  "complete_numeric_replays": 2700,
+  "serial_and_threaded_replays": [
+    {
+      "worker_id": "serial",
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 0,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 1,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 2,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 3,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 4,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 5,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 6,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "worker_id": 7,
+      "audits": 300,
+      "failed_audits": [],
+      "matches_serial_exactly": true,
+      "maximum_projected_absolute_error": 2.9802322387695312e-08
+    }
+  ],
+  "source_hashes": {
+    "metadata/parallel_covariance_readback_plan_20261003_v1.json": "dacdd0ab9b526475a0c7fcd02c0b7a2d28d46fe7b438ce7e446f4b6ce059df9b",
+    "metadata/full_uniform_covariance_qualification_plan_20261002.json": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+    "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/receipt.json": "6120453f5305a5a6afec5af5ebb0dd7e9460c786f54763d9b9d59fe3109bebef",
+    "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/design_covariance_audits.jsonl.gz": "b50e85e862e5ce2631498a9464df8e117d3763e1d16831347001d2a8e30e4200",
+    "data/software_audits/parallel-covariance-source-discrepancy-20261003-v1/candidate-original-audits.json": "cb17974243ec46bbaa5233c1430350446a8f4da8824f41d8fa011f4ef37ed44b",
+    "metadata/full_expanded_model_designs_plan_20261002_v2.json": "8663dc251acc3c4743a2b4faa3f306be986f8609df22f0a6acf7b898019625c9",
+    "metadata/full_entity_operator_plan_20261002.json": "ca3d36ba2ef3e0a6b8571ebda8d2d3afceca83a0923e7ddf71e186f927b8031d",
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "results/phylogeny/full-expanded-model-designs-20261002-v2/cohort_manifest.json": "25ba134fa5b945b9211a5a0f5af6aea404416efa58fb9b2c14dee4405002e162",
+    "results/phylogeny/full-expanded-model-designs-20261002-v2/cohorts/02b1cc8a4f14b4951bd3d19789fb94ee39c59f687661c9a94ac0c0ffea8a051f.npz": "ed0b30a60ef6c773c7b43b2aab63b410dea5273bff3c4833dbd7e76ad8b9ee50",
+    "results/phylogeny/full-expanded-model-designs-20261002-v2/unique_designs.jsonl": "f41eb4b1ff2d1f332c3d2d38fd8d4a52ecdf5f807fb12e25f9423327554a515b",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/block_labels.npy": "090550c116311ccaadde1e0e0e15fa5c578dbf8265469621711f2c8757ae1174",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/case_ids.json": "07edc7bc8795077185263606988677d4b0cc406f6643ecb28c8d4a29fa538ba6",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operator_manifest.json": "d80578d4d09ca17681f74c0d5d3e1e76e4c05167771daaa9d532793d74f8ef5d",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-target_node.npz": "ddd689cc282f8b00d4ee8aa6031cb13e40702729eacc4fe9ce9984b24295e06d",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-target_node.npz": "ddd689cc282f8b00d4ee8aa6031cb13e40702729eacc4fe9ce9984b24295e06d",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-background_node.npz": "6a3c0317648b344860bb75ea13add26ea5224c63c449d87b27d98809281e3f61",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-background_node.npz": "f7985998d1d54f78cc33226556425cfe4118d87a9ebeec8486fe45418c742933",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-model_pair.npz": "f30fbfd047e3baa6909f7912dfbb4aa599485ce35dcfb4b08a1220adad0043c6",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-model_pair.npz": "c32de5c9b67805eb1219f32d1222a4f514e817a3786eb692521700d8d1e8988a",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-family.npz": "bee771557c97356a6a332526e12776206aba510088dc5e9951c84cd39d7633a8",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-family.npz": "38860402cb4fdb9db78d666750f487afb33af40691e70c4213fcf571e9f07b31",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-gene.npz": "99ccc98b04f296edddc9dc4afa5a37a43d0985b4ee09d307519c19f7ac4c26ca",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-gene.npz": "17e4615b8b7aca04e4cc9e1c89acf6793dbb1c2e844fe032cbe45838973554ca",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/signed-model.npz": "b3616edb4d324e11a3e5a5459434d2c1eb67dbd0e7bcaa277cc737061cc162bc",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/unsigned-model.npz": "b6517a93bc2fd0c02a55d7a00e803bc1a058c2b53a55f1bf8f8f4de434afb6da",
+    "results/phylogeny/full-entity-operator-bank-20261002-v1/operators/family_intercept.npz": "c0946f5a03f75daea8fc2ed2a4f95319b1adfc598bab0e48b6306b77f0b055df",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/partition_manifest.json": "35438a614157044fd4bbcb12b0686ee453dccc0126c78386223e083ba8324317",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/inputs/plddt70-00.parquet": "909f002299eb8e90d56bd9ec8e5f3f133c47bfb4bf012b2b3226bdeaa9c7c6a1",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/inputs/plddt70-01.parquet": "71bf552c34cf2cb2ca0a10ee46ee85c75966273f6c41ce306326ade38b6d74c7",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/inputs/plddt70-10.parquet": "8416eb4943d2df3831b0e55a1afd089fb1edfef93f1cc5d84b69f5fdc64b3014",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/inputs/plddt70-11.parquet": "4c0a0de120a35c07011d4e34c123e60a7f948e335530399529383672db03c751",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/inputs/plddt70-mean.parquet": "84ab647691f411db1e3453ba888ab7f9205900e99d4d5d9111cb184f6d50e66d",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/case_covariance_index.tsv.gz": "61b4385d7f3e11be48bcb259118ae18a28edc818c88dd49e8a33d4be86c946c9",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/mafft_guide.npz": "1b750534bfbdd200e0f77b0583ab57f380018d7c3395d584d561eae2cd481a20",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_mafft_profile.npz": "51fb0101f1f75099caf616322fdf081364d8a17f81e695e301cdeab2338a4556",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_mafft.npz": "230375951ea3d7e59954afa52ebad3155ee7fbc06ec2c82a10934135917175df",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/pmsf_profile_profile.npz": "d3ff9d4a910042537e4814b599c8bf3425518552b4f7d10210b20fe1c5fdee04",
+    "results/phylogeny/full-expanded-covariance-20261002-v1/profile_guide.npz": "16a0ee8cb0f0beb7a16f421faf5aa269d096b1ec9d172dce800bd6fd97cdff35",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/diagnose_parallel_covariance_discrepancy_v2.py": "dd8ae647135e329ad1e25fb90e18a2a630e4fb9b48f9391085609e5425cf2413",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263"
+  },
+  "artifacts": {
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-serial.json": "f3b4e6e7e24cf6c0160b5af3d19e3492acbaef3c99cb6366101fdbec542b1eb1",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-7.json": "7fddf2fc3a4fb412126c49f8942c653a6d17d1263acdcf939ee9ac7a9f4e28c3",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-6.json": "f34b9e6ed05084861e3a44015a23139768d93063526031ef20a10d588403b2d9",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-2.json": "dd7cef4eedd30a674ff109927a0b846f11a65eeb38c44808ff9015dc196a182d",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-1.json": "57e9509c5ed91de77bd22a35ff10813518ff49f5c3ac732a59c67b909207457e",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-4.json": "b3f1ce8518b2225a94ae6b19033cb9035cf2a377f912c9b182b92272baaf0f35",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-3.json": "d1d328c44e9c262d416b02b8842421902bec4e8f920fa4c8f770390c5bce1777",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-5.json": "9ce0600a7e905ff71a0c638f31bb63ae5168cbc1d0967d12748cb9c64ea54c85",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v3/worker-0.json": "456c015934736900f9acec679beb1a21950585823f99424a304fa13c135f6ea9"
+  },
+  "numeric_tolerances_unchanged": true,
+  "original_outputs_unchanged": true,
+  "native_inference_runs_started": 0,
+  "scientific_eligibility": false,
+  "scope": "Diagnostic candidate selection from preserved original traceback, complete original audit artifact hash and ten exact exported record matches. Selected original plans/cohort/recipes/CSR/PQ/factor files rehashed against original producer bindings; broader source graph is not freshly replayed. All30designs/300original audits, both modes and allfive trees, a serial complete cohort and eight concurrent complete cohort constructions/projected calculations;2700strict numeric comparisons. Original numeric assertions remain unchanged. This is not full arithmetic closure, an accepted numerical repair, production fitting, a biological pilot or a restart of failed native jobs."
+}

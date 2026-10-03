@@ -1,0 +1,47 @@
+{
+  "status": "preserved_full_cohort_diagnostic_address_space_failure_after_serial_pass",
+  "checked_utc": "2026-10-03T20:07:54.344037+00:00",
+  "tool_session_id": 77705,
+  "actual_terminal_exit_code": 1,
+  "invocation_id": "b77e1af5bf2143069dfa46eb642b3036",
+  "wrapper": {
+    "pid": 4047457,
+    "created": 1791057624.75,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_covariance_discrepancy_diagnostic_stage.py",
+      "--resources",
+      "metadata/covariance_discrepancy_diagnostic_resources_20261003_v2.json",
+      "--execution",
+      "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_parallel_covariance_discrepancy_v2.py",
+      "--output",
+      "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v2",
+      "--receipt",
+      "metadata/covariance_discrepancy_diagnostic_validation_20261003_v2.json"
+    ]
+  },
+  "serial_audits": 300,
+  "serial_numeric_comparisons_passed": 300,
+  "concurrent_replay_complete": false,
+  "child_peak_rss_bytes": 4127678464,
+  "array_allocation_requested_bytes": 99493744,
+  "failed_shape": [
+    41318,
+    301
+  ],
+  "native_address_space_gib": 6,
+  "cgroup_memory_gib": 8,
+  "source_hashes": {
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2.json": "2b19488efb6d949327ae7e6c027195196591474803d6c0fa4c665e98304e6fef",
+    "metadata/covariance_discrepancy_diagnostic_execution_20261003_v2/original-invocation-journal.jsonl": "1760d09fb2d53f0bac8fe3d1d1cee737f4f8e17b3e6f8e4f54585e425ccb1bcb",
+    "data/software_audits/parallel-covariance-discrepancy-replay-20261003-v2/worker-serial.json": "f3b4e6e7e24cf6c0160b5af3d19e3492acbaef3c99cb6366101fdbec542b1eb1"
+  },
+  "scope": "Actual original tool wait and original invocation-linked failure preserved. Serial whole-cohort300audits pass; eight-context concurrent diagnostic reaches6GiB address-space allocation limit before completion. This separate diagnostic resource failure does not explain or repair the original full-reader numerical assertion. Original output remains immutable; no inference or full fitting."
+}
