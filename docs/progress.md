@@ -1,5 +1,20 @@
 # Progress and evidence
 
+## October 3, 11:42 UTC: fresh logger error recheck
+
+All nine corrected saved fixture frames passed exact same-record sequence/state
+checks again: 36 ancestral records, 233 residue/category pairs and 507 source
+bindings. All 1,620 startup checks are closed with zero unsuccessful roles.
+The original historical sampler had 1,601 successful unclosed checks; full-grid
+joint saved-frame validation remains pending. All seven monitor regression checks
+passed. A fresh service-journal scan since 07:00 EDT found no matching errors;
+two historical allocation failures remain unresolved. No jobs were restarted.
+[Logger evidence](../metadata/baliphy_joint_logger_error_recheck_20261003_1142.json),
+[original sampler](../metadata/baliphy_reference_sampler_error_recheck_20261003_1140.json),
+[monitor checks](../metadata/runtime_checkpoint_child_race_validation_20261003_1140.json)
+and [bounded log scan](../metadata/project_service_error_scan_20261003_1142.json).
+
+
 ## October 3: full taxon identity audit and amphioxus provenance finding
 
 Completed identity evidence for all 526 working entries: 521 exact raw-catalogue
