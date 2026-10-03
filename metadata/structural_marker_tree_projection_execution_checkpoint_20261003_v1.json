@@ -1,0 +1,68 @@
+{
+  "status": "verified_original_full_projection_readback_progress",
+  "checked_utc": "2026-10-03T11:56:54.088530+00:00",
+  "original_wait_session_id": 67327,
+  "original_handles": [
+    {
+      "role": "wrapper",
+      "pid": 3026533,
+      "created": 1791028055.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_structural_projection_stage.py",
+        "--resources",
+        "metadata/structural_marker_tree_projection_resources_20261003_v1.json",
+        "--execution",
+        "metadata/structural_marker_tree_projection_readback_execution_20261003_v1.json",
+        "--receipt",
+        "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+        "--stage",
+        "readback",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_structural_marker_tree_projection.py",
+        "--producer",
+        "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+        "--output",
+        "metadata/structural_marker_tree_projection_readback_20261003_v1.json"
+      ],
+      "status": "sleeping",
+      "cpu_seconds": 0.8,
+      "rss_bytes": 18874368,
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "8589934592",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "role": "child",
+      "pid": 3026534,
+      "created": 1791028055.89,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_structural_marker_tree_projection.py",
+        "--producer",
+        "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+        "--output",
+        "metadata/structural_marker_tree_projection_readback_20261003_v1.json"
+      ],
+      "status": "running",
+      "cpu_seconds": 557.4,
+      "rss_bytes": 301502464,
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "8589934592",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "expected_tree_views": 70,
+  "verified_tree_views": 29,
+  "verified_projection_cases": 7250,
+  "verified_branch_projection_cells": 3765000,
+  "full_readback_closed": false,
+  "source_unit": "fungal-structural-marker-projection-readback-20261003-v1.service",
+  "invocation_id": "37cf075277e54eeda46d86de620819f5",
+  "scope": "Actual original PID/create/command/cgroup limits checked; counts from original view-completion messages. Partial readback only, no restart or full qualification claim."
+}

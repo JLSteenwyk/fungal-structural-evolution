@@ -1,0 +1,94 @@
+{
+  "status": "verified_closed_full_joint_logger_startup_sources_and_original_handles",
+  "checked_utc": "2026-10-03T11:13:36.436544+00:00",
+  "full_roles": 1620,
+  "validated_startups": 1620,
+  "unsuccessful_startups": 0,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "full_bindings_checked": 14403,
+  "source_completion": "metadata/baliphy_joint_logger_preflight_completed_20261003.json",
+  "source_completion_sha256": "58085de1b12d3a03d04375f33962bc3d541544742571c7f80ac07df8386f265e",
+  "full_archive": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v1/completion_archive.json",
+  "full_archive_sha256": "1982a725ade53a4498c006fee1f1ee19b396f3745c1b9b81c0856e0932633fbc",
+  "original_handles": [
+    {
+      "launch": "metadata/baliphy_joint_logger_preflight_launch_20261003.json",
+      "pid": 2935520,
+      "created": 1791019054.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "7a3fb4a1ab5f1bd908cf607a9fcaa3bdf18d2ef017027ec3da8c35377425a516",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "d460b9bbc5fdc845c0780121cb661df4c36c6f95aa97012eb1055dbb0be4fc0a",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791025681466901",
+          "CPU_USAGE_NSEC": "13192621979000",
+          "MEMORY_PEAK": "3469312",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_logger_preflight_readback_launch_20261003.json",
+      "pid": 2935524,
+      "created": 1791019054.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "04d8c0be99bdd9acefec7bbbfb5bc65df47ac00fb60bfe6b22e3fbdaf25646b7",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "36c561b0ed1c74f8a13fa9a49b8d6d714e331407e12bdbb7425420934ac3baf0",
+      "captured_process_messages": 222,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791025757661203",
+          "CPU_USAGE_NSEC": "65698618000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_logger_preflight_closure_launch_20261003.json",
+      "pid": 2935529,
+      "created": 1791019054.84,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "a0870e122a9f424600717f828bd8d1d7a65ac595caf39dca48db4c51024ad4ff",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ea23252a45b80e121cd58b8f6be5e621631e194028715a671e2959bfbd84b3da",
+      "captured_process_messages": 225,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791025785133741",
+          "CPU_USAGE_NSEC": "3338172000",
+          "MEMORY_PEAK": "3493888",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "new_native_inference_runs": 0,
+  "saved_joint_mcmc_output_checked": false,
+  "posterior_qualified": false,
+  "scientific_eligibility": false,
+  "scope": "All original startup source/artifact hashes and three actual original terminal invocation/resource journals reverified. Native--test only; no full saved-frame sampling, long memory/mixing or biological acceptance. Raw journal memory values preserved without treating them as independently established native peak requirements."
+}

@@ -1,5 +1,19 @@
 # Decisions and unresolved questions
 
+## October 3: preserve every structural-marker branch projection
+
+Use both complete qualified predictor-specific grids on all 70 closed candidate
+tree views and all 125 marker slots. Retain every original internal branch,
+including insufficient taxon sets, lost-side and terminal projections. Distinguish
+one distinct internal branch from a shared projected path. Keep source units,
+NaN unclaimed lengths, primary outgroups and predeclared sensitivity memberships
+explicit. Require actual raw-tree pruning and full serialized readback before
+summaries. Unique projection does not prove statistical estimability; coverage
+geometry does not establish sequence–structure acceleration. Do not pool sources
+or treat alternative views as independent replicates.
+[Full workflow and interpretation](structural-marker-tree-coverage-20261003.md).
+
+
 ## October 3: audit all selected identities and preserve haplotype provenance
 
 Join every taxon to frozen raw assembly records and independently traverse

@@ -1,0 +1,17 @@
+{
+  "pid": 3026534,
+  "created": 1791028055.89,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=1800",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_structural_marker_tree_projection.py",
+    "--producer",
+    "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+    "--output",
+    "metadata/structural_marker_tree_projection_readback_20261003_v1.json"
+  ]
+}

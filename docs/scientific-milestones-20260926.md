@@ -4,6 +4,15 @@ This tracker preserves the eight aims in the [original objective](objective.txt)
 **None of the eight aims is complete.** Completed computational stages below
 support the aims but do not replace their statistical or biological requirements.
 
+A [complete structural-marker projection producer](structural-marker-tree-coverage-20261003.md)
+now supplies all 17,500 view/source/marker cases and 9,047,500 original-branch
+coverage entries across the full 70-view design. Its independent raw-tree
+readback is running. This supports missingness and topology controls for aims 1
+and 2; distinct branch projection is not a calibrated rate or proof of statistical
+estimability. All 125 slots, separate predictor memberships and 25 primary
+outgroups remain explicit. Full descriptive summary/figures and computational
+closure still depend on readback completion.
+
 An [independent joint-frame coordinate reader](independent-joint-ancestral-frames-20261003.md)
 now passes retained native fixture and full future-role input checks. It keeps
 ancestral state/category pairs attached to both observed residue anchors and
@@ -25,7 +34,7 @@ The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.
 now pass across all three priors, and all 405 future programs/1,620 disjoint
 seed roles are prepared. Their
 [full native-grid startup qualification](baliphy-joint-logger-preflight-20261003.md)
-is now running without MCMC; full saved-frame logging qualification and
+has completed for all 1,620 roles without MCMC; full saved-frame logging qualification and
 adequately mixed future posterior ensembles have not run. The existing short
 sampler continues, with 1,068 successful unclosed role checks at 09:20 UTC.
 The [unknown-residue reader correction](independent-short-sampler-replay-v2-20261003.md)

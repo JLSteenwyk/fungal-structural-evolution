@@ -1,0 +1,32 @@
+{
+  "status": "prelaunch_resource_estimate",
+  "checked_utc": "2026-10-03T11:44:55.890676+00:00",
+  "tree_views": 70,
+  "cohorts": 5,
+  "sources": 2,
+  "marker_slots": 125,
+  "full_panel_entries": 526,
+  "primary_outgroups": 25,
+  "original_internal_branches": 36190,
+  "projection_cases": 17500,
+  "branch_projection_cells": 9047500,
+  "cpu_quota": 2,
+  "cgroup_memory_gib": 8,
+  "cgroup_swap_bytes": 0,
+  "address_space_gib": 8,
+  "cpu_seconds_per_stage": 1800,
+  "wall_seconds_per_stage": 2400,
+  "per_file_limit_mib": 512,
+  "blas_threads": 1,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 64,
+  "output_allowance_gib": 1,
+  "observed_available_ram_bytes": 323362545664,
+  "observed_free_disk_bytes": 11127147151360,
+  "estimated_stage_wall_seconds_uncalibrated": [
+    5,
+    1800
+  ],
+  "estimate_scope": "Planning range only, not ETA. Three sequential bounded stages: exhaustive software/source gate, full projection producer and independent raw-tree pruning readback. No native inference, GPU or paid resource use.",
+  "new_cost_usd": 0
+}

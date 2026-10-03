@@ -12,16 +12,25 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
+has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
+projection entries across all 70 closed tree views. All 125 marker slots, both
+complete predictor sources and all five declared cohorts remain included.
+The primary panel retains 25 outgroups. Independent actual raw-tree/pruning
+readback is running; at 11:56 UTC, 29 views and 3,765,000 entries had passed.
+These are coverage states and arithmetic path sums, not fitted evolutionary rates.
+
 A [corrected joint ancestral logger](docs/baliphy-joint-node-logger-20261003.md)
 has passed native software checks across all three priors. Encoding sequences
 and full-node categories in one record gives exact residue/state agreement;
 separate legacy logs can represent different conditional draws. All 405
 future model programs and 1,620 disjoint seed roles are prepared; their
 [full startup validation](docs/baliphy-joint-logger-preflight-20261003.md) is
-now running under two CPUs and 32 GiB RAM, with no swap. Startup uses
-`--test`; the future posterior horizon remains unlaunched. At 09:41 UTC,
-336 startup roles and 1,071 original short-sampler roles had successful
-unclosed checks. An [independent joint-frame reader](docs/independent-joint-ancestral-frames-20261003.md)
+complete: all 1,620 roles and 405 quartets passed full readback and
+source/artifact closure, with zero unsuccessful startups.
+[Verified startup completion](metadata/baliphy_joint_logger_preflight_completed_20261003.json).
+Startup used `--test`; the future posterior horizon remains unlaunched.
+At 11:52 UTC, 1,604 historical short-sampler roles had successful unclosed checks. An [independent joint-frame reader](docs/independent-joint-ancestral-frames-20261003.md)
 now passes retained native fixture and full future-role input checks, keeping
 ancestral states, rate categories and residue coordinates paired. Full-grid
 joint native sampling output remains unverified.

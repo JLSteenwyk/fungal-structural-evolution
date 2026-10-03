@@ -1,5 +1,31 @@
 # Progress and evidence
 
+## October 3: full structural-marker tree projection produced; readback running
+
+Produced all 17,500 view/source/marker cases and 9,047,500 original internal-branch
+projection entries across all 70 closed views, five cohorts, both full qualified
+predictor inputs and every one of the 125 marker slots. The primary panel retains
+all 25 outgroups. No missing branch/marker state is dropped. Separate source
+memberships and the assembly identity display overlay remain explicit.
+The software gate passed all 512 synthetic taxon subsets and 11 altered cases;
+actual software/producer child exits were zero. Full independent graph pruning
+readback remains live under two CPUs/8 GiB/no swap. At 11:56 UTC 29 views,
+7,250 cases and 3,765,000 entries had passed. Full closure, descriptive summaries
+and figures remain pending. These outputs describe coverage geometry, not
+fitted structural change, statistical estimability or biological acceptance.
+[Methods, resource bounds, field dictionary and reproduction](structural-marker-tree-coverage-20261003.md).
+
+Full joint-logger startup has separately closed: all 1,620 roles and 405 quartets
+passed, zero unsuccessful. All 14,403 bindings and three original terminal
+handles were rechecked at 11:13 UTC. The original historical 20-iteration sampler
+had 1,604 successful unclosed checks at 11:52 UTC; its full output/resource/replay
+closures and subsequent joint sampling remain pending. GPU prediction stays
+paused, no native jobs were restarted and all eight evolutionary aims remain
+incomplete.
+[Startup full closure recheck](../metadata/baliphy_joint_logger_preflight_full_closure_recheck_20261003.json)
+and [original sampler checkpoint](../metadata/baliphy_reference_sampler_execution_checkpoint_20261003_1154.json).
+
+
 ## October 3, 11:42 UTC: fresh logger error recheck
 
 All nine corrected saved fixture frames passed exact same-record sequence/state

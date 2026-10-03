@@ -1,0 +1,55 @@
+{
+  "stage": "readback",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=1800",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_structural_marker_tree_projection.py",
+    "--producer",
+    "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+    "--output",
+    "metadata/structural_marker_tree_projection_readback_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_structural_projection_stage.py": "8d6b198870a20e8fe51e4e147a3b82449327f4469da46c6647fa02c18a84fd4e",
+    "metadata/structural_marker_tree_projection_resources_20261003_v1.json": "6ff87c14bb7548e261edc3e3315f370b6a1230388129d2411e7e9b15936c04da",
+    "scripts/readback_structural_marker_tree_projection.py": "32634b04c5d40d75d0bdbca4a840a00ffe2e7cbae83d045ca102442790233493",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "37cf075277e54eeda46d86de620819f5",
+  "wrapper": {
+    "pid": 3026533,
+    "created": 1791028055.79,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_structural_projection_stage.py",
+      "--resources",
+      "metadata/structural_marker_tree_projection_resources_20261003_v1.json",
+      "--execution",
+      "metadata/structural_marker_tree_projection_readback_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+      "--stage",
+      "readback",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_structural_marker_tree_projection.py",
+      "--producer",
+      "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+      "--output",
+      "metadata/structural_marker_tree_projection_readback_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 2400,
+  "started_utc": "2026-10-03T11:47:36.589961+00:00"
+}
