@@ -1,5 +1,46 @@
 # Progress and evidence
 
+## October 3, 21:43 UTC: complete retained fitting qualified; full timing queued
+
+Implemented the complete retained-covariance source adapter, fitting producer
+and independent reader. The full declared synthetic grid passed: five
+nonempty cohorts, 600 settings, 6,000 candidates and 12,000 links, with
+checkpoint reuse and all excluded/review cases. Separate 16 actual q4/q5
+numerical serialization/replays span both responses, modes and ML/REML;
+eight remain pending inferential calibration and eight retain numerical
+reviews. The checker rejected 48 identity, 16 grid/link and six rehashed
+source alterations. The first fixture-schema failure remains preserved;
+fresh fixture/checker V2 fixes only its design-to-cohort lookup.
+
+Complete timing software passed the 6,000-candidate source census, a separate
+1,200-candidate/40-group selection census and eight actual two-point numerical
+groups. Six census and ten malformed numerical exports were rejected. Source
+validation, both production guards and independent latent qualification costs
+are included. Budgets remain 1,503 primary evaluations and 1,522/1,526
+independent evaluations for q4/q5. Both actual software waits, native receipts,
+exact PID/command/invocation journals and restored positive bindings passed.
+
+The immutable fitting draft preserves all 5,208,000 potential candidates and
+12,441,600 links. Resource planning allows 488.67 GiB uncompressed records and
+1 TiB fitting scratch; fitting remains unlaunched and unqueued. Full timing
+is queued behind retained V3 closure with two CPUs/32 GiB/no swap, native
+24-GiB address space and a 168-core-hour per-stage allocation. Three original
+controllers and their dependency were verified live at 21:43 UTC. No full
+source loading, numerical timing or accounting closure is claimed. Conditional
+extrapolation will not provide a guaranteed runtime bound or finish ETA.
+
+Fresh checks at 21:41–21:42 UTC found 500/4,340 process-reader cohort reports,
+16,269/53,200 paired resampling draws, and four ancestral follow-up timeouts
+with four native workers active. The candidate original-discrepancy cohort
+passed frozen checks, but its identity/cause was never uniquely established
+by the old traceback. A read-only recheck preserved all four timeout/native
+artifact hashes and found no crash/allocation/logger signatures in 16 available
+follow-up stdout/stderr logs. No complete repair or adequate posterior is
+claimed. Full covariance/timing/fitting, controls, calibration, accepted
+framework/reconciliation and all eight biological aims remain open. GPU
+inference stays paused.
+[Methods, resources and original evidence](full-retained-fitting-and-timing-20261003.md).
+
 ## October 3, 18:28 UTC: short sampler closed; scoped stack follow-up running
 
 All 1,620 original joint short-sampler roles have independent native-output

@@ -1467,3 +1467,34 @@ preparation failure and use fresh immutable preparation rather than fabricate
 entries or edit a launched version. Production readers still require their
 actual original process journals for full closure.
 [Methods and complete evidence](full-process-covariance-readback-20261003.md).
+
+## October 3: retain the full original fitting grid after exact covariance folding
+
+Use a separately versioned full fitting source/producer/reader tied to closed
+original process qualification, exact certificates and retained V3 source
+closure. Keep all original design/response arrays, both outcomes/modes/methods,
+five trees and every 5,208,000 potential candidate/12,441,600 setting link.
+Bind the original audit, retained audit and integer certificate into every
+candidate. Preserve both retained bases, inherited error envelopes, additional
+fresh/latent guards, optimizer budgets and independent spectral/curvature/search
+checks. Preserve the original production settings rather than silently
+substituting the synthetic checker settings. Reviews remain reviews.
+
+Preserve the fitting fixture V1 schema failure and completed numerical cases.
+Use a fresh fixture/checker V2 with corrected design-to-cohort lookup; freeze
+the already qualified mathematical modules. Distinguish complete declared
+software grids and numerical cases from actual full-source execution. Capture
+the actual original software wait, PID/create/command, exact invocation
+journal payload and receipt hashes. No manager RSS value substitutes for
+native or cgroup memory evidence.
+
+Queue complete qualified-input timing only behind the original retained
+closure. Price source validation, both production guards, independent latent
+qualification, constructors and full original evaluation budgets separately.
+Retain all unmeasured reviews; conditional two-point cost extrapolation is not
+a mathematical optimizer bound or a finish ETA. The timing reader checks the
+full census/selection/exports/accounting and reproduces review groups; it does
+not independently reproduce hardware times or successful timing probes.
+Separate full fitting readback still validates every attempted candidate.
+Full source/timing closure and installed resources precede fitting launch.
+[Scope, methods, resource estimates and qualification evidence](full-retained-fitting-and-timing-20261003.md).

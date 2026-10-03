@@ -1,0 +1,41 @@
+{
+  "status": "verified_actual_full_retained_timing_software_wait_zero",
+  "checked_utc": "2026-10-03T21:36:51.982708+00:00",
+  "tool_session_id": 63214,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-full-retained-timing-software-20261003-v1.service",
+  "invocation_id": "e45fa7f660f945cd80b1ac02b5e8f080",
+  "wrapper": {
+    "pid": 1049626,
+    "created": 1791062944.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_retained_timing_software_stage.py",
+      "--resources",
+      "metadata/full_retained_timing_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/full_retained_timing_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/full_retained_timing_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_timing.py",
+      "--output",
+      "data/software_audits/full-retained-timing-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_timing_software_validation_20261003_v1.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 1,
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "fresh_bindings_rehashed": 288,
+  "source_hashes": {
+    "metadata/full_retained_timing_software_execution_20261003_v1.json": "49d6f0f810392743e4de215fef09b3cbcd455c27aee30d68fe8715fcd7c923b4",
+    "metadata/full_retained_timing_software_validation_20261003_v1.json": "5aaf24ef27ac63d74166a471c45a36b58efcc7bd91ae204d8be1def6e2db0b22",
+    "metadata/full_retained_timing_software_execution_20261003_v1/original-invocation-journal.jsonl": "23de0f887b7c64ddd2bbc92da329e77be08ab93c16c58a61e178dc196eae804f"
+  },
+  "scope": "Actual original tool wait exited0; original PID/create/command native configuration and exact invocation/PID journal payload match receipt SHA and success, plus manager start and completion. The journal was retained without fabricated records. Native child RSS in execution receipt differs from manager memory accounting; neither proves full-data timing or scientific acceptance. Qualified software files remain immutable."
+}

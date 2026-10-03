@@ -1,0 +1,41 @@
+{
+  "status": "original_retained_fitting_software_fixture_failure_retained",
+  "actual_tool_session_id": 16106,
+  "actual_tool_terminal_exit_code": 1,
+  "invocation_id": "a4e0bc3be91845fe9b92388b35b50a14",
+  "wrapper": {
+    "pid": 988874,
+    "created": 1791062208.21,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_retained_fit_software_stage.py",
+      "--resources",
+      "metadata/full_retained_fitting_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/full_retained_fitting_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-retained-fitting-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v1.json"
+    ]
+  },
+  "original_process_journal_messages": 1,
+  "scope": "Original16positive numerical candidate serialization/replays completed and saved. Full grid fixture failed before qualification when filtering a preliminary unique-fit file that has design_id but no cohort_id. Real sources and jobs unaffected; no software gate or full fitting acceptance. Fresh fixture/checker version required.",
+  "error_type": "KeyError",
+  "error_message": "cohort_id",
+  "production_fitting_launched": false,
+  "source_hashes": {
+    "metadata/full_retained_fitting_software_execution_20261003_v1.json": "da7171316dcb004b238300643126360b4541ac4c116693f0e39ef0f82da426a6",
+    "metadata/full_retained_fitting_software_execution_20261003_v1/original-invocation-journal.jsonl": "7592753f968b59e7b1959eb8a058e2ee6ca3f2bcf3b53f9b9e664ab7eb95476c",
+    "data/software_audits/full-retained-fitting-20261003-v1/positive/serialized_positive_retained_candidates.json": "86d09bdef8f18860dfe2b215bbc8f9b354b93f85f77fdc29744466805b76beec",
+    "scripts/full_retained_shared_entity_fit_fixtures.py": "2bf3416a03dd4deefc074866ff520c5350b2e28c91be4ff837abedc274b29b59",
+    "scripts/check_full_retained_shared_entity_fits.py": "aa6dc6e07f3e00b96ca842b5c4e2d4aa8ceb0f8529ad2f58ff60bbedce09b477"
+  }
+}

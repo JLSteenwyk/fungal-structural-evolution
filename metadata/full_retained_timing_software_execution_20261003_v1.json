@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_retained_shared_entity_timing.py",
+    "--output",
+    "data/software_audits/full-retained-timing-20261003-v1",
+    "--receipt",
+    "metadata/full_retained_timing_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_retained_timing_software_stage.py": "d2ac251f451f17a38f8538b7d9e25fe23d423829fe9768362c67850ba8408d3b",
+    "metadata/full_retained_timing_software_resources_20261003_v1.json": "03042efa2dff5a1f92f9ad8677d1a51c6fd4aeba1cfe20cdb8a282a6b4b5ec57",
+    "scripts/check_full_retained_shared_entity_timing.py": "64459aa88b0b1319666bd1ffb7125d1cde9a1ba4ce26e00e794fe33722f6edb6",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "e45fa7f660f945cd80b1ac02b5e8f080",
+  "wrapper": {
+    "pid": 1049626,
+    "created": 1791062944.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_retained_timing_software_stage.py",
+      "--resources",
+      "metadata/full_retained_timing_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/full_retained_timing_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/full_retained_timing_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_timing.py",
+      "--output",
+      "data/software_audits/full-retained-timing-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_timing_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 2400,
+  "started_utc": "2026-10-03T21:29:05.193328+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T21:29:41.489089+00:00",
+  "child": {
+    "pid": 1049629,
+    "created": 1791062944.5,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_timing.py",
+      "--output",
+      "data/software_audits/full-retained-timing-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_timing_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 36.295561430975795,
+  "child_cpu_seconds": 36.168439,
+  "child_peak_rss_bytes": 188743680,
+  "receipt": "metadata/full_retained_timing_software_validation_20261003_v1.json",
+  "receipt_sha256": "5aaf24ef27ac63d74166a471c45a36b58efcc7bd91ae204d8be1def6e2db0b22",
+  "artifacts": {
+    "metadata/full_retained_timing_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_retained_timing_software_execution_20261003_v1/configuration.json": "95ed443f71fce4eadc463bcde74524e9010823b3c4d61a93441c7df6c576ce40",
+    "metadata/full_retained_timing_software_execution_20261003_v1/stdout.log": "9feac9ac38d4f74866a8f6cb6e4fcc884df1e706c8c831dd50440648d6293e39",
+    "metadata/full_retained_timing_software_execution_20261003_v1/process.json": "d24a3e589ddfe855a65ed544cfcb3ff4a02dc05667702b6bfa1bc8f97028791b"
+  },
+  "scope": "One original CPU-only complete retained covariance timing software qualification with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the software checker receipt. The checker covers the declared five-cohort6000candidate synthetic timing census, source/checkpoint/census/accounting contracts,1200candidate40group eligible selection and eight actual two-point q4/q5 ML/REML numerical timing probes. No optimization or actual full-grid time estimate is attributed to this software stage. Source/journal fixtures are synthetic; full production-source loading, timing and fitting remain gated. Its own exit is not full-grid arithmetic closure. No original-output edits, failed-job restart, GPU work, new charges or biological acceptance."
+}

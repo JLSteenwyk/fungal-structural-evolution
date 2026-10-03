@@ -1406,3 +1406,23 @@ Full uncertainty closure, adequate ancestral ensembles, accepted framework,
 reconciliation/dating, domain/duplication/ecology/selection/site analyses and
 all eight biological aims remain incomplete. The full approximately 500
 fungi plus 25 outgroups scope and active goal remain unchanged.
+
+### October 3: complete retained fitting implemented; full timing queued
+
+The complete original fitting source/producer/independent reader is now
+software qualified: 6,000 declared synthetic candidates/12,000 links plus
+16 actual q4/q5 numerical serialization/replays. All 5,208,000 potential
+real candidates and 12,441,600 setting links remain in the immutable fitting
+draft. The source binds original/retained audits and exact certificates;
+inherited envelopes, both additional numerical guards, original optimizers
+and every exclusion/review remain explicit. The first fixture-schema failure
+is preserved, with a fresh corrected version and actual qualification waits.
+
+Whole-data timing is queued behind retained V3 source closure after separate
+complete-census/selection/eight-group numerical timing software checks. It
+requires full provenance/readback/two-journal accounting closure. Prospective
+output/RAM/CPU estimates precede queue creation; runtime remains uncalibrated.
+At 21:43 UTC all timing controllers and the exact original dependency were
+verified live, but real timing had not started. Full fits, nonuniform controls,
+calibration and all eight biological aims remain open.
+[Full method and next gates](full-retained-fitting-and-timing-20261003.md).

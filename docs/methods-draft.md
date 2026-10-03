@@ -2976,3 +2976,34 @@ provenance closure additionally requires both original completion journals.
 Production remains queued, and software/native early QC is separately labeled.
 [Workflow and limitations](independent-short-sampler-replay-20261003.md) and
 [versioned field/array dictionary](../metadata/independent_short_sampler_replay_data_dictionary_20261003.tsv).
+
+## Complete retained covariance fitting implementation
+
+The full uniform working-model grid preserves 5,208,000 potential ML/REML
+candidates and 12,441,600 original setting links across both responses,
+incidence modes and five working trees. Each candidate binds the original
+design/response identity, original covariance audit, exact integer cone
+certificate and retained audit. Inherited principal Gram/error envelopes
+remain unchanged. The four-component basis retains residual, background,
+family intercept and species terms; the five-component exception basis also
+retains model-pair covariance. Both fresh production and independent latent
+qualification remain additional gates.
+
+The implemented restartable producer and independent numerical reader preserve
+three production starts, bounded search/final replay, component-spectral
+likelihood/start checks, curvature and three independent searches. All source
+exclusions, constants, precision errors and review states remain in exports.
+Synthetic complete-grid and separate numerical qualification passed; this is
+software evidence, not whole-data fits or biological acceptance.
+
+Whole-data timing is queued after full original process and retained source
+closure. Every candidate is censused, with deterministic representatives for
+each eligible cohort/mode/tree/method/response group. Two variance points
+measure setup, source and qualification costs separately from likelihood
+evaluation. Complete source/census/selection/export/planning readback and
+two actual original journals gate accounting closure. The timing reader
+reproduces review groups but does not independently replay successful hardware
+times; conditional cost extrapolation is not a finish ETA or optimizer bound.
+Production fitting is neither launched nor queued. Nonuniform/control variants,
+uncertainty calibration and accepted evolutionary analyses remain required.
+[Implementation, qualification, resources and limitations](full-retained-fitting-and-timing-20261003.md).

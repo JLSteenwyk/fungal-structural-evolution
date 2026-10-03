@@ -1,0 +1,395 @@
+{
+  "status": "verified_original_alternate_covariance_pipeline_runtime",
+  "checked_utc": "2026-10-03T21:34:12.635284+00:00",
+  "stage": "parallel",
+  "plan": "metadata/process_covariance_readback_plan_20261003_v2.json",
+  "plan_sha256": "e56451f4854a4f600923b0421f26d764069b104ecb40b488e03c51e56ef14e37",
+  "frozen_pins_checked": 26,
+  "original_handles": [
+    {
+      "unit": "fungal-process-covariance-readback-v2-20261003-v1.service",
+      "pid": 960102,
+      "created": 1791060630.02,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/process_covariance_readback_v2_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/process_covariance_readback_v2_wait_plan_20261003.json",
+      "plan_sha256": "a715d59ff4f6c2138017ad99e887f489fb3279cf6dd98f6fe03eeda7cdb5f7e2",
+      "checked_utc": "2026-10-03T20:50:30.752428+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "800000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-process-covariance-readback-v2-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=800%",
+        "--property=MemoryMax=64G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/process_covariance_readback_v2_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/process_covariance_readback_v2_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.26,
+      "children": [
+        {
+          "pid": 960129,
+          "created": 1791060631.33,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 890.48
+        },
+        {
+          "pid": 1000005,
+          "created": 1791062312.09,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.57
+        },
+        {
+          "pid": 1000010,
+          "created": 1791062312.14,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.98
+        },
+        {
+          "pid": 1000013,
+          "created": 1791062312.2,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.85
+        },
+        {
+          "pid": 1000016,
+          "created": 1791062312.25,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.48
+        },
+        {
+          "pid": 1000020,
+          "created": 1791062312.31,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.78
+        },
+        {
+          "pid": 1000023,
+          "created": 1791062312.37,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.55
+        },
+        {
+          "pid": 1000026,
+          "created": 1791062312.42,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 932.42
+        },
+        {
+          "pid": 1000029,
+          "created": 1791062312.48,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 931.96
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "f096097a131582260f9c01eaafd1816c44aa58e85bb6ff2c843cd496d3c8728b",
+      "current_cgroup_limits": {
+        "cpu.max": "800000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 63891521536,
+        "memory.peak": 68719476736,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 15668,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 960129,
+          "created": 1791060631.33,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3263238144,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000005,
+          "created": 1791062312.09,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3195580416,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000010,
+          "created": 1791062312.14,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3352715264,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000013,
+          "created": 1791062312.2,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3425071104,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000016,
+          "created": 1791062312.25,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3407048704,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000020,
+          "created": 1791062312.31,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3377324032,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000023,
+          "created": 1791062312.37,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3297685504,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000026,
+          "created": 1791062312.42,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3497504768,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 1000029,
+          "created": 1791062312.48,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_parallel_covariance_readback_v2.py",
+            "--plan",
+            "metadata/process_covariance_readback_plan_20261003_v2.json"
+          ],
+          "rss_bytes": 3155984384,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              65536                65536                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-process-covariance-readback-v2-closure-20261003-v1.service",
+      "pid": 960106,
+      "created": 1791060630.06,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/process_covariance_readback_v2_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/process_covariance_readback_v2_closure_wait_plan_20261003.json",
+      "plan_sha256": "25f8e1560da30e682a83e7f620a273f94ae894c4d507d2553423631d33dff61a",
+      "checked_utc": "2026-10-03T20:50:30.780455+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-process-covariance-readback-v2-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/process_covariance_readback_v2_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/process_covariance_readback_v2_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.27,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "d252587ae4961dd123b9f63f7b094beb2cca4836e2de9dadd64590dd9ce4a8d2",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 30617600,
+        "memory.peak": 50974720,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "launch": "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+      "pid": 2522914,
+      "created": 1790978401.08,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "4ed72058784f41c1e44e87f63facedc7e5a8c1772742f5a8160a819146930895",
+      "captured_process_messages": 360,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791041175451294",
+          "CPU_USAGE_NSEC": "51361674006000",
+          "MEMORY_PEAK": "3022848",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completion_gates": {
+    "completion": {
+      "path": "metadata/full_uniform_covariance_process_completed_20261003_v2.json",
+      "present": false
+    }
+  },
+  "output_root_present": true,
+  "completed_cohort_files": 346,
+  "producer_receipt_present": false,
+  "independent_readback_present": false,
+  "expected": {
+    "cohorts": 4340,
+    "audit_rows": 1302000,
+    "setting_audit_links": 6220800
+  },
+  "production_fitting_launched": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command or invocation-linked terminal journals; live cgroup limits/memory and immutable pins checked. Compact closure/archive hashes and available file counts only: no full inherited source replay, independent artifact validation, precise final native peaks, numerical qualification or biological acceptance. A live source-checking child may precede creation of its fresh output root. No restart or mutation."
+}

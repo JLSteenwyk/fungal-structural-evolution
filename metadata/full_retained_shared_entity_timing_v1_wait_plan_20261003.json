@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    "metadata/reduced_covariance_process_source_v3_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=604800",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_full_retained_shared_entity_timing.py",
+    "--plan",
+    "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json": "a9d126e5a26ac86f21922b1b6d029d807056c782e190dd6c1311c3099c03d42f",
+    "metadata/reduced_covariance_process_source_v3_closure_launch_20261003.json": "6bf26565ff277957a2d4c50c0ee204fabb305cb567bfeff1f1595271096ad918",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_retained_shared_entity_fits.py",
+    "--output",
+    "data/software_audits/full-retained-fitting-20261003-v1",
+    "--receipt",
+    "metadata/full_retained_fitting_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_retained_fit_software_stage.py": "a86ec46c0fbb42fcaa6ed1a5ee19975781e1a258651cb3917d3f7cc7a0e34f24",
+    "metadata/full_retained_fitting_software_resources_20261003_v1.json": "b70b77d310c494e287adb62fbe65477b562adc0184a4419006a75b31964c3de3",
+    "scripts/check_full_retained_shared_entity_fits.py": "aa6dc6e07f3e00b96ca842b5c4e2d4aa8ceb0f8529ad2f58ff60bbedce09b477",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "a4e0bc3be91845fe9b92388b35b50a14",
+  "wrapper": {
+    "pid": 988874,
+    "created": 1791062208.21,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_retained_fit_software_stage.py",
+      "--resources",
+      "metadata/full_retained_fitting_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/full_retained_fitting_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-retained-fitting-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 2400,
+  "started_utc": "2026-10-03T21:16:49.005818+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-03T21:16:56.812136+00:00",
+  "child": {
+    "pid": 988886,
+    "created": 1791062208.31,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-retained-fitting-20261003-v1",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 7.806124564027414,
+  "child_cpu_seconds": 7.701405,
+  "child_peak_rss_bytes": 160432128,
+  "receipt": "metadata/full_retained_fitting_software_validation_20261003_v1.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/full_retained_fitting_software_execution_20261003_v1/stderr.log": "4cb0398032e26fadf8ba82a3c2e6d769b016f6826742815c7df435ee7b683ad0",
+    "metadata/full_retained_fitting_software_execution_20261003_v1/configuration.json": "eb9319b15ce9ce45d79e71f5895fa5f9a91c9fe8f81148784e4fc2343fe14b15",
+    "metadata/full_retained_fitting_software_execution_20261003_v1/stdout.log": "91add3179ecc1567522beea3d11fa25eee71b46820caf5a2e94f249ae22b5f59",
+    "metadata/full_retained_fitting_software_execution_20261003_v1/process.json": "75d04e1d0aca8d6652f9782e44f4bd8cc98f244e3c331aff99fc53d4c74423a1"
+  },
+  "scope": "One original CPU-only complete retained covariance fitting software qualification with actual cgroup caps, prlimit command, PID/create/exit and retained logs. Child RSS is not cgroup peak. Scope and counts are established by the software checker receipt. The checker covers the complete declared five-cohort6000candidate12000link synthetic fitting grid, source/checkpoint/output/link contracts, plus sixteen actual q4/q5 numerical candidate serialization/replays. Source/journal fixtures are synthetic; full production-source loading, timing and fitting remain gated. Its own exit is not full-grid arithmetic closure. No original-output edits, failed-job restart, GPU work, new charges or biological acceptance."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "verified_actual_full_retained_fitting_software_wait_zero",
+  "checked_utc": "2026-10-03T21:36:51.924835+00:00",
+  "tool_session_id": 82427,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-full-retained-fitting-software-20261003-v2.service",
+  "invocation_id": "656bc156982643a88cecd7ef6fab9a84",
+  "wrapper": {
+    "pid": 1003262,
+    "created": 1791062407.18,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_retained_fit_software_stage.py",
+      "--resources",
+      "metadata/full_retained_fitting_software_resources_20261003_v2.json",
+      "--execution",
+      "metadata/full_retained_fitting_software_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_retained_shared_entity_fits_v2.py",
+      "--output",
+      "data/software_audits/full-retained-fitting-20261003-v2",
+      "--receipt",
+      "metadata/full_retained_fitting_software_validation_20261003_v2.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 1,
+  "original_command_start_records": 1,
+  "original_completion_resource_records": 1,
+  "fresh_bindings_rehashed": 285,
+  "source_hashes": {
+    "metadata/full_retained_fitting_software_execution_20261003_v2.json": "864759e4703764ce38563b504ca4816cbdc5af9c40fda9d6bab5809e7011609f",
+    "metadata/full_retained_fitting_software_validation_20261003_v2.json": "cebe45c288b115bf8cf1c91afe8b162dcae621ca752cb20c5e0f2649677ff080",
+    "metadata/full_retained_fitting_software_execution_20261003_v2/original-invocation-journal.jsonl": "e6424fbb35a8c7546536e0d4419f5fd88c4bd97def9f366b69fac87eef50aa92"
+  },
+  "scope": "Actual original tool wait exited0; original PID/create/command native configuration and exact invocation/PID journal payload match receipt SHA and success, plus manager start and completion. The journal was retained without fabricated records. Native child RSS in execution receipt differs from manager memory accounting; neither proves full-data timing or scientific acceptance. Qualified software files remain immutable."
+}

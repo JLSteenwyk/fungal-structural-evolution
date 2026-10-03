@@ -1,0 +1,34 @@
+{
+  "status": "passed_immutable_full_retained_timing_prelaunch_plan_and_gate_checks",
+  "checked_utc": "2026-10-03T21:41:47.590712+00:00",
+  "exact_original_full_grid_preserved": true,
+  "original_optimizer_and_audit_settings_unchanged": true,
+  "all_qualified_software_gate_artifacts_rehashed": true,
+  "actual_preparation_tool_session": 57350,
+  "actual_preparation_tool_exit_code": 0,
+  "original_live_dependency": {
+    "pid": 963503,
+    "created": 1791060866.38,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/reduced_covariance_process_source_v3_closure_wait_plan_20261003.json"
+    ]
+  },
+  "full_real_source_loading_complete": false,
+  "production_fitting_launched": false,
+  "source_hashes": {
+    "metadata/full_retained_shared_entity_resource_inventory_20261003_v1.json": "855f004622b5c9f2b68fd923a4df1e699e08e97089bd4c9a600cc9c4fd9fe605",
+    "metadata/full_retained_shared_entity_fit_draft_plan_20261003_v1.json": "70f53acfc72f60ba45b83d67fb784123c0b4b7f313a7f571f137c993abdca83d",
+    "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json": "a9d126e5a26ac86f21922b1b6d029d807056c782e190dd6c1311c3099c03d42f",
+    "metadata/reduced_covariance_process_source_v3_closure_launch_20261003.json": "6bf26565ff277957a2d4c50c0ee204fabb305cb567bfeff1f1595271096ad918",
+    "metadata/full_retained_fitting_software_validation_20261003_v2.json": "cebe45c288b115bf8cf1c91afe8b162dcae621ca752cb20c5e0f2649677ff080",
+    "metadata/full_retained_fitting_software_execution_20261003_v2.json": "864759e4703764ce38563b504ca4816cbdc5af9c40fda9d6bab5809e7011609f",
+    "metadata/full_retained_fitting_software_transport_20261003_v2.json": "7841d29b030168c5d4a195f73bce10f79fcf9f2fd1b4e26c06b83e692a6235ed",
+    "metadata/full_retained_timing_software_validation_20261003_v1.json": "5aaf24ef27ac63d74166a471c45a36b58efcc7bd91ae204d8be1def6e2db0b22",
+    "metadata/full_retained_timing_software_execution_20261003_v1.json": "49d6f0f810392743e4de215fef09b3cbcd455c27aee30d68fe8715fcd7c923b4",
+    "metadata/full_retained_timing_software_transport_20261003_v1.json": "74fe38bfc2ef0d39693219a8ebc6ac439395398f43764599839294925a425bdc"
+  },
+  "scope": "Offline plan/resource/gate admission check before queue creation; full production source loading and arithmetic remain gated. Immutable plan hashes, exact full original grid, preserved optimizer/settings, fresh source bindings and original live dependency checked. No scientific acceptance or asserted full timing."
+}

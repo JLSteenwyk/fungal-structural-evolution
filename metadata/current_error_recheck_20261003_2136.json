@@ -1,0 +1,158 @@
+{
+  "status": "completed_read_only_error_recheck",
+  "checked_utc": "2026-10-03T21:35:11.505006+00:00",
+  "evidence": {
+    "metadata/baliphy_stack_followup_execution_checkpoint_20261003_user_error_recheck.json": "a3a14b6248063889ab54138595d243d9a25911d82911bdd17485f553ec95d36c",
+    "metadata/process_covariance_readback_execution_checkpoint_20261003_user_error_recheck.json": "0622b200e0f7fd82eb5c6d5c0f472f2028dce39a1575573c4856ae20790b390a"
+  },
+  "covariance": {
+    "checked_cohorts": 346,
+    "expected_cohorts": 4340,
+    "failure_files": [],
+    "full_completion_present": false,
+    "candidate_original_failure_cohort_report_sha256": "f45b1e5d045e3a27505bffbf099262b451e3fb5f4747d7a4fa133b977063a949",
+    "original_error_cause_established": false
+  },
+  "ancestral": {
+    "completed_followup_attempts": [
+      {
+        "chain": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1.json",
+        "status": "timeout",
+        "exit_code": -9,
+        "elapsed_seconds": 5679.4614774440415,
+        "receipt_sha256": "76c5347c443e20e499040abc6956e0bbf9b3f38ed0ed56c025155129c90fb9ad",
+        "artifacts_rehashed": 10
+      },
+      {
+        "chain": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1.json",
+        "status": "timeout",
+        "exit_code": -9,
+        "elapsed_seconds": 6272.710020830971,
+        "receipt_sha256": "fb136d5bc3b7aff6e7eb271f0209746289421621ffd98c541bffa1dacfb94cc6",
+        "artifacts_rehashed": 10
+      },
+      {
+        "chain": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1.json",
+        "status": "timeout",
+        "exit_code": -9,
+        "elapsed_seconds": 6789.169126627967,
+        "receipt_sha256": "b26af1278d6a3500e1a24bf607f23e0328ed0d453d41c19eeb13cc1af7aee984",
+        "artifacts_rehashed": 10
+      },
+      {
+        "chain": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1.json",
+        "status": "timeout",
+        "exit_code": -9,
+        "elapsed_seconds": 7205.346685778932,
+        "receipt_sha256": "7fb60310e9edd3fe28e2cf1429ae8c71097c6852bd0ba3a70a97b8b71748afa0",
+        "artifacts_rehashed": 10
+      }
+    ],
+    "native_status_counts": {
+      "timeout": 4
+    },
+    "live_native_workers": 4,
+    "log_snapshots": [
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+        "bytes": 0,
+        "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "error_matches": []
+      },
+      {
+        "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+        "bytes": 719,
+        "snapshot_sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+        "error_matches": []
+      }
+    ],
+    "full_followup_completed": false
+  },
+  "restarts": 0,
+  "settings_changed": false,
+  "scope": "Existing original handles and immutable pins verified by recorders. Every completed follow-up receipt and native artifact freshly rehashed; available native stdout/stderr searched for crash, allocation and logger error signatures. Live logs are momentary snapshots. No new arithmetic replay or assertion of complete repair; all original failures retained."
+}

@@ -33,9 +33,9 @@ production readback passed 42 native roles across both modes. Eight CPU
 workers/24 GiB/no swap run separately from the paused GPU predictions.
 Full resampling readback, provenance closure and calibrated uncertainty
 remain pending.
-At October 3, 20:54 UTC, the original controller reported 14,372/53,200
-completed draws (27.0%); full independent native archive closure remains pending.
-[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_2055.json).
+At October 3, 21:42 UTC, the original controller reported 16,269/53,200
+completed draws (30.6%); full independent native archive closure remains pending.
+[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_2151.json).
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
@@ -92,6 +92,15 @@ is unexplained despite 2,700 passing diagnostic comparisons. The newly
 qualified retained-basis stage is queued behind complete validation; production
 fitting has not started. Original failed outputs and serial queues stay
 preserved.
+
+The [complete retained fitting and timing workflow](docs/full-retained-fitting-and-timing-20261003.md)
+is now software qualified. It preserves all 5,208,000 potential candidates and
+12,441,600 setting links. The full-data timing census is queued behind complete
+process/retained covariance closure; no production fitting has been launched
+or queued. Independent fitting readback and numerical reviews remain explicit.
+At 21:41 UTC the process reader had checked 500/4,340 cohorts; validation and
+the cause of the original mismatch remain unresolved. Runtime remains
+uncalibrated, and all eight biological aims remain incomplete.
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
