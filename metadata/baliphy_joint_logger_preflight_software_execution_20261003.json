@@ -1,0 +1,40 @@
+{
+  "status": "verified_original_joint_logger_preflight_software_completion",
+  "checked_utc": "2026-10-03T09:15:44.953785+00:00",
+  "terminal": {
+    "unit": "fungal-joint-logger-preflight-software-20261003-v1.service",
+    "pid": 2931768,
+    "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_joint_logger_preflight.py --output data/software_audits/joint-logger-preflight-software-20261003-v1 --receipt metadata/baliphy_joint_logger_preflight_software_validation_20261003_v1.json",
+    "invocation": "c5664640f974419f95c8dd8566932029",
+    "receipt": "metadata/baliphy_joint_logger_preflight_software_validation_20261003_v1.json",
+    "receipt_sha256": "12725f4799c37cb256c98ab825b68ca116376d7524c37f7a86ecd87f00f7033b",
+    "checked_source_bindings": 41,
+    "checked_export_bindings": 0,
+    "journal_sha256": "34309150670f092ae7b022c43bef3db1b00a1fe22e3461b64b6a56b0da8dfb80",
+    "actual_completion_resources": [
+      {
+        "__REALTIME_TIMESTAMP": "1791018776018604",
+        "CPU_USAGE_NSEC": "73989164000",
+        "MEMORY_PEAK": "73945088",
+        "MEMORY_SWAP_PEAK": "0"
+      }
+    ],
+    "status": "verified_original_software_completion"
+  },
+  "launch": "metadata/baliphy_joint_logger_preflight_software_launch_20261003_v1.json",
+  "launch_sha256": "b04cb3999304649d3d4658e8f2f9092ed14ea8ef38e1a3f2b2b4761493504426",
+  "actual_group_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "source_hashes": {
+    "scripts/check_baliphy_joint_logger_preflight.py": "ef88404776bf59e8565db7a1aff3fb595c4773a4bd5c7293cad8a5846d7a766f",
+    "scripts/run_baliphy_joint_logger_preflight.py": "6b07cb55e48b2f9e5c162937c22d123ad6d18f2e4a93513b60cfe5d1630a62fb",
+    "scripts/readback_baliphy_joint_logger_preflight.py": "82fa580029caa018c1271f40677083cfc008b92d662b36e67e72686425ee0fa2",
+    "scripts/prepare_baliphy_joint_logger_preflight.py": "01aec19e32304b039eadb535224938489dfb081c7be7fc362544df3c283ae22c",
+    "metadata/baliphy_joint_logger_preflight_software_resource_plan_20261003.json": "eece0bbc1c29b5828d082ff85eaf0c3fd323b8f005829c44c392a38ddf6f9680"
+  },
+  "scientific_eligibility": false,
+  "posterior_sampling_launched": false
+}

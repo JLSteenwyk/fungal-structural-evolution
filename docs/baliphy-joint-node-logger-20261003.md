@@ -9,7 +9,9 @@ between historical separate logs.
 The corrected logger has passed capped native software checks across all
 three priors. The complete future source grid is prepared: **405 model
 programs and 1,620 fresh seed roles**, covering all 135 effective inputs and
-324 original configuration aliases. These sources have not been launched.
+324 original configuration aliases. Their
+[full startup-only validation](baliphy-joint-logger-preflight-20261003.md)
+is now running; the future posterior horizon has not been launched.
 No posterior or biological aim is qualified by this software result.
 
 ## Why separate logs cannot be paired by iteration alone

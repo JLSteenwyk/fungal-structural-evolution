@@ -16,8 +16,11 @@ A [corrected joint ancestral logger](docs/baliphy-joint-node-logger-20261003.md)
 has passed native software checks across all three priors. Encoding sequences
 and full-node categories in one record gives exact residue/state agreement;
 separate legacy logs can represent different conditional draws. All 405
-future model programs and 1,620 disjoint seed roles are prepared but unlaunched.
-At 08:45 UTC, the original sampler had 869 successful unclosed checks.
+future model programs and 1,620 disjoint seed roles are prepared; their
+[full startup validation](docs/baliphy-joint-logger-preflight-20261003.md) is
+now running under two CPUs and 32 GiB RAM, with no swap. Startup uses
+`--test`; the future posterior horizon remains unlaunched. At 09:20 UTC,
+the original sampler had 1,068 successful unclosed checks.
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)

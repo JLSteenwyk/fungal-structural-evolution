@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-baliphy-joint-logger-preflight-readback-20261003-v1.service",
+  "pid": 2935524,
+  "created": 1791019054.79,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_joint_logger_preflight_readback_wait_plan_20261003.json"
+  ],
+  "plan": "metadata/baliphy_joint_logger_preflight_readback_wait_plan_20261003.json",
+  "plan_sha256": "15d11ead9ace1c90888d40401573e26351d20a86b44fee0e42405033ae01e3b9",
+  "checked_utc": "2026-10-03T09:17:35.526560+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-baliphy-joint-logger-preflight-readback-20261003-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_joint_logger_preflight_readback_wait_plan_20261003.json"
+  ]
+}

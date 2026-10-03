@@ -1,5 +1,54 @@
 # Progress and evidence
 
+## October 3, 09:31 UTC: logger error rechecked
+
+Read-only replay reproduced all five state/sequence mismatches in the
+preserved original failed output. The corrected logger passed all nine
+saved fixture records across three priors, covering 36 ancestral records
+and 233 residue/category pairs; all 507 fixture source bindings were
+verified. This confirms the correction for those fixtures, not complete
+native sampling qualification for the fungal grid.
+
+At 09:30 UTC, 160 of 1,620 future startup roles had valid unclosed checks
+with no failed dispositions; all original startup handles, caps and 1,432
+source pins were verified. Readback and closure remain pending. The
+separate original short sampler had 1,068 successful unclosed checks at
+09:31 UTC, and its corrected reader remained queued. Two historical
+allocation failures remain unresolved. No jobs were restarted or new
+inference launched by this recheck.
+[Fresh error evidence](../metadata/baliphy_joint_logger_error_recheck_20261003_0930.json).
+
+## October 3: full future joint-logger startup validation launched
+
+Native startup-only validation is now running for every one of the 1,620
+future roles, 405 quartets, 135 inputs and 324 aliases. Commands use
+`--test --log-format json` with no MCMC iterations. The full source/config
+generator checked exact inverses of every joint-logger program, complete
+metadata preservation and disjoint seeds. Eleven design alterations were
+rejected. Three native synthetic fixtures across priors validated reference
+homology, fixed-tip/free-ancestor representation, rooted runtime trees and
+degree-aware densities. Full producer/readback serialization with all real
+role metadata and mocked execution/admission retained two artificial failures
+and two unresolved quartets; six restart/omission/claim alterations were
+rejected. This does not prove complete native startup or saved logging frames.
+
+Actual software invocation completion, 41 bindings and captured limits were
+verified: 73.989164 CPU seconds, 73,945,088 bytes peak group memory and zero
+swap. The full native startup plan binds 1,432 sources and runs two workers
+under two CPUs/32 GiB/no swap, with 12 GiB address space, 600 CPU seconds,
+900 wall seconds and 256 MiB per file per attempt. Readback and full original
+two-journal provenance closure are queued. At 09:18 UTC all three original
+handles/caps were verified and 12 roles had valid unclosed startup checks.
+
+At 09:20 UTC the original short sampler had 1,068 successful unclosed role
+checks. Its observation-aware replay remained queued, and its resource
+observer was reverified. Old jobs/sources/attempts/caps were not changed.
+Full startup and joint-frame qualification, sampler/resource/replay closure,
+historical allocation failures, longer resources/mixing, scientific controls,
+calibration, accepted phylogeny/reconciliation/dating and all eight aims remain
+open. GPU prediction remains paused; no new posterior horizon is launched.
+[Full gate, estimates, execution and limitations](baliphy-joint-logger-preflight-20261003.md).
+
 ## October 3: observation-aware full replay qualified and queued
 
 The [corrected historical reader v2](independent-short-sampler-replay-v2-20261003.md)

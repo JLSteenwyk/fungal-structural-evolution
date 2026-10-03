@@ -6,9 +6,11 @@ support the aims but do not replace their statistical or biological requirements
 
 The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.md)
 now pass across all three priors, and all 405 future programs/1,620 disjoint
-seed roles are prepared. Future native-grid startup/logging qualification
-and adequately mixed posterior ensembles have not run. The existing short
-sampler continues, with 869 successful unclosed role checks at 08:45 UTC.
+seed roles are prepared. Their
+[full native-grid startup qualification](baliphy-joint-logger-preflight-20261003.md)
+is now running without MCMC; full saved-frame logging qualification and
+adequately mixed future posterior ensembles have not run. The existing short
+sampler continues, with 1,068 successful unclosed role checks at 09:20 UTC.
 The [unknown-residue reader correction](independent-short-sampler-replay-v2-20261003.md)
 has passed full-grid software serialization and is queued for all 1,620
 roles, including all 24 identified by the ambiguity census. Full production

@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/baliphy_joint_logger_preflight_launch_20261003.json",
+    "metadata/baliphy_joint_logger_preflight_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/baliphy_joint_logger_preflight_completion_plan_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_logger_preflight_completion_plan_20261003.json": "ea14c696ce8cdcef43c78e71dabb42bc3f2c8f0ea6a3741f56ec15113b102b0e",
+    "metadata/baliphy_joint_logger_preflight_launch_20261003.json": "7a3fb4a1ab5f1bd908cf607a9fcaa3bdf18d2ef017027ec3da8c35377425a516",
+    "metadata/baliphy_joint_logger_preflight_readback_launch_20261003.json": "04d8c0be99bdd9acefec7bbbfb5bc65df47ac00fb60bfe6b22e3fbdaf25646b7",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

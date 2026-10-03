@@ -1,5 +1,23 @@
 # Decisions and unresolved questions
 
+## October 3: qualify every future logger startup before sampling
+
+Run native `--test` across all 1,620 prepared future roles after full source,
+native-fixture and producer/readback software checks. Preserve every prior,
+alias, input, role, seed and unsuccessful disposition. Verify exact source
+inverses, reference homology, fixed-tip/free-ancestor representation, rooted
+runtime trees and degree-aware prior densities; recognize only the exact
+native timing footer. Require full readback and original source/artifact/
+two-journal closure. Use bounded two-worker startup resources and preserve
+older jobs and attempts.
+
+Startup does not evaluate saved joint logging frames or establish posterior
+adequacy. A future full sampling qualification still needs its own complete
+saved-output, memory and mixing evidence; longer production remains gated.
+The source-preparation record's unlaunched flags describe its preparation
+time and are preserved; the new startup execution is recorded separately.
+[Full protocol and resource estimates](baliphy-joint-logger-preflight-20261003.md).
+
 ## October 3: co-evaluate ancestral sequences and categories
 
 Use sequences and category/state arrays from the same logger record for

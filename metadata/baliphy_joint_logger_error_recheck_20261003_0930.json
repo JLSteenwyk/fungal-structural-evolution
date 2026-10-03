@@ -1,0 +1,51 @@
+{
+  "status": "read_only_logger_error_recheck",
+  "checked_utc": "2026-10-03T09:31:38.664204+00:00",
+  "original_failed_output_mismatches_reproduced": [
+    {
+      "iteration": 0,
+      "label": "A2",
+      "saved_sequence": "ATCDEYFG",
+      "decoded_states": "ATCDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A4",
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A6",
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 20,
+      "label": "A0",
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    },
+    {
+      "iteration": 20,
+      "label": "e",
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    }
+  ],
+  "corrected_joint_frames_checked": 9,
+  "corrected_ancestral_records_checked": 36,
+  "corrected_ancestral_residue_category_pairs": 233,
+  "corrected_same_record_checks_passed": true,
+  "corrected_fixture_source_bindings_verified": 507,
+  "corrected_software_receipt": "metadata/baliphy_joint_node_logger_software_validation_20261003_v4.json",
+  "corrected_software_receipt_sha256": "36338e6204a7319a633f73e787835bdc25b95d2e292c8d0f93859d1187e031ff",
+  "startup_checkpoint": "metadata/baliphy_joint_logger_preflight_execution_checkpoint_20261003_v2.json",
+  "startup_checkpoint_sha256": "4c6eac95967531c47408d7984a47ed9e8d99dfe774b495f220205ad6bcf9e121",
+  "full_native_joint_sampling_output_validated": false,
+  "new_native_inference_runs": 0,
+  "jobs_restarted": false,
+  "earlier_memory_allocation_failures_unresolved": 2,
+  "posterior_qualified": false,
+  "observation_script_correction": "Initial read-only summary construction used nonexistent key ancestors; corrected to actual native_ancestors. Validation itself had passed; no receipt written by failed summary and no native attempt changed."
+}

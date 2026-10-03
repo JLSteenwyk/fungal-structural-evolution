@@ -3,7 +3,9 @@
 The October 3 [joint ancestral logger](baliphy-joint-node-logger-20261003.md)
 places full ancestral alignments and category/state records in the same
 native logger action. The complete future 405-program/1,620-role grid uses
-three reversible logging edits and fresh seeds; it remains unlaunched.
+three reversible logging edits and fresh seeds. Their
+[full native startup validation](baliphy-joint-logger-preflight-20261003.md)
+is running in `--test` mode; no future posterior horizon is launched.
 Six native software runs across all priors demonstrated exact within-record
 sequence/state agreement at every node, while paired scalar/runtime-tree/
 legacy-alignment files remained identical. Separate logger representations
