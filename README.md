@@ -52,8 +52,8 @@ frames fail the strict mean check, and mean-passing frames do not gain rate
 eligibility. Unknown-residue disagreements between separate conditional draws
 remain explicit; historical ancestral categories are unavailable.
 
-The full corrected V5 startup grid is running, with 1,156 successful unclosed
-checks at 14:26 UTC and zero unsuccessful checkpoints. The V3 full
+The full corrected V5 startup grid is running, with 1,518 successful unclosed
+checks at 14:48 UTC and zero unsuccessful checkpoints. The V3 full
 20-iteration joint sampler is queued behind complete corrected startup and
 three closed historical prerequisites. Its software gate passed the entire
 1,620-role workflow with explicit mock failures and export-tampering checks.

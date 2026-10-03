@@ -35,6 +35,12 @@ remain pending. Model/framework/reconciliation/calibration, adequate ancestral
 posteriors and all eight biological aims remain incomplete.
 [Method, figures, resources and complete evidence](matched-predictor-branch-controls-20261003.md).
 
+At 14:48 UTC, a fresh original startup-handle/pin/cgroup check confirmed
+1,518 successful unclosed outcomes and zero unsuccessful, out of 1,620.
+The original joint sampler was still queued with zero native roles at 14:40;
+complete corrected startup/readback/closure is required before admission.
+[Fresh startup evidence](../metadata/baliphy_joint_logger_preflight_v5_execution_checkpoint_20261003_1450.json).
+
 ## October 3, 13:25 UTC: corrected encoder qualified; full historical replay closed
 
 The V5 logger bypasses the installed exponent formatter for numeric properties.
