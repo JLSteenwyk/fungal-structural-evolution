@@ -1,0 +1,22 @@
+{
+  "status": "verified_completed_direct_joint_sampler_v2_software_check",
+  "checked_utc": "2026-10-03T10:05:25.559696+00:00",
+  "receipt": "metadata/baliphy_joint_sampler_software_validation_20261003_v2.json",
+  "receipt_sha256": "514813227f019498bd67aadd5bb6afb79f6dfdec74134ef4a40c3f409395ddb4",
+  "verified_source_bindings": 55,
+  "observed_exec_session_id": 79862,
+  "observed_exec_exit_code": 0,
+  "stdout_stderr_log": "data/software_audits/joint-sampler-qualification-software-20261003-v2.log",
+  "stdout_stderr_log_sha256": "05e66083dfb35580b4942bdc9bd82b9213f95a7d262ad9dd35c3e859ddb9204b",
+  "configured_address_space_bytes": 12884901888,
+  "configured_cpu_seconds": 210,
+  "configured_wall_timeout_seconds": 240,
+  "configured_file_size_bytes": 536870912,
+  "blas_threads": 1,
+  "self_cpu_seconds": 92.07577,
+  "self_peak_rss_bytes": 322113536,
+  "charged_group_memory_peak": null,
+  "observed_systemd_invocation": null,
+  "new_native_inference_runs": 0,
+  "scope": "Direct exec tool completion observed; every receipt binding and captured stdout/stderr log hash checked. Self RUSAGE values, not cgroup memory or systemd terminal evidence. Three retained native fixtures read only and full mock execution; no new inference."
+}

@@ -1,0 +1,48 @@
+{
+  "source_plan": "metadata/baliphy_joint_sampler_qualification_v2_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-baliphy-joint-sampler-qualification-20261003-v2/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-joint-sampler-qualification-20261003-v2/readback.json",
+  "producer_status": "complete_full_joint_short_sampler_dispositions_pending_readback_v2",
+  "reader_status": "passed_full_joint_short_sampler_serialized_readback_v2",
+  "completed_status": "complete_verified_full_joint_short_sampler_qualification_v2",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "checked_sampler_attempts",
+    "unsuccessful_sampler_attempts",
+    "complete_quartets",
+    "unresolved_quartets",
+    "saved_alignments",
+    "candidate_frames",
+    "status_counts",
+    "allocation_warning_attempts",
+    "bad_alloc_attempts",
+    "gamma_equal_rate_limit_events",
+    "other_nonfinite_events",
+    "nonpositive_parameter_review_events",
+    "posterior_qualified",
+    "joint_saved_frames",
+    "joint_ancestral_records",
+    "joint_ancestral_residue_category_pairs",
+    "joint_tip_residue_category_pairs",
+    "joint_anchored_candidate_cells",
+    "joint_unanchored_candidate_residues",
+    "joint_category_data_available_for_checked_roles",
+    "reservation_audit"
+  ],
+  "launches": [
+    "metadata/baliphy_joint_sampler_qualification_v2_launch_20261003.json",
+    "metadata/baliphy_joint_sampler_qualification_v2_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_sampler_qualification_v2_plan_20261003.json": "6fbe8c54949442847fdafa151878585ddd218d2ac2f9ae883cb00e24ace8668c",
+    "metadata/baliphy_joint_sampler_qualification_v2_launch_20261003.json": "a3add60a50838043df0fc74ebce726976adea28359ef435f1cea56fa3b8f6697",
+    "metadata/baliphy_joint_sampler_qualification_v2_readback_launch_20261003.json": "c721cf9bce3b8e51874464cd815e5dd8a39e39b3fd9a7275e0b740f09f66e1a9",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_joint_sampler_qualification_v2_completed_20261003.json",
+  "scope": "All1620preparedfuturejointroles/405quartets/135inputs/324aliases:20iterations, three joint frames per successful role. Startup seeds used for firstMCMC, not continued posterior samples. All four original prerequisite closures mandatory, including corrected ambiguity reader and observed resource boundaries. Same-record all-node states/categories, rooted clades/candidates, observed-tip constraints, anchored/unanchored residue coordinates, complete native/config/process/artifact and exact arrays checked. Failed/invalid rows and unresolved quartets retained without automatic retry. Readback never recreates missing exports; producer binding verification required. Complete source/artifact/two-original-journal closure mandatory. No longer posterior, mixing/likelihood/model/root/predictor acceptance, historical allocation repair, GPU, charges or completed biological aims implied. Existing sources/attempts/caps unchanged."
+}

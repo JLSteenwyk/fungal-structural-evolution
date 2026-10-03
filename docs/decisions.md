@@ -1,5 +1,23 @@
 # Decisions and unresolved questions
 
+## October 3: queue full joint-output qualification after four closures
+
+The new joint logger must pass complete native output and exact serialized
+array checks for all 1,620 roles before longer posterior planning. The
+20-iteration stage waits for the original full startup, historical sampler,
+resource-observer and corrected ambiguity-reader closures; the frozen v1
+reader is not a dependency. Startup-only seeds are used for first MCMC and
+are not continued/concatenated posterior chains. All failures remain explicit.
+
+Source review after a passing initial software gate found an untested missing
+export-directory case. Preserve v1 sources/receipt and use a separately
+qualified v2 whose readback cannot create output and verifies all producer
+bindings first. Actual retained fixtures and full mock serialization are
+different evidence scopes. Keep resource estimates distinct from enforced
+limits and observed self/cgroup memory. No GPU prediction, longer posterior
+qualification or completed biological aim is implied.
+[Protocol and preserved review finding](baliphy-joint-sampler-qualification-20261003.md).
+
 ## October 3: qualify every future logger startup before sampling
 
 Run native `--test` across all 1,620 prepared future roles after full source,

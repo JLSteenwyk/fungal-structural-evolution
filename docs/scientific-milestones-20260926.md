@@ -9,6 +9,12 @@ now passes retained native fixture and full future-role input checks. It keeps
 ancestral state/category pairs attached to both observed residue anchors and
 candidate-only insertions. Full-grid native sampling output, stage provenance
 closure and posterior adequacy remain unverified.
+A [full 20-iteration joint-output qualification](baliphy-joint-sampler-qualification-20261003.md)
+is queued behind four complete prerequisite closures. Software and retained
+native fixture checks pass, including refusal to recreate missing exports.
+The queued stage has no native role checkpoints at its first observation;
+full new resource observation and adequate longer posterior ensembles remain
+required.
 
 The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.md)
 now pass across all three priors, and all 405 future programs/1,620 disjoint

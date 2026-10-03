@@ -25,6 +25,12 @@ unclosed checks. An [independent joint-frame reader](docs/independent-joint-ance
 now passes retained native fixture and full future-role input checks, keeping
 ancestral states, rate categories and residue coordinates paired. Full-grid
 joint native sampling output remains unverified.
+The [full 20-iteration joint-output qualification](docs/baliphy-joint-sampler-qualification-20261003.md)
+is now queued behind complete startup, historical sampler, resource-observer
+and corrected-reader closures. It retains every failed role and requires
+complete native, array, memory-ledger and provenance checks. At 10:07 UTC
+its native role count was zero; the historical sampler had 1,075 successful
+unclosed checks. Longer adequate posterior ensembles remain unlaunched.
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)

@@ -1,0 +1,16 @@
+{
+  "status": "source_review_identified_missing_export_readback_admission_gap",
+  "checked_utc": "2026-10-03T10:00:07.994000+00:00",
+  "source_hashes": {
+    "scripts/baliphy_joint_sampler_qualification.py": "fcc0c8e099a259b4a996441da85f38f2247cf35c018262809ab78b25977e6f4f",
+    "scripts/run_baliphy_joint_sampler_qualification.py": "eb70aa19daa21a39d89220d72ed6799668b2d9c1b2cea208fffb65c50e1178d0",
+    "scripts/check_baliphy_joint_sampler_qualification.py": "a3418420d97f44c24e6507e66fd49bbb0aaaee5e674ef1f7c93b644140f2fdcb",
+    "metadata/baliphy_joint_sampler_software_validation_20261003_v1.json": "f6649a01814eb808f6ff08ba61a4595553d3c02a5bd30d57d5c3f758a319af2f"
+  },
+  "first_software_scope_passed": true,
+  "missing_export_cases_not_in_first_gate": true,
+  "issue": "V1 inspect creates missing export directories in both producer and reader calls. Reader did not verify producer source bindings before decoding. V2 prohibits readback creation and verifies all producer bindings first.",
+  "native_production_launched": false,
+  "existing_sources_and_native_jobs_changed": false,
+  "posterior_qualified": false
+}

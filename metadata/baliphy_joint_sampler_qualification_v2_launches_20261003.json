@@ -1,0 +1,22 @@
+{
+  "status": "queued_full_joint_short_sampler_qualification_v2",
+  "source_plan": "metadata/baliphy_joint_sampler_qualification_v2_plan_20261003.json",
+  "source_plan_sha256": "6fbe8c54949442847fdafa151878585ddd218d2ac2f9ae883cb00e24ace8668c",
+  "launches": [
+    "metadata/baliphy_joint_sampler_qualification_v2_launch_20261003.json",
+    "metadata/baliphy_joint_sampler_qualification_v2_readback_launch_20261003.json",
+    "metadata/baliphy_joint_sampler_qualification_v2_closure_launch_20261003.json"
+  ],
+  "original_prerequisite_closures": [
+    "metadata/baliphy_joint_logger_preflight_closure_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+    "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_v2_closure_launch_20261003.json"
+  ],
+  "expected_native_roles": 1620,
+  "iterations_per_role": 20,
+  "longer_posterior_horizon_launched": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "new_cost_usd": 0
+}

@@ -1,5 +1,40 @@
 # Progress and evidence
 
+## October 3: full joint ancestral sampling qualification queued
+
+A separate 1,620-role/405-quartet joint-output qualification is queued
+behind four original full-grid closures: startup, historical sampler,
+resource observation and corrected ambiguity reader. Each role requests
+20 iterations and complete legacy plus same-record all-node sequence/category
+checks; successful candidates retain both anchored and candidate-only residue
+coordinates. Every failure is retained. Full readback, memory ledger and
+source/artifact/two-original-journal closure are required.
+
+The first software gate passed its documented tests, but source review found
+that a reader could recreate a missing export directory. Its sources/receipt
+are preserved. Separate v2 prohibits readback creation and verifies all
+producer source bindings first. Three retained actual native fixtures and
+nine frames passed; eleven altered full designs, nine native decoder/export
+cases, seven serialized workflow alterations and seven prerequisite/resource
+alterations were checked. Full serialization with real metadata and explicitly
+mocked execution/admission retained two artificial failures and two unresolved
+quartets. No full fungal native output success is inferred from these mocks.
+
+V2 direct software execution completed with exit zero, 55 verified bindings,
+92.08 self CPU seconds and 322,113,536 bytes self peak RSS. The production
+plan binds 1,427 sources. New controllers 2967091/2967095/2967099 were verified
+with all four original dependency handles; zero native role checkpoints at
+10:07 UTC. The future native producer has 16 CPUs/200 GiB/no swap and the
+existing 192-GiB FIFO reservation policy; readback/closure have two CPUs and
+32 GiB. Planning allows 128 GiB output and requires 256 GiB free disk.
+
+At 10:03 UTC 688 startup roles were valid and unclosed. At 10:07 UTC the
+historical sampler had 1,075 successful unclosed checks. All prerequisite
+closures, new full joint native output and resource observation, longer
+adequate posterior ensembles and all eight aims remain incomplete. GPU
+prediction stays paused; no longer horizon is launched.
+[Full protocol, review finding, evidence and resource limits](baliphy-joint-sampler-qualification-20261003.md).
+
 ## October 3: independent joint ancestral coordinate reader qualified
 
 Implemented a separate reader for ancestral states, rate categories and
