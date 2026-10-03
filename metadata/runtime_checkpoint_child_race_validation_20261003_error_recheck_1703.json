@@ -1,0 +1,19 @@
+{
+  "status": "passed_runtime_checkpoint_child_race_checks",
+  "checked_utc": "2026-10-03T17:04:25.313590+00:00",
+  "checks": [
+    "original_v3_race_reproduced",
+    "disappeared_child_recorded_survivor_preserved",
+    "zombie_child_recorded",
+    "child_access_denied_remains_fatal",
+    "parent_disappearance_remains_fatal",
+    "reused_parent_pid_not_accepted",
+    "changed_parent_command_rejected"
+  ],
+  "source_hashes": {
+    "scripts/check_runtime_checkpoint_child_race.py": "beba192ed02103026df3a00092b4fca4c35ac1a08014202d39351aceb9270dcf",
+    "scripts/record_project_runtime_checkpoint_v3.py": "79d080322c4807db75975b6123d34d1f75996208eb8c3cd6a641ba2ecf9c594d",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7"
+  },
+  "scope": "Software process-observation checks only; real scientific processes are neither stopped nor restarted."
+}

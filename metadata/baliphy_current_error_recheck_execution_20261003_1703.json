@@ -1,0 +1,45 @@
+{
+  "status": "verified_actual_current_error_recheck_commands_exited_zero",
+  "checked_utc": "2026-10-03T17:06:28.025046+00:00",
+  "executions": [
+    {
+      "kind": "numeric",
+      "unit": "fungal-logging-error-recheck-20261003-1703.service",
+      "invocation_id": "299f1235ba604b4a92c10b64b326b07b",
+      "actual_tool_session_id": 16232,
+      "actual_tool_terminal_exit_code": 0,
+      "cpu_quota": 2,
+      "memory_gib": 8,
+      "cgroup_swap_bytes": 0,
+      "stage_wall_limit_seconds": 120,
+      "journal": "data/software_audits/baliphy-current-error-recheck-20261003-1703/numeric.journal.jsonl",
+      "scope": "Exact original invocation journal and observed tool terminal result. Service manager resource summary is not a native worker RSS measurement."
+    },
+    {
+      "kind": "saved_frames",
+      "unit": "fungal-current-joint-logger-error-recheck-20261003-1703.service",
+      "invocation_id": "3b837b0b9dc942b29aeed76f7b52db17",
+      "actual_tool_session_id": 2355,
+      "actual_tool_terminal_exit_code": 0,
+      "cpu_quota": 2,
+      "memory_gib": 16,
+      "cgroup_swap_bytes": 0,
+      "stage_wall_limit_seconds": 1800,
+      "journal": "data/software_audits/baliphy-current-error-recheck-20261003-1703/saved_frames.journal.jsonl",
+      "scope": "Exact original invocation journal and observed tool terminal result. Service manager resource summary is not a native worker RSS measurement."
+    }
+  ],
+  "source_hashes": {
+    "data/software_audits/baliphy-current-error-recheck-20261003-1703/numeric.journal.jsonl": "088bffa0bee50198e8442eafee9519f58baf0d9e5426191a7fab0a7c6581e80c",
+    "data/software_audits/baliphy-current-error-recheck-20261003-1703/saved_frames.journal.jsonl": "973958949483089bc144e4043b73276e0e3d3f115e0c81554504710661503e40",
+    "metadata/baliphy_logging_error_recheck_20261003_1703.json": "6aa3c70cfefad8587199073fb452c4865c4b51fe4f2e2de6e7e6a308705cf096",
+    "metadata/baliphy_current_joint_logger_error_recheck_20261003_1703.json": "ef7ba046884d9e411022467231b883183c686f86a704412923ecd7fd86a1fb90",
+    "metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_error_recheck_1703.json": "7a3f361236432ab814b062d525be72f392b53cd77674fd651929f5d6ba505ab0",
+    "metadata/baliphy_current_journal_error_recheck_20261003_1703.json": "013d846cab4ab97b93acf6ed24ddec12e2db561233da3c7f81412dc27ee2b118",
+    "metadata/runtime_checkpoint_child_race_validation_20261003_error_recheck_1703.json": "9e1ca81b497ab5d5b32086a69ca22cbf54824c1fcb93d0c8e48403abc8478a05",
+    "scripts/recheck_baliphy_logging_errors.py": "bfec9eb3fcbae8da54d2e84c09c025c941eb53eeb8e493400b1598d8a35205e1",
+    "scripts/recheck_current_baliphy_joint_logger.py": "06b31978fc17d7cc5270c9aa45a214d8618c673bc5d0fce2cad1e55bc75cda53"
+  },
+  "existing_jobs_restarted": false,
+  "scope": "Installed original formatter still fails five of twelve constants; native CJSON preserves all twelve. All1620 closed startups and872 completed joint roles/2616 frames passed read-only replay including strict mean-one rates. All seven monitor regression checks passed; no matching recent errors in exact original controller logs. Full sampler completion, historical allocation failures and posterior adequacy remain pending. An attempted post-completion live-handle snapshot found PID0 after service collection; actual terminal tool result and original invocation journal establish successful termination."
+}

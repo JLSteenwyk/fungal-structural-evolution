@@ -1,0 +1,59 @@
+{
+  "status": "completed_scoped_current_original_sampler_journal_error_scan",
+  "checked_utc": "2026-10-03T17:04:25.535034+00:00",
+  "since_utc": "2026-10-03T15:20:00+00:00",
+  "original_handles_checked": 7,
+  "error_message_matches": 0,
+  "records": [
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_launch_20261003.json",
+      "pid": 3082603,
+      "exact_original_messages": 0,
+      "matching_error_messages": [],
+      "journal_sha256": "f954d5ab90978af268148866c0c070b0018c3cf84a1d4bda74f9fe9845d4b84e"
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_readback_launch_20261003.json",
+      "pid": 3082607,
+      "exact_original_messages": 209,
+      "matching_error_messages": [],
+      "journal_sha256": "78ff4c06229ee6c7d00fe76191efb8d7cc04fc4266584bb8c22a6427e9ef73c3"
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_closure_launch_20261003.json",
+      "pid": 3082614,
+      "exact_original_messages": 209,
+      "matching_error_messages": [],
+      "journal_sha256": "7c611124e552ce1edeed2f12e49325d26c5b6d8941ddd4ca2c0b19b38beeb1ab"
+    },
+    {
+      "launch": "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json",
+      "pid": 3077353,
+      "exact_original_messages": 0,
+      "matching_error_messages": [],
+      "journal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+      "pid": 2826450,
+      "exact_original_messages": 0,
+      "matching_error_messages": [],
+      "journal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "launch": "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+      "pid": 2846853,
+      "exact_original_messages": 0,
+      "matching_error_messages": [],
+      "journal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "launch": "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json",
+      "pid": 3077874,
+      "exact_original_messages": 0,
+      "matching_error_messages": [],
+      "journal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Exact original controller PID and command only. A zero count does not prove uncompleted native roles successful or repair historical allocation failures."
+}

@@ -12524,3 +12524,22 @@ and figure review remain next.
   full readback/closure and production fitting remain pending.
   [Current resampling runtime](../metadata/matched_predictor_resampling_execution_checkpoint_20261003_1555.json)
   and [ancestral runtime](../metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_1555.json).
+
+- October 3, 17:06 UTC: rechecked the earlier BAli-Phy logger error. The
+  installed original formatter still miswrites five of twelve native constants;
+  the replacement CJSON formatter preserves all twelve. All 1,620 closed startup
+  roles and their 14,402 closure bindings passed fresh verification. Every one
+  of the 872 completed joint roles present at the snapshot passed direct native
+  and saved-array replay: 2,616 frames and 33,657,014 ancestral residue/category
+  pairs, including unchanged strict mean-one rate validation. Both bounded
+  recheck commands exited zero with original invocation journals retained.
+  All seven monitoring regression checks passed; no matching recent errors
+  appeared in the seven exact original controller logs since 15:20 UTC. An
+  attempted live audit-process observation occurred after successful service
+  collection; its missing PID did not indicate a scientific job failure.
+  Existing scientific jobs were not restarted. Full sampler completion,
+  historical allocation failures, posterior adequacy and all eight biological
+  aims remain unresolved. The full replay receipt is retained locally and its
+  hash is published in the [compact replay summary](../metadata/baliphy_current_joint_logger_error_recheck_summary_20261003_1703.json);
+  [execution evidence](../metadata/baliphy_current_error_recheck_execution_20261003_1703.json)
+  records the actual terminal tool results and original invocation journals.
