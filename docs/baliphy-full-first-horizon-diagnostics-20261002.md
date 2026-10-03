@@ -118,13 +118,48 @@ this run used a cubic DP matrix. The terminal uncaught allocation failure needs
 separate investigation. The [official guide](https://www.bali-phy.org/README.html#sequences-too-long)
 explains why alignment memory grows rapidly with sequence length.
 
-The remaining isolated recovery attempts continue under the original one-CPU/
-64 GiB/no-swap service. Original failed samples are never concatenated, and
-models, priors, input sequences, taxa and scientific thresholds are unchanged.
-Further memory increases, sampler changes, alternative initialization, adequate
-sampling horizons and recovery quartet overlays require their own evidence,
-versioned plans, resource estimates and full diagnostic checks. All eight
-project aims remain unfinished, and GPU structure inference remains paused.
+The original one-CPU/64 GiB/no-swap recovery service has finished. Its centered
+chain 3 for effective input `9a841bcd…` completed all 1,000 iterations and passed
+all 101 saved-alignment/node integrity checks. The package chain 2 for `8f253aff…`
+and broad chain 4 for `acfc8376…` still failed with `std::bad_alloc`. The full
+original and new attempt identities, hashes and failures remain preserved.
+
+[Completed recovery accounting](../metadata/baliphy_memory_recovery_completed_20261002_v2.json)
+verified 22,486 bindings and both exact original completion/resource journals.
+The successful new chain's original integrity parser was replayed and its full
+result matched the saved audit. This is a separate invocation of the same parser,
+not an independent parser implementation or posterior convergence evidence.
+The selected whole-attempt overlay retains all 1,620 original chain identities,
+135 input groups, three priors and 405 quartets: 1,618 checked chains, 403 complete
+quartets and two explicit unresolved failures. No samples were concatenated;
+all original alignment aliases, seeds, models, priors, taxa, horizons and
+scientific thresholds remain fixed. Eighteen malformed overlay/launch contracts
+were rejected. The first audit failed on the older launch schema's missing
+explicit `plan` field; the corrected version checks the captured `--plan`
+command and any explicit field. Both failed first-version invocations and the
+original code/plan/output identities remain immutable.
+
+The [full diagnostic update](../metadata/baliphy_recovery_full_diagnostics_plan_20261002.json)
+is running under two-CPU/32 GiB/no-swap limits, with readback and closure queued.
+It reuses the 402 unchanged closed quartets and 1,617 original state traces,
+calculates the new chain's anchored states and the complete recovered quartet's
+scalar/length/category diagnostics, and retains both failed quartets. Both
+250/500 cutoffs, every original state/anchor coordinate and all report count
+partitions remain in scope. The original full diagnostic totals were reproduced;
+a synthetic four-chain fixture passed manifest, length and complete state-array
+assembly readback, rejecting six altered inputs and a foreign reused report.
+Those tests are not a biological pilot or new posterior acceptance. The new
+raw chain state array is 46.7 MiB and raw four-chain state assembly 187 MiB;
+32 GiB memory and 32 GiB output allowance include other arrays/reports. Previous
+same-input categorical reports took about 58–60 seconds, but the full hashing,
+new projections and diagnostics are not a convergence or project ETA.
+
+Corrected report acceptance still needs all queued stages, full hashes and both
+actual original production/readback journals. The previously published table
+and figure describe the original 402 complete quartets and are unchanged.
+Adequate new sampling horizons, warning review, joint posterior convergence and
+accepted ancestral structures remain open. All eight project aims remain
+unfinished, and GPU structure inference remains paused.
 
 ## Reproduction
 

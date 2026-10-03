@@ -165,3 +165,37 @@ The [full-stage environment](../environments/full-shared-entity-fits-20261002.ym
 pins the locally validated Python, NumPy, SciPy, Arrow, psutil and mpmath
 versions. The smaller numerical likelihood environment alone does not supply
 the full source-table/monitoring dependencies.
+
+
+The component-local spectral reader now avoids whitening every entity column
+across every case. Each entity column is verified to belong to one row component;
+its trace and residual-energy contractions stay in that component. Cancellation
+screens trigger explicit global whitening and norm arithmetic, rather than
+clipping a trace, adding jitter, or changing an acceptance threshold. Species
+columns still use bounded global batches. The original streamed spectral
+checker remains an unchanged oracle.
+
+[Component spectral contracts](../metadata/component_spectral_likelihood_validation_20261002.json)
+passed 48 dense/original-streamed comparisons, signed/zero-component cases,
+row permutations, finite-difference scores and an 80-digit strongly correlated
+case. Maximum dense objective and score discrepancies were 2.85e-14 and
+1.78e-13. The explicit-whitening fallback was exercised on an exactly removed
+intercept direction. Curvature and SLSQP also accepted the subclass protocol.
+A 6,000-row/300-component/rank-eight software benchmark reduced conceptual
+entity-whitening cells from 64.8 million to 216,000, with no fallback in that
+example: 0.115 s versus 1.697 s, approximately 14.7 times faster. This is a
+software example, not biological data, a pilot, production timing or project ETA.
+
+The [new full reader](../scripts/readback_full_shared_entity_fits_v2.py) integrates
+this class without changing the producer optimizer or its scientific scope.
+[Complete full-grid contracts](../metadata/full_shared_entity_fit_contract_validation_20261002_v4.json)
+again passed all 7,200 candidates, 14,400 links, 12 altered-grid exports and seven
+altered numerical exports, strict review retention, interruption reuse and
+completed-restart refusal. The original reader and 71-pin unlaunched draft stay
+immutable. The [80-pin replacement draft](../metadata/full_shared_entity_fit_draft_plan_20261002_v2.json)
+retains identical settings, numerical budgets and tolerances. Its
+[resource inventory](../metadata/full_shared_entity_fit_resource_inventory_20261002_v5.json)
+includes the independent kernel cache, whose conservative per-cohort array
+ceiling is about 317 MiB; this is not a measured process peak. Full qualification,
+actual timing, nonuniform/control variants and inferential calibration remain
+required. No production fitting has been launched or queued.

@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_memory_recovery_accounting_v2_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_baliphy_recovery_diagnostics_20261002.py",
+    "--plan",
+    "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json": "c6620ca76253c13bb86194a58ecb716b937ad95002a8cc9b7371889f2188f6e5",
+    "metadata/baliphy_memory_recovery_accounting_v2_launch_20261002.json": "4a16d8af9a9899fed5547f746666a09b78caa6f83178975c5812daf6b1e18be7",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

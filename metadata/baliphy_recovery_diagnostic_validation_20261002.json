@@ -1,0 +1,93 @@
+{
+  "status": "passed_full_baliphy_recovery_diagnostic_accounting_and_input_contracts",
+  "checked_utc": "2026-10-03T00:05:51.456696+00:00",
+  "full_original_grid": {
+    "full_native_chains": 1620,
+    "full_quartets": 405,
+    "original_checked_chains": 1617,
+    "original_failed_chains": 3,
+    "recovery_attempts": 3,
+    "recovered_integrity_checked_chains": 1,
+    "unresolved_failed_chains": 2,
+    "selected_checked_chains": 1618,
+    "complete_quartets": 403,
+    "unresolved_quartets": 2
+  },
+  "quartet_routes": {
+    "unresolved_failed_native_chain_retained": 2,
+    "reuse_closed_original_unchanged_quartet": 402,
+    "compute_complete_recovery_quartet": 1
+  },
+  "complete_original_diagnostic_summary_reproduced": {
+    "selected_checked_chains": 1617,
+    "complete_quartets": 402,
+    "state_chains": 1617,
+    "state_observations": 9683665072,
+    "per_chain_anchor_occurrences": 95877872,
+    "unanchored_residue_observations": 708466,
+    "scalar_quartets": 402,
+    "length_quartets": 402,
+    "categorical_quartets": 402,
+    "scalar_status_counts": {
+      "250:scalar_mixing_requires_review": 11679,
+      "500:scalar_mixing_requires_review": 11973,
+      "500:passes_scalar_screen_only": 2901,
+      "250:passes_scalar_screen_only": 3195
+    },
+    "length_status_counts": {
+      "250:scalar_mixing_requires_review": 347,
+      "250:constant_chain_requires_review": 1261,
+      "500:scalar_mixing_requires_review": 309,
+      "500:constant_chain_requires_review": 1299
+    },
+    "categorical_coordinate_counts": {
+      "250": 22386644,
+      "500": 22386644
+    },
+    "categorical_pattern_counts": {
+      "250": 1053971,
+      "500": 965014
+    },
+    "coordinate_status_counts": {
+      "250:no_observed_state_variation_requires_review": 10984698,
+      "250:categorical_mixing_requires_review": 11401946,
+      "500:no_observed_state_variation_requires_review": 11565681,
+      "500:categorical_mixing_requires_review": 10820963
+    },
+    "pattern_status_counts": {
+      "250:no_observed_state_variation_requires_review": 8099,
+      "250:categorical_mixing_requires_review": 1045872,
+      "500:no_observed_state_variation_requires_review": 8110,
+      "500:categorical_mixing_requires_review": 956904
+    },
+    "quartets_passing_every_scalar": {
+      "250": 0,
+      "500": 0
+    },
+    "quartets_passing_every_length_scalar": {
+      "250": 0,
+      "500": 0
+    }
+  },
+  "foreign_unchanged_quartet_report_rejected": true,
+  "synthetic_whole_quartet_input_readback_passed": true,
+  "malformed_new_inputs_rejected": [
+    "scalar_seed",
+    "scalar_grid",
+    "length_seed",
+    "length_grid",
+    "assembled_values",
+    "assembled_unanchored_residue_counts"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_recovery_diagnostics_20261002.py": "ab3f456fcef0922e1a80ce93b2755c487b605dc3f239e83fbd5a0a3737ad0299",
+    "scripts/baliphy_recovery_diagnostic_sources.py": "0d513c86fee7341a998ef815189781caaf4a8f99ca5b39b789d9cc0c077335ea",
+    "scripts/prepare_baliphy_recovery_diagnostics_20261002.py": "9cf55a6bdade55be776652a0ea62276743ba5e6670a9cf580dbc51f27bab083e",
+    "scripts/readback_baliphy_recovery_diagnostics_20261002.py": "eabc1a66abecaa809416606609121ac1b37f40826c32379fdc3f1aa2fc08ebb8",
+    "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json": "3e2b8e8e957c4b4a79da506636b766b38887a2d3ea356585d2e815a7f91593b8",
+    "metadata/baliphy_full_anchored_states_plan_20260928_v2.json": "201c0a5e453d0702e616867fa55f2be35a0521996822c61830daf8f769c5ba8e",
+    "metadata/baliphy_candidate_length_diagnostic_plan_20260927.json": "dd56e19c77ef0945b474814841b89b6f3bb96eb0c624a2086fed7abe8ae83bb9",
+    "metadata/ancestral_categorical_queue_plan_20260928.json": "1f98afd7d148d963423efe3723d9415efc4794bcc9c582ea1ef9cd52d88317c7"
+  },
+  "scope": "Full original402-quartet accounting reproduced, full405-quartet recovery routes retained, and synthetic four-chain manifests/length/state-array assemblies checked. No native sampling, biological pilot, new production diagnostic metric claim or posterior qualification."
+}

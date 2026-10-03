@@ -1,0 +1,291 @@
+{
+  "status": "verified_recovery_closure_and_full_diagnostic_original_handles",
+  "checked_utc": "2026-10-03T00:10:33.640131+00:00",
+  "handles": [
+    {
+      "launch": "metadata/baliphy_memory_recovery_accounting_launch_20261002.json",
+      "pid": 2593252,
+      "created": 1790985062.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_accounting_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "f6bce218e40a5043efbcae15f6b57f33946f1aa8694a5eae01091613bce09e9b",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "1458b8398422a96b02900d4a90609598d51416865ef5c59987bef2f4cd1d5e7e",
+      "captured_process_messages": 11,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985092899157",
+          "MESSAGE": "fungal-baliphy-memory-recovery-accounting-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4c8fd654391e4a25b45da8e4513bb0f5"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790985092899899",
+          "MESSAGE": "fungal-baliphy-memory-recovery-accounting-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4c8fd654391e4a25b45da8e4513bb0f5"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_readback_launch_20261002.json",
+      "pid": 2593248,
+      "created": 1790985062.0,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "c7bb3a89100c7c07c61eaed1866db266d12c0bcb2b074e38271406f8e1cc0727",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "3e411d671d147e04aff14342584d9c67ffb9ac515503939048afc4af8e351456",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985063151860",
+          "MESSAGE": "fungal-baliphy-memory-recovery-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5936c64dd14d44b9b0ba6ab85d632d2b"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790985063152128",
+          "MESSAGE": "fungal-baliphy-memory-recovery-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5936c64dd14d44b9b0ba6ab85d632d2b"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_readback_v2_launch_20261002.json",
+      "pid": 2594518,
+      "created": 1790985179.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_readback_wait_plan_20261002_v2.json"
+      ],
+      "launch_sha256": "fb32d06eeb2928be65c41fe14417823f972655d31d361e85a3bc3d2cf63b93ef",
+      "status": "verified_original_terminal_resource_journal",
+      "journal_sha256_at_observation": "5f4ab52386728c48b9879ce47c53400a10a4098347d5e3db9324b68ae9fa8888",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985307500296",
+          "CPU_USAGE_NSEC": "110223832000",
+          "MEMORY_PEAK": "3780608",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_accounting_v2_launch_20261002.json",
+      "pid": 2594522,
+      "created": 1790985179.92,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_accounting_wait_plan_20261002_v2.json"
+      ],
+      "launch_sha256": "4a16d8af9a9899fed5547f746666a09b78caa6f83178975c5812daf6b1e18be7",
+      "status": "verified_original_terminal_resource_journal",
+      "journal_sha256_at_observation": "09e80db0fae17f2c2d9e26bc038e21d8764573b339363bd3fb95f727f9ae0b1b",
+      "captured_process_messages": 6,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985670184268",
+          "CPU_USAGE_NSEC": "302600000000",
+          "MEMORY_PEAK": "3518464",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-baliphy-recovery-full-diagnostics-20261002-v1.service",
+      "pid": 2604849,
+      "created": 1790986072.38,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/baliphy_recovery_full_diagnostics_wait_plan_20261002.json",
+      "plan_sha256": "a36a0aaa22e9630c8f163c87ec2e626dac6200857024ad25e333e730fc02e1ef",
+      "checked_utc": "2026-10-03T00:07:53.119394+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-recovery-full-diagnostics-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [
+        {
+          "pid": 2604865,
+          "created": 1790986072.52,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_baliphy_recovery_diagnostics_20261002.py",
+            "--plan",
+            "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 97.03
+        },
+        {
+          "pid": 2606061,
+          "created": 1790986186.9,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_ancestral_state_traces.py",
+            "--snapshot",
+            "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/state-extraction/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered-chain3/snapshot.json",
+            "--inputs",
+            "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json",
+            "--output",
+            "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/state-extraction/9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered-chain3/traces"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 45.870000000000005
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "9c6c9e01daf49a32b6b233acd318fe34c4f0413e04effde3879a1f8ff8bf77c5"
+    },
+    {
+      "unit": "fungal-baliphy-recovery-full-diagnostics-readback-20261002-v1.service",
+      "pid": 2604853,
+      "created": 1790986072.43,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/baliphy_recovery_full_diagnostics_readback_wait_plan_20261002.json",
+      "plan_sha256": "be692eb2d9d2ed592f32e418c0b5ba8b4dbcdd3fbeecb5f24c82854351eaec12",
+      "checked_utc": "2026-10-03T00:07:53.149808+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-recovery-full-diagnostics-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "d0d318ec8e5178032fe2690e1783fa403411b108220dd20e877a43c411eeaccb"
+    },
+    {
+      "unit": "fungal-baliphy-recovery-full-diagnostics-closure-20261002-v1.service",
+      "pid": 2604858,
+      "created": 1790986072.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/baliphy_recovery_full_diagnostics_closure_wait_plan_20261002.json",
+      "plan_sha256": "ff03dc8276cc6d92a55c78cb96d8d378c86655b284def5b256833ca600f2c5d3",
+      "checked_utc": "2026-10-03T00:07:53.180231+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-recovery-full-diagnostics-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_recovery_full_diagnostics_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591"
+    }
+  ],
+  "recovery_completion": "metadata/baliphy_memory_recovery_completed_20261002_v2.json",
+  "recovery_completion_sha256": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+  "recovery_full_hash_archive": "results/ancestral/baliphy-memory-recovery-accounting-20261002-v2/completion_archive.json",
+  "recovery_full_hash_archive_sha256": "9a3ca8a78262f2e3c8ede11d9f0f69ab46cbf34805ffa888009d104b4fbf3214",
+  "sealed_recovery_full_binding_count": 22486,
+  "original_journals_checked": 2,
+  "failed_first_audit_and_dependency_preserved": true,
+  "full_recovery_diagnostics_accepted": false,
+  "gpu_inference_paused": true,
+  "all_eight_scientific_aims_incomplete": true,
+  "scope": "Current exact original PID/create/CMD plus actual cgroup limits or exact original terminal resource/failure journals. Recovery closure archive was fully hash-verified by its completed original audit/closure; compact archive hash and summary reverified now. New diagnostics remain unaccepted until full readback, closure and original journals. No native restart or GPU use."
+}

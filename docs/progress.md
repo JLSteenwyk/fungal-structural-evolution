@@ -11474,3 +11474,34 @@ and figure review remain next.
   accepted phylogenetic/reconciliation framework and all eight aims remain
   incomplete. GPU structure prediction remains paused.
   [Full fitting contracts, draft and current resources](shared-entity-likelihood-20261002.md).
+
+
+- October 3, 00:08 UTC (October 2 evening EDT): the previous error-check turn
+  made progress by verifying current original process identities, fresh journals
+  and seven process-monitor regression checks. It confirmed two terminal BAli-Phy
+  retry allocation failures and one recovered intact chain; no new error
+  signature appeared in the preceding 30-minute service journals.
+
+  Full recovery integrity/grid accounting and provenance closure now passed
+  22,486 source/artifact bindings and both original journals. Replayed all 101
+  saved alignments/404 candidate-node samples of the recovered chain and retained
+  all 1,620 original identities: 1,618 intact chains/403 complete quartets/two
+  unresolved failures. The first new audit hit a legacy launch-schema error;
+  its failed reader/dependency invocations remain preserved, and version 2
+  handles both captured command and explicit-plan schemas. No native sampling
+  job was restarted. Full original scalar/length/category totals were reproduced;
+  full recovery diagnostic producer, input/accounting reader and closure are
+  launched/queued with two-CPU/32 GiB/no-swap caps. Old outputs stay immutable.
+
+  Integrated component-local spectral contraction into a new full fitting
+  reader. Dense/original-streamed/80-digit contracts passed, including explicit
+  whitening fallback. A software benchmark was about 14.7 times faster; it is
+  not project timing. Full fitting contracts again passed all 7,200 candidates/
+  14,400 links, 19 altered exports and checkpoint/restart/review invariants.
+  Prepared an 80-pin full-scope replacement draft and revised kernel-cache
+  resource inventory. Production fitting remains unlaunched pending closed
+  qualification and measured runtime. Original design reader remains live,
+  passing 3,775 of 4,340 cohorts at the latest journal observation; original
+  uniform qualification still waits on original design closure. GPU prediction
+  remains paused; accepted phylogenetic/reconciliation/dating framework,
+  nonuniform/control/calibration work and all eight aims remain unfinished.

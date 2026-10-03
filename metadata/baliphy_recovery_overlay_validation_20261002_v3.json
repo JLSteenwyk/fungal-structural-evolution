@@ -1,0 +1,69 @@
+{
+  "status": "passed_full_baliphy_recovery_overlay_contracts",
+  "checked_utc": "2026-10-02T23:52:31.487531+00:00",
+  "full_original_grid": {
+    "full_native_chains": 1620,
+    "full_quartets": 405,
+    "original_checked_chains": 1617,
+    "original_failed_chains": 3,
+    "recovery_attempts": 3,
+    "recovered_integrity_checked_chains": 1,
+    "unresolved_failed_chains": 2,
+    "selected_checked_chains": 1618,
+    "complete_quartets": 403,
+    "unresolved_quartets": 2
+  },
+  "unchanged_original_checked_dispositions": 1617,
+  "resource_only_configuration_changes": [
+    "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain2",
+    "9a841bcd1f3fe4c8748e5ff0ccc52defdc61bc8721fc3bc20ac6bf194b3f72b2-centered-chain3",
+    "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-chain4"
+  ],
+  "malformed_overlays_rejected": [
+    "missing_original_chain",
+    "duplicate_original_chain",
+    "missing_recovery_disposition",
+    "duplicate_recovery_disposition",
+    "incompatible_original_attempt_lineage",
+    "changed_original_failed_receipt_digest",
+    "failed_native_attempt_promoted",
+    "failed_attempt_given_checked_audit",
+    "successful_attempt_missing_audit",
+    "invented_partial_recovery_status",
+    "changed_quartet_seed",
+    "changed_native_seed",
+    "changed_horizon",
+    "changed_quartet_identity",
+    "missing_original_alignment_alias",
+    "changed_native_program_within_quartet",
+    "unapproved_address_space_configuration",
+    "conflicting_explicit_command_plan"
+  ],
+  "original_launch_formats_checked": [
+    {
+      "launch": "metadata/baliphy_independent_chain_launch_20260927.json",
+      "command_plan": "metadata/baliphy_independent_chain_plan_20260927.json",
+      "explicit_plan_present": false
+    },
+    {
+      "launch": "metadata/baliphy_independent_chain_diagnostic_launch_20260927.json",
+      "command_plan": "metadata/baliphy_independent_chain_diagnostic_plan_20260927.json",
+      "explicit_plan_present": false
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_launch_20261002.json",
+      "command_plan": "metadata/baliphy_memory_recovery_plan_20261002.json",
+      "explicit_plan_present": true
+    }
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_recovery_overlay_20261002_v2.py": "8241704f23dc269b14a46ae23e4b77247aa066bd4b5db7e9b177a69d31700455",
+    "scripts/audit_baliphy_memory_recovery_20261002_v2.py": "6d6049e9a50f6aaf5ccb844a5bfc38f643353aaccce8adf826cfde814930f1ca",
+    "metadata/baliphy_independent_chain_plan_20260927.json": "65fe6ed67f859cc01953f241b5a6d01a65f362ccc6b6078e83842deb87cfd636",
+    "metadata/baliphy_memory_recovery_plan_20261002.json": "40de274efb0f557f9da0610e3c6290bc0224618d14a1504694cfdb224efeb224",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/initial_horizon_jobs.json": "f0c38ebfd985907f55d2ba5bb8cc12d75c47ca10dfa851492ad57eebcf5c835a",
+    "results/ancestral/baliphy-independent-chains-20260927-v1/receipt.json": "97cc5edae59bbcfda4c5afd5f795a20a94b46b526777d3dc1425331a16e06ed0",
+    "results/ancestral/baliphy-independent-memory-recovery-20261002-v1/receipt.json": "8bd0d0637986cf76dd21db4e8930669da2903a102cdbb00abe81998126de4cfc"
+  },
+  "scope": "Full original1620-chain/405-quartet identity and whole-attempt overlay contract; no native job launch, output integrity parsing, diagnostic metric acceptance, or posterior qualification."
+}

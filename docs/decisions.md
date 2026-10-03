@@ -893,3 +893,27 @@ records cannot conceal source cases. Agreement supports numerical qualification
 but proves neither global optimality nor calibrated biological effects. The
 full 71-pin draft remains unlaunched while qualification/timing are incomplete;
 all eight aims and nonuniform/control/calibration requirements stay open.
+
+
+## October 2: preserve whole recovery attempts and finish full diagnostic accounting
+
+All three higher-memory BAli-Phy attempts are terminal. Accept output integrity
+for the one fully parsed successful attempt; retain the other two allocation
+failures alongside their original failures. Verify the full original grid and
+all source/artifact hashes, then select whole attempts without concatenation.
+Full recovery closure checked 22,486 bindings and both original journals.
+Recompute only the newly complete quartet and new chain state trace, reuse
+unchanged closed results, and retain the full 405-quartet scope. Scalar/length/
+category diagnostics remain convergence screens, not posterior qualification.
+Preserve the failed first audit and correct legacy launch metadata through a
+new version with command/plan agreement checks, not edits to captured launches.
+
+## October 2: keep independent spectral contractions within verified components
+
+Use component-local entity trace/energy arithmetic with explicit global
+whitening fallback under cancellation. Retain the unchanged streamed checker,
+original production optimizer, all numerical thresholds and full study scope.
+Dense/80-digit and complete fitting-grid contracts passed. The 80-pin draft
+supersedes an unlaunched 71-pin draft; neither is production fitting. Software
+speedup is not a project ETA. Close full qualification and measure actual
+qualified-input runtime before installing fitting resources and launching.

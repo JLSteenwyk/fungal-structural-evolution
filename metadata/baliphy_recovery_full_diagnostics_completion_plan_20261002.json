@@ -1,0 +1,48 @@
+{
+  "source_plan": "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json",
+  "producer_receipt": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/receipt.json",
+  "independent_readback": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/readback.json",
+  "producer_status": "complete_full_baliphy_recovery_diagnostics_pending_accounting_readback",
+  "reader_status": "passed_full_baliphy_recovery_diagnostic_accounting_and_new_quartet_inputs",
+  "completed_status": "complete_verified_full_baliphy_recovery_diagnostics",
+  "summary_fields": [
+    "full_native_chains",
+    "full_quartets",
+    "original_checked_chains",
+    "original_failed_chains",
+    "recovery_attempts",
+    "recovered_integrity_checked_chains",
+    "unresolved_failed_chains",
+    "selected_checked_chains",
+    "complete_quartets",
+    "unresolved_quartets",
+    "state_chains",
+    "state_observations",
+    "per_chain_anchor_occurrences",
+    "unanchored_residue_observations",
+    "scalar_quartets",
+    "length_quartets",
+    "categorical_quartets",
+    "scalar_status_counts",
+    "length_status_counts",
+    "categorical_coordinate_counts",
+    "categorical_pattern_counts",
+    "coordinate_status_counts",
+    "pattern_status_counts",
+    "quartets_passing_every_scalar",
+    "quartets_passing_every_length_scalar"
+  ],
+  "launches": [
+    "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json",
+    "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/baliphy_recovery_full_diagnostics_plan_20261002.json": "c6620ca76253c13bb86194a58ecb716b937ad95002a8cc9b7371889f2188f6e5",
+    "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json": "9c6c9e01daf49a32b6b233acd318fe34c4f0413e04effde3879a1f8ff8bf77c5",
+    "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json": "d0d318ec8e5178032fe2690e1783fa403411b108220dd20e877a43c411eeaccb",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json",
+  "scope": "Full original1620-chain/405-quartet overlay postprocessing at unchanged1000-iterationhorizon and250/500burn-in cutoffs. Reuse closed identical402 quartets and1617original state traces; calculate full scalar/length/category reports for the single newly complete quartet and anchored states for its recovered chain. Preserve both unresolved native failures, all original failed attempts, seeds, priors, inputs and aliases. Check all original closed artifact hashes, full status/count partitions, every recovered manifest/length trace and complete quartet state/free-array assembly before actual two-journal provenance closure. This is accounting/input readback plus existing diagnostic tools, not independent ArviZ metric reimplementation or posterior/ancestral qualification. Correlated extant anchors are not independent sites. No native sampling, GPU/new cost, threshold change or biological pilot; acceptedASR/aim8 and all eight biological aims remain open."
+}

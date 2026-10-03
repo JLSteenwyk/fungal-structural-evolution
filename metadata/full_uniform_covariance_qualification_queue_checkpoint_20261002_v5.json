@@ -1,0 +1,709 @@
+{
+  "status": "verified_full_uniform_covariance_original_queue_and_upstream_closures",
+  "checked_utc": "2026-10-03T00:09:46.522116+00:00",
+  "source_plan": "metadata/full_uniform_covariance_qualification_plan_20261002.json",
+  "source_plan_sha256": "a8435a9c9b44db1d7c856c0f71c957ee53ad5c261b2c1b212e6c7f86a5a58ec3",
+  "prior_full_closure_checkpoint": "metadata/full_entity_operator_queue_checkpoint_20261002_v4.json",
+  "prior_full_closure_checkpoint_sha256": "bfe104eafc3bc62c85b653871de9e16352b19f9c3b6ca2f0a14970a6207430bf",
+  "pins_verified": {
+    "environments/shared-entity-covariance-20261002.yml": "3ee7d47941ee79be242be0dac89f65e9d1db654019956f330e89601d9fa2d5c2",
+    "metadata/full_entity_operator_fixture_validation_20261002.json": "41ab1136b6e453c957feb91cd82ea06cc0034a96a6d002eedafdd393f6e9d337",
+    "metadata/full_entity_operator_resources_20261002.json": "c6a9c88fc6be758c6bb6050cf2ccf22248331296773ebfcafe5294cb94e30228",
+    "metadata/full_expanded_covariance_completed_20261002.json": "591630a8e7542f04bf64381b637de5cff4d5a7b69acbbe3b562e4cde5f19c597",
+    "metadata/full_expanded_covariance_plan_20261002.json": "0887ab741d0f6875de5ff5019494a0d5dbe77bca9aebfb9cd757f42b2d478809",
+    "metadata/shared_entity_covariance_fixture_validation_20261002.json": "91846d8f53ad4dd63b2560fa1403ac0441178b88fba74e5b1964a607b3aaae60",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/check_full_entity_operators.py": "d3fb8117d8fed77406b01695a8d5e665c572bcc0057c33d64272f3d1b2b90a4e",
+    "scripts/check_shared_entity_covariance.py": "1858fdf9adbea4e96330d23716e8ad715ff855673e036c0d24cbf88550071853",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "scripts/launch_full_entity_operators.py": "9adcbab28e16f8d9f0865dd96604ff5b36d82930bc920cdd3cff9807e387d311",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/prepare_full_entity_operators.py": "932541dbec9a9882fa8d0fd2a5825559f6b21999258fe3d5c2ad3c07d8f39619",
+    "scripts/readback_full_entity_operators.py": "6199c4e01dc65483355cb456689bafef06db7473bfa405a5f20c19f19af38a03",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "metadata/full_expanded_model_design_fixture_validation_20261002_v2.json": "ed0bd70693f9d4a88a363c38610b29b5b4ac5a9791d1208fdf5da0d6d204ddfe",
+    "metadata/full_expanded_model_designs_resources_20261002_v2.json": "e059ba81f72b820516d7bc0483bcbe33bffbb768d995253c28a72557afb0af1e",
+    "metadata/full_expanded_model_designs_superseded_attempt_20261002_v1.json": "828f67222fe6451e180b52311c720de00a034e4fcfd653cf57383f5a61e20c5f",
+    "metadata/full_expanded_model_inputs_closure_launch_20261002.json": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583",
+    "metadata/full_expanded_model_inputs_plan_20261002.json": "b28b417f84dd6e4d4729c0fa4c7f39bec4701fe74abbb0e08013aef736c747f5",
+    "results/phylogeny/full-expanded-model-inputs-20261002-v1/receipt.json": "2073dade741d4653b24de0a76a2df2639e0558871d7826a482d6d94c423fcdc7",
+    "scripts/check_full_expanded_model_designs_v2.py": "35b22f4964e3ef6dfef7d90aaf01c0f0f531d497c69390ec5c014281460fbcb9",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/launch_full_expanded_model_designs_v2.py": "9002f1bec68e27b7fa8bc8db118ea225b2ff171b29d21c81ad1d1eb8dc62d7b4",
+    "scripts/prepare_full_expanded_model_designs.py": "94bf748656a3aef71904c0d193728d76ca28926920587f7e817a8087e5b9c886",
+    "scripts/readback_full_expanded_model_designs_v2.py": "d36bce05c97cc67a634c3f7a76d2af842fb31bb7a6db43b3303348b224308c7c",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7",
+    "metadata/full_entity_operator_bank_completed_20261002.json": "b98b87dc049f4eb6e4826b9f1060a96f6f8501901f71b78e9f499749432d327c",
+    "metadata/full_expanded_model_inputs_completed_20261002.json": "4557ec43f083cf852cb8bf664ce70e29d37ad282d096238c162cdd8c4bc08cb2",
+    "metadata/full_entity_operator_plan_20261002.json": "ca3d36ba2ef3e0a6b8571ebda8d2d3afceca83a0923e7ddf71e186f927b8031d",
+    "metadata/full_expanded_model_designs_plan_20261002_v2.json": "8663dc251acc3c4743a2b4faa3f306be986f8609df22f0a6acf7b898019625c9",
+    "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6",
+    "metadata/full_uniform_covariance_qualification_validation_20261002_v3.json": "fd6ec55d17521538c441bc4577d629827a31fb76fa85d0673d6ff87b84983013",
+    "metadata/covariance_basis_context_validation_20261002_v2.json": "0c5299ac826678c30d17491b718f3cfabcaf8c29f03d84b824ae5a60ac4faf21",
+    "metadata/full_uniform_covariance_qualification_resources_20261002.json": "19fb24e08b7f68f5167a3048ab42385d869801c000c5fbade94907ec54f02f3f",
+    "environments/full-uniform-covariance-qualification-20261002.yml": "a4f154c6cd4917258cfe0f6cde5c56bbfba328c13ddfc62d7fc3a9ae7cb4dcda",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/check_covariance_basis_audit.py": "2db1b5f86766f6777cf35485413c19c3f73d1907985af53452001d1462e77f8d",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/check_covariance_basis_context.py": "46f95d03a7b70b7a11f18a89e1d9d700a907301bf59d002c737f2785a58d330e",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "scripts/prepare_full_covariance_qualification.py": "f2443726c3b1ca2558014e8297796738f49cccf3c1077669a4caf90278cda5dc",
+    "scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "scripts/check_full_covariance_qualification.py": "58d21b57502c37b2eb5299914613a393befb0da91fa35059fc163b49ff0ee399",
+    "scripts/launch_full_covariance_qualification.py": "79496e68d99245bfcd21e01861bb0743b82a014a2d9c3288fc08aed717c3260c"
+  },
+  "handles": [
+    {
+      "launch": "metadata/full_entity_operator_bank_launch_20261002.json",
+      "pid": 2473524,
+      "created": 1790973644.39,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e3e07370c5bf26290475457739491242fe5915cf19392cdc17990c70b84ea50b",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "0d6333b5994313ded31d7bc7238841b8ccda72f49cddedf05af54c8c57af4e02",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790974635240322",
+          "CPU_USAGE_NSEC": "704760173000",
+          "MEMORY_PEAK": "22618628096",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_entity_operator_bank_readback_launch_20261002.json",
+      "pid": 2473528,
+      "created": 1790973644.44,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "e3e312f499a153a639ab8c49c5b514cddb3754c71b5993797669c02a479f4e8c",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "0b25dbbbeeae8f069202151c59d5f8adfe48b56384fb385854b3076d2516a60a",
+      "captured_process_messages": 34,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790976312610506",
+          "CPU_USAGE_NSEC": "1028723428000",
+          "MEMORY_PEAK": "3260416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_entity_operator_bank_closure_launch_20261002.json",
+      "pid": 2473533,
+      "created": 1790973644.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_entity_operator_bank_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "97b973b1fa0f95d52fde021cd62c0adc1e5d60646ba326b8281e8c48c0959c91",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "a9f15ec1e458e6f3377b4c5f056f7f23d3b7dc6d07c8aeba5cf938748e423d91",
+      "captured_process_messages": 90,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790977913078515",
+          "CPU_USAGE_NSEC": "931152438000",
+          "MEMORY_PEAK": "2764800",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_inputs_readback_launch_20261002.json",
+      "pid": 2410818,
+      "created": 1790970289.63,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "e529532054aa0d6de514d0e5f74e3fa75ec466f155db464953ae14013b4d608c",
+      "captured_process_messages": 28,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790974542331651",
+          "CPU_USAGE_NSEC": "3142028058000",
+          "MEMORY_PEAK": "5848264704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_inputs_closure_launch_20261002.json",
+      "pid": 2410822,
+      "created": 1790970289.66,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_inputs_closure_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "76476737913ebb0050864a6a6f62f6365b1e2fa5c30e170f0c8a50576ea62583",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "608304957e276fb7db731ce9089cbc9cfadccbae960f7fb2b92cfe31534324bc",
+      "captured_process_messages": 143,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790976341530565",
+          "CPU_USAGE_NSEC": "996571201000",
+          "MEMORY_PEAK": "10764288",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_expanded_model_designs_v2_launch_20261002.json",
+      "pid": 2451729,
+      "created": 1790971820.88,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "5973f43a620193d0950c411542ffee55248a3e90746e66655c5408e18f79516c",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "bc3d14a16c03191aa48378bea4c33a3995f483e118034be72c2f0d9758f933ad",
+      "captured_process_messages": 152,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790979135991169",
+          "CPU_USAGE_NSEC": "2190363111000",
+          "MEMORY_PEAK": "8679424",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+      "pid": 2451757,
+      "created": 1790971820.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json",
+      "plan_sha256": "0570fb50f6aaa917919134e3cba3fe8353c784d3bd57f7226268b7671ba80113",
+      "checked_utc": "2026-10-02T20:10:21.646169+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.29,
+      "children": [
+        {
+          "pid": 2531510,
+          "created": 1790979148.38,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_full_expanded_model_designs_v2.py",
+            "--plan",
+            "metadata/full_expanded_model_designs_plan_20261002_v2.json",
+            "--output",
+            "results/phylogeny/full-expanded-model-designs-20261002-v2/readback.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 6664.86
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ff4bf58854a0d4e9bed85a53f1f3f5300f0696afe73eb59b59a2cc70eb6ef003"
+    },
+    {
+      "unit": "fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+      "pid": 2451777,
+      "created": 1790971820.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json",
+      "plan_sha256": "d27e67f3196d58acbc623f7d6498dd1d2b1a936d0cc133b38baa89c463ec01ac",
+      "checked_utc": "2026-10-02T20:10:21.679185+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-expanded-model-designs-v2-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_expanded_model_designs_v2_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_expanded_model_designs_v2_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.62,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "ef3841caec2e3ecc2887e50d23af296d0d07f2cfe3b653244fe6b852589094a6"
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_launch_20261002.json",
+      "pid": 2318420,
+      "created": 1790965225.41,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recover_baliphy_memory_failures_20261002.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_plan_20261002.json"
+      ],
+      "launch_sha256": "aa92581d7a64d1444a86bd9001cc71c7e581e0bcc0b5f1f5b226e6045b09b5d1",
+      "status": "verified_original_terminal_success_resource_journal",
+      "journal_sha256_at_observation": "bd6636d4072efcade429d393e69e603ae32f80875c5a01f86dcb50fed41b889c",
+      "captured_process_messages": 55,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790983962477812",
+          "CPU_USAGE_NSEC": "18733651260000",
+          "MEMORY_PEAK": "29407694848",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-20261002-v1.service",
+      "pid": 2522914,
+      "created": 1790978401.08,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json",
+      "plan_sha256": "7af1a2a0389bfa1a8cebb02eefb9ea2c837ec0703be0e2cbb6156ff1fbca6193",
+      "checked_utc": "2026-10-02T22:00:01.803308+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.29000000000000004,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "44cca02198a2120675c94a8fe9340097c91d423a86720c24637f01db7febdaa4"
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+      "pid": 2522932,
+      "created": 1790978401.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json",
+      "plan_sha256": "4362c5f17f82f572686daadadeb62e8e2f7838342ae9a107474f6b1ef772b861",
+      "checked_utc": "2026-10-02T22:00:01.848746+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-readback-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_readback_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_readback_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.3,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "665eae1a9470de314bf2415cb316f5946e6c91614f57fb16eb7b82590a287c69"
+    },
+    {
+      "unit": "fungal-full-uniform-covariance-qualification-closure-20261002-v1.service",
+      "pid": 2522940,
+      "created": 1790978401.16,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json"
+      ],
+      "plan": "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json",
+      "plan_sha256": "d3ad50aad959419924f3c9b91dcca58cc37af73a10b8bd336fe72b14189daa00",
+      "checked_utc": "2026-10-02T22:00:01.879176+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-uniform-covariance-qualification-closure-20261002-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_uniform_covariance_qualification_closure_wait_plan_20261002.json"
+      ],
+      "launch": "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.44,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "32dbf99c1c8b107ca93d9628186f1428aa4a0b86a3ffed3e317448e4dec72c20"
+    }
+  ],
+  "sealed_completed_stages": {
+    "model_inputs": {
+      "accepted": true,
+      "path": "metadata/full_expanded_model_inputs_completed_20261002.json",
+      "sha256": "4557ec43f083cf852cb8bf664ce70e29d37ad282d096238c162cdd8c4bc08cb2",
+      "status": "complete_verified_full_expanded_model_inputs",
+      "full_hash_archive": "results/phylogeny/full-expanded-model-inputs-20261002-v1/completion_archive.json",
+      "full_hash_archive_sha256": "a93ec6c667963728c3f3234ab4d64beb765d76773dfe5efca1b99d1103102371",
+      "original_closure_full_bindings_checked": 2369865,
+      "original_journals_revalidated": [
+        {
+          "launch": "metadata/full_expanded_model_inputs_launch_20261002.json",
+          "pid": 2410814,
+          "created": 1790970289.58,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_expanded_model_inputs_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "0030c813e4acd36469ed6b942f71bacc450dec13ca60b4e97d9c46a16149b3ee",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "b349c7eff566ea5482cdb73ef41f4678b41e54931700eb389578a7ce86ebe4b9",
+          "captured_process_messages": 1,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790971091988950",
+              "CPU_USAGE_NSEC": "801348604000",
+              "MEMORY_PEAK": "2976030720",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "2bdf82dab8580482f63f4c02ceeb8234be95836702f32f668ef42b8885eee8eb"
+        },
+        {
+          "launch": "metadata/full_expanded_model_inputs_readback_launch_20261002.json",
+          "pid": 2410818,
+          "created": 1790970289.63,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_expanded_model_inputs_readback_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "4d4d5304be4ee5f37e01b3d632fd707d049b902216a1320ea7046e6c5f9681f2",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "9d212bab57a11e867d83ec8b42d3452dde4f653c3aed5b8847e373c98af1c821",
+          "captured_process_messages": 28,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790974542331651",
+              "CPU_USAGE_NSEC": "3142028058000",
+              "MEMORY_PEAK": "5848264704",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "65c520dd88ff066658ec2d7fbcb87b423f9edbf3e47960f6c419e63ecc33e0c3"
+        }
+      ],
+      "summary": {
+        "logical_cases": 75188,
+        "physical_cases": 37600,
+        "selected_records": 4250692,
+        "unmatched_decisions": 56965652,
+        "case_mask_rows": 150376,
+        "model_input_rows": 751880,
+        "partitions": 10,
+        "settings": 51840,
+        "valid_input_rows": {
+          "full|00": 70221,
+          "full|01": 70221,
+          "full|10": 70221,
+          "full|11": 70221,
+          "full|mean": 70221,
+          "plddt70|00": 70015,
+          "plddt70|01": 70015,
+          "plddt70|10": 70015,
+          "plddt70|11": 70015,
+          "plddt70|mean": 70015
+        },
+        "invalid_input_rows": {
+          "full|00": 4967,
+          "full|01": 4967,
+          "full|10": 4967,
+          "full|11": 4967,
+          "full|mean": 4967,
+          "plddt70|00": 5173,
+          "plddt70|01": 5173,
+          "plddt70|10": 5173,
+          "plddt70|11": 5173,
+          "plddt70|mean": 5173
+        },
+        "quality_retained_setting_occurrences": 300073760,
+        "model_specifications_per_setting": 12,
+        "future_model_setting_rows": 622080,
+        "working_tree_alternatives": 5
+      },
+      "scope": "Sealed full archive checksum, compact/summary/receipt linkage and actual original completion/resource journals revalidated. Full source and artifact hashing was performed by the original producer, independent reader and closure; it is not repeated here. No scientific model or effect is accepted by this handoff."
+    },
+    "operator_bank": {
+      "accepted": true,
+      "path": "metadata/full_entity_operator_bank_completed_20261002.json",
+      "sha256": "b98b87dc049f4eb6e4826b9f1060a96f6f8501901f71b78e9f499749432d327c",
+      "status": "complete_verified_full_entity_operator_bank",
+      "full_hash_archive": "results/phylogeny/full-entity-operator-bank-20261002-v1/completion_archive.json",
+      "full_hash_archive_sha256": "3ab728af58fd5c593aff6a0ddca4c06650f0ad84785d200cbf75e764a7a7685d",
+      "original_closure_full_bindings_checked": 1830606,
+      "original_journals_revalidated": [
+        {
+          "launch": "metadata/full_entity_operator_bank_launch_20261002.json",
+          "pid": 2473524,
+          "created": 1790973644.39,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_entity_operator_bank_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "e3e07370c5bf26290475457739491242fe5915cf19392cdc17990c70b84ea50b",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "94d1b7c42ebd261185e77746ed74f6e503d5ad0b5e355019d7cd88712564c081",
+          "captured_process_messages": 1,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790974635240322",
+              "CPU_USAGE_NSEC": "704760173000",
+              "MEMORY_PEAK": "22618628096",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "5150e48c6b3c402927efea34760bcee3c7f9f8c2dff767558fb5c59722e70eb8"
+        },
+        {
+          "launch": "metadata/full_entity_operator_bank_readback_launch_20261002.json",
+          "pid": 2473528,
+          "created": 1790973644.44,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_after_verified_dependencies_v2.py",
+            "--plan",
+            "metadata/full_entity_operator_bank_readback_wait_plan_20261002.json"
+          ],
+          "launch_sha256": "e3e312f499a153a639ab8c49c5b514cddb3754c71b5993797669c02a479f4e8c",
+          "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+          "journal_sha256_at_observation": "5dba80af3092ccfbafd3efbfea07e37741b57664c139f2887108fe03e2274ee9",
+          "captured_process_messages": 34,
+          "original_failure_records": [],
+          "completion_resource_records": [
+            {
+              "__REALTIME_TIMESTAMP": "1790976312610506",
+              "CPU_USAGE_NSEC": "1028723428000",
+              "MEMORY_PEAK": "3260416",
+              "MEMORY_SWAP_PEAK": "0"
+            }
+          ],
+          "archived_journal_sha256_at_original_observation": "7fc6ff4df62ded8cf765dec73c07b901e0ae1fa118d423dcf83a0bf790cad6e1"
+        }
+      ],
+      "summary": {
+        "logical_cases": 75188,
+        "entity_occurrences": 1052632,
+        "unique_entities": {
+          "target_node": 53042,
+          "background_node": 44699,
+          "model_pair": 48874,
+          "family": 3413,
+          "gene": 97750,
+          "model": 93625
+        },
+        "matrices": 13,
+        "operator_nnz": {
+          "signed|target_node": 75188,
+          "unsigned|target_node": 75188,
+          "signed|background_node": 75188,
+          "unsigned|background_node": 75188,
+          "signed|model_pair": 150376,
+          "unsigned|model_pair": 150376,
+          "signed|family": 0,
+          "unsigned|family": 75188,
+          "signed|gene": 300752,
+          "unsigned|gene": 300752,
+          "signed|model": 290997,
+          "unsigned|model": 290997,
+          "contrast|family_intercept": 75188
+        },
+        "family_components": 3330,
+        "largest_component": 2884,
+        "sum_component_squared_sizes": 23884972,
+        "trees": [
+          "mafft_guide",
+          "pmsf_mafft_profile",
+          "pmsf_profile_mafft",
+          "pmsf_profile_profile",
+          "profile_guide"
+        ],
+        "kernel_gram_ranks": {
+          "signed|mafft_guide": 8,
+          "unsigned|mafft_guide": 8,
+          "signed|pmsf_mafft_profile": 8,
+          "unsigned|pmsf_mafft_profile": 8,
+          "signed|pmsf_profile_mafft": 8,
+          "unsigned|pmsf_profile_mafft": 8,
+          "signed|pmsf_profile_profile": 8,
+          "unsigned|pmsf_profile_profile": 8,
+          "signed|profile_guide": 8,
+          "unsigned|profile_guide": 8
+        },
+        "zero_kernels": {
+          "signed|mafft_guide": [
+            "family"
+          ],
+          "unsigned|mafft_guide": [],
+          "signed|pmsf_mafft_profile": [
+            "family"
+          ],
+          "unsigned|pmsf_mafft_profile": [],
+          "signed|pmsf_profile_mafft": [
+            "family"
+          ],
+          "unsigned|pmsf_profile_mafft": [],
+          "signed|pmsf_profile_profile": [
+            "family"
+          ],
+          "unsigned|pmsf_profile_profile": [],
+          "signed|profile_guide": [
+            "family"
+          ],
+          "unsigned|profile_guide": []
+        },
+        "numerical_benchmarks": 10
+      },
+      "scope": "Sealed full archive checksum, compact/summary/receipt linkage and actual original completion/resource journals revalidated. Full source and artifact hashing was performed by the original producer, independent reader and closure; it is not repeated here. No scientific model or effect is accepted by this handoff."
+    }
+  },
+  "full_design_production_accepted": false,
+  "full_uniform_covariance_production_accepted": false,
+  "all_eight_scientific_aims_incomplete": true,
+  "gpu_inference_paused": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_covariance_qualification_queue.py": "15fb49f6cec88e4603f347baff4623a89a59f959783b4c978035a85e031d7bfe",
+    "scripts/record_project_runtime_checkpoint_v4.py": "844873beba23e6f693875ad3d0cef5f45492be049182599d584bba18c78224d7"
+  },
+  "scope": "Exact original handles, immutable plans and source pins checked. New queue cgroup limits revalidated directly. Input/operator sealed closure archives retain their full-source hash proofs and actual original journals verified by the linked prior checkpoint. Design and uniform qualification acceptance remain pending. No restart or GPU use."
+}

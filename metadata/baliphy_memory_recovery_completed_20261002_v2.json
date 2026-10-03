@@ -1,0 +1,23 @@
+{
+  "status": "complete_verified_full_baliphy_memory_recovery_accounting",
+  "full_native_chains": 1620,
+  "full_quartets": 405,
+  "original_checked_chains": 1617,
+  "original_failed_chains": 3,
+  "recovery_attempts": 3,
+  "recovered_integrity_checked_chains": 1,
+  "unresolved_failed_chains": 2,
+  "selected_checked_chains": 1618,
+  "complete_quartets": 403,
+  "unresolved_quartets": 2,
+  "source_plan": "metadata/baliphy_memory_recovery_readback_plan_20261002_v2.json",
+  "source_plan_sha256": "41cd955cd9efffe2633f07433297e0f9067c793496a7f0c9997b0b03cb4f0a2d",
+  "overlay": "results/ancestral/baliphy-memory-recovery-readback-20261002-v2/full_chain_overlay.json",
+  "overlay_sha256": "2efa15df6dacf9bb8080413c32e47d478a8c41e36be7774fcb4d0f6061a76b3e",
+  "full_hash_archive": "results/ancestral/baliphy-memory-recovery-accounting-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "9a3ca8a78262f2e3c8ede11d9f0f69ab46cbf34805ffa888009d104b4fbf3214",
+  "bound_source_hashes": 22486,
+  "exact_process_journals_checked": 2,
+  "scientific_eligibility": false,
+  "scope": "Full original1620-chain/405-quartet recovery accounting. Reverify complete original closed source/artifact hashes and original completion/resource journals; audit all3 separate same-seed recovery configurations and native attempts; replay the original saved-alignment integrity parser for the single recovered exit-zero chain. Preserve all original failed attempts, new failures, inputs, aliases, seeds, priors and1000-iteration horizons. No sample concatenation or scientific threshold changes. Overlay supplies1618 integrity-checked chains and403 complete quartets with2 unresolved failures; corrected scalar/length/category diagnostics and posterior qualification remain pending. Parser replay is not independent reimplementation or convergence evidence. Capped localCPU32GiBnoSwap, no native restart/GPU/new cost. Version2 resolves the exact original launch schema from its captured --plan command and checks any explicit plan agrees; original failed version1 audit/controller and dependency-failure journals are retained. All native inputs and attempts are unchanged."
+}

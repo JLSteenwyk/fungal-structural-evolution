@@ -116,17 +116,27 @@ audits and calibrated inference remain pending.
 
 Complete source-bound fitting and independent spectral SLSQP/readback are now
 implemented with immutable cohort checkpoints. Full software contracts passed
-7,200 candidates/14,400 links, rejecting 19 altered exports. A 71-pin production
-draft preserves every original setting; it remains unlaunched pending closed
-qualification and measured runtime.
+7,200 candidates/14,400 links, rejecting 19 altered exports. The faster component
+spectral reader also passed the complete contracts, dense comparisons and an
+80-digit precision check. An [80-pin replacement draft](metadata/full_shared_entity_fit_draft_plan_20261002_v2.json)
+preserves every original setting and tolerance; it remains unlaunched pending
+closed qualification and measured runtime. Its software benchmark is not a
+project ETA.
 
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved
 memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet
 passes every scalar mixing check at either burn-in cutoff. Five chains logged
-allocation warnings. Separate same-seed attempts for all three failed chains
-are running serially with a 48 GiB address-space limit under a one-CPU/64 GiB
-service cap. The first higher-memory attempt failed again and is retained.
+allocation warnings. All three separate same-seed recovery attempts have
+finished: one passed saved-output integrity and two again failed with allocation
+errors. [Full recovery accounting](metadata/baliphy_memory_recovery_completed_20261002_v2.json)
+verified 22,486 source/artifact bindings and both original completion journals.
+The selected whole-attempt overlay retains 1,618 intact chains and 403 complete
+quartets, with two failures explicit. [Corrected full-grid diagnostics](metadata/baliphy_recovery_full_diagnostics_plan_20261002.json)
+are running, reusing the 402 unchanged quartets and calculating the recovered
+quartet's scalar, length and categorical reports. Posterior qualification remains
+open; original receipts, failed attempts and published first-horizon results stay
+intact.
 The [complete ancestral diagnostic table and inspected eight-panel figure](docs/baliphy-full-first-horizon-diagnostics-20261002.md)
 now cover all 405 groups at both cutoffs, with failed groups explicit. Full
 state/length/category accounting closed 49,902 hashes and three original

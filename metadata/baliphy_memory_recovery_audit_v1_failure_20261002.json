@@ -1,0 +1,79 @@
+{
+  "status": "preserved_failed_recovery_audit_legacy_launch_schema",
+  "checked_utc": "2026-10-02T23:53:00.442036+00:00",
+  "error": "KeyError: 'plan'",
+  "cause": "Original 20260927 launch schemas bind --plan within cmdline and plan_sha256, without an explicit plan key.",
+  "scientific_native_jobs_affected": false,
+  "native_restarted": false,
+  "failed_original_launches": [
+    {
+      "launch": "metadata/baliphy_memory_recovery_readback_launch_20261002.json",
+      "pid": 2593248,
+      "created": 1790985062.0,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_readback_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "c7bb3a89100c7c07c61eaed1866db266d12c0bcb2b074e38271406f8e1cc0727",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "8117656ec2dfecaa183f142e70af3feb7928a9c812d959e53deb024df4c75962",
+      "captured_process_messages": 9,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985063151860",
+          "MESSAGE": "fungal-baliphy-memory-recovery-readback-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5936c64dd14d44b9b0ba6ab85d632d2b"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790985063152128",
+          "MESSAGE": "fungal-baliphy-memory-recovery-readback-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "5936c64dd14d44b9b0ba6ab85d632d2b"
+        }
+      ],
+      "completion_resource_records": []
+    },
+    {
+      "launch": "metadata/baliphy_memory_recovery_accounting_launch_20261002.json",
+      "pid": 2593252,
+      "created": 1790985062.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_memory_recovery_accounting_wait_plan_20261002.json"
+      ],
+      "launch_sha256": "f6bce218e40a5043efbcae15f6b57f33946f1aa8694a5eae01091613bce09e9b",
+      "status": "verified_original_failure_preserved",
+      "journal_sha256_at_observation": "a78063a4dbfbcd56dac192f094e10c0e8b293080905cd6ebd9b9b271f1755081",
+      "captured_process_messages": 11,
+      "original_failure_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1790985092899157",
+          "MESSAGE": "fungal-baliphy-memory-recovery-accounting-20261002-v1.service: Main process exited, code=exited, status=1/FAILURE",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "1",
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4c8fd654391e4a25b45da8e4513bb0f5"
+        },
+        {
+          "__REALTIME_TIMESTAMP": "1790985092899899",
+          "MESSAGE": "fungal-baliphy-memory-recovery-accounting-20261002-v1.service: Failed with result 'exit-code'.",
+          "EXIT_CODE": null,
+          "EXIT_STATUS": null,
+          "RESULT": null,
+          "USER_INVOCATION_ID": "4c8fd654391e4a25b45da8e4513bb0f5"
+        }
+      ],
+      "completion_resource_records": []
+    }
+  ],
+  "replacement": "metadata/baliphy_memory_recovery_readback_plan_20261002_v2.json"
+}

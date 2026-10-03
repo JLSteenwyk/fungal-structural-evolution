@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_memory_recovery_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_baliphy_memory_recovery_20261002.py",
+    "--plan",
+    "metadata/baliphy_memory_recovery_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/baliphy_memory_recovery_completion_plan_20261002.json": "ee2306e956f9ec43a9236dbb679efdd2a7e0c14b1299b31c07c54fbfe3d25200",
+    "metadata/baliphy_memory_recovery_readback_launch_20261002.json": "c7bb3a89100c7c07c61eaed1866db266d12c0bcb2b074e38271406f8e1cc0727",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "audit_plan": "metadata/baliphy_memory_recovery_readback_plan_20261002.json",
+  "launches": [
+    "metadata/baliphy_memory_recovery_launch_20261002.json",
+    "metadata/baliphy_memory_recovery_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/baliphy_memory_recovery_readback_plan_20261002.json": "12b46adfe888428682c01bc92889460a549b1d63810078c60d4d872fd28f831f",
+    "metadata/baliphy_memory_recovery_readback_launch_20261002.json": "c7bb3a89100c7c07c61eaed1866db266d12c0bcb2b074e38271406f8e1cc0727",
+    "metadata/baliphy_memory_recovery_launch_20261002.json": "aa92581d7a64d1444a86bd9001cc71c7e581e0bcc0b5f1f5b226e6045b09b5d1",
+    "scripts/close_baliphy_memory_recovery_20261002.py": "ac360ed9dffbdc2f94a3a5354ef41d4bbb92e4ae3d228de5d750282cddc10385",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf"
+  },
+  "output": "results/ancestral/baliphy-memory-recovery-accounting-20261002-v1",
+  "completion": "metadata/baliphy_memory_recovery_completed_20261002.json",
+  "scope": "Full original1620-chain/405-quartet recovery accounting. Reverify complete original closed source/artifact hashes and original completion/resource journals; audit all3 separate same-seed recovery configurations and native attempts; replay the original saved-alignment integrity parser for the single recovered exit-zero chain. Preserve all original failed attempts, new failures, inputs, aliases, seeds, priors and1000-iteration horizons. No sample concatenation or scientific threshold changes. Overlay supplies1618 integrity-checked chains and403 complete quartets with2 unresolved failures; corrected scalar/length/category diagnostics and posterior qualification remain pending. Parser replay is not independent reimplementation or convergence evidence. Capped localCPU32GiBnoSwap, no native restart/GPU/new cost."
+}
